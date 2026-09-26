@@ -48,6 +48,10 @@ Commandes :
 | `chantier.py` | Génère l’état des lieux, **fichier séparé du produit** | Oui |
 | `test_v7.py`, `pack_v7.py`, `restore.py` | Contrôle, empaquetage, restauration | Oui |
 | `test_preview.py`, `test_medina.py`, `pack.py` | Anciens outils liés au front-end V6 d’origine | Ne pas utiliser |
+| `glossary/zz_fusion.py` | Arbitrages du glossaire fusionné (chargé en dernier) : une seule définition par clé, la plus littérale et la plus exacte | Oui (arbitrages) |
+| `audits/` | Rapports d’audit par chapitre, journaux de fusion (`FUSION_ALPHA.md`, `FUSION_J44.md`, `FUSION_GLOSSAIRE.md`), captures `FRONT_captures/` | Oui |
+| `captures_front.py` | Captures PC 1360 px, mobile 390 px et mode sombre de toutes les pages : `python3 captures_front.py <jeu> [fichier.html]` | Oui |
+| `create_cycle_pdf.py`, `create_status_pdf.py`, `recover_polish.py` | Outils hérités de la branche Alpha (journaux PDF, récupération des couches depuis un HTML livré) | Avec prudence |
 
 ## 3. Chaîne de construction
 
@@ -118,6 +122,7 @@ Noir et blanc (le trait `#222`), police `Inter,sans-serif` ou héritée, légend
 - `WAVES` : (numéro, système, nombre de catégories CIM) — ne pas modifier les effectifs.
 - `PRIO` : vagues de l’examen fédéral (1–9, 11, 12).
 - `DONE_SYS` : ajouter le numéro d’un système **uniquement** quand toutes ses catégories sont couvertes par un cours audité ou par un renvoi documenté. C’est ce qui allume l’insigne « 100 % rédigé » du système.
+- `DONE_COURSES` : chapitres **achevés** (audit indépendant ≥ 20/20 ou réserve justifiée ≥ 19/20, `test_v7.py` à OK). Seule cette liste allume l’insigne « 100 % rédigé » d’un chapitre ; un chapitre déclaré dans `chapters.json` mais absent de `DONE_COURSES` s’affiche avec la pastille « cours · en révision ».
 - `RENVOIS[n]` : liste `(code, intitulé, traitement)` des catégories sans cours propre.
 - `NOTES` : notes d’audit différentes de 20/20.
 
@@ -225,36 +230,39 @@ Le propriétaire dispose sur Google Drive d’une copie `MEDINA_Claude.html` (do
 
 ## 19. État au 26.09.2026 et répartition du travail
 
-### 19.1 Chapitres intégrés (27)
-| Code | Titre | Catégories couvertes | Vague | Ajouté |
-|---|---|---|---|---|
-| I50 | Insuffisance cardiaque | I50 | None |  |
-| I21 | Syndromes coronariens aigus et infarctus du myocarde | I21, I22, I23, I24 | None |  |
-| I25 | Syndromes coronariens chroniques et angor | I20, I25 | None |  |
-| I48 | Fibrillation et flutter auriculaires | I48 | None |  |
-| I10 | Hypertension artérielle | I10, I11, I12, I13, I15 | None |  |
-| I30 | Péricardites, épanchement péricardique, tamponnade et constriction | I30, I31, I32 | None |  |
-| I33 | Endocardite infectieuse | I33, I38, I39 | None |  |
-| I35 | Valvulopathies aortiques | I35, I06 | None |  |
-| I34 | Valvulopathies mitrales, tricuspides et pulmonaires | I34, I36, I37, I05, I07, I08, I09 | None |  |
-| I00 | Rhumatisme articulaire aigu | I00, I01, I02 | None |  |
-| I40 | Myocardites | I40, I41 | None |  |
-| I42 | Cardiomyopathies | I42, I43 | None |  |
-| I44 | Troubles de la conduction et bradycardies | I44, I45 | None |  |
-| I47 | Tachycardies paroxystiques supraventriculaires et ventriculaires | I47 | None |  |
-| I49 | Extrasystoles et autres arythmies | I49 | None |  |
-| I46 | Arrêt cardiaque | I46 | None |  |
-| Q21 | Cardiopathies congénitales de l’adulte | Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q28 | None |  |
-| J45 | Asthme | J45, J46 | 2 | 2026-09-25 |
-| J44 | Bronchopneumopathie chronique obstructive | J43, J44 | 2 | 2026-09-25 |
-| D84 | Déficits immunitaires | D80, D81, D82, D83, D84 | 9 | 2026-09-25 |
-| M06 | Polyarthrite rhumatoïde | M05, M06 | 10 | 2026-09-26 |
-| M32 | Lupus érythémateux systémique | M32 | 10 | 2026-09-26 |
-| T78 | Anaphylaxie et allergies | T78 | 16 | 2026-09-26 |
-| M31 | Vascularites systémiques | M30, M31 | 10 | 2026-09-26 |
-| I71 | Anévrismes et dissections artérielles | I71, I72 | 9 | 2026-09-26 |
-| I80 | Thrombose veineuse profonde et thromboses veineuses | I80, I81, I82 | 9 | 2026-09-26 |
-| I70 | Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë | I70, I74 | 9 | 2026-09-26 |
+### 19.1 Chapitres intégrés (30)
+| Code | Titre | Catégories couvertes | Vague | Ajouté | Mots | Statut |
+|---|---|---|---|---|---|---|
+| I50 | Insuffisance cardiaque | I50 | 1 |  | 15180 | achevé (audité) |
+| I21 | Syndromes coronariens aigus et infarctus du myocarde | I21, I22, I23, I24 | 1 |  | 28210 | achevé (audité) |
+| I25 | Syndromes coronariens chroniques et angor | I20, I25 | 1 |  | 26706 | achevé (audité) |
+| I48 | Fibrillation et flutter auriculaires | I48 | 1 |  | 23903 | achevé (audité) |
+| I10 | Hypertension artérielle | I10, I11, I12, I13, I15 | 1 |  | 22516 | achevé (audité) |
+| I30 | Péricardites, épanchement péricardique, tamponnade et constriction | I30, I31, I32 | 1 |  | 22301 | achevé (audité) |
+| I33 | Endocardite infectieuse | I33, I38, I39 | 1 |  | 23260 | achevé (audité) |
+| I35 | Valvulopathies aortiques | I35, I06 | 1 |  | 25443 | achevé (audité) |
+| I34 | Valvulopathies mitrales, tricuspides et pulmonaires | I34, I36, I37, I05, I07, I08, I09 | 1 |  | 26844 | achevé (audité) |
+| I00 | Rhumatisme articulaire aigu | I00, I01, I02 | 1 |  | 20289 | achevé (audité) |
+| I40 | Myocardites | I40, I41 | 1 |  | 22953 | achevé (audité) |
+| I42 | Cardiomyopathies | I42, I43 | 1 |  | 28457 | achevé (audité) |
+| I44 | Troubles de la conduction et bradycardies | I44, I45 | 1 |  | 25992 | achevé (audité) |
+| I47 | Tachycardies paroxystiques supraventriculaires et ventriculaires | I47 | 1 |  | 27202 | achevé (audité) |
+| I49 | Extrasystoles et autres arythmies | I49 | 1 |  | 25264 | achevé (audité) |
+| I46 | Arrêt cardiaque | I46 | 1 |  | 22004 | achevé (audité) |
+| Q21 | Cardiopathies congénitales de l’adulte | Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q28 | 1 |  | 30184 | achevé (audité) |
+| J45 | Asthme | J45, J46 | 2 | 2026-09-25 | 16069 | auto-audit ; audit indépendant à faire |
+| J44 | Bronchopneumopathie chronique obstructive | J43, J44 | 2 | 2026-09-25 | 14740 | fusion Claude + Alpha, vérifié en texte intégral (80 points) ; audit indépendant /20 à faire |
+| D84 | Déficits immunitaires | D80, D81, D82, D83, D84 | 9 | 2026-09-25 | 5948 | intégré, audit indépendant à faire |
+| M06 | Polyarthrite rhumatoïde | M05, M06 | 10 | 2026-09-26 | 4101 | intégré, audit indépendant à faire |
+| M32 | Lupus érythémateux systémique | M32 | 10 | 2026-09-26 | 3472 | intégré, audit indépendant à faire |
+| T78 | Anaphylaxie et allergies | T78 | 16 | 2026-09-26 | 10222 | intégré, audit indépendant à faire |
+| M31 | Vascularites systémiques | M30, M31 | 10 | 2026-09-26 | 7330 | intégré, audit indépendant à faire |
+| I71 | Anévrismes et dissections artérielles | I71, I72 | 9 | 2026-09-26 | 5177 | intégré, audit indépendant à faire |
+| I80 | Thrombose veineuse profonde et thromboses veineuses | I80, I81, I82 | 9 | 2026-09-26 | 5153 | intégré, audit indépendant à faire |
+| I70 | Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë | I70, I74 | 9 | 2026-09-26 | 4117 | intégré, audit indépendant à faire |
+| J18 | Pneumonies de l’adulte | J13, J14, J15, J18 | 2 | 2026-09-26 | 15020 | Alpha, corrigé et vérifié en texte intégral (48 points) ; audit indépendant /20 à faire |
+| I26 | Embolie pulmonaire aiguë | I26 | 2 | 2026-09-26 | 12465 | Alpha, corrigé et vérifié en texte intégral ; audit indépendant /20 à faire |
+| A41 | Sepsis et choc septique de l’adulte | A41 | 7 | 2026-09-26 | 11819 | Alpha, corrigé et vérifié en texte intégral (58 points) ; audit indépendant /20 à faire |
 
 ### 19.2 Corrections d’affectation (26.09.2026)
 Selon le catalogue CIM intégré (`medora-data`, champ `system`) : M05, M06, M30, M31, M32 appartiennent à **Appareil locomoteur (vague 10)** et T78 à **Traumatismes et lésions (vague 16)**. Leurs entrées de `chapters.json` portent désormais ces vagues. Toujours vérifier le système d’une catégorie dans `medora-data` avant de fixer `wave`.
@@ -272,8 +280,9 @@ Selon le catalogue CIM intégré (`medora-data`, champ `system`) : M05, M06, M30
 - Quand les 31 catégories sont couvertes : ajouter 9 à `DONE_SYS` dans `shell/data.py`.
 
 ### 19.4 Qualité
-- Audités 19,25–20/20 : les 17 chapitres cardiologiques.
-- **Trop condensés, à réécrire au niveau de J45 (≈ 10–15 000 mots)** : J44, D84, M06, M32. Les chapitres T78 (≈ 10 200 mots), M31 (≈ 7 300), I71, I80, I70 (≈ 4 000–5 200) sont complets mais n’ont pas eu d’audit indépendant.
+- **Achevés** (audit indépendant 19,25–20/20, `DONE_COURSES`) : les 17 chapitres cardiologiques.
+- **Intégrés, audit indépendant /20 à faire** : J45 (auto-audit), J44 (fusion Claude + Alpha, ≈ 10 500 mots), J18, I26, A41 (branche Alpha, corrigés à la fusion : critères formels, posologies suisses, figures, collisions de sigles ; ≈ 9 000–11 000 mots), T78, M31, I71, I80, I70.
+- **Trop condensés, à réécrire au niveau de J45 (≈ 10–15 000 mots)** : D84, M06, M32 ; puis I71, I80, I70 (≈ 4 000–5 200 mots).
 - Le propriétaire a **levé toute contrainte d’économie** : ne jamais condenser un cours.
 
 ### 19.5 Répartition
@@ -288,9 +297,16 @@ Claude (claude.ai) progressait à reculons ; **la production continue désormais
 ### 19.6 bis Branche Alpha (ChatGPT) et mission de reprise
 Une branche parallèle, **MEDINA_Alpha** (dossier Drive « Medina Alpha »), a été produite par ChatGPT sur la même architecture : 22 cours au cycle 1, dont J18, I26 et A41, audits, Navigo, Police Taille, mode livre. La mission de Claude Code est décrite dans **`REPRISE_CLAUDE_CODE.md`** : fusion complète, modernisation du front-end, livraison de `MEDINA_final.html`, puis cycles de deux systèmes.
 
+### 19.6 ter Fusion Alpha réalisée (26.09.2026)
+- Détail complet : `audits/FUSION_ALPHA.md`. Chapitres repris : **J18** (covers restreint à J13–J15, J18), **I26**, **A41** ; **J44** fusionné section par section (`audits/FUSION_J44.md`) ; J45 et la cardiologie étaient identiques.
+- Interface portée : **Navigo**, **Police Taille** (14–24 px), corrections du **mode livre**, numéros de sous-parties, **directeur intégré** de l’accueil (relié au bouton directeur), **`DONE_COURSES`**.
+- Glossaire : union des deux branches, 53 clés arbitrées dans `glossary/zz_fusion.py`, collisions de sens résolues (PRES/PReS, REDUCE/Gore REDUCE, ABCDE, HOPE, SSC et V1 dans A41) ; `audits/FUSION_GLOSSAIRE.md`.
+- Défaut corrigé : la coque renvoyait `#/entry/I30`, `K35`, `A41`, `I63` vers d’anciens modules pilotes absents ; un cours MEDINA existant a désormais la priorité (`build_medina.build`).
+- Contrôles : `test_v7.py` (PC et mobile, Navigo, Police Taille, mode livre, zéro erreur JavaScript) et `audit()` vides sur tous les chapitres.
+
 ### 19.7 Google Drive
 Dossier `Medina_claude` (à côté de `Medina.html`) : `MEDINA_Claude.html` (copie de travail, à remplacer par chaque nouveau `MEDINA.html`) et le prompt de passation. Dans Claude Code, écrire directement la sortie dans le dossier Drive synchronisé (Google Drive pour ordinateur) : `MEDINA_OUT=<chemin>/Medina_claude` puis copier `MEDINA.html` en `MEDINA_Claude.html`.
-- **Taille** : `MEDINA.html` ≈ 12,3 Mo non compressé, **8,3 Mo compressé**.
+- **Taille** : `MEDINA.html` ≈ 8,5 Mo compressé (30 cours).
 
 ## 20. Économie
 Ne relire que ce qui sert ; grouper les opérations ; ne pas répéter. Il est **interdit** d’appauvrir un chapitre pour économiser. Le propriétaire a levé le verrou d’économie : utiliser toutes les ressources nécessaires pour des cours complets. L’excellence dans l’économie.

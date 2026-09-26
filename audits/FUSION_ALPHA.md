@@ -59,12 +59,38 @@ Après fusion, tout fichier Alpha est présent dans le dépôt ou remplacé à d
 
 ## 5. Glossaire
 
-À compléter par l’arbitrage : `audits/FUSION_GLOSSAIRE.md`.
+- Union des deux branches : 1 231 clés (Claude) et 1 011 clés effectives (Alpha), soit 1 256 ; après fusion, corrections et ajouts : **1 276 clés**.
+- **53 clés arbitrées** dans `glossary/zz_fusion.py` (chargé en dernier) : définitions riches écrasées par des fichiers chargés plus tard (souvent avec leur fenêtre d’approfondissement), définitions trop propres à un chapitre, dates d’essai divergentes (COMPASS 2017). Chaque fenêtre `ref` conservée existe et convient à tous les emplois. Détail : `audits/FUSION_GLOSSAIRE.md`.
+- **Collisions de sens résolues** : PRES (encéphalopathie, I10) / **PReS** (société pédiatrique, M31) ; REDUCE (BPCO, J44) / **Gore REDUCE** (Q21) ; ABCDE et HOPE (sens minoritaires écrits en toutes lettres dans I10 et I25) ; **SSC** employé ~32 fois dans A41 au sens de *Surviving Sepsis Campaign* (écrit en toutes lettres) ; **V1** (récepteur V1a de la vasopressine, nouvelle clé) ; **ALAT** (Asociación Latinoamericana de Tórax écrite en toutes lettres, clé retirée pour réserver ALAT à l’alanine aminotransférase des futurs cours d’hépatologie).
+- `build_medina.audit()` = `{}` sur les 30 chapitres.
 
-## 6. Contrôle de conformité des chapitres Alpha et corrections
+## 6. Contrôle de conformité, corrections et vérification en texte intégral des chapitres repris
 
-Contrôle indépendant du contrat (PROMPT_MEDINA.md § 4, 10, 13, 14, 15) : voir ci-dessous et les sections « Corrections de fusion Claude — 26.09.2026 » de `audits/J18.md`, `audits/I26.md`, `audits/A41.md`.
+Un contrôle indépendant du contrat (§ 4, 10, 13, 14, 15 du prompt) a relevé dans J18, I26 et A41 des défauts bloquants (J18 sans critères formels dans le dernier îlot ; figures d’I26 hors contrat ; collision SSC dans A41 ; posologies manquantes du dabigatran et de l’édoxaban ; fiche ESCAPe décrivant REMAP-CAP), des défauts majeurs (tableaux des doses incomplets, pager des Sciences inerte, Pareto mal placés ou hors cible, formules de chantier, version « CIM-10-GM 2026 ») et un `covers` surdéclaré pour J18. Chaque chapitre a été corrigé, contre-lu par un agent indépendant, puis repris.
+
+L’accès réseau ayant été ouvert par le propriétaire en cours de session, chaque réserve « vérifiée par extraits » a ensuite été **levée en texte intégral** (informations professionnelles suisses sur swissmedicinfo.ch et compendium.ch, recommandations GOLD 2026, SSI, ERS/ESICM/ESCMID 2023, ATS/IDSA, BTS, Surviving Sepsis Campaign 2021 et 2026, ESC/ERS 2019, AHA/ACC 2026, Plan de vaccination suisse 2026, PubMed), avec contre-lecture adverse d’au moins douze points par chapitre.
+
+| Chapitre | Mots Alpha → livrés | Fenêtres | Quiz | Pareto | Vérification en texte intégral |
+|---|---|---|---|---|---|
+| J44 | 9 675 (Claude 7 591) → **14 740** | 51 | 4 | 7 | 80 points : 41 confirmés, 35 corrigés (dont PaCO₂ > 53 mmHg selon GOLD 2023–2026, antibiothérapie 5 jours, Daxas, trithérapies suisses) |
+| J18 | 6 510 → **15 020** | 35 | 3 | 5 | 48 points (dont CAPE COD 4 ou 7 jours, amoxicilline 4–6 g/j, vaccination pneumococcique dès 2 ans, corticoïdes selon la SSI) |
+| I26 | 6 769 → **12 465** | 41 | 4 | 7 | Anticoagulants et altéplase selon les textes suisses ; PEITHO (ténectéplase) |
+| A41 | 6 851 → **11 819** | 30 | 4 | 7 | 58 points (dont noradrénaline, hydrocortisone non recommandée en routine selon le texte suisse, pipéracilline/tazobactam, SSC 2026) |
+
+Tableaux détaillés (point, URL de la source primaire, verdict, correction) : sections « Vérification en texte intégral — 26.09.2026 » de `audits/J44.md`, `J18.md`, `I26.md`, `A41.md`.
 
 ## 7. Réserves reportées
 
-À compléter.
+- **Aucun des quatre chapitres n’est déclaré achevé** : `DONE_COURSES` reste limité aux 17 cours cardiologiques ; J44, J18, I26 et A41 portent la pastille « cours · en révision » jusqu’à leur audit indépendant /20 (grille § 16) et une revue humaine.
+- Textes intégraux réellement inaccessibles (protections anti-robots ou abonnement) : NEJM, JAMA, ATS Journals, ERJ, Springer, LWW ; données correspondantes vérifiées sur les résumés MEDLINE, Europe PMC ou les publications conjointes, et signalées dans chaque audit.
+- **J18** : `covers` restreint à J13, J14, J15, J18 ; J12 (pneumonies virales) appartient au périmètre du cours selon le § 9.3 et sera développé lors de la réécriture ; J16 et J17 à traiter ou à renvoyer.
+- **A41** : A40 (sepsis à streptocoques) et R57.2 non développés.
+- **I26** : pédiatrie, syndrome des antiphospholipides, grossesse compliquée, embolie sous-segmentaire isolée non développés (réserves Alpha).
+- Chapitres propres à Claude non audités : T78, M31, I71, I80, I70 ; trop condensés : D84, M06, M32 (phase 4).
+- Contrôles navigateur (Chromium, PC 1300 px et mobile 390 px) : voir § 8.
+
+## 8. Contrôles de la livraison de phase 1
+
+- Construction : `build_front.py` à partir du code de phase 1 (commit `38b7b56` pour `shell/polish.css`, `shell/polish.js`, `build_medina.py`) et du contenu final ; **30 cours**, 1 873 gabarits compressés, **8 481 859 octets** (12,8 Mo avant compression).
+- `python3 test_v7.py` sur les **30 chapitres** (Chromium 141, PC 1300 × 900 et mobile 390 × 844) : **OK**. Le test contrôle les abréviations non couvertes (`audit()` vide), les fenêtres manquantes, les clés préfixées, l’affichage de chaque cours, le clic sur chaque mot vert, les quatre onglets, Navigo (ouverture, contenu, saut), Police Taille (réglage et réinitialisation), le mode livre, l’absence d’erreur JavaScript et l’absence de débordement horizontal sur mobile.
+- Livrables : `dist/MEDINA_Claude.html`, `dist/MEDINA_SOURCES.json`, `dist/MEDINA_Etat_des_lieux.html`.
