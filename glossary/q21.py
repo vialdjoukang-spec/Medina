@@ -44,7 +44,9 @@ a('CLOSE',[('CLOSE','nom d’essai (« fermer »), formé à partir de « Patent
  '<p>Fermeture du foramen ovale perméable plus antiplaquettaire contre antiplaquettaire seul chez des patients de 16 à 60 ans : réduction des récidives d’accident ischémique.</p>','q21-rope')
 a('RESPECT',[('RESPECT','nom d’essai formé à partir de « Randomized Evaluation of Recurrent Stroke Comparing PFO Closure to Established Current Standard of Care Treatment », non strictement lettre à lettre')],'Essai RESPECT (2013, suivi prolongé 2017)',
  '<p>Fermeture percutanée du foramen ovale perméable contre traitement médical après un accident ischémique inexpliqué : réduction des récidives au suivi prolongé.</p>','q21-rope')
-a('REDUCE',[('REDUCE','nom d’essai (« réduire ») sur la fermeture du foramen ovale perméable, non développable lettre à lettre')],'Essai REDUCE (2017)',
+# Clé « Gore REDUCE » (nom officiel : Gore REDUCE Clinical Study) : distincte de la clé « REDUCE »,
+# réservée à l’essai suisse sur la corticothérapie courte de l’exacerbation de BPCO (chapitre J44, JAMA 2013).
+a('Gore REDUCE',[('Gore','nom de la société fabricante du dispositif de fermeture, intégré au nom officiel de l’essai'),('REDUCE','nom d’essai (« réduire ») sur la fermeture du foramen ovale perméable, non développable lettre à lettre')],'Essai Gore REDUCE (2017)',
  '<p>Fermeture du foramen ovale perméable plus antiplaquettaire contre antiplaquettaire seul après un accident ischémique cryptogénique : réduction des récidives cliniques.</p>','q21-rope')
 a('BREATHE-5',[('BREATHE','Bosentan Randomized trial of Endothelin Antagonist THErapy, acronyme arrangé'),('5','cinquième essai de la série')],'Essai BREATHE-5 (2006)',
  '<p>Bosentan contre placebo dans le syndrome d’Eisenmenger : baisse des résistances pulmonaires et amélioration de la capacité d’effort, sans baisse de la saturation.</p>','q21-d-era')

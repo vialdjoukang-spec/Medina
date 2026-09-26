@@ -16,8 +16,9 @@ a('SCORE2-Diabetes',[('SCORE2','Systematic COronary Risk Evaluation 2'),('Diabet
  '<p>Ajoute l’âge au diagnostic du diabète, l’HbA1c et le débit de filtration.</p>','i10-score2')
 a('STOP-BANG',[('S','Snoring : ronflement'),('T','Tiredness : fatigue diurne'),('O','Observed apnea : apnées observées'),('P','Pressure : hypertension'),('B','BMI : indice de masse corporelle > 35'),('A','Age : âge > 50 ans'),('N','Neck : tour de cou élevé'),('G','Gender : sexe masculin')],'Questionnaire de dépistage des apnées obstructives du sommeil',
  '<p>Un point par item ; un score ≥ 3 indique un risque intermédiaire à élevé et justifie une polygraphie ventilatoire.</p>','i10-saos')
-a('ABCDE',[('A','Accuracy, Apnea, Aldosteronism'),('B','Bruits, Bad kidneys'),('C','Catecholamines, Coarctation, Cushing'),('D','Drugs, Diet'),('E','Erythropoietin, Endocrine')],'Aide-mémoire des causes d’hypertension secondaire',
- '<p>Aide pédagogique, non critère officiel.</p>','i10-mnemo-abcde')
+# Clé « ABCDE » retirée (collision de sens, fusion du 26.09.2026) : le sigle désigne partout ailleurs l’approche
+# ABCDE du patient grave (I44, I46, T78). L’aide-mémoire des causes secondaires est désormais écrit « de A à E »
+# dans I10_a.html et I10_pop2.html ; son contenu reste dans la fenêtre i10-mnemo-abcde.
 a('MAPA',[('M','Mesure'),('A','Ambulatoire de la'),('P','Pression'),('A','Artérielle')],'Mesure ambulatoire de la pression artérielle sur 24 heures',
  '<p>Référence diagnostique de l’hypertension ; seuils : 24 heures ≥ 130/80, jour ≥ 135/85, nuit ≥ 120/70 mmHg.</p>','i10-mapa')
 a('A1',[('A','catégorie d’Albuminurie'),('1','1 : normale à légèrement augmentée')],'Albuminurie de catégorie A1 (KDIGO)','<p>Rapport albumine/créatinine &lt; 3 mg/mmol.</p>','i10-alb')
@@ -125,8 +126,9 @@ t('RADIANCE',[('RADIANCE','nom de programme d’essais de dénervation rénale p
  '<p>Essais RADIANCE-HTN et RADIANCE II (2023) : baisse de la pression ambulatoire diurne supérieure à la procédure simulée.</p>','i10-dnr')
 t('PROGRESS',[('PROGRESS','acronyme arrangé de « Perindopril pROtection aGainst REcurrent Stroke Study », non strictement lettre à lettre')],'Essai PROGRESS (2001)',
  '<p>Après un accident vasculaire cérébral : périndopril ± indapamide réduit la récidive, y compris chez les normotendus.</p>')
-t('HOPE',[('H','Heart'),('O','Outcomes'),('P','Prevention'),('E','Evaluation')],'Essai HOPE (2000)',
- '<p>Ramipril chez des patients à haut risque vasculaire : réduction des infarctus, accidents vasculaires cérébraux et décès cardiovasculaires.</p>')
+# Clé « HOPE » retirée (collision de sens, fusion du 26.09.2026) : le sigle désigne le score HOPE de l’hypothermie
+# (I46, trois emplois). L’essai du ramipril (2000) est écrit en toutes lettres dans I10_pop4.html :
+# « Heart Outcomes Prevention Evaluation ».
 t('EUROPA',[('EU','EUropean trial on'),('R','Reduction'),('O','Of cardiac events with'),('P','Perindopril in stable coronary'),('A','Artery disease')],'Essai EUROPA (2003)',
  '<p>Périndopril chez le coronarien stable : réduction des événements cardiovasculaires.</p>')
 t('LIFE',[('L','Losartan'),('I','Intervention'),('F','For'),('E','Endpoint reduction in hypertension')],'Essai LIFE (2002)',

@@ -16,10 +16,10 @@ RENVOIS={1:[("A43","Nocardiose","traitée en infectiologie (vague 7)"),("I51","C
 DONE_COURSES={'I50','I21','I25','I48','I10','I30','I33','I35','I34','I00','I40','I42','I44','I47','I49','I46','Q21'}
 NOTES={"I00":"19,5/20","I40":"19,25/20",
 "J45":"auto-audit ; audit indépendant à faire",
-"J44":"fusion Claude + Alpha (audits/FUSION_J44.md) ; auto-relecture Alpha, audit indépendant à faire",
-"J18":"branche Alpha : audit de travail (audits/J18.md), revue clinique indépendante à faire",
-"I26":"branche Alpha : contre-audit ciblé (audits/I26.md), en révision clinique ; aucune figure",
-"A41":"branche Alpha : contre-audit ciblé (audits/A41.md), en révision clinique"}
+"J44":"fusion Claude + Alpha (audits/FUSION_J44.md), 10 500 mots ; audit indépendant /20 à faire",
+"J18":"Alpha + corrections de fusion (audits/J18.md) ; audit indépendant /20 à faire",
+"I26":"Alpha + corrections de fusion (audits/I26.md) ; audit indépendant /20 à faire",
+"A41":"Alpha + corrections de fusion (audits/A41.md) ; audit indépendant /20 à faire"}
 
 # Plan de production par système (ordre du prompt de passation, § 9) — sert au bouton directeur de l'accueil
 PLAN={
