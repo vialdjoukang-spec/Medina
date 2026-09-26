@@ -31,6 +31,8 @@ completed=[c['code'] for c in chap if c['code'] in DONE_COURSES]
 data={'systems':sysd,'build':build,'news':[{'code':c['code'],'title':c['title'],'complete':c['code'] in DONE_COURSES} for c in chap if c.get('added')==build],
       'doneNames':[t for n,t,_ in WAVES if n in DONE_SYS],'ecgCat':CAT,'complete':completed}
 s=open(out,encoding='utf-8').read()
+# Icône « stomach » de la coque : chemin SVG incomplet (erreur de console au premier rendu) ; source intacte.
+s=s.replace("1-5 1-7V3z'","1-5 1-7 0V3z'",1)
 # Insigne « 100 % rédigé » : seuls les chapitres de DONE_COURSES (audités), distincts des chapitres intégrés.
 assert '<script>window.MEDINA_ALIAS=' in s
 s=s.replace('<script>window.MEDINA_ALIAS=','<script>window.MEDINA_COMPLETE='+json.dumps(completed)+';</script><script>window.MEDINA_ALIAS=',1)
@@ -50,7 +52,7 @@ def grab(m):
     tpls.append(m.group(0));return ''
 s2=re.sub(r'<template (?:id="ch-[^"]+"|data-pop="[^"]+")[\s\S]*?</template>',grab,s)
 if tpls:
-    pack=base64.b64encode(gzip.compress(''.join(tpls).encode('utf-8'),9)).decode()
+    pack=base64.b64encode(gzip.compress(''.join(tpls).encode('utf-8'),9,mtime=0)).decode()  # mtime=0 : construction reproductible
     loader=('<div id="mdn-tpl" hidden></div><script id="mdn-pack" type="application/octet-stream">'+pack+'</script>'
      '<script>(async()=>{try{const b=Uint8Array.from(atob(document.getElementById("mdn-pack").textContent),c=>c.charCodeAt(0));'
      'const t=await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream("gzip"))).text();'

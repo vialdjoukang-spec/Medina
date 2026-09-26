@@ -78,12 +78,13 @@ addEventListener('hashchange',sync);setTimeout(sync,200);})();
 /* Hauteur réelle de la barre supérieure : sert aux onglets collants du cours et aux ancres. */
 const top=document.querySelector('.topbar');const setTop=()=>{if(top)root.style.setProperty('--mdn-top',top.offsetHeight+'px')};setTop();
 /* Hauteur des onglets du cours quand ils sont collants (0 sinon) : marge des ancres et du focus clavier. */
-const setTabs=()=>{const t=document.querySelector('.mc .mc-tabs');root.style.setProperty('--mdn-tabs',(t&&getComputedStyle(t).position==='sticky'?t.offsetHeight+8:0)+'px')};addEventListener('resize',setTabs);
+const setTabs=()=>{const m=document.querySelector('.mc'),t=m&&m.querySelector('.mc-tabs');if(t)m.classList.toggle('mdn-tabs-tall',t.offsetHeight>96);root.style.setProperty('--mdn-tabs',(t&&getComputedStyle(t).position==='sticky'?t.offsetHeight+8:0)+'px')};addEventListener('resize',setTabs);
+/* À l'ouverture d'un cours, la coque repositionne la page à 200 px : la barre d'outils du cours est alors gardée sous la barre collante. */
+(()=>{const f=window.scrollTo;window.scrollTo=function(a,b){const tb=document.querySelector('.mc .mc-toolbar');if(tb&&a===0&&b===200&&top){const y=scrollY+tb.getBoundingClientRect().top-top.offsetHeight-8;return f.call(window,{top:Math.max(0,y),behavior:'instant'})}return f.apply(window,arguments)}})();
 /* Mouvement réduit : les défilements « smooth » demandés par le moteur deviennent instantanés. */
 (()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)');const s=o=>(rm.matches&&o&&typeof o==='object'&&o.behavior==='smooth')?{...o,behavior:'auto'}:o;
  for(const P of [Element.prototype,window])for(const k of ['scrollTo','scrollBy','scrollIntoView']){const f=P[k];if(typeof f==='function')P[k]=function(o,...r){return f.call(this,s(o),...r)}}})();
-/* Icône « stomach » de la coque : chemin SVG incomplet (erreur de console préexistante). */
-try{if(typeof PATHS==='object'&&PATHS.stomach&&PATHS.stomach.endsWith('1-5 1-7V3z'))PATHS.stomach=PATHS.stomach.replace('1-5 1-7V3z','1-5 1-7 0V3z')}catch(e){}
+
 if(top&&'ResizeObserver' in window)new ResizeObserver(setTop).observe(top);
 
 /* Mode sombre : la coque d'origine contient de nombreuses couleurs claires codées en dur. Quand le mode sombre est actif,
@@ -96,15 +97,15 @@ const sat=c=>{const mx=Math.max(c.r,c.g,c.b),mn=Math.min(c.r,c.g,c.b);return mx?
 const SKIP='svg,figure,.mdn-ecg .sv,.mc-pareto-btn,.fluo,.mc-badge,.mdn-keep,.sidebar,.ring,.mdn-director-track i,.mdn-director-courses a.is-complete,.swatches,.theme-dotset';
 let seen=new WeakSet();
 function autoDark(){if(!root.classList.contains('mdn-dark'))return;const todo=[];
- document.querySelectorAll('#content,.topbar,dialog[open]').forEach(scope=>scope.querySelectorAll('*').forEach(el=>{
-  if(seen.has(el))return;seen.add(el);if(el.closest(SKIP))return;const cs=getComputedStyle(el);
+ document.querySelectorAll('#content,.topbar,dialog[open],.mc-navigo,.mdn-toast').forEach(scope=>{if(scope.closest(SKIP))return;const w=document.createTreeWalker(scope,1,{acceptNode:n=>n.matches(SKIP)||n.matches('.mc-panel[hidden]')?2:1});const els=[];for(let n=w.nextNode();n;n=w.nextNode())if(!seen.has(n))els.push(n);els.forEach(el=>{
+  seen.add(el);const cs=getComputedStyle(el);
   const bw=parseFloat(cs.borderTopWidth)+parseFloat(cs.borderBottomWidth);if(bw>0){const bc=rgb(cs.borderTopColor);if(bc&&bc.a>=.5&&lum(bc)>.6)todo.push([el,'mdn-dk-line'])}
   if(cs.backgroundImage==='none'&&cs.backgroundColor==='rgba(0, 0, 0, 0)'){const c=rgb(cs.color);if(c&&lum(c)<.3)todo.push(sat(c)<.35||lum(c)<.02?[el,'mdn-dk-ink']:[el,'mdn-dk-tint',cs.color]);return}
   const bg=rgb(cs.backgroundColor);let light=bg&&bg.a>=.5&&lum(bg)>.5;
   if(!light&&cs.backgroundImage.includes('gradient'))light=(cs.backgroundImage.match(/(rgba?|color)\([^)]*\)/g)||[]).some(x=>{const c=rgb(x);return c&&c.a>=.5&&lum(c)>.5});
   if(light)todo.push([el,'mdn-dk-bg']);
   const c=rgb(cs.color);if(c&&lum(c)<.3)todo.push(sat(c)<.35||lum(c)<.02?[el,'mdn-dk-ink']:[el,'mdn-dk-tint',cs.color]);
- }));
+ })});
  todo.forEach(([el,k,c])=>{el.classList.add(k);if(c)el.style.setProperty('--mdn-c',c)})}
 function autoLight(){document.querySelectorAll('.mdn-dk-bg,.mdn-dk-ink,.mdn-dk-tint,.mdn-dk-line').forEach(el=>{el.classList.remove('mdn-dk-bg','mdn-dk-ink','mdn-dk-tint','mdn-dk-line');el.style.removeProperty('--mdn-c')});seen=new WeakSet()}
 
@@ -113,6 +114,7 @@ const KEY='medina.dark';let on=false;try{on=localStorage.getItem(KEY)==='1'}catc
 const apply=v=>{['--t1','--t2'].forEach(k=>{const o=root.style.getPropertyValue(k);if(o)root.style.setProperty('--mdn-'+k.slice(2)+'o',o)});root.classList.toggle('mdn-dark',v);if(v)requestAnimationFrame(autoDark);else autoLight();
  document.querySelectorAll('.mdn-darkbtn').forEach(b=>{b.setAttribute('aria-pressed',String(v));b.title=v?'Revenir au mode clair':'Passer au mode sombre'})};
 apply(on);
+new MutationObserver(()=>{['--t1','--t2'].forEach(k=>{const v=root.style.getPropertyValue(k),n='--mdn-'+k.slice(2)+'o';if(v&&root.style.getPropertyValue(n)!==v)root.style.setProperty(n,v)})}).observe(root,{attributes:true,attributeFilter:['style']});
 function darkButton(){const tb=document.querySelector('.top-actions');if(!tb||tb.querySelector('.mdn-darkbtn'))return;const b=document.createElement('button');b.type='button';b.className='mdn-darkbtn';b.setAttribute('aria-label','Mode sombre');
  b.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>';
  b.onclick=()=>{on=!on;try{localStorage.setItem(KEY,on?'1':'0')}catch(e){}apply(on)};const th=tb.querySelector('.theme-btn');th?th.after(b):tb.appendChild(b);apply(on)}
@@ -126,15 +128,13 @@ function draftBadges(){if(typeof MEDINA_hasCourse!=='function')return;const done
 
 /* Plan du cours : même numérotation que les îlots (0 = question clinique). */
 function tocStart(){document.querySelectorAll('.mc .mc-panel').forEach(p=>{const ol=p.querySelector('.mc-toc ol'),n=parseInt(p.querySelector('.mc-ilot h2 .mc-n')?.textContent,10);if(ol&&!isNaN(n)&&ol.start!==n&&ol.children.length===p.querySelectorAll(':scope .mc-body>.mc-ilot').length)ol.start=n})}
-/* À l'ouverture d'un cours, la coque défile de 200 px : la barre d'outils du cours est ramenée sous la barre collante. */
-let lastRoute='';function revealToolbar(){if(location.hash===lastRoute)return;lastRoute=location.hash;const t=document.querySelector('.mc-toolbar');if(!t||!top)return;requestAnimationFrame(()=>{const y=t.getBoundingClientRect().top,H=top.offsetHeight;if(y<H+4&&y>-400)scrollBy({top:y-H-8,behavior:'instant'})})}
 document.addEventListener('click',e=>{
  /* Changement d'onglet depuis la barre collante : le nouveau panneau commence sous les onglets. */
- const b=e.target.closest('.mc .mc-tabs button');if(b)requestAnimationFrame(()=>{setTabs();const p=document.querySelector('.mc-panel:not([hidden])'),t=document.querySelector('.mc .mc-tabs');if(!p||!t)return;const y=scrollY+p.getBoundingClientRect().top-(t.getBoundingClientRect().bottom+12);if(scrollY>y)scrollTo({top:Math.max(0,y),behavior:'instant'})});
+ const b=e.target.closest('.mc .mc-tabs button');if(b){autoDark();requestAnimationFrame(()=>{setTabs();const p=document.querySelector('.mc-panel:not([hidden])'),t=document.querySelector('.mc .mc-tabs');if(!p||!t)return;const st=getComputedStyle(t).position==='sticky';const y=st?scrollY+p.getBoundingClientRect().top-(t.getBoundingClientRect().bottom+12):scrollY+t.getBoundingClientRect().top-(top?top.offsetHeight:0)-8;if(scrollY>y)scrollTo({top:Math.max(0,y),behavior:'instant'})})}
  /* Navigo en mode livre : le livre est ramené dans la fenêtre après le changement de page. */
  if(e.target.closest('.mc-navigo-item')&&document.querySelector('.mc.book')){const bk=document.querySelector('.mc-panel:not([hidden]) .mc-body');setTimeout(()=>bk&&bk.scrollIntoView({block:'start',behavior:'smooth'}),340)}
 });
-const run=()=>{darkButton();techNotes();draftBadges();tocStart();setTabs();revealToolbar();autoDark()};let tm=null;
+const run=()=>{darkButton();techNotes();draftBadges();tocStart();setTabs();autoDark()};let tm=null;
 /* Le mode sombre convertit avant le rendu (microtâche) : pas d'éclair blanc au changement de page. */
 new MutationObserver(()=>{if(root.classList.contains('mdn-dark'))autoDark();clearTimeout(tm);tm=setTimeout(run,90)}).observe(document.body,{childList:true,subtree:true});setTimeout(run,350);
 })();

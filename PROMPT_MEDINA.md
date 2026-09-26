@@ -135,6 +135,7 @@ Noir et blanc (le trait `#222`), police `Inter,sans-serif` ou héritée, légend
 - **Atlas ECG** : bouton dans la barre supérieure et lien dans la barre latérale, ouvrant une fenêtre plein écran filtrable ; chaque tracé renvoie au cours.
 - **Typographie des cours** (exigence du propriétaire) : une seule police, Georgia, partout (texte, tableaux, fenêtres, légendes des schémas) ; titres et numéros d’îlots en rouge `#b3261e`, gras et soulignés ; texte justifié avec césure. Règle portée par `engine/medina_course.css`.
 - **Aucun état des lieux dans le produit** : l’avancement vit dans `MEDINA_Etat_des_lieux.html`.
+- **Modernisation (phase 2, 26.09.2026)** — détail : `audits/FRONT_MODERNISATION.md`. Barre supérieure réellement collante ; onglets du cours collants sur grand écran (libellés entiers, non collants au-delà de 96 px) ; `scroll-padding-top` mesuré pour que titres et focus ne soient jamais masqués ; Navigo en onglet vertical dès 761 px ; mode sombre facultatif (bouton de la barre supérieure, `html.mdn-dark`, conversion automatique des couleurs claires de la coque, figures sur papier blanc) ; pastille « cours · en révision » pour les cours intégrés non achevés (le vert lime reste réservé à l’insigne « 100 % rédigé ») ; mouvement réduit respecté. Toute évolution visuelle passe par la couche `polish` et se contrôle par `captures_front.py` et `test_v7.py`.
 - Le lecteur de leçons d’origine importe `lesson-core.js` dynamiquement ; en fichier local, cette importation échoue sans conséquence, car le moteur MEDINA affiche les cours rédigés.
 
 ## 8. Limites techniques à anticiper
@@ -303,6 +304,10 @@ Une branche parallèle, **MEDINA_Alpha** (dossier Drive « Medina Alpha »), a �
 - Glossaire : union des deux branches, 53 clés arbitrées dans `glossary/zz_fusion.py`, collisions de sens résolues (PRES/PReS, REDUCE/Gore REDUCE, ABCDE, HOPE, SSC et V1 dans A41) ; `audits/FUSION_GLOSSAIRE.md`.
 - Défaut corrigé : la coque renvoyait `#/entry/I30`, `K35`, `A41`, `I63` vers d’anciens modules pilotes absents ; un cours MEDINA existant a désormais la priorité (`build_medina.build`).
 - Contrôles : `test_v7.py` (PC et mobile, Navigo, Police Taille, mode livre, zéro erreur JavaScript) et `audit()` vides sur tous les chapitres.
+
+### 19.6 quater Front-end modernisé (phase 2, 26.09.2026)
+- Couche `shell/polish.css` / `shell/polish.js` uniquement ; coque intacte. Trois revues adverses (45 constats, puis 24, puis vérification finale) ; captures avant/après dans `audits/FRONT_captures/`.
+- Livrables : `dist/MEDINA_Claude.html` (phase 1, fusion) et `dist/MEDINA_final.html` (phase 3, fusion + modernisation).
 
 ### 19.7 Google Drive
 Dossier `Medina_claude` (à côté de `Medina.html`) : `MEDINA_Claude.html` (copie de travail, à remplacer par chaque nouveau `MEDINA.html`) et le prompt de passation. Dans Claude Code, écrire directement la sortie dans le dossier Drive synchronisé (Google Drive pour ordinateur) : `MEDINA_OUT=<chemin>/Medina_claude` puis copier `MEDINA.html` en `MEDINA_Claude.html`.
