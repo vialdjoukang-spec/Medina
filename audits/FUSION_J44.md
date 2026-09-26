@@ -135,3 +135,13 @@ Contre-lecture indépendante de la fusion : 13 écarts signalés, chacun vérifi
 
 Réserves restantes : 3 (vérifications par moteur de recherche, sans texte intégral), 4 (formulation GOLD 2026 du seuil de 52 mmHg, désormais attribuée aux éditions antérieures), 6, 7 et 8 du § 6 ; point 12 ci-dessus à la charge de l'intégrateur.
 
+
+## 8. Levée des réserves en texte intégral (26.09.2026)
+
+Accès réseau ouvert : les réserves du § 6 et du § 7 ont été confrontées aux sources primaires lues en texte intégral ; le détail (point, URL, verdict, correction) figure dans `audits/J44.md`, section « Vérification en texte intégral — 26.09.2026 ».
+
+- Réserve 3 (vérifications par moteur de recherche) : **levée**. Déclaration GOLD/GLI (texte intégral, PMC13084305), groupe E (GOLD 2026, figure 2.13), CAAT (GOLD 2025 et 2026), fraction professionnelle de 14 % (texte intégral de Blanc 2019), sous-diagnostic de 81,4 % (Lamprecht 2015), limitation de Trelegy (compendium.ch), programmes accrédités par la Société suisse de pneumologie (pneumo.ch) et contre-indications de Daxas (information professionnelle suisse) confirmés ou corrigés. Tabagisme : 23,9 % et non 24 %. Contre-indications de Daxas : grossesse et allaitement relèvent de « ne doit pas être administré », non de la rubrique des contre-indications.
+- Réserve 4 (seuil de 52 mmHg) : **levée par correction**. « PaCO₂ ≥ 52 mmHg » figure dans GOLD 2019 à 2022 ; GOLD 2023, 2024 et 2026 écrivent « > 53 mmHg ». L’énoncé du § 5 et de la ligne 3 du § 7 (« seuil attribué aux rapports antérieurs à 2026, 52 mmHg repère de sélection GOLD ») est donc remplacé, dans le chapitre, par la formulation de GOLD 2026 (figure 3.17) et la mention datée des éditions 2019 à 2022.
+- Réserve 6 (antibiothérapie empirique) : **levée par correction**. GOLD 2026 ajoute la quinolone chez certains patients, précise les indications (purulence et un autre symptôme, culture positive antérieure, ventilation) et retient 5 jours.
+- Écarts supplémentaires corrigés lors de cette relecture : sévérité de l’exacerbation (classification de Rome adoptée par GOLD 2026), critères de sortie, oxygénothérapie de longue durée (« deux fois sur trois semaines », « plus de 15 h/jour »), vaccinations (Plan suisse 2026 et recommandation VRS 2026), indication suisse des trithérapies fixes, roflumilast et azithromycine, ipratropium (pas d’aérosol-doseur seul en Suisse), UPLIFT remplacé par POET-COPD pour la comparaison avec un BALA, mortalité d’ETHOS limitée à la dose de 320 µg de budésonide, voyage aérien, chiffre non sourcé de l’expiration forcée retiré.
+- Réserves restantes : voir `audits/J44.md` (NEJM 2004, déclarations ATS/ERS 2003 et ERS 2017, site de la Ligue pulmonaire, tous inaccessibles ; contrôle navigateur et revue humaine en attente).
