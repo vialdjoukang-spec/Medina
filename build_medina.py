@@ -129,8 +129,10 @@ def build(chapters, out):
     css = open(ROOT + '/engine/medina_course.css').read()
     js = open(ROOT + '/engine/medina_course.js').read()
     gl = json.dumps(G, ensure_ascii=False)
-    fonts = '<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">'
-    v6 = v6.replace('</head>', fonts + '<style id="medina-course-css">' + css + '</style></head>', 1)
+    # La politique de sécurité de la coque (style-src 'self' 'unsafe-inline') bloque Google Fonts : la feuille
+    # externe n'était jamais chargée et produisait une erreur de console. Les polices du sélecteur retombent
+    # sur les polices locales (Georgia, police système).
+    v6 = v6.replace('</head>', '<style id="medina-course-css">' + css + '</style></head>', 1)
     alias = {}
     for code, files in chapters:
         for c in COVERS.get(code, [code]): alias[c] = code

@@ -137,3 +137,199 @@ dialog.mdn-sys::backdrop{background:rgba(12,24,18,.55);backdrop-filter:blur(4px)
 .mdn-director-courses a.is-complete{background:#D6FF2E;color:#132200;box-shadow:0 0 0 1px #b7e000}
 .mdn-director-plan{margin-left:auto;padding:4px 9px;border:1px solid #cfe0cf;border-radius:6px;background:#fff;color:#285c43;font:650 11px/1.3 system-ui,sans-serif;cursor:pointer}.mdn-director-plan:hover{background:#eef5ed}
 .mdn-rev{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:999px;background:#fff3e6;color:#845d20;font:600 11px/1.4 system-ui,sans-serif}
+
+/* ===================================================================================
+   MEDINA — modernisation du front-end (phase 2, 26.09.2026)
+   Couche d'embellissement seule : aucune structure HTML modifiée, aucune fonction retirée.
+   Principes : jetons dérivés du thème actif (--t1…--t4), hiérarchie typographique nette,
+   surfaces douces, ombres en trois niveaux, focus clavier visible, mouvements sobres
+   (désactivés par prefers-reduced-motion), mode sombre facultatif (html.mdn-dark).
+   =================================================================================== */
+:root{
+ --mdn-accent:var(--t4,#1f3428);--mdn-accent-2:var(--t3,#496a58);
+ --mdn-soft:color-mix(in srgb,var(--t2,#e7eee6) 42%,var(--surface,#fff));
+ --mdn-lime:#D6FF2E;
+ --mdn-r-s:10px;--mdn-r-m:14px;--mdn-r-l:20px;
+ --mdn-sh-1:0 1px 2px rgb(16 28 22/.06),0 1px 1px rgb(16 28 22/.04);
+ --mdn-sh-2:0 10px 28px -12px rgb(16 32 24/.22),0 2px 6px -2px rgb(16 32 24/.08);
+ --mdn-sh-3:0 28px 70px -20px rgb(12 26 20/.38);
+ --mdn-ease:cubic-bezier(.2,.7,.2,1);
+ --mdn-top:77px;
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:"kern","liga"}
+::selection{background:color-mix(in srgb,var(--mdn-lime) 60%,transparent);color:#132200}
+*{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--mdn-accent) 32%,transparent) transparent}
+
+/* ---------- Focus clavier : anneau fin, net, à la couleur du thème (remplace l'anneau doré épais) ---------- */
+:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--mdn-accent)!important;outline-offset:2px!important;border-radius:6px}
+.sidebar :focus-visible,.mdn-sys header :focus-visible,.mdn-ecg header :focus-visible{outline-color:var(--mdn-lime)!important}
+input:focus,select:focus,textarea:focus{border-color:color-mix(in srgb,var(--mdn-accent) 55%,var(--line))}
+/* Un bouton focalisé à l'ouverture d'une fenêtre (showModal) ne porte pas d'anneau décoratif si la souris a servi. */
+dialog :focus:not(:focus-visible){outline:none!important}
+
+/* ---------- Barre supérieure ---------- */
+/* La barre était déclarée collante mais .app (overflow:hidden) en faisait un conteneur de défilement : clip rogne
+   sans créer de conteneur, la barre et les onglets du cours restent donc visibles pendant la lecture. */
+html body,html body .app{overflow-x:clip!important;overflow-y:visible!important}
+.topbar{background:color-mix(in srgb,var(--bg) 82%,transparent)!important;border-bottom:1px solid color-mix(in srgb,var(--line) 80%,transparent)}
+.top-actions .iconbtn,.mdn-ecgbtn,.theme-btn{border-radius:12px;transition:background .2s,border-color .2s,box-shadow .2s,transform .2s var(--mdn-ease)}
+.top-actions .iconbtn:hover,.mdn-ecgbtn:hover,.theme-btn:hover{border-color:color-mix(in srgb,var(--mdn-accent) 40%,var(--line));box-shadow:var(--mdn-sh-1);transform:translateY(-1px)}
+.searchwrap{border-radius:14px!important;transition:border-color .2s,box-shadow .2s}
+.searchwrap:focus-within{border-color:color-mix(in srgb,var(--mdn-accent) 55%,var(--line))!important;box-shadow:0 0 0 4px color-mix(in srgb,var(--mdn-accent) 12%,transparent)}
+.mdn-darkbtn{display:inline-grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);cursor:pointer}
+.mdn-darkbtn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8}
+@media(max-width:700px){
+ .mdn-ecgbtn{width:44px;padding:0;justify-content:center;font-size:0;gap:0}.mdn-ecgbtn svg{width:21px;height:21px}
+ .topbar{gap:10px!important}
+}
+
+/* ---------- Barre latérale ---------- */
+.sidebar .nav-main a{position:relative;border-radius:12px}
+.sidebar .nav-main a.active{box-shadow:none!important;background:color-mix(in srgb,#fff 12%,transparent)!important}
+.sidebar .nav-main a.active:before{content:"";position:absolute;left:-2px;top:22%;bottom:22%;width:3px;border-radius:3px;background:var(--mdn-lime)}
+.sidebar{scrollbar-color:#ffffff33 transparent}
+
+/* ---------- Surfaces, cartes, boutons ---------- */
+.spec-card,.hero-panel,.notice,.empty,.lesson-category,.fed7-card,[class*="-card"]:not(.mc-card):not(.mdn-director-card):not(.theme-card){border-radius:var(--mdn-r-l)}
+.spec-card{box-shadow:var(--mdn-sh-1)!important;border-color:color-mix(in srgb,var(--line) 85%,transparent)!important}
+#content a.spec-card:hover,.spec-card:hover{box-shadow:var(--mdn-sh-2)!important;border-color:color-mix(in srgb,var(--mdn-accent) 30%,var(--line))!important}
+.btn{border-radius:12px!important;transition:background .2s,border-color .2s,box-shadow .2s,transform .2s var(--mdn-ease)}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--mdn-sh-1)}
+.btn:active,.mdn-ecgbtn:active,.iconbtn:active{transform:translateY(0) scale(.98)}
+.notice{border-radius:var(--mdn-r-m)!important}
+.breadcrumbs{align-items:center;font-size:12px!important}
+.breadcrumbs a{border-radius:6px;padding:2px 4px;margin:-2px -4px}.breadcrumbs a:hover{background:var(--mdn-soft);text-decoration:none}
+.eyebrow{letter-spacing:.16em}
+.footer{font-size:11px!important}
+/* Titres de pages : Georgia de l'identité Medina, rythme resserré. */
+#content>h1,.hero h1,#content section>h1{text-wrap:balance}
+#content h2{text-wrap:balance}
+#content p{text-wrap:pretty}
+
+/* ---------- Accueil ---------- */
+.hero{border-radius:26px}
+.hero-panel{box-shadow:var(--mdn-sh-2)!important}
+.mdn-director{border-radius:var(--mdn-r-l)!important;border-color:color-mix(in srgb,var(--mdn-accent) 22%,var(--line))!important;background:linear-gradient(130deg,color-mix(in srgb,var(--mdn-accent) 6%,var(--surface)),var(--surface) 65%)!important}
+.mdn-director-symbol{background:var(--mdn-accent)!important}
+.mdn-director-card{transition:transform .25s var(--mdn-ease),box-shadow .25s,border-color .25s}
+.mdn-director-card:hover{transform:translateY(-2px)}
+/* Bouton directeur flottant : plus discret sur téléphone. */
+@media(max-width:700px){.mdn-dir{width:54px;height:54px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom))}.mdn-dir svg{width:25px;height:25px}}
+
+/* ---------- Notification : feuille basse sur téléphone ---------- */
+.mdn-toast{border-radius:18px!important}
+.mdn-toast ul{max-height:min(46vh,340px);overflow:auto;overscroll-behavior:contain}
+.mdn-toast li{margin:2px 0}.mdn-toast a{color:var(--mdn-accent);font-weight:600}
+@media(max-width:700px){.mdn-toast{left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));max-width:none;font-size:13.5px}}
+
+/* ---------- Fenêtres modales (cours, ECG, systèmes) : apparition douce ---------- */
+dialog.mc-dlg,dialog.mdn-ecg,dialog.mdn-sys{box-shadow:var(--mdn-sh-3)!important}
+dialog.mc-dlg::backdrop{background:rgb(12 24 18/.45);backdrop-filter:blur(3px)}
+@media (prefers-reduced-motion:no-preference){
+ dialog.mc-dlg[open],dialog.mdn-ecg[open],dialog.mdn-sys[open]{animation:mdnDlg .28s var(--mdn-ease)}
+ @keyframes mdnDlg{from{opacity:0;transform:translateY(12px) scale(.985)}}
+}
+
+/* ---------- Cours ---------- */
+/* Onglets du cours collants sous la barre supérieure : l'onglet actif reste à portée pendant la lecture. */
+.mc .mc-tabs{position:sticky;top:calc(var(--mdn-top) + 8px);z-index:25;background:color-mix(in srgb,var(--mdn-soft,#eef3ed) 97%,transparent)!important;backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 -9px 0 0 var(--bg),0 10px 24px -18px rgb(18 42 36/.45)}
+@media(max-width:760px){.mc .mc-tabs{position:static}}
+.mc .mc-toolbar{position:relative;z-index:26}
+.mc-ilot{transition:box-shadow .3s}
+.mc .mc-ilot:target,.mc .mc-ilot:focus-within{box-shadow:0 0 0 2px color-mix(in srgb,var(--mc-red,#b3261e) 25%,transparent),0 8px 22px rgba(18,42,36,.05)}
+.mc h2,.mc h3{scroll-margin-top:calc(var(--mdn-top) + 90px)}
+/* Quiz : états clairs, marqueurs ✓ et ✗ en plus de la couleur (accessibilité). */
+.mc-quiz .mc-opt,.mc-dlg .mc-opt{transition:background .2s,border-color .2s,transform .15s}
+.mc-quiz .mc-opt:hover{border-color:color-mix(in srgb,var(--mdn-accent,#2d6148) 45%,transparent)!important;transform:translateX(2px)}
+.mc-opt.ok{position:relative;padding-right:34px!important}.mc-opt.ko{position:relative;padding-right:34px!important}
+.mc-opt.ok:after,.mc-opt.ko:after{position:absolute;right:12px;top:50%;transform:translateY(-50%);font:700 15px/1 system-ui,sans-serif}
+.mc-opt.ok:after{content:"✓";color:#1c7a45}.mc-opt.ko:after{content:"✗";color:#b3261e}
+/* Tableaux : en-tête collant dans leur défilement horizontal, lignes alternées. */
+.mc table.mc-t{border-radius:12px;box-shadow:var(--mdn-sh-1)}
+.mc table.mc-t tr:nth-child(even) td{background:color-mix(in srgb,#e9f1e8 38%,var(--surface,#fff))}
+/* Figures : cadre papier blanc (tracés noirs lisibles dans tous les thèmes). */
+.mc figure{background:#fff;border-radius:14px;padding:10px 10px 6px;border:1px solid #e3ebe3}
+.mc figure svg{max-width:100%;height:auto}
+/* Insigne des cours intégrés en révision (distinct de l'insigne fluorescent « 100 % rédigé »). */
+.mc-badge-draft{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;margin-left:8px;padding:3px 8px;border-radius:999px;border:1px solid color-mix(in srgb,var(--mdn-accent) 35%,transparent);background:color-mix(in srgb,var(--mdn-accent) 7%,var(--surface));color:var(--mdn-accent);font:650 10.5px/1.2 system-ui,sans-serif;vertical-align:middle}
+.mc-badge-draft:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.7}
+
+/* ---------- Navigo : onglet vertical en marge droite (PC), le texte du cours n'est plus recouvert ---------- */
+@media(min-width:1100px){
+ #content:has(.mc){padding-right:84px!important}
+ .mc-navigo{right:12px}
+ .mc-navigo-trigger{writing-mode:vertical-rl;padding:16px 10px!important;gap:10px!important;border-radius:14px!important;letter-spacing:.06em}
+ .mc-navigo-trigger span{transform:rotate(90deg)}
+ .mc-navigo-panel{right:54px!important}
+}
+.mc-navigo-trigger{transition:background .2s,transform .2s var(--mdn-ease),box-shadow .2s}
+.mc-navigo-trigger:hover{transform:translateX(-2px)}
+.mc-navigo-search:focus{outline:2px solid var(--mdn-accent,#2d6148)!important;outline-offset:1px;box-shadow:none}
+@media (prefers-reduced-motion:no-preference){.mc-navigo-panel:not([hidden]){animation:mdnSlide .24s var(--mdn-ease)}@keyframes mdnSlide{from{opacity:0;translate:10px 0}}}
+@media(max-width:1099px){.mc-navigo-panel{right:0!important}}
+
+/* ---------- Atlas ECG et fenêtre des systèmes ---------- */
+.mdn-ecg .chips button,.mdn-sys .sc{transition:background .2s,box-shadow .2s,transform .2s var(--mdn-ease)}
+.mdn-ecg article{box-shadow:var(--mdn-sh-1)}
+@media(max-width:700px){.mdn-ecg header h2,.mdn-sys header h2{font-size:21px!important}.mdn-sys header,.mdn-ecg header{padding:14px 16px!important}.mdn-sys .grid,.mdn-ecg .grid{padding:14px 14px 22px!important}}
+
+/* ===================================================================================
+   Mode sombre facultatif : html.mdn-dark (bouton de la barre supérieure, choix mémorisé).
+   Les figures restent sur papier blanc ; les titres gardent un rouge éclairci.
+   =================================================================================== */
+/* La coque fixe --ink et --t1…--t4 en style en ligne sur <html> : les valeurs sombres doivent donc être déclarées !important. */
+html.mdn-dark{color-scheme:dark;--bg:#0f1512!important;--surface:#151d19!important;--surface2:#1b2621!important;--ink:#e4ece7!important;--muted:#a7b6ae!important;--line:#2a3831!important;
+ --t1:#0f1512!important;--t2:#233129!important;--v5-ink:#e4ece7!important;--v5-muted:#a7b6ae!important;--v5-accent-text:#bfe6cd!important;--mdn-soft:#18221d;--mdn-accent:#8fd3a8;--shadow:0 8px 28px #00000040!important}
+html.mdn-dark body{background:radial-gradient(1200px 600px at 110% -10%,#1d3a2a55,transparent 60%),radial-gradient(900px 500px at -10% 110%,#3a2f1455,transparent 60%),var(--bg)!important;color:var(--ink)}
+html.mdn-dark .topbar{background:color-mix(in srgb,#0f1512 82%,transparent)!important}
+html.mdn-dark .searchwrap,html.mdn-dark input,html.mdn-dark select,html.mdn-dark textarea,html.mdn-dark .iconbtn,html.mdn-dark .mdn-ecgbtn,html.mdn-dark .theme-btn,html.mdn-dark .mdn-darkbtn,html.mdn-dark .btn:not(.primary){background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .hero-panel,html.mdn-dark .spec-card,html.mdn-dark .notice,html.mdn-dark .empty,html.mdn-dark .lesson-category,html.mdn-dark [class*="-card"]:not(.mc-card):not(.theme-card){background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .notice.amber{background:#2a2414!important;color:#f0dca6!important}
+html.mdn-dark #content h1,html.mdn-dark #content h2,html.mdn-dark #content h3,html.mdn-dark #content strong{color:var(--ink)}
+html.mdn-dark #content p,html.mdn-dark #content small,html.mdn-dark #content li{color:color-mix(in srgb,var(--ink) 88%,transparent)}
+html.mdn-dark a{color:#9fd3b4}
+html.mdn-dark .tag,html.mdn-dark .badge{background:#223029!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .mdn-director{background:linear-gradient(130deg,#17241d,var(--surface) 65%)!important}
+html.mdn-dark .mdn-director>summary,html.mdn-dark .mdn-director-system{color:var(--ink)!important}
+html.mdn-dark .mdn-director-card,html.mdn-dark .mdn-sys .sc,html.mdn-dark .mdn-sys ol li,html.mdn-dark .mdn-ecg article,html.mdn-dark .mdn-ecg .scale,html.mdn-dark .mdn-ecg .chips button:not([aria-pressed="true"]),html.mdn-dark .mdn-sys .back,html.mdn-dark .mdn-toast,html.mdn-dark .mdn-toast button,html.mdn-dark .mdn-director-plan{background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark dialog.mdn-sys,html.mdn-dark dialog.mdn-ecg{background:var(--bg)!important;color:var(--ink)}
+html.mdn-dark .mdn-sys .ring b{background:var(--surface);color:var(--ink)}
+html.mdn-dark .mdn-sys .sc h3,html.mdn-dark .mdn-ecg article h3{color:var(--ink)}
+/* Cours */
+html.mdn-dark .mc,html.mdn-dark .mc-dlg{--mc-red:#ff8a7a;--mdn-ink:#e4ece7;--mdn-deep:#bfe6cd;--mdn-leaf:#8fd3a8;--mdn-soft:#18221d}
+html.mdn-dark body #content .mc :is(h1,h2,h3,h4),html.mdn-dark .mc-dlg :is(h2,h3){color:#ff8a7a!important}
+html.mdn-dark body #content .mc .mc-n{color:#ff8a7a!important}
+html.mdn-dark .mc{color:var(--ink)}
+html.mdn-dark .mc-toolbar,html.mdn-dark .mc-ilot,html.mdn-dark .mc-toc,html.mdn-dark .mc-tabs,html.mdn-dark .mc-quiz,html.mdn-dark .mc-card,html.mdn-dark .mc-size-pop,html.mdn-dark .mc-navigo-panel,html.mdn-dark .mc-navigo-search,html.mdn-dark .mc-navigo-foot{background:var(--surface)!important;border-color:var(--line)!important;color:var(--ink)!important}
+html.mdn-dark .mc .mc-tabs{background:color-mix(in srgb,#18221d 90%,transparent)!important}
+html.mdn-dark .mc-tabs button{color:var(--ink)!important}html.mdn-dark .mc-tabs button[aria-selected="true"]{background:#2f6a4b!important;color:#fff!important}
+html.mdn-dark .mc-chap-head{background:linear-gradient(115deg,#18231e,#15201b 60%,#1b2a22)!important;border-color:var(--line)!important;border-left-color:#8fd3a8!important;color:var(--ink)!important}
+html.mdn-dark .mc-chap-head .mc-status{background:#0f1512b8!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .mc-key{background:#15261c!important;border-left-color:#5fae80!important;color:var(--ink)}
+html.mdn-dark .mc-trap{background:#2a2314!important;color:var(--ink)}
+html.mdn-dark .mc-alert{background:#2d1916!important;color:var(--ink)}
+html.mdn-dark .mc-w{color:#9fe0b5!important;border-bottom-color:#9fe0b5!important}html.mdn-dark .mc-w:hover{background:#1d3326!important}
+html.mdn-dark .mc-ab{color:#9fd6cc!important;border-color:#5f9c90!important}html.mdn-dark .mc-ab:hover{background:#1a302b!important}
+html.mdn-dark .mc-quiz>.mc-opt,html.mdn-dark .mc-opt{background:#1b2621!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .mc-opt.ok{background:#173524!important}html.mdn-dark .mc-opt.ko{background:#3a1c1a!important}
+html.mdn-dark table.mc-t th{background:#223029!important;color:var(--ink)!important}
+html.mdn-dark table.mc-t td,html.mdn-dark .mc table.mc-t tr:nth-child(even) td{background:#151d19!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .mc table.mc-t tr:nth-child(even) td{background:#18221d!important}
+html.mdn-dark dialog.mc-dlg{background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .mc-dlg-h{background:linear-gradient(110deg,#18231e,#1b2a22)!important;border-color:var(--line)!important}
+html.mdn-dark .mc-dlg-h button{background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line)!important}
+html.mdn-dark .mc-dlg .mc-lit b{color:#ff8a7a}
+html.mdn-dark .mc-src,html.mdn-dark .mc figcaption{color:var(--muted)!important}
+html.mdn-dark .mc-navigo-head{background:linear-gradient(110deg,#173b2d,#286049)!important}
+html.mdn-dark .mc-navigo-item{color:var(--ink)!important}html.mdn-dark .mc-navigo-item:hover,html.mdn-dark .mc-navigo-item[aria-current]{background:#1d2a24!important}
+html.mdn-dark .mc-navigo-tabs button{background:#1b2621!important;color:var(--ink)!important;border-color:var(--line)!important}html.mdn-dark .mc-navigo-tabs button.is-active{background:#2f6a4b!important;color:#fff!important}
+html.mdn-dark .mc figure{border-color:#2a3831}
+html.mdn-dark .mc-badge-draft{background:#1b2a22;color:#9fe0b5;border-color:#3b5a48}
+
+/* Conversion automatique des couleurs claires de la coque en mode sombre (voir modern.js : autoDark). */
+/* Spécificité renforcée : la coque impose certaines couleurs avec html[data-contrast] :is(h1,…) !important. */
+html.mdn-dark:root body .mdn-dk-bg{background:var(--surface)!important;border-color:var(--line)!important;box-shadow:none!important}
+html.mdn-dark:root body .mdn-dk-ink{color:var(--ink)!important}
+html.mdn-dark:root body .mdn-dk-tint{color:color-mix(in srgb,var(--mdn-c) 45%,#fff)!important}
+html.mdn-dark .mc-dlg .mc-dlg-b{color:var(--ink)}

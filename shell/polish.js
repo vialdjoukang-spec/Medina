@@ -73,3 +73,47 @@ btn.innerHTML='<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="
 const isHome=()=>{const h=location.hash;return h===''||h==='#'||h==='#/'||/^#\/(home|accueil)?\/?$/.test(h)};
 const sync=()=>{if(isHome()){if(!btn.isConnected)document.body.appendChild(btn)}else btn.remove()};
 addEventListener('hashchange',sync);setTimeout(sync,200);})();
+/* ===== MEDINA — modernisation du front-end (phase 2) : hauteur de la barre, mode sombre, messages, insignes ===== */
+(()=>{const root=document.documentElement;
+/* Hauteur réelle de la barre supérieure : sert aux onglets collants du cours et aux ancres. */
+const top=document.querySelector('.topbar');const setTop=()=>{if(top)root.style.setProperty('--mdn-top',top.offsetHeight+'px')};setTop();
+if(top&&'ResizeObserver' in window)new ResizeObserver(setTop).observe(top);
+
+/* Mode sombre : la coque d'origine contient de nombreuses couleurs claires codées en dur. Quand le mode sombre est actif,
+   chaque surface claire et chaque texte sombre réellement calculés sont convertis (figures, tracés et insignes exclus).
+   Lecture de tous les styles d'abord, écriture ensuite : pas de recalcul de mise en page en cascade. */
+const rgb=s=>{s=String(s);let m=s.match(/rgba?\(([\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)(?:[ ,/]+([\d.]+))?/);if(m)return{r:+m[1],g:+m[2],b:+m[3],a:m[4]===undefined?1:+m[4]};
+ m=s.match(/color\(srgb ([\d.e-]+) ([\d.e-]+) ([\d.e-]+)(?: \/ ([\d.]+))?/);return m?{r:255*m[1],g:255*m[2],b:255*m[3],a:m[4]===undefined?1:+m[4]}:null};
+const lum=c=>{const f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(c.r)+.7152*f(c.g)+.0722*f(c.b)};
+const sat=c=>{const mx=Math.max(c.r,c.g,c.b),mn=Math.min(c.r,c.g,c.b);return mx?(mx-mn)/mx:0};
+const SKIP='svg,figure,.mdn-ecg .sv,.mc-pareto-btn,.fluo,.mc-badge,.mdn-keep,.sidebar';
+let seen=new WeakSet();
+function autoDark(){if(!root.classList.contains('mdn-dark'))return;const todo=[];
+ document.querySelectorAll('#content,.topbar,dialog[open]').forEach(scope=>scope.querySelectorAll('*').forEach(el=>{
+  if(seen.has(el))return;seen.add(el);if(el.closest(SKIP))return;const cs=getComputedStyle(el);
+  const bg=rgb(cs.backgroundColor);let light=bg&&bg.a>=.5&&lum(bg)>.5;
+  if(!light&&cs.backgroundImage.includes('gradient'))light=(cs.backgroundImage.match(/(rgba?|color)\([^)]*\)/g)||[]).some(x=>{const c=rgb(x);return c&&c.a>=.5&&lum(c)>.5});
+  if(light)todo.push([el,'mdn-dk-bg']);
+  const c=rgb(cs.color);if(c&&lum(c)<.3)todo.push(sat(c)<.35||lum(c)<.02?[el,'mdn-dk-ink']:[el,'mdn-dk-tint',cs.color]);
+ }));
+ todo.forEach(([el,k,c])=>{el.classList.add(k);if(c)el.style.setProperty('--mdn-c',c)})}
+function autoLight(){document.querySelectorAll('.mdn-dk-bg,.mdn-dk-ink,.mdn-dk-tint').forEach(el=>{el.classList.remove('mdn-dk-bg','mdn-dk-ink','mdn-dk-tint');el.style.removeProperty('--mdn-c')});seen=new WeakSet()}
+
+/* Mode sombre facultatif : bouton dans la barre supérieure, choix mémorisé dans ce navigateur. */
+const KEY='medina.dark';let on=false;try{on=localStorage.getItem(KEY)==='1'}catch(e){}
+const apply=v=>{root.classList.toggle('mdn-dark',v);if(v)requestAnimationFrame(autoDark);else autoLight();
+ document.querySelectorAll('.mdn-darkbtn').forEach(b=>{b.setAttribute('aria-pressed',String(v));b.title=v?'Revenir au mode clair':'Passer au mode sombre'})};
+apply(on);
+function darkButton(){const tb=document.querySelector('.top-actions');if(!tb||tb.querySelector('.mdn-darkbtn'))return;const b=document.createElement('button');b.type='button';b.className='mdn-darkbtn';b.setAttribute('aria-label','Mode sombre');
+ b.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>';
+ b.onclick=()=>{on=!on;try{localStorage.setItem(KEY,on?'1':'0')}catch(e){}apply(on)};const th=tb.querySelector('.theme-btn');th?th.after(b):tb.appendChild(b);apply(on)}
+
+/* Le lecteur de leçons historique (lesson-core.js) ne peut pas être chargé depuis un fichier local :
+   l'erreur technique brute est remplacée par une explication, sans effet sur les cours MEDINA. */
+function techNotes(){document.querySelectorAll('#content .notice,#content [role="status"],#content .empty').forEach(n=>{if(n.dataset.mdnFixed||!/lesson-core\.js|Failed to fetch dynamically imported module/.test(n.textContent))return;n.dataset.mdnFixed='1';n.textContent='Le lecteur de leçons historique n’est pas disponible dans ce fichier autonome. Les cours MEDINA rédigés s’ouvrent normalement depuis les entrées CIM.'})}
+
+/* Insigne des cours intégrés en révision : distinct de l'insigne fluorescent réservé aux cours achevés. */
+function draftBadges(){if(typeof MEDINA_hasCourse!=='function')return;const done=window.MEDINA_COMPLETE||[];document.querySelectorAll('#content a[href*="#/entry/"]').forEach(a=>{if(a.closest('.mc-toolbar,.mc')||a.querySelector('.mc-badge,.mc-badge-draft'))return;const m=a.getAttribute('href').match(/#\/entry\/([A-Z]\d{2}(?:\.\d+)?)/);if(!m||!MEDINA_hasCourse(m[1]))return;const code=(window.MEDINA_ALIAS||{})[m[1]]||m[1];if(done.includes(code))return;const s=document.createElement('span');s.className='mc-badge-draft';s.textContent='cours · en révision';s.title='Cours MEDINA intégré, audit indépendant en attente';a.appendChild(s)})}
+
+const run=()=>{darkButton();techNotes();draftBadges();autoDark()};let tm=null;new MutationObserver(()=>{clearTimeout(tm);tm=setTimeout(run,90)}).observe(document.body,{childList:true,subtree:true});setTimeout(run,350);
+})();

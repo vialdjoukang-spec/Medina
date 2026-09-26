@@ -57,6 +57,15 @@ with sync_playwright() as p:
                 pg.click('.mc-size-reset')
                 if pg.evaluate("getComputedStyle(document.querySelector('.mc')).getPropertyValue('--mc-fs').trim()")!='17px': fails.append(code+': réinitialisation Police Taille inopérante')
                 pg.keyboard.press('Escape')
+                # Phase 2 (si présente) : barre supérieure collante, mode sombre aller-retour sans résidu
+                if pg.locator('.mdn-darkbtn').count():
+                    pg.evaluate("document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,2500)");pg.wait_for_timeout(150)
+                    if abs(pg.evaluate("document.querySelector('.topbar').getBoundingClientRect().top"))>1: fails.append(code+': barre supérieure non collante')
+                    pg.evaluate("window.scrollTo(0,0)")
+                    pg.click('.mdn-darkbtn');pg.wait_for_timeout(300)
+                    if not pg.evaluate("document.documentElement.classList.contains('mdn-dark')"): fails.append(code+': mode sombre inopérant')
+                    pg.click('.mdn-darkbtn');pg.wait_for_timeout(150)
+                    if pg.evaluate("document.querySelectorAll('.mdn-dk-bg,.mdn-dk-ink,.mdn-dk-tint').length"): fails.append(code+': résidus du mode sombre')
                 pg.click('.mc-book');pg.wait_for_timeout(150)
                 if not pg.evaluate("document.querySelector('.mc').classList.contains('book')"): fails.append(code+': mode livre inopérant')
                 pg.click('.mc-book')
