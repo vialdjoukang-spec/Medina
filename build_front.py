@@ -6,7 +6,7 @@ OUT=os.environ.get('MEDINA_OUT','/mnt/user-data/outputs' if os.path.isdir('/mnt/
 os.environ['MEDINA_V6']=ROOT+'/shell/medina_front.html'
 sys.path.insert(0,ROOT);sys.path.insert(0,ROOT+'/shell')
 import build_medina as B
-from data import WAVES,DONE_SYS,PRIO,PLAN
+from data import WAVES,DONE_SYS,DONE_COURSES,PRIO,PLAN
 cfg=json.load(open(ROOT+'/chapters.json'))
 chap=[c for c in cfg if c.get('integrated')]
 for c in cfg: B.COVERS[c['code']]=c.get('covers',[c['code']])
@@ -19,11 +19,21 @@ for k in 'normal tachy brady fa flutter tsv'.split():CAT[k]='Rythme'
 for k in 'bav1 mobitz1 mobitz2 bav3 bbg bbd wpw'.split():CAT[k]='Conduction'
 for k in 'stemi sousST pericard hyperk hypok qtl brugada'.split():CAT[k]='Ischémie et repolarisation'
 for k in 'esv tv tdp fv'.split():CAT[k]='Arythmies ventriculaires'
-cov={}
-for c in chap: cov[c.get('wave',1)]=cov.get(c.get('wave',1),0)+len(c['covers'])
-sysd=[{'n':n,'t':t,'cat':k,'prio':n in PRIO,'done':n in DONE_SYS,'pct':100 if n in DONE_SYS else round(100*cov.get(n,0)/k),'ch':[{'code':c['code'],'title':c['title']} for c in chap if c.get('wave',1)==n],'plan':PLAN.get(n,[])} for n,t,k in WAVES]
-data={'systems':sysd,'build':build,'news':[{'code':c['code'],'title':c['title']} for c in chap if c.get('added')==build],'doneNames':[t for n,t,_ in WAVES if n in DONE_SYS],'ecgCat':CAT}
+# Couverture : catégories CIM distinctes (union des covers), 100 % pour un système achevé (cours + renvois).
+sysd=[]
+for n,t,k in WAVES:
+    courses=[c for c in chap if c.get('wave',1)==n]
+    covered=k if n in DONE_SYS else min(k,len({x for c in courses for x in c.get('covers',[c['code']])}))
+    ch=[{'code':c['code'],'title':c['title'],'complete':c['code'] in DONE_COURSES} for c in courses]
+    sysd.append({'n':n,'t':t,'title':t,'cat':k,'total':k,'covered':covered,'prio':n in PRIO,'done':n in DONE_SYS,
+                 'pct':round(100*covered/k),'ch':ch,'courses':ch,'plan':PLAN.get(n,[])})
+completed=[c['code'] for c in chap if c['code'] in DONE_COURSES]
+data={'systems':sysd,'build':build,'news':[{'code':c['code'],'title':c['title'],'complete':c['code'] in DONE_COURSES} for c in chap if c.get('added')==build],
+      'doneNames':[t for n,t,_ in WAVES if n in DONE_SYS],'ecgCat':CAT,'complete':completed}
 s=open(out,encoding='utf-8').read()
+# Insigne « 100 % rédigé » : seuls les chapitres de DONE_COURSES (audités), distincts des chapitres intégrés.
+assert '<script>window.MEDINA_ALIAS=' in s
+s=s.replace('<script>window.MEDINA_ALIAS=','<script>window.MEDINA_COMPLETE='+json.dumps(completed)+';</script><script>window.MEDINA_ALIAS=',1)
 s=s.replace('</head>','<style id="medina-polish">'+open(ROOT+'/shell/polish.css').read()+'</style></head>',1)
 tail='<script>window.MDN_DATA='+json.dumps(data,ensure_ascii=False)+';window.MDN_ECG='+open(ROOT+'/modules/ecg.json').read()+'</script><script>'+open(ROOT+'/shell/polish.js').read()+'</script>'
 i=s.rindex('</body>');s=s[:i]+tail+s[i:]

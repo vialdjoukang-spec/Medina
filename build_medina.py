@@ -28,6 +28,8 @@ def transform(src):
     src = re.sub(r'class="([^"]*)"', cls, src)
     # sommaires internes : pas de href="#…" (conflit avec le routage)
     src = re.sub(r'<a href="#([^"/]+)">', r'<a data-go="\1" role="button" tabindex="0">', src)
+    # Le numéro des sous-parties reçoit sa propre couleur sans teinter le titre (apport Alpha).
+    src = re.sub(r'(<h[34]>)\s*(\d+(?:\.\d+)+)(?=\s)', r'\1<span class="mc-subn">\2</span>', src)
     return src
 
 KEYS = sorted(G.keys(), key=len, reverse=True)
@@ -105,6 +107,17 @@ def build(chapters, out):
     rh = "drawSidebar();closeNav();bindPage();"
     assert rh in v6
     v6 = v6.replace(rh, rh + "if(typeof MEDINA_mount==='function')MEDINA_mount();")
+    stale_home = 'Les plans sont disponibles ; les développements cliniques, les monographies et les exercices corrigés ne sont pas encore rédigés pour les nouvelles entrées CIM. Aucun cours n’est déclaré complet.'
+    assert stale_home in v6
+    v6 = v6.replace(stale_home, 'Les cours intégrés sont accessibles par le directeur des systèmes. Les autres entrées CIM conservent leur plan ; la couverture rédactionnelle ne vaut pas validation médicale.', 1)
+    # La coque d'origine renvoie #/entry/I30, K35, A41, I63 vers d'anciens modules pilotes (#/pathology/…)
+    # introuvables dans le fichier autonome : un cours MEDINA existant prend la priorité.
+    legacy = "if(probe.type==='entry'&&['I30','K35','A41','I63'].includes(probe.id.toUpperCase())){"
+    assert v6.count(legacy) == 1
+    v6 = v6.replace(legacy, "if(probe.type==='entry'&&['I30','K35','A41','I63'].includes(probe.id.toUpperCase())&&!(window.MEDINA_ALIAS||{})[probe.id.toUpperCase()]){", 1)
+    rpat = "render=function(){\n  const probe=readRoute();\n"
+    assert v6.count(rpat) == 1
+    v6 = v6.replace(rpat, rpat + "  if(probe.type==='pathology'&&(window.MEDINA_ALIAS||{})[probe.id.toUpperCase()]){location.replace('#/entry/'+probe.id.toUpperCase());return;}\n", 1)
     body = ''; report = {}
     for code, files in chapters:
         src = ''.join(open(f).read() for f in files)
@@ -121,7 +134,8 @@ def build(chapters, out):
     alias = {}
     for code, files in chapters:
         for c in COVERS.get(code, [code]): alias[c] = code
-    body += '<script>window.MEDINA_ALIAS=' + json.dumps(alias) + '</script>'
+    # Les alias sont lus par la coque dès son premier rendu : ils vont dans <head>.
+    v6 = v6.replace('</head>', '<script>window.MEDINA_ALIAS=' + json.dumps(alias) + '</script></head>', 1)
     tail = body + '<script id="medina-glossary" type="application/json">' + gl.replace('</', '<\\/') + '</script><script>' + js + '</script>'
     i = v6.rindex('</body>')
     v6 = v6[:i] + tail + v6[i:]

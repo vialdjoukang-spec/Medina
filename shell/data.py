@@ -10,7 +10,16 @@ DONE_SYS={1}
 RENVOIS={1:[("A43","Nocardiose","traitée en infectiologie (vague 7)"),("I51","Complications et maladies cardiaques mal définies","renvois vers les cours I50, I42, I21"),
 ("I52","Atteintes cardiaques au cours de maladies classées ailleurs","renvois vers les cours concernés"),("R00","Anomalies du rythme cardiaque (symptôme)","sémiologie, vague 17"),
 ("R01","Souffles et autres bruits cardiaques","sémiologie, vague 17"),("R02","Gangrène, non classée ailleurs","sémiologie, vague 17"),("R03","Valeur tensionnelle anormale sans diagnostic","sémiologie, vague 17")]}
-NOTES={"I00":"19,5/20","I40":"19,25/20"}
+# Un chapitre affiché dans le produit n'est pas nécessairement terminé (apport Alpha, 26.09.2026).
+# Cette liste seule commande l'insigne « 100 % rédigé » d'un chapitre ; n'y ajouter un code qu'après
+# audit indépendant ≥ 20/20 (ou réserve justifiée ≥ 19/20) et test_v7.py à OK (PROMPT_MEDINA.md § 17).
+DONE_COURSES={'I50','I21','I25','I48','I10','I30','I33','I35','I34','I00','I40','I42','I44','I47','I49','I46','Q21'}
+NOTES={"I00":"19,5/20","I40":"19,25/20",
+"J45":"auto-audit ; audit indépendant à faire",
+"J44":"fusion Claude + Alpha (audits/FUSION_J44.md) ; auto-relecture Alpha, audit indépendant à faire",
+"J18":"branche Alpha : audit de travail (audits/J18.md), revue clinique indépendante à faire",
+"I26":"branche Alpha : contre-audit ciblé (audits/I26.md), en révision clinique ; aucune figure",
+"A41":"branche Alpha : contre-audit ciblé (audits/A41.md), en révision clinique"}
 
 # Plan de production par système (ordre du prompt de passation, § 9) — sert au bouton directeur de l'accueil
 PLAN={

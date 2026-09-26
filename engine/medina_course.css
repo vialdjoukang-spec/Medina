@@ -51,7 +51,7 @@ table.mc-t th{background:var(--bg)}
 .mc-pager button{font-weight:600;font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
 .mc.book .mc-body{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:24px;padding-bottom:10px}
 .mc.book .mc-body>.mc-ilot,.mc.book .mc-body>.mc-sci{flex:0 0 100%;scroll-snap-align:start;max-height:calc(100vh - 240px);overflow-y:auto;margin:0}
-.mc.book .mc-body>.mc-sci{display:block!important}.mc.book .mc-body>.mc-sci>.mc-ilot{margin:0}
+.mc.book .mc-body>.mc-sci:not([hidden]){display:block}.mc.book .mc-body>.mc-sci>.mc-ilot{margin:0}
 .mc.book .mc-pager{display:flex}
 .mc-panel[hidden],.mc-sci[hidden]{display:none}
 .mc-quiz .mc-opt{display:block;width:100%;text-align:left;margin:4px 0;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:14px 'Inter',sans-serif;cursor:pointer}
