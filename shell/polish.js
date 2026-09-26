@@ -42,7 +42,7 @@ function director(){
 }
 /* notification des nouveaux cours */
 function toast(){const N=(D.news||[]);if(!N.length)return;let seen=null;try{seen=localStorage.getItem('medina.seen')}catch(e){}if(seen===D.build)return;
- const t=document.createElement('div');t.className='mdn-toast';t.setAttribute('role','status');t.innerHTML=`<h3>Nouveaux cours livrés</h3><ul>${N.map(c=>`<li><a href="#/entry/${c.code}">${esc(c.code)} · ${esc(c.title)}</a>${c.complete?' <span class="fluo">100 % rédigé</span>':' <small class="mdn-rev">en révision</small>'}</li>`).join('')}</ul><button type="button">Fermer</button>`;
+ const t=document.createElement('div');t.className='mdn-toast';t.setAttribute('role','status');t.innerHTML=`<h3>Nouveaux cours livrés</h3><ul>${N.map(c=>`<li><a href="#/entry/${c.code}">${esc(c.code)} · ${esc(c.title)}</a>${c.complete?' <span class="fluo">100 % rédigé</span>':' <span class="mc-badge-draft">en révision</span>'}</li>`).join('')}</ul><button type="button">Fermer</button>`;
  document.body.appendChild(t);requestAnimationFrame(()=>t.classList.add('on'));const close=()=>{t.classList.remove('on');setTimeout(()=>t.remove(),400);try{localStorage.setItem('medina.seen',D.build)}catch(e){}};t.querySelector('button').onclick=close;t.querySelectorAll('a').forEach(a=>a.addEventListener('click',close))}
 const run=()=>{sysBadges();ecgButton();director()};let tm=null;new MutationObserver(()=>{clearTimeout(tm);tm=setTimeout(run,80)}).observe(document.body,{childList:true,subtree:true});
 setTimeout(run,300);setTimeout(toast,1200);})();
@@ -58,7 +58,7 @@ function detail(n){const s=S.find(x=>x.n==n);const done=s.ch.map(c=>c.title);
  const doneN=new Set(done.map(norm));
  const planned=s.plan.filter(p=>![...doneN].some(d=>d.includes(norm(p).split(' ')[0])&&norm(p).split(' ').some(w=>w.length>4&&d.includes(w))));
  return `<div class="detail"><button type="button" class="back">← Tous les systèmes</button><div class="big">${ring(s.pct)}<div><h3>${esc(s.t)}</h3><small>${s.cat} catégories CIM · ${s.ch.length} cours rédigés</small></div></div>
- <ol>${s.ch.map(c=>`<li><a href="#/entry/${c.code}" data-close>${esc(c.code)} · ${esc(c.title)}</a>${c.complete?'<span class="fluo">100 % rédigé</span>':'<span class="st">intégré · en révision</span>'}</li>`).join('')}${planned.map(p=>`<li class="todo">${esc(p)}<span class="st">à rédiger</span></li>`).join('')}</ol></div>`}
+ <ol>${s.ch.map(c=>`<li><a href="#/entry/${c.code}" data-close>${esc(c.code)} · ${esc(c.title)}</a>${c.complete?'<span class="fluo">100 % rédigé</span>':'<span class="mc-badge-draft">en révision</span>'}</li>`).join('')}${planned.map(p=>`<li class="todo">${esc(p)}<span class="st">à rédiger</span></li>`).join('')}</ol></div>`}
 function open(n){if(!dlg){dlg=document.createElement('dialog');dlg.className='mdn-sys';document.body.appendChild(dlg);dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()})}
  const tot=S.filter(s=>s.prio);const cat=tot.reduce((a,s)=>a+s.cat,0),cov=tot.reduce((a,s)=>a+Math.round(s.cat*s.pct/100),0);
  dlg.innerHTML=`<header><div><h2>Systèmes en cours de création</h2><p>Examen fédéral · ${Math.round(100*cov/cat)} % des catégories prioritaires traitées</p></div><button type="button" data-x>Fermer ✕</button></header>${n?detail(n):list()}`;
@@ -77,6 +77,13 @@ addEventListener('hashchange',sync);setTimeout(sync,200);})();
 (()=>{const root=document.documentElement;
 /* Hauteur réelle de la barre supérieure : sert aux onglets collants du cours et aux ancres. */
 const top=document.querySelector('.topbar');const setTop=()=>{if(top)root.style.setProperty('--mdn-top',top.offsetHeight+'px')};setTop();
+/* Hauteur des onglets du cours quand ils sont collants (0 sinon) : marge des ancres et du focus clavier. */
+const setTabs=()=>{const t=document.querySelector('.mc .mc-tabs');root.style.setProperty('--mdn-tabs',(t&&getComputedStyle(t).position==='sticky'?t.offsetHeight+8:0)+'px')};addEventListener('resize',setTabs);
+/* Mouvement réduit : les défilements « smooth » demandés par le moteur deviennent instantanés. */
+(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)');const s=o=>(rm.matches&&o&&typeof o==='object'&&o.behavior==='smooth')?{...o,behavior:'auto'}:o;
+ for(const P of [Element.prototype,window])for(const k of ['scrollTo','scrollBy','scrollIntoView']){const f=P[k];if(typeof f==='function')P[k]=function(o,...r){return f.call(this,s(o),...r)}}})();
+/* Icône « stomach » de la coque : chemin SVG incomplet (erreur de console préexistante). */
+try{if(typeof PATHS==='object'&&PATHS.stomach&&PATHS.stomach.endsWith('1-5 1-7V3z'))PATHS.stomach=PATHS.stomach.replace('1-5 1-7V3z','1-5 1-7 0V3z')}catch(e){}
 if(top&&'ResizeObserver' in window)new ResizeObserver(setTop).observe(top);
 
 /* Mode sombre : la coque d'origine contient de nombreuses couleurs claires codées en dur. Quand le mode sombre est actif,
@@ -86,22 +93,24 @@ const rgb=s=>{s=String(s);let m=s.match(/rgba?\(([\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]
  m=s.match(/color\(srgb ([\d.e-]+) ([\d.e-]+) ([\d.e-]+)(?: \/ ([\d.]+))?/);return m?{r:255*m[1],g:255*m[2],b:255*m[3],a:m[4]===undefined?1:+m[4]}:null};
 const lum=c=>{const f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(c.r)+.7152*f(c.g)+.0722*f(c.b)};
 const sat=c=>{const mx=Math.max(c.r,c.g,c.b),mn=Math.min(c.r,c.g,c.b);return mx?(mx-mn)/mx:0};
-const SKIP='svg,figure,.mdn-ecg .sv,.mc-pareto-btn,.fluo,.mc-badge,.mdn-keep,.sidebar';
+const SKIP='svg,figure,.mdn-ecg .sv,.mc-pareto-btn,.fluo,.mc-badge,.mdn-keep,.sidebar,.ring,.mdn-director-track i,.mdn-director-courses a.is-complete,.swatches,.theme-dotset';
 let seen=new WeakSet();
 function autoDark(){if(!root.classList.contains('mdn-dark'))return;const todo=[];
  document.querySelectorAll('#content,.topbar,dialog[open]').forEach(scope=>scope.querySelectorAll('*').forEach(el=>{
   if(seen.has(el))return;seen.add(el);if(el.closest(SKIP))return;const cs=getComputedStyle(el);
+  const bw=parseFloat(cs.borderTopWidth)+parseFloat(cs.borderBottomWidth);if(bw>0){const bc=rgb(cs.borderTopColor);if(bc&&bc.a>=.5&&lum(bc)>.6)todo.push([el,'mdn-dk-line'])}
+  if(cs.backgroundImage==='none'&&cs.backgroundColor==='rgba(0, 0, 0, 0)'){const c=rgb(cs.color);if(c&&lum(c)<.3)todo.push(sat(c)<.35||lum(c)<.02?[el,'mdn-dk-ink']:[el,'mdn-dk-tint',cs.color]);return}
   const bg=rgb(cs.backgroundColor);let light=bg&&bg.a>=.5&&lum(bg)>.5;
   if(!light&&cs.backgroundImage.includes('gradient'))light=(cs.backgroundImage.match(/(rgba?|color)\([^)]*\)/g)||[]).some(x=>{const c=rgb(x);return c&&c.a>=.5&&lum(c)>.5});
   if(light)todo.push([el,'mdn-dk-bg']);
   const c=rgb(cs.color);if(c&&lum(c)<.3)todo.push(sat(c)<.35||lum(c)<.02?[el,'mdn-dk-ink']:[el,'mdn-dk-tint',cs.color]);
  }));
  todo.forEach(([el,k,c])=>{el.classList.add(k);if(c)el.style.setProperty('--mdn-c',c)})}
-function autoLight(){document.querySelectorAll('.mdn-dk-bg,.mdn-dk-ink,.mdn-dk-tint').forEach(el=>{el.classList.remove('mdn-dk-bg','mdn-dk-ink','mdn-dk-tint');el.style.removeProperty('--mdn-c')});seen=new WeakSet()}
+function autoLight(){document.querySelectorAll('.mdn-dk-bg,.mdn-dk-ink,.mdn-dk-tint,.mdn-dk-line').forEach(el=>{el.classList.remove('mdn-dk-bg','mdn-dk-ink','mdn-dk-tint','mdn-dk-line');el.style.removeProperty('--mdn-c')});seen=new WeakSet()}
 
 /* Mode sombre facultatif : bouton dans la barre supérieure, choix mémorisé dans ce navigateur. */
 const KEY='medina.dark';let on=false;try{on=localStorage.getItem(KEY)==='1'}catch(e){}
-const apply=v=>{root.classList.toggle('mdn-dark',v);if(v)requestAnimationFrame(autoDark);else autoLight();
+const apply=v=>{['--t1','--t2'].forEach(k=>{const o=root.style.getPropertyValue(k);if(o)root.style.setProperty('--mdn-'+k.slice(2)+'o',o)});root.classList.toggle('mdn-dark',v);if(v)requestAnimationFrame(autoDark);else autoLight();
  document.querySelectorAll('.mdn-darkbtn').forEach(b=>{b.setAttribute('aria-pressed',String(v));b.title=v?'Revenir au mode clair':'Passer au mode sombre'})};
 apply(on);
 function darkButton(){const tb=document.querySelector('.top-actions');if(!tb||tb.querySelector('.mdn-darkbtn'))return;const b=document.createElement('button');b.type='button';b.className='mdn-darkbtn';b.setAttribute('aria-label','Mode sombre');
@@ -113,7 +122,19 @@ function darkButton(){const tb=document.querySelector('.top-actions');if(!tb||tb
 function techNotes(){document.querySelectorAll('#content .notice,#content [role="status"],#content .empty').forEach(n=>{if(n.dataset.mdnFixed||!/lesson-core\.js|Failed to fetch dynamically imported module/.test(n.textContent))return;n.dataset.mdnFixed='1';n.textContent='Le lecteur de leçons historique n’est pas disponible dans ce fichier autonome. Les cours MEDINA rédigés s’ouvrent normalement depuis les entrées CIM.'})}
 
 /* Insigne des cours intégrés en révision : distinct de l'insigne fluorescent réservé aux cours achevés. */
-function draftBadges(){if(typeof MEDINA_hasCourse!=='function')return;const done=window.MEDINA_COMPLETE||[];document.querySelectorAll('#content a[href*="#/entry/"]').forEach(a=>{if(a.closest('.mc-toolbar,.mc')||a.querySelector('.mc-badge,.mc-badge-draft'))return;const m=a.getAttribute('href').match(/#\/entry\/([A-Z]\d{2}(?:\.\d+)?)/);if(!m||!MEDINA_hasCourse(m[1]))return;const code=(window.MEDINA_ALIAS||{})[m[1]]||m[1];if(done.includes(code))return;const s=document.createElement('span');s.className='mc-badge-draft';s.textContent='cours · en révision';s.title='Cours MEDINA intégré, audit indépendant en attente';a.appendChild(s)})}
+function draftBadges(){if(typeof MEDINA_hasCourse!=='function')return;const done=window.MEDINA_COMPLETE||[];document.querySelectorAll('#content a[href*="#/entry/"]').forEach(a=>{if(a.closest('.mc-toolbar,.mc,.bottomnav,.breadcrumbs')||a.querySelector('.mc-badge,.mc-badge-draft'))return;const m=a.getAttribute('href').match(/#\/entry\/([A-Z]\d{2}(?:\.\d+)?)/);if(!m||!MEDINA_hasCourse(m[1]))return;const code=(window.MEDINA_ALIAS||{})[m[1]]||m[1];if(done.includes(code))return;const s=document.createElement('span');s.className='mc-badge-draft';s.textContent='cours · en révision';s.title='Cours MEDINA intégré, audit indépendant en attente';a.appendChild(s)})}
 
-const run=()=>{darkButton();techNotes();draftBadges();autoDark()};let tm=null;new MutationObserver(()=>{clearTimeout(tm);tm=setTimeout(run,90)}).observe(document.body,{childList:true,subtree:true});setTimeout(run,350);
+/* Plan du cours : même numérotation que les îlots (0 = question clinique). */
+function tocStart(){document.querySelectorAll('.mc .mc-panel').forEach(p=>{const ol=p.querySelector('.mc-toc ol'),n=parseInt(p.querySelector('.mc-ilot h2 .mc-n')?.textContent,10);if(ol&&!isNaN(n)&&ol.start!==n&&ol.children.length===p.querySelectorAll(':scope .mc-body>.mc-ilot').length)ol.start=n})}
+/* À l'ouverture d'un cours, la coque défile de 200 px : la barre d'outils du cours est ramenée sous la barre collante. */
+let lastRoute='';function revealToolbar(){if(location.hash===lastRoute)return;lastRoute=location.hash;const t=document.querySelector('.mc-toolbar');if(!t||!top)return;requestAnimationFrame(()=>{const y=t.getBoundingClientRect().top,H=top.offsetHeight;if(y<H+4&&y>-400)scrollBy({top:y-H-8,behavior:'instant'})})}
+document.addEventListener('click',e=>{
+ /* Changement d'onglet depuis la barre collante : le nouveau panneau commence sous les onglets. */
+ const b=e.target.closest('.mc .mc-tabs button');if(b)requestAnimationFrame(()=>{setTabs();const p=document.querySelector('.mc-panel:not([hidden])'),t=document.querySelector('.mc .mc-tabs');if(!p||!t)return;const y=scrollY+p.getBoundingClientRect().top-(t.getBoundingClientRect().bottom+12);if(scrollY>y)scrollTo({top:Math.max(0,y),behavior:'instant'})});
+ /* Navigo en mode livre : le livre est ramené dans la fenêtre après le changement de page. */
+ if(e.target.closest('.mc-navigo-item')&&document.querySelector('.mc.book')){const bk=document.querySelector('.mc-panel:not([hidden]) .mc-body');setTimeout(()=>bk&&bk.scrollIntoView({block:'start',behavior:'smooth'}),340)}
+});
+const run=()=>{darkButton();techNotes();draftBadges();tocStart();setTabs();revealToolbar();autoDark()};let tm=null;
+/* Le mode sombre convertit avant le rendu (microtâche) : pas d'éclair blanc au changement de page. */
+new MutationObserver(()=>{if(root.classList.contains('mdn-dark'))autoDark();clearTimeout(tm);tm=setTimeout(run,90)}).observe(document.body,{childList:true,subtree:true});setTimeout(run,350);
 })();

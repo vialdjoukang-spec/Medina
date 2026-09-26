@@ -33,7 +33,7 @@ dialog.mdn-ecg::backdrop{background:rgba(12,24,18,.55);backdrop-filter:blur(4px)
 .mdn-ecg ul{margin:0;padding-left:18px}.mdn-ecg a{font-weight:600}
 .mdn-ecgbtn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:12px;height:44px;padding:0 14px;font:600 13px system-ui;color:var(--ink);cursor:pointer}
 .mdn-ecgbtn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 /* Le cours : même grammaire visuelle que les dossiers MEDINA, sans changer le DOM. */
 .mc{max-width:1080px;margin:0 auto;--mdn-ink:#122a24;--mdn-deep:#15382c;--mdn-leaf:#2d6148;--mdn-soft:#eef3ed;--mdn-acid:#d6ff2e}
 .mc-toolbar{padding:9px 12px;margin-bottom:14px;border:1px solid color-mix(in srgb,var(--mdn-leaf) 15%,transparent);border-radius:14px;background:color-mix(in srgb,#fff 88%,transparent);box-shadow:0 7px 25px rgba(18,42,36,.05)}
@@ -66,7 +66,7 @@ dialog.mc-dlg{border-radius:20px;border:1px solid #c8ddcd;box-shadow:0 30px 75px
 .mc-ilot :is(h3,h4)>.mc-subn{display:inline-block;color:var(--mc-red,#b3261e);text-decoration:underline;text-decoration-color:var(--mc-red,#b3261e);text-decoration-thickness:2px;text-underline-offset:.2em;margin-right:.25em;font-variant-numeric:tabular-nums}
 /* Justification maintenue sur téléphone et dans le mode livre ; césure française lisible. */
 .mc .mc-ilot :is(p,li),.mc :is(.mc-key,.mc-trap,.mc-alert),.mc-dlg .mc-dlg-b :is(p,li){text-align:justify;hyphens:auto;overflow-wrap:break-word}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 
 /* ===== Bouton directeur de l'accueil ===== */
 .mdn-dir{position:fixed;right:24px;bottom:24px;z-index:70;width:66px;height:66px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;color:#fff;background:conic-gradient(from 210deg,#1f3428,#496a58,#d9a441,#1f3428);box-shadow:0 14px 34px rgba(20,40,30,.35),0 0 0 4px #ffffffb3;transition:transform .25s cubic-bezier(.2,.7,.2,1)}
@@ -158,13 +158,24 @@ dialog.mdn-sys::backdrop{background:rgba(12,24,18,.55);backdrop-filter:blur(4px)
 }
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:"kern","liga"}
-::selection{background:color-mix(in srgb,var(--mdn-lime) 60%,transparent);color:#132200}
+::selection{background:color-mix(in srgb,var(--mdn-accent) 22%,transparent)}
 *{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--mdn-accent) 32%,transparent) transparent}
 
 /* ---------- Focus clavier : anneau fin, net, à la couleur du thème (remplace l'anneau doré épais) ---------- */
 :focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--mdn-accent)!important;outline-offset:2px!important;border-radius:6px}
-.sidebar :focus-visible,.mdn-sys header :focus-visible,.mdn-ecg header :focus-visible{outline-color:var(--mdn-lime)!important}
+.sidebar :focus-visible,.mdn-sys header :focus-visible,.mdn-ecg header :focus-visible,.mc-navigo-head :focus-visible{outline-color:#fff!important}
+/* Anneau intérieur là où un conteneur à défilement le rognerait. */
+.sidebar :is(.nav-list,.nav-main) a:focus-visible,:is(.fed7-domain,.fed7-subgroup)>summary:focus-visible{outline-offset:-3px!important}
+/* Le routeur focalise #content à chaque page : pas d'anneau pour ce focus programmatique. */
+#content:focus,#content:focus-visible{outline:none!important}
 input:focus,select:focus,textarea:focus{border-color:color-mix(in srgb,var(--mdn-accent) 55%,var(--line))}
+:is(.searchwrap,.mc-toolbar select,.mc-toolbar button,.mc-toolbar .btn,.mc-navigo-search){border-color:color-mix(in srgb,var(--ink) 48%,var(--surface))!important}
+/* Or du thème par défaut trop clair pour du texte : assombri au-dessus de 4,5:1 en mode clair. */
+html:not(.mdn-dark){--mdn-gold-ink:color-mix(in srgb,var(--t3) 55%,#050706)}
+html:not(.mdn-dark) :is(a.skip,.footer a,.listclean a,.mdn-ecg article a,.hero-panel .mini,.mc-trap .mc-k){color:var(--mdn-gold-ink)!important}
+/* Titres des fenêtres sombres (préexistant : noir imposé par html[data-contrast]). */
+html[data-contrast] :is(.mdn-sys,.mdn-ecg) header h2{color:#fff!important}
+html[data-contrast] .mdn-sys .big h3{color:#b3261e!important}
 /* Un bouton focalisé à l'ouverture d'une fenêtre (showModal) ne porte pas d'anneau décoratif si la souris a servi. */
 dialog :focus:not(:focus-visible){outline:none!important}
 
@@ -187,7 +198,7 @@ html body,html body .app{overflow-x:clip!important;overflow-y:visible!important}
 /* ---------- Barre latérale ---------- */
 .sidebar .nav-main a{position:relative;border-radius:12px}
 .sidebar .nav-main a.active{box-shadow:none!important;background:color-mix(in srgb,#fff 12%,transparent)!important}
-.sidebar .nav-main a.active:before{content:"";position:absolute;left:-2px;top:22%;bottom:22%;width:3px;border-radius:3px;background:var(--mdn-lime)}
+.sidebar .nav-main a.active:before{content:"";position:absolute;left:-2px;top:22%;bottom:22%;width:3px;border-radius:3px;background:#d9a441}
 .sidebar{scrollbar-color:#ffffff33 transparent}
 
 /* ---------- Surfaces, cartes, boutons ---------- */
@@ -219,9 +230,11 @@ html body,html body .app{overflow-x:clip!important;overflow-y:visible!important}
 
 /* ---------- Notification : feuille basse sur téléphone ---------- */
 .mdn-toast{border-radius:18px!important}
-.mdn-toast ul{max-height:min(46vh,340px);overflow:auto;overscroll-behavior:contain}
+/* Notification sous Navigo (z 110) : décalée à gauche de l'onglet vertical sur PC, au-dessus du bouton sur mobile. */
+@media(min-width:900px){body:has(.mc-navigo) .mdn-toast{right:66px}}
+.mdn-toast ul{max-height:calc(100vh - 220px);overflow:auto;overscroll-behavior:contain;padding-bottom:12px;-webkit-mask-image:linear-gradient(#000 calc(100% - 24px),transparent);mask-image:linear-gradient(#000 calc(100% - 24px),transparent)}
 .mdn-toast li{margin:2px 0}.mdn-toast a{color:var(--mdn-accent);font-weight:600}
-@media(max-width:700px){.mdn-toast{left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));max-width:none;font-size:13.5px}}
+@media(max-width:700px){.mdn-toast{left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));max-width:none;font-size:13.5px}body:has(.mc-navigo) .mdn-toast{bottom:calc(76px + env(safe-area-inset-bottom))}.mdn-toast ul{max-height:calc(100vh - 300px)}}
 
 /* ---------- Fenêtres modales (cours, ECG, systèmes) : apparition douce ---------- */
 dialog.mc-dlg,dialog.mdn-ecg,dialog.mdn-sys{box-shadow:var(--mdn-sh-3)!important}
@@ -233,15 +246,19 @@ dialog.mc-dlg::backdrop{background:rgb(12 24 18/.45);backdrop-filter:blur(3px)}
 
 /* ---------- Cours ---------- */
 /* Onglets du cours collants sous la barre supérieure : l'onglet actif reste à portée pendant la lecture. */
-.mc .mc-tabs{position:sticky;top:calc(var(--mdn-top) + 8px);z-index:25;background:color-mix(in srgb,var(--mdn-soft,#eef3ed) 97%,transparent)!important;backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 -9px 0 0 var(--bg),0 10px 24px -18px rgb(18 42 36/.45)}
-@media(max-width:760px){.mc .mc-tabs{position:static}}
-.mc .mc-toolbar{position:relative;z-index:26}
+.mc .mc-tabs{position:sticky;top:calc(var(--mdn-top) + 8px);flex-wrap:nowrap;overflow-x:auto;z-index:25;background:color-mix(in srgb,var(--mdn-soft,#eef3ed) 97%,transparent)!important;backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 -9px 0 0 var(--bg),0 10px 24px -18px rgb(18 42 36/.45)}
+@media(min-width:1100px) and (min-height:721px){.mc .mc-tabs button{white-space:nowrap;padding-block:8px!important;flex:1 0 auto!important}}
+@media(max-width:1099px),(max-height:720px){.mc .mc-tabs{position:static;flex-wrap:wrap}}
+.mc .mc-toolbar{position:relative;z-index:26}.mc .mc-toolbar:has(.mc-size-pop:not([hidden])){z-index:45}
 .mc-ilot{transition:box-shadow .3s}
 .mc .mc-ilot:target,.mc .mc-ilot:focus-within{box-shadow:0 0 0 2px color-mix(in srgb,var(--mc-red,#b3261e) 25%,transparent),0 8px 22px rgba(18,42,36,.05)}
-.mc h2,.mc h3{scroll-margin-top:calc(var(--mdn-top) + 90px)}
+/* Ancres et focus clavier jamais masqués par la barre et les onglets collants (--mdn-tabs mesuré par polish.js). */
+html{scroll-padding-top:calc(var(--mdn-top) + var(--mdn-tabs,0px) + 12px)}
+/* scroll-padding-top de html suffit : une marge supplémentaire sur la cible doublerait le décalage. */
 /* Quiz : états clairs, marqueurs ✓ et ✗ en plus de la couleur (accessibilité). */
 .mc-quiz .mc-opt,.mc-dlg .mc-opt{transition:background .2s,border-color .2s,transform .15s}
-.mc-quiz .mc-opt:hover{border-color:color-mix(in srgb,var(--mdn-accent,#2d6148) 45%,transparent)!important;transform:translateX(2px)}
+@media(hover:hover){.mc-quiz .mc-opt:not(.ok):not(.ko):hover{border-color:color-mix(in srgb,var(--mdn-accent,#2d6148) 45%,transparent)!important;transform:translateX(2px)}}
+.mc-opt.ok{border-color:#1c7a45!important;background:#eaf6ee!important}.mc-opt.ko{border-color:#b3261e!important;background:#fdf0ee!important}
 .mc-opt.ok{position:relative;padding-right:34px!important}.mc-opt.ko{position:relative;padding-right:34px!important}
 .mc-opt.ok:after,.mc-opt.ko:after{position:absolute;right:12px;top:50%;transform:translateY(-50%);font:700 15px/1 system-ui,sans-serif}
 .mc-opt.ok:after{content:"✓";color:#1c7a45}.mc-opt.ko:after{content:"✗";color:#b3261e}
@@ -251,12 +268,17 @@ dialog.mc-dlg::backdrop{background:rgb(12 24 18/.45);backdrop-filter:blur(3px)}
 /* Figures : cadre papier blanc (tracés noirs lisibles dans tous les thèmes). */
 .mc figure{background:#fff;border-radius:14px;padding:10px 10px 6px;border:1px solid #e3ebe3}
 .mc figure svg{max-width:100%;height:auto}
+.mc figure tspan.mc-ab{fill:#205d55}
 /* Insigne des cours intégrés en révision (distinct de l'insigne fluorescent « 100 % rédigé »). */
 .mc-badge-draft{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;margin-left:8px;padding:3px 8px;border-radius:999px;border:1px solid color-mix(in srgb,var(--mdn-accent) 35%,transparent);background:color-mix(in srgb,var(--mdn-accent) 7%,var(--surface));color:var(--mdn-accent);font:650 10.5px/1.2 system-ui,sans-serif;vertical-align:middle}
 .mc-badge-draft:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.7}
+.lesson-row-v5>:is(.mc-badge,.fluo,.mc-badge-draft){grid-column:1/-1;justify-self:start;width:max-content;max-width:100%;margin-left:0}
+@media(max-width:700px){.bottomnav{flex-wrap:wrap;gap:8px}.bottomnav>.btn{flex:1 1 42%;min-width:0;white-space:normal}.bottomnav :is(.mc-badge,.mc-badge-draft,.fluo){display:none}}
+/* Fenêtre des systèmes : états « en préparation » lisibles (plus d'opacité réduite). */
+.mdn-sys .sc.off{opacity:1;border-style:dashed}.mdn-sys .sc.off small,.mdn-sys ol li.todo,.mdn-sys ol li .st{color:#5c6a62}
 
 /* ---------- Navigo : onglet vertical en marge droite (PC), le texte du cours n'est plus recouvert ---------- */
-@media(min-width:1100px){
+@media(min-width:900px){
  #content:has(.mc){padding-right:84px!important}
  .mc-navigo{right:12px}
  .mc-navigo-trigger{writing-mode:vertical-rl;padding:16px 10px!important;gap:10px!important;border-radius:14px!important;letter-spacing:.06em}
@@ -267,7 +289,7 @@ dialog.mc-dlg::backdrop{background:rgb(12 24 18/.45);backdrop-filter:blur(3px)}
 .mc-navigo-trigger:hover{transform:translateX(-2px)}
 .mc-navigo-search:focus{outline:2px solid var(--mdn-accent,#2d6148)!important;outline-offset:1px;box-shadow:none}
 @media (prefers-reduced-motion:no-preference){.mc-navigo-panel:not([hidden]){animation:mdnSlide .24s var(--mdn-ease)}@keyframes mdnSlide{from{opacity:0;translate:10px 0}}}
-@media(max-width:1099px){.mc-navigo-panel{right:0!important}}
+@media(max-width:899px){.mc-navigo-panel{right:0!important}}
 
 /* ---------- Atlas ECG et fenêtre des systèmes ---------- */
 .mdn-ecg .chips button,.mdn-sys .sc{transition:background .2s,box-shadow .2s,transform .2s var(--mdn-ease)}
@@ -333,3 +355,21 @@ html.mdn-dark:root body .mdn-dk-bg{background:var(--surface)!important;border-co
 html.mdn-dark:root body .mdn-dk-ink{color:var(--ink)!important}
 html.mdn-dark:root body .mdn-dk-tint{color:color-mix(in srgb,var(--mdn-c) 45%,#fff)!important}
 html.mdn-dark .mc-dlg .mc-dlg-b{color:var(--ink)}
+/* Mode sombre : correctifs de la revue adverse (contrastes mesurés ≥ 4,5:1 pour le texte, ≥ 3:1 pour les composants). */
+html.mdn-dark .mc-pareto-btn{color:#132200!important}
+html.mdn-dark body .category-block-title{background:var(--surface2)!important;color:var(--ink)!important}
+html.mdn-dark .pagehead{background:linear-gradient(90deg,var(--t2),var(--surface))!important}
+html.mdn-dark .fed7-badge.course{background:#223029!important;color:#bfe6cd!important}
+html.mdn-dark .mc figure{color:#1f2a24}html.mdn-dark .mc figure figcaption{color:#4d5a52!important}
+html.mdn-dark .mc figure .mc-ab{color:#205d55!important;border-color:#79a69a!important}html.mdn-dark .mc figure .mc-w{color:#247241!important;border-bottom-color:#247241!important}
+html.mdn-dark .mc figure :focus-visible{outline-color:#15382c!important}
+html.mdn-dark a.skip{background:var(--surface)!important}
+html.mdn-dark ::placeholder{color:#9aa8a0;opacity:1}
+html.mdn-dark .sidebar .brandmark{background:#f7faf8!important;color:#264b2d!important}
+html.mdn-dark .theme-dotset i:nth-child(1){background:var(--mdn-t1o,#f4f7fb)!important}html.mdn-dark .theme-dotset i:nth-child(2){background:var(--mdn-t2o,#e8def2)!important}
+html.mdn-dark .mdn-sys .ring{background:conic-gradient(var(--c,#8fd3a8) calc(var(--p)*1%),#2a3831 0)!important}
+html.mdn-dark .mdn-director-track{background:#223029!important;border-color:var(--line)!important}
+html.mdn-dark .mdn-sys .sc.off small,html.mdn-dark .mdn-sys ol li.todo,html.mdn-dark .mdn-sys ol li .st{color:#a7b6ae}
+html.mdn-dark .mc-opt.ok{border-color:#5fbf86!important}html.mdn-dark .mc-opt.ko{border-color:#ff8a7a!important}
+html.mdn-dark:root body .mdn-dk-line{border-color:var(--line)!important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
