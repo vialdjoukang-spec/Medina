@@ -2,7 +2,7 @@
 
 ## 1. Méthode
 
-1. **Inventaire par exécution isolée.** Un script d’analyse a exécuté chaque fichier `glossary/*.py` isolément, en interceptant `a()` (et `t()`, qui l’appelle), dans trois états : la branche Claude (`git show HEAD:glossary/…`), la branche Alpha (`/home/user/_alpha/glossary`) et le dépôt fusionné. Un second passage a rejoué le chargement réel de `build_medina.py` : `cardio_1` d’abord, puis l’ordre alphabétique, avec le dictionnaire `G` partagé. Ce passage reproduit exactement `build_medina.G`, soit 1 256 clés identiques avant arbitrage, ce qui valide l’interception.
+1. **Inventaire par exécution isolée.** Un script d’analyse a exécuté chaque fichier `glossary/*.py` isolément, en interceptant `a()` (et `t()`, qui l’appelle), dans trois états : la branche Claude avant fusion (`git show 6790788:glossary/…`, commit de décompression, antérieur à toute fusion ; le commit aa01220 contient déjà `j18`, `i26` et `a41`), la branche Alpha (`/home/user/_alpha/glossary`) et le dépôt fusionné. Un second passage a rejoué le chargement réel de `build_medina.py` : `cardio_1` d’abord, puis l’ordre alphabétique, avec le dictionnaire `G` partagé. Ce passage reproduit exactement `build_medina.G`, soit 1 256 clés identiques avant arbitrage, ce qui valide l’interception.
 2. **Clés examinées.** Ce sont les clés définies dans au moins deux fichiers du dépôt fusionné (52), plus les clés dont la valeur finale diffère entre les deux branches (39, dont 38 déjà comptées parmi les 52). Au total, 53 clés.
 3. **Règles d’arbitrage.**
    - Développement lettre à lettre le plus littéral et le plus exact.
@@ -18,11 +18,11 @@
 
 | Ensemble | Clés |
 |---|---|
-| Branche Claude (HEAD) | 1 231 |
+| Branche Claude avant fusion (6790788) | 1 231 |
 | Branche Alpha | 1 011 |
 | Communes aux deux branches | 986 (dont 39 à valeur finale différente) |
 | Propres à Claude / propres à Alpha | 245 / 25 |
-| Union (dépôt fusionné avant arbitrage) | 1 256 |
+| Union (dépôt fusionné avant arbitrage, aa01220) | 1 256 |
 | Dépôt après arbitrage | 1 258 (+ `PReS`, + `Gore REDUCE`, créées par la résolution des collisions de sens) ; 1 259 à 12:59 avec la clé `CAP-START`, ajoutée en parallèle dans `j18.py` par un autre agent |
 | Clés arbitrées dans `zz_fusion.py` | 49 |
 | Clés encore définies dans plusieurs fichiers sans arbitrage | 0 |
@@ -46,20 +46,20 @@ Abréviations de la colonne « Candidates » : « fin. » = valeur finale avant 
 | CD80, CD86 | i40 (fenêtre i40-d-2l, A) ; m06 (fin., C) | Fusion, sans fenêtre | La fenêtre (myocardite sous immunothérapie) est trop spécifique pour une molécule aussi employée dans M06 |
 | Cockcroft-Gault | i48 (fenêtre, définition vide, A) ; i80 (fin., C) | Fusion, i48-cg | La fenêtre expose la formule |
 | COL3A1 | i35 (fenêtre, A) ; i71 (fin., C) | i35, i35-marfan | Libellé exact (chaîne alpha 1) ; la fenêtre traite l’Ehlers-Danlos vasculaire |
-| COMPASS | i21 (2017, fenêtre i21-dapt, A) ; i70 (2018, fin., C) | « Essai COMPASS (2017) », fenêtre **i25-d-riva** | Publication princeps de 2017. La fenêtre i21-dapt ne traite pas de COMPASS ; i25-d-riva décrit l’essai |
+| COMPASS | i21 (2017, fenêtre i21-dapt, A) ; i70 (2018, fin., C) | « Essai COMPASS (2017) », fenêtre **i25-d-riva** ; résultat précisé (critère composite ; baisse significative des décès cardiovasculaires et des AVC, non significative des infarctus) après contre-lecture, § 7 | Publication princeps de 2017. La fenêtre i21-dapt ne traite pas de COMPASS ; i25-d-riva décrit l’essai |
 | CORAL | i10 (fenêtre, A) ; i70 (fin., C) | Fusion, i10-sar | Définition autonome ; i70 disait seulement « concordant avec ASTRAL » |
 | CTLA-4 | d84 (« Antigen ») ; i40 (« Associated protein », fin., fenêtre) | i40 enrichi (haplo-insuffisance de d84), i40-d-2l | Développement exact (Cytotoxic T-Lymphocyte-Associated protein 4) ; 11 emplois sur 14 dans I40, fenêtre pertinente (abatacept) |
 | D86.8 | i40 ; i42 (fin., fenêtre) | Développement en deux segments (i40), définition i42, i42-sarcoid | Même sens |
 | DI | i10 ; i21 (fin.) | Fusion | « bras gauche par rapport au bras droit » : sens exact de la différence de potentiel |
 | DRESS | i40 (fenêtre i40-eos, A) ; t78 (fin., C) | Fusion, sans fenêtre | Délai de 2 à 8 semaines, atteinte viscérale, réintroduction et provocation contre-indiquées. La fenêtre (myocardites à éosinophiles) ne convient pas aux 7 emplois de T78 |
-| Ehlers-Danlos | i35 (fenêtre, A) ; m31 (fin., C) | Fusion (formes vasculaire et hypermobile), i35-marfan | I49 emploie la forme hypermobile ; I35, I71 et M31 la forme vasculaire |
+| Ehlers-Danlos | i35 (fenêtre, A) ; m31 (fin., C) | Fusion (formes vasculaire et hypermobile), sans fenêtre (corrigé après contre-lecture, § 7) | I49 emploie la forme hypermobile (2 emplois) ; I35, I71 et M31 la forme vasculaire (10). i35-marfan ne traite que la forme vasculaire |
 | ERS | j18 (fin., A) ; q21 (fenêtre q21-htap, C) | Libellé de q21, définition générale, sans fenêtre | Emplois dans I26, J18, J44, J45 et Q21 ; fenêtre propre aux cardiopathies congénitales |
-| ESICM | i46 ; i49 (fenêtre i49-rosc, C) ; j18 (fin., A) | Fusion, i49-rosc | 23 emplois sur 24 concernent les recommandations ERC-ESICM post-réanimation |
+| ESICM | i46 ; i49 (fenêtre i49-rosc, C) ; j18 (fin., A) | Fusion, sans fenêtre (corrigé après contre-lecture, § 7) | 28 emplois : 23 (I46 : 22, I49 : 1) visent les recommandations ERC-ESICM post-réanimation, 5 (J18) les recommandations ERS/ESICM/ESCMID/ALAT 2023 de la pneumonie communautaire sévère ; une fenêtre sur les soins après réanimation ne définit pas la société |
 | FBN1 | i34 ; i35 (fenêtre, A) ; i71 (fin., C) | Fusion i34 + i35, i35-marfan | Définitions i34 et i35 complémentaires ; i71 réduite à « Syndrome de Marfan » |
-| FDG | i33 (fenêtre i33-tep, A) ; m31 (fin., C) | Fusion, i33-tep | Fenêtre générale (principe, préparation) |
+| FDG | i33 (fenêtre i33-tep, A) ; m31 (fin., C) | Fusion, i33-tep | Fenêtre **partiellement** pertinente : titre, principe et préparation valables pour tous les emplois ; question clinique, lecture et « Place (ESC 2023) » propres à l’endocardite sur prothèse (6 emplois sur 25 ; 19 en I40, I42, I44 et M31). Conservée faute de fenêtre générale (i42-tep est propre à la sarcoïdose) |
 | FOURIER | i21 (fenêtre, A) ; i70 (fin., C) | Fusion, i21-d-pcsk9 | La fenêtre cite FOURIER |
 | GLP-1 | cardio_1 (A) ; i70 (fin., C) | Fusion | Les deux informations (événements cardiovasculaires, ICFEp) sont exactes |
-| ITV | i34 (fin., i34-pisa) ; i35 (i35-continuite) | Fusion, i35-continuite | 15 emplois sur 18 dans I35 ; fenêtre générale |
+| ITV | i34 (fin., i34-pisa) ; i35 (i35-continuite) | Fusion, i35-continuite ; « distance parcourue pendant la phase du cycle considérée (éjection ou régurgitation) » (corrigé après contre-lecture, § 7) | 15 emplois sur 18 dans I35 ; fenêtre générale |
 | JAMA | i30 (A) ; t78 (fin., C) | Définition générale | T78 cite *JAMA Internal Medicine* ; la mention de l’essai AIRTRIP est propre à un chapitre |
 | LDL | i10 ; i21 (A) ; i70 (fin., C) | Fusion sur i21 | i70 : « principal lipide », inexact (c’est une lipoprotéine) |
 | Loeys-Dietz | i35 (fenêtre, A) ; i71 (fin., C) | i35, i35-marfan | Définition complète |
@@ -73,7 +73,7 @@ Abréviations de la colonne « Candidates » : « fin. » = valeur finale avant 
 | SGLT2 | cardio_1 (fenêtre d-sglt2, A) ; i70 (fin., C) | Fusion, d-sglt2 | Développement homogène en anglais : coTransporter |
 | SMAD3, TGFB2, TGFBR1, TGFBR2 | i35 (fenêtre, A) ; i71 (fin., C) | i35, i35-marfan ; R = Receptor | Définitions complètes ; la fenêtre cite ces gènes |
 | SSI | i33 (fenêtre i33-prophy, C) ; j18 (fin., A) | Développement français littéral, fusion, sans fenêtre | 29 emplois sur 30 dans J18, sans rapport avec l’antibioprophylaxie |
-| TEP | i25 (fin., i25-stressimg) ; i33 (i33-tep) | Fusion (perfusion et FDG), i25-stressimg | La fenêtre FDG est déjà portée par la clé FDG |
+| TEP | i25 (fin., i25-stressimg) ; i33 (i33-tep) | Fusion (perfusion et FDG), sans fenêtre (corrigé après contre-lecture, § 7) | 27 emplois sur 44 (I40, I42, I44) désignent la TEP au FDG de l’inflammation ; i25-stressimg compare les examens d’ischémie. Aucune fenêtre générale sur la TEP |
 | TGF-β | i34 (fin.) ; i35 (fenêtre) | Fusion, i35-marfan | Même sens |
 | TPMT | i40 (fenêtre, A) ; m32 (fin., C) | Développement i40, i40-d-aza | Développement de m32 inexact (P = « (S-) ») |
 | V3, V5, V6 | i10 ; i21 (fin., fenêtre) | Fusion, i21-ecg-terr | Position « au niveau horizontal de V4 » pour V5 et V6 |
@@ -96,10 +96,33 @@ Les autres clés définies plusieurs fois gardent le même sens dans toutes leur
 
 ## 5. Points signalés à l’intégrateur (hors du périmètre d’écriture de cette mission)
 
-- `chapters/I70/I70_b.html` indique « COMPASS (2018) » dans la liste des essais. Le glossaire, I25 et la publication princeps donnent 2017 : corriger en « COMPASS (2017) ». C’est la seule discordance d’année relevée entre les libellés « Essai … (AAAA) » du glossaire et les chapitres.
+- `chapters/I70/I70_b.html` indiquait « COMPASS (2018) » dans la liste des essais. Le glossaire, I25 et la publication princeps donnent 2017. **Corrigé par l’intégrateur (commit 973c111)** : « COMPASS (2017 ; analyse de l’artériopathie des membres inférieurs, 2018) ». C’était la seule discordance d’année relevée entre les libellés « Essai … (AAAA) » du glossaire et les chapitres.
+- `chapters/I25/I25_pop5.html`, fenêtre `i25-d-riva`, rubrique « Preuve » : « a réduit les décès cardiovasculaires, les AVC et les infarctus » laisse croire que chaque composante a diminué. Dans COMPASS (*N Engl J Med* 2017), seuls le critère composite, les décès cardiovasculaires et les AVC baissent significativement ; l’infarctus isolé ne baisse pas significativement (HR 0,86 ; IC 95 % 0,70-1,05). Formulation proposée : « a réduit le critère composite décès cardiovasculaire, AVC ou infarctus (baisse significative des décès cardiovasculaires et des AVC) ». De même, « sans hausse significative des hémorragies mortelles ou intracrâniennes ».
 - Aucune fenêtre `ref` du glossaire final ne pointe vers une fenêtre absente.
 - Si `glossary/j44.py` est encore modifié, relancer le contrôle. Aucune clé de j44 ne doit écraser une définition d’un autre fichier sans arbitrage dans `zz_fusion.py`. La clé `REDUCE` doit garder le sens BPCO, et `CAAT` (nouvelle) n’est définie nulle part ailleurs.
 
 ## 6. Contrôle
 
 `cd /home/user/Medina && python3 test_v7.py --static <30 chapitres intégrés>` → **OK**.
+
+## 7. Corrections après contre-lecture (26.09.2026)
+
+Chaque écart signalé par la contre-lecture indépendante a été vérifié avant correction. Les décomptes d’emplois sont refaits avec l’expression régulière de `build_medina.py` sur le texte des chapitres, hors attributs ; un titre de fenêtre (`data-title`) contenant le sigle explique l’écart d’une ou deux unités avec un décompte par `grep` (ESICM : 28 contre 29 ; TEP : 44 contre 46 ; FDG : 25 contre 27).
+
+| Écart | Vérification | Correction |
+|---|---|---|
+| TEP : fenêtre i25-stressimg (comparaison des examens d’ischémie) | Confirmé : 27 emplois sur 44 (I40 : 9, I42 : 15, I44 : 3) désignent la TEP au FDG de l’inflammation ; aucune fenêtre générale sur la TEP | `ref=None` dans `zz_fusion.py` ; la définition couvre la perfusion et le FDG |
+| ESICM : fenêtre i49-rosc ; décompte « 23 sur 24 » dépassé | Confirmé : 28 emplois depuis la réécriture de J18 (I46 : 22, I49 : 1, J18 : 5) ; les 5 emplois de J18 visent les recommandations ERS/ESICM/ESCMID/ALAT 2023 | `ref=None` (même traitement que les sociétés ERS et SSI : une fenêtre sur un thème de recommandation ne définit pas la société ; I46 dispose de ses propres fenêtres post-réanimation) ; tableau du § 3 corrigé |
+| FDG : i33-tep qualifiée de « fenêtre générale » | Confirmé : question clinique, lecture et « Place (ESC 2023) » propres à l’endocardite sur prothèse ; 19 emplois sur 25 hors endocardite | Fenêtre conservée (titre, principe et préparation valables pour tous les emplois ; i42-tep est propre à la sarcoïdose) ; commentaire de `zz_fusion.py` et § 3 corrigés : fenêtre **partiellement** pertinente |
+| Ehlers-Danlos : fenêtre i35-marfan | Confirmé : la fenêtre ne décrit que la forme vasculaire ; les 2 emplois de I49 visent la forme hypermobile (10 emplois vasculaires en I35, I71 et M31) | `ref=None` ; la définition couvre les deux formes. COL3A1, propre à la forme vasculaire, garde i35-marfan |
+| COMPASS : « a réduit les décès cardiovasculaires, les AVC et les infarctus » | Confirmé (*N Engl J Med* 2017;377:1319-30) : critère composite, décès cardiovasculaires et AVC significatifs ; infarctus isolé non significatif (HR 0,86 ; IC 95 % 0,70-1,05) | Définition réécrite : « a réduit le critère composite décès cardiovasculaire, accident vasculaire cérébral ou infarctus (baisse significative des décès cardiovasculaires et des accidents vasculaires cérébraux ; baisse non significative des infarctus) » ; « sans hausse **significative** des hémorragies mortelles ou intracrâniennes ». Même nuance signalée à l’intégrateur pour la fenêtre i25-d-riva (§ 5), hors du périmètre d’écriture |
+| I70 : « COMPASS (2018) » contre « Essai COMPASS (2017) » | Déjà résolu : l’intégrateur a écrit « COMPASS (2017 ; analyse de l’artériopathie des membres inférieurs, 2018) » (commit 973c111) | Aucune ; § 5 mis à jour |
+| ITV : « distance parcourue par le sang pendant l’éjection », puis ITV du jet régurgitant | Confirmé : incohérence interne | « pendant la phase du cycle considérée (éjection ou régurgitation) » |
+| M31 : référence « Ozen S. et al. EULAR/PRINTO/PReS criteria (2010) » | Confirmé : le titre publié (*Ann Rheum Dis* 2010;69:798-806) écrit « PRES » ; la référence abrégée ressemblait à un titre littéral | Référence reformulée sans titre littéral : « Ozen S. et al. Critères EULAR/PRINTO/PReS de classification des vascularites de l’enfant (conférence de consensus d’Ankara 2008). Annals of the Rheumatic Diseases 2010. » (`chapters/M31/M31_b.html`). Le sigle officiel `PReS` est conservé dans le texte |
+| Traçabilité : « HEAD » pour la branche Claude (1 231 clés) | Confirmé : 1 231 clés au commit 6790788, 1 256 au commit aa01220 (qui contient déjà `j18`, `i26` et `a41`) | § 1 et § 2 : « 6790788 (branche Claude avant fusion) » ; union datée d’aa01220 |
+
+Valeurs effectives vérifiées par `python3 -c "import build_medina as B; print(B.G['CLÉ'])"` : TEP, ESICM et Ehlers-Danlos sans fenêtre ; FDG → i33-tep ; COMPASS → i25-d-riva ; ITV → i35-continuite ; COL3A1 → i35-marfan.
+
+Remarque (non signalée par la contre-lecture, non modifiée) : CTLA-4 garde la fenêtre i40-d-2l (myocardite sous immunothérapie), alors que 3 de ses 14 emplois (D84) portent sur l’haplo-insuffisance de CTLA-4 ; cas analogue à ESICM, à trancher par l’intégrateur.
+
+Contrôle après corrections : `python3 test_v7.py --static <30 chapitres intégrés>` → **OK**.

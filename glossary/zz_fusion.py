@@ -39,12 +39,17 @@ a('V6',[('V','Voltage (dérivation précordiale unipolaire)'),('6','précordiale
 # ITV : i34 (fenêtre PISA) contre i35 (fenêtre équation de continuité). Même sens ; fenêtre i35-continuite
 # retenue (15 emplois sur 18 dans I35 ; explication générale de l’ITV).
 a('ITV',[('I','Intégrale'),('T','Temps-'),('V','Vitesse')],'Intégrale temps-vitesse',
- '<p>Surface sous la courbe de vitesse Doppler d’un flux pendant un cycle, exprimée en centimètres : distance parcourue par le sang pendant l’éjection. Multipliée par une surface de section, elle donne un volume par battement : volume d’éjection (équation de continuité) ou volume régurgité (surface de l’orifice régurgitant × ITV du jet).</p>','i35-continuite')
-# TEP : i25 (perfusion, fenêtre i25-stressimg) et i33 (FDG, fenêtre i33-tep). Fusion ; la fenêtre FDG est portée
-# par la clé FDG, la clé TEP garde la fenêtre comparative de l’imagerie de stress (valeur finale d’origine).
+ '<p>Surface sous la courbe de vitesse Doppler d’un flux pendant un cycle, exprimée en centimètres : distance parcourue par le sang pendant la phase du cycle considérée (éjection ou régurgitation). Multipliée par une surface de section, elle donne un volume par battement : volume d’éjection (équation de continuité) ou volume régurgité (surface de l’orifice régurgitant × ITV du jet).</p>','i35-continuite')
+# TEP : i25 (perfusion, fenêtre i25-stressimg) et i33 (FDG, fenêtre i33-tep). Fusion (perfusion et FDG), sans
+# fenêtre : i25-stressimg (comparaison des examens d’ischémie) ne convient pas aux 27 emplois sur 44 de I40, I42
+# et I44, qui désignent la TEP au FDG de l’inflammation ; aucune fenêtre générale sur la TEP n’existe.
+# (Correction après contre-lecture, 26.09.2026.)
 a('TEP',[('T','Tomographie'),('E','par Émission de'),('P','Positons')],'Tomographie par émission de positons',
- '<p>Imagerie nucléaire fonctionnelle qui détecte la distribution d’un traceur émetteur de positons, le plus souvent couplée à la tomodensitométrie. Avec un traceur de perfusion, elle mesure le débit myocardique absolu (mL/min/g) et la réserve de débit : utile dans l’ischémie équilibrée et la dysfonction microvasculaire. Avec le FDG, elle détecte l’inflammation et l’infection (endocardite sur prothèse, sarcoïdose, myocardite, vascularite des gros vaisseaux) et les tumeurs.</p>','i25-stressimg')
-# FDG : i33 (riche, fenêtre i33-tep) contre m31 (courte). Fusion ; fenêtre i33-tep conservée (principe et préparation).
+ '<p>Imagerie nucléaire fonctionnelle qui détecte la distribution d’un traceur émetteur de positons, le plus souvent couplée à la tomodensitométrie. Avec un traceur de perfusion, elle mesure le débit myocardique absolu (mL/min/g) et la réserve de débit : utile dans l’ischémie équilibrée et la dysfonction microvasculaire. Avec le FDG, elle détecte l’inflammation et l’infection (endocardite sur prothèse, sarcoïdose, myocardite, vascularite des gros vaisseaux) et les tumeurs.</p>')
+# FDG : i33 (riche, fenêtre i33-tep) contre m31 (courte). Fusion ; fenêtre i33-tep conservée, PARTIELLEMENT pertinente :
+# son titre, son principe et sa préparation valent pour tous les emplois ; sa question clinique, sa lecture et sa
+# « Place (ESC 2023) » concernent l’endocardite sur prothèse (6 emplois sur 25), alors que 19 emplois relèvent de la
+# sarcoïdose, de la myocardite ou de la vascularite (I40, I42, I44, M31). i42-tep est propre à la sarcoïdose.
 a('FDG',[('F','Fluoro- (fluor 18, émetteur de positons)'),('D','Désoxy-'),('G','Glucose')],'Fluorodésoxyglucose marqué au fluor 18',
  '<p>Analogue du glucose marqué au fluor 18, traceur le plus employé en tomographie par émission de positons : il s’accumule dans les cellules à métabolisme glucidique élevé (inflammation, infection, tumeurs). Pour rechercher une inflammation cardiaque, une préparation pauvre en glucides et riche en graisses supprime la captation myocardique physiologique.</p>','i33-tep')
 # Cockcroft-Gault : i48 (fenêtre i48-cg, définition vide) et i80 (définition courte). Fusion.
@@ -130,9 +135,11 @@ a('TGF-β',[('T','Transforming (de transformation)'),('G','Growth (croissance)')
 a('Loeys-Dietz',[('Loeys-Dietz','noms propres : Bart Loeys et Harry Dietz, généticiens, 2005')],'Syndrome de Loeys-Dietz',
  '<p>Aortopathie héréditaire autosomique dominante de la voie du TGF-β (<i>TGFBR1</i>, <i>TGFBR2</i>, <i>SMAD3</i>, <i>TGFB2</i>…) : dissections à de petits diamètres, tortuosité artérielle.</p>','i35-marfan')
 # Ehlers-Danlos : i35 (fenêtre) contre m31 (valeur finale) ; I49 emploie la forme hypermobile : définition
-# générale couvrant les deux formes citées dans les cours.
+# générale couvrant les deux formes citées dans les cours. Sans fenêtre (correction après contre-lecture,
+# 26.09.2026) : i35-marfan ne décrit que la forme vasculaire, parmi les aortopathies héréditaires, alors que les
+# 2 emplois de I49 visent la forme hypermobile, que la fenêtre ne traite pas. COL3A1 garde i35-marfan.
 a('Ehlers-Danlos',[('Ehlers-Danlos','noms propres : Edvard Ehlers et Henri-Alexandre Danlos, dermatologues, début du XXe siècle')],'Syndrome d’Ehlers-Danlos',
- '<p>Groupe de maladies héréditaires du tissu conjonctif (classification internationale de 2017). La forme vasculaire (<i>COL3A1</i>) expose aux ruptures artérielles et digestives ; la forme hypermobile, la plus fréquente et sans gène identifié, repose sur des critères cliniques, dont l’hypermobilité articulaire généralisée.</p>','i35-marfan')
+ '<p>Groupe de maladies héréditaires du tissu conjonctif (classification internationale de 2017). La forme vasculaire (<i>COL3A1</i>) expose aux ruptures artérielles et digestives ; la forme hypermobile, la plus fréquente et sans gène identifié, repose sur des critères cliniques, dont l’hypermobilité articulaire généralisée.</p>')
 
 # ---------------------------------------------------------------- codes
 # D86.8 : i40 et i42 (valeur finale) ; même sens. Développement en deux segments (i40), définition i42.
@@ -145,9 +152,12 @@ a('D86.8',[('D86','catégorie CIM-10 de la sarcoïdose'),('.8','sarcoïdose d’
 a('ERS',[('E','European'),('R','Respiratory'),('S','Society')],'European Respiratory Society (Société européenne de pneumologie)',
  '<p>Société savante européenne de pneumologie. Elle publie, seule ou avec d’autres sociétés, des recommandations et des normes techniques : avec l’ESC, l’embolie pulmonaire aiguë (2019) et l’hypertension pulmonaire (2022) ; avec l’American Thoracic Society, la réalisation et l’interprétation des explorations fonctionnelles respiratoires ; avec l’ESICM, l’ESCMID et l’ALAT, la pneumonie communautaire sévère (2023).</p>')
 # ESICM : i46, i49 (valeur finale Claude, fenêtre i49-rosc) et j18 (valeur finale actuelle et Alpha, courte).
-# Fenêtre i49-rosc conservée : 23 emplois sur 24 concernent les recommandations ERC-ESICM post-réanimation.
+# Sans fenêtre (correction après contre-lecture, 26.09.2026) : depuis la réécriture de J18, 23 emplois sur 28
+# (I46 : 22, I49 : 1) concernent les recommandations ERC-ESICM post-réanimation, mais 5 (J18) les recommandations
+# ERS/ESICM/ESCMID/ALAT 2023 de la pneumonie communautaire sévère ; une fenêtre sur les soins après réanimation
+# ne définit pas la société (même traitement que ERS et SSI). I46 dispose de ses propres fenêtres post-réanimation.
 a('ESICM',[('E','European'),('S','Society of'),('I','Intensive'),('C','Care'),('M','Medicine')],'European Society of Intensive Care Medicine (Société européenne de médecine intensive)',
- '<p>Société savante européenne de médecine intensive. Coautrice, avec l’ERC, des recommandations sur les soins après réanimation (2021, mise à jour 2025) et, avec l’ERS, l’ESCMID et l’ALAT, des recommandations 2023 sur la pneumonie communautaire sévère.</p>','i49-rosc')
+ '<p>Société savante européenne de médecine intensive. Coautrice, avec l’ERC, des recommandations sur les soins après réanimation (2021, mise à jour 2025) et, avec l’ERS, l’ESCMID et l’ALAT, des recommandations 2023 sur la pneumonie communautaire sévère.</p>')
 # SSI : i33 (valeur finale Claude, fenêtre i33-prophy) contre j18 (valeur finale actuelle et Alpha, développement
 # anglais). Développement français littéral (Société Suisse d’Infectiologie) ; fenêtre non retenue (29 emplois
 # sur 30 dans J18, hors antibioprophylaxie).
@@ -164,9 +174,11 @@ a('CAPRIE',[('C','Clopidogrel versus'),('A','Aspirin in'),('P','Patients at'),('
  '<p>Clopidogrel 75 mg par jour comparé à l’acide acétylsalicylique 325 mg par jour chez des patients vasculaires (accident vasculaire cérébral ischémique récent, infarctus récent ou artériopathie périphérique symptomatique) : réduction relative modeste des événements ischémiques, plus marquée dans le sous-groupe de l’artériopathie périphérique (analyse de sous-groupe).</p>','i25-d-clopi')
 # COMPASS : i21 (2017, fenêtre i21-dapt) contre i70 (2018, valeur finale). Publication princeps : N Engl J Med
 # 2017;377:1319-30 → 2017. La fenêtre i21-dapt ne traite pas de COMPASS : remplacée par i25-d-riva
-# (« Rivaroxaban à dose vasculaire », qui décrit l’essai COMPASS 2017).
+# (« Rivaroxaban à dose vasculaire », qui décrit l’essai COMPASS 2017). Résultat précisé après contre-lecture
+# (26.09.2026) : critère composite et ses composantes décès cardiovasculaire et AVC significatifs ; infarctus isolé
+# non significatif (HR 0,86 ; IC 95 % 0,70-1,05) ; hémorragies mortelles et intracrâniennes sans différence significative.
 a('COMPASS',[('C','Cardiovascular'),('OM','OutcoMes for'),('P','People using'),('A','Anticoagulation'),('SS','StrategieS')],'Essai COMPASS (2017)',
- '<p>Maladie coronaire ou artériopathie périphérique stables : rivaroxaban 2,5 mg deux fois par jour associé à l’acide acétylsalicylique 100 mg par jour, comparé à l’acide acétylsalicylique seul, a réduit les décès cardiovasculaires, les accidents vasculaires cérébraux et les infarctus, ainsi que les événements ischémiques majeurs des membres, au prix d’une hausse des hémorragies majeures, sans hausse des hémorragies mortelles ou intracrâniennes.</p>','i25-d-riva')
+ '<p>Maladie coronaire ou artériopathie périphérique stables : rivaroxaban 2,5 mg deux fois par jour associé à l’acide acétylsalicylique 100 mg par jour, comparé à l’acide acétylsalicylique seul, a réduit le critère composite décès cardiovasculaire, accident vasculaire cérébral ou infarctus (baisse significative des décès cardiovasculaires et des accidents vasculaires cérébraux ; baisse non significative des infarctus), ainsi que les événements ischémiques majeurs des membres, au prix d’une hausse des hémorragies majeures, sans hausse significative des hémorragies mortelles ou intracrâniennes.</p>','i25-d-riva')
 # ASTRAL, CORAL : i10 (développement lettre à lettre, fenêtre i10-sar) contre i70 (valeur finale). Fusion.
 a('ASTRAL',[('A','Angioplasty (angioplastie)'),('ST','and STenting (et endoprothèse)'),('R','for Renal (rénale)'),('A','Artery (artère)'),('L','Lesions (lésions)')],'Essai ASTRAL (2009)',
  '<p>Sténose athéromateuse de l’artère rénale : la revascularisation associée au traitement médical, comparée au traitement médical seul, n’apporte pas de bénéfice sur la fonction rénale ni sur les événements rénaux et cardiovasculaires.</p>','i10-sar')
