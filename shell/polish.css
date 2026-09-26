@@ -399,3 +399,24 @@ html.mdn-dark :is(.v6-local-tools,.source-strip,.deepsearch-rule,.section-lesson
 html.mdn-dark .mc-opt.ok:after{color:#5fbf86}html.mdn-dark .mc-opt.ko:after{color:#ff8a7a}
 html.mdn-dark .mc-navigo-tabs{border-bottom-color:var(--line)!important}
 html.mdn-dark .mdn-dir{box-shadow:0 14px 34px #0009,0 0 0 4px color-mix(in srgb,var(--line) 80%,transparent)!important}
+
+/* ---------- Espace et justification (26.09.2026) ----------
+   Le texte reste justifié. La césure française (native, ou de secours dans polish.js) supprime les blancs entre les mots.
+   L'interligne et les marges verticales sont resserrés sans tasser la lecture ; sur téléphone, les marges emboîtées
+   (page, îlot, encadrés, listes, fenêtres) sont réduites pour élargir la colonne de lecture. */
+.mc .mc-ilot :is(p,li),.mc :is(.mc-key,.mc-trap,.mc-alert),.mc-dlg .mc-dlg-b :is(p,li){-webkit-hyphens:auto;hyphens:auto;hyphenate-limit-chars:6 2 3;text-wrap:pretty}
+.mc .mc-ilot :is(p,li){line-height:1.66}
+.mc .mc-ilot p{margin-bottom:.75em}
+.mc .mc-ilot h3{margin-top:1em}
+.mc-ilot>h2 .mc-n{min-width:0;margin-right:.5em}
+@media(max-width:760px){
+ #content:has(>.mc){padding-left:max(10px,env(safe-area-inset-left));padding-right:max(10px,env(safe-area-inset-right))}
+ .mc .mc-ilot{padding:16px 13px}
+ .mc .mc-ilot :is(p,li){line-height:1.6}
+ .mc :is(.mc-key,.mc-trap,.mc-alert){padding:9px 11px}
+ .mc .mc-ilot :is(ul,ol){padding-left:1.1em}
+ .mc .mc-toc{padding:12px 13px}
+ dialog.mc-dlg{max-width:calc(100vw - 16px)}
+ .mc-dlg-b{padding:12px 14px 18px}
+ table.mc-t :is(th,td){padding:5px 6px}
+}

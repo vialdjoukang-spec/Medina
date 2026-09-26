@@ -44,3 +44,26 @@ Décision assumée : la pulsation de l’insigne fluorescent est maintenue (exig
 - `test_v7.py` étendu : barre supérieure collante, mode sombre aller-retour sans résidu (en plus des contrôles de phase 1). Résultat sur `MEDINA_final.html` : **OK sur les 30 chapitres**, PC 1300 × 900 et mobile 390 × 844.
 - **Troisième revue** : les 24 constats de la seconde revue sont corrigés et remesurés (contrastes en clair et en sombre de 4,26:1 à 14,49:1 pour les éléments concernés ; 0 texte sous Navigo de 761 à 899 px ; barre d’outils placée de 8 à 18 px sous la barre supérieure sur 20 ouvertures directes ; notification fermable de 701 à 1 360 px ; coût de la conversion sombre divisé par deux). Deux régressions nouvelles, issues des correctifs, ont été corrigées et remesurées par l’intégrateur : champ de recherche de 76 à 375 px utiles entre 701 et 1 000 px (aucun bouton rogné, aucun défilement horizontal) ; aucun fragment de libellé hors de son onglet, y compris J44 en police 24 px (onglets alors non collants par décision : libellés entiers).
 - Réserve assumée : sur un processeur lent (×4), la bascule vers le mode sombre reste une tâche longue (150 à 230 ms), due surtout au recalcul de style de la feuille sombre elle-même ; elle n’a lieu qu’au clic sur le bouton.
+
+## 6. Espace et justification du texte (26.09.2026, demande du propriétaire)
+
+**Demande** : « Rationalise bien l’espace. Texte mis en forme : justifié correctement. »
+**Diagnostic mesuré** : le texte était justifié sans césure dans les navigateurs privés de dictionnaire (Chromium sous Linux, certaines vues intégrées). Sur téléphone, la colonne ne mesurait que 320 px, car trois marges s’emboîtaient (page 17 px, îlot 17 px, encadrés 14 px). Plus de la moitié des lignes contenaient alors un blanc supérieur au double d’une espace normale.
+
+**Correctifs** (couche `shell/polish.css` et `shell/polish.js`, section « Espace et justification ») :
+1. **Césure française** : le navigateur l’applique nativement quand il le peut (`hyphens:auto`, `hyphenate-limit-chars:6 2 3`, `text-wrap:pretty`). Sinon, un module de secours insère des traits d’union conditionnels par l’algorithme de Liang et les motifs français hyph-fr (licence MIT). Le module ne touche ni les titres, ni les boutons d’interface, ni le code, ni les figures. Il agit avant le rendu, donc sans reflux visible, en moins de 10 ms par cours. Un passage copié ne transporte pas les traits d’union invisibles.
+2. **Espace** : l’interligne passe de 1,72 à 1,66 (1,60 sur téléphone). L’écart entre un numéro d’îlot et son titre est réduit. Sur téléphone, les marges de la page (17 → 10 px), de l’îlot (17 → 13 px), des encadrés, des listes, du plan, des fenêtres et des tableaux sont réduites. Le texte reste justifié partout.
+
+**Mesures** (`mesure_texte.py`, 60 premiers paragraphes de l’onglet 1 ; J45 / I50 / T78) :
+
+| Mesure | Largeur | Avant | Après |
+|---|---|---|---|
+| Largeur utile du texte | 390 px | 320 px | 342 px (+7 %) |
+| Lignes contenant un blanc > 2 espaces | 390 px | 58 / 59 / 55 % | 23 / 28 / 26 % |
+| | 1 024 px | 36 / 38 / 33 % | 17 / 20 / 12 % |
+| | 1 360 px | 24 / 25 / 18 % | 10 / 11 / 10 % |
+| Blanc médian entre deux mots (en espaces) | 390 px | 2,06 / 2,04 / 1,95 | 1,50 / 1,56 / 1,53 |
+| Mots visibles par écran | 390 px | 149 / 127 / 148 | 172 / 144 / 172 (+13 à +16 %) |
+| | 1 360 px | 319 / 276 / 316 | 327 / 284 / 324 (+3 %) |
+
+**Contrôles** : `test_v7.py` complet (PC et mobile, fenêtres, Navigo, Police Taille, mode livre, mode sombre) **OK** sur J45, I50, T78 et I21 ; aucun titre, aucun libellé Navigo et aucun titre de fenêtre ne reçoit de trait d’union ; une copie de paragraphe ne contient aucun U+00AD.
