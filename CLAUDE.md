@@ -30,6 +30,9 @@ Sortie : variable `MEDINA_OUT` (par défaut `/mnt/user-data/outputs` s’il exis
 7. Pas de métaphores, jeux de mots ni plaisanteries ; exemples chiffrés ; normal avant pathologique.
 8. **Vague d’un chapitre** = système de ses catégories dans `medora-data` (champ `system`), jamais par supposition.
 
+## ⚠️ REPRISE IMMÉDIATE (26.09.2026) : lire `PASSATION_REECRITURE_2026-09-26.md`
+Réécriture pédagogique de J44, J18, I26 et A41 selon `docs/STYLE_REDACTION.md` : l’onglet 1 est fait ; les onglets 2 à 4, la contre-lecture et la livraison restent à faire.
+
 ## ⚠️ MISSION ACTUELLE : lire `REPRISE_CLAUDE_CODE.md` et l’exécuter phase par phase
 1. Fusionner la branche **Alpha** (ChatGPT, fichiers dans `_alpha_in/`) dans ce projet : tous les chapitres, audits, glossaire et fonctions d’interface (Navigo, Police Taille, mode livre).
 2. Moderniser et styliser le front-end partout, sans changer l’architecture.
