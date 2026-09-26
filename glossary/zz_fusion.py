@@ -150,14 +150,14 @@ a('D86.8',[('D86','catégorie CIM-10 de la sarcoïdose'),('.8','sarcoïdose d’
 # ERS : j18 (valeur finale actuelle et Alpha) contre q21 (valeur finale Claude, fenêtre q21-htap). Libellé complet
 # de q21 ; définition générale couvrant I26, J18, J44, J45 et Q21 ; fenêtre q21-htap non retenue (spécifique Q21).
 a('ERS',[('E','European'),('R','Respiratory'),('S','Society')],'European Respiratory Society (Société européenne de pneumologie)',
- '<p>Société savante européenne de pneumologie. Elle publie, seule ou avec d’autres sociétés, des recommandations et des normes techniques : avec l’ESC, l’embolie pulmonaire aiguë (2019) et l’hypertension pulmonaire (2022) ; avec l’American Thoracic Society, la réalisation et l’interprétation des explorations fonctionnelles respiratoires ; avec l’ESICM, l’ESCMID et l’ALAT, la pneumonie communautaire sévère (2023).</p>')
+ '<p>Société savante européenne de pneumologie. Elle publie, seule ou avec d’autres sociétés, des recommandations et des normes techniques : avec l’ESC, l’embolie pulmonaire aiguë (2019) et l’hypertension pulmonaire (2022) ; avec l’American Thoracic Society, la réalisation et l’interprétation des explorations fonctionnelles respiratoires ; avec l’ESICM, l’ESCMID et l’Asociación Latinoamericana de Tórax, la pneumonie communautaire sévère (2023).</p>')
 # ESICM : i46, i49 (valeur finale Claude, fenêtre i49-rosc) et j18 (valeur finale actuelle et Alpha, courte).
 # Sans fenêtre (correction après contre-lecture, 26.09.2026) : depuis la réécriture de J18, 23 emplois sur 28
 # (I46 : 22, I49 : 1) concernent les recommandations ERC-ESICM post-réanimation, mais 5 (J18) les recommandations
-# ERS/ESICM/ESCMID/ALAT 2023 de la pneumonie communautaire sévère ; une fenêtre sur les soins après réanimation
+# ERS/ESICM/ESCMID et Asociación Latinoamericana de Tórax 2023 de la pneumonie communautaire sévère ; une fenêtre sur les soins après réanimation
 # ne définit pas la société (même traitement que ERS et SSI). I46 dispose de ses propres fenêtres post-réanimation.
 a('ESICM',[('E','European'),('S','Society of'),('I','Intensive'),('C','Care'),('M','Medicine')],'European Society of Intensive Care Medicine (Société européenne de médecine intensive)',
- '<p>Société savante européenne de médecine intensive. Coautrice, avec l’ERC, des recommandations sur les soins après réanimation (2021, mise à jour 2025) et, avec l’ERS, l’ESCMID et l’ALAT, des recommandations 2023 sur la pneumonie communautaire sévère.</p>')
+ '<p>Société savante européenne de médecine intensive. Coautrice, avec l’ERC, des recommandations sur les soins après réanimation (2021, mise à jour 2025) et, avec l’ERS, l’ESCMID et l’Asociación Latinoamericana de Tórax, des recommandations 2023 sur la pneumonie communautaire sévère.</p>')
 # SSI : i33 (valeur finale Claude, fenêtre i33-prophy) contre j18 (valeur finale actuelle et Alpha, développement
 # anglais). Développement français littéral (Société Suisse d’Infectiologie) ; fenêtre non retenue (29 emplois
 # sur 30 dans J18, hors antibioprophylaxie).
