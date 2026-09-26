@@ -1,0 +1,23 @@
+# Glossaire MEDINA — chapitre I00 (rhumatisme articulaire aigu, cardite rhumatismale, chorée de Sydenham : I00, I01, I02)
+from cardio_1 import a, G
+
+a('RAA',[('R','Rhumatisme'),('A','Articulaire'),('A','Aigu')],'Rhumatisme articulaire aigu',
+ '<p>Maladie inflammatoire auto-immune non suppurée qui suit de deux à quatre semaines une pharyngite à streptocoque β-hémolytique du groupe A ; atteint les articulations, le cœur, le cerveau et la peau. Diagnostic par les critères de Jones révisés (AHA 2015).</p>','i00-jones')
+a('ASLO',[('A','Anti- (anticorps)'),('S','Strepto-'),('L','-Lysine (de streptolysine : toxine qui lyse les cellules)'),('O','O (inactivée par l’Oxygène)')],'Anticorps antistreptolysine O',
+ '<p>Anticorps dirigés contre la streptolysine O, toxine du streptocoque du groupe A. Hausse dès la première semaine, pic à 3–6 semaines ; une hausse significative entre deux prélèvements à 10–14 jours d’intervalle prouve une infection récente. Faibles après une infection cutanée.</p>','i00-aslo')
+a('DNase',[('D','Deoxyribo- (désoxyribo-)'),('N','Nucle- (nucléo-)'),('ase','suffixe des enzymes')],'Désoxyribonucléase',
+ '<p>Enzyme qui dégrade l’acide désoxyribonucléique. Le streptocoque du groupe A sécrète la désoxyribonucléase B ; les anticorps anti-DNase B restent élevés plus longtemps que les antistreptolysines O et sont utiles dans la chorée et après une infection cutanée.</p>','i00-aslo')
+a('McIsaac',[('McIsaac','nom propre : Warren McIsaac, médecin canadien, auteur du score (1998) ; ce n’est pas une abréviation')],'Score de McIsaac',
+ '<p>Score clinique de probabilité d’angine streptococcique : fièvre &gt; 38 °C, absence de toux, adénopathies cervicales antérieures sensibles, tuméfaction ou exsudat amygdalien (1 point chacun) ; +1 de 3 à 14 ans, −1 à partir de 45 ans.</p>','i00-mcisaac')
+a('GOAL',[('GOAL','nom d’essai : Gwoko Adunu pa Lutino, « protéger le cœur des enfants » en langue luo (Ouganda) ; acronyme non développable lettre à lettre')],'Essai GOAL (Gwoko Adunu pa Lutino, 2022)',
+ '<p>Essai randomisé ougandais : la pénicilline G benzathine toutes les quatre semaines pendant deux ans réduit la progression de la cardiopathie rhumatismale latente de l’enfant (0,8 % contre 8,2 %).</p>','i00-goal')
+a('REMEDY',[('REMEDY','nom de registre : Global Rheumatic Heart Disease Registry ; acronyme non développable lettre à lettre')],'Registre mondial de la cardiopathie rhumatismale (REMEDY)',
+ '<p>Registre international prospectif de patients porteurs d’une cardiopathie rhumatismale dans des pays à revenu faible ou intermédiaire ; il a montré une mortalité élevée chez des patients jeunes.</p>','i00-remedy')
+a('PANDAS',[('P','Pediatric (pédiatriques)'),('A','Autoimmune (auto-immuns)'),('N','Neuropsychiatric (neuropsychiatriques)'),('D','Disorders (troubles)'),('A','Associated with (associés aux)'),('S','Streptococcal infections (infections streptococciques)')],'Troubles neuropsychiatriques auto-immuns pédiatriques associés aux infections streptococciques',
+ '<p>Concept débattu : symptômes obsessionnels et compulsifs ou tics d’apparition brutale après une infection streptococcique, sans chorée ni autre critère de rhumatisme. Distinct de la chorée de Sydenham.</p>','i00-pandas')
+a('NMDA',[('N','N-'),('M','Méthyl-'),('D','D-'),('A','Aspartate')],'N-méthyl-D-aspartate',
+ '<p>Agoniste qui définit une famille de récepteurs du glutamate. L’encéphalite auto-immune à anticorps anti-récepteur NMDA associe troubles psychiatriques, mouvements anormaux et épilepsie ; elle fait partie du diagnostic différentiel d’une chorée de l’enfant.</p>')
+a('GABA',[('G','Gamma-'),('A','Amino-'),('B','Butyric (butyrique)'),('A','Acid (acide)')],'Acide gamma-aminobutyrique',
+ '<p>Principal neurotransmetteur inhibiteur du système nerveux central ; les neurones du striatum et du pallidum sont gabaergiques. L’acide valproïque renforce sa transmission.</p>','i00-d-valpro')
+a('MacCallum',[('MacCallum','nom propre : William George MacCallum, pathologiste américain (1924) ; ce n’est pas une abréviation')],'Plaque de MacCallum',
+ '<p>Épaississement fibreux de l’endocarde de la paroi postérieure de l’oreillette gauche, frappée par le jet de fuite mitrale ; lésion de la cardite rhumatismale.</p>','i00-aschoff')

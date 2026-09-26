@@ -1,0 +1,152 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light">
+<title>MEDINA · Atlas médical</title>
+<style>
+:root{--bg:#f4f7fb;--surface:#fff;--surface2:#eef3fa;--nav:#17243b;--nav2:#21334e;--ink:#243247;--muted:#65738a;--line:#dce4f0;--blue:#225ea8;--green:#176b4f;--red:#b42332;--indigo:#493a91;--gold:#806015;--shadow:0 8px 28px #2336590f;--radius:17px;--fluo:#D6FF2E;--fluo-ink:#132200;--glow:0 0 0 1px #b7e000,0 0 14px rgba(200,255,40,.55);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 'Segoe UI',Arial,sans-serif}
+a{color:var(--blue);text-decoration:none}button{font:inherit;cursor:pointer}
+svg.icon{width:21px;height:21px;stroke:currentColor;stroke-width:1.65;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.app{display:grid;grid-template-columns:262px minmax(0,1fr);min-height:100vh}
+#rail{position:fixed;inset:0 auto 0 0;width:262px;background:var(--nav);color:#e7eefb;padding:27px 18px 20px;z-index:60;display:flex;flex-direction:column}
+.brand{display:flex;gap:11px;align-items:center;color:#fff;margin:0 9px 22px}.brandmark{display:grid;place-items:center;background:#f1f7ff;border-radius:11px;color:var(--nav);width:39px;height:39px}
+.brand strong{letter-spacing:.14em;font-size:1.1rem;display:block}.brand small{display:block;font-size:10px;letter-spacing:.18em;color:#b6c5df}
+.nav-main{display:grid;gap:5px}.nav-main a{display:flex;align-items:center;gap:11px;border-radius:10px;padding:10px 12px;color:#bdcbe1;font-size:13px}
+.nav-main a:hover,.nav-main a.active{background:#2a3b56;color:#fff}.nav-main a.active{box-shadow:inset 3px 0 #bcaff3}
+.nav-title{color:#94a8c7;font-size:10px;font-weight:700;letter-spacing:.13em;margin:22px 11px 8px}
+.nav-list{overflow-y:auto;flex:1;padding-right:4px;scrollbar-width:thin;scrollbar-color:#455775 transparent}
+.nav-list a{display:flex;gap:9px;align-items:flex-start;color:#c2d0e5;font-size:12.5px;line-height:1.45;padding:7px 9px;border-radius:8px}
+.nav-list a:hover,.nav-list a.active{background:#ffffff0d;color:#fff}.nav-num{width:19px;flex-shrink:0;color:#8b9fbe;font-size:10px;padding-top:2px;font-variant-numeric:tabular-nums}
+.nav-list a.off{opacity:.55}
+.main{grid-column:2;min-width:0}
+.topbar{display:flex;align-items:center;gap:16px;background:#f4f7fbec;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:14px 34px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
+.searchwrap{position:relative;display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:11px;background:var(--surface);width:min(560px,100%);padding-left:14px;color:var(--muted)}
+.searchwrap input{border:0;background:none;padding:10px 8px;flex:1;min-width:0;font:13px 'Segoe UI',Arial,sans-serif;color:var(--ink)}.searchwrap input:focus{outline:none}.searchwrap:focus-within{outline:2px solid #ada0d2}
+#qr{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);display:none;overflow:hidden}#qr a{display:flex;gap:10px;padding:9px 14px;color:var(--ink);font-size:13px;border-bottom:1px solid var(--line)}#qr a:hover{background:var(--surface2)}#qr .code{min-width:44px}
+.iconbtn{display:inline-grid;place-items:center;min-width:37px;height:37px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);padding:0 10px;font-size:13px}
+#menu{display:none}
+#content{max-width:1320px;margin:auto;padding:28px 38px 70px;min-height:85vh}
+.crumbs{font-size:13px;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--muted)}.crumbs a:hover{color:var(--blue)}
+.fluo,.mc-badge{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font:700 11px/1 'Segoe UI',Arial,sans-serif;color:var(--fluo-ink);background:var(--fluo);padding:4px 8px 4px 7px;border-radius:999px;box-shadow:var(--glow);vertical-align:middle;margin-left:8px}
+.fluo:before,.mc-badge:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--fluo-ink)}
+.nav-list .fluo{margin:4px 0 0;font-size:10px;padding:3px 6px}
+.code{font:600 12px 'Segoe UI',Arial;color:var(--muted);letter-spacing:.03em}.muted{color:var(--muted)}
+/* accueil */
+.hero{position:relative;overflow:hidden;border-radius:24px;background:radial-gradient(120% 140% at 85% 10%,#2c4670 0%,#17243b 55%,#111b2d 100%);color:#e9f0fb;padding:40px clamp(22px,4vw,48px) 34px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:center;box-shadow:0 20px 50px #17243b33}
+.hero h1{font-size:clamp(1.9rem,3.4vw,3rem);line-height:1.08;letter-spacing:-.035em;margin:0 0 14px;color:#fff;font-weight:600}
+.hero p{color:#b9c8df;max-width:46ch;margin:0 0 22px;font-size:15.5px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}.cta a{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:11px 16px;font-weight:600;font-size:14px}
+.cta .p{background:#f1f7ff;color:var(--nav)}.cta .s{border:1px solid #ffffff2e;color:#e9f0fb}.cta a:hover{filter:brightness(1.06)}
+.monitor{background:#0c1422;border:1px solid #ffffff14;border-radius:16px;padding:14px 14px 10px;box-shadow:inset 0 0 40px #000a}
+.monitor .top{display:flex;justify-content:space-between;font:600 11px 'Segoe UI',Arial,sans-serif;color:#7f93b2;margin-bottom:6px}.monitor .hr{color:#9dff6a;font-size:22px;font-weight:600;line-height:1}
+.monitor svg{width:100%;height:auto;display:block}.trace{fill:none;stroke:#9dff6a;stroke-width:2;stroke-linejoin:round;filter:drop-shadow(0 0 4px #9dff6a88)}
+@media (prefers-reduced-motion:no-preference){.trace{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s ease-out .2s forwards}@keyframes draw{to{stroke-dashoffset:0}}}
+h2.sec{font-size:1.35rem;letter-spacing:-.025em;margin:38px 0 14px;display:flex;align-items:baseline;gap:12px}h2.sec small{font-size:13px;color:var(--muted);font-weight:400;letter-spacing:0}
+.sysgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.sys{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;color:var(--ink);box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.sys:hover{transform:translateY(-2px);box-shadow:0 14px 34px #2336591c}
+.sys .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--surface2);color:var(--nav)}
+.sys.done .ic{background:var(--nav);color:var(--fluo)}
+.sys h3{margin:0;font-size:15.5px;line-height:1.3;letter-spacing:-.01em}.sys .meta{font-size:12.5px;color:var(--muted);margin-top:auto}
+.sys.off{background:transparent;box-shadow:none;border-style:dashed}.sys.off .ic{background:transparent;border:1px dashed var(--line);color:var(--muted)}.sys.off h3{color:var(--muted);font-weight:500}
+.courses{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.course{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:var(--ink)}
+.course:hover{border-color:#b9c8e3}.course b{font-weight:600;font-size:14px;line-height:1.35}.course .code{min-width:40px}
+.module{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:20px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;color:var(--ink);box-shadow:var(--shadow)}
+.module h3{margin:0 0 6px;font-size:1.15rem}.module p{margin:0;color:var(--muted);font-size:14px}.module svg{width:100%;height:auto;border-radius:8px}
+/* pages */
+h1.page{font-size:clamp(1.65rem,2.8vw,2.5rem);line-height:1.15;letter-spacing:-.04em;margin:4px 0 12px}
+.lede{color:var(--muted);max-width:72ch;margin:0 0 22px}
+table.list{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14px}.tw{overflow-x:auto}
+table.list th{text-align:left;font-weight:600;font-size:12.5px;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--line);background:var(--surface2)}
+table.list td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:middle}table.list tr:last-child td{border-bottom:0}table.list a{font-weight:600}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:22px;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}.chips button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;font-size:13px}.chips button[aria-pressed="true"]{background:var(--nav);color:#fff;border-color:var(--nav)}
+.ecgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:16px}
+.ecgc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 12px;box-shadow:var(--shadow)}
+.ecgc h3{margin:0 0 2px;font-size:15px}.ecgc .lead{font-size:12px;color:var(--muted)}.ecgc .sv{overflow-x:auto;margin:10px 0 8px;border-radius:8px;border:1px solid #efd6d6}.ecgc .sv svg{display:block;min-width:560px;width:100%;height:auto}
+.ecgc ul{margin:0;padding-left:18px;font-size:13.5px}.ecgc li{margin-bottom:3px}.ecgc .go{display:inline-block;margin-top:8px;font-size:13px;font-weight:600}
+.scale{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:12px 16px;margin-bottom:18px;font-size:14px}
+.mc-toolbar a.btn{display:none}
+.navpn{display:flex;justify-content:space-between;gap:12px;margin-top:40px;font-size:14px}.navpn a{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 14px;max-width:48%;color:var(--ink)}
+.toast{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:80;max-width:min(380px,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--fluo);border-radius:14px;padding:14px 16px 12px;box-shadow:0 12px 40px rgba(10,19,32,.25);transform:translateY(20px);opacity:0;transition:.35s}
+.toast.on{transform:none;opacity:1}.toast h3{margin:0 0 6px;font-size:15px}.toast ul{margin:0 0 10px;padding-left:18px;font-size:14px}.toast a{font-weight:600}.toast .row{display:flex;justify-content:flex-end}
+@media (max-width:980px){.app{grid-template-columns:1fr}.main{grid-column:1}#rail{transform:translateX(-100%);transition:transform .25s;padding-top:calc(27px + env(safe-area-inset-top,0px))}body.nav #rail{transform:none;box-shadow:0 0 0 100vmax rgba(0,0,0,.4)}#menu{display:inline-grid}.topbar{padding:12px 16px}#content{padding:20px 16px 60px}.hero,.module{grid-template-columns:1fr}}
+</style></head><body>
+<div class="app"><nav id="rail" aria-label="Navigation"></nav>
+<div class="main"><header class="topbar"><button id="menu" class="iconbtn" aria-label="Menu">☰</button><div class="searchwrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Rechercher un cours, un code CIM, un tracé ECG" aria-label="Rechercher"><div id="qr"></div></div></header>
+<main id="content"></main></div></div>
+<script>
+const D=__DATA__;const ECG=__ECG__;
+const h=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SM={},EM={};let route={},context={};
+D.waves.forEach(w=>SM['s'+w.n]={id:'s'+w.n,...w});
+D.chapters.forEach(c=>{const e={code:c.code,title:c.title,covers:c.covers,system:SM['s'+c.wave].title,organ:'',primary:'s'+c.wave};EM[c.code]=e;c.covers.forEach(x=>{if(!EM[x])EM[x]=e})});
+const IC={1:'<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M5 12h3l1.5-3 2.5 6 1.5-3H19"/>',2:'<path d="M12 4v8M12 12c-2 0-3 2-5 2-2 0-3-2-3-5 0-3 2-5 4-5 1.5 0 2 1 2 3M12 12c2 0 3 2 5 2 2 0 3-2 3-5 0-3-2-5-4-5-1.5 0-2 1-2 3"/>',3:'<path d="M9 4c-3 0-5 3-5 7s2 8 5 8c2 0 3-2 3-4s-2-3-2-5 2-2 2-3-1-3-3-3z"/><path d="M15 5c3 0 5 3 5 7s-2 7-4 7"/>',4:'<path d="M12 3v4M8 9c0-2 2-2 4-2s4 0 4 2-1 3-4 3-4-1-4-3z"/><path d="M7 14c0 4 2 7 5 7s5-3 5-7"/>',5:'<path d="M8 4h5c3 0 5 2 5 5 0 4-3 5-6 5H9c-2 0-3 1-3 3v3"/><path d="M8 4c-2 1-3 3-3 5"/>',6:'<path d="M12 4c-4 0-7 3-7 6 0 2 1 3 2 4v4h4v-3M12 4c4 0 7 3 7 6 0 2-1 3-2 4v4h-4v-3M12 4v14"/>',7:'<circle cx="12" cy="12" r="5"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M15 15l3 3M6 18l3-3M15 9l3-3"/>',8:'<path d="M12 3s-6 7-6 11a6 6 0 0 0 12 0c0-4-6-11-6-11z"/>',9:'<path d="M4 18c4 0 4-12 8-12s4 12 8 12"/><path d="M4 12h3M17 12h3"/>',10:'<path d="M7 4a2 2 0 0 0-2 3l10 10a2 2 0 1 0 3 2 2 2 0 1 0 2-3L10 6a2 2 0 1 0-3-2z"/>',11:'<circle cx="12" cy="7" r="3"/><path d="M8 21v-5c0-3 2-5 4-5s5 2 5 6c0 2-2 4-5 4"/>',12:'<circle cx="12" cy="9" r="5"/><path d="M10 9h.01M14 9h.01M10.5 11.5c1 .7 2 .7 3 0M7 20c1-3 3-4 5-4s4 1 5 4"/>',13:'<path d="M9 3v5c-2 1-4 3-4 7a7 7 0 0 0 14 0c0-4-2-6-4-7V3"/>',14:'<path d="M4 8h16M4 13h16M4 18h16M8 8v10M16 13v5"/>',15:'<path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',16:'<path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>',17:'<path d="M6 3v6a4 4 0 0 0 8 0V3M10 13v3a4 4 0 0 0 8 0v-2"/><circle cx="18" cy="12" r="2"/>'};
+const icon=(n,s=22)=>`<svg class="icon" viewBox="0 0 24 24" style="width:${s}px;height:${s}px">${IC[n]||''}</svg>`;
+function url(kind,id,q){let u='#/'+kind+'/'+id;if(q){const p=new URLSearchParams(q).toString();if(p)u+='?'+p}return u}
+function pageTitle(t){document.title=t+' · MEDINA'}
+const fluo=()=>'<span class="fluo">100 % rédigé</span>';
+const sysDone=s=>D.done.includes(s.n);
+function crumbs(list){const c=document.getElementById('crumbs');const v=[['Accueil','#/']].concat(list).map(x=>x[1]?`<a href="${x[1]}">${h(x[0])}</a>`:h(x[0])).join(' / ');if(c)c.innerHTML=v;window.__crumbs=v;return ''}
+const chaptersOf=sid=>D.chapters.filter(c=>'s'+c.wave===sid);
+function nextPrevious(e,sid){const L=chaptersOf(sid),i=L.findIndex(c=>c.code===e.code);const p=L[i-1],n=L[i+1];
+ return `<div class="navpn">${p?`<a href="${url('entry',p.code)}">← ${h(p.code)} · ${h(p.title)}</a>`:'<span></span>'}${n?`<a href="${url('entry',n.code)}">${h(n.code)} · ${h(n.title)} →</a>`:''}</div>`}
+function drawSidebar(){const r=document.getElementById('rail');const cur=route.kind==='specialty'?route.id:(EM[route.id]||{}).primary;
+ const item=s=>{const n=chaptersOf(s.id).length;return `<a class="${s.id===cur?'active':''} ${n?'':'off'}" href="${url('specialty',s.id)}"><span class="nav-num">${String(s.n).padStart(2,'0')}</span><span class="nav-label">${h(s.title)}${sysDone(s)?'<br>'+fluo():''}</span></a>`};
+ const W=Object.values(SM);
+ r.innerHTML=`<a class="brand" href="#/"><span class="brandmark">${icon(1,24)}</span><span><strong>MEDINA</strong><small>COURS PAR SYSTÈMES</small></span></a>
+ <div class="nav-main"><a href="#/" class="${route.kind==='home'?'active':''}"><svg class="icon" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>Accueil</a><a href="#/atlas/ecg" class="${route.kind==='atlas'?'active':''}"><svg class="icon" viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>Atlas ECG</a></div>
+ <div class="nav-title">EXAMEN FÉDÉRAL</div><div class="nav-list">${W.filter(s=>s.prio).map(item).join('')}<div class="nav-title">AUTRES SYSTÈMES</div>${W.filter(s=>!s.prio).map(item).join('')}</div>`}
+function monitorTrace(){let d='M0 60';let x=0;for(let b=0;b<8;b++){d+=` L${x+30} 60 Q${x+36} 52 ${x+42} 60 L${x+50} 60 L${x+53} 66 L${x+57} 18 L${x+61} 74 L${x+65} 60 L${x+78} 60 Q${x+88} 44 ${x+98} 60 L${x+110} 60`;x+=110}return d}
+function home(){pageTitle('Accueil');crumbs([]);const W=Object.values(SM);let last=null;try{last=JSON.parse(localStorage.getItem('medina.last')||'null')}catch(e){}
+ const L=last&&EM[last]?EM[last]:EM[D.chapters[D.chapters.length-1].code];
+ const sys=s=>{const n=chaptersOf(s.id).length;return `<a class="sys ${sysDone(s)?'done':''} ${n?'':'off'}" href="${url('specialty',s.id)}"><span class="ic">${icon(s.n)}</span><h3>${h(s.title)}</h3><span class="meta">${n?`${n} ${n>1?'cours':'cours'} disponible${n>1?'s':''}`:'En préparation'}${sysDone(s)?fluo():''}</span></a>`};
+ const recent=[...D.chapters].sort((a,b)=>(b.added||'').localeCompare(a.added||'')).slice(0,6);
+ const ex=ECG.find(x=>x.k==='stemi');
+ return `<section class="hero"><div><h1>Comprendre chaque maladie, de la cellule au lit du patient.</h1><p>Cours rédigés pour l’examen fédéral suisse et la spécialisation : physiopathologie, examens interprétés, sciences fondamentales, pharmacologie et critères diagnostiques, reliés par des milliers de liens.</p>
+ <div class="cta"><a class="p" href="${url('entry',L.code)}">${last?'Reprendre':'Commencer'} · ${h(L.code)} ${h(L.title)}<span class="mc-badge" style="display:none"></span></a><a class="s" href="#/atlas/ecg">Ouvrir l’atlas ECG</a></div></div>
+ <div class="monitor" aria-hidden="true"><div class="top"><span>DII · 25 mm/s</span><span class="hr">72</span></div><svg viewBox="0 0 860 90"><path class="trace" d="${monitorTrace()}"/></svg></div></section>
+ <h2 class="sec">Systèmes de l’examen fédéral</h2><div class="sysgrid">${W.filter(s=>s.prio).map(sys).join('')}</div>
+ <h2 class="sec">Derniers cours</h2><div class="courses">${recent.map(c=>`<a class="course" href="${url('entry',c.code)}"><span class="code">${h(c.code)}</span><b>${h(c.title)}</b><span class="mc-badge">100 % rédigé</span></a>`).join('')}</div>
+ <h2 class="sec">Modules transversaux</h2><a class="module" href="#/atlas/ecg"><div><h3>Atlas ECG</h3><p>${ECG.length} tracés normaux et pathologiques sur papier millimétré, avec critères diagnostiques et lien vers le cours correspondant.</p></div><div>${ex.svg}</div></a>
+ <h2 class="sec">Autres systèmes <small>reprise après l’examen fédéral</small></h2><div class="sysgrid">${W.filter(s=>!s.prio).map(sys).join('')}</div>`}
+function specialty(){const s=SM[route.id];if(!s)return notFound();pageTitle(s.title);crumbs([[s.title]]);const L=chaptersOf(s.id);
+ let x=`<div class="code">Vague ${s.n} · ${s.prio?'examen fédéral':'reprise ultérieure'}</div><h1 class="page">${h(s.title)}${sysDone(s)?fluo():''}</h1>`;
+ if(!L.length)return x+'<div class="empty">Les cours de ce système sont en préparation.</div>';
+ const nc=L.reduce((a,c)=>a+c.covers.length,0);
+ x+=`<p class="lede">${L.length} ${L.length>1?'cours couvrent':'cours couvre'} ${nc} ${nc>1?'catégories':'catégorie'} de la CIM-10-GM. Chaque cours réunit pathologie et prise en charge, examens complémentaires, sciences fondamentales et pharmacologie.</p>
+ <div class="courses">${L.map(c=>`<a class="course" href="${url('entry',c.code)}"><span class="code">${h(c.code)}</span><b>${h(c.title)}<br><span class="muted" style="font-weight:400;font-size:12.5px">${c.covers.join(', ')}</span></b><span class="mc-badge">100 % rédigé</span></a>`).join('')}</div>`;
+ if(s.n===1)x+=`<h2 class="sec">Module associé</h2><a class="module" href="#/atlas/ecg"><div><h3>Atlas ECG</h3><p>Tracés normaux et pathologiques, critères et liens vers les cours.</p></div><div>${ECG[0].svg}</div></a>`;
+ return x}
+const CAT={normal:'Rythme',tachy:'Rythme',brady:'Rythme',fa:'Rythme',flutter:'Rythme',tsv:'Rythme',bav1:'Conduction',mobitz1:'Conduction',mobitz2:'Conduction',bav3:'Conduction',bbg:'Conduction',bbd:'Conduction',wpw:'Conduction',stemi:'Ischémie et repolarisation',sousST:'Ischémie et repolarisation',pericard:'Ischémie et repolarisation',hyperk:'Ischémie et repolarisation',hypok:'Ischémie et repolarisation',qtl:'Ischémie et repolarisation',brugada:'Ischémie et repolarisation',esv:'Arythmies ventriculaires',tv:'Arythmies ventriculaires',tdp:'Arythmies ventriculaires',fv:'Arythmies ventriculaires'};
+function atlas(){pageTitle('Atlas ECG');crumbs([['Atlas ECG']]);const f=route.q.get('f')||'Tous';const cats=['Tous','Rythme','Conduction','Ischémie et repolarisation','Arythmies ventriculaires'];
+ const L=ECG.filter(x=>f==='Tous'||CAT[x.k]===f);
+ return `<h1 class="page">Atlas ECG</h1><div class="scale"><b>Lecture du papier</b> : 25 mm/s et 10 mm/mV. Un petit carré = 40 ms et 0,1 mV ; un grand carré = 200 ms et 0,5 mV. Fréquence ≈ 300 / nombre de grands carrés entre deux QRS. Tracés schématiques, dérivation indiquée.</div>
+ <div class="chips">${cats.map(c=>`<button aria-pressed="${c===f}" onclick="location.hash='#/atlas/ecg?f=${encodeURIComponent(c)}'">${c}</button>`).join('')}</div>
+ <div class="ecgs">${L.map(x=>`<article class="ecgc" id="ecg-${x.k}"><h3>${h(x.t)}</h3><span class="lead">Dérivation ${h(x.lead)}</span><div class="sv">${x.svg}</div><ul>${x.crit.map(c=>`<li>${c}</li>`).join('')}</ul>${EM[x.course]?`<a class="go" href="${url('entry',EM[x.course].code)}">Cours ${h(EM[x.course].code)} · ${h(EM[x.course].title)} →<span class="mc-badge" style="display:none"></span></a>`:''}</article>`).join('')}</div>`}
+function notFound(){crumbs([['Introuvable']]);return '<h1 class="page">Page introuvable</h1><p><a href="#/">Retour à l’accueil</a></p>'}
+function entryPage(){return notFound()}
+function parse(){const m=location.hash.match(/^#\/(\w+)\/([^?]+)(?:\?(.*))?/);route=m?{kind:m[1],id:decodeURIComponent(m[2]),q:new URLSearchParams(m[3]||'')}:{kind:'home',id:'',q:new URLSearchParams()}}
+function closeNav(){document.body.classList.remove('nav')}function bindPage(){}
+function render(){parse();const c=document.getElementById('content');
+ const body=route.kind==='specialty'?specialty():route.kind==='entry'?entryPage():route.kind==='atlas'?atlas():home();
+ c.innerHTML=(route.kind==='home'?'':'<div class="crumbs" id="crumbs">'+(window.__crumbs||'')+'</div>')+body;
+ if(route.kind==='entry'){const e=EM[route.id];if(e){const s=SM[e.primary];crumbs([[s.title,url('specialty',s.id)],[e.code+' · '+e.title]]);try{localStorage.setItem('medina.last',e.code)}catch(x){}const hd=c.querySelector('.mc-chap-head h1');if(hd&&!hd.querySelector('.fluo'))hd.insertAdjacentHTML('beforeend',fluo())}}
+ window.scrollTo(0,0);drawSidebar();closeNav();bindPage();if(typeof MEDINA_mount==='function')MEDINA_mount();}
+function toast(){const N=D.chapters.filter(c=>c.added===D.build);if(!N.length)return;let seen=null;try{seen=localStorage.getItem('medina.seen')}catch(e){}if(seen===D.build)return;
+ const t=document.createElement('div');t.className='toast';t.setAttribute('role','status');
+ t.innerHTML=`<h3>Nouveaux cours livrés</h3><ul>${N.map(c=>`<li><a href="${url('entry',c.code)}">${h(c.code)} · ${h(c.title)}</a> — ${h(SM['s'+c.wave].title)}</li>`).join('')}</ul><div class="row"><button class="iconbtn">Fermer</button></div>`;
+ document.body.appendChild(t);requestAnimationFrame(()=>t.classList.add('on'));const close=()=>{t.classList.remove('on');setTimeout(()=>t.remove(),400);try{localStorage.setItem('medina.seen',D.build)}catch(e){}};
+ t.querySelector('button').onclick=close;t.querySelectorAll('a').forEach(a=>a.addEventListener('click',close))}
+addEventListener('hashchange',render);
+document.getElementById('menu').onclick=()=>document.body.classList.toggle('nav');
+(()=>{const q=document.getElementById('q'),qr=document.getElementById('qr');q.oninput=()=>{const v=q.value.trim().toLowerCase();if(v.length<2){qr.style.display='none';return}
+ const a=D.chapters.filter(c=>(c.code+' '+c.title+' '+c.covers.join(' ')).toLowerCase().includes(v)).slice(0,6).map(c=>`<a href="${url('entry',c.code)}"><span class="code">${c.code}</span>${h(c.title)}</a>`);
+ const b=ECG.filter(x=>x.t.toLowerCase().includes(v)).slice(0,4).map(x=>`<a href="#/atlas/ecg"><span class="code">ECG</span>${h(x.t)}</a>`);
+ qr.innerHTML=a.concat(b).join('')||'<a>Aucun résultat parmi les cours rédigés.</a>';qr.style.display='block'};
+ q.onblur=()=>setTimeout(()=>qr.style.display='none',200);qr.onclick=()=>{q.value='';qr.style.display='none'}})();
+</script>
+<!--COURSES-->
+<script>render();setTimeout(toast,900)</script>
+</body></html>
