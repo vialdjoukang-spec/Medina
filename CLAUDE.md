@@ -20,6 +20,7 @@ python3 pack_v7.py              # empaquette les sources dans MEDINA_SOURCES.jso
 Sortie : variable `MEDINA_OUT` (par défaut `/mnt/user-data/outputs` s’il existe, sinon `./dist`). Dépendances : Python 3.10+, `playwright` + Chromium (`pip install playwright && playwright install chromium`).
 
 ## Règles non négociables (détail dans PROMPT_MEDINA.md)
+0. **Rédaction** : suivre `docs/STYLE_REDACTION.md` (le lecteur comprend, il ne devine pas ; phrases courtes et complètes, jamais nominales ; annonce, développement, épilogue ; tableaux introduits et commentés).
 1. **Front-end d’origine de Medina** (`shell/medina_front.html`, vert `#1f3428`, Georgia) : structure intouchable ; embellissement seulement par `shell/polish.css` / `shell/polish.js`. La coque V7 (`shell/shell.html`, `build_v7.py`) est **abandonnée**.
 2. **Contrat HTML** d’un chapitre : `chapters/<CODE>/<CODE>_a.html` … `_d.html` + `_pop*.html` ; 4 onglets (Pathologie, Examens, Sciences, Pharmacologie) ; classes de la liste fermée ; identifiants préfixés par le code en minuscules.
 3. **Abréviations** : aucune sans clé dans le glossaire (`glossary/<code>.py`, `a(*x)`), définition littérale lettre à lettre ; `build_medina.audit()` doit renvoyer `{}`.

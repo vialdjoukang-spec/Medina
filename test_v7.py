@@ -9,6 +9,7 @@ OUT=os.environ.get('MEDINA_OUT','/mnt/user-data/outputs' if os.path.isdir('/mnt/
 STATIC='--static' in sys.argv;CODES=[c for c in sys.argv[1:] if not c.startswith('--')]
 # I50 est le chapitre modèle, rédigé avant la règle des préfixes : ses clés historiques sont tolérées.
 LEGACY_KEYS={'I50'}
+CLASSES=set('alert card chap chap-body chap-head code fb ilot k key lab maj n next pager panel pareto-btn prev quiz ratio sci sci-bar sci-body src ssp status t tabs toc trap two ui w small'.split())
 fails=[]
 for code in CODES:
     src=''.join(open(f).read() for f in sorted(glob.glob(f'{ROOT}/chapters/{code}/*.html')))
@@ -21,6 +22,11 @@ for code in CODES:
     if keys-allpops: fails.append(f'{code}: fenêtres manquantes {sorted(keys-allpops)}')
     bad=[k for k in pops if not (k.startswith(code.lower()+'-') or k.startswith('pareto-'+code.lower()))]
     if bad and code not in LEGACY_KEYS: fails.append(f'{code}: clés sans préfixe {bad}')
+    # Contrat HTML : classes de la liste fermée seulement, aucun style en ligne
+    cls=set(x for m in re.findall(r'class="([^"]*)"',src) for x in m.split())-CLASSES
+    if cls: fails.append(f'{code}: classes hors liste {sorted(cls)}')
+    nst=len(re.findall(r'\sstyle=',src))
+    if nst: fails.append(f'{code}: style en ligne ({nst})')
     print(code,'mots',B.words(src),'fenêtres',len(pops),'quiz',src.count('class="quiz'),'pareto',src.count('pareto-btn'))
 if STATIC:
     print('OK' if not fails else 'ECHEC :\n- '+'\n- '.join(fails));sys.exit(1 if fails else 0)

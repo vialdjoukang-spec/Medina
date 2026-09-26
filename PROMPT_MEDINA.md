@@ -190,7 +190,7 @@ La perfection n’existe pas ; elle est la direction de chaque phrase.
 
 **Pédagogie.** Du simple au complexe : prérequis → définition → mécanisme → clinique → décision. Chaque notion nouvelle reçoit un exemple chiffré ou un patient ; un cas fil rouge ouvre et ferme le chapitre. Le normal avant le pathologique. Anticiper les confusions : pièges, erreurs fréquentes, différentiels discriminés par le critère clé. Auto-évaluation par vignettes corrigées. Paragraphes courts, une idée par paragraphe.
 
-**Style.** Français médical soutenu, élégant, phrases complètes. **Interdits** : métaphores, comparaisons imagées, jeux de mots, plaisanteries, remplissage, termes vains, listes de mots-clés à la place d’un cours, formules de chantier (« à vérifier »). Moyens mnémotechniques seulement en fenêtre, avec la mention « aide pédagogique, non critère officiel ». Aucune phrase clonée d’un autre chapitre.
+**Style.** Français médical soutenu, élégant, phrases complètes. **Le guide `docs/STYLE_REDACTION.md` est obligatoire** (exigence du propriétaire, 26.09.2026) : le lecteur comprend, il ne devine pas ; aucune phrase nominale ni infinitif injonctif ; chaque partie suit annonce, développement, épilogue « À retenir » ; aucun tableau sans introduction ni lecture ; sciences fondamentales au niveau universitaire, reliées à la clinique. **Interdits** : métaphores, comparaisons imagées, jeux de mots, plaisanteries, remplissage, termes vains, listes de mots-clés à la place d’un cours, formules de chantier (« à vérifier »). Moyens mnémotechniques seulement en fenêtre, avec la mention « aide pédagogique, non critère officiel ». Aucune phrase clonée d’un autre chapitre.
 
 ## 12. Sources
 
