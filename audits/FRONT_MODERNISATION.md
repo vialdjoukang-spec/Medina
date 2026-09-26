@@ -41,5 +41,6 @@ Décision assumée : la pulsation de l’insigne fluorescent est maintenue (exig
 
 ## 5. Contrôles
 
-- `test_v7.py` étendu : barre supérieure collante, mode sombre aller-retour sans résidu (en plus des contrôles de phase 1).
-- Troisième revue : à compléter.
+- `test_v7.py` étendu : barre supérieure collante, mode sombre aller-retour sans résidu (en plus des contrôles de phase 1). Résultat sur `MEDINA_final.html` : **OK sur les 30 chapitres**, PC 1300 × 900 et mobile 390 × 844.
+- **Troisième revue** : les 24 constats de la seconde revue sont corrigés et remesurés (contrastes en clair et en sombre de 4,26:1 à 14,49:1 pour les éléments concernés ; 0 texte sous Navigo de 761 à 899 px ; barre d’outils placée de 8 à 18 px sous la barre supérieure sur 20 ouvertures directes ; notification fermable de 701 à 1 360 px ; coût de la conversion sombre divisé par deux). Deux régressions nouvelles, issues des correctifs, ont été corrigées et remesurées par l’intégrateur : champ de recherche de 76 à 375 px utiles entre 701 et 1 000 px (aucun bouton rogné, aucun défilement horizontal) ; aucun fragment de libellé hors de son onglet, y compris J44 en police 24 px (onglets alors non collants par décision : libellés entiers).
+- Réserve assumée : sur un processeur lent (×4), la bascule vers le mode sombre reste une tâche longue (150 à 230 ms), due surtout au recalcul de style de la feuille sombre elle-même ; elle n’a lieu qu’au clic sur le bouton.

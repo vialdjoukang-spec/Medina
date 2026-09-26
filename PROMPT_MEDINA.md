@@ -311,7 +311,7 @@ Une branche parallèle, **MEDINA_Alpha** (dossier Drive « Medina Alpha »), a �
 
 ### 19.7 Google Drive
 Dossier `Medina_claude` (à côté de `Medina.html`) : `MEDINA_Claude.html` (copie de travail, à remplacer par chaque nouveau `MEDINA.html`) et le prompt de passation. Dans Claude Code, écrire directement la sortie dans le dossier Drive synchronisé (Google Drive pour ordinateur) : `MEDINA_OUT=<chemin>/Medina_claude` puis copier `MEDINA.html` en `MEDINA_Claude.html`.
-- **Taille** : `MEDINA.html` ≈ 8,5 Mo compressé (30 cours).
+- **Taille** : `MEDINA_Claude.html` (phase 1) 8,48 Mo ; `MEDINA_final.html` (phase 3, avec la modernisation) **8,52 Mo** compressé (30 cours, 12,9 Mo avant compression) ; limite d’un artefact claude.ai : 16 Mo.
 
 ## 20. Économie
 Ne relire que ce qui sert ; grouper les opérations ; ne pas répéter. Il est **interdit** d’appauvrir un chapitre pour économiser. Le propriétaire a levé le verrou d’économie : utiliser toutes les ressources nécessaires pour des cours complets. L’excellence dans l’économie.

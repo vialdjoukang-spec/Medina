@@ -251,7 +251,7 @@ dialog.mc-dlg::backdrop{background:rgb(12 24 18/.45);backdrop-filter:blur(3px)}
 /* ---------- Cours ---------- */
 /* Onglets du cours collants sous la barre supérieure : l'onglet actif reste à portée pendant la lecture. */
 .mc .mc-tabs{position:sticky;top:calc(var(--mdn-top) + 8px);flex-wrap:nowrap;overflow-x:auto;z-index:25;background:color-mix(in srgb,var(--mdn-soft,#eef3ed) 97%,transparent)!important;backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 -9px 0 0 var(--bg),0 10px 24px -18px rgb(18 42 36/.45)}
-@media(min-width:1100px) and (min-height:721px){.mc .mc-tabs{flex-wrap:nowrap;overflow-x:visible}.mc .mc-tabs button{white-space:normal!important;flex:1 1 auto!important;min-width:0!important;padding-block:8px!important}}
+@media(min-width:1100px) and (min-height:721px){.mc .mc-tabs{flex-wrap:nowrap;overflow-x:visible}.mc .mc-tabs button{white-space:normal!important;flex:1 1 auto!important;min-width:min-content!important;padding-block:8px!important}}
 .mc.mdn-tabs-tall .mc-tabs{position:static!important}
 @media(max-width:1099px),(max-height:720px){.mc .mc-tabs{position:static;flex-wrap:wrap}}
 .mc .mc-toolbar{position:relative;z-index:26}.mc .mc-toolbar:has(.mc-size-pop:not([hidden])){z-index:39}
@@ -384,6 +384,7 @@ html{scroll-behavior:auto}
 /* Barre supérieure sans bouton rogné entre 701 et 1279 px. */
 @media(min-width:701px) and (max-width:1279px){.top-actions .badge{display:none!important}.mdn-ecgbtn{width:44px;padding:0;justify-content:center;font-size:0;gap:0}.mdn-ecgbtn svg{width:21px;height:21px}}
 @media(min-width:701px) and (max-width:1023px){.theme-btn{font-size:0!important;gap:0!important;padding:0 10px!important}.topbar .searchwrap{min-width:0;flex:1 1 auto}}
+@media(min-width:701px) and (max-width:1023px){.topbar{padding-inline:14px!important;gap:8px!important}.top-actions{gap:6px!important}.theme-btn{width:44px!important;padding:0!important;justify-content:center}.topbar .searchwrap>svg{display:none}}
 /* Menu mobile ouvert : la page derrière le tiroir ne défile plus (clip de body neutralisait le verrou de la coque). */
 html:has(body.nav-open){overflow:hidden!important}
 /* Or du thème (theme-009) : sous-onglets des sciences, liens de la méthode, bouton Livre activé. */

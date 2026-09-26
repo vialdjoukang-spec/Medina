@@ -7,7 +7,8 @@ from data import WAVES,PRIO,DONE_SYS,DONE_COURSES,RENVOIS,NOTES
 chap=[c for c in json.load(open(ROOT+'/chapters.json')) if c.get('integrated')]
 cov={}
 for n,_,_ in WAVES: cov[n]=len({x for c in chap if c.get('wave',1)==n for x in c['covers']})
-tot=sum(k for _,_,k in WAVES);pc=sum(k for n,_,k in WAVES if n in PRIO);done=sum(k for n,_,k in WAVES if n in DONE_SYS)+sum(v for w,v in cov.items() if w not in DONE_SYS)
+tot=sum(k for _,_,k in WAVES);pc=sum(k for n,_,k in WAVES if n in PRIO);# Numérateur et dénominateur limités aux systèmes prioritaires de l'examen (auparavant, le numérateur comptait aussi les systèmes en pause).
+done=sum(k for n,_,k in WAVES if n in DONE_SYS and n in PRIO)+sum(v for w,v in cov.items() if w not in DONE_SYS and w in PRIO)
 cells=[];k=0
 for n,t,cat in WAVES:
     for i in range(cat):
