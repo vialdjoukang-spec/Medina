@@ -1,0 +1,2 @@
+Lance un cycle de production de DEUX systèmes (PHASE 4 de REPRISE_CLAUDE_CODE.md) : $ARGUMENTS
+Si aucun système n’est précisé, prendre la prochaine paire de la liste. Utiliser des sous-agents parallèles (un rédacteur par système, un auditeur indépendant par chapitre) ; un seul intégrateur pour chapters.json, la coque et le HTML. Chaque chapitre suit /chapitre (qualité extrême, aucune condensation) et passe /audit (cible 20/20). Terminer par /livrer, la mise à jour de MEDINA_final.html et le tableau de bord « cycle N, systèmes X + Y ».
