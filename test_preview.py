@@ -1,7 +1,8 @@
-import sys,re
+import sys,re,os
 from playwright.sync_api import sync_playwright
-code=sys.argv[1]; F=f'file:///home/claude/medina/preview/{code}.html'
-src=open(f'/home/claude/medina/preview/{code}.html').read()
+ROOT=os.path.dirname(os.path.abspath(__file__))
+code=sys.argv[1]; path=os.path.join(ROOT,'preview',f'{code}.html'); F='file://'+path
+src=open(path).read()
 body=src[src.index(f'<template id="ch-{code}"'):src.index('<script id="medina-glossary"')]
 keys=set(re.findall(r'data-k="([^"]+)"',body)); pops=set(re.findall(r'data-pop="([^"]+)"',src))
 missing=sorted(keys-pops); fails=[]
@@ -28,7 +29,7 @@ with sync_playwright() as p:
             if bt.count()==0: fails.append('onglet absent '+tab);continue
             bt.click();pg.wait_for_timeout(200)
         pg.click('.mc-book')
-        pg.screenshot(path=f'/home/claude/medina/preview/{code}.png')
+        pg.screenshot(path=os.path.join(ROOT,'preview',f'{code}.png'))
     if er: fails.append('JS: '+' | '.join(er[:3]))
     b.close()
 print('OK' if not fails else 'ECHEC: '+' ; '.join(fails))
