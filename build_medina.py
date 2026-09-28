@@ -96,7 +96,7 @@ def pareto_ratios(src):
     return re.sub(r'<p class="mc-ratio" data-cover="([^"]+)"></p>', fill, src)
 
 def build(chapters, out):
-    v6 = open(os.environ.get('MEDINA_V6', ROOT + '/medora_v6.html')).read()
+    v6 = open(os.environ.get('MEDINA_V6', ROOT + '/shell/medina_front.html')).read()
     # renommage visible
     v6 = v6.replace('MEDORA_TEST', 'MEDINA_TEST').replace('MEDORA', 'MEDINA')
     v6 = v6.replace('V6 · SYSTÈMES · INTELLIGENCE &amp; CIM', 'MEDINA · COURS PAR SYSTÈMES').replace('V6 · SYSTÈMES · INTELLIGENCE & CIM', 'MEDINA · COURS PAR SYSTÈMES')
