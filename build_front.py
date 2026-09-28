@@ -30,13 +30,54 @@ def fragment_shell(fragment):
     data=json.loads(match.group(2));attached=set(fragment['rattachements'])
     data['entries']=[e for e in data['entries'] if e['code'] in attached or
                      (e['code'] not in explicit and e.get('system') in attached)]
+    codes={e['code'] for e in data['entries']};systems={e.get('system') for e in data['entries']}
+    specialties={x for e in data['entries'] for x in e.get('specialties',[])}
+    data['specialties']=[x for x in data['specialties'] if x['id'] in specialties]
+    for specialty in data['specialties']:
+        specialty['entries']=[x for x in specialty.get('entries',[]) if x in codes]
+    data['profiles']={k:v for k,v in data['profiles'].items()
+                      if any(e.get('organ')==k or e.get('profile')==k for e in data['entries'])}
+    data['focus']={k:v for k,v in data['focus'].items() if k in codes}
+    linked={x for e in data['entries'] for x in e.get('links',[])}
+    data['ssps']=[x for x in data['ssps'] if x['code'] in linked]
+    data['legacy']['specialties']=[x for x in data['legacy']['specialties'] if x['id'] in specialties]
+    data['legacy']['meta']['specialties']=len(data['specialties'])
+    data['legacy']['meta']['systems']=len(systems)
+    data['legacy']['meta']['chapters']=len(data['entries'])
+    data['legacy']['meta']['fullCourses']=len(fragment_chapters(fragment,data['entries']))
     data['meta']['entries']=len(data['entries'])
+    data['meta']['sspVisible']=len(data['ssps'])
+    data['fragment']={'id':fragment['id'],'name':fragment['nom'],'systems':sorted(systems)}
     payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
     s=s[:match.start()]+match.group(1)+payload+match.group(3)+s[match.end():]
     name=fragment['nom']
     s=s.replace('<title>Medina · Atlas médical</title>','<title>Medina · '+name+'</title>',1)
     s=s.replace('<span><strong>Medina</strong><small>ATLAS DE MÉDECINE</small></span>',
                 '<span><strong>'+name+'</strong><small>FRAGMENT '+fragment['id']+'</small></span>',1)
+    chapter_by_code={c['code']:c for c in fragment_chapters(fragment,data['entries'])}
+    groups={}
+    for entry in sorted(data['entries'],key=lambda x:x['code']):
+        axis=entry.get('system') or 'Autres'
+        category=(entry.get('block')+' · '+entry.get('blockTitle','')).strip(' ·')
+        key=(axis,category) if fragment['id'].startswith('T') else ('',category)
+        groups.setdefault(key,[]).append(entry)
+    sidebar=[]
+    for (axis,category),items in groups.items():
+        if axis and (not sidebar or sidebar[-1].get('axis')!=axis): sidebar.append({'axis':axis})
+        sidebar.append({'category':category,'items':[{'code':e['code'],'title':chapter_by_code.get(e['code'],e).get('title',e['title']),
+                                                       'written':e['code'] in chapter_by_code} for e in items]})
+    if not chapter_by_code: sidebar=[{'empty':"Aucun chapitre rédigé pour l'instant"}]
+    fragment_script='<script>window.MEDINA_FRAGMENT_SIDEBAR='+json.dumps(sidebar,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')+';</script>'
+    s=s.replace('</head>',fragment_script+'</head>',1)
+    s=s.replace('<div class="nav-title">Spécialités · priorité intuitive</div>',
+                '<div class="nav-title">Chapitres par catégories</div>',1)
+    note=f"{len(data['entries']):n} catégories CIM intégrées.<br>{len(chapter_by_code)} cours rédigés.<br>Périmètre exclusif {fragment['id']}.".replace(',', ' ')
+    s=re.sub(r'<div class="sidebar-note">.*?</div>', '<div class="sidebar-note">'+note+'</div>',s,count=1)
+    old="$('#spec-nav').innerHTML=ordered.map(s=>`<a href=\"${url('specialty',s.id)}\" class=\"${context?.sid===s.id?'active':''}\"><span class=\"nav-num\">${String(s.rank).padStart(2,'0')}</span><span class=\"nav-label\">${h(s.title)}</span></a>`).join('');"
+    new="const fs=window.MEDINA_FRAGMENT_SIDEBAR;if(fs){$('#spec-nav').innerHTML=fs.map(g=>g.empty?`<div class=\"sidebar-note\">${h(g.empty)}</div>`:g.axis?`<div class=\"nav-title\">${h(g.axis)}</div>`:`<details open data-fragment-category=\"${h(g.category)}\"><summary>${h(g.category)} · ${g.items.length}</summary>${g.items.map(x=>x.written?`<a href=\"#/entry/${x.code}\" data-fragment-chapter=\"${x.code}\"><span class=\"nav-num\">${x.code}</span><span class=\"nav-label\">${h(x.title)}</span></a>`:`<span class=\"nav-planned\" data-fragment-planned=\"${x.code}\"><span class=\"nav-num\">${x.code}</span><span class=\"nav-label\">${h(x.title)} · à venir</span></span>`).join('')}</details>`).join('')}else "+old
+    assert old in s
+    s=s.replace(old,new,1)
+    s=s.replace('</head>','<style>.nav-list details>summary{cursor:pointer;color:#94a8c7;font-size:10px;font-weight:700;padding:8px}.nav-planned{display:flex;gap:9px;color:#8392aa;font-size:11px;padding:6px 9px;opacity:.72}.nav-list details .nav-num{width:32px}</style></head>',1)
     if not fragment_chapters(fragment,data['entries']):
         notice='<div class="empty" id="medina-fragment-empty">Aucun chapitre rédigé pour l\'instant</div>'
         s=s.replace('</main>',notice+'</main>',1)
@@ -77,10 +118,11 @@ for k in 'esv tv tdp fv'.split():CAT[k]='Arythmies ventriculaires'
 sysd=[]
 for n,t,k in WAVES:
     courses=[c for c in chap if c.get('wave',1)==n]
+    if selected and not courses: continue
     covered=k if n in DONE_SYS else min(k,len({x for c in courses for x in c.get('covers',[c['code']])}))
     ch=[{'code':c['code'],'title':c['title'],'complete':c['code'] in DONE_COURSES} for c in courses]
     sysd.append({'n':n,'t':t,'title':t,'cat':k,'total':k,'covered':covered,'prio':n in PRIO,'done':n in DONE_SYS,
-                 'pct':round(100*covered/k),'ch':ch,'courses':ch,'plan':PLAN.get(n,[])})
+                 'pct':round(100*covered/k),'ch':ch,'courses':ch,'plan':[] if selected else PLAN.get(n,[])})
 completed=[c['code'] for c in chap if c['code'] in DONE_COURSES]
 data={'systems':sysd,'build':build,'news':[{'code':c['code'],'title':c['title'],'complete':c['code'] in DONE_COURSES} for c in chap if c.get('added')==build],
       'doneNames':[t for n,t,_ in WAVES if n in DONE_SYS],'ecgCat':CAT,'complete':completed}
@@ -91,7 +133,10 @@ s=s.replace("1-5 1-7V3z'","1-5 1-7 0V3z'",1)
 assert '<script>window.MEDINA_ALIAS=' in s
 s=s.replace('<script>window.MEDINA_ALIAS=','<script>window.MEDINA_COMPLETE='+json.dumps(completed)+';</script><script>window.MEDINA_ALIAS=',1)
 s=s.replace('</head>','<style id="medina-polish">'+open(ROOT+'/shell/polish.css').read()+'</style></head>',1)
-tail='<script>window.MDN_DATA='+json.dumps(data,ensure_ascii=False)+';window.MDN_ECG='+open(ROOT+'/modules/ecg.json').read()+'</script><script>'+open(ROOT+'/shell/polish.js').read()+'</script>'
+ecg=open(ROOT+'/modules/ecg.json').read() if not selected or fragment['id']=='S01' else '[]'
+polish=open(ROOT+'/shell/polish.js').read()
+if selected and fragment['id']!='S01': polish=polish.replace('function ecgButton(){','function ecgButton(){return;',1)
+tail='<script>window.MDN_DATA='+json.dumps(data,ensure_ascii=False)+';window.MDN_ECG='+ecg+'</script><script>'+polish+'</script>'
 i=s.rindex('</body>');s=s[:i]+tail+s[i:]
 if selected:
     present={c['code'] for c in chap}

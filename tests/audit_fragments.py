@@ -84,10 +84,37 @@ def main():
             errors.append(f"fragment manquant : {path}")
             continue
         source = expanded_html(path)
+        attached = set(fragment["rattachements"])
+        payload = re.search(r'<script id="medora-data" type="application/json">(.*?)</script>', source, re.S)
+        data = json.loads(payload.group(1))
+        allowed_entries = {entry["code"] for entry in entries if entry["code"] in attached or
+                           (entry["code"] not in explicit and entry.get("system") in attached)}
+        embedded_entries = {entry["code"] for entry in data["entries"]}
+        if embedded_entries != allowed_entries:
+            errors.append(f"{fragment['id']} périmètre CIM incorrect")
+        allowed_systems = {entry.get("system") for entry in entries if entry["code"] in allowed_entries}
+        if set(data["fragment"]["systems"]) != allowed_systems:
+            errors.append(f"{fragment['id']} contient un système étranger")
+        specialty_ids = {specialty["id"] for specialty in data["specialties"]}
+        expected_specialties = {sid for entry in data["entries"] for sid in entry.get("specialties", [])}
+        if specialty_ids != expected_specialties:
+            errors.append(f"{fragment['id']} contient une spécialité étrangère")
+        if data["meta"]["entries"] != len(data["entries"]) or data["meta"]["sspVisible"] != len(data["ssps"]):
+            errors.append(f"{fragment['id']} contient un compteur de données incorrect")
         present = set(re.findall(r'id=["\']ch-([^"\']+)["\']', source))
-        foreign = present - expected_chapters(fragment, chapters, entries, explicit)
+        expected = expected_chapters(fragment, chapters, entries, explicit)
+        foreign = present - expected
         if foreign:
             errors.append(f"{fragment['id']} contient des chapitres étrangers : {', '.join(sorted(foreign))}")
+        sidebar_payload = re.search(r'window\.MEDINA_FRAGMENT_SIDEBAR=(.*?);</script>', source, re.S)
+        sidebar = {item["code"] for group in json.loads(sidebar_payload.group(1))
+                   for item in group.get("items", []) if item["written"]}
+        if sidebar != expected:
+            errors.append(f"{fragment['id']} bandeau incorrect : {', '.join(sorted(sidebar ^ expected))}")
+        note = re.search(r'<div class="sidebar-note">([\s\S]*?)</div>', source)
+        counts = [int(x.replace(' ', '')) for x in re.findall(r'([0-9][0-9 ]*) (?:catégories CIM intégrées|cours rédigés)', note.group(1))]
+        if counts != [len(data["entries"]), len(expected)]:
+            errors.append(f"{fragment['id']} compteurs du bandeau incorrects")
         try:
             check_javascript(path, source)
         except AssertionError as error:
