@@ -1,0 +1,57 @@
+name: Publier MEDINA sur GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "lts/*"
+      - name: Construire MEDINA et ses fragments
+        env:
+          MEDINA_OUT: ${{ github.workspace }}/dist
+        run: |
+          python build_front.py
+          python build_front.py --all-fragments
+      - name: Assembler le site
+        run: |
+          mkdir -p _site/fragments
+          cp dist/MEDINA.html _site/MEDINA.html
+          cp dist/fragments/*.html _site/fragments/
+          python build_index.py --fragments-dir _site/fragments --output _site/index.html
+      - name: Auditer les fragments
+        env:
+          MEDINA_FRAGMENTS: ${{ github.workspace }}/_site/fragments
+        run: python tests/audit_fragments.py
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
