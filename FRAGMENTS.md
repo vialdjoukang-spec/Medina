@@ -34,3 +34,11 @@ Les identifiants de systèmes reprennent à l’identique le champ `system` de l
 Aucun chapitre actuellement déclaré dans `chapters.json` n’est laissé sans fragment.
 
 Le psychisme est volontairement exclu de la carte des fragments conformément au périmètre demandé. Tout futur chapitre relevant du psychisme devra donc rester non rattaché, avec cette exclusion comme raison.
+
+## Étanchéité et navigation
+
+Un build de fragment ne conserve que les entrées CIM explicitement rattachées ou appartenant à un système rattaché. Les spécialités sont ensuite déduites de ces entrées (et leurs listes d’entrées sont recoupées) ; profils, focus, SSP reliés, plans, recherche, compteurs et modules de progression utilisent ce même sous-ensemble. Cette règle ne s’applique jamais au build MEDINA complet.
+
+Le bandeau classe les entrées dans l’ordre croissant des codes CIM et utilise leur `block` et leur `blockTitle` comme catégorie. Un cours présent dans `chapters.json` est cliquable ; les autres entrées du bloc sont des plans grisés « à venir ». Pour un fragment transversal `T`, le champ `system` forme d’abord un axe, puis les blocs CIM forment ses catégories. Si aucun cours n’est rédigé, le bandeau est remplacé par « Aucun chapitre rédigé pour l'instant ».
+
+Les modules transversaux suivent leur contenu : le Directeur des systèmes et les nouveaux cours sont reconstruits avec les seuls chapitres du fragment. L’Atlas ECG est réservé à S01, seul fragment actuellement concerné par ses tracés et ses cours ; il est absent des autres fragments.
