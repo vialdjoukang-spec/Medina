@@ -36,6 +36,7 @@ jobs:
           mkdir -p _site/fragments
           cp dist/MEDINA.html _site/MEDINA.html
           cp dist/fragments/*.html _site/fragments/
+          cp site/qcm.html _site/qcm.html
           python build_index.py --fragments-dir _site/fragments --output _site/index.html
       - name: Auditer les fragments
         env:

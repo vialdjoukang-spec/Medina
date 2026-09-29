@@ -10,6 +10,11 @@
 - **Aucune économie sur le contenu** : il a levé le verrou d’économie. Ne jamais condenser un cours.
 - Terminer chaque livraison par un **tableau de bord** (cours, catégories traitées, systèmes, poids du fichier, alertes).
 
+## QCM : deux périmètres pédagogiques (décision du 29.09.2026)
+- **MEDINA** consolide les acquis des cours par système et chapitre. Son espace natif propose les formats **A, K prime et menu long** avec correction reliée au cours.
+- **GLOBALITY** entraîne au raisonnement à partir des **SSP**. Ses données, ses parcours et sa progression restent distincts.
+- La restauration de la banque GLOBALITY n'est pas un prérequis de l'espace QCM MEDINA. Lire `docs/QCM_MEDINA.md` avant toute évolution de cet espace.
+
 ## Démarrage rapide
 ```bash
 python3 build_front.py          # construit MEDINA.html (cours compressés, ~8,3 Mo)
