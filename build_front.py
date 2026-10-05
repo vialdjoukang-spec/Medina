@@ -6,6 +6,7 @@ OUT=os.environ.get('MEDINA_OUT','/mnt/user-data/outputs' if os.path.isdir('/mnt/
 os.environ['MEDINA_V6']=ROOT+'/shell/medina_front.html'
 sys.path.insert(0,ROOT);sys.path.insert(0,ROOT+'/shell')
 import build_medina as B
+from fragment_surface import isolate_specialty, finish_surface
 from data import WAVES,DONE_SYS,DONE_COURSES,PRIO,PLAN
 parser=argparse.ArgumentParser()
 group=parser.add_mutually_exclusive_group()
@@ -48,6 +49,8 @@ def fragment_shell(fragment):
     data['meta']['entries']=len(data['entries'])
     data['meta']['sspVisible']=len(data['ssps'])
     data['fragment']={'id':fragment['id'],'name':fragment['nom'],'systems':sorted(systems)}
+    if fragment.get('surface') == 'courses-v1':
+        isolate_specialty(data, fragment, fragment_chapters(fragment, data['entries']), DONE_COURSES)
     payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
     s=s[:match.start()]+match.group(1)+payload+match.group(3)+s[match.end():]
     name=fragment['nom']
@@ -138,6 +141,8 @@ polish=open(ROOT+'/shell/polish.js').read()
 if selected and fragment['id']!='S01': polish=polish.replace('function ecgButton(){','function ecgButton(){return;',1)
 tail='<script>window.MDN_DATA='+json.dumps(data,ensure_ascii=False)+';window.MDN_ECG='+ecg+'</script><script>'+polish+'</script>'
 i=s.rindex('</body>');s=s[:i]+tail+s[i:]
+if selected and fragment.get('surface') == 'courses-v1':
+    s=finish_surface(s, fragment, ROOT)
 if selected:
     present={c['code'] for c in chap}
     absent={c['code'] for c in cfg}-present

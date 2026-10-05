@@ -99,13 +99,28 @@ def main():
         expected_specialties = {sid for entry in data["entries"] for sid in entry.get("specialties", [])}
         if specialty_ids != expected_specialties:
             errors.append(f"{fragment['id']} contient une spécialité étrangère")
+        if fragment.get('surface') == 'courses-v1':
+            if specialty_ids != {fragment['specialty']}:
+                errors.append(f"{fragment['id']} doit conserver une seule spécialité")
+            if any(entry.get('primary') != fragment['specialty'] for entry in data['entries']):
+                errors.append(f"{fragment['id']} contient une affectation primaire étrangère")
+            grouped = [code for group in data['fragment']['categories'] for code in group['chapters']]
+            if len(grouped) != len(set(grouped)) or set(grouped) != {c['code'] for c in data['fragment']['courses']}:
+                errors.append(f"{fragment['id']} classement des cours incomplet ou dupliqué")
+            if 'id="medina-fragment-runtime"' not in source or 'id="medina-fragment-css"' not in source:
+                errors.append(f"{fragment['id']} accueil des cours absent")
+            if 'id="medina-portable-resources"' in source or 'id="medora-v7-federal-integration"' in source:
+                errors.append(f"{fragment['id']} conserve un catalogue global hors périmètre")
         if data["meta"]["entries"] != len(data["entries"]) or data["meta"]["sspVisible"] != len(data["ssps"]):
             errors.append(f"{fragment['id']} contient un compteur de données incorrect")
         present = set(re.findall(r'id=["\']ch-([^"\']+)["\']', source))
         expected = expected_chapters(fragment, chapters, entries, explicit)
         foreign = present - expected
+        missing = expected - present
         if foreign:
             errors.append(f"{fragment['id']} contient des chapitres étrangers : {', '.join(sorted(foreign))}")
+        if missing:
+            errors.append(f"{fragment['id']} manque des cours : {', '.join(sorted(missing))}")
         sidebar_payload = re.search(r'window\.MEDINA_FRAGMENT_SIDEBAR=(.*?);</script>', source, re.S)
         sidebar = {item["code"] for group in json.loads(sidebar_payload.group(1))
                    for item in group.get("items", []) if item["written"]}

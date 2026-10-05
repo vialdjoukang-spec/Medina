@@ -37,6 +37,10 @@ Le psychisme est volontairement exclu de la carte des fragments conformément au
 
 ## Étanchéité et navigation
 
+S01 active la surface `courses-v1` : une seule spécialité (`cardiologie`, affichée « Cardiovasculaire »), un accueil des 20 cours écrits répartis en huit catégories cliniques et un Navigo rectangulaire fixe. Le panneau reste ouvert à partir de 1 100 px ; en dessous, un bouton fixe ouvre le plan. Les liens de cours, la recherche, les renvois CIM et le carnet sont limités aux cours de S01. Le carnet utilise une clé distincte de celui de l’atlas complet. L’Atlas ECG et les contenus des cours sont conservés. Les catalogues de spécialités et d’examen fédéral de l’atlas complet ne sont pas embarqués dans cette surface.
+
+Cette surface est activée uniquement dans le manifeste de S01. Le build complet et les autres fragments gardent leur comportement actuel ; leur adaptation sera faite fragment par fragment. Le contrôle de cette première adaptation se trouve dans `audits/S01_2026-10-05/README.md`.
+
 Un build de fragment ne conserve que les entrées CIM explicitement rattachées ou appartenant à un système rattaché. Les spécialités sont ensuite déduites de ces entrées (et leurs listes d’entrées sont recoupées) ; profils, focus, SSP reliés, plans, recherche, compteurs et modules de progression utilisent ce même sous-ensemble. Cette règle ne s’applique jamais au build MEDINA complet.
 
 Le bandeau classe les entrées dans l’ordre croissant des codes CIM et utilise leur `block` et leur `blockTitle` comme catégorie. Un cours présent dans `chapters.json` est cliquable ; les autres entrées du bloc sont des plans grisés « à venir ». Pour un fragment transversal `T`, le champ `system` forme d’abord un axe, puis les blocs CIM forment ses catégories. Si aucun cours n’est rédigé, le bandeau est remplacé par « Aucun chapitre rédigé pour l'instant ».
