@@ -1,0 +1,19 @@
+{
+  "result": "passed",
+  "helper": "tests/browser_runtime.cjs",
+  "checks": [
+    "La surcharge facultative choisit un exécutable existant",
+    "Une surcharge invalide donne une erreur explicite",
+    "Le navigateur installé par Playwright est prioritaire",
+    "Chromium est détecté dans le PATH sans variable MEDINA_CHROMIUM_PATH",
+    "Le navigateur détecté ouvre réellement les 20 cours de S01 sur téléphone",
+    "Sans navigateur disponible, le message explique son installation"
+  ],
+  "errors": [],
+  "navigation_rerun": {
+    "result": "passed",
+    "checks": 71,
+    "errors": [],
+    "command": "node tests/verify_s01_browser.cjs (MEDINA_CHROMIUM_PATH optionnel défini pour ce contrôle)"
+  }
+}

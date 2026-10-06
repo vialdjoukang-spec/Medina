@@ -4,8 +4,8 @@ const http = require('node:http');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const {pathToFileURL} = require('node:url');
-const {chromium} = require(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES
-  ? process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES + '/playwright' : 'playwright');
+const {loadPlaywright, browserOptions} = require('./browser_runtime.cjs');
+const {chromium} = loadPlaywright();
 const file = path.resolve(process.env.MEDINA_S01_FILE || 'dist/fragments/MEDINA_S01_cardiovasculaire.html');
 const out = path.resolve(process.env.MEDINA_QA_OUT || 'audits/S01_2026-10-05');
 const checks = [], errors = [];
@@ -19,10 +19,7 @@ const check = (name, condition, detail) => {assert.ok(condition, name + (detail 
   });
   await new Promise(r => server.listen(0,'127.0.0.1',r));
   const base = 'http://127.0.0.1:' + server.address().port + '/S01.html';
-  const browser = await chromium.launch({
-    ...(process.env.MEDINA_CHROMIUM_PATH ? {executablePath:process.env.MEDINA_CHROMIUM_PATH} : {}),
-    args:['--no-sandbox','--disable-dev-shm-usage','--no-zygote','--disable-gpu']
-  });
+  const browser = await chromium.launch(browserOptions(chromium));
   try {
     const context = await browser.newContext({viewport:{width:1360,height:900}, reducedMotion:'reduce'});
     await context.addInitScript(() => localStorage.setItem('medora.atlas.v3', JSON.stringify({bookmarks:['J45'],notes:{J45:'Repère respiratoire'}})));
