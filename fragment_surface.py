@@ -59,6 +59,7 @@ def finish_surface(source, fragment, root):
     for key in ('medora.atlas.v3', 'medora.atlas.v1'):
         source = source.replace("'" + key + "'", "'medina.fragment." + fragment['id'] + ".atlas'")
     nav = ('<nav class="nav-main"><a href="#/home">Accueil · cours</a>'
+           + ('<a href="#/clinical-skills">Sémiologie CS</a>' if fragment['id'] == 'S01' else '') +
            '<a href="#/search">Rechercher un cours</a>'
            '<a href="#/notebook">Carnet du fragment</a>'
            '<a href="#/method">Règle d’or et sources</a></nav>')
@@ -70,5 +71,12 @@ def finish_surface(source, fragment, root):
     css = (Path(root) / 'shell/fragment.css').read_text(encoding='utf-8')
     js = (Path(root) / 'shell/fragment.js').read_text(encoding='utf-8')
     source = source.replace('</head>', '<style id="medina-fragment-css">' + css + '</style></head>', 1)
+    if fragment['id'] == 'S01':
+        module = Path(root) / 'modules'
+        cs_css = (module / 'cardiovascular_cs.css').read_text(encoding='utf-8')
+        cs_html = (module / 'cardiovascular_cs.html').read_text(encoding='utf-8')
+        cs_js = (module / 'cardiovascular_cs.js').read_text(encoding='utf-8')
+        source = source.replace('</head>', '<style id="medina-cs-css">' + cs_css + '</style></head>', 1)
+        source = source.replace('</body>', cs_html + '<script id="medina-cs-runtime">' + cs_js + '</script></body>', 1)
     source = source.replace('</body>', '<script id="medina-fragment-runtime">' + js + '</script></body>', 1)
     return source
