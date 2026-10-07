@@ -33,6 +33,8 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / "_site/index.html")
     args = parser.parse_args()
     fragments = json.loads((ROOT / "fragments.json").read_text(encoding="utf-8"))
+    public_names = {f["id"]: f for f in json.loads((ROOT / "organisation/fragments.json").read_text(encoding="utf-8"))}
+    fragments.sort(key=lambda f: public_names[f["id"]]["order"])
 
     cards = []
     for fragment in fragments:
@@ -43,7 +45,7 @@ def main():
         count = chapter_count(path)
         label = "chapitre rédigé" if count == 1 else "chapitres rédigés"
         cards.append((fragment["id"], f'''<li><a href="fragments/{filename}">
-          <strong>{html.escape(fragment['nom'])}</strong>
+          <strong>{html.escape(public_names[fragment['id']]['label'])}</strong>
           <span>{count} {label} · {human_size(path.stat().st_size)}</span>
         </a></li>'''))
 
@@ -64,6 +66,7 @@ h2{{display:flex;align-items:center;gap:.8rem;margin-top:2rem;color:var(--muted)
 h2::before,h2::after{{content:"";height:1px;background:var(--line);flex:1}}
 </style></head><body><main>
 <h1>MEDINA — Atlas par systèmes</h1>
+<a class="complete" href="organisation.html">Fragments, catégories CIM et ordre de production</a><br>
 <a class="complete" href="MEDINA.html">Consulter le MEDINA complet</a>
 <ul>{systems}</ul>
 <h2>Axes transversaux</h2>

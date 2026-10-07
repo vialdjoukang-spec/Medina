@@ -105,6 +105,14 @@ class CollaborationSyncTests(unittest.TestCase):
         self.assertEqual(report["kind"], "review_report")
         self.assertEqual(report["course"], "I48")
 
+    def test_delivery_sources_route_to_their_canonical_fragment(self):
+        route = SYNC.route_file("livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_c.html", catalog())
+        self.assertEqual(route["routes"], ["S01"])
+        self.assertEqual(route["canonical_path"], "chapters/I48/I48_c.html")
+        self.assertEqual(route["kind"], "delivery_source")
+        self.assertTrue(any("injecter" in warning for warning in route["warnings"]))
+        self.assertEqual(SYNC.route_file("livraisons/Livraison Claude/C-01-Cardiologie/livraison.json", catalog())["kind"], "delivery_report")
+
     def test_unknown_path_absent_registration_and_wrong_category(self):
         self.assertTrue(SYNC.route_file("unwired/new_course.json", catalog())["warnings"])
         missing = SYNC.route_file("chapters/J99/J99_a.html", catalog())

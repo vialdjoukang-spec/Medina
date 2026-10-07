@@ -2,6 +2,12 @@
 
 Vial autorise en permanence les publications et intégrations GitHub du projet. Lire `CLAUDE.md`, `docs/collaboration/README.md` et les instructions actuelles avant de modifier le contenu.
 
+## Nomenclature et livraisons — exigence du 7 octobre 2026
+
+Toute leçon doit être nommée **code CIM + intitulé complet**, y compris dans les liens, rapports et navigations. Tout fragment doit porter **initiale de la spécialité - rang de production à deux chiffres - nom littéral**, par exemple `C-01-Cardiologie`. Le registre partagé est `organisation/fragments.json` ; les identifiants techniques S01…T7 et les routes restent stables.
+
+Consulter `organisation/MEDINA_Organisation.html` et `docs/collaboration/DELIVERY_PROTOCOL.md`. Remettre les sources sous `livraisons/Livraison Codex/<libellé>/` ; Claude dépose ses corrections sous `livraisons/Livraison Claude/<libellé>/`. Relire et vérifier l'injection dans les sources canoniques avant reconstruction et publication. Ne jamais déclarer un fragment achevé sur la seule présence d'un cours ou d'un regroupement `covers` : l'objectif de complétude porte sur la CIM-11, dont l'inventaire validé manque encore.
+
 ## À chaque reprise et avant une livraison
 
 1. Vérifier les têtes GitHub de `main`, de la branche d'intégration et de **toutes les branches et PR**, avec leurs pages suivantes. Le clone local et la seule branche `claude/review-…` ne constituent pas un inventaire distant.

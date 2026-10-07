@@ -1,5 +1,11 @@
 # CLAUDE.md — MEDINA (Atlas des cours de médecine par systèmes)
 
+## Organisation des fragments et des remises — 7 octobre 2026
+
+Nomme toujours une leçon par son **code CIM et son intitulé complet**. Nomme toujours un fragment par **initiale de spécialité - ordre de production - nom littéral**, suivant `organisation/fragments.json` : `C-01-Cardiologie`, par exemple. Les codes du catalogue sont ceux de la CIM-10-GM 2024 ; la cartographie CIM-11 demeure à établir.
+
+Le tableau de bord commun est `organisation/MEDINA_Organisation.html`, publié à https://vialdjoukang-spec.github.io/Medina/organisation.html. Chaque fragment dispose de sources complètes pour ses cours existants dans `livraisons/Livraison Codex/<libellé>/`. Dépose tes sources corrigées et ton rapport dans `livraisons/Livraison Claude/<libellé>/`, sur ta branche, puis ouvre une PR. Lis `docs/collaboration/DELIVERY_PROTOCOL.md` pour la remise, les contrôles et l'injection. Le dépôt entier reste accessible ; aucune nouvelle confirmation de publication n'est demandée au propriétaire.
+
 ## Consigne prioritaire de Vial — 7 octobre 2026
 
 **Réception des livraisons.** Lire aussi `AGENTS.md` et `docs/collaboration/DELIVERIES_LATEST.md`. À chaque reprise et avant publication, recenser toutes les branches et PR avec `tools/collaboration_sync.py`. Les anciens rapports et les branches sans PR sont recevables. Toute livraison reçoit un accusé sous `docs/collaboration/receipts/`, avec les sources, les fragments, le commit d'intégration et les réserves. Ne pas conclure « aucun rapport reçu » depuis la seule passation ou depuis les références du clone local.

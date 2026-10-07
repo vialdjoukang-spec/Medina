@@ -15,6 +15,11 @@ group.add_argument('--all-fragments',action='store_true')
 args=parser.parse_args()
 cfg=json.load(open(ROOT+'/chapters.json'))
 fragments=json.load(open(ROOT+'/fragments.json')) if args.fragment or args.all_fragments else []
+if fragments:
+    public_names={f['id']:f for f in json.load(open(ROOT+'/organisation/fragments.json'))}
+    for f in fragments:
+        f['nom']=public_names[f['id']]['label']
+        f['production_order']=public_names[f['id']]['order']
 explicit={x:f['id'] for f in fragments for x in f['rattachements'] if re.fullmatch(r'[A-Z][0-9]{2}',x)}
 
 def fragment_chapters(fragment,entries):

@@ -1,51 +1,77 @@
 # MEDINA — dernière passation
 
-Mise à jour : 7 octobre 2026. Lire [l’inventaire des livraisons](DELIVERIES_LATEST.md) avant de reprendre un travail. Il recense les branches et PR ; les [reçus](receipts/) conservent les preuves de réception et d’intégration.
+Mise à jour : 7 octobre 2026. Le [tableau de bord commun](../../organisation/MEDINA_Organisation.html) fixe les noms, catégories et rangs théoriques. Sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) se reconstruit depuis les sources à chaque publication.
 
-## Livraisons de Claude retrouvées et intégrées
+## Dossiers de livraison
 
-| Livraison | Sources et destination | État |
-| --- | --- | --- |
-| Alpha du 26 septembre — PR #1 | 435 fichiers ; cours, réécritures, glossaire, interface et audits historiques. | Déjà fusionnée le 27 septembre ; présence confirmée dans la branche actuelle. |
-| I48 et CS — PR #8 | Quatre fichiers de cours I48 et les deux sources CS cardiovasculaires ; fragment S01. | Rapports ouverts, sources intégrées et contrôlées au commit `f5c83957a239a27b836b838063e97835cd80f4d9`. |
+Les 22 fragments ont un dossier sous [Livraison Codex](../../livraisons/Livraison%20Codex/) et [Livraison Claude](../../livraisons/Livraison%20Claude/). Les 30 cours intégrés sont remis avec leurs 251 sources HTML et JSON ; les fragments sans cours sont explicitement à produire.
 
-La PR #8 est fusionnée. Les deux rapports originaux restent dans `reviews/`, à leur emplacement initial. Trois passages I48 ont été adaptés après contre-lecture des sources et une formulation jugulaire a été nuancée. Voir [l’arbitrage d’intégration](reviews/2026-10-07/I48_CS/INTEGRATION_CODEX.md) et [le reçu détaillé](receipts/CLAUDE_I48_CS_2026-10-07.json).
+Lire [le protocole](DELIVERY_PROTOCOL.md). Claude dispose des sources et dépose sa copie corrigée, son rapport et son manifeste sur sa branche. Codex contrôle les empreintes, le routage, le contenu, la reconstruction et les interactions avant de publier. Aucune livraison ancienne n’est ignorée à cause de son emplacement.
 
-La branche de Claude conserve ses commits. Claude peut déposer le prochain lot sur cette branche ou une nouvelle branche. La réception examine tous les chemins publiés, y compris les rapports historiques et les branches sans PR.
+## Livraisons Claude reçues
 
-## Lot global toujours à relire
-
-Base de la mission initiale : `bb134857e12245f46b4f329c1334ebd57251fcff`. Les enrichissements comprennent 30 cours dans cinq fragments et la Sémiologie CS cardiovasculaire. Les corrections I48/CS ci-dessus doivent être prises en compte pour éviter de réintroduire une ancienne formulation.
-
-| Fragment | Cours |
+| Livraison | État |
 | --- | --- |
-| S01 — Cardiovasculaire | I00, I10, I21, I25, I30, I33, I34, I35, I40, I42, I44, I46, I47, I48, I49, I50, I70, I71, I80, Q21 |
-| S02 — Respiratoire | J45, J44, J18, I26 |
-| S07 — Immunitaire | D84, M32, M31, T78 |
-| S10 — Locomoteur | M06 |
-| T1 — Agents et thérapeutique | A41 |
+| Alpha, PR #1 | Fusionnée ; cours, glossaire et interface historiques conservés. |
+| Relecture fibrillation atriale et CS, PR #8 | Intégrée avec contrelecture ; [reçu](receipts/CLAUDE_I48_CS_2026-10-07.json). |
+| Audit global, lot 1, PR #9 | Huit cours, 17 sources ; intégré au commit `7fa06329b3369f54ef0831ae9f6cdf90fce5f605`, 583 contrôles navigateur réussis ; [reçu](receipts/CLAUDE_GLOBAL_LOT1_2026-10-07.json). |
 
-[Mission globale](CLAUDE_AUDIT_GLOBAL_2026-10-07.md), [manifeste de la base](CLAUDE_REVIEW_SCOPE_2026-10-07.json), [sources communes](SOURCES_CANONIQUES.md) et [procédure de remise](reviews/README.md). La mission porte sur les quatre onglets, toutes les fenêtres, les figures, les quiz, les glossaires et les textes CS. Français professionnel, précis et fluide ; conserver les notions utiles.
+Les originaux du lot 1 sont conservés dans les dossiers Claude des cinq fragments concernés et dans [ses archives](../../livraisons/Livraison%20Claude/Archives/2026-10-07-GLOBAL_LOT1/). Les adaptations médicales et les rectifications de son journal sont consignées dans la [contrelecture](reviews/2026-10-07/GLOBAL_LOT1/INTEGRATION_CODEX.md). La branche Claude conserve ses commits.
 
-## Contrôles exécutés sur l’intégration I48/CS
+## Cours disponibles à relire intégralement
 
-- Reconstruction des 22 fragments et de MEDINA global ; audit des fragments réussi, JavaScript valide et build reproductible.
-- Audit statique I48/I70/I71/I80 et audit sciences des 30 cours réussis.
-- 569 contrôles navigateur sciences/CS et quatre vérifications ciblées des textes I48 dans S01 : réussis, aucune erreur JavaScript.
+La mission demeure une relecture de l’ensemble : quatre onglets, fenêtres, figures, quiz, glossaires et Sémiologie CS. Employer un français médical professionnel, fluide et concis. Une correction ciblée ne valide pas toutes les sections du cours.
 
-Les [preuves de contrôle](../../audits/CLAUDE_INTEGRATION_2026-10-07/) se rapportent à cette intégration. Elles ne constituent pas un audit médical intégral.
+### C-01-Cardiologie
+
+- I50 — Insuffisance cardiaque
+- I21 — Syndromes coronariens aigus et infarctus du myocarde
+- I25 — Syndromes coronariens chroniques et angor
+- I48 — Fibrillation et flutter auriculaires
+- I10 — Hypertension artérielle
+- I30 — Péricardites, épanchement péricardique, tamponnade et constriction
+- I33 — Endocardite infectieuse
+- I35 — Valvulopathies aortiques
+- I34 — Valvulopathies mitrales, tricuspides et pulmonaires
+- I00 — Rhumatisme articulaire aigu
+- I40 — Myocardites
+- I42 — Cardiomyopathies
+- I44 — Troubles de la conduction et bradycardies
+- I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires
+- I49 — Extrasystoles et autres arythmies
+- I46 — Arrêt cardiaque
+- Q21 — Cardiopathies congénitales de l’adulte
+- I71 — Anévrismes et dissections artérielles
+- I80 — Thrombose veineuse profonde et thromboses veineuses
+- I70 — Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë
+
+### P-02-Pneumologie
+
+- J45 — Asthme
+- J44 — Bronchopneumopathie chronique obstructive
+- J18 — Pneumonies de l’adulte
+- I26 — Embolie pulmonaire aiguë
+
+### I-03-Infectiologie
+
+- A41 — Sepsis et choc septique de l’adulte
+
+### I-13-Immunologie et allergologie
+
+- D84 — Déficits immunitaires
+- M32 — Lupus érythémateux systémique
+- T78 — Anaphylaxie et allergies
+- M31 — Vascularites systémiques
+
+### R-14-Rhumatologie et orthopédie
+
+- M06 — Polyarthrite rhumatoïde
 
 ## Travail restant
 
-| Travail | État réel |
-| --- | --- |
-| Relecture intégrale des 30 cours et CS | À poursuivre ; seuls les lots ciblés reçus sont crédités. |
-| R08 — fenêtre des épisodes auriculaires rapides | Réserve ouverte. |
-| R11 — classe de l’évaluation du rythme dès 65 ans | Source primaire relue ; classe I C confirmée pendant la contre-lecture. |
-| C10 — complément vasculaire de CS | Réserve ouverte. |
-| Complétude CIM-11 des cinq fragments | Non établie ; catalogue local historique CIM-10-GM 2024. |
-| PR #6 — accueil et QCM | Travail Codex distinct, encore en attente d’intégration. |
+- Poursuivre la relecture intégrale des 30 cours et de CS ; I48 — Fibrillation et flutter auriculaires constitue le prochain cours annoncé par Claude.
+- Maintenir les réserves ouvertes de la PR #8, notamment la fenêtre des épisodes auriculaires rapides et le complément vasculaire de CS.
+- Constituer l’inventaire CIM-11 par fragment : aucun fragment n’est actuellement certifié complet. Le catalogue local historique contient 1 636 catégories CIM-10-GM 2024.
+- PR #6 : accueil et QCM, travail Codex distinct encore en attente.
 
-Lire [la règle CIM-11](../COMPLETUDE_CIM11.md) et [le relevé de couverture](../../audits/COMPLETUDE_2026-10-07/README.md). Aucun fragment n’est déclaré complet.
-
-Après chaque lot : publier les sources et les contrôles, enregistrer réception, intégration et réserves dans un reçu, actualiser l’inventaire et cette passation, puis vérifier les liens GitHub. Le déploiement du site depuis `main` est contrôlé séparément.
+Avant chaque reprise, lire [l’inventaire des branches et PR](DELIVERIES_LATEST.md), les nouveaux dossiers Claude et les [reçus](receipts/). Après publication, vérifier séparément le déploiement du site.

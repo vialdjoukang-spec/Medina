@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-07",
+  "fragment_count": 22,
+  "catalogue_categories": 1636,
+  "integrated_courses": 30,
+  "codex_source_files": 251,
+  "checks": [
+    {
+      "command": "python3 tests/audit_fragments.py",
+      "result": "22 fragments ; JavaScript valide ; construction reproductible",
+      "passed": true
+    },
+    {
+      "command": "python3 tests/audit_sciences.py",
+      "result": "30 cours ; 140 disciplines et 145 figures",
+      "passed": true
+    },
+    {
+      "command": "node tests/verify_sciences_cs.cjs",
+      "result": "583 contrôles ; aucune erreur JavaScript",
+      "passed": true
+    },
+    {
+      "command": "node tests/verify_organisation.cjs",
+      "result": "432 contrôles complets et 123 contrôles ciblés sur la version finale ; certains contrôles sont communs",
+      "passed": true
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p test_livraison.py",
+      "result": "12 tests du dépôt et de l’injection",
+      "passed": true
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p test_collaboration_sync.py",
+      "result": "16 tests du suivi et du routage",
+      "passed": true
+    }
+  ],
+  "medical_completeness_cim11": false,
+  "classification": "Catalogue historique MEDINA, CIM-10-GM 2024"
+}

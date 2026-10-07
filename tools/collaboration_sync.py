@@ -253,7 +253,21 @@ def chapter_routes(code, catalog):
 
 def route_file(path, catalog):
     item = {"path": path, "kind": "unknown", "routes": [], "warnings": []}
-    if path.startswith(("dist/", "_site/", "preview/")) or re.fullmatch(r"MEDINA[^/]*\.(html|json|zip)", path):
+    if path.startswith("livraisons/"):
+        if "/sources/" in path:
+            canonical = path.split("/sources/", 1)[1]
+            source = route_file(canonical, catalog)
+            item.update(kind="delivery_source", routes=source["routes"], canonical_path=canonical,
+                        warnings=source["warnings"] + ["Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction."])
+            if source.get("course"):
+                item["course"] = source["course"]
+        else:
+            item.update(kind="delivery_report", routes=["GLOBAL"])
+    elif path == "organisation/MEDINA_Organisation.html":
+        item.update(kind="derived", routes=["GLOBAL"], warnings=["Tableau reconstruit depuis le registre et tools/build_organisation.py."])
+    elif path.startswith("organisation/"):
+        item.update(kind="consultation_source", routes=["GLOBAL"])
+    elif path.startswith(("dist/", "_site/", "preview/")) or re.fullmatch(r"MEDINA[^/]*\.(html|json|zip)", path):
         item.update(kind="derived", warnings=["Sortie dérivée ; intégrer les sources puis reconstruire."])
     elif path == "modules/ecg.json":
         item.update(kind="derived", routes=["S01"], warnings=["Tracés générés : vérifier modules/ecg.py et régénérer."])

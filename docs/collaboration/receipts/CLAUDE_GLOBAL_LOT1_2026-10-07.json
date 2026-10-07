@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "delivery": "Claude — audit linguistique global, lot 1",
+  "head_sha": "394dc0857f83ea8b74287cf0b3bd468f8bfdfbac",
+  "received_at": "2026-10-07T11:27:03.676950+00:00",
+  "pull_request": "https://github.com/vialdjoukang-spec/Medina/pull/9",
+  "integration_commit": "7fa06329b3369f54ef0831ae9f6cdf90fce5f605",
+  "verification_commit": "7fa06329b3369f54ef0831ae9f6cdf90fce5f605",
+  "chapters": [
+    {
+      "code": "A41",
+      "title": "Sepsis et choc septique de l’adulte",
+      "fragment_label": "I-03-Infectiologie"
+    },
+    {
+      "code": "D84",
+      "title": "Déficits immunitaires",
+      "fragment_label": "I-13-Immunologie et allergologie"
+    },
+    {
+      "code": "I40",
+      "title": "Myocardites",
+      "fragment_label": "C-01-Cardiologie"
+    },
+    {
+      "code": "J44",
+      "title": "Bronchopneumopathie chronique obstructive",
+      "fragment_label": "P-02-Pneumologie"
+    },
+    {
+      "code": "M06",
+      "title": "Polyarthrite rhumatoïde",
+      "fragment_label": "R-14-Rhumatologie et orthopédie"
+    },
+    {
+      "code": "M31",
+      "title": "Vascularites systémiques",
+      "fragment_label": "I-13-Immunologie et allergologie"
+    },
+    {
+      "code": "M32",
+      "title": "Lupus érythémateux systémique",
+      "fragment_label": "I-13-Immunologie et allergologie"
+    },
+    {
+      "code": "T78",
+      "title": "Anaphylaxie et allergies",
+      "fragment_label": "I-13-Immunologie et allergologie"
+    }
+  ],
+  "files": [
+    "chapters/A41/A41_a.html",
+    "chapters/A41/A41_b.html",
+    "chapters/A41/A41_c.html",
+    "chapters/A41/A41_pop_sciences_revision.html",
+    "chapters/D84/D84_c.html",
+    "chapters/D84/D84_pop_sciences_revision.html",
+    "chapters/I40/I40_c.html",
+    "chapters/J44/J44_a.html",
+    "chapters/J44/J44_b.html",
+    "chapters/M06/M06_c.html",
+    "chapters/M06/M06_pop_sciences_revision.html",
+    "chapters/M31/M31_c.html",
+    "chapters/M31/M31_pop_sciences_revision.html",
+    "chapters/M32/M32_c.html",
+    "chapters/M32/M32_pop_sciences_revision.html",
+    "chapters/T78/T78_c.html",
+    "chapters/T78/T78_pop_sciences_revision.html"
+  ],
+  "checks": [
+    {
+      "command": "python3 tests/audit_sciences.py",
+      "passed": true,
+      "result": "30 cours ; 140 disciplines, 145 figures"
+    },
+    {
+      "command": "python3 tests/audit_fragments.py",
+      "passed": true,
+      "result": "22 fragments, JavaScript valide, build reproductible"
+    },
+    {
+      "command": "MEDINA_CHROMIUM_PATH=<Chromium disponible> node tests/verify_sciences_cs.cjs",
+      "passed": true,
+      "result": "583 contrôles, aucune erreur JavaScript"
+    }
+  ],
+  "adaptations": [
+    "A41 — lactate : modalité, rôle du rein dans le métabolisme normal, référence au passage.",
+    "J44 — manifestations possibles et prises en charge spécifiques.",
+    "Test des fenêtres : sélection de la première discipline contenant un renvoi."
+  ],
+  "limits": [
+    "Relecture linguistique partielle de huit cours ; les rapports originaux restent inchangés.",
+    "Cette réception ne certifie ni tous les cours ni la complétude CIM-11."
+  ],
+  "report": "docs/collaboration/reviews/2026-10-07/GLOBAL_LOT1/rapport.md",
+  "counter_review": "docs/collaboration/reviews/2026-10-07/GLOBAL_LOT1/INTEGRATION_CODEX.md"
+}

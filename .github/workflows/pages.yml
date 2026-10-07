@@ -37,6 +37,7 @@ jobs:
           cp dist/MEDINA.html _site/MEDINA.html
           cp dist/fragments/*.html _site/fragments/
           python build_index.py --fragments-dir _site/fragments --output _site/index.html
+          python tools/build_organisation.py --output _site/organisation.html
       - name: Auditer les fragments
         env:
           MEDINA_FRAGMENTS: ${{ github.workspace }}/_site/fragments
