@@ -7,6 +7,10 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
+try:
+    from .production_plan import load_plan
+except ImportError:
+    from production_plan import load_plan
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = "https://github.com/vialdjoukang-spec/Medina"
@@ -35,6 +39,7 @@ def load_data(generated_at):
                 assert e["code"] not in owner, e["code"]
                 owner[e["code"]] = f["id"]
     assert set(owner) == set(by_code), "Catégories non rattachées"
+    production, assignments = load_plan(ROOT, owner)
     fragment_by_id = {f["id"]: f for f in fragments}
     def fragment_url(ident):
         f = fragment_by_id[ident]
@@ -76,9 +81,15 @@ def load_data(generated_at):
                        "delivery_claude_url": REPO + "/tree/main/livraisons/Livraison%20Claude/" + folder,
                        "integrated_count": sum(owner[c["code"]] == ident for c in chapters),
                        "category_count": len(local), "related": related,
+                       "production": assignments.get(ident),
                        "blocks": [{"code": b, "title": t, "categories": sorted(es, key=lambda e: e["order"])}
                                   for (b, t), es in sorted(groups.items())]})
+    workload = {agent: sum(f["category_count"] for f in result
+                          if f["production"] and f["production"]["owner"] == agent)
+                for agent in production["agents"]}
     return {"generated_at": generated_at,
+            "production": {"allocation": production["allocation"], "categories": workload,
+                           "agents": production["agents"], "rules": production["rules"]},
             "catalogue": {"version": "Catalogue historique MEDINA — CIM-10-GM 2024", "total_categories": len(entries),
                           "integrated_courses": len(chapters), "full_cim11": False},
             "links": {"online": ONLINE + "organisation.html", "repository": REPO,

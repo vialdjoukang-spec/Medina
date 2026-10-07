@@ -1,5 +1,12 @@
 # CLAUDE.md — MEDINA (Atlas des cours de médecine par systèmes)
 
+## Répartition des 21 fragments restants — 8 octobre 2026
+
+Lire [FRAGMENTS_RESTANTS.md](docs/collaboration/FRAGMENTS_RESTANTS.md) et [production_plan.json](organisation/production_plan.json) : **11 fragments Claude, 10 Codex**, hors cardiologie. Un seul fragment et **un seul chapitre actifs par agent**, un chapitre par remise ; terminer, relire, contrôler, intégrer et publier ce chapitre avant le suivant. Un blocage ne libère pas le chapitre. Les files respectent les rangs du registre ; la priorité cardiologie en cours et ses missions restent conservées. Aucun fragment n’est déclaré complet par cette attribution. Cette règle de progression prime sur les anciennes consignes de production par lots ou cycles pour les travaux nouveaux.
+
+La session Codex actuelle prend le relais de GPT « work » comme coordinateur prioritaire ; conserver les travaux et commits antérieurs. **Mode multi-agent obligatoire** : Claude et Codex progressent en parallèle, avec plusieurs sous-agents spécialisés dans le seul chapitre actif de chacun et un auteur par fichier. **Claude audite Codex, Codex audite Claude avant injection** ; corriger les réserves bloquantes puis reconstruire et vérifier après injection. La mission précise de Claude est [CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md](docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md).
+
+
 ## Justifier chaque affirmation — priorité actuelle
 
 La consigne de Vial du 7 octobre 2026 s’applique à **toutes les affirmations médicales**, dans tous les onglets, tableaux, figures, quiz, fenêtres, Pareto et glossaires. Expliquer pourquoi le fait est vrai ou la décision utile : mécanisme causal précis, conséquence clinique, limites et source primaire. Pour « anémie : facteur aggravant », détailler la diminution du transport artériel d’oxygène et les compensations cardiovasculaires, en tenant compte du contexte. Pour le sodium ou le potassium, justifier séparément le dosage, l’interprétation et la conduite ; ne pas confondre association pronostique et causalité.

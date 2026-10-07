@@ -1,5 +1,11 @@
 # MEDINA — dernière passation
 
+## Nouvelle organisation — 8 octobre 2026
+
+Les **21 fragments hors C-01-Cardiologie** sont attribués : **11 Claude (780 catégories historiques), 10 Codex (779)**. Lire [FRAGMENTS_RESTANTS.md](FRAGMENTS_RESTANTS.md) et [production_plan.json](../../organisation/production_plan.json). Un chapitre actif par agent ; contrôle, intégration et publication avant le suivant. La cardiologie reste dans sa mission actuelle, sans certification de complétude. Aucun nouveau chapitre n’est déclaré commencé par ce plan. Codex prend le relais de GPT « work » comme coordinateur ; sous-agents en parallèle dans chaque chapitre, puis audit croisé Claude → Codex et Codex → Claude **avant injection**. La [mission de Claude](CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md) est le point d’entrée opérationnel.
+
+Les paragraphes datés du 7 octobre ci-dessous restent un historique ; les états les plus récents de l’intégration et les reçus doivent être relus avant production. Au contrôle du 8 octobre : `main` était à `f149128357ce6cdc7bb9d7c77a837e545facc814`, l’intégration à `648afc8c1274e091968ad3ce70260bba748776bb`. Les têtes des branches et des PR ont été récupérées par Git ; l’API GitHub a renvoyé HTTP 401, donc l’inventaire de leurs métadonnées demeure partiel. Aucune absence de livraison n’est déduite de cette limite.
+
 Mise à jour : 7 octobre 2026. **Lot 4 I48 : intégré, vérifié et publié.** Le contenu contrôlé est publié sur l’intégration et `main` au commit `e856ed16893ba5c4ffc3bd4c9ca78a38ce533de6` ; [ouvrir I48](https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html#/entry/I48). Le déploiement Pages a réussi et le contenu servi a été comparé intégralement au build testé. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
 
 ## Priorité : expliquer pourquoi
