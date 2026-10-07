@@ -158,7 +158,8 @@ try:
             # Les renvois littéraux des cours ne doivent pas ouvrir une route retirée.
             link=re.compile(r'<a\b([^>]*\bhref=["\']#/entry/('+'|'.join(map(re.escape,absent))+r')["\'][^>]*)>(.*?)</a>',re.S)
             s=link.sub(lambda m:'<span'+re.sub(r'\s*href=["\'][^"\']+["\']','',m.group(1))+'>'+m.group(3)+'</span>',s)
-        open(out,'w',encoding='utf-8').write(s)
+        with open(out, 'w', encoding='utf-8') as output:
+            output.write(s)
         if shell_tmp: os.unlink(shell_tmp)
         print('fichier',final_out,'taille',len(s.encode()))
         for c,m in rep.items():
@@ -179,8 +180,10 @@ try:
              'document.getElementById("mdn-tpl").innerHTML=t;window.MDN_READY=true;if(typeof render==="function")render();}catch(e){console.error("MEDINA décompression",e)}})()</script>')
             i=s2.rindex('<script id="medina-glossary"') if '<script id="medina-glossary"' in s2 else s2.rindex('</body>')
             s2=s2[:i]+loader+s2[i:]
-            open(out,'w',encoding='utf-8').write(s2)
+            with open(out, 'w', encoding='utf-8') as output:
+                output.write(s2)
             print('compression :',len(s.encode()),'→',len(s2.encode()),'octets ;',len(tpls),'gabarits')
 finally:
     if shell_tmp and os.path.exists(shell_tmp):
         os.unlink(shell_tmp)
+

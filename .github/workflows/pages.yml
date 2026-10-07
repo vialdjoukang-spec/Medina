@@ -25,6 +25,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: "lts/*"
+      - name: Vérifier les tests Python
+        run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Construire MEDINA et ses fragments
         env:
           MEDINA_OUT: ${{ github.workspace }}/dist

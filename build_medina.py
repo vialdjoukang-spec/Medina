@@ -49,13 +49,19 @@ def wrap_text(txt, svg=False):
 
 TOKEN = re.compile(r'(<!--.*?-->|<[^>]+>)', re.S)
 def wrap_html(src):
-    out = []; stack_button = 0; in_svg = 0; skip = 0; references = 0
+    out = []; stack_button = 0; in_svg = 0; skip = 0; references = 0; anchors = 0; spans = []
     for part in TOKEN.split(src):
         if not part: continue
         if part.startswith('<'):
             low = part.lower()
+            if re.match(r'<span(?:\s|>)', low) and not low.rstrip().endswith('/>'):
+                spans.append(bool(spans and spans[-1]) or bool(re.search(r'\bdata-k\s*=', low)))
+            elif re.match(r'</span\s*>', low) and spans:
+                spans.pop()
             if low.startswith('<ul') and 'data-justification-sources="1"' in low: references += 1
             elif low.startswith('</ul') and references: references -= 1
+            if re.match(r'<a(?:\s|>)', low): anchors += 1
+            elif re.match(r'</a\s*>', low) and anchors: anchors -= 1
             if low.startswith('<button'): stack_button += 1
             elif low.startswith('</button'): stack_button -= 1
             elif low.startswith('<svg'): in_svg += 1
@@ -64,7 +70,7 @@ def wrap_html(src):
             elif low.startswith('</script') or low.startswith('</style'): skip -= 1
             out.append(part)
         else:
-            if skip or stack_button or references: out.append(part)
+            if skip or stack_button or references or anchors or (spans and spans[-1]): out.append(part)
             else: out.append(wrap_text(part, svg=bool(in_svg)))
     return ''.join(out)
 
@@ -77,6 +83,9 @@ def audit(src, name):
     s = re.sub(r'<a[^>]*data-reference-source="1"[^>]*>.*?</a>', ' ', s, flags=re.S)
     s = re.sub(r'<span class="mc-ab"[^>]*>.*?</span>|<tspan class="mc-ab"[^>]*>.*?</tspan>', ' ', s, flags=re.S)
     s = H.unescape(re.sub(r'<[^>]+>', ' ', s))
+    # Dans le texte protégé, chaque terme connu reste couvert aux frontières lexicales,
+    # y compris les constituants de formes séparées par un tiret ou une barre oblique.
+    s = AB_RE.sub(' ', s)
     miss = {}
     for m in CAND.finditer(s):
         w = m.group(1).rstrip('.-/')
@@ -153,7 +162,8 @@ def build(chapters, out):
     tail = body + '<script id="medina-glossary" type="application/json">' + gl.replace('</', '<\\/') + '</script><script>' + js + '</script>'
     i = v6.rindex('</body>')
     v6 = v6[:i] + tail + v6[i:]
-    open(out, 'w').write(v6)
+    with open(out, 'w', encoding='utf-8') as output:
+        output.write(v6)
     return report, len(v6)
 
 COVERS = {}
