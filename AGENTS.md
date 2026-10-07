@@ -1,5 +1,12 @@
 # Collaboration MEDINA
 
+## Répartition des 21 fragments restants — 8 octobre 2026
+
+Lire [FRAGMENTS_RESTANTS.md](docs/collaboration/FRAGMENTS_RESTANTS.md) et [production_plan.json](organisation/production_plan.json) : **11 fragments entiers Claude, 10 fragments entiers Codex**, hors cardiologie. Toutes les catégories restent regroupées sous leur fragment. Chaque catégorie ou chapitre cité porte **code — intitulé (libellé complet du fragment)**, par exemple **J45 — Asthme (P-02-Pneumologie)**. Un seul fragment et **un seul chapitre actifs par agent**, un chapitre par remise ; terminer, relire, contrôler, intégrer et publier ce chapitre avant le suivant. Un blocage ne libère pas le chapitre. Les files respectent les rangs du registre. La nouvelle consigne active la chaîne Codex sur I-03-Infectiologie ; la cardiologie et ses réserves restent conservées dans le backlog. Lire [CODEX_CHAINE_FRAGMENTS.md](docs/collaboration/CODEX_CHAINE_FRAGMENTS.md) pour les vagues de sous-agents et les sentinelles. Aucun fragment n’est déclaré complet par cette attribution. Cette règle de progression prime sur les anciennes consignes de production par lots ou cycles pour les travaux nouveaux.
+
+La session Codex actuelle prend le relais de GPT « work » comme coordinateur prioritaire ; conserver les travaux et commits antérieurs. **Mode multi-agent obligatoire** : Claude et Codex progressent en parallèle, avec plusieurs sous-agents spécialisés dans le seul chapitre actif de chacun et un auteur par fichier. **Claude audite Codex, Codex audite Claude avant injection** ; corriger les réserves bloquantes puis reconstruire et vérifier après injection. La mission précise de Claude est [CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md](docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md).
+
+
 Vial autorise en permanence les publications et intégrations GitHub du projet. Lire `CLAUDE.md`, `docs/collaboration/README.md` et les instructions actuelles avant de modifier le contenu.
 
 ## Nomenclature et livraisons — exigence du 7 octobre 2026

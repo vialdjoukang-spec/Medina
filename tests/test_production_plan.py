@@ -42,6 +42,8 @@ class ProductionPlanTests(unittest.TestCase):
 
     def setUp(self):
         self.plan = copy.deepcopy(self.original)
+        for agent in self.plan["agents"].values():
+            agent["active_chapter"] = None
 
     def chapter(self, code, fragment_id, **changes):
         chapter = {
