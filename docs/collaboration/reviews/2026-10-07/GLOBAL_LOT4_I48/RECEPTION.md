@@ -1,0 +1,9 @@
+# Réception historique — lot 4, I48 — Fibrillation et flutter auriculaires
+
+Reçu le 7 octobre 2026 dans **C-01-Cardiologie**, depuis PR #10, tête `7651825416cc1326a85a28db81ced54a9ee6f617`. La comparaison avec `be6a909059200711493064bd9c96a7437d71c019` montre un commit supplémentaire : douze fichiers ajoutés sous `livraisons/Livraison Claude/C-01-Cardiologie/travail/lot4_I48_justification/` et une ligne de passation. Seuls les douze fichiers sont reçus ici ; la modification de `HANDOFF_LATEST.md` est exclue.
+
+Le périmètre comprend `REPRISE.md`, `fenetres_existantes.json`, les huit inventaires `items_I48_*.json`, `resultats_partiels.json` et `workflow_justification.js`. Chaque fichier a été lu au SHA exact par le connecteur GitHub, conservé sans modification et vérifié par son SHA-1 Git : en-tête `blob <longueur en octets>`, octet NUL, puis contenu UTF-8 exact. Les douze empreintes correspondent aux blobs distants et les fichiers sont en mode `100644`. Les dix JSON sont syntaxiquement valides.
+
+**Statut : point de reprise partiel reçu, historique ; aucune validation médicale ni injection.** `REPRISE.md` déclare 505 affirmations et 27 sorties de fenêtres non vérifiées, comprenant des premières rédactions et des révisions. Ces brouillons restent dans leur dossier de travail. Le script `workflow_justification.js` n'a pas été exécuté ; aucune source canonique ni sortie `dist/` n'a été modifiée ou reconstruite pour cette réception. Les comptes et contrôles médicaux déclarés par Claude ne constituent pas une contrelecture indépendante.
+
+Une livraison ultérieure complète est également repérée dans PR #12, tête `b1f19c3510c1a828650867da033ebe2fbf30142e`. Sa réception et ses contrôles sont traités séparément ; le statut partiel de ce commit historique ne décrit pas à lui seul l'état actuel du travail I48.

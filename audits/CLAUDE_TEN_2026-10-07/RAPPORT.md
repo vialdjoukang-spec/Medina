@@ -70,3 +70,14 @@ La répartition active reste **10 cours présents Codex / 10 Claude**, plus deux
 Les cinq cours sans cette livraison étendue sont I50 — Insuffisance cardiaque ; I21 — Syndromes coronariens aigus et infarctus du myocarde ; I25 — Syndromes coronariens chroniques et angor ; I10 — Hypertension artérielle ; I70 — Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë. Ils disposent déjà de banques ciblées, qui ne remplacent pas la justification et la revue intégrales.
 
 Le Fragment 01 contient toujours 20 cours uniques. Son catalogue historique compte 77 catégories CIM-10-GM réparties en onze rubriques ; les entrées restantes, leurs regroupements et le rattachement incohérent d’A43 — Nocardiose doivent être arbitrés. La complétude CIM-11 n’est pas établie. Anthropic Serif est absente du dépôt et des polices installées ; la préférence est conservée sans prétendre l’avoir appliquée.
+
+
+## Convergence avec la publication médicale et l’organisation du 8 octobre
+
+Contenu contrôlé : `1fe38461d8502fb7984d66b0fe223afecd759889` (arbre `3976a77f33f86fb5d4db5f7de5a1594662313884`). Le main médical `f149128` et la répartition des fragments `20915d9` sont conservés. Les 36 fichiers en conflit sont résolus et documentés dans [CONVERGENCE_MAIN.json](CONVERGENCE_MAIN.json). Les 11 arbitrages I48 et les 15 adaptations complémentaires sont préservés ; quatre formulations ont été harmonisées après contrôle indépendant ciblé. Le comparateur I42 conserve le référentiel ESC 2023 lu, sans ajouter une classe ESC 2026 non consultée.
+
+97 tests unitaires, 31 cours Sciences, 22 fragments avec JavaScript valide et compilation reproductible. Contrôles navigateur : 11 118 sur 14 cours, 931 sur I48 final, 2 400 sur les 204 banques/15 cours, 71 sur S01, 748 sur le tableau des 22 fragments. Aucune erreur JavaScript ; toutes les fenêtres attendues des cours contrôlés sont ouvertes à 1360 et 390 px. Voir [la synthèse de validation](convergence_main/VALIDATION_SUMMARY.json). Les rapports distinguent leurs empreintes d’entrée ; les 14 sources sont inchangées après leur contrôle, puis I48 a été recontrôlé après ses harmonisations.
+
+Les 22 remises Codex contiennent 274 sources vérifiées contre cet arbre, dont 187 pour C-01-Cardiologie : [preuve](convergence_main/EXPORT_PROOF.json). Le lot figé reçu est `2947ba8` ; les travaux plus récents de Claude sont repérés séparément.
+
+Le Fragment 01 reste ouvert : 15/20 cours présents ont reçu l’enrichissement étendu. La relecture exhaustive de toutes les affirmations et l’inventaire CIM-11 restent à terminer. La priorité cardiologie et la répartition 10/10 sont conservées. Les 21 fragments suivants sont attribués 11 à Claude/10 à Codex, avec un seul chapitre actif par agent et audit croisé avant injection ; cette attribution ne les déclare pas commencés.

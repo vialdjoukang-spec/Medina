@@ -266,3 +266,4 @@ async function unit(name,fn) {
     if(report.failures.length)process.exitCode=1;
   }finally{await browser.close();}
 })().catch(error=>{report.result='failed';report.failures.push({name:'Fatal',details:error.stack});report.finished_at=new Date().toISOString();writeReport();console.error(error.stack);process.exitCode=1;});
+

@@ -81,5 +81,7 @@ a('XII',[('XII','douze en chiffres romains')],'Facteur XII de la coagulation','<
 a('Wolff-Chaikoff',[('Wolff-Chaikoff','noms des deux auteurs (Jan Wolff, Israel Lyon Chaikoff, 1948), non une abréviation')],'Effet Wolff-Chaikoff','<p>Blocage transitoire de l’organification de l’iode par la thyroïde après une charge iodée importante ; la glande normale s’en échappe en quelques jours.</p>','i48-thyr')
 a('SSC',[('S','Société'),('S','Suisse de'),('C','Cardiologie')],'Société suisse de cardiologie','<p>Société savante nationale de cardiologie ; coauteur des directives suisses sur l’aptitude à la conduite (2e édition, 2024).</p>')
 a('SSML',[('S','Société'),('S','Suisse de'),('M','Médecine'),('L','Légale')],'Société suisse de médecine légale','<p>Société savante coautrice, avec la Société suisse de cardiologie, des directives sur l’aptitude à la conduite et les maladies cardiovasculaires (2e édition, octobre 2024).</p>')
+
 a('HUG',[('H','Hôpitaux'),('U','Universitaires de'),('G','Genève')],'Hôpitaux universitaires de Genève','<p>Établissement universitaire suisse. Sa pharmacie publie des guides hospitaliers d’administration des médicaments.</p>')
+
 a('DOI',[('D','Digital'),('O','Object'),('I','Identifier')],'Identifiant numérique permanent d’une publication','<p>Identifiant bibliographique qui permet de retrouver une publication, indépendamment de l’adresse de sa page web.</p>')

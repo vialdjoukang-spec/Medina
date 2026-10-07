@@ -85,7 +85,7 @@ let MC_stack=[],MC_trigger=null;
 const MC_KEYS=Object.keys(MC_GLOSS).sort((a,b)=>b.length-a.length).map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
 const MC_RE=new RegExp('(?<![A-Za-zÀ-ÿ0-9₀-₉⁺′])('+MC_KEYS.join('|')+')(?![A-Za-zÀ-ÿ0-9₀-₉⁺′])','g');
 let MC_self=null;
-function MC_wrapNode(root){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.mc-ab,button,script,style,svg,[data-justification-sources]')?NodeFilter.FILTER_REJECT:(MC_RE.test(n.nodeValue)?(MC_RE.lastIndex=0,NodeFilter.FILTER_ACCEPT):(MC_RE.lastIndex=0,NodeFilter.FILTER_REJECT))});
+function MC_wrapNode(root){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.mc-ab,button,a,[data-k],script,style,svg,[data-justification-sources]')?NodeFilter.FILTER_REJECT:(MC_RE.test(n.nodeValue)?(MC_RE.lastIndex=0,NodeFilter.FILTER_ACCEPT):(MC_RE.lastIndex=0,NodeFilter.FILTER_REJECT))});
  const ns=[];while(w.nextNode())ns.push(w.currentNode);ns.forEach(n=>{const s=document.createElement('span');s.innerHTML=MC_wrap(n.nodeValue);n.replaceWith(...s.childNodes)})}
 function MC_wrap(s){return h(s).replace(MC_RE,k=>k===MC_self?k:`<span class="mc-ab" role="button" tabindex="0" data-ab="${k}">${k}</span>`)}
 function MC_open(item,push){MC_self=item.ab||null;const b=MC_DLG.querySelector('.mc-dlg-b'),t=MC_DLG.querySelector('#mc-dlg-t');

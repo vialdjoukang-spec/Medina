@@ -106,14 +106,19 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
     check('CS '+id+' '+width+' : scène et repères',await dialog.isVisible()&&await dialog.locator('[data-cs-select]').count()===count);
     await dialog.locator('[data-cs-select]').last().click();
     check('CS '+id+' '+width+' : explication sélectionnée',await dialog.locator('.cs-point-detail p').count()===2&&await dialog.locator('[aria-pressed="true"]').count()===1);
-    await dialog.locator('[data-cs-view="front"]').click();await pause(page);
-    await dialog.locator('[data-cs-rotate="right"]').click();await pause(page);
+    await dialog.locator('[data-cs-view="front"]').click();
+    await page.waitForFunction(el=>el.dataset.csYaw==='0.000',await canvas.elementHandle());
+    await dialog.locator('[data-cs-rotate="right"]').click();
+    await page.waitForFunction(el=>Number(el.dataset.csYaw)>0,await canvas.elementHandle());
     check('CS '+id+' '+width+' : rotation effective',Number(await canvas.getAttribute('data-cs-yaw'))>0);
-    await canvas.focus();await page.keyboard.press('ArrowUp');await pause(page);
+    await canvas.focus();await page.keyboard.press('ArrowUp');
+    await page.waitForFunction(el=>Number(el.dataset.csPitch)<0,await canvas.elementHandle());
     check('CS '+id+' '+width+' : clavier 3D',Number(await canvas.getAttribute('data-cs-pitch'))<0);
-    await dialog.locator('input[type="range"]').evaluate(e=>{e.value='125';e.dispatchEvent(new Event('input',{bubbles:true}))});await pause(page);
+    await dialog.locator('input[type="range"]').evaluate(e=>{e.value='125';e.dispatchEvent(new Event('input',{bubbles:true}))});
+    await page.waitForFunction(el=>el.dataset.csZoom==='1.25',await canvas.elementHandle());
     check('CS '+id+' '+width+' : zoom',await canvas.getAttribute('data-cs-zoom')==='1.25');
-    await dialog.locator('[data-cs-reset]').click();await pause(page);
+    await dialog.locator('[data-cs-reset]').click();
+    await page.waitForFunction(el=>el.dataset.csZoom==='1.00'&&el.dataset.csYaw==='0.000',await canvas.elementHandle());
     check('CS '+id+' '+width+' : réinitialisation',await canvas.getAttribute('data-cs-zoom')==='1.00'&&await canvas.getAttribute('data-cs-yaw')==='0.000');
     if(id==='thorax'&&width===1360){
      const rect=await canvas.boundingBox();await page.mouse.move(rect.x+rect.width/2,rect.y+rect.height/2);await page.mouse.down();await page.mouse.move(rect.x+rect.width/2+55,rect.y+rect.height/2+12,{steps:5});await page.mouse.up();await pause(page);

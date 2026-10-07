@@ -1,0 +1,9 @@
+# Réception — outillage Claude pour les quatorze cours restants
+
+Reçu le 7 octobre 2026 depuis **PR #12**, branche `claude/loving-shannon-spwrhc`, tête `0755710217fa2a2f80e8c6bccae8644cc51f1707`. Cette tête contient la livraison I48 `b1f19c3510c1a828650867da033ebe2fbf30142e` déjà injectée, puis deux commits supplémentaires : `dfc83f51e8bd9367cbbbceee479ea14346bfe4d8` et `0755710217fa2a2f80e8c6bccae8644cc51f1707`.
+
+Le diff exact entre ces deux têtes a été lu : **20 fichiers**, soit quatre consignes et suivi Markdown, trois scripts Python, une règle `.gitignore` et douze suppressions de copies Sciences historiques du lot 3 dans le dossier Claude. Il ne modifie aucune source canonique, aucune copie livrée des huit fichiers I48, aucun glossaire, aucun moteur et aucune sortie construite. Les sept nouveaux fichiers sont conservés dans [original/](original/) avec les empreintes Git distantes vérifiées dans le [reçu](../../../receipts/CLAUDE_PIPELINE_0755710_2026-10-07.json). Les suppressions de copies historiques et la règle `.gitignore` ne sont pas appliquées.
+
+**Statut : consignes et scripts reçus, archivés, non exécutés ; aucune nouvelle injection médicale.** Les chemins relatifs des scripts archivés restent ceux de leur emplacement original : cette archive sert de preuve et de reprise, pas de programme directement utilisable. `AVANCEMENT.md` déclare huit autres cours en cours de production ; le diff ne livre aucune source corrigée ni rapport final pour eux. Les quatorze cours restants de Claude ne sont donc pas marqués relus ou validés.
+
+La mention de Claude « fait » pour I48 se rapporte à sa propre livraison `b1f19c3`. La réception des huit sources, les adaptations Codex et les vérifications du produit reconstruit sont tracées séparément. Une ascendance Git, un outillage préparé ou une compilation réussie ne certifie pas l’examen indépendant de toutes les affirmations ni la complétude CIM-11.

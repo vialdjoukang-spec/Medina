@@ -84,16 +84,6 @@ def main():
             errors.append(f"fragment manquant : {path}")
             continue
         source = expanded_html(path)
-        categories = re.search(r'<script id="medina-category-organisation-data"[^>]*>(.*?)</script>', source, re.S)
-        if not categories:
-            errors.append(f"{fragment['id']} données de catégories absentes")
-        else:
-            try:
-                organisation = json.loads(categories.group(1))
-                if organisation.get('fragment', {}).get('id') != fragment['id']:
-                    errors.append(f"{fragment['id']} données de catégories d'un autre fragment")
-            except (ValueError, AttributeError):
-                errors.append(f"{fragment['id']} données de catégories invalides")
         attached = set(fragment["rattachements"])
         payload = re.search(r'<script id="medora-data" type="application/json">(.*?)</script>', source, re.S)
         data = json.loads(payload.group(1))
@@ -102,6 +92,22 @@ def main():
         embedded_entries = {entry["code"] for entry in data["entries"]}
         if embedded_entries != allowed_entries:
             errors.append(f"{fragment['id']} périmètre CIM incorrect")
+        organisation_payload = re.search(r'<script id="medina-category-organisation-data" type="application/json">(.*?)</script>', source, re.S)
+        if not organisation_payload:
+            errors.append(f"{fragment['id']} organisation des catégories absente")
+        else:
+            try:
+                organisation = json.loads(organisation_payload.group(1))
+                if organisation.get('fragment', {}).get('id') != fragment['id']:
+                    errors.append(f"{fragment['id']} données de catégories d'un autre fragment")
+                organised_codes = [variant["code"] for block in organisation["blocks"]
+                                   for lesson in block["lessons"] for variant in lesson["variants"]]
+                if set(organised_codes) != embedded_entries or len(organised_codes) != len(set(organised_codes)):
+                    errors.append(f"{fragment['id']} organisation CIM incomplète ou dupliquée")
+            except (ValueError, AttributeError, KeyError, TypeError):
+                errors.append(f"{fragment['id']} données de catégories invalides")
+        if 'id="medina-category-organisation-runtime"' not in source:
+            errors.append(f"{fragment['id']} navigation des catégories absente")
         allowed_systems = {entry.get("system") for entry in entries if entry["code"] in allowed_entries}
         if set(data["fragment"]["systems"]) != allowed_systems:
             errors.append(f"{fragment['id']} contient un système étranger")

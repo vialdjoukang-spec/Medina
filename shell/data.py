@@ -6,14 +6,16 @@ WAVES=[(1,"Cœur et hémodynamique",56),(2,"Poumon, plèvre et ventilation",64),
 (15,"Œil · ORL · Bouche et maxillaires",136),(16,"Traumatismes · Toxiques et intoxications · Circonstances externes",153),
 (17,"Présentation clinique · Prévention et parcours · Codes additionnels",135)]
 PRIO={1,2,3,4,5,6,7,8,9,11,12}
-DONE_SYS={1}
+# La complétude CIM-11 et la justification systématique ne sont pas établies.
+# Les anciens statuts d'achèvement ne certifient pas les exigences du 7 octobre.
+DONE_SYS=set()
 RENVOIS={1:[("A43","Nocardiose","traitée en infectiologie (vague 7)"),("I51","Complications et maladies cardiaques mal définies","renvois vers les cours I50, I42, I21"),
 ("I52","Atteintes cardiaques au cours de maladies classées ailleurs","renvois vers les cours concernés"),("R00","Anomalies du rythme cardiaque (symptôme)","sémiologie, vague 17"),
 ("R01","Souffles et autres bruits cardiaques","sémiologie, vague 17"),("R02","Gangrène, non classée ailleurs","sémiologie, vague 17"),("R03","Valeur tensionnelle anormale sans diagnostic","sémiologie, vague 17")]}
 # Un chapitre affiché dans le produit n'est pas nécessairement terminé (apport Alpha, 26.09.2026).
 # Cette liste seule commande l'insigne « 100 % rédigé » d'un chapitre ; n'y ajouter un code qu'après
 # audit indépendant ≥ 20/20 (ou réserve justifiée ≥ 19/20) et test_v7.py à OK (PROMPT_MEDINA.md § 17).
-DONE_COURSES={'I50','I21','I25','I48','I10','I30','I33','I35','I34','I00','I40','I42','I44','I47','I49','I46','Q21'}
+DONE_COURSES=set()
 NOTES={"I00":"19,5/20","I40":"19,25/20",
 "J45":"auto-audit ; audit indépendant à faire",
 "J44":"fusion Claude + Alpha, vérifié en texte intégral (80 points) ; audit indépendant /20 à faire",
