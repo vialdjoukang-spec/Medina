@@ -7,7 +7,7 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 | I48 — Fibrillation et flutter auriculaires | fait (lot 4) | fait | fait | b1f19c3 |
 | I30 — Péricardites, épanchement péricardique, tamponnade et constriction | en cours | | | |
 | I33 — Endocardite infectieuse | en cours | | | |
-| I35 — Valvulopathies aortiques | en cours | | | |
+| I35 — Valvulopathies aortiques | fait | fait (145/146 compléments, 10 fenêtres corrigées) | fait : test statique OK, 26 480 → 34 279 mots | voir journal |
 | I34 — Valvulopathies mitrales, tricuspides et pulmonaires | en cours | | | |
 | I00 — Rhumatisme articulaire aigu | en cours | | | |
 | I40 — Myocardites | en cours | | | |
