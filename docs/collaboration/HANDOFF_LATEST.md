@@ -1,77 +1,37 @@
 # MEDINA — dernière passation
 
-Mise à jour : 7 octobre 2026. Le [tableau de bord commun](../../organisation/MEDINA_Organisation.html) fixe les noms, catégories et rangs théoriques. Sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) se reconstruit depuis les sources à chaque publication.
+Mise à jour : 7 octobre 2026. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
 
-## Dossiers de livraison
+## Priorité : expliquer pourquoi
 
-Les 22 fragments ont un dossier sous [Livraison Codex](../../livraisons/Livraison%20Codex/) et [Livraison Claude](../../livraisons/Livraison%20Claude/). Les 30 cours intégrés sont remis avec leurs 251 sources HTML et JSON ; les fragments sans cours sont explicitement à produire.
+La règle de Vial vaut pour chaque affirmation médicale et chaque décision, dans les quatre onglets et tous leurs contenus. Les ajouts ciblés de ce lot comprennent **197 fenêtres physiopathologiques sur 15 cours**, avec 197 cibles explicites, conséquences cliniques, limites et sources. Le bilan initial de I50 — Insuffisance cardiaque dispose notamment d’explications distinctes pour anémie, sodium et potassium. L’injection se fait au moment de la compilation, sans réécriture silencieuse des HTML canoniques.
 
-Lire [le protocole](DELIVERY_PROTOCOL.md). Claude dispose des sources et dépose sa copie corrigée, son rapport et son manifeste sur sa branche. Codex contrôle les empreintes, le routage, le contenu, la reconstruction et les interactions avant de publier. Aucune livraison ancienne n’est ignorée à cause de son emplacement.
+**La relecture exhaustive de toutes les affirmations n’est pas terminée.** Le [suivi par cours](MECHANISMS_PLAN.json) garde les 30 cours de départ en `pending_exhaustive_review`. La répartition retenue est 15 Codex / 15 Claude ; la [mission Claude](MECHANISMS_CLAUDE.md) précise ses cours, la revue attendue et la remise. [Sa consigne commune reçue](MISSION_JUSTIFICATION_2026-10-07.md) est alignée sur ce partage ; sa proposition originale est archivée intacte.
 
-## Livraisons Claude reçues
+## Nouveau cours regroupé
+
+**J40 — Bronchite** réunit J20, J40, J41 et J42 dans un cours : aiguë, chronique simple et mucopurulente, avec leurs limites diagnostiques. La bronchite chronique n’est pas assimilée automatiquement à la BPCO. Les quatre onglets, 40 fenêtres, cinq unités de Sciences, quiz et Pareto sont accessibles dans P-02-Pneumologie. Les variantes restent consultables dans les catégories ; la recherche n’affiche qu’une carte Bronchite. Le total est désormais **31 cours intégrés**.
+
+## Livraisons Claude reçues et injectées
 
 | Livraison | État |
 | --- | --- |
-| Alpha, PR #1 | Fusionnée ; cours, glossaire et interface historiques conservés. |
-| Relecture fibrillation atriale et CS, PR #8 | Intégrée avec contrelecture ; [reçu](receipts/CLAUDE_I48_CS_2026-10-07.json). |
-| Audit global, lot 1, PR #9 | Huit cours, 17 sources ; intégré au commit `7fa06329b3369f54ef0831ae9f6cdf90fce5f605`, 583 contrôles navigateur réussis ; [reçu](receipts/CLAUDE_GLOBAL_LOT1_2026-10-07.json). |
+| Alpha, PR #1 | Fusion historique conservée. |
+| Relecture FA et CS, PR #8 | Intégrée ; reçu historique conservé. |
+| Audit global lot 1, PR #9 | Huit cours / 17 sources intégrés auparavant ; reçu conservé. |
+| PR #10, lots 2 et 3, tête `be6a909059200711493064bd9c96a7437d71c019` | 27 sources injectées après contrôle des empreintes : sept sources I48 et vingt fichiers Sciences. Original et rapports Claude conservés sous Livraison Claude. Contrelecture I48 et deux arbitrages I10/I42 documentés. |
+| PR #11, mission, tête `45d34a9bd3034a141239d9cefc774804c10163fb` | Consigne reçue ; proposition initiale archivée, répartition publiée alignée sur le suivi. |
 
-Les originaux du lot 1 sont conservés dans les dossiers Claude des cinq fragments concernés et dans [ses archives](../../livraisons/Livraison%20Claude/Archives/2026-10-07-GLOBAL_LOT1/). Les adaptations médicales et les rectifications de son journal sont consignées dans la [contrelecture](reviews/2026-10-07/GLOBAL_LOT1/INTEGRATION_CODEX.md). La branche Claude conserve ses commits.
+Les [reçus](receipts/) distinguent réception, injection, vérification et commit publié. Les réserves médicales héritées restent ouvertes, notamment certains schémas J44/J18 et les points I48 non couverts par les arbitrages documentés. Une relecture de prose ne certifie pas tout le cours.
 
-## Cours disponibles à relire intégralement
+## Dossiers et accès permanents
 
-La mission demeure une relecture de l’ensemble : quatre onglets, fenêtres, figures, quiz, glossaires et Sémiologie CS. Employer un français médical professionnel, fluide et concis. Une correction ciblée ne valide pas toutes les sections du cours.
+Le dépôt entier est partagé par GitHub. Après publication, les 22 dossiers [Livraison Codex](../../livraisons/Livraison%20Codex/) contiennent les sources complètes, banques incluses, et un manifeste portant le commit réel de la remise. Déposer les corrections sous [Livraison Claude](../../livraisons/Livraison%20Claude/) sur sa branche, conformément au [protocole](DELIVERY_PROTOCOL.md). Codex examine les différences, contrôle les empreintes puis injecte dans les fichiers canoniques avant reconstruction. L’autorisation permanente de Vial couvre ces contributions et publications ; elle ne remplace pas la connexion GitHub effective et ne justifie aucun transfert de secrets.
 
-### C-01-Cardiologie
+## Contrôles et limites
 
-- I50 — Insuffisance cardiaque
-- I21 — Syndromes coronariens aigus et infarctus du myocarde
-- I25 — Syndromes coronariens chroniques et angor
-- I48 — Fibrillation et flutter auriculaires
-- I10 — Hypertension artérielle
-- I30 — Péricardites, épanchement péricardique, tamponnade et constriction
-- I33 — Endocardite infectieuse
-- I35 — Valvulopathies aortiques
-- I34 — Valvulopathies mitrales, tricuspides et pulmonaires
-- I00 — Rhumatisme articulaire aigu
-- I40 — Myocardites
-- I42 — Cardiomyopathies
-- I44 — Troubles de la conduction et bradycardies
-- I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires
-- I49 — Extrasystoles et autres arythmies
-- I46 — Arrêt cardiaque
-- Q21 — Cardiopathies congénitales de l’adulte
-- I71 — Anévrismes et dissections artérielles
-- I80 — Thrombose veineuse profonde et thromboses veineuses
-- I70 — Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë
+Les rapports de ce lot se trouvent dans [audits/MECANISMES_2026-10-07](../../audits/MECANISMES_2026-10-07/). Ils distinguent les fenêtres ciblées compilées, les vérifications navigateur et les contrelectures médicales partielles. Le workspace a été restauré à une ancienne version durant le lot : certaines banques ont été régénérées, puis les contrôles ont été refaits. Les résultats perdus ne sont pas présentés comme validation des fichiers nouveaux.
 
-### P-02-Pneumologie
+Le catalogue reste **CIM-10-GM 2024**. La complétude **CIM-11 n’est pas établie** : ne déclarer aucun système achevé sans inventaire validé de toutes les catégories et sous-catégories demandées. PR #6 accueil/QCM reste une branche distincte à traiter séparément.
 
-- J45 — Asthme
-- J44 — Bronchopneumopathie chronique obstructive
-- J18 — Pneumonies de l’adulte
-- I26 — Embolie pulmonaire aiguë
-
-### I-03-Infectiologie
-
-- A41 — Sepsis et choc septique de l’adulte
-
-### I-13-Immunologie et allergologie
-
-- D84 — Déficits immunitaires
-- M32 — Lupus érythémateux systémique
-- T78 — Anaphylaxie et allergies
-- M31 — Vascularites systémiques
-
-### R-14-Rhumatologie et orthopédie
-
-- M06 — Polyarthrite rhumatoïde
-
-## Travail restant
-
-- Poursuivre la relecture intégrale des 30 cours et de CS ; I48 — Fibrillation et flutter auriculaires constitue le prochain cours annoncé par Claude.
-- Maintenir les réserves ouvertes de la PR #8, notamment la fenêtre des épisodes auriculaires rapides et le complément vasculaire de CS.
-- Constituer l’inventaire CIM-11 par fragment : aucun fragment n’est actuellement certifié complet. Le catalogue local historique contient 1 636 catégories CIM-10-GM 2024.
-- PR #6 : accueil et QCM, travail Codex distinct encore en attente.
-
-Avant chaque reprise, lire [l’inventaire des branches et PR](DELIVERIES_LATEST.md), les nouveaux dossiers Claude et les [reçus](receipts/). Après publication, vérifier séparément le déploiement du site.
+À chaque reprise et avant publication, lire [les livraisons repérées](DELIVERIES_LATEST.md), les branches/PR et leurs nouvelles pages, les dossiers Claude et les reçus. La présence d’un manifeste facilite le suivi ; son absence ne justifie pas d’ignorer une livraison ancienne. Vérifier séparément le déploiement du site.

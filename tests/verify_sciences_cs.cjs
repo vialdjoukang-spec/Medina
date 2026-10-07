@@ -2,16 +2,22 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
+const crypto = require('node:crypto');
 const {pathToFileURL} = require('node:url');
 const {loadPlaywright, browserOptions} = require('./browser_runtime.cjs');
 const {chromium} = loadPlaywright();
 const out = path.resolve(process.env.MEDINA_QA_OUT || 'audits/SCIENCES_CS_2026-10-07');
+const directory = path.resolve(process.env.MEDINA_FRAGMENTS || 'dist/fragments');
 const manifest = JSON.parse(fs.readFileSync('fragments.json','utf8')).filter(f=>f.surface==='courses-v1');
-const checks=[], errors=[], files={};
+const chapterNames = new Map(JSON.parse(fs.readFileSync('chapters.json','utf8')).filter(c=>c.integrated).map(c=>[c.code,c.title]));
+const expectedCourses = [...chapterNames.keys()].sort();
+const testedCourses = new Set();
+const checks=[], errors=[], files={}, snapshots={};
+const digest=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 fs.mkdirSync(path.join(out,'captures'),{recursive:true});
 const check=(name,ok,detail)=>{assert.ok(ok,name+(detail?': '+JSON.stringify(detail):''));checks.push(name)};
 const pause=page=>page.waitForTimeout(100);
-async function ready(page){await page.waitForFunction(()=>window.MDN_READY===true);await pause(page)}
+async function ready(page){await page.waitForFunction(()=>window.MDN_READY===true&&!!window.MEDINA_CATEGORY_ORGANISATION);await pause(page)}
 async function route(page,hash){await page.evaluate(h=>location.hash=h,hash);await pause(page)}
 async function overflow(page,name){const sizes=await page.evaluate(()=>({window:innerWidth,document:document.documentElement.scrollWidth}));check(name,sizes.document<=sizes.window+1,sizes)}
 async function shot(page,name){await page.screenshot({path:path.join(out,'captures',name+'.jpg'),type:'jpeg',quality:85})}
@@ -22,45 +28,52 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
   const context=await browser.newContext({viewport:{width:1360,height:900},reducedMotion:'reduce'});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   for(const fragment of manifest){
-   const file=path.resolve('dist/fragments/MEDINA_'+fragment.id+'_'+fragment.slug+'.html');files[fragment.id]=file;
+   const file=path.join(directory,'MEDINA_'+fragment.id+'_'+fragment.slug+'.html');files[fragment.id]=file;snapshots[fragment.id]=digest(file);
    await page.goto(pathToFileURL(file).href);await ready(page);
-   const codes=fragment.categories.flatMap(g=>g.chapters);
-   check(fragment.id+' : cours uniques de l’accueil',await page.locator('[data-s01-course]').count()===codes.length);
-   check(fragment.id+' : catégories complètes',await page.locator('.s01-category').count()===fragment.categories.length);
+   const organisation=await page.evaluate(()=>window.MEDINA_CATEGORY_ORGANISATION);
+   check(fragment.id+' : organisation catégorielle disponible',organisation?.fragment?.id===fragment.id);
+   const codes=[...new Set(organisation.blocks.flatMap(block=>block.lessons)
+    .filter(lesson=>lesson.integrated&&lesson.source_fragment_id===fragment.id).map(lesson=>lesson.code))];
+   check(fragment.id+' : cours locaux uniques',codes.length===organisation.integrated_count);
+   const catalogueBlocks=await page.evaluate(()=>[...new Set(DATA.entries.map(entry=>entry.block))].sort());
+   check(fragment.id+' : catégories complètes',await page.locator('[data-mcg-category]').count()===organisation.blocks.length);
+   check(fragment.id+' : blocs du catalogue fidèles',JSON.stringify(organisation.blocks.map(block=>block.code).sort())===JSON.stringify(catalogueBlocks));
    check(fragment.id+' : spécialité isolée',await page.evaluate(s=>JSON.stringify(DATA.specialties.map(x=>x.id))===JSON.stringify([s]),fragment.specialty));
    if(fragment.id!=='S01'){
     check(fragment.id+' : sémiologie cardiovasculaire absente',await page.locator('a[href="#/clinical-skills"]').count()===0);
-    await route(page,'#/clinical-skills');check(fragment.id+' : route CS retourne à l’accueil',await page.locator('.s01-home').count()===1);
+    await route(page,'#/clinical-skills');check(fragment.id+' : route CS retourne à l’accueil',await page.locator('.mcg-home').count()===1);
    }
    await overflow(page,fragment.id+' : accueil desktop');
    for(const code of codes){
+    testedCourses.add(code);
+    const courseName=code+' — '+chapterNames.get(code);
     await route(page,'#/entry/'+code);await page.locator('.mc[data-code="'+code+'"]').waitFor();
     await page.locator('.mc-tabs button').filter({hasText:'Sciences'}).click();
     const tabs=page.locator('.mc-sci-bar [data-s]'),count=await tabs.count();
-    check(code+' : disciplines accessibles',count>=3);
+    check(courseName+' : disciplines accessibles',count>=3);
     for(let i=0;i<count;i++){
      await tabs.nth(i).click();
      const unit=page.locator('.mc-sci:not([hidden])');
-     check(code+' : discipline '+(i+1)+' avec figure et liens',await unit.count()===1&&await unit.locator('figure svg[role="img"][aria-label]').count()>0&&(await unit.innerText()).replace(/\u00ad/g,'').includes('Science → traitement.'));
+     check(courseName+' : discipline '+(i+1)+' avec figure et liens',await unit.count()===1&&await unit.locator('figure svg[role="img"][aria-label]').count()>0&&(await unit.innerText()).replace(/\u00ad/g,'').includes('Science → traitement.'));
     }
     await tabs.first().click();
     const figure=page.locator('.mc-sci:not([hidden]) .mf-figure-open').first();
     await figure.click();const dialog=page.locator('.mf-figure-dialog[open]');
-    check(code+' : fenêtre du schéma',await dialog.isVisible()&&await dialog.locator('figcaption').count()===1);
+    check(courseName+' : fenêtre du schéma',await dialog.isVisible()&&await dialog.locator('figcaption').count()===1);
     const size=await dialog.locator('svg').evaluate(e=>e.getBoundingClientRect().width);
     await dialog.locator('input').evaluate(e=>{e.value='200';e.dispatchEvent(new Event('input',{bubbles:true}))});await pause(page);
-    check(code+' : zoom réel du schéma',await dialog.locator('svg').evaluate(e=>e.getBoundingClientRect().width)>size);
+    check(courseName+' : zoom réel du schéma',await dialog.locator('svg').evaluate(e=>e.getBoundingClientRect().width)>size);
     await page.keyboard.press('Escape');await pause(page);
-    check(code+' : retour du focus après le schéma',await figure.evaluate(e=>document.activeElement===e));
+    check(courseName+' : retour du focus après le schéma',await figure.evaluate(e=>document.activeElement===e));
     const link=page.locator('.mc-sci .mc-w[data-k]').first();
     if(await link.count()){
      const unitId=await link.evaluate(e=>e.closest('.mc-sci').id);
      await page.locator('.mc-sci-bar [data-s="'+unitId+'"]').click();
-     await link.click();check(code+' : fenêtre scientifique écrite',(await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()).replace(/\u00ad/g,'')!=='Fiche absente.');await page.locator('.mc-dlg .mc-x').click();
+     await link.click();check(courseName+' : fenêtre scientifique écrite',(await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()).replace(/\u00ad/g,'')!=='Fiche absente.');await page.locator('.mc-dlg .mc-x').click();
     }
     await page.setViewportSize({width:390,height:844});
     await page.locator('.mc-size-range').evaluate(e=>{e.value='24';e.dispatchEvent(new Event('input',{bubbles:true}))});
-    for(let i=0;i<count;i++){await tabs.nth(i).click();await overflow(page,code+' : mobile 24 px, discipline '+(i+1))}
+    for(let i=0;i<count;i++){await tabs.nth(i).click();await overflow(page,courseName+' : mobile 24 px, discipline '+(i+1))}
     await page.locator('.mc-size-range').evaluate(e=>{e.value='17';e.dispatchEvent(new Event('input',{bubbles:true}))});
     if(['I71','J44','D84','M06','A41'].includes(code))await shot(page,'sciences_'+code+'_mobile');
     if(code==='J44'){
@@ -70,7 +83,7 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
     if(await quizzes.count()){
      const quiz=quizzes.first(),unitId=await quiz.evaluate(q=>q.closest('.mc-sci').id);
      await page.locator('.mc-sci-bar [data-s="'+unitId+'"]').click();await quiz.locator('[data-ok="1"]').first().click();
-     check(code+' : cas scientifique corrigé',await quiz.locator('.mc-fb').isVisible());
+     check(courseName+' : cas scientifique corrigé',await quiz.locator('.mc-fb').isVisible());
     }
     await page.setViewportSize({width:1360,height:900});
    }
@@ -78,6 +91,7 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
    if(fragment.id!=='S01')await shot(page,'accueil_'+fragment.id+'_mobile');
    await page.setViewportSize({width:1360,height:900});
   }
+  check('Tous les cours intégrés contrôlés',JSON.stringify([...testedCourses].sort())===JSON.stringify(expectedCourses),{expected:expectedCourses,tested:[...testedCourses].sort()});
   await page.goto(pathToFileURL(files.S01).href+'#/clinical-skills');await ready(page);
   check('CS : dix étapes et sources',await page.locator('.cs-section').count()===11);
   await page.locator('[data-cs-jump="cs-auscultation"]').click();
@@ -137,7 +151,8 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
   check('CS : explications accessibles sans Canvas',await fallback.locator('.cs-canvas-fallback').isVisible());
   await fallback.locator('[data-cs-select="5"]').click();check('CS : valve mitrale accessible sans rendu',await fallback.locator('.cs-point-detail').getAttribute('data-cs-selected')==='mitral-valve');
   check('Aucune erreur JavaScript',errors.length===0,errors);
-  fs.writeFileSync(path.join(out,'science-cs-browser-results.json'),JSON.stringify({browser:await browser.version(),files,checks,errors,result:'passed'},null,2)+'\n');
+  check('Fichiers compilés inchangés pendant le contrôle',Object.entries(files).every(([id,file])=>digest(file)===snapshots[id]));
+  fs.writeFileSync(path.join(out,'science-cs-browser-results.json'),JSON.stringify({browser:await browser.version(),files,sha256:snapshots,courses:[...testedCourses].sort(),course_titles:Object.fromEntries(chapterNames),checks,errors,result:'passed',validation_scope:'Contrôle technique de lecture et navigation ; aucune certification médicale exhaustive.'},null,2)+'\n');
   console.log(JSON.stringify({result:'passed',checks:checks.length,errors},null,2));
  }catch(e){fs.writeFileSync(path.join(out,'science-cs-browser-results.json'),JSON.stringify({checks,errors,result:'failed',failure:e.message},null,2)+'\n');throw e}
  finally{await browser.close()}

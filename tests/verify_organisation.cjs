@@ -157,6 +157,9 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
     await page.locator('#lesson-search').fill('Pneumologie');
     await page.waitForFunction(() => document.getElementById('view-title')?.textContent === 'Pneumologie');
     check('La recherche retrouve toutes les catégories pulmonaires', await page.locator(categorySelector).count() === byId.S02.category_count);
+    if (integrated.some(course => course.code === 'J40')) {
+      check('La recherche affiche un seul cours Bronchite et ses quatre variantes nommées', await page.locator('[data-chapter-code="J40"]').count() === 1 && (await page.locator('[data-chapter-code="J40"] .category-variant').allTextContents()).length === 4 && bronchitis.every(e => byCode[e.code].title === e.title));
+    }
     const asthma = byId.S02.blocks.flatMap(b => b.categories).find(e => e.code === 'J45');
     const absentCourse = byId.S02.blocks.flatMap(b => b.categories).find(e => e.status === 'planned');
     check('La recherche distingue cours disponible et chapitre à produire', (await chapterRowFor(page, 'J45').innerText()).includes(asthma.title) && (await chapterRowFor(page, 'J45').innerText()).includes('Cours disponible') && (await chapterRowFor(page, absentCourse.code).innerText()).includes('Cours à produire'));

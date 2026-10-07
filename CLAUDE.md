@@ -1,5 +1,15 @@
 # CLAUDE.md — MEDINA (Atlas des cours de médecine par systèmes)
 
+## Justifier chaque affirmation — priorité actuelle
+
+La consigne de Vial du 7 octobre 2026 s’applique à **toutes les affirmations médicales**, dans tous les onglets, tableaux, figures, quiz, fenêtres, Pareto et glossaires. Expliquer pourquoi le fait est vrai ou la décision utile : mécanisme causal précis, conséquence clinique, limites et source primaire. Pour « anémie : facteur aggravant », détailler la diminution du transport artériel d’oxygène et les compensations cardiovasculaires, en tenant compte du contexte. Pour le sodium ou le potassium, justifier séparément le dosage, l’interprétation et la conduite ; ne pas confondre association pronostique et causalité.
+
+La mission est répartie à parts égales : **15 cours existants Codex, 15 Claude**, selon `docs/collaboration/MECHANISMS_PLAN.json` et `MECHANISMS_CLAUDE.md`. Une banque de fenêtres ciblées n’est pas une relecture exhaustive. Toute affirmation non revue demeure à contrôler ; ne pas marquer le cours validé pour sa seule compilation. Cette instruction prime sur les anciennes missions.
+
+Les catégories CIM structurent désormais les plateformes originales : numéro de catégorie, chapitres numérotés dans cette catégorie, code discret en haut à droite, couleur vive lisible. **J40 — Bronchite** est un cours unique couvrant J20, J40, J41 et J42 ; distinguer bronchite chronique et BPCO. Préserver les quatre onglets et les outils de lecture.
+
+Lire la passation, reprendre depuis le `main` publié et utiliser le protocole de livraison : les sources corrigées de PR #10 sont reçues et leur injection/contrelecture est tracée dans les reçus. Ne pas recopier une ancienne version au-dessus de corrections nouvelles. Les accès GitHub restent ceux de la connexion effective ; aucun secret ni jeton ne doit être transmis dans les fichiers.
+
 ## Organisation des fragments et des remises — 7 octobre 2026
 
 Nomme toujours une leçon par son **code CIM et son intitulé complet**. Nomme toujours un fragment par **initiale de spécialité - ordre de production - nom littéral**, suivant `organisation/fragments.json` : `C-01-Cardiologie`, par exemple. Les codes du catalogue sont ceux de la CIM-10-GM 2024 ; la cartographie CIM-11 demeure à établir.
@@ -14,7 +24,7 @@ Vial a donné son **accord permanent pour les publications et contributions GitH
 
 La complétude demandée porte désormais sur **toutes les catégories et sous-catégories pertinentes de la CIM-11**, dans chaque système. Le catalogue historique de ce dépôt reste en CIM-10-GM 2024 ; il ne prouve pas cette complétude. Lire [la règle de complétude](docs/COMPLETUDE_CIM11.md) et [le relevé actuel](audits/COMPLETUDE_2026-10-07/README.md). Aucun fragment livré n'est certifié complet en CIM-11.
 
-Claude doit relire **intégralement les 30 cours livrés et la Sémiologie CS**, pour la médecine, la pédagogie et le français professionnel. Lire [la mission globale](docs/collaboration/CLAUDE_AUDIT_GLOBAL_2026-10-07.md). La mission ciblée I48 reste une sous-tâche. Une annonce pédagogique expose directement le problème médical ; elle ne décrit pas « cet îlot » ou la fabrication du cours. Supprimer les répétitions et le remplissage sans retirer une information utile. Ces instructions actuelles priment sur les anciens objectifs de longueur et sur toute mention historique de système achevé.
+La relecture intégrale des **30 cours existants** est désormais répartie entre **15 cours Codex et 15 cours Claude**, selon `docs/collaboration/MECHANISMS_PLAN.json`. Elle porte sur la médecine, les mécanismes, la pédagogie et le français professionnel ; la Sémiologie CS reste aussi à contrôler. La [mission globale historique](docs/collaboration/CLAUDE_AUDIT_GLOBAL_2026-10-07.md) conserve ses critères de qualité, avec ce partage actualisé. La relecture ciblée I48 ne certifie pas les autres contenus. Une annonce pédagogique expose directement le problème médical ; elle ne décrit pas « cet îlot » ou la fabrication du cours. Supprimer les répétitions et le remplissage sans retirer une information utile. Ces instructions actuelles priment sur les anciens objectifs de longueur et sur toute mention historique de système achevé.
 
 > Fichier lu automatiquement par Claude Code à chaque session. **Lire ensuite `PROMPT_MEDINA.md` en entier** (prompt maître, source de vérité) et `CHAPTER_SPEC.md` (contrat HTML historique).
 

@@ -44,7 +44,15 @@ def main():
         code = chapter['code']
         relative = f'chapters/{code}/{code}_c.html'
         current = science((ROOT / relative).read_text())
-        old = science(subprocess.check_output(['git', 'show', f'{BASE}:{relative}'], cwd=ROOT, text=True))
+        previous = subprocess.run(['git', 'show', f'{BASE}:{relative}'], cwd=ROOT,
+                                  text=True, capture_output=True)
+        baseline_present = previous.returncode == 0
+        if not baseline_present and code != 'J40':
+            raise RuntimeError(f'{code}: source de comparaison indisponible : {previous.stderr.strip()}')
+        # J40 est une nouvelle production : son absence à la base n'est ni une
+        # erreur ni une raison d'abaisser les exigences de la version actuelle.
+        before = (measure(science(previous.stdout)) if baseline_present
+                  else {"words": 0, "figures": 0, "disciplines": 0})
         details = []
         tabs = current.xpath('.//button[@data-s]')
         units = current.xpath('.//*[' + CLASS.format('sci') + ']')
@@ -65,7 +73,8 @@ def main():
                 if label not in text:
                     report['errors'].append(f'{code}/{uid}: lien absent : {label}')
             details.append({"id": uid, "words": words(unit), "figures": len(figures)})
-        report['courses'][code] = {"before": measure(old), "after": measure(current), "units": details}
+        report['courses'][code] = {"baseline_present": baseline_present,
+                                   "before": before, "after": measure(current), "units": details}
     report['totals'] = {phase: {key: sum(course[phase][key] for course in report['courses'].values())
                                for key in ['words', 'figures', 'disciplines']}
                         for phase in ['before', 'after']}

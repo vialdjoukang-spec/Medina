@@ -1,7 +1,7 @@
 {
   "date": "2026-10-07",
   "scope": "Enrichissement ciblé de quatre cours pneumologiques : 60 nouvelles fenêtres explicatives, avec mécanisme causal, conséquence clinique, limites et sources primaires.",
-  "status": "Banques restaurées depuis l’historique après remplacement de l’environnement ; nouvelle compilation finale requise.",
+  "status": "Quatre banques restaurées et recompilées après injection du lot Claude 3 : 60 fenêtres, 60 cibles.",
   "certification_exhaustive": false,
   "restoration_note": "Les 60 identifiants, cibles et sources ont été récupérés de l’historique. Certains passages dont la copie intégrale ne subsistait pas ont été reconstitués au plus près ; une identité octet par octet avec les fichiers disparus n’est pas certifiée. Aucune nouvelle recherche médicale ni nouveau seuil ou dosage introduit lors de la restauration.",
   "review_method": [
@@ -326,7 +326,7 @@
         "popup_count": 15,
         "link_count": 15
       },
-      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+      "restoration_validation": "Compilation après injection Claude validée : 15 fenêtres et 15 cibles, occurrences vérifiées dans le contexte original."
     },
     {
       "course": {
@@ -640,7 +640,7 @@
         "popup_count": 15,
         "link_count": 15
       },
-      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+      "restoration_validation": "Compilation après injection Claude validée : 15 fenêtres et 15 cibles, occurrences vérifiées dans le contexte original."
     },
     {
       "course": {
@@ -945,7 +945,7 @@
         "popup_count": 15,
         "link_count": 15
       },
-      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+      "restoration_validation": "Compilation après injection Claude validée : 15 fenêtres et 15 cibles, occurrences vérifiées dans le contexte original."
     },
     {
       "course": {
@@ -1250,7 +1250,7 @@
         "popup_count": 15,
         "link_count": 15
       },
-      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+      "restoration_validation": "Compilation après injection Claude validée : 15 fenêtres et 15 cibles, occurrences vérifiées dans le contexte original."
     }
   ],
   "source_count": 59,
@@ -1556,7 +1556,7 @@
     "Une relecture assertion par assertion de l’ensemble des textes et fenêtres préexistants reste nécessaire : 60 fenêtres ciblées ne certifient pas la justification de toutes les affirmations.",
     "Les posologies, contre-indications, durées, seuils et chiffres épidémiologiques du cours original n’ont pas fait l’objet d’une validation exhaustive dans ce lot.",
     "La couverture des catégories CIM-11 est indépendante de cet enrichissement physiopathologique ; ces banques ne certifient pas sa complétude.",
-    "Reprendre compilation et vérification visuelle après restauration de l’environnement."
+    "Terminer la vérification visuelle après injection Claude ; la compilation technique des quatre banques est désormais validée."
   ],
   "reference_url_check": {
     "date": "2026-10-07",
@@ -1570,5 +1570,1309 @@
     },
     "not_found_errors_observed": 0,
     "limitation": "La disponibilité immédiate de chaque hébergeur n’est pas certifiée : refus d’accès, taille de PDF, limitation de débit et contrôles automatisés rencontrés. Les résultats détaillés des ouvertures n’ont pas survécu au remplacement de l’environnement."
+  },
+  "post_lot3_validation": {
+    "date": "2026-10-07",
+    "passed": true,
+    "method": "load_course_justifications pour chaque cours, puis vérification de 15 templates et 15 boutons injectés. Les occurrences ont été comparées au contexte sélectionné avant le lot 3 (commit 0174e52).",
+    "bank_changes": [
+      {
+        "file": "chapters/J45/J45_justifications.json",
+        "id": "j45-j-pheno",
+        "before": "occurrence implicite unique",
+        "after": "occurrence explicite 1",
+        "reason": "Le paragraphe original demeure la première occurrence. La nouvelle synthèse À retenir ajoute une seconde occurrence ; sélectionner 2 aurait changé le contexte."
+      }
+    ],
+    "other_banks_changed": false,
+    "context_exception": {
+      "id": "i26-j-hypoxemie",
+      "reason": "La prose voisine du bouton espace mort a été allégée dans le lot 3 ; la cible unique « L’hypoxémie dépend » et le sens causal de sa phrase restent conservés."
+    },
+    "courses": [
+      {
+        "code": "J45",
+        "report": {
+          "code": "J45",
+          "course": {
+            "code": "J45",
+            "title": "Asthme"
+          },
+          "entries": 15,
+          "windows": 15,
+          "targets": 15,
+          "matches": [
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-4",
+              "text": "hypokaliémie",
+              "occurrence": 1,
+              "id": "j45-j-kaliemie",
+              "start": 7652,
+              "end": 7664
+            },
+            {
+              "file": "J45_a.html",
+              "anchor": "j45-1",
+              "text": "un réveil nocturne dû à l’asthme ?",
+              "id": "j45-j-nuit",
+              "start": 5994,
+              "end": 6028
+            },
+            {
+              "file": "J45_a.html",
+              "anchor": "j45-1",
+              "text": "limitation variable du débit expiratoire",
+              "id": "j45-j-variabilite",
+              "start": 4441,
+              "end": 4481
+            },
+            {
+              "file": "J45_a.html",
+              "anchor": "j45-3",
+              "text": "PaCO₂ normale ou élevée",
+              "id": "j45-j-co2",
+              "start": 14503,
+              "end": 14526
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-1",
+              "text": "Spirométrie avec test de réversibilité",
+              "id": "j45-j-spirometrie",
+              "start": 1037,
+              "end": 1075
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-2",
+              "text": "ne pas conclure à une restriction sans pléthysmographie",
+              "id": "j45-j-cvf",
+              "start": 3790,
+              "end": 3845
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-1",
+              "text": "Test de provocation bronchique",
+              "id": "j45-j-provocation",
+              "start": 1416,
+              "end": 1446
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-4",
+              "text": "4.2 FeNO",
+              "id": "j45-j-feno",
+              "start": 9763,
+              "end": 9771
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-4",
+              "text": "IgE spécifiques",
+              "occurrence": 1,
+              "id": "j45-j-ige",
+              "start": 10434,
+              "end": 10449
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-sp",
+              "text": "distension dynamique",
+              "occurrence": 1,
+              "id": "j45-j-distension",
+              "start": 27659,
+              "end": 27679
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-sb",
+              "text": "transrépression",
+              "id": "j45-j-csi",
+              "start": 38408,
+              "end": 38423
+            },
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-1",
+              "text": "Bêta-2 agoniste de courte durée",
+              "id": "j45-j-beta2",
+              "start": 1527,
+              "end": 1558
+            },
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-2",
+              "text": "Un inhalateur à poudre demande une inspiration rapide et forte",
+              "id": "j45-j-technique",
+              "start": 4117,
+              "end": 4179
+            },
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-4",
+              "text": "rincer la bouche et recracher après chaque prise",
+              "id": "j45-j-rincage",
+              "start": 7928,
+              "end": 7976
+            },
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-si",
+              "text": "Les éosinophiles, les IgE et la FeNO",
+              "occurrence": 1,
+              "id": "j45-j-pheno",
+              "start": 36030,
+              "end": 36066
+            }
+          ],
+          "exhaustive_review": false
+        },
+        "source_sha256": {
+          "J45_pop1.html": "832a8fc0c329c814447b47344b06c9bfa873274a0c8fef4dd811617f70bd265f",
+          "J45_b.html": "b0efed9fc1ecb7b9c52193198285a61e5d0ba0da58e6ec6c437cd441fac51108",
+          "J45_pop2.html": "ac68031bd9d7ee6944a8e6b2bb2a56cec8d83388ec9de7d93ba738e4bf750508",
+          "J45_c.html": "95d9db05c47f750770a6db9e86e1606a746a7c2974c02936129235273c615825",
+          "J45_pop4.html": "abde85d51d9d18f8190f6b364e4d194bae7ea8d23ba8335cc67b6a790ea5540c",
+          "J45_d.html": "1e35d733240e944c587dffa025e720effcd4c0ca035a8d9898e6c0bd43f38e61",
+          "J45_a.html": "909345840cc9b604eff4df0eb0141ed0e79797ed8c4a010e23282043c976840a",
+          "J45_pop3.html": "55ee1d61556b4ca1729aeb47c4a330eed763b612a908868873f82af0e9e6cbbc"
+        },
+        "bank_sha256": "00393fadff3be7a72c61835b94737fe12d03dca4d9b93fd307d71628fbeb7b0e",
+        "target_review": [
+          {
+            "id": "j45-j-kaliemie",
+            "file": "J45_d.html",
+            "anchor": "j45-p-4",
+            "text": "hypokaliémie",
+            "candidates_before_lot3": 2,
+            "candidates_after_lot3": 2,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "hypokaliémie"
+          },
+          {
+            "id": "j45-j-nuit",
+            "file": "J45_a.html",
+            "anchor": "j45-1",
+            "text": "un réveil nocturne dû à l’asthme ?",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "un réveil nocturne dû à l’asthme ?"
+          },
+          {
+            "id": "j45-j-variabilite",
+            "file": "J45_a.html",
+            "anchor": "j45-1",
+            "text": "limitation variable du débit expiratoire",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "limitation variable du débit expiratoire"
+          },
+          {
+            "id": "j45-j-co2",
+            "file": "J45_a.html",
+            "anchor": "j45-3",
+            "text": "PaCO₂ normale ou élevée",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "PaCO₂ normale ou élevée"
+          },
+          {
+            "id": "j45-j-spirometrie",
+            "file": "J45_c.html",
+            "anchor": "j45-e-1",
+            "text": "Spirométrie avec test de réversibilité",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Spirométrie avec test de réversibilité — "
+          },
+          {
+            "id": "j45-j-cvf",
+            "file": "J45_c.html",
+            "anchor": "j45-e-2",
+            "text": "ne pas conclure à une restriction sans pléthysmographie",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Diminuée par le piégeage d’air dans l’obstruction sévère ; ne pas conclure à une restriction sans pléthysmographie"
+          },
+          {
+            "id": "j45-j-provocation",
+            "file": "J45_c.html",
+            "anchor": "j45-e-1",
+            "text": "Test de provocation bronchique",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Test de provocation bronchique (méthacholine) — "
+          },
+          {
+            "id": "j45-j-feno",
+            "file": "J45_c.html",
+            "anchor": "j45-e-4",
+            "text": "4.2 FeNO",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "4.2 FeNO"
+          },
+          {
+            "id": "j45-j-ige",
+            "file": "J45_c.html",
+            "anchor": "j45-e-4",
+            "text": "IgE spécifiques",
+            "candidates_before_lot3": 2,
+            "candidates_after_lot3": 2,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "IgE spécifiques"
+          },
+          {
+            "id": "j45-j-distension",
+            "file": "J45_c.html",
+            "anchor": "j45-sp",
+            "text": "distension dynamique",
+            "candidates_before_lot3": 3,
+            "candidates_after_lot3": 3,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Limitation du débit expiratoire et distension dynamique"
+          },
+          {
+            "id": "j45-j-csi",
+            "file": "J45_c.html",
+            "anchor": "j45-sb",
+            "text": "transrépression",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "transrépression"
+          },
+          {
+            "id": "j45-j-beta2",
+            "file": "J45_d.html",
+            "anchor": "j45-p-1",
+            "text": "Bêta-2 agoniste de courte durée",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Bêta-2 agoniste de courte durée"
+          },
+          {
+            "id": "j45-j-technique",
+            "file": "J45_d.html",
+            "anchor": "j45-p-2",
+            "text": "Un inhalateur à poudre demande une inspiration rapide et forte",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " Un aérosol-doseur demande une coordination main-inspiration et une inspiration lente et profonde ; avec une chambre d’inhalation, il convient à tous les âges et en crise. Un inhalateur à poudre demande une inspiration rapide et forte, mais pas de coordination. Un inhalateur à brumisateur (Respimat) produit un nuage lent. Choisir avec le patient et "
+          },
+          {
+            "id": "j45-j-rincage",
+            "file": "J45_d.html",
+            "anchor": "j45-p-4",
+            "text": "rincer la bouche et recracher après chaque prise",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " : raucité, candidose buccale (rincer la bouche et recracher après chaque prise). Aux doses fortes prolongées : ecchymoses, ostéoporose, cataracte, glaucome, freinage surrénalien. Chez l’enfant : courbe de croissance (réduction moyenne d’environ 1 cm la première année, non progressive)."
+          },
+          {
+            "id": "j45-j-pheno",
+            "file": "J45_c.html",
+            "anchor": "j45-si",
+            "text": "Les éosinophiles, les IgE et la FeNO",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 2,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Les éosinophiles, les IgE et la FeNO renseignent des branches différentes d’une réponse de type 2. Leurs valeurs dépendent aussi de la période et des traitements. Un résultat bas ne prouve donc pas l’absence de tout mécanisme inflammatoire. Un résultat élevé ne suffit pas non plus à sélectionner automatiquement une biothérapie. Le diagnostic, les exacerbations, la technique d’inhalation et les critères spécifiques à la molécule restent nécessaires."
+          }
+        ]
+      },
+      {
+        "code": "J44",
+        "report": {
+          "code": "J44",
+          "course": {
+            "code": "J44",
+            "title": "Bronchopneumopathie chronique obstructive"
+          },
+          "entries": 15,
+          "windows": 15,
+          "targets": 15,
+          "matches": [
+            {
+              "file": "J44_a.html",
+              "anchor": "j44-1",
+              "text": "inférieur à 0,70 après bronchodilatateur",
+              "occurrence": 1,
+              "id": "j44-j-obstruction",
+              "start": 8604,
+              "end": 8644
+            },
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-sp",
+              "text": "Le recul élastique",
+              "id": "j44-j-emphyseme",
+              "start": 20499,
+              "end": 20517
+            },
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-2",
+              "text": "Capacité inspiratoire",
+              "id": "j44-j-distension",
+              "start": 4538,
+              "end": 4559
+            },
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-5",
+              "text": "anémie",
+              "id": "j44-j-anemie",
+              "start": 8489,
+              "end": 8495
+            },
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-2",
+              "text": "Souvent diminuée en présence d’emphysème",
+              "id": "j44-j-dlco",
+              "start": 4676,
+              "end": 4716
+            },
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-5",
+              "text": "Alpha-1 antitrypsine",
+              "id": "j44-j-alpha1",
+              "start": 7589,
+              "end": 7609
+            },
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-1",
+              "text": "Oxymétrie ; gazométrie artérielle",
+              "id": "j44-j-gaz",
+              "start": 962,
+              "end": 995
+            },
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-3",
+              "text": "Oxygène à haut débit non contrôlé",
+              "id": "j44-j-haldane",
+              "start": 9038,
+              "end": 9071
+            },
+            {
+              "file": "J44_b.html",
+              "anchor": "j44-8",
+              "text": "La VNI est le mode de ventilation initial",
+              "id": "j44-j-vni",
+              "start": 16735,
+              "end": 16776
+            },
+            {
+              "file": "J44_b.html",
+              "anchor": "j44-8",
+              "text": "expectoration devenue purulente",
+              "id": "j44-j-purulence",
+              "start": 25661,
+              "end": 25692
+            },
+            {
+              "file": "J44_b.html",
+              "anchor": "j44-9",
+              "text": "l’entraînement à l’endurance et en force",
+              "id": "j44-j-rehabilitation",
+              "start": 33429,
+              "end": 33469
+            },
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-5",
+              "text": "Éosinophiles sanguins",
+              "id": "j44-j-eosinophiles",
+              "start": 7447,
+              "end": 7468
+            },
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-1",
+              "text": "Antimuscarinique de longue durée",
+              "id": "j44-j-muscarinique",
+              "start": 516,
+              "end": 548
+            },
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-1",
+              "text": "Inhibiteur de la phosphodiestérase 4",
+              "id": "j44-j-roflumilast",
+              "start": 2016,
+              "end": 2052
+            },
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-2",
+              "text": "Traitement court ; aucun corticostéroïde oral en entretien",
+              "id": "j44-j-prednisone",
+              "start": 7600,
+              "end": 7658
+            }
+          ],
+          "exhaustive_review": false
+        },
+        "source_sha256": {
+          "J44_c.html": "5c383c247cef8cd5c9e70df8b9e34838d5b847adae7b61173e11111e9455085a",
+          "J44_pop3.html": "0dfc9323124cba5cef19225ebfbe01b0bd1f58a23d7f6b9469867ff1b53da70e",
+          "J44_a.html": "429dd496b0f11109d21ceb18289c73ee5705f9729a197b6025afdffa7424f44b",
+          "J44_pop2.html": "9791a68daa813dd363b64a62b14cb7e86b64426140b8f381bd7a612740151617",
+          "J44_d.html": "4f5c5fefaab6ad5f567c7ef18ed840f74884c55bddd95ebc9aa32d4754f8af5e",
+          "J44_b.html": "a338a1564098e30cc26489ab03b1f577b030ee03b70bc9db719028558d6924db",
+          "J44_pop_pa.html": "1fba422763fb05506902725767ac00f6f691f36c2ddd2cba325468c21272cce3",
+          "J44_pop1.html": "5f2da0720a57828257b695559e035125db42e15630fd0147a4891c5460ca706d",
+          "J44_pop_sciences_revision.html": "a004deef223beca7bc4c8908c15a171d47aac446ca81f2c2953a245b5e77699a"
+        },
+        "bank_sha256": "5438431b17503b1f0ffc4437725887c997da8e6b97c94cd85c119ac31a4dcae4",
+        "target_review": [
+          {
+            "id": "j44-j-obstruction",
+            "file": "J44_a.html",
+            "anchor": "j44-1",
+            "text": "inférieur à 0,70 après bronchodilatateur",
+            "candidates_before_lot3": 3,
+            "candidates_after_lot3": 3,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "inférieur à 0,70 après bronchodilatateur"
+          },
+          {
+            "id": "j44-j-emphyseme",
+            "file": "J44_c.html",
+            "anchor": "j44-sp",
+            "text": "Le recul élastique",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Le recul élastique contribue normalement à l’expiration. L’emphysème le réduit. Une résistance bronchique accrue impose parallèlement davantage de pertes de pression. Pendant une expiration forcée, la pression externe peut dépasser celle d’une petite voie et la comprimer. Un effort supplémentaire ne fournit alors pas forcément plus de débit."
+          },
+          {
+            "id": "j44-j-distension",
+            "file": "J44_c.html",
+            "anchor": "j44-e-2",
+            "text": "Capacité inspiratoire",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Capacité inspiratoire"
+          },
+          {
+            "id": "j44-j-anemie",
+            "file": "J44_c.html",
+            "anchor": "j44-e-5",
+            "text": "anémie",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " : polyglobulie (hypoxémie chronique) ou anémie (aggrave la dyspnée). "
+          },
+          {
+            "id": "j44-j-dlco",
+            "file": "J44_c.html",
+            "anchor": "j44-e-2",
+            "text": "Souvent diminuée en présence d’emphysème",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Souvent diminuée en présence d’emphysème"
+          },
+          {
+            "id": "j44-j-alpha1",
+            "file": "J44_c.html",
+            "anchor": "j44-e-5",
+            "text": "Alpha-1 antitrypsine",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Alpha-1 antitrypsine"
+          },
+          {
+            "id": "j44-j-gaz",
+            "file": "J44_c.html",
+            "anchor": "j44-e-1",
+            "text": "Oxymétrie ; gazométrie artérielle",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Oxymétrie ; gazométrie artérielle si saturation ≤ 92 %"
+          },
+          {
+            "id": "j44-j-haldane",
+            "file": "J44_d.html",
+            "anchor": "j44-p-3",
+            "text": "Oxygène à haut débit non contrôlé",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Oxygène à haut débit non contrôlé"
+          },
+          {
+            "id": "j44-j-vni",
+            "file": "J44_b.html",
+            "anchor": "j44-8",
+            "text": "La VNI est le mode de ventilation initial",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "La VNI est le mode de ventilation initial de l’insuffisance respiratoire aiguë. Selon GOLD 2026, elle est indiquée en cas d’acidose respiratoire (pH ≤ 7,35 et PaCO₂ ≥ 45 mmHg). Elle l’est aussi en cas de dyspnée sévère avec signes de fatigue des muscles respiratoires, ou d’hypoxémie persistante malgré l’oxygène. Elle réussit dans 80 à 85 % des cas dans les essais. Elle améliore le pH et la PaCO₂, réduit la fréquence respiratoire et le travail respiratoire, et diminue l’intubation, la mortalité et la durée d’hospitalisation (niveau de preuve A). Une amélioration du pH et de la fréquence respiratoire en 1 à 2 heures prédit le succès. Lorsque le patient tolère au moins 4 heures de respiration spontanée, la VNI peut être arrêtée sans sevrage progressif."
+          },
+          {
+            "id": "j44-j-purulence",
+            "file": "J44_b.html",
+            "anchor": "j44-8",
+            "text": "expectoration devenue purulente",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "L’hiver suivant, Monsieur B. arrive aux urgences après trois jours de dyspnée croissante, avec une expectoration devenue purulente et une fièvre à 38,2 °C. Sa fréquence respiratoire est de 28 par minute, sa fréquence cardiaque de 108 par minute, et sa saturation de 84 % à l’air ambiant. Il est conscient et répond aux questions. Sous 2 L/min d’oxygène, les gaz du sang montrent un pH de 7,29, une PaCO₂ de 68 mmHg (9,1 kPa), des bicarbonates à 31,5 mmol/L et une PaO₂ de 52 mmHg. La CRP vaut 64 mg/L. La radiographie ne montre pas de pneumonie, et l’électrocardiogramme montre une tachycardie sinusale."
+          },
+          {
+            "id": "j44-j-rehabilitation",
+            "file": "J44_b.html",
+            "anchor": "j44-9",
+            "text": "l’entraînement à l’endurance et en force",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " associe l’entraînement à l’endurance et en force, l’éducation, la nutrition et le soutien psychologique. Selon GOLD 2026, elle améliore la capacité d’effort, les symptômes et la qualité de vie à tous les grades de sévérité. Le bénéfice optimal s’obtient en général en 6 à 8 semaines ; un prolongement à 12 semaines n’apporte pas de bénéfice supplémentaire. Elle est proposée aux patients limités par leurs symptômes ou à risque élevé d’exacerbation, c’est-à-dire aux groupes B et E."
+          },
+          {
+            "id": "j44-j-eosinophiles",
+            "file": "J44_c.html",
+            "anchor": "j44-e-5",
+            "text": "Éosinophiles sanguins",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Éosinophiles sanguins"
+          },
+          {
+            "id": "j44-j-muscarinique",
+            "file": "J44_d.html",
+            "anchor": "j44-p-1",
+            "text": "Antimuscarinique de longue durée",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Antimuscarinique de longue durée (AMLA)"
+          },
+          {
+            "id": "j44-j-roflumilast",
+            "file": "J44_d.html",
+            "anchor": "j44-p-1",
+            "text": "Inhibiteur de la phosphodiestérase 4",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Inhibiteur de la phosphodiestérase 4"
+          },
+          {
+            "id": "j44-j-prednisone",
+            "file": "J44_d.html",
+            "anchor": "j44-p-2",
+            "text": "Traitement court ; aucun corticostéroïde oral en entretien",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Traitement court ; aucun corticostéroïde oral en entretien"
+          }
+        ]
+      },
+      {
+        "code": "J18",
+        "report": {
+          "code": "J18",
+          "course": {
+            "code": "J18",
+            "title": "Pneumonies de l’adulte"
+          },
+          "entries": 15,
+          "windows": 15,
+          "targets": 15,
+          "matches": [
+            {
+              "file": "J18_a.html",
+              "anchor": "j18-3",
+              "text": "L'hypoxémie de la pneumonie",
+              "id": "j18-j-hypoxemie",
+              "start": 37190,
+              "end": 37217
+            },
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-s-physiologie",
+              "text": "Du rapport bas au shunt",
+              "id": "j18-j-hypoxemie-oxygene",
+              "start": 20455,
+              "end": 20478
+            },
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-3",
+              "text": "Protéine C réactive élevée",
+              "id": "j18-j-crp",
+              "start": 4684,
+              "end": 4710
+            },
+            {
+              "file": "J18_b.html",
+              "anchor": "j18-7",
+              "text": "Procalcitonine",
+              "id": "j18-j-pct",
+              "start": 3092,
+              "end": 3106
+            },
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-3",
+              "text": "sodium bas",
+              "id": "j18-j-sodium",
+              "start": 4815,
+              "end": 4825
+            },
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-1",
+              "text": "électrolytes",
+              "id": "j18-j-potassium",
+              "start": 1732,
+              "end": 1744
+            },
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-3",
+              "text": "Créatinine augmentée",
+              "id": "j18-j-rein",
+              "start": 4793,
+              "end": 4813
+            },
+            {
+              "file": "J18_b.html",
+              "anchor": "j18-7",
+              "text": "urée supérieure à 7 mmol/L",
+              "id": "j18-j-uree",
+              "start": 8092,
+              "end": 8118
+            },
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-2",
+              "text": "bronchogramme aérien",
+              "id": "j18-j-bronchogramme",
+              "start": 2675,
+              "end": 2695
+            },
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-s-microbiologie",
+              "text": "Le résultat dépend du site et du moment",
+              "id": "j18-j-microbiologie",
+              "start": 24839,
+              "end": 24878
+            },
+            {
+              "file": "J18_b.html",
+              "anchor": "j18-8",
+              "text": "réponse retardée",
+              "occurrence": 1,
+              "id": "j18-j-crp-evolution",
+              "start": 38908,
+              "end": 38924
+            },
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-1",
+              "text": "Aminopénicilline",
+              "occurrence": 1,
+              "id": "j18-j-amoxicilline",
+              "start": 899,
+              "end": 915
+            },
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-1",
+              "text": "inhibiteur de bêta-lactamase",
+              "id": "j18-j-clavulanate",
+              "start": 1185,
+              "end": 1213
+            },
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-1",
+              "text": "Macrolide",
+              "occurrence": 1,
+              "id": "j18-j-macrolide",
+              "start": 1719,
+              "end": 1728
+            },
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-3",
+              "text": "intervalle QT",
+              "occurrence": 1,
+              "id": "j18-j-qt",
+              "start": 19730,
+              "end": 19743
+            }
+          ],
+          "exhaustive_review": false
+        },
+        "source_sha256": {
+          "J18_pop_sciences_revision.html": "9b668c2c8419f3aacb262dd9df22b864a887e009fecb0f007480c4db09e32458",
+          "J18_a.html": "30707ef1e8fbbcc585fbfa5684cb21e7d33e9073391e35f219028ec220c50b5b",
+          "J18_pop_pa.html": "8a9e291c2a86de593abf367b4b5461e4ff0766dddb56d471313c9860eba6f272",
+          "J18_d.html": "550f413fbbb292d4724c4a19ab97dd7937909f144b82f95c976c660630f7dd1e",
+          "J18_b.html": "c1893da03eb8dee92207ee41bcc2ef0f454894bf95612a74a65f4137a1e98e22",
+          "J18_c.html": "77f04d20e6131bcdec37cd9c22096aeffcc5460630c3b060c12d03603a6d2de0",
+          "J18_pop1.html": "846f4ad2cbd2e30018e72010df9e35f4c18a40630b4adaaacc59bded315b5b48"
+        },
+        "bank_sha256": "9149323fa02f14a4c2fee91ee174c2820ccbe8028dcba52485043d548bbedd5e",
+        "target_review": [
+          {
+            "id": "j18-j-hypoxemie",
+            "file": "J18_a.html",
+            "anchor": "j18-3",
+            "text": "L'hypoxémie de la pneumonie",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " L'hypoxémie de la pneumonie vient surtout du sang qui traverse des alvéoles pleines. L'oxygène la corrige mal quand ce shunt est étendu, et une PaCO₂ qui remonte chez un patient tachypnéique signale l'épuisement."
+          },
+          {
+            "id": "j18-j-hypoxemie-oxygene",
+            "file": "J18_c.html",
+            "anchor": "j18-s-physiologie",
+            "text": "Du rapport bas au shunt",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Du rapport bas au shunt"
+          },
+          {
+            "id": "j18-j-crp",
+            "file": "J18_c.html",
+            "anchor": "j18-e-3",
+            "text": "Protéine C réactive élevée",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Protéine C réactive élevée"
+          },
+          {
+            "id": "j18-j-pct",
+            "file": "J18_b.html",
+            "anchor": "j18-7",
+            "text": "Procalcitonine",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Procalcitonine"
+          },
+          {
+            "id": "j18-j-sodium",
+            "file": "J18_c.html",
+            "anchor": "j18-e-3",
+            "text": "sodium bas",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Créatinine augmentée, sodium bas"
+          },
+          {
+            "id": "j18-j-potassium",
+            "file": "J18_c.html",
+            "anchor": "j18-e-1",
+            "text": "électrolytes",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Numération, fonction rénale, électrolytes, protéine C réactive ; lactate si choc présumé."
+          },
+          {
+            "id": "j18-j-rein",
+            "file": "J18_c.html",
+            "anchor": "j18-e-3",
+            "text": "Créatinine augmentée",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Créatinine augmentée, sodium bas"
+          },
+          {
+            "id": "j18-j-uree",
+            "file": "J18_b.html",
+            "anchor": "j18-7",
+            "text": "urée supérieure à 7 mmol/L",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " compte un point pour chaque élément présent : confusion nouvelle, urée supérieure à 7 mmol/L pour le CURB-65, fréquence respiratoire d'au moins 30 par minute, pression systolique inférieure à 90 mmHg ou diastolique d'au plus 60 mmHg, âge d'au moins 65 ans. Le CRB-65 se calcule sans prise de sang, ce qui le destine au cabinet."
+          },
+          {
+            "id": "j18-j-bronchogramme",
+            "file": "J18_c.html",
+            "anchor": "j18-e-2",
+            "text": "bronchogramme aérien",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "bronchogramme aérien"
+          },
+          {
+            "id": "j18-j-microbiologie",
+            "file": "J18_c.html",
+            "anchor": "j18-s-microbiologie",
+            "text": "Le résultat dépend du site et du moment",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Le résultat dépend du site et du moment"
+          },
+          {
+            "id": "j18-j-crp-evolution",
+            "file": "J18_b.html",
+            "anchor": "j18-8",
+            "text": "réponse retardée",
+            "candidates_before_lot3": 2,
+            "candidates_after_lot3": 2,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": ". La pneumonie progressive s'aggrave le plus souvent dans les 72 heures qui suivent le début du traitement, avec une insuffisance respiratoire, d'autres dysfonctions d'organes ou un choc septique malgré un antibiotique initial adéquat. La pneumonie à réponse retardée n'atteint pas la stabilité clinique après 72 heures de traitement, sans pour autant progresser. La pneumonie persistante garde un infiltrat incomplètement régressé plus de 30 jours après le début des symptômes. L'échec secondaire désigne une aggravation après une stabilisation initiale."
+          },
+          {
+            "id": "j18-j-amoxicilline",
+            "file": "J18_d.html",
+            "anchor": "j18-p-1",
+            "text": "Aminopénicilline",
+            "candidates_before_lot3": 2,
+            "candidates_after_lot3": 2,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Aminopénicilline"
+          },
+          {
+            "id": "j18-j-clavulanate",
+            "file": "J18_d.html",
+            "anchor": "j18-p-1",
+            "text": "inhibiteur de bêta-lactamase",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Aminopénicilline + inhibiteur de bêta-lactamase"
+          },
+          {
+            "id": "j18-j-macrolide",
+            "file": "J18_d.html",
+            "anchor": "j18-p-1",
+            "text": "Macrolide",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Macrolide"
+          },
+          {
+            "id": "j18-j-qt",
+            "file": "J18_d.html",
+            "anchor": "j18-p-3",
+            "text": "intervalle QT",
+            "candidates_before_lot3": 4,
+            "candidates_after_lot3": 4,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " Une anaphylaxie documentée aux bêta-lactamines change le choix et exige un protocole d'allergie ; une simple étiquette d'allergie non caractérisée ne suffit pas à priver automatiquement le patient du traitement recommandé. Macrolides et certains autres médicaments qui allongent l'intervalle QT augmentent ensemble le risque rythmique ; vérifier électrocardiogramme, potassium et autres traitements si association justifiée. Les fluoroquinolones exposent à des effets neurologiques, tendineux et vasculaires sérieux et doivent être réservées à une indication précise. La clarithromycine, inhibiteur puissant du CYP3A4, est contre-indiquée selon l'information professionnelle suisse avec la simvastatine, la lovastatine, les alcaloïdes de l'ergot, la colchicine, le ticagrélor, la ranolazine, l'ivabradine, le midazolam par voie orale, la lomitapide et plusieurs médicaments qui allongent l'intervalle QT (dompéridone, quétiapine, pimozide, cisapride, astémizole, terfénadine)."
+          }
+        ]
+      },
+      {
+        "code": "I26",
+        "report": {
+          "code": "I26",
+          "course": {
+            "code": "I26",
+            "title": "Embolie pulmonaire aiguë"
+          },
+          "entries": 15,
+          "windows": 15,
+          "targets": 15,
+          "matches": [
+            {
+              "file": "I26_a.html",
+              "anchor": "i26-5",
+              "text": "douleur pleurale",
+              "occurrence": 1,
+              "id": "i26-j-douleur",
+              "start": 47185,
+              "end": 47201
+            },
+            {
+              "file": "I26_a.html",
+              "anchor": "i26-3",
+              "text": "postcharge",
+              "occurrence": 1,
+              "id": "i26-j-postcharge",
+              "start": 24420,
+              "end": 24430
+            },
+            {
+              "file": "I26_b.html",
+              "anchor": "i26-7",
+              "text": "une probabilité élevée",
+              "id": "i26-j-probabilite",
+              "start": 7292,
+              "end": 7314
+            },
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-s-p",
+              "text": "L’hypoxémie dépend",
+              "id": "i26-j-hypoxemie",
+              "start": 18743,
+              "end": 18761
+            },
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-s-p",
+              "text": "espace mort",
+              "occurrence": 1,
+              "id": "i26-j-espace-mort",
+              "start": 18122,
+              "end": 18133
+            },
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "D-dimères :",
+              "id": "i26-j-ddimeres",
+              "start": 2098,
+              "end": 2109
+            },
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "Troponine",
+              "id": "i26-j-troponine",
+              "start": 3327,
+              "end": 3336
+            },
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "le peptide natriurétique",
+              "id": "i26-j-bnp",
+              "start": 2982,
+              "end": 3006
+            },
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "hémoglobine de référence",
+              "id": "i26-j-hemoglobine",
+              "start": 2834,
+              "end": 2858
+            },
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "créatinine et estimation de la clairance",
+              "id": "i26-j-rein",
+              "start": 2860,
+              "end": 2900
+            },
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-1",
+              "text": "inhibent directement le facteur Xa",
+              "id": "i26-j-antixa",
+              "start": 494,
+              "end": 528
+            },
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-2",
+              "text": "avec nourriture",
+              "occurrence": 1,
+              "id": "i26-j-repas",
+              "start": 4459,
+              "end": 4474
+            },
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-1",
+              "text": "héparines de bas poids moléculaire",
+              "id": "i26-j-heparine",
+              "start": 1340,
+              "end": 1374
+            },
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-1",
+              "text": "Fibrinolytiques :",
+              "id": "i26-j-thrombolyse",
+              "start": 2639,
+              "end": 2656
+            },
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-4",
+              "text": "plaquettes sous héparine",
+              "id": "i26-j-plaquettes",
+              "start": 15884,
+              "end": 15908
+            }
+          ],
+          "exhaustive_review": false
+        },
+        "source_sha256": {
+          "I26_pop_pa.html": "4b3d4975f302578e46f3a24062b15d55263a2adb4870f5fab169232bc6ff727d",
+          "I26_b.html": "bebe0eb86531d33c75a9ab63dba8ca1d92fb47f6e296031d8cf97211c571be60",
+          "I26_pop2.html": "0e77e3fb9eceec9a06b432c987f31107ee9be31a9ce7697be675dca4044af4f0",
+          "I26_d.html": "d290fd07e58c3b3ad5f4f80790469e48b80a0edbdd1e9458ffbb27e1de9fab25",
+          "I26_a.html": "b92d5352d562c979b8632555532c576c76ddc47c07ad947928b9b20e4ca1eab6",
+          "I26_pop1.html": "4cafd9af851ec171b564d1b0f795aefe71d0c538c8758f6a0be72b140eebb0b1",
+          "I26_pop_sciences_revision.html": "ff8bf559538633d8669cb3881b6ddb68110ff3dd7ed3fd24b8f4e39973fc06a4",
+          "I26_c.html": "3a44f420ec8530d568c5720d861b731eb86dc1bd81994ceb9673c5a7e517cc45"
+        },
+        "bank_sha256": "da92d766733ca6798c2632abb4785c45c03c973e6de3df64726944954f96d550",
+        "target_review": [
+          {
+            "id": "i26-j-douleur",
+            "file": "I26_a.html",
+            "anchor": "i26-5",
+            "text": "douleur pleurale",
+            "candidates_before_lot3": 6,
+            "candidates_after_lot3": 6,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Moins fréquente que la douleur pleurale ; toujours de faible abondance"
+          },
+          {
+            "id": "i26-j-postcharge",
+            "file": "I26_a.html",
+            "anchor": "i26-3",
+            "text": "postcharge",
+            "candidates_before_lot3": 3,
+            "candidates_after_lot3": 3,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " augmentent alors, et la postcharge du ventricule droit avec elles."
+          },
+          {
+            "id": "i26-j-probabilite",
+            "file": "I26_b.html",
+            "anchor": "i26-7",
+            "text": "une probabilité élevée",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Le lecteur remarque que même la catégorie « faible » contient environ une embolie sur dix. Une probabilité faible ne permet donc jamais de conclure seule : elle oriente vers un test d’exclusion. À l’inverse, une probabilité élevée laisse environ un tiers des patients sans embolie : elle justifie l’imagerie, pas un traitement prolongé sans preuve. La patiente du cas obtient 9 points au score de Wells. Les signes de thrombose veineuse valent 3 points, et l’embolie comme diagnostic le plus probable en vaut 3. La chirurgie récente et la tachycardie valent chacune 1,5 point. Elle est donc « probable ». Le score de Genève révisé la classe aussi en probabilité élevée, avec 15 points. L’âge compte 1 point, la chirurgie 2 et la douleur du mollet 3. La douleur à la palpation veineuse avec œdème unilatéral compte 4 points, et la fréquence cardiaque 5."
+          },
+          {
+            "id": "i26-j-hypoxemie",
+            "file": "I26_c.html",
+            "anchor": "i26-s-p",
+            "text": "L’hypoxémie dépend",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": false,
+            "selected_context": ". D’autres régions présentent des inégalités de ventilation-perfusion. L’hypoxémie dépend du mélange de ces territoires et de l’état circulatoire."
+          },
+          {
+            "id": "i26-j-espace-mort",
+            "file": "I26_c.html",
+            "anchor": "i26-s-p",
+            "text": "espace mort",
+            "candidates_before_lot3": 2,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Physiologie : espace mort, postcharge droite et choc obstructif"
+          },
+          {
+            "id": "i26-j-ddimeres",
+            "file": "I26_c.html",
+            "anchor": "i26-e-2",
+            "text": "D-dimères :",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "D-dimères :"
+          },
+          {
+            "id": "i26-j-troponine",
+            "file": "I26_c.html",
+            "anchor": "i26-e-2",
+            "text": "Troponine",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Troponine"
+          },
+          {
+            "id": "i26-j-bnp",
+            "file": "I26_c.html",
+            "anchor": "i26-e-2",
+            "text": "le peptide natriurétique",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " numération avec plaquettes, hémoglobine de référence, créatinine et estimation de la clairance, bilan hépatique et tests d’hémostase selon traitement envisagé. La troponine et le peptide natriurétique explorent une souffrance ventriculaire droite, mais ni leur positivité ni leur négativité ne confirment ou excluent isolément la thrombose. Les gaz artériels quantifient une insuffisance respiratoire ou acidobasique et ne sont pas un test d’exclusion."
+          },
+          {
+            "id": "i26-j-hemoglobine",
+            "file": "I26_c.html",
+            "anchor": "i26-e-2",
+            "text": "hémoglobine de référence",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " numération avec plaquettes, hémoglobine de référence, créatinine et estimation de la clairance, bilan hépatique et tests d’hémostase selon traitement envisagé. La troponine et le peptide natriurétique explorent une souffrance ventriculaire droite, mais ni leur positivité ni leur négativité ne confirment ou excluent isolément la thrombose. Les gaz artériels quantifient une insuffisance respiratoire ou acidobasique et ne sont pas un test d’exclusion."
+          },
+          {
+            "id": "i26-j-rein",
+            "file": "I26_c.html",
+            "anchor": "i26-e-2",
+            "text": "créatinine et estimation de la clairance",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " numération avec plaquettes, hémoglobine de référence, créatinine et estimation de la clairance, bilan hépatique et tests d’hémostase selon traitement envisagé. La troponine et le peptide natriurétique explorent une souffrance ventriculaire droite, mais ni leur positivité ni leur négativité ne confirment ou excluent isolément la thrombose. Les gaz artériels quantifient une insuffisance respiratoire ou acidobasique et ne sont pas un test d’exclusion."
+          },
+          {
+            "id": "i26-j-antixa",
+            "file": "I26_d.html",
+            "anchor": "i26-p-1",
+            "text": "inhibent directement le facteur Xa",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " apixaban et rivaroxaban inhibent directement le facteur Xa et possèdent chacun une phase initiale intensifiée sans relais préalable par héparine. Dabigatran (anti-thrombine) et édoxaban (anti-Xa) requièrent au moins cinq jours d’anticoagulation parentérale préalable conformément aux informations professionnelles suisses. La réponse clinique et l’observance sont évaluées, sans dosage routinier de l’effet anticoagulant. Les informations suisses d’Eliquis et de Xarelto ne recommandent pas ces deux molécules comme alternative à l’héparine non fractionnée lorsque l’embolie est hémodynamiquement instable ou qu’une thrombolyse ou une embolectomie peut être nécessaire ; celles de Pradaxa, d’Eliquis et de Xarelto ne recommandent pas les anticoagulants oraux directs en cas de syndrome des antiphospholipides avec antécédent thrombotique."
+          },
+          {
+            "id": "i26-j-repas",
+            "file": "I26_d.html",
+            "anchor": "i26-p-2",
+            "text": "avec nourriture",
+            "candidates_before_lot3": 2,
+            "candidates_after_lot3": 2,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "15 mg deux fois par jour pendant les jours 1 à 21, avec nourriture."
+          },
+          {
+            "id": "i26-j-heparine",
+            "file": "I26_d.html",
+            "anchor": "i26-p-1",
+            "text": "héparines de bas poids moléculaire",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " les héparines de bas poids moléculaire sont recommandées pour la plupart des patients qui nécessitent une voie parentérale (ESC/ERS 2019, qui les préfère avec le fondaparinux à l’héparine non fractionnée, classe I, niveau A). L’AHA/ACC 2026, dont le texte intégral est resté inaccessible, formule la même préférence en classe 1 chez le patient hospitalisé des catégories C, D et du premier sous-groupe de la catégorie E qui nécessite une anticoagulation parentérale (synthèse de membres du comité de rédaction, "
+          },
+          {
+            "id": "i26-j-thrombolyse",
+            "file": "I26_d.html",
+            "anchor": "i26-p-1",
+            "text": "Fibrinolytiques :",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": "Fibrinolytiques :"
+          },
+          {
+            "id": "i26-j-plaquettes",
+            "file": "I26_d.html",
+            "anchor": "i26-p-4",
+            "text": "plaquettes sous héparine",
+            "candidates_before_lot3": 1,
+            "candidates_after_lot3": 1,
+            "selected_occurrence": 1,
+            "original_context_preserved": true,
+            "selected_context": " réévaluer signes d’hémorragie, hémoglobine si suspicion de perte sanguine, plaquettes sous héparine, créatinine et fonction hépatique selon médicament, traitements nouveaux, observance et récidive symptomatique. Une thrombopénie liée à l’héparine accompagnée d’une thrombose nouvelle impose un diagnostic urgent et l’arrêt des héparines. En cas d’hémorragie grave, interrompre l’anticoagulant, noter l’heure de la dernière prise, la clairance de la créatinine et la localisation du saignement, puis neutraliser selon la molécule : idarucizumab 5 g par voie intraveineuse pour le dabigatran (Praxbind, deux flacons de 2,5 g/50 mL administrés en deux perfusions consécutives de 5 à 10 minutes ou en bolus) ; andexanet alfa (Ondexxya, autorisé par Swissmedic, réservé à l’usage hospitalier) chez l’adulte traité par apixaban ou rivaroxaban lorsqu’une hémorragie incontrôlée ou menaçant le pronostic vital impose la réversion, l’information suisse de Lixiana ne mentionnant aucun antidote spécifique de l’édoxaban ; vitamine K par voie intraveineuse lente (10 à 20 mg lors d’une hémorragie menaçant la vie) et concentré de complexe prothrombinique pour un antagoniste de la vitamine K (information suisse de Marcoumar) ; sulfate de protamine pour l’héparine non fractionnée, qui ne neutralise l’activité anti-Xa de l’énoxaparine qu’à 60 % au plus (information suisse de Clexane)."
+          }
+        ]
+      }
+    ],
+    "medical_certification": "Contrôle de ciblage et compilation ; ne constitue pas une certification scientifique exhaustive.",
+    "static_test": {
+      "command": "python3 test_v7.py --static I10 I42 J45 J44 J18 I26",
+      "passed": true,
+      "result": "OK ; aucune erreur remontée.",
+      "courses": [
+        "I10",
+        "I42",
+        "J45",
+        "J44",
+        "J18",
+        "I26"
+      ]
+    }
   }
 }

@@ -1,5 +1,7 @@
 # Claude — audit médico-rédactionnel intégral de MEDINA
 
+> Répartition actualisée le 7 octobre 2026 : quinze cours existants par agent, selon [MECHANISMS_PLAN.json](MECHANISMS_PLAN.json) et [la mission Claude](MECHANISMS_CLAUDE.md). Cette mission historique définit la qualité attendue ; elle n’attribue plus les trente cours à Claude seul. Chaque affirmation doit désormais recevoir sa justification explicite.
+
 Date : 7 octobre 2026. Statut : **mission publiée ; démarrage et lecture par Claude non confirmés**.
 
 ## Objectif et priorité

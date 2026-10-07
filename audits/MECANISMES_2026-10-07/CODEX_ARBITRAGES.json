@@ -1,0 +1,174 @@
+{
+  "schema": "medina.codex-medical-arbitrages.v1",
+  "status": "applied",
+  "regenerated": true,
+  "regeneration_note": "JSON et markdown régénérés après perte du snapshot EXEC ; remplacements exacts reconstruits sur les sources canoniques fraîchement réinjectées depuis PR10, sans prétendre reproduire byte pour byte l’ancien JSON perdu.",
+  "reviewed_pr": 10,
+  "reviewed_head": "be6a909059200711493064bd9c96a7437d71c019",
+  "review_date": "2026-10-07",
+  "scope": "11 arbitrages médicaux I48 ; aucun changement aux autres fichiers de sciences ni aux originaux de livraison Claude",
+  "before_sha256": {
+    "chapters/I48/I48_b.html": "a9c36f83fe14f2723039dd2829f09c0f7779ce844b9a11ff87190fa29be3ddee",
+    "chapters/I48/I48_a.html": "8b2ffed1bf247db83cca443497a521619e4ac8a87bb33e8fe9bb92cee3d49abe",
+    "chapters/I48/I48_c.html": "b11b314bd42fbddf6470dd399b8763dac935c8343bb9f8313d8308a0756f0185",
+    "chapters/I48/I48_pop2.html": "5849a6fbfbc6f274a36ea6ba16677bbaa2094c987ba4d05176769b30ce4d2f74",
+    "chapters/I48/I48_pop3.html": "7d8e796a83b618ab588b1c0c2bfe74a798083b67df4c43b0857a6bab82821663",
+    "chapters/I48/I48_pop4.html": "bd31c8067f6c6ebae89504c0a8a0ee7ba75eeb02f933a69f9805bb247464ddab"
+  },
+  "after_sha256": {
+    "chapters/I48/I48_b.html": "ef16154bc8d013530fde338f8826f75a1c9e174078784c170a621bbeae77c4be",
+    "chapters/I48/I48_a.html": "0cbcebcd8c7b3687e80fdf0d61a8f5c93f89528a997684c67b6dced3178a33bb",
+    "chapters/I48/I48_c.html": "5160aa4079ebf4f535a7a4a20108a14784d39a9f86231e0411bec626a450865e",
+    "chapters/I48/I48_pop2.html": "b3085d5e9a9ad1e9b7c719105342a26777576730c88e13240a18bfea37f963c7",
+    "chapters/I48/I48_pop3.html": "7ee8f5f1ec4e2acf995c087e32d36b92c45784e65eea4c8cff24221d9f299a60",
+    "chapters/I48/I48_pop4.html": "55d8773349434c3bc7a6dfdfeb978343769c2717798aa0c748f9038b29637509"
+  },
+  "claude_originals_unchanged": {
+    "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_pop4.html": "bd31c8067f6c6ebae89504c0a8a0ee7ba75eeb02f933a69f9805bb247464ddab",
+    "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_pop1.html": "3f80192e2f6938278c40aaf475a04b385706c46ff4bc9676141fc0d96867ac5e",
+    "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_b.html": "a9c36f83fe14f2723039dd2829f09c0f7779ce844b9a11ff87190fa29be3ddee",
+    "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_pop3.html": "7d8e796a83b618ab588b1c0c2bfe74a798083b67df4c43b0857a6bab82821663",
+    "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_c.html": "b11b314bd42fbddf6470dd399b8763dac935c8343bb9f8313d8308a0756f0185",
+    "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_a.html": "8b2ffed1bf247db83cca443497a521619e4ac8a87bb33e8fe9bb92cee3d49abe",
+    "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I48/I48_pop2.html": "5849a6fbfbc6f274a36ea6ba16677bbaa2094c987ba4d05176769b30ce4d2f74"
+  },
+  "other_sciences_unchanged_count": 30,
+  "arbitrages": [
+    {
+      "id": "I48-01",
+      "path": "chapters/I48/I48_b.html",
+      "label": "Sepsis et cardioversion urgente",
+      "before": "Devant une FA rapide au cours d’un sepsis, le traitement du sepsis et le remplissage passent avant toute cardioversion.",
+      "after": "Devant une FA rapide au cours d’un sepsis, traiter immédiatement la cause et évaluer la perfusion ; adapter le remplissage aux besoins. Si la FA provoque ou aggrave une instabilité hémodynamique aiguë, une cardioversion électrique urgente reste indiquée, en parallèle du traitement du sepsis.",
+      "reason": "Une cause infectieuse n’interdit pas la cardioversion lorsque l’arythmie contribue à l’instabilité. Le remplissage n’est pas une étape universelle imposée avant le traitement du rythme.",
+      "primary_sources": [
+        "https://pure.eur.nl/ws/portalfiles/portal/182889750/2024_ESC_Guidelines_for_the_management_of_atrial_fibrillation_developed_in_collaboration_with_the_European_Association_for_Cardio-Thoracic_Surgery_EACTS_.pdf"
+      ]
+    },
+    {
+      "id": "I48-02",
+      "path": "chapters/I48/I48_a.html",
+      "label": "Remodelage : modèle expérimental et délais",
+      "before": "La FA modifie elle-même l’oreillette. Dès les premières 24 heures d’arythmie, la période réfractaire se raccourcit par surcharge calcique des myocytes ; après des semaines, la fibrose s’installe.",
+      "after": "La FA peut modifier elle-même l’oreillette. Dans le modèle caprin de Wijffels (1995), les périodes réfractaires se raccourcissaient durant les premières 24 heures d’arythmie entretenue : ce délai expérimental n’est pas un seuil universel chez l’être humain. Le remodelage électrique modifie notamment les courants calciques ; un remodelage structural avec fibrose peut s’y associer selon le terrain et la durée d’arythmie, sans calendrier fixe.",
+      "reason": "La référence décrit une expérimentation chez la chèvre. Elle ne démontre ni un délai identique pour tous les humains ni une installation obligatoire de fibrose après quelques semaines. Les adaptations ioniques et le substrat structural doivent être distingués.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/7671380/",
+        "https://pubmed.ncbi.nlm.nih.gov/10473672/"
+      ]
+    },
+    {
+      "id": "I48-03",
+      "path": "chapters/I48/I48_a.html",
+      "label": "Cas de Basedow : hyperthyroïdie biologique",
+      "before": "TSH effondrée et anticorps anti-récepteurs de la TSH positifs : maladie de Basedow.",
+      "after": "TSH effondrée, T4 libre élevée et anticorps anti-récepteurs de la TSH positifs : hyperthyroïdie liée à une maladie de Basedow.",
+      "reason": "La thyroxine libre documente ici l’hyperthyroïdie manifeste ; les anticorps soutiennent son étiologie auto-immune. Une TSH basse ne suffit pas seule à décrire cette situation.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/30283735/"
+      ]
+    },
+    {
+      "id": "I48-04",
+      "path": "chapters/I48/I48_c.html",
+      "label": "Antivitamine K : INR précoce et effet maximal",
+      "before": "La demi-vie courte du facteur VII explique que l’INR s’élève avant que l’anticoagulation soit réelle : c’est la raison du chevauchement avec l’héparine lorsque l’on débute un antivitamine K sur un terrain thrombotique aigu.",
+      "after": "La demi-vie courte du facteur VII explique que l’INR puisse s’élever avant l’installation de l’effet antithrombotique maximal : la prothrombine, de demi-vie plus longue, doit aussi diminuer. Lorsque la situation thrombotique aiguë exige une anticoagulation rapide, un chevauchement avec l’héparine peut donc être nécessaire ; ce raisonnement n’impose pas un relais systématique dans une FA isolée.",
+      "reason": "L’effet n’est pas absent avant le maximum. La persistance du facteur II explique le décalage. La précision évite de transformer l’exemple thrombotique aigu en obligation générale de relais pour toute FA.",
+      "primary_sources": [
+        "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=801e4da1-5459-47d2-b67b-009f0a3247cc"
+      ]
+    },
+    {
+      "id": "I48-05",
+      "path": "chapters/I48/I48_pop2.html",
+      "label": "FA pré-excitée : suspicion et diagnostic différentiel",
+      "before": "Tachycardie <b>irrégulière</b> à <b>QRS larges</b>, dont la morphologie varie d’un battement à l’autre (degré variable de pré-excitation) ; intervalles RR les plus courts parfois &lt; 250 ms. En rythme sinusal : PR court et onde delta.",
+      "after": "Une tachycardie <b>irrégulière</b> à <b>QRS larges</b> et de morphologie variable fait suspecter une FA pré-excitée ; les intervalles RR les plus courts peuvent être &lt; 250 ms. Le diagnostic différentiel inclut une tachycardie ventriculaire polymorphe et une arythmie atriale avec conduction aberrante. En rythme sinusal, un PR court et une onde delta soutiennent une pré-excitation manifeste.",
+      "reason": "Le tracé décrit est évocateur sans être pathognomonique. Le diagnostic différentiel et le caractère manifeste de la pré-excitation en rythme sinusal restent explicites.",
+      "primary_sources": [
+        "https://academic.oup.com/eurheartj/article/41/5/655/5556821?searchresult=1"
+      ]
+    },
+    {
+      "id": "I48-06",
+      "path": "chapters/I48/I48_b.html",
+      "label": "CHAMPION-AF : conclusion confirmée et limite",
+      "before": "En 2026, l’essai CHAMPION-AF a montré, chez des patients pouvant recevoir un AOD, une non-infériorité de la fermeture percutanée sur un critère composite et moins de saignements non procéduraux, mais davantage d’AVC ischémiques (3,2 % contre 2,0 % à trois ans). Cet essai n’a pas encore été intégré dans une recommandation ESC.",
+      "after": "En 2026, l’essai CHAMPION-AF a montré, chez des patients pouvant recevoir un AOD, une non-infériorité sur le critère composite décès cardiovasculaire, AVC ou embolie systémique, et moins de saignements non procéduraux. Cette conclusion composite ne démontre pas une supériorité sur les AVC pris isolément ; l’essai ne modifie pas à lui seul les indications ESC 2024.",
+      "reason": "Le résumé primaire confirme les critères globaux. Les taux d’AVC ischémiques isolés 3,2 % et 2,0 % ne sont pas repris sans confirmation primaire accessible.",
+      "primary_sources": [
+        "https://pure.au.dk/portal/en/publications/left-atrial-appendage-closure-or-anticoagulation-for-atrial-fibri/",
+        "https://pubmed.ncbi.nlm.nih.gov/41910347/"
+      ]
+    },
+    {
+      "id": "I48-07",
+      "path": "chapters/I48/I48_pop3.html",
+      "label": "CHAMPION-AF : résultats chiffrés vérifiés",
+      "before": "CHAMPION-AF (2026, 3 000 patients éligibles aux AOD) : non-infériorité sur le critère composite AVC, décès cardiovasculaire, embolie ; moins d’hémorragies non procédurales (10,9 % contre 19 %) ; mais davantage d’AVC ischémiques (3,2 % contre 2,0 %). Non encore intégré dans les recommandations.",
+      "after": "CHAMPION-AF (2026, 3 000 patients éligibles aux AOD) : à trois ans, le critère composite décès cardiovasculaire, AVC ou embolie systémique atteint 5,7 % dans le groupe dispositif contre 4,8 % sous anticoagulant ; la non-infériorité est établie. Les saignements non procéduraux atteignent 10,9 % contre 19,0 %. Ces estimations ne démontrent pas une supériorité sur les AVC isolés ; appliquer les indications du référentiel pertinent.",
+      "reason": "Les deux paires de résultats et leurs critères sont confirmées dans la publication originale reproduite par le dépôt institutionnel d’un auteur. La conclusion reste celle du critère composite et de la sécurité non procédurale.",
+      "primary_sources": [
+        "https://pure.au.dk/portal/en/publications/left-atrial-appendage-closure-or-anticoagulation-for-atrial-fibri/"
+      ]
+    },
+    {
+      "id": "I48-08",
+      "path": "chapters/I48/I48_pop4.html",
+      "label": "CHAMPION-AF : cohérence de la synthèse",
+      "before": "CHAMPION-AF 2026 : non-infériorité sur le critère composite, moins de saignements non procéduraux, AVC ischémiques numériquement plus fréquents.",
+      "after": "CHAMPION-AF 2026 : non-infériorité sur le critère composite décès cardiovasculaire, AVC ou embolie systémique et moins de saignements non procéduraux ; ces résultats ne prouvent pas une supériorité sur les AVC isolés.",
+      "reason": "La synthèse ne conserve pas une affirmation qualitative sur un sous-critère dont le détail primaire n’a pas été vérifié.",
+      "primary_sources": [
+        "https://pure.au.dk/portal/en/publications/left-atrial-appendage-closure-or-anticoagulation-for-atrial-fibri/"
+      ]
+    },
+    {
+      "id": "I48-09",
+      "path": "chapters/I48/I48_b.html",
+      "label": "Anticoagulation après cardioversion : règle et exception",
+      "before": "<b>Après toute cardioversion</b>, l’anticoagulation est poursuivie au moins <b>quatre semaines</b>, même si le score CHA₂DS₂-VA vaut 0, en raison de la sidération auriculaire. Ensuite, elle se poursuit ou s’arrête selon le score, indépendamment du succès de la cardioversion.",
+      "after": "<b>Après cardioversion</b>, la stratégie habituelle poursuit l’anticoagulation au moins <b>quatre semaines</b>, en raison notamment de la sidération auriculaire. Le texte ESC 2024 prévoit une exception possible sans facteur de risque thromboembolique si le rythme sinusal est rétabli dans les 24 heures suivant le début certain de la FA. Au long cours, la décision dépend du risque, indépendamment du succès rythmique.",
+      "reason": "Le texte et la figure ESC mentionnent une option limitée alors que le tableau de recommandation présente une règle générale. La règle demeure le défaut, l’exception ne devient pas automatique.",
+      "primary_sources": [
+        "https://pure.eur.nl/ws/portalfiles/portal/182889750/2024_ESC_Guidelines_for_the_management_of_atrial_fibrillation_developed_in_collaboration_with_the_European_Association_for_Cardio-Thoracic_Surgery_EACTS_.pdf"
+      ]
+    },
+    {
+      "id": "I48-10",
+      "path": "chapters/I48/I48_pop3.html",
+      "label": "Fenêtre des 24 heures : exception cohérente",
+      "before": "Durée certaine ≤ 24 heures : anticoaguler puis cardiovertir, ou attendre une conversion spontanée. Durée &gt; 24 heures ou inconnue : trois semaines d’anticoagulation ou ETO. Dans tous les cas : au moins quatre semaines d’anticoagulation après.",
+      "after": "Durée certaine ≤ 24 heures : anticoaguler puis cardiovertir, ou attendre une conversion spontanée. Durée &gt; 24 heures ou inconnue : trois semaines d’anticoagulation ou ETO. Après cardioversion : au moins quatre semaines habituellement ; exception possible selon le texte ESC 2024 seulement sans facteur de risque thromboembolique et si le rythme sinusal est rétabli dans les 24 heures du début certain.",
+      "reason": "La fenêtre ne présente plus le défaut général comme une règle sans exception ; les conditions de l’option doivent rester cumulatives.",
+      "primary_sources": [
+        "https://pure.eur.nl/ws/portalfiles/portal/182889750/2024_ESC_Guidelines_for_the_management_of_atrial_fibrillation_developed_in_collaboration_with_the_European_Association_for_Cardio-Thoracic_Surgery_EACTS_.pdf"
+      ]
+    },
+    {
+      "id": "I48-11",
+      "path": "chapters/I48/I48_pop4.html",
+      "label": "Pareto du rythme : exception cohérente",
+      "before": "Règle des 24 h (ESC 2024, ancien 48 h) : &gt; 24 h ou inconnue → 3 semaines d’anticoagulant ou ETO ; après : ≥ 4 semaines pour tous, puis selon le score. Attente-conversion spontanée = alternative (IIa).",
+      "after": "Règle des 24 h (ESC 2024, ancien 48 h) : &gt; 24 h ou inconnue → 3 semaines d’anticoagulant ou ETO ; après : ≥ 4 semaines habituellement. Exception possible sans facteur de risque thromboembolique et retour sinusal dans les 24 h du début certain ; au long cours, décider selon le risque. L’attente d’une conversion spontanée reste une alternative (IIa).",
+      "reason": "La synthèse conserve la règle opérationnelle et les conditions de l’exception documentée, sans en déduire une interruption automatique.",
+      "primary_sources": [
+        "https://pure.eur.nl/ws/portalfiles/portal/182889750/2024_ESC_Guidelines_for_the_management_of_atrial_fibrillation_developed_in_collaboration_with_the_European_Association_for_Cardio-Thoracic_Surgery_EACTS_.pdf"
+      ]
+    }
+  ],
+  "validation": "Vérification du texte primaire et unicité de chacun des 11 remplacements. Le contrôle statique et le rendu sont consignés après exécution des contrôles du dépôt. Cette contrelecture ciblée ne certifie pas chaque affirmation du cours entier.",
+  "technical_validation": {
+    "source_static_v7": "passed",
+    "command": "python3 test_v7.py --static I48",
+    "popup_templates": 88,
+    "interactive_keys": 89,
+    "missing_templates_in_repository": [],
+    "global_shared_keys": [
+      "e-crepitants"
+    ],
+    "applied_replacements_verified": 11,
+    "notes": "Dépendance insert_justifications restaurée par l’équipe, puis contrôle réel relancé. e-crepitants est une fenêtre partagée définie dans I50_pop2.html."
+  }
+}

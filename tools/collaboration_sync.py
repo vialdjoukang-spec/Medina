@@ -74,7 +74,13 @@ class GitHubClient:
         chapters = json.loads(self.content("chapters.json", commit))
         fragments = json.loads(self.content("fragments.json", commit))
         shell = self.content("shell/medina_front.html", commit).decode("utf-8")
-        return normalize_catalog(chapters, fragments, systems_from_shell(shell), "github:" + commit)
+        try:
+            course_groups = json.loads(self.content("organisation/course_groups.json", commit))
+        except RuntimeError as error:
+            if "HTTP 404" not in str(error):
+                raise
+            course_groups = []
+        return normalize_catalog(chapters, fragments, systems_from_shell(shell), "github:" + commit, course_groups)
 
     def receipts(self, commit):
         receipts = []
@@ -170,9 +176,10 @@ def systems_from_shell(source):
     return {e["code"]: e.get("system") for e in json.loads(match.group(1)).get("entries", [])} if match else {}
 
 
-def normalize_catalog(chapters, fragments, systems, basis):
+def normalize_catalog(chapters, fragments, systems, basis, course_groups=None):
     return {"chapters": {c["code"]: c for c in chapters} if isinstance(chapters, list) else chapters,
-            "fragments": fragments, "systems": systems, "basis": basis}
+            "fragments": fragments, "systems": systems, "basis": basis,
+            "course_groups": course_groups or []}
 
 
 def git_commit_available(root, commit):
@@ -237,10 +244,11 @@ def load_catalog(root, commit=None):
     chapters = read_json("chapters.json", [])
     fragments = read_json("fragments.json", [])
     return normalize_catalog(chapters, fragments, systems_from_shell(read_text("shell/medina_front.html")),
-                             "git:" + commit if pinned else "local_files_fallback")
+                             "git:" + commit if pinned else "local_files_fallback",
+                             read_json("organisation/course_groups.json", []))
 
 
-def chapter_routes(code, catalog):
+def base_chapter_routes(code, catalog):
     fragments = catalog["fragments"]
     explicit = {x for f in fragments for x in f.get("rattachements", []) if re.fullmatch(r"[A-Z][0-9]{2}", x)}
     routes = []
@@ -249,6 +257,50 @@ def chapter_routes(code, catalog):
         if code in attachments or (code not in explicit and catalog["systems"].get(code) in attachments):
             routes.append(fragment["id"])
     return routes
+
+
+def validated_course_group(code, catalog):
+    """Une rubrique automatique exige un groupe actif et des variantes complètes.
+
+    Le propriétaire doit être un fragment de cours déjà rattaché à chacune des
+    variantes dans le catalogue. Un simple champ owner ne suffit pas à créer
+    un nouveau rattachement ni à neutraliser le contrôle des rubriques.
+    """
+    groups = catalog.get("course_groups", [])
+    if not isinstance(groups, list):
+        return None, ["course_groups.json : liste de groupes attendue."]
+    matches = [g for g in groups if isinstance(g, dict) and g.get("code") == code]
+    if not matches:
+        return None, []
+    prefix = f"course_groups.json / {code} : "
+    if len(matches) != 1:
+        return None, [prefix + "le cours possède plusieurs groupes ; propriétaire ambigu."]
+    group = matches[0]
+    chapter = catalog["chapters"].get(code, {})
+    if group.get("integrated") is not True or chapter.get("integrated") is not True:
+        return None, [prefix + "le groupe et le cours doivent tous deux être activés."]
+    owner = group.get("owner")
+    owners = [f for f in catalog["fragments"] if f.get("id") == owner and f.get("surface") == "courses-v1"]
+    if len(owners) != 1:
+        return None, [prefix + "propriétaire absent ou ne désignant pas un fragment de cours unique."]
+    covers = group.get("covers")
+    declared = chapter.get("covers")
+    if (not isinstance(covers, list) or not covers or
+            any(not isinstance(c, str) or not re.fullmatch(r"[A-Z][0-9]{2}", c) for c in covers) or
+            len(covers) != len(set(covers)) or code not in covers or
+            not isinstance(declared, list) or
+            any(not isinstance(c, str) or not re.fullmatch(r"[A-Z][0-9]{2}", c) for c in declared) or
+            len(declared) != len(set(declared)) or set(covers) != set(declared)):
+        return None, [prefix + "toutes les variantes uniques déclarées dans chapters.json doivent être couvertes."]
+    unmatched = [variant for variant in covers if owner not in base_chapter_routes(variant, catalog)]
+    if unmatched:
+        return None, [prefix + f"le propriétaire {owner} n'est pas rattaché à chaque variante : " + ", ".join(unmatched) + "."]
+    return group, []
+
+
+def chapter_routes(code, catalog):
+    group, _ = validated_course_group(code, catalog)
+    return [group["owner"]] if group else base_chapter_routes(code, catalog)
 
 
 def route_file(path, catalog):
@@ -279,6 +331,10 @@ def route_file(path, catalog):
         parts = path.split("/")
         code = parts[1] if len(parts) > 2 else ""
         item.update(kind="course_source", course=code, routes=chapter_routes(code, catalog))
+        group, group_warnings = validated_course_group(code, catalog)
+        item["warnings"].extend(group_warnings)
+        if group:
+            item.update(group_owner=group["owner"], covers=group["covers"])
         chapter = catalog["chapters"].get(code)
         if chapter is None:
             item["warnings"].append("Cours absent de chapters.json de la cible ; déclaration à intégrer.")
@@ -290,7 +346,8 @@ def route_file(path, catalog):
             groups = [c for g in f.get("categories", []) for c in g.get("chapters", [])]
             if f.get("surface") == "courses-v1":
                 count = groups.count(code)
-                if f["id"] in item["routes"] and count != 1:
+                automatic_group = bool(group and f["id"] == group["owner"] and count == 0)
+                if f["id"] in item["routes"] and count != 1 and not automatic_group:
                     item["warnings"].append(f"{f['id']} : le cours doit figurer exactement une fois dans categories[].chapters.")
                 elif f["id"] not in item["routes"] and count:
                     item["warnings"].append(f"{f['id']} : rubrique contenant le cours sans rattachement correspondant.")
@@ -472,7 +529,8 @@ def main(argv=None):
     raw_catalog = snapshot.get("catalog")
     if raw_catalog:
         catalog = normalize_catalog(raw_catalog.get("chapters", []), raw_catalog.get("fragments", []),
-                                    raw_catalog.get("systems", {}), raw_catalog.get("basis", "snapshot_catalog"))
+                                    raw_catalog.get("systems", {}), raw_catalog.get("basis", "snapshot_catalog"),
+                                    raw_catalog.get("course_groups", []))
     else:
         catalog = load_catalog(args.root, target_sha)
         if catalog["basis"] == "local_files_fallback":

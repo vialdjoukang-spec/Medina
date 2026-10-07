@@ -67,3 +67,11 @@ Une nouvelle livraison ne modifie pas rétroactivement la base d'une relecture e
 - Ancienne branche I48 : `claude/review-i48-esc2024-20261007` ; sa mission reste une sous-tâche de l'audit global.
 
 Les états « publié », « relu », « corrigé », « testé techniquement » et « vérifié médicalement » restent distincts. Une rédaction révisée ne certifie pas la complétude CIM-11.
+
+## Justifications physiopathologiques
+
+- [Répartition Codex / Claude et suivi par cours](MECHANISMS_PLAN.json).
+- [Consigne exhaustive pour Claude et remise contrôlée](MECHANISMS_CLAUDE.md).
+- [Consigne déjà transmise à Claude dans PR #10](https://github.com/vialdjoukang-spec/Medina/pull/10#issuecomment-6041361558).
+
+Les contrôles techniques prouvent l’ouverture des fenêtres et la conservation du contenu ; ils ne prouvent pas que chaque affirmation a reçu sa justification ni que la CIM-11 est complète.
