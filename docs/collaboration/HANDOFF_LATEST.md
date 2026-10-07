@@ -73,6 +73,7 @@ La mission demeure une relecture de l’ensemble : quatre onglets, fenêtres, fi
 
 - Injecter les lots 2 et 3 de Claude avec `apply-claude` (C-01-Cardiologie et P-02-Pneumologie), puis reconstruire S01 et S02.
 - Mission commune de justification systématique : voir `MISSION_JUSTIFICATION_2026-10-07.md` (PR #11) pour la répartition 15/15. Claude commence par I48 comme cours pilote.
+- **Lot 4 de Claude (I48, justification systématique) interrompu** : inventaire de 505 affirmations, plan et 53 fenêtres fusionnées sauvegardés ; reprise décrite dans `livraisons/Livraison Claude/C-01-Cardiologie/travail/lot4_I48_justification/REPRISE.md` (branche `claude/review-medina-global-20261007`).
 - Poursuivre la relecture intégrale des 30 cours et de CS ; les réserves médicales du lot 3 sont à reprendre cours par cours.
 - Réserves de la PR #8 : la fenêtre des épisodes auriculaires rapides (R08) est corrigée par le lot 2 ; le complément vasculaire de CS (C10) reste ouvert.
 - Constituer l’inventaire CIM-11 par fragment : aucun fragment n’est actuellement certifié complet. Le catalogue local historique contient 1 636 catégories CIM-10-GM 2024.
