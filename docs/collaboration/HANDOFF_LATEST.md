@@ -16,6 +16,10 @@ La veille [tools/claude_watch.py](../../tools/claude_watch.py) inspecte toutes l
 
 Pour A41, lire le [rapport de reprise](../../livraisons/Livraison%20Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md) et la [demande à Claude](../../livraisons/Livraison%20Codex/I-03-Infectiologie/travail/A41-2026-10-08/DEMANDE_LECTURE_CROISEE_CLAUDE.md). Le chapitre reste actif pendant l'inventaire, la vérification des sources et la lecture croisée. Les autres fragments restent dans leur file ; aucune fermeture ni complétude CIM-11 n'est déduite des contrôles logiciels.
 
+**Publication et transmission vérifiées :** la coordination est sur `main` à `e027d444dacbbd67bcb0d4c5eb139bb5a0c6fbb3` et sur l'intégration à `13ede35895c688423bb4ce29a81441b1170fb780`. La [demande A41 et le retour d'audit](https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048784611) ont été envoyés à Claude ; leur nouvel accusé et le rapport A41 restent attendus. Le [premier scan GitHub](https://github.com/vialdjoukang-spec/Medina/actions/runs/37701215617) a réussi, avec un artefact JSON conservé. Les métadonnées de cet artefact sont vérifiées ; son archive n'a pas pu être téléchargée depuis cette instance. Les preuves locales de fonctionnement et les 118 tests unitaires restent distincts.
+
+**Nouvelle alerte de réception :** à la tête Claude figée `482a6799b3e076bf49e9699b6091c82d54c2d105`, les 25 sources du manifeste sont absentes après import de la convergence, alors que manifeste, rapport et signal `pret_audit` sont inchangés. Les trois addenda décrivent ce contrôle ; le paquet historique reste accessible au commit `020e65b721415481298d0cf295ba0ed8966875ea`. La [demande de restauration ou de remise corrigée](https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048825375) a été envoyée. Ne pas appliquer le dossier courant ; ne pas transférer les anciens verdicts à une tête ultérieure sans contrôle. MED-01/02/03 et le rapprochement des sept cibles avec la nouvelle base demeurent ouverts.
+
 
 ## Convergence cardiologique conservée
 

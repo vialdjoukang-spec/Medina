@@ -110,3 +110,47 @@ Les repères de ligne suivants concernent les objets de `3f90204`, sous `livrais
 Cette seconde contrelecture concerne les passages finaux cités et les éléments de remise. Elle ne constitue pas un audit de tous les 25 fichiers complets, des quatre onglets de chacun des huit chapitres, du glossaire ou de toutes les fenêtres. Aucun code entrant — y compris le nouveau programme de veille — n’a été exécuté par ce poste ; aucun canonique n’a été modifié.
 
 La nouvelle remise est recevable pour examen, contrairement à l’état documentaire de la première tête. **Les réserves médicales ciblées restent ouvertes.** La prochaine étape est de faire corriger les formulations MED-02 et MED-03, de rendre reproductible la vérification primaire MED-01, puis de relire chaque chapitre séparément au nouveau SHA. Les chapitres en réserve ne doivent pas être injectés par bloc au seul motif que le manifeste comporte des empreintes ou que Claude déclare des contrôles techniques réussis. Le signal `audits_de_codex: []` à la tête reçue ne constitue pas une attestation d’approbation de cette remise.
+
+## Contrôle du delta — 8 octobre 2026, tête figée `482a679`
+
+**Les réserves MED-01, MED-02 et MED-03 ne sont pas levées. Le manifeste reste présent, mais ses 25 fichiers sources sont absents de la nouvelle tête.** Ce contrôle établit une évolution de la remise et l’identité de ses éléments de travail ; il ne constitue pas un nouvel audit médical exhaustif.
+
+Révisions comparées dans le miroir `/workspace/medina-env/claude-watch/git` : `3f90204dc663d6f7dee3e98bbd5819d457b6a586` → `482a6799b3e076bf49e9699b6091c82d54c2d105`. Méthode : `git diff --name-status --no-renames` sur les chemins de remise ; inventaires exacts des objets par `git ls-tree -r -z` des deux commits ; comparaison des identifiants de blobs ; lecture du signal. Aucun programme entrant exécuté, aucune injection ni écriture canonique.
+
+### Éléments rigoureusement identiques
+
+Tous les chemins de cette table sont relatifs à `livraisons/Livraison Claude/C-01-Cardiologie/`. L’identifiant donné est le même blob Git dans les deux têtes : il prouve une identité de contenu, sans répéter artificiellement la contrelecture.
+
+| Élément | Blob identique à `3f90204` et `482a679` |
+| --- | --- |
+| `livraison.json` | `f97e7e568332fabede091663a311b4d40b69e498` |
+| `archives/2026-10-08-ESC2026_COMPARAISONS/rapport.md` | `285d4f54f7e551e45b057697bc5a899e9a4c2b96` |
+| Job de l’ancre CRT — I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie), `travail/esc2026/I44/jobs/i44-esc-2026-comparaison__P1.json` | `af26ee7c3cd88980b8c7958cd255de64d1f46a16` |
+| Sortie comparative — I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie), `travail/esc2026/I44/out/i44-esc-2026-comparaison__P1.html` | `48b8bbca41109b0bbfdee44bd3258e87fe2746df` |
+| Sortie comparative — I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie), `travail/esc2026/I30/out/i30-esc-2026-comparaison__P1.html` | `9262e9ab47c676ec6bc55acbf60527c9a9b3c044` |
+| `travail/esc2026/verification.json` | `c902b5c87e7d8d4432fa0aa00dcb7ef6e3466c25` |
+
+Le signal `docs/collaboration/SIGNAUX_CLAUDE.json` annonce encore le commit `020e65b721415481298d0cf295ba0ed8966875ea`, état `pret_audit`, et `audits_de_codex: []`. Il n’annonce pas une correction des réserves.
+
+### Sources finales absentes, et non simplement identiques
+
+Le manifeste inchangé référence 25 `source_path`. La comparaison avec l’arbre exact de `482a679` constate **25 absences sur 25** dans le dossier racine de remise. Pour les deux chapitres ciblés, les anciens blobs finaux ci-dessous ont aussi été recherchés dans l’ensemble de la nouvelle arborescence : aucun chemin de cette tête ne porte ces mêmes blobs. Le déplacement apparent de certains fichiers dans des archives historiques ne préserve donc pas ces six versions finales à l’identique dans la tête courante.
+
+| Chapitre | Ancien chemin sous `sources/` | Blob final de `3f90204` | État à `482a679` |
+| --- | --- | --- | --- |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie) | `chapters/I44/I44_a.html` | `8fa3aff363658a2ea556cfc90b9dce8eb6145b32` | Absent ; aucun même blob ailleurs dans l’arbre. |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie) | `chapters/I44/I44_b.html` | `e059d922a523387f544c658cc32d4b92a401ea75` | Absent ; aucun même blob ailleurs dans l’arbre. |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie) | `chapters/I44/I44_c.html` | `e486d4cb00b862d72f89cdc1d5abc31e10804e9d` | Absent ; aucun même blob ailleurs dans l’arbre. |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie) | `chapters/I44/I44_pop_esc_comparison.html` | `372f05d873e4cf2ab653da32da713e06996ffeda` | Absent ; aucun même blob ailleurs dans l’arbre. |
+| I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie) | `chapters/I30/I30_c.html` | `d3958e434a347f02d3afe048598aa0b4fae8d1ce` | Absent ; aucun même blob ailleurs dans l’arbre. |
+| I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie) | `chapters/I30/I30_pop_esc_comparison.html` | `617df074924cc2bfe3639cfc53360aa5d0122b6a` | Absent ; aucun même blob ailleurs dans l’arbre. |
+
+Les anciens objets restent récupérables au commit de remise déclaré ; leur absence dans cette nouvelle tête ne signifie pas qu’ils ont disparu de l’historique. En revanche, on ne peut pas contrôler ou injecter le dossier courant selon ce manifeste comme si ses sources existaient encore.
+
+### État des réserves et décision
+
+- **MED-01 : non levée.** Aucun document primaire sous `travail/esc2026/**/src/` ni PDF de ce périmètre n’est présent dans l’arbre reçu. Le rapport et la contrevérification restent identiques et renvoient aux copies locales non versionnées. Aucune nouvelle lecture indépendante de tableau n’est établie. La limite d’accès primaire reste distincte d’une erreur médicale démontrée.
+- **MED-02 : non levée.** Pour **I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie)**, le job qui conserve « recommandée » avec la classe IIa et la fenêtre « à envisager » n’ont pas changé. Les fichiers finaux courants sont absents ; aucune nouvelle version finale corrigée n’est livrée au chemin annoncé. La contradiction constatée au commit précédent demeure dans la proposition conservée, sans préjuger de la validité primaire du changement de classe.
+- **MED-03 : non levée.** Pour **I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie)**, la sortie contenant le paragraphe insuffisamment conditionné est le même blob que précédemment. Aucun fichier final corrigé n’est remis dans la tête courante.
+
+**Injection du lot courant suspendue :** restaurer ou remettre explicitement les sources du chapitre choisi avec un manifeste cohérent, corriger les réserves et rendre accessible leur preuve primaire, puis faire vérifier la version exacte. Ce contrôle n’a pas audité toutes les autres modifications importées dans la nouvelle tête, ni les nouveaux brouillons de production ; leurs différences ne sont pas assimilées à une résolution de ces réserves.
