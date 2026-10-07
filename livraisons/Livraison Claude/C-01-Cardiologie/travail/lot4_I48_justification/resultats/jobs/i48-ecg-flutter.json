@@ -1,0 +1,53 @@
+{
+ "cle": "i48-ecg-flutter",
+ "titre": "ECG du flutter typique et atypique",
+ "action": "completer",
+ "fichier_cible": "I48_pop2",
+ "contenu_attendu": "Fusion des thèmes I48_b, I48_c et I48_pop2 (le thème pop2 « Rapport de conduction auriculoventriculaire dans le flutter » est rattaché ici, sans nouvelle fenêtre). (1) Rubrique « Flutter typique antihoraire », morphologie : en rythme sinusal, l’activation des oreillettes dure environ 80 à 100 ms, puis elles restent électriquement silencieuses jusqu’à l’onde P suivante, d’où le segment isoélectrique. Dans le flutter, le macrocircuit active en permanence une partie de l’oreillette : aucun instant n’est silencieux, et l’ECG enregistre une ondulation continue en dents de scie. Polarité : l’activation remonte le septum interauriculaire de bas en haut et s’éloigne des dérivations inférieures, d’où des ondes F négatives en II, III et aVF ; la positivité en V1 est attribuée à l’activation de la paroi antérolatérale de l’oreillette droite, interprétation simplifiée et discutée : le dire. Le sens horaire inverse ces polarités. Conséquence : cette polarité prédit un circuit dépendant de l’isthme cavotricuspide, donc une ablation de l’isthme au taux de succès élevé (renvoi i48-cti). (2) Rubrique « Conduction auriculoventriculaire » : à 300/min, une onde F survient toutes les 200 ms ; la période réfractaire nodale au repos est plus longue, si bien qu’une onde sur deux trouve le nœud réfractaire : conduction 2:1, fréquence ventriculaire fixe d’environ 150/min, qui varie peu avec l’effort. L’onde non conduite tombe à mi-cycle, dans le QRS ou l’onde T, et devient invisible, ce qui simule une tachycardie sinusale. Les freinateurs allongent la période réfractaire : 4:1, environ 75/min ; une conduction variable donne des RR irréguliers mais multiples d’un même cycle. Au cou, les ondes de flutter battent à un multiple de la fréquence du pouls, et ce rapport reflète la conduction (renvoi i48-e-jug). Conduction 1:1 : catécholamines (effort, sepsis, perfusion) qui raccourcissent la période réfractaire nodale, classe Ic qui ralentit le flutter (renvoi i48-ic-flutter), voie accessoire sans filtre (renvoi i48-preexc) ; 200 à 300/min, diastole effacée, débit effondré. (3) Rubrique « Pourquoi la 2:1 résiste aux freinateurs » : il n’existe pas d’étape intermédiaire ; passer à 3:1 ou 4:1 exige un bloc nodal beaucoup plus marqué, et les doses nécessaires provoquent souvent hypotension ou bradycardie (ESC 2024, section 9.14). Règle : une tachycardie régulière fixée vers 150/min, indépendante de l’effort, est un flutter 2:1 jusqu’à preuve du contraire. Décision : regarder V1 et les dérivations inférieures, puis manœuvre vagale ou adénosine (renvoi i48-adeno) ; cardioversion ou ablation de l’isthme, supérieure aux antiarythmiques. Sources : Saoudi N et al., Eur Heart J 2001;22:1162-82 ; Brugada J et al., ESC 2019 sur les tachycardies supraventriculaires, Eur Heart J 2020;41:655-720, section flutter ; Issa ZF, Miller JM, Zipes DP, Clinical Arrhythmology and Electrophysiology, 3e éd. ; Braunwald’s Heart Disease, 12e éd. ; Guyton & Hall, 14e éd. ; ESC 2024, section 9.14 et tableau 13.",
+ "ancres": [
+  {
+   "file": "I48_b",
+   "id": "I48_b-1",
+   "old": "négatives en II, III et aVF et positives en V1, à environ 300/min. Avec une conduction 2:1, la fréquence ventriculaire est régulière à 150/min",
+   "label": "négatives en II, III et aVF"
+  },
+  {
+   "file": "I48_b",
+   "id": "I48_b-67",
+   "old": "car la conduction 2:1 résiste souvent aux freinateurs.",
+   "label": "conduction 2:1 résiste souvent"
+  },
+  {
+   "file": "I48_c",
+   "id": "I48_c-5",
+   "old": "<td>Dents de scie sans ligne isoélectrique (II, III, aVF)</td>",
+   "label": "Dents de scie sans ligne isoélectrique"
+  },
+  {
+   "file": "I48_c",
+   "id": "I48_c-65",
+   "old": "Le flutter typique antihoraire donne des ondes négatives en dérivations inférieures et positives en V1.",
+   "label": "Le flutter typique antihoraire"
+  },
+  {
+   "file": "I48_pop2",
+   "id": "I48_pop2-36",
+   "old": "2:1 le plus souvent (≈ 150/min) ; 4:1 sous freinateur (≈ 75/min) ; variable (RR irréguliers mais multiples d’un même cycle) ; 1:1 exceptionnel et dangereux (catécholamines, classe Ic, voie accessoire).",
+   "label": "2:1 le plus souvent"
+  },
+  {
+   "file": "I48_pop2",
+   "id": "I48_pop2-82",
+   "old": "Une onde F cachée dans le QRS ou l’onde T fait croire à une tachycardie sinusale.",
+   "label": "Une onde F cachée"
+  },
+  {
+   "file": "I48_pop2",
+   "id": "I48_pop2-88",
+   "old": "à une fréquence multiple de celle du pouls",
+   "label": "multiple de celle du pouls"
+  }
+ ],
+ "fenetre_existante": "<template data-pop=\"i48-ecg-flutter\" data-title=\"ECG du flutter typique et atypique\">\n<div class=\"lab\">Flutter typique antihoraire (le plus fréquent)</div><p>Circuit autour de l’anneau tricuspide, montant le long du septum et descendant le long de la paroi latérale. Ondes F en dents de scie, sans ligne isoélectrique, <b>négatives en II, III et aVF</b>, <b>positives en V1</b>. Fréquence auriculaire 250–350/min.</p>\n<div class=\"lab\">Flutter typique horaire</div><p>Même circuit, sens inverse : ondes F <b>positives</b> dans les dérivations inférieures, larges et <b>négatives en V1</b>. Également dépendant de l’isthme cavotricuspide.</p>\n<div class=\"lab\">Flutter atypique</div><p>Circuit indépendant de l’isthme : autour de cicatrices de chirurgie cardiaque ou d’ablation, autour de l’anneau mitral, sur le toit de l’oreillette gauche. Morphologie des ondes variable, parfois avec une ligne isoélectrique entre elles, ce qui le rapproche d’une tachycardie atriale. Son ablation exige une cartographie électroanatomique.</p>\n<div class=\"lab\">Conduction auriculoventriculaire</div><p>2:1 le plus souvent (≈ 150/min) ; 4:1 sous freinateur (≈ 75/min) ; variable (RR irréguliers mais multiples d’un même cycle) ; 1:1 exceptionnel et dangereux (catécholamines, classe Ic, voie accessoire).</p>\n<div class=\"lab\">Pièges</div><p>Une onde F cachée dans le QRS ou l’onde T fait croire à une tachycardie sinusale. Retourner le tracé ou regarder V1 et les dérivations inférieures aide ; l’adénosine démasque les ondes F.</p></template>",
+ "fichier_reel": "I48_pop2"
+}

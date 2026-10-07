@@ -1,0 +1,24 @@
+{
+ "cle": "i48-cg",
+ "action": "completer",
+ "sources": [
+  "Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41. doi:10.1159/000180580",
+  "Inker LA et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med 2021;385:1737-1749. doi:10.1056/NEJMoa2102953",
+  "Steffel J et al. 2021 European Heart Rhythm Association Practical Guide on the Use of Non-Vitamin K Antagonist Oral Anticoagulants in Patients with Atrial Fibrillation. Europace 2021;23:1612-1676. doi:10.1093/europace/euab065",
+  "Van Gelder IC et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J 2024;45:3314-3414. doi:10.1093/eurheartj/ehae176 — section 6.2.1 et tableau 11",
+  "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology, 14e éd. Elsevier, 2021 — physiologie rénale, créatinine"
+ ],
+ "verification": "corrigée",
+ "problemes_corriges": [
+  "Le plan disait que le DFG indexé « surestime la filtration réelle » : précisé en deux causes chiffrées sur l’exemple existant (indexation à 1,73 m² : 45 → environ 39 mL/min pour 1,5 m² ; terme (140 − âge) : → 29 mL/min), sans prétendre que l’une ou l’autre formule mesure la filtration vraie.",
+  "Rubriques ajoutées à la fin (action compléter) au lieu de réécrire « Pourquoi cette formule » ; aucune redite de l’existant.",
+  "Exemple décisionnel concret ajouté : dabigatran permis à 45 mL/min/1,73 m² (110 mg, âge ≥ 80 ans) mais contre-indiqué à 29 mL/min."
+ ],
+ "ancres_retirees": [],
+ "label_modifies": [],
+ "reserves": [
+  "La taille de 1,58 m est une hypothèse ajoutée à l’exemple existant pour calculer la surface corporelle (Mosteller : environ 1,51 m²).",
+  "L’ESC 2024 (section 6.2.1) formule la contre-indication du dabigatran en DFG estimé < 30 mL/min/1,73 m², alors que le guide EHRA et l’information professionnelle la formulent en clairance de Cockcroft-Gault ; la fenêtre suit le cours (clairance).",
+  "Le sigle DFG n’est pas dans la liste I48 fournie mais existe dans glossary/cardio_1.py et figure déjà dans le texte d’ancrage ; CKD-EPI également défini dans cardio_1.py."
+ ]
+}
