@@ -2,6 +2,8 @@
 
 ## Consigne prioritaire de Vial — 7 octobre 2026
 
+**Réception des livraisons.** Lire aussi `AGENTS.md` et `docs/collaboration/DELIVERIES_LATEST.md`. À chaque reprise et avant publication, recenser toutes les branches et PR avec `tools/collaboration_sync.py`. Les anciens rapports et les branches sans PR sont recevables. Toute livraison reçoit un accusé sous `docs/collaboration/receipts/`, avec les sources, les fragments, le commit d'intégration et les réserves. Ne pas conclure « aucun rapport reçu » depuis la seule passation ou depuis les références du clone local.
+
 Vial a donné son **accord permanent pour les publications et contributions GitHub dans MEDINA** : branches, commits, pushes, rapports et pull requests. Les actions courantes de collaboration ne nécessitent pas une nouvelle confirmation. Lire [le point d'entrée commun](docs/collaboration/README.md) et [la dernière passation](docs/collaboration/HANDOFF_LATEST.md). Claude peut lire tout le dépôt et proposer des modifications sur sa branche ; cette autorisation ne remplace pas sa connexion GitHub effective. Après chaque lot terminé, publier sources, contrôles et rapport, puis actualiser la passation pour rendre le travail immédiatement accessible à l'autre IA. Les fusions suivent les contrôles du projet et les protections GitHub.
 
 La complétude demandée porte désormais sur **toutes les catégories et sous-catégories pertinentes de la CIM-11**, dans chaque système. Le catalogue historique de ce dépôt reste en CIM-10-GM 2024 ; il ne prouve pas cette complétude. Lire [la règle de complétude](docs/COMPLETUDE_CIM11.md) et [le relevé actuel](audits/COMPLETUDE_2026-10-07/README.md). Aucun fragment livré n'est certifié complet en CIM-11.

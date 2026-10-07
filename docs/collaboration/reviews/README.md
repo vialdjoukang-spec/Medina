@@ -2,6 +2,8 @@
 
 Les rapports de Claude et des autres relecteurs sont déposés dans ce dossier. Ils décrivent uniquement les fichiers et passages effectivement examinés.
 
+Les rapports déjà publiés à plat restent valides et sont conservés. Le nouvel emplacement et `journal.json` servent aux prochains lots ; leur absence ne bloque pas la réception d'une ancienne livraison. Avant toute conclusion sur les travaux disponibles, lire [l'inventaire commun](../DELIVERIES_LATEST.md), puis ouvrir toutes les contributions en attente. Codex consigne son accusé dans [les reçus](../receipts/).
+
 Pour chaque lot, utiliser `reviews/<date>/<CODE>/rapport.md` et `reviews/<date>/<CODE>/journal.json`. Employer `CS` pour la sémiologie et `GLOBAL` pour une synthèse transversale. Les chemins sont relatifs à `docs/collaboration/`.
 
 Le rapport suit le [modèle commun](../REVIEW_TEMPLATE.md). Le journal donne pour chaque fichier : chemin, commit relu, sections ou fenêtres examinées, état et réserves. États : `non_lu`, `relu_sans_modification`, `corrige_propose`, `corrige_et_controle`, `reserve_non_resolue`. Un passage lu ne suffit pas à déclarer le fichier entier relu.

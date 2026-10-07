@@ -1,0 +1,38 @@
+name: Repérer les livraisons MEDINA
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+      - name: Vérifier le scanner
+        run: python -m unittest discover -s tests -p test_collaboration_sync.py
+      - name: Repérer toutes les branches et pull requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/collaboration_sync.py --out "$RUNNER_TEMP/medina-collaboration"
+      - name: Présenter le rapport
+        if: always()
+        run: |
+          if test -f "$RUNNER_TEMP/medina-collaboration/DELIVERIES_LATEST.md"; then
+            cat "$RUNNER_TEMP/medina-collaboration/DELIVERIES_LATEST.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: medina-collaboration-${{ github.run_id }}
+          path: ${{ runner.temp }}/medina-collaboration/
+          if-no-files-found: warn

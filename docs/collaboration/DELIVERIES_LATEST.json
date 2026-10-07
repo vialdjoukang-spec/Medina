@@ -1,0 +1,5525 @@
+{
+  "schema_version": 1,
+  "scanned_at": "2026-10-07T09:18:00.798729+00:00",
+  "repository": "vialdjoukang-spec/Medina",
+  "integration_branch": "codex/sciences-cs-fragments-20261007",
+  "integration_commit": "f5c83957a239a27b836b838063e97835cd80f4d9",
+  "scan_complete": true,
+  "notes": [],
+  "catalog_basis": "verified_tree:8b39acdf91589b4e9c778da7b81c3824ef6e0409",
+  "limits": [
+    "Les rapports et les tests déclarés ne constituent pas une vérification médicale indépendante.",
+    "Le routage est contrôlé contre les sources locales de la cible, avant les changements proposés.",
+    "Aucune branche n'est fusionnée, aucun reçu créé et aucun commit publié par ce scanner."
+  ],
+  "deliveries": [
+    {
+      "delivery_id": "head-871bb223564deda6931ab74bc7f0499ced97c65c",
+      "head_sha": "871bb223564deda6931ab74bc7f0499ced97c65c",
+      "branches": [
+        "codex/accueil-qcm-20260929"
+      ],
+      "pull_requests": [
+        {
+          "number": 6,
+          "title": "Moderniser l’accueil et créer les QCM de consolidation MEDINA",
+          "state": "open",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/6",
+          "base": {
+            "ref": "main",
+            "sha": "92b1db11a594d748e20d7f00e4bacb02a02d5602"
+          },
+          "head": {
+            "ref": "codex/accueil-qcm-20260929",
+            "sha": "871bb223564deda6931ab74bc7f0499ced97c65c"
+          },
+          "merged_at": null
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [
+        {
+          "path": ".github/workflows/pages.yml",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "integration_target"
+        },
+        {
+          "path": "CLAUDE.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "integration_target"
+        },
+        {
+          "path": "build_index.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "integration_target"
+        },
+        {
+          "path": "docs/QCM_MEDINA.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "integration_target"
+        },
+        {
+          "path": "site/index_template.html",
+          "kind": "consultation_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "integration_target"
+        },
+        {
+          "path": "site/qcm.html",
+          "kind": "consultation_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "integration_target"
+        }
+      ],
+      "routes": [
+        "GLOBAL"
+      ],
+      "warnings": [
+        "PR #6 vise main ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-303f95a66dd2b4b0622867854d2add4bce4de310",
+      "head_sha": "303f95a66dd2b4b0622867854d2add4bce4de310",
+      "branches": [
+        "claude/medina-alpha-integration-7dul4i"
+      ],
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Intégration des sources MEDINA_Alpha",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/1",
+          "base": {
+            "ref": "main",
+            "sha": "86f4a9e6ce365f25600a00f6cc7b07ef15ade907"
+          },
+          "head": {
+            "ref": "claude/medina-alpha-integration-7dul4i",
+            "sha": "303f95a66dd2b4b0622867854d2add4bce4de310"
+          },
+          "merged_at": "2026-09-27T23:58:27Z"
+        }
+      ],
+      "received": true,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [
+        "4b8e9f6af187543de87690cb9cc5e57dbb21777f"
+      ],
+      "files": [
+        {
+          "path": ".claude/commands/audit.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": ".claude/commands/chapitre.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": ".claude/commands/cycle.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": ".claude/commands/fusion-alpha.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": ".claude/commands/livrer.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": ".gitignore",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "CHAPTER_SPEC.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "CLAUDE.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "MEDINA_ClaudeCode.zip",
+          "kind": "derived",
+          "routes": [],
+          "warnings": [
+            "Sortie dérivée ; intégrer les sources puis reconstruire."
+          ],
+          "change": "removed",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "PASSATION_REECRITURE_2026-09-26.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "PROMPT_MEDINA.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "PROMPT_REPRISE_IA.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "README.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "REPRISE_CLAUDE_CODE.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "_alpha_in/LISEZMOI.txt",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "_alpha_in/MEDINA_Alpha_26-09-2026.html",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "renamed",
+          "diff_basis": "pull_request_base",
+          "previous_path": "MEDINA_Alpha_26-09-2026.html",
+          "previous_route": {
+            "path": "MEDINA_Alpha_26-09-2026.html",
+            "kind": "derived",
+            "routes": [],
+            "warnings": [
+              "Sortie dérivée ; intégrer les sources puis reconstruire."
+            ]
+          }
+        },
+        {
+          "path": "_alpha_in/MEDINA_Alpha_PASSATION_2026-09-26.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "renamed",
+          "diff_basis": "pull_request_base",
+          "previous_path": "MEDINA_Alpha_PASSATION_2026-09-26.md",
+          "previous_route": {
+            "path": "MEDINA_Alpha_PASSATION_2026-09-26.md",
+            "kind": "documentation",
+            "routes": [
+              "GLOBAL"
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "path": "_alpha_in/MEDINA_Alpha_TRANSPORT_26-09-2026.zip",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "renamed",
+          "diff_basis": "pull_request_base",
+          "previous_path": "MEDINA_Alpha_TRANSPORT_26-09-2026.zip",
+          "previous_route": {
+            "path": "MEDINA_Alpha_TRANSPORT_26-09-2026.zip",
+            "kind": "derived",
+            "routes": [],
+            "warnings": [
+              "Sortie dérivée ; intégrer les sources puis reconstruire."
+            ]
+          }
+        },
+        {
+          "path": "audits/A41.md",
+          "kind": "review_report",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/DESIGN_2026-09-26.md",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_MODERNISATION.md",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/01_accueil_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/01_accueil_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/01_accueil_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/02_accueil_directeur_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/02_accueil_directeur_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/03_bouton_directeur_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/03_bouton_directeur_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/04_notification_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/04_notification_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/05_specialite_cardiologie_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/05_specialite_cardiologie_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/05_specialite_cardiologie_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/06_systeme_cardiologie_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "SYSTEM"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/06_systeme_cardiologie_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "SYSTEM"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/07_entree_cim_plan_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/07_entree_cim_plan_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/08_cours_entete_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/08_cours_entete_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/08_cours_entete_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/09_cours_ilot_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/09_cours_ilot_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/09_cours_ilot_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/10_cours_fenetre_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/10_cours_fenetre_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/10_cours_fenetre_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/11_cours_quiz_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/11_cours_quiz_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/11_cours_quiz_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/12_cours_pareto_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/12_cours_pareto_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/13_cours_navigo_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/13_cours_navigo_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/13_cours_navigo_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/14_cours_police_taille_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/14_cours_police_taille_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/15_cours_mode_livre_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/15_cours_mode_livre_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/16_cours_sciences_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/16_cours_sciences_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/17_examen_federal_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/17_examen_federal_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/17_examen_federal_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/18_carnet_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/18_carnet_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/19_recherche_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/19_recherche_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/19_recherche_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/20_methode_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/20_methode_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/21_atlas_ecg_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/21_atlas_ecg_pc-sombre.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/apres/21_atlas_ecg_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/01_accueil_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/01_accueil_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/02_accueil_directeur_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/02_accueil_directeur_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/03_bouton_directeur_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/03_bouton_directeur_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/04_notification_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/04_notification_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/05_specialite_cardiologie_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/05_specialite_cardiologie_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/06_systeme_cardiologie_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "SYSTEM"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/06_systeme_cardiologie_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "SYSTEM"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/07_entree_cim_plan_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/07_entree_cim_plan_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/08_cours_entete_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/08_cours_entete_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/09_cours_ilot_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/09_cours_ilot_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/10_cours_fenetre_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/10_cours_fenetre_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/11_cours_quiz_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/11_cours_quiz_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/12_cours_pareto_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/12_cours_pareto_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/13_cours_navigo_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/13_cours_navigo_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/14_cours_police_taille_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/14_cours_police_taille_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/15_cours_mode_livre_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/15_cours_mode_livre_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/16_cours_sciences_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/16_cours_sciences_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/17_examen_federal_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/17_examen_federal_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/18_carnet_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/18_carnet_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/19_recherche_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/19_recherche_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/20_methode_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/20_methode_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/21_atlas_ecg_mobile.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FRONT_captures/avant/21_atlas_ecg_pc.png",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FUSION_ALPHA.md",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FUSION_GLOSSAIRE.md",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/FUSION_J44.md",
+          "kind": "review_report",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/HOME_DIRECTEUR_2026-09-26.md",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/I26.md",
+          "kind": "review_report",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/J18.md",
+          "kind": "review_report",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/J18_sources.md",
+          "kind": "review_report",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/J44.md",
+          "kind": "review_report",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/NAVIGO_2026-09-26.md",
+          "kind": "review_report",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "build_front.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "build_medina.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "build_v7.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "captures_front.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chantier.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters.json",
+          "kind": "registration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Vérifier titres, covers, activation, rattachements et rubriques après intégration."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/A41/A41_a.html",
+          "kind": "course_source",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/A41/A41_b.html",
+          "kind": "course_source",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/A41/A41_c.html",
+          "kind": "course_source",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/A41/A41_d.html",
+          "kind": "course_source",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/A41/A41_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/A41/A41_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/A41/A41_pop_pa.html",
+          "kind": "course_source",
+          "routes": [
+            "T1"
+          ],
+          "warnings": [],
+          "course": "A41",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/D84/D84_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "D84",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/D84/D84_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "D84",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/D84/D84_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "D84",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/D84/D84_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "D84",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/D84/D84_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "D84",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/D84/D84_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "D84",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I00/I00_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I00",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I10/I10_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I10",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I21/I21_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I25/I25_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I25",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I26/I26_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I26/I26_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I26/I26_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I26/I26_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I26/I26_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I26/I26_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I26/I26_pop_pa.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "I26",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I30/I30_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I30",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I33/I33_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I33",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I34/I34_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I34",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I35/I35_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I35",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I40/I40_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I40",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I42/I42_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I42",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I44/I44_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I46/I46_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I46",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I47/I47_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I47",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I49/I49_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I49",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I50/I50_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I50",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I70/I70_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I70",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I70/I70_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I70",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I70/I70_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I70",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I70/I70_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I70",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I70/I70_pop.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I70",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I71/I71_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I71",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I71/I71_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I71",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I71/I71_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I71",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I71/I71_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I71",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I71/I71_pop.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I71",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I80/I80_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I80",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I80/I80_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I80",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I80/I80_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I80",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I80/I80_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I80",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I80/I80_pop.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I80",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J18/J18_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J18/J18_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J18/J18_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J18/J18_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J18/J18_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J18/J18_pop_pa.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J18",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J44/J44_pop_pa.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J44",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/J45/J45_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S02"
+          ],
+          "warnings": [],
+          "course": "J45",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M06/M06_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S10"
+          ],
+          "warnings": [],
+          "course": "M06",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M06/M06_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S10"
+          ],
+          "warnings": [],
+          "course": "M06",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M06/M06_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S10"
+          ],
+          "warnings": [],
+          "course": "M06",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M06/M06_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S10"
+          ],
+          "warnings": [],
+          "course": "M06",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M06/M06_pop.html",
+          "kind": "course_source",
+          "routes": [
+            "S10"
+          ],
+          "warnings": [],
+          "course": "M06",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M31/M31_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M31",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M31/M31_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M31",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M31/M31_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M31",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M31/M31_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M31",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M31/M31_pop.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M31",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M32/M32_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M32",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M32/M32_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M32",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M32/M32_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M32",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M32/M32_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M32",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/M32/M32_pop.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "M32",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_pop3.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_pop5.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_pop6.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/Q21/Q21_pop7.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "Q21",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/T78/T78_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "T78",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/T78/T78_b.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "T78",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/T78/T78_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "T78",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/T78/T78_d.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "T78",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/T78/T78_pop1.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "T78",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/T78/T78_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S07"
+          ],
+          "warnings": [],
+          "course": "T78",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "create_cycle_pdf.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "create_status_pdf.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "dist/MEDINA_Claude.html",
+          "kind": "derived",
+          "routes": [],
+          "warnings": [
+            "Sortie dérivée ; intégrer les sources puis reconstruire."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "dist/MEDINA_Etat_des_lieux.html",
+          "kind": "derived",
+          "routes": [],
+          "warnings": [
+            "Sortie dérivée ; intégrer les sources puis reconstruire."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "dist/MEDINA_SOURCES.json",
+          "kind": "derived",
+          "routes": [],
+          "warnings": [
+            "Sortie dérivée ; intégrer les sources puis reconstruire."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "dist/MEDINA_final.html",
+          "kind": "derived",
+          "routes": [],
+          "warnings": [
+            "Sortie dérivée ; intégrer les sources puis reconstruire."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "dist/MEDINA_final_SOURCES.json",
+          "kind": "derived",
+          "routes": [],
+          "warnings": [
+            "Sortie dérivée ; intégrer les sources puis reconstruire."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/STYLE_REDACTION.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/alpha/IDENTITE_MEDINA_Alpha.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/alpha/PROMPT_MEDINA_Alpha.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/passation/consignes_gen.py",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/passation/mesure_texte.py",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/passation/wf_contre_lecture.js",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/passation/wf_reecriture_sequentielle.js",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "engine/medina_course.css",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "engine/medina_course.js",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/a41.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/cardio_1.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/cardio_2.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/cardio_3.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/d84.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i00.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i10.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i21.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i25.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i26.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i30.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i33.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i34.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i35.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i40.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i42.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i44.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i46.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i47.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i48.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i49.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i70.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i71.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/i80.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/j18.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/j44.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/j45.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/m06.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/m31.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/m32.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/q21.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/t78.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "glossary/zz_fusion.py",
+          "kind": "glossary_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "modules/ecg.json",
+          "kind": "derived",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [
+            "Tracés générés : vérifier modules/ecg.py et régénérer."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "modules/ecg.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "modules/p2.html",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "modules/p3.html",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "modules/prev.html",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "pack.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "pack_v7.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "recover_polish.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "restore.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "shell/data.py",
+          "kind": "registration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Vérifier titres, covers, activation, rattachements et rubriques après intégration."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "shell/medina_front.html",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Coque historique et ressources embarquées : contrôler SYSTEM et les fragments séparément."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "shell/polish.css",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "shell/polish.js",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "shell/shell.html",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "test_medina.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "test_preview.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "test_v7.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        }
+      ],
+      "routes": [
+        "GLOBAL",
+        "S01",
+        "S02",
+        "S07",
+        "S10",
+        "SYSTEM",
+        "T1"
+      ],
+      "warnings": [
+        "Chemin sans route de build connue ; examen manuel requis.",
+        "Sortie dérivée ; intégrer les sources puis reconstruire.",
+        "Vérifier titres, covers, activation, rattachements et rubriques après intégration.",
+        "Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.",
+        "Tracés générés : vérifier modules/ecg.py et régénérer.",
+        "Coque historique et ressources embarquées : contrôler SYSTEM et les fragments séparément.",
+        "PR #1 vise main ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-c3770739b58c96120c180a4ae0c68d00dde70a51",
+      "head_sha": "c3770739b58c96120c180a4ae0c68d00dde70a51",
+      "branches": [
+        "claude/review-i48-esc2024-20261007"
+      ],
+      "pull_requests": [],
+      "received": false,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": []
+    },
+    {
+      "delivery_id": "head-f6e400df9e5d180d9dc69aba1f598d4a21cb788c",
+      "head_sha": "f6e400df9e5d180d9dc69aba1f598d4a21cb788c",
+      "branches": [
+        "claude/review-medina-global-20261007"
+      ],
+      "pull_requests": [
+        {
+          "number": 8,
+          "title": "Intégrer les relectures Claude : I48 ESC 2024 et Sémiologie CS",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/8",
+          "base": {
+            "ref": "codex/sciences-cs-fragments-20261007",
+            "sha": "e7cbc52e6494d162887ad22a358c4c23d0a61937"
+          },
+          "head": {
+            "ref": "claude/review-medina-global-20261007",
+            "sha": "f6e400df9e5d180d9dc69aba1f598d4a21cb788c"
+          },
+          "merged_at": "2026-10-07T09:13:08Z"
+        }
+      ],
+      "received": true,
+      "integrated": true,
+      "verified": true,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [
+        "f5c83957a239a27b836b838063e97835cd80f4d9"
+      ],
+      "files": [
+        {
+          "path": "chapters/I48/I48_a.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_c.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_pop2.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "chapters/I48/I48_pop4.html",
+          "kind": "course_source",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/collaboration/HANDOFF_LATEST.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/collaboration/reviews/CLAUDE_CS_CARDIO_RAPPORT_2026-10-07.md",
+          "kind": "review_report",
+          "routes": [
+            "S01",
+            "CS"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "docs/collaboration/reviews/CLAUDE_I48_ESC2024_RAPPORT.md",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "course": "I48",
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "modules/cardiovascular_cs.html",
+          "kind": "clinical_skills_source",
+          "routes": [
+            "S01",
+            "CS"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "modules/cardiovascular_cs.js",
+          "kind": "clinical_skills_source",
+          "routes": [
+            "S01",
+            "CS"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        }
+      ],
+      "routes": [
+        "CS",
+        "GLOBAL",
+        "S01"
+      ],
+      "warnings": []
+    },
+    {
+      "delivery_id": "head-1539f4e77171d4c049efa25febac632582be38a8",
+      "head_sha": "1539f4e77171d4c049efa25febac632582be38a8",
+      "branches": [
+        "codex/ajouter-options-de-generation-de-fragments"
+      ],
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "Ajoute la construction ciblée des fragments MEDINA",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/3",
+          "base": {
+            "ref": "main",
+            "sha": "5ec44ef7a303d10d93a5876e626473faa6e060ae"
+          },
+          "head": {
+            "ref": "codex/ajouter-options-de-generation-de-fragments",
+            "sha": "1539f4e77171d4c049efa25febac632582be38a8"
+          },
+          "merged_at": "2026-09-28T00:57:31Z"
+        }
+      ],
+      "received": false,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [],
+      "files": [
+        {
+          "path": "build_front.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        }
+      ],
+      "routes": [
+        "GLOBAL"
+      ],
+      "warnings": [
+        "PR #3 vise main ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-8d0de9bcd572d958031440064268e165a263842c",
+      "head_sha": "8d0de9bcd572d958031440064268e165a263842c",
+      "branches": [
+        "codex/configurer-publication-github-pages-automatique"
+      ],
+      "pull_requests": [
+        {
+          "number": 4,
+          "title": "Automatise la publication MEDINA sur GitHub Pages (workflow, index, audits)",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/4",
+          "base": {
+            "ref": "main",
+            "sha": "4bf7e971b752899878ed57272ae2e1a799553d76"
+          },
+          "head": {
+            "ref": "codex/configurer-publication-github-pages-automatique",
+            "sha": "8d0de9bcd572d958031440064268e165a263842c"
+          },
+          "merged_at": "2026-09-28T05:35:48Z"
+        }
+      ],
+      "received": false,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [],
+      "files": [
+        {
+          "path": ".github/workflows/pages.yml",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": ".gitignore",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "build_index.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "tests/audit_fragments.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        }
+      ],
+      "routes": [
+        "GLOBAL"
+      ],
+      "warnings": [
+        "Chemin sans route de build connue ; examen manuel requis.",
+        "PR #4 vise main ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-0f38d9aab4ef051eaa9013c4aebfdcb9d5105070",
+      "head_sha": "0f38d9aab4ef051eaa9013c4aebfdcb9d5105070",
+      "branches": [
+        "codex/creer-fragments.json-et-corrige-des-chemins"
+      ],
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Cartographie des fragments et chemins portables",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/2",
+          "base": {
+            "ref": "main",
+            "sha": "4b8e9f6af187543de87690cb9cc5e57dbb21777f"
+          },
+          "head": {
+            "ref": "codex/creer-fragments.json-et-corrige-des-chemins",
+            "sha": "0f38d9aab4ef051eaa9013c4aebfdcb9d5105070"
+          },
+          "merged_at": "2026-09-28T00:31:42Z"
+        }
+      ],
+      "received": false,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [],
+      "files": [
+        {
+          "path": ".gitignore",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "FRAGMENTS.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "build_medina.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "fragments.json",
+          "kind": "registration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Vérifier titres, covers, activation, rattachements et rubriques après intégration."
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "test_preview.py",
+          "kind": "unknown",
+          "routes": [],
+          "warnings": [
+            "Chemin sans route de build connue ; examen manuel requis."
+          ],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        }
+      ],
+      "routes": [
+        "GLOBAL"
+      ],
+      "warnings": [
+        "Chemin sans route de build connue ; examen manuel requis.",
+        "Vérifier titres, covers, activation, rattachements et rubriques après intégration.",
+        "PR #2 vise main ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-7071e557cfc29fcdae774e0142b1b3680e45421a",
+      "head_sha": "7071e557cfc29fcdae774e0142b1b3680e45421a",
+      "branches": [
+        "codex/etancheite-complete-des-fragments"
+      ],
+      "pull_requests": [
+        {
+          "number": 5,
+          "title": "Étanchéité complète des fragments et bandeau latéral par catégories",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/5",
+          "base": {
+            "ref": "main",
+            "sha": "f0a49e11dd2f54c81d988a8d049642763268ba29"
+          },
+          "head": {
+            "ref": "codex/etancheite-complete-des-fragments",
+            "sha": "7071e557cfc29fcdae774e0142b1b3680e45421a"
+          },
+          "merged_at": "2026-09-28T23:11:05Z"
+        }
+      ],
+      "received": false,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [],
+      "files": [
+        {
+          "path": "FRAGMENTS.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "build_front.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "tests/audit_fragments.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        }
+      ],
+      "routes": [
+        "GLOBAL"
+      ],
+      "warnings": [
+        "PR #5 vise main ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-c50a28a23d7e2a2e0cf8ac36842b567de419daf4",
+      "head_sha": "c50a28a23d7e2a2e0cf8ac36842b567de419daf4",
+      "branches": [
+        "codex/fragment-s01-accueil-navigo-20261005"
+      ],
+      "pull_requests": [
+        {
+          "number": 7,
+          "title": "S01 : accueil cardiovasculaire par catégorie et Navigo fixe",
+          "state": "open",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/7",
+          "base": {
+            "ref": "main",
+            "sha": "92b1db11a594d748e20d7f00e4bacb02a02d5602"
+          },
+          "head": {
+            "ref": "codex/fragment-s01-accueil-navigo-20261005",
+            "sha": "c50a28a23d7e2a2e0cf8ac36842b567de419daf4"
+          },
+          "merged_at": null
+        }
+      ],
+      "received": false,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [],
+      "files": [
+        {
+          "path": "FRAGMENTS.md",
+          "kind": "documentation",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/S01_2026-10-05/README.md",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "fragments": [
+            "S01"
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/S01_2026-10-05/browser-results.json",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "fragments": [
+            "S01"
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/S01_2026-10-05/captures/accueil_mobile.jpg",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "fragments": [
+            "S01"
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/S01_2026-10-05/captures/accueil_pc.jpg",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "fragments": [
+            "S01"
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/S01_2026-10-05/captures/cours_mobile.jpg",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "fragments": [
+            "S01"
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/S01_2026-10-05/captures/cours_pc.jpg",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "fragments": [
+            "S01"
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "audits/S01_2026-10-05/captures/navigo_mobile.jpg",
+          "kind": "review_report",
+          "routes": [
+            "S01"
+          ],
+          "warnings": [],
+          "fragments": [
+            "S01"
+          ],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "build_front.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "fragment_surface.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "fragments.json",
+          "kind": "registration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [
+            "Vérifier titres, covers, activation, rattachements et rubriques après intégration."
+          ],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "shell/fragment.css",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "shell/fragment.js",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "tests/audit_fragments.py",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "modified",
+          "diff_basis": "pull_request_base"
+        },
+        {
+          "path": "tests/verify_s01_browser.cjs",
+          "kind": "integration_source",
+          "routes": [
+            "GLOBAL"
+          ],
+          "warnings": [],
+          "change": "added",
+          "diff_basis": "pull_request_base"
+        }
+      ],
+      "routes": [
+        "GLOBAL",
+        "S01"
+      ],
+      "warnings": [
+        "Vérifier titres, covers, activation, rattachements et rubriques après intégration.",
+        "PR #7 vise main ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-92b1db11a594d748e20d7f00e4bacb02a02d5602",
+      "head_sha": "92b1db11a594d748e20d7f00e4bacb02a02d5602",
+      "branches": [
+        "main"
+      ],
+      "pull_requests": [],
+      "received": false,
+      "integrated": true,
+      "verified": false,
+      "integration_evidence": "head_ancestor_of_target",
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": []
+    }
+  ]
+}

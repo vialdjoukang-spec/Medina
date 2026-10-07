@@ -3,6 +3,7 @@
 Ce dossier est le point d'entrée permanent pour consulter les livraisons, reprendre une mission et remettre une contribution.
 
 - [Dernière livraison et travaux à relire](HANDOFF_LATEST.md).
+- [Inventaire des branches et livraisons](DELIVERIES_LATEST.md) et [accusés de réception](receipts/).
 - [Mission globale de Claude](CLAUDE_AUDIT_GLOBAL_2026-10-07.md).
 - [Inventaire des fichiers à relire](CLAUDE_REVIEW_SCOPE_2026-10-07.json).
 - [Dépôt des rapports et procédure de remise](reviews/README.md).
@@ -21,7 +22,7 @@ Cette autorisation prime sur les anciennes mentions exigeant un accord de public
 | --- | --- |
 | Lecture publique du dépôt | Vérifiée ; les sources publiées sont accessibles sans connexion. |
 | Administration par le compte GitHub du propriétaire | Vérifiée. |
-| Authentification et écriture par Claude | Non vérifiées ; elles dépendent de sa connexion GitHub effective. |
+| Écriture par Claude Code | Vérifiée pour la livraison I48/CS : deux commits et PR #8 publiés le 7 octobre. Chaque session conserve sa propre connexion. |
 | Verrou exclusif entre IA | Aucun verrou ajouté. |
 
 Claude Code connecté à GitHub avec une identité disposant du droit d'écriture peut créer des branches, pousser ses commits et ouvrir des pull requests dans ce dépôt. Claude dans un chat disposant seulement de la lecture publique peut examiner les sources et remettre un rapport ou un patch ; l'accord textuel du propriétaire ne lui donne pas la capacité technique de pousser.
@@ -39,11 +40,23 @@ Une attribution coordonne les fichiers ; elle ne bloque pas leur lecture ni leur
 
 ## Cycle de livraison et de relecture
 
+Au début de chaque reprise et avant de publier, Codex et Claude consultent **toutes les branches et PR**. L'absence d'un rapport à l'emplacement recommandé n'est pas une preuve d'absence de travail. Les rapports historiques et les branches sans PR sont recensés.
+
+```bash
+python3 tools/collaboration_sync.py --out docs/collaboration
+```
+
+Le scanner lit GitHub et produit l'index ; il ne fusionne aucun changement. `GH_TOKEN` peut fournir l'authentification et n'est jamais affiché. Si GitHub n'est accessible que par le connecteur, conserver son inventaire complet dans un JSON puis exécuter la même commande avec `--snapshot <inventaire.json>`. Une lecture partielle reste signalée.
+
+Le [contrôle GitHub](../../.github/workflows/collaboration.yml) produit aussi un résumé et un rapport téléchargeable lors d'une PR, d'un push sur une branche contenant ce workflow ou d'un lancement manuel. Pour une ancienne branche qui ne contient pas encore le workflow, une PR vers la branche d'intégration déclenche ce contrôle. Le scanner ne dépend pas de la présence d'un manifeste de livraison.
+
 1. Codex termine un lot, exécute les contrôles adaptés, puis pousse les sources et leurs rapports avant d'annoncer la livraison.
 2. Il actualise `HANDOFF_LATEST.md` avec le commit de contenu, les fichiers, les tests et les limites. Chaque nouveau lot reçoit une ligne dans la file de relecture, avec sa propre base de commit.
 3. Claude lit les instructions à la tête actuelle de la branche, puis relit le contenu au commit fixé dans sa mission. Il consigne sa couverture réelle et travaille sur sa branche de contribution.
-4. Avec une connexion GitHub autorisée en écriture, Claude pousse ses commits et ouvre une PR vers `codex/sciences-cs-fragments-20261007`. Sans cet accès, il remet un rapport et un patch suivant la procédure de [remise](reviews/README.md).
-5. Codex compare les changements, vérifie les sources et les conflits, reconstruit et teste. Il intègre les corrections recevables et consigne le commit d'intégration ; il expose les réserves non résolues.
+4. Avec une connexion GitHub autorisée en écriture, Claude pousse ses commits et ouvre une PR vers `codex/sciences-cs-fragments-20261007`. Sans cet accès, il remet un rapport et un patch suivant la procédure de [remise](reviews/README.md). Une livraison existante sur une autre branche est récupérée au même titre.
+5. Codex ouvre les rapports et les différences, puis enregistre la réception dans `receipts/`. Il vérifie les sources et les conflits, reconstruit et teste. Le reçu indique ensuite le commit d'intégration, les adaptations et les réserves non résolues. L'index et la passation sont actualisés.
+
+Le rattachement suit les chemins exacts : cours dans `chapters/<CODE>/`, déclarations dans `chapters.json` et `fragments.json`, glossaires globaux dans `glossary/`, CS cardiovasculaire dans `modules/cardiovascular_cs.*` pour S01. Une contribution SYSTEM nécessite une route d'affichage explicite. Les HTML sous `dist/` sont des résultats de construction.
 
 Une nouvelle livraison ne modifie pas rétroactivement la base d'une relecture engagée. Les changements concurrents sont signalés avec leurs commits ; les protections du dépôt restent applicables.
 

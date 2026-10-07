@@ -1,18 +1,23 @@
-# MEDINA — dernière passation disponible
+# MEDINA — dernière passation
 
-Date : 7 octobre 2026. Cette page constitue le lien stable à remettre à Claude après chaque livraison publiée.
+Mise à jour : 7 octobre 2026. Lire [l’inventaire des livraisons](DELIVERIES_LATEST.md) avant de reprendre un travail. Il recense les branches et PR ; les [reçus](receipts/) conservent les preuves de réception et d’intégration.
 
-## Livraison à relire
+## Livraisons de Claude retrouvées et intégrées
 
-- Branche : [`codex/sciences-cs-fragments-20261007`](https://github.com/vialdjoukang-spec/Medina/tree/codex/sciences-cs-fragments-20261007).
-- Base de contenu : [`bb134857e12245f46b4f329c1334ebd57251fcff`](https://github.com/vialdjoukang-spec/Medina/tree/bb134857e12245f46b4f329c1334ebd57251fcff).
-- Instructions prioritaires : lire `CLAUDE.md` et ce dossier à la tête actuelle de la branche. La base de contenu précède les nouvelles instructions d'audit global et de complétude CIM-11.
-- Branche de contribution : `claude/review-medina-global-20261007`, préparée avec les mêmes consignes de collaboration.
-- Retour de Claude : lecture des consignes confirmée le 7 octobre 2026 ; **audit global non commencé**. Relectures I48 ESC 2024 et Sémiologie CS : **rapport reçu, intégré** au commit [`f9efb78`](https://github.com/vialdjoukang-spec/Medina/commit/f9efb78eabdb8142aada6a494143c536bcf765e8) de `claude/review-medina-global-20261007`, proposé par pull request vers `codex/sciences-cs-fragments-20261007`.
+| Livraison | Sources et destination | État |
+| --- | --- | --- |
+| Alpha du 26 septembre — PR #1 | 435 fichiers ; cours, réécritures, glossaire, interface et audits historiques. | Déjà fusionnée le 27 septembre ; présence confirmée dans la branche actuelle. |
+| I48 et CS — PR #8 | Quatre fichiers de cours I48 et les deux sources CS cardiovasculaires ; fragment S01. | Rapports ouverts, sources intégrées et contrôlées au commit `f5c83957a239a27b836b838063e97835cd80f4d9`. |
 
-Le lot comprend 30 cours dans cinq fragments et la Sémiologie CS cardiovasculaire. Les sciences enrichies comprennent 140 disciplines ; CS comprend dix étapes et quatre modèles 3D en fenêtres. Claude relit tous les textes livrés, y compris les contenus antérieurs aux enrichissements.
+La PR #8 est fusionnée. Les deux rapports originaux restent dans `reviews/`, à leur emplacement initial. Trois passages I48 ont été adaptés après contre-lecture des sources et une formulation jugulaire a été nuancée. Voir [l’arbitrage d’intégration](reviews/2026-10-07/I48_CS/INTEGRATION_CODEX.md) et [le reçu détaillé](receipts/CLAUDE_I48_CS_2026-10-07.json).
 
-| Fragment | Cours concernés |
+La branche de Claude conserve ses commits. Claude peut déposer le prochain lot sur cette branche ou une nouvelle branche. La réception examine tous les chemins publiés, y compris les rapports historiques et les branches sans PR.
+
+## Lot global toujours à relire
+
+Base de la mission initiale : `bb134857e12245f46b4f329c1334ebd57251fcff`. Les enrichissements comprennent 30 cours dans cinq fragments et la Sémiologie CS cardiovasculaire. Les corrections I48/CS ci-dessus doivent être prises en compte pour éviter de réintroduire une ancienne formulation.
+
+| Fragment | Cours |
 | --- | --- |
 | S01 — Cardiovasculaire | I00, I10, I21, I25, I30, I33, I34, I35, I40, I42, I44, I46, I47, I48, I49, I50, I70, I71, I80, Q21 |
 | S02 — Respiratoire | J45, J44, J18, I26 |
@@ -20,32 +25,27 @@ Le lot comprend 30 cours dans cinq fragments et la Sémiologie CS cardiovasculai
 | S10 — Locomoteur | M06 |
 | T1 — Agents et thérapeutique | A41 |
 
-## Documents utiles
+[Mission globale](CLAUDE_AUDIT_GLOBAL_2026-10-07.md), [manifeste de la base](CLAUDE_REVIEW_SCOPE_2026-10-07.json), [sources communes](SOURCES_CANONIQUES.md) et [procédure de remise](reviews/README.md). La mission porte sur les quatre onglets, toutes les fenêtres, les figures, les quiz, les glossaires et les textes CS. Français professionnel, précis et fluide ; conserver les notions utiles.
 
-| Document | Usage |
+## Contrôles exécutés sur l’intégration I48/CS
+
+- Reconstruction des 22 fragments et de MEDINA global ; audit des fragments réussi, JavaScript valide et build reproductible.
+- Audit statique I48/I70/I71/I80 et audit sciences des 30 cours réussis.
+- 569 contrôles navigateur sciences/CS et quatre vérifications ciblées des textes I48 dans S01 : réussis, aucune erreur JavaScript.
+
+Les [preuves de contrôle](../../audits/CLAUDE_INTEGRATION_2026-10-07/) se rapportent à cette intégration. Elles ne constituent pas un audit médical intégral.
+
+## Travail restant
+
+| Travail | État réel |
 | --- | --- |
-| [Mission globale](CLAUDE_AUDIT_GLOBAL_2026-10-07.md) | Périmètre intégral, exigences médicales, didactiques et linguistiques. |
-| [Manifeste](CLAUDE_REVIEW_SCOPE_2026-10-07.json) | 289 fichiers de contenu, chemins, repères et empreintes de la base. |
-| [Relevé de complétude](../../audits/COMPLETUDE_2026-10-07/README.md) | Lacunes du catalogue historique CIM-10 ; absence de certification CIM-11. |
-| [Règle CIM-11](../COMPLETUDE_CIM11.md) | Inventaire officiel et preuves nécessaires pour chaque catégorie et sous-catégorie. |
-| [Sources communes](SOURCES_CANONIQUES.md) | Sources primaires et trace attendue pour toute correction médicale. |
-| [Livraison et contrôles](../../audits/SCIENCES_CS_2026-10-07/README.md) | Rapports techniques, mesures, captures et limites. |
-| [Zone de remise](reviews/README.md) | Rapport, journal, branche, PR ou patch. |
+| Relecture intégrale des 30 cours et CS | À poursuivre ; seuls les lots ciblés reçus sont crédités. |
+| R08 — fenêtre des épisodes auriculaires rapides | Réserve ouverte. |
+| R11 — classe de l’évaluation du rythme dès 65 ans | Source primaire relue ; classe I C confirmée pendant la contre-lecture. |
+| C10 — complément vasculaire de CS | Réserve ouverte. |
+| Complétude CIM-11 des cinq fragments | Non établie ; catalogue local historique CIM-10-GM 2024. |
+| PR #6 — accueil et QCM | Travail Codex distinct, encore en attente d’intégration. |
 
-La relecture couvre les quatre onglets, toutes les fenêtres, les figures et leurs légendes, les tableaux, quiz et corrections, les glossaires et les textes visibles des modèles CS. La langue doit rester professionnelle, précise et fluide. Supprimer répétitions, métadiscours et remplissage ; conserver les distinctions et les notions utiles.
+Lire [la règle CIM-11](../COMPLETUDE_CIM11.md) et [le relevé de couverture](../../audits/COMPLETUDE_2026-10-07/README.md). Aucun fragment n’est déclaré complet.
 
-## Contrôles et limites
-
-Les rapports de livraison consignent 71 contrôles de navigation et 569 contrôles sciences/CS réussis. Ils attestent des contrôles techniques exécutés sur le lot ; ils ne certifient pas une relecture médicale indépendante.
-
-Les cinq fragments sont incomplets. Leur catalogue local provient de la CIM-10-GM 2024. La couverture exhaustive CIM-11 est **non établie** tant que l'inventaire officiel et la matrice de couverture ne sont pas constitués et vérifiés.
-
-## File de relecture
-
-| Lot | Base de contenu | Travail attendu | État |
-| --- | --- | --- | --- |
-| 30 cours et CS — 2026-10-07 | `bb134857e12245f46b4f329c1334ebd57251fcff` | Audit intégral médical, rédactionnel et didactique selon la mission globale. | Disponible ; premier lot planifié (formules clonées, métadiscours, I40, A41, I48 entier). |
-| I48 — sous-tâche ESC 2024 | `c3770739b58c96120c180a4ae0c68d00dde70a51` | Confirmation ECG ; à inclure dans l'audit global sans limiter celui-ci. | **Rapport reçu, intégré** : `f9efb78eabdb8142aada6a494143c536bcf765e8`. [Rapport](reviews/CLAUDE_I48_ESC2024_RAPPORT.md). Réserves R08 et R11 ouvertes. |
-| Sémiologie CS — repères et manœuvres | `bb134857e12245f46b4f329c1334ebd57251fcff` | Relecture de `modules/cardiovascular_cs.html` et `.js`. | **Rapport reçu, intégré** : `f9efb78eabdb8142aada6a494143c536bcf765e8`. [Rapport](reviews/CLAUDE_CS_CARDIO_RAPPORT_2026-10-07.md). Lacune C10 ouverte. `verify_sciences_cs.cjs` : 569 contrôles réussis. |
-
-Après chaque nouveau lot, publier les sources et les contrôles, puis ajouter ici sa base exacte, son périmètre et ses limites. La disponibilité est annoncée après le push. Les anciennes bases demeurent identifiables pour intégrer les corrections sans perdre les travaux concurrents.
+Après chaque lot : publier les sources et les contrôles, enregistrer réception, intégration et réserves dans un reçu, actualiser l’inventaire et cette passation, puis vérifier les liens GitHub. Le déploiement du site depuis `main` est contrôlé séparément.
