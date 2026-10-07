@@ -1,6 +1,6 @@
 # MEDINA — dernière passation
 
-Mise à jour : 7 octobre 2026. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
+Mise à jour : 7 octobre 2026. Compléments contrôlés publiés sur les deux branches d’intégration au commit `f9b654810619ac8206500ca23821eff9816002c1`. Les remises S01/S02 sont exportées depuis ce commit. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
 
 ## Priorité : expliquer pourquoi
 

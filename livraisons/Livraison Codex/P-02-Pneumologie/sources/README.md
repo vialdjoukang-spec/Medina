@@ -1,7 +1,7 @@
 # Sources de P-02-Pneumologie
 
-Ce dossier réunit les sources complètes de 4 cours intégrés. Les codes et titres figurent dans le README du fragment et dans `../livraison.json`.
+Ce dossier réunit les sources complètes de 5 cours intégrés. Les codes et titres figurent dans le README du fragment et dans `../livraison.json`.
 
-[Sources communes et catalogue](https://github.com/vialdjoukang-spec/Medina/tree/7fa06329b3369f54ef0831ae9f6cdf90fce5f605) · [Organisation de MEDINA](https://vialdjoukang-spec.github.io/Medina/organisation.html).
+[Sources communes et catalogue](https://github.com/vialdjoukang-spec/Medina/tree/f9b654810619ac8206500ca23821eff9816002c1) · [Organisation de MEDINA](https://vialdjoukang-spec.github.io/Medina/organisation.html).
 
 État : **partiel ; complétude CIM-11 non établie**. Une copie préparée pour Claude reste un espace de travail jusqu'à la remise de corrections et d'un rapport.
