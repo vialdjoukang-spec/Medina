@@ -73,7 +73,7 @@ Une relecture médicale indépendante reste nécessaire pour certifier les nouve
 
 ## Consultation et collaboration
 
-[Archive autonome des cinq fragments enrichis](../../deliverables/MEDINA_review_2026-10-07.zip) : décompresser et ouvrir `index.html`.
+L'archive autonome des cinq fragments enrichis est jointe à la livraison de Vial : décompresser et ouvrir `index.html`. Le [générateur conservé dans le dépôt](../../deliverables/build_review_bundle.py) permet de la reconstruire avec `python3 deliverables/build_review_bundle.py` ; il écrit l'archive dans `dist/review/`.
 
 [Document de collaboration et commandes reproductibles](../../docs/collaboration/MEDINA_S01_2026-10-07.md). Le dépôt et cette branche sont publics. Une autre IA peut les lire et proposer une contribution sur sa propre branche avec ses accès GitHub habituels.
 
