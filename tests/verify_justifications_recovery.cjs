@@ -139,7 +139,7 @@ async function bronchitis(page,width){
 (async()=>{
  const banks=codes.map(code=>{const file=path.join(root,'chapters',code,code+'_justifications.json');check(code+' : banque présente',fs.existsSync(file));const source=fs.readFileSync(file,'utf8');inputs[file]=digest(source);return {code,bank:JSON.parse(source)}});
  if(!targeted&&!requested)check('Jeu complet : quinze cours Codex',banks.length===15);
- if(!targeted&&!requested)check('Jeu complet : 197 fenêtres et 197 cibles',banks.reduce((n,b)=>n+b.bank.entries.length,0)===197&&banks.reduce((n,b)=>n+b.bank.entries.reduce((m,e)=>m+e.match.length,0),0)===197);
+ if(!targeted&&!requested){const plan=JSON.parse(fs.readFileSync(path.join(root,'docs/collaboration/MECHANISMS_PLAN.json'),'utf8'));check('Jeu complet : fenêtres et cibles conformes au plan',banks.reduce((n,b)=>n+b.bank.entries.length,0)===plan.targeted_windows_total&&banks.reduce((n,b)=>n+b.bank.entries.reduce((m,e)=>m+e.match.length,0),0)===plan.targeted_matches_total);}
  const browser=await chromium.launch(browserOptions(chromium));
  try{
   const context=await browser.newContext({viewport:{width:1360,height:900},reducedMotion:'reduce'});

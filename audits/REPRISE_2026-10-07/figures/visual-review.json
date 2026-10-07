@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-07",
+  "scope": "Inspection visuelle des captures de navigateur ; complément au contrôle comportemental automatique.",
+  "captures_read": [
+    "captures/I50_desktop.jpg",
+    "captures/I50_mobile_390_font24.jpg",
+    "captures/J44_desktop.jpg",
+    "captures/J44_mobile_390_font24.jpg",
+    "captures/J18_mobile_390_font24.jpg",
+    "captures/J18_desktop.jpg"
+  ],
+  "findings": [
+    {
+      "course": "I50 — Insuffisance cardiaque",
+      "status": "aucun chevauchement ou texte coupé repéré",
+      "detail": "Les deux branches mécanique et électrique divergent puis convergent lisiblement. La capture desktop montre le dialogue natif à100 % ; la capture mobile montre le SVG intégré."
+    },
+    {
+      "course": "J44 — Bronchopneumopathie chronique obstructive",
+      "status": "aucun chevauchement ou flèche ambiguë repéré",
+      "detail": "Limitation du débit et réduction du temps expiratoire convergent vers l’expiration incomplète. La conséquence sur la capacité inspiratoire conserve sa condition."
+    },
+    {
+      "course": "J18 — Pneumonies de l’adulte",
+      "status": "aucun chevauchement ou texte coupé repéré, desktop et mobile",
+      "detail": "Ventilation nulle et perfusion persistante sont réunies dans la première case. La figure et le bouton natif de zoom sont entièrement visibles."
+    }
+  ],
+  "limitations": [
+    "Le réglage de la police du corps à24 px ne transforme pas les labels SVG en24 px. I50 conserve un schéma intégré petit sur mobile ; sa fenêtre de zoom native est opérationnelle selon le test comportemental.",
+    "Les figures Pathologie n’ont pas de bouton natif de zoom dans l’architecture actuelle. Aucune modification d’interface ni de médecine n’est effectuée dans ce contrôle."
+  ],
+  "independent_review": "Agent j18_review : quatre captures I50/J44 réellement ouvertes ; aucune anomalie bloquante repérée.",
+  "result": "passed_with_usage_limitations"
+}

@@ -1,0 +1,285 @@
+{
+ "cours": "I80 — Thrombose veineuse profonde et thromboses veineuses",
+ "date": "2026-10-07",
+ "role": "vérificateur indépendant (TACHE_VERIFICATION.md) ; producteur unique P1, aucun résultat P2",
+ "sources_de_reference": [
+  "Kakkos et al., ESVS 2021 Clinical Practice Guidelines on the Management of Venous Thrombosis, European Journal of Vascular and Endovascular Surgery 2021;61:9-82 (src/esvs2021*.txt, texte intégral, mise en page contrôlée pour le tableau 4).",
+  "Konstantinides et al., 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism, European Heart Journal 2020;41:543-603 (src/esc2019_ep*.txt, texte intégral).",
+  "Résumés européens des caractéristiques de Pradaxa, Xarelto, Lixiana et Eliquis (src/rcp_*.txt).",
+  "Cuker et al., American Society of Hematology 2018, thrombopénie induite par l’héparine (texte intégral PubMed Central, téléchargé sans donnée personnelle).",
+  "Publications originales contrôlées sur PubMed : Khan 2019, Barbui 2014, Funayama 2020, Carrier 2015, Mantha 2012, Liu 2015, Kahn 2014, Pengo 2018, Rodger 2017, Martinelli 2016, Smalberg 2012, Valla 2015, Barbar 2010, Samama 1999, Clarke 2021, Kearon 2003, Lee 2003, Poort 1996, Marchiori 2007, Stanczyk 2025."
+ ],
+ "complements": {
+  "total_P1": 83,
+  "accepter": 62,
+  "corriger": 21,
+  "rejeter": 0,
+  "par_fichier": {
+   "I80_a": {
+    "accepter": 12,
+    "corriger": 5
+   },
+   "I80_b": {
+    "accepter": 24,
+    "corriger": 9
+   },
+   "I80_c": {
+    "accepter": 20,
+    "corriger": 6
+   },
+   "I80_d": {
+    "corriger": 1,
+    "accepter": 4
+   },
+   "I80_pop": {
+    "accepter": 2
+   }
+  },
+  "ajouts_du_verificateur": [
+   {
+    "id": "I80_b-v1",
+    "fichier": "I80_b",
+    "objet": "ligne « facteur transitoire mineur » du tableau de durée : divergence ESC 2019 (prolongation à envisager, classe IIa, formulée pour l’embolie pulmonaire) et ESVS 2021 (classe IIb ; œstrogènes et grossesse classés majeurs, arrêt à 3 mois et au plus tôt 6 semaines après l’accouchement)."
+   },
+   {
+    "id": "I80_pop-v1",
+    "fichier": "I80_pop",
+    "objet": "Pareto Pharmacologie : seuil de 30 mL/min pour le dabigatran (le Pareto gardait 15 mL/min pour tous les anticoagulants oraux directs)."
+   }
+  ],
+  "corriges": [
+   {
+    "id": "I80_a-4",
+    "probleme": "Classements contradictoires à exposer : la phrase voisine range contraception et grossesse parmi les facteurs mineurs (ESC 2019, tableau 11), alors que l’ESVS 2021 les place parmi les facteurs majeurs (note du tableau 4, §2.2.2.2). Complément raccourci (« la cause de la thrombose disparaît avec lui » était tautologique) et discordance ajoutée sans trancher."
+   },
+   {
+    "id": "I80_a-5",
+    "probleme": "« Plus de 5 pour 1 000 après 80 ans » est invérifiable dans les sources (P1 le signalait) : remplacé par la donnée de l’ESC 2019 §3.1 (incidence près de huit fois plus élevée à 80 ans ou plus que dans la cinquième décennie). « Double à chaque décennie » (ESVS 2021 §2.1.1) retiré, car incohérent avec ce facteur 8 sur quatre décennies."
+   },
+   {
+    "id": "I80_a-7",
+    "probleme": "Chiffres exacts (ESVS 2021 §2.3.7.3.1, recommandation 24, classe III). La position des deux recommandations diffère : l’ESC 2019 permet d’envisager l’aspirine en prolongation chez le patient qui refuse ou ne tolère aucun anticoagulant oral (classe IIb). Discordance ajoutée."
+   },
+   {
+    "id": "I80_a-9",
+    "probleme": "Redite mot pour mot avec la fenêtre i80-virchow complétée (facteur tissulaire tumoral, microparticules, cytokines), ouverte depuis l’îlot 3 voisin. Le mécanisme tumoral reste dans la fenêtre ; la cellule garde la perte urinaire d’antithrombine (ESVS 2021 tableau 5), retirée de la fenêtre."
+   },
+   {
+    "id": "I80_a-12",
+    "probleme": "« L’association est établie » surestime la preuve : Barbui et al. (Drug Safety 2014) concluent à une augmentation possible d’environ 50 %, limitée par l’hétérogénéité, et jugent très incertaines les estimations par molécule. Faute de syntaxe corrigée (« exposent surtout associés à »)."
+   },
+   {
+    "id": "I80_b-2",
+    "probleme": "Chiffres exacts (Kahn et al., Lancet 2014 ; ESVS 2021 §2.7.4, recommandation 32, classe IIa). La recommandation de compression précoce (30 à 40 mmHg, classe I) était redite par la fenêtre i80-pompe, ouverte par « évalué par le score de Villalta » dans la même phrase : elle reste dans la fenêtre. Ajout de la justification de la position de l’ESVS (deux essais à observance supérieure à 80 % favorables)."
+   },
+   {
+    "id": "I80_b-12",
+    "probleme": "Chiffres exacts (Mantha et al., BMJ 2012 ; Martinelli et al., Blood 2016 ; ESC 2019 §3.2). Le résultat sur la poursuite de l’hormonothérapie provient d’une analyse a posteriori des essais EINSTEIN : il est attribué comme tel au lieu d’être présenté comme un fait général. Mécanisme de l’œstrogène précisé."
+   },
+   {
+    "id": "I80_b-14",
+    "probleme": "Chiffres exacts (ESVS 2021 §2.6.2.1). Précision indispensable : l’essai portait sur des filtres permanents ajoutés à l’anticoagulation, non sur la situation de contre-indication décrite juste avant."
+   },
+   {
+    "id": "I80_b-15",
+    "probleme": "Chiffres exacts (ESVS 2021 §2.9.2 et §2.9.4). « 6 semaines suffisent » surestime la donnée (absence de différence significative dans un sous-groupe ; l’ESVS écrit « may be treated for six weeks »)."
+   },
+   {
+    "id": "I80_b-17",
+    "probleme": "Chiffres exacts (Carrier et al. 2015), mais « 0,9 % contre 1,4 % » laissait croire à une réduction : la différence n’est pas significative (p = 0,75)."
+   },
+   {
+    "id": "I80_b-26",
+    "probleme": "L’ESVS 2021 (§2.1.4 et §4.2.2) écrit « probably » pour la prédominance gauche : surcertitude corrigée."
+   },
+   {
+    "id": "I80_b-27",
+    "probleme": "Pondérations incomplètes : seuls les facteurs à 3 points étaient donnés, si bien que le seuil de 4 restait incompréhensible ; ajout des 2 points de la chirurgie ou du traumatisme récent et du point des autres facteurs (Barbar et al., Journal of Thrombosis and Haemostasis 2010). Chiffres 11 % et 0,3 % vérifiés (thromboses symptomatiques à 90 jours). Dans l’essai de Samama et al. (New England Journal of Medicine 1999), les thromboses étaient surtout asymptomatiques, dépistées par phlébographie : précision ajoutée. L’âge « ≥ 70 ans » du cours correspond au score d’origine."
+   },
+   {
+    "id": "I80_b-31",
+    "probleme": "Le cas réunit exactement les facteurs que l’ESC 2019 et l’ESVS 2021 classent différemment. P1 ne citait que l’ESVS (classe IIb pour un facteur mineur) et suivait l’ESC pour le classement, sans exposer la contradiction. Divergence exposée sans trancher ; chiffre de 7,1 % vérifié (ESVS 2021 §2.3.6.1)."
+   },
+   {
+    "id": "I80_b-33",
+    "probleme": "Le chiffre de 70 % est déduit d’une seule étude (DACUS : 30,2 % sans obstruction résiduelle, ESVS 2021 §2.5.1) : il est attribué comme tel au lieu d’être généralisé."
+   },
+   {
+    "id": "I80_c-6",
+    "probleme": "Chiffres exacts (ESVS 2021 §2.3.4.3), mais redite intégrale de la fenêtre i80-tih complétée (10 fois, 1 à 5 %, moins de 0,1 %). La cellule garde la justification de la numération initiale ; les chiffres restent dans la fenêtre."
+   },
+   {
+    "id": "I80_c-9",
+    "probleme": "Chiffres exacts (ESVS 2021 §2.3.3.2), mais quatre phrases dans une cellule : resserré à deux phrases. La restriction propre à la grossesse (poids extrêmes, atteinte rénale) est retirée : l’ESVS y propose en outre un pic à 3 heures et une cible de 0,5 à 1,2 UI/mL, ce qui aurait exigé une troisième phrase."
+   },
+   {
+    "id": "I80_c-13",
+    "probleme": "Correction juste de l’erreur du cours (American Society of Hematology 2018, recommandation 3.6, vérifiée). L’association observationnelle avec les thromboses artérielles (rapport de cotes 3,4) est redite par la fenêtre i80-tih : elle y reste."
+   },
+   {
+    "id": "I80_c-14",
+    "probleme": "Métadiscours « Le lecteur suit » justement supprimé et contenu vérifié (ESVS 2021 recommandation 48), mais la proposition « car le thrombus n’a plus qu’une courte distance à franchir pour atteindre la veine fémorale commune » était identique mot pour mot au complément I80_b-20 : reformulée."
+   },
+   {
+    "id": "I80_c-21",
+    "probleme": "Mécanisme exact (ESVS 2021 §2.3.2 ; Ageno et al., Chest 2012). La règle de chevauchement (5 jours, INR supérieur à 2 deux jours de suite) figure déjà dans le tableau de Pharmacologie et dans la fenêtre i80-doses : retirée ici, et la phrase suivante du cours renvoie au protocole clinique."
+   },
+   {
+    "id": "I80_c-23",
+    "probleme": "Poort et al. (Blood 1996) : 87 % des porteurs dans le quartile supérieur (plus de 1,15 U/mL), vérifié. La hausse d’« environ 30 % » n’apparaît pas dans le résumé vérifié : retirée."
+   },
+   {
+    "id": "I80_d-1",
+    "probleme": "Seuil du dabigatran exact (résumé européen de Pradaxa §4.3 : contre-indication si clairance inférieure à 30 mL/min ; ESVS 2021 §4.6). Pour l’apixaban, le rivaroxaban et l’édoxaban, les résumés européens et l’ESVS écrivent « non recommandé » sous 15 mL/min, non « contre-indiqué » : terme corrigé. La phrase « petites molécules, ils passent le placenta et le lait » redisait mot pour mot I80_b-8 ; « éliminé à 80 % » était répété dans I80_b-10 et I80_c-7 : retirés ici."
+   }
+  ]
+ },
+ "fenetres": {
+  "i80-antidotes__P1": {
+   "verdict": "ok",
+   "erreurs": []
+  },
+  "i80-ddimeres__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Redite : la rubrique Physiologie normale reprenait la chaîne thrombine, fibrine, plasmine, D-dimères déjà exposée par la Biochimie de l’onglet Sciences et par la fenêtre i80-fibrinolyse ; réduite à l’information propre (pontage des domaines D par le facteur treize activé).",
+    "Redite : la rubrique Ce qui change la décision répétait mot pour mot l’algorithme de l’îlot 6, où se trouve l’ancre ; remplacée par la preuve clinique de la stratégie (Palladio).",
+    "Redite : la liste des causes de D-dimères élevés répétait l’îlot 2 des Examens ; fondue dans la phrase du nombre de patients à tester."
+   ]
+  },
+  "i80-doses__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Redite : la première phrase reprenait mot pour mot le complément I80_b-3 (« La phase initiale vise à arrêter l’extension… ») ; fondue dans la phrase des doses.",
+    "Redite avec l’onglet Sciences : les demi-vies du facteur VII, de la protéine C et de la prothrombine sont exposées dans la Biochimie (complément I80_c-21) ; la rubrique ne garde que la règle de chevauchement et sa raison.",
+    "Redite avec l’onglet Sciences : l’accumulation rénale de l’énoxaparine et la contre-indication du fondaparinux sous 30 mL/min figurent dans le tableau de Biochimie (I80_c-18 et I80_c-19) ; phrase retirée.",
+    "« Éliminé à 80 % par le rein » apparaissait quatre fois dans le cours (I80_b-10, I80_c-7, I80_d-1 et ici) ; retiré ici."
+   ]
+  },
+  "i80-duree__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Classements contradictoires non exposés : la fenêtre décrivait les classes de l’ESC 2019 sans signaler que l’ESVS 2021 range œstrogènes, grossesse et post-partum parmi les facteurs majeurs, à faible risque de récidive (note du tableau 4, tableau 15). Discordance ajoutée sans trancher.",
+    "Redite : les chiffres de récidive (0,7 % par an ; 10 % puis 36 %) étaient déjà dans le complément I80_a-6 ; retirés, seul le taux de létalité de 4 % (Khan et al. 2019) est gardé.",
+    "Redite : la rubrique Ce qui change la décision répétait mot pour mot la phrase qui porte l’ancre (« bénéfice contre risque hémorragique, fonction rénale, poids, interactions, observance ») ; remplacée par les facteurs hémorragiques de l’ESVS 2021 §2.3.4.1."
+   ]
+  },
+  "i80-ep__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Redite : la première phrase répétait presque mot pour mot le complément I80_a-1 (« Le thrombus détaché suit le retour veineux, traverse le cœur droit… »), situé dans le même paragraphe que l’ancre ; supprimée.",
+    "Redite avec la fenêtre existante : « état hémodynamique, score PESI, troponine, imagerie du ventricule droit » répétait la liste déjà présente ; remplacé par le pourquoi de chaque marqueur."
+   ]
+  },
+  "i80-fibrinolyse__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Redite : les chiffres de recanalisation (80 % et 20 %) et d’obstruction résiduelle (70 %) figurent déjà dans les compléments I80_a-2 et I80_b-33 ; remplacés par l’énoncé qualitatif.",
+    "Redite avec l’onglet Sciences : « un œdème qui persiste ne signe pas un échec » répétait l’encadré Science → clinique de la Biochimie, où se trouve l’ancre ; supprimé.",
+    "Sujet ambigu (« Elle agit mieux ») corrigé ; le délai de 2 semaines est aussi donné pour le membre inférieur (ESVS 2021 §2.8.2), source complétée."
+   ]
+  },
+  "i80-phlegmatia__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Redite interne : le rôle du cancer était énoncé deux fois (conséquence et décision) ; fusionné dans la décision."
+   ]
+  },
+  "i80-pompe__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Redite : la fréquence de 20 à 50 % est déjà donnée à l’îlot 2 ; retirée.",
+    "La recommandation de compression précoce (30 à 40 mmHg, classe I) est gardée ici et retirée du complément I80_b-2 voisin, qui la redisait."
+   ]
+  },
+  "i80-signes__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Redite : la liste des diagnostics différentiels répétait le paragraphe Diagnostics différentiels de l’îlot 5, à deux phrases de l’ancre ; supprimée.",
+    "Redite : « La circonférence se mesure 10 cm sous la tubérosité tibiale » répétait le texte même qui porte l’ancre ; supprimée.",
+    "Redite : la suite D-dimères ou échographie répétait l’îlot 6 ; réduite."
+   ]
+  },
+  "i80-test-thrombophilie__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Surgénéralisation : « un syndrome des antiphospholipides impose un antivitamine K » ; l’ESVS 2021 (recommandations 67 et 68) ne vise que le syndrome triple positif ou avec antécédent artériel ou microvasculaire, et laisse ouverte la question des profils à moindre risque.",
+    "Redites avec l’onglet Sciences (Génétique et Biochimie) : test génétique réalisable à tout moment, effet réduit de l’héparine en cas de déficit en antithrombine, porteurs hétérozygotes restant indemnes ; supprimées."
+   ]
+  },
+  "i80-tih__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Incohérence apparente avec le cours (alerte de l’îlot 7, fenêtre existante, quiz : 5e au 10e jour) : la fenêtre donnait 5 à 14 jours sans expliquer l’écart ; les deux bornes sont désormais situées (délai typique selon l’American Society of Hematology, fenêtre du score 4T)."
+   ]
+  },
+  "i80-virchow__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Surgénéralisation et surcertitude : « la voie transdermique n’augmente habituellement pas le risque » valait pour toute œstrogénothérapie, y compris le timbre contraceptif à l’éthinylestradiol ; la source citée (Stanczyk et al., Frontiers in Endocrinology 2025) ne conclut qu’à un impact probablement moindre du traitement transdermique de la ménopause, à confirmer. Restreint et nuancé.",
+    "Redites avec l’onglet Sciences, où une ancre de cette fenêtre est posée (I80_c-a2) : pompe du mollet, facteurs activés non éliminés et hypoxie des poches valvulaires (Physiologie et complément I80_c-16) ; supprimées.",
+    "Redite avec le complément I80_a-9 (syndrome néphrotique) ; la phrase reste dans le tableau des facteurs persistants."
+   ]
+  },
+  "i80-wells__P1": {
+   "verdict": "corrigée",
+   "erreurs": [
+    "Surcertitude : « Chaque point traduit un mécanisme » présentait comme un fait une lecture pédagogique (le score a été construit empiriquement, ce que P1 notait seulement en réserve) ; nuancé dans le texte.",
+    "Redite : la rubrique Ce qui change la décision répétait la fenêtre existante (« ≤ 1 : peu probable ; ≥ 2 : probable ») et l’algorithme de l’îlot 6 ; supprimée."
+   ]
+  }
+ },
+ "doublons": "Aucun : un seul producteur (P1) ; aucune fusion nécessaire. Ancres : 14 contrôlées, aucune retirée, aucun label modifié.",
+ "points_demandes": {
+  "embolie_silencieuse": "Correction de P1 exacte : 30 à 40 % des thromboses (jusqu’à 66 %), davantage si proximale, 13 % au mollet (ESVS 2021 §2.2.3) ; 70 % de thromboses à la phlébographie dans l’embolie (ESC 2019 §4.10).",
+  "extension_distale": "Correction exacte : environ 9 % d’extension à la poplitée et 1,5 % d’embolie sans anticoagulation, réparties sur 3 mois (ESVS 2021 §2.9.1, Garry et al. 2016). L’ancien 15 à 25 % reflétait des séries comptant les extensions asymptomatiques (18,6 % d’événements dans la revue Cochrane).",
+  "recidive": "Exact : 10 % la première année, 36 % à 10 ans, 41 % chez l’homme et 29 % chez la femme (Khan et al., BMJ 2019) ; 0,7 % par an après chirurgie, 4,2 % après un autre facteur transitoire, 3,3 % pour l’ensemble (ESVS 2021 §2.3.6.1).",
+  "facteurs_hormonaux_et_gravidiques": "Exact : contraception combinée, risque multiplié par 2 à 6 (ESC 2019 §3.2) ; grossesse 10 fois, post-partum 25 fois, rapport de cotes 12 dans les 6 premières semaines (ESVS 2021 §4.2.1). Classement contradictoire exposé (voir discordances).",
+  "facteur_V_Leiden": "Exact selon l’ESVS 2021 : prévalence 5 à 10 % dans les populations d’origine européenne, rare ailleurs ; risque multiplié par 3 à 8 chez l’hétérozygote. Aucune donnée suisse vérifiée.",
+  "seuil_dabigatran": "Exact : contre-indication sous 30 mL/min (résumé européen de Pradaxa §4.3 ; ESVS 2021 §4.6). Les anti-Xa oraux sont « non recommandés » sous 15 mL/min, non contre-indiqués : terme corrigé dans I80_d-1 ; Pareto Pharmacologie corrigé par I80_pop-v1.",
+  "score_de_Padoue": "Pondérations complétées (3 points : cancer, antécédent, mobilité réduite, thrombophilie ; 2 points : chirurgie ou traumatisme du mois précédent ; 1 point : autres facteurs, dont infarctus ou accident vasculaire cérébral ischémique aigus) ; 11 % contre 0,3 % de thromboses symptomatiques vérifiés (Barbar et al. 2010). L’âge ≥ 70 ans du cours correspond au score d’origine.",
+  "ddimeres_faux_negatifs": "Correction exacte : symptômes de plus de 2 à 3 semaines, anticoagulant, thrombose limitée au mollet (ESVS 2021 §2.2.1.2)."
+ },
+ "discordances_ESC_ESVS_exposees": [
+  "Œstrogènes, grossesse et post-partum : facteurs transitoires mineurs pour l’ESC 2019 (tableau 11), majeurs pour l’ESVS 2021 (note du tableau 4, §2.2.2.2) et classés à faible risque de récidive (tableau 15). Exposé dans I80_a-4, I80_b-v1, I80_b-31 et la fenêtre i80-duree.",
+  "Prolongation après un facteur transitoire mineur : à envisager pour l’ESC 2019 (classe IIa, recommandation formulée pour l’embolie pulmonaire), au cas par cas pour l’ESVS 2021 (recommandation 18, classe IIb). Exposé dans I80_b-v1 et I80_b-31.",
+  "Aspirine en prolongation : déconseillée par l’ESVS 2021 (recommandation 24, classe III), admise par l’ESC 2019 chez le patient qui refuse ou ne tolère aucun anticoagulant oral (classe IIb). Exposé dans I80_a-7.",
+  "Bas de compression contre le syndrome post-thrombotique : essai SOX négatif, mais l’ESVS 2021 les juge encore à envisager (recommandation 32, classe IIa) en raison d’une observance faible. Exposé dans I80_b-2."
+ ],
+ "erreurs_de_fond_trouvees_par_le_verificateur": [
+  "Classements contradictoires ESC 2019 et ESVS 2021 non exposés par P1 dans le texte (seulement en réserve) ; P1 suivait l’ESC sans le signaler.",
+  "Pareto Pharmacologie : seuil de 15 mL/min pour le dabigatran, non corrigé par P1.",
+  "I80_d : anti-Xa oraux dits « contre-indiqués » sous 15 mL/min (non recommandés selon les résumés européens).",
+  "Fenêtre i80-virchow : « la voie transdermique n’augmente habituellement pas le risque », généralisation à toute œstrogénothérapie, non soutenue par la source citée.",
+  "Fenêtre i80-test-thrombophilie : antivitamine K « imposé » pour tout syndrome des antiphospholipides ; l’ESVS ne vise que les formes à haut risque.",
+  "Surcertitudes corrigées : association antipsychotiques « établie », « 6 semaines suffisent », prédominance gauche du May-Thurner, 70 % d’obstruction résiduelle généralisé à partir d’une étude, hausse de 30 % de la prothrombine non vérifiée, lecture mécanistique du score de Wells présentée comme un fait.",
+  "Données incomplètes ou trompeuses : pondérations du score de Padoue, mortalité par cancer de SOME sans mention de non-significativité, essai du filtre cave mené chez des patients anticoagulés avec filtres permanents, incidence « plus de 5 pour 1 000 après 80 ans » invérifiable.",
+  "Redites supprimées : fenêtres i80-ddimeres, i80-signes, i80-duree, i80-doses, i80-ep, i80-fibrinolyse, i80-test-thrombophilie, i80-virchow, i80-wells et i80-pompe contre l’onglet Sciences, les fenêtres existantes et les compléments voisins ; compléments I80_a-9, I80_b-2, I80_c-6, I80_c-13, I80_c-14, I80_c-21 et I80_d-1."
+ ],
+ "reserves": [
+  "Informations professionnelles suisses (compendium.ch) non consultées : doses vérifiées dans l’ESVS 2021 et les résumés européens ; la mention « Doses selon les informations professionnelles suisses » de I80_d reste à contrôler.",
+  "Allaitement : les données de l’ESVS et de l’ESC portent sur la warfarine, non commercialisée en Suisse ; l’acénocoumarol et la phenprocoumone n’ont pas été vérifiés.",
+  "Pondérations du score de Padoue reprises de la table originale de Barbar et al. 2010, largement reproduite ; le texte intégral (ASH 2018, prophylaxie) n’a pas pu être relu (page bloquée).",
+  "Non vérifiés et laissés tels quels : durée de 10 à 35 jours de la prophylaxie orthopédique, abandon du signe de Homans, « presque toutes les thromboses associent au moins deux éléments », prévalence suisse du facteur V Leiden, disponibilité de l’andexanet alfa en Suisse.",
+  "Erreurs internes de l’ESVS 2021 non reprises (fondaparinux « b.d. » dans CALISTO, seuil « > 15 » de Villalta).",
+  "Référence EASL 2022 de la bibliographie du cours probablement confondue (signalée par P1, non modifiée).",
+  "Noms d’essais hors glossaire non écrits ; EINSTEIN, SOX, ATTRACT, CALISTO, SOME, ADJUST-PE et Palladio (ce dernier d’après l’ESVS) restent cités.",
+  "Le cours n’est pas certifié relu intégralement par cette seule passe : seules les affirmations relevées par P1 et les redites détectées ont été contrôlées."
+ ],
+ "controles": {
+  "old_uniques": "85 sur 85 (83 de P1 et 2 ajouts), contrôlés sur les sources canoniques",
+  "balises_conservees": "contrôle automatique sur les 21 textes corrigés",
+  "verifier_sigles": "{} sur les 13 fichiers out/*.html, sur les 85 textes finaux et sur le cours fusionné simulé",
+  "application_a_blanc": "85 compléments appliqués, 14 ancres, 6 fenêtres créées, 7 complétées, 0 échec",
+  "controles_statiques_test_v7_reproduits": "audit {} ; aucune fenêtre manquante ; préfixes, classes et absence de style en ligne conformes (simulation hors de chapters/)",
+  "volume_mots_compteur_du_depot": "7 292 avant ; 14 174 avec la version de P1 ; 14 030 après vérification",
+  "longueur_fenetres_creees_caracteres": {
+   "i80-ddimeres": 2195,
+   "i80-signes": 1526,
+   "i80-phlegmatia": 1840,
+   "i80-duree": 2508,
+   "i80-doses": 2246,
+   "i80-antidotes": 2053
+  }
+ }
+}

@@ -2,6 +2,9 @@
 
 Ce dossier est le point d'entrée permanent pour consulter les livraisons, reprendre une mission et remettre une contribution.
 
+- [Chaîne des dix fragments Codex, sentinelles et veille](CODEX_CHAINE_FRAGMENTS.md).
+- [Signaux Codex : demande A41 et retours à Claude](SIGNAUX_CODEX.json).
+- [Réception de la remise comparative Claude et réserves](receipts/CLAUDE_ESC2026_20261008_RECEPTION.json).
 - [Cahier des charges opérationnel de Claude](CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md).
 - [Répartition des 21 fragments et progression par chapitre](FRAGMENTS_RESTANTS.md).
 - [Dernière livraison et travaux à relire](HANDOFF_LATEST.md).

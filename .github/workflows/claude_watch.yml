@@ -1,0 +1,116 @@
+name: Veille des livraisons Claude
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/claude_watch.yml'
+      - 'tools/claude_watch.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: medina-claude-watch
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Lire les outils de confiance publiés sur main
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Repérer les remises sans exécuter leur contenu
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+
+          env = os.environ.copy()
+          credentials = base64.b64encode(
+              ("x-access-token:" + env.pop("GH_TOKEN")).encode()
+          ).decode()
+          env.update({
+              "GIT_CONFIG_COUNT": "1",
+              "GIT_CONFIG_KEY_0": "http.https://github.com/.extraheader",
+              "GIT_CONFIG_VALUE_0": "AUTHORIZATION: basic " + credentials,
+          })
+          state = Path(env["RUNNER_TEMP"]) / "medina-claude-watch"
+          result = subprocess.run([
+              sys.executable, "tools/claude_watch.py", "--once",
+              "--repo-root", env["GITHUB_WORKSPACE"],
+              "--state-dir", str(state),
+          ], env=env)
+          sys.exit(result.returncode)
+          PY
+
+      - name: Présenter les candidats à auditer
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          directory = Path(os.environ["RUNNER_TEMP"]) / "medina-claude-watch"
+
+          def read(name):
+              try:
+                  value = json.loads((directory / name).read_text())
+                  return value if isinstance(value, dict) else {}
+              except (OSError, ValueError):
+                  return {}
+
+          status = read("status.json")
+          candidates = read("queue.json").get("candidates", [])
+          current = [c for c in candidates if c.get("currently_advertised")
+                     and not c.get("reachable_from_integration")]
+          outcome = status.get("status", "indisponible")
+          lines = [
+              "## Veille des livraisons Claude", "",
+              "État du scan : **" + outcome + "**.",
+              "Candidats actuellement repérés : **" + str(len(current)) + "**.",
+              "État de traitement : **pending audit — contrelecture à effectuer**.",
+              "Ce workflow repère les remises ; l'audit croisé et l'injection restent à effectuer.",
+              "",
+          ]
+          if outcome != "ok":
+              lines.append("Scan incomplet : la disponibilité actuelle des remises n'est pas établie.")
+              lines.append("")
+          for candidate in current:
+              lines.append("- Commit `" + candidate["commit"] + "` : `"
+                           + candidate["status"] + "`.")
+          lines.extend([
+              "",
+              "Chaque exécution produit un inventaire indépendant ; une remise en attente peut réapparaître.",
+              "La planification GitHub peut être retardée et n'est active que sur la branche par défaut.",
+              "Les trois fichiers JSON de preuve sont conservés pendant sept jours.",
+          ])
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+              summary.write("\n".join(lines) + "\n")
+          PY
+
+      - name: Conserver la file et les preuves du scan
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: medina-claude-watch-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/medina-claude-watch/queue.json
+            ${{ runner.temp }}/medina-claude-watch/status.json
+            ${{ runner.temp }}/medina-claude-watch/state.json
+          retention-days: 7
+          if-no-files-found: warn

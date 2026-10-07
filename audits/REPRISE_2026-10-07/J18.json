@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-07",
+  "course": "J18 — Pneumonies de l’adulte",
+  "fragment": "P-02-Pneumologie",
+  "scope": "Réserves ciblées héritées de GLOBAL_LOT3_SCIENCES et leurs destinations directement liées.",
+  "exhaustive_review": false,
+  "site_count": 9,
+  "sites": [
+    {
+      "file": "chapters/J18/J18_c.html",
+      "anchor": "j18-s-anatomie",
+      "unit": "Bronches et régions déclives : texte, annonce, SVG, légende, lecture après figure",
+      "status": "corrige",
+      "sources": [
+        "bts2023",
+        "atsidsa2019"
+      ],
+      "change": "La figure pleurale discordante devient une chaîne d’aspiration et de dépôt déclive ; les deux premiers facteurs sont associés, sans infection automatique."
+    },
+    {
+      "file": "chapters/J18/J18_c.html",
+      "anchor": "j18-s-physiologie",
+      "unit": "Du rapport bas au shunt : texte, annonce, SVG, légende, lecture et quiz existant",
+      "status": "corrige",
+      "sources": [
+        "gea1991",
+        "wagner2022"
+      ],
+      "change": "Ventilation nulle et perfusion persistante sont simultanées dans la première case. Le rapport bas reste distinct du shunt vrai ; rapport élevé et espace mort pur sont distingués."
+    },
+    {
+      "file": "chapters/J18/J18_a.html",
+      "anchor": "j18-3",
+      "unit": "Figure 1 : annotation ventilation-perfusion, deux lignes seulement",
+      "status": "corrige",
+      "sources": [
+        "wagner2022"
+      ],
+      "change": "Le rapport bas exige une ventilation réduite avec perfusion maintenue ; le shunt exige l’absence de ventilation."
+    },
+    {
+      "file": "chapters/J18/J18_a.html",
+      "anchor": "j18-3",
+      "unit": "3.4 L’effet shunt : calcul, figure 2 et commentaire immédiat",
+      "status": "limites_corrigees",
+      "sources": [
+        "gea1991",
+        "wagner2022",
+        "toffaletti2026"
+      ],
+      "change": "L’hypothèse de même hémoglobine et l’absence d’oxygène dissous sont explicites. 91 % est une sortie du modèle, pas un plafond clinique. Une réponse insuffisante peut refléter un shunt et ne le quantifie pas."
+    },
+    {
+      "file": "chapters/J18/J18_pop1.html",
+      "anchor": "data-pop=j18-shunt",
+      "unit": "Fenêtre définition, exemple, réponse à l’oxygène et conséquence pratique",
+      "status": "corrige",
+      "sources": [
+        "gea1991",
+        "wagner2022",
+        "toffaletti2026"
+      ],
+      "change": "La définition n’assimile plus très peu ventilé à non ventilé. Les limites du calcul et de la réponse à l’oxygène sont explicites."
+    },
+    {
+      "file": "chapters/J18/J18_pop_sciences_revision.html",
+      "anchor": "data-pop=j18-ventilation-perfusion",
+      "unit": "Fenêtre entière",
+      "status": "corrige",
+      "sources": [
+        "gea1991",
+        "wagner2022"
+      ],
+      "change": "Progression unité normale → rapport bas → shunt vrai ; espace mort alvéolaire et rapport élevé distincts."
+    },
+    {
+      "file": "chapters/J18/J18_justifications.json",
+      "anchor": "j18-j-hypoxemie",
+      "unit": "Entrée entière",
+      "status": "alignee",
+      "sources": [
+        "gea1991",
+        "wagner2022"
+      ],
+      "change": "La perfusion persistante est nécessaire à la définition du shunt vrai."
+    },
+    {
+      "file": "chapters/J18/J18_justifications.json",
+      "anchor": "j18-j-hypoxemie-oxygene",
+      "unit": "Entrée entière",
+      "status": "limites_completees",
+      "sources": [
+        "gea1991",
+        "wagner2022"
+      ],
+      "change": "La réponse à l’oxygène ne quantifie pas seule un shunt ; les mécanismes peuvent coexister."
+    },
+    {
+      "file": "chapters/J18/J18_justifications.json",
+      "anchor": "j18-j-topographie-aspiration",
+      "unit": "Nouvelle entrée entière",
+      "status": "ajoutee",
+      "sources": [
+        "bts2023",
+        "atsidsa2019"
+      ],
+      "change": "Fenêtre contextualisée : gravité, trajectoire bronchique, territoires selon position, limites et conséquence thérapeutique."
+    }
+  ],
+  "sources": [
+    {
+      "id": "bts2023",
+      "type": "statement_original_societe_savante",
+      "title": "Simpson et collaborateurs — BTS clinical statement on aspiration pneumonia",
+      "year": 2023,
+      "url": "https://www.brit-thoracic.org.uk/document-library/clinical-statements/aspiration-pneumonia/bts-clinical-statement-on-aspiration-pneumonia/",
+      "read": "PDF officiel, sections définition/pathogenèse et diagnostic, notamment territoires déclives et distinction pneumonite chimique/pneumonie.",
+      "access": "texte intégral officiel consulté",
+      "supports": [
+        "topographie selon position",
+        "aspiration chimique distincte de l’infection",
+        "limite de la topographie isolée"
+      ]
+    },
+    {
+      "id": "atsidsa2019",
+      "type": "recommandation_originale_societes_savantes",
+      "title": "Metlay et collaborateurs — Diagnosis and Treatment of Adults with Community-acquired Pneumonia",
+      "year": 2019,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/",
+      "read": "Question 10, résumé des preuves et distinction de la pneumonite après aspiration gastrique.",
+      "access": "texte intégral consulté",
+      "supports": [
+        "pneumonite chimique sans antibiotique systématique"
+      ]
+    },
+    {
+      "id": "gea1991",
+      "type": "etude_physiologique_originale",
+      "title": "Gea et collaborateurs — Mechanisms of abnormal gas exchange in patients with pneumonia",
+      "year": 1991,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1952203/",
+      "read": "Résumé original PubMed indexé, anomalie ventilation-perfusion et shunt ; réponse à 100 % d’oxygène.",
+      "access": "résumé indexé consulté ; ouverture directe PubMed partiellement bloquée (429), article complet non consulté",
+      "supports": [
+        "coexistence inégalités ventilation-perfusion et shunt dans la pneumonie",
+        "réponse à l’oxygène hétérogène"
+      ]
+    },
+    {
+      "id": "wagner2022",
+      "type": "article_methodologique_original",
+      "title": "Wagner, Malhotra et Prisk — Using pulmonary gas exchange to estimate shunt and deadspace in lung disease: theoretical approach and practical basis",
+      "year": 2022,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9022598/",
+      "read": "Modèles de compartiments, shunt sans ventilation, espace mort sans perfusion ; distinction des rapports non nuls et extrêmes ; limites des mesures isolées.",
+      "access": "texte intégral consulté",
+      "supports": [
+        "définition du shunt vrai",
+        "définition de l’espace mort alvéolaire",
+        "diminution d’un débit distincte de son absence",
+        "une saturation seule ne quantifie pas le mécanisme"
+      ]
+    },
+    {
+      "id": "toffaletti2026",
+      "type": "rapport_pedagogique_original_cas_unique",
+      "title": "Toffaletti et Zavorsky — Calculating pulmonary shunt fraction using standard clinical measurements",
+      "year": 2026,
+      "url": "https://physoc.onlinelibrary.wiley.com/doi/full/10.14814/phy2.70763",
+      "read": "Hypothèses de la méthode de saturation, méthode 2, équation 4 : oxygène dissous non négligeable sous 100 % d’oxygène.",
+      "access": "texte intégral ouvert pour cette limite qualitative",
+      "supports": [
+        "limite du calcul pédagogique ne tenant pas compte de l’oxygène dissous en hyperoxie"
+      ],
+      "limits": "Incohérences typographiques et d’unités repérées dans d’autres passages ; aucune formule ni donnée de cet article n’a été injectée dans le cours."
+    }
+  ],
+  "controls": {
+    "static": "python3 test_v7.py --static J18 : OK ; 53 280 mots, 92 fenêtres HTML, 7 quiz, 9 boutons Pareto.",
+    "justification_bank": {
+      "windows": 16,
+      "targets": 16,
+      "transformed_audit": {}
+    },
+    "diff_check": "git diff --check -- chapters/J18 : OK",
+    "svg_visual": "Quatre SVG concernés rendus avec sharp/librsvg et inspectés visuellement ; deux chaînes Sciences lisibles, figure 1 et figure 2 sans chevauchement nouveau.",
+    "browser": "Pas de test navigateur effectué : module Python playwright absent et binaire Chromium de Playwright Node absent.",
+    "full_build": "Non exécuté ; aucun dist modifié.",
+    "independent_review": "Agent j18_review, lecture seule : aucun défaut médical bloquant dans les corrections ; deux réserves locales émises puis corrigées (précision du rapport bas ; limite du modèle sous oxygène)."
+  },
+  "reserves": [
+    {
+      "state": "ouverte",
+      "origin": "Journal GLOBAL_LOT3_SCIENCES, J18 unité 3",
+      "issue": "Phrase microbiologique « Une hémoculture positive apporte une information différente d’un résultat respiratoire non spécifique » encore vague.",
+      "scope": "Hors des deux figures ciblées ; aucune validation médicale de cette phrase revendiquée."
+    },
+    {
+      "state": "ouverte",
+      "issue": "Tous les autres contenus médicaux du cours, leurs chiffres, doses, fenêtres, quiz et Pareto restent hors de cette passe.",
+      "scope": "Ni audit intégral J18, ni complétude CIM-11, ni certification du fragment."
+    },
+    {
+      "state": "limite",
+      "issue": "Contrôle technique statique et compilation locale réussis ; comportement navigateur et produit final reconstruits à vérifier par l’intégrateur."
+    }
+  ],
+  "source_hashes_after": {
+    "chapters/J18/J18_a.html": "8d674ae2d1fc7ade8cf6152e8c38247cae7186f2ae9bfdbea72f16a2d91097cc",
+    "chapters/J18/J18_c.html": "a3ffbcdf8841090c2111390031e756d7033c091adfbce2b458a235af8d8365d7",
+    "chapters/J18/J18_justifications.json": "4ba3fa8b9756366134cde23a3ec2e8d86ddcee32623ad3f7a29cd9f591911466",
+    "chapters/J18/J18_pop1.html": "7f6e140aec63afa0854be5249fa9536f6621981f5d35277e407195d15f53566b",
+    "chapters/J18/J18_pop_sciences_revision.html": "4856ed5eebeb25710a51b44bd32b393e6cce4cf9651a65ab69fde9faba91ff97"
+  }
+}

@@ -1,0 +1,312 @@
+{
+ "cours": "I49 — Extrasystoles et autres arythmies",
+ "date": "2026-10-07",
+ "role": "vérificateur indépendant (TACHE_VERIFICATION.md)",
+ "source_de_reference": "Zeppenfeld et al., 2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death, Eur Heart J 2022;43:3997-4126 : texte anglais (src/esc2022_va.txt et src/esc2022_va_flux.txt), tableaux 8, 9, 26, 27 et 40, figure 12, sections 6.1.1, 7.1.2.1, 7.1.2.2 et 7.2.1 ; consensus HRS 2015 (src/hrs2015_pots_pmc.txt) ; ESC 2021 stimulation (I44/src) ; ESC 2023 cardiomyopathies (I42/src) ; informations professionnelles américaines (src/dailymed_*.txt) ; résumés PubMed de chaque essai et cohorte chiffrés.",
+ "complements": {
+  "total": 194,
+  "producteurs": 191,
+  "ajouts_du_verificateur": 3,
+  "accepter": 166,
+  "corriger": 25,
+  "rejeter": 0,
+  "par_fichier": {
+   "I49_a": {
+    "corriger": 6,
+    "accepter": 10
+   },
+   "I49_b": {
+    "accepter": 22,
+    "corriger": 5
+   },
+   "I49_c": {
+    "accepter": 57,
+    "corriger": 6
+   },
+   "I49_d": {
+    "corriger": 3,
+    "accepter": 24
+   },
+   "I49_pop1": {
+    "accepter": 1
+   },
+   "I49_pop2": {
+    "accepter": 8,
+    "corriger": 1
+   },
+   "I49_pop3": {
+    "accepter": 1
+   },
+   "I49_pop4": {
+    "accepter": 22,
+    "corriger": 2
+   },
+   "I49_pop5": {
+    "accepter": 24,
+    "corriger": 2
+   }
+  },
+  "ajouts": [
+   {
+    "id": "I49_d-v1",
+    "fichier": "I49_d",
+    "objet": "Tableau des classes, ligne « Classe Ic » : exception de la flécaïnide dans la cardiomyopathie induite (arbitrage)."
+   },
+   {
+    "id": "I49_pop5-v1",
+    "fichier": "I49_pop5",
+    "objet": "Pareto des palpitations : « anamnèse + ECG = diagnostic chez ≈ la moitié » (EHRA 2011, non consultée) remplacé par la donnée vérifiée de Weber et Kapoor (1996), cohérente avec I49_a-7."
+   },
+   {
+    "id": "I49_pop5-v2",
+    "fichier": "I49_pop5",
+    "objet": "Pareto de pharmacologie : exception de la flécaïnide ajoutée à « classe Ic sur cardiopathie » (arbitrage)."
+   }
+  ],
+  "corriges": [
+   {
+    "id": "I49_a-1",
+    "probleme": "Mécanisme juste ; la phrase restait nominale (« Onde P prématurée… ») : réécrite en phrases complètes."
+   },
+   {
+    "id": "I49_a-3",
+    "probleme": "Chiffres exacts (résumé PubMed). Le complément supprimait la lacune sur les ESA, que la cohorte ne couvre pas, et présentait une cohorte du Liechtenstein comme une réponse à la lacune suisse : reformulé en « donnée la plus proche »."
+   },
+   {
+    "id": "I49_a-7",
+    "probleme": "Le résumé dit « Forty percent of the etiologies could be determined… » : 40 % des causes identifiées, et non 40 % des patients. Harmonisé avec le Pareto des palpitations (ajout I49_pop5-v1)."
+   },
+   {
+    "id": "I49_a-9",
+    "probleme": "« Rapide et régulier » évoque aussi une tachycardie sinusale ; le début et la fin brutaux sont ajoutés pour orienter vers la réentrée. Description de l’extrasystole précisée (battement prématuré puis pause)."
+   },
+   {
+    "id": "I49_a-10",
+    "probleme": "« Les oreillettes se vident contre des valves fermées » est inexact (elles se contractent sans pouvoir se vider). « D’autres médiateurs rénaux sont discutés » remplacé par le médiateur que décrit la source citée (urodilatine, Kentsch et al., 1998, résumé PubMed)."
+   },
+   {
+    "id": "I49_a-13",
+    "probleme": "Dans la source, c’est la largeur du QRS (variable continue) qui est indépendante de la charge ; le seuil de 150 ms vient de la courbe ROC. Formulation corrigée ; chiffres 22 % et 28 % vérifiés."
+   },
+   {
+    "id": "I49_b-5",
+    "probleme": "Ajout juste (ESC 2022, section 7.1.2.2), mais la seconde phrase répétait cinq facteurs de la liste : redite supprimée en distinguant les facteurs retenus par l’ESC de ceux des séries."
+   },
+   {
+    "id": "I49_b-6",
+    "probleme": "Arbitrage flécaïnide et FEVG réduite : formulation commune à tous les passages (ESC 2022, tableau 27 et note c, tableau 9, section 7.1.2.2 ; tableau 8 : contre-indication après infarctus et sur cardiopathie structurelle significative). Les chiffres de la série (36 % → 10 % ; FEVG 37 % → 49 %) sont gardés dans la fenêtre i49-d-ic (I49_pop4-7), qu’ouvre l’îlot 11.2 : redite supprimée ici."
+   },
+   {
+    "id": "I49_b-10",
+    "probleme": "Première phrase vérifiée (ESC 2022, section 7.1.2.1). La phrase finale « n’est permise qu’en l’absence de cardiopathie structurelle » contredisait l’arbitrage flécaïnide et FEVG réduite : harmonisée."
+   },
+   {
+    "id": "I49_b-22",
+    "probleme": "Le consensus HRS 2015 écrit « Blood volume is reduced in up to 70% of patients » : il s’agit du volume sanguin, non du seul volume plasmatique."
+   },
+   {
+    "id": "I49_b-23",
+    "probleme": "Pour le POTS, le consensus HRS 2015 justifie la classe III par l’aggravation fréquente des symptômes et le stimulateur parfois nécessaire ; la paralysie phrénique est citée pour la tachycardie sinusale inappropriée. Formulation alignée sur la source."
+   },
+   {
+    "id": "I49_c-9",
+    "probleme": "Une extrasystole jonctionnelle cachée peut aussi allonger le PR suivant, et non seulement bloquer la P : précisé."
+   },
+   {
+    "id": "I49_c-34",
+    "probleme": "Erreur du cours : une classe IIa n’est pas « recommandée » mais « à envisager » (« should be considered », tableaux 26 et 27). Corrigé comme dans I49_b-3 et I49_pop2-1 ; complément vérifié (note c du tableau 26 ; association des ESV à retard droit au rehaussement tardif, section 7.1.2.2)."
+   },
+   {
+    "id": "I49_c-40",
+    "probleme": "Arbitrage kaliémie : formulation exacte de Goyal et al. (2012, résumé PubMed ; référence 287 de l’ESC 2022) : nadir de mortalité entre 3,5 et < 4,5 mmol/L, mortalité doublée entre 4,5 et < 5,0 mmol/L (rapport de cotes ajusté 1,99). La source est nommée, l’effectif donné et la nature observationnelle explicitée ; aucune causalité n’est affirmée."
+   },
+   {
+    "id": "I49_c-43",
+    "probleme": "Rathore et al. (2003) est une analyse a posteriori (hommes, FEVG ≤ 45 %), non l’essai lui-même ; l’association ≥ 1,2 ng/mL porte sur la mortalité absolue (+ 11,8 %), le rapport de risque ajusté n’étant pas significatif. Formulation précisée."
+   },
+   {
+    "id": "I49_c-51",
+    "probleme": "Arbitrage flécaïnide et FEVG réduite (tableau 27 et note c ; tableau 9 ; section 7.1.2.2) : formulation commune avec I49_b-6, I49_d-5, I49_pop4-7 et I49_pop5-9. La phrase de P2 liait mal la restriction et sa cause (« parce que la classe Ic… »)."
+   },
+   {
+    "id": "I49_c-62",
+    "probleme": "Arbitrage : mécanisme présenté comme débattu. « Des travaux ultérieurs attribuent plutôt » laissait croire à une question tranchée ; la source est nommée (Bannister et al., 2015, résumé PubMed : absence d’effet direct sur le récepteur de type 2)."
+   },
+   {
+    "id": "I49_d-1",
+    "probleme": "Le complément présentait le mécanisme de la surmortalité de CAST comme établi (« parce que »), alors que l’essai ne l’a pas démontré ; harmonisé avec I49_c-61 et I49_b-13."
+   },
+   {
+    "id": "I49_d-5",
+    "probleme": "Arbitrage : l’exception de l’ESC 2022 vise la flécaïnide, non toute la classe Ic (propafénone exclue) ; formulation commune."
+   },
+   {
+    "id": "I49_d-22",
+    "probleme": "Complément juste ; la mention « FEVG réduite » est harmonisée avec l’arbitrage flécaïnide (exception de la cardiomyopathie induite)."
+   },
+   {
+    "id": "I49_pop2-6",
+    "probleme": "Une FEVG réduite ne « fournit » pas de circuit de réentrée ; c’est la cicatrice ou la fibrose qui le fait."
+   },
+   {
+    "id": "I49_pop4-7",
+    "probleme": "Arbitrage : formulation commune ; classe IIa et conditions de recours ajoutées (tableau 27). Chiffres de la série vérifiés (ESC 2022, section 7.1.2.2) et gardés ici seulement."
+   },
+   {
+    "id": "I49_pop4-8",
+    "probleme": "Le complément n’expliquait pas l’exigence d’une FEVG normale, qui contredisait sans nuance l’arbitrage flécaïnide. Ajout de l’effet inotrope négatif (information professionnelle américaine : aggravation de l’insuffisance cardiaque, surtout si FEVG < 30 %) et de l’exception."
+   },
+   {
+    "id": "I49_pop5-9",
+    "probleme": "Arbitrage : l’exception vise la flécaïnide et non toute la classe Ic ; le défibrillateur est une préférence (« particularly if an ICD is in place »), non une condition stricte."
+   },
+   {
+    "id": "I49_pop5-12",
+    "probleme": "Mécanisme de CAST présenté comme une explication et non comme un fait ; exception de l’ESC 2022 ajoutée (arbitrage)."
+   }
+  ]
+ },
+ "fenetres": {
+  "verdicts": {
+   "i49-ablation__P1": "ok",
+   "i49-atcd-psy__P1": "corrigée",
+   "i49-atcd-subst__P1": "ok",
+   "i49-bilan-bio__P1": "corrigée",
+   "i49-bilan-bio__P2": "corrigée",
+   "i49-cmie-crit__P1": "corrigée",
+   "i49-cmie-meca__P1": "corrigée",
+   "i49-commotio__P1": "ok",
+   "i49-couplage__P1": "corrigée",
+   "i49-crt__P1": "ok",
+   "i49-declench__P1": "ok",
+   "i49-e-auscult__P1": "ok",
+   "i49-ecg-base__P1": "ok",
+   "i49-effort__P1": "ok",
+   "i49-epi__P1": "corrigée",
+   "i49-erc__P1": "corrigée",
+   "i49-erc__P2": "corrigée",
+   "i49-essa__P1": "ok",
+   "i49-pots-phys__P1": "corrigée",
+   "i49-pots-tt__P1": "ok",
+   "i49-prono__P1": "corrigée",
+   "i49-pvm__P1": "ok",
+   "i49-riva__P1": "ok",
+   "i49-rja__P1": "ok",
+   "i49-rosc__P1": "corrigée",
+   "i49-standing__P1": "ok",
+   "i49-termino__P1": "corrigée"
+  },
+  "corrigees": [
+   "i49-atcd-psy__P1",
+   "i49-bilan-bio__P1",
+   "i49-bilan-bio__P2",
+   "i49-cmie-crit__P1",
+   "i49-cmie-meca__P1",
+   "i49-couplage__P1",
+   "i49-epi__P1",
+   "i49-erc__P1",
+   "i49-erc__P2",
+   "i49-pots-phys__P1",
+   "i49-prono__P1",
+   "i49-rosc__P1",
+   "i49-termino__P1"
+  ],
+  "creees_conservees": [
+   "i49-bilan-bio"
+  ],
+  "fusionnees": {
+   "i49-bilan-bio__P2": "i49-bilan-bio",
+   "i49-erc__P2": "i49-erc"
+  },
+  "ancres": {
+   "total": 8,
+   "retirees": 0,
+   "labels_modifies": 0,
+   "note": "Les quatre ancres de P1 (I49_a-a101 à a103, I49_b-a101) et les quatre de P2 (I49_c-a1, I49_c-a2, I49_d-a1, I49_d-a2) sont conservées ; clés i49-bilan-bio et i49-erc inchangées."
+  }
+ },
+ "arbitrages_demandes": {
+  "flecainide_et_FEVG_reduite": {
+   "decision": "L’ESC 2022 contre-indique la flécaïnide après un infarctus et sur une cardiopathie structurelle significative (tableau 8 ; figure 12 : dysfonction ventriculaire gauche sévère contre-indiquée, toute dysfonction = précaution), mais l’admet en classe IIa dans la cardiomyopathie induite par les ESV chez des patients choisis : dysfonction seulement modérée, surtout porteurs d’un défibrillateur (tableau 27, note c ; tableau 9, note b ; section 7.1.2.2 : « particularly if an ICD is in place »), quand l’ablation n’est pas souhaitée, paraît risquée ou a échoué. L’exception vise la flécaïnide, non toute la classe Ic.",
+   "formulation_commune": "Dans une cardiomyopathie induite par les ESV, l’ESC 2022 admet la flécaïnide (classe IIa) chez des patients choisis, à dysfonction seulement modérée et surtout porteurs d’un défibrillateur.",
+   "passages_harmonises": [
+    "I49_b-6 (îlot 10.3)",
+    "I49_b-10 (îlot 11.2)",
+    "I49_c-51 (rétroaction du cas 2)",
+    "I49_d-5 (tableau de l’onglet Pharmacologie)",
+    "I49_d-22 (médicaments à éviter)",
+    "I49_d-v1 (tableau des classes)",
+    "I49_pop4-7 et I49_pop4-8 (fenêtre i49-d-ic)",
+    "I49_pop5-9 (Pareto cardiomyopathie induite)",
+    "I49_pop5-12 (Pareto traitement)",
+    "I49_pop5-v2 (Pareto pharmacologie)"
+   ],
+   "chiffres_de_la_serie": "36 % → 10 % de charge et FEVG 37 % → 49 % (ESC 2022, section 7.1.2.2) : gardés dans la seule fenêtre i49-d-ic (I49_pop4-7), retirés de l’îlot 10.3 pour éviter la redite."
+  },
+  "bilan_bio_et_hemogramme": "Fenêtre i49-bilan-bio créée par P1 et complétée par P2 : les rubriques « Hémogramme » (P1) et « Anémie : ordres de grandeur » (P2) décrivaient la même compensation circulatoire. Fusion en une rubrique « Hémogramme et ferritine » dans out/i49-bilan-bio__P1.html (transport artériel d’oxygène chiffré, compensations, conséquences orthostatique et coronaire, décision, carence martiale sans anémie présentée comme association). P2 marqué « fusionnee_dans » : i49-bilan-bio ; ses ancres sont conservées.",
+  "erc": "Fenêtre i49-erc complétée par P1 et P2 : l’effet alpha de l’adrénaline était décrit deux fois. Fusion dans out/i49-erc__P1.html (pression de perfusion coronaire, puis médicaments, leurs limites et les essais, puis changement de vecteur ; une seule rubrique Source complémentaire). P2 marqué « fusionnee_dans » : i49-erc ; ses ancres sont conservées.",
+  "flecainide_recepteur_ryanodine": "Mécanisme présenté comme débattu partout : I49_c-62 (texte de biochimie), I49_c-63 (libellé de la figure 12 : « mécanisme débattu ») et I49_pop4-22 (fenêtre i49-d-ic). Bannister et al. (2015, résumé PubMed) ne trouvent pas d’effet direct sur le récepteur de type 2.",
+  "cupule_digitalique": "I49_c-38 accepté : signe d’imprégnation, non de toxicité ; le diagnostic d’intoxication de la ligne repose sur la kaliémie, la digoxinémie et la clinique.",
+  "kaliemie": "I49_c-40 corrigé : cible ≥ 4,0 mmol/L issue de petites études anciennes ; dans la cohorte de Goyal et al. (2012 ; 38 689 infarctus ; référence 287 de l’ESC 2022), mortalité hospitalière la plus basse entre 3,5 et 4,5 mmol/L et doublée entre 4,5 et 5,0 mmol/L ; association observée, qui ne prouve pas l’effet d’une correction."
+ },
+ "erreurs_de_fond": [
+  "Cours, I49_c (îlot 5.2) : IRM de classe IIa dite « recommandée » ; corrigée en « à envisager » (I49_c-34), comme P1 l’avait fait en I49_b-3 et I49_pop2-1.",
+  "Cours, Pareto des palpitations : « anamnèse + ECG = diagnostic chez ≈ la moitié » ; remplacé par 40 % des causes (Weber et Kapoor, 1996) (I49_pop5-v1).",
+  "P1, I49_a-7 : « 40 % des patients » ; la source dit 40 % des causes identifiées.",
+  "P1, I49_a-10 : « les oreillettes se vident contre des valves fermées » ; elles se contractent sans pouvoir se vider. Médiateur rénal précisé (urodilatine).",
+  "P1, I49_a-13 : indépendance vis-à-vis de la charge attribuée au seuil de 150 ms ; elle porte sur la largeur du QRS en continu.",
+  "P1, I49_a-3 : la lacune suisse sur les ESA était effacée alors que la cohorte du Liechtenstein ne porte que sur les ESV.",
+  "P1, I49_b-22 : « volume plasmatique » réduit chez 70 % ; le consensus HRS 2015 parle de volume sanguin.",
+  "P1, I49_b-23 : paralysie phrénique (complication décrite pour la tachycardie sinusale inappropriée) attribuée à la modification sinusale dans le POTS.",
+  "P1, fenêtre i49-cmie-meca : 61 % était la FEVG des chiens témoins, non la valeur initiale.",
+  "P1, fenêtre i49-cmie-crit : rapport de cotes 4,4 présenté comme multiplication de la probabilité.",
+  "P1, fenêtre i49-couplage : 89 % rapportés aux 23 patients Purkinje au lieu des 27 patients.",
+  "P1, fenêtre i49-prono : associations ajustées (rapport de risque 2,09 ; rapport de cotes 3,1) présentées comme des effets (« doublaient », « risque trois fois plus élevé »).",
+  "P1, fenêtre i49-rosc : méta-analyse d’AVID, CASH et CIDS restreinte à tort à la FV.",
+  "P2, I49_d-1 : mécanisme de la surmortalité de CAST présenté comme établi (« parce que ») ; l’essai ne l’a pas démontré.",
+  "P2, I49_d-5 et I49_pop5-9 : exception de l’ESC 2022 étendue à toute la classe Ic ; elle ne vise que la flécaïnide.",
+  "P2, I49_c-43 : analyse a posteriori de l’essai DIG présentée comme résultat de l’essai.",
+  "P2, fenêtre i49-bilan-bio : chaîne barorécepteurs et rénine-angiotensine-aldostérone attribuée à une revue dont le résumé ne la contient pas ; retirée.",
+  "P2, I49_pop4-8 : l’exigence d’une FEVG normale pour la flécaïnide n’était pas expliquée (effet inotrope négatif) et contredisait l’arbitrage sans nuance."
+ ],
+ "doublons_et_redites": [
+  "i49-bilan-bio : P1 (création) et P2 (complément) fusionnés ; rubriques Hémogramme et Anémie réunies.",
+  "i49-erc : compléments de P1 et de P2 fusionnés ; effet alpha de l’adrénaline décrit une seule fois.",
+  "I49_b-5 : la seconde phrase répétait cinq facteurs de la liste ; réécrite pour distinguer les facteurs de l’ESC 2022 et ceux des séries.",
+  "I49_b-6 : chiffres de la série flécaïnide retirés de l’îlot 10.3, gardés dans la fenêtre i49-d-ic qu’ouvre l’îlot 11.2.",
+  "Fenêtre i49-epi : la rubrique ajoutée répétait les proportions 43/31/10/16 % ; seul le pronostic (mortalité 1,6 %, récidive 75 %) est gardé.",
+  "Fenêtre i49-pots-phys : redites avec les rubriques existantes Hypovolémique et Neuropathique supprimées.",
+  "Fenêtre i49-termino : première phrase redisant la rubrique Forme supprimée.",
+  "Fenêtre i49-atcd-psy : dernière phrase redisant les rubriques Indices et Démarche supprimée."
+ ],
+ "reserves": [
+  "Les trois ajouts du vérificateur sont inscrits dans edits/I49_d.json et edits/I49_pop5.json (champ « auteur » : « vérificateur »), seul moyen de les faire appliquer par appliquer_justifications.py.",
+  "Le texte de l’ERC 2025 n’a pas été consulté : énergies, doses et délais de l’îlot 12 et de la fenêtre i49-erc non recontrôlés.",
+  "L’ESC 2018 sur la syncope n’a pas été consultée : le seuil « < 15/min » de l’hypotension orthostatique neurogène (I49_c, tableau de l’orthostatisme) reste non vérifié (réserve de P2).",
+  "L’ESC 2019 sur les tachycardies supraventriculaires et la position EHRA 2011 sur les palpitations n’ont pas été lues en texte intégral ; la classe IIa de l’ivabradine repose sur un résumé secondaire et sur le consensus HRS 2015 (IIa).",
+  "Textes du cours non vérifiés, laissés tels quels : « ≈ deux tiers » d’origine droite (îlot 8, Pareto), « environ 1 % » d’ESV sur un ECG de 10 secondes, succès de 80 à 95 % et complications de 1 à 3 % de l’ablation, effet presseur de l’eau d’environ une heure, charge variant « du simple au double », prévalence du POTS « 170 pour 100 000 », tableau de conduite SSC/SSML 2024.",
+  "L’information professionnelle suisse de la flécaïnide n’a pas été consultée ; l’information professionnelle américaine ne contre-indique pas la dysfonction ventriculaire mais met en garde contre l’insuffisance cardiaque, surtout si la FEVG est inférieure à 30 %.",
+  "Le Pareto de la cardiomyopathie induite liste des facteurs de risque sans ceux que retient l’ESC 2022 (axe supérieur, TVNS, couplage court, sexe masculin) ; non modifié, ces facteurs figurant à l’îlot 10.1 (I49_b-5).",
+  "Références contrôlées sur leur seul résumé PubMed : Kennedy 1985, von Rotz 2017, Weber et Kapoor 1996, Abe 1997, Kentsch 1998, Yokokawa 2012 (deux articles), Olgun 2011, Huizar 2011, Lessmeier 1997, Link 1998, Frolkis 2003, Haïssaguerre 2002, Leenhardt 1994, Hayes 2011, Dixit 2016, Binici 2010, Shannon 2002, Cheriyath 2011, Dukes 2015, Basso 2015, Terkelsen 2009, Ling 2014, Echt 1991, Lemkes 2019, Dankiewicz 2021, Connolly 2000, Bannister 2015, Goyal 2012, Gibbons et Freeman 2015, Biffi 2002, Rathore 2003, Huang et Kuo 2007, Jarjour 2013, Paradis 1990, Perkins 2018, Kudenchuk 2016, Cheskes 2022, Taub 2021. Klein et Ojamaa (2001), Janse et Wit (1989) et Thygesen et al. (2019) non relus.",
+  "Rubriques Source : revues en abréviation de la National Library of Medicine (« N Engl J Med », « Eur Heart J »), sans initiales d’auteurs ; nettoyer_sources ne modifie aucune rubrique Source des sorties.",
+  "Aucune écriture dans chapters/ ni dans sources/ ; aucun commit ; aucune donnée personnelle transmise (PubMed interrogé sans identifiant)."
+ ],
+ "controles": {
+  "old_uniques_sans_chevauchement": "194 compléments (191 des producteurs, 3 du vérificateur) : old unique, aucune superposition, aucune ancre superposée.",
+  "balises": "toutes les balises de old conservées dans le texte final ; aucun bouton dans les compléments ; espaces de début et de fin conservés.",
+  "verifier_sigles": "{} sur les 27 fichiers out/*.html et sur les neuf fichiers du cours après application simulée.",
+  "simulation_application": {
+   "textes_appliques": 194,
+   "textes_rejetes": 0,
+   "textes_echecs": 0,
+   "ancres": 8,
+   "ancres_echecs": 0,
+   "fenetres_creees": 1,
+   "fenetres_completees": 24,
+   "fenetres_echecs": "aucun ; deux mentions informatives de fusion (i49-bilan-bio__P2, i49-erc__P2)",
+   "note": "simulation dans un dossier temporaire du bloc-notes ; aucune écriture dans sources/ ni dans chapters/"
+  },
+  "test_statique_reproduit": "contrôles de test_v7.py --static rejoués sur les sources simulées (sigles, clés de fenêtres, préfixes, classes, styles) : OK ; 26 167 → 35 419 mots ; 86 → 87 fenêtres ; 5 quiz ; 21 Pareto.",
+  "equilibre_html": "identique avant et après application simulée pour les neuf fichiers"
+ }
+}

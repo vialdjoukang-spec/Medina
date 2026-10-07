@@ -1,0 +1,1191 @@
+{
+  "date": "2026-10-07T19:00:43.066Z",
+  "result": "passed_with_limitations",
+  "browser": "153.0.8010.0",
+  "scope": "Contrôle ciblé du rendu et du comportement réel de sept figures ; aucune certification médicale exhaustive.",
+  "inputs": [
+    {
+      "file": "dist/fragments/MEDINA_S01_cardiovasculaire.html",
+      "sha256": "d87d7d4e4c4d683c9eda3a3c7392f33a3d4e9a02fc771f705908df83f9dded68"
+    },
+    {
+      "file": "dist/fragments/MEDINA_S02_respiratoire.html",
+      "sha256": "5cc108cc3532623a5ce83b939413d07506c0c339ebac4eddd8cc0d3cab976217"
+    },
+    {
+      "file": "chapters/I50/I50_c.html",
+      "sha256": "a830e4c4d6d856120b99ee06919c340f08ef18144cf6d58e4e900a17e6cf348d"
+    },
+    {
+      "file": "chapters/J44/J44_c.html",
+      "sha256": "a9a4f39a47852d7ea688954ddf0b4ed00e4c09cb4bb0091489c23a60dcfd2da0"
+    },
+    {
+      "file": "chapters/J18/J18_c.html",
+      "sha256": "a3ffbcdf8841090c2111390031e756d7033c091adfbce2b458a235af8d8365d7"
+    },
+    {
+      "file": "chapters/J18/J18_a.html",
+      "sha256": "8d674ae2d1fc7ade8cf6152e8c38247cae7186f2ae9bfdbea72f16a2d91097cc"
+    },
+    {
+      "file": "shell/fragment.js",
+      "sha256": "90dee79c8f7e12577d2bb6912606cd35587bd3b460b0cd9e6bacfe8658d6c174"
+    },
+    {
+      "file": "shell/fragment.css",
+      "sha256": "2396985571f5e86ce194e38dd57f6fe6f2eeeed3a2534b01f45d7ae693b241c0"
+    }
+  ],
+  "specs": [
+    {
+      "id": "I50-histologie",
+      "code": "I50",
+      "fragment": "S01",
+      "panel": "pS",
+      "discipline": "s-histo",
+      "unit": "sh-i",
+      "nth": 0,
+      "capture": true
+    },
+    {
+      "id": "J44-anatomie",
+      "code": "J44",
+      "fragment": "S02",
+      "panel": "pS",
+      "discipline": "j44-s-anat",
+      "unit": "j44-s-anat",
+      "nth": 0
+    },
+    {
+      "id": "J44-physiologie",
+      "code": "J44",
+      "fragment": "S02",
+      "panel": "pS",
+      "discipline": "j44-s-physio",
+      "unit": "j44-s-physio",
+      "nth": 0,
+      "capture": true
+    },
+    {
+      "id": "J44-biochimie",
+      "code": "J44",
+      "fragment": "S02",
+      "panel": "pS",
+      "discipline": "j44-s-bioch",
+      "unit": "j44-s-bioch",
+      "nth": 0
+    },
+    {
+      "id": "J18-anatomie",
+      "code": "J18",
+      "fragment": "S02",
+      "panel": "pS",
+      "discipline": "j18-s-anat",
+      "unit": "j18-s-anat",
+      "nth": 0
+    },
+    {
+      "id": "J18-physiologie",
+      "code": "J18",
+      "fragment": "S02",
+      "panel": "pS",
+      "discipline": "j18-s-phys",
+      "unit": "j18-s-phys",
+      "nth": 0,
+      "capture": true
+    },
+    {
+      "id": "J18-pathologie-shunt",
+      "code": "J18",
+      "fragment": "S02",
+      "panel": "pA",
+      "unit": "j18-3",
+      "nth": 1
+    }
+  ],
+  "checks": [
+    {
+      "name": "I50-histologie 1360 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 1360 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 1360 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 1360 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 342,
+        "y": 304.34375,
+        "width": 689.984375,
+        "height": 356.125
+      }
+    },
+    {
+      "name": "I50-histologie 1360 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Une fibrose modifie deux fonctions. Un seul substrat tissulaire alimente une branche mécanique et une branche électrique ; la figure ne renseigne pas sur la cause de la fibrose."
+    },
+    {
+      "name": "I50-histologie 1360 : aucun débordement global",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "I50-histologie 1360 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 1360 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 1360 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 1360 : zoom 200 % réel",
+      "ok": true,
+      "initial": 620,
+      "doubled": 1240
+    },
+    {
+      "name": "I50-histologie 1360 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 1098,
+        "content": 1272,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "I50-histologie 1360 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "I50-histologie 1360 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 1360 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 35,
+        "y": 288.8125,
+        "width": 319.984375,
+        "height": 165.15625
+      }
+    },
+    {
+      "name": "I50-histologie 390 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Une fibrose modifie deux fonctions. Un seul substrat tissulaire alimente une branche mécanique et une branche électrique ; la figure ne renseigne pas sur la cause de la fibrose."
+    },
+    {
+      "name": "I50-histologie 390 : police du cours à 24 px",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : aucun débordement global",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "I50-histologie 390 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : zoom 200 % réel",
+      "ok": true,
+      "initial": 620,
+      "doubled": 1240
+    },
+    {
+      "name": "I50-histologie 390 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 365,
+        "content": 1272,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "I50-histologie 390 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "I50-histologie 390 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "I50-histologie 390 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 342,
+        "y": 189.609375,
+        "width": 689.984375,
+        "height": 571.96875
+      }
+    },
+    {
+      "name": "J44-anatomie 1360 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Distribution anatomique de l’emphysème. La lésion explique les deux branches : l’imagerie décrit sa distribution, tandis que la perte de structures modifie la fonction. Leur relation varie selon l’étendue des lésions et l’atteinte associée des petites voies."
+    },
+    {
+      "name": "J44-anatomie 1360 : aucun débordement global",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J44-anatomie 1360 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J44-anatomie 1360 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 1098,
+        "content": 1098,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J44-anatomie 1360 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J44-anatomie 1360 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 1360 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 35.015625,
+        "y": 218.609375,
+        "width": 319.96875,
+        "height": 265.25
+      }
+    },
+    {
+      "name": "J44-anatomie 390 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Distribution anatomique de l’emphysème. La lésion explique les deux branches : l’imagerie décrit sa distribution, tandis que la perte de structures modifie la fonction. Leur relation varie selon l’étendue des lésions et l’atteinte associée des petites voies."
+    },
+    {
+      "name": "J44-anatomie 390 : police du cours à 24 px",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : aucun débordement global",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J44-anatomie 390 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J44-anatomie 390 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 365,
+        "content": 792,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J44-anatomie 390 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J44-anatomie 390 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J44-anatomie 390 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 342,
+        "y": 139.390625,
+        "width": 689.984375,
+        "height": 671.828125
+      }
+    },
+    {
+      "name": "J44-physiologie 1360 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Distension dynamique pendant l’effort. Les deux branches convergent : le débit limité se combine au temps raccourci par l’accélération respiratoire. La capacité inspiratoire baisse lorsque le volume de fin d’expiration augmente à capacité pulmonaire totale stable."
+    },
+    {
+      "name": "J44-physiologie 1360 : aucun débordement global",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J44-physiologie 1360 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J44-physiologie 1360 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 1098,
+        "content": 1098,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J44-physiologie 1360 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J44-physiologie 1360 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 1360 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 35,
+        "y": 195.78125,
+        "width": 319.984375,
+        "height": 311.578125
+      }
+    },
+    {
+      "name": "J44-physiologie 390 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Distension dynamique pendant l’effort. Les deux branches convergent : le débit limité se combine au temps raccourci par l’accélération respiratoire. La capacité inspiratoire baisse lorsque le volume de fin d’expiration augmente à capacité pulmonaire totale stable."
+    },
+    {
+      "name": "J44-physiologie 390 : police du cours à 24 px",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : aucun débordement global",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J44-physiologie 390 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J44-physiologie 390 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 365,
+        "content": 792,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J44-physiologie 390 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J44-physiologie 390 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J44-physiologie 390 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 342,
+        "y": 139.765625,
+        "width": 689.984375,
+        "height": 671.828125
+      }
+    },
+    {
+      "name": "J44-biochimie 1360 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Équilibre protéases et protection pulmonaire. La convergence représente une balance entre charge protéasique et défense antiprotéasique. Une protection relative insuffisante peut résulter d’une charge accrue, d’un déficit ou d’une activité inhibitrice diminuée."
+    },
+    {
+      "name": "J44-biochimie 1360 : aucun débordement global",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J44-biochimie 1360 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J44-biochimie 1360 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 1098,
+        "content": 1098,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J44-biochimie 1360 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J44-biochimie 1360 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 1360 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 35,
+        "y": 195.453125,
+        "width": 319.984375,
+        "height": 311.578125
+      }
+    },
+    {
+      "name": "J44-biochimie 390 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Équilibre protéases et protection pulmonaire. La convergence représente une balance entre charge protéasique et défense antiprotéasique. Une protection relative insuffisante peut résulter d’une charge accrue, d’un déficit ou d’une activité inhibitrice diminuée."
+    },
+    {
+      "name": "J44-biochimie 390 : police du cours à 24 px",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : aucun débordement global",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J44-biochimie 390 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J44-biochimie 390 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 365,
+        "content": 792,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J44-biochimie 390 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J44-biochimie 390 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J44-biochimie 390 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 342.015625,
+        "y": 237.21875,
+        "width": 689.96875,
+        "height": 490.25
+      }
+    },
+    {
+      "name": "J18-anatomie 1360 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Aspiration et régions déclives. La position et le trajet bronchique orientent le dépôt ; une atteinte pulmonaire reste possible, sans infection obligatoire."
+    },
+    {
+      "name": "J18-anatomie 1360 : aucun débordement global",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J18-anatomie 1360 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J18-anatomie 1360 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 1098,
+        "content": 1098,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J18-anatomie 1360 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J18-anatomie 1360 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 1360 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 35,
+        "y": 267.59375,
+        "width": 319.984375,
+        "height": 227.359375
+      }
+    },
+    {
+      "name": "J18-anatomie 390 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Aspiration et régions déclives. La position et le trajet bronchique orientent le dépôt ; une atteinte pulmonaire reste possible, sans infection obligatoire."
+    },
+    {
+      "name": "J18-anatomie 390 : police du cours à 24 px",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : aucun débordement global",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J18-anatomie 390 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J18-anatomie 390 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 365,
+        "content": 792,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J18-anatomie 390 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J18-anatomie 390 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J18-anatomie 390 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 342.015625,
+        "y": 237.34375,
+        "width": 689.96875,
+        "height": 490.25
+      }
+    },
+    {
+      "name": "J18-physiologie 1360 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Shunt vrai dans une région consolidée. La première case associe simultanément ventilation absente et perfusion présente. Les flèches suivent ensuite le sang et son mélange artériel."
+    },
+    {
+      "name": "J18-physiologie 1360 : aucun débordement global",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J18-physiologie 1360 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J18-physiologie 1360 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 1098,
+        "content": 1098,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J18-physiologie 1360 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J18-physiologie 1360 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 1360 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : discipline native active",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 35,
+        "y": 257.46875,
+        "width": 319.984375,
+        "height": 227.359375
+      }
+    },
+    {
+      "name": "J18-physiologie 390 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure — Shunt vrai dans une région consolidée. La première case associe simultanément ventilation absente et perfusion présente. Les flèches suivent ensuite le sang et son mélange artériel."
+    },
+    {
+      "name": "J18-physiologie 390 : police du cours à 24 px",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : aucun débordement global",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J18-physiologie 390 : bouton natif de zoom",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : fenêtre ouverte avec SVG et légende",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : figure réellement clonée",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : zoom 200 % réel",
+      "ok": true,
+      "initial": 380,
+      "doubled": 760
+    },
+    {
+      "name": "J18-physiologie 390 : contenu agrandi défile dans la fenêtre",
+      "ok": true,
+      "scroll": {
+        "viewport": 365,
+        "content": 792,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "J18-physiologie 390 : zoom contenu dans le viewport",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J18-physiologie 390 : Escape ferme la fenêtre",
+      "ok": true
+    },
+    {
+      "name": "J18-physiologie 390 : retour du focus au bouton",
+      "ok": true
+    },
+    {
+      "name": "J18-pathologie-shunt 1360 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J18-pathologie-shunt 1360 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J18-pathologie-shunt 1360 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 342,
+        "y": 326.578125,
+        "width": 690,
+        "height": 345
+      }
+    },
+    {
+      "name": "J18-pathologie-shunt 1360 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure 2 — Shunt et mélange sanguin, modèle limité à l'oxygène lié à l'hémoglobine. Le sang de l'unité non ventilée garde sa saturation veineuse. Le résultat sous oxygène illustre cette hypothèse et ne prédit pas la saturation clinique réelle en hyperoxie."
+    },
+    {
+      "name": "J18-pathologie-shunt 1360 : aucun débordement global",
+      "ok": true,
+      "viewport": 1360,
+      "document": 1360
+    },
+    {
+      "name": "J18-pathologie-shunt 1360 : modèle explicitement limité",
+      "ok": true
+    },
+    {
+      "name": "J18-pathologie-shunt 390 : onglet natif actif",
+      "ok": true
+    },
+    {
+      "name": "J18-pathologie-shunt 390 : figure et légende visibles",
+      "ok": true
+    },
+    {
+      "name": "J18-pathologie-shunt 390 : dessin non vide",
+      "ok": true,
+      "box": {
+        "x": 35,
+        "y": 295.40625,
+        "width": 320,
+        "height": 160
+      }
+    },
+    {
+      "name": "J18-pathologie-shunt 390 : légende textuelle présente",
+      "ok": true,
+      "caption": "Figure 2 — Shunt et mélange sanguin, modèle limité à l'oxygène lié à l'hémoglobine. Le sang de l'unité non ventilée garde sa saturation veineuse. Le résultat sous oxygène illustre cette hypothèse et ne prédit pas la saturation clinique réelle en hyperoxie."
+    },
+    {
+      "name": "J18-pathologie-shunt 390 : police du cours à 24 px",
+      "ok": true
+    },
+    {
+      "name": "J18-pathologie-shunt 390 : aucun débordement global",
+      "ok": true,
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "J18-pathologie-shunt 390 : modèle explicitement limité",
+      "ok": true
+    },
+    {
+      "name": "Aucune erreur JavaScript",
+      "ok": true,
+      "browserErrors": []
+    },
+    {
+      "name": "Sept figures uniques réellement contrôlées",
+      "ok": true,
+      "ids": [
+        "I50-histologie",
+        "J44-anatomie",
+        "J44-physiologie",
+        "J44-biochimie",
+        "J18-anatomie",
+        "J18-physiologie",
+        "J18-pathologie-shunt"
+      ]
+    },
+    {
+      "name": "Six captures des trois cours",
+      "ok": true,
+      "files": [
+        "audits/REPRISE_2026-10-07/figures/captures/I50_desktop.jpg",
+        "audits/REPRISE_2026-10-07/figures/captures/I50_mobile_390_font24.jpg",
+        "audits/REPRISE_2026-10-07/figures/captures/J44_desktop.jpg",
+        "audits/REPRISE_2026-10-07/figures/captures/J44_mobile_390_font24.jpg",
+        "audits/REPRISE_2026-10-07/figures/captures/J18_desktop.jpg",
+        "audits/REPRISE_2026-10-07/figures/captures/J18_mobile_390_font24.jpg"
+      ]
+    },
+    {
+      "name": "Entrées inchangées pendant le contrôle",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "browserErrors": [],
+  "limitations": [
+    {
+      "figure": "J18-pathologie-shunt",
+      "width": 1360,
+      "issue": "La fonction native de zoom équipe seulement les figures Sciences. La figure Pathologie est contrôlée en lecture, sans bouton ajouté par le test.",
+      "zoom_button_count": 0
+    },
+    {
+      "figure": "J18-pathologie-shunt",
+      "width": 390,
+      "issue": "La fonction native de zoom équipe seulement les figures Sciences. La figure Pathologie est contrôlée en lecture, sans bouton ajouté par le test.",
+      "zoom_button_count": 0
+    }
+  ],
+  "captures": [
+    {
+      "file": "audits/REPRISE_2026-10-07/figures/captures/I50_desktop.jpg",
+      "course": "I50",
+      "width": 1360,
+      "font": 17,
+      "figure": "I50-histologie",
+      "sha256": "09b83e03d6e9350c4b53ff626a16b14b8b228b246a407f890d27341eef399f23"
+    },
+    {
+      "file": "audits/REPRISE_2026-10-07/figures/captures/I50_mobile_390_font24.jpg",
+      "course": "I50",
+      "width": 390,
+      "font": 24,
+      "figure": "I50-histologie",
+      "sha256": "e632934a1f3ff233939a70352aabd04eb671f5baff222655046a43c7b2a081ff"
+    },
+    {
+      "file": "audits/REPRISE_2026-10-07/figures/captures/J44_desktop.jpg",
+      "course": "J44",
+      "width": 1360,
+      "font": 17,
+      "figure": "J44-physiologie",
+      "sha256": "ab753b2cc778e358a0478a266a97a31606dc3b5bb7f7a0f63d56d6985b45414f"
+    },
+    {
+      "file": "audits/REPRISE_2026-10-07/figures/captures/J44_mobile_390_font24.jpg",
+      "course": "J44",
+      "width": 390,
+      "font": 24,
+      "figure": "J44-physiologie",
+      "sha256": "8190e2d82d97459ec4e1a4d7508c57d5c727475a80d4c6e38f80e7948f31f166"
+    },
+    {
+      "file": "audits/REPRISE_2026-10-07/figures/captures/J18_desktop.jpg",
+      "course": "J18",
+      "width": 1360,
+      "font": 17,
+      "figure": "J18-physiologie",
+      "sha256": "356e034b2875697e27280940df5e2f30a7b54b185be97f07c2d11c27f8ce1844"
+    },
+    {
+      "file": "audits/REPRISE_2026-10-07/figures/captures/J18_mobile_390_font24.jpg",
+      "course": "J18",
+      "width": 390,
+      "font": 24,
+      "figure": "J18-physiologie",
+      "sha256": "4f96461306c392386ed95d84ee30622c89cd3ebe8c9c3c6e0f1df25694d793ce"
+    }
+  ]
+}

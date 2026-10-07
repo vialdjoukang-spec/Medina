@@ -1,0 +1,331 @@
+{
+ "cours": "Q21 — Cardiopathies congénitales de l’adulte",
+ "date": "2026-10-07",
+ "role": "vérificateur indépendant (TACHE_VERIFICATION.md)",
+ "source_de_reference": "Baumgartner et al., 2020 ESC Guidelines for the management of adult congenital heart disease, European Heart Journal 2021;42:563-645 (src/esc2020_achd_flux.txt et esc2020_achd.txt, texte intégral anglais) ; Humbert et al., 2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension, European Heart Journal 2022;43:3618-3731 (src/escers2022_hp_flux.txt) ; De Backer et al., 2025 ESC Guidelines for the management of cardiovascular disease and pregnancy, European Heart Journal 2025;46:4462-4568 (src/esc2025_grossesse_flux.txt) ; Delgado et al., 2023 ESC Guidelines for the management of endocarditis (I33/src/esc2023_flux.txt). Publications primaires contrôlées sur PubMed (résumés ; texte intégral pour McDonald-McGinn et al. 2015 et Crockett et al. 2019). Aucun service exigeant une adresse électronique n’a été utilisé.",
+ "complements": {
+  "total": 245,
+  "dont_ajouts_du_verificateur": 1,
+  "accepter": 212,
+  "corriger": 31,
+  "rejeter": 2,
+  "par_fichier": {
+   "Q21_a": {
+    "corriger": 4,
+    "accepter": 11
+   },
+   "Q21_b": {
+    "corriger": 11,
+    "accepter": 31
+   },
+   "Q21_c": {
+    "accepter": 74,
+    "corriger": 3
+   },
+   "Q21_d": {
+    "accepter": 29
+   },
+   "Q21_pop1": {
+    "accepter": 4,
+    "corriger": 1
+   },
+   "Q21_pop2": {
+    "corriger": 2,
+    "accepter": 7
+   },
+   "Q21_pop3": {
+    "accepter": 4,
+    "corriger": 1
+   },
+   "Q21_pop4": {
+    "accepter": 12,
+    "corriger": 5
+   },
+   "Q21_pop5": {
+    "rejeter": 2,
+    "accepter": 13
+   },
+   "Q21_pop6": {
+    "corriger": 2,
+    "accepter": 9
+   },
+   "Q21_pop7": {
+    "accepter": 18,
+    "corriger": 2
+   }
+  },
+  "ajouts_du_verificateur": [
+   {
+    "id": "Q21_pop7-v1",
+    "fichier": "Q21_pop7",
+    "objet": "Pareto des urgences : « arythmies = 1re cause d’hospitalisation » (rang non vérifié) remplacé par « cause majeure d’hospitalisation ; insuffisance cardiaque = 1re cause de décès dans les cohortes récentes », en accord avec Q21_a-14. Inscrit dans edits/Q21_pop7.json avec « auteur » : « vérificateur »."
+   }
+  ],
+  "corriges": [
+   {
+    "id": "Q21_a-1",
+    "probleme": "« Repose sur un consensus d’experts » ne reprend pas la source : l’ESC 2020 (section 6.1.1) écrit que les lésions sont « arbitrarily classified » et que la validité du classement « remains to be investigated in large registries ». Exemple de la CIA avec hypertension pulmonaire vérifié (section 3.2). Arbitrage : l’exemple est gardé ici et retiré de q21-centres (Q21_pop5-1 rejeté)."
+   },
+   {
+    "id": "Q21_a-7",
+    "probleme": "Les parathyroïdes et le thymus dérivent de l’endoderme des poches pharyngées, non des « arcs » (McDonald-McGinn et al. 2015, texte intégral : « derive from tissue interactions between the pharyngeal endoderm and neural crest cells »). Démasquage périopératoire vérifié."
+   },
+   {
+    "id": "Q21_a-8",
+    "probleme": "La prophylaxie de l’ESC 2023 ne vise que les soins dentaires à risque ; « impose une antibioprophylaxie » sans objet était trop large."
+   },
+   {
+    "id": "Q21_a-14",
+    "probleme": "L’ESC 2020 écrit seulement que l’insuffisance cardiaque touche 20 à 50 % des patients et est « a main cause of death » (section 3.4.1) ; le rang de première cause vient de la cohorte citée par l’ESC (Diller et al., Circulation 2015 : 42 % des 524 décès parmi 6 969 adultes), alors qu’une série plus ancienne (Oechslin et al. 2000) plaçait la mort subite en tête. Formulation datée et sourcée. Harmonisé avec l’ajout Q21_pop7-v1 dans le Pareto des urgences."
+   },
+   {
+    "id": "Q21_b-1",
+    "probleme": "L’ESC 2020 (section 4.1.4) écrit « stretched diameter ≤ 38 mm » : le seuil est inclusif. 80 % et rebord de 5 mm vérifiés. Chiffre de 80 % harmonisé avec Q21_pop4-1 et Q21_pop7-7."
+   },
+   {
+    "id": "Q21_b-4",
+    "probleme": "« Le lit vasculaire reste sain » était une certitude non démontrée ; la phrase reformule la condition de l’ESC 2020 (absence d’hypertension artérielle pulmonaire). Supériorité de la surcharge ventriculaire droite sur le Qp/Qs vérifiée (section 4.1.3)."
+   },
+   {
+    "id": "Q21_b-5",
+    "probleme": "La recommandation IIb exige aussi un shunt gauche-droite significatif (Qp/Qs > 1,5) ; la contre-indication III comprend les résistances ≥ 5 unités Wood malgré le traitement (ESC 2020, recommandations sur la CIA et note d : saturation < 90 %). Mécanisme ajouté et présenté comme probable."
+   },
+   {
+    "id": "Q21_b-6",
+    "probleme": "L’ESC 2020 (section 4.1.6) écrit « up to 40–60% » chez les patients fermés après 40 ans."
+   },
+   {
+    "id": "Q21_b-16",
+    "probleme": "Liste corrigée vérifiée (ESC 2020, recommandations sur l’obstruction droite : ni ventricule droit à double chambre ni arythmies). La phrase « ne figurent pas dans cette liste de l’ESC 2020 » commentait le cours lui-même ; elle est remplacée par le pourquoi de la recommandation et la correction est consignée dans les erreurs de fond."
+   },
+   {
+    "id": "Q21_b-18",
+    "probleme": "« Le signe Doppler le plus fiable » n’est pas dans l’ESC 2020, qui dit seulement que la traînée diastolique est un signe de (re)coarctation significative et que les gradients Doppler ne sont pas utiles à la quantification (section 4.6.3). Reformulé sans superlatif."
+   },
+   {
+    "id": "Q21_b-24",
+    "probleme": "La durée du QRS dépend aussi du bloc de branche chirurgical ; l’ESC 2020 écrit qu’elle « may also be influenced by the degree of RV dilation » (section 4.10.3)."
+   },
+   {
+    "id": "Q21_b-29",
+    "probleme": "L’ESC 2020 écrit « promptly treated with electrical cardioversion » et justifie le choix par l’inefficacité fréquente des médicaments (section 4.16.4) ; « immédiate » est remplacé par « rapide ». Réduction sans délai de l’arythmie instable vérifiée (section 3.4.2.2)."
+   },
+   {
+    "id": "Q21_b-30",
+    "probleme": "Erreur : l’ESC 2020 (section 3.4.8.4) et l’étude source (Ammash et Warnes, Journal of the American College of Cardiology 1996) parlent d’événements cérébrovasculaires dans une seule étude, non d’« événement cardiovasculaire » en général ; c’est une association. Arbitrage du fer : la classe IIa (ESC/ERS 2022) et la surveillance de l’hématocrite restent dans Q21_d-21 et q21-d-fer (onglet Pharmacologie) ; Q21_c-45 garde l’interprétation biologique."
+   },
+   {
+    "id": "Q21_b-39",
+    "probleme": "L’ESC 2023 écrit « may therefore outweigh » (section 3.3) ; fréquence du contrôle dentaire vérifiée (tableau 5)."
+   },
+   {
+    "id": "Q21_b-40",
+    "probleme": "Chiffre harmonisé : l’ESC 2025 (« live birth rate of only 12% ») et le Pareto donnent environ 12 %, l’ESC 2020 « < 12% » ; « environ 12 % » du cours est conservé. L’ESC 2020 présente saturation et hémoglobine comme les meilleurs prédicteurs « in one series » (Presbitero et al. 1994), non comme des facteurs pronostiques généraux."
+   },
+   {
+    "id": "Q21_c-62",
+    "probleme": "Classes harmonisées avec Q21_pop4-16 et Q21_pop7-15 (ESC 2020, tableau des anomalies coronaires) ; « la juge raisonnable » traduisait mal la classe IIa (« should be considered »)."
+   },
+   {
+    "id": "Q21_c-63",
+    "probleme": "Mécanisme de compression présenté comme établi ; l’ESC 2020 (section 4.17.1.2) parle seulement d’un rôle possible de l’ischémie et de facteurs anatomiques proposés."
+   },
+   {
+    "id": "Q21_c-67",
+    "probleme": "L’ESC 2020 n’écrit pas « pas de dépistage systématique » : elle indique l’imagerie cérébrale en cas de symptômes ou de manifestations (section 4.6.3). Le cours (Q21_b, îlot 12.2) cite par ailleurs l’ACC/AHA, qui juge un dépistage unique raisonnable. La divergence est exposée au lieu d’être tranchée ; harmonisé avec Q21_pop7-9."
+   },
+   {
+    "id": "Q21_pop1-2",
+    "probleme": "Arbitrage du prélèvement veineux mêlé : « prélevé dans la veine cave supérieure » contredisait la formule de Flamm (3 × cave supérieure + 1 × cave inférieure) / 4 du tableau de l’onglet Examens (Q21_c-40) et le complément de q21-cath (Q21_pop5-12). Formulation commune : estimation en amont du shunt, à partir des deux veines caves."
+   },
+   {
+    "id": "Q21_pop2-1",
+    "probleme": "Chiffres vérifiés (Øyen et al., Circulation 2016 : 4,00 et 7,62). Les auteurs concluent « suggesting a role for glucose in the causal pathway » ; « agent causal probable » surestimait une association de cohorte."
+   },
+   {
+    "id": "Q21_pop2-5",
+    "probleme": "McDonald-McGinn et al. 2015 (texte intégral) : l’inactivation conditionnelle de TBX1 dans le mésoderme, l’ectoderme de surface pharyngé ou l’endoderme reproduit chacune une partie du phénotype ; l’ectoderme manquait. La voie d’éjection dérive du second champ cardiaque et de la crête, non des arcs eux-mêmes : « appareil pharyngé » est plus exact."
+   },
+   {
+    "id": "Q21_pop3-3",
+    "probleme": "Redite avec Q21_c-26 : le tableau du test aux microbulles, dans l’îlot qui ouvre cette fenêtre, explique déjà l’afflux veineux au relâchement. Le complément est réduit au pourquoi du faux négatif."
+   },
+   {
+    "id": "Q21_pop4-2",
+    "probleme": "L’ESC 2020 écrit « aspirin 75 mg o.d. minimum » : 75 mg est une dose minimale."
+   },
+   {
+    "id": "Q21_pop4-4",
+    "probleme": "Raisonnement physiologique sans source primaire : l’aggravation de l’œdème est présentée comme possible. Arbitrage avec Q21_pop6-1 : l’explication complète reste ici ; q21-d-pge garde une proposition."
+   },
+   {
+    "id": "Q21_pop4-7",
+    "probleme": "« Surtout après une chirurgie dans l’enfance » ne figure pas dans l’ESC 2020, qui écrit seulement « restenosis may occur » ; le seuil plus bas vaut chez le patient à faible risque et à l’anatomie favorable (section 4.5.3.4)."
+   },
+   {
+    "id": "Q21_pop4-9",
+    "probleme": "L’ESC 2020 écrit « questionable whether routine screening … can be justified » (section 4.12.3) ; seuil de 55 mm (IIa) vérifié."
+   },
+   {
+    "id": "Q21_pop4-10",
+    "probleme": "La phrase de l’ESC 2020 (section 3.4.2.3) compare la stimulation au bloc de branche chez le patient stimulé ; sans ce contexte, elle laissait croire que la stimulation est la principale cause de dysfonction du ventricule droit systémique en général. Seuil de 40 % (IIa) vérifié."
+   },
+   {
+    "id": "Q21_pop6-1",
+    "probleme": "Redite de Q21_pop4-4 (fenêtre q21-rvpa), qui détaille le même mécanisme ; réduit à une proposition, sans l’affirmation non sourcée sur l’œdème."
+   },
+   {
+    "id": "Q21_pop6-6",
+    "probleme": "« N’y ont pas démontré leur sécurité » minimisait le résultat : l’essai RE-ALIGN (Eikelboom et al., New England Journal of Medicine 2013) a été arrêté pour excès d’accidents thromboemboliques et hémorragiques sous dabigatran. Nom d’essai non écrit, faute d’entrée au glossaire."
+   },
+   {
+    "id": "Q21_pop7-9",
+    "probleme": "Chiffres vérifiés (ESC 2020, section 4.6.1). « Pas de dépistage systématique » n’est pas écrit par l’ESC 2020, qui indique l’imagerie en cas de symptômes (section 4.6.3) ; harmonisé avec Q21_c-67."
+   },
+   {
+    "id": "Q21_pop7-v1",
+    "probleme": "Ajout du vérificateur. Le Pareto disait « arythmies = 1re cause d’hospitalisation », rang non vérifié ; harmonisé avec Q21_a-14 (Diller et al., Circulation 2015 ; ESC 2020, section 3.4.1)."
+   }
+  ],
+  "rejetes": [
+   {
+    "id": "Q21_pop5-1",
+    "probleme": "Redite de Q21_a-1, qui donne le même exemple (CIA avec hypertension pulmonaire) dans l’îlot sur la complexité ; l’exemple est gardé une seule fois."
+   },
+   {
+    "id": "Q21_pop5-15",
+    "probleme": "Arbitrage avec la fenêtre créée q21-cyan-sys (P1), qui explique déjà l’hyperuricémie, sa non-indication de traitement et les anomalies plaquettaires (ESC 2020, section 3.4.8.2). Remplacé par un mot vert « renouvellement érythrocytaire accru » de q21-bio vers q21-cyan-sys (ancre Q21_pop5-a901 du vérificateur)."
+   }
+  ]
+ },
+ "fenetres": {
+  "verdicts": {
+   "q21-arythmie__P1": "ok",
+   "q21-chirnc__P2": "corrigée",
+   "q21-cyan-sys__P1": "ok",
+   "q21-d-amio__P2": "corrigée",
+   "q21-d-anticoag__P2": "corrigée",
+   "q21-ecg__P2": "corrigée",
+   "q21-endoc__P1": "ok",
+   "q21-heath__P1": "corrigée",
+   "q21-mwho__P2": "corrigée",
+   "q21-rope__P1": "corrigée",
+   "q21-rx__P2": "corrigée",
+   "q21-sport__P2": "corrigée",
+   "q21-switch-atr__P1": "ok",
+   "q21-transition__P1": "ok"
+  },
+  "corrigees": [
+   "q21-chirnc__P2",
+   "q21-d-amio__P2",
+   "q21-d-anticoag__P2",
+   "q21-ecg__P2",
+   "q21-heath__P1",
+   "q21-mwho__P2",
+   "q21-rope__P1",
+   "q21-rx__P2",
+   "q21-sport__P2"
+  ],
+  "creees_conservees": [
+   "q21-cyan-sys"
+  ],
+  "fusionnees": [],
+  "ancres": {
+   "total": 8,
+   "dont_ajout_du_verificateur": "Q21_pop5-a901 (q21-bio → q21-cyan-sys, mot vert « renouvellement érythrocytaire accru »)",
+   "retirees": 0,
+   "labels_modifies": 0
+  }
+ },
+ "arbitrages_demandes": {
+  "q21-cyan-sys_et_q21-bio": "Une seule fenêtre a été créée (q21-cyan-sys, P1) ; P2 complétait la fenêtre existante q21-bio par une édition (Q21_pop5-15). q21-cyan-sys, vérifiée ligne à ligne dans l’ESC 2020 (section 3.4.8.2 : hémostase, urate, bilirubinate de calcium), devient la référence des mécanismes. Q21_pop5-15 est rejeté comme redite et remplacé par un mot vert de q21-bio (« renouvellement érythrocytaire accru ») vers q21-cyan-sys. Aucune fusion de clé n’est nécessaire.",
+  "fer": "Q21_b-30 (P1, onglet Pathologie) garde les causes de la carence et l’association de la microcytose aux accidents cérébrovasculaires, corrigée (« événement cardiovasculaire » était faux ; association dans une étude, Ammash et Warnes 1996) ; la classe IIa et la surveillance de l’hématocrite en sont retirées. Q21_d-21 (P2) garde la conduite de l’ESC 2020 (volume globulaire moyen < 80 fL, effet rebond) et la classe IIa de l’ESC/ERS 2022. Q21_c-45 garde l’interprétation biologique. La fenêtre q21-d-fer garde l’association (Q21_pop6-10) et le filtre à air (Q21_pop6-11).",
+  "q21-contracep_et_Q21_b-33": "Pas de redite de contenu : la fenêtre q21-contracep n’est pas ouverte depuis l’îlot 15 (Eisenmenger) mais depuis l’îlot 18.1. Q21_b-33 reste bref (thrombose, méthodes au lévonorgestrel citées par l’ESC/ERS 2022) ; la fenêtre explique la synthèse hépatique des facteurs, l’embolie paradoxale et le malaise vagal (5 %). Les deux sont acceptés.",
+  "q21-cath_Q21_pop1-2_et_prelevement_veineux_mele": "Contradiction résolue : Q21_pop1-2 (q21-qpqs) affirmait un prélèvement dans la veine cave supérieure, alors que le tableau de l’onglet Examens retient la formule de Flamm, (3 × cave supérieure + 1 × cave inférieure) / 4 (Q21_c-40). Q21_pop1-2 est corrigé : estimation en amont du shunt, à partir des veines caves. Q21_pop5-12 (q21-cath) explique le seuil de 7 points par le mélange imparfait des deux caves et du sinus coronaire ; il est accepté, sans redite avec Q21_c-40.",
+  "q21-ecg_et_Q21_b-3": "Mécanismes concordants. Q21_b-3 (îlot 10.1, onglet Pathologie) garde les trois signes de la CIA ; l’axe gauche de l’ostium primum est confirmé par l’ESC 2020 (section 4.3.1). q21-ecg est ouverte depuis l’onglet Examens et non depuis l’îlot 10.1 : sa phrase sur la CIA est conservée comme redite brève entre onglets ; seule sa rubrique Source est corrigée.",
+  "apnees_et_q21-d-pge": "Seul P1 a chiffré les apnées (Q21_a-13 : 12 %, 42 % sous 2 kg, Lewis et al. 1981). La fenêtre q21-d-pge garde sa mention qualitative (apnées dose-dépendantes) ; aucune redite. En revanche, le mécanisme du retour veineux pulmonaire total obstrué était doublé (Q21_pop4-4 dans q21-rvpa et Q21_pop6-1 dans q21-d-pge) : l’explication est gardée dans q21-rvpa, présentée comme hypothèse pour l’œdème, et réduite à une proposition dans q21-d-pge.",
+  "harmonisation_des_chiffres": {
+   "cause_genetique": "10 à 30 % des cardiopathies structurelles (ESC 2020, section 3.5.7.2), davantage avec une atteinte extracardiaque ou familiale : Q21_a-3, Q21_c-73 et Q21_pop7-4, formulations concordantes. Aucune autre occurrence de « un tiers » pour la cause génétique (les autres « un tiers » du cours concernent la CIV et la microdélétion du tronc artériel commun).",
+   "cia_ostium_secundum": "80 % (ESC 2020, section 4.1.1) : Q21_b-1, Q21_pop4-1 et Q21_pop7-7. Q21_b-1 corrigé pour le diamètre étiré (≤ 38 mm).",
+   "bicuspidie_et_coarctation": "jusqu’à 85 % (ESC 2020, section 4.6.1) : Q21_b-17 et Q21_pop7-9 ; anévrismes intracrâniens « jusqu’à 10 % » partout. La phrase « pas de dépistage systématique » (Q21_c-67, Q21_pop7-9) est corrigée : l’ESC 2020 réserve l’imagerie aux symptômes, l’ACC/AHA juge un dépistage unique raisonnable, comme le dit déjà Q21_b (îlot 12.2).",
+   "origine_aortique_anormale_d_une_coronaire": "Formulation commune (ESC 2020, tableau des anomalies coronaires) : classe I = angor typique avec ischémie d’effort concordante ou anatomie à haut risque ; IIa = asymptomatique avec ischémie, ou coronaire gauche asymptomatique à anatomie à haut risque ; IIb = symptômes sans ischémie ni anatomie à haut risque, ou coronaire gauche asymptomatique avant 35 ans ; III = coronaire droite asymptomatique sans ischémie ni anatomie à haut risque. Appliquée dans Q21_pop4-16, Q21_pop4-17, Q21_c-62 (« la juge raisonnable » corrigé en « doit être envisagée ») et Q21_pop7-15.",
+   "naissances_vivantes_saturation_inferieure_a_85": "« environ 12 % » partout (ESC 2025 : « live birth rate of only 12% ») : Q21_b-40 corrigé (« moins de 12 % »), Q21_pop7-16 accepté ; la redite dans q21-mwho est supprimée.",
+   "fraction_de_regurgitation_pulmonaire": "> 30 à 40 % (ESC 2020) : Q21_c-32, Q21_pop5-11, Q21_pop7-17.",
+   "premiere_cause_de_deces": "Insuffisance cardiaque devenue première cause dans les cohortes récentes (Diller et al. 2015 : 42 %), arythmies cause majeure d’hospitalisation : Q21_a-14 et Q21_pop7-v1."
+  },
+  "glossaire_TBX1": {
+   "fichier": "glossary/q21.py (hors périmètre, non modifié)",
+   "texte_actuel": "Facteur de transcription de la famille T-box, situé dans la région 22q11.2 ; nécessaire au développement des arcs pharyngiens et à la migration de la crête neurale vers les voies d’éjection.",
+   "imprecision": "TBX1 n’est pas exprimé dans les cellules de la crête neurale et son inactivation dans la crête n’a pas de phénotype ; il agit dans le mésoderme pharyngé (second champ cardiaque), l’endoderme et l’ectoderme de surface pharyngés, et influence la migration de la crête de façon indirecte (McDonald-McGinn et al., Nature Reviews Disease Primers 2015, texte intégral).",
+   "proposition": "Facteur de transcription de la famille T-box, situé dans la région 22q11.2 ; exprimé dans le mésoderme, l’endoderme et l’ectoderme de l’appareil pharyngé, il conditionne indirectement la migration de la crête neurale vers les voies d’éjection."
+  }
+ },
+ "erreurs_de_fond": [
+  "Q21_b-30 (P1) : la microcytose présentée comme « principal facteur prédictif indépendant d’événement cardiovasculaire » ; la source (ESC 2020, Ammash et Warnes 1996) parle d’événements cérébrovasculaires dans une seule étude rétrospective.",
+  "Q21_a-14 (P1) : « l’insuffisance cardiaque reste la première cause de décès » attribué à l’ESC 2020, qui écrit « a main cause of death » ; rang daté et sourcé (Diller et al. 2015).",
+  "Q21_c-67 et Q21_pop7-9 (P2) : « pas de dépistage systématique selon l’ESC 2020 » n’est pas dans la recommandation ; divergence ESC 2020 et ACC/AHA exposée.",
+  "Q21_pop1-2 (P1) : prélèvement veineux mêlé dans la veine cave supérieure, en contradiction avec la formule de Flamm du cours.",
+  "Q21_pop2-5 (P1) : expression de TBX1 limitée au mésoderme et à l’endoderme (l’ectoderme manquait) ; voie d’éjection présentée comme dérivée des arcs.",
+  "Q21_a-7 (P1) : parathyroïdes dérivées des « arcs » au lieu de l’endoderme des poches pharyngées.",
+  "Q21_b-5 (P1) : fermeture fenestrée à ≥ 5 unités Wood sans la condition Qp/Qs > 1,5 ; contre-indication III incomplète (résistances ≥ 5 unités Wood malgré le traitement).",
+  "Q21_b-1 (P1) : diamètre étiré « inférieur à 38 mm » au lieu de ≤ 38 mm.",
+  "Q21_b-18 (P1) : flux diastolique « signe Doppler le plus fiable », superlatif absent de l’ESC 2020.",
+  "Q21_pop4-7 (P1) : récidive « surtout après une chirurgie dans l’enfance » non sourcée ; seuil plus bas valable chez le patient à faible risque.",
+  "Q21_pop4-10 (P1) : phrase de l’ESC 2020 sur la stimulation sortie de son contexte (comparaison au bloc de branche chez le patient stimulé).",
+  "Q21_pop6-6 (P2) : « les anticoagulants oraux directs n’y ont pas démontré leur sécurité » minimisait un essai arrêté pour excès de thromboses et d’hémorragies.",
+  "Fenêtre q21-heath (P1) : mécanisme cellulaire extrapolé d’une revue sur le canal artériel ; la rubrique canonique « Usage actuel » surestimait la valeur de la vasoréactivité.",
+  "Fenêtre q21-d-anticoag (P2) : « l’ESC 2020 les juge aussi sûrs » pour « seem similarly safe » ; deux redites internes.",
+  "Fenêtre q21-rope (P1) : taux de récidive de Kent et al. 2013 attribués à tort au seul traitement médical.",
+  "Fenêtre q21-sport (P2) et Q21_c-63 (P2) : compression du segment intramural présentée comme mécanisme établi.",
+  "Six fenêtres de P2 (q21-chirnc, q21-d-anticoag, q21-ecg, q21-mwho, q21-rx, q21-sport) : revue abrégée « Eur Heart J » dans la rubrique Source ; écrite en toutes lettres.",
+  "Q21_b-40 (P1) : « moins de 12 % » contraire à l’ESC 2025 et au Pareto ; saturation et hémoglobine présentées comme facteurs pronostiques généraux alors qu’elles proviennent d’une série.",
+  "Q21_pop2-1 (P1) : « agent causal probable » pour une association de cohorte (Øyen et al. 2016 : « suggesting a role for glucose »).",
+  "Q21_a-1 (P1) : classement « fondé sur un consensus d’experts » ; l’ESC 2020 le dit « arbitraire » et à valider.",
+  "Q21_b-16 (P1) : phrase de métadiscours sur le contenu de l’ESC (« ne figurent pas dans cette liste ») remplacée par le pourquoi de la recommandation.",
+  "Erreurs du cours relevées par les producteurs et confirmées : cause génétique « un tiers » (10 à 30 %) ; ostium secundum 75 % (80 %) ; bicuspidie « > 50 % » (jusqu’à 85 %) ; saignée 250 à 500 mL compensée par un volume équivalent (400–500 mL contre 750–1 000 mL) ; critères IIa de la sténose pulmonaire ; fraction de régurgitation > 40 % (> 30–40 %) ; ventricule droit systémique et « quatre classes » ; anticoagulants directs dans le Fontan ; Qp/Qs > 1,5 comme indication de la CIA ; vasoréactivité comme substitut validé de l’histologie ; seuil chiffré de la pente ventilatoire ; propranolol de la note de l’îlot 4.0 ; données suisses de l’oxymétrie."
+ ],
+ "doublons_et_redites": [
+  "Q21_pop5-1 (P2) rejeté : même exemple (CIA avec hypertension pulmonaire) que Q21_a-1.",
+  "Q21_pop5-15 (P2) rejeté au profit de q21-cyan-sys, avec mot vert de remplacement.",
+  "Q21_pop3-3 (P1) abrégé : le tableau des microbulles (Q21_c-26), dans l’îlot qui ouvre q21-bulles, explique déjà le relâchement de la manœuvre de Valsalva.",
+  "Q21_pop6-1 (P2) abrégé : mécanisme du retour veineux pulmonaire obstrué déjà détaillé dans q21-rvpa (Q21_pop4-4).",
+  "Fenêtre q21-mwho : chiffre de 12 % retiré, déjà donné dans la carte voisine (Q21_b-40).",
+  "Fenêtre q21-d-anticoag : première phrase (redite de Q21_d-15, voisine du mot vert) et phrase sur la valve mécanique (redite de Q21_pop6-6 dans la même fenêtre) supprimées.",
+  "Fenêtre q21-d-amio : prolongation des interactions retirée (déjà dans Q21_d-24).",
+  "Fer : classe IIa et surveillance de l’hématocrite retirées de Q21_b-30, gardées dans Q21_d-21.",
+  "Redites brèves conservées entre onglets non lus ensemble : cyanose différentielle inversée (Q21_c-16, Q21_pop2-7) ; coarctation et oxymétrie (Q21_c-18, Q21_pop3-1) ; encoches costales (Q21_b-18, q21-rx) ; ECG de la CIA (Q21_b-3, q21-ecg) ; classe IC et conduction 1:1 (Q21_d-13, q21-arythmie) ; Fontan et anticoagulation (Q21_b-28, q21-d-anticoag) ; saignée (Q21_b-31, Q21_c-60) ; fermeture de CIA après 40 ans (Q21_b-6, Q21_c-59) ; monoxyde d’azote du canal prématuré (Q21_b-14, q21-transition)."
+ ],
+ "reserves": [
+  "Les deux ajouts du vérificateur sont inscrits dans les fichiers des producteurs, seul moyen de les faire appliquer par appliquer_justifications.py : l’édition Q21_pop7-v1 dans edits/Q21_pop7.json et l’ancre Q21_pop5-a901 dans jobs/q21-cyan-sys__P1.json (champ « auteur » : « vérificateur »).",
+  "Le test statique (test_v7.py --static) n’a pas été lancé : finaliser.sh copie temporairement les sources dans chapters/, hors du périmètre d’écriture de cette vérification. À exécuter lors de la finalisation.",
+  "Barker et al. 1989 (plateau de l’oxymètre dans la méthémoglobinémie) est une étude chez le chien.",
+  "Sources vérifiées sur le résumé seulement : Torti 2004, Kent 2013 et 2021, Øyen 2016, Patorno 2017, Arlettaz 2006, Kuelling 2009, Thangaratinam 2012, Lewis 1981, Kempny 2012, Diller 2015, Dimopoulos 2006, Gatzoulis 1995, Galiè 2006, Pitcher 2022, Pasternak 2018, Ammash 1996, Thorne 1999, Hundscheid 2023, Martin 2020, Schott 1998, Hooper 2015, ESO 2024 ; Dickinson 2005 et Flamm 1969 sans résumé disponible.",
+  "Noms d’essais non écrits faute d’entrée au glossaire : RE-ALIGN (Q21_pop6-6), MAESTRO (Q21_d-4), MIST, PRIMA et PREMIUM (Q21_b-8).",
+  "Statut du glibenclamide avec le bosentan : contre-indiqué dans l’information américaine, « ne doit pas être utilisé » dans le résumé européen ; l’information professionnelle suisse n’a pas été relue (réserve de P2 maintenue).",
+  "Recommandations ACC/AHA 2018 et 2025 non consultées : dépistage des anévrismes intracrâniens, renforcement du dépistage hépatique, compétition sportive et intervalles de suivi conservés tels quels.",
+  "Tableau mWHO 2.0 de l’ESC 2025 non relu ligne à ligne : classes de q21-mwho et du Pareto de la grossesse non recontrôlées.",
+  "La phrase canonique « anticoagulants oraux directs de plus en plus utilisés, y compris dans le Fontan » (Q21_d, îlot 4.3, et rubrique « Choix » de q21-d-anticoag) reste en place ; elle est nuancée par Q21_d-16 et par la complétion de la fenêtre, non supprimée.",
+  "Mécanismes classiques sans source primaire propre, acceptés : rythme ectopique de la CIA sinus venosus (Q21_b-3), position genoux-poitrine (Q21_d-17), mélange imparfait à l’étage auriculaire (Q21_pop5-12), délai de l’anastomose de Glenn (Q21_pop4-11), ondes Q de la transposition corrigée (q21-ecg), pédicule étroit de la transposition (q21-rx).",
+  "Le protocole suisse d’oxymétrie « dans les 24 premières heures » n’a pas été relu dans les recommandations de 2005 (Arlettaz et al. mesuraient entre 6 et 12 heures)."
+ ],
+ "controles": {
+  "old_uniques_sans_chevauchement": "245 compléments (244 des producteurs et 1 du vérificateur) : old présent une seule fois, aucun chevauchement ; aucune ancre ne recouvre un complément appliqué (l’ancre Q21_pop5-a901 recouvre seulement Q21_pop5-15, rejeté).",
+  "balises": "toutes les balises de old conservées dans chaque new_final ; aucun bouton dans les compléments.",
+  "verifier_sigles": "{} sur les 14 fichiers out/*.html, sur le texte final des 31 compléments corrigés et sur les onze fichiers du cours après application simulée (audit conjoint ; Q21_pop7 seul signale des îlots situés dans d’autres fichiers, comme la source canonique).",
+  "simulation_application": {
+   "textes_appliques": 243,
+   "textes_rejetes": 2,
+   "textes_echecs": 0,
+   "ancres": 8,
+   "ancres_echecs": 0,
+   "fenetres_creees": 1,
+   "fenetres_completees": 13,
+   "fenetres_echecs": 0,
+   "mots": "31 201 → 40 561",
+   "note": "simulation dans le dossier temporaire ; aucune écriture dans sources/ ni dans chapters/"
+  },
+  "equilibre_html": "identique avant et après application simulée pour les onze fichiers (Q21_b et Q21_d : 2 fermetures orphelines déjà présentes dans la source canonique ; Q21_a : 4 balises ouvrantes propres au fragment)",
+  "boutons_des_fenetres": "au plus deux par fenêtre ; clés existantes ou créées par le lot (q21-cyan-sys) ; aucune ancre placée dans la fenêtre qu’elle ouvre (Q21_pop2-a101 est dans q21-s-palp et ouvre q21-arythmie ; Q21_pop5-a901 est dans q21-bio et ouvre q21-cyan-sys).",
+  "rubriques_source": "aucune revue abrégée par une lettre isolée ni initiale d’auteur dans les fenêtres et compléments affichés."
+ }
+}
