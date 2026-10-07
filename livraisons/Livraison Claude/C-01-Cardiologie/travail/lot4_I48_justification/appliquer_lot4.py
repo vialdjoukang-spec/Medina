@@ -58,7 +58,7 @@ def main():
                 continue
             old = v.get("old_reel") or x["old"]
             new = v.get("new_final") or x["new"]
-            g = v.get("fichier_reel") or f
+            g = re.match(r"I48_\w+", v.get("fichier_reel") or f).group(0)
             if textes[g].count(old) != 1:
                 bilan["inline_echecs"].append((v["id"], "old absent ou multiple"))
                 continue
