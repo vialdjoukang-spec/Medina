@@ -173,3 +173,55 @@ Le delta contient une fusion de la convergence cardiologique de Codex au commit 
 **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : **aucun nouvel audit croisé de Claude reçu dans les objets examinés**. Aucun delta dans `audits/A41.md` ou le dossier de livraison Claude I-03-Infectiologie. Les références à ce chapitre ajoutées dans la fusion concernent des inventaires, exports, résultats techniques et une revue de prose historique de Codex ; elles ne prouvent pas la contrelecture du chapitre actif remise par Claude. Aucun audit Codex n’est enregistré dans `SIGNAUX_CLAUDE.json`.
 
 Conséquence : conserver le paquet ancien et ses audits à leurs SHA exacts ; ne pas appliquer automatiquement le dossier de livraison à `482a679`. Avant toute éventuelle injection, restaurer explicitement les pièces autorisées depuis le bon commit, résoudre les réserves médicales et adapter le paquet à la nouvelle base canonique. Aucun rétablissement de fichiers, aucun code entrant, aucune injection exécutés par ce poste. Les têtes postérieures restent en attente d’une nouvelle réception ; ce contrôle ne poursuit pas les autosauvegardes indéfiniment.
+
+## Réception à `f2e9934` — sources revenues, paquet recalé
+
+**Le blocage « sources absentes » constaté à `482a679` est levé à la tête figée `f2e9934c7c372bde5cc1d116f9b24fe3bb621a2f`. Les 25 sources sont revenues et correspondent au nouveau manifeste. Le paquet a été recalé sur une nouvelle base : il ne s’agit pas d’une restauration identique.** L’audit croisé médical reste ouvert.
+
+Le commit figé est daté de `2026-10-07T23:18:58Z` (**8 octobre 2026 à 01:18:58 CEST**) et se nomme « Réappliquer le lot ESC 2026 sur la convergence cardiologique de Codex (39b7ff0) ». La nouvelle `source_commit` et `delivery.start_commit` sont `39b7ff0cc585c59ffbb99fb448940daa1950b34d`, à la place de `b6e5d18c2c2383893819c4c0834d6402bbe30e67`.
+
+Contrôles directs des objets Git, sans exécution du code entrant :
+
+- **25/25** sources manifestées présentes et SHA-256 conformes au champ `proposed_sha256`.
+- **18/18** empreintes d’origine des remplacements conformes au canonique de la nouvelle base déclarée.
+- Les **7 ajouts** restent absents de cette base, conformément aux opérations annoncées.
+- Comparaison avec la remise initiale `020e65b721415481298d0cf295ba0ed8966875ea` : **18 fichiers identiques, 7 fichiers différents**. Les sept empreintes d’origine correspondantes sont également actualisées dans le manifeste.
+- Diff `chapters/`, `glossary/` et `chapters.json` entre la nouvelle base `39b7ff0` et cette tête **vide** : aucun nouveau changement canonique permanent par cette remise.
+
+| Source modifiée depuis `020e65b` | Ancien SHA-256 proposé | SHA-256 reçu à `f2e9934` |
+| --- | --- | --- |
+| `chapters/I33/I33_b.html` | `d794ef67448cb57a7a379209f0a528d4fb10a5289333dfa07b2b5c2bfd6457f9` | `d58621760354fe0743784d89e0fc05bb269bd0b4aa5e5f81fa9c309b0412cdda` |
+| `chapters/I34/I34_b.html` | `51d09c66b13d9bfd45cc11a069beb7ccdfb8f3e716d7509f96fbf4cbc621f3c3` | `9abaf9829fcbc2bbd0a7e1d75cbaaa1f7f1ee8745f18e05e423ba9074442beac` |
+| `chapters/I35/I35_b.html` | `a8aa392f90870c27d207fb3164d56d7c05d5b1dfd074122cf18e8ce76091b622` | `ef4620fab01f05877439b253163acb7dbc41ba7e3a1e2cfb29a7243a4b593eed` |
+| `chapters/I42/I42_a.html` | `08aa192711737537fc71549e23d1aec8233bd956f1887a9462d051679b77db5f` | `ed47ae4e5e6243967e9abcdf24b4412ca758e5a0b0f40d94b564cd8f55e72534` |
+| `chapters/I44/I44_a.html` | `3572613ac5ca37e4c5f85d37434098c744719e232fa1f61be08c0ebe40943d5d` | `2fa95bfa303863918ba92cf5fefed2657e5c48e1a2123e3f8afe7bbf04034297` |
+| `chapters/I44/I44_b.html` | `c29e5b0c386410619e4138f83711ee5e0198b897325eeaaa4e433f228e87584d` | `0d3a7c69036cf855f8ab57a3f1dd8da8ab15c6fdf06cb6a50fa716513a831801` |
+| `chapters/Q21/Q21_a.html` | `42882f9dfda721920ab7b895084565ab2cae8081da3f32071a2faf61fd637fc4` | `f9f9e42f8a503a1d5b9ab15d21880519414d6187434b3d5baa12dbb86fee761b` |
+
+Les différences précises relues sont celles des adaptations de la convergence préservées dans la nouvelle remise :
+
+- **I33 — Endocardite infectieuse (C-01-Cardiologie)** : interprétation des hémocultures selon le germe et le contexte, avec maintien d’une seule paire positive dans la discussion diagnostique, au lieu d’une assimilation trop générale à une contamination.
+- **I34 — Valvulopathies mitrales, tricuspides et pulmonaires (C-01-Cardiologie)** : anticoagulation dans le rétrécissement mitral dégénératif serré nuancée ; l’absence de données n’est plus présentée comme une autorisation automatique des anticoagulants directs.
+- **I35 — Valvulopathies aortiques (C-01-Cardiologie)** : sens et portée des seuils de chirurgie précoce précisés ; accès transfémoral, espérance de vie et réinterventions explicités ; portée des données de durabilité limitée à la population étudiée.
+- **I42 — Cardiomyopathies (C-01-Cardiologie)** : badge de révision/non-validation humaine de la base rétabli.
+- **I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie)** : badge de la base rétabli ; durée de surveillance d’une cause médicamenteuse individualisée ; élimination du potassium et prise en charge circulatoire reformulées.
+- **Q21 — Cardiopathies congénitales de l’adulte (C-01-Cardiologie)** : badge de révision/non-validation humaine de la base rétabli.
+
+Ces observations décrivent les changements reçus ; elles ne constituent pas leur certification médicale. **I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie)** conserve le même fichier comparatif et la même source `c` qu’au paquet initial. **I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie)** conserve le même fichier comparatif et la même source `c`. Les réserves médicales ciblées sur ces pièces ne sont donc pas levées par leur restauration ou par les sept modifications recensées.
+
+| Pièce actualisée | Blob Git à la tête figée | SHA-256 |
+| --- | --- | --- |
+| `livraisons/Livraison Claude/C-01-Cardiologie/livraison.json` | `c993770fc7d97912b739f717a0a2866f80385ea5` | `a0a8cba207197a6af164cb4bcf195657af8a9ae36bd94ddbcaf30648f5e66c1d` |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08-ESC2026_COMPARAISONS/rapport.md` | `3fbfcfbdeda0e5ca0916eed9e1dd3a0c3c5816e8` | `6eb165fd4a0ef90b4f9c50570c8942bb241647dc8832e0c577848f7fc2d387c6` |
+
+Le rapport change uniquement son paragraphe de base et un détail de taille de construction. Il explique la réapplication sur la convergence et annonce son succès. **Son tableau des fichiers reste celui de la première remise : les sept lignes modifiées ci-dessus portent encore les anciennes empreintes.** Pour la provenance de cette tête, utiliser les objets réellement reçus et le nouveau manifeste, puis demander l’actualisation du tableau du rapport.
+
+`SIGNAUX_CLAUDE.json` est toujours identique : son lot `pret_audit` cite encore `020e65b`, et `audits_de_codex` reste vide. **Aucun accusé explicite des commentaires de cette équipe n’est visible dans le nouveau commit ou le rapport.** L’action technique observée suffit à établir la résolution du problème de sources à ce SHA, sans inférer une réponse explicite aux autres réserves.
+
+Les brouillons continuent de progresser : **I83 — Varices des membres inférieurs (C-01-Cardiologie)** reçoit `verification_ab.json` et `verification_cd.json` ; **I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)** reçoit `verification_cd.json` et un glossaire de vérification AB. Les JSON contiennent corrections et réserves, notamment références non intégralement lues, remboursements ou informations suisses à confirmer et glossaires à assembler. Ces pièces sont des preuves de vérification partielle reçues ; aucun manifeste final de ces chapitres n’est ajouté dans ce delta.
+
+**A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : aucun nouveau chemin ou delta d’audit/remise Claude dans les objets de cette tête, et aucun audit renseigné dans le signal.
+
+La dernière lecture simple des références du miroir observe déjà `7f4c5c93adb7be2184be633f36bc1268d050ef0a`. **Cette tête postérieure reste en attente : elle n’est ni reçue ni auditée dans cet addendum.** Tous les contrôles précédents de ce paragraphe visent uniquement `f2e9934` et restent attachés à ses objets.
+
+Conséquence de coordination : l’alerte « 25 sources absentes » doit être actualisée comme **résolue à `f2e9934`**. Maintenir les réserves médicales, la correction du rapport/signal et les vérifications mobile/fragment autonome avant injection. Aucun fichier canonique modifié, aucun code entrant exécuté, aucune injection par ce poste.
