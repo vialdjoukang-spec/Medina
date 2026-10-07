@@ -13,7 +13,7 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 | I40 — Myocardites | fait | fait (157 acceptés, 31 corrigés ; 11 fenêtres corrigées) | fait : test statique OK, 24 113 → 33 442 mots | voir journal |
 | I42 — Cardiomyopathies | fait | fait (112 acceptés, 28 corrigés, 10 ajouts du vérificateur ; doublon FA fusionné) | fait : test statique OK, 29 325 → 35 839 mots | voir journal |
 | I44 — Troubles de la conduction et bradycardies | fait | fait (115 acceptés, 22 corrigés, 1 rejeté ; 9 fenêtres corrigées) | fait : test statique OK | voir journal |
-| I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires | | | | |
+| I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires | fait | fait (174 acceptés, 19 corrigés ; 19 fenêtres corrigées) | fait : test statique OK, 28 118 → 41 199 mots | voir journal |
 | I49 — Extrasystoles et autres arythmies | fait | fait (166 acceptés, 25 corrigés, 3 ajouts ; 13 fenêtres corrigées, 2 fusions) | fait : test statique OK, 26 167 → 35 420 mots | voir journal |
 | I46 — Arrêt cardiaque | fait | fait (125 acceptés, 33 corrigés, 4 rejetés ; 9 fenêtres corrigées) | fait : test statique OK | voir journal |
 | Q21 — Cardiopathies congénitales de l’adulte | fait | fait (212 acceptés, 31 corrigés, 2 rejetés ; 9 fenêtres corrigées) | fait : test statique OK, 31 201 → 40 561 mots ; glossaire TBX1 corrigé | voir journal |
