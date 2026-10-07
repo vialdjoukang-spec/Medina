@@ -1,0 +1,32 @@
+{
+  "result": "failed",
+  "started_at": "2026-10-07T21:23:53.303Z",
+  "source_commit": "e856ed16893ba5c4ffc3bd4c9ca78a38ce533de6",
+  "expected_local_sha256": "08279a521cb0fa93de132809a526c02c80852e5d7bcc436d1c3b9e011970341a",
+  "checks": [
+    {
+      "name": "Fragment local attendu",
+      "ok": true
+    }
+  ],
+  "failures": [
+    {
+      "name": "Exécution publique",
+      "details": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html#/entry/I48\nCall log:\n\u001b[2m  - navigating to \"https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html#/entry/I48\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /workspace/scratch/01e6be8be7cf/verify_i48_public.cjs:38:31"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "failed_requests": [
+    {
+      "url": "https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html",
+      "failure": "net::ERR_CERT_AUTHORITY_INVALID"
+    }
+  ],
+  "captures": [],
+  "requested_url": "https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html#/entry/I48",
+  "local_sha256": "08279a521cb0fa93de132809a526c02c80852e5d7bcc436d1c3b9e011970341a",
+  "proxy_configured": true,
+  "browser": "153.0.8010.0",
+  "finished_at": "2026-10-07T21:23:59.170Z"
+}
