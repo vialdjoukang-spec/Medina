@@ -17,13 +17,13 @@ La veille [tools/claude_watch.py](../../tools/claude_watch.py) inspecte toutes l
 Pour A41, lire le [rapport de reprise](../../livraisons/Livraison%20Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md) et la [demande à Claude](../../livraisons/Livraison%20Codex/I-03-Infectiologie/travail/A41-2026-10-08/DEMANDE_LECTURE_CROISEE_CLAUDE.md). Le chapitre reste actif pendant l'inventaire, la vérification des sources et la lecture croisée. Les autres fragments restent dans leur file ; aucune fermeture ni complétude CIM-11 n'est déduite des contrôles logiciels.
 
 
-## État actuel de la convergence cardiologique
+## Convergence cardiologique conservée
 
 Les quatorze cours du lot 5 final et I48 sont contrôlés au commit `1fe38461d8502fb7984d66b0fe223afecd759889`. Le main médical `f149128`, ses corrections et son moteur sont préservés ; l’organisation `20915d9` est conservée. La [PR #13](https://github.com/vialdjoukang-spec/Medina/pull/13) porte l’intégration sur ses branches ; le déploiement de cette convergence sur main n’est pas annoncé. Les 22 remises Codex ont été rafraîchies : 274 sources, dont 187 cardiologiques, toutes vérifiées contre le commit source.
 
-Contrôles : 97 tests unitaires ; 31 cours Sciences ; 22 fragments et build reproductible ; 11 118 contrôles sur 14 cours ; 931 sur I48 final ; 2 400 sur les banques ; 71 sur S01 ; 748 sur l’organisation. Le reçu actuel est [CLAUDE_LOT5_CONVERGENCE_20261008.json](receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json).
+Contrôles de cette convergence : 97 tests unitaires ; 31 cours Sciences ; 22 fragments et build reproductible ; 11 118 contrôles sur 14 cours ; 931 sur I48 final ; 2 400 sur les banques ; 71 sur S01 ; 748 sur l’organisation. Son reçu est [CLAUDE_LOT5_CONVERGENCE_20261008.json](https://github.com/vialdjoukang-spec/Medina/blob/39b7ff0cc585c59ffbb99fb448940daa1950b34d/docs/collaboration/receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json).
 
-L’enrichissement étendu atteint 15/20 cours existants. La relecture exhaustive et la complétude CIM-11 restent ouvertes. La priorité C-01-Cardiologie et le partage 10/10 demeurent ; les productions I83 puis I89 (Claude) et I73 puis I95 (Codex) suivent un chapitre à la fois, avec revue croisée. Le travail plus récent de Claude `7aba794` est repéré hors de la remise figée `2947ba8`.
+L’enrichissement étendu atteint 15/20 cours existants. La relecture exhaustive et la complétude CIM-11 restent ouvertes. Le partage cardiologique 10/10 est conservé dans le backlog ; Claude poursuit ses productions I83 puis I89, tandis que I73 puis I95 demeurent au backlog Codex. La nouvelle consigne de chaîne active uniquement A41 pour Codex. La remise ultérieure de Claude `020e65b721415481298d0cf295ba0ed8966875ea` est reçue et soumise aux réserves des audits ci-dessus ; elle reste distincte de la remise historique `2947ba8`.
 
 ## Historique des injections précédentes
 
