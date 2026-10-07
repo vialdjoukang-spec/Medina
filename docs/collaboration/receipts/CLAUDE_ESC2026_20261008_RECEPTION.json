@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-08",
+  "contributor": "Claude",
+  "branch": "claude/loving-shannon-spwrhc",
+  "pull_request": "https://github.com/vialdjoukang-spec/Medina/pull/12",
+  "delivery_commit": "020e65b721415481298d0cf295ba0ed8966875ea",
+  "received_head": "3f90204dc663d6f7dee3e98bbd5819d457b6a586",
+  "subsequent_head_checked": "32f7c668814b8c022db67b064af6de70bae61015",
+  "delivery_payload_unchanged_at_subsequent_head": true,
+  "delivery_source_commit": "b6e5d18c2c2383893819c4c0834d6402bbe30e67",
+  "current_canonical_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+  "status": "received_historical_packet_current_packet_missing_and_medical_reservations_open",
+  "manifest_path": "livraisons/Livraison Claude/C-01-Cardiologie/livraison.json",
+  "manifest_blob": "f97e7e568332fabede091663a311b4d40b69e498",
+  "manifest_sha256": "4b2d8cb926be3e725b287246b9504259a1e12b6462f54cada735483c2f39da60",
+  "manifest_checks_against_declared_base": {
+    "proposed_files": 25,
+    "proposed_hashes_matched": 25,
+    "replacement_base_hashes_matched": 18,
+    "new_paths_without_base_collision": 7
+  },
+  "checks_against_current_canonical": {
+    "canonical_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+    "replacement_base_hashes_still_matched": 11,
+    "replacement_paths_changed_since_delivery_base": [
+      "chapters/I33/I33_b.html",
+      "chapters/I34/I34_b.html",
+      "chapters/I35/I35_b.html",
+      "chapters/I42/I42_a.html",
+      "chapters/I44/I44_a.html",
+      "chapters/I44/I44_b.html",
+      "chapters/Q21/Q21_a.html"
+    ],
+    "new_paths_without_collision": 7,
+    "trusted_manifest_check_exit_code": 2,
+    "adaptation_and_new_review_required": true
+  },
+  "reviews": {
+    "reception": "docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION_ACTUALISEE.md",
+    "medical": "docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_MEDICAL.md",
+    "technical": "docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_TECHNIQUE.md"
+  },
+  "medical_review_scope": "Ciblée ; quatre propositions consultées, pas de revue médicale exhaustive des huit cours",
+  "blocking_reservations": [
+    {
+      "id": "MED-01",
+      "reason": "Référentiels primaires ESC 2026 non accessibles à la contrelecture indépendante"
+    },
+    {
+      "id": "MED-02",
+      "chapter": "I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie)",
+      "reason": "Formulation recommandée incompatible avec à envisager dans la source finale proposée"
+    },
+    {
+      "id": "MED-03",
+      "chapter": "I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie)",
+      "reason": "Condition de dépassement du seuil validé par méthode et sexe insuffisante"
+    }
+  ],
+  "incoming_code_executed": false,
+  "injected": false,
+  "canonical_integration_commit": null,
+  "independent_medical_review_complete": false,
+  "independent_application_checks_complete": false,
+  "next_action": "Préserver les sources reçues, corriger les réserves, rapprocher la nouvelle base canonique et examiner un chapitre à la fois",
+  "latest_head_checked": "482a6799b3e076bf49e9699b6091c82d54c2d105",
+  "latest_head_packet_check": {
+    "manifest_unchanged": true,
+    "report_unchanged": true,
+    "signal_unchanged": true,
+    "manifested_sources_missing": 25,
+    "old_proposed_blobs_found_in_current_tree": 0,
+    "packet_recoverable_at_commit": "020e65b721415481298d0cf295ba0ed8966875ea",
+    "incoming_signal_stale_for_current_tree": true,
+    "injection_allowed": false,
+    "alert_comment": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048825375"
+  }
+}

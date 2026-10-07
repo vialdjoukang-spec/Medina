@@ -17,7 +17,7 @@
     "next_chapter_gate": "Sources complètes, relecture médicale et rédactionnelle, contrôles technique et navigateur réussis, intégration canonique, reçu et publication vérifiés avant le chapitre suivant.",
     "blocked_chapter_policy": "Un blocage conserve le chapitre actif ; il ne permet pas d’ouvrir un autre chapitre sans décision explicite du propriétaire.",
     "next_fragment_gate": "Achever et contrôler le périmètre du fragment actif selon COMPLETUDE_CIM11.md avant le suivant ; aucune certification tirée des seuls compteurs historiques.",
-    "start_gate": "Terminer la priorité cardiologie en cours selon les consignes partagées avant d’activer les files restantes. Les files ci-dessous sont attribuées, sans production déclarée commencée.",
+    "start_gate": "La consigne du 8 octobre active la chaîne des dix fragments Codex : commencer par T1 et son chapitre A41. La cardiologie reste un backlog distinct avec ses réserves ouvertes, sans être certifiée close ; conserver ses livraisons et audits antérieurs.",
     "category_label_format": "code — intitulé (libellé complet du fragment)"
   },
   "agents": {
@@ -50,7 +50,14 @@
         "T5",
         "T6"
       ],
-      "active_chapter": null
+      "active_chapter": {
+        "fragment_id": "T1",
+        "code": "A41",
+        "title": "Sepsis et choc septique de l’adulte",
+        "stage": "review",
+        "base_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+        "report_path": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md"
+      }
     }
   },
   "instruction_file": "docs/collaboration/FRAGMENTS_RESTANTS.md",
@@ -65,7 +72,36 @@
       "Claude": "Codex"
     },
     "injection_gate": "Audit croisé du commit source, correction des réserves bloquantes, puis injection et contrôles de la version intégrée",
-    "claude_spec": "docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md"
+    "claude_spec": "docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md",
+    "specialist_missions": 24,
+    "parallel_workers_max": 6,
+    "delicate_phase_posts": [
+      "Réception et provenance",
+      "Audit médical croisé",
+      "Intégrité, tests et déploiement"
+    ],
+    "claude_acknowledgement": {
+      "commit": "7aba794a1d77979052e6104a3a5afc05698046db",
+      "head_received": "d8dae520c4d19213d0aa0099f3da34ca974b2c1d",
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/ACCUSE_PRISE_EN_CHARGE_2026-10-08.md",
+      "read_instruction_commit": "b6e5d18c2c2383893819c4c0834d6402bbe30e67",
+      "status": "received",
+      "latest_received_head": "32f7c668814b8c022db67b064af6de70bae61015"
+    },
+    "watch": {
+      "script": "tools/claude_watch.py",
+      "workflow": ".github/workflows/claude_watch.yml",
+      "interval_seconds": 300,
+      "state_directory": "/workspace/medina-env/claude-watch",
+      "scope": "Détecter et préparer la file ; audit médical et injection sous contrôle du coordinateur et des sentinelles.",
+      "github_first_successful_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37701215617"
+    },
+    "claude_a41_request": {
+      "review_source_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+      "comment_url": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048784611",
+      "status": "posted_acknowledgement_pending",
+      "scope": "Contrelecture initiale de la base ; aucune correction médicale nouvelle livrée"
+    }
   },
   "assignment_unit": "fragment",
   "grouping_policy": "Chaque fragment est confié en entier à son responsable ; toutes ses catégories restent groupées sous ce fragment."
