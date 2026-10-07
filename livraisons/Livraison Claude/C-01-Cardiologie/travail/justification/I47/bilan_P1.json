@@ -1,0 +1,75 @@
+{
+ "producteur": "P1",
+ "cours": "I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires",
+ "fichiers_confies": [
+  "I47_a",
+  "I47_b",
+  "I47_pop1",
+  "I47_pop2",
+  "I47_pop3"
+ ],
+ "affirmations_relevees": 147,
+ "detail_affirmations": "102 affirmations justifiées ou corrigées sur place (compléments), 15 affirmations du texte reliées par un mot vert à une fenêtre qui les justifie, environ 30 affirmations de fenêtres existantes expliquées par une rubrique ajoutée",
+ "complements_texte": 102,
+ "complements_par_fichier": {
+  "I47_a": 34,
+  "I47_b": 53,
+  "I47_pop1": 5,
+  "I47_pop2": 5,
+  "I47_pop3": 5
+ },
+ "fenetres_creees": [
+  "i47-tolerance",
+  "i47-bilan-tv"
+ ],
+ "fenetres_completees": [
+  "i47-pa",
+  "i47-reentree",
+  "i47-automat",
+  "i47-declench",
+  "i47-dualite",
+  "i47-trav",
+  "i47-cicatrice",
+  "i47-repol",
+  "i47-qtl",
+  "i47-atcd-medic",
+  "i47-ecg-qt",
+  "i47-ecg-brug"
+ ],
+ "ancres_nouvelles": 15,
+ "identifiants_ancres": "numérotés à partir de a101 (I47_a-a101…) pour éviter toute collision avec les ancres de P2",
+ "source_principale": "Brugada et al., 2019 ESC Guidelines for the management of patients with supraventricular tachycardia, Eur Heart J 2020;41:655-720, et Zeppenfeld et al., 2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death, Eur Heart J 2022;43:3997-4126, lues en texte intégral dans leurs traductions officielles espagnoles (src/esc2019_tsv_es*, src/esc2022_av_es*), l’éditeur (403), HAL et BORIS (pages anti-robot), Leiden (accès bloqué) et ORBi (réponse vide) étant inaccessibles. Publications primaires contrôlées dans PubMed (résumé ou texte intégral PMC) : Echt 1991, Stewart 1986, Klein 1979, Schwartz 2001, 2004 et 2009, Priori 2003, Drew 2010 (texte intégral), Antzelevitch et Burashnikov 2011 (texte intégral), Perkins 2018, Kudenchuk 2016, Baher 2011, Arad 2003, Dumaine 1999, Link 1998, Lerman 1986, Nogami 2000, de Bakker 1988, Schmidt 2007, Yang et Roden 1996, Makkar 1993, Viskin 2005, Watanabe 2009, Kannankeril 2017, Neyroud 1997, Plaster 2001, Postema 2009, Miyazaki 1996, Nademanee 2011, Kodama 1997, González-Torrecilla 2009, Moccetti 2022, Appelboam 2015.",
+ "erreurs_du_cours": [
+  "I47_b, îlot 12.1 (QT long) : DAI « en cas de syncope malgré le bêtabloquant (classe IIa) » et dénervation sympathique gauche « si le bêtabloquant est inefficace, mal toléré ou si le DAI est refusé (classe IIa) ». L’ESC 2022 (tableau 41) retient la classe I pour le DAI chez le patient symptomatique malgré bêtabloquant et traitement propre au génotype, la classe I pour la dénervation si le DAI est contre-indiqué ou refusé ou en cas de chocs multiples, et la classe IIa seulement si le bêtabloquant n’est pas toléré. Corrigé (I47_b-39) ; même erreur signalée par P2 dans le Pareto i47-canal.",
+  "I47_b, îlot 10.4 (tachycardie atriale focale) : flécaïnide et propafénone « classe IIb ». L’ESC 2019 les place en classe IIa, dans la même recommandation que les bêtabloquants et les inhibiteurs calciques ; l’ivabradine et l’amiodarone sont en classe IIb. Corrigé (I47_b-26).",
+  "I47_b, îlot 8.2 : l’introduction attribuait les cinq critères de TV à l’indépendance auriculoventriculaire, alors que la concordance, l’axe nord-ouest et la largeur du QRS traduisent une activation hors du système de conduction. Corrigé (I47_b-3).",
+  "I47_b, îlot 12, piège : « C’est un syndrome de Brugada démasqué par la fièvre ». L’ESC 2022 tient le type 1 apparu sous fièvre pour un aspect provoqué, présent chez 2 à 4 % des sujets sains, qui exige un critère clinique ou familial. Corrigé (I47_b-52), en cohérence avec la correction de P2 (I47_c-31).",
+  "I47_b, îlot 14, insuffisance hépatique : « L’hypoalbuminémie et l’ascite favorisent les troubles électrolytiques ». L’hypoalbuminémie abaisse la calcémie totale sans modifier le calcium ionisé ; ce sont l’hyperaldostéronisme secondaire et les diurétiques de l’ascite qui causent hypokaliémie et hypomagnésémie. Corrigé (I47_b-51).",
+  "I47_pop2, fenêtre i47-vagal : massage sinocarotidien de « 5 à 10 secondes » ; l’ESC 2019 le limite à 5 secondes, toujours unilatéral. Corrigé (I47_pop2-5).",
+  "I47_pop2, fenêtre i47-s-trig : « un arrêt par manœuvre vagale signe une tachycardie qui dépend du nœud » est trop absolu : certaines tachycardies atriales focales et TV de la chambre de chasse sensibles à l’AMPc s’arrêtent aussi (Lerman 1986 ; ESC 2019). Nuancé (I47_pop2-3).",
+  "I47_pop1, fenêtre i47-dissoc : « conduction rétrograde 1:1 dans près d’un tiers des TV » ; l’ESC 2019 indique une conduction rétrograde chez jusqu’à 50 % des patients, parfois 1:1, la majorité des TV gardant plus de QRS que d’ondes P. Corrigé (I47_pop1-1).",
+  "I47_pop1, fenêtre i47-tdp : fréquence des torsades « 200 à 250/min » ; la déclaration AHA/ACCF de 2010 indique 160 à 240/min. Corrigé (I47_pop1-3), divergence de manuels plutôt qu’erreur franche.",
+  "I47_a, îlot 7.1, question 4 : « plus d’ondes P que de QRS signe une tachycardie atriale ou un flutter » ; l’ESC 2019 rappelle qu’une TRIN peut, rarement, conduire en 2:1. Nuancé (I47_a-32)."
+ ],
+ "reserves": [
+  "Les deux recommandations ESC ont été lues dans leurs traductions officielles en espagnol ; classes, niveaux et chiffres sont ceux de l’original, mais la numérotation des sections citées suit la traduction.",
+  "Non vérifiés faute de source retrouvée : dualité nodale chez 10 à 35 % des sujets (I47_a, îlot 3.1) ; tachycardie atriale focale « environ un dixième des TSV adressées pour ablation » (îlot 2) ; prévalence du Brugada de 1/2 000 à 1/5 000 et gradient asiatique (îlot 2) ; gène RYR2 dans « environ 60 % » des TVPC (îlot 12.3, absent du texte de l’ESC 2022) ; sensibilité de la dissociation « 20 à 50 % » (fenêtre i47-dissoc) ; potassium « ≥ 4,0 mmol/L » sous médicament allongeant le QT (piège de l’îlot 13.2, également signalé par P2).",
+  "Mort subite « 50 à 100 pour 100 000 par an (ESC 2022) » (îlot 2) : l’ESC 2022 donne des incidences par âge (1, 50 puis au moins 200 pour 100 000) ; le complément I47_a-6 les ajoute, la fourchette globale du cours n’est pas retrouvée telle quelle.",
+  "Pré-excitation « 0,1 à 0,3 % » (îlot 2) : l’ESC 2019 indique 0,15 à 0,25 % ; non modifié, la fourchette du cours englobant celle de l’ESC.",
+  "FA pré-excitée (îlot 9.3) : la recommandation de classe III de l’ESC 2019 vise digoxine, bêtabloquants, diltiazem, vérapamil et amiodarone ; l’adénosine n’y figure pas nommément, le texte demandant seulement de l’éviter (l’ESC 2022 aussi). Le cours la range en classe III ; laissé en l’état.",
+  "Fenêtre i47-s-syncope : « dans la pré-excitation, une syncope est un marqueur de risque qui justifie l’ablation » ne figure pas parmi les marqueurs de risque de l’ESC 2019 (âge jeune, TRAV inductible, voies multiples, intervalle RR pré-excité ≤ 250 ms) ; non modifié, à vérifier.",
+  "ERC 2025 (énergie maximale pour la FA pré-excitée, îlot 9.3 ; doses de l’arrêt cardiaque, îlot 9.6), directives SSC/SSML 2024 (cartes de conduite, îlot 13.4) et recommandations ESC 2018 sur la grossesse (carte de l’îlot 14) : texte intégral non consulté ; aucune justification chiffrée ajoutée à ces passages.",
+  "Mécanismes présentés comme débattus ou probables : rôle hormonal dans la prédominance féminine de la TRIN, disparition de la pré-excitation comme cause de la baisse relative de la TRAV avec l’âge, mécanisme de la surmortalité de CAST, action de la flécaïnide sur le récepteur de la ryanodine, mécanisme du magnésium dans les torsades, origine de la TV bidirectionnelle (modèle de Baher et al.), dilution du bénéfice dans DANISH.",
+  "Noms refusés par l’audit des sigles et donc absents du HTML : González-Torrecilla (conservé dans le champ source de I47_pop2-1), et les acronymes PROCAMIO, OPTIC, DINAMIT, IRIS et VEST, remplacés par « essai randomisé » avec la référence en source. CAST et DANISH sont couverts par le glossaire.",
+  "Les compléments sur le Brugada (I47_b-40 à 44 et 52) et la fenêtre i47-ecg-brug complètent la fenêtre i47-brugada de P2 sans la répéter ; le vérificateur peut contrôler l’absence de redite sur le mécanisme courant sodique/courant transitoire sortant.",
+  "Simulation de appliquer_justifications.py sur une copie dans le dossier temporaire, avec des verdicts fictifs « accepter » pour P1 et P2 ensemble : 189 compléments appliqués, 36 ancres posées, 3 fenêtres créées, 43 complétées, aucun échec ; verifier_sigles.py affiche {} sur les dix fichiers simulés ; équilibre des balises inchangé. Aucune écriture dans chapters/."
+ ],
+ "controles": {
+  "old_uniques_et_sans_chevauchement": true,
+  "ancres_hors_fenetre_ouverte": true,
+  "verifier_sigles_out_html": "{} sur les 14 fichiers out/*__P1.html",
+  "verifier_sigles_new": "{} sur l’ensemble des textes new et sur les dix fichiers simulés après application",
+  "longueurs_fenetres": "créées : 2 706 et 2 387 caractères ; rubriques ajoutées : 602 à 1 440 caractères",
+  "simulation_appliquer_justifications": "P1 + P2 : 189 compléments, 36 ancres, 3 fenêtres créées, 43 complétées, aucun échec"
+ }
+}
