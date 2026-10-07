@@ -1,0 +1,40 @@
+{
+ "cours": "I42 — Cardiomyopathies",
+ "base": "livraisons/Livraison Claude/C-01-Cardiologie/sources/chapters/I42/ (copie livrée, lot 5)",
+ "recommandations_examinees": [
+  "2026 ESC Guidelines for the management of heart failure (doi:10.1093/eurheartj/ehag100) — retenue (directe pour l’amylose et le bilan étiologique ; indirecte par la classification)",
+  "2026 ESC Guidelines on Cardiac Rehabilitation (doi:10.1093/eurheartj/ehag099) — retenue (CMH stable, cardiomyopathies primitives, obstruction sévère)",
+  "2026 ESC Guidelines for cardiovascular disease and chronic kidney disease (doi:10.1093/eurheartj/ehag098) — retenue (amylose ou Fabry si insuffisance cardiaque inexpliquée avec maladie rénale chronique)",
+  "Fifth Universal Definition of Myocardial Infarction 2026 (doi:10.1093/eurheartj/ehag101) — examinée, non retenue dans la fenêtre : elle classe les cardiomyopathies parmi les causes de lésion myocardique chronique et le Tako-tsubo parmi les lésions aiguës de stress catécholaminergique, sans contredire le cours"
+ ],
+ "recommandation_propre": "Aucune en 2026 ; le référentiel propre reste l’ESC 2023 sur les cardiomyopathies.",
+ "changements_retenus": [
+  "Amylose ATTR : silenceur (vutrisiran) ou stabilisateur (tafamidis, acoramidis), classe I, niveau A, NYHA I–III, forme sauvage ou héréditaire ; remplace la classe I, niveau B, du tafamidis seul en NYHA I–II (ESC 2021). Indication médicamenteuse élargie, non nouvelle classification.",
+  "Amylose : immunofixation sérique et urinaire, chaînes légères libres et scintigraphie d’emblée (I, B) ; recherche d’amylose ou de Fabry dans l’insuffisance cardiaque inexpliquée avec maladie rénale chronique (IIa, C).",
+  "Phénotypes < 50 % / ≥ 50 % et stades A–D : une CMD à 41–49 % devient « fraction réduite » ; les seuils des dispositifs (≤ 35 %) et les critères génotypiques de l’ESC 2023 ne bougent pas.",
+  "Bilan : IRM avec contraste (I, C) ; génétique (I, C) ; TEP au FDG (IIa, C) ; biopsie (IIa, C).",
+  "Réadaptation : entraînement dans la CMH stable (IIa, B1) ; réadaptation dans les cardiomyopathies primitives (IIb, C) ; obstruction sévère = contre-indication à l’épreuve d’effort et à l’entraînement.",
+  "Fibrillation auriculaire de la CMD, CMNDVG et CMAVD : score CHA₂DS₂-VA (ESC 2024 et ESC 2026), point « C » pour une insuffisance cardiaque de stade B à D."
+ ],
+ "fenetre": "out/i42-esc-2026-comparaison__P1.html (clé i42-esc-2026-comparaison, fichier cible nouveau I42_pop_esc_comparison), 3 ancres (I42_b ×2, I42_a ×1)",
+ "edits": {
+  "I42_d": "2 compléments : classe ESC 2026 du traitement de l’ATTR ajoutée entre parenthèses ; « dans ce texte » précisé en « dans l’ESC 2023 »",
+  "I42_pop5": "1 complément : place du tafamidis (ESC 2026 : I, A, NYHA I–III)",
+  "I42_pop6": "1 complément : Pareto tafamidis (ESC 2026 : I, A, NYHA I–III)",
+  "I42_pop2": "1 complément : CHA₂DS₂-VASc → CHA₂DS₂-VA, point « C » pour le stade B à D"
+ },
+ "erreurs_du_cours": [
+  "I42_d, I42_pop5, I42_pop6 : la classe du tafamidis (I, B, NYHA I–II, ESC 2021) est dépassée par l’ESC 2026 (I, A, NYHA I–III, avec vutrisiran et acoramidis).",
+  "I42_pop2 : « la décision suit le score CHA₂DS₂-VASc » est dépassé depuis l’ESC 2024 sur la fibrillation auriculaire (CHA₂DS₂-VA), confirmé et précisé par l’ESC 2026."
+ ],
+ "controles": {
+  "verifier_sigles": "{} sur la fenêtre et sur le texte de tous les « new » (compléments et ancres)",
+  "old_uniques": "5 compléments et 3 ancres présents une seule fois dans la copie livrée ; ancres également présentes dans chapters/I42",
+  "chevauchement": "aucun « old » d’ancre ne recouvre un « old » de complément (fichiers distincts)",
+  "longueur_fenetre": "environ 3 300 caractères de texte"
+ },
+ "reserves": [
+  "Classes ESC 2026 lues dans les diapositives officielles, non dans le texte intégral (inaccessible depuis cet environnement).",
+  "Réserve du lot 5 « classes ESC 2026 non vérifiées en source primaire » (génétique, TEP) : confirmées par les diapositives officielles (I, C ; IIa, C)."
+ ]
+}

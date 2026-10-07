@@ -1,0 +1,30 @@
+{
+ "cle": "i35-esc-2026-comparaison",
+ "titre": "Valvulopathies aortiques : ce qu’ajoutent les textes ESC 2026",
+ "action": "creer",
+ "fichier_cible": "I35_pop_esc_comparison",
+ "note_ancres": "Ancres au format du modèle I48 et des autres cours de ce lot : « new » reprend « old » en y insérant entre parenthèses le libellé « ESC 2026 : … » ; l’orchestrateur remplace « old » par « new », puis transforme « label » en mot vert vers la clé. Le script appliquer_justifications.py actuel n’applique pas le champ « new » des ancres : sans cette étape, l’ancre échoue.",
+ "ancres": [
+  {
+   "file": "I35_b",
+   "id": "I35_b-a1",
+   "old": "<td>RA à bas débit, bas gradient, FEVG &lt; 50 %, sévérité confirmée</td>",
+   "new": "<td>RA à bas débit, bas gradient, FEVG &lt; 50 %, sévérité confirmée (ESC 2026 : ICFEr, même indication de classe I)</td>",
+   "label": "ESC 2026 : ICFEr, même indication"
+  },
+  {
+   "file": "I35_b",
+   "id": "I35_b-a2",
+   "old": "font souvent préférer la bioprothèse ou le TAVI.",
+   "new": "font souvent préférer la bioprothèse ou le TAVI (ESC 2026 : TAVI à envisager dès 70 ans, classe IIa).",
+   "label": "ESC 2026 : TAVI à envisager"
+  },
+  {
+   "file": "I35_b",
+   "id": "I35_b-a3",
+   "old": "Le suivi clinique est ensuite annuel.",
+   "new": "Le suivi clinique est ensuite annuel (ESC 2026 : réadaptation cardiaque recommandée, classe I).",
+   "label": "ESC 2026 : réadaptation cardiaque recommandée"
+  }
+ ]
+}

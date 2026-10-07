@@ -1,0 +1,30 @@
+{
+ "cle": "i33-esc-2026-comparaison",
+ "titre": "Endocardite infectieuse : ce que touchent les textes ESC 2026",
+ "action": "creer",
+ "fichier_cible": "I33_pop_esc_comparison",
+ "note_ancres": "Ancres au format du modèle I48 et des autres cours de ce lot : « new » reprend « old » en y insérant entre parenthèses le libellé « ESC 2026 : … » ; l’orchestrateur remplace « old » par « new », puis transforme « label » en mot vert vers la clé. Le script appliquer_justifications.py actuel n’applique pas le champ « new » des ancres : sans cette étape, l’ancre échoue. L’ancre I33_pop2-a1 se trouve dans la fenêtre « suivi après EI », distincte de la fenêtre ouverte.",
+ "ancres": [
+  {
+   "file": "I33_b",
+   "id": "I33_b-a1",
+   "old": "Une embolie coronaire se traite par aspiration ou par l’abstention, rarement par un stent.",
+   "new": "Une embolie coronaire se traite par aspiration ou par l’abstention, rarement par un stent (ESC 2026 : infarctus primaire, et non plus de type 2).",
+   "label": "ESC 2026 : infarctus primaire"
+  },
+  {
+   "file": "I33_b",
+   "id": "I33_b-a2",
+   "old": "souvent mitrales sur calcifications de l’anneau, avec une mortalité élevée.",
+   "new": "souvent mitrales sur calcifications de l’anneau, avec une mortalité élevée (ESC 2026 : prévention propre à l’hémodialysé).",
+   "label": "ESC 2026 : prévention propre à l’hémodialysé"
+  },
+  {
+   "file": "I33_pop2",
+   "id": "I33_pop2-a1",
+   "old": "l’ESC 2023 propose de l’envisager chez les patients stables (classe IIa), en lien avec l’équipe endocardite.",
+   "new": "l’ESC 2023 propose de l’envisager chez les patients stables (classe IIa), en lien avec l’équipe endocardite (ESC 2026 : réadaptation après chirurgie valvulaire).",
+   "label": "ESC 2026 : réadaptation après chirurgie valvulaire"
+  }
+ ]
+}
