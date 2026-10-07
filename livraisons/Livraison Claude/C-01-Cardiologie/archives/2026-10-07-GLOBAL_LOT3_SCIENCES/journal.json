@@ -1,0 +1,2609 @@
+{
+ "lot": "GLOBAL_LOT3_SCIENCES",
+ "relecteur": "Claude Code (workflow : rédaction, vérification médicale, vérification de style, arbitrage)",
+ "date": "2026-10-07",
+ "commit_relu": "3636759adb8b74402f98ee8d48c6e8dd49f08a13",
+ "regle_de_couverture": "Couverture partielle : seuls les blocs « Interprétation guidée » et les figures à légende générique de l'onglet Sciences sont relus, en entier, pour chaque unité listée.",
+ "fichiers": [
+  {
+   "chemin": "chapters/I00/I00_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "7 critiques, 0 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une preuve d’exposition n’est pas une infection actuelle",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours et phrase agrammaticale (« pour comprendre une preuve… ») ; nomme les quatre cases et leur enchaînement vertical, vérifié dans le SVG."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par la relation temporelle clé ; critique retenue pour éviter de redire l’introduction."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Recopie de la dernière phrase du paragraphe ; critiques retenues : ni « élevée » ni « récente », et la sérologie « peut aider » sans certitude ajoutée."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une réaction dirigée contre le tissu change la question",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Recopie de la dernière phrase du paragraphe ; critique retenue (preuves d’exposition réintégrées, causalité atténuée), sans reprendre de près la phrase finale du bloc."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase défectueuse : un diagnostic ne « répond » pas à des alternatives."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La preuve histologique n’est pas toujours nécessaire au diagnostic",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Recopie d’une phrase qui renvoyait à « cette distinction » sans antécédent ; synthèse pratique."
+      },
+      {
+       "cible": "autre",
+       "motif": "Métadiscours (« Le lecteur distingue… ») et construction fautive (« distinguer X et Y ») ; fusion en une affirmation directe."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La phase aiguë et la cicatrice produisent des effets différents",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Recopie de la dernière phrase du paragraphe ; critique retenue : la fuite aiguë reste une possibilité, non une constante."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un trouble moteur retardé se lit dans son contexte",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Recopie d’une phrase qui renvoyait à « cette distinction » sans antécédent clair ; synthèse des deux pièges pratiques."
+      },
+      {
+       "cible": "autre",
+       "motif": "Métadiscours et verbe impropre ; critique retenue pour lever l’antécédent ambigu de « les ». « Sydenham » figure déjà dans le fichier."
+      }
+     ]
+    },
+    {
+     "index": 5,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une susceptibilité n’explique pas seule une répartition",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Cases citées inexistantes et phrase agrammaticale ; structure en deux branches convergentes vérifiée dans le SVG."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par la relation clé et la limite du schéma ; critique retenue (répétition « pèsent… poids »)."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Recopie de la dernière phrase, vague ; les leviers d’action sont nommés à partir du bloc."
+      },
+      {
+       "cible": "autre",
+       "motif": "Construction fautive « distinguer X et Y »."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 0 : « Une sérologie aide parfois à documenter l’exposition passée » sous-estime le rôle de la sérologie. Dans le même fichier (§ 3.1, Piège), la sérologie est présentée comme la source de la preuve temporelle exigée par les critères de Jones, sauf pour la chorée. « Parfois » peut induire en erreur ; non corrigé.",
+    "Unité 0 : l’encadré « Science → traitement » (« Le traitement et la prophylaxie répondent à l’infection, au syndrome et au risque de récidive ») reste vague. Il n’indique ni l’éradication du germe ni la prophylaxie secondaire décrites ailleurs dans le cours ; non modifié.",
+    "Unité 3 : l’encadré « Science → examen » (« L’imagerie distingue activité suspectée, morphologie et conséquences hémodynamiques ») est une phrase quasi nominale, sans complément explicite. Le fond est correct ; non modifié.",
+    "Unité 4 : l’indication « La chorée implique une perturbation de réseaux qui règlent le mouvement » est juste, mais elle reste très générale à côté du mécanisme dopaminergique précis exposé juste avant (anticorps anti-récepteurs D1/D2 dans le striatum).",
+    "Unité 0 : « Une sérologie aide parfois à documenter l’exposition passée » sous-estime le rôle de la sérologie. Dans le même fichier (§ 3.1, Piège), la sérologie fournit la preuve temporelle exigée par les critères de Jones, sauf pour la chorée. « Parfois » peut induire en erreur ; non corrigé, et l’À retenir dit seulement « peut aider ».",
+    "Unité 4 : la phrase « La chorée implique une perturbation de réseaux qui règlent le mouvement » est juste, mais très générale à côté du mécanisme dopaminergique exposé ailleurs (anticorps anti-récepteurs D1/D2 dans le striatum) ; non modifiée."
+   ]
+  },
+  {
+   "chemin": "chapters/I10/I10_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "10 critiques, 7 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Relier le rein à la pression générale",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase du paragraphe. La synthèse porte sur les deux décisions du bloc (sens de la relation rein-pression, indication de l’angioplastie) sans imposer d’ordre de démarche ni préciser la nature du retentissement, ce que le bloc ne fait pas."
+      },
+      {
+       "cible": "autre",
+       "motif": "« L’examen » ne peut pas chercher, et un seul verbe ne convenait pas aux trois compléments. Chaque complément reçoit son verbe ; aucun fait nouveau."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Pourquoi l’atteinte des petits vaisseaux compte",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase du paragraphe. La nouvelle synthèse dit que les marqueurs recherchent le retentissement (et non qu’ils le révèlent), et « ces organes » a désormais un antécédent."
+      },
+      {
+       "cible": "autre",
+       "motif": "Article manquant (« de pression ») et tournure nominale remplacée par un verbe."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Séparer débit cardiaque et résistance",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase et s’ouvrait sur un démonstratif sans antécédent. La synthèse garde l’idée centrale du bloc (une mesure instantanée ne révèle pas le mécanisme), conserve le caractère facultatif de l’association et ne recopie pas l’encadré « Science → traitement »."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Interpréter rénine et aldostérone ensemble",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Suppression du métadiscours et de la faute « pour comprendre interpréter ». L’introduction nomme les quatre cases et la chaîne causale qui les relie."
+      },
+      {
+       "cible": "legende",
+       "motif": "La légende générique est remplacée par la relation clé propre à la figure. Correction de la critique : la rénine supprimée seule n’oriente pas ; c’est la lecture conjointe des deux dosages. Les conditions du dosage, déjà dites dans l’introduction, ne sont pas répétées."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Ce paragraphe reprenait mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase du paragraphe. La synthèse condense la règle de lecture et la suite logique (confirmation, cause, latéralisation, traitement) présente dans l’encadré « Science → traitement » ; le rapport est nommé explicitement."
+      },
+      {
+       "cible": "autre",
+       "motif": "« Le rapport » restait indéterminé. Le rapport aldostérone/rénine est déjà nommé ailleurs dans I10_c.html."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Reconnaître une cause rare sans surinterpréter",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Suppression du métadiscours et de la faute « pour comprendre reconnaître ». L’introduction suit désormais l’ordre des flèches de la figure tout en exposant le lien causal, et ne redit plus la condition « une fois le diagnostic établi » du paragraphe d’ouverture."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par la condition propre à cette figure (concordance entre phénotype et résultat moléculaire, énoncée dans le bloc), sans cloner l’ouverture de la légende de l’unité 3."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Ce paragraphe reprenait mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase du paragraphe. La synthèse reste fidèle au bloc (« discussion ciblée », rôle du conseil génétique limité à l’organisation des tests) et réunit le signal d’alerte et la règle de concordance."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 3 (Interpréter rénine et aldostérone ensemble) : le bloc ne pose la question hormonale que « chez un patient avec hypertension et hypokaliémie ». Or l’onglet A (I10_a.html) rappelle que l’hypokaliémie manque dans la majorité des hyperaldostéronismes primaires. I10_pop5.html indique aussi que le rapport aldostérone/rénine est à envisager chez tout hypertendu confirmé (ESC 2024, classe IIa). La formulation du bloc n’est pas fausse, mais elle peut laisser croire que le dépistage est réservé aux patients hypokaliémiques. Je ne l’ai pas modifiée.",
+    "Unité 2 (Séparer débit cardiaque et résistance) : la phrase « doubler la résistance à débit constant double le gradient de pression » est exacte dans le modèle simplifié. En revanche, l’approximation « pression artérielle moyenne ≈ débit × résistance » néglige la pression veineuse centrale. Le texte le signale par « approximativement ». Aucune erreur, simple point de vigilance.",
+    "Unité 3 (Interpréter rénine et aldostérone ensemble) : le bloc ne pose la question hormonale que « chez un patient avec hypertension et hypokaliémie ». Or l’onglet A (I10_a.html) rappelle que l’hypokaliémie manque dans la majorité des hyperaldostéronismes primaires, et I10_pop5.html indique que le rapport aldostérone/rénine est à envisager chez tout hypertendu confirmé (ESC 2024, classe IIa). La formulation peut laisser croire que le dépistage est réservé aux patients hypokaliémiques. Non modifiée.",
+    "Unité 2 (Séparer débit cardiaque et résistance) : l’approximation « pression artérielle moyenne ≈ débit × résistance » néglige la pression veineuse centrale ; le texte le signale par « approximativement ». Simple point de vigilance.",
+    "Unité 4 (figure) : les flèches du SVG vont de « Transport sodé » vers « Prédisposition rare », alors que, sur le plan causal, la prédisposition monogénique altère le transport du sodium. L’introduction suit l’ordre des cases sans affirmer que le transport cause la prédisposition ; l’ordre des cases du SVG pourrait être revu (« Prédisposition rare » en tête).",
+    "Unité 0 : la phrase « Une anomalie anatomique doit être reliée à son retentissement avant une intervention. » reste vague à la fin du paragraphe d’ouverture ; elle pourrait nommer la sténose de l’artère rénale, comme l’encadré « Science → traitement ». Non modifiée."
+   ]
+  },
+  {
+   "chemin": "chapters/I21/I21_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "10 critiques, 3 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Du territoire à l’hypothèse coronaire",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : la proposition initiale rendait le siège « déterminant » et effaçait la réserve « sans prouver le siège exact » ; la synthèse garde la prudence du bloc et supprime le « ensuite » séquentiel."
+      },
+      {
+       "cible": "autre",
+       "motif": "« doivent être concordants » laissait croire qu’une discordance est impossible ; la phrase décrit la vérification. L’ouverture « Le clinicien… » est évitée pour ne pas doubler celle de l’encadré de l’unité 2."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Pourquoi une plaque devient aiguë",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Suppression du métadiscours ; l’introduction nomme les quatre cases et leur lien causal. Aucune critique."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par le sens de lecture et la limite propre à la figure. Aucune critique ; le gabarit n’est plus repris dans l’unité 4."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe recopiait mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : la cinétique « en quelques minutes » est attribuée à la rupture seule, comme dans le bloc ; l’érosion reste décrite comme cause possible de thrombose."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le double effet d’une tachycardie",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Deux critiques convergentes retenues : la baisse d’apport est limitée au patient avec sténose et présentée comme possible ; l’effet de l’hypotension reste conditionnel et n’est pas restreint au patient sténosé ; la formule impropre « patient sténosé » est écartée."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Lésion myocardique et infarctus",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : « prouve » devient « signale », comme dans le bloc, et la réserve « à elle seule » est rétablie."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Ce qu’un terrain familial change",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Deux critiques retenues : « majore » devient « peut accroître », car le bloc ne l’affirme que pour la forme familiale ; « ce risque », sans antécédent, devient « la reconnaissance de ce terrain ». L’ouverture diffère de celle de l’unité 1 et laisse le sens de lecture à la légende."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critique retenue : le gabarit cloné de l’unité 1 et la quatrième mention de l’épisode aigu sont supprimés ; la légende précise à qui s’applique chaque case."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe recopiait mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Deux critiques retenues : le dépistage des apparentés redevient conditionnel au résultat (« peut ») ; la distinction avec l’épisode aigu, déjà portée par le paragraphe corrigé et l’encadré « Science → traitement », n’est pas répétée. L’ordre phénotype puis panel reste dans l’encadré « Science → examen »."
+      },
+      {
+       "cible": "autre",
+       "motif": "La formule « ne rend pas tous les événements familiaux génétiquement identiques » est impropre ; la phrase est scindée et précisée sans ajouter de fait. Sous-chaîne vérifiée : une seule occurrence dans le fichier."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 0 : l’encadré « Science → examen » affirmait que l’imagerie et l’ECG « doivent être concordants » ; une discordance reste possible en pratique. La reformulation proposée (édition « autre ») porte seulement sur la forme. À vérifier sur le plan médical si une phrase sur la conduite à tenir en cas de discordance est souhaitée.",
+    "Unité 4 : le bloc ne nomme pas les variants en cause (LDLR, APOB, PCSK9) ; d’autres sections de I21_c.html les citent. Rien n’a été ajouté ici, conformément à la consigne.",
+    "Unité 0 : l’encadré « Science → examen » affirmait que l’imagerie et l’ECG « doivent être concordants » ; une discordance reste possible en pratique. La reformulation (édition « autre ») porte seulement sur la forme. Si l’on souhaite une phrase sur la conduite à tenir en cas de discordance, elle doit être validée sur le plan médical.",
+    "Unité 4 : le bloc ne nomme pas les variants en cause (LDLR, APOB, PCSK9) ; d’autres sections de I21_c.html les citent. Conformément à la consigne, rien n’a été ajouté ici.",
+    "Unité 1 : le bloc attribue l’occlusion « en quelques minutes » à la rupture de chape et ne précise pas la cinétique de l’érosion. La synthèse conserve cette asymétrie ; à compléter médicalement si l’on veut comparer rupture et érosion."
+   ]
+  },
+  {
+   "chemin": "chapters/I25/I25_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "7 critiques, 2 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une lumière ouverte peut cacher une anomalie fonctionnelle",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase du paragraphe. La synthèse donne la conduite pratique à partir des notions du bloc ; « il faut » remplace « le clinicien » pour éviter un sujet répété dans tout le cours."
+      },
+      {
+       "cible": "autre",
+       "motif": "Le pronom « Elle » renvoyait de façon ambiguë à la coronarographie ; « Ce résultat » désigne l’absence d’obstacle majeur."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Charge de plaque et degré de sténose",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : « athérosclérose étendue » ajoutait une nuance absente du bloc et l’ouverture clonait celle de l’unité 0. « préserve » est atténué en « peut conserver » pour rester fidèle au bloc (« peut maintenir un diamètre luminal relativement conservé »)."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Deux mesures pour deux questions",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critiques retenues : « ne corrige que le premier » durcissait le « ne corrige pas nécessairement » du bloc, et la mesure de pression évalue la perte de pression à travers la lésion sans « séparer » à elle seule les deux mécanismes."
+      },
+      {
+       "cible": "autre",
+       "motif": "La phrase omettait les articles et ne nommait pas les deux niveaux de résistance déjà décrits dans le paragraphe."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Tonus vasculaire et réponse au médicament",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue sur le pronom ambigu et sur la précision « soulagement par le nitrate ». La formule « relève d’un autre mécanisme » est conservée car « ne s’explique pas comme » était maladroite."
+      },
+      {
+       "cible": "autre",
+       "motif": "Le mot « dysfonction » restait sans complément ; « endothéliale » reprend le sujet de la phrase précédente."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un risque familial est une probabilité",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "L’ancienne introduction contenait du métadiscours, une phrase agrammaticale et des noms de cases absents de la figure. Le nouveau texte nomme les vraies cases et leur convergence."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critique retenue : « intensité de la prévention » était absent du bloc et « part héritée » restreignait l’histoire familiale. La légende énonce la relation clé de la figure."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe recopiait mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : « un parent » restreignait l’histoire familiale précoce du bloc. La tournure impersonnelle évite la répétition de « le clinicien » relevée dans les manques."
+      },
+      {
+       "cible": "autre",
+       "motif": "« la pression » restait imprécis ; il s’agit de la pression artérielle."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 4 : l’introduction d’origine citait des cases absentes de la figure (« Variants et famille », « Prévention adaptée ») ; les vraies cases sont « Variants et histoire familiale », « Expositions et maladies acquises » et « Prévention selon le risque global ». L’introduction réécrite emploie les noms exacts.",
+    "Unité 1 : « Le remodelage peut maintenir un diamètre luminal relativement conservé » désigne implicitement le remodelage positif (expansif). Le texte reste exact, mais il gagnerait à préciser le sens du remodelage ; non modifié, faute de terme dans le bloc.",
+    "Aucune erreur médicale n’a été repérée dans les cinq unités.",
+    "Unité 1 : « Le remodelage peut maintenir un diamètre luminal relativement conservé » désigne implicitement le remodelage positif (expansif) ; le texte reste exact mais gagnerait à préciser le sens du remodelage. Non modifié, faute de terme dans le bloc.",
+    "Les quatre chaînes « old » des remplacements « autre » ont été vérifiées : chacune apparaît exactement une fois dans chapters/I25/I25_c.html."
+   ]
+  },
+  {
+   "chemin": "chapters/I26/I26_c.html",
+   "fragment": "P-02-Pneumologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "6 critiques, 0 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "figure_hors_bloc",
+     "titre": "Le trajet veineux et pulmonaire",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "L’ancienne annonce décrivait le schéma et contenait une phrase confuse (« ne rend pas obligatoire la détection »). La nouvelle nomme les quatre cases et explique le passage de l’une à l’autre. Proposition acceptée sans critique."
+      },
+      {
+       "cible": "legende",
+       "motif": "Remplace la légende générique clonée par la limite propre à la figure. « La case de départ » est remplacé par le nom de l’étape, pour ne pas appliquer un fait médical au dessin (même logique que la critique retenue sur l’unité 3)."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe métadiscursif (« Le lecteur distingue »). Son contenu figure déjà dans le 2e paragraphe du bloc (échographie négative des jambes et perfusion pulmonaire) ; sa nuance propre passe dans la légende."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "figure_hors_bloc",
+     "titre": "La composition et son devenir",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : l’ouverture « La figure suit… » clonait l’annonce de l’unité 0. Le texte nomme les quatre cases dans l’ordre chronologique, sans gabarit répété."
+      },
+      {
+       "cible": "legende",
+       "motif": "Remplace la légende clonée. Elle donne le sens de lecture chronologique et conserve l’idée de l’ancienne annonce : la persistance n’est pas obligatoire."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Supprime le métadiscours (« Le lecteur considère… ») et garde l’information propre : dyspnée durable, maladie thromboembolique persistante, sans attribution automatique."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "figure_hors_bloc",
+     "titre": "Ventilation présente, perfusion insuffisante",
+     "cibles": [
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : le bloc et la case présentent la dilatation et la baisse du débit gauche comme possibles, non constantes. La chaîne causale des quatre cases est conservée."
+      },
+      {
+       "cible": "legende",
+       "motif": "Remplace la légende clonée par la relation clé de l’ancienne annonce : l’hypotension ne dépend pas seulement de l’oxygénation. Formulation alignée sur « saturation relativement conservée » du bloc."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe répète les cases de la figure, désormais expliquées dans l’annonce, ainsi que le titre de l’îlot (air présent, perfusion insuffisante). Aucune information propre."
+      },
+      {
+       "cible": "autre",
+       "motif": "Supprime la phrase métadiscursive « Vous approfondissez… », qui coupait le raisonnement. Le mot vert porte sur la notion elle-même et annonce toujours la fenêtre « espace mort et retentissement droit ». Sous-chaîne « old » vérifiée dans le fichier source."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "figure_hors_bloc",
+     "titre": "Génération et freinage",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "L’ancienne annonce restait vague. La nouvelle nomme les quatre cases et leur enchaînement ; le rôle des traitements passe dans la légende."
+      },
+      {
+       "cible": "legende",
+       "motif": "Deux critiques retenues : « freine la première case » appliquait l’action au dessin et généralisait en effaçant la réserve « selon sa cible ». La légende nomme les étapes et conserve la réserve du bloc, sans affirmer une cible unique."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critique retenue : la chaîne est déjà exposée dans l’annonce ; une seule phrase garde l’information propre (absence de localisation et de cause). La phrase sur la probabilité clinique et l’algorithme doublait l’encadré « Science → examen »."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "figure_hors_bloc",
+     "titre": "Un frein moins efficace ou davantage de substrat",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "L’ancienne annonce ne nommait pas les cases. La nouvelle décrit la division en deux branches puis leur convergence. Proposition acceptée sans critique."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critique retenue : le bloc dit que les mécanismes se combinent « selon le patient » et parle seulement de rapports de risque issus de populations différentes. La légende ne généralise plus."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe répète l’encadré « Science → traitement » (durée fondée sur le risque global et le risque de saignement) et le paragraphe suivant (« L’événement, les facteurs persistants, la récidive et le risque hémorragique restent déterminants »). Vérifié dans le fichier source."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Histologie (unité 1) : l’énumération « fibrine, globules rouges et cellules » est imprécise, car les globules rouges sont des cellules. La formulation est à préciser (plaquettes, leucocytes ?) après vérification. Elle n’a pas été corrigée, faute de source dans le bloc.",
+    "Génétique (unité 4) : « Un variant de la prothrombine peut augmenter sa disponibilité » est ambigu. Il s’agit d’un variant du gène de la prothrombine qui en élève la concentration plasmatique. La formulation est à préciser par le rédacteur, sans correction ici.",
+    "Hémostase (unité 3) : l’encadré « Science → clinique » traite du facteur déclenchant et de la présence d’un embole, pas de la coagulation ni de la fibrinolyse. Son placement mérite d’être revu, sans erreur médicale.",
+    "Le titre de la figure 4 (« Coagulation et fibrinolyse répondent à deux fonctions ») reste vague. Il est conservé tel quel dans la légende, comme l’exige la consigne.",
+    "Histologie (unité 1) : l’énumération « fibrine, globules rouges et cellules » est imprécise, car les globules rouges sont des cellules. La formulation est à préciser (plaquettes, leucocytes ?) après vérification ; non corrigée faute de source dans le bloc.",
+    "Génétique (unité 4) : « Un variant de la prothrombine peut augmenter sa disponibilité » est ambigu. Il s’agit d’un variant du gène de la prothrombine (G20210A) qui en élève la concentration plasmatique. À préciser par le rédacteur, sans correction ici.",
+    "Hémostase (unité 3) : « Un anticoagulant limite la génération et l’extension du thrombus selon sa cible » laisse ambigu l’objet de « génération » (thrombine ou thrombus). La légende évite de trancher ; à préciser par le rédacteur.",
+    "Hémostase (unité 3) : l’encadré « Science → clinique » de cette partie traite du facteur déclenchant et de la présence d’un embole, pas de la coagulation ni de la fibrinolyse. Son placement mérite d’être revu, sans erreur médicale.",
+    "Le titre de la figure de l’unité 3 (« Coagulation et fibrinolyse répondent à deux fonctions ») reste vague. Il est conservé tel quel dans la légende, comme l’exige la consigne.",
+    "Unité 2 : le libellé du mot vert passe à « espace mort (relier échanges et charge droite) » ; vérifier que la fenêtre i26-espace-mort reste cohérente avec ce libellé."
+   ]
+  },
+  {
+   "chemin": "chapters/I30/I30_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "7 critiques, 2 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le siège de la douleur découle des structures sensibles",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’encadré recopiait la dernière phrase du paragraphe ; la synthèse relie l’argument positionnel au risque de méconnaître une cause coronaire ou vasculaire."
+      },
+      {
+       "cible": "autre",
+       "motif": "Formule vague corrigée ; critique retenue : « confirment ou réfutent » surestimait la portée de l’examen et de l’ECG, « étayent ou contredisent » reste fidèle au bloc."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Pourquoi un frottement peut disparaître",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’encadré recopiait la dernière phrase du paragraphe. Critique retenue : la condition « lorsqu’elle est pertinente » est rétablie et la formule de l’encadré « Science → examen » n’est plus reprise."
+      },
+      {
+       "cible": "autre",
+       "motif": "Construction elliptique incorrecte (« lorsque pertinente ») ; phrase complétée."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La vitesse d’accumulation compte autant que le volume",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’encadré recopiait la dernière phrase du paragraphe. La synthèse énonce la règle vitesse-volume et sa conséquence décisionnelle, sans reprendre une troisième fois la formule « pas la seule quantité »."
+      },
+      {
+       "cible": "autre",
+       "motif": "Renvoi anaphorique flou (« Cette relation ») remplacé par une conclusion explicite. Critique retenue : la formule « et non par son seul volume » répétait la phrase précédente et a été retirée."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Étiologie présumée et preuve microbiologique",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’encadré recopiait la dernière phrase du paragraphe ; la synthèse réunit la distinction présentation/étiologie, le ciblage des examens et la prudence thérapeutique."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase tautologique (une forme idiopathique se définit par l’absence d’agent identifié) ; elle énonce maintenant la définition sans fait nouveau."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Quand une récidive suggère un terrain",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit métadiscursif remplacé par la chaîne des quatre cases. Critique retenue : formulation alignée sur la prudence du bloc (« peut faire discuter », « envisager »)."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par le sens de lecture et la limite propre au schéma."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés « Science → clinique » et « Science → examen » ; supprimé sans perte d’information."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’encadré recopiait la dernière phrase du paragraphe. Critique retenue : l’indication du test génétique n’est plus présentée comme acquise ; l’avis spécialisé en juge l’utilité, comme dans le bloc."
+      },
+      {
+       "cible": "autre",
+       "motif": "Accord fautif (sujet pluriel, verbe singulier) et formule vague. Critique retenue : la formule évite de répéter « renforce cette hypothèse » de l’introduction de figure."
+      },
+      {
+       "cible": "autre",
+       "motif": "Construction incorrecte (« relie le phénotype et… ») ; verbe et préposition corrigés."
+      },
+      {
+       "cible": "autre",
+       "motif": "« Le test » n’avait pas d’antécédent dans le paragraphe ; le type de test est précisé."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 0 (Anatomie du péricarde) : le titre annonce que « le siège de la douleur découle des structures sensibles », mais le bloc ne dit jamais quelles structures sont sensibles (péricarde pariétal innervé, feuillet viscéral peu sensible) ni le siège ou les irradiations typiques. Il n’y a pas d’erreur, mais le contenu ne tient pas la promesse du titre. Je ne l’ai pas complété, car cela introduirait des faits nouveaux.",
+    "Unité 3 (Immunologie et microbiologie) : le bloc ne nomme aucune étiologie concrète (forme virale ou idiopathique, tuberculose, cause bactérienne purulente, maladie systémique, post-lésionnelle) et aucun mécanisme immunologique. Le contenu reste générique pour cette discipline. Je n’ai rien ajouté pour respecter la règle « aucun fait nouveau ».",
+    "Unité 3 : la phrase « Une forme idiopathique peut rester sans agent identifié » est tautologique, puisqu’une forme idiopathique se définit justement par l’absence d’agent identifié. Je l’ai laissée telle quelle ; à reformuler lors d’une révision de fond.",
+    "Unité 4 : le bloc mentionne une « réponse autoinflammatoire » et une « maladie monogénique » sans nommer les gènes ni les syndromes en cause (par exemple fièvre méditerranéenne familiale, TRAPS), ni la place de la résistance à la colchicine. C’est une lacune pédagogique, pas une erreur. Je ne l’ai pas complétée.",
+    "Aucune erreur médicale franche n’a été repérée dans les cinq unités.",
+    "Unité 0 (Anatomie du péricarde) : le titre annonce que « le siège de la douleur découle des structures sensibles », mais le bloc ne dit jamais quelles structures sont sensibles (péricarde pariétal innervé, feuillet viscéral peu sensible) ni le siège ou les irradiations typiques. Le contenu ne tient pas la promesse du titre. Rien n’a été ajouté, faute de pouvoir introduire des faits nouveaux.",
+    "Unité 3 (Immunologie et microbiologie) : le bloc ne nomme aucune étiologie concrète (forme virale ou idiopathique, tuberculose, cause bactérienne purulente, maladie systémique, forme post-lésionnelle) ni aucun mécanisme immunologique. Le contenu reste générique pour cette discipline.",
+    "Unité 3 : la phrase tautologique « Une forme idiopathique peut rester sans agent identifié » est reformulée en définition (édition « autre ») ; une révision de fond pourrait la remplacer par une information étiologique réelle.",
+    "Unité 4 : le bloc évoque une « réponse autoinflammatoire » et une « maladie monogénique » sans nommer les gènes ni les syndromes en cause (par exemple fièvre méditerranéenne familiale, TRAPS), ni la place de la résistance à la colchicine. C’est une lacune pédagogique, pas une erreur.",
+    "Unité 4 : après suppression du paragraphe qui suit la figure, les encadrés « Science → clinique » et « Science → examen » conservent seuls ce contenu ; aucune perte d’information.",
+    "Unités 1, 3 et 4 : les synthèses partagent une tournure négative (« ne prouve pas », « ne désigne pas », « ne dispense ni… ni… ») justifiée par le contenu ; à surveiller pour qu’elle ne devienne pas un gabarit dans les autres cours."
+   ]
+  },
+  {
+   "chemin": "chapters/I33/I33_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "4 critiques, 2 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une nouvelle anomalie de conduction peut orienter une extension",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiait la dernière phrase du paragraphe. Critiques retenues : le signe est un indice d’extension, pas une orientation vers l’abcès, et la nuance « à lui seul » est rétablie."
+      },
+      {
+       "cible": "autre",
+       "motif": "Harmonisation avec la correction de l’unité 2 : la phrase expose la démarche sans gabarit centré sur le médecin, sans fait nouveau."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un biofilm ou une végétation protège un foyer",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiait la dernière phrase du paragraphe ; nouvelle formulation réunissant les deux limites (stérilisation, embolie) et la double surveillance. Aucune critique."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une fuite aiguë ne laisse pas le temps de s’adapter",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiait une phrase de métadiscours ; remplacée par le message clinique du bloc. Aucune critique."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase de gabarit centrée sur le médecin ; reformulée pour exposer directement le problème médical."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le germe et le site modifient la stratégie",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiait la dernière phrase du paragraphe, sans antécédent. Critique retenue : « se cible sur » remplacé par « est ciblé selon »."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une atteinte rénale peut être indirecte",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit cloné agrammatical ; remplacé par la chaîne causale des quatre cases."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique ; remplacée par la limite propre à ce schéma linéaire, qui omet deux causes citées dans le paragraphe."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés « Science → clinique » et « Science → examen » : suppression de la répétition."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiait une phrase vague. Critique retenue : l’analyse « oriente vers le mécanisme probable » au lieu de l’« identifier », conformément au bloc."
+      },
+      {
+       "cible": "autre",
+       "motif": "Formulation vague (« est relié aux éléments ») ; reformulée en consigne d’interprétation, sans fait nouveau."
+      },
+      {
+       "cible": "autre",
+       "motif": "Suppression d’une phrase vague, redondante avec l’encadré « Science → traitement » et avec la nouvelle synthèse « À retenir »."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 4 : le schéma linéaire (Foyer infectieux → Réponse immunitaire → Atteinte à distance → Causes rénales à distinguer) place toute atteinte à distance en aval de la réponse immunitaire, alors que le texte cite l’embolie et l’effet médicamenteux comme causes indépendantes. La légende réécrite signale cette limite. Une figure à trois branches convergentes (immunitaire, embolique, médicamenteuse) serait plus juste ; elle n’a pas été modifiée.",
+    "Unité 4 : la phrase « La distinction influence l’interprétation et les adaptations thérapeutiques. » reste à la fin du premier paragraphe. Elle est vague et chevauche l’encadré « Science → traitement ». Elle n’a pas été modifiée.",
+    "Aucune erreur médicale franche repérée dans les cinq unités. Les blocs restent très généraux : aucun germe, aucun agent néphrotoxique ni aucun trouble de conduction n’y est nommé. Leur précision dépend des onglets Pathologie et Pharmacologie.",
+    "Unité 4 : le schéma linéaire (Foyer infectieux → Réponse immunitaire → Atteinte à distance → Causes rénales à distinguer) place toute atteinte à distance en aval de la réponse immunitaire, alors que le texte cite l’embolie et l’effet médicamenteux comme causes indépendantes. La légende réécrite signale cette limite ; une figure à trois branches convergentes (immunitaire, embolique, médicamenteuse) serait plus juste. Elle n’a pas été modifiée.",
+    "Unité 3 : la nouvelle synthèse ne reprend plus la confrontation du résultat de culture à la clinique et au risque de contamination ; cette notion reste présente dans le paragraphe du bloc."
+   ]
+  },
+  {
+   "chemin": "chapters/I34/I34_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "10 critiques, 4 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un feuillet normal peut participer à une fuite",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait la dernière phrase du paragraphe. La critique est retenue : « lésion primaire » au lieu de « feuillet lésé », car elle peut aussi toucher un cordage, et « oriente » au lieu de « décide », comme dans le bloc."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une rupture aiguë diffère d’un remodelage lent",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait le paragraphe. La critique est retenue : l’aphorisme est supprimé et la prudence du bloc est rétablie avec « peut être moins bien tolérée »."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une fraction d’éjection peut surestimer le débit utile",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait la dernière phrase du paragraphe. La nouvelle synthèse explicite le piège et nomme les paramètres à associer. Aucune critique n’a été formulée sur cette édition."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une lésion immunitaire n’est pas une infection valvulaire active",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "L’ancien gabarit était agrammatical et métadiscursif. Les deux critiques sont retenues : la prudence du bloc est rétablie avec « peut participer », la phrase qui doublait la légende est supprimée et la fin est rendue lisible."
+      },
+      {
+       "cible": "legende",
+       "motif": "L’ancienne légende était générique. La critique est retenue : le bloc dit seulement que la colonisation n’est pas nécessaire, et la nouvelle légende ne l’exclut plus."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Ce paragraphe répétait mot pour mot les encadrés Science → clinique et Science → examen. À l’injection, le <p> doit être supprimé en entier, sans laisser de <p></p> vide."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait le paragraphe. La critique est retenue : « une cicatrice, pas une endocardite » était faux, car une valve rhumatismale peut s’infecter, et « protègent la valve » ne figurait pas dans le bloc."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une association génétique doit expliquer le phénotype",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "L’ancien gabarit était agrammatical et métadiscursif. La critique est retenue : la prudence du bloc est rétablie avec « peut modifier » et « parfois »."
+      },
+      {
+       "cible": "legende",
+       "motif": "L’ancienne légende était générique. La critique est retenue : la nouvelle formulation n’imite plus la structure « X découle de Y, et non de Z » de l’unité 3."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Ce paragraphe répétait mot pour mot les encadrés Science → clinique et Science → examen. À l’injection, le <p> doit être supprimé en entier, sans laisser de <p></p> vide."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Les deux critiques sont fusionnées. La phrase presque recopiée du bloc et l’ouverture « Devant un… », qui répétait l’unité 0, sont supprimées. « Analyses génétiques » ne restreint plus la recherche, et la nuance sur le prolapsus isolé est réintégrée."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 4 : la discipline annoncée est « Génétique du prolapsus et pharmacologie de la sérotonine », mais le bloc ne traite pas de la sérotonine (valvulopathies sérotoninergiques médicamenteuses absentes). Le contenu ne correspond pas à l’intitulé.",
+    "Unité 2 : la phrase « La charge imposée au ventricule change également après correction de la fuite » reste vague. Elle n’explique pas la conséquence attendue sur la fraction d’éjection après correction. À préciser par l’auteur, sans ajout de ma part.",
+    "Unité 3 : le bloc ne nomme pas le streptocoque du groupe A ni la porte d’entrée pharyngée ; « infection streptococcique » reste imprécis pour le rhumatisme articulaire aigu. Ce n’est pas une erreur, mais le texte est incomplet.",
+    "Unité 4 : la discipline annoncée est « Génétique du prolapsus et pharmacologie de la sérotonine », mais le bloc ne traite pas la sérotonine, par exemple les valvulopathies sérotoninergiques médicamenteuses. Le contenu ne correspond donc pas à l’intitulé.",
+    "Unité 2 : la phrase « La charge imposée au ventricule change également après correction de la fuite » reste vague. Elle n’explique pas l’effet attendu de la correction sur la fraction d’éjection. L’auteur doit la préciser ; je n’ai rien ajouté.",
+    "Unité 3 : le bloc ne nomme ni le streptocoque du groupe A ni la porte d’entrée pharyngée. « Infection streptococcique » reste donc imprécis pour le rhumatisme articulaire aigu. Ce n’est pas une erreur, mais le texte est incomplet.",
+    "Unité 3 : le bloc distingue à juste titre la séquelle rhumatismale d’une endocardite persistante. Il ne rappelle pas qu’une valve rhumatismale reste exposée à l’endocardite infectieuse. Cette omission pourrait induire une lecture rassurante à tort."
+   ]
+  },
+  {
+   "chemin": "chapters/I35/I35_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "10 critiques, 2 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : L’anneau et la racine participent à la compétence valvulaire",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Le « À retenir » recopiait la dernière phrase du paragraphe ; synthèse pratique reformulée sans fait nouveau (proposition initiale conservée, non critiquée)."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une calcification active réduit la mobilité",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Copie remplacée. Critique retenue : « peut » rétabli pour la réduction de l’ouverture, et inférence « relève de la prévention vasculaire » supprimée au profit de la distinction des preuves, présente dans le bloc."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une vitesse traduit un gradient dans des conditions précises",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Copie remplacée. Critiques convergentes retenues : l’effet du bas débit redevient une possibilité, n’est plus rattaché au seul gradient instantané, et la distinction avec le gradient moyen est rétablie."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le cisaillement peut modifier l’hémostase",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit agrammatical et métadiscursif remplacé par la description de la chaîne des quatre cases (non critiqué)."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critiques retenues : « après exclusion des autres causes » durcissait le bloc (qui demande d’explorer) et faisait doublon avec l’« À retenir ». La limite propre à la figure est le caractère possible de la dernière case ; l’orientation des flèches, non vérifiable, n’est pas décrite."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe répète mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Copie remplacée. Critique retenue : « la perte » des multimères était plus forte que le bloc (« moins disponibles »)."
+      },
+      {
+       "cible": "autre",
+       "motif": "Terme vague « anomalie hémodynamique » remplacé par la lésion nommée dans le bloc (manque signalé) ; la suite de la phrase reste correcte. Chaîne unique une fois le paragraphe dupliqué supprimé, et unique dans le fichier avec le préfixe de l’encadré."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Famille, valve et aorte ne se confondent pas",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit agrammatical et métadiscursif remplacé par la description des cases. La seconde phrase de la proposition (« chacune s’évalue pour elle-même ») est déplacée vers la légende pour éviter la redite."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critiques convergentes retenues : « l’ordre vertical est un ordre d’examen » était une interprétation inventée ; la limite réelle est le mot « possible » de la case aortique."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe répète mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Copie remplacée. Critiques convergentes retenues : le contexte familial est rétabli comme fondement de la surveillance, et « peut être utile » remplace « peut être indiqué »."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 4 (I35_c.html) : la figure « Famille, valve et aorte ne se confondent pas » enchaîne les quatre cases par des flèches linéaires (Terrain familial → Morphologie valvulaire → Expression aortique possible → Surveillance anatomique). Cette disposition suggère que l’atteinte aortique découle de la morphologie valvulaire, ce qui contredit le titre ; une figure en deux branches parallèles (valve et aorte) issues du terrain familial serait plus juste. Non corrigé (SVG non modifié).",
+    "Unité 0 : la phrase « La valve s’insère dans une racine qui organise ses rapports et sa fermeture » reste vague ; elle gagnerait à nommer les composants de la racine déjà décrits ailleurs dans le cours, sans ajout de fait ici.",
+    "Unité 4 (I35_c.html) : la figure « Famille, valve et aorte ne se confondent pas » enchaîne les quatre cases de façon linéaire (Terrain familial → Morphologie valvulaire → Expression aortique possible → Surveillance anatomique). Cette disposition suggère que l’atteinte aortique découle de la morphologie valvulaire, ce qui contredit le titre. Deux branches parallèles (valve et aorte) issues du terrain familial seraient plus justes. Non corrigé : le SVG n’est pas modifié ; la légende réécrite signale cette limite.",
+    "Unité 0 : la phrase « La valve s’insère dans une racine qui organise ses rapports et sa fermeture » reste vague. Elle gagnerait à nommer les composants de la racine décrits ailleurs dans le cours. Aucun fait n’est ajouté ici.",
+    "Unité 3 : le paragraphe d’ouverture parle de « saignement digestif » sans nommer le tableau clinique correspondant ; l’association entre sténose aortique, saignement digestif et moindre disponibilité des multimères du facteur von Willebrand n’est pas explicitée. À vérifier dans l’onglet Pathologie. Non corrigé."
+   ]
+  },
+  {
+   "chemin": "chapters/I40/I40_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "8 critiques, 8 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une lésion focale peut échapper à un prélèvement",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse pratique reformulée : risque de faux négatif et règle d’indication, sans recopier le bloc ni la correction de la phrase vague."
+      },
+      {
+       "cible": "autre",
+       "motif": "Formule vague (« toutes les possibilités ») rendue explicite, signalée dans les manques."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Inflammation, lésion et cause ne sont pas synonymes",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : métadiscours cloné supprimé, ouverture distincte de l’unité 5, « à elle seule » correct."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par le sens de lecture et la limite propre à la figure."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : la morphologie « aide à classer certaines formes », comme dans le bloc ; l’ancien encadré recopiait le paragraphe."
+      },
+      {
+       "cible": "autre",
+       "motif": "Formulation vague corrigée ; critique retenue pour éviter la répétition de « ne désigne pas » avec l’À retenir."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Électricité et pompe peuvent être atteintes séparément",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : « se répètent » était ambigu ; l’ancien encadré recopiait la dernière phrase du paragraphe."
+      },
+      {
+       "cible": "autre",
+       "motif": "Tournure incomplète (« traitement de défaillance »)."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une réponse immunitaire peut entretenir la lésion",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase du paragraphe ; synthèse thérapeutique distincte de la phrase corrigée."
+      },
+      {
+       "cible": "autre",
+       "motif": "Tournure lourde (« universellement indiquée ») allégée, signalée dans les manques."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un résultat moléculaire doit être expliqué",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critiques retenues : la formulation ne durcit plus le bloc (« pas toujours », « modifient l’interprétation »)."
+      }
+     ]
+    },
+    {
+     "index": 5,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une poussée inflammatoire peut révéler une maladie plus large",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : ouverture distincte de l’unité 1, tournure « l’analyse du « Phénotype et famille » » supprimée ; métadiscours cloné supprimé."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critique retenue : exclusivité « n’est soupçonné qu’à partir » supprimée, récidives réintégrées, verbe aligné sur « renforcent » du bloc."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien encadré recopiait la dernière phrase du paragraphe ; synthèse des signaux d’alerte et de l’enjeu pratique."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase vague sans contenu exploitable, rendue explicite."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 1 : la figure place « Inflammation » puis « Lésion cellulaire » en chaîne fléchée, ce qui suggère une causalité successive ; le texte les présente comme deux constats tissulaires associés. Nuance à vérifier par le relecteur médical (non corrigée).",
+    "Unité 3 : le bloc évoque « certaines formes » à mécanismes et traitements spécifiques sans en nommer aucune ; lacune pédagogique, pas une erreur, non complétée faute de fait présent dans le bloc.",
+    "Unité 4 : l’encadré « Science → clinique » (détection et causalité, deux étapes) recoupe le nouvel « À retenir » ; redondance tolérable, à surveiller.",
+    "Unité 3 : l’encadré « Science → examen » (« lorsque cela modifie la conduite ») et la dernière phrase du paragraphe restent proches ; non corrigé."
+   ]
+  },
+  {
+   "chemin": "chapters/I42/I42_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "5 critiques, 0 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La géométrie peut créer une obstruction variable",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : l’obstruction est conditionnelle (« lorsqu’elle existe »), on parle de « limitation à l’effort » comme le bloc, et la restriction « chez certains patients » est rétablie. Aucune phrase du bloc n’est recopiée."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un substrat hétérogène explique plusieurs risques",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critiques retenues : « favoriser » remplace « provoquer », et l’absolu « avant toute baisse » disparaît au profit de la fonction globale préservée, comme dans l’encadré clinique. La synthèse pratique porte sur le substrat arythmogène et l’évaluation du risque."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Prévoir l’effet d’une baisse de remplissage",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Proposition conservée, sans critique : elle donne la valeur d’orientation du souffle et le mode de mesure du gradient, sans fait nouveau ni copie."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : De la protéine contractile au travail cellulaire",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Proposition conservée en substance. « Coût énergétique élevé » est atténué pour rester fidèle au bloc (« pas toujours efficace ou sans coût »). La surveillance sous traitement reprend la fonction et le gradient de l’encadré examen."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Transmission et pénétrance répondent à deux questions",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critiques retenues : la condition du risque d’un sur deux est rétablie, la pénétrance s’applique à la maladie et pas seulement à la forme sévère, et la règle exclusive « seul un variant pathogène » devient la comparaison du bloc."
+      }
+     ]
+    }
+   ],
+   "reserves": []
+  },
+  {
+   "chemin": "chapters/I44/I44_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "5 critiques, 3 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Situer une interruption de conduction",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’encadré recopiait la dernière phrase du paragraphe ; il devient une synthèse décisionnelle (niveau du bloc, tolérance, cause, puis stimulation). Aucune critique ; proposition conservée."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Du tissu normal à la conduction interrompue",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique fondée retenue : l’infinitif était mal rattaché au sujet, et la synthèse omettait le contexte (douleur, fièvre, maladie systémique) qui accélère l’évaluation."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : L’automatisme de secours peut rester insuffisant",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique fondée retenue : la proposition rendait ces trois signes exclusifs et omettait la cause. La version du vérificateur reprenait presque mot pour mot l’encadré « Science → traitement » et prêtait aux signes le fait de « juger » ; elle est reformulée."
+      },
+      {
+       "cible": "autre",
+       "motif": "Manque signalé fondé : la phrase finale, abstraite, ne donne rien de pratique. La première phrase du paragraphe expose déjà le relais par un foyer distal. La phrase est supprimée ; « old » inclut la balise </p> pour rester unique dans le fichier."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Différencier détection et capture",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Les deux critiques sont fondées et fusionnées. L’interrogation n’est plus présentée comme systématique (le tracé « ne suffit pas toujours »). « Stimulateur suspect » devient « semble défaillant ». « Du dispositif » est précisé. L’ouverture « Devant… » n’est plus répétée."
+      },
+      {
+       "cible": "autre",
+       "motif": "Manque signalé fondé : l’anglicisme « spike » est remplacé par « artefact de stimulation ». La formule vague « pose une autre question » est rattachée à la détection, fonction déjà opposée à la capture dans le bloc."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Relier conduction et contexte familial",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique fondée retenue : la formule imagée « à la lumière de » est supprimée, et « plusieurs événements familiaux » est rétabli. La tournure du vérificateur (« ne s’interprète que s’il correspond ») était illogique : elle est reformulée."
+      }
+     ]
+    }
+   ],
+   "reserves": []
+  },
+  {
+   "chemin": "chapters/I46/I46_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "6 critiques, 3 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une compression utile vise une perfusion",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : la proposition initiale calquait la phrase du bloc et réduisait les gestes requis aux seules compressions."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase vague (« les signes et les mesures adaptés ») ; elle nomme désormais ce qui est recherché, sans fait nouveau."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La lésion cérébrale évolue dans le temps",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Supprime le métadiscours et la phrase agrammaticale ; nomme la relation entre les cases."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critiques retenues : la première case est la cause, pas une description de la lésion, et la dernière case ne fixe pas un moment précis."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Remplace la phrase recopiée du paragraphe par une synthèse pratique ; aucune critique opposée."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Défibriller et perfuser remplissent deux fonctions",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue sur le ton trop affirmatif et la perte de « l’une ne remplace pas l’autre ». La mention des causes réversibles réservées au rythme non choquable n’est pas reprise, car elle est médicalement discutable (voir réserves)."
+      },
+      {
+       "cible": "autre",
+       "motif": "Supprime le « donc » mal relié et la formule creuse « pour comprendre chaque étape »."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Pourquoi le retour du débit ne termine pas les soins",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : la proposition initiale calquait l’encadré Science → clinique et le début d’une phrase du paragraphe. « jamais » adouci en « pas »."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un cœur anatomiquement normal peut rester une piste",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : la proposition initiale inversait le sens des flèches entre la cause électrique et l’événement familial."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par la relation clé de la figure, formulée plus directement."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Paragraphe identique aux encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Remplace la phrase recopiée par une synthèse pratique ; aucune critique opposée."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase vague (« rigoureuse ») ; elle dit désormais avec quoi le variant est confronté, d’après l’encadré Science → examen."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 0 : la dernière phrase du paragraphe (« L’évaluation doit rechercher les signes et les mesures adaptés au protocole… ») reste vague ; elle ne nomme ni les signes ni les mesures.",
+    "Unité 2 : « Un rythme non choquable exige une autre lecture du protocole » est imprécis. La recherche des causes réversibles s’applique aussi aux rythmes choquables.",
+    "Le bloc ne cite aucun chiffre ni aucune source (ERC/SRC 2021), par exemple la fréquence ou la profondeur des compressions, ni le délai d’au moins 72 h avant le pronostic neurologique. Je n’ai rien ajouté, conformément à la consigne.",
+    "Unité 2 : « Un rythme non choquable exige une autre lecture du protocole, avec recherche des causes réversibles » laisse croire que la recherche des causes réversibles ne concerne que les rythmes non choquables ; elle s’applique à tous les rythmes. Phrase laissée en l’état, à corriger par le rédacteur.",
+    "Unité 0 : la phrase finale reste générale même après correction ; le bloc ne nomme pas les signes de circulation (pouls, signes de vie, capnographie selon ERC/SRC 2021).",
+    "Le bloc ne cite aucun chiffre ni aucune source (ERC/SRC 2021) : fréquence et profondeur des compressions, délai d’au moins 72 h avant le pronostic neurologique. Rien n’a été ajouté, conformément à la consigne."
+   ]
+  },
+  {
+   "chemin": "chapters/I47/I47_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "9 critiques, 0 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une voie peut être cachée au repos",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Le « À retenir » recopiait la dernière phrase du paragraphe. Les critiques sur l’exclusivité (« lui seul ») et la formule imagée (« en action ») sont retenues : le tracé de crise est présenté comme informatif, non comme seul juge."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase vague : « différente » ne disait pas de quoi. La comparaison avec le repos, déjà posée par la phrase précédente, est explicitée."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le tissu change la propagation",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Le « À retenir » recopiait une phrase du bloc. Les deux critiques sont retenues : le « peut » du bloc est conservé et l’énumération des examens, qui répétait l’encadré « Science → examen », est retirée au profit d’une synthèse sur les conséquences du substrat."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La durée réfractaire protège puis sélectionne des trajets",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Le « À retenir » recopiait la dernière phrase du paragraphe. La critique est retenue : l’effet d’une modification de la conduction ou de la réfractarité reste bidirectionnel, comme dans le bloc, et la condition de la voie lente est rétablie."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un canal ionique explique un effet et un risque",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours et phrase agrammaticale du gabarit ; l’introduction nomme les quatre cases et leur enchaînement."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée. La critique est retenue : la première proposition répétait l’introduction et employait une formule imagée ; la légende donne désormais le sens de lecture et la propagation de l’effet."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe répétait mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Le « À retenir » recopiait la dernière phrase du paragraphe. Les critiques sont retenues : le calendrier « avant de le prescrire » absent du bloc est retiré et le suivi du tracé est rétabli."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un examen structural normal ne répond pas à toute la question",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Le « À retenir » recopiait la dernière phrase du paragraphe. La critique est retenue : la tournure « se lit avec ces indices », trop proche du bloc, est reformulée."
+      }
+     ]
+    }
+   ],
+   "reserves": []
+  },
+  {
+   "chemin": "chapters/I49/I49_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "8 critiques, 3 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La morphologie oriente sans certifier la bénignité",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait la dernière phrase du paragraphe. La proposition est conservée, mais « maladie structurelle » devient « maladie associée », le terme exact du bloc."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : La même extrasystole peut avoir des substrats différents",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "L’ancien texte contenait du métadiscours et une phrase agrammaticale. Les critiques sont retenues : l’article pluriel accolé au libellé de case est supprimé, et le verbe « impose » est remplacé par une recherche du retentissement."
+      },
+      {
+       "cible": "legende",
+       "motif": "La critique est fondée : les quatre cases ne montrent que la voie du tissu altéré. La légende énonce cette limite avec le terme du bloc, « sans anomalie majeure »."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe recopiait mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Les critiques sont retenues : aucune recherche systématique n’est recommandée, la formulation « absence de grande dysfonction globale » est respectée et le message sur le nombre comme mesure incomplète du risque est rétabli. Le texte ne recopie pas l’ancien."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Comprendre une pause sans la nommer trop vite",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : la notion d’activité auriculaire « conduite », absente du bloc, est supprimée. La formule « il faut vérifier » n’est plus reprise. Le texte s’appuie sur l’encadré Science → examen sans le recopier."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le nombre ne décrit pas tout le retentissement",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Critique retenue : la fonction est réintégrée, et la durée et la distribution redeviennent des modulateurs, non des critères de même rang. La précision « à décider » est ajoutée."
+      },
+      {
+       "cible": "autre",
+       "motif": "La tournure « choisir une décision » est impropre. La chaîne apparaît deux fois dans le fichier : il faut appliquer d’abord le remplacement de l’À retenir de l’unité 3, qui laisse une seule occurrence, dans le paragraphe."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Activation sympathique et calcium intracellulaire",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait la dernière phrase du paragraphe. « Déclencher » est remplacé par « module la fréquence », ce qui suit le bloc, et la formule répétée « il faut rechercher » est évitée."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 2 : « Une pause apparente ne prouve pas seule une maladie du nœud sinusal » reste vague ; le bloc ne nomme ni la pause compensatrice complète (extrasystole ventriculaire) ni la pause non compensatrice (extrasystole auriculaire qui réinitialise le sinus), ni l’extrasystole auriculaire bloquée, cause classique de fausse pause sinusale. À compléter par l’auteur si souhaité.",
+    "Unité 3 : le bloc évoque la cardiomyopathie induite par une charge élevée sans donner de seuil ; aucun chiffre n’a été ajouté.",
+    "Unité 2 : « Une pause apparente ne prouve pas seule une maladie du nœud sinusal » reste vague. Le bloc ne nomme ni la pause compensatrice complète (extrasystole ventriculaire), ni la pause non compensatrice (extrasystole auriculaire qui réinitialise le sinus), ni l’extrasystole auriculaire bloquée, cause classique de fausse pause sinusale. L’auteur peut compléter ce point s’il le souhaite.",
+    "Unité 3 : le bloc évoque une altération fonctionnelle induite par une charge élevée sans donner de seuil. Aucun chiffre n’a été ajouté.",
+    "Unité 3 : la chaîne remplacée par l’édition « autre » apparaît deux fois dans le fichier source. Il faut appliquer d’abord l’édition a_retenir de l’unité 3."
+   ]
+  },
+  {
+   "chemin": "chapters/I50/I50_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "10 critiques, 5 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Relier cavité, valve et congestion",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours générique remplacé par la chaîne réelle des cases ; conditionnel du bloc et caractère fonctionnel de la fuite conservés (critique retenue) ; ouverture différenciée des autres unités."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende clonée remplacée par la relation clé ; précision « fonctionnelle » et conditionnel ajoutés (critique retenue)."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Répète mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait la dernière phrase du paragraphe ; gabarit « Le clinicien… » supprimé (critique de répétition retenue)."
+      },
+      {
+       "cible": "autre",
+       "motif": "Une stratégie ne « discute » pas : phrase vague corrigée sans fait nouveau."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une fibrose modifie deux fonctions",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours remplacé par la structure en deux branches convergentes."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende clonée remplacée par la relation et la limite propres à la figure."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Répète mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait la dernière phrase ; pronom « en » ambigu et gabarit « Le clinicien » supprimés (critique retenue)."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Distinguer quantité éjectée et pression de remplissage",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait la dernière phrase ; gabarit « Le clinicien évalue » supprimé et tournure pronominale « se confrontent » corrigée."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une compensation peut devenir délétère",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours remplacé par la chaîne réelle ; dernière case décrite comme l’action des traitements et non leur cible ; construction agrammaticale corrigée ; ouverture différenciée (critiques retenues)."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende clonée remplacée par la relation clé propre à la figure."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Répète mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien À retenir recopiait une phrase et commençait par un pronom sans antécédent ; gabarit « Le clinicien » supprimé (critique retenue)."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase mal construite (le contrôle ne « suit » pas un schéma) et formule creuse « schéma aveugle » corrigées sans fait nouveau."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le résultat familial ne prédit pas toute l’évolution",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours remplacé par la chaîne réelle des cases ; ouverture différenciée des unités 0 et 3 (critique retenue)."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende recentrée sur la relation propre à la figure, sans répéter l’À retenir (critique retenue, formulation « n’agit qu’à travers » adoucie)."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Répète mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Sens corrigé : le variant incertain ne prouve pas la causalité génétique (critique retenue) ; la phrase du bloc « n’est pas forcément indemne », recopiée mot pour mot dans la proposition du vérificateur, est reformulée."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 3 : le bloc parle de « traitements neurohormonaux » et de « classe » sans les nommer ; la synthèse reste donc générique (aucun médicament ajouté).",
+    "Unité 3 : « pression » dans le paragraphe d’origine est interprété comme pression artérielle dans le nouvel À retenir ; à vérifier si l’auteur visait une autre pression.",
+    "Unité 4 : la phrase « Les décisions rythmiques reposent sur l’ensemble du profil clinique » arrive sans transition dans un paragraphe consacré à la génétique familiale ; le paragraphe source pourrait expliciter le lien (risque rythmique de certaines cardiomyopathies héréditaires).",
+    "Unité 3 : le bloc parle de « traitements neurohormonaux » et de « classe » sans les nommer ; la synthèse reste générique (aucun médicament ajouté).",
+    "Unité 0 : la phrase source « Une fuite fonctionnelle peut ensuite augmenter la charge volumique » ne précise pas la valve (mitrale ou tricuspide) ; la figure reste donc générique."
+   ]
+  },
+  {
+   "chemin": "chapters/J18/J18_c.html",
+   "fragment": "P-02-Pneumologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "16 critiques, 3 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "figure_hors_bloc",
+     "titre": "Bronches et régions déclives",
+     "cibles": [
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : « oriente » respecte la nuance du bloc (« influence fortement »), alors que « détermine » la durcissait."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critique retenue : la chaîne aboutit à « Douleur ou collection » et non à la plèvre ; le vocabulaire « cases » et la redite sur le caractère facultatif sont supprimés."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critique retenue : l’obligation de l’original est rétablie (« doit ») et la justification ajoutée (« car elle ne se confond pas ») est retirée."
+      },
+      {
+       "cible": "autre",
+       "motif": "« Données pertinentes » était vague ; « contexte de l’aspiration » renvoie aux indices déjà cités dans le bloc (dysphagie, vigilance, chronologie) sans restreindre la démarche, conformément à la critique."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "figure_hors_bloc",
+     "titre": "Un épithélium spécialisé pour l’échange et la réparation",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Annonce directe de la chaîne à quatre éléments, sans métadiscours ; proposition initiale conservée."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critiques retenues : « Chaque case découle de la précédente » était inexact pour la première flèche, répétait l’annonce et reprenait un gabarit commun à plusieurs légendes."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critiques retenues : « perd sa ventilation » exagérait l’original (« moins ventilée ») ; la redite de la baisse de ventilation, déjà dans l’annonce, est intégrée à la phrase sur la perfusion."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "figure_hors_bloc",
+     "titre": "Du rapport bas au shunt",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Annonce directe nommant les éléments de la figure et leur convergence ; proposition initiale conservée."
+      },
+      {
+       "cible": "legende",
+       "motif": "Sens de lecture propre à la figure conservé ; le mot « cases », commun à plusieurs légendes, est remplacé."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critiques retenues : « perfusion insuffisante » respecte l’original ; la phrase sur l’oxygène est supprimée, car le bloc dit déjà que l’oxygène améliore mieux une unité encore ventilée."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "figure_hors_bloc",
+     "titre": "Le résultat dépend du site et du moment",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Annonce directe des quatre étapes et de leur ordre ; proposition initiale conservée."
+      },
+      {
+       "cible": "legende",
+       "motif": "Le gabarit « Chaque étape pondère la suivante » est remplacé par la structure propre à la figure ; l’exemple de l’échantillon de mauvaise qualité reste dans le paragraphe suivant pour éviter un doublon."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critique retenue : la seconde phrase redisait l’encadré du bloc (« Un résultat positif n’explique pas automatiquement tout le tableau ») et « résultat solide » était vague."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "figure_hors_bloc",
+     "titre": "Reconnaissance et recrutement",
+     "cibles": [
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : « contribue à éliminer » respecte le bloc (« les neutrophiles contribuent à l’élimination ») et la case (« Élimination et lésion possibles »)."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critiques retenues : la proposition initiale répétait l’annonce et présentait l’élimination et la lésion comme acquises ; la nouvelle phrase donne la structure propre à la figure sans métaphore (« menace » écarté)."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critique retenue : « amélioration microbiologique » respecte l’original ; le métadiscours « Le lecteur regarde » est supprimé."
+      },
+      {
+       "cible": "autre",
+       "motif": "« Cette histoire » était imprécis ; la formulation devient professionnelle sans changer le sens."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 0 : le bloc « Bronches et régions déclives » traite de l’aspiration (trajet de la bronche droite, pneumonite chimique), alors que la figure décrit l’extension pleurale. La figure s’accorde mal avec le titre et le texte du bloc ; il faudrait l’adapter à l’aspiration ou la déplacer vers une section pleurale.",
+    "Unité 3 : la phrase « Une hémoculture positive apporte une information différente d’un résultat respiratoire non spécifique » reste vague. Elle ne dit pas en quoi l’information diffère (spécificité plus élevée du germe isolé). Je ne l’ai pas complétée, car ce serait ajouter un fait.",
+    "Unité 2 : l’annonce et la figure décrivent le shunt dans une unité « très diminuée », alors que le bloc réserve le terme au cas d’une ventilation « pratiquement nulle » ; une unité seulement peu ventilée relève d’un rapport ventilation-perfusion bas. La nuance mériterait d’être explicitée dans le texte source, sans que je l’ajoute ici."
+   ]
+  },
+  {
+   "chemin": "chapters/J44/J44_c.html",
+   "fragment": "P-02-Pneumologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "10 critiques, 3 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "figure_hors_bloc",
+     "titre": "Acinus et lobule secondaire",
+     "cibles": [
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours supprimé ; critique retenue : « se situe d’abord » donnait une valeur temporelle à une localisation, et « se traduit par un mécanisme » était imprécis."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende gabarit remplacée par le sens de lecture et par la limite propre à l’imagerie, reprise de l’ancienne annonce."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Métadiscours « Le lecteur… » supprimé ; la démarche clinique utile est conservée."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase vague ; la reformulation dit ce qui relie la lésion à la mécanique."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "figure_hors_bloc",
+     "titre": "La voie aérienne normale et son remodelage",
+     "cibles": [
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit cloné incohérent (« conséquence obligatoire du mucus ») remplacé par les deux branches et leur convergence."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende gabarit remplacée par la convergence des branches ; la mention gauche/droite de la proposition, non vérifiable dans la liste des cases, est retirée, et la légende évite le gabarit repris ensuite en unité 4."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critique retenue : la proposition durcissait le bloc (« supprime », « privées de soutien ») alors qu’il parle d’un soutien diminué."
+      },
+      {
+       "cible": "autre",
+       "motif": "Phrase lourde et imprécise."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "figure_hors_bloc",
+     "titre": "Perte de rétraction et fermeture des voies",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours remplacé par la chaîne des quatre cases, avec la cause du raccourcissement expiratoire déjà donnée par le bloc."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende gabarit ; la phrase précise que débit limité et temps raccourci se combinent, sans laisser croire que l’un cause l’autre (voir réserve sur la flèche du SVG)."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critique retenue : la première phrase de la proposition répétait l’annonce ; seules la perte d’espace pour le volume courant et la hausse du travail sont conservées."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "figure_hors_bloc",
+     "titre": "Protéases et antiprotéases",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Métadiscours « Le schéma relie… » remplacé par la chaîne des quatre cases."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critiques retenues : gabarit « de haut en bas » cloné, alternative « soit… soit » trop exclusive, lien « si bien que » faux, phrase trop longue."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critiques retenues : « persistante » et « additionnent » absents du bloc, référent « ce patient » flou ; la combinaison du bloc est conservée."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "figure_hors_bloc",
+     "titre": "Quantité disponible et comportement de la protéine",
+     "cibles": [
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Critique retenue : la phrase de quarante mots est scindée ; métadiscours et erreur de gabarit supprimés."
+      },
+      {
+       "cible": "legende",
+       "motif": "Critique retenue sur le gabarit « branche gauche / branche droite » ; la légende ne répète pas l’annonce et nomme la case de convergence et la limite propre à la branche hépatique."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Critique retenue : le phénotype, exigé par le bloc, est réintégré ; métadiscours « Le lecteur… » supprimé."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 2 (Physiologie, figure « Distension dynamique pendant l’effort ») : la flèche « Débit expiratoire limité → Temps expiratoire raccourci » suggère une causalité inexacte. Le temps expiratoire se raccourcit parce que la fréquence respiratoire augmente à l’effort ; c’est la combinaison de ce temps court et du débit limité qui élève le volume de fin d’expiration. Un schéma à deux branches convergentes serait plus juste. La nouvelle légende décrit une combinaison, mais le SVG n’a pas été corrigé.",
+    "Unité 3 (Biochimie, figure « Équilibre protéases et protection pulmonaire ») : la chaîne linéaire « Protéases actives → Protection insuffisante » laisse croire que les protéases causent le défaut de protection. Le texte décrit un déséquilibre entre agression et défense, ce qu’une convergence de deux branches représenterait mieux. L’inactivation oxydative de l’alpha-1 antitrypsine pourrait justifier la flèche, mais le texte ne la mentionne pas.",
+    "Unité 0 (Anatomie, figure « Distribution anatomique de l’emphysème ») : la flèche « Distribution à l’imagerie → Mécanisme fonctionnel » met en chaîne causale une description d’imagerie et un mécanisme. Les deux découlent en réalité de la localisation de la destruction.",
+    "Unité 0 (texte du bloc) : la phrase « des structures veineuses et lymphatiques participent aux régions périphériques » est imprécise. Les lymphatiques suivent aussi l’axe bronchovasculaire central du lobule secondaire, en plus des septa et de la plèvre. Ce point n’a pas été corrigé.",
+    "Unité 2 (figure « Distension dynamique pendant l’effort ») : la flèche « Débit expiratoire limité → Temps expiratoire raccourci » suggère une causalité inexacte. Le temps expiratoire se raccourcit parce que la fréquence respiratoire augmente. C’est la combinaison de ce temps court et du débit limité qui élève le volume de fin d’expiration. La nouvelle légende décrit une combinaison, mais le SVG n’est pas corrigé ; un schéma à deux branches convergentes serait plus juste.",
+    "Unité 3 (figure « Équilibre protéases et protection pulmonaire ») : la chaîne linéaire « Protéases actives → Protection insuffisante » laisse croire que les protéases causent le défaut de protection. Le texte décrit un déséquilibre entre agression et défense, qu’une convergence de deux branches représenterait mieux. L’inactivation oxydative de l’alpha-1 antitrypsine pourrait justifier la flèche, mais le bloc ne la mentionne pas.",
+    "Unité 0 (figure « Distribution anatomique de l’emphysème ») : la flèche « Distribution à l’imagerie → Mécanisme fonctionnel » met en chaîne causale une description d’imagerie et un mécanisme. Les deux découlent en réalité de la localisation de la destruction.",
+    "Unité 0 (texte du bloc) : la phrase « des structures veineuses et lymphatiques participent aux régions périphériques » est imprécise. Les lymphatiques suivent aussi l’axe bronchovasculaire central du lobule secondaire, en plus des septa et de la plèvre. Non corrigé.",
+    "Unité 1 (figure) : les cases ne disent pas quelle branche est à gauche ou à droite ; la légende finale évite donc toute orientation spatiale. Vérifier visuellement le SVG si une orientation est souhaitée."
+   ]
+  },
+  {
+   "chemin": "chapters/J45/J45_c.html",
+   "fragment": "P-02-Pneumologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "6 critiques, 0 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Du territoire ventilé au symptôme variable",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien « À retenir » recopiait la dernière phrase du paragraphe ; la synthèse pratique porte maintenant sur la conduite à tenir."
+      },
+      {
+       "cible": "autre",
+       "motif": "Formulation maladroite (« rester considérées ») et sujet vague (« le symptôme ») ; phrase rendue explicite."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un bronchodilatateur ne retire pas tout le mucus",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien « À retenir » recopiait la dernière phrase du paragraphe ; synthèse pratique sans copie."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Distinguer oxygénation et ventilation pendant une crise",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit cloné agrammatical remplacé ; critiques retenues : pas de sur-interprétation de la dernière case, « s’accompagne » au lieu de « impose », ouverture non clonée et sans décompte des cases."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par le sens de lecture (cases empilées verticalement, vérifié dans le SVG) et la relation clé ; phrase nominale « Lecture de haut en bas : » corrigée selon la critique."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe répète mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien « À retenir » recopiait la dernière phrase du paragraphe ; synthèse pratique orientée vers la décision."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un biomarqueur ne décrit pas toute une cascade",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien « À retenir » recopiait la dernière phrase du paragraphe ; synthèse reformulée sans sigle nouveau."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Le soulagement rapide et la prévention ont des temporalités différentes",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "autre",
+       "motif": "« À forte exposition » est vague ; critique retenue : « aux doses élevées » restreignait le sens (dose, durée, répétition des cures), d’où « forte exposition médicamenteuse »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien « À retenir » recopiait la dernière phrase du paragraphe ; synthèse pratique, avec la formulation non restrictive retenue après critique."
+      }
+     ]
+    },
+    {
+     "index": 5,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une héritabilité n’est pas un risque individuel",
+     "cibles": [
+      "a_retenir",
+      "autre",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "autre",
+       "motif": "Tournure lourde et nominale (« n’est pas un remplacement ») ; verbe direct."
+      },
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit cloné agrammatical remplacé ; critique retenue (ouverture non clonée, ellipse « d’où » supprimée) ; « contribuent » reprend le verbe du bloc au lieu de « produisent »."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par la relation clé propre à cette figure."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Le paragraphe répète mot pour mot les encadrés « Science → clinique » et « Science → examen »."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "L’ancien « À retenir » recopiait la dernière phrase du paragraphe ; synthèse pratique sans copie."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 4 : « À forte exposition » a été interprété comme « aux doses élevées » (exposition médicamenteuse, vraisemblablement aux corticostéroïdes inhalés). À valider par le relecteur médical ; si l’auteur visait une autre exposition, rétablir la formulation.",
+    "Unité 2 : « L’oxygène corrige une partie de l’hypoxémie » est exact mais imprécis ; dans un trouble ventilation-perfusion, l’hypoxémie répond en général bien à l’oxygène, contrairement au shunt. Non corrigé, signalé pour une éventuelle précision.",
+    "Unité 5 : « Un profil génétique commun » est ambigu (variants communs ou profil partagé avec la famille ?) ; non corrigé.",
+    "Unité 4 : « À forte exposition » a été explicité en « forte exposition médicamenteuse » (vraisemblablement aux corticostéroïdes : dose, durée, cures répétées). À valider par le relecteur médical ; si l’auteur visait une autre exposition, rétablir la formulation."
+   ]
+  },
+  {
+   "chemin": "chapters/Q21/Q21_c.html",
+   "fragment": "C-01-Cardiologie",
+   "onglet": "Sciences fondamentales (pS)",
+   "etat": "corrige_et_controle",
+   "couverture": "partielle (unités listées)",
+   "arbitrage": "12 critiques, 4 manques",
+   "unites": [
+    {
+     "index": 0,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une communication dépend du développement des cloisons",
+     "cibles": [
+      "a_retenir",
+      "autre"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiée de la dernière phrase du paragraphe. Les critiques sont retenues : la proposition initiale réduisait le nom à la seule localisation, ce que le bloc ne dit pas."
+      },
+      {
+       "cible": "autre",
+       "motif": "Tournure maladroite (« Le même mot de communication ») ; le sens est conservé."
+      }
+     ]
+    },
+    {
+     "index": 1,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Décrire les connexions avant de calculer le shunt",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit cloné avec métadiscours et phrase agrammaticale ; remplacé par la chaîne causale des quatre cases, en réintégrant les résistances mentionnées dans le bloc."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par la relation propre à la figure."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Répète mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiée de la dernière phrase du paragraphe. La critique est retenue : la proposition initiale redisait l’intro_figure ; la nouvelle version reprend le message sur la cavité dilatée, qui oriente sans prouver."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Un rapport de débits ne mesure pas toutes les résistances",
+     "cibles": [
+      "a_retenir"
+     ],
+     "editions": [
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiée de la dernière phrase du paragraphe, avec un « donc » orphelin. Les critiques sont retenues : l’exemple « deux » ne doit pas devenir un seuil, le rapport reste intégré à la décision et les mesures invasives sont rappelées."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une circulation pulmonaire peut se remodeler durablement",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit cloné avec métadiscours. La critique est retenue : la prudence du bloc (« peut ») est rétablie dans la chaîne des quatre cases."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée par la relation propre à la figure, formulée avec la prudence du bloc."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Répète mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiée, avec un pronom sans antécédent (« cette possibilité »). La critique est retenue : la fermeture n’est pas présentée comme décidée et l’équipe experte est rappelée. L’injonction « il faut » est évitée."
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "type": "interpretation_guidee",
+     "titre": "Interprétation guidée : Une anomalie cardiaque peut appartenir à un syndrome",
+     "cibles": [
+      "a_retenir",
+      "intro_figure",
+      "legende",
+      "paragraphe_apres_figure"
+     ],
+     "editions": [
+      {
+       "cible": "intro_figure",
+       "motif": "Gabarit cloné avec métadiscours. La critique est retenue : la prudence du bloc (« peut préciser ») est rétablie."
+      },
+      {
+       "cible": "legende",
+       "motif": "Légende générique remplacée. Les critiques sont retenues : la version initiale changeait « ne remplace pas » en « ne modifie pas » et répétait l’intro et l’À retenir. Le sens de lecture est maintenant explicite."
+      },
+      {
+       "cible": "paragraphe_apres_figure",
+       "motif": "Répète mot pour mot les encadrés Science → clinique et Science → examen."
+      },
+      {
+       "cible": "a_retenir",
+       "motif": "Synthèse recopiée qui commençait par un pronom sans antécédent (« Il »). La critique est retenue : la surveillance reste conditionnelle et la limite du résultat génétique est conservée. L’injonction « il faut » est évitée."
+      }
+     ]
+    }
+   ],
+   "reserves": [
+    "Unité 3 : la phrase « supprimer la communication peut être dangereux dans certaines situations » reste vague. Elle ne précise ni les situations ni le critère de non-opérabilité. Aucune précision n’a été ajoutée, car elle introduirait un fait nouveau. Une précision sourcée reste à apporter.",
+    "Unité 2 : l’exemple « un débit pulmonaire double du débit systémique donne un rapport de deux » ne s’accompagne d’aucun seuil décisionnel sourcé. Le lecteur peut le prendre pour une valeur de référence ; une vérification par l’auteur est recommandée."
+   ]
+  }
+ ],
+ "totaux": {
+  "intro_figure": 43,
+  "legende": 43,
+  "paragraphe_apres_figure": 43,
+  "a_retenir": 88,
+  "autre": 48
+ },
+ "controles": {
+  "test_v7_static": "réussi (20 cours)",
+  "build_front_all_fragments": "réussi",
+  "audit_fragments": "réussi",
+  "audit_sciences": "errors: []",
+  "verify_sciences_cs": "583 contrôles réussis",
+  "verify_s01_browser": "71 contrôles réussis",
+  "check_claude": "C-01 : 23 fichiers conformes ; P-02 : 4 fichiers conformes"
+ }
+}

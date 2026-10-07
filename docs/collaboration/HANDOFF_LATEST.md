@@ -16,6 +16,7 @@ Lire [le protocole](DELIVERY_PROTOCOL.md). Claude dispose des sources et dépose
 | Relecture fibrillation atriale et CS, PR #8 | Intégrée avec contrelecture ; [reçu](receipts/CLAUDE_I48_CS_2026-10-07.json). |
 | Audit global, lot 1, PR #9 | Huit cours, 17 sources ; intégré au commit `7fa06329b3369f54ef0831ae9f6cdf90fce5f605`, 583 contrôles navigateur réussis ; [reçu](receipts/CLAUDE_GLOBAL_LOT1_2026-10-07.json). |
 | Audit global, lot 2 — I48 — Fibrillation et flutter auriculaires | **Livré, en attente d’injection** : copies corrigées de 7 fichiers dans [C-01-Cardiologie](../../livraisons/Livraison%20Claude/C-01-Cardiologie/), [rapport](../../livraisons/Livraison%20Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT2_I48/rapport.md) et [journal](../../livraisons/Livraison%20Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT2_I48/journal.json). Relecture intégrale des 8 fichiers ; `check-claude` conforme ; 583 et 71 contrôles navigateur réussis sur application temporaire. |
+| Audit global, lot 3 — gabarits clonés de l’onglet Sciences (20 cours) | **Livré, en attente d’injection** : 20 fichiers `_c.html` dans [C-01-Cardiologie](../../livraisons/Livraison%20Claude/C-01-Cardiologie/) (16 cours) et [P-02-Pneumologie](../../livraisons/Livraison%20Claude/P-02-Pneumologie/) (I26, J18, J44, J45) ; 103 sites, 265 éditions ; [rapport](../../livraisons/Livraison%20Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT3_SCIENCES/rapport.md) avec 81 réserves médicales. Contrôles et `check-claude` réussis. |
 
 Les originaux du lot 1 sont conservés dans les dossiers Claude des cinq fragments concernés et dans [ses archives](../../livraisons/Livraison%20Claude/Archives/2026-10-07-GLOBAL_LOT1/). Les adaptations médicales et les rectifications de son journal sont consignées dans la [contrelecture](reviews/2026-10-07/GLOBAL_LOT1/INTEGRATION_CODEX.md). La branche Claude conserve ses commits.
 
@@ -70,8 +71,9 @@ La mission demeure une relecture de l’ensemble : quatre onglets, fenêtres, fi
 
 ## Travail restant
 
-- Injecter le lot 2 de Claude (I48 — Fibrillation et flutter auriculaires) avec `apply-claude`, puis reconstruire S01.
-- Poursuivre la relecture intégrale des 30 cours et de CS. Prochain lot proposé par Claude : le gabarit cloné des 93 « Interprétations guidées » (92 « À retenir » recopiés, 31 paragraphes dupliqués, 31 introductions et 40 légendes génériques), cours par cours.
+- Injecter les lots 2 et 3 de Claude avec `apply-claude` (C-01-Cardiologie et P-02-Pneumologie), puis reconstruire S01 et S02.
+- Mission commune de justification systématique : voir `MISSION_JUSTIFICATION_2026-10-07.md` (PR #11) pour la répartition 15/15. Claude commence par I48 comme cours pilote.
+- Poursuivre la relecture intégrale des 30 cours et de CS ; les réserves médicales du lot 3 sont à reprendre cours par cours.
 - Réserves de la PR #8 : la fenêtre des épisodes auriculaires rapides (R08) est corrigée par le lot 2 ; le complément vasculaire de CS (C10) reste ouvert.
 - Constituer l’inventaire CIM-11 par fragment : aucun fragment n’est actuellement certifié complet. Le catalogue local historique contient 1 636 catégories CIM-10-GM 2024.
 - PR #6 : accueil et QCM, travail Codex distinct encore en attente.

@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "kind": "claude_contribution",
+ "author": "Claude",
+ "status": "corrections livrées : lot 3 (gabarits Sciences)",
+ "fragment": {
+  "id": "S02",
+  "label": "P-02-Pneumologie",
+  "specialty": "Pneumologie"
+ },
+ "source_commit": "7fa06329b3369f54ef0831ae9f6cdf90fce5f605",
+ "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+ "chapters": [
+  {
+   "code": "I26",
+   "title": "Embolie pulmonaire aiguë",
+   "covers": [
+    "I26"
+   ],
+   "owner_fragment": "S02"
+  },
+  {
+   "code": "J18",
+   "title": "Pneumonies de l’adulte",
+   "covers": [
+    "J13",
+    "J14",
+    "J15",
+    "J18"
+   ],
+   "owner_fragment": "S02"
+  },
+  {
+   "code": "J44",
+   "title": "Bronchopneumopathie chronique obstructive",
+   "covers": [
+    "J43",
+    "J44"
+   ],
+   "owner_fragment": "S02"
+  },
+  {
+   "code": "J45",
+   "title": "Asthme",
+   "covers": [
+    "J45",
+    "J46"
+   ],
+   "owner_fragment": "S02"
+  }
+ ],
+ "files": [
+  {
+   "target_path": "chapters/I26/I26_c.html",
+   "source_path": "sources/chapters/I26/I26_c.html",
+   "sha256": "e01763ec70eec17cf523e94d7b227ff58861807afbfc32a8a9879dbe233480d4",
+   "proposed_sha256": "3a44f420ec8530d568c5720d861b731eb86dc1bd81994ceb9673c5a7e517cc45"
+  },
+  {
+   "target_path": "chapters/J18/J18_c.html",
+   "source_path": "sources/chapters/J18/J18_c.html",
+   "sha256": "375ebc23dfb663684477c28011c8d43715525429788fdd77e5931f8571e83718",
+   "proposed_sha256": "77f04d20e6131bcdec37cd9c22096aeffcc5460630c3b060c12d03603a6d2de0"
+  },
+  {
+   "target_path": "chapters/J44/J44_c.html",
+   "source_path": "sources/chapters/J44/J44_c.html",
+   "sha256": "0b0d763092a7a709bab975cd32dcf763b4afbde274c86369f7c7ad703bfbf4c0",
+   "proposed_sha256": "5c383c247cef8cd5c9e70df8b9e34838d5b847adae7b61173e11111e9455085a"
+  },
+  {
+   "target_path": "chapters/J45/J45_c.html",
+   "source_path": "sources/chapters/J45/J45_c.html",
+   "sha256": "09dab32d8edff85310ed7f80e8d4ceaab39a71f2f9b9f59da7784e5144830dfa",
+   "proposed_sha256": "95d9db05c47f750770a6db9e86e1606a746a7c2974c02936129235273c615825"
+  }
+ ],
+ "checks": [
+  {
+   "command": "python3 test_v7.py --static <20 cours du lot 3>",
+   "result": "réussi"
+  },
+  {
+   "command": "build_front.py --all-fragments ; tests/audit_fragments.py",
+   "result": "réussi"
+  },
+  {
+   "command": "tests/audit_sciences.py",
+   "result": "errors: []"
+  },
+  {
+   "command": "node tests/verify_sciences_cs.cjs",
+   "result": "583 contrôles réussis"
+  },
+  {
+   "command": "node tests/verify_s01_browser.cjs",
+   "result": "71 contrôles réussis"
+  }
+ ],
+ "limits": [
+  "Contrôles exécutés sur application temporaire aux sources canoniques, ensuite restaurées ; injection à faire par apply-claude.",
+  "La copie de sources ne valide pas la complétude CIM-11."
+ ],
+ "delivery": {
+  "branch": "claude/review-medina-global-20261007",
+  "start_commit": "3636759adb8b74402f98ee8d48c6e8dd49f08a13",
+  "lots": [
+   "GLOBAL_LOT3_SCIENCES"
+  ],
+  "lot3_report": "../C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT3_SCIENCES/rapport.md"
+ }
+}
