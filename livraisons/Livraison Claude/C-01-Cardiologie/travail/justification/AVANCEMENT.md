@@ -10,7 +10,7 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 | I35 — Valvulopathies aortiques | fait | fait (145/146 compléments, 10 fenêtres corrigées) | fait : test statique OK, 26 480 → 34 279 mots | voir journal |
 | I34 — Valvulopathies mitrales, tricuspides et pulmonaires | en cours | | | |
 | I00 — Rhumatisme articulaire aigu | en cours | | | |
-| I40 — Myocardites | en cours | | | |
+| I40 — Myocardites | fait | fait (157 acceptés, 31 corrigés ; 11 fenêtres corrigées) | fait : test statique OK, 24 113 → 33 442 mots | voir journal |
 | I42 — Cardiomyopathies | en cours | | | |
 | I44 — Troubles de la conduction et bradycardies | en cours | | | |
 | I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires | | | | |
