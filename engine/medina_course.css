@@ -29,6 +29,8 @@
 .mc-w:hover{background:color-mix(in srgb,var(--green) 9%,transparent)}
 .mc-ab{color:var(--blue);font-weight:600;border-bottom:1px dashed var(--blue);cursor:help}
 .mc-ab:hover{background:color-mix(in srgb,var(--blue) 9%,transparent)}
+.mc-w .mc-ab{color:inherit;border-bottom:0;cursor:inherit}
+.mc-w .mc-ab:hover{background:transparent}
 tspan.mc-ab{fill:var(--blue);cursor:help;text-decoration:underline dashed}
 .mc-w:focus-visible,.mc-ab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .mc-alert{border-left:4px solid var(--red);background:color-mix(in srgb,var(--red) 7%,var(--surface));padding:10px 14px;border-radius:8px;margin:.6em 0 1em}

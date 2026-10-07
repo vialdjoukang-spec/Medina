@@ -1,0 +1,17 @@
+{
+ "cle": "i48-cg",
+ "titre": "Clairance de la créatinine selon Cockcroft-Gault",
+ "action": "completer",
+ "fichier_cible": "I48_pop3",
+ "contenu_attendu": "Compléter la rubrique « Pourquoi cette formule » (la fenêtre donne l’exemple 29 contre 45 sans le mécanisme). Le DFG estimé par CKD-EPI est ramené à une surface corporelle de 1,73 m² et ignore le poids. Le sujet âgé maigre a peu de masse musculaire, produit peu de créatinine, et sa créatinine paraît normale : le DFG indexé surestime sa filtration réelle. Cockcroft-Gault multiplie par le poids réel et donne une valeur absolue plus basse. Conséquence : une dose d’AOD fixée sur le DFG estimé peut être trop forte et faire saigner. Décision : calculer Cockcroft-Gault avec le poids du jour. Sources : Steffel J et al., guide pratique EHRA 2021 ; informations professionnelles des AOD (compendium.ch).",
+ "ancres": [
+  {
+   "file": "I48_b",
+   "id": "I48_b-98",
+   "old": "chez le sujet de faible poids, la clairance est souvent plus basse que le DFG estimé",
+   "label": "plus basse que le DFG estimé"
+  }
+ ],
+ "fenetre_existante": "<template data-pop=\"i48-cg\" data-title=\"Clairance de la créatinine selon Cockcroft-Gault\">\n<div class=\"lab\">Formule (créatinine en µmol/L)</div><p>Clairance (mL/min) = (140 − âge) × poids (kg) × k / créatinine, avec k ≈ 1,23 chez l’homme et ≈ 1,04 chez la femme. Forme équivalente : (140 − âge) × poids / (0,815 × créatinine), multipliée par 0,85 chez la femme.</p>\n<div class=\"lab\">Exemple</div><p>Femme de 84 ans, 52 kg, créatinine 105 µmol/L : (140 − 84) × 52 × 1,04 / 105 ≈ 29 mL/min. Son DFG estimé par CKD-EPI est d’environ 45 mL/min/1,73 m². La dose d’AOD se décide sur 29 mL/min.</p>\n<div class=\"lab\">Pourquoi cette formule</div><p>Elle a servi à définir les critères d’inclusion et de dose dans les essais des AOD et dans leur information professionnelle. Elle intègre le poids réel, déterminant chez le sujet âgé de faible poids.</p>\n<div class=\"lab\">Limites</div><p>Surestime la fonction chez l’obèse et en cas de créatinine instable (insuffisance rénale aiguë) ; imprécise chez le sujet très dénutri.</p></template>",
+ "fichier_reel": "I48_pop3"
+}

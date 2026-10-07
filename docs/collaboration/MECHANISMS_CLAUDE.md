@@ -38,6 +38,14 @@ Reprendre depuis le `main` publié et lire [la passation](HANDOFF_LATEST.md) ain
 
 Pour chaque section, fournir les affirmations revues, les justifications ajoutées, les sources vérifiées et les points encore ouverts. Ne marquer un cours relu intégralement qu’après cette revue de tous ses contenus. La compilation et le nombre de fenêtres ne certifient pas l’exhaustivité médicale.
 
+## Priorité et profondeur des fenêtres
+
+La production et la revue restent concentrées sur **C-01-Cardiologie** avant P-02-Pneumologie. Les quinze attributions ci-dessus restent inchangées. Les travaux en cours des quatorze autres cours ne sont pas une livraison finalisée ; leur manifeste et leur rapport doivent déclarer ce qui est effectivement prêt.
+
+La fenêtre contextualisée présente d’abord une explication synthétique, puis le mécanisme précis, la conséquence clinique, les limites et les sources. Sa profondeur dépend de la question médicale. Aucun quota de mots ne constitue un objectif. Le texte principal garde les réserves qui changent une décision ; les mécanismes détaillés prennent place dans la fenêtre pertinente, sans répétition inutile.
+
+Pour I48 — Fibrillation et flutter auriculaires, reprendre les prochaines modifications depuis les sources canoniques après l’injection du lot 4. Le reçu et les adaptations Codex documentent les corrections supplémentaires : cohérence après cardioversion, vernakalant, digoxine, interprétation de CHAMPION-AF et référence ESC 2026. Les originaux Claude sont conservés dans le dossier de remise.
+
 ## Navigation et complétude
 
 Toujours nommer une leçon par code CIM + nom complet ; fragments selon `organisation/fragments.json`. Préserver les catégories numérotées des plateformes originales, les chapitres ordonnés et les codes discrets en haut à droite. Un seul J40 — Bronchite couvre J20/J40/J41/J42. Le catalogue historique est CIM-10-GM 2024 ; ne pas déclarer complet en CIM-11 sans inventaire validé de toutes ses catégories et sous-catégories.
