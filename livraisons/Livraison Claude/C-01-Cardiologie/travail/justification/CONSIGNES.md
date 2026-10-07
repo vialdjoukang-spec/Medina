@@ -13,6 +13,7 @@ Le cours pilote I48 montre le niveau attendu : `livraisons/Livraison Claude/C-01
 - HTML autorisé dans une fenêtre : `<div class="lab">…</div><p>…</p>`, `<b>`, `<i>`, `<sub>`, `<sup>`. Un renvoi vers une autre fenêtre du même cours s'écrit `<button class="w" data-k="CLE">mot</button>`, au plus deux par fenêtre, vers une clé existante.
 
 ## Exactitude et sources
+- **Confidentialité : ne jamais transmettre l'adresse e-mail du propriétaire, son nom ni aucune donnée personnelle à un service externe** (Unpaywall, API, formulaires). Un service qui exige une adresse ne s'utilise pas.
 - Tout chiffre, seuil, dose, classe ou niveau de recommandation provient d'une source primaire identifiée et **vérifiée** : recommandations ESC ou suisses en texte intégral, publication originale, PubMed, information professionnelle (compendium.ch si accessible, sinon résumé européen des caractéristiques du produit).
 - Télécharger les recommandations de référence du cours dans `<dossier du cours>/src/`, si elles n'y sont pas déjà (`curl -sSL -o x.pdf URL`, puis `pdftotext -layout x.pdf x.txt`), et y chercher avec Grep. Une autre session y a peut-être déjà déposé le texte.
 - Une affirmation invérifiable est retirée ou formulée sans chiffre. Ne jamais inventer une référence. Un mécanisme débattu est présenté comme tel.

@@ -1,0 +1,69 @@
+{
+ "producteur": "P1",
+ "cours": "I33 — Endocardite infectieuse",
+ "fichiers": [
+  "I33_a",
+  "I33_b",
+  "I33_pop1",
+  "I33_pop2"
+ ],
+ "affirmations_relevees": 92,
+ "complements_texte": 70,
+ "complements_par_fichier": {
+  "I33_a": 25,
+  "I33_b": 35,
+  "I33_pop1": 4,
+  "I33_pop2": 6
+ },
+ "fenetres_creees": [
+  "i33-saureus",
+  "i33-fongique"
+ ],
+ "fenetres_completees": [
+  "i33-atcd-valve",
+  "i33-prothese",
+  "i33-deci",
+  "i33-ic-aigue",
+  "i33-risque-emb",
+  "i33-gallo",
+  "i33-hacek",
+  "i33-coxiella",
+  "i33-roth",
+  "i33-neuro-cat",
+  "i33-chir"
+ ],
+ "ancres_nouvelles": 5,
+ "source_principale": "Delgado et al., 2023 ESC Guidelines for the management of endocarditis, European Heart Journal 2023;44:3948–4042, texte intégral (version advance article, 95 pages) déposé dans src/esc2023.pdf, extrait en src/esc2023.txt et src/esc2023_flux.txt ; téléchargé depuis le dépôt institutionnel de l’université de Milan-Bicocca (boa.unimib.it), le site de l’éditeur refusant l’accès",
+ "erreurs_du_cours": [
+  "I33_pop1, i33-prothese : « rifampicine et gentamicine pendant 2 semaines » pour l’EI staphylococcique sur prothèse ; l’ESC 2023 donne la rifampicine au moins 6 semaines, la gentamicine 2 semaines (corrigé, I33_pop1-2).",
+  "I33_a, tableau des germes : « tolérance naturelle aux céphalosporines » d’E. faecalis ; il s’agit d’une résistance naturelle, la tolérance concerne l’amoxicilline (corrigé, I33_a-12).",
+  "I33_a, piège : « toute bactériémie à S. aureus justifie au minimum une ETT (ESC 2023) » ; l’ESC 2023 dit « à envisager », classe IIa B (corrigé, I33_a-15). La même formulation figure dans la fenêtre i33-ett (I33_pop3, fichier de P2), non corrigée ici.",
+  "I33_a, carte EI après TAVI : prophylaxie « par amoxicilline-acide clavulanique ou ampicilline recommandée par l’ESC 2023 » ; le texte principal propose une prophylaxie couvrant la flore cutanée, dont entérocoques et S. aureus (classe IIa), sans nommer de molécule (corrigé, I33_a-19).",
+  "I33_b, 9.4 : complications neurologiques « 15 à 30 % » (chiffre ESC 2015) ; l’ESC 2023 donne jusqu’à 35 % symptomatiques et jusqu’à 80 % silencieuses (corrigé, I33_b-9).",
+  "I33_b, 10.5 : les antithrombotiques « augmentent les hémorragies cérébrales » ; l’essai de Chan et al. montre une tendance non significative à plus de saignements (corrigé, I33_b-22).",
+  "I33_pop1, i33-cmi : seuils 0,125 et 2 mg/L présentés comme « utilisés par l’ESC » ; ce sont ceux de l’ESC 2015, l’ESC 2023 adopte les catégories du comité européen de l’antibiogramme 2022 (corrigé, I33_pop1-1).",
+  "I33_pop2, i33-readapt : calendrier 1, 3, 6 et 12 mois attribué à l’ESC 2023, qui ne le fixe pas (corrigé, I33_pop2-5).",
+  "I33_pop2, i33-s-fievre : fièvre « dans environ 90 % des cas » ; 77,7 % dans le registre européen cité par l’ESC 2023 (corrigé dans la fenêtre, I33_pop2-1 ; le libellé du bouton de I33_a « Fièvre (présente dans environ 90 % des cas) » reste à corriger, car un bouton ne peut pas être modifié par cette passe).",
+  "I33_pop2, i33-opat : phase critique « deux premières semaines » ; l’ESC 2023 retient au moins 10 jours de traitement intraveineux et 7 jours après chirurgie (corrigé, I33_pop2-6).",
+  "I33_pop2, i33-v-sepsis : pression différentielle élargie attribuée à toute fuite aortique ; elle caractérise la fuite chronique, la fuite aiguë l’élargit peu (corrigé, I33_pop2-3).",
+  "I33_b, 10.4 : choix de prothèse « selon les mêmes règles que hors endocardite » ; l’ESC 2023 ajoute des critères propres à l’EI (AVC récent, hémorragie intracrânienne, suites compliquées) (corrigé, I33_b-21).",
+  "I33_b, 10.4 : réparation mitrale « préférée » ; l’ESC 2023 précise que sa supériorité n’est pas démontrée (nuancé, I33_b-20).",
+  "I33_pop1, i33-udiv : végétation « < 20 mm » ; l’ESC 2023 écrit ≤ 20 mm (corrigé, I33_pop1-4)."
+ ],
+ "reserves": [
+  "Fenêtre i33-ett (I33_pop3, P2) : « indiquée dans toute bactériémie à S. aureus (ESC 2023) » à aligner sur la classe IIa.",
+  "Libellé du bouton i33-s-fievre dans I33_a (« environ 90 % ») à aligner sur 77,7 %.",
+  "I33_b, carte Cœur : « une embolie coronaire se traite par aspiration ou par l’abstention, rarement par un stent » ; aucune source trouvée dans l’ESC 2023, affirmation laissée sans justification.",
+  "I33_b, 10.4 : « environ un patient sur deux est opéré » non retrouvé dans le texte principal de l’ESC 2023.",
+  "I33_a, 3.3 : densité bactérienne « 10⁹ à 10¹⁰ par gramme » non vérifiée dans une source primaire.",
+  "Cohorte suisse (Buergler et al., Clinical Infectious Diseases 2025) : introuvable par PubMed sous ce nom ; les chiffres du tableau 2.1 et du 11.2 ne sont pas vérifiés.",
+  "I33_b, 10.7 : biologie « deux fois par semaine » relève de la pratique locale ; l’ESC 2023 demande un contrôle hebdomadaire de la fonction rénale et de la gentamicine.",
+  "I33_b, carte EI fongique : antifongique « au moins 6 semaines après la chirurgie » absent du texte principal de l’ESC 2023.",
+  "I33_pop2, i33-grossesse : mécanismes de fœtotoxicité (aminosides, tétracyclines, rifampicine) non ajoutés faute de source primaire vérifiée.",
+  "I33_b, carte Rein : mécanisme des calcifications de l’anneau mitral chez l’hémodialysé non ajouté faute de source vérifiée ; myxome (sécrétion d’interleukine 6) et hippocratisme digital non justifiés pour la même raison.",
+  "La pathogenèse de l’EI sur prothèse (jonction anneau de suture – tissu natif) vient de la littérature de synthèse ; le supplément de l’ESC 2023 (section S6.1) n’a pas été consulté.",
+  "La prophylaxie de l’amygdalectomie et les données suisses (Sendi et al. 2021, point de vue 2025) n’ont pas été recontrôlées dans cette passe.",
+  "Les fenêtres complétées i33-hacek (567 caractères) et i33-roth (515 caractères) restent sous le repère de 600 caractères : le contenu vérifiable ne justifiait pas davantage.",
+  "Les numéros de section cités renvoient à la version advance article de l’ESC 2023 (pagination 1–95), identique pour la numérotation des sections."
+ ]
+}
