@@ -35,3 +35,8 @@ for k,t in [('C1','Premier composant de la voie classique (C1q, C1r, C1s).'),('C
     a(k,[('C','Complément'),(k[1:],'composant '+k[1:])],'Composant '+k+' du complément','<p>'+t+'</p>')
 for k,t in [('Wiskott-Aldrich','Alfred Wiskott et Robert Aldrich'),('Howell-Jolly','William Howell et Justin Jolly'),('Chédiak-Higashi','Moisés Chédiak et Ototaka Higashi')]:
     a(k,[(k,'nom propre : '+t)],k,'<p>Éponyme ('+t+').</p>')
+
+# Désignations rencontrées dans les fenêtres de justification.
+a('anti-CD20',[('anti','Anticorps dirigé contre'),('CD','Cluster of Differentiation (classe de différenciation)'),('20','20')],'Anticorps dirigés contre l’antigène de différenciation CD20','<p>Le rituximab reconnaît cette protéine de surface de nombreux lymphocytes B. La déplétion B peut réduire la réponse à de nouveaux antigènes et entraîner une hypogammaglobulinémie ; les plasmocytes matures ne sont pas tous directement ciblés.</p>')
+for k,t in [('C6','S’associe au fragment C5b au début de l’assemblage terminal.'),('C7','Participe à l’insertion du complexe terminal dans la membrane cible.'),('C8','Participe à la formation du pore terminal.')]:
+    a(k,[('C','Complément'),(k[1:],'composant '+k[1:])],'Composant '+k+' du complément','<p>'+t+'</p>')

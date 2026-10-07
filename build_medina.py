@@ -3,6 +3,8 @@
 import re, json, sys, glob, html as H
 import os
 ROOT = os.environ.get('MEDINA_ROOT', os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT + '/tools')
+from insert_justifications import load_course_justifications
 sys.path.insert(0, ROOT + '/glossary')
 import importlib
 G = {}
@@ -47,11 +49,13 @@ def wrap_text(txt, svg=False):
 
 TOKEN = re.compile(r'(<!--.*?-->|<[^>]+>)', re.S)
 def wrap_html(src):
-    out = []; stack_button = 0; in_svg = 0; skip = 0
+    out = []; stack_button = 0; in_svg = 0; skip = 0; references = 0
     for part in TOKEN.split(src):
         if not part: continue
         if part.startswith('<'):
             low = part.lower()
+            if low.startswith('<ul') and 'data-justification-sources="1"' in low: references += 1
+            elif low.startswith('</ul') and references: references -= 1
             if low.startswith('<button'): stack_button += 1
             elif low.startswith('</button'): stack_button -= 1
             elif low.startswith('<svg'): in_svg += 1
@@ -60,7 +64,7 @@ def wrap_html(src):
             elif low.startswith('</script') or low.startswith('</style'): skip -= 1
             out.append(part)
         else:
-            if skip or stack_button: out.append(part)
+            if skip or stack_button or references: out.append(part)
             else: out.append(wrap_text(part, svg=bool(in_svg)))
     return ''.join(out)
 
@@ -69,6 +73,8 @@ WHITE = re.compile(r'^(I{1,3}[ab]?|IV|V|VI|VII|X|[A-Z]|I\d\d(\.\d+)?|[A-Z]\d{2}(
 def audit(src, name):
     """Retourne les abréviations candidates non couvertes (hors balises, hors mots déjà enveloppés)."""
     s = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', src, flags=re.S)
+    s = re.sub(r'<ul[^>]*data-justification-sources="1"[^>]*>.*?</ul>', ' ', s, flags=re.S)
+    s = re.sub(r'<a[^>]*data-reference-source="1"[^>]*>.*?</a>', ' ', s, flags=re.S)
     s = re.sub(r'<span class="mc-ab"[^>]*>.*?</span>|<tspan class="mc-ab"[^>]*>.*?</tspan>', ' ', s, flags=re.S)
     s = H.unescape(re.sub(r'<[^>]+>', ' ', s))
     miss = {}
@@ -76,7 +82,7 @@ def audit(src, name):
         w = m.group(1).rstrip('.-/')
         for piece in re.split(r'[/]', w):
             p = piece.strip('-.')
-            if not p or WHITE.match(p): continue
+            if not p or WHITE.match(p) or p in G: continue
             up = sum(ch.isupper() for ch in p)
             if up >= 2 or re.search(r'[A-Z][0-9₀-₉]', p) or re.search(r'[a-z][A-Z]', p) or re.search(r'^[A-Z][a-z]?[⁺₂]', p):
                 if p in ('HbA1c',) : pass
@@ -120,13 +126,19 @@ def build(chapters, out):
     v6 = v6.replace(rpat, rpat + "  if(probe.type==='pathology'&&(window.MEDINA_ALIAS||{})[probe.id.toUpperCase()]){location.replace('#/entry/'+probe.id.toUpperCase());return;}\n", 1)
     body = ''; report = {}
     for code, files in chapters:
-        src = ''.join(open(f).read() for f in files)
+        compiled = load_course_justifications(code, ROOT + '/chapters/' + code)
+        if compiled:
+            transformed_files, justification_templates, justification_report = compiled
+            src = ''.join(transformed_files[os.path.basename(f)] for f in files) + justification_templates
+        else:
+            src = ''.join(open(f).read() for f in files)
         src = transform(src)
         src = pareto_ratios(src)
         src = wrap_html(src)
         report[code] = audit(src, code)
         body += src
     css = open(ROOT + '/engine/medina_course.css').read()
+    css += '\n' + open(ROOT + '/engine/justifications.css').read()
     js = open(ROOT + '/engine/medina_course.js').read()
     gl = json.dumps(G, ensure_ascii=False)
     # La politique de sécurité de la coque (style-src 'self' 'unsafe-inline') bloque Google Fonts : la feuille

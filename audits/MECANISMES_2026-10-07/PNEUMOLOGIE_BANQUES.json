@@ -1,0 +1,1574 @@
+{
+  "date": "2026-10-07",
+  "scope": "Enrichissement ciblé de quatre cours pneumologiques : 60 nouvelles fenêtres explicatives, avec mécanisme causal, conséquence clinique, limites et sources primaires.",
+  "status": "Banques restaurées depuis l’historique après remplacement de l’environnement ; nouvelle compilation finale requise.",
+  "certification_exhaustive": false,
+  "restoration_note": "Les 60 identifiants, cibles et sources ont été récupérés de l’historique. Certains passages dont la copie intégrale ne subsistait pas ont été reconstitués au plus près ; une identité octet par octet avec les fichiers disparus n’est pas certifiée. Aucune nouvelle recherche médicale ni nouveau seuil ou dosage introduit lors de la restauration.",
+  "review_method": [
+    "Repérage des titres et extraction des passages des fichiers HTML, y compris les fenêtres existantes, puis relecture ciblée des affirmations dont la causalité était insuffisamment développée ; cette méthode ne constitue pas une relecture exhaustive de chaque phrase préexistante.",
+    "Vérification des sources officielles ou études originales avant rédaction des explications.",
+    "Validation initiale de chaque texte cible dans une ancre existante ; aucune insertion dans un lien ou bouton déjà interactif.",
+    "Sigles physiologiques nouveaux développés dans les fenêtres ; AMP remplacé par le terme complet."
+  ],
+  "original_html_changed": false,
+  "dosages_or_thresholds_changed": false,
+  "courses": [
+    {
+      "course": {
+        "code": "J45",
+        "title": "Asthme"
+      },
+      "bank_file": "/workspace/scratch/6eaecafb4b19/medina/chapters/J45/J45_justifications.json",
+      "entries_count": 15,
+      "distribution_by_file": {
+        "J45_d.html": 4,
+        "J45_a.html": 3,
+        "J45_c.html": 8
+      },
+      "distribution_by_panel": {
+        "Pharmacologie": 4,
+        "Pathologie": 3,
+        "Explorations": 5,
+        "Sciences fondamentales": 3
+      },
+      "entries": [
+        {
+          "id": "j45-j-kaliemie",
+          "title": "Pourquoi surveiller le potassium sous salbutamol ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-4",
+              "text": "hypokaliémie",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — salbutamol et transport musculaire du potassium",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/55532/"
+            },
+            {
+              "title": "Étude comparative — hypokaliémie après bêta-2 agonistes nébulisés",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/2567672/"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-nuit",
+          "title": "Pourquoi les symptômes peuvent-ils s’aggraver la nuit ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J45_a.html",
+              "anchor": "j45-1",
+              "text": "un réveil nocturne dû à l’asthme ?"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude expérimentale — rythme circadien et asthme nocturne",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34493686/"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-variabilite",
+          "title": "Pourquoi une obstruction variable soutient-elle le diagnostic ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J45_a.html",
+              "anchor": "j45-1",
+              "text": "limitation variable du débit expiratoire"
+            }
+          ],
+          "sources": [
+            {
+              "title": "GINA 2026 — guide de diagnostic et de traitement",
+              "url": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-co2",
+          "title": "Pourquoi une PaCO₂ qui remonte peut-elle être inquiétante ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J45_a.html",
+              "anchor": "j45-3",
+              "text": "PaCO₂ normale ou élevée"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude clinique — asthme aigu avec hypercapnie",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3202409/"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-spirometrie",
+          "title": "Pourquoi tester la réponse au bronchodilatateur ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-1",
+              "text": "Spirométrie avec test de réversibilité"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ATS/ERS 2019 — standardisation de la spirométrie",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31613151/"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-cvf",
+          "title": "Pourquoi une CVF basse ne prouve-t-elle pas une restriction ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-2",
+              "text": "ne pas conclure à une restriction sans pléthysmographie"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ERS/ATS 2022 — interprétation des explorations fonctionnelles",
+              "url": "https://publications.ersnet.org/content/erj/60/1/2101499"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-provocation",
+          "title": "Pourquoi un test à la méthacholine ne suffit-il pas à affirmer l’asthme ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-1",
+              "text": "Test de provocation bronchique"
+            }
+          ],
+          "sources": [
+            {
+              "title": "GINA 2025 — stratégie diagnostique et thérapeutique",
+              "url": "https://ginasthma.org/wp-content/uploads/2025/07/GINA-2025-Strategy-Report_25_05_25-WMS-2.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-feno",
+          "title": "Pourquoi la FeNO renseigne-t-elle l’inflammation de type 2 ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-4",
+              "text": "4.2 FeNO"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ATS 2011 — interprétation de la FeNO",
+              "url": "https://www.thoracic.org/statements/resources/allergy-asthma/feno-document.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-ige",
+          "title": "Pourquoi une IgE spécifique positive ne prouve-t-elle pas un asthme allergique ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-e-4",
+              "text": "IgE spécifiques",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "GINA 2026 — guide de diagnostic et de traitement",
+              "url": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-distension",
+          "title": "Pourquoi le piégeage d’air augmente-t-il l’effort inspiratoire ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-sp",
+              "text": "distension dynamique",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — hyperinflation et travail respiratoire dans l’asthme",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/2379573/"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-csi",
+          "title": "Pourquoi le bronchodilatateur ne remplace-t-il pas le corticostéroïde inhalé ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-sb",
+              "text": "transrépression"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ANSM — budésonide/formotérol : mécanismes et sécurité",
+              "url": "https://m.base-donnees-publique.medicaments.gouv.fr/rcp-67916395-1"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-beta2",
+          "title": "Pourquoi le bêta-2 agoniste ouvre-t-il rapidement les bronches ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-1",
+              "text": "Bêta-2 agoniste de courte durée"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Information réglementaire — salbutamol : mécanisme bêta-2",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e6e982b-7dfe-45b8-aa76-754e8d2a8ef6"
+            },
+            {
+              "title": "Étude expérimentale — protéine Gs et relaxation bronchique",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25260754/"
+            },
+            {
+              "title": "Étude expérimentale — protéine kinase A et relaxation du muscle bronchique",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24973219/"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-technique",
+          "title": "Pourquoi le débit inspiratoire influence-t-il la dose reçue ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-2",
+              "text": "Un inhalateur à poudre demande une inspiration rapide et forte"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude expérimentale — dépôt oropharyngé des aérosols-doseurs",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3800143/"
+            },
+            {
+              "title": "Étude expérimentale — chambre d’inhalation et dépôt pulmonaire",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/2588205/"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-rincage",
+          "title": "Pourquoi rincer la bouche après un corticostéroïde inhalé ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J45_d.html",
+              "anchor": "j45-p-4",
+              "text": "rincer la bouche et recracher après chaque prise"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Information réglementaire — budésonide/formotérol",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=52f45e18-463e-4ce3-8ccd-c0260473e6b5&type=display"
+            }
+          ]
+        },
+        {
+          "id": "j45-j-pheno",
+          "title": "Pourquoi les biomarqueurs ne doivent-ils pas être interprétés seuls ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "J45_c.html",
+              "anchor": "j45-si",
+              "text": "Les éosinophiles, les IgE et la FeNO"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ATS 2021 — FeNO et traitement de l’asthme",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34779751/"
+            }
+          ]
+        }
+      ],
+      "compiler_report_before_workspace_replacement": {
+        "popup_count": 15,
+        "link_count": 15
+      },
+      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+    },
+    {
+      "course": {
+        "code": "J44",
+        "title": "Bronchopneumopathie chronique obstructive"
+      },
+      "bank_file": "/workspace/scratch/6eaecafb4b19/medina/chapters/J44/J44_justifications.json",
+      "entries_count": 15,
+      "distribution_by_file": {
+        "J44_a.html": 1,
+        "J44_c.html": 7,
+        "J44_d.html": 4,
+        "J44_b.html": 3
+      },
+      "distribution_by_panel": {
+        "Pathologie": 4,
+        "Sciences fondamentales": 1,
+        "Explorations": 6,
+        "Pharmacologie": 4
+      },
+      "entries": [
+        {
+          "id": "j44-j-obstruction",
+          "title": "Pourquoi mesurer le rapport après bronchodilatateur ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J44_a.html",
+              "anchor": "j44-1",
+              "text": "inférieur à 0,70 après bronchodilatateur",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "GOLD 2026 — stratégie pour la BPCO",
+              "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-emphyseme",
+          "title": "Pourquoi l’emphysème gêne-t-il l’expiration ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-sp",
+              "text": "Le recul élastique"
+            }
+          ],
+          "sources": [
+            {
+              "title": "GOLD 2026 — stratégie pour la BPCO",
+              "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-distension",
+          "title": "Pourquoi la distension réduit-elle la tolérance à l’effort ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-2",
+              "text": "Capacité inspiratoire"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — hyperinflation et dyspnée d’effort",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/8239175/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-anemie",
+          "title": "Pourquoi l’anémie aggrave-t-elle la dyspnée malgré une saturation normale ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-5",
+              "text": "anémie"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude clinique — hémoglobine, dyspnée et capacité d’effort dans la BPCO",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25952923/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-dlco",
+          "title": "Pourquoi la diffusion du monoxyde de carbone peut-elle diminuer ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-2",
+              "text": "Souvent diminuée en présence d’emphysème"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ERS/ATS 2022 — interprétation des explorations fonctionnelles",
+              "url": "https://publications.ersnet.org/content/erj/60/1/2101499"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-alpha1",
+          "title": "Pourquoi rechercher un déficit en alpha-1 antitrypsine ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-5",
+              "text": "Alpha-1 antitrypsine"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ERS 2017 — déficit en alpha-1 antitrypsine",
+              "url": "https://publications.ersnet.org/content/erj/50/5/1700610"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-gaz",
+          "title": "Pourquoi une bonne saturation ne renseigne-t-elle pas la PaCO₂ ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-1",
+              "text": "Oxymétrie ; gazométrie artérielle"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — oxygène et gaz du sang dans la BPCO aiguë",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6778278/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-haldane",
+          "title": "Pourquoi l’excès d’oxygène peut-il augmenter la PaCO₂ ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-3",
+              "text": "Oxygène à haut débit non contrôlé"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — oxygène et gaz du sang dans la BPCO aiguë",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6778278/"
+            },
+            {
+              "title": "Étude physiologique — ventilation et redistribution de perfusion sous oxygène",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10806149/"
+            },
+            {
+              "title": "Étude physiologique — effet Haldane sous oxygène",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6780265/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-vni",
+          "title": "Pourquoi la ventilation non invasive corrige-t-elle une acidose respiratoire ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J44_b.html",
+              "anchor": "j44-8",
+              "text": "La VNI est le mode de ventilation initial"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Essai randomisé — ventilation non invasive dans les exacerbations de BPCO",
+              "url": "https://doi.org/10.1056/NEJM199509283331301"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-purulence",
+          "title": "Pourquoi une expectoration purulente oriente-t-elle sans prouver la cause ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J44_b.html",
+              "anchor": "j44-8",
+              "text": "expectoration devenue purulente"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude bronchoscopique — expectoration purulente et infection bactérienne",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2111274/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-rehabilitation",
+          "title": "Pourquoi entraîner les muscles aide-t-il malgré une obstruction persistante ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J44_b.html",
+              "anchor": "j44-9",
+              "text": "l’entraînement à l’endurance et en force"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — entraînement, métabolisme musculaire et lactate",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/8756820/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-eosinophiles",
+          "title": "Pourquoi les éosinophiles aident-ils à apprécier le bénéfice d’un corticostéroïde ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J44_c.html",
+              "anchor": "j44-e-5",
+              "text": "Éosinophiles sanguins"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Analyse de l’essai IMPACT — éosinophiles et réponse aux corticostéroïdes",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31281061/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-muscarinique",
+          "title": "Pourquoi le tiotropium dilate-t-il les bronches ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-1",
+              "text": "Antimuscarinique de longue durée"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ANSM — tiotropium : mécanisme antimuscarinique",
+              "url": "https://m.base-donnees-publique.medicaments.gouv.fr/rcp-62828920-10"
+            },
+            {
+              "title": "Étude expérimentale — signalisation muscarinique et contraction trachéale",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22760068/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-roflumilast",
+          "title": "Pourquoi le roflumilast ne soulage-t-il pas immédiatement une crise ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-1",
+              "text": "Inhibiteur de la phosphodiestérase 4"
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA — roflumilast : évaluation réglementaire",
+              "url": "https://www.ema.europa.eu/en/documents/assessment-report/daxas-epar-public-assessment-report_en.pdf"
+            },
+            {
+              "title": "Étude expérimentale — roflumilast et médiateurs des macrophages pulmonaires humains",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21913898/"
+            }
+          ]
+        },
+        {
+          "id": "j44-j-prednisone",
+          "title": "Pourquoi privilégier une cure courte lors d’une exacerbation ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J44_d.html",
+              "anchor": "j44-p-2",
+              "text": "Traitement court ; aucun corticostéroïde oral en entretien"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Essai suisse REDUCE — durée de la corticothérapie",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23695200/"
+            }
+          ]
+        }
+      ],
+      "compiler_report_before_workspace_replacement": {
+        "popup_count": 15,
+        "link_count": 15
+      },
+      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+    },
+    {
+      "course": {
+        "code": "J18",
+        "title": "Pneumonies de l’adulte"
+      },
+      "bank_file": "/workspace/scratch/6eaecafb4b19/medina/chapters/J18/J18_justifications.json",
+      "entries_count": 15,
+      "distribution_by_file": {
+        "J18_a.html": 1,
+        "J18_c.html": 7,
+        "J18_b.html": 3,
+        "J18_d.html": 4
+      },
+      "distribution_by_panel": {
+        "Pathologie": 4,
+        "Sciences fondamentales": 2,
+        "Explorations": 5,
+        "Pharmacologie": 4
+      },
+      "entries": [
+        {
+          "id": "j18-j-hypoxemie",
+          "title": "Pourquoi une pneumonie peut-elle diminuer l’oxygénation ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J18_a.html",
+              "anchor": "j18-3",
+              "text": "L'hypoxémie de la pneumonie"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — anomalies des échanges gazeux dans la pneumonie",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/1952203/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-hypoxemie-oxygene",
+          "title": "Pourquoi l’oxygène corrige-t-il parfois imparfaitement un shunt ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-s-physiologie",
+              "text": "Du rapport bas au shunt"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — anomalies des échanges gazeux dans la pneumonie",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/1952203/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-crp",
+          "title": "Pourquoi doser la protéine C réactive sans lui attribuer le diagnostic ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-3",
+              "text": "Protéine C réactive élevée"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude clinique — IL-6, protéine C réactive et pneumonie",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/8588135/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-pct",
+          "title": "Pourquoi une procalcitonine basse ne suffit-elle pas à exclure une infection bactérienne ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J18_b.html",
+              "anchor": "j18-7",
+              "text": "Procalcitonine"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude EPIC — procalcitonine et étiologie de la pneumonie de l’adulte",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28407054/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-sodium",
+          "title": "Pourquoi rechercher une natrémie basse ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-3",
+              "text": "sodium bas"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude prospective — hyponatrémie et sécrétion de vasopressine dans la pneumonie",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30657193/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-potassium",
+          "title": "Pourquoi contrôler les électrolytes avant certains antibiotiques ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-1",
+              "text": "électrolytes"
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA 2025 — évaluation de la sécurité de l’azithromycine",
+              "url": "https://www.ema.europa.eu/en/documents/referral/azithromycin-article-31-referral-assessment-report_en.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-rein",
+          "title": "Pourquoi mesurer la fonction rénale dans le bilan ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-3",
+              "text": "Créatinine augmentée"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Information professionnelle suisse — amoxicilline et fonction rénale",
+              "url": "https://www.swissmedicinfo-pro.ch/showText.aspx?authNr=44911&lang=FR&supportMultipleResults=1&textType=FI"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-uree",
+          "title": "Pourquoi l’urée participe-t-elle à un score de gravité ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J18_b.html",
+              "anchor": "j18-7",
+              "text": "urée supérieure à 7 mmol/L"
+            }
+          ],
+          "sources": [
+            {
+              "title": "NICE NG250, 2025 — diagnostic et prise en charge des pneumonies",
+              "url": "https://www.nice.org.uk/guidance/ng250/chapter/Recommendations"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-bronchogramme",
+          "title": "Pourquoi voit-on des bronches aérées dans une consolidation ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-e-2",
+              "text": "bronchogramme aérien"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ATS/IDSA 2019 — diagnostic et traitement de la pneumonie communautaire",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-microbiologie",
+          "title": "Pourquoi un prélèvement respiratoire positif peut-il refléter une colonisation ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "J18_c.html",
+              "anchor": "j18-s-microbiologie",
+              "text": "Le résultat dépend du site et du moment"
+            }
+          ],
+          "sources": [
+            {
+              "title": "ATS/IDSA 2019 — diagnostic et traitement de la pneumonie communautaire",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-crp-evolution",
+          "title": "Pourquoi une réévaluation clinique accompagne-t-elle le suivi du marqueur ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "J18_b.html",
+              "anchor": "j18-8",
+              "text": "réponse retardée",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude clinique — évolution de la protéine C réactive sous traitement",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/7587431/"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-amoxicilline",
+          "title": "Pourquoi une aminopénicilline ne couvre-t-elle pas tous les agents ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-1",
+              "text": "Aminopénicilline",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA — amoxicilline/acide clavulanique : mécanisme et élimination",
+              "url": "https://www.ema.europa.eu/en/documents/referral/augmentin-article-30-annex-iii_en.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-clavulanate",
+          "title": "Pourquoi ajouter un inhibiteur de bêta-lactamase ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-1",
+              "text": "inhibiteur de bêta-lactamase"
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA — amoxicilline/acide clavulanique : mécanisme et élimination",
+              "url": "https://www.ema.europa.eu/en/documents/referral/augmentin-article-30-annex-iii_en.pdf"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-macrolide",
+          "title": "Pourquoi un macrolide apporte-t-il une couverture différente ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-1",
+              "text": "Macrolide",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "Information réglementaire — azithromycine : mécanisme et risque de QT",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac549022-4d7f-4c9f-9244-1a2df9a27276"
+            }
+          ]
+        },
+        {
+          "id": "j18-j-qt",
+          "title": "Pourquoi vérifier le risque de QT avant un macrolide ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "J18_d.html",
+              "anchor": "j18-p-3",
+              "text": "intervalle QT",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "Information réglementaire — azithromycine : mécanisme et risque de QT",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac549022-4d7f-4c9f-9244-1a2df9a27276"
+            },
+            {
+              "title": "EMA 2025 — évaluation de la sécurité de l’azithromycine",
+              "url": "https://www.ema.europa.eu/en/documents/referral/azithromycin-article-31-referral-assessment-report_en.pdf"
+            }
+          ]
+        }
+      ],
+      "compiler_report_before_workspace_replacement": {
+        "popup_count": 15,
+        "link_count": 15
+      },
+      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+    },
+    {
+      "course": {
+        "code": "I26",
+        "title": "Embolie pulmonaire aiguë"
+      },
+      "bank_file": "/workspace/scratch/6eaecafb4b19/medina/chapters/I26/I26_justifications.json",
+      "entries_count": 15,
+      "distribution_by_file": {
+        "I26_a.html": 2,
+        "I26_b.html": 1,
+        "I26_c.html": 7,
+        "I26_d.html": 5
+      },
+      "distribution_by_panel": {
+        "Pathologie": 3,
+        "Sciences fondamentales": 2,
+        "Explorations": 5,
+        "Pharmacologie": 5
+      },
+      "entries": [
+        {
+          "id": "i26-j-douleur",
+          "title": "Pourquoi une embolie peut-elle donner une douleur pleurétique ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "I26_a.html",
+              "anchor": "i26-5",
+              "text": "douleur pleurale",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude clinique et tomodensitométrique — infarctus pulmonaire",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16538148/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-postcharge",
+          "title": "Pourquoi l’embolie peut-elle provoquer un choc obstructif ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "I26_a.html",
+              "anchor": "i26-3",
+              "text": "postcharge",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "ESC/ERS 2019 — diagnostic et traitement de l’embolie pulmonaire",
+              "url": "https://doi.org/10.1183/13993003.01647-2019"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-probabilite",
+          "title": "Pourquoi interpréter un test à partir de la probabilité clinique ?",
+          "panel": "Pathologie",
+          "match": [
+            {
+              "file": "I26_b.html",
+              "anchor": "i26-7",
+              "text": "une probabilité élevée"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude PEGeD — D-dimères et probabilité clinique",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31774957/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-hypoxemie",
+          "title": "Pourquoi l’hypoxémie ne vient-elle pas simplement des alvéoles non perfusées ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-s-p",
+              "text": "L’hypoxémie dépend"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — hypoxémie dans l’embolie pulmonaire aiguë",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4064770/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-espace-mort",
+          "title": "Pourquoi l’obstruction vasculaire augmente-t-elle l’espace mort ?",
+          "panel": "Sciences fondamentales",
+          "match": [
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-s-p",
+              "text": "espace mort",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude physiologique — espace mort et obstruction vasculaire pulmonaire",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10905639/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-ddimeres",
+          "title": "Pourquoi les D-dimères servent-ils surtout à exclure dans un contexte défini ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "D-dimères :"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude ADJUST-PE — seuil des D-dimères adapté à l’âge",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24643601/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-troponine",
+          "title": "Pourquoi mesurer la troponine après confirmation d’une embolie ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "Troponine"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude clinique — troponine et dysfonction droite dans l’embolie pulmonaire",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11079669/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-bnp",
+          "title": "Pourquoi le peptide natriurétique renseigne-t-il le retentissement droit ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "le peptide natriurétique"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Étude clinique — BNP et dysfonction ventriculaire droite",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11816706/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-hemoglobine",
+          "title": "Pourquoi disposer d’une hémoglobine de référence avant anticoagulation ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "hémoglobine de référence"
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA — apixaban : mécanisme et sécurité",
+              "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/eliquis"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-rein",
+          "title": "Pourquoi connaître la fonction rénale avant de choisir l’anticoagulant ?",
+          "panel": "Explorations",
+          "match": [
+            {
+              "file": "I26_c.html",
+              "anchor": "i26-e-2",
+              "text": "créatinine et estimation de la clairance"
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA — apixaban : mécanisme et sécurité",
+              "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/eliquis"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-antixa",
+          "title": "Pourquoi un anticoagulant ne dissout-il pas immédiatement le thrombus ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-1",
+              "text": "inhibent directement le facteur Xa"
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA — rivaroxaban : information professionnelle",
+              "url": "https://www.ema.europa.eu/en/documents/product-information/xarelto-epar-product-information_en.pdf"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-repas",
+          "title": "Pourquoi prendre certaines doses de rivaroxaban avec un repas ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-2",
+              "text": "avec nourriture",
+              "occurrence": 1
+            }
+          ],
+          "sources": [
+            {
+              "title": "EMA — rivaroxaban : information professionnelle",
+              "url": "https://www.ema.europa.eu/en/documents/product-information/xarelto-epar-product-information_en.pdf"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-heparine",
+          "title": "Pourquoi l’héparine agit-elle par l’antithrombine ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-1",
+              "text": "héparines de bas poids moléculaire"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Information réglementaire — héparine et antithrombine",
+              "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7014808d-cec9-4b2c-8eb5-940493e356ab"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-thrombolyse",
+          "title": "Pourquoi réserver la fibrinolyse aux situations où son bénéfice dépasse son risque ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-1",
+              "text": "Fibrinolytiques :"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Information réglementaire — altéplase : activation du plasminogène",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2&type=display"
+            },
+            {
+              "title": "Essai PEITHO — bénéfice et risque de la fibrinolyse",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24716681/"
+            }
+          ]
+        },
+        {
+          "id": "i26-j-plaquettes",
+          "title": "Pourquoi une chute des plaquettes sous héparine peut-elle signaler un risque thrombotique ?",
+          "panel": "Pharmacologie",
+          "match": [
+            {
+              "file": "I26_d.html",
+              "anchor": "i26-p-4",
+              "text": "plaquettes sous héparine"
+            }
+          ],
+          "sources": [
+            {
+              "title": "American Society of Hematology — thrombopénie induite par l’héparine",
+              "url": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines/heparin-induced-thrombocytopenia"
+            }
+          ]
+        }
+      ],
+      "compiler_report_before_workspace_replacement": {
+        "popup_count": 15,
+        "link_count": 15
+      },
+      "restoration_validation": "60 textes cibles retrouvés dans leurs ancres HTML et hors liens/boutons par analyseur local ; compilation finale à reprendre avec le compilateur restauré."
+    }
+  ],
+  "source_count": 59,
+  "bibliography": [
+    {
+      "title": "Information réglementaire — salbutamol : mécanisme bêta-2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e6e982b-7dfe-45b8-aa76-754e8d2a8ef6",
+      "conservative_summary_word_count": 121
+    },
+    {
+      "title": "Information réglementaire — azithromycine : mécanisme et risque de QT",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac549022-4d7f-4c9f-9244-1a2df9a27276",
+      "conservative_summary_word_count": 187
+    },
+    {
+      "title": "Information réglementaire — budésonide/formotérol",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=52f45e18-463e-4ce3-8ccd-c0260473e6b5&type=display",
+      "conservative_summary_word_count": 74
+    },
+    {
+      "title": "Information réglementaire — altéplase : activation du plasminogène",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2&type=display",
+      "conservative_summary_word_count": 102
+    },
+    {
+      "title": "Essai randomisé — ventilation non invasive dans les exacerbations de BPCO",
+      "url": "https://doi.org/10.1056/NEJM199509283331301",
+      "conservative_summary_word_count": 99
+    },
+    {
+      "title": "ESC/ERS 2019 — diagnostic et traitement de l’embolie pulmonaire",
+      "url": "https://doi.org/10.1183/13993003.01647-2019",
+      "conservative_summary_word_count": 76
+    },
+    {
+      "title": "GINA 2025 — stratégie diagnostique et thérapeutique",
+      "url": "https://ginasthma.org/wp-content/uploads/2025/07/GINA-2025-Strategy-Report_25_05_25-WMS-2.pdf",
+      "conservative_summary_word_count": 87
+    },
+    {
+      "title": "GINA 2026 — guide de diagnostic et de traitement",
+      "url": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+      "conservative_summary_word_count": 170
+    },
+    {
+      "title": "GOLD 2026 — stratégie pour la BPCO",
+      "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+      "conservative_summary_word_count": 148
+    },
+    {
+      "title": "ANSM — tiotropium : mécanisme antimuscarinique",
+      "url": "https://m.base-donnees-publique.medicaments.gouv.fr/rcp-62828920-10",
+      "conservative_summary_word_count": 109
+    },
+    {
+      "title": "ANSM — budésonide/formotérol : mécanismes et sécurité",
+      "url": "https://m.base-donnees-publique.medicaments.gouv.fr/rcp-67916395-1",
+      "conservative_summary_word_count": 75
+    },
+    {
+      "title": "Étude bronchoscopique — expectoration purulente et infection bactérienne",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2111274/",
+      "conservative_summary_word_count": 79
+    },
+    {
+      "title": "ATS/IDSA 2019 — diagnostic et traitement de la pneumonie communautaire",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/",
+      "conservative_summary_word_count": 173
+    },
+    {
+      "title": "ERS 2017 — déficit en alpha-1 antitrypsine",
+      "url": "https://publications.ersnet.org/content/erj/50/5/1700610",
+      "conservative_summary_word_count": 76
+    },
+    {
+      "title": "ERS/ATS 2022 — interprétation des explorations fonctionnelles",
+      "url": "https://publications.ersnet.org/content/erj/60/1/2101499",
+      "conservative_summary_word_count": 175
+    },
+    {
+      "title": "Étude physiologique — ventilation et redistribution de perfusion sous oxygène",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10806149/",
+      "conservative_summary_word_count": 115
+    },
+    {
+      "title": "Étude physiologique — espace mort et obstruction vasculaire pulmonaire",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10905639/",
+      "conservative_summary_word_count": 83
+    },
+    {
+      "title": "Étude clinique — troponine et dysfonction droite dans l’embolie pulmonaire",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11079669/",
+      "conservative_summary_word_count": 87
+    },
+    {
+      "title": "Étude clinique — BNP et dysfonction ventriculaire droite",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11816706/",
+      "conservative_summary_word_count": 99
+    },
+    {
+      "title": "Étude clinique et tomodensitométrique — infarctus pulmonaire",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16538148/",
+      "conservative_summary_word_count": 72
+    },
+    {
+      "title": "Étude physiologique — anomalies des échanges gazeux dans la pneumonie",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1952203/",
+      "conservative_summary_word_count": 175
+    },
+    {
+      "title": "Étude expérimentale — roflumilast et médiateurs des macrophages pulmonaires humains",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21913898/",
+      "conservative_summary_word_count": 119
+    },
+    {
+      "title": "Étude expérimentale — signalisation muscarinique et contraction trachéale",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22760068/",
+      "conservative_summary_word_count": 109
+    },
+    {
+      "title": "Essai suisse REDUCE — durée de la corticothérapie",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23695200/",
+      "conservative_summary_word_count": 96
+    },
+    {
+      "title": "Étude physiologique — hyperinflation et travail respiratoire dans l’asthme",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2379573/",
+      "conservative_summary_word_count": 77
+    },
+    {
+      "title": "Étude ADJUST-PE — seuil des D-dimères adapté à l’âge",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24643601/",
+      "conservative_summary_word_count": 87
+    },
+    {
+      "title": "Essai PEITHO — bénéfice et risque de la fibrinolyse",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24716681/",
+      "conservative_summary_word_count": 102
+    },
+    {
+      "title": "Étude expérimentale — protéine kinase A et relaxation du muscle bronchique",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24973219/",
+      "conservative_summary_word_count": 121
+    },
+    {
+      "title": "Étude expérimentale — protéine Gs et relaxation bronchique",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25260754/",
+      "conservative_summary_word_count": 121
+    },
+    {
+      "title": "Étude comparative — hypokaliémie après bêta-2 agonistes nébulisés",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2567672/",
+      "conservative_summary_word_count": 100
+    },
+    {
+      "title": "Étude expérimentale — chambre d’inhalation et dépôt pulmonaire",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2588205/",
+      "conservative_summary_word_count": 87
+    },
+    {
+      "title": "Étude clinique — hémoglobine, dyspnée et capacité d’effort dans la BPCO",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25952923/",
+      "conservative_summary_word_count": 90
+    },
+    {
+      "title": "Étude EPIC — procalcitonine et étiologie de la pneumonie de l’adulte",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28407054/",
+      "conservative_summary_word_count": 104
+    },
+    {
+      "title": "Étude prospective — hyponatrémie et sécrétion de vasopressine dans la pneumonie",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30657193/",
+      "conservative_summary_word_count": 88
+    },
+    {
+      "title": "Analyse de l’essai IMPACT — éosinophiles et réponse aux corticostéroïdes",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31281061/",
+      "conservative_summary_word_count": 96
+    },
+    {
+      "title": "ATS/ERS 2019 — standardisation de la spirométrie",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31613151/",
+      "conservative_summary_word_count": 84
+    },
+    {
+      "title": "Étude PEGeD — D-dimères et probabilité clinique",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31774957/",
+      "conservative_summary_word_count": 91
+    },
+    {
+      "title": "Étude clinique — asthme aigu avec hypercapnie",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3202409/",
+      "conservative_summary_word_count": 102
+    },
+    {
+      "title": "Étude expérimentale — rythme circadien et asthme nocturne",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34493686/",
+      "conservative_summary_word_count": 119
+    },
+    {
+      "title": "ATS 2021 — FeNO et traitement de l’asthme",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34779751/",
+      "conservative_summary_word_count": 102
+    },
+    {
+      "title": "Étude expérimentale — dépôt oropharyngé des aérosols-doseurs",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3800143/",
+      "conservative_summary_word_count": 87
+    },
+    {
+      "title": "Étude physiologique — hypoxémie dans l’embolie pulmonaire aiguë",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4064770/",
+      "conservative_summary_word_count": 82
+    },
+    {
+      "title": "Étude physiologique — salbutamol et transport musculaire du potassium",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/55532/",
+      "conservative_summary_word_count": 100
+    },
+    {
+      "title": "Étude physiologique — oxygène et gaz du sang dans la BPCO aiguë",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6778278/",
+      "conservative_summary_word_count": 195
+    },
+    {
+      "title": "Étude physiologique — effet Haldane sous oxygène",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6780265/",
+      "conservative_summary_word_count": 115
+    },
+    {
+      "title": "Étude clinique — évolution de la protéine C réactive sous traitement",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7587431/",
+      "conservative_summary_word_count": 91
+    },
+    {
+      "title": "Étude physiologique — hyperinflation et dyspnée d’effort",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8239175/",
+      "conservative_summary_word_count": 83
+    },
+    {
+      "title": "Étude clinique — IL-6, protéine C réactive et pneumonie",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8588135/",
+      "conservative_summary_word_count": 89
+    },
+    {
+      "title": "Étude physiologique — entraînement, métabolisme musculaire et lactate",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8756820/",
+      "conservative_summary_word_count": 79
+    },
+    {
+      "title": "Information réglementaire — héparine et antithrombine",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7014808d-cec9-4b2c-8eb5-940493e356ab",
+      "conservative_summary_word_count": 77
+    },
+    {
+      "title": "EMA — roflumilast : évaluation réglementaire",
+      "url": "https://www.ema.europa.eu/en/documents/assessment-report/daxas-epar-public-assessment-report_en.pdf",
+      "conservative_summary_word_count": 119
+    },
+    {
+      "title": "EMA — rivaroxaban : information professionnelle",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/xarelto-epar-product-information_en.pdf",
+      "conservative_summary_word_count": 161
+    },
+    {
+      "title": "EMA — amoxicilline/acide clavulanique : mécanisme et élimination",
+      "url": "https://www.ema.europa.eu/en/documents/referral/augmentin-article-30-annex-iii_en.pdf",
+      "conservative_summary_word_count": 161
+    },
+    {
+      "title": "EMA 2025 — évaluation de la sécurité de l’azithromycine",
+      "url": "https://www.ema.europa.eu/en/documents/referral/azithromycin-article-31-referral-assessment-report_en.pdf",
+      "conservative_summary_word_count": 196
+    },
+    {
+      "title": "EMA — apixaban : mécanisme et sécurité",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/eliquis",
+      "conservative_summary_word_count": 175
+    },
+    {
+      "title": "American Society of Hematology — thrombopénie induite par l’héparine",
+      "url": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines/heparin-induced-thrombocytopenia",
+      "conservative_summary_word_count": 110
+    },
+    {
+      "title": "NICE NG250, 2025 — diagnostic et prise en charge des pneumonies",
+      "url": "https://www.nice.org.uk/guidance/ng250/chapter/Recommendations",
+      "conservative_summary_word_count": 105
+    },
+    {
+      "title": "Information professionnelle suisse — amoxicilline et fonction rénale",
+      "url": "https://www.swissmedicinfo-pro.ch/showText.aspx?authNr=44911&lang=FR&supportMultipleResults=1&textType=FI",
+      "conservative_summary_word_count": 91
+    },
+    {
+      "title": "ATS 2011 — interprétation de la FeNO",
+      "url": "https://www.thoracic.org/statements/resources/allergy-asthma/feno-document.pdf",
+      "conservative_summary_word_count": 102
+    }
+  ],
+  "independent_review": "Avant remplacement : contrelecture ciblée des fenêtres bêta-2 et distension de l’asthme par un autre agent, cohérence confirmée ; aucune certification exhaustive de l’ensemble des fenêtres.",
+  "remaining_work": [
+    "Une relecture assertion par assertion de l’ensemble des textes et fenêtres préexistants reste nécessaire : 60 fenêtres ciblées ne certifient pas la justification de toutes les affirmations.",
+    "Les posologies, contre-indications, durées, seuils et chiffres épidémiologiques du cours original n’ont pas fait l’objet d’une validation exhaustive dans ce lot.",
+    "La couverture des catégories CIM-11 est indépendante de cet enrichissement physiopathologique ; ces banques ne certifient pas sa complétude.",
+    "Reprendre compilation et vérification visuelle après restauration de l’environnement."
+  ],
+  "reference_url_check": {
+    "date": "2026-10-07",
+    "all_https": true,
+    "method": "Contrôle réalisé avant remplacement de l’environnement : ouverture de chaque URL par le service web et vérification par résultats de recherche primaires.",
+    "urls_checked": 59,
+    "counts": {
+      "retrieved": 27,
+      "no_content_or_access_check": 18,
+      "retrieval_error": 14
+    },
+    "not_found_errors_observed": 0,
+    "limitation": "La disponibilité immédiate de chaque hébergeur n’est pas certifiée : refus d’accès, taille de PDF, limitation de débit et contrôles automatisés rencontrés. Les résultats détaillés des ouvertures n’ont pas survécu au remplacement de l’environnement."
+  }
+}

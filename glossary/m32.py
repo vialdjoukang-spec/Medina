@@ -23,3 +23,5 @@ for x in [
     a(*x)
 a('ENA',[('E','Extractable'),('N','Nuclear'),('A','Antigens')],'Antigènes nucléaires solubles','<p>Groupe d’antigènes (Sm, RNP, SSA, SSB, Scl-70, Jo-1…) recherchés après des anticorps antinucléaires positifs.</p>')
 a('Euro-Lupus',[('Euro-Lupus','nom d’essai européen (cyclophosphamide à faible dose)')],'Schéma Euro-Lupus','<p>Cyclophosphamide 500 mg toutes les 2 semaines, 6 perfusions ; aussi efficace que les fortes doses avec moins de toxicité.</p>')
+
+a('NUDT15',[('NUDT','Nudix hydrolase'),('15','15')],'Nudix hydrolase 15','<p>Enzyme qui participe à l’inactivation de métabolites thiopuriniques. Des variants réduisant sa fonction augmentent la susceptibilité à une toxicité hématologique ; la surveillance sanguine reste nécessaire.</p>')

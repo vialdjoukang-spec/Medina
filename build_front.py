@@ -146,7 +146,7 @@ polish=open(ROOT+'/shell/polish.js').read()
 if selected and fragment['id']!='S01': polish=polish.replace('function ecgButton(){','function ecgButton(){return;',1)
 tail='<script>window.MDN_DATA='+json.dumps(data,ensure_ascii=False)+';window.MDN_ECG='+ecg+'</script><script>'+polish+'</script>'
 i=s.rindex('</body>');s=s[:i]+tail+s[i:]
-if selected and fragment.get('surface') == 'courses-v1':
+if selected:
     s=finish_surface(s, fragment, ROOT)
 if selected:
     present={c['code'] for c in chap}
