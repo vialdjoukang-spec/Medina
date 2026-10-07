@@ -53,7 +53,7 @@ a('BREATHE-5',[('BREATHE','Bosentan Randomized trial of Endothelin Antagonist TH
 
 # ---- gènes et éponymes
 a('TBX1',[('T','T-'),('BX','BoX (famille des gènes à boîte T)'),('1','membre 1')],'Gène TBX1',
- '<p>Facteur de transcription de la famille T-box, situé dans la région 22q11.2 ; nécessaire au développement des arcs pharyngiens et à la migration de la crête neurale vers les voies d’éjection.</p>','q21-digeorge')
+ '<p>Facteur de transcription de la famille T-box, situé dans la région 22q11.2 ; exprimé dans le mésoderme pharyngé (second champ cardiaque), l’endoderme et l’ectoderme pharyngés ; nécessaire au développement de l’appareil pharyngé et, indirectement, à la migration de la crête neurale vers les voies d’éjection.</p>','q21-digeorge')
 a('ELN',[('ELN','symbole officiel du gène ELastiN (élastine)')],'Gène de l’élastine',
  '<p>Gène de la région 7q11.23, délété dans le syndrome de Williams : artériopathie élastique (sténose aortique supravalvulaire, sténoses pulmonaires).</p>','q21-williams')
 a('DiGeorge',[('DiGeorge','nom propre (Angelo DiGeorge, pédiatre américain), non abréviation')],'Syndrome de DiGeorge (microdélétion 22q11.2)',
