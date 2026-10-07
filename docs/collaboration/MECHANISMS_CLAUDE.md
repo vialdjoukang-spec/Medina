@@ -1,26 +1,21 @@
 # Mission Claude — justifier chaque affirmation
 
-Consigne de Vial du 7 octobre 2026, [transmise dans PR #10](https://github.com/vialdjoukang-spec/Medina/pull/10#issuecomment-6041361558). Autorisation GitHub permanente selon CLAUDE.md et AGENTS.md ; utiliser la connexion effective, sans déposer de secrets. Le dépôt entier et les sources de tous les fragments sont accessibles.
-
-## Tes quinze cours
+## Tes dix cours actifs — C-01-Cardiologie
 
 - I48 — Fibrillation et flutter auriculaires
 - I30 — Péricardites, épanchement péricardique, tamponnade et constriction
 - I33 — Endocardite infectieuse
 - I35 — Valvulopathies aortiques
 - I34 — Valvulopathies mitrales, tricuspides et pulmonaires
-- I00 — Rhumatisme articulaire aigu
 - I40 — Myocardites
 - I42 — Cardiomyopathies
 - I44 — Troubles de la conduction et bradycardies
-- I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires
-- I49 — Extrasystoles et autres arythmies
-- I46 — Arrêt cardiaque
+- I00 — Rhumatisme articulaire aigu
 - Q21 — Cardiopathies congénitales de l’adulte
-- I71 — Anévrismes et dissections artérielles
-- I80 — Thrombose veineuse profonde et thromboses veineuses
 
-Les quinze autres cours existants sont attribués à Codex dans [le suivi](MECHANISMS_PLAN.json). J40 — Bronchite est une production additionnelle. La répartition fixe un responsable ; les corrections de prose antérieures restent recevables même lorsqu’elles portent sur un cours confié à l’autre.
+La [priorité actuelle](FRAGMENT_01_PRIORITE.md) remplace le partage historique 15/15. Codex prend les dix autres cours présents du Fragment 01, notamment I47, I49, I46, I71 et I80 qui lui sont transférés. I00 reste à Claude car sa production est déjà en cours. Après I48, poursuivre les neuf autres cours attribués ici. Les productions prioritaires I83 — Varices des membres inférieurs et I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques sont aussi confiées à Claude ; Codex prend I73 et I95. Le périmètre des autres entrées et la CIM-11 restent à établir. Achever le Fragment 01 avant de passer au Fragment 02.
+
+Les fenêtres répondent directement à la question locale avant de développer mécanisme, conséquence clinique, limites et sources. Aucun objectif de longueur ni multiplication de volume n’est imposé. Le lot I48 est intégré et contrôlé ; son volume n’est pas un gabarit obligatoire pour les autres cours. Conserver les notions utiles, supprimer les répétitions. Comparer les nouveautés ESC 2026 entre parenthèses ou dans une fenêtre dédiée. Anthropic Serif est une préférence à appliquer lorsqu’un fichier de police utilisable est disponible ; elle est absente de cette session.
 
 ## Ce que doit expliquer chaque passage
 
@@ -34,17 +29,9 @@ Choisir le mot ou groupe de mots natif qui ouvre une fenêtre contextualisée. U
 
 Les sources canoniques sont `chapters/<CODE>/`. Une banque `chapters/<CODE>/<CODE>_justifications.json` peut réutiliser le compilateur strict `tools/insert_justifications.py` : version 1 ; course `{code,title}` ; entries avec id `<code-minuscule>-j-<nom>`, title, match `[{file,anchor,text,occurrence?}]`, explanation, mechanism, implication, limits, sources `[{title,url}]`. Les cibles doivent être du texte natif non interactif sous une ancre existante. Une occurrence explicite est obligatoire si le texte est répété ; ne pas choisir silencieusement la première. Tous les champs de prose sont échappés ; les sources HTTPS restent des liens bibliographiques.
 
-Reprendre depuis le `main` publié et lire [la passation](HANDOFF_LATEST.md) ainsi que les reçus avant de retoucher I48. Préserver les originaux et les corrections d’intégration nouvelles. Déposer les sources corrigées sous `livraisons/Livraison Claude/<libellé>/sources/`, rapport et manifeste selon [le protocole](DELIVERY_PROTOCOL.md), puis publier sa branche et sa PR. Une banque nouvelle doit figurer dans le manifeste au même titre que le HTML ; vérifier les empreintes de départ. Les anciens dossiers et rapports sont examinés aussi.
+Reprendre depuis la branche d’intégration `codex/sciences-cs-fragments-20261007` et lire [la passation](HANDOFF_LATEST.md) ainsi que les reçus avant de retoucher I48. Préserver les originaux et les corrections d’intégration nouvelles. Déposer les sources corrigées sous `livraisons/Livraison Claude/<libellé>/sources/`, rapport et manifeste selon [le protocole](DELIVERY_PROTOCOL.md), puis publier sa branche et sa PR. Une banque nouvelle doit figurer dans le manifeste au même titre que le HTML ; vérifier les empreintes de départ. Les anciens dossiers et rapports sont examinés aussi.
 
 Pour chaque section, fournir les affirmations revues, les justifications ajoutées, les sources vérifiées et les points encore ouverts. Ne marquer un cours relu intégralement qu’après cette revue de tous ses contenus. La compilation et le nombre de fenêtres ne certifient pas l’exhaustivité médicale.
-
-## Priorité et profondeur des fenêtres
-
-La production et la revue restent concentrées sur **C-01-Cardiologie** avant P-02-Pneumologie. Les quinze attributions ci-dessus restent inchangées. Les travaux en cours des quatorze autres cours ne sont pas une livraison finalisée ; leur manifeste et leur rapport doivent déclarer ce qui est effectivement prêt.
-
-La fenêtre contextualisée présente d’abord une explication synthétique, puis le mécanisme précis, la conséquence clinique, les limites et les sources. Sa profondeur dépend de la question médicale. Aucun quota de mots ne constitue un objectif. Le texte principal garde les réserves qui changent une décision ; les mécanismes détaillés prennent place dans la fenêtre pertinente, sans répétition inutile.
-
-Pour I48 — Fibrillation et flutter auriculaires, reprendre les prochaines modifications depuis les sources canoniques après l’injection du lot 4. Le reçu et les adaptations Codex documentent les corrections supplémentaires : cohérence après cardioversion, vernakalant, digoxine, interprétation de CHAMPION-AF et référence ESC 2026. Les originaux Claude sont conservés dans le dossier de remise.
 
 ## Navigation et complétude
 

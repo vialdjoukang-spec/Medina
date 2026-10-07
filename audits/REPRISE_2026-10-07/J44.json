@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-07",
+  "agent": "Codex — correction J44 ciblée",
+  "base_commit": "3cbe0f52f799e27e0a2d9a65fd7d8093187af37d",
+  "course": "J44 — Bronchopneumopathie chronique obstructive",
+  "fragment": "P-02-Pneumologie",
+  "exhaustive_review": false,
+  "changed_files": [
+    {
+      "path": "chapters/J44/J44_c.html",
+      "sha256": "a9a4f39a47852d7ea688954ddf0b4ed00e4c09cb4bb0091489c23a60dcfd2da0"
+    },
+    {
+      "path": "chapters/J44/J44_justifications.json",
+      "sha256": "8873df3387b3986f3836ceaf98537dc6449e863836770b0703746901e6bdc457"
+    }
+  ],
+  "sites_reviewed": [
+    {
+      "site": "chapters/J44/J44_c.html#j44-sa",
+      "title": "Anatomie — Distribution anatomique de l’emphysème",
+      "reviewed": [
+        "introduction immédiate",
+        "SVG et flèches",
+        "légende",
+        "paragraphe après figure",
+        "phrase sur les veines et lymphatiques"
+      ],
+      "finding": "La distribution à l’imagerie était placée comme cause du mécanisme fonctionnel.",
+      "change": "La destruction alvéolaire possède deux conséquences distinctes : distribution visible et perte de structures utiles à la fonction. Le réseau lymphatique central et intralobulaire est précisé.",
+      "windows": [
+        "j44-j-anatomie-figure",
+        "j44-j-lymphatiques"
+      ],
+      "sources": [
+        "fleischner-2015",
+        "gold-digital-2021",
+        "sozio-2012"
+      ],
+      "status": "corrigé dans les sources"
+    },
+    {
+      "site": "chapters/J44/J44_c.html#j44-sp",
+      "title": "Physiologie — Distension dynamique pendant l’effort",
+      "reviewed": [
+        "introduction immédiate",
+        "SVG et flèches",
+        "légende",
+        "paragraphe après figure"
+      ],
+      "finding": "Le débit expiratoire limité semblait raccourcir le temps expiratoire.",
+      "change": "L’accélération respiratoire raccourcit le temps ; cette contrainte converge avec le débit limité. La baisse de capacité inspiratoire explicite l’hypothèse de capacité totale stable et la distension reste conditionnelle.",
+      "windows": [
+        "j44-j-distension"
+      ],
+      "sources": [
+        "odonnell-2001",
+        "guenette-2012",
+        "gold-digital-2021"
+      ],
+      "status": "corrigé dans les sources"
+    },
+    {
+      "site": "chapters/J44/J44_c.html#j44-sb",
+      "title": "Biochimie — Équilibre protéases et protection pulmonaire",
+      "reviewed": [
+        "introduction immédiate",
+        "SVG et flèches",
+        "légende",
+        "paragraphe après figure"
+      ],
+      "finding": "Les protéases actives semblaient causer la protection insuffisante.",
+      "change": "La charge protéasique et la protection relative convergent vers une activité non compensée. L’inactivation oxydative possible est expliquée et sourcée sans la rendre obligatoire.",
+      "windows": [
+        "j44-j-balance-proteases"
+      ],
+      "sources": [
+        "gold-digital-2021",
+        "carp-1982"
+      ],
+      "status": "corrigé dans les sources"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gold-digital-2021",
+      "title": "GOLD — chapitre 1, édition numérique 2021",
+      "url": "https://goldcopd.org/digital-gold-report/",
+      "read": "Chapitre 1 officiel ouvert, passages pathogénie et physiopathologie lus.",
+      "supports": [
+        "perte d’attaches et de recul élastique",
+        "balance protéases–antiprotéases",
+        "piégeage et capacité inspiratoire"
+      ],
+      "retrieved_on": "2026-10-07"
+    },
+    {
+      "id": "fleischner-2015",
+      "title": "Fleischner Society 2015 — CT-Definable Subtypes of COPD",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4613878/",
+      "doi": "10.1148/radiol.2015141579",
+      "read": "Texte indexé de la déclaration primaire lu, notamment structure/fonction et air trapping ; ouverture directe PMC bloquée par CAPTCHA.",
+      "supports": [
+        "distribution morphologique et fonction",
+        "perte de recul et vidange expiratoire"
+      ],
+      "retrieved_on": "2026-10-07"
+    },
+    {
+      "id": "sozio-2012",
+      "title": "Sozio et coll. — Morphometric analysis of intralobular, interlobular and pleural lymphatics in normal human lung",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3375775/",
+      "doi": "10.1111/j.1469-7580.2011.01473.x",
+      "read": "Texte intégral PMC ouvert : résumé, introduction anatomique, méthodes et résultats de localisation.",
+      "supports": [
+        "lymphatiques bronchovasculaires et périvasculaires intralobulaires",
+        "lymphatiques septaux et pleuraux"
+      ],
+      "retrieved_on": "2026-10-07"
+    },
+    {
+      "id": "odonnell-2001",
+      "title": "O’Donnell et coll. — Dynamic Hyperinflation and Exercise Intolerance in COPD",
+      "url": "https://doi.org/10.1164/ajrccm.164.5.2012122",
+      "doi": "10.1164/ajrccm.164.5.2012122",
+      "read": "Résumé primaire indexé de la publication AJRCCM consulté ; aucun texte intégral revendiqué.",
+      "supports": [
+        "capacité inspiratoire et distension pendant l’effort"
+      ],
+      "retrieved_on": "2026-10-07"
+    },
+    {
+      "id": "guenette-2012",
+      "title": "Guenette et coll. — Does dynamic hyperinflation contribute to dyspnoea during exercise in patients with COPD?",
+      "url": "https://publications.ersnet.org/content/erj/40/2/322.abstract",
+      "doi": "10.1183/09031936.00157711",
+      "read": "Résumé primaire complet indexé ERS lu ; accès direct ERS refusé.",
+      "supports": [
+        "distension dynamique non systématique",
+        "dyspnée possible chez les non-hyperinflateurs"
+      ],
+      "retrieved_on": "2026-10-07"
+    },
+    {
+      "id": "carp-1982",
+      "title": "Carp et coll. — Potential mechanism of emphysema: alpha 1-proteinase inhibitor recovered from lungs of cigarette smokers contains oxidized methionine and has decreased elastase inhibitory capacity",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC346118/",
+      "read": "Résumé primaire complet indexé PMC lu ; les pages de texte intégral scannées n’ont pas été lues.",
+      "supports": [
+        "inactivation oxydative possible et activité antiélastase moindre"
+      ],
+      "retrieved_on": "2026-10-07"
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 tools/insert_justifications.py --course J44",
+      "status": "réussi",
+      "windows": 18,
+      "targets": 19
+    },
+    {
+      "command": "python3 test_v7.py --static J44",
+      "status": "réussi",
+      "output": "J44 mots 47694 fenêtres 85 quiz 8 pareto 12 ; OK"
+    },
+    {
+      "check": "XML des trois SVG et unicité des ids",
+      "status": "réussi"
+    },
+    {
+      "check": "Rendu SVG autonome en PNG et inspection visuelle",
+      "status": "réussi",
+      "notes": "Un libellé de défense antiprotéasique débordait initialement ; il est maintenant réparti sur trois lignes."
+    }
+  ],
+  "resolved_reserves": [
+    "Trois causalités graphiques J44 inexactes du rapport GLOBAL_LOT3_SCIENCES.",
+    "Phrase imprécise concernant la localisation des lymphatiques."
+  ],
+  "remaining_reserves": [
+    "Les autres affirmations de J44, onglets, fenêtres, quiz et Pareto n’ont pas fait l’objet d’une relecture exhaustive dans ce lot.",
+    "Le PDF officiel GOLD 2026 a été identifié, mais son ouverture est refusée car il dépasse la limite de taille du lecteur web. Le mécanisme cité ici repose sur le chapitre officiel numérique explicitement daté 2021 et les sources primaires indiquées.",
+    "Certains textes primaires n’étaient accessibles que par leur résumé indexé ; le degré de lecture figure source par source.",
+    "Le site complet et l’ouverture des fenêtres dans son interface restent à contrôler après reconstruction par l’agent intégrateur."
+  ],
+  "counterread": {
+    "status": "réussie",
+    "agent": "Codex — j44_counterread",
+    "coverage": "Trois SVG, textes immédiats, trois entrées nouvelles et j44-j-distension.",
+    "finding": "Aucune erreur matérielle relevée ; causalités et limites explicitement gérées.",
+    "sources_rechecked": [
+      "sozio-2012",
+      "carp-1982"
+    ],
+    "exhaustive_review": false
+  }
+}

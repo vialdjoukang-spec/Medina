@@ -68,22 +68,34 @@
           "file": "J44_c.html",
           "anchor": "j44-e-2",
           "text": "Capacité inspiratoire"
+        },
+        {
+          "file": "J44_c.html",
+          "anchor": "j44-sp",
+          "text": "la respiration s’accélère"
         }
       ],
       "explanation": [
-        "À l’effort, l’expiration dispose de moins de temps. Lorsque le débit expiratoire est limité, le volume de fin d’expiration augmente. Il reste moins de volume disponible pour inspirer et les muscles doivent produire plus de travail."
+        "À l’effort, l’accélération respiratoire raccourcit le temps disponible pour expirer. Si le débit limité empêche la vidange pendant ce temps, le volume de fin d’expiration augmente. La capacité inspiratoire correspond à la capacité pulmonaire totale moins le volume de fin d’expiration. Elle diminue donc lorsque ce dernier augmente à capacité totale stable."
       ],
       "mechanism": [
-        "Le rythme respiratoire accélère.",
-        "L’expiration incomplète accumule de l’air.",
-        "La réserve inspiratoire diminue et la dyspnée augmente."
+        "La fréquence respiratoire augmente et le temps expiratoire raccourcit.",
+        "Le débit limité et le temps court se combinent pour empêcher une vidange complète.",
+        "L’augmentation du volume de fin d’expiration réduit la capacité inspiratoire si la capacité totale reste stable."
       ],
       "implication": "La capacité inspiratoire complète le volume expiratoire maximal en une seconde (VEMS) pour comprendre une dyspnée et suivre l’effet des bronchodilatateurs.",
-      "limits": [],
+      "limits": [
+        "La distension dynamique n’apparaît pas chez tous les patients pendant l’effort. Une dyspnée importante peut aussi accompagner d’autres contraintes mécaniques ou des comorbidités.",
+        "La mesure de capacité inspiratoire nécessite une manœuvre reproductible ; son interprétation comme variation du volume de fin d’expiration suppose une capacité pulmonaire totale stable."
+      ],
       "sources": [
         {
-          "title": "Étude physiologique — hyperinflation et dyspnée d’effort",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/8239175/"
+          "title": "O’Donnell et coll., 2001 — distension dynamique et limitation à l’effort dans la BPCO",
+          "url": "https://doi.org/10.1164/ajrccm.164.5.2012122"
+        },
+        {
+          "title": "Guenette et coll., 2012 — dyspnée d’effort avec et sans distension dynamique dans la BPCO",
+          "url": "https://publications.ersnet.org/content/erj/40/2/322.abstract"
         }
       ]
     },
@@ -440,6 +452,102 @@
         {
           "title": "Essai suisse REDUCE — durée de la corticothérapie",
           "url": "https://pubmed.ncbi.nlm.nih.gov/23695200/"
+        }
+      ]
+    },
+    {
+      "id": "j44-j-anatomie-figure",
+      "title": "Pourquoi l’imagerie et la fonction décrivent-elles deux conséquences de la lésion ?",
+      "match": [
+        {
+          "file": "J44_c.html",
+          "anchor": "j44-sa",
+          "text": "destruction emphysémateuse"
+        }
+      ],
+      "explanation": [
+        "L’emphysème détruit des parois alvéolaires. La localisation et l’étendue de la destruction donnent une distribution identifiable en tomodensitométrie. La perte de surface d’échange et de soutien des petites voies peut modifier la diffusion et la vidange expiratoire. L’image et l’atteinte fonctionnelle proviennent de la lésion."
+      ],
+      "mechanism": [
+        "La destruction atteint une région de l’acinus et du lobule secondaire.",
+        "Cette distribution produit un aspect morphologique à l’imagerie.",
+        "La perte de surface et de soutien peut altérer les échanges et l’expiration."
+      ],
+      "implication": "Le médecin confronte la distribution à l’imagerie aux explorations fonctionnelles ; il apprécie aussi l’atteinte des petites voies.",
+      "limits": [
+        "La distribution seule ne prédit pas toute la gêne expiratoire. Deux patients ayant un aspect morphologique proche peuvent avoir des atteintes fonctionnelles différentes."
+      ],
+      "sources": [
+        {
+          "title": "Fleischner Society 2015 — sous-types de BPCO définis en tomodensitométrie",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4613878/"
+        },
+        {
+          "title": "GOLD — rapport numérique, chapitre 1 (édition 2021) : mécanismes de la BPCO",
+          "url": "https://goldcopd.org/digital-gold-report/"
+        }
+      ]
+    },
+    {
+      "id": "j44-j-lymphatiques",
+      "title": "Pourquoi les lymphatiques ne se limitent-ils pas à la périphérie du lobule ?",
+      "match": [
+        {
+          "file": "J44_c.html",
+          "anchor": "j44-sa",
+          "text": "Les lymphatiques accompagnent aussi les axes bronchovasculaires"
+        }
+      ],
+      "explanation": [
+        "La bronchiole et sa branche artérielle repèrent le centre du lobule secondaire. Les veines pulmonaires passent dans les septa interlobulaires. Les lymphatiques cheminent dans ces septa et sous la plèvre, mais aussi autour des axes bronchovasculaires et des petits vaisseaux intralobulaires. Cette organisation contribue au drainage du liquide interstitiel."
+      ],
+      "mechanism": [
+        "Les tissus entourant les bronches et les vaisseaux contiennent des voies lymphatiques.",
+        "Les réseaux intralobulaires, septaux et pleuraux assurent le drainage interstitiel.",
+        "Une distribution exclusivement périphérique ne décrit pas l’anatomie humaine observée."
+      ],
+      "implication": "La lecture d’une atteinte pulmonaire distingue la région centrolobulaire, les septa et la région sous-pleurale sans exclure des lymphatiques centraux.",
+      "limits": [
+        "L’étude morphométrique concerne cinq prélèvements de poumon histologiquement normal provenant de résections pour cancer. Elle décrit une localisation anatomique et ne démontre pas une cause de BPCO."
+      ],
+      "sources": [
+        {
+          "title": "Sozio et coll., 2012 — morphométrie des lymphatiques du poumon humain normal",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3375775/"
+        }
+      ]
+    },
+    {
+      "id": "j44-j-balance-proteases",
+      "title": "Pourquoi une balance protéases–antiprotéases se représente-t-elle par une convergence ?",
+      "match": [
+        {
+          "file": "J44_c.html",
+          "anchor": "j44-sb",
+          "text": "la protection antiprotéasique est insuffisante"
+        }
+      ],
+      "explanation": [
+        "Les protéases dégradent des constituants de la matrice. Les antiprotéases limitent cette activité. Le risque de lésion dépend de leur balance : une charge enzymatique accrue peut dépasser la défense disponible. Un déficit génétique ou une activité inhibitrice diminuée peut aussi fragiliser cette défense. Chez les fumeurs étudiés par Carp et ses collègues, l’oxydation de l’inhibiteur était associée à une moindre capacité d’inhibition de l’élastase."
+      ],
+      "mechanism": [
+        "L’inflammation peut augmenter la charge protéasique.",
+        "La quantité et l’activité des inhibiteurs déterminent la protection disponible.",
+        "Une activité protéasique non compensée favorise la dégradation de la matrice."
+      ],
+      "implication": "La recherche d’un déficit en alpha-1 antitrypsine explore une défense insuffisante ; l’arrêt du tabac réduit une exposition qui augmente l’agression.",
+      "limits": [
+        "Une charge accrue peut rompre l’équilibre sans déficit génétique. Le schéma décrit un mécanisme de l’emphysème et ne couvre pas toute la pathogénie de la BPCO.",
+        "L’étude de Carp porte sur l’activité inhibitrice dans le lavage bronchoalvéolaire de fumeurs ; elle ne permet pas d’attribuer toute la maladie à cette voie."
+      ],
+      "sources": [
+        {
+          "title": "GOLD — rapport numérique, chapitre 1 (édition 2021) : mécanismes de la BPCO",
+          "url": "https://goldcopd.org/digital-gold-report/"
+        },
+        {
+          "title": "Carp et coll., 1982 — oxydation de l’inhibiteur de l’élastase dans les poumons de fumeurs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC346118/"
         }
       ]
     }
