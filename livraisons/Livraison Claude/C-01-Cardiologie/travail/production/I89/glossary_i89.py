@@ -84,3 +84,15 @@ a('Stewart-Treves',[('Stewart','Fred W. Stewart, pathologiste américain'),('Tre
  '<p>Angiosarcome (lymphangiosarcome) développé sur un lymphœdème chronique, décrit en 1948 après mastectomie. Il se manifeste par des macules ou nodules violacés et a un pronostic sombre.</p>','i89-stewart')
 a('Klippel-Trénaunay',[('Klippel','Maurice Klippel, neurologue français'),('Trénaunay','Paul Trénaunay, médecin français')],'Syndrome de Klippel-Trénaunay',
  '<p>Malformation vasculaire combinée (capillaire, veineuse, souvent lymphatique) avec hypertrophie d’un membre, liée à des variants somatiques de PIK3CA. Elle entre dans le diagnostic différentiel d’un gros membre de l’enfant.</p>')
+
+# ---- codes CIM-10-GM 2024 hors chapitre I (les codes I.. décimaux sont déjà acceptés par le moteur)
+# N’écrire jamais « CIM » seul : écrire « CIM-10-GM » ou « CIM-11 ».
+for c,tt in [('Q82.0','Lymphœdème héréditaire'),
+             ('E88.2','Lipomatose, non classée ailleurs (dont lipœdème)'),
+             ('E88.20','Lipœdème, stade I'),('E88.21','Lipœdème, stade II'),('E88.22','Lipœdème, stade III'),
+             ('J94.0','Épanchement chyleux'),
+             ('L03.1','Phlegmon d’autres parties d’un membre'),
+             ('L98.4','Ulcérations chroniques de la peau, non classées ailleurs'),
+             ('B74.0','Filariose à Wuchereria bancrofti'),
+             ('R59.0','Adénopathies localisées'),('R59.9','Adénopathie, sans précision')]:
+    a(c,[(c,'code de la Classification internationale des maladies, 10e révision, modification allemande')],tt,'<p>Code CIM-10-GM 2024.</p>')
