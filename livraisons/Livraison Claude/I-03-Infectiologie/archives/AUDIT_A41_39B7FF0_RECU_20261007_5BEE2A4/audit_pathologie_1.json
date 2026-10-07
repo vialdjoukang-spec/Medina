@@ -1,0 +1,460 @@
+{
+ "perimetre": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie) : chapters/A41/A41_a.html (onglet Pathologie, îlots a41-0 à a41-6) et toutes les fenêtres template data-pop ouvertes par ses mots verts : 18 fenêtres dans A41_pop_pa.html, 16 dans A41_pop1.html, 2 Pareto dans A41_pop2.html (pareto-a41-def, pareto-a41-physio). Fichiers lus uniquement au commit figé par git show.",
+ "sha": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+ "sources_consultees": [
+  {
+   "reference": "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA 2016;315(8):801-10. PMID 26903338, doi:10.1001/jama.2016.0287",
+   "section": "Texte intégral : définitions, critères cliniques, choc septique (registre SSC 28 150 patients), Controversies and Limitations, Implications",
+   "date": "2026-10-07",
+   "acces": "texte intégral PMC4968574 via PubMed MCP (encadrés et tableaux non extraits)"
+  },
+  {
+   "reference": "Seymour CW et al. Assessment of Clinical Criteria for Sepsis. JAMA 2016;315(8):762-74. PMID 26903335",
+   "section": "Résumé et résultats (qSOFA : 24 % des rencontres, 70 % des décès ; AUROC)",
+   "date": "2026-10-07",
+   "acces": "résumé PubMed + texte intégral pmc.ncbi.nlm.nih.gov/articles/PMC5433435"
+  },
+  {
+   "reference": "Prescott HC, Antonelli M et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Crit Care Med 2026;54(4):725-812 (PMID 41869847) ; Intensive Care Med 2026;52(5):863-936 (PMID 41870560) ; correctif 42084789",
+   "section": "129 énoncés avec force, certitude et remarques (page officielle SCCM, publiée le 23.03.2026)",
+   "date": "2026-10-07",
+   "acces": "page officielle sccm.org reproduisant tous les énoncés (texte intégral des recommandations, non du rationnel) ; articles éditeurs non accessibles (Springer : défi JavaScript ; LWW : 403)"
+  },
+  {
+   "reference": "Evans L et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med 2021;47:1181-1247. PMID 34599691, PMC8486643",
+   "section": "Rationnels : réanimation initiale (signes de perfusion, ANDROMEDA-SHOCK), pression artérielle moyenne (pression systémique moyenne de remplissage, SEPSISPAM)",
+   "date": "2026-10-07",
+   "acces": "texte intégral Europe PMC (XML JATS)"
+  },
+  {
+   "reference": "Beuschlein F et al. ESE/Endocrine Society Joint Clinical Guideline: Diagnosis and Therapy of Glucocorticoid-induced Adrenal Insufficiency. J Clin Endocrinol Metab 2024 (PMID 38724043, PMC11180513) ; Eur J Endocrinol 2024 (PMID 38714321)",
+   "section": "Définitions (tableau 1), R 2.1, R 3.1, R 3.2, tableau 8 (doses de stress), tableau 9 (crise surrénalienne), section crise surrénalienne",
+   "date": "2026-10-07",
+   "acces": "texte intégral Europe PMC"
+  },
+  {
+   "reference": "Swiss Sepsis Program. Swiss Sepsis Report 2025, version 25.1, septembre 2025 (sepsis.ch)",
+   "section": "Key facts 2023 (p. 6-7), méthodes (p. 9), résultats 3.3.1-3.3.6 (p. 9-15), limites",
+   "date": "2026-10-07",
+   "acces": "PDF intégral"
+  },
+  {
+   "reference": "BfArM. ICD-10-GM Version 2024, blocs A30-A49 et R50-R69",
+   "section": "A40, A41 (Kodierhinweis, Exklusiva), A48.3, R57.0-R57.2",
+   "date": "2026-10-07",
+   "acces": "pages HTML officielles klassifikationen.bfarm.de"
+  },
+  {
+   "reference": "Royal College of Physicians. National Early Warning Score (NEWS) 2, 2017",
+   "section": "Charts 1, 2 et 4 (barème, seuils, réponse clinique)",
+   "date": "2026-10-07",
+   "acces": "PDF officiels rcp.ac.uk"
+  },
+  {
+   "reference": "Rudd KE et al. Global, regional, and national sepsis incidence and mortality, 1990-2017. Lancet 2020. PMID 31954465",
+   "section": "Résumé",
+   "date": "2026-10-07",
+   "acces": "résumé PubMed"
+  },
+  {
+   "reference": "Prescott HC, Angus DC. Enhancing Recovery From Sepsis: A Review. JAMA 2018;319:62-75. PMID 29297082",
+   "section": "Résumé",
+   "date": "2026-10-07",
+   "acces": "résumé PubMed"
+  },
+  {
+   "reference": "Vincent JL et al. Sepsis in European intensive care units: results of the SOAP study. Crit Care Med 2006. PMID 16424713",
+   "section": "Résumé",
+   "date": "2026-10-07",
+   "acces": "résumé PubMed"
+  },
+  {
+   "reference": "Daneman N et al. (BALANCE) Antibiotic Treatment for 7 versus 14 Days in Patients with Bloodstream Infections. N Engl J Med 2025;392:1065-78. PMID 39565030",
+   "section": "Résumé (critères d'exclusion, sources des bactériémies)",
+   "date": "2026-10-07",
+   "acces": "résumé PubMed"
+  },
+  {
+   "reference": "Sakr Y et al. Sepsis in ICU Patients: Worldwide Data From the ICON Audit. Open Forum Infect Dis 2018. PMID 30555852 ; Vincent JL et al. ICON audit. Lancet Respir Med 2014. PMID 24740011",
+   "section": "Résumés (facteurs indépendants de décès hospitalier)",
+   "date": "2026-10-07",
+   "acces": "résumés PubMed"
+  },
+  {
+   "reference": "Tokuda Y et al. The degree of chills for risk of bacteremia in acute febrile illness. Am J Med 2005. PMID 16378800 (+ QJM 2005, PMID 16174688)",
+   "section": "Résumés",
+   "date": "2026-10-07",
+   "acces": "résumés PubMed"
+  },
+  {
+   "reference": "Ait-Oufella H et al. Mottling score predicts survival in septic shock. Intensive Care Med 2011. PMID 21373821",
+   "section": "Résumé",
+   "date": "2026-10-07",
+   "acces": "résumé PubMed"
+  },
+  {
+   "reference": "Hernández G et al. ANDROMEDA-SHOCK. JAMA 2019. PMID 30772908 ; ANDROMEDA-SHOCK-2. JAMA 2025;334:1988-99. PMID 41159835",
+   "section": "Résumés",
+   "date": "2026-10-07",
+   "acces": "résumés PubMed"
+  },
+  {
+   "reference": "Asfar P et al. High versus low blood-pressure target in patients with septic shock (SEPSISPAM). N Engl J Med 2014. PMID 24635770",
+   "section": "Résumé",
+   "date": "2026-10-07",
+   "acces": "résumé PubMed"
+  },
+  {
+   "reference": "Ranzani OT et al. Development and Validation of the SOFA-2 Score. JAMA 2025;334(23):2090-2103 (16.12.2025). PMID 41159833 ; consensus méthodologique JAMA Netw Open 2025, PMID 41159829",
+   "section": "Résumés",
+   "date": "2026-10-07",
+   "acces": "résumés PubMed"
+  }
+ ],
+ "observations": [
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1, h3 1.2, 2e paragraphe",
+   "citation": "Ce seuil n’a rien d’arbitraire.",
+   "gravite": "mineure",
+   "raison": "Affirmation excessive. Sepsis-3 reconnaît que les variables et seuils du SOFA ont été fixés par consensus et que le seuil de 2 points a été retenu pour sa validité prédictive (mortalité ~10 %), sans examen de référence du syndrome. Le texte présente un choix pragmatique comme une nécessité.",
+   "source": "Sepsis-3, JAMA 2016, sections « Organ Dysfunction or Failure » et « Clinical Criteria to Identify Patients With Sepsis » (texte intégral PMC4968574, 07.10.2026)",
+   "correction_attendue": "Remplacer par une phrase qui justifie le seuil sans l’absolutiser : « Ce seuil a été choisi pour sa valeur pronostique : … », et rappeler que les seuils du SOFA ont été fixés par consensus."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1, h3 1.3, paragraphe de lecture du tableau",
+   "citation": "sa confusion et son hypotension suffisent à dépasser 2 points, donc à poser un sepsis",
+   "gravite": "mineure",
+   "raison": "Calcul inexact : Glasgow 14 = 1 point et PAM 58 mmHg sans vasopresseur = 1 point, soit exactement 2 points ; ils atteignent le seuil sans le dépasser. Le critère Sepsis-3 est « au moins 2 points ».",
+   "source": "Sepsis-3, tableau SOFA (repris dans a41-sofa) ; A41_b îlot 7.4 (calcul de Mme R. à 7 points)",
+   "correction_attendue": "« … suffisent à atteindre 2 points, seuil du sepsis ; la créatinine, les plaquettes et l’oxygénation porteront ensuite le total à 7 points (îlot 7). »"
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1, h3 1.5, paragraphe de codage",
+   "citation": "Les sepsis à agent spécifique ou associés à la grossesse, au nouveau-né et aux actes relèvent de règles propres.",
+   "gravite": "mineure",
+   "raison": "Inexact pour la CIM-10-GM 2024 : la catégorie A41 contient elle-même des sous-catégories d’agent spécifique (A41.0 Staphylococcus aureus, A41.1, A41.3 Haemophilus influenzae, A41.4 anaérobies, A41.51 E. coli, A41.52 Pseudomonas). Seuls certains agents sont exclus (streptocoques A40, Candida B37.7, Listeria A32.7, méningocoque A39.2-A39.4, etc.). La phrase laisse croire que la sepsis à E. coli de Mme R. sort de A41, alors qu’elle se code A41.51 (+ R57.2 si choc).",
+   "source": "BfArM, ICD-10-GM 2024, bloc A30-A49, catégorie A41 (sous-codes et Exklusiva), consulté le 07.10.2026",
+   "correction_attendue": "Préciser que A41 comprend des sous-codes d’agent (A41.0–A41.8, dont A41.51 pour E. coli) et que seuls certains agents ont une catégorie propre ; donner l’exemple de Mme R. (A41.51, puis R57.2 si le choc est documenté)."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1, h3 1.5 ; pareto-a41-def",
+   "citation": "la classification le range dans la catégorie A48 (autres maladies bactériennes, non classées ailleurs), avec un code complémentaire désignant l’agent",
+   "gravite": "mineure",
+   "raison": "Le code complémentaire d’agent n’apparaît pas dans la notice A48.3 de la CIM-10-GM 2024 consultée (seuls les Exklusiva R57.8 et A41.9 y figurent). L’usage d’un code B95–B98 relève des règles générales de codage (OMS/Kodierrichtlinien), non d’une instruction explicite de A48.3 dans la version citée.",
+   "source": "BfArM, ICD-10-GM 2024, A48.3 « Syndrom des toxischen Schocks », consulté le 07.10.2026",
+   "correction_attendue": "Soit citer la règle de codage suisse/allemande qui impose le code d’agent, soit écrire « un code d’agent peut être ajouté selon les règles de codage en vigueur »."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1, h3 1.5 ; a41-0, h3 0.1 à 0.3 ; a41-3 introduction ; a41-5 h3 5.3",
+   "citation": "« Le cours traite cliniquement… sa seule existence ne permet pas de revendiquer un autre code » ; « La patiente présentée ici sert de cas clinique à tout le cours » ; « Les objectifs suivants disent ce que le lecteur saura faire » ; « Le lecteur qui les maîtrise comprend tout le reste du cours » ; « Ces étapes se suivent ici dans l’ordre » ; « Les cartes suivantes décrivent les plus instructives »",
+   "gravite": "redactionnelle",
+   "raison": "Annonces qui décrivent la fabrication du cours au lieu d’exposer le problème médical, contraires à STYLE_REDACTION § 3 et à la consigne du 07.10.2026 (« ne pas décrire cet îlot ou la fabrication du cours »). La phrase « sa seule existence ne permet pas de revendiquer un autre code » est en outre obscure.",
+   "source": "docs/STYLE_REDACTION.md § 3 ; CLAUDE.md (consigne de Vial du 07.10.2026)",
+   "correction_attendue": "Réécrire chaque annonce pour qu’elle énonce directement le problème clinique (ex. 0.1 : « Mme R., 71 ans, arrive confuse et hypotendue… ») ; supprimer la phrase sur la « seule existence » du cours."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1 (tableau 1.3), a41-2 (tableau 2.2), a41-3 (tableau 3.6), a41-4 (tableaux 4.2 et 4.3), a41-6 (tableau 6.2) ; fenêtres a41-news2 et a41-sofa",
+   "citation": "« La première colonne nomme la situation, la deuxième donne le critère Sepsis-3, la troisième… » (et formules analogues)",
+   "gravite": "redactionnelle",
+   "raison": "Les introductions de tableaux paraphrasent les en-têtes colonne par colonne, ce que STYLE_REDACTION § 4 proscrit explicitement (« Il ne paraphrase pas les en-têtes et ne décrit pas les colonnes lorsque leur sens est déjà explicite »).",
+   "source": "docs/STYLE_REDACTION.md § 4",
+   "correction_attendue": "Remplacer chaque description de colonnes par la question clinique que le tableau résout ; conserver les paragraphes de lecture après les tableaux."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1 (encadré final), a41-2 (encadré final 2.4), a41-4 (encadré final 4.5)",
+   "citation": "« Le sepsis était lié à environ un décès sur cinq dans le monde en 2017… » (répété mot pour mot des encadrés 2.1 et 2.2)",
+   "gravite": "redactionnelle",
+   "raison": "Les encadrés « À retenir » de fin d’îlot répètent presque mot pour mot les encadrés des sous-parties, puis le Pareto les reprend une troisième fois. Répétition contraire à la consigne « supprimer les répétitions et le remplissage ».",
+   "source": "CLAUDE.md, consigne du 07.10.2026 ; STYLE_REDACTION § 3",
+   "correction_attendue": "Garder un épilogue local par sous-partie et un encadré de synthèse final qui hiérarchise (sans recopier) ; ou fusionner."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-2, tableau 2.2, ligne « Séjours avec choc septique »",
+   "citation": "6 098, soit 29,3 %",
+   "gravite": "mineure",
+   "raison": "Le chiffre reproduit fidèlement le rapport suisse, mais il est arithmétiquement incohérent avec le dénominateur affiché dans la même ligne du tableau : 6 098 / 21 001 = 29,0 %. Le lecteur qui vérifie ne retrouve pas la valeur.",
+   "source": "Swiss Sepsis Report 2025, v25.1, Key facts 2023 p. 6-7 (« 6,098 cases with septic shock (29.3 %) ») ; calcul de l’auditeur",
+   "correction_attendue": "Soit afficher 29,0 % (calcul sur 21 001) avec la mention que le rapport indique 29,3 %, soit signaler le dénominateur utilisé par le rapport s’il diffère."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-2, h3 2.4 ; fenêtre a41-postsepsis ; pareto-a41-def",
+   "citation": "près de 30 % des patients de 65 ans et plus sont décédés dans l’année qui suit l’admission, soit davantage que pendant le séjour lui-même",
+   "gravite": "mineure",
+   "raison": "Formulation reprise du rapport, mais trompeuse : la mortalité à 360 jours est cumulative et inclut les 22,3 % de décès intrahospitaliers (le rapport le précise sous la figure 4). Le lecteur peut comprendre que les décès après la sortie dépassent ceux du séjour, ce qui est faux (environ 22 % pendant le séjour contre environ 7–8 points supplémentaires ensuite).",
+   "source": "Swiss Sepsis Report 2025, section 3.3.5 et légende de la figure 4 (« Mortality rates are cumulative »)",
+   "correction_attendue": "« près de 30 % étaient décédés un an après l’admission, décès hospitaliers compris (22,3 %) : la mortalité continue donc d’augmenter après la sortie. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-3, h3 3.3 (encadré) et encadré « Corrélation mécanisme → traitement » ; fenêtre a41-pam (« Déterminants »)",
+   "citation": "« Le remplissage corrige la part hypovolémique ; la noradrénaline corrige la vasoplégie » / « Le remplissage corrige une composante d’hypovolémie relative » / « la pression moyenne détermine la pression systémique moyenne de remplissage, principal moteur du retour veineux »",
+   "gravite": "mineure",
+   "raison": "Justification causale imprécise et incohérente entre deux encadrés voisins (hypovolémie « absolue et relative » corrigée par le remplissage, puis seulement « relative »). La phrase de la fenêtre a41-pam reprend fidèlement le rationnel SSC 2021, mais la physiologie est inversée pour un lecteur : la pression systémique moyenne de remplissage dépend du volume contraint et du tonus veineux, pas de la PAM ; c’est la vasoconstriction veineuse induite par la noradrénaline qui recrute du volume non contraint et élève à la fois PAM et pression de remplissage. Sans ce mécanisme, l’effet de la noradrénaline sur le retour veineux (relative hypovolémie par venodilatation, décrite en 3.3) n’est pas expliqué.",
+   "source": "SSC 2021, rationnel « Mean arterial pressure » (texte intégral PMC8486643) ; A41_a îlot 3.3, 2e paragraphe (dilatation veineuse)",
+   "correction_attendue": "Harmoniser : le remplissage corrige l’hypovolémie absolue et une part de la relative ; la noradrénaline restaure le tonus artériolaire et veineux (recrutement du volume non contraint), d’où hausse du retour veineux. Dans a41-pam, attribuer la phrase à la SSC 2021 en précisant le mécanisme (tonus veineux), ou la reformuler."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-3, h3 3.5, encadré",
+   "citation": "Une thrombopénie nouvelle chez un patient infecté est une défaillance d’organe.",
+   "gravite": "mineure",
+   "raison": "Affirmation causale trop absolue : la fenêtre a41-civd du même chapitre rappelle qu’une thrombopénie peut venir d’une hémodilution, d’un médicament ou d’une thrombopénie induite par l’héparine. Une thrombopénie < 150 × 10⁹/L ne vaut d’ailleurs qu’1 point SOFA. Association n’est pas attribution.",
+   "source": "Sepsis-3 (hausse SOFA « attribuable à l’infection ») ; fenêtre a41-civd (Piège)",
+   "correction_attendue": "« Une thrombopénie nouvelle chez un patient infecté compte comme une dysfonction hématologique du score SOFA tant qu’une autre cause (hémodilution, médicament, héparine) n’est pas démontrée. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-3, h3 3.7 ; a41-5 h3 5.3 (carte Mme R.)",
+   "citation": "La prednisone a atténué la fièvre, sans empêcher la défaillance. / la prednisone atténue la fièvre",
+   "gravite": "mineure",
+   "raison": "Attribution causale individuelle non démontrable : chez une patiente de 71 ans, l’âge seul peut expliquer une fièvre modeste (37,6 °C) ; l’encadré 0.1 formule correctement « la prednisone et l’âge peuvent l’atténuer ». Incohérence de prudence entre sections.",
+   "source": "STYLE/consigne 07.10.2026 (ne pas confondre association et causalité) ; A41_a encadré 0.1",
+   "correction_attendue": "« La prednisone et l’âge ont pu atténuer la fièvre… »"
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-4, h3 4.1 et encadrés 4.1/4.5 ; pareto-a41-physio",
+   "citation": "Le poumon domine chez les patients septiques de soins intensifs, les voies urinaires dans les bactériémies.",
+   "gravite": "mineure",
+   "raison": "Généralisation d’un échantillon sélectionné : BALANCE excluait les bactériémies à Staphylococcus aureus, l’immunodépression sévère, les foyers exigeant un traitement prolongé et les contaminants possibles. La répartition 42,2 % urinaire / 18,8 % abdominale / 13,0 % pulmonaire décrit ces patients inclus, pas « les bactériémies ».",
+   "source": "Daneman N et al., N Engl J Med 2025 (BALANCE), résumé PubMed 39565030 (critères d’exclusion)",
+   "correction_attendue": "« Dans les bactériémies incluses dans BALANCE (qui excluait S. aureus et les foyers à traitement prolongé), l’origine était urinaire dans 42,2 %… »"
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-4, h3 4.3, paragraphe après le tableau",
+   "citation": "une corticothérapie inscrite au dossier doit déclencher la dose de stress d’hydrocortisone",
+   "gravite": "mineure",
+   "raison": "Formulation trop large : la recommandation ESE/ES vise une corticothérapie actuelle ou récente dont l’axe n’a pas été testé (R 3.1, bonne pratique) et définit le risque d’insuffisance surrénalienne par une durée > 3–4 semaines à dose supraphysiologique ; une corticothérapie ancienne, arrêtée et testée, ou topique isolée n’impose pas automatiquement 100 mg IV. La fenêtre a41-cortico est plus juste que la phrase de l’îlot.",
+   "source": "ESE/Endocrine Society 2024, R 2.1, R 3.1, R 3.1B, tableau 1 (texte intégral PMC11180513, 07.10.2026)",
+   "correction_attendue": "« une corticothérapie actuelle ou récente, dont l’axe corticotrope n’a pas été testé, impose une couverture de stress ; en cas de sepsis, cette couverture est parentérale (100 mg puis 200 mg/24 h). »"
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-4, h3 4.5, 2e paragraphe ; fenêtre a41-sign-focal",
+   "citation": "Une obstruction urinaire infectée peut nécessiter un drainage … Elle suggère un contrôle précoce du foyer, idéalement dans les six heures",
+   "gravite": "mineure",
+   "raison": "La force et la certitude de l’énoncé SSC 2026 sur le délai de six heures (conditionnelle, certitude très faible) ne sont pas citées, alors que le chapitre s’engage à les citer quand elles changent la décision et que 0.2 en fait un objectif. Par ailleurs « peut nécessiter » sous-estime l’indication : un rein obstrué infecté chez une patiente en sepsis relève d’un drainage urgent.",
+   "source": "SSC 2026, énoncés « Source control » (bonne pratique ; conditionnelle, très faible), page officielle SCCM consultée le 07.10.2026",
+   "correction_attendue": "Ajouter « (recommandation conditionnelle, certitude très faible) » ; écrire « Une obstruction urinaire infectée impose une dérivation des urines en urgence » (en citant la recommandation urologique utilisée)."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-5, h3 5.3, carte « Patient splénectomisé » ; a41-6 h3 6.5",
+   "citation": "Le médecin administre l’antibiotique avant tout examen.",
+   "gravite": "mineure",
+   "raison": "Contradiction partielle avec la recommandation forte SSC 2026 de prélever les hémocultures dès que possible et idéalement avant l’antibiotique, et avec la fenêtre a41-asplenie (« avant tout examen si l’état l’exige »). Le prélèvement d’hémocultures ne doit être omis que s’il retarde l’antibiotique (purpura fulminans).",
+   "source": "SSC 2026, énoncé « Blood culture » (forte, faible) ; fenêtre a41-asplenie",
+   "correction_attendue": "« Le médecin prélève les hémocultures sans délai puis administre l’antibiotique immédiatement, avant toute imagerie ; devant un purpura extensif, l’antibiotique ne doit pas attendre le prélèvement. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-6, h3 6.4, encadré ; h3 6.2 (« après 65 ans »)",
+   "citation": "Le choc instable se reconnaît à l’examen et autorise un vasopresseur immédiat.",
+   "gravite": "redactionnelle",
+   "raison": "L’encadré perd la nuance « au cas par cas » de la remarque SSC 2026 restituée dans le paragraphe précédent. Par ailleurs 6.2 écrit « après 65 ans » alors que l’énoncé vise « 65 ans ou plus » (la fenêtre a41-pam dit correctement « dès 65 ans »).",
+   "source": "SSC 2026, remarque de l’énoncé sur le bolus initial puis vasopresseur ; énoncé MAP ≥ 65 ans",
+   "correction_attendue": "« … autorise, au cas par cas, un vasopresseur en même temps que le remplissage » ; « dès 65 ans »."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-1 h3 1.2 (mot vert)",
+   "citation": "score SOFA (six défaillances d’organe)",
+   "gravite": "redactionnelle",
+   "raison": "Le score mesure six fonctions d’organe, pas six défaillances ; l’autre occurrence du même mot vert dit correctement « six fonctions d’organe ».",
+   "source": "Sepsis-3 ; fenêtre a41-sofa",
+   "correction_attendue": "« score SOFA (six fonctions d’organe) »."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-4 h3 4.4, encadré « Piège » ; a41-1 h3 1.5",
+   "citation": "La couverture de bactéries multirésistantes et d’anaérobies n’est pas universelle : la Surviving Sepsis Campaign 2026 suggère … (phrase d’environ 80 mots)",
+   "gravite": "redactionnelle",
+   "raison": "Phrases très longues (plus de 60 mots) avec énumérations parenthétiques, contraires à STYLE § 2 (une idée par phrase, une vingtaine de mots).",
+   "source": "docs/STYLE_REDACTION.md § 2",
+   "correction_attendue": "Découper en trois phrases (multirésistants, anaérobies, antifongiques), chacune avec sa force et sa certitude."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "a41-4 h3 4.2",
+   "citation": "Staphylococcus aureus (30 %, dont 14 % résistants à la méticilline)",
+   "gravite": "redactionnelle",
+   "raison": "Ambigu : dans SOAP, 14 % désigne la part des isolats/patients à SARM parmi les cultures positives, soit près de la moitié des S. aureus, et non 14 % des S. aureus.",
+   "source": "Vincent JL et al., SOAP, Crit Care Med 2006, résumé PubMed 16424713",
+   "correction_attendue": "« S. aureus (30 % des patients à culture positive, dont 14 % avec un SARM, soit près de la moitié des S. aureus) »."
+  },
+  {
+   "fichier": "chapters/A41/A41_a.html",
+   "repere": "ligne 2, div.status de l’en-tête",
+   "citation": "onglet Pathologie réécrit selon le guide de rédaction le 26.09.2026 · revue humaine indépendante requise",
+   "gravite": "redactionnelle",
+   "raison": "Mentions de chantier dans le produit (historique de rédaction, état de revue) ; l’en-tête doit dater les sources, pas la fabrication.",
+   "source": "CLAUDE.md, règle sur les annonces ; PROMPT_MEDINA (pas de formule de chantier)",
+   "correction_attendue": "Limiter l’en-tête aux références et dates de consultation ; déplacer l’historique dans audits/A41.md."
+  },
+  {
+   "fichier": "chapters/A41/A41_pop_pa.html",
+   "repere": "fenêtre a41-cortico, rubrique « Signes d’alerte »",
+   "citation": "La crise surrénalienne associe une hypotension ou un choc, parfois des vomissements, une hyponatrémie, une hyperkaliémie et une hypoglycémie.",
+   "gravite": "mineure",
+   "raison": "Mécanisme non expliqué et trompeur dans ce contexte : dans l’insuffisance surrénalienne induite par les glucocorticoïdes (secondaire/tertiaire), la sécrétion d’aldostérone, réglée par le système rénine-angiotensine et le potassium, est préservée ; l’hyperkaliémie n’est donc pas attendue. Le tableau 9 de la recommandation la liste parmi les anomalies possibles de toute crise surrénalienne, mais le texte précise que la fonction minéralocorticoïde est conservée. Son absence ne doit pas rassurer.",
+   "source": "ESE/Endocrine Society 2024 : tableau 9 et section R 3 (« mineralocorticoid function is expected to be preserved in glucocorticoid-induced adrenal insufficiency »), texte intégral PMC11180513",
+   "correction_attendue": "« … une hyponatrémie et une hypoglycémie ; l’hyperkaliémie manque en général, car l’aldostérone, réglée par la rénine et le potassium, reste sécrétée : elle oriente plutôt vers une insuffisance surrénalienne primaire ou une insuffisance rénale. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_pop_pa.html",
+   "repere": "fenêtre a41-pam, rubrique « Piège »",
+   "citation": "Dans l’essai SEPSISPAM, une cible haute a réduit le recours à l’épuration extrarénale chez les hypertendus chroniques",
+   "gravite": "mineure",
+   "raison": "Résultat d’analyse de sous-groupe présenté comme un effet établi ; l’essai montre aussi davantage de fibrillation atriale dans le groupe à cible haute, ce qui compte pour la décision.",
+   "source": "SEPSISPAM, NEJM 2014, résumé PubMed 24635770 ; SSC 2021 rationnel MAP (« sub-group analysis… higher risk of atrial fibrillation »)",
+   "correction_attendue": "« Dans une analyse de sous-groupe, … moins d’épuration extrarénale, sans effet sur la mortalité ; la cible haute augmentait la fibrillation atriale. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_pop_pa.html",
+   "repere": "fenêtre a41-bacteriemie, rubrique « Conséquence pratique »",
+   "citation": "La durée du traitement dépend ensuite du germe et du foyer, comme le montre l’essai BALANCE.",
+   "gravite": "mineure",
+   "raison": "Mauvaise attribution : BALANCE a montré la non-infériorité de 7 jours contre 14 jours dans une population sélectionnée (exclusion de S. aureus, de l’immunodépression sévère et des foyers à traitement prolongé), avec des résultats homogènes dans les sous-groupes de germe et de syndrome ; il ne montre pas que la durée dépend du germe et du foyer.",
+   "source": "BALANCE, NEJM 2025, résumé PubMed 39565030",
+   "correction_attendue": "« Dans les bactériémies non compliquées incluses dans BALANCE, 7 jours ont été non inférieurs à 14 jours ; S. aureus et les foyers profonds non drainés exigent une durée propre. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_pop_pa.html",
+   "repere": "fenêtre a41-fasciite, rubrique « Recommandations »",
+   "citation": "Elle suggère un contrôle du foyer idéalement dans les six heures ; ici, ce contrôle est une exploration chirurgicale avec exérèse",
+   "gravite": "mineure",
+   "raison": "Incohérence interne : le tableau 4.2 et la carte 5.3 parlent d’« exploration chirurgicale immédiate ». Le délai de six heures de la SSC est un maximum général (conditionnel, certitude très faible), pas une cible pour une infection nécrosante, où chaque heure de retard compte.",
+   "source": "SSC 2026, énoncé « Source control » ; A41_a tableau 4.2",
+   "correction_attendue": "« Pour une infection nécrosante, l’exploration chirurgicale est immédiate ; le délai maximal général de six heures de la SSC ne doit pas être lu comme une cible. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_pop1.html",
+   "repere": "fenêtre a41-lactate, rubrique « Mode d’emploi »",
+   "citation": "Elle suggère ensuite des mesures répétées lorsque le lactate était élevé, pour guider la réanimation.",
+   "gravite": "mineure",
+   "raison": "Énoncé incomplet : la SSC 2026 vise « sepsis avec lactate élevé ou choc septique » et la force/certitude (conditionnelle, faible) n’est pas citée, alors qu’elle l’est pour l’énoncé précédent.",
+   "source": "SSC 2026, énoncé « Serial lactate » (page officielle SCCM)",
+   "correction_attendue": "« … des mesures répétées en cas de lactate élevé ou de choc septique (recommandation conditionnelle, certitude faible) »."
+  },
+  {
+   "fichier": "chapters/A41/A41_pop2.html",
+   "repere": "pareto-a41-def, dernier point",
+   "citation": "Près de 30 % des patients suisses de 65 ans et plus sont décédés dans l’année …, et environ 40 % des survivants sont réhospitalisés dans les 90 jours",
+   "gravite": "redactionnelle",
+   "raison": "Deux sources différentes (rapport suisse ; revue Prescott et Angus, données principalement nord-américaines) fusionnées dans une phrase sans attribution, ce qui suggère à tort que les 40 % sont suisses.",
+   "source": "Swiss Sepsis Report 2025 ; Prescott & Angus JAMA 2018 (PMID 29297082)",
+   "correction_attendue": "Séparer les deux chiffres et nommer leur source."
+  }
+ ],
+ "points_verifies_conformes": [
+  {
+   "repere": "a41-1 h3 1.1–1.4 ; a41-sepsis3 ; a41-sirs : définition Sepsis-3, ≥ 2 points SOFA, score de base nul, mortalité ~10 %, > 8,1 % STEMI, risque ×2 à ×25, 1 patient sur 8 sans 2 critères SIRS, « sepsis sévère » redondant, 19 experts, 31 sociétés, culture positive 30–40 %, définition grand public",
+   "source": "Sepsis-3, JAMA 2016, texte intégral PMC4968574"
+  },
+  {
+   "repere": "a41-1 h3 1.3 et quiz : critères du choc (vasopresseur pour PAM ≥ 65 et lactate > 2 mmol/L sans hypovolémie), mortalité > 40 %, registre SSC 28 150 patients, 42,3 % / 25,7 % / 30,1 %, catégorie épidémiologique, diagnostic de travail sans lactate (TRC allongé)",
+   "source": "Sepsis-3, section « Clinical Criteria to Identify Septic Shock » et « Controversies and Limitations »"
+  },
+  {
+   "repere": "a41-qsofa : critères, 148 907 patients, AUROC 0,81 hors USI et 0,66 contre 0,74 en USI, 24 % des rencontres regroupant 70 % des décès",
+   "source": "Seymour CW, JAMA 2016 (PMC5433435) ; Sepsis-3"
+  },
+  {
+   "repere": "a41-sofa : tableau des seuils (PaO₂/FiO₂ et conversions kPa, plaquettes, bilirubine µmol/L, circulation et doses ≥ 1 h, Glasgow, créatinine/diurèse), AUROC 0,79 et 0,74, SOFA non destiné à conduire le traitement",
+   "source": "Sepsis-3, tableau 1 et texte"
+  },
+  {
+   "repere": "a41-1 h3 1.2 et a41-sofa : SOFA-2 publié en décembre 2025 (JAMA 334(23)), 3,34 millions de séjours, six organes conservés, supports d’organe actualisés, seuils modifiés",
+   "source": "Ranzani OT et al., JAMA 2025, PMID 41159833 ; PMID 41159829"
+  },
+  {
+   "repere": "a41-ssc et a41-1 h3 1.5 : SSC 2026 publiée le 23.03.2026 (CCM et ICM), 129 énoncés dont 46 nouveaux, panel de 69 membres de 23 pays, champ hôpital/préhospitalier/post-hospitalier, 30 mL/kg en 3 h, noradrénaline en première intention, antibiotique dans l’heure (forte, très faible)",
+   "source": "Page officielle SCCM SSC 2026 ; PubMed 41869847, 41870560"
+  },
+  {
+   "repere": "Énoncés SSC 2026 cités avec force/certitude : qSOFA non utilisé seul (forte, modérée) ; lactate (conditionnelle, faible) ; individualisation après bolus initial ; TRC (conditionnelle, faible) ; PAM 65 mmHg ± 5 (forte, modérée) et 60–65 dès 65 ans (conditionnelle, faible) ; cathéter artériel (remarque) ; poids réel/ajusté si IMC > 30 ; choc instable (remarque) ; MDR, anaérobies, antifongiques, biomarqueurs Candida, tests rapides ; objectifs de soins (bonne pratique ; conditionnelle, faible ; 72 h) ; soins palliatifs ; essais limités dans le temps ; antipyrétiques ; SpO₂/FiO₂ ; dysfonction cardiaque (noradrénaline ou adrénaline, dobutamine, lévosimendan) ; suivi post-sepsis",
+   "source": "Page officielle SCCM SSC 2026 (énoncés et remarques), consultée le 07.10.2026"
+  },
+  {
+   "repere": "a41-6 h3 6.4 : signes de perfusion validés et reproductibles selon SSC 2021 ; ANDROMEDA-SHOCK 34,9 % contre 43,4 %, SOFA à 72 h",
+   "source": "SSC 2021, rationnel réanimation initiale (PMC8486643) ; JAMA 2019, PMID 30772908"
+  },
+  {
+   "repere": "a41-sign-perfusion : ANDROMEDA-SHOCK-2 (1 501 randomisés, 1 467 analysés, rapport de victoires 1,16, effet surtout sur la durée des suppléances)",
+   "source": "JAMA 2025, PMID 41159835"
+  },
+  {
+   "repere": "a41-6 h3 6.4 et a41-sign-perfusion : score de marbrures 0–5, kappa 0,87, 60 patients, OR 16 (2–3) et 74 (4–5) à H6 pour la mortalité J14, PAM non prédictive, baisse du score associée à un meilleur pronostic ; Mme R. score 2 (bord supérieur de la rotule)",
+   "source": "Ait-Oufella H, Intensive Care Med 2011, PMID 21373821"
+  },
+  {
+   "repere": "a41-5 h3 5.2 et a41-frissons : 526 patients, 7,6 % de bactériémies, définitions des trois degrés, RR 12,1 / 4,1 / 1,8, spécificité 90,3 %, RV+ 4,65, RV− 0,24",
+   "source": "Tokuda Y, Am J Med 2005, PMID 16378800 ; QJM 2005, PMID 16174688"
+  },
+  {
+   "repere": "a41-2 h3 2.1 : 48,9 millions de cas, 11,0 millions de décès, 19,7 %, baisse de 37,0 % et 52,8 %, régions les plus touchées",
+   "source": "Rudd KE, Lancet 2020, PMID 31954465"
+  },
+  {
+   "repere": "a41-2 h3 2.2–2.3, a41-swiss-report, a41-4 h3 4.2–4.3 : chiffres 2023 (21 001 ; 1,6 % ; 14 733 / 70,2 % ; 8 542 / 40,7 % ; 9 contre 3 jours ; 18,9 % / 3 971 ; 32,6 % / 1 991 ; 22,3 % / 3 289 ; 5,3 % / 19 sur 358 ; 11,6 % / 28 sur 241 ; 1,07 milliard ; 51 018 CHF ; > 6 % des coûts) ; ~19 000 infarctus et ~22 000 AVC ; 72 000–90 000 séjours implicites ; jusqu’à quatre fois plus ; séjours et non personnes ; communauté/hôpital non distingués ; ~20 % avec ≥ 2 comorbidités après 65 ans ; codes viraux presque doublés 2019–2021 ; programme lancé en 2023 (Kinderspital Zurich, Inselspital, CHUV), liaison OFS",
+   "source": "Swiss Sepsis Report 2025, v25.1 (PDF intégral)"
+  },
+  {
+   "repere": "a41-2 h3 2.4 et a41-postsepsis : moitié récupère, un tiers meurt dans l’année, un sixième limitations sévères ; 1–2 limitations ; 6,1 % → 16,7 % ; anxiété 32 %, dépression 29 %, ESPT 44 % ; 40 % réhospitalisés à 90 jours, infection 11,9 %, insuffisance cardiaque 5,5 % ; trois mécanismes ; approche palliative si déclin antérieur",
+   "source": "Prescott HC, Angus DC, JAMA 2018, PMID 29297082"
+  },
+  {
+   "repere": "a41-4 h3 4.1–4.2 : SOAP (198 USI, 24 pays, 2002 ; poumon 68 %, abdomen 22 % ; cultures positives 60 % ; S. aureus 30 %, Pseudomonas 14 %, E. coli 13 %) ; BALANCE (3 608 patients, 55 % en USI, urinaire 42,2 %, abdominale 18,8 %, pulmonaire 13,0 %)",
+   "source": "PMID 16424713 ; PMID 39565030"
+  },
+  {
+   "repere": "a41-4 h3 4.3 : audit ICON (10 069 patients, 2012) ; âge, cancer, insuffisance cardiaque NYHA III/IV, cirrhose facteurs indépendants de décès hospitalier des patients septiques",
+   "source": "Sakr Y, Open Forum Infect Dis 2018, PMID 30555852 ; Vincent JL, Lancet Respir Med 2014, PMID 24740011"
+  },
+  {
+   "repere": "a41-cortico : définition de la corticothérapie au long cours (> 3–4 semaines, > 15–25 mg d’hydrocortisone ou 4–6 mg de prednisone), R 3.1 (bonne pratique), R 3.2, schéma 100 mg IV/IM puis 200 mg/24 h ou 50 mg/6 h, durée individualisée ; Mme R. 7,5 mg > équivalent physiologique",
+   "source": "ESE/Endocrine Society 2024, PMC11180513 (définitions, R 3.1–3.2, tableau 8, section crise)"
+  },
+  {
+   "repere": "a41-1 h3 1.5 et pareto-a41-def : A41 « Sonstige Sepsis » (autres sepsis, A41.9 non précisé), A40 streptocoques, R57.2 code complémentaire du choc septique (Kodierhinweis), A48.3 exclu de A41, R57.0 cardiogénique, R57.1 hypovolémique",
+   "source": "BfArM ICD-10-GM 2024, blocs A30–A49 et R50–R69"
+  },
+  {
+   "repere": "a41-news2, a41-6 tableau 6.2, a41-sign-rr, a41-spo2, a41-fievre : barème NEWS2 (échelle 1 et 2), seuils 0–4 / 3 dans un paramètre / 5–6 / ≥ 7, réponse d’urgence avec surveillance continue ; Mme R. 13 points (3+2+0+3+2+3+0)",
+   "source": "RCP NEWS2, charts 1, 2 et 4 (PDF officiels)"
+  },
+  {
+   "repere": "a41-pam, Cibles et Exemple : PAM 58 mmHg (82/46), SEPSISPAM 80–85 sans bénéfice de mortalité (36,6 % contre 34,0 %)",
+   "source": "SEPSISPAM, PMID 24635770 ; calcul de l’auditeur"
+  },
+  {
+   "repere": "Cohérence du cas Mme R. : IMC 22,9 kg/m², 30 mL/kg = 1 800 mL, 0,5 mL/kg/h = 30 mL/h, Glasgow 4+4+6 = 14, SIRS 3/4, qSOFA 3/3, SOFA 7 (A41_b 7.4)",
+   "source": "Calculs de l’auditeur sur les données du chapitre"
+  }
+ ],
+ "reserves_non_verifiees": [
+  "Rationnel détaillé (texte des sections) de la SSC 2026 non lu : seuls les énoncés, forces, certitudes et remarques de la page officielle SCCM ont été consultés ; les articles CCM/ICM n’étaient pas accessibles (Springer : défi JavaScript ; LWW : 403).",
+  "Sepsis-3 : encadré 1 (« toute défaillance d’organe inexpliquée doit faire évoquer une infection », carte 5.3) non extrait dans la version PMC lue ; affirmation compatible avec le texte (qSOFA doit faire envisager une infection) mais non vérifiée mot pour mot.",
+  "Lactate plasmatique usuel 0,5–1,5 mmol/L et hyperlactatémie > 2,0 mmol/L attribués au CHUV (2022) : source non consultée.",
+  "Critères Phoenix (2024) de l’enfant (a41-sepsis3) : non relus.",
+  "KDIGO (oligurie 0,5 mL/kg/h pendant 6 h ; stades 1 à 3) : seuils conformes aux connaissances de l’auditeur, texte KDIGO 2012 non rouvert.",
+  "Technique standardisée du temps de recoloration capillaire (lame de verre, index droit, 10 s, > 3 s) : non relue dans le protocole ANDROMEDA-SHOCK (le résumé ne la décrit pas).",
+  "Score de Glasgow (Teasdale et Jennett 1974, libellés des réponses) et barème SIRS 1991 (dont PaCO₂ < 32 mmHg, > 10 % de formes immatures) : conformes aux connaissances, sources primaires non rouvertes.",
+  "Affirmation « les SIRS restent plus sensibles mais moins spécifiques que le qSOFA » (a41-sirs, a41-qsofa) : non sourcée dans le chapitre ; non confrontée à une méta-analyse.",
+  "Mécanismes moléculaires de 3.1–3.5 (TLR/DAMP, iNOS, déficit relatif en vasopressine, glycocalyx, apoptose lymphocytaire, facteur tissulaire, protéine C) : cohérents avec la pathobiologie décrite par Sepsis-3, mais non confrontés à une revue primaire datée ; à sourcer.",
+  "Plan de vaccination suisse (asplénie) et recommandation de l’OFSP : non rouverts.",
+  "Glossaire et audit d’abréviations (build_medina.audit) non exécutés ; plusieurs sigles du fichier (TLR, iNOS, TNF-α, IL, ACTH, PGE₂, DRESS, IgE, KDIGO, NYHA) dépendent du glossaire global, non contrôlé dans cet audit.",
+  "Règles suisses de codage (Kodierungshandbuch OFS) pour R57.2 et l’agent du choc toxique : non consultées."
+ ],
+ "synthese": "Périmètre : A41_a.html (îlots 0 à 6) au SHA 39b7ff0cc585c59ffbb99fb448940daa1950b34d et 36 fenêtres ouvertes par ses mots verts (A41_pop1, A41_pop_pa, A41_pop2 pour les deux Pareto). Les définitions Sepsis-3, les critères du choc, le barème SOFA, le qSOFA, les chiffres d’essais (SOAP, BALANCE, ICON, Tokuda, Ait-Oufella, ANDROMEDA-SHOCK 1 et 2, SEPSISPAM, SOFA-2), les données mondiales et suisses, le barème NEWS2, la dose de stress d’hydrocortisone et les forces/certitudes de la SSC 2026 citées sont conformes aux sources consultées. La SSC citée par le chapitre est l’édition 2026 (et non 2021) ; elle existe (23.03.2026) et ses énoncés ont été lus sur la page officielle SCCM. Aucune erreur médicale bloquante ni réserve majeure n’a été trouvée dans ce périmètre. Les observations portent sur des justifications causales imprécises (mécanisme du retour veineux et de la noradrénaline, hyperkaliémie dans l’insuffisance surrénalienne induite, thrombopénie assimilée d’emblée à une défaillance), des généralisations d’échantillons sélectionnés (BALANCE), une erreur de codage (sous-codes d’agent dans A41), des nuances de recommandation omises (force du délai de 6 h, hémocultures avant antibiotique chez l’asplénique) et des défauts rédactionnels répétés (annonces sur la fabrication du cours, description des colonnes, encadrés redondants). Les réserves listées restent à vérifier ; elles ne valent pas conformité. Ce rapport ne valide pas A41_b, A41_c ni A41_d."
+}

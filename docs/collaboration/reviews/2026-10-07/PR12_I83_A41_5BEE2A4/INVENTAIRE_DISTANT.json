@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "scanned_at": "2026-10-07T23:44:35.148802+00:00",
+  "repository": "vialdjoukang-spec/Medina",
+  "integration_branch": "main",
+  "integration_commit": "f2cb214a472115c12d2d5c4ed8fccdbfffee7e57",
+  "scan_complete": false,
+  "notes": [
+    "Branche et PR : inventaire complet via connecteur, pages 1 et 2 (page 2 vide), 14 branches et 13 PR. Diff global des branches non collecté ; cette réception analyse les seules remises I83 et audit A41 de PR12. Aucune fusion des autres branches.",
+    "PR13 et PR6 Codex sont en brouillon ; jamais traitées comme remises Claude.",
+    "Catalogue figé à main ; les noms des systèmes non extraits de la coque. Pas de certification de routage exhaustive."
+  ],
+  "catalog_basis": "github:f2cb214a472115c12d2d5c4ed8fccdbfffee7e57",
+  "limits": [
+    "Les rapports et les tests déclarés ne constituent pas une vérification médicale indépendante.",
+    "Le routage est contrôlé contre les sources locales de la cible, avant les changements proposés.",
+    "Aucune branche n'est fusionnée, aucun reçu créé et aucun commit publié par ce scanner."
+  ],
+  "deliveries": [
+    {
+      "delivery_id": "head-5bee2a48ef1804a0e3452d64a1041e0bd1b50691",
+      "head_sha": "5bee2a48ef1804a0e3452d64a1041e0bd1b50691",
+      "branches": [
+        "claude/loving-shannon-spwrhc"
+      ],
+      "pull_requests": [
+        {
+          "number": 12,
+          "title": "Relire MEDINA, lot 5 : justification systématique de 14 cours de C-01-Cardiologie",
+          "state": "open",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/12",
+          "base": {
+            "ref": "codex/sciences-cs-fragments-20261007",
+            "sha": "83bff147e0aba6b31e7a080e098770b0a6b4250d"
+          },
+          "head": {
+            "ref": "claude/loving-shannon-spwrhc",
+            "sha": "5bee2a48ef1804a0e3452d64a1041e0bd1b50691"
+          },
+          "merged_at": null
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise.",
+        "PR #12 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-303f95a66dd2b4b0622867854d2add4bce4de310",
+      "head_sha": "303f95a66dd2b4b0622867854d2add4bce4de310",
+      "branches": [
+        "claude/medina-alpha-integration-7dul4i"
+      ],
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Intégration des sources MEDINA_Alpha",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/1",
+          "base": {
+            "ref": "main",
+            "sha": "86f4a9e6ce365f25600a00f6cc7b07ef15ade907"
+          },
+          "head": {
+            "ref": "claude/medina-alpha-integration-7dul4i",
+            "sha": "303f95a66dd2b4b0622867854d2add4bce4de310"
+          },
+          "merged_at": "2026-09-27T23:58:27Z"
+        }
+      ],
+      "received": true,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [
+        "4b8e9f6af187543de87690cb9cc5e57dbb21777f"
+      ],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-45d34a9bd3034a141239d9cefc774804c10163fb",
+      "head_sha": "45d34a9bd3034a141239d9cefc774804c10163fb",
+      "branches": [
+        "claude/mission-justification-20261007"
+      ],
+      "pull_requests": [
+        {
+          "number": 11,
+          "title": "Mission commune : justification systématique de chaque affirmation et répartition 15/15",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/11",
+          "base": {
+            "ref": "codex/sciences-cs-fragments-20261007",
+            "sha": "3636759adb8b74402f98ee8d48c6e8dd49f08a13"
+          },
+          "head": {
+            "ref": "claude/mission-justification-20261007",
+            "sha": "45d34a9bd3034a141239d9cefc774804c10163fb"
+          },
+          "merged_at": "2026-10-07T18:45:36Z"
+        }
+      ],
+      "received": true,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise.",
+        "PR #11 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-c3770739b58c96120c180a4ae0c68d00dde70a51",
+      "head_sha": "c3770739b58c96120c180a4ae0c68d00dde70a51",
+      "branches": [
+        "claude/review-i48-esc2024-20261007"
+      ],
+      "pull_requests": [],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-7651825416cc1326a85a28db81ced54a9ee6f617",
+      "head_sha": "7651825416cc1326a85a28db81ced54a9ee6f617",
+      "branches": [
+        "claude/review-medina-global-20261007"
+      ],
+      "pull_requests": [
+        {
+          "number": 10,
+          "title": "Relire MEDINA, lots 2 et 3 : I48 intégral et gabarits clonés des Sciences (20 cours)",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/10",
+          "base": {
+            "ref": "codex/sciences-cs-fragments-20261007",
+            "sha": "3636759adb8b74402f98ee8d48c6e8dd49f08a13"
+          },
+          "head": {
+            "ref": "claude/review-medina-global-20261007",
+            "sha": "7651825416cc1326a85a28db81ced54a9ee6f617"
+          },
+          "merged_at": "2026-10-07T21:22:00Z"
+        }
+      ],
+      "received": true,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise.",
+        "PR #10 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-394dc0857f83ea8b74287cf0b3bd468f8bfdfbac",
+      "head_sha": "394dc0857f83ea8b74287cf0b3bd468f8bfdfbac",
+      "branches": [
+        "claude/review-medina-global-20261007"
+      ],
+      "pull_requests": [
+        {
+          "number": 9,
+          "title": "Relire MEDINA, lot 1 : formules clonées et métadiscours",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/9",
+          "base": {
+            "ref": "codex/sciences-cs-fragments-20261007",
+            "sha": "d4309b0d3de9f2a79499ed3d95da5d5436778d88"
+          },
+          "head": {
+            "ref": "claude/review-medina-global-20261007",
+            "sha": "394dc0857f83ea8b74287cf0b3bd468f8bfdfbac"
+          },
+          "merged_at": "2026-10-07T11:24:38Z"
+        }
+      ],
+      "received": true,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [
+        "7fa06329b3369f54ef0831ae9f6cdf90fce5f605"
+      ],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise.",
+        "PR #9 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-f6e400df9e5d180d9dc69aba1f598d4a21cb788c",
+      "head_sha": "f6e400df9e5d180d9dc69aba1f598d4a21cb788c",
+      "branches": [
+        "claude/review-medina-global-20261007"
+      ],
+      "pull_requests": [
+        {
+          "number": 8,
+          "title": "Intégrer les relectures Claude : I48 ESC 2024 et Sémiologie CS",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/8",
+          "base": {
+            "ref": "codex/sciences-cs-fragments-20261007",
+            "sha": "e7cbc52e6494d162887ad22a358c4c23d0a61937"
+          },
+          "head": {
+            "ref": "claude/review-medina-global-20261007",
+            "sha": "f6e400df9e5d180d9dc69aba1f598d4a21cb788c"
+          },
+          "merged_at": "2026-10-07T09:13:08Z"
+        }
+      ],
+      "received": true,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [
+        "f5c83957a239a27b836b838063e97835cd80f4d9"
+      ],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise.",
+        "PR #8 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise."
+      ]
+    },
+    {
+      "delivery_id": "head-871bb223564deda6931ab74bc7f0499ced97c65c",
+      "head_sha": "871bb223564deda6931ab74bc7f0499ced97c65c",
+      "branches": [
+        "codex/accueil-qcm-20260929"
+      ],
+      "pull_requests": [
+        {
+          "number": 6,
+          "title": "Moderniser l’accueil et créer les QCM de consolidation MEDINA",
+          "state": "open",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/6",
+          "base": {
+            "ref": "main",
+            "sha": "92b1db11a594d748e20d7f00e4bacb02a02d5602"
+          },
+          "head": {
+            "ref": "codex/accueil-qcm-20260929",
+            "sha": "871bb223564deda6931ab74bc7f0499ced97c65c"
+          },
+          "merged_at": null
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-1539f4e77171d4c049efa25febac632582be38a8",
+      "head_sha": "1539f4e77171d4c049efa25febac632582be38a8",
+      "branches": [
+        "codex/ajouter-options-de-generation-de-fragments"
+      ],
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "Ajoute la construction ciblée des fragments MEDINA",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/3",
+          "base": {
+            "ref": "main",
+            "sha": "5ec44ef7a303d10d93a5876e626473faa6e060ae"
+          },
+          "head": {
+            "ref": "codex/ajouter-options-de-generation-de-fragments",
+            "sha": "1539f4e77171d4c049efa25febac632582be38a8"
+          },
+          "merged_at": "2026-09-28T00:57:31Z"
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-8d0de9bcd572d958031440064268e165a263842c",
+      "head_sha": "8d0de9bcd572d958031440064268e165a263842c",
+      "branches": [
+        "codex/configurer-publication-github-pages-automatique"
+      ],
+      "pull_requests": [
+        {
+          "number": 4,
+          "title": "Automatise la publication MEDINA sur GitHub Pages (workflow, index, audits)",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/4",
+          "base": {
+            "ref": "main",
+            "sha": "4bf7e971b752899878ed57272ae2e1a799553d76"
+          },
+          "head": {
+            "ref": "codex/configurer-publication-github-pages-automatique",
+            "sha": "8d0de9bcd572d958031440064268e165a263842c"
+          },
+          "merged_at": "2026-09-28T05:35:48Z"
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-0f38d9aab4ef051eaa9013c4aebfdcb9d5105070",
+      "head_sha": "0f38d9aab4ef051eaa9013c4aebfdcb9d5105070",
+      "branches": [
+        "codex/creer-fragments.json-et-corrige-des-chemins"
+      ],
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Cartographie des fragments et chemins portables",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/2",
+          "base": {
+            "ref": "main",
+            "sha": "4b8e9f6af187543de87690cb9cc5e57dbb21777f"
+          },
+          "head": {
+            "ref": "codex/creer-fragments.json-et-corrige-des-chemins",
+            "sha": "0f38d9aab4ef051eaa9013c4aebfdcb9d5105070"
+          },
+          "merged_at": "2026-09-28T00:31:42Z"
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-7071e557cfc29fcdae774e0142b1b3680e45421a",
+      "head_sha": "7071e557cfc29fcdae774e0142b1b3680e45421a",
+      "branches": [
+        "codex/etancheite-complete-des-fragments"
+      ],
+      "pull_requests": [
+        {
+          "number": 5,
+          "title": "Étanchéité complète des fragments et bandeau latéral par catégories",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/5",
+          "base": {
+            "ref": "main",
+            "sha": "f0a49e11dd2f54c81d988a8d049642763268ba29"
+          },
+          "head": {
+            "ref": "codex/etancheite-complete-des-fragments",
+            "sha": "7071e557cfc29fcdae774e0142b1b3680e45421a"
+          },
+          "merged_at": "2026-09-28T23:11:05Z"
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-c50a28a23d7e2a2e0cf8ac36842b567de419daf4",
+      "head_sha": "c50a28a23d7e2a2e0cf8ac36842b567de419daf4",
+      "branches": [
+        "codex/fragment-s01-accueil-navigo-20261005"
+      ],
+      "pull_requests": [
+        {
+          "number": 7,
+          "title": "S01 : accueil cardiovasculaire par catégorie et Navigo fixe",
+          "state": "closed",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/7",
+          "base": {
+            "ref": "main",
+            "sha": "92b1db11a594d748e20d7f00e4bacb02a02d5602"
+          },
+          "head": {
+            "ref": "codex/fragment-s01-accueil-navigo-20261005",
+            "sha": "c50a28a23d7e2a2e0cf8ac36842b567de419daf4"
+          },
+          "merged_at": "2026-10-07T09:22:48Z"
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+      "head_sha": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+      "branches": [
+        "codex/mechanismes-20261007"
+      ],
+      "pull_requests": [],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-20915d9a36f0ebc65a79ec6428357727dd5afe6c",
+      "head_sha": "20915d9a36f0ebc65a79ec6428357727dd5afe6c",
+      "branches": [
+        "codex/repartition-fragments-20261008"
+      ],
+      "pull_requests": [],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    },
+    {
+      "delivery_id": "head-83bff147e0aba6b31e7a080e098770b0a6b4250d",
+      "head_sha": "83bff147e0aba6b31e7a080e098770b0a6b4250d",
+      "branches": [
+        "codex/sciences-cs-fragments-20261007"
+      ],
+      "pull_requests": [
+        {
+          "number": 13,
+          "title": "Réconcilier les cours cardiologiques Claude avec la contrelecture publiée",
+          "state": "open",
+          "html_url": "https://github.com/vialdjoukang-spec/Medina/pull/13",
+          "base": {
+            "ref": "main",
+            "sha": "20915d9a36f0ebc65a79ec6428357727dd5afe6c"
+          },
+          "head": {
+            "ref": "codex/sciences-cs-fragments-20261007",
+            "sha": "83bff147e0aba6b31e7a080e098770b0a6b4250d"
+          },
+          "merged_at": null
+        }
+      ],
+      "received": false,
+      "integrated": false,
+      "verified": false,
+      "integration_evidence": null,
+      "integration_commits": [],
+      "files": [],
+      "routes": [],
+      "warnings": [
+        "Comparaison à la cible indisponible ; intégration non démontrée.",
+        "Aucun fichier de contribution identifié ; lecture de la branche requise."
+      ]
+    }
+  ]
+}

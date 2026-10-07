@@ -1,5 +1,12 @@
 # MEDINA — livraisons repérées
 
+## Réception I83 et audit A41 — 7 octobre 2026
+
+La remise **I83 — Varices des membres inférieurs (C-01-Cardiologie)** et la relecture **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** sont reçues depuis `5bee2a48ef1804a0e3452d64a1041e0bd1b50691`, objets identiques à la tête observée `9bf195a843813ea6a1a24a1bad9642ed4e24f778`. Les originaux et empreintes sont archivés. I83 conserve deux erreurs médicales bloquantes (polidocanol et EHIT III) et des réserves à vérifier. Le rapport A41 comporte dix réserves majeures, 46 mineures et 19 rédactionnelles ; six empreintes sources sont conformes et les dix objets A41/glossaire concordent avec main. Aucune nouvelle injection ni reconstruction ou publication de cours n’a été effectuée. Les contrôles techniques de cette réception sont partiels ; les résultats navigateur de Claude ne sont pas revendiqués par Codex.
+
+[Rapport de réception](reviews/2026-10-07/PR12_I83_A41_5BEE2A4/RECEPTION.md) · [Reçu et empreintes](receipts/CLAUDE_I83_A41_5BEE2A4_RECEPTION_2026-10-07.json). I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie) n’est pas remis. Le lot ESC2026_HUIT_COURS est retiré ; MED-01/02/03 restent ouvertes. Les remises historiques sont préservées, aucune attribution ou chapitre actif n’est modifié. A41 reste actif pour Codex.
+
+
 Branche d'intégration : `codex/sciences-cs-fragments-20261007`.
 Commit cible : `e856ed16893ba5c4ffc3bd4c9ca78a38ce533de6`.
 
