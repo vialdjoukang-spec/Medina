@@ -50,13 +50,13 @@ def examiner(agent, etat):
         ancien = etat.get(ref)
         if ancien == sha:
             continue
-        fichiers = git("diff", "--name-only", f"{ancien}..{sha}").split() if ancien else []
+        fichiers = [f for f in git("diff", "--name-only", "-z", f"{ancien}..{sha}").split("\0") if f] if ancien else []
         groupes = {}
         for f in fichiers:
             groupes.setdefault(classe(f), []).append(f)
         changements.append({"branche": nom, "avant": ancien, "apres": sha,
                             "commits": git("log", "--oneline", f"{ancien}..{sha}").splitlines()[:30] if ancien else [],
-                            "fichiers": {k: v[:200] for k, v in groupes.items()}})
+                            "fichiers": {k: {"nombre": len(v), "exemples": v[:15]} for k, v in groupes.items()}})
     return nouveau, changements
 
 
