@@ -23,13 +23,15 @@ LIVR = ICI.parents[1]
 DEPOT = LIVR.parents[2]
 
 NOM = r"(?:Mc|Mac|de |van der |van |Van )?[A-ZÀ-Ý][a-zà-ÿ’'\-]+(?:[ -][A-ZÀ-Ý][a-zà-ÿ’'\-]+)?"
-AUTEUR = NOM + r" [A-Z]{1,3}(?![\w])"
-LISTE = re.compile(rf"({NOM}) [A-Z]{{1,3}}(?:, {AUTEUR})+(?:,? et al\.?| et coll\.?)?")
-SEUL = re.compile(rf"({NOM}) [A-Z]{{1,3}}(?![\w’'])(?=[ ,.;:)])")
+# Initiales d'auteur : 1 à 3 majuscules suivies d'une virgule, d'un point, d'un point-virgule ou de « et al. ».
+# Un sigle suivi d'une année ou d'un mot (« ESC 2025 », « Eur Heart J 2024 », « N Engl J Med ») n'est jamais touché.
+INIT = r"(?!(?:ESC|ERC|EHRA|EACTS|ESVS|AHA|ACC|WHF|OMS|WHO|IDSA|NYHA|ASE|EAE|EACVI|HRS|SSC|FDA|EMA)\b)[A-Z]{1,3}(?=[,.;]|\s+et\s+(?:al|coll)\b)"
+LISTE = re.compile(rf"({NOM}) {INIT}(?:, {NOM} {INIT})+(?:,? et al\.?| et coll\.?)?")
+SEUL = re.compile(rf"({NOM}) {INIT}")
 
 
 def nettoyer_sources(texte):
-    """Retire les initiales d'auteurs, que l'audit des sigles refuse."""
+    """Retire les initiales d'auteurs, que l'audit des sigles refuse, sans toucher aux sigles ni aux revues."""
     def corrige(m):
         p = LISTE.sub(lambda x: x.group(1) + " et al.", m.group(2))
         p = SEUL.sub(lambda x: x.group(1), p)
