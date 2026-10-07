@@ -1,5 +1,24 @@
 # MEDINA — dernière passation
 
+## Nouvelle organisation — 8 octobre 2026
+
+Les **21 fragments hors C-01-Cardiologie** sont attribués : **11 fragments entiers à Claude, 10 fragments entiers à Codex**. Lire [FRAGMENTS_RESTANTS.md](FRAGMENTS_RESTANTS.md) et [production_plan.json](../../organisation/production_plan.json). Un chapitre actif par agent ; contrôle, intégration et publication avant le suivant. La cardiologie reste dans sa mission actuelle, sans certification de complétude. Aucun nouveau chapitre n’est déclaré commencé par ce plan. Codex prend le relais de GPT « work » comme coordinateur ; sous-agents en parallèle dans chaque chapitre, puis audit croisé Claude → Codex et Codex → Claude **avant injection**. La [mission de Claude](CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md) est le point d’entrée opérationnel. Toutes les catégories restent sous leur fragment respectif ; les citer comme **code — intitulé (libellé complet du fragment)**.
+
+Les paragraphes datés du 7 octobre ci-dessous restent un historique ; les états les plus récents de l’intégration et les reçus doivent être relus avant production. Au contrôle du 8 octobre : `main` était à `f149128357ce6cdc7bb9d7c77a837e545facc814`, l’intégration à `648afc8c1274e091968ad3ce70260bba748776bb`. Les têtes des branches et des PR ont été récupérées par Git ; l’API GitHub a renvoyé HTTP 401, donc l’inventaire de leurs métadonnées demeure partiel. Aucune absence de livraison n’est déduite de cette limite.
+
+
+## État actuel de la convergence cardiologique
+
+Les quatorze cours du lot 5 final et I48 sont contrôlés au commit `1fe38461d8502fb7984d66b0fe223afecd759889`. Le main médical `f149128`, ses corrections et son moteur sont préservés ; l’organisation `20915d9` est conservée. La [PR #13](https://github.com/vialdjoukang-spec/Medina/pull/13) porte l’intégration sur ses branches ; le déploiement de cette convergence sur main n’est pas annoncé. Les 22 remises Codex ont été rafraîchies : 274 sources, dont 187 cardiologiques, toutes vérifiées contre le commit source.
+
+Contrôles : 97 tests unitaires ; 31 cours Sciences ; 22 fragments et build reproductible ; 11 118 contrôles sur 14 cours ; 931 sur I48 final ; 2 400 sur les banques ; 71 sur S01 ; 748 sur l’organisation. Le reçu actuel est [CLAUDE_LOT5_CONVERGENCE_20261008.json](receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json).
+
+L’enrichissement étendu atteint 15/20 cours existants. La relecture exhaustive et la complétude CIM-11 restent ouvertes. La priorité C-01-Cardiologie et le partage 10/10 demeurent ; les productions I83 puis I89 (Claude) et I73 puis I95 (Codex) suivent un chapitre à la fois, avec revue croisée. Le travail plus récent de Claude `7aba794` est repéré hors de la remise figée `2947ba8`.
+
+## Historique des injections précédentes
+
+Les paragraphes ci-dessous décrivent les étapes antérieures. Les empreintes et contrôles actuels sont ceux du reçu de convergence ci-dessus.
+
 Mise à jour : 7 octobre 2026. Les quatorze cours du lot 5 et les compléments bibliographiques I48 sont intégrés et contrôlés sur les deux branches d’intégration au commit `c224eef68a870e02e229b1f201ad32b6801f5d11`. La remise S01 porte ce commit (187 sources) ; S02 reste exporté depuis `f9b654810619ac8206500ca23821eff9816002c1` (sources inchangées). La [PR #13](https://github.com/vialdjoukang-spec/Medina/pull/13) rassemble la livraison pour revue. Les réserves médicales et le Fragment 01 restent ouverts. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
 
 ## Priorité : expliquer pourquoi

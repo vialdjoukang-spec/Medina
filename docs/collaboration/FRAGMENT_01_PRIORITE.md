@@ -1,5 +1,8 @@
 # Fragment 01 — priorité et partage actuels
 
+État après convergence : **15/20 cours présents ont reçu l’enrichissement étendu**, dont I48 et les quatorze cours du lot 5 figé à `2947ba8`. Le contenu source actuel est `1fe38461d8502fb7984d66b0fe223afecd759889`. Relecture exhaustive et Fragment 01 restent ouverts. Les travaux nouveaux suivent les consignes du 8 octobre : **un seul chapitre actif par agent**, sous-tâches spécialisées dans ce chapitre, audit croisé avant injection, puis contrôle et publication avant le suivant. Les priorités nouvelles s’exécutent dans l’ordre : I73 puis I95 pour Codex ; I83 puis I89 pour Claude.
+
+
 Consigne de Vial du 7 octobre 2026 : achever **C-01-Cardiologie**, puis avancer à **P-02-Pneumologie**. Ce partage remplace le partage historique 15/15, qui portait sur trente cours répartis dans plusieurs fragments. La priorité actuelle porte sur les vingt cours présents en cardiologie, encore ouverts à la relecture exhaustive.
 
 | Responsable | Cours existants à achever |

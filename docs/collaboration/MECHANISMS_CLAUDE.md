@@ -1,5 +1,8 @@
 # Mission Claude — justifier chaque affirmation
 
+Le lot 5 final `2947ba8` est reçu et injecté dans le contenu `1fe38461d8502fb7984d66b0fe223afecd759889`, avec les corrections ciblées de main préservées et les remises rafraîchies. Ne pas repartir des anciennes copies. Les travaux nouveaux suivent le cahier des charges du 8 octobre : un seul chapitre actif à la fois, sous-agents spécialisés dans ce chapitre et audit croisé avant injection. I83 — Varices des membres inférieurs (C-01-Cardiologie) précède I89 ; la relecture exhaustive des cours déjà enrichis demeure ouverte. Aucun quota de mots ni multiplicateur de volume.
+
+
 ## Tes dix cours actifs — C-01-Cardiologie
 
 - I48 — Fibrillation et flutter auriculaires
