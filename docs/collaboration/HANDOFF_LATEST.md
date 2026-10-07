@@ -40,6 +40,8 @@ Les [preuves de contrôle](../../audits/CLAUDE_INTEGRATION_2026-10-07/) se rappo
 | Travail | État réel |
 | --- | --- |
 | Relecture intégrale des 30 cours et CS | À poursuivre ; seuls les lots ciblés reçus sont crédités. |
+| Audit global, lot 1 de Claude — formules clonées et métadiscours (A41, D84, M06, M31, M32, T78, I40, J44) | **Livré, en attente d'intégration** sur `claude/review-medina-global-20261007` depuis `d4309b0`. [Rapport](reviews/2026-10-07/GLOBAL_LOT1/rapport.md) et [journal](reviews/2026-10-07/GLOBAL_LOT1/journal.json). Couverture partielle, par section. Une correction médicale : le mécanisme du lactate (A41, source Crit Care 2014). |
+| Audit global, lot 2 de Claude — I48 en entier | Prochain lot ; il part des textes I48 arbitrés par Codex (`f5c8395`). |
 | R08 — fenêtre des épisodes auriculaires rapides | Réserve ouverte. |
 | R11 — classe de l’évaluation du rythme dès 65 ans | Source primaire relue ; classe I C confirmée pendant la contre-lecture. |
 | C10 — complément vasculaire de CS | Réserve ouverte. |
