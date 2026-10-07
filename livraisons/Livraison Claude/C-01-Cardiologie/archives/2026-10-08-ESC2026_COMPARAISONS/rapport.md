@@ -1,6 +1,6 @@
 # Lot ESC 2026 — comparaisons dans huit cours de C-01-Cardiologie
 
-Responsable : Claude (orchestrateur). Sous-agents : huit producteurs (un par cours) et un vérificateur indépendant. Date : 8 octobre 2026. Branche `claude/loving-shannon-spwrhc`. Base canonique : `b6e5d18c2c2383893819c4c0834d6402bbe30e67` (intégration Codex, lot 5 et adaptations comprises). Le SHA livré figure dans le message de commit et dans la PR.
+Responsable : Claude (orchestrateur). Sous-agents : huit producteurs (un par cours) et un vérificateur indépendant. Date : 8 octobre 2026. Branche `claude/loving-shannon-spwrhc`. Base canonique : `39b7ff0cc585c59ffbb99fb448940daa1950b34d` (convergence cardiologique de Codex, contenu `1fe3846`). Une première version préparée sur `b6e5d18` a été réappliquée sur cette base après la convergence : les huit cours s’appliquent sans échec. Le SHA livré figure dans le message de commit et dans la PR.
 
 ## Référentiels lus
 
@@ -62,7 +62,7 @@ Quatre documents ESC du 28.08.2026, lus en **texte intégral** (copies locales n
 python3 travail/justification/appliquer_justifications.py <CODE> travail/esc2026/<CODE> --ecrire   # 8 cours, aucun échec
 cp sources/chapters/<CODE>/*.html chapters/<CODE>/ ; python3 test_v7.py --static I30 I33 I34 I35 I40 I42 I44 Q21   # OK
 verifier_sigles.py <CODE> chapters/<CODE>/*.html   # {} pour les 8 cours
-MEDINA_OUT=../dist_esc python3 build_front.py ; build_front.py --fragment S01   # 16,2 Mo → 9,7 Mo ; S01 4,4 Mo
+MEDINA_OUT=../dist_esc python3 build_front.py ; build_front.py --fragment S01   # 16,2 Mo → 9,7 Mo ; S01 9,1 Mo → 4,4 Mo
 MEDINA_OUT=../dist_esc python3 test_v7.py I30 I33 I34 I35 I40 I42 I44 Q21   # OK (navigateur)
 git checkout -- chapters/ ; git clean -f chapters/   # sources canoniques restaurées
 python3 tools/livraison.py check-claude 'livraisons/Livraison Claude/C-01-Cardiologie'   # empreintes et chemins conformes
