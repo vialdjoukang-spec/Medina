@@ -1,12 +1,5 @@
 # MEDINA — dernière passation
 
-## Nouvelle organisation — 8 octobre 2026
-
-Les **21 fragments hors C-01-Cardiologie** sont attribués : **11 fragments entiers à Claude, 10 fragments entiers à Codex**. Lire [FRAGMENTS_RESTANTS.md](FRAGMENTS_RESTANTS.md) et [production_plan.json](../../organisation/production_plan.json). Un chapitre actif par agent ; contrôle, intégration et publication avant le suivant. La cardiologie reste dans sa mission actuelle, sans certification de complétude. Aucun nouveau chapitre n’est déclaré commencé par ce plan. Codex prend le relais de GPT « work » comme coordinateur ; sous-agents en parallèle dans chaque chapitre, puis audit croisé Claude → Codex et Codex → Claude **avant injection**. La [mission de Claude](CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md) est le point d’entrée opérationnel. Toutes les catégories restent sous leur fragment respectif ; les citer comme **code — intitulé (libellé complet du fragment)**.
-
-Les paragraphes datés du 7 octobre ci-dessous restent un historique ; les états les plus récents de l’intégration et les reçus doivent être relus avant production. Au contrôle du 8 octobre : `main` était à `f149128357ce6cdc7bb9d7c77a837e545facc814`, l’intégration à `648afc8c1274e091968ad3ce70260bba748776bb`. Les têtes des branches et des PR ont été récupérées par Git ; l’API GitHub a renvoyé HTTP 401, donc l’inventaire de leurs métadonnées demeure partiel. Aucune absence de livraison n’est déduite de cette limite.
-
-
 Mise à jour : 7 octobre 2026. Les quatorze cours du lot 5 et les compléments bibliographiques I48 sont intégrés et contrôlés sur les deux branches d’intégration au commit `c224eef68a870e02e229b1f201ad32b6801f5d11`. La remise S01 porte ce commit (187 sources) ; S02 reste exporté depuis `f9b654810619ac8206500ca23821eff9816002c1` (sources inchangées). La [PR #13](https://github.com/vialdjoukang-spec/Medina/pull/13) rassemble la livraison pour revue. Les réserves médicales et le Fragment 01 restent ouverts. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
 
 ## Priorité : expliquer pourquoi

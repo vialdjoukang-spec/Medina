@@ -1,0 +1,65 @@
+{
+  "result": "passed",
+  "timestamp": "2026-10-07T22:23:37.116659+00:00",
+  "scope": "Audit lexical des sigles connus uniquement ; aucune modification du rendu, des cours ou du glossaire, aucun audit médical exhaustif.",
+  "correction": "Tous les KEYS reconnus par AB_RE aux frontières lexicales sont retirés du texte candidat de l’audit, y compris les constituants séparés par un tiret ou une barre oblique. Aucune liste blanche ajoutée.",
+  "regression_tests": {
+    "count": 3,
+    "file": "tests/test_audit_glossary_boundaries.py",
+    "baseline_before_correction": "3 échecs reproduisant le défaut et la granularité du composant inconnu",
+    "after_correction": "passed",
+    "unknown_component": "ZZQINCONNU reste signalé ; ERCZZQINCONNU reste signalé faute de frontière lexicale"
+  },
+  "static": {
+    "result": "passed",
+    "command": "python3 test_v7.py --static I50 I21 I25 I48 I10 I30 I33 I35 I34 I00 I40 I42 I44 I47 I49 I46 Q21 J45 J44 J40 D84 M06 M32 T78 M31 I71 I80 I70 J18 I26 A41",
+    "courses": 31,
+    "course_codes": [
+      "I50",
+      "I21",
+      "I25",
+      "I48",
+      "I10",
+      "I30",
+      "I33",
+      "I35",
+      "I34",
+      "I00",
+      "I40",
+      "I42",
+      "I44",
+      "I47",
+      "I49",
+      "I46",
+      "Q21",
+      "J45",
+      "J44",
+      "J40",
+      "D84",
+      "M06",
+      "M32",
+      "T78",
+      "M31",
+      "I71",
+      "I80",
+      "I70",
+      "J18",
+      "I26",
+      "A41"
+    ],
+    "exit_code": 0
+  },
+  "unit_tests": {
+    "result": "passed",
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "tests": 83
+  },
+  "rendering": {
+    "artifact": "dist/fragments/MEDINA_S01_cardiovasculaire.html",
+    "command": "python3 build_front.py --fragment S01",
+    "sha256_before": "5dc467a411e99f7a41351eb348244ce4ba9e622f998bc42d9cdf9fdd8ff85ea0",
+    "sha256_after": "5dc467a411e99f7a41351eb348244ce4ba9e622f998bc42d9cdf9fdd8ff85ea0",
+    "unchanged": true,
+    "bytes": 4248465
+  }
+}

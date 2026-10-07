@@ -20,7 +20,7 @@ class AtomicOutputTests(unittest.TestCase):
                 Path(staging).write_bytes(b'complete')
                 self.assertEqual(target.read_bytes(), b'previous')
             self.assertEqual(target.read_bytes(), b'complete')
-            self.assertEqual(target.stat().st_mode & 0o777, 0o640)
+            self.assertEqual(target.stat().st_mode & 0o777, 0o644)
             self.assertFalse(Path(staging).exists())
 
     def test_first_output_is_not_exposed_before_success(self):
@@ -57,3 +57,4 @@ class AtomicOutputTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
