@@ -9,11 +9,6 @@
     "Claude": 11,
     "Codex": 10
   },
-  "workload_basis": "Nombre de catégories rattachées du catalogue historique CIM-10-GM 2024 : indicateur de volume, pas une mesure de complexité ni de complétude CIM-11. Les trois axes sans catégories nécessitent un inventaire propre.",
-  "baseline_categories": {
-    "Claude": 780,
-    "Codex": 779
-  },
   "rules": {
     "max_active_chapters_per_agent": 1,
     "max_active_fragments_per_agent": 1,
@@ -22,7 +17,8 @@
     "next_chapter_gate": "Sources complètes, relecture médicale et rédactionnelle, contrôles technique et navigateur réussis, intégration canonique, reçu et publication vérifiés avant le chapitre suivant.",
     "blocked_chapter_policy": "Un blocage conserve le chapitre actif ; il ne permet pas d’ouvrir un autre chapitre sans décision explicite du propriétaire.",
     "next_fragment_gate": "Achever et contrôler le périmètre du fragment actif selon COMPLETUDE_CIM11.md avant le suivant ; aucune certification tirée des seuls compteurs historiques.",
-    "start_gate": "Terminer la priorité cardiologie en cours selon les consignes partagées avant d’activer les files restantes. Les files ci-dessous sont attribuées, sans production déclarée commencée."
+    "start_gate": "Terminer la priorité cardiologie en cours selon les consignes partagées avant d’activer les files restantes. Les files ci-dessous sont attribuées, sans production déclarée commencée.",
+    "category_label_format": "code — intitulé (libellé complet du fragment)"
   },
   "agents": {
     "Claude": {
@@ -70,5 +66,7 @@
     },
     "injection_gate": "Audit croisé du commit source, correction des réserves bloquantes, puis injection et contrôles de la version intégrée",
     "claude_spec": "docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md"
-  }
+  },
+  "assignment_unit": "fragment",
+  "grouping_policy": "Chaque fragment est confié en entier à son responsable ; toutes ses catégories restent groupées sous ce fragment."
 }

@@ -38,7 +38,7 @@ La connexion peut être effectuée depuis [Claude Code sur le Web](https://claud
 | Claude | Production et reprise complète de ses 11 fragments ; contrelecture des chapitres Codex. |
 | Codex | Production et reprise complète de ses 10 fragments ; contrelecture des chapitres Claude, coordination de l’intégration et de la publication. |
 
-La [répartition obligatoire](FRAGMENTS_RESTANTS.md) impose un chapitre actif et un fragment actif par agent. Les 21 files sont enregistrées dans [production_plan.json](../../organisation/production_plan.json). La cardiologie conserve sa mission partagée ; elle n’est pas certifiée achevée. Chaque nouveau lot porte sur un seul chapitre, à clore avant de commencer le suivant.
+La répartition attribue **des fragments entiers** ; leurs catégories restent sous leur fragment et sont citées comme **code — intitulé (libellé complet du fragment)**. La [répartition obligatoire](FRAGMENTS_RESTANTS.md) impose un chapitre actif et un fragment actif par agent. Les 21 files sont enregistrées dans [production_plan.json](../../organisation/production_plan.json). La cardiologie conserve sa mission partagée ; elle n’est pas certifiée achevée. Chaque nouveau lot porte sur un seul chapitre, à clore avant de commencer le suivant.
 
 Une attribution coordonne les fichiers ; elle ne bloque pas leur lecture ni leur accès GitHub. Les observations et les modifications sont identifiées par fichier, repère et commit. La disponibilité d'une mission ne prouve pas son démarrage : seul le rapport de Claude établit ce qu'il a effectivement relu.
 

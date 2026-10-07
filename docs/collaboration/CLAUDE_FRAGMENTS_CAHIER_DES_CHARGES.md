@@ -2,7 +2,9 @@
 
 Consigne de Vial du **8 octobre 2026**. **Codex, coordinateur de cette session, prend le relais de GPT « work »** pour l'organisation, la réception, les audits croisés, l'injection et la publication. Conserver les contributions et les commits de GPT « work » et des autres sessions ; une priorité de coordination ne permet pas de les supprimer ou de les écraser.
 
-**Mission Claude : produire ou reprendre ses 11 fragments, avec un seul chapitre actif, puis auditer indépendamment chaque chapitre remis par Codex.** Claude et Codex avancent en parallèle sur leurs chapitres respectifs. Chaque responsable utilise plusieurs sous-agents spécialisés **dans son chapitre actif**. La disponibilité de ce document ne prouve ni que Claude l'a lu, ni qu'une session Claude a démarré.
+**La répartition porte sur des fragments entiers : 11 fragments pour Claude et 10 fragments pour Codex. Mission Claude : produire ou reprendre ses 11 fragments, avec un seul chapitre actif, puis auditer indépendamment chaque chapitre remis par Codex.** Toutes les catégories et sous-catégories restent regroupées dans leur fragment propriétaire ; aucune redistribution de catégories entre responsables n'est autorisée par cette répartition. Claude et Codex avancent en parallèle sur leurs chapitres respectifs. Chaque responsable utilise plusieurs sous-agents spécialisés **dans son chapitre actif**. La disponibilité de ce document ne prouve ni que Claude l'a lu, ni qu'une session Claude a démarré.
+
+**Nomenclature obligatoire : chaque catégorie ou chapitre cité dans le texte, les tableaux, les rapports et les navigations apparaît sous la forme `code — intitulé (libellé complet du fragment)`.** Employer le titre canonique du chapitre lorsqu'on cite un cours, et l'intitulé officiel du catalogue lorsqu'on cite une catégorie. Les codes techniques des commandes, identifiants et chemins restent stables ; leur désignation complète figure dans le texte qui les présente.
 
 ## 1. Références et reprise obligatoire
 
@@ -23,25 +25,25 @@ Vérifier les têtes de `main` et de `codex/sciences-cs-fragments-20261007`. Le 
 
 ## 2. Les 11 fragments dont Claude est responsable
 
-Suivre cet ordre ; les identifiants et libellés proviennent du registre partagé. L'indicateur de volume équilibre la répartition historique : **780 catégories Claude et 779 Codex**, sans mesurer la difficulté ni la couverture CIM-11.
+Suivre cet ordre ; les identifiants et libellés proviennent du registre partagé. **Chaque ligne attribue l'ensemble du fragment**, avec ses catégories, ses sous-catégories, ses chapitres et ses contenus associés. Cette liste ne distribue pas les catégories individuellement entre Claude et Codex.
 
-| File Claude | ID stable | Libellé exact | Catégories historiques |
-| --- | --- | --- | ---: |
-| 1 | S02 | P-02-Pneumologie | 64 |
-| 2 | S03 | G-04-Gastroentérologie et hépatologie | 102 |
-| 3 | S05 | E-06-Endocrinologie et métabolisme | 77 |
-| 4 | S06 | H-08-Hématologie | 44 |
-| 5 | S14 | G-10-Gynécologie et sénologie | 50 |
-| 6 | T2 | M-12-Médecine des âges de la vie | 0 |
-| 7 | S10 | R-14-Rhumatologie et orthopédie | 155 |
-| 8 | S12 | O-17-Oto-rhino-laryngologie et médecine bucco-dentaire | 80 |
-| 9 | S13 | O-18-Ophtalmologie | 56 |
-| 10 | T3 | M-19-Médecine d’urgence, traumatologie et toxicologie | 152 |
-| 11 | T7 | E-22-Éthique médicale, droit et communication | 0 |
+| File Claude | ID stable | Libellé exact du fragment entier |
+| --- | --- | --- |
+| 1 | S02 | P-02-Pneumologie |
+| 2 | S03 | G-04-Gastroentérologie et hépatologie |
+| 3 | S05 | E-06-Endocrinologie et métabolisme |
+| 4 | S06 | H-08-Hématologie |
+| 5 | S14 | G-10-Gynécologie et sénologie |
+| 6 | T2 | M-12-Médecine des âges de la vie |
+| 7 | S10 | R-14-Rhumatologie et orthopédie |
+| 8 | S12 | O-17-Oto-rhino-laryngologie et médecine bucco-dentaire |
+| 9 | S13 | O-18-Ophtalmologie |
+| 10 | T3 | M-19-Médecine d’urgence, traumatologie et toxicologie |
+| 11 | T7 | E-22-Éthique médicale, droit et communication |
 
-Les deux axes à zéro catégorie exigent un inventaire pédagogique et des chapitres nommés. Ils ne sont pas terminés par défaut. Les cours transversaux ont **un producteur unique** ; coordonner les renvois vers les passages spécifiques accessibles dans tous les fragments consommateurs. Ainsi, **M30 doit renvoyer au cours primaire M31, produit par Codex dans S07 — I-13-Immunologie et allergologie** : Claude ne crée pas une production M30 indépendante dans S10 — R-14-Rhumatologie et orthopédie. Vérifier les variantes propres à M30 dans ce cours commun et leurs accès depuis S10.
+Les axes transversaux exigent également un inventaire pédagogique et des chapitres nommés. Ils ne sont pas terminés par défaut. Les cours communs existants conservent **un producteur unique**, sans modifier les rattachements de leurs catégories : coordonner les renvois vers les passages spécifiques accessibles dans tous les fragments consommateurs. Ainsi, **M30 — Périartérite noueuse et affections apparentées (R-14-Rhumatologie et orthopédie)** reste une catégorie du fragment Claude et renvoie au cours primaire **M31 — Vascularites systémiques (I-13-Immunologie et allergologie)**, produit par Codex selon l'organisation commune existante. Claude ne crée pas un deuxième cours indépendant pour cette catégorie. Ce renvoi ne transfère ni la catégorie ni ses sous-catégories au fragment Codex ; vérifier leurs enseignements spécifiques dans le cours commun et leur accès depuis le fragment propriétaire Claude.
 
-Le premier point d'entrée après vérification de la priorité cardiologie est **J45 — Asthme**, en **P-02-Pneumologie**, en commençant par sa revue exhaustive si elle reste ouverte. Le titre canonique est `Asthme` dans `chapters.json` et `MECHANISMS_PLAN.json` ; conserver ce titre dans les rapports et navigations. Le cours regroupe actuellement J45/J46 : vérifier les enseignements spécifiques, sans assimiler le regroupement à une couverture complète. **A41 — Sepsis et choc septique de l’adulte**, en **I-03-Infectiologie**, est le premier point d'entrée Codex et la première cible d'audit croisé lorsque Codex en publie une remise. Ces points d'entrée ne constituent pas une déclaration de démarrage.
+Le premier point d'entrée après vérification de la priorité cardiologie est **J45 — Asthme (P-02-Pneumologie)**, en commençant par sa revue exhaustive si elle reste ouverte. Le titre canonique est `Asthme` dans `chapters.json` et `MECHANISMS_PLAN.json` ; conserver ce titre dans les rapports et navigations. Le cours traite aussi **J46 — État de mal asthmatique (P-02-Pneumologie)** : vérifier les enseignements spécifiques, sans assimiler le regroupement à une couverture complète et sans déplacer les catégories. **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** est le premier point d'entrée Codex et la première cible d'audit croisé lorsque Codex en publie une remise. Ces points d'entrée ne constituent pas une déclaration de démarrage.
 
 ## 3. Parallélisme autorisé et responsabilité des fichiers
 
@@ -59,7 +61,7 @@ Claude désigne un responsable d'assemblage et délègue, dans la limite des res
 | Fenêtres et pédagogie | Préparer fenêtres contextualisées, figures, tableaux, quiz, Pareto et glossaire ; conserver les informations décisives dans le texte principal. | Fichiers auxiliaires dédiés ou propositions identifiées, sans écriture dans les quatre onglets possédés par d'autres agents. |
 | Audit technique et assemblage | Vérifier contrat HTML, liens, identifiants, abréviations, compilation et navigateur. | Journaux de contrôles et anomalies localisées ; aucune certification médicale déduite des tests. |
 
-Avant chaque délégation, donner à chaque sous-agent : le code et titre du chapitre, le fragment, le SHA de départ, les chemins qu'il peut modifier, les chemins en lecture seule, les notions attendues, les références à vérifier et le format de remise. Certains rôles peuvent partager un agent ou s'exécuter par vagues selon le nombre de places ; cela ne change pas le périmètre actif.
+Avant chaque délégation, donner à chaque sous-agent : la désignation `code — intitulé (libellé complet du fragment)`, le SHA de départ, les chemins qu'il peut modifier, les chemins en lecture seule, les notions attendues, les références à vérifier et le format de remise. Certains rôles peuvent partager un agent ou s'exécuter par vagues selon le nombre de places ; cela ne change pas le périmètre actif ni le regroupement des catégories dans le fragment propriétaire.
 
 **Un seul auteur par fichier à un instant donné.** Les recherches et relectures peuvent être parallèles ; les écritures concurrentes dans un même HTML, glossaire, manifeste, banque JSON ou fichier partagé sont interdites. L'assembleur applique les propositions transversales après réception. Les sous-agents ne font pas de `checkout`, `reset`, fusion ou commit simultané dans un checkout partagé. Réserver les opérations Git au responsable et utiliser des fichiers intermédiaires distincts si nécessaire.
 
@@ -67,7 +69,7 @@ Claude conserve sa branche et ses commits ; il ne pousse pas sur la branche Code
 
 ## 4. Réserver et terminer un chapitre
 
-Relire le dernier plan partagé avant réservation. Déclarer au coordinateur, avec le SHA de référence et le rapport prévu, un objet unique de cette forme :
+Relire le dernier plan partagé avant réservation. Pour **J45 — Asthme (P-02-Pneumologie)**, déclarer au coordinateur, avec le SHA de référence et le rapport prévu, un objet unique de cette forme ; les champs techniques gardent leurs valeurs canoniques distinctes :
 
 ```json
 {
@@ -88,7 +90,7 @@ Chaque affirmation médicale ou décision doit exposer sa justification causale 
 
 Employer un français professionnel compréhensible, des phrases complètes, un développement logique et des exemples chiffrés exacts lorsque utiles ; expliquer le normal avant le pathologique. Introduire et commenter les tableaux. Toute abréviation possède sa définition littérale dans le glossaire. Respecter le contrat HTML, la liste de classes, les préfixes du code et les critères diagnostiques formels finaux, puis les paramètres clés.
 
-Pour **J45 — Asthme**, vérifier explicitement la cohérence entre diagnostic et confirmation objective, diagnostics différentiels, appréciation du contrôle et du risque, traitement de fond et de secours, technique et observance des dispositifs, exacerbation aiguë, limites d'application selon la population et suivi. Justifier chaque point à partir des sources officielles effectivement consultées ; ne pas annoncer une version de recommandation ou une dose comme vérifiée sans cette consultation.
+Pour **J45 — Asthme (P-02-Pneumologie)**, vérifier explicitement la cohérence entre diagnostic et confirmation objective, diagnostics différentiels, appréciation du contrôle et du risque, traitement de fond et de secours, technique et observance des dispositifs, exacerbation aiguë, limites d'application selon la population et suivi. Justifier chaque point à partir des sources officielles effectivement consultées ; ne pas annoncer une version de recommandation ou une dose comme vérifiée sans cette consultation.
 
 Le chapitre reste actif si une source, un audit, un accès, un contrôle ou une publication bloque. Rapporter ce blocage avec son opération précise et poursuivre les travaux utiles **dans ce chapitre**, dont la contrelecture disponible. Seule une décision explicite du propriétaire permet sa suspension et l'ouverture d'une autre production. L'attente d'injection n'autorise pas à démarrer le chapitre suivant.
 
@@ -100,7 +102,7 @@ Le manifeste conserve, pour chaque remplacement, `target_path`, `source_path` et
 
 Chaque rapport, selon [`REVIEW_TEMPLATE.md`](REVIEW_TEMPLATE.md), comporte :
 
-- Identité du responsable, sous-agents mobilisés, code et intitulé complet, fragment, lot et dates.
+- Identité du responsable, sous-agents mobilisés, désignation `code — intitulé (libellé complet du fragment)`, lot et dates ; regrouper les catégories et sous-catégories sous leur fragment propriétaire.
 - Branche, SHA complet de départ, SHA effectivement relu, SHA livré et lien de PR ; compléter le SHA livré après le commit, sans inventer une référence future.
 - Liste des sources canoniques et des copies modifiées, empreintes, périmètre détaillé par onglet et repère stable.
 - Matrice des affirmations contrôlées et des corrections, sources primaires avec version, URL/DOI, section/page/tableau, date de consultation et statut d'accès au texte.
@@ -120,13 +122,13 @@ L'auditeur examine un SHA complet fixé et publie son propre rapport. Il consult
 
 **Une erreur médicale, une réserve majeure non résolue, une perte de contenu utile ou un contrôle requis en échec bloque l'injection.** Le coordinateur réceptionne la remise, enregistre les observations et conserve le chapitre actif. Les observations mineures restantes nécessitent une décision explicite et motivée dans le reçu ; elles ne doivent pas être masquées par une mention globale « validé ».
 
-Pour l'audit de **A41 — Sepsis et choc septique de l’adulte**, vérifier notamment définitions et limites diagnostiques, recherche du foyer et diagnostics différentiels, prélèvements, traitement anti-infectieux et réévaluation, contrôle du foyer, réanimation et surveillance, populations particulières et justifications physiopathologiques. Vérifier les seuils, doses, unités et délais dans les recommandations effectivement consultées. Aucun point n'est déclaré conforme par cette liste seule.
+Pour l'audit de **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)**, vérifier notamment définitions et limites diagnostiques, recherche du foyer et diagnostics différentiels, prélèvements, traitement anti-infectieux et réévaluation, contrôle du foyer, réanimation et surveillance, populations particulières et justifications physiopathologiques. Vérifier les seuils, doses, unités et délais dans les recommandations effectivement consultées. Aucun point n'est déclaré conforme par cette liste seule.
 
 Les autoaudits et les rapports de sous-agents de l'auteur sont utiles à la préparation, mais ne remplacent pas la contrelecture de l'autre responsable. Claude remet ses audits Codex sur sa propre branche, avec code, titre, SHA examiné et conclusion ; il ne corrige pas directement la branche Codex.
 
 ## 7. Contrôles, injection et publication coordonnés par Codex
 
-Effectuer les contrôles préparatoires utiles sur le lot avant remise, puis les répéter sur les sources canoniques résultant de l'injection. Pour le premier chapitre Claude, les commandes existantes sont :
+Effectuer les contrôles préparatoires utiles sur le lot avant remise, puis les répéter sur les sources canoniques résultant de l'injection. Pour **J45 — Asthme (P-02-Pneumologie)**, premier chapitre Claude prévu, les commandes existantes sont :
 
 ```bash
 python3 tools/production_plan.py
