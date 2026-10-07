@@ -18,6 +18,6 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 | I46 — Arrêt cardiaque | fait | fait (125 acceptés, 33 corrigés, 4 rejetés ; 9 fenêtres corrigées) | fait : test statique OK | voir journal |
 | Q21 — Cardiopathies congénitales de l’adulte | | | | |
 | I71 — Anévrismes et dissections artérielles | fait | fait (81 acceptés, 20 corrigés ; 8 fenêtres corrigées) | fait : test statique OK, 7 260 → 13 325 mots ; métadiscours de Sciences réécrit | voir journal |
-| I80 — Thrombose veineuse profonde et thromboses veineuses | | | | |
+| I80 — Thrombose veineuse profonde et thromboses veineuses | fait | fait (62 acceptés, 21 corrigés, 2 ajouts ; 12 fenêtres corrigées) | fait : test statique OK, 7 292 → 14 030 mots | voir journal |
 
 Reprise après interruption : les résultats partiels de chaque cours sont dans `<CODE>/`. Un producteur interrompu se relance sur ses seuls fichiers ; ses sorties existantes sont réutilisées si elles sont complètes.
