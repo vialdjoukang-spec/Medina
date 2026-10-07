@@ -289,3 +289,33 @@ Pour isoler les conflits textuels, sept simulations avec `git merge-file --stdou
 Une fusion textuelle propre ne prouve ni cohérence médicale ni conformité des références et ne rend pas les anciennes empreintes applicables. Les résultats simulés restent des propositions non relues, non compilées et non injectées. L'assemblage de validation doit reprendre **l'ensemble du canonique actuel**, y compris ses autres fichiers et glossaires corrigés, puis y rapprocher le seul chapitre retenu ; un build basé sur l'ancien checkout ne prouverait pas la version à intégrer.
 
 **Décision : application directe non conforme au canonique `39b7ff0`.** Préserver les sept adaptations, réconcilier chapitre par chapitre avec attribution et diff explicites, puis réauditer les sources résultantes et leurs nouveaux SHAs. Ne pas changer simplement `source_commit` ou les anciennes empreintes dans le manifeste de Claude pour contourner ce refus. Les conditions d'audit croisé, de contrôle mobile, de fragment autonome et de publication restent ouvertes. Le bilan réussi sur `b6e5d18` est conservé comme preuve de cette base historique uniquement.
+
+## Bilan de détection — tête Claude `482a6799`
+
+**Le paquet ESC n'est plus présent aux chemins indiqués par son manifeste, alors que son signal `pret_audit` est inchangé.** La tête examinée avec le poste de réception est `482a6799b3e076bf49e9699b6091c82d54c2d105`, dans le miroir `/workspace/medina-env/claude-watch/git`. Comparaisons fixées avec `3f90204dc663d6f7dee3e98bbd5819d457b6a586`, puis `32f7c668814b8c022db67b064af6de70bae61015`.
+
+Les trois bilans précédents sont conservés. Aucun test portant sur leurs objets identiques n'a été répété, aucun code entrant exécuté, aucune source canonique modifiée et aucune injection réalisée.
+
+### Identité des pièces et disparition des sources
+
+Le manifeste racine `C-01-Cardiologie/livraison.json`, le rapport `archives/2026-10-08-ESC2026_COMPARAISONS/rapport.md` et `docs/collaboration/SIGNAUX_CLAUDE.json` sont identiques octet par octet aux deux têtes de comparaison. Le manifeste conserve ses 25 entrées, sa base `b6e5d18` et son empreinte SHA-256 `4b2d8cb926be3e725b287246b9504259a1e12b6462f54cada735483c2f39da60`. Le signal désigne toujours le commit de livraison `020e65b721415481298d0cf295ba0ed8966875ea`.
+
+En revanche, la vérification de chacun des 25 `source_path` à la tête détectée constate **25 absences sur 25**. `git ls-tree` confirme qu'il ne reste aucun fichier sous `livraisons/Livraison Claude/C-01-Cardiologie/sources/`. Ces suppressions apparaissent dans le diff du commit `85cf03db3b3a57d4e3340a96b69b3533a18cd222`, consacré à l'intégration de la convergence cardiologique, par rapport à son parent `5a7d3196a7e5c70972988a218fcae2ca9a79ebed`.
+
+L'index des objets Git de la tête détectée a été comparé aux 25 blobs de sources assemblées de la livraison précédente : **aucun des 25 blobs exacts ne figure à un chemin sous les archives Claude de cette tête**. Les nouveaux dossiers d'archives B6DB50C ne sont donc pas une copie intacte de cette livraison ESC. La présence d'une archive de même chapitre ou d'un fichier très similaire ne suffit pas à rétablir son identité.
+
+Les sources exactes demeurent lisibles au commit livré `020e65b721415481298d0cf295ba0ed8966875ea` et à `3f90204`. Il ne s'agit pas d'une perte de leur historique Git. Une récupération éventuelle doit viser ce commit figé et ses empreintes, puis résoudre les sept divergences canoniques décrites dans l'addendum précédent ; elle ne peut pas consister à remplacer les sources manquantes par les copies historiques voisines. Aucun fichier n'a été restauré par ce poste.
+
+### Provenance des preuves nouvellement visibles
+
+La différence avec les anciennes têtes fait apparaître de nombreux journaux, reçus, tests et revues. Cependant, les comparaisons ciblées avec le canonique `39b7ff0cc585c59ffbb99fb448940daa1950b34d` sont toutes **vides** pour : `audits/`, `tests/`, `chapters/`, `glossary/`, `docs/collaboration/receipts/` et `docs/collaboration/reviews/`. Ces pièces sont celles de la convergence déjà publiée, reprises dans la branche Claude.
+
+Elles ne constituent pas de nouvelles preuves de build, d'ouverture mobile ou de fragment autonome pour les 25 sources ESC précédemment livrées. Le rapport comparatif inchangé maintient ses contrôles non exécutés ; aucun nouvel audit croisé accepté au SHA du paquet n'est apporté par cette mise à jour. Aucune réussite héritée de la convergence n'est réattribuée au lot ESC.
+
+### Nouveaux brouillons effectivement détectés
+
+Depuis `32f7c668`, six HTML de brouillon sont modifiés pour **I83 — Varices des membres inférieurs et maladie veineuse chronique (C-01-Cardiologie)**, et six pour **I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)**. Un nouveau complément `travail/production/I89/glossary_i89_verif_cd.py` a été ajouté et parsé avec `ast.parse`, sans erreur et sans exécution. Les contrôles des fichiers Python identiques n'ont pas été rejoués.
+
+Ces données demeurent sous `travail/production/`, hors du manifeste comparatif ; les signaux inchangés maintiennent les deux productions en `en_production`. Aucun nouveau manifeste de ces chapitres ou compte rendu de build/navigateur achevé n'apparaît dans leurs dossiers. L'évolution de leurs brouillons ne démontre ni leur livraison, ni la clôture de leur audit.
+
+**Décision du poste : nouvel événement reçu, sans nouvelle livraison injectable.** Le signal de disponibilité doit être rapproché de la présence réelle des fichiers au SHA auquel il est lu. À cette tête, les chemins du paquet sont inutilisables ; au commit antérieur livré, les sources sont encore accessibles mais doivent être réconciliées avec le canonique actuel et soumises aux audits et contrôles manquants. Aucune application automatique n'est justifiée par le signal `pret_audit` inchangé.

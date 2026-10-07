@@ -149,3 +149,27 @@ Comparaison de provenance dans le miroir `/workspace/medina-env/claude-watch/git
 - Cette comparaison ponctuelle ne constitue **aucun audit médical** des nouveaux brouillons ni une approbation de la tête postérieure. Elle permet seulement de rattacher le paquet inchangé aux preuves de réception figées ci-dessus.
 
 Les analyses médicale et technique conservent leur périmètre exact. Toute tête ultérieure ou modification des pièces manifestées reste à réexaminer ; aucune autosauvegarde future n’est déclarée auditée.
+
+## Réception ponctuelle à `482a679` — sources du paquet devenues absentes
+
+**Blocage de réception à la tête courante examinée : le manifeste, le rapport et le signal ESC restent identiques, mais les 25 fichiers de sources manifestés sont absents. Le paquet reçu demeure récupérable dans les objets Git de son ancien commit ; le dossier courant n’est plus une remise applicable.**
+
+La veille a détecté la tête `482a6799b3e076bf49e9699b6091c82d54c2d105` le `2026-10-07T23:14:39Z` (**8 octobre 2026, 01:14:39 CEST**). Ce contrôle fige ce SHA, dont le commit est daté de `2026-10-07T23:12:56Z` (**01:12:56 CEST**), et compare depuis `32f7c668814b8c022db67b064af6de70bae61015` dans le miroir de production. La branche Claude et la PR #12 pointent vers cette tête au contrôle.
+
+| Pièce examinée | Résultat à cette tête | Preuve |
+| --- | --- | --- |
+| `C-01-Cardiologie/livraison.json` | Identique au manifeste ESC reçu | Blob `f97e7e568332fabede091663a311b4d40b69e498` inchangé |
+| Rapport `archives/2026-10-08-ESC2026_COMPARAISONS/rapport.md` | Identique | Blob `285d4f54f7e551e45b057697bc5a899e9a4c2b96` inchangé |
+| `docs/collaboration/SIGNAUX_CLAUDE.json` | Identique ; annonce encore `pret_audit` au commit `020e65b` | Blob `77ea569de78a081b03e8e4530d984732b32f891f` inchangé ; `audits_de_codex=[]` |
+| Les 25 `source_path` de ce manifeste | **25 absents sur 25** | Delta ciblé : suppression des 25 chemins `C-01-Cardiologie/sources/chapters/…` |
+| Localisation des 25 anciens blobs dans tout l’arbre courant | **0 présents sur 25** | Correspondance par identifiant d’objet Git, tous les chemins de l’arbre explorés, archives comprises |
+
+Le delta contient une fusion de la convergence cardiologique de Codex au commit `85cf03db3b3a57d4e3340a96b69b3533a18cd222`, qui importe notamment `1fe38461d8502fb7984d66b0fe223afecd759889` et `39b7ff0cc585c59ffbb99fb448940daa1950b34d`, puis plusieurs sauvegardes de brouillons. Les archives historiques ajoutées dans cette fusion ne constituent pas une nouvelle remise Claude. La recherche des blobs montre que les 25 copies ESC finales ne sont **pas simplement déplacées intactes** dans ces archives. Les sources originales restent consultables dans les commits figés `020e65b721415481298d0cf295ba0ed8966875ea`, `3f90204dc663d6f7dee3e98bbd5819d457b6a586` et `32f7c668814b8c022db67b064af6de70bae61015`.
+
+**I83 — Varices des membres inférieurs (C-01-Cardiologie)** : six brouillons HTML modifiés depuis la tête précédente (`a/b/c/pop1/pop2/pop3`), aucune nouvelle remise finalisée ni manifeste propre visible. Le signal reste `en_production`.
+
+**I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)** : six brouillons HTML modifiés (`a/c/d/pop1/pop3/pop4`) et `glossary_i89_verif_cd.py` ajouté. Ce fichier indique une activité de vérification, sans constituer à lui seul un verdict global ou une remise finalisée. Le signal reste `en_production`.
+
+**A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : **aucun nouvel audit croisé de Claude reçu dans les objets examinés**. Aucun delta dans `audits/A41.md` ou le dossier de livraison Claude I-03-Infectiologie. Les références à ce chapitre ajoutées dans la fusion concernent des inventaires, exports, résultats techniques et une revue de prose historique de Codex ; elles ne prouvent pas la contrelecture du chapitre actif remise par Claude. Aucun audit Codex n’est enregistré dans `SIGNAUX_CLAUDE.json`.
+
+Conséquence : conserver le paquet ancien et ses audits à leurs SHA exacts ; ne pas appliquer automatiquement le dossier de livraison à `482a679`. Avant toute éventuelle injection, restaurer explicitement les pièces autorisées depuis le bon commit, résoudre les réserves médicales et adapter le paquet à la nouvelle base canonique. Aucun rétablissement de fichiers, aucun code entrant, aucune injection exécutés par ce poste. Les têtes postérieures restent en attente d’une nouvelle réception ; ce contrôle ne poursuit pas les autosauvegardes indéfiniment.

@@ -54,7 +54,7 @@
         "fragment_id": "T1",
         "code": "A41",
         "title": "Sepsis et choc septique de l’adulte",
-        "stage": "writing",
+        "stage": "review",
         "base_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
         "report_path": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md"
       }
@@ -93,7 +93,14 @@
       "workflow": ".github/workflows/claude_watch.yml",
       "interval_seconds": 300,
       "state_directory": "/workspace/medina-env/claude-watch",
-      "scope": "Détecter et préparer la file ; audit médical et injection sous contrôle du coordinateur et des sentinelles."
+      "scope": "Détecter et préparer la file ; audit médical et injection sous contrôle du coordinateur et des sentinelles.",
+      "github_first_successful_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37701215617"
+    },
+    "claude_a41_request": {
+      "review_source_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+      "comment_url": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048784611",
+      "status": "posted_acknowledgement_pending",
+      "scope": "Contrelecture initiale de la base ; aucune correction médicale nouvelle livrée"
     }
   },
   "assignment_unit": "fragment",
