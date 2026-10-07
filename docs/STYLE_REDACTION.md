@@ -28,16 +28,16 @@ Les **titres** restent des groupes nominaux courts : c’est leur fonction. Les 
 
 Chaque îlot, chaque sous-partie (h3) et chaque discipline des sciences suit le même mouvement.
 
-1. **L’annonce** ouvre la partie en deux à quatre phrases. Elle dit ce que la partie va établir, pourquoi le lecteur en a besoin et comment elle se relie à la partie précédente.
+1. **L'annonce** expose directement le problème médical, le mécanisme ou la situation clinique. Sa longueur dépend de l'information nécessaire. Elle ne décrit ni le plan ni la fabrication du cours : « cet îlot présente », « cette section explique » et « le lecteur apprend » sont proscrits.
 2. **Le développement** progresse du normal au pathologique, du mécanisme à la décision. Il donne un exemple chiffré ou un patient pour chaque notion nouvelle. Il place un **mot vert cliquable** sur chaque notion qui mérite un approfondissement (§ 5).
 3. **L’épilogue local** ferme la partie dans un encadré `<div class="key"><b>À retenir.</b> …</div>`. Il résume en phrases complètes ce que le lecteur doit savoir faire après cette partie, puis annonce le lien avec la partie suivante.
 
-La densité informationnelle compte autant que la clarté. Une partie qui tient en un paragraphe n’est pas développée : elle doit contenir le mécanisme, les chiffres utiles, les situations particulières, les pièges et la conséquence pratique.
+La densité informationnelle compte autant que la clarté. La profondeur se juge sur les mécanismes expliqués, les données utiles, les situations particulières, les pièges et les conséquences pratiques. Un nombre minimal de mots ou de paragraphes ne prouve pas la qualité. Une formulation plus courte est préférable lorsqu'elle conserve toute l'information nécessaire.
 
 ## 4. Aucun tableau sans introduction ni lecture
 
 Un tableau n’apparaît jamais seul. Il suit toujours ce schéma :
-1. **Avant le tableau**, un paragraphe explique la question à laquelle le tableau répond, les paramètres comparés et la logique de ses colonnes (« La première colonne donne le paramètre mesuré ; la deuxième donne la valeur normale de l’adulte ; la troisième indique le seuil qui change la décision. »).
+1. **Avant le tableau**, le texte pose la question clinique et explique la comparaison utile. Il ne paraphrase pas les en-têtes et ne décrit pas les colonnes lorsque leur sens est déjà explicite.
 2. **Le tableau** porte des en-têtes explicites.
 3. **Après le tableau**, un paragraphe de lecture enseigne comment s’en servir : ce qu’il faut regarder d’abord, l’erreur fréquente, et un exemple de patient lu à travers le tableau.
 

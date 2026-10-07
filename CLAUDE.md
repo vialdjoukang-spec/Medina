@@ -1,5 +1,13 @@
 # CLAUDE.md — MEDINA (Atlas des cours de médecine par systèmes)
 
+## Consigne prioritaire de Vial — 7 octobre 2026
+
+Vial a donné son **accord permanent pour les publications et contributions GitHub dans MEDINA** : branches, commits, pushes, rapports et pull requests. Les actions courantes de collaboration ne nécessitent pas une nouvelle confirmation. Lire [le point d'entrée commun](docs/collaboration/README.md) et [la dernière passation](docs/collaboration/HANDOFF_LATEST.md). Claude peut lire tout le dépôt et proposer des modifications sur sa branche ; cette autorisation ne remplace pas sa connexion GitHub effective. Après chaque lot terminé, publier sources, contrôles et rapport, puis actualiser la passation pour rendre le travail immédiatement accessible à l'autre IA. Les fusions suivent les contrôles du projet et les protections GitHub.
+
+La complétude demandée porte désormais sur **toutes les catégories et sous-catégories pertinentes de la CIM-11**, dans chaque système. Le catalogue historique de ce dépôt reste en CIM-10-GM 2024 ; il ne prouve pas cette complétude. Lire [la règle de complétude](docs/COMPLETUDE_CIM11.md) et [le relevé actuel](audits/COMPLETUDE_2026-10-07/README.md). Aucun fragment livré n'est certifié complet en CIM-11.
+
+Claude doit relire **intégralement les 30 cours livrés et la Sémiologie CS**, pour la médecine, la pédagogie et le français professionnel. Lire [la mission globale](docs/collaboration/CLAUDE_AUDIT_GLOBAL_2026-10-07.md). La mission ciblée I48 reste une sous-tâche. Une annonce pédagogique expose directement le problème médical ; elle ne décrit pas « cet îlot » ou la fabrication du cours. Supprimer les répétitions et le remplissage sans retirer une information utile. Ces instructions actuelles priment sur les anciens objectifs de longueur et sur toute mention historique de système achevé.
+
 > Fichier lu automatiquement par Claude Code à chaque session. **Lire ensuite `PROMPT_MEDINA.md` en entier** (prompt maître, source de vérité) et `CHAPTER_SPEC.md` (contrat HTML historique).
 
 ## Propriétaire et mission
@@ -7,7 +15,7 @@
 - Rôle : professeur omnipraticien et enseignant de médecins assistants. Chaque pathologie est traitée comme une notion nouvelle, des généralités au point pointu, avec l’obsession de faire comprendre. Sources suisses d’abord, puis européennes et internationales acceptées en Suisse.
 - Communication : français, ton chaleureux, réponses structurées (titres, gras, tableaux), denses, sans remplissage. Il dicte souvent (approximations de transcription). Ne pas corriger son propre texte sans demande.
 - **Autonomie de livraison** : quand les contrôles passent, intégrer et livrer sans demander d’accord ; ne le solliciter qu’en cas d’échec d’audit ou de blocage réel.
-- **Aucune économie sur le contenu** : il a levé le verrou d’économie. Ne jamais condenser un cours.
+- **Profondeur et rédaction** : préserver toutes les notions utiles ; supprimer les répétitions et le remplissage. Aucun objectif de longueur ne remplace la qualité.
 - Terminer chaque livraison par un **tableau de bord** (cours, catégories traitées, systèmes, poids du fichier, alertes).
 
 ## Démarrage rapide

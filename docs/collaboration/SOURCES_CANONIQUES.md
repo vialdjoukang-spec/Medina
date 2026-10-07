@@ -10,6 +10,8 @@ Un seuil, une manœuvre ou une posologie exige la lecture du passage concerné d
 
 ## Références par système
 
+Pour la classification et la complétude, la référence est la [CIM-11 MMS 2026-01 en français, OMS](https://icd.who.int/browse/2026-01/mms/fr), consultée le 7 octobre 2026. Le navigateur officiel donne accès au tableur et aux tables de correspondance. Le catalogue local CIM-10-GM 2024 ne remplace pas cet inventaire. La [règle de complétude](../COMPLETUDE_CIM11.md) précise les preuves attendues pour chaque catégorie et sous-catégorie.
+
 Les lignes séparent la question clinique de la référence qui doit l'étayer. Les années désignent les versions identifiées lors de cette session d'octobre 2026 ; elles ne signifient pas que chaque algorithme de MEDINA a déjà été mis à jour.
 
 | Identifiant | Fragment et question | Sources canoniques | Usage et limite |
