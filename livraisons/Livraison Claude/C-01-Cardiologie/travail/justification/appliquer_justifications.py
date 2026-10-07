@@ -111,7 +111,7 @@ def main():
         if meta.get("fusionnee_dans"):
             bilan["fenetres_echecs"].append(tag + " fusionnée dans " + meta["fusionnee_dans"])
         retirees = {a["id"] for a in meta.get("ancres_retirees", [])}
-        labels = {a["id"]: a["label"] for a in meta.get("label_modifies", [])}
+        labels = {a["id"]: a.get("label") or a["nouveau"] for a in meta.get("label_modifies", [])}
         cible_cle = meta.get("fusionnee_dans") or cle
         for a in w["ancres"]:
             if a["id"] in retirees:
