@@ -12,7 +12,7 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 | I00 — Rhumatisme articulaire aigu | fait | fait (87 acceptés, 30 corrigés, 2 rejetés ; 12 fenêtres corrigées) | fait : test statique OK, 21 464 → 27 035 mots | voir journal |
 | I40 — Myocardites | fait | fait (157 acceptés, 31 corrigés ; 11 fenêtres corrigées) | fait : test statique OK, 24 113 → 33 442 mots | voir journal |
 | I42 — Cardiomyopathies | fait | fait (112 acceptés, 28 corrigés, 10 ajouts du vérificateur ; doublon FA fusionné) | fait : test statique OK, 29 325 → 35 839 mots | voir journal |
-| I44 — Troubles de la conduction et bradycardies | en cours | | | |
+| I44 — Troubles de la conduction et bradycardies | fait | fait (115 acceptés, 22 corrigés, 1 rejeté ; 9 fenêtres corrigées) | fait : test statique OK | voir journal |
 | I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires | | | | |
 | I49 — Extrasystoles et autres arythmies | | | | |
 | I46 — Arrêt cardiaque | | | | |

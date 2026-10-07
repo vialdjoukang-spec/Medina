@@ -1,0 +1,278 @@
+{
+ "cours": "I44 — Troubles de la conduction et bradycardies",
+ "date": "2026-10-07",
+ "role": "vérificateur indépendant (TACHE_VERIFICATION.md)",
+ "source_de_reference": "Glikson et al., 2021 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy, version publiée Europace 2022;24:71-164 (src/esc2021_pmc_publie.txt), complétée par le manuscrit accepté (src/esc2021.txt) pour les tableaux absents de l’extraction publiée (tableau 10, échauffement de 10 °C).",
+ "complements": {
+  "total": 140,
+  "accepter": 117,
+  "corriger": 22,
+  "rejeter": 1,
+  "par_fichier": {
+   "I44_a": {
+    "accepter": 20,
+    "corriger": 6
+   },
+   "I44_b": {
+    "accepter": 25,
+    "corriger": 4,
+    "rejeter": 1
+   },
+   "I44_c": {
+    "accepter": 35,
+    "corriger": 7
+   },
+   "I44_d": {
+    "accepter": 11,
+    "corriger": 1
+   },
+   "I44_pop1": {
+    "accepter": 2
+   },
+   "I44_pop2": {
+    "accepter": 4
+   },
+   "I44_pop3": {
+    "accepter": 2
+   },
+   "I44_pop4": {
+    "accepter": 10,
+    "corriger": 3
+   },
+   "I44_pop5": {
+    "accepter": 4
+   },
+   "I44_pop6": {
+    "accepter": 4,
+    "corriger": 1
+   }
+  },
+  "ajouts_du_verificateur": [
+   {
+    "id": "I44_pop1-v1",
+    "fichier": "I44_pop1",
+    "objet": "fenêtre i44-chrono : « Ces seuils ne sont pas fixés par une recommandation ESC » remplacé par la définition citée par l’ESC 2021."
+   },
+   {
+    "id": "I44_pop3-v1",
+    "fichier": "I44_pop3",
+    "objet": "fenêtre i44-bbg : « Rarement isolé » harmonisé avec « plus souvent associé à une cardiopathie que le bloc droit »."
+   }
+  ],
+  "corriges": [
+   {
+    "id": "I44_a-3",
+    "probleme": "« n’est interrompue que par une lésion étendue » est contredit par l’ESC 2021 (section 7.2.2.3) : bloc intrahisien chez 46 % des patients porteurs d’un bloc de branche gauche dans une étude de cartographie. Explication anatomique présentée comme classique et partielle."
+   },
+   {
+    "id": "I44_a-5",
+    "probleme": "Reformulation de P1 juste (ESC 2021, section 5.1.1.1 : « pacing for asymptomatic SND has never been shown to affect prognosis »). « restent en règle sains » était trop affirmatif : environ 0,6 à 1,9 % des patients développent un BAV chaque année ; le mécanisme est présenté comme probable."
+   },
+   {
+    "id": "I44_a-16",
+    "probleme": "Complément nominal (« granulomes du septum chez l’adulte, anticorps maternels qui… ») contraire à la consigne de phrases complètes ; réécrit en propositions complètes."
+   },
+   {
+    "id": "I44_a-17",
+    "probleme": "Le remodelage intrinsèque (baisse de HCN4) n’est démontré que chez l’animal (D’Souza et al., 2014) ; P1 le signale dans la fenêtre i44-athlete mais l’affirmait sans réserve ici."
+   },
+   {
+    "id": "I44_a-19",
+    "probleme": "Le complément mêlait réponse sinusale et siège du bloc et omettait la réponse infranodale (aggravation à l’effort, ESC 2021, section 4.3.2), qui est l’information décisive."
+   },
+   {
+    "id": "I44_a-26",
+    "probleme": "Harmonisation demandée : « Presque toujours pathologique » contredit l’onglet Pathologie (« beaucoup plus souvent ») et l’ESC 2021 (section 5.3 : un bloc de branche « peut être le marqueur » d’une cardiopathie). Même formulation que le Pareto corrigé par P2 (I44_pop6-1) et que la fenêtre i44-bbg (complément du vérificateur I44_pop3-v1)."
+   },
+   {
+    "id": "I44_b-6",
+    "probleme": "Rapport de cotes 2,46 d’une étude observationnelle (ESC 2021, section 9.1) : « multiplie » présentait une association comme une causalité. Le chiffre est retiré de la fenêtre i44-transvein (I44_pop4-3) pour éviter la redite."
+   },
+   {
+    "id": "I44_b-14",
+    "probleme": "« ni due à un bloc » est inexact (l’hypothermie allonge aussi PR et QRS) et redit le complément voisin I44_b-13 ; justification recentrée sur l’inutilité de l’atropine et de la stimulation."
+   },
+   {
+    "id": "I44_b-20",
+    "probleme": "Attribution du seuil vérifiée : l’ESC 2021 (section 8.6.3) ne fixe aucun seuil de score (classe IIa, niveau C, survie > 1 an). Le seuil ≥ 10 % à 5 ans vient de l’ESC 2022 sur les arythmies ventriculaires (Zeppenfeld et al., classe IIa, niveau B, avec phénotype : TVNS, FEVG < 50 % ou trouble de conduction AV). L’ESC 2023 sur les cardiomyopathies utilise le score (tableau 21) mais refuse un seuil universel et privilégie la décision partagée : l’attribution de P1 à l’ESC 2023 était inexacte."
+   },
+   {
+    "id": "I44_b-23",
+    "probleme": "Le complément conservait « Classe I : réduit la fibrillation auriculaire… » : l’ESC 2021 fait du DDD(R) le premier choix (section 5.1.2, figure 5) sans classe I propre ; la classe I (niveau A) porte sur la réduction de la stimulation ventriculaire inutile. Harmonisé avec I44_c-26 et I44_pop6-4 (P2)."
+   },
+   {
+    "id": "I44_c-7",
+    "probleme": "Correction juste (ESC 2021, section 4.3.2). Formulation rendue identique à celle de la fenêtre i44-chrono (complément du vérificateur I44_pop1-v1) ; « sans en faire un critère de recommandation » retiré pour la concision."
+   },
+   {
+    "id": "I44_c-15",
+    "probleme": "« elle suit l’activité de la maladie » n’expliquait pas la faible sensibilité ; ajout du lien avec la masse granulomateuse, faible dans une atteinte cardiaque isolée."
+   },
+   {
+    "id": "I44_c-18",
+    "probleme": "Chiffres de Scheinman et al. vérifiés dans le résumé original (PubMed 7148708) : 313 patients, suivi moyen proche de 3 ans, 4/97 et 2/99 sous 70 ms, 14/117 (12 %) pour HV ≥ 70 ms, 4/17 (24 %) pour HV ≥ 100 ms. Formulation unique, reprise mot pour mot dans la fenêtre i44-eep ; le résumé de l’ESC 2021 (4, 12 et 24 % à 4 ans, 12 % attribué à 70–100 ms) n’est pas repris."
+   },
+   {
+    "id": "I44_c-22",
+    "probleme": "L’ESC 2021 donne « environ un tiers » (section 4.5, référence Brignole et al., 2001) et « environ 50 % » (section 5.3.1.2, sans référence directe). La source primaire (PubMed 11673344 : 52 patients, récidive documentée par asystolie surtout due à un BAV chez 17) fonde une formulation unique, reprise mot pour mot dans la fenêtre i44-eep."
+   },
+   {
+    "id": "I44_c-25",
+    "probleme": "L’ESC 2021 (section 5.3.1.1) écrit « is indicated » pour un bloc de branche avec FEVG < 35 % ; « il se discute » sous-estimait la recommandation."
+   },
+   {
+    "id": "I44_c-27",
+    "probleme": "L’ESC 2021 (section 8.1) dit que la dysfonction sinusale après occlusion de la coronaire droite régresse le plus souvent, y compris si la revascularisation est incomplète ; « après revascularisation » ajoutait une condition non sourcée."
+   },
+   {
+    "id": "I44_c-42",
+    "probleme": "Chiffres vérifiés (PubMed 32674792 : 4 sur 54, 7,4 %). Le rôle des récepteurs de type Toll est une hypothèse appuyée par des données expérimentales ; il était présenté comme établi."
+   },
+   {
+    "id": "I44_d-2",
+    "probleme": "Chiffre vérifié (Psaty et al., PubMed 1968518 : risque relatif 4,5, intervalle de confiance 1,1 à 18,5) ; « multipliait » présentait une association cas-témoins comme un effet causal."
+   },
+   {
+    "id": "I44_pop4-3",
+    "probleme": "Redite du rapport de cotes 2,46 déjà donné dans le texte voisin (I44_b-6) qui ouvre cette fenêtre ; le chiffre est retiré ici, la conduite (éviter, retirer tôt) est gardée."
+   },
+   {
+    "id": "I44_pop4-8",
+    "probleme": "Chiffre exact (ESC 2021, section 10.2.2) mais observationnel : « multiplie » remplacé par « s’associe à »."
+   },
+   {
+    "id": "I44_pop4-9",
+    "probleme": "Le facteur 15 de la réintervention précoce redisait, dans la même fenêtre, celui de l’évacuation d’hématome (I44_pop4-8) ; rapports de cotes formulés comme des associations."
+   },
+   {
+    "id": "I44_pop6-2",
+    "probleme": "Harmonisation avec la correction de P1 (I44_a-5) : l’ESC 2021 dit seulement que la stimulation n’a jamais montré d’effet pronostique dans la dysfonction sinusale."
+   }
+  ],
+  "rejetes": [
+   {
+    "id": "I44_b-25",
+    "probleme": "Redite : le même mécanisme (biofilm, extraction complète) est ajouté, plus complet, dans la fenêtre i44-compl (I44_pop4-10), ouverte par le mot vert de la carte voisine ; l’encadré « Gravité d’abord » reste bref."
+   }
+  ]
+ },
+ "fenetres": {
+  "verdicts": {
+   "i44-athlete__P1": "corrigée",
+   "i44-atropine-test__P1": "ok",
+   "i44-automat__P1": "ok",
+   "i44-bbd__P1": "corrigée",
+   "i44-bilan-bio__P2": "corrigée",
+   "i44-d-fab__P2": "ok",
+   "i44-d-insuline__P2": "ok",
+   "i44-d-theo__P2": "ok",
+   "i44-digitox__P2": "corrigée",
+   "i44-echap__P1": "ok",
+   "i44-eep__P1": "corrigée",
+   "i44-fa-infra__P2": "ok",
+   "i44-hautdeg__P1": "corrigée",
+   "i44-hemodyn__P1": "corrigée",
+   "i44-hypothyr__P1": "ok",
+   "i44-imag__P1": "corrigée",
+   "i44-irm__P1": "ok",
+   "i44-mob1__P1": "ok",
+   "i44-neuromusc__P1": "ok",
+   "i44-rvpace__P1": "ok",
+   "i44-sync-strat__P1": "ok",
+   "i44-tox__P1": "corrigée"
+  },
+  "corrigees": [
+   "i44-athlete__P1",
+   "i44-bbd__P1",
+   "i44-bilan-bio__P2",
+   "i44-digitox__P2",
+   "i44-eep__P1",
+   "i44-hautdeg__P1",
+   "i44-hemodyn__P1",
+   "i44-imag__P1",
+   "i44-tox__P1"
+  ],
+  "creees_conservees": [
+   "i44-hemodyn",
+   "i44-bilan-bio",
+   "i44-digitox",
+   "i44-d-insuline",
+   "i44-fa-infra"
+  ],
+  "ancres": {
+   "total": 14,
+   "retirees": 0,
+   "labels_modifies": 0
+  }
+ },
+ "arbitrages_demandes": {
+  "incompetence_chronotrope": {
+   "decision": "« non définie par l’ESC » est faux. L’ESC 2021 (section 4.3.2) écrit : « The most commonly used definition of chronotropic incompetence has been failure to reach 80% of the expected heart rate reserve ». Formulation commune dans I44_c-7 (note du tableau) et dans la fenêtre i44-chrono (ajout I44_pop1-v1, P1 ne l’avait pas couverte).",
+   "formulation": "… correspond à la définition que l’ESC 2021 cite comme la plus employée : l’incapacité d’atteindre 80 % de la réserve de fréquence attendue, c’est-à-dire de la différence entre (220 − âge) et la fréquence de repos."
+  },
+  "bloc_de_branche_gauche": {
+   "decision": "« Presque toujours pathologique » (I44_a, tableau ECG) et « Rarement isolé » (fenêtre i44-bbg) harmonisés avec l’onglet Pathologie (« beaucoup plus souvent ») et le Pareto corrigé par P2 : « plus souvent associé à une cardiopathie que le bloc droit ». I44_a-3 corrigé aussi : l’ESC 2021 rapporte un bloc intrahisien chez 46 % des patients porteurs d’un bloc de branche gauche, ce qui contredit « n’est interrompue que par une lésion étendue »."
+  },
+  "exploration_negative": {
+   "decision": "Source primaire retenue : Brignole et al., Circulation 2001;104:2045-50 (PubMed 11673344). Même phrase dans I44_c-22 et dans la fenêtre i44-eep ; le chiffre « environ 50 % » de l’ESC 2021 (section 5.3.1.2, sans référence directe) n’est pas repris.",
+   "formulation": "chez 52 patients porteurs d’un bloc de branche et d’une syncope, dont l’exploration était négative, un moniteur implantable a enregistré en 3 à 15 mois, lors d’une récidive de syncope, des asystolies dues surtout à un BAV paroxystique chez 17 patients, soit environ un tiers (Brignole et al., 2001)."
+  },
+  "serie_de_Scheinman": {
+   "decision": "Chiffres de l’article original (Am J Cardiol 1982;50:1316-22, PubMed 7148708), identiques dans I44_c-18 et la fenêtre i44-eep. Le résumé de l’ESC 2021 (4, 12 et 24 % « à 4 ans », 12 % attribué à HV 70–100 ms) n’est pas repris.",
+   "formulation": "chez 313 patients porteurs d’un bloc de branche chronique, suivis en moyenne près de 3 ans, un bloc de haut degré est apparu chez 2 à 4 % des patients dont le HV était inférieur à 70 ms, chez 12 % de ceux dont le HV atteignait 70 ms ou plus et chez 4 sur 17 (24 %) de ceux dont le HV atteignait 100 ms ou plus (Scheinman et al., 1982)."
+  },
+  "doublon_insuline": {
+   "decision": "Pas deux créations : une création (i44-d-insuline, P2) et un complément (i44-tox, P1). La fenêtre i44-d-insuline est gardée comme référence ; dans i44-tox, la phrase sur l’insuline à haute dose est réduite à son mécanisme et renvoie à i44-d-insuline par un mot vert. Aucune fusion (fusionnee_dans) nécessaire."
+  },
+  "seuil_LMNA": {
+   "decision": "Attribution corrigée (I44_b-20). ESC 2021 (section 8.6.3) : défibrillateur avec stimulation à envisager si indication de stimulation, ou PR long avec bloc de branche gauche, si survie > 1 an (IIa, C), sans seuil de score. Le seuil ≥ 10 % à 5 ans vient de l’ESC 2022 sur les arythmies ventriculaires (IIa, B, avec TVNS, FEVG < 50 % ou trouble de conduction AV). L’ESC 2023 sur les cardiomyopathies utilise le score (tableau 21) mais récuse un seuil universel et recommande la décision partagée : l’attribution de P1 à l’ESC 2023 était inexacte."
+  }
+ },
+ "erreurs_de_fond": [
+  "I44_b-20 (P1) : seuil LMNA ≥ 10 % attribué à l’ESC 2023 ; il vient de l’ESC 2022 sur les arythmies ventriculaires.",
+  "I44_a-3 (P1) : « la branche gauche n’est interrompue que par une lésion étendue » contredit l’ESC 2021 (bloc intrahisien chez 46 % des blocs de branche gauche).",
+  "I44_b-23 (P1) : conservait « Classe I » pour le DDD dans la dysfonction sinusale, contraire à la correction de P2 et à l’ESC 2021.",
+  "Fenêtre i44-eep (P1) : chiffres de Scheinman repris du résumé ESC, différents de l’article ; « environ la moitié » des explorations négatives, en contradiction avec la source primaire et avec I44_c-22.",
+  "Fenêtre i44-athlete (P1) : déduction erronée (BAV complet présenté comme toujours infranodal).",
+  "Fenêtre i44-hautdeg (P1) : bloc 2:1 sans la précision « infranodal » de la recommandation de classe I.",
+  "I44_c-25 (P2) : défibrillateur « se discute » pour FEVG < 35 % alors que l’ESC 2021 écrit « is indicated ».",
+  "I44_c-27 (P2) : régression de la dysfonction sinusale conditionnée à la revascularisation, condition non sourcée.",
+  "Plusieurs rapports de cotes formulés comme des effets causaux (I44_b-6, I44_d-2, I44_pop4-8, I44_pop4-9, fenêtre i44-bbd) : reformulés en associations.",
+  "Fenêtre i44-chrono (canonique, non traitée par P1) : « seuils non fixés par une recommandation ESC », corrigé par l’ajout I44_pop1-v1."
+ ],
+ "doublons_et_redites": [
+  "i44-d-insuline (P2, création) et complément de i44-tox (P1) : redite supprimée dans i44-tox, mot vert vers i44-d-insuline.",
+  "I44_b-25 (P1) rejeté : redit, dans l’encadré « Gravité d’abord », le mécanisme du biofilm ajouté plus complètement à i44-compl (I44_pop4-10).",
+  "Rapport de cotes 2,46 de la stimulation temporaire : gardé dans le texte (I44_b-6), retiré de la fenêtre i44-transvein (I44_pop4-3) qu’ouvre ce même paragraphe.",
+  "Facteur 15 : gardé pour l’évacuation d’hématome (I44_pop4-8), retiré de la rubrique Infection de la même fenêtre (I44_pop4-9).",
+  "Fenêtre i44-bilan-bio : mécanisme de l’hyperkaliémie abrégé et relié à i44-hyperk ; première phrase redisant l’ancre supprimée.",
+  "Fenêtre i44-eep : phrase redisant la rubrique existante « Limite » reformulée."
+ ],
+ "reserves": [
+  "Les deux compléments ajoutés par le vérificateur (I44_pop1-v1, I44_pop3-v1) sont inscrits dans edits/I44_pop1.json et edits/I44_pop3.json (champ « auteur » : « vérificateur »), seul moyen de les faire appliquer par appliquer_justifications.py.",
+  "Brignole et al. (2001) : 17 patients sur 52 (un tiers) avec asystolie surtout due à un BAV lors d’une récidive ; en comptant les BAV non syncopaux et les présyncopes, 22 sur 52 (42 %). L’ESC 2021 écrit ailleurs « environ 50 % » sans référence directe.",
+  "La définition « bradycardie < 50/min » attribuée à l’ESC 2021 (I44_a, îlot 1) n’est pas une définition dans le texte principal : l’ESC 2021 cite < 50/min comme élément qui augmente la probabilité pré-test d’une syncope bradycardique (section 4.5). Non modifié (hors compléments), à revoir.",
+  "Texte ERC 2025 inaccessible : doses d’urgence non revérifiées ; P1 cite l’ERC 2021.",
+  "Non vérifiés en texte intégral : ESC 2018 sur la syncope, consensus 2017 sur les intoxications aux inhibiteurs calciques, essais sur l’apixaban et l’edoxaban, information professionnelle américaine de la digoxine Fab (volume de distribution 5 L/kg). Résumés PubMed contrôlés pour Scheinman, Brignole, Zeltser, Cheng, Bernheim, Psaty, Montague, Ellenbogen, Izmirly, Morrison, Taboulet et Perrine.",
+  "Redites brèves conservées entre onglets non lus ensemble : cœur transplanté (I44_b-11, I44_b-12, I44_d-1, fenêtres i44-atropine-test et i44-d-theo), seuil de 20 % de stimulation ventriculaire (I44_c-23, fenêtre i44-rvpace, Pareto), infarctus inférieur (I44_b-9, I44_c-14).",
+  "Aucune donnée personnelle transmise : seul PubMed a été interrogé, sans identifiant."
+ ],
+ "controles": {
+  "old_uniques_sans_chevauchement": "140 compléments (138 des producteurs et 2 du vérificateur) : old unique, aucune superposition, aucune ancre superposée.",
+  "balises": "toutes les balises de old conservées dans le texte final ; aucun bouton dans les compléments.",
+  "verifier_sigles": "{} sur les 22 fichiers out/*.html et sur le texte final de chaque complément ; {} sur les dix fichiers du cours après application simulée.",
+  "simulation_application": {
+   "textes_appliques": 139,
+   "textes_rejetes": 1,
+   "textes_echecs": 0,
+   "ancres": 14,
+   "ancres_echecs": 0,
+   "fenetres_creees": 5,
+   "fenetres_completees": 17,
+   "fenetres_echecs": 0,
+   "note": "simulation dans un dossier temporaire ; aucune écriture dans sources/ ni dans chapters/"
+  },
+  "equilibre_html": "identique avant et après application simulée pour les dix fichiers",
+  "boutons_des_fenetres": "au plus deux par fenêtre, vers des clés existantes ou créées par le lot (i44-hyperk, i44-brash, i44-d-insuline)"
+ }
+}
