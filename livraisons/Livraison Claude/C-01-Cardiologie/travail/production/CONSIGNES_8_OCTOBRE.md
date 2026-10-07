@@ -1,0 +1,4 @@
+Consigne complémentaire du 8 octobre 2026 (à appliquer par tous les rédacteurs et vérificateurs I83/I89) :
+1. Nomenclature : tout autre cours ou catégorie cité dans le texte porte la forme « code — intitulé (libellé complet du fragment) », par exemple « I80 — Thrombose veineuse profonde et thromboses veineuses (C-01-Cardiologie) ». Le titre canonique vient de chapters.json ; le libellé du fragment de organisation/fragments.json.
+2. Une classe ou un niveau de recommandation ne s'écrit que s'il est lu dans le tableau de recommandations du référentiel. Ne jamais le déduire d'une formulation (« is recommended », « should be considered »). Sinon, écrire « recommandé par l'ESVS 2022 » sans classe.
+3. Base canonique : la branche a fusionné l'intégration Codex ; les chapters/ voisins (I80, I70, I73…) sont à jour.
