@@ -21,6 +21,7 @@ La règle de Vial vaut pour chaque affirmation médicale et chaque décision, da
 | Audit global lot 1, PR #9 | Huit cours / 17 sources intégrés auparavant ; reçu conservé. |
 | PR #10, lots 2 et 3, tête `be6a909059200711493064bd9c96a7437d71c019` | 27 sources injectées après contrôle des empreintes : sept sources I48 et vingt fichiers Sciences. Original et rapports Claude conservés sous Livraison Claude. Contrelecture I48 et deux arbitrages I10/I42 documentés. |
 | PR #11, mission, tête `45d34a9bd3034a141239d9cefc774804c10163fb` | Consigne reçue ; proposition initiale archivée, répartition publiée alignée sur le suivi. |
+| PR #12, lot 4 — I48 — Fibrillation et flutter auriculaires : justification systématique (pilote) | **Livré, en attente d’injection.** Branche `claude/loving-shannon-spwrhc`, base `a6f18a1`. 8 sources I48 dans `livraisons/Livraison Claude/C-01-Cardiologie/sources/`, manifeste recalé (`check-claude` conforme), 5 entrées de `glossary/i48.py`. 505 affirmations traitées, 12 fenêtres créées, 41 complétées, 133 mots verts, 12 erreurs corrigées contre l’ESC 2024 ; les 11 arbitrages Codex sont préservés. [Rapport](../../livraisons/Livraison%20Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT4_I48_JUSTIFICATION/rapport.md). |
 
 Les [reçus](receipts/) distinguent réception, injection, vérification et commit publié. Les réserves médicales héritées restent ouvertes, notamment certains schémas J44/J18 et les points I48 non couverts par les arbitrages documentés. Une relecture de prose ne certifie pas tout le cours.
 

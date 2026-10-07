@@ -1,6 +1,6 @@
 # Lot 4 — I48 — Fibrillation et flutter auriculaires : justification systématique
 
-Date : 7 octobre 2026. Auteur : Claude. Fragment : C-01-Cardiologie (S01). Branche : `claude/loving-shannon-spwrhc`, construite sur `claude/review-medina-global-20261007` (lots 2 et 3, PR #10). Mission : `docs/collaboration/MISSION_JUSTIFICATION_2026-10-07.md` (PR #11), cours pilote.
+Date : 7 octobre 2026. Auteur : Claude. Fragment : C-01-Cardiologie (S01). Branche : `claude/loving-shannon-spwrhc`. Base : branche d’intégration `codex/sciences-cs-fragments-20261007`, commit `a6f18a150b1a67a2a53c14b3a7ec0b7fe6c6c74a`, où les lots 2 et 3 sont déjà injectés. Mission : `docs/collaboration/MECHANISMS_CLAUDE.md`, cours pilote.
 
 ## Résultat
 
@@ -15,11 +15,21 @@ Chaque affirmation relevée sans mécanisme porte désormais son pourquoi, soit 
 | Fenêtres existantes complétées | 41 |
 | Fenêtres du cours | 88 → 100 |
 | Corrections du cours actuel contre l'ESC 2024 | 12 passages |
-| Volume du cours | 25 494 → 66 107 mots |
+| Volume du cours | 25 712 → 66 339 mots (texte principal 15 078 → 22 164, × 1,5 ; fenêtres 10 634 → 44 175, × 4,2) |
 
 Les fenêtres créées sont : `i48-bilan`, `i48-brady-tachy`, `i48-cardiopathies`, `i48-causes-aigues`, `i48-cognition`, `i48-cycle-variable`, `i48-interactions`, `i48-k-torsades`, `i48-remod-inverse`, `i48-rs-embolie`, `i48-substrat`, `i48-troponine`. Le fichier [fenetres_types.html](fenetres_types.html) en montre trois.
 
-**Volume.** Le cours a été multiplié par 2,6. Les fenêtres créées comptent environ 1 500 à 6 700 caractères ; les rubriques ajoutées, 900 à 5 100. Les brouillons de la session interrompue atteignaient 16 500 caractères ; ils ont été divisés par deux à quatre sans retirer de mécanisme. Le propriétaire doit dire si ce volume lui convient avant l'extension aux 14 autres cours.
+**Volume.** Le cours a été multiplié par 2,6 ; le texte principal, par 1,5. Les fenêtres créées comptent environ 1 500 à 6 700 caractères ; les rubriques ajoutées, 900 à 5 100. Les brouillons de la session interrompue atteignaient 16 500 caractères ; ils ont été divisés par deux à quatre sans retirer de mécanisme. Le propriétaire doit dire si ce volume lui convient avant l'extension aux 14 autres cours.
+
+## Rebasage sur les sources canoniques de Codex
+
+Le lot avait été rédigé sur les copies du lot 2. Codex a ensuite injecté les lots 2 et 3 et appliqué onze arbitrages médicaux à I48 (`audits/MECANISMES_2026-10-07/CODEX_ARBITRAGES.json`). Le lot 4 a donc été refondu par une fusion à trois voies, avec pour base les copies du lot 2, d’un côté les sources canoniques de Codex et de l’autre le lot 4.
+
+- Six arbitrages ont été repris mot pour mot : I48-02, I48-03, I48-04, I48-08, I48-10 et I48-11.
+- Cinq passages avaient aussi été complétés par le lot 4 : I48-01 (sepsis), I48-05 (FA pré-excitée), I48-06 et I48-07 (CHAMPION-AF), I48-09 (anticoagulation après cardioversion). Le texte de Codex y est repris à l’identique, puis le mécanisme ou le mot vert du lot 4 y est ajouté.
+- **CHAMPION-AF** : conformément à l’arbitrage de Codex, le texte ne mentionne plus d’excès d’AVC ischémiques (3,2 % contre 2,0 %). La fenêtre `i48-laao` explique désormais pourquoi la fermeture ne démontre aucune supériorité sur les AVC.
+- **Sepsis** : le chiffre de 83 % de retour spontané en rythme sinusal en 48 heures est retiré, car cette donnée ne concerne pas spécifiquement le sepsis.
+- Aucun texte « avant » d’un arbitrage ne subsiste dans les sources livrées.
 
 ## Méthode
 
@@ -50,9 +60,9 @@ D'autres erreurs ont été corrigées dans le texte proposé avant son intégrat
 
 ## Réserves à arbitrer
 
-1. **Anticoagulation après cardioversion.** L'ESC 2024 se contredit : tableau de recommandations 15 (quatre semaines après toute cardioversion, classe I) et § 7.2.1 (facultative sans facteur de risque si le rythme sinusal revient en moins de 24 heures). La fenêtre `i48-24h` expose les deux et suit la classe I.
+1. **Anticoagulation après cardioversion.** L'ESC 2024 se contredit : tableau de recommandations 15 (quatre semaines après toute cardioversion, classe I) et § 7.2.1 (facultative sans facteur de risque si le rythme sinusal revient en moins de 24 heures). Le texte suit l'arbitrage I48-09 de Codex (règle par défaut, exception possible) ; la fenêtre `i48-24h` expose les deux positions.
 2. **Préférence pour l'antivitamine K dans le syndrome des antiphospholipides** : l'essai TRAPS ne portait pas sur des patients en FA ; la règle est extrapolée.
-3. **Chiffres non relus en texte intégral** : guide EHRA 2021 (fractions rénales, demi-vies de 5 à 17 heures, règle de Child-Pugh), CHAMPION-AF, Friberg 2012 (retiré), demi-vie de la digoxine.
+3. **Chiffres non relus en texte intégral** : guide EHRA 2021 (fractions rénales, demi-vies de 5 à 17 heures, règle de Child-Pugh), Friberg 2012 (retiré), demi-vie de la digoxine. Les chiffres de CHAMPION-AF suivent l'arbitrage I48-07 de Codex.
 4. **Données suisses** : compendium.ch n'a pas été consulté ; les données de disponibilité, dont celle de l'andexanet alfa, et les informations professionnelles suisses restent à vérifier.
 5. **ESC 2026 sur l'insuffisance cardiaque**, cité par le cours pour la définition de l'ICFEr (FEVG < 50 %) : non vérifiable par Claude, conservé tel quel.
 6. **Dose de bolus de digoxine** : fenêtre existante 0,25–0,5 mg, tableau 12 de l'ESC 0,5 mg intraveineux.
@@ -65,20 +75,24 @@ D'autres erreurs ont été corrigées dans le texte proposé avant son intégrat
 
 ## Contrôles réellement exécutés
 
-Les contrôles ont été exécutés après copie temporaire des 8 fichiers dans `chapters/I48/`. Les sources canoniques ont ensuite été restaurées par `git checkout -- chapters/I48`.
+Les contrôles ont été exécutés sur la base `a6f18a1`, après copie temporaire des 8 fichiers dans `chapters/I48/`. Les sources canoniques ont ensuite été restaurées par `git checkout -- chapters/I48`.
 
 | Commande | Résultat |
 | --- | --- |
-| `python3 test_v7.py --static I48 I70 I71 I80` | OK ; I48 : 66 107 mots, 100 fenêtres, 4 quiz, 15 Pareto. Le premier passage signalait des initiales d'auteurs et cinq termes ; les initiales ont été retirées des rubriques Source et les cinq termes ajoutés au glossaire. |
+| `python3 test_v7.py --static I48 I70 I71 I80` | OK ; I48 : 66 339 mots, 100 fenêtres, 4 quiz, 15 Pareto. Un premier passage avait signalé des initiales d'auteurs et cinq termes ; les initiales ont été retirées des rubriques Source et les cinq termes ajoutés au glossaire. |
 | `MEDINA_OUT=$PWD/dist python3 build_front.py --all-fragments` | Réussi, 22 fragments |
 | `python3 tests/audit_fragments.py` | JavaScript valide, build reproductible |
 | `python3 tests/audit_sciences.py` | `errors: []` |
-| `node tests/verify_sciences_cs.cjs` | 583 contrôles, 0 erreur |
-| `node tests/verify_s01_browser.cjs` | 71 contrôles, 5 captures, 0 erreur |
+| `python3 -m unittest discover -s tests` | 76 tests réussis |
+| `node tests/verify_sciences_cs.cjs` | 609 contrôles, 0 erreur |
+| `node tests/verify_s01_browser.cjs` | 71 contrôles, 0 erreur |
+| `node tests/verify_justifications_recovery.cjs` | 2 310 contrôles, 0 erreur |
+| `node tests/verify_categories.cjs` | 656 contrôles, 0 erreur |
+| `node tests/verify_organisation.cjs` | OK, 740 contrôles |
 | Contrôle navigateur ciblé d'I48 | 206 mots verts, 84 clés distinctes, aucune clé manquante ; `i48-bilan` et `i48-noeudav` s'ouvrent ; le renvoi `i48-bilan` → `i48-cg` fonctionne depuis la fenêtre ; aucune erreur JavaScript |
-| `python3 tools/livraison.py check-claude "livraisons/Livraison Claude/C-01-Cardiologie"` | Conforme ; aucune injection |
+| `python3 tools/livraison.py check-claude "livraisons/Livraison Claude/C-01-Cardiologie"` | Conforme : 8 fichiers vérifiés, empreintes de départ égales aux sources canoniques de `a6f18a1` ; aucune injection |
 
 ## Suite
 
-- Injection par Codex avec `apply-claude`, après les lots 2 et 3, dont ce lot dépend.
-- Validation des fenêtres types et du volume par le propriétaire, puis extension aux 14 autres cours de Claude : I50, I21, I25, I10, I30, I33, I35, I34, I00, I40, I42, I44, I47, I49.
+- Injection par Codex avec `apply-claude "livraisons/Livraison Claude/C-01-Cardiologie"`, puis fusion de `glossary/i48.py` (5 entrées) depuis la branche.
+- Validation des fenêtres types et du volume par le propriétaire, puis extension aux 14 autres cours de Claude selon `MECHANISMS_CLAUDE.md` : I30, I33, I35, I34, I00, I40, I42, I44, I47, I49, I46, Q21, I71, I80.
