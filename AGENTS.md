@@ -18,3 +18,7 @@ Consulter `organisation/MEDINA_Organisation.html` et `docs/collaboration/DELIVER
 6. Après contrôle, publier le commit d'intégration et un reçu sous `docs/collaboration/receipts/`, puis actualiser l'index et `HANDOFF_LATEST.md`. Citer le SHA exact, les chemins, les contrôles exécutés et les réserves. Vérifier la disponibilité distante avant d'annoncer le résultat.
 
 « Repéré », « reçu », « intégré » et « contrôlé techniquement » désignent des preuves différentes. La fusion d'une relecture ciblée ne certifie ni les 30 cours ni la complétude CIM-11. Une branche publiée ne prouve pas que le site utilisant `main` a été reconstruit : vérifier séparément le déploiement.
+
+## Mécanismes — nouvelle priorité
+
+Chaque affirmation médicale doit comporter une justification causale ou clinique précise, ses limites et sa source. Préférer les mots cliquables et fenêtres contextualisées. Cette règle couvre les quatre onglets et tous les contenus associés. Répartition des 30 cours existants : 15 Codex / 15 Claude, dans `docs/collaboration/MECHANISMS_PLAN.json` ; consigne opérationnelle `MECHANISMS_CLAUDE.md`. Ne jamais confondre enrichissement ciblé et relecture exhaustive. J40 — Bronchite est ajouté comme production distincte couvrant J20/J40/J41/J42. La complétude CIM-11 reste à établir.

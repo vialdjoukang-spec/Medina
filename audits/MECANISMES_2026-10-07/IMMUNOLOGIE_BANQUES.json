@@ -1,0 +1,876 @@
+{
+  "version": 1,
+  "date": "2026-10-07",
+  "scope": "Audit ciblé et banques de justification pour six cours, toutes les sections représentées.",
+  "windows": 60,
+  "text_links": 60,
+  "exhaustive_assertion_coverage": false,
+  "cim11_completeness_certified": false,
+  "restoration": {
+    "cause": "Remplacement de l’environnement d’exécution pendant le travail.",
+    "saved_in_git": true,
+    "restored_identity": "Les 60 identifiants, cibles, mécanismes et sources ont été récupérés. Les textes M06/D84 ont été reconstitués à partir du contexte ; leur identité octet pour octet avec la version perdue n’est pas garantie."
+  },
+  "verification": {
+    "prior_to_environment_loss": "Six banques validées, 60 fenêtres et 60 liens.",
+    "after_restore": "Schéma JSON, champs nécessaires, 60 cibles uniques dans des nœuds texte existants et non interactifs ; compilation des trois glossaires réussie. Validation par le compilateur officiel en attente de sa restauration."
+  },
+  "source_method": "Sources institutionnelles et recherches originales vérifiées pendant le travail précédent. Certaines publications n’étaient disponibles que par leurs résumés ou extraits ; une lecture de tous les textes intégraux n’est pas revendiquée.",
+  "scientific_source_corrections": [
+    {
+      "course": "M31 — Vascularites systémiques",
+      "change": "Avacopan reclassé comme historique ; suppression de la posologie active et de son option thérapeutique actuelle dans l’Union européenne. Données ADVOCATE mises en cause et décision européenne de révocation du 4 août 2026 explicitées. Statut hors Union européenne non extrapolé.",
+      "source": "https://www.ema.europa.eu/en/medicines/human/referrals/tavneos"
+    },
+    {
+      "course": "M31 — Vascularites systémiques",
+      "change": "Réponse vaccinale sous rituximab décrite comme diminuée et variable, et non abolie pendant une durée fixe.",
+      "source": "https://www.ema.europa.eu/en/documents/product-information/mabthera-epar-product-information_en.pdf"
+    },
+    {
+      "course": "T78 — Anaphylaxie et allergies",
+      "change": "Distinction entre intolérance métabolique, intoxication histaminique et réaction non médiée par IgE ; suppression de l’affirmation absolue excluant une anaphylaxie.",
+      "source": "https://www.worldallergyorganizationjournal.org/article/S1939-4551%2820%2930375-6/fulltext"
+    },
+    {
+      "course": "T78 — Anaphylaxie et allergies",
+      "change": "La phrase sur le bolus intraveineux est harmonisée avec le recours à une perfusion intraveineuse titrée dans l’anaphylaxie réfractaire ; les modalités de l’arrêt cardiaque sont distinguées. Aucune nouvelle dose proposée.",
+      "source": "https://www.resus.org.uk/library/additional-guidance/guidance-anaphylaxis/emergency-treatment-anaphylactic-reactions"
+    }
+  ],
+  "glossary_updates": [
+    "D84 : anti-CD20, C6, C7, C8.",
+    "M32 : NUDT15.",
+    "M31 : ADVOCATE et C5aR1 actualisés."
+  ],
+  "courses": [
+    {
+      "course": {
+        "code": "A41",
+        "title": "Sepsis et choc septique de l’adulte"
+      },
+      "bank": "chapters/A41/A41_justifications.json",
+      "windows": 10,
+      "text_links": 10,
+      "sections": {
+        "Pathologie": 4,
+        "Examens": 2,
+        "Sciences fondamentales": 2,
+        "Pharmacologie": 2
+      },
+      "reviewed_sources": [
+        "chapters/A41/A41_a.html",
+        "chapters/A41/A41_b.html",
+        "chapters/A41/A41_c.html",
+        "chapters/A41/A41_d.html",
+        "chapters/A41/A41_pop.html"
+      ],
+      "targets": [
+        {
+          "id": "a41-j-cholestase",
+          "title": "Pourquoi la bilirubine peut-elle augmenter pendant le sepsis ?",
+          "match": [
+            {
+              "file": "A41_a.html",
+              "anchor": "a41-3",
+              "text": "Cholestase inflammatoire, hypoperfusion"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-selection",
+          "title": "Pourquoi une antibiothérapie récente modifie-t-elle le risque microbiologique ?",
+          "match": [
+            {
+              "file": "A41_a.html",
+              "anchor": "a41-4",
+              "text": "Sélection de germes résistants"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-glycemie",
+          "title": "Pourquoi surveiller la glycémie pendant le choc et sous hydrocortisone ?",
+          "match": [
+            {
+              "file": "A41_b.html",
+              "anchor": "a41-9",
+              "text": "Le stress et l’hydrocortisone élèvent la glycémie"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-muqueuse-gastrique",
+          "title": "Pourquoi un choc expose-t-il la muqueuse digestive à une lésion ?",
+          "match": [
+            {
+              "file": "A41_b.html",
+              "anchor": "a41-9",
+              "text": "Le choc réduit la perfusion de la muqueuse gastrique"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-rendement-culture",
+          "title": "Pourquoi l’antibiotique préalable et le volume modifient-ils le rendement des cultures ?",
+          "match": [
+            {
+              "file": "A41_c.html",
+              "anchor": "a41-e-2",
+              "text": "Le rendement dépend d’un traitement antibiotique déjà reçu et du volume de prélèvement"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-gazometrie",
+          "title": "Pourquoi le pH et le dioxyde de carbone complètent-ils le lactate ?",
+          "match": [
+            {
+              "file": "A41_c.html",
+              "anchor": "a41-e-3",
+              "text": "pression artérielle en oxygène et pH"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-glycocalyx",
+          "title": "Pourquoi le glycocalyx compte-t-il dans la microcirculation septique ?",
+          "match": [
+            {
+              "file": "A41_c.html",
+              "anchor": "a41-s-2",
+              "text": "Ses jonctions et son glycocalyx contribuent à la barrière"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-starling",
+          "title": "Pourquoi un remplissage peut-il augmenter le volume éjecté, puis perdre son intérêt ?",
+          "match": [
+            {
+              "file": "A41_c.html",
+              "anchor": "a41-s-2",
+              "text": "lorsque le cœur répond à une augmentation de remplissage"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-rythme",
+          "title": "Pourquoi surveiller le rythme sous vasopresseur ?",
+          "match": [
+            {
+              "file": "A41_d.html",
+              "anchor": "a41-p-3",
+              "text": "rythme cardiaque"
+            }
+          ]
+        },
+        {
+          "id": "a41-j-renal-antibiotique",
+          "title": "Pourquoi la fonction rénale intervient-elle dans la tolérance de l’antibiotique ?",
+          "match": [
+            {
+              "file": "A41_d.html",
+              "anchor": "a41-p-3",
+              "text": "Sous antibiotique, suivre fonction rénale"
+            }
+          ]
+        }
+      ],
+      "remaining_gaps": [
+        "Justifier et vérifier séparément les doses, les seuils et les durées encore présents dans les tableaux.",
+        "Rattacher chaque mention de sodium, de potassium et d’anémie à une justification locale ; certaines explications sont déjà présentes dans les fenêtres de perfusion, mais leur couverture par occurrence n’est pas certifiée."
+      ]
+    },
+    {
+      "course": {
+        "code": "D84",
+        "title": "Déficits immunitaires"
+      },
+      "bank": "chapters/D84/D84_justifications.json",
+      "windows": 10,
+      "text_links": 10,
+      "sections": {
+        "Pathologie": 4,
+        "Examens": 2,
+        "Sciences fondamentales": 2,
+        "Pharmacologie": 2
+      },
+      "reviewed_sources": [
+        "chapters/D84/D84_a.html",
+        "chapters/D84/D84_b.html",
+        "chapters/D84/D84_c.html",
+        "chapters/D84/D84_d.html",
+        "chapters/D84/D84_pop.html"
+      ],
+      "targets": [
+        {
+          "id": "d84-j-complement-terminal",
+          "title": "Pourquoi un déficit du complément terminal expose-t-il aux infections à Neisseria ?",
+          "match": [
+            {
+              "file": "D84_a.html",
+              "anchor": "d84-1",
+              "text": "Voie terminale C5 à C9"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-pertes-proteiques",
+          "title": "Pourquoi une baisse conjointe d’IgG et d’albumine fait-elle rechercher une perte protéique ?",
+          "match": [
+            {
+              "file": "D84_a.html",
+              "anchor": "d84-4",
+              "text": "IgG et albumine basses ensemble"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-bronchectasies",
+          "title": "Pourquoi des infections répétées peuvent-elles entretenir des bronchectasies ?",
+          "match": [
+            {
+              "file": "D84_b.html",
+              "anchor": "d84-9",
+              "text": "bronchectasies"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-vaccins-vivants",
+          "title": "Pourquoi un déficit cellulaire sévère peut-il rendre un vaccin vivant dangereux ?",
+          "match": [
+            {
+              "file": "D84_b.html",
+              "anchor": "d84-10",
+              "text": "Vaccins vivants contre-indiqués"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-fonction-vaccinale",
+          "title": "Pourquoi mesurer la réponse à un antigène vaccinal en plus des immunoglobulines totales ?",
+          "match": [
+            {
+              "file": "D84_c.html",
+              "anchor": "d84-e-1",
+              "text": "Réponse aux antigènes protéiques"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-phagocytes-fonction",
+          "title": "Pourquoi un phagocyte présent peut-il rester incapable de produire une réponse oxydante ?",
+          "match": [
+            {
+              "file": "D84_c.html",
+              "anchor": "d84-e-2",
+              "text": "Absence de fluorescence après stimulation"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-rate",
+          "title": "Pourquoi la rate protège-t-elle contre certaines bactéries encapsulées ?",
+          "match": [
+            {
+              "file": "D84_c.html",
+              "anchor": "d84-sa",
+              "text": "L’absence de rate compromet notamment l’élimination de certaines bactéries encapsulées"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-il2rg",
+          "title": "Pourquoi un défaut d’IL2RG peut-il toucher plusieurs lignées immunitaires ?",
+          "match": [
+            {
+              "file": "D84_c.html",
+              "anchor": "d84-sg",
+              "text": "IL2RG intervient dans la signalisation de plusieurs cytokines"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-potassium-cotrimoxazole",
+          "title": "Pourquoi le triméthoprime peut-il augmenter le potassium sanguin ?",
+          "match": [
+            {
+              "file": "D84_d.html",
+              "anchor": "d84-p-2",
+              "text": "hyperkaliémie"
+            }
+          ]
+        },
+        {
+          "id": "d84-j-anti-cd20",
+          "title": "Pourquoi une déplétion des lymphocytes B peut-elle diminuer les immunoglobulines ?",
+          "match": [
+            {
+              "file": "D84_d.html",
+              "anchor": "d84-p-2",
+              "text": "anti-CD20"
+            }
+          ]
+        }
+      ],
+      "remaining_gaps": [
+        "Vérifier chaque sous-type du tableau de classification avec sa conséquence clinique propre.",
+        "Poursuivre les liens causaux des modalités de substitution, de greffe et de surveillance, au-delà des dix cibles sélectionnées."
+      ]
+    },
+    {
+      "course": {
+        "code": "M32",
+        "title": "Lupus érythémateux systémique"
+      },
+      "bank": "chapters/M32/M32_justifications.json",
+      "windows": 10,
+      "text_links": 10,
+      "sections": {
+        "Pathologie": 4,
+        "Examens": 2,
+        "Sciences fondamentales": 2,
+        "Pharmacologie": 2
+      },
+      "reviewed_sources": [
+        "chapters/M32/M32_a.html",
+        "chapters/M32/M32_b.html",
+        "chapters/M32/M32_c.html",
+        "chapters/M32/M32_d.html",
+        "chapters/M32/M32_pop.html"
+      ],
+      "targets": [
+        {
+          "id": "m32-j-ultraviolets",
+          "title": "Pourquoi les ultraviolets peuvent-ils déclencher des lésions lupiques ?",
+          "match": [
+            {
+              "file": "M32_a.html",
+              "anchor": "m32-4",
+              "text": "Exposition solaire"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-coombs",
+          "title": "Pourquoi demander un test de Coombs en cas d’anémie suspecte ?",
+          "match": [
+            {
+              "file": "M32_a.html",
+              "anchor": "m32-6",
+              "text": "test de Coombs"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-nephrite-silencieuse",
+          "title": "Pourquoi surveiller les urines même sans douleur rénale ?",
+          "match": [
+            {
+              "file": "M32_b.html",
+              "anchor": "m32-9",
+              "text": "la néphrite est souvent silencieuse"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-protection-renale",
+          "title": "Pourquoi bloquer le système rénine-angiotensine en présence de protéinurie ?",
+          "match": [
+            {
+              "file": "M32_b.html",
+              "anchor": "m32-8",
+              "text": "Bloqueurs du système rénine-angiotensine contre la protéinurie"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-anti-dna",
+          "title": "Pourquoi les anti-ADN attirent-ils l’attention sans prouver une néphrite ?",
+          "match": [
+            {
+              "file": "M32_c.html",
+              "anchor": "m32-e-1",
+              "text": "Corrèlent avec l’activité et la néphrite"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-complement",
+          "title": "Pourquoi le complément peut-il baisser pendant une poussée ?",
+          "match": [
+            {
+              "file": "M32_c.html",
+              "anchor": "m32-e-1",
+              "text": "Bas dans la poussée"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-depots-renaux",
+          "title": "Pourquoi des dépôts situés différemment produisent-ils des lésions rénales différentes ?",
+          "match": [
+            {
+              "file": "M32_c.html",
+              "anchor": "m32-sh",
+              "text": "La position d’un dépôt modifie les cellules exposées et la réaction inflammatoire"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-hydroxychloroquine",
+          "title": "Pourquoi l’hydroxychloroquine agit-elle sur la reconnaissance des acides nucléiques ?",
+          "match": [
+            {
+              "file": "M32_c.html",
+              "anchor": "m32-si",
+              "text": "Leur reconnaissance par des récepteurs intracellulaires contribue notamment à des signaux d’interféron de type I"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-azathioprine-interaction",
+          "title": "Pourquoi ces inhibiteurs de la xanthine oxydase majorent-ils la toxicité de l’azathioprine ?",
+          "match": [
+            {
+              "file": "M32_d.html",
+              "anchor": "m32-p-2",
+              "text": "interaction majeure avec l’allopurinol et le fébuxostat"
+            }
+          ]
+        },
+        {
+          "id": "m32-j-cystite-cyclophosphamide",
+          "title": "Pourquoi le cyclophosphamide peut-il léser la vessie ?",
+          "match": [
+            {
+              "file": "M32_d.html",
+              "anchor": "m32-p-2",
+              "text": "cystite hémorragique"
+            }
+          ]
+        }
+      ],
+      "remaining_gaps": [
+        "Poursuivre la justification des autres manifestations, classifications et traitements.",
+        "Vérifier séparément les doses et calendriers, ainsi que les mécanismes vasculaires du syndrome des antiphospholipides."
+      ]
+    },
+    {
+      "course": {
+        "code": "M31",
+        "title": "Vascularites systémiques"
+      },
+      "bank": "chapters/M31/M31_justifications.json",
+      "windows": 10,
+      "text_links": 10,
+      "sections": {
+        "Pathologie": 4,
+        "Examens": 2,
+        "Sciences fondamentales": 2,
+        "Pharmacologie": 2
+      },
+      "reviewed_sources": [
+        "chapters/M31/M31_a.html",
+        "chapters/M31/M31_b.html",
+        "chapters/M31/M31_c.html",
+        "chapters/M31/M31_d.html",
+        "chapters/M31/M31_pop.html"
+      ],
+      "targets": [
+        {
+          "id": "m31-j-calibre",
+          "title": "Pourquoi le calibre du vaisseau change-t-il les symptômes ?",
+          "match": [
+            {
+              "file": "M31_a.html",
+              "anchor": "m31-1",
+              "text": "ce calibre explique la clinique"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-sediment",
+          "title": "Pourquoi ces résultats orientent-ils vers une atteinte glomérulaire ?",
+          "match": [
+            {
+              "file": "M31_a.html",
+              "anchor": "m31-4",
+              "text": "Hématurie avec cylindres, protéinurie, créatinine qui monte"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-machoire",
+          "title": "Pourquoi la mastication peut-elle déclencher une douleur dans l’artérite à cellules géantes ?",
+          "match": [
+            {
+              "file": "M31_b.html",
+              "anchor": "m31-5",
+              "text": "claudication de la mâchoire"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-biopsie-negative",
+          "title": "Pourquoi une biopsie temporale négative ne suffit-elle pas à exclure une artérite ?",
+          "match": [
+            {
+              "file": "M31_b.html",
+              "anchor": "m31-5",
+              "text": "Une biopsie négative n’exclut pas la maladie"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-cryoglobulines",
+          "title": "Pourquoi garder le prélèvement chaud avant de rechercher des cryoglobulines ?",
+          "match": [
+            {
+              "file": "M31_c.html",
+              "anchor": "m31-e-2",
+              "text": "prélèvement maintenu à 37 °C"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-pauci-immune",
+          "title": "Pourquoi une lésion pauci-immune peut-elle néanmoins dépendre d’anticorps ?",
+          "match": [
+            {
+              "file": "M31_c.html",
+              "anchor": "m31-e-4",
+              "text": "peu ou pas de dépôts"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-neutrophile",
+          "title": "Pourquoi un neutrophile activé par les ANCA peut-il léser l’endothélium ?",
+          "match": [
+            {
+              "file": "M31_c.html",
+              "anchor": "m31-si",
+              "text": "Ils libèrent des produits qui endommagent les petits vaisseaux"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-genetique",
+          "title": "Pourquoi des variants HLA ou liés à PR3 modifient-ils une susceptibilité ?",
+          "match": [
+            {
+              "file": "M31_c.html",
+              "anchor": "m31-sg",
+              "text": "Des loci liés à HLA, à PR3 ou à sa régulation contribuent à la susceptibilité"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-crp-tocilizumab",
+          "title": "Pourquoi une CRP basse sous tocilizumab ne rassure-t-elle pas à elle seule ?",
+          "match": [
+            {
+              "file": "M31_d.html",
+              "anchor": "m31-p-3",
+              "text": "CRP ininterprétable"
+            }
+          ]
+        },
+        {
+          "id": "m31-j-vaccin-rituximab",
+          "title": "Pourquoi vacciner avant une déplétion des lymphocytes B ?",
+          "match": [
+            {
+              "file": "M31_d.html",
+              "anchor": "m31-p-3",
+              "text": "vaccins inactivés avant le rituximab"
+            }
+          ]
+        }
+      ],
+      "remaining_gaps": [
+        "Vérifier les performances diagnostiques chiffrées, les seuils, les posologies et les autres groupes de vascularite.",
+        "Le raccourci CRP ininterprétable est nuancé dans sa fenêtre ; son libellé peut encore être harmonisé à une formulation moins absolue."
+      ]
+    },
+    {
+      "course": {
+        "code": "T78",
+        "title": "Anaphylaxie et allergies"
+      },
+      "bank": "chapters/T78/T78_justifications.json",
+      "windows": 10,
+      "text_links": 10,
+      "sections": {
+        "Pathologie": 4,
+        "Examens": 2,
+        "Sciences fondamentales": 2,
+        "Pharmacologie": 2
+      },
+      "reviewed_sources": [
+        "chapters/T78/T78_a.html",
+        "chapters/T78/T78_b.html",
+        "chapters/T78/T78_c.html",
+        "chapters/T78/T78_d.html",
+        "chapters/T78/T78_pop.html"
+      ],
+      "targets": [
+        {
+          "id": "t78-j-pontage",
+          "title": "Pourquoi le pontage des IgE déclenche-t-il une dégranulation ?",
+          "match": [
+            {
+              "file": "T78_a.html",
+              "anchor": "t78-3",
+              "text": "l’allergène relie deux IgE voisines à la surface du mastocyte (pontage)"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-cerveau",
+          "title": "Pourquoi un choc peut-il provoquer confusion ou perte de connaissance ?",
+          "match": [
+            {
+              "file": "T78_a.html",
+              "anchor": "t78-6",
+              "text": "Hypoperfusion cérébrale ou hypoxie"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-bolus",
+          "title": "Pourquoi un bolus intraveineux d’adrénaline comporte-t-il plus de risques ?",
+          "match": [
+            {
+              "file": "T78_b.html",
+              "anchor": "t78-8",
+              "text": "intraveineuse en bolus"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-chaine-laterale",
+          "title": "Pourquoi les chaînes latérales comptent-elles dans une allergie aux bêtalactamines ?",
+          "match": [
+            {
+              "file": "T78_b.html",
+              "anchor": "t78-12",
+              "text": "similitude des chaînes latérales"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-antihistaminique-test",
+          "title": "Pourquoi les antihistaminiques peuvent-ils rendre un test cutané faussement négatif ?",
+          "match": [
+            {
+              "file": "T78_c.html",
+              "anchor": "t78-e-3",
+              "text": "arrêt des antihistaminiques"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-pr10",
+          "title": "Pourquoi un fruit cuit peut-il être toléré dans certaines réactions aux PR-10 ?",
+          "match": [
+            {
+              "file": "T78_c.html",
+              "anchor": "t78-e-4",
+              "text": "PR-10, homologues de Bet v 1, thermolabiles"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-tpsab1",
+          "title": "Pourquoi une tryptase basale peut-elle rester élevée sans crise actuelle ?",
+          "match": [
+            {
+              "file": "T78_c.html",
+              "anchor": "t78-sg",
+              "text": "Des copies supplémentaires de TPSAB1 peuvent produire une alpha-tryptasémie héréditaire"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-kit",
+          "title": "Pourquoi KIT D816V ne désigne-t-il pas la même situation qu’un gain de copies TPSAB1 ?",
+          "match": [
+            {
+              "file": "T78_c.html",
+              "anchor": "t78-sg",
+              "text": "Un variant somatique de KIT, notamment D816V dans certains contextes, relève d’un autre mécanisme cellulaire"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-salbutamol",
+          "title": "Pourquoi le salbutamol ouvre-t-il les bronches sans traiter seul le choc ?",
+          "match": [
+            {
+              "file": "T78_d.html",
+              "anchor": "t78-p-1",
+              "text": "Salbutamol inhalé ou nébulisé"
+            }
+          ]
+        },
+        {
+          "id": "t78-j-sedation",
+          "title": "Pourquoi les antihistaminiques sédatifs gênent-ils la surveillance ?",
+          "match": [
+            {
+              "file": "T78_d.html",
+              "anchor": "t78-p-3",
+              "text": "sédation, effets anticholinergiques"
+            }
+          ]
+        }
+      ],
+      "remaining_gaps": [
+        "Poursuivre les explications des cofacteurs, des risques chiffrés, du calendrier des tests et de la prévention.",
+        "Revoir séparément les doses, les durées de surveillance et les plans d’urgence."
+      ]
+    },
+    {
+      "course": {
+        "code": "M06",
+        "title": "Polyarthrite rhumatoïde"
+      },
+      "bank": "chapters/M06/M06_justifications.json",
+      "windows": 10,
+      "text_links": 10,
+      "sections": {
+        "Pathologie": 4,
+        "Examens": 3,
+        "Sciences fondamentales": 1,
+        "Pharmacologie": 2
+      },
+      "reviewed_sources": [
+        "chapters/M06/M06_a.html",
+        "chapters/M06/M06_b.html",
+        "chapters/M06/M06_c.html",
+        "chapters/M06/M06_d.html",
+        "chapters/M06/M06_pop.html"
+      ],
+      "targets": [
+        {
+          "id": "m06-j-synovite",
+          "title": "Pourquoi la synovite gonfle-t-elle et devient-elle chaude ?",
+          "match": [
+            {
+              "file": "M06_a.html",
+              "anchor": "m06-6",
+              "text": "tuméfaction élastique, chaude, douloureuse"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-cytokines",
+          "title": "Pourquoi ces cytokines entretiennent-elles la destruction articulaire ?",
+          "match": [
+            {
+              "file": "M06_a.html",
+              "anchor": "m06-3",
+              "text": "TNF-α, IL-6, IL-1"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-bilan-pretherapeutique",
+          "title": "Pourquoi mesurer le sang, le rein et le foie avant le traitement ?",
+          "match": [
+            {
+              "file": "M06_b.html",
+              "anchor": "m06-7",
+              "text": "formule sanguine, créatinine, transaminases (avant traitement)"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-traitement-precoce",
+          "title": "Pourquoi traiter tôt plutôt que soulager seulement la douleur ?",
+          "match": [
+            {
+              "file": "M06_b.html",
+              "anchor": "m06-9",
+              "text": "traitement de fond dès le diagnostic"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-anemie-inflammatoire",
+          "title": "Pourquoi l’inflammation peut-elle diminuer l’hémoglobine et augmenter les plaquettes ?",
+          "match": [
+            {
+              "file": "M06_c.html",
+              "anchor": "m06-e-1",
+              "text": "Anémie inflammatoire, thrombocytose"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-facteur-rhumatoide",
+          "title": "Pourquoi un facteur rhumatoïde positif ne prouve-t-il pas une polyarthrite ?",
+          "match": [
+            {
+              "file": "M06_c.html",
+              "anchor": "m06-e-1",
+              "text": "Positif aussi dans le syndrome de Gougerot-Sjögren, l’hépatite C, l’endocardite, la cryoglobulinémie, chez le sujet âgé"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-erosions",
+          "title": "Pourquoi l’inflammation peut-elle raréfier l’os près de l’articulation ?",
+          "match": [
+            {
+              "file": "M06_c.html",
+              "anchor": "m06-e-2",
+              "text": "ostéopénie en bande épiphysaire"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-ptpn22",
+          "title": "Pourquoi un variant de PTPN22 peut-il modifier une susceptibilité ?",
+          "match": [
+            {
+              "file": "M06_c.html",
+              "anchor": "m06-sg",
+              "text": "PTPN22 et d’autres loci participent à la régulation immunitaire"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-cotrimoxazole",
+          "title": "Pourquoi l’association méthotrexate–cotrimoxazole augmente-t-elle la toxicité ?",
+          "match": [
+            {
+              "file": "M06_d.html",
+              "anchor": "m06-p-2",
+              "text": "Méthotrexate + cotrimoxazole"
+            }
+          ]
+        },
+        {
+          "id": "m06-j-clairance-renale",
+          "title": "Pourquoi une baisse de filtration augmente-t-elle l’exposition au méthotrexate ?",
+          "match": [
+            {
+              "file": "M06_d.html",
+              "anchor": "m06-p-2",
+              "text": "insuffisance rénale augmentent aussi ses taux"
+            }
+          ]
+        }
+      ],
+      "remaining_gaps": [
+        "Poursuivre les seuils de classification, la valeur pronostique de la sérologie et les manifestations extra-articulaires.",
+        "Compléter les mécanismes, interactions, effets indésirables et raisons de surveillance de chaque traitement de fond."
+      ]
+    }
+  ]
+}

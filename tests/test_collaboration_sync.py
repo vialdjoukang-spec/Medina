@@ -1,5 +1,6 @@
 """Contrôles du scan interbranches ; données synthétiques, aucun réseau."""
 import importlib.util
+import copy
 import json
 from pathlib import Path
 import subprocess
@@ -23,6 +24,17 @@ def snapshot():
             "branches": [{"name": "integration", "commit": {"sha": "t" * 40}},
                          {"name": "claude/review", "commit": {"sha": "c" * 40}}],
             "pull_requests": [], "comparisons": {}, "scan_complete": True}
+
+
+def grouped_catalog():
+    data = catalog()
+    variants = ["J20", "J40", "J41", "J42"]
+    data["chapters"]["J40"] = {"code": "J40", "title": "Bronchite", "integrated": True, "covers": variants[:]}
+    data["systems"].update({code: "Poumon" for code in variants})
+    data["fragments"].append({"id": "S02", "rattachements": ["Poumon"], "surface": "courses-v1", "categories": []})
+    data["course_groups"] = [{"code": "J40", "title": "Bronchite", "integrated": True,
+                             "owner": "S02", "covers": variants[:]}]
+    return data
 
 
 class CollaborationSyncTests(unittest.TestCase):
@@ -123,6 +135,72 @@ class CollaborationSyncTests(unittest.TestCase):
         self.assertTrue(any("zz_fusion" in w for w in SYNC.route_file("glossary/i48.py", catalog())["warnings"]))
         self.assertTrue(any("Adaptateur" in w for w in SYNC.route_file("modules/systems/cardiovascular/normal.json", catalog())["warnings"]))
 
+    def test_grouped_bronchitis_has_one_explicit_owner_and_all_variants(self):
+        data = grouped_catalog()
+        for variant in ["J20", "J40", "J41", "J42"]:
+            self.assertEqual(SYNC.chapter_routes(variant, data), ["S02"])
+        route = SYNC.route_file("chapters/J40/J40_a.html", data)
+        self.assertEqual(route["routes"], ["S02"])
+        self.assertEqual(route["group_owner"], "S02")
+        self.assertEqual(route["covers"], ["J20", "J40", "J41", "J42"])
+        self.assertFalse(route["warnings"])
+
+    def test_group_validation_never_hides_invalid_owner_variants_or_activation(self):
+        valid = grouped_catalog()
+        invalid = []
+        for field, value in [("owner", "S01"), ("owner", "S99"), ("integrated", False),
+                             ("covers", ["J20", "J40", "J41"]),
+                             ("covers", ["J20", "J40", "J41", "J42", "J42"]),
+                             ("covers", ["J20", "J40", "J41", "J99"])]:
+            data = copy.deepcopy(valid)
+            data["course_groups"][0][field] = value
+            invalid.append(data)
+        data = copy.deepcopy(valid)
+        data["systems"]["J42"] = "Cœur"
+        invalid.append(data)
+        data = copy.deepcopy(valid)
+        data["course_groups"].append(copy.deepcopy(data["course_groups"][0]))
+        invalid.append(data)
+        for data in invalid:
+            with self.subTest(group=data["course_groups"]):
+                route = SYNC.route_file("chapters/J40/J40_a.html", data)
+                self.assertNotIn("group_owner", route)
+                self.assertTrue(any("course_groups.json" in w for w in route["warnings"]))
+                self.assertTrue(any("exactement une fois" in w for w in route["warnings"]))
+
+    def test_group_does_not_exempt_an_ordinary_course_or_hide_duplicates(self):
+        data = grouped_catalog()
+        data["fragments"][0]["categories"] = []
+        self.assertTrue(any("exactement une fois" in w for w in
+                            SYNC.route_file("chapters/I48/I48_a.html", data)["warnings"]))
+        data["fragments"][1]["categories"] = [{"chapters": ["J40", "J40"]}]
+        self.assertTrue(any("exactement une fois" in w for w in
+                            SYNC.route_file("chapters/J40/J40_a.html", data)["warnings"]))
+
+    def test_snapshot_normalization_preserves_grouped_course_metadata(self):
+        data = grouped_catalog()
+        normalized = SYNC.normalize_catalog(list(data["chapters"].values()), data["fragments"],
+                                            data["systems"], "github:target", data["course_groups"])
+        self.assertEqual(SYNC.route_file("chapters/J40/J40_a.html", normalized)["group_owner"], "S02")
+
+    def test_github_catalog_reads_course_groups_at_the_same_target_sha(self):
+        data = grouped_catalog()
+        files = {"chapters.json": list(data["chapters"].values()), "fragments.json": data["fragments"],
+                 "organisation/course_groups.json": data["course_groups"]}
+        calls = []
+        def content(path, commit):
+            calls.append((path, commit))
+            if path == "shell/medina_front.html":
+                payload = {"entries": [{"code": c, "system": s} for c, s in data["systems"].items()]}
+                return ('<script id="medora-data">' + json.dumps(payload) + '</script>').encode()
+            return json.dumps(files[path]).encode()
+        client = SYNC.GitHubClient("test/repo")
+        client.content = content
+        result = client.catalog("a" * 40)
+        self.assertEqual(SYNC.route_file("chapters/J40/J40_a.html", result)["group_owner"], "S02")
+        self.assertEqual({sha for _, sha in calls}, {"a" * 40})
+        self.assertIn(("organisation/course_groups.json", "a" * 40), calls)
+
     def test_fragment_audit_name_precedes_ambiguous_cim_code(self):
         ambiguous = catalog()
         ambiguous["chapters"]["S01"] = {"code": "S01", "integrated": True}
@@ -183,6 +261,31 @@ class CollaborationSyncTests(unittest.TestCase):
             (root / "chapters.json").write_text("[]")
             pinned = SYNC.load_catalog(root, sha)
             self.assertIn("I48", pinned["chapters"])
+            self.assertEqual(pinned["basis"], "git:" + sha)
+
+    def test_local_course_groups_are_pinned_with_the_target_catalog(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = grouped_catalog()
+            def git(*args):
+                return subprocess.check_output(["git", "-C", str(root), *args], stderr=subprocess.DEVNULL, text=True).strip()
+            git("init")
+            git("config", "user.name", "Test")
+            git("config", "user.email", "test@example.invalid")
+            (root / "chapters.json").write_text(json.dumps(list(data["chapters"].values())))
+            (root / "fragments.json").write_text(json.dumps(data["fragments"]))
+            (root / "organisation").mkdir()
+            groups = root / "organisation/course_groups.json"
+            groups.write_text(json.dumps(data["course_groups"]))
+            (root / "shell").mkdir()
+            entries = [{"code": c, "system": s} for c, s in data["systems"].items()]
+            (root / "shell/medina_front.html").write_text('<script id="medora-data">' + json.dumps({"entries": entries}) + '</script>')
+            git("add", "chapters.json", "fragments.json", "organisation/course_groups.json", "shell/medina_front.html")
+            git("commit", "-m", "Target grouped catalog")
+            sha = git("rev-parse", "HEAD")
+            groups.write_text("[]")
+            pinned = SYNC.load_catalog(root, sha)
+            self.assertEqual(SYNC.route_file("chapters/J40/J40_a.html", pinned)["group_owner"], "S02")
             self.assertEqual(pinned["basis"], "git:" + sha)
 
     def test_committed_target_receipt_survives_local_pr_change(self):

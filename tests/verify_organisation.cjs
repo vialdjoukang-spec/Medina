@@ -41,7 +41,10 @@ for (const f of data.fragments) {
 }
 const cross = byId.S10.blocks.flatMap(b => b.categories).find(e => e.code === 'M30');
 check('M30 garde son rattachement et renvoie au cours M31 d’immunologie', cross?.status === 'covered' && cross.course?.code === 'M31' && cross.course.fragment_id === 'S07' && cross.course.title && cross.course.url.endsWith('#/entry/M31'));
-check('La pneumologie distingue les quatre cours disponibles des leçons à produire', byId.S02.integrated_count === 4 && byId.S02.blocks.flatMap(b => b.categories).filter(e => e.status === 'primary').length === 4 && byId.S02.blocks.flatMap(b => b.categories).some(e => e.status === 'planned'));
+const pulmonaryPrimary = byId.S02.blocks.flatMap(b => b.categories).filter(e => e.status === 'primary');
+check('La pneumologie distingue ses cours disponibles des leçons à produire', byId.S02.integrated_count === pulmonaryPrimary.length && ['J45','J44','J18','I26'].every(code => pulmonaryPrimary.some(e => e.code === code)) && byId.S02.blocks.flatMap(b => b.categories).some(e => e.status === 'planned'));
+const bronchitis = byId.S02.blocks.flatMap(b => b.categories).filter(e => ['J20','J40','J41','J42'].includes(e.code));
+if (integrated.some(course => course.code === 'J40')) check('Les quatre catégories de bronchite renvoient à un seul cours J40 nommé', bronchitis.length === 4 && bronchitis.every(e => e.course?.code === 'J40' && e.course.title === 'Bronchite'));
 
 async function overflow(page, name) {
   const sizes = await page.evaluate(() => ({width:innerWidth, document:document.documentElement.scrollWidth}));
@@ -53,10 +56,16 @@ async function shot(page, name) {
 const escapeAttribute = value => value.replaceAll('\\', '\\\\').replaceAll('"', '\\"');
 const fragmentSelector = '[data-fragment-id],button.fragment-button[data-fragment]';
 const blockSelector = '[data-block-code],button.block-card[data-block]';
-const categorySelector = '[data-category-code],button.lesson-main[data-category]';
+const categorySelector = 'button.category-variant[data-category-code]';
 const fragmentButton = (page, id) => page.locator('[data-fragment-id="' + escapeAttribute(id) + '"],button.fragment-button[data-fragment="' + escapeAttribute(id) + '"]');
 const blockButton = (page, code) => page.locator('[data-block-code="' + escapeAttribute(code) + '"],button.block-card[data-block="' + escapeAttribute(code) + '"]');
-const categoryRow = (page, code) => page.locator('[data-category-code="' + escapeAttribute(code) + '"],button.lesson-main[data-category="' + escapeAttribute(code) + '"]');
+const categoryRow = (page, code) => page.locator('button.category-variant[data-category-code="' + escapeAttribute(code) + '"]');
+const chapterRowFor = (page, code) => page.locator('.lesson-row').filter({has:categoryRow(page, code)});
+const waitCategory = async (page, code) => categoryRow(page, code).waitFor({state:'attached'});
+const openCategory = async (page, code) => {await categoryRow(page, code).evaluate(button => {button.closest('details').open = true});await categoryRow(page, code).click()};
+const colourParts = value => value.match(/[\d.]+/g).slice(0,3).map(Number);
+const luminance = rgb => rgb.map(value => {const s=value/255;return s<=.04045?s/12.92:((s+.055)/1.055)**2.4}).reduce((sum,value,i)=>sum+value*[.2126,.7152,.0722][i],0);
+const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(luminance(a),luminance(b))+.05);
 
 (async () => {
   const browser = await chromium.launch(browserOptions(chromium));
@@ -77,32 +86,42 @@ const categoryRow = (page, code) => page.locator('[data-category-code="' + escap
       check(f.label + ' : fragment actif', await fragmentButton(page, f.id).getAttribute('aria-current') === 'page');
       const labels = await page.locator(blockSelector).allTextContents();
       check(f.label + ' : tous les blocs CIM accessibles', labels.length === f.blocks.length && f.blocks.every(b => labels.some(text => text.includes(b.code) && text.includes(b.title))), {expected:f.blocks.length, actual:labels.length});
+      if (f.blocks.length) {
+        const colours = await page.locator('.block-card').evaluateAll(cards => cards.map(card => ({bg:getComputedStyle(card).backgroundColor,fg:getComputedStyle(card.querySelector('.block-title')).color})));
+        check(f.label + ' : couleurs distinctes et titres à contraste AA', new Set(colours.map(c=>c.bg)).size===colours.length && colours.every(c=>contrast(colourParts(c.bg),colourParts(c.fg))>=4.5));
+        const corner = await page.locator('.block-card').evaluateAll(cards => cards.map(card => {const p=card.getBoundingClientRect(),c=card.querySelector('.block-code').getBoundingClientRect(),t=card.querySelector('.block-title').getBoundingClientRect();return c.bottom<t.top&&p.right-c.right>=5&&p.right-c.right<=20}));
+        check(f.label + ' : codes en haut à droite sans masquer le titre',corner.every(Boolean));
+      }
       if (f.blocks.length === 0) {
         check(f.label + ' : absence de catalogue explicitée', (await page.locator('main').innerText()).includes('Aucune catégorie'));
       }
       for (const b of f.blocks) {
         await fragmentButton(page, f.id).click();
         await blockButton(page, b.code).click();
-        await categoryRow(page, b.categories[0].code).waitFor();
+        await waitCategory(page, b.categories[0].code);
         const rows = await page.locator('.lesson-row').allTextContents();
         const ranks = await page.locator('.lesson-row .rank strong').allTextContents();
-        check(f.label + ' / ' + b.code + ' : titres et ordre de toutes les leçons', rows.length === b.categories.length && b.categories.every((e, i) => rows[i].includes(e.code) && rows[i].includes(e.title) && ranks[i] === String(e.order).padStart(2, '0')), {expected:b.categories.length, actual:rows.length});
+        const expectedChapters = [...new Set(b.categories.map(e => (e.group || e.course)?.code || e.code))];
+        const chapterCodes = await page.locator('.lesson-row').evaluateAll(cards => cards.map(card => card.dataset.chapterCode));
+        const variants = await page.locator(categorySelector).allTextContents();
+        check(f.label + ' / ' + b.code + ' : un chapitre par cours canonique et ordre local continu', rows.length === expectedChapters.length && JSON.stringify(chapterCodes) === JSON.stringify(expectedChapters) && ranks.every((rank,i)=>rank===String(i+1)), {expected:expectedChapters.length,actual:rows.length});
+        check(f.label + ' / ' + b.code + ' : toutes les variantes CIM restent nommées',variants.length===b.categories.length&&b.categories.every(e=>variants.some(text=>text.includes(e.code)&&text.includes(e.title))));
       }
     }
     await page.goto(pathToFileURL(file).href + '#fragment=S10&block=M30-M36&category=M30');
-    await categoryRow(page, 'M30').waitFor();
-    check('Un lien profond retrouve M30 et son cours M31 nommé', (await categoryRow(page, 'M30').innerText()).includes(cross.course.title) && await categoryRow(page, 'M30').locator('..').locator('a[href="' + cross.course.url + '"]').count() === 1);
+    await waitCategory(page, 'M30');
+    check('Un lien profond retrouve M30 et son cours M31 nommé', (await chapterRowFor(page, 'M30').innerText()).includes(cross.course.title) && await chapterRowFor(page, 'M30').locator('a[href="' + cross.course.url + '"]').count() === 1);
     await page.reload();
-    await categoryRow(page, 'M30').waitFor();
+    await waitCategory(page, 'M30');
     check('Le fil d’Ariane conserve code et intitulé complet de la leçon', (await page.locator('.breadcrumbs').innerText()).includes(cross.code) && (await page.locator('.breadcrumbs').innerText()).includes(cross.title));
     check('Le lien profond résiste au rechargement du fichier', await fragmentButton(page, 'S10').getAttribute('aria-current') === 'page');
     await fragmentButton(page, 'S02').click();
     await blockButton(page, byId.S02.blocks.find(b => b.categories.some(e => e.code === 'J45')).code).click();
-    await categoryRow(page, 'J45').waitFor();
+    await waitCategory(page, 'J45');
     const pulmonaryHash = await page.evaluate(() => location.hash);
     await fragmentButton(page, 'S01').click();
     await page.goBack();
-    await categoryRow(page, 'J45').waitFor();
+    await waitCategory(page, 'J45');
     check('Précédent restaure fragment et catégorie', await page.evaluate(() => location.hash) === pulmonaryHash);
     await shot(page, 'pneumologie_desktop');
     await fragmentButton(page, 'S01').focus();
@@ -115,7 +134,7 @@ const categoryRow = (page, code) => page.locator('[data-category-code="' + escap
     await page.keyboard.press('Space');
     await page.waitForFunction(code => new URLSearchParams(location.hash.slice(1)).get('block') === code && document.querySelector('.lesson-main'), firstBlock);
     check('Le clavier ouvre un bloc et ses leçons', await page.locator(categorySelector).count() > 0);
-    const firstLesson = page.locator(categorySelector).first();
+    const firstLesson = page.locator('button.lesson-main').first();
     const firstCode = await firstLesson.getAttribute('data-category-code') || await firstLesson.getAttribute('data-category');
     await firstLesson.focus();
     await page.keyboard.press('Enter');
@@ -127,7 +146,7 @@ const categoryRow = (page, code) => page.locator('[data-category-code="' + escap
     check('Les rattachements pulmonaires à d’autres fragments sont visibles et nommés', related.length === byId.S02.related.length && byId.S02.related.every(e => related.some(text => text.includes(e.code) && text.includes(e.title))));
     const tuberculosis = byId.S02.related.find(e => e.code === 'A15');
     await page.locator('[data-related-code="A15"] a').click();
-    await categoryRow(page, 'A15').waitFor();
+    await waitCategory(page, 'A15');
     check('Le renvoi pulmonaire A15 rejoint l’infectiologie avec sa leçon complète', await fragmentButton(page, 'T1').getAttribute('aria-current') === 'page' && (await page.locator('#category-title').innerText()).includes(tuberculosis.title));
     await page.locator('#lesson-search').fill('Néphrologie');
     await page.waitForFunction(() => document.getElementById('view-title')?.textContent === 'Néphrologie');
@@ -138,14 +157,17 @@ const categoryRow = (page, code) => page.locator('[data-category-code="' + escap
     await page.locator('#lesson-search').fill('Pneumologie');
     await page.waitForFunction(() => document.getElementById('view-title')?.textContent === 'Pneumologie');
     check('La recherche retrouve toutes les catégories pulmonaires', await page.locator(categorySelector).count() === byId.S02.category_count);
+    if (integrated.some(course => course.code === 'J40')) {
+      check('La recherche affiche un seul cours Bronchite et ses quatre variantes nommées', await page.locator('[data-chapter-code="J40"]').count() === 1 && (await page.locator('[data-chapter-code="J40"] .category-variant').allTextContents()).length === 4 && bronchitis.every(e => byCode[e.code].title === e.title));
+    }
     const asthma = byId.S02.blocks.flatMap(b => b.categories).find(e => e.code === 'J45');
     const absentCourse = byId.S02.blocks.flatMap(b => b.categories).find(e => e.status === 'planned');
-    check('La recherche distingue cours disponible et leçon à produire', (await categoryRow(page, 'J45').innerText()).includes(asthma.title) && (await categoryRow(page, 'J45').innerText()).includes('Cours propre intégré') && (await categoryRow(page, absentCourse.code).innerText()).includes('À produire'));
-    await categoryRow(page, 'J45').click();
+    check('La recherche distingue cours disponible et chapitre à produire', (await chapterRowFor(page, 'J45').innerText()).includes(asthma.title) && (await chapterRowFor(page, 'J45').innerText()).includes('Cours disponible') && (await chapterRowFor(page, absentCourse.code).innerText()).includes('Cours à produire'));
+    await openCategory(page, 'J45');
     await page.locator('#category-title').waitFor();
     check('Un résultat de recherche rejoint sa fiche nommée', (await page.locator('#category-title').innerText()).includes(asthma.code) && (await page.locator('#category-title').innerText()).includes(asthma.title));
     await page.reload();
-    await categoryRow(page, 'J45').waitFor();
+    await waitCategory(page, 'J45');
     check('Une fiche issue de la recherche garde son lien profond', (await page.locator('#category-title').innerText()).includes(asthma.title));
     await page.setViewportSize({width:390, height:844});
     await overflow(page, 'Pneumologie mobile sans débordement horizontal');

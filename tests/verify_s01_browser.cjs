@@ -1,4 +1,4 @@
-/* Real browser checks for the opt-in S01 surface; build the fragment first. */
+/* Real browser checks for the original S01 fragment and its CIM category surface. */
 const fs = require('node:fs');
 const http = require('node:http');
 const path = require('node:path');
@@ -31,18 +31,18 @@ const check = (name, condition, detail) => {assert.ok(condition, name + (detail 
     const go = async route => {await page.evaluate(r => {location.hash=r}, route);await page.waitForTimeout(120)};
     const noOverflow = async name => {const sizes=await page.evaluate(() => ({window:innerWidth,document:document.documentElement.scrollWidth}));check(name,sizes.document<=sizes.window+1,sizes)};
     await page.goto(base);await ready();
-    const data = await page.evaluate(() => ({specialties:DATA.specialties.map(s=>s.id),codes:DATA.fragment.courses.map(c=>c.code)}));
+    const data = await page.evaluate(() => ({specialties:DATA.specialties.map(s=>s.id),codes:DATA.fragment.courses.map(c=>c.code),blocks:window.MEDINA_CATEGORY_ORGANISATION.blocks.map(b=>b.code),integrated:window.MEDINA_CATEGORY_ORGANISATION.integrated_count}));
     check('Une seule spécialité : cardiologie',JSON.stringify(data.specialties)==='["cardiologie"]');
-    check('Accueil : 20 cours uniques',await page.locator('[data-s01-course]').count()===20 && new Set(data.codes).size===20);
-    check('Accueil : huit catégories',await page.locator('.s01-category').count()===8);
+    check('Accueil : 20 cours uniques disponibles',data.integrated===20 && new Set(data.codes).size===20);
+    check('Accueil : tous les vrais blocs CIM',await page.locator('[data-mcg-category]').count()===data.blocks.length && data.blocks.length===11);
     check('Navigation sans catalogue global',!await page.locator('.nav-main a[href="#/intelligence"],.nav-main a[href="#/federal"]').count());
-    check('Accueil lisible sans filtre de flou',await page.locator('.s01-home').evaluate(e=>getComputedStyle(e).filter)==='none');
+    check('Accueil lisible sans filtre de flou',await page.locator('.mcg-home').evaluate(e=>getComputedStyle(e).filter)==='none');
     await noOverflow('Accueil PC : aucun débordement');await shot('accueil_pc');
-    await page.locator('[data-s01-category="vaisseaux"]').click();await page.waitForTimeout(180);
-    const categoryBox=await page.locator('#s01-category-vaisseaux').boundingBox();
-    check('Lien de catégorie : défilement vers les vaisseaux',categoryBox.y>=0 && categoryBox.y<800 && await page.evaluate(()=>scrollY>0),categoryBox);
+    await page.locator('[data-mcg-category="I70-I79"]').click();await page.waitForTimeout(180);
+    const categoryBox=await page.locator('[data-mcg-block="I70-I79"] .mcg-block-heading').boundingBox();
+    check('Lien de catégorie : ouverture des vaisseaux et de leurs chapitres',categoryBox.y>=0 && categoryBox.y<800 && await page.locator('[data-mcg-lesson="I70"]').count()===1,categoryBox);
     await go('#/home');
-    await page.locator('[data-s01-course="I21"]').click();await page.locator('.mc[data-code="I21"]').waitFor();
+    await page.locator('[data-mcg-category="I20-I25"]').click();await page.locator('[data-mcg-lesson="I21"] .mcg-lesson-main').click();await page.locator('.mc[data-code="I21"]').waitFor();
     check('Premier cours : contenu écrit',await page.locator('.mc-ilot').count()>5);
     check('Navigo PC : panneau visible',await page.locator('.mc-navigo-panel').isVisible());
     check('Navigo PC : bouton mobile masqué',!await page.locator('.mc-navigo-trigger').isVisible());
@@ -95,11 +95,11 @@ const check = (name, condition, detail) => {assert.ok(condition, name + (detail 
       await go('#/entry/'+alias);check('Alias '+alias+' ouvre '+code,await page.locator('.mc[data-code="'+code+'"]').count()===1);
     }
     for(const route of ['#/entry/J45','#/specialty/pediatrie-generale','#/federal','#/intelligence']) {
-      await go(route);check('Route hors fragment '+route+' renvoie à l’accueil',await page.locator('.s01-home [data-s01-course]').count()===20);
+      await go(route);check('Route hors fragment '+route+' renvoie à l’accueil',await page.locator('.mcg-home [data-mcg-category]').count()===data.blocks.length);
     }
     await page.locator('#global-search').fill('I50');await page.locator('#global-search-form button[type="submit"]').click();
-    await page.locator('.s01-search').waitFor();
-    check('Recherche : résultats limités aux cours écrits',await page.locator('[data-s01-course]').count()===1 && await page.locator('[data-s01-course="I50"]').count()===1);
+    await page.locator('[data-mcg-lesson="I50"]').waitFor();
+    check('Recherche : un cours I50 nommé',await page.locator('[data-mcg-lesson]').count()===1 && (await page.locator('[data-mcg-lesson="I50"]').innerText()).includes('Insuffisance cardiaque'));
     check('Carnet de l’atlas conservé',await page.evaluate(()=>JSON.parse(localStorage.getItem('medora.atlas.v3')).notes.J45)==='Repère respiratoire');
     check('État du fragment sans entrée étrangère',await page.evaluate(()=>!state.bookmarks.includes('J45')&&!state.notes.J45));
     await go('#/entry/I21');
@@ -108,7 +108,7 @@ const check = (name, condition, detail) => {assert.ok(condition, name + (detail 
       check('Navigo adaptatif à '+width,await page.locator('.mc-navigo-trigger').isVisible()=== (width<1100));
     }
     await page.setViewportSize({width:390,height:844});await go('#/home');await shot('accueil_mobile');await noOverflow('Accueil mobile : aucun débordement');
-    await page.locator('[data-s01-course="I21"]').click();await page.locator('.mc').waitFor();await shot('cours_mobile');
+    await page.locator('[data-mcg-category="I20-I25"]').click();await page.locator('[data-mcg-lesson="I21"] .mcg-lesson-main').click();await page.locator('.mc').waitFor();await shot('cours_mobile');
     check('Navigo mobile : bouton rectangulaire visible',await page.locator('.mc-navigo-trigger').isVisible());
     check('Navigo mobile : panneau fermé au départ',!await page.locator('.mc-navigo-panel').isVisible());
     await noOverflow('Cours mobile : aucun débordement');
@@ -123,7 +123,7 @@ const check = (name, condition, detail) => {assert.ok(condition, name + (detail 
     const portable = await browser.newPage();
     portable.on('pageerror',e=>errors.push(e.message));
     await portable.goto(pathToFileURL(file).href);await portable.waitForFunction(()=>window.MDN_READY===true);
-    await portable.locator('[data-s01-course="I21"]').click();await portable.locator('.mc[data-code="I21"]').waitFor();
+    await portable.locator('[data-mcg-category="I20-I25"]').click();await portable.locator('[data-mcg-lesson="I21"] .mcg-lesson-main').click();await portable.locator('.mc[data-code="I21"]').waitFor();
     check('HTML autonome : lecture depuis file://',await portable.locator('.mc-navigo-panel').isVisible() && errors.length===0);
     const report={browser:await browser.version(),file,checks,errors,result:'passed'};
     fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify(report,null,2)+'\n');

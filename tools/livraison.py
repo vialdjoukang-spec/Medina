@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.util
 import json
 import os
 import re
@@ -207,7 +208,18 @@ def existing_baseline(directory):
     data = load_json(manifest)
     if not isinstance(data, dict) or not isinstance(data.get("files"), list):
         raise DeliveryError(f"Manifeste existant invalide : {manifest}")
-    return {f["target_path"]: valid_sha(f["sha256"]) for f in data["files"]}
+    baseline = {}
+    for record in data["files"]:
+        if record.get("operation") == "add":
+            if "sha256" not in record or record["sha256"] is not None:
+                raise DeliveryError("Un ajout doit annoncer sha256:null.")
+            valid_sha(record.get("proposed_sha256"))
+            # Une copie ajoutée n'a aucune base originale à remplacer. Après
+            # injection, une préparation peut la reprendre seulement à l'identique.
+            baseline[record["target_path"]] = None
+        else:
+            baseline[record["target_path"]] = valid_sha(record["sha256"])
+    return baseline
 
 
 def plan_packet(root, fragment, source_commit, files, author="Codex"):
@@ -340,7 +352,8 @@ def inspect_claude(root, directory):
     for chapter in announced:
         if not isinstance(chapter, dict):
             raise DeliveryError("Chaque cours annoncé doit être un objet JSON.")
-        if chapters.get(chapter.get("code")) != chapter.get("title"):
+        code = chapter.get("code")
+        if not isinstance(code, str) or code not in chapters or chapters[code] != chapter.get("title"):
             raise DeliveryError(f"Code ou titre de cours incohérent : {chapter!r}")
     records = manifest.get("files")
     if not isinstance(records, list) or not records:
@@ -358,16 +371,33 @@ def inspect_claude(root, directory):
             raise DeliveryError("Une entrée files doit être un objet JSON.")
         target = record.get("target_path")
         canonical = safe_child(root, target)
-        if target not in allowed or PurePosixPath(target).parts[1] not in announced_codes:
+        parts = PurePosixPath(target).parts
+        operation = record.get("operation", "replace")
+        if operation not in ("replace", "add"):
+            raise DeliveryError(f"Opération de fichier inconnue : {operation!r}")
+        if len(parts) != 3 or parts[0] != "chapters" or parts[1] not in announced_codes:
             raise DeliveryError(f"Fichier hors des cours autorisés du fragment {ident} : {target}")
+        if operation == "add":
+            code = parts[1]
+            if not re.fullmatch(re.escape(code) + r"_[A-Za-z0-9][A-Za-z0-9_.-]*\.(?:html|json)", parts[2]):
+                raise DeliveryError(f"Nom d'ajout invalide ; utiliser {code}_….html ou .json : {target}")
+            if "sha256" not in record or record["sha256"] is not None:
+                raise DeliveryError(f"Un ajout doit annoncer sha256:null : {target}")
+            valid_sha(record.get("proposed_sha256"))
+            if canonical.exists():
+                raise DeliveryError(f"Collision : le fichier canonique existe déjà : {target}")
+            original = None
+        else:
+            if target not in allowed:
+                raise DeliveryError(f"Fichier hors des cours autorisés du fragment {ident} : {target}")
+            original = valid_sha(record.get("sha256"))
+            if digest(allowed[target]) != original:
+                raise DeliveryError(f"Source canonique modifiée depuis la remise : {target}. Réconcilier les versions avant injection.")
         if target in seen:
             raise DeliveryError(f"Fichier déclaré deux fois : {target}")
         seen.add(target)
         if record.get("source_path", "sources/" + target) != "sources/" + target:
             raise DeliveryError(f"Le fichier livré doit conserver son chemin canonique : {target}")
-        original = valid_sha(record.get("sha256"))
-        if digest(allowed[target]) != original:
-            raise DeliveryError(f"Source canonique modifiée depuis la remise : {target}. Réconcilier les versions avant injection.")
         payload = safe_child(directory, "sources/" + target)
         if not payload.is_file():
             raise DeliveryError(f"Fichier livré absent : {payload}")
@@ -382,8 +412,9 @@ def inspect_claude(root, directory):
             raise DeliveryError(f"Source livrée invalide : {target} ({error})") from error
         if record.get("proposed_sha256") is not None and digest(proposed) != valid_sha(record["proposed_sha256"]):
             raise DeliveryError(f"Empreinte du fichier corrigé incohérente : {target}")
-        if proposed != allowed[target]:
-            changed.append({"target_path": target, "path": canonical, "original": allowed[target],
+        if operation == "add" or proposed != allowed[target]:
+            changed.append({"target_path": target, "path": canonical, "operation": operation,
+                            "original": None if operation == "add" else allowed[target],
                             "proposed": proposed, "original_sha256": original, "proposed_sha256": digest(proposed)})
     if not changed:
         raise DeliveryError("Aucune source corrigée ; cette copie de travail ne constitue pas une livraison.")
@@ -395,7 +426,68 @@ def check_claude(root, directory):
     return {"action": "check-claude", "fragment": fragment["id"], "label": fragment["label"],
             "source_commit": manifest["source_commit"], "verified_files": count,
             "changed_files": [c["target_path"] for c in changed],
+            "added_files": [c["target_path"] for c in changed if c["operation"] == "add"],
             "status": "empreintes et chemins conformes ; sources corrigées à examiner ; aucune injection"}
+
+
+def check_injected_justifications(root, changes):
+    """Compiler les banques indiquées par leur nom, après injection du lot entier."""
+    touched = {PurePosixPath(c["target_path"]).parts[1] for c in changes}
+    courses = sorted(code for code in touched
+                     if safe_child(root, f"chapters/{code}/{code}_justifications.json").exists())
+    if not courses:
+        return []
+    spec = importlib.util.spec_from_file_location(
+        "medina_delivery_justifications", Path(__file__).with_name("insert_justifications.py"))
+    compiler = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(compiler)
+    checks = []
+    for code in courses:
+        directory = safe_child(root, "chapters/" + code)
+        for path in directory.iterdir():
+            if path.suffix in (".html", ".json"):
+                no_symlinks(path)
+        try:
+            compiled = compiler.load_course_justifications(code, directory)
+            if compiled is None:
+                raise DeliveryError(f"Banque de justifications absente après injection : {code}")
+        except (compiler.JustificationError, OSError, ValueError, TypeError, KeyError, AttributeError) as error:
+            raise DeliveryError(f"Compilation des justifications interrompue pour {code} : {error}") from error
+        checks.append({"kind": "justifications", "course": code,
+                       "windows": compiled[2]["windows"], "targets": compiled[2]["targets"],
+                       "scope": "compilation technique ; aucune validation médicale exhaustive"})
+    return checks
+
+
+def rollback_addition(change):
+    """Ne retirer que l'inode créé par cette injection, jamais une collision."""
+    try:
+        path = no_symlinks(change["path"])
+        current = path.stat(follow_symlinks=False)
+    except (FileNotFoundError, DeliveryError):
+        return
+    if (current.st_dev, current.st_ino) != change["created_identity"]:
+        return
+    # Capturer le nom atomiquement puis recontrôler son inode : un stat suivi
+    # d'un unlink pourrait supprimer une contribution arrivée entre les deux.
+    with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".livraison-rollback-", delete=False) as output:
+        backup = Path(output.name)
+    try:
+        os.replace(path, backup)
+    except FileNotFoundError:
+        backup.unlink()
+        return
+    except Exception:
+        backup.unlink()
+        raise
+    moved = backup.stat(follow_symlinks=False)
+    if (moved.st_dev, moved.st_ino) != change["created_identity"]:
+        try:
+            # Restaurer le fichier capturé sans écraser un troisième écrivain.
+            os.link(backup, path, follow_symlinks=False)
+        except FileExistsError:
+            return f"Retour arrière concurrent : contribution préservée sous {backup}, cible {path} occupée."
+    backup.unlink()
 
 
 def apply_claude(root, directory):
@@ -412,32 +504,59 @@ def apply_claude(root, directory):
             with tempfile.NamedTemporaryFile(dir=change["path"].parent, prefix=".livraison-", delete=False) as output:
                 output.write(change["proposed"])
                 staged.append((Path(output.name), change))
-            os.chmod(output.name, change["path"].stat().st_mode & 0o777)
+            mode = 0o644 if change["operation"] == "add" else change["path"].stat().st_mode & 0o777
+            os.chmod(output.name, mode)
         for change in changed:
             no_symlinks(change["path"])
-            if digest(change["path"].read_bytes()) != change["original_sha256"]:
+            if change["operation"] == "add":
+                if change["path"].exists():
+                    raise DeliveryError(f"Collision concurrente détectée : {change['target_path']}")
+            elif digest(change["path"].read_bytes()) != change["original_sha256"]:
                 raise DeliveryError(f"Modification concurrente détectée : {change['target_path']}")
         for temporary, change in staged:
-            os.replace(temporary, change["path"])
+            no_symlinks(change["path"])
+            if change["operation"] == "add":
+                if change["path"].exists():
+                    raise DeliveryError(f"Collision juste avant injection : {change['target_path']}")
+                identity = temporary.stat()
+                change["created_identity"] = (identity.st_dev, identity.st_ino)
+                # Le lien crée le nom canonique atomiquement ; contrairement à
+                # replace(), il ne peut écraser une création concurrente.
+                try:
+                    os.link(temporary, change["path"])
+                except FileExistsError as error:
+                    raise DeliveryError(f"Collision lors de l'ajout : {change['target_path']}") from error
+            else:
+                os.replace(temporary, change["path"])
             replaced.append(change)
+        checks = check_injected_justifications(root, changed)
         receipt = {"schema_version": 1, "producer": "Claude", "received_by": "tools/livraison.py",
                    "received_at": now.isoformat(), "source_commit": manifest["source_commit"],
                    "fragment": {"id": fragment["id"], "label": fragment["label"]},
                    "status": INJECTED, "verification_scope": "chemins, empreintes originales et présence des corrections",
-                   "checks": [], "integration_commit": None, "publication": "non effectuée par cet outil",
-                   "files": [{k: c[k] for k in ("target_path", "original_sha256", "proposed_sha256")} for c in changed],
+                   "checks": checks, "integration_commit": None, "publication": "non effectuée par cet outil",
+                   "files": [{k: c[k] for k in ("target_path", "operation", "original_sha256", "proposed_sha256")} for c in changed],
                    "limits": ["Reconstruction et contrôles du projet à exécuter.", "Validation médicale et complétude CIM-11 non établies par cet outil."]}
         receipt_path.parent.mkdir(parents=True, exist_ok=True)
         receipt_path.write_bytes(json_bytes(receipt))
-    except Exception:
+    except Exception as error:
+        rollback_conflicts = []
         for change in reversed(replaced):
-            change["path"].write_bytes(change["original"])
+            if change["operation"] == "add":
+                conflict = rollback_addition(change)
+                if conflict:
+                    rollback_conflicts.append(conflict)
+            else:
+                change["path"].write_bytes(change["original"])
+        if rollback_conflicts:
+            raise DeliveryError(" ".join(rollback_conflicts)) from error
         raise
     finally:
         for temporary, _ in staged:
             temporary.unlink(missing_ok=True)
     return {"action": "apply-claude", "fragment": fragment["id"], "verified_files": count,
             "changed_files": [c["target_path"] for c in changed],
+            "added_files": [c["target_path"] for c in changed if c["operation"] == "add"],
             "receipt": receipt_path.relative_to(root).as_posix(), "status": INJECTED}
 
 
