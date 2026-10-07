@@ -11,7 +11,8 @@ Usage : python3 appliquer_justifications.py <CODE> <dossier_resultats> [--ecrire
   out/<cle>[__Pn].json   {ancres_retirees:[{id}], label_modifies:[{id, label}]}.
 La base est la copie livrée par Claude si livraison.json la déclare, sinon la source canonique.
 Ordre : compléments du texte, mots verts, fenêtres, puis nettoyage des rubriques Source.
-Sans --ecrire, rien n'est écrit et le bilan est affiché.
+Sans --ecrire, rien n'est écrit et le bilan est affiché. --sur-livraison applique une passe supplémentaire
+(par exemple ESC 2026) sur une copie déjà livrée ; un fichier pop cible absent est créé.
 """
 import json
 import pathlib
@@ -59,11 +60,19 @@ def main():
     def lire(n):
         c = copies / f"{n}.html"
         livre = c.exists() and f"chapters/{code}/{n}.html" in declares
+        if not livre and not (canon / f"{n}.html").exists():
+            return c.read_text(encoding="utf-8") if c.exists() else ""
         return (c if livre else canon / f"{n}.html").read_text(encoding="utf-8")
 
-    if ecrire and any(f"chapters/{code}/{n}.html" in declares for n in noms):
+    sur_livraison = "--sur-livraison" in sys.argv
+    if ecrire and not sur_livraison and any(f"chapters/{code}/{n}.html" in declares for n in noms):
         sys.exit(f"{code} est déjà livré : réappliquer doublerait les compléments. Repartir des sources canoniques.")
     textes = {n: lire(n) for n in noms}
+    for job in (res / "jobs").glob("*.json"):
+        cible = json.loads(job.read_text()).get("fichier_cible", "")
+        if cible and cible not in textes and re.fullmatch(rf"{code}_pop[\w]*", cible):
+            noms.append(cible)
+            textes[cible] = (copies / f"{cible}.html").read_text(encoding="utf-8") if (copies / f"{cible}.html").exists() else ""
     bilan = {"textes_appliques": 0, "textes_rejetes": 0, "textes_echecs": [], "ancres": 0,
              "ancres_retirees": 0, "ancres_echecs": [], "fenetres_creees": [], "fenetres_completees": [],
              "fenetres_echecs": []}

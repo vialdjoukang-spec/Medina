@@ -29,7 +29,12 @@ for code in sys.argv[1:]:
     for copie in sorted((LIVR / "sources" / "chapters" / code).glob("*.html")):
         cible = f"chapters/{code}/{copie.name}"
         r = fichiers.setdefault(cible, {"target_path": cible, "source_path": "sources/" + cible})
-        r["sha256"] = sha(DEPOT / cible)
+        if (DEPOT / cible).exists():
+            r.pop("operation", None)
+            r["sha256"] = sha(DEPOT / cible)
+        else:
+            r["operation"] = "add"
+            r["sha256"] = None
         r["proposed_sha256"] = sha(copie)
     if code not in annonces:
         titre = cat.get(code, {}).get("title")
