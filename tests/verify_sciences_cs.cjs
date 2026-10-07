@@ -52,9 +52,11 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
     check(code+' : zoom réel du schéma',await dialog.locator('svg').evaluate(e=>e.getBoundingClientRect().width)>size);
     await page.keyboard.press('Escape');await pause(page);
     check(code+' : retour du focus après le schéma',await figure.evaluate(e=>document.activeElement===e));
-    const links=page.locator('.mc-sci:not([hidden]) .mc-w[data-k]');
-    if(await links.count()){
-     await links.first().click();check(code+' : fenêtre scientifique écrite',(await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()).replace(/\u00ad/g,'')!=='Fiche absente.');await page.locator('.mc-dlg .mc-x').click();
+    const link=page.locator('.mc-sci .mc-w[data-k]').first();
+    if(await link.count()){
+     const unitId=await link.evaluate(e=>e.closest('.mc-sci').id);
+     await page.locator('.mc-sci-bar [data-s="'+unitId+'"]').click();
+     await link.click();check(code+' : fenêtre scientifique écrite',(await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()).replace(/\u00ad/g,'')!=='Fiche absente.');await page.locator('.mc-dlg .mc-x').click();
     }
     await page.setViewportSize({width:390,height:844});
     await page.locator('.mc-size-range').evaluate(e=>{e.value='24';e.dispatchEvent(new Event('input',{bubbles:true}))});
