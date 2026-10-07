@@ -1,0 +1,179 @@
+{
+ "cours": "I35 — Valvulopathies aortiques",
+ "date": "2026-10-07",
+ "verificateur": "Claude (vérification indépendante, TACHE_VERIFICATION.md)",
+ "sources_controlees": [
+  "ESC/EACTS 2025 sur les valvulopathies, texte intégral (I35/src/esc2025_vhd_ejcts.txt) et figure 19 relue sur la page 62 du PDF",
+  "Diaporama officiel ESC 2025 (I35/src/esc2025_slides.txt) pour les classes et niveaux : tableaux de recommandations 4, 13, 14, 15, 16 et tableau 10",
+  "PubMed (résumés) : Minners 2008, Michelena 2011, Afilalo 2017, Brouwer 2020, Nijenhuis 2020, Mérie 2012, Otto 1999, Siontis 2014, Rosenhek 2000, Jaffer 2015, Myerson 2012, Vitale 1999, Eikelboom 2013, Rothman 2000, Schade 2007, Rodriguez-Gabella 2017, Davies 2002, Pape 2007, Monin 2003, Nazerian 2018, Thanassoulis 2013, Pasternak 2018"
+ ],
+ "complements": {
+  "par_fichier": {
+   "I35_a": {
+    "accepter": 12,
+    "corriger": 1
+   },
+   "I35_b": {
+    "accepter": 26,
+    "corriger": 8,
+    "ajout_verificateur": 3
+   },
+   "I35_c": {
+    "accepter": 40,
+    "corriger": 2,
+    "rejeter": 1
+   },
+   "I35_d": {
+    "accepter": 25,
+    "corriger": 7
+   },
+   "I35_pop3": {
+    "accepter": 2,
+    "ajout_verificateur": 2
+   },
+   "I35_pop4": {
+    "accepter": 1
+   },
+   "I35_pop5": {
+    "accepter": 20,
+    "corriger": 1
+   }
+  },
+  "total": {
+   "accepter": 126,
+   "corriger": 19,
+   "ajout_verificateur": 5,
+   "rejeter": 1
+  },
+  "ajouts_du_verificateur": [
+   "I35_b-35",
+   "I35_b-36",
+   "I35_b-37",
+   "I35_pop3-3",
+   "I35_pop3-4"
+  ]
+ },
+ "fenetres": {
+  "verdicts": {
+   "i35-bernoulli__P1": "ok",
+   "i35-calcif__P1": "ok",
+   "i35-chirnc__P1": "corrigée",
+   "i35-choix-tech__P1": "corrigée",
+   "i35-d-aod-meca__P2": "corrigée",
+   "i35-d-asa__P2": "corrigée",
+   "i35-d-benza__P2": "ok",
+   "i35-d-hep__P2": "corrigée",
+   "i35-d-inotrope__P2": "ok",
+   "i35-d-nitroprus__P2": "ok",
+   "i35-discord__P1": "ok",
+   "i35-dissection__P1": "ok",
+   "i35-dse__P1": "corrigée",
+   "i35-effort__P1": "ok",
+   "i35-grossesse__P1": "corrigée",
+   "i35-inr__P1": "corrigée",
+   "i35-lflg-parad__P1": "ok",
+   "i35-manoeuvres__P1": "ok",
+   "i35-pacemaker__P1": "corrigée",
+   "i35-prothese__P1": "ok",
+   "i35-ra-asympto__P1": "corrigée",
+   "i35-seuils-aorte__P1": "ok",
+   "i35-suivi__P1": "ok"
+  },
+  "corrigees": [
+   "i35-chirnc__P1",
+   "i35-choix-tech__P1",
+   "i35-d-aod-meca__P2",
+   "i35-d-asa__P2",
+   "i35-d-hep__P2",
+   "i35-dse__P1",
+   "i35-grossesse__P1",
+   "i35-inr__P1",
+   "i35-pacemaker__P1",
+   "i35-ra-asympto__P1"
+  ],
+  "creees": [
+   "i35-ra-asympto (P1)",
+   "i35-choix-tech (P1)",
+   "i35-d-aod-meca (P2)"
+  ],
+  "fusionnees": []
+ },
+ "ancres": {
+  "ajoutees": [
+   {
+    "id": "I35_c-a1",
+    "cle": "i35-pacemaker",
+    "label": "bloc de branche droit préexistant",
+    "motif": "remplace le complément rejeté I35_c-25"
+   }
+  ],
+  "label_modifies": [
+   {
+    "id": "I35_b-a1",
+    "label": "FEVG &lt; 50 % sans autre cause"
+   }
+  ],
+  "retirees": []
+ },
+ "point_prioritaire_aspirine_TAVI": {
+  "decision": "P2 a raison. Formulation retenue partout : aspirine 75–100 mg/jour pendant 12 mois après TAVI sans indication d’anticoagulation (I, A), puis poursuite au long cours à envisager (IIa, C).",
+  "preuve": "Tableau de recommandations 16 (diaporama : « Low-dose ASA … is recommended for 12 months after TAVI » I, A ; « Long-term (after the first 12 months) low-dose ASA … should be considered » IIa, C) et figure 19 de l’ESC/EACTS 2025 (« ASA for 12 months (Class I) » puis « ASA long term after first 12 months (Class IIa) »). Seule la prose de la section 14.3.2.2 écrit « lifelong low-dose ASA is the recommended antithrombotic treatment » ; cette divergence est exposée dans la rubrique « Durée » de i35-d-asa, sans être promue au rang de recommandation.",
+  "occurrences_harmonisees": [
+   "I35_b 12.3 (I35_b-22, corrigé : « à vie » retiré)",
+   "I35_d îlot 1 (I35_d-2)",
+   "I35_d tableau des doses (I35_d-12)",
+   "i35-d-asa Posologie (I35_pop4-1)",
+   "i35-d-asa Durée (fenêtre P2 corrigée)",
+   "Pareto choix (I35_pop5-11)",
+   "Pareto pharmacologie (I35_pop5-20)"
+  ]
+ },
+ "doublons": [
+  {
+   "sujet": "Bloc de branche droit avant TAVI",
+   "decision": "Rubrique de P1 dans i35-pacemaker gardée (mécanisme et méta-analyse de Siontis et al.) ; complément I35_c-25 de P2 rejeté et remplacé par un mot vert vers i35-pacemaker (ancre I35_c-a1)."
+  },
+  {
+   "sujet": "AOD et prothèse mécanique (i35-inr de P1, i35-d-aod-meca de P2)",
+   "decision": "Mécanisme détaillé (voie de contact, Jaffer et al.) gardé dans i35-d-aod-meca ; la rubrique de P1 dans i35-inr réduite à deux phrases avec renvoi ; renvois croisés corrigés."
+  },
+  {
+   "sujet": "Grossesse (i35-grossesse de P1, i35-d-hep de P2)",
+   "decision": "Recoupement limité au passage placentaire des héparines ; i35-d-hep renvoie déjà à i35-grossesse pour les chiffres. Phrase de P1 sur la césarienne remplacée par une rubrique explicative après correction de la rubrique « Accouchement » existante (I35_pop3-4)."
+  },
+  {
+   "sujet": "Relais par héparine en chirurgie (i35-chirnc, i35-d-hep, I35_d-26)",
+   "decision": "Rubrique existante de i35-chirnc corrigée (I35_pop3-3) ; i35-chirnc renvoie à i35-d-hep au lieu de redire le raisonnement."
+  }
+ ],
+ "erreurs_de_fond_trouvees": [
+  "Aspirine « à vie » après TAVI (P1, I35_b-22) : contraire au tableau de recommandations 16 et à la figure 19 ; corrigé.",
+  "AOD « préféré même pendant les premiers mois » après bioprothèse avec fibrillation auriculaire (P1, I35_b-25) : le tableau 16 ne le préfère qu’après trois mois (IIa, B) ; la poursuite précoce d’un AOD préexistant est IIb, B ; corrigé.",
+  "Mérie et al. (JAMA 2012) cité à contresens (P1, I35_b-24) : l’étude associe l’arrêt précoce de la warfarine à davantage de décès cardiovasculaires ; corrigé.",
+  "Afilalo et al. (2017) surinterprété (P1, I35_b-5) ; corrigé.",
+  "« Valve mécanique aortique récente » au lieu de « de nouvelle génération » (P2, I35_d-26 et i35-d-hep) ; corrigé.",
+  "Monin et al. et ESC/EACTS 2025 mal lus dans i35-dse (P1 : amélioration « dans les deux groupes ») ; corrigé.",
+  "i35-choix-tech (P1) comparait le TAVI bicuspide à la chirurgie au lieu du TAVI tricuspide ; corrigé.",
+  "Cours, tableau 11.1 : critère « FEVG > 55 % » et renvoi à IIa, A de la ligne FEVG 50–55 % et chute tensionnelle, selon la formulation 2021 ; 2025 : FEVG ≥ 50 % avec un marqueur dont FEVG < 55 % (IIa, B), chute tensionnelle IIa, C ; corrigé par le vérificateur (I35_b-35 à 37).",
+  "Cours, i35-chirnc : relais par héparine imposé pour toute chirurgie majeure ; corrigé par le vérificateur (I35_pop3-3).",
+  "Cours, i35-grossesse : césarienne réservée au RA sévère « symptomatique » ; corrigé par le vérificateur (I35_pop3-4)."
+ ],
+ "controles": {
+  "unicite_old": "tous les old uniques dans leur fichier, aucune balise perdue, aucun chevauchement hors I35_c-25 (rejeté) et l’ancre qui le remplace",
+  "simulation_application": "copie hors dépôt (scratchpad) : 150 compléments appliqués, 1 rejeté, 9 ancres, 3 fenêtres créées, 20 complétées, 0 échec",
+  "verifier_sigles": "{} sur chaque out/*.html, sur le texte final de tous les compléments et sur les neuf fichiers du cours après application simulée",
+  "balises": "après application, écarts de balises identiques à la source canonique (chapitre réparti sur plusieurs fichiers) ; aucun renvoi vers une clé absente ; aucune fenêtre à plus de deux renvois"
+ },
+ "reserves": [
+  "Ajouts du vérificateur (I35_b-35, I35_b-36, I35_b-37, I35_pop3-3, I35_pop3-4 et l’ancre I35_c-a1) marqués « auteur : vérificateur » dans edits/ et jobs/ : ils n’ont pas eu de second contrôle indépendant.",
+  "Bioprothèse chez la femme qui envisage une grossesse : le cours donne la classe I (ESC 2025 grossesse, non disponible ici) ; le tableau de recommandations 13 de l’ESC/EACTS 2025 donne IIa, C. Non modifié.",
+  "Warfarine pendant la grossesse : « < 5 mg/jour » dans l’ESC/EACTS 2025, « ≤ 5 mg/jour » (ESC 2018) dans le cours ; équivalents phenprocoumone et acénocoumarol non vérifiables. Non modifié.",
+  "Écarts mineurs signalés par P1 et non corrigés : SVA « < 1,0 cm² » (2025 : ≤ 1 cm²) ; seuils de score calcique notés « ≥ » et attribués à 2021 (2025 : > 2 000 AU homme, > 1 200 AU femme).",
+  "Fenêtre i35-inr : le tableau 2021 reste affiché, complété par une rubrique 2025 ; une refonte sur le modèle du tableau 10 de 2025 serait plus claire.",
+  "Rationnels physiologiques non démontrés, présentés comme tels : césarienne dans le RA sévère et l’aorte dilatée, contrôle impulsif de la dissection, anesthésie neuraxiale, mécanisme de la mort subite, troubles de repolarisation de l’hypertrophie.",
+  "ESC 2024 (aorte), ESC 2025 (grossesse), ESC 2023 (endocardite), Baumgartner et al. 2017 et les résumés des caractéristiques des AOD n’ont pas été relus en texte intégral.",
+  "Le bilan de P1 numérote mal ses propres compléments (I35_b-24, -27, -28 au lieu de I35_b-22, -25, -26).",
+  "Le cours n’est pas certifié relu intégralement : la vérification porte sur les propositions des producteurs et sur les passages qu’elles touchent."
+ ],
+ "donnees_personnelles": "Aucune donnée personnelle transmise ; seules des requêtes bibliographiques PubMed ont été faites."
+}
