@@ -84,11 +84,8 @@ def load_data(generated_at):
                        "production": assignments.get(ident),
                        "blocks": [{"code": b, "title": t, "categories": sorted(es, key=lambda e: e["order"])}
                                   for (b, t), es in sorted(groups.items())]})
-    workload = {agent: sum(f["category_count"] for f in result
-                          if f["production"] and f["production"]["owner"] == agent)
-                for agent in production["agents"]}
     return {"generated_at": generated_at,
-            "production": {"allocation": production["allocation"], "categories": workload,
+            "production": {"allocation": production["allocation"], "assignment_unit": production["assignment_unit"],
                            "agents": production["agents"], "rules": production["rules"]},
             "catalogue": {"version": "Catalogue historique MEDINA — CIM-10-GM 2024", "total_categories": len(entries),
                           "integrated_courses": len(chapters), "full_cim11": False},

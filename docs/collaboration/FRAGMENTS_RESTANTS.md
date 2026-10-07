@@ -6,7 +6,7 @@ Consigne de Vial du **8 octobre 2026** : **11 fragments Claude, 10 fragments Cod
 
 C-01-Cardiologie reste dans sa mission partagée actuelle ; son exclusion de ces 21 attributions ne signifie pas qu’il est achevé. La priorité cardiologie en cours reste à terminer et à contrôler avant d’activer les nouvelles files. Ce document organise les travaux suivants, sans déclarer une session Claude démarrée.
 
-La répartition équilibre le volume du catalogue historique : **780 catégories Claude, 779 catégories Codex** sur les 1 559 catégories hors cardiologie. Elle répartit aussi les trois axes sans catégories : deux à Claude, un à Codex. Ces axes nécessitent un périmètre et des chapitres nommés ; zéro catégorie rattachée ne signifie pas zéro travail. Le volume historique n’est ni une mesure de difficulté médicale ni un inventaire CIM-11. Réexaminer la charge après constitution de l’inventaire officiel, sans changer un responsable en cours de chapitre.
+Chaque attribution porte sur un **fragment entier**, avec toutes ses catégories et sous-catégories regroupées sous lui. Claude reçoit 11 fragments et Codex 10. Les axes dont l’inventaire reste à constituer demeurent attribués en entier à leur responsable. Conserver les rattachements canoniques et les renvois des cours communs.
 
 Chaque propriétaire assure la production ou la reprise de ses chapitres, leur justification, leurs sources, leur qualité médicale et rédactionnelle et leur remise. L’autre agent assure la contrelecture indépendante du chapitre remis ; Codex coordonne l’injection, la construction et la publication. Cette contrelecture ne transfère pas la propriété du fragment. Les attributions de fragments remplacent les anciens rôles généraux « Codex crée, Claude relit » pour ce périmètre ; les missions et livraisons cardiologiques existantes sont conservées.
 
@@ -16,34 +16,38 @@ L’ordre de chaque file conserve les rangs du registre. Un agent responsable tr
 
 ### Claude — 11 fragments
 
-| Rang dans la file | Fragment | Catégories historiques |
-| --- | --- | ---: |
-| 1 | P-02-Pneumologie | 64 |
-| 2 | G-04-Gastroentérologie et hépatologie | 102 |
-| 3 | E-06-Endocrinologie et métabolisme | 77 |
-| 4 | H-08-Hématologie | 44 |
-| 5 | G-10-Gynécologie et sénologie | 50 |
-| 6 | M-12-Médecine des âges de la vie | 0 |
-| 7 | R-14-Rhumatologie et orthopédie | 155 |
-| 8 | O-17-Oto-rhino-laryngologie et médecine bucco-dentaire | 80 |
-| 9 | O-18-Ophtalmologie | 56 |
-| 10 | M-19-Médecine d’urgence, traumatologie et toxicologie | 152 |
-| 11 | E-22-Éthique médicale, droit et communication | 0 |
+| Rang dans la file | Fragment entier attribué |
+| --- | --- |
+| 1 | P-02-Pneumologie |
+| 2 | G-04-Gastroentérologie et hépatologie |
+| 3 | E-06-Endocrinologie et métabolisme |
+| 4 | H-08-Hématologie |
+| 5 | G-10-Gynécologie et sénologie |
+| 6 | M-12-Médecine des âges de la vie |
+| 7 | R-14-Rhumatologie et orthopédie |
+| 8 | O-17-Oto-rhino-laryngologie et médecine bucco-dentaire |
+| 9 | O-18-Ophtalmologie |
+| 10 | M-19-Médecine d’urgence, traumatologie et toxicologie |
+| 11 | E-22-Éthique médicale, droit et communication |
 
 ### Codex — 10 fragments
 
-| Rang dans la file | Fragment | Catégories historiques |
-| --- | --- | ---: |
-| 1 | I-03-Infectiologie | 155 |
-| 2 | N-05-Neurologie | 120 |
-| 3 | N-07-Néphrologie | 27 |
-| 4 | O-09-Oncologie, génétique médicale et soins palliatifs | 54 |
-| 5 | O-11-Obstétrique et néonatologie | 134 |
-| 6 | I-13-Immunologie et allergologie | 13 |
-| 7 | U-15-Urologie et andrologie | 52 |
-| 8 | D-16-Dermatologie | 89 |
-| 9 | D-20-Diagnostic clinique et examens complémentaires | 0 |
-| 10 | M-21-Médecine de premier recours et santé publique | 135 |
+| Rang dans la file | Fragment entier attribué |
+| --- | --- |
+| 1 | I-03-Infectiologie |
+| 2 | N-05-Neurologie |
+| 3 | N-07-Néphrologie |
+| 4 | O-09-Oncologie, génétique médicale et soins palliatifs |
+| 5 | O-11-Obstétrique et néonatologie |
+| 6 | I-13-Immunologie et allergologie |
+| 7 | U-15-Urologie et andrologie |
+| 8 | D-16-Dermatologie |
+| 9 | D-20-Diagnostic clinique et examens complémentaires |
+| 10 | M-21-Médecine de premier recours et santé publique |
+
+## Catégories regroupées et nommées avec leur fragment
+
+Conserver toutes les catégories sous leur fragment respectif dans le tableau, les rapports et les remises. Une catégorie ou un chapitre cité dans un texte porte **code — intitulé (libellé complet du fragment)**, par exemple **J45 — Asthme (P-02-Pneumologie)** et **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)**. Pour un cours commun, sa catégorie garde son fragment de rattachement ; le renvoi indique aussi le fragment du cours cible. L’attribution d’un fragment ne déplace aucune catégorie.
 
 ## Coordination et mode multi-agent
 
@@ -58,8 +62,8 @@ La mission opérationnelle de Claude est [CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md
 ## Progression obligatoire par chapitre
 
 1. Avant de produire, lire les instructions actuelles, la passation, les reçus et toutes les contributions distantes disponibles. Reprendre les sources canoniques les plus récentes ; ne pas écraser une correction reçue avec une ancienne copie.
-2. Après clôture de la priorité cardiologie, prendre le premier fragment de sa file. Choisir un seul chapitre : priorités du registre, puis ordre du catalogue. Commencer par revoir un cours existant si sa revue exhaustive reste ouverte. Claude commence ainsi par **J45 — Asthme** en P-02-Pneumologie ; Codex par **A41 — Sepsis et choc septique de l’adulte** en I-03-Infectiologie. Ces points d’entrée sont proposés, aucun n’est déclaré actif ici.
-3. Enregistrer `agents.<agent>.active_chapter` dans le plan avec `fragment_id`, `code`, `title`, `stage`, `base_commit` et `report_path` (chemin relatif du rapport). Les étapes sont `writing`, `review`, `checks`, `integration` ; `blocked` conserve le même chapitre. Un seul objet ou `null` est permis : une liste de chapitres actifs est refusée par le validateur. Vérifier avec `python3 tools/production_plan.py` ; la construction du tableau exécute le même contrôle. Réserver le code primaire d’un cours commun, jamais une variante déjà couverte : M30 renvoie par exemple à M31 en I-13-Immunologie et allergologie, produit par Codex. Le validateur contrôle les attributions, le chapitre unique, le code et le titre canoniques, le SHA et le chemin du rapport. Il ne certifie pas les audits, la clôture ou la publication, dont les preuves restent dans les reçus. Pour les axes encore sans catégories, définir d’abord leur inventaire et leurs identifiants de chapitres dans les sources canoniques ; ne pas inventer de code CIM pour réserver un thème.
+2. Après clôture de la priorité cardiologie, prendre le premier fragment de sa file. Choisir un seul chapitre : priorités du registre, puis ordre du catalogue. Commencer par revoir un cours existant si sa revue exhaustive reste ouverte. Claude commence ainsi par **J45 — Asthme (P-02-Pneumologie)** ; Codex par **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)**. Ces points d’entrée sont proposés, aucun n’est déclaré actif ici.
+3. Enregistrer `agents.<agent>.active_chapter` dans le plan avec `fragment_id`, `code`, `title`, `stage`, `base_commit` et `report_path` (chemin relatif du rapport). Les étapes sont `writing`, `review`, `checks`, `integration` ; `blocked` conserve le même chapitre. Un seul objet ou `null` est permis : une liste de chapitres actifs est refusée par le validateur. Vérifier avec `python3 tools/production_plan.py` ; la construction du tableau exécute le même contrôle. Réserver le code primaire d’un cours commun, jamais une variante déjà couverte : M30 — Périartérite noueuse et affections apparentées (R-14-Rhumatologie et orthopédie) renvoie par exemple à M31 — Vascularites systémiques (I-13-Immunologie et allergologie), produit par Codex. Le validateur contrôle les attributions, le chapitre unique, le code et le titre canoniques, le SHA et le chemin du rapport. Il ne certifie pas les audits, la clôture ou la publication, dont les preuves restent dans les reçus. Pour les axes encore sans catégories, définir d’abord leur inventaire et leurs identifiants de chapitres dans les sources canoniques ; ne pas inventer de code CIM pour réserver un thème.
 4. Terminer ce chapitre dans ses quatre onglets, fenêtres, figures, tableaux, quiz, Pareto, glossaire et sources. Chaque affirmation médicale et décision reçoit une justification causale ou clinique précise, ses limites et une référence. Conserver les précautions décisives dans le texte principal. Aucun quota de mots ne remplace cette exigence.
 5. Remettre **un chapitre par lot, rapport et PR**, avec ses sources et leurs empreintes. Les fichiers partagés strictement nécessaires à ce chapitre sont inclus et expliqués. Aucun lot nouveau regroupant plusieurs chapitres ne respecte cette progression. Les anciennes remises restent recevables et sont contrôlées chapitre par chapitre ; cette règle n’efface pas les lots déjà reçus.
 6. Faire la contrelecture médicale et rédactionnelle indépendante, corriger les réserves bloquantes, construire le cours et le fragment, puis contrôler le navigateur sur ordinateur et mobile. Une simple compilation, une présence de fenêtres ou un contrôle de syntaxe ne clôt pas un chapitre. Consigner les commandes réellement exécutées et le commit exact contrôlé.

@@ -9,6 +9,8 @@ STAGES = {"writing", "review", "checks", "integration", "blocked"}
 
 
 def validate_plan(plan, registry, category_owners=None, courses=None, titles=None):
+    if plan.get("assignment_unit") != "fragment":
+        raise ValueError("La répartition attribue des fragments entiers à leurs responsables.")
     names = {fragment["id"]: fragment for fragment in registry}
     if plan.get("allocation") != AGENTS or set(plan.get("agents", {})) != set(AGENTS):
         raise ValueError("La répartition doit être de 11 fragments Claude et 10 Codex.")

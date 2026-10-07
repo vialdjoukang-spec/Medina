@@ -38,7 +38,7 @@ check('Les 21 attributions excluent la cardiologie et respectent les files 11/10
   const assigned = production.filter(f => f.production.owner === agent);
   return assigned.length === data.production.allocation[agent] && assigned.every((f, i) => f.production.queue_order === i+1 && f.production.queue_size === assigned.length);
 }));
-check('Le volume indicatif est recalculé depuis les catégories canoniques', ['Claude','Codex'].every(agent => data.production.categories[agent] === production.filter(f => f.production.owner === agent).reduce((sum, f) => sum+f.category_count, 0)));
+check('La répartition porte sur des fragments entiers', data.production.assignment_unit === 'fragment' && !('categories' in data.production));
 check('Le plan impose un chapitre et une livraison par responsable', data.production.rules.max_active_chapters_per_agent === 1 && data.production.rules.delivery_chapters === 1);
 for (const f of data.fragments) {
   const entries = f.blocks.flatMap(b => b.categories);
@@ -91,6 +91,7 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
     check('Les 22 noms de fragments figurent dans la bande latérale', await page.locator(fragmentSelector).count() === 22 && (await page.locator(fragmentSelector).allTextContents()).every((text, i) => text.includes(registry[i].label)));
     check('Les responsables et rangs de file sont affichés pour les 21 fragments', (await page.locator(fragmentSelector).allTextContents()).every((text, i) => !data.fragments[i].production || text.includes(data.fragments[i].production.owner) && text.includes(data.fragments[i].production.queue_order+'/'+data.fragments[i].production.queue_size)));
     check('Le résumé explique le parallélisme et les audits avant injection', (await page.locator('#production-summary').innerText()).includes('sous-agents en parallèle') && (await page.locator('#production-summary').innerText()).includes('avant injection'));
+    check('Les attributions gardent les catégories groupées sous leur fragment', (await page.locator('#production-summary').innerText()).includes('fragment entier') && (await page.locator('#production-summary').innerText()).includes('regroupées sous ce fragment'));
     check('Le catalogue CIM-10-GM reste visible', (await page.locator('body').innerText()).includes('CIM-10-GM 2024'));
     await overflow(page, 'Accueil bureau sans débordement horizontal');
     if (!targeted) for (const f of data.fragments) {
@@ -124,6 +125,7 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
     await page.goto(pageUrl + '#fragment=S10&block=M30-M36&category=M30');
     await waitCategory(page, 'M30');
     check('Un lien profond retrouve M30 et son cours M31 nommé', (await chapterRowFor(page, 'M30').innerText()).includes(cross.course.title) && await chapterRowFor(page, 'M30').locator('a[href="' + cross.course.url + '"]').count() === 1);
+    check('Une catégorie affiche son propre fragment entre parenthèses', (await page.locator('#category-title').innerText()).includes('('+byId.S10.label+')'));
     await page.reload();
     await waitCategory(page, 'M30');
     check('Le fil d’Ariane conserve code et intitulé complet de la leçon', (await page.locator('.breadcrumbs').innerText()).includes(cross.code) && (await page.locator('.breadcrumbs').innerText()).includes(cross.title));
@@ -170,6 +172,7 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
     await page.locator('#lesson-search').fill('Pneumologie');
     await page.waitForFunction(() => document.getElementById('view-title')?.textContent === 'Pneumologie');
     check('La recherche retrouve toutes les catégories pulmonaires', await page.locator(categorySelector).count() === byId.S02.category_count);
+    check('Chaque catégorie pulmonaire citée dans la recherche précise son fragment', (await page.locator(categorySelector).allTextContents()).every(text => text.includes('('+byId.S02.label+')')));
     if (integrated.some(course => course.code === 'J40')) {
       check('La recherche affiche un seul cours Bronchite et ses quatre variantes nommées', await page.locator('[data-chapter-code="J40"]').count() === 1 && (await page.locator('[data-chapter-code="J40"] .category-variant').allTextContents()).length === 4 && bronchitis.every(e => byCode[e.code].title === e.title));
     }
