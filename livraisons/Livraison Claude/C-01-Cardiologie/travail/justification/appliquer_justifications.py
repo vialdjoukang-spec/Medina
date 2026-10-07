@@ -9,7 +9,7 @@ Usage : python3 appliquer_justifications.py <CODE> <dossier_resultats> [--ecrire
   jobs/<cle>[__Pn].json  fenêtre : {cle, titre, action, fichier_cible, ancres:[{file, id, old, label}]} ;
   out/<cle>[__Pn].html   template complet (creer) ou rubriques à ajouter (completer) ;
   out/<cle>[__Pn].json   {ancres_retirees:[{id}], label_modifies:[{id, label}]}.
-La base est la copie livrée par Claude si elle existe, sinon la source canonique.
+La base est la copie livrée par Claude si livraison.json la déclare, sinon la source canonique.
 Ordre : compléments du texte, mots verts, fenêtres, puis nettoyage des rubriques Source.
 Sans --ecrire, rien n'est écrit et le bilan est affiché.
 """
@@ -52,10 +52,12 @@ def main():
     copies = LIVR / "sources" / "chapters" / code
     canon = DEPOT / "chapters" / code
     noms = sorted(p.stem for p in canon.glob("*.html"))
+    declares = {r["target_path"] for r in json.loads((LIVR / "livraison.json").read_text())["files"]}
 
     def lire(n):
         c = copies / f"{n}.html"
-        return (c if c.exists() else canon / f"{n}.html").read_text(encoding="utf-8")
+        livre = c.exists() and f"chapters/{code}/{n}.html" in declares
+        return (c if livre else canon / f"{n}.html").read_text(encoding="utf-8")
 
     textes = {n: lire(n) for n in noms}
     bilan = {"textes_appliques": 0, "textes_rejetes": 0, "textes_echecs": [], "ancres": 0,
@@ -143,7 +145,7 @@ def main():
     if ecrire:
         copies.mkdir(parents=True, exist_ok=True)
         for n, t in textes.items():
-            if t != lire(n) or (copies / f"{n}.html").exists():
+            if t != lire(n):
                 (copies / f"{n}.html").write_text(t, encoding="utf-8")
     resume = {k: (len(v) if isinstance(v, list) and k.startswith("fenetres_c") else v) for k, v in bilan.items()}
     print(json.dumps(resume, ensure_ascii=False, indent=1))
