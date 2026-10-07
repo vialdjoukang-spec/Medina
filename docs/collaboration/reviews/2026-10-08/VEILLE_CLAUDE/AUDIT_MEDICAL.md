@@ -154,3 +154,44 @@ Les anciens objets restent récupérables au commit de remise déclaré ; leur a
 - **MED-03 : non levée.** Pour **I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie)**, la sortie contenant le paragraphe insuffisamment conditionné est le même blob que précédemment. Aucun fichier final corrigé n’est remis dans la tête courante.
 
 **Injection du lot courant suspendue :** restaurer ou remettre explicitement les sources du chapitre choisi avec un manifeste cohérent, corriger les réserves et rendre accessible leur preuve primaire, puis faire vérifier la version exacte. Ce contrôle n’a pas audité toutes les autres modifications importées dans la nouvelle tête, ni les nouveaux brouillons de production ; leurs différences ne sont pas assimilées à une résolution de ces réserves.
+
+## Restauration et rapprochement de base — 8 octobre 2026, tête figée `f2e9934`
+
+**Les 25 sources finales sont restaurées ; le blocage documentaire « sources absentes » est levé à cette tête. Les réserves médicales MED-01, MED-02 et MED-03 restent ouvertes.** Aucun nouvel audit exhaustif n’est revendiqué pour les fichiers dont les blobs sont identiques à la remise précédemment relue.
+
+Contrôle en lecture seule dans `/workspace/medina-env/claude-watch/git`, au commit exact `f2e9934c7c372bde5cc1d116f9b24fe3bb621a2f`. Comparaisons : delta depuis `482a6799b3e076bf49e9699b6091c82d54c2d105`, identité des sources avec la remise `020e65b721415481298d0cf295ba0ed8966875ea`, et différences entre les bases canoniques. Aucun programme entrant exécuté, aucun canonique modifié, aucune injection.
+
+### Restauration réelle, correction médicale non confondue
+
+Le manifeste contient toujours 25 fichiers : chaque `source_path` existe désormais dans l’arbre reçu. La base passe de `b6e5d18c2c2383893819c4c0834d6402bbe30e67` à `39b7ff0cc585c59ffbb99fb448940daa1950b34d`. Le rapport final décrit une réapplication après convergence sur cette nouvelle base et actualise la taille construite du fragment ; il n’annonce pas une correction des réserves MED-01 à MED-03.
+
+Comparaison de tous les identifiants de blobs du manifeste avec `020e65b` : **18 fichiers identiques, 7 fichiers différents**. Les quatre fichiers décisifs pour les réserves ciblées ont retrouvé exactement leurs anciens blobs :
+
+| Chapitre | Chemin relatif sous `sources/` | Blob identique à `020e65b` et `f2e9934` |
+| --- | --- | --- |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie) | `chapters/I44/I44_c.html` | `e486d4cb00b862d72f89cdc1d5abc31e10804e9d` |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie) | `chapters/I44/I44_pop_esc_comparison.html` | `372f05d873e4cf2ab653da32da713e06996ffeda` |
+| I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie) | `chapters/I30/I30_c.html` | `d3958e434a347f02d3afe048598aa0b4fae8d1ce` |
+| I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie) | `chapters/I30/I30_pop_esc_comparison.html` | `617df074924cc2bfe3639cfc53360aa5d0122b6a` |
+
+Pour les sept fichiers différents, lecture des changements ligne par ligne et rapprochement avec la différence canonique `b6e5d18..39b7ff0` : toutes les lignes ajoutées/retirées correspondent aux mêmes modifications présentes dans cette différence de base, sans ligne de changement proposée supplémentaire dans ces sept fichiers. Il s’agit de la reprise de modifications déjà contenues dans la nouvelle base, dont certaines améliorent le contenu médical ; elles ne corrigent pas les passages faisant l’objet des réserves ciblées.
+
+| Chapitre et fichier repris | Évolution observée depuis la première remise |
+| --- | --- |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie), `chapters/I44/I44_a.html` | Statut de relecture repris ; disparition de la déduction automatique « cinq demi-vies = cause médicamenteuse exclue », remplacée par une surveillance selon médicament, métabolites et fonctions d’élimination. |
+| I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie), `chapters/I44/I44_b.html` | Correction préexistante du traitement de l’hyperkaliémie : élimination selon contexte et soutien circulatoire/stimulation en parallèle si nécessaire. Le passage CRT concerné par MED-02 ne change pas. |
+| I33 — Endocardite infectieuse (C-01-Cardiologie), `chapters/I33/I33_b.html` | Correction préexistante de l’interprétation d’une seule paire d’hémocultures positive selon le germe et le contexte, notamment pour *S. aureus*. |
+| I34 — Valvulopathies mitrales, tricuspides et pulmonaires (C-01-Cardiologie), `chapters/I34/I34_b.html` | Prudence préexistante sur le choix de l’anticoagulant dans le rétrécissement mitral dégénératif serré et la portée d’INVICTUS. |
+| I35 — Valvulopathies aortiques (C-01-Cardiologie), `chapters/I35/I35_b.html` | Corrections préexistantes des conditions de chirurgie précoce dans l’insuffisance aortique, de l’accès transfémoral du TAVI et des limites d’interprétation de la durabilité. |
+| I42 — Cardiomyopathies (C-01-Cardiologie), `chapters/I42/I42_a.html` | Statut de relecture repris. |
+| Q21 — Cardiopathies congénitales de l’adulte (C-01-Cardiologie), `chapters/Q21/Q21_a.html` | Statut de relecture et liste des référentiels repris. |
+
+Cette lecture de changements ne certifie pas médicalement tous ces chapitres ni les référentiels cités ; elle identifie la provenance des différences dans la base de convergence.
+
+### État des trois réserves
+
+- **MED-01 : non levée.** Aucun document primaire ESC 2026 n’est ajouté au périmètre `travail/esc2026/**/src/` ni comme PDF dans ce dossier. La section « Référentiels lus » du rapport conserve la mention « copies locales non versionnées ». Le changement de base et les contrôles techniques déclarés ne rendent pas reproductible la lecture indépendante des classes/niveaux et populations. Aucune nouvelle vérification primaire n’est établie ; l’inaccessibilité précédente reste une limite de preuve, sans conclusion sur l’existence ou l’exactitude des textes cités.
+- **MED-02 : non levée.** **I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie)** retrouve, dans l’onglet Examens et sa fenêtre, les mêmes blobs que ceux portant l’incohérence « recommandée » avec IIa versus « à envisager ». Les changements des onglets Pathologie et prise en charge proviennent de la nouvelle base et concernent d’autres passages. La restauration ne constitue pas une correction de cette incohérence.
+- **MED-03 : non levée.** **I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie)** retrouve ses mêmes blobs d’onglet Examens et de fenêtre. Le paragraphe de décision conserve donc l’insuffisance de condition du seuil propre au sexe et au dosage constatée précédemment.
+
+**Décision actuelle : sources de remise de nouveau disponibles, réserves médicales ciblées ouvertes, aucune injection autorisée par ce contrôle.** Fournir les corrections et les preuves primaires au SHA de la prochaine remise, puis refaire uniquement les contrelectures affectées avant la décision d’intégration du chapitre concerné. Les nouveaux fichiers de vérification des brouillons de production restent hors du périmètre médical de ce contrôle.

@@ -319,3 +319,46 @@ Depuis `32f7c668`, six HTML de brouillon sont modifiés pour **I83 — Varices d
 Ces données demeurent sous `travail/production/`, hors du manifeste comparatif ; les signaux inchangés maintiennent les deux productions en `en_production`. Aucun nouveau manifeste de ces chapitres ou compte rendu de build/navigateur achevé n'apparaît dans leurs dossiers. L'évolution de leurs brouillons ne démontre ni leur livraison, ni la clôture de leur audit.
 
 **Décision du poste : nouvel événement reçu, sans nouvelle livraison injectable.** Le signal de disponibilité doit être rapproché de la présence réelle des fichiers au SHA auquel il est lu. À cette tête, les chemins du paquet sont inutilisables ; au commit antérieur livré, les sources sont encore accessibles mais doivent être réconciliées avec le canonique actuel et soumises aux audits et contrôles manquants. Aucune application automatique n'est justifiée par le signal `pret_audit` inchangé.
+
+## Addendum de restauration — tête Claude `f2e9934`
+
+**Les 25 sources sont restaurées et les sept divergences canoniques sont effectivement rapprochées : le contrôle des chemins et empreintes réussit désormais sur `39b7ff0`. Aucun nouvel audit croisé clos ni contrôle navigateur probant ne permet encore l'injection.** Tête figée avec le poste de réception : `f2e9934c7c372bde5cc1d116f9b24fe3bb621a2f`, dans le même miroir de veille. La comparaison avec `482a6799` compte 42 chemins : manifeste et rapport modifiés, 25 sources rétablies et travaux complémentaires sur les deux productions ouvertes.
+
+### Intégrité du paquet et préservation des adaptations
+
+Le manifeste décrit toujours huit chapitres et 25 fichiers — 18 remplacements et sept ajouts. Sa base `source_commit` et `delivery.start_commit` devient `39b7ff0cc585c59ffbb99fb448940daa1950b34d`. SHA-256 du nouveau manifeste : `a0a8cba207197a6af164cb4bcf195657af8a9ae36bd94ddbcaf30648f5e66c1d`.
+
+| Vérification indépendante | Résultat à cette tête |
+| --- | --- |
+| Sources présentes aux chemins annoncés | 25/25 |
+| SHA-256 proposés égaux aux fichiers reçus | 25/25 |
+| Empreintes originales des remplacements égales au canonique `39b7ff0` | 18/18 |
+| Ajouts avec empreinte originale nulle et cible canonique encore absente | 7/7 |
+| Sources identiques à celles de la livraison `020e65b` | 18/25 |
+| Sources rapprochées de la nouvelle base | 7/25 |
+
+Les sept sources modifiées sont précisément celles recensées dans l'addendum canonique : `I33_b.html`, `I34_b.html`, `I35_b.html`, `I42_a.html`, `I44_a.html`, `I44_b.html`, `Q21_a.html`, dans leurs dossiers de chapitre respectifs. Chacune égale **octet par octet** la simulation de fusion à trois voies précédemment conservée dans `/tmp/medina-audit-technique-canonique-57dtquoi/merge_probes/`. Les adaptations du canonique sont donc effectivement intégrées dans la proposition ; il ne s'agit pas d'une simple modification des empreintes de contrôle.
+
+Cette égalité est une preuve de rapprochement textuel, pas une nouvelle validation clinique. Les dix-huit autres sources, notamment les fenêtres comparatives et `I44_c.html`, restent identiques à la livraison initiale. Les réserves portant sur leurs contenus ne sont pas levées par cette restauration.
+
+### Contrôle technique effectivement exécuté sur le nouveau paquet
+
+Les fichiers canoniques de `39b7ff0` et le validateur de confiance déjà isolés ont été réutilisés. Le manifeste changé et ses données entrantes restaurées ont été copiés dans un nouveau sous-dossier, sans altérer les versions temporaires des contrôles antérieurs.
+
+```bash
+python3 /tmp/medina-audit-technique-canonique-57dtquoi/tools/livraison.py check-claude --root /tmp/medina-audit-technique-canonique-57dtquoi /tmp/medina-audit-technique-canonique-57dtquoi/packet_f2e9934
+```
+
+Résultat terminé : **code 0**, `source_commit: 39b7ff0cc585c59ffbb99fb448940daa1950b34d`, `verified_files: 25`, sept `added_files`, statut **« empreintes et chemins conformes ; sources corrigées à examiner ; aucune injection »**. Journal temporaire : `/tmp/medina-audit-technique-canonique-57dtquoi/check_f2e9934.log`.
+
+Ce contrôle était nécessaire pour le manifeste modifié et les chemins restaurés. Aucun build, test navigateur ou autre contrôle applicatif d'objets identiques n'a été répété. Aucune commande d'application n'a été exécutée, aucun script Claude lancé, aucune source canonique changée.
+
+### Traçabilité et preuves encore manquantes
+
+Le rapport indique la réapplication du lot sur la nouvelle base, mais son tableau des empreintes conserve les **anciennes valeurs sur les sept lignes rapprochées**. Les valeurs actuelles fiables sont celles du manifeste et des octets vérifiés au SHA figé. `SIGNAUX_CLAUDE.json` est inchangé et pointe encore sur `020e65b721415481298d0cf295ba0ed8966875ea` ; ce commit désigne la livraison antérieure, pas les sept sources rapprochées. Mettre à jour les références de remise avant de faire constater une contrelecture du nouveau paquet.
+
+La section des commandes déclarées du rapport reste essentiellement celle de la livraison initiale : base changée et taille intermédiaire du fragment précisée, sans nouveau journal, fichier de résultats navigateur, capture ou empreinte d'assemblage testé. La différence depuis `482a6799` n'apporte aucun nouveau fichier sous `audits/`, `tests/`, `docs/collaboration/receipts/` ou `docs/collaboration/reviews/`. Les contrôles mobile et de fragment autonome restent explicitement non exécutés dans le rapport. La déclaration de réapplication et les empreintes cohérentes prouvent la restauration et le rapprochement ; elles ne prouvent pas leur fonctionnement applicatif ni un audit médical indépendant achevé.
+
+Trois nouvelles pièces d'auto-vérification ont été ajoutées sous `travail/production/` : `I83/verification_ab.json`, `I83/verification_cd.json`, `I89/verification_cd.json`. Leur syntaxe JSON est valide. Un nouveau complément `I89/glossary_i89_verif_ab.py` a été parsé avec `ast.parse`, sans exécution. Ces pièces portent sur les brouillons d'**I83 — Varices des membres inférieurs et maladie veineuse chronique (C-01-Cardiologie)** et d'**I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)**, hors du manifeste ESC ; elles documentent des vérifications et réserves de l'équipe Claude. Elles ne sont ni un audit croisé accepté de Codex ni un résultat de build/navigateur du paquet comparatif.
+
+**Décision actualisée : paquet restauré et techniquement cohérent avec la base actuelle `39b7ff0`, toujours en attente d'audit et de contrôles requis avant injection.** Fixer `f2e9934c7c372bde5cc1d116f9b24fe3bb621a2f` comme référence de la remise rapprochée, conserver l'attribution et traiter un seul chapitre à la fois. Faire corriger les réserves médicales, vérifier les octets corrigés au nouveau SHA, compiler et contrôler le navigateur sur ordinateur/mobile et le fragment autonome, puis réexaminer les empreintes contre le canonique effectif avant toute intégration. Aucune réussite d'intégrité de ce poste n'autorise une application globale des huit chapitres.
