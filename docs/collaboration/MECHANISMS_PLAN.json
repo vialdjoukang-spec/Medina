@@ -4,8 +4,8 @@
   "instruction": "Justifier chaque affirmation médicale par un mécanisme causal précis ou une raison clinique explicite, avec contexte, limites et source primaire ; privilégier les fenêtres sur les mots concernés.",
   "baseline_courses": 30,
   "allocation": {
-    "Codex": 15,
-    "Claude": 15
+    "Codex": 20,
+    "Claude": 10
   },
   "exhaustive_review_complete": false,
   "course_status_policy": "Aucun cours validé sur la seule présence de fenêtres ciblées ou le succès de contrôles techniques.",
@@ -17,30 +17,30 @@
       "label": "I50 — Insuffisance cardiaque",
       "owner": "Codex",
       "review_status": "pending_exhaustive_review",
-      "targeted_windows": 21,
+      "targeted_windows": 24,
       "sources": [
         {
           "path": "chapters/I50/I50_a.html",
           "native_windows": 0,
-          "words": 2205,
+          "words": 2207,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I50/I50_b.html",
           "native_windows": 0,
-          "words": 2589,
+          "words": 2650,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I50/I50_c.html",
           "native_windows": 0,
-          "words": 4094,
+          "words": 4225,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I50/I50_d.html",
           "native_windows": 0,
-          "words": 815,
+          "words": 926,
           "review_status": "pending_exhaustive_review"
         },
         {
@@ -64,13 +64,24 @@
         {
           "path": "chapters/I50/I50_pop4.html",
           "native_windows": 26,
-          "words": 2728,
+          "words": 2919,
+          "review_status": "pending_exhaustive_review"
+        },
+        {
+          "path": "chapters/I50/I50_pop_esc_comparison.html",
+          "native_windows": 1,
+          "words": 252,
           "review_status": "pending_exhaustive_review"
         }
       ],
       "bank_path": "chapters/I50/I50_justifications.json",
       "scope": "Quatre onglets, fenêtres natives, figures, tableaux, quiz, Pareto et glossaire ; chaque affirmation et chaque décision.",
-      "targeted_matches": 21
+      "targeted_matches": 24,
+      "latest_targeted_review": {
+        "date": "2026-10-07",
+        "report": "audits/REPRISE_2026-10-07/I50.md",
+        "exhaustive": false
+      }
     },
     {
       "code": "I21",
@@ -229,54 +240,77 @@
         {
           "path": "chapters/I48/I48_a.html",
           "native_windows": 0,
-          "words": 3015,
+          "words": 4079,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I48/I48_b.html",
           "native_windows": 0,
-          "words": 5381,
+          "words": 7614,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I48/I48_c.html",
           "native_windows": 0,
-          "words": 4967,
+          "words": 7291,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I48/I48_d.html",
           "native_windows": 0,
-          "words": 1715,
+          "words": 3249,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I48/I48_pop1.html",
-          "native_windows": 14,
-          "words": 1672,
+          "native_windows": 17,
+          "words": 10181,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I48/I48_pop2.html",
-          "native_windows": 25,
-          "words": 2758,
+          "native_windows": 28,
+          "words": 12013,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I48/I48_pop3.html",
-          "native_windows": 25,
-          "words": 3090,
+          "native_windows": 29,
+          "words": 12000,
           "review_status": "pending_exhaustive_review"
         },
         {
           "path": "chapters/I48/I48_pop4.html",
-          "native_windows": 24,
-          "words": 3114,
+          "native_windows": 26,
+          "words": 10116,
+          "review_status": "pending_exhaustive_review"
+        },
+        {
+          "path": "chapters/I48/I48_pop_esc_comparison.html",
+          "native_windows": 1,
+          "words": 235,
           "review_status": "pending_exhaustive_review"
         }
       ],
       "bank_path": null,
-      "scope": "Quatre onglets, fenêtres natives, figures, tableaux, quiz, Pareto et glossaire ; chaque affirmation et chaque décision."
+      "scope": "Quatre onglets, fenêtres natives, figures, tableaux, quiz, Pareto et glossaire ; chaque affirmation et chaque décision.",
+      "latest_claude_delivery": {
+        "pr": 12,
+        "head": "b1f19c3510c1a828650867da033ebe2fbf30142e",
+        "status": "integrated_technical_checks_pending_exhaustive_review",
+        "reported_claims": 505,
+        "reported_inline_additions": 360,
+        "reported_added_triggers": 133,
+        "native_windows_delivery": 100,
+        "native_windows_current": 101,
+        "report": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT4_I48_JUSTIFICATION/rapport.md",
+        "exhaustive_independently_validated": false
+      },
+      "concurrent_published_integration": {
+        "commit": "e856ed16893ba5c4ffc3bd4c9ca78a38ce533de6",
+        "review_status": "pending_exhaustive_review",
+        "note": "Adaptations médicales et corrections moteur/compilation conservées ; comparaisons ESC ajoutées ensuite."
+      }
     },
     {
       "code": "I10",
@@ -907,7 +941,7 @@
       "code": "I47",
       "title": "Tachycardies paroxystiques supraventriculaires et ventriculaires",
       "label": "I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires",
-      "owner": "Claude",
+      "owner": "Codex",
       "review_status": "pending_exhaustive_review",
       "targeted_windows": 0,
       "sources": [
@@ -979,7 +1013,7 @@
       "code": "I49",
       "title": "Extrasystoles et autres arythmies",
       "label": "I49 — Extrasystoles et autres arythmies",
-      "owner": "Claude",
+      "owner": "Codex",
       "review_status": "pending_exhaustive_review",
       "targeted_windows": 0,
       "sources": [
@@ -1045,7 +1079,7 @@
       "code": "I46",
       "title": "Arrêt cardiaque",
       "label": "I46 — Arrêt cardiaque",
-      "owner": "Claude",
+      "owner": "Codex",
       "review_status": "pending_exhaustive_review",
       "targeted_windows": 0,
       "sources": [
@@ -1252,7 +1286,7 @@
       "label": "J44 — Bronchopneumopathie chronique obstructive",
       "owner": "Codex",
       "review_status": "pending_exhaustive_review",
-      "targeted_windows": 15,
+      "targeted_windows": 18,
       "sources": [
         {
           "path": "chapters/J44/J44_a.html",
@@ -1311,7 +1345,12 @@
       ],
       "bank_path": "chapters/J44/J44_justifications.json",
       "scope": "Quatre onglets, fenêtres natives, figures, tableaux, quiz, Pareto et glossaire ; chaque affirmation et chaque décision.",
-      "targeted_matches": 15
+      "targeted_matches": 19,
+      "latest_targeted_review": {
+        "date": "2026-10-07",
+        "report": "audits/REPRISE_2026-10-07/J44.md",
+        "exhaustive": false
+      }
     },
     {
       "code": "D84",
@@ -1574,7 +1613,7 @@
       "code": "I71",
       "title": "Anévrismes et dissections artérielles",
       "label": "I71 — Anévrismes et dissections artérielles",
-      "owner": "Claude",
+      "owner": "Codex",
       "review_status": "pending_exhaustive_review",
       "targeted_windows": 0,
       "sources": [
@@ -1622,7 +1661,7 @@
       "code": "I80",
       "title": "Thrombose veineuse profonde et thromboses veineuses",
       "label": "I80 — Thrombose veineuse profonde et thromboses veineuses",
-      "owner": "Claude",
+      "owner": "Codex",
       "review_status": "pending_exhaustive_review",
       "targeted_windows": 0,
       "sources": [
@@ -1721,7 +1760,7 @@
       "label": "J18 — Pneumonies de l’adulte",
       "owner": "Codex",
       "review_status": "pending_exhaustive_review",
-      "targeted_windows": 15,
+      "targeted_windows": 16,
       "sources": [
         {
           "path": "chapters/J18/J18_a.html",
@@ -1768,7 +1807,12 @@
       ],
       "bank_path": "chapters/J18/J18_justifications.json",
       "scope": "Quatre onglets, fenêtres natives, figures, tableaux, quiz, Pareto et glossaire ; chaque affirmation et chaque décision.",
-      "targeted_matches": 15
+      "targeted_matches": 16,
+      "latest_targeted_review": {
+        "date": "2026-10-07",
+        "report": "audits/REPRISE_2026-10-07/J18.md",
+        "exhaustive": false
+      }
     },
     {
       "code": "I26",
@@ -1916,5 +1960,29 @@
     "categories": 1636,
     "cim11_complete": false
   },
-  "recovery_note": "Le workspace a été restauré à une version antérieure pendant ce lot. Les fichiers récupérés et les banques régénérées ont été recompilés/recontrôlés ; les anciens résultats ne valent pas validation des versions nouvelles."
+  "recovery_note": "Le workspace a été restauré à une version antérieure pendant ce lot. Les fichiers récupérés et les banques régénérées ont été recompilés/recontrôlés ; les anciens résultats ne valent pas validation des versions nouvelles.",
+  "targeted_windows_total": 204,
+  "targeted_matches_total": 205,
+  "allocation_note": "La répartition historique 15/15 sur trente cours est remplacée par la priorité Fragment 01 : 10/10 sur ses vingt cours présents. Les dix cours hors cardiologie restent attribués à Codex, en attente de la fin du Fragment 01.",
+  "active_fragment": {
+    "id": "S01",
+    "label": "C-01-Cardiologie",
+    "existing_course_allocation": {
+      "Codex": 10,
+      "Claude": 10
+    },
+    "priority_new_courses": {
+      "Codex": [
+        "I73",
+        "I95"
+      ],
+      "Claude": [
+        "I83",
+        "I89"
+      ]
+    },
+    "next_fragment": "S02",
+    "advance_when": "cours existants et périmètre de production validés achevés ; CIM-11 à établir",
+    "allocation_reason": "Partage 10/10 des vingt cours présents ; I00 reste à Claude car sa production est déjà en cours, I47 passe à Codex."
+  }
 }

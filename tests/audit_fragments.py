@@ -84,6 +84,16 @@ def main():
             errors.append(f"fragment manquant : {path}")
             continue
         source = expanded_html(path)
+        categories = re.search(r'<script id="medina-category-organisation-data"[^>]*>(.*?)</script>', source, re.S)
+        if not categories:
+            errors.append(f"{fragment['id']} données de catégories absentes")
+        else:
+            try:
+                organisation = json.loads(categories.group(1))
+                if organisation.get('fragment', {}).get('id') != fragment['id']:
+                    errors.append(f"{fragment['id']} données de catégories d'un autre fragment")
+            except (ValueError, AttributeError):
+                errors.append(f"{fragment['id']} données de catégories invalides")
         attached = set(fragment["rattachements"])
         payload = re.search(r'<script id="medora-data" type="application/json">(.*?)</script>', source, re.S)
         data = json.loads(payload.group(1))

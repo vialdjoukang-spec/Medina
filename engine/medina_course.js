@@ -97,8 +97,8 @@ function MC_open(item,push){MC_self=item.ab||null;const b=MC_DLG.querySelector('
  MC_wrapNode(b);if(push)MC_stack.push(item);MC_DLG.querySelector('.mc-back').hidden=MC_stack.length<2;if(!MC_DLG.open)MC_DLG.showModal();b.scrollTop=0;MC_quiz(b)}
 function MC_act(el){if(!MC_DLG.open){MC_trigger=el;MC_stack=[]}MC_open(el.dataset.ab?{ab:el.dataset.ab}:{k:el.dataset.k},true)}
 document.addEventListener('click',ev=>{const go=ev.target.closest('.mc [data-go]');if(go){ev.preventDefault();const tg=document.getElementById(go.dataset.go);if(tg){const m=document.querySelector('.mc');const b=tg.parentElement;if(m&&m.classList.contains('book')&&b.classList.contains('mc-body'))b.scrollTo({left:b.scrollLeft+tg.getBoundingClientRect().left-b.getBoundingClientRect().left,behavior:'smooth'});else tg.scrollIntoView({behavior:'smooth',block:'start'})}return}
- const el=ev.target.closest('[data-ab],[data-k]');if(!el||!(el.closest('.mc')||el.closest('.mc-dlg')))return;ev.preventDefault();ev.stopPropagation();MC_act(el)},true);
-document.addEventListener('keydown',ev=>{const el=ev.target.closest&&ev.target.closest('.mc-w,.mc-ab');if(el&&(ev.key==='Enter'||ev.key===' ')){ev.preventDefault();MC_act(el);return}
+ const el=ev.target.closest('.mc-w[data-k]')||ev.target.closest('[data-ab],[data-k]');if(!el||!(el.closest('.mc')||el.closest('.mc-dlg')))return;ev.preventDefault();ev.stopPropagation();MC_act(el)},true);
+document.addEventListener('keydown',ev=>{const el=ev.target.closest&&(ev.target.closest('.mc-w[data-k]')||ev.target.closest('.mc-ab'));if(el&&(ev.key==='Enter'||ev.key===' ')){ev.preventDefault();MC_act(el);return}
  const m=document.querySelector('.mc.book');if(!m||MC_DLG.open||ev.target.closest?.('input,textarea,select,button,[contenteditable="true"],.mc-navigo'))return;const b=m.querySelector('.mc-panel:not([hidden]) .mc-body');if(!b)return;
  const step=(b.children[0]?.getBoundingClientRect().width||b.clientWidth)+(parseFloat(getComputedStyle(b).columnGap)||0);
  if(ev.key==='ArrowRight')b.scrollBy({left:step,behavior:'smooth'});if(ev.key==='ArrowLeft')b.scrollBy({left:-step,behavior:'smooth'})});
