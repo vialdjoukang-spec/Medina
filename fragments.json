@@ -6,106 +6,309 @@
     "specialty": "cardiologie",
     "surface": "courses-v1",
     "categories": [
-      {"id": "coronaires", "nom": "Coronaropathies", "chapters": ["I21", "I25"]},
-      {"id": "pression", "nom": "Pression artérielle", "chapters": ["I10"]},
-      {"id": "fonction", "nom": "Insuffisance cardiaque et cardiomyopathies", "chapters": ["I50", "I42"]},
-      {"id": "rythme", "nom": "Rythme, conduction et arrêt cardiaque", "chapters": ["I48", "I44", "I47", "I49", "I46"]},
-      {"id": "valves", "nom": "Valvulopathies et rhumatisme articulaire aigu", "chapters": ["I35", "I34", "I00"]},
-      {"id": "inflammation", "nom": "Péricarde, endocarde et myocarde", "chapters": ["I30", "I33", "I40"]},
-      {"id": "congenital", "nom": "Cardiopathies congénitales", "chapters": ["Q21"]},
-      {"id": "vaisseaux", "nom": "Pathologies vasculaires", "chapters": ["I71", "I80", "I70"]}
+      {
+        "id": "coronaires",
+        "nom": "Coronaropathies",
+        "chapters": [
+          "I21",
+          "I25"
+        ]
+      },
+      {
+        "id": "pression",
+        "nom": "Pression artérielle",
+        "chapters": [
+          "I10"
+        ]
+      },
+      {
+        "id": "fonction",
+        "nom": "Insuffisance cardiaque et cardiomyopathies",
+        "chapters": [
+          "I50",
+          "I42"
+        ]
+      },
+      {
+        "id": "rythme",
+        "nom": "Rythme, conduction et arrêt cardiaque",
+        "chapters": [
+          "I48",
+          "I44",
+          "I47",
+          "I49",
+          "I46"
+        ]
+      },
+      {
+        "id": "valves",
+        "nom": "Valvulopathies et rhumatisme articulaire aigu",
+        "chapters": [
+          "I35",
+          "I34",
+          "I00"
+        ]
+      },
+      {
+        "id": "inflammation",
+        "nom": "Péricarde, endocarde et myocarde",
+        "chapters": [
+          "I30",
+          "I33",
+          "I40"
+        ]
+      },
+      {
+        "id": "congenital",
+        "nom": "Cardiopathies congénitales",
+        "chapters": [
+          "Q21"
+        ]
+      },
+      {
+        "id": "vaisseaux",
+        "nom": "Pathologies vasculaires",
+        "chapters": [
+          "I71",
+          "I80",
+          "I70"
+        ]
+      }
     ],
-    "rattachements": ["Cœur et hémodynamique", "Vaisseaux et microcirculation", "I50", "I21", "I25", "I48", "I10", "I30", "I33", "I35", "I34", "I00", "I40", "I42", "I44", "I47", "I49", "I46", "Q21", "I71", "I80", "I70"]
+    "rattachements": [
+      "Cœur et hémodynamique",
+      "Vaisseaux et microcirculation",
+      "I50",
+      "I21",
+      "I25",
+      "I48",
+      "I10",
+      "I30",
+      "I33",
+      "I35",
+      "I34",
+      "I00",
+      "I40",
+      "I42",
+      "I44",
+      "I47",
+      "I49",
+      "I46",
+      "Q21",
+      "I71",
+      "I80",
+      "I70"
+    ]
   },
   {
     "id": "S02",
     "slug": "respiratoire",
     "nom": "Respiratoire",
-    "rattachements": ["Poumon, plèvre et ventilation", "J45", "J44", "J18", "I26"]
+    "rattachements": [
+      "Poumon, plèvre et ventilation",
+      "J45",
+      "J44",
+      "J18",
+      "I26"
+    ],
+    "surface": "courses-v1",
+    "specialty": "pneumologie",
+    "categories": [
+      {
+        "id": "obstruction",
+        "nom": "Maladies obstructives des voies aériennes",
+        "chapters": [
+          "J45",
+          "J44"
+        ]
+      },
+      {
+        "id": "infection",
+        "nom": "Infections pulmonaires",
+        "chapters": [
+          "J18"
+        ]
+      },
+      {
+        "id": "vasculaire",
+        "nom": "Maladies vasculaires pulmonaires",
+        "chapters": [
+          "I26"
+        ]
+      }
+    ]
   },
   {
     "id": "S03",
     "slug": "digestif-hepatobiliaire",
     "nom": "Digestif et hépatobiliaire",
-    "rattachements": ["Tube digestif et péritoine", "Foie et circulation portale", "Pancréas et voies biliaires"]
+    "rattachements": [
+      "Tube digestif et péritoine",
+      "Foie et circulation portale",
+      "Pancréas et voies biliaires"
+    ]
   },
   {
     "id": "S04",
     "slug": "renal-voies-urinaires",
     "nom": "Rénal et voies urinaires",
-    "rattachements": ["Rein, eau et électrolytes"]
+    "rattachements": [
+      "Rein, eau et électrolytes"
+    ]
   },
   {
     "id": "S05",
     "slug": "endocrinien-metabolique",
     "nom": "Endocrinien et métabolique",
-    "rattachements": ["Glandes endocrines et régulations", "Métabolisme, diabète et nutrition"]
+    "rattachements": [
+      "Glandes endocrines et régulations",
+      "Métabolisme, diabète et nutrition"
+    ]
   },
   {
     "id": "S06",
     "slug": "hematopoietique-lymphatique",
     "nom": "Hématopoïétique et lymphatique",
-    "rattachements": ["Sang, moelle et hémostase"]
+    "rattachements": [
+      "Sang, moelle et hémostase"
+    ]
   },
   {
     "id": "S07",
     "slug": "immunitaire",
     "nom": "Immunitaire",
-    "rattachements": ["Immunité, allergie et inflammation", "D84", "M32", "T78", "M31"]
+    "rattachements": [
+      "Immunité, allergie et inflammation",
+      "D84",
+      "M32",
+      "T78",
+      "M31"
+    ],
+    "surface": "courses-v1",
+    "specialty": "immunologie",
+    "categories": [
+      {
+        "id": "defense",
+        "nom": "Défauts de la défense immunitaire",
+        "chapters": [
+          "D84"
+        ]
+      },
+      {
+        "id": "autoimmunite",
+        "nom": "Maladies auto-immunes et vascularites",
+        "chapters": [
+          "M32",
+          "M31"
+        ]
+      },
+      {
+        "id": "allergie",
+        "nom": "Allergies et anaphylaxie",
+        "chapters": [
+          "T78"
+        ]
+      }
+    ]
   },
   {
     "id": "S08",
     "slug": "nerveux",
     "nom": "Nerveux",
-    "rattachements": ["Système nerveux"]
+    "rattachements": [
+      "Système nerveux"
+    ]
   },
   {
     "id": "S10",
     "slug": "locomoteur",
     "nom": "Locomoteur",
-    "rattachements": ["Appareil locomoteur", "M06"]
+    "rattachements": [
+      "Appareil locomoteur",
+      "M06"
+    ],
+    "surface": "courses-v1",
+    "specialty": "rhumatologie",
+    "categories": [
+      {
+        "id": "inflammation",
+        "nom": "Maladies articulaires inflammatoires",
+        "chapters": [
+          "M06"
+        ]
+      }
+    ]
   },
   {
     "id": "S11",
     "slug": "tegumentaire",
     "nom": "Tégumentaire",
-    "rattachements": ["Peau et annexes"]
+    "rattachements": [
+      "Peau et annexes"
+    ]
   },
   {
     "id": "S12",
     "slug": "orl-cervico-facial",
     "nom": "ORL et cervico-facial",
-    "rattachements": ["Oreille, nez, pharynx et larynx", "Bouche, dents et maxillaires"]
+    "rattachements": [
+      "Oreille, nez, pharynx et larynx",
+      "Bouche, dents et maxillaires"
+    ]
   },
   {
     "id": "S13",
     "slug": "visuel",
     "nom": "Visuel",
-    "rattachements": ["Œil, voies optiques et vision"]
+    "rattachements": [
+      "Œil, voies optiques et vision"
+    ]
   },
   {
     "id": "S14",
     "slug": "reproducteur-feminin-sein",
     "nom": "Reproducteur féminin et sein",
-    "rattachements": ["Organes génitaux féminins et reproduction", "Sein et glande mammaire"]
+    "rattachements": [
+      "Organes génitaux féminins et reproduction",
+      "Sein et glande mammaire"
+    ]
   },
   {
     "id": "S15",
     "slug": "reproducteur-masculin",
     "nom": "Reproducteur masculin",
-    "rattachements": ["Voies urinaires et appareil génital masculin"]
+    "rattachements": [
+      "Voies urinaires et appareil génital masculin"
+    ]
   },
   {
     "id": "S16",
     "slug": "grossesse-perinatal",
     "nom": "Grossesse et périnatal",
-    "rattachements": ["Grossesse, naissance et post-partum", "Nouveau-né et adaptation périnatale"]
+    "rattachements": [
+      "Grossesse, naissance et post-partum",
+      "Nouveau-né et adaptation périnatale"
+    ]
   },
   {
     "id": "T1",
     "slug": "agents-therapeutique",
     "nom": "Agents et thérapeutique",
-    "rattachements": ["Microorganismes, hôte et sites infectieux", "A41"]
+    "rattachements": [
+      "Microorganismes, hôte et sites infectieux",
+      "A41"
+    ],
+    "surface": "courses-v1",
+    "specialty": "infectiologie",
+    "categories": [
+      {
+        "id": "systemique",
+        "nom": "Infections systémiques et réponse de l’hôte",
+        "chapters": [
+          "A41"
+        ]
+      }
+    ]
   },
   {
     "id": "T2",
@@ -117,13 +320,20 @@
     "id": "T3",
     "slug": "soins-aigus",
     "nom": "Soins aigus",
-    "rattachements": ["Traumatismes et lésions", "Toxiques et intoxications", "Circonstances externes et sécurité"]
+    "rattachements": [
+      "Traumatismes et lésions",
+      "Toxiques et intoxications",
+      "Circonstances externes et sécurité"
+    ]
   },
   {
     "id": "T4",
     "slug": "oncologie-genetique-palliatif",
     "nom": "Oncologie, génétique et palliatif",
-    "rattachements": ["Oncologie et biologie tumorale", "Développement, malformations et génétique"]
+    "rattachements": [
+      "Oncologie et biologie tumorale",
+      "Développement, malformations et génétique"
+    ]
   },
   {
     "id": "T5",
@@ -135,7 +345,11 @@
     "id": "T6",
     "slug": "premier-recours-societe",
     "nom": "Premier recours et société",
-    "rattachements": ["Présentation clinique et raisonnement", "Prévention, parcours et situations de santé", "Codes additionnels et précision du contexte"]
+    "rattachements": [
+      "Présentation clinique et raisonnement",
+      "Prévention, parcours et situations de santé",
+      "Codes additionnels et précision du contexte"
+    ]
   },
   {
     "id": "T7",

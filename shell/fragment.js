@@ -1,4 +1,4 @@
-/* S01 course surface. Loaded only when a fragment explicitly enables it. */
+/* Fragment course surface. Loaded only when a fragment explicitly enables it. */
 (() => {
  'use strict';
  const F=DATA.fragment;
@@ -25,7 +25,7 @@
  homePage=function(){
   pageTitle(F.name+' · Cours');
   const done=F.courses.filter(c=>c.complete).length;
-  return `<div class="s01-home"><header class="s01-cover"><div><small>MEDINA · S01</small><h1>${h(F.name)}</h1></div><div class="s01-counts"><span><b>${F.courses.length}</b>cours intégrés</span><span><b>${F.categories.length}</b>catégories</span><span><b>${done}</b>déclarés achevés</span></div></header><nav class="s01-category-index" aria-label="Catégories de cours">${F.categories.map((g,i)=>`<a href="#/home?category=${h(g.id)}" data-s01-category="${h(g.id)}">${i+1}. ${h(g.nom)}</a>`).join('')}</nav>${F.categories.map((g,i)=>`<section class="s01-category" id="s01-category-${h(g.id)}" aria-labelledby="s01-heading-${h(g.id)}"><header class="s01-category-heading"><span class="s01-category-number">${i+1}</span><h2 id="s01-heading-${h(g.id)}">${h(g.nom)}</h2><small>${g.chapters.length} cours</small></header><div class="s01-courses">${g.chapters.map(code=>card(byCode.get(code))).join('')}</div></section>`).join('')}${rule()}</div>`;
+  return `<div class="s01-home"><header class="s01-cover"><div><small>MEDINA · ${h(F.id)}</small><h1>${h(F.name)}</h1></div><div class="s01-counts"><span><b>${F.courses.length}</b>cours intégrés</span><span><b>${F.categories.length}</b>catégories</span><span><b>${done}</b>déclarés achevés</span></div></header><nav class="s01-category-index" aria-label="Catégories de cours">${F.categories.map((g,i)=>`<a href="#/home?category=${h(g.id)}" data-s01-category="${h(g.id)}">${i+1}. ${h(g.nom)}</a>`).join('')}</nav>${F.categories.map((g,i)=>`<section class="s01-category" id="s01-category-${h(g.id)}" aria-labelledby="s01-heading-${h(g.id)}"><header class="s01-category-heading"><span class="s01-category-number">${i+1}</span><h2 id="s01-heading-${h(g.id)}">${h(g.nom)}</h2><small>${g.chapters.length} cours</small></header><div class="s01-courses">${g.chapters.map(code=>card(byCode.get(code))).join('')}</div></section>`).join('')}${rule()}</div>`;
  };
  specialtyPage=function(){context={sid:F.specialty};return homePage()};
  searchPageView=function(){
@@ -42,7 +42,7 @@
   return `<nav class="bottomnav" aria-label="Navigation entre les cours">${prev?`<a class="btn" href="#/entry/${h(prev.code)}">← ${h(prev.code)} · Précédent</a>`:'<span></span>'}<a class="btn tiny" href="#/home">Tous les cours</a>${next?`<a class="btn" href="#/entry/${h(next.code)}">${h(next.code)} · Suivant →</a>`:'<span></span>'}</nav>`;
  };
  footer=function(){const done=F.courses.filter(c=>c.complete).length;return `<footer class="s01-footer">Medina · ${h(F.name)} · CIM-10-GM 2024<br>${done} cours déclarés achevés · ${F.courses.length-done} cours à auditer.</footer>`};
- methodPage=function(){pageTitle('Règle d’or et sources');return `<div class="s01-home"><header class="s01-cover"><h1>Règle d’or et sources</h1></header>${rule()}<section class="s01-rule"><h2>Statut des cours</h2><p>Le statut d’audit est celui enregistré dans les sources de Medina. La présence d’un cours ne constitue pas une nouvelle validation médicale.</p><p>Les références figurent dans chaque cours. Le classement clinique de l’accueil conserve les codes CIM de chaque chapitre.</p><p><a href="#/home">Revenir aux cours cardiovasculaires</a></p></section></div>`};
+ methodPage=function(){pageTitle('Règle d’or et sources');return `<div class="s01-home"><header class="s01-cover"><h1>Règle d’or et sources</h1></header>${rule()}<section class="s01-rule"><h2>Statut des cours</h2><p>Le statut d’audit est celui enregistré dans les sources de Medina. La présence d’un cours ne constitue pas une nouvelle validation médicale.</p><p>Les références figurent dans chaque cours. Le classement clinique de l’accueil conserve les codes CIM de chaque chapitre.</p><p><a href="#/home">Revenir aux cours de ce fragment</a></p></section></div>`};
  showCommandPalette=function(){openModal(F.name,`<div class="command-links"><a data-close-modal class="command-link" href="#/home">Tous les cours</a><a data-close-modal class="command-link" href="#/search">Rechercher un cours</a><a data-close-modal class="command-link" href="#/notebook">Carnet du fragment</a></div><div class="s01-category-index">${F.categories.map(g=>`<a data-close-modal href="#/home?category=${h(g.id)}">${h(g.nom)}</a>`).join('')}</div>`)};
  document.getElementById('command-btn').onclick=showCommandPalette;
  document.getElementById('medora-intelligence-link')?.remove();
@@ -106,9 +106,29 @@
   MC_NAV_CLEANUP=()=>{observer.disconnect();desktop.removeEventListener('change',resize);document.removeEventListener('keydown',onKey);document.removeEventListener('pointerdown',outside);host.remove()};
   open(desktop.matches,false);return refresh;
  };
+ // Scientific figures remain readable at their native width in a zoom window.
+ const mountCourse=MEDINA_mount;
+ let figureDialog=null,figureOpener=null;
+ function closeFigure(){if(figureDialog?.open)figureDialog.close()}
+ function openFigure(figure,button){
+  if(!figureDialog){
+   figureDialog=document.createElement('dialog');figureDialog.className='mf-figure-dialog';figureDialog.setAttribute('aria-labelledby','mf-figure-title');document.body.append(figureDialog);
+   figureDialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const first=figureDialog.querySelector('button'),last=figureDialog.querySelector('input');if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
+   figureDialog.addEventListener('close',()=>{if(figureOpener?.isConnected)figureOpener.focus({preventScroll:true})});
+  }
+  figureOpener=button;
+  figureDialog.innerHTML='<header><h2 id="mf-figure-title">Lecture du schéma</h2><button type="button" class="mf-figure-close">Fermer ×</button></header><label class="mf-figure-zoom">Zoom <input type="range" min="100" max="250" value="150" aria-label="Zoom du schéma"><output>150 %</output></label><p class="mf-figure-guide">Si le schéma dépasse la fenêtre, vous le faites défiler horizontalement.</p><div class="mf-figure-scroll"><div class="mf-figure-stage"></div></div>';
+  const stage=figureDialog.querySelector('.mf-figure-stage'),clone=figure.cloneNode(true);clone.querySelectorAll('.mf-figure-open').forEach(b=>b.remove());stage.append(clone);
+  const following=figure.nextElementSibling;if(following?.tagName==='P')stage.append(following.cloneNode(true));
+  const svg=clone.querySelector('svg'),width=Math.max(380,svg.viewBox.baseVal.width||640);
+  const zoom=()=>{const value=Number(figureDialog.querySelector('input').value);svg.style.width=width*value/100+'px';svg.style.maxWidth='none';figureDialog.querySelector('output').textContent=value+' %'};
+  figureDialog.querySelector('input').oninput=zoom;figureDialog.querySelector('.mf-figure-close').onclick=closeFigure;zoom();figureDialog.showModal();figureDialog.querySelector('.mf-figure-close').focus({preventScroll:true});
+ }
+ MEDINA_mount=function(){mountCourse();document.querySelectorAll('.mc-sci figure').forEach(figure=>{if(!figure.querySelector('svg')||figure.querySelector('.mf-figure-open'))return;const button=document.createElement('button');button.type='button';button.className='mf-figure-open';button.textContent='Lire le schéma en grand';button.onclick=()=>openFigure(figure,button);figure.append(button)})};
  // The clinical-skills route is local to the cardiovascular fragment.
  const renderCourse=render;
  render=function(){
+  closeFigure();
   const probe=readRoute();
   if(probe.type!=='clinical-skills'){window.MEDINA_CS?.destroy();return renderCourse()}
   window.MEDINA_CS?.destroy();MC_navigoDestroy();

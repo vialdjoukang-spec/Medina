@@ -96,7 +96,7 @@
    for(const f of faces){const shade=.74+.26*Math.max(0,f.n[0]*-.24+f.n[1]*.43+f.n[2]*.77);ctx.fillStyle='rgb('+f.color.map(x=>Math.round(x*shade)).join(',')+')';ctx.beginPath();f.v.forEach((v,i)=>{const p=project(v);i?ctx.lineTo(...p):ctx.moveTo(...p)});ctx.closePath();ctx.fill()}
    for(const l of g.lines){ctx.strokeStyle=l.color;ctx.lineWidth=l.width;ctx.beginPath();l.v.forEach((v,i)=>{const p=project(transform(v));i?ctx.lineTo(...p):ctx.moveTo(...p)});ctx.stroke()}
    markers=MODELS[id].points.map((p,i)=>{const tp=transform(p.p),xy=project(tp);return{xy,i,z:tp[2]}}).sort((a,b)=>a.z-b.z);
-   const groups=[];for(const m of markers){const same=groups.find(x=>Math.hypot(x.xy[0]-m.xy[0],x.xy[1]-m.xy[1])<1);if(same)same.indices.push(m.i);else groups.push({...m,indices:[m.i]})}for(const m of groups){const selected=m.indices.includes(active);ctx.beginPath();ctx.arc(...m.xy,selected?14:11,0,Math.PI*2);ctx.fillStyle=selected?'#27654a':'#fff';ctx.fill();ctx.lineWidth=selected?3:2;ctx.strokeStyle=selected?'#173b32':'#60786a';ctx.stroke();ctx.fillStyle=selected?'#fff':'#173b32';ctx.font='bold 12px Tahoma,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(m.indices.map(i=>i+1).join('/'),m.xy[0],m.xy[1])}
+   const groups=[];for(const m of markers){const same=groups.find(x=>Math.hypot(x.xy[0]-m.xy[0],x.xy[1]-m.xy[1])<1);if(same)same.indices.push(m.i);else groups.push({...m,indices:[m.i]})}const placed=[];for(const m of groups){const anchor=[...m.xy];const candidates=[[0,0],[30,0],[-30,0],[0,30],[0,-30],[48,0],[-48,0]];for(const [dx,dy] of candidates){const proposed=[anchor[0]+dx,anchor[1]+dy];if(proposed[0]>16&&proposed[0]<w-16&&proposed[1]>30&&proposed[1]<h-16&&placed.every(p=>Math.hypot(p[0]-proposed[0],p[1]-proposed[1])>=29)){m.xy=proposed;break}}placed.push(m.xy);if(Math.hypot(m.xy[0]-anchor[0],m.xy[1]-anchor[1])>1){ctx.strokeStyle='#60786a';ctx.lineWidth=1.3;ctx.beginPath();ctx.moveTo(...anchor);ctx.lineTo(...m.xy);ctx.stroke();ctx.beginPath();ctx.arc(...anchor,2.5,0,Math.PI*2);ctx.fillStyle='#173b32';ctx.fill()}for(const marker of markers){if(m.indices.includes(marker.i))marker.xy=m.xy}const selected=m.indices.includes(active);ctx.beginPath();ctx.arc(...m.xy,selected?14:11,0,Math.PI*2);ctx.fillStyle=selected?'#27654a':'#fff';ctx.fill();ctx.lineWidth=selected?3:2;ctx.strokeStyle=selected?'#173b32':'#60786a';ctx.stroke();ctx.fillStyle=selected?'#fff':'#173b32';ctx.font='bold 12px Tahoma,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(m.indices.map(i=>i+1).join('/'),m.xy[0],m.xy[1])}
    ctx.fillStyle='#50665e';ctx.textAlign='left';ctx.font='12px Tahoma,sans-serif';ctx.fillText(id==='heart'?'Cavités et connexions stylisées':'Repères de surface simplifiés',12,18);
    canvas.dataset.csYaw=yaw.toFixed(3);canvas.dataset.csPitch=pitch.toFixed(3);canvas.dataset.csZoom=zoom.toFixed(2);
   }
@@ -113,17 +113,19 @@
   const observer=new ResizeObserver(schedule);observer.observe(canvas);schedule();
   return{rotate,setView,reset,zoom:value=>{zoom=value;schedule()},select:(i,view)=>{active=i;if(view)setView(view);else schedule()},destroy:()=>{destroyed=true;cancelAnimationFrame(frame);observer.disconnect();canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',cancel);canvas.removeEventListener('keydown',key)}};
  }
- function selectPoint(index,changeView=true){
+ function selectPoint(index,changeView=true,reveal=false){
   const p=MODELS[current].points[index];if(!p)return;
   dialog.querySelectorAll('[data-cs-select]').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===index)));
   const detail=dialog.querySelector('.cs-point-detail');detail.innerHTML='<h3>'+esc(p.label)+'</h3>'+p.description;
   detail.dataset.csSelected=p.id;
   scene?.select(index,changeView?p.view:null);
+  if(reveal&&matchMedia('(max-width:760px)').matches)detail.scrollIntoView({block:'nearest',behavior:'instant'});
  }
  function ensureDialog(){
   if(dialog)return;
   dialog=document.createElement('dialog');dialog.id='medina-cs-dialog';dialog.className='cs-dialog';dialog.setAttribute('aria-labelledby','cs-dialog-title');
   document.body.append(dialog);
+  dialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const items=Array.from(dialog.querySelectorAll('button,input,[tabindex]')).filter(x=>!x.disabled&&x.tabIndex>=0&&x.getClientRects().length);const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}});
   dialog.addEventListener('close',()=>{scene?.destroy();scene=null;current=null;if(opener?.isConnected)opener.focus({preventScroll:true})});
   dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
  }
@@ -132,7 +134,7 @@
   ensureDialog();scene?.destroy();opener=trigger;current=id;
   dialog.innerHTML='<header class="cs-dialog-header"><h2 id="cs-dialog-title">'+esc(model.title)+'</h2><button type="button" class="cs-dialog-close">Fermer ×</button></header><div class="cs-dialog-body"><div><figure class="cs-scene"><canvas class="cs-canvas" width="760" height="650" tabindex="0" role="img" aria-label="Modèle 3D : '+esc(model.title)+'. Les flèches font tourner le modèle ; la touche Début réinitialise la vue.">Les repères et leurs explications sont disponibles dans les boutons à côté du modèle.</canvas><figcaption>'+esc(model.caption)+'</figcaption></figure><div class="cs-rotate-controls" role="group" aria-label="Orientation du modèle"><button type="button" data-cs-rotate="left">← Tourner</button><button type="button" data-cs-rotate="right">Tourner →</button><button type="button" data-cs-view="front">Face</button><button type="button" data-cs-view="side">Profil</button><button type="button" data-cs-view="back">Dos</button><button type="button" data-cs-reset>Réinitialiser</button></div><label class="cs-zoom">Zoom <input type="range" min="75" max="140" value="100" aria-label="Zoom du modèle 3D"></label><p class="cs-orientation">Vous faites glisser le modèle avec la souris ou un doigt. Au clavier, vous utilisez les flèches lorsque le modèle a le focus. Les boutons numérotés donnent les mêmes explications.</p><p class="cs-canvas-fallback" hidden>Le dessin 3D n’est pas disponible ici. Tous les repères et les techniques restent accessibles avec les boutons numérotés.</p></div><div><div class="cs-points" role="group" aria-label="Repères anatomiques">'+model.points.map((p,i)=>'<button type="button" data-cs-select="'+i+'" aria-pressed="false">'+(i+1)+' · '+esc(p.label)+'</button>').join('')+'</div><section class="cs-point-detail" aria-live="polite" aria-atomic="true"></section></div></div>';
   dialog.querySelector('.cs-dialog-close').onclick=()=>dialog.close();
-  dialog.querySelectorAll('[data-cs-select]').forEach(b=>b.onclick=()=>selectPoint(Number(b.dataset.csSelect)));
+  dialog.querySelectorAll('[data-cs-select]').forEach(b=>b.onclick=()=>selectPoint(Number(b.dataset.csSelect),true,true));
   dialog.querySelectorAll('[data-cs-rotate]').forEach(b=>b.onclick=()=>scene?.rotate(b.dataset.csRotate==='left'?-.25:.25,0));
   dialog.querySelectorAll('[data-cs-view]').forEach(b=>b.onclick=()=>scene?.setView(b.dataset.csView));
   dialog.querySelector('[data-cs-reset]').onclick=()=>{scene?.reset();dialog.querySelector('input[type="range"]').value='100'};

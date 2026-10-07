@@ -1,4 +1,4 @@
-"""Opt-in course surface: only S01 enables it during the first fragment review."""
+"""Course surface enabled fragment by fragment during the content review."""
 import re
 from pathlib import Path
 
@@ -36,7 +36,7 @@ def isolate_specialty(data, fragment, chapters, completed):
 
 
 def finish_surface(source, fragment, root):
-    # Keep the historical shell in the repository; generated S01 drops module
+    # Keep the historical shell in the repository; generated course fragments drop module
     # loaders whose catalogues concern the complete atlas.
     removed_ids = {'medina-portable-resources', 'medina-portable-runtime',
                    'medora-v7-federal-integration', 'medora-globality-ux-v74'}
@@ -66,8 +66,8 @@ def finish_surface(source, fragment, root):
     source, count = re.subn(r'<nav class="nav-main">.*?</nav>', lambda _: nav, source, count=1, flags=re.S)
     assert count == 1
     source = source.replace('aria-label="Liste des spécialités"', 'aria-label="Cours par catégorie"')
-    source = source.replace('placeholder="Code CIM, pathologie, système…"', 'placeholder="Rechercher parmi les cours cardiovasculaires…"')
-    source = source.replace('aria-label="Rechercher dans Medina"', 'aria-label="Rechercher un cours cardiovasculaire"')
+    source = source.replace('placeholder="Code CIM, pathologie, système…"', 'placeholder="Rechercher un cours dans ce fragment…"')
+    source = source.replace('aria-label="Rechercher dans Medina"', 'aria-label="Rechercher un cours du fragment"')
     css = (Path(root) / 'shell/fragment.css').read_text(encoding='utf-8')
     js = (Path(root) / 'shell/fragment.js').read_text(encoding='utf-8')
     source = source.replace('</head>', '<style id="medina-fragment-css">' + css + '</style></head>', 1)
