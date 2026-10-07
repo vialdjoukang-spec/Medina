@@ -1,5 +1,13 @@
 # CLAUDE.md — MEDINA (Atlas des cours de médecine par systèmes)
 
+## Répartition des 21 fragments restants — 8 octobre 2026
+
+Lire [FRAGMENTS_RESTANTS.md](docs/collaboration/FRAGMENTS_RESTANTS.md) et [production_plan.json](organisation/production_plan.json) : **11 fragments entiers Claude, 10 fragments entiers Codex**, hors cardiologie. Toutes les catégories restent regroupées sous leur fragment. Chaque catégorie ou chapitre cité porte **code — intitulé (libellé complet du fragment)**, par exemple **J45 — Asthme (P-02-Pneumologie)**. Un seul fragment et **un seul chapitre actifs par agent**, un chapitre par remise ; terminer, relire, contrôler, intégrer et publier ce chapitre avant le suivant. Un blocage ne libère pas le chapitre. Les files respectent les rangs du registre ; la priorité cardiologie en cours et ses missions restent conservées. Aucun fragment n’est déclaré complet par cette attribution. Cette règle de progression prime sur les anciennes consignes de production par lots ou cycles pour les travaux nouveaux.
+
+La session Codex actuelle prend le relais de GPT « work » comme coordinateur prioritaire ; conserver les travaux et commits antérieurs. **Mode multi-agent obligatoire** : Claude et Codex progressent en parallèle, avec plusieurs sous-agents spécialisés dans le seul chapitre actif de chacun et un auteur par fichier. **Claude audite Codex, Codex audite Claude avant injection** ; corriger les réserves bloquantes puis reconstruire et vérifier après injection. La mission précise de Claude est [CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md](docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md).
+
+
+
 ## Priorité actuelle : Fragment 01 à 50/50
 
 Lire [FRAGMENT_01_PRIORITE.md](docs/collaboration/FRAGMENT_01_PRIORITE.md) : vingt cours présents en cardiologie répartis 10 Codex / 10 Claude, plus quatre productions prioritaires réparties 2/2. Les listes historiques 15/15 ci-dessous sont remplacées pour cette reprise. Fenêtres contextualisées, volume sans multiplicateur imposé et ESC 2026 comparatif ; avancer au Fragment 02 après achèvement vérifié.

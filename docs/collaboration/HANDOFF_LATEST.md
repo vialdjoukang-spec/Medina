@@ -1,6 +1,13 @@
 # MEDINA — dernière passation
 
-Mise à jour : 7 octobre 2026. Compléments contrôlés publiés sur les deux branches d’intégration au commit `f9b654810619ac8206500ca23821eff9816002c1`. Les remises S01/S02 sont exportées depuis ce commit. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
+## Nouvelle organisation — 8 octobre 2026
+
+Les **21 fragments hors C-01-Cardiologie** sont attribués : **11 fragments entiers à Claude, 10 fragments entiers à Codex**. Lire [FRAGMENTS_RESTANTS.md](FRAGMENTS_RESTANTS.md) et [production_plan.json](../../organisation/production_plan.json). Un chapitre actif par agent ; contrôle, intégration et publication avant le suivant. La cardiologie reste dans sa mission actuelle, sans certification de complétude. Aucun nouveau chapitre n’est déclaré commencé par ce plan. Codex prend le relais de GPT « work » comme coordinateur ; sous-agents en parallèle dans chaque chapitre, puis audit croisé Claude → Codex et Codex → Claude **avant injection**. La [mission de Claude](CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md) est le point d’entrée opérationnel. Toutes les catégories restent sous leur fragment respectif ; les citer comme **code — intitulé (libellé complet du fragment)**.
+
+Les paragraphes datés du 7 octobre ci-dessous restent un historique ; les états les plus récents de l’intégration et les reçus doivent être relus avant production. Au contrôle du 8 octobre : `main` était à `f149128357ce6cdc7bb9d7c77a837e545facc814`, l’intégration à `648afc8c1274e091968ad3ce70260bba748776bb`. Les têtes des branches et des PR ont été récupérées par Git ; l’API GitHub a renvoyé HTTP 401, donc l’inventaire de leurs métadonnées demeure partiel. Aucune absence de livraison n’est déduite de cette limite.
+
+
+Mise à jour : 7 octobre 2026. Les quatorze cours du lot 5 et les compléments bibliographiques I48 sont intégrés et contrôlés sur les deux branches d’intégration au commit `c224eef68a870e02e229b1f201ad32b6801f5d11`. La remise S01 porte ce commit (187 sources) ; S02 reste exporté depuis `f9b654810619ac8206500ca23821eff9816002c1` (sources inchangées). La [PR #13](https://github.com/vialdjoukang-spec/Medina/pull/13) rassemble la livraison pour revue. Les réserves médicales et le Fragment 01 restent ouverts. Le [tableau commun](../../organisation/MEDINA_Organisation.html) et sa [version publiée](https://vialdjoukang-spec.github.io/Medina/organisation.html) réunissent les 22 fragments, les 265 blocs et les 1 636 catégories du catalogue historique. Les plateformes originales reprennent désormais cette organisation : catégories numérotées, chapitres ordonnés, codes discrets en haut à droite et couleurs lisibles.
 
 ## Priorité : expliquer pourquoi
 
@@ -38,4 +45,24 @@ Le catalogue reste **CIM-10-GM 2024**. La complétude **CIM-11 n’est pas étab
 
 À chaque reprise et avant publication, lire [les livraisons repérées](DELIVERIES_LATEST.md), les branches/PR et leurs nouvelles pages, les dossiers Claude et les reçus. La présence d’un manifeste facilite le suivi ; son absence ne justifie pas d’ignorer une livraison ancienne. Vérifier séparément le déploiement du site.
 
-La préférence Anthropic Serif est enregistrée ; la police est absente de cette session. Les nouveautés ESC 2026 sont présentées dans des comparaisons dédiées I48/I50. Fenêtres : réponse directe puis mécanisme, conséquence, limites et source, sans quota de mots ni multiplication de volume.
+La préférence Anthropic Serif est enregistrée ; la police est absente de cette session. Les nouveautés ESC 2026 sont présentées dans des comparaisons dédiées I48/I50/I42. Fenêtres : réponse directe puis mécanisme, conséquence, limites et source, sans quota de mots ni multiplication de volume.
+
+## Nouveau paquet de dix cours — réception 67c01cb4
+
+95 sources supplémentaires sont injectées : I00 — Rhumatisme articulaire aigu ; I30 — Péricardites, épanchement péricardique, tamponnade et constriction ; I33 — Endocardite infectieuse ; I34 — Valvulopathies mitrales, tricuspides et pulmonaires ; I35 — Valvulopathies aortiques ; I40 — Myocardites ; I42 — Cardiomyopathies ; I44 — Troubles de la conduction et bradycardies ; I46 — Arrêt cardiaque ; I49 — Extrasystoles et autres arythmies. Les 95 empreintes de base et propositions sont conformes ; les copies reçues égalent les blobs GitHub figés. I48 est exclu de ce paquet et préservé.
+
+Onze cours de cardiologie ont reçu les livraisons de justification étendue (I48 puis ces dix), soit 11/20 cours présents. Cet indicateur mesure l’injection de ces livraisons, pas une clôture médicale exhaustive. Aucun cours n’est déclaré achevé sur la seule réussite technique. Les vérifications Claude portent sur ses propositions et laissent des réserves documentées par cours. Les seuils non recontrôlés, divergences de tableaux et informations professionnelles non relues restent à traiter.
+
+I46 et I49 sont acceptés bien que passés à Codex : leur rédaction précédait le partage actuel. La répartition 10/10 reste en vigueur pour la suite et la fermeture des réserves. Claude a livré Q21 à `2947ba86` et poursuit les productions prioritaires I83/I89, avec les réserves des autres cours. Le Fragment 02 attend toujours l’achèvement vérifié du Fragment 01.
+
+Les badges de validation interne 20/20 des dix cours ont été retirés. I42 distingue désormais les référentiels cardiomyopathies ESC 2023 et insuffisance cardiaque ESC 2026 dans une fenêtre comparative ; les classes ESC 2026 non vérifiées ont été retirées.
+
+Les quatre fichiers de fenêtres I48 mis à jour dans la même remise ne modifient que la bibliographie ; fusion à trois voies propre, corrections médicales et comparaison conservées. Les preuves du déploiement I48 publiées concurremment à `d6718ba5` sont également conservées.
+
+Contrôles du nouveau paquet : 80 tests unitaires, 8 637 contrôles navigateur sur les dix cours, 71 contrôles de navigation S01 et contrats Sciences des 31 cours réussis. Toutes les 896 fenêtres natives de ces dix cours ont été ouvertes aux deux largeurs, avec leurs renvois, quiz, retours et restitutions du focus.
+
+## Lot 5 final — réception 2947ba86
+
+Les quatre cours supplémentaires I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires ; I71 — Anévrismes et dissections artérielles ; I80 — Thrombose veineuse profonde et thromboses veineuses ; Q21 — Cardiopathies congénitales de l’adulte sont injectés (33 sources), avec le glossaire TBX1 corrigé. Les 128 sources des quatorze cours sont reçues, et les quatre corrections bibliographiques I48 sont intégrées. Toutes les 1 156 fenêtres natives des quatorze cours ont été ouvertes sur ordinateur/mobile : 11 058 contrôles réussis, plus 931 I48 et 2 400 des banques de justifications.
+
+**15/20 cours présents ont reçu cette justification étendue (75 %) ; aucun n’est clos par une contrelecture médicale indépendante exhaustive.** Les cinq cours sans cette livraison étendue sont I50 — Insuffisance cardiaque ; I21 — Syndromes coronariens aigus et infarctus du myocarde ; I25 — Syndromes coronariens chroniques et angor ; I10 — Hypertension artérielle ; I70 — Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë. Codex poursuit ces cinq et les réserves de ses dix cours ; Claude ferme celles des siens et produit I83/I89. Les livraisons I47/I46/I49/I71/I80 préparées avant le nouveau partage sont conservées.

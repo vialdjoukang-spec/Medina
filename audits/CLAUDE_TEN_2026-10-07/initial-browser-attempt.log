@@ -1,0 +1,38 @@
+{"progress":"I00","width":1360,"opened":76,"unopened":[],"checks":323}
+{"progress":"I30","width":1360,"opened":79,"unopened":[],"checks":646}
+{"progress":"I33","width":1360,"opened":85,"unopened":[],"checks":993}
+locator.scrollIntoViewIfNeeded: Timeout 29995.891000000003ms exceeded.
+Call log:
+[2m  - attempting scroll into view action[22m
+[2m    2 × waiting for element to be stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying scroll into view action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying scroll into view action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying scroll into view action[22m
+[2m       - waiting 500ms[22m
+
+    at reveal (/workspace/scratch/468a3b626620/medina/audits/CLAUDE_TEN_2026-10-07/verify_ten.cjs:15:10)
+    at async /workspace/scratch/468a3b626620/medina/audits/CLAUDE_TEN_2026-10-07/verify_ten.cjs:47:19 {
+  log: [
+    '  - attempting scroll into view action',
+    '    2 × waiting for element to be stable',
+    '      - element is not visible',
+    '    - retrying scroll into view action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be stable',
+    '      - element is not visible',
+    '    - retrying scroll into view action',
+    '      - waiting 100ms',
+    '    58 × waiting for element to be stable',
+    '       - element is not visible',
+    '     - retrying scroll into view action',
+    '       - waiting 500ms'
+  ],
+  name: 'TimeoutError'
+}

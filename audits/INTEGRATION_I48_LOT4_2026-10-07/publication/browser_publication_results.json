@@ -1,0 +1,385 @@
+{
+  "result": "passed",
+  "started_at": "2026-10-07T21:26:37.146Z",
+  "source_commit": "e856ed16893ba5c4ffc3bd4c9ca78a38ce533de6",
+  "expected_local_sha256": "08279a521cb0fa93de132809a526c02c80852e5d7bcc436d1c3b9e011970341a",
+  "checks": [
+    {
+      "name": "Fragment local attendu",
+      "ok": true
+    },
+    {
+      "name": "Fragment public HTTP 200",
+      "ok": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Empreinte brute publique reconnue",
+      "ok": true,
+      "details": {
+        "actual": "776cb1d1a53bdd31bf53246ed014bfd21970d1c245b3a7b643bdf8930e62332e",
+        "expected": "776cb1d1a53bdd31bf53246ed014bfd21970d1c245b3a7b643bdf8930e62332e"
+      }
+    },
+    {
+      "name": "Paquet gzip présent dans les deux constructions",
+      "ok": true
+    },
+    {
+      "name": "Payload des templates strictement identique",
+      "ok": true,
+      "details": {
+        "local_os_byte": 3,
+        "public_os_byte": 255,
+        "local_payload_sha256": "9fbd46ba0fad924c6f0e81aeeaa02f92297b69c6f8963446b2ce89a1d5a6171d",
+        "public_payload_sha256": "9fbd46ba0fad924c6f0e81aeeaa02f92297b69c6f8963446b2ce89a1d5a6171d",
+        "different_byte_offsets": [
+          9
+        ]
+      }
+    },
+    {
+      "name": "Surface HTML hors paquet strictement identique",
+      "ok": true,
+      "details": {
+        "local_sha256": "d3301d067a494dbac34baa6ec76fc162d9b7137aaa7b8cc39ec717af8ee0281c",
+        "public_sha256": "d3301d067a494dbac34baa6ec76fc162d9b7137aaa7b8cc39ec717af8ee0281c"
+      }
+    },
+    {
+      "name": "Différence compressée limitée à l’octet système gzip",
+      "ok": true,
+      "details": {
+        "local_os_byte": 3,
+        "public_os_byte": 255,
+        "local_payload_sha256": "9fbd46ba0fad924c6f0e81aeeaa02f92297b69c6f8963446b2ce89a1d5a6171d",
+        "public_payload_sha256": "9fbd46ba0fad924c6f0e81aeeaa02f92297b69c6f8963446b2ce89a1d5a6171d",
+        "different_byte_offsets": [
+          9
+        ]
+      }
+    },
+    {
+      "name": "Cours I48 affiché en ligne",
+      "ok": true
+    },
+    {
+      "name": "Intitulé public du cours",
+      "ok": true,
+      "details": {
+        "actual": "Fibrillation et flutter auriculaires"
+      }
+    },
+    {
+      "name": "Fenêtre mécanistique du score présente",
+      "ok": true
+    },
+    {
+      "name": "Onglet public pA à 1360",
+      "ok": true
+    },
+    {
+      "name": "Onglet pA à 1360 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 1360,
+        "document": 1360
+      }
+    },
+    {
+      "name": "Onglet public pE à 1360",
+      "ok": true
+    },
+    {
+      "name": "Onglet pE à 1360 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 1360,
+        "document": 1360
+      }
+    },
+    {
+      "name": "Onglet public pS à 1360",
+      "ok": true
+    },
+    {
+      "name": "Onglet pS à 1360 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 1360,
+        "document": 1360
+      }
+    },
+    {
+      "name": "Onglet public pP à 1360",
+      "ok": true
+    },
+    {
+      "name": "Onglet pP à 1360 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 1360,
+        "document": 1360
+      }
+    },
+    {
+      "name": "Mot vert contient une abréviation à 1360",
+      "ok": true
+    },
+    {
+      "name": "Clic naturel du mot vert à 1360 : fenêtre ouverte",
+      "ok": true
+    },
+    {
+      "name": "Clic naturel du mot vert à 1360 : titre mécanistique",
+      "ok": true,
+      "details": {
+        "actual": "Score CHA₂DS₂-VA (ESC 2024)",
+        "expected": "Score CHA₂DS₂-VA (ESC 2024)"
+      }
+    },
+    {
+      "name": "Clic naturel du mot vert à 1360 : texte mécanistique intégral",
+      "ok": true
+    },
+    {
+      "name": "Clic naturel du mot vert à 1360 : aucune fiche manquante",
+      "ok": true
+    },
+    {
+      "name": "Fenêtre du score à 1360 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 1360,
+        "document": 1360,
+        "dialogLeft": 310,
+        "dialogRight": 1050,
+        "bodyWidth": 738,
+        "bodyScroll": 738
+      }
+    },
+    {
+      "name": "Fenêtre du score à 1360 : fenêtre contenue",
+      "ok": true,
+      "details": {
+        "width": 1360,
+        "document": 1360,
+        "dialogLeft": 310,
+        "dialogRight": 1050,
+        "bodyWidth": 738,
+        "bodyScroll": 738
+      }
+    },
+    {
+      "name": "Focus rendu au mot vert à 1360",
+      "ok": true
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 1360 : fenêtre ouverte",
+      "ok": true
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 1360 : titre mécanistique",
+      "ok": true,
+      "details": {
+        "actual": "Score CHA₂DS₂-VA (ESC 2024)",
+        "expected": "Score CHA₂DS₂-VA (ESC 2024)"
+      }
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 1360 : texte mécanistique intégral",
+      "ok": true
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 1360 : aucune fiche manquante",
+      "ok": true
+    },
+    {
+      "name": "Notation imbriquée de couleur verte à 1360",
+      "ok": true,
+      "details": {
+        "parent": "rgb(36, 114, 65)",
+        "child": "rgb(36, 114, 65)"
+      }
+    },
+    {
+      "name": "Onglet public pA à 390",
+      "ok": true
+    },
+    {
+      "name": "Onglet pA à 390 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "Onglet public pE à 390",
+      "ok": true
+    },
+    {
+      "name": "Onglet pE à 390 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "Onglet public pS à 390",
+      "ok": true
+    },
+    {
+      "name": "Onglet pS à 390 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "Onglet public pP à 390",
+      "ok": true
+    },
+    {
+      "name": "Onglet pP à 390 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "Mot vert contient une abréviation à 390",
+      "ok": true
+    },
+    {
+      "name": "Clic naturel du mot vert à 390 : fenêtre ouverte",
+      "ok": true
+    },
+    {
+      "name": "Clic naturel du mot vert à 390 : titre mécanistique",
+      "ok": true,
+      "details": {
+        "actual": "Score CHA₂DS₂-VA (ESC 2024)",
+        "expected": "Score CHA₂DS₂-VA (ESC 2024)"
+      }
+    },
+    {
+      "name": "Clic naturel du mot vert à 390 : texte mécanistique intégral",
+      "ok": true
+    },
+    {
+      "name": "Clic naturel du mot vert à 390 : aucune fiche manquante",
+      "ok": true
+    },
+    {
+      "name": "Fenêtre du score à 390 : document contenu",
+      "ok": true,
+      "details": {
+        "width": 390,
+        "document": 390,
+        "dialogLeft": 8,
+        "dialogRight": 382,
+        "bodyWidth": 372,
+        "bodyScroll": 372
+      }
+    },
+    {
+      "name": "Fenêtre du score à 390 : fenêtre contenue",
+      "ok": true,
+      "details": {
+        "width": 390,
+        "document": 390,
+        "dialogLeft": 8,
+        "dialogRight": 382,
+        "bodyWidth": 372,
+        "bodyScroll": 372
+      }
+    },
+    {
+      "name": "Focus rendu au mot vert à 390",
+      "ok": true
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 390 : fenêtre ouverte",
+      "ok": true
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 390 : titre mécanistique",
+      "ok": true,
+      "details": {
+        "actual": "Score CHA₂DS₂-VA (ESC 2024)",
+        "expected": "Score CHA₂DS₂-VA (ESC 2024)"
+      }
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 390 : texte mécanistique intégral",
+      "ok": true
+    },
+    {
+      "name": "Clic de l’abréviation imbriquée à 390 : aucune fiche manquante",
+      "ok": true
+    },
+    {
+      "name": "Notation imbriquée de couleur verte à 390",
+      "ok": true,
+      "details": {
+        "parent": "rgb(36, 114, 65)",
+        "child": "rgb(36, 114, 65)"
+      }
+    },
+    {
+      "name": "Aucune erreur JavaScript publique",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "Fragment local stable pendant QA publique",
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "page_errors": [],
+  "console_errors": [],
+  "failed_requests": [],
+  "captures": [
+    "/workspace/scratch/01e6be8be7cf/Medina/audits/INTEGRATION_I48_LOT4_2026-10-07/publication/public_i48_1360.png",
+    "/workspace/scratch/01e6be8be7cf/Medina/audits/INTEGRATION_I48_LOT4_2026-10-07/publication/public_i48_score_1360.png",
+    "/workspace/scratch/01e6be8be7cf/Medina/audits/INTEGRATION_I48_LOT4_2026-10-07/publication/public_i48_390.png",
+    "/workspace/scratch/01e6be8be7cf/Medina/audits/INTEGRATION_I48_LOT4_2026-10-07/publication/public_i48_score_390.png"
+  ],
+  "expected_public_raw_sha256": "776cb1d1a53bdd31bf53246ed014bfd21970d1c245b3a7b643bdf8930e62332e",
+  "requested_url": "https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html#/entry/I48",
+  "local_sha256": "08279a521cb0fa93de132809a526c02c80852e5d7bcc436d1c3b9e011970341a",
+  "proxy_configured": true,
+  "browser": "153.0.8010.0",
+  "browser_managed_proxy_tls_exception": true,
+  "final_url": "https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html#/entry/I48",
+  "http_status": 200,
+  "response_headers": {
+    "cache-control": "max-age=600",
+    "content-type": "text/html; charset=utf-8",
+    "etag": "W/\"6ac6b845-3da243\"",
+    "last-modified": "Wed, 07 Oct 2026 21:23:17 GMT"
+  },
+  "public_sha256": "776cb1d1a53bdd31bf53246ed014bfd21970d1c245b3a7b643bdf8930e62332e",
+  "raw_public_equals_local": false,
+  "gzip": {
+    "local_os_byte": 3,
+    "public_os_byte": 255,
+    "local_payload_sha256": "9fbd46ba0fad924c6f0e81aeeaa02f92297b69c6f8963446b2ce89a1d5a6171d",
+    "public_payload_sha256": "9fbd46ba0fad924c6f0e81aeeaa02f92297b69c6f8963446b2ce89a1d5a6171d",
+    "different_byte_offsets": [
+      9
+    ]
+  },
+  "surface": {
+    "local_sha256": "d3301d067a494dbac34baa6ec76fc162d9b7137aaa7b8cc39ec717af8ee0281c",
+    "public_sha256": "d3301d067a494dbac34baa6ec76fc162d9b7137aaa7b8cc39ec717af8ee0281c"
+  },
+  "finished_at": "2026-10-07T21:26:54.961Z"
+}

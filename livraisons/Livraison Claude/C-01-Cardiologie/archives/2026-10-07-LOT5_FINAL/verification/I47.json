@@ -1,0 +1,329 @@
+{
+ "cours": "I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires",
+ "date": "2026-10-07",
+ "role": "vérificateur indépendant (TACHE_VERIFICATION.md)",
+ "sources_de_reference": {
+  "ESC_2022": "Zeppenfeld et al., 2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death, European Heart Journal 2022;43:3997-4126 : original anglais publié, obtenu par le dépôt institutionnel public de l’Université de Pavie (IRIS, hdl.handle.net/11571/1472843), déposé dans src/esc2022_va_en.pdf, .txt et _flux.txt ; préféré à la traduction espagnole pour toutes les vérifications.",
+  "ESC_2019": "Brugada et al., 2019 ESC Guidelines for the management of patients with supraventricular tachycardia, European Heart Journal 2020;41:655-720 : traduction officielle espagnole (src/esc2019_tsv_es*). L’original anglais n’a pas pu être obtenu : dépôt de Berne protégé par une page anti-robot, dépôt de Leiden bloqué, autres copies sans texte intégral.",
+  "autres": "ERC 2025, Adult Advanced Life Support (Soar et al., Resuscitation 2025;215:110769), texte intégral déjà présent dans I46/src ; Drew et al. 2010 et Marcus et al. 2010 en texte intégral (PubMed Central) ; résumés PubMed contrôlés pour Echt 1991, Stewart 1986, Schwartz 2001 et 2004, Kannankeril 2017, Priori 2003, Pappone 2003, Wathen 2004, Ellenbogen 1990, Viskin 2005 et 2010, de Bakker 1988, Schmidt 2007, González-Torrecilla 2009."
+ },
+ "complements": {
+  "total": 193,
+  "producteurs": 189,
+  "ajouts_du_verificateur": 4,
+  "accepter": 174,
+  "corriger": 19,
+  "rejeter": 0,
+  "par_fichier": {
+   "I47_a": {
+    "accepter": 30,
+    "corriger": 4
+   },
+   "I47_b": {
+    "accepter": 45,
+    "corriger": 8
+   },
+   "I47_c": {
+    "accepter": 44,
+    "corriger": 2
+   },
+   "I47_d": {
+    "accepter": 27,
+    "corriger": 1
+   },
+   "I47_pop1": {
+    "corriger": 2,
+    "accepter": 4
+   },
+   "I47_pop2": {
+    "accepter": 5
+   },
+   "I47_pop3": {
+    "accepter": 6
+   },
+   "I47_pop4": {
+    "accepter": 4,
+    "corriger": 1
+   },
+   "I47_pop5": {
+    "accepter": 1
+   },
+   "I47_pop6": {
+    "accepter": 8,
+    "corriger": 1
+   }
+  },
+  "ajouts": [
+   {
+    "id": "I47_pop1-v1",
+    "objet": "fenêtre i47-automat : « cardioversion souvent inefficace » corrigée selon l’ESC 2019 (en règle efficace ; échec dans les formes automatiques incessantes)."
+   },
+   {
+    "id": "I47_pop3-v1",
+    "objet": "fenêtre i47-ecg-qt : QTc ≥ 480 ms répété = critère diagnostique (ESC 2022), harmonisé avec I47_c-46."
+   },
+   {
+    "id": "I47_pop5-v1",
+    "objet": "fenêtre i47-mg : mécanisme du magnésium présenté comme non établi chez l’homme (Drew et al., 2010), harmonisé avec i47-tdp-tt, i47-d-mg et i47-declench."
+   },
+   {
+    "id": "I47_pop6-v1",
+    "objet": "Pareto pareto-i47-ecgex : même harmonisation que I47_pop3-v1."
+   }
+  ],
+  "corriges": [
+   {
+    "id": "I47_a-3",
+    "probleme": "Le modèle des deux foyers alternants (Baher et al., 2011) est expérimental ; P1 le présentait comme établi (« traduit »), alors que son propre bilan le classe parmi les mécanismes débattus. Liste de l’ESC 2022 vérifiée dans l’original anglais (définitions : TVPC, Andersen et Tawil, digoxine, myocardite aiguë)."
+   },
+   {
+    "id": "I47_a-6",
+    "probleme": "Chiffres vérifiés dans l’original anglais (épidémiologie : 1, environ 50 et au moins 200 pour 100 000 personnes-années). L’ESC écrit « up to 75–80 % » ; « parce que » présentait l’association avec la maladie coronaire comme la cause unique de la croissance avec l’âge."
+   },
+   {
+    "id": "I47_a-10",
+    "probleme": "Contradiction interne : P1 écrivait que le vérapamil et les bêtabloquants « restent sans effet sur une réentrée ventriculaire », alors que la phrase suivante du cours présente la TV fasciculaire, une réentrée, comme sensible au vérapamil. Lerman et al. (1986) opposent la sensibilité à l’adénosine de la TV déclenchée à l’absence d’effet sur la TV par réentrée."
+   },
+   {
+    "id": "I47_a-32",
+    "probleme": "L’ESC 2019 (section 9.2.1.1) dit seulement qu’une TRIN peut, rarement, conduire en 2:1 ; la référence citée porte sur le bloc infrahisien. « Ni l’oreillette ni le ventricule ne sont indispensables » n’est pas sourcé pour l’oreillette, dont le rôle dans le circuit reste débattu (le circuit exact n’est pas défini, ESC 2019, section 11.2.1)."
+   },
+   {
+    "id": "I47_b-14",
+    "probleme": "Exact (ESC 2019, sections 10.1.1 et 10.2). Le mécanisme de la FA induite (décharge veineuse pulmonaire, hétérogénéité de la repolarisation) est retiré ici : il est donné dans la fenêtre i47-adeno (complément de P2), ouverte depuis l’îlot 9.1 ; redite supprimée."
+   },
+   {
+    "id": "I47_b-15",
+    "probleme": "Erreur du cours signalée par P1 (réserve) mais laissée : la recommandation de classe III de l’ESC 2019 vise digoxine, bêtabloquants, diltiazem, vérapamil et amiodarone ; l’adénosine n’y figure pas, le texte demande seulement d’éviter tout modulateur du nœud. « Période réfractaire plus courte que le nœud » était une généralisation inexacte, remplacée par l’absence de conduction décrémentielle."
+   },
+   {
+    "id": "I47_b-36",
+    "probleme": "Chiffres vérifiés (ESC 2022, section 7.1.3.1.2). L’analyse secondaire porte sur les patients de 70 ans ou moins (rapport des risques 0,70) : « avant 70 ans » est remplacé par la borne exacte et la formulation d’association."
+   },
+   {
+    "id": "I47_b-38",
+    "probleme": "Chiffres vérifiés (ESC 2022, section 6.2.2.3). L’ESC rapporte une inquiétude sur la durée de port ; « en partie parce que » transformait cette hypothèse en cause établie."
+   },
+   {
+    "id": "I47_b-39",
+    "probleme": "Arbitrage demandé. Tableau de recommandations 41 de l’ESC 2022 relu dans l’original anglais : DAI après arrêt (I, B) ; DAI chez le patient symptomatique (syncope rythmique ou TV mal tolérée) sous bêtabloquant et traitement propre au génotype (I, C) ; dénervation si DAI contre-indiqué ou refusé, ou chez le porteur de DAI qui reçoit des chocs multiples ou fait une syncope rythmique (I, C) ; DAI ou dénervation si ces traitements ne sont pas tolérés ou sont contre-indiqués (IIa, C). P1 omettait la syncope du porteur de DAI et la condition « symptomatique » de la classe IIa. Schwartz et al. (2004, PubMed 15051644) vérifié : 147 patients, baisse de 91 %. La phrase finale reprend le texte de l’ESC (« LCSD is not an alternative to ICD for high-risk patients »). Formulation reprise dans le Pareto i47-canal (I47_pop6-6)."
+   },
+   {
+    "id": "I47_b-41",
+    "probleme": "ESC 2022, section 7.2.4 : « provocation with drug or fever is less specific than previously thought, with 2–4 % prevalence in healthy subjects and higher prevalence in patients with AV nodal reentry tachycardia or an accessory pathway in one study ». La fièvre est ajoutée pour lier ce chiffre au piège de la fin de l’îlot 12 (I47_b-52), qui ne le répète plus."
+   },
+   {
+    "id": "I47_b-43",
+    "probleme": "Chiffres vérifiés (ESC 2022, section 7.2.4). « Multiplie » présentait une association observationnelle comme un effet causal. Ces chiffres sont gardés ici, en regard des classes, et retirés de la fenêtre i47-brugada (P2), qui ne s’ouvre que depuis ce paragraphe."
+   },
+   {
+    "id": "I47_b-52",
+    "probleme": "Arbitrage demandé : correction de fond juste (type 1 sous fièvre = aspect provoqué). Le chiffre de 2 à 4 % est retiré, car il figure déjà dans I47_b-41, au début du même îlot. Cohérent avec I47_c-31, la fenêtre i47-ecg-brug (P1) et la fenêtre i47-ajmaline (P2)."
+   },
+   {
+    "id": "I47_c-31",
+    "probleme": "Arbitrage demandé : correction de fond juste et cohérente avec I47_b-52. Le chiffre de 0,5 % par an concerne les patients asymptomatiques atteints d’un syndrome de Brugada (ESC 2022) ; P2 l’appliquait à « un sujet asymptomatique » quelconque."
+   },
+   {
+    "id": "I47_c-35",
+    "probleme": "Redite : la proportion de 10 à 45 % est déjà ajoutée par I47_c-24 dans le même onglet. La construction « souvent multiples, chez 10 à 45 % » laissait croire que 10 à 45 % des patients avaient des voies multiples (l’ESC 2019 donne 10 à 45 % de voies accessoires droites, et des voies multiples chez jusqu’à 50 % des patients porteurs de voies). Procédures répétées vérifiées (ESC 2019, section 12.4)."
+   },
+   {
+    "id": "I47_d-28",
+    "probleme": "Arbitrage demandé (caféine). ESC 2019, section 10.1.1 : « some drugs (e.g. dipyridamole and theophylline) may occasionally affect the doses required, but any influence of recent caffeine consumption has been refuted ». La formulation de P2 laissait « effet diminué » s’appliquer à la caféine dans la même phrase que sa réfutation ; elle est rendue explicite."
+   },
+   {
+    "id": "I47_pop1-1",
+    "probleme": "Arbitrage demandé (conduction rétrograde). Formulation exacte de l’ESC 2019 (section 9.2.1.1) : « VA conduction may be found in up to 50 % of patients with VT and a 1:1 relationship is possible, [but] most VTs have a < 1:1 relationship ». Le « près d’un tiers » du cours n’a pas de source ; cohérent avec « présente dans environ la moitié des TV » (I47_b, îlot 8.2)."
+   },
+   {
+    "id": "I47_pop1-3",
+    "probleme": "Arbitrage demandé (fréquence des torsades). Phrase exacte de Drew et al. (2010, texte intégral PMC3056123) : « The rate of TdP ranges from 160 to 240 beats per minute, which is slower than ventricular fibrillation ». « environ » retiré ; aucune autre fréquence de torsades dans le cours."
+   },
+   {
+    "id": "I47_pop4-3",
+    "probleme": "La reformulation de P2 en association est juste, mais « en partie parce qu’il signale une cardiopathie évoluée » est une interprétation non sourcée. L’ESC 2022 (section 6.1.3) cite mortalité accrue, décompensation cardiaque et troubles psychologiques."
+   },
+   {
+    "id": "I47_pop6-6",
+    "probleme": "Arbitrage demandé : Pareto harmonisé mot pour mot avec I47_b-39 (tableau de recommandations 41 de l’ESC 2022)."
+   }
+  ]
+ },
+ "fenetres": {
+  "total": 46,
+  "creees": [
+   "i47-tolerance (P1)",
+   "i47-bilan-tv (P1)",
+   "i47-digox (P2)"
+  ],
+  "completees": 43,
+  "verdicts": {
+   "i47-abl-tsv__P2": "ok",
+   "i47-adeno__P2": "corrigée",
+   "i47-ajmaline__P2": "corrigée",
+   "i47-atcd-medic__P1": "ok",
+   "i47-automat__P1": "corrigée",
+   "i47-bilan-tv__P1": "corrigée",
+   "i47-brugada__P2": "corrigée",
+   "i47-cicatrice__P1": "ok",
+   "i47-credible__P2": "corrigée",
+   "i47-cv__P2": "corrigée",
+   "i47-d-amio__P2": "ok",
+   "i47-d-bb__P2": "ok",
+   "i47-d-bbns__P2": "ok",
+   "i47-d-cci__P2": "ok",
+   "i47-d-ic__P2": "ok",
+   "i47-d-mg__P2": "ok",
+   "i47-d-sotalol__P2": "ok",
+   "i47-dai__P2": "corrigée",
+   "i47-declench__P1": "corrigée",
+   "i47-digox__P2": "ok",
+   "i47-dualite__P1": "corrigée",
+   "i47-ecg-brug__P1": "ok",
+   "i47-ecg-qt__P1": "ok",
+   "i47-eep__P2": "corrigée",
+   "i47-effort__P2": "ok",
+   "i47-genet__P2": "corrigée",
+   "i47-grossesse__P2": "ok",
+   "i47-holter__P2": "ok",
+   "i47-irm__P2": "corrigée",
+   "i47-k__P2": "corrigée",
+   "i47-mg__P2": "ok",
+   "i47-msj__P2": "ok",
+   "i47-orage__P2": "ok",
+   "i47-pa__P1": "ok",
+   "i47-qtl__P1": "ok",
+   "i47-reentree__P1": "ok",
+   "i47-repol__P1": "ok",
+   "i47-reppre__P2": "ok",
+   "i47-schwartz__P2": "ok",
+   "i47-sport__P2": "ok",
+   "i47-standing__P2": "corrigée",
+   "i47-tamsi__P2": "corrigée",
+   "i47-tdp-tt__P2": "corrigée",
+   "i47-tolerance__P1": "corrigée",
+   "i47-trav__P1": "ok",
+   "i47-wpw-asympt__P2": "corrigée"
+  },
+  "corrigees": [
+   "i47-adeno__P2",
+   "i47-ajmaline__P2",
+   "i47-automat__P1",
+   "i47-bilan-tv__P1",
+   "i47-brugada__P2",
+   "i47-credible__P2",
+   "i47-cv__P2",
+   "i47-dai__P2",
+   "i47-declench__P1",
+   "i47-dualite__P1",
+   "i47-eep__P2",
+   "i47-genet__P2",
+   "i47-irm__P2",
+   "i47-k__P2",
+   "i47-standing__P2",
+   "i47-tamsi__P2",
+   "i47-tdp-tt__P2",
+   "i47-tolerance__P1",
+   "i47-wpw-asympt__P2"
+  ],
+  "fusions": "aucune : les trois créations traitent des sujets distincts ; aucune clé n’a été complétée à la fois par P1 et par P2.",
+  "ancres": {
+   "total": 36,
+   "retirees": 0,
+   "labels_modifies": 0,
+   "note": "deux ancres non justifiées par leur fenêtre (pression différentielle pincée → i47-tolerance ; équipe spécialisée → i47-genet) ont été gardées et la fenêtre complétée."
+  },
+  "mots_verts_ajoutes_par_le_verificateur": [
+   "i47-bilan-tv → i47-irm",
+   "i47-declench → i47-tdp-tt",
+   "i47-cv → i47-automat, i47-tolerance",
+   "i47-brugada → i47-ecg-brug",
+   "i47-credible → i47-ecg-qt",
+   "i47-tdp-tt → i47-k"
+  ]
+ },
+ "arbitrages_demandes": {
+  "QT_long_DAI_et_denervation": {
+   "decision": "Tableau de recommandations 41 de l’ESC 2022 relu dans l’original anglais. DAI après arrêt (I, B) ; DAI chez le patient symptomatique (syncope rythmique ou TV mal tolérée) malgré bêtabloquant et traitement propre au génotype (I, C) ; dénervation si DAI contre-indiqué ou refusé, ou chez le porteur de DAI qui reçoit des chocs multiples ou fait une syncope rythmique (I, C) ; DAI ou dénervation si ces traitements ne sont pas tolérés ou sont contre-indiqués (IIa, C). La correction de P1 omettait la syncope du porteur de DAI et la condition « symptomatique » de la classe IIa ; celle de P2 omettait la contre-indication du DAI et la TV mal tolérée.",
+   "formulation_I47_b": "… DAI associé au bêtabloquant après arrêt cardiaque (classe I), et chez le patient qui reste symptomatique, par une syncope rythmique ou une TV mal tolérée, malgré le bêtabloquant et le traitement propre au génotype (classe I) ; dénervation sympathique cardiaque gauche chez le patient symptomatique dont le DAI est contre-indiqué ou refusé, ou qui, porteur d’un DAI, reçoit des chocs multiples ou fait une syncope rythmique malgré ce traitement (classe I) ; DAI ou dénervation chez le patient symptomatique qui ne tolère pas le bêtabloquant et le traitement propre au génotype (classe IIa). … elle complète donc le DAI sans le remplacer (ESC 2022).",
+   "formulation_pareto": "DAI si arrêt (I), ou si syncope arythmique ou TV mal tolérée sous bêtabloquant (I) ; dénervation si DAI contre-indiqué ou refusé, ou chocs multiples (I) ; DAI ou dénervation si bêtabloquant non toléré (IIa)."
+  },
+  "Brugada_type_1_sous_fievre": {
+   "decision": "ESC 2022, section 7.2.4 : le type 1 provoqué par un médicament ou par la fièvre est moins spécifique qu’on le pensait (2 à 4 % des sujets sains, davantage chez les porteurs de TRIN ou de voie accessoire dans une étude) et exige un autre critère clinique ou familial (tableau 43 : classe IIa avec critère, IIb seul ; classe I chez le survivant d’un arrêt). Formulation commune : I47_b-41 (chiffre de 2 à 4 %, étendu à la fièvre), I47_b-52 (aspect provoqué, chiffre retiré pour éviter la redite), I47_c-31 (quiz, chiffre gardé pour une rétroaction autonome), fenêtres i47-ecg-brug (P1, mécanisme), i47-ajmaline (P2, faux positifs) et i47-brugada (P2, redites retirées)."
+  },
+  "cafeine_et_adenosine": {
+   "decision": "ESC 2019, section 10.1.1 : « certains médicaments (dipyridamole, théophylline) peuvent occasionnellement modifier la dose requise, mais toute influence d’une consommation récente de boissons caféinées a été réfutée ». Les quatre corrections de P2 sont exactes : I47_c-41 et I47_pop4-1 et I47_pop6-7 acceptées ; I47_d-28 corrigée pour que « effet diminué » ne s’applique plus à la caféine. Le dipyridamole reste cité partout (recapture bloquée, dose réduite).",
+   "endroits": [
+    "I47_c (sciences, adénosine) : I47_c-41",
+    "I47_d (interactions) : I47_d-28",
+    "fenêtre i47-adeno : I47_pop4-1",
+    "Pareto sciences : I47_pop6-7"
+   ]
+  },
+  "doublons_P1_P2": {
+   "constat": "Aucune clé complétée deux fois ; les redites portaient sur des fenêtres voisines ou sur un complément du texte placé dans la phrase qui ouvre la fenêtre.",
+   "supprimes": [
+    "Brugada : i47-brugada (P2) redisait i47-ecg-brug (P1) et I47_b-41/43 (P1) ; i47-ajmaline (P2) redisait la liste de critères de l’îlot 12.2 ; I47_b-52 redisait le chiffre de I47_b-41.",
+    "Seuils du QT : i47-credible (P2) redisait i47-ecg-qt et i47-repol (P1).",
+    "Torsades : i47-declench (P1) redisait i47-tdp-tt (P2) ; i47-tdp-tt redisait sa propre rubrique Potassium ; i47-k (P2) redisait I47_c-17 et i47-tdp-tt.",
+    "Choc et automatisme : i47-cv (P2) redisait i47-automat (P1) et i47-tolerance (P1).",
+    "Stimulation antitachycardique : i47-dai (P2) redisait I47_b-33 (P1) et i47-reentree (P1).",
+    "IRM : i47-bilan-tv (P1) redisait i47-irm (P2), ouvert depuis la même phrase ; i47-irm redisait sa rubrique Lecture.",
+    "Adénosine et FA : I47_b-14 (P1) redisait le mécanisme ajouté à i47-adeno (P2).",
+    "Isoprénaline et catécholamines : i47-eep (P2) redisait I47_b-23 (P1) et le Piège de l’onglet Examens.",
+    "Tachycardies atriales : i47-tamsi (P2) redisait I47_b-27 et I47_b-28 (P1) ; i47-dualite (P1) redisait l’îlot 3.1.",
+    "Ebstein : I47_c-35 redisait le chiffre de I47_c-24."
+   ],
+   "gardes": "Redites brèves entre onglets lus séparément : courant IKs du type 1 (I47_c-45, i47-qtl, i47-effort), CAST (I47_a-18, I47_c-39, I47_d-1, i47-d-ic, Pareto), accélération sinusale progressive (I47_a-1, I47_a-22, i47-holter), un cinquième des pré-excitations intermittentes (I47_b-24, i47-wpw-asympt)."
+  },
+  "chiffres_divergents": {
+   "frequence_des_torsades": "160 à 240/min, inférieure à celle de la FV : phrase exacte de Drew et al. (2010, texte intégral). Seule mention de fréquence des torsades du cours (fenêtre i47-tdp, I47_pop1-3).",
+   "conduction_retrograde_des_TV": "ESC 2019, section 9.2.1.1 : conduction ventriculo-atriale chez jusqu’à 50 % des patients atteints de TV, 1:1 possible, mais la plupart des TV ont plus de QRS que d’ondes P. Le « près d’un tiers » du cours n’a pas de source ; formulation exacte dans i47-dissoc (I47_pop1-1), cohérente avec « dissociation dans environ la moitié des TV » (îlot 8.2)."
+  }
+ },
+ "erreurs_de_fond": [
+  "Fenêtre i47-wpw-asympt (P2) : EEP présentée comme de classe I chez tout sujet sans marqueur de faible risque ; elle est de classe IIa hors professions à risque et athlètes.",
+  "I47_a-10 (P1) : vérapamil et bêtabloquants dits sans effet sur toute réentrée ventriculaire, contredit par la TV fasciculaire décrite à la phrase suivante.",
+  "I47_b-15 (cours, non corrigé par P1) : adénosine rangée en classe III dans la FA pré-excitée ; la classe III de l’ESC 2019 ne la cite pas.",
+  "I47_b-39 (P1) et Pareto i47-canal (P2) : classes du QT long incomplètes ; harmonisées sur le tableau 41.",
+  "I47_a-32 (P1) : « ni l’oreillette ni le ventricule ne sont indispensables » à la TRIN, non sourcé pour l’oreillette.",
+  "I47_a-3 (P1) : mécanisme expérimental de la TV bidirectionnelle présenté comme établi.",
+  "Fenêtre i47-dai (P2) : délai de réévaluation de la FEVG faux (6 à 12 semaines après l’infarctus, ESC 2022).",
+  "Fenêtre i47-automat (cours et P1) et i47-cv (P2) : cardioversion dite inefficace sur les tachycardies automatiques, alors que l’ESC 2019 la juge en règle efficace, sauf forme automatique incessante.",
+  "Fenêtre i47-tolerance (P1) : symptômes du sujet âgé attribués à tort à l’ESC 2019.",
+  "Fenêtre i47-mg (cours) : mécanisme du magnésium présenté comme établi.",
+  "Associations présentées comme causales : I47_b-43 et fenêtre i47-brugada (« multiplie par quatre »), I47_b-38 (port du gilet), I47_a-6 (âge et maladie coronaire), I47_pop4-3 (orage)."
+ ],
+ "reserves": [
+  "ESC 2019 vérifiée dans la traduction officielle espagnole ; numéros de sections de la traduction.",
+  "Non vérifiés faute de source : dualité nodale chez 10 à 35 % ; tachycardie atriale focale « environ un dixième » des TSV adressées pour ablation ; prévalence du Brugada 1/2 000 à 1/5 000 ; RYR2 « environ 60 % » des TVPC (absent de l’ESC 2022) ; sensibilité de la dissociation 20 à 50 % ; potassium ≥ 4,0 mmol/L ; stimulation à 90–110/min dans les torsades (la déclaration de 2010 dit plus de 70/min) ; « mort subite 50 à 100 pour 100 000 » (l’ESC 2022 donne des incidences par âge) ; « dans la pré-excitation, une syncope est un marqueur de risque qui justifie l’ablation » (fenêtre i47-s-syncope, hors des marqueurs de l’ESC 2019).",
+  "Doses et énergies de l’ERC 2025 du cours vérifiées dans le texte intégral (dossier I46/src) : premier choc d’au moins 150 J, adrénaline après le 3e choc, amiodarone 300 puis 150 mg, lidocaïne 100 puis 50 mg, énergies synchronisées 120–150 J, 70–120 J et maximale pour la FA, amiodarone 300 mg en 10 à 20 minutes puis 900 mg sur 24 heures. Réserve des producteurs levée sur ce point.",
+  "Directives SSC/SSML 2024 (conduite), ESC 2020 (sport) et ESC 2018 (grossesse) non relues en texte intégral.",
+  "Adénosine chez le transplanté : dose de 3 mg du cours maintenue ; l’ESC 2019 juge la précaution non indispensable (nuance ajoutée dans i47-adeno).",
+  "ESC 2022 non reprise dans le cours : chez le survivant d’un arrêt, un type 1 induit suffit au diagnostic de Brugada (classe I).",
+  "Rubriques Source : noms de revues écrits en entier dans les 46 fichiers out/*.html. Les champs « source » des fichiers edits/*.json, non injectés, gardent les abréviations des producteurs.",
+  "Plusieurs compléments de fenêtre restent sous le repère de 600 caractères après suppression des redites (i47-dualite, i47-brugada, i47-eep, et, dès la production, i47-trav, i47-msj, i47-sport, i47-d-sotalol, i47-mg, i47-abl-tsv, i47-d-bb).",
+  "Noms d’essais refusés par l’audit des sigles (PROCAMIO, OPTIC, DINAMIT, IRIS, VEST, PainFREE) : absents du HTML, cités par leurs auteurs.",
+  "Aucune donnée personnelle transmise : seuls PubMed, Europe PMC (sans identifiant), une recherche web et le dépôt IRIS de Pavie ont été interrogés ; aucune écriture hors du dossier I47 ; aucun commit."
+ ],
+ "controles": {
+  "old_uniques_sans_chevauchement": "193 compléments et 36 ancres : old unique, aucun chevauchement ; balises de old conservées dans chaque new_final.",
+  "verifier_sigles": "{} sur les 46 fichiers out/*.html, sur le texte final des 193 compléments et sur les dix fichiers du cours après application simulée.",
+  "simulation_application": {
+   "textes_appliques": 193,
+   "textes_rejetes": 0,
+   "textes_echecs": 0,
+   "ancres": 36,
+   "ancres_echecs": 0,
+   "fenetres_creees": 3,
+   "fenetres_completees": 43,
+   "fenetres_echecs": 0,
+   "note": "copie modifiée de appliquer_justifications.py écrivant dans le dossier temporaire ; aucune écriture dans sources/ ni dans chapters/"
+  },
+  "equilibre_html": "identique avant et après application simulée pour les dix fichiers",
+  "boutons_des_fenetres": "au plus deux par fenêtre, vers des clés existantes ou créées par le lot",
+  "mots": "28 118 → 41 199 mots (application simulée)",
+  "test_statique": "test_v7.py --static non lancé : il exige de copier les fichiers dans chapters/, hors du périmètre autorisé ; à faire par finaliser.sh."
+ }
+}

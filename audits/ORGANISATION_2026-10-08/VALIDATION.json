@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-08",
+  "scope": "Organisation des 21 fragments, instructions Claude, tableau de bord ; aucune modification médicale de ce lot.",
+  "allocation": {
+    "Claude": 11,
+    "Codex": 10
+  },
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "passed": 97,
+    "failed": 0
+  },
+  "browser": {
+    "command": "node tests/verify_organisation.cjs --targeted",
+    "transport": "HTTP local, Chromium système",
+    "passed_checks": 133,
+    "scope": "Données du catalogue, attributions, navigation ciblée, clavier, recherche, vues ordinateur/mobile ; pas navigation exhaustive des 265 blocs"
+  },
+  "independent_review": "Sous-agent Codex en lecture seule : attributions, provenance, rattachements et aliases ; cet audit organisationnel ne remplace pas Claude pour les futurs chapitres médicaux.",
+  "claude_mission_status": "Cahier disponible sur main ; prise en charge par Claude non confirmée.",
+  "remote_inventory": "Têtes des branches et PR via Git ; API GitHub HTTP401, métadonnées partielles.",
+  "main_base_commit": "f149128357ce6cdc7bb9d7c77a837e545facc814",
+  "limitations": [
+    "Pas de verrou distant entre sessions",
+    "Validateur de structure et provenance : preuves d’audit et clôture suivies par rapports et reçus",
+    "CIM-11 non établie ; axes sans catégories à inventorier avant réservation"
+  ],
+  "assignment_unit": "fragment",
+  "grouping": "Catégories conservées sous leur fragment respectif ; fragment entre parenthèses dans chaque intitulé textuel."
+}

@@ -17,3 +17,7 @@ python3 tools/build_organisation.py
 ```
 
 Le site reconstruit `organisation.html` à chaque publication depuis `main`. Pour une copie déjà téléchargée, utiliser « Version en ligne » afin de consulter l'état courant. Le protocole commun des deux dossiers est décrit dans [DELIVERY_PROTOCOL.md](../docs/collaboration/DELIVERY_PROTOCOL.md).
+
+## Production partagée
+
+[production_plan.json](production_plan.json) attribue les 21 fragments hors cardiologie : 11 Claude, 10 Codex, avec un seul emplacement de chapitre actif par agent. Les règles, les files et la clôture avant le chapitre suivant sont détaillées dans [FRAGMENTS_RESTANTS.md](../docs/collaboration/FRAGMENTS_RESTANTS.md). Le tableau affiche le responsable et le rang dans sa file ; chaque attribution porte sur le fragment entier, dont toutes les catégories restent regroupées. Dans chaque texte, nommer une catégorie **code — intitulé (libellé complet du fragment)** ; la complétude CIM-11 reste à établir. Exécuter `python3 tools/production_plan.py` pour contrôler la répartition.

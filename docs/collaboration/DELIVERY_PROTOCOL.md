@@ -14,6 +14,8 @@ Toutes les sources publiques sont consultables par les deux agents. Les dossiers
 
 ## Préparer un lot
 
+Pour les nouveaux travaux, appliquer [FRAGMENTS_RESTANTS.md](FRAGMENTS_RESTANTS.md) : un chapitre actif par agent et un chapitre par lot, rapport et PR. Le chapitre doit être relu, contrôlé, intégré et publié avant le suivant. La répartition 11 Claude / 10 Codex des fragments restants remplace les rôles généraux de production/relecture ; les lots historiques et la mission cardiologie sont conservés.
+
 Chaque agent ouvre sa branche depuis la version actuelle de la branche d'intégration `codex/sciences-cs-fragments-20261007`. Il identifie le commit de départ, les fichiers concernés et le travail attendu. Une relecture conserve aussi le commit du contenu effectivement examiné.
 
 Chaque fragment possède un dossier sous `livraisons/Livraison Codex/<nom-du-fragment>/` et sous `livraisons/Livraison Claude/<nom-du-fragment>/`. Le nom exact provient du champ `label` d'`organisation/fragments.json`. Le dossier Codex contient `livraison.json` et la copie intégrale des HTML et JSON des cours sous `sources/chapters/<CODE>/`. Les fichiers communs restent accessibles par les liens de son README.
@@ -51,6 +53,10 @@ L'export est reproductible et préserve une copie de source modifiée depuis le 
 L'injection examine tous les fichiers avant d'écrire dans les dossiers canoniques. Elle crée un nouveau reçu portant l'état **« injecté, reconstruction/contrôles à faire »**. Les corrections de glossaire, d'interface, de CS et les créations de nouveaux cours sont remises directement par branche et PR ; cet outil d'injection se limite aux HTML et JSON primaires des cours déjà intégrés.
 
 Pour ajouter un fichier à un cours déjà intégré et annoncé dans le manifeste, utiliser une entrée `files` avec `operation: "add"`, `sha256: null` et `proposed_sha256` obligatoire, en conservant `source_path: "sources/" + target_path`. La cible doit être un fichier `.html` ou `.json` nommé `<CODE>_…`, directement sous `chapters/<CODE>/` du fragment déclaré, et ne pas exister. L'injection revérifie l'absence, crée le fichier atomiquement en mode `0644` et refuse toute collision ; un échec retire uniquement l'ajout créé par ce lot et restaure ses remplacements. Chaque banque `<CODE>_justifications.json` présente dans un cours touché est compilée après l'injection de tous les fichiers et avant le reçu, y compris si seuls ses HTML changent ; une compilation échouée déclenche le retour arrière. `check-claude` contrôle seulement les chemins, les empreintes, l'UTF-8 et la syntaxe JSON. Un remplacement conserve l'empreinte originale obligatoire ; `operation: "replace"` est facultatif et ne peut masquer un ajout.
+
+## Audit croisé et injection — priorité du 8 octobre 2026
+
+Claude et Codex travaillent en mode multi-agent, chacun sur un seul chapitre actif. Le cahier des charges de Claude est [CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md](CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md). Claude audite les sources proposées par Codex ; Codex audite celles proposées par Claude. Chaque audit indépendant porte sur le commit exact à injecter et les quatre onglets, leurs fenêtres, les sources, le glossaire et les contrôles. Corriger les réserves bloquantes et refaire l’audit concerné **avant injection**. Les contrôles et la reconstruction après injection confirment la version intégrée ; ils ne remplacent pas l’audit préalable. Une livraison historique est reprise suivant ces étapes sans effacer ses preuves.
 
 ## Publier et recevoir
 

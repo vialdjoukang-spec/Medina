@@ -1,0 +1,186 @@
+{
+ "cours": "I00 — Rhumatisme articulaire aigu, cardite rhumatismale et chorée de Sydenham",
+ "date": "2026-10-07",
+ "complements": {
+  "total": 119,
+  "accepter": 87,
+  "corriger": 30,
+  "rejeter": 2,
+  "par_fichier": {
+   "I00_a": {
+    "accepter": 11,
+    "corriger": 3
+   },
+   "I00_b": {
+    "accepter": 18,
+    "corriger": 7,
+    "rejeter": 1
+   },
+   "I00_c": {
+    "corriger": 4,
+    "accepter": 21
+   },
+   "I00_d": {
+    "accepter": 22,
+    "corriger": 8
+   },
+   "I00_pop4": {
+    "corriger": 1,
+    "accepter": 2
+   },
+   "I00_pop5": {
+    "accepter": 12,
+    "corriger": 6,
+    "rejeter": 1
+   },
+   "I00_pop6": {
+    "corriger": 1,
+    "accepter": 1
+   }
+  },
+  "corriges": [
+   "I00_a-2",
+   "I00_a-8",
+   "I00_a-14",
+   "I00_b-4",
+   "I00_b-7",
+   "I00_b-10",
+   "I00_b-11",
+   "I00_b-13",
+   "I00_b-20",
+   "I00_b-26",
+   "I00_c-1",
+   "I00_c-13",
+   "I00_c-18",
+   "I00_c-22",
+   "I00_d-2",
+   "I00_d-3",
+   "I00_d-4",
+   "I00_d-5",
+   "I00_d-7",
+   "I00_d-12",
+   "I00_d-14",
+   "I00_d-24",
+   "I00_pop4-1",
+   "I00_pop5-2",
+   "I00_pop5-6",
+   "I00_pop5-9",
+   "I00_pop5-10",
+   "I00_pop5-15",
+   "I00_pop5-19",
+   "I00_pop6-1"
+  ],
+  "rejetes": [
+   {
+    "id": "I00_b-17",
+    "motif": "Redite : la fenêtre i00-mnemo-duree, ouverte par le mot vert du paragraphe précédent, explique désormais les mêmes déterminants (complément P2, mieux chiffré). De plus, les seuils de 25 et 30 ans (Carapetis et al. 2016) diffèrent du seuil de 21 ans des recommandations australiennes 2025 ; les juxtaposer sans explication brouillerait le message."
+   },
+   {
+    "id": "I00_pop5-18",
+    "motif": "Redite : l’étude de Kamblock et al. est déjà détaillée dans le texte de l’îlot 10 (I00_b-13), qui ouvre cette fenêtre par le mot vert de l’îlot 10.3, et le principe figure déjà dans la fenêtre et dans l’encadré de l’îlot 10.3."
+   }
+  ]
+ },
+ "fenetres": {
+  "verdicts": {
+   "i00-bpg-vagal__P2": "corrigée",
+   "i00-carditeinfra__P1": "corrigée",
+   "i00-crp-vs__P2": "corrigée",
+   "i00-d-bpg__P2": "corrigée",
+   "i00-e-choree__P1": "corrigée",
+   "i00-e-souffle-ia__P1": "ok",
+   "i00-e-souffle-im__P1": "corrigée",
+   "i00-histoire__P1": "ok",
+   "i00-jones__P1": "ok",
+   "i00-mcisaac__P1": "corrigée",
+   "i00-mnemo-duree__P2": "corrigée",
+   "i00-pr__P1": "corrigée",
+   "i00-strepto__P1": "corrigée",
+   "i00-v-fc__P1": "corrigée",
+   "i00-v-fc__P2": "ok",
+   "i00-whf__P1": "corrigée"
+  },
+  "corrigees": [
+   "i00-bpg-vagal__P2",
+   "i00-carditeinfra__P1",
+   "i00-crp-vs__P2",
+   "i00-d-bpg__P2",
+   "i00-e-choree__P1",
+   "i00-e-souffle-im__P1",
+   "i00-mcisaac__P1",
+   "i00-mnemo-duree__P2",
+   "i00-pr__P1",
+   "i00-strepto__P1",
+   "i00-v-fc__P1",
+   "i00-whf__P1"
+  ],
+  "creees": [
+   "i00-crp-vs (I00_pop3)",
+   "i00-bpg-vagal (I00_pop5)"
+  ],
+  "fusions": [
+   {
+    "tag": "i00-v-fc__P2",
+    "fusionnee_dans": "i00-v-fc",
+    "motif": "même mécanisme que la complétion P1 ; seule l’ancre I00_c-a5 est gardée"
+   }
+  ],
+  "ancres_retirees": [
+   {
+    "id": "I00_a-a1",
+    "cle": "i00-jones",
+    "motif": "doublon du mot vert dans le même paragraphe"
+   },
+   {
+    "id": "I00_b-a2",
+    "cle": "i00-mcisaac",
+    "motif": "doublon du mot vert dans le même paragraphe"
+   }
+  ]
+ },
+ "arbitrages": {
+  "duree_anti_inflammatoires": "« Jusqu’à normalisation de la CRP » supprimé partout. I00_b-11 (P1) est étendu par old_reel à toute la phrase de l’îlot 9.2 et harmonisé avec P2 : durée guidée par les symptômes et la baisse de la CRP, sans seuil de CRP validé pour l’arrêt, souvent une à deux semaines, jusqu’à six (recommandations australiennes 2025, chapitre 7). Même formulation dans I00_d-4, I00_d-7, I00_pop5-9, I00_pop5-10, I00_pop6-1 ; aucune occurrence restante après simulation.",
+  "seuil_poids_pbg": "Formulation unique, identique dans I00_b-26, I00_d-12 et I00_pop5-2 : « 30 kg selon les recommandations néo-zélandaises, 27 kg selon l’OMS 2001 et l’AHA 2009, 20 kg selon les recommandations australiennes 2025 ». Vérifiée dans les recommandations australiennes 2025, chapitre 10 (OMS 2001 ≤ 27 kg ; Nouvelle-Zélande < 30 kg ; Australie < 20 kg). L’argument pharmacocinétique (600 000 UI insuffisantes chez la plupart des enfants de moins de 27 kg) figure une seule fois, dans i00-d-bpg. La justification de P1 par le volume de distribution est retirée, car contredite par ces données. Valeur de 30 kg des tableaux et des Pareto conservée.",
+  "polyarthralgie": "Correction de P1 (I00_a-10) exacte : en population à risque modéré ou élevé, la polyarthralgie est un critère majeur après exclusion des autres causes et la monoarthralgie un critère mineur (AHA 2015, note c ; recommandations australiennes 2025, tableau 6.3). Le tableau 1 de l’OMS 2024 reproduit à tort « monoarthrite » et 38,5 °C en colonne mineure ; le texte de la même OMS dit monoarthralgie et fièvre basse.",
+  "goal": "La mention de l’essai GOAL est retirée du quiz (I00_c-18) ; le nombre de sujets à traiter est retiré de la complétion i00-whf et reste dans i00-goal (I00_pop4-2) ; i00-whf garde les taux de régression spontanée (WHF 2023), absents ailleurs.",
+  "tubridy_clark": "L’audit refuse « Tubridy-Clark et al. » comme « Tubridy-Clark » ({'Tubridy-Clark': 1}). Le trait d’union insécable est supprimé ; la rubrique Source cite « Revue systématique de la cardite infraclinique, International Journal of Cardiology 2007;119:54-58 ». La référence complète reste dans out/i00-carditeinfra__P1.json."
+ },
+ "erreurs_de_fond": [
+  "I00_pop5-15 (P2) : « seule des deux utilisable chez la fille pubère sans contraception sûre » — faux et dangereux ; la carbamazépine est tératogène (5,5 %, EURAP) et rend la contraception hormonale inefficace. Corrigé.",
+  "I00_b-26 (P1) : justification de la demi-dose par le volume de distribution, contredite par les données pharmacocinétiques. Retirée.",
+  "I00_pop5-6 (P2) : résistance aux macrolides « surtout par efflux », généralisation d’une série islandaise. Corrigé (efflux ou méthylation ribosomique, qui touche aussi la clindamycine).",
+  "I00_d-3 (P2) : réaction croisée pénicilline-céphalosporine attribuée au noyau bêta-lactame (elle tient surtout aux chaînes latérales). Corrigé.",
+  "I00_pop4-1 (P2) : « un mal de gorge peut annoncer une récidive » (causalité inversée). Corrigé.",
+  "i00-carditeinfra (P1) : conclusion pronostique plus forte que la revue systématique, qui juge les données insuffisantes. Corrigé.",
+  "i00-crp-vs (P2) : mécanisme lupique de la CRP basse présenté comme établi (étude in vitro). Corrigé.",
+  "i00-v-fc (P1) : « indépendamment de l’âge » absent de l’étude citée. Retiré.",
+  "i00-mnemo-duree (P2) : récidives « rares » après 21 ans au lieu de « moins fréquentes ». Corrigé.",
+  "I00_c-1 (P2) : répétition de la sérologie seulement si le titre est « limite » ; les recommandations australiennes la demandent dès que le titre est sous la limite. Corrigé.",
+  "I00_b-13 (P1) : « 95 poussées » au lieu de 95 patients (Kamblock et al. 2003). Corrigé."
+ ],
+ "redites_supprimees": [
+  "I00_b-17 rejeté (redit i00-mnemo-duree)",
+  "I00_pop5-18 rejeté (redit I00_b-13 et l’encadré de l’îlot 10.3)",
+  "I00_b-10 recentré (redisait I00_b-2)",
+  "I00_a-14 (redisait l’encadré qui suit)",
+  "i00-carditeinfra et I00_c-14 (critères Doppler)",
+  "i00-bpg-vagal et i00-d-bpg (taux d’allergie)",
+  "i00-d-bpg et I00_pop5-2 (seuils de poids), rubrique Posologie (intervalle de 21 jours)",
+  "i00-e-souffle-im, i00-mcisaac, i00-whf (rubriques existantes)"
+ ],
+ "controles": {
+  "simulation_application": "117 compléments appliqués, 2 rejetés, 0 échec ; 18 ancres posées, 2 retirées, 0 échec ; 2 fenêtres créées, 13 complétions ; seule mention : i00-v-fc__P2 fusionnée (attendu). Simulation écrite hors dépôt.",
+  "verifier_sigles": "{} sur chaque out/*.html, sur les 30 textes new_final et sur le cours entier simulé",
+  "html": "templates et boutons équilibrés ; aucune fenêtre ne s’ouvre elle-même ; au plus un renvoi par fenêtre ; toutes les clés data-k existent",
+  "longueurs": "complétions 775 à 1 648 caractères ; créations 2 217 et 2 273 caractères"
+ },
+ "reserves": [
+  "AHA 2015 (Gewitz et al.), AHA 2009 (Gerber et al.) et IDSA 2012 non relus en texte intégral (refus 403 ou absence de texte PubMed Central). Le seuil de 27 kg de l’AHA 2009 et les affirmations IDSA sur fluoroquinolones et tétracyclines reposent sur le cours d’origine, les deux producteurs et des reproductions.",
+  "À arbitrer par Vial : le cours garde le seuil de 30 kg (néo-zélandais), le plus haut des trois ; les données pharmacocinétiques plaident pour un seuil plus bas. Changer la valeur toucherait aussi les Pareto, hors du périmètre des compléments.",
+  "I00_b-11 et I00_d-12 utilisent old_reel pour étendre le passage remplacé à la phrase entière ; les deux passages sont uniques et ne recouvrent aucune ancre.",
+  "Mentions « recommandations australiennes 2020 » restantes hors des passages édités (îlots 1.2, 7.3, 10.2, 13.4, onglet Examens) : à aligner sur l’édition 3.3 de 2025 lors d’une relecture.",
+  "Phrase « repère pour arrêter l’anti-inflammatoire » de l’onglet Examens (îlot Biologie inflammatoire) non éditée ; la fenêtre i00-crp-vs ancrée à la phrase précédente précise l’absence de seuil validé.",
+  "Redite signalée par P1 hors justification : carte « Arthrite réactionnelle post-streptococcique » de l’îlot 14 et fenêtre i00-psra.",
+  "WHF 2023 : classe 2A (figure 1) ou 2B (tableau 1) au stade A ; la fenêtre existante i00-whf garde 2A, les compléments ne citent plus de classe."
+ ]
+}

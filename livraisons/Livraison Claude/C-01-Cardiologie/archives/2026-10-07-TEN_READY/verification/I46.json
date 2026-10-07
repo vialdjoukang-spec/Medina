@@ -1,0 +1,334 @@
+{
+ "cours": "I46 — Arrêt cardiaque",
+ "date": "2026-10-07",
+ "role": "vérificateur indépendant (TACHE_VERIFICATION.md)",
+ "source_de_reference": "ERC 2025 en texte intégral (réanimation de base, réanimation avancée, circonstances particulières, épidémiologie, éthique, systèmes, premiers secours, pédiatrie) et ERC-ESICM 2025 soins post-réanimation (src/), figures contrôlées sur le PDF (algorithme universel de réanimation de base, algorithme de réanimation avancée, figure 2 post-réanimation, figure 3 cibles hémodynamiques, figure 2 hyperkaliémie) ; ESC 2022 arythmies ventriculaires ; publications originales contrôlées sur PubMed (Hasselqvist-Ax 2015, Marijon 2016, Valenzuela 2000, Paradis 1990, Weil 1986, Reinier 2023), sans transmission de donnée personnelle.",
+ "complements": {
+  "total_producteurs": 162,
+  "accepter": 125,
+  "corriger": 33,
+  "rejeter": 4,
+  "par_fichier": {
+   "I46_a": {
+    "accepter": 20,
+    "corriger": 8,
+    "rejeter": 1
+   },
+   "I46_b": {
+    "accepter": 29,
+    "corriger": 8,
+    "rejeter": 2
+   },
+   "I46_c": {
+    "accepter": 36,
+    "corriger": 6
+   },
+   "I46_d": {
+    "accepter": 11,
+    "corriger": 4
+   },
+   "I46_pop1": {
+    "accepter": 5
+   },
+   "I46_pop2": {
+    "accepter": 7
+   },
+   "I46_pop3": {
+    "accepter": 8,
+    "rejeter": 1
+   },
+   "I46_pop4": {
+    "corriger": 5,
+    "accepter": 5
+   },
+   "I46_pop5": {
+    "accepter": 4,
+    "corriger": 2
+   }
+  },
+  "ajouts_du_verificateur": [
+   {
+    "id": "I46_b-v1",
+    "fichier": "I46_b",
+    "objet": "Ajout du vérificateur. La figure 2 faisait constater la respiration anormale avant l’appel ; l’ERC 2025 fait appeler le 144 (haut-parleur) dès l’absence de réponse, puis évaluer la respiration pendant l’appel. Texte des deux premières cases réordonné, sans toucher au tracé SVG."
+   },
+   {
+    "id": "I46_b-v2",
+    "fichier": "I46_b",
+    "objet": "Ajout du vérificateur, suite de I46_b-v1 (deuxième case : respiration absente ou anormale, puis RCP)."
+   },
+   {
+    "id": "I46_pop4-v1",
+    "fichier": "I46_pop4",
+    "objet": "Ajout du vérificateur. « Survie possible de 50–70 % si choc dans les 3–5 min » (formule absente de l’ERC 2025, signalée par P2) contredisait I46_b-6 ; remplacé par la source primaire vérifiée sur PubMed."
+   },
+   {
+    "id": "I46_pop5-v1",
+    "fichier": "I46_pop5",
+    "objet": "Ajout du vérificateur. « Deux doses intramusculaires inefficaces » ne figure pas dans l’ERC 2025, qui propose la voie intraveineuse si les symptômes persistent ou en milieu monitoré, par du personnel entraîné (réserve de P2)."
+   }
+  ],
+  "corriges": [
+   {
+    "id": "I46_a-4",
+    "probleme": "« QRS larges et changeants » contredisait la colonne voisine (« réguliers ») ; formulation alignée sur l’ERC 2025, section Cardioversion (synchronisation difficile sur des complexes larges et de forme variable)."
+   },
+   {
+    "id": "I46_a-6",
+    "probleme": "Population précisée : l’ERC-ESICM 2025 attribue à la lésion anoxique environ deux tiers des décès des patients admis comateux en soins intensifs après un arrêt extrahospitalier, et non de tous les arrêts réanimés."
+   },
+   {
+    "id": "I46_a-8",
+    "probleme": "Chiffres vérifiés (ERC 2025 épidémiologie ; Hasselqvist-Ax et al. 2015, PubMed 26061835). « Surtout » remplacé par « notamment » : l’ERC attribue aussi les écarts aux populations, à l’organisation et au recueil. La cohorte suédoise ne comprend que des arrêts devant témoin, ce qui est précisé."
+   },
+   {
+    "id": "I46_a-10",
+    "probleme": "Chiffres vérifiés (ERC 2025 réanimation de base). La phrase sur la RCP qui ralentit l’épuisement redit la fenêtre i46-pronostic, dont l’ancre est dans la phrase précédente."
+   },
+   {
+    "id": "I46_a-12",
+    "probleme": "Correction d’une erreur du cours vérifiée (ERC 2025, CPR versus defibrillation). La consigne « choquer dès que le défibrillateur est prêt » figure déjà dans la rubrique Limite de i46-fvphases, ouverte dans le même paragraphe."
+   },
+   {
+    "id": "I46_a-14",
+    "probleme": "« Aucun choc n’est utile » redisait I46_a-3 (même onglet). L’ESC 2022 (section 6.1.1) ajoute qu’il est le plus souvent difficile d’établir la cause et son caractère réversible."
+   },
+   {
+    "id": "I46_a-15",
+    "probleme": "Raccourci : la fin (« jusqu’à l’AESP puis l’asystolie ») reprenait mot pour mot I46_a-2."
+   },
+   {
+    "id": "I46_a-18",
+    "probleme": "« Un ECG normal n’exclut pas une hyperkaliémie sévère » est ajouté par P2 dans i46-hyperk, ouverte dans la même ligne du tableau : redite supprimée."
+   },
+   {
+    "id": "I46_b-2",
+    "probleme": "Rapport de cotes vérifié (ERC 2025). Le « car » présentait comme établi le mécanisme d’une association observationnelle : formulé comme probable."
+   },
+   {
+    "id": "I46_b-15",
+    "probleme": "« La donner tôt en fait profiter plus de patients » surinterprétait l’analyse secondaire ; l’ERC 2025 écrit « suggesting potential benefit from early intervention »."
+   },
+   {
+    "id": "I46_b-18",
+    "probleme": "L’effet de l’hyperventilation sur la pression intrathoracique est déjà dans la rubrique Piège de i46-ventil, ouverte dans le même paragraphe, et dans l’encadré 3.3 : redite supprimée."
+   },
+   {
+    "id": "I46_b-19",
+    "probleme": "« Améliore la qualité de la RCP et le pronostic » présentait comme causal un effet observé dans des études d’observation, nul ou favorable selon les études (ERC 2025, Debriefing)."
+   },
+   {
+    "id": "I46_b-21",
+    "probleme": "La justification de l’épuration (« seul moyen de retirer le potassium ») est donnée par P2 dans i46-hyperk, ouverte par le mot vert de la même puce : redite supprimée. Rapport gluconate/chlorure vérifié (ERC 2025, figure 2 : 6,8 mmol dans 30 mL de gluconate ou 10 mL de chlorure)."
+   },
+   {
+    "id": "I46_b-29",
+    "probleme": "La parenthèse « algorithme de réanimation avancée de l’ERC 2025 » est inexacte par omission : la cible PAS > 100 mmHg figure aussi dans l’algorithme post-réanimation de l’ERC-ESICM 2025 (figure 2, vérifiée sur le PDF), conforme à l’en-tête de colonne. Parenthèse retirée."
+   },
+   {
+    "id": "I46_b-33",
+    "probleme": "« Le réchauffement n’apporte aucun bénéfice » affirmait un résultat jamais testé ; la consigne est un énoncé de bonne pratique déduit de l’équivalence des cibles (ERC-ESICM 2025)."
+   },
+   {
+    "id": "I46_b-36",
+    "probleme": "L’explication de l’inclinaison (30°, compressions moins efficaces) est donnée dans i46-grossesse, ouverte depuis la même carte ; elle y est conservée, corrigée (l’IRM montre qu’environ 30° ne soulagent qu’en partie la veine cave)."
+   },
+   {
+    "id": "I46_c-6",
+    "probleme": "« L’ERC 2025 n’interrompt donc pas les compressions sur ce seul signe » attribuait à l’ERC une consigne qu’il n’énonce pas ; reformulé comme conséquence."
+   },
+   {
+    "id": "I46_c-7",
+    "probleme": "Les survivants sous 10 mmHg sont mentionnés dans le complément de i46-capno (I46_pop3-3), fenêtre ouverte dans le même îlot : redite supprimée. Prophétie autoréalisatrice vérifiée (ERC 2025)."
+   },
+   {
+    "id": "I46_c-8",
+    "probleme": "Vérifié sur PubMed (Weil et al. 1986, PMID 3088448). « Patients réanimés » était ambigu : les mesures ont été faites pendant la RCP. Doublon avec I46_pop3-4 (même mécanisme et mêmes chiffres dans i46-gds, ouverte par ce paragraphe) : ce complément est gardé, I46_pop3-4 rejeté."
+   },
+   {
+    "id": "I46_c-21",
+    "probleme": "« Ce que l’ERC 2025 interdit » était trop fort : l’ERC demande de réduire au minimum les interruptions. Recoupement avec i46-echo-arret : la fenêtre décrit la technique sans en donner la raison ; seule la raison est gardée ici."
+   },
+   {
+    "id": "I46_c-24",
+    "probleme": "« D’où le délai » reliait la spécificité de 100 % à 96 heures à un délai de 72 heures ; « sous sédation » n’est pas dans la source. Vérifié : ERC-ESICM 2025 (100 % de spécificité après 96 h, sensibilité 20 à 25 %)."
+   },
+   {
+    "id": "I46_c-34",
+    "probleme": "« Dans l’asystolie ou l’AESP, il n’y a rien à interrompre » était faux pour l’AESP, dont l’activité électrique est organisée."
+   },
+   {
+    "id": "I46_d-2",
+    "probleme": "Vérifié sur la figure 2 de l’ERC 2025 (circonstances particulières) : le chlorure en 5 minutes est réservé à l’arrêt et au péri-arrêt ; précisé."
+   },
+   {
+    "id": "I46_d-6",
+    "probleme": "Dose et durée vérifiées (ERC 2025). La raison de la dose réduite (arythmie et acidose dans les modèles animaux) est donnée dans i46-d-lipid, ouverte par le mot vert de la même ligne : redite supprimée."
+   },
+   {
+    "id": "I46_d-7",
+    "probleme": "Correction de fond juste (ERC 2025). « ECMO imminente » harmonisé en « RCP extracorporelle imminente », formulation de l’ERC (« imminent initiation of ECPR ») et des autres passages du cours."
+   },
+   {
+    "id": "I46_d-14",
+    "probleme": "L’ERC 2025 précise qu’il est impossible de savoir si la nocivité tient au volume, au débit ou à la température des liquides : nuance ajoutée."
+   },
+   {
+    "id": "I46_pop4-1",
+    "probleme": "Harmonisation de l’arbitrage hypothermie (« RCP extracorporelle imminente », dose de 1 mg explicite)."
+   },
+   {
+    "id": "I46_pop4-2",
+    "probleme": "« Son bénéfice disparaît quand une lésion cérébrale anoxique est probable » surinterprétait la source (« may be diminished ») ; remplacé par le résultat de la méta-analyse citée par l’ERC-ESICM 2025."
+   },
+   {
+    "id": "I46_pop4-3",
+    "probleme": "« Arrêts réanimés » était ambigu (réanimés avec succès) ; l’ERC parle d’arrêts traités par les services de secours. Chiffres vérifiés."
+   },
+   {
+    "id": "I46_pop4-4",
+    "probleme": "Arbitrage demandé : « −7 à 10 % » est absent de l’ERC 2025 et contredisait la correction de P1 (I46_a-10) ; chiffres de l’ERC 2025 réanimation de base."
+   },
+   {
+    "id": "I46_pop4-7",
+    "probleme": "Harmonisation de l’arbitrage hypothermie ; « 3 chocs maximum » précisé selon l’ERC 2025 (chocs suivants différés jusqu’à plus de 30 °C)."
+   },
+   {
+    "id": "I46_pop5-2",
+    "probleme": "Harmonisation de l’arbitrage hypothermie (« RCP extracorporelle imminente »)."
+   },
+   {
+    "id": "I46_pop5-6",
+    "probleme": "« Repris pour tous les âges » semblait contredire la rubrique Limites de la même fenêtre (règles non applicables à l’enfant) ; la distinction entre le critère des 20 minutes et les règles d’arrêt est explicitée (ERC 2025 éthique)."
+   }
+  ],
+  "rejetes": [
+   {
+    "id": "I46_a-22",
+    "probleme": "Redit la rubrique Mécanisme existante de i46-pnothx (air piégé, pression intrathoracique, retour veineux, aggravation par la ventilation en pression positive), fenêtre ouverte dans la même ligne du tableau."
+   },
+   {
+    "id": "I46_b-22",
+    "probleme": "Redit la rubrique « Pourquoi poursuivre 60 à 90 minutes » ajoutée par P2 à i46-d-lyse, fenêtre ouverte par le mot vert de la même puce."
+   },
+   {
+    "id": "I46_b-30",
+    "probleme": "Redit la rubrique « Pourquoi prévenir la fièvre » ajoutée par P2 à i46-temp, fenêtre ouverte dans la même cellule."
+   },
+   {
+    "id": "I46_pop3-4",
+    "probleme": "Doublon exact de I46_c-8 (même mécanisme, mêmes chiffres de Weil et al.) ; i46-gds est ouverte depuis le paragraphe qui porte désormais cette justification."
+   }
+  ]
+ },
+ "fenetres": {
+  "verdicts": {
+   "i46-anaph__P2": "ok",
+   "i46-atcd-medic__P1": "ok",
+   "i46-coro__P2": "ok",
+   "i46-d-adre__P2": "corrigée",
+   "i46-d-antiep__P2": "corrigée",
+   "i46-d-bicar__P2": "ok",
+   "i46-d-lipid__P2": "ok",
+   "i46-d-lyse__P2": "ok",
+   "i46-d-nalox__P2": "ok",
+   "i46-d-vaso__P2": "ok",
+   "i46-enfant__P2": "ok",
+   "i46-ep__P2": "ok",
+   "i46-grossesse__P2": "corrigée",
+   "i46-hyperk__P2": "corrigée",
+   "i46-hypoth__P2": "corrigée",
+   "i46-inexpl__P2": "corrigée",
+   "i46-intox__P2": "ok",
+   "i46-neuro__P2": "ok",
+   "i46-pnothx__P2": "ok",
+   "i46-ppc__P1": "ok",
+   "i46-pronostic__P1": "corrigée",
+   "i46-s-temoin__P1": "ok",
+   "i46-temp__P2": "ok"
+  },
+  "corrigees": [
+   "i46-d-adre__P2",
+   "i46-d-antiep__P2",
+   "i46-grossesse__P2",
+   "i46-hyperk__P2",
+   "i46-hypoth__P2",
+   "i46-inexpl__P2",
+   "i46-pronostic__P1"
+  ],
+  "creees_conservees": [
+   "i46-pronostic (P1, I46_pop1)"
+  ],
+  "fusionnees": [],
+  "ancres_retirees": [
+   "I46_c-a2 (i46-hyperk) : voisine de I46_c-a1 dans le même tableau"
+  ],
+  "ancres_conservees": 8
+ },
+ "arbitrages_demandes": {
+  "pareto_epidemiologie": "pareto-i46-def harmonisé avec P1 : « ≈ 55 arrêts traités par les secours/100 000/an ; survie ≈ 7,5 % (3,1–35 %, EuReCa 2022) » (I46_pop4-3 corrigé) et « Chaque minute de retard au choc d’une FV : échec du choc +6 %, survie à la sortie −3 à 6 % (ERC 2025) » (I46_pop4-4 corrigé ; « −7 à 10 % » supprimé). Même logique pour pareto-i46-bls : « survie possible de 50–70 % » remplacé par Valenzuela et al. (74 % contre 49 %, ajout I46_pop4-v1), cohérent avec I46_b-6.",
+  "hypothermie_sous_30C": "Formulation commune : une seule dose d’adrénaline de 1 mg sous 30 °C, sauf RCP extracorporelle imminente (ERC 2025 : « Give IV 1 mg adrenaline once … unless planning imminent initiation of ECPR ») ; chocs différés au-delà de trois jusqu’à plus de 30 °C ; intervalle de 6 à 10 minutes entre 30 et 35 °C. Appliquée dans I46_b-38 (référence, accepté), I46_d-7 (corrigé : « ECMO » → « RCP extracorporelle »), i46-d-adre (I46_pop4-1 corrigé), i46-hypoth (I46_pop5-2 corrigé), pareto-i46-part (I46_pop4-7 corrigé) ; I46_a-19 cohérent.",
+  "recoupements_I46_c_fenetres": "Prélèvement veineux : I46_c-8 (texte) gardé et précisé (mesures pendant la RCP) ; I46_pop3-4, doublon exact dans i46-gds ouverte par le même paragraphe, rejeté. Échographie sous-xiphoïdienne : I46_c-21 gardé, réduit à la raison du geste (la fenêtre i46-echo-arret décrit la technique) et « interdit » corrigé. « 6 à 7 % par °C » : gardé dans i46-ischcereb ; i46-hypoth y renvoie par un mot vert (« demande en oxygène des organes »). Le chiffre est vérifié dans l’ERC 2025 (circonstances particulières), ce qui lève la réserve de P1. Ancres i46-hyperk : I46_c-a1 et I46_c-a2 sont voisines (deux lignes du même tableau) ; I46_c-a2 est retirée ; I46_c-a1 et I46_d-a3 (onglet Pharmacologie) sont gardées.",
+  "figure_2_I46_b": "Corrigée par deux compléments du vérificateur (I46_b-v1, I46_b-v2) qui ne changent que le texte des deux premières cases du SVG : « Ne répond pas : 144 / (haut-parleur), DAE » puis « Respiration absente / ou anormale », conformément à l’algorithme universel de l’ERC 2025 (figure 3 : vérifier la réponse, appeler, ouvrir les voies aériennes et évaluer la respiration, puis RCP). Tracé, flèches et légende inchangés ; largeur des libellés contrôlée (19 caractères au plus par ligne)."
+ },
+ "erreurs_de_fond": [
+  "I46_b-29 (P1) : la cible PAS > 100 mmHg était attribuée au seul algorithme de réanimation avancée ; elle figure aussi dans la figure 2 de l’ERC-ESICM 2025 (contrôlée sur le PDF). La parenthèse est retirée ; l’affirmation du bilan de P1 (« non de l’ERC-ESICM ») est inexacte.",
+  "I46_pop4-4 (P2) : conservait « −7 à 10 % par minute », absent de l’ERC 2025 et contraire à la correction de P1.",
+  "I46_c-34 (P2) : « dans l’AESP, il n’y a rien à interrompre » est faux ; l’activité électrique de l’AESP est organisée.",
+  "I46_pop4-2 (P2) : « son bénéfice disparaît quand une lésion cérébrale anoxique est probable » surinterprétait l’ERC-ESICM 2025 (« may be diminished »).",
+  "i46-hyperk (P2) : 45 minutes est la durée moyenne de dialyse jusqu’au RACS dans la revue de cas, non le délai de baisse de la kaliémie.",
+  "I46_c-24 (P2) : la spécificité de 100 % du réflexe photomoteur est atteinte à 96 heures, non à 72 heures (« d’où le délai »).",
+  "I46_d-14 (P2) : la nocivité des liquides glacés en grand volume ne peut être attribuée au volume plutôt qu’au froid (ERC 2025).",
+  "I46_a-8 (P1) : la cohorte de Hasselqvist-Ax et al. ne comprend que des arrêts devant témoin ; « ces écarts tiennent surtout aux premiers maillons » n’est pas dans l’ERC, qui cite aussi population, organisation et recueil.",
+  "I46_a-6 (P1) : « première cause de décès hospitalier après un arrêt réanimé » ; l’ERC-ESICM 2025 donne environ deux tiers des décès des patients admis comateux en soins intensifs.",
+  "I46_b-19 (P1) et i46-pronostic (P1) : associations observationnelles présentées comme causales (« améliore », « effet causal très probable »).",
+  "I46_b-15 (P1) : « la donner tôt en fait profiter plus de patients » surinterprétait l’analyse secondaire de PARAMEDIC2.",
+  "Erreurs du cours corrigées par le vérificateur : figure 2 (respiration avant l’appel) ; pareto-i46-bls (« survie possible de 50–70 % ») ; i46-anaph (« deux doses intramusculaires inefficaces conduisent à une perfusion intraveineuse », absent de l’ERC 2025)."
+ ],
+ "doublons_et_redites": [
+  "Aucune fenêtre créée en double : P1 a créé i46-pronostic, P2 n’a créé aucune fenêtre ; aucune clé complétée par les deux producteurs.",
+  "I46_c-8 (P2) et I46_pop3-4 (P1) : même mécanisme et mêmes chiffres de Weil et al. ; I46_pop3-4 rejeté.",
+  "I46_c-7 (P2) et I46_pop3-3 (P1) : survivants sous 10 mmHg ; gardé dans i46-capno, retiré de I46_c-7.",
+  "I46_b-22 (P1) et i46-d-lyse (P2) : délai de 60 à 90 minutes ; I46_b-22 rejeté (même puce que le mot vert).",
+  "I46_b-30 (P1) et i46-temp (P2) : fièvre et métabolisme cérébral ; I46_b-30 rejeté (même cellule que le mot vert).",
+  "I46_b-36 (P1) et i46-grossesse (P2) : compression aortocave et inclinaison de 30° ; la conséquence reste dans la carte, l’inclinaison dans la fenêtre.",
+  "I46_b-21 et I46_a-18 (P1) et i46-hyperk (P2) : épuration seule à retirer le potassium, ECG normal ; retirés des compléments du texte.",
+  "I46_d-6 (P2) et i46-d-lipid (P2) : raison de l’adrénaline à 1 µg/kg ; gardée dans la fenêtre.",
+  "I46_a-22 (P1) et la rubrique Mécanisme existante de i46-pnothx : I46_a-22 rejeté.",
+  "I46_a-10 (P1) et i46-pronostic (P1) : ralentissement de l’épuisement de la FV par la RCP ; gardé dans la fenêtre.",
+  "I46_a-12 (P1) et la rubrique Limite de i46-fvphases : consigne ERC retirée du complément, correction factuelle gardée.",
+  "I46_b-18 (P1) et la rubrique Piège de i46-ventil : effet de l’hyperventilation retiré du complément.",
+  "I46_a-14 et I46_a-15 (P1) : redites avec I46_a-3 et I46_a-2 supprimées.",
+  "i46-d-adre (P2) : redites avec la rubrique Preuves existante supprimées.",
+  "Recoupements laissés volontairement entre onglets lus séparément : hyperoxie (I46_b-27, I46_c-11, I46_c-36), PaCO₂ (I46_b-28, I46_c-10), bicarbonate (I46_c-9, I46_c-37, i46-d-bicar), hausse de l’EtCO₂ au RACS (I46_b-20, I46_c-6), 80 % de lésions coronaires (I46_c-28, i46-coro), dysfonction myocardique de 60 % (I46_c-23, i46-d-vaso)."
+ ],
+ "reserves": [
+  "Les quatre compléments du vérificateur (I46_b-v1, I46_b-v2, I46_pop4-v1, I46_pop5-v1) sont inscrits dans edits/ avec le champ « auteur » : « vérificateur », seul moyen de les faire appliquer par appliquer_justifications.py ; les compléments des producteurs sont inchangés.",
+  "La figure 2 n’est corrigée que dans son texte ; si l’on souhaite une case distincte pour l’appel, le SVG devra être redessiné dans la source canonique.",
+  "« Hasselqvist‑Ax » garde le trait d’union insécable de P1 dans la rubrique Source de i46-pronostic : avec un trait d’union normal, l’audit des sigles refuse « Ax ».",
+  "Non vérifiés dans les sources téléchargées et laissés tels quels : relais du compresseur toutes les 2 minutes (I46_b, pareto-i46-bls) ; « 25–33 % du débit » (pareto-i46-physio, i46-noflow) ; arrêt intrahospitalier « choquable dans moins d’un cas sur cinq » ; valeurs de lactate de 5 à 15 mmol/L ; impédance de 70 à 80 ohms ; sonde au-delà de 23 cm ; ECG répété à 8 minutes.",
+  "L’ERC-ESICM 2025 donne 36 à 72 heures de prévention de la fièvre dans ses recommandations, mais « at least 72 h » dans sa figure 2 ; le cours suit le texte des recommandations.",
+  "L’ERC 2025 se contredit sur l’amiodarone après trois chocs successifs sous monitorage (« after the third shock if VF persists » et « stacked shocks as the first shock … for adrenaline and amiodarone dosing ») ; le cours suit la seconde formulation, reprise dans la section Vasopressors.",
+  "Hystérotomie de réanimation : en préhospitalier, l’ERC 2025 la réserve à une équipe entraînée ayant accès à la patiente et privilégie sinon le transport ; le cours (« sur place, sans transfert ») n’a pas été modifié.",
+  "Réserves des producteurs maintenues : ESC 2023 sur les syndromes coronariens aigus et ERC 2010 non relus en texte intégral ; antidotes (Hampson, Borron) et liste ASRA vérifiés par leur résumé ; contenu en calcium tiré du résumé des caractéristiques britannique ; « i-gel » est un nom de marque cité par l’ERC 2025 ; blocs « Interprétation guidée » des Sciences encore généraux.",
+  "Relecture limitée aux compléments, fenêtres et ancres des producteurs et aux points d’arbitrage : le reste du cours n’est pas certifié par cette vérification."
+ ],
+ "controles": {
+  "old_uniques_sans_chevauchement": "166 compléments (162 des producteurs et 4 du vérificateur) : old unique, aucun chevauchement entre compléments ni avec les 8 ancres conservées.",
+  "balises": "toutes les balises de old conservées dans le texte final ; aucun bouton dans les compléments.",
+  "verifier_sigles": "{} sur les 23 fichiers out/*.html corrigés, sur le texte final des 162 compléments appliqués et sur les neuf fichiers du cours après application simulée.",
+  "simulation_application": {
+   "textes_appliques": 162,
+   "textes_rejetes": 4,
+   "textes_echecs": 0,
+   "ancres": 8,
+   "ancres_retirees": 1,
+   "ancres_echecs": 0,
+   "fenetres_creees": 1,
+   "fenetres_completees": 22,
+   "fenetres_echecs": 0,
+   "note": "copie d’appliquer_justifications.py redirigée vers le dossier temporaire de la session ; aucune écriture dans sources/ ni dans chapters/"
+  },
+  "equilibre_html": "identique avant et après application simulée pour les neuf fichiers (I46_a et I46_b, I46_d gardent leurs déséquilibres d’origine, propres au découpage des onglets)."
+ }
+}
