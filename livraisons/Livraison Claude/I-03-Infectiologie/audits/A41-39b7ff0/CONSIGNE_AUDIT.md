@@ -1,0 +1,11 @@
+# Audit croisé de A41 — Sepsis et choc septique de l'adulte (I-03-Infectiologie), commit 39b7ff0cc585c59ffbb99fb448940daa1950b34d
+
+Lire les fichiers **uniquement au commit figé** : `git show 39b7ff0cc585c59ffbb99fb448940daa1950b34d:chapters/A41/<fichier>` (et `glossary/a41.py`, `chapters/A41/A41_justifications.json`). Ne jamais lire la version de travail de `chapters/A41/`, ni modifier un fichier du dépôt hors de ce dossier d'audit.
+
+Lire aussi : la demande et le rapport de Codex (`livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/`), le cahier des charges § 6 (`docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md`), `docs/STYLE_REDACTION.md`.
+
+Points d'audit exigés pour A41 (cahier § 6) : définitions et limites diagnostiques (Sepsis-3, qSOFA, SOFA, choc septique), recherche du foyer et diagnostics différentiels, prélèvements (hémocultures, lactate), traitement anti-infectieux (délai, choix, désescalade, réévaluation, durée), contrôle du foyer, réanimation (remplissage, vasopresseurs, objectifs de pression, corticoïdes), surveillance, populations particulières, justifications physiopathologiques. Vérifier chaque seuil, dose, unité et délai dans les recommandations effectivement consultées : Surviving Sepsis Campaign 2021 (Evans et al., Crit Care Med / Intensive Care Med 2021), Sepsis-3 (Singer et al., JAMA 2016), recommandations suisses si accessibles (Société suisse d'infectiologie, Swissnoso, SSMI), informations professionnelles suisses (swissmedicinfo.ch) pour les doses, PubMed pour les essais.
+
+Chaque observation : fichier, repère (id d'îlot ou clé de fenêtre et citation courte), gravité (bloquante = erreur médicale ou réserve majeure ; majeure ; mineure ; rédactionnelle), raison, source consultée (référence précise, section ou tableau, date de consultation, accès au texte intégral ou au résumé), correction attendue. Une affirmation non vérifiée reste une réserve, jamais un « conforme ».
+
+Confidentialité : aucune donnée personnelle du propriétaire vers un service externe (pas d'Unpaywall, aucun formulaire). Aucun texte de recommandation téléchargé versionné (dossier `src/` local ignoré si besoin, hors dépôt de préférence dans le scratchpad).

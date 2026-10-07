@@ -2,41 +2,39 @@
  "agent": "Claude",
  "branche": "claude/loving-shannon-spwrhc",
  "mis_a_jour": "2026-10-08",
- "lots": [
-  {
-   "lot": "ESC2026_COMPARAISONS",
-   "chapitres": [
-    "I30",
-    "I33",
-    "I34",
-    "I35",
-    "I40",
-    "I42",
-    "I44",
-    "Q21"
-   ],
-   "fragment": "C-01-Cardiologie",
-   "dossier": "livraisons/Livraison Claude/C-01-Cardiologie",
-   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08-ESC2026_COMPARAISONS/rapport.md",
-   "commit": "020e65b721415481298d0cf295ba0ed8966875ea",
-   "etat": "pret_audit"
-  },
-  {
-   "lot": "I83",
-   "chapitres": [
-    "I83"
-   ],
-   "titre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
-   "etat": "en_production"
-  },
+ "remise_courante": {
+  "lot": "2026-10-08-I83",
+  "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "voie": "branche (création de cours, hors apply-claude)",
+  "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+  "fichiers": [
+   "chapters/I83/",
+   "glossary/i83.py",
+   "glossary/fragments_medina.py",
+   "chapters.json (entrée I83)"
+  ],
+  "commit": "VOIR_COMMIT",
+  "etat": "pret_audit"
+ },
+ "en_attente": [
   {
    "lot": "I89",
-   "chapitres": [
-    "I89"
-   ],
-   "titre": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
-   "etat": "en_production"
+   "chapitre": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+   "etat": "verifie_non_remis",
+   "note": "remis après clôture de I83"
+  },
+  {
+   "lot": "2026-10-08-ESC2026_HUIT_COURS_AUDITE",
+   "etat": "retire",
+   "note": "Audit Codex MED-01 à MED-03 reçu ; levée des réserves en cours ; nouvelle remise un chapitre à la fois, base canonique actuelle, avec preuves de tableaux (PREUVES.md)."
   }
  ],
- "audits_de_codex": []
+ "audits_de_codex": [
+  {
+   "chapitre": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+   "sha_audite": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+   "dossier": "livraisons/Livraison Claude/I-03-Infectiologie/audits/A41-39b7ff0/",
+   "etat": "en_cours"
+  }
+ ]
 }
