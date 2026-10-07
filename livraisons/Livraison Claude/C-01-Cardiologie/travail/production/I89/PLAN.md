@@ -114,7 +114,11 @@ Total visé : texte principal ≈ 10 000 mots, fenêtres ≈ 8 000 mots. Ce sont
 | PREVENT, MILES, ALERT (noms d’essais ou de programmes) | « essai randomisé international de Ridner et al. (2022) », « essai de McCormack et al. (2011) », « série australienne de 2024 » | Clés absentes ; non nécessaires. |
 | DXA, MRL, NIRF, LAS, PSM, LYMQOL, ICF | écrire en toutes lettres | Absents. |
 
-Sigles disponibles (dépôt ou `glossary_i89.py`) : ISL, AWMF, S2k, ESC, ESVS, OMS, OFSP, LAMal, OPAS, LiMA, IMC, IRM, TDM, TEP-TDM, FDG, SPECT, CRP, LDH, NT-proBNP, BNP, TSH, DFG, IgG, ADN, CD4, Th2, IL-4, IL-13, TGF-β, mTOR, CYP3A4, AINS, VIH, AMAROS, PAL, LYMPHA, ICG, BIS, L-Dex, VEGF, VEGF-C, VEGF-D, VEGFR-3, FLT4, FOXC2, CCBE1, FAT4, GJC2, PIEZO1, GATA2, SOX18, PROX1, LYVE-1, PIK3CA, RASA1, TSC1, TSC2, CD31, PECAM-1, ERG, MYC, D2-40, CEAP, CLOVES, Stewart-Treves, Klippel-Trénaunay, Q82.0, E88.2, E88.20, E88.21, E88.22, J94.0, L03.1, L98.4, B74.0, R59.0, R59.9 ; tous les codes « I » décimaux (I89.00, I97.20…) et les codes sans décimale (L03, A46, B74, I88) sont acceptés par le moteur.
+Sigles disponibles (dépôt, `glossary_i89.py` ou `../I83/glossary_i83.py`) : ISL, AWMF, S2k, ESC, ESVS, OMS, OFSP, LAMal, OPAS, LiMA, IMC, IRM, TDM, TEP-TDM, FDG, SPECT, CRP, LDH, NT-proBNP, BNP, TSH, DFG, IgG, ADN, CD4, Th2, IL-4, IL-13, TGF-β, mTOR, CYP3A4, AINS, VIH, AMAROS, PAL, LYMPHA, ICG, BIS, L-Dex, VEGF, VEGF-C, VEGF-D, VEGFR-3, FLT4, FOXC2, CCBE1, FAT4, GJC2, PIEZO1, GATA2, SOX18, PROX1, LYVE-1, PIK3CA, RASA1, TSC1, TSC2, CD31, PECAM-1, ERG, MYC, D2-40, CEAP, CLOVES, Stewart-Treves, Klippel-Trénaunay, Q82.0, E88.2, E88.20, E88.21, E88.22, J94.0, L03.1, L98.4, B74.0, R59.0, R59.9 ; tous les codes « I » décimaux (I89.00, I97.20…) et les codes sans décimale (L03, A46, B74, I88) sont acceptés par le moteur.
+
+**Clés partagées avec I83.** LAMal, OPAS, LiMA, CEAP, FOXC2 et Klippel-Trénaunay sont définies une seule fois dans `../I83/glossary_i83.py` (production parallèle) ; elles ne figurent pas dans `glossary_i89.py`. Le contrôle des sigles de I89 charge donc les deux fichiers (section 11). À l’intégration, l’orchestrateur rend ces six définitions neutres (sans renvoi à une fenêtre propre à un cours).
+
+**Classes CEAP.** Les clés C1 à C9 existent déjà (fractions du complément). Une classe clinique s’écrit donc avec le gluon de mots, comme dans I83 : `C&#8288;3`, `C&#8288;4a`, `C&#8288;6`. Mieux : dans I89, nommer la classe en clair (« œdème d’origine veineuse », « ulcère actif ») et renvoyer au cours I83.
 
 Tout sigle nouveau d’un rédacteur va dans `glossary_i89_<a|b|c|d>.py` (format de `glossary_i89.py`) et doit être vérifié : la clé ne doit pas exister ailleurs avec un autre sens.
 
@@ -480,7 +484,7 @@ Chaque clé ci-dessus doit exister exactement une fois. Les mots verts d’un r�
 ```bash
 cd /home/user/Medina
 D="livraisons/Livraison Claude/C-01-Cardiologie/travail/production/I89"
-MEDINA_GLOSSAIRE_EXTRA="$PWD/$D/glossary_i89.py:$PWD/$D/glossary_i89_a.py" \
+MEDINA_GLOSSAIRE_EXTRA="$PWD/$D/../I83/glossary_i83.py:$PWD/$D/glossary_i89.py:$PWD/$D/glossary_i89_a.py" \
   python3 "livraisons/Livraison Claude/C-01-Cardiologie/travail/justification/verifier_sigles.py" I89 "$D/brouillon/I89_a.html" "$D/brouillon/I89_pop1.html"
 ```
 Le résultat doit être `{}` (adapter la lettre de l’onglet ; ne lister dans la variable que les glossaires qui existent).
