@@ -1,0 +1,55 @@
+{
+ "producteur": "P2",
+ "cours": "I44 — Troubles de la conduction et bradycardies",
+ "fichiers": [
+  "I44_c",
+  "I44_d",
+  "I44_pop4",
+  "I44_pop5",
+  "I44_pop6"
+ ],
+ "affirmations_relevees": 96,
+ "detail_releve": {
+  "complements_texte": 76,
+  "couvertes_par_fenetres": 20
+ },
+ "complements": {
+  "total": 76,
+  "I44_c": 42,
+  "I44_d": 12,
+  "I44_pop4": 13,
+  "I44_pop5": 4,
+  "I44_pop6": 5
+ },
+ "fenetres_creees": [
+  "i44-bilan-bio (I44_pop5, 2 ancres)",
+  "i44-digitox (I44_pop5, 4 ancres)",
+  "i44-d-insuline (I44_pop5, 2 ancres)",
+  "i44-fa-infra (I44_pop4, 1 ancre)"
+ ],
+ "fenetres_completees": [
+  "i44-d-theo (1 ancre nouvelle)",
+  "i44-d-fab (sans ancre nouvelle)"
+ ],
+ "ancres": 9,
+ "erreurs_du_cours": [
+  "I44_c, Sciences, encadré électrophysiologie → pharmacologie : « l’atropine et l’isoprénaline n’ont presque aucun effet sur le His-Purkinje… elles échouent dans les blocs infranodaux » contredit l’onglet Pharmacologie et la fenêtre i44-d-iso ; l’isoprénaline accélère l’échappement ventriculaire. Corrigé (complément) ; Pareto Sciences aligné.",
+  "I44_c, quiz cas 5 : « le mode DDD est de classe I dans la dysfonction sinusale ». L’ESC 2021 fait du DDD(R) le premier choix (figure 5) ; la classe I porte sur la réduction de la stimulation ventriculaire inutile. Corrigé ; Pareto Stimulation clarifié.",
+  "I44_c, Histologie, encadré : « justifie d’attendre la guérison dans les causes inflammatoires » ; exception de la sarcoïdose, où l’ESC 2021 propose un dispositif capable de stimuler même si le BAV est transitoire (IIa). Corrigé.",
+  "I44_c, Examens 3.2, note : les critères d’incompétence chronotrope « ne sont pas définis par une recommandation ESC » ; l’ESC 2021 cite l’index < 0,8 (80 % de la réserve) comme définition la plus employée. Corrigé. La même affirmation subsiste dans la fenêtre i44-chrono (I44_pop1, fichier de P1).",
+  "I44_c, tableau 2.1 : pause > 6 s asymptomatique présentée comme critère de stimulation de la syncope réflexe sans son contexte (> 40 ans, syncopes sévères récidivantes imprévisibles, classe I). Précisé.",
+  "I44_c, tableau 4.1 : cupules du segment ST classées parmi les signes d’intoxication digitalique ; elles traduisent l’imprégnation. Corrigé.",
+  "I44_pop6, Pareto Définitions : « bloc de branche gauche presque toujours lié à une cardiopathie », formulation excessive par rapport à l’onglet Pathologie (« beaucoup plus souvent ») et à l’ESC 2021. Corrigé dans le Pareto ; le tableau ECG de I44_a (« Presque toujours pathologique ») reste à harmoniser par P1."
+ ],
+ "reserves": [
+  "Le fichier src/esc2021.txt a été remplacé en cours de travail par la version manuscrit accepté déposée par P1 ; le texte publié (PMC13179788, Europace 2022) est conservé dans src/esc2021_pmc_publie.txt. Les numéros de section cités renvoient à la version publiée.",
+  "Incohérence interne de l’ESC 2021 : après une exploration électrophysiologique négative, un BAV est documenté par moniteur implantable chez « environ un tiers » (section 4.5) ou « environ 50 % » (section 5.3.1.2). Le complément P2 donne la fourchette ; la fenêtre i44-eep de P1 retient la moitié.",
+  "Série de Scheinman (1982) : l’ESC 2021 la résume par 4 %, 12 % et 24 % à 4 ans ; l’article original rapporte 2 à 4 % sous 70 ms, 12 % pour HV ≥ 70 ms et 4 sur 17 pour HV ≥ 100 ms, sur un suivi moyen proche de 3 ans. Le complément P2 cite l’original ; la fenêtre i44-eep de P1 cite la version ESC. À harmoniser par le vérificateur.",
+  "Le texte ERC 2025 n’est pas accessible (refus d’accès de l’éditeur) : aucune dose d’urgence de l’onglet Pharmacologie n’a été modifiée ni revérifiée.",
+  "Recouvrement partiel entre la fenêtre i44-d-insuline (P2, création) et le complément de i44-tox (P1), qui explique brièvement l’insuline à haute dose. À dédoublonner par le vérificateur.",
+  "La revue de Smith (1988) sur la compétition potassium-digoxine n’a été contrôlée que par ses métadonnées PubMed.",
+  "La fenêtre i44-d-antibio indique céfazoline 2 g ; l’ESC 2021 cite 1 à 2 g (ou flucloxacilline). Non modifié, car 2 g reste conforme.",
+  "Aucun sigle nouveau : verifier_sigles.py affiche {} pour chaque out/*.html P2 et pour le texte de chaque new. Les noms d’essais sans entrée au glossaire (ARTESiA, NOAH-AFNET 6, THEOPACE, SOAP II, PrePACE) sont remplacés par la molécule ou la description de l’essai.",
+  "Aucune donnée personnelle n’a été transmise : seuls PubMed, Europe PMC, PMC et DailyMed ont été interrogés, sans adresse ni identifiant."
+ ]
+}
