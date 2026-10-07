@@ -1,7 +1,7 @@
-# Sources de C-01-Cardiologie
+# Sources de C-01-Cardiologie — remise Claude
 
-Ce dossier réunit les sources complètes de 20 cours intégrés. Les codes et titres figurent dans le README du fragment et dans `../livraison.json`.
+Ce dossier contient les seules sources corrigées par Claude dans le lot 2 de l'audit global : sept fichiers de **I48 — Fibrillation et flutter auriculaires**. `I48_d.html` a été relu sans modification et n'est donc pas livré. Les empreintes des originaux et des propositions figurent dans `../livraison.json`.
 
-[Sources communes et catalogue](https://github.com/vialdjoukang-spec/Medina/tree/7fa06329b3369f54ef0831ae9f6cdf90fce5f605) · [Organisation de MEDINA](https://vialdjoukang-spec.github.io/Medina/organisation.html).
+Le rapport et le journal de couverture se trouvent dans `../archives/2026-10-07-GLOBAL_LOT2_I48/`. L'injection dans `chapters/I48/` relève de `python3 tools/livraison.py apply-claude`.
 
-État : **partiel ; complétude CIM-11 non établie**. Une copie préparée pour Claude reste un espace de travail jusqu'à la remise de corrections et d'un rapport.
+[Organisation de MEDINA](https://vialdjoukang-spec.github.io/Medina/organisation.html). État du fragment : **partiel ; complétude CIM-11 non établie**.
