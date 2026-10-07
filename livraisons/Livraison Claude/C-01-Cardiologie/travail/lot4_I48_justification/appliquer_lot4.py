@@ -58,10 +58,11 @@ def main():
                 continue
             old = v.get("old_reel") or x["old"]
             new = v.get("new_final") or x["new"]
-            if textes[f].count(old) != 1:
+            g = v.get("fichier_reel") or f
+            if textes[g].count(old) != 1:
                 bilan["inline_echecs"].append((v["id"], "old absent ou multiple"))
                 continue
-            textes[f] = textes[f].replace(old, new, 1)
+            textes[g] = textes[g].replace(old, new, 1)
             bilan["inline_appliques"] += 1
 
     # 2. Mots verts et 3. fenêtres.
