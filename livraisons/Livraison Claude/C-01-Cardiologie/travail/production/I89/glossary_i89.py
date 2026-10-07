@@ -31,7 +31,7 @@ a('L-Dex',[('L','Lymphoedema'),('Dex','inDEX (indice)')],'Indice de lymphœdème
 
 # ---- gènes et marqueurs
 a('VEGF-C',[('V','Vascular (vasculaire)'),('E','Endothelial (endothélial)'),('G','Growth (de croissance)'),('F','Factor (facteur)'),('C','type C')],'Facteur de croissance de l’endothélium vasculaire C',
- '<p>Principal facteur de croissance des vaisseaux lymphatiques. Il active le récepteur VEGFR-3 des cellules endothéliales lymphatiques. Certaines variants pathogènes de son gène causent un lymphœdème héréditaire.</p>','i89-s-vegfc')
+ '<p>Principal facteur de croissance des vaisseaux lymphatiques. Il active le récepteur VEGFR-3 des cellules endothéliales lymphatiques. Certains variants pathogènes de son gène causent un lymphœdème héréditaire.</p>','i89-s-vegfc')
 a('VEGF-D',[('V','Vascular (vasculaire)'),('E','Endothelial (endothélial)'),('G','Growth (de croissance)'),('F','Factor (facteur)'),('D','type D')],'Facteur de croissance de l’endothélium vasculaire D',
  '<p>Facteur lymphangiogénique apparenté au VEGF-C. Son taux sérique est élevé dans la lymphangioléiomyomatose et diminue sous sirolimus.</p>')
 a('VEGFR-3',[('V','Vascular (vasculaire)'),('E','Endothelial (endothélial)'),('G','Growth (de croissance)'),('F','Factor (facteur)'),('R','Receptor (récepteur)'),('3','type 3')],'Récepteur 3 du facteur de croissance de l’endothélium vasculaire',
@@ -39,7 +39,7 @@ a('VEGFR-3',[('V','Vascular (vasculaire)'),('E','Endothelial (endothélial)'),('
 a('FLT4',[('F','Fms- (apparenté au récepteur fms)'),('L','Like (similaire)'),('T','Tyrosine kinase'),('4','4')],'Gène FLT4',
  '<p>Gène du récepteur VEGFR-3. Ses variants pathogènes, souvent transmis sur un mode autosomique dominant, causent la maladie de Milroy : lymphœdème congénital des pieds et des jambes.</p>')
 a('FOXC2',[('FOX','FOrkhead boX (domaine en tête de fourche)'),('C2','sous-famille C, membre 2')],'Gène FOXC2',
- '<p>Facteur de transcription nécessaire à la formation des valvules lymphatiques. Ses variants pathogènes causent le syndrome lymphœdème-distichiasis : lymphœdème d’apparition souvent pubertaire et double rangée de cils.</p>')
+ '<p>Facteur de transcription nécessaire à la formation des valvules lymphatiques. Ses variants pathogènes causent le syndrome lymphœdème-distichiasis : lymphœdème d’apparition souvent tardive (puberté ou âge adulte) et double rangée de cils.</p>')
 a('CCBE1',[('C','Collagen (collagène)'),('C','Calcium-'),('B','Binding (liant le calcium)'),('E','EGF domain (domaine de type facteur de croissance épidermique)'),('1','1')],'Gène CCBE1',
  '<p>Gène nécessaire à la maturation du VEGF-C. Ses variants pathogènes causent le syndrome de Hennekam, dysplasie lymphatique généralisée avec lymphangiectasies intestinales.</p>')
 a('FAT4',[('FAT','FAT (nom du gène « fat » de la drosophile, non développable)'),('4','4')],'Gène FAT4',
@@ -47,7 +47,7 @@ a('FAT4',[('FAT','FAT (nom du gène « fat » de la drosophile, non développabl
 a('GJC2',[('G','Gap'),('J','Junction (jonction communicante)'),('C','protein gamma (sous-famille C)'),('2','2')],'Gène GJC2',
  '<p>Gène de la connexine 47, protéine des jonctions communicantes. Ses variants pathogènes causent un lymphœdème héréditaire des membres.</p>')
 a('PIEZO1',[('PIEZO','du grec « píesi », pression (canal ionique mécanosensible)'),('1','1')],'Gène PIEZO1',
- '<p>Gène d’un canal ionique activé par l’étirement, impliqué dans le développement des valvules lymphatiques. Ses variants pathogènes causent une dysplasie lymphatique généralisée.</p>')
+ '<p>Gène d’un canal ionique activé par l’étirement, impliqué dans le développement des valvules lymphatiques. Ses variants pathogènes causent une forme de lymphœdème héréditaire (type III selon l’ISL 2023) et des dysplasies lymphatiques généralisées.</p>')
 a('GATA2',[('GATA','facteur se liant à la séquence d’ADN G-A-T-A'),('2','2')],'Gène GATA2',
  '<p>Facteur de transcription hématopoïétique et lymphatique. Ses variants pathogènes causent le syndrome d’Emberger : lymphœdème primaire, infections et risque de myélodysplasie, ce qui impose un suivi hématologique.</p>')
 a('SOX18',[('S','SRY (région du chromosome Y déterminant le sexe)'),('OX','-related HMG bOX (boîte HMG apparentée)'),('18','18')],'Gène SOX18',
@@ -63,7 +63,7 @@ a('RASA1',[('RAS','RAt Sarcoma (oncogène du sarcome du rat)'),('A','Activator (
 a('TSC1',[('T','Tuberous (tubéreuse)'),('S','Sclerosis (sclérose)'),('C','Complex (complexe)'),('1','gène 1')],'Gène TSC1',
  '<p>Gène de l’hamartine, frein de la voie mTOR. Sa perte de fonction, comme celle de TSC2, active mTOR dans la sclérose tubéreuse et la lymphangioléiomyomatose.</p>')
 a('TSC2',[('T','Tuberous (tubéreuse)'),('S','Sclerosis (sclérose)'),('C','Complex (complexe)'),('2','gène 2')],'Gène TSC2',
- '<p>Gène de la tubérine, frein de la voie mTOR. Ses variants pathogènes expliquent la plupart des lymphangioléiomyomatoses ; le sirolimus corrige l’activation de mTOR qui en résulte.</p>')
+ '<p>Gène de la tubérine, frein de la voie mTOR. Ses variants pathogènes, comme ceux de TSC1, activent mTOR dans la lymphangioléiomyomatose ; le sirolimus inhibe mTOR.</p>')
 a('CD31',[('CD','Cluster of Differentiation (classe de différenciation)'),('31','31')],'Antigène CD31',
  '<p>Molécule d’adhésion des cellules endothéliales (aussi appelée PECAM-1). Son expression par les cellules tumorales confirme la nature vasculaire d’un angiosarcome.</p>')
 a('PECAM-1',[('P','Platelet (plaquettaire)'),('E','Endothelial (endothéliale)'),('C','Cell (cellulaire)'),('A','Adhesion (d’adhésion)'),('M','Molecule (molécule)'),('1','1')],'Molécule d’adhésion plaquettaire et endothéliale 1',
@@ -78,7 +78,7 @@ a('D2-40',[('D2-40','nom du clone d’anticorps monoclonal, non développable')]
 # ---- classifications et éponymes
 a('CEAP',[('C','Clinique'),('E','Étiologique'),('A','Anatomique'),('P','Physiopathologique')],'Classification CEAP de la maladie veineuse chronique',
  '<p>Classification internationale de la maladie veineuse chronique. La classe clinique va de C0 (aucun signe) à C6 (ulcère veineux actif). La LiMA s’y réfère pour la prise en charge des bas de compression.</p>')
-a('CLOVES',[('C','Congenital Lipomatous overgrowth (hypertrophie lipomateuse congénitale)'),('L','Lipomatous'),('O','Overgrowth'),('V','Vascular malformations (malformations vasculaires)'),('E','Epidermal nevi (nævus épidermiques)'),('S','Scoliosis, skeletal and spinal anomalies (anomalies rachidiennes et squelettiques)')],'Syndrome CLOVES',
+a('CLOVES',[('C','Congenital (congénitale)'),('L','Lipomatous'),('O','Overgrowth'),('V','Vascular malformations (malformations vasculaires)'),('E','Epidermal nevi (nævus épidermiques)'),('S','Scoliosis, skeletal and spinal anomalies (anomalies rachidiennes et squelettiques)')],'Syndrome CLOVES',
  '<p>Syndrome de croissance excessive lié à des variants somatiques de PIK3CA, avec masses lipomateuses et malformations vasculaires, notamment lymphatiques.</p>')
 a('Stewart-Treves',[('Stewart','Fred W. Stewart, pathologiste américain'),('Treves','Norman Treves, chirurgien américain')],'Syndrome de Stewart-Treves',
  '<p>Angiosarcome (lymphangiosarcome) développé sur un lymphœdème chronique, décrit en 1948 après mastectomie. Il se manifeste par des macules ou nodules violacés et a un pronostic sombre.</p>','i89-stewart')

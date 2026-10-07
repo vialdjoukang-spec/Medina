@@ -120,9 +120,13 @@ def main():
             label = labels.get(a["id"], a["label"])
             f = re.match(rf"{code}_[\w]+", a["file"]).group(0)
             t = textes[f]
-            debut = t.find(a["old"])
+            old = a["old"]
+            if a.get("new") and t.count(old) == 1:
+                t = t.replace(old, a["new"], 1)
+                old = a["new"]
+            debut = t.find(old)
             if debut != -1:
-                pos = t.find(label, debut, debut + len(a["old"]))
+                pos = t.find(label, debut, debut + len(old))
             else:
                 occ = [m.start() for m in re.finditer(re.escape(label), t)]
                 pos = occ[0] if len(occ) == 1 else -1
