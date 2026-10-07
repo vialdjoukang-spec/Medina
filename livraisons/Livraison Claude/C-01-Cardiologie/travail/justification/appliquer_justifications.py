@@ -59,6 +59,8 @@ def main():
         livre = c.exists() and f"chapters/{code}/{n}.html" in declares
         return (c if livre else canon / f"{n}.html").read_text(encoding="utf-8")
 
+    if ecrire and any(f"chapters/{code}/{n}.html" in declares for n in noms):
+        sys.exit(f"{code} est déjà livré : réappliquer doublerait les compléments. Repartir des sources canoniques.")
     textes = {n: lire(n) for n in noms}
     bilan = {"textes_appliques": 0, "textes_rejetes": 0, "textes_echecs": [], "ancres": 0,
              "ancres_retirees": 0, "ancres_echecs": [], "fenetres_creees": [], "fenetres_completees": [],
