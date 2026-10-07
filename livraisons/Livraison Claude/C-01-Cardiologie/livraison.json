@@ -2,13 +2,13 @@
   "schema_version": 1,
   "kind": "claude_contribution",
   "author": "Claude",
-  "status": "lot 4 livré (justification systématique d'I48) ; lots 2 et 3 déjà injectés par Codex (PR #10, a6f18a1)",
+  "status": "lot 5 livré : justification systématique de 14 cours de C-01 et correctif des rubriques Source d'I48 ; lots 2 à 4 déjà injectés par Codex",
   "fragment": {
     "id": "S01",
     "label": "C-01-Cardiologie",
     "specialty": "Cardiologie"
   },
-  "source_commit": "a6f18a150b1a67a2a53c14b3a7ec0b7fe6c6c74a",
+  "source_commit": "75505d8b440a294808147cd1a1c4fb71f4a4c207",
   "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
   "chapters": [
     {
@@ -955,28 +955,16 @@
   ],
   "checks": [
     {
-      "command": "python3 test_v7.py --static <20 cours du lot 3>",
-      "result": "réussi"
+      "command": "test_v7.py --static (15 cours, I70, I50) ; build_front.py --all-fragments ; audit_fragments ; audit_sciences ; unittest",
+      "result": "OK ; 22 fragments ; errors: [] ; 76 tests"
     },
     {
-      "command": "build_front.py --all-fragments ; tests/audit_fragments.py",
-      "result": "réussi"
+      "command": "verify_sciences_cs / verify_s01_browser / verify_justifications_recovery / verify_categories / verify_organisation",
+      "result": "609 / 71 / 2 400 / 656 / 740 contrôles, 0 erreur"
     },
     {
-      "command": "tests/audit_sciences.py",
-      "result": "errors: []"
-    },
-    {
-      "command": "node tests/verify_sciences_cs.cjs",
-      "result": "583 contrôles réussis"
-    },
-    {
-      "command": "node tests/verify_s01_browser.cjs",
-      "result": "71 contrôles réussis"
-    },
-    {
-      "command": "lot 4 : python3 test_v7.py --static I48 I70 I71 I80 ; build_front.py --all-fragments ; tests/audit_fragments.py ; tests/audit_sciences.py ; verify_sciences_cs.cjs ; verify_s01_browser.cjs",
-      "result": "réussi : I48 66 107 mots, 100 fenêtres ; 22 fragments ; errors: [] ; 583 et 71 contrôles, 0 erreur"
+      "command": "ouverture navigateur des 15 cours",
+      "result": "1 795 mots verts, aucune clé manquante, aucune erreur JavaScript"
     }
   ],
   "limits": [
@@ -985,13 +973,22 @@
     "Lot 4 : glossary/i48.py reçoit cinq entrées (AFFIRM, AVERROES, DIG, XII, Wolff-Chaikoff), remises par la branche et non par apply-claude."
   ],
   "delivery": {
-    "lot": "GLOBAL_LOT4_I48_JUSTIFICATION",
+    "lot": "GLOBAL_LOT5_JUSTIFICATION",
     "date": "2026-10-07",
     "branch": "claude/loving-shannon-spwrhc",
-    "start_commit": "a6f18a150b1a67a2a53c14b3a7ec0b7fe6c6c74a",
-    "report": "archives/2026-10-07-GLOBAL_LOT4_I48_JUSTIFICATION/rapport.md",
-    "journal": "archives/2026-10-07-GLOBAL_LOT4_I48_JUSTIFICATION/journal.json",
-    "historique": "lots 2 et 3 : archives/2026-10-07-GLOBAL_LOT2_I48 et archives/2026-10-07-GLOBAL_LOT3_SCIENCES, injectés par Codex",
-    "arbitrages_codex_preserves": "audits/MECANISMES_2026-10-07/CODEX_ARBITRAGES.json, I48-01 à I48-11"
+    "start_commit": "75505d8b440a294808147cd1a1c4fb71f4a4c207",
+    "report": "archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/rapport.md",
+    "travail": "travail/justification/",
+    "hors_apply_claude": [
+      "glossary/q21.py (TBX1)"
+    ],
+    "cours_transferes_a_codex": [
+      "I47",
+      "I49",
+      "I46",
+      "I71",
+      "I80"
+    ],
+    "historique": "lots 2 à 4 injectés par Codex (a6f18a1, e856ed1)"
   }
 }

@@ -4,7 +4,7 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 
 | Cours | Production | Vérification | Application et contrôles | Commit |
 | --- | --- | --- | --- | --- |
-| I48 — Fibrillation et flutter auriculaires | fait (lot 4) | fait | fait | b1f19c3 |
+| I48 — Fibrillation et flutter auriculaires | fait (lot 4) | fait | injecté par Codex (e856ed1) ; correctif des rubriques Source livré au lot 5 | voir lot 4 |
 | I30 — Péricardites, épanchement péricardique, tamponnade et constriction | fait | fait (167 acceptés, 30 corrigés ; 12 fenêtres corrigées) | fait : test statique OK, 23 223 → 30 961 mots | voir journal |
 | I33 — Endocardite infectieuse | fait | fait (125 acceptés, 20 corrigés, 6 ajouts du vérificateur ; 10 fenêtres corrigées) | fait : test statique OK, 24 133 → 33 006 mots | voir journal |
 | I35 — Valvulopathies aortiques | fait | fait (145/146 compléments, 10 fenêtres corrigées) | fait : test statique OK, 26 480 → 34 279 mots | voir journal |
@@ -21,3 +21,5 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 | I80 — Thrombose veineuse profonde et thromboses veineuses | fait | fait (62 acceptés, 21 corrigés, 2 ajouts ; 12 fenêtres corrigées) | fait : test statique OK, 7 292 → 14 030 mots | voir journal |
 
 Reprise après interruption : les résultats partiels de chaque cours sont dans `<CODE>/`. Un producteur interrompu se relance sur ses seuls fichiers ; ses sorties existantes sont réutilisées si elles sont complètes.
+
+**État final (7 octobre 2026)** : les 14 cours sont produits, vérifiés, appliqués et contrôlés ; rapport global dans `archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/rapport.md`. I47, I49, I46, I71 et I80 ont été transférés à Codex pendant le lot (`MECHANISMS_CLAUDE.md`) ; leur justification est livrée comme contribution recevable.
