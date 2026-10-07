@@ -8,7 +8,7 @@ Chaîne par cours : producteurs P1 et P2 (`TACHE_PRODUCTION.md`) → vérificate
 | I30 — Péricardites, épanchement péricardique, tamponnade et constriction | en cours | | | |
 | I33 — Endocardite infectieuse | en cours | | | |
 | I35 — Valvulopathies aortiques | fait | fait (145/146 compléments, 10 fenêtres corrigées) | fait : test statique OK, 26 480 → 34 279 mots | voir journal |
-| I34 — Valvulopathies mitrales, tricuspides et pulmonaires | en cours | | | |
+| I34 — Valvulopathies mitrales, tricuspides et pulmonaires | fait | fait (132 acceptés, 26 corrigés, 8 ajouts du vérificateur ; 5 fenêtres corrigées) | fait : test statique OK, 27 812 → 33 788 mots | voir journal |
 | I00 — Rhumatisme articulaire aigu | fait | fait (87 acceptés, 30 corrigés, 2 rejetés ; 12 fenêtres corrigées) | fait : test statique OK, 21 464 → 27 035 mots | voir journal |
 | I40 — Myocardites | fait | fait (157 acceptés, 31 corrigés ; 11 fenêtres corrigées) | fait : test statique OK, 24 113 → 33 442 mots | voir journal |
 | I42 — Cardiomyopathies | fait | fait (112 acceptés, 28 corrigés, 10 ajouts du vérificateur ; doublon FA fusionné) | fait : test statique OK, 29 325 → 35 839 mots | voir journal |
