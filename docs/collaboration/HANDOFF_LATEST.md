@@ -37,4 +37,24 @@ Le catalogue reste **CIM-10-GM 2024**. La complétude **CIM-11 n’est pas étab
 
 À chaque reprise et avant publication, lire [les livraisons repérées](DELIVERIES_LATEST.md), les branches/PR et leurs nouvelles pages, les dossiers Claude et les reçus. La présence d’un manifeste facilite le suivi ; son absence ne justifie pas d’ignorer une livraison ancienne. Vérifier séparément le déploiement du site.
 
-La préférence Anthropic Serif est enregistrée ; la police est absente de cette session. Les nouveautés ESC 2026 sont présentées dans des comparaisons dédiées I48/I50. Fenêtres : réponse directe puis mécanisme, conséquence, limites et source, sans quota de mots ni multiplication de volume.
+La préférence Anthropic Serif est enregistrée ; la police est absente de cette session. Les nouveautés ESC 2026 sont présentées dans des comparaisons dédiées I48/I50/I42. Fenêtres : réponse directe puis mécanisme, conséquence, limites et source, sans quota de mots ni multiplication de volume.
+
+## Nouveau paquet de dix cours — réception 67c01cb4
+
+95 sources supplémentaires sont injectées : I00 — Rhumatisme articulaire aigu ; I30 — Péricardites, épanchement péricardique, tamponnade et constriction ; I33 — Endocardite infectieuse ; I34 — Valvulopathies mitrales, tricuspides et pulmonaires ; I35 — Valvulopathies aortiques ; I40 — Myocardites ; I42 — Cardiomyopathies ; I44 — Troubles de la conduction et bradycardies ; I46 — Arrêt cardiaque ; I49 — Extrasystoles et autres arythmies. Les 95 empreintes de base et propositions sont conformes ; les copies reçues égalent les blobs GitHub figés. I48 est exclu de ce paquet et préservé.
+
+Onze cours de cardiologie ont reçu les livraisons de justification étendue (I48 puis ces dix), soit 11/20 cours présents. Cet indicateur mesure l’injection de ces livraisons, pas une clôture médicale exhaustive. Aucun cours n’est déclaré achevé sur la seule réussite technique. Les vérifications Claude portent sur ses propositions et laissent des réserves documentées par cours. Les seuils non recontrôlés, divergences de tableaux et informations professionnelles non relues restent à traiter.
+
+I46 et I49 sont acceptés bien que passés à Codex : leur rédaction précédait le partage actuel. La répartition 10/10 reste en vigueur pour la suite et la fermeture des réserves. Claude a livré Q21 à `2947ba86` et poursuit les productions prioritaires I83/I89, avec les réserves des autres cours. Le Fragment 02 attend toujours l’achèvement vérifié du Fragment 01.
+
+Les badges de validation interne 20/20 des dix cours ont été retirés. I42 distingue désormais les référentiels cardiomyopathies ESC 2023 et insuffisance cardiaque ESC 2026 dans une fenêtre comparative ; les classes ESC 2026 non vérifiées ont été retirées.
+
+Les quatre fichiers de fenêtres I48 mis à jour dans la même remise ne modifient que la bibliographie ; fusion à trois voies propre, corrections médicales et comparaison conservées. Les preuves du déploiement I48 publiées concurremment à `d6718ba5` sont également conservées.
+
+Contrôles du nouveau paquet : 80 tests unitaires, 8 637 contrôles navigateur sur les dix cours, 71 contrôles de navigation S01 et contrats Sciences des 31 cours réussis. Toutes les 896 fenêtres natives de ces dix cours ont été ouvertes aux deux largeurs, avec leurs renvois, quiz, retours et restitutions du focus.
+
+## Lot 5 final — réception 2947ba86
+
+Les quatre cours supplémentaires I47 — Tachycardies paroxystiques supraventriculaires et ventriculaires ; I71 — Anévrismes et dissections artérielles ; I80 — Thrombose veineuse profonde et thromboses veineuses ; Q21 — Cardiopathies congénitales de l’adulte sont injectés (33 sources), avec le glossaire TBX1 corrigé. Les 128 sources des quatorze cours sont reçues, et les quatre corrections bibliographiques I48 sont intégrées. Toutes les 1 156 fenêtres natives des quatorze cours ont été ouvertes sur ordinateur/mobile : 11 058 contrôles réussis, plus 931 I48 et 2 400 des banques de justifications.
+
+**15/20 cours présents ont reçu cette justification étendue (75 %) ; aucun n’est clos par une contrelecture médicale indépendante exhaustive.** Les cinq cours sans cette livraison étendue sont I50 — Insuffisance cardiaque ; I21 — Syndromes coronariens aigus et infarctus du myocarde ; I25 — Syndromes coronariens chroniques et angor ; I10 — Hypertension artérielle ; I70 — Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë. Codex poursuit ces cinq et les réserves de ses dix cours ; Claude ferme celles des siens et produit I83/I89. Les livraisons I47/I46/I49/I71/I80 préparées avant le nouveau partage sont conservées.

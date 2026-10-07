@@ -1,0 +1,117 @@
+{
+ "cours": "I34 — Valvulopathies mitrales, tricuspides et pulmonaires",
+ "verificateur": "vérification indépendante (TACHE_VERIFICATION.md)",
+ "base": "sources canoniques chapters/I34 (aucune copie livrée déclarée dans livraison.json)",
+ "sources_controlees": [
+  "Praz et al., 2025 ESC/EACTS Guidelines for the management of valvular heart disease, Eur Heart J 2025;46:4635–4736 (src/esc2025.txt, esc2025_flow.txt), recoupé avec la version EJCTS et le diaporama officiel (tableaux 7, 8, 10, Recommendation Tables 1, 2, 6, 8, 9, 14, 16, 17)",
+  "PubMed : Hahn et al. 2025 (TRISCEND II, doi 10.1056/NEJMoa2401918) ; Arnold et al. 2025 (qualité de vie TRISCEND II, doi 10.1016/j.jacc.2024.10.067) ; Connolly et al. 2022 (INVICTUS, doi 10.1056/NEJMoa2209051) ; Eikelboom et al. 2013 (RE-ALIGN, doi 10.1056/NEJMoa1300615) ; Jaffer et al. 2015 (doi 10.1161/JAHA.115.002322) ; Mullens et al. 2009 (doi 10.1016/j.jacc.2008.05.068) ; Enriquez-Sarano et al. 1994 (doi 10.1161/01.cir.90.2.830) ; Runyon 1988 (doi 10.1097/00004836-198808000-00013) ; Peverill et al. 1996 (doi 10.1161/01.cir.94.3.331) ; Blackshear et Odell 1996 (doi 10.1016/0003-4975(95)00887-X) ; Yoon et al. 2019 (doi 10.1093/eurheartj/ehy590) ; Holbrook et al. 2005 (doi 10.1001/archinte.165.10.1095)"
+ ],
+ "complements": {
+  "proposes_par_P1_P2": 158,
+  "ajoutes_par_le_verificateur": 8,
+  "acceptes": 140,
+  "corriges": [
+   "I34_a-11",
+   "I34_a-14",
+   "I34_a-16",
+   "I34_b-2",
+   "I34_b-4",
+   "I34_b-12",
+   "I34_b-16",
+   "I34_b-18",
+   "I34_b-19",
+   "I34_b-27",
+   "I34_b-36",
+   "I34_b-40",
+   "I34_b-41",
+   "I34_b-42",
+   "I34_c-1",
+   "I34_c-5",
+   "I34_c-10",
+   "I34_c-23",
+   "I34_c-29",
+   "I34_d-5",
+   "I34_d-8",
+   "I34_pop3-3",
+   "I34_pop3-6",
+   "I34_pop4-11",
+   "I34_pop5-5",
+   "I34_pop5-11"
+  ],
+  "rejetes": [],
+  "ajouts_verificateur": [
+   "I34_b-V1",
+   "I34_b-V2",
+   "I34_b-V3",
+   "I34_b-V4",
+   "I34_b-V5",
+   "I34_d-V1",
+   "I34_pop3-V1",
+   "I34_pop6-V1"
+  ]
+ },
+ "fenetres": {
+  "creees": [
+   "i34-congestion-renale (P1, I34_pop3)",
+   "i34-marqueurs-imp (P1, I34_pop1)",
+   "i34-anticoag-valve (P2, I34_pop6)",
+   "i34-avk-interact (P2, I34_pop6)"
+  ],
+  "completees": [
+   "i34-invictus (P1)",
+   "i34-marqueurs-imp (P2)"
+  ],
+  "corrigees": [
+   "i34-anticoag-valve__P2",
+   "i34-avk-interact__P2",
+   "i34-congestion-renale__P1",
+   "i34-invictus__P1",
+   "i34-marqueurs-imp__P1"
+  ],
+  "ok": [
+   "i34-marqueurs-imp__P2"
+  ],
+  "fusions": [],
+  "ancres": "11 ancres contrôlées (existence, unicité, label, hors balise et hors fenêtre ouverte) ; aucune retirée, aucun label modifié",
+  "doublons_traites": [
+   "i34-anticoag-valve / i34-invictus : pas de fusion (une fenêtre créée, une préexistante) ; redites retirées : préférence des AOD dans la fuite mitrale ôtée d’i34-invictus, cause inconnue de l’échec du rivaroxaban limitée à une phrase dans i34-anticoag-valve, effectif harmonisé (4 565 patients).",
+   "Message « pas de passage aux AOD si INR instable » répété dans trois fenêtres : resserré dans i34-invictus, remplacé dans i34-avk-interact par un renvoi vers i34-anticoag-valve, retiré de la rubrique décisionnelle d’i34-anticoag-valve, qui redisait l’alerte d’I34_d portant l’ancre.",
+   "i34-anticoag-valve / complément I34_c-30 : phrase sur le score CHA₂DS₂-VA retirée de la fenêtre.",
+   "I34_c-1 / I34_c-25 : hypertension précapillaire masquée gardée dans I34_c-25 seulement.",
+   "i34-marqueurs-imp : création P1 gardée ; complément P2 sans redite ; ancres P2 maintenues vers la même clé."
+  ]
+ },
+ "arbitrages_demandes": {
+  "inr_prot": "Les compléments I34_pop3-3, -4 et -5 de P1 corrigent bien i34-inr-prot (tableau 10 de 2025) ; I34_pop3-3 étendu au paragraphe « Principe » (type et position de la prothèse). Cibles harmonisées partout : I34_d-4 (tableau de pharmacologie), I34_pop5-11 (Pareto, intervalles ajoutés et position tricuspide), I34_d-V1 (source 2021 retirée), I34_b-V5 (source 2021 retirée), I34_pop3-V1 (relèvement de 0,5 ou aspirine après embolie malgré un INR correct, 2025). Plus aucune cible 3,0–4,0 « selon la thrombogénicité » dans le cours simulé.",
+  "anticoag_valve_invictus": "Recoupement résolu par répartition des rôles, sans fusion (voir doublons_traites).",
+  "marqueurs_imp": "Cohérence conservée : fenêtre P1 créée dans I34_pop1, complément P2 appliqué après création ; essai à blanc sans échec.",
+  "classe_IIa_fuite_primaire": "Formulation unique : classe I si au moins trois critères chez le patient à faible risque avec réparation durable probable ; IIa (chirurgie, réparation de préférence) si fibrillation due à la fuite ou PAPs au repos > 50 mmHg ; IIa (réparation en centre valvulaire de référence, si durable) si dilatation auriculaire seule ; fuite tricuspide modérée isolée insuffisante ; sans marqueur, surveillance semestrielle. Appliquée à I34_b-2 (tableau 9.1), I34_pop4-11 (aide-mémoire), I34_pop5-5 (Pareto), I34_a-16 (cas), I34_c-28/-29 (quiz) et i34-marqueurs-imp.",
+  "triscend_ii": "Chiffres de P1 exacts (PubMed, Hahn et al. 2025) : hémorragies sévères 15,4 % contre 5,3 %, stimulateurs 17,4 % contre 2,3 %, rapport de gains 2,02 ; cohérents avec l’ESC/EACTS 2025 (environ 15 % d’hémorragies majeures, un quart des patients sans stimulateur préalable). Retrait des chiffres de mortalité justifié. Gain de qualité de vie de 18 à 21 points cohérent avec Arnold et al. (20,8 points à 6 mois, 17,8 à un an)."
+ },
+ "erreurs_de_fond_trouvees_par_le_verificateur": [
+  "I34_b-4 (P1) : contre-indication des AOD étendue à tout rétrécissement rhumatismal au lieu d’une surface ≤ 2,0 cm².",
+  "I34_pop3-6 (P1) : seuil du TRI-SCORE « > 6 » au lieu de « ≥ 6 ».",
+  "I34_b-12 (P1) : triade de Virchow corrigée, mais activation locale de la coagulation omise (Peverill et al. 1996).",
+  "I34_b-36 (P1) : justification du suivi annuel après remplacement erronée (fuite résiduelle au lieu de dysfonction ou dégénérescence de la prothèse).",
+  "I34_b-40 (P1) : « sauf autre indication au long cours » supprimé.",
+  "I34_b-42 (P1) : classe IIa appliquée à la valve-in-ring, geste hors indication.",
+  "I34_d-8 (P2) : « au moins quatre jours pour la warfarine » attribué à tort ; l’ESC/EACTS 2025 parle des antivitamines K en général.",
+  "I34_a-11 (P1) : dégonflage du ballon intra-aortique « au début de la systole » au lieu de juste avant.",
+  "Cours non corrigé par les producteurs : antiagrégation « quelques mois » après TEER dans I34_b 15.2 (I34_b-V1), mortalité et durabilité de la réparation dans I34_b 9.2 discordantes avec le Pareto corrigé (I34_b-V3, -V4), indication de l’antivitamine K après réparation dans i34-d-avk (I34_pop6-V1), sources 2021 résiduelles (I34_d-V1, I34_b-V5)."
+ ],
+ "controles": {
+  "verifier_sigles": "{} sur tous les new, new_final, out/*.html et sur les dix fichiers du cours après application simulée",
+  "essai_a_blanc": "appliquer_justifications.py sur une copie (scratchpad) : 166 compléments appliqués, 0 échec ; 11 ancres, 0 échec ; 4 fenêtres créées, 2 complétées, 0 échec",
+  "html": "équilibre des balises identique aux sources canoniques (fragments ouverts et fermés entre fichiers comme à l’origine) ; aucun renvoi data-k vers une clé i34 absente"
+ },
+ "reserves": [
+  "Rétrécissement tricuspide : l’ESC/EACTS 2025 le dit « le plus souvent » congénital ou enzymatique (Fabry, Whipple), contre l’enseignement classique ; le cours garde « classiquement rhumatismal » et cite l’ESC.",
+  "Seuils américains de 2020 (probabilité de réparation durable > 95 %, mortalité < 1 %) non relus dans le texte intégral d’Otto et al.",
+  "Seuil de 5 mg/j de warfarine pendant la grossesse : équivalents de la phenprocoumone et de l’acénocoumarol non vérifiés (ESC 2018 et 2025 sur la grossesse non disponibles en texte intégral).",
+  "Délai d’arrêt de la phenprocoumone (sept à dix jours) et posologies du tableau de pharmacologie à contrôler dans compendium.ch.",
+  "Rubrique existante d’i34-invictus (décès surtout par mort subite et insuffisance cardiaque) non vérifiée dans le texte intégral.",
+  "Justification par l’endothélialisation de l’anneau pendant les trois premiers mois : mécanisme classique, non chiffré par l’ESC/EACTS 2025, qui invoque la fibrillation et les embolies précoces.",
+  "Réserves de P1 et P2 maintenues lorsqu’elles n’ont pas été levées ici : seuils anatomiques de la TEER (tableau S2), essai MATTERHORN « 210 patients », posologies du nitroprussiate, seuil TAPSE < 17 mm, données RESHAPE-HF2.",
+  "Compléments -V ajoutés par le vérificateur dans edits/I34_b.json, I34_d.json, I34_pop3.json et I34_pop6.json (champ « auteur » : « vérificateur »), avec verdict « accepter »."
+ ]
+}
