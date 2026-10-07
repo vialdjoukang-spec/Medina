@@ -1,0 +1,55 @@
+I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques — réserves du rédacteur B (îlots i89-7 à i89-16, I89_pop2.html), 07-08.10.2026
+
+FICHIERS
+- brouillon/I89_b.html : îlots i89-7 à i89-16, figure 2 (SVG), quiz 1 (i89-7) et quiz 2 (i89-15), critères formels (div.alert) puis paramètres clés (div.key), bouton pareto-i89-pec, références (div.src), fermeture de chap-body et de pA (les deux </div> finaux ferment des balises ouvertes par A).
+- brouillon/I89_pop2.html : 13 fenêtres du plan + pareto-i89-pec.
+- glossary_i89_b.py : une seule clé, P-02-Pneumologie.
+- Contrôle des sigles : {} avec MEDINA_GLOSSAIRE_EXTRA = ../I83/glossary_i83.py, glossary_i89.py, glossary_i89_a.py (DiSipio), glossary_i89_d.py (C-01-Cardiologie, I-03-Infectiologie), glossary_i89_b.py. Le vérificateur doit garder ces clés à la fusion (C-01-Cardiologie est aussi défini dans glossary_i89_c.py, ../I83/glossary_i83_a.py et _d.py : n’en garder qu’une).
+
+ÉCARTS AU PLAN
+1. Patiente du cas fil rouge : Mme L. (consigne du coordinateur ; Mme R. réservée à I83). Le PLAN.md écrit encore « Mme R. ».
+2. Figure 2 : la question racine est « Début rapide ou douleur marquée ? » et non « Aigu (< 72 heures) » : le seuil de 72 heures n’est dans aucune source vérifiée.
+3. Essai de Dayes (F18) : le bras expérimental associait drainage manuel quotidien ET bandages, puis vêtement, contre vêtement seul (PubMed 24043733). Le plan le présente comme un test du drainage seul. Texte corrigé : l’essai n’isole pas l’effet du drainage ; ajout du volume absolu (250 contre 143 mL, différence significative) et de l’absence de gain de qualité de vie.
+4. Essai de Ridner 2022 (F20) : 7,9 % contre 19,2 % sont des proportions parmi les patientes ayant déclenché l’intervention (manchon 4 semaines), non sur les 879 analysées. Formulation corrigée.
+5. Essai de Thomas (F12) : le rapport de risque 0,55 n’apparaît pas dans le résumé PubMed disponible ; seuls 22 % contre 37 %, nombre à traiter 5 et 27 % après arrêt sont cités (dans le texte : 37 → 22 % et perte d’effet).
+6. Grossesse (îlot 15) : la phrase sur le report des examens isotopiques a été omise (aucune source). La mention AWMF « parfois après une grossesse » porte sur le LIPŒDÈME (AWMF 2017, l. ≈ 500), non sur le lymphœdème primaire : la carte le dit ainsi.
+7. Volume : texte principal ≈ 6 800 mots lexicaux (≈ 7 350 jetons sans le SVG), fenêtres ≈ 4 200 mots lexicaux, au-dessus des repères du plan (3 200 et 2 900). Deux passes de réduction des redites ont été faites ; le vérificateur peut raccourcir encore 7.2 (liste + tableau), 12.3 et le cas récapitulatif, qui reprend volontairement les étapes du cas.
+8. Fenêtre i89-suisse : réécrite pour ne pas répéter le tableau de l’îlot 14 (prescription, fourniture, essai 17.20, sens de « en cours d’évaluation », documentation).
+9. Classe de recommandation : aucune classe ni niveau n’est écrit (consigne du 8 octobre). Seule mention de consensus : « consensus fort » pour les contre-indications AWMF (lu tel quel : Zustimmung 96,9 %, starker Konsens, question 7).
+
+NOMENCLATURE DES COURS CITÉS (consigne du 8 octobre)
+- I80 — Thrombose veineuse profonde et thromboses veineuses (C-01-Cardiologie) ; I50 — Insuffisance cardiaque (C-01-Cardiologie) ; I70 — Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë (C-01-Cardiologie) : titres de chapters.json.
+- I83 — Varices des membres inférieurs (C-01-Cardiologie) : titre absent de chapters.json ; repris du h1 de I83_a.html et de FRAGMENT_01_PRIORITE.md. ATTENTION : I89_c.html (rédacteur C) écrit « I83 — Varices des membres inférieurs et maladie veineuse chronique » (titre du PLAN de I83). À harmoniser par le vérificateur.
+- A46 — Érysipèle (I-03-Infectiologie) et B74 — Filariose (I-03-Infectiologie) : cours futurs ; intitulés du catalogue CIM-10-GM ; fragment déduit du libellé « Infectiologie et parasitologie » du catalogue.
+- J90 — Épanchement pleural, non classé ailleurs (P-02-Pneumologie) : cours futur ; J90 figure dans priority_codes de P-02.
+- I88 — Lymphadénite non spécifique (C-01-Cardiologie) : catégorie articulée dans I89 ; aucun fragment ne la liste ; rattachée à C-01 par son système de catalogue (« Angiologie et autres affections circulatoires »).
+- R59 — Adénopathies : écrit « (fragment non encore attribué) », car R59 n’apparaît dans aucun fragment de organisation/fragments.json. À trancher par l’orchestrateur (D-20 probable).
+
+DONNÉES VÉRIFIÉES HORS SECTION 5 DU PLAN (source lue dans src/)
+- Moins de la moitié des chylothorax sont laiteux ; 14 % des épanchements chyleux sous 1,24 mmol/L de triglycérides (dénutrition, série de Maldonado citée par la revue) ; LDH élevée atypique ; embolisation du canal thoracique : 73,8 % de succès à la première tentative dans le non traumatique ; ligature chirurgicale ≈ 90 % (surtout traumatique) ; pleurodèse au talc ; 2,4 L/jour : revue de Breathe 2022, PMC9584559 (chylothorax_breathe2022.txt).
+- AWMF 2017 : chirurgie seulement après au moins 6 mois de thérapie décongestive (chirurgie, question 1) ; chirurgie contre-indiquée si lymphœdème malin (question 5) ; anastomose possible sous anesthésie locale ; compression de l’enfant à partir de 6 mois avec pression nettement réduite ; participation des parents (une étude) ; vêtement efficace ≈ 6 mois ; reprise de phase I si aggravation ; « tout lymphœdème est suspect de cancer » (chapitre 1).
+- ISL 2023 : perméabilité des anastomoses > 25 ans dans certains cas ; greffe de collecteur > 20 ans ; aucun essai sur le choix du tricot ; massage classique potentiellement nocif ; tuyautage ; restriction hydrique sans bénéfice ; transposition d’épiploon à éviter ; opération de Charles à éviter ; étude LYMPHA sans effet à 4 ans ; libération cicatricielle axillaire et transfert ganglionnaire.
+- Winters et al. 2022 (PubMed 34508873) : 8 études en méta-analyse, réduction moyenne 40,31 %, complications au site donneur 12,1 %.
+- Karlsson et al. 2024 (PubMed 37114928) : 59 patients, bras 1 061 → 22 mL à 5 ans ; jambe 3 447 → 263 mL (1 an) → 669 mL (5 ans). Nommé « Karlsson et al. » au lieu de « série australienne ».
+- Jonis et al. 2024 (PubMed 38278856) : 46 patientes par groupe ; 41 % d’arrêt partiel ou complet de la compression.
+- Coriddi et al. 2023 (PubMed 37314177) : 72 + 72 randomisées ; 9,5 % contre 32 % ; 40 patientes à 24 mois.
+- Revue Stewart-Treves 2022 (PubMed 34196958) : 369 patients dont 331 angiosarcomes ; 85,9 % de femmes ; survie 43,3 % à 5 ans après exérèse.
+- Manner et al. 2010 : seuls 2 des 33 angiosarcomes secondaires étaient liés à un lymphœdème (limite écrite dans la fenêtre).
+- AWMF S2k lipœdème 2024 : presque exclusivement féminin ; tronc, tête et cou épargnés ; ni cause ni conséquence de l’obésité ; ecchymoses non objectivées, non décisives ; Stemmer positif possible si lymphœdème lié à l’obésité associé.
+- OPAS annexe 1 (1.7.2026) : liposuccion mentionnée seulement pour le lipœdème (indication par au moins deux spécialistes d’angiologie, chirurgie plastique, endocrinologie-diabétologie, dermatologie). La liposuccion du lymphœdème n’y figure pas : écrit « vérifier auprès de l’assureur ».
+- LiMA (1.7.2026) : 17.02 mesure par centre conventionné, auto-mesure non remboursée, sur-mesure seulement si la série ne convient pas ; 17.15 indications (dont phlébolymphœdème 2-3, paroi thoracique, génital) ; 17.20 : paramètres sur l’ordonnance, usage au long cours, essai ≥ 100 mL et gain de qualité de vie.
+
+AFFIRMATIONS SANS SOURCE PRIMAIRE CHIFFRÉE (connaissance clinique classique, sans chiffre)
+- Signes d’alarme du lymphœdème malin (installation rapide, douleur, prédominance proximale, circulation collatérale, déficit neurologique) : la fenêtre i89-malin le dit (« sensibilité non mesurée »).
+- Lymphadénite mésentérique simulant une appendicite chez l’enfant ; réticulose lipomélanique et diagnostic différentiel du lymphome cutané à cellules T ; myxœdème peu dépressible ; mécanismes des œdèmes cardiaque, néphrotique et cirrhotique ; technique du drainage (régions saines d’abord) ; physique des bandes peu élastiques.
+
+RÉSERVES REPRISES DU PLAN
+- R2 (pas de donnée épidémiologique suisse) : sans objet dans mes îlots.
+- R3 : aucune proportion globale de cancers dans les chylothorax ; seul « lymphome = 70 à 75 % des chylothorax malins ».
+- R4 : aucune dose d’antibiotique de l’épisode aigu ; renvoi à A46 — Érysipèle (I-03-Infectiologie).
+- R5 : extrapolation de l’essai de Thomas (jambe) au bras écrite dans l’îlot 11, le quiz 2 et le Pareto.
+- R8 : Coriddi 2023 et Jonis 2024 présentés comme préliminaire et intermédiaire.
+- ESC 2026 : une seule mention comparative, entre parenthèses, dans i89-oed-systemique (terme « décompensée », deux phénotypes contre trois dans l’ESC 2021 et 2023), conforme à I50_pop_esc_comparison.html ; rappel du terme dans la carte « Insuffisance cardiaque » de l’îlot 15.
+
+CONFIDENTIALITÉ
+- Aucun service externe interrogé ; seules les sources déjà téléchargées dans src/ ont été lues. Ni commit ni push.
