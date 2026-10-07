@@ -1,0 +1,572 @@
+{
+ "perimetre": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie). Audit indépendant Claude de chapters/A41/A41_c.html (onglets Examens a41-e-1 à a41-e-5 et Sciences a41-s-1 à a41-s-4, quiz, figures, Pareto), chapters/A41/A41_d.html (Pharmacologie a41-p-1 à a41-p-4), des fenêtres ouvertes depuis ces fichiers (A41_pop2.html : a41-norad, a41-vaso, a41-hydro, a41-piptazo, pareto-a41-examens, pareto-a41-sciences, pareto-a41-pharma ; A41_pop_sciences_revision.html : a41-science-reading), de glossary/a41.py et de chapters/A41/A41_justifications.json (10 entrées), lus par git show au commit figé.",
+ "sha": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+ "empreintes_sha256": {
+  "chapters/A41/A41_c.html": "7b0767d8485e7b17c9d4d963621d722b640812cee6664554a147223105db3180",
+  "chapters/A41/A41_d.html": "508f1452d42ef543ba1fd7519150b98d3c71d2e11ef84cc91907376010aab204",
+  "chapters/A41/A41_pop2.html": "107ab25cb44237f62721bb5bfa85bb593f363bfa216c81438626647b067a14bd",
+  "chapters/A41/A41_pop_sciences_revision.html": "46d45aca44d3adb8ed104f7506221126c6cf4f8a355bdea035eb901b6b97832b",
+  "chapters/A41/A41_justifications.json": "c6dd7b6f9653cb6286315d8ba709d4d3e10e5711f2b80b3ee2303c534a5d3704",
+  "glossary/a41.py": "6ecaeda10acdab0f2825c1248b33c55859bf724338b473d49f7717a7e1c6fb38"
+ },
+ "sources_consultees": [
+  {
+   "reference": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026, Prescott H, Antonelli M et coll. ; page officielle SCCM (https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)",
+   "section": "Liste complète des 129 énoncés avec force, certitude et remarques (dépistage, biomarqueurs, hémocultures, lactate, antibiothérapie, contrôle du foyer, multirésistants, anaérobies, antifongiques, bêta-lactamines, TDM, désescalade, durée, fluides, vasopresseurs, inotropes, bêtabloquants, oxygénation, corticostéroïdes, traitements à éviter, mesures associées)",
+   "date": "2026-10-07",
+   "acces": "texte des énoncés et remarques en accès libre ; justifications et pratique déclarée du panel non accessibles"
+  },
+  {
+   "reference": "Même recommandation, Intensive Care Med 2026;52(5):863-936, DOI 10.1007/s00134-026-08361-1, PMID 41870560 ; Crit Care Med 2026;54(4):725-812, PMID 41869847 ; Executive Summary PMID 41869831 ; Publisher Correction PMID 42084789 (Intensive Care Med 2026;52(6):1411-1413)",
+   "section": "Métadonnées PubMed (existence, volume, pages) ; texte intégral non lu",
+   "date": "2026-10-07",
+   "acces": "métadonnées seulement : Springer renvoie un défi JavaScript, journals.lww.com renvoie HTTP 403 ; la correction d’éditeur n’a pas pu être lue"
+  },
+  {
+   "reference": "SCCM/ESICM, Quick guide for resuscitation and hemodynamic support in adults with sepsis and septic shock 2026 (PDF officiel sccm.org)",
+   "section": "Infographie complète",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "Evans L et coll. Surviving Sepsis Campaign 2021, Intensive Care Med 2021;47:1181-1247, PMC8486643",
+   "section": "Recommandation 38 (vasopressine, justification : 0,25–0,5 µg/kg/min) ; recommandation 58 (corticostéroïdes, remarque 200 mg/jour, ≥ 0,25 µg/kg/min au moins 4 h ; justification, RR faiblesse 1,21) ; section cultures (renvoi aux énoncés antérieurs, délai < 45 min) ; numérotation 36–62",
+   "date": "2026-10-07",
+   "acces": "texte intégral PMC via outil PubMed"
+  },
+  {
+   "reference": "Singer M et coll. Sepsis-3, JAMA 2016;315:801-810, PMID 26903338, DOI 10.1001/jama.2016.0287",
+   "section": "Résumé : définitions, critères du choc (vasopresseur pour PAM ≥ 65 mmHg et lactate > 2 mmol/L sans hypovolémie), qSOFA",
+   "date": "2026-10-07",
+   "acces": "résumé"
+  },
+  {
+   "reference": "Information professionnelle suisse Noradrenalin Sintetica (Swissmedic 67023), swissmedicinfo-pro.ch",
+   "section": "Composition (ut tartras), Posologie (8–12 µg/min ; paliers 0,05–0,1 µg/kg/min de noradrénaline base ; entretien moyen 2–4 µg/min ; jusqu’à 30 µg/min ; tableaux de titration jusqu’à 1 µg/kg/min), Contre-indications, Mises en garde (dysfonction VG : 2–4 µg/min ; 15 µg/min), extravasation, Propriétés ; mise à jour octobre 2020",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "Information professionnelle suisse Empressin (Swissmedic 66180)",
+   "section": "Indications, Posologie (0,01 puis jusqu’à 0,03 UI/min ; 40 UI dans 50 mL ; 65–75 mmHg ; pas de bolus ; > 65 ans, rein, foie), Effets indésirables (hyponatrémie) ; mise à jour septembre 2025",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "Information professionnelle suisse Solu-Cortef (Swissmedic 23533)",
+   "section": "Indications (choc par insuffisance corticosurrénalienne), Mises en garde (« L’importance des corticostéroïdes dans le traitement de chocs septiques est controversée. L’utilisation routinière … n’est pas recommandée »), présentations Act-O-Vial 100 et 250 mg/2 mL ; mise à jour octobre 2025",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "Information professionnelle suisse Piperacillin-Tazobactam Labatec (Swissmedic 60142)",
+   "section": "Posologie (2–4 g 3–4×/j ; 100–200 mg/kg/j), tableau rénal (40–20 mL/min : 4,5 g/8 h ; 19–2 mL/min et dialyse : 4,5 g/12 h ; 8 g/1 g max en HD + 2 g/0,25 g), perfusion de 30 min, stabilité 24 h à 15–25 °C, contre-indications, vancomycine, LHH > 10 jours, convulsions ; mise à jour mars 2026",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "Information professionnelle suisse Dobutrex (Swissmedic 45687)",
+   "section": "Composition (250 mg/50 mL, 5 mg/mL, métabisulfite), Indications (incluant « en cas de sepsis »), Posologie (2,5–10 µg/kg/min, jusqu’à 40), tableau 2,1 mL/h pour 70 kg, contre-indications, tolérance après 72 h, incompatibilités ; mise à jour juin 2023",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "Information professionnelle suisse Adrenalin Sintetica 1 mg/mL (Swissmedic 56551)",
+   "section": "Indications (choc anaphylactique, crise d’asthme, réanimation cardiopulmonaire ; pas de choc septique) ; mise à jour novembre 2024",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "DailyMed, Epinephrine Injection USP 1 mg/mL, setid 3fd8dd51-0aeb-43dd-9de0-c11b0330b15e",
+   "section": "1.1 et 2.2 Hypotension associated with septic shock (0,05–2 µg/kg/min ; paliers 0,05–0,2 µg/kg/min toutes les 10–15 min ; sevrage toutes les 30 min sur 12–24 h), 8.1 grossesse ; révision 10/2025",
+   "date": "2026-10-07",
+   "acces": "texte intégral"
+  },
+  {
+   "reference": "Essais (résumés PubMed) : ADRENAL PMID 29347874 ; APROCCHSS PMID 29490185 ; VASST PMID 18305265 ; SEPSISPAM PMID 24635770 ; essai 65 PMID 32049269 ; MERINO PMID 30208454 ; BLING III PMID 38864155 ; CLOVERS PMID 36688507 ; ANDROMEDA-SHOCK PMID 30772908 ; ANDROMEDA-SHOCK-2 PMID 41159835 ; BALANCE PMID 39565030 ; SOAP PMID 16424713 ; de Jong (SAPS) PMID 26947523",
+   "section": "Résumés : effectifs, schémas, critères principaux et chiffres",
+   "date": "2026-10-07",
+   "acces": "résumés"
+  },
+  {
+   "reference": "Garcia-Alvarez M, Marik P, Bellomo R. Sepsis-associated hyperlactatemia. Crit Care 2014;18:503, PMC4421917, DOI 10.1186/s13054-014-0503-3",
+   "section": "Métabolisme normal (LDH, NAD, ~30 % rénal), PDH, dysfonction mitochondriale, glycolyse adrénergique (Na/K-ATPase), source pulmonaire, clairance",
+   "date": "2026-10-07",
+   "acces": "texte intégral PMC"
+  },
+  {
+   "reference": "Sources de la banque de justifications (métadonnées et résumés PubMed) : Kim 2000 PMID 10947163 ; Bose 2016 PMID 27754788 ; Menguy 1974 PMID 4278107 ; Cheng 2019 PMID 31525774 ; Mermel 1993 PMID 8328734 ; Schmidt 2012 PMID 22820644 ; van der Velden 2000 PMID 10912459",
+   "section": "Titres, modèles, résultats principaux",
+   "date": "2026-10-07",
+   "acces": "résumés"
+  },
+  {
+   "reference": "Lee A et coll. Detection of bloodstream infections in adults: how many blood cultures are needed? J Clin Microbiol 2007;45:3546-8, PMID 17881544 ; Crass RL et coll. Renal dosing of antibiotics: are we jumping the gun? Clin Infect Dis 2019;68:1596-1602, PMID 30219824",
+   "section": "Résumés",
+   "date": "2026-10-07",
+   "acces": "résumés"
+  },
+  {
+   "reference": "Rybak MJ et coll. Vancomycin TDM consensus ASHP/IDSA/PIDS/SIDP, Am J Health Syst Pharm 2020;77:835-864, PMID 32191793 ; Landry DW, Oliver JA, NEJM 2001;345:588 (PMID 11529214) ; Brealey D et coll., Lancet 2002;360:219 (PMID 12133657) ; Hotchkiss RS et coll., Nat Rev Immunol 2013;13:862 (PMID 24232462) ; Jung B et coll., Ann Intensive Care 2019;9:92 (PMID 31418093)",
+   "section": "Identification bibliographique seulement (appariement de citation ou métadonnées)",
+   "date": "2026-10-07",
+   "acces": "métadonnées ; contenu non relu, proposé comme source à consulter pour la correction"
+  },
+  {
+   "reference": "CHUV, laboratoire de chimie clinique, intervalles de référence lactate/pyruvate (lien cité dans a41-e-3)",
+   "section": "Lien du chapitre",
+   "date": "2026-10-07",
+   "acces": "HTTP 404 au 07.10.2026 : non vérifié"
+  },
+  {
+   "reference": "HUG, répertoire des prestations d’analyses, fiche 2663 ; ssi.guidelines.ch (Société suisse d’infectiologie)",
+   "section": "Pages citées / recherchées",
+   "date": "2026-10-07",
+   "acces": "applications JavaScript non lisibles par l’outil : non vérifié"
+  },
+  {
+   "reference": "Contrôle d’abréviations build_medina.audit() exécuté sur une extraction git archive du commit figé (scratchpad, hors dépôt)",
+   "section": "A41_c.html, A41_d.html, A41_pop2.html, A41_pop_sciences_revision.html",
+   "date": "2026-10-07",
+   "acces": "résultat {} pour les quatre fichiers"
+  }
+ ],
+ "observations": [
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-1 (tableau, dernière ligne) et ensemble de l’onglet Examens ; pareto-a41-examens",
+   "citation": "« La Surviving Sepsis Campaign 2026 suggère de ne pas ajouter la procalcitonine à l’évaluation clinique pour décider du début. »",
+   "gravite": "majeure",
+   "raison": "L’onglet Examens ne traite les biomarqueurs inflammatoires que par cette phrase. La procalcitonine n’est ni définie (origine, stimulus, cinétique, valeur normale, causes de faux positifs et de faux négatifs), ni replacée dans son seul usage soutenu : l’aide à l’arrêt lorsque la durée est incertaine. La protéine C réactive n’apparaît nulle part dans le chapitre (recherche dans les huit HTML), alors qu’elle est l’examen inflammatoire le plus demandé et qu’un candidat doit savoir pourquoi elle ne diagnostique ni n’exclut le sepsis. Le contrat « pourquoi doser, comment interpréter, comment agir, limites ; normal avant pathologique » n’est pas rempli pour ces deux examens.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : « clinical evaluation alone over procalcitonin plus clinical evaluation to decide whether to start » (conditionnelle, très faible) ; « procalcitonin AND clinical evaluation to decide when to discontinue » (conditionnelle, faible) ; bonne pratique « Sepsis is a clinical diagnosis and should not be ruled in or ruled out using a single biomarker ». de Jong et coll., Lancet Infect Dis 2016;16:819-827 (PMID 26947523, résumé) : arrêt conseillé si baisse ≥ 80 % du pic ou ≤ 0,5 µg/L.",
+   "correction_attendue": "Ajouter dans a41-e-1/a41-e-2 un paragraphe ou une ligne « Biomarqueurs inflammatoires » : définition et production de la procalcitonine et de la protéine C réactive, valeurs usuelles d’un laboratoire suisse daté, cinétique, causes non infectieuses d’élévation, conduite (ne décide pas du début ; aide à l’arrêt selon la règle SAPS citée, avec force et certitude 2026) et limites ; renvoi vers a41-desescalade. Sourcer chaque valeur et cinétique dans une référence primaire effectivement lue."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-2, paragraphe 1",
+   "citation": "« Prélever des sites distincts suivant la procédure locale aseptique »",
+   "gravite": "majeure",
+   "raison": "Le texte ne donne ni le nombre de paires d’hémocultures, ni le volume par flacon, ni le principe de rendement qui les justifie. La fenêtre a41-cultures (A41_pop1.html, hors périmètre) dit seulement « plusieurs paires ». C’est une notion d’examen fédéral et un déterminant majeur de la sensibilité, que la justification a41-j-rendement-culture évoque sans chiffre. Le cas de suspicion d’infection de cathéter (paire couplée cathéter/périphérie) n’est pas mentionné.",
+   "source": "Lee A et coll., J Clin Microbiol 2007;45:3546-8 (PMID 17881544, résumé) : deux hémocultures de 20 mL détectent environ 90 % des bactériémies, trois environ 98 % ; Mermel et Maki, Ann Intern Med 1993 (PMID 8328734, résumé) : rendement +3 % environ par millilitre ; Cheng et coll., Ann Intern Med 2019 (PMID 31525774, résumé) : positivité 31,4 % avant contre 19,4 % après antibiotique ; SSC 2021 (PMC8486643), section cultures : prélèvement si le délai reste < 45 min.",
+   "correction_attendue": "Préciser : au moins deux paires (flacon aérobie + anaérobie) issues de ponctions distinctes, volume par flacon selon le fabricant (environ 8–10 mL, soit environ 20 mL par paire), avant l’antibiotique si cela ne le retarde pas ; chiffres de rendement sourcés ; paire couplée cathéter/périphérie en cas de suspicion de bactériémie liée au cathéter, avec une source (recommandation IDSA/ASM ou Swissnoso) effectivement lue."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-3, paragraphe après le tableau ; a41-e-1 (ligne gaz du sang)",
+   "citation": "« La gazométrie artérielle mesure directement pression artérielle en oxygène et pH ; le score SOFA exige plusieurs dimensions d’organe. »",
+   "gravite": "majeure",
+   "raison": "La gazométrie est l’examen central de la défaillance respiratoire et de l’acidose, mais l’onglet ne donne ni valeurs normales (pH, PaCO₂, PaO₂, bicarbonate, trou anionique), ni méthode d’interprétation (trouble primaire, compensation, acidose lactique avec alcalose respiratoire précoce), ni limites de l’oxymétrie que la SSC 2026 détaille. La règle MEDINA « normal avant pathologique ; exemples chiffrés » n’est pas respectée. La phrase citée juxtapose deux idées sans lien.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : énoncé oxygénation (conditionnelle, très faible) et remarque : gazométrie artérielle « gold standard », renseigne pH, PaCO₂, lactate, bicarbonate ; SpO₂/FiO₂ moins précis en choc, chez les peaux foncées et pour des saturations < 90 % ou > 97 %. Justification a41-j-gazometrie (Jung et coll. 2019, PMC6695455) déjà dans la banque.",
+   "correction_attendue": "Développer a41-e-3 : valeurs usuelles datées d’un laboratoire suisse, lecture en étapes (pH → trouble primaire → compensation → trou anionique et lactate), exemple chiffré (Mme R.), rapport PaO₂/FiO₂ pour le SOFA, limites de la SpO₂ selon la remarque 2026, place du gaz veineux pour le lactate et le pH. Scinder la phrase citée."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-3, paragraphe 1",
+   "citation": "« le lactate est un peu plus élevé à l’état nourri qu’à jeun et augmente après l’effort »",
+   "gravite": "mineure",
+   "raison": "Affirmation non sourcée par un document accessible (le lien CHUV renvoie 404) ; les facteurs préanalytiques les plus pertinents en urgence ne sont pas cités : garrot prolongé, délai d’analyse et glycolyse in vitro, prélèvement veineux ou artériel.",
+   "source": "Lien CHUV testé le 07.10.2026 : HTTP 404 ; Garcia-Alvarez et coll. 2014 (PMC4421917) pour la production et l’élimination, sans donnée sur l’état nourri.",
+   "correction_attendue": "Sourcer l’effet de l’alimentation ou le retirer ; ajouter les conditions préanalytiques (prélèvement sans garrot prolongé, analyse rapide ou sur glace selon le laboratoire), avec une source de laboratoire suisse accessible."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-3, encadré « Références des valeurs usuelles » ; pareto-a41-examens",
+   "citation": "« Consultées le 26.09.2026 : … Centre hospitalier universitaire vaudois … version 1.0 du 22.11.2022 ; … Hôpitaux universitaires de Genève … fiche 2663 »",
+   "gravite": "mineure",
+   "raison": "Le document CHUV n’est plus accessible (HTTP 404 au 07.10.2026) et la fiche HUG est une application dynamique non vérifiable par l’auditeur. Les valeurs 0,5–1,5 mmol/L, > 2,0 mmol/L et 150–450 × 10⁹/L restent donc des réserves.",
+   "source": "Tentatives d’accès du 07.10.2026 (curl via le mandataire de session).",
+   "correction_attendue": "Remplacer par une source stable (document daté, archive ou page d’analyse lisible), conserver la date de consultation et vérifier les valeurs."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-1, paragraphe « Références diagnostiques distinctes. » ; a41-e-3, phrase SOFA",
+   "citation": "« Références diagnostiques distinctes. »",
+   "gravite": "redactionnelle",
+   "raison": "Phrase nominale et juxtaposition d’idées sans lien, contraires à docs/STYLE_REDACTION.md (phrases courtes et complètes, jamais nominales).",
+   "source": "docs/STYLE_REDACTION.md (dépôt).",
+   "correction_attendue": "Réécrire en phrases complètes : « Trois questions ont chacune leur examen de référence. »"
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-4",
+   "citation": "« Une radiographie ou une échographie thoracique recherche un foyer pulmonaire ; … Une voie urinaire obstructive infectée nécessite un avis pour décompression »",
+   "gravite": "mineure",
+   "raison": "L’échographie au lit n’est décrite ni dans son principe ni dans ses usages (fonction ventriculaire pour la cardiomyopathie septique, veine cave, poumon, hydronéphrose, collections), alors que le cas de Mme R. en dépend (A41_b, 9.10). La décompression d’une voie urinaire obstruée et infectée est une urgence, pas un simple « avis ». La phrase sur la tomodensitométrie peut faire renoncer au produit de contraste chez un patient en atteinte rénale sans pesée bénéfice/risque explicite.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : bonne pratique « rapidly evaluated for specific anatomical diagnoses or sources of infection that require emergent source control » ; contrôle du foyer idéalement dans les 6 h (conditionnelle, très faible) ; la remarque sur le débit cardiaque précise que l’échographie de soins critiques n’a pas été évaluée.",
+   "correction_attendue": "Ajouter un paragraphe sur l’échographie au lit (questions, limites, absence d’énoncé 2026), écrire « décompression urgente (sonde urétérale ou néphrostomie) », et expliciter la décision de contraste comme une pesée bénéfice/risque sourcée."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-5, quiz 1 (énoncé)",
+   "citation": "« Une patiente fébrile, stable, avec infection seulement possible et sans choc, présente des arguments alternatifs plausibles. »",
+   "gravite": "mineure",
+   "raison": "L’énoncé SSC 2026 concerne le « sepsis possible sans choc », c’est-à-dire une dysfonction d’organe aiguë dont l’origine infectieuse est incertaine. L’énoncé du quiz ne mentionne aucune dysfonction d’organe et qualifie la patiente de « stable » : sans dysfonction, il ne s’agit pas d’un sepsis et la recommandation ne s’applique pas telle quelle. La bonne réponse (trois heures) reste juste pour le cas visé.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : « For adults with possible sepsis without shock, we suggest a time-limited course of rapid investigation and if concern for infection persists, … within 3 hours » (conditionnelle, très faible).",
+   "correction_attendue": "Reformuler : « sepsis possible sans choc : confusion nouvelle et polypnée, infection incertaine (arguments alternatifs plausibles) »."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-5, quiz 3 (question)",
+   "citation": "« Quel élément change le pronostic immédiat en plus des antibiotiques ? »",
+   "gravite": "mineure",
+   "raison": "La recommandation de contrôle précoce du foyer est conditionnelle à certitude très faible : l’affirmation d’un effet démontré sur le pronostic dépasse la preuve citée dans l’explication.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : contrôle du foyer précoce, idéalement dans les 6 h (conditionnelle, très faible).",
+   "correction_attendue": "Écrire « Quel élément est prioritaire en plus des antibiotiques ? » et rappeler la force et la certitude dans l’explication."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-e-1 (tableau des questions et examens)",
+   "citation": "Tableau « Question | Examen | Statut et réserve » sans ligne de dépistage ni de score",
+   "gravite": "mineure",
+   "raison": "Les scores SOFA, qSOFA, NEWS2 n’apparaissent pas dans l’onglet Examens, alors que la SSC 2026 formule une recommandation forte sur le choix de l’outil de dépistage. Ils sont traités dans la Pathologie (a41-7) et les fenêtres, mais l’onglet ne les relie pas à la décision d’examen.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : « we recommend using NEWS, NEWS2, MEWS, or SIRS over qSOFA as a single tool to screen for sepsis » (forte, modérée).",
+   "correction_attendue": "Ajouter une ligne « Le patient doit-il être dépisté ou réévalué ? » avec NEWS2/qSOFA/SOFA, la force de l’énoncé 2026 et un renvoi à a41-7, a41-sofa et a41-news2."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-s-1, a41-s-2, a41-s-4 (Anatomie, Histologie, Immunologie) et paragraphe final « Les développements sont rapprochés des références spécialisées suivantes … Recommandations internationales du sepsis 2026 »",
+   "citation": "« Des médiateurs contribuent au tonus vasculaire, à la perméabilité et aux interactions de coagulation. » ; « Les cellules de l’immunité innée reconnaissent des motifs microbiens et des signaux de dommage. »",
+   "gravite": "majeure",
+   "raison": "L’onglet Sciences reste plus général que la section Pathologie a41-3, qu’il devrait approfondir. Il ne nomme aucun mécanisme moléculaire : récepteurs de reconnaissance et signaux microbiens ou de dommage, cytokines, NO synthase inductible et canaux potassiques ATP-dépendants de la vasoplégie, déficit relatif en vasopressine, désensibilisation adrénergique, facteur tissulaire, consommation d’antithrombine et de protéine C, inhibition de la fibrinolyse, dysfonction mitochondriale et ses limites, apoptose lymphocytaire et baisse de HLA-DR. Les trois parties hors lactate ne citent aucune source primaire ; la seule référence finale est la page SSC 2026, qui n’est pas une source de mécanisme. La consigne de Vial du 07.10.2026 (mécanisme causal précis, limites, source primaire) n’est pas satisfaite pour ces parties. Les sujets demandés à l’audit (vasoplégie, dysfonction mitochondriale, coagulation) sont absents de l’onglet Sciences.",
+   "source": "CLAUDE.md, « Justifier chaque affirmation » ; A41_a.html a41-3 (cohérence) ; Garcia-Alvarez 2014 (PMC4421917) : données discordantes sur la dysfonction mitochondriale (ATP conservé chez les survivants ; Brealey 2002 cité) ; sources de mécanisme proposées, identifiées mais non relues : Landry et Oliver, NEJM 2001 (PMID 11529214) ; Brealey et coll., Lancet 2002 (PMID 12133657) ; Hotchkiss et coll., Nat Rev Immunol 2013 (PMID 24232462).",
+   "correction_attendue": "Réécrire chaque discipline du normal au pathologique avec les étapes nommées, une source primaire lue par paragraphe et les limites (modèles animaux, essais négatifs des immunomodulateurs). Ajouter une partie « Vaisseau et coagulation » et une partie « Cellule et mitochondrie », sans recopier a41-3 mais en l’approfondissant ; remplacer la référence finale générique par les sources effectivement utilisées."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-s-3, sous-partie « Pression, débit et apport d’oxygène »",
+   "citation": "« La pression artérielle moyenne dépend approximativement du débit cardiaque et des résistances vasculaires, avec la pression veineuse comme autre terme. … L’apport d’oxygène dépend du débit et du contenu artériel. »",
+   "gravite": "mineure",
+   "raison": "Les relations sont exactes mais restent verbales : ni équation, ni valeur normale, ni exemple chiffré (règle MEDINA n° 7). Le lecteur ne peut pas calculer pourquoi une anémie ou un débit bas réduisent l’apport malgré une SpO₂ normale, exemple que la consigne de Vial cite expressément.",
+   "source": "CLAUDE.md (consigne anémie et transport d’oxygène) ; physiologie standard à citer dans une source primaire ou un manuel effectivement lu.",
+   "correction_attendue": "Ajouter PAM ≈ DC × RVS + PVC, DO₂ = DC × CaO₂, CaO₂ = 1,34 × Hb × SaO₂ + 0,003 × PaO₂, avec valeurs normales et un exemple chiffré (hémoglobine 140 contre 80 g/L), sourcés."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-s-3, sous-partie « Plusieurs voies augmentent le lactate »",
+   "citation": "« Une élimination diminuée, notamment en cas d’insuffisance hépatique, peut maintenir une concentration élevée. »",
+   "gravite": "mineure",
+   "raison": "La phrase est juste pour l’insuffisance hépatique, mais la source citée précise qu’au cours du sepsis grave l’hyperlactatémie relève surtout d’une production accrue, l’élimination restant proche de celle des sujets sains, et que le poumon peut être une source nette. L’inhibition tardive de la pyruvate déshydrogénase, autre mécanisme non hypoxique, n’est pas mentionnée.",
+   "source": "Garcia-Alvarez et coll., Crit Care 2014;18:503 (PMC4421917), sections « Pyruvate dehydrogenase », « Adrenergic-driven aerobic glycolysis » (Revelly), « Where does lactate come from in sepsis? ».",
+   "correction_attendue": "Ajouter la nuance production/élimination selon la source, la pyruvate déshydrogénase et la production pulmonaire, en signalant le caractère expérimental de certaines données."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-s-4, sous-partie « Un mécanisme plausible n’est pas une indication »",
+   "citation": "« Une culture positive documente une infection, mais une défaillance d’organe reste nécessaire à l’interprétation du syndrome de sepsis. »",
+   "gravite": "mineure",
+   "raison": "Contradiction interne avec a41-e-2, qui rappelle à juste titre qu’une culture positive peut représenter une contamination ou une colonisation.",
+   "source": "A41_c.html a41-e-2 ; fenêtre a41-cultures (staphylocoque à coagulase négative dans un seul flacon).",
+   "correction_attendue": "Écrire « Une culture positive concordante avec le foyer documente une infection »."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html",
+   "repere": "a41-s-1 à a41-s-4 : encadrés « Science → clinique / examen / traitement », « À retenir » et pareto-a41-sciences",
+   "citation": "« Science → traitement. Le soutien circulatoire vise une perfusion suffisante avec réévaluation ; il ne poursuit pas un chiffre isolé. »",
+   "gravite": "redactionnelle",
+   "raison": "Les douze encadrés et le Pareto reprennent presque mot pour mot les paragraphes précédents (perfusion, lactate « chiffre isolé », source anatomique), sans information nouvelle ; le Pareto Sciences recopie les quatre « À retenir ». La consigne demande de supprimer répétitions et remplissage sans perte d’information.",
+   "source": "CLAUDE.md, consigne du 07.10.2026 ; docs/STYLE_REDACTION.md.",
+   "correction_attendue": "Fusionner les encadrés redondants et réserver le Pareto aux 20 % de notions chiffrées et mécanistiques les plus utiles."
+  },
+  {
+   "fichier": "chapters/A41/A41_c.html ; chapters/A41/A41_d.html",
+   "repere": "Légendes Sciences et barres de navigation",
+   "citation": "« Figure — Barrières et foyers : … » ; « ← Îlot précédent / Îlot suivant → »",
+   "gravite": "redactionnelle",
+   "raison": "Les quatre figures Sciences ne sont pas numérotées, contrairement aux figures 1 à 3 de la Pathologie. Les barres de navigation de A41_c et A41_d gardent « Îlot », alors que les libellés de A41_b ont été harmonisés et que la consigne écarte la description de la fabrication du cours.",
+   "source": "INVENTAIRE_BASE.md de Codex (légendes « Figure — » sans numéro) ; CLAUDE.md (pas de mention « cet îlot »).",
+   "correction_attendue": "Numéroter les figures (Figure 4 à 7) et harmoniser le libellé du pager avec A41_b."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html ; chapters/A41/A41_pop2.html",
+   "repere": "a41-p-2, ligne Noradrénaline, colonne « Entretien ou plafond » ; fenêtre a41-norad ; pareto-a41-pharma",
+   "citation": "« Dose d’entretien moyenne : 2–4 µg/min ; jusqu’à 30 µg/min en cas de choc réfractaire. » ; « L’information suisse ne fixe pas d’autre plafond »",
+   "gravite": "majeure",
+   "raison": "Les chiffres sont fidèles au texte de l’information professionnelle, mais leur présentation dans une colonne « plafond » et dans le Pareto laisse croire que 30 µg/min est une dose maximale dans le choc septique. La même information professionnelle titre ensuite jusqu’à 1 µg/kg/min (4,2 mg/h, soit 70 µg/min, pour 70 kg). Le chapitre est aussi incohérent avec lui-même : l’ajout de vasopressine est situé à 0,25–0,5 µg/kg/min (17,5–35 µg/min) et l’hydrocortisone à ≥ 0,25 µg/kg/min, valeurs très supérieures à « l’entretien moyen » de 2–4 µg/min. Un apprenant peut sous-traiter un choc réfractaire en croyant atteindre la limite autorisée.",
+   "source": "Information professionnelle Noradrenalin Sintetica (67023, octobre 2020), Posologie : « La dose peut aller jusqu’à 30 µg/minute chez les patients avec un choc réfractaire » et tableaux de titration 0,05 ; 0,1 ; 0,25 ; 0,5 ; 1 µg/kg/min de noradrénaline base ; SSC 2021 (PMC8486643), recommandation 38 et 58.",
+   "correction_attendue": "Supprimer le mot « plafond » ; présenter les doses de l’information professionnelle comme des repères d’étiquetage, ajouter que ses tableaux vont jusqu’à 1 µg/kg/min et qu’aucune dose maximale fixe ne s’applique au choc septique ; titrer sur la cible de PAM et la perfusion ; situer les seuils 0,25–0,5 µg/kg/min de la vasopressine et de l’hydrocortisone dans la même échelle. Corriger le Pareto en conséquence."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html ; chapters/A41/A41_pop2.html",
+   "repere": "pareto-a41-pharma (4e point) ; a41-p-2, ligne Pipéracilline/tazobactam ; fenêtre a41-piptazo",
+   "citation": "« Après dose de charge, perfusion prolongée de bêta-lactamine pour l’entretien selon la Surviving Sepsis Campaign 2026 ; pipéracilline/tazobactam 4 g/0,5 g en 30 minutes toutes les 8 heures (toutes les 12 heures sous 20 mL/min de filtration glomérulaire) »",
+   "gravite": "majeure",
+   "raison": "Le résumé à mémoriser associe une recommandation forte de perfusion prolongée à un schéma en bolus de 30 minutes, sans proposer aucun schéma de perfusion prolongée ou continue. Il applique aussi la réduction rénale sans réserve, alors que l’insuffisance rénale aiguë d’admission régresse souvent en 48 heures et qu’une réduction précoce expose à un sous-dosage pendant la phase où la mortalité dépend de l’efficacité antibiotique. L’essai MERINO, cité dans la fenêtre, utilisait 4,5 g toutes les 6 heures.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : « we recommend using prolonged infusion of beta-lactams for maintenance (after an initial loading dose) over bolus administration » (forte, modérée) ; TDM au cas par cas (conditionnelle, très faible). Information professionnelle Labatec (60142) : perfusion de 30 min, tableau rénal. Crass et coll., Clin Infect Dis 2019 (PMID 30219824, résumé) : IRA d’admission résolue à 48 h dans 57,2 % des cas. BLING III (PMID 38864155) : dose de 24 h équivalente en continu ou en intermittent. MERINO (PMID 30208454) : 4,5 g toutes les 6 h.",
+   "correction_attendue": "Donner un exemple de schéma de perfusion prolongée ou continue validé par une source effectivement lue (dose de charge en 30 min puis perfusion prolongée), en précisant qu’il s’écarte du mode d’administration de l’information suisse et qu’il suit le protocole de la pharmacie hospitalière ; préciser que l’adaptation rénale de l’entretien se discute après les premières 24–48 h si l’atteinte rénale persiste, avec dosage sanguin si disponible ; corriger le Pareto."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html",
+   "repere": "a41-p-1 et a41-p-2 (ensemble de l’onglet Pharmacologie)",
+   "citation": "Tableau « Doses exemples et limites de transposition » : seule bêta-lactamine décrite = pipéracilline/tazobactam ; vancomycine citée seulement comme interaction",
+   "gravite": "majeure",
+   "raison": "L’onglet ne présente ni les autres antibiotiques empiriques usuels du sepsis selon le foyer (céphalosporines de 3e ou 4e génération, carbapénème si risque de bêta-lactamase à spectre étendu), ni la vancomycine (indication si risque de SARM, dose de charge, surveillance par aire sous la courbe ou concentration résiduelle, néphrotoxicité), ni les aminosides (effet concentration-dépendant, dose unique journalière, place discutée en association dans le choc, oto- et néphrotoxicité, dosage). Les doses, adaptations rénales et autorisations suisses de ces molécules ne sont donc pas vérifiables par l’apprenant. La demande d’audit visait explicitement aminosides et vancomycine.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : couverture d’un pathogène multirésistant si risque élevé (conditionnelle, très faible) avec facteurs de risque listés ; TDM au cas par cas. Information professionnelle Labatec : interaction vancomycine et inactivation in vitro des aminosides. Rybak et coll., Am J Health Syst Pharm 2020 (PMID 32191793, métadonnées seulement) pour la surveillance de la vancomycine.",
+   "correction_attendue": "Ajouter un tableau « foyer probable → schéma empirique » fondé sur une recommandation suisse ou européenne effectivement lue (Société suisse d’infectiologie si accessible) et des lignes vancomycine et aminoside (gentamicine ou amikacine) avec mécanisme, dose de l’information professionnelle suisse, adaptation rénale, interactions, surveillance et dosage sanguin."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html ; chapters/A41/A41_pop2.html",
+   "repere": "Fenêtres a41-norad, a41-vaso, a41-hydro, a41-piptazo (paragraphes « Mécanisme ») ; a41-p-1",
+   "citation": "« Agonisme surtout alpha-adrénergique, vasoconstriction artériolaire et restauration de la pression de perfusion ; effet cardiaque selon la dose et le terrain. » ; « Les glucocorticoïdes modulent l’inflammation et améliorent la réactivité vasculaire. » ; « Pipéracilline inhibe la synthèse de paroi bactérienne »",
+   "gravite": "majeure",
+   "raison": "Les mécanismes sont nommés sans chaîne causale. Il manque la voie récepteur → effet (α1 couplé à Gq, calcium intracellulaire et contraction ; β1 et inotropisme modeste), le déficit relatif en vasopressine du choc septique qui explique l’effet épargnant de l’argipressine, les effets de l’hydrocortisone sur les récepteurs adrénergiques et la NO synthase inductible, la cible de la pipéracilline (protéines de liaison à la pénicilline) et le spectre d’inhibition du tazobactam. Sans ce dernier point, l’échec de MERINO contre les entérobactéries productrices de bêta-lactamase à spectre étendu reste inexpliqué. La consigne du 07.10.2026 exige le mécanisme précis pour chaque décision.",
+   "source": "CLAUDE.md, « Justifier chaque affirmation » ; information professionnelle Noradrenalin Sintetica, Propriétés/Effets (« stimule les récepteurs alpha-adrénergiques » ; effet bêta-adrénergique cardiaque) ; Landry et Oliver, NEJM 2001 (PMID 11529214, identifié, non relu).",
+   "correction_attendue": "Pour chaque monographie : récepteur ou cible, voie de transduction, effet hémodynamique ou microbiologique, conséquence clinique, limites, source primaire lue."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html ; chapters/A41/A41_pop2.html",
+   "repere": "a41-p-1, avant-dernière phrase du 2e paragraphe ; a41-p-2 (ligne Noradrénaline) ; pareto-a41-pharma",
+   "citation": "« L’information professionnelle suisse de la noradrénaline prévoit, en cas de dysfonction ventriculaire gauche majeure avec hypotension aiguë, un début à 2–4 µg/min augmenté progressivement. »",
+   "gravite": "mineure",
+   "raison": "Placée juste après l’énoncé 2026 sur le choc septique avec dysfonction cardiaque, la phrase suggère que 2–4 µg/min s’applique à la cardiomyopathie septique. L’information professionnelle réserve ce passage au choc cardiogénique avec hypotension réfractaire. La fenêtre a41-norad donne ce contexte, mais pas a41-p-1 ni le Pareto.",
+   "source": "Information professionnelle Noradrenalin Sintetica (67023), Mises en garde : « La noradrénaline doit être réservée aux patients atteints de choc cardiogénique et d’une hypotension réfractaire … 2 à 4 µg/mn … 15 µg/mn ».",
+   "correction_attendue": "Préciser « dans le choc cardiogénique » ou déplacer la phrase vers la fenêtre seulement, et retirer cet élément du Pareto."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html ; chapters/A41/A41_pop2.html",
+   "repere": "a41-p-2, ligne Noradrénaline ; fenêtre a41-norad",
+   "citation": "« texte commun aux quatre concentrations (0,06 ; 0,10 ; 0,12 et 0,20 mg/mL) : les doses en µg/min et en µg/kg/min valent pour toutes »",
+   "gravite": "mineure",
+   "raison": "Les doses de l’information professionnelle suisse sont exprimées en noradrénaline base, alors que d’autres pays et plusieurs essais les expriment en sel (tartrate), presque deux fois plus lourd. Sans cette précision, la comparaison avec les seuils de la littérature (0,25 µg/kg/min) peut doubler ou diviser la dose.",
+   "source": "Information professionnelle Noradrenalin Sintetica (67023) : « Noradrenalinum (ut Noradrenalini tartras) » ; « paliers de 0,05 à 0,1 µg/kg/minute de noradrénaline base ».",
+   "correction_attendue": "Ajouter « doses exprimées en noradrénaline base ; 1 mg de base correspond à environ 2 mg de tartrate (à vérifier dans la source) ; vérifier l’expression utilisée par chaque essai ou protocole »."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html",
+   "repere": "a41-p-2, ligne Dobutamine",
+   "citation": "« Information professionnelle suisse Dobutrex (autorisation 45687, juin 2023), adulte : perfusion continue … »",
+   "gravite": "mineure",
+   "raison": "La ligne ne dit pas que l’information suisse cite le sepsis parmi les usages de la dobutamine, alors que la même table qualifie précisément l’adrénaline d’emploi hors indication. L’apprenant ne peut donc pas comparer le statut d’autorisation des deux inotropes.",
+   "source": "Information professionnelle Dobutrex (45687), Indications : « L’usage de Dobutrex est en outre indiqué … en cas de sepsis et d’hypovolémie, en association avec un remplissage vasculaire ».",
+   "correction_attendue": "Mentionner l’indication suisse (bas débit, y compris en cas de sepsis) à côté de l’énoncé SSC 2026."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html",
+   "repere": "a41-p-4, paragraphe 1",
+   "citation": "« La Surviving Sepsis Campaign 2026 suggère de ne pas employer la vitamine C par voie intraveineuse, les immunoglobulines intraveineuses ni les techniques de purification sanguine … ni les bêtabloquants … »",
+   "gravite": "mineure",
+   "raison": "Liste exacte mais incomplète des « suggest against » de 2026 relevant de la pharmacologie : hémoperfusion à la polymyxine B (énoncé distinct), vitamine D, probiotiques, XueBiJing hors juridiction autorisée, lévosimendan ; bicarbonate seulement si pH ≤ 7,2 avec atteinte rénale de stade 2–3.",
+   "source": "Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 : énoncés polymyxine B (conditionnelle, faible), vitamine D (très faible), probiotiques (très faible), XueBiJing (très faible), lévosimendan (faible), bicarbonate (faible et très faible).",
+   "correction_attendue": "Compléter la liste ou renvoyer explicitement vers A41_b 9.6–9.7, avec force et certitude."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html ; chapters/A41/A41_pop2.html",
+   "repere": "a41-p-3, paragraphe de surveillance ; fenêtres a41-hydro et a41-vaso",
+   "citation": "« Sous hydrocortisone, suivre glycémie et risque infectieux secondaire ; réévaluer son indication lorsque le choc régresse. »",
+   "gravite": "mineure",
+   "raison": "La surveillance omet l’hypernatrémie et la faiblesse neuromusculaire, que la fenêtre a41-hydro attribue elle-même à la méta-analyse de 2026 (RR 1,64) et à la justification de 2021 (RR 1,21). Elle omet aussi l’hyponatrémie sous argipressine, citée dans la fenêtre a41-vaso et dans l’information professionnelle.",
+   "source": "SSC 2021 (PMC8486643), recommandation 58, justification : faiblesse neuromusculaire RR 1,21 ; information professionnelle Empressin (66180) : hyponatrémie (occasionnelle).",
+   "correction_attendue": "Ajouter natrémie (hyper- sous hydrocortisone, hypo- sous argipressine) et force musculaire à la surveillance."
+  },
+  {
+   "fichier": "chapters/A41/A41_d.html",
+   "repere": "a41-p-3, paragraphe « Suivre pression artérielle moyenne … » ; a41-p-2 (cellules de sources)",
+   "citation": "« Suivre pression artérielle moyenne, rythme cardiaque, lactate sériel si indiqué, perfusion cutanée et diurèse pendant vasopresseur. Sous antibiotique, suivre fonction rénale, efficacité du foyer, cultures et manifestations allergiques »",
+   "gravite": "redactionnelle",
+   "raison": "Phrases télégraphiques sans articles. Les cellules du tableau a41-p-2 mêlent doses, statut réglementaire, grossesse, extravasation et références en un seul bloc de plusieurs centaines de mots, ce qui rend la lecture d’une dose difficile.",
+   "source": "docs/STYLE_REDACTION.md (tableaux introduits et commentés, phrases complètes).",
+   "correction_attendue": "Rédiger des phrases complètes (« Pendant le vasopresseur, l’équipe suit … ») et séparer, dans a41-p-2, doses, adaptations, surveillance et références en colonnes ou sous-lignes distinctes."
+  },
+  {
+   "fichier": "chapters/A41/A41_justifications.json",
+   "repere": "a41-j-glycemie, sources",
+   "citation": "« Bose et al. — récepteur glucocorticoïde hépatique et production de glucose, recherche originale, 2016 »",
+   "gravite": "mineure",
+   "raison": "La source porte sur un syndrome métabolique induit par la dexaméthasone pendant 2 semaines chez des souris à invalidation tissulaire ; elle ne documente ni l’hyperglycémie de stress ni l’effet de l’hydrocortisone dans le choc. La limite indiquée ne décrit pas cette différence de modèle.",
+   "source": "PubMed PMID 27754788 (résumé, Endocrinology 2016;157:4943-4960).",
+   "correction_attendue": "Remplacer ou compléter par une source sur l’hyperglycémie de stress et sur l’hyperglycémie sous hydrocortisone dans les essais du choc (par exemple APROCCHSS, PMID 29490185 : hyperglycémie plus fréquente), en préservant la limite de modèle."
+  },
+  {
+   "fichier": "chapters/A41/A41_justifications.json",
+   "repere": "a41-j-muqueuse-gastrique, limites",
+   "citation": "« L’ischémie n’explique pas seule toutes les ulcérations. »",
+   "gravite": "mineure",
+   "raison": "La source unique (Menguy 1974) étudie le choc hémorragique chez le rat et le lapin, pas le choc septique ; la limite ne le précise pas. L’implication ne cite pas l’énoncé 2026 précis (IPP si facteurs de risque, conditionnelle, modérée).",
+   "source": "PubMed PMID 4278107 (Ann Surg 1974, résumé) ; Surviving Sepsis Campaign 2026 (Prescott, Antonelli et coll.), énoncés officiels avec force, certitude et remarques, page SCCM consultée le 07.10.2026 (prophylaxie de l’ulcère de stress).",
+   "correction_attendue": "Préciser le modèle (choc hémorragique, animal) et citer l’énoncé 2026 avec force et certitude."
+  },
+  {
+   "fichier": "chapters/A41/A41_justifications.json",
+   "repere": "a41-j-rendement-culture, mécanisme et implication",
+   "citation": "« Un volume adapté augmente cette probabilité d’échantillonnage. »",
+   "gravite": "mineure",
+   "raison": "Les sources citées contiennent les chiffres qui justifient l’affirmation, mais la fenêtre n’en donne aucun (exemples chiffrés exigés).",
+   "source": "Mermel et Maki 1993 (PMID 8328734) : environ +3 % par mL, 92 % contre 69 % de détection ; Cheng 2019 (PMID 31525774) : 31,4 % contre 19,4 % de positivité, sensibilité après antibiotique 52,9 %.",
+   "correction_attendue": "Ajouter ces chiffres et le nombre de paires (Lee 2007, PMID 17881544)."
+  },
+  {
+   "fichier": "chapters/A41/A41_justifications.json",
+   "repere": "Entrées a41-j-selection, a41-j-glycemie, a41-j-muqueuse-gastrique, a41-j-rendement-culture, a41-j-starling, a41-j-rythme, a41-j-renal-antibiotique (sources SSC et DailyMed)",
+   "citation": "« SCCM/ESICM — Surviving Sepsis Campaign, recommandations adultes 2026 » (https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines) ; « DailyMed — information officielle de la noradrénaline … » ; « DailyMed — information officielle pipéracilline/tazobactam … »",
+   "gravite": "mineure",
+   "raison": "La recommandation est citée par une page d’accueil générique, sans énoncé ni section ; une même référence soutient des affirmations sans lien (sélection, rythme, rein). Pour la noradrénaline et la pipéracilline/tazobactam, l’information professionnelle suisse existe et contient l’effet recherché (convulsions à dose élevée en insuffisance rénale ; effet bêta-adrénergique cardiaque), alors que le projet impose les sources suisses d’abord.",
+   "source": "Information professionnelle Labatec (60142) : « convulsions … notamment après l’administration de doses élevées ou chez l’insuffisant rénal » ; information Noradrenalin Sintetica (67023), Effets indésirables ; CLAUDE.md (sources suisses d’abord).",
+   "correction_attendue": "Citer l’énoncé SSC 2026 précis pour chaque entrée, et remplacer ou compléter DailyMed par l’information professionnelle suisse."
+  },
+  {
+   "fichier": "glossary/a41.py",
+   "repere": "a('SOFA', …)",
+   "citation": "« ('S','Sequential'),('O','Organ'),('F','Failure'),('A','Assessment') »",
+   "gravite": "redactionnelle",
+   "raison": "Le développement est exact, mais Sepsis-3 écrit « Sequential [Sepsis-related] Organ Failure Assessment ». Mentionner le nom d’origine évite une confusion avec les sources anciennes.",
+   "source": "Singer et coll., JAMA 2016 (PMID 26903338), résumé.",
+   "correction_attendue": "Ajouter dans la définition : « nommé à l’origine Sepsis-related Organ Failure Assessment »."
+  },
+  {
+   "fichier": "glossary/a41.py",
+   "repere": "a('APROCCHSS', …)",
+   "citation": "« ('C','C and'),('C','Corticosteroids for') »",
+   "gravite": "redactionnelle",
+   "raison": "Le découpage lettre à lettre range des mots de liaison dans les lettres (« C and », « Corticosteroids for »), ce qui rend la définition littérale peu lisible ; le développement « Activated Protein C and Corticosteroids for Human Septic Shock » est par ailleurs juste.",
+   "source": "Résumé APROCCHSS (PMID 29490185) ; règle n° 3 (définition littérale lettre à lettre).",
+   "correction_attendue": "Écrire A = Activated, PRO = PROtein, C = C, C = Corticosteroids, H = Human, S = Septic, S = Shock, et signaler les mots de liaison « and » et « for » hors sigle."
+  }
+ ],
+ "points_verifies_conformes": [
+  {
+   "repere": "A41_c a41-e-1, ligne hémocultures ; a41-e-2 : hémocultures le plus tôt possible, idéalement avant l’antibiotique, sans retarder le traitement",
+   "source": "SSC 2026, énoncé hémocultures (forte, faible) ; SSC 2021 PMC8486643, section cultures"
+  },
+  {
+   "repere": "A41_c a41-e-1, ligne lactate « Mesure suggérée » ; a41-s-3 et quiz Sciences : mesures répétées, pas de fluides jusqu’à normalisation",
+   "source": "SSC 2026, énoncés lactate (conditionnelle, faible) et lactate sériel avec remarque « rather than continuing fluids until lactate normalization »"
+  },
+  {
+   "repere": "A41_c a41-e-1, phrase « la gazométrie artérielle est la référence selon la Surviving Sepsis Campaign 2026 ; … pH, PaCO₂, lactate, bicarbonates »",
+   "source": "SSC 2026, remarque de l’énoncé oxygénation"
+  },
+  {
+   "repere": "A41_c a41-e-1, dernière ligne et pareto-a41-examens : procalcitonine non ajoutée à l’évaluation clinique pour décider du début (suggestion)",
+   "source": "SSC 2026 (conditionnelle, très faible)"
+  },
+  {
+   "repere": "A41_c a41-e-2, « Une méthode moléculaire ciblée peut accélérer la documentation »",
+   "source": "SSC 2026, tests diagnostiques rapides au cas par cas (conditionnelle, faible)"
+  },
+  {
+   "repere": "A41_c a41-e-5 quiz 1 (bonne réponse trois heures ; probabilité forte → une heure)",
+   "source": "SSC 2026, énoncés antibiothérapie (sepsis possible sans choc : conditionnelle ; probable/certain : forte)"
+  },
+  {
+   "repere": "A41_c a41-e-5 quiz 2 : choc septique = vasopresseur pour PAM ≥ 65 mmHg + lactate > 2 mmol/L après remplissage ; aucun seuil systolique",
+   "source": "Sepsis-3, PMID 26903338 (résumé)"
+  },
+  {
+   "repere": "A41_c a41-e-5 quiz 3 (explication) : contrôle du foyer idéalement dans les 6 h",
+   "source": "SSC 2026 (conditionnelle, très faible)"
+  },
+  {
+   "repere": "A41_c a41-s-3 : lactate issu du pyruvate par la LDH, régénération du NAD⁺, glycolyse accélérée par stimulation β-adrénergique via la Na⁺/K⁺-ATPase, contribution rénale d’environ 30 %",
+   "source": "Garcia-Alvarez et coll. 2014, PMC4421917 (texte intégral)"
+  },
+  {
+   "repere": "A41_d a41-p-1 : SSC 2026 – pas de couverture empirique multirésistants/anaérobies/antifongique sans facteur de risque ; norad ou adrénaline si dysfonction cardiaque (norad si tachyarythmie, adrénaline si bradyarythmie) ; vasopressine si norad croissante (modérée) ; adrénaline si PAM insuffisante malgré norad + vasopressine ; dobutamine ajoutée ou adrénaline seule ; corticostéroïdes IV dans le choc (conditionnelle, faible)",
+   "source": "SSC 2026, énoncés et remarques correspondants"
+  },
+  {
+   "repere": "A41_d a41-p-1 : SSC 2021 – vasopressine en pratique à 0,25–0,5 µg/kg/min ; hydrocortisone 200 mg/j (50 mg/6 h ou continu) débutée si norad/adrénaline ≥ 0,25 µg/kg/min au moins 4 h après le début ; numéros 38 et 58",
+   "source": "SSC 2021, PMC8486643, recommandations 38 et 58"
+  },
+  {
+   "repere": "A41_d a41-p-1 : guide rapide 2026 – hydrocortisone avec ou sans fludrocortisone si le besoin en noradrénaline persiste",
+   "source": "Quick guide SSC 2026 (PDF officiel)"
+  },
+  {
+   "repere": "A41_d a41-p-1 (encadré) : dose de charge puis perfusion prolongée (forte, modérée) ; dosage sanguin au cas par cas",
+   "source": "SSC 2026"
+  },
+  {
+   "repere": "A41_d a41-p-1 et a41-p-2 : information Solu-Cortef – intérêt controversé, emploi de routine non recommandé ; indications ; Act-O-Vial 100/250 mg avec 2 mL ; mise à jour octobre 2025",
+   "source": "Information professionnelle Solu-Cortef 23533"
+  },
+  {
+   "repere": "A41_d a41-p-1 et a41-piptazo : perfusion de 30 min et stabilité 24 h à 15–25 °C ; posologie 2–4 g 3–4×/j (100–200 mg/kg/j) ; tableau rénal 20–40 mL/min : 4 g/0,5 g/8 h ; 2–19 mL/min et HD : /12 h ; HD max 8 g/1 g + 2 g/0,25 g ; pas d’adaptation hépatique ; contre-indication allergie aux bêta-lactamines ; vancomycine et IRA ; LHH > 10 jours ; mise à jour mars 2026",
+   "source": "Information professionnelle Piperacillin-Tazobactam Labatec 60142"
+  },
+  {
+   "repere": "A41_d a41-p-2 et a41-norad : 8–12 µg/min chez 70 kg ; paliers 0,05–0,1 µg/kg/min (3,5–7 µg/min pour 70 kg) ; solution prête à ne pas diluer, quatre concentrations ; contre-indication hypovolémie ; jamais seule chez l’hypovolémique ; phentolamine 5–10 mg dans 10–15 mL ; dysfonction VG 2–4 µg/min et 15 µg/min ; mise à jour octobre 2020",
+   "source": "Information professionnelle Noradrenalin Sintetica 67023"
+  },
+  {
+   "repere": "A41_d a41-p-2 et a41-vaso : Empressin 0,01 UI/min, +toutes les 15–20 min jusqu’à 0,03 UI/min ; au-delà en urgence (nécroses) ; 40 UI dans 50 mL = 0,8 UI/mL ; pas de bolus ; 65–75 mmHg ; > 18 ans ; pas de recommandation > 65 ans, rein, foie ; hyponatrémie ; septembre 2025",
+   "source": "Information professionnelle Empressin 66180"
+  },
+  {
+   "repere": "A41_d a41-p-2, ligne Adrénaline : Adrenalin Sintetica sans indication de choc septique (hors indication) ; plage étiquetée américaine 0,05–2 µg/kg/min, paliers 0,05–0,2 toutes les 10–15 min, sevrage toutes les 30 min sur 12–24 h ; 3,5 µg/min pour 70 kg",
+   "source": "Information professionnelle Adrenalin Sintetica 56551 ; DailyMed setid 3fd8dd51…, révision 10/2025"
+  },
+  {
+   "repere": "A41_d a41-p-2, ligne Dobutamine : 250 mg/50 mL (5 mg/mL), 2,5 µg/kg/min = 175 µg/min = 2,1 mL/h pour 70 kg ; 2,5–10 µg/kg/min, jusqu’à 40 ; tolérance après 72 h ; contre-indications (hypovolémie, obstacle, tachyarythmie réfractaire, asthme/sulfites) ; incompatibilité avec succinate d’hydrocortisone et furosémide ; juin 2023",
+   "source": "Information professionnelle Dobutrex 45687"
+  },
+  {
+   "repere": "A41_d a41-p-2, cible PAM 65 mmHg avec plage d’environ 5 mmHg (forte) ; fenêtre a41-norad : 60–65 mmHg dès 65 ans (conditionnelle, faible) ; voie périphérique plutôt que retarder (conditionnelle, très faible)",
+   "source": "SSC 2026, énoncés PAM et vasopresseurs périphériques avec remarques"
+  },
+  {
+   "repere": "A41_d a41-p-4 : vitamine C IV, immunoglobulines IV, purification sanguine (hémoperfusion, hémofiltration à haut débit, échange plasmatique), terlipressine, bêtabloquants (esmolol, landiolol), antipyrétique dans le seul but pronostique : « suggest against »",
+   "source": "SSC 2026, énoncés et remarques correspondants"
+  },
+  {
+   "repere": "A41_pop2 a41-hydro et glossaire ADRENAL : 3 800 randomisés, 3 658 analysés, 200 mg/j en continu ≤ 7 jours, mortalité J90 27,9 % contre 28,8 %, résolution du choc 3 contre 4 jours, ventilation initiale 6 contre 7 jours sans différence de jours vivants sans ventilation",
+   "source": "PMID 29347874 (résumé)"
+  },
+  {
+   "repere": "A41_pop2 a41-hydro et glossaire APROCCHSS : 1 241 patients, 50 mg/6 h + fludrocortisone 50 µg/j 7 jours, mortalité J90 43,0 % contre 49,1 %, RR 0,88",
+   "source": "PMID 29490185 (résumé) ; SSC 2021 PMC8486643, recommandation 58, justification"
+  },
+  {
+   "repere": "A41_pop2 a41-vaso et glossaire VASST : 778 patients sous ≥ 5 µg/min de norad, 0,01–0,03 UI/min, mortalité J28 35,4 % contre 39,3 % ; strate moins sévère 26,5 % contre 35,7 % ; hétérogénéité non significative",
+   "source": "PMID 18305265 (résumé)"
+  },
+  {
+   "repere": "A41_pop2 a41-norad et glossaire SEPSISPAM : 776 patients, 80–85 contre 65–70 mmHg, mortalité J28 36,6 % contre 34,0 %, FA plus fréquente, moins d’épuration chez les hypertendus chroniques",
+   "source": "PMID 24635770 (résumé)"
+  },
+  {
+   "repere": "A41_pop2 a41-norad, essai 65 : 2 600 randomisés, 2 463 analysés, mortalité J90 41,0 % contre 43,8 %, exposition réduite aux vasopresseurs",
+   "source": "PMID 32049269 (résumé)"
+  },
+  {
+   "repere": "A41_pop2 a41-piptazo et glossaire MERINO : 4,5 g/6 h contre méropénem 1 g/8 h, 379 analysés, mortalité J30 12,3 % contre 3,7 %, non-infériorité non démontrée",
+   "source": "PMID 30208454 (résumé)"
+  },
+  {
+   "repere": "A41_pop2 a41-piptazo et glossaire BLING III : 7 031 patients, mortalité J90 24,9 % contre 26,8 % (non significatif), guérison clinique 55,7 % contre 50,0 %",
+   "source": "PMID 38864155 (résumé)"
+  },
+  {
+   "repere": "Glossaire CLOVERS, ANDROMEDA-SHOCK, ANDROMEDA-SHOCK-2, BALANCE, SOAP : effectifs, centres, pays, critères et chiffres principaux",
+   "source": "PMID 36688507, 30772908, 41159835, 39565030, 16424713 (résumés)"
+  },
+  {
+   "repere": "Glossaire : développements de SIRS, VASST, ADRENAL, MERINO, BLING, CLOVERS, SOAP, BALANCE ; FiO₂ (66/0,21 = 314) ; Solu-Cortef (cohérent avec l’information suisse)",
+   "source": "Titres et résumés PubMed correspondants ; information Solu-Cortef 23533"
+  },
+  {
+   "repere": "Banque : a41-j-cholestase (Kim 2000, modèle CLP chez le rat, IL-6, Ntcp/Mrp2), a41-j-glycocalyx (Schmidt 2012, héparanase TNF-dépendante, souris), a41-j-starling (van der Velden 2000, dépendance à la longueur sarcomérique), a41-j-rendement-culture (Cheng 2019 ; Mermel 1993) : sources existantes et pertinentes, limites de modèle exprimées",
+   "source": "PMID 10947163, 22820644, 10912459, 31525774, 8328734 (résumés)"
+  },
+  {
+   "repere": "Banque a41-j-renal-antibiotique : excitabilité neuromusculaire et convulsions à dose élevée en insuffisance rénale",
+   "source": "Information professionnelle Labatec 60142 (Mises en garde, Surdosage)"
+  },
+  {
+   "repere": "Abréviations : build_medina.audit() renvoie {} pour A41_c, A41_d, A41_pop2 et A41_pop_sciences_revision au commit figé",
+   "source": "Exécution locale sur extraction git archive (scratchpad)"
+  }
+ ],
+ "reserves_non_verifiees": [
+  "SSC 2026, texte intégral (Intensive Care Med 2026;52:863-936) non lu (défi JavaScript Springer ; HTTP 403 chez LWW) : non vérifiés les chiffres attribués aux justifications et à la pratique déclarée du panel – 85,1 % et noradrénaline médiane 0,3 µg/kg/min (IQR 0,2–0,5) pour la vasopressine ; méta-analyse de 45 essais (9 543 patients), RR 0,92 (0,83–1,01), 1,29, 1,19, 1,64, 1,13, seuil de 260 mg/j, 90 %/86 %/63 % et répartitions 34/38/28 % et 32/34/33 % pour les corticostéroïdes ; méta-analyse de 18 essais (9 108 participants) pour la perfusion prolongée ; méta-analyse sur données individuelles citée pour la cible 60–65 mmHg. La correction d’éditeur (PMID 42084789) n’a pas été lue et pourrait modifier un énoncé.",
+  "Valeurs usuelles : lactate 0,5–1,5 mmol/L et > 2,0 mmol/L (CHUV, lien 404) ; plaquettes 150–450 × 10⁹/L (HUG, page dynamique illisible).",
+  "Informations professionnelles Adrenalin Bichsel (56472), Adrenalin Amino (56514), Adrenalin Aguettant (66396, pages Refdata) et liste Swissmedic au 31.08.2026 non ouvertes : l’absence d’indication « choc septique » n’est vérifiée que pour Adrenalin Sintetica.",
+  "Numéro d’autorisation américain « 205029 » de l’adrénaline DailyMed non vérifié (le contenu posologique du libellé l’est).",
+  "Information Noradrenalin Sintetica : mentions grossesse (bradycardie fœtale, contractions) et absence de données rénale/hépatique non relues ligne à ligne ; Empressin : risques utérins de grossesse non relus ligne à ligne ; Dobutrex : solvants de dilution non relus ligne à ligne.",
+  "Résultats secondaires de VASST (ischémies digitales 2,0 % contre 0,5 %) et de SEPSISPAM (FA 6,7 % contre 2,8 % ; doublement de la créatinine) attribués à des sources secondaires (Russell 2011, Gupta 2015, Bellomo 2017) non rouvertes par l’auditeur.",
+  "Recommandations suisses (Société suisse d’infectiologie, Swissnoso, SSMI) non consultables (applications dynamiques) : aucun schéma empirique suisse n’a pu être confronté au chapitre.",
+  "Justification a41-j-selection : fiche OMS non ouverte ; a41-j-gazometrie : Jung 2019 (PMC6695455) non relu ; a41-j-rythme : libellé DailyMed de la noradrénaline non ouvert.",
+  "Sources proposées pour les corrections (Rybak 2020, Landry 2001, Brealey 2002, Hotchkiss 2013) seulement identifiées par métadonnées ou appariement de citation, contenu non relu.",
+  "Phrases des fichiers A41_a.html, A41_b.html, A41_pop1.html, A41_pop_pa.html hors périmètre : lues pour la cohérence seulement (fenêtre a41-cultures, a41-lactate, section 9), non auditées.",
+  "Affichage navigateur, fonctionnement des fenêtres et fractions Pareto non testés par l’auditeur."
+ ],
+ "synthese": "32 observations : bloquante 0, majeure 8, mineure 18, rédactionnelle 6. Aucune erreur médicale bloquante n’a été trouvée. Toutes les recommandations SSC 2026 vérifiées dans les énoncés officiels sont fidèlement rapportées, avec leur force et leur certitude. Les citations SSC 2021 (recommandations 38 et 58), les six informations professionnelles suisses ouvertes, le libellé DailyMed de l’adrénaline et les chiffres de douze essais concordent avec les sources. Les huit observations majeures bloquent toutefois l’injection selon le cahier des charges § 6, tant qu’elles ne sont pas résolues. Côté Examens, la CRP est absente et la procalcitonine n’est pas expliquée ; les hémocultures n’ont ni nombre ni volume ; la gazométrie n’a ni valeurs normales ni méthode de lecture. Côté Sciences, l’onglet reste générique, moins précis que la Pathologie et presque sans source primaire ; vasoplégie, mitochondrie et coagulation y manquent. Côté Pharmacologie, quatre points sont majeurs. Les 30 µg/min de noradrénaline sont présentés comme un plafond, alors que l’information suisse titre jusqu’à 1 µg/kg/min ; cette présentation contredit aussi les seuils du chapitre. Le Pareto résume la pipéracilline/tazobactam en bolus de 30 min toutes les 8 h, contre la recommandation forte de perfusion prolongée, et réduit la dose rénale dès le début. Vancomycine, aminosides et autres antibiotiques empiriques manquent. Les mécanismes des monographies sont énoncés sans chaîne causale. Les points non vérifiés (texte intégral SSC 2026 et pratique du panel, valeurs CHUV/HUG, trois informations d’adrénaline, recommandations suisses) restent des réserves et ne sont pas déclarés conformes. Le chapitre doit être corrigé puis réaudité sur un nouveau SHA."
+}
