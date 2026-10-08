@@ -78,6 +78,7 @@ def validate_manifest(manifest, owners):
     )}
     allowed = set(required)
     allowed.update(f"chapters/{code}/{code}_pop_sciences_revision.html" for code in codes)
+    allowed.update(f"chapters/{code}/{code}_pop3.html" for code in codes)
     if "A41" in codes:
         allowed.add("chapters/A41/A41_justifications.json")
     return required, allowed

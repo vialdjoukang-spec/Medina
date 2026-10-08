@@ -34,7 +34,7 @@ class ProductionPlanTests(unittest.TestCase):
         # Copy authoritative inputs: ownership and aliases are computed by load_plan.
         for relative in (
             "organisation/fragments.json", "fragments.json", "chapters.json",
-            "shell/medina_front.html",
+            "shell/medina_front.html", "fragment_surface.py",
         ):
             destination = cls.fixture / relative
             destination.parent.mkdir(parents=True, exist_ok=True)
@@ -99,6 +99,11 @@ class ProductionPlanTests(unittest.TestCase):
         self.assertEqual(loaded["agents"]["Codex"]["active_chapter"]["title"], self.titles["A41"])
         self.assertEqual(assignments["S02"]["owner"], "Claude")
         self.assertEqual(assignments["T1"]["owner"], "Codex")
+
+    def test_b18_uses_infectiology_frontend_owner(self):
+        self.plan["agents"]["Codex"]["active_chapter"] = self.chapter("B18", "T1")
+        loaded, _ = self.load()
+        self.assertEqual(loaded["agents"]["Codex"]["active_chapter"]["code"], "B18")
 
     def test_omitted_fragment_is_rejected(self):
         self.plan["agents"]["Claude"]["queue"].pop()

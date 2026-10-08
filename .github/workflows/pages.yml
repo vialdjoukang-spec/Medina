@@ -68,6 +68,12 @@ jobs:
           python tools/build_preview_capture_animation.py \
             --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html#/entry/B24" \
             --output _site/apercus/controle
+      - name: Produire une capture animée du cours hépatites virales chroniques
+        run: |
+          python tools/build_preview_capture_animation.py \
+            --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html#/entry/B18" \
+            --code B18 \
+            --output _site/apercus/controle
       - name: Conserver les captures et le rapport de lecture
         if: always()
         uses: actions/upload-artifact@v4

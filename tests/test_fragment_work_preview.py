@@ -69,6 +69,19 @@ class FragmentWorkPreviewTests(unittest.TestCase):
         self.assertEqual(manifest["chapter_codes"], ["A41", "B24"])
         self.assertEqual(len(files), 16)
 
+    def test_b18_can_be_added_without_exposing_a_foreign_specialty(self):
+        self.manifest["chapter_codes"].append("B18")
+        self.manifest["chapters"].append({"code": "B18", "title": "Hépatite virale chronique", "covers": ["B18"]})
+        for suffix in PREVIEW.REQUIRED_SUFFIXES:
+            self.add_file(f"chapters/B18/B18_{suffix}.html", b"<!-- Fixture B18 -->")
+        self.add_file("chapters/B18/B18_pop3.html", b"<!-- Fenetres pharmacologiques -->")
+        self.add_file("glossary/b18.py", b"G = {}\n")
+        self.write_manifest()
+        manifest, files = self.read()
+        self.assertEqual(manifest["chapter_codes"], ["A41", "B24", "B18"])
+        self.assertEqual(len(files), 25)
+        self.assertIn("chapters/B18/B18_pop3.html", files)
+
     def test_a41_optional_internal_sciences_and_justifications_are_accepted(self):
         self.add_file("chapters/A41/A41_pop_sciences_revision.html", b"<!-- internal sciences -->")
         self.add_file("chapters/A41/A41_justifications.json", b"{}")
