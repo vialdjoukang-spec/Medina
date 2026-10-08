@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête be58ad9 : corrections I83 et réconciliation ESC
+
+État : **reçu et archivé ; non injecté**. I83-MED-01/02 sont corrigées ; la durée de compression Aethoxysklerol reste à réconcilier. Les lots ESC correspondent désormais à main (26 propositions, 18 remplacements, 8 ajouts), mais les tests sont annoncés en cours, les huit rapports manquent et les contrôles n’ont pas été réexécutés. [Rapport](reviews/2026-10-08/PR12_BE58AD9_I83_ESC_CONTROLS/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête a0b0204 : ESC 2026 par chapitre
 
 État : **reçu et archivé ; non injecté**. Huit lots, 26 HTML ; 15 doublons de contenu, 10 modifications, 1 ajout au paquet. Manifestes vides et rapports absents ; cinq conflits de baseline I42/Q21 ; audit médical complet et contrôles techniques de plateforme requis. [Rapport](reviews/2026-10-08/PR12_ESC2026_A0B0204/RECEPTION.md).

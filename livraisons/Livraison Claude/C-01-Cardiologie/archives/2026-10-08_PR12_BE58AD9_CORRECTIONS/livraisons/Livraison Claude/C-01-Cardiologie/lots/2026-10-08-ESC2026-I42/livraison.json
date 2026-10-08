@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "kind": "claude_contribution",
+  "author": "Claude",
+  "status": "lot ESC 2026 — I42 seul ; réserves Codex MED-01 à MED-03 levées (PREUVES.md, PROVENANCE.md)",
+  "fragment": {
+    "id": "S01",
+    "label": "C-01-Cardiologie",
+    "specialty": "Cardiologie"
+  },
+  "source_commit": "315280ccc26e4a07b9bb6e36922cb579dd930f0e",
+  "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+  "chapters": [
+    {
+      "code": "I42",
+      "title": "Cardiomyopathies",
+      "covers": [
+        "I42",
+        "I43"
+      ],
+      "owner_fragment": "S01"
+    }
+  ],
+  "files": [
+    {
+      "target_path": "chapters/I42/I42_a.html",
+      "source_path": "sources/chapters/I42/I42_a.html",
+      "sha256": "b7d0bd707a66bdde5f82397967b3b6140ca8c3332a5c54e8ecae14c119b872f0",
+      "proposed_sha256": "7dbf4f56ace86ae5c02bb183157bd32548c3d608b51fa38cbc38bac43eb7464f"
+    },
+    {
+      "target_path": "chapters/I42/I42_b.html",
+      "source_path": "sources/chapters/I42/I42_b.html",
+      "sha256": "9bb3db0bd27cfce978589faa53d8887e52c0ba4ac84aacb7609d3a48f5770c6b",
+      "proposed_sha256": "6c86175e957d7a750a9bb37ced49bf3ed10e29df73ac242f8a32d99268091f90"
+    },
+    {
+      "target_path": "chapters/I42/I42_d.html",
+      "source_path": "sources/chapters/I42/I42_d.html",
+      "sha256": "f96f42ccf223c4e7f79019b19c13dce57b5aaa402eaf38426436bd5edf81eb2b",
+      "proposed_sha256": "6051d21e7eb64112b507a9f0fb5f152477f434175c65ad1efef8523fe33facff"
+    },
+    {
+      "target_path": "chapters/I42/I42_pop2.html",
+      "source_path": "sources/chapters/I42/I42_pop2.html",
+      "sha256": "e3913844c5c2118e70aa4f4e1922192147c5435aef644492fc7ddd6aaf831aec",
+      "proposed_sha256": "a6b6f0a7e1030d84e4742ce01c5eecac91703d366ca241c7c75f94476fa7baca"
+    },
+    {
+      "target_path": "chapters/I42/I42_pop5.html",
+      "source_path": "sources/chapters/I42/I42_pop5.html",
+      "sha256": "60fa151f6db2b722555009b495e3337fc558e56a1fa7cb61bafdf2a8e3e80781",
+      "proposed_sha256": "e20d967904e0605589a36c79d7becf77e22e09a9c7f3adb990bbf55f02f4cf36"
+    },
+    {
+      "target_path": "chapters/I42/I42_pop6.html",
+      "source_path": "sources/chapters/I42/I42_pop6.html",
+      "sha256": "84ece3298f6e0b8ef0312f93a63d6697d7e5c4a1d32d19d2aa4158c51190c00e",
+      "proposed_sha256": "d4e6402a105c509083d5425270effe88fbc75e860fa5c90f9c02120184764599"
+    },
+    {
+      "target_path": "chapters/I42/I42_pop_esc_comparison.html",
+      "source_path": "sources/chapters/I42/I42_pop_esc_comparison.html",
+      "operation": "add",
+      "sha256": null,
+      "proposed_sha256": "c610391caa77dd148fa0ad8ed8a4fc66d3ab8085c4344a5bbb490c8cb21483e8"
+    }
+  ],
+  "checks": [],
+  "limits": [
+    "Couverture CIM-11 non établie.",
+    "Une comparaison ESC 2026 vérifiée ne valide pas tout le cours ; les cours restent en relecture exhaustive jusqu'à l'audit croisé de Codex."
+  ],
+  "delivery": {
+    "lot": "ESC2026-I42",
+    "date": "2026-10-08",
+    "branch": "claude/loving-shannon-spwrhc",
+    "start_commit": "315280ccc26e4a07b9bb6e36922cb579dd930f0e",
+    "report": "rapport.md",
+    "preuves": "travail/esc2026/I42/PREUVES.md",
+    "provenance": "travail/esc2026/PROVENANCE.md",
+    "remplace": "lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE (retiré)",
+    "base": "main"
+  }
+}

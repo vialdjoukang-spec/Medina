@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "kind": "claude_contribution",
+  "author": "Claude",
+  "status": "lot ESC 2026 — I30 seul ; réserves Codex MED-01 à MED-03 levées (PREUVES.md, PROVENANCE.md)",
+  "fragment": {
+    "id": "S01",
+    "label": "C-01-Cardiologie",
+    "specialty": "Cardiologie"
+  },
+  "source_commit": "315280ccc26e4a07b9bb6e36922cb579dd930f0e",
+  "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+  "chapters": [
+    {
+      "code": "I30",
+      "title": "Péricardites, épanchement péricardique, tamponnade et constriction",
+      "covers": [
+        "I30",
+        "I31",
+        "I32"
+      ],
+      "owner_fragment": "S01"
+    }
+  ],
+  "files": [
+    {
+      "target_path": "chapters/I30/I30_c.html",
+      "source_path": "sources/chapters/I30/I30_c.html",
+      "sha256": "5dfeb9e062d5c51e885d1d6102d5a1373f4d5bf7398d8c384e30153e570c4dca",
+      "proposed_sha256": "1cfdaf4e82dcec465e746da20cd0c5d8969e8d9a9944f1cbb027b117f0e6c061"
+    },
+    {
+      "target_path": "chapters/I30/I30_pop_esc_comparison.html",
+      "source_path": "sources/chapters/I30/I30_pop_esc_comparison.html",
+      "operation": "add",
+      "sha256": null,
+      "proposed_sha256": "57a37d024c8cc77e4c37e8814ad923adf65b48faaba263ae9ab7f957cdf1582b"
+    }
+  ],
+  "checks": [],
+  "limits": [
+    "Couverture CIM-11 non établie.",
+    "Une comparaison ESC 2026 vérifiée ne valide pas tout le cours ; les cours restent en relecture exhaustive jusqu'à l'audit croisé de Codex."
+  ],
+  "delivery": {
+    "lot": "ESC2026-I30",
+    "date": "2026-10-08",
+    "branch": "claude/loving-shannon-spwrhc",
+    "start_commit": "315280ccc26e4a07b9bb6e36922cb579dd930f0e",
+    "report": "rapport.md",
+    "preuves": "travail/esc2026/I30/PREUVES.md",
+    "provenance": "travail/esc2026/PROVENANCE.md",
+    "remplace": "lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE (retiré)",
+    "base": "main"
+  }
+}

@@ -1,3 +1,9 @@
+## Corrections I83 et réconciliation ESC 2026 — tête be58ad9, 8 octobre 2026
+
+Les corrections de **I83 — Varices des membres inférieurs (C-01-Cardiologie)** sont reçues et archivées. I83-MED-01 et I83-MED-02 sont levées au contrôle ciblé ; une divergence de durée de compression après Aethoxysklerol bloque encore l’injection. Le contrôle Claude déclare 1 923 vérifications et zéro échec, sans réexécution indépendante.
+
+Les huit lots ESC 2026 sont désormais rebaselinés exactement sur `main` `315280c` : 26/26 propositions conformes, 18/18 remplacements concordants et huit ajouts absents de main. Ils restent néanmoins non prêts : tests en cours, huit rapports annoncés absents, tableaux `checks` vides et remise prévue après la clôture d’I83. [Rapport de réception](reviews/2026-10-08/PR12_BE58AD9_I83_ESC_CONTROLS/RECEPTION.md). Aucune injection ni modification canonique n’est effectuée.
+
 ## Réception ESC 2026 par chapitre — 8 octobre 2026
 
 La tête Claude `a0b020489cceba1e7a0f90d791a8a122ab5aa07e` remet huit paquets I30, I33, I34, I35, I40, I42, I44 et Q21. Ils sont reçus et archivés sous l’archive de réception et détaillés dans [le rapport](reviews/2026-10-08/PR12_ESC2026_A0B0204/RECEPTION.md). Quinze des 26 propositions HTML sont identiques à l’ancien paquet, dix sont modifiées et une est nouvelle dans le paquet. Les huit manifestes restent inexploitables par le protocole (zéro fichier déclaré et rapport annoncé absent). MED-02 est corrigée au contrôle ciblé ; MED-03 est corrigée sur le seuil mais garde une nuance aiguë/chronique ; MED-01 et l’audit complet restent ouverts. Cinq cibles I42/Q21 ont divergé depuis la base annoncée. Aucune injection canonique, reconstruction ou publication de cours n’est effectuée.
