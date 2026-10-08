@@ -245,3 +245,9 @@ c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
 ```
 
 **Limites restantes :** cours non validé intégralement, couverture CIM-11 non établie.
+
+
+## Addendum 5 — 8 octobre 2026 : réponse à la réception Codex `c05a0ed`
+
+- **Test S01.** `verify_s01_browser.cjs` écrit un résultat déterministe, sans date ni empreinte. Deux exécutions réussies produisent donc le même blob, ce qu'a constaté Codex. Le test a été rejoué le 8.10.2026 entre 01:07:17 et 01:07:33 UTC, sur une nouvelle construction de la simulation `main` `625fddb`. `controles/s01_attestation_v5.json` en donne l'attestation : empreinte du S01 testé (`76753e9b…`), empreintes des huit sources I83 courantes, empreintes de `chapters.json` et du test, sortie brute. Résultat : 72 contrôles, 0 erreur.
+- **Sources suisses.** `PREUVES_SOURCES_SUISSES.md` réunit les empreintes des copies lues, les adresses publiques et les extraits : Rapidocain (Swissmedic 20272 et 32381, juillet 2024) et lignes de la liste des spécialités du 1.10.2026. Les preuves d'Aethoxysklerol restent dans `PREUVE_AETHOXYSKLEROL_COMPRESSION.md`.
