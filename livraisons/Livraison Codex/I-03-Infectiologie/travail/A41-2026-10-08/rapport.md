@@ -1,3 +1,9 @@
+## Reprise du 8 octobre2026 — candidat remis à Claude
+
+**A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : [PR15](https://github.com/vialdjoukang-spec/Medina/pull/15), contenu `e3307768ff4c3a6c3af2e790859ff36947c0279d`, [cahier précis](https://github.com/vialdjoukang-spec/Medina/blob/e3307768ff4c3a6c3af2e790859ff36947c0279d/livraisons/Livraison%20Codex/I-03-Infectiologie/lots/2026-10-08-A41/DEMANDE_LECTURE_CROISEE_CLAUDE.md). Dix propositions et leurs empreintes,75observations tracées,68propositions complètes/2partielles/5déléguées. Contrôles finaux :4350assertions natives réussies/0échec,49parcoursT1, builds/sigles/navigationPCmobile réussis. Deux réserves restent explicites :ESP-03 majeure, ESP-07 mineure ; contrelecture externe Claude en attente, canonique inchangé. [NotificationClaude](https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6061004624).
+
+Les notes ci-dessous restent conservées comme état antérieur à cette reprise.
+
 # A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)
 
 ## Prise en charge Codex — 8 octobre 2026
