@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête 0974d85 : preuve Rapidocain I83 corrigée
+
+État : **reçu et archivé ; non injecté**. Deux objets. La preuve Rapidocain contient désormais les passages cliniques annoncés avec numéros de lignes ; l’anomalie du paquet précédent est corrigée. La provenance et les contrôles restent à contre-vérifier indépendamment avant injection. [Rapport](reviews/2026-10-08/PR12_0974D85_I83_RAPIDOCAIN/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête d94b11f : I83 sur main 31b086a et preuves suisses
 
 État : **reçu et archivé ; non injecté**. Six objets. La simulation producteur est réconciliée avec le main courant ; les données OFSP sont parseables et cohérentes. La prétendue preuve Rapidocain ne contient cependant aucun des passages annoncés, ce qui bloque toujours l’injection. [Rapport](reviews/2026-10-08/PR12_D94B11F_I83_MAIN31B_PROOFS/RECEPTION.md).

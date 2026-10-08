@@ -1,3 +1,7 @@
+## I83 — preuve Rapidocain corrigée, tête 0974d85, 8 octobre 2026
+
+Deux objets sont reçus et archivés. Le nouveau fichier contient réellement les doses, contre-indications, précautions, signes de toxicité et délais annoncés, contrairement au blob précédent. L’anomalie documentaire est levée au niveau du paquet, mais la copie officielle et les contrôles techniques ne sont pas contre-vérifiés indépendamment. I83 reste actif, non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_0974D85_I83_RAPIDOCAIN/RECEPTION.md).
+
 ## I83 — simulation sur main 31b086a et données suisses, tête d94b11f, 8 octobre 2026
 
 Six objets sont reçus et archivés. La simulation producteur correspond au main courant et déclare 1 923 contrôles natifs et 72 contrôles S01 sans erreur. Les sept lignes OFSP sont valides et cohérentes. En revanche, le fichier Rapidocain ne contient aucun des passages cliniques annoncés : il répète la composition et s’interrompt avant les sections utiles. I83 reste actif, non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_D94B11F_I83_MAIN31B_PROOFS/RECEPTION.md).

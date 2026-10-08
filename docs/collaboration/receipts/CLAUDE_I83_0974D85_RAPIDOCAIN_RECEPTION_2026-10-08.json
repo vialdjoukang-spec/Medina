@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "0974d854db292ae0311e435b3daea5fbed187e25",
+  "previous_received_head": "d94b11f27aaae66a9a15d55f4a3a3f1ac2bfc7a1",
+  "main_sha_at_reception": "43f4604a22efb1c23c52007765c5c9d9fed94d4d",
+  "received_at": "2026-10-08T01:29:07Z",
+  "origin": "Claude confirmé par la branche, la signature Co-Authored-By, le rapport I83 et les fichiers de livraison",
+  "status": "reçu et archivé ; anomalie documentaire Rapidocain corrigée au contrôle de contenu ; aucune injection",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_0974D85_I83_RAPIDOCAIN",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "7da579a28e523021d04801ff7ba980aca9923314",
+    "objects": 2
+  },
+  "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "content_comparison": {
+    "previous_rapidocain_blob": "69c20bae523bdc10e7be1eccff823b622aa66bbe",
+    "corrected_rapidocain_blob": "5106966c1976119e88615c7e84fad423309a4e82",
+    "previous_finding": "sections annoncées absentes ; répétition de la composition",
+    "corrected_finding": "sections médicales présentes avec numéros de ligne et extraits lisibles"
+  },
+  "targeted_document_review": {
+    "source_claimed": "Information professionnelle suisse Rapidocain / Rapidocain avec Épinéphrine, Swissmedic 20272 et 32381, juillet 2024",
+    "copy_sha256": "7b24cf1d5f2d91b8fa986c412d0ca6778a1633c4887b4f9ea19a144d4a628268",
+    "verified_in_delivered_excerpt": [
+      "infiltration ≤ 400 mg à 5 et 10 mg/ml",
+      "enfant jusqu’à 5 mg/kg, ou 7 mg/kg avec épinéphrine",
+      "réduction de dose en insuffisance rénale ou hépatique",
+      "contre-indications : hypovolémie, insuffisance cardiaque aiguë décompensée, troubles de conduction, choc sévère, myasthénie grave, zone infectée ou inflammée",
+      "prudence avec amiodarone et anticoagulants",
+      "paresthésies circumorales, insensibilité linguale, vertiges, hyperacousie et acouphènes",
+      "toxicité à 1–3 minutes après injection intravasculaire ; pic à 20–30 minutes après surdosage"
+    ],
+    "conclusion": "l’anomalie documentaire du paquet d94b11f est corrigée ; concordance interne avec les affirmations Rapidocain du rapport",
+    "provenance_independently_verified": false
+  },
+  "reconciliation": {
+    "producer_simulation_base": "31b086a938a4b5acfdcda7ad12a2908e4de42dde",
+    "current_main": "43f4604a22efb1c23c52007765c5c9d9fed94d4d",
+    "canonical_course_changes_between_base_and_current_main": false,
+    "note": "les commits intermédiaires ne portent que des archives et documents de réception"
+  },
+  "blockers": [
+    "les extraits Rapidocain proviennent d’une copie fournie par le producteur ; leur fidélité à la page officielle n’a pas été vérifiée indépendamment",
+    "les contrôles techniques restent ceux du producteur et n’ont pas été reproduits indépendamment",
+    "le rapport maintient explicitement que le cours n’est pas validé intégralement",
+    "la couverture CIM-11 n’est pas établie"
+  ],
+  "decision": "ne pas injecter ; archiver la correction documentaire, lever l’anomalie de contenu Rapidocain au niveau du paquet, et conserver I83 actif jusqu’à audit médical complet et contrôles indépendants",
+  "checks_executed": [
+    "PR, branche, tête 0974d85 et main 43f4604 relus",
+    "inventaire distant paginé : 15 branches et 13 PR",
+    "delta d94b11f..0974d85 inventorié : un commit et deux fichiers",
+    "deux blobs archivés sans modification sous l’empreinte d’arbre 7da579a2…",
+    "ancien et nouveau blob Rapidocain comparés",
+    "présence des doses, contre-indications, mises en garde, effets indésirables, surdosage et pharmacocinétique contrôlée dans l’extrait corrigé"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "reconstruction indépendante",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "vérification de la copie contre Swissmedicinfo",
+    "audit médical exhaustif de I83",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/rapidocain_extraits.md",
+      "git_blob_sha": "5106966c1976119e88615c7e84fad423309a4e82",
+      "bytes": 17022,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_0974D85_I83_RAPIDOCAIN/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/rapidocain_extraits.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+      "git_blob_sha": "4a6d8f42a3ca45b6b7eb5f64282b09ac0abb905d",
+      "bytes": 26472,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_0974D85_I83_RAPIDOCAIN/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md"
+    }
+  ]
+}
