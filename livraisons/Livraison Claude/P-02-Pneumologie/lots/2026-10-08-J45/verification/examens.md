@@ -1,0 +1,49 @@
+# Rapport — rôle Examens — J45 — Asthme (P-02-Pneumologie)
+
+**Alerte de périmètre.** `J45_b.html` n'est pas l'onglet Examens : il contient les îlots 7 à 13 de l'onglet Pathologie (diagnostic, crise et J46, traitement, asthme sévère, suivi, situations particulières, critères formels). L'onglet Examens (`pE`, îlots j45-e-1 à e-6) est dans `J45_c.html`, avec les Sciences. J'ai corrigé mes deux fichiers et je propose ci-dessous les corrections de `pE`.
+
+## 1. Fichiers modifiés
+- `chapters/J45/J45_b.html` : îlot 7 réécrit (critères GINA 2026 adulte ≥ 18 ans / enfant 6–17 ans, tableau introduit et commenté, ERS/ATS 2022 resitué, patient déjà traité, grossesse, biomarqueurs) ; tableau des différentiels introduit et commenté ; « À retenir » ajouté. Îlot 8 réécrit selon GINA 2026 (gravité, doses, oxygène, ipratropium, magnésium, toxicité du salbutamol, sortie, hospitalisation, gazométrie, ventilation non invasive) ; quiz corrigé. Îlots 9 à 12 corrigés ponctuellement. Îlot 13 : alerte des critères formels, `key` et références réécrits. Identifiants, `data-k` et Pareto conservés.
+- `chapters/J45/J45_pop2.html` : les cinq fenêtres (`j45-spiro`, `j45-lln`, `j45-dilat`, `j45-pef`, `j45-metha`) sont réécrites selon le plan indication, principe, préparation, interprétation, limites et conséquence.
+
+## 2. Matrice des corrections
+| Passage | Problème | Correction | Source | Accès |
+|---|---|---|---|---|
+| 7, tableau ; 13 alerte ; `j45-dilat` | « &gt; 12 % et &gt; 200 mL », VEMS seul, seuils GINA « inchangés » | ≥ 12 % et ≥ 200 mL, VEMS **ou CVF** ; ≥ 15 % et ≥ 400 mL = confiance accrue ; DEP ≥ 20 % ; enfant 6–17 ans ≥ 12 % de la valeur prédite | GINA 2026, encadré 1-2, p. 28 | texte intégral, 08.10.2026 |
+| 7.2 | ERS/ATS 2022 (&gt; 10 % prédit) donné comme « alternative » GINA | GINA ne l'adopte pas : critère issu de données de survie | GINA 2026, p. 32 | texte intégral |
+| 13 alerte | obstruction &lt; LIN exigée | la variabilité est exigée ; le rapport abaissé renforce le diagnostic | GINA 2026, encadré 1-2 | texte intégral |
+| 7, intro | « environ un tiers » | 25–35 % | GINA 2026, Summary Guide p. 9 | texte intégral |
+| `j45-dilat` | 400 µg, 15 min | 200–400 µg, 10–15 min ; délais de suspension | GINA 2026, encadrés 1-2 et 1-4 ; ATS/ERS 2019, tableau 8 | texte intégral |
+| `j45-metha` | catégories de la PD20 fausses (100–400 = « légère ») | &gt; 400 normal ; 100–400 limite ; 25–100 légère ; 6–25 modérée ; &lt; 6 marquée | ERS 2017 (Coates) | résumé seul ; catégories lues dans les diapositives de D. Cockcroft, coauteur |
+| `j45-metha` | mannitol incomplet ; pas de grossesse ; pas de piège du rapport | 15 % ou 10 % entre deux doses, 635 mg ; grossesse ; vérifier la baisse du rapport VEMS/CVF | GINA 2026, p. 28–31 ; notice Aridol (miroir secondaire) | intégral / secondaire |
+| 8.1 tableau | fréquence cardiaque, saturation 90–95 %, DEP &gt; 50 % | légère / modérée / sévère : saturation ≥ 94 / ≥ 92 / &lt; 92 % ; DEP &gt; 70 / 50–70 / &lt; 50 % ; fréquence cardiaque retirée | GINA 2026, encadrés 9-4 et 9-6 | texte intégral, figure lue |
+| 8.2 | salbutamol 4–10 bouffées / 20 min ; oxygène 93–95 % (enfant 94–98 %) | doses graduées ; oxygène si &lt; 92 %, cible 92–95 % ; altitude et peau foncée | GINA 2026, p. 19, 184–186 | texte intégral |
+| 8.2 | ipratropium réservé au sévère ; effet ≥ 4–6 h | modéré à sévère ; effet après au moins 4 h | GINA 2026, p. 185–187 | texte intégral |
+| 8.2 | magnésium « renforcé » chez l'enfant | indications restrictives ; forme nébulisée sans bénéfice | GINA 2026, p. 188 | texte intégral |
+| 8.3 | PaCO₂ &gt; 42 mmHg ; ventilation non invasive « sans place » ; sortie DEP &gt; 60–80 % ; suivi 2–7 jours | PaO₂ &lt; 60 et PaCO₂ normale ou &gt; 45 mmHg ; ventilation non invasive : preuves faibles, aucune recommandation ; sortie si saturation ≥ 92 % et DEP &gt; 70 % ; suivi 2–7 jours (adulte), 2–5 jours (enfant) | GINA 2026, p. 184–188 | texte intégral |
+| 9 | voie 2, palier 4 « moyenne à forte » ; SYGMA « 60 % » | dose moyenne ; deux tiers / plus d'un tiers | GINA 2026, Summary Guide p. 24–25 | texte intégral |
+| 9, piège MART | béclométasone-formotérol 8 inhalations présenté seul | 8 inhalations selon l'information européenne ; GINA admet 12 temporairement ; enfant 8 | GINA 2026, tableau 7 | intégral ; notice suisse non lue |
+| 10 | « 3–10 % difficile » | 3–10 % sévère ; Hekking : 3,6 % ; bilan de deuxième ligne ; éosinophiles ≥ 300/µL : rechercher une parasitose ; dupilumab ≥ 1 500/µL | GINA 2026, p. 150–162 ; Hekking 2015 | intégral / résumé |
+| 12.1 | saturation ≥ 95 % non sourcée | traitement énergique ; pas de provocation ; hypoglycémie néonatale | GINA 2026, p. 135–136 | texte intégral |
+| 13 `key` | « facteur de risque indépendant », nombre de cartouches | formulés comme associations | GINA 2026, Summary Guide | texte intégral |
+
+## 3. Confirmé sans changement
+Différentiels (crépitants et stridor ne sont pas des signes d'asthme) ; LABA jamais seul ; MART limité au formotérol ; prednisolone 40–50 mg pendant 5–7 jours sans décroissance ; enfant 1–2 mg/kg (maximum 40 mg) ; pas de sédatif, d'aminophylline ni d'antibiotique systématique ; phénotypage (≥ 150/µL, FeNO ≥ 20 ppb, expectoration ≥ 2 %, trois mesures) ; essai de biothérapie d'au moins 4 mois ; dupilumab ≥ 150/µL ou FeNO ≥ 25 ppb ; suivi après 1–3 mois et tous les 3–12 mois ; spirométrie au diagnostic, à 3–6 mois puis tous les 1–2 ans ; réduction de 25–50 % ; immunothérapie sublinguale si VEMS &gt; 70 % ; grossesse (un tiers, un tiers, un tiers) ; cas récapitulatif (+450 mL, +17 %) ; ATS/ERS 2019 (≥ 3 manœuvres, écart ≤ 150 mL, pas d'arrêt du corticostéroïde inhalé ni de l'antileucotriène).
+
+## 4. Propositions hors périmètre (texte actuel → texte proposé)
+1. **`J45_pop1.html`, `j45-eos`** : « le rythme circadien (bas le matin) » → « le rythme circadien (plus élevés tôt le matin que l’après-midi, GINA 2026) ». Ajouter : « ≥ 300/µL dans un asthme difficile : rechercher une strongyloïdose avant un corticostéroïde oral ou une biothérapie (GINA 2026). » L'erreur actuelle est factuelle.
+2. **`J45_pop1.html`, `j45-gaz`** : « Débit de pointe ou VEMS &lt; 50 % après traitement initial, saturation &lt; 90 %, somnolence, absence de réponse. » → « Débit de pointe ou VEMS &lt; 50 % de la valeur prédite, absence de réponse ou aggravation (GINA 2026). » Puis « Épuisement : PaCO₂ &gt; 42 mmHg (5,6 kPa), acidose respiratoire. » → « Insuffisance respiratoire : PaO₂ &lt; 60 mmHg (8 kPa) avec PaCO₂ normale ou élevée, surtout &gt; 45 mmHg (6 kPa) (GINA 2026). »
+3. **`J45_pop1.html`, `j45-feno`** : ajouter « GINA 2026 : &gt; 50 ppb chez l’adulte et l’adolescent, &gt; 35 ppb chez l’enfant, pour soutenir un asthme de type 2 ; la FeNO est plus basse tôt le matin et varie selon l’appareil. »
+4. **`J45_c.html`, `j45-e-5`** : « (&gt; 42 mmHg ; 5,6 kPa) » → « (surtout &gt; 45 mmHg ; 6 kPa, avec PaO₂ &lt; 60 mmHg) ».
+5. **`J45_c.html`, `j45-e-2`, erreur fréquente** : « bêta-2 agoniste de courte durée 4 à 6 heures, de longue durée 24 à 36 heures, antimuscarinique de longue durée 36 à 48 heures » → « bêta-2 agoniste de courte durée 4 à 6 heures ; ipratropium 12 heures ; formotérol ou salmétérol 24 heures ; indacatérol, vilantérol ou olodatérol 36 heures ; antimuscarinique de longue durée 36 à 48 heures ; corticostéroïde inhalé et antileucotriène poursuivis ».
+6. **`J45_c.html`, `j45-e-3`** : méthacholine « PD20 ≤ 400 µg selon ERS 2017 » → « PD20 &lt; 400 µg ; 100–400 µg : zone limite (ERS 2017) » ; effort : ajouter « enfant : &gt; 12 % de la valeur prédite ».
+7. **`J45_c.html`, `j45-e-4`** : 4.1, ajouter « plus élevés tôt le matin ; ≥ 300/µL : exclure une parasitose » ; 4.2, ajouter les seuils diagnostiques de GINA 2026 (point 3).
+8. **`J45_c.html`, `j45-sp`** : « habituellement 93–95 % chez l’adulte en exacerbation » → « 92–95 % selon GINA 2026 ; 93–95 % chez l’adulte en crise sévère ».
+9. **`J45_pop3.html`, `j45-d-mg`** : « La forme nébulisée n’est plus recommandée chez l’enfant (GINA 2025). » → « La forme nébulisée n’apporte pas de bénéfice significatif chez l’adulte ni chez l’enfant (GINA 2026). »
+10. **`J45_pop4.html`** : dans `pareto-j45-urg`, remplacer « fréquence cardiaque &gt; 120, saturation &lt; 90 %, débit de pointe ≤ 50 % » par « saturation &lt; 92 %, débit de pointe &lt; 50 % », puis « Salbutamol 4–10 bouffées … oxygène 93–95 % (enfant 94–98 %) » par « Salbutamol 4 (légère), 4–6 (modérée) ou 6–10 bouffées (sévère) avec chambre ; oxygène si &lt; 92 %, cible 92–95 % ». Remplacer aussi « &gt; 42 mmHg » par « &gt; 45 mmHg », et « Sortie : débit de pointe &gt; 60–80 % » par « Sortie : saturation ≥ 92 %, débit de pointe &gt; 70 %, contrôle en 2–7 jours (enfant 2–5) ». Dans `pareto-j45-diag`, remplacer « réversibilité &gt; 12 % et &gt; 200 mL » par « réversibilité ≥ 12 % et ≥ 200 mL (enfant ≥ 12 % de la valeur prédite) » et « effort −10 % et −200 mL » par « effort &gt; 10 % et &gt; 200 mL ». Dans `pareto-j45-crit`, remplacer « Grossesse : … saturation ≥ 95 % en crise » par « Grossesse : traiter la crise sans retard, pas de test de provocation ».
+
+## 5. Réserves
+Textes intégraux inaccessibles : ERS 2017 et 2018, ERS 2022 et ERS/ATS 2022 (erreur 403 ; résumés lus). Les contre-indications de la méthacholine et les délais de suspension avant provocation n'ont pas été lus dans la norme. La notice suisse du béclométasone-formotérol n'a pas été lue sur compendium.ch. Les points suivants n'ont pas été revérifiés : technique de ventilation invasive, hydrocortisone périopératoire et à l'accouchement, Suva, Agence mondiale antidopage, vaccinations de l'Office fédéral de la santé publique, enfant de 5 ans et moins. L'exemple de limite inférieure à 0,64 est illustratif.
+
+## 6. Contrôles
+`verifier_sigles.py J45` : `{}`. `test_v7.py --static J45` : OK. Les balises de mes deux fichiers sont équilibrées : les deux `</div>` finaux de `J45_b` sont structurels.
