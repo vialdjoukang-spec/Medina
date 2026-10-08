@@ -50,3 +50,4 @@ for k,t in [('C1r','Sérine protéase de C1 qui active C1s ; son déficit abolit
     a(k,[('C','Complément'),(k[1:],'sous-composant '+k[1:]+' de C1')],'Sous-composant '+k+' du complément','<p>'+t+'</p>')
 for k,t in [('TAKHZYRO','lanadélumab, anticorps anti-kallicréine plasmatique'),('ANDEMBRY','garadacimab, anticorps anti-facteur XIIa'),('HyQvia','immunoglobulines sous-cutanées associées à la hyaluronidase humaine recombinante')]:
     a(k,[(k,'nom commercial : '+t)],k+'®','<p>Spécialité autorisée en Suisse : '+t+' (information professionnelle suisse).</p>')
+a('CD132',[('CD','Cluster of Differentiation'),('132','132')],'Chaîne gamma commune des récepteurs de cytokines (CD132)','<p>Sous-unité partagée par plusieurs récepteurs de cytokines, codée par le gène IL2RG ; son déficit cause le déficit combiné sévère lié à l’X (IUIS 2024).</p>')
