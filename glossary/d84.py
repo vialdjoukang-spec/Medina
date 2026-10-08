@@ -38,3 +38,15 @@ for k,t in [('Wiskott-Aldrich','Alfred Wiskott et Robert Aldrich'),('Howell-Joll
 a('anti-CD20',[('anti','Anticorps dirigé contre'),('CD','Cluster of Differentiation (classe de différenciation)'),('20','20')],'Anticorps dirigés contre l’antigène de différenciation CD20','<p>Le rituximab reconnaît cette protéine de surface de nombreux lymphocytes B. La déplétion B peut réduire la réponse à de nouveaux antigènes et entraîner une hypogammaglobulinémie ; les plasmocytes matures ne sont pas tous directement ciblés.</p>')
 for k,t in [('C6','S’associe au fragment C5b au début de l’assemblage terminal.'),('C7','Participe à l’insertion du complexe terminal dans la membrane cible.'),('C8','Participe à la formation du pore terminal.')]:
     a(k,[('C','Complément'),(k[1:],'composant '+k[1:])],'Composant '+k+' du complément','<p>'+t+'</p>')
+
+# Révision du 08.10.2026 : sigles introduits par les sources européennes et suisses.
+a('ERN RITA',[('E','European'),('R','Reference'),('N','Network on'),('R','Rare primary'),('I','Immunodeficiency,'),('T','auToinflammatory and'),('A','Autoimmune diseases')],'Réseau européen de référence sur les déficits immunitaires primaires, les maladies auto-inflammatoires et auto-immunes rares','<p>Réseau de centres européens ; coauteur avec l’ESID de la recommandation 2020 sur les déficits du complément.</p>')
+a('KREC',[('K','Kappa-deleting'),('R','Recombination'),('E','Excision'),('C','Circles')],'Cercles d’excision de la recombinaison kappa','<p>Marqueur de production des lymphocytes B naïfs ; mesuré avec les TREC dans le dépistage néonatal suisse depuis 2019.</p>','d84-trec')
+a('LRBA',[('L','Lipopolysaccharide-'),('R','Responsive'),('B','Beige-like'),('A','Anchor protein')],'Protéine LRBA','<p>Son déficit cause une dysrégulation immunitaire proche de l’haplo-insuffisance de CTLA-4 (IUIS 2024).</p>')
+a('ZAP-70',[('Z','Zeta-chain-'),('A','Associated'),('P','Protein kinase'),('70','de 70 kilodaltons')],'Kinase ZAP-70','<p>Kinase de la signalisation du récepteur des lymphocytes T ; son déficit fonctionnel échappe au dépistage par les TREC.</p>')
+a('XIIa',[('XII','facteur XII de la coagulation'),('a','activé')],'Facteur XII activé','<p>Premier facteur du système d’activation par contact, qui initie la production de bradykinine ; cible du garadacimab.</p>')
+a('SC',[('S','Sous-'),('C','Cutané')],'Voie sous-cutanée','<p>Désigne la forme sous-cutanée d’un médicament, par exemple Berinert® SC.</p>')
+for k,t in [('C1r','Sérine protéase de C1 qui active C1s ; son déficit abolit la voie classique.'),('C1s','Sérine protéase de C1 qui clive C4 et C2 ; son déficit abolit la voie classique.')]:
+    a(k,[('C','Complément'),(k[1:],'sous-composant '+k[1:]+' de C1')],'Sous-composant '+k+' du complément','<p>'+t+'</p>')
+for k,t in [('TAKHZYRO','lanadélumab, anticorps anti-kallicréine plasmatique'),('ANDEMBRY','garadacimab, anticorps anti-facteur XIIa'),('HyQvia','immunoglobulines sous-cutanées associées à la hyaluronidase humaine recombinante')]:
+    a(k,[(k,'nom commercial : '+t)],k+'®','<p>Spécialité autorisée en Suisse : '+t+' (information professionnelle suisse).</p>')
