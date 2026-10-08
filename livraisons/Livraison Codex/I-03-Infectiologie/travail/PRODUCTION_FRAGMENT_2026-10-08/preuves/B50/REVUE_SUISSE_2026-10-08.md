@@ -1,0 +1,24 @@
+# B50 — sources et revue interne, 8 octobre 2026
+
+État : **cours de travail**, destiné à Claude pour ses deux audits sur la rédaction, la médecine, les ressources et le rendu navigateur. Aucun fichier canonique B50 n'est injecté par cette livraison ; aucune validation médicale humaine n'est revendiquée.
+
+## Sources primaires lues
+
+| Question | Document vérifié | Application et limite |
+| --- | --- | --- |
+| Triage, traitement oral ou IV, suivi | [SSTTM/Swiss TPH, *Malaria Treatment Recommendations*, 1er septembre 2026, p. 1–8 imprimées](https://www.swisstph.ch/fileadmin/user_upload/SwissTPH/Documents/Travel_Clinic/SwissTPH_Malaria_Tx_recommendations_1._September_2026.pdf) | Le seuil de parasitémie ≥2 % pour un clinicien peu expérimenté n'exclut pas une forme grave à 0,8 % si un organe est atteint. Le guide donne 10 prises d'artéméther/luméfantrine sur 5 jours dès 35 kg, l'artésunate IV 2,4 mg/kg à 0, 12, 24 h puis quotidien pour la forme grave, et la surveillance de l'hémolyse à J7/J14/J21/J28. |
+| Produit oral artéméther/luméfantrine | [Information professionnelle suisse Riamet n°54594, décembre 2019](https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=54594) | La FI prescrit 6 prises de 4 comprimés sur 3 jours pour cet adulte ; l'écart de 16 comprimés avec la recommandation suisse 2026 est affiché comme tel. Prise avec lipides, vomissement dans l'heure, contre-indications et interactions sont rattachés à la FI. |
+| Alternative atovaquone/proguanil | [Information professionnelle suisse Malarone n°54150, décembre 2025](https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=54150) | Traitement de la forme non compliquée >40 kg : 4 comprimés 250/100 mg par jour pendant 3 jours. Après échec de prophylaxie Malarone, la FI recommande une autre substance schizonticide. Destination, prophylaxie et fonction rénale demeurent inconnues dans le cas. |
+| Diagnostic et déclaration | [OFSP, *Guide de la déclaration obligatoire* 2026, « Paludisme », p. 88–89](https://www.bag.admin.ch/dam/fr/sd-web/MDjbgfEN6jEf/250321_BAS_Meldeleitfaden_FR.pdf) ; [OFSP, Paludisme](https://www.bag.admin.ch/fr/malaria-paludisme) | Le guide cite environ 300 cas déclarés en Suisse après voyage, toutes espèces ; il ne s'agit pas d'un décompte spécifique de 2026 ou de falciparum. Délai et destinataires de la déclaration sont donnés dans le cours. |
+| Mécanismes et situations particulières | [OMS, *WHO guidelines for malaria*, 10 septembre 2026](https://iris.who.int/server/api/core/bitstreams/d3c6488b-3ee6-41cb-960f-ddf0202cd74d/content) | Les pages citées dans les fenêtres ont été confrontées au texte ; une proposition sur la production médullaire a été retirée faute d'appui dans la page attribuée. |
+| Disponibilité des médicaments | [Swissmedic, listes des médicaments humains autorisés, 30 septembre 2026](https://www.swissmedic.ch/swissmedic/fr/home/services/listen_neu.html) | Aucun produit fini d'artésunate IV ni de dihydroartémisinine/pipéraquine identifié dans la liste vérifiée. L'absence dans cette liste ne démontre pas l'absence de stock hospitalier ou d'importation. Le cours ne fournit donc pas de préparation IV liée à un produit imaginaire. |
+
+## Première passe indépendante
+
+Trois relectures ont couvert séparément les doses et FI, les mécanismes et la provenance, puis la clinique et la structure. La relecture pharmacologique n'a relevé aucune erreur bloquante de dose, voie ou seuil ; elle a demandé la précision sur l'échec de prophylaxie Malarone, ajoutée dans `B50_b.html`, `B50_d.html` et `B50_pop3.html`. La relecture des sciences a corrigé deux attributions : le chiffre OFSP d'environ 300 cas toutes espèces, et le retrait d'un mécanisme médullaire absent de la page OMS citée. La conclusion clinique/structurelle reste consignée à part si elle apporte de nouvelles réserves.
+
+## Réserves pour l'application à une personne
+
+La destination et le traitement antipaludique antérieur, les constantes et bilans d'organes, la glycémie, la possibilité d'absorber l'oral et les interactions ne sont pas fournis dans le cas pédagogique. Aucun traitement final n'est attribué au patient avant ces données. Si une forme grave est constatée, le produit d'artésunate IV effectivement disponible, sa notice, sa préparation et le protocole hospitalier doivent être vérifiés sans retarder l'organisation des soins.
+
+Le guide Swiss TPH et la FI Riamet divergent sur la durée : cette divergence reste visible, avec leur date et leur portée. Le texte ne transforme pas automatiquement le schéma de cinq jours en posologie autorisée de la FI.
