@@ -1,3 +1,7 @@
+## Captures visibles dans le chat — 8 octobre 2026
+
+Vial demande explicitement de voir les captures du travail sur les cours **ici, de manière dynamique**. Afficher les captures dans les messages et réponses avec une image visible, accompagnée du lien direct du cours ; les sorties techniques et les seuls liens de téléchargement ne suffisent pas. Pour présenter une navigation, produire une capture animée issue du navigateur réel et l’afficher directement. Garder le statut de version de travail et dater/versionner les captures ; ne pas inventer un rendu ni annoncer un flux en direct pour une animation enregistrée. Le workflow Pages publie les captures et l’animation sous `apercus/controle/` après les contrôles.
+
 ## Alignement avec Claude — police de lecture, 8 octobre 2026
 
 Dernière instruction directe de Vial : « Pas de conflit avec Claude. Aligne toi avec la Police qu’il a trouvé ». **Atkinson Hyperlegible Next** devient la police par défaut du portail, des 22 frontends et des cours, avec les quatre WOFF2 de Claude (`f928674`). Cette consigne remplace la demande antérieure de police Anthropic Serif ; celle-ci reste une option du lecteur. Conserver les contributions de Claude, les contrastes élevés, le thème clair et la séparation des spécialités. Les réglages du lecteur s’appliquent au texte, aux fenêtres et à Navigo. Aucune modification de source médicale ni de statut de fragment n’est requise par cette consigne. Voir `docs/collaboration/FRONTENDS_2026-10-08.md` et son reçu d’alignement.

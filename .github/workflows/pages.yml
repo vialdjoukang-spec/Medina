@@ -55,13 +55,18 @@ jobs:
           python tools/build_organisation.py --output _site/organisation.html
       - name: Installer Chromium pour contrôler les cours en rédaction
         run: |
-          python -m pip install playwright==1.55.0
+          python -m pip install playwright==1.55.0 Pillow==11.3.0
           python -m playwright install --with-deps chromium
       - name: Contrôler l’aperçu Infectiologie sur ordinateur et mobile
         run: |
           python tests/verify_fragment_work_preview.py \
             --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html" \
             --sources "livraisons/Livraison Codex/I-03-Infectiologie/travail/PRODUCTION_FRAGMENT_2026-10-08/sources" \
+            --output _site/apercus/controle
+      - name: Produire une capture animée du cours VIH
+        run: |
+          python tools/build_preview_capture_animation.py \
+            --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html#/entry/B24" \
             --output _site/apercus/controle
       - name: Conserver les captures et le rapport de lecture
         if: always()
