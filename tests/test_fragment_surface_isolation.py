@@ -104,7 +104,12 @@ class FragmentSurfaceIsolationTests(unittest.TestCase):
         fragment = self.fragment('T1')
         source = SURFACE.finish_surface(self.source(fragment), fragment, ROOT)
         aliases = json.loads(re.search(r'window\.MEDINA_ALIAS=(.*?)(?:;)?</script>', source).group(1))
-        self.assertEqual(aliases, {'A41': 'A41'})
+        # Attendu : les seuls cours canoniques de T1 et leurs catégories couvertes.
+        expected = {code: course['code']
+                    for course in SURFACE.fragment_chapters(fragment, self.full['entries'], ROOT)
+                    for code in set(course['covers']) | {course['code']}}
+        self.assertEqual(aliases, expected)
+        self.assertIn('A41', aliases)
         self.assertNotIn('I50', aliases)
 
     def test_glossary_preserves_local_window_and_definition_dependencies(self):
