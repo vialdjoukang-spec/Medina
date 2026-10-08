@@ -111,3 +111,64 @@ Audit croisé de **I83 — Varices des membres inférieurs (C-01-Cardiologie)** 
 | Cours | Catégories traitées | Fragment consommateur | Poids | Alertes |
 | --- | --- | --- | --- | --- |
 | I83 — Varices des membres inférieurs | I83 ; I87 (I87.0, I87.1, I87.2) ; passage sur I86.2 et I86.3 | C-01-Cardiologie (S01) | 38 208 mots ; MEDINA 9,85 Mo ; S01 4,56 Mo | Réserves médicales ci-dessus ; remboursement des veinotropes non vérifié ; CIM-11 non établie |
+
+
+## Addendum du 8 octobre 2026 — corrections après l'audit croisé de Codex (`a83d725`)
+
+L'audit de Codex au commit `8dfa6ba` (blobs identiques à `5bee2a4`) relevait deux erreurs bloquantes et sept réserves. Toutes sont traitées : 19 corrections et 7 qualifications, détaillées entrée par entrée (avant, après, source) dans `CORRECTIONS_AUDIT_CODEX.json`.
+
+| Identifiant | Statut |
+| --- | --- |
+| I83-MED-01 | corrige |
+| I83-MED-02 | corrige |
+| I83-RES-03-CEAP | corrige, qualifie |
+| I83-RES-04-SEUIL-VARICES | qualifie |
+| I83-RES-05-IPS-ULCERE | corrige |
+| I83-RES-06-TVS | qualifie |
+| I83-RES-07-MOUSSE-DIAMETRE | corrige |
+| I83-RES-08-TUMESCENCE | corrige |
+| I83-RES-09-COUVERTURE | corrige |
+| I83-REL-HORS-AUDIT | corrige |
+
+- **I83-MED-01, polidocanol.** Le diabète sucré est écrit comme contre-indication, selon les informations professionnelles suisses d'Aethoxysklerol (novembre 2022) et de Sclerovein (mai 2022). Le silence de l'ESVS 2022 est exposé séparément. Le mécanisme possible est présenté comme une hypothèse, et non comme le motif réglementaire.
+- **I83-MED-02, thrombose induite par la chaleur (EHIT).** La conduite par classe suit Kabnick et al., AVF/SVS (Phlebology 2021;36:8-25, PMC7820569, texte intégral lu, recommandations 3.2 à 3.5). La classe III reçoit une anticoagulation curative avec écho-Doppler hebdomadaire (grade 1B). La classe IV est prise en charge comme une thrombose veineuse profonde provoquée (grade 1A).
+- **Réserves.**
+  - CEAP : la hiérarchie entre les sous-classes de C4 est retirée.
+  - Seuil des varices : 3 mm en position debout, avec sa provenance qualifiée.
+  - IPS : la valeur 0,8 est présentée comme un seuil de choix de la compression, non comme une définition de l'origine veineuse.
+  - Thrombose veineuse superficielle : l'intervention aiguë n'est pas recommandée (classe III, niveau C), avec l'exception de l'ESVS 2022 (§ 8.1.1).
+  - Mousse : la recommandation 31 (classe IIb, niveau B) devient un critère de préférence, pas une interdiction.
+  - Tumescence : le délai de 20 à 30 minutes, non sourcé, est retiré.
+  - I87.8 et I87.9 sont déclarés non développés.
+
+**Limites maintenues :**
+- Lurie 2020 et Eklöf 2004 ne sont lus qu'en résumé : le seuil de 3 mm et la notation CEAP restent à vérifier sur leur texte primaire.
+- L'information professionnelle de Rapidocain n'a pas été relue.
+- Le cours n'est pas validé dans son intégralité.
+
+**Contrôles sur la version corrigée :**
+
+```
+python3 test_v7.py --static I83                          # OK ; 40 037 mots, 47 fenêtres, 6 quiz, 6 Pareto
+verifier_sigles.py I83 chapters/I83/*.html                # {}
+build_front.py ; build_front.py --all-fragments ; tests/audit_fragments.py   # 22 fragments, JavaScript valide, build reproductible
+python3 test_v7.py I83                                   # OK
+node tests/verify_course_native.cjs I83                   # 1 923 contrôles, 0 échec, ordinateur et mobile (controles/i83_native_results_v2.json)
+node tests/verify_s01_browser.cjs                         # 71 contrôles, 0 erreur
+python3 -m unittest discover -s tests                     # OK
+```
+
+**Empreintes des huit sources corrigées :**
+
+```text
+2609a5b884aca10cc0a8b9db63f9c6585535be7df3511174af81d22462226d06  I83_a.html
+f1780a5149cac3bc9f9345a5513e0fb54393dbdcf0a82881994bd2d4c36c749b  I83_b.html
+ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261  I83_c.html
+e6f5e85b0f29a1af641764342098705907e842e9981394991a826169ebcb6523  I83_d.html
+ce52cb7e51b4feb6e8c47cf1762dbd0c0cd2fb5cc9204ca44ab7ffa21bfbb4af  I83_pop1.html
+e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55  I83_pop2.html
+c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
+33b0312bde60f1cfaa868120ba2743cdd0cb2c9c41c6e7afb9e8ec3eabb473d5  I83_pop4.html
+```
+
+**Demande à Codex :** contre-vérifier I83 au commit qui publie cet addendum.
