@@ -1,32 +1,22 @@
-## Alignement visuel avec Claude — 8 octobre 2026
-
-Sur instruction directe de Vial, Atkinson Hyperlegible Next de Claude (`f928674`) est la police par défaut. Ses deux commits frontend sont repris avec son attribution. La publication `04a67ee` est vérifiée (24 pages HTTP 200, 4 pages dans le navigateur, vraies fontes Atkinson, aucun débordement ni erreur JavaScript). Les 22 spécialités, le thème clair, les contrastes et les préférences de lecture sont vérifiés ; les sources médicales et statuts d’injection sont inchangés. [Réalisation](FRONTENDS_2026-10-08.md) · [Reçu d’alignement](receipts/CODEX_ALIGNEMENT_ATKINSON_2026-10-08.json). Les mentions Anthropic et publication à vérifier ci-dessous correspondent aux étapes antérieures ; le reçu d’alignement donne l’état actuel.
-
-## Frontends distincts — 8 octobre 2026
-
-La demande directe de Vial ajoute un accueil moderne clair, Anthropic Serif embarquée et un frontend strictement limité à chaque spécialité. Les 22 frontends sont reconstruits et contrôlés ; le portail donne accès aux 32 cours intégrés. L’aperçu A41 interne est consultable sous `apercus/infectiologie.html#/entry/A41`, avec statut de travail et sans certification finale. Sources médicales canoniques et statuts d’injection inchangés. Voir [la réalisation](FRONTENDS_2026-10-08.md) et [le reçu](receipts/CODEX_FRONTENDS_2026-10-08.json). La publication servie reste à vérifier dans le reçu. La remise distante J09 de 9fa4651 est conservée comme travail de chapitre ; elle ne vaut pas fragment entier prêt à l’audit unique.
-
-## Reprise par fragments — 8 octobre 2026
-
-[Nouveau protocole](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [rapport de reprise](reviews/2026-10-08/REPRISE_FRAGMENTS/REPRISE.md). Les listes complètes de branches/PR et leurs pages suivantes sont vérifiées ; [têtes relevées](reviews/2026-10-08/REPRISE_FRAGMENTS/REMOTE_HEADS.json). A41 a été injecté comme chapitre à `a556323`, après audit Claude `ba6a80f` sous les règles précédentes. Le fragment T1 reste incomplet ; la nouvelle copie A41 demeure interne. L’index détaillé ci-dessous conserve son ancienne cible et son état historique.
-
 # MEDINA — livraisons repérées
 
-Branche d'intégration : `codex/sciences-cs-fragments-20261007`.
-Commit cible : `83bff147e0aba6b31e7a080e098770b0a6b4250d`.
+Branche d'intégration : `codex/protocole-fragments-20261008`.
+Commit cible : `2f4a7dbffba7c43ec791fb6dcea4be7d553ff5a9`.
 
 Scan : partiel ; réserves ci-dessous.
 Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégration ne prouve pas une vérification.
 
 | Branche / PR | Tête | Reçu | Intégré dans la cible | Vérifié | Routage |
 | --- | --- | --- | --- | --- | --- |
-| claude/loving-shannon-spwrhc · #12 | `9aa65044972f` | Non confirmé | Non démontré | Non démontré | GLOBAL, S01, S02 |
-| codex/a41-corrections-20261008 · #15 | `5f04f5d950f7` | Non confirmé | Non démontré | Non démontré | CS, GLOBAL, S01, T1 |
+| claude/affectionate-fermi-xpf9yz | `6be5e247e98f` | Non confirmé | Non démontré | Non démontré | CS, GLOBAL, S01, S02 |
+| claude/loving-shannon-spwrhc · #12 | `4d8efb864bf7` | Non confirmé | Non démontré | Non démontré | GLOBAL, S01, S02 |
+| claude/vigilant-mayer-cevhwj | `b272295dd318` | Non confirmé | Non démontré | Non démontré | GLOBAL |
+| codex/a41-corrections-20261008 · #15 | `5f04f5d950f7` | Non confirmé | Non démontré | Non démontré | GLOBAL, T1 |
 | codex/accueil-qcm-20260929 · #6 | `871bb223564d` | Non confirmé | Non démontré | Non démontré | GLOBAL |
-| codex/decision-i83-20261008 | `db06b1fae3c2` | Non confirmé | Non démontré | Non démontré | CS, GLOBAL, S01, T1 |
-| codex/transition-cardio-20261008 | `fdad6c8adac0` | Non confirmé | Non démontré | Non démontré | GLOBAL |
-| main | `61a841b3c96b` | Non confirmé | Non démontré | Non démontré | CS, GLOBAL, S01, T1 |
-| claude/medina-alpha-integration-7dul4i · #1 | `303f95a66dd2` | Non confirmé | Oui, preuve enregistrée | Non démontré | GLOBAL, S01, S02, S07, S10, SYSTEM, T1 |
+| codex/mechanismes-20261007 | `39b7ff0cc585` | Non confirmé | Non démontré | Non démontré | GLOBAL, S01, S02 |
+| codex/sciences-cs-fragments-20261007 · #13 | `83bff147e0ab` | Non confirmé | Non démontré | Non démontré | GLOBAL, S01, S02, S07, S10, T1 |
+| codex/transition-cardio-20261008 | `fdad6c8adac0` | Non confirmé | Non démontré | Non démontré | GLOBAL, S01, S02 |
+| claude/medina-alpha-integration-7dul4i · #1 | `303f95a66dd2` | Oui | Oui, preuve enregistrée | Non démontré | GLOBAL, S01, S02, S07, S10, SYSTEM, T1 |
 | claude/mission-justification-20261007 · #11 | `45d34a9bd303` | Oui | Oui, preuve enregistrée | Non démontré | GLOBAL |
 | claude/review-i48-esc2024-20261007 | `c3770739b58c` | Non confirmé | Oui, preuve enregistrée | Non démontré | À préciser |
 | claude/review-medina-global-20261007 · #10 | `7651825416cc` | Oui | Oui, preuve enregistrée | Non démontré | GLOBAL, S01, S02 |
@@ -35,27 +25,210 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | codex/ajouter-options-de-generation-de-fragments · #3 | `1539f4e77171` | Non confirmé | Oui, preuve enregistrée | Non démontré | GLOBAL |
 | codex/configurer-publication-github-pages-automatique · #4 | `8d0de9bcd572` | Non confirmé | Oui, preuve enregistrée | Non démontré | GLOBAL |
 | codex/creer-fragments.json-et-corrige-des-chemins · #2 | `0f38d9aab4ef` | Non confirmé | Oui, preuve enregistrée | Non démontré | GLOBAL |
+| codex/decision-i83-20261008 | `db06b1fae3c2` | Non confirmé | Oui, preuve enregistrée | Non démontré | À préciser |
 | codex/etancheite-complete-des-fragments · #5 | `7071e557cfc2` | Non confirmé | Oui, preuve enregistrée | Non démontré | GLOBAL |
 | codex/fragment-s01-accueil-navigo-20261005 · #7 | `c50a28a23d7e` | Non confirmé | Oui, preuve enregistrée | Non démontré | GLOBAL, S01 |
-| codex/mechanismes-20261007 | `39b7ff0cc585` | Non confirmé | Oui, preuve enregistrée | Non démontré | À préciser |
 | codex/repartition-fragments-20261008 | `20915d9a36f0` | Non confirmé | Oui, preuve enregistrée | Non démontré | À préciser |
-| codex/sciences-cs-fragments-20261007 · #13 | `83bff147e0ab` | Non confirmé | Oui, preuve enregistrée | Non démontré | GLOBAL, S01, S02, S07, S10, T1 |
+| main | `2f4a7dbffba7` | Non confirmé | Oui, preuve enregistrée | Non démontré | À préciser |
+
+## claude/affectionate-fermi-xpf9yz
+
+- Vérifier titres, covers, activation, rattachements et rubriques après intégration.
+- Cours absent de chapters.json de la cible ; déclaration à intégrer.
+- S02 : le cours doit figurer exactement une fois dans categories[].chapters.
+- Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.
+- Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
+
+| Fichier | Nature | Routage | Diff |
+| --- | --- | --- | --- |
+| `AGENTS.md` | documentation | GLOBAL | integration_target |
+| `CHAPTER_SPEC.md` | documentation | GLOBAL | integration_target |
+| `CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `build_index.py` | integration_source | GLOBAL | integration_target |
+| `chapters.json` | registration_source | GLOBAL | integration_target |
+| `chapters/J09/J09_a.html` | course_source | S02 | integration_target |
+| `chapters/J09/J09_b.html` | course_source | S02 | integration_target |
+| `chapters/J09/J09_c.html` | course_source | S02 | integration_target |
+| `chapters/J09/J09_d.html` | course_source | S02 | integration_target |
+| `chapters/J09/J09_pop1.html` | course_source | S02 | integration_target |
+| `chapters/J09/J09_pop2.html` | course_source | S02 | integration_target |
+| `chapters/J09/J09_pop_pa.html` | course_source | S02 | integration_target |
+| `chapters/J09/J09_pop_sciences.html` | course_source | S02 | integration_target |
+| `docs/collaboration/CONSIGNES_CODEX_2026-10-08.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/EXIGENCES_VIAL_2026-10-08.md` | documentation | GLOBAL | integration_target |
+| `engine/atlas_v2.css` | integration_source | GLOBAL | integration_target |
+| `engine/atlas_v2.js` | integration_source | GLOBAL | integration_target |
+| `engine/medina_course.css` | integration_source | GLOBAL | integration_target |
+| `engine/medina_course.js` | integration_source | GLOBAL | integration_target |
+| `engine/portal_v2.css` | integration_source | GLOBAL | integration_target |
+| `fragment_surface.py` | integration_source | GLOBAL | integration_target |
+| `glossary/j09.py` | glossary_source | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/rapport.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters.json` | delivery_source | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_a.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_b.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_c.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_d.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_pop1.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_pop2.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_pop_pa.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/chapters/J09/J09_pop_sciences.html` | delivery_source | S02 | integration_target |
+| `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J09-1/sources/glossary/j09.py` | delivery_source | GLOBAL | integration_target |
+| `modules/cardiovascular_cs.css` | clinical_skills_source | S01, CS | integration_target |
+| `modules/cardiovascular_cs.html` | clinical_skills_source | S01, CS | integration_target |
+| `organisation/libelles_clairs.json` | consultation_source | GLOBAL | integration_target |
+| `shell/fonts/ahn-400.woff2` | integration_source | GLOBAL | integration_target |
+| `shell/fonts/ahn-400i.woff2` | integration_source | GLOBAL | integration_target |
+| `shell/fonts/ahn-600.woff2` | integration_source | GLOBAL | integration_target |
+| `shell/fonts/ahn-700.woff2` | integration_source | GLOBAL | integration_target |
+| `tests/test_libelles.py` | integration_source | GLOBAL | integration_target |
+| `tests/verify_categories.cjs` | integration_source | GLOBAL | integration_target |
+| `tests/verify_fragment_frontends.cjs` | integration_source | GLOBAL | integration_target |
+| `tools/__init__.py` | integration_source | GLOBAL | integration_target |
+| `tools/compendium_fi.cjs` | integration_source | GLOBAL | integration_target |
+| `tools/libelles.py` | integration_source | GLOBAL | integration_target |
 
 ## claude/loving-shannon-spwrhc
 
 - Chemin sans route de build connue ; examen manuel requis.
 - Vérifier titres, covers, activation, rattachements et rubriques après intégration.
-- Cours absent de chapters.json de la cible ; déclaration à intégrer.
 - S01 : le cours doit figurer exactement une fois dans categories[].chapters.
 - Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.
 - Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
+- Cours absent de chapters.json de la cible ; déclaration à intégrer.
 - Diff de branche potentiellement tronqué ; consulter tous les fichiers de la PR ou un diff Git local.
+- PR #12 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise.
 
 | Fichier | Nature | Routage | Diff |
 | --- | --- | --- | --- |
+| `.github/workflows/claude_watch.yml` | integration_source | GLOBAL | integration_target |
 | `.gitignore` | unknown |  | integration_target |
+| `AGENTS.md` | documentation | GLOBAL | integration_target |
 | `CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `audits/CHAINE_FRAGMENTS_2026-10-08/VALIDATION.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/ARBITRAGES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/LATE_BRANCH_CHECK.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/REMOTE_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/browser-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/fragments-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/justifications-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/unit-verbose.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/verify_i48.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CATEGORIES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CONVERGENCE_MAIN.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/I33_CONFIRMATION.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/INVENTORY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/PUBLICATION.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RESERVES_CLAUDE.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/BUILD_S01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/EXPORT_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/FRAGMENTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/UNIT_TESTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/final_s01_build.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/fragments.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/browser.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/static.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/initial-browser-attempt.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01/browser-results.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/unittest.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_i48_bibliography.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_lot5_four.cjs` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_ten.cjs` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/I50.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_CHANGES.json` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_COUNTER_REVIEW.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_READONLY.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/README.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/UNITAIRES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser-final/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/failed_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/figure-browser-results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/visual-review.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/verify_figures.cjs` | review_report | GLOBAL | integration_target |
 | `chapters.json` | registration_source | GLOBAL | integration_target |
+| `chapters/I42/I42_a.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_b.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_a.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_b.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_c.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_d.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_a.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_b.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_c.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_d.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop6.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_a.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_b.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_d.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_a.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_b.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_c.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_d.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_a.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_b.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_c.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_justifications.json` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_a.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_b.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_c.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_d.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_pop.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_pop_sciences.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_a.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_b.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_c.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_d.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_pop.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_pop_sciences.html` | course_source | S01 | integration_target |
 | `chapters/I83/I83_a.html` | course_source | S01 | integration_target |
 | `chapters/I83/I83_b.html` | course_source | S01 | integration_target |
 | `chapters/I83/I83_c.html` | course_source | S01 | integration_target |
@@ -64,12 +237,55 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `chapters/I83/I83_pop2.html` | course_source | S01 | integration_target |
 | `chapters/I83/I83_pop3.html` | course_source | S01 | integration_target |
 | `chapters/I83/I83_pop4.html` | course_source | S01 | integration_target |
+| `chapters/J18/J18_a.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_c.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_justifications.json` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop1.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop_sciences_revision.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_c.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_justifications.json` | course_source | S02 | integration_target |
+| `chapters/Q21/Q21_a.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_b.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_c.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_d.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop1.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop2.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop3.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop4.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop5.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop6.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop7.html` | course_source | S01 | integration_target |
+| `docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/CODEX_CHAINE_FRAGMENTS.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/DELIVERIES_LATEST.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/DELIVERIES_LATEST.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/FRAGMENTS_RESTANTS.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/FRAGMENT_01_PRIORITE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/HANDOFF_LATEST.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_PLAN.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/README.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/REGLES_VIAL_2026-10-08.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/SIGNAUX_CLAUDE.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/SIGNAUX_CODEX.json` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/VEILLE.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/ZONES_COMPENDIUM.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_ESC2026_20261008_RECEPTION.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_CHECKPOINT_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T214720372776Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T221127276821Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.json` | review_report | S01 | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.md` | review_report | S01 | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_MEDICAL.md` | review_report | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_TECHNIQUE.md` | review_report | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION.md` | review_report | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION_ACTUALISEE.md` | review_report | GLOBAL | integration_target |
 | `glossary/fragments_medina.py` | glossary_source | GLOBAL | integration_target |
 | `glossary/i83.py` | glossary_source | GLOBAL | integration_target |
+| `glossary/q21.py` | glossary_source | GLOBAL | integration_target |
 | `livraisons/Livraison Claude/C-01-Cardiologie/ACCUSE_PRISE_EN_CHARGE_2026-10-08.md` | delivery_report | GLOBAL | integration_target |
 | `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/livraison.json` | delivery_report | GLOBAL | integration_target |
 | `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/rapport.md` | delivery_report | GLOBAL | integration_target |
@@ -186,173 +402,173 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I49/I49_pop3.html` | delivery_source | S01 | integration_target |
 | `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I49/I49_pop4.html` | delivery_source | S01 | integration_target |
 | `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I49/I49_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I50/I50_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08-ESC2026_COMPARAISONS/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/controles/i30_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/controles/i30_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/sources/chapters/I30/I30_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/sources/chapters/I30/I30_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/controles/i33_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/controles/i33_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/sources/chapters/I33/I33_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/sources/chapters/I33/I33_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/controles/i34_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/controles/i34_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/sources/chapters/I34/I34_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/sources/chapters/I34/I34_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/controles/i40_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/controles/i40_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/sources/chapters/I40/I40_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/sources/chapters/I40/I40_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/controles/i42_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/controles/i42_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/controles/i44_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/controles/i44_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/controles/q21_native_main.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/controles/q21_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/sources/chapters/Q21/Q21_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I30/I30_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I30/I30_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I33/I33_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I33/I33_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I34/I34_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I34/I34_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I35/I35_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I35/I35_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I40/I40_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I40/I40_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/Q21/Q21_pop_esc_comparison.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/complements/glossary/i83.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/controles/diff_main.diff` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/controles/i83_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/controles/s01_browser_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/complements/glossary/i83.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/controles/diff_main.diff` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/controles/i83_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/controles/s01_browser_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/complements/glossary/i83.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/controles/diff_main.diff` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/controles/i83_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/controles/s01_browser_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/complements/glossary/i83.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/controles/diff_main.diff` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/controles/i83_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/controles/s01_browser_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/rapport.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/complements/glossary/i83.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/controles/diff_main.diff` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/controles/i83_native_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/controles/s01_browser_results.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I50/I50_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-GLOBAL_LOT5_JUSTIFICATION/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08-ESC2026_COMPARAISONS/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/controles/i30_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/controles/i30_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/sources/chapters/I30/I30_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/sources/chapters/I30/I30_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/controles/i33_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/controles/i33_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/sources/chapters/I33/I33_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/sources/chapters/I33/I33_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/controles/i34_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/controles/i34_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/sources/chapters/I34/I34_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/sources/chapters/I34/I34_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/controles/i40_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/controles/i40_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/sources/chapters/I40/I40_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/sources/chapters/I40/I40_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/controles/i42_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/controles/i42_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/sources/chapters/I42/I42_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/controles/i44_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/controles/i44_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/sources/chapters/I44/I44_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/controles/q21_native_main.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/controles/q21_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/sources/chapters/Q21/Q21_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I30/I30_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I30/I30_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I33/I33_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I33/I33_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I34/I34_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I34/I34_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I35/I35_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I35/I35_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I40/I40_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I40/I40_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I42/I42_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/I44/I44_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/sources/chapters/Q21/Q21_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/complements/glossary/i83.py` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/controles/diff_main.diff` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/controles/i83_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/controles/s01_browser_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/complements/glossary/i83.py` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/controles/diff_main.diff` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/controles/i83_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/controles/s01_browser_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/complements/glossary/i83.py` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/controles/diff_main.diff` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/controles/i83_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/controles/s01_browser_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/complements/glossary/i83.py` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/controles/diff_main.diff` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/controles/i83_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/controles/s01_browser_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/complements/glossary/i83.py` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/controles/diff_main.diff` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/controles/i83_native_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/controles/s01_browser_results.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/livraison.json` | delivery_report | GLOBAL | pull_request_base |
 | `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/rapport.md` | delivery_report | GLOBAL | pull_request_base |
 | `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/sources/chapters/I83/I83_a.html` | delivery_source | S01 | pull_request_base |
 | `livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/sources/chapters/I83/I83_b.html` | delivery_source | S01 | pull_request_base |
@@ -2007,6 +2223,8 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `livraisons/Livraison Claude/I-03-Infectiologie/audits/A41-39b7ff0/audit_examens_sciences_pharmacologie.json` | delivery_report | GLOBAL | pull_request_base |
 | `livraisons/Livraison Claude/I-03-Infectiologie/audits/A41-39b7ff0/audit_pathologie_1.json` | delivery_report | GLOBAL | pull_request_base |
 | `livraisons/Livraison Claude/I-03-Infectiologie/audits/A41-39b7ff0/audit_pathologie_2.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/I-03-Infectiologie/audits/A41-e330776/RAPPORT.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/I-03-Infectiologie/audits/A41-e330776/RETOUR_PAR_ID.json` | delivery_report | GLOBAL | pull_request_base |
 | `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/controles/diff_main.diff` | delivery_report | GLOBAL | pull_request_base |
 | `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/controles/j45_native_results.json` | delivery_report | GLOBAL | pull_request_base |
 | `livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/livraison.json` | delivery_report | GLOBAL | pull_request_base |
@@ -2061,159 +2279,34 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `tools/compendium_zones.py` | integration_source | GLOBAL | pull_request_base |
 | `tools/veille_collaboration.py` | integration_source | GLOBAL | pull_request_base |
 
+## claude/vigilant-mayer-cevhwj
+
+
+| Fichier | Nature | Routage | Diff |
+| --- | --- | --- | --- |
+| `AGENTS.md` | documentation | GLOBAL | integration_target |
+| `CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `COORDINATION.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/instructions/CONSIGNES_VIAL_2026-10-08_CHAINE_CONTINUE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/instructions/CONSIGNES_VIAL_2026-10-08_CHAINE_CONTINUE.pdf` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/2026-10-08_CLAUDE_CONSIGNES_CHAINE_CONTINUE.md` | documentation | GLOBAL | integration_target |
+| `engine/federal_exam.css` | integration_source | GLOBAL | integration_target |
+| `engine/federal_exam.js` | integration_source | GLOBAL | integration_target |
+| `fragment_surface.py` | integration_source | GLOBAL | integration_target |
+| `organisation/PILE_FRAGMENTS.html` | consultation_source | GLOBAL | integration_target |
+| `organisation/federal_exam.json` | consultation_source | GLOBAL | integration_target |
+| `organisation/pile_fragments.json` | consultation_source | GLOBAL | integration_target |
+| `tools/consignes_pdf.py` | integration_source | GLOBAL | integration_target |
+| `tools/pile_fragments.py` | integration_source | GLOBAL | integration_target |
+
 ## codex/a41-corrections-20261008
 
-- Vérifier titres, covers, activation, rattachements et rubriques après intégration.
-- Cours absent de chapters.json de la cible ; déclaration à intégrer.
-- S01 : le cours doit figurer exactement une fois dans categories[].chapters.
 - Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
 - Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.
-- Diff de branche potentiellement tronqué ; consulter tous les fichiers de la PR ou un diff Git local.
 - PR #15 vise main ; comparaison à la cible MEDINA requise.
 
 | Fichier | Nature | Routage | Diff |
 | --- | --- | --- | --- |
-| `.github/workflows/claude_watch.yml` | integration_source | GLOBAL | integration_target |
-| `AGENTS.md` | documentation | GLOBAL | integration_target |
-| `CLAUDE.md` | documentation | GLOBAL | integration_target |
-| `audits/CHAINE_FRAGMENTS_2026-10-08/VALIDATION.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-07/README.md` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/BUILD_STATIC_UNIT.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/CONVERGENCE_MAIN_E027.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/QA_APRES_8CE.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/SCIENCES.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/categories/categories_results.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/i48_native/i48_justifications_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I46/i46_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I47/i47_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I49/i49_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I71/i71_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I80/i80_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/Q21/q21_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/sciences_cs/science-cs-browser-results.json` | review_report | S01, CS | integration_target |
-| `chapters.json` | registration_source | GLOBAL | integration_target |
-| `chapters/I46/I46_a.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_b.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_c.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_d.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop5.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_a.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_b.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_c.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_d.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop5.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop6.html` | course_source | S01 | integration_target |
-| `chapters/I48/I48_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I48/I48_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_a.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_b.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_c.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_d.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop5.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_a.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_b.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_c.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_d.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_pop.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_pop_sciences.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_a.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_b.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_c.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_d.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_pop.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_pop_sciences.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_a.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_b.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_c.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_d.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop4.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_a.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_b.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_c.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_d.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop1.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop2.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop3.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop4.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop5.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop6.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop7.html` | course_source | S01 | integration_target |
-| `docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/CODEX_CHAINE_FRAGMENTS.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/CONSIGNES_INTERACTION_DENSITE_SOURCES.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/DELIVERIES_LATEST.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/DELIVERY_PROTOCOL.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.html` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/FILE_AUDIT_CODEX.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/FRAGMENTS_RESTANTS.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/HANDOFF_LATEST.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/README.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/REGLES_INJECTION_CLAUDE.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/SIGNAUX_CODEX.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_20261008_RECEPTION.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_3F90204_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_A0B0204_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC_4C8C534_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC_7C6FC65_CORRECTIONS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I35_2145A2A_RENAL_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_0974D85_RAPIDOCAIN_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_205D2CB_HARMONISATION_3_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_20BEE19_CONSERVATEURS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_20C67C0_PH02_INTRAARTERIELLE_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6B76E12_LIMITES_V4_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6D5797C_RAPIDOCAIN_PRESENTATIONS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_INTEGRATION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_A41_5BEE2A4_RECEPTION_2026-10-07.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_B526D9D_HARMONISATION_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_B983CB6_ATTESTATION_SOURCES_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_CDD2B72_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D2A460F_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D5B46AA_HARMONISATION_5_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D5B46AA_HARMONISATION_INTEGRATION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D6178B5_HARMONISATION_2_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D94B11F_MAIN31B_PROOFS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_DECEF42_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E17107A_HARMONISATION_4_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E2C023C_COMPLEMENT_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E2C023C_INTRAARTERIELLE_STATUT_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_ESC_BE58AD9_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I89_7775E6E_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I89_DE67651_I89_2_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_J45_9AA6504_J45_3_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_J45_C3DD8CD_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_J45_F30B891_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T225829714502Z.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_PR12_8CE3E99_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CODEX_A41_E330776_REMIS_CLAUDE_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/A41_HASH_VERIFICATION.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/AUDIT_MEDICAL_I83.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/AUDIT_TECHNIQUE_I83.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_AUDIT_A41.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_DISTANT.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_DISTANT.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_TECHNIQUE_I83.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/ORIGINAUX_PROVENANCE.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/RECEPTION.md` | review_report | T1 | integration_target |
 | `docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/ACCUSE_RECEPTION_PR12.json` | review_report | T1 | integration_target |
 | `docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/APPLICATION_CONSIGNES_DENSITE_SOURCES.json` | review_report | T1 | integration_target |
 | `docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/APPLICATION_CONSIGNES_DENSITE_SOURCES.md` | review_report | T1 | integration_target |
@@ -2308,84 +2401,19 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/controles_final/t1-browser.json` | review_report | T1 | integration_target |
 | `docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/controles_final/t1-browser.log` | review_report | T1 | integration_target |
 | `docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/controles_final/t1-browser/transport.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/CORRECTIONS_I46_I47_I49.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/CORRECTIONS_I71_I80_Q21.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/FUSION_I48.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/HARMONISATION_REFERENCES_PROSE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/INJECTION_MANIFEST.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/INJECTION_RECONCILIATION.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I46_I47_I49.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I48.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I71_I80_Q21.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/STRUCTURE_I71_I80_Q21.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/original/glossary_q21.py` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/AUDIT_JAUGES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_DASHBOARD.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C_ROUTES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DELTA_E2C023C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT_E2.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT_E2.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/FRAGMENTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/FRAGMENTS_METHODE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/TACHES_MAJEURES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/TACHES_METHODE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_CATEGORIES_S01.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_INVENTAIRE_S01.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_S01_HISTORIQUE.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_DIFFERENCES_COPIES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_DELTA_20BEE19.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_PERIMETRE_MAIN.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_ARTEFACTS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_COMMANDES_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_LOGS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_NATIFS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_RESEAU_CANONIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_ROUTES_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/DEMANDE_LECTURE_CROISEE_CLAUDE.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/rapport.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_justifications.json` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop1.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop2.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_pa.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_sciences_revision.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/glossary/a41.py` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/DEMANDE_LECTURE_CROISEE_CLAUDE.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/rapport.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_justifications.json` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop1.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop2.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_pa.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_sciences_revision.html` | delivery_source | T1 | integration_target |
+| `livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/glossary/a41.py` | delivery_source | GLOBAL | integration_target |
 
 ## codex/accueil-qcm-20260929
 
@@ -2400,11 +2428,919 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `site/index_template.html` | consultation_source | GLOBAL | integration_target |
 | `site/qcm.html` | consultation_source | GLOBAL | integration_target |
 
-## codex/decision-i83-20261008
+## codex/mechanismes-20261007
 
-- Vérifier titres, covers, activation, rattachements et rubriques après intégration.
-- Cours absent de chapters.json de la cible ; déclaration à intégrer.
-- S01 : le cours doit figurer exactement une fois dans categories[].chapters.
+- Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.
+- Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
+- Diff de branche potentiellement tronqué ; consulter tous les fichiers de la PR ou un diff Git local.
+
+| Fichier | Nature | Routage | Diff |
+| --- | --- | --- | --- |
+| `AGENTS.md` | documentation | GLOBAL | integration_target |
+| `CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/ARBITRAGES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/LATE_BRANCH_CHECK.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/REMOTE_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/browser-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/fragments-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/justifications-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/unit-verbose.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/verify_i48.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CATEGORIES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CONVERGENCE_MAIN.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/I33_CONFIRMATION.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/INVENTORY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/PUBLICATION.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RESERVES_CLAUDE.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/BUILD_S01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/EXPORT_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/FRAGMENTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/UNIT_TESTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/final_s01_build.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/fragments.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/browser.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/static.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/initial-browser-attempt.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01/browser-results.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/unittest.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_i48_bibliography.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_lot5_four.cjs` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_ten.cjs` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/I50.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_CHANGES.json` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_COUNTER_REVIEW.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_READONLY.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/README.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/UNITAIRES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser-final/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/failed_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/figure-browser-results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/visual-review.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/verify_figures.cjs` | review_report | GLOBAL | integration_target |
+| `chapters/I42/I42_a.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_b.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_a.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_b.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_c.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_d.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_a.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_b.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_c.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_d.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop6.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_a.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_b.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_d.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_a.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_b.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_c.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_d.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_a.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_b.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_c.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_justifications.json` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_a.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_b.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_c.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_d.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_pop.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_pop_sciences.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_a.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_b.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_c.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_d.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_pop.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_pop_sciences.html` | course_source | S01 | integration_target |
+| `chapters/J18/J18_a.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_c.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_justifications.json` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop1.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop_sciences_revision.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_c.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_justifications.json` | course_source | S02 | integration_target |
+| `chapters/Q21/Q21_a.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_b.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_c.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_d.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop1.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop2.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop3.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop4.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop5.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop6.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop7.html` | course_source | S01 | integration_target |
+| `docs/collaboration/DELIVERIES_LATEST.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/DELIVERIES_LATEST.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/FRAGMENT_01_PRIORITE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/HANDOFF_LATEST.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_PLAN.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_CHECKPOINT_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T214720372776Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T221127276821Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.json` | review_report | S01 | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.md` | review_report | S01 | integration_target |
+| `glossary/q21.py` | glossary_source | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/MERGE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/AVANCEMENT.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/REMOTE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.original.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/q21.py` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/rapport.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I47.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I71.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I80.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/Q21.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/INITIAL_FETCH_DIFFERENCES.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/REMOTE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.original.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop2.html` | delivery_source | S01 | integration_target |
+
+## codex/sciences-cs-fragments-20261007
+
+- Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.
+- Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
+- Tableau reconstruit depuis le registre et tools/build_organisation.py.
+- Diff de branche potentiellement tronqué ; consulter tous les fichiers de la PR ou un diff Git local.
+- PR #13 vise main ; comparaison à la cible MEDINA requise.
+
+| Fichier | Nature | Routage | Diff |
+| --- | --- | --- | --- |
+| `.github/workflows/claude_watch.yml` | integration_source | GLOBAL | integration_target |
+| `AGENTS.md` | documentation | GLOBAL | integration_target |
+| `CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `audits/CHAINE_FRAGMENTS_2026-10-08/VALIDATION.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/ARBITRAGES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/LATE_BRANCH_CHECK.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/REMOTE_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/browser-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/fragments-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/justifications-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/unit-verbose.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/verify_i48.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CATEGORIES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CONVERGENCE_MAIN.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/I33_CONFIRMATION.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/INVENTORY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/PUBLICATION.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RESERVES_CLAUDE.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/BUILD_S01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/EXPORT_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/FRAGMENTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/UNIT_TESTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/final_s01_build.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/fragments.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/browser.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/static.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/initial-browser-attempt.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01/browser-results.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/unittest.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_i48_bibliography.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_lot5_four.cjs` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_ten.cjs` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/I50.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_CHANGES.json` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_COUNTER_REVIEW.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_READONLY.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/README.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/UNITAIRES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser-final/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/failed_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/figure-browser-results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/visual-review.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/verify_figures.cjs` | review_report | GLOBAL | integration_target |
+| `chapters/I42/I42_a.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_b.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_a.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_b.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_c.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_d.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I46/I46_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_a.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_b.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_c.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_d.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I47/I47_pop6.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_a.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_b.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_d.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_a.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_b.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_c.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_d.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop1.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop2.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop3.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I49/I49_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_a.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_b.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_c.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_justifications.json` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop_esc_comparison.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_a.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_b.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_c.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_d.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_pop.html` | course_source | S01 | integration_target |
+| `chapters/I71/I71_pop_sciences.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_a.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_b.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_c.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_d.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_pop.html` | course_source | S01 | integration_target |
+| `chapters/I80/I80_pop_sciences.html` | course_source | S01 | integration_target |
+| `chapters/J18/J18_a.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_c.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_justifications.json` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop1.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop_sciences_revision.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_c.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_justifications.json` | course_source | S02 | integration_target |
+| `chapters/Q21/Q21_a.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_b.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_c.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_d.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop1.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop2.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop3.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop4.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop5.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop6.html` | course_source | S01 | integration_target |
+| `chapters/Q21/Q21_pop7.html` | course_source | S01 | integration_target |
+| `docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/CODEX_CHAINE_FRAGMENTS.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/DELIVERIES_LATEST.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/DELIVERIES_LATEST.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/FRAGMENTS_RESTANTS.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/FRAGMENT_01_PRIORITE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/HANDOFF_LATEST.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_PLAN.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/README.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/SIGNAUX_CODEX.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_ESC2026_20261008_RECEPTION.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_CHECKPOINT_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T214720372776Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T221127276821Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.json` | review_report | S01 | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.md` | review_report | S01 | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_MEDICAL.md` | review_report | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_TECHNIQUE.md` | review_report | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION.md` | review_report | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION_ACTUALISEE.md` | review_report | GLOBAL | integration_target |
+| `glossary/q21.py` | glossary_source | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/MERGE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/AVANCEMENT.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/REMOTE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.original.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/q21.py` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/rapport.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I47.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I71.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I80.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/Q21.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/INITIAL_FETCH_DIFFERENCES.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/REMOTE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.original.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I00.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I30.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I33.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I34.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I35.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I40.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I42.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I44.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I46.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I49.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I10/I10_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I21/I21_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I25/I25_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_justifications.json` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I70/I70_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | pull_request_base |
+| `livraisons/Livraison Codex/D-16-Dermatologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/D-16-Dermatologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/D-16-Dermatologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/D-20-Diagnostic clinique et examens complémentaires/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/D-20-Diagnostic clinique et examens complémentaires/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/D-20-Diagnostic clinique et examens complémentaires/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/E-22-Éthique médicale, droit et communication/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/E-22-Éthique médicale, droit et communication/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/E-22-Éthique médicale, droit et communication/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/G-04-Gastroentérologie et hépatologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/G-04-Gastroentérologie et hépatologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/G-04-Gastroentérologie et hépatologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/G-10-Gynécologie et sénologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/G-10-Gynécologie et sénologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/G-10-Gynécologie et sénologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/H-08-Hématologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/H-08-Hématologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/H-08-Hématologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_a.html` | delivery_source | T1 | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_b.html` | delivery_source | T1 | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_c.html` | delivery_source | T1 | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_justifications.json` | delivery_source | T1 | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/DEMANDE_LECTURE_CROISEE_CLAUDE.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/INVENTAIRE_BASE.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/D84/D84_c.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/D84/D84_justifications.json` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_a.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_b.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_c.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_d.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_justifications.json` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_pop.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M32/M32_c.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M32/M32_justifications.json` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/T78/T78_b.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/T78/T78_c.html` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/T78/T78_justifications.json` | delivery_source | S07 | pull_request_base |
+| `livraisons/Livraison Codex/M-12-Médecine des âges de la vie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-12-Médecine des âges de la vie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-12-Médecine des âges de la vie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-19-Médecine d’urgence, traumatologie et toxicologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-19-Médecine d’urgence, traumatologie et toxicologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-19-Médecine d’urgence, traumatologie et toxicologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-21-Médecine de premier recours et santé publique/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-21-Médecine de premier recours et santé publique/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/M-21-Médecine de premier recours et santé publique/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/N-05-Neurologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/N-05-Neurologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/N-05-Neurologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/N-07-Néphrologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/N-07-Néphrologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/N-07-Néphrologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-09-Oncologie, génétique médicale et soins palliatifs/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-09-Oncologie, génétique médicale et soins palliatifs/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-09-Oncologie, génétique médicale et soins palliatifs/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-11-Obstétrique et néonatologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-11-Obstétrique et néonatologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-11-Obstétrique et néonatologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-17-Oto-rhino-laryngologie et médecine bucco-dentaire/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-17-Oto-rhino-laryngologie et médecine bucco-dentaire/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-17-Oto-rhino-laryngologie et médecine bucco-dentaire/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-18-Ophtalmologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-18-Ophtalmologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/O-18-Ophtalmologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_a.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_b.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_c.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_justifications.json` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_a.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_b.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_c.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_justifications.json` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_pop1.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_pop_sciences_revision.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_a.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_b.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_c.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_d.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_pop.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_a.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_b.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_c.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_justifications.json` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J45/J45_c.html` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J45/J45_justifications.json` | delivery_source | S02 | pull_request_base |
+| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/sources/chapters/M06/M06_c.html` | delivery_source | S10 | pull_request_base |
+| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/sources/chapters/M06/M06_justifications.json` | delivery_source | S10 | pull_request_base |
+| `livraisons/Livraison Codex/U-15-Urologie et andrologie/README.md` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/U-15-Urologie et andrologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
+| `livraisons/Livraison Codex/U-15-Urologie et andrologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
+| `organisation/MEDINA_Organisation.html` | derived | GLOBAL | pull_request_base |
+| `organisation/production_plan.json` | consultation_source | GLOBAL | pull_request_base |
+| `tests/test_claude_watch.py` | integration_source | GLOBAL | pull_request_base |
+| `tests/test_production_plan.py` | integration_source | GLOBAL | pull_request_base |
+| `tests/verify_justifications_recovery.cjs` | integration_source | GLOBAL | pull_request_base |
+| `tools/claude_watch.py` | integration_source | GLOBAL | pull_request_base |
+
+## codex/transition-cardio-20261008
+
 - Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.
 - Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
 - Diff de branche potentiellement tronqué ; consulter tous les fichiers de la PR ou un diff Git local.
@@ -2415,21 +3351,75 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `AGENTS.md` | documentation | GLOBAL | integration_target |
 | `CLAUDE.md` | documentation | GLOBAL | integration_target |
 | `audits/CHAINE_FRAGMENTS_2026-10-08/VALIDATION.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-07/README.md` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/BUILD_STATIC_UNIT.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/CONVERGENCE_MAIN_E027.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/QA_APRES_8CE.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/SCIENCES.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/categories/categories_results.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/i48_native/i48_justifications_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I46/i46_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I47/i47_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I49/i49_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I71/i71_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I80/i80_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/Q21/q21_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/sciences_cs/science-cs-browser-results.json` | review_report | S01, CS | integration_target |
-| `chapters.json` | registration_source | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/ARBITRAGES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/LATE_BRANCH_CHECK.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/REMOTE_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/browser-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/fragments-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/justifications-final.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/unit-verbose.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_LOT4_2026-10-07/verify_i48.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CATEGORIES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/CONVERGENCE_MAIN.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/I33_CONFIRMATION.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/INVENTORY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_ADAPTATIONS_CODEX.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/LOT5_SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/PUBLICATION.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RAPPORT.md` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/RESERVES_CLAUDE.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/BUILD_S01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/EXPORT_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/FRAGMENTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/UNIT_TESTS.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/convergence_main/VALIDATION_SUMMARY.json` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/final_s01_build.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/fragments.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/browser.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/static.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/initial-browser-attempt.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_build.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/browser.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/lot5_four/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01.log` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/s01/browser-results.json` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/static.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/unittest.log` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_i48_bibliography.cjs` | review_report | S01 | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_lot5_four.cjs` | review_report | GLOBAL | integration_target |
+| `audits/CLAUDE_TEN_2026-10-07/verify_ten.cjs` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/CLAUDE_DELTA_PROOF.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/I50.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_CHANGES.json` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_COUNTER_REVIEW.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/I50_READONLY.md` | review_report | S01 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J18.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.json` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/J44.md` | review_report | S02 | integration_target |
+| `audits/REPRISE_2026-10-07/README.md` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/SCIENCES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/UNITAIRES.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser-final/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/failed_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/browser/targeted_justifications_results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/figure-browser-results.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/figures/visual-review.json` | review_report | GLOBAL | integration_target |
+| `audits/REPRISE_2026-10-07/verify_figures.cjs` | review_report | GLOBAL | integration_target |
+| `chapters/I42/I42_a.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_b.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I42/I42_pop_esc_comparison.html` | course_source | S01 | integration_target |
 | `chapters/I46/I46_a.html` | course_source | S01 | integration_target |
 | `chapters/I46/I46_b.html` | course_source | S01 | integration_target |
 | `chapters/I46/I46_c.html` | course_source | S01 | integration_target |
@@ -2449,8 +3439,12 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `chapters/I47/I47_pop4.html` | course_source | S01 | integration_target |
 | `chapters/I47/I47_pop5.html` | course_source | S01 | integration_target |
 | `chapters/I47/I47_pop6.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_a.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_b.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_d.html` | course_source | S01 | integration_target |
 | `chapters/I48/I48_pop3.html` | course_source | S01 | integration_target |
 | `chapters/I48/I48_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I48/I48_pop_esc_comparison.html` | course_source | S01 | integration_target |
 | `chapters/I49/I49_a.html` | course_source | S01 | integration_target |
 | `chapters/I49/I49_b.html` | course_source | S01 | integration_target |
 | `chapters/I49/I49_c.html` | course_source | S01 | integration_target |
@@ -2460,6 +3454,12 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `chapters/I49/I49_pop3.html` | course_source | S01 | integration_target |
 | `chapters/I49/I49_pop4.html` | course_source | S01 | integration_target |
 | `chapters/I49/I49_pop5.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_a.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_b.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_c.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_justifications.json` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop4.html` | course_source | S01 | integration_target |
+| `chapters/I50/I50_pop_esc_comparison.html` | course_source | S01 | integration_target |
 | `chapters/I71/I71_a.html` | course_source | S01 | integration_target |
 | `chapters/I71/I71_b.html` | course_source | S01 | integration_target |
 | `chapters/I71/I71_c.html` | course_source | S01 | integration_target |
@@ -2472,14 +3472,13 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `chapters/I80/I80_d.html` | course_source | S01 | integration_target |
 | `chapters/I80/I80_pop.html` | course_source | S01 | integration_target |
 | `chapters/I80/I80_pop_sciences.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_a.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_b.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_c.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_d.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop4.html` | course_source | S01 | integration_target |
+| `chapters/J18/J18_a.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_c.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_justifications.json` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop1.html` | course_source | S02 | integration_target |
+| `chapters/J18/J18_pop_sciences_revision.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_c.html` | course_source | S02 | integration_target |
+| `chapters/J44/J44_justifications.json` | course_source | S02 | integration_target |
 | `chapters/Q21/Q21_a.html` | course_source | S01 | integration_target |
 | `chapters/Q21/Q21_b.html` | course_source | S01 | integration_target |
 | `chapters/Q21/Q21_c.html` | course_source | S01 | integration_target |
@@ -2493,564 +3492,161 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `chapters/Q21/Q21_pop7.html` | course_source | S01 | integration_target |
 | `docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/CODEX_CHAINE_FRAGMENTS.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/DELIVERIES_LATEST.json` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/DELIVERIES_LATEST.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.html` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/FRAGMENTS_RESTANTS.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/FRAGMENT_01_PRIORITE.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/HANDOFF_LATEST.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_CLAUDE.md` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/MECHANISMS_PLAN.json` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/README.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/SIGNAUX_CODEX.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/TRANSITION_CODEX_2026-10-08.md` | documentation | GLOBAL | integration_target |
 | `docs/collaboration/receipts/CLAUDE_ESC2026_20261008_RECEPTION.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_3F90204_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_A0B0204_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC_4C8C534_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC_7C6FC65_CORRECTIONS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I35_2145A2A_RENAL_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_0974D85_RAPIDOCAIN_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_20BEE19_CONSERVATEURS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_20C67C0_PH02_INTRAARTERIELLE_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6B76E12_LIMITES_V4_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6D5797C_RAPIDOCAIN_PRESENTATIONS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_A41_5BEE2A4_RECEPTION_2026-10-07.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_B983CB6_ATTESTATION_SOURCES_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_CDD2B72_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D2A460F_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D94B11F_MAIN31B_PROOFS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_DECEF42_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E2C023C_COMPLEMENT_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E2C023C_INTRAARTERIELLE_STATUT_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_ESC_BE58AD9_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T225829714502Z.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_PR12_8CE3E99_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/A41_HASH_VERIFICATION.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/AUDIT_MEDICAL_I83.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/AUDIT_TECHNIQUE_I83.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_AUDIT_A41.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_DISTANT.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_DISTANT.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_TECHNIQUE_I83.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/ORIGINAUX_PROVENANCE.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/RECEPTION.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/CORRECTIONS_I46_I47_I49.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/CORRECTIONS_I71_I80_Q21.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/FUSION_I48.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/HARMONISATION_REFERENCES_PROSE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/INJECTION_MANIFEST.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/INJECTION_RECONCILIATION.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I46_I47_I49.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I48.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I71_I80_Q21.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/STRUCTURE_I71_I80_Q21.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/original/glossary_q21.py` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/AUDIT_JAUGES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_DASHBOARD.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C_ROUTES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DELTA_E2C023C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT_E2.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT_E2.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/FRAGMENTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/FRAGMENTS_METHODE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/TACHES_MAJEURES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/TACHES_METHODE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_CATEGORIES_S01.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_INVENTAIRE_S01.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_S01_HISTORIQUE.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_DIFFERENCES_COPIES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_DELTA_20BEE19.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_PERIMETRE_MAIN.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_ARTEFACTS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_COMMANDES_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_LOGS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_NATIFS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_RESEAU_CANONIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_ROUTES_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_S01_CANONIQUE.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_PATHOLOGIE_EXAMENS.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_PHARMACOLOGIE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_SCIENCES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_TECHNIQUE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_20BEE19.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_20C67C0.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_CANONIQUES_6D5797C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_INDEPENDANTS.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_UNITAIRES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DECISION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_20BEE19_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_20C67C0_PHARMACOLOGIE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_20C67C0_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_6D5797C_PHARMACOLOGIE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_6D5797C_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/ENVIRONNEMENT_SOURCES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/INJECTION_LOCALE_6D5797C.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/INVENTAIRE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/INVENTAIRE_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/PREUVE_AETHOXYSKLEROL_COMPRESSION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/injection_intra_arterielle_extraits.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/rapidocain_extraits.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/rapport.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PROTOCOLE_CONTROLES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/VEILLE_RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_0974D85_I83_RAPIDOCAIN/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_20C67C0_I83_PH02_INTRAARTERIELLE/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_2145A2A_I35_RENAL/RECEPTION.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_4C8C534_ESC_RAPPORTS_CONTROLES/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_6B76E12_I83_LIMITES_V4/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_6D5797C_I83_RAPIDOCAIN_PRESENTATIONS/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_7C6FC65_ESC_CORRECTIONS/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_B983CB6_I83_ATTESTATION_SOURCES/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_BE58AD9_I83_ESC_CONTROLS/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_CDD2B72_I83_COMPRESSION/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_D2A460F_I83_SIMULATION_MAIN/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_D94B11F_I83_MAIN31B_PROOFS/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_DECEF42_I83_PREUVE_CONTROLE/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_E2C023C_I83_INTRAARTERIELLE_STATUT/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_ESC2026_A0B0204/INVENTAIRE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/PR12_ESC2026_A0B0204/RECEPTION.md` | review_report | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_CHECKPOINT_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT4_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_LOT5_FINAL_20261007.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T214720372776Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T221127276821Z.json` | documentation | GLOBAL | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.json` | review_report | S01 | integration_target |
+| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.md` | review_report | S01 | integration_target |
 | `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_MEDICAL.md` | review_report | GLOBAL | integration_target |
 | `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_TECHNIQUE.md` | review_report | GLOBAL | integration_target |
 | `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION.md` | review_report | GLOBAL | integration_target |
 | `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION_ACTUALISEE.md` | review_report | GLOBAL | integration_target |
-| `glossary/fragments_medina.py` | glossary_source | GLOBAL | integration_target |
-| `glossary/i83.py` | glossary_source | GLOBAL | integration_target |
 | `glossary/q21.py` | glossary_source | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/RECEPTION.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/RECEPTION.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/livraison.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_pop4.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I00/I00_pop6.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_pop4.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I30/I30_pop6.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I33/I33_pop4.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_pop4.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I34/I34_pop6.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_pop4.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I35/I35_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_b.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_c.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_d.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_pop1.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_pop2.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_pop3.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_pop4.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_pop5.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I40/I40_pop6.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I42/I42_a.html` | delivery_source | S01 | integration_target |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_8CE3E99_RECEPTION/sources/chapters/I42/I42_b.html` | delivery_source | S01 | integration_target |
-
-## codex/transition-cardio-20261008
-
-
-| Fichier | Nature | Routage | Diff |
-| --- | --- | --- | --- |
-| `docs/collaboration/TRANSITION_CODEX_2026-10-08.md` | documentation | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/audits/PRODUCTION_CARDIO_2026-10-08/I73.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/audits/PRODUCTION_CARDIO_2026-10-08/I73_CONTRELECTURE.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/audits/PRODUCTION_CARDIO_2026-10-08/I95.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/audits/PRODUCTION_CARDIO_2026-10-08/I95_CONTRELECTURE.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/audits/REPRISE_FINALE_2026-10-08/ADAPTATIONS_INTEGRATEUR.json` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/audits/REPRISE_FINALE_2026-10-08/CONTRELECTURE_RYTHME.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/audits/REPRISE_FINALE_2026-10-08/CONTRELECTURE_VASCULAIRE_CONGENITAL.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I73/I73_a.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I73/I73_b.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I73/I73_c.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I73/I73_d.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I73/I73_pop1.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I95/I95_a.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I95/I95_b.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I95/I95_c.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I95/I95_d.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/chapters/I95/I95_pop.html` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/docs/collaboration/NEW_COURSE_DELIVERY.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/docs/collaboration/PRODUCTION_CARDIO_CLAUDE_2026-10-08.md` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/glossary/i73.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/glossary/i95.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/tests/test_new_course_delivery.py` | delivery_report | GLOBAL | integration_target |
-| `livraisons/Livraison Codex/C-01-Cardiologie/transition-20261008/tools/new_course_delivery.py` | delivery_report | GLOBAL | integration_target |
-
-## main
-
-- Vérifier titres, covers, activation, rattachements et rubriques après intégration.
-- Cours absent de chapters.json de la cible ; déclaration à intégrer.
-- S01 : le cours doit figurer exactement une fois dans categories[].chapters.
-- Diff de branche potentiellement tronqué ; consulter tous les fichiers de la PR ou un diff Git local.
-
-| Fichier | Nature | Routage | Diff |
-| --- | --- | --- | --- |
-| `.github/workflows/claude_watch.yml` | integration_source | GLOBAL | integration_target |
-| `AGENTS.md` | documentation | GLOBAL | integration_target |
-| `CLAUDE.md` | documentation | GLOBAL | integration_target |
-| `audits/CHAINE_FRAGMENTS_2026-10-08/VALIDATION.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-07/README.md` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/BUILD_STATIC_UNIT.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/CONVERGENCE_MAIN_E027.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/QA_APRES_8CE.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/SCIENCES.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/categories/categories_results.json` | review_report | GLOBAL | integration_target |
-| `audits/MECANISMES_2026-10-08/i48_native/i48_justifications_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I46/i46_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I47/i47_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I49/i49_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I71/i71_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/I80/i80_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/native/Q21/q21_native_results.json` | review_report | S01 | integration_target |
-| `audits/MECANISMES_2026-10-08/sciences_cs/science-cs-browser-results.json` | review_report | S01, CS | integration_target |
-| `chapters.json` | registration_source | GLOBAL | integration_target |
-| `chapters/I46/I46_a.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_b.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_c.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_d.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I46/I46_pop5.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_a.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_b.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_c.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_d.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop5.html` | course_source | S01 | integration_target |
-| `chapters/I47/I47_pop6.html` | course_source | S01 | integration_target |
-| `chapters/I48/I48_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I48/I48_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_a.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_b.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_c.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_d.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop4.html` | course_source | S01 | integration_target |
-| `chapters/I49/I49_pop5.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_a.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_b.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_c.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_d.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_pop.html` | course_source | S01 | integration_target |
-| `chapters/I71/I71_pop_sciences.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_a.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_b.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_c.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_d.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_pop.html` | course_source | S01 | integration_target |
-| `chapters/I80/I80_pop_sciences.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_a.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_b.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_c.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_d.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop1.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop2.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop3.html` | course_source | S01 | integration_target |
-| `chapters/I83/I83_pop4.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_a.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_b.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_c.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_d.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop1.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop2.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop3.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop4.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop5.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop6.html` | course_source | S01 | integration_target |
-| `chapters/Q21/Q21_pop7.html` | course_source | S01 | integration_target |
-| `docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/CODEX_CHAINE_FRAGMENTS.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/CONSIGNES_INTERACTION_DENSITE_SOURCES.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/DELIVERIES_LATEST.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/DELIVERY_PROTOCOL.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.html` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/ETAT_DES_LIEUX_2026-10-08.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/FILE_AUDIT_CODEX.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/FRAGMENTS_RESTANTS.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/HANDOFF_LATEST.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/README.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/REGLES_INJECTION_CLAUDE.md` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/SIGNAUX_CODEX.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_20261008_RECEPTION.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_3F90204_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_A0B0204_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC_4C8C534_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_ESC_7C6FC65_CORRECTIONS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I35_2145A2A_RENAL_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_0974D85_RAPIDOCAIN_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_205D2CB_HARMONISATION_3_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_20BEE19_CONSERVATEURS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_20C67C0_PH02_INTRAARTERIELLE_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6B76E12_LIMITES_V4_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_6D5797C_RAPIDOCAIN_PRESENTATIONS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_INTEGRATION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_A41_5BEE2A4_RECEPTION_2026-10-07.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_B526D9D_HARMONISATION_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_B983CB6_ATTESTATION_SOURCES_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_CDD2B72_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D2A460F_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D5B46AA_HARMONISATION_5_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D5B46AA_HARMONISATION_INTEGRATION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D6178B5_HARMONISATION_2_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_D94B11F_MAIN31B_PROOFS_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_DECEF42_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E17107A_HARMONISATION_4_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E2C023C_COMPLEMENT_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_E2C023C_INTRAARTERIELLE_STATUT_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I83_ESC_BE58AD9_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I89_7775E6E_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_I89_DE67651_I89_2_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_J45_9AA6504_J45_3_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_J45_C3DD8CD_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_J45_F30B891_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T225829714502Z.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CLAUDE_PR12_8CE3E99_RECEPTION_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/receipts/CODEX_A41_E330776_REMIS_CLAUDE_2026-10-08.json` | documentation | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/A41_HASH_VERIFICATION.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/AUDIT_MEDICAL_I83.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/AUDIT_TECHNIQUE_I83.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_AUDIT_A41.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_DISTANT.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_DISTANT.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_TECHNIQUE_I83.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/ORIGINAUX_PROVENANCE.json` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/RECEPTION.md` | review_report | T1 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/CORRECTIONS_I46_I47_I49.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/CORRECTIONS_I71_I80_Q21.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/FUSION_I48.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/HARMONISATION_REFERENCES_PROSE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/INJECTION_MANIFEST.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/INJECTION_RECONCILIATION.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I46_I47_I49.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I48.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/REVUE_I71_I80_Q21.md` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/STRUCTURE_I71_I80_Q21.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/CLAUDE_8CE3E99/original/glossary_q21.py` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/AUDIT_JAUGES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_DASHBOARD.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/CONTROLES_E2C023C_ROUTES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DELTA_E2C023C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT_E2.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT_E2.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/FRAGMENTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/FRAGMENTS_METHODE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/TACHES_MAJEURES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/TACHES_METHODE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_CATEGORIES_S01.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_INVENTAIRE_S01.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/0974D85_S01_HISTORIQUE.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_DIFFERENCES_COPIES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20BEE19_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_ARTEFACTS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_COMMANDES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_DELTA_20BEE19.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_HELPERS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_INTEGRITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_LOGS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_MANIFESTE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_PERIMETRE_MAIN.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_RESEAU_GLOBAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_RESULTATS_NATIFS.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/20C67C0_ROUTES_I83_I87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_ARTEFACTS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_COMMANDES_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_LOGS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_NATIFS_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_RESEAU_CANONIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_ROUTES_CANONIQUES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/6D5797C_S01_CANONIQUE.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_PATHOLOGIE_EXAMENS.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_PHARMACOLOGIE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_SCIENCES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_TECHNIQUE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_20BEE19.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_20C67C0.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_CANONIQUES_6D5797C.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_INDEPENDANTS.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_UNITAIRES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DECISION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_20BEE19_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_20C67C0_PHARMACOLOGIE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_20C67C0_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_6D5797C_PHARMACOLOGIE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_6D5797C_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/ENVIRONNEMENT_SOURCES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/INJECTION_LOCALE_6D5797C.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/INVENTAIRE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/INVENTAIRE_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/PREUVE_AETHOXYSKLEROL_COMPRESSION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/injection_intra_arterielle_extraits.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/rapidocain_extraits.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PREUVES_6D5797C/rapport.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/PROTOCOLE_CONTROLES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/VEILLE_RECEPTION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/AUDIT_MEDICAL.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/AUDIT_MEDICAL.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/COMMENTAIRE_CONTRE_AUDIT.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/CONTROLE_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/CONTROLE_TECHNIQUE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/DECISION.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/DECISION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/build-global-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/build-global.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/build-s01-command.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/build-s01.log` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/global-browser-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/global-browser.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/global-http.py` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/global-network.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/gloss-sigles-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/gloss-sigles.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/gloss-sigles.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/gloss-sigles.py` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/http-preload.cjs` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/livraison.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/native-i83-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/native-i83.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/native-i83/i83_native_results.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/native-i83/transport.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/rebuild-global.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/rebuild-global.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/routes-i83-i87-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/routes-i83-i87.cjs` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/routes-i83-i87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/routes-i83-i87.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/routes-i83-i87/transport.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/run-one.py` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/s01-browser-command.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/s01-browser.log` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/s01-browser/browser-results.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/s01-browser/transport.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/source-inspection.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/static-i83-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/static-i83.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/unit.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/controles/unit.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/CONTROLE_TECHNIQUE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/CONTROLE_TECHNIQUE.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/DECISION.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/DECISION.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/DELTA_AUDITE.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/PUBLICATION_PAGES.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/PUBLICATION_PAGES.md` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/build-global-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/build-global.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/build-s01-command.json` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/build-s01.log` | review_report | S01 | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/global-browser-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/global-browser.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/global-http.py` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/global-network.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/gloss-sigles-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/gloss-sigles.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/gloss-sigles.log` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/gloss-sigles.py` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/http-preload.cjs` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/livraison.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/routes-i83-i87-command.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/routes-i83-i87.cjs` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/routes-i83-i87.json` | review_report | GLOBAL | integration_target |
-| `docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/controles/routes-i83-i87.log` | review_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/MERGE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/AVANCEMENT.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/REMOTE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.original.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/q21.py` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/rapport.md` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I47.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I71.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I80.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/Q21.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/INITIAL_FETCH_DIFFERENCES.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/REMOTE_PROOF.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.original.json` | delivery_report | GLOBAL | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_b.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_c.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_d.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop1.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop2.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop3.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop4.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop5.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop6.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_a.html` | delivery_source | S01 | integration_target |
+| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_b.html` | delivery_source | S01 | integration_target |
 
 ## claude/medina-alpha-integration-7dul4i
 
@@ -3502,6 +4098,7 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 
 ## claude/mission-justification-20261007
 
+- PR #11 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise.
 
 | Fichier | Nature | Routage | Diff |
 | --- | --- | --- | --- |
@@ -3513,6 +4110,7 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 ## claude/review-medina-global-20261007
 
 - Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
+- PR #10 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise.
 
 | Fichier | Nature | Routage | Diff |
 | --- | --- | --- | --- |
@@ -3567,6 +4165,7 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 
 ## claude/review-medina-global-20261007
 
+- PR #9 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise.
 
 | Fichier | Nature | Routage | Diff |
 | --- | --- | --- | --- |
@@ -3593,6 +4192,7 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 
 ## claude/review-medina-global-20261007
 
+- PR #8 vise codex/sciences-cs-fragments-20261007 ; comparaison à la cible MEDINA requise.
 
 | Fichier | Nature | Routage | Diff |
 | --- | --- | --- | --- |
@@ -3640,6 +4240,9 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `fragments.json` | registration_source | GLOBAL | pull_request_base |
 | `test_preview.py` | unknown |  | pull_request_base |
 
+## codex/decision-i83-20261008
+
+
 ## codex/etancheite-complete-des-fragments
 
 - PR #5 vise main ; comparaison à la cible MEDINA requise.
@@ -3673,620 +4276,18 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 | `tests/audit_fragments.py` | integration_source | GLOBAL | pull_request_base |
 | `tests/verify_s01_browser.cjs` | integration_source | GLOBAL | pull_request_base |
 
-## codex/mechanismes-20261007
-
-
 ## codex/repartition-fragments-20261008
 
 
-## codex/sciences-cs-fragments-20261007
+## main
 
-- Glossaire global : contrôler les collisions et la définition finale après zz_fusion.py.
-- Source déposée ; vérifier et injecter dans le chemin canonique avant reconstruction.
-- Tableau reconstruit depuis le registre et tools/build_organisation.py.
-- PR #13 vise main ; comparaison à la cible MEDINA requise.
-
-| Fichier | Nature | Routage | Diff |
-| --- | --- | --- | --- |
-| `.github/workflows/claude_watch.yml` | integration_source | GLOBAL | pull_request_base |
-| `AGENTS.md` | documentation | GLOBAL | pull_request_base |
-| `CLAUDE.md` | documentation | GLOBAL | pull_request_base |
-| `audits/CHAINE_FRAGMENTS_2026-10-08/VALIDATION.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/ARBITRAGES.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/LATE_BRANCH_CHECK.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/RAPPORT.md` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/REMOTE_PROOF.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/browser-final.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/fragments-final.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/justifications-final.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/static.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/unit-verbose.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_LOT4_2026-10-07/verify_i48.cjs` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/ADAPTATIONS_CODEX.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/CATEGORIES.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/CONVERGENCE_MAIN.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/I33_CONFIRMATION.json` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/INVENTORY.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/LOT5_ADAPTATIONS_CODEX.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/LOT5_SCIENCES.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/PUBLICATION.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/RAPPORT.md` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/RESERVES_CLAUDE.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/SCIENCES.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/VALIDATION_SUMMARY.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/browser.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/build.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/convergence_main/BUILD_S01.log` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/convergence_main/EXPORT_PROOF.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/convergence_main/FRAGMENTS.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/convergence_main/SCIENCES.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/convergence_main/UNIT_TESTS.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/convergence_main/VALIDATION_SUMMARY.json` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/final_s01_build.log` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/fragments.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/browser.log` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/i48_bibliography/static.log` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/initial-browser-attempt.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/lot5_build.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/lot5_four/browser.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/lot5_four/static.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/s01.log` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/s01/browser-results.json` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/static.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/unittest.log` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/verify_i48_bibliography.cjs` | review_report | S01 | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/verify_lot5_four.cjs` | review_report | GLOBAL | pull_request_base |
-| `audits/CLAUDE_TEN_2026-10-07/verify_ten.cjs` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/CLAUDE_DELTA.md` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/CLAUDE_DELTA_PROOF.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/I50.md` | review_report | S01 | pull_request_base |
-| `audits/REPRISE_2026-10-07/I50_CHANGES.json` | review_report | S01 | pull_request_base |
-| `audits/REPRISE_2026-10-07/I50_COUNTER_REVIEW.md` | review_report | S01 | pull_request_base |
-| `audits/REPRISE_2026-10-07/I50_READONLY.md` | review_report | S01 | pull_request_base |
-| `audits/REPRISE_2026-10-07/J18.json` | review_report | S02 | pull_request_base |
-| `audits/REPRISE_2026-10-07/J18.md` | review_report | S02 | pull_request_base |
-| `audits/REPRISE_2026-10-07/J44.json` | review_report | S02 | pull_request_base |
-| `audits/REPRISE_2026-10-07/J44.md` | review_report | S02 | pull_request_base |
-| `audits/REPRISE_2026-10-07/README.md` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/SCIENCES.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/UNITAIRES.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/browser-final/targeted_justifications_results.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/browser/failed_justifications_results.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/browser/targeted_justifications_results.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/figures/figure-browser-results.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/figures/visual-review.json` | review_report | GLOBAL | pull_request_base |
-| `audits/REPRISE_2026-10-07/verify_figures.cjs` | review_report | GLOBAL | pull_request_base |
-| `chapters/I42/I42_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I42/I42_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I42/I42_pop4.html` | course_source | S01 | pull_request_base |
-| `chapters/I42/I42_pop_esc_comparison.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_c.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_d.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_pop1.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_pop2.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_pop3.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_pop4.html` | course_source | S01 | pull_request_base |
-| `chapters/I46/I46_pop5.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_c.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_d.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_pop1.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_pop2.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_pop3.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_pop4.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_pop5.html` | course_source | S01 | pull_request_base |
-| `chapters/I47/I47_pop6.html` | course_source | S01 | pull_request_base |
-| `chapters/I48/I48_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I48/I48_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I48/I48_d.html` | course_source | S01 | pull_request_base |
-| `chapters/I48/I48_pop3.html` | course_source | S01 | pull_request_base |
-| `chapters/I48/I48_pop4.html` | course_source | S01 | pull_request_base |
-| `chapters/I48/I48_pop_esc_comparison.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_c.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_d.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_pop1.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_pop2.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_pop3.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_pop4.html` | course_source | S01 | pull_request_base |
-| `chapters/I49/I49_pop5.html` | course_source | S01 | pull_request_base |
-| `chapters/I50/I50_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I50/I50_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I50/I50_c.html` | course_source | S01 | pull_request_base |
-| `chapters/I50/I50_justifications.json` | course_source | S01 | pull_request_base |
-| `chapters/I50/I50_pop4.html` | course_source | S01 | pull_request_base |
-| `chapters/I50/I50_pop_esc_comparison.html` | course_source | S01 | pull_request_base |
-| `chapters/I71/I71_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I71/I71_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I71/I71_c.html` | course_source | S01 | pull_request_base |
-| `chapters/I71/I71_d.html` | course_source | S01 | pull_request_base |
-| `chapters/I71/I71_pop.html` | course_source | S01 | pull_request_base |
-| `chapters/I71/I71_pop_sciences.html` | course_source | S01 | pull_request_base |
-| `chapters/I80/I80_a.html` | course_source | S01 | pull_request_base |
-| `chapters/I80/I80_b.html` | course_source | S01 | pull_request_base |
-| `chapters/I80/I80_c.html` | course_source | S01 | pull_request_base |
-| `chapters/I80/I80_d.html` | course_source | S01 | pull_request_base |
-| `chapters/I80/I80_pop.html` | course_source | S01 | pull_request_base |
-| `chapters/I80/I80_pop_sciences.html` | course_source | S01 | pull_request_base |
-| `chapters/J18/J18_a.html` | course_source | S02 | pull_request_base |
-| `chapters/J18/J18_c.html` | course_source | S02 | pull_request_base |
-| `chapters/J18/J18_justifications.json` | course_source | S02 | pull_request_base |
-| `chapters/J18/J18_pop1.html` | course_source | S02 | pull_request_base |
-| `chapters/J18/J18_pop_sciences_revision.html` | course_source | S02 | pull_request_base |
-| `chapters/J44/J44_c.html` | course_source | S02 | pull_request_base |
-| `chapters/J44/J44_justifications.json` | course_source | S02 | pull_request_base |
-| `chapters/Q21/Q21_a.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_b.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_c.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_d.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_pop1.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_pop2.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_pop3.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_pop4.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_pop5.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_pop6.html` | course_source | S01 | pull_request_base |
-| `chapters/Q21/Q21_pop7.html` | course_source | S01 | pull_request_base |
-| `docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/CODEX_CHAINE_FRAGMENTS.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/DELIVERIES_LATEST.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/DELIVERIES_LATEST.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/FRAGMENTS_RESTANTS.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/FRAGMENT_01_PRIORITE.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/HANDOFF_LATEST.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/MECHANISMS_CLAUDE.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/MECHANISMS_PLAN.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/README.md` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/SIGNAUX_CODEX.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/receipts/CLAUDE_ESC2026_20261008_RECEPTION.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/receipts/CLAUDE_LOT4_CHECKPOINT_20261007.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/receipts/CLAUDE_LOT4_FINAL_20261007.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/receipts/CLAUDE_LOT5_FINAL_20261007.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T214720372776Z.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/receipts/CLAUDE_PACKET_S01_20261007T221127276821Z.json` | documentation | GLOBAL | pull_request_base |
-| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.json` | review_report | S01 | pull_request_base |
-| `docs/collaboration/reviews/2026-10-07/SNAPSHOT_DEPLOYED_I48.md` | review_report | S01 | pull_request_base |
-| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_MEDICAL.md` | review_report | GLOBAL | pull_request_base |
-| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_TECHNIQUE.md` | review_report | GLOBAL | pull_request_base |
-| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION.md` | review_report | GLOBAL | pull_request_base |
-| `docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/RECEPTION_ACTUALISEE.md` | review_report | GLOBAL | pull_request_base |
-| `glossary/q21.py` | glossary_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/MERGE_PROOF.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-I48_BIBLIOGRAPHY/sources/chapters/I48/I48_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/AVANCEMENT.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/REMOTE_PROOF.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/livraison.original.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/q21.py` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/rapport.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I47/I47_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I47.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I71.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/I80.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-LOT5_FINAL/verification/Q21.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/INITIAL_FETCH_DIFFERENCES.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/REMOTE_PROOF.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/livraison.original.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I00/I00_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I30/I30_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I33/I33_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I34/I34_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I35/I35_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I40/I40_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I44/I44_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I46/I46_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/sources/chapters/I49/I49_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I00.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I30.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I33.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I34.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I35.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I40.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I42.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I44.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I46.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-07-TEN_READY/verification/I49.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I00/I00_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I10/I10_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I21/I21_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I25/I25_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I30/I30_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I33/I33_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I34/I34_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I35/I35_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I40/I40_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I42/I42_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I44/I44_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I46/I46_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I47/I47_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I48/I48_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I49/I49_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_justifications.json` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I50/I50_pop_esc_comparison.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I70/I70_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_pop.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I71/I71_pop_sciences.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_pop.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I80/I80_pop_sciences.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_a.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_b.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_c.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_d.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop1.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop2.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop3.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop4.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop5.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop6.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/Q21/Q21_pop7.html` | delivery_source | S01 | pull_request_base |
-| `livraisons/Livraison Codex/D-16-Dermatologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/D-16-Dermatologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/D-16-Dermatologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/D-20-Diagnostic clinique et examens complémentaires/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/D-20-Diagnostic clinique et examens complémentaires/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/D-20-Diagnostic clinique et examens complémentaires/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/E-22-Éthique médicale, droit et communication/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/E-22-Éthique médicale, droit et communication/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/E-22-Éthique médicale, droit et communication/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/G-04-Gastroentérologie et hépatologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/G-04-Gastroentérologie et hépatologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/G-04-Gastroentérologie et hépatologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/G-10-Gynécologie et sénologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/G-10-Gynécologie et sénologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/G-10-Gynécologie et sénologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/H-08-Hématologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/H-08-Hématologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/H-08-Hématologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_a.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_b.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_c.html` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/sources/chapters/A41/A41_justifications.json` | delivery_source | T1 | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/DEMANDE_LECTURE_CROISEE_CLAUDE.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/INVENTAIRE_BASE.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/D84/D84_c.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/D84/D84_justifications.json` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_a.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_b.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_c.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_d.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_justifications.json` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M31/M31_pop.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M32/M32_c.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/M32/M32_justifications.json` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/T78/T78_b.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/T78/T78_c.html` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/I-13-Immunologie et allergologie/sources/chapters/T78/T78_justifications.json` | delivery_source | S07 | pull_request_base |
-| `livraisons/Livraison Codex/M-12-Médecine des âges de la vie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-12-Médecine des âges de la vie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-12-Médecine des âges de la vie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-19-Médecine d’urgence, traumatologie et toxicologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-19-Médecine d’urgence, traumatologie et toxicologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-19-Médecine d’urgence, traumatologie et toxicologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-21-Médecine de premier recours et santé publique/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-21-Médecine de premier recours et santé publique/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/M-21-Médecine de premier recours et santé publique/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/N-05-Neurologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/N-05-Neurologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/N-05-Neurologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/N-07-Néphrologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/N-07-Néphrologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/N-07-Néphrologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-09-Oncologie, génétique médicale et soins palliatifs/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-09-Oncologie, génétique médicale et soins palliatifs/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-09-Oncologie, génétique médicale et soins palliatifs/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-11-Obstétrique et néonatologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-11-Obstétrique et néonatologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-11-Obstétrique et néonatologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-17-Oto-rhino-laryngologie et médecine bucco-dentaire/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-17-Oto-rhino-laryngologie et médecine bucco-dentaire/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-17-Oto-rhino-laryngologie et médecine bucco-dentaire/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-18-Ophtalmologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-18-Ophtalmologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/O-18-Ophtalmologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_a.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_b.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_c.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/I26/I26_justifications.json` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_a.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_b.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_c.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_justifications.json` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_pop1.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J18/J18_pop_sciences_revision.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_a.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_b.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_c.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_d.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J40/J40_pop.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_a.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_b.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_c.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J44/J44_justifications.json` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J45/J45_c.html` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/P-02-Pneumologie/sources/chapters/J45/J45_justifications.json` | delivery_source | S02 | pull_request_base |
-| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/sources/chapters/M06/M06_c.html` | delivery_source | S10 | pull_request_base |
-| `livraisons/Livraison Codex/R-14-Rhumatologie et orthopédie/sources/chapters/M06/M06_justifications.json` | delivery_source | S10 | pull_request_base |
-| `livraisons/Livraison Codex/U-15-Urologie et andrologie/README.md` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/U-15-Urologie et andrologie/livraison.json` | delivery_report | GLOBAL | pull_request_base |
-| `livraisons/Livraison Codex/U-15-Urologie et andrologie/sources/README.md` | delivery_source | GLOBAL | pull_request_base |
-| `organisation/MEDINA_Organisation.html` | derived | GLOBAL | pull_request_base |
-| `organisation/production_plan.json` | consultation_source | GLOBAL | pull_request_base |
-| `tests/test_claude_watch.py` | integration_source | GLOBAL | pull_request_base |
-| `tests/test_production_plan.py` | integration_source | GLOBAL | pull_request_base |
-| `tests/verify_justifications_recovery.cjs` | integration_source | GLOBAL | pull_request_base |
-| `tools/claude_watch.py` | integration_source | GLOBAL | pull_request_base |
 
 ## Limites
 
-- Diff de branche potentiellement limité à 300 fichiers : 5f04f5d950f742ec8848795bc048822d566640c5.
-- Diff de branche potentiellement limité à 300 fichiers : 61a841b3c96b3bd4f3ad58ec5870d06945e63292.
-- Diff de branche potentiellement limité à 300 fichiers : 9aa65044972f8bdd5e922a3567a78adb2565f8fb.
-- Diff de branche potentiellement limité à 300 fichiers : db06b1fae3c27e93050850df44c3eb23fcd60164.
-- Reçu non lisible docs/collaboration/receipts/CLAUDE_ALPHA_2026-09-26.json : GitHub HTTP 503 sur /contents/docs/collaboration/receipts/CLAUDE_ALPHA_2026-09-26.json
+- Diff de branche potentiellement limité à 300 fichiers : 39b7ff0cc585c59ffbb99fb448940daa1950b34d.
+- Diff de branche potentiellement limité à 300 fichiers : 4d8efb864bf7e95357d589c7ac865c641d54f751.
+- Diff de branche potentiellement limité à 300 fichiers : 83bff147e0aba6b31e7a080e098770b0a6b4250d.
+- Diff de branche potentiellement limité à 300 fichiers : fdad6c8adac0c9e623d469211674bdab666d6c47.
 - Les rapports et les tests déclarés ne constituent pas une vérification médicale indépendante.
 - Le routage est contrôlé contre les sources locales de la cible, avant les changements proposés.
 - Aucune branche n'est fusionnée, aucun reçu créé et aucun commit publié par ce scanner.

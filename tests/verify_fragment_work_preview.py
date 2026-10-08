@@ -22,6 +22,7 @@ def check(label, condition, detail=None):
     REPORT["checks"].append(label)
     if not condition:
         REPORT["failures"].append({"label": label, "detail": detail})
+        print(f"FAIL {label}: {str(detail)[:600]}", flush=True)
 
 
 def internal_glossary_definitions(path):
@@ -82,6 +83,22 @@ async def contrast(page, selector):
     }""")
 
 
+async def click_text_trigger(trigger):
+    """Hit a painted inline fragment, rather than an empty corner of its union."""
+    await trigger.scroll_into_view_if_needed()
+    position = await trigger.evaluate("""el => {
+      const outer=el.getBoundingClientRect();
+      for(const r of el.getClientRects()){
+        const left=Math.max(0,r.left),right=Math.min(innerWidth,r.right);
+        const top=Math.max(0,r.top),bottom=Math.min(innerHeight,r.bottom);
+        if(right>left && bottom>top)
+          return {x:(left+right)/2-outer.left,y:(top+bottom)/2-outer.top};
+      }
+      throw new Error('No visible painted rectangle for the text trigger');
+    }""")
+    await trigger.click(position=position)
+
+
 async def reveal(page, code, index):
     trigger = page.locator(f'.mc[data-code="{code}"] [data-k]').nth(index)
     context = await trigger.evaluate("""el => ({panel:el.closest('.mc-panel')?.id,science:el.closest('.mc-sci')?.id,
@@ -92,8 +109,7 @@ async def reveal(page, code, index):
         await page.locator(f'.mc-sci-bar button[data-s="{context["science"]}"]').click()
     if context.get("feedback") and context["quiz"] >= 0:
         await page.locator(f'.mc[data-code="{code}"] .mc-quiz').nth(context["quiz"]).locator('[data-ok="1"]').first.click(position={"x": 5, "y": 5})
-    await trigger.scroll_into_view_if_needed()
-    await trigger.click(position={"x": 5, "y": 5})
+    await click_text_trigger(trigger)
     await page.locator('.mc-dlg[open]').wait_for()
     return trigger
 
@@ -200,7 +216,7 @@ async def course_probe(page, code, name, output):
         try:
             trigger = await reveal(page, code, path["index"])
             for child in path["children"]:
-                await page.locator(f'.mc-dlg[open] [data-k="{child}"]').first.click(position={"x": 5, "y": 5})
+                await click_text_trigger(page.locator(f'.mc-dlg[open] [data-k="{child}"]').first)
             state = await page.locator('.mc-dlg[open]').evaluate("""el=>{const clone=el.querySelector('.mc-dlg-b').cloneNode(true);
               clone.querySelectorAll('.mc-ratio').forEach(x=>x.remove());return {title:el.querySelector('#mc-dlg-t').textContent,
               text:clone.textContent,visible:el.querySelector('.mc-dlg-b').innerText}}""")
@@ -243,10 +259,14 @@ async def course_probe(page, code, name, output):
     await page.locator('.mc-size-toggle').click()
     await page.locator('.mc-size-reset').click()
     await page.keyboard.press("Escape")
-    await page.locator('.mc-navigo-trigger').click()
+    drawer = page.locator('.mc-navigo-panel')
+    if not await drawer.is_visible():
+        await page.locator('.mc-navigo-trigger').click()
+    check(f"{name}/{code}: Navigo visible", await drawer.is_visible())
     nav = await page.locator('.mc-navigo-panel').evaluate("el=>({rect:el.getBoundingClientRect().toJSON(),items:el.querySelectorAll('.mc-navigo-item').length})")
     check(f"{name}/{code}: Navigo usable", nav["items"] > 0 and nav["rect"]["x"] >= -1 and nav["rect"]["right"] <= page.viewport_size["width"] + 1, nav)
-    await page.locator('.mc-navigo-close').click()
+    if await page.locator('.mc-navigo-close').is_visible():
+        await page.locator('.mc-navigo-close').click()
     await page.evaluate("scrollTo(0,0)")
     await page.screenshot(path=str(output / f"{name}-{code}-reader.png"))
     result["navigo"] = nav

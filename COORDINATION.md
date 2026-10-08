@@ -42,3 +42,8 @@ La progression interne du 8 octobre poursuit **B24 — Infection par le VIH et m
 Aucun des 22 fragments n’est marqué INJECTÉ à cette reprise : les preuves requises de complétude et d’audit final du fragment entier manquent. Cela conserve les injections historiques de cours sans leur attribuer une portée nouvelle. Les rapports et corrections internes restent publiables comme travail en cours, sans transmission pour audit final avant achèvement.
 
 Une contribution concurrente a ensuite injecté **le chapitre A41**, après audit Claude `ba6a80f`, au commit `a5563238887df2a72da7a9f663bdae9ab01f4bc8` selon les règles administratives précédentes. Ces corrections sont préservées dans la base de reprise. Elles ne valent ni audit final ni injection du fragment entier ; les nouvelles améliorations A41 restent dans une copie interne.
+
+
+## Reprise de l’accès visuel
+
+Le 08/10/2026 à 20:21 Europe/Zurich, le réglage d’accès complet lève le blocage réseau et navigateur. L’aperçu A41/B24 passe 2223 contrôles interactifs locaux sur ordinateur et mobile, sans échec ; les 19 sources gelées restent exactes. Publication par Git puis contrôle du déploiement Pages, sans modifier les fichiers médicaux canoniques ni le statut EN_PRODUCTION de T1. Voir le reçu `docs/collaboration/receipts/CODEX_B24_APERCU_2026-10-08.json`.
