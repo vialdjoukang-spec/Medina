@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête b526d9d : harmonisation I83
+
+État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; non publié dans les sources canoniques**. Quatorze originaux ont été archivés, empreinte `4ccef1277ffc9a58f0a5bcfdd365ce7a6f497be6`. Le lot a été comparé à sa baseline `8d6deeeec54a5557fe93dcea6f6c6e6543e09d83` puis réconcilié sans écrasement avec `main` `db06b1fae3c27e93050850df44c3eb23fcd60164`. Les sept fichiers de chapitre sont recevables avec réserves mineures ; le glossaire exige une mise à jour ARTE 2023. Les contrôles producteurs annoncés n'ont pas été rejoués faute de runtime local et de `tools/livraison.py`. [Rapport](reviews/2026-10-08/PR12_B526D9D_I83_HARMONISATION/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_B526D9D_HARMONISATION_RECEPTION_2026-10-08.json).
+
 ## Publication sélective actuelle — 8 octobre 2026
 
 **I83 — Varices des membres inférieurs (C-01-Cardiologie)** est publié sur `main` : injection `bb3214d2f887068e669371b76509693ca63b5606`, puis complément contrôlé `8d6deeeec54a5557fe93dcea6f6c6e6543e09d83` depuis Claude `e2c023c8ea255809d53561ccdb1273cb1641813f`. [Reçu6d](receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json) et [reçu du complément](receipts/CLAUDE_I83_E2C023C_COMPLEMENT_2026-10-08.json). [État des lieux actuel et jauges](ETAT_DES_LIEUX_2026-10-08.md).

@@ -1,3 +1,9 @@
+## Réception Claude I83 — harmonisation b526d9d, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a livré 14 originaux à la tête `b526d9d23d1c2286e3128108b3325e7b5a7445d6`, baseline `main` `8d6deeeec54a5557fe93dcea6f6c6e6543e09d83`, empreinte agrégée `4ccef1277ffc9a58f0a5bcfdd365ce7a6f497be6`. Ils sont reçus et archivés sans injection après réconciliation avec le `main` concurrent `db06b1fae3c27e93050850df44c3eb23fcd60164`. Les sept sources de chapitre sont médicalement recevables avec réserves mineures ; le complément de glossaire reste bloqué jusqu'à actualisation ARTE 2023. Les contrôles producteur (1 923 + 72 réussites annoncées) n'ont pas été reproduits : le runtime et `tools/livraison.py` ne sont pas disponibles. [Rapport](reviews/2026-10-08/PR12_B526D9D_I83_HARMONISATION/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_B526D9D_HARMONISATION_RECEPTION_2026-10-08.json).
+
+Aucune attribution ni aucun chapitre actif n'a changé : campagne historique 30 cours 15/15, backlog cardiologique 20 cours 10/10, fragments 11 Claude / 10 Codex. I83 demeure le chapitre actif Claude pour cette harmonisation et A41 le chapitre actif Codex.
+
 ## État actuel vérifié — I83 publié, 8 octobre 2026
 
 **Dernier complément publié :** la qualification D de Claude `e2c023c8ea255809d53561ccdb1273cb1641813f` est intégrée au commit main `8d6deeeec54a5557fe93dcea6f6c6e6543e09d83` (lecture distante10:17:08 UTC). Avis médical favorable et contrôles ciblés reconstruits : 1 923 assertions natives, 41 routes, global ordinateur/mobile et statique sans échec. [Reçu du complément](receipts/CLAUDE_I83_E2C023C_COMPLEMENT_2026-10-08.json). Déploiement Pages `37762436051` réussi au même SHA8d ; site et artefact strictement conformes, clauseE2 vérifiée dans le global et S01 : [preuves](reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT_E2.md). [État des lieux étendu](ETAT_DES_LIEUX_2026-10-08.md) et [tableau de bord interactif](ETAT_DES_LIEUX_2026-10-08.html).
