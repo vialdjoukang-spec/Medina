@@ -1,0 +1,104 @@
+{
+ "schema_version": 1,
+ "kind": "claude_contribution",
+ "author": "Claude",
+ "status": "J09 — Grippe (P-02-Pneumologie), version 1, niveau de base, revue interne faite",
+ "fragment": {
+  "id": "S02",
+  "label": "P-02-Pneumologie",
+  "specialty": "Pneumologie"
+ },
+ "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+ "chapters": [
+  {
+   "code": "J09",
+   "title": "Grippe",
+   "covers": [
+    "J09",
+    "J10",
+    "J11"
+   ],
+   "owner_fragment": "S02"
+  }
+ ],
+ "files": [
+  {
+   "target_path": "chapters/J09/J09_a.html",
+   "source_path": "sources/chapters/J09/J09_a.html",
+   "sha256": null,
+   "proposed_sha256": "7e416dd9ff3ff2668af1f7cf5851f70a7052520f4b6f8983c2a781d8e60571be"
+  },
+  {
+   "target_path": "chapters/J09/J09_b.html",
+   "source_path": "sources/chapters/J09/J09_b.html",
+   "sha256": null,
+   "proposed_sha256": "d8bac775b2960321549b43a945cb966f80d5cf099365f854d90c740a610b5223"
+  },
+  {
+   "target_path": "chapters/J09/J09_c.html",
+   "source_path": "sources/chapters/J09/J09_c.html",
+   "sha256": null,
+   "proposed_sha256": "d524485b6d9131ab254c61b5f6b2c2a01bcfee46b571390d00815ae152e21fae"
+  },
+  {
+   "target_path": "chapters/J09/J09_d.html",
+   "source_path": "sources/chapters/J09/J09_d.html",
+   "sha256": null,
+   "proposed_sha256": "2aae21c74aa207108e2c06d23cc5995875e3cc0c7e993918bd10d111cf1a8077"
+  },
+  {
+   "target_path": "chapters/J09/J09_pop1.html",
+   "source_path": "sources/chapters/J09/J09_pop1.html",
+   "sha256": null,
+   "proposed_sha256": "244540a82e6da1ef4eedbb44cce6cc6805ee1b70c22bf92a01ae364248627671"
+  },
+  {
+   "target_path": "chapters/J09/J09_pop2.html",
+   "source_path": "sources/chapters/J09/J09_pop2.html",
+   "sha256": null,
+   "proposed_sha256": "c9f3f4494f3ab57b5071c9cd155c9e07810111a291cfd78043116d833941921c"
+  },
+  {
+   "target_path": "chapters/J09/J09_pop_pa.html",
+   "source_path": "sources/chapters/J09/J09_pop_pa.html",
+   "sha256": null,
+   "proposed_sha256": "bf94ac8341818bb3a68c2dd6612c24284aee668ee9dbc127688571d03644951f"
+  },
+  {
+   "target_path": "chapters/J09/J09_pop_sciences.html",
+   "source_path": "sources/chapters/J09/J09_pop_sciences.html",
+   "sha256": null,
+   "proposed_sha256": "adbeabbda097feda23f2822ef2f0855c04bc40041d091cf3cf1beb4441ae5973"
+  },
+  {
+   "target_path": "chapters.json",
+   "source_path": "sources/chapters.json",
+   "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+   "proposed_sha256": "3560f4db29bf297c73eb3970ff65ca25142aaed3d659e6ff605a7bfa03813249"
+  },
+  {
+   "target_path": "glossary/j09.py",
+   "source_path": "sources/glossary/j09.py",
+   "sha256": null,
+   "proposed_sha256": "00c1bdb605b732b2ca985585ebeaefb8756a57d35a7f9a14edf6ec873e6bd517"
+  }
+ ],
+ "checks": [
+  {
+   "command": "build_medina.py J09",
+   "result": "non couvertes: 0 ; 41 578 mots, 144 fenêtres, 8 quiz, 5 Pareto"
+  },
+  {
+   "command": "test_v7.py --static J09 ; test_v7.py J09",
+   "result": "OK"
+  },
+  {
+   "command": "build_front.py --all-fragments ; tests/audit_fragments.py",
+   "result": "réussi"
+  },
+  {
+   "command": "unittest tests",
+   "result": "118 OK"
+  }
+ ]
+}
