@@ -193,7 +193,7 @@ def assemble(directory, report):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", required=True, help="URL HTTP(S) ou file:// de l'aperçu Infectiologie")
-    parser.add_argument("--code", choices=("B24", "B18", "A54", "A53", "B50"), default="B24", help="Cours à montrer")
+    parser.add_argument("--code", choices=("B24", "B18", "A54", "A53", "B50", "A04"), default="B24", help="Cours à montrer")
     parser.add_argument("--output", required=True, type=Path, help="Dossier des PNG, GIF et preuves")
     parser.add_argument("--browser-executable", type=Path, help="Navigateur Chromium local facultatif")
     args = parser.parse_args()

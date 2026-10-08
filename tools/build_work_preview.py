@@ -125,7 +125,7 @@ def mark_preview(source, manifest):
              '.medina-work-preview strong{display:block;font-size:inherit}'
              '.medina-work-preview p{margin:3px 0 0;font-size:inherit}'
              '.medina-work-preview a{display:inline-block;margin-top:6px;color:inherit;text-decoration:underline;font-size:inherit}'
-             '@media(min-width:761px){.mc-navigo{top:calc(var(--medina-work-header-height,180px) + 4px)!important;transform:none!important}'
+             '@media(min-width:1100px){.mc-navigo{top:calc(var(--medina-work-header-height,180px) + 4px)!important;transform:none!important}'
              '.mc-navigo-panel{top:0!important;transform:none!important;max-height:calc(100dvh - var(--medina-work-header-height,180px) - 16px)!important}}'
              '@media(max-width:700px){.medina-work-preview{padding:9px 12px}}'
              '</style>')
