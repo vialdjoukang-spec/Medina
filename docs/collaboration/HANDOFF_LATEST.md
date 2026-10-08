@@ -1,3 +1,7 @@
+## I35 — précision rénale du furosémide, tête 2145a2a, 8 octobre 2026
+
+La proposition ajoute la dose initiale plus élevée en cas de maladie rénale chronique, conformément à la figure 15, note a, de l’ESC 2026. Six objets sont reçus et archivés ; l’empreinte proposée et le contrôle producteur concordent. La réserve ciblée est levée, sans injection : I83 reste actif et I35 demeure `pending_exhaustive_review`. [Rapport](reviews/2026-10-08/PR12_2145A2A_I35_RENAL/RECEPTION.md).
+
 ## I83 — fermeture annoncée des limites médicales v4, tête 6b76e12, 8 octobre 2026
 
 Cinq sources I83 et quatre pièces de preuve/contrôle sont reçues et archivées. Le contrôle natif v4 déclare 1 923 vérifications sans erreur. En revanche, le fichier S01 « v4 » est exactement le même blob que le contrôle déjà reçu à `d2a460f` : aucun nouveau parcours S01 n’est démontré. Les textes CEAP sont identifiés, mais Rapidocain et l’archive OFSP n’ont pas pu être contre-vérifiés indépendamment. I83 reste non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_6B76E12_I83_LIMITES_V4/RECEPTION.md).

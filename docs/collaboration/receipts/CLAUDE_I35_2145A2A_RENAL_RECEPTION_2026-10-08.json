@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "2145a2a9fd0e073123fc2ef6d90c8f7d65802c07",
+  "previous_received_head": "6b76e12a1b9431111e8a1d5d9ef4d28c949f67b6",
+  "main_sha_at_reception": "c05a0ed3731005344fa16d03d2d72da6715ec432",
+  "received_at": "2026-10-08T01:07:22.283Z",
+  "origin": "Claude confirmé par la branche, la signature Co-Authored-By, le rapport I35 et les fichiers de livraison",
+  "status": "reçu et archivé ; réserve rénale I35 ciblée levée ; aucune injection",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_2145A2A_I35_RENAL",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "47a93368f4176813db2d7b0e7bcc8af98ae2762a",
+    "objects": 6
+  },
+  "course": "I35 — Affections non rhumatismales de la valve aortique (C-01-Cardiologie)",
+  "reconciliation": {
+    "baseline_sha256": "bbd637dfdf65636293a98da693209149d3fd26f5b47b2e46ea05320bf4e86a17",
+    "previous_proposed_sha256": "44a60bfa4313e7354f93159f48f05ea2166bbec68a4277059b4e61eefa969885",
+    "current_proposed_sha256": "26ec9088603fd77faddd0a0a3ee027bde4cbb8265612e2a6190b7b85bb66478d",
+    "producer_control_sha256": "26ec9088603fd77faddd0a0a3ee027bde4cbb8265612e2a6190b7b85bb66478d",
+    "current_main_still_baseline": true
+  },
+  "targeted_medical_review": {
+    "claim": "40 mg IV chez le patient naïf ; deux fois la dose orale habituelle chez l’utilisateur chronique ; dose initiale plus élevée en cas de maladie rénale chronique",
+    "conclusion": "concorde avec l’ESC 2026, section 7.5.3 et figure 15, note a",
+    "primary_source": "2026 ESC Guidelines for the management of heart failure, Eur Heart J, doi:10.1093/eurheartj/ehag100",
+    "source_url": "https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehag100/8766302",
+    "targeted_reservation_closed": true
+  },
+  "producer_control": {
+    "checks": 3269,
+    "failures": 0,
+    "errors": 0,
+    "result": "passed",
+    "completed_at": "2026-10-08T01:05:37.238Z",
+    "independently_reproduced": false
+  },
+  "blockers": [
+    "SIGNAUX_CLAUDE.json maintient I83 comme chapitre actif ; I35 reste prêt seulement après sa clôture",
+    "le rapport I35 conserve pending_exhaustive_review et demande une contrelecture indépendante",
+    "le lot ESC complet n’a pas été audité médicalement de façon exhaustive",
+    "aucun navigateur indépendant n’a été exécuté sur une intégration réelle",
+    "aucune complétude CIM-11 n’est établie"
+  ],
+  "decision": "ne pas injecter ; archiver la correction ciblée, qui lève la réserve rénale I35, sans préjuger de la validation complète du cours",
+  "checks_executed": [
+    "PR, branche et tête main relues",
+    "delta 6b76e12..2145a2a inventorié : six fichiers",
+    "arbre récursif non tronqué et six blobs archivés sans modification",
+    "manifest, proposition, verdict, édition et journal natif concordants sur l’empreinte 26ec9088…",
+    "affirmation rénale comparée à la recommandation primaire ESC 2026"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "reconstruction indépendante",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "audit médical exhaustif de I35",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_main.json",
+      "git_blob_sha": "d7c9e5ae888b00f37261ac7ba37bcf501724e0a1",
+      "bytes": 385871,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_2145A2A_I35_RENAL/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/livraison.json",
+      "git_blob_sha": "b9720597b7c83cf845211c50dceb243107a714f6",
+      "bytes": 2459,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_2145A2A_I35_RENAL/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/rapport.md",
+      "git_blob_sha": "2fab645893e6060e46f4fbe3c8514ef3c70a701d",
+      "bytes": 5320,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_2145A2A_I35_RENAL/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_d.html",
+      "git_blob_sha": "079075a8a5cc46e071a0496b7d890501ce189016",
+      "bytes": 21333,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_2145A2A_I35_RENAL/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/sources/chapters/I35/I35_d.html"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I35/edits/I35_d.json",
+      "git_blob_sha": "4c6929526bd047e88cfe431b531d8760d446f7a0",
+      "bytes": 1945,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_2145A2A_I35_RENAL/livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I35/edits/I35_d.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I35/verdicts/I35_d.json",
+      "git_blob_sha": "aa64c36ab8bde7957c3e868bc7ed95cf38ed63d9",
+      "bytes": 1354,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_2145A2A_I35_RENAL/livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I35/verdicts/I35_d.json"
+    }
+  ]
+}

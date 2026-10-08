@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête 2145a2a : correction rénale I35
+
+État : **reçu et archivé ; non injecté**. La limite de dose initiale plus élevée en maladie rénale chronique est ajoutée conformément à l’ESC 2026 ; six objets archivés et 3 269 contrôles producteurs sans erreur déclarée. [Rapport](reviews/2026-10-08/PR12_2145A2A_I35_RENAL/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête 6b76e12 : I83 limites v4
 
 État : **reçu et archivé ; non injecté**. Neuf objets, dont cinq sources I83. Le contrôle natif v4 est nouveau ; le journal S01 v4 est un duplicata exact du précédent. Les affirmations Swissmedic/OFSP et le cours complet restent à contre-vérifier. [Rapport](reviews/2026-10-08/PR12_6B76E12_I83_LIMITES_V4/RECEPTION.md).
