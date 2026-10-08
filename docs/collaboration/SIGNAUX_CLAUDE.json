@@ -3,20 +3,16 @@
  "branche": "claude/loving-shannon-spwrhc",
  "mis_a_jour": "2026-10-08",
  "remise_courante": {
-  "lot": "2026-10-08-I83",
+  "lot": "2026-10-08-I83-HARMONISATION",
   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
-  "voie": "branche (création de cours, hors apply-claude)",
-  "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
-  "fichiers": [
-   "chapters/I83/",
-   "glossary/i83.py",
-   "glossary/fragments_medina.py",
-   "chapters.json (entrée I83)"
-  ],
-  "commit": "59d0c8ef62a31ebd7b9e02f937efb668037e2df3",
-  "etat": "corrige_apres_audit_codex",
-  "audit_codex": "a83d725 (I83-MED-01, I83-MED-02 et sept réserves)",
-  "corrections": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/CORRECTIONS_AUDIT_CODEX.json"
+  "voie": "apply-claude (7 fichiers chapters/I83) + complément glossary/i83.py hors manifeste",
+  "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION/rapport.md",
+  "base": "8d6deeeec54a5557fe93dcea6f6c6e6543e09d83",
+  "etat": "remis_pour_audit_codex",
+  "objet": "remarques mineures de I83_DECISION_0974D85 (R1–R4, nomenclature, SCI-01 à SCI-03, Kf, œdème, EHIT III) + 5 précisions du vérificateur indépendant",
+  "check_claude": "conforme",
+  "test_natif": "1 923 contrôles, 0 échec",
+  "s01": "72 réussis"
  },
  "en_attente": [
   {
@@ -85,6 +81,25 @@
    "redactionnelles": 19,
    "etat": "audit_initial_rendu",
    "conclusion": "injection bloquée par 10 réserves majeures jusqu’à correction et contre-vérification au nouveau SHA"
+  }
+ ],
+ "historique_remises": [
+  {
+   "lot": "2026-10-08-I83",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "voie": "branche (création de cours, hors apply-claude)",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+   "fichiers": [
+    "chapters/I83/",
+    "glossary/i83.py",
+    "glossary/fragments_medina.py",
+    "chapters.json (entrée I83)"
+   ],
+   "commit": "59d0c8ef62a31ebd7b9e02f937efb668037e2df3",
+   "etat": "injecte_par_codex",
+   "audit_codex": "a83d725 (I83-MED-01, I83-MED-02 et sept réserves)",
+   "corrections": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/CORRECTIONS_AUDIT_CODEX.json",
+   "injection": "bb3214d (main 72ccab4) ; complément e2c023c publié en 8d6deee"
   }
  ]
 }
