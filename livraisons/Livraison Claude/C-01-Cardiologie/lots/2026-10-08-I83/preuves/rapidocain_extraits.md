@@ -174,3 +174,39 @@ Source : information professionnelle suisse de Rapidocain et de Rapidocain avec 
  473 Nouveau-nés: La demi-vie d’élimination des nouveau-nés se monte à environ le double de celle des adultes (3,2 heures), alors que la clairance est semblable (10,2 ml/min×kg).
 ```
 
+
+## Présentations (lignes 503 à 520) et composition des formes avec conservateurs (lignes 35 à 47)
+
+```text
+  35 Rapidocain 10 mg/ml, 20 mg/ml avec agents conservateurs
+  36 Principes actifs
+  37 Lidocaini hydrochloridum anhydricum.
+  38 Excipients
+  39 Natrii chloridum, Natrii hydroxidum, Propylis parahydroxybenzoas (E216) (0,2 mg/ml), E218 (1,6 mg/ml), Aqua ad iniectabile.
+  40 Rapidocain 10 mg/ml avec agents conservateurs contient 2.8 mg de sodium par ml (resp. 56 mg de sodium par flacon de 20 ml resp. 140 mg de sodium par flacon de 50 ml).
+  41 Rapidocain 20 mg/ml avec agents conservateurs contient 2 mg de sodium par ml (resp. 40 mg de sodium par flacon de 20 ml resp. 100 mg de sodium par flacon de 50 ml).
+  42 Rapidocain 10 mg/ml avec Epinéphrine 5 µg/ml, 10 µg/ml
+  43 Rapidocain 20 mg/ml avec Epinéphrine 5 µg/ml, 12.5 µg/ml 
+  44 Principes actifs
+  45 Lidocaini hydrochloridum anhydricum, Adrenalinum (ut Adrenalini hydrochloridum)
+  46 Excipients
+  47 Natrii chloridum, Acidum hydrochloridum, E223 (0,5 mg/ml), Propylis parahydroxybenzoas (E216) (0,2 mg/ml), E218 (1,6 mg/ml), Aqua ad iniectabile.
+ 503 Préparations à usage unique
+ 504 Rapidocain
+ 505 Rapidocain 5 mg/ml, solution injectable :Flacons 1 x 20 ml [B]
+ 506 Rapidocain 10 mg/ml, solution injectable: Ampoules 10 x 5 ml [B]
+ 507 Rapidocain 10 mg/ml, solution injectable: Ampoules 10 x 10 ml [B]
+ 508 Rapidocain 10 mg/ml, solution injectable: Flacons 1 x 20 ml [B]
+ 509 Rapidocain 20 mg/ml, solution injectable: Ampoules 10 x 2 ml [B]
+ 510 Rapidocain 20 mg/ml, solution injectable: Ampoules 10 x 5 ml [B]
+ 511 Rapidocain 20 mg/ml, solution injectable: Ampoules 10 x 10 ml [B]
+ 512 Rapidocain 20 mg/ml, solution injectable: Flacons 1 x 20 ml [B]
+ 513 Préparations à usage multiple
+ 514 Rapidocain avec agents conservateurs
+ 515 Rapidocain 10 mg/ml avec agents conservateurs, solution injectable: Flacons 1 x 20 ml [B]
+ 516 Rapidocain 10 mg/ml avec agents conservateurs, solution injectable: Flacons 1 x 50 ml [B]
+ 517 Rapidocain 20 mg/ml avec agents conservateurs, solution injectable: Flacons 1 x 20 ml [B]
+ 518 Rapidocain 20 mg/ml avec agents conservateurs, solution injectable: Flacons 1 x 50 ml [B]
+ 519 Rapidocain avec Epinéphrine
+ 520 Rapidocain 10 mg/ml / 20 mg/ml avec Epinéphrine 5 µg/ml, solution injectable:Ampoules 10 x 5 ml [B]
+```

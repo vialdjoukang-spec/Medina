@@ -310,3 +310,16 @@ Journal : `controles/simulation_main_ea105ac_JOURNAL.txt`.
   - S01 : 72 contrôles, `passed`.
 
   Journal : `controles/simulation_main_e5bde2b_JOURNAL.txt`.
+
+
+## Addendum 10 — 8 octobre 2026 : préparation de la tumescence (réception Codex `e5bde2b`)
+
+La mention « protocole de la pharmacie hospitalière », jugée non identifiée, est remplacée par les présentations exactes de l'information professionnelle suisse. Sans conservateur, Rapidocain 10 mg/ml existe en ampoules de 5 et de 10 ml et en flacon de 20 ml ; ces présentations ne figurent pas parmi les « préparations à usage multiple » et ne contiennent pas d'adrénaline. La solution de tumescence est donc une préparation diluée réalisée sur place. L'ajout d'adrénaline et de bicarbonate suit les règles de préparation de l'établissement, que l'information professionnelle ne décrit pas. Les lignes 35 à 47 (composition des formes avec conservateurs) et 503 à 520 (présentations) sont ajoutées à `preuves/rapidocain_extraits.md`.
+
+Contrôles sur `main` `e5bde2b`, de 09:42:01 à 09:45:22 UTC :
+- test statique OK, sigles `{}` ;
+- 22 fragments reproductibles, `test_v7` OK ;
+- test natif : 1 923 contrôles, 0 échec ;
+- S01 : 72 contrôles, `passed`.
+
+Journal : `controles/simulation_main_e5bde2b_v2_JOURNAL.txt`.
