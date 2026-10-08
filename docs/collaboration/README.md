@@ -83,3 +83,7 @@ Les états « publié », « relu », « corrigé », « testé techniquement »
 - [Consigne déjà transmise à Claude dans PR #10](https://github.com/vialdjoukang-spec/Medina/pull/10#issuecomment-6041361558).
 
 Les contrôles techniques prouvent l’ouverture des fenêtres et la conservation du contenu ; ils ne prouvent pas que chaque affirmation a reçu sa justification ni que la CIM-11 est complète.
+
+## Injection Claude et audit Codex
+
+Appliquer [REGLES_INJECTION_CLAUDE.md](REGLES_INJECTION_CLAUDE.md). Claude injecte ses propres chapitres après revue interne et contrôles prescrits, sans réserve bloquante Codex ouverte ; Codex audite ensuite [la file ordonnée](FILE_AUDIT_CODEX.json). Le tableau de bord indique « en audit croisé » tant que cet audit n’est pas favorable. Une remise archivée est distincte d’une injection. Les chapitres Codex conservent leur contrelecture Claude préalable.

@@ -14,8 +14,8 @@
     "max_active_fragments_per_agent": 1,
     "delivery_chapters": 1,
     "chapter_order": "Priorités du registre, puis ordre du catalogue ; un cours commun déjà regroupé ne se produit qu’une fois, avec ses variantes documentées.",
-    "next_chapter_gate": "Sources complètes, relecture médicale et rédactionnelle, contrôles technique et navigateur réussis, intégration canonique, reçu et publication vérifiés avant le chapitre suivant.",
-    "blocked_chapter_policy": "Un blocage conserve le chapitre actif ; il ne permet pas d’ouvrir un autre chapitre sans décision explicite du propriétaire.",
+    "next_chapter_gate": "Chapitre produit, contrôlé pour remise et effectivement livré à l’autre IA pour audit avant le suivant ; les corrections reçues restent prioritaires. Injection Codex après audit Claude ; injection Claude selon REGLES_INJECTION_CLAUDE.md avant audit Codex.",
+    "blocked_chapter_policy": "Un blocage de production conserve le chapitre actif. Après remise complète pour audit, suivre les réserves dans les reçus et signaux sans bloquer la production du chapitre suivant ; aucune injection automatique.",
     "next_fragment_gate": "Achever et contrôler le périmètre du fragment actif selon COMPLETUDE_CIM11.md avant le suivant ; aucune certification tirée des seuls compteurs historiques.",
     "start_gate": "La consigne du 8 octobre active la chaîne des dix fragments Codex : commencer par T1 et son chapitre A41. La cardiologie reste un backlog distinct avec ses réserves ouvertes, sans être certifiée close ; conserver ses livraisons et audits antérieurs.",
     "category_label_format": "code — intitulé (libellé complet du fragment)"
@@ -71,7 +71,7 @@
       "Codex": "Claude",
       "Claude": "Codex"
     },
-    "injection_gate": "Audit croisé du commit source, correction des réserves bloquantes, puis injection et contrôles de la version intégrée",
+    "injection_gate": "Chapitre Codex : audit Claude du commit source puis injection et contrôles. Chapitre Claude : revue interne, vérificateur indépendant, rapport, tous les contrôles prescrits sur main actuel, check-claude et aucune réserve Codex bloquante ; injection autonome puis FILE_AUDIT_CODEX.json et audit Codex dans l’ordre.",
     "claude_spec": "docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md",
     "specialist_missions": 24,
     "parallel_workers_max": 6,
@@ -101,7 +101,9 @@
       "comment_url": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048784611",
       "status": "posted_acknowledgement_pending",
       "scope": "Contrelecture initiale de la base ; aucune correction médicale nouvelle livrée"
-    }
+    },
+    "post_injection_audit_queue": "docs/collaboration/FILE_AUDIT_CODEX.json",
+    "claude_injection_rule": "docs/collaboration/REGLES_INJECTION_CLAUDE.md"
   },
   "assignment_unit": "fragment",
   "grouping_policy": "Chaque fragment est confié en entier à son responsable ; toutes ses catégories restent groupées sous ce fragment."

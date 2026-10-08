@@ -92,7 +92,7 @@ Employer un français professionnel compréhensible, des phrases complètes, un 
 
 Pour **J45 — Asthme (P-02-Pneumologie)**, vérifier explicitement la cohérence entre diagnostic et confirmation objective, diagnostics différentiels, appréciation du contrôle et du risque, traitement de fond et de secours, technique et observance des dispositifs, exacerbation aiguë, limites d'application selon la population et suivi. Justifier chaque point à partir des sources officielles effectivement consultées ; ne pas annoncer une version de recommandation ou une dose comme vérifiée sans cette consultation.
 
-Le chapitre reste actif si une source, un audit, un accès, un contrôle ou une publication bloque. Rapporter ce blocage avec son opération précise et poursuivre les travaux utiles **dans ce chapitre**, dont la contrelecture disponible. Seule une décision explicite du propriétaire permet sa suspension et l'ouverture d'une autre production. L'attente d'injection n'autorise pas à démarrer le chapitre suivant.
+Un blocage avant production et remise complète conserve le chapitre en production. Après remise pour audit, le chapitre suivant peut commencer ; les réserves restent suivies dans les reçus et signaux, et leurs corrections sont prioritaires. Les injections propres de Claude suivent désormais [REGLES_INJECTION_CLAUDE.md](REGLES_INJECTION_CLAUDE.md) : revue interne et contrôles préalables obligatoires, audit Codex après injection.
 
 ## 5. Remise de Claude : un chapitre, preuves et PR
 
@@ -126,7 +126,7 @@ Pour l'audit de **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiolo
 
 Les autoaudits et les rapports de sous-agents de l'auteur sont utiles à la préparation, mais ne remplacent pas la contrelecture de l'autre responsable. Claude remet ses audits Codex sur sa propre branche, avec code, titre, SHA examiné et conclusion ; il ne corrige pas directement la branche Codex.
 
-## 7. Contrôles, injection et publication coordonnés par Codex
+## 7. Contrôles, injection autonome de Claude et audit Codex
 
 Effectuer les contrôles préparatoires utiles sur le lot avant remise, puis les répéter sur les sources canoniques résultant de l'injection. Pour **J45 — Asthme (P-02-Pneumologie)**, premier chapitre Claude prévu, les commandes existantes sont :
 
@@ -141,13 +141,13 @@ MEDINA_OUT="$PWD/dist" python3 test_v7.py J45
 
 `check-claude` vérifie chemins, empreintes, UTF-8 et syntaxe JSON ; il **ne valide pas la médecine**. Exécuter cette commande sur le dossier contenant réellement `livraison.json`, à adapter si le lot utilise un dossier distinct. Les copies de livraison demandent une compilation isolée de validation avant injection : les commandes de construction ordinaires lisent les sources canoniques et ne prouvent pas que les copies corrigées ont été testées. Utiliser un répertoire temporaire de validation distinct si nécessaire, sans écraser le checkout ou les travaux d'une autre session, puis consigner sa méthode et son SHA.
 
-**Codex seul exécute l'injection après l'audit croisé accepté**, notamment `python3 tools/livraison.py apply-claude "<dossier-contenant-livraison.json>"` lorsque cette voie est applicable. Pour une PR comprenant des sources hors périmètre de cet outil, il examine le diff et intègre les commits sans perdre l'attribution de Claude. Il contrôle les conflits et adaptations, puis reconstruit MEDINA et les fragments consommateurs depuis les sources canoniques. Un reçu automatique « injecté, reconstruction/contrôles à faire » reste provisoire.
+**Claude peut injecter ses propres chapitres sans attendre l’audit préalable de Codex**, conformément à [REGLES_INJECTION_CLAUDE.md](REGLES_INJECTION_CLAUDE.md). Toutes ses conditions sont obligatoires : revue par sous-agents et vérificateur indépendant, rapport complet, `check-claude` conforme, sigles `{}`, statique, `build_front.py --all-fragments`, `tests/audit_fragments.py`, natifs sans échec et tests unitaires sur la tête actuelle de main, aucune réserve bloquante Codex ouverte. Claude traite les conflits sans perdre les contributions et ajoute chaque injection à `FILE_AUDIT_CODEX.json` au statut `a_auditer`. Codex audite ensuite la file dans l’ordre, avec un rapport lié et les statuts `audite_favorable` ou `reserves`. Jusqu’au verdict favorable, le tableau de bord porte « en audit croisé ».
 
 Contrôler le navigateur sur ordinateur et mobile : affichage des quatre onglets, fenêtres, quiz, Pareto, navigation, taille de police, mode livre, liens internes, erreurs JavaScript et absence de débordement. Vérifier **aussi le fragment autonome** et ses passages liés : `test_v7.py` cible le `MEDINA.html` global et ne suffit pas à prouver l'accès dans le fragment. Utiliser les tests navigateur existants adaptés ou une vérification documentée. Exécuter les contrôles des outils partagés si leur modification le requiert ; consigner les commandes et résultats réels, jamais une réussite supposée.
 
-Codex publie ensuite les sources et un reçu dans `docs/collaboration/receipts/`, avec SHAs reçu, relu et intégré, chemins, empreintes, audit croisé, adaptations, commandes, résultats et réserves. Actualiser inventaire, passation et tableau de bord. Vérifier séparément disponibilité distante, déploiement Pages et contenu réellement servi au lien du cours ; un push sur une branche n'est pas cette preuve.
+Claude publie ses sources et un reçu, puis Codex ajoute son audit au reçu dans `docs/collaboration/receipts/`, avec SHAs reçu, relu et intégré, chemins, empreintes, audit croisé, adaptations, commandes, résultats et réserves. Actualiser inventaire, passation et tableau de bord. Vérifier séparément disponibilité distante, déploiement Pages et contenu réellement servi au lien du cours ; un push sur une branche n'est pas cette preuve.
 
-**Chapitre suivant autorisé seulement après** sources complètes, audit croisé clos, contrôles réussis, injection canonique, reconstruction, reçu et publication vérifiés. Archiver le rapport, consigner la clôture et laisser le coordinateur remettre `active_chapter` à `null` avant la réservation suivante. Ne passer au fragment suivant qu'après vérification de son périmètre attendu selon la règle CIM-11.
+**Chapitre suivant autorisé après** production complète et remise effective à l’autre IA pour audit, avec sources, empreintes, rapport et contrôles de remise. Consigner le SHA livré et libérer la réservation de production avant la suivante ; conserver en parallèle les audits, corrections prioritaires, injections et publications en attente. Une injection Codex exige la contrelecture Claude préalable ; les injections Claude exigent les conditions internes puis l’audit Codex dans la file. Ne passer au fragment suivant qu'après vérification de son périmètre attendu selon la règle CIM-11.
 
 ## 8. Complétude et accusé de prise en charge
 
