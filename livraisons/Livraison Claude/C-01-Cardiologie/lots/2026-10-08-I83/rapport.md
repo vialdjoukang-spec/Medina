@@ -200,3 +200,48 @@ MEDINA_S01_FILE=…/MEDINA_S01_cardiovasculaire.html node tests/verify_s01_brows
 Le même test S01, désigné explicitement sur la construction de la branche, donne aussi 72 contrôles et aucune erreur. Journaux : `controles/i83_native_main_625fddb.json`, `controles/s01_browser_main_625fddb.json`, `controles/s01_browser_branche.json`.
 
 **Fichiers à intégrer à `main` pour I83 :** `chapters/I83/*.html` (8), `glossary/i83.py`, `glossary/fragments_medina.py`, l'entrée I83 de `chapters.json` (insérée après I80, `covers` : I83 et I87) et `tests/verify_s01_browser.cjs` (20 → 21).
+
+
+## Addendum 4 — 8 octobre 2026 : les quatre limites médicales fermées (réception Codex `960586e`)
+
+Le détail de chaque limite se trouve dans `LIMITES_FERMEES.json` : sources avec URL, version, date et statut d'accès ; modifications avec état avant et après ; tentatives d'accès.
+
+1. **Notation CEAP.** Lurie F et al., J Vasc Surg Venous Lymphat Disord 2020;8:342-352 (PMID 32113854), lu en texte intégral dans une copie archivée d'un article en accès libre, l'accès direct étant bloqué. Eklöf B et al., J Vasc Surg 2004;40:1248-1252 (**PMID 15622385** ; le PMID 15586218 de la consigne était erroné), lu en PDF intégral. Guide de notation de l'American Venous Forum consulté.
+   - Mme R. s'écrit maintenant C2,3,4a,c (s) en notation complète et C4 (s) en notation élémentaire.
+   - L'ordre des classes n'est pas une échelle de gravité : c'est le VCSS révisé qui la mesure.
+   - C3 désigne l'œdème sans en préciser la cause ; la recherche d'une cause non veineuse renvoie à la recommandation 16 de l'ESVS (IIa, C).
+   - C6 et la récidive (r) suivent les définitions primaires.
+2. **Seuil de 3 mm.** Eklöf 2004, p. 1250, définition conservée par Lurie 2020 : veine sous-cutanée dilatée de 3 mm ou plus en position debout ; un tronc saphène rectiligne avec reflux démontré compte comme varice. Cette définition est citée dans I83_a, dans les critères formels de I83_b et dans la fenêtre CEAP.
+3. **Rapidocain.** Information professionnelle suisse sur swissmedicinfo.ch, autorisations 20272 et 32381, mise à jour de juillet 2024.
+   - Chez l'adulte de 70 kg, la dose d'infiltration va jusqu'à 400 mg, avec ou sans épinéphrine. Les 15 mg/kg (1 050 mg) ne sont pas une posologie suisse, et le cours le dit.
+   - Signes toxiques complétés.
+   - Contre-indications et mises en garde ajoutées.
+   - L'affirmation inexacte sur le délai de toxicité est retirée.
+4. **Remboursement des veinotropes.** Liste des spécialités de l'OFSP, archive publique du 1.10.2026.
+   - Inscrits sans limitation, quote-part de 10 % : Daflon 500, Diosmin Hesperidin Zentiva, Doxium 500, Doxocur, Venoruton Forte, Venoruton 1000 effervescent, Aesculamed forte veines.
+   - Absents de la liste : Daflon Uno, Doxium 1000, Antistax forte, Venostasin, Aesculaforce.
+   - Le statut daté figure dans I83_d.
+
+**Contrôles sur la version courante** (branche, puis simulation sur `main` `625fddb`) :
+- test statique OK : 40 640 mots, 47 fenêtres, 6 quiz, 6 Pareto ;
+- sigles `{}` ;
+- tests unitaires OK ;
+- 22 fragments reproductibles ;
+- `test_v7.py I83` OK ;
+- `verify_course_native` I83 : 1 923 contrôles, 0 échec, à 1 360 et 390 px (`controles/i83_native_main_v4.json`) ;
+- `verify_s01_browser`, avec `MEDINA_S01_FILE` désignant le S01 construit : 72 contrôles, 0 erreur (`controles/s01_browser_main_v4.json`).
+
+**Empreintes des huit sources courantes :**
+
+```text
+1610615e2f39a888d4ccb46b46b56a4ea0c5195f19dfd8af68cac511f7f0ff76  I83_a.html
+d336d0b4e4977212ffa192fe2c57a535db54f288daa2ce014c022d513ed9da9a  I83_b.html
+ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261  I83_c.html
+8f4743ecd4d49746529b5d1ed7a13a5ed2285af33fb14a8795fa8116342244b3  I83_d.html
+a790feb6f96e5805da69f398daf23a617813424a44dad8d14d94e1b2348e36cd  I83_pop1.html
+e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55  I83_pop2.html
+c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
+8b5a5d007ff4d789e15199bc19a658cc8a35b5388afb89f2804c6e521ba904d1  I83_pop4.html
+```
+
+**Limites restantes :** cours non validé intégralement, couverture CIM-11 non établie.
