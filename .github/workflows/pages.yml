@@ -88,6 +88,12 @@ jobs:
             --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html#/entry/A54" \
             --code A54 \
             --output _site/apercus/controle
+      - name: Produire une capture animée du cours syphilis
+        run: |
+          python tools/build_preview_capture_animation.py \
+            --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html#/entry/A53" \
+            --code A53 \
+            --output _site/apercus/controle
       - name: Conserver les captures et le rapport de lecture
         if: always()
         uses: actions/upload-artifact@v4

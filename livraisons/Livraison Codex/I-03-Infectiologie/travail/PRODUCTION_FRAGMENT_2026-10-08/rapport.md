@@ -1,6 +1,6 @@
 # I-03-Infectiologie — progression interne du 8 octobre 2026
 
-Le premier des dix fragments Codex reste **I-03-Infectiologie (T1)**. Ce dossier prépare deux cours dans son frontend de travail local : **A41 — Sepsis et choc septique de l’adulte** et **B24 — Infection par le VIH et maladie à VIH de l’adulte**. Les sources canoniques historiques sont conservées. La police est Atkinson Hyperlegible Next, alignée sur celle retenue par Claude ; l’aperçu réutilise le frontend clair de la spécialité.
+Le premier des dix fragments Codex reste **I-03-Infectiologie (T1)**. Ce dossier suit la progression de ses cours dans un frontend de travail propre à la spécialité. Les sources canoniques historiques sont conservées. La police est Atkinson Hyperlegible Next, alignée sur celle retenue par Claude ; l’aperçu reste clair et lisible.
 
 ## Rédaction et revue ciblée
 
@@ -70,4 +70,12 @@ La compilation locale présente A41, B24, B18 et A54 dans le seul frontend Infec
 
 Le déploiement Pages `37842686019` du commit `286e02e4a5e65cd875b34aef8dca96c13c90e5f6` est réussi. Ses **225 tests Python** et **4 371 contrôles Chromium** passent, sans échec. Le cours A54, son animation de cinq vues et ses captures ordinateur/téléphone sont accessibles en HTTP 200. La preuve de progression est `preuves/cloture_interne_A54.json`. Cette clôture interne permet d’ouvrir **A53 — Syphilis, autres et sans précision** dans le même fragment T1 ; elle ne certifie pas le fragment entier.
 
-La préparation documentaire A53 relève déjà une divergence entre la directive SSI 2024 et le Compendium de l’Extencilline commercialisée en 2026, ainsi qu’une erreur de notice signalée par Swissmedic pour un lot 2,4 MUI. Les divergences de seuil RPR et d’indication de ponction lombaire avec les recommandations CDC seront également examinées. Le cours A53 n’est pas encore rédigé.
+À cette étape, la préparation documentaire A53 relevait une divergence entre la directive SSI 2024 et le Compendium de l’Extencilline commercialisée en 2026, ainsi qu’une erreur de notice signalée par Swissmedic pour un lot 2,4 MUI. Les divergences de seuil RPR et d’indication de ponction lombaire avec les recommandations CDC restaient à examiner avant la rédaction.
+
+## Rédaction et revue ciblée d’A53 — Syphilis, autres et sans précision
+
+Les quatre panneaux A53 sont rédigés pour un adulte asymptomatique dont le TPPA est positif et le RPR à 1:8, sans date du dernier test négatif ni ancien traitement documentés. Le cours ne conclut pas à une syphilis active, récente ou déjà traitée à partir de ces deux seuls résultats. Il distingue A53.0 de A53.9, la classification OFSP de surveillance et la décision clinique. Les huit fichiers HTML et le glossaire ajoutent **neuf sources vérifiées par empreinte** au manifeste, porté à **46 fichiers** pour cinq cours. Le frontend Infectiologie compile **390 fenêtres**, dont **69 pour A53**.
+
+Le dossier `preuves/A53/SOURCES_VERIFIEES.md` confronte le BfArM CIM-10-GM 2024, la SSI 2024, le CDC 2021, la monographie suisse Extencilline n° 69765 et la lettre de lot Swissmedic 2026, ainsi que le guide OFSP 2026. La revue indépendante `preuves/A53/REVUE_INDEPENDANTE.md` a fait corriger l’attribution du schéma de trois doses pour une latence de durée inconnue au CDC seul et rappeler la limite de **5 mL de suspension finale par site**, distincte des **5 mL de solvant** de reconstitution du flacon 2,4 MUI. Elle a aussi fait harmoniser le cas et lever des réserves de langue. Son verdict ciblé ne laisse aucune réserve ouverte dans le périmètre relu.
+
+Les **230 tests Python** passent. Chromium a validé **5 313 vérifications sans échec** sur ordinateur et téléphone, dont l’ouverture des **69 fenêtres A53** aux deux largeurs, les quatre onglets, la police et l’intégrité des 46 sources. Les preuves sont `preuves/technique/browser-proof-a53-final.json` et `preuves/technique/animation-a53-local.json`. L’animation locale de cinq vues réelles montre les quatre onglets et une fenêtre explicative A53. La publication Pages est en attente. Cette version de travail ne vaut ni validation médicale humaine, ni audit croisé final du fragment, ni injection canonique.
