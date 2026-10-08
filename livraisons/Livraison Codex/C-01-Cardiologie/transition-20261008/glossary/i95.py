@@ -1,0 +1,3 @@
+from cardio_1 import a, G
+a('I95', [('I', 'chapitre circulatoire de la CIM-10'), ('95', 'catégorie 95')], 'Hypotension', '<p>Le code regroupe plusieurs présentations de pression basse. Il ne démontre pas une hypoperfusion, une hypotension orthostatique ou une origine neurogène.</p>', 'i95-seuils')
+a('alpha-1', [('alpha', 'famille alpha des récepteurs adrénergiques'), ('1', 'sous-type 1')], 'Récepteur adrénergique alpha de sous-type 1', '<p>Ce récepteur favorise notamment la contraction du muscle lisse vasculaire. Son activation peut augmenter la pression, y compris en position couchée.</p>', 'i95-midodrine')
