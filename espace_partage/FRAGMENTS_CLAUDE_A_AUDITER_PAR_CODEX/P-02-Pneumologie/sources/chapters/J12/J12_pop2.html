@@ -1,0 +1,144 @@
+
+<!-- ===== FENÊTRES : clinique, diagnostic, gravité, prévention ===== -->
+<template data-pop="j12-codage-covid" data-title="Codage du COVID-19 en Suisse">
+<div class="lab">Règle</div><p>La Suisse code avec la CIM-10-GM et les règles de l’Office fédéral de la statistique. Les codes U07.1! et U07.2! sont des codes secondaires : le point d’exclamation interdit leur emploi comme diagnostic principal. Le médecin code d’abord la manifestation, puis l’agent.</p>
+<div class="lab">Exemples</div><p>Pneumonie COVID-19 prouvée par PCR : J12.8 puis U07.1!. COVID-19 diagnostiqué cliniquement chez un contact d’un cas prouvé, sans test : la manifestation puis U07.2!. Les communications de l’Office fédéral de la statistique de 2020 citent J12.8 comme exemple de code principal et précisent que le code du syndrome respiratoire aigu sévère de 2002–2003 ne s’applique pas au COVID-19.</p>
+<div class="lab">Différence avec les États-Unis</div><p>La CIM-10-CM américaine possède J12.82, « pneumonie due au COVID-19 ». Ce code n’existe pas dans la CIM-10-GM 2024 et ne s’emploie pas en Suisse.</p>
+<div class="lab">Limite de la source</div><p>Les communications consultées datent de 2020 ; le manuel de codage de l’année en cours fait foi.</p></template>
+
+<template data-pop="j12-oms-gravite" data-title="Gravité du COVID-19 selon l’OMS">
+<div class="lab">Critique</div><p>Critères du SDRA, sepsis, choc septique, ou toute situation qui demande une suppléance vitale comme la ventilation invasive ou non invasive ou un vasopresseur.</p>
+<div class="lab">Sévère</div><p>Au moins un critère : SpO₂ inférieure à 90 % à l’air ambiant ; signes de pneumonie ; signes de détresse respiratoire sévère (chez l’adulte : muscles accessoires, phrases incomplètes, fréquence respiratoire supérieure à 30 par minute).</p>
+<div class="lab">Non sévère</div><p>Absence de tout critère de forme sévère ou critique.</p>
+<div class="lab">Précautions de l’OMS</div><p>Le seuil de 90 % est arbitraire. Une SpO₂ de 90 à 94 % chez un malade aux poumons sains, surtout si elle baisse, peut être un signe précoce de forme sévère ; une SpO₂ basse peut être habituelle chez un malade atteint de maladie pulmonaire chronique. En cas de doute, le malade est classé sévère.</p></template>
+
+<template data-pop="j12-epic" data-title="Étude EPIC (2015)">
+<div class="lab">Plan</div><p>Surveillance active des pneumonies communautaires hospitalisées chez l’adulte dans cinq hôpitaux de Chicago et de Nashville, de 2010 à 2012. Les immunodéprimés sévères et les malades récemment hospitalisés étaient exclus. Les prélèvements bactériens et viraux étaient systématiques.</p>
+<div class="lab">Résultats</div><p>Sur 2259 malades avec pneumonie radiologique et prélèvements complets, un agent a été trouvé chez 38 % : virus chez 23 %, bactérie chez 11 %, virus et bactérie chez 3 %. Rhinovirus 9 %, virus grippal 6 %, pneumocoque 5 %. Incidence annuelle : 24,8 pour 10 000 adultes, 164,3 pour 10 000 après 80 ans. Mortalité hospitalière : 2 %.</p>
+<div class="lab">Leçon</div><p>Les virus sont plus souvent détectés que les bactéries, mais la majorité des pneumonies restent sans agent identifié. Référence : Jain S. et al., New England Journal of Medicine 2015;373:415–427.</p></template>
+
+<template data-pop="j12-a-cardio" data-title="Insuffisance cardiaque et bronchopathie chronique">
+<div class="lab">Pourquoi ce terrain aggrave</div><p>La fièvre et la tachycardie augmentent la demande en oxygène du myocarde, tandis que l’hypoxémie réduit l’apport. L’inflammation favorise la rétention hydrosodée. Chez le malade atteint de BPCO, l’infection augmente l’obstruction et le travail respiratoire.</p>
+<div class="lab">Ce que le médecin recherche</div><p>FEVG connue, NT-proBNP de base, poids habituel, diurétiques, VEMS et oxygénothérapie à domicile, exacerbations antérieures.</p>
+<div class="lab">Conséquence pratique</div><p>La décompensation cardiaque et la pneumonie coexistent souvent : le médecin traite les deux. Le cas de Mme R. en est l’exemple.</p></template>
+
+<template data-pop="j12-a-expo" data-title="Expositions animales et voyages">
+<div class="lab">Oiseaux</div><p>Perruches, perroquets, pigeons, volailles : psittacose à <i>Chlamydia psittaci</i> (A70 avec J17.8*). La grippe aviaire relève du cours de la grippe.</p>
+<div class="lab">Animaux de ferme</div><p>Mise bas de moutons, de chèvres ou de bovins : fièvre Q à <i>Coxiella burnetii</i> (A78 avec J17.8*).</p>
+<div class="lab">Voyages et contacts</div><p>Contact non vacciné avec une rougeole ; séjour en zone d’endémie pour l’ascaridiase ou la schistosomiase (J17.3*) ; retour d’Amérique pour la coccidioïdomycose et l’histoplasmose (J17.2*).</p>
+<div class="lab">Conséquence</div><p>Une exposition animale fait ajouter la doxycycline et demander une PCR ou une sérologie spécifique.</p></template>
+
+<template data-pop="j12-s-toux" data-title="Toux des pneumonies virales">
+<div class="lab">Caractérisation</div><p>La toux est d’abord sèche, car l’atteinte est épithéliale et interstitielle sans exsudat alvéolaire abondant. Elle devient parfois productive en cas de bronchite associée ou de surinfection.</p>
+<div class="lab">Durée</div><p>Elle persiste souvent 2 à 3 semaines, et plus après <i>Chlamydia pneumoniae</i> ou le VRS, par lenteur de la régénération ciliaire et hyperréactivité bronchique post-infectieuse.</p>
+<div class="lab">Piège</div><p>Une expectoration purulente ne prouve pas une bactérie, et une toux sèche ne l’exclut pas. Une toux de plus de 3 semaines fait chercher une coqueluche, une tuberculose ou un autre diagnostic.</p></template>
+
+<template data-pop="j12-s-dysp" data-title="Dyspnée et évolution biphasique">
+<div class="lab">Chronologie</div><p>Dans le COVID-19, la dyspnée apparaît souvent entre le cinquième et le dixième jour, au moment de la phase inflammatoire. Après une grippe, une amélioration suivie d’une rechute fébrile fait craindre une surinfection bactérienne.</p>
+<div class="lab">Ce que le médecin mesure</div><p>Fréquence respiratoire, SpO₂ au repos et à l’effort, capacité à parler. Une dyspnée nouvelle au repos est une indication d’évaluation hospitalière.</p>
+<div class="lab">Différentiel</div><p>Embolie pulmonaire, décompensation cardiaque, exacerbation obstructive, SDRA débutant. Chacune a un traitement propre.</p></template>
+
+<template data-pop="j12-v-fr" data-title="Fréquence respiratoire">
+<div class="lab">Technique</div><p>Le médecin compte pendant 30 à 60 secondes, sans prévenir le malade, en observant le thorax ou l’abdomen.</p>
+<div class="lab">Valeurs</div><p>Normale chez l’adulte : 12 à 20 par minute. Au-delà de 30 par minute, la forme est sévère selon l’OMS, et le critère compte dans le CRB-65.</p>
+<div class="lab">Piège</div><p>C’est le signe vital le plus souvent estimé au lieu d’être mesuré. Une valeur notée « 16 » chez tous les malades d’un service trahit l’absence de mesure.</p></template>
+
+<template data-pop="j12-v-spo" data-title="Saturation pulsée en oxygène">
+<div class="lab">Technique</div><p>Capteur au doigt chaud, sans vernis, signal de pouls régulier, lecture après stabilisation. Une mesure à l’effort (marche de quelques minutes) démasque une désaturation chez le malade normal au repos.</p>
+<div class="lab">Valeurs</div><p>Normale : 95 à 100 % à l’air ambiant chez l’adulte jeune. Inférieure à 90 % : forme sévère selon l’OMS.</p>
+<div class="lab">Limites</div><p>L’oxymètre surestime la saturation chez le malade à peau foncée et devient imprécis en dessous de 80 %, en cas de vasoconstriction ou de carboxyhémoglobine. Une gazométrie artérielle confirme une valeur limite.</p></template>
+
+<template data-pop="j12-x-crep" data-title="Crépitants fins">
+<div class="lab">Description</div><p>Bruits discontinus, brefs, en fin d’inspiration, comparables au frottement de cheveux près de l’oreille. Ils naissent de la réouverture brutale de petites voies aériennes ou d’alvéoles fermées.</p>
+<div class="lab">Valeur</div><p>Bilatéraux, ils évoquent une atteinte interstitielle ou un œdème ; localisés, une condensation. Dans le COVID-19, ils manquent souvent malgré des opacités étendues : l’auscultation sous-estime l’atteinte.</p>
+<div class="lab">Piège</div><p>Chez le sujet âgé alité, des crépitants des bases disparaissent après quelques inspirations profondes : ils ne témoignent alors que d’atélectasies.</p></template>
+
+<template data-pop="j12-x-mollet" data-title="Thrombose veineuse au cours du COVID-19">
+<div class="lab">Mécanisme</div><p>L’atteinte endothéliale, l’inflammation, l’immobilisation et l’hypoxémie activent la coagulation. Les D-dimères s’élèvent.</p>
+<div class="lab">Examen</div><p>Mollet douloureux, œdème unilatéral, circonférence asymétrique de plus de 3 cm. Une échographie de compression confirme la thrombose.</p>
+<div class="lab">Conséquence</div><p>Une aggravation respiratoire inexpliquée fait rechercher une embolie pulmonaire par angioscanner. La prophylaxie thromboembolique est systématique chez le malade hospitalisé sans contre-indication.</p></template>
+
+<template data-pop="j12-pcr" data-title="PCR multiplex respiratoire">
+<div class="lab">Principe</div><p>L’amplification génique copie de manière exponentielle une séquence cible ; pour les virus à ARN, une transcription inverse précède l’amplification. Le panel multiplex recherche simultanément plusieurs virus et parfois des bactéries intracellulaires.</p>
+<div class="lab">Valeur</div><p>C’est l’examen de référence du diagnostic viral, qualifié de gold standard pour le VRS par l’OFSP. Sa sensibilité dépend surtout du prélèvement : nasopharyngé profond plutôt que narinaire, précoce plutôt que tardif.</p>
+<div class="lab">Interprétation</div><p>Le cycle seuil, inversement lié à la charge virale, n’est pas standardisé entre laboratoires. Une PCR positive prouve la présence du génome, pas un virus vivant ni sa responsabilité. Le rhinovirus et l’adénovirus sont souvent détectés sans maladie.</p>
+<div class="lab">Conséquence pratique</div><p>Le résultat décide de l’isolement, du traitement antiviral et du code. Il ne dispense pas du bilan bactérien d’une pneumonie radiologique.</p></template>
+
+<template data-pop="j12-pct" data-title="Procalcitonine">
+<div class="lab">Biologie</div><p>Précurseur de la calcitonine, produit par de nombreux tissus sous l’effet de l’interleukine 1, du TNF-α et des toxines bactériennes. L’interféron gamma, élevé dans les viroses, freine sa production.</p>
+<div class="lab">Valeurs</div><p>Normale inférieure à 0,05 µg/L. Inférieure à 0,25 µg/L : bactérie peu probable ; supérieure à 0,5 µg/L : bactérie plus probable. Ces seuils viennent des essais de pilotage antibiotique.</p>
+<div class="lab">Usage</div><p>Elle aide surtout à arrêter un antibiotique : une valeur basse et stable avec une évolution favorable soutient l’arrêt. Les recommandations ATS et IDSA de 2019 ne fondent pas la décision initiale sur la procalcitonine seule dans une pneumonie radiologique.</p>
+<div class="lab">Pièges</div><p>Elle peut s’élever sans bactérie (COVID-19 critique, choc, chirurgie, insuffisance rénale) et rester basse dans une infection bactérienne précoce ou localisée.</p></template>
+
+<template data-pop="j12-tdm" data-title="Verre dépoli">
+<div class="lab">Définition</div><p>Augmentation de la densité du parenchyme qui laisse voir les vaisseaux et les parois bronchiques. Elle traduit un remplissage partiel des alvéoles, un épaississement interstitiel ou une baisse d’aération.</p>
+<div class="lab">Valeur</div><p>Le verre dépoli bilatéral périphérique est fréquent dans le COVID-19 ; il se voit aussi dans les autres pneumonies virales, la pneumocystose, l’œdème, l’hémorragie alvéolaire et les pneumopathies médicamenteuses.</p>
+<div class="lab">Piège</div><p>Un aspect « typique » ne remplace pas la PCR. Une expiration incomplète pendant l’acquisition crée un faux verre dépoli dans les régions déclives.</p></template>
+
+<template data-pop="j12-sdra" data-title="SDRA d’origine virale">
+<div class="lab">Définition de Berlin (2012)</div><p>Début dans la semaine qui suit l’agression, opacités bilatérales non expliquées par un épanchement ou une atélectasie, œdème non expliqué par une insuffisance cardiaque, et rapport PaO₂/FiO₂ inférieur ou égal à 300 mmHg sous une pression positive en fin d’expiration d’au moins 5 cm d’eau. Une définition élargie de 2024 admet l’oxygénothérapie à haut débit ; le cours J96 en discute.</p>
+<div class="lab">Mécanisme</div><p>Dommage alvéolaire diffus : membranes hyalines, œdème riche en protéines, shunt.</p>
+<div class="lab">Traitement</div><p>Ventilation protectrice (volume courant d’environ 6 mL/kg de poids idéal), décubitus ventral si le rapport reste bas, et, pour le COVID-19, dexaméthasone et immunomodulateur. Il relève des soins intensifs.</p></template>
+
+<template data-pop="j12-aspergillose" data-title="Aspergillose associée aux viroses">
+<div class="lab">Situation</div><p>Une aspergillose pulmonaire invasive peut compliquer une grippe ou un COVID-19 en soins intensifs, même chez un malade non neutropénique. Les lésions épithéliales, les corticostéroïdes et l’immunodépression locale l’expliquent.</p>
+<div class="lab">Diagnostic</div><p>Galactomannane et culture du lavage bronchoalvéolaire, tomodensitométrie, parfois bronchoscopie montrant une trachéobronchite.</p>
+<div class="lab">Codage</div><p>B44.0 ou B44.1 avec J17.2* si l’atteinte est pneumonique.</p></template>
+
+<template data-pop="j12-thrombose" data-title="Thromboprophylaxie dans le COVID-19">
+<div class="lab">Recommandation</div><p>L’OMS (août 2025) suggère une dose prophylactique d’héparine ou d’héparine de bas poids moléculaire plutôt qu’une dose intermédiaire ou thérapeutique chez le malade atteint de COVID-19 sévère ou critique (recommandation conditionnelle), faute de bénéfice certain sur la mortalité.</p>
+<div class="lab">Indication thérapeutique</div><p>Une thrombose ou une embolie prouvée se traite à dose thérapeutique, selon le cours I26.</p>
+<div class="lab">Piège</div><p>Les D-dimères sont élevés chez presque tous les malades graves ; c’est leur hausse rapide avec une aggravation inexpliquée qui fait chercher une embolie.</p></template>
+
+<template data-pop="j12-o2" data-title="Oxygénothérapie titrée">
+<div class="lab">Cibles</div><p>La British Thoracic Society (2017) vise une SpO₂ de 94 à 98 % chez la plupart des adultes et de 88 à 92 % chez le malade à risque d’hypercapnie (BPCO sévère, obésité morbide, maladie neuromusculaire).</p>
+<div class="lab">Moyens</div><p>Lunettes nasales, masque simple, masque à réserve, puis oxygénothérapie nasale à haut débit, pression positive continue ou VNI selon la gravité et la réponse.</p>
+<div class="lab">Piège</div><p>Une SpO₂ de 100 % sous fort débit masque l’aggravation et peut augmenter la PaCO₂ chez le malade à risque ; l’oxygène se titre comme un médicament, avec une prescription écrite de cible.</p></template>
+
+<template data-pop="j12-decubitus" data-title="Décubitus ventral éveillé">
+<div class="lab">Principe</div><p>Le malade non intubé se couche sur le ventre plusieurs heures par jour. Les régions dorsales, plus perfusées et plus atteintes, sont mieux ventilées ; l’effet shunt diminue.</p>
+<div class="lab">Preuves</div><p>Une méta-analyse d’essais publiée en 2021 dans le COVID-19 sous oxygénothérapie nasale à haut débit a montré une baisse du recours à l’intubation, sans effet net sur la mortalité.</p>
+<div class="lab">Limites</div><p>La tolérance limite la durée ; il ne doit pas retarder une intubation nécessaire.</p></template>
+
+<template data-pop="j12-stewardship" data-title="Désescalade antibiotique">
+<div class="lab">Principe</div><p>Un antibiotique commencé de manière empirique est réévalué à 48–72 heures selon les cultures, les antigènes et l’évolution, puis arrêté, ciblé ou poursuivi.</p>
+<div class="lab">Arguments pour l’arrêt dans une pneumonie virale prouvée</div><p>Hémocultures et antigènes urinaires négatifs, procalcitonine restée basse, absence de condensation lobaire, amélioration clinique.</p>
+<div class="lab">Bénéfices</div><p>Moins d’effets indésirables, d’infections à <i>Clostridioides difficile</i> et de résistances.</p>
+<div class="lab">Limite</div><p>Aucun essai n’a validé une règle d’arrêt unique ; la décision est un jugement clinique documenté dans le dossier.</p></template>
+
+<template data-pop="j12-interactions" data-title="Interactions du ritonavir">
+<div class="lab">Mécanisme</div><p>Le ritonavir inhibe fortement et de façon irréversible le CYP3A4 et inhibe la glycoprotéine P. Il augmente donc la concentration des médicaments éliminés par ces voies.</p>
+<div class="lab">Médicaments contre-indiqués (extrait de l’information professionnelle suisse)</div><p>Amiodarone, dronédarone, flécaïnide, dabigatran, colchicine, quétiapine, lurasidone, simvastatine, éplérénone, finérénone, ivabradine, sildénafil, tadalafil, diazépam, midazolam oral, tolvaptan, voclosporine ; inducteurs puissants (rifampicine, carbamazépine, phénytoïne, phénobarbital, millepertuis).</p>
+<div class="lab">Adaptations</div><p>Rivaroxaban non recommandé ; apixaban, ciclosporine, tacrolimus, atorvastatine et rosuvastatine à adapter. Le médecin vérifie chaque médicament avant la prescription, avec l’information professionnelle ou un outil d’interactions.</p>
+<div class="lab">Durée</div><p>L’inhibition persiste quelques jours après la dernière dose, le temps de la resynthèse de l’enzyme.</p></template>
+
+<template data-pop="j12-hygiene" data-title="Hygiène et adénovirus">
+<div class="lab">Particularité</div><p>L’adénovirus n’a pas d’enveloppe lipidique ; il persiste longtemps sur les surfaces et résiste mieux à certains désinfectants à base d’alcool que les virus enveloppés.</p>
+<div class="lab">Conséquence</div><p>Épidémies de kératoconjonctivite dans les cabinets d’ophtalmologie et de pneumonies dans les services d’hématologie. Les produits désinfectants doivent avoir une activité démontrée contre les virus nus.</p>
+<div class="lab">Conduite</div><p>Isolement du malade hospitalisé selon les directives de l’établissement, port de gants et de blouse, désinfection des instruments et des surfaces.</p></template>
+
+<template data-pop="j12-postcovid" data-title="Affection post-COVID-19">
+<div class="lab">Définition de l’OMS</div><p>Symptômes qui surviennent habituellement dans les trois mois suivant une infection probable ou confirmée par le SARS-CoV-2, durent au moins deux mois et ne s’expliquent pas par un autre diagnostic.</p>
+<div class="lab">Fréquence</div><p>L’OMS (2025) cite environ 6 % des infections symptomatiques ; plus de 90 % des cas suivent une forme légère, en raison du nombre des infections.</p>
+<div class="lab">Symptômes</div><p>Fatigue, dyspnée, troubles cognitifs, malaise après effort, palpitations. Le bilan exclut une embolie, une atteinte cardiaque ou une fibrose.</p>
+<div class="lab">Codage</div><p>U09.9! s’ajoute aux codes des manifestations.</p></template>
+
+<template data-pop="j12-cmv" data-title="Pneumonie à cytomégalovirus">
+<div class="lab">Terrain</div><p>Greffé de cellules souches ou d’organe, malade atteint du VIH avec très peu de CD4. Elle est exceptionnelle chez l’immunocompétent.</p>
+<div class="lab">Diagnostic</div><p>PCR sanguine quantitative, PCR du lavage bronchoalvéolaire, et preuve histologique par les inclusions en « œil de hibou ». L’excrétion pulmonaire sans maladie est fréquente : la PCR seule ne suffit pas toujours.</p>
+<div class="lab">Traitement et codage</div><p>Ganciclovir intraveineux 5 mg/kg toutes les 12 heures pendant 14 à 21 jours selon l’information professionnelle suisse. Code B25.0 avec J17.1*.</p></template>
+
+<template data-pop="j12-rougeole" data-title="Pneumonie rougeoleuse">
+<div class="lab">Clinique</div><p>Elle survient chez l’enfant ou l’adulte non vacciné, pendant ou après l’éruption. C’est la principale cause de décès de la rougeole ; une surinfection bactérienne s’y associe souvent.</p>
+<div class="lab">Diagnostic</div><p>PCR sur frottis nasopharyngé et urine, IgM sériques. La rougeole est à déclaration obligatoire en Suisse.</p>
+<div class="lab">Traitement et prévention</div><p>Pas d’antiviral spécifique. L’OMS recommande la vitamine A chez l’enfant atteint de rougeole. La prévention repose sur deux doses de vaccin contre la rougeole, les oreillons et la rubéole selon le plan de vaccination suisse. Code B05.2 avec J17.1*.</p></template>
+
+<template data-pop="j12-varicelle" data-title="Pneumonie varicelleuse">
+<div class="lab">Terrain</div><p>Adulte non immun, femme enceinte, fumeur, immunodéprimé. Elle apparaît 1 à 6 jours après l’éruption.</p>
+<div class="lab">Clinique</div><p>Toux, dyspnée, hypoxémie, parfois hémoptysie ; opacités nodulaires diffuses qui peuvent se calcifier plus tard.</p>
+<div class="lab">Traitement</div><p>Aciclovir intraveineux dès la suspicion, sans attendre la PCR, à 10 mg/kg toutes les 8 heures chez l’adulte à fonction rénale normale, avec hydratation. La prévention post-exposition de la femme enceinte non immune relève du cours de la varicelle. Code B01.2 avec J17.1*.</p></template>
+
+<template data-pop="j12-psittacose" data-title="Psittacose">
+<div class="lab">Agent et exposition</div><p><i>Chlamydia psittaci</i>, transmise par l’inhalation de poussières de fientes ou de plumes d’oiseaux infectés (perroquets, perruches, pigeons, volailles).</p>
+<div class="lab">Clinique</div><p>Fièvre élevée, céphalées intenses, myalgies, toux sèche, parfois splénomégalie et bradycardie relative.</p>
+<div class="lab">Diagnostic et traitement</div><p>PCR respiratoire ou sérologie sur deux prélèvements. Doxycycline ; macrolide chez la femme enceinte. Code A70 avec J17.8* ; elle est exclue de J16.</p></template>
