@@ -111,20 +111,20 @@ async def capture(args, directory):
                 print(f"Capture réelle : {label}", flush=True)
 
                 if panel == "pA" and code == "B24":
-                    # Montrer aussi le passage clinique corrigé, absent de la vue d'ouverture.
-                    target = active.locator("#b24-pa-1 h3", has_text="1.3").first
+                    # Montrer la définition clinique, au-delà de la vue d'ouverture.
+                    target = active.locator("#b24-pa-1 h2").first
                     await target.evaluate("""el => scrollTo({
                       top: Math.max(0, scrollY + el.getBoundingClientRect().top - 600),
                       behavior: 'instant'
                     })""")
                     await settle(page)
-                    detail_name = "b24-passage-stades-et-codage.png"
+                    detail_name = "b24-passage-maladie-avancee.png"
                     await page.screenshot(path=str(directory / detail_name),
                                           clip={"x": 280, "y": 350, "width": 900, "height": 570})
                     provenance["detail_capture"] = {"file": detail_name,
                                                     "section": "b24-pa-1",
                                                     "heading": (await target.inner_text()).strip()}
-                    print("Capture réelle : stades et codage B24", flush=True)
+                    print("Capture réelle : maladie avancée B24", flush=True)
 
             # Le premier médicament de l'onglet actif ouvre une explication native.
             trigger = course.locator('.mc-panel:not([hidden]) [data-k]').first
@@ -193,7 +193,7 @@ def assemble(directory, report):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", required=True, help="URL HTTP(S) ou file:// de l'aperçu Infectiologie")
-    parser.add_argument("--code", choices=("B24", "B18", "A54", "A53"), default="B24", help="Cours à montrer")
+    parser.add_argument("--code", choices=("B24", "B18", "A54", "A53", "B50"), default="B24", help="Cours à montrer")
     parser.add_argument("--output", required=True, type=Path, help="Dossier des PNG, GIF et preuves")
     parser.add_argument("--browser-executable", type=Path, help="Navigateur Chromium local facultatif")
     args = parser.parse_args()
