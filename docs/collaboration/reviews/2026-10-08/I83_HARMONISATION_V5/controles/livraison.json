@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "kind": "claude_contribution",
+  "author": "Claude",
+  "status": "lot I83 — harmonisations, version 5 : réserve majeure de la réception Codex 3dac928 (suivi d'une thrombose profonde découverte renvoyé à sa conduite propre, I80 ; ARTE traitée jusqu'à rétraction) ; remplace HARMONISATION-4",
+  "fragment": {
+    "id": "S01",
+    "label": "C-01-Cardiologie",
+    "specialty": "Cardiologie"
+  },
+  "source_commit": "3dac92808b055e235ee6f57cfec8e283455a85ca",
+  "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+  "chapters": [
+    {
+      "code": "I83",
+      "title": "Varices des membres inférieurs",
+      "covers": [
+        "I83",
+        "I87"
+      ],
+      "owner_fragment": "S01"
+    }
+  ],
+  "files": [
+    {
+      "target_path": "chapters/I83/I83_a.html",
+      "source_path": "sources/chapters/I83/I83_a.html",
+      "sha256": "1610615e2f39a888d4ccb46b46b56a4ea0c5195f19dfd8af68cac511f7f0ff76",
+      "proposed_sha256": "6e0e7dda96dc13d30fa3baa30846d45e2774e60a8eeed8b99690f0b015d6247f"
+    },
+    {
+      "target_path": "chapters/I83/I83_b.html",
+      "source_path": "sources/chapters/I83/I83_b.html",
+      "sha256": "d336d0b4e4977212ffa192fe2c57a535db54f288daa2ce014c022d513ed9da9a",
+      "proposed_sha256": "89971f9bde26e44390633e0ade8f3c9fabb6f021bb016b36ae31f8d311ac167f"
+    },
+    {
+      "target_path": "chapters/I83/I83_c.html",
+      "source_path": "sources/chapters/I83/I83_c.html",
+      "sha256": "ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261",
+      "proposed_sha256": "dcb05b262008c05886dc16aa4438ffc2130304c16e4bb24ee5f7233d673cfc91"
+    },
+    {
+      "target_path": "chapters/I83/I83_d.html",
+      "source_path": "sources/chapters/I83/I83_d.html",
+      "sha256": "72a6ddb28a8379f9ab54323d3323220e3f4f102129f1f948d5ccf8c58c5b0e06",
+      "proposed_sha256": "ab64dfd4b425bab4e4484c97654d924e990c66cdef4199f72df56616e7b7a446"
+    },
+    {
+      "target_path": "chapters/I83/I83_pop1.html",
+      "source_path": "sources/chapters/I83/I83_pop1.html",
+      "sha256": "a790feb6f96e5805da69f398daf23a617813424a44dad8d14d94e1b2348e36cd",
+      "proposed_sha256": "e6f2fc5b08771589ba7699b9106f30700b798ea23f2b10df5f293c082f0458f2"
+    },
+    {
+      "target_path": "chapters/I83/I83_pop2.html",
+      "source_path": "sources/chapters/I83/I83_pop2.html",
+      "sha256": "e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55",
+      "proposed_sha256": "4f916835b5d8b92ce990f208416ef69678e7d8d85448004b21ab649e5102ba07"
+    },
+    {
+      "target_path": "chapters/I83/I83_pop3.html",
+      "source_path": "sources/chapters/I83/I83_pop3.html",
+      "sha256": "c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42",
+      "proposed_sha256": "f7625789422547b326444b5e7ec63fa6dc2b9fa448db9789574cae7a84c8548b"
+    }
+  ],
+  "checks": [
+    {
+      "command": "verifier_sigles I83 ; test_v7.py --static I83 ; build_front.py ; --all-fragments ; audit_fragments.py ; verify_course_native.cjs I83 ; verify_s01_browser.cjs ; test_v7.py I83",
+      "base": "3dac92808b055e235ee6f57cfec8e283455a85ca",
+      "result": "{} ; OK (41 839 mots, 47 fenêtres, 6 quiz, 6 Pareto) ; 22 fragments, build reproductible ; natif 1 923 contrôles, 0 échec ; S01 72 réussis ; OK"
+    },
+    {
+      "command": "vérification documentaire indépendante (sous-agent, PubMed et copies locales des référentiels)",
+      "result": "SVS/AVF/AVLS 2023 partie II §11 (PMID 37652254), CEAP 2020 (PMID 32113854) et guide AVF, ESVS 2022 R49–R50, O'Meara 2014 (CD003557.pub5), Norman 2018 (CD012583.pub2)"
+    }
+  ],
+  "limits": [
+    "Couverture CIM-11 non établie.",
+    "Harmonisations rédactionnelles et de périmètre ; aucun seuil ni aucune dose nouvelle n'est introduit.",
+    "Les sources primaires (ESVS 2022, Cochrane, AVF/SVS 2021) n'ont pas été téléchargées de nouveau pour ce lot."
+  ],
+  "delivery": {
+    "lot": "I83-HARMONISATION-5",
+    "date": "2026-10-08",
+    "branch": "claude/loving-shannon-spwrhc",
+    "start_commit": "3dac92808b055e235ee6f57cfec8e283455a85ca",
+    "report": "rapport.md",
+    "base": "main",
+    "remplace": "lots/2026-10-08-I83-HARMONISATION-4 (non injecté)"
+  },
+  "complements_hors_manifeste": [
+    {
+      "target_path": "glossary/i83.py",
+      "source_path": "complements/glossary/i83.py",
+      "sha256": "b041af30d40c15eb16c0063dc7d83fa0a57c364608d36ccb38003bf2af7636b4",
+      "proposed_sha256": "57f76995115dff8e173023cce815b71a64c51b3aa1f879ab8990dc9d93f02974",
+      "raison": "hors périmètre de tools/livraison.py (chapters/ seulement) : entrées ARTE et EHIT, inchangées depuis HARMONISATION-2"
+    }
+  ]
+}

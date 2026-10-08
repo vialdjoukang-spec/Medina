@@ -1,0 +1,889 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-08T11:49:09.049791+00:00",
+  "generated_at_europe_zurich": "2026-10-08T13:49:09.049823+02:00",
+  "reviewer": "Codex — poste réception/contrelecture médicale",
+  "chapter": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "received_commit": "d5b46aa2502c91517f7f80c8ac158f42605257e8",
+  "baseline_commit": "3dac92808b055e235ee6f57cfec8e283455a85ca",
+  "previous_v4_commit": "e17107aaafff29ac94abf9197a1eef6fb0d6c817",
+  "lot": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/",
+  "decision": "favorable_avec_reserves_mineures",
+  "counts": {
+    "blocking": 0,
+    "major": 0,
+    "minor": 2
+  },
+  "v4_major_reserve": "levée : distinction ARTE jusqu’à rétraction / TVP selon conduite propre",
+  "authorizes": "avis médical ciblé pour décision du coordinateur sur intégration sélective du lot figé, après contrôles indépendants techniques",
+  "does_not_certify": [
+    "intégralité médicale inchangée du chapitre",
+    "fragment terminé",
+    "couverture CIM-11",
+    "réexécution des tests annoncés par le producteur",
+    "affirmations négatives OFSP inchangées",
+    "contenus primaires inaccessibles non lus"
+  ],
+  "scope": {
+    "sources_changed": 7,
+    "glossary_changed": 1,
+    "new_html_lines": 32,
+    "read_method": "git show au SHA figé, diff ligne par ligne avec base, lecture de toutes les phrases modifiées et résumés associés ; aucune exécution du code entrant",
+    "incoming_code_executed": false,
+    "canonical_modified": false,
+    "git_modified": false,
+    "prior_audit": "../I83_DECISION_0974D85/DECISION.md",
+    "technical_provenance": "../A41_REPRISE_MULTIAGENT/RECEPTION.json (16 empreintes préalablement conformes, non répétées aveuglément)"
+  },
+  "findings": [
+    {
+      "id": "I83-V5-MIN-01",
+      "severity": "mineure",
+      "state": "ouverte_non_bloquante",
+      "path": "chapters/I83/I83_c.html",
+      "line": 43,
+      "quote": "l’ESVS réserve l’appellation de perforante pathologique à une perforante située sous un ulcère ouvert ou cicatrisé (classe C5 ou C6).",
+      "evidence": [
+        "ESVS2022 §2.3.1.1 : reflux >0.35 s (ou >0.5 s selon les auteurs), diamètre >3.5 mm habituellement considéré pathologique, notamment dans une zone d’altérations cutanées.",
+        "ESVS2022 §4.6.6 : « Often, the term “pathological PVs” has been used, defined as those near or adjacent to a healed or open VLU… » ; ce passage ne pose pas une exclusivité universelle.",
+        "ESVS2022 R50 : C4b/C5/C6, perforante incompétente isolée ou résiduelle jugée significative ; traitement peut être envisagé, IIb C."
+      ],
+      "proposed_replacement": "L’ESVS décrit notamment comme « perforantes pathologiques » celles situées près d’un ulcère actif ou cicatrisé (§4.6.6) ; il emploie aussi ce terme pour des perforantes répondant aux critères hémodynamiques et de calibre, en particulier dans une zone d’altérations cutanées (§2.3.1.1). Cette qualification ne suffit pas à poser une indication thérapeutique.",
+      "why_not_blocking": "La suite du passage distingue correctement la décision thérapeutique R50 IIb C. Mme R. reste C4a/C4c sans C4b ni ulcère ; traitement initial du reflux tronculaire et réévaluation de la perforante inchangés."
+    },
+    {
+      "id": "I83-V5-MIN-02",
+      "severity": "mineure",
+      "state": "ouverte_non_bloquante",
+      "paths": [
+        {
+          "path": "chapters/I83/I83_pop2.html",
+          "line": 46,
+          "old_phrase": "Les ARTE de classes II à IV surviennent dans 1,4 % des ablations de la grande saphène, et l’ensemble ARTE II à IV ou thrombose profonde dans 1,7 %",
+          "proposed_phrase": "Après ablation thermique de la grande saphène, les ARTE de classes II à IV surviennent dans 1,4 % des cas, et l’ensemble ARTE II à IV ou thrombose profonde dans 1,7 %"
+        },
+        {
+          "path": "chapters/I83/I83_pop2.html",
+          "line": 123,
+          "old_phrase": "survient dans 1,4 % des ablations de la grande saphène",
+          "proposed_phrase": "survient dans 1,4 % des ablations thermiques de la grande saphène"
+        },
+        {
+          "path": "glossary/i83.py",
+          "line": 7,
+          "old_phrase": "surviennent après 1,4 % des ablations de la grande saphène",
+          "proposed_phrase": "surviennent après 1,4 % des ablations thermiques de la grande saphène"
+        }
+      ],
+      "evidence": [
+        "SVS/AVF/AVLS2023 §11.1.1 rationale : revue de 52 études/16398 patients, seulement ablation thermique de la grande saphène avec surveillance échographique dans le premier mois ; EHIT II–IV ou TVP 1.7 %, EHIT II–IV 1.4 %, TVP 0.3 %, EP 0.1 %.",
+        "chapters/I83/I83_b.html:64 contient déjà « Après ablation thermique de la grande saphène » et donne correctement ce périmètre."
+      ],
+      "why_not_blocking": "Chiffres et prise en charge sont corrects dans leur population source. L’omission du qualificatif dans trois reprises est une imprécision de portée statistique, sans changement d’indication, de dose ou de conduite. La définition ARTE toutes techniques reste valide."
+    }
+  ],
+  "topic_checks": [
+    {
+      "topic": "Réserve majeure v4 TVP/ARTE",
+      "status": "fermee",
+      "locations": [
+        "chapters/I83/I83_b.html:108",
+        "chapters/I83/I83_b.html:126"
+      ],
+      "assessment": "ARTE anticoagulée jusqu’à rétraction séparée de la TVP découverte, qui suit siège/symptômes/risque d’extension. Aucune règle universelle de surveillance TVP jusqu’à résolution.",
+      "primary": "SVS2023 11.4.2 ; 11.3.1–11.3.3"
+    },
+    {
+      "topic": "Écho-Doppler post-ablation",
+      "status": "favorable",
+      "locations": [
+        "chapters/I83/I83_b.html:62",
+        "chapters/I83/I83_b.html:64",
+        "chapters/I83/I83_b.html:108",
+        "chapters/I83/I83_c.html:38"
+      ],
+      "assessment": "Divergence ESVS2022 R27 IIa C (1–4 semaines) / SVS2023 11.1.1 1B (pas systématique après thermique, asymptomatique risque moyen), 11.1.2 consensus (non thermique possible), 11.1.3 consensus (haut risque), 11.1.4 1A (symptômes) correctement exposée."
+    },
+    {
+      "topic": "ARTE/EHIT III et glossaire",
+      "status": "favorable_avec_min_02",
+      "locations": [
+        "chapters/I83/I83_b.html:64",
+        "chapters/I83/I83_pop2.html:46",
+        "chapters/I83/I83_pop2.html:47",
+        "glossary/i83.py:7",
+        "glossary/i83.py:8"
+      ],
+      "assessment": "ARTE couvre toutes techniques ; classe II <50 %, III >50 %, IV occlusive. ARTE symptomatique 11.3.4 1C ou asymptomatique III/IV 11.4.1 consensus : anticoagulant oral direct ; traitement jusqu’à rétraction 11.4.2 consensus. Le terme « Endovenous heat-induced thrombosis » concorde avec le référentiel SVS2023.",
+      "additional_primary_verified": "ESVS2022 : « When thrombus occludes the CFV (EHIT class IV), treatment by therapeutic anticoagulation is recommended. » La phrase finale conservée de pop2:47 concorde ; cette limite du rapport producteur a été vérifiée indépendamment ici."
+    },
+    {
+      "topic": "CEAP du cas et cible C4b",
+      "status": "favorable_sur_classes_limite_notation",
+      "locations": [
+        "chapters/I83/I83_a.html:179",
+        "chapters/I83/I83_b.html:66",
+        "chapters/I83/I83_c.html:43"
+      ],
+      "assessment": "Varices C2, œdème C3, pigmentation/eczéma C4a, corona C4c et symptômes concordent. Absence C4b/ulcère correctement distinguée de C4 en général ; R50 est IIb C. La graphie exacte C2,3,4a,c (s) du guide AVF n’a pas été certifiée, le guide ayant répondu 403 ; le résumé primaire Lurie2020 et le tableau ESVS valident les classes, pas cette typographie."
+    },
+    {
+      "topic": "Reflux par segments et recherche debout",
+      "status": "favorable",
+      "locations": [
+        "chapters/I83/I83_c.html:44",
+        "chapters/I83/I83_c.html:195",
+        "chapters/I83/I83_pop1.html:102",
+        "chapters/I83/I83_pop2.html:127",
+        "chapters/I83/I83_pop3.html:62"
+      ],
+      "assessment": "Le seuil >1 s est limité aux veines fémorale commune/fémorale/poplitées, au lieu de toutes les veines profondes. >0.5 s superficiel/perforant correct ; SVS précise aussi tibiales et fémorale profonde >0.5 s, sans contradiction avec les trois segments nommés du résumé. Recherche de reflux debout avec provocation adaptée soutenue par ESVS §2.3.1 et SVS remarques de mise en œuvre."
+    },
+    {
+      "topic": "Pansements et cadexomère : endpoint, source, certitude",
+      "status": "favorable",
+      "locations": [
+        "chapters/I83/I83_pop2.html:82",
+        "chapters/I83/I83_pop2.html:85",
+        "chapters/I83/I83_pop2.html:86",
+        "chapters/I83/I83_pop2.html:88"
+      ],
+      "assessment": "Endpoint cicatrisation complète, pas délai de cicatrisation. Norman2018 : 59 études en réseau, silver vs non-adherent RR2.43 CI1.58–3.74 de certitude modérée dans réseau faible. O’Meara2014 CD003557.pub5 : cadexomère dans 11 essais, comparaison soins usuels fondée sur 4 essais, cicatrisation 4–12 semaines RR2.17 CI1.30–3.60. Chiffre 212 participants non recertifié ; aucune modification nouvelle de ce chiffre ne figure dans ce delta."
+    },
+    {
+      "topic": "Association/causalité génétique",
+      "status": "favorable",
+      "locations": [
+        "chapters/I83/I83_pop3.html:55"
+      ],
+      "assessment": "Fukaya2018 résumé primaire : HR quartile supérieur vs inférieur 1.74 CI1.51–2.01 ; MR soutient causalité hauteur OR1.26. Les nouvelles conditions de validité, pléiotropie et structure de population évitent de présenter une preuve causale inconditionnelle. Mécanisme reste hypothèse."
+    },
+    {
+      "topic": "Modèle microvasculaire/inflammatoire",
+      "status": "favorable_sur_qualification",
+      "locations": [
+        "chapters/I83/I83_c.html:189",
+        "chapters/I83/I83_c.html:190",
+        "chapters/I83/I83_c.html:204",
+        "chapters/I83/I83_c.html:212",
+        "chapters/I83/I83_pop1.html:36",
+        "chapters/I83/I83_pop3.html:67"
+      ],
+      "assessment": "Kf défini comme conductivité hydraulique × surface ; formule classique explicitement simplifiée, non calcul individuel. Effets Kf/σ dans maladie veineuse qualifiés d’inférence microvasculaire non directement mesurée. Fer, TGFβ/fibrose et manchons fibrine ne sont plus présentés comme chaîne causale universelle démontrée. Résumés Levick/Michel2010 et Raffetto/Khalil2008 relus ; cette qualification ne certifie pas chaque affirmation inchangée du cours."
+    },
+    {
+      "topic": "Saignement et anticoagulation : règle conditionnelle",
+      "status": "favorable_sur_delta",
+      "locations": [
+        "chapters/I83/I83_b.html:12",
+        "chapters/I83/I83_b.html:62"
+      ],
+      "assessment": "La règle première élévation/compression est limitée au saignement arrêté ; persistance/retentissement hémodynamique → urgence et interruption/antagonisation au cas par cas. Non-interruption péri-ablation thermique concorde ESVS R94 III C. Aucune dose ou nouveau protocole de réversion ajouté."
+    },
+    {
+      "topic": "Œdème sous amlodipine : cas",
+      "status": "favorable_sur_delta",
+      "locations": [
+        "chapters/I83/I83_d.html:75"
+      ],
+      "assessment": "Remplacement d’amlodipine et réévaluation ; composante bilatérale disparue à trois mois, résidu gauche oriente vers maladie veineuse sans exclure autre cause. Le cas n’en fait plus une attribution exclusive fondée sur seule chronologie."
+    },
+    {
+      "topic": "Renvoi insuffisance cardiaque",
+      "status": "favorable_redactionnel",
+      "locations": [
+        "chapters/I83/I83_pop1.html:96"
+      ],
+      "assessment": "Le titre et fragment du renvoi I50 — Insuffisance cardiaque (C-01-Cardiologie) sont explicités ; contenu différentiel inchangé."
+    }
+  ],
+  "sources": [
+    {
+      "id": "SVS2023",
+      "title": "SVS/AVF/AVLS 2023, Part II",
+      "pmid": "37652254",
+      "pmcid": "PMC11523430",
+      "doi": "10.1016/j.jvsv.2023.08.011",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11523430/fullTextXML",
+      "access": "texte intégral JATS lu, pas simple statut HTTP",
+      "bytes": 708520,
+      "sha256": "46a0f5039bd083595e8d63ad1c0b7e30c6a2d95a4845cea4104a0469187dabd3",
+      "sections_read": [
+        "1.3.1",
+        "1.3.3",
+        "11.1.1–11.1.4",
+        "11.2.1",
+        "11.3.1–11.3.4",
+        "11.4.1–11.4.2",
+        "rationale 11.1.1 et 11.4",
+        "management of bleeding varicose veins"
+      ]
+    },
+    {
+      "id": "ESVS2022",
+      "title": "ESVS2022 Clinical Practice Guidelines on Management of Chronic Venous Disease of the Lower Limbs",
+      "doi": "10.1016/j.ejvs.2021.12.024",
+      "url": "https://orbi.uliege.be/bitstream/2268/288479/1/De%20Maeseneer_Eur%20J%20Vasc%20Endovasc%20Surg%20%282022%29%2063%2c%20184-267.pdf",
+      "access": "PDF primaire diffusé par le dépôt institutionnel ORBi, signature PDF vérifiée et texte lu",
+      "bytes": 4413151,
+      "sha256": "cb07d1f152de0b30ec674607d333f0ae016f952f4d778c60fe892ee0216bc783",
+      "sections_read": [
+        "table CEAP2020",
+        "2.3.1",
+        "4.1.7 et R27",
+        "4.2.1 complications EHIT",
+        "4.6.6 et R50",
+        "R94"
+      ]
+    },
+    {
+      "id": "OMEARA2014",
+      "pmid": "24408354",
+      "pmcid": "PMC10580125",
+      "doi": "10.1002/14651858.CD003557.pub5",
+      "access": "résumé primaire EuropePMC/PubMed lu ; texte intégral XML non reçu (500)",
+      "verified": "4 essais comparatifs, 11 essais cadexomère, cicatrisation complète 4–12 semaines, RR2.17 CI1.30–3.60",
+      "response_sha256": "b6760189b0a34680f0486de80334098d8a2a446b2d95d2fb31a26da64c3b635b",
+      "response_bytes": 12303,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=1&query=EXT_ID%3A24408354"
+    },
+    {
+      "id": "NORMAN2018",
+      "pmid": "29906322",
+      "pmcid": "PMC6513558",
+      "doi": "10.1002/14651858.CD012583.pub2",
+      "access": "résumé primaire EuropePMC/PubMed lu ; texte intégral XML non reçu (500)",
+      "verified": "59 essais en réseau, certitude réseau faible ; argent/non adhérent certitude modérée pour cicatrisation complète",
+      "response_sha256": "550477c782e07516b47564f2656bd8f31958c956b92db30e7ddeaed1c04fc725",
+      "response_bytes": 11384,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=1&query=EXT_ID%3A29906322"
+    },
+    {
+      "id": "FUKAYA2018",
+      "pmid": "30566020",
+      "pmcid": "PMC6400474",
+      "doi": "10.1161/CIRCULATIONAHA.118.035584",
+      "access": "résumé primaire EuropePMC/PubMed lu ; texte intégral XML non reçu (500)",
+      "response_sha256": "c817b90edd95bdeccd042904b92a4bdd1b9a21a4fd2cdaa25d95b6db995e3cbf",
+      "verified": "HR1.74 CI1.51–2.01 ; MR hauteur OR1.26, population génétique white British",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=1&query=EXT_ID%3A30566020"
+    },
+    {
+      "id": "LEVICK2010",
+      "pmid": "20200043",
+      "doi": "10.1093/cvr/cvq062",
+      "access": "résumé primaire EuropePMC/PubMed lu",
+      "verified": "principe Starling révisé/glycocalyx ; limites formule conventionnelle",
+      "response_sha256": "9f4043d65e7cb45581c5fa82e453fa66a756df2d6dae9d060ee48eba53001262",
+      "response_bytes": 5627,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=1&query=EXT_ID%3A20200043"
+    },
+    {
+      "id": "RAFFETTO2008",
+      "pmid": "18453484",
+      "doi": "10.1258/phleb.2007.007027",
+      "access": "résumé primaire EuropePMC/PubMed lu",
+      "verified": "pression/inflammation/remodelage comme modèle physiopathologique",
+      "response_sha256": "1c3a9ccf685bbe745e4e691879979cbcd2c1139433110cc88a462fcfd17900d1",
+      "response_bytes": 5700,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=1&query=EXT_ID%3A18453484"
+    },
+    {
+      "id": "LURIE2020",
+      "pmid": "32113854",
+      "doi": "10.1016/j.jvsv.2019.12.075",
+      "access": "résumé primaire EuropePMC/PubMed lu",
+      "verified": "ajout C4c corona et modificateur r ; pas certification notation typographique du cas",
+      "response_sha256": "f385faa53d71e05e9f009420eac2bc07581fdae489ee5455593a216acb090afd",
+      "response_bytes": 12671,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=1&query=EXT_ID%3A32113854"
+    },
+    {
+      "id": "AVF_NOTATION",
+      "url": "https://www.venousforum.org/wp-content/uploads/2022/02/3740-AVF-Venous-Workbook_notation.jpg",
+      "access": "HTTP403 : non lu ; pas certifié"
+    }
+  ],
+  "inventory": [
+    {
+      "target_path": "chapters/I83/I83_a.html",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_a.html",
+      "base_sha256": "1610615e2f39a888d4ccb46b46b56a4ea0c5195f19dfd8af68cac511f7f0ff76",
+      "proposed_sha256": "6e0e7dda96dc13d30fa3baa30846d45e2774e60a8eeed8b99690f0b015d6247f",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            179,
+            179
+          ],
+          "new_lines": [
+            179,
+            179
+          ],
+          "old_text": [
+            "Le membre gauche se décrit donc ainsi : C⁠2,3,4a,4c S, Ep, As,p, Pr. Les classes cliniques présentes sont les varices, l’œdème, la pigmentation avec eczéma et la corona phlebectatica, chez une patiente symptomatique. La cause est primitive, car le réseau profond est sain. L’atteinte est superficielle et perforante, et son mécanisme est un reflux, situé sur la grande saphène au-dessus et au-dessous du genou, sur une collatérale de jambe et sur une perforante jambière. Les altérations cutanées de classe C⁠4 placent Mme R. parmi les indications de traitement interventionnel, que discute l’îlot 10."
+          ],
+          "new_text": [
+            "Le membre gauche se décrit donc ainsi : C⁠2,3,4a,c (s), Ep, As,p, Pr. Les classes cliniques présentes sont les varices, l’œdème, la pigmentation avec eczéma et la corona phlebectatica, chez une patiente symptomatique. La cause est primitive, car le réseau profond est sain. L’atteinte est superficielle et perforante, et son mécanisme est un reflux, situé sur la grande saphène au-dessus et au-dessous du genou, sur une collatérale de jambe et sur une perforante jambière. Les altérations cutanées de classe C⁠4 placent Mme R. parmi les indications de traitement interventionnel, que discute l’îlot 10."
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    },
+    {
+      "target_path": "chapters/I83/I83_b.html",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_b.html",
+      "base_sha256": "d336d0b4e4977212ffa192fe2c57a535db54f288daa2ce014c022d513ed9da9a",
+      "proposed_sha256": "89971f9bde26e44390633e0ade8f3c9fabb6f021bb016b36ae31f8d311ac167f",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            12,
+            12
+          ],
+          "new_lines": [
+            12,
+            12
+          ],
+          "old_text": [
+            "Mme F., 86 ans, sous apixaban, saigne abondamment d’une varice de cheville sous la douche. Le geste vital est la compression de la jambe surélevée, non l’arrêt de l’anticoagulant : celui-ci prolonge le saignement mais n’en est pas la cause, et son arrêt exposerait à la thrombose qu’il prévient. Le médecin l’adresse le jour même pour une sclérothérapie à la mousse des veines qui ont saigné."
+          ],
+          "new_text": [
+            "Mme F., 86 ans, sous apixaban, saigne abondamment d’une varice de cheville sous la douche. Le geste vital est la compression de la jambe surélevée, non l’arrêt de l’anticoagulant : celui-ci prolonge le saignement mais n’en est pas la cause, et son arrêt exposerait à la thrombose qu’il prévient. Cette règle vaut pour un saignement que la compression arrête ; un saignement qui persiste malgré une compression bien faite, ou qui retentit sur l’état hémodynamique, relève de l’urgence, où l’interruption ou l’antagonisation de l’anticoagulant se décide au cas par cas. Le médecin l’adresse le jour même pour une sclérothérapie à la mousse des veines qui ont saigné."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            62,
+            62
+          ],
+          "new_lines": [
+            62,
+            62
+          ],
+          "old_text": [
+            "Le risque thromboembolique est évalué chez chaque patient (recommandation 25, I C), et la prophylaxie est individualisée (26, IIa B). Une dose systématique d’héparine de bas poids moléculaire à tous les patients n’est pas fondée sur les preuves ; une prophylaxie de 7 à 10 jours est réservée aux patients à risque élevé (antécédent de thrombose ou familial, thrombophilie, obésité, cancer, gestes associés). Un patient sous anticoagulant au long cours ne l’interrompt pas pour une ablation thermique (recommandation 94, III C) : dans la plus grande série citée, la saphène était fermée à 18 mois chez 92 % des patients sous antivitamine K et 95 % des témoins, sans excès de thrombose profonde, alors qu’une interruption l’exposerait au risque que l’anticoagulant prévient. Une compression postopératoire est envisagée (22, IIa A), puis un écho-Doppler entre une et quatre semaines vérifie l’occlusion et l’absence de thrombose (27, IIa C)."
+          ],
+          "new_text": [
+            "Le risque thromboembolique est évalué chez chaque patient (recommandation 25, I C), et la prophylaxie est individualisée (26, IIa B). Une dose systématique d’héparine de bas poids moléculaire à tous les patients n’est pas fondée sur les preuves ; une prophylaxie de 7 à 10 jours est réservée aux patients à risque élevé (antécédent de thrombose ou familial, thrombophilie, obésité, cancer, gestes associés). Un patient sous anticoagulant au long cours ne l’interrompt pas pour une ablation thermique (recommandation 94, III C) : dans la plus grande série citée, la saphène était fermée à 18 mois chez 92 % des patients sous antivitamine K et 95 % des témoins, sans excès de thrombose profonde, alors qu’une interruption l’exposerait au risque que l’anticoagulant prévient. Une compression postopératoire est envisagée (22, IIa A), puis l’ESVS 2022 suggère un écho-Doppler entre une et quatre semaines (27, IIa C), que les recommandations nord-américaines de 2023 réservent, après ablation thermique, au patient symptomatique ou à haut risque (îlot sur le suivi)."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            64,
+            64
+          ],
+          "new_lines": [
+            64,
+            64
+          ],
+          "old_text": [
+            "Après ablation thermique de la grande saphène, une thrombose induite par la chaleur (EHIT) survient dans 1,7 % des cas, une thrombose profonde dans 0,3 % et une embolie pulmonaire dans 0,1 %. L’EHIT est un thrombus né de la veine traitée qui s’avance vers la jonction ; sa conduite dépend de la part de la veine profonde qu’il occupe (classes et conduite). Selon les recommandations de l’American Venous Forum et de la Society for Vascular Surgery (Kabnick et al., 2021), la classe I, sans extension profonde, ne demande ni traitement ni surveillance (recommandation 3.2, grade 2C). La classe II, qui occupe moins de 50 % de la lumière profonde, relève d’une surveillance échographique hebdomadaire ; chez le patient à haut risque, un antiplaquettaire ou une anticoagulation préventive ou curative se discute (3.3, grade 2C). La classe III, qui occupe plus de 50 % de la lumière, reçoit une anticoagulation curative avec une échographie hebdomadaire, arrêtée quand le thrombus s’est rétracté jusqu’à la jonction ou a disparu (3.4, grade 1B). La classe IV, thrombus occlusif de la veine profonde, se traite comme une thrombose veineuse profonde provoquée, selon le risque hémorragique (3.5, grade 1A). La raison de cette gradation est mécanique : plus le thrombus s’engage dans la veine profonde, plus son extension et son embolisation deviennent possibles. Les autres complications sont des paresthésies par atteinte du nerf saphène à la jambe ou du nerf sural lors du traitement de la petite saphène sous la mi-mollet (recommandation 45, I B), des hématomes, une pigmentation et, exceptionnellement, une brûlure cutanée. La chirurgie ouverte donne plus d’hématomes, d’infections de plaie et de paresthésies que le laser."
+          ],
+          "new_text": [
+            "Après ablation thermique de la grande saphène, une extension du thrombus liée à l’ablation (ARTE, autrefois appelée EHIT) de classe II à IV survient dans 1,4 % des cas, une thrombose profonde dans 0,3 % et une embolie pulmonaire dans 0,1 %. L’ARTE est un thrombus né de la veine superficielle traitée, quelle que soit la technique d’ablation, qui s’avance jusqu’à la jonction ou dans la veine profonde ; elle garde les quatre classes de l’ancienne EHIT, selon la part de la lumière profonde occupée (classes et conduite). Selon les recommandations de la Society for Vascular Surgery, de l’American Venous Forum et de l’American Vein and Lymphatic Society (Gloviczki et al., 2023), un écho-Doppler précoce systématique n’est pas recommandé chez le patient asymptomatique à risque moyen après ablation thermique (recommandation 11.1.1, grade 1B) ; il l’est dès qu’un symptôme apparaît (11.1.4, grade 1A) et devrait être fait chez le patient asymptomatique à haut risque (11.1.3, consensus). Une ARTE symptomatique reçoit un anticoagulant oral direct plutôt qu’un antagoniste de la vitamine K (11.3.4, grade 1C). Une ARTE de classe III ou IV asymptomatique reçoit le même traitement (11.4.1, consensus), poursuivi jusqu’à la rétraction du thrombus ; la durée reste laissée au jugement du clinicien (11.4.2, consensus). La portée clinique de la classe I, et probablement de la classe II, est minime ; ces formes sont surtout découvertes par un écho-Doppler fait en l’absence de symptôme. La raison de cette gradation est mécanique : plus le thrombus s’engage dans la veine profonde, plus son extension et son embolisation deviennent possibles. Les autres complications sont des paresthésies par atteinte du nerf saphène à la jambe ou du nerf sural lors du traitement de la petite saphène sous la mi-mollet (recommandation 45, I B), des hématomes, une pigmentation et, exceptionnellement, une brûlure cutanée. La chirurgie ouverte donne plus d’hématomes, d’infections de plaie et de paresthésies que le laser."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            66,
+            66
+          ],
+          "new_lines": [
+            66,
+            66
+          ],
+          "old_text": [
+            "Mme R. présente un eczéma et une pigmentation (C⁠4a) causés par un reflux de la grande saphène : le traitement interventionnel est recommandé (recommandation 17). L’angiologue propose une ablation thermique endoveineuse de la grande saphène gauche, de la région du genou jusqu’à la jonction, en ambulatoire sous tumescence. L’ESVS fixe la longueur de l’ablation sur la collatérale qui reflue le plus bas, car une ablation trop courte expose à la réintervention ; sous le genou, l’ablation thermique expose toutefois à une lésion du nerf saphène (ESVS 2022, § 4.7.2). Chez Mme R., la collatérale variqueuse de jambe est retirée par phlébectomies dans le même temps, après décision partagée (recommandation 48), ce qui permet d’arrêter l’ablation au genou. La perforante de 4 mm n’est pas traitée d’emblée : la recommandation 50 réserve ce traitement aux classes C⁠4b à C⁠6, et une perforante qui reçoit le reflux d’une saphène redevient souvent continente quand ce reflux disparaît."
+          ],
+          "new_text": [
+            "Mme R. présente un eczéma et une pigmentation (C⁠4a) causés par un reflux de la grande saphène : le traitement interventionnel est recommandé (recommandation 17). L’angiologue propose une ablation thermique endoveineuse de la grande saphène gauche, de la région du genou jusqu’à la jonction, en ambulatoire sous tumescence. L’ESVS fixe la longueur de l’ablation sur la collatérale qui reflue le plus bas, car une ablation trop courte expose à la réintervention ; sous le genou, l’ablation thermique expose toutefois à une lésion du nerf saphène (ESVS 2022, § 4.7.2). Chez Mme R., la collatérale variqueuse de jambe est retirée par phlébectomies dans le même temps, après décision partagée (recommandation 48), ce qui permet d’arrêter l’ablation au genou. La perforante de 4 mm n’est pas traitée d’emblée : la recommandation 50 de l’ESVS 2022 indique seulement que ce traitement peut être envisagé (classe IIb, niveau C) pour une perforante incompétente isolée ou résiduelle, jugée significative, aux classes C⁠4b à C⁠6, et une perforante qui reçoit le reflux d’une saphène redevient souvent continente quand ce reflux disparaît."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            68,
+            68
+          ],
+          "new_lines": [
+            68,
+            68
+          ],
+          "old_text": [
+            "À retenir. Le reflux se traite quand il produit des varices symptomatiques ou des altérations cutanées, jamais sur une image isolée. L’ablation thermique endoveineuse est le premier choix pour les troncs saphènes ; la mousse convient aux troncs fins, aux collatérales et aux récidives tortueuses. Le traitement se fait en ambulatoire, sans interrompre un anticoagulant, et se contrôle par écho-Doppler à une à quatre semaines. L’ulcère, forme la plus grave, suit."
+          ],
+          "new_text": [
+            "À retenir. Le reflux se traite quand il produit des varices symptomatiques ou des altérations cutanées, jamais sur une image isolée. L’ablation thermique endoveineuse est le premier choix pour les troncs saphènes ; la mousse convient aux troncs fins, aux collatérales et aux récidives tortueuses. Le traitement se fait en ambulatoire, sans interrompre un anticoagulant, et le contrôle par écho-Doppler se décide selon les symptômes, le risque thromboembolique et la technique. L’ulcère, forme la plus grave, suit."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            108,
+            108
+          ],
+          "new_lines": [
+            108,
+            108
+          ],
+          "old_text": [
+            "Un écho-Doppler entre une et quatre semaines après l’ablation d’un tronc vérifie l’occlusion et recherche une thrombose (recommandation 27, IIa C). Ensuite, un nouvel examen n’est utile qu’en cas de récidive clinique. Un reflux découvert à l’écho-Doppler sans varice ni symptôme ne justifie pas de traitement : un reflux récidivant reste souvent infraclinique et ne devient parfois cliniquement significatif qu’après trois à cinq ans."
+          ],
+          "new_text": [
+            "Le contrôle échographique précoce après l’ablation d’un tronc fait l’objet d’une divergence. L’ESVS 2022 suggère un écho-Doppler entre une et quatre semaines pour vérifier l’occlusion et l’absence de thrombose profonde (recommandation 27, IIa C, consensus). Après ablation thermique, les recommandations nord-américaines de 2023 déconseillent cet examen systématique chez le patient asymptomatique à risque moyen (11.1.1, grade 1B), car les extensions ainsi découvertes sont surtout de classe I ou II, de portée clinique minime. Elles le recommandent chez le patient symptomatique, par exemple devant une douleur ou un œdème du membre (11.1.4, grade 1A), le prévoient chez le patient asymptomatique à haut risque (11.1.3, consensus) et l’admettent après une ablation non thermique (11.1.2, consensus). En pratique, un symptôme ou un risque thromboembolique élevé imposent l’examen ; chez les autres patients, il se décide selon la technique et le protocole local. Ensuite, pour la plupart des patients, un nouvel examen n’est utile qu’en cas de récidive clinique suspectée (ESVS 2022, § 4.1.7). Quatre situations font exception. Une extension du thrombus liée à l’ablation, quand elle est traitée, l’est jusqu’à la rétraction du thrombus (Gloviczki et al., 2023, 11.4.2), ce qui suppose un contrôle échographique ; une thrombose profonde découverte suit, elle, la conduite propre à son siège, à ses symptômes et à son risque d’extension (cours I80 — Thrombose veineuse profonde et thromboses veineuses (C-01-Cardiologie)). S’y ajoutent tout symptôme nouveau, comme une douleur ou un œdème du membre, et un traitement en plusieurs temps, comme une sclérothérapie par séances, où un écho-Doppler précède chaque nouvelle étape. Un reflux découvert à l’écho-Doppler sans varice ni symptôme ne justifie pas de traitement : un reflux récidivant reste souvent infraclinique et ne devient parfois cliniquement significatif qu’après trois à cinq ans."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            126,
+            126
+          ],
+          "new_lines": [
+            126,
+            126
+          ],
+          "old_text": [
+            "À retenir. Le contrôle par écho-Doppler se fait à une à quatre semaines, puis seulement devant une récidive clinique. La récidive vient d’une néovascularisation après chirurgie, d’une recanalisation après traitement endoveineux ou de la progression de la maladie ; elle se traite par voie endoveineuse ou par mousse. La grossesse se traite par compression et différé de l’intervention ; l’anticoagulant n’est pas interrompu. Les critères formels qui fondent ces décisions suivent."
+          ],
+          "new_text": [
+            "À retenir. Un écho-Doppler précoce s’impose devant un symptôme ou un risque thromboembolique élevé ; chez le patient asymptomatique à risque moyen, l’ESVS 2022 le suggère, et les recommandations nord-américaines de 2023 le déconseillent après ablation thermique. Ensuite, un examen se refait devant une récidive clinique suspectée, un symptôme nouveau, une extension du thrombus en cours de traitement, une thrombose profonde, qui suit sa propre conduite, ou avant chaque étape d’un traitement en plusieurs temps. La récidive vient d’une néovascularisation après chirurgie, d’une recanalisation après traitement endoveineux ou de la progression de la maladie ; elle se traite par voie endoveineuse ou par mousse. La grossesse se traite par compression et différé de l’intervention ; l’anticoagulant n’est pas interrompu. Les critères formels qui fondent ces décisions suivent."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            141,
+            141
+          ],
+          "new_lines": [
+            141,
+            141
+          ],
+          "old_text": [
+            "• Écho-Doppler à une à quatre semaines après ablation : occlusion, thrombose induite par la chaleur, thrombose profonde."
+          ],
+          "new_text": [
+            "• Écho-Doppler après ablation : indiqué devant un symptôme ou un haut risque thromboembolique ; suggéré à une à quatre semaines par l’ESVS 2022, déconseillé chez le patient asymptomatique à risque moyen après ablation thermique par les recommandations nord-américaines de 2023. Il vérifie l’occlusion et recherche une extension du thrombus liée à l’ablation ou une thrombose profonde."
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    },
+    {
+      "target_path": "chapters/I83/I83_c.html",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_c.html",
+      "base_sha256": "ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261",
+      "proposed_sha256": "dcb05b262008c05886dc16aa4438ffc2130304c16e4bb24ee5f7233d673cfc91",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            38,
+            38
+          ],
+          "new_lines": [
+            38,
+            38
+          ],
+          "old_text": [
+            "Une récidive a trois mécanismes principaux : recanalisation d’un tronc traité par voie endoveineuse, néovascularisation au pli de l’aine après chirurgie, ou incompétence nouvelle d’une veine saine auparavant, comme la saphène accessoire antérieure (§ 2.3.1.2). Chacun appelle un traitement différent. Après l’ablation d’un tronc, un écho-Doppler entre une et quatre semaines est raisonnable (recommandation 27, classe IIa). Il vérifie l’occlusion et recherche une thrombose induite par la chaleur (classes et conduite)."
+          ],
+          "new_text": [
+            "Une récidive a trois mécanismes principaux : recanalisation d’un tronc traité par voie endoveineuse, néovascularisation au pli de l’aine après chirurgie, ou incompétence nouvelle d’une veine saine auparavant, comme la saphène accessoire antérieure (§ 2.3.1.2). Chacun appelle un traitement différent. Après l’ablation d’un tronc, l’ESVS 2022 suggère un écho-Doppler entre une et quatre semaines (recommandation 27, classe IIa) ; après ablation thermique, les recommandations nord-américaines de 2023 le réservent au patient symptomatique ou à haut risque. Quand il est fait, il vérifie l’occlusion et recherche une extension du thrombus liée à l’ablation (classes et conduite)."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            43,
+            44
+          ],
+          "new_lines": [
+            43,
+            44
+          ],
+          "old_text": [
+            "La collatérale variqueuse de jambe naît du tronc incompétent et explique les varices visibles. La perforante de 4 mm, qui reflue 0,6 seconde sous la zone pigmentée, remplit les critères hémodynamiques de reflux et de calibre. L’ESVS ne la qualifie pourtant de perforante pathologique que sous un ulcère ouvert ou cicatrisé (classe C⁠5 ou C⁠6) : chez Mme R., classée C⁠4, elle n’est donc pas une cible de traitement, et sa continence se réévalue après le traitement du tronc. La petite saphène est continente, et l’ancienne thrombose superficielle n’a pas atteint le réseau profond. Le membre est noté As,p et Pr. Le compte rendu se complète d’une cartographie veineuse (contenu utile au geste).",
+            "À retenir. Le reflux se recherche debout, après provocation ; il est pathologique au-delà de 0,5 seconde en superficiel et de 1 seconde en profond. Le réseau profond se lit en premier. La source, le trajet, la limite inférieure et le diamètre guident le traitement, pas la durée du reflux. Avant de comprimer, il reste à connaître l’état artériel."
+          ],
+          "new_text": [
+            "La collatérale variqueuse de jambe naît du tronc incompétent et explique les varices visibles. La perforante de 4 mm, qui reflue 0,6 seconde sous la zone pigmentée, remplit les critères hémodynamiques de reflux et de calibre. Deux questions distinctes se posent. La première est descriptive : l’ESVS réserve l’appellation de perforante pathologique à une perforante située sous un ulcère ouvert ou cicatrisé (classe C⁠5 ou C⁠6). La seconde est thérapeutique : la recommandation 50 de l’ESVS 2022 indique que le traitement d’une perforante incompétente isolée ou résiduelle, jugée significative, peut être envisagé aux classes C⁠4b à C⁠6 (classe IIb, niveau C). Mme R. est classée C⁠4a et C⁠4c, sans lipodermatosclérose (C⁠4b) ni ulcère : sa perforante n’est donc pas une cible de traitement d’emblée, et sa continence se réévalue après le traitement du tronc. Ce n’est pas la classe C⁠4 en général qui écarte le geste, mais l’absence des sous-classes C⁠4b à C⁠6. La petite saphène est continente, et l’ancienne thrombose superficielle n’a pas atteint le réseau profond. Le membre est noté As,p et Pr. Le compte rendu se complète d’une cartographie veineuse (contenu utile au geste).",
+            "À retenir. Le reflux se recherche debout, après provocation ; il est pathologique au-delà de 0,5 seconde dans une veine superficielle ou une perforante, et de 1 seconde dans les veines fémorale commune, fémorale et poplitée. Le réseau profond se lit en premier. La source, le trajet, la limite inférieure et le diamètre guident le traitement, pas la durée du reflux. Avant de comprimer, il reste à connaître l’état artériel."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            189,
+            190
+          ],
+          "new_lines": [
+            189,
+            190
+          ],
+          "old_text": [
+            "Le débit de liquide qui quitte le capillaire s’écrit Jv = Kf × [(Pc − Pi) − σ × (πc − πi)]. Kf exprime la perméabilité de la paroi ; σ, sa capacité à retenir les protéines ; P et π, les pressions hydrostatique et oncotique dans le capillaire (c) et dans le tissu (i). Le drainage lymphatique évacue normalement le liquide filtré.",
+            "L’hypertension veineuse se transmet aux capillaires : Pc augmente, surtout debout. En fin de journée, la filtration dépasse le drainage lymphatique et un œdème apparaît à la cheville ; il diminue la nuit, jambes à l’horizontale. Avec le temps, l’inflammation augmente Kf et laisse fuir des protéines et des globules rouges. Chez Mme R., l’amlodipine élève Pc par l’autre extrémité du capillaire : elle dilate l’artériole précapillaire et transmet davantage de pression artérielle au capillaire. Les deux causes s’additionnent ; la conduite figure dans l’onglet Pharmacologie."
+          ],
+          "new_text": [
+            "Le débit de liquide qui quitte le capillaire s’écrit Jv = Kf × [(Pc − Pi) − σ × (πc − πi)]. Kf est le coefficient de filtration, produit de la conductivité hydraulique de la paroi par la surface d’échange ; σ, sa capacité à retenir les protéines ; P et π, les pressions hydrostatique et oncotique dans le capillaire (c) et dans le tissu (i). Le drainage lymphatique évacue normalement le liquide filtré. Cette forme classique simplifiée indique le sens des variations de filtration ; elle ne quantifie pas à elle seule l’œdème d’un patient (Levick et Michel, 2010).",
+            "L’hypertension veineuse se transmet aux capillaires : Pc augmente, surtout debout. En fin de journée, la filtration dépasse le drainage lymphatique et un œdème apparaît à la cheville ; il diminue la nuit, jambes à l’horizontale. Avec le temps, l’inflammation augmenterait Kf et diminuerait σ, de sorte que la paroi laisserait fuir davantage de liquide, puis des protéines et des globules rouges. Cette lecture est une inférence tirée de la physiologie microvasculaire générale ; elle n’a pas été mesurée directement dans la maladie veineuse chronique. Chez Mme R., l’amlodipine élève Pc par l’autre extrémité du capillaire : elle dilate l’artériole précapillaire et transmet davantage de pression artérielle au capillaire. Les deux causes s’additionnent ; la conduite figure dans l’onglet Pharmacologie."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            195,
+            195
+          ],
+          "new_lines": [
+            195,
+            195
+          ],
+          "old_text": [
+            "Science → examen. Le reflux n’apparaît que debout et après provocation. La pression réelle sous un bandage se mesure avec un capteur ; la palpation ne l’apprécie pas."
+          ],
+          "new_text": [
+            "Science → examen. Le reflux se recherche de préférence debout, avec une manœuvre de provocation adaptée au segment ; un examen couché peut le sous-estimer (ESVS 2022, § 2.3.1). La pression réelle sous un bandage se mesure avec un capteur ; la palpation ne l’apprécie pas."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            204,
+            204
+          ],
+          "new_lines": [
+            204,
+            204
+          ],
+          "old_text": [
+            "Les leucocytes activés libèrent des cytokines comme le TNF-α, des radicaux libres et des métalloprotéinases, dont la MMP-9, qui dégradent la matrice. Parmi les autres médiateurs décrits, le TGF-β stimule la synthèse de collagène et conduit à la fibrose de la lipodermatosclérose ; le VEGF augmente la perméabilité et la prolifération des capillaires. L’ESVS résume la séquence : dysfonction endothéliale, fuite liquidienne, médiateurs inflammatoires, migration cellulaire, puis fibrose, pigmentation et ulcère."
+          ],
+          "new_text": [
+            "Les leucocytes activés libèrent des cytokines comme le TNF-α, des radicaux libres et des métalloprotéinases, dont la MMP-9, qui dégradent la matrice. Parmi les autres médiateurs décrits, le TGF-β stimule la synthèse de collagène et participerait à la fibrose de la lipodermatosclérose ; le VEGF augmente la perméabilité et la prolifération des capillaires. L’ESVS résume la séquence : dysfonction endothéliale, fuite liquidienne, médiateurs inflammatoires, migration cellulaire, puis fibrose, pigmentation et ulcère."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            212,
+            212
+          ],
+          "new_lines": [
+            212,
+            212
+          ],
+          "old_text": [
+            "À retenir. Le cisaillement anormal active l’endothélium ; leucocytes, MMP, fer et TGF-β conduisent à la fibrose et à l’ulcère. Les manchons de fibrine sont une hypothèse discutée. La génétique explique pourquoi certaines personnes développent cette maladie plus que d’autres."
+          ],
+          "new_text": [
+            "À retenir. Selon le modèle inflammatoire, le cisaillement anormal active l’endothélium ; leucocytes, MMP et remodelage de la matrice participent à la fibrose et à l’ulcère. Le rôle propre de certains médiateurs, notamment du fer, reste imparfaitement établi, et plusieurs étapes ne sont démontrées que chez l’animal. Les manchons de fibrine sont une hypothèse discutée (Bergan et al., 2006 ; Raffetto et Khalil, 2008). La génétique explique pourquoi certaines personnes développent cette maladie plus que d’autres."
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    },
+    {
+      "target_path": "chapters/I83/I83_d.html",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_d.html",
+      "base_sha256": "72a6ddb28a8379f9ab54323d3323220e3f4f102129f1f948d5ccf8c58c5b0e06",
+      "proposed_sha256": "ab64dfd4b425bab4e4484c97654d924e990c66cdef4199f72df56616e7b7a446",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            75,
+            75
+          ],
+          "new_lines": [
+            75,
+            75
+          ],
+          "old_text": [
+            "Mme R. prend 10 mg d’amlodipine depuis un an et ses deux chevilles sont gonflées le soir. L’œdème gauche est plus marqué, avec 26 cm de circonférence contre 24 cm à droite, du côté du reflux saphène. Deux causes s’additionnent donc : l’amlodipine des deux côtés, le reflux à gauche. Le médecin traitant discute avec elle un autre antihypertenseur ou l’ajout d’un IEC ou d’un ARA, puis il mesure de nouveau les circonférences après quelques semaines. Chez Mme R., il remplace l’amlodipine par un antihypertenseur d’une autre classe ; l’œdème des chevilles disparaît à trois mois. La part de l’œdème qui persiste à gauche revient alors à la maladie veineuse."
+          ],
+          "new_text": [
+            "Mme R. prend 10 mg d’amlodipine depuis un an et ses deux chevilles sont gonflées le soir. L’œdème gauche est plus marqué, avec 26 cm de circonférence contre 24 cm à droite, du côté du reflux saphène. Deux causes s’additionnent donc : l’amlodipine des deux côtés, le reflux à gauche. Le médecin traitant discute avec elle un autre antihypertenseur ou l’ajout d’un IEC ou d’un ARA, puis il mesure de nouveau les circonférences après quelques semaines. Chez Mme R., il remplace l’amlodipine par un antihypertenseur d’une autre classe ; la composante bilatérale de l’œdème des chevilles a disparu à trois mois. La part qui persiste à gauche oriente alors vers la maladie veineuse, sans exclure une autre cause."
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    },
+    {
+      "target_path": "chapters/I83/I83_pop1.html",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop1.html",
+      "base_sha256": "a790feb6f96e5805da69f398daf23a617813424a44dad8d14d94e1b2348e36cd",
+      "proposed_sha256": "e6f2fc5b08771589ba7699b9106f30700b798ea23f2b10df5f293c082f0458f2",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            36,
+            36
+          ],
+          "new_lines": [
+            36,
+            36
+          ],
+          "old_text": [
+            "MécanismeLes capillaires s’allongent, se dilatent et deviennent tortueux ; la gravité de ces anomalies en capillaroscopie est corrélée à celle des lésions cutanées. L’endothélium exprime des molécules d’adhésion, retient des leucocytes et libère des médiateurs inflammatoires. Les hématies extravasées libèrent leur fer, stocké sous forme d’hémosidérine : la peau brunit et le fer entretient un stress oxydatif. Du fibrinogène fuit et forme des manchons de fibrine autour des capillaires. L’inflammation chronique aboutit à une fibrose du derme et de l’hypoderme, parfois à une calcification, puis à une perte d’intégrité de la peau."
+          ],
+          "new_text": [
+            "MécanismeLes capillaires s’allongent, se dilatent et deviennent tortueux ; la gravité de ces anomalies en capillaroscopie est corrélée à celle des lésions cutanées. L’endothélium exprime des molécules d’adhésion, retient des leucocytes et libère des médiateurs inflammatoires. Les hématies extravasées libèrent leur fer, stocké sous forme d’hémosidérine : la peau brunit et le fer pourrait entretenir un stress oxydatif. Du fibrinogène fuit et forme des manchons de fibrine autour des capillaires ; leur rôle dans l’ulcère reste une hypothèse discutée. L’inflammation chronique aboutit à une fibrose du derme et de l’hypoderme, parfois à une calcification, puis à une perte d’intégrité de la peau."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            96,
+            96
+          ],
+          "new_lines": [
+            96,
+            96
+          ],
+          "old_text": [
+            "Autres causesL’insuffisance cardiaque donne un œdème bilatéral avec dyspnée et turgescence jugulaire (cours I50 — Insuffisance cardiaque, C-01-Cardiologie). Une maladie rénale ou hépatique l’accompagne d’une protéinurie, d’une hypoalbuminémie ou d’une ascite. Le lymphœdème atteint le dos du pied et les orteils ; le signe de Stemmer, impossibilité de pincer la peau à la base du deuxième orteil, l’oriente. Le lipœdème est un dépôt graisseux symétrique et douloureux qui épargne le pied."
+          ],
+          "new_text": [
+            "Autres causesL’insuffisance cardiaque donne un œdème bilatéral avec dyspnée et turgescence jugulaire (cours I50 — Insuffisance cardiaque (C-01-Cardiologie)). Une maladie rénale ou hépatique l’accompagne d’une protéinurie, d’une hypoalbuminémie ou d’une ascite. Le lymphœdème atteint le dos du pied et les orteils ; le signe de Stemmer, impossibilité de pincer la peau à la base du deuxième orteil, l’oriente. Le lipœdème est un dépôt graisseux symétrique et douloureux qui épargne le pied."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            102,
+            102
+          ],
+          "new_lines": [
+            102,
+            102
+          ],
+          "old_text": [
+            "La maladie veineuse chronique va du symptôme sans signe à l’ulcère ; l’insuffisance veineuse chronique commence à l’œdème (C⁠3 à C⁠6).La CEAP décrit un membre : classes cliniques présentes, cause (Ep, Esi, Ese, Ec), site (As, Ad, Ap) et mécanisme (Pr, Po) ; les sous-classes C⁠4a, C⁠4b et C⁠4c ne se hiérarchisent pas. Le VCSS révisé suit l’évolution ; l’échelle de Villalta gradue le syndrome post-thrombotique.Le code I83.1 désigne la dermite de stase ; une thrombophlébite se code I80.0.Environ un adulte sur cinq a des varices ; l’ulcère actif touche moins de 1 % des adultes. Aucune donnée nationale suisse n’est disponible. La maladie progresse lentement : un tiers des varices non compliquées s’accompagnent de lésions cutanées après 13 ans.Le reflux ou l’obstruction empêche la marche d’abaisser la pression du pied (80 à 90 mmHg immobile, 20 à 30 mmHg à la marche). Cette hypertension veineuse ambulatoire atteint les capillaires et explique l’œdème, la pigmentation, la fibrose et l’ulcère.Les varices primitives dominent. Une thrombose antérieure est une cause démontrée ; l’obésité et la station debout sont des facteurs associés, dont le mécanisme hémodynamique est clair.L’anamnèse recherche une thrombose, un médicament œdématogène, une artériopathie et une insuffisance cardiaque. Les symptômes veineux s’aggravent le soir et cèdent à la marche ; la claudication veineuse évoque une obstruction proximale.L’examen se fait debout. La peau donne la classe ; des veines sus-pubiennes évoquent une obstruction iliaque.L’écho-Doppler complet debout est l’examen de référence : il retient un reflux superficiel au-delà de 0,5 s et profond au-delà de 1 s, puis aboutit à une cartographie. L’évaluation artérielle précède la compression.Le diagnostic différentiel élimine d’abord la thrombose profonde et l’artériopathie, puis les œdèmes cardiaque, rénal, hépatique et médicamenteux."
+          ],
+          "new_text": [
+            "La maladie veineuse chronique va du symptôme sans signe à l’ulcère ; l’insuffisance veineuse chronique commence à l’œdème (C⁠3 à C⁠6).La CEAP décrit un membre : classes cliniques présentes, cause (Ep, Esi, Ese, Ec), site (As, Ad, Ap) et mécanisme (Pr, Po) ; les sous-classes C⁠4a, C⁠4b et C⁠4c ne se hiérarchisent pas. Le VCSS révisé suit l’évolution ; l’échelle de Villalta gradue le syndrome post-thrombotique.Le code I83.1 désigne la dermite de stase ; une thrombophlébite se code I80.0.Environ un adulte sur cinq a des varices ; l’ulcère actif touche moins de 1 % des adultes. Aucune donnée nationale suisse n’est disponible. La maladie progresse lentement : un tiers des varices non compliquées s’accompagnent de lésions cutanées après 13 ans.Le reflux ou l’obstruction empêche la marche d’abaisser la pression du pied (80 à 90 mmHg immobile, 20 à 30 mmHg à la marche). Cette hypertension veineuse ambulatoire atteint les capillaires et explique l’œdème, la pigmentation, la fibrose et l’ulcère.Les varices primitives dominent. Une thrombose antérieure est une cause démontrée ; l’obésité et la station debout sont des facteurs associés, dont le mécanisme hémodynamique est clair.L’anamnèse recherche une thrombose, un médicament œdématogène, une artériopathie et une insuffisance cardiaque. Les symptômes veineux s’aggravent le soir et cèdent à la marche ; la claudication veineuse évoque une obstruction proximale.L’examen se fait debout. La peau donne la classe ; des veines sus-pubiennes évoquent une obstruction iliaque.L’écho-Doppler complet debout est l’examen de référence : il retient un reflux superficiel au-delà de 0,5 s et, dans les veines fémorale commune, fémorale et poplitée, au-delà de 1 s, puis aboutit à une cartographie. L’évaluation artérielle précède la compression.Le diagnostic différentiel élimine d’abord la thrombose profonde et l’artériopathie, puis les œdèmes cardiaque, rénal, hépatique et médicamenteux."
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    },
+    {
+      "target_path": "chapters/I83/I83_pop2.html",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop2.html",
+      "base_sha256": "e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55",
+      "proposed_sha256": "4f916835b5d8b92ce990f208416ef69678e7d8d85448004b21ab649e5102ba07",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            46,
+            47
+          ],
+          "new_lines": [
+            46,
+            47
+          ],
+          "old_text": [
+            "ComplicationsLa classification de l’American Venous Forum gradue l’EHIT de la classe I, thrombus sans extension profonde, à la classe II (moins de 50 % de la lumière profonde), III (plus de 50 %) et IV, thrombus occlusif de la veine profonde. Les EHIT de classes II à IV surviennent dans 1,4 % des ablations de la grande saphène. Les lasers à eau de 1 470 nm ou plus ont rendu plus rares paresthésies, pigmentation, hématome et brûlure cutanée.",
+            "Conduite devant une EHITLa classe I ne demande ni traitement ni surveillance (recommandation 3.2, grade 2C). La classe II ne reçoit pas de traitement systématique, mais une échographie hebdomadaire jusqu’à la résolution ; chez le patient à haut risque, un antiplaquettaire ou une anticoagulation préventive ou curative se discute, avec la même surveillance (3.3, grade 2C). La classe III reçoit une anticoagulation curative et une échographie hebdomadaire ; le traitement s’arrête quand le thrombus s’est rétracté jusqu’à la jonction ou a disparu (3.4, grade 1B). La classe IV se traite comme une thrombose veineuse profonde provoquée, de façon individualisée selon le risque hémorragique ; le texte cite trois mois d’anticoagulation (3.5, grade 1A). La règle suit la part de lumière profonde occupée : au-delà de la moitié, le thrombus non occlusif peut encore s’étendre et emboliser, et la régression fréquente des petites EHIT ne s’applique pas à lui. L’ESVS 2022 recommande aussi l’anticoagulation curative quand le thrombus occlut la veine fémorale commune."
+          ],
+          "new_text": [
+            "ComplicationsDepuis 2023, l’extension du thrombus liée à l’ablation (ARTE) remplace le terme EHIT et couvre toutes les techniques : chaleur, mousse, ablation mécanochimique et colle de cyanoacrylate. Elle garde les classes de l’American Venous Forum : classe I, thrombus qui atteint la jonction sans extension profonde ; classe II, moins de 50 % de la lumière profonde ; III, plus de 50 % ; IV, thrombus occlusif de la veine profonde. Les ARTE de classes II à IV surviennent dans 1,4 % des ablations de la grande saphène, et l’ensemble ARTE II à IV ou thrombose profonde dans 1,7 % (Gloviczki et al., 2023). Les lasers à eau de 1 470 nm ou plus ont rendu plus rares paresthésies, pigmentation, hématome et brûlure cutanée.",
+            "Conduite devant une ARTEUne ARTE symptomatique reçoit un anticoagulant oral direct plutôt qu’un antagoniste de la vitamine K (recommandation 11.3.4, grade 1C). Une ARTE de classe III ou IV asymptomatique reçoit le même traitement (11.4.1, consensus), poursuivi jusqu’à la rétraction du thrombus ; aucune dose ni durée fixe n’est donnée, la durée reste laissée au jugement du clinicien (11.4.2, consensus). Les conduites de 2021 pour les classes I et II, abstention en classe I et échographie hebdomadaire en classe II (Kabnick et al., 2021), s’appliquent rarement, car un écho-Doppler précoce systématique n’est plus recommandé chez le patient asymptomatique à risque moyen (11.1.1, grade 1B). Chez le patient à haut risque, une thromboprophylaxie médicamenteuse est suggérée (11.2.1, grade 2C). La règle suit la part de lumière profonde occupée : au-delà de la moitié, le thrombus non occlusif peut encore s’étendre et emboliser, alors que les petites extensions régressent souvent. L’ESVS 2022 recommande aussi l’anticoagulation curative quand le thrombus occlut la veine fémorale commune."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            82,
+            82
+          ],
+          "new_lines": [
+            82,
+            82
+          ],
+          "old_text": [
+            "Les soins locaux nettoient la plaie, retirent les tissus morts, gèrent l’exsudat, protègent la peau voisine et soulagent la douleur. Aucun pansement particulier n’a prouvé qu’il accélère la cicatrisation : c’est la compression et la suppression du reflux qui la font progresser."
+          ],
+          "new_text": [
+            "Les soins locaux nettoient la plaie, retirent les tissus morts, gèrent l’exsudat, protègent la peau voisine et soulagent la douleur. Aucun pansement particulier n’a montré de bénéfice fiable sur la cicatrisation complète ; deux produits l’augmentent peut-être, avec une certitude faible (rubrique Infection). Ce sont la compression et la suppression du reflux qui font progresser la cicatrisation."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            85,
+            86
+          ],
+          "new_lines": [
+            85,
+            86
+          ],
+          "old_text": [
+            "PansementsUne revue Cochrane de 59 essais ne montre la supériorité d’aucun pansement. Le choix suit donc l’exsudat : un pansement absorbant pour une plaie qui coule, un pansement qui maintient l’humidité pour une plaie sèche. La peau périlésionnelle, souvent eczémateuse, est protégée de la macération ; les topiques multiples exposent à des eczémas de contact.",
+            "InfectionLa colonisation bactérienne de surface est constante et sans signification. Un prélèvement systématique n’est pas utile. En l’absence d’infection clinique, ni antibiotique local ni antibiotique systémique ne sont recommandés (recommandation 67, III B). L’iode cadexomère (11 essais, rapport de risques 2,17) et les pansements à l’argent ont augmenté la proportion d’ulcères cicatrisés dans des méta-analyses ; leur effet sur le délai de cicatrisation n’est pas établi."
+          ],
+          "new_text": [
+            "PansementsUne revue Cochrane en réseau de 59 essais ne permet de désigner aucun pansement supérieur pour la cicatrisation complète, car les essais sont petits et la certitude des preuves est faible ou très faible. Seuls les pansements à l’argent montrent, face à un pansement non adhérent, une probabilité de cicatrisation plus élevée, avec une certitude modérée au sein d’un réseau de faible certitude. Le choix suit donc l’exsudat : un pansement absorbant pour une plaie qui coule, un pansement qui maintient l’humidité pour une plaie sèche. La peau périlésionnelle, souvent eczémateuse, est protégée de la macération ; les topiques multiples exposent à des eczémas de contact.",
+            "InfectionLa colonisation bactérienne de surface est constante et sans signification. Un prélèvement systématique n’est pas utile. En l’absence d’infection clinique, ni antibiotique local ni antibiotique systémique ne sont recommandés (recommandation 67, III B). Dans une revue Cochrane, l’iode cadexomère a augmenté la proportion d’ulcères complètement cicatrisés entre 4 et 12 semaines par rapport aux soins habituels, dans quatre essais anciens et de petite taille parmi les onze qui l’étudiaient (rapport de risques 2,17, intervalle de confiance à 95 % de 1,30 à 3,60 ; O’Meara et al., 2014). Le pansement à l’argent n’a montré un avantage que face à un pansement non adhérent, dans une méta-analyse en réseau de faible certitude (Norman et al., 2018). Aucun des deux ne remplace la compression."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            88,
+            88
+          ],
+          "new_lines": [
+            88,
+            88
+          ],
+          "old_text": [
+            "SourceDe Maeseneer et al., ESVS 2022, §§ 6.1.2, 6.1.3 et 6.2, recommandation 67."
+          ],
+          "new_text": [
+            "SourceDe Maeseneer et al., ESVS 2022, §§ 6.1.2, 6.1.3 et 6.2, recommandation 67 ; Norman et al., revue Cochrane des pansements et agents topiques de l’ulcère veineux, 2018."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            123,
+            123
+          ],
+          "new_lines": [
+            123,
+            123
+          ],
+          "old_text": [
+            "Une varice qui saigne se traite par jambe surélevée et pression, puis par orientation urgente et mousse locale.Une thrombose superficielle impose un écho-Doppler de tout le membre ; elle ne reçoit pas d’antibiotique, et une intervention superficielle aiguë n’est pas recommandée (classe III, niveau C), hormis l’évacuation d’un thrombus court de collatérale ; l’anticoagulation suit le cours I80 — Thrombose veineuse profonde et thromboses veineuses (C-01-Cardiologie) ; l’ablation du reflux se discute après trois mois.Un ulcère ne reçoit un antibiotique qu’en cas d’infection clinique.Le traitement conservateur abaisse la pression veineuse : marche, surélévation, perte de poids, compression.La compression vise au moins 15 mmHg pour les symptômes, 20 à 40 mmHg pour l’œdème et la peau, 40 mmHg ou plus pour l’ulcère ; elle ne prévient pas la progression.La pression de cheville et l’index se mesurent avant toute compression.Les veinotropes soulagent sans remplacer compression ni intervention.On traite les varices symptomatiques et les classes C⁠4 à C⁠6, jamais un reflux isolé ; un œdème isolé fait chercher une autre cause.L’ablation thermique est le premier choix des troncs saphènes ; la mousse est proposée de préférence pour les troncs de moins de 6 mm et pour les collatérales.L’intervention est ambulatoire, sous tumescence, sans interruption de l’anticoagulant ; la prophylaxie est individuelle ; un écho-Doppler suit à une à quatre semaines.L’EHIT survient dans 1,7 % des ablations de la grande saphène. La classe I ne se traite pas ; la classe II se surveille par échographie hebdomadaire, avec un traitement individualisé si le risque est élevé ; la classe III reçoit une anticoagulation curative et une échographie hebdomadaire jusqu’à rétraction ou résolution ; la classe IV se traite comme une thrombose profonde provoquée (Kabnick et al., 2021).En Suisse, l’ablation thermique est remboursée sous condition de formation ; l’ablation mécanochimique ne l’est pas."
+          ],
+          "new_text": [
+            "Une varice qui saigne se traite par jambe surélevée et pression, puis par orientation urgente et mousse locale.Une thrombose superficielle impose un écho-Doppler de tout le membre ; elle ne reçoit pas d’antibiotique, et une intervention superficielle aiguë n’est pas recommandée (classe III, niveau C), hormis l’évacuation d’un thrombus court de collatérale ; l’anticoagulation suit le cours I80 — Thrombose veineuse profonde et thromboses veineuses (C-01-Cardiologie) ; l’ablation du reflux se discute après trois mois.Un ulcère ne reçoit un antibiotique qu’en cas d’infection clinique.Le traitement conservateur abaisse la pression veineuse : marche, surélévation, perte de poids, compression.La compression vise au moins 15 mmHg pour les symptômes, 20 à 40 mmHg pour l’œdème et la peau, 40 mmHg ou plus pour l’ulcère ; elle ne prévient pas la progression.La pression de cheville et l’index se mesurent avant toute compression.Les veinotropes soulagent sans remplacer compression ni intervention.On traite les varices symptomatiques et les classes C⁠4 à C⁠6, jamais un reflux isolé ; un œdème isolé fait chercher une autre cause.L’ablation thermique est le premier choix des troncs saphènes ; la mousse est proposée de préférence pour les troncs de moins de 6 mm et pour les collatérales.L’intervention est ambulatoire, sous tumescence, sans interruption de l’anticoagulant ; la prophylaxie est individuelle ; l’écho-Doppler précoce s’impose devant un symptôme ou un haut risque, et sa place chez les autres patients diverge entre l’ESVS 2022, qui le suggère, et les recommandations nord-américaines de 2023, qui le déconseillent après ablation thermique.L’extension du thrombus liée à l’ablation (ARTE, ancienne EHIT) de classe II à IV survient dans 1,4 % des ablations de la grande saphène. Pas d’écho-Doppler précoce systématique chez le patient asymptomatique à risque moyen ; une ARTE symptomatique, ou de classe III ou IV, reçoit un anticoagulant oral direct jusqu’à la rétraction du thrombus (Gloviczki et al., 2023).En Suisse, l’ablation thermique est remboursée sous condition de formation ; l’ablation mécanochimique ne l’est pas."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            127,
+            127
+          ],
+          "new_lines": [
+            127,
+            127
+          ],
+          "old_text": [
+            "Tout ulcère de jambe exige la mesure de la pression de cheville et de l’index ; au-dessus de 0,8, la compression complète est possible.L’ulcère veineux guérit par une compression d’au moins 40 mmHg et une ablation endoveineuse dans les deux semaines (EVRA).La suppression du reflux superficiel réduit la récidive (ESCHAR) ; elle se fait même en présence d’un reflux profond associé.Il n’y a pas de compression soutenue sous 60 mmHg à la cheville, 30 mmHg à l’orteil ou un index de 0,6 ; l’ulcère mixte reçoit moins de 40 mmHg sous surveillance.Le syndrome post-thrombotique se diagnostique trois mois au moins après la thrombose ; Villalta 5 à 9 léger, 10 à 14 modéré, plus de 14 ou ulcère sévère.Un stent iliaque se pose seulement si les symptômes sont sévères, en équipe multidisciplinaire.Les varices pelviennes sans douleur pelvienne se traitent localement, sans embolisation première.La récidive vient de la néovascularisation, de la recanalisation ou de la progression ; elle se traite par voie endoveineuse ou mousse.Pendant la grossesse, la compression suffit ; l’intervention attend trois à six mois après l’accouchement.Le reflux est pathologique au-delà de 0,5 seconde en superficiel et de 1 seconde en profond."
+          ],
+          "new_text": [
+            "Tout ulcère de jambe exige la mesure de la pression de cheville et de l’index ; au-dessus de 0,8, la compression complète est possible.L’ulcère veineux guérit par une compression d’au moins 40 mmHg et une ablation endoveineuse dans les deux semaines (EVRA).La suppression du reflux superficiel réduit la récidive (ESCHAR) ; elle se fait même en présence d’un reflux profond associé.Il n’y a pas de compression soutenue sous 60 mmHg à la cheville, 30 mmHg à l’orteil ou un index de 0,6 ; l’ulcère mixte reçoit moins de 40 mmHg sous surveillance.Le syndrome post-thrombotique se diagnostique trois mois au moins après la thrombose ; Villalta 5 à 9 léger, 10 à 14 modéré, plus de 14 ou ulcère sévère.Un stent iliaque se pose seulement si les symptômes sont sévères, en équipe multidisciplinaire.Les varices pelviennes sans douleur pelvienne se traitent localement, sans embolisation première.La récidive vient de la néovascularisation, de la recanalisation ou de la progression ; elle se traite par voie endoveineuse ou mousse.Pendant la grossesse, la compression suffit ; l’intervention attend trois à six mois après l’accouchement.Le reflux est pathologique au-delà de 0,5 seconde dans une veine superficielle ou une perforante, et au-delà de 1 seconde dans les veines fémorale commune, fémorale et poplitée."
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    },
+    {
+      "target_path": "chapters/I83/I83_pop3.html",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/sources/chapters/I83/I83_pop3.html",
+      "base_sha256": "c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42",
+      "proposed_sha256": "f7625789422547b326444b5e7ec63fa6dc2b9fa448db9789574cae7a84c8548b",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            55,
+            55
+          ],
+          "new_lines": [
+            55,
+            55
+          ],
+          "old_text": [
+            "Association ou causeAprès ajustement sur les facteurs connus, la grande taille reste associée aux varices : rapport de risques instantanés de 1,74 entre le quartile le plus grand et le plus petit. La randomisation mendélienne utilise les variants qui déterminent la taille comme une répartition au hasard, à l’abri des facteurs de confusion ; elle soutient un rôle causal (Fukaya et al., 2018). Le mécanisme reste une hypothèse."
+          ],
+          "new_text": [
+            "Association ou causeAprès ajustement sur les facteurs connus, la grande taille reste associée aux varices : rapport de risques instantanés de 1,74 entre le quartile le plus grand et le plus petit. La randomisation mendélienne utilise des variants associés à la taille comme instruments : leur répartition à la conception ressemble à un tirage au sort. Sous ses hypothèses de validité, elle réduit certains biais de confusion et soutient un rôle causal (Fukaya et al., 2018). Une pléiotropie, c’est-à-dire un effet des mêmes variants par une autre voie, ou une structure de population peuvent limiter cette interprétation. Le mécanisme reste une hypothèse."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            62,
+            62
+          ],
+          "new_lines": [
+            62,
+            62
+          ],
+          "old_text": [
+            "L’écho-Doppler complet debout est l’examen de référence ; le Doppler de poche ne sert qu’à la pression de cheville.Le reflux est pathologique au-delà de 0,5 seconde dans les veines superficielles et de 1 seconde dans les veines profondes ; sa durée ne mesure pas la gravité.Le réseau profond se lit en premier ; la source, le trajet, la limite inférieure et le diamètre guident le geste, et la mousse est proposée de préférence pour les troncs de moins de 6 mm, sans interdiction au-delà.Toute compression soutenue exige un index de pression : pas de compression soutenue si l’index est inférieur à 0,6, la pression de cheville inférieure à 60 mmHg ou la pression d’orteil inférieure à 30 mmHg ; compression modifiée inférieure à 40 mmHg pour l’ulcère mixte.Le diabète impose la pression d’orteil, car la médiacalcose fausse l’index.Les indices d’obstruction proximale mènent à l’écho-Doppler abdominal, puis à l’IRM ou à la TDM si une intervention est envisagée.La biologie cherche une autre cause d’œdème, un frein à la cicatrisation ou une infection clinique ; pas de prélèvement bactériologique de routine.Un ulcère atypique ou qui ne cicatrise pas malgré un traitement bien conduit justifie une biopsie."
+          ],
+          "new_text": [
+            "L’écho-Doppler complet debout est l’examen de référence ; le Doppler de poche ne sert qu’à la pression de cheville.Le reflux est pathologique au-delà de 0,5 seconde dans les veines superficielles et perforantes, et de 1 seconde dans les veines fémorale commune, fémorale et poplitée ; sa durée ne mesure pas la gravité.Le réseau profond se lit en premier ; la source, le trajet, la limite inférieure et le diamètre guident le geste, et la mousse est proposée de préférence pour les troncs de moins de 6 mm, sans interdiction au-delà.Toute compression soutenue exige un index de pression : pas de compression soutenue si l’index est inférieur à 0,6, la pression de cheville inférieure à 60 mmHg ou la pression d’orteil inférieure à 30 mmHg ; compression modifiée inférieure à 40 mmHg pour l’ulcère mixte.Le diabète impose la pression d’orteil, car la médiacalcose fausse l’index.Les indices d’obstruction proximale mènent à l’écho-Doppler abdominal, puis à l’IRM ou à la TDM si une intervention est envisagée.La biologie cherche une autre cause d’œdème, un frein à la cicatrisation ou une infection clinique ; pas de prélèvement bactériologique de routine.Un ulcère atypique ou qui ne cicatrise pas malgré un traitement bien conduit justifie une biopsie."
+          ]
+        },
+        {
+          "operation": "replace",
+          "old_lines": [
+            67,
+            67
+          ],
+          "new_lines": [
+            67,
+            67
+          ],
+          "old_text": [
+            "Le tronc saphène, rectiligne et invisible, chemine dans son compartiment entre deux fascias ; les collatérales, tortueuses et visibles, sont au-dessus.La tumescence injectée dans le compartiment protège les tissus ; les nerfs saphène et sural longent les troncs à la jambe.La paroi variqueuse est remaniée par l’inflammation et les MMP ; elle ne redevient pas normale.Debout, la pression au pied vaut 80 à 90 mmHg ; la marche l’abaisse à 20 à 30 mmHg ; le reflux et l’obstruction empêchent cette baisse.L’excès de pression capillaire dépasse le drainage lymphatique : l’œdème apparaît le soir.Selon la loi de Laplace, la pression d’un bandage augmente quand le rayon diminue ; le rembourrage protège les reliefs osseux.Les matériaux inélastiques donnent une pression faible au repos et forte à la contraction.Endothélium activé, leucocytes, fer et TGF-β conduisent à la fibrose et à l’ulcère ; les manchons de fibrine sont une hypothèse discutée.Les varices communes sont polygéniques ; FOXC2 et PIK3CA illustrent les formes rares ; aucun test génétique n’est utile en pratique courante."
+          ],
+          "new_text": [
+            "Le tronc saphène, rectiligne et invisible, chemine dans son compartiment entre deux fascias ; les collatérales, tortueuses et visibles, sont au-dessus.La tumescence injectée dans le compartiment protège les tissus ; les nerfs saphène et sural longent les troncs à la jambe.La paroi variqueuse est remaniée par l’inflammation et les MMP ; elle ne redevient pas normale.Debout, la pression au pied vaut 80 à 90 mmHg ; la marche l’abaisse à 20 à 30 mmHg ; le reflux et l’obstruction empêchent cette baisse.L’excès de pression capillaire dépasse le drainage lymphatique : l’œdème apparaît le soir.Selon la loi de Laplace, la pression d’un bandage augmente quand le rayon diminue ; le rembourrage protège les reliefs osseux.Les matériaux inélastiques donnent une pression faible au repos et forte à la contraction.Selon le modèle inflammatoire, l’endothélium activé, les leucocytes et le remodelage de la matrice participent à la fibrose et à l’ulcère ; le rôle propre du fer reste imparfaitement établi, et les manchons de fibrine sont une hypothèse discutée.Les varices communes sont polygéniques ; FOXC2 et PIK3CA illustrent les formes rares ; aucun test génétique n’est utile en pratique courante."
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    },
+    {
+      "target_path": "glossary/i83.py",
+      "received_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/complements/glossary/i83.py",
+      "base_sha256": "b041af30d40c15eb16c0063dc7d83fa0a57c364608d36ccb38003bf2af7636b4",
+      "proposed_sha256": "57f76995115dff8e173023cce815b71a64c51b3aa1f879ab8990dc9d93f02974",
+      "changes": [
+        {
+          "operation": "replace",
+          "old_lines": [
+            7,
+            7
+          ],
+          "new_lines": [
+            7,
+            8
+          ],
+          "old_text": [
+            "a('EHIT', [('E', 'Endothermal (endothermique)'), ('H', 'Heat (par la chaleur)'), ('I', 'Induced (induite)'), ('T', 'Thrombosis (thrombose)')], 'Thrombose induite par la chaleur après ablation thermique endoveineuse', 'Thrombus qui prolonge la veine saphène traitée jusqu’à la jonction ou dans la veine profonde. Classification de l’American Venous Forum en quatre classes, de l’absence de propagation dans la veine profonde (classe I) au thrombus profond occlusif (classe IV). Fréquence d’environ 1,7 % après ablation de la grande saphène (méta-analyse citée par l’ESVS 2022) ; la classe IV relève d’une anticoagulation curative.', 'i83-thermique')"
+          ],
+          "new_text": [
+            "a('ARTE', [('A', 'Ablation'), ('R', 'Related (liée à)'), ('T', 'Thrombus'), ('E', 'Extension')], 'Extension du thrombus liée à l’ablation', 'Thrombus né de la veine superficielle traitée, quelle que soit la technique d’ablation (chaleur, mousse, ablation mécanochimique ou colle de cyanoacrylate), qui s’avance jusqu’à la jonction ou dans la veine profonde. Ce terme remplace EHIT depuis les recommandations de la Society for Vascular Surgery, de l’American Venous Forum et de l’American Vein and Lymphatic Society (Gloviczki et al., 2023). Il garde quatre classes : I, jusqu’à la jonction ; II, moins de 50 % de la lumière profonde ; III, plus de 50 % ; IV, thrombose profonde occlusive. Les classes II à IV surviennent après 1,4 % des ablations de la grande saphène. Une ARTE symptomatique, ou de classe III ou IV, reçoit un anticoagulant oral direct plutôt qu’un antagoniste de la vitamine K, jusqu’à la rétraction du thrombus (recommandations 11.3.4 et 11.4.1 à 11.4.2).', 'i83-thermique')",
+            "a('EHIT', [('E', 'Endovenous (endoveineuse)'), ('H', 'Heat (par la chaleur)'), ('I', 'Induced (induite)'), ('T', 'Thrombosis (thrombose)')], 'Thrombose endoveineuse induite par la chaleur (ancien terme)', 'Ancien nom de l’extension du thrombus après ablation thermique, remplacé en 2023 par ARTE, qui couvre aussi les techniques non thermiques (Gloviczki et al., 2023, recommandation 11.1.1). Les classes I à IV de l’American Venous Forum sont conservées sous le nouveau nom.', 'i83-thermique')"
+          ]
+        }
+      ],
+      "scope": "phrases modifiées uniquement"
+    }
+  ],
+  "limits": [
+    "L’AVF notation et certaines pages PMC ont répondu 403 ou CAPTCHA ; le statut HTTP200 ne suffit pas à lire un primaire. Le texte SVS a été obtenu indépendamment par le service officiel EuropePMC/EBI.",
+    "Les abstracts primaires Cochrane/Fukaya/Levick/Raffetto sont distingués du texte intégral. Les passages chiffrés modifiés sont directement présents dans ces abstracts.",
+    "I83_pop4.html et les preuves pharmacologiques suisses validées aux audits antérieurs ne changent pas dans ce lot et ne sont pas certifiés à nouveau.",
+    "Tout SHA postérieur demande sa propre comparaison ; aucune injection automatique."
+  ]
+}

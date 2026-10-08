@@ -1,3 +1,9 @@
+## 08.10.2026 14:12 Europe/Zurich — intégration sélective I83 v5 et production A41
+
+**I83 — Varices des membres inférieurs (C-01-Cardiologie)** : les huit sources figées `d5b46aa` sont injectées au commit `be34a74f31438c3800e569c1d94c1ecbadc6b6e9` après contre-audit médical favorable avec deux réserves mineures (aucune majeure/bloquante). 1 923 contrôles natifs, 72 S01, 41 routage et 118 unitaires passent ; la reconstruction canonique est identique au candidat testé. Publication GitHub/Pages en cours, aucune vérification distante revendiquée à ce stade. [Décision](reviews/2026-10-08/I83_HARMONISATION_V5/DECISION.md) · [Reçu](receipts/CLAUDE_I83_D5B46AA_HARMONISATION_INTEGRATION_2026-10-08.json). Les nuances terminologiques/statistiques sont transmises à Claude sur [PR12](https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6059272086).
+
+**A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : production parallèle des catégories de ce seul chapitre, avec un auteur par fichier réel. Les dix sources canoniques demeurent identiques à la base auditée `39b7ff0`. Les propositions, les lectures croisées et la recherche de références artérielles suisses précises se poursuivent ; aucun chapitre suivant Codex n’est ouvert. Les 11 fragments Claude et 10 Codex restent attribués en blocs entiers. La remise I89 de Claude est reçue/archivée, sans injection ni audit favorable revendiqué ici.
+
 ## Réception Claude I89 — tête 7775e6e, 8 octobre 2026
 
 La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) remet un lot complet I89 à la tête `7775e6e1544ca7753946921d3ec61a7dd45d1c65`, exactement basé sur `main` `918ef69a8526bf0be38ffdf4f88438ad61d9a8a7`. Les 24 originaux sont archivés sans modification ; les 11 propositions et les deux baselines de remplacement concordent.

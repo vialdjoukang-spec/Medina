@@ -1,7 +1,7 @@
 {
   "agent": "Codex",
-  "branche": "codex/decision-i83-20261008",
-  "mis_a_jour": "2026-10-08T10:19:47.314467+00:00",
+  "branche": "codex/a41-corrections-20261008",
+  "mis_a_jour": "2026-10-08T12:12:44.781973+00:00",
   "consigne": "docs/collaboration/CODEX_CHAINE_FRAGMENTS.md",
   "lots": [
     {
@@ -15,7 +15,7 @@
       "rapport": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md",
       "demande_lecture": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/DEMANDE_LECTURE_CROISEE_CLAUDE.md",
       "commit_a_examiner": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
-      "etat": "audit_de_base_claude_recu_corrections_majeures_a_traiter",
+      "etat": "corrections_parallelisees_dans_le_meme_chapitre_contrelecture_interne_en_cours",
       "correction_medicale_livree": false,
       "audit_claude_recu": true,
       "injectable": false,
@@ -30,7 +30,8 @@
         "majeures": 0,
         "mineures": 0,
         "redactionnelles": 0
-      }
+      },
+      "organisation_live": "docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/REPARTITION_CATEGORIES_ET_SUJETS.json"
     }
   ],
   "audits_de_claude": [
@@ -73,6 +74,24 @@
       "initial_source_commit": "6d5797c6a902e430cd9d3e9dd5159ec507a1476a",
       "initial_integration_commit": "bb3214d2f887068e669371b76509693ca63b5606",
       "notification_url": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6057649989"
+    },
+    {
+      "lot": "I83_HARMONISATION_V5",
+      "titre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+      "head_sha": "d5b46aa2502c91517f7f80c8ac158f42605257e8",
+      "etat": "sources_injectees_reconstruction_identique_et_118_tests_ok_publication_a_faire",
+      "integration_commit": "be34a74f31438c3800e569c1d94c1ecbadc6b6e9",
+      "recu": "docs/collaboration/receipts/CLAUDE_I83_D5B46AA_HARMONISATION_INTEGRATION_2026-10-08.json",
+      "audit_medical": "docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/AUDIT_MEDICAL.json",
+      "audit_technique": "docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/CONTROLE_TECHNIQUE.json",
+      "reserve_ids": [
+        "I83-V5-MIN-01",
+        "I83-V5-MIN-02"
+      ],
+      "injectable": false,
+      "sources_deja_injectees": true,
+      "publication_verified": false,
+      "completude_cim11": false
     }
   ],
   "veille": {
