@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête e2c023c : statut de la conduite intra-artérielle I83
+
+État : **reçu et archivé ; non injecté**. Trois objets, empreinte `ad301049…`. La proposition distingue correctement instruction de produit et recommandation fondée sur des essais ; l’avis vasculaire immédiat et le protocole local priment. Contrôles producteur non rejoués et audit exhaustif I83 toujours ouvert. [Rapport](reviews/2026-10-08/PR12_E2C023C_I83_INTRAARTERIELLE_STATUT/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête 6d5797c : présentations Rapidocain sans conservateur
 
 État : **reçu et archivé ; non injecté**. Quatre objets, empreinte `787fef70…`. La formulation ciblée concorde avec l’information professionnelle approuvée par Swissmedic publiée par Compendium ; la tumescence reste hors indication décrite, les contrôles producteur ne sont pas rejoués et l’audit exhaustif I83 reste ouvert. [Rapport](reviews/2026-10-08/PR12_6D5797C_I83_RAPIDOCAIN_PRESENTATIONS/RECEPTION.md).
