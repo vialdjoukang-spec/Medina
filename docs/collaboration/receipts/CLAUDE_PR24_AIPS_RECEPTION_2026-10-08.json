@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_PR24_AIPS_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "event_delivery_ids": [
+    "e5836180-c362-11f1-8852-22aaab6ef858",
+    "bae21280-c364-11f1-962e-36c0d467302e",
+    "32b8fa20-c366-11f1-9008-c0829d3aced3"
+  ],
+  "pull_request": {
+    "number": 24,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/24",
+    "state": "open",
+    "draft": false,
+    "mergeable": true,
+    "branch": "claude/cool-bohr-kcji9o",
+    "head_sha": "7abb39db158564b8c88455dad3e27ef70debb01a",
+    "base_sha": "23226e137615d62e3c110cb29b671b2783aeaed4"
+  },
+  "origin": {
+    "producer": "Claude",
+    "evidence": [
+      "branche claude/cool-bohr-kcji9o",
+      "commit Co-Authored-By Claude Sonnet 5.5",
+      "session Claude Code dans le message de commit",
+      "script tools/aips_to_fi.py et description de PR cohérente"
+    ]
+  },
+  "inventory": {
+    "changed_files": 4736,
+    "fi_directory_files": 4644,
+    "notices": 4643,
+    "index_files": 1,
+    "fi_directory_bytes": 190599010,
+    "fi_git_tree_sha1": "956db9109923347256b62d72f3224cd7aabee4ed",
+    "source_zip": {
+      "path": "AipsDownload_20261008.zip",
+      "already_present_on_main": true,
+      "bytes": 1437690,
+      "sha256": "9fd0c713e28cd0a9ff402d2f621b032e9086f2df150c63291ab721e6a06aaced",
+      "contents": ["AipsDownload_20261008.xml", "AIPS_Download.xsd"]
+    },
+    "key_sha256": {
+      "tools/aips_to_fi.py": "a1209bbbc3191286ad1e11cbc383a48e51a770dcbf87987d6dd8fe34c437d756",
+      "ref/fi/INDEX.md": "435d0aface34537938a0cb9633c84a7bda5c11baefe86a4d0ca84450028cbecf",
+      "CLAUDE.md": "5a553c7ac7457e94b5dc374da23d399b81423ce87ca7696cc9f102a38315e424",
+      ".gitignore": "34302b271f870bb93d306157c22f5d08e5ba4eacca3ffdff2a7e319aaa29e55d"
+    }
+  },
+  "controls": {
+    "executed": [
+      "inventaire Git et empreinte de l’arbre ref/fi",
+      "vérification de 4643 liens d’index uniques vers 4643 notices présentes",
+      "absence de lien manquant et de notice non indexée",
+      "compilation syntaxique Python de tools/aips_to_fi.py",
+      "confirmation de 45 entrées XXXX sans code ATC exploitable"
+    ],
+    "later_branch_commit": {
+      "sha": "7abb39db158564b8c88455dad3e27ef70debb01a",
+      "scope": "89 fichiers de politique des sources v2, garde-fou CI, crochets Git et pointeurs par chapitre ; la catégorie C internationale/classifications est annoncée utilisable en Suisse sans dérogation",
+      "decision": "inventorié séparément ; non reçu avec le corpus AIPS et non fusionné en bloc"
+    },
+    "failed_or_blocked": [
+      "reproduction de l’index impossible dans le runtime : dépendances bs4 et markdownify non déclarées ni installées",
+      "le script attend par défaut un XML sous ref/aips alors que le ZIP source est à la racine et doit être extrait manuellement",
+      "aucune validation médicale des DCI normalisées heuristiquement",
+      "trois FI sont déclarées inaccessibles par le producteur"
+    ]
+  },
+  "decision": {
+    "result": "spotted_inventory_only",
+    "received": false,
+    "integrated": false,
+    "published_to_main": false,
+    "reason": "Le corpus est volumineux, médicalement sensible et non reproductible dans l’environnement actuel sans dépendances ni étape d’extraction documentée. L’index DCI est heuristique et trois notices manquent. La tête actuelle ajoute en outre 89 fichiers transversaux de politique et de garde-fous, hors du corpus inventorié. La PR24 ne doit pas être fusionnée en bloc avant correction, séparation de portée et reproduction indépendante."
+  },
+  "status": {"spotted": true, "received": false, "integrated": false, "technically_verified": false, "published": "inventory documentation only"}
+}
