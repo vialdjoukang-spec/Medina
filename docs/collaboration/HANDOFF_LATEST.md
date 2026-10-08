@@ -1,3 +1,7 @@
+## I83 — simulation d’intégration sur main, tête d2a460f, 8 octobre 2026
+
+Claude rectifie un ancien contrôle S01 lancé sur une construction périmée et fournit une simulation basée sur `main` `625fddb` : 1 923 contrôles natifs I83 et 72 contrôles S01 déclarés sans erreur, avec 21 cours. Les journaux sont reçus et archivés. L’injection reste différée jusqu’à une contre-vérification technique indépendante et une décision sur les limites médicales maintenues par le rapport. [Rapport](reviews/2026-10-08/PR12_D2A460F_I83_SIMULATION_MAIN/RECEPTION.md).
+
 ## I83 — preuve Aethoxysklerol et contrôle v3, tête decef42, 8 octobre 2026
 
 La preuve documentaire demandée et un contrôle natif v3 sur l’empreinte courante d’**I83 — Varices des membres inférieurs (C-01-Cardiologie)** sont reçus. Le journal producteur déclare 1 923 contrôles, zéro échec, ordinateur et mobile. La réserve documentaire ciblée est levée au niveau du paquet ; l’injection reste différée jusqu’à une reconstruction et une vérification navigateur indépendantes de la version intégrée. [Rapport](reviews/2026-10-08/PR12_DECEF42_I83_PREUVE_CONTROLE/RECEPTION.md).

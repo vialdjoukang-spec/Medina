@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête d2a460f : simulation I83 sur main
+
+État : **reçu et archivé ; non injecté**. Simulation producteur sur `main` `625fddb`, 1 923 contrôles I83 et 72 contrôles S01 déclarés sans erreur ; ancien faux contrôle S01 rectifié. Contre-vérification indépendante et réserves médicales restantes empêchent encore l’injection. [Rapport](reviews/2026-10-08/PR12_D2A460F_I83_SIMULATION_MAIN/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête decef42 : preuve et contrôle I83 v3
 
 État : **reçu et archivé ; non injecté**. Preuve Aethoxysklerol avec extraits, empreinte et liens publics ; contrôle v3 sur la bonne empreinte, 1 923 contrôles déclarés sans échec. Reconstruction et navigateur indépendants de la version intégrée restent requis. [Rapport](reviews/2026-10-08/PR12_DECEF42_I83_PREUVE_CONTROLE/RECEPTION.md).
