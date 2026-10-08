@@ -1,3 +1,7 @@
+## I83 — preuve Aethoxysklerol et contrôle v3, tête decef42, 8 octobre 2026
+
+La preuve documentaire demandée et un contrôle natif v3 sur l’empreinte courante d’**I83 — Varices des membres inférieurs (C-01-Cardiologie)** sont reçus. Le journal producteur déclare 1 923 contrôles, zéro échec, ordinateur et mobile. La réserve documentaire ciblée est levée au niveau du paquet ; l’injection reste différée jusqu’à une reconstruction et une vérification navigateur indépendantes de la version intégrée. [Rapport](reviews/2026-10-08/PR12_DECEF42_I83_PREUVE_CONTROLE/RECEPTION.md).
+
 ## I83 — précision documentaire Aethoxysklerol, tête cdd2b72, 8 octobre 2026
 
 Le changement de `I83_pop4.html` précise la version suisse invoquée pour les durées de compression. Il est reçu et archivé, mais non injecté : le fichier primaire cité est absent de la branche et le contrôle natif v2 porte sur l’ancienne empreinte du fichier. [Rapport de réception](reviews/2026-10-08/PR12_CDD2B72_I83_COMPRESSION/RECEPTION.md).

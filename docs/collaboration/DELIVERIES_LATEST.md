@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête decef42 : preuve et contrôle I83 v3
+
+État : **reçu et archivé ; non injecté**. Preuve Aethoxysklerol avec extraits, empreinte et liens publics ; contrôle v3 sur la bonne empreinte, 1 923 contrôles déclarés sans échec. Reconstruction et navigateur indépendants de la version intégrée restent requis. [Rapport](reviews/2026-10-08/PR12_DECEF42_I83_PREUVE_CONTROLE/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête cdd2b72 : précision I83 Aethoxysklerol
 
 État : **reçu et archivé ; non injecté**. La version suisse est mieux identifiée, mais la source primaire citée n’est pas livrée et le contrôle natif v2 ne correspond plus à l’empreinte courante de `I83_pop4.html`. [Rapport](reviews/2026-10-08/PR12_CDD2B72_I83_COMPRESSION/RECEPTION.md).

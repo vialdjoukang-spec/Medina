@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "decef424278645067eeb04acc34faba32f81476f",
+  "previous_received_head": "cdd2b72cd7f21dc39c60d354a9ace725bccc9142",
+  "main_sha_at_reception": "d16331c2b049d2fe6d4ad9289609b42584efa853",
+  "received_at": "2026-10-08T00:32:06Z",
+  "origin": "Claude confirmé par branche, signature du commit, preuve I83 et contrôle natif v3",
+  "status": "reçu et archivé ; preuve documentaire et contrôle producteur courant présents ; injection différée faute de reconstruction et contrôle navigateur indépendants de la version intégrée",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_DECEF42_I83_PREUVE_CONTROLE",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "7525f3514ced205adcace24a20e537756886aa83",
+    "objects": 3
+  },
+  "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "evidence": {
+    "file": "PREUVE_AETHOXYSKLEROL_COMPRESSION.md",
+    "document": "Information professionnelle suisse Aethoxysklerol, français, autorisation Swissmedic 33273, novembre 2022",
+    "public_urls": [
+      "https://www.swissmedicinfo.ch",
+      "https://compendium.ch/fr/product/80113-aethoxysklerol-sol-inj-0-25"
+    ],
+    "local_work_copy_sha256": "7a8ad4fa77d5975471deb758624dbb9cc55101f090828da1c63acc7ac6f9dd4a",
+    "full_copy_versioned": false,
+    "verbatim_excerpts_present": true,
+    "targeted_documentary_reserve": "levée au niveau du paquet par version, autorisation, rubrique, extraits et liens publics ; pas de certification médicale exhaustive du cours"
+  },
+  "producer_control": {
+    "file": "controles/i83_native_results_v3.json",
+    "result": "passed",
+    "completed_at": "2026-10-08T00:31:42.246Z",
+    "declared_checks": 1923,
+    "declared_failures": 0,
+    "declared_errors": 0,
+    "viewports": [
+      1360,
+      390
+    ],
+    "windows": 47,
+    "current_pop4_sha256": "5df32abbd7a9c60ab3ae4769e32fba5c9fbd46de9acb41e241899514d6f237a7",
+    "inputs_match_current_sources": true,
+    "independently_rerun": false
+  },
+  "decision": "ne pas injecter la création directe I83 sans runtime indépendant permettant de reconstruire main, exécuter les tests et vérifier le navigateur ordinateur/mobile sur la version intégrée",
+  "checks_executed": [
+    "PR, tête Claude et tête main relues",
+    "delta cdd2b72..decef42 inventorié : trois fichiers",
+    "arbre récursif de la tête non tronqué",
+    "trois blobs archivés sans modification",
+    "preuve documentaire et liens publics inventoriés",
+    "JSON du contrôle v3 analysé",
+    "empreintes des huit sources du contrôle v3 comparées à la version reçue ; I83_pop4 correspond à 5df32abb…"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py ou injection directe I83",
+    "reconstruction indépendante sur main",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/PREUVE_AETHOXYSKLEROL_COMPRESSION.md",
+      "git_blob_sha": "02c093e7bc181071e0a5c3788a511ef74b643274",
+      "bytes": 2724,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_DECEF42_I83_PREUVE_CONTROLE/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/PREUVE_AETHOXYSKLEROL_COMPRESSION.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_results_v3.json",
+      "git_blob_sha": "7f57de51eef75f03d8517f79f109266741f9d69d",
+      "bytes": 230334,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_DECEF42_I83_PREUVE_CONTROLE/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_results_v3.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+      "git_blob_sha": "27bc874633e455c416a7eb1d6d624e9ad6068e69",
+      "bytes": 17503,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_DECEF42_I83_PREUVE_CONTROLE/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md"
+    }
+  ]
+}
