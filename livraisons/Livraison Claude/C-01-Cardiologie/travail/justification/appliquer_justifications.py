@@ -11,25 +11,31 @@ Usage : python3 appliquer_justifications.py <CODE> <dossier_resultats> [--ecrire
   out/<cle>[__Pn].json   {ancres_retirees:[{id}], label_modifies:[{id, label}]}.
 La base est la copie livrée par Claude si livraison.json la déclare, sinon la source canonique.
 Ordre : compléments du texte, mots verts, fenêtres, puis nettoyage des rubriques Source.
-Sans --ecrire, rien n'est écrit et le bilan est affiché.
+Sans --ecrire, rien n'est écrit et le bilan est affiché. --sur-livraison applique une passe supplémentaire
+(par exemple ESC 2026) sur une copie déjà livrée ; un fichier pop cible absent est créé.
 """
 import json
+import os
 import pathlib
 import re
 import sys
 
 ICI = pathlib.Path(__file__).resolve().parent
 LIVR = ICI.parents[1]
+# MEDINA_LOT désigne un dossier de lot (livraison.json + sources/) distinct du dossier du fragment.
+LIVR_LOT = pathlib.Path(os.environ["MEDINA_LOT"]).resolve() if os.environ.get("MEDINA_LOT") else LIVR
 DEPOT = LIVR.parents[2]
 
 NOM = r"(?:Mc|Mac|de |van der |van |Van )?[A-ZÀ-Ý][a-zà-ÿ’'\-]+(?:[ -][A-ZÀ-Ý][a-zà-ÿ’'\-]+)?"
-AUTEUR = NOM + r" [A-Z]{1,3}(?![\w])"
-LISTE = re.compile(rf"({NOM}) [A-Z]{{1,3}}(?:, {AUTEUR})+(?:,? et al\.?| et coll\.?)?")
-SEUL = re.compile(rf"({NOM}) [A-Z]{{1,3}}(?![\w’'])(?=[ ,.;:)])")
+# Initiales d'auteur : 1 à 3 majuscules suivies d'une virgule, d'un point, d'un point-virgule ou de « et al. ».
+# Un sigle suivi d'une année ou d'un mot (« ESC 2025 », « Eur Heart J 2024 », « N Engl J Med ») n'est jamais touché.
+INIT = r"(?!(?:ESC|ERC|EHRA|EACTS|ESVS|AHA|ACC|WHF|OMS|WHO|IDSA|NYHA|ASE|EAE|EACVI|HRS|SSC|FDA|EMA)\b)[A-Z]{1,3}(?=[,.;]|\s+et\s+(?:al|coll)\b)"
+LISTE = re.compile(rf"({NOM}) {INIT}(?:, {NOM} {INIT})+(?:,? et al\.?| et coll\.?)?")
+SEUL = re.compile(rf"({NOM}) {INIT}")
 
 
 def nettoyer_sources(texte):
-    """Retire les initiales d'auteurs, que l'audit des sigles refuse."""
+    """Retire les initiales d'auteurs, que l'audit des sigles refuse, sans toucher aux sigles ni aux revues."""
     def corrige(m):
         p = LISTE.sub(lambda x: x.group(1) + " et al.", m.group(2))
         p = SEUL.sub(lambda x: x.group(1), p)
@@ -49,17 +55,27 @@ def dans_balise(texte, pos):
 def main():
     code, res = sys.argv[1], pathlib.Path(sys.argv[2])
     ecrire = "--ecrire" in sys.argv
-    copies = LIVR / "sources" / "chapters" / code
+    copies = LIVR_LOT / "sources" / "chapters" / code
     canon = DEPOT / "chapters" / code
     noms = sorted(p.stem for p in canon.glob("*.html"))
-    declares = {r["target_path"] for r in json.loads((LIVR / "livraison.json").read_text())["files"]}
+    declares = {r["target_path"] for r in json.loads((LIVR_LOT / "livraison.json").read_text())["files"]}
 
     def lire(n):
         c = copies / f"{n}.html"
         livre = c.exists() and f"chapters/{code}/{n}.html" in declares
+        if not livre and not (canon / f"{n}.html").exists():
+            return c.read_text(encoding="utf-8") if c.exists() else ""
         return (c if livre else canon / f"{n}.html").read_text(encoding="utf-8")
 
+    sur_livraison = "--sur-livraison" in sys.argv
+    if ecrire and not sur_livraison and any(f"chapters/{code}/{n}.html" in declares for n in noms):
+        sys.exit(f"{code} est déjà livré : réappliquer doublerait les compléments. Repartir des sources canoniques.")
     textes = {n: lire(n) for n in noms}
+    for job in (res / "jobs").glob("*.json"):
+        cible = json.loads(job.read_text()).get("fichier_cible", "")
+        if cible and cible not in textes and re.fullmatch(rf"{code}_pop[\w]*", cible):
+            noms.append(cible)
+            textes[cible] = (copies / f"{cible}.html").read_text(encoding="utf-8") if (copies / f"{cible}.html").exists() else ""
     bilan = {"textes_appliques": 0, "textes_rejetes": 0, "textes_echecs": [], "ancres": 0,
              "ancres_retirees": 0, "ancres_echecs": [], "fenetres_creees": [], "fenetres_completees": [],
              "fenetres_echecs": []}
@@ -98,7 +114,7 @@ def main():
         if meta.get("fusionnee_dans"):
             bilan["fenetres_echecs"].append(tag + " fusionnée dans " + meta["fusionnee_dans"])
         retirees = {a["id"] for a in meta.get("ancres_retirees", [])}
-        labels = {a["id"]: a["label"] for a in meta.get("label_modifies", [])}
+        labels = {a["id"]: a.get("label") or a["nouveau"] for a in meta.get("label_modifies", [])}
         cible_cle = meta.get("fusionnee_dans") or cle
         for a in w["ancres"]:
             if a["id"] in retirees:
@@ -107,9 +123,13 @@ def main():
             label = labels.get(a["id"], a["label"])
             f = re.match(rf"{code}_[\w]+", a["file"]).group(0)
             t = textes[f]
-            debut = t.find(a["old"])
+            old = a["old"]
+            if a.get("new") and t.count(old) == 1:
+                t = t.replace(old, a["new"], 1)
+                old = a["new"]
+            debut = t.find(old)
             if debut != -1:
-                pos = t.find(label, debut, debut + len(a["old"]))
+                pos = t.find(label, debut, debut + len(old))
             else:
                 occ = [m.start() for m in re.finditer(re.escape(label), t)]
                 pos = occ[0] if len(occ) == 1 else -1

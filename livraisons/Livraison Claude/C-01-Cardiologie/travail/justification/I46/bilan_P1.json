@@ -1,0 +1,69 @@
+{
+ "producteur": "P1",
+ "cours": "I46 — Arrêt cardiaque",
+ "fichiers": [
+  "I46_a",
+  "I46_b",
+  "I46_pop1",
+  "I46_pop2",
+  "I46_pop3"
+ ],
+ "sources_principales": [
+  "ERC 2025 (Resuscitation 2025;215, suppl. 1) en texte intégral, version publiée par l’éditeur (métadonnées DOI contrôlées), déposée dans src/ : réanimation avancée (erc2025_als), réanimation de base (erc2025_bls), circonstances particulières (erc2025_special), épidémiologie (erc2025_epidemio), éthique (erc2025_ethics), systèmes (erc2025_systems), premiers secours (erc2025_firstaid), pédiatrie (erc2025_paed), résumé (erc2025_summary), avec extractions .txt (mise en page) et _flux.txt (texte continu).",
+  "ERC-ESICM 2025, soins post-réanimation (Nolan et al., Resuscitation 2025;215:110809), texte intégral dans src/ercesicm2025_postresus.pdf.",
+  "ESC 2022, arythmies ventriculaires et prévention de la mort subite (Zeppenfeld et al., Eur Heart J 2022;43:3997-4126), texte intégral dans src/esc2022_va.pdf.",
+  "Publications originales contrôlées sur PubMed : Hasselqvist-Ax 2015, Valenzuela 2000, Marijon 2016, Reinier 2023, Weil 1986, Paradis 1990, Ponte 2010 ; RCP britannique du gluconate de calcium 10 %."
+ ],
+ "affirmations_relevees": 108,
+ "complements": {
+  "total": 89,
+  "I46_a": 29,
+  "I46_b": 39,
+  "I46_pop1": 5,
+  "I46_pop2": 7,
+  "I46_pop3": 9
+ },
+ "fenetres_creees": [
+  "i46-pronostic (I46_pop1, ancre « facteurs connus dès les premières minutes » dans I46_a, îlot 2)"
+ ],
+ "fenetres_completees": [
+  "i46-ppc (mécanisme de la perfusion au relâchement, seuil nécessaire mais non suffisant, cible d’EtCO₂)",
+  "i46-s-temoin (déclencheurs des arythmies héréditaires, conséquences)",
+  "i46-atcd-medic (mécanismes : IKr, bloqueurs sodiques, dépresseurs respiratoires, diurétiques)"
+ ],
+ "erreurs_du_cours": [
+  "I46_a îlot 2 : chiffres EuReCa périmés (survie 8 à 10 %, de moins de 1 % à 25 %) ; l’ERC 2025 donne 55 arrêts traités pour 100 000 habitants par an (17 à 104) et une survie de 7,5 % en 2022 (3,1 à 35 %). « La réanimation par un témoin double à triple la survie » n’avait pas de source ; remplacé par le registre suédois (10,5 % contre 4,0 %, association ajustée). Même correction dans la fenêtre i46-eureca.",
+  "I46_a îlot 2 : arrêt intrahospitalier « 1 à 5 pour 1 000 admissions » et « survie 15 à 25 % » ; l’ERC 2025 donne 1,5 à 2,8 pour 1 000 et des survies à 30 jours d’environ 27 à 50 % dans les séries suédoises et danoises 2020-2024 (tableau 3).",
+  "I46_a îlot 2 : « chaque minute réduit la survie d’une FV de 7 à 10 % » est absent de l’ERC 2025 ; remplacé par la donnée ERC 2025 (chaque minute de retard au choc : +6 % d’échec du choc, −3 à 6 % de survie à la sortie).",
+  "I46_a îlot 3.2 : « deux minutes de compressions avant le choc redonnent de l’énergie au myocarde » était présenté comme un fait ; une RCP imposée de 1,5 à 3 minutes avant le premier choc ne fait pas mieux qu’un choc immédiat (ILCOR, ERC 2025).",
+  "I46_a îlot 5.3 : « les reconnaître permet de prévenir l’arrêt » surestimait les données ; remplacé par l’association observée par Marijon et al. (survie 32 % contre 6 % lorsque les secours sont appelés).",
+  "I46_b îlot 7.1 : le témoin appelait après avoir constaté une respiration anormale ; l’ERC 2025 fait appeler pour toute personne qui ne répond pas, puis évaluer la respiration pendant l’appel.",
+  "I46_b îlot 7.3, tableau : « planche ou matelas dégonflé » ; l’ERC 2025 ne recommande ni la planche ni le transfert au sol, active le mode réanimation du matelas et fait comprimer plus profondément.",
+  "I46_b îlot 7.4 : « survies de 50 à 70 % si choc dans les 3 à 5 minutes » (formule ERC 2021, absente de l’ERC 2025) remplacé par la source primaire (Valenzuela et al. 2000 : 74 % si choc en moins de 3 minutes, 49 % au-delà).",
+  "I46_b îlot 8.1 : les trois chocs successifs comptent comme premier choc pour l’adrénaline et aussi pour l’amiodarone (ERC 2025) ; l’amiodarone se donne que la FV soit persistante ou récidivante.",
+  "I46_b îlot 8.2 : « contrairement aux rythmes choquables, le bénéfice de l’adrénaline est d’autant plus grand qu’elle est précoce » n’est pas étayé ; remplacé par les méta-analyses (effet plus marqué dans les rythmes non choquables) et l’analyse temporelle de PARAMEDIC2.",
+  "I46_b îlot 9.3 : la règle des 20 minutes d’asystolie n’est pas seulement « formulée en 2021 » ; l’ERC 2025 (éthique) la maintient.",
+  "I46_b îlot 10.1 : la PAS > 100 mmHg vient de l’algorithme de réanimation avancée de l’ERC 2025, non de l’ERC-ESICM ; la cible de diurèse (> 0,5 mL/kg/h) a été précisée ; « hypo- et hyperglycémie sont neurotoxiques » reformulé (l’ERC-ESICM ne recommande pas de contrôle strict).",
+  "I46_b îlot 11, hypothermie : « adrénaline suspendue sous 30 °C » ; l’ERC 2025 admet une dose unique de 1 mg, sauf RCP extracorporelle imminente (P2 a corrigé de même i46-hypoth et i46-d-adre).",
+  "I46_pop1, i46-agonal : « un tiers à la moitié des victimes » ; l’ERC 2025 donne 30 à 60 %."
+ ],
+ "reserves": [
+  "Les PDF ERC 2025 proviennent d’un miroir (certifico.com) de la version publiée par Elsevier ; titre, revue et DOI des métadonnées concordent. Le PDF ESC 2022 provient du dépôt institutionnel de l’Université de Pavie (IRIS).",
+  "I46_a îlot 2 : « rythme initial choquable dans moins d’un cas sur cinq » pour l’arrêt intrahospitalier n’a pas été retrouvé dans l’ERC 2025 ; il est conservé tel quel.",
+  "I46_b figure 2 (algorithme de réanimation de base) : la première case « Inconscient et respiration absente ou anormale » précède l’appel ; l’ERC 2025 fait appeler dès l’absence de réponse. Le SVG n’a pas été modifié.",
+  "Pareto (I46_pop4, producteur P2) : « −7 à 10 % par minute » et « Europe ≈ 50–60/100 000, survie ≈ 8–10 % (1–25 %) » contredisent désormais le texte corrigé de l’îlot 2 ; à harmoniser par le vérificateur.",
+  "Étude néerlandaise des premiers répondants (survie 26 à 39 %) : l’ERC 2025 la dit randomisée en grappes par étapes dans le chapitre de réanimation de base et non randomisée dans le chapitre des systèmes ; le texte écrit « étude par étapes ».",
+  "Mécanismes de physiologie ou de pharmacologie classiques non énoncés tels quels dans les recommandations citées : perfusion coronaire au relâchement (i46-ppc), bascule de la tête et base de la langue, effet de l’adrénaline et de l’atropine sur la pupille, période réfractaire allongée par l’amiodarone, courant plus intense et masse dépolarisée, trajet du courant et électrode latérale trop antérieure (présenté au conditionnel).",
+  "Contenu en calcium (2,23 mmol par 10 mL de gluconate 10 %, 6,8 mmol par 10 mL de chlorure 10 %) tiré du résumé des caractéristiques du produit britannique ; le compendium suisse n’a pas été consulté.",
+  "Noms d’essais ou de registres cités dans les textes, déjà présents au glossaire I46 : BOX, PARAMEDIC2, EuReCa. « i-gel » est un nom de marque cité par l’ERC 2025.",
+  "Non justifiés faute de source primaire vérifiée : la raison des délais d’une heure et de 24 heures de la définition de la mort subite ; « un quart à un tiers du débit cardiaque » pendant les compressions ; « tachypnée, signe le plus prédictif » (i46-acih) ; la baisse de consommation d’oxygène de 6 à 7 % par degré (i46-ischcereb) et la vulnérabilité sélective de CA1 ; le relais du compresseur toutes les 2 minutes (absent du texte ERC 2025 consulté) ; l’ECG répété après 8 minutes (i46-ecg-post) ; les valeurs de lactate de 5 à 15 mmol/L ; l’impédance de 70 à 80 ohms ; la sonde enfoncée au-delà de 23 cm ; les données suisses (Swissreca, Fribourg, Ticino Cuore, Momentum).",
+  "Affirmations relevées mais laissées sans complément pour éviter une redite avec la fenêtre voisine : raison de la réanimation prolongée des intoxications (i46-intox), physiopathologie de la noyade (i46-noyade), remplissage de l’anaphylaxie (i46-anaph), signes précurseurs intrahospitaliers (i46-acih), essai ALPS (i46-d-lido)."
+ ],
+ "controles": {
+  "old_uniques": true,
+  "chevauchements": 0,
+  "balises_conservees": true,
+  "verifier_sigles": "{} sur les 4 fichiers out/*__P1.html et sur l’ensemble des textes new",
+  "essai_a_blanc_appliquer_justifications": "copie des sorties P1 avec verdicts simulés « accepter » : 89 compléments appliqués, 1 ancre posée, 1 fenêtre créée, 3 complétées, 0 échec"
+ }
+}

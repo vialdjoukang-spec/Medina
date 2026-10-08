@@ -1,0 +1,62 @@
+{
+ "producteur": "P1",
+ "cours": "I80 — Thrombose veineuse profonde et thromboses veineuses",
+ "fichiers": ["I80_a", "I80_b", "I80_c", "I80_d", "I80_pop", "I80_pop_sciences"],
+ "source_principale": "Recommandations ESVS 2021 sur les thromboses veineuses (Kakkos et al., Eur J Vasc Endovasc Surg 2021;61:9-82, doi:10.1016/j.ejvs.2020.09.023), texte intégral du dépôt institutionnel run.unl.pt, déposé dans src/esvs2021.pdf avec les extractions src/esvs2021.txt (mise en page) et src/esvs2021_flux.txt (texte continu) ; recommandations ESC 2019 sur l’embolie pulmonaire (Konstantinides et al., Eur Heart J 2020;41:543-603, doi:10.1093/eurheartj/ehz405), version publiée de l’archive ouverte de l’Université de Genève, dans src/esc2019_ep.pdf et ses extractions ; résumés européens des caractéristiques de Eliquis, Xarelto, Pradaxa et Lixiana (Agence européenne des médicaments) dans src/rcp_*.pdf et rcp_*.txt. Les recommandations ESC 2024 sur les maladies artérielles et aortiques périphériques ne traitent pas la thrombose veineuse et n’ont pas été utilisées.",
+ "affirmations_relevees": 140,
+ "detail_affirmations": "83 passages justifiés par un complément du texte ; environ 57 affirmations justifiées par les 13 fenêtres (signes cliniques, D-dimères, phlegmatia, durée et doses, antidotes, triade de Virchow, embolie, score de Wells, thrombopénie induite, syndrome post-thrombotique, fibrinolyse, thrombophilie).",
+ "complements": {"total": 83, "I80_a": 17, "I80_b": 33, "I80_c": 26, "I80_d": 5, "I80_pop": 2, "I80_pop_sciences": 0},
+ "fenetres_creees": [
+  "i80-ddimeres (I80_pop ; ancres « la thrombose est exclue » dans I80_a et « seuil ajusté à l’âge après 50 ans » dans I80_c)",
+  "i80-signes (I80_pop ; ancre « œdème unilatéral » dans I80_a)",
+  "i80-phlegmatia (I80_pop ; ancre « Phlegmatia cerulea dolens » dans I80_b)",
+  "i80-duree (I80_pop ; ancre « bénéfice contre risque hémorragique » dans I80_b)",
+  "i80-doses (I80_pop ; ancre « vérifier la fonction rénale et les interactions » dans I80_d)",
+  "i80-antidotes (I80_pop ; ancre « concentré de complexe prothrombinique » dans I80_d)"
+ ],
+ "fenetres_completees": [
+  "i80-virchow (ancre « triade de Virchow » dans I80_c)",
+  "i80-ep (ancres dans I80_a et I80_b)",
+  "i80-wells",
+  "i80-tih",
+  "i80-pompe (ancres dans I80_a, I80_b et I80_c)",
+  "i80-fibrinolyse",
+  "i80-test-thrombophilie (ancre « Recherche de thrombophilie » dans I80_b)"
+ ],
+ "erreurs_du_cours": [
+  "I80_a §1 : l’embolie silencieuse n’atteint pas « 50 % des thromboses proximales » ; l’ESVS 2021 (§2.2.3) donne 30 à 40 % des thromboses (jusqu’à 66 %), davantage si proximale, 13 % pour le mollet.",
+  "I80_a §1 (carte distale) : l’extension sans traitement n’est pas de 15 à 25 % ; l’ESVS 2021 (§2.9.1) cite environ 9 % d’extension à la poplitée et 1,5 % d’embolie.",
+  "I80_a §2 : la récidive après thrombose non provoquée est de 36 % à 10 ans (Khan et al., 2019), non 30 % ; après un facteur majeur comme la chirurgie, elle est de 0,7 % par an, non 3 % (3,3 % concerne l’ensemble des facteurs transitoires).",
+  "I80_a §4 : contraception combinée, risque multiplié par 2 à 6 (ESC 2019), non 3 à 6 ; grossesse, multiplié par 10 avant et 25 après l’accouchement (ESVS 2021), non 5 à 20 ; la prévalence « ≈ 5 % des Suisses » du facteur V Leiden, invérifiable, est remplacée par 5 à 10 % des populations d’origine européenne.",
+  "I80_b §8.1 : « repos au lit délétère » n’est pas démontré ; la méta-analyse de Liu et al. (2015) montre l’absence d’excès d’embolies avec la marche et un meilleur soulagement de la douleur.",
+  "I80_b §8.2 : le relais « par progestatif seul non oral » est trompeur ; la pilule progestative et le dispositif au lévonorgestrel n’augmentent pas le risque, le progestatif injectable l’augmente (risque relatif 2,67, Mantha et al., 2012).",
+  "I80_b §8.2 et I80_d : le dabigatran est contre-indiqué dès une clairance inférieure à 30 mL/min, non 15 (ESVS 2021 §4.6, résumé européen de Pradaxa).",
+  "I80_b §11 : la liste du score de Padoue omet l’infarctus et l’accident vasculaire cérébral ischémique aigus et ne donne pas les pondérations ; l’âge est « > 70 ans » dans la table de l’American Society of Hematology (le cours écrit ≥ 70 ans, non modifié).",
+  "I80_c §2 : les D-dimères deviennent faussement négatifs après 2 à 3 semaines de symptômes selon l’ESVS 2021, non 1 à 2 semaines ; la thrombose limitée au mollet est une autre cause de faux négatif.",
+  "I80_c quiz 2 : « la transfusion de plaquettes aggrave le risque thrombotique » est surévalué ; l’American Society of Hematology (2018, recommandation 3.6) la déconseille en routine sur des données de faible certitude.",
+  "I80_c Sciences : deux phrases de métadiscours (« Le lecteur suit… », « Le lecteur examine… ») sont réécrites dans les compléments correspondants."
+ ],
+ "reserves": [
+  "Les informations professionnelles suisses (compendium.ch) n’ont pas été consultées ; la mention « Doses selon les informations professionnelles suisses » de I80_d reste à vérifier. Les doses ont été contrôlées dans l’ESVS 2021 et les résumés européens.",
+  "Discordance entre sources : l’ESC 2019 (tableau 11) range œstrogènes et grossesse parmi les facteurs transitoires mineurs ; la note du tableau 4 de l’ESVS 2021 les place parmi les facteurs majeurs, et son tableau 15 parmi les risques faibles de récidive. Le cours suit l’ESC 2019.",
+  "Erreurs relevées dans l’ESVS 2021 elle-même, non reprises : fondaparinux « b.d. » dans le résumé de l’essai CALISTO (une injection par jour) ; variant G20210A décrit comme une substitution d’acides aminés (c’est une substitution nucléotidique de la région 3’ non traduite, Poort et al., 1996) ; seuil « > 15 » du score de Villalta.",
+  "Le texte intégral des recommandations de l’American Society of Hematology 2018 sur la thrombopénie induite a été lu par extraits (PubMed Central) : recommandations 1.1, 3.5 et 3.6 et leurs données.",
+  "Non justifiés faute de source vérifiée : le mécanisme du moindre risque d’hémorragie intracrânienne des anticoagulants oraux directs ; la durée de 10 à 35 jours de prophylaxie orthopédique (seules les durées de l’apixaban et du rivaroxaban figurent dans leurs résumés) ; « plus de 5 pour 1 000 après 80 ans » ; l’abandon du signe de Homans ; « presque toutes les thromboses associent au moins deux éléments » (fenêtre i80-virchow existante).",
+  "Mécanismes présentés comme incertains : hypoxie des poches valvulaires (Bovill et al., 2011), effet œstrogénique (Stanczyk et al., 2025), antipsychotiques (Barbui et al., 2014), sérotonine plaquettaire et ISRS (Mokhtarian et al., 2025), échec du rivaroxaban dans le syndrome des antiphospholipides.",
+  "Le calcul de la pression hydrostatique (environ 90 mmHg pour 1,2 m) et l’exemple de risque résiduel après D-dimères négatifs (0,6 % et 4,5 %) sont des calculs illustratifs, signalés comme tels.",
+  "Les noms d’essais hors glossaire (CLOT, TRAPS, PREPIC, CaVenT, Caravaggio, MEDENOX, extensions d’AMPLIFY et d’EINSTEIN, ANNEXA-4) ne sont pas écrits : les essais sont décrits en toutes lettres. Les noms SOME, ADJUST-PE, ATTRACT, CALISTO et EINSTEIN, présents au glossaire I80, sont cités ; « Palladio » est cité d’après l’ESVS 2021.",
+  "La référence « EASL 2022, Clinical practice guidelines on vascular diseases of the liver (2022 update) » de la bibliographie du cours semble confondre les recommandations EASL 2022 sur les hémorragies et thromboses de la cirrhose avec celles de 2016 (et de 2026) sur les maladies vasculaires du foie ; non modifiée.",
+  "Les compléments sur les thromboses splanchniques reposent sur Smalberg et al. (2012), Valla (2015, 2018) et Montes López et al. (2025) ; les recommandations EASL n’ont pas été accessibles en texte intégral.",
+  "La fenêtre i80-coag n’a pas été complétée : ses affirmations sont expliquées dans l’onglet Sciences (biochimie).",
+  "Les PDF des résumés européens ont été téléchargés depuis ema.europa.eu ; une copie identique de celui d’Eliquis existait dans le dossier de travail d’une autre session."
+ ],
+ "controles": {
+  "old_uniques": true,
+  "chevauchements": 0,
+  "balises_conservees": true,
+  "verifier_sigles": "{} sur les 13 fichiers out/*__P1.html, sur l’ensemble des textes new et sur le cours fusionné (6 fichiers)",
+  "essai_a_blanc_appliquer_justifications": "83 compléments appliqués, 14 ancres posées, 6 fenêtres créées, 7 complétées, 0 échec (verdicts « accepter » simulés dans le dossier temporaire)",
+  "controles_statiques_test_v7_reproduits": "clés de fenêtres présentes, préfixes conformes, classes de la liste fermée, aucun style en ligne",
+  "volume_mots": "7 292 mots avant, 14 174 après application intégrale"
+ }
+}

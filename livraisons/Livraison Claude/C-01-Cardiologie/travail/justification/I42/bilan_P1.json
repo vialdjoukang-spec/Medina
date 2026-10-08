@@ -1,0 +1,73 @@
+{
+ "producteur": "P1",
+ "cours": "I42 — Cardiomyopathies",
+ "fichiers": [
+  "I42_a",
+  "I42_b",
+  "I42_pop1",
+  "I42_pop2",
+  "I42_pop3"
+ ],
+ "source_principale": "Arbelo et al., 2023 ESC Guidelines for the management of cardiomyopathies, Eur Heart J 2023;44:3503-3626 (texte intégral, version finale, src/esc2023.pdf, esc2023.txt, esc2023_flux.txt, flat.txt)",
+ "affirmations_relevees": 86,
+ "complements": {
+  "I42_a": 31,
+  "I42_b": 27,
+  "I42_pop1": 5,
+  "I42_pop2": 9,
+  "I42_pop3": 1,
+  "total": 73
+ },
+ "fenetres_creees": [
+  "i42-cicatrice (I42_pop2, 4 ancres)",
+  "i42-fa (I42_pop2, 3 ancres)"
+ ],
+ "fenetres_completees": [
+  "i42-redflags (2 ancres)",
+  "i42-takotsubo (2 ancres)",
+  "i42-attr (1 ancre)"
+ ],
+ "ancres": 12,
+ "erreurs_du_cours": [
+  "I42_a îlot 7.3 : disopyramide « classe IIa » ; ESC 2023 (tableau de recommandations 19, figure 14) : classe I en association à un bêtabloquant (ou vérapamil/diltiazem), IIb en monothérapie. Corrigé (I42_a-21). La fenêtre i42-d-diso (I42_pop5, producteur P2) porte la même erreur et un seuil de QTc de 480 ms au lieu de 500 ms (note d du tableau 19).",
+  "I42_b îlot 10.2 : critères de défibrillateur de la CMAVD « FEVD ≤ 40 % ou FEVG ≤ 35 % » ; ESC 2023 (tableau de recommandations 29, note c) : syncope arythmique, TVNS, FEVD < 40 %, FEVG < 45 %, TV monomorphe inductible. Corrigé (I42_b-11).",
+  "I42_b îlot 10.2 : restriction de l’exercice dans la CMAVD « classe I » ; ESC 2023 (tableau de recommandations 31) : exercice modéré ou intense non recommandé chez le patient (classe III), éviter l’intensité élevée peut être envisagé chez le porteur sans phénotype (classe IIb). Corrigé (I42_b-8) ; tableau du sport et piège PKP2 de I42_a mis en cohérence (I42_a-30, I42_a-31).",
+  "I42_b îlot 10.2 : bêtabloquant « à envisager chez tous les patients (ESC 2023) » : absent de l’ESC 2023, qui le recommande seulement en cas d’arythmie ventriculaire (classe I). Corrigé (I42_b-9).",
+  "I42_a îlot 8.3 : critères de défibrillateur des génotypes à haut risque « FEVG < 50 % et deux facteurs de risque » attribués à l’ESC 2023 ; l’ESC 2023 (tableau de recommandations 24, tableau 21) retient FEVG > 35 % et facteurs propres au gène (IIa), IIb sans facteur. Corrigé (I42_a-28).",
+  "I42_a îlot 7.1 : seuil de 13 mm étendu « au porteur d’un variant pathogène » et score z « 2 ou 2,5 » chez l’enfant ; l’ESC 2023 formule 13 mm pour l’apparenté adulte du premier degré et un score z > 2. Corrigé (I42_a-18, I42_a-19).",
+  "I42_b îlot 11.1 : inhibiteurs calciques bradycardisants « contre-indiqués » dans l’amylose ; l’ESC 2023 (tableau 15, note f) dit qu’ils peuvent aggraver la fonction systolique : « à éviter ». Corrigé (I42_b-12).",
+  "I42_a îlot 8.2 et I42_pop2 i42-hcmrisk : rehaussement tardif « > 15 % » ; le tableau de recommandations 23 de l’ESC 2023 écrit « ≥ 15 % » (le texte ESC emploie aussi « > 15 % »). Harmonisé sur le tableau de recommandations (I42_a-26, I42_pop2-8). La fenêtre i42-irm (I42_pop4, P2) écrit « > 15 % ».",
+  "I42_b îlot 9.3 : TRED-HF « environ 40 % » ; publication : 11 des 25 patients (44 %). Précisé (I42_b-4).",
+  "I42_pop2 i42-srt : bloc auriculoventriculaire après alcoolisation « environ 10 % » ; ESC 2023 : 7 à 20 %. Corrigé (I42_pop2-6).",
+  "I42_pop1 i42-sarcomere : « Ils traitent le mécanisme de la maladie, et non seulement l’obstruction » laissait croire à un bénéfice hors obstruction, contredit par ODYSSEY-HCM cité dans le cours. Nuancé (I42_pop1-1)."
+ ],
+ "reserves": [
+  "ATTENTION COORDINATION : pendant la régénération des sorties (vers 20 h 40), j’ai vidé puis réécrit les dossiers I42/edits, I42/jobs et I42/out partagés avec le producteur P2. Si P2 y avait déjà déposé des fichiers (edits/I42_c.json, I42_d.json, I42_pop4-6.json, jobs/*__P2.json, out/*__P2.*), ils ont pu être supprimés. Au moment du contrôle, seuls mes fichiers P1 étaient présents ; src/ (dont les fichiers de P2) est intact. Vérifier auprès de P2 et lui faire régénérer ses sorties si nécessaire.",
+  "Aucun arbitrage Codex concernant I42 n’a été trouvé dans audits/MECANISMES_2026-10-07/CODEX_ARBITRAGES.md ni .json (seul I48 y figure). I42_c n’a pas été touché.",
+  "Résultats d’ODYSSEY-HCM (2025) et d’ACACIA-HCM (2026) repris tels que le cours les rapporte : non vérifiés en source primaire.",
+  "Critère LMNA « risque ≥ 10 % à 5 ans et TVNS, FEVG < 50 % ou trouble de conduction » et préférence pour un défibrillateur quand une stimulation est nécessaire (LMNA, sarcoïdose) : issus des recommandations ESC 2022 sur les arythmies ventriculaires, non relues en texte intégral ; l’ESC 2023 renvoie seulement au calculateur dédié.",
+  "Non vérifiés et laissés en l’état : « cause génétique chez 20 à 40 % des CMD », « environ 5 % de CMH en phase dilatée », « 5 à 10 % de phénocopies parmi les hypertrophies inexpliquées », « mortalité annuelle d’environ 1 % de la CMH traitée ».",
+  "Compléments de sémiologie (choc de pointe, quatrième bruit, souffles et manœuvres) fondés sur la physiologie classique, sans source primaire citée.",
+  "Mécanismes présentés comme hypothèses : Tako-tsubo β2-Gi (modèle murin, Paur et al.), fragment de prolactine dans la cardiomyopathie du péripartum (souris, Hilfiker-Kleiner et al.), lien enveloppe nucléaire-fibrose dans les laminopathies, « phases chaudes » des cardiomyopathies desmosomales.",
+  "Noms d’essais utilisés (DANISH, ODYSSEY-HCM, ATTR-ACT, TRED-HF) : acceptés par verifier_sigles.py ; « RESET-HCM » refusé et remplacé par « un essai randomisé » (Saberi et al.).",
+  "Les sources Ghadri et al. 2018 (consensus Tako-tsubo), Caforio et al. 2013, Reimer et al. 1977, Lerman et al. 1986, Regitz-Zagrosek et al. 2018, Pelliccia et al. 2021 et Zeppenfeld et al. 2022 ont été identifiées dans PubMed (références exactes) mais leur texte intégral n’a pas été relu ; les affirmations qui s’y appuient sont des notions consensuelles."
+ ],
+ "controles": {
+  "old_uniques": "73/73 compléments et 12/12 ancres présents une seule fois dans la source canonique, sans chevauchement ni bouton",
+  "verifier_sigles_new": "{}",
+  "verifier_sigles_out": {
+   "i42-cicatrice__P1.html": "{}",
+   "i42-fa__P1.html": "{}",
+   "i42-redflags__P1.html": "{}",
+   "i42-takotsubo__P1.html": "{}",
+   "i42-attr__P1.html": "{}"
+  },
+  "longueurs_fenetres_texte": {
+   "i42-cicatrice": 2811,
+   "i42-fa": 2810,
+   "i42-redflags (ajout)": 1943,
+   "i42-takotsubo (ajout)": 1574,
+   "i42-attr (ajout)": 1056
+  }
+ }
+}

@@ -10,6 +10,7 @@ Lis intégralement chaque fichier confié. Relève chaque affirmation médicale 
 - **Fenêtre**, si l'explication est longue ou sert à plusieurs endroits. Réutilise d'abord une fenêtre existante qui couvre le sujet (`grep -o 'data-pop="[^"]*" data-title="[^"]*"' chapters/<CODE>/*.html`) : action `completer`. Sinon, crée-en une : action `creer`, clé nouvelle `<code-minuscule>-<nom>`, absente du cours. Regroupe dans une même fenêtre les affirmations qui relèvent du même mécanisme.
 
 ## 3. Sorties (dans le dossier de résultats du cours)
+**Le dossier est partagé avec l'autre producteur : ne jamais vider ni supprimer un dossier ou un fichier qui ne porte pas ton suffixe ou ne correspond pas à tes fichiers confiés.**
 - `edits/<FICHIER>.json` (par exemple `edits/I30_a.json`) : liste `[{"id":"<FICHIER>-<n>", "old":…, "new":…, "source":…}]`.
   - `old` est un passage **exact** du fichier, présent **une seule fois**. Il est court : une phrase, une cellule ou un item ; il ne contient aucun bouton et ne chevauche aucun autre `old`.
   - `new` reprend `old` avec l'explication intégrée. Il garde toutes les balises de `old` et ne contient aucun bouton.

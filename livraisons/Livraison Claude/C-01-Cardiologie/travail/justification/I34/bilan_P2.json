@@ -1,0 +1,48 @@
+{
+ "producteur": "P2",
+ "cours": "I34 — Valvulopathies mitrales, tricuspides et pulmonaires",
+ "fichiers": ["I34_c", "I34_d", "I34_pop4", "I34_pop5", "I34_pop6"],
+ "affirmations_relevees": 95,
+ "complements": {"total": 88, "I34_c": 37, "I34_d": 19, "I34_pop4": 11, "I34_pop5": 13, "I34_pop6": 8},
+ "fenetres_creees": [
+  "i34-anticoag-valve (I34_pop6 ; ancres I34_d alerte « Aucun anticoagulant oral direct », I34_c cas 2 « Les AOD y sont contre-indiqués » ; renvoi vers i34-invictus)",
+  "i34-avk-interact (I34_pop6 ; ancres I34_d alerte des interactions, Pareto pharmacologie I34_pop5)"
+ ],
+ "fenetres_completees": [
+  "i34-marqueurs-imp (fenêtre créée par P1 dans I34_pop1) : rubrique « Sans aucun marqueur » et trois ancres (I34_c § 2.3, I34_c cas 1, I34_pop4 aide « 60 – 40 – 50 – 55 »)"
+ ],
+ "source_principale": "Praz et al., 2025 ESC/EACTS Guidelines for the management of valvular heart disease, Eur Heart J 2025;46:4635–4736, texte intégral téléchargé dans src/esc2025.pdf (102 pages), converti en src/esc2025.txt (mise en page) et src/esc2025_flow.txt (texte continu)",
+ "erreurs_du_cours": [
+  "I34_c cas 1 : réparation précoce « classe IIa » chez un patient asymptomatique sans aucun marqueur ; l’ESC/EACTS 2025 prévoit la surveillance semestrielle (figure 11). Réponse B et rétroaction corrigées ; la position américaine de 2020 est mentionnée.",
+  "I34_pop4 (aide « 60 – 40 – 50 – 55 ») et I34_pop5 (Pareto fuite primaire) : « moins de trois critères, classe IIa » ; en 2025, la IIa vaut pour la fibrillation due à la fuite ou une PAPs > 50 mmHg (chirurgie) et pour la dilatation auriculaire isolée (réparation en centre expert) ; une fuite tricuspide modérée isolée n’est pas un critère.",
+  "I34_d § 2 et I34_pop5 (Pareto pharmacologie) : cibles d’INR de la prothèse mécanique mitrale « 3,0 à 4,0 selon la thrombogénicité » (ESC 2021) ; table 10 de 2025 : 3,0 (2,5–3,5), ou 3,5 (3,0–4,0) avec facteur prothrombotique.",
+  "I34_d § 1 et § 2, I34_pop5 (suivi, pharmacologie) : « antivitamine K 3 mois après réparation (ESC 2021) » ; 2025 : antivitamine K ou AOD après réparation mitrale ou tricuspide (IIa B), antivitamine K après bioprothèse mitrale ou tricuspide (IIa B).",
+  "I34_pop5 (suivi) : « après TEER, acide acétylsalicylique quelques mois » ; l’ESC/EACTS 2025 décrit un antiagrégant unique au long cours ; après valve percutanée mitrale ou tricuspide, anticoagulation ≥ 6 mois ou à vie (pratique empirique).",
+  "I34_pop5 (Pareto fuite primaire) : « mortalité < 1 %, > 90 % sans réintervention à 10 ans » non retrouvés ; l’ESC/EACTS 2025 donne 1,2 % et 87,5 % sans fuite modérée ou sévère à 20 ans.",
+  "I34_pop5 (valves droites) : rétrécissement tricuspide « gradient moyen ≥ 5 mmHg » ; 2025 : > 5 mmHg à fréquence normale.",
+  "I34_pop5 (physiopathologie) : relation de Gorlin écrite « débit² / durée de diastole » ; corrigée en (débit / durée de diastole)².",
+  "I34_pop4 (grossesse) et I34_pop5 (situations particulières) : l’ESC/EACTS 2025 demande de corriger toute surface < 1,5 cm² avant la grossesse, même sans symptôme, et préfère la césarienne en cas de rétrécissement mitral serré, d’hypertension pulmonaire sévère ou de travail sous anticoagulant ; le cours suivait l’ESC 2018.",
+  "I34_c § 1 : bilan coronaire « selon l’âge et les facteurs de risque » ; 2025 : coroscanner si probabilité ≤ 50 %, coronarographie si > 50 % ou fuite mitrale secondaire ventriculaire sévère (classe I).",
+  "I34_c Sciences (sérotonine) : « tout nouveau médicament est désormais criblé pour son activité 5-HT2B avant sa mise sur le marché » non vérifiable ; reformulé d’après Rothman et al. (2000), qui ont proposé ce criblage.",
+  "I34_pop6 (i34-d-avk, surdosage) : « vitamine K orale à faible dose selon l’INR » ; 2025 : pas de bénéfice démontré entre 4,5 et 10, 2 à 3 mg par voie orale au-delà de 10 ; concentré de complexe prothrombinique préféré au plasma en cas d’hémorragie grave.",
+  "I34_d § 5 : « chercher un autre bradycardisant » ambigu ; précisé en « autre bradycardisant associé ».",
+  "Signalé, non modifié (fichier de P1) : la fenêtre i34-inr-prot (I34_pop3) garde les cibles d’INR de 2021 ; P1 l’a aussi relevé."
+ ],
+ "reserves": [
+  "Fenêtres en recouvrement possible : i34-anticoag-valve (P2) et i34-invictus (existante, complétée par P1) ; la fenêtre P2 résume INVICTUS en une phrase et renvoie vers i34-invictus. Le complément de i34-marqueurs-imp dépend de la fenêtre créée par P1.",
+  "Source consultée seulement par son résumé PubMed ou par sa notice : Gerber et al. 2009 (intervalle de trois semaines de la benzathine-benzylpénicilline, sélection de streptocoques moins sensibles sous pénicilline au long cours), Ansell et al. 2008 (cinétique des facteurs au début d’un antivitamine K), Weber 2001 (épuration hépatique de l’aldostérone), Dreyfus et al. 2005, Rudski et al. 2010, Lancellotti et al. 2022, Baumgartner et al. 2009, Friederich et al. 1995 : mécanismes classiques, à recouper sur le texte intégral.",
+  "Seuils américains de 2020 cités dans la rétroaction du cas 1 (probabilité de réparation durable > 95 %, mortalité attendue < 1 %) : repris de mémoire du texte d’Otto et al., non revus dans le texte intégral.",
+  "Recommandations ESC 2018 et 2025 sur la grossesse et ESC 2020 sur les cardiopathies congénitales de l’adulte non téléchargées : les énoncés qui leur sont attribués par le cours (seuils 1,0 et 1,5 cm², césarienne en 2018, rétrécissement pulmonaire, Ebstein) n’ont pas été contrôlés dans le texte intégral.",
+  "compendium.ch non consulté : interruption de la phenprocoumone sept à dix jours avant chirurgie, posologies du tableau § 3 et effets indésirables des analogues de la somatostatine restent à vérifier dans l’information professionnelle suisse.",
+  "Non vérifié et laissé en place : essai MATTERHORN « 210 patients » (i34-matterhorn), posologies du nitroprussiate et de la nitroglycérine (i34-d-nitro), seuil « TAPSE < 17 mm » (figure 15 de l’ESC 2025 non lisible en texte).",
+  "Les Pareto ne reçoivent que des corrections et des pourquoi d’une demi-phrase, pour garder leur format de synthèse.",
+  "Aucune donnée personnelle n’a été transmise à un service externe ; les recherches bibliographiques ont utilisé OpenAlex, Semantic Scholar, Europe PMC et PubMed sans adresse ni identifiant."
+ ],
+ "controles": {
+  "old_uniques": "88/88 compléments et 7/7 ancres présents une seule fois dans la base (copie livrée pour I34_c, source canonique ailleurs)",
+  "chevauchements": "aucun",
+  "balises": "balises de chaque old conservées dans new ; HTML équilibré",
+  "verifier_sigles": "{} sur tous les new et sur les trois fichiers out/*__P2.html",
+  "essai_a_blanc": "appliquer_justifications.py sur une copie, tous verdicts « accepter » (P1 + P2) : 158 compléments appliqués, 11 ancres, 4 fenêtres créées, 2 complétées, aucun échec"
+ }
+}

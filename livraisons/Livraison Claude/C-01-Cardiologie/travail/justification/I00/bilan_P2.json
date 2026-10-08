@@ -1,0 +1,60 @@
+{
+ "producteur": "P2",
+ "cours": "I00 — Rhumatisme articulaire aigu",
+ "fichiers": [
+  "I00_c",
+  "I00_d",
+  "I00_pop4",
+  "I00_pop5",
+  "I00_pop6"
+ ],
+ "affirmations_relevees": 88,
+ "complements": {
+  "total": 79,
+  "I00_c": 25,
+  "I00_d": 30,
+  "I00_pop4": 3,
+  "I00_pop5": 19,
+  "I00_pop6": 2
+ },
+ "fenetres_creees": [
+  "i00-crp-vs (cible I00_pop3, 4 ancres)",
+  "i00-bpg-vagal (cible I00_pop5, 2 ancres)"
+ ],
+ "fenetres_completees": [
+  "i00-d-bpg (1 ancre depuis le Pareto)",
+  "i00-mnemo-duree (1 ancre depuis le quiz)"
+ ],
+ "fenetres_fusionnees": [
+  "i00-v-fc__P2 fusionnée dans i00-v-fc : le complément P1 couvre le mécanisme ; seule l’ancre de l’onglet Examens est gardée"
+ ],
+ "ancres": 9,
+ "erreurs_du_cours": [
+  "Durée des anti-inflammatoires « jusqu’à normalisation de la CRP » : les recommandations australiennes 2025 indiquent qu’aucun seuil de CRP ou de vitesse de sédimentation n’est validé pour l’arrêt ; corrigé dans I00_d, I00_pop5, I00_pop6. La même formule subsiste dans I00_b (fichier P1, non traité).",
+  "Acide acétylsalicylique : « maximum 4 g/jour ; revenir à 50–60 mg/kg/jour » ; la source donne 4 à 8 g/jour chez l’adulte et une réduction à 60–70 mg/kg/jour ; corrigé dans I00_d et I00_pop5.",
+  "Acide valproïque dans la chorée : 15–30 mg/kg/jour en 2 à 3 prises ; la source donne 7,5–10 mg/kg par prise deux fois par jour (maximum 500 mg par prise), et carbamazépine en deux prises (maximum 200 mg par prise) ; la carbamazépine y est le premier choix ; corrigé dans I00_d, I00_pop5, I00_pop6.",
+  "Seuil de poids de la pénicilline G benzathine attribué à l’OMS (30 kg) : 27 kg selon l’OMS 2001, l’AHA 2009 et l’IDSA 2012 ; 30 kg est le seuil néo-zélandais, 20 kg l’australien ; attribution corrigée dans I00_d et I00_pop5, valeur de 30 kg conservée dans les tableaux.",
+  "Exanthème sous amoxicilline « quasi constant » dans la mononucléose : environ 30 % dans une série pédiatrique récente (Chovel-Sella et al., 2013) ; corrigé dans I00_pop5.",
+  "Absence de résistance du streptocoque à la pénicilline expliquée par un mécanisme non démontré ; la raison n’est pas entièrement comprise et des mutations de la protéine de liaison 2x réduisant modestement la sensibilité sont décrites (Vannice et al., 2020) ; corrigé dans I00_c.",
+  "Critères allégés de la récidive attribués à la mémoire immunitaire ; leur justification est la forte probabilité de récidive chez un patient déjà atteint (AHA 2015) ; corrigé dans I00_c.",
+  "Corticoïdes : décroissance « sur plusieurs semaines » précisée (arrêt direct si une semaine ou moins, sinon baisse de 20 à 25 % par semaine) ; durée des antichoréiques précisée (2 à 4 semaines après disparition de la chorée)."
+ ],
+ "reserves": [
+  "Textes intégraux de l’AHA 2015 (Gewitz et al.) et de l’AHA 2009 (Gerber et al.) inaccessibles (refus 403) : les affirmations qui leur sont rattachées ont été contrôlées dans l’IDSA 2012 (texte PMC), les recommandations australiennes 2025, l’OMS 2024, la WHF 2023 ou les résumés PubMed.",
+  "Les recommandations australiennes consultées sont l’édition 3.3 d’août 2025 ; le cours cite l’édition 2020. Les doses ont été alignées sur l’édition 2025 et la mention de l’édition a été adaptée.",
+  "Mécanismes de manuel cités sans consultation du texte : Murray (streptolysine S), Goodman et Gilman (salicylisme, induction enzymatique, pénicilline temps-dépendante), Guyton et Hall. Recommandations ESC 2015 (péricarde), 2021 (insuffisance cardiaque), 2023 (endocardite) et 2024 (fibrillation auriculaire) : existence vérifiée sur PubMed, citées pour des mécanismes généraux sans chiffre.",
+  "Communication de la Food and Drug Administration du 15 octobre 2020 sur les anti-inflammatoires après 20 semaines de grossesse : non téléchargée, citée sur la base de sa teneur connue.",
+  "Fenêtre i00-crp-vs créée dans I00_pop3, fichier du producteur P1, par cohérence de thème ; ajout en fin de fichier seulement.",
+  "Le complément P2 du tableau de Doppler (seuil de 1,5 cm sous 30 kg) a été retiré, car le complément P1 de i00-whf l’explique déjà ; le complément sur l’allongement du PR a été réduit à la règle de non-double comptage, l’absence de spécificité étant traitée par P1 dans i00-pr.",
+  "Le quiz, cas 3 (complément P2) et le complément P1 de i00-whf évoquent tous deux l’essai GOAL au stade A : redite légère à arbitrer par le vérificateur.",
+  "Sources téléchargées dans I00/src/ : australie2025.pdf/.txt (guide complet, 291 pages) et australie2025_cles.pdf/.txt (informations clés) ; who2024 et whf2023 y avaient été déposés par P1."
+ ],
+ "controles": {
+  "old_uniques": "oui (79/79)",
+  "chevauchements": "aucun",
+  "balises_conservees": "oui",
+  "verifier_sigles_out": "{} pour les 5 fichiers",
+  "verifier_sigles_new": "{}",
+  "simulation_P1_plus_P2": "toutes les éditions et ancres s’appliquent ; audit du cours complet {}"
+ }
+}

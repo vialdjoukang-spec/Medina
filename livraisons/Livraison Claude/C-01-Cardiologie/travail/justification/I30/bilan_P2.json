@@ -1,0 +1,72 @@
+{
+ "producteur": "P2",
+ "cours": "I30 — Péricardites, épanchement péricardique, tamponnade et constriction",
+ "fichiers": [
+  "I30_c",
+  "I30_d",
+  "I30_pop4",
+  "I30_pop5",
+  "I30_pop6"
+ ],
+ "source_principale": "ESC 2025 sur les myocardites et péricardites, texte intégral dans src/esc2025.pdf (90 pages, doi:10.1093/eurheartj/ehaf192)",
+ "affirmations_relevees": 131,
+ "detail_affirmations": {
+  "traitees_par_complement": 108,
+  "traitees_par_fenetre_completee": 23
+ },
+ "complements": {
+  "I30_d": 31,
+  "I30_c": 46,
+  "I30_pop5": 9,
+  "I30_pop4": 3,
+  "I30_pop6": 19
+ },
+ "complements_total": 108,
+ "fenetres_creees": [],
+ "fenetres_completees": [
+  "i30-tb",
+  "i30-purul",
+  "i30-neo",
+  "i30-pcis",
+  "i30-grossesse",
+  "i30-d-colch",
+  "i30-d-cortico",
+  "i30-d-antiil1",
+  "i30-d-ains"
+ ],
+ "mots_verts_ajoutes": 7,
+ "erreurs_du_cours": [
+  "Anti-interleukine 1 : niveaux inversés. L’ESC 2025 donne classe I, niveau A, après échec de la première ligne et des corticoïdes si la protéine C réactive est élevée, et classe IIa, niveau C, quelle que soit la protéine C réactive si l’IRM montre une inflammation. Corrigé dans I30_d (tableau 1), I30_c (quiz, cas 4), I30_pop5 (i30-d-antiil1, rubrique Place) et I30_pop6 (Pareto des récidives).",
+  "Aspirine et AINS à forte dose : classe I, niveau B dans l’ESC 2025, et non I, A (seule la colchicine est I, A). Corrigé dans I30_d (tableau 1) et dans le Pareto du traitement.",
+  "Constriction transitoire : traitement anti-inflammatoire de 3 à 6 mois selon l’ESC 2025 (tableau 18), et non de 2 à 3 mois. Corrigé dans le Pareto Constriction. La fenêtre i30-transit (I30_pop3, confiée à P1) porte encore « 2 à 3 mois ».",
+  "Épanchement abondant idiopathique chronique : l’ESC 2025 préconise la surveillance s’il est asymptomatique (risque de tamponnade d’environ 2,2 %/an) et le drainage seulement s’il devient symptomatique, et non un « drainage à envisager ». Corrigé dans le Pareto Épanchement.",
+  "Péricardite tuberculeuse : corticoïdes adjuvants chez le patient non infecté par le VIH en classe IIa, niveau C dans l’ESC 2025 (et non IIb, ESC 2015). Corrigé dans i30-tb et dans le Pareto des formes étiologiques.",
+  "Prévention du syndrome post-péricardiotomie : colchicine débutée 48 à 72 heures avant la chirurgie pour un mois, classe IIa, niveau A dans l’ESC 2025 (la fenêtre citait l’ESC 2015, classe IIa). Corrigé dans i30-pcis et le Pareto.",
+  "Doses de l’ESC 2025 (tableau 13) : baisse de l’aspirine de 250 mg (et non de 250 à 500 mg), ibuprofène 600 à 800 mg toutes les 8 heures, baisse de l’ibuprofène de 200 mg, colchicine pendant 3 à 6 mois sans décroissance nécessaire. Actualisé dans I30_d (note de source), i30-d-asa, i30-d-ains, i30-d-colch et le Pareto Pharmacologie, sans réécrire le tableau historique de l’ESC 2015.",
+  "Récidive pendant la décroissance des corticoïdes : le cours proposait de revenir au palier efficace précédent ; l’ESC 2025 recommande de poursuivre la colchicine et d’ajouter un AINS plutôt que d’augmenter le corticoïde. Corrigé dans I30_d.",
+  "Hémopéricarde : l’ESC 2025 situe la limite d’étirement à 200–300 mL (le Pareto de physiopathologie indiquait 150–200 mL). Corrigé.",
+  "Analyse génétique : l’ESC 2025 la propose en classe IIa, niveau B, dans la récidive de phénotype inflammatoire réfractaire, et non dans toute péricardite récidivante ; 5 à 15 % des patients récidivants portent une mutation, pas forcément d’une maladie auto-inflammatoire. Corrigé dans I30_c (Génétique).",
+  "« Ibuprofène, le mieux toléré » : affirmation non sourcée, remplacée par la préférence de l’ESC 2025 pour l’ibuprofène comme premier AINS.",
+  "« Discuter l’aspirine » chez l’insuffisant rénal : l’aspirine à dose anti-inflammatoire a les mêmes effets rénaux ; l’ESC 2025 propose une dose réduite ou un corticoïde. Corrigé.",
+  "« Une protéine C réactive élevée signe une récidive dominée par l’interleukine 1 » : formulation causale ; remplacée par la définition du phénotype et par les données des essais."
+ ],
+ "reserves": [
+  "Les informations professionnelles suisses (Colctab : contre-indication sous 30 mL/min, grossesse, allaitement, contraception masculine de 6 mois) n’ont pas pu être relues sur compendium.ch ; elles sont reprises du cours et confrontées à l’ESC 2025, qui les contredit en partie.",
+  "Les citations de l’ESC 2015 (péricardite urémique, dialyse sans héparine, données anciennes sur la cicatrisation après infarctus) n’ont pas été relues en texte intégral : seul le texte de l’ESC 2025 a été téléchargé.",
+  "Le mécanisme positionnel de la douleur (tension du feuillet pariétal) est présenté comme une explication classique peu étudiée ; aucune source primaire ne le démontre.",
+  "La communication de la Food and Drug Administration du 15 octobre 2020 sur les AINS après 20 semaines est citée sans relecture du texte intégral.",
+  "Chevauchements possibles avec le producteur P1 : les compléments du tableau de tamponnade (I30_c-24 à I30_c-26) recouvrent la complétion de i30-echo-tamp par P1 ; les compléments du tableau du liquide péricardique (I30_c-8 à I30_c-15) recouvrent la complétion de i30-ponction par P1 ; les compléments I30_d-14 à I30_d-17 (seuil et schéma de décroissance, récidive pendant la décroissance, protection osseuse) recouvrent la complétion de i30-cortdep ; la rubrique « Indications spécifiques » de i30-d-cortico recouvre le complément I30_b-25. Au vérificateur de supprimer les redites.",
+  "La fenêtre i30-liquide prévue initialement a été abandonnée, car elle aurait répété les compléments du tableau et la complétion de i30-ponction par P1.",
+  "Le seuil de veine cave inférieure du cours (> 21 mm) diffère légèrement de celui de l’ESC 2025 (> 20 mm) ; il est conservé.",
+  "L’ESC 2025 écrit une « survie » de 15 à 40 % dans la péricardite purulente traitée, chiffre probablement inversé ; il n’a pas été repris.",
+  "Dans les rubriques Source des fenêtres, les noms d’auteurs à trait d’union (Schulz-Menger, Catella-Lawson, Ben-Horin) sont évités, car l’audit des sigles les refuse ; l’ESC 2025 est citée par son titre et sa référence.",
+  "Les Pareto ont été corrigés et brièvement justifiés ; les fractions affichées seront recalculées par le moteur."
+ ],
+ "controles": {
+  "old_uniques": true,
+  "chevauchements": 0,
+  "verifier_sigles_new": "{}",
+  "verifier_sigles_out": "{}",
+  "simulation_application": "aucune erreur ; HTML équilibré"
+ }
+}

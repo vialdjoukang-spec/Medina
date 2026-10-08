@@ -1,0 +1,67 @@
+{
+ "producteur": "P1",
+ "cours": "I44 — Troubles de la conduction et bradycardies",
+ "fichiers_confies": [
+  "I44_a",
+  "I44_b",
+  "I44_pop1",
+  "I44_pop2",
+  "I44_pop3"
+ ],
+ "affirmations_relevees": 100,
+ "complements_texte": 62,
+ "complements_par_fichier": {
+  "I44_a": 26,
+  "I44_b": 30,
+  "I44_pop1": 1,
+  "I44_pop2": 4,
+  "I44_pop3": 1
+ },
+ "fenetres_creees": [
+  "i44-hemodyn"
+ ],
+ "fenetres_completees": [
+  "i44-athlete",
+  "i44-atropine-test",
+  "i44-automat",
+  "i44-bbd",
+  "i44-echap",
+  "i44-eep",
+  "i44-hautdeg",
+  "i44-hypothyr",
+  "i44-imag",
+  "i44-irm",
+  "i44-mob1",
+  "i44-neuromusc",
+  "i44-rvpace",
+  "i44-sync-strat",
+  "i44-tox"
+ ],
+ "ancres_nouvelles": 4,
+ "source_principale": "Glikson et al., 2021 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy, Eur Heart J 2021;42:3427-3520. Le texte de travail est le manuscrit accepté de l’Imperial College (src/esc2021.txt). Les chiffres repris (46 %, 7 à 20 %, 72 à 89 %, rapport de cotes 2,46, 10 à 20 %, 4, 12 et 24 %, 1 à 2 % par an, 44 %, 90 %, environ 50 %, jusqu’à 80 %, survie supérieure à un an, PR ≥ 240 ms, 10 °C) ont été recoupés dans la version publiée d’Europace 2022;24:71-164 (src/esc2021_pmc_publie.txt, déposée par P2).",
+ "erreurs_du_cours": [
+  "I44_b, îlot 11.5 : le seuil « risque à 5 ans ≥ 10 % par le score LMNA » est attribué à l’ESC 2021. L’ESC 2021 recommande d’envisager un défibrillateur avec stimulation chez le porteur d’une mutation LMNA qui a une indication de stimulation, ou un PR long avec bloc de branche gauche, si la survie attendue dépasse un an (classe IIa), sans score. Corrigé dans le complément I44_b-20 ; le score est rattaché à l’ESC 2023 sur les cardiomyopathies.",
+  "I44_a, îlot 2 : « la dysfonction sinusale ne réduit pas la survie en elle-même » dépasse la source. L’ESC 2021 dit seulement qu’aucune donnée ne montre que la stimulation améliore le pronostic. Reformulé (I44_a-5).",
+  "I44_b, îlot 14 (carte Athlète) : « un Mobitz II ou un BAV complet ne le sont jamais [vagaux] » est trop absolu, car un bloc complet peut être vagal et nodal. Reformulé en « ne doivent jamais être attribués à l’entraînement » (I44_b-30), conformément aux critères internationaux de 2017.",
+  "I44_pop1, fenêtre i44-hautdeg : « presque toujours infranodal » ignore les formes réflexes que l’ESC 2021 demande de reconnaître. Nuancé par la rubrique ajoutée.",
+  "I44_pop2, fenêtre i44-neuromusc : pour un PR ≥ 240 ms ou un QRS ≥ 120 ms, la recommandation ESC 2021 porte sur l’implantation d’un stimulateur (classe IIb), pas sur l’exploration. Précisé par la rubrique ajoutée.",
+  "I44_pop1, fenêtre i44-rvpace : le « seuil de 20 % » est une association. L’ESC 2021 précise qu’aucune part de stimulation ne définit une limite de sécurité. Précisé par la rubrique ajoutée."
+ ],
+ "reserves": [
+  "La définition « bradycardie < 50/min selon l’ESC 2021 » (I44_a, îlot 1) n’a pas été retrouvée dans le texte principal. Elle figure probablement dans le tableau supplémentaire 1, non accessible ici.",
+  "Non vérifiés dans cette passe : les chiffres épidémiologiques de l’îlot 2 (BAV du premier degré 1 à 2 %, bloc de branche droit 1 %, cohorte ARIC), le tableau de conduite automobile SSC/SSML 2024, la phrase « le pronostic d’un patient stimulé pour un BAV rejoint celui de la population de même âge » (I44_b, îlot 13), et « QRS large dans environ trois quarts des cas » (fenêtre i44-mob2).",
+  "Le seuil ≥ 10 % du score LMNA provient probablement des recommandations ESC 2022 sur les arythmies ventriculaires, dont le texte intégral n’était pas disponible ici.",
+  "Le texte intégral de l’ESC 2018 sur la syncope et celui de l’ERC 2025 n’ont pas été téléchargés. Les compléments n’y ajoutent aucun chiffre ; l’ERC est cité dans sa version 2021 (Soar et al.).",
+  "Les noms DiFrancesco et St-Onge sont refusés par l’audit des sigles. Ils sont retirés des rubriques Source HTML et conservés dans out/*.json.",
+  "Le mécanisme du remodelage sinusal de l’athlète est démontré chez l’animal (D’Souza et al., 2014). Sa transposition à l’homme est signalée comme non démontrée.",
+  "Les compléments de l’îlot 9 sur l’infarctus et le cœur transplanté recoupent la fenêtre i21-bav et l’onglet Sciences (I44_c, tableau de vascularisation) ; ils restent courts et cohérents avec eux.",
+  "Aucune modification n’a été faite dans chapters/ ; les ancres créées pointent vers i44-hemodyn (I44_a, quatre ancres)."
+ ],
+ "controles": {
+  "old_uniques_et_sans_chevauchement": true,
+  "verifier_sigles_out_html": "{} sur les 16 fichiers out/*__P1.html",
+  "verifier_sigles_new": "{} sur l’ensemble des textes new et sur les cinq fichiers simulés après application",
+  "simulation_appliquer_justifications": "4 ancres posées, 1 fenêtre créée, 15 complétées, aucun échec (sans --ecrire)",
+  "equilibre_html": "inchangé avant et après application simulée"
+ }
+}

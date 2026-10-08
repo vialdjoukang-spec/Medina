@@ -1,5 +1,9 @@
 # CLAUDE.md — MEDINA (Atlas des cours de médecine par systèmes)
 
+## Règles du propriétaire — 8 octobre 2026 (à appliquer par Claude et Codex)
+
+Lire [REGLES_VIAL_2026-10-08.md](docs/collaboration/REGLES_VIAL_2026-10-08.md). **Parallélisme = plusieurs sous-agents dans un même chapitre ; le chapitre suivant s'enchaîne dès la remise du chapitre courant à l'autre IA pour audit.** Tableaux seulement s'ils sont pertinents, clairs et brefs. **Contentieux de sources : le plus récent l'emporte dans le texte ; l'ancien reste accessible par un mot vert interactif.** L'information professionnelle suisse se lit avec `tools/compendium_fi.cjs`.
+
 ## Répartition des 21 fragments restants — 8 octobre 2026
 
 Lire [FRAGMENTS_RESTANTS.md](docs/collaboration/FRAGMENTS_RESTANTS.md) et [production_plan.json](organisation/production_plan.json) : **11 fragments entiers Claude, 10 fragments entiers Codex**, hors cardiologie. Toutes les catégories restent regroupées sous leur fragment. Chaque catégorie ou chapitre cité porte **code — intitulé (libellé complet du fragment)**, par exemple **J45 — Asthme (P-02-Pneumologie)**. Un seul fragment et **un seul chapitre actifs par agent**, un chapitre par remise ; terminer, relire, contrôler, intégrer et publier ce chapitre avant le suivant. Un blocage ne libère pas le chapitre. Les files respectent les rangs du registre. La nouvelle consigne active la chaîne Codex sur I-03-Infectiologie ; la cardiologie et ses réserves restent conservées dans le backlog. Lire [CODEX_CHAINE_FRAGMENTS.md](docs/collaboration/CODEX_CHAINE_FRAGMENTS.md) pour les vagues de sous-agents et les sentinelles. Aucun fragment n’est déclaré complet par cette attribution. Cette règle de progression prime sur les anciennes consignes de production par lots ou cycles pour les travaux nouveaux.

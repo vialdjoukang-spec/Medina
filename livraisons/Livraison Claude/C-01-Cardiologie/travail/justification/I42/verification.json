@@ -1,0 +1,218 @@
+{
+ "cours": "I42 — Cardiomyopathies",
+ "verificateur": "Claude (vérification indépendante, TACHE_VERIFICATION.md)",
+ "date": "2026-10-07",
+ "sources_controlees": [
+  "Arbelo et al., 2023 ESC Guidelines for the management of cardiomyopathies, Eur Heart J 2023;44:3503-3626 (texte intégral, src/esc2023.txt et esc2023_flux.txt)",
+  "McDonagh et al., 2021 ESC Guidelines for heart failure, Eur Heart J 2021;42:3599-3726 (texte intégral, src/esc2021_ic.txt)",
+  "Résumé européen des caractéristiques de Camzyos (src/camzyos_rcp_ue.txt)",
+  "PubMed (résumés) : Maron 2003, Corrado 2003, La Gerche 2011, Anderson 2001, Paur 2012, Ware 2018, Saberi 2017, James 2013, Køber 2016 (DANISH), Halliday 2019 (TRED-HF), Feng 2007, Guttmann 2014, Sperry 2018, Templin 2015"
+ ],
+ "complements": {
+  "total": {
+   "complements_producteurs": 140,
+   "acceptes": 112,
+   "corriges": 28,
+   "rejetes": 0,
+   "ajouts_verificateur": 10
+  },
+  "par_fichier": {
+   "I42_a": {
+    "complements_producteurs": 31,
+    "acceptes": 21,
+    "corriges": [
+     "I42_a-1",
+     "I42_a-2",
+     "I42_a-3",
+     "I42_a-5",
+     "I42_a-12",
+     "I42_a-14",
+     "I42_a-18",
+     "I42_a-21",
+     "I42_a-26",
+     "I42_a-28"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": [
+     "I42_a-v1"
+    ]
+   },
+   "I42_b": {
+    "complements_producteurs": 27,
+    "acceptes": 24,
+    "corriges": [
+     "I42_b-5",
+     "I42_b-11",
+     "I42_b-24"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": []
+   },
+   "I42_c": {
+    "complements_producteurs": 20,
+    "acceptes": 17,
+    "corriges": [
+     "I42_c-1",
+     "I42_c-15",
+     "I42_c-20"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": [
+     "I42_c-v1"
+    ]
+   },
+   "I42_d": {
+    "complements_producteurs": 21,
+    "acceptes": 17,
+    "corriges": [
+     "I42_d-1",
+     "I42_d-6",
+     "I42_d-18",
+     "I42_d-21"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": []
+   },
+   "I42_pop1": {
+    "complements_producteurs": 5,
+    "acceptes": 5,
+    "corriges": [],
+    "rejetes": [],
+    "ajouts_verificateur": []
+   },
+   "I42_pop2": {
+    "complements_producteurs": 9,
+    "acceptes": 7,
+    "corriges": [
+     "I42_pop2-7",
+     "I42_pop2-8"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": [
+     "I42_pop2-v1",
+     "I42_pop2-v2",
+     "I42_pop2-v3"
+    ]
+   },
+   "I42_pop3": {
+    "complements_producteurs": 1,
+    "acceptes": 0,
+    "corriges": [
+     "I42_pop3-1"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": []
+   },
+   "I42_pop4": {
+    "complements_producteurs": 11,
+    "acceptes": 8,
+    "corriges": [
+     "I42_pop4-4",
+     "I42_pop4-10",
+     "I42_pop4-11"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": [
+     "I42_pop4-v1"
+    ]
+   },
+   "I42_pop5": {
+    "complements_producteurs": 8,
+    "acceptes": 8,
+    "corriges": [],
+    "rejetes": [],
+    "ajouts_verificateur": []
+   },
+   "I42_pop6": {
+    "complements_producteurs": 7,
+    "acceptes": 5,
+    "corriges": [
+     "I42_pop6-1",
+     "I42_pop6-3"
+    ],
+    "rejetes": [],
+    "ajouts_verificateur": [
+     "I42_pop6-v1",
+     "I42_pop6-v2",
+     "I42_pop6-v3",
+     "I42_pop6-v4"
+    ]
+   }
+  }
+ },
+ "old_reel_elargis": {
+  "I42_a-2": "inclut la phrase sur la part génétique de la CMD (20 à 40 % → 30 à 40 %, ESC 2023)",
+  "I42_a-26": "inclut « Leur présence peut faire envisager le défibrillateur. », devenue redondante",
+  "I42_a-28": "inclut la fin de l’item LMNA (seuil de 10 % rattaché à l’ESC 2022)",
+  "I42_b-24": "inclut l’intervalle de l’IRM (3 à 5 ans dans la CMH → 2 à 5 ans, ESC 2023)"
+ },
+ "ajouts_verificateur_note": "Dix compléments ajoutés à la fin des fichiers edits/ (identifiants en -v, champ auteur = vérificateur) pour les harmonisations demandées là où aucun complément producteur ne couvrait le passage. Ils doivent être conservés si un producteur régénère ses sorties.",
+ "fenetres": {
+  "i42-fa__P1": "corrigée : gardée et enrichie (fusion de i42-anticoag-fa)",
+  "i42-anticoag-fa__P2": "fusionnée dans i42-fa (fusionnee_dans ajouté ; ses 2 ancres ouvrent i42-fa)",
+  "i42-pk-myosine__P2": "corrigée : redite avec I42_d-4 supprimée",
+  "i42-cicatrice__P1": "ok",
+  "i42-redflags__P1": "ok",
+  "i42-takotsubo__P1": "ok",
+  "i42-attr__P1": "ok",
+  "i42-biomarq__P2": "ok",
+  "i42-stades__P2": "ok"
+ },
+ "ancres": {
+  "total": 18,
+  "retirees": 0,
+  "labels_modifies": 0
+ },
+ "erreurs_de_fond_trouvees_par_le_verificateur": [
+  "Modificateurs du défibrillateur dans la CMH (rehaussement tardif ≥ 15 %, FEVG < 50 %) : le tableau de recommandations 23 et la figure 16 les réservent au risque faible (< 4 %, IIb) ; P1 avait conservé « risque faible ou intermédiaire » (I42_a-26, I42_pop2-8).",
+  "I42_a-28 : « variants tronquants » appliqué à tous les gènes et DES ajouté, absent du tableau 21 ; seuil LMNA de 10 % attribué implicitement à l’ESC 2023 (I42_a, fenêtres i42-lmna et i42-dai), alors qu’il vient de l’ESC 2022 et que l’ESC 2023 privilégie la décision partagée.",
+  "I42_a-21 : « toujours associé » contredisait la monothérapie du disopyramide (IIb).",
+  "Réduction septale en NYHA II : classe IIb, C (tableau de recommandations 20), et non IIa, dans I42_a et la fenêtre i42-srt (corrigée par P2 dans le seul Pareto).",
+  "I42_b-11 : la classe IIa des critères de haut risque de la CMAVD porte sur une décision individualisée, non sur l’implantation dès qu’un critère est présent.",
+  "Pareto CMAVD : restriction sportive « (I) » au lieu de III (patient) et IIb (porteur sans phénotype).",
+  "I42_b : IRM « tous les trois à cinq ans dans la CMH » ; ESC 2023 : tous les 2 à 5 ans.",
+  "Rendements génétiques non harmonisés après I42_c-15 et -16 (I42_a îlot 2 et Pareto : 20 à 40 % et 30 à 60 %).",
+  "I42_d-1 : inhibiteurs calciques « contre-indiqués » dans l’amylose ; ESC 2023 : peuvent aggraver la fonction systolique (« à éviter », comme I42_b-12).",
+  "I42_a-18 : « l’ESC 2023 ne l’écrit pas pour un porteur de variant » trompeur (13 à 14 mm : intégrer les données génétiques chez tout adulte).",
+  "I42_a-3 : « le sport ne crée pas la maladie » contredisait l’îlot 3.3 et James et al. 2013.",
+  "I42_a-5 : nœud auriculoventriculaire situé à tort dans le septum ventriculaire.",
+  "I42_d-21 : hypothèse non sourcée (perte de l’effet vasodilatateur) retirée.",
+  "I42_pop4-4 : effet paramagnétique attribué aux lipides.",
+  "I42_c-20 : perte de l’information « bloc après les deux gestes »."
+ ],
+ "arbitrages_demandes": {
+  "doublon_fa": "i42-fa gardée et enrichie ; i42-anticoag-fa marquée fusionnee_dans i42-fa.",
+  "disopyramide": "Classe I en association (B), IIb en monothérapie (C), QTc 500 ms : I42_a-21, I42_d-2, I42_pop5-3/-4/-5, I42_pop6-1. Plus aucune mention de IIa, de 480 ms ni de « toujours associé ».",
+  "rehaussement_tardif": "≥ 15 % partout : I42_a-26, I42_c-v1, I42_pop2-8, I42_pop4-v1 (fenêtre i42-irm), I42_pop6-2, I42_pop6-v3. Les « > 15 % » restants concernent le strain en cardio-oncologie (ESC 2022), sans rapport.",
+  "tafamidis": "Classe I, niveau B attribuée à l’ESC 2021 sur l’insuffisance cardiaque : I42_d-8, I42_pop5-7, I42_pop6-6.",
+  "criteres_genotypiques": "Tableau 21 (LMNA par calculateur, FLNC tronquant, TMEM43, PLN, DSP, RBM20 ; facteurs : rehaussement tardif, FEVG < 45 %, scores LMNA et PLN ; IIa si FEVG > 35 % avec facteurs, IIb sans) harmonisé dans I42_a-28, I42_c-18 (quiz), I42_pop2-v1 (i42-dai), I42_pop2-v2 (i42-lmna), I42_pop6-3, et la fenêtre i42-cicatrice.",
+  "arbitrage_codex_i42_sg": "Respecté : aucun complément dans l’îlot i42-sg ; I42_c-18 et les ajouts sont compatibles (dépistage génétique en cascade fondé sur un variant pathogène ou probablement pathogène) ; I42_c-20 porte sur l’îlot i42-sa."
+ },
+ "controles": {
+  "verifier_sigles_out": "{} sur les 9 fichiers out/*.html",
+  "verifier_sigles_textes_corriges_et_ajoutes": "{}",
+  "verifier_sigles_cours_entier_apres_application_simulee": "{}",
+  "application_a_blanc": {
+   "textes_appliques": 150,
+   "textes_echecs": 0,
+   "ancres": 18,
+   "ancres_echecs": 0,
+   "fenetres_creees": 4,
+   "fenetres_completees": 4,
+   "fenetres_echecs": 0
+  },
+  "cles_des_mots_verts": "toutes présentes ; 89 gabarits ouverts et fermés ; aucune clé en double",
+  "unicite_old": "150 old ou old_reel présents une seule fois ; aucun chevauchement avec les ancres"
+ },
+ "reserves": [
+  "Erreur du cours non couverte par un complément : intervalles du dépistage familial. ESC 2023 (6.11) : tous les 1 à 3 ans jusqu’à 60 ans, puis tous les 3 à 5 ans ; le cours écrit 1 à 3 ans chez l’enfant et l’adolescent, 3 à 5 ans chez l’adulte (I42_b îlot 15.2, fenêtre i42-cascade, Pareto gen). À corriger dans une passe ultérieure.",
+  "Erreur du cours non couverte : sport dans la CMD et la CMNDVG. ESC 2023 (tableau de recommandations 31) : effort modéré ou intense envisageable chez le porteur sans phénotype sauf LMNA et TMEM43 (IIa) ; intensité élevée envisageable si FEVG ≥ 50 % sans arythmie d’effort (IIb). Le cours cite « LMNA ou FLNC » (tableau du sport, I42_a) et « FEVG au-delà de 45 % environ » (fenêtre i42-sport).",
+  "Intervalle d’entretien du mavacamten : tableau du cours « toutes les 12 semaines » ; information européenne : 6 mois si FEVG ≥ 55 %, 3 mois entre 50 et 55 %. Information professionnelle suisse non consultée ; tableau non modifié (signalé dans la fenêtre i42-pk-myosine).",
+  "I42_d, carte « Amylose cardiaque » des médicaments à éviter : « liaison aux fibrilles » présentée comme un fait ; I42_d-21 la présente désormais comme une hypothèse, la carte n’a pas été modifiée.",
+  "Fenêtre i42-dai : critères de la CMAVD formulés de façon générale (syncope arythmique, TV soutenue, dysfonction sévère, calculateur), sans les seuils du tableau de recommandations 29 ; non faux, mais moins précis que I42_b-11.",
+  "Recommandations ESC 2022 sur les arythmies ventriculaires non relues en texte intégral : critères LMNA associés au seuil de 10 % et préférence pour un défibrillateur quand une stimulation est nécessaire. Le seuil de 10 % lui-même est confirmé par l’ESC 2023 (7.2.5).",
+  "Classes attribuées à l’ESC 2026 sur l’insuffisance cardiaque (TEP au FDG) non vérifiées en source primaire.",
+  "I42_a-9 : le lien antiangiogénique avec la prééclampsie relève de Patten et al. (Nature 2012), non de la source citée.",
+  "Les fichiers edits/ ont été réécrits (même contenu, compléments du vérificateur ajoutés en fin de liste) ; les fichiers des autres cours modifiés dans l’arbre de travail (I30, I33…) ne relèvent pas de cette vérification."
+ ]
+}

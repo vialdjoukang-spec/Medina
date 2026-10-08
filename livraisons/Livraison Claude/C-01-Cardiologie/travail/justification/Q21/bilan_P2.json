@@ -1,0 +1,83 @@
+{
+ "producteur": "P2",
+ "cours": "Q21 — Cardiopathies congénitales de l’adulte",
+ "fichiers": [
+  "Q21_c",
+  "Q21_d",
+  "Q21_pop5",
+  "Q21_pop6",
+  "Q21_pop7"
+ ],
+ "source_principale": "Baumgartner et al., 2020 ESC Guidelines for the management of adult congenital heart disease, Eur Heart J 2021;42:563-645 (texte intégral anglais, src/esc2020_achd.pdf et .txt) ; Humbert et al., 2022 ESC/ERS Guidelines for pulmonary hypertension, Eur Heart J 2022;43:3618-3731 (src/escers2022_hp.pdf) ; De Backer et al., 2025 ESC Guidelines on cardiovascular disease and pregnancy, Eur Heart J 2025;46:4462-4568 (src/esc2025_grossesse.pdf) ; ESC 2023 sur l’endocardite (I33/src) ; résumé européen des caractéristiques de Tracleer (Agence européenne des médicaments) ; information professionnelle américaine de l’amiodarone ; publications primaires vérifiées sur PubMed.",
+ "affirmations_relevees": 191,
+ "detail_affirmations": {
+  "traitees_par_complement": 151,
+  "traitees_par_fenetre_completee": 40
+ },
+ "complements": {
+  "Q21_c": 77,
+  "Q21_d": 29,
+  "Q21_pop5": 15,
+  "Q21_pop6": 11,
+  "Q21_pop7": 19
+ },
+ "complements_total": 151,
+ "fenetres_creees": [],
+ "fenetres_completees": [
+  "q21-ecg (Q21_pop5)",
+  "q21-rx (Q21_pop5)",
+  "q21-sport (Q21_pop5)",
+  "q21-chirnc (Q21_pop5)",
+  "q21-mwho (Q21_pop5)",
+  "q21-d-anticoag (Q21_pop6 ; ancre ajoutée dans Q21_d, îlot 4.3 : « retient une anticoagulation »)",
+  "q21-d-amio (Q21_pop6)"
+ ],
+ "mots_verts_ajoutes": 1,
+ "erreurs_du_cours": [
+  "Q21_c, cas 7 : « un dépistage unique des anévrismes intracrâniens est raisonnable » contredit l’ESC 2020, qui ne recommande pas de dépistage systématique chez l’asymptomatique (anévrismes jusqu’à 10 %) ; corrigé.",
+  "Q21_c, génétique : « environ un tiers » des cardiopathies avec cause génétique ; l’ESC 2020 donne 10 à 30 % des cardiopathies structurelles. Corrigé dans Q21_c et dans le Pareto des étiologies (Q21_pop7).",
+  "Fraction de régurgitation pulmonaire sévère : le cours écrit « > 40 % environ » ; l’ESC 2020 (note du tableau sur la tétralogie) retient > 30–40 %. Corrigé dans Q21_c (tableau IRM), q21-irm-vd (Q21_pop5) et le Pareto IRM (Q21_pop7).",
+  "Q21_c, tableau IRM : le Qp/Qs > 1,5 était présenté comme l’indication de fermeture d’une CIA ; l’ESC 2020 fonde l’indication sur la surcharge de volume du ventricule droit et n’exige le Qp/Qs > 1,5 que lorsque les résistances atteignent 3 unités Wood. Corrigé.",
+  "Q21_c, tableau d’échocardiographie : la probabilité d’hypertension pulmonaire selon la vitesse tricuspide ignorait les autres signes échographiques de l’ESC/ERS 2022 (≤ 2,8 m/s avec signes : intermédiaire ; 2,9–3,4 m/s avec signes : élevée). Complété.",
+  "Q21_c, tableau d’effort : le seuil pronostique « 34 à 36 » de la pente ventilatoire n’a pas pu être vérifié (Dimopoulos et al. 2006, résumé seul) ; formulation qualitative conservée, seuil retiré.",
+  "Q21_c, histopathologie, et q21-cath (Q21_pop5) : le test de vasoréactivité et les seuils de 3 et 5 unités Wood étaient présentés comme un substitut validé de l’histologie ; l’ESC 2020 et l’ESC/ERS 2022 précisent qu’aucune donnée prospective ne valide la vasoréactivité, le test d’occlusion ou la biopsie pour l’opérabilité, et l’ESC 2020 déconseille la vasoréactivité pour décider de fermer une CIA à ≥ 5 unités Wood. Nuancé.",
+  "Q21_c, cas 5, et Pareto Ebstein et coronaires (Q21_pop7) : la classe I de l’ESC 2020 exige un angor typique avec ischémie concordante ou une anatomie à haut risque ; la formulation « symptômes avec ischémie ou anatomie à haut risque (I) » était ambiguë. L’anatomie à haut risque d’une coronaire gauche sans symptôme relève de la classe IIa. Corrigé (même constat que P1 sur q21-aaoca).",
+  "Q21_d, îlot 4.0 : la note de source mentionnait le propranolol intraveineux, absent de cet îlot (copie de la note de l’îlot 5) ; mention retirée.",
+  "Q21_d, îlot 4.3, et q21-d-anticoag : les anticoagulants oraux directs « de plus en plus utilisés, y compris dans le Fontan » ; l’ESC 2020 ne les recommande pas comme traitement standard du Fontan faute de données prospectives, et l’ESC/ERS 2022 rapporte dans l’Eisenmenger plus d’hémorragies et de décès que sous antivitamine K (registre allemand). Nuancé.",
+  "Pareto de la CIA et des obstacles (Q21_pop7) : ostium secundum ≈ 80 % (et non 75 %) ; bicuspidie associée à la coarctation jusqu’à 85 % (et non « > 50 % »). Corrigé.",
+  "Pareto Eisenmenger (Q21_pop7) : la règle « ≥ 5 unités Wood : fermeture fenestrée si baisse sous traitement » ne concerne que la CIA ; pour une CIV ou un canal, l’ESC 2020 et l’ESC/ERS 2022 prévoient une décision individuelle en centre (IIb) si le Qp/Qs dépasse 1,5. Corrigé ; classe IIa ajoutée pour les inhibiteurs de la phosphodiestérase de type 5.",
+  "q21-centres (Q21_pop5) : les intervalles « complexes chaque année » ne couvrent pas le patient cyanosé, que l’ESC 2020 revoit tous les 6 à 12 mois ; précisé.",
+  "q21-altitude (Q21_pop5) : l’ESC 2020 fixe pour le cyanosé un seuil d’exposition aiguë à 2 500 m ; ajouté.",
+  "q21-transition-soins et q21-cath (Q21_pop5) : rubriques rédigées en phrases nominales ; réécrites en phrases complètes."
+ ],
+ "reserves": [
+  "Le texte intégral anglais de l’ESC 2020 (84 pages), de l’ESC/ERS 2022 (114 pages) et de l’ESC 2025 sur la grossesse (107 pages) a été déposé dans src/ ; P1 a déposé les traductions espagnoles.",
+  "Les recommandations américaines (ACC/AHA 2018 et 2025) n’ont pas pu être consultées (accès refusé) : intervalles de suivi de q21-centres, mention de l’ACC/AHA 2025 dans q21-sport et dans le Pareto du suivi (santé mentale) conservés sans contrôle.",
+  "Le tableau mWHO 2.0 de l’ESC 2025 n’a pas pu être relu ligne à ligne (extraction en colonnes illisible) ; les classes de q21-mwho et du Pareto de la grossesse n’ont pas été recontrôlées. Le « volume +40–50 % » du Pareto n’a pas été vérifié ; le débit +30–50 % et la baisse des résistances de 20 à 50 % l’ont été (ESC 2025, section 3.2).",
+  "Interaction bosentan–glibenclamide : le résumé européen écrit « ne doit pas être utilisé » et réserve la contre-indication formelle à la ciclosporine ; la mention « contre-indiquée » du cours est conservée, l’information professionnelle suisse n’ayant pas été relue sur compendium.ch.",
+  "Informations professionnelles suisses (alprostadil, ibuprofène néonatal, bosentan, amiodarone) non relues ; données pharmacologiques prises dans le résumé européen de Tracleer et l’information américaine de Cordarone.",
+  "Mécanismes physiologiques classiques ajoutés sans référence primaire spécifique : position genoux-poitrine (Q21_d), retour veineux pulmonaire total obstrué (q21-d-pge), mélange imparfait à l’étage auriculaire (q21-cath), perte de masse du ventricule gauche dans la transposition (Pareto), mécanisme de l’aspect rsR′ de la CIA et des ondes Q de la transposition corrigée (q21-ecg), occlusion veineuse après cathétérismes (q21-cath).",
+  "Sources vérifiées sur le résumé seulement, sans texte intégral : Pristipino et al. 2019 (manœuvre de Valsalva, microbulles), Dickinson 2005 (onde T en V1), Flamm et al. 1969 (pondération des veines caves), McDonald-McGinn et al. 2015 (vaccins vivants et déficit T).",
+  "Valeurs échographiques du cours (diamètre basal 41 mm, TAPSE 17 mm, onde S′ 9,5 cm/s, ASE/EACVI 2015) et seuils du test d’hyperoxie non recontrôlés.",
+  "« Arythmies = 1re cause d’hospitalisation » (Pareto des urgences) non vérifié et non modifié ; l’ESC 2020 fait de l’insuffisance cardiaque la première cause de décès (constat de P1).",
+  "Doublons possibles avec P1, à arbitrer : q21-bio (rubrique « Autres », hyperuricémie, thrombopénie) et q21-cyan-sys créée par P1 ; q21-d-fer et Q21_c (carence martiale) avec le complément Q21_b-30 de P1 ; q21-contracep avec Q21_b-33 ; q21-cath (mélange veineux) avec Q21_pop1-2 ; q21-ecg avec Q21_b-3.",
+  "Recouvrements internes à P2, à alléger si besoin : précautions de l’ibuprofène (Q21_d tableau de l’îlot 2 et q21-d-ferm) ; carence martiale du cyanosé (Q21_c, Q21_d îlot 5.4 et q21-d-fer), placés dans des onglets ou îlots différents.",
+  "Aucun nom d’essai n’a été ajouté hors glossaire ; BREATHE-5 figure déjà au glossaire."
+ ],
+ "controles": {
+  "old_uniques": true,
+  "chevauchements": 0,
+  "ancres_hors_fenetre": true,
+  "verifier_sigles_new": "{}",
+  "verifier_sigles_out": "{}",
+  "verifier_sigles_cours_simule": "{}",
+  "simulation_application": "151 compléments, 1 ancre et 7 fenêtres complétées appliqués sur une copie : aucune erreur, balises équilibrées (Q21_d : 2 fermetures déjà présentes dans l’original, propres au fragment)",
+  "mots": {
+   "Q21_c": "6 443 → 8 401",
+   "Q21_d": "2 004 → 2 716",
+   "Q21_pop5": "1 682 → 3 138",
+   "Q21_pop6": "1 206 → 1 764",
+   "Q21_pop7": "2 176 → 2 379"
+  }
+ }
+}

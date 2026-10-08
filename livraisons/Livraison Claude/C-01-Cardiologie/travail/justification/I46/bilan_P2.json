@@ -1,0 +1,90 @@
+{
+ "producteur": "P2",
+ "cours": "I46 — Arrêt cardiaque",
+ "fichiers": [
+  "I46_c",
+  "I46_d",
+  "I46_pop4",
+  "I46_pop5"
+ ],
+ "sources_principales": [
+  "ERC 2025, réanimation avancée de l’adulte (Soar et al., Resuscitation 2025;215:110769), texte intégral src/erc2025_als.pdf",
+  "ERC 2025, circonstances particulières (Lott et al., Resuscitation 2025;215:110753), texte intégral et figures src/erc2025_special.pdf",
+  "ERC-ESICM 2025, soins post-réanimation (Nolan et al., Resuscitation 2025;215:110809), texte intégral src/ercesicm2025_postresus.pdf",
+  "ERC 2025, réanimation de base, pédiatrique, épidémiologie et éthique (src/erc2025_bls, erc2025_paed, erc2025_epidemio, erc2025_ethics)",
+  "ESC 2022 sur les arythmies ventriculaires et la prévention de la mort subite (Zeppenfeld et al., Eur Heart J 2022;43:3997-4126), texte intégral src/esc2022_va.pdf",
+  "Publications originales vérifiées sur PubMed (résumé ou texte intégral PMC) : Weil 1986, Littmann 2014, Tzivoni 1988, Rossaint 2023 (texte intégral PMC), Kraut et Mullins 2018, Calello 2015, Huang et Kuo 2007, Gupta et Caviness 2016, Wadhwa 2005, Udesen 2019, Møller 2024, Clemency 2015 (cité par l’ERC)"
+ ],
+ "affirmations_relevees": 105,
+ "detail_affirmations": {
+  "traitees_par_complement": 73,
+  "traitees_par_fenetre_completee": 32
+ },
+ "complements": {
+  "I46_c": 42,
+  "I46_d": 15,
+  "I46_pop4": 10,
+  "I46_pop5": 6
+ },
+ "complements_total": 73,
+ "fenetres_creees": [],
+ "fenetres_completees": [
+  "i46-anaph",
+  "i46-coro",
+  "i46-d-adre",
+  "i46-d-antiep",
+  "i46-d-bicar",
+  "i46-d-lipid",
+  "i46-d-lyse",
+  "i46-d-nalox",
+  "i46-d-vaso",
+  "i46-enfant",
+  "i46-ep",
+  "i46-grossesse",
+  "i46-hyperk",
+  "i46-hypoth",
+  "i46-inexpl",
+  "i46-intox",
+  "i46-neuro",
+  "i46-pnothx",
+  "i46-temp"
+ ],
+ "mots_verts_ajoutes": 8,
+ "erreurs_du_cours": [
+  "FV à petites mailles ou asystolie douteuse : le cours (piège de I46_c, Pareto Électrocardiogramme) faisait ne pas choquer ; l’ERC 2025 fait choquer en cas de doute et une FV de toute amplitude. Corrigé dans I46_c et pareto-i46-bio (P1 a corrigé la fenêtre i46-ecg-fv de I46_pop3).",
+  "Hypothermie sous 30 °C : le cours suspendait l’adrénaline ; l’ERC 2025 admet une seule dose de 1 mg, sauf RCP extracorporelle imminente. Corrigé dans I46_d (tableau 3), i46-d-adre, i46-hypoth et pareto-i46-part (P1 a fait la même correction dans I46_b).",
+  "Classification suisse révisée de l’hypothermie : le cours gardait le frisson et les anciennes plages (28–24 °C, moins de 24 °C) ; le système révisé (ERC 2025, tableau 5) retient conscient, conscience altérée, inconscient avec signes vitaux (moins de 28 °C), absence de signes vitaux (température variable). Corrigé dans i46-hypoth.",
+  "Position des mains : le cours affirmait que le centre du thorax correspond à la projection des ventricules ; selon l’ERC 2025, la plus grande section ventriculaire se projette le plus souvent sous le tiers inférieur du sternum, le centre du thorax recouvrant l’aorte ascendante et la chambre de chasse gauche. Corrigé dans I46_c (anatomie) et pareto-i46-sci.",
+  "Défibrillateur après l’arrêt : le cours écrivait qu’une FEVG basse « ne suffit pas à poser une indication de défibrillateur » ; après une FV ou une TV mal tolérée sans cause réversible, l’indication de prévention secondaire est indépendante de la FEVG (ESC 2022, I, A). Corrigé dans I46_c (histologie).",
+  "Syndrome de Lance-Adams attribué à l’atteinte du cervelet : la plupart des myoclonies post-anoxiques sont d’origine corticale (ERC-ESICM 2025 ; Gupta et Caviness 2016). Corrigé dans I46_c.",
+  "Toxicité des anesthésiques locaux : l’ERC 2025 réduit l’adrénaline à 1 µg/kg au plus et prolonge la réanimation au-delà d’une heure ; le cours ne le mentionnait pas. Ajouté dans I46_d (tableau 3), i46-d-lipid et pareto-i46-pharma.",
+  "Calcium chez un patient qui a un pouls : le cours donnait « en 10 minutes » pour les deux sels ; l’ERC 2025 (figure 2) donne le gluconate en 10 minutes et le chlorure en 5 minutes, les deux apportant 6,8 mmol. Corrigé dans I46_d.",
+  "Essai COCA : « arrêt prématuré sans bénéfice » ; l’essai a été arrêté sur un signal de nocivité, avec moins de bons devenirs neurologiques à 90 jours et à un an. Corrigé dans I46_d et I46_c.",
+  "Gazométrie : la metformine était classée avec un trou anionique et une osmolalité très élevés ; elle élève le trou anionique par acidose lactique, sans trou osmolaire notable, à la différence du méthanol et de l’éthylène glycol. Corrigé dans I46_c et pareto-i46-bio.",
+  "Potassium supérieur à 6,5 mmol/L présenté comme « cause probable de l’arrêt » alors que le piège voisin rappelle que l’ischémie élève la kaliémie : formulation rendue conditionnelle (association ou cause selon le contexte). Corrigé dans I46_c.",
+  "Noyade : « durée d’immersion » et seuil de 10 minutes ; l’ERC 2025 retient la durée de submersion, un meilleur pronostic sous 5 à 10 minutes, une survie extrêmement improbable au-delà d’environ 30 minutes dans une eau à plus de 6 °C et un seuil d’environ 90 minutes à 6 °C ou moins. Corrigé dans i46-noyade.",
+  "HYPERION : le bénéfice de 33 °C dans les rythmes non choquables n’a pas été confirmé par la méta-analyse sur données individuelles avec TTM2 (ERC-ESICM 2025). Corrigé dans i46-temp.",
+  "DanGer Shock cité pour l’assistance circulatoire après un arrêt : l’essai excluait les patients comateux après un arrêt extrahospitalier ; l’ERC-ESICM 2025 réserve l’assistance à des patients sélectionnés (sus-décalage, Glasgow d’au moins 8, arrêt de moins de 10 minutes). Corrigé dans i46-d-vaso.",
+  "Bicarbonate dans l’hyperkaliémie menaçante (fenêtre i46-d-bicar) : l’ERC 2025 le déconseille hors arrêt (baisse de 0,1 mmol/L en une heure) et le garde dans l’arrêt hyperkaliémique. Précisé dans i46-d-bicar et i46-hyperk.",
+  "Pareto Définitions : incidence et survie européennes actualisées selon l’ERC 2025 (55 pour 100 000, survie 7,5 %, 3,1 à 35 %), en cohérence avec la correction de I46_a par P1."
+ ],
+ "reserves": [
+  "La cinétique de la troponine (I46_c, 4.3) est justifiée par un rappel de physiologie et citée d’après l’ESC 2023 sur les syndromes coronariens aigus, dont le texte intégral n’a pas été téléchargé.",
+  "Le retrait de l’atropine de l’asystolie (ERC 2010) et sa justification mécanistique n’ont pas été relus dans le texte intégral de 2010 (référence vérifiée sur PubMed, sans résumé).",
+  "Les fenêtres i46-intox (monoxyde de carbone, cyanure) et i46-d-lipid (propofol, piégeage ionique) reposent sur des rappels pharmacologiques classiques ; Hampson et al., Borron et al. et la liste de l’American Society of Regional Anesthesia n’ont été vérifiés que par leur résumé.",
+  "Le mécanisme de l’hyperglycémie de stress (catécholamines) est un rappel de physiologie ; l’ERC-ESICM 2025 ne constate que sa fréquence.",
+  "Pareto Réanimation de base : « Choc dans les 3–5 min : survie possible de 50–70 % » n’a pas été retrouvé dans les textes ERC 2025 téléchargés ; laissé tel quel, à vérifier (ERC 2015 ou 2021).",
+  "Fenêtre i46-anaph : « deux doses intramusculaires inefficaces conduisent à une perfusion intraveineuse » ne figure pas tel quel dans l’ERC 2025, qui propose la voie intraveineuse si les symptômes persistent ou en milieu monitoré ; formulation non modifiée.",
+  "Les blocs « Interprétation guidée » des Sciences (I46_c) restent généraux et en partie redondants avec le texte qui les précède ; une phrase de chacun a été justifiée, mais leur condensation relève de la relecture pédagogique.",
+  "Chevauchements possibles avec P1 : le complément I46_c sur le prélèvement veineux (Weil 1986) peut recouper une complétion de i46-gds ; le complément sur l’échographie sous-xiphoïdienne recoupe i46-echo-arret ; la rubrique de i46-hypoth sur la demande en oxygène (6 à 7 % par degré) recoupe i46-ischcereb. Au vérificateur de supprimer les redites.",
+  "Les ancres vers i46-hyperk sont au nombre de trois (deux dans I46_c, une dans I46_d) ; le vérificateur peut en retirer une si elle paraît excessive."
+ ],
+ "controles": {
+  "old_uniques": true,
+  "chevauchements": 0,
+  "balises_conservees": true,
+  "verifier_sigles_new": "{}",
+  "verifier_sigles_out": "{}",
+  "simulation_application": "aucune erreur ; HTML équilibré (I46_d garde ses deux fermetures orphelines d’origine) ; sigles des fichiers simulés {}"
+ }
+}
