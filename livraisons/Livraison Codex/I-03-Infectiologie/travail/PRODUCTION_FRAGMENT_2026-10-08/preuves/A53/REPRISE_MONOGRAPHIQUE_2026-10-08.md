@@ -1,0 +1,9 @@
+# A53 — reprise monographique et contrôle des sources
+
+Instruction directe de Vial du 8 octobre 2026 : le cours actuel met le codage au premier plan et ne suit pas le plan monographique clinique habituel. Vial demande de sauvegarder le travail, de revenir à la syphilis comme sujet médical, d'interdire les affirmations issues du seul savoir du modèle et de vérifier les références des sociétés savantes suisses et européennes et les informations professionnelles Swissmedic. Un balayage spécialisé de plusieurs agents est lancé avant la réécriture.
+
+Le brouillon B50 et les travaux récents sont sauvegardés dans la branche distante `codex/b50-brouillon-avant-reprise-20261008`, commit `51869cb`. La présente branche repart du dernier état publié `19171c8`. La clôture interne A53 antérieure reste une preuve historique, mais **elle ne sert plus de feu vert à la progression**. A53 redevient le seul chapitre actif Codex du fragment T1 ; B50 est suspendu.
+
+Contrôle prioritaire : la directive européenne IUSTI/EDF finale de 2020, p. PDF 3, section *Laboratory*, écrit : « A person with positive STS should be investigated and treated as for syphilis as a precautionary measure unless previous adequate treatment for syphilis is documented (1, D). » Le texte actuel doit être relu pour éviter que l'absence d'archive d'un traitement ancien retarde indéfiniment le soin. Source : https://iusti.org/wp-content/uploads/2020/11/2020-Syphilis-guideline.pdf. Cette directive européenne est comparée à la SSI suisse en vigueur, sans remplacer automatiquement celle-ci. Le document IUSTI de juin 2026 est un brouillon pour commentaires, pas une recommandation finale.
+
+Aucun statut INJECTÉ, audit final du fragment ou validation médicale humaine n'est acquis par cette reprise. Les rapports spécialisés et la matrice affirmation–source seront ajoutés ici avant toute nouvelle clôture interne.
