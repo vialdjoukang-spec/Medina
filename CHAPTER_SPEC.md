@@ -138,3 +138,20 @@ Ajoute les îlots propres à la pathologie ; supprime ceux qui ne s’appliquent
 - Résultat des contrôles.
 
 Ne modifie **aucun** fichier hors de `chapters/<CODE>/` et `glossary/<code>.py`.
+
+## 8. Repères de lecture cliquables (exigence du 8 octobre 2026)
+Quatre repères signalent ce qui se retient. Ils s'écrivent comme un mot vert, avec l'attribut `data-flag`, et ouvrent leur propre fenêtre :
+
+```html
+<button class="w" data-flag="piege" data-k="j09-piege-pcr">Piège</button>
+<button class="w" data-flag="reflexe" data-k="j09-reflexe-antiviral">Instant réflexe</button>
+<button class="w" data-flag="penser" data-k="j09-penser-myocardite">Il faut y penser</button>
+<button class="w" data-flag="federal" data-k="j09-federal-criteres">Instant examen fédéral</button>
+```
+
+- `piege` : l'erreur fréquente, le faux positif, la conclusion trop rapide.
+- `reflexe` : le geste ou la décision immédiate, dans l'ordre où il faut l'appliquer.
+- `penser` : le diagnostic auquel on ne pense pas assez dans cette situation.
+- `federal` : ce qui tombe à l'examen fédéral — critère, seuil, classification.
+
+Le libellé du bouton est l'un de ces quatre mots, sans ajout. Le contenu détaillé va dans la fenêtre `data-pop` correspondante. La puce est volontairement plus petite que le texte, mais reste lisible et contrastée.

@@ -94,3 +94,18 @@ html body #content .mc h1,html body #content .mc h2,html body #content .mc h3,ht
 
 .mc svg text,.mc svg tspan{font-family:var(--mc-font,Georgia,serif)!important}
 html body #content .mc .mc-n{color:#b3261e!important}
+/* Repères de lecture : Piège, Instant réflexe, Il faut y penser, Instant examen fédéral.
+   Petits, lisibles, cliquables : ils ouvrent leur fenêtre comme un mot vert. */
+.mc [data-flag]{display:inline-flex;align-items:center;gap:5px;margin:0 2px;padding:1px 8px 2px;border-radius:999px;
+ font-size:.78em;font-weight:700;line-height:1.5;letter-spacing:.01em;text-decoration:none;cursor:pointer;
+ border:1.5px solid currentColor;background:#fff;vertical-align:baseline}
+.mc [data-flag]::before{font-weight:700}
+.mc [data-flag="piege"]{color:#9a3412}
+.mc [data-flag="piege"]::before{content:"⚠"}
+.mc [data-flag="reflexe"]{color:#1d4ed8}
+.mc [data-flag="reflexe"]::before{content:"⚡"}
+.mc [data-flag="penser"]{color:#6d28d9}
+.mc [data-flag="penser"]::before{content:"◎"}
+.mc [data-flag="federal"]{color:#15803d}
+.mc [data-flag="federal"]::before{content:"★"}
+.mc [data-flag]:hover,.mc [data-flag]:focus-visible{box-shadow:0 0 0 3px #0000000f;filter:brightness(.9)}
