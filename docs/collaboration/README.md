@@ -1,3 +1,7 @@
+## À LIRE EN PREMIER — cumul OBLIGATOIRE des instructions Claude Code et Codex (8 octobre 2026)
+
+Toutes les instructions validées sont consolidées dans **[CUMUL_INSTRUCTIONS_CLAUDE_CODEX.pdf](instructions/CUMUL_INSTRUCTIONS_CLAUDE_CODEX.pdf)** (source `.md` au même endroit). Chaque règle est obligatoire. Codex le lit, l’applique et confirme son alignement dans `docs/collaboration/receipts/CODEX_ALIGNEMENT_CUMUL_2026-10-08.md`. Ne jamais doubler le travail de l’autre IA : consulter la pile `organisation/PILE_FRAGMENTS.html` et les espaces de remise avant d’ouvrir un cours.
+
 > **Protocole remplacé pour les travaux nouveaux, 8 octobre 2026.** Lire [le protocole par fragment](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [COORDINATION.md](../../COORDINATION.md). Fragment entier achevé et auto-revu avant audit croisé unique ; l’autre IA corrige puis injecte, INJECTÉ immuable, HTML clair. Les dispositions incompatibles ci-dessous sont conservées comme historique et ne donnent plus d’ordre d’action. Aucun chapitre isolé ne constitue une remise finale.
 
 # MEDINA — collaboration Codex et Claude
