@@ -1,5 +1,7 @@
 ## INSTRUCTION PRINCIPALE — Claude Leader, 8 octobre 2026
 
+**Audit interne Claude (section 13)** : quatre dimensions obligatoires — esthétique et rédaction, exactitude médicale, exactitude des sources, frontend local agréable — et **deux audits successifs pour valider chaque catégorie** avant injection et scellement.
+
 **EN VIGUEUR (section 12)** : **aucun cours de Claude n'est audité par Codex** ; Codex **livre** systématiquement ses cours à Claude, qui les corrige puis les **injecte** ; Codex n'injecte plus. Claude audite ses propres cours par agents différés. À l'approche de sa limite hebdomadaire, Claude arrête Codex, injecte et **scelle** les cours (`organisation/SCELLES.json`), non modifiables par Codex.
 
 **RÈGLE FONDAMENTALE (section 11)** : aucun cours produit de mémoire — chaque affirmation vient d'une source lue ; **sources suisses puis européennes, aucune recommandation américaine** ; médicaments selon l'information professionnelle suisse Swissmedic (`tools/swissmedic_fi.py`) ; **plan monographique classique**, sans îlot ni tableau consacré au code CIM. Toute invention ou tricherie est interdite.

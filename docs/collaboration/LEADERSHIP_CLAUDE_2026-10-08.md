@@ -103,3 +103,14 @@ Consigne directe de Vial :
 2. **Codex livre systématiquement ses cours à Claude.** Claude les corrige (règle fondamentale, section 11) puis les injecte. Codex n'injecte plus lui-même.
 3. **Claude ne s'arrête pas tant que le projet n'est pas terminé.**
 4. **À l'approche de la limite hebdomadaire**, Claude : arrête Codex (signal d'arrêt dans `SIGNAUX_CODEX.json` et en tête d'`AGENTS.md`) ; sauvegarde et injecte tout le travail ; **scelle** les cours injectés (liste d'empreintes dans `organisation/SCELLES.json`, contrôle bloquant de non-modification par Codex) ; livre le lien de l'accueil de MEDINA.
+
+## 13. Audit interne Claude — contenu obligatoire et double validation (8 octobre 2026)
+
+Consigne de Vial. L'audit interne par agent différé vérifie **quatre dimensions**, chacune consignée dans le rapport :
+
+1. **Esthétique et qualité rédactionnelle** : français merveilleux à lire, riche, précis, sans excès ; plan monographique ; tableaux introduits et commentés ; aucune phrase de fabrication.
+2. **Exactitude de toutes les données scientifiques et médicales** : chiffres, seuils, mécanismes, doses (information professionnelle suisse Swissmedic), cohérence entre onglets.
+3. **Exactitude des ressources et des sources** : chaque référence existe, a été lue, est datée, dit bien ce qui lui est attribué ; sources suisses puis européennes, aucune recommandation américaine comme fondement.
+4. **Frontend local travaillé et spécifique, agréable au maximum** : rendu réel dans le navigateur (ordinateur et mobile), lisibilité, hiérarchie visuelle, fenêtres, tableaux et figures propres, aucune erreur ; deux captures dans le panneau latéral.
+
+**Double validation** : une catégorie (un cours) n'est validée qu'après **deux audits** couvrant les quatre dimensions. Chaque relecteur différé conduit deux passes d'audit successives et distinctes (la seconde relit le résultat corrigé de la première) ; une catégorie n'est injectée et scellée qu'après la seconde passe sans réserve bloquante.
