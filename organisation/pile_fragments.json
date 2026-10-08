@@ -4,502 +4,9 @@
  "queues": {
   "Claude": [
    {
-    "id": "S02",
-    "label": "P-02-Pneumologie",
-    "position": "actif",
-    "categories": 53,
-    "covered": 53,
-    "blocks": [
-     {
-      "block": "I26-I28",
-      "title": "Affections cardiopulmonaires et maladies de la circulation pulmonaire",
-      "lessons": [
-       {
-        "code": "I26",
-        "title": "Embolie pulmonaire",
-        "course": "I26",
-        "course_title": "Embolie pulmonaire aiguë",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "I27",
-        "title": "Autres affections cardiopulmonaires",
-        "course": "I27",
-        "course_title": "Hypertension pulmonaire, cœur pulmonaire chronique et maladies des vaisseaux pulmonaires",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "I28",
-        "title": "Autres maladies des vaisseaux pulmonaires",
-        "course": "I27",
-        "course_title": "Hypertension pulmonaire, cœur pulmonaire chronique et maladies des vaisseaux pulmonaires",
-        "state": "en production",
-        "federal": true
-       }
-      ]
-     },
-     {
-      "block": "J09-J18",
-      "title": "Grippe et pneumopathie",
-      "lessons": [
-       {
-        "code": "J09",
-        "title": "Grippe à virus d’influenza zoonotique ou pandémique identifié",
-        "course": "J10",
-        "course_title": "Grippe",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J10",
-        "title": "Grippe, à virus d’influenza saisonnière identifié",
-        "course": "J10",
-        "course_title": "Grippe",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J11",
-        "title": "Grippe, virus non identifié",
-        "course": "J10",
-        "course_title": "Grippe",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J12",
-        "title": "Pneumonie virale, non classées ailleurs",
-        "course": "J12",
-        "course_title": "Pneumopathies virales et à autres agents infectieux",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J13",
-        "title": "Pneumonie due à Streptococcus pneumoniae",
-        "course": "J18",
-        "course_title": "Pneumonies de l’adulte",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J14",
-        "title": "Pneumonie due à Haemophilus influenzae",
-        "course": "J18",
-        "course_title": "Pneumonies de l’adulte",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J15",
-        "title": "Pneumonies bactériennes, non classées ailleurs",
-        "course": "J18",
-        "course_title": "Pneumonies de l’adulte",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J16",
-        "title": "Pneumonie due à d’autres micro-organismes infectieux, non classée ailleurs",
-        "course": "J12",
-        "course_title": "Pneumopathies virales et à autres agents infectieux",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J17",
-        "title": "Pneumonie au cours de maladies classées ailleurs",
-        "course": "J12",
-        "course_title": "Pneumopathies virales et à autres agents infectieux",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J18",
-        "title": "Pneumonie à micro-organisme non précisé",
-        "course": "J18",
-        "course_title": "Pneumonies de l’adulte",
-        "state": "injecté au canonique",
-        "federal": true
-       }
-      ]
-     },
-     {
-      "block": "J20-J22",
-      "title": "Autres affections aiguës des voies respiratoires inférieures",
-      "lessons": [
-       {
-        "code": "J20",
-        "title": "Bronchite aiguë",
-        "course": "J40",
-        "course_title": "Bronchite",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J21",
-        "title": "Bronchiolite aiguë",
-        "course": "J21",
-        "course_title": "Bronchiolite aiguë et infections aiguës des voies respiratoires inférieures sans précision",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J22",
-        "title": "Infections aiguës des voies respiratoires inférieures, sans précision",
-        "course": "J21",
-        "course_title": "Bronchiolite aiguë et infections aiguës des voies respiratoires inférieures sans précision",
-        "state": "en production",
-        "federal": false
-       }
-      ]
-     },
-     {
-      "block": "J40-J47",
-      "title": "Maladies chroniques des voies respiratoires inférieures",
-      "lessons": [
-       {
-        "code": "J40",
-        "title": "Bronchite, non précisée comme aiguë ou chronique",
-        "course": "J40",
-        "course_title": "Bronchite",
-        "state": "injecté au canonique",
-        "federal": false
-       },
-       {
-        "code": "J41",
-        "title": "Bronchite chronique simple et mucopurulente",
-        "course": "J40",
-        "course_title": "Bronchite",
-        "state": "injecté au canonique",
-        "federal": false
-       },
-       {
-        "code": "J42",
-        "title": "Bronchite chronique, sans précision",
-        "course": "J40",
-        "course_title": "Bronchite",
-        "state": "injecté au canonique",
-        "federal": false
-       },
-       {
-        "code": "J43",
-        "title": "Emphysème",
-        "course": "J44",
-        "course_title": "Bronchopneumopathie chronique obstructive",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J44",
-        "title": "Autres maladies pulmonaires obstructives chroniques",
-        "course": "J44",
-        "course_title": "Bronchopneumopathie chronique obstructive",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J45",
-        "title": "Asthme",
-        "course": "J45",
-        "course_title": "Asthme",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J46",
-        "title": "État de mal asthmatique",
-        "course": "J45",
-        "course_title": "Asthme",
-        "state": "injecté au canonique",
-        "federal": true
-       },
-       {
-        "code": "J47",
-        "title": "Bronchectasie",
-        "course": "J47",
-        "course_title": "Bronchiectasies",
-        "state": "en production",
-        "federal": true
-       }
-      ]
-     },
-     {
-      "block": "J60-J70",
-      "title": "Maladies du poumon dues à des agents externes",
-      "lessons": [
-       {
-        "code": "J60",
-        "title": "Pneumoconiose des mineurs de charbon",
-        "course": "J60",
-        "course_title": "Pneumoconioses",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J61",
-        "title": "Pneumoconiose due à l’amiante et à d’autres fibres minérales",
-        "course": "J60",
-        "course_title": "Pneumoconioses",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J62",
-        "title": "Pneumoconiose due à la poussière de silice",
-        "course": "J60",
-        "course_title": "Pneumoconioses",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J63",
-        "title": "Pneumoconiose due à d’autres poussières inorganiques",
-        "course": "J60",
-        "course_title": "Pneumoconioses",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J64",
-        "title": "Pneumoconiose, sans précision",
-        "course": "J60",
-        "course_title": "Pneumoconioses",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J65",
-        "title": "Pneumoconiose associée à la tuberculose",
-        "course": "J60",
-        "course_title": "Pneumoconioses",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J66",
-        "title": "Affections des voies aériennes dues à des poussières organiques précisées",
-        "course": "J67",
-        "course_title": "Pneumopathies d’hypersensibilité et maladies des voies aériennes dues aux poussières organiques",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J67",
-        "title": "Alvéolite allergique due aux poussières organiques",
-        "course": "J67",
-        "course_title": "Pneumopathies d’hypersensibilité et maladies des voies aériennes dues aux poussières organiques",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J68",
-        "title": "Affections respiratoires dues à l’inhalation d’agents chimiques, d’émanations, de fumées et de gaz",
-        "course": "J69",
-        "course_title": "Pneumopathies d’inhalation, chimiques, médicamenteuses et radiques",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J69",
-        "title": "Pneumonie due à des substances solides et liquides",
-        "course": "J69",
-        "course_title": "Pneumopathies d’inhalation, chimiques, médicamenteuses et radiques",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J70",
-        "title": "Affections respiratoires dues à d’autres agents externes",
-        "course": "J69",
-        "course_title": "Pneumopathies d’inhalation, chimiques, médicamenteuses et radiques",
-        "state": "en production",
-        "federal": false
-       }
-      ]
-     },
-     {
-      "block": "J80-J84",
-      "title": "Autres maladies respiratoires touchant principalement le tissu interstitiel",
-      "lessons": [
-       {
-        "code": "J80",
-        "title": "Syndrome de détresse respiratoire aiguë de l’enfant, de l’adolescent et de l’adulte [SDRA]",
-        "course": "J80",
-        "course_title": "Syndrome de détresse respiratoire aiguë et œdème pulmonaire non cardiogénique",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J81",
-        "title": "Œdème pulmonaire",
-        "course": "J80",
-        "course_title": "Syndrome de détresse respiratoire aiguë et œdème pulmonaire non cardiogénique",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J82",
-        "title": "Eosinophilie pulmonaire, non classée ailleurs",
-        "course": "J84",
-        "course_title": "Pneumopathies interstitielles diffuses et éosinophilies pulmonaires",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J84",
-        "title": "Autres affections pulmonaires interstitielles",
-        "course": "J84",
-        "course_title": "Pneumopathies interstitielles diffuses et éosinophilies pulmonaires",
-        "state": "en production",
-        "federal": true
-       }
-      ]
-     },
-     {
-      "block": "J85-J86",
-      "title": "Maladies suppurées et nécrotiques des voies respiratoires inférieures",
-      "lessons": [
-       {
-        "code": "J85",
-        "title": "Abcès du poumon et du médiastin",
-        "course": "J85",
-        "course_title": "Abcès du poumon et du médiastin, gangrène pulmonaire et pyothorax",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J86",
-        "title": "Pyothorax",
-        "course": "J85",
-        "course_title": "Abcès du poumon et du médiastin, gangrène pulmonaire et pyothorax",
-        "state": "en production",
-        "federal": false
-       }
-      ]
-     },
-     {
-      "block": "J90-J94",
-      "title": "Autres affections de la plèvre",
-      "lessons": [
-       {
-        "code": "J90",
-        "title": "Épanchement pleural, non classé ailleurs",
-        "course": "J90",
-        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J91",
-        "title": "Épanchement pleural au cours de maladies classées ailleurs",
-        "course": "J90",
-        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J92",
-        "title": "Plaque pleurale",
-        "course": "J90",
-        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J93",
-        "title": "Pneumothorax",
-        "course": "J93",
-        "course_title": "Pneumothorax",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J94",
-        "title": "Autres affections pleurales",
-        "course": "J90",
-        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
-        "state": "en production",
-        "federal": true
-       }
-      ]
-     },
-     {
-      "block": "J95-J99",
-      "title": "Autres maladies de l’appareil respiratoire",
-      "lessons": [
-       {
-        "code": "J95",
-        "title": "Troubles respiratoires après des actes médicaux, non classés ailleurs",
-        "course": "J95",
-        "course_title": "Affections respiratoires après actes médicaux et autres maladies de l’appareil respiratoire",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J96",
-        "title": "Insuffisance respiratoire, non classée ailleurs",
-        "course": "J96",
-        "course_title": "Insuffisance respiratoire",
-        "state": "en production",
-        "federal": true
-       },
-       {
-        "code": "J98",
-        "title": "Autres troubles respiratoires",
-        "course": "J95",
-        "course_title": "Affections respiratoires après actes médicaux et autres maladies de l’appareil respiratoire",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "J99",
-        "title": "Troubles respiratoires au cours de maladies classées ailleurs",
-        "course": "J95",
-        "course_title": "Affections respiratoires après actes médicaux et autres maladies de l’appareil respiratoire",
-        "state": "en production",
-        "federal": false
-       }
-      ]
-     },
-     {
-      "block": "R00-R09",
-      "title": "Symptômes et signes relatifs aux appareils circulatoire et respiratoire",
-      "lessons": [
-       {
-        "code": "R04",
-        "title": "Hémorragie des voies respiratoires",
-        "course": "R04",
-        "course_title": "Hémorragie des voies respiratoires : hémoptysie, épistaxis et autres saignements",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "R05",
-        "title": "Toux",
-        "course": "R05",
-        "course_title": "Toux",
-        "state": "en production",
-        "federal": false
-       },
-       {
-        "code": "R06",
-        "title": "Anomalies de la respiration",
-        "course": "R06",
-        "course_title": "Dyspnée et anomalies de la respiration",
-        "state": "en production",
-        "federal": false
-       }
-      ]
-     }
-    ]
-   },
-   {
     "id": "S03",
     "label": "G-04-Gastroentérologie et hépatologie",
-    "position": "suivant",
+    "position": "actif",
     "categories": 67,
     "covered": 0,
     "blocks": [
@@ -1104,7 +611,7 @@
    {
     "id": "S05",
     "label": "E-06-Endocrinologie et métabolisme",
-    "position": "en file",
+    "position": "suivant",
     "categories": 73,
     "covered": 0,
     "blocks": [
@@ -6558,6 +6065,499 @@
         "course_title": "Hypotension artérielle et anomalies tensionnelles isolées",
         "state": "remis à Codex",
         "federal": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "S02",
+    "label": "P-02-Pneumologie",
+    "position": "remis pour audit croisé",
+    "categories": 53,
+    "covered": 53,
+    "blocks": [
+     {
+      "block": "I26-I28",
+      "title": "Affections cardiopulmonaires et maladies de la circulation pulmonaire",
+      "lessons": [
+       {
+        "code": "I26",
+        "title": "Embolie pulmonaire",
+        "course": "I26",
+        "course_title": "Embolie pulmonaire aiguë",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "I27",
+        "title": "Autres affections cardiopulmonaires",
+        "course": "I27",
+        "course_title": "Hypertension pulmonaire, cœur pulmonaire chronique et maladies des vaisseaux pulmonaires",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "I28",
+        "title": "Autres maladies des vaisseaux pulmonaires",
+        "course": "I27",
+        "course_title": "Hypertension pulmonaire, cœur pulmonaire chronique et maladies des vaisseaux pulmonaires",
+        "state": "remis à Codex",
+        "federal": true
+       }
+      ]
+     },
+     {
+      "block": "J09-J18",
+      "title": "Grippe et pneumopathie",
+      "lessons": [
+       {
+        "code": "J09",
+        "title": "Grippe à virus d’influenza zoonotique ou pandémique identifié",
+        "course": "J10",
+        "course_title": "Grippe",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J10",
+        "title": "Grippe, à virus d’influenza saisonnière identifié",
+        "course": "J10",
+        "course_title": "Grippe",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J11",
+        "title": "Grippe, virus non identifié",
+        "course": "J10",
+        "course_title": "Grippe",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J12",
+        "title": "Pneumonie virale, non classées ailleurs",
+        "course": "J12",
+        "course_title": "Pneumopathies virales et à autres agents infectieux",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J13",
+        "title": "Pneumonie due à Streptococcus pneumoniae",
+        "course": "J18",
+        "course_title": "Pneumonies de l’adulte",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J14",
+        "title": "Pneumonie due à Haemophilus influenzae",
+        "course": "J18",
+        "course_title": "Pneumonies de l’adulte",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J15",
+        "title": "Pneumonies bactériennes, non classées ailleurs",
+        "course": "J18",
+        "course_title": "Pneumonies de l’adulte",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J16",
+        "title": "Pneumonie due à d’autres micro-organismes infectieux, non classée ailleurs",
+        "course": "J12",
+        "course_title": "Pneumopathies virales et à autres agents infectieux",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J17",
+        "title": "Pneumonie au cours de maladies classées ailleurs",
+        "course": "J12",
+        "course_title": "Pneumopathies virales et à autres agents infectieux",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J18",
+        "title": "Pneumonie à micro-organisme non précisé",
+        "course": "J18",
+        "course_title": "Pneumonies de l’adulte",
+        "state": "injecté au canonique",
+        "federal": true
+       }
+      ]
+     },
+     {
+      "block": "J20-J22",
+      "title": "Autres affections aiguës des voies respiratoires inférieures",
+      "lessons": [
+       {
+        "code": "J20",
+        "title": "Bronchite aiguë",
+        "course": "J40",
+        "course_title": "Bronchite",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J21",
+        "title": "Bronchiolite aiguë",
+        "course": "J21",
+        "course_title": "Bronchiolite aiguë et infections aiguës des voies respiratoires inférieures sans précision",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J22",
+        "title": "Infections aiguës des voies respiratoires inférieures, sans précision",
+        "course": "J21",
+        "course_title": "Bronchiolite aiguë et infections aiguës des voies respiratoires inférieures sans précision",
+        "state": "remis à Codex",
+        "federal": false
+       }
+      ]
+     },
+     {
+      "block": "J40-J47",
+      "title": "Maladies chroniques des voies respiratoires inférieures",
+      "lessons": [
+       {
+        "code": "J40",
+        "title": "Bronchite, non précisée comme aiguë ou chronique",
+        "course": "J40",
+        "course_title": "Bronchite",
+        "state": "injecté au canonique",
+        "federal": false
+       },
+       {
+        "code": "J41",
+        "title": "Bronchite chronique simple et mucopurulente",
+        "course": "J40",
+        "course_title": "Bronchite",
+        "state": "injecté au canonique",
+        "federal": false
+       },
+       {
+        "code": "J42",
+        "title": "Bronchite chronique, sans précision",
+        "course": "J40",
+        "course_title": "Bronchite",
+        "state": "injecté au canonique",
+        "federal": false
+       },
+       {
+        "code": "J43",
+        "title": "Emphysème",
+        "course": "J44",
+        "course_title": "Bronchopneumopathie chronique obstructive",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J44",
+        "title": "Autres maladies pulmonaires obstructives chroniques",
+        "course": "J44",
+        "course_title": "Bronchopneumopathie chronique obstructive",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J45",
+        "title": "Asthme",
+        "course": "J45",
+        "course_title": "Asthme",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J46",
+        "title": "État de mal asthmatique",
+        "course": "J45",
+        "course_title": "Asthme",
+        "state": "injecté au canonique",
+        "federal": true
+       },
+       {
+        "code": "J47",
+        "title": "Bronchectasie",
+        "course": "J47",
+        "course_title": "Bronchiectasies",
+        "state": "remis à Codex",
+        "federal": true
+       }
+      ]
+     },
+     {
+      "block": "J60-J70",
+      "title": "Maladies du poumon dues à des agents externes",
+      "lessons": [
+       {
+        "code": "J60",
+        "title": "Pneumoconiose des mineurs de charbon",
+        "course": "J60",
+        "course_title": "Pneumoconioses",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J61",
+        "title": "Pneumoconiose due à l’amiante et à d’autres fibres minérales",
+        "course": "J60",
+        "course_title": "Pneumoconioses",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J62",
+        "title": "Pneumoconiose due à la poussière de silice",
+        "course": "J60",
+        "course_title": "Pneumoconioses",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J63",
+        "title": "Pneumoconiose due à d’autres poussières inorganiques",
+        "course": "J60",
+        "course_title": "Pneumoconioses",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J64",
+        "title": "Pneumoconiose, sans précision",
+        "course": "J60",
+        "course_title": "Pneumoconioses",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J65",
+        "title": "Pneumoconiose associée à la tuberculose",
+        "course": "J60",
+        "course_title": "Pneumoconioses",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J66",
+        "title": "Affections des voies aériennes dues à des poussières organiques précisées",
+        "course": "J67",
+        "course_title": "Pneumopathies d’hypersensibilité et maladies des voies aériennes dues aux poussières organiques",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J67",
+        "title": "Alvéolite allergique due aux poussières organiques",
+        "course": "J67",
+        "course_title": "Pneumopathies d’hypersensibilité et maladies des voies aériennes dues aux poussières organiques",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J68",
+        "title": "Affections respiratoires dues à l’inhalation d’agents chimiques, d’émanations, de fumées et de gaz",
+        "course": "J69",
+        "course_title": "Pneumopathies d’inhalation, chimiques, médicamenteuses et radiques",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J69",
+        "title": "Pneumonie due à des substances solides et liquides",
+        "course": "J69",
+        "course_title": "Pneumopathies d’inhalation, chimiques, médicamenteuses et radiques",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J70",
+        "title": "Affections respiratoires dues à d’autres agents externes",
+        "course": "J69",
+        "course_title": "Pneumopathies d’inhalation, chimiques, médicamenteuses et radiques",
+        "state": "remis à Codex",
+        "federal": false
+       }
+      ]
+     },
+     {
+      "block": "J80-J84",
+      "title": "Autres maladies respiratoires touchant principalement le tissu interstitiel",
+      "lessons": [
+       {
+        "code": "J80",
+        "title": "Syndrome de détresse respiratoire aiguë de l’enfant, de l’adolescent et de l’adulte [SDRA]",
+        "course": "J80",
+        "course_title": "Syndrome de détresse respiratoire aiguë et œdème pulmonaire non cardiogénique",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J81",
+        "title": "Œdème pulmonaire",
+        "course": "J80",
+        "course_title": "Syndrome de détresse respiratoire aiguë et œdème pulmonaire non cardiogénique",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J82",
+        "title": "Eosinophilie pulmonaire, non classée ailleurs",
+        "course": "J84",
+        "course_title": "Pneumopathies interstitielles diffuses et éosinophilies pulmonaires",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J84",
+        "title": "Autres affections pulmonaires interstitielles",
+        "course": "J84",
+        "course_title": "Pneumopathies interstitielles diffuses et éosinophilies pulmonaires",
+        "state": "remis à Codex",
+        "federal": true
+       }
+      ]
+     },
+     {
+      "block": "J85-J86",
+      "title": "Maladies suppurées et nécrotiques des voies respiratoires inférieures",
+      "lessons": [
+       {
+        "code": "J85",
+        "title": "Abcès du poumon et du médiastin",
+        "course": "J85",
+        "course_title": "Abcès du poumon et du médiastin, gangrène pulmonaire et pyothorax",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J86",
+        "title": "Pyothorax",
+        "course": "J85",
+        "course_title": "Abcès du poumon et du médiastin, gangrène pulmonaire et pyothorax",
+        "state": "remis à Codex",
+        "federal": false
+       }
+      ]
+     },
+     {
+      "block": "J90-J94",
+      "title": "Autres affections de la plèvre",
+      "lessons": [
+       {
+        "code": "J90",
+        "title": "Épanchement pleural, non classé ailleurs",
+        "course": "J90",
+        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J91",
+        "title": "Épanchement pleural au cours de maladies classées ailleurs",
+        "course": "J90",
+        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J92",
+        "title": "Plaque pleurale",
+        "course": "J90",
+        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J93",
+        "title": "Pneumothorax",
+        "course": "J93",
+        "course_title": "Pneumothorax",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J94",
+        "title": "Autres affections pleurales",
+        "course": "J90",
+        "course_title": "Épanchements pleuraux et autres affections de la plèvre",
+        "state": "remis à Codex",
+        "federal": true
+       }
+      ]
+     },
+     {
+      "block": "J95-J99",
+      "title": "Autres maladies de l’appareil respiratoire",
+      "lessons": [
+       {
+        "code": "J95",
+        "title": "Troubles respiratoires après des actes médicaux, non classés ailleurs",
+        "course": "J95",
+        "course_title": "Affections respiratoires après actes médicaux et autres maladies de l’appareil respiratoire",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J96",
+        "title": "Insuffisance respiratoire, non classée ailleurs",
+        "course": "J96",
+        "course_title": "Insuffisance respiratoire",
+        "state": "remis à Codex",
+        "federal": true
+       },
+       {
+        "code": "J98",
+        "title": "Autres troubles respiratoires",
+        "course": "J95",
+        "course_title": "Affections respiratoires après actes médicaux et autres maladies de l’appareil respiratoire",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "J99",
+        "title": "Troubles respiratoires au cours de maladies classées ailleurs",
+        "course": "J95",
+        "course_title": "Affections respiratoires après actes médicaux et autres maladies de l’appareil respiratoire",
+        "state": "remis à Codex",
+        "federal": false
+       }
+      ]
+     },
+     {
+      "block": "R00-R09",
+      "title": "Symptômes et signes relatifs aux appareils circulatoire et respiratoire",
+      "lessons": [
+       {
+        "code": "R04",
+        "title": "Hémorragie des voies respiratoires",
+        "course": "R04",
+        "course_title": "Hémorragie des voies respiratoires : hémoptysie, épistaxis et autres saignements",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "R05",
+        "title": "Toux",
+        "course": "R05",
+        "course_title": "Toux",
+        "state": "remis à Codex",
+        "federal": false
+       },
+       {
+        "code": "R06",
+        "title": "Anomalies de la respiration",
+        "course": "R06",
+        "course_title": "Dyspnée et anomalies de la respiration",
+        "state": "remis à Codex",
+        "federal": false
        }
       ]
      }
