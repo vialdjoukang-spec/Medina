@@ -1,0 +1,72 @@
+from cardio_1 import a, G
+# J12 — Pneumopathies virales et à autres agents infectieux (P-02-Pneumologie)
+
+def cim(k, titre, d, ref=None):
+    a(k, [(k, 'code de la classification internationale des maladies (CIM-10-GM 2024), ' + titre[0].lower() + titre[1:])], titre, '<p>' + d + '</p>', ref)
+
+# Codes CIM-10-GM 2024 des catégories J12, J16 et J17
+cim('J12.0', 'Pneumonie adénovirale', 'Pneumonie dont l’adénovirus est l’agent prouvé.', 'j12-adeno')
+cim('J12.1', 'Pneumonie due au virus respiratoire syncytial', 'Pneumonie dont le VRS est l’agent prouvé.', 'j12-vrs')
+cim('J12.2', 'Pneumonie due aux virus paragrippaux', 'Pneumonie due aux virus paragrippaux de types 1 à 4.', 'j12-piv')
+cim('J12.3', 'Pneumonie due au métapneumovirus humain', 'Pneumonie dont le métapneumovirus humain est l’agent prouvé.', 'j12-hmpv')
+cim('J12.8', 'Autres pneumonies virales', 'Pneumonie due à un autre virus identifié, dont le SARS-CoV-2 en Suisse (avec U07.1!), le rhinovirus et les coronavirus saisonniers.', 'j12-codage-covid')
+cim('J12.9', 'Pneumonie virale, sans précision', 'Pneumonie présumée virale sans identification de l’agent.')
+cim('J15.7', 'Pneumonie due à Mycoplasma pneumoniae', 'Pneumonie bactérienne traitée dans le cours J18.')
+cim('J17.0', 'Pneumonie au cours de maladies bactériennes classées ailleurs', 'Code astérisque, toujours après le code dague de la maladie (coqueluche, nocardiose, actinomycose…).')
+cim('J17.1', 'Pneumonie au cours de maladies virales classées ailleurs', 'Code astérisque employé avec la rougeole, la rubéole, la varicelle ou la maladie à cytomégalovirus.')
+cim('J17.2', 'Pneumonie au cours de mycoses', 'Code astérisque employé avec l’aspergillose, la candidose, la coccidioïdomycose ou l’histoplasmose.', 'j12-aspergillose')
+cim('J17.3', 'Pneumonie au cours de maladies parasitaires', 'Code astérisque employé avec l’ascaridiase, la schistosomiase ou la toxoplasmose.')
+cim('J17.8', 'Pneumonie au cours d’autres maladies classées ailleurs', 'Code astérisque employé avec la fièvre Q, la psittacose, les spirochétoses non classées ailleurs ou le rhumatisme articulaire aigu.', 'j12-psittacose')
+cim('U07.1', 'COVID-19, virus identifié', 'Code secondaire (point d’exclamation) : la manifestation, par exemple J12.8, est codée d’abord.', 'j12-codage-covid')
+cim('U07.2', 'COVID-19, virus non identifié', 'Code secondaire pour un COVID-19 confirmé cliniquement et épidémiologiquement sans test de laboratoire.', 'j12-codage-covid')
+cim('U09.9', 'Affection post-COVID-19, sans précision', 'Code secondaire ajouté aux manifestations d’une affection post-COVID-19.', 'j12-postcovid')
+cim('J12.82', 'Pneumonie due au COVID-19 (CIM-10-CM américaine)', 'Code américain, absent de la CIM-10-GM 2024 et non employé en Suisse.', 'j12-codage-covid')
+cim('P23.0', 'Pneumonie congénitale virale', 'Pneumonie virale acquise avant ou pendant la naissance, exclue de J12.')
+cim('P23.1', 'Pneumonie congénitale à Chlamydia', 'Pneumonie du nourrisson à Chlamydia trachomatis transmise à l’accouchement, exclue de J16.0.')
+cim('B48.5', 'Pneumocystose', 'Code de la pneumocystose dans la CIM-10-GM, exclue de J16.')
+cim('B97.4', 'Virus respiratoire syncytial, cause de maladies classées dans d’autres chapitres', 'Code d’agent ajouté au code de la maladie.')
+cim('B05.2', 'Rougeole compliquée d’une pneumonie', 'Code dague, suivi de J17.1*.', 'j12-rougeole')
+cim('B06.8', 'Rubéole avec autres complications', 'Code dague employé avec J17.1* pour la pneumonie rubéoleuse.')
+cim('B01.2', 'Pneumonie varicelleuse', 'Code dague, suivi de J17.1*.', 'j12-varicelle')
+cim('B25.0', 'Pneumonie à cytomégalovirus', 'Code dague, suivi de J17.1*.', 'j12-cmv')
+cim('B44.0', 'Aspergillose pulmonaire invasive', 'Code dague employé avec J17.2*.', 'j12-aspergillose')
+cim('B44.1', 'Autres aspergilloses pulmonaires', 'Code dague employé avec J17.2*.', 'j12-aspergillose')
+cim('B37.1', 'Candidose pulmonaire', 'Code dague employé avec J17.2*.')
+cim('B77.8', 'Ascaridiase avec autres complications', 'Code dague employé avec J17.3* (infiltrats pulmonaires de la migration larvaire).')
+cim('B58.3', 'Toxoplasmose pulmonaire', 'Code dague employé avec J17.3*.')
+cim('A69.8', 'Autres infections précisées à spirochètes', 'Code dague employé avec J17.8*.')
+cim('A42.0', 'Actinomycose pulmonaire', 'Code dague employé avec J17.0*.')
+cim('A22.1', 'Charbon pulmonaire', 'Code dague employé avec J17.0*.')
+cim('A01.0', 'Fièvre typhoïde', 'Code dague employé avec J17.0* en cas de pneumonie.')
+cim('A54.8', 'Autres infections gonococciques', 'Code dague employé avec J17.0* en cas de pneumonie gonococcique.')
+cim('A43.0', 'Nocardiose pulmonaire', 'Code dague employé avec J17.0*.')
+cim('A02.2', 'Infections localisées à Salmonella', 'Code dague employé avec J17.0* en cas de pneumonie à Salmonella.')
+cim('A21.2', 'Tularémie pulmonaire', 'Code dague employé avec J17.0*.')
+a('CIM-10-CM',[('CIM','Classification Internationale des Maladies'),('10','dixième révision'),('CM','Clinical Modification (modification clinique)')],'Classification internationale des maladies, dixième révision, modification clinique américaine','<p>Version américaine de la CIM-10, qui comporte des sous-codes absents de la CIM-10-GM employée en Suisse, par exemple J12.82.</p>')
+
+# Biologie et virologie
+a('ECA2',[('E','Enzyme de'),('C','Conversion de l’'),('A','Angiotensine'),('2','de type 2')],'Enzyme de conversion de l’angiotensine 2','<p>Enzyme membranaire qui transforme l’angiotensine II en angiotensine 1-7 ; récepteur de la protéine Spike du SARS-CoV-2. Équivalent anglais : ACE2.</p>','j12-ace2')
+a('TMPRSS2',[('T','TransMembrane (transmembranaire)'),('PR','PRotease (protéase)'),('SS','Serine (à sérine)'),('2','numéro 2')],'Protéase transmembranaire à sérine 2','<p>Protéase de la cellule hôte qui clive la protéine Spike du SARS-CoV-2 et permet la fusion des membranes.</p>','j12-ace2')
+a('RIG-I',[('R','Retinoic acid (acide rétinoïque)-'),('I','Inducible (inductible)'),('G','Gene (gène)'),('I','I (numéro un)')],'Gène I inductible par l’acide rétinoïque','<p>Capteur cytoplasmique de l’ARN viral qui déclenche la production des interférons de type I.</p>','j12-interferon')
+a('JAK1',[('JAK','JAnus Kinase'),('1','numéro 1')],'Janus kinase 1','<p>Tyrosine kinase associée aux récepteurs de nombreuses cytokines, dont l’interleukine 6 et les interférons. Le baricitinib et le ruxolitinib inhibent JAK1 et JAK2.</p>','j12-il6')
+a('3CL',[('3C','3C-like (apparentée à la protéase 3C des picornavirus)'),('L','Like (semblable)')],'Protéase de type 3C','<p>Autre nom de la protéase principale du SARS-CoV-2, cible du nirmatrelvir.</p>','j12-d-nirma')
+a('AS01E',[('AS','Adjuvant System (système adjuvant)'),('01','numéro 01'),('E','formulation E (demi-dose)')],'Système adjuvant AS01E','<p>Adjuvant liposomal contenant du MPL et de la saponine QS-21, employé dans l’Arexvy pour renforcer la réponse des lymphocytes T CD4 du sujet âgé.</p>','j12-vacc-vrs')
+a('Warthin-Finkeldey',[('Warthin-Finkeldey','nom propre : Aldred Scott Warthin et Wilhelm Finkeldey')],'Cellules géantes de Warthin-Finkeldey','<p>Cellules géantes multinucléées des tissus lymphoïdes et de l’épithélium respiratoire, caractéristiques de la rougeole.</p>','j12-rougeole')
+a('MPL',[('M','Monophosphoryl'),('P','(lipide A) monoPhosphorylé'),('L','Lipid (lipide)')],'Lipide A monophosphorylé','<p>Dérivé détoxifié d’un lipopolysaccharide bactérien qui stimule le récepteur de type Toll 4 ; composant des adjuvants AS01.</p>')
+a('QS-21',[('QS','Quillaja Saponaria'),('21','fraction 21')],'Saponine QS-21','<p>Saponine extraite de l’écorce de <i>Quillaja saponaria</i>, composant des adjuvants AS01.</p>')
+
+# Institutions et recommandations
+a('ECIL-4',[('E','European (européenne)'),('C','Conference on'),('I','Infections in'),('L','Leukaemia (leucémie)'),('4','quatrième édition')],'Quatrième conférence européenne sur les infections dans la leucémie (2013)','<p>Recommandations européennes sur la prévention et le traitement des infections virales chez le malade d’hématologie et le greffé de cellules souches.</p>')
+
+# Essais et études
+a('EPIC',[('E','Etiology of (étiologie de la)'),('P','Pneumonia in the'),('C','Community (pneumonie communautaire)')],'Étude EPIC (2015)','<p>Étude des Centers for Disease Control and Prevention sur les agents des pneumonies communautaires hospitalisées aux États-Unis.</p>','j12-epic')
+a('EPIC-HR',[('EPIC','Evaluation of Protease Inhibition for COVID-19'),('HR','in High-Risk patients (chez les malades à haut risque)')],'Essai EPIC-HR (2022)','<p>Nirmatrelvir-ritonavir contre placebo chez des adultes non vaccinés à haut risque : forte réduction des hospitalisations et des décès.</p>','j12-d-nirma')
+a('EPIC-SR',[('EPIC','Evaluation of Protease Inhibition for COVID-19'),('SR','in Standard-Risk patients (chez les malades à risque standard)')],'Essai EPIC-SR','<p>Nirmatrelvir-ritonavir chez des malades à risque standard : bénéfice principal non démontré.</p>','j12-d-nirma')
+a('PINETREE',[('PINETREE','nom d’essai, non développé lettre à lettre')],'Essai PINETREE (2022)','<p>Remdésivir pendant 3 jours chez des malades ambulatoires à haut risque : réduction des hospitalisations et des décès.</p>','j12-d-remde')
+a('ACTT-1',[('A','Adaptive (adaptatif)'),('C','COVID-19'),('T','Treatment (traitement)'),('T','Trial (essai)'),('1','premier essai')],'Essai ACTT-1 (2020)','<p>Remdésivir contre placebo chez des malades hospitalisés : délai de guérison raccourci.</p>','j12-d-remde')
+a('COV-BARRIER',[('COV-BARRIER','nom d’essai arrangé à partir de « COVID-19 » et « barrier », non développé lettre à lettre')],'Essai COV-BARRIER (2021)','<p>Baricitinib ajouté aux soins usuels chez des malades hospitalisés : baisse de la mortalité.</p>','j12-d-bari')
+a('RENOIR',[('RENOIR','nom d’essai arrangé à partir de « RSV vaccine Efficacy study iN Older adults Immunized against RSV disease », non strictement lettre à lettre')],'Essai RENOIR (2023)','<p>Abrysvo chez l’adulte de 60 ans ou plus.</p>','j12-vacc-vrs')
+a('AReSVi-006',[('AReSVi','nom d’essai formé autour de « RSV » (virus respiratoire syncytial), non développé lettre à lettre'),('006','étude numéro 006')],'Essai AReSVi-006 (2023)','<p>Arexvy chez l’adulte de 60 ans ou plus : efficacité contre les infections basses à VRS sur trois saisons.</p>','j12-vacc-vrs')
+
+# Produits
+a('mRESVIA',[('m','messenger (ARN messager)'),('RESVIA','nom commercial du vaccin')],'Vaccin à ARN messager contre le VRS (mRESVIA)','<p>Vaccin de Moderna codant la protéine F du VRS en préfusion, autorisé en Suisse chez l’adulte dès 18 ans.</p>','j12-vacc-vrs')

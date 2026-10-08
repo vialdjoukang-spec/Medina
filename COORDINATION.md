@@ -1,3 +1,15 @@
+## Captures de chapitre — règle levée (Vial, 8 octobre 2026)
+
+Vial : « plus besoin de Capture ; continue la production de cours comme à l’accoutumé, terme interactif cliquable et respect des instructions ». Les captures systématiques par chapitre (ancienne R-19.8/R-19.9) ne sont plus exigées, ni pour Claude ni pour Codex ; toutes les autres règles du cumul restent obligatoires.
+
+## À LIRE EN PREMIER — cumul OBLIGATOIRE des instructions Claude Code et Codex (8 octobre 2026)
+
+Toutes les instructions validées sont consolidées dans **[CUMUL_INSTRUCTIONS_CLAUDE_CODEX.pdf](docs/collaboration/instructions/CUMUL_INSTRUCTIONS_CLAUDE_CODEX.pdf)** (source `.md` au même endroit). Chaque règle est obligatoire. Codex le lit, l’applique et confirme son alignement dans `docs/collaboration/receipts/CODEX_ALIGNEMENT_CUMUL_2026-10-08.md`. Ne jamais doubler le travail de l’autre IA : consulter la pile `organisation/PILE_FRAGMENTS.html` et les espaces de remise avant d’ouvrir un cours.
+
+## Consigne la plus récente — chaîne continue, 8 octobre 2026
+
+Lire d’abord [CONSIGNES_VIAL_2026-10-08_CHAINE_CONTINUE.pdf](docs/collaboration/instructions/CONSIGNES_VIAL_2026-10-08_CHAINE_CONTINUE.pdf) (source `.md` au même endroit) : il s’applique à Claude et à Codex. **Processus continu sans attendre de relance ; arrêt seulement après remise de tous ses fragments ou sur STOP de Vial ; une correction demandée passe en priorité puis la production reprend.** Claude achève toutes les catégories CIM de C-01-Cardiologie puis remet le fragment à Codex. **Chaque fragment, Claude ou Codex : toutes les catégories CIM reçoivent un cours, aucune lacune.** Sous-agents parallèles par catégorie, un auteur par fichier. Bouton « Isolate Federal – CH Exam » : `organisation/federal_exam.json`, `engine/federal_exam.*`. Pile visible : `organisation/PILE_FRAGMENTS.html` (`tools/pile_fragments.py`).
+
 # MEDINA — coordination des 22 fragments
 
 Instruction reçue le **8 octobre 2026** : Vial demande de lire `Prompt_Codex.pdf` et de continuer. Le [protocole actif](docs/collaboration/PROTOCOLE_FRAGMENTS_2026-10-08.md) remplace les règles incompatibles de progression par remise d’un chapitre, d’audit après injection et de réouverture après injection. L’arrêt Codex antérieur est levé par cette demande de reprise. Les veilles automatiques restent en pause.

@@ -59,7 +59,7 @@
    result.q.delete('specialty'); result.q.delete('view');
   }
   if (result.type === 'specialty') {result.type = 'home'; result.id = '';}
-  if (result.type === 'clinical-skills' && F.id !== 'S01') result.type = 'home';
+  if (result.type === 'clinical-skills' && !window.MEDINA_CS_INFO) result.type = 'home';
   if (!['home','entry','search','notebook','method','clinical-skills'].includes(result.type)) return {type:'home', id:'', q:new URLSearchParams()};
   return result;
  };

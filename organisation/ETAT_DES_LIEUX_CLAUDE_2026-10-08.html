@@ -1,0 +1,52 @@
+<!doctype html><html lang="fr-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>État des lieux Claude</title>
+<style>:root{color-scheme:light;--art:#d40020;--art-light:#ffe3e6;--ink:#1b1b1b;--muted:#555;--line:#e3dcd6;--bg:#fbfaf7}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Atkinson Hyperlegible Next",Georgia,serif}
+main{max-width:980px;margin:auto;padding:24px 16px}h1{margin:0 0 4px;color:#1f3428}.lead{color:var(--muted);margin:0 0 22px}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 16px}
+h2{margin:0 0 4px;font-size:20px}.big{font-size:34px;font-weight:700;color:var(--art)}.sub{color:var(--muted);font-size:14px}
+.gauge{height:22px;border-radius:999px;background:var(--art-light);border:1px solid #f3b6be;overflow:hidden;margin:10px 0 4px}
+.gauge>i{display:block;height:100%;background:linear-gradient(90deg,#ff2a3d,var(--art));border-radius:999px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}th,td{text-align:left;padding:6px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:700}.mini{height:10px;border-radius:999px;background:var(--art-light);overflow:hidden;min-width:90px}.mini>i{display:block;height:100%;background:var(--art)}
+.ok{color:#1d6b35;font-weight:700}.wait{color:#8a5a00;font-weight:700}.zero{color:var(--art);font-weight:700}
+@media(max-width:600px){.big{font-size:28px}td:nth-child(5),th:nth-child(5){display:none}}</style></head>
+<body><main>
+<h1>État des lieux — missions de Claude</h1>
+<p class="lead">Mesure du 8 octobre 2026, au commit de sauvegarde de la branche <code>claude/vigilant-mayer-cevhwj</code>. Unité : catégories CIM-10-GM 2024 des 12 fragments attribués à Claude (C-01 inclus), soit 725 catégories. M-12 et E-22 n’ont aucune catégorie CIM au catalogue.</p>
+
+<div class="card"><h2>1. Créations</h2><div class="big">143 / 725 catégories · 19,7 %</div>
+<div class="gauge" role="img" aria-label="19,7 %"><i style="width:19.7%"></i></div>
+<div class="sub">C-01 et P-02 complets ; G-04 à 12/67 ; R-14 à 2/76 (cours canonique M06 existant). 9 cours G-04 interrompus au STOP, sauvegardés en brouillon.</div></div>
+
+<div class="card"><h2>2. Livraisons à Codex</h2><div class="big">2 / 12 fragments · 129 / 725 catégories · 17,8 %</div>
+<div class="gauge" role="img" aria-label="17,8 %"><i style="width:17.8%"></i></div>
+<div class="sub">C-01-Cardiologie (remise v2, blocages de réception levés) et P-02-Pneumologie (remise complète), dans <code>espace_partage/FRAGMENTS_CLAUDE_A_AUDITER_PAR_CODEX/</code>.</div></div>
+
+<div class="card"><h2>3. Injections réalisées par Codex</h2><div class="big">0 / 12 fragments · 0 %</div>
+<div class="gauge" role="img" aria-label="0 %"><i style="width:0.6%"></i></div>
+<div class="sub">Codex a accusé réception de C-01 (297 empreintes exactes, archive sur <code>main</code> à 7e5a648) sans injection ; P-02 n’est pas encore réceptionné. <code>fragment_status.json</code> : aucun fragment INJECTÉ.</div></div>
+
+<div class="card"><h2>Détail par fragment</h2><table>
+<tr><th>Fragment</th><th>Créées</th><th>Progression</th><th>Livraison</th><th>Injection</th></tr>
+<tr><td>C-01-Cardiologie</td><td>76/76</td><td><div class="mini"><i style="width:100%"></i></div></td><td class="ok">Remis v2</td><td class="wait">Réception sans injection</td></tr>
+<tr><td>P-02-Pneumologie</td><td>53/53</td><td><div class="mini"><i style="width:100%"></i></div></td><td class="ok">Remis</td><td class="wait">En attente</td></tr>
+<tr><td>G-04-Gastroentérologie et hépatologie</td><td>12/67</td><td><div class="mini"><i style="width:17.9%"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>E-06-Endocrinologie et métabolisme</td><td>0/73</td><td><div class="mini"><i style="width:0"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>H-08-Hématologie</td><td>0/27</td><td><div class="mini"><i style="width:0"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>G-10-Gynécologie et sénologie</td><td>0/32</td><td><div class="mini"><i style="width:0"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>M-12-Médecine des âges de la vie</td><td>0/0</td><td>—</td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>R-14-Rhumatologie et orthopédie</td><td>2/76</td><td><div class="mini"><i style="width:2.6%"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>O-17-Oto-rhino-laryngologie et médecine bucco-dentaire</td><td>0/56</td><td><div class="mini"><i style="width:0"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>O-18-Ophtalmologie</td><td>0/47</td><td><div class="mini"><i style="width:0"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>M-19-Médecine d’urgence, traumatologie et toxicologie</td><td>0/218</td><td><div class="mini"><i style="width:0"></i></div></td><td class="zero">—</td><td class="zero">—</td></tr>
+<tr><td>E-22-Éthique médicale, droit et communication</td><td>0/0</td><td>—</td><td class="zero">—</td><td class="zero">—</td></tr>
+</table></div>
+<div class="card"><h2>Autres livrables de la session</h2><table>
+<tr><td>Cumul obligatoire des instructions (245 règles, R-19.10)</td><td class="ok">Publié, accusé de lecture par Codex</td></tr>
+<tr><td>Bouton « Isolate Federal – CH Exam »</td><td class="ok">Fonctionnel ; listes S01 et S02 établies</td></tr>
+<tr><td>Sémiologie CS généralisée (registre) et module respiratoire</td><td class="ok">Fait ; module S02 remis</td></tr>
+<tr><td>Pile visible des fragments</td><td class="ok">organisation/PILE_FRAGMENTS.html</td></tr>
+<tr><td>PR vialdjoukang-spec/Medina#16</td><td class="ok">Contrôles au vert, aucun fil ouvert</td></tr>
+</table></div>
+</main></body></html>

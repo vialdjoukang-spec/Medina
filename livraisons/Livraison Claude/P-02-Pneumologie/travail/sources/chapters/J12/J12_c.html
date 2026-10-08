@@ -1,0 +1,224 @@
+
+<!-- ============ EXAMENS ============ -->
+<div class="panel" id="pE" hidden>
+<nav class="toc ui"><b>Examens des pneumopathies virales</b><ol><li><a href="#j12-e-1">Stratégie et hiérarchie</a></li><li><a href="#j12-e-2">Amplification génique et tests antigéniques</a></li><li><a href="#j12-e-3">Biologie sanguine et gazométrie</a></li><li><a href="#j12-e-4">Imagerie thoracique</a></li><li><a href="#j12-e-5">Prélèvements profonds et agents particuliers</a></li><li><a href="#j12-e-6">Entraînement</a></li></ol></nav>
+<div class="chap-body">
+<section class="ilot" id="j12-e-1"><h2><span class="n">1</span>Stratégie et hiérarchie</h2>
+<p>Chaque examen répond à une question précise. La pneumonie se prouve par l’imagerie, le virus par l’amplification génique, la bactérie associée par les cultures et les antigènes, et la gravité par l’oxymétrie et la gazométrie.</p>
+<table class="t"><tr><th>Question clinique</th><th>Examen</th><th>Statut</th></tr>
+<tr><td>Quel virus ?</td><td>PCR multiplex sur frottis nasopharyngé — <b>examen de référence</b></td><td>Indiqué chez le malade hospitalisé ; en ville si le résultat change la conduite</td></tr>
+<tr><td>SARS-CoV-2 en ville ?</td><td>Test antigénique rapide, confirmé par PCR s’il est négatif et que l’antiviral se discute</td><td>Conditionnel</td></tr>
+<tr><td>Y a-t-il une pneumonie ?</td><td>Radiographie thoracique</td><td>Indiquée à l’hôpital</td></tr>
+<tr><td>Atteinte atypique, immunodéprimé, complication</td><td>Tomodensitométrie thoracique ; angioscanner si embolie suspectée</td><td>Conditionnel</td></tr>
+<tr><td>Bactérie associée ?</td><td>Hémocultures, antigènes urinaires, expectoration, procalcitonine</td><td>Indiqué chez le malade hospitalisé</td></tr>
+<tr><td>Gravité ?</td><td>SpO₂ ; gazométrie artérielle si SpO₂ &lt; 92 % ou signes de fatigue</td><td>Indiqué</td></tr>
+<tr><td>Virus absent du nez, immunodéprimé</td><td>PCR sur aspiration trachéale ou lavage bronchoalvéolaire</td><td>Conditionnel</td></tr>
+<tr><td>Sérologie virale</td><td>Anticorps contre le VRS ou le SARS-CoV-2</td><td>Non indiquée pour le diagnostic aigu</td></tr></table>
+<p>Le médecin commence par la ligne « Quel virus ? » chez tout malade hospitalisé en saison épidémique, car le résultat décide de l’isolement et parfois du traitement. L’erreur fréquente est de demander une sérologie : l’OFSP la réserve à la recherche pour le VRS, et elle ne date pas une infection aiguë.</p>
+</section>
+
+<section class="ilot" id="j12-e-2"><h2><span class="n">2</span>Amplification génique et tests antigéniques</h2>
+<p>L’amplification génique copie de manière exponentielle une séquence de l’ARN ou de l’ADN viral. Le nombre de cycles nécessaires pour franchir le seuil de détection, appelé cycle seuil, est d’autant plus bas que la charge virale est élevée. La <button class="w" data-k="j12-pcr">fiche de la PCR multiplex</button> détaille la technique.</p>
+<h3>2.1 Prélèvement</h3>
+<p>Le frottis nasopharyngé profond, réalisé avec un écouvillon floqué introduit jusqu’au nasopharynx parallèlement au plancher nasal, donne le meilleur rendement. Un frottis seulement narinaire ou pharyngé baisse la sensibilité. Un prélèvement trop tardif, après le huitième jour, peut être négatif dans les voies hautes alors que le poumon reste atteint.</p>
+<h3>2.2 Cinétique des marqueurs</h3>
+<p>La figure suivante montre l’évolution typique des marqueurs du SARS-CoV-2 chez un adulte immunocompétent. Elle explique pourquoi le même test peut être positif ou négatif selon le jour.</p>
+<figure><svg viewBox="0 0 640 260" role="img" aria-label="Cinétique schématique des marqueurs du SARS-CoV-2" font-family="Inter,sans-serif" font-size="11"><g fill="none" stroke="#222" stroke-width="1.3">
+<path d="M50 20v200h570"/><path d="M50 214v12M150 214v12M250 214v12M350 214v12M450 214v12M550 214v12"/>
+<path d="M50 200 C 90 40, 130 40, 170 90 S 300 190, 450 205"/>
+<path d="M50 205 C 90 90, 120 90, 160 140 S 230 205, 260 208" stroke-dasharray="5 3"/>
+<path d="M120 210 C 200 60, 400 50, 610 60" stroke-dasharray="1 3" stroke-width="2"/>
+<path d="M120 120h500" stroke-dasharray="2 4" stroke-width="0.8"/></g>
+<g fill="#222"><text x="54" y="16">Niveau relatif</text><text x="560" y="246">Jours</text>
+<text x="46" y="240">−2</text><text x="146" y="240">3</text><text x="246" y="240">8</text><text x="346" y="240">13</text><text x="446" y="240">18</text><text x="546" y="240">23</text>
+<text x="180" y="66">ARN viral (PCR)</text><text x="175" y="160">Antigène</text><text x="430" y="48">Anticorps IgG</text>
+<text x="470" y="114">seuil de détection</text><text x="62" y="236">début des symptômes = jour 0</text></g></svg>
+<figcaption>Figure 3 — Cinétique schématique de l’ARN viral, de l’antigène et des anticorps au cours d’un COVID-19 de l’adulte immunocompétent. Schéma qualitatif ; l’ARN peut rester détectable plusieurs semaines chez l’immunodéprimé.</figcaption></figure>
+<p>L’antigène n’est détectable que pendant la phase de forte charge virale, autour du début des symptômes. L’ARN reste détectable plus longtemps, parfois au-delà de la contagiosité. Les anticorps apparaissent après la première semaine. Le piège est double : un antigène négatif au septième jour ne prouve pas l’absence de COVID-19, et une PCR encore positive au vingtième jour ne prouve pas une infection active.</p>
+<h3>2.3 Interpréter une PCR positive</h3>
+<div class="two">
+<div class="card"><h4>Arguments de causalité</h4><p>Virus dont le portage asymptomatique est rare (VRS, métapneumovirus, SARS-CoV-2, grippe) ; tableau compatible ; cycle seuil bas ; même virus dans un prélèvement profond.</p></div>
+<div class="card"><h4>Arguments de prudence</h4><p>Rhinovirus ou adénovirus, fréquents sans maladie ; cycle seuil élevé ; infection ancienne ; tableau de pneumonie bactérienne typique. Le cycle seuil n’est pas standardisé entre laboratoires et ne s’interprète pas comme un chiffre absolu.</p></div></div>
+<div class="trap"><span class="k">Erreur fréquente</span>Lever l’isolement sur un antigène négatif chez un malade hospitalisé avec une PCR positive. Le test antigénique est moins sensible ; la décision d’isolement suit la PCR, la durée depuis le début des symptômes et les directives d’hygiène de l’hôpital.</div>
+</section>
+
+<section class="ilot" id="j12-e-3"><h2><span class="n">3</span>Biologie sanguine et gazométrie</h2>
+<p>Aucun marqueur sanguin ne distingue à coup sûr une pneumonie virale d’une pneumonie bactérienne. La biologie sert à mesurer la gravité, à repérer une bactérie probable et à surveiller les traitements.</p>
+<table class="t"><tr><th>Examen</th><th>Valeur de référence chez l’adulte</th><th>Profil viral habituel</th><th>Profil évoquant une bactérie ou une complication</th></tr>
+<tr><td>Leucocytes</td><td>4 à 10 G/L</td><td>Normaux ou bas, lymphopénie</td><td>Neutrophilie franche</td></tr>
+<tr><td>Lymphocytes</td><td>1 à 4 G/L</td><td>&lt; 1 G/L fréquent dans le COVID-19 sévère</td><td>Lymphopénie profonde : chercher une infection opportuniste</td></tr>
+<tr><td>CRP</td><td>&lt; 5 mg/L</td><td>Souvent &lt; 100 mg/L</td><td>&gt; 100 à 200 mg/L, sans seuil discriminant</td></tr>
+<tr><td>Procalcitonine</td><td>&lt; 0,05 µg/L</td><td>&lt; 0,25 µg/L le plus souvent</td><td>&gt; 0,5 µg/L : bactérie plus probable</td></tr>
+<tr><td>LDH</td><td>Selon le laboratoire</td><td>Élevée si atteinte étendue</td><td>Très élevée : pneumocystose à évoquer</td></tr>
+<tr><td>D-dimères</td><td>&lt; 0,5 mg/L (seuil ajusté à l’âge après 50 ans)</td><td>Élevés dans le COVID-19 sévère</td><td>Hausse rapide : embolie pulmonaire</td></tr>
+<tr><td>NT-proBNP</td><td>Seuils selon l’âge</td><td>Hausse si décompensation cardiaque</td><td>Œdème cardiogénique associé</td></tr></table>
+<p>Le médecin regarde d’abord la procalcitonine et la formule leucocytaire, puis la LDH et les D-dimères pour chercher une complication. Exemple : un malade COVID-19 au dixième jour, avec des lymphocytes à 0,4 G/L, une procalcitonine à 0,08 µg/L et des D-dimères passés de 1,2 à 6 mg/L en 48 heures, fait évoquer une embolie pulmonaire plutôt qu’une surinfection. L’erreur est de traiter la CRP isolée : elle s’élève aussi dans la phase inflammatoire du COVID-19, et un inhibiteur de l’interleukine 6 l’effondre sans prouver la guérison.</p>
+<p>La <button class="w" data-k="j12-pct">procalcitonine</button> est produite par de nombreux tissus sous l’effet des cytokines bactériennes ; l’interféron gamma, élevé dans les viroses, freine sa production. Ce mécanisme explique sa valeur basse dans la virose pure et ses limites : elle peut monter dans un COVID-19 critique sans bactérie.</p>
+<h3>3.1 Gazométrie artérielle</h3>
+<p>La gazométrie mesure la PaO₂, la PaCO₂ et le pH. Le rapport PaO₂/FiO₂ quantifie l’atteinte : il est normalement supérieur à 400 mmHg ; une valeur inférieure ou égale à 300 mmHg sous pression positive définit un SDRA selon la définition de Berlin. Une PaCO₂ qui monte chez un malade tachypnéique signe la fatigue respiratoire et impose une assistance. La <button class="w" data-k="j12-shunt">fiche de l’effet shunt</button> explique pourquoi l’oxygène corrige mal une hypoxémie par shunt étendu.</p>
+</section>
+
+<section class="ilot" id="j12-e-4"><h2><span class="n">4</span>Imagerie thoracique</h2>
+<p>L’imagerie prouve la pneumonie et en décrit la distribution. Elle n’identifie pas l’agent, mais certains aspects orientent la recherche.</p>
+<h3>4.1 Radiographie</h3>
+<p>Elle montre des opacités réticulaires, réticulo-nodulaires ou alvéolaires, souvent bilatérales dans les viroses. Elle peut être normale au début d’un COVID-19 alors que la tomodensitométrie montre déjà du verre dépoli. L’OFSP décrit dans la pneumonie à VRS de l’adulte des infiltrats alvéolaires sous-segmentaires unilatéraux ou tachetés, parfois une condensation lobaire.</p>
+<h3>4.2 Tomodensitométrie</h3>
+<p>Le <button class="w" data-k="j12-tdm">verre dépoli (définition, valeur, pièges)</button> est une augmentation de densité qui laisse voir les vaisseaux. Le tableau suivant relie les aspects tomodensitométriques à leur interprétation habituelle.</p>
+<table class="t"><tr><th>Aspect</th><th>Agents évoqués</th><th>Limite</th></tr>
+<tr><td>Verre dépoli bilatéral, périphérique et postérieur, parfois en « crazy paving »</td><td>SARS-CoV-2</td><td>Aspect partagé avec d’autres virus et des pneumopathies non infectieuses</td></tr>
+<tr><td>Micronodules centrolobulaires en « arbre en bourgeons », épaississement bronchique</td><td>VRS, métapneumovirus, virus paragrippaux, <i>Mycoplasma</i></td><td>Aussi infections bactériennes des petites voies aériennes</td></tr>
+<tr><td>Condensations multifocales et verre dépoli</td><td>Adénovirus, grippe, surinfection</td><td>Non spécifique</td></tr>
+<tr><td>Verre dépoli diffus prédominant aux régions centrales, kystes</td><td>Pneumocystose</td><td>À évoquer chez l’immunodéprimé</td></tr>
+<tr><td>Nodule entouré d’un halo de verre dépoli</td><td>Aspergillose invasive</td><td>Chez le neutropénique surtout</td></tr></table>
+<p>Le médecin interprète l’aspect avec le terrain. Un verre dépoli diffus chez un malade atteint du VIH avec 80 CD4/µL évoque d’abord une pneumocystose, même si un rhinovirus est détecté. L’erreur fréquente est de conclure « COVID-19 typique » sur un scanner sans PCR.</p>
+<h3>4.3 Échographie pulmonaire</h3>
+<p>Elle montre des lignes B multiples, une ligne pleurale irrégulière et des petites condensations sous-pleurales. Elle est utile au lit pour suivre l’atteinte et distinguer un œdème cardiogénique, dont les lignes B sont plus homogènes et s’accompagnent d’épanchements bilatéraux.</p>
+</section>
+
+<section class="ilot" id="j12-e-5"><h2><span class="n">5</span>Prélèvements profonds et agents particuliers</h2>
+<p>Chez le malade intubé ou immunodéprimé, le nez peut être négatif alors que le poumon est infecté. L’aspiration trachéale et le lavage bronchoalvéolaire augmentent le rendement de la PCR et permettent la recherche simultanée de la pneumocystose, du cytomégalovirus, de l’aspergillose (galactomannane) et des mycobactéries.</p>
+<table class="t"><tr><th>Agent</th><th>Examen de choix</th><th>Piège</th></tr>
+<tr><td><i>Chlamydia pneumoniae</i></td><td>PCR respiratoire</td><td>Sérologie tardive, réactions croisées entre espèces</td></tr>
+<tr><td><i>Chlamydia psittaci</i></td><td>PCR respiratoire ; sérologie sur deux prélèvements</td><td>Exposition aux oiseaux à demander</td></tr>
+<tr><td><i>Coxiella burnetii</i> (fièvre Q)</td><td>Sérologie ; PCR sanguine au début</td><td>Exposition aux animaux de ferme</td></tr>
+<tr><td>Cytomégalovirus</td><td>PCR sanguine quantitative et PCR du lavage bronchoalvéolaire</td><td>Excrétion sans maladie fréquente : la biopsie prouve l’atteinte</td></tr>
+<tr><td>Rougeole</td><td>PCR sur frottis et urine ; IgM</td><td>Déclaration obligatoire à l’autorité cantonale</td></tr>
+<tr><td>Varicelle</td><td>PCR des vésicules</td><td>Diagnostic clinique suffisant pour commencer l’aciclovir</td></tr></table>
+<p>Le médecin choisit l’examen selon l’agent suspecté, puis anticipe le piège. Exemple : un éleveur de perruches avec une pneumonie, des céphalées et une splénomégalie reçoit une PCR respiratoire pour <i>Chlamydia psittaci</i> et une doxycycline sans attendre le résultat.</p>
+<button class="pareto-btn ui" data-k="pareto-j12-exam">▲ Loi de Pareto — Examens complémentaires</button>
+</section>
+
+<section class="ilot" id="j12-e-6"><h2><span class="n">6</span>Entraînement</h2>
+<div class="quiz ui"><p>Cas 1. Une femme de 74 ans, diabétique, a de la fièvre et une toux depuis 2 jours. SpO₂ 96 %, fréquence respiratoire 18 par minute, radiographie normale. Le test antigénique du SARS-CoV-2 est positif. Elle prend de la simvastatine et de l’amiodarone. Quelle conduite ?</p><button data-ok="0">Nirmatrelvir-ritonavir immédiatement, sans autre précaution</button><button data-ok="1">COVID-19 non sévère à risque modéré : nirmatrelvir-ritonavir à discuter, mais l’amiodarone est une contre-indication ; envisager une alternative</button><button data-ok="0">Dexaméthasone 6 mg par jour</button><p class="fb" hidden>L’âge et le diabète la placent à risque modéré selon l’OMS. L’information professionnelle suisse du Paxlovid contre-indique l’amiodarone et la simvastatine, dont l’élimination dépend du CYP3A4. L’amiodarone a une demi-vie très longue : son arrêt ne lève pas l’interaction. La dexaméthasone est déconseillée sans besoin d’oxygène.</p></div>
+<div class="quiz ui"><p>Cas 2. Un homme de 58 ans, greffé rénal, a une toux depuis 10 jours. La PCR nasopharyngée est négative. La tomodensitométrie montre un verre dépoli bilatéral. Quel examen ?</p><button data-ok="1">Lavage bronchoalvéolaire avec PCR virales, PCR de <i>Pneumocystis</i> et de cytomégalovirus</button><button data-ok="0">Aucun : la PCR négative exclut une virose</button><button data-ok="0">Sérologie du VRS</button><p class="fb" hidden>Chez l’immunodéprimé, le virus peut avoir quitté le nez et des agents opportunistes donnent le même aspect. Le prélèvement profond recherche tous les agents en une seule procédure.</p></div>
+<div class="quiz ui"><p>Cas 3. Au dixième jour d’un COVID-19 hospitalisé, un homme de 63 ans passe de 2 à 6 L/min d’oxygène. Procalcitonine 0,07 µg/L, D-dimères passés de 1 à 7 mg/L, pas de nouvelle condensation. Quelle hypothèse vérifier en premier ?</p><button data-ok="0">Surinfection bactérienne : élargir l’antibiotique</button><button data-ok="1">Embolie pulmonaire : angioscanner thoracique</button><button data-ok="0">Résistance virale : reprendre le remdésivir</button><p class="fb" hidden>La hausse rapide des D-dimères, la procalcitonine basse et l’absence de condensation nouvelle orientent vers une embolie pulmonaire, complication fréquente du COVID-19 sévère.</p></div>
+<div class="quiz ui"><p>Cas 4. Une PCR multiplex chez un adulte hospitalisé pour pneumonie lobaire avec procalcitonine à 6 µg/L détecte un adénovirus avec un cycle seuil élevé. Interprétation ?</p><button data-ok="1">Adénovirus probablement de passage ; la pneumonie bactérienne reste le diagnostic principal</button><button data-ok="0">Pneumonie adénovirale J12.0 ; arrêt de l’antibiotique</button><button data-ok="0">Cidofovir intraveineux</button><p class="fb" hidden>L’adénovirus peut persister longtemps dans les voies hautes. Un cycle seuil élevé, une condensation lobaire et une procalcitonine élevée plaident pour une bactérie. Le cidofovir est réservé à l’adénovirose disséminée de l’immunodéprimé.</p></div>
+</section>
+</div><div class="pager ui"><button class="prev">← Îlot précédent</button><span></span><button class="next">Îlot suivant →</button></div></div>
+
+<!-- ============ SCIENCES FONDAMENTALES ============ -->
+<div class="panel" id="pS" hidden>
+<div class="sci-bar ui" role="tablist">
+<button role="tab" aria-selected="true" aria-controls="j12-s-anat" data-s="j12-s-anat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v7M12 10l-5 5v4M12 10l5 5v4M7 15l-3 3M17 15l3 3"/></svg>Anatomie</button>
+<button role="tab" aria-selected="false" aria-controls="j12-s-histo" data-s="j12-s-histo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/></svg>Histologie</button>
+<button role="tab" aria-selected="false" aria-controls="j12-s-physio" data-s="j12-s-physio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>Physiologie</button>
+<button role="tab" aria-selected="false" aria-controls="j12-s-immuno" data-s="j12-s-immuno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v6M12 9l-5 4M12 9l5 4M7 13v5M17 13v5"/><circle cx="12" cy="20" r="1.5"/></svg>Immunologie</button>
+<button role="tab" aria-selected="false" aria-controls="j12-s-micro" data-s="j12-s-micro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="6"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/></svg>Virologie</button>
+</div>
+<div class="chap-body sci-body">
+
+<div class="sci" id="j12-s-anat"><section class="ilot" id="j12-sa"><h2>Anatomie fonctionnelle : où se fixent les virus</h2>
+<p>La question clinique est la suivante : pourquoi le VRS donne-t-il une bronchiolite chez le nourrisson et une pneumonie interstitielle chez l’adulte, et pourquoi le SARS-CoV-2 atteint-il les alvéoles ? La réponse tient à la géométrie des voies aériennes et à la répartition des récepteurs.</p>
+<h3>Arbre bronchique et unité respiratoire</h3>
+<p>L’arbre bronchique se divise environ 23 fois. Les générations 0 à 16 conduisent l’air ; les générations 17 à 23, bronchioles respiratoires, canaux et sacs alvéolaires, échangent les gaz. L’acinus, territoire d’une bronchiole terminale, est l’unité où se développe la pneumonie. Les alvéoles communiquent par les pores de Kohn, ce qui permet à l’exsudat de s’étendre d’alvéole en alvéole.</p>
+<h3>Calibre et résistance</h3>
+<p>La résistance d’un conduit varie comme l’inverse de la puissance quatre de son rayon (loi de Poiseuille). Dans un exemple pédagogique, une bronchiole de nourrisson dont l’œdème fait passer le rayon de 0,1 à 0,05 mm voit sa résistance multipliée par seize. Chez l’adulte, la même épaisseur d’œdème réduit beaucoup moins le rayon relatif. C’est pourquoi le VRS obstrue le nourrisson et touche surtout le parenchyme chez l’adulte.</p>
+<h3>Répartition des récepteurs</h3>
+<p>Les cellules ciliées du nez et des bronches portent les cibles du VRS et du métapneumovirus. L’ECA2 est exprimée dans l’épithélium nasal et par les pneumocytes de type II des alvéoles, avec la protéase TMPRSS2 qui active la protéine Spike. Cette double localisation explique que le SARS-CoV-2 puisse donner un rhume, puis une pneumonie alvéolaire.</p>
+<figure><svg viewBox="0 0 380 270" role="img" aria-label="Alvéole et cellules cibles des virus respiratoires" font-family="Inter,sans-serif" font-size="11"><g fill="none" stroke="#222" stroke-width="1.3">
+<path d="M40 30h80v40h-80z"/><path d="M45 30v-10M55 30v-10M65 30v-10M75 30v-10M85 30v-10M95 30v-10M105 30v-10M115 30v-10"/>
+<path d="M80 70v40"/><circle cx="190" cy="170" r="80"/><path d="M80 110q30 10 50 30"/>
+<path d="M115 150q15 -6 30 0" stroke-width="2.2"/><rect x="230" y="200" width="22" height="18" rx="4"/><circle cx="280" cy="170" r="10" stroke-dasharray="3 2"/></g>
+<g fill="#222"><text x="130" y="44">Cellules ciliées</text><text x="130" y="58">(VRS, métapneumovirus)</text>
+<text x="96" y="186">Pneumocyte I</text><text x="96" y="200">(échanges)</text>
+<text x="168" y="236">Pneumocyte II</text><text x="168" y="250">(ECA2 : SARS-CoV-2)</text>
+<text x="296" y="166">Capillaire</text><text x="160" y="120">Alvéole : air</text></g></svg>
+<figcaption>Figure 4 — Bronche ciliée et alvéole. Les virus du groupe VRS ciblent les cellules ciliées ; le SARS-CoV-2 cible aussi le pneumocyte de type II, qui produit le surfactant et régénère l’épithélium alvéolaire. Schéma pédagogique.</figcaption></figure>
+<div class="key"><b>Science → clinique.</b> Le calibre étroit des bronchioles du nourrisson explique la gravité du VRS avant 6 mois, surtout au deuxième mois de vie, où l’OFSP situe le risque d’hospitalisation maximal.</div>
+<div class="key"><b>Science → examen.</b> La présence des récepteurs dans le nez permet le diagnostic par frottis nasopharyngé ; leur présence dans l’alvéole explique qu’un prélèvement profond soit parfois seul positif.</div>
+<div class="key"><b>Science → traitement.</b> L’atteinte du pneumocyte de type II réduit le surfactant et rend l’alvéole instable : la pression positive en fin d’expiration la garde ouverte.</div>
+<div class="key"><b>À retenir.</b> La géométrie des voies aériennes et la répartition des récepteurs expliquent la forme clinique de chaque virus selon l’âge.</div>
+</section></div>
+
+<div class="sci" id="j12-s-histo" hidden><section class="ilot" id="j12-sh"><h2>Histologie : lésions élémentaires des pneumonies virales</h2>
+<p>La question clinique est la suivante : que voit-on dans le poumon d’un malade décédé de pneumonie virale, et quelles lésions orientent vers un agent ? L’histologie explique le verre dépoli, l’hypoxémie et la lenteur de la récupération.</p>
+<h3>Bronchiolite</h3>
+<p>Le VRS nécrose l’épithélium bronchiolaire, forme des syncytia et provoque un infiltrat lymphocytaire péribronchiolaire. Les bouchons de mucus, de fibrine et de cellules desquamées obstruent les bronchioles et créent des zones de piégeage et d’atélectasie.</p>
+<h3>Dommage alvéolaire diffus</h3>
+<p>Le dommage alvéolaire diffus est la lésion du SDRA, quel que soit le virus. Sa phase exsudative, pendant la première semaine, associe œdème, membranes hyalines formées de fibrine et de débris cellulaires, et nécrose des pneumocytes de type I. Sa phase proliférative, après la première semaine, montre une hyperplasie des pneumocytes de type II et une fibrose interstitielle débutante. Dans le COVID-19, l’atteinte endothéliale et les microthromboses capillaires s’y ajoutent.</p>
+<h3>Inclusions et cellules caractéristiques</h3>
+<table class="t"><tr><th>Lésion</th><th>Agent</th><th>Signification</th></tr>
+<tr><td>Syncytia multinucléés</td><td>VRS, rougeole, virus paragrippaux</td><td>Fusion cellulaire par la protéine F</td></tr>
+<tr><td>Cellules géantes de Warthin-Finkeldey</td><td>Rougeole</td><td>Fusion de cellules lymphoïdes et épithéliales</td></tr>
+<tr><td>Cellules à noyau sombre et flou (« smudge cells »)</td><td>Adénovirus</td><td>Inclusions nucléaires de virions</td></tr>
+<tr><td>Cellules à grande inclusion nucléaire en « œil de hibou »</td><td>Cytomégalovirus</td><td>Preuve histologique de maladie à cytomégalovirus</td></tr>
+<tr><td>Inclusions nucléaires et nécrose hémorragique</td><td>Virus varicelle-zona, herpès simplex</td><td>Pneumonie nécrosante</td></tr></table>
+<p>Le médecin retient que les syncytia viennent de la protéine de fusion. Exemple : une biopsie transbronchique d’un greffé montrant des cellules en « œil de hibou » prouve une maladie à cytomégalovirus, ce que la seule PCR du lavage ne prouve pas.</p>
+<div class="key"><b>Science → clinique.</b> La phase proliférative du dommage alvéolaire diffus explique que la récupération de la diffusion prenne des semaines et que la dyspnée persiste après la guérison virale.</div>
+<div class="key"><b>Science → examen.</b> Les membranes hyalines et l’œdème interstitiel produisent le verre dépoli ; les bouchons bronchiolaires produisent l’aspect en « arbre en bourgeons ».</div>
+<div class="key"><b>Science → traitement.</b> La fusion par la protéine F est la cible du nirsévimab et des vaccins contre le VRS ; bloquer la fusion empêche les syncytia.</div>
+<div class="key"><b>À retenir.</b> Bronchiolite, dommage alvéolaire diffus et inclusions caractéristiques résument l’histologie ; seule l’inclusion du cytomégalovirus prouve à elle seule la maladie.</div>
+</section></div>
+
+<div class="sci" id="j12-s-physio" hidden><section class="ilot" id="j12-sp"><h2>Physiologie : de l’alvéole inondée à l’hypoxémie</h2>
+<p>La question clinique est la suivante : pourquoi certains malades atteints de COVID-19 ont-ils une SpO₂ de 85 % sans dyspnée, et pourquoi l’oxygène corrige-t-il mal certaines hypoxémies ? La physiologie des échanges gazeux y répond.</p>
+<h3>Normal</h3>
+<p>Chez le sujet sain, la ventilation alvéolaire (environ 4 L/min) et la perfusion (environ 5 L/min) sont appariées. La PaO₂ de l’adulte jeune à l’air ambiant est d’environ 12 à 13 kPa, et le gradient alvéolo-artériel est faible. La vasoconstriction pulmonaire hypoxique détourne le sang des alvéoles mal ventilées.</p>
+<h3>Pathologique</h3>
+<p>Trois mécanismes produisent l’hypoxémie. Le shunt correspond aux alvéoles perfusées sans aucune ventilation ; l’oxygène les atteint mal, d’où une réponse faible à l’augmentation de la FiO₂. L’inégalité ventilation-perfusion correspond aux alvéoles mal ventilées ; elle répond bien à l’oxygène. Le trouble de diffusion, par épaississement de la membrane, se démasque à l’effort. Dans le COVID-19, la perte de la vasoconstriction hypoxique et les microthromboses aggravent l’inégalité.</p>
+<p>La dyspnée dépend surtout de la mécanique ventilatoire et du CO₂, pas de la PaO₂. Au début du COVID-19, la compliance peut rester normale ; le malade augmente sa ventilation, sa PaCO₂ baisse, et il ressent peu de gêne malgré l’hypoxémie. Le centre respiratoire réagit faiblement à l’hypoxémie tant que la PaO₂ reste au-dessus d’environ 8 kPa.</p>
+<figure><svg viewBox="0 0 380 260" role="img" aria-label="Courbe de dissociation de l’hémoglobine" font-family="Inter,sans-serif" font-size="11"><g fill="none" stroke="#222" stroke-width="1.3">
+<path d="M40 20v200h320"/><path d="M40 220 C 90 200, 110 90, 150 60 S 260 34, 350 30"/>
+<path d="M40 70h120M160 70v150" stroke-dasharray="3 3"/><path d="M40 47h200M240 47v173" stroke-dasharray="3 3"/></g>
+<g fill="#222"><text x="44" y="16">SaO₂ (%)</text><text x="300" y="240">PaO₂ (kPa)</text>
+<text x="8" y="74">90</text><text x="8" y="51">97</text><text x="150" y="236">8</text><text x="230" y="236">13</text>
+<text x="170" y="110">Plateau : réserve</text><text x="72" y="160">Pente : chute rapide</text><text x="72" y="174">de la saturation</text></g></svg>
+<figcaption>Figure 5 — Courbe de dissociation de l’hémoglobine chez l’adulte (valeurs approximatives). Au-dessous d’environ 8 kPa de PaO₂ (SaO₂ 90 %), une petite baisse de la PaO₂ fait chuter fortement la saturation.</figcaption></figure>
+<p>La courbe se lit de droite à gauche : sur le plateau, la PaO₂ peut baisser beaucoup sans grande perte de saturation ; sur la pente, chaque kilopascal compte. Le seuil OMS de 90 % correspond au début de la pente. Le piège est de tenir 91 % pour rassurant chez un malade dont la saturation baisse : il est déjà au bord de la pente.</p>
+<div class="key"><b>Science → clinique.</b> L’hypoxémie peu symptomatique s’explique par une mécanique préservée et une PaCO₂ basse ; la SpO₂ doit être mesurée, et non déduite de la dyspnée.</div>
+<div class="key"><b>Science → examen.</b> Le rapport PaO₂/FiO₂ et le gradient alvéolo-artériel quantifient l’atteinte ; une PaCO₂ qui monte signale la fatigue.</div>
+<div class="key"><b>Science → traitement.</b> Le shunt répond mal à l’oxygène seul ; la pression positive et le décubitus ventral rouvrent ou réventilent les alvéoles dorsales.</div>
+<div class="key"><b>À retenir.</b> Shunt, inégalité ventilation-perfusion et trouble de diffusion expliquent l’hypoxémie ; la courbe de dissociation explique pourquoi 90 % est un seuil d’alerte.</div>
+</section></div>
+
+<div class="sci" id="j12-s-immuno" hidden><section class="ilot" id="j12-si"><h2>Immunologie : interférons, inflammation et protection</h2>
+<p>La question clinique est la suivante : pourquoi le sujet âgé et l’immunodéprimé font-ils des formes graves, pourquoi un corticostéroïde aide-t-il tardivement mais nuit-il tôt, et comment un anticorps monoclonal protège-t-il un nourrisson ?</p>
+<h3>Immunité innée</h3>
+<p>Les récepteurs cytoplasmiques comme RIG-I et les récepteurs de type Toll endosomaux (TLR7 pour l’ARN simple brin) détectent l’ARN viral. Ils induisent les interférons de type I (alpha, bêta) et III (lambda). Les interférons activent la voie JAK-STAT dans les cellules voisines et induisent des centaines de gènes antiviraux. Les virus se défendent : les protéines non structurales du VRS et plusieurs protéines du SARS-CoV-2 freinent cette réponse. Des auto-anticorps neutralisant les interférons de type I ont été trouvés chez une partie des malades atteints de COVID-19 critique, surtout âgés.</p>
+<h3>Phase inflammatoire</h3>
+<p>Si le virus n’est pas contrôlé tôt, les macrophages et les monocytes recrutés produisent de l’interleukine 6, de l’interleukine 1 et du TNF-α. L’interleukine 6 agit par son récepteur et la voie JAK-STAT, induit la CRP hépatique et entretient l’inflammation alvéolaire. Cette séquence explique la cible du tocilizumab (récepteur de l’interleukine 6) et du baricitinib (JAK1 et JAK2).</p>
+<figure><svg viewBox="0 0 380 280" role="img" aria-label="Séquence immunitaire de la pneumonie virale et cibles thérapeutiques" font-family="Inter,sans-serif" font-size="11"><g fill="none" stroke="#222" stroke-width="1.3">
+<rect x="20" y="10" width="340" height="40" rx="5"/><path d="M190 50v14M186 60l4 4 4-4"/>
+<rect x="20" y="64" width="340" height="40" rx="5"/><path d="M190 104v14M186 114l4 4 4-4"/>
+<rect x="20" y="118" width="340" height="40" rx="5"/><path d="M190 158v14M186 168l4 4 4-4"/>
+<rect x="20" y="172" width="340" height="40" rx="5"/><path d="M190 212v14M186 222l4 4 4-4"/>
+<rect x="20" y="226" width="340" height="40" rx="5"/></g>
+<g fill="#222" text-anchor="middle"><text x="190" y="28" font-weight="700">ARN viral détecté (RIG-I, TLR7)</text><text x="190" y="42">antiviraux : nirmatrelvir, remdésivir</text>
+<text x="190" y="82" font-weight="700">Interférons de type I et III</text><text x="190" y="96">état antiviral des cellules voisines</text>
+<text x="190" y="136" font-weight="700">Si contrôle insuffisant : macrophages</text><text x="190" y="150">interleukine 6, interleukine 1, TNF-α</text>
+<text x="190" y="190" font-weight="700">Récepteur de l’interleukine 6 → JAK-STAT</text><text x="190" y="204">tocilizumab ; baricitinib ; dexaméthasone</text>
+<text x="190" y="244" font-weight="700">Dommage alvéolaire et endothélial</text><text x="190" y="258">hypoxémie, SDRA</text></g></svg>
+<figcaption>Figure 6 — Séquence immunitaire simplifiée de la pneumonie virale et cibles des traitements. Les antiviraux agissent en haut de la chaîne, les immunomodulateurs en bas.</figcaption></figure>
+<h3>Immunité adaptative et protection</h3>
+<p>Les anticorps neutralisants dirigés contre la protéine F du VRS ou la protéine Spike du SARS-CoV-2 empêchent l’entrée du virus. Les IgA sécrétoires protègent la muqueuse ; leur durée est courte, ce qui explique les réinfections. L’OFSP rappelle que l’immunité après une infection à VRS dure de six mois à deux ans au plus. Le nirsévimab est une IgG1 dont la demi-vie a été prolongée par une mutation de son fragment constant ; l’information professionnelle suisse estime sa demi-vie terminale à environ 71 jours chez un nourrisson de 5 kg, ce qui couvre une saison avec une seule dose.</p>
+<h3>Immunosénescence</h3>
+<p>Avec l’âge, la production d’interférons, la diversité des lymphocytes T naïfs et la réponse vaccinale diminuent, tandis qu’une inflammation de base persiste. Ces modifications expliquent la gravité du VRS après 75 ans et l’intérêt d’un adjuvant dans l’Arexvy, qui augmente la réponse des lymphocytes T CD4 selon l’OFSP.</p>
+<div class="key"><b>Science → clinique.</b> Le défaut d’interférons, par l’âge, une maladie ou des auto-anticorps, explique les formes graves sans comorbidité apparente.</div>
+<div class="key"><b>Science → examen.</b> La CRP reflète l’interleukine 6 : elle s’effondre sous tocilizumab, ce qui la rend inutilisable pour détecter une surinfection après ce traitement.</div>
+<div class="key"><b>Science → traitement.</b> Antiviral tôt, immunomodulateur tard : un corticostéroïde donné pendant la phase de multiplication virale freine l’immunité au moment où elle est utile, ce qui est la base biologique de la recommandation de l’OMS contre son emploi sans oxygène.</div>
+<div class="key"><b>À retenir.</b> Les interférons contrôlent le virus, l’interleukine 6 entretient l’atteinte, les anticorps neutralisants préviennent l’entrée ; chaque étape a son traitement et son moment.</div>
+</section></div>
+
+<div class="sci" id="j12-s-micro" hidden><section class="ilot" id="j12-sm"><h2>Virologie et microbiologie des agents</h2>
+<p>La question clinique est la suivante : pourquoi certains virus ont-ils un antiviral et d’autres non, pourquoi l’adénovirus résiste-t-il davantage aux désinfectants, et pourquoi <i>Chlamydia</i> ne répond-elle pas à l’amoxicilline ? La structure de chaque agent y répond.</p>
+<table class="t"><tr><th>Agent</th><th>Famille</th><th>Génome</th><th>Enveloppe</th><th>Cible thérapeutique ou préventive</th></tr>
+<tr><td>SARS-CoV-2</td><td>Coronaviridae</td><td>ARN simple brin positif</td><td>Oui</td><td>Protéase principale (nirmatrelvir), ARN polymérase (remdésivir), Spike (vaccins)</td></tr>
+<tr><td>VRS</td><td>Pneumoviridae</td><td>ARN simple brin négatif</td><td>Oui</td><td>Protéine F en préfusion (vaccins, nirsévimab)</td></tr>
+<tr><td>Métapneumovirus humain</td><td>Pneumoviridae</td><td>ARN simple brin négatif</td><td>Oui</td><td>Protéine F (vaccins en développement)</td></tr>
+<tr><td>Virus paragrippaux</td><td>Paramyxoviridae</td><td>ARN simple brin négatif</td><td>Oui</td><td>Aucune autorisée</td></tr>
+<tr><td>Adénovirus</td><td>Adenoviridae</td><td>ADN double brin</td><td>Non</td><td>ADN polymérase (cidofovir)</td></tr>
+<tr><td><i>Chlamydia pneumoniae</i></td><td>Bactérie, Chlamydiaceae</td><td>ADN</td><td>Paroi sans peptidoglycane classique</td><td>Ribosome (macrolides, tétracyclines)</td></tr></table>
+<p>Le médecin relie la dernière colonne à la pharmacologie. L’absence d’enveloppe lipidique rend l’adénovirus moins sensible à l’alcool que les virus enveloppés ; c’est la base de la <button class="w" data-k="j12-hygiene">fiche d’hygiène de l’adénovirus</button>. L’erreur fréquente est d’attendre d’un antibiotique une action sur un virus : les antibiotiques ciblent des structures bactériennes absentes chez les virus.</p>
+<h3>Cycle viral et cibles</h3>
+<p>Le SARS-CoV-2 traduit son ARN en deux grandes polyprotéines. La protéase principale (Mpro, aussi appelée 3CL) les découpe en protéines fonctionnelles. Le nirmatrelvir bloque cette protéase ; le ritonavir, sans effet antiviral propre à cette dose, inhibe le CYP3A4 et augmente la concentration du nirmatrelvir. Le remdésivir est un analogue nucléotidique incorporé par l’ARN polymérase dépendante de l’ARN, qui termine prématurément la synthèse.</p>
+<h3>La protéine F du VRS</h3>
+<p>La protéine F existe sous deux formes. La forme de préfusion, instable, porte les sites antigéniques les plus neutralisants. Après la fusion, elle se replie en forme de postfusion, moins immunogène. Les vaccins actuels utilisent une protéine F stabilisée en préfusion, selon l’OFSP, et le nirsévimab se lie à un site de la forme de préfusion. Cette avancée structurale explique l’efficacité de la nouvelle génération de prévention.</p>
+<h3>Cycle de <i>Chlamydia</i></h3>
+<p><i>Chlamydia</i> alterne deux formes. Le corps élémentaire, petit et infectieux, entre dans la cellule. Il s’y transforme en corps réticulé, qui se divise dans une vacuole, puis redevient corps élémentaire et sort de la cellule après 48 à 72 heures. Les antibiotiques doivent donc pénétrer dans la cellule : les macrolides et la doxycycline y parviennent, les bêtalactamines non. La paroi de <i>Chlamydia</i> manque en outre de peptidoglycane classique, cible des bêtalactamines.</p>
+<div class="key"><b>Science → clinique.</b> Les virus enveloppés sont fragiles dans l’environnement ; l’adénovirus, nu, persiste sur les surfaces et provoque des épidémies hospitalières et ophtalmologiques.</div>
+<div class="key"><b>Science → examen.</b> L’ARN du SARS-CoV-2 et l’ADN de l’adénovirus sont détectés par amplification génique ; la persistance du génome ne signifie pas virus infectieux.</div>
+<div class="key"><b>Science → traitement.</b> Le ritonavir est un « potentialisateur pharmacocinétique » : c’est lui, et non le nirmatrelvir, qui cause la plupart des interactions.</div>
+<div class="key"><b>À retenir.</b> La famille, le génome et l’enveloppe de chaque agent expliquent ses traitements, sa prévention et ses règles d’hygiène.</div>
+<button class="pareto-btn ui" data-k="pareto-j12-sci">▲ Loi de Pareto — Sciences fondamentales</button>
+</section></div>
+</div></div>

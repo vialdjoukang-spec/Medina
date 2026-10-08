@@ -340,6 +340,15 @@ function planCounts(){return {objectives:0,sections:0,plan:buildPlan()}}
     return source
 
 
+def clinical_skills(fragment, root):
+    """Module Sémiologie CS du fragment, s'il est déclaré et présent."""
+    registry = Path(root) / 'modules/cs_registry.json'
+    entry = json.loads(registry.read_text(encoding='utf-8')).get(fragment['id']) if registry.exists() else None
+    if not entry or not all((Path(root) / 'modules' / (entry['module'] + ext)).exists() for ext in ('.css', '.html', '.js')):
+        return None
+    return entry
+
+
 def finish_surface(source, fragment, root):
     # Keep the historical shell in the repository; generated course fragments drop module
     # loaders whose catalogues concern the complete atlas.
@@ -363,8 +372,9 @@ def finish_surface(source, fragment, root):
     # A separate namespace preserves notebooks from the full atlas.
     for key in ('medora.atlas.v3', 'medora.atlas.v1'):
         source = source.replace("'" + key + "'", "'medina.fragment." + fragment['id'] + ".atlas'")
+    cs = clinical_skills(fragment, root)
     nav = ('<nav class="nav-main"><a href="#/home">Accueil · catégories</a>'
-           + ('<a href="#/clinical-skills">Sémiologie CS</a>' if fragment['id'] == 'S01' else '') +
+           + ('<a href="#/clinical-skills">Sémiologie CS</a>' if cs else '') +
            '<a href="#/search">Rechercher un chapitre</a>'
            '<a href="#/notebook">Carnet du fragment</a>'
            '<a href="#/method">Règle d’or et sources</a></nav>')
@@ -376,12 +386,13 @@ def finish_surface(source, fragment, root):
     css = (Path(root) / 'shell/fragment.css').read_text(encoding='utf-8')
     js = ((Path(root) / 'shell/fragment.js').read_text(encoding='utf-8') if fragment.get('surface') == 'courses-v1' else '')
     source = source.replace('</head>', '<style id="medina-fragment-css">' + css + '</style></head>', 1)
-    if fragment['id'] == 'S01':
+    if cs:
         module = Path(root) / 'modules'
-        cs_css = (module / 'cardiovascular_cs.css').read_text(encoding='utf-8')
-        cs_html = (module / 'cardiovascular_cs.html').read_text(encoding='utf-8')
-        cs_js = (module / 'cardiovascular_cs.js').read_text(encoding='utf-8')
-        source = source.replace('</head>', '<style id="medina-cs-css">' + cs_css + '</style></head>', 1)
+        cs_css = (module / (cs['module'] + '.css')).read_text(encoding='utf-8')
+        cs_html = (module / (cs['module'] + '.html')).read_text(encoding='utf-8')
+        cs_js = (module / (cs['module'] + '.js')).read_text(encoding='utf-8')
+        info = json.dumps({'title': cs['title']}, ensure_ascii=False).replace('<', '\\u003c')
+        source = source.replace('</head>', '<script id="medina-cs-info">window.MEDINA_CS_INFO=' + info + ';</script><style id="medina-cs-css">' + cs_css + '</style></head>', 1)
         source = source.replace('</body>', cs_html + '<script id="medina-cs-runtime">' + cs_js + '</script></body>', 1)
     source = source.replace('</body>', '<script id="medina-fragment-runtime">' + js + '</script></body>', 1)
     source = isolate_generated_data(source, fragment, root)
@@ -401,4 +412,10 @@ def finish_surface(source, fragment, root):
     atlas_css = (Path(root) / 'engine/atlas_v2.css').read_text(encoding='utf-8')
     source = source.replace('</head>', '<style id="medina-atlas-v2">' + faces + atlas_css + '</style></head>', 1)
     source = source.replace('</body>', '<script id="medina-category-organisation-data" type="application/json">' + payload + '</script><script id="medina-category-organisation-runtime">' + category_js + '</script><script id="medina-atlas-v2-runtime">' + (Path(root) / 'engine/atlas_v2.js').read_text(encoding='utf-8') + '</script></body>', 1)
+    federal = json.loads((Path(root) / 'organisation/federal_exam.json').read_text(encoding='utf-8'))
+    federal_payload = json.dumps({'fragment': fragment['id'], 'button': federal['button'],
+                                  'codes': federal['fragments'].get(fragment['id'], {}).get('codes', {})},
+                                 ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
+    source = source.replace('</head>', '<style id="medina-federal-css">' + (Path(root) / 'engine/federal_exam.css').read_text(encoding='utf-8') + '</style></head>', 1)
+    source = source.replace('</body>', '<script id="medina-federal-data" type="application/json">' + federal_payload + '</script><script id="medina-federal-runtime">' + (Path(root) / 'engine/federal_exam.js').read_text(encoding='utf-8') + '</script></body>', 1)
     return source

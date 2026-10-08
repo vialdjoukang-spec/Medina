@@ -1,7 +1,7 @@
 /* Fragment course surface. Loaded only when a fragment explicitly enables it. */
 (() => {
  'use strict';
- const F=DATA.fragment;
+ const F=DATA.fragment;const CS=window.MEDINA_CS_INFO;
  if(F?.surface!=='courses-v1')return;
  const byCode=new Map(F.courses.map(c=>[c.code,c]));
  const aliases=new Set(F.courses.flatMap(c=>c.covers||[c.code]));
@@ -18,7 +18,7 @@
    r.q.delete('specialty');r.q.delete('view');
   }
   if(r.type==='specialty'&&r.id!==F.specialty)return{type:'home',id:'',q:new URLSearchParams()};
-  if(r.type==='clinical-skills'&&F.id!=='S01')return{type:'home',id:'',q:new URLSearchParams()};
+  if(r.type==='clinical-skills'&&!CS)return{type:'home',id:'',q:new URLSearchParams()};
   if(!['home','entry','specialty','search','notebook','method','clinical-skills'].includes(r.type))return{type:'home',id:'',q:new URLSearchParams()};
   return r;
  };
@@ -133,17 +133,17 @@
   if(probe.type!=='clinical-skills'){window.MEDINA_CS?.destroy();return renderCourse()}
   window.MEDINA_CS?.destroy();MC_navigoDestroy();
   const old=route;route=probe;context={sid:F.specialty};
-  pageTitle('Sémiologie CS · Examen cardiovasculaire');
+  pageTitle('Sémiologie CS · '+CS.title);
   const content=document.getElementById('content');content.innerHTML=window.MEDINA_CS.page()+footer();
   drawSidebar();closeNav();window.MEDINA_CS.mount(content);content.setAttribute('aria-busy','false');
   if(old?.type!==route.type){scrollTo(0,0);content.focus({preventScroll:true})}
  };
  const originalHome=homePage;
- homePage=function(){const html=originalHome();if(F.id!=='S01')return html;return html.replace('<nav class="s01-category-index"','<div class="s01-cs-gateway"><div><b>Sémiologie CS · Examen cardiovasculaire</b><br>Vous reliez les gestes, les signes et leurs mécanismes.</div><a href="#/clinical-skills">Parcours clinique et schémas 3D →</a></div><nav class="s01-category-index"')};
+ homePage=function(){const html=originalHome();if(!CS)return html;return html.replace('<nav class="s01-category-index"','<div class="s01-cs-gateway"><div><b>Sémiologie CS · '+h(CS.title)+'</b><br>Vous reliez les gestes, les signes et leurs mécanismes.</div><a href="#/clinical-skills">Parcours clinique et schémas 3D →</a></div><nav class="s01-category-index"')};
  const courseWithCs=MEDINA_coursePage;
- MEDINA_coursePage=function(e){const html=courseWithCs(e);return F.id==='S01'?html+'<div class="s01-cs-gateway"><span>Vous retrouvez les gestes et leurs interprétations dans la sémiologie.</span><a href="#/clinical-skills">Sémiologie CS · Examen cardiovasculaire →</a></div>':html};
+ MEDINA_coursePage=function(e){const html=courseWithCs(e);return CS?html+'<div class="s01-cs-gateway"><span>Vous retrouvez les gestes et leurs interprétations dans la sémiologie.</span><a href="#/clinical-skills">Sémiologie CS · '+h(CS.title)+' →</a></div>':html};
  const paletteWithCs=showCommandPalette;
- showCommandPalette=function(){paletteWithCs();if(F.id==='S01'){const links=document.querySelector('.command-links');if(links){const link=document.createElement('a');link.className='command-link';link.href='#/clinical-skills';link.dataset.closeModal='';link.textContent='Sémiologie CS · Examen cardiovasculaire';links.append(link)}}};
+ showCommandPalette=function(){paletteWithCs();if(CS){const links=document.querySelector('.command-links');if(links){const link=document.createElement('a');link.className='command-link';link.href='#/clinical-skills';link.dataset.closeModal='';link.textContent='Sémiologie CS · '+CS.title;links.append(link)}}};
  document.getElementById('command-btn').onclick=showCommandPalette;
  render();
 })();
