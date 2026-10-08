@@ -1,29 +1,60 @@
-"""Sigles et termes propres à A53 — Syphilis, autres et sans précision.
+"""Sigles propres à A53 — Syphilis (I-03-Infectiologie).
 
-Sources lues le 8 octobre 2026. Les clés communes chargées par les autres
-glossaires ne sont pas redéfinies ; chaque entrée borne sa portée clinique.
+Version de travail du 8 octobre 2026, reprise au plan monographique. Les sources
+de chaque définition ont été lues ce jour. Les clés communes déjà présentes dans
+le glossaire canonique (VIH, PCR, OFSP, SSI, ECDC, OMS, CD4, IgG, IgM, UI, AIPS,
+INR, DRESS, ADN, CIM-10-GM) ne sont pas redéfinies. Les clés IST et PrEP,
+également définies par d'autres cours du fragment, reçoivent ici une définition
+générale compatible avec ces cours.
 """
 from cardio_1 import a, G
 
-BFARM = '<p>Source : <a href="https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-a50-a64.htm" target="_blank" rel="noopener">BfArM, CIM-10-GM 2024, rubrique A53</a>.</p>'
-SSI_A53 = '<p>Source : <a href="https://ssi.guidelines.ch/guideline/2271/fr" target="_blank" rel="noopener">SSI, Syphilis, validation du 13 juin 2024</a>.</p>'
-CDC_SYPH = '<p>Source : <a href="https://www.cdc.gov/std/treatment-guidelines/syphilis.htm" target="_blank" rel="noopener">CDC, Syphilis, recommandations STI 2021</a>.</p>'
-CDC_LATENT = '<p>Source : <a href="https://www.cdc.gov/std/treatment-guidelines/latent-syphilis.htm" target="_blank" rel="noopener">CDC, Latent Syphilis, recommandations STI 2021</a>.</p>'
-OFSP_A53 = '<p>Source : <a href="https://www.bag.admin.ch/dam/fr/sd-web/MDjbgfEN6jEf/250321_BAS_Meldeleitfaden_FR.pdf" target="_blank" rel="noopener">OFSP, Guide de la déclaration obligatoire 2026, syphilis, p. 109–110</a>.</p>'
-FI_EXT = '<p>Source : <a href="https://compendium.ch/fr/product/1653651-extencilline-subst-seche-2-4-mio-ui-c-solv/mpro" target="_blank" rel="noopener">Information professionnelle suisse Extencilline n° 69765, référence janvier 2021 et ajouts suisses mai 2025</a>.</p>'
+SSI = '<p>Source : <a href="https://ssi.guidelines.ch/guideline/2271/fr" target="_blank" rel="noopener">SSI, « Syphilis », validée le 13.06.2024</a>.</p>'
+IUSTI = '<p>Source : <a href="https://iusti.org/wp-content/uploads/2020/07/Syphilis2020guideline.pdf" target="_blank" rel="noopener">Janier M et al., 2020 European guideline on the management of syphilis, J Eur Acad Dermatol Venereol 2021;35:574–588</a>.</p>'
+FI_EXT = '<p>Source : <a href="https://files.refdata.ch/simis-public-prod/MedicinalDocuments/e048ad2d141e42bd9000b297cf3f9d96-fr.html" target="_blank" rel="noopener">Information professionnelle suisse Extencilline®, Swissmedic (AIPS), consultée le 08.10.2026</a>.</p>'
 
-a('A53', [('A', 'chapitre des maladies infectieuses de la CIM-10-GM'), ('53', 'catégorie des syphilis autres et sans précision')], 'A53 — Syphilis, autres et sans précision', '<p>La CIM-10-GM 2024 distingue A53.0, latence sans date précoce ou tardive, et A53.9, syphilis sans autre précision. Le code ne transforme pas une sérologie isolée en preuve d’infection active non traitée. Il ne se convertit pas automatiquement en CIM-11.</p>'+BFARM)
-a('A53.0', [('A53', 'catégorie de syphilis autre ou sans précision'), ('.0', 'latence sans stade précoce ou tardif précisé')], 'Syphilis latente, non précisée précoce ou tardive', '<p>Ce code décrit une syphilis latente dont l’ancienneté n’est pas précisée. L’absence de symptômes et l’histoire des tests et traitements doivent être vérifiées ; un titre RPR seul ne date pas l’infection. Le traitement d’une latence de durée inconnue suit une décision clinique distincte du choix de code.</p>'+BFARM+CDC_LATENT)
-a('A53.9', [('A53', 'catégorie de syphilis autre ou sans précision'), ('.9', 'syphilis sans autre précision')], 'Syphilis, sans précision', '<p>Ce code s’applique si le stade même n’est pas caractérisé. Si une latence est documentée et que seule sa durée manque, A53.0 est plus précis dans la CIM-10-GM 2024.</p>'+BFARM)
-a('TPPA', [('T', 'Treponema'), ('P', 'pallidum'), ('P', 'Particle'), ('A', 'Agglutination')], 'Test d’agglutination de particules pour Treponema pallidum', '<p>Test tréponémique employé pour rechercher ou confirmer une exposition à la syphilis. Il peut rester positif longtemps après un traitement efficace ; le TPPA positif du cas ne date donc pas l’infection et ne prouve pas, à lui seul, une activité actuelle.</p>'+SSI_A53+CDC_SYPH)
-a('RPR', [('R', 'Rapid'), ('P', 'Plasma'), ('R', 'Reagin')], 'Test non tréponémique quantitatif Rapid Plasma Reagin', '<p>Son titre suit l’évolution sérologique lorsqu’il est comparé au même type de test et au titre initial. Une variation d’un facteur quatre correspond à deux dilutions, par exemple 1:16 à 1:4. Le titre 1:8 du cas ne permet pas de dater l’infection et peut persister après traitement.</p>'+CDC_SYPH+CDC_LATENT)
-a('VDRL', [('V', 'Venereal'), ('D', 'Disease'), ('R', 'Research'), ('L', 'Laboratory')], 'Test non tréponémique VDRL', '<p>Il peut servir au suivi quantitatif d’une syphilis. Les titres VDRL et RPR ne sont pas interchangeables terme à terme ; les séries de suivi utilisent si possible la même méthode. Son interprétation tient compte du stade, du titre initial et du traitement antérieur.</p>'+CDC_SYPH)
-a('BPG', [('B', 'Benzathine'), ('P', 'Pénicilline'), ('G', 'G')], 'Benzathine pénicilline G', '<p>Forme retard administrée par voie intramusculaire. La SSI recommande 2,4 MUI une fois pour une syphilis précoce et trois administrations hebdomadaires pour une latence tardive. Elle ne remplace pas la pénicilline G intraveineuse lors d’une neurosyphilis ; la préparation suit l’information du produit exact.</p>'+SSI_A53+FI_EXT)
-a('MUI', [('M', 'Million'), ('U', 'Unités'), ('I', 'Internationales')], 'Million d’unités internationales', '<p>Unité de quantité utilisée ici pour la benzathine pénicilline G. Une dose de 2,4 MUI ne désigne pas le volume de solvant : le flacon suisse Extencilline 2,4 MUI se reconstitue avec 5 ml, selon sa monographie.</p>'+FI_EXT)
-a('LP', [('L', 'Lombaire'), ('P', 'Ponction')], 'Ponction lombaire', '<p>Prélèvement de liquide cérébrospinal pour évaluer une atteinte neurologique dans une situation clinique indiquée. Les textes SSI 2024 et CDC 2021 divergent sur une ponction fondée uniquement sur des critères CD4 ou RPR chez une personne vivant avec le VIH sans symptôme neurologique ; une décision spécialisée tient compte des signes.</p>'+SSI_A53+'<p><a href="https://www.cdc.gov/std/treatment-guidelines/syphilis-hiv.htm" target="_blank" rel="noopener">CDC, Syphilis et VIH, 2021</a>.</p>')
-a('LCR', [('L', 'Liquide'), ('C', 'Céphalo'), ('R', 'Rachidien')], 'Liquide cérébrospinal ou céphalo-rachidien', '<p>Liquide qui entoure le cerveau et la moelle épinière. Une anomalie du LCR change l’évaluation d’une possible neurosyphilis ; Extencilline retard n’est pas indiquée pour une neurosyphilis ou des anomalies de ce liquide.</p>'+FI_EXT)
-a('Jarisch-Herxheimer', [('Jarisch-Herxheimer', 'nom de la réaction, non un sigle')], 'Réaction de Jarisch-Herxheimer', '<p>Une réaction transitoire avec fièvre, frissons et symptômes généraux peut suivre le début du traitement de la syphilis. La monographie Extencilline la relie à l’action bactéricide et décrit son apparition possible 2 à 12 heures après l’administration ; elle ne doit pas être confondue sans examen avec une anaphylaxie.</p>'+FI_EXT)
-a('Extencilline', [('Extencilline', 'nom commercial, non un sigle')], 'Benzathine benzylpénicilline, présentation suisse Extencilline', '<p>La présentation 2,4 MUI possède l’autorisation Swissmedic 69765 et une commercialisation annoncée le 8 mai 2026. Le flacon 2,4 MUI utilise 5 ml de solvant selon l’information professionnelle suisse ; une notice erronée du lot 72500106 indique le volume de la forme 1,2 MUI. La disponibilité locale reste à vérifier.</p>'+FI_EXT+'<p><a href="https://www.swissmedic.ch/dam/swissmedic/en/dokumente/marktueberwachung/out-of-stock/out-of-stock-extencilline-1200000-und-2400000-ui-pulver-und-loesungsmittel-zur-herstellung-einer-injektionssuspension.pdf.download.pdf/20260806-out-of-stock-extencilline_de_fr.pdf" target="_blank" rel="noopener">Leman SKL SA, lettre de juillet 2026 publiée par Swissmedic</a>.</p>')
-a('T_pallidum', [('T.', 'Treponema'), ('pallidum', 'espèce pallidum')], 'Treponema pallidum', '<p>Bactérie responsable de la syphilis. Un test tréponémique indique une exposition possible ou passée ; l’activité, le stade et la nécessité d’un nouveau traitement exigent les signes cliniques et l’historique sérologique et thérapeutique.</p>'+SSI_A53+CDC_SYPH)
-a('serofast', [('serofast', 'terme anglais de persistance sérologique, non un sigle')], 'Persistance d’un titre non tréponémique après traitement', '<p>Chez certaines personnes, le RPR ou le VDRL reste réactif à bas niveau après une réponse adéquate. Cette persistance ne prouve pas à elle seule une réinfection ou un échec ; les anciens titres, la variation sur la même méthode et le contexte clinique guident l’interprétation.</p>'+CDC_SYPH)
-a('CIM-10-GM', [('CIM-10', 'dixième révision de la Classification internationale des maladies'), ('GM', 'German Modification')], 'Modification allemande de la CIM-10', '<p>Version de classification utilisée pour les codes A53.0 et A53.9 du catalogue du projet. Une définition OFSP destinée à la surveillance suisse et un code CIM-11 MMS ne sont pas des synonymes de ces rubriques.</p>'+BFARM+OFSP_A53)
+a('TPPA', [('T', 'Treponema'), ('P', 'pallidum'), ('P', 'Particle (particules)'), ('A', 'Agglutination')],
+  'Test d’agglutination de particules pour Treponema pallidum',
+  '<p>Test tréponémique manuel : des particules portant des antigènes du tréponème s’agglutinent en présence d’anticorps spécifiques. Il prouve une infection actuelle ou passée, reste positif à vie chez la plupart des patients et ne sert pas au suivi. La SSI l’emploie comme test de dépistage.</p>' + SSI + IUSTI)
+a('TPHA', [('T', 'Treponema'), ('P', 'pallidum'), ('H', 'Haemagglutination (hémagglutination)'), ('A', 'Assay (test)')],
+  'Test d’hémagglutination pour Treponema pallidum',
+  '<p>Test tréponémique manuel proche du TPPA, utilisant des hématies sensibilisées. Il sert au dépistage ou à la confirmation d’un test automatisé ; il ne mesure pas l’activité de la maladie.</p>' + IUSTI)
+a('RPR', [('R', 'Rapid (rapide)'), ('P', 'Plasma'), ('R', 'Reagin (réagine)')],
+  'Test non tréponémique rapide des réagines plasmatiques',
+  '<p>Test de floculation détectant des anticorps dirigés contre un antigène de cardiolipine, lécithine et cholestérol. Son titre suit l’activité de la syphilis et baisse après traitement ; une variation significative correspond à deux dilutions, soit un facteur quatre. En Suisse, il remplace le VDRL selon la SSI.</p>' + SSI + IUSTI)
+a('VDRL', [('V', 'Venereal (vénérienne)'), ('D', 'Disease (maladie)'), ('R', 'Research (recherche)'), ('L', 'Laboratory (laboratoire)')],
+  'Test non tréponémique du Venereal Disease Research Laboratory',
+  '<p>Test de floculation de même principe que le RPR, lu au microscope. C’est le test non tréponémique recommandé dans le liquide céphalo-rachidien. Ses titres ne se comparent pas à ceux du RPR.</p>' + IUSTI)
+a('FTA-abs', [('F', 'Fluorescent (fluorescent)'), ('T', 'Treponemal (tréponémique)'), ('A', 'Antibody (anticorps)'), ('abs', 'absorption')],
+  'Test d’immunofluorescence des anticorps tréponémiques après absorption',
+  '<p>Test tréponémique par immunofluorescence indirecte, après absorption des anticorps non spécifiques. Long, coûteux et difficile à lire, il devient obsolète ; la SSI l’emploie comme second test tréponémique lorsque le RPR est négatif sans traitement antérieur.</p>' + SSI + IUSTI)
+a('EIA', [('E', 'Enzyme'), ('I', 'Immuno-'), ('A', 'Assay (dosage)')],
+  'Dosage immuno-enzymatique',
+  '<p>Méthode automatisable de détection d’anticorps, employée ici comme test tréponémique de dépistage ou de confirmation. Sa spécificité peut être insuffisante dans une population à faible prévalence ; un TPPA ou un TPHA de confirmation est alors recommandé.</p>' + IUSTI)
+a('ELISA', [('E', 'Enzyme-'), ('L', 'Linked (lié)'), ('I', 'Immuno-'), ('S', 'Sorbent (adsorbant)'), ('A', 'Assay (dosage)')],
+  'Dosage immuno-enzymatique sur support solide',
+  '<p>Variante de l’EIA dans laquelle l’antigène est fixé sur un support ; employée comme test tréponémique automatisé.</p>' + IUSTI)
+a('CLIA', [('C', 'Chemi-'), ('L', 'Luminescence'), ('I', 'Immuno-'), ('A', 'Assay (dosage)')],
+  'Dosage immunologique par chimiluminescence',
+  '<p>Test tréponémique automatisé à lecture lumineuse, adapté au dépistage de masse ; sa spécificité parfois insuffisante impose une confirmation par TPPA ou TPHA.</p>' + IUSTI)
+a('TRUST', [('T', 'Toluidine'), ('R', 'Red (rouge)'), ('U', 'Unheated (non chauffé)'), ('S', 'Serum (sérum)'), ('T', 'Test')],
+  'Test non tréponémique au rouge de toluidine sur sérum non chauffé',
+  '<p>Test non tréponémique de même principe que le RPR, peu employé en Suisse.</p>' + IUSTI)
+a('IST', [('I', 'Infection'), ('S', 'Sexuellement'), ('T', 'Transmissible')],
+  'Infection sexuellement transmissible',
+  '<p>Infection transmise principalement par contact sexuel. Le diagnostic d’une IST justifie la recherche des autres IST, dont la syphilis et le VIH, selon les sites exposés.</p>' + IUSTI)
+a('PrEP', [('Pr', 'Pre- (pré-)'), ('E', 'Exposure (exposition)'), ('P', 'Prophylaxis (prophylaxie)')],
+  'Prophylaxie préexposition contre le VIH',
+  '<p>Prise d’antirétroviraux par une personne séronégative exposée à un risque élevé d’infection par le VIH. Elle ne protège pas contre la syphilis ; la directive européenne recommande un dépistage de la syphilis tous les trois mois chez les personnes sous PrEP.</p>' + IUSTI)
+a('MUI', [('M', 'Millions'), ('U', 'd’Unités'), ('I', 'Internationales')],
+  'Millions d’unités internationales',
+  '<p>Unité de quantité de la benzylpénicilline et de la benzathine-pénicilline. Une dose de 2,4 MUI désigne la quantité de principe actif, non le volume : le flacon suisse Extencilline® 2,4 MUI se reconstitue avec 5 mL d’eau pour préparations injectables.</p>' + FI_EXT)
+a('IUSTI', [('I', 'International'), ('U', 'Union (union)'), ('S', 'against Sexually (contre les infections sexuellement)'), ('T', 'Transmitted (transmises)'), ('I', 'Infections')],
+  'Union internationale contre les infections sexuellement transmissibles',
+  '<p>Société savante qui publie, par sa section européenne, les directives européennes de prise en charge des IST, dont la directive syphilis 2020 et son projet de mise à jour de 2026.</p>' + IUSTI)
+a('LCR', [('L', 'Liquide'), ('C', 'Céphalo-'), ('R', 'Rachidien')],
+  'Liquide céphalo-rachidien',
+  '<p>Liquide qui baigne l’encéphale et la moelle. Son analyse, cellularité, protéines, test tréponémique et VDRL, sert au diagnostic de la neurosyphilis ; la benzathine-pénicilline n’y atteint pas de concentration tréponémicide fiable.</p>' + IUSTI + FI_EXT)
+a('Jarisch-Herxheimer', [('Jarisch-Herxheimer', 'nom propre composé de la réaction ; non un sigle')],
+  'Réaction de Jarisch-Herxheimer',
+  '<p>Réaction fébrile transitoire, 2 à 12 heures après le début du traitement d’une infection à spirochètes, due à la lyse bactérienne : fièvre, frissons, céphalées, myalgies, tachycardie. Elle disparaît en 10 à 12 heures et ne justifie pas l’arrêt de l’antibiotique.</p>' + FI_EXT)
