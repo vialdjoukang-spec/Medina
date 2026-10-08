@@ -52,7 +52,7 @@ Destinataires : **Claude Code** (modèle Opus 5.5 à la demande de Vial) et **Co
 ## 5. Parallélisme par catégories
 
 - Chaque IA emploie **plusieurs sous-agents en parallèle, chacun responsable d’une catégorie** (ou d’un cours regroupant plusieurs catégories) du fragment actif. Cette règle remplace l’ancienne limite d’un seul chapitre en production par agent.
-- **Un auteur par fichier** : un sous-agent écrit uniquement `chapters/<CODE>/*` et `glossary/<code>.py`. Un intégrateur unique modifie les registres communs (`chapters.json`, `organisation/*`, frontends) puis reconstruit et teste.
+- **Un auteur par fichier** : un sous-agent écrit uniquement les fichiers de son cours. **Le producteur ne modifie jamais les sources canoniques** (`chapters/`, `glossary/`, `chapters.json`) : ses cours vivent dans `livraisons/Livraison <IA>/<fragment>/travail/sources/` puis dans l’espace de remise ; seul l’auditeur les injecte après l’audit croisé (garde `tools/espace.py garde`). Un intégrateur unique tient les registres de travail et la pile.
 - La production du fragment suivant peut être préparée (inventaire, pile, recherches) pendant l’audit du fragment précédent ; elle ne rouvre jamais un fragment INJECTÉ.
 
 ## 6. Qualité : exigences maintenues sans exception
