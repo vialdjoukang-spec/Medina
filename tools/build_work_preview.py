@@ -119,7 +119,7 @@ def mark_preview(source, manifest):
              '.observe(document.querySelector("title"),{childList:true,subtree:true,characterData:true});'
              '</script>')
     head += ('<style id="medina-work-preview-style">'
-             'html[data-medina-fragment] .topbar{flex-wrap:wrap}'
+             'html[data-medina-fragment] .topbar{display:flex;flex-wrap:wrap}'
              '.medina-work-preview{order:-1;flex:0 0 100%;margin:0;padding:10px 14px;border:1px solid #dfcc8a;'
              'border-radius:12px;background:#fff9e8;color:#57451b;font-family:inherit;font-size:1rem;line-height:1.5}'
              '.medina-work-preview strong{display:block;font-size:inherit}'
