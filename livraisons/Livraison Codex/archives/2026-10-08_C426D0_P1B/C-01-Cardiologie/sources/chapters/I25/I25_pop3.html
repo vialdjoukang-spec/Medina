@@ -1,0 +1,109 @@
+
+<!-- ===== FENÊTRES : diagnostic et examens ===== -->
+<template data-pop="i25-rfcl" data-title="Modèle de probabilité pondérée par les facteurs de risque (RF-CL, ESC 2024)">
+<div class="lab">But</div><p>Estimer la probabilité qu’un patient symptomatique ait une maladie coronaire épicardique obstructive, avant tout examen. Recommandé par l’ESC 2024 (classe I).</p>
+<div class="lab">Variables</div><p>Sexe ; âge par tranches ; type de symptôme (angor typique, atypique, douleur non angineuse, dyspnée) ; nombre de facteurs de risque (0–1, 2–3, 4–5) parmi l’antécédent familial précoce, le tabagisme, la dyslipidémie, l’hypertension et le diabète. La probabilité se lit dans le tableau de l’ESC 2024.</p>
+<div class="lab">Catégories</div><p>Très basse ≤ 5 % ; basse &gt; 5–15 % ; modérée &gt; 15–50 % ; élevée &gt; 50–85 % ; très élevée &gt; 85 %.</p>
+<div class="lab">Ajustement clinique</div><p>La probabilité est relevée en cas d’anomalies ECG évocatrices, de dysfonction ventriculaire gauche évocatrice, d’ECG d’effort anormal, d’artériopathie périphérique ou de calcifications coronaires connues.</p>
+<div class="lab">Score calcique (CACS-CL)</div><p>Combiner le modèle au score calcique reclasse davantage de patients en probabilité très basse et permet de différer les examens chez eux.</p>
+<div class="lab">Pourquoi un nouveau modèle</div><p>L’ancienne table de probabilité (ESC 2019 et antérieures) surestimait la prévalence de la maladie obstructive dans les populations contemporaines, ce qui conduisait à trop d’examens.</p>
+<div class="lab">Limite</div><p>Le modèle estime une probabilité de sténose obstructive ; il ne dit rien de l’ANOCA ni de l’INOCA.</p></template>
+
+<template data-pop="i25-cac" data-title="Score calcique coronaire (Agatston)">
+<div class="lab">Principe</div><p>Scanner sans injection synchronisé à l’ECG. Chaque lésion dont la densité dépasse 130 unités Hounsfield est pondérée selon sa densité maximale ; la somme donne le score d’Agatston. Irradiation faible.</p>
+<div class="lab">Lecture</div><p>0 : pas de calcification détectable. 1–99 : calcifications légères. 100–399 : modérées. ≥ 400 : étendues. Le percentile selon l’âge et le sexe complète la lecture.</p>
+<div class="lab">Usage dans le SCC</div><p>Reclasser la probabilité (modèle CACS-CL) ; un score à 0 chez un patient à probabilité basse rend une sténose obstructive très improbable.</p>
+<div class="lab">Usage en prévention primaire</div><p>Modificateur de risque (voir le chapitre I10).</p>
+<div class="lab">Pièges</div><p>Un score à 0 n’exclut pas une plaque non calcifiée, en particulier chez le fumeur jeune. Les statines augmentent la densité des plaques et peuvent élever le score : il ne sert pas au suivi sous traitement.</p></template>
+
+<template data-pop="i25-ccta" data-title="Coroscanner (angioscanner coronaire)">
+<div class="lab">Question clinique</div><p>Existe-t-il une maladie coronaire, obstructive ou non ?</p>
+<div class="lab">Indication (ESC 2024)</div><p>Probabilité basse à modérée (&gt; 5–50 %), classe I, lorsque la qualité d’image attendue est bonne.</p>
+<div class="lab">Préparation</div><p>Fréquence &lt; 65/min et régulière (bêtabloquant, ivabradine si nécessaire) ; trinitrine sublinguale ; apnée d’environ 10 secondes ; produit de contraste iodé.</p>
+<div class="lab">Force</div><p>Valeur prédictive négative très élevée ; visualise les plaques non obstructives et leurs caractéristiques de haut risque. Essais : PROMISE (2015, résultats cliniques semblables à l’épreuve fonctionnelle) ; SCOT-HEART (2018, moins d’infarctus et de décès coronaires à 5 ans) ; DISCHARGE (2022, probabilité intermédiaire : événements semblables à la coronarographie invasive, moins de complications).</p>
+<div class="lab">Limites</div><p>Calcifications étendues, stents de petit calibre, fibrillation auriculaire rapide, obésité massive, incapacité à tenir l’apnée ; insuffisance rénale sévère ; allergie au produit de contraste iodé.</p>
+<div class="lab">Erreur fréquente</div><p>Conclure « pas de maladie coronaire » devant une plaque non obstructive. Une athérosclérose non obstructive justifie une prévention (statine), même sans sténose.</p></template>
+
+<template data-pop="i25-ffrct" data-title="FFR dérivée du coroscanner (FFR-CT)">
+<div class="lab">Principe</div><p>Modélisation de l’écoulement sanguin (mécanique des fluides numérique) à partir de la géométrie coronaire du scanner et d’hypothèses sur la microcirculation. Elle calcule une FFR virtuelle en tout point.</p>
+<div class="lab">Lecture</div><p>Valeur ≤ 0,80 mesurée 1 à 2 cm en aval de la sténose : sténose probablement significative. Zone grise 0,75–0,80 : interpréter avec la clinique et l’anatomie.</p>
+<div class="lab">Intérêt</div><p>Réduit les coronarographies sans sténose significative ; bonne concordance avec la FFR invasive dans les études de validation.</p>
+<div class="lab">Limites</div><p>Dépend de la qualité d’image ; analyse souvent externalisée ; peu fiable en cas de calcifications très étendues, de stents ou de pontages.</p></template>
+
+<template data-pop="i25-stressimg" data-title="Imagerie fonctionnelle de stress : comparaison">
+<div class="lab">Échocardiographie de stress</div><p>Effort ou dobutamine. Sans irradiation, disponible, peu coûteuse. Dépend de l’échogénicité et de l’opérateur. Critère : nouvelle anomalie de la cinétique segmentaire.</p>
+<div class="lab">Scintigraphie de perfusion (SPECT)</div><p>Traceur technétié ou thallium ; effort ou vasodilatateur. Largement validée, utilisable si l’échogénicité est mauvaise. Irradiation ; atténuation (seins, diaphragme) source de faux positifs.</p>
+<div class="lab">TEP de perfusion</div><p>Rubidium 82, ammoniac marqué à l’azote 13 ou eau marquée à l’oxygène 15 ; mesure absolue du débit myocardique et de la réserve de débit. Meilleure précision diagnostique ; détecte l’ischémie équilibrée et la dysfonction microvasculaire. Disponibilité limitée.</p>
+<div class="lab">IRM de perfusion</div><p>Premier passage du gadolinium sous vasodilatateur ; résolution spatiale élevée (défaut sous-endocardique), cicatrice et viabilité dans le même examen. Contre-indications de l’IRM ; claustrophobie.</p>
+<div class="lab">Choix</div><p>Selon l’expertise locale, les caractéristiques du patient et la question (viabilité, microcirculation). Tous sont recommandés en classe I pour une probabilité &gt; 15–85 %.</p></template>
+
+<template data-pop="i25-ecgeffort" data-title="ECG d’effort">
+<div class="lab">Place (ESC 2024)</div><p>N’est plus recommandé comme examen diagnostique de première intention, en raison d’une sensibilité et d’une spécificité modestes (de l’ordre de 58 % et 62 % dans les données citées par l’ESC). Il reste utile pour évaluer la tolérance à l’effort, les symptômes, la réponse tensionnelle, les arythmies et le pronostic, et comme alternative lorsque l’imagerie n’est pas disponible.</p>
+<div class="lab">Critère positif</div><p>Sous-décalage horizontal ou descendant du ST ≥ 1 mm, 60 à 80 ms après le point J, dans au moins deux dérivations contiguës.</p>
+<div class="lab">Conditions</div><p>Atteindre au moins 85 % de la fréquence maximale théorique ; pour un but diagnostique, les bradycardisants peuvent être suspendus environ 48 heures si c’est sûr ; pour évaluer l’efficacité du traitement, ils sont poursuivis.</p>
+<div class="lab">Pièges</div><p>Ininterprétable si bloc de branche gauche, stimulation, pré-excitation, sous-décalage de repos ≥ 1 mm, digoxine. Faux positifs fréquents chez la femme d’âge moyen.</p></template>
+
+<template data-pop="i25-duke" data-title="Score de Duke (épreuve sur tapis roulant)">
+<div class="lab">Formule</div><p>Score = durée d’effort en minutes (protocole de Bruce) − 5 × sous-décalage maximal du ST en mm − 4 × index d’angor (0 : pas d’angor ; 1 : angor non limitant ; 2 : angor ayant arrêté l’épreuve).</p>
+<div class="lab">Lecture</div><p>≥ + 5 : risque faible (mortalité annuelle de l’ordre de 0,25 %). − 10 à + 4 : risque intermédiaire. ≤ − 11 : risque élevé (mortalité annuelle de l’ordre de 5 %), qui justifie une coronarographie.</p>
+<div class="lab">Exemple</div><p>Effort de 7 minutes, sous-décalage de 2 mm, angor non limitant : 7 − 10 − 4 = − 7, risque intermédiaire.</p>
+<div class="lab">Limite</div><p>Validé sur tapis roulant et dans des populations anciennes ; il ne remplace pas l’imagerie.</p></template>
+
+<template data-pop="i25-hautrisque" data-title="Critères de haut risque d’événements par examen">
+<p>Critères associés à une mortalité cardiovasculaire annuelle estimée &gt; 3 % (ESC 2019, principe maintenu en 2024) :</p>
+<div class="lab">ECG d’effort</div><p>Score de Duke ≤ − 11.</p>
+<div class="lab">Scintigraphie ou TEP</div><p>Zone d’ischémie ≥ 10 % du myocarde ventriculaire gauche.</p>
+<div class="lab">Échocardiographie de stress</div><p>≥ 3 segments sur 16 avec hypokinésie ou akinésie induites.</p>
+<div class="lab">IRM de stress</div><p>≥ 2 segments sur 16 avec défaut de perfusion, ou ≥ 3 segments dysfonctionnels induits par la dobutamine.</p>
+<div class="lab">Coroscanner</div><p>Sténose du tronc commun ≥ 50 % ; atteinte tritronculaire avec sténoses ≥ 70 % ; atteinte bitronculaire avec sténose ≥ 70 % de l’interventriculaire antérieure proximale.</p>
+<div class="lab">Autres signaux d’alerte</div><p>Chute de la pression artérielle à l’effort, dilatation ventriculaire transitoire, FEVG ≤ 35 % d’origine ischémique.</p></template>
+
+<template data-pop="i25-ffr" data-title="Réserve coronaire fractionnelle (FFR)">
+<div class="lab">Définition</div><p>FFR = pression moyenne distale (Pd) / pression aortique moyenne (Pa), en hyperhémie maximale. Elle estime le débit maximal à travers l’artère sténosée, rapporté au débit maximal qu’elle aurait sans sténose.</p>
+<div class="lab">Technique</div><p>Guide de pression passé au-delà de la sténose, égalisé avec la pression aortique à l’ostium ; hyperhémie par l’adénosine intraveineuse (140 µg/kg/min) ou intracoronaire en bolus.</p>
+<div class="lab">Seuils</div><p>Artère saine : 1,0. ≤ 0,80 : sténose hémodynamiquement significative. Zone grise 0,75–0,80.</p>
+<div class="lab">Preuves</div><p>DEFER : différer l’angioplastie d’une sténose non significative est sûr. FAME (2009) : l’angioplastie guidée par la FFR réduit les événements dans la maladie pluritronculaire. FAME 2 (2012) : pour les sténoses à FFR ≤ 0,80, angioplastie + traitement médical réduit les revascularisations urgentes par rapport au traitement médical seul.</p>
+<div class="lab">Pièges</div><p>Hyperhémie incomplète (caféine, dysfonction microvasculaire) : FFR faussement élevée. Lésions en série et maladie diffuse : retrait progressif du guide. Artère responsable d’un infarctus aigu : non fiable. Rétrécissement aortique serré : interprétation prudente.</p></template>
+
+<template data-pop="i25-ifr" data-title="Rapport instantané sans onde (iFR)">
+<div class="lab">Principe</div><p>Rapport Pd/Pa mesuré au repos pendant la période sans onde de la diastole, où les résistances microvasculaires sont naturellement basses et stables. Pas d’adénosine.</p>
+<div class="lab">Seuil</div><p>≤ 0,89 : sténose significative.</p>
+<div class="lab">Preuves</div><p>DEFINE-FLAIR et iFR-SWEDEHEART (2017) : non-infériorité par rapport à la FFR à un an. Au suivi à 5 ans de DEFINE-FLAIR, une mortalité plus élevée a été observée dans le groupe iFR, ce qui incite à la prudence.</p>
+<div class="lab">Avantage</div><p>Plus rapide ; évite les effets de l’adénosine (dyspnée, bloc auriculoventriculaire, bronchospasme) ; l’enregistrement lors du retrait du guide localise les pertes de charge dans une maladie diffuse.</p></template>
+
+<template data-pop="i25-imr" data-title="Indice de résistance microvasculaire (IMR)">
+<div class="lab">Définition</div><p>IMR = pression distale en hyperhémie × temps de transit moyen d’un bolus de sérum physiologique à température ambiante (thermodilution). Il mesure la résistance de la microcirculation, indépendamment de l’artère épicardique.</p>
+<div class="lab">Seuil</div><p>IMR ≥ 25 : résistances microvasculaires élevées. Normal : &lt; 25.</p>
+<div class="lab">Mesure associée</div><p>La réserve coronaire par thermodilution = temps de transit de repos / temps de transit en hyperhémie ; anormale si &lt; 2,0.</p>
+<div class="lab">Interprétation combinée</div><p>Réserve basse + IMR élevé : atteinte structurelle de la microcirculation. Réserve basse + IMR normal : souvent débit de repos élevé (atteinte fonctionnelle).</p></template>
+
+<template data-pop="i25-ifct" data-title="Tests fonctionnels coronaires invasifs : protocole">
+<div class="lab">Indication (ESC 2024)</div><p>Patient symptomatique malgré le traitement, avec ANOCA ou INOCA suspectée et coronaires sans sténose significative.</p>
+<div class="lab">Séquence</div><p>1. Coronarographie diagnostique. 2. FFR ou iFR pour exclure une sténose significative. 3. Réserve coronaire et IMR par thermodilution, sous adénosine. 4. Test de provocation à l’acétylcholine. 5. Trinitrine intracoronaire pour lever un spasme et vérifier la vasodilatation épicardique.</p>
+<div class="lab">Durée et sécurité</div><p>Environ 20 à 30 minutes supplémentaires ; complications rares dans les centres expérimentés.</p>
+<div class="lab">Suspension préalable</div><p>Les inhibiteurs calciques et les dérivés nitrés de longue durée d’action sont en général suspendus 24 à 48 heures avant, pour ne pas masquer un spasme ; la caféine est évitée.</p></template>
+
+<template data-pop="i25-ach" data-title="Test de provocation à l’acétylcholine">
+<div class="lab">Principe</div><p>L’acétylcholine dilate une artère à endothélium sain (monoxyde d’azote) et contracte une artère dont l’endothélium ou le muscle lisse est hyperréactif.</p>
+<div class="lab">Protocole usuel</div><p>Injections intracoronaires lentes, à doses croissantes : dans la coronaire gauche 2, 20 puis 100 µg (jusqu’à 200 µg dans certains protocoles) ; dans la coronaire droite 20 à 50 µg (jusqu’à 80 µg). Surveillance de la douleur, de l’ECG à 12 dérivations et de l’angiographie après chaque dose.</p>
+<div class="lab">Critères</div><p><b>Vasospasme épicardique</b> : constriction ≥ 90 % par rapport au diamètre de référence, douleur habituelle et modifications ischémiques de l’ECG. <b>Spasme microvasculaire</b> : douleur habituelle et modifications ischémiques de l’ECG sans constriction épicardique ≥ 90 %. <b>Dysfonction endothéliale</b> : constriction épicardique modérée sans douleur ni modification de l’ECG.</p>
+<div class="lab">Effets indésirables</div><p>Bradycardie et bloc auriculoventriculaire transitoires (surtout dans la coronaire droite), fibrillation auriculaire, spasme prolongé ; arythmie ventriculaire rare. Traitement du spasme : trinitrine intracoronaire.</p>
+<div class="lab">Précautions</div><p>Asthme non contrôlé, insuffisance cardiaque sévère, sténose du tronc commun.</p></template>
+
+<template data-pop="i25-endoimg" data-title="Imagerie endocoronaire (IVUS, OCT)">
+<div class="lab">IVUS</div><p>Échographie par une sonde miniaturisée : pénétration profonde, mesure du vaisseau entier et de la charge en plaque. Dans le tronc commun, une surface luminale minimale inférieure à environ 6 mm² (seuil établi dans des populations occidentales) évoque une sténose significative.</p>
+<div class="lab">OCT</div><p>Lumière proche de l’infrarouge : résolution environ dix fois supérieure (10 à 20 µm), mesure de l’épaisseur de la chape fibreuse, distinction rupture / érosion ; pénétration plus faible ; nécessite de chasser le sang par du contraste.</p>
+<div class="lab">Usage (ESC 2024)</div><p>Guidage de l’angioplastie des lésions complexes (tronc commun, bifurcations vraies, lésions longues), classe I : choix du diamètre et de la longueur du stent, vérification de son expansion et de son apposition. Analyse d’un échec de stent.</p></template>
+
+<template data-pop="i25-viab" data-title="Viabilité myocardique">
+<div class="lab">Question</div><p>Un segment qui ne se contracte pas est-il cicatriciel (définitivement) ou hiberné (récupérable après revascularisation) ?</p>
+<div class="lab">IRM</div><p>Rehaussement tardif : si la cicatrice occupe moins de 50 % de l’épaisseur de la paroi, la récupération est probable ; au-delà de 50 %, elle est improbable.</p>
+<div class="lab">Échocardiographie à la dobutamine</div><p>Faible dose (5 à 10 µg/kg/min) : amélioration de la contraction = réserve contractile. Réponse biphasique (amélioration à faible dose, dégradation à forte dose) : myocarde viable et ischémique, meilleur prédicteur de récupération.</p>
+<div class="lab">TEP</div><p>Discordance entre perfusion réduite et métabolisme glucidique conservé (fluorodésoxyglucose) : hibernation.</p>
+<div class="lab">Limite</div><p>Dans l’essai STICH, la viabilité n’a pas identifié les patients qui bénéficiaient du pontage ; elle informe la décision sans la dicter.</p></template>
+
+<template data-pop="i25-ecg-anev" data-title="Signe ECG d’anévrisme ventriculaire">
+<div class="lab">Aspect</div><p>Ondes Q (ou QS) dans les dérivations du territoire infarci, le plus souvent de V1 à V4, avec un sus-décalage du ST qui persiste au-delà de quelques semaines après l’infarctus.</p>
+<div class="lab">Mécanisme</div><p>La paroi dyskinétique crée un courant de lésion permanent, sans ischémie aiguë.</p>
+<div class="lab">Valeur</div><p>Spécificité correcte, sensibilité faible ; l’échocardiographie ou l’IRM confirment.</p>
+<div class="lab">Piège</div><p>Ne pas l’interpréter comme un nouvel infarctus : comparer avec les tracés antérieurs ; un ST stable, des ondes Q profondes et une troponine sans cinétique orientent vers l’anévrisme ancien.</p></template>
