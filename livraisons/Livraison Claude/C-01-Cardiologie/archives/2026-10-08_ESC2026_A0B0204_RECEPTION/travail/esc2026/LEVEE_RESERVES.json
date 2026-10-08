@@ -1,0 +1,195 @@
+{
+ "date": "2026-10-08",
+ "auteur": "Claude (sous-agent de levée des réserves)",
+ "audit_source": "origin/codex/sciences-cs-fragments-20261007:docs/collaboration/reviews/2026-10-08/VEILLE_CLAUDE/AUDIT_MEDICAL.md",
+ "provenance": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/PROVENANCE.md",
+ "MED-01": {
+  "statut": "levée côté producteur : chaque changement ESC 2026 est rattaché à une ligne de tableau citée (document, DOI, date, section, tableau, population, ligne, classe et niveau, notes, ligne antérieure comparée, provenance du fichier lu). Contrelecture indépendante de Codex à refaire au commit de remise.",
+  "acces_primaire": "Textes intégraux 2026 lus sur les extractions pdftotext locales des PDF de l’éditeur (tampon « by guest on 07 October 2026 », empreintes SHA-256 dans PROVENANCE.md), non versionnés. Accès automatisé à academic.oup.com refusé depuis cet environnement (HTTP 403, vérification anti-robot) ; ESC 2021 sur la stimulation relu sur PubMed Central (PMC13179788) ; ESC 2024 sur la fibrillation auriculaire relu sur le jeu de diapositives officiel de l’ESC.",
+  "cours": {
+   "I30": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I30/PREUVES.md",
+    "changements_retires": [
+     "« 14 ng/L » (fenêtre et ligne canonique I30_c, par edits/I30_c.json)",
+     "« environ la moitié du seuil masculin » (proportion d’une population de référence, non un seuil)",
+     "décision « une troponine qui monte ou baisse sous cette valeur peut signer une atteinte myocardique »",
+     "« séries cliniques » non citées (ligne peptides natriurétiques, requalifiée d’après l’ESC 2025, section 4.5.5)"
+    ]
+   },
+   "I33": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I33/PREUVES.md",
+    "changements_retires": []
+   },
+   "I34": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I34/PREUVES.md",
+    "changements_retires": [
+     "référence erronée de l’entraînement (tableau de recommandations 6 → 6 et 17)"
+    ]
+   },
+   "I35": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I35/PREUVES.md",
+    "changements_retires": []
+   },
+   "I40": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I40/PREUVES.md",
+    "changements_retires": []
+   },
+   "I42": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I42/PREUVES.md",
+    "changements_retires": [
+     "conséquence « anomalie structurelle asymptomatique = point C » (verdict I42_pop2)",
+     "référence erronée de l’entraînement dans la CMH (tableau de recommandations 9 → 17)"
+    ]
+   },
+   "I44": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I44/PREUVES.md",
+    "changements_retires": [
+     "formule de l’ancre I44_c-a1 « recommandée (ESC 2021, classe I ; ESC 2026 : classe IIa, fraction < 50 %) »",
+     "« alternative possible » attribuée au consensus ESC 2025 sur la stimulation du système de conduction (non relu ; requalifié « sans classe de recommandation »)",
+     "référence « recommandations sur l’entraînement » (→ tableau de recommandations 9 de la réadaptation)"
+    ]
+   },
+   "Q21": {
+    "preuves": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/Q21/PREUVES.md",
+    "changements_retires": [
+     "« intensité fixée après mesure de la capacité d’effort » et « pas de prescription systématique des médicaments du ventricule gauche » (colonne ESC 2020 requalifiée d’après le texte)",
+     "référence de l’entraînement (tableau de recommandations 17 ajouté)"
+    ]
+   }
+  }
+ },
+ "MED-02": {
+  "statut": "levée",
+  "cours": "I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie)",
+  "fichiers": [
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I44/jobs/i44-esc-2026-comparaison__P1.json",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I44/out/i44-esc-2026-comparaison__P1.html",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I44/out/i44-esc-2026-comparaison__P1.json",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I44/verdicts/I44_a.json",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I44/verdicts/I44_b.json"
+  ],
+  "ancre_I44_c-a1_new": "… : l’ESC 2021 sur la stimulation recommande alors la resynchronisation (classe I, niveau A). L’ESC 2026 sur l’insuffisance cardiaque ne la place plus qu’« à envisager » (ESC 2026 : classe IIa, niveau B1) chez le patient en insuffisance cardiaque dont la fraction est < 50 % et qui a besoin d’une stimulation ventriculaire pour un BAV de haut degré ; ce seuil strict diffère du « ≤ 50 % » d’inclusion de l’essai BLOCK HF.",
+  "label": "ESC 2026 : classe IIa, niveau B1",
+  "preuve": "ESC 2026 insuffisance cardiaque, tableau de recommandations 7 et tableau 6 (« CRT, rather than RV pacing, should be considered … », IIa, B1) ; ESC 2021 stimulation, section 6.5 (« … is recommended for patients with HFrEF (<40%) … », I, A) ; BLOCK HF « 50% or less »."
+ },
+ "MED-03": {
+  "statut": "levée côté producteur",
+  "cours": "I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie)",
+  "fichiers": [
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I30/edits/I30_c.json",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I30/verdicts/I30_c.json",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I30/jobs/i30-esc-2026-comparaison__P1.json",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I30/out/i30-esc-2026-comparaison__P1.html"
+  ],
+  "ligne_canonique_corrigee": "chapters/I30/I30_c.html : « troponine T ultrasensible (Roche) 14 ng/L, seuil commun aux deux sexes » → seuil validé pour la méthode et le sexe ; une variation jugée sur un seuil global ne suffit pas ; myopéricardite si critères de péricardite aiguë + atteinte myocardique documentée (au-delà du 99e percentile propre à la méthode et au sexe) + fonction ventriculaire gauche évaluée sans altération nouvelle.",
+  "sources": "Cinquième définition universelle 2026, encadré 1, sections 6.1 et 14.1.1 ; ESC 2025 myocardites et péricardites, section 8.",
+  "seuils_chiffres_ajoutes": "aucun",
+  "reste": "Exemples Abbott (16 et 34 ng/L) de la même cellule non relus dans une notice du fabricant ; hors champ de la réserve."
+ },
+ "I42": {
+  "statut": "vigilance levée",
+  "fichier": "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I42/verdicts/I42_pop2.json",
+  "definition_lue": "ESC 2024 fibrillation auriculaire, tableau du score (diapositive officielle 42) : « Symptoms and signs of heart failure (irrespective of LVEF, thus including HFpEF, HFmrEF, and HFrEF), or the presence of asymptomatic LVEF ≤40% » ; seuils : score ≥ 2, I, C ; score 1, IIa, C (diapositive 43).",
+  "correction": "Le verdict ne garde que la définition de l’ESC 2024 ; la conséquence « anomalie structurelle, même asymptomatique, apporte au moins un point » est retirée.",
+  "non_tranche": "Le tableau 18 de l’ESC 2026 sur l’insuffisance cardiaque libelle « C » « Chronic HF stage B, C, D », sans critères ; non repris comme règle autonome. Décision éditoriale à prendre si l’on veut le citer."
+ },
+ "I35": {
+  "statut": "vigilance traitée par complément proposé",
+  "fichiers": [
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I35/edits/I35_d.json",
+   "livraisons/Livraison Claude/C-01-Cardiologie/travail/esc2026/I35/verdicts/I35_d.json"
+  ],
+  "verification": "ESC 2026 insuffisance cardiaque, section 7.5.3 (texte) et figure 15 : 40 mg chez le patient naïf de diurétique ; deux fois la dose orale habituelle chez le patient déjà traité par un diurétique de l’anse ; situation : insuffisance cardiaque décompensée avec surcharge ; pas de classe pour la dose (tableau de recommandations 9 : diurétiques de l’anse intraveineux, I, A). ESC 2021, figure 13 : « ≥20–40 mg » sans diurétique préalable.",
+  "complement": "Dose 2021 conservée ; donnée 2026 ajoutée entre parenthèses avec sa situation et ses deux populations ; source « ESC 2026 insuffisance cardiaque, section 7.5.3 » ajoutée.",
+  "reste": "Nuance « ≥ 20–40 mg » (2021) et dose plus élevée en cas de maladie rénale chronique (note a de la figure 15) non ajoutées."
+ },
+ "tests": {
+  "methode": "appliquer_justifications.py <CODE> W/<CODE> sans --ecrire, sur le canonique actuel : L/livraison.json étant absent (déplacé dans lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE/), le script est importé par un lanceur de la zone de travail de session qui pointe LIVR vers un dossier temporaire dont livraison.json ne déclare aucun fichier (base = chapters/ canonique). Une écriture d’essai (--ecrire) dans ce dossier temporaire a servi au contrôle des sigles des cours complets ; rien n’est écrit dans chapters/, glossary/, L/sources ni L/livraison.json.",
+  "appliquer_justifications": {
+   "I30": {
+    "textes_appliques": 1,
+    "textes_echecs": [],
+    "ancres": 2,
+    "ancres_echecs": [],
+    "fenetres_creees": 1,
+    "fenetres_echecs": []
+   },
+   "I33": {
+    "textes_appliques": 0,
+    "textes_echecs": [],
+    "ancres": 3,
+    "ancres_echecs": [],
+    "fenetres_creees": 1,
+    "fenetres_echecs": []
+   },
+   "I34": {
+    "textes_appliques": 0,
+    "textes_echecs": [],
+    "ancres": 2,
+    "ancres_echecs": [],
+    "fenetres_creees": 1,
+    "fenetres_echecs": []
+   },
+   "I35": {
+    "textes_appliques": 1,
+    "textes_echecs": [],
+    "ancres": 3,
+    "ancres_echecs": [],
+    "fenetres_creees": 1,
+    "fenetres_echecs": []
+   },
+   "I40": {
+    "textes_appliques": 0,
+    "textes_echecs": [],
+    "ancres": 2,
+    "ancres_echecs": [],
+    "fenetres_creees": 1,
+    "fenetres_echecs": []
+   },
+   "I42": {
+    "textes_appliques": 5,
+    "textes_echecs": [],
+    "ancres": 2,
+    "ancres_echecs": [],
+    "fenetres_completees": 1,
+    "fenetres_echecs": []
+   },
+   "I44": {
+    "textes_appliques": 2,
+    "textes_echecs": [],
+    "ancres": 2,
+    "ancres_echecs": [],
+    "fenetres_creees": 1,
+    "fenetres_echecs": []
+   },
+   "Q21": {
+    "textes_appliques": 0,
+    "textes_echecs": [],
+    "ancres": 3,
+    "ancres_echecs": [],
+    "fenetres_creees": 1,
+    "fenetres_echecs": []
+   }
+  },
+  "verifier_sigles": {
+   "fenetres": "{} pour les huit fenêtres",
+   "new_et_new_final": "{} pour les huit cours (compléments, verdicts, ancres)",
+   "cours_complets_apres_application": "{} pour les huit cours"
+  },
+  "longueurs_fenetres_hors_sources": {
+   "I30": 2637,
+   "I33": 2512,
+   "I34": 2609,
+   "I35": 2651,
+   "I40": 2593,
+   "I42": 2169,
+   "I44": 3237,
+   "Q21": 2877
+  }
+ },
+ "non_fait": [
+  "Aucune écriture dans chapters/, glossary/, L/sources ni L/livraison.json ; aucune opération git.",
+  "Contrelecture indépendante de Codex au commit de remise : à faire.",
+  "Les quatre onglets complets des huit cours ne sont pas relus par cette passe ; aucune revendication de complétude CIM-11."
+ ]
+}

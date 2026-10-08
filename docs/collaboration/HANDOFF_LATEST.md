@@ -1,3 +1,7 @@
+## Réception ESC 2026 par chapitre — 8 octobre 2026
+
+La tête Claude `a0b020489cceba1e7a0f90d791a8a122ab5aa07e` remet huit paquets I30, I33, I34, I35, I40, I42, I44 et Q21. Ils sont reçus et archivés sous l’archive de réception et détaillés dans [le rapport](reviews/2026-10-08/PR12_ESC2026_A0B0204/RECEPTION.md). Quinze des 26 propositions HTML sont identiques à l’ancien paquet, dix sont modifiées et une est nouvelle dans le paquet. Les huit manifestes restent inexploitables par le protocole (zéro fichier déclaré et rapport annoncé absent). MED-02 est corrigée au contrôle ciblé ; MED-03 est corrigée sur le seuil mais garde une nuance aiguë/chronique ; MED-01 et l’audit complet restent ouverts. Cinq cibles I42/Q21 ont divergé depuis la base annoncée. Aucune injection canonique, reconstruction ou publication de cours n’est effectuée.
+
 # MEDINA — dernière passation
 
 ## Réception I83 et audit A41 — 7 octobre 2026

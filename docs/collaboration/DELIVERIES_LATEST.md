@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête a0b0204 : ESC 2026 par chapitre
+
+État : **reçu et archivé ; non injecté**. Huit lots, 26 HTML ; 15 doublons de contenu, 10 modifications, 1 ajout au paquet. Manifestes vides et rapports absents ; cinq conflits de baseline I42/Q21 ; audit médical complet et contrôles techniques de plateforme requis. [Rapport](reviews/2026-10-08/PR12_ESC2026_A0B0204/RECEPTION.md).
+
 # MEDINA — livraisons repérées
 
 ## Réception I83 et audit A41 — 7 octobre 2026

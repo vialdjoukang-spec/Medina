@@ -1,0 +1,213 @@
+{
+ "date": "2026-10-07",
+ "verificateur": "Claude (vérification indépendante)",
+ "base": "Base : chapters/<CODE>/ canonique après fusion de la branche Codex ; old revérifiés uniques. Textes intégraux ESC 2026 lus localement (I35/src, I44/src). Règle appliquée : toute classe et tout niveau cités sont lus dans un tableau de recommandations du référentiel.",
+ "liste_recommandations_2026": "Confirmée : quatre documents du 28.08.2026 (insuffisance cardiaque ehag100, réadaptation ehag099, maladie cardiovasculaire et maladie rénale chronique ehag098, cinquième définition universelle ehag101). Lecture désormais faite sur les textes intégraux locaux, et non plus sur les seules diapositives.",
+ "cours": {
+  "I30": {
+   "fenetre": "I30/out/i30-esc-2026-comparaison__P1.html",
+   "action": "creer",
+   "verdict": "corrigée",
+   "erreurs": [
+    "Ligne « Troponine » : « avant 2026, 99e percentile de la méthode » est inexact ; la quatrième définition (2018) recommandait déjà des seuils propres au sexe avec les dosages ultrasensibles (cinquième définition, section 14.1). La cinquième les rend nécessaires à la définition de la lésion.",
+    "Réserve erronée : la cardiomyopathie restrictive n’a pas disparu du texte 2026 ; la note e du tableau de recommandations 4 exige le cathétérisme droit et gauche pour la distinguer de la constriction."
+   ],
+   "corrections": [
+    "Fenêtre resserrée (2 553 → 2 044 caractères hors sources) ; ligne ESC 2021 et ancre I30_b-a1 (effort) retirées ; libellé I30_c-a1 « comparer les référentiels » remplacé par « indication confirmée » ; décision explicitée : une troponine T entre le seuil féminin et 14 ng/L qui monte ou baisse signe une atteinte myocardique chez la femme."
+   ],
+   "reserves": [
+    "Le texte 2026 ne chiffre pas de seuil par dosage ; seuil féminin de la troponine T ≈ moitié du seuil masculin.",
+    "La phrase de I30_c « seuil commun aux deux sexes » décrit le fabricant ; un complément du texte reste à décider."
+   ],
+   "ancres_gardees": [
+    "I30_c-a1",
+    "I30_c-a2"
+   ],
+   "longueur_texte_hors_sources": 2044,
+   "verifier_sigles": "{}"
+  },
+  "I40": {
+   "fenetre": "I40/out/i40-esc-2026-comparaison__P1.html",
+   "action": "creer",
+   "verdict": "corrigée",
+   "erreurs": [
+    "Biopsie 2026 décrite comme visant « toute insuffisance cardiaque d’origine incertaine » : surgénéralisation ; le tableau de recommandations 4 vise l’aggravation rapide malgré le traitement ou la suspicion d’inflammation, d’infiltration ou de surcharge non identifiable autrement.",
+    "Arrêt progressif présenté sans sa condition : l’ESC 2026 le réserve à la préférence du patient (« to accommodate patient preference ») et le dit exceptionnel."
+   ],
+   "corrections": [
+    "Ajout de la section 6.1.8 : TRED-HF, rechute chez 40 % en 6 mois ; myocardite citée parmi les causes réversibles où un sevrage progressif peut se discuter.",
+    "Retrait des redites interfenêtres (troponine → I30 ; indications médicamenteuses selon la FEVG et seuils des dispositifs → I42)."
+   ],
+   "reserves": [
+    "Hors ESC 2026, non corrigé : I40_b « FEVG modérément réduite » pour 41–49 %, que l’ESC 2025 nomme « légèrement réduite » (mildly reduced)."
+   ],
+   "ancres_gardees": [
+    "I40_b-a1",
+    "I40_b-a2"
+   ],
+   "longueur_texte_hors_sources": 2596,
+   "verifier_sigles": "{}"
+  },
+  "I42": {
+   "fenetre": "I42/out/i42-esc-2026-comparaison__P1.html",
+   "action": "completer",
+   "verdict": "corrigée",
+   "erreurs": [
+    "Après fusion, la clé i42-esc-2026-comparaison existe déjà (fenêtre canonique Codex) : l’action « creer » aurait écrasé ou dupliqué la clé ; job converti en « completer » (fichier_cible I42_pop_esc_comparison), rubriques sans redite.",
+    "Indication médicamenteuse à FEVG 45 % présentée sans la note e du tableau 5 (aucun grand essai randomisé limité à 41–49 %).",
+    "Déduction « l’entraînement attend la réduction du gradient » et rappel de l’échocardiographie d’effort ESC 2023 : hors ESC 2026 et redite du cours ; retirés."
+   ],
+   "corrections": [
+    "Ancre I42_b-a1 retirée (classification déjà ouverte par le mot vert canonique de I42_b) ; I42_b-a2 mise entre parenthèses.",
+    "Classes génétique (I, C) et TEP au FDG (IIa, C) confirmées dans le tableau de recommandations 4 du texte intégral."
+   ],
+   "reserves": [
+    "La rubrique canonique de Codex « ne suffit pas à attribuer une nouvelle classe ESC 2026 » peut coexister ; les classes sont désormais lues dans le tableau."
+   ],
+   "ancres_gardees": [
+    "I42_b-a2",
+    "I42_a-a1"
+   ],
+   "longueur_texte_hors_sources": 2498,
+   "verifier_sigles": "{}",
+   "edits": {
+    "I42_d-e2026-1": "accepter",
+    "I42_d-e2026-2": "accepter",
+    "I42_pop5-e2026-1": "accepter",
+    "I42_pop6-e2026-1": "accepter",
+    "I42_pop2-e2026-1": "corriger (score CHA₂DS₂-VASc daté ESC 2023, CHA₂DS₂-VA nommé comme règle actuelle, conséquence du point « C » au stade B)"
+   }
+  },
+  "I33": {
+   "fenetre": "I33/out/i33-esc-2026-comparaison__P1.html",
+   "action": "creer",
+   "verdict": "corrigée",
+   "erreurs": [
+    "« La CIM-11 attribue à l’embolie coronaire une extension de code propre » : codes seulement proposés et en cours d’examen dans la cinquième définition ; retiré.",
+    "Classe IIb de l’enveloppe attribuée à des « données observationnelles et modélisations » : l’essai WRAP-IT (population générale, sans modification d’effet selon la fonction rénale) y contribue ; reformulé."
+   ],
+   "corrections": [
+    "Classes de la réadaptation après chirurgie valvulaire retirées (redite de I34, sans indication propre à l’endocardite) ; ligne prothèse fusionnée ; libellé I33_pop2-a1 adapté."
+   ],
+   "reserves": [
+    "Cinquième définition : document de consensus, non recommandation au sens strict."
+   ],
+   "ancres_gardees": [
+    "I33_b-a1",
+    "I33_b-a2",
+    "I33_pop2-a1"
+   ],
+   "longueur_texte_hors_sources": 2521,
+   "verifier_sigles": "{}"
+  },
+  "I34": {
+   "fenetre": "I34/out/i34-esc-2026-comparaison__P1.html",
+   "action": "creer",
+   "verdict": "corrigée",
+   "erreurs": [],
+   "corrections": [
+    "Fenêtre raccourcie (3 282 → 2 619 caractères hors sources) : rubriques fusionnées ; seuils de l’IEC au stade B et du glycoside retirés (hors sujet) ; « mêmes exclusions » retiré de la colonne 2025."
+   ],
+   "reserves": [
+    "Toutes les classes vérifiées : 2026 TEER I, B1 et IIb, C (tableau 17) ; 2025 I, A et IIb, B ; tricuspide 2025 IIa, A ; réadaptation IIa, B2 et IIb, B2 ; ESC 2021 IIa, B (tableau 6 de l’ESC 2026).",
+    "Fiche I34_d : furosémide et spironolactone citent l’ESC 2021 (spironolactone inchangée en 2026)."
+   ],
+   "ancres_gardees": [
+    "I34_b-a1",
+    "I34_b-a2"
+   ],
+   "longueur_texte_hors_sources": 2619,
+   "verifier_sigles": "{}"
+  },
+  "I35": {
+   "fenetre": "I35/out/i35-esc-2026-comparaison__P1.html",
+   "action": "creer",
+   "verdict": "corrigée",
+   "erreurs": [
+    "« Les troubles phosphocalciques accélèrent la calcification » : l’ESC 2026 présente cet effet comme théorique (le cinacalcet n’a pas réduit les événements) ; retiré de la fenêtre.",
+    "Durabilité des bioprothèses généralisée au patient « plus jeune » : le texte la limite au patient jeune atteint de maladie rénale sévère, sans essai pour guider le choix ; reformulé."
+   ],
+   "corrections": [
+    "Fenêtre ramenée de 3 628 à environ 2 660 caractères hors sources ; rubrique « Niveaux de preuve » retirée (redite I34 et I44)."
+   ],
+   "reserves": [
+    "Hors ESC 2026, non corrigé : I35_d, furosémide intraveineux « 20–40 mg chez le patient naïf » (ESC 2021) ; l’ESC 2026 (section 7.5.3) indique 40 mg chez le patient naïf et deux fois la dose orale habituelle chez le patient déjà traité.",
+    "DapaTAVI non repris (texte sans recommandation)."
+   ],
+   "ancres_gardees": [
+    "I35_b-a1",
+    "I35_b-a2",
+    "I35_b-a3"
+   ],
+   "longueur_texte_hors_sources": 2659,
+   "verifier_sigles": "{}"
+  },
+  "I44": {
+   "fenetre": "I44/out/i44-esc-2026-comparaison__P1.html",
+   "action": "creer",
+   "verdict": "corrigée",
+   "erreurs": [
+    "Ancres sans champ « new » et labels hors libellé « ESC 2026 : … » : format non conforme ; réécrites. Ancre I44_b-a2 (rubrique des sources) retirée.",
+    "Comparaison du niveau B1 à « l’ancien niveau B » alors que la classe antérieure était I, A ; corrigé."
+   ],
+   "corrections": [
+    "Fenêtre raccourcie (3 627 → 2 896 caractères hors sources) ; mécanisme WRAP-IT retiré (traité dans I33) ; précision ajoutée : une fraction < 50 % sans symptôme ni signe relève du stade B et sort de la recommandation."
+   ],
+   "reserves": [
+    "Raison de l’abaissement I → IIa non explicitée par l’ESC 2026.",
+    "BLOCK HF : fraction ≤ 50 % ; classification 2026 : < 50 %."
+   ],
+   "ancres_gardees": [
+    "I44_c-a1",
+    "I44_b-a1"
+   ],
+   "longueur_texte_hors_sources": 2896,
+   "verifier_sigles": "{}",
+   "edits": {
+    "I44_a-esc1": "corriger (phrase du cours fausse, correction acceptée sur le fond ; « ne propose plus … qu’en classe IIa » reformulé)",
+    "I44_b-esc1": "corriger (antécédent ambigu « ces patients » ; abaissement de classe valable pour tous)"
+   }
+  },
+  "Q21": {
+   "fenetre": "Q21/out/q21-esc-2026-comparaison__P1.html",
+   "action": "creer",
+   "verdict": "corrigée",
+   "erreurs": [
+    "Causalité non démontrée : l’hypertension, le diabète et l’obésité étaient présentés comme expliquant le risque d’insuffisance cardiaque multiplié par huit ; ce chiffre est un risque relatif global par rapport à des témoins (section 4.1.4.8). Reformulé.",
+    "Ancres sans champ « new » et labels hors libellé « ESC 2026 : … » : réécrites."
+   ],
+   "corrections": [
+    "Rubriques fusionnées, fenêtre raccourcie ; lien ESC/ERS 2022 ajouté aux sources."
+   ],
+   "reserves": [
+    "Aucune indication 2026 propre au Fontan, au ventricule droit systémique ni aux cardiopathies cyanogènes."
+   ],
+   "ancres_gardees": [
+    "Q21_b-a1",
+    "Q21_a-a1",
+    "Q21_b-a2"
+   ],
+   "longueur_texte_hors_sources": 2787,
+   "verifier_sigles": "{}"
+  },
+  "I00": {
+   "verdict": "confirmé : aucun changement",
+   "motif": "Texte intégral : « rheumatic » n’apparaît qu’une fois dans l’ESC 2026 sur l’insuffisance cardiaque (aspect échographique) ; l’antivitamine K reste la règle dans la fibrillation auriculaire avec rétrécissement mitral modéré ou serré, comme dans le cours ; aucune mention dans la réadaptation ni dans la maladie rénale chronique ; le cours ne traite pas de la réadaptation après chirurgie valvulaire. Aucune fenêtre ni complément.",
+   "reserves": [
+    "Les stades A à D du cours sont ceux de la WHF (cardiopathie rhumatismale) ; garder la mention « de la WHF » pour éviter la confusion avec les stades 2026 de l’insuffisance cardiaque."
+   ]
+  }
+ },
+ "incoherences_hors_esc2026_signalees": [
+  "I40_b, tableau de risque : « FEVG modérément réduite » au lieu de « légèrement réduite » (ESC 2025, « mildly reduced », 41–49 %).",
+  "I35_d : furosémide intraveineux 20–40 mg chez le patient naïf (ESC 2021) contre 40 mg en 2026 (deux fois la dose orale habituelle chez le patient déjà traité, section 7.5.3).",
+  "I30_c : troponine T ultrasensible 14 ng/L « seuil commun aux deux sexes » ; la cinquième définition exige un seuil propre au sexe (complément du texte à décider)."
+ ],
+ "regles_appliquees": [
+  "Toute classe et tout niveau cités sont lus dans un tableau de recommandations (aucune classe déduite de la formulation).",
+  "Au plus trois ancres par cours ; old uniques dans chapters/ canonique ; new = old avec le libellé « ESC 2026 : … » inséré ; label sous-chaîne exacte de new ; aucune ancre sur une ligne de badge de _a.html.",
+  "Redites interfenêtres supprimées : troponine (I30), biopsie et sevrage (I40), indications selon la FEVG et seuils des dispositifs (I42, fenêtre canonique), échelle B1 (I34 et I44 seulement), enveloppe chez l’hémodialysé (mécanisme dans I33, classe dans I44), réadaptation après chirurgie valvulaire (I34 ; I35 pour le RA)."
+ ],
+ "sauvegarde_avant_correction": "Archive des sorties des producteurs avant correction : scratchpad de session (esc2026_avant.tar), non versionnée.",
+ "mise_a_jour_2026-10-08": "Réserves MED-01 à MED-03 et vigilances I42 et I35 de l’audit médical Codex du 8 octobre 2026 : voir LEVEE_RESERVES.json, PROVENANCE.md et <CODE>/PREUVES.md. Les mentions antérieures de ce fichier sur I42_pop2 (point « C » au stade B), I30_c (« complément du texte à décider ») et I35_d (« non corrigé ») sont remplacées par ces fichiers."
+}
