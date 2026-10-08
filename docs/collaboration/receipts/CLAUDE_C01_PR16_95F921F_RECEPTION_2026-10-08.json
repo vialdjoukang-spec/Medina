@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "kind": "claude_fragment_reception",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/medina",
+  "pull_request": 16,
+  "branch": "claude/vigilant-mayer-cevhwj",
+  "observed_pr_head_sha": "44856ce0f48823455cd7accdf0c1591750d5ccb0",
+  "package_content_commit_sha": "95f921fa6c86dea97064a55c5b73df6244587046",
+  "main_sha_before": "0604000a9acf8bc6f8217436064835777294c981",
+  "fragment": "C-01-Cardiologie",
+  "producer": "Claude",
+  "auditor": "Codex",
+  "status": {
+    "detected": true,
+    "received": true,
+    "archived": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "documentation_and_archive_only"
+  },
+  "manifest": {
+    "git_blob_sha": "984b20f3b5bc9f4778bdf380cd9d5df0a1503358",
+    "sha256": "602aea84149471b837273d443b7ce4e2075c2f45006d7a093400bef7f5bec176",
+    "declared_base_commit": "0bdb60ca82da208180ad706f981b0432afc434fa",
+    "file_count": 297,
+    "verified_sha256": 297,
+    "courses": 30,
+    "categories_cim10gm_2024": 76,
+    "covered": 76,
+    "icd11_complete": false
+  },
+  "archive": {
+    "root": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-PR16-95F921F",
+    "source_objects": 297,
+    "from_pr_package": 83,
+    "from_main_baseline": 214,
+    "metadata_files": 5,
+    "provenance": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-PR16-95F921F/PROVENANCE.json"
+  },
+  "checks_executed": [
+    "remote PR/main/head verification",
+    "remote branch/PR inventory",
+    "manifest/inventory consistency",
+    "SHA-256 297/297",
+    "static HTML/JSON/JS review",
+    "targeted medical counter-review"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py",
+    "unit tests",
+    "S01 rebuild",
+    "desktop browser",
+    "mobile browser",
+    "JavaScript console",
+    "site deployment"
+  ],
+  "blocking_reservations": [
+    "I85 propranolol dose not stratified for ascites",
+    "I51 phenprocoumone dose provenance contradictory/unverified",
+    "I95 threshold and wording",
+    "I77 aspirin framed too routinely",
+    "R02 antibiotic sequencing ambiguity",
+    "I51 mortality figure unconfirmed",
+    "m5 and m7 remain",
+    "manifest base_commit is packaging commit",
+    "federal_exam.json absent from delivery sources layout",
+    "runtime/browser checks not independently reproduced"
+  ],
+  "canonical_changes": false,
+  "routes_changed": false,
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "report": "docs/collaboration/reviews/2026-10-08/PR16_95F921F_C01/RECEPTION.md"
+}
