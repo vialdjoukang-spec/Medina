@@ -1,3 +1,15 @@
+## État actuel vérifié — I83 publié, 8 octobre 2026
+
+**I83 — Varices des membres inférieurs (C-01-Cardiologie)** est injecté au commit `bb3214d2f887068e669371b76509693ca63b5606` et publié sur `main` au SHA `72ccab4ea2197f8890d090270d212bb54184e0d0` (lecture distante à 10:08:26 UTC). Les dix sources de Claude `6d5797c6a902e430cd9d3e9dd5159ec507a1476a` sont identiques aux blobs publiés. [Reçu final de cette injection](receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json) ; [décision et audits](reviews/2026-10-08/I83_DECISION_0974D85/DECISION.md).
+
+Contrôles indépendants du canonique : **118 tests unitaires, 1 923 assertions natives, 72 contrôles S01 et 41 assertions des routes**, sans échec ; navigateur ordinateur/mobile et contrôle statique réussis. Transport HTTP local avec réseau externe bloqué, sans preuve de portabilité `file://`. Les copies documentaires fournies ont été relues ; leur téléchargement depuis les sites officiels n’a pas été réalisé dans ce runtime. Les remarques mineures restent ouvertes ; cette injection ne certifie ni une qualité exhaustive ni la complétude CIM-11.
+
+Le complément Claude `e2c023c8ea255809d53561ccdb1273cb1641813f`, une phrase de qualification documentaire et d’urgence vasculaire dans D61, a un avis médical favorable ; sa publication complémentaire est en contrôle. Le déploiement Pages est vérifié séparément dans le [relevé de déploiement](reviews/2026-10-08/ETAT_DES_LIEUX/DEPLOIEMENT.md). La branche historique d’intégration n’est pas réputée synchronisée avec `main` par ce reçu.
+
+**A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** reste le chapitre actif Codex. L’audit Claude de la base `39b7ff0` est reçu : **10 observations majeures, 46 mineures, 19 rédactionnelles**. Aucune correction médicale de ces dix sources n’est encore contrevérifiée. Les signaux Codex distinguent désormais cet audit reçu de la demande d’accusé antérieure.
+
+**Les sections suivantes constituent l’historique des réceptions.** Leurs mentions « non injecté » ou « contrôles non reproduits » décrivent l’instantané indiqué et ne remplacent pas le reçu final ci-dessus. La file 11 fragments Claude / 10 Codex demeure inchangée ; un seul chapitre actif par responsable.
+
 ## I83 — statut de la conduite intra-artérielle, tête e2c023c, 8 octobre 2026
 
 Trois objets nouveaux sont reçus et archivés. La conduite après injection intra-artérielle est désormais explicitement présentée comme une instruction propre aux libellés Aethoxysklerol/Sclerovein, non comme une recommandation issue d’essais ; l’avis vasculaire immédiat et le protocole local d’urgence ischémique priment. Les contrôles producteur ciblent le main `e434eac` mais ne sont pas rejoués. I83 reste non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_E2C023C_I83_INTRAARTERIELLE_STATUT/RECEPTION.md).

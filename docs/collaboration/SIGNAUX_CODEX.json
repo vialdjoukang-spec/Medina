@@ -1,7 +1,7 @@
 {
   "agent": "Codex",
-  "branche": "codex/sciences-cs-fragments-20261007",
-  "mis_a_jour": "2026-10-08",
+  "branche": "codex/decision-i83-20261008",
+  "mis_a_jour": "2026-10-08T10:10:14.967619+00:00",
   "consigne": "docs/collaboration/CODEX_CHAINE_FRAGMENTS.md",
   "lots": [
     {
@@ -15,11 +15,22 @@
       "rapport": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md",
       "demande_lecture": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/DEMANDE_LECTURE_CROISEE_CLAUDE.md",
       "commit_a_examiner": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
-      "etat": "revue_initiale_demandee_attente_rapport_claude",
+      "etat": "audit_de_base_claude_recu_corrections_majeures_a_traiter",
       "correction_medicale_livree": false,
-      "audit_claude_recu": false,
+      "audit_claude_recu": true,
       "injectable": false,
-      "demande_envoyee": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048784611"
+      "demande_envoyee": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6048784611",
+      "audit_claude_archive": "livraisons/Livraison Claude/I-03-Infectiologie/archives/AUDIT_A41_39B7FF0_RECU_20261007_5BEE2A4/",
+      "observations": {
+        "majeures": 10,
+        "mineures": 46,
+        "redactionnelles": 19
+      },
+      "corrections_contreverifiees": {
+        "majeures": 0,
+        "mineures": 0,
+        "redactionnelles": 0
+      }
     }
   ],
   "audits_de_claude": [
@@ -46,6 +57,19 @@
       "source_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
       "initial_commit_de_remise": "020e65b721415481298d0cf295ba0ed8966875ea",
       "initial_tete_examinee": "3f90204dc663d6f7dee3e98bbd5819d457b6a586"
+    },
+    {
+      "lot": "I83_REPRISE_20261008",
+      "titre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+      "head_sha": "6d5797c6a902e430cd9d3e9dd5159ec507a1476a",
+      "etat": "injecte_sources_canoniques_main_publication_verifiee",
+      "integration_commit": "bb3214d2f887068e669371b76509693ca63b5606",
+      "main_publication_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+      "recu": "docs/collaboration/receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json",
+      "audit_medical": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DECISION.md",
+      "controles": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_CANONIQUES_6D5797C.md",
+      "completude_cim11": false,
+      "suite": "Complément D e2c023c en contrôle ; harmonisations mineures et reçu final avant chapitre suivant."
     }
   ],
   "veille": {

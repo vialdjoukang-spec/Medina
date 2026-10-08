@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "result": "passed",
+  "scope": "Canonical I83 after the targeted E2C023C sentence; no source modification or Git mutation by these controls",
+  "source_sha": "e2c023c8ea255809d53561ccdb1273cb1641813f",
+  "canonical_head_before": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+  "canonical_head_after": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+  "canonical_root": "/workspace/Medina",
+  "recorded_utc": "2026-10-08T10:14:15.435100+00:00",
+  "I83_d_sha256": "72a6ddb28a8379f9ab54323d3323220e3f4f102129f1f948d5ccf8c58c5b0e06",
+  "delivery_I83_d_sha256": "72a6ddb28a8379f9ab54323d3323220e3f4f102129f1f948d5ccf8c58c5b0e06",
+  "delivery_I83_d_path": "/workspace/Medina/livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I83/I83_d.html",
+  "inputs_sha256_before": {
+    "chapters/I83/I83_a.html": "1610615e2f39a888d4ccb46b46b56a4ea0c5195f19dfd8af68cac511f7f0ff76",
+    "chapters/I83/I83_b.html": "d336d0b4e4977212ffa192fe2c57a535db54f288daa2ce014c022d513ed9da9a",
+    "chapters/I83/I83_c.html": "ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261",
+    "chapters/I83/I83_d.html": "72a6ddb28a8379f9ab54323d3323220e3f4f102129f1f948d5ccf8c58c5b0e06",
+    "chapters/I83/I83_pop1.html": "a790feb6f96e5805da69f398daf23a617813424a44dad8d14d94e1b2348e36cd",
+    "chapters/I83/I83_pop2.html": "e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55",
+    "chapters/I83/I83_pop3.html": "c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42",
+    "chapters/I83/I83_pop4.html": "dede4bdcf1974bbff6c2b2874410b64ac1e15003371fc9d78b3436c4999174f4",
+    "glossary/i83.py": "b041af30d40c15eb16c0063dc7d83fa0a57c364608d36ccb38003bf2af7636b4",
+    "glossary/fragments_medina.py": "8d3ecb13d21a3e1e0c53b144e024a564f5aaa0501dc6518b19dff05ebdc0fced",
+    "chapters.json": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+    "fragments.json": "6b517a443ebd4c418d955a21425deae0551a037a5d9d781a3ae2b871a52cd34e",
+    "organisation/fragments.json": "d153d83c94ab0de78c8f32d525c10457ac703cbc8d24fd5712945327b8ad970f",
+    "build_front.py": "54c70bccdfecd1e6ec8962cc211a6721cccd2d08b36a6517658a12de011e4481",
+    "build_medina.py": "04a223a91444029a5821dd8478482c3fbbb604f5ca65f8306343bef89588286e",
+    "fragment_surface.py": "0f4ce5fa69334e10456197e2844deb257fd1a8061070df6704252fab64ebf685",
+    "test_v7.py": "a1eaab580145e0bd1a90693d50a0e9200b9f80d2ce07213b6a32f3e14ccd65fa",
+    "tests/verify_course_native.cjs": "87c5c6886bbc2d459ce8ccda8ad79a802a08768ae5b49555ddd3ead061128864",
+    "tests/browser_runtime.cjs": "a344354e55267f6ace0f587fbd9076badede449731a792099d7e1be58c4adf94",
+    "tools/insert_justifications.py": "2012294ca80a523459c9cfcf9f75d308393cf31213f613209c289f2a3c5725e7",
+    "tools/atomic_output.py": "982c141e08a384dc5871ab60e25a1f53bef312f015fb7a737eaab92b45334f23"
+  },
+  "inputs_sha256_after": {
+    "chapters/I83/I83_a.html": "1610615e2f39a888d4ccb46b46b56a4ea0c5195f19dfd8af68cac511f7f0ff76",
+    "chapters/I83/I83_b.html": "d336d0b4e4977212ffa192fe2c57a535db54f288daa2ce014c022d513ed9da9a",
+    "chapters/I83/I83_c.html": "ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261",
+    "chapters/I83/I83_d.html": "72a6ddb28a8379f9ab54323d3323220e3f4f102129f1f948d5ccf8c58c5b0e06",
+    "chapters/I83/I83_pop1.html": "a790feb6f96e5805da69f398daf23a617813424a44dad8d14d94e1b2348e36cd",
+    "chapters/I83/I83_pop2.html": "e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55",
+    "chapters/I83/I83_pop3.html": "c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42",
+    "chapters/I83/I83_pop4.html": "dede4bdcf1974bbff6c2b2874410b64ac1e15003371fc9d78b3436c4999174f4",
+    "glossary/i83.py": "b041af30d40c15eb16c0063dc7d83fa0a57c364608d36ccb38003bf2af7636b4",
+    "glossary/fragments_medina.py": "8d3ecb13d21a3e1e0c53b144e024a564f5aaa0501dc6518b19dff05ebdc0fced",
+    "chapters.json": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+    "fragments.json": "6b517a443ebd4c418d955a21425deae0551a037a5d9d781a3ae2b871a52cd34e",
+    "organisation/fragments.json": "d153d83c94ab0de78c8f32d525c10457ac703cbc8d24fd5712945327b8ad970f",
+    "build_front.py": "54c70bccdfecd1e6ec8962cc211a6721cccd2d08b36a6517658a12de011e4481",
+    "build_medina.py": "04a223a91444029a5821dd8478482c3fbbb604f5ca65f8306343bef89588286e",
+    "fragment_surface.py": "0f4ce5fa69334e10456197e2844deb257fd1a8061070df6704252fab64ebf685",
+    "test_v7.py": "a1eaab580145e0bd1a90693d50a0e9200b9f80d2ce07213b6a32f3e14ccd65fa",
+    "tests/verify_course_native.cjs": "87c5c6886bbc2d459ce8ccda8ad79a802a08768ae5b49555ddd3ead061128864",
+    "tests/browser_runtime.cjs": "a344354e55267f6ace0f587fbd9076badede449731a792099d7e1be58c4adf94",
+    "tools/insert_justifications.py": "2012294ca80a523459c9cfcf9f75d308393cf31213f613209c289f2a3c5725e7",
+    "tools/atomic_output.py": "982c141e08a384dc5871ab60e25a1f53bef312f015fb7a737eaab92b45334f23"
+  },
+  "changed_inputs": [],
+  "input_count": 21,
+  "commands": [
+    {
+      "job": "build-s01",
+      "argv": [
+        "python3",
+        "/workspace/Medina/build_front.py",
+        "--fragment",
+        "S01"
+      ],
+      "command": "python3 /workspace/Medina/build_front.py --fragment S01",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/workspace/medina-env/reprise-i83/e2-canonical/controls/tmp",
+        "I83_CONTROL_ROOT": "/workspace/Medina",
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/e2-canonical",
+        "I83_CONTROL_REPORTS": "/workspace/medina-env/reprise-i83/e2-canonical/controls",
+        "MEDINA_ROOT": "/workspace/Medina",
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/s01",
+        "MEDINA_CHROMIUM": "/usr/bin/chromium",
+        "MEDINA_CHROMIUM_PATH": "/usr/bin/chromium",
+        "MEDINA_FRAGMENTS": "/workspace/medina-env/reprise-i83/e2-canonical/s01/fragments",
+        "MEDINA_NATIVE_CODE": "I83",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/controls/build-s01"
+      },
+      "cwd": "/workspace/Medina",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T10:11:19.845500+00:00",
+      "finished_utc": "2026-10-08T10:11:28.638140+00:00",
+      "started_zurich": "2026-10-08T12:11:19.845500+02:00",
+      "finished_zurich": "2026-10-08T12:11:28.638140+02:00",
+      "duration_seconds": 8.79264,
+      "log": "/workspace/medina-env/reprise-i83/e2-canonical/controls/build-s01.log",
+      "transport": null
+    },
+    {
+      "job": "build-global",
+      "argv": [
+        "python3",
+        "/workspace/Medina/build_front.py"
+      ],
+      "command": "python3 /workspace/Medina/build_front.py",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/workspace/medina-env/reprise-i83/e2-canonical/controls/tmp",
+        "I83_CONTROL_ROOT": "/workspace/Medina",
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/e2-canonical",
+        "I83_CONTROL_REPORTS": "/workspace/medina-env/reprise-i83/e2-canonical/controls",
+        "MEDINA_ROOT": "/workspace/Medina",
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/global",
+        "MEDINA_CHROMIUM": "/usr/bin/chromium",
+        "MEDINA_CHROMIUM_PATH": "/usr/bin/chromium",
+        "MEDINA_FRAGMENTS": "/workspace/medina-env/reprise-i83/e2-canonical/s01/fragments",
+        "MEDINA_NATIVE_CODE": "I83",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/controls/build-global"
+      },
+      "cwd": "/workspace/Medina",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T10:11:19.845691+00:00",
+      "finished_utc": "2026-10-08T10:11:31.426438+00:00",
+      "started_zurich": "2026-10-08T12:11:19.845691+02:00",
+      "finished_zurich": "2026-10-08T12:11:31.426438+02:00",
+      "duration_seconds": 11.580747,
+      "log": "/workspace/medina-env/reprise-i83/e2-canonical/controls/build-global.log",
+      "transport": null
+    },
+    {
+      "job": "global-browser",
+      "argv": [
+        "python3",
+        "/workspace/medina-env/reprise-i83/e2-canonical/controls/global-http.py"
+      ],
+      "command": "python3 /workspace/medina-env/reprise-i83/e2-canonical/controls/global-http.py",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/workspace/medina-env/reprise-i83/e2-canonical/controls/tmp",
+        "I83_CONTROL_ROOT": "/workspace/Medina",
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/e2-canonical",
+        "I83_CONTROL_REPORTS": "/workspace/medina-env/reprise-i83/e2-canonical/controls",
+        "MEDINA_ROOT": "/workspace/Medina",
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/global",
+        "MEDINA_CHROMIUM": "/usr/bin/chromium",
+        "MEDINA_CHROMIUM_PATH": "/usr/bin/chromium",
+        "MEDINA_FRAGMENTS": "/workspace/medina-env/reprise-i83/e2-canonical/s01/fragments",
+        "MEDINA_NATIVE_CODE": "I83",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/controls/global-browser"
+      },
+      "cwd": "/workspace/Medina",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T10:12:12.388220+00:00",
+      "finished_utc": "2026-10-08T10:12:37.269611+00:00",
+      "started_zurich": "2026-10-08T12:12:12.388220+02:00",
+      "finished_zurich": "2026-10-08T12:12:37.269611+02:00",
+      "duration_seconds": 24.881391,
+      "log": "/workspace/medina-env/reprise-i83/e2-canonical/controls/global-browser.log",
+      "transport": "HTTP local with external destinations blocked"
+    },
+    {
+      "job": "static-i83",
+      "argv": [
+        "python3",
+        "/workspace/Medina/test_v7.py",
+        "--static",
+        "I83"
+      ],
+      "command": "python3 /workspace/Medina/test_v7.py --static I83",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/workspace/medina-env/reprise-i83/e2-canonical/controls/tmp",
+        "I83_CONTROL_ROOT": "/workspace/Medina",
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/e2-canonical",
+        "I83_CONTROL_REPORTS": "/workspace/medina-env/reprise-i83/e2-canonical/controls",
+        "MEDINA_ROOT": "/workspace/Medina",
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/global",
+        "MEDINA_CHROMIUM": "/usr/bin/chromium",
+        "MEDINA_CHROMIUM_PATH": "/usr/bin/chromium",
+        "MEDINA_FRAGMENTS": "/workspace/medina-env/reprise-i83/e2-canonical/s01/fragments",
+        "MEDINA_NATIVE_CODE": "I83",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/controls/static-i83"
+      },
+      "cwd": "/workspace/Medina",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T10:12:12.412601+00:00",
+      "finished_utc": "2026-10-08T10:12:13.154912+00:00",
+      "started_zurich": "2026-10-08T12:12:12.412601+02:00",
+      "finished_zurich": "2026-10-08T12:12:13.154912+02:00",
+      "duration_seconds": 0.742311,
+      "log": "/workspace/medina-env/reprise-i83/e2-canonical/controls/static-i83.log",
+      "transport": null
+    },
+    {
+      "job": "routes-i83-i87",
+      "argv": [
+        "node",
+        "-r",
+        "/workspace/medina-env/reprise-i83/e2-canonical/controls/http-preload.cjs",
+        "/workspace/medina-env/reprise-i83/e2-canonical/controls/routes-i83-i87.cjs"
+      ],
+      "command": "node -r /workspace/medina-env/reprise-i83/e2-canonical/controls/http-preload.cjs /workspace/medina-env/reprise-i83/e2-canonical/controls/routes-i83-i87.cjs",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/workspace/medina-env/reprise-i83/e2-canonical/controls/tmp",
+        "I83_CONTROL_ROOT": "/workspace/Medina",
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/e2-canonical",
+        "I83_CONTROL_REPORTS": "/workspace/medina-env/reprise-i83/e2-canonical/controls",
+        "MEDINA_ROOT": "/workspace/Medina",
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/global",
+        "MEDINA_CHROMIUM": "/usr/bin/chromium",
+        "MEDINA_CHROMIUM_PATH": "/usr/bin/chromium",
+        "MEDINA_FRAGMENTS": "/workspace/medina-env/reprise-i83/e2-canonical/s01/fragments",
+        "MEDINA_NATIVE_CODE": "I83",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/controls/routes-i83-i87"
+      },
+      "cwd": "/workspace/Medina",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T10:12:12.417925+00:00",
+      "finished_utc": "2026-10-08T10:12:19.017743+00:00",
+      "started_zurich": "2026-10-08T12:12:12.417925+02:00",
+      "finished_zurich": "2026-10-08T12:12:19.017743+02:00",
+      "duration_seconds": 6.599818,
+      "log": "/workspace/medina-env/reprise-i83/e2-canonical/controls/routes-i83-i87.log",
+      "transport": "HTTP local with external destinations blocked"
+    },
+    {
+      "job": "native-i83",
+      "argv": [
+        "node",
+        "-r",
+        "/workspace/medina-env/reprise-i83/e2-canonical/controls/http-preload.cjs",
+        "/workspace/Medina/tests/verify_course_native.cjs"
+      ],
+      "command": "node -r /workspace/medina-env/reprise-i83/e2-canonical/controls/http-preload.cjs /workspace/Medina/tests/verify_course_native.cjs",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/workspace/medina-env/reprise-i83/e2-canonical/controls/tmp",
+        "I83_CONTROL_ROOT": "/workspace/Medina",
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/e2-canonical",
+        "I83_CONTROL_REPORTS": "/workspace/medina-env/reprise-i83/e2-canonical/controls",
+        "MEDINA_ROOT": "/workspace/Medina",
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/global",
+        "MEDINA_CHROMIUM": "/usr/bin/chromium",
+        "MEDINA_CHROMIUM_PATH": "/usr/bin/chromium",
+        "MEDINA_FRAGMENTS": "/workspace/medina-env/reprise-i83/e2-canonical/s01/fragments",
+        "MEDINA_NATIVE_CODE": "I83",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/e2-canonical/controls/native-i83"
+      },
+      "cwd": "/workspace/Medina",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T10:12:12.418101+00:00",
+      "finished_utc": "2026-10-08T10:13:06.952843+00:00",
+      "started_zurich": "2026-10-08T12:12:12.418101+02:00",
+      "finished_zurich": "2026-10-08T12:13:06.952843+02:00",
+      "duration_seconds": 54.534742,
+      "log": "/workspace/medina-env/reprise-i83/e2-canonical/controls/native-i83.log",
+      "transport": "HTTP local with external destinations blocked"
+    }
+  ],
+  "logs": {
+    "build-s01": "fichier /workspace/medina-env/reprise-i83/e2-canonical/s01/fragments/MEDINA_S01_cardiovasculaire.html taille 9471262\ncompression : 9471262 → 4568108 octets ; 1765 gabarits\n",
+    "build-global": "fichier /workspace/medina-env/reprise-i83/e2-canonical/global/MEDINA.html taille 16534547\ncompression : 16534547 → 9856579 octets ; 2395 gabarits\n",
+    "global-browser": "I83 mots 40865 fenêtres 47 quiz 6 pareto 6\nOK\n",
+    "static-i83": "I83 mots 40865 fenêtres 47 quiz 6 pareto 6\nOK\n",
+    "routes-i83-i87": "{\"result\":\"passed\",\"checks\":41,\"cases\":4,\"errors\":[]}\n",
+    "native-i83": "{\"progress\":1360,\"direct\":25,\"total\":78,\"failures\":0}\n{\"progress\":1360,\"direct\":50,\"total\":78,\"failures\":0}\n{\"progress\":1360,\"direct\":75,\"total\":78,\"failures\":0}\n{\"progress\":1360,\"direct_passed\":78,\"nested_passed\":7,\"templates_covered\":47,\"failures\":0}\n{\"progress\":390,\"direct\":25,\"total\":78,\"failures\":0}\n{\"progress\":390,\"direct\":50,\"total\":78,\"failures\":0}\n{\"progress\":390,\"direct\":75,\"total\":78,\"failures\":0}\n{\"progress\":390,\"direct_passed\":78,\"nested_passed\":7,\"templates_covered\":47,\"failures\":0}\n{\"result\":\"passed\",\"checks\":1923,\"failures\":0,\"report\":\"../medina-env/reprise-i83/e2-canonical/controls/native-i83/i83_native_results.json\"}\n"
+  },
+  "native": {
+    "result": "passed",
+    "assertions": 1923,
+    "failure_count": 0,
+    "errors": [],
+    "viewports": [
+      {
+        "width": 1360,
+        "height": 900,
+        "direct_triggers": 78,
+        "green_direct_triggers": 72,
+        "authored_nested_triggers": 7,
+        "expected_templates": 47,
+        "templates_covered": 47
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "direct_triggers": 78,
+        "green_direct_triggers": 72,
+        "authored_nested_triggers": 7,
+        "expected_templates": 47,
+        "templates_covered": 47
+      }
+    ]
+  },
+  "routes": {
+    "result": "passed",
+    "assertions": 41,
+    "case_count": 4,
+    "errors": [],
+    "browser": "151.0.7922.173"
+  },
+  "global_network": {
+    "transport": "HTTP loopback, file URLs mapped without changing assertions",
+    "external_network_blocked": true,
+    "external_requests_aborted": []
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/medina-env/reprise-i83/e2-canonical/global/MEDINA.html",
+      "bytes": 9856579,
+      "sha256": "86129250ed54f7fa2fd853caa37b294b6e169acd8a1ea111bbc86580688ba183"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i83/e2-canonical/s01/fragments/MEDINA_S01_cardiovasculaire.html",
+      "bytes": 4568108,
+      "sha256": "8b606a9fef09a12a1fbb28f810f78692a634861e638c34eb02869b4ab3cc4290"
+    }
+  ],
+  "helpers": [
+    {
+      "path": "/workspace/medina-env/reprise-i83/e2-canonical/controls/run-one.py",
+      "sha256": "abb38bc3d7f01414837423da1d03f9d190e85c41f3336b333bc997ce9c246b63",
+      "source": "import datetime as dt\nimport json\nimport os\nfrom pathlib import Path\nimport shlex\nimport subprocess\nimport sys\nfrom zoneinfo import ZoneInfo\n\nroot = Path('/workspace/Medina')\nbase = Path('/workspace/medina-env/reprise-i83/e2-canonical')\ncontrols = base / 'controls'\nname = sys.argv[1]\ncommands = {\n    'build-global': ['python3', str(root / 'build_front.py')],\n    'build-s01': ['python3', str(root / 'build_front.py'), '--fragment', 'S01'],\n    'static-i83': ['python3', str(root / 'test_v7.py'), '--static', 'I83'],\n    'global-browser': ['python3', str(controls / 'global-http.py')],\n    'native-i83': ['node', '-r', str(controls / 'http-preload.cjs'), str(root / 'tests/verify_course_native.cjs')],\n    'routes-i83-i87': ['node', '-r', str(controls / 'http-preload.cjs'), str(controls / 'routes-i83-i87.cjs')],\n}\nenv = os.environ.copy()\noverrides = {\n    'PYTHONDONTWRITEBYTECODE': '1', 'TMPDIR': str(controls / 'tmp'),\n    'I83_CONTROL_ROOT': str(root), 'I83_CONTROL_OUT': str(base), 'I83_CONTROL_REPORTS': str(controls),\n    'MEDINA_ROOT': str(root), 'MEDINA_OUT': str(base / ('s01' if name == 'build-s01' else 'global')),\n    'MEDINA_CHROMIUM': '/usr/bin/chromium', 'MEDINA_CHROMIUM_PATH': '/usr/bin/chromium',\n    'MEDINA_FRAGMENTS': str(base / 's01/fragments'), 'MEDINA_NATIVE_CODE': 'I83',\n    'MEDINA_QA_OUT': str(controls / name),\n}\nenv.update(overrides)\nstart = dt.datetime.now(dt.timezone.utc)\nprint(json.dumps({'job': name, 'started_utc': start.isoformat()}), flush=True)\nwith (controls / (name + '.log')).open('w') as log:\n    result = subprocess.run(commands[name], cwd=root, env=env, stdout=log, stderr=subprocess.STDOUT)\nend = dt.datetime.now(dt.timezone.utc)\nrecord = {\n    'job': name, 'argv': commands[name], 'command': shlex.join(commands[name]),\n    'environment_overrides': overrides, 'cwd': str(root), 'exit_code': result.returncode,\n    'started_utc': start.isoformat(), 'finished_utc': end.isoformat(),\n    'started_zurich': start.astimezone(ZoneInfo('Europe/Zurich')).isoformat(),\n    'finished_zurich': end.astimezone(ZoneInfo('Europe/Zurich')).isoformat(),\n    'duration_seconds': (end - start).total_seconds(),\n    'log': str(controls / (name + '.log')),\n    'transport': 'HTTP local with external destinations blocked' if name in {'global-browser', 'native-i83', 'routes-i83-i87'} else None,\n}\n(controls / (name + '-command.json')).write_text(json.dumps(record, indent=2) + '\\n')\nprint(json.dumps(record), flush=True)\nraise SystemExit(result.returncode)\n"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i83/e2-canonical/controls/global-http.py",
+      "sha256": "3b77eea73fe5a4ad062f9b1c922475d7975f9c7410203ac4af71e2b1c6ee9b66",
+      "source": "import functools\nimport http.server\nimport json\nimport os\nfrom pathlib import Path\nimport runpy\nimport sys\nimport threading\nfrom urllib.parse import quote, unquote, urlsplit\n\nfrom playwright.sync_api import Page\n\nroot = Path(os.environ['I83_CONTROL_ROOT']).resolve()\noutput = Path(os.environ['I83_CONTROL_OUT']).resolve()\nreports = Path(os.environ['I83_CONTROL_REPORTS']).resolve()\nblocked = []\n\n\nclass QuietHandler(http.server.SimpleHTTPRequestHandler):\n    def log_message(self, *args):\n        pass\n\n\nserver = http.server.ThreadingHTTPServer(\n    ('127.0.0.1', 0), functools.partial(QuietHandler, directory=str(output))\n)\nthreading.Thread(target=server.serve_forever, daemon=True).start()\norigin = 'http://127.0.0.1:' + str(server.server_port)\noriginal_goto = Page.goto\nisolated = set()\n\n\ndef local_goto(self, value, *args, **kwargs):\n    if self.context not in isolated:\n        def route_request(route):\n            url = route.request.url\n            if url.startswith(origin + '/'):\n                return route.continue_()\n            blocked.append(url)\n            return route.abort()\n        self.context.route('http://**/*', route_request)\n        self.context.route('https://**/*', route_request)\n        isolated.add(self.context)\n    parsed = urlsplit(value)\n    if parsed.scheme == 'file':\n        relative = Path(unquote(parsed.path)).resolve().relative_to(output)\n        value = origin + '/' + quote(relative.as_posix(), safe='/')\n        if parsed.query:\n            value += '?' + parsed.query\n        if parsed.fragment:\n            value += '#' + parsed.fragment\n    return original_goto(self, value, *args, **kwargs)\n\n\nPage.goto = local_goto\nsys.argv = [str(root / 'test_v7.py'), 'I83']\ntry:\n    runpy.run_path(str(root / 'test_v7.py'), run_name='__main__')\nfinally:\n    server.shutdown()\n    server.server_close()\n    (reports / 'global-network.json').write_text(json.dumps({\n        'transport': 'HTTP loopback, file URLs mapped without changing assertions',\n        'external_network_blocked': True,\n        'external_requests_aborted': blocked,\n    }, indent=2) + '\\n')\n"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i83/e2-canonical/controls/http-preload.cjs",
+      "sha256": "75496cbefd25b4a52320d37da6e01d05d2649699ef470fbceff8ab698cbd83e5",
+      "source": "const fs = require('node:fs'), http = require('node:http'), path = require('node:path');\nconst {fileURLToPath} = require('node:url');\nconst {chromium} = require('playwright');\nconst output = fs.realpathSync(process.env.I83_CONTROL_OUT);\nlet server, ready, origin;\nfunction start() {\n  if (!ready) ready = new Promise((resolve, reject) => {\n    server = http.createServer((request, response) => {\n      try {\n        const relative = decodeURIComponent(new URL(request.url, 'http://local').pathname).slice(1);\n        const file = fs.realpathSync(path.resolve(output, relative));\n        const inside = path.relative(output, file);\n        if (inside === '..' || inside.startsWith('..' + path.sep) || path.isAbsolute(inside)) {\n          response.writeHead(403); response.end(); return;\n        }\n        response.setHeader('Content-Type', 'text/html; charset=utf-8');\n        response.end(fs.readFileSync(file));\n      } catch (error) { response.writeHead(404); response.end(); }\n    });\n    server.once('error', reject);\n    server.listen(0, '127.0.0.1', () => {\n      origin = 'http://127.0.0.1:' + server.address().port;\n      resolve();\n    });\n  });\n  return ready;\n}\nfunction wrapPage(page) {\n  const goto = page.goto.bind(page);\n  page.goto = async (value, options) => {\n    const parsed = new URL(value);\n    if (parsed.protocol === 'file:') {\n      const file = fs.realpathSync(fileURLToPath(parsed));\n      const relative = path.relative(output, file);\n      if (relative === '..' || relative.startsWith('..' + path.sep) || path.isAbsolute(relative)) {\n        throw new Error('HTML demandé hors du répertoire de construction');\n      }\n      await start();\n      value = origin + '/' + relative.split(path.sep).map(encodeURIComponent).join('/') + parsed.search + parsed.hash;\n    }\n    return goto(value, options);\n  };\n  return page;\n}\nfunction wrapContext(context) {\n  const route = context.route.bind(context);\n  route(/^https?:/, requestRoute => {\n    if (new URL(requestRoute.request().url()).hostname === '127.0.0.1') return requestRoute.continue();\n    return requestRoute.abort();\n  });\n  context.route = (pattern, handler, options) => route(pattern, async (requestRoute, ...args) => {\n    if (origin && new URL(requestRoute.request().url()).origin === origin) return requestRoute.continue();\n    return handler(requestRoute, ...args);\n  }, options);\n  const newPage = context.newPage.bind(context);\n  context.newPage = async (...args) => wrapPage(await newPage(...args));\n  return context;\n}\nconst launch = chromium.launch.bind(chromium);\nchromium.launch = async (...args) => {\n  const browser = await launch(...args);\n  const newContext = browser.newContext.bind(browser);\n  browser.newContext = async (...values) => wrapContext(await newContext(...values));\n  const newPage = browser.newPage.bind(browser);\n  browser.newPage = async (...values) => wrapPage(await newPage(...values));\n  const close = browser.close.bind(browser);\n  browser.close = async (...values) => {\n    try { return await close(...values); }\n    finally { if (server) await new Promise(resolve => server.close(resolve)); }\n  };\n  return browser;\n};\n"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i83/e2-canonical/controls/routes-i83-i87.cjs",
+      "sha256": "32b1a134926431a3d270fefc2bb45acb58b6644846200389f67c75fada65de4a",
+      "source": "const fs = require('node:fs'), path = require('node:path'), assert = require('node:assert/strict');\nconst {pathToFileURL} = require('node:url');\nconst root = process.env.I83_CONTROL_ROOT, output = process.env.I83_CONTROL_OUT;\nconst controls = process.env.I83_CONTROL_REPORTS;\nconst {loadPlaywright, browserOptions} = require(path.join(root, 'tests/browser_runtime.cjs'));\nconst {chromium} = loadPlaywright();\nconst file = path.join(output, 's01/fragments/MEDINA_S01_cardiovasculaire.html');\nconst report = {result:'pending',started_at:new Date().toISOString(),file,\n  transport:'HTTP loopback with external HTTP(S) destinations blocked',\n  scope:'S01 routes I83 and I87, desktop and mobile viewports, four panels, page errors and horizontal overflow',\n  checks:[],cases:[],errors:[]};\nconst check = (name, value, detail) => {\n  assert.ok(value,name+(detail===undefined?'':': '+JSON.stringify(detail)));\n  report.checks.push({name,detail});\n};\n(async()=>{\n const browser=await chromium.launch(browserOptions(chromium));\n report.browser=await browser.version();\n try {\n  const context=await browser.newContext({reducedMotion:'reduce'});\n  await context.route(/^https?:/,route=>route.abort());\n  const page=await context.newPage();\n  page.on('pageerror',error=>report.errors.push(error.message));\n  for(const width of [1360,390]) {\n   await page.setViewportSize({width,height:width===390?844:900});\n   for(const routeCode of ['I83','I87']) {\n    await page.goto(pathToFileURL(file).href+'#/entry/'+routeCode);\n    await page.waitForFunction(()=>window.MDN_READY===true);\n    await page.locator('.mc[data-code=\"I83\"]').waitFor();\n    const prefix=width+' / '+routeCode;\n    const counts={all:await page.locator('.mc').count(),I83:await page.locator('.mc[data-code=\"I83\"]').count()};\n    check(prefix+' : un seul cours primaire I83',counts.all===1&&counts.I83===1,counts);\n    const tabs=page.locator('.mc[data-code=\"I83\"] .mc-tabs button');\n    check(prefix+' : quatre onglets',await tabs.count()===4);\n    const panels=[];\n    for(let index=0;index<4;index++) {\n     const button=tabs.nth(index),panel=await button.getAttribute('data-p');\n     await button.click();\n     check(prefix+' : onglet '+panel+' accessible',await page.locator('#'+panel).isVisible()\n      &&await button.getAttribute('aria-selected')==='true');\n     const sizes=await page.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth}));\n     check(prefix+' : aucun débordement dans '+panel,sizes.document<=sizes.viewport+1,sizes);\n     panels.push({panel,visible:true,sizes});\n    }\n    report.cases.push({width,height:width===390?844:900,requested_route:routeCode,primary_course:'I83',counts,panels});\n   }\n  }\n  check('Aucune erreur JavaScript',report.errors.length===0,report.errors);\n  report.result='passed';\n } finally {await browser.close();}\n})().catch(error=>{report.result='failed';report.failure=String(error.stack||error);process.exitCode=1;})\n.finally(()=>{\n report.finished_at=new Date().toISOString();\n fs.writeFileSync(path.join(controls,'routes-i83-i87.json'),JSON.stringify(report,null,2)+'\\n');\n console.log(JSON.stringify({result:report.result,checks:report.checks.length,cases:report.cases.length,errors:report.errors}));\n});\n"
+    }
+  ],
+  "not_repeated": [
+    "118 unit tests",
+    "S01 72-check suite",
+    "22-fragment audit",
+    "category suite"
+  ],
+  "limitations": [
+    "HTTP loopback; direct file portability not established here",
+    "Chromium viewport sizing, no iOS/Safari/device emulation",
+    "This record reports technical checks, not a new medical audit or Git publication"
+  ]
+}
