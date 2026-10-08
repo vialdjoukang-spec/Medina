@@ -323,3 +323,16 @@ Contrôles sur `main` `e5bde2b`, de 09:42:01 à 09:45:22 UTC :
 - S01 : 72 contrôles, `passed`.
 
 Journal : `controles/simulation_main_e5bde2b_v2_JOURNAL.txt`.
+
+
+## Addendum 11 — 8 octobre 2026 : statut de la conduite après injection intra-artérielle (réception Codex `e434eac`)
+
+`I83_d.html` précise désormais que la conduite après injection intra-artérielle accidentelle est l'instruction propre aux informations professionnelles d'Aethoxysklerol et de Sclerovein, et non une recommandation fondée sur des essais : l'avis immédiat du chirurgien vasculaire et le protocole local d'urgence ischémique priment. Les doses ne changent pas.
+
+Contrôles sur `main` `e434eac`, de 09:46:53 à 09:50:12 UTC :
+- test statique OK, sigles `{}` ;
+- 22 fragments reproductibles, `test_v7` OK ;
+- test natif : 1 923 contrôles, 0 échec ;
+- S01 : 72 contrôles, `passed`.
+
+Journal : `controles/simulation_main_e434eac_JOURNAL.txt`.
