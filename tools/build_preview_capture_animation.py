@@ -108,6 +108,22 @@ async def capture(args, directory):
                                "visible_text_characters": len(visible_text.strip())})
                 print(f"Capture réelle : {label}", flush=True)
 
+                if panel == "pA":
+                    # Montrer aussi le passage clinique corrigé, absent de la vue d'ouverture.
+                    target = active.locator("#b24-pa-1 h3", has_text="1.3").first
+                    await target.evaluate("""el => scrollTo({
+                      top: Math.max(0, scrollY + el.getBoundingClientRect().top - 600),
+                      behavior: 'instant'
+                    })""")
+                    await settle(page)
+                    detail_name = "b24-passage-stades-et-codage.png"
+                    await page.screenshot(path=str(directory / detail_name),
+                                          clip={"x": 280, "y": 350, "width": 900, "height": 570})
+                    provenance["detail_capture"] = {"file": detail_name,
+                                                    "section": "b24-pa-1",
+                                                    "heading": (await target.inner_text()).strip()}
+                    print("Capture réelle : stades et codage B24", flush=True)
+
             # Le premier médicament de l'onglet actif ouvre une explication native.
             trigger = course.locator('.mc-panel:not([hidden]) [data-k]').first
             key = await trigger.get_attribute("data-k")
