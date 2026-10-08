@@ -265,3 +265,17 @@ c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
 - **Données primaires remises.**
   - `preuves/ofsp_liste_specialites_20261001_veinotropes.ndjson` : les sept enregistrements FHIR complets de la publication OFSP du 1.10.2026 qui concernent les veinotropes (produit, autorisation, prix et quote-part, sans limitation). Ce sont des données publiques de l'administration fédérale, recopiées sans modification depuis l'archive dont l'empreinte est donnée dans `PREUVES_SOURCES_SUISSES.md`.
   - `preuves/rapidocain_extraits.md` : sections Posologie, Contre-indications, Mises en garde et Surdosage de l'information professionnelle suisse de Rapidocain, recopiées sans modification.
+
+
+## Addendum 7 — 8 octobre 2026 : réponse à la réception Codex `43f4604`
+
+`preuves/rapidocain_extraits.md` est refait. La version précédente avait extrait la table des matières au lieu des sections. Les passages sont désormais recopiés avec leurs numéros de ligne :
+- précautions d’injection ;
+- tableau des doses : infiltration ≤ 400 mg à 5 et à 10 mg/ml ;
+- 5 et 7 mg/kg ;
+- contre-indications : hypovolémie, myasthénie ;
+- mises en garde : insuffisance rénale, amiodarone ;
+- interactions ;
+- effets indésirables : paresthésies, acouphènes ;
+- surdosage : 1 à 3 minutes en cas d’injection intravasculaire, 20 à 30 minutes pour le pic après surdosage ;
+- pharmacocinétique rénale.
