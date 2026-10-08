@@ -5,7 +5,7 @@ for x in [
 ('SSA',[('S','Sjögren'),('S','Syndrome'),('A','antigène A (Ro)')],'Antigène SSA (Ro)','<p>Anticorps anti-SSA : Sjögren, lupus subaigu, lupus néonatal, bloc cardiaque congénital.</p>'),
 ('SSB',[('S','Sjögren'),('S','Syndrome'),('B','antigène B (La)')],'Antigène SSB (La)','<p>Anticorps souvent associés aux anti-SSA.</p>'),
 ('RNP',[('R','RiboNucléo'),('N','(nucléaire)'),('P','Protéine')],'Ribonucléoprotéine U1','<p>Anticorps anti-RNP : connectivite mixte.</p>'),
-('SLEDAI-2K',[('S','Systemic'),('L','Lupus'),('E','Erythematosus'),('D','Disease'),('A','Activity'),('I','Index'),('2K','version 2000')],'Indice d’activité du lupus','<p>Score pondéré de 24 items sur 30 jours.</p>','m32-sledai'),
+('SLEDAI-2K',[('S','Systemic'),('L','Lupus'),('E','Erythematosus'),('D','Disease'),('A','Activity'),('I','Index'),('2K','version 2000')],'Indice d’activité du lupus','<p>Indice pondéré d’activité du lupus, cité par l’EULAR 2023 parmi les instruments validés.</p>','m32-sledai'),
 ('SLICC',[('S','Systemic'),('L','Lupus'),('I','International'),('C','Collaborating'),('C','Clinics')],'Groupe SLICC','<p>Auteur de l’indice de dommage et de critères de classification (2012).</p>','m32-sledai'),
 ('ISN',[('I','International'),('S','Society of'),('N','Nephrology')],'Société internationale de néphrologie','<p>Coauteur de la classification ISN/RPS de la néphrite lupique.</p>'),
 ('RPS',[('R','Renal'),('P','Pathology'),('S','Society')],'Société de pathologie rénale','<p>Coauteur de la classification ISN/RPS.</p>'),
@@ -22,6 +22,9 @@ for x in [
 ('TULIP',[('TULIP','Treatment of Uncontrolled Lupus via the Interferon Pathway')],'Essais TULIP','<p>Anifrolumab dans le lupus actif.</p>')]:
     a(*x)
 a('ENA',[('E','Extractable'),('N','Nuclear'),('A','Antigens')],'Antigènes nucléaires solubles','<p>Groupe d’antigènes (Sm, RNP, SSA, SSB, Scl-70, Jo-1…) recherchés après des anticorps antinucléaires positifs.</p>')
-a('Euro-Lupus',[('Euro-Lupus','nom d’essai européen (cyclophosphamide à faible dose)')],'Schéma Euro-Lupus','<p>Cyclophosphamide 500 mg toutes les 2 semaines, 6 perfusions ; aussi efficace que les fortes doses avec moins de toxicité.</p>')
+a('Euro-Lupus',[('Euro-Lupus','nom d’essai européen (cyclophosphamide à faible dose)')],'Schéma Euro-Lupus','<p>Cyclophosphamide 500 mg toutes les 2 semaines, 6 perfusions (3 g cumulés), suivi d’azathioprine ; résultats comparables au schéma à forte dose dans l’essai européen de 2002.</p>')
 
 a('NUDT15',[('NUDT','Nudix hydrolase'),('15','15')],'Nudix hydrolase 15','<p>Enzyme qui participe à l’inactivation de métabolites thiopuriniques. Des variants réduisant sa fonction augmentent la susceptibilité à une toxicité hématologique ; la surveillance sanguine reste nécessaire.</p>')
+a('EDTA',[('E','European'),('D','Dialysis and'),('T','Transplant'),('A','Association')],'European Dialysis and Transplant Association (Association européenne de dialyse et de transplantation)','<p>Ancien nom de l’association européenne de néphrologie ; coautrice, avec l’EULAR, des recommandations EULAR/ERA-EDTA 2019 sur la néphrite lupique.</p>')
+a('BILAG',[('B','British'),('I','Isles'),('L','Lupus'),('A','Assessment'),('G','Group')],'Indice BILAG','<p>Instrument d’activité du lupus par organe, élaboré par le groupe britannique d’évaluation du lupus ; cité par l’EULAR 2023 parmi les instruments validés.</p>','m32-sledai')
+a('CellCept',[('CellCept','nom commercial du mycophénolate mofétil (nom propre, non abréviatif)')],'CellCept®','<p>Nom commercial suisse du mycophénolate mofétil, autorisé dans la prévention du rejet de greffe.</p>')
