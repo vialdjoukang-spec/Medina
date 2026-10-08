@@ -4,6 +4,14 @@
 
 **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : production parallèle des catégories de ce seul chapitre, avec un auteur par fichier réel. Les dix sources canoniques demeurent identiques à la base auditée `39b7ff0`. Les propositions, les lectures croisées et la recherche de références artérielles suisses précises se poursuivent ; aucun chapitre suivant Codex n’est ouvert. Les 11 fragments Claude et 10 Codex restent attribués en blocs entiers. La remise I89 de Claude est reçue/archivée, sans injection ni audit favorable revendiqué ici.
 
+## Réceptions Claude I83-HARMONISATION-6 et I89-2 — 8 octobre 2026
+
+À la tête PR #12 `8a6dc7f28bbdaa5251f9a4b75031875073bf7ccb`, I83-HARMONISATION-6 est reçu : 13 originaux archivés, huit couples baseline/proposition exacts, delta médical ciblé favorable, mais aucune injection faute de contrôles indépendants de reconstruction et navigateur. [Rapport I83](reviews/2026-10-08/PR12_8A6DC7F_I83_HARMONISATION_6/RECEPTION.md) · [Reçu I83](receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_RECEPTION_2026-10-08.json).
+
+I89-2 est également reçu à sa tête de livraison `de67651b882d3b75c8044813be23824edb41074a` : 18 originaux archivés, 11 propositions et deux baselines exactes, mais deux réserves médicales bloquent encore l'intégration. [Rapport I89-2](reviews/2026-10-08/PR12_DE67651_I89_2/RECEPTION.md) · [Reçu I89-2](receipts/CLAUDE_I89_DE67651_I89_2_RECEPTION_2026-10-08.json).
+
+État : **repérés et reçus ; non intégrés ; non contrôlés techniquement de manière indépendante ; publication documentaire seulement**. Aucune source canonique, route, attribution ni chapitre actif n'a changé. I83 reste actif.
+
 ## Réception Claude I89 — tête 7775e6e, 8 octobre 2026
 
 La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) remet un lot complet I89 à la tête `7775e6e1544ca7753946921d3ec61a7dd45d1c65`, exactement basé sur `main` `918ef69a8526bf0be38ffdf4f88438ad61d9a8a7`. Les 24 originaux sont archivés sans modification ; les 11 propositions et les deux baselines de remplacement concordent.
