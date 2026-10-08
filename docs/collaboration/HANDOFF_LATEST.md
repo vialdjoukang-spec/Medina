@@ -4,7 +4,7 @@ Vial demande de lire les nouvelles instructions et de continuer. [COORDINATION.m
 
 **I-03-Infectiologie** poursuit sa production interne. L’export officiel OMS français 2026-01 et l’inventaire candidat sont récupérés ; aucune couverture CIM-11 finale n’est établie. **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** a été injecté concurremment par Claude à `a556323` sous le protocole précédent ; ses corrections sont conservées. Une nouvelle copie interne ajoute les références de Bâle et ESUR 2025, contrôlée sur 4 446 assertions PC/mobile. Ce travail n’est ni une remise complète ni un nouvel audit final de fragment.
 
-Validation de la reprise : 142 tests Python, global +22 fragments reconstruits et audités, 314 contrôles de thème clair, 133 contrôles d’organisation. [Rapport et preuves](reviews/2026-10-08/REPRISE_FRAGMENTS/REPRISE.md). Les sections suivantes restent l’historique, avec leurs états à la date indiquée.
+Contenu publié sur la branche de travail au SHA `2be802a9ad461210e04472d6761e2a1754ea5b14` ; [reçu de reprise](receipts/CODEX_REPRISE_FRAGMENTS_2026-10-08.json). Validation de la reprise : 142 tests Python, global +22 fragments reconstruits et audités, 314 contrôles de thème clair, 133 contrôles d’organisation. [Rapport et preuves](reviews/2026-10-08/REPRISE_FRAGMENTS/REPRISE.md). Les sections suivantes restent l’historique, avec leurs états à la date indiquée.
 
 ## STOP Codex — dernière consigne de Vial, 2026-10-08T15:51:43.860088+02:00
 
