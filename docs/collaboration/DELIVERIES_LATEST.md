@@ -1,3 +1,29 @@
+## 2026-10-08 — PR #12, tête 8a6dc7f : I83-HARMONISATION-6
+
+État : **repéré et reçu ; delta médical ciblé favorable ; non intégré ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.
+
+- Baseline : `1c39691289c49cb701345026b5ab9334f5330225`.
+- 13 originaux archivés ; arbre `20a0ff769d7c456303aa6b92d4271d6e58f8ebe1`.
+- Sept couples de chapitre et le couple de glossaire exacts.
+- Delta réel H5→H6 : `I83_c`, `I83_pop2`, glossaire ; cinq HTML identiques.
+- Deux réserves mineures v5 levées ; contrôles producteurs non reproduits.
+- Aucune injection canonique ni publication du site.
+
+[Rapport](reviews/2026-10-08/PR12_8A6DC7F_I83_HARMONISATION_6/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_RECEPTION_2026-10-08.json)
+
+## 2026-10-08 — PR #12, tête de67651 : I89-2
+
+État : **repéré et reçu ; non intégré ; médicalement bloqué ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.
+
+- Baseline : `1c39691289c49cb701345026b5ab9334f5330225`.
+- 18 originaux archivés ; arbre `80269438f508aed6fe0d22dc23ba67ec52481cce`.
+- 11/11 propositions et 2/2 baselines exactes ; 6 sources réellement modifiées depuis I89 v1.
+- Octréotide, prégabaline et juridiction Verdye corrigés.
+- Restent bloquants : mécanisme minoxidil extrapolé de l'hydralazine et plusieurs mécanismes non contre-lus sur sources primaires.
+- Aucune injection canonique ni publication du site.
+
+[Rapport](reviews/2026-10-08/PR12_DE67651_I89_2/RECEPTION.md) · [Reçu](receipts/CLAUDE_I89_DE67651_I89_2_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête 7775e6e : I89
 
 État : **repéré et reçu ; non intégré ; médicalement bloqué ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_I89_DE67651_I89_2_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": {
+    "number": 12,
+    "state": "open",
+    "draft": false,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/12"
+  },
+  "provenance": {
+    "producer": "Claude",
+    "branch": "claude/loving-shannon-spwrhc",
+    "delivery_head_sha": "de67651b882d3b75c8044813be23824edb41074a",
+    "latest_observed_pr_head_sha": "8a6dc7f28bbdaa5251f9a4b75031875073bf7ccb",
+    "baseline_sha": "1c39691289c49cb701345026b5ab9334f5330225",
+    "evidence": [
+      "branch",
+      "SIGNAUX_CLAUDE.json",
+      "livraison.json",
+      "rapport.md"
+    ]
+  },
+  "scope": {
+    "fragment": "C-01-Cardiologie",
+    "platform": "S01",
+    "chapter": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques",
+    "lot": "2026-10-08-I89-2",
+    "replaces": "2026-10-08-I89",
+    "assignments_changed": false,
+    "active_chapters_changed": false
+  },
+  "archive": {
+    "root": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_DE67651_I89_2",
+    "original_count": 18,
+    "originals_git_tree_sha1": "80269438f508aed6fe0d22dc23ba67ec52481cce",
+    "archive_tree_with_provenance_sha1": "8c13eafa47305222fd769f6658d7dae1ece179c9"
+  },
+  "verification": {
+    "proposal_sha256": "11/11 exact",
+    "replacement_baselines": "2/2 exact",
+    "add_targets_absent": "9/9",
+    "changed_from_v1": [
+      "I89_c.html",
+      "I89_d.html",
+      "I89_pop2.html",
+      "I89_pop3.html",
+      "I89_pop4.html",
+      "glossary/i89.py"
+    ],
+    "unchanged_from_v1": [
+      "chapters.json",
+      "I89_a.html",
+      "I89_b.html",
+      "I89_pop1.html",
+      "tests/verify_s01_browser.cjs"
+    ]
+  },
+  "medical_review": {
+    "scope": "targeted delta review, not exhaustive certification",
+    "resolved": [
+      "octreotide doses/durations removed",
+      "pregabalin wording corrected",
+      "Verdye claims jurisdiction/date limited",
+      "FOXC2/PIEZO1 animal evidence qualified",
+      "right lymphatic duct usual pattern qualified"
+    ],
+    "blocking": [
+      "minoxidil renal-perfusion mechanism extrapolated from hydralazine",
+      "several mechanisms supported by reviews rather than required primary sources"
+    ],
+    "remaining_nonblocking": [
+      "Swiss Verdye status/availability in 2026 not verified"
+    ]
+  },
+  "controls": {
+    "producer_claims": [
+      "118 unit tests passed",
+      "2595 native checks passed",
+      "73 S01 checks passed"
+    ],
+    "independently_executed": [],
+    "not_executed": [
+      "tools/livraison.py",
+      "canonical injection",
+      "build",
+      "browser desktop",
+      "browser mobile",
+      "site deployment"
+    ]
+  },
+  "status": {
+    "spotted": true,
+    "received": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "reception documentation only"
+  }
+}

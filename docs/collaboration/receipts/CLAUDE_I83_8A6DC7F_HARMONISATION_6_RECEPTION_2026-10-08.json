@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_I83_8A6DC7F_HARMONISATION_6_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": {
+    "number": 12,
+    "state": "open",
+    "draft": false,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/12"
+  },
+  "provenance": {
+    "producer": "Claude",
+    "branch": "claude/loving-shannon-spwrhc",
+    "head_sha": "8a6dc7f28bbdaa5251f9a4b75031875073bf7ccb",
+    "baseline_sha": "1c39691289c49cb701345026b5ab9334f5330225",
+    "evidence": [
+      "branch",
+      "livraison.json",
+      "rapport.md"
+    ]
+  },
+  "scope": {
+    "fragment": "C-01-Cardiologie",
+    "platform": "S01",
+    "chapter": "I83 — Varices des membres inférieurs",
+    "lot": "2026-10-08-I83-HARMONISATION-6",
+    "replaces": "2026-10-08-I83-HARMONISATION-5",
+    "assignments_changed": false,
+    "active_chapters_changed": false
+  },
+  "archive": {
+    "root": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_8A6DC7F_I83_HARMONISATION_6",
+    "original_count": 13,
+    "originals_git_tree_sha1": "20a0ff769d7c456303aa6b92d4271d6e58f8ebe1",
+    "archive_tree_with_provenance_sha1": "a419c5a1d191abd8c03d2f7398dafe59b179a0c9"
+  },
+  "verification": {
+    "chapter_pairs": "7/7 proposal SHA-256 exact and 7/7 baseline SHA-256 exact",
+    "glossary_pair": "proposal and baseline SHA-256 exact",
+    "real_delta": [
+      "chapters/I83/I83_c.html",
+      "chapters/I83/I83_pop2.html",
+      "glossary/i83.py"
+    ],
+    "unchanged": [
+      "chapters/I83/I83_a.html",
+      "chapters/I83/I83_b.html",
+      "chapters/I83/I83_d.html",
+      "chapters/I83/I83_pop1.html",
+      "chapters/I83/I83_pop3.html"
+    ],
+    "conflicts": [],
+    "documentary_mismatch": "Manifest says glossary/i83.py is unchanged since HARMONISATION-2, but H6 actually adds the qualifier « thermiques »; the receipt records the computed delta."
+  },
+  "medical_review": {
+    "scope": "targeted H5→H6 delta review, not exhaustive certification",
+    "result": "favorable",
+    "resolved": [
+      "I83-V5-MIN-01 pathological perforators",
+      "I83-V5-MIN-02 thermal-ablation frequency attribution"
+    ],
+    "preserved": [
+      "Swiss polidocanol contraindication",
+      "EHIT/ARTE III anticoagulation distinction",
+      "no universal DVT follow-up-to-resolution rule"
+    ],
+    "remaining_unverified": [
+      "cadexomer participant count (212)",
+      "negative claims about OFSP",
+      "ICD-11 coverage"
+    ]
+  },
+  "controls": {
+    "producer_claims": [
+      "118 unit tests passed",
+      "1923 native checks passed",
+      "72 S01 checks passed"
+    ],
+    "independently_executed": [
+      "16 SHA-256 manifest/baseline checks",
+      "in-memory diff application with exact outputs",
+      "static HTML audit: 47 templates, 41 ids, 85 triggers, no duplicate/missing reference",
+      "Python glossary AST parse"
+    ],
+    "not_executed": [
+      "tools/livraison.py",
+      "canonical injection",
+      "build",
+      "browser desktop",
+      "browser mobile",
+      "site deployment"
+    ],
+    "reservation": "S01 result is byte-identical to H5 and lacks an explicit H6 build hash/date",
+    "future_integration": "Apply all eight cumulative H6 targets against main; do not apply only the three H5→H6 differences because H5 was not integrated."
+  },
+  "status": {
+    "spotted": true,
+    "received": true,
+    "medically_acceptable_targeted_delta": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "reception documentation only"
+  },
+  "adaptations": [],
+  "canonical_changes": []
+}
