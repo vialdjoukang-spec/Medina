@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête 7c6fc65 : corrections ESC ciblées
+
+État : **reçu et archivé ; non injecté**. Treize objets ; rapports MED lisibles, I35 corrigé et contrôlé côté producteur, faux écart I40 écarté. L’injection attend toujours la clôture d’I83 et la contrelecture indépendante par chapitre. [Rapport](reviews/2026-10-08/PR12_7C6FC65_ESC_CORRECTIONS/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête 4c8c534 : rapports et contrôles ESC 2026
 
 État : **reçu et archivé ; non injecté**. Vingt-quatre objets pour I30, I33, I34, I35, I40, I42, I44 et Q21 ; 26 668 contrôles producteurs déclarés sans échec sur `main` `960586e`, non reproduits indépendamment. I83 reste actif et les réserves de traçabilité/médicales empêchent l’application. [Rapport](reviews/2026-10-08/PR12_4C8C534_ESC_RAPPORTS_CONTROLES/RECEPTION.md).

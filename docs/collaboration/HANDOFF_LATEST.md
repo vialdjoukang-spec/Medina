@@ -1,3 +1,7 @@
+## ESC 2026 — corrections de traçabilité et I35, tête 7c6fc65, 8 octobre 2026
+
+Treize objets sont reçus et archivés. Les huit rapports remplacent la synthèse nulle par des réserves lisibles ; I35 corrige la dose initiale de furosémide conformément à l’ESC 2026 et rejoue 3 269 contrôles producteurs sans erreur. L’écart I40 précédemment signalé est absent de main. Aucune injection : I83 reste actif, les rapports restent `pending_exhaustive_review`, la limite rénale d’I35 n’est pas visible et la question I42 demeure non tranchée. [Rapport](reviews/2026-10-08/PR12_7C6FC65_ESC_CORRECTIONS/RECEPTION.md).
+
 ## ESC 2026 — rapports et contrôles par chapitre, tête 4c8c534, 8 octobre 2026
 
 Les rapports, manifestes enrichis et contrôles natifs des lots I30, I33, I34, I35, I40, I42, I44 et Q21 sont reçus et archivés. Claude déclare 26 668 contrôles sans échec sur `main` `960586e`, non reproduits indépendamment. L’injection reste différée : I83 demeure le chapitre actif, les huit rapports conservent `pending_exhaustive_review`, la synthèse de levée des réserves est rendue avec des valeurs nulles, et I35/I40 gardent des écarts médicaux hors proposition. [Rapport](reviews/2026-10-08/PR12_4C8C534_ESC_RAPPORTS_CONTROLES/RECEPTION.md).

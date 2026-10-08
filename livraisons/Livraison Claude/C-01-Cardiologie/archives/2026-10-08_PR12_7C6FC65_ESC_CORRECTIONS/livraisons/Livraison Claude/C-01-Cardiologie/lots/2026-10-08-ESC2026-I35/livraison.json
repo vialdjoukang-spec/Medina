@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "kind": "claude_contribution",
+  "author": "Claude",
+  "status": "lot ESC 2026 — I35 seul ; réserves Codex MED-01 à MED-03 levées (PREUVES.md, PROVENANCE.md)",
+  "fragment": {
+    "id": "S01",
+    "label": "C-01-Cardiologie",
+    "specialty": "Cardiologie"
+  },
+  "source_commit": "315280ccc26e4a07b9bb6e36922cb579dd930f0e",
+  "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+  "chapters": [
+    {
+      "code": "I35",
+      "title": "Valvulopathies aortiques",
+      "covers": [
+        "I35",
+        "I06"
+      ],
+      "owner_fragment": "S01"
+    }
+  ],
+  "files": [
+    {
+      "target_path": "chapters/I35/I35_b.html",
+      "source_path": "sources/chapters/I35/I35_b.html",
+      "sha256": "f91418163c5cc0902425714489dc0b75062e1ff72f332ea23f3ff5d171c94acc",
+      "proposed_sha256": "ef4620fab01f05877439b253163acb7dbc41ba7e3a1e2cfb29a7243a4b593eed"
+    },
+    {
+      "target_path": "chapters/I35/I35_d.html",
+      "source_path": "sources/chapters/I35/I35_d.html",
+      "sha256": "bbd637dfdf65636293a98da693209149d3fd26f5b47b2e46ea05320bf4e86a17",
+      "proposed_sha256": "44a60bfa4313e7354f93159f48f05ea2166bbec68a4277059b4e61eefa969885"
+    },
+    {
+      "target_path": "chapters/I35/I35_pop_esc_comparison.html",
+      "source_path": "sources/chapters/I35/I35_pop_esc_comparison.html",
+      "operation": "add",
+      "sha256": null,
+      "proposed_sha256": "064b0b86fea75c8ff283ef4f504c692d391f192383d188b16012c29b1c5c3989"
+    }
+  ],
+  "checks": [
+    {
+      "command": "test_v7.py --static I35 ; verifier_sigles ; build_front.py ; --all-fragments ; audit_fragments.py ; test_v7.py I35 ; verify_course_native.cjs I35",
+      "base": "960586ec0f6ddf76911a966f1bbd4a2bdcbc29b1",
+      "result": "OK ; {} ; 22 fragments reproductibles ; natif 0 échec (1 360 et 390 px)"
+    }
+  ],
+  "limits": [
+    "Couverture CIM-11 non établie.",
+    "Une comparaison ESC 2026 vérifiée ne valide pas tout le cours ; les cours restent en relecture exhaustive jusqu'à l'audit croisé de Codex."
+  ],
+  "delivery": {
+    "lot": "ESC2026-I35",
+    "date": "2026-10-08",
+    "branch": "claude/loving-shannon-spwrhc",
+    "start_commit": "315280ccc26e4a07b9bb6e36922cb579dd930f0e",
+    "report": "rapport.md",
+    "preuves": "travail/esc2026/I35/PREUVES.md",
+    "provenance": "travail/esc2026/PROVENANCE.md",
+    "remplace": "lots/2026-10-08-ESC2026_HUIT_COURS_AUDITE (retiré)",
+    "base": "main"
+  }
+}
