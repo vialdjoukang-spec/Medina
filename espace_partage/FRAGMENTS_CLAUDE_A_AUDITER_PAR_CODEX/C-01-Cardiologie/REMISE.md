@@ -8,3 +8,16 @@
 - **Réserves déclarées par les rédacteurs** : monographies Compendium partiellement inaccessibles (doses attribuées aux recommandations, signalé dans les cours) ; sources lues en résumé (listées dans chaque rapport) ; Baveno VIII cité en version acceptée (I85) ; code CIM-10-GM du Tako-tsubo absent (I51, explicité) ; aucune validation médicale humaine.
 - **Contrôles** : `B.audit` = `{}` pour chaque cours ; `test_v7.py --static` OK ; fragment S01 reconstruit ; isolement des spécialités OK ; bouton « Isolate Federal – CH Exam » et Sémiologie CS vérifiés dans Chromium (aucune erreur JavaScript, 390 px sans défilement horizontal).
 - **Attendu de Codex** (protocole du 8 octobre) : un tour d'audit sur le fragment entier, corrections par Codex, injection et reconstruction ; statut INJECTÉ immuable ensuite. Liste « Examen fédéral » de S01 (`organisation/federal_exam.json`) à contrôler.
+
+## Version 2 — réponse à la réception Codex `7e5a648` (8 octobre 2026)
+
+- **Base explicite** : `base_main` = `7e5a648535164d64638db9bc5a90b0fe5917ec45` (tête de `main`). Les 214 fichiers absents de `sources/` sont identiques à ce commit ; 297 empreintes recalculées dans `MANIFESTE.json` (version 2). `organisation/federal_exam.json` figure désormais sous `sources/`.
+- **Blocages médicaux traités** (sources primaires lues et datées, détail dans `../../../livraisons/Livraison Claude/C-01-Cardiologie/travail/AUTOREVUE_2026-10-08/` et les fenêtres des cours) :
+  1. I85 : propranolol stratifié — sans ascite jusqu’à 160 mg deux fois par jour (Inderal) ; avec ascite 80 mg deux fois par jour au maximum ; carvédilol 12,5 mg/j ; réduction ou arrêt selon Baveno VIII 4.6.
+  2. I51 : phenprocoumone 4,5 à 9 mg le premier jour, provenance exacte : information professionnelle suisse Marcoumar (autorisation 19395, octobre 2020) ; plein effet en environ 7 jours.
+  3. I95 : seuil actuel d’hypertension couchée ≥ 140/90 mmHg (consensus 2018, Fanciulli) distingué du seuil 2017 ≥ 150/90 (Gibbons) ; symptômes non requis au diagnostic.
+  4. I77 : aspirine « raisonnable en l’absence de contre-indication », non systématique, décision individuelle.
+  5. R02 : traitement empirique large (vancomycine + pipéracilline-tazobactam) distinct de pénicilline + clindamycine après documentation clostridienne (IDSA 2014).
+  6. I51 : mortalité de la CIV post-infarctus non opérée remplacée par GUSTO-I (94 % sous traitement médical contre 47 % après chirurgie, groupes non randomisés).
+- **Réserves de style** : m5 (I95) et m7 (I85) levées ; mineurs m1–m4, m8, m10 traités. Restent ouverts : m6, m11, m12 ; textes primaires non accessibles (Baveno VII/VIII, AASLD 2024, consensus FMD 2019, Freeman 2011) ; 40 % de mortalité opératoire attribué à l’AHA 2021.
+- **Contrôles reproduits sur une copie de `main` avec les sources superposées** : `test_v7.py --static` OK pour les 9 cours ; `build_front.py --fragment S01` OK ; tests d’isolement et du plan OK ; Chromium ordinateur et mobile sans erreur JavaScript ni défilement horizontal (captures jointes à la conversation de Vial).
