@@ -1,0 +1,124 @@
+{
+ "schema_version": 1,
+ "kind": "claude_contribution",
+ "author": "Claude",
+ "status": "création de cours — I89, remis pour audit croisé Codex (voie branche, hors apply-claude)",
+ "fragment": {
+  "id": "S01",
+  "label": "C-01-Cardiologie",
+  "specialty": "Cardiologie"
+ },
+ "source_commit": "918ef69a8526bf0be38ffdf4f88438ad61d9a8a7",
+ "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+ "chapters": [
+  {
+   "code": "I89",
+   "title": "Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques",
+   "covers": [
+    "I89",
+    "I97"
+   ],
+   "owner_fragment": "S01"
+  }
+ ],
+ "files": [
+  {
+   "target_path": "chapters.json",
+   "source_path": "sources/chapters.json",
+   "operation": "replace",
+   "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+   "proposed_sha256": "03ccb667b7d7d34081d9223fa53f14675d224eaf896c7231de411a742f118db8"
+  },
+  {
+   "target_path": "chapters/I89/I89_a.html",
+   "source_path": "sources/chapters/I89/I89_a.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "6ee12f8ead47fd0ac0f800c1da150c7f09f418696a31f125bf17edd447e4ea7a"
+  },
+  {
+   "target_path": "chapters/I89/I89_b.html",
+   "source_path": "sources/chapters/I89/I89_b.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "c6ad8ed489222984ebe6835376f89846d1b8be2fe70f219a32d9b23828b1a85a"
+  },
+  {
+   "target_path": "chapters/I89/I89_c.html",
+   "source_path": "sources/chapters/I89/I89_c.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "b07b83d319ab2fea75ad0dc948b1f26aecabf0079bd811ad6e33889c7233df0b"
+  },
+  {
+   "target_path": "chapters/I89/I89_d.html",
+   "source_path": "sources/chapters/I89/I89_d.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "0dd2586a0eccc03bf0023f95d72f139bb344a00ca2d4654b8a6f8baaed552ab7"
+  },
+  {
+   "target_path": "chapters/I89/I89_pop1.html",
+   "source_path": "sources/chapters/I89/I89_pop1.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "dc7e8d5ccae8e2e29103810b9f7aa019a27ce41266729839a2c8773e002ba4fe"
+  },
+  {
+   "target_path": "chapters/I89/I89_pop2.html",
+   "source_path": "sources/chapters/I89/I89_pop2.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "3dfa7c9775053c1cbf9d24115c5f6a7dc5b854415ef66e4253970fdfce24c458"
+  },
+  {
+   "target_path": "chapters/I89/I89_pop3.html",
+   "source_path": "sources/chapters/I89/I89_pop3.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "c8a24f37fbea08bb8edf564dfd0ed7cd639a39f1eef238b6860df943d1a2d73c"
+  },
+  {
+   "target_path": "chapters/I89/I89_pop4.html",
+   "source_path": "sources/chapters/I89/I89_pop4.html",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "131369152022f6f0279b3d5a10ac6d8d5f5cd8ebadb08b195bc87a01689df046"
+  },
+  {
+   "target_path": "glossary/i89.py",
+   "source_path": "sources/glossary/i89.py",
+   "operation": "add",
+   "sha256": null,
+   "proposed_sha256": "2b1dc8cb5242d47c9bfd427cec372f0fdbc4d50d78bf63b6164f4c32cb547ddd"
+  },
+  {
+   "target_path": "tests/verify_s01_browser.cjs",
+   "source_path": "sources/tests/verify_s01_browser.cjs",
+   "operation": "replace",
+   "sha256": "dfcf61935c7b6b96e0fba3d2ac557b7d039af365277869dd86328a7381ff3853",
+   "proposed_sha256": "721486da74ccd9c3e8d3df89af6e2dde4d9dbbfe122eee484982cbf5c01286a7"
+  }
+ ],
+ "checks": [
+  {
+   "command": "verifier_sigles I89 ; test_v7.py --static I89 et I83 ; build_front.py ; --all-fragments ; audit_fragments.py ; verify_course_native.cjs I89 ; verify_s01_browser.cjs (22 cours) ; test_v7.py I89 ; unittest discover tests",
+   "base": "918ef69a8526bf0be38ffdf4f88438ad61d9a8a7",
+   "result": "{} ; OK (36 357 mots, 43 fenêtres, 8 quiz, 5 Pareto) ; 22 fragments, build reproductible ; natif 2 595 contrôles, 0 échec ; S01 73 réussis ; OK ; 118 tests OK"
+  }
+ ],
+ "limits": [
+  "Couverture CIM-11 non établie.",
+  "I88 — Lymphadénite non spécifique (C-01-Cardiologie) est articulée (îlot 13), non couverte.",
+  "Doses du sirolimus, de l'octréotide, de la pénicilline V et de la prégabaline : lues par le rédacteur, non relues par le vérificateur dans une source primaire locale (verification/verification_cd.json)."
+ ],
+ "delivery": {
+  "lot": "I89",
+  "date": "2026-10-08",
+  "branch": "claude/loving-shannon-spwrhc",
+  "start_commit": "918ef69a8526bf0be38ffdf4f88438ad61d9a8a7",
+  "report": "rapport.md",
+  "base": "main",
+  "voie": "branche : création de cours (chapters/I89, glossary/i89.py, entrée chapters.json, compte S01 21→22)"
+ }
+}
