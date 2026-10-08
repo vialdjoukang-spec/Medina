@@ -2,6 +2,7 @@
 
 Ce dossier est le point d'entrée permanent pour consulter les livraisons, reprendre une mission et remettre une contribution.
 
+- [État des lieux étendu du 8 octobre, tableaux et jauges vérifiables](ETAT_DES_LIEUX_2026-10-08.md) et [dashboard interactif autonome](ETAT_DES_LIEUX_2026-10-08.html).
 - [Chaîne des dix fragments Codex, sentinelles et veille](CODEX_CHAINE_FRAGMENTS.md).
 - [Signaux Codex : demande A41 et retours à Claude](SIGNAUX_CODEX.json).
 - [Réception de la remise comparative Claude et réserves](receipts/CLAUDE_ESC2026_20261008_RECEPTION.json).

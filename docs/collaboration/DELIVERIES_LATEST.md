@@ -1,3 +1,9 @@
+## Publication sélective actuelle — 8 octobre 2026
+
+**I83 — Varices des membres inférieurs (C-01-Cardiologie)** est publié sur `main` : injection `bb3214d2f887068e669371b76509693ca63b5606`, puis complément contrôlé `8d6deeeec54a5557fe93dcea6f6c6e6543e09d83` depuis Claude `e2c023c8ea255809d53561ccdb1273cb1641813f`. [Reçu6d](receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json) et [reçu du complément](receipts/CLAUDE_I83_E2C023C_COMPLEMENT_2026-10-08.json). [État des lieux actuel et jauges](ETAT_DES_LIEUX_2026-10-08.md).
+
+Cette injection est **limitée à I83** : les huit autres propositions ESC de PR#12 ne sont pas réputées intégrées. Le scanner historique ci-dessous conserve sa cible `codex/sciences-cs-fragments-20261007` ; son graphe ne prouve pas la synchronisation avec `main`. Ses colonnes ne remplacent pas les reçus sélectifs. Le relevé final distant du coordinateur à 10:21 UTC lit les 16 branches et 13 PR, toutes pages, main `8d6deeee`, Claude `e2c023c8`, branche historique `83bff147`.
+
 ## 2026-10-08 — PR #12, tête e2c023c : statut de la conduite intra-artérielle I83
 
 État : **reçu et archivé ; non injecté**. Trois objets, empreinte `ad301049…`. La proposition distingue correctement instruction de produit et recommandation fondée sur des essais ; l’avis vasculaire immédiat et le protocole local priment. Contrôles producteur non rejoués et audit exhaustif I83 toujours ouvert. [Rapport](reviews/2026-10-08/PR12_E2C023C_I83_INTRAARTERIELLE_STATUT/RECEPTION.md).

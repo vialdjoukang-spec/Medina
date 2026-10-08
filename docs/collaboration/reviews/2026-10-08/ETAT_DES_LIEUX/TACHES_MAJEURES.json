@@ -1,0 +1,1270 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-08T10:09:38.862011+00:00",
+  "repository": "vialdjoukang-spec/Medina",
+  "scope": "état des tâches majeures, avec faits actuels et preuves historiques explicitement séparés",
+  "local_git_head": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+  "remote_heads_read_at_utc": "2026-10-08T10:09:38.862011+00:00",
+  "remote_heads": {
+    "refs/heads/claude/loving-shannon-spwrhc": "e2c023c8ea255809d53561ccdb1273cb1641813f",
+    "refs/heads/codex/sciences-cs-fragments-20261007": "83bff147e0aba6b31e7a080e098770b0a6b4250d",
+    "refs/heads/main": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+  },
+  "read_only_git_observation": true,
+  "source_code_changed_by_this_inventory": false,
+  "method_reference": "TACHES_METHODE.md",
+  "overall_medical_production_percent": null,
+  "overall_percent_reason": "pas de dénominateur médical validé ni pondération des tâches ; absence de moyenne artificielle",
+  "certification_counts_are_not_production_progress": true,
+  "tasks": [
+    {
+      "id": "coordination_repartition",
+      "owner": "Codex",
+      "contributors": [
+        "Claude"
+      ],
+      "title": "Répartition et progression",
+      "state": "instructions_publiees",
+      "metrics": [
+        {
+          "name": "fragments_attribues",
+          "numerator": 21,
+          "denominator": 21,
+          "percent": 100.0,
+          "meaning": "21 fragments entiers hors C-01-Cardiologie attribués dans la répartition demandée ; indicateur administratif",
+          "production_completion": false
+        }
+      ],
+      "facts": [
+        "11 fragments entiers Claude, 10 fragments entiers Codex ; catégories et sous-catégories groupées dans leur fragment propriétaire.",
+        "Un chapitre actif par responsable, sous-agents spécialisés en parallèle dans ce chapitre, un auteur par fichier, audit croisé avant injection.",
+        "24 missions et plafond de six sous-agents prévus ; ils ne comptent pas les agents actifs ni les missions terminées."
+      ],
+      "queues": {
+        "Claude": [
+          {
+            "id": "S02",
+            "label": "P-02-Pneumologie",
+            "rank": 1,
+            "whole_fragment": true
+          },
+          {
+            "id": "S03",
+            "label": "G-04-Gastroentérologie et hépatologie",
+            "rank": 2,
+            "whole_fragment": true
+          },
+          {
+            "id": "S05",
+            "label": "E-06-Endocrinologie et métabolisme",
+            "rank": 3,
+            "whole_fragment": true
+          },
+          {
+            "id": "S06",
+            "label": "H-08-Hématologie",
+            "rank": 4,
+            "whole_fragment": true
+          },
+          {
+            "id": "S14",
+            "label": "G-10-Gynécologie et sénologie",
+            "rank": 5,
+            "whole_fragment": true
+          },
+          {
+            "id": "T2",
+            "label": "M-12-Médecine des âges de la vie",
+            "rank": 6,
+            "whole_fragment": true
+          },
+          {
+            "id": "S10",
+            "label": "R-14-Rhumatologie et orthopédie",
+            "rank": 7,
+            "whole_fragment": true
+          },
+          {
+            "id": "S12",
+            "label": "O-17-Oto-rhino-laryngologie et médecine bucco-dentaire",
+            "rank": 8,
+            "whole_fragment": true
+          },
+          {
+            "id": "S13",
+            "label": "O-18-Ophtalmologie",
+            "rank": 9,
+            "whole_fragment": true
+          },
+          {
+            "id": "T3",
+            "label": "M-19-Médecine d’urgence, traumatologie et toxicologie",
+            "rank": 10,
+            "whole_fragment": true
+          },
+          {
+            "id": "T7",
+            "label": "E-22-Éthique médicale, droit et communication",
+            "rank": 11,
+            "whole_fragment": true
+          }
+        ],
+        "Codex": [
+          {
+            "id": "T1",
+            "label": "I-03-Infectiologie",
+            "rank": 1,
+            "whole_fragment": true
+          },
+          {
+            "id": "S08",
+            "label": "N-05-Neurologie",
+            "rank": 2,
+            "whole_fragment": true
+          },
+          {
+            "id": "S04",
+            "label": "N-07-Néphrologie",
+            "rank": 3,
+            "whole_fragment": true
+          },
+          {
+            "id": "T4",
+            "label": "O-09-Oncologie, génétique médicale et soins palliatifs",
+            "rank": 4,
+            "whole_fragment": true
+          },
+          {
+            "id": "S16",
+            "label": "O-11-Obstétrique et néonatologie",
+            "rank": 5,
+            "whole_fragment": true
+          },
+          {
+            "id": "S07",
+            "label": "I-13-Immunologie et allergologie",
+            "rank": 6,
+            "whole_fragment": true
+          },
+          {
+            "id": "S15",
+            "label": "U-15-Urologie et andrologie",
+            "rank": 7,
+            "whole_fragment": true
+          },
+          {
+            "id": "S11",
+            "label": "D-16-Dermatologie",
+            "rank": 8,
+            "whole_fragment": true
+          },
+          {
+            "id": "T5",
+            "label": "D-20-Diagnostic clinique et examens complémentaires",
+            "rank": 9,
+            "whole_fragment": true
+          },
+          {
+            "id": "T6",
+            "label": "M-21-Médecine de premier recours et santé publique",
+            "rank": 10,
+            "whole_fragment": true
+          }
+        ]
+      },
+      "proofs": [
+        "allocation",
+        "instructions",
+        "codex_chain"
+      ],
+      "confidence": "élevée sur la consigne ; pas de mesure du travail médical restant",
+      "remaining": [
+        "Conserver ces règles à chaque nouvelle réservation et renseigner les preuves de clôture, sans ouvrir un autre chapitre au motif d’un blocage."
+      ]
+    },
+    {
+      "id": "cahier_claude_accuse",
+      "owner": "Codex",
+      "receiver": "Claude",
+      "title": "Cahier des charges Claude et accusé",
+      "state": "cahier_publie_et_accuse_recu",
+      "metrics": [
+        {
+          "name": "accuse_de_lecture_recu",
+          "numerator": 1,
+          "denominator": 1,
+          "percent": 100.0,
+          "meaning": "Un accusé demandé, un objet Git réel reçu et lu ; preuve de réception de la consigne ancienne",
+          "production_completion": false
+        }
+      ],
+      "facts": [
+        "L’accusé 7aba794 confirme lecture au commit b6e5d18 et décrit les productions cardiologiques déjà commencées.",
+        "Le cahier actuel inclut la reprise Codex sur A41. L’accusé est antérieur à cette évolution : il ne prouve pas la lecture de toute modification ultérieure.",
+        "Le plan Claude active_chapter=null concerne sa file hors cardiologie. Il ne signifie pas absence d’activité : I83 et les audits ont été livrés."
+      ],
+      "proofs": [
+        "claude_spec",
+        "claude_ack",
+        "allocation"
+      ],
+      "confidence": "élevée sur la réception ; réservée sur la lecture des évolutions ultérieures",
+      "remaining": [
+        "Faire reconnaître le SHA courant des nouvelles consignes lors de la prochaine remise ; fermer le chapitre cardiologique avant nouvelle production."
+      ]
+    },
+    {
+      "id": "a41_codex_reprise",
+      "owner": "Codex",
+      "reviewer": "Claude",
+      "title": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+      "state": "revue_initiale_auditee_corrections_a_traiter",
+      "source_sha_audited": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+      "current_plan_stage": "review",
+      "metrics": [
+        {
+          "name": "reserves_majeures_cloturees_avec_preuve",
+          "numerator": 0,
+          "denominator": 10,
+          "percent": 0.0,
+          "meaning": "Dix observations majeures de l’audit Claude ; aucune correction nouvelle et contre-vérification de ces dix observations n’est prouvée dans les rapports reçus",
+          "production_completion": false
+        }
+      ],
+      "facts": [
+        "La reprise a conservé la base 39b7ff0, sans annoncer de nouvelle rédaction ou de validation exhaustive.",
+        "A41 reste le seul chapitre de la file Codex déclaré actif.",
+        "Le rapport de reprise atteste construction/statique/navigateur sur la base 39b7ff0 : 63 fenêtres, 8 quiz, 10 déclencheurs Pareto ; ces contrôles ne ferment pas les réserves médicales."
+      ],
+      "source_files": [
+        {
+          "path": "chapters/A41/A41_a.html",
+          "sha256": "20bee14603813855228d2cc28159f5ff2768c856c5b1470a60761878a52af008",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_b.html",
+          "sha256": "e8934903adb6be13d606bb06928342489e97b34d5214899ee8a5da397060d16f",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_c.html",
+          "sha256": "7b0767d8485e7b17c9d4d963621d722b640812cee6664554a147223105db3180",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_d.html",
+          "sha256": "508f1452d42ef543ba1fd7519150b98d3c71d2e11ef84cc91907376010aab204",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_justifications.json",
+          "sha256": "c6dd7b6f9653cb6286315d8ba709d4d3e10e5711f2b80b3ee2303c534a5d3704",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_pop1.html",
+          "sha256": "e1f4fcff21096f61e1d4b255c1076f98975b7afb25f855eba257066150802d59",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_pop2.html",
+          "sha256": "107ab25cb44237f62721bb5bfa85bb593f363bfa216c81438626647b067a14bd",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_pop_pa.html",
+          "sha256": "06d04dd469584b9e5d94233c01da7d40524d668c438626d81c95d3c2df3aac35",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "chapters/A41/A41_pop_sciences_revision.html",
+          "sha256": "46d45aca44d3adb8ed104f7506221126c6cf4f8a355bdea035eb901b6b97832b",
+          "identical_to_audited_39b7ff0": true
+        },
+        {
+          "path": "glossary/a41.py",
+          "sha256": "6ecaeda10acdab0f2825c1248b33c55859bf724338b473d49f7717a7e1c6fb38",
+          "identical_to_audited_39b7ff0": true
+        }
+      ],
+      "proofs": [
+        "a41_takeover",
+        "allocation",
+        "a41_audit",
+        "a41_receipt"
+      ],
+      "confidence": "élevée sur provenance/état déclaré ; audit médical reçu, pas contre-validé par cet inventaire",
+      "remaining": [
+        "Traiter les dix majeures (définition, justification des solutés, biomarqueurs, hémocultures, gazométrie, sciences, noradrénaline, pipéracilline/tazobactam, antibiotiques empiriques et mécanismes).",
+        "Examiner les 46 mineures, 19 rédactionnelles et réserves de sources ; faire contrevérifier les corrections par Claude à un nouveau SHA puis injecter et tester."
+      ]
+    },
+    {
+      "id": "a41_audit_claude",
+      "owner": "Claude",
+      "receiver": "Codex",
+      "title": "Audit croisé reçu de A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+      "state": "audit_recu_non_conformite_majeure_ouverte",
+      "metrics": [
+        {
+          "name": "rapports_specialises_recus",
+          "numerator": 3,
+          "denominator": 3,
+          "percent": 100.0,
+          "meaning": "Trois JSON annoncés et effectivement archivés, avec périmètres distincts et mêmes SHA audités",
+          "production_completion": false
+        },
+        {
+          "name": "empreintes_declarees_verifiees",
+          "numerator": 6,
+          "denominator": 6,
+          "percent": 100.0,
+          "meaning": "Six SHA256 de sources annoncées dans le rapport Examens/Sciences/Pharmacologie concordent avec les objets historiques",
+          "production_completion": false
+        }
+      ],
+      "observations": {
+        "total": 75,
+        "bloquantes_selon_classement_claude": 0,
+        "majeures": 10,
+        "mineures": 46,
+        "redactionnelles": 19,
+        "majeures_bloquent_injection_selon_cahier": true
+      },
+      "facts": [
+        "Pathologie 1 : 27 observations ; Pathologie 2 : 16 ; Examens/Sciences/Pharmacologie : 32.",
+        "Les trois textes ont des limites explicites : texte intégral SSC 2026 et son rectificatif, certaines sources suisses, valeurs et rationales restent non vérifiés.",
+        "Le champ plan coordination.claude_a41_request.status=posted_acknowledgement_pending est ancien ; il est dépassé par le rapport archivé réellement reçu."
+      ],
+      "proofs": [
+        "a41_audit",
+        "a41_inventory",
+        "a41_hashes",
+        "a41_receipt"
+      ],
+      "confidence": "élevée sur réception, comptages et empreintes ; ne certifie pas chaque appréciation clinique",
+      "remaining": [
+        "Claude doit contrôler la future correction Codex au SHA précis ; cet audit de base ne valide pas une version ultérieure."
+      ]
+    },
+    {
+      "id": "i83_claude_livraison",
+      "owner": "Claude",
+      "reviewer": "Codex",
+      "title": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+      "state": "injecte_sur_main_apres_audit_remarques_mineures_ouvertes",
+      "retained_source_sha": "6d5797c6a902e430cd9d3e9dd5159ec507a1476a",
+      "source_injection_commit": "bb3214d2f887068e669371b76509693ca63b5606",
+      "published_main_at_snapshot": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+      "latest_producer_head": "e2c023c8ea255809d53561ccdb1273cb1641813f",
+      "metrics": [
+        {
+          "name": "sources_retenues_conformes",
+          "numerator": 10,
+          "denominator": 10,
+          "percent": 100.0,
+          "meaning": "Dix objets du commit publié main 72ccab4 comparés aux empreintes de la remise retenue 6d5797c ; les éditions locales non commitées sont consignées séparément",
+          "production_completion": false
+        },
+        {
+          "name": "panneaux_couverts_par_rapports_de_lecture",
+          "numerator": 4,
+          "denominator": 4,
+          "percent": 100.0,
+          "meaning": "Quatre panneaux et leurs contenus associés dans les périmètres des rapports indépendants ; couverture de lecture, pas certification CIM-11",
+          "production_completion": false
+        }
+      ],
+      "source_files": [
+        {
+          "path": "chapters/I83/I83_a.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "1610615e2f39a888d4ccb46b46b56a4ea0c5195f19dfd8af68cac511f7f0ff76",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "1610615e2f39a888d4ccb46b46b56a4ea0c5195f19dfd8af68cac511f7f0ff76",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "chapters/I83/I83_b.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "d336d0b4e4977212ffa192fe2c57a535db54f288daa2ce014c022d513ed9da9a",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "d336d0b4e4977212ffa192fe2c57a535db54f288daa2ce014c022d513ed9da9a",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "chapters/I83/I83_c.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "ed129bc2d10d36cca74a8a0ab6d3994e9ba101e65ffe3392e84ada8473e48261",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "chapters/I83/I83_d.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "d6a339fea23ae2ffb8aa16268972ec0e9708b997fbd44403b3a2478387bbc88f",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "72a6ddb28a8379f9ab54323d3323220e3f4f102129f1f948d5ccf8c58c5b0e06",
+          "working_tree_identical_to_published_commit": false
+        },
+        {
+          "path": "chapters/I83/I83_pop1.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "a790feb6f96e5805da69f398daf23a617813424a44dad8d14d94e1b2348e36cd",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "a790feb6f96e5805da69f398daf23a617813424a44dad8d14d94e1b2348e36cd",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "chapters/I83/I83_pop2.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "e19683146892162c19e526fda676e558f21d42e894738b6a90ab3475086b1d55",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "chapters/I83/I83_pop3.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "chapters/I83/I83_pop4.html",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "dede4bdcf1974bbff6c2b2874410b64ac1e15003371fc9d78b3436c4999174f4",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "dede4bdcf1974bbff6c2b2874410b64ac1e15003371fc9d78b3436c4999174f4",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "glossary/i83.py",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "b041af30d40c15eb16c0063dc7d83fa0a57c364608d36ccb38003bf2af7636b4",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "b041af30d40c15eb16c0063dc7d83fa0a57c364608d36ccb38003bf2af7636b4",
+          "working_tree_identical_to_published_commit": true
+        },
+        {
+          "path": "glossary/fragments_medina.py",
+          "published_commit": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+          "published_sha256": "8d3ecb13d21a3e1e0c53b144e024a564f5aaa0501dc6518b19dff05ebdc0fced",
+          "published_matches_retained_claude_6d5797c": true,
+          "working_tree_sha256": "8d3ecb13d21a3e1e0c53b144e024a564f5aaa0501dc6518b19dff05ebdc0fced",
+          "working_tree_identical_to_published_commit": true
+        }
+      ],
+      "facts": [
+        "Huit HTML, deux glossaires et seule entrée I83/I87 du catalogue ajoutés ; S01 contient désormais 21 cours.",
+        "La décision finale retient 6d5797c. La tête Claude e2c023c apporte une qualification ultérieure de la conduite intra-artérielle, reçue séparément ; elle ne doit pas être assimilée à la version déjà injectée.",
+        "Le chapitre n’est pas déclaré entièrement clos : les remarques mineures doivent être reprises dans le même chapitre avant la clôture complète.",
+        "Une édition locale non commitée de I83_d reprend déjà la qualification e2 en contrelecture ; elle reste distincte des dix sources du commit publié72."
+      ],
+      "proofs": [
+        "i83_decision",
+        "i83_injection_manifest",
+        "i83_latest_delta_receipt",
+        "chapters"
+      ],
+      "confidence": "élevée sur la provenance retenue et sa publication Git ; déploiement distinct à établir",
+      "remaining": [
+        "Traiter les remarques mineures et décider explicitement du delta e2c023c ; vérifier le site servi et publier le reçu final.",
+        "I89 reste sans remise de cours recevable prouvée ; ne pas l’annoncer injecté."
+      ],
+      "latest_delta_signal_from_coordinator": {
+        "sha": "e2c023c8ea255809d53561ccdb1273cb1641813f",
+        "medical_targeted_review": "favorable selon coordinateur",
+        "working_tree": "intégré localement, non commité au snapshot",
+        "technical_checks": "en cours",
+        "published_in_snapshot_main": false
+      }
+    },
+    {
+      "id": "i83_audit_codex",
+      "owner": "Codex",
+      "producer": "Claude",
+      "title": "Audit indépendant et contrôles de I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+      "state": "audit_favorable_blocages_fermes_controles_canoniques_reussis",
+      "metrics": [
+        {
+          "name": "reserves_identifiees_fermees",
+          "numerator": 3,
+          "denominator": 3,
+          "percent": 100.0,
+          "meaning": "PH-01, PH-02 et passage primaire intra-artériel, fermés par les deltas explicitement relus",
+          "production_completion": false
+        },
+        {
+          "name": "fenetres_natives_ouvertes",
+          "numerator": 47,
+          "denominator": 47,
+          "percent": 100.0,
+          "meaning": "47 fenêtres ouvertes à chaque viewport dans la campagne canonique ; indicateur technique",
+          "production_completion": false
+        }
+      ],
+      "closed_findings": {
+        "PH-01": {
+          "state": "fermee",
+          "sha": "6d5797c6a902e430cd9d3e9dd5159ec507a1476a",
+          "proof": "i83_ph01_final"
+        },
+        "PH-02": {
+          "state": "fermee",
+          "sha": "20c67c011e57eccd25b105b15f465becf7df7f2e",
+          "proof": "i83_ph02_closure"
+        },
+        "passage_primaire_intra_arteriel": {
+          "state": "ferme",
+          "proof": "i83_ph02_closure",
+          "scope": "fidélité aux extraits suisses lus ; pas téléchargement indépendant des pages complètes"
+        }
+      },
+      "technical_checks": {
+        "canonical_rebuild_global": true,
+        "canonical_rebuild_s01": true,
+        "unit_tests": 118,
+        "native_assertions": 1923,
+        "s01_checks": 72,
+        "routes_checks": 41,
+        "failures": 0,
+        "viewport": "Chromium ordinateur/mobile via HTTP local",
+        "independent_of_producer": true
+      },
+      "facts": [
+        "Lecture intégrale Pathologie/Examens, Sciences et Pharmacologie ; deltas ultérieurs revérifiés sans attribuer les anciens défauts aux sources corrigées.",
+        "Six postes spécialisés mobilisés, auteur unique par rapport ; coordinateur responsable de Git.",
+        "Certaines sources externes ont renvoyé CONNECT 403 ; les extraits réellement livrés ont été lus. Les pages officielles complètes et certaines affirmations négatives OFSP ne sont pas certifiées.",
+        "Les contrôles HTTP ne démontrent ni portabilité directe file:// ni certification matérielle iOS/Safari."
+      ],
+      "proofs": [
+        "i83_pathology_exams",
+        "i83_sciences",
+        "i83_pharma_initial",
+        "i83_ph02_closure",
+        "i83_ph01_final",
+        "i83_canonical_checks",
+        "i83_decision"
+      ],
+      "confidence": "élevée sur les textes audités et les corrections ciblées ; limitée sur les sources primaires non retéléchargées",
+      "remaining": [
+        "Qualifications mineures à conserver et traiter ; reçu d’intégration et déploiement à rattacher à leurs SHA exacts."
+      ]
+    },
+    {
+      "id": "esc8_claude",
+      "owner": "Claude",
+      "reviewer": "Codex",
+      "title": "Huit lots de comparaisons ESC 2026",
+      "state": "huit_lots_recus_non_injectes_contrelecture_exhaustive_requise",
+      "courses": [
+        {
+          "code": "I30",
+          "display_name": "I30 — Péricardites, épanchement péricardique, tamponnade et constriction (C-01-Cardiologie)"
+        },
+        {
+          "code": "I33",
+          "display_name": "I33 — Endocardite infectieuse (C-01-Cardiologie)"
+        },
+        {
+          "code": "I34",
+          "display_name": "I34 — Valvulopathies mitrales, tricuspides et pulmonaires (C-01-Cardiologie)"
+        },
+        {
+          "code": "I35",
+          "display_name": "I35 — Valvulopathies aortiques (C-01-Cardiologie)"
+        },
+        {
+          "code": "I40",
+          "display_name": "I40 — Myocardites (C-01-Cardiologie)"
+        },
+        {
+          "code": "I42",
+          "display_name": "I42 — Cardiomyopathies (C-01-Cardiologie)"
+        },
+        {
+          "code": "I44",
+          "display_name": "I44 — Troubles de la conduction et bradycardies (C-01-Cardiologie)"
+        },
+        {
+          "code": "Q21",
+          "display_name": "Q21 — Cardiopathies congénitales de l’adulte (C-01-Cardiologie)"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "rapports_reçus",
+          "numerator": 8,
+          "denominator": 8,
+          "percent": 100.0,
+          "meaning": "Huit rapports de lots effectivement remis et archivés ; réception documentaire",
+          "production_completion": false
+        },
+        {
+          "name": "lots_injectes_par_cette_campagne",
+          "numerator": 0,
+          "denominator": 8,
+          "percent": 0.0,
+          "meaning": "Aucune injection des huit propositions ESC reçues n’est attestée ; distincte des cours historiques déjà intégrés",
+          "production_completion": false
+        }
+      ],
+      "producer_tests": {
+        "checks": 26668,
+        "failures": 0,
+        "errors": 0,
+        "independently_reproduced": false,
+        "head": "4c8c534a6239c0b08ae3b1c2969d6f875549869d"
+      },
+      "corrections_verified": {
+        "eight_report_nulls": "corrigés dans 7c6fc659c3306b1fa0ba6cd82bd37ec68c400083",
+        "i35_renal_nuance": "réserve ciblée fermée à 2145a2a9fd0e073123fc2ef6d90c8f7d65802c07",
+        "i40_previous_phrase": "ancienne expression litigieuse non retrouvée dans main ; ne pas maintenir ce faux blocage"
+      },
+      "facts": [
+        "26 propositions au reçu 4c8c534 : 18 remplacements et 8 ajouts ; provenance contrôlée séparément du contenu médical.",
+        "Les huit rapports conservent pending_exhaustive_review. La levée MED-01 demeure déclarative sans PDF complets versionnés.",
+        "La question de classification dans I42 reste non tranchée dans les dernières réceptions."
+      ],
+      "proofs": [
+        "esc8_receipt",
+        "esc8_corrections",
+        "esc_i35_renal"
+      ],
+      "confidence": "élevée sur réception et réserves ciblées ; exhaustive médicale ouverte",
+      "remaining": [
+        "Après clôture I83, examiner un chapitre à la fois, contrôler les références et réconcilier la baseline avec les sources actuelles avant toute injection."
+      ]
+    },
+    {
+      "id": "mecanismes_codex",
+      "owner": "Codex",
+      "reviewer": "Claude",
+      "title": "Banques de justifications causales ciblées",
+      "state": "banques_canoniques_presentes_revue_exhaustive_ouverte",
+      "metrics": [
+        {
+          "name": "banques_presentes",
+          "numerator": 15,
+          "denominator": 15,
+          "percent": 100.0,
+          "meaning": "Quinze banques de la campagne historique Codex, pas quinze chapitres médicaux clos",
+          "production_completion": false
+        }
+      ],
+      "current_inventory": {
+        "bank_files": 15,
+        "entries": 197,
+        "explicit_targets": 197,
+        "snapshot": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+        "banks": [
+          {
+            "code": "A41",
+            "display_name": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+            "path": "chapters/A41/A41_justifications.json",
+            "sha256": "c6dd7b6f9653cb6286315d8ba709d4d3e10e5711f2b80b3ee2303c534a5d3704",
+            "entries": 10,
+            "targets": 10,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "D84",
+            "display_name": "D84 — Déficits immunitaires (I-13-Immunologie et allergologie)",
+            "path": "chapters/D84/D84_justifications.json",
+            "sha256": "197bdcd0d8c062b56be6c9cb3b4c883c169b172da573dd5878addf056c13e62b",
+            "entries": 10,
+            "targets": 10,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "I10",
+            "display_name": "I10 — Hypertension artérielle (C-01-Cardiologie)",
+            "path": "chapters/I10/I10_justifications.json",
+            "sha256": "970230e8a19ea21f441bb5da2b353ea6745fc511cac64470752d2026b0f2340c",
+            "entries": 14,
+            "targets": 14,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "I21",
+            "display_name": "I21 — Syndromes coronariens aigus et infarctus du myocarde (C-01-Cardiologie)",
+            "path": "chapters/I21/I21_justifications.json",
+            "sha256": "8c9a71ecb69fe92f8d2b8724cc89e95be9b525db7010aae69c7504a27c8b6573",
+            "entries": 13,
+            "targets": 13,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "I25",
+            "display_name": "I25 — Syndromes coronariens chroniques et angor (C-01-Cardiologie)",
+            "path": "chapters/I25/I25_justifications.json",
+            "sha256": "7cf7b2b22edb811e0ea8966cccfcc9413540f3ddb71893b9cd349f88c2454bdb",
+            "entries": 14,
+            "targets": 14,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "I26",
+            "display_name": "I26 — Embolie pulmonaire aiguë (P-02-Pneumologie)",
+            "path": "chapters/I26/I26_justifications.json",
+            "sha256": "da92d766733ca6798c2632abb4785c45c03c973e6de3df64726944954f96d550",
+            "entries": 15,
+            "targets": 15,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "I50",
+            "display_name": "I50 — Insuffisance cardiaque (C-01-Cardiologie)",
+            "path": "chapters/I50/I50_justifications.json",
+            "sha256": "4f5cae982c67852ed1a98f376e2011239dd27eed99f2768f54c1391727c21053",
+            "entries": 21,
+            "targets": 21,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "I70",
+            "display_name": "I70 — Athérosclérose périphérique, artériopathie des membres inférieurs et ischémie aiguë (C-01-Cardiologie)",
+            "path": "chapters/I70/I70_justifications.json",
+            "sha256": "cac56ca798c110f4b9aca25a258ab960cc3ed406f0087611d2d5244778801970",
+            "entries": 15,
+            "targets": 15,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "J18",
+            "display_name": "J18 — Pneumonies de l’adulte (P-02-Pneumologie)",
+            "path": "chapters/J18/J18_justifications.json",
+            "sha256": "9149323fa02f14a4c2fee91ee174c2820ccbe8028dcba52485043d548bbedd5e",
+            "entries": 15,
+            "targets": 15,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "J44",
+            "display_name": "J44 — Bronchopneumopathie chronique obstructive (P-02-Pneumologie)",
+            "path": "chapters/J44/J44_justifications.json",
+            "sha256": "5438431b17503b1f0ffc4437725887c997da8e6b97c94cd85c119ac31a4dcae4",
+            "entries": 15,
+            "targets": 15,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "J45",
+            "display_name": "J45 — Asthme (P-02-Pneumologie)",
+            "path": "chapters/J45/J45_justifications.json",
+            "sha256": "00393fadff3be7a72c61835b94737fe12d03dca4d9b93fd307d71628fbeb7b0e",
+            "entries": 15,
+            "targets": 15,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "M06",
+            "display_name": "M06 — Polyarthrite rhumatoïde (R-14-Rhumatologie et orthopédie)",
+            "path": "chapters/M06/M06_justifications.json",
+            "sha256": "02cd51d04c36a129459794289d3bcacfb7edfeb6ccbb0d345c15051aa78d5c8b",
+            "entries": 10,
+            "targets": 10,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "M31",
+            "display_name": "M31 — Vascularites systémiques (I-13-Immunologie et allergologie)",
+            "path": "chapters/M31/M31_justifications.json",
+            "sha256": "0b4f3aaee514d2943a9a7c3392b8fcc644cea944ec0bb31869f3c2c5ece55fd6",
+            "entries": 10,
+            "targets": 10,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "M32",
+            "display_name": "M32 — Lupus érythémateux systémique (I-13-Immunologie et allergologie)",
+            "path": "chapters/M32/M32_justifications.json",
+            "sha256": "8b8da642a1e14b5e99726491839e4c630248f01e0b26c083c520b0e4cfd02f9a",
+            "entries": 10,
+            "targets": 10,
+            "medical_exhaustiveness_certified": false
+          },
+          {
+            "code": "T78",
+            "display_name": "T78 — Anaphylaxie et allergies (I-13-Immunologie et allergologie)",
+            "path": "chapters/T78/T78_justifications.json",
+            "sha256": "5db27d751547982304d6e00557c9c8c9a8b4108779efc580ea83a55794a3030c",
+            "entries": 10,
+            "targets": 10,
+            "medical_exhaustiveness_certified": false
+          }
+        ]
+      },
+      "facts": [
+        "Comptage courant reproductible : 197 entrées et 197 cibles dans les 15 banques canoniques.",
+        "204 fenêtres/205 cibles figurent dans un ancien HANDOFF ; ces valeurs historiques ne sont pas reproduites par les banques actuelles et ne servent pas de compteur courant.",
+        "Cinq banques cardiologiques ont été restaurées ou régénérées ; ce sont des explications ciblées, sans certificat de relecture assertion par assertion.",
+        "La campagne historique 30 cours / 15-15 reste distincte du partage cardiologique 20 cours / 10-10 et des 21 fragments / 11-10."
+      ],
+      "proofs": [
+        "mechanisms_plan",
+        "mechanisms_recovery",
+        "mechanisms_current_report"
+      ],
+      "confidence": "élevée pour le comptage actuel ; couverture exhaustive non mesurable",
+      "remaining": [
+        "Faire auditer et corriger les passages encore ouverts dans le chapitre actif ; ne pas utiliser présence d’une banque comme preuve de cours complet."
+      ]
+    },
+    {
+      "id": "mecanismes_claude_lot5",
+      "owner": "Claude",
+      "integrator": "Codex",
+      "title": "Enrichissement étendu cardiologique historique",
+      "state": "livraisons_historiques_integrees_controles_cibles_revue_exhaustive_ouverte",
+      "metrics": [
+        {
+          "name": "cours_historiques_enrichis_etendus",
+          "numerator": 15,
+          "denominator": 20,
+          "percent": 75.0,
+          "meaning": "I48 plus 14 cours du lot 5 sur les vingt cours cardiologiques présents lors de cette mission ; dénominateur historique fixé, indépendant du nouveau I83",
+          "production_completion": false
+        }
+      ],
+      "retained_receipt": {
+        "received_head": "2947ba8639ddb56f884bf09ab0658ab70f17e035",
+        "integration_commit": "1fe38461d8502fb7984d66b0fe223afecd759889",
+        "source_html_files": 128,
+        "i48_bibliography_files": 4,
+        "unit_tests": 97,
+        "build_fragments": 22,
+        "checks_fourteen_courses": 11118,
+        "checks_i48": 931,
+        "checks_banks": 2400,
+        "checks_s01": 71,
+        "checks_organisation": 748
+      },
+      "facts": [
+        "Ces 15 livraisons reçues et intégrées ont des contrelectures ciblées ; les trente statuts du plan historique restent pending_exhaustive_review.",
+        "La paternité des cours historiques ne change pas avec l’attribution actuelle des fragments."
+      ],
+      "proofs": [
+        "lot5_convergence",
+        "mechanisms_plan",
+        "mechanisms_current_report"
+      ],
+      "confidence": "élevée sur le reçu historique ; ne transpose pas ses tests à un SHA ultérieur",
+      "remaining": [
+        "Fermer les réserves des dix cours cardiologiques actuellement attribués à Claude, selon des lectures et preuves actuelles."
+      ]
+    },
+    {
+      "id": "sciences_cs",
+      "owner": "Codex",
+      "reviewer": "Claude",
+      "title": "Sciences fondamentales et Sémiologie CS",
+      "state": "contenu_historique_integre_audit_claude_cible_recu",
+      "metrics": [
+        {
+          "name": "cours_sciences_enrichis_campagne_initiale",
+          "numerator": 30,
+          "denominator": 30,
+          "percent": 100.0,
+          "meaning": "Trente cours de la campagne initiale avec contenus et figures scientifiques ; présence et contrats, pas trente audits médicaux clos",
+          "production_completion": false
+        }
+      ],
+      "technical_evidence": {
+        "initial_science_disciplines": 140,
+        "initial_science_figures": 145,
+        "initial_science_cs_browser_checks": 569,
+        "later_science_cs_browser_checks": 609,
+        "later_courses": 31,
+        "latest_i83_addition_not_in_later_609_scope": true
+      },
+      "claude_cs_review": {
+        "received_head": "f6e400df9e5d180d9dc69aba1f598d4a21cb788c",
+        "integration_commit": "f5c83957a239a27b836b838063e97835cd80f4d9",
+        "scope": "repères et manœuvres du module cardiovasculaire ; adaptations Codex documentées",
+        "remaining_C10": "complément vasculaire non livré dans ce reçu"
+      },
+      "facts": [
+        "CS contient dix étapes, trois cas, une liste de contrôle et quatre modèles 3D de démonstration.",
+        "Les modèles illustrent des gestes et ne certifient pas des rapports anatomiques exacts.",
+        "Le rapport Claude initial annonçant proposition/non intégrée est dépassé par le reçu f5c839 ; la géométrie 3D et la relecture intégrale des autres cours ne sont pas certifiées par cet audit ciblé."
+      ],
+      "proofs": [
+        "science_cs_original",
+        "science_cs_browser",
+        "science_cs_later_browser",
+        "cs_claude_review",
+        "cs_integration_receipt"
+      ],
+      "confidence": "élevée sur livraison et contrôle technique ; médicale ciblée seulement",
+      "remaining": [
+        "Compléter l’examen vasculaire C10 avec références et poursuivre la relecture des sciences/figures héritées dans les chapitres concernés."
+      ]
+    },
+    {
+      "id": "veille_codex",
+      "owner": "Codex",
+      "title": "Veille des livraisons Claude",
+      "state": "workflow_publie_et_processus_local_actif",
+      "snapshot_status": {
+        "status": "ok",
+        "last_success_at": "2026-10-08T10:09:02.805960+00:00",
+        "integration_commit": "83bff147e0aba6b31e7a080e098770b0a6b4250d",
+        "branches_seen": 16,
+        "pull_heads_seen": 13,
+        "new_candidates": 0,
+        "candidate_count": 11,
+        "outstanding_candidates": 1,
+        "queue_path": "/workspace/medina-env/claude-watch/queue.json",
+        "status_path": "/workspace/medina-env/claude-watch/status.json",
+        "error": null,
+        "notes": [],
+        "automatic_audit": false,
+        "automatic_injection": false
+      },
+      "runtime": {
+        "observed_python_pid": 43167,
+        "interval_seconds": 300,
+        "state_directory": "/workspace/medina-env/claude-watch",
+        "survival": "tant que la machine et le processus vivent ; pas d’autonomie AI après fin de session"
+      },
+      "current_candidates": [
+        {
+          "commit": "e2c023c8ea255809d53561ccdb1273cb1641813f",
+          "refs": [
+            "refs/heads/claude/loving-shannon-spwrhc",
+            "refs/pull/12/head"
+          ],
+          "status": "detected_pending_audit"
+        }
+      ],
+      "github": {
+        "schedule": "*/15 * * * *",
+        "first_successful_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37701215617",
+        "contents_permission": "read",
+        "artifact_retention_days": 7,
+        "schedule_limit": "retards possibles ; actif sur branche par défaut ; inventaire indépendant à chaque run"
+      },
+      "facts": [
+        "Dernier succès et compteurs directement lus dans status.json, pas supposés à partir d’un lancement.",
+        "La file compte onze têtes historiques ; une seule tête actuellement annoncée et non ancêtre de la branche d’intégration constitue le candidat courant.",
+        "Les marques pending_audit du scanner ne sont pas des décisions médicales : les audits et l’injection sélective I83 existent dans des rapports séparés.",
+        "Le scanner compare la branche d’intégration 83bff147, tandis que main a avancé ; cette différence explique qu’une remise connue reste candidate.",
+        "Le script n’exécute aucun code entrant, ne déclenche pas une IA après la fin du tour, n’audite pas et n’injecte pas automatiquement."
+      ],
+      "proofs": [
+        "watch_script",
+        "watch_workflow",
+        "watch_tests",
+        "allocation"
+      ],
+      "confidence": "élevée sur dernier scan et processus observés ; disponibilité future non garantie",
+      "remaining": [
+        "Conserver l’état et surveiller les échecs ; rattacher réception/audit/injection à leur rapport humain et mettre à jour la cible de comparaison si le coordinateur la change."
+      ]
+    },
+    {
+      "id": "publication",
+      "owner": "Codex",
+      "title": "Publication et certification des résultats",
+      "state": "sources_i83_publiees_deploiement_a_verifier",
+      "git": {
+        "local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+        "remote_main": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+        "local_equals_remote_main": true,
+        "source_injection_commit": "bb3214d2f887068e669371b76509693ca63b5606",
+        "integration_branch_head": "83bff147e0aba6b31e7a080e098770b0a6b4250d"
+      },
+      "metrics": [
+        {
+          "name": "cours_canoniques_marques_integres",
+          "numerator": 32,
+          "denominator": 32,
+          "percent": null,
+          "meaning": "Nombre d’entrées du catalogue courant portant integrated=true ; état du corpus, pas complétude CIM-11",
+          "production_completion": false
+        }
+      ],
+      "cim11": {
+        "certified_fragments": {
+          "Claude": {
+            "count": 0,
+            "assigned": 11
+          },
+          "Codex": {
+            "count": 0,
+            "assigned": 10
+          }
+        },
+        "validated_expected_entity_inventory": false,
+        "coverage_percent": null,
+        "production_progress_percent": null,
+        "reason": "absence d’inventaire officiel et matrice d’entités/passage/audit validés ; le nombre de certifications n’est pas le taux de production"
+      },
+      "facts": [
+        "À cet instant les sources I83 sont présentes dans main distant et dans le checkout ; le reçu INJECTION_LOCALE published=false décrit une étape antérieure et n’invalide pas la preuve Git actuelle.",
+        "Aucun run Pages et aucun contenu I83 servi ne sont directement revérifiés par le présent inventaire : le déploiement reste séparé et sa preuve est à joindre.",
+        "Le coordinateur signale Pages au SHA72 : workflow37760666231 et déploiement6932642673 réussis, site HTTP200 ; lecture d’artefact et routes encore en cours au signal. Ce signal est attribué à son auteur, sans lui prêter une vérification directe par ce poste."
+      ],
+      "proofs": [
+        "i83_decision",
+        "i83_injection_manifest",
+        "chapters",
+        "completeness"
+      ],
+      "confidence": "élevée sur publication du commit Git ; déploiement non vérifié dans ce rapport",
+      "remaining": [
+        "Joindre reçu final avec commit, run Pages et URL effectivement servie ; actualiser l’état seulement après preuve."
+      ],
+      "deployment_signal_from_coordinator": {
+        "reported_at": "2026-10-08, message du coordinateur pendant la finalisation",
+        "sha": "72ccab4ea2197f8890d090270d212bb54184e0d0",
+        "workflow_run_id": 37760666231,
+        "workflow_run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37760666231",
+        "deployment_id": 6932642673,
+        "deployment_status_reported": "success",
+        "site_http_status_reported": 200,
+        "artifact_and_routes_review": "en cours chez le poste technique au moment du signal",
+        "directly_verified_by_this_inventory": false
+      }
+    }
+  ],
+  "proofs": {
+    "allocation": {
+      "path": "organisation/production_plan.json",
+      "sha256": "6f1571d3876b2d9ad4ff5e0ca8665bf0f57670f70b0076b31f70343a3db07dfa",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "instructions": {
+      "path": "docs/collaboration/FRAGMENTS_RESTANTS.md",
+      "sha256": "ecc13757444a25bfbd7efdd27915fd13e76ceaa9a256346bd1cb5a8fb6fda809",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "claude_spec": {
+      "path": "docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md",
+      "sha256": "8fd1a6cdafc99f3ebe9caea71d1672d12f77699f4fea6c08103afc0fc06991df",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "codex_chain": {
+      "path": "docs/collaboration/CODEX_CHAINE_FRAGMENTS.md",
+      "sha256": "c6db0caef73af126841caa6bd539ef3934084a0d8e44e9519d9b6c11c0ea9730",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "a41_takeover": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md",
+      "sha256": "c7f08c1595afdf25176fc8614eca62ec45d629d1ca16b34fcd25db956ad737cd",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "a41_audit": {
+      "path": "livraisons/Livraison Claude/I-03-Infectiologie/archives/AUDIT_A41_39B7FF0_RECU_20261007_5BEE2A4/RAPPORT.md",
+      "sha256": "4b96c80a848468f19dae10827a04b4c02d384c0aa5543e55f10d555857a46f2b",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "a41_inventory": {
+      "path": "docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/INVENTAIRE_AUDIT_A41.json",
+      "sha256": "8a2face969eb5d1b1a47f3af403293a55daad68829cfc6cf8c4dbd6c58ac3c3a",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "a41_hashes": {
+      "path": "docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/A41_HASH_VERIFICATION.json",
+      "sha256": "853c7539c78bb768eb561b7df559ba46f851f3f55632874def97ebc0ccb0f08c",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "a41_receipt": {
+      "path": "docs/collaboration/reviews/2026-10-07/PR12_I83_A41_5BEE2A4/RECEPTION.md",
+      "sha256": "708912afea0c4fe6ba23939bbcf1c07529be62389e1c8110da0f0f2e772bc422",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_decision": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DECISION.md",
+      "sha256": "665c2bff61fce1a3a9eb401c8c1e13c933f502e86e7fb32825cb36d5e2478dea",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_pathology_exams": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_PATHOLOGIE_EXAMENS.md",
+      "sha256": "a738f4a97023a04665cb4de71fafd703baef370e29a3c41c1cd330fba9b8b3b6",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_sciences": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_SCIENCES.md",
+      "sha256": "eeab2f4cf6ad9d843d186e8d589ab6e43f1537ba07a828adcaa2f9bcc46b7f57",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_pharma_initial": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/AUDIT_PHARMACOLOGIE.md",
+      "sha256": "3f57799bcfe5739ee2df1f8f23dba2c5327daae05c2d75d1eb62c1ae3d140e9f",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_ph02_closure": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_20C67C0_PHARMACOLOGIE.md",
+      "sha256": "e1a79ba0637b653c762190f9a5812b93655824cce3a4fd8d6c27e9fab807722d",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_ph01_final": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/DELTA_6D5797C_PHARMACOLOGIE.md",
+      "sha256": "5796c76723071b67a0ff2657f366f65e1b380ac2c1fd545da68140d8d15991f6",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_injection_manifest": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/INJECTION_LOCALE_6D5797C.json",
+      "sha256": "4852f493dd7f54f710b4e945d7df1f1a063ff092a40d77575e1ecc34c5a4a3d6",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_canonical_checks": {
+      "path": "docs/collaboration/reviews/2026-10-08/I83_DECISION_0974D85/CONTROLES_CANONIQUES_6D5797C.md",
+      "sha256": "aa2a047555b5b5e75db875887123e614e89a123fd83d5a6ec350a687b6ac12a0",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "i83_latest_delta_receipt": {
+      "path": "docs/collaboration/reviews/2026-10-08/PR12_E2C023C_I83_INTRAARTERIELLE_STATUT/RECEPTION.md",
+      "sha256": "cf3f15f14936119bd9b40d569cd10e27bc7a66ce4fffccbc082dc08b7daa61f1",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "esc8_receipt": {
+      "path": "docs/collaboration/receipts/CLAUDE_ESC_4C8C534_RECEPTION_2026-10-08.json",
+      "sha256": "4ee659139b69cf9556f1c790594d5b7920f0fb4d4a548e5fc63872804aee155c",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "esc8_corrections": {
+      "path": "docs/collaboration/reviews/2026-10-08/PR12_7C6FC65_ESC_CORRECTIONS/RECEPTION.md",
+      "sha256": "ea2fcccee77d08aa51b3ed0127ad4e5a86569285cded7eb3922be30d63000040",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "esc_i35_renal": {
+      "path": "docs/collaboration/reviews/2026-10-08/PR12_2145A2A_I35_RENAL/RECEPTION.md",
+      "sha256": "b0cd89c9eaf5ed2fd547d8e1c0e7de1cd7095a4dfbed9102ae4cc7ac0802c969",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "mechanisms_plan": {
+      "path": "docs/collaboration/MECHANISMS_PLAN.json",
+      "sha256": "e9c443e52aa34ef2fb2f7819d7ec6410e58109f917767f3b3dd6006c5a4c9200",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "mechanisms_recovery": {
+      "path": "audits/MECANISMES_2026-10-07/CARDIO_REGENERE_APRES_RESTAURATION.md",
+      "sha256": "26dcc6d3f816800eeb547b25f8c1bef6504a8eaa7376f0beea6b84063baa989c",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "mechanisms_current_report": {
+      "path": "audits/MECANISMES_2026-10-07/README.md",
+      "sha256": "0228eb3caf213221194f7c25020e7e5b4ec4c0119d265e27252a4201012f7f75",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "science_cs_original": {
+      "path": "audits/SCIENCES_CS_2026-10-07/README.md",
+      "sha256": "cf790fb4e9cc8f9b80a0c18e81e364fbfa4f695e62d8ccc78cc9dbfa6d393ae8",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "science_cs_browser": {
+      "path": "audits/SCIENCES_CS_2026-10-07/science-cs-browser-results.json",
+      "sha256": "07dc63a2861c9051b2b14031a77f29fb94d7dbaee50eac4e7583064499931c61",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "science_cs_later_browser": {
+      "path": "audits/MECANISMES_2026-10-08/sciences_cs/science-cs-browser-results.json",
+      "sha256": "bdfb07e8535d84833987b1624b02c015259315bfef0561120e71a57f7d1bdefb",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "cs_claude_review": {
+      "path": "docs/collaboration/reviews/CLAUDE_CS_CARDIO_RAPPORT_2026-10-07.md",
+      "sha256": "b657ddca2edb5616f2e75c9a796bd4f2c3ac1c54a548773459c5ba7cb2fa5ab7",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "cs_integration_receipt": {
+      "path": "docs/collaboration/receipts/CLAUDE_I48_CS_2026-10-07.json",
+      "sha256": "9084f616453c74dc0a4b65ea9585560bfa9fa78ba66dc5cc7ab210639e70ada4",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "completeness": {
+      "path": "docs/COMPLETUDE_CIM11.md",
+      "sha256": "50ad868e0287f2cadbb78439c8a5063b170978ce6c7f6d6a5095dd478a090abf",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "watch_script": {
+      "path": "tools/claude_watch.py",
+      "sha256": "080c128e6a6cdbbecb9ba5be7cc523dc658609b5f1c0e7185810f5a25fd25286",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "watch_workflow": {
+      "path": ".github/workflows/claude_watch.yml",
+      "sha256": "21656192ee58ff64096f95cd62af2a30c0f963838a77de4f3425c5b0f1e197ac",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "watch_tests": {
+      "path": "tests/test_claude_watch.py",
+      "sha256": "4d91a820c14a943baef553ee49d98dcaaab368f9f7c5e6ee16a97be27fe26caf",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "chapters": {
+      "path": "chapters.json",
+      "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+      "available_in_checkout": true,
+      "observed_local_head": "72ccab4ea2197f8890d090270d212bb54184e0d0"
+    },
+    "claude_ack": {
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/ACCUSE_PRISE_EN_CHARGE_2026-10-08.md",
+      "commit": "7aba794a1d77979052e6104a3a5afc05698046db",
+      "git_blob": "e40015e6fcd6c15b6a418440f283949663d644ca",
+      "sha256": "cfbf139347381fdc127ef140123053293c296a183ef8e8eafb82a1444c614ee8",
+      "available_in_checkout": false,
+      "method": "objet historique Git lu directement ; absent du chemin matérialisé du checkout actuel",
+      "instruction_commit_read": "b6e5d18c2c2383893819c4c0834d6402bbe30e67",
+      "instruction_blob_read": "1db235437134965b62afeccc8a5316749453261a"
+    },
+    "lot5_convergence": {
+      "path": "docs/collaboration/receipts/CLAUDE_LOT5_CONVERGENCE_20261008.json",
+      "commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+      "git_blob": "47ee50ef81727d22bc7d3c1f2d13c6c6a2a061fb",
+      "available_in_checkout": false,
+      "method": "reçu historique lu à son commit ; ne devient pas une validation du SHA actuel"
+    }
+  },
+  "dynamic_snapshot_limit": "Le coordinateur travaille en parallèle ; les têtes, reçus et déploiements peuvent avancer après cet instantané. Le dernier scan de veille possède son propre horaire.",
+  "working_tree_dirty_paths_at_followup": [
+    " M chapters/I83/I83_d.html",
+    " M docs/collaboration/HANDOFF_LATEST.md",
+    " M docs/collaboration/SIGNAUX_CODEX.json",
+    " M \"livraisons/Livraison Codex/C-01-Cardiologie/livraison.json\"",
+    " M \"livraisons/Livraison Codex/C-01-Cardiologie/sources/chapters/I83/I83_d.html\"",
+    "?? docs/collaboration/receipts/CLAUDE_I83_6D5797C_INTEGRATION_2026-10-08.json",
+    "?? docs/collaboration/reviews/2026-10-08/ETAT_DES_LIEUX/"
+  ],
+  "concurrent_local_edit_note": "Les sources publiées sont établies par git show au commit72ccab4 ; une qualification ultérieure I83_d est présente en édition locale sous contrôle du coordinateur."
+}
