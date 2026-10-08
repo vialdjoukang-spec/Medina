@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "id": "CLAUDE_C01_PR16_I51_PUBLICATION_2026-10-08",
+  "recorded_at": "2026-10-08T20:55:47.836217+00:00",
+  "repository": "vialdjoukang-spec/Medina",
+  "pr_number": 16,
+  "pr_url": "https://github.com/vialdjoukang-spec/Medina/pull/16",
+  "contributor": "Claude",
+  "delivery_commit": "625138a1d831eb0d6b1d0e96f3d890f0e2015728",
+  "observed_pr_head": "71fbea32e7695c7f58d819ee8339b5bf70a13745",
+  "baseline_main": "98b2e57382b15d188bf7a89fb417d99eeaf3053a",
+  "remote_publication_commit": "0a75a10d4a8f8fec2f742f70e5ee1e002deaec27",
+  "remote_publication_tree": "7e88b61a1c9d63a12036b93864a24f574e511e1e",
+  "controlled_local_commit": "f8a2745c68c5721d99a273fc6c3bf8c43d350d2d",
+  "tree_equivalence_verified": true,
+  "publication_method": "Connecteur GitHub, objets Git et mise à jour non forcée avec expected_sha",
+  "prior_adaptations_receipt": "docs/collaboration/receipts/CLAUDE_C01_PR16_I51_PROVISOIRE_2026-10-08.json",
+  "status": "PROVISOIRE_AVEC_RESERVES",
+  "course": "I51 — Complications des cardiopathies et atteintes cardiaques au cours d’autres maladies (C-01-Cardiologie)",
+  "canonical_files": {
+    "chapters/I51/I51_a.html": {
+      "before_sha256": null,
+      "sha256": "5d1add95d2fe7ca30021123d7b1cc646a205cd8b76a9cbfa56a046c107c8dd51"
+    },
+    "chapters/I51/I51_b.html": {
+      "before_sha256": null,
+      "sha256": "d6dc82e0f49f0263224caa490ebff19f3d8ea205131b01c308252e0e4372ba7e"
+    },
+    "chapters/I51/I51_c.html": {
+      "before_sha256": null,
+      "sha256": "6fecd28ac66f24a6a0e47815f4d34cf045c1e95395099e7bd857d028f3eaf6f2"
+    },
+    "chapters/I51/I51_d.html": {
+      "before_sha256": null,
+      "sha256": "6940966751118acc0d69ab710ea0b695d35f0e042a2e434452203c0d30bf6c80"
+    },
+    "chapters/I51/I51_pop1.html": {
+      "before_sha256": null,
+      "sha256": "9bb16b86cca4a0dbdff8717ede8b41a5bd174fb4542eb05f07f5141762c98fcc"
+    },
+    "chapters/I51/I51_pop2.html": {
+      "before_sha256": null,
+      "sha256": "8ba2a99710f1ce720684f72a0bdb2078bb88160777673d0f5ec913c390f43275"
+    },
+    "chapters/I51/I51_pop3.html": {
+      "before_sha256": null,
+      "sha256": "aa85217f2b4a39ef052320dbfef48846f8882bc17535804b008e22938efa4505"
+    },
+    "chapters/I51/I51_pop4.html": {
+      "before_sha256": null,
+      "sha256": "8959d5e14368509f08a6429cae2ba36acffdb51262cdc5aaed3916031cb63541"
+    },
+    "glossary/i51.py": {
+      "before_sha256": null,
+      "sha256": "90b9574d93dbc27ac7050ab4e59d0871e2068f17bdb3e1c261a0f31b3ff78986"
+    },
+    "chapters.json": {
+      "before_sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+      "sha256": "79f46fb907f4c22a16b132ed520b3cf3dd9b26eb725abce5b8389f7d8e4aded4"
+    }
+  },
+  "reservations": [
+    {
+      "id": "C01-I51-AOD-DOSE",
+      "course": "I51",
+      "status": "open",
+      "reason": "Les adaptations posologiques de fibrillation auriculaire ne sont pas un schéma validé du thrombus ventriculaire hors indication.",
+      "action": "Claude : vérifier les essais et conditions posologiques propres au thrombus ventriculaire ; conserver la limite spécialisée visible jusqu'à correction sourcée.",
+      "targets": [
+        {
+          "path": "chapters/I51/I51_d.html",
+          "marker_id": "i51-reserve-aod"
+        }
+      ]
+    },
+    {
+      "id": "C01-I51-LEVOSIMENDAN-STATUT",
+      "course": "I51",
+      "status": "open",
+      "reason": "Monographie suisse actuelle et sélection des patients non établies ; l'inotropie peut aggraver une obstruction dynamique.",
+      "action": "Claude : retrouver la monographie applicable et délimiter les situations sans obstruction ; ne pas transformer l'option en protocole automatique.",
+      "targets": [
+        {
+          "path": "chapters/I51/I51_d.html",
+          "marker_id": "i51-reserve-levo"
+        }
+      ]
+    },
+    {
+      "id": "C01-I51-CHOC",
+      "course": "I51",
+      "status": "open",
+      "reason": "Traitement du choc du Tako-tsubo variable selon obstruction, congestion et hémodynamique ; contrelecture finale non achevée.",
+      "action": "Claude : achever la revue primaire du choc ; préserver les précautions visibles sur remplissage, bêtabloquants et médicaments aggravant le gradient.",
+      "targets": [
+        {
+          "path": "chapters/I51/I51_b.html",
+          "marker_id": "i51-reserve-choc"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "unit_reconciliation": {
+      "tests": 225,
+      "seconds": 40.177,
+      "result": "passed"
+    },
+    "local_native_browser_assertions": 1971,
+    "local_reservation_assertions": 90,
+    "public_browser_assertions": 90,
+    "public_browser_result": "passed",
+    "public_browser_completed_at": "2026-10-08T20:53:31.455Z",
+    "public_browser_proof": "docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/reserves/i51_public_0a75a10_results.json",
+    "public_browser_proof_sha256": "1cc87a6c14fd87660688c984ecc7dbc93b04f0e60d46c2d75726ed704087d521",
+    "public_screenshots_identical_to_eight_frozen_captures": true,
+    "javascript_errors": [],
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      }
+    ],
+    "browser_transport_attempts": [
+      {
+        "result": "failed_before_assertions",
+        "reason": "ERR_EMPTY_RESPONSE sans proxy"
+      },
+      {
+        "result": "failed_before_assertions",
+        "reason": "ERR_CERT_AUTHORITY_INVALID pour le certificat du proxy local"
+      },
+      {
+        "result": "passed",
+        "configuration": "Proxy du runtime et --ignore-certificate-errors dans le navigateur isolé uniquement ; téléchargements HTTPS Python vérifiés et empreintes comparées séparément. Pas de certification TLS."
+      }
+    ]
+  },
+  "CI_runs": [
+    {
+      "id": 37842061004,
+      "name": "Garde des fragments MEDINA",
+      "sha": "0a75a10d4a8f8fec2f742f70e5ee1e002deaec27",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37842061004",
+      "updated_at": "2026-10-08T20:47:36Z"
+    },
+    {
+      "id": 37842061059,
+      "name": "Repérer les livraisons MEDINA",
+      "sha": "0a75a10d4a8f8fec2f742f70e5ee1e002deaec27",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37842061059",
+      "updated_at": "2026-10-08T20:48:59Z"
+    },
+    {
+      "id": 37842060944,
+      "name": "Publier MEDINA sur GitHub Pages",
+      "sha": "0a75a10d4a8f8fec2f742f70e5ee1e002deaec27",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37842060944",
+      "updated_at": "2026-10-08T20:51:46Z"
+    }
+  ],
+  "deployment": {
+    "status": "success",
+    "workflow_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37842060944",
+    "source_commit": "0a75a10d4a8f8fec2f742f70e5ee1e002deaec27",
+    "served_resources": [
+      {
+        "url": "https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html",
+        "status": 200,
+        "bytes": 5118781,
+        "sha256": "8f7eb55b2601352d1fc694cdbd5217634d5fc482d3f1a51a66d24f6f8e31a879",
+        "matches_controlled_local_build": true
+      },
+      {
+        "url": "https://vialdjoukang-spec.github.io/Medina/apercus/controle/c01/I51_navigation_enregistree_2026-10-08.gif",
+        "status": 200,
+        "bytes": 726625,
+        "sha256": "2a70003d34b9de77deb27e2c97e16495a8a791420db15eb0ac4be17af267ea43"
+      }
+    ]
+  },
+  "stages": {
+    "repere": true,
+    "recu": true,
+    "integre_dans_sources_canoniques": true,
+    "controle_techniquement": true,
+    "publie_sur_GitHub": true,
+    "deploiement_effectif_verifie": true
+  },
+  "concurrent_main_preserved": {
+    "head": "286e02e4a5e65cd875b34aef8dca96c13c90e5f6",
+    "scope": "Travail A54 et workflow déjà sur main ; aucun changement médical I51. Préservés avant publication documentaire du reçu."
+  },
+  "pr20_observed": {
+    "head": "5d8631277d1bec4d2e561363eb0af11610f5a306",
+    "branch": "claude/keen-clarke-sat8mh",
+    "files": 10,
+    "scope": "Consignes de coordination et captures ; pas de fusion automatique ni livraison médicale injectée."
+  },
+  "pr_comment": {
+    "executed": false,
+    "reason": "Aucun message supplémentaire dans l’application source, conformément à la consigne de confirmation limitée au chat."
+  },
+  "limits": [
+    "Trois réserves médicales ouvertes ; pas de validation médicale humaine ni revue exhaustive des trente cours.",
+    "Huit autres cours C01 archivés, non injectés ; ESC2026 non injecté et MED-01/02/03 non réputées levées.",
+    "Campagne historique 30 cours 15/15, backlog cardiologique 20 cours 10/10 et attributions 21 fragments 11/10 préservés. Aucun chapitre actif choisi par cette intégration.",
+    "Le reçu documente le déploiement de 0a75a10 ; la mise à jour documentaire suivante ne modifie aucune source médicale."
+  ]
+}

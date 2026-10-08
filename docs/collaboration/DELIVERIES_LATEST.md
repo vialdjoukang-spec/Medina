@@ -1,5 +1,12 @@
 # MEDINA — livraisons repérées
 
+## Publication vérifiée — I51, 8 octobre 2026
+
+I51 est reçu, intégré dans les sources canoniques et **publié provisoirement avec trois réserves rouges**, au commit `0a75a10d4a8f8fec2f742f70e5ee1e002deaec27`. Les trois workflows GitHub ont réussi ; le site public sert exactement les octets du build contrôlé. **225 tests unitaires**, 1 971 assertions natives locales et 90 assertions de réserves sur ordinateur/mobile passent ; ces 90 assertions sont aussi exécutées sur le site public. Les huit captures publiques contrôlées sont identiques aux preuves gelées. [Reçu de publication](receipts/CLAUDE_C01_PR16_I51_PUBLICATION_2026-10-08.json) · [Cours I51](https://vialdjoukang-spec.github.io/Medina/fragments/MEDINA_S01_cardiovasculaire.html#/entry/I51). Les autres cours C01 et ESC2026 restent non injectés. Aucun audit exhaustif ni statut final INJECTE. Les étapes locales décrites plus bas sont historiques.
+
+Les tableaux suivants conservent le snapshot historique au SHA a34f197 ; les têtes actuelles sont dans REMOTE_HEADS_BEFORE_PUBLICATION.json et le reçu ci-dessus.
+
+
 Branche d'intégration : `main`.
 Commit cible : `a34f19752562376a84d74de5141a0593029eca4b`.
 
