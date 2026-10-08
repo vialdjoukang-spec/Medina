@@ -282,6 +282,22 @@ def validate_fragment_guard(before, after):
         if path in locked:
             raise FragmentError(f"Provisoire : source d'un fragment INJECTE verrouillée : {path}.")
         authorized[path] = digest
+    # Section 12 of LEADERSHIP_CLAUDE (Vial, 8 October 2026): Claude injects
+    # directly; organisation/SCELLES.json records the injected digests and,
+    # once sealed, reserves sealed sources to claude/* branches.
+    try:
+        from sceller import REGISTRY as CLAUDE_REGISTRY, guard as claude_guard
+    except ModuleNotFoundError:
+        from tools.sceller import REGISTRY as CLAUDE_REGISTRY, guard as claude_guard
+    def registry(tree):
+        raw = tree.read(CLAUDE_REGISTRY, required=False)
+        return json.loads(raw.decode("utf-8")) if raw else None
+    try:
+        for path, digest in claude_guard(registry(before), registry(after), changed_medical, after.read).items():
+            if path not in locked:
+                authorized.setdefault(path, digest)
+    except ValueError as error:
+        raise FragmentError(str(error)) from error
     for path in changed_medical:
         data = after.read(path, required=False)
         if data is None or authorized.get(path) != hashlib.sha256(data).hexdigest():
