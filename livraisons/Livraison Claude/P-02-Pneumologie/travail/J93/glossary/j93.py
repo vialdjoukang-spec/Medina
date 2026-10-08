@@ -1,0 +1,20 @@
+from cardio_1 import a, G
+# Abréviations propres au cours J93 — Pneumothorax (P-02-Pneumologie). Aucune clé déjà présente dans glossary/ au 08.10.2026.
+a('BTS', [('B', 'British'), ('T', 'Thoracic'), ('S', 'Society')], 'British Thoracic Society (Société britannique de pneumologie)', '<p>Société savante britannique de pneumologie. Sa recommandation de 2023 sur les maladies pleurales (Roberts et al., Thorax) fonde la prise en charge du pneumothorax spontané sur les symptômes, les caractéristiques à haut risque et la sécurité du geste.</p>')
+a('ACCP', [('A', 'American'), ('C', 'College of'), ('C', 'Chest'), ('P', 'Physicians')], 'American College of Chest Physicians (Collège américain des médecins du thorax)', '<p>Société savante américaine de pneumologie. Son consensus de 2001 mesurait la taille d’un pneumothorax entre l’apex pulmonaire et la coupole thoracique, avec un seuil de 3 cm.</p>')
+a('ATLS', [('A', 'Advanced'), ('T', 'Trauma'), ('L', 'Life'), ('S', 'Support')], 'Advanced Trauma Life Support (réanimation avancée du traumatisé)', '<p>Programme de formation du Collège américain des chirurgiens pour la prise en charge initiale du traumatisé. Sa dixième édition situe l’exsufflation d’un pneumothorax sous tension de l’adulte au quatrième ou cinquième espace intercostal, en avant de la ligne axillaire moyenne.</p>')
+a('GRADE', [('G', 'Grading of'), ('R', 'Recommendations'), ('A', 'Assessment,'), ('D', 'Development and'), ('E', 'Evaluation')], 'Méthode de cotation des recommandations et du niveau de preuve', '<p>Méthode internationale qui évalue la qualité des preuves (élevée, modérée, faible, très faible) et la force des recommandations (forte ou conditionnelle). La BTS 2023 l’applique au pneumothorax.</p>')
+a('FLCN', [('FLCN', 'FoLliCuliN (folliculine)')], 'Gène de la folliculine', '<p>Gène suppresseur de tumeur du chromosome 17 ; ses variants causent le syndrome de Birt‑Hogg‑Dubé, qui associe kystes pulmonaires basaux, pneumothorax récidivants, fibrofolliculomes et tumeurs rénales.</p>')
+a('TSC1', [('T', 'Tuberous'), ('S', 'Sclerosis'), ('C', 'Complex'), ('1', 'gène 1')], 'Gène 1 du complexe de la sclérose tubéreuse (hamartine)', '<p>Gène codant l’hamartine, régulateur négatif de la voie mTOR. Ses variants causent la sclérose tubéreuse, qui peut se compliquer de lymphangioléiomyomatose et de pneumothorax.</p>')
+a('TSC2', [('T', 'Tuberous'), ('S', 'Sclerosis'), ('C', 'Complex'), ('2', 'gène 2')], 'Gène 2 du complexe de la sclérose tubéreuse (tubérine)', '<p>Gène codant la tubérine, partenaire de l’hamartine dans l’inhibition de la voie mTOR. Ses variants causent la sclérose tubéreuse et sont retrouvés dans la lymphangioléiomyomatose.</p>')
+a('CFTR', [('C', 'Cystic'), ('F', 'Fibrosis'), ('T', 'Transmembrane conductance'), ('R', 'Regulator')], 'Régulateur de la conductance transmembranaire de la mucoviscidose', '<p>Canal chlorure épithélial dont les variants biallèliques causent la mucoviscidose. Le défaut de transport hydro-électrolytique déshydrate le mucus bronchique ; la maladie avancée se complique de pneumothorax.</p>')
+for code, title, d in [
+    ('J93.0', 'Pneumothorax spontané avec pression positive', 'Pneumothorax spontané sous tension, développé dans le cours J93 — Pneumothorax.'),
+    ('J93.1', 'Autres pneumothorax spontanés', 'Pneumothorax spontané primaire ou secondaire sans tension, développé dans le cours J93 — Pneumothorax.'),
+    ('J93.8', 'Autres pneumothorax', 'Formes particulières non classées ailleurs, traitées dans le cours J93 — Pneumothorax.'),
+    ('J93.9', 'Pneumothorax, sans précision', 'Mécanisme non documenté ; à préciser dès que possible.'),
+    ('J95.80', 'Pneumothorax iatrogène', 'Exclu de J93 ; principes traités par renvoi dans le cours J93 — Pneumothorax.'),
+    ('S27.0', 'Pneumothorax traumatique', 'Exclu de J93 ; relève de la traumatologie thoracique.'),
+    ('P25.1', 'Pneumothorax survenant pendant la période périnatale', 'Exclu de J93 ; relève de la néonatologie.'),
+]:
+    a(code, [(code, 'code CIM-10-GM 2024')], title, '<p>' + d + '</p>')
