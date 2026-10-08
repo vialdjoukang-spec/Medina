@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "cdd2b72cd7f21dc39c60d354a9ace725bccc9142",
+  "previous_received_head": "be58ad98333701178a9efd5bf44eb7793146e605",
+  "main_sha_at_reception": "2753efa0a303e68123241aef5b2196113c331003",
+  "received_at": "2026-10-08T00:24:49Z",
+  "origin": "Claude confirmé par branche, signature du commit et addendum CORRECTIONS_AUDIT_CODEX.json",
+  "status": "reçu et archivé ; non injecté : source primaire citée absente du dépôt et contrôle natif antérieur périmé par la modification de I83_pop4",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_CDD2B72_I83_DOCUMENTATION",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "bdbaad5b6d83e14be4fc5afbfb139c65ce26616a",
+    "objects": 2
+  },
+  "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "change": {
+    "file": "chapters/I83/I83_pop4.html",
+    "purpose": "préciser version, autorisation et rubrique de l’information Aethoxysklerol pour les durées de compression",
+    "git_blob_sha": "7f378927119131646267c747ef92c520a1e5369d",
+    "sha256": "5df32abbd7a9c60ab3ae4769e32fba5c9fbd46de9acb41e241899514d6f237a7"
+  },
+  "medical_review": {
+    "prior_reserve": "la divergence documentaire est clarifiée dans le texte par une source précisément identifiée",
+    "remaining_reserve": "le fichier fi_aethoxysklerol.txt cité dans l’addendum est absent de la branche ; la citation primaire n’est donc pas reproductible depuis la livraison et n’est pas déclarée vérifiée indépendamment",
+    "exhaustive_certification": false
+  },
+  "technical_review": {
+    "previous_control_file": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_results_v2.json",
+    "previous_control_pop4_sha256": "33b0312bde60f1cfaa868120ba2743cdd0cb2c9c41c6e7afb9e8ec3eabb473d5",
+    "current_pop4_sha256": "5df32abbd7a9c60ab3ae4769e32fba5c9fbd46de9acb41e241899514d6f237a7",
+    "inputs_match": false,
+    "new_control_present": false,
+    "decision": "aucune injection avant source primaire livrée ou vérifiable et nouveaux contrôles sur l’empreinte courante"
+  },
+  "checks_executed": [
+    "PR, tête Claude et tête main relues",
+    "delta be58ad9..cdd2b72 inventorié : deux fichiers",
+    "arbre récursif de la tête non tronqué",
+    "deux blobs archivés sans modification",
+    "CORRECTIONS_AUDIT_CODEX.json analysé",
+    "empreinte SHA-256 du nouveau I83_pop4 comparée au journal natif v2",
+    "recherche du fichier primaire cité dans l’arbre complet : absent"
+  ],
+  "checks_not_executed": [
+    "validation primaire indépendante de la citation Aethoxysklerol",
+    "reconstruction",
+    "tests unitaires",
+    "navigateur ordinateur/mobile",
+    "injection",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "chapters/I83/I83_pop4.html",
+      "git_blob_sha": "7f378927119131646267c747ef92c520a1e5369d",
+      "bytes": 25044,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_CDD2B72_I83_DOCUMENTATION/chapters/I83/I83_pop4.html"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/CORRECTIONS_AUDIT_CODEX.json",
+      "git_blob_sha": "6eab438b8f13050bef77fed3b2f57cbd1643fcf5",
+      "bytes": 24874,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_CDD2B72_I83_DOCUMENTATION/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/CORRECTIONS_AUDIT_CODEX.json"
+    }
+  ]
+}

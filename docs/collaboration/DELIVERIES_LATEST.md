@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête cdd2b72 : précision I83 Aethoxysklerol
+
+État : **reçu et archivé ; non injecté**. La version suisse est mieux identifiée, mais la source primaire citée n’est pas livrée et le contrôle natif v2 ne correspond plus à l’empreinte courante de `I83_pop4.html`. [Rapport](reviews/2026-10-08/PR12_CDD2B72_I83_COMPRESSION/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête be58ad9 : corrections I83 et réconciliation ESC
 
 État : **reçu et archivé ; non injecté**. I83-MED-01/02 sont corrigées ; la durée de compression Aethoxysklerol reste à réconcilier. Les lots ESC correspondent désormais à main (26 propositions, 18 remplacements, 8 ajouts), mais les tests sont annoncés en cours, les huit rapports manquent et les contrôles n’ont pas été réexécutés. [Rapport](reviews/2026-10-08/PR12_BE58AD9_I83_ESC_CONTROLS/RECEPTION.md).

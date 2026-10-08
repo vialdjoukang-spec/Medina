@@ -1,3 +1,7 @@
+## I83 — précision documentaire Aethoxysklerol, tête cdd2b72, 8 octobre 2026
+
+Le changement de `I83_pop4.html` précise la version suisse invoquée pour les durées de compression. Il est reçu et archivé, mais non injecté : le fichier primaire cité est absent de la branche et le contrôle natif v2 porte sur l’ancienne empreinte du fichier. [Rapport de réception](reviews/2026-10-08/PR12_CDD2B72_I83_COMPRESSION/RECEPTION.md).
+
 ## Corrections I83 et réconciliation ESC 2026 — tête be58ad9, 8 octobre 2026
 
 Les corrections de **I83 — Varices des membres inférieurs (C-01-Cardiologie)** sont reçues et archivées. I83-MED-01 et I83-MED-02 sont levées au contrôle ciblé ; une divergence de durée de compression après Aethoxysklerol bloque encore l’injection. Le contrôle Claude déclare 1 923 vérifications et zéro échec, sans réexécution indépendante.
