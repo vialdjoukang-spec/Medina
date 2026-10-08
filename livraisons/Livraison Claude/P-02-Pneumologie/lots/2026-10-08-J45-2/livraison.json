@@ -1,0 +1,103 @@
+{
+ "schema_version": 1,
+ "kind": "claude_contribution",
+ "author": "Claude",
+ "status": "J45 — Asthme (P-02-Pneumologie), version 2 : réserves de la réception Codex 88cba09 (information professionnelle suisse lue sur compendium.ch ; méthacholine et mannitol réduits à GINA 2026) ; remplace le lot 2026-10-08-J45",
+ "fragment": {
+  "id": "S02",
+  "label": "P-02-Pneumologie",
+  "specialty": "Pneumologie"
+ },
+ "source_commit": "28c0a58486d58ee1e5d4ef4515aa1080b9046e61",
+ "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+ "chapters": [
+  {
+   "code": "J45",
+   "title": "Asthme",
+   "covers": [
+    "J45",
+    "J46"
+   ],
+   "owner_fragment": "S02"
+  }
+ ],
+ "files": [
+  {
+   "target_path": "chapters/J45/J45_a.html",
+   "source_path": "sources/chapters/J45/J45_a.html",
+   "sha256": "909345840cc9b604eff4df0eb0141ed0e79797ed8c4a010e23282043c976840a",
+   "proposed_sha256": "03f9b6ffc5f2d5c00bfed692f2679193df3dc6fcb39683c5347bab4f168f1bbe"
+  },
+  {
+   "target_path": "chapters/J45/J45_b.html",
+   "source_path": "sources/chapters/J45/J45_b.html",
+   "sha256": "b0efed9fc1ecb7b9c52193198285a61e5d0ba0da58e6ec6c437cd441fac51108",
+   "proposed_sha256": "aee7c4620e8299c5b53aa4896b0d9df83ec233637d9d0f84d52f6aa5e4b8140b"
+  },
+  {
+   "target_path": "chapters/J45/J45_c.html",
+   "source_path": "sources/chapters/J45/J45_c.html",
+   "sha256": "95d9db05c47f750770a6db9e86e1606a746a7c2974c02936129235273c615825",
+   "proposed_sha256": "2570c942d08c9efe474551f5a87e78281ff2274b3d707e8e7d33c0eff32f41c1"
+  },
+  {
+   "target_path": "chapters/J45/J45_d.html",
+   "source_path": "sources/chapters/J45/J45_d.html",
+   "sha256": "1e35d733240e944c587dffa025e720effcd4c0ca035a8d9898e6c0bd43f38e61",
+   "proposed_sha256": "b0bbc51bcc6802ed72e3d19dd060590bd64fbd2fb716aeb5747476a047492d26"
+  },
+  {
+   "target_path": "chapters/J45/J45_justifications.json",
+   "source_path": "sources/chapters/J45/J45_justifications.json",
+   "sha256": "00393fadff3be7a72c61835b94737fe12d03dca4d9b93fd307d71628fbeb7b0e",
+   "proposed_sha256": "7087dbb7f5d66012d3b60b01a38471fe404acc71c10c849fbe445b938e7b503e"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop1.html",
+   "source_path": "sources/chapters/J45/J45_pop1.html",
+   "sha256": "832a8fc0c329c814447b47344b06c9bfa873274a0c8fef4dd811617f70bd265f",
+   "proposed_sha256": "23e88118420cde634d184766789d2274667bbd9f885ae38a150edc39a8d802d0"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop2.html",
+   "source_path": "sources/chapters/J45/J45_pop2.html",
+   "sha256": "ac68031bd9d7ee6944a8e6b2bb2a56cec8d83388ec9de7d93ba738e4bf750508",
+   "proposed_sha256": "93819b038eca5228ffcabbf9825123bee251c742c922de3b9ca8a3c459986fce"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop3.html",
+   "source_path": "sources/chapters/J45/J45_pop3.html",
+   "sha256": "55ee1d61556b4ca1729aeb47c4a330eed763b612a908868873f82af0e9e6cbbc",
+   "proposed_sha256": "05c4677a22e9edf58c3d1a5aa60fa6f13cb5cf071555f181c46366dfdb961705"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop4.html",
+   "source_path": "sources/chapters/J45/J45_pop4.html",
+   "sha256": "abde85d51d9d18f8190f6b364e4d194bae7ea8d23ba8335cc67b6a790ea5540c",
+   "proposed_sha256": "23db26758a7a4789c81db54cf8d03649d49d1c3be8df7bb30658018ce5c3d2aa"
+  }
+ ],
+ "checks": [
+  {
+   "command": "verifier_sigles J45 ; test_v7.py --static J45 ; insert_justifications.py --course J45 ; build_front.py ; --all-fragments ; audit_fragments.py ; verify_course_native.cjs J45 ; unittest discover tests",
+   "base": "28c0a58486d58ee1e5d4ef4515aa1080b9046e61",
+   "result": "{} ; OK (38 410 mots, 47 fenêtres, 8 quiz, 8 Pareto) ; 15/15 cibles ; 22 fragments, build reproductible ; natif 2 340 contrôles, 0 échec ; 118 tests OK",
+   "build_fragment_s02_sha256": "41621b89283d80162102abea377a52553f4baebd0ab10ef1c6b657779f79869d"
+  }
+ ],
+ "limits": [
+  "Couverture CIM-11 non établie.",
+  "Normes ERS 2017 et ERS/ATS 2022 non relues en texte intégral : catégories de PD20, contre-indications de la méthacholine et critères complémentaires du mannitol retirés ; seuls les critères GINA 2026 restent.",
+  "Limitations de remboursement (liste des spécialités de l'OFSP) non relues ; mention « LS (LIM) » de compendium.ch citée.",
+  "Reslizumab : mention « hc 03/26 » sur compendium.ch, commercialisation non confirmée."
+ ],
+ "delivery": {
+  "lot": "J45-2",
+  "date": "2026-10-08",
+  "branch": "claude/loving-shannon-spwrhc",
+  "start_commit": "28c0a58486d58ee1e5d4ef4515aa1080b9046e61",
+  "report": "rapport.md",
+  "base": "main",
+  "remplace": "lots/2026-10-08-J45 (reçu par Codex en 88cba09, non intégré)"
+ }
+}
