@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_J45_C3DD8CD_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": {
+    "number": 12,
+    "state": "open",
+    "draft": false,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/12"
+  },
+  "provenance": {
+    "producer": "Claude",
+    "branch": "claude/loving-shannon-spwrhc",
+    "delivery_head_sha": "c3dd8cd0791fef551089bf6240f2adf45f0586fe",
+    "declared_baseline_sha": "28c0a58486d58ee1e5d4ef4515aa1080b9046e61",
+    "main_reconciled_sha": "883869c780f8dff0704014e7125c9dca23710542",
+    "evidence": [
+      "branch",
+      "SIGNAUX_CLAUDE.json",
+      "livraison.json",
+      "rapport.md",
+      "corrections_codex_1.md",
+      "corrections_codex_1b.md"
+    ]
+  },
+  "scope": {
+    "campaign": "21 remaining fragments (11 Claude / 10 Codex)",
+    "historical_campaign": "30 courses (15 Claude / 15 Codex), distinct",
+    "cardiology_backlog": "20 courses (10 Claude / 10 Codex), distinct",
+    "fragment": "P-02-Pneumologie",
+    "fragment_id": "S02",
+    "chapter": "J45 — Asthme",
+    "covers": [
+      "J45",
+      "J46"
+    ],
+    "lot": "2026-10-08-J45-2",
+    "replaces": {
+      "lot": "2026-10-08-J45",
+      "head": "f30b891602d8bf783058b8811b1530288f9508b5",
+      "received_commit": "88cba09a6520545835b47ba8cce5b18e0b0f0f84",
+      "integrated": false
+    },
+    "assignments_changed": false,
+    "active_chapters_changed": false
+  },
+  "archive": {
+    "root": "livraisons/Livraison Claude/P-02-Pneumologie/archives/2026-10-08_PR12_C3DD8CD_J45_2",
+    "original_count": 15,
+    "originals_plus_provenance_git_tree_sha1": "01e4466223e5ac6bcd8e19f52d0de679d1d9efcc",
+    "provenance_blob_sha1": "c70b6fa3d145483b2511f41b3a57c1ef22c62f00"
+  },
+  "content_comparison": {
+    "changed_from_previous": [
+      "J45_b.html",
+      "J45_c.html",
+      "J45_d.html",
+      "J45_pop1.html",
+      "J45_pop2.html",
+      "J45_pop3.html",
+      "J45_pop4.html"
+    ],
+    "identical_to_previous": [
+      "J45_a.html",
+      "J45_justifications.json"
+    ]
+  },
+  "verification": {
+    "proposal_sha256": "9/9 exact",
+    "replacement_baselines": "9/9 exact on declared baseline and main_reconciled_sha",
+    "canonical_targets": "9/9 present under chapters/J45",
+    "static_html": {
+      "html_files": 8,
+      "ids": 47,
+      "unique_trigger_keys": 47,
+      "templates": 47,
+      "duplicate_ids": 0,
+      "duplicate_templates": 0,
+      "missing_targets": 0,
+      "orphan_templates": 0,
+      "embedded_scripts": 0
+    },
+    "justifications": {
+      "valid_json": true,
+      "entries": 15,
+      "unique_ids": 15,
+      "targets_resolved": "15/15",
+      "source_urls_https": 19
+    }
+  },
+  "medical_review": {
+    "scope": "targeted delta review; not exhaustive certification",
+    "substantially_resolved": [
+      "J45-MED-01: targeted Swiss professional information checked for Symbicort, Foster, Atrovent and Spiriva; Trimbow indexed data concordant"
+    ],
+    "blocking": [
+      "J45-MED-02: categorical claims about indirect challenge specificity/inflammation/confirmation and mannitol predicting corticosteroid response still require Hallstrand 2018 full-text review or attenuation",
+      "J45-MED-03: exhaustive review of 38410 words, 47 windows, 8 quizzes, 8 Pareto and all primary studies not completed"
+    ],
+    "remaining_nonblocking": [
+      "OFSP limitation criteria not read in detail",
+      "reslizumab current commercialisation not confirmed",
+      "CIM-11 completeness not established"
+    ]
+  },
+  "controls": {
+    "producer_claims": [
+      "acronym check passed",
+      "static course check: 38410 words, 47 windows, 8 quizzes, 8 Pareto",
+      "15/15 justification targets",
+      "22-fragment build reproducible",
+      "2340 native checks passed at 1360 and 390 px",
+      "118 unit tests passed"
+    ],
+    "independently_executed": [
+      "paginated remote branch and PR inventory",
+      "one-commit content inventory",
+      "9 proposal SHA-256 checks",
+      "9 current baseline SHA-256 checks",
+      "static HTML identifier/window/reference audit",
+      "justifications JSON parse and target resolution",
+      "targeted medical delta review against Swiss professional information and GINA 2026"
+    ],
+    "not_executed": [
+      "tools/livraison.py locally",
+      "canonical injection",
+      "local unit tests",
+      "local builds",
+      "interactive browser desktop",
+      "interactive browser mobile",
+      "site deployment"
+    ]
+  },
+  "status": {
+    "spotted": true,
+    "received": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "reception documentation only"
+  }
+}

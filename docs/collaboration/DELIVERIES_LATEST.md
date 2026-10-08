@@ -2443,3 +2443,11 @@ Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégrat
 - Les rapports et les tests déclarés ne constituent pas une vérification médicale indépendante.
 - Le routage est contrôlé contre les sources locales de la cible, avant les changements proposés.
 - Aucune branche n'est fusionnée, aucun reçu créé et aucun commit publié par ce scanner.
+
+
+## 8 octobre 2026 — PR #12, J45-2, tête c3dd8cd
+
+- Livraison Claude repérée et reçue : `2026-10-08-J45-2`, **J45 — Asthme (P-02-Pneumologie)**.
+- Archive immuable : `livraisons/Livraison Claude/P-02-Pneumologie/archives/2026-10-08_PR12_C3DD8CD_J45_2/` ; 15 originaux.
+- Empreintes : 9/9 propositions et 9/9 baselines exactes ; sept fichiers réellement modifiés, deux identiques à J45 v1.
+- État : non intégré. J45-MED-02 et J45-MED-03 restent bloquantes ; contrôles producteurs non reproduits dans cet espace.
