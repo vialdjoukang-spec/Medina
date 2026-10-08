@@ -1,0 +1,113 @@
+{
+  "canonical_source_sha": "6d5797c6a902e430cd9d3e9dd5159ec507a1476a",
+  "checks": [
+    {
+      "label": "unit",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/Medina",
+      "environment_overrides": {},
+      "started_at": "2026-10-08T09:51:54.738895+00:00",
+      "completed_at": "2026-10-08T09:52:06.351927+00:00",
+      "exit_code": 0,
+      "log": "/workspace/medina-env/reprise-i83/canonical-controls/unit.log"
+    },
+    {
+      "label": "static",
+      "command": [
+        "python3",
+        "test_v7.py",
+        "--static",
+        "I83"
+      ],
+      "cwd": "/workspace/Medina",
+      "environment_overrides": {
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/canonical-global"
+      },
+      "started_at": "2026-10-08T09:51:54.739374+00:00",
+      "completed_at": "2026-10-08T09:51:55.632759+00:00",
+      "exit_code": 0,
+      "log": "/workspace/medina-env/reprise-i83/canonical-controls/static.log"
+    },
+    {
+      "label": "global-browser",
+      "command": [
+        "python3",
+        "/workspace/medina-env/reprise-i83/controls-20c67c0/global-http.py"
+      ],
+      "cwd": "/workspace/Medina",
+      "environment_overrides": {
+        "MEDINA_OUT": "/workspace/medina-env/reprise-i83/canonical-global",
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/canonical-global"
+      },
+      "started_at": "2026-10-08T09:51:54.739703+00:00",
+      "completed_at": "2026-10-08T09:52:23.649471+00:00",
+      "exit_code": 0,
+      "log": "/workspace/medina-env/reprise-i83/canonical-controls/global-browser.log"
+    },
+    {
+      "label": "native",
+      "command": [
+        "node",
+        "-r",
+        "/workspace/medina-env/reprise-i83/controls-20c67c0/http-preload.cjs",
+        "tests/verify_course_native.cjs"
+      ],
+      "cwd": "/workspace/Medina",
+      "environment_overrides": {
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/canonical-s01",
+        "MEDINA_FRAGMENTS": "/workspace/medina-env/reprise-i83/canonical-s01/fragments",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/canonical-controls/native",
+        "MEDINA_NATIVE_CODE": "I83"
+      },
+      "started_at": "2026-10-08T09:51:54.740132+00:00",
+      "completed_at": "2026-10-08T09:52:53.129617+00:00",
+      "exit_code": 0,
+      "log": "/workspace/medina-env/reprise-i83/canonical-controls/native.log"
+    },
+    {
+      "label": "s01",
+      "command": [
+        "node",
+        "-r",
+        "/workspace/medina-env/reprise-i83/controls-20c67c0/http-preload.cjs",
+        "tests/verify_s01_browser.cjs"
+      ],
+      "cwd": "/workspace/Medina",
+      "environment_overrides": {
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/canonical-s01",
+        "MEDINA_S01_FILE": "/workspace/medina-env/reprise-i83/canonical-s01/fragments/MEDINA_S01_cardiovasculaire.html",
+        "MEDINA_QA_OUT": "/workspace/medina-env/reprise-i83/canonical-controls/s01"
+      },
+      "started_at": "2026-10-08T09:51:54.740381+00:00",
+      "completed_at": "2026-10-08T09:52:17.480760+00:00",
+      "exit_code": 0,
+      "log": "/workspace/medina-env/reprise-i83/canonical-controls/s01.log"
+    },
+    {
+      "label": "routes",
+      "command": [
+        "node",
+        "-r",
+        "/workspace/medina-env/reprise-i83/controls-20c67c0/http-preload.cjs",
+        "/workspace/medina-env/reprise-i83/controls-20c67c0/routes-i83-i87.cjs"
+      ],
+      "cwd": "/workspace/Medina",
+      "environment_overrides": {
+        "I83_CONTROL_OUT": "/workspace/medina-env/reprise-i83/canonical-s01"
+      },
+      "started_at": "2026-10-08T09:51:54.740726+00:00",
+      "completed_at": "2026-10-08T09:52:03.971362+00:00",
+      "exit_code": 0,
+      "log": "/workspace/medina-env/reprise-i83/canonical-controls/routes.log"
+    }
+  ]
+}

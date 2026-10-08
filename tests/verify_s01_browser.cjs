@@ -33,7 +33,7 @@ const check = (name, condition, detail) => {assert.ok(condition, name + (detail 
     await page.goto(base);await ready();
     const data = await page.evaluate(() => ({specialties:DATA.specialties.map(s=>s.id),codes:DATA.fragment.courses.map(c=>c.code),blocks:window.MEDINA_CATEGORY_ORGANISATION.blocks.map(b=>b.code),integrated:window.MEDINA_CATEGORY_ORGANISATION.integrated_count}));
     check('Une seule spécialité : cardiologie',JSON.stringify(data.specialties)==='["cardiologie"]');
-    check('Accueil : 20 cours uniques disponibles',data.integrated===20 && new Set(data.codes).size===20);
+    check('Accueil : 21 cours uniques disponibles',data.integrated===21 && new Set(data.codes).size===21);
     check('Accueil : tous les vrais blocs CIM',await page.locator('[data-mcg-category]').count()===data.blocks.length && data.blocks.length===11);
     check('Navigation sans catalogue global',!await page.locator('.nav-main a[href="#/intelligence"],.nav-main a[href="#/federal"]').count());
     check('Accueil lisible sans filtre de flou',await page.locator('.mcg-home').evaluate(e=>getComputedStyle(e).filter)==='none');
