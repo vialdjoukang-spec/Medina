@@ -1,33 +1,129 @@
-/* Real CIM categories in each original fragment; course and popup engines remain local. */
+/* One independent learning space per specialty. Medical course engines stay local. */
 (() => {
  'use strict';
- const element=document.getElementById('medina-category-organisation-data');if(!element)return;
- const O=JSON.parse(element.textContent),F=O.fragment,blocks=new Map(O.blocks.map(block=>[block.code,block])),aliases=new Map();
- O.blocks.forEach(block=>block.lessons.forEach(lesson=>{lesson.variants.forEach(variant=>aliases.set(variant.code,{block,lesson,variant}));if(!aliases.has(lesson.code))aliases.set(lesson.code,{block,lesson,variant:lesson.variants[0]})}));
- const pad=value=>String(value).padStart(2,'0'),name=lesson=>lesson.code+' — '+lesson.title;
- const categoryUrl=block=>'#/home?category='+encodeURIComponent(block.code),tint=block=>`hsl(${Math.round((block.order*137.508+187)%360)} 82% 73%)`,style=block=>'--mcg-colour:'+tint(block);
- const status=lesson=>(lesson.reference?'Renvoi au cours unique · ':'')+(lesson.integrated?'Cours disponible':'Cours à produire');
- const lessonUrl=(block,lesson)=>lesson.integrated?lesson.url:categoryUrl(block)+'&lesson='+encodeURIComponent(lesson.code);
- const rule=()=>'<details class="mcg-rule"><summary>Comprendre les mécanismes</summary><p>Chaque explication relie le mécanisme physiopathologique, ses manifestations et la décision clinique. Les termes soulignés ouvrent les développements disponibles dans le cours.</p></details>';
- const categoryCard=block=>`<a class="mcg-category-card" href="${h(categoryUrl(block))}" style="${style(block)}" data-mcg-category="${h(block.code)}" aria-label="Catégorie ${pad(block.order)} : ${h(block.title)} — ${h(block.code)}"><span class="mcg-code">${h(block.code)}</span><span class="mcg-category-number">Catégorie ${pad(block.order)}</span><h2>${h(block.title)}</h2><span class="mcg-category-foot">${block.lessons.length} chapitre${block.lessons.length>1?'s':''}<span aria-hidden="true">→</span></span></a>`;
- function variants(lesson){const listed=lesson.searchVariants||lesson.variants;if(listed.length===1&&listed[0].code===lesson.code&&listed[0].title===lesson.title)return '';return `<details class="mcg-variants"><summary>${listed.length>1?'Aspects réunis dans ce cours':'Catégorie CIM rattachée au cours'}</summary><ul>${listed.map(variant=>`<li data-mcg-variant="${h(variant.code)}"><b>${h(variant.code)}</b> — ${h(variant.title)}</li>`).join('')}</ul></details>`}
- const lessonCard=(block,lesson)=>`<article class="mcg-lesson" style="${style(block)}" data-mcg-lesson="${h(lesson.code)}" data-mcg-reference="${String(lesson.reference)}"><a class="mcg-lesson-main" href="${h(lessonUrl(block,lesson))}" aria-label="${lesson.order}. ${h(name(lesson))} · ${status(lesson)}"><span class="mcg-code">${h(lesson.code)}</span><span class="mcg-lesson-rank" aria-hidden="true">${lesson.order}.</span><span class="mcg-lesson-title">${h(lesson.title)}</span><span class="mcg-lesson-state ${lesson.integrated?'is-available':'is-planned'}">${status(lesson)}${lesson.source_fragment_id!==F.id?' · '+h(lesson.source_fragment_label):''}</span></a>${variants(lesson)}</article>`;
- function blockSection(block){return `<section class="mcg-block" data-mcg-block="${h(block.code)}"><header class="mcg-block-heading" style="${style(block)}"><span class="mcg-code">${h(block.code)}</span><span class="mcg-category-number">Catégorie ${pad(block.order)}</span><h2>${h(block.title)}</h2></header><div class="mcg-lessons">${block.lessons.map(lesson=>lessonCard(block,lesson)).join('')}</div></section>`}
- function cover(){return `<header class="mcg-cover"><div><small>MEDINA · ${h(O.version)}</small><h1>${h(F.label)}</h1></div><div class="mcg-counts"><span><b>${O.blocks.length}</b>catégories</span><span><b>${O.integrated_count}</b>cours disponibles</span></div></header>`}
- function trail(block,lesson){return `<nav class="mcg-breadcrumbs" aria-label="Fil d’Ariane"><a href="#/home">${h(F.label)}</a>${block?`<span aria-hidden="true">›</span><a href="${h(categoryUrl(block))}">Catégorie ${pad(block.order)} · ${h(block.title)}</a>`:''}${lesson?`<span aria-hidden="true">›</span><span>${h(name(lesson))}</span>`:''}</nav>`}
- function planned(block,lesson){return `<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-code">${h(lesson.code)}</span><small>Chapitre ${lesson.order} · ${status(lesson)}</small><h2 id="mcg-planned-title" tabindex="-1">${h(lesson.title)}</h2><p>${lesson.integrated?'Le cours se trouve dans '+h(lesson.source_fragment_label)+'.':'Les catégories ci-dessous sont regroupées dans un seul chapitre. Son contenu clinique reste à rédiger.'}</p>${lesson.integrated?`<p><a class="mcg-link" href="${h(lesson.url)}">Ouvrir ${h(name(lesson))} →</a></p>`:''}<ul>${(lesson.covers||lesson.variants).map(variant=>`<li><strong>${h(variant.code)} — ${h(variant.title)}</strong>${variant.subcodes.length?`<details><summary>Sous-catégories CIM disponibles</summary><ul>${variant.subcodes.map(subcode=>`<li>${h(subcode.code)} — ${h(subcode.title)}</li>`).join('')}</ul></details>`:''}</li>`).join('')}</ul></section>`}
- readRoute=function(){const raw=location.hash.slice(2)||'home',[head,query='']=raw.split('?'),parts=head.split('/').map(value=>decodeURIComponent(value));const result={type:parts[0]||'home',id:parts[1]||'',extra:parts[2]||'',q:new URLSearchParams(query)};if(result.type==='category'){result.q.set('category',result.id);result.type='home';result.id=''}if(result.type==='pathology')result.type='entry';if(result.type==='entry'){result.id=result.id.toUpperCase();const item=aliases.get(result.id);if(!item)return{type:'home',id:'',q:new URLSearchParams()};if(item.lesson.integrated&&item.lesson.source_fragment_id===F.id)result.id=item.lesson.code;result.q.delete('specialty');result.q.delete('view')}if(result.type==='specialty'){result.type='home';result.id=''}if(result.type==='clinical-skills'&&F.id!=='S01')result.type='home';if(!['home','entry','search','notebook','method','clinical-skills'].includes(result.type))return{type:'home',id:'',q:new URLSearchParams()};return result};
- homePage=function(){const block=blocks.get(route.q.get('category')),selected=block?.lessons.find(lesson=>lesson.code===route.q.get('lesson'));pageTitle(block?'Catégorie '+pad(block.order)+' · '+block.title+' · '+F.label:F.label);if(!O.blocks.length)return `<div class="mcg-home">${cover()}<section class="mcg-empty"><h2>Aucune catégorie CIM rattachée</h2><p>Ce fragment transversal ne possède pas encore de catalogue de chapitres défini.</p><a class="mcg-link" href="${h(O.organisation_url)}">Voir l’organisation de MEDINA →</a></section></div>`;if(block)return `<div class="mcg-home">${trail(block,selected)}${cover()}<div class="mcg-page-actions"><a href="#/home">← Toutes les catégories</a><span>Les numéros indiquent l’ordre des chapitres dans cette catégorie.</span></div>${selected?planned(block,selected):''}${blockSection(block)}${rule()}</div>`;return `<div class="mcg-home">${cover()}${F.id==='S01'?'<div class="s01-cs-gateway"><div><b>Sémiologie CS · Examen cardiovasculaire</b><br>Gestes, signes et mécanismes.</div><a href="#/clinical-skills">Ouvrir le parcours clinique →</a></div>':''}<div class="mcg-page-actions"><h2>Catégories et chapitres</h2><span>Choisissez une catégorie.</span></div><div class="mcg-category-grid">${O.blocks.map(categoryCard).join('')}</div>${rule()}</div>`};
- specialtyPage=homePage;
- searchPageView=function(){const query=route.q.get('q')||'',needle=norm(query),uniqueMatches=new Map();O.blocks.forEach(block=>block.lessons.forEach(lesson=>{const text=[block.code,block.title,lesson.code,lesson.title,...lesson.variants.flatMap(variant=>[variant.code,variant.title,...variant.subcodes.flatMap(subcode=>[subcode.code,subcode.title])])].join(' ');if(!needle||norm(text).includes(needle)){const key=lesson.source_fragment_id+'/'+lesson.code,previous=uniqueMatches.get(key),merged=new Map((previous?.lesson.searchVariants||[]).map(variant=>[variant.code,variant]));lesson.variants.forEach(variant=>merged.set(variant.code,variant));const preferred=!previous||previous.lesson.reference&&!lesson.reference?{block,lesson}:previous;uniqueMatches.set(key,{block:preferred.block,lesson:{...preferred.lesson,searchVariants:[...merged.values()].sort((a,b)=>a.code.localeCompare(b.code))}})}}));const matches=[...uniqueMatches.values()];pageTitle('Recherche · '+F.label);return `<div class="mcg-home">${trail()}${cover()}<div class="mcg-page-actions"><h2>${query?'« '+h(query)+' »':'Tous les chapitres'}</h2><span>${matches.length} résultat${matches.length>1?'s':''}</span></div><div class="mcg-lessons">${matches.map(item=>lessonCard(item.block,item.lesson)).join('')||'<p class="mcg-empty">Aucun chapitre ne correspond à cette recherche.</p>'}</div></div>`};
- const originalEntry=entryPage;entryPage=function(){const item=aliases.get(route.id);if(item&&(!item.lesson.integrated||item.lesson.source_fragment_id!==F.id)){pageTitle(name(item.lesson)+' · '+F.label);return `<div class="mcg-home">${trail(item.block,item.lesson)}${planned(item.block,item.lesson)}<a class="mcg-link" href="${h(categoryUrl(item.block))}">← Tous les chapitres de cette catégorie</a></div>`}return originalEntry()};
- crumbs=function(){const item=aliases.get(route?.id)||aliases.get(typeof MC_code==='function'?MC_code(route?.id):route?.id);return item?trail(item.block,item.lesson):trail()};
- nextPrevious=function(entry){const item=aliases.get(entry.code),available=item?.block.lessons.filter(lesson=>lesson.integrated)||[],index=available.findIndex(lesson=>lesson.code===item?.lesson.code),previous=available[index-1],next=available[index+1];return `<nav class="bottomnav mcg-bottomnav" aria-label="Navigation entre les chapitres">${previous?`<a class="btn" href="${h(previous.url)}">← ${h(name(previous))}</a>`:'<span></span>'}<a class="btn tiny" href="${h(item?categoryUrl(item.block):'#/home')}">Tous les chapitres</a>${next?`<a class="btn" href="${h(next.url)}">${h(name(next))} →</a>`:'<span></span>'}</nav>`};
- footer=function(){return `<footer class="mcg-footer">MEDINA · ${h(F.label)} · ${h(O.version)}<br><a href="${h(O.organisation_url)}">Organisation de tous les fragments</a></footer>`};
- drawSidebar=function(){const active=aliases.get(route?.id),category=route?.q.get('category')||active?.block.code;document.getElementById('spec-nav').innerHTML=O.blocks.map(block=>`<details class="mcg-sidebar-block" style="${style(block)}" ${category===block.code?'open':''} data-mcg-sidebar-category="${h(block.code)}"><summary><span>Catégorie ${pad(block.order)}</span><b>${h(block.title)}</b><small>${h(block.code)}</small></summary><a class="mcg-sidebar-all" href="${h(categoryUrl(block))}">Voir les ${block.lessons.length} chapitres →</a>${block.lessons.map(lesson=>`<a class="mcg-sidebar-lesson ${active?.lesson.code===lesson.code?'active':''}" href="${h(lessonUrl(block,lesson))}" aria-label="${lesson.order}. ${h(name(lesson))}" data-fragment-chapter="${lesson.integrated?h(lesson.code):''}" data-mcg-sidebar-lesson="${h(lesson.code)}"><span class="mcg-sidebar-rank">${lesson.order}.</span><span>${h(lesson.title)}<small>${h(lesson.code)} · ${lesson.integrated?'Disponible':'À produire'}</small></span></a>`).join('')}</details>`).join('')||'<p class="mcg-sidebar-empty">Aucune catégorie CIM rattachée.</p>';document.querySelectorAll('.nav-main a').forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#/'+route?.type))};
- showCommandPalette=function(){openModal(F.label,`<div class="command-links"><a data-close-modal class="command-link" href="#/home">Toutes les catégories</a><a data-close-modal class="command-link" href="#/search">Rechercher un chapitre</a>${F.id==='S01'?'<a data-close-modal class="command-link" href="#/clinical-skills">Sémiologie CS · Examen cardiovasculaire</a>':''}</div><div class="mcg-category-grid">${O.blocks.map(block=>categoryCard(block).replace('<a ','<a data-close-modal ')).join('')}</div>`)};
- document.getElementById('command-btn').onclick=showCommandPalette;
- const previousBind=bindPage;bindPage=function(){previousBind();document.getElementById('mcg-planned-title')?.focus({preventScroll:true})};
- document.getElementById('medora-intelligence-link')?.remove();document.getElementById('medina-fragment-empty')?.remove();document.querySelector('.sidebar .sidebar-note')?.replaceChildren(document.createTextNode(O.category_count+' entrées CIM · '+O.integrated_count+' cours disponibles'));const navTitle=document.querySelector('.sidebar .nav-title');if(navTitle)navTitle.textContent='Catégories et chapitres';
- window.MEDINA_CATEGORY_ORGANISATION=O;render();
+ const element = document.getElementById('medina-category-organisation-data');
+ if (!element) return;
+ const O = JSON.parse(element.textContent), F = O.fragment;
+ const blocks = new Map(O.blocks.map(block => [block.code, block])), aliases = new Map();
+ const title = F.display_name || F.label.replace(/^[^-]+-\d+-/, '');
+ const accent = F.accent || '#317765';
+ document.documentElement.style.setProperty('--atlas-accent', accent);
+ document.documentElement.dataset.atlasSpecialty = F.id;
+ O.blocks.forEach(block => block.lessons.forEach(lesson => {
+  lesson.variants.forEach(variant => aliases.set(variant.code, {block, lesson, variant}));
+  if (!aliases.has(lesson.code)) aliases.set(lesson.code, {block, lesson, variant: lesson.variants[0]});
+ }));
+ const own = lesson => lesson.integrated && lesson.source_fragment_id === F.id;
+ const available = [...new Map(O.blocks.flatMap(block => block.lessons.filter(own).map(lesson => [lesson.code, {block, lesson}]))).values()];
+ const pad = value => String(value).padStart(2, '0');
+ const name = lesson => lesson.code + ' — ' + lesson.title;
+ const categoryUrl = block => '#/home?category=' + encodeURIComponent(block.code);
+ const status = lesson => own(lesson) ? (lesson.work_in_progress ? 'Lire la version de travail' : 'Lire le cours') : 'En préparation';
+ const lessonUrl = (block, lesson) => own(lesson) ? lesson.url : categoryUrl(block) + '&lesson=' + encodeURIComponent(lesson.code);
+ const arrow = '<span class="mcg-arrow" aria-hidden="true">↗</span>';
+ const book = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1m0-15c3-2 6-2 9-1v15c-3-1-6-1-9 1V5Z"/></svg>';
+ const rule = () => '<details class="mcg-rule"><summary>Un mot souligné ? Explorez son explication.</summary><p>Dans les cours, les mots interactifs ouvrent les mécanismes, les précisions et leurs sources. Les quatre onglets vous accompagnent du raisonnement à la prise en charge.</p></details>';
+ function categoryCard(block) {
+  const count = block.lessons.filter(own).length;
+  return '<a class="mcg-category-card" href="' + h(categoryUrl(block)) + '" data-mcg-category="' + h(block.code) + '" aria-label="Catégorie ' + pad(block.order) + ' : ' + h(block.title) + ' — ' + h(block.code) + '"><div class="mcg-category-top"><span class="mcg-category-number">' + pad(block.order) + '</span><span class="mcg-code">' + h(block.code) + '</span></div><h2>' + h(block.title) + '</h2><span class="mcg-category-foot"><span>' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + (count ? '<i class="mcg-available-dot"></i>' + count + ' disponible' + (count > 1 ? 's' : '') : '') + '</span>' + arrow + '</span></a>';
+ }
+ function variants(lesson) {
+  const listed = lesson.searchVariants || lesson.variants;
+  if (listed.length === 1 && listed[0].code === lesson.code && listed[0].title === lesson.title) return '';
+  return '<details class="mcg-variants"><summary>Voir les catégories regroupées</summary><ul>' + listed.map(variant => '<li data-mcg-variant="' + h(variant.code) + '"><b>' + h(variant.code) + '</b> — ' + h(variant.title) + '</li>').join('') + '</ul></details>';
+ }
+ function lessonCard(block, lesson, featured = false) {
+  return '<article class="mcg-lesson' + (featured ? ' mcg-featured-lesson' : '') + '" data-mcg-lesson="' + h(lesson.code) + '" data-mcg-reference="false"><a class="mcg-lesson-main" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + ' · ' + status(lesson) + '"><span class="mcg-lesson-icon">' + book + '</span><span class="mcg-course-copy"><span class="mcg-code">' + h(lesson.code) + '</span><span class="mcg-lesson-title">' + h(lesson.title) + '</span><span class="mcg-lesson-state ' + (own(lesson) ? 'is-available' : 'is-planned') + '">' + status(lesson) + ' <span aria-hidden="true">→</span></span></span></a>' + (!featured ? variants(lesson) : '') + '</article>';
+ }
+ function blockSection(block) {
+  return '<section class="mcg-block" data-mcg-block="' + h(block.code) + '"><header class="mcg-block-heading"><div><span class="mcg-eyebrow">Catégorie ' + pad(block.order) + ' · ' + h(block.code) + '</span><h2>' + h(block.title) + '</h2></div><span class="mcg-section-count">' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + '</span></header><div class="mcg-lessons">' + block.lessons.map(lesson => lessonCard(block, lesson)).join('') + '</div></section>';
+ }
+ function cover(compact = false) {
+  return '<header class="mcg-cover' + (compact ? ' is-compact' : '') + '"><div class="mcg-cover-copy"><span class="mcg-eyebrow"><span class="mcg-available-dot"></span>Votre espace d’étude</span><h1>' + h(title) + '<span class="mcg-title-dot">.</span></h1><p>' + h(F.description || 'Un espace pour apprendre, comprendre et approfondir. Retrouvez les cours de votre spécialité, organisés par catégories.') + '</p><div class="mcg-counts"><span><b>' + O.blocks.length + '</b> catégorie' + (O.blocks.length > 1 ? 's' : '') + '</span><span><b>' + available.length + '</b> cours disponible' + (available.length > 1 ? 's' : '') + '</span></div></div><div class="mcg-cover-art" aria-hidden="true"><div class="mcg-orbit mcg-orbit-one"></div><div class="mcg-orbit mcg-orbit-two"></div><div class="mcg-orbit mcg-orbit-three"></div><div class="mcg-orbit-core">' + book + '</div><span class="mcg-orbit-dot"></span><span class="mcg-orbit-label">Comprendre<br>en profondeur.</span></div></header>';
+ }
+ function trail(block, lesson) {
+  return '<nav class="mcg-breadcrumbs" aria-label="Fil d’Ariane"><a href="#/home">' + h(title) + '</a>' + (block ? '<span aria-hidden="true">/</span><a href="' + h(categoryUrl(block)) + '">' + h(block.title) + '</a>' : '') + (lesson ? '<span aria-hidden="true">/</span><span>' + h(name(lesson)) + '</span>' : '') + '</nav>';
+ }
+ function planned(block, lesson) {
+  return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation</span><h2 id="mcg-planned-title" tabindex="-1">' + h(lesson.title) + '</h2><p>Le contenu de ce chapitre est en cours de préparation. Vous pouvez déjà consulter les catégories qui lui sont rattachées.</p><ul>' + lesson.variants.map(variant => '<li><strong>' + h(variant.code) + ' — ' + h(variant.title) + '</strong>' + (variant.subcodes.length ? '<details><summary>Sous-catégories</summary><ul>' + variant.subcodes.map(subcode => '<li>' + h(subcode.code) + ' — ' + h(subcode.title) + '</li>').join('') + '</ul></details>' : '') + '</li>').join('') + '</ul></section>';
+ }
+ readRoute = function() {
+  const raw = location.hash.slice(2) || 'home', [head, query = ''] = raw.split('?'), parts = head.split('/').map(decodeURIComponent);
+  const result = {type:parts[0] || 'home', id:parts[1] || '', extra:parts[2] || '', q:new URLSearchParams(query)};
+  if (result.type === 'category') {result.q.set('category', result.id); result.type = 'home'; result.id = '';}
+  if (result.type === 'pathology') result.type = 'entry';
+  if (result.type === 'entry') {
+   result.id = result.id.toUpperCase(); const item = aliases.get(result.id);
+   if (!item) return {type:'home', id:'', q:new URLSearchParams()};
+   if (own(item.lesson)) result.id = item.lesson.code;
+   result.q.delete('specialty'); result.q.delete('view');
+  }
+  if (result.type === 'specialty') {result.type = 'home'; result.id = '';}
+  if (result.type === 'clinical-skills' && F.id !== 'S01') result.type = 'home';
+  if (!['home','entry','search','notebook','method','clinical-skills'].includes(result.type)) return {type:'home', id:'', q:new URLSearchParams()};
+  return result;
+ };
+ homePage = function() {
+  const block = blocks.get(route.q.get('category')), selected = block?.lessons.find(lesson => lesson.code === route.q.get('lesson'));
+  pageTitle(block ? block.title + ' · ' + title : title);
+  if (block) return '<div class="mcg-home">' + trail(block, selected) + '<a class="mcg-back" href="#/home">← Toutes les catégories</a>' + (selected ? planned(block, selected) : '') + blockSection(block) + rule() + '</div>';
+  const filtered = route.q.get('available') === '1', shown = filtered ? O.blocks.filter(b => b.lessons.some(own)) : O.blocks;
+  const courses = available.length ? '<section class="mcg-start" aria-labelledby="mcg-start-title"><div class="mcg-page-actions"><div><span class="mcg-eyebrow">Ouvrez un cours</span><h2 id="mcg-start-title">À votre rythme.</h2></div><a class="mcg-text-link" href="#/search?available=1">Tous les cours <span aria-hidden="true">↗</span></a></div><div class="mcg-featured-grid">' + available.slice(0,3).map(item => lessonCard(item.block, item.lesson, true)).join('') + '</div></section>' : '<section class="mcg-empty"><h2>Votre espace prend forme.</h2><p>Les premiers cours de cette spécialité sont en préparation. Explorez dès maintenant leur organisation.</p></section>';
+  return '<div class="mcg-home">' + cover() + courses + (F.id === 'T1' ? '<a class="mcg-draft-access" href="../apercus/infectiologie.html#/entry/A41"><span><span class="mcg-eyebrow">Dans l’atelier</span><strong>A41 — Sepsis et choc septique de l’adulte · version de travail</strong></span><span class="mcg-text-link">Voir le cours en rédaction ↗</span></a>' : '') + (F.id === 'S01' ? '<a class="s01-cs-gateway" href="#/clinical-skills"><span><span class="mcg-eyebrow">Pratique clinique</span><strong>Sémiologie · Examen cardiovasculaire</strong></span><span class="mcg-text-link">Explorer le parcours ↗</span></a>' : '') + '<section aria-labelledby="mcg-categories-title"><div class="mcg-page-actions mcg-categories-heading"><div><span class="mcg-eyebrow">La bibliothèque</span><h2 id="mcg-categories-title">Explorez les catégories.</h2></div>' + (O.blocks.length ? '<div class="mcg-filters" aria-label="Filtrer les catégories"><a href="#/home"' + (!filtered ? ' aria-current="true"' : '') + '>Toutes <span>' + O.blocks.length + '</span></a><a href="#/home?available=1"' + (filtered ? ' aria-current="true"' : '') + '>Avec un cours</a></div>' : '') + '</div><div class="mcg-category-grid">' + (shown.map(categoryCard).join('') || '<p class="mcg-empty">Les catégories de cette spécialité seront ajoutées au fil de la rédaction.</p>') + '</div></section>' + rule() + '</div>';
+ };
+ specialtyPage = homePage;
+ searchPageView = function() {
+  const query = route.q.get('q') || '', needle = norm(query), onlyAvailable = route.q.get('available') === '1', matches = new Map();
+  O.blocks.forEach(block => block.lessons.forEach(lesson => {
+   if (onlyAvailable && !own(lesson)) return;
+   const text = [block.code, block.title, lesson.code, lesson.title, ...lesson.variants.flatMap(v => [v.code, v.title, ...v.subcodes.flatMap(s => [s.code, s.title])])].join(' ');
+   if (!needle || norm(text).includes(needle)) {
+    const previous = matches.get(lesson.code), merged = new Map((previous?.lesson.searchVariants || []).map(v => [v.code, v]));
+    lesson.variants.forEach(v => merged.set(v.code, v));
+    const preferred = previous || {block, lesson};
+    matches.set(lesson.code, {block:preferred.block, lesson:{...preferred.lesson, searchVariants:[...merged.values()]}});
+   }
+  }));
+  pageTitle('Recherche · ' + title);
+  return '<div class="mcg-home">' + trail() + '<div class="mcg-search-heading"><span class="mcg-eyebrow">' + h(title) + '</span><h1>' + (query ? '« ' + h(query) + ' »' : onlyAvailable ? 'Les cours disponibles.' : 'Tous les chapitres.') + '</h1><p>' + matches.size + ' résultat' + (matches.size > 1 ? 's' : '') + '</p></div><div class="mcg-filters"><a href="#/search?q=' + encodeURIComponent(query) + '"' + (!onlyAvailable ? ' aria-current="true"' : '') + '>Tous les chapitres</a><a href="#/search?available=1&q=' + encodeURIComponent(query) + '"' + (onlyAvailable ? ' aria-current="true"' : '') + '>Cours disponibles</a></div><div class="mcg-lessons">' + ([...matches.values()].map(item => lessonCard(item.block, item.lesson)).join('') || '<p class="mcg-empty">Aucun chapitre ne correspond à cette recherche. Essayez un intitulé ou un code CIM.</p>') + '</div></div>';
+ };
+ const originalEntry = entryPage;
+ entryPage = function() {
+  const item = aliases.get(route.id);
+  if (item && !own(item.lesson)) {pageTitle(name(item.lesson) + ' · ' + title); return '<div class="mcg-home">' + trail(item.block, item.lesson) + planned(item.block, item.lesson) + '<a class="mcg-back" href="' + h(categoryUrl(item.block)) + '">← Les chapitres de cette catégorie</a></div>';}
+  const content = originalEntry();
+  if (item) pageTitle(name(item.lesson) + ' · ' + title);
+  return content;
+ };
+ crumbs = function() {const item = aliases.get(route?.id) || aliases.get(typeof MC_code === 'function' ? MC_code(route?.id) : route?.id); return item ? trail(item.block, item.lesson) : trail();};
+ nextPrevious = function(entry) {
+  const item = aliases.get(entry.code), lessons = item?.block.lessons.filter(own) || [], index = lessons.findIndex(l => l.code === item?.lesson.code), previous = lessons[index-1], next = lessons[index+1];
+  return '<nav class="bottomnav mcg-bottomnav" aria-label="Navigation entre les chapitres">' + (previous ? '<a class="btn" href="' + h(previous.url) + '">← ' + h(name(previous)) + '</a>' : '<span></span>') + '<a class="btn tiny" href="' + h(item ? categoryUrl(item.block) : '#/home') + '">Les chapitres</a>' + (next ? '<a class="btn" href="' + h(next.url) + '">' + h(name(next)) + ' →</a>' : '<span></span>') + '</nav>';
+ };
+ footer = () => '<footer class="mcg-footer"><span>MEDINA <span aria-hidden="true">/</span> ' + h(title) + '</span><span>' + h(O.version) + ' <span aria-hidden="true">·</span> <a href="../index.html">Toutes les spécialités ↗</a></span></footer>';
+ drawSidebar = function() {
+  const active = aliases.get(route?.id), category = route?.q.get('category') || active?.block.code;
+  document.getElementById('spec-nav').innerHTML = O.blocks.map(block => '<details class="mcg-sidebar-block" ' + (category === block.code ? 'open' : '') + ' data-mcg-sidebar-category="' + h(block.code) + '"><summary><span>' + pad(block.order) + '</span><b>' + h(block.title) + '</b></summary><a class="mcg-sidebar-all" href="' + h(categoryUrl(block)) + '">Tous les chapitres <span aria-hidden="true">→</span></a>' + block.lessons.map(lesson => '<a class="mcg-sidebar-lesson ' + (active?.lesson.code === lesson.code ? 'active' : '') + '" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + '" data-fragment-chapter="' + (own(lesson) ? h(lesson.code) : '') + '" data-mcg-sidebar-lesson="' + h(lesson.code) + '"><span>' + h(lesson.title) + '<small>' + h(lesson.code) + ' · ' + (own(lesson) ? 'Disponible' : 'En préparation') + '</small></span></a>').join('') + '</details>').join('') || '<p class="mcg-sidebar-empty">Les catégories arrivent bientôt.</p>';
+  document.querySelectorAll('.nav-main a').forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#/' + route?.type));
+ };
+ showCommandPalette = function() {openModal(title, '<div class="command-links"><a data-close-modal class="command-link" href="#/home">L’accueil et les catégories</a><a data-close-modal class="command-link" href="#/search?available=1">Les cours disponibles</a><a data-close-modal class="command-link" href="#/search">Rechercher un chapitre</a></div><div class="mcg-category-grid">' + O.blocks.map(block => categoryCard(block).replace('<a ', '<a data-close-modal ')).join('') + '</div>');};
+ document.getElementById('command-btn').onclick = showCommandPalette;
+ const previousBind = bindPage;
+ bindPage = function() {previousBind(); document.getElementById('mcg-planned-title')?.focus({preventScroll:true});};
+ document.getElementById('medora-intelligence-link')?.remove();
+ document.getElementById('medina-fragment-empty')?.remove();
+ const brand = document.querySelector('.brand');
+ if (brand) brand.innerHTML = '<span class="brandmark">' + book + '</span><span><strong>MEDINA</strong><small>' + h(title) + '</small></span>';
+ const version = document.querySelector('.sidebar .version');
+ if (version) version.innerHTML = '<a href="../index.html">← Toutes les spécialités</a>';
+ document.querySelector('.sidebar .sidebar-note')?.replaceChildren(document.createTextNode(available.length + ' cours à explorer · ' + title));
+ const navTitle = document.querySelector('.sidebar .nav-title'); if (navTitle) navTitle.textContent = 'Les catégories';
+ const search = document.getElementById('global-search');
+ search.placeholder = 'Rechercher en ' + title.toLocaleLowerCase('fr') + '…';
+ search.setAttribute('aria-label', 'Rechercher dans les cours de ' + title);
+ const topbar = document.querySelector('.topbar');
+ topbar.insertAdjacentHTML('afterbegin', '<a class="mcg-top-title" href="#/home">' + h(title) + '</a>');
+ document.getElementById('command-btn').setAttribute('aria-label', 'Ouvrir les catégories de ' + title);
+ window.MEDINA_CATEGORY_ORGANISATION = O;
+ render();
 })();

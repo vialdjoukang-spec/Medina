@@ -1,3 +1,7 @@
+## Frontends distincts — 8 octobre 2026
+
+La demande directe de Vial ajoute un accueil moderne clair, Anthropic Serif embarquée et un frontend strictement limité à chaque spécialité. Les 22 frontends sont reconstruits et contrôlés ; le portail donne accès aux 32 cours intégrés. L’aperçu A41 interne est consultable sous `apercus/infectiologie.html#/entry/A41`, avec statut de travail et sans certification finale. Sources médicales canoniques et statuts d’injection inchangés. Voir [la réalisation](FRONTENDS_2026-10-08.md) et [le reçu](receipts/CODEX_FRONTENDS_2026-10-08.json). La publication servie reste à vérifier dans le reçu. La remise distante J09 de 9fa4651 est conservée comme travail de chapitre ; elle ne vaut pas fragment entier prêt à l’audit unique.
+
 ## Reprise par fragments — 8 octobre 2026
 
 [Nouveau protocole](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [rapport de reprise](reviews/2026-10-08/REPRISE_FRAGMENTS/REPRISE.md). Les listes complètes de branches/PR et leurs pages suivantes sont vérifiées ; [têtes relevées](reviews/2026-10-08/REPRISE_FRAGMENTS/REMOTE_HEADS.json). A41 a été injecté comme chapitre à `a556323`, après audit Claude `ba6a80f` sous les règles précédentes. Le fragment T1 reste incomplet ; la nouvelle copie A41 demeure interne. L’index détaillé ci-dessous conserve son ancienne cible et son état historique.

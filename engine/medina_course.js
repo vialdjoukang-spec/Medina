@@ -8,7 +8,7 @@ function MEDINA_coursePage(e){
  pageTitle(`${e.code} — ${e.title}`);
  const sid=SM[route.q.get('specialty')]?route.q.get('specialty'):e.primary;const s=SM[sid];context={sid,e};
  const tpl=document.getElementById('ch-'+MC_code(e.code));
- const fonts=[["Georgia,'Times New Roman',serif",'Georgia (Medina)'],["system-ui,sans-serif",'Système (Medina)'],["'Segoe UI',Arial,sans-serif",'Segoe UI'],["'Literata',Georgia,serif",'Literata'],["'Source Serif 4',Georgia,serif",'Source Serif'],["'EB Garamond',Georgia,serif",'Garamond'],["'Atkinson Hyperlegible','Segoe UI',sans-serif",'Atkinson'],["'Inter','Segoe UI',sans-serif",'Inter']];
+ const fonts=[["'Anthropic Serif',Georgia,serif",'Anthropic Serif'],["Georgia,'Times New Roman',serif",'Georgia'],["system-ui,sans-serif",'Système'],["'Segoe UI',Arial,sans-serif",'Segoe UI'],["'Literata',Georgia,serif",'Literata'],["'Source Serif 4',Georgia,serif",'Source Serif'],["'EB Garamond',Georgia,serif",'Garamond'],["'Atkinson Hyperlegible','Segoe UI',sans-serif",'Atkinson'],["'Inter','Segoe UI',sans-serif",'Inter']];
  return `${crumbs([[s.title,url('specialty',s.id)],[e.system,url('specialty',s.id,{system:e.organ})],[e.code]])}
  <div class="mc" data-code="${h(MC_code(e.code))}">
  <div class="mc-toolbar mc-ui"><a class="btn tiny" href="${h(url('entry',e.code,{view:'plan'}))}">Plan de révision détaillé</a>
@@ -51,7 +51,7 @@ function MC_navigoMount(m){
 function MEDINA_mount(){MC_badges();MC_navigoDestroy();if(MC_SIZE_CLEANUP){MC_SIZE_CLEANUP();MC_SIZE_CLEANUP=null}
  const m=document.querySelector('.mc');if(!m)return;const code=m.dataset.code;
  let navRefresh=()=>{};
- const applyFont=()=>{const f=MC.store.get('font.'+code,MC.store.get('font.default',"Georgia,'Times New Roman',serif"));const s=Math.min(24,Math.max(14,Number(MC.store.get('fs.'+code,17))||17));m.style.setProperty('--mc-font',f);m.style.setProperty('--mc-fs',s+'px');m.style.setProperty('--mc-scale',(s/17).toFixed(3));m.querySelector('.mc-font').value=f;m.querySelector('.mc-size-range').value=s;m.querySelector('.mc-size-value').textContent=s+' px';document.documentElement.style.setProperty('--mc-font',f);document.documentElement.style.setProperty('--mc-scale',(s/17).toFixed(3));navRefresh()};
+ const applyFont=()=>{const f=MC.store.get('font.'+code,MC.store.get('font.default',"'Anthropic Serif',Georgia,serif"));const s=Math.min(24,Math.max(14,Number(MC.store.get('fs.'+code,17))||17));m.style.setProperty('--mc-font',f);m.style.setProperty('--mc-fs',s+'px');m.style.setProperty('--mc-scale',(s/17).toFixed(3));m.querySelector('.mc-font').value=f;m.querySelector('.mc-size-range').value=s;m.querySelector('.mc-size-value').textContent=s+' px';document.documentElement.style.setProperty('--mc-font',f);document.documentElement.style.setProperty('--mc-scale',(s/17).toFixed(3));navRefresh()};
  m.querySelector('.mc-font').onchange=ev=>{MC.store.set('font.'+code,ev.target.value);MC.store.set('font.default',ev.target.value);applyFont()};
  m.querySelector('.mc-fsdn').onclick=()=>{MC.store.set('fs.'+code,Math.max(14,MC.store.get('fs.'+code,17)-1));applyFont()};
  m.querySelector('.mc-fsup').onclick=()=>{MC.store.set('fs.'+code,Math.min(24,MC.store.get('fs.'+code,17)+1));applyFont()};

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "task": "frontends-distincts-par-specialite",
+  "requested_by": "Vial",
+  "date": "2026-10-08",
+  "base_sha": "5d780913e2ada443fa7b185f8b2cf4e0f44d3d68",
+  "concurrent_main_preserved": "9fa4651d576ff1ee344dced63def16d95a054cd3",
+  "fragments": 22,
+  "integrated_courses": 32,
+  "canonical_medical_sources_modified": false,
+  "fragment_status_modified": false,
+  "final_medical_validation": false,
+  "frontend": "light_only",
+  "font": "Anthropic Serif Web 26.043.1, original Roman/Italic variable WOFF2 embedded",
+  "work_preview": {
+    "fragment": "T1",
+    "chapter": "A41",
+    "route": "apercus/infectiologie.html#/entry/A41",
+    "final_validation": false
+  },
+  "checks": {
+    "python_unit": {
+      "passed": 148
+    },
+    "frontend_browser": {
+      "passed": 406,
+      "fragments": 22
+    },
+    "fragment_build_audit": {
+      "passed": true,
+      "fragments": 22,
+      "javascript_valid": true,
+      "reproducible": true
+    },
+    "light_theme": {
+      "passed": 314,
+      "files": 23,
+      "palettes_per_file": 100
+    },
+    "portal_accessibility": {
+      "passed": 20
+    }
+  },
+  "proofs": "docs/collaboration/reviews/2026-10-08/FRONTENDS",
+  "remote_inventory": "22 têtes distantes repérées ; certains diffs de branches peuvent être limités à 300 fichiers ; aucune absence de livraison affirmée.",
+  "publication": {
+    "status": "awaiting_deployment_verification",
+    "home": "https://vialdjoukang-spec.github.io/Medina/",
+    "work_preview": "https://vialdjoukang-spec.github.io/Medina/apercus/infectiologie.html#/entry/A41"
+  },
+  "known_limitations": [
+    "La coque globale historique MEDINA.html importe lesson-core.js absent du dépôt ; les 22 nouveaux frontends de fragments n’ont aucune erreur JavaScript inattendue.",
+    "L’inventaire CIM-11, la complétude des fragments et leur audit médical final restent en cours."
+  ]
+}

@@ -44,11 +44,13 @@ jobs:
         run: |
           python build_front.py
           python build_front.py --all-fragments
+          python tools/build_work_preview.py --output dist/apercus/infectiologie.html
       - name: Assembler le site
         run: |
-          mkdir -p _site/fragments
+          mkdir -p _site/fragments _site/apercus
           cp dist/MEDINA.html _site/MEDINA.html
           cp dist/fragments/*.html _site/fragments/
+          cp dist/apercus/*.html _site/apercus/
           python build_index.py --fragments-dir _site/fragments --output _site/index.html
           python tools/build_organisation.py --output _site/organisation.html
       - name: Auditer les fragments
