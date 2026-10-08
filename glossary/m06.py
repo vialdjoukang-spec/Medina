@@ -28,3 +28,6 @@ a('TNF',[('T','Tumor'),('N','Necrosis'),('F','Factor')],'Facteur de nécrose tum
 a('Gougerot-Sjögren',[('Gougerot-Sjögren','nom propre : Henri Gougerot et Henrik Sjögren')],'Syndrome de Gougerot-Sjögren','<p>Maladie auto-immune des glandes exocrines (sécheresse oculaire et buccale).</p>')
 a('DR4',[('DR','locus HLA-DR'),('4','spécificité 4')],'Antigène HLA-DR4','<p>Porte souvent l’épitope partagé.</p>')
 a('DR1',[('DR','locus HLA-DR'),('1','spécificité 1')],'Antigène HLA-DR1','<p>Porte l’épitope partagé.</p>')
+a('SCREEN-RA',[('SCREEN','dépistage (Screening)'),('RA','Rheumatoid Arthritis')],'Cohorte suisse SCREEN-RA','<p>Cohorte suisse d’apparentés au premier degré de patients atteints de polyarthrite rhumatoïde, suivis pour décrire la phase préclinique.</p>')
+a('RMD',[('R','Rheumatic'),('M','and Musculoskeletal'),('D','Diseases')],'Revue RMD Open','<p>Revue en libre accès de l’EULAR consacrée aux maladies rhumatismales et musculosquelettiques.</p>')
+a('Alpizar-Rodriguez',[('Alpizar-Rodriguez','nom propre : Deshiré Alpizar-Rodriguez, rhumatologue à Genève')],'Alpizar-Rodriguez D.','<p>Première autrice de la publication de la cohorte suisse SCREEN-RA (2017).</p>')
