@@ -188,6 +188,88 @@ def ready_fragment(tree, fragment):
     return files
 
 
+def swiss_context_proof(tree, audit, ident, final):
+    """Require a reviewed, source-bound Swiss decision matrix before final audit.
+
+    This checks the evidence contract, not the medical truth of quotations or
+    applicability. The other AI must verify those against the originals.
+    """
+    proof = audit.get("swiss_context")
+    if not isinstance(proof, dict) or proof.get("verdict") != "conforme":
+        raise FragmentError(f"{ident} : contexte suisse non conforme ou absent ; audit défavorable requis.")
+    raw = document_proof(tree, proof.get("matrix_path"), proof.get("matrix_sha256"),
+                         f"{ident} matrice du contexte suisse")
+    matrix = json_data(raw, f"{ident} matrice du contexte suisse")
+    if (not isinstance(matrix, dict) or matrix.get("schema_version") != 1 or
+            matrix.get("fragment_id") != ident or matrix.get("scope") != "fragment_complet" or
+            matrix.get("source_files") != final or matrix.get("unresolved_divergences") != []):
+        raise FragmentError(f"{ident} : matrice suisse incomplète, non liée aux sources finales ou divergence ouverte.")
+    decisions = matrix.get("decisions")
+    if not isinstance(decisions, list) or not decisions:
+        raise FragmentError(f"{ident} : aucune décision clinique dans la matrice suisse.")
+    chapters = {m.group(1) for path in final
+                if (m := re.fullmatch(r"chapters/([A-Z][0-9]{2})/\1_[abcd]\.html", path))}
+    drug_chapters = {m.group(1) for path in final
+                     if (m := re.fullmatch(r"chapters/([A-Z][0-9]{2})/\1_d\.html", path))}
+    documented, documented_drugs, identifiers = set(), set(), set()
+    for row in decisions:
+        if not isinstance(row, dict):
+            raise FragmentError(f"{ident} : ligne invalide de la matrice suisse.")
+        code, key, kind = row.get("chapter_code"), row.get("id"), row.get("kind")
+        if (not isinstance(code, str) or code not in chapters or
+                not isinstance(key, str) or not key.strip() or
+                key in identifiers or kind not in {"diagnostic", "treatment", "medication", "follow_up"} or
+                not isinstance(row.get("claim"), str) or not row["claim"].strip() or
+                row.get("auditor_verdict") != "conforme" or
+                row.get("divergence_status") not in {"none", "resolved"} or
+                row.get("initial_primary_origin") not in {"swiss", "european", "american"} or
+                row.get("final_primary_origin") not in {"swiss", "european", "american"}):
+            raise FragmentError(f"{ident} : décision suisse non documentée ou non conforme : {key!r}.")
+        identifiers.add(key)
+        documented.add(code)
+        swiss = row.get("swiss_guideline")
+        required = ("organization", "title", "url", "version_date", "section", "passage")
+        if not isinstance(swiss, dict) or swiss.get("status") not in {"applicable", "documented_gap"}:
+            raise FragmentError(f"{ident} : source de société savante suisse absente : {key!r}.")
+        if swiss["status"] == "applicable":
+            if (any(not isinstance(swiss.get(field), str) or not swiss[field].strip()
+                    for field in required) or not swiss["url"].startswith("https://")):
+                raise FragmentError(f"{ident} : passage suisse applicable imprécis : {key!r}.")
+        elif (any(not isinstance(swiss.get(field), str) or not swiss[field].strip()
+                  for field in ("searched_on", "search_scope", "searched_sources", "gap_reason")) or
+              row["final_primary_origin"] == "swiss"):
+            raise FragmentError(f"{ident} : absence de directive suisse non démontrée : {key!r}.")
+        foreign = row.get("foreign_sources", [])
+        if not isinstance(foreign, list):
+            raise FragmentError(f"{ident} : sources étrangères non documentées : {key!r}.")
+        foreign_origins = set()
+        for source in foreign:
+            if (not isinstance(source, dict) or source.get("origin") not in {"european", "american"} or
+                    any(not isinstance(source.get(field), str) or not source[field].strip()
+                        for field in required) or not source["url"].startswith("https://")):
+                raise FragmentError(f"{ident} : source étrangère imprécise : {key!r}.")
+            foreign_origins.add(source["origin"])
+        expected_foreign = {origin for origin in (row["initial_primary_origin"], row["final_primary_origin"])
+                            if origin != "swiss"}
+        if not expected_foreign.issubset(foreign_origins):
+            raise FragmentError(f"{ident} : origine étrangère sans passage vérifiable : {key!r}.")
+        if kind == "medication":
+            documented_drugs.add(code)
+            fi = row.get("swissmedic_product")
+            fields = ("product_name", "authorization_number", "url", "accessed_on", "section", "passage")
+            if (not isinstance(fi, dict) or any(not isinstance(fi.get(field), str) or
+                    not fi[field].strip() for field in fields) or not fi["url"].startswith("https://")):
+                raise FragmentError(f"{ident} : FI Swissmedic du produit exact absente : {key!r}.")
+        if row["divergence_status"] == "resolved" and not str(row.get("resolution", "")).strip():
+            raise FragmentError(f"{ident} : divergence sans arbitrage clinique : {key!r}.")
+        if row["final_primary_origin"] != "swiss" and not str(row.get("resolution", "")).strip():
+            raise FragmentError(f"{ident} : source non suisse retenue sans justification locale : {key!r}.")
+        if row["final_primary_origin"] == "american" and not str(row.get("swiss_european_gap", "")).strip():
+            raise FragmentError(f"{ident} : prescription américaine sans justification du manque suisse/européen : {key!r}.")
+    if chapters != documented or drug_chapters != documented_drugs:
+        raise FragmentError(f"{ident} : chaque cours et onglet pharmacologique doit figurer dans la matrice suisse.")
+
+
 def audit_fragment(tree, fragment, original):
     audit, ident = fragment["cross_audit"], fragment["id"]
     other = next(iter(ACTORS - {fragment["owner"]}))
@@ -198,6 +280,7 @@ def audit_fragment(tree, fragment, original):
     final = source_proof(tree, audit, f"{ident} audit croisé")
     if not set(original).issubset(final):
         raise FragmentError(f"{ident} : audit supprimant une partie de la remise complète.")
+    swiss_context_proof(tree, audit, ident, final)
     return final
 
 

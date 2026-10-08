@@ -98,11 +98,32 @@ class FragmentGuardTests(unittest.TestCase):
         self.write(f"{source_dir}/{self.medical}", final_data)
         report_path = "preuves/S01/audit.md"
         self.write(report_path, b"Rapport de fixture : audit unique, sans valeur clinique.")
+        files = {self.medical: digest(final_data)}
+        matrix_path = "preuves/S01/contexte-suisse.json"
+        self.write_json(matrix_path, {
+            "schema_version": 1, "fragment_id": "S01", "scope": "fragment_complet",
+            "source_files": files, "unresolved_divergences": [],
+            "decisions": [{"id": "i50-diagnostic-fixture", "chapter_code": "I50",
+                           "kind": "diagnostic", "claim": "Décision fictive de test",
+                           "initial_primary_origin": "american", "final_primary_origin": "swiss",
+                           "divergence_status": "resolved", "resolution": "Comparaison fictive de test",
+                           "auditor_verdict": "conforme",
+                           "foreign_sources": [{"origin": "american", "organization": "Organisme US fictif",
+                                                "title": "Texte fictif", "url": "https://example.invalid/us",
+                                                "version_date": "2026-10-08", "section": "Diagnostic",
+                                                "passage": "Passage fictif de fixture"}],
+                           "swiss_guideline": {"status": "applicable",
+                                               "organization": "Société suisse fictive de test",
+                                               "title": "Directive fictive", "url": "https://example.invalid/ssi",
+                                               "version_date": "2026-10-08", "section": "Diagnostic",
+                                               "passage": "Texte fictif de fixture"}}]})
         self.fragment.update({"status": "AUDITE", "cross_audit": {
             "auditor": auditor, "scope": "fragment_complet", "verdict": "favorable",
             "input_files": self.fragment["internal_review"]["files"],
-            "files": {self.medical: digest(final_data)}, "source_dir": source_dir,
-            "report_path": report_path, "report_sha256": digest((self.root / report_path).read_bytes())}})
+            "files": files, "source_dir": source_dir,
+            "report_path": report_path, "report_sha256": digest((self.root / report_path).read_bytes()),
+            "swiss_context": {"verdict": "conforme", "matrix_path": matrix_path,
+                              "matrix_sha256": digest((self.root / matrix_path).read_bytes())}}})
         self.save()
 
     def inject(self, injector="Codex"):
@@ -217,6 +238,125 @@ class FragmentGuardTests(unittest.TestCase):
         self.inject(injector="Claude")
         with self.assertRaisesRegex(ESPACE.FragmentError, "injection par l'auditeur"):
             self.guard(ready, self.commit())
+
+    def test_audit_refuses_missing_swiss_context(self):
+        self.complete()
+        ready = self.commit()
+        self.audit()
+        del self.fragment["cross_audit"]["swiss_context"]
+        self.save()
+        with self.assertRaisesRegex(ESPACE.FragmentError, "contexte suisse non conforme ou absent"):
+            self.guard(ready, self.commit())
+
+    def test_audit_refuses_unresolved_swiss_divergence(self):
+        self.complete()
+        ready = self.commit()
+        self.audit()
+        proof = self.fragment["cross_audit"]["swiss_context"]
+        path = self.root / proof["matrix_path"]
+        matrix = json.loads(path.read_text())
+        matrix["unresolved_divergences"] = ["Écart suisse non arbitré"]
+        self.write_json(proof["matrix_path"], matrix)
+        proof["matrix_sha256"] = digest(path.read_bytes())
+        self.save()
+        with self.assertRaisesRegex(ESPACE.FragmentError, "divergence ouverte"):
+            self.guard(ready, self.commit())
+
+    def test_audit_refuses_american_origin_without_passage(self):
+        self.complete()
+        ready = self.commit()
+        self.audit()
+        proof = self.fragment["cross_audit"]["swiss_context"]
+        path = self.root / proof["matrix_path"]
+        matrix = json.loads(path.read_text())
+        matrix["decisions"][0]["foreign_sources"] = []
+        self.write_json(proof["matrix_path"], matrix)
+        proof["matrix_sha256"] = digest(path.read_bytes())
+        self.save()
+        with self.assertRaisesRegex(ESPACE.FragmentError, "origine étrangère sans passage"):
+            self.guard(ready, self.commit())
+
+    def test_audit_refuses_american_prescription_without_local_gap(self):
+        self.complete()
+        ready = self.commit()
+        self.audit()
+        proof = self.fragment["cross_audit"]["swiss_context"]
+        path = self.root / proof["matrix_path"]
+        matrix = json.loads(path.read_text())
+        matrix["decisions"][0]["final_primary_origin"] = "american"
+        self.write_json(proof["matrix_path"], matrix)
+        proof["matrix_sha256"] = digest(path.read_bytes())
+        self.save()
+        with self.assertRaisesRegex(ESPACE.FragmentError, "sans justification du manque suisse/européen"):
+            self.guard(ready, self.commit())
+
+    def test_documented_swiss_gap_can_use_european_source(self):
+        self.complete()
+        ready = self.commit()
+        self.audit()
+        proof = self.fragment["cross_audit"]["swiss_context"]
+        path = self.root / proof["matrix_path"]
+        matrix = json.loads(path.read_text())
+        row = matrix["decisions"][0]
+        row["swiss_guideline"] = {"status": "documented_gap", "searched_on": "2026-10-08",
+                                  "search_scope": "Décision fictive de fixture",
+                                  "searched_sources": "Répertoire suisse fictif de test",
+                                  "gap_reason": "Aucun texte applicable dans la fixture"}
+        row["final_primary_origin"] = "european"
+        row["foreign_sources"].append({"origin": "european", "organization": "Société européenne fictive",
+                                       "title": "Directive fictive", "url": "https://example.invalid/eu",
+                                       "version_date": "2026-10-08", "section": "Diagnostic",
+                                       "passage": "Passage européen fictif"})
+        self.write_json(proof["matrix_path"], matrix)
+        proof["matrix_sha256"] = digest(path.read_bytes())
+        self.save()
+        self.assertEqual(self.guard(ready, self.commit()), [])
+
+    def test_audit_refuses_medication_without_exact_swissmedic_product(self):
+        self.complete()
+        ready = self.commit()
+        self.audit()
+        audit = self.fragment["cross_audit"]
+        medication = "chapters/I50/I50_d.html"
+        body = b"Fixture posologie sans FI suisse"
+        self.write(audit["source_dir"] + "/" + medication, body)
+        audit["files"][medication] = digest(body)
+        proof = audit["swiss_context"]
+        path = self.root / proof["matrix_path"]
+        matrix = json.loads(path.read_text())
+        matrix["source_files"] = audit["files"]
+        row = copy.deepcopy(matrix["decisions"][0])
+        row.update(id="i50-medicament-fixture", kind="medication")
+        matrix["decisions"].append(row)
+        self.write_json(proof["matrix_path"], matrix)
+        proof["matrix_sha256"] = digest(path.read_bytes())
+        self.save()
+        with self.assertRaisesRegex(ESPACE.FragmentError, "FI Swissmedic du produit exact absente"):
+            self.guard(ready, self.commit())
+
+    def test_audit_accepts_medication_with_exact_swissmedic_product(self):
+        self.complete()
+        ready = self.commit()
+        self.audit()
+        audit = self.fragment["cross_audit"]
+        medication = "chapters/I50/I50_d.html"
+        body = b"Fixture produit exact"
+        self.write(audit["source_dir"] + "/" + medication, body)
+        audit["files"][medication] = digest(body)
+        proof = audit["swiss_context"]
+        path = self.root / proof["matrix_path"]
+        matrix = json.loads(path.read_text())
+        matrix["source_files"] = audit["files"]
+        row = copy.deepcopy(matrix["decisions"][0])
+        row.update(id="i50-medicament-fixture", kind="medication", swissmedic_product={
+            "product_name": "Produit suisse fictif", "authorization_number": "00000",
+            "url": "https://example.invalid/fi", "accessed_on": "2026-10-08",
+            "section": "Posologie", "passage": "Passage fictif de FI"})
+        matrix["decisions"].append(row)
+        self.write_json(proof["matrix_path"], matrix)
+        proof["matrix_sha256"] = digest(path.read_bytes())
+        self.save()
+        self.assertEqual(self.guard(ready, self.commit()), [])
 
     def test_staged_audit_sources_must_match_report_hashes(self):
         self.complete()
