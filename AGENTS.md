@@ -1,3 +1,7 @@
+## Exception ciblée C-01 — instruction directe de Vial, 8 octobre 2026
+
+Vial demande de corriger et d'intégrer immédiatement les parties exploitables, avec un marquage rouge repérable par Claude pour les cas délicats. Lire [l'exception documentée](docs/collaboration/instructions/EXCEPTION_C01_RESERVES_VIAL_2026-10-08.md). Des tranches **provisoires avec réserves**, techniquement contrôlées, sont autorisées pour la remise C-01 PR16. Elles ne constituent pas l'audit final ni l'état INJECTE. Les attributions, chapitres actifs, autres fragments et verrous finaux restent inchangés. Une incertitude ne devient pas une recommandation thérapeutique applicable par la seule couleur rouge. Le registre append-only `organisation/provisional_integrations.json` donne les chemins, empreintes, contrôles et actions attendues de Claude.
+
 ## Captures visibles dans le chat — 8 octobre 2026
 
 Vial demande explicitement de voir les captures du travail sur les cours **ici, de manière dynamique**. Afficher les captures dans les messages et réponses avec une image visible, accompagnée du lien direct du cours ; les sorties techniques et les seuls liens de téléchargement ne suffisent pas. Pour présenter une navigation, produire une capture animée issue du navigateur réel et l’afficher directement. Garder le statut de version de travail et dater/versionner les captures ; ne pas inventer un rendu ni annoncer un flux en direct pour une animation enregistrée. Le workflow Pages publie les captures et l’animation sous `apercus/controle/` après les contrôles.

@@ -35,6 +35,9 @@ tspan.mc-ab{fill:var(--blue);cursor:help;text-decoration:underline dashed}
 .mc-w:focus-visible,.mc-ab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .mc-alert{border-left:4px solid var(--red);background:color-mix(in srgb,var(--red) 7%,var(--surface));padding:10px 14px;border-radius:8px;margin:.6em 0 1em}
 .mc-alert>b:first-child::before{content:"⚠ "}
+/* Exception clinique provisoire de Vial : le texte et l’identifiant restent visibles. */
+.mc [data-claude-reservation][data-reservation-status="open"],.mc-dlg [data-claude-reservation][data-reservation-status="open"]{color:#8b101b;background:#fff1f2;border:2px solid #b42335;border-left-width:6px;padding:12px 16px;border-radius:8px;margin:1em 0;font-weight:500}
+.mc [data-claude-reservation] b,.mc-dlg [data-claude-reservation] b{color:#8b101b}
 .mc-trap{border-left:4px solid var(--gold);background:color-mix(in srgb,var(--gold) 8%,var(--surface));padding:10px 14px;border-radius:8px;margin:.6em 0 1em}
 .mc-trap .mc-k{font-size:12px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.06em;display:block}
 .mc-key{border-left:4px solid var(--green);background:color-mix(in srgb,var(--green) 8%,var(--surface));padding:10px 14px;border-radius:8px;margin:.6em 0 1em}

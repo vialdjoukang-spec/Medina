@@ -68,6 +68,14 @@ jobs:
           python tools/build_preview_capture_animation.py \
             --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html#/entry/B24" \
             --output _site/apercus/controle
+      # C01 : captures locales vérifiées, pas un nouvel audit navigateur CI.
+      - name: Publier les captures vérifiées de la tranche provisoire I51
+        run: |
+          python tools/assemble_c01_captures.py
+          mkdir -p _site/apercus/controle/c01
+          cp docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/reserves/*.png _site/apercus/controle/c01/
+          cp docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/reserves/I51_navigation_enregistree_2026-10-08.gif _site/apercus/controle/c01/
+          cp docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/reserves/i51_reservations_results.json _site/apercus/controle/c01/
       - name: Produire une capture animée du cours hépatites virales chroniques
         run: |
           python tools/build_preview_capture_animation.py \
