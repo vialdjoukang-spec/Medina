@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/sentinelle_reception",
+  "written_at_utc": "2026-10-08T13:01:36.041915+00:00",
+  "written_at_europe_zurich": "2026-10-08T15:01:36.041915+02:00",
+  "purpose": "État initial vérifié de la file d’audit Codex après injection Claude ; aucune remise présumée injectée.",
+  "snapshot": {
+    "local_head_examined": "66f1bd93a8bef1bb067d0051f2f4c6fcef961311",
+    "remote_heads": {
+      "refs/heads/claude/loving-shannon-spwrhc": "c3dd8cd0791fef551089bf6240f2adf45f0586fe",
+      "refs/heads/claude/medina-alpha-integration-7dul4i": "303f95a66dd2b4b0622867854d2add4bce4de310",
+      "refs/heads/main": "883869c780f8dff0704014e7125c9dca23710542"
+    },
+    "remote_revalidated_at_utc": "2026-10-08T13:00:26.189487+00:00",
+    "heads_match_examined_objects": false,
+    "later_heads": "À examiner séparément, aucune auditabilité ni injection présumée.",
+    "initial_head_examined": "66f1bd93a8bef1bb067d0051f2f4c6fcef961311",
+    "latest_main_head_examined": "883869c780f8dff0704014e7125c9dca23710542",
+    "head_changed_during_review": true,
+    "remote_main_matches_latest_examined_commit": true,
+    "post_initial_main_delta": {
+      "commit": "883869c780f8dff0704014e7125c9dca23710542",
+      "commit_at_utc": "2026-10-08T12:59:10Z",
+      "subject": "Appliquer l injection autonome Claude et la progression après remise",
+      "changed_paths": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md",
+        "docs/collaboration/CODEX_CHAINE_FRAGMENTS.md",
+        "docs/collaboration/CONSIGNES_INTERACTION_DENSITE_SOURCES.md",
+        "docs/collaboration/DELIVERY_PROTOCOL.md",
+        "docs/collaboration/FRAGMENTS_RESTANTS.md",
+        "docs/collaboration/README.md",
+        "docs/collaboration/reviews/2026-10-08/REGLES_CLAUDE_C68D96A/PROVENANCE.json",
+        "docs/collaboration/reviews/2026-10-08/REGLES_CLAUDE_C68D96A/REGLES_VIAL_2026-10-08.md",
+        "organisation/production_plan.json"
+      ],
+      "canonical_or_queue_changed_paths": [],
+      "classification": "consignes_et_plan_documentaires_sans_injection_canonique"
+    }
+  },
+  "rules": {
+    "path": "docs/collaboration/REGLES_INJECTION_CLAUDE.md",
+    "creation_commit": "de9af279fe983ff741776c82e112aa44eb798ddb",
+    "creation_at_utc": "2026-10-08T12:50:40Z",
+    "git_blob": "422e94f68512c735177cb1fe3371ecf6ce1a2a49",
+    "sha256": "ccc1b1fe811c14163798b0ae351d9a1dcb20d1d1971f2d6b2a5128eafb2a4ce2",
+    "actual_rule_read": "# Injection autonome de Claude et file d'audit de Codex — 8 octobre 2026\n\n## Principe\nClaude n'attend plus l'audit préalable de Codex pour injecter ses chapitres. Codex audite à son rythme, après injection. La qualité reste garantie par deux verrous : la vérification interne de Claude avant injection, l'audit de Codex après injection.\n\n## Conditions d'injection par Claude (toutes obligatoires)\n1. Revue par sous-agents et vérificateur indépendant terminée ; rapport du lot complet.\n2. Contrôles réussis sur la tête actuelle de `main` : sigles `{}`, `test_v7.py --static`, `build_front.py --all-fragments`, `tests/audit_fragments.py`, `verify_course_native.cjs` (0 échec), tests unitaires.\n3. `tools/livraison.py check-claude` conforme.\n4. Aucune réserve bloquante de Codex encore ouverte sur ce chapitre.\n\n## Droit de décision\nPour ses propres chapitres, Claude tranche les désaccords non bloquants avec Codex. Il applique la règle « la source la plus récente l'emporte dans le texte ; l'ancienne reste accessible par un mot vert ». Une erreur médicale démontrée par Codex reste bloquante et doit être corrigée en priorité.\n\n## File d'audit de Codex\n- Chaque injection de Claude ajoute une entrée à `docs/collaboration/FILE_AUDIT_CODEX.json`, avec le statut `a_auditer`.\n- Codex traite la file dans l'ordre et met le statut à `audite_favorable` ou `reserves`, avec un lien vers son rapport.\n- Une réserve bloquante après injection est corrigée par Claude dans le chapitre concerné, en priorité sur la production en cours.\n- Tant que l'audit de Codex n'est pas favorable, le cours porte la mention « en audit croisé » dans le tableau de bord.\n",
+    "operational_order_for_Claude": [
+      "revue interne par sous-agents et vérificateur indépendant terminée",
+      "rapport du lot complet et contrôles prescrits sur main actuelle réussis",
+      "check-claude conforme",
+      "aucune réserve bloquante Codex ouverte",
+      "injection canonique Claude",
+      "entrée a_auditer et mention en audit croisé",
+      "audit Codex ordonné, favorable ou réserves"
+    ],
+    "scope": "Cette inversion concerne les chapitres propres de Claude. Le contre-audit Claude préalable aux productions Codex reste distinct.",
+    "blocking_medical_error": "Erreur médicale démontrée reste bloquante et correction prioritaire.",
+    "guides_reconciled_on_main": "883869c780f8dff0704014e7125c9dca23710542"
+  },
+  "queue": {
+    "path": "docs/collaboration/FILE_AUDIT_CODEX.json",
+    "creation_commit": "66f1bd93a8bef1bb067d0051f2f4c6fcef961311",
+    "creation_at_utc": "2026-10-08T12:52:09Z",
+    "git_blob": "7de903a132ba03adf490fc98ca0d17c70ed811be",
+    "sha256": "30d8da9e2d5800d37089948d374255ea495c1691f70cca0d84b57af47c8c305d",
+    "content_actually_read": {
+      "schema_version": 1,
+      "description": "Chapitres injectés par Claude, à auditer par Codex après injection",
+      "statuts": [
+        "a_auditer",
+        "en_audit",
+        "audite_favorable",
+        "reserves"
+      ],
+      "entrees": []
+    },
+    "entries_count": 0,
+    "initial_state": "vide",
+    "working_copy_identical_to_committed_file": true,
+    "file_modified_by_reviewer": false,
+    "missing_entries_for_proven_new_Claude_injections": [],
+    "latest_main_head_verified": "883869c780f8dff0704014e7125c9dca23710542"
+  },
+  "new_canonical_Claude_injections_proven": [],
+  "canonical_changes_since_last_I83_Codex_integration": [],
+  "reconciliation": [
+    {
+      "chapter": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+      "delivery_commit": "8a6dc7f28bbdaa5251f9a4b75031875073bf7ccb",
+      "integration_commit": "eb276b90465edcd238fd122b4bd178015a5cb8c0",
+      "integrator": "Codex root, selon décision de session et reçu",
+      "status": "canonique_et_delta_v6_deja_audite",
+      "audit_decision_report": "docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/DECISION.json",
+      "audit_decision": "favorable_delta_v6_fermeture_deux_reserves_v5",
+      "closed_reservations": [
+        "I83-V5-MIN-01",
+        "I83-V5-MIN-02"
+      ],
+      "audited_canonical_hashes": [
+        {
+          "path": "chapters/I83/I83_c.html",
+          "sha256": "4a6f35813d016e06b3c9df4223814cca502ac7b6580c3595877c89450f31f339",
+          "matches_audited_v6": true
+        },
+        {
+          "path": "chapters/I83/I83_pop2.html",
+          "sha256": "cf24e0be7207e4244cd69381b489309bccd2a9a98a3385d07cb48ffe9c8316d2",
+          "matches_audited_v6": true
+        },
+        {
+          "path": "glossary/i83.py",
+          "sha256": "bd0ec11ae3a7b5879fa0cad7ef505eccae28c69984f3d152e47fa53db9d37f4c",
+          "matches_audited_v6": true
+        }
+      ],
+      "prior_v5_audit": "docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V5/AUDIT_MEDICAL.md",
+      "tests_evidence_attributed_to_root": {
+        "passed": 118,
+        "failed": 0,
+        "source_commit": "eb276b90465edcd238fd122b4bd178015a5cb8c0"
+      },
+      "remote_main_contains_integration": true,
+      "queue_action": "aucune_entree_artificielle",
+      "reason": "Injection Codex déjà contre-relue ; ce n’est pas une nouvelle injection autonome de Claude. Vérification distante Git distincte du déploiement du site."
+    },
+    {
+      "chapter": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+      "delivery_commit": "04cb95729d44648cc65339f28cf6631574babbb2",
+      "archive_commit": "a3b8ac4060529aaf339f17851305c07abac25cc8",
+      "reception_report": "docs/collaboration/reviews/2026-10-08/PR12_04CB957_I89_3/RECEPTION.md",
+      "status": "remise_archivee_non_injectee",
+      "canonical_chapter_paths": [],
+      "canonical_registry_entry": null,
+      "queue_action": "aucune_entree_avant_injection_reelle"
+    },
+    {
+      "chapter": "J45 — Asthme (P-02-Pneumologie)",
+      "delivery_commit": "f30b891602d8bf783058b8811b1530288f9508b5",
+      "archive_commit": "88cba09a6520545835b47ba8cce5b18e0b0f0f84",
+      "reception_report": "docs/collaboration/reviews/2026-10-08/PR12_F30B891_J45/RECEPTION.md",
+      "status": "nouvelle_remise_archivee_non_injectee_cours_historique_existant",
+      "canonical_registry_entry": {
+        "code": "J45",
+        "covers": [
+          "J45",
+          "J46"
+        ],
+        "title": "Asthme",
+        "integrated": true,
+        "wave": 2,
+        "added": "2026-09-25"
+      },
+      "existing_course_is_not_new_delivery": true,
+      "canonical_vs_archived_proposals": [
+        {
+          "path": "chapters/J45/J45_a.html",
+          "canonical_sha256": "909345840cc9b604eff4df0eb0141ed0e79797ed8c4a010e23282043c976840a",
+          "archived_proposal_sha256": "03f9b6ffc5f2d5c00bfed692f2679193df3dc6fcb39683c5347bab4f168f1bbe",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_b.html",
+          "canonical_sha256": "b0efed9fc1ecb7b9c52193198285a61e5d0ba0da58e6ec6c437cd441fac51108",
+          "archived_proposal_sha256": "cc988aa15a21ff00b3e351ca3e647975bfe68fd965e3828b1b4606ecf5da4854",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_c.html",
+          "canonical_sha256": "95d9db05c47f750770a6db9e86e1606a746a7c2974c02936129235273c615825",
+          "archived_proposal_sha256": "a322b37d23cf623099068801d2eae00b8d597e262583d8f4f297b413da7a611e",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_d.html",
+          "canonical_sha256": "1e35d733240e944c587dffa025e720effcd4c0ca035a8d9898e6c0bd43f38e61",
+          "archived_proposal_sha256": "f13bf0acc22e5992c5ffaa26da2a4d9351b6f7a3cec72301b62cb5fdbdfbdcfd",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_justifications.json",
+          "canonical_sha256": "00393fadff3be7a72c61835b94737fe12d03dca4d9b93fd307d71628fbeb7b0e",
+          "archived_proposal_sha256": "7087dbb7f5d66012d3b60b01a38471fe404acc71c10c849fbe445b938e7b503e",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_pop1.html",
+          "canonical_sha256": "832a8fc0c329c814447b47344b06c9bfa873274a0c8fef4dd811617f70bd265f",
+          "archived_proposal_sha256": "cc4c322d546fb8c09f258f6fe2639fd737fd2c1ff309b02711b1aa62ae9ffa98",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_pop2.html",
+          "canonical_sha256": "ac68031bd9d7ee6944a8e6b2bb2a56cec8d83388ec9de7d93ba738e4bf750508",
+          "archived_proposal_sha256": "140bff48243a1bb3b6f4cc6d68d7d26bf56c50ab07ddefca481048c0678caf77",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_pop3.html",
+          "canonical_sha256": "55ee1d61556b4ca1729aeb47c4a330eed763b612a908868873f82af0e9e6cbbc",
+          "archived_proposal_sha256": "ffaa9a7949ba710434af418e05366b1ea3810cb61544635bd1a2fef994866249",
+          "same": false
+        },
+        {
+          "path": "chapters/J45/J45_pop4.html",
+          "canonical_sha256": "abde85d51d9d18f8190f6b364e4d194bae7ea8d23ba8335cc67b6a790ea5540c",
+          "archived_proposal_sha256": "46c8a74e4d7ee211f35aad2fdb93c77f17fcfc1f37724bb48065d27f4fcb10bb",
+          "same": false
+        }
+      ],
+      "different_sources": 9,
+      "total_proposed_sources": 9,
+      "queue_action": "aucune_entree_pour_une_archive"
+    }
+  ],
+  "new_detected_delivery": {
+    "chapter": "J45 — Asthme (P-02-Pneumologie)",
+    "commit": "c3dd8cd0791fef551089bf6240f2adf45f0586fe",
+    "commit_at_utc": "2026-10-08T12:53:39Z",
+    "lot": "2026-10-08-J45-2",
+    "declared_base": "28c0a58486d58ee1e5d4ef4515aa1080b9046e61",
+    "base_predates_rule_and_initial_queue": true,
+    "status": "detectee_sur_branche_non_injectee",
+    "changed_paths": [
+      "docs/collaboration/SIGNAUX_CLAUDE.json",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/controles/diff_main.diff",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/controles/j45_native_results.json",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/livraison.json",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/rapport.md",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_a.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_b.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_c.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_d.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_justifications.json",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_pop1.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_pop2.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_pop3.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/sources/chapters/J45/J45_pop4.html",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/verification/corrections_codex_1.md",
+      "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/verification/corrections_codex_1b.md"
+    ],
+    "canonical_changed_paths": [],
+    "queue_changed": false,
+    "manifest_path": "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-J45-2/livraison.json",
+    "manifest_sha256": "fd79f04975501872e0c4a12bae5fa6fdbc0a6574cdf3cc9dbc948e64c3f1bc7a",
+    "manifest_kind": "claude_contribution",
+    "manifest_status": "J45 — Asthme (P-02-Pneumologie), version 2 : réserves de la réception Codex 88cba09 (information professionnelle suisse lue sur compendium.ch ; méthacholine et mannitol réduits à GINA 2026) ; remplace le lot 2026-10-08-J45",
+    "signal_status": "remis_pour_audit_codex",
+    "producer_claims": "Compendium suisse lu, méthacholine/mannitol réduits à GINA 2026 ; contrôles annoncés dans rapport. Annonces reçues, non médicalement certifiées par ce poste.",
+    "audit_and_injection_presumed": false,
+    "queue_action": "aucune_entree_avant_injection_reelle",
+    "notified_root": true
+  },
+  "historical_integrations_prior_to_rule": [
+    {
+      "commit": "f149128357ce6cdc7bb9d7c77a837e545facc814",
+      "at_utc": "2026-10-07T22:30:20Z",
+      "subject": "Intégrer huit cours Claude après contrelecture et vérifier les plateformes MEDINA",
+      "queue_interpretation": "Historique conservé, aucune entrée nouvelle rétroactive présumée."
+    },
+    {
+      "commit": "c426d0b0bdd41f25638a788748e2b3680b8eade3",
+      "at_utc": "2026-10-07T23:27:04Z",
+      "subject": "Intégrer les dernières justifications Claude contre-relues et restaurer les preuves de livraison",
+      "queue_interpretation": "Antérieur à la nouvelle règle ; distinct d’une remise simplement archivée."
+    }
+  ],
+  "integration_branch": {
+    "head": "303f95a66dd2b4b0622867854d2add4bce4de310",
+    "commit_at_utc": "2026-09-26T20:01:47Z",
+    "status": "historique_non_nouvelle_injection_actuelle"
+  },
+  "limits": [
+    "État borné aux têtes exactes indiquées. Toute tête postérieure nécessite comparaison canonique et ajout de file seulement si injection réelle.",
+    "La contrelecture médicale complète de J45-2 et ses contrôles sur la nouvelle main ne sont pas exécutés ici. Les réserves précédentes ne sont pas considérées levées par une annonce seule.",
+    "Les preuves historiques et résultats du coordinateur ne sont pas présentés comme nouveaux tests de ce poste.",
+    "Aucune certification médicale exhaustive, aucune déclaration de fragment achevé ou de CIM-11 validée.",
+    "Main a avancé de 66f1bd93 à 883869c7 pendant ce contrôle ; delta documentaire de 11 chemins examiné, aucun canonique ni file d’audit changé."
+  ],
+  "canonical_modified": false,
+  "git_modified": false,
+  "incoming_code_executed": false,
+  "external_message_sent": false,
+  "queue_modified": false
+}

@@ -1,0 +1,735 @@
+{
+  "schema_version": 1,
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "written_at_zurich": "2026-10-08T13:58:42.803375+02:00",
+  "role": "sentinelle source/technique; lecture primaire et archivage, aucun candidat exécuté",
+  "source_base_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+  "copied_cache_verified": [
+    {
+      "id": "ssc2026",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "status": 200,
+      "bytes": 329772,
+      "sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "primary_html": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.html",
+      "text_path": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.txt",
+      "captured_by": "claude_spec",
+      "original_metadata": {
+        "name": "ssc2026",
+        "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+        "attempted_at": "2026-10-08T11:27:34.132479+00:00",
+        "status": 200,
+        "final_url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+        "bytes": 329772,
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1"
+      }
+    },
+    {
+      "id": "pmc2021",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+      "status": 200,
+      "bytes": 1196381,
+      "sha256": "59987a3ccbb78857ed62a113e583bb474c16169fd8480bc82b0604c66c11b861",
+      "primary_html": "/workspace/medina-env/reprise-a41/sources/pmc2021.primary.html",
+      "text_path": "/workspace/medina-env/reprise-a41/sources/pmc2021.primary.txt",
+      "captured_by": "claude_spec",
+      "original_metadata": {
+        "name": "pmc2021",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+        "attempted_at": "2026-10-08T11:27:34.133146+00:00",
+        "status": 200,
+        "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+        "bytes": 1196381,
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "59987a3ccbb78857ed62a113e583bb474c16169fd8480bc82b0604c66c11b861"
+      }
+    }
+  ],
+  "direct_access": [
+    {
+      "id": "ssc2026_lww7075",
+      "url": "https://journals.lww.com/ccmjournal/10.1097/CCM.0000000000007075",
+      "attempted_at_zurich": "2026-10-08T13:36:35.264039+02:00",
+      "method": "urllib HTTPS default TLS and existing proxy; no bypass",
+      "status": 402,
+      "error_excerpt": "{\"message\":\"Please contact the site owner for access.\"}",
+      "finished_at_zurich": "2026-10-08T13:36:35.613982+02:00"
+    },
+    {
+      "id": "ssc2026_pubmed41874620",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41874620/",
+      "attempted_at_zurich": "2026-10-08T13:36:35.265297+02:00",
+      "method": "urllib HTTPS default TLS and existing proxy; no bypass",
+      "status": 200,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/41874620/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 285952,
+      "sha256": "6beef91e4e4ddd6385c58646fa3aaec6d1bc38e592e193b11c3e487454d0ed25",
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_pubmed41874620.html",
+      "finished_at_zurich": "2026-10-08T13:36:36.107003+02:00"
+    },
+    {
+      "id": "ssc2026_europepmc_icm",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1007%2Fs00134-026-08361-1%22&format=json&resultType=core",
+      "attempted_at_zurich": "2026-10-08T13:36:35.264834+02:00",
+      "method": "urllib HTTPS default TLS and existing proxy; no bypass",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1007%2Fs00134-026-08361-1%22&format=json&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 27075,
+      "sha256": "59a3ca604aadb7226ebe5ac58f7d284021a71f90dce9d5d99e1c58c979ed2244",
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_europepmc_icm.json",
+      "finished_at_zurich": "2026-10-08T13:36:38.221908+02:00"
+    },
+    {
+      "id": "ssc2026_correction_search",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Surviving+Sepsis+Campaign%22+AND+%28TITLE%3ACorrection+OR+TITLE%3AErratum%29+AND+FIRST_PDATE%3A%5B2026-01-01+TO+2026-10-08%5D&format=json&resultType=core",
+      "attempted_at_zurich": "2026-10-08T13:36:35.265572+02:00",
+      "method": "urllib HTTPS default TLS and existing proxy; no bypass",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Surviving+Sepsis+Campaign%22+AND+%28TITLE%3ACorrection+OR+TITLE%3AErratum%29+AND+FIRST_PDATE%3A%5B2026-01-01+TO+2026-10-08%5D&format=json&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 26448,
+      "sha256": "100abd083ed3884f2ec264b9eed9c52038e4f40405a3beb4814223a111cb08a3",
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_correction_search.json",
+      "finished_at_zurich": "2026-10-08T13:36:36.596208+02:00"
+    },
+    {
+      "id": "chuv_pct_limitations",
+      "url": "https://www.chuv.ch/fileadmin/sites/dl/documents/pct_limitations_emploi.pdf",
+      "attempted_at_zurich": "2026-10-08T13:36:35.614077+02:00",
+      "method": "urllib HTTPS default TLS and existing proxy; no bypass",
+      "status": 200,
+      "final_url": "https://www.chuv.ch/fileadmin/sites/dl/documents/pct_limitations_emploi.pdf",
+      "content_type": "application/pdf",
+      "bytes": 10239,
+      "sha256": "cb926338d996eeb4c1a14f0ab9355d802346a0bef984f35cb9d92248381bde1d",
+      "path": "/workspace/medina-env/reprise-a41/sources/chuv_pct_limitations.pdf",
+      "finished_at_zurich": "2026-10-08T13:36:36.592300+02:00"
+    },
+    {
+      "id": "ssc2026_publisher_correction",
+      "url": "https://doi.org/10.1007/s00134-026-08410-9",
+      "attempted_at_zurich": "2026-10-08T13:46:24.176504+02:00",
+      "method": "urllib HTTPS default TLS and existing proxy; no bypass",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s00134-026-08410-9?error=cookies_not_supported&code=8ff1d14d-83a2-45b7-a54e-3cfc39ba411b",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 441394,
+      "sha256": "a1f34b5e0f2143c190622c5cc8f1026c0c7a04c9ab9c2b36e9319d6a9b33c64e",
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_publisher_correction.html",
+      "finished_at_zurich": "2026-10-08T13:46:27.238021+02:00"
+    },
+    {
+      "id": "usz_laboratory_index",
+      "url": "https://www.usz.ch/fachbereich/klinische-chemie/angebot/analysenverzeichnis/",
+      "attempted_at_zurich": "2026-10-08T13:46:24.177034+02:00",
+      "method": "urllib HTTPS default TLS and existing proxy; no bypass",
+      "status": 404,
+      "error_excerpt": "<!DOCTYPE html>\n\n<html lang=\"de\">\n<head>\n\t\t\t\t\t\t<title>Page not found &#8211; USZ</title>\n\t\t\t\t<meta charset=\"UTF-8\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<link rel=\"pingback\" href=\"https://www.usz.ch/wp/xmlrpc.p",
+      "finished_at_zurich": "2026-10-08T13:46:25.791512+02:00"
+    }
+  ],
+  "ssc2026": {
+    "publication_displayed": "2026-03-23",
+    "statement_count_verified": 129,
+    "new_statements_claimed_by_primary": 46,
+    "cards_path": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+    "cards_sha256": "9a6720d374231b047c8116149f5519775a9613feaac430a40a3c11a078a799b3",
+    "verified_cards": [
+      {
+        "page_order": 4,
+        "sccm_group_id": 4,
+        "statement_and_certainty": "For acutely ill patients in hospital, we “recommend” using NEWS, NEW2, MEWS, or SIRS over qSOFA as a single tool to screen for sepsis.\nCertainty of evidence: Moderate",
+        "strength": "Strong",
+        "category": "Screening",
+        "remarks": "",
+        "raw_fragment_sha256": "31e68bae4f8c5687083c8c1f95f2b6e5d1d7f075a336e6a3095f700303b281cc"
+      },
+      {
+        "page_order": 7,
+        "sccm_group_id": 7,
+        "statement_and_certainty": "For adults with possible, probable, or definite sepsis or septic shock, we “recommend” collecting blood cultures as soon as possible and ideally before the administration of antimicrobial therapy.\nCertainty of evidence: Low",
+        "strength": "Strong",
+        "category": "Blood culture",
+        "remarks": "",
+        "raw_fragment_sha256": "700529be9513ecdb819a702726392535eed3ebd66b72afb312dd741f9001c4c0"
+      },
+      {
+        "page_order": 8,
+        "sccm_group_id": 8,
+        "statement_and_certainty": "For adults with possible, probable, or definite sepsis or septic shock, we “suggest” measuring blood lactate.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Blood lactate",
+        "remarks": "",
+        "raw_fragment_sha256": "bb36bd580fdabeb4cda52a52f0071a9cd7bcdec3c9ae0b45ce43483bf82ba124"
+      },
+      {
+        "page_order": 9,
+        "sccm_group_id": 9,
+        "statement_and_certainty": "Sepsis and septic shock are medical emergencies; treatment and resuscitation should begin immediately.",
+        "strength": "Good practice statement",
+        "category": "Fluid resuscitation",
+        "remarks": "",
+        "raw_fragment_sha256": "8ecddf06069c43fda75fcd7ca3c0395a824a3629ce04ea025f49e5f9b519aaab"
+      },
+      {
+        "page_order": 10,
+        "sccm_group_id": 10,
+        "statement_and_certainty": "For adults with sepsis-induced hypoperfusion or septic shock, we “suggest” administering at least 30 mL/kg of IV crystalloid in the first 3 hr.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Fluid resuscitation",
+        "remarks": "Remarks\nConsideration should be given to individual patient characteristics and context when selecting initial fluid volume.\nClinicians prescribing fluids should perform frequent, ongoing reassessment and closely monitor patients to avoid harms of under- or over-resuscitation.\nWeight-based fluid volume should be calculated based on actual body weight, or by adjusted or ideal body weight in patients with body mass index > 30 kg/m2.",
+        "raw_fragment_sha256": "c4361ed23d7d83c4e95d507c8698e009bd9f6637dfecb4096a90ea7389db2e77"
+      },
+      {
+        "page_order": 11,
+        "sccm_group_id": 11,
+        "statement_and_certainty": "For adults with sepsis-induced hypotension, we “suggest” initial IV crystalloid fluid bolus resuscitation followed by vasopressor support if hypotension persists.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Fluid resuscitation",
+        "remarks": "Remarks\nIn patients with unstable septic shock, immediate concurrent administration of vasopressors together with IV crystalloid fluid may be warranted on a case-by-case basis. Presence of unstable shock should be determined by physical examination. Suggestive clinical features of unstable shock include severely reduced blood pressure, mottled skin, ashen appearance, cyanosis/decreased oxygen saturation, tachycardia, and altered mentation.",
+        "raw_fragment_sha256": "3064ac478059786a39d40be75732f9ec39db8a222b7163c6998cb241efab3336"
+      },
+      {
+        "page_order": 12,
+        "sccm_group_id": 12,
+        "statement_and_certainty": "In adults with septic shock, we “suggest” starting vasopressors peripherally to restore MAP rather than delaying initiation until central venous access is secured.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Vasopressor administration",
+        "remarks": "Remarks\nData are insufficient to recommend a duration of use, dose, or access route (size of peripheral IV line or anatomic location). Midline catheters were not considered.",
+        "raw_fragment_sha256": "5887ced93a5046409c1a98e35f8f7d4cc4a32a500a1ceebcf3c71c45a2d31db3"
+      },
+      {
+        "page_order": 13,
+        "sccm_group_id": 13,
+        "statement_and_certainty": "For adults with septic shock, we “recommend” an initial MAP target of 65 mm Hg over higher MAP targets.\nCertainty of evidence: Moderate",
+        "strength": "Strong",
+        "category": "Mean arterial pressure",
+        "remarks": "Remarks\nIn practice, it is not feasible to maintain MAP at exactly 65 mm Hg, so a reasonable range (e.g., within 5 mm Hg) should be used. Vasopressors should be titrated to maintain MAP within this range.",
+        "raw_fragment_sha256": "8c83c0255c1ba90d124d5dc2b9de085285706ceb3a6d3802e54bfc1a8a549031"
+      },
+      {
+        "page_order": 14,
+        "sccm_group_id": 14,
+        "statement_and_certainty": "For adults with septic shock 65 years old or older, we “suggest” an initial MAP range of 60-65 mm Hg over higher ranges.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Mean arterial pressure",
+        "remarks": "",
+        "raw_fragment_sha256": "345d347d9e1d8904683da2f9831b359f273b664b7a4262e41051d06911396ab1"
+      },
+      {
+        "page_order": 22,
+        "sccm_group_id": 22,
+        "statement_and_certainty": "For adults with possible or probable sepsis or septic shock, we “suggest” using clinical evaluation alone over procalcitonin plus clinical evaluation to decide whether to start antimicrobial therapy.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Antibiotic initiation",
+        "remarks": "",
+        "raw_fragment_sha256": "dab6aff67c98b798e66387afb9b78bb75e9531823d4ba18f605e34f931453b24"
+      },
+      {
+        "page_order": 23,
+        "sccm_group_id": 23,
+        "statement_and_certainty": "Adults with sepsis or septic shock should be rapidly evaluated for specific anatomical diagnoses or sources of infection that require emergent source control.",
+        "strength": "Good practice statement",
+        "category": "Source control",
+        "remarks": "",
+        "raw_fragment_sha256": "6757b7ed6a731799963060b700b773e120f234ef2ff2ce4765881e92a96e0833"
+      },
+      {
+        "page_order": 24,
+        "sccm_group_id": 24,
+        "statement_and_certainty": "For adults with sepsis or septic shock and a specific anatomical diagnosis or source of infection that requires source control, we “suggest” early source control over late source control, ideally within 6 hr of diagnosis of sepsis or septic shock requiring source control.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Source control",
+        "remarks": "",
+        "raw_fragment_sha256": "c63a70d8263dc919d8545feeb41da621ed88dc093ba0bd089477aa4b2b950510"
+      },
+      {
+        "page_order": 25,
+        "sccm_group_id": 25,
+        "statement_and_certainty": "For adults with sepsis or septic shock at high risk of infection with a specific MDR pathogen, we “suggest” using empirical antimicrobial therapy with coverage for this MDR pathogen.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Multidrug resistance",
+        "remarks": "Remarks\nRisk factors for MDR pathogens include colonization with the MDR pathogen of concern, previous infection with the MDR pathogen of concern, prolonged use of broad-spectrum antibiotics, and prolonged hospitalization in a unit with a high prevalence of the MDR pathogen of concern.",
+        "raw_fragment_sha256": "d16e58408a78edbda11ff91fcd1912dec4f35238325ee3cfdd1676a30f2309fa"
+      },
+      {
+        "page_order": 26,
+        "sccm_group_id": 26,
+        "statement_and_certainty": "For adults with sepsis or septic shock at low risk of infection with a specific MDR pathogen, we “suggest against” using empirical antimicrobial therapy with coverage for this MDR pathogen.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Multidrug resistance",
+        "remarks": "",
+        "raw_fragment_sha256": "af0901b3d79e7438b0fe7861990b4a0a779bdac8b781c8fb8e50debb8910dc74"
+      },
+      {
+        "page_order": 27,
+        "sccm_group_id": 27,
+        "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest against” using empirical antifungal therapy.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Antifungal coverage",
+        "remarks": "Remarks\nEmpiric antifungal therapy should be considered on a case-by-case basis in selected patients with sepsis or septic shock and risk factors for fungal infection, including immunosuppression, prolonged use of antibiotics, prolonged hospitalization, and intra-abdominal sources of infection.",
+        "raw_fragment_sha256": "8c35b11a51ba8d02ac31ed665ac8bfb5df362d73709ae1b8fa61ea0a8b4d8fe0"
+      },
+      {
+        "page_order": 28,
+        "sccm_group_id": 28,
+        "statement_and_certainty": "For adults with sepsis or septic shock without risk factors for anaerobic infection, we “suggest” using an empiric antibiotic regimen without anaerobic coverage.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Anaerobic coverage",
+        "remarks": "Remarks\nWhen coverage of potential MDR pathogens is required, agents with anaerobic activity (e.g., piperacillin–tazobactam or carbapenems) are appropriate when alternative agents lacking anaerobic coverage are insufficient.",
+        "raw_fragment_sha256": "043159b40c5a1dafceed2a687c158b3a5ecc3f0066201e2e48177bd97dcad6eb"
+      },
+      {
+        "page_order": 29,
+        "sccm_group_id": 29,
+        "statement_and_certainty": "For adults with sepsis or septic shock with specific risk factors for anaerobic infection, we “suggest” using an empiric antibiotic regimen that includes anaerobic coverage.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Anaerobic coverage",
+        "remarks": "Remarks\nRisk factors for anaerobic infection include intra-abdominal or deep-seated gynecological/obstetric source of infection, necrotizing soft-tissue infection, head and neck infection, and CNS abscesses or empyema.",
+        "raw_fragment_sha256": "24b65e200639bd687245477e1d277c8e431d01d31d47b242972f0273d01d679a"
+      },
+      {
+        "page_order": 32,
+        "sccm_group_id": 32,
+        "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest against” using Candida fungal biomarkers to guide initiation of empiric antifungal therapy.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Antifungal therapy",
+        "remarks": "Remarks\nUse of Candida biomarkers to guide initiation of empiric antifungal therapy may be considered on a case-by-case basis in selected patients at high risk of Candida infection, including those with immunosuppression, prolonged exposure to antibiotics, prolonged hospitalization, and intra-abdominal source of infection.",
+        "raw_fragment_sha256": "24ce5f0fefcca35fc8fd1f95b6cd11e6bb3696ed3cb33ab03b021865ddb0a39f"
+      },
+      {
+        "page_order": 33,
+        "sccm_group_id": 33,
+        "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend” using prolonged infusion of beta-lactams for maintenance (after an initial loading dose) over bolus administration.\nCertainty of evidence: Moderate",
+        "strength": "Strong",
+        "category": "Beta-lactam antibiotics",
+        "remarks": "",
+        "raw_fragment_sha256": "9933d1381751ba588b4021e3bb648a708cda71243df7319dcee032939947c1dd"
+      },
+      {
+        "page_order": 34,
+        "sccm_group_id": 34,
+        "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest” using antimicrobial therapeutic drug monitoring (TDM) on a case-by-case basis in selected patients, based on clinical features, local pathogen and resistance patterns, drug class, and availability of TDM.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Drug monitoring",
+        "remarks": "",
+        "raw_fragment_sha256": "0ac0dcd25a7c3585145fd2e23e83ec30423e3872209813818862d89a2dda2570"
+      },
+      {
+        "page_order": 35,
+        "sccm_group_id": 35,
+        "statement_and_certainty": "Clinicians should continuously reevaluate patients, search for alternative diagnoses, and discontinue empiric antimicrobial therapy if an alternative cause of illness is demonstrated or strongly suspected in adults with suspected sepsis or septic shock but unconfirmed infection.",
+        "strength": "Good practice statement",
+        "category": "Antimicrobial therapy",
+        "remarks": "",
+        "raw_fragment_sha256": "abeb2a6f42616d355fdc921af29e1607ec18f75a4b178be02b31cab56f757813"
+      },
+      {
+        "page_order": 39,
+        "sccm_group_id": 39,
+        "statement_and_certainty": "For adults with an initial diagnosis of sepsis or septic shock and adequate source control, we “suggest” using shorter over longer duration of antimicrobial therapy.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Antimicrobial therapy",
+        "remarks": "",
+        "raw_fragment_sha256": "b2c8dca80091ce1b941a5fde16508ec9bc84fcdd4c21597771dfcf83cee3b12c"
+      },
+      {
+        "page_order": 40,
+        "sccm_group_id": 40,
+        "statement_and_certainty": "For adults with an initial diagnosis of sepsis or septic shock and adequate source control where optimal duration of therapy is unclear, we “suggest” using procalcitonin AND clinical evaluation to decide when to discontinue antimicrobial therapy over clinical evaluation alone.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Antimicrobial therapy",
+        "remarks": "",
+        "raw_fragment_sha256": "cf1eda93433ed10322a631c68d32a170802aaaa735c7447d0725e2528b07c59e"
+      },
+      {
+        "page_order": 41,
+        "sccm_group_id": 41,
+        "statement_and_certainty": "In mechanically ventilated adults with sepsis or septic shock in units with a low prevalence of antimicrobial resistance, we “suggest” using selective decontamination of the digestive tract.\nCertainty of evidence: Moderate",
+        "strength": "Conditional",
+        "category": "Digestive tract decontamination",
+        "remarks": "",
+        "raw_fragment_sha256": "89eb0037d38eec0f6e2fdc4bdf07a54f3769b0ddec2e63145ce2add6c5a14ce4"
+      },
+      {
+        "page_order": 42,
+        "sccm_group_id": 42,
+        "statement_and_certainty": "For adults with septic shock, we “suggest” using either invasive or noninvasive blood pressure monitoring.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Blood pressure monitoring",
+        "remarks": "Remarks\nInvasive blood pressure monitoring is advised in patients with shock who: require intermediate-to-high dose vasopressors, escalating doses of vasopressor, or multiple vasopressors; are receiving frequent arterial blood sampling; or have noninvasive blood pressure measurements which are inconsistent on repeated assessments.",
+        "raw_fragment_sha256": "b7292ecd5d7c8828655c6004a4d6737ece557640c4694f75f67ad25face7b852"
+      },
+      {
+        "page_order": 43,
+        "sccm_group_id": 43,
+        "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend” using crystalloids as first-line fluid for resuscitation.\nCertainty of evidence: Moderate",
+        "strength": "Strong",
+        "category": "Fluid type",
+        "remarks": "",
+        "raw_fragment_sha256": "6bfb61b5cb15c61aa5764a1ba956494759dff893f7e2a8b02045c46c3f03ce49"
+      },
+      {
+        "page_order": 44,
+        "sccm_group_id": 44,
+        "statement_and_certainty": "For adults with sepsis or septic shock undergoing initial resuscitation, we “suggest” using balanced crystalloids over 0.9% saline.\nCertainty of evidence: Moderate",
+        "strength": "Conditional",
+        "category": "Fluid type",
+        "remarks": "Remarks\nFor patients with sepsis and traumatic brain injury, we suggest using 0.9% saline.",
+        "raw_fragment_sha256": "2eb85c3d3fe20a04582a8146b55c2bb2018d3b41f704e9462dab1748b2ce0a74"
+      },
+      {
+        "page_order": 45,
+        "sccm_group_id": 45,
+        "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest” using crystalloids alone over crystalloids with supplemental albumin for fluid resuscitation.\nCertainty of evidence: Moderate",
+        "strength": "Conditional",
+        "category": "Fluid type",
+        "remarks": "Remarks\nUse of supplemental albumin may be appropriate for patients who already received large crystalloid volumes or have cirrhosis. Supplemental albumin should be avoided in patients with traumatic brain injury.",
+        "raw_fragment_sha256": "45e0d222c0ce151b94967f92cc5a4be110ee322f1565be66897f8b64718e15c8"
+      },
+      {
+        "page_order": 46,
+        "sccm_group_id": 46,
+        "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend against” using starches for resuscitation.\nCertainty of evidence: High",
+        "strength": "Strong",
+        "category": "Fluid type",
+        "remarks": "",
+        "raw_fragment_sha256": "6f2b81188ed273a899b3b1126f5ce2a34705ec5b8f471f6ba9ae39758b05afb6"
+      },
+      {
+        "page_order": 47,
+        "sccm_group_id": 47,
+        "statement_and_certainty": "For adults with sepsis and septic shock, we “suggest against” using gelatin for resuscitation.\nCertainty of evidence: Moderate",
+        "strength": "Conditional",
+        "category": "Fluid type",
+        "remarks": "",
+        "raw_fragment_sha256": "c7fe0c238b8bf13757329cdeaf9b78657eea67f9346715760bdfc3fcaec61780"
+      },
+      {
+        "page_order": 51,
+        "sccm_group_id": 51,
+        "statement_and_certainty": "For adults with sepsis and elevated lactate or septic shock, we “suggest” using serial lactate measurements to guide resuscitation.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Serial lactate",
+        "remarks": "Remarks\nFluid administration should be individualized after initial fluid bolus and monitoring of lactate decrement, rather than continuing fluids until lactate normalization is achieved.",
+        "raw_fragment_sha256": "cf917f09a12a82b129bf3985b2d4c835208bd5ea094e610fa42ea9a4e153bb70"
+      },
+      {
+        "page_order": 53,
+        "sccm_group_id": 53,
+        "statement_and_certainty": "For adults with septic shock, we “recommend” using norepinephrine as the first-line agent over dopamine, epinephrine, or selepressin.\nCertainty of evidence: High for dopamine, low for epinephrine and selepressin",
+        "strength": "Strong",
+        "category": "Vasopressors",
+        "remarks": "",
+        "raw_fragment_sha256": "9f5b4f77e366a0dcc8f9cfb33ba1098e06672b2b59dade7c8440f7d559df39ed"
+      },
+      {
+        "page_order": 55,
+        "sccm_group_id": 55,
+        "statement_and_certainty": "For adults with septic shock, we “suggest” using norepinephrine as the first-line agent over vasopressin or angiotensin II.\nCertainty of evidence: Low for vasopressin, very low for angiotension II",
+        "strength": "Conditional",
+        "category": "Vasopressors",
+        "remarks": "",
+        "raw_fragment_sha256": "4e06523d097997cb403450871dbb63a167afd05f96785cceece1ecb3b9ad20f6"
+      },
+      {
+        "page_order": 56,
+        "sccm_group_id": 56,
+        "statement_and_certainty": "For adults with septic shock on escalating doses of norepinephrine, we “suggest” adding vasopressin.\nCertainty of evidence: Moderate",
+        "strength": "Conditional",
+        "category": "Vasopressors",
+        "remarks": "",
+        "raw_fragment_sha256": "cf5c70207bd14024b2c82bcbccd6a5437316b0f44b4460a89cdf2a9c0780faa8"
+      },
+      {
+        "page_order": 57,
+        "sccm_group_id": 57,
+        "statement_and_certainty": "For adults with septic shock and inadequate MAP levels despite norepinephrine and vasopressin, we “suggest” adding epinephrine.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Vasopressors",
+        "remarks": "Remarks\nIn settings where vasopressin is not available, epinephrine can be added to norepinephrine alone.",
+        "raw_fragment_sha256": "78f961c2ce04185dfc488434a08a4f6cd6aeb71feb28fc82b0b432e831ec74f9"
+      },
+      {
+        "page_order": 58,
+        "sccm_group_id": 58,
+        "statement_and_certainty": "For adults with septic shock with concomitant cardiac dysfunction, we “suggest” using either norepinephrine or epinephrine as first line vasopressor.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Vasopressors",
+        "remarks": "Remarks\nNorepinephrine may be preferred in patients with tachyarrhythmia or significant sinus tachycardia. Conversely, epinephrine may be preferred in patients with bradyarrhythmia or significant sinus bradycardia.",
+        "raw_fragment_sha256": "aa00b648f1e4e6d315d464b81bb5f64757b52deb9ae1f9a7346d8e13a9fad403"
+      },
+      {
+        "page_order": 59,
+        "sccm_group_id": 59,
+        "statement_and_certainty": "For adults with refractory septic shock and escalating vasopressor requirements, there is “insufficient evidence” to make a recommendation on IV methylene blue.",
+        "strength": null,
+        "category": "Methylene blue",
+        "remarks": "Remarks\nAlthough methylene blue may improve blood pressure, there is insufficient evidence to determine if its use as rescue therapy improves survival; some patients with potentially treatable disease may value a trial.\n“In our practice,” 69% of panelists “never” or “almost never” use methylene blue as rescue therapy, 23% “sometimes” use it, 6% “usually” use it, and 1.5% “almost always” use it.",
+        "raw_fragment_sha256": "f3bc454ebb8987e3f0043023ef026a221e82b7c2afb8d5dae9530849321acf59",
+        "strength_html_label": "hide",
+        "recommendation_status": "insufficient_evidence_no_recommendation"
+      },
+      {
+        "page_order": 60,
+        "sccm_group_id": 60,
+        "statement_and_certainty": "For adults with septic shock and cardiac dysfunction with persistent hypoperfusion despite adequate fluid status and arterial blood pressure, we “suggest” using inotropes over no inotropes.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Inotropes",
+        "remarks": "Remarks\nFor patients requiring vasopressors to maintain MAP at target, inotropes should be used in addition to (not instead of) vasopressors.",
+        "raw_fragment_sha256": "7b6ad581f3b7156c76c427aec10ebeb23ccfa1ecfd0a07964263435577c604c9"
+      },
+      {
+        "page_order": 61,
+        "sccm_group_id": 61,
+        "statement_and_certainty": "For adults with septic shock with persistent hypoperfusion and cardiac dysfunction despite adequate fluid resuscitation and arterial blood pressure, we “suggest” adding dobutamine to norepinephrine or using epinephrine alone.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Inotropes",
+        "remarks": "Remarks\nData were insufficient to make a recommendation for dobutamine vs. milrinone.",
+        "raw_fragment_sha256": "ddd2e1fdd00a6f9e86db1f4c634c74ce0b89dc49e0361a12f21aed139ab19db6"
+      },
+      {
+        "page_order": 65,
+        "sccm_group_id": 65,
+        "statement_and_certainty": "For adults with sepsis, we “suggest” measuring oxygenation by either pulse oximeter (SpO2) or arterial blood gas (Sa O2) in conjunction with physical examination and clinical acumen.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Hypoxemia monitoring",
+        "remarks": "Remarks\nArterial blood gas measurements are the gold standard for assessing oxygenation; include other important information such as pH, PacO2, lactate, and bicarbonate; and are preferable when available. SpO2/FIO2 by pulse oximeter may substitute for PaO2/FIO2 ratio but is less accurate in patients in shock, with darker skin tones, and/or with oxygen saturations < 90% or > 97%.",
+        "raw_fragment_sha256": "40696fe6f0a5ca81ff65ec34421cf3c255b348748b6afc387deb2a675e224c81"
+      },
+      {
+        "page_order": 66,
+        "sccm_group_id": 66,
+        "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” titrating FIO2 to target either higher, more liberal oxygen levels or lower, conservative oxygen levels depending on patient factors and resource limitations.\nCertainty of evidence: Low",
+        "strength": "Conditional",
+        "category": "Oxygen targets",
+        "remarks": "Remarks\nAlthough there was variability across trials informing this recommendation, most used a lower target of approximately 90-93% SpO2 and a higher target of SpO2 ≥ 96.\n“In our practice”, panelists target SpO2 between 90% (IQR 90-92%) to 96% (IQR 94-98%) for patients with sepsis and acute hypoxemic respiratory failure.",
+        "raw_fragment_sha256": "b20ebbe74c417fad429b46113e041c4e0922edf8b529aebe4895f49c896ec506"
+      },
+      {
+        "page_order": 67,
+        "sccm_group_id": 67,
+        "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” using HFNC therapy over conventional oxygen therapy.\nCertainty of evidence: Very low",
+        "strength": "Conditional",
+        "category": "Respiratory support",
+        "remarks": "Remarks\nThis recommendation pertains to patients with a PaO2/FIO2 ratio < 200 or SpO2/FIO2 ratio < 235.",
+        "raw_fragment_sha256": "9745d202665978218e3f7de2818fe4b78682931747dbb964ed3722d72e9abea9"
+      }
+    ],
+    "128_historical": "Non vérifié dans une capture ancienne ; aucun changement 128 vers 129 ni lien causal au rectificatif établi."
+  },
+  "publisher_correction": {
+    "doi": "10.1007/s00134-026-08410-9",
+    "published_online": "2026-05-05",
+    "issue": "June 2026",
+    "read_level": "corps primaire réellement lu",
+    "corrected_names": [
+      [
+        "Waleed Alhazzanic",
+        "Waleed Alhazzani"
+      ],
+      [
+        "Joanna C. Dionnec",
+        "Joanna C. Dionne"
+      ],
+      [
+        "Kimia Honarmandc",
+        "Kimia Honarmand"
+      ],
+      [
+        "Bram Rochwergc",
+        "Bram Rochwerg"
+      ]
+    ],
+    "exact_quote": "The Original Article has been corrected. The Publisher apologises for this mistake.",
+    "clinical_change_described": false
+  },
+  "limits": [
+    "LWW DOI7075 répond HTTP402 ; texte intégral de cette version non lu, aucun contournement.",
+    "PubMed41874620 et EuropePMC sont utilisés ici pour métadonnées ; le compte 129 provient exclusivement du corps primaire SCCM.",
+    "Rectificatif Springer accessible malgré un paramètre de redirection cookies_not_supported ; le corps correctif et la date de record ont été réellement lus.",
+    "CHUV pct_limitations_emploi.pdf cite la liste Analyses2010 ; ne fournit pas de normes ni de tableau faux positifs/négatifs.",
+    "Les normes HUG/CHUV et notices suisses sont vérifiées par leurs auteurs propriétaires ; pas de seconde lecture technique factice.",
+    "Discordance d’unité HUG lactate 0,4–1,9 µmol/L signalée par auteur examens ; aucune substitution silencieuse en mmol/L.",
+    "A41 candidat non figé : aucun build/contrôle candidat lancé."
+  ],
+  "ownership": {
+    "sentinelle_medicale": [
+      "A41_a.html",
+      "A41_pop1.html"
+    ],
+    "test_allocation": [
+      "A41_b.html",
+      "A41_pop_pa.html"
+    ],
+    "review_plan": [
+      "A41_c.html",
+      "A41_pop_sciences_revision.html"
+    ],
+    "claude_spec": [
+      "A41_d.html",
+      "A41_pop2.html"
+    ],
+    "root": [
+      "glossary/a41.py",
+      "A41_justifications.json"
+    ]
+  },
+  "runtime_prerequisites": {
+    "started_at": "2026-10-08T11:49:20.672Z",
+    "scope": "Prerequisites after restart; existing canonical build only, not A41 candidate",
+    "input": "/workspace/medina-env/reprise-i83/e2-canonical/global/MEDINA.html",
+    "input_sha256": "86129250ed54f7fa2fd853caa37b294b6e169acd8a1ea111bbc86580688ba183",
+    "checks": [
+      "HTTP loopback returns 200",
+      "Canonical compressed course loader reaches MDN_READY",
+      "Canonical A41 mounted with four tabs",
+      "No pageerror"
+    ],
+    "errors": [],
+    "result": "passed",
+    "virtual_assets": [
+      {
+        "request": "lesson-core.js",
+        "key": "assets/lesson-core.js",
+        "sha256": "e12ccf7feec4b3f60f06b91ab071b3690c5e739a037c43790b669cfde8892380"
+      }
+    ],
+    "chromium": "151.0.7922.173",
+    "finished_at": "2026-10-08T11:49:22.635Z"
+  },
+  "archive_inventory": [
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ACCES_COMPLEMENTAIRES.json",
+      "bytes": 3490,
+      "sha256": "cf31b3205de0d07efecfc273db807c27db11677a3dd92794fac50cae20cd32e3"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ACCES_RECTIFICATIF_NORMES.json",
+      "bytes": 1375,
+      "sha256": "d91b02bd51b3685c41ad5cd22841cc2e6bf74695f2c6373c47b58dcfa5c3eefd"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/CACHE_REUTILISE.json",
+      "bytes": 2033,
+      "sha256": "102d89e961bb6ed0de78d83a5714bfa00a4e0384bc880affb67a82b2f69c50f2"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/RUNTIME_PREREQUIS.json",
+      "bytes": 790,
+      "sha256": "294b28bb59f3d8249477f5831acbc9451f02ef0f0367d973ef4d8c38ce197cb2"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/RUNTIME_PREREQUIS_DEUXIEME_ESSAI.json",
+      "bytes": 815,
+      "sha256": "720b6d3f4269c0efdebf5f9a9b36d594722ad071b573747ad57fbfbe8d6f18bd"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/RUNTIME_PREREQUIS_PREMIER_ESSAI.json",
+      "bytes": 790,
+      "sha256": "27836a2db88d49d09fd263fb9dedcf228f7f5620781042289f9d659c989590ea"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/aprocchss.raw",
+      "bytes": 175580,
+      "sha256": "1a90476d5a688bddca2034098b62e55feb085ad1bce69375059d841c68ff9a11"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/aprocchss.txt",
+      "bytes": 2815,
+      "sha256": "1c8bdeb405be751605c2f25ceac9601ffe1bda53b7615fb1e7de8e31be7930ee"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/chuv_pct_limitations.pdf",
+      "bytes": 10239,
+      "sha256": "cb926338d996eeb4c1a14f0ab9355d802346a0bef984f35cb9d92248381bde1d"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/chuv_pct_limitations.txt",
+      "bytes": 1488,
+      "sha256": "7a7ab40b49e9ce97fd61b3dc2b7b8f0d8fa87a76e77467559b12d97557dd0c33"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/mermel1993.json",
+      "bytes": 5091,
+      "sha256": "26617b9f1f888cb0ab44d31d192d427d19e8de170d411903819a4d428040ff7f"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/pmc2021.primary.html",
+      "bytes": 1196381,
+      "sha256": "59987a3ccbb78857ed62a113e583bb474c16169fd8480bc82b0604c66c11b861"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/pmc2021.primary.txt",
+      "bytes": 407008,
+      "sha256": "30cf18d3f33b628b9ca4c2d488bfb3dd4219440572d302fd12b7b31edb7f2a6e"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+      "bytes": 72947,
+      "sha256": "9a6720d374231b047c8116149f5519775a9613feaac430a40a3c11a078a799b3"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.txt",
+      "bytes": 43241,
+      "sha256": "3bf4f5bf5a7660fddd0daf75ac3b39ed7e64154fa78159ba691e51c075d046a8"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.html",
+      "bytes": 329772,
+      "sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.txt",
+      "bytes": 50425,
+      "sha256": "46e4cc716f18ada13e6ea80c4ef100b6710fb73a73a196680fa3b9fb173c5927"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_correction_search.json",
+      "bytes": 26448,
+      "sha256": "100abd083ed3884f2ec264b9eed9c52038e4f40405a3beb4814223a111cb08a3"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_europepmc_icm.json",
+      "bytes": 27075,
+      "sha256": "59a3ca604aadb7226ebe5ac58f7d284021a71f90dce9d5d99e1c58c979ed2244"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_publisher_correction.html",
+      "bytes": 441394,
+      "sha256": "a1f34b5e0f2143c190622c5cc8f1026c0c7a04c9ab9c2b36e9319d6a9b33c64e"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_publisher_correction.txt",
+      "bytes": 23116,
+      "sha256": "d5ba494cd4d3c2c913566fbd3bdd90177481014ed81d7f99786ba04543e57fe7"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_pubmed41874620.html",
+      "bytes": 285952,
+      "sha256": "6beef91e4e4ddd6385c58646fa3aaec6d1bc38e592e193b11c3e487454d0ed25"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-a41/sources/ssc2026_pubmed41874620.txt",
+      "bytes": 36682,
+      "sha256": "da38985835f6c23bc5a47105765cce79c93ce229da1f18f8c620f183c7e87734"
+    }
+  ],
+  "pharmacologie_archive": {
+    "at_zurich": "2026-10-08T14:02:55.672048+02:00",
+    "index": "/workspace/medina-env/reprise-a41/sources/pharmacologie/ARCHIVAGE.json",
+    "sources_count": 22,
+    "files_count": 36,
+    "reading_attribution": "Claude_spec ; copies vérifiées techniquement sans lecture médicale factice"
+  },
+  "pathologie1_archive": {
+    "at_zurich": "2026-10-08T14:27:59.918304+02:00",
+    "index": "/workspace/medina-env/reprise-a41/sources/pathologie1/ARCHIVAGE.json",
+    "sources_count": 11,
+    "reading_attribution": "sentinelle_medicale",
+    "PCT_complement_preserved": true
+  }
+}
