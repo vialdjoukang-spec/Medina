@@ -21,9 +21,26 @@ CLASSMAP = {'tabs':'mc-tabs','panel':'mc-panel','chap-body':'mc-body','sci-body'
  'src':'mc-src','pager':'mc-pager','quiz':'mc-quiz','fb':'mc-fb','status':'mc-status','chap-head':'mc-chap-head','code':'mc-code','n':'mc-n','lab':'mc-lab',
  'ratio':'mc-ratio','maj':'mc-maj','ui':'mc-ui','chap':'mc-chap','prev':'mc-prev','next':'mc-next','w':'mc-w','ssp':'mc-ssp'}
 
+GREEN_BUTTON = re.compile(r'<button\b([^>]*)>(.*?)</button>', re.S)
+ATTR = re.compile(r'\s+([\w:-]+)(?:\s*=\s*("[^"]*"|\'[^\']*\'))?')
+
+def green_word(m):
+    """Mot vert -> span interactif, quel que soit l'ordre des attributs.
+
+    Chromium rend un <button> comme un bloc en ligne insécable, même en display:inline :
+    un libellé long passait entier à la ligne suivante. Le span se coupe comme du texte ;
+    role, tabindex et le gestionnaire clavier du moteur conservent l'accessibilité."""
+    attrs = [(a.group(1), a.group(2)) for a in ATTR.finditer(m.group(1))]
+    names = dict(attrs)
+    if names.get('class', '').strip('"\'').split() != ['w'] or 'data-k' not in names:
+        return m.group(0)
+    rest = ''.join(' ' + k + ('=' + v if v is not None else '') for k, v in attrs
+                   if k not in ('class', 'data-k', 'type', 'role', 'tabindex'))
+    return '<span class="mc-w" role="button" tabindex="0" data-k=' + names['data-k'] + rest + '>' + m.group(2) + '</span>'
+
 def transform(src):
-    # boutons « mot vert » -> span interactif (autorise l'imbrication des abréviations)
-    src = re.sub(r'<button class="w" data-k="([^"]+)">(.*?)</button>', r'<span class="mc-w" role="button" tabindex="0" data-k="\1">\2</span>', src, flags=re.S)
+    # boutons « mot vert » -> span interactif (autorise l'imbrication des abréviations et la coupure en fin de ligne)
+    src = GREEN_BUTTON.sub(green_word, src)
     src = re.sub(r'<button data-ok="([01])">(.*?)</button>', r'<div class="mc-opt" role="button" tabindex="0" data-ok="\1">\2</div>', src, flags=re.S)
     def cls(m):
         return 'class="' + ' '.join(CLASSMAP.get(c, c) for c in m.group(1).split()) + '"'
