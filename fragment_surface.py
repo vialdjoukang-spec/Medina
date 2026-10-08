@@ -9,6 +9,10 @@ import json
 import re
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from tools import libelles
+
 
 SPECIALTY_BY_FRAGMENT = {
     'S01': 'cardiologie', 'S02': 'pneumologie', 'S03': 'gastroenterologie',
@@ -199,16 +203,16 @@ def category_organisation_data(source, fragment, root):
         course = course_by_alias.get(entry['code'])
         code = course['code'] if course else entry['code']
         lesson = block.setdefault(code, {
-            'code': code, 'title': course['title'] if course else entry['title'],
+            'code': code, 'title': course['title'] if course else libelles.chapitre(entry['code'], entry['title']),
             'integrated': bool(course and course.get('integrated')),
             'source_fragment_id': course['source_fragment_id'] if course else fragment['id'],
             'variants': [], 'production_order': ranks[entry['code']],
-            'covers': [{'code': covered, 'title': by_code[covered]['title'], 'subcodes': by_code[covered].get('subcodes', [])}
+            'covers': [{'code': covered, 'title': libelles.chapitre(covered, by_code[covered]['title']), 'subcodes': by_code[covered].get('subcodes', [])}
                        for covered in (course['covers'] if course else [entry['code']])
                        if covered in by_code and owners.get(covered) == fragment['id']],
         })
         lesson['production_order'] = min(lesson['production_order'], ranks[entry['code']])
-        lesson['variants'].append({'code': entry['code'], 'title': entry['title'], 'subcodes': entry.get('subcodes', [])})
+        lesson['variants'].append({'code': entry['code'], 'title': libelles.chapitre(entry['code'], entry['title']), 'subcodes': entry.get('subcodes', [])})
     result = []
     for index, ((code, title), lessons) in enumerate(sorted(blocks.items()), 1):
         ordered = sorted(lessons.values(), key=lambda lesson: (lesson['production_order'], lesson['code']))
@@ -221,7 +225,7 @@ def category_organisation_data(source, fragment, root):
             if owner != fragment['id']:
                 raise ValueError('Cours étranger dans le frontend : ' + lesson['code'])
             lesson['url'] = '#/entry/' + lesson['code']
-        result.append({'id': code, 'code': code, 'title': title, 'order': index, 'lessons': ordered})
+        result.append({'id': code, 'code': code, 'title': libelles.bloc(code, title), 'order': index, 'lessons': ordered})
     represented = [variant['code'] for block in result for lesson in block['lessons'] for variant in lesson['variants']]
     if sorted(represented) != sorted(entry['code'] for entry in entries):
         raise ValueError('La navigation doit conserver toutes les catégories du fragment.')

@@ -10,6 +10,9 @@
    const code=el.dataset.mcgCategory||el.dataset.mcgBlock||el.dataset.mcgSidebarCategory;
    if(rank.has(code))el.style.setProperty('--cat',colour(rank.get(code)));
   });
+  const open=document.querySelector('.mc[data-code]'),code=open&&open.dataset.code;
+  if(code){const b=O.blocks.find(x=>x.lessons.some(l=>l.code===code||l.variants.some(v=>v.code===code)));
+   if(b)document.documentElement.style.setProperty('--cat',colour(rank.get(b.code)));}
   const lesson=document.querySelector('.mcg-planned-panel'),item=lesson&&document.querySelector('[data-mcg-block]');
   if(lesson&&item)lesson.style.setProperty('--cat',item.style.getPropertyValue('--cat'));
  }

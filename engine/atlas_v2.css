@@ -4,7 +4,7 @@
    Une couleur vive et distincte par catégorie (--cat, posée par atlas_v2.js). Thème clair uniquement. */
 html[data-medina-fragment]{
  --x-font:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,"Segoe UI",Arial,sans-serif;
- --x-bg:#eef0f3;--x-surface:#ffffff;--x-ink:#0d0f12;--x-ink2:#262a31;--x-line:#c9ced6;--x-brand:#14301f;--x-focus:#ffb000;
+ --x-bg:#e8ebf0;--x-surface:#ffffff;--x-ink:#0d0f12;--x-ink2:#262a31;--x-line:#c9ced6;--x-brand:#14301f;--x-focus:#ffb000;
  --cat:#1565c0;color-scheme:light}
 html[data-medina-fragment][data-medina-fragment] body{background:var(--x-bg)!important;color:var(--x-ink)!important;-webkit-font-smoothing:antialiased}
 html[data-medina-fragment][data-medina-fragment] body,html[data-medina-fragment][data-medina-fragment] body *:not(svg,svg *,code,.mcg-code){font-family:var(--x-font)!important}
@@ -66,7 +66,7 @@ html[data-medina-fragment][data-medina-fragment] body .mcg-featured-lesson .mcg-
 html[data-medina-fragment][data-medina-fragment] body .mcg-featured-lesson:hover{background:#fff7d6!important}
 
 /* ——— Catégories : rectangles compacts, couleur vive, texte blanc ——— */
-html[data-medina-fragment][data-medina-fragment] body .mcg-category-grid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(205px,1fr))!important;gap:12px!important}
+html[data-medina-fragment][data-medina-fragment] body .mcg-category-grid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(168px,1fr))!important;gap:12px!important}
 html[data-medina-fragment][data-medina-fragment] body .mcg-category-card{position:relative;display:flex!important;flex-direction:column;min-height:118px!important;padding:12px 14px 12px!important;border:0!important;border-radius:14px!important;
  background:var(--cat)!important;color:#fff!important;text-decoration:none!important;
  box-shadow:0 1px 0 #ffffff40 inset,0 -3px 0 #00000038 inset,0 6px 14px -6px #0009!important;
@@ -131,3 +131,28 @@ html[data-medina-fragment][data-medina-fragment] body .mc-tabs button[aria-selec
 html[data-medina-fragment][data-medina-fragment] body :is(.mc-navigo-panel,.mc-navigo-panel *):not(svg,svg *){color:#14171c!important;opacity:1!important}
 html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel :is(button,a)[aria-selected="true"],html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel .active{background:#14301f!important;color:#fff!important}
 html[data-medina-fragment][data-medina-fragment] body .mc :is(.mc-code,.mc-status){color:#262a31!important}
+
+/* Exigences du 8 octobre 2026 : fond franc (jamais ivoire ni beige), 4 à 5 colonnes de catégories,
+   police imposée partout y compris dans le cours, icônes et repères colorés. */
+html[data-medina-fragment][data-medina-fragment] body :is(.mc,.mc *,.mc-dlg,.mc-dlg *):not(svg,svg *,code){font-family:var(--x-font)!important}
+html[data-medina-fragment][data-medina-fragment] body .mc{--mc-font:var(--x-font)!important}
+html[data-medina-fragment][data-medina-fragment] body :is(.main,#content,.mcg-home,.mc,.mc-wrap){background:transparent!important}
+html[data-medina-fragment][data-medina-fragment] body :is(.mc-chap,.mc-head,.mc-ilot,.mc-panel,.mc-dlg,.card,.mcg-lesson,.mcg-featured-lesson,.mcg-rule,.mcg-planned-panel,.searchwrap,.topbar,.sidebar){background-color:#fff!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-ilot{border:1px solid #c9ced6!important;box-shadow:none!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-head{border-left:10px solid var(--cat,#1565c0)!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-ilot h2{color:#0d0f12!important;text-decoration:none!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-ilot h2 .mc-n,html[data-medina-fragment][data-medina-fragment] body .mc .n{color:var(--cat,#1565c0)!important;font-weight:800!important}
+html[data-medina-fragment][data-medina-fragment] body .mcg-lesson-icon{display:inline-grid!important;place-items:center;width:34px;height:34px;flex:none;border-radius:9px;background:var(--cat,#1565c0)!important}
+html[data-medina-fragment][data-medina-fragment] body .mcg-lesson-icon svg{stroke:#fff!important;fill:none!important;width:19px;height:19px}
+html[data-medina-fragment][data-medina-fragment] body .mcg-block .mcg-lesson:has(.is-available) .mcg-lesson-icon{background:#fff!important}
+html[data-medina-fragment][data-medina-fragment] body .mcg-block .mcg-lesson:has(.is-available) .mcg-lesson-icon svg{stroke:var(--cat,#1565c0)!important}
+html[data-medina-fragment][data-medina-fragment] body .sidebar .brandmark{background:var(--x-brand)!important}
+html[data-medina-fragment][data-medina-fragment] body .sidebar .brandmark svg{stroke:#fff!important}
+@media(min-width:1500px){html[data-medina-fragment][data-medina-fragment] body .mcg-category-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}}
+html[data-medina-fragment][data-medina-fragment] body :is(.mc-chap,.mc-chap-head,.mc-panel,.mc-toolbar,.mc-toc,.mc-tabs,.mc-ilot,.mc-dlg,.mc-navigo-panel){background-color:#fff!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-chap-head{border-left:10px solid var(--cat,#1565c0)!important;border-radius:14px}
+html[data-medina-fragment][data-medina-fragment] body .mc-toc{border:1px solid #c9ced6!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-tabs{border:1px solid #c9ced6!important;border-radius:12px}
+html[data-medina-fragment][data-medina-fragment] body .mc-status{background:#f1f3f6!important;color:#262a31!important}
+html[data-medina-fragment][data-medina-fragment] body :is(.mc-chap-head h1,.mc-ilot h2,.mc-ilot h2 *){font-weight:800!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel :is(button,a).active,html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel [aria-selected="true"]{background:var(--cat,#14301f)!important;color:#fff!important}

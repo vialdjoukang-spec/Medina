@@ -23,14 +23,22 @@ Ce fichier rassemble toutes les exigences en vigueur. Il complète [COORDINATION
 - Pas de métaphores, de jeux de mots ni de mentions de la fabrication du cours (« îlot », « cet îlot »).
 - Abréviations : clé de glossaire obligatoire ; `build_medina.audit()` renvoie `{}`.
 
-## 4. Interface (portail et 22 fragments)
+## 4. Intitulés affichés
+- Les mots « autre », « autres », « sans précision », « non classé ailleurs » et « non précisé » sont interdits dans tout intitulé de catégorie ou de chapitre affiché. Les codes CIM-10-GM ne changent pas.
+- Une catégorie garde son périmètre CIM, mais porte un nom clair et intuitif, sur une ligne, deux au plus, qui annonce ce qu'elle développe.
+- Mécanisme : `tools/libelles.py` applique les noms écrits à la main dans `organisation/libelles_clairs.json`, puis des règles de nettoyage.
+
+## 5. Interface (portail et 22 fragments)
 - **Un fragment = un frontend distinct**, qui ne contient que sa spécialité.
 - **Police** : Atkinson Hyperlegible Next (Braille Institute, conçue pour distinguer chaque glyphe), embarquée dans le fichier ; police de cours par défaut.
 - **Contraste élevé** partout : texte principal quasi noir sur fond clair ; aucun texte gris pâle ; texte blanc sur couleur vive avec un contraste d'au moins 4,5:1.
 - **Couleurs vives et distinctes** : une par spécialité au portail, une par catégorie dans chaque fragment. Elles doivent attirer l'œil d'un lecteur au regard dispersé.
 - **Catégories** : rectangles compacts au nom sobre, avec le code discret en haut à droite. Un clic ouvre une page titrée par la catégorie, dont les chapitres sont rangés sur **deux colonnes** avec un contraste suffisant sur fond coloré.
+- **Fonds francs** : l'ivoire, le beige, le crème et toute tonalité voisine sont interdits ; fond de page gris-bleu clair, surfaces blanches.
+- **Quatre à cinq colonnes** de catégories sur grand écran.
+- La couleur de la catégorie se retrouve dans l'environnement du cours : liseré, icônes, repères de navigation.
 - Accueil clair et agréable. **Thème clair uniquement**, jamais de mode sombre.
 - Montrer les changements par **captures d'écran** pendant le travail.
 
-## 5. Contrôles avant toute remise
+## 6. Contrôles avant toute remise
 `build_medina.py <CODE>` (0 abréviation non couverte), `test_v7.py --static <CODE>` et `test_v7.py <CODE>`, `build_front.py --all-fragments`, `tests/audit_fragments.py`, `node tests/verify_fragment_frontends.cjs`, puis les tests unitaires. Une revue par IA ne vaut pas validation par un médecin.
