@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "4c8c534a6239c0b08ae3b1c2969d6f875549869d",
+  "previous_received_head": "d2a460ffee5e6343ca5877adc699edba17a2c807",
+  "main_sha_at_reception": "960586ec0f6ddf76911a966f1bbd4a2bdcbc29b1",
+  "received_at": "2026-10-08T00:45:52.238Z",
+  "origin": "Claude confirmé par la branche, la signature de commit, les huit rapports ESC et leurs fichiers de contrôle",
+  "status": "reçu et archivé ; rapports et contrôles producteurs enregistrés ; aucune injection",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "449bd70da67b3afe7fbcde95baf2e278275d73ee",
+    "objects": 24
+  },
+  "scope": {
+    "fragment": "C-01-Cardiologie",
+    "courses": [
+      "I30",
+      "I33",
+      "I34",
+      "I35",
+      "I40",
+      "I42",
+      "I44",
+      "Q21"
+    ],
+    "objects": "8 manifestes modifiés, 8 rapports ajoutés, 8 journaux natifs ajoutés",
+    "proposal_content_changed_since_previous_ESC_reception": false
+  },
+  "reconciliation": {
+    "manifests_source_commit": "315280ccc26e4a07b9bb6e36922cb579dd930f0e",
+    "checks_base_sha": "960586ec0f6ddf76911a966f1bbd4a2bdcbc29b1",
+    "proposal_hashes": "26/26 identiques à la livraison ESC déjà inventoriée",
+    "replacements_against_baseline": "18/18 cibles identiques à la baseline vérifiée",
+    "additions_against_baseline": "8/8 cibles absentes comme attendu",
+    "current_main_reconciliation": "aucun fichier canonique injecté ; les nouveaux objets sont documentaires et de contrôle"
+  },
+  "producer_controls": {
+    "base_sha": "960586ec0f6ddf76911a966f1bbd4a2bdcbc29b1",
+    "per_course": {
+      "I30": {
+        "checks": 2787,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      },
+      "I33": {
+        "checks": 2997,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      },
+      "I34": {
+        "checks": 4075,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      },
+      "I35": {
+        "checks": 3269,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      },
+      "I40": {
+        "checks": 3127,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      },
+      "I42": {
+        "checks": 3039,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      },
+      "I44": {
+        "checks": 3427,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      },
+      "Q21": {
+        "checks": 3947,
+        "failures": 0,
+        "errors": 0,
+        "result": "passed"
+      }
+    },
+    "aggregate": {
+      "checks": 26668,
+      "failures": 0,
+      "errors": 0
+    },
+    "independently_reproduced": false
+  },
+  "blockers": [
+    "SIGNAUX_CLAUDE.json maintient I83 comme chapitre actif et les huit lots ESC en attente après sa clôture",
+    "les huit rapports déclarent pending_exhaustive_review et demandent une contre-relecture avant application",
+    "la ligne de preuve issue de travail/esc2026/LEVEE_RESERVES.json est rendue avec des valeurs nulles dans les huit rapports",
+    "I35 conserve hors proposition une posologie initiale de furosémide IV 20–40 mg chez le patient naïf, en conflit avec la dose de 40 mg et le double de la dose orale antérieure rapportés des recommandations ESC 2026",
+    "I40 conserve hors proposition la terminologie « FEVG modérément réduite » pour 41–49 %, alors que le rapport cite « mildly reduced »",
+    "aucune complétude CIM-11 n’est établie"
+  ],
+  "decision": "ne pas injecter ; recevoir les originaux et attendre la clôture de I83, la réparation de la traçabilité MED-01 à MED-03 et la contre-relecture médicale/technique chapitre par chapitre",
+  "checks_executed": [
+    "PR, branche et tête main relues",
+    "delta d2a460f..4c8c534 inventorié : 24 fichiers",
+    "arbre récursif de la tête non tronqué",
+    "24 blobs archivés sans modification",
+    "huit manifestes JSON et huit journaux JSON valides analysés",
+    "sommes de contrôles producteurs recalculées : 26 668, zéro échec et zéro erreur déclarés",
+    "empreintes des propositions comparées aux réceptions ESC antérieures : contenu inchangé"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "tests unitaires indépendants",
+    "reconstruction indépendante",
+    "vérification navigateur indépendante ordinateur/mobile",
+    "relecture médicale exhaustive des huit cours",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/livraison.json",
+      "git_blob_sha": "b031ebaec203be0b8c18324dfed8f71f5e70ac2c",
+      "bytes": 2226,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/rapport.md",
+      "git_blob_sha": "b78fd3a5d9c8387be459dec4c49a0a4a19140190",
+      "bytes": 3816,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/controles/i30_native_main.json",
+      "git_blob_sha": "dab40e1316cd02b92706ac421c9cfdac25f6e375",
+      "bytes": 330018,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I30/controles/i30_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/livraison.json",
+      "git_blob_sha": "ef0bd2f5bf84d300a741718a8b94d76f0f518dad",
+      "bytes": 2479,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/rapport.md",
+      "git_blob_sha": "4d6565870c599b5a5ab0901440e2b9730fc28624",
+      "bytes": 3588,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/controles/i33_native_main.json",
+      "git_blob_sha": "1dfed9bda64cb480834d8e2041d6396eee1b60cf",
+      "bytes": 349311,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I33/controles/i33_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/livraison.json",
+      "git_blob_sha": "35dbf394ac5c9e90acedb404e49d66fbc3e8668c",
+      "bytes": 2268,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/rapport.md",
+      "git_blob_sha": "6606d77ee8c72a6ac5d571f58310339b0c4d94cb",
+      "bytes": 3358,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/controles/i34_native_main.json",
+      "git_blob_sha": "c351ebdf8ba63905fdeb9c8b5be3ed6286cd9188",
+      "bytes": 485782,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I34/controles/i34_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/livraison.json",
+      "git_blob_sha": "3b28eec2efba804357f7413bc5c1d12fe0f3c121",
+      "bytes": 2459,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/rapport.md",
+      "git_blob_sha": "17add133f34a1389316c8576a419fe09ed1ca275",
+      "bytes": 3798,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_main.json",
+      "git_blob_sha": "9ee00463270cfacdce9a5ca6951b69a49916efb1",
+      "bytes": 385871,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I35/controles/i35_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/livraison.json",
+      "git_blob_sha": "4de2dde31eb804448ebfacdb4e5abf88b0b7687c",
+      "bytes": 2153,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/rapport.md",
+      "git_blob_sha": "888cd9853ebebf67ee41bfdde203067e2dd79d0c",
+      "bytes": 3627,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/controles/i40_native_main.json",
+      "git_blob_sha": "50c7c2a797b5f0694d36938084a986e41ed43062",
+      "bytes": 380774,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I40/controles/i40_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/livraison.json",
+      "git_blob_sha": "33dcbabc594b8a102886c18ea1ea1288aad33d11",
+      "bytes": 3641,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/rapport.md",
+      "git_blob_sha": "68cf907d2139875c989be7f0f7edcf480be47e1d",
+      "bytes": 4445,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/controles/i42_native_main.json",
+      "git_blob_sha": "c50f844c8404b3d984ff8c8a6c81ce25ce2550ef",
+      "bytes": 362819,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I42/controles/i42_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/livraison.json",
+      "git_blob_sha": "6e1e2314bf5868845533b71a6481ed6f336794d4",
+      "bytes": 2769,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/rapport.md",
+      "git_blob_sha": "90df58ea65c7443dab6f74a50b2544fa1f7f3762",
+      "bytes": 3614,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/controles/i44_native_main.json",
+      "git_blob_sha": "5fbb757038b5e7e2aa5c857e77e4d5d5f3010938",
+      "bytes": 401177,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-I44/controles/i44_native_main.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/livraison.json",
+      "git_blob_sha": "fd5ca8dbb6ff65640cde56f60ec70cdc76b72a27",
+      "bytes": 2581,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/livraison.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/rapport.md",
+      "git_blob_sha": "48857505fcb3a29fd2550514a1e06fd4f635db4a",
+      "bytes": 3593,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/rapport.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/controles/q21_native_main.json",
+      "git_blob_sha": "b98915371d9a86363cbc7435e5f5696a19079086",
+      "bytes": 473240,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_4C8C534_ESC_RAPPORTS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-ESC2026-Q21/controles/q21_native_main.json"
+    }
+  ]
+}

@@ -1,3 +1,7 @@
+## ESC 2026 — rapports et contrôles par chapitre, tête 4c8c534, 8 octobre 2026
+
+Les rapports, manifestes enrichis et contrôles natifs des lots I30, I33, I34, I35, I40, I42, I44 et Q21 sont reçus et archivés. Claude déclare 26 668 contrôles sans échec sur `main` `960586e`, non reproduits indépendamment. L’injection reste différée : I83 demeure le chapitre actif, les huit rapports conservent `pending_exhaustive_review`, la synthèse de levée des réserves est rendue avec des valeurs nulles, et I35/I40 gardent des écarts médicaux hors proposition. [Rapport](reviews/2026-10-08/PR12_4C8C534_ESC_RAPPORTS_CONTROLES/RECEPTION.md).
+
 ## I83 — simulation d’intégration sur main, tête d2a460f, 8 octobre 2026
 
 Claude rectifie un ancien contrôle S01 lancé sur une construction périmée et fournit une simulation basée sur `main` `625fddb` : 1 923 contrôles natifs I83 et 72 contrôles S01 déclarés sans erreur, avec 21 cours. Les journaux sont reçus et archivés. L’injection reste différée jusqu’à une contre-vérification technique indépendante et une décision sur les limites médicales maintenues par le rapport. [Rapport](reviews/2026-10-08/PR12_D2A460F_I83_SIMULATION_MAIN/RECEPTION.md).

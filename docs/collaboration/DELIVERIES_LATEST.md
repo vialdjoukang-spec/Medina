@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête 4c8c534 : rapports et contrôles ESC 2026
+
+État : **reçu et archivé ; non injecté**. Vingt-quatre objets pour I30, I33, I34, I35, I40, I42, I44 et Q21 ; 26 668 contrôles producteurs déclarés sans échec sur `main` `960586e`, non reproduits indépendamment. I83 reste actif et les réserves de traçabilité/médicales empêchent l’application. [Rapport](reviews/2026-10-08/PR12_4C8C534_ESC_RAPPORTS_CONTROLES/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête d2a460f : simulation I83 sur main
 
 État : **reçu et archivé ; non injecté**. Simulation producteur sur `main` `625fddb`, 1 923 contrôles I83 et 72 contrôles S01 déclarés sans erreur ; ancien faux contrôle S01 rectifié. Contre-vérification indépendante et réserves médicales restantes empêchent encore l’injection. [Rapport](reviews/2026-10-08/PR12_D2A460F_I83_SIMULATION_MAIN/RECEPTION.md).
