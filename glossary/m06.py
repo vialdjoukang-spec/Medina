@@ -3,7 +3,7 @@ from cardio_2 import t
 for k,lit,full,d in [
 ('VHB',[('V','Virus de l’'),('H','Hépatite'),('B','B')],'Virus de l’hépatite B','<p>Risque de réactivation sous immunosuppresseurs.</p>'),
 ('VHC',[('V','Virus de l’'),('H','Hépatite'),('C','C')],'Virus de l’hépatite C','<p>Cause d’arthralgies et de facteur rhumatoïde positif (cryoglobulinémie).</p>'),
-('DAS28',[('D','Disease'),('A','Activity'),('S','Score'),('28','sur 28 articulations')],'Score d’activité de la maladie sur 28 articulations','<p>Score composite : 28 articulations douloureuses et gonflées, CRP ou vitesse de sédimentation, évaluation globale du patient. Ses seuils n’ont pas été relus dans une source primaire lors de la révision du 08.10.2026 ; le cours définit la rémission par le CDAI, le SDAI ou la définition booléenne 2022.</p>'),
+('DAS28',[('D','Disease'),('A','Activity'),('S','Score'),('28','sur 28 articulations')],'Score d’activité de la maladie sur 28 articulations','<p>Score composite : 28 articulations douloureuses et gonflées, CRP ou vitesse de sédimentation, évaluation globale du patient. Rémission inférieure à 2,6, faible activité jusqu’à 3,2, forte activité au-delà de 5,1 ; la rémission stricte se juge plutôt par le CDAI, le SDAI ou la définition booléenne 2022.</p>'),
 ('CDAI',[('C','Clinical'),('D','Disease'),('A','Activity'),('I','Index')],'Indice clinique d’activité','<p>Score sans biologie ; rémission ≤ 2,8.</p>'),
 ('SDAI',[('S','Simplified'),('D','Disease'),('A','Activity'),('I','Index')],'Indice simplifié d’activité','<p>Inclut la CRP ; rémission ≤ 3,3.</p>'),
 ('SCQM',[('S','Swiss'),('C','Clinical'),('Q','Quality'),('M','Management in rheumatic diseases')],'Registre suisse des maladies rhumatismales','<p>Registre national de qualité et de pharmacovigilance.</p>'),
