@@ -1,3 +1,16 @@
+## 2026-10-08 — PR #12, tête d5b46aa : I83-HARMONISATION-5
+
+État : **repéré et reçu ; delta médical accepté ; non intégré ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.
+
+- Baseline : `3dac92808b055e235ee6f57cfec8e283455a85ca`.
+- 14 originaux archivés sans modification ; empreinte `bce002e2c8a654b0ba6aee10d0cd68e56f67b977`.
+- Huit couples baseline/proposition, soit 16 valeurs SHA-256 exactes.
+- Modification réelle depuis la v4 : `I83_b.html` seulement.
+- Réserve v4 levée : distinction correcte ARTE suivie jusqu'à rétraction / TVP selon sa conduite propre.
+- Contrôles producteurs inventoriés, non reproduits ; aucune injection canonique.
+
+[Rapport](reviews/2026-10-08/PR12_D5B46AA_I83_HARMONISATION_5/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_D5B46AA_HARMONISATION_5_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête e17107a : I83-HARMONISATION-4
 
 État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; publication documentaire seulement**.

@@ -1,3 +1,16 @@
+## Réception Claude I83 — harmonisation-5 d5b46aa, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a remis un cinquième paquet complet à la tête `d5b46aa2502c91517f7f80c8ac158f42605257e8`, basé sur `main` `3dac92808b055e235ee6f57cfec8e283455a85ca`. Les 14 originaux sont archivés sans modification ; les huit couples baseline/proposition, soit 16 valeurs SHA-256, sont exacts. Seul `I83_b.html` change depuis la v4.
+
+État : **repéré et reçu ; delta médical accepté ; non intégré ; contrôles producteurs archivés mais non reproduits ; publication documentaire seulement**.
+
+La réserve v4 est levée : l'ARTE anticoagulée est suivie jusqu'à rétraction, tandis que la TVP suit sa conduite propre selon siège, symptômes et risque d'extension. Aucune nouvelle réserve médicale bloquante n'est relevée dans ce delta ciblé. L'injection reste différée car `tools/livraison.py`, la reconstruction et les contrôles navigateur ordinateur/mobile n'ont pas pu être exécutés dans ce workspace.
+
+Rapport : [PR12_D5B46AA_I83_HARMONISATION_5/RECEPTION.md](reviews/2026-10-08/PR12_D5B46AA_I83_HARMONISATION_5/RECEPTION.md)  
+Reçu : [CLAUDE_I83_D5B46AA_HARMONISATION_5_RECEPTION_2026-10-08.json](receipts/CLAUDE_I83_D5B46AA_HARMONISATION_5_RECEPTION_2026-10-08.json)
+
+Aucune source canonique, route, attribution ni chapitre actif n'a changé.
+
 ## Réception Claude I83 — harmonisation-4 e17107a, 8 octobre 2026
 
 La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a remis un quatrième paquet complet à la tête `e17107aaafff29ac94abf9197a1eef6fb0d6c817`, basé sur `main` `0dc7aa93f8a8cea42b6aa556c38505a66b8919d5`. Les 14 originaux sont archivés sans modification ; 15/15 empreintes sont exactes. Seul `I83_b` change réellement depuis la v3.
