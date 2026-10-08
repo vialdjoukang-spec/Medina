@@ -1,0 +1,9 @@
+# B50 — paludisme à *Plasmodium falciparum*, remise Codex à Claude
+
+Version de travail du fragment I-03. Quatre onglets monographiques, quatre fichiers de fenêtres et glossaire dédiés. Le code CIM apparaît seulement en en-tête discret. Les sources de conduite sont la SSTTM/Swiss TPH (1er septembre 2026), l'OFSP et les FI suisses Riamet et Malarone ; l'OMS étaye les mécanismes. Aucune recommandation américaine ne fonde le cours.
+
+**Point thérapeutique à arbitrer et conserver visible :** le guide suisse 2026 propose dix prises d'artéméther/luméfantrine sur cinq jours dès 35 kg, alors que la FI Riamet de décembre 2019 donne six prises sur trois jours. Le cours expose les deux textes et ne les déclare pas équivalents. La destination, la prophylaxie antérieure, les organes et l'absorption orale sont inconnus dans le cas ; aucune prescription individuelle finale n'est attribuée. Le produit d'artésunate IV et sa préparation en Suisse restent à établir au point de soin.
+
+Relectures internes indépendantes : doses/FI, épidémiologie et mécanismes, clinique et frontend. Corrections apportées après lecture réelle : échec de prophylaxie Malarone, ordre de grandeur OFSP de 300 cas déclarés toutes espèces et retrait de la contribution médullaire non soutenue par la page OMS citée. [Matrice des sources et réserves](../../../livraisons/Livraison%20Codex/I-03-Infectiologie/travail/PRODUCTION_FRAGMENT_2026-10-08/preuves/B50/REVUE_SUISSE_2026-10-08.md).
+
+Le frontend de travail affiche B50 seul dans l'espace Infectiologie. Deux captures réelles et une animation des quatre onglets seront jointes au dépôt. L'injection canonique appartient à Claude après deux passes d'audit sur la rédaction, les données médicales, les sources et le rendu navigateur. Ce paquet n'est pas une validation médicale humaine.
