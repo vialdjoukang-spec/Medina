@@ -1,3 +1,7 @@
+## I83 — conservateurs Rapidocain et contrôle sur main, tête 20bee19, 8 octobre 2026
+
+Quatre objets nouveaux sont reçus et archivés. La fenêtre de tumescence rend désormais visibles les conservateurs des flacons multidoses Rapidocain, la restriction au-delà de 15 mL et l’allergie aux parahydroxybenzoates ; ces points concordent avec la copie livrée. Le producteur déclare 1 923 contrôles natifs et 72 contrôles S01 sans erreur sur `main` `ea105ac`. L’injection reste différée : source officielle et contrôles non contre-vérifiés, protocole hospitalier non identifié, audit exhaustif I83 inachevé. [Rapport](reviews/2026-10-08/PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/RECEPTION.md).
+
 ## I83 — preuve Rapidocain corrigée, tête 0974d85, 8 octobre 2026
 
 Deux objets sont reçus et archivés. Le nouveau fichier contient réellement les doses, contre-indications, précautions, signes de toxicité et délais annoncés, contrairement au blob précédent. L’anomalie documentaire est levée au niveau du paquet, mais la copie officielle et les contrôles techniques ne sont pas contre-vérifiés indépendamment. I83 reste actif, non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_0974D85_I83_RAPIDOCAIN/RECEPTION.md).

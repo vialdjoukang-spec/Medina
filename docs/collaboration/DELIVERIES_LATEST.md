@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête 20bee19 : conservateurs Rapidocain et contrôles I83
+
+État : **reçu et archivé ; non injecté**. Quatre objets, empreinte `9c72f0e…`. La correction ciblée concorde avec la copie Rapidocain livrée et les contrôles producteurs portent sur le `main` courant ; la source officielle, le protocole hospitalier et les contrôles restent à vérifier indépendamment. [Rapport](reviews/2026-10-08/PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête 0974d85 : preuve Rapidocain I83 corrigée
 
 État : **reçu et archivé ; non injecté**. Deux objets. La preuve Rapidocain contient désormais les passages cliniques annoncés avec numéros de lignes ; l’anomalie du paquet précédent est corrigée. La provenance et les contrôles restent à contre-vérifier indépendamment avant injection. [Rapport](reviews/2026-10-08/PR12_0974D85_I83_RAPIDOCAIN/RECEPTION.md).

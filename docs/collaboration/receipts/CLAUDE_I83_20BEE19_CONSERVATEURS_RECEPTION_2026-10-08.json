@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "20bee19a6329f0a62126e9180bfc909207055e38",
+  "previous_received_head": "0974d854db292ae0311e435b3daea5fbed187e25",
+  "main_sha_at_reception": "ea105ace0046c71492cc6a69ff4c61698ef2ce34",
+  "received_at": "2026-10-08T09:32:12Z",
+  "origin": "Claude confirmé par branche, auteur du commit, Co-Authored-By Claude Opus 5.5, rapport et fichiers I83",
+  "status": "reçu et archivé ; correction ciblée cohérente avec la copie livrée ; aucune injection",
+  "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20BEE19_I83_CONSERVATEURS_CONTROLES",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "9c72f0ed0bbfaaa00608e8ddbd8b201bfb7c399a",
+    "objects": 4
+  },
+  "inventory": [
+    {
+      "source_path": "chapters/I83/I83_pop4.html",
+      "git_blob_sha": "685d2f9a869c4d11b2e69ec039fe77904eddbfda",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/chapters/I83/I83_pop4.html"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_ea105ac.json",
+      "git_blob_sha": "525e1fb297a360947f0bfa71bcdb121e4c27c443",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_ea105ac.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/simulation_main_ea105ac_JOURNAL.txt",
+      "git_blob_sha": "da37da812bcbb44fdf3875214019f18ce83ab910",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/simulation_main_ea105ac_JOURNAL.txt"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+      "git_blob_sha": "e95ef1d43d96598fa82291b9048393558cb77485",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md"
+    }
+  ],
+  "content_review": {
+    "rapidocain_copy_blob": "5106966c1976119e88615c7e84fad423309a4e82",
+    "verified_in_delivered_copy": [
+      "conservateurs propyl- et méthyl-parahydroxybenzoate",
+      "blocages > 15 ml interdits avec solutions conservées",
+      "contre-indication allergie esters ou parahydroxybenzoates"
+    ],
+    "correction_finding": "cohérente avec la copie livrée et précaution rendue visible",
+    "independent_official_verification": false,
+    "remaining_issue": "protocole de pharmacie hospitalière non identifié"
+  },
+  "producer_checks": {
+    "base": "ea105ace0046c71492cc6a69ff4c61698ef2ce34",
+    "native": {
+      "result": "passed",
+      "checks": 1923,
+      "failures": 0
+    },
+    "s01": {
+      "result": "passed",
+      "checks": 72
+    },
+    "independently_reproduced": false
+  },
+  "blockers": [
+    "source officielle Rapidocain non vérifiée indépendamment",
+    "protocole de pharmacie hospitalière non identifié",
+    "contrôles techniques non reproduits par Codex",
+    "audit médical exhaustif I83 non achevé",
+    "CIM-11 non certifiable"
+  ],
+  "decision": "ne pas injecter ; archiver le delta et conserver I83 actif",
+  "checks_executed": [
+    "PR/head/main relus",
+    "inventaire paginé 15 branches et 13 PR",
+    "delta 0974d854..20bee19 inventorié",
+    "quatre blobs archivés sous empreinte 9c72f0e",
+    "rapport, journal, JSON natif et preuve Rapidocain relus",
+    "baseline producteur comparée au main courant"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "reconstruction indépendante",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "audit médical exhaustif I83",
+    "vérification de la copie contre Swissmedicinfo"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  }
+}
