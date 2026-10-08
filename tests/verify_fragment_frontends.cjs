@@ -29,9 +29,9 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
    check(f.id+' : toutes les catégories sont visibles',await page.locator('.mcg-category-card').count()===O.blocks.length);
    check(f.id+' : un frontend distinct',await page.locator('html').getAttribute('data-medina-fragment')===f.id);
    const visual=await page.evaluate(()=>({font:getComputedStyle(document.querySelector('.mcg-cover h1')).fontFamily,scheme:getComputedStyle(document.documentElement).colorScheme,body:getComputedStyle(document.body).backgroundColor,brand:getComputedStyle(document.querySelector('.brand strong')).color}));
-   check(f.id+' : clair même avec système sombre',!visual.scheme.includes('dark')&&visual.body==='rgb(250, 249, 246)',visual);
-   check(f.id+' : Anthropic Serif affichée',visual.font.includes('Anthropic Serif'),visual);
-   check(f.id+' : marque lisible',visual.brand==='rgb(41, 40, 33)',visual);
+   check(f.id+' : clair même avec système sombre',!visual.scheme.includes('dark')&&visual.body==='rgb(238, 240, 243)',visual);
+   check(f.id+' : Atkinson Hyperlegible Next affichée',visual.font.includes('Atkinson Hyperlegible Next'),visual);
+   check(f.id+' : marque lisible',visual.brand==='rgb(13, 15, 18)',visual);
    await noOverflow(page,f.id+' accueil bureau');
    if(O.blocks.length){
     const b=O.blocks[0];await page.locator('.mcg-category-card').first().click();await page.locator('[data-mcg-block]').waitFor();
@@ -44,7 +44,7 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
    if(available.size){
     const l=[...available.values()][0];await page.goto(url+'#/entry/'+l.code);await page.locator('.mc[data-code="'+l.code+'"]').waitFor();
     check(f.id+' : les quatre onglets restent disponibles',await page.locator('.mc-tabs button').count()===4);
-    check(f.id+' : police du cours par défaut',await page.locator('.mc-font').inputValue()==="'Anthropic Serif',Georgia,serif");
+    check(f.id+' : police du cours par défaut',await page.locator('.mc-font').inputValue()==="'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif");
     for(let i=0;i<4;i++){await page.locator('.mc-tabs button').nth(i).click();check(f.id+' : onglet '+(i+1)+' lisible',await page.locator('.mc-panel:not([hidden])').count()===1);await noOverflow(page,f.id+' onglet '+(i+1))}
     await page.locator('.mc-tabs button').first().click();
     const word=page.locator('.mc-panel:not([hidden]) .mc-w[data-k]').first();if(await word.count()){await word.click();await page.locator('.mc-dlg[open]').waitFor();check(f.id+' : fenêtre explicative accessible',await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()!=='');await page.keyboard.press('Escape')}

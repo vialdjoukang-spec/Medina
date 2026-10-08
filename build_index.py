@@ -106,6 +106,14 @@ SCRIPT = r"""
 """
 
 
+def portal_v2():
+    faces = ''.join("@font-face{font-family:'Atkinson Hyperlegible Next';font-style:%s;font-weight:%s;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
+                    % (style, weight, base64.b64encode((ROOT / 'shell/fonts' / name).read_bytes()).decode('ascii'))
+                    for name, style, weight in (('ahn-400.woff2', 'normal', '400 500'), ('ahn-400i.woff2', 'italic', '400'),
+                                                ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700 800')))
+    return faces + (ROOT / 'engine/portal_v2.css').read_text(encoding='utf-8')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--fragments-dir', type=Path, default=ROOT / 'dist/fragments')
@@ -148,7 +156,7 @@ def main():
     page = f'''<!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
 <meta name="description" content="Explorez MEDINA : 22 espaces de spécialité pour lire, comprendre et relier les connaissances médicales.">
-<title>MEDINA — Une spécialité, un espace de lecture</title><style>{STYLE}</style><style id="medina-typography">{embedded_typography()}</style></head><body data-testid="medina-portal">
+<title>MEDINA — Une spécialité, un espace de lecture</title><style>{STYLE}</style><style id="medina-typography">{embedded_typography()}</style><style id="medina-portal-v2">{portal_v2()}</style></head><body data-testid="medina-portal">
 <a class="skip" href="#specialites">Aller aux spécialités</a><div class="wrap">
 <header class="masthead"><a class="brand" href="index.html" aria-label="MEDINA, accueil"><span class="brand-symbol" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 20V5l9 11 9-11v15M3 5l9 7 9-7"/></svg></span><span><span class="brand-name">MEDINA</span><span class="brand-caption">Atlas médical interactif</span></span></a><nav aria-label="Navigation principale"><a href="#specialites"><span class="nav-marker" aria-hidden="true"></span>Les spécialités</a><a href="organisation.html">L’atlas</a></nav></header>
 <main><section class="hero" aria-labelledby="welcome-title" data-testid="portal-hero"><div><p class="eyebrow">Un espace pour apprendre</p><h1 id="welcome-title">Explorer la médecine,<br><em>une spécialité à la fois.</em></h1><p class="hero-copy">Prenez le temps de comprendre et de relier les savoirs. Choisissez une spécialité pour ouvrir votre espace de lecture.</p><div class="hero-meta"><span><strong>22</strong> spécialités</span><span data-testid="portal-course-total"><strong>{total_courses}</strong> cours intégrés</span></div></div>

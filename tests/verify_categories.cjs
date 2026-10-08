@@ -32,7 +32,7 @@ async function go(page,hash,selector){await page.evaluate(value=>{location.hash=
    check(fragment.id+' : noms conformes au registre',data.fragment.label===names.get(fragment.id).label&&data.version==='CIM-10-GM 2024');
    check(fragment.id+' : ordre continu des catégories et chapitres',data.blocks.every((block,i)=>block.order===i+1&&block.lessons.every((lesson,j)=>lesson.order===j+1&&lesson.code&&lesson.title)));
    await page.goto(pathToFileURL(file).href);await page.waitForFunction(()=>window.MEDINA_CATEGORY_ORGANISATION&&document.querySelector('.mcg-home'));
-   check(fragment.id+' : nom du fragment visible',(await page.locator('.mcg-cover h1').innerText())===data.fragment.label);
+   check(fragment.id+' : nom du fragment visible',(await page.locator('.mcg-cover h1').innerText()).replace(/\.$/,'')===(data.fragment.display_name||data.fragment.label));
    check(fragment.id+' : un bouton par catégorie',await page.locator('[data-mcg-category]').count()===data.blocks.length);
    check(fragment.id+' : catégories présentes dans la bande latérale',await page.locator('[data-mcg-sidebar-category]').count()===data.blocks.length);
    await overflow(page,fragment.id+' : accueil bureau sans débordement');
