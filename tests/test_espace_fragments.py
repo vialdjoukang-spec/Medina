@@ -276,7 +276,7 @@ class FragmentGuardTests(unittest.TestCase):
         with self.assertRaisesRegex(ESPACE.FragmentError, "origine étrangère sans passage"):
             self.guard(ready, self.commit())
 
-    def test_audit_refuses_american_prescription_without_local_gap(self):
+    def test_audit_refuses_american_recommendation_even_with_documented_gap(self):
         self.complete()
         ready = self.commit()
         self.audit()
@@ -284,10 +284,11 @@ class FragmentGuardTests(unittest.TestCase):
         path = self.root / proof["matrix_path"]
         matrix = json.loads(path.read_text())
         matrix["decisions"][0]["final_primary_origin"] = "american"
+        matrix["decisions"][0]["swiss_european_gap"] = "Aucune recommandation locale disponible dans la fixture"
         self.write_json(proof["matrix_path"], matrix)
         proof["matrix_sha256"] = digest(path.read_bytes())
         self.save()
-        with self.assertRaisesRegex(ESPACE.FragmentError, "sans justification du manque suisse/européen"):
+        with self.assertRaisesRegex(ESPACE.FragmentError, "recommandation américaine finale interdite"):
             self.guard(ready, self.commit())
 
     def test_documented_swiss_gap_can_use_european_source(self):

@@ -264,8 +264,8 @@ def swiss_context_proof(tree, audit, ident, final):
             raise FragmentError(f"{ident} : divergence sans arbitrage clinique : {key!r}.")
         if row["final_primary_origin"] != "swiss" and not str(row.get("resolution", "")).strip():
             raise FragmentError(f"{ident} : source non suisse retenue sans justification locale : {key!r}.")
-        if row["final_primary_origin"] == "american" and not str(row.get("swiss_european_gap", "")).strip():
-            raise FragmentError(f"{ident} : prescription américaine sans justification du manque suisse/européen : {key!r}.")
+        if row["final_primary_origin"] == "american":
+            raise FragmentError(f"{ident} : recommandation américaine finale interdite : {key!r}.")
     if chapters != documented or drug_chapters != documented_drugs:
         raise FragmentError(f"{ident} : chaque cours et onglet pharmacologique doit figurer dans la matrice suisse.")
 
