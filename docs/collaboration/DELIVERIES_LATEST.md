@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête 6d5797c : présentations Rapidocain sans conservateur
+
+État : **reçu et archivé ; non injecté**. Quatre objets, empreinte `787fef70…`. La formulation ciblée concorde avec l’information professionnelle approuvée par Swissmedic publiée par Compendium ; la tumescence reste hors indication décrite, les contrôles producteur ne sont pas rejoués et l’audit exhaustif I83 reste ouvert. [Rapport](reviews/2026-10-08/PR12_6D5797C_I83_RAPIDOCAIN_PRESENTATIONS/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête 20c67c0 : PH-02 et injection intra-artérielle I83
 
 État : **reçu et archivé ; non injecté**. Six objets, empreinte `f65ad81…`. La distinction chronologie/causalité est corrigée et l’alternative mépivacaïne concorde avec les deux copies de libellés suisses. Documents officiels et contrôles restent à vérifier indépendamment avant l’intégration complète de I83. [Rapport](reviews/2026-10-08/PR12_20C67C0_I83_PH02_INTRAARTERIELLE/RECEPTION.md).
