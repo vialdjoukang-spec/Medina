@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "6b76e12a1b9431111e8a1d5d9ef4d28c949f67b6",
+  "previous_received_head": "7c6fc659c3306b1fa0ba6cd82bd37ec68c400083",
+  "main_sha_at_reception": "95836fe9767b8e2d8c4ad2a6d73cd186a66c016f",
+  "received_at": "2026-10-08T01:04:39.865Z",
+  "origin": "Claude confirmé par la branche, la signature Co-Authored-By, le rapport I83, LIMITES_FERMEES.json et les journaux de contrôle",
+  "status": "reçu et archivé ; cinq sources I83 modifiées ; aucune injection faute de preuve navigateur nouvelle et de contrelecture médicale exhaustive",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "730c9dfbd4527fe0b29368d52cf36b084e78ef89",
+    "objects": 9
+  },
+  "scope": {
+    "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+    "canonical_source_files_modified_on_branch": [
+      "chapters/I83/I83_a.html",
+      "chapters/I83/I83_b.html",
+      "chapters/I83/I83_d.html",
+      "chapters/I83/I83_pop1.html",
+      "chapters/I83/I83_pop4.html"
+    ],
+    "evidence_files_added": [
+      "LIMITES_FERMEES.json",
+      "i83_native_main_v4.json",
+      "s01_browser_main_v4.json"
+    ],
+    "report_modified": true
+  },
+  "content_comparison": {
+    "native_v4_new": true,
+    "native_v4_blob_sha": "260659161d7d98d8e5a72ca32fa854d33fba33f9",
+    "s01_v4_new_by_name_only": true,
+    "s01_v4_blob_sha": "e9a5fe6e82c2f75eca8a3d27fbf2be00d9f02036",
+    "s01_previous_received_blob_sha": "e9a5fe6e82c2f75eca8a3d27fbf2be00d9f02036",
+    "s01_content_identical_to_previous_received": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_browser_main_625fddb.json",
+    "consequence": "le fichier nommé v4 ne démontre pas un nouveau contrôle S01 après les modifications médicales courantes"
+  },
+  "producer_controls": {
+    "native": {
+      "checks": 1923,
+      "failures": 0,
+      "errors": 0,
+      "result": "passed",
+      "viewports": [
+        1360,
+        390
+      ],
+      "independently_reproduced": false
+    },
+    "s01": {
+      "checks": 72,
+      "errors": 0,
+      "result": "passed",
+      "independently_reproduced": false,
+      "stale_or_reused": true
+    }
+  },
+  "targeted_medical_review": {
+    "ceap": {
+      "status": "bibliographie primaire et identifiants vérifiés ; contrelecture détaillée du texte complet non achevée",
+      "sources": [
+        "Lurie et al. 2020, PMID 32113854, doi:10.1016/j.jvsv.2019.12.075",
+        "Eklöf et al. 2004, PMID 15622385, doi:10.1016/j.jvs.2004.09.027"
+      ],
+      "findings": "la nature descriptive de CEAP, l’existence d’une version élémentaire et l’ajout C4c/r sont corroborés"
+    },
+    "rapidocain": {
+      "status": "non clos indépendamment",
+      "reason": "l’information professionnelle officielle Swissmedic n’a pas été récupérable par l’outil de contrelecture ; les copies locales citées par Claude ne sont pas versionnées dans la remise"
+    },
+    "reimbursement": {
+      "status": "non clos indépendamment",
+      "reason": "l’archive OFSP du 1er octobre 2026 n’a pas été récupérable par l’outil de contrelecture ; la liste détaillée reste une affirmation producteur"
+    }
+  },
+  "blockers": [
+    "SIGNAUX_CLAUDE.json reste inchangé : I83 est encore corrige_apres_audit_codex, non clôturé",
+    "s01_browser_main_v4.json est octet pour octet le même blob que le contrôle S01 déjà reçu à la tête d2a460f",
+    "les affirmations Rapidocain et remboursement OFSP n’ont pas été contre-vérifiées sur leurs sources officielles dans cette itération",
+    "le rapport maintient explicitement que le cours n’est pas validé intégralement",
+    "couverture CIM-11 non établie",
+    "aucune reconstruction ni vérification navigateur indépendante de l’intégration réelle n’a été exécutée"
+  ],
+  "decision": "ne pas injecter I83 ; archiver les originaux, demander implicitement par le reçu un véritable journal S01 courant et poursuivre la contrelecture médicale complète avant intégration",
+  "checks_executed": [
+    "PR, branche et tête main relues",
+    "delta 7c6fc65..6b76e12 inventorié : neuf fichiers",
+    "arbre récursif de la tête non tronqué",
+    "neuf blobs archivés sans modification",
+    "LIMITES_FERMEES.json, rapport et deux contrôles JSON analysés",
+    "empreintes des huit sources déclarées stables dans le contrôle natif v4",
+    "contrôle natif producteur : 1 923 vérifications, zéro échec et zéro erreur",
+    "comparaison de contenu des contrôles : S01 v4 identique au reçu antérieur",
+    "identifiants PubMed/DOI des textes CEAP vérifiés"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "reconstruction indépendante",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "relecture médicale exhaustive de I83",
+    "validation indépendante des données Swissmedic et OFSP",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "chapters/I83/I83_a.html",
+      "git_blob_sha": "b1dd0cb5d7203419e1f97e8dbfc86805ac857256",
+      "bytes": 52803,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/chapters/I83/I83_a.html"
+    },
+    {
+      "source_path": "chapters/I83/I83_b.html",
+      "git_blob_sha": "0b383c213edcf1cabf116c3630f4986b172f051d",
+      "bytes": 52952,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/chapters/I83/I83_b.html"
+    },
+    {
+      "source_path": "chapters/I83/I83_d.html",
+      "git_blob_sha": "32a8094bfc9c052490a31f9fe0391163f75f41be",
+      "bytes": 29910,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/chapters/I83/I83_d.html"
+    },
+    {
+      "source_path": "chapters/I83/I83_pop1.html",
+      "git_blob_sha": "11c9897b4c5949f18fbf12d27ebc8a135a0b588b",
+      "bytes": 32279,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/chapters/I83/I83_pop1.html"
+    },
+    {
+      "source_path": "chapters/I83/I83_pop4.html",
+      "git_blob_sha": "9a35084d35945ebdd12ca5f3bb1843f230a570f3",
+      "bytes": 26210,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/chapters/I83/I83_pop4.html"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/LIMITES_FERMEES.json",
+      "git_blob_sha": "a10a7d7fb99943be21139d025e2e3ce53ca99813",
+      "bytes": 23286,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/LIMITES_FERMEES.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_v4.json",
+      "git_blob_sha": "260659161d7d98d8e5a72ca32fa854d33fba33f9",
+      "bytes": 230349,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_v4.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_browser_main_v4.json",
+      "git_blob_sha": "e9a5fe6e82c2f75eca8a3d27fbf2be00d9f02036",
+      "bytes": 3178,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_browser_main_v4.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+      "git_blob_sha": "fa7c7483d30c162c205e99ed1dc27d5d9e61c803",
+      "bytes": 23405,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_6B76E12_I83_LIMITES_V4/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md"
+    }
+  ]
+}

@@ -1,3 +1,7 @@
+## I83 — fermeture annoncée des limites médicales v4, tête 6b76e12, 8 octobre 2026
+
+Cinq sources I83 et quatre pièces de preuve/contrôle sont reçues et archivées. Le contrôle natif v4 déclare 1 923 vérifications sans erreur. En revanche, le fichier S01 « v4 » est exactement le même blob que le contrôle déjà reçu à `d2a460f` : aucun nouveau parcours S01 n’est démontré. Les textes CEAP sont identifiés, mais Rapidocain et l’archive OFSP n’ont pas pu être contre-vérifiés indépendamment. I83 reste non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_6B76E12_I83_LIMITES_V4/RECEPTION.md).
+
 ## ESC 2026 — corrections de traçabilité et I35, tête 7c6fc65, 8 octobre 2026
 
 Treize objets sont reçus et archivés. Les huit rapports remplacent la synthèse nulle par des réserves lisibles ; I35 corrige la dose initiale de furosémide conformément à l’ESC 2026 et rejoue 3 269 contrôles producteurs sans erreur. L’écart I40 précédemment signalé est absent de main. Aucune injection : I83 reste actif, les rapports restent `pending_exhaustive_review`, la limite rénale d’I35 n’est pas visible et la question I42 demeure non tranchée. [Rapport](reviews/2026-10-08/PR12_7C6FC65_ESC_CORRECTIONS/RECEPTION.md).

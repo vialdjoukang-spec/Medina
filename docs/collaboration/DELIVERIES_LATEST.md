@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête 6b76e12 : I83 limites v4
+
+État : **reçu et archivé ; non injecté**. Neuf objets, dont cinq sources I83. Le contrôle natif v4 est nouveau ; le journal S01 v4 est un duplicata exact du précédent. Les affirmations Swissmedic/OFSP et le cours complet restent à contre-vérifier. [Rapport](reviews/2026-10-08/PR12_6B76E12_I83_LIMITES_V4/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête 7c6fc65 : corrections ESC ciblées
 
 État : **reçu et archivé ; non injecté**. Treize objets ; rapports MED lisibles, I35 corrigé et contrôlé côté producteur, faux écart I40 écarté. L’injection attend toujours la clôture d’I83 et la contrelecture indépendante par chapitre. [Rapport](reviews/2026-10-08/PR12_7C6FC65_ESC_CORRECTIONS/RECEPTION.md).
