@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-US = r"\b(CDC|IDSA|ACCP|CHEST|AHA|ACC/AHA|AHA/ACC|ACC|ATLS|FDA|SCCM|ACOG|ACP|USPSTF|AASLD|NCCN|ACR|AAP|NIH|NHLBI|ASCO|AUA|ADA|ACG|AGA|SVS|SHEA|HRS|ASH|ASHP|JNC ?\d?|American (College|Heart|Thoracic|Diabetes|Academy|Society|Association)\w*|Centers for Disease|U\.?S\.? Preventive)\b"
+US = r"\b(CDC|IDSA|ACCP|CHEST|AHA|ACC/AHA|AHA/ACC|ACC|ATLS|FDA|SCCM|ACOG|ACP|USPSTF|AASLD|NCCN|ACR|AAP|NIH|NHLBI|ASCO|AUA|ACG|AGA|AAAAI|ACAAI|DailyMed|GeneReviews|Endocrine Society|ASE|ASRA|ACMG|AASM|AAFP|StatPearls|Medscape|UpToDate|Jeffrey Modell|DHHS|IAS-USA|NEJM Journal Watch|SVS|SHEA|HRS|ASH|ASHP|JNC ?\d?|American (College|Heart|Thoracic|Diabetes|Academy|Society|Association)\w*|Centers for Disease|U\.?S\.? Preventive)\b"
 JOINT_US = r"\b(ATS|IDSA|ACCP|AHA|ACC|HRS|ASH)\s*/\s*(ERS|ESC|ESCMID|EULAR|EASD|ESH|EHRA|EACTS|JRS|ALAT)|\b(ERS|ESC|ESCMID|EULAR|EASD|ESH|EHRA|EACTS)\s*/\s*(ATS|IDSA|ACCP|AHA|ACC|HRS|ASH)"
 ATS_ALONE = r"\bATS\b"
 CH = r"\b(OFSP|BAG|Swissmedic|compendium(\.ch)?|swissmedicinfo|AIPS|Information professionnelle suisse|SSI|SGInf|Soci[ée]t[ée] suisse[\w ’'-]*|Ligue (pulmonaire|suisse)[\w ’'-]*|Plan de vaccination suisse|mediX|SGAIM|SSMIG|Swiss Society|Swiss \w+ Society|EKIF|CFV|Suva|Unisant[ée]|Swissnoso|Anresis|Guidelines Schweiz|SGP|SSP|SSC|SGK|PROFILES)\b"
