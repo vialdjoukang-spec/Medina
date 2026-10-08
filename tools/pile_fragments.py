@@ -12,6 +12,15 @@ def build():
     plan = json.loads((ROOT / 'organisation/production_plan.json').read_text(encoding='utf-8'))
     federal = json.loads((ROOT / 'organisation/federal_exam.json').read_text(encoding='utf-8'))['fragments']
     alias = {c: course for course in courses.values() for c in course.get('covers', [course['code']])}
+    # Cours rédigés hors canonique : remis pour audit croisé, ou en production interne.
+    for pattern, state in (('espace_partage/FRAGMENTS_CLAUDE_A_AUDITER_PAR_CODEX/*/sources/chapters_additions.json', 'remis à Codex'),
+                           ('espace_partage/FRAGMENTS_CODEX_A_AUDITER_PAR_CLAUDE/*/sources/chapters_additions.json', 'remis à Claude'),
+                           ('livraisons/Livraison */*/travail/sources/chapters_additions.json', 'en production')):
+        for path in ROOT.glob(pattern):
+            for course in json.loads(path.read_text(encoding='utf-8')):
+                course = dict(course, state=state, source_fragment_id=owners.get(course['code']))
+                for c in course.get('covers', [course['code']]):
+                    alias.setdefault(c, course)
     queues = {'Claude': ['S01'] + plan['agents']['Claude']['queue'], 'Codex': plan['agents']['Codex']['queue']}
     out = {'date': '2026-10-08', 'rule': 'Toutes les catégories CIM du fragment reçoivent un cours ; aucune lacune.', 'queues': {}}
     for agent, queue in queues.items():
@@ -24,6 +33,7 @@ def build():
                 b = blocks.setdefault(e['block'], {'block': e['block'], 'title': e.get('blockTitle', ''), 'lessons': []})
                 b['lessons'].append({'code': e['code'], 'title': e['title'], 'course': course['code'] if course and course['source_fragment_id'] == fid else None,
                                      'course_title': course['title'] if course and course['source_fragment_id'] == fid else None,
+                                     'state': (course.get('state') or 'injecté au canonique') if course and course['source_fragment_id'] == fid else None,
                                      'federal': e['code'] in fed or bool(course and course['code'] in fed)})
             cats = sum(len(b['lessons']) for b in blocks.values())
             done = sum(1 for b in blocks.values() for l in b['lessons'] if l['course'])
@@ -39,7 +49,7 @@ def page(data):
         detail = f['position'] in ('actif', 'suivant')
         rows = ''.join('<section class="blk"><h4>%s · %s</h4><ul>%s</ul></section>' % (h(b['block']), h(b['title']), ''.join(
             '<li class="%s%s"><b>%s</b> %s<span>%s</span></li>' % ('ok' if l['course'] else 'todo', ' fed' if l['federal'] else '', h(l['code']), h(l['title']),
-            ('cours %s — %s' % (h(l['course']), h(l['course_title']))) if l['course'] else 'cours à produire') for l in b['lessons'])) for b in f['blocks'])
+            ('cours %s — %s · %s' % (h(l['course']), h(l['course_title']), h(l['state']))) if l['course'] else 'cours à produire') for l in b['lessons'])) for b in f['blocks'])
         return ('<details class="frag" style="--acc:%s" %s><summary><span class="pos">%s</span><strong>%s</strong><span class="meter">%d / %d catégories couvertes</span></summary>%s</details>'
                 % (acc, 'open' if detail else '', h(f['position']), h(f['label']), f['covered'], f['categories'], rows))
     cols = ''.join('<div class="col"><h2>%s</h2>%s</div>' % (h(a), ''.join(frag(f) for f in q)) for a, q in data['queues'].items())

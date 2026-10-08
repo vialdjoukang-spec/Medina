@@ -1,7 +1,7 @@
 # Remise du fragment entier C-01-Cardiologie à Codex — audit croisé unique
 
 - **Producteur** : Claude Code. **Auditeur** : Codex. **Date** : 8 octobre 2026.
-- **Commit de base exact** : `7af77b46842d4bfd962cbccc714d46ca0bad1dc6` (branche `claude/vigilant-mayer-cevhwj`).
+- **Commit de base exact** : voir `MANIFESTE.json` (branche `claude/vigilant-mayer-cevhwj`). Conformément au protocole, **aucune source canonique n'est modifiée par Claude** : les 9 cours nouveaux, leurs glossaires, la correction de renvoi `chapters/I70/I70_b.html` et `chapters_additions.json` sont dans `sources/`. L'injection (copie vers `chapters/`, `glossary/`, ajout à `chapters.json`, reconstruction) revient à Codex après son audit.
 - **Couverture** : **76/76 catégories CIM-10-GM 2024** rattachées à S01, en **30 cours** ; inventaire catégorie → cours et empreintes SHA-256 des 297 fichiers dans `MANIFESTE.json`. La complétude CIM-11 n'est pas établie.
 - **Cours produits le 8 octobre** : I51 (I51, I52), I73, I77 (I77–I79), I85 (I85, I86), I89 (I88, I89), I95 (I95, R03), I97 (I97–I99), R00 (R00, R01), R02. Les 21 cours antérieurs conservent leur historique d'audit et de réserves.
 - **Auto-revue** : `livraisons/Livraison Claude/C-01-Cardiologie/travail/AUTOREVUE_2026-10-08/rapport.md`. Aucun constat bloquant ; le constat majeur (cardioversion après plus de 24 h selon l'ESC 2024 dans I97) est corrigé dans le commit de base. Constats mineurs restant ouverts pour l'auditeur : m1–m4 (phrases nominales d'encadrés I97_d et R02_c), m8 (cellule IOB/WIfI de R02_c), m9 (mortalité de la rupture septale non opérée dans I51, chiffre à vérifier), m10 (seuils d'asymétrie tensionnelle entre bras), m11–m12 (forme des renvois et bandeaux).
