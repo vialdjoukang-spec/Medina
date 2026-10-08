@@ -1,0 +1,30 @@
+/* MEDINA — portail haute lisibilité (08.10.2026) : Atkinson Hyperlegible Next, contraste élevé, une couleur vive par spécialité. */
+:root{--x-font:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,"Segoe UI",Arial,sans-serif;--x-ink:#0d0f12;--x-ink2:#262a31;--x-bg:#eef0f3;color-scheme:light}
+html body,html body *:not(svg,svg *){font-family:var(--x-font)!important}
+html body{background:var(--x-bg)!important;color:var(--x-ink)!important}
+html body :is(h1,h2,h3,p,span,a,strong,label){color:var(--x-ink)}
+html body .brand-name{font-weight:700!important;letter-spacing:.03em}
+html body .brand-caption,html body .section-copy,html body .hero-copy,html body .search-status{color:var(--x-ink2)!important}
+html body .masthead nav a{font-weight:700!important;color:var(--x-ink)!important}
+html body .eyebrow,html body .section-kicker{font-weight:700!important;letter-spacing:.12em;color:#0f5a3a!important}
+html body .hero h1{font-weight:700!important;letter-spacing:-.015em!important;color:var(--x-ink)!important;line-height:1.05!important}
+html body .hero h1 em{font-style:normal!important;font-weight:700!important;color:#0f5a3a!important}
+html body .hero-copy{font-size:19px!important}
+html body .hero-meta span{background:#fff;border:2px solid var(--x-ink);border-radius:999px;padding:6px 14px;font-weight:600}
+html body .hero-meta strong{font-weight:800!important}
+html body .library-head h2{font-weight:700!important;letter-spacing:-.01em!important}
+html body .search input{border:2px solid #6b7380!important;background:#fff!important;color:var(--x-ink)!important;font-size:17px!important}
+html body .search input::placeholder{color:#4a515c!important;opacity:1}
+html body .specialties{gap:12px!important;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))!important}
+html body .specialty-card{background:var(--v,#1565C0)!important;border:0!important;border-radius:16px!important;padding:16px 18px!important;min-height:0!important;
+ box-shadow:0 1px 0 #ffffff40 inset,0 -4px 0 #00000038 inset,0 8px 16px -8px #000a!important;transition:transform .18s ease,box-shadow .18s ease!important}
+html body .specialty-card:hover{transform:translateY(-3px)}
+html body .specialty-card *{color:#fff!important}
+html body .specialty-card h3{font-size:21px!important;font-weight:700!important;letter-spacing:0!important;margin:10px 0 6px!important}
+html body .specialty-card .card-description{display:none!important}
+html body .specialty-card .card-count{font-weight:600!important;font-size:14px!important}
+html body .specialty-card .count-dot{background:#fff!important}
+html body .specialty-card :is(.card-symbol,.card-arrow){background:#ffffff26!important;border-color:#ffffff66!important;color:#fff!important;filter:brightness(0) invert(1)}
+html body :focus-visible{outline:3px solid #ffb000!important;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){html body .specialty-card{transition:none!important;transform:none!important}}
+.specialties>li:nth-child(1) .specialty-card{--v:#C2185B}.specialties>li:nth-child(2) .specialty-card{--v:#1565C0}.specialties>li:nth-child(3) .specialty-card{--v:#2E7D32}.specialties>li:nth-child(4) .specialty-card{--v:#BF360C}.specialties>li:nth-child(5) .specialty-card{--v:#6A1B9A}.specialties>li:nth-child(6) .specialty-card{--v:#00796B}.specialties>li:nth-child(7) .specialty-card{--v:#C62828}.specialties>li:nth-child(8) .specialty-card{--v:#283593}.specialties>li:nth-child(9) .specialty-card{--v:#8E5A00}.specialties>li:nth-child(10) .specialty-card{--v:#AD1457}.specialties>li:nth-child(11) .specialty-card{--v:#0277BD}.specialties>li:nth-child(12) .specialty-card{--v:#1B5E20}.specialties>li:nth-child(13) .specialty-card{--v:#7B1FA2}.specialties>li:nth-child(14) .specialty-card{--v:#9E2A2B}.specialties>li:nth-child(15) .specialty-card{--v:#00695C}.specialties>li:nth-child(16) .specialty-card{--v:#5D4037}.specialties>li:nth-child(17) .specialty-card{--v:#4527A0}.specialties>li:nth-child(18) .specialty-card{--v:#00777F}.specialties>li:nth-child(19) .specialty-card{--v:#B23C0E}.specialties>li:nth-child(20) .specialty-card{--v:#37602B}.specialties>li:nth-child(21) .specialty-card{--v:#880E4F}.specialties>li:nth-child(22) .specialty-card{--v:#004D7A}
