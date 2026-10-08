@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Codex_Sentinella: receive Claude deliveries and notify the Codex coordinator.
+"""Codex_Sentinella: receive Claude handoffs and notify the Codex coordinator.
 
 The existing claude_watch scanner reads remote Git objects in an isolated bare
-store. This entry point adds a durable GitHub issue per delivery-artifact
-fingerprint, plus a machine-readable work order. A branch head containing only
-new drafts cannot recreate an issue for an unchanged fragment handoff.
+store. This entry point adds a durable GitHub issue per content fingerprint for
+fragment handoffs or Claude coordination instructions. A branch head containing
+only new drafts cannot recreate an issue for unchanged handoff content.
 Discovery never performs an audit or injection.
 GitHub Actions is best effort; it cannot wake an inactive Codex session.
 """
@@ -28,7 +28,10 @@ SHA = re.compile(r"[0-9a-f]{40}\Z")
 REPOSITORY = re.compile(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\Z")
 ISSUE_PREFIX = "Codex_Sentinella : livraison Claude "
 FINGERPRINT_PREFIX = "Codex_Sentinella : remise "
+INSTRUCTION_PREFIX = "Codex_Sentinella : consignes Claude "
 ISSUE_LABEL = "codex-sentinella"
+FRAGMENT = "fragment_delivery"
+INSTRUCTION = "claude_instruction"
 
 
 class NotificationError(Exception):
@@ -65,9 +68,10 @@ def _request(repository: str, token: str, method: str, route: str, payload=None)
         raise NotificationError("github_unavailable_or_invalid_response") from None
 
 
-def _existing_issue_identifiers(repository: str, token: str) -> tuple[set[str], set[str]]:
+def _existing_issue_identifiers(repository: str, token: str) -> tuple[dict[str, set[str]], set[str]]:
     """Read every page, including old SHA issues and closed notifications."""
-    fingerprints, legacy_shas = set(), set()
+    fingerprints = {FRAGMENT: set(), INSTRUCTION: set()}
+    legacy_shas = set()
     page = 1
     while True:
         route = "/issues?" + urllib.parse.urlencode({
@@ -85,7 +89,11 @@ def _existing_issue_identifiers(repository: str, token: str) -> tuple[set[str], 
             if isinstance(title, str) and title.startswith(FINGERPRINT_PREFIX):
                 fingerprint = title[len(FINGERPRINT_PREFIX):]
                 if re.fullmatch(r"[0-9a-f]{64}", fingerprint):
-                    fingerprints.add(fingerprint)
+                    fingerprints[FRAGMENT].add(fingerprint)
+            if isinstance(title, str) and title.startswith(INSTRUCTION_PREFIX):
+                fingerprint = title[len(INSTRUCTION_PREFIX):]
+                if re.fullmatch(r"[0-9a-f]{64}", fingerprint):
+                    fingerprints[INSTRUCTION].add(fingerprint)
         if len(issues) < 100:
             return fingerprints, legacy_shas
         page += 1
@@ -104,6 +112,20 @@ def _is_delivery_artifact(path: str) -> bool:
             or (len(parts) == 6 and parts[3] == "lots" and parts[5] == "livraison.json"))
 
 
+def _is_instruction_artifact(path: str) -> bool:
+    if path in {"AGENTS.md", "CLAUDE.md", "COORDINATION.md", "docs/STYLE_REDACTION.md",
+                "docs/collaboration/SIGNAUX_CODEX.json"}:
+        return True
+    if path.startswith("docs/collaboration/instructions/"):
+        return True
+    if not path.startswith("docs/collaboration/"):
+        return False
+    name = path.rsplit("/", 1)[-1].upper()
+    return name.endswith((".MD", ".JSON", ".PDF")) and name.startswith((
+        "LEADERSHIP_CLAUDE", "CHAINE_INTERNE_CLAUDE", "CONSIGNES_", "INSTRUCTIONS_",
+    ))
+
+
 def _artifact_map(bare: Path, commit: str) -> dict[str, str]:
     if not SHA.fullmatch(commit):
         raise ValueError("invalid commit SHA")
@@ -117,22 +139,28 @@ def _artifact_map(bare: Path, commit: str) -> dict[str, str]:
         if kind != b"blob" or mode not in {b"100644", b"100755"}:
             continue
         path = path_bytes.decode("utf-8", "strict")
-        if _is_delivery_artifact(path):
+        if _is_delivery_artifact(path) or _is_instruction_artifact(path):
             artifacts[path] = oid.decode("ascii")
     return artifacts
 
 
-def _artifact_fingerprint(bare: Path, head: str, integration: str) -> dict | None:
-    """Hash active handoff blobs that differ from the current integration tree."""
+def _artifact_fingerprint(bare: Path, head: str, integration: str,
+                          kind: str = FRAGMENT) -> dict | None:
+    """Hash monitored blobs changed since the comparison base."""
+    if kind not in {FRAGMENT, INSTRUCTION}:
+        raise ValueError("invalid notification kind")
     current = _artifact_map(bare, head)
     baseline = _artifact_map(bare, integration)
-    changed = {path: oid for path, oid in current.items() if baseline.get(path) != oid}
+    matches = _is_delivery_artifact if kind == FRAGMENT else _is_instruction_artifact
+    changed = {path: oid for path, oid in current.items()
+               if matches(path) and baseline.get(path) != oid}
     if not changed:
         return None
     canonical = json.dumps(sorted(changed.items()), ensure_ascii=False,
                            separators=(",", ":")).encode("utf-8")
+    domain = b"Codex_Sentinella_v2\0" if kind == FRAGMENT else b"Codex_Sentinella_instructions_v1\0"
     return {
-        "fingerprint": hashlib.sha256(b"Codex_Sentinella_v2\0" + canonical).hexdigest(),
+        "fingerprint": hashlib.sha256(domain + canonical).hexdigest(),
         "artifact_count": len(changed),
         "artifact_paths_sample": sorted(changed)[:12],
     }
@@ -157,7 +185,7 @@ def _ensure_label(repository: str, token: str) -> None:
             raise
 
 
-def _candidate_order(candidate: dict, artifact: dict) -> dict:
+def _candidate_order(candidate: dict, artifact: dict, kind: str = FRAGMENT) -> dict:
     sha = candidate.get("commit")
     if not isinstance(sha, str) or not SHA.fullmatch(sha):
         raise ValueError("invalid candidate SHA")
@@ -167,30 +195,82 @@ def _candidate_order(candidate: dict, artifact: dict) -> dict:
     refs = [ref for ref in candidate.get("refs", []) if isinstance(ref, str)]
     delivery_paths = sorted(path for path in candidate.get("delivery_paths", [])
                             if isinstance(path, str))
-    return {
+    order = {
+        "kind": kind,
         "sha": sha,
         "delivery_fingerprint": artifact["fingerprint"],
         "artifact_count": artifact["artifact_count"],
         "artifact_paths_sample": artifact["artifact_paths_sample"],
+        "comparison_base": candidate.get("comparison_base"),
         "refs": sorted(refs),
         "fragments_suggested": fragments,
         "delivery_path_count": len(delivery_paths),
         "delivery_paths_sample": delivery_paths[:12],
         "full_inventory": "queue.json artifact at the same workflow run",
         "state": "detected_pending_codex_reading",
-        "next_action": "coordinator_read_diff_manifest_and_receipt",
-        "agent_orders": [
-            "lecture_provenance_et_perimetre",
-            "audit_independant_du_fragment_entier_apres_preuves_de_completude",
-            "correction_et_injection_par_codex_apres_audit_sans_reserve_bloquante",
-        ],
-        "gates": {
-            "fragment_entier_auto_revu": "not_verified",
-            "audit_croise_unique": "not_performed",
-            "injection": "not_performed",
-            "medical_validation_human": "not_performed",
-        },
     }
+    if kind == INSTRUCTION:
+        order.update({
+            "next_action": "coordinator_read_instruction_provenance_and_priority",
+            "agent_orders": [
+                "lecture_du_diff_et_de_la_provenance_des_consignes",
+                "verification_de_priorite_face_aux_instructions_directes_utilisateur",
+                "alignement_du_plan_et_des_agents_apres_lecture",
+            ],
+            "gates": {"medical_fragment_delivery": "not_claimed",
+                      "audit_croise_unique": "not_applicable",
+                      "injection": "not_applicable"},
+        })
+    else:
+        order.update({
+            "next_action": "coordinator_read_diff_manifest_and_receipt",
+            "agent_orders": [
+                "lecture_provenance_et_perimetre",
+                "audit_independant_du_fragment_entier_apres_preuves_de_completude",
+                "correction_et_injection_par_codex_apres_audit_sans_reserve_bloquante",
+            ],
+            "gates": {
+                "fragment_entier_auto_revu": "not_verified",
+                "audit_croise_unique": "not_performed",
+                "injection": "not_performed",
+                "medical_validation_human": "not_performed",
+            },
+        })
+    return order
+
+
+def _advertised_candidates(repo_root: Path, bare: Path, remote: str, branch: str,
+                           target: str, queued: list[dict]) -> list[dict]:
+    """Include instruction-only Claude heads omitted by the legacy scanner."""
+    _, refs, target_ref = claude_watch._remote_refs(repo_root, remote, branch)
+    grouped = {}
+    for ref, sha in refs.items():
+        if ref != target_ref:
+            grouped.setdefault(sha, []).append(ref)
+    known = {item["commit"]: item for item in queued if isinstance(item, dict) and
+             isinstance(item.get("commit"), str) and SHA.fullmatch(item["commit"])}
+    result = []
+    for sha, advertised in sorted(grouped.items()):
+        # A head may move after claude_watch fetched its objects. Retry next run.
+        present, _ = claude_watch._git(bare, ["cat-file", "-e", sha + "^{commit}"],
+                                       "verify_instruction_head", allowed=(0, 1))
+        if present == 1:
+            continue
+        ancestor, _ = claude_watch._git(bare, ["merge-base", "--is-ancestor", sha, target],
+                                        "integration_ancestry", allowed=(0, 1))
+        if ancestor == 0:
+            continue
+        candidate = dict(known.get(sha, {}))
+        candidate.update({"commit": sha, "refs": sorted(set(candidate.get("refs", [])) | set(advertised)),
+                          "advertised_refs": sorted(advertised),
+                          "currently_advertised": True, "reachable_from_integration": False})
+        if not (isinstance(candidate.get("comparison_base"), str) and
+                SHA.fullmatch(candidate["comparison_base"])):
+            code, raw = claude_watch._git(bare, ["merge-base", target, sha],
+                                          "instruction_comparison_base", allowed=(0, 1))
+            candidate["comparison_base"] = raw.decode("ascii").strip() if code == 0 else target
+        result.append(candidate)
+    return result
 
 
 def _incoming_claude(candidate: dict) -> bool:
@@ -204,6 +284,17 @@ def _incoming_claude(candidate: dict) -> bool:
 def _issue_body(order: dict) -> str:
     # The title uses the content fingerprint. JSON escapes remote path characters.
     serialized = json.dumps(order, ensure_ascii=False, indent=2).replace("`", "\\u0060")
+    if order["kind"] == INSTRUCTION:
+        return (
+            "# Signal de coordination Codex_Sentinella\n\n"
+            f"Consignes Claude modifiées au commit `{order['sha']}`, empreinte "
+            f"`{order['delivery_fingerprint']}`. Codex doit lire la provenance, "
+            "le diff et la priorité des instructions. Les instructions directes de "
+            "Vial prévalent.\n\n"
+            "**Statut : signal détecté, lecture en attente.** Ce signal n'est pas "
+            "une remise médicale de fragment et n'ouvre ni audit croisé ni injection.\n\n"
+            "Données de réception :\n\n```json\n" + serialized + "\n```\n"
+        )
     return (
         "# Réception Codex_Sentinella\n\n"
         f"Remise Claude détectée au commit `{order['sha']}`, empreinte "
@@ -251,13 +342,16 @@ def run(repo_root: Path, state_dir: Path, *, remote="origin", integration_branch
     integration = queue["integration_commit"]
     bare = state_dir / "git"
     try:
-        for item in candidates:
-            if (not item.get("currently_advertised") or
-                    item.get("reachable_from_integration") or not _incoming_claude(item)):
+        advertised = _advertised_candidates(repo_root, bare, remote, integration_branch,
+                                            integration, candidates)
+        for item in advertised:
+            if not _incoming_claude(item):
                 continue
-            artifact = _artifact_fingerprint(bare, item["commit"], integration)
-            if artifact is not None:
-                result["entries"].append(_candidate_order(item, artifact))
+            baseline = item["comparison_base"]
+            for kind in (FRAGMENT, INSTRUCTION):
+                artifact = _artifact_fingerprint(bare, item["commit"], baseline, kind)
+                if artifact is not None:
+                    result["entries"].append(_candidate_order(item, artifact, kind))
     except claude_watch.ScanError:
         result["scan_status"] = "degraded"
         result["scan_error"] = {"category": "delivery_artifact_scan_failed"}
@@ -268,26 +362,29 @@ def run(repo_root: Path, state_dir: Path, *, remote="origin", integration_branch
         try:
             _ensure_label(repository, token)
             existing, legacy_shas = _existing_issue_identifiers(repository, token)
-            for legacy_sha in legacy_shas:
-                try:
-                    artifact = _artifact_fingerprint(bare, legacy_sha, integration)
-                except (claude_watch.ScanError, ValueError):
-                    # An old head may no longer be reachable after force-push.
-                    continue
-                if artifact is not None:
-                    existing.add(artifact["fingerprint"])
             for order in result["entries"]:
+                kind = order["kind"]
                 fingerprint = order["delivery_fingerprint"]
-                if fingerprint in existing:
+                for legacy_sha in legacy_shas:
+                    try:
+                        artifact = _artifact_fingerprint(bare, legacy_sha,
+                                                         order["comparison_base"], kind)
+                    except (claude_watch.ScanError, ValueError):
+                        # An old head may no longer be reachable after force-push.
+                        continue
+                    if artifact is not None:
+                        existing[kind].add(artifact["fingerprint"])
+                if fingerprint in existing[kind]:
                     result["notifications"]["already_present"].append(fingerprint)
                     continue
                 _request(repository, token, "POST", "/issues", {
-                    "title": FINGERPRINT_PREFIX + fingerprint,
+                    "title": (FINGERPRINT_PREFIX if kind == FRAGMENT else INSTRUCTION_PREFIX)
+                             + fingerprint,
                     "body": _issue_body(order),
                     "labels": [ISSUE_LABEL],
                 })
                 result["notifications"]["created"].append(fingerprint)
-                existing.add(fingerprint)
+                existing[kind].add(fingerprint)
         except NotificationError as error:
             result["notifications"]["error"] = error.category
     _write_json(state_dir / "sentinella.json", result)
@@ -300,7 +397,7 @@ def main(argv=None) -> int:
     parser.add_argument("--state-dir", type=Path, required=True)
     parser.add_argument("--remote", default="origin")
     parser.add_argument("--integration-branch", default="main")
-    parser.add_argument("--notify", action="store_true", help="Create one GitHub issue per new delivery fingerprint.")
+    parser.add_argument("--notify", action="store_true", help="Create one GitHub issue per new handoff fingerprint.")
     args = parser.parse_args(argv)
     try:
         result = run(args.repo_root, args.state_dir, remote=args.remote,
@@ -319,7 +416,9 @@ def main(argv=None) -> int:
         "tool": result["tool"], "scan_status": result["scan_status"],
         "scan_error": result["scan_error"],
         "entry_count": len(result.get("entries", [])),
-        "shas": [entry["sha"] for entry in result.get("entries", [])],
+        "entries": [{"sha": entry["sha"], "kind": entry["kind"],
+                     "fingerprint": entry["delivery_fingerprint"]}
+                    for entry in result.get("entries", [])],
         "notifications": result.get("notifications"),
         "state_path": str(args.state_dir / "sentinella.json"),
     }, ensure_ascii=False))
