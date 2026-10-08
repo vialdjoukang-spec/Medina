@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_PR20_J09_J96_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "event_delivery_id": "db9c6270-c35d-11f1-9d81-722365ebc3fb",
+  "pull_request": {
+    "number": 20,
+    "state": "open",
+    "draft": false,
+    "mergeable": false,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/20"
+  },
+  "provenance": {
+    "producer": "Claude",
+    "branch": "claude/keen-clarke-sat8mh",
+    "head_sha": "97b73159b60e45465c35b200e3f766d928f66d13",
+    "j09_commit": "349efd5bc4e56f64e15c72abf3fe11c2a2b164be",
+    "j96_initial_commit": "69e5c11b070acffe11832dac008b6ac2920b501b",
+    "j96_latest_commit": "97b73159b60e45465c35b200e3f766d928f66d13",
+    "main_at_reception": "28dbd78607573523be81cf601c27f51b18de6f8a",
+    "merge_base": "ed641def474cd62c6d6aba8723ec8a638e4938cb"
+  },
+  "scope": {
+    "campaign": "21 fragments hors cardiologie, 11 Claude / 10 Codex",
+    "historical_campaign": "30 cours, 15 Claude / 15 Codex, distincte",
+    "cardiology_backlog": "20 cours, 10 Claude / 10 Codex, distinct",
+    "fragment": "P-02-Pneumologie",
+    "fragment_id": "S02",
+    "assignments_changed": false,
+    "active_chapters_changed": false,
+    "courses": [
+      "J09 — Grippe (couvre J09/J10/J11)",
+      "J96 — Insuffisance respiratoire aiguë et chronique (en rédaction)"
+    ]
+  },
+  "content_verification": {
+    "j09": {
+      "archived_files": 10,
+      "sha256_exact": "10/10",
+      "comparison_with_author_source_9fa4651d576ff1ee344dced63def16d95a054cd3": "7 HTML modifiés, J09_c.html et glossary/j09.py identiques",
+      "producer_report_preserved": true
+    },
+    "j96": {
+      "archived_files": 5,
+      "sha256_exact": "5/5",
+      "explicitly_not_ready": true,
+      "report_present": false
+    }
+  },
+  "archive": {
+    "j09": "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-PR20-349EFD5-J09",
+    "j96": "livraisons/Livraison Claude/P-02-Pneumologie/lots/2026-10-08-PR20-69E5C11-J96-BROUILLON",
+    "originals_modified": false,
+    "adaptations_prepared": false
+  },
+  "decision": {
+    "result": "reception_only",
+    "reason": "Le protocole actif sur main exige le fragment P-02-Pneumologie entier, auto-revu, avant l'unique audit croisé et l'injection. J09 est un chapitre isolé et J96 reste explicitement en rédaction.",
+    "protocol": "docs/collaboration/PROTOCOLE_FRAGMENTS_2026-10-08.md",
+    "canonical_j09_injection_from_pr": false,
+    "canonical_j96_injection_from_pr": false,
+    "tools_livraison": "Consulté ; check/apply non exécutés, car les commandes d'injection par cours sont désactivées par le protocole actif et les cibles sont de nouveaux cours.",
+    "medical_audit_final": false,
+    "technical_validation_final": false,
+    "site_publication": false
+  },
+  "controls": {
+    "executed": [
+      "lecture des consignes actuelles et du plan de production",
+      "métadonnées GitHub de PR20 et vraie tête courante",
+      "inventaire de 22 branches avec page terminale vide",
+      "inventaire de 16 PR et liste complète des 29 fichiers PR20",
+      "comparaison octet par octet et SHA-256 de J09 avec la remise auteur 9fa4651",
+      "empreintes SHA-256 des cinq fichiers J96 en cours de rédaction",
+      "contrôle que main ne contient pas de J09 canonique"
+    ],
+    "not_executed": [
+      "audit médical exhaustif des quatre onglets et 144 fenêtres J09",
+      "tests unitaires",
+      "reconstruction des fragments",
+      "contrôle navigateur ordinateur/mobile",
+      "déploiement du site"
+    ]
+  },
+  "remaining_reservations": [
+    "P-02-Pneumologie n'est ni complet ni auto-revu comme fragment entier.",
+    "La complétude CIM-11 n'est pas établie.",
+    "Les réserves médicales énumérées par Claude dans rapport_relecture.md ne sont pas levées par cette réception.",
+    "La PR est non fusionnable sur sa base enregistrée et ne doit pas être fusionnée en bloc.",
+    "J96 contient quatre panneaux et un glossaire, reste marqué « en rédaction » et n'a pas de rapport de fin de rédaction."
+  ],
+  "status": {
+    "spotted": true,
+    "received": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "reception documentation only"
+  }
+}
