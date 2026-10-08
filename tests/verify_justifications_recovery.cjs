@@ -63,7 +63,7 @@ async function overflow(page,label,dialog){
  if(dialog){const r=await dialog.boundingBox();check(label+' : fenêtre dans la largeur',r.x>=-1&&r.x+r.width<=size.width+1,r)}
 }
 async function nested(page,dialog,label){
- const child=dialog.locator('.mc-dlg-b [data-ab],.mc-dlg-b button[data-k],.mc-dlg-h [data-ab]').first();
+ const child=dialog.locator('.mc-dlg-b [data-ab],.mc-dlg-b :is(button,[role="button"])[data-k],.mc-dlg-h [data-ab]').first();
  if(!await child.count())return false;
  const heading=normal(await dialog.locator('#mc-dlg-t').innerText()),body=normal(await dialog.locator('.mc-dlg-b').innerText());
  await child.click();await page.locator('.mc-back:not([hidden])').waitFor({state:'visible'});
@@ -74,11 +74,11 @@ async function nested(page,dialog,label){
 }
 async function findNativePath(page,key){
  return page.evaluate(target=>{
-  const direct=[...document.querySelectorAll('.mc button[data-k]')].map(b=>b.dataset.k);
+  const direct=[...document.querySelectorAll('.mc :is(button,[role="button"])[data-k]')].map(b=>b.dataset.k);
   const queue=direct.map(k=>[k]),seen=new Set();
   while(queue.length){const chain=queue.shift(),k=chain[chain.length-1];if(k===target)return chain;if(seen.has(k))continue;seen.add(k);
    const template=[...document.querySelectorAll('template[data-pop]')].find(t=>t.dataset.pop===k);
-   if(template)for(const child of template.content.querySelectorAll('button[data-k]'))queue.push([...chain,child.dataset.k]);
+   if(template)for(const child of template.content.querySelectorAll(':is(button,[role="button"])[data-k]'))queue.push([...chain,child.dataset.k]);
   }return null;
  },key);
 }
@@ -95,14 +95,14 @@ async function openCitation(page,link,label){
 }
 async function bankEntry(page,code,entry,width,nestingState){
  const label=code+' / '+entry.id+' / '+width;
- const selector='.mc button[data-justification][data-k="'+entry.id+'"]';
+ const selector='.mc :is(button,[role="button"])[data-justification][data-k="'+entry.id+'"]';
  let trigger;
  if(await page.locator(selector).count())trigger=await reveal(page,selector);
  else{
   const chain=await findNativePath(page,entry.id);check(label+' : chemin natif vers la cible',chain?.length>1,chain);
-  trigger=await reveal(page,'.mc button[data-k="'+chain[0]+'"]');await trigger.click();
-  for(const key of chain.slice(1,-1))await page.locator('.mc-dlg[open] button[data-k="'+key+'"]').first().click();
-  await page.locator('.mc-dlg[open] button[data-justification][data-k="'+entry.id+'"]').first().click();
+  trigger=await reveal(page,'.mc :is(button,[role="button"])[data-k="'+chain[0]+'"]');await trigger.click();
+  for(const key of chain.slice(1,-1))await page.locator('.mc-dlg[open] :is(button,[role="button"])[data-k="'+key+'"]').first().click();
+  await page.locator('.mc-dlg[open] :is(button,[role="button"])[data-justification][data-k="'+entry.id+'"]').first().click();
  }
  const opened=await page.locator('.mc-dlg[open]').count()?{dialog:page.locator('.mc-dlg[open]'),text:normal(await page.locator('.mc-dlg[open] .mc-dlg-b').innerText())}:await popup(page,trigger,label);
  const {dialog,text}=opened;
@@ -121,9 +121,9 @@ async function bronchitis(page,width){
  await course(page,'J40');const source=fs.readFileSync(path.join(root,'chapters/J40/J40_pop.html'),'utf8');
  const keys=[...source.matchAll(/<template data-pop="([^"]+)"/g)].map(m=>m[1]);
  check('J40 / '+width+' : 40 fenêtres dont 6 Pareto',keys.length===40&&keys.filter(k=>k.startsWith('pareto-')).length===6,keys.length);
- const unique=await page.locator('.mc button[data-k]').evaluateAll(buttons=>[...new Set(buttons.map(b=>b.dataset.k))]);
+ const unique=await page.locator('.mc :is(button,[role="button"])[data-k]').evaluateAll(buttons=>[...new Set(buttons.map(b=>b.dataset.k))]);
  check('J40 / '+width+' : toutes les fenêtres ont un déclencheur natif',keys.every(k=>unique.includes(k)));
- for(const key of keys){const label='J40 / '+key+' / '+width,trigger=await reveal(page,'.mc button[data-k="'+key+'"]');const {dialog,text}=await popup(page,trigger,label);
+ for(const key of keys){const label='J40 / '+key+' / '+width,trigger=await reveal(page,'.mc :is(button,[role="button"])[data-k="'+key+'"]');const {dialog,text}=await popup(page,trigger,label);
   if(key.startsWith('j40-'))check(label+' : mécanisme et limite rédigés',text.toLocaleLowerCase('fr').includes('mécanisme de l’affirmation')&&text.toLocaleLowerCase('fr').includes('conséquence clinique')&&text.toLocaleLowerCase('fr').includes('limite.'));
   else check(label+' : synthèse calculée',await dialog.locator('.mc-ratio').count()===1&&text.includes('%')&&await dialog.locator('li').count()>1);
   if(['j40-anemie','j40-sodium','j40-potassium'].includes(key)){await overflow(page,label,dialog);await page.screenshot({path:path.join(out,'captures',key+'_'+width+'.png')})}
