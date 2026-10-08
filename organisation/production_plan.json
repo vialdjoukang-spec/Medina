@@ -12,13 +12,17 @@
   "rules": {
     "max_active_chapters_per_agent": 1,
     "max_active_fragments_per_agent": 1,
-    "delivery_chapters": 1,
     "chapter_order": "Priorités du registre, puis ordre du catalogue ; un cours commun déjà regroupé ne se produit qu’une fois, avec ses variantes documentées.",
-    "next_chapter_gate": "Chapitre produit, contrôlé pour remise et effectivement livré à l’autre IA pour audit avant le suivant ; les corrections reçues restent prioritaires. Injection Codex après audit Claude ; injection Claude selon REGLES_INJECTION_CLAUDE.md avant audit Codex.",
-    "blocked_chapter_policy": "Un blocage de production conserve le chapitre actif. Après remise complète pour audit, suivre les réserves dans les reçus et signaux sans bloquer la production du chapitre suivant ; aucune injection automatique.",
-    "next_fragment_gate": "Achever et contrôler le périmètre du fragment actif selon COMPLETUDE_CIM11.md avant le suivant ; aucune certification tirée des seuls compteurs historiques.",
+    "next_chapter_gate": "Chapitre rédigé et contrôlé en interne ; poursuivre dans le même fragment, sans remise pour audit final d’un chapitre isolé.",
+    "blocked_chapter_policy": "Consigner la lacune et poursuivre les travaux utiles internes du même fragment. Aucun fragment incomplet transmis ou injecté.",
+    "next_fragment_gate": "Achever intégralement et auto-revoir le fragment actif avant transmission et ouverture du suivant ; aucun fragment INJECTE rouvert.",
     "start_gate": "La consigne du 8 octobre active la chaîne des dix fragments Codex : commencer par T1 et son chapitre A41. La cardiologie reste un backlog distinct avec ses réserves ouvertes, sans être certifiée close ; conserver ses livraisons et audits antérieurs.",
-    "category_label_format": "code — intitulé (libellé complet du fragment)"
+    "category_label_format": "code — intitulé (libellé complet du fragment)",
+    "delivery_unit": "fragment",
+    "cross_audit_rounds": 1,
+    "injected_fragment_immutable": true,
+    "output_theme": "light_only",
+    "delivery_gate": "Fragment entier complet selon inventaire versionné CIM-11, auto-revue corrigée et contrôles avant transmission."
   },
   "agents": {
     "Claude": {
@@ -54,13 +58,14 @@
         "fragment_id": "T1",
         "code": "A41",
         "title": "Sepsis et choc septique de l’adulte",
-        "stage": "review",
-        "base_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
-        "report_path": "livraisons/Livraison Codex/I-03-Infectiologie/travail/A41-2026-10-08/rapport.md"
+        "stage": "writing",
+        "base_commit": "a5563238887df2a72da7a9f663bdae9ab01f4bc8",
+        "report_path": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/rapport.md",
+        "historical_base_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d"
       }
     }
   },
-  "instruction_file": "docs/collaboration/FRAGMENTS_RESTANTS.md",
+  "instruction_file": "COORDINATION.md",
   "coordination": {
     "lead": "Codex — session de coordination actuelle",
     "priority_over": "Ancienne session GPT « work », sans suppression de ses travaux",
@@ -71,7 +76,7 @@
       "Codex": "Claude",
       "Claude": "Codex"
     },
-    "injection_gate": "Chapitre Codex : audit Claude du commit source puis injection et contrôles. Chapitre Claude : revue interne, vérificateur indépendant, rapport, tous les contrôles prescrits sur main actuel, check-claude et aucune réserve Codex bloquante ; injection autonome puis FILE_AUDIT_CODEX.json et audit Codex dans l’ordre.",
+    "injection_gate": "L’autre IA audite le fragment complet en un tour, corrige puis injecte la version finale ; aucun auto-audit ni injection partielle.",
     "claude_spec": "docs/collaboration/CLAUDE_FRAGMENTS_CAHIER_DES_CHARGES.md",
     "specialist_missions": 24,
     "parallel_workers_max": 6,
@@ -101,16 +106,24 @@
       "comment_url": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6061004624",
       "review_pr_url": "https://github.com/vialdjoukang-spec/Medina/pull/15",
       "task_url": "https://github.com/vialdjoukang-spec/Medina/blob/e3307768ff4c3a6c3af2e790859ff36947c0279d/livraisons/Livraison%20Codex/I-03-Infectiologie/lots/2026-10-08-A41/DEMANDE_LECTURE_CROISEE_CLAUDE.md",
-      "status": "posted_remote_available_Claude_ack_pending",
+      "status": "audit_chapitre_historique_recu_injection_a556323_fragment_incomplet",
       "initial_audit_source_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
       "open_reserves": [
         "ESP-03",
         "ESP-07"
       ],
-      "injected": false
+      "injected": false,
+      "superseded_by": "fragment-unique-2026-10-08",
+      "current_scope": "Provenance historique conservée ; fragment T1 incomplet, aucun audit final ni injection demandés sous le nouveau protocole.",
+      "historical_status": "posted_remote_available_Claude_ack_pending",
+      "chapter_audit_commit": "ba6a80f",
+      "chapter_injection_commit": "a5563238887df2a72da7a9f663bdae9ab01f4bc8",
+      "injected_chapter": true,
+      "injected_fragment": false
     },
-    "post_injection_audit_queue": "docs/collaboration/FILE_AUDIT_CODEX.json",
-    "claude_injection_rule": "docs/collaboration/REGLES_INJECTION_CLAUDE.md"
+    "post_injection_audit_queue": null,
+    "claude_injection_rule": "docs/collaboration/PROTOCOLE_FRAGMENTS_2026-10-08.md",
+    "fragment_status_registry": "organisation/fragment_status.json"
   },
   "assignment_unit": "fragment",
   "grouping_policy": "Chaque fragment est confié en entier à son responsable ; toutes ses catégories restent groupées sous ce fragment."

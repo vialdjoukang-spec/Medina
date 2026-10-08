@@ -1,0 +1,87 @@
+{
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "baseline_commit": "a5563238887df2a72da7a9f663bdae9ab01f4bc8",
+  "status": "research_and_internal_proposal_no_new_external_audit",
+  "sources": [
+    {
+      "url": "https://www.unispital-basel.ch/dam/jcr%3Af60b0770-1163-4678-8bb3-9f8898ee70b9/2023_3%20Aenderungen%20Referenzwerte%20Klinische%20Chemie.pdf",
+      "local_file": "preuves/basel2023.pdf",
+      "sha256": "92fd285801840a583a403b6ca23da4934b92b66e31f2bbbcd11edab167a6eb4b",
+      "bytes": 230626,
+      "http_status": 200,
+      "consulted_date": "2026-10-08",
+      "version": "LM-Update 03/2023, 02.05.2023, application annoncée le 03.05.2023",
+      "read_scope": "Pages 1–2 ; page 2 rendue et lue visuellement : bicarbonate actuel artériel, sexes et valeurs.",
+      "limits": "Document de 2023 disponible sur le site officiel ; aucun maintien inchangé en 2026 certifié."
+    },
+    {
+      "url": "https://www.esur.org/wp-content/uploads/2025/12/Guidelines-2025-ESUR-vf-1.pdf",
+      "local_file": "preuves/esur2025pdf.pdf",
+      "sha256": "d4b39e16542774a93d2a3c3fe9f572d05854092580d2c55bf96feaedc7bed470",
+      "bytes": 1014015,
+      "http_status": 200,
+      "consulted_date": "2026-10-08",
+      "version": "ESUR 2025 ; URL de publication sous décembre 2025",
+      "read_scope": "Section CA-AKI, pp.15–18 intégralement lues ; index et dates du manuel",
+      "limits": "Référentiel européen ; aucun protocole institutionnel suisse ni dosage local fourni."
+    },
+    {
+      "url": "https://catalogue.chuv.ch/analyses-examens/laboratoires/fiche/DLA_INV_01_00717/gazometrie-arterielle",
+      "local_file": "preuves/chuvarteriel.html",
+      "sha256": "3a7bd96fcba812b61dd6c915b3682cbef812c677631d5dcada8d07f7800b3a20",
+      "bytes": 39352,
+      "http_status": 200,
+      "consulted_date": "2026-10-08",
+      "version": "CHUV V16, 16.07.2024",
+      "read_scope": "Examen/paramètres calculés, analytique, matrice artérielle et date/version",
+      "limits": "Aucun intervalle normal du bicarbonate actuel publié sur la fiche."
+    },
+    {
+      "url": "https://www.medics.ch/analysenverzeichnis/anionl",
+      "local_file": "preuves/medicsanion.html",
+      "sha256": "5718cf9780325117193f7934f2c1f717b9db4ccdb01de6b1bf9c6be238dcfe66",
+      "bytes": 49477,
+      "http_status": 200,
+      "consulted_date": "2026-10-08",
+      "version": "Catalogue public, date éditoriale absente",
+      "read_scope": "Formule sans potassium ; référence 8–16 mmol/L ; sérum et plasma Li-hépariné",
+      "limits": "Pas d’équivalence publiée avec analyseur artériel."
+    },
+    {
+      "url": "https://www.viollier.ch/de/analysis/14157",
+      "local_file": "preuves/viollier14157.html",
+      "sha256": "ecca341ca71beb1c161b25ed480dd12dfb2126532c627f7f1d49fee439d295d0",
+      "bytes": 150333,
+      "http_status": 200,
+      "consulted_date": "2026-10-08",
+      "version": "Catalogue public, date éditoriale absente",
+      "read_scope": "Standard-Bikarbonat ; sang artériel ; 21–29 mmol/L",
+      "limits": "Bicarbonate standard et non actuel."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13613-019-0563-2",
+      "local_file": "preuves/jung-springer.html",
+      "sha256": "4c780f8e3e9eadad0e5bff0975c247d41c32928b75029a80fe9c3ab1a0bb1f66",
+      "bytes": 764951,
+      "http_status": 200,
+      "consulted_date": "2026-10-08",
+      "version": "Jung et coll. 2019, Ann. Intensive Care 9:92, 15.08.2019",
+      "read_scope": "R1.1 : lecture de la compensation ; R1.3–R1.4 : trou anionique et correction pour l’albumine ; accès HTML intégral obtenu",
+      "limits": "Recommandation d’experts de 2019 ; aucune assimilation à une version 2026 ni norme suisse."
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://esur-cm.org/index.php/b-renal-adverse-reactions-2",
+      "result": "HTTP 403",
+      "fallback": "Nouveau PDF 2025 du site officiel esur.org obtenu"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6695455/",
+      "result": "HTTP 200 avec reCAPTCHA ; aucun texte médical reçu par cette URL",
+      "fallback": "texte éditeur officiel link.springer.com réellement obtenu et lu"
+    }
+  ],
+  "historical_external_audit_read": "preuves/rapport_audit_claude_a556323.md",
+  "new_internal_copy_external_audit": false
+}

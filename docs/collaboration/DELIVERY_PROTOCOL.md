@@ -1,3 +1,5 @@
+> **Protocole remplacé pour les travaux nouveaux, 8 octobre 2026.** Lire [le protocole par fragment](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [COORDINATION.md](../../COORDINATION.md). Fragment entier achevé et auto-revu avant audit croisé unique ; l’autre IA corrige puis injecte, INJECTÉ immuable, HTML clair. Les dispositions incompatibles ci-dessous sont conservées comme historique et ne donnent plus d’ordre d’action. Aucun chapitre isolé ne constitue une remise finale.
+
 # MEDINA — publier, recevoir et intégrer une livraison
 
 Le propriétaire autorise de manière permanente les publications et contributions GitHub nécessaires à MEDINA. Claude Code a déjà publié des commits et des pull requests sur ce dépôt ; son accès en écriture est donc établi pour ces contributions. Chaque agent conserve sa connexion et sa branche. Aucun identifiant ni jeton n'est transféré entre les agents.

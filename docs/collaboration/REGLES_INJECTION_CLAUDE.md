@@ -1,3 +1,5 @@
+> **Protocole remplacé pour les travaux nouveaux, 8 octobre 2026.** Lire [le protocole par fragment](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [COORDINATION.md](../../COORDINATION.md). Fragment entier achevé et auto-revu avant audit croisé unique ; l’autre IA corrige puis injecte, INJECTÉ immuable, HTML clair. Les dispositions incompatibles ci-dessous sont conservées comme historique et ne donnent plus d’ordre d’action. Aucun chapitre isolé ne constitue une remise finale.
+
 # Injection autonome de Claude et file d'audit de Codex — 8 octobre 2026
 
 ## Principe

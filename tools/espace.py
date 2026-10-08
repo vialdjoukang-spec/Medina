@@ -1,17 +1,314 @@
 #!/usr/bin/env python3
-"""Espace partagé MEDINA : dépôt, audit sur place, injection après audit croisé.
+"""Espace partagé MEDINA : consultation et garde des remises.
+
+Avec fragment-unique-2026-10-08, les opérations historiques par cours sont
+interdites. La garde vérifie les preuves enregistrées d'un fragment entier ;
+elle ne réalise ni revue médicale ni certification CIM-11. Aucun fragment
+incomplet ne peut être transmis, audité ou injecté par cet outil.
+
   python3 tools/espace.py deposer  <dossier_lot> --auteur Claude|Codex
-  python3 tools/espace.py ouvrir   <CODE>          # copie de travail de main pour corriger sur place
+  python3 tools/espace.py ouvrir   <CODE>          # lecture seule sous le nouveau protocole
+  python3 tools/espace.py consulter <ID_FRAGMENT>
   python3 tools/espace.py auditer  <CODE> --auditeur Claude|Codex --verdict favorable|favorable_sous_reserves_mineures|defavorable --rapport "<texte ou lien>"
   python3 tools/espace.py injecter <CODE>
   python3 tools/espace.py garde <avant> <apres>    # CI
 """
-import argparse, hashlib, json, os, pathlib, shutil, subprocess, sys
+import argparse, hashlib, json, os, pathlib, re, shutil, subprocess, sys
 R = pathlib.Path(__file__).resolve().parents[1]
 W = R.parent / "medina_espace"
 ESP = {"Claude": "espace_partage/COURS_CLAUDE_A_AUDITER_PAR_CODEX", "Codex": "espace_partage/COURS_CODEX_A_AUDITER_PAR_CLAUDE"}
 OK = {"favorable", "favorable_sous_reserves_mineures"}
 CANON = ("chapters/", "glossary/", "chapters.json")
+FRAGMENT_STATUS = "organisation/fragment_status.json"
+FRAGMENT_REGISTRY = "organisation/fragments.json"
+PROTOCOL = "fragment-unique-2026-10-08"
+STATES = {"A_COMPLETER", "EN_PRODUCTION", "PRET_A_TRANSMETTRE",
+          "EN_AUDIT_CROISE", "AUDITE", "INJECTE"}
+INITIAL_STATES = {"A_COMPLETER", "EN_PRODUCTION"}
+ACTORS = {"Claude", "Codex"}
+
+
+class FragmentError(ValueError):
+    pass
+
+
+def canonical(path):
+    return path == "chapters.json" or path.startswith(("chapters/", "glossary/"))
+
+
+def safe_path(value):
+    if not isinstance(value, str) or not value or "\\" in value:
+        raise FragmentError(f"Chemin relatif sûr requis : {value!r}")
+    path = pathlib.PurePosixPath(value)
+    if (path.is_absolute() or str(path) != value or
+            any(part in {".", ".."} for part in path.parts) or
+            re.match(r"^[A-Za-z]:", value) or any(c in value for c in "\n\r\x00")):
+        raise FragmentError(f"Chemin relatif sûr requis : {value!r}")
+    return value
+
+
+def hashes(value, description):
+    if not isinstance(value, dict) or not value:
+        raise FragmentError(f"{description} : inventaire de fichiers vide ou absent.")
+    for path, digest in value.items():
+        safe_path(path)
+        if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
+            raise FragmentError(f"{description} : SHA-256 invalide pour {path}.")
+    return value
+
+
+def json_data(data, description):
+    try:
+        return json.loads(data.decode("utf-8"))
+    except (ValueError, UnicodeError, AttributeError) as error:
+        raise FragmentError(f"{description} : JSON UTF-8 illisible.") from error
+
+
+class GitTree:
+    """Lecture des blobs d'un commit local, sans checkout, fetch ni écriture."""
+
+    def __init__(self, root, revision):
+        self.root, self.revision, self.cache = root, revision, {}
+        result = subprocess.run(["git", "ls-tree", "-rz", "--full-tree", revision],
+                                cwd=root, capture_output=True)
+        if result.returncode:
+            raise FragmentError(f"Révision Git illisible : {revision}.")
+        self.entries = {}
+        for record in result.stdout.split(b"\0"):
+            if record:
+                metadata, path = record.split(b"\t", 1)
+                mode, kind, oid = metadata.decode("ascii").split()
+                self.entries[path.decode("utf-8")] = (mode, kind, oid)
+
+    def read(self, path, required=True):
+        safe_path(path)
+        entry = self.entries.get(path)
+        if entry is None:
+            if required:
+                raise FragmentError(f"Fichier absent à {self.revision} : {path}.")
+            return None
+        mode, kind, oid = entry
+        if kind != "blob" or mode not in {"100644", "100755"}:
+            raise FragmentError(f"Source ou preuve non régulière interdite : {path}.")
+        if path not in self.cache:
+            result = subprocess.run(["git", "cat-file", "blob", oid],
+                                    cwd=self.root, capture_output=True)
+            if result.returncode:
+                raise FragmentError(f"Blob illisible : {path}.")
+            self.cache[path] = result.stdout
+        return self.cache[path]
+
+
+def fragment_records(tree):
+    raw = tree.read(FRAGMENT_STATUS, required=False)
+    if raw is None:
+        return None
+    data = json_data(raw, FRAGMENT_STATUS)
+    if (not isinstance(data, dict) or data.get("schema_version") != 1 or
+            data.get("protocol") != PROTOCOL):
+        raise FragmentError("Registre des fragments : protocole ou schéma invalide.")
+    records = data.get("fragments")
+    registry = json_data(tree.read(FRAGMENT_REGISTRY), FRAGMENT_REGISTRY)
+    if not isinstance(records, list) or len(records) != 22 or not isinstance(registry, list) or len(registry) != 22:
+        raise FragmentError("Le périmètre fixe doit contenir exactement 22 fragments.")
+    expected = {f.get("id"): f.get("label") for f in registry if isinstance(f, dict)}
+    by_id = {f.get("id"): f for f in records if isinstance(f, dict)}
+    if len(expected) != 22 or len(by_id) != 22 or set(by_id) != set(expected):
+        raise FragmentError("Identifiants de fragments manquants, ajoutés ou dupliqués.")
+    for ident, fragment in by_id.items():
+        if fragment.get("label") != expected[ident] or fragment.get("status") not in STATES:
+            raise FragmentError(f"{ident} : libellé ou statut invalide.")
+        if type(fragment.get("complete")) is not bool:
+            raise FragmentError(f"{ident} : complete doit être un booléen explicite.")
+        if not isinstance(fragment.get("coverage"), dict) or not isinstance(fragment.get("locked_files"), dict):
+            raise FragmentError(f"{ident} : couverture ou verrou absent.")
+        for field in ("internal_review", "cross_audit", "injection"):
+            if field not in fragment or (fragment[field] is not None and not isinstance(fragment[field], dict)):
+                raise FragmentError(f"{ident} : preuve {field} invalide.")
+        real_proofs = fragment["complete"] or any(fragment[f] is not None for f in ("internal_review", "cross_audit", "injection"))
+        if real_proofs and fragment.get("owner") not in ACTORS:
+            raise FragmentError(f"{ident} : auteur Claude ou Codex requis pour une remise réelle.")
+        if not isinstance(fragment.get("owner"), str) or not fragment["owner"].strip():
+            raise FragmentError(f"{ident} : auteur absent.")
+    return by_id
+
+
+def document_proof(tree, path, digest, description):
+    path = safe_path(path)
+    if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
+        raise FragmentError(f"{description} : empreinte de rapport absente ou invalide.")
+    data = tree.read(path)
+    if not data.strip() or hashlib.sha256(data).hexdigest() != digest:
+        raise FragmentError(f"{description} : rapport vide ou empreinte différente : {path}.")
+    return data
+
+
+def source_proof(tree, proof, description):
+    files = hashes(proof.get("files"), description)
+    source_dir = safe_path(proof.get("source_dir"))
+    for path, digest in files.items():
+        data = tree.read(f"{source_dir}/{path}")
+        if hashlib.sha256(data).hexdigest() != digest:
+            raise FragmentError(f"{description} : empreinte source différente : {path}.")
+    actual = {p[len(source_dir) + 1:] for p in tree.entries if p.startswith(source_dir + "/")}
+    if actual != set(files):
+        raise FragmentError(f"{description} : sources absentes de l'inventaire ou fichiers manquants.")
+    if not any(canonical(path) for path in files):
+        raise FragmentError(f"{description} : aucune source médicale dans la remise.")
+    return files
+
+
+def ready_fragment(tree, fragment):
+    ident = fragment["id"]
+    coverage, review = fragment["coverage"], fragment["internal_review"]
+    if (fragment["complete"] is not True or coverage.get("status") != "verifiee" or
+            coverage.get("scope") != "fragment_complet" or not review):
+        raise FragmentError(f"{ident} : fragment incomplet, couverture ou auto-revue non établie.")
+    files = hashes(coverage.get("files"), f"{ident} couverture")
+    inventory = json_data(document_proof(tree, coverage.get("inventory_path"),
+                                        coverage.get("inventory_sha256"), f"{ident} inventaire"), "Inventaire de couverture")
+    if (not isinstance(inventory, dict) or inventory.get("fragment_id") != ident or
+            inventory.get("scope") != "fragment_complet" or inventory.get("complete") is not True or
+            inventory.get("files") != files or inventory.get("uncovered_categories") != [] or
+            not isinstance(inventory.get("categories"), list) or not inventory["categories"]):
+        raise FragmentError(f"{ident} : inventaire complet structuré non établi.")
+    if review.get("reviewer") != fragment["owner"] or review.get("scope") != "fragment_complet":
+        raise FragmentError(f"{ident} : auto-revue intégrale de l'auteur requise.")
+    document_proof(tree, review.get("report_path"), review.get("report_sha256"), f"{ident} auto-revue")
+    if source_proof(tree, review, f"{ident} auto-revue") != files:
+        raise FragmentError(f"{ident} : auto-revue sur une autre remise que l'inventaire.")
+    return files
+
+
+def audit_fragment(tree, fragment, original):
+    audit, ident = fragment["cross_audit"], fragment["id"]
+    other = next(iter(ACTORS - {fragment["owner"]}))
+    if (audit.get("auditor") != other or audit.get("scope") != "fragment_complet" or
+            audit.get("verdict") not in OK or audit.get("input_files") != original):
+        raise FragmentError(f"{ident} : audit croisé unique de l'autre IA sur la remise complète requis.")
+    document_proof(tree, audit.get("report_path"), audit.get("report_sha256"), f"{ident} audit croisé")
+    final = source_proof(tree, audit, f"{ident} audit croisé")
+    if not set(original).issubset(final):
+        raise FragmentError(f"{ident} : audit supprimant une partie de la remise complète.")
+    return final
+
+
+def validate_fragment_guard(before, after):
+    old, new = fragment_records(before), fragment_records(after)
+    if old is not None and new is None:
+        raise FragmentError("Suppression du registre ou abandon du protocole interdit.")
+    if new is None:
+        return None
+    changed = {p for p in before.entries.keys() | after.entries.keys()
+               if before.entries.get(p) != after.entries.get(p)}
+    changed_medical = {p for p in changed if canonical(p)}
+    if old is None:
+        if changed_medical:
+            raise FragmentError("Activation du protocole : modification médicale sans remise initiale préexistante.")
+        for ident, fragment in new.items():
+            if (fragment["status"] not in INITIAL_STATES or fragment["complete"] or
+                    any(fragment[f] is not None for f in ("internal_review", "cross_audit", "injection")) or
+                    fragment["locked_files"]):
+                raise FragmentError(f"{ident} : activation avec fragment prétendument validé ou injecté interdite.")
+        return []
+    if set(old) != set(new):
+        raise FragmentError("Ajout ou suppression de fragment interdit.")
+    authorized = {}
+    locked = {}
+    errors = []
+    for ident, fragment in new.items():
+        previous = old[ident]
+        if any(fragment[key] != previous[key] for key in ("id", "label")):
+            raise FragmentError(f"{ident} : identité du fragment modifiée.")
+        if fragment["owner"] != previous["owner"]:
+            unresolved = (previous["owner"] not in ACTORS and previous["status"] in INITIAL_STATES and
+                          not previous["complete"] and not previous["locked_files"] and
+                          all(previous[key] is None for key in ("internal_review", "cross_audit", "injection")))
+            if not unresolved or fragment["owner"] not in ACTORS:
+                raise FragmentError(f"{ident} : auteur d'un fragment déjà attribué ou remis modifié.")
+        if previous["status"] == "INJECTE":
+            if fragment != previous:
+                raise FragmentError(f"{ident} : INJECTE immuable ; réouverture ou modification du registre interdite.")
+        if previous["cross_audit"] is not None and fragment["cross_audit"] != previous["cross_audit"]:
+            raise FragmentError(f"{ident} : second audit ou retrait de l'audit unique interdit.")
+        if previous["cross_audit"] is not None and any(fragment[key] != previous[key] for key in ("coverage", "internal_review", "complete")):
+            raise FragmentError(f"{ident} : remise validée modifiée après audit unique.")
+        ready = (fragment["complete"] or fragment["internal_review"] is not None or
+                 fragment["cross_audit"] is not None or fragment["injection"] is not None or
+                 fragment["status"] not in INITIAL_STATES)
+        initial = ready_fragment(after, fragment) if ready else None
+        final = audit_fragment(after, fragment, initial) if fragment["cross_audit"] is not None else None
+        if fragment["cross_audit"] is not None and previous["cross_audit"] is None:
+            original = ready_fragment(before, previous)
+            if any(fragment[key] != previous[key] for key in ("coverage", "internal_review", "complete")) or original != initial:
+                raise FragmentError(f"{ident} : audit sans remise complète et auto-revue préexistantes.")
+        if fragment["status"] in {"AUDITE", "INJECTE"} and final is None:
+            raise FragmentError(f"{ident} : statut sans audit croisé favorable.")
+        if fragment["status"] != "INJECTE":
+            if fragment["locked_files"] or fragment["injection"] is not None:
+                raise FragmentError(f"{ident} : injection ou verrou sans statut INJECTE.")
+            continue
+        injection = fragment["injection"]
+        if (not injection or injection.get("injector") != fragment["cross_audit"]["auditor"] or
+                injection.get("files") != final or fragment["locked_files"] != final):
+            raise FragmentError(f"{ident} : injection par l'auditeur et verrou des empreintes finales requis.")
+        for path, digest in final.items():
+            if path in locked and locked[path] != digest:
+                raise FragmentError(f"{ident} : verrou incompatible sur source partagée : {path}.")
+            locked[path] = digest
+            data = after.read(path)
+            if hashlib.sha256(data).hexdigest() != digest:
+                raise FragmentError(f"{ident} : contenu injecté différent de l'audit ou supprimé : {path}.")
+            if previous["status"] == "INJECTE":
+                if before.read(path) != data or before.entries.get(path) != after.entries.get(path):
+                    raise FragmentError(f"{ident} : source médicale verrouillée modifiée : {path}.")
+            else:
+                authorized[path] = digest
+    for path in changed_medical:
+        data = after.read(path, required=False)
+        if data is None or authorized.get(path) != hashlib.sha256(data).hexdigest():
+            errors.append(path)
+    return errors
+
+
+def protocol_active(root):
+    path = pathlib.Path(root) / FRAGMENT_STATUS
+    if not path.exists():
+        return False
+    data = json_data(path.read_bytes(), FRAGMENT_STATUS)
+    if not isinstance(data, dict) or data.get("protocol") != PROTOCOL:
+        raise FragmentError("Registre des fragments invalide ; opération refusée.")
+    return True
+
+
+def refuse_chapter_operation(action, root=None):
+    if protocol_active(root or R):
+        raise FragmentError(f"REFUS : {action} par cours/remise partielle interdit. "
+                            "Le fragment entier doit être complet et auto-revu avant transmission ; "
+                            "audit croisé unique puis injection par l'autre IA. "
+                            "Cet outil fournit consultation et garde des preuves, sans produire ces revues.")
+
+
+def consulter(cible):
+    """Consulter le checkout actuel sans fetch, checkout, dépôt ou publication."""
+    status = R / FRAGMENT_STATUS
+    if status.exists():
+        data = json_data(status.read_bytes(), FRAGMENT_STATUS)
+        fragment = next((f for f in data.get("fragments", []) if cible in (f.get("id"), f.get("label"))), None)
+        if fragment is not None:
+            print(json.dumps(fragment, ensure_ascii=False, indent=2))
+            return
+    if not re.fullmatch(r"[A-Z][0-9]{2}", cible):
+        raise FragmentError(f"Fragment ou cours inconnu : {cible}.")
+    for base in ESP.values():
+        path = R / base / cible
+        if path.is_dir():
+            print(path)
+            return
+    path = R / "chapters" / cible
+    if not path.is_dir():
+        raise FragmentError(f"Cours absent du checkout : {cible}.")
+    print(path)
 
 def git(*a, cwd=W, ok=True):
     r = subprocess.run(["git", *a], cwd=cwd, capture_output=True, text=True)
@@ -41,8 +338,11 @@ def dossier(code):
 def empreintes(d): return {str(p.relative_to(d / "sources")): sha(p) for p in sorted((d / "sources").rglob("*")) if p.is_file()}
 
 def deposer(lot, auteur):
+    refuse_chapter_operation("deposer")
     lot = pathlib.Path(lot).resolve(); m = json.loads((lot / "livraison.json").read_text())
-    code = m["chapters"][0]["code"]; main_frais(); d = W / ESP[auteur] / code
+    code = m["chapters"][0]["code"]; main_frais()
+    refuse_chapter_operation("deposer", W)
+    d = W / ESP[auteur] / code
     if d.exists(): shutil.rmtree(d)
     shutil.copytree(lot / "sources", d / "sources")
     if (lot / "rapport.md").exists(): shutil.copy2(lot / "rapport.md", d / "rapport_auteur.md")
@@ -54,7 +354,8 @@ def deposer(lot, auteur):
     print(f"Déposé : {d.relative_to(W)}")
 
 def auditer(code, auditeur, verdict, rapport):
-    main_frais(); d, auteur = dossier(code)
+    refuse_chapter_operation("auditer")
+    main_frais(); refuse_chapter_operation("auditer", W); d, auteur = dossier(code)
     if auditeur == auteur: sys.exit("REFUS : l'auteur ne peut pas auditer son propre cours.")
     e = json.loads((d / "ETAT.json").read_text()); e["fichiers"] = empreintes(d)
     e["audits"].append({"auditeur": auditeur, "verdict": verdict, "rapport": rapport, "fichiers": e["fichiers"]})
@@ -63,7 +364,8 @@ def auditer(code, auditeur, verdict, rapport):
     pousser(f"Espace partagé : {auditeur} audite {code} ({verdict})", str(d.relative_to(W)))
 
 def injecter(code):
-    main_frais(); d, auteur = dossier(code); e = json.loads((d / "ETAT.json").read_text()); f = empreintes(d)
+    refuse_chapter_operation("injecter")
+    main_frais(); refuse_chapter_operation("injecter", W); d, auteur = dossier(code); e = json.loads((d / "ETAT.json").read_text()); f = empreintes(d)
     a = next((x for x in reversed(e["audits"]) if x["auditeur"] != auteur and x["verdict"] in OK and x["fichiers"] == f), None)
     if not a: sys.exit("REFUS : aucun audit croisé favorable sur les empreintes actuelles.")
     for cible in f:
@@ -81,6 +383,17 @@ def injecter(code):
     print(f"Injecté : {code}")
 
 def garde(av, ap):
+    try:
+        before, after = GitTree(R, av), GitTree(R, ap)
+        errors = validate_fragment_guard(before, after)
+        if errors is not None:
+            print("Sources médicales modifiées sans injection de fragment complet auditée :", errors or "aucune")
+            return 1 if errors else 0
+    except FragmentError as error:
+        print(f"REFUS garde-espace : {error}")
+        return 1
+    # Compatibilité des historiques sans registre ; ces audits par cours sont
+    # inapplicables dès activation du protocole de remise par fragment entier.
     etats = []
     for base in ESP.values():
         for p in subprocess.run(["git", "ls-tree", "-r", "--name-only", ap, base], cwd=R, capture_output=True, text=True).stdout.split():
@@ -89,16 +402,37 @@ def garde(av, ap):
                 etats += [x["fichiers"] for x in e["audits"] if x["auditeur"] != e["auteur"] and x["verdict"] in OK]
     err = []
     for p in subprocess.run(["git", "diff", "--name-only", f"{av}..{ap}"], cwd=R, capture_output=True, text=True).stdout.split():
-        if not p.startswith(CANON): continue
+        if not canonical(p): continue
         b = subprocess.run(["git", "show", f"{ap}:{p}"], cwd=R, capture_output=True).stdout
-        if b and not any(x.get(p) == hashlib.sha256(b).hexdigest() for x in etats): err.append(p)
+        if not b or not any(x.get(p) == hashlib.sha256(b).hexdigest() for x in etats): err.append(p)
     print("Sources canoniques modifiées sans audit croisé :", err or "aucune"); return 1 if err else 0
 
-if __name__ == "__main__":
+def ouvrir(code):
+    if protocol_active(R):
+        return consulter(code)
+    main_frais()
+    if protocol_active(W):
+        raise FragmentError("Le nouveau protocole interdit la copie de correction par cours ; consulter le checkout actuel.")
+    print(W / dossier(code)[0].relative_to(W))
+
+
+def main():
     a = sys.argv[1:]
-    if a[:1] == ["garde"]: sys.exit(garde(a[1], a[2]))
-    p = argparse.ArgumentParser(); p.add_argument("action"); p.add_argument("cible")
-    p.add_argument("--auteur"); p.add_argument("--auditeur"); p.add_argument("--verdict"); p.add_argument("--rapport", default="")
+    if a[:1] == ["garde"]:
+        if len(a) != 3:
+            raise FragmentError("Usage : espace.py garde <avant> <apres>")
+        return garde(a[1], a[2])
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("action", choices=("deposer", "ouvrir", "consulter", "auditer", "injecter")); p.add_argument("cible")
+    p.add_argument("--auteur", choices=sorted(ACTORS)); p.add_argument("--auditeur", choices=sorted(ACTORS)); p.add_argument("--verdict", choices=sorted(OK | {"defavorable"})); p.add_argument("--rapport", default="")
     x = p.parse_args(a)
-    {"deposer": lambda: deposer(x.cible, x.auteur), "ouvrir": lambda: (main_frais(), print(W / dossier(x.cible)[0].relative_to(W))),
+    {"deposer": lambda: deposer(x.cible, x.auteur), "ouvrir": lambda: ouvrir(x.cible), "consulter": lambda: consulter(x.cible),
      "auditer": lambda: auditer(x.cible, x.auditeur, x.verdict, x.rapport), "injecter": lambda: injecter(x.cible)}[x.action]()
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        sys.exit(main())
+    except (FragmentError, OSError, KeyError, ValueError) as error:
+        sys.exit(str(error))

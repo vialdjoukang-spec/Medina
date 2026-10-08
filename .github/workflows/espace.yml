@@ -1,0 +1,35 @@
+name: Garde des fragments MEDINA
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  garde-espace:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+      - name: Vérifier les refus et les verrous des fragments
+        run: python3 -m unittest discover -s tests -p test_espace_fragments.py
+      - name: Refuser une injection prématurée ou une réouverture
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          base="$BASE_SHA"
+          if test -z "$base" || test "$base" = 0000000000000000000000000000000000000000; then
+            base=$(git merge-base "$HEAD_SHA" origin/main)
+          fi
+          python3 tools/espace.py garde "$base" "$HEAD_SHA"

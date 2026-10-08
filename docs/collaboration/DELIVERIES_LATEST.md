@@ -1,3 +1,7 @@
+## Reprise par fragments — 8 octobre 2026
+
+[Nouveau protocole](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [rapport de reprise](reviews/2026-10-08/REPRISE_FRAGMENTS/REPRISE.md). Les listes complètes de branches/PR et leurs pages suivantes sont vérifiées ; [têtes relevées](reviews/2026-10-08/REPRISE_FRAGMENTS/REMOTE_HEADS.json). A41 a été injecté comme chapitre à `a556323`, après audit Claude `ba6a80f` sous les règles précédentes. Le fragment T1 reste incomplet ; la nouvelle copie A41 demeure interne. L’index détaillé ci-dessous conserve son ancienne cible et son état historique.
+
 # MEDINA — livraisons repérées
 
 Branche d'intégration : `codex/sciences-cs-fragments-20261007`.

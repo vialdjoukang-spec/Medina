@@ -39,7 +39,7 @@ check('Les 21 attributions excluent la cardiologie et respectent les files 11/10
   return assigned.length === data.production.allocation[agent] && assigned.every((f, i) => f.production.queue_order === i+1 && f.production.queue_size === assigned.length);
 }));
 check('La répartition porte sur des fragments entiers', data.production.assignment_unit === 'fragment' && !('categories' in data.production));
-check('Le plan impose un chapitre et une livraison par responsable', data.production.rules.max_active_chapters_per_agent === 1 && data.production.rules.delivery_chapters === 1);
+check('Le plan conserve un chapitre actif et remet le fragment entier après auto-revue', data.production.rules.max_active_chapters_per_agent === 1 && data.production.rules.delivery_unit === 'fragment' && data.production.rules.cross_audit_rounds === 1 && data.production.rules.injected_fragment_immutable === true && data.production.rules.output_theme === 'light_only');
 for (const f of data.fragments) {
   const entries = f.blocks.flatMap(b => b.categories);
   check(f.label + ' : rangs uniques et continus', JSON.stringify(entries.map(e => e.order).sort((a, b) => a-b)) === JSON.stringify(entries.map((_, i) => i+1)));

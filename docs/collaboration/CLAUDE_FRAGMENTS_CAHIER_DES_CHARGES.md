@@ -1,3 +1,5 @@
+> **Protocole remplacé pour les travaux nouveaux, 8 octobre 2026.** Lire [le protocole par fragment](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [COORDINATION.md](../../COORDINATION.md). Fragment entier achevé et auto-revu avant audit croisé unique ; l’autre IA corrige puis injecte, INJECTÉ immuable, HTML clair. Les dispositions incompatibles ci-dessous sont conservées comme historique et ne donnent plus d’ordre d’action. Aucun chapitre isolé ne constitue une remise finale.
+
 # MEDINA — cahier des charges exécutable de Claude
 
 Consigne de Vial du **8 octobre 2026**. **Codex, coordinateur de cette session, prend le relais de GPT « work »** pour l'organisation, la réception, les audits croisés, l'injection et la publication. Conserver les contributions et les commits de GPT « work » et des autres sessions ; une priorité de coordination ne permet pas de les supprimer ou de les écraser.

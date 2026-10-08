@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "kind": "protocol_and_internal_work_resume",
+  "recorded_at": "2026-10-08T16:51:15.933071+02:00",
+  "content_commit": "2be802a9ad461210e04472d6761e2a1754ea5b14",
+  "base_commit": "a5563238887df2a72da7a9f663bdae9ab01f4bc8",
+  "source_instruction": "docs/collaboration/instructions/Prompt_Codex_2026-10-08.pdf",
+  "source_instruction_sha256": "3f6d594119ae4b180a97a544377ebddb3023bc3b9842aed334b0dcbdc985e0f5",
+  "protocol": "fragment-unique-2026-10-08",
+  "scope": "Nouveau protocole, interface claire, inventaire OMS candidat et copie interne A41 ; aucune injection médicale de cette reprise.",
+  "fragment": "I-03-Infectiologie",
+  "fragment_complete": false,
+  "fragment_injected": false,
+  "final_cross_audit_requested": false,
+  "preserved_peer_commits": [
+    "ba6a80f",
+    "a5563238887df2a72da7a9f663bdae9ab01f4bc8"
+  ],
+  "canonical_medical_changed_from_base": false,
+  "source_branch": "codex/protocole-fragments-20261008",
+  "branch_remote_verified_commit": "2be802a9ad461210e04472d6761e2a1754ea5b14",
+  "report": "docs/collaboration/reviews/2026-10-08/REPRISE_FRAGMENTS/REPRISE.md",
+  "checks": {
+    "python_tests": {
+      "passed": 142
+    },
+    "fragments_built_and_audited": 22,
+    "global_built": true,
+    "light_browser": {
+      "passed": 314,
+      "errors": 0,
+      "html_count": 23
+    },
+    "organisation_browser": {
+      "passed": 133
+    },
+    "candidate_A41": {
+      "bank_compilation": 15,
+      "static": "passed",
+      "native_assertions_passed": 4446,
+      "failures": 0,
+      "injected": false,
+      "manifest": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/manifest_interne.json"
+    }
+  },
+  "limits": [
+    "Couverture CIM-11 T1 non établie ; le chapitre OMS candidat n’est pas le dénominateur pédagogique.",
+    "Réserves mineures restantes d’A41 conservées ; aucune auto-revue exhaustive du fragment annoncée.",
+    "Suite sciences/CS ancienne arrêtée sur figure accessible I83 manquante après 292 assertions ; contenu I83 conservé.",
+    "Import historique lesson-core.js absent du global ; aucun autre défaut JavaScript du test thème."
+  ],
+  "publication": {
+    "main_status": "pending",
+    "pages_status": "pending"
+  }
+}
