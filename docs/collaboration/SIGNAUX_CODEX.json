@@ -190,14 +190,13 @@
       "Efficacité plutôt que volume : information efficace, puissante, extrêmement didactique, claire, en termes médicaux dédiés ; aucun remplissage, aucune perte d'information utile.",
       "Deux captures d'écran réelles par leçon (ouverture ; fenêtre explicative ouverte) via tools/capture_lecon.py, présentées dans le panneau latéral, non dans le fil du chat."
     ],
-    "regle_fondamentale": "**RÈGLE FONDAMENTALE (section 11)** : aucun cours produit de mémoire — chaque affirmation vient d'une source lue ; **sources suisses puis européennes, aucune recommandation américaine** ; médicaments selon l'information professionnelle suisse Swissmedic (`tools/swissmedic_fi.py`) ; **plan monographique classique**, sans îlot ni tableau consacré au code CIM. Toute invention ou tricherie est interdite."
+    "regle_fondamentale": "**RÈGLE FONDAMENTALE (section 11)** : aucun cours produit de mémoire — chaque affirmation vient d'une source lue ; **sources suisses puis européennes, aucune recommandation américaine** ; médicaments selon l'information professionnelle suisse Swissmedic (`tools/swissmedic_fi.py`) ; **plan monographique classique**, sans îlot ni tableau consacré au code CIM. Toute invention ou tricherie est interdite.",
+    "regle_en_vigueur_section_12": "**EN VIGUEUR (section 12)** : **aucun cours de Claude n'est audité par Codex** ; Codex **livre** systématiquement ses cours à Claude, qui les corrige puis les **injecte** ; Codex n'injecte plus. Claude audite ses propres cours par agents différés. À l'approche de sa limite hebdomadaire, Claude arrête Codex, injecte et **scelle** les cours (`organisation/SCELLES.json`), non modifiables par Codex."
   },
   "demandes_audit_claude": [
     {
-      "date": "2026-10-08",
-      "lecon": "J09 — Grippe (P-02-Pneumologie)",
-      "statut": "injectée, à auditer par Codex sur le fichier final",
-      "entree": "FILE_AUDIT_CODEX.json"
+      "statut": "annulées le 08.10.2026 : les cours Claude ne sont plus audités par Codex (section 12)"
     }
-  ]
+  ],
+  "action_codex_actuelle": "Livrer chaque cours achevé à Claude (espace_partage/COURS_CODEX_A_AUDITER_PAR_CLAUDE/<CODE>/) ; ne plus injecter ; appliquer la règle fondamentale (section 11)."
 }

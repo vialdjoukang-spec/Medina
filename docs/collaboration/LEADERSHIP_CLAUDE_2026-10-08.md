@@ -94,3 +94,12 @@ Consigne de Vial, absolue et universelle, applicable à Claude, à Codex et à t
 2. **Sources suisses d'abord, puis européennes. Pas de recommandations américaines.** Ordre : sociétés savantes suisses, OFSP, Plan de vaccination suisse, Swissmedic ; puis sociétés européennes (ERS, ESC, ESICM, ESCMID, EASL, ESMO, EULAR, ECDC, EMA…) et, à défaut, OMS. Les recommandations américaines (CDC, IDSA, ATS seule, ACCP, AHA/ACC, ATLS, FDA) ne fondent jamais une conduite ; un essai clinique publié peut être cité comme donnée probante. Un texte conjoint co-signé par une société européenne (par exemple ATS/ERS) est recevable au titre de cette société.
 3. **Médicaments : information professionnelle suisse approuvée par Swissmedic**, lue en texte intégral avec `python3 tools/swissmedic_fi.py chercher <nom>` puis `texte <gtin>` (AIPS via AmiKo). Elle prime sur tout résumé étranger pour les doses, les adaptations et les contre-indications.
 4. **Plan monographique classique** (PROMPT_MEDINA.md § 10) : question clinique ; définition et classifications ; épidémiologie et pronostic ; physiopathologie ; étiologies et facteurs de risque ; anamnèse ; examen clinique ; diagnostic ; urgences et complications ; prise en charge ; suivi et prévention ; situations particulières ; critères formels et paramètres clés. **Le code CIM n'est pas un contenu enseigné** : il reste dans l'en-tête discret du cours, jamais en titre, îlot, tableau ou sous-partie. La substance médicale occupe tout l'espace.
+
+## 12. EN VIGUEUR — fin de l'audit Codex sur les cours Claude (8 octobre 2026)
+
+Consigne directe de Vial :
+
+1. **Aucun cours de Claude n'est auditable par Codex.** Les cours Claude sont injectés directement après la chaîne interne (rédacteur, puis relecteur différé distinct qui renforce et injecte). Les entrées de `FILE_AUDIT_CODEX.json` et les demandes d'audit adressées à Codex sont annulées.
+2. **Codex livre systématiquement ses cours à Claude.** Claude les corrige (règle fondamentale, section 11) puis les injecte. Codex n'injecte plus lui-même.
+3. **Claude ne s'arrête pas tant que le projet n'est pas terminé.**
+4. **À l'approche de la limite hebdomadaire**, Claude : arrête Codex (signal d'arrêt dans `SIGNAUX_CODEX.json` et en tête d'`AGENTS.md`) ; sauvegarde et injecte tout le travail ; **scelle** les cours injectés (liste d'empreintes dans `organisation/SCELLES.json`, contrôle bloquant de non-modification par Codex) ; livre le lien de l'accueil de MEDINA.
