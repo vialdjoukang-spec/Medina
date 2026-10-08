@@ -43,7 +43,13 @@
       "proposed_sha256": "e4f66102035ac9628df8f6cb67dee872396f5d1ef4ab18caf85d0bc54f4870a6"
     }
   ],
-  "checks": [],
+  "checks": [
+    {
+      "command": "test_v7.py --static I33 ; verifier_sigles ; build_front.py ; --all-fragments ; audit_fragments.py ; test_v7.py I33 ; verify_course_native.cjs I33",
+      "base": "960586ec0f6ddf76911a966f1bbd4a2bdcbc29b1",
+      "result": "OK ; {} ; 22 fragments reproductibles ; natif 0 échec (1 360 et 390 px)"
+    }
+  ],
   "limits": [
     "Couverture CIM-11 non établie.",
     "Une comparaison ESC 2026 vérifiée ne valide pas tout le cours ; les cours restent en relecture exhaustive jusqu'à l'audit croisé de Codex."
