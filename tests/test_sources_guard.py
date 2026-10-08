@@ -12,6 +12,8 @@ class T(unittest.TestCase):
         self.assertEqual(sg.tier('https://www.swissmedicinfo.ch/x', self.pol), 'A')
         self.assertEqual(sg.tier('https://www.escardio.org/g', self.pol), 'B')
         self.assertEqual(sg.tier('https://pubmed.ncbi.nlm.nih.gov/1/', self.pol), 'J')
+        self.assertEqual(sg.tier('https://kdigo.org/g', self.pol), 'C')
+        self.assertEqual(sg.tier('https://www.nice.org.uk/g', self.pol), 'C')
         self.assertEqual(sg.tier('https://www.cdc.gov/x', self.pol), 'X')
         self.assertEqual(sg.tier('https://evilswissmedic.ch/', self.pol), 'X')
 

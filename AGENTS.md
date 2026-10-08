@@ -1,4 +1,4 @@
-**Politique des sources (8 octobre 2026)** : sources suisses d'abord (sociétés savantes, universités, Swissmedic/OFSP), puis européennes applicables en Suisse ; recherche indexée avec `origine` CH/EU ; toute autre source exige `derogation`. Lire `docs/collaboration/POLITIQUE_SOURCES.md` ; contrôle bloquant `python3 tools/sources_guard.py check` (CI et commit).
+**Politique des sources (8 octobre 2026, v2)** : **exactitude médicale de la ressource OBLIGATOIRE** (version en vigueur, lue, reproduite fidèlement). Sources suisses d'abord (sociétés savantes, universités, Swissmedic/OFSP), puis européennes applicables en Suisse, puis recommandations et classifications internationales utilisées en Suisse (KDIGO, NICE, OMS…), admises sans dérogation ; recherche indexée avec `origine` CH/EU ; toute autre source exige `derogation`. Lire `docs/collaboration/POLITIQUE_SOURCES.md` ; contrôle bloquant `python3 tools/sources_guard.py check` (CI et commit).
 
 ## Exception ciblée C-01 — instruction directe de Vial, 8 octobre 2026
 

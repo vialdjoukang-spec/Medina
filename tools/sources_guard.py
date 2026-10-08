@@ -16,7 +16,8 @@ ROOT = Path(__file__).resolve().parent.parent
 POLICY = ROOT / 'organisation' / 'sources_policy.json'
 BASELINE = ROOT / 'organisation' / 'sources_baseline.json'
 STUB = ("# Sources — politique obligatoire\n\n"
-        "Toute affirmation de ce dossier s'appuie sur des sources suisses (A), puis européennes applicables en Suisse (B).\n"
+        "Exactitude médicale de la ressource : OBLIGATOIRE (version en vigueur, réellement lue, reproduite fidèlement).\n"
+        "Sources suisses (A), puis européennes applicables en Suisse (B), puis internationales et classifications utilisées en Suisse (C).\n"
         "Source indexée (J) : déclarer `origine` (CH/EU). Autre source (X) : `derogation` motivée.\n"
         "Médicaments : vérifier dans `ref/fi/`. Règle complète : `docs/collaboration/POLITIQUE_SOURCES.md` ; "
         "liste : `organisation/sources_policy.json` ; contrôle : `python3 tools/sources_guard.py check`.\n")
@@ -25,12 +26,12 @@ STUB = ("# Sources — politique obligatoire\n\n"
 def load_policy():
     p = json.loads(POLICY.read_text(encoding='utf-8'))
     a = [d for v in p['A_suisse'].values() for d in v]
-    return {'A': a, 'B': p['B_europe'], 'J': p['J_index']}
+    return {'A': a, 'B': p['B_europe'], 'C': p.get('C_international_utilise_en_suisse', []), 'J': p['J_index']}
 
 
 def tier(url, pol):
     host = (urlparse(url).hostname or '').lower()
-    for t in ('A', 'B', 'J'):
+    for t in ('A', 'B', 'C', 'J'):
         if any(host == d or host.endswith('.' + d) for d in pol[t]):
             return t
     return 'X'
@@ -99,8 +100,9 @@ def main():
     a = ap.parse_args()
     if a.cmd == 'scaffold': scaffold(a.quiet); return 0
     if a.cmd == 'reminder':
-        print("RÈGLE MEDINA — sources : suisses d'abord (sociétés savantes, universités, Swissmedic/OFSP), puis européennes "
-              "applicables en Suisse. Toute source hors liste exige `derogation`. Médicaments : ref/fi/. "
+        print("RÈGLE MEDINA — exactitude médicale de la ressource OBLIGATOIRE (version en vigueur, lue, reproduite fidèlement). "
+              "Sources : suisses d'abord, puis européennes applicables en Suisse, puis internationales et classifications utilisées "
+              "en Suisse (KDIGO, NICE, OMS…). Toute autre source exige `derogation`. Médicaments : ref/fi/. "
               "Contrôle : python3 tools/sources_guard.py check. Voir docs/collaboration/POLITIQUE_SOURCES.md"); return 0
     if a.cmd == 'install':
         subprocess.run(['git', 'config', 'core.hooksPath', 'tools/githooks'], cwd=ROOT, check=True); print('crochets git activés'); return 0
