@@ -34,3 +34,10 @@ Agent distinct du rédacteur. Il :
 5. rédige `rapport_relecture.md` (corrections apportées, réserves restantes, contrôles) dans le dossier de travail.
 
 Le relecteur ne fait aucune opération Git : l'assembleur Claude commit, pousse, produit les deux captures et demande l'audit Codex.
+
+## Règle fondamentale (section 11 de LEADERSHIP_CLAUDE)
+
+- Aucune affirmation de mémoire : chaque fait est rattaché à une source lue. Sinon : retirer ou nommer la lacune.
+- Sources suisses puis européennes ; **aucune recommandation américaine** comme fondement (CDC, IDSA, ACCP, AHA/ACC, ATLS, FDA).
+- Médicaments : `python3 tools/swissmedic_fi.py` (information professionnelle suisse, Swissmedic) en texte intégral.
+- Plan monographique de PROMPT_MEDINA.md § 10 ; **aucun îlot, titre ou tableau consacré au code CIM** (code seulement dans l'en-tête).
