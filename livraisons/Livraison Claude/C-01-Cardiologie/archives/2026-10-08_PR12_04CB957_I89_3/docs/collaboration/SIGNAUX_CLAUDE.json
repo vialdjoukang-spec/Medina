@@ -1,0 +1,208 @@
+{
+ "agent": "Claude",
+ "branche": "claude/loving-shannon-spwrhc",
+ "mis_a_jour": "2026-10-08",
+ "remise_courante": {
+  "lot": "2026-10-08-I89-3",
+  "chapitre": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+  "voie": "branche : création de cours (sources/ du lot : chapters/I89, glossary/i89.py, entrée chapters.json, compte S01 21→22)",
+  "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/rapport.md",
+  "base": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+  "etat": "remis_pour_audit_codex",
+  "test_natif": "2 595 contrôles, 0 échec",
+  "s01": "73 réussis (22 cours)",
+  "unittest": "118 OK",
+  "note": "enchaîné après acceptation médicale de I83 v5, selon la consigne du propriétaire du 8 octobre (chapitre suivant après remise pour audit)",
+  "objet": "réserves f204b06 : minoxidil (extrapolation retirée), mécanismes appuyés sur les étiquetages officiels (minoxidil, hydralazine, ibuprofène, prednisone, pénicilline V) et sur Lund 1986 (myxœdème)",
+  "build_s01_sha256": "612c493a8a93e41f50320be523cb34e86ed085182a4cc554324f233bfc49eace"
+ },
+ "en_attente": [
+  {
+   "lot": "2026-10-08-ESC2026-I30",
+   "etat": "remis_pour_audit_codex",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  },
+  {
+   "lot": "2026-10-08-ESC2026-I33",
+   "etat": "pret_remise_sequentielle_apres_reception_precedente",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  },
+  {
+   "lot": "2026-10-08-ESC2026-I34",
+   "etat": "pret_remise_sequentielle_apres_reception_precedente",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  },
+  {
+   "lot": "2026-10-08-ESC2026-I35",
+   "etat": "pret_remise_sequentielle_apres_reception_precedente",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  },
+  {
+   "lot": "2026-10-08-ESC2026-I40",
+   "etat": "pret_remise_sequentielle_apres_reception_precedente",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  },
+  {
+   "lot": "2026-10-08-ESC2026-I42",
+   "etat": "pret_remise_sequentielle_apres_reception_precedente",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  },
+  {
+   "lot": "2026-10-08-ESC2026-I44",
+   "etat": "pret_remise_sequentielle_apres_reception_precedente",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  },
+  {
+   "lot": "2026-10-08-ESC2026-Q21",
+   "etat": "pret_remise_sequentielle_apres_reception_precedente",
+   "check_claude": "conforme",
+   "test_natif": "0 échec",
+   "base_verifiee": "918ef69 (check-claude conforme)"
+  }
+ ],
+ "audits_de_codex": [
+  {
+   "chapitre": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+   "sha_audite": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+   "rapport": "livraisons/Livraison Claude/I-03-Infectiologie/audits/A41-39b7ff0/RAPPORT.md",
+   "bloquantes": 0,
+   "majeures": 10,
+   "mineures": 46,
+   "redactionnelles": 19,
+   "etat": "audit_initial_rendu",
+   "conclusion": "injection bloquée par 10 réserves majeures jusqu’à correction et contre-vérification au nouveau SHA"
+  }
+ ],
+ "historique_remises": [
+  {
+   "lot": "2026-10-08-I83",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "voie": "branche (création de cours, hors apply-claude)",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+   "fichiers": [
+    "chapters/I83/",
+    "glossary/i83.py",
+    "glossary/fragments_medina.py",
+    "chapters.json (entrée I83)"
+   ],
+   "commit": "59d0c8ef62a31ebd7b9e02f937efb668037e2df3",
+   "etat": "injecte_par_codex",
+   "audit_codex": "a83d725 (I83-MED-01, I83-MED-02 et sept réserves)",
+   "corrections": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/CORRECTIONS_AUDIT_CODEX.json",
+   "injection": "bb3214d (main 72ccab4) ; complément e2c023c publié en 8d6deee"
+  },
+  {
+   "lot": "2026-10-08-I83-HARMONISATION",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "voie": "apply-claude (7 fichiers chapters/I83) + complément glossary/i83.py hors manifeste",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION/rapport.md",
+   "base": "8d6deeeec54a5557fe93dcea6f6c6e6543e09d83",
+   "etat": "recu_par_codex_dbe4063_non_injecte_remplace",
+   "objet": "remarques mineures de I83_DECISION_0974D85 (R1–R4, nomenclature, SCI-01 à SCI-03, Kf, œdème, EHIT III) + 5 précisions du vérificateur indépendant",
+   "check_claude": "conforme",
+   "test_natif": "1 923 contrôles, 0 échec",
+   "s01": "72 réussis"
+  },
+  {
+   "lot": "2026-10-08-I83-HARMONISATION-2",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "voie": "apply-claude (7 fichiers chapters/I83) + complément glossary/i83.py hors manifeste",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-2/rapport.md",
+   "base": "dbe40639e38bd2666641731bcf500ed5a75d147f",
+   "etat": "recu_par_codex_7b5ebff_non_injecte_remplace",
+   "objet": "réserves de la réception dbe4063 : glossaire et cours EHIT → ARTE (SVS/AVF/AVLS 2023), fréquence 1,4 %/1,7 % corrigée, iode cadexomère (O'Meara 2014, 4/11 essais), recommandation 50 IIb C, pansements, traçabilité SCI-03/Kf ; CEAP (s) maintenu avec justification",
+   "check_claude": "conforme",
+   "test_natif": "1 923 contrôles, 0 échec",
+   "s01": "72 réussis"
+  },
+  {
+   "lot": "2026-10-08-I83-HARMONISATION-3",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "voie": "apply-claude (7 fichiers chapters/I83) + complément glossary/i83.py hors manifeste",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-3/rapport.md",
+   "base": "7b5ebffcc12758886a569500d47813ce97b1edc5",
+   "etat": "recu_par_codex_0dc7aa9_non_injecte_remplace",
+   "objet": "réserve bloquante 7b5ebff : écho-Doppler post-ablation (ESVS 2022 R27 IIa C contre SVS/AVF/AVLS 2023 11.1.1–11.1.4) harmonisé dans 7 passages, nuance ARTE I–II ; Kf/σ présentés comme inférence",
+   "check_claude": "conforme",
+   "test_natif": "1 923 contrôles, 0 échec",
+   "s01": "72 réussis"
+  },
+  {
+   "lot": "2026-10-08-I83-HARMONISATION-4",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "voie": "apply-claude (7 fichiers chapters/I83) + complément glossary/i83.py hors manifeste",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-4/rapport.md",
+   "base": "0dc7aa93f8a8cea42b6aa556c38505a66b8919d5",
+   "etat": "recu_par_codex_3dac928_non_injecte_remplace",
+   "objet": "réserve résiduelle 0dc7aa9 : suivi échographique après ablation, exceptions (ARTE/TVP surveillée, symptôme nouveau, traitement séquentiel) dans l'îlot Suivi et son À retenir (ESVS 2022 § 4.1.7)",
+   "check_claude": "conforme",
+   "test_natif": "1 923 contrôles, 0 échec",
+   "s01": "72 réussis"
+  },
+  {
+   "lot": "2026-10-08-I83-HARMONISATION-5",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "voie": "apply-claude (7 fichiers chapters/I83) + complément glossary/i83.py hors manifeste",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-5/rapport.md",
+   "base": "3dac92808b055e235ee6f57cfec8e283455a85ca",
+   "etat": "medicalement_accepte_918ef69_en_attente_injection",
+   "objet": "réserve majeure 3dac928 : suivi d'une thrombose profonde découverte renvoyé à sa conduite propre (I80), distinct de l'ARTE traitée jusqu'à rétraction (11.4.2)",
+   "check_claude": "conforme",
+   "test_natif": "1 923 contrôles, 0 échec",
+   "s01": "72 réussis"
+  },
+  {
+   "lot": "2026-10-08-I89",
+   "chapitre": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+   "voie": "branche : création de cours (sources/ du lot : chapters/I89, glossary/i89.py, entrée chapters.json, compte S01 21→22)",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89/rapport.md",
+   "base": "918ef69a8526bf0be38ffdf4f88438ad61d9a8a7",
+   "etat": "recu_par_codex_1c39691_non_integre_remplace",
+   "test_natif": "2 595 contrôles, 0 échec",
+   "s01": "73 réussis (22 cours)",
+   "unittest": "118 OK",
+   "note": "enchaîné après acceptation médicale de I83 v5, selon la consigne du propriétaire du 8 octobre (chapitre suivant après remise pour audit)"
+  },
+  {
+   "lot": "2026-10-08-I89-2",
+   "chapitre": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+   "voie": "branche : création de cours (sources/ du lot : chapters/I89, glossary/i89.py, entrée chapters.json, compte S01 21→22)",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-2/rapport.md",
+   "base": "1c39691289c49cb701345026b5ab9334f5330225",
+   "etat": "recu_par_codex_f204b06_non_integre_remplace",
+   "test_natif": "2 595 contrôles, 0 échec",
+   "s01": "73 réussis (22 cours)",
+   "unittest": "118 OK",
+   "note": "enchaîné après acceptation médicale de I83 v5, selon la consigne du propriétaire du 8 octobre (chapitre suivant après remise pour audit)",
+   "objet": "réserves bloquantes 1c39691 : octréotide (doses retirées), Verdye (juridiction limitée, information suisse inaccessible), mécanismes sourcés ; mention prégabaline corrigée"
+  }
+ ],
+ "en_preparation": {
+  "chapitre": "J45 — Asthme (P-02-Pneumologie)",
+  "etat": "revue exhaustive en cours par quatre sous-agents (un par onglet), copie de travail hors dépôt ; aucune remise avant la fin des remises cardiologiques en file"
+ },
+ "remises_paralleles": [
+  {
+   "lot": "2026-10-08-I83-HARMONISATION-6",
+   "chapitre": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+   "base": "1c39691289c49cb701345026b5ab9334f5330225",
+   "etat": "remis_pour_audit_codex",
+   "objet": "réserves mineures I83-V5-MIN-01 et MIN-02 du contre-audit favorable de la v5",
+   "rapport": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83-HARMONISATION-6/rapport.md"
+  }
+ ]
+}

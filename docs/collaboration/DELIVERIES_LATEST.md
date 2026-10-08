@@ -10,6 +10,33 @@ Ce résultat actualise les mentions historiques « non injecté / contrôles non
 
 **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : production parallèle des catégories de ce seul chapitre, avec un auteur par fichier réel. Les dix sources canoniques demeurent identiques à la base auditée `39b7ff0`. Les propositions, les lectures croisées et la recherche de références artérielles suisses précises se poursuivent ; aucun chapitre suivant Codex n’est ouvert. Les 11 fragments Claude et 10 Codex restent attribués en blocs entiers. La remise I89 de Claude est reçue/archivée, sans injection ni audit favorable revendiqué ici.
 
+## 2026-10-08 — PR #12, tête f30b891 : J45
+
+État : **repéré et reçu ; non intégré ; réserves médicales/documentaires ouvertes ; contrôles de bout en bout non reproduits ; publication documentaire seulement**.
+
+- Campagne : 21 fragments, 11 Claude / 10 Codex ; premier fragment Claude `S02 / P-02-Pneumologie`.
+- Baseline : `a3b8ac4060529aaf339f17851305c07abac25cc8`.
+- 21 originaux archivés ; arbre `902e2baf04f72e3a32700a77d6920e2242d2b620`.
+- 9/9 propositions et 9/9 baselines exactes.
+- Audit statique : 46 fenêtres, 86 déclencheurs, aucune cible manquante.
+- Blocages : information professionnelle suisse, sources ERS non intégrales, revue médicale exhaustive et contrôles locaux navigateur/build.
+- Aucune injection canonique ni publication du site.
+
+[Rapport](reviews/2026-10-08/PR12_F30B891_J45/RECEPTION.md) · [Reçu](receipts/CLAUDE_J45_F30B891_RECEPTION_2026-10-08.json)
+
+## 2026-10-08 — PR #12, tête 04cb957 : I89-3
+
+État : **repéré et reçu ; corrections médicales ciblées acceptées ; non intégré ; contrôles de bout en bout non reproduits ; publication documentaire seulement**.
+
+- Baseline : `f204b06ac174d41632b742ec6b82097b1532b2c8`.
+- 18 originaux archivés ; arbre `6d9f53ff5aadda19ae07d3820f94f2704ce14b5d`.
+- 11/11 propositions et 2/2 baselines exactes ; neuf ajouts absents de `main`.
+- Delta I89-2→I89-3 : quatre HTML modifiés.
+- Réserves minoxidil/sources primaires levées dans la contre-relecture ciblée.
+- I83 reste actif ; aucune injection canonique ni publication du site.
+
+[Rapport](reviews/2026-10-08/PR12_04CB957_I89_3/RECEPTION.md) · [Reçu](receipts/CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête 8a6dc7f : I83-HARMONISATION-6
 
 État : **repéré et reçu ; delta médical ciblé favorable ; non intégré ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.

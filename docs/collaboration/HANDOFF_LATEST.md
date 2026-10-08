@@ -10,6 +10,24 @@ Ce résultat actualise les mentions historiques « non injecté / contrôles non
 
 **A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)** : production parallèle des catégories de ce seul chapitre, avec un auteur par fichier réel. Les dix sources canoniques demeurent identiques à la base auditée `39b7ff0`. Les propositions, les lectures croisées et la recherche de références artérielles suisses précises se poursuivent ; aucun chapitre suivant Codex n’est ouvert. Les 11 fragments Claude et 10 Codex restent attribués en blocs entiers. La remise I89 de Claude est reçue/archivée, sans injection ni audit favorable revendiqué ici.
 
+## Réception Claude J45 — tête f30b891, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) remet `J45 — Asthme` pour `P-02-Pneumologie` à la tête `f30b891602d8bf783058b8811b1530288f9508b5`, exactement basée sur `main` `a3b8ac4060529aaf339f17851305c07abac25cc8`. Les 21 originaux sont archivés sans modification ; les neuf propositions et les neuf baselines concordent.
+
+Cette remise est le premier chapitre du premier fragment Claude (`S02`) dans la campagne des 21 fragments 11/10. Elle reste distincte de la campagne historique 30 cours 15/15 et du backlog cardiologique 20 cours 10/10.
+
+État : **repéré et reçu ; audit médical ciblé partiellement favorable ; non intégré ; non contrôlé techniquement de bout en bout ; publication documentaire seulement**. Les informations professionnelles suisses, les sources ERS non intégrales et la relecture exhaustive des 37 340 mots restent à lever. Aucune attribution, valeur `active_chapter`, route ou source canonique n'a changé.
+
+[Rapport J45](reviews/2026-10-08/PR12_F30B891_J45/RECEPTION.md) · [Reçu J45](receipts/CLAUDE_J45_F30B891_RECEPTION_2026-10-08.json)
+
+## Réception Claude I89-3 — tête 04cb957, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) remet I89-3 à la tête `04cb95729d44648cc65339f28cf6631574babbb2`, exactement basée sur `main` `f204b06ac174d41632b742ec6b82097b1532b2c8`. Les 18 originaux sont archivés sans modification ; 11 propositions et deux baselines concordent. Les deux réserves médicales bloquantes de I89-2 sont levées dans ce delta ciblé.
+
+État : **repéré et reçu ; corrections médicales ciblées acceptées ; non intégré ; non contrôlé techniquement de bout en bout ; publication documentaire seulement**. I83 reste le chapitre actif ; aucune attribution, source canonique ni route n'a changé.
+
+[Rapport I89-3](reviews/2026-10-08/PR12_04CB957_I89_3/RECEPTION.md) · [Reçu I89-3](receipts/CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08.json)
+
 ## Réceptions Claude I83-HARMONISATION-6 et I89-2 — 8 octobre 2026
 
 À la tête PR #12 `8a6dc7f28bbdaa5251f9a4b75031875073bf7ccb`, I83-HARMONISATION-6 est reçu : 13 originaux archivés, huit couples baseline/proposition exacts, delta médical ciblé favorable, mais aucune injection faute de contrôles indépendants de reconstruction et navigateur. [Rapport I83](reviews/2026-10-08/PR12_8A6DC7F_I83_HARMONISATION_6/RECEPTION.md) · [Reçu I83](receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_RECEPTION_2026-10-08.json).

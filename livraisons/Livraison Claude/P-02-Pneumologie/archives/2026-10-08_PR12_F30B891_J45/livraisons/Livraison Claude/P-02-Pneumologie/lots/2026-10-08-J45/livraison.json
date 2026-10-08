@@ -1,0 +1,102 @@
+{
+ "schema_version": 1,
+ "kind": "claude_contribution",
+ "author": "Claude",
+ "status": "revue exhaustive et réécriture de J45 — Asthme (P-02-Pneumologie), couvrant J45 et J46, selon GINA 2026 ; remise pour audit croisé Codex",
+ "fragment": {
+  "id": "S02",
+  "label": "P-02-Pneumologie",
+  "specialty": "Pneumologie"
+ },
+ "source_commit": "a3b8ac4060529aaf339f17851305c07abac25cc8",
+ "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+ "chapters": [
+  {
+   "code": "J45",
+   "title": "Asthme",
+   "covers": [
+    "J45",
+    "J46"
+   ],
+   "owner_fragment": "S02"
+  }
+ ],
+ "files": [
+  {
+   "target_path": "chapters/J45/J45_a.html",
+   "source_path": "sources/chapters/J45/J45_a.html",
+   "sha256": "909345840cc9b604eff4df0eb0141ed0e79797ed8c4a010e23282043c976840a",
+   "proposed_sha256": "03f9b6ffc5f2d5c00bfed692f2679193df3dc6fcb39683c5347bab4f168f1bbe"
+  },
+  {
+   "target_path": "chapters/J45/J45_b.html",
+   "source_path": "sources/chapters/J45/J45_b.html",
+   "sha256": "b0efed9fc1ecb7b9c52193198285a61e5d0ba0da58e6ec6c437cd441fac51108",
+   "proposed_sha256": "cc988aa15a21ff00b3e351ca3e647975bfe68fd965e3828b1b4606ecf5da4854"
+  },
+  {
+   "target_path": "chapters/J45/J45_c.html",
+   "source_path": "sources/chapters/J45/J45_c.html",
+   "sha256": "95d9db05c47f750770a6db9e86e1606a746a7c2974c02936129235273c615825",
+   "proposed_sha256": "a322b37d23cf623099068801d2eae00b8d597e262583d8f4f297b413da7a611e"
+  },
+  {
+   "target_path": "chapters/J45/J45_d.html",
+   "source_path": "sources/chapters/J45/J45_d.html",
+   "sha256": "1e35d733240e944c587dffa025e720effcd4c0ca035a8d9898e6c0bd43f38e61",
+   "proposed_sha256": "f13bf0acc22e5992c5ffaa26da2a4d9351b6f7a3cec72301b62cb5fdbdfbdcfd"
+  },
+  {
+   "target_path": "chapters/J45/J45_justifications.json",
+   "source_path": "sources/chapters/J45/J45_justifications.json",
+   "sha256": "00393fadff3be7a72c61835b94737fe12d03dca4d9b93fd307d71628fbeb7b0e",
+   "proposed_sha256": "7087dbb7f5d66012d3b60b01a38471fe404acc71c10c849fbe445b938e7b503e"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop1.html",
+   "source_path": "sources/chapters/J45/J45_pop1.html",
+   "sha256": "832a8fc0c329c814447b47344b06c9bfa873274a0c8fef4dd811617f70bd265f",
+   "proposed_sha256": "cc4c322d546fb8c09f258f6fe2639fd737fd2c1ff309b02711b1aa62ae9ffa98"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop2.html",
+   "source_path": "sources/chapters/J45/J45_pop2.html",
+   "sha256": "ac68031bd9d7ee6944a8e6b2bb2a56cec8d83388ec9de7d93ba738e4bf750508",
+   "proposed_sha256": "140bff48243a1bb3b6f4cc6d68d7d26bf56c50ab07ddefca481048c0678caf77"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop3.html",
+   "source_path": "sources/chapters/J45/J45_pop3.html",
+   "sha256": "55ee1d61556b4ca1729aeb47c4a330eed763b612a908868873f82af0e9e6cbbc",
+   "proposed_sha256": "ffaa9a7949ba710434af418e05366b1ea3810cb61544635bd1a2fef994866249"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop4.html",
+   "source_path": "sources/chapters/J45/J45_pop4.html",
+   "sha256": "abde85d51d9d18f8190f6b364e4d194bae7ea8d23ba8335cc67b6a790ea5540c",
+   "proposed_sha256": "46c8a74e4d7ee211f35aad2fdb93c77f17fcfc1f37724bb48065d27f4fcb10bb"
+  }
+ ],
+ "checks": [
+  {
+   "command": "verifier_sigles J45 ; test_v7.py --static J45 ; insert_justifications.py --course J45 ; build_front.py ; --all-fragments ; audit_fragments.py ; verify_course_native.cjs J45 ; unittest discover tests",
+   "base": "a3b8ac4060529aaf339f17851305c07abac25cc8",
+   "result": "{} ; OK (37 340 mots, 46 fenêtres, 8 quiz, 8 Pareto) ; 15/15 cibles ; 22 fragments, build reproductible ; natif 2 282 contrôles, 0 échec ; 118 tests OK",
+   "build_fragment_s02_sha256": "ffa8cadcd553f9fbf2736737af10a161025ec60cf4cd3d413a513fbb312af8a1"
+  }
+ ],
+ "limits": [
+  "Couverture CIM-11 non établie.",
+  "Informations professionnelles suisses (Compendium) inaccessibles : limites MART, ipratropium, Trimbow, montélukast, remboursement non vérifiés ; disponibilité fondée sur la liste Swissmedic des autorisations.",
+  "Normes ERS 2017 et ERS/ATS 2022 lues en résumé : catégories PD20 et contre-indications de la méthacholine non relues en texte intégral.",
+  "Revue exhaustive par quatre rédacteurs, un assembleur et un vérificateur indépendant ; aucune certification n'est déduite des tests."
+ ],
+ "delivery": {
+  "lot": "J45",
+  "date": "2026-10-08",
+  "branch": "claude/loving-shannon-spwrhc",
+  "start_commit": "a3b8ac4060529aaf339f17851305c07abac25cc8",
+  "report": "rapport.md",
+  "base": "main"
+ }
+}
