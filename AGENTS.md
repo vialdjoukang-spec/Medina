@@ -9,6 +9,11 @@ La session Codex actuelle prend le relais de GPT « work » comme coordinateur p
 
 Vial autorise en permanence les publications et intégrations GitHub du projet. Lire `CLAUDE.md`, `docs/collaboration/README.md` et les instructions actuelles avant de modifier le contenu.
 
+
+## Précisions durables de Vial — 8 octobre 2026
+
+Lire [les consignes communes d’interaction, densité et sources](docs/collaboration/CONSIGNES_INTERACTION_DENSITE_SOURCES.md). Le parallélisme répartit les catégories et sujets du **même chapitre** entre sous-agents, avec un auteur par fichier. Les explications sont accessibles après clic sur le mot interactif ; les tableaux servent les classifications et énumérations quand ils clarifient le contenu, avec des cellules courtes et cohérentes. Aucun plafond de mots arbitraire. Pour un contentieux clinique, **la source primaire applicable la plus récente l’emporte** ; présenter le choix dans une fenêtre liée à un mot vert, avec accès au texte actuellement en vigueur même s’il est ancien. Compendium est un accès utile aux monographies suisses, à lire et dater réellement. Ne pas assimiler revue IA, tests et validation par un médecin.
+
 ## Nomenclature et livraisons — exigence du 7 octobre 2026
 
 Toute leçon doit être nommée **code CIM + intitulé complet**, y compris dans les liens, rapports et navigations. Tout fragment doit porter **initiale de la spécialité - rang de production à deux chiffres - nom littéral**, par exemple `C-01-Cardiologie`. Le registre partagé est `organisation/fragments.json` ; les identifiants techniques S01…T7 et les routes restent stables.

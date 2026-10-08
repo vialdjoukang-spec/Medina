@@ -156,3 +156,7 @@ Construire la matrice officielle CIM-11 versionnée : code, identifiant OMS, int
 À réception de ce cahier, Claude publie un accusé de prise en charge dans sa passation ou son rapport, avec : lien et version du cahier lu, tête Git consultée, livraisons antérieures examinées, état prouvé de la priorité cardiologie, chapitre réservé, répartition des sous-agents, chemins possédés, contrôles prévus et blocages. Codex peut alors enregistrer « mission reçue ». Sans cet accusé, l'état reste **« cahier disponible ; prise en charge non confirmée »**.
 
 Aux remises, distinguer **attribué, actif, livré, reçu, audité, injecté, contrôlé, publié** et l'état de la complétude. Chaque annonce au propriétaire repose sur des SHAs, rapports, contrôles et liens vérifiables. Aucune présence de fichier n'atteste un travail nocturne automatique ou une session externe en cours.
+
+## Précisions reçues le 8 octobre 2026
+
+Appliquer [les consignes communes](CONSIGNES_INTERACTION_DENSITE_SOURCES.md) : plusieurs catégories du même chapitre en parallèle, mots verts ouvrant les explications et les sources, tableaux utiles et cellules claires, densité sans plafond de mots, arbitrage par la source primaire applicable la plus récente et accès au texte actuellement en vigueur. Cette instruction est disponible ; sa lecture par la session Claude externe nécessite son accusé de réception.

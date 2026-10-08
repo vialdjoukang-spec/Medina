@@ -8,6 +8,10 @@ La session Codex actuelle prend le relais de GPT « work » comme coordinateur p
 
 
 
+## Précisions durables de Vial — 8 octobre 2026
+
+Lire [les consignes communes d’interaction, densité et sources](docs/collaboration/CONSIGNES_INTERACTION_DENSITE_SOURCES.md). Le parallélisme répartit les catégories et sujets du **même chapitre** entre sous-agents, avec un auteur par fichier. Les explications sont accessibles après clic sur le mot interactif ; les tableaux servent les classifications et énumérations quand ils clarifient le contenu, avec des cellules courtes et cohérentes. Aucun plafond de mots arbitraire. Pour un contentieux clinique, **la source primaire applicable la plus récente l’emporte** ; présenter le choix dans une fenêtre liée à un mot vert, avec accès au texte actuellement en vigueur même s’il est ancien. Compendium est un accès utile aux monographies suisses, à lire et dater réellement. Ne pas assimiler revue IA, tests et validation par un médecin.
+
 ## Mission cardiologie conservée : Fragment 01 à 50/50
 
 Lire [FRAGMENT_01_PRIORITE.md](docs/collaboration/FRAGMENT_01_PRIORITE.md) : vingt cours présents en cardiologie répartis 10 Codex / 10 Claude, plus quatre productions prioritaires réparties 2/2. Les listes historiques 15/15 ci-dessous sont remplacées pour cette reprise. Fenêtres contextualisées, volume sans multiplicateur imposé et ESC 2026 comparatif. La nouvelle chaîne Codex du 8 octobre ouvre I-03-Infectiologie ; les réserves cardiologiques demeurent ouvertes et Claude conserve sa mission actuelle.
