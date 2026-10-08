@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "20c67c011e57eccd25b105b15f465becf7df7f2e",
+  "previous_received_head": "20bee19a6329f0a62126e9180bfc909207055e38",
+  "main_sha_at_reception": "e5bde2b5f94852851a6b2542b48e541ce6a72ef5",
+  "received_at": "2026-10-08T09:41:11Z",
+  "origin": "Claude confirmé par branche, auteur du commit, Co-Authored-By Claude Opus 5.5, rapport et fichiers I83",
+  "status": "reçu et archivé ; corrections ciblées cohérentes ; aucune injection",
+  "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20C67C0_I83_PH02_INTRAARTERIELLE",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "f65ad81c54a97bf68fad6d9bb4e2df1fef0a6763",
+    "objects": 6
+  },
+  "inventory": [
+    {
+      "source_path": "chapters/I83/I83_d.html",
+      "git_blob_sha": "e006eace6f7eac73897d0d5418ae9b495067f6cf",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20C67C0_I83_PH02_INTRAARTERIELLE/chapters/I83/I83_d.html"
+    },
+    {
+      "source_path": "chapters/I83/I83_pop4.html",
+      "git_blob_sha": "4d1f3fe2ed5c8e2d11da3783ac22faac1d351b79",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20C67C0_I83_PH02_INTRAARTERIELLE/chapters/I83/I83_pop4.html"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_e5bde2b.json",
+      "git_blob_sha": "e475cc5f479e2890eb4f2f1fe837fc24ec32fa09",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20C67C0_I83_PH02_INTRAARTERIELLE/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_e5bde2b.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/simulation_main_e5bde2b_JOURNAL.txt",
+      "git_blob_sha": "0dbfb7217410500c4189f4677fd5b96365152102",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20C67C0_I83_PH02_INTRAARTERIELLE/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/simulation_main_e5bde2b_JOURNAL.txt"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/injection_intra_arterielle_extraits.md",
+      "git_blob_sha": "3ff96ae7f11e017be24febabd711bf24396ef31e",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20C67C0_I83_PH02_INTRAARTERIELLE/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/injection_intra_arterielle_extraits.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+      "git_blob_sha": "064dd633aeefaa430c6a143564b21fd53da5e14b",
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_20C67C0_I83_PH02_INTRAARTERIELLE/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md"
+    }
+  ],
+  "content_review": {
+    "ph02": "chronologie reformulée comme indice de plausibilité, avec diagnostic différentiel et absence d’arrêt automatique",
+    "intra_arterial": "mépivacaïne ajoutée conformément aux deux copies de libellés suisses livrées",
+    "official_documents_independently_verified": false,
+    "limitation": "conduite à présenter comme instruction spécifique des libellés produits et protocoles locaux, non comme standard universel démontré"
+  },
+  "producer_checks": {
+    "base": "e5bde2b5f94852851a6b2542b48e541ce6a72ef5",
+    "native": {
+      "result": "passed",
+      "checks": 1923,
+      "failures": 0,
+      "errors": 0
+    },
+    "s01": {
+      "result": "passed",
+      "checks": 72
+    },
+    "independently_reproduced": false
+  },
+  "blockers": [
+    "documents officiels non vérifiés indépendamment",
+    "contrôles techniques non reproduits par Codex",
+    "I83 absent de main et intégration complète non réalisée",
+    "audit médical exhaustif I83 inachevé",
+    "CIM-11 non certifiable"
+  ],
+  "decision": "ne pas injecter ; archiver le delta et conserver I83 actif",
+  "checks_executed": [
+    "PR/head/main relus",
+    "inventaire paginé 15 branches et 13 PR",
+    "delta 20bee19..20c67c0 inventorié",
+    "six blobs archivés sous empreinte f65ad81",
+    "modifications PH-02 et intra-artérielle relues",
+    "JSON natif et journal contrôlés",
+    "tentative d’accès à la source officielle AIPS"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "reconstruction indépendante",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "audit médical exhaustif I83",
+    "confrontation aux documents officiels AIPS"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  }
+}

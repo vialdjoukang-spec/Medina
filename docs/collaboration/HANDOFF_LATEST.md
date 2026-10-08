@@ -1,3 +1,7 @@
+## I83 — causalité médicamenteuse et injection intra-artérielle, tête 20c67c0, 8 octobre 2026
+
+Six objets nouveaux sont reçus et archivés. PH-02 distingue désormais chronologie et causalité et interdit l’arrêt automatique d’un médicament. Les extraits Aethoxysklerol/Sclerovein fournis confirment l’alternative mépivacaïne dans la conduite décrite après injection intra-artérielle. Le producteur déclare 1 923 contrôles natifs et 72 contrôles S01 sans erreur sur `main` `e5bde2b`. L’injection reste différée : documents officiels non contre-vérifiés, contrôles non reproduits et audit exhaustif I83 inachevé. [Rapport](reviews/2026-10-08/PR12_20C67C0_I83_PH02_INTRAARTERIELLE/RECEPTION.md).
+
 ## I83 — conservateurs Rapidocain et contrôle sur main, tête 20bee19, 8 octobre 2026
 
 Quatre objets nouveaux sont reçus et archivés. La fenêtre de tumescence rend désormais visibles les conservateurs des flacons multidoses Rapidocain, la restriction au-delà de 15 mL et l’allergie aux parahydroxybenzoates ; ces points concordent avec la copie livrée. Le producteur déclare 1 923 contrôles natifs et 72 contrôles S01 sans erreur sur `main` `ea105ac`. L’injection reste différée : source officielle et contrôles non contre-vérifiés, protocole hospitalier non identifié, audit exhaustif I83 inachevé. [Rapport](reviews/2026-10-08/PR12_20BEE19_I83_CONSERVATEURS_CONTROLES/RECEPTION.md).
