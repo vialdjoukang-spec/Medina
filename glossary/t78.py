@@ -44,3 +44,6 @@ a('SQ',[('S','Standardised'),('Q','Quality')],'Qualité standardisée','<p>Syst�
 a('SQ-U',[('SQ','Standardised Quality'),('U','Units')],'Unités de qualité standardisée','<p>Unité de dose des extraits allergéniques ALK ; dose d’entretien des venins Alutard SQ® : 100 000 SQ-U (information professionnelle suisse).</p>','t78-d-ita')
 a('CD203c',[('CD','Cluster of Differentiation'),('203c','203c')],'Marqueur CD203c','<p>Marqueur de surface du basophile, surexprimé lors de son activation ; utilisé avec CD63 dans le test d’activation des basophiles.</p>')
 a('Solu-Medrol',[('Solu-Medrol','nom commercial de la méthylprednisolone injectable')],'Solu-Medrol®','<p>Méthylprednisolone injectable (Pfizer) ; l’information professionnelle suisse rappelle que l’adrénaline est le premier choix dans l’œdème laryngé.</p>')
+for k,n in [('LTB4','B4'),('LTC4','C4'),('LTD4','D4')]:
+    a(k,[('LT','LeucoTriène'),(n,n)],'Leucotriène '+n,'<p>Médiateur lipidique synthétisé par les mastocytes et les basophiles activés (recommandation S2k 2021).</p>')
+a('C3a',[('C3','Composant 3 du complément'),('a','fragment a (petit fragment de clivage)')],'Fragment C3a du complément','<p>Anaphylatoxine libérée lors du clivage de C3 ; elle peut activer les mastocytes sans IgE (WAO 2020).</p>')
