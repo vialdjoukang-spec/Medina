@@ -29,3 +29,7 @@ Le script `tools/build_work_preview.py` vérifie les dix empreintes du dossier i
 Les résultats exacts sont consignés dans le reçu FRONTENDS_2026-10-08, le reçu ALIGNEMENT_ATKINSON_2026-10-08 et leurs contrôles associés. Ils portent sur le fonctionnement technique et le périmètre affiché ; ils ne constituent pas une validation médicale finale des cours ou des fragments.
 
 La tête distante 9fa4651 dépose J09 dans l’ancien espace partagé ; elle est conservée lors de l’intégration frontend. Ce dépôt de chapitre n’est pas traité comme un fragment entier prêt pour l’audit unique.
+
+## Publication vérifiée
+
+Le commit frontend `04a67ee5372df53946bbe619b0d6b00f98afe28c` est déployé, workflow Pages `37805755015` réussi. Les24pages publiques (portail,22spécialités,aperçu) répondent200 et embarquent les quatre fichiers Atkinson originaux. Le navigateur contrôle les titres du portail, de l’infectiologie et de la cardiologie, puis le cours A41 en rédaction avec ses quatre onglets et une fenêtre explicative : vraies fontes Atkinson rendues, aucun débordement bureau/mobile ni erreur JavaScript. Preuves `reviews/2026-10-08/ALIGNEMENT_ATKINSON/live-*.json`.

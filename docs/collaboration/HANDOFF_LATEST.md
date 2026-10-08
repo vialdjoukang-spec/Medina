@@ -1,6 +1,6 @@
 ## Alignement visuel avec Claude — 8 octobre 2026
 
-Sur instruction directe de Vial, Atkinson Hyperlegible Next de Claude (`f928674`) est la police par défaut. Ses deux commits frontend sont repris avec son attribution. Les 22 spécialités, le thème clair, les contrastes et les préférences de lecture sont vérifiés ; les sources médicales et statuts d’injection sont inchangés. [Réalisation](FRONTENDS_2026-10-08.md) · [Reçu d’alignement](receipts/CODEX_ALIGNEMENT_ATKINSON_2026-10-08.json). Les mentions Anthropic et publication à vérifier ci-dessous correspondent aux étapes antérieures ; le reçu d’alignement donne l’état actuel.
+Sur instruction directe de Vial, Atkinson Hyperlegible Next de Claude (`f928674`) est la police par défaut. Ses deux commits frontend sont repris avec son attribution. La publication04a67ee est vérifiée (24pagesHTTP200,4pagesnavigateur, vraies fontes Atkinson, aucun débordement ni erreurJS). Les22spécialités, le thème clair, les contrastes et les préférences de lecture sont vérifiés ; les sources médicales et statuts d’injection sont inchangés. [Réalisation](FRONTENDS_2026-10-08.md) · [Reçu d’alignement](receipts/CODEX_ALIGNEMENT_ATKINSON_2026-10-08.json). Les mentions Anthropic et publication à vérifier ci-dessous correspondent aux étapes antérieures ; le reçu d’alignement donne l’état actuel.
 
 ## Frontends distincts — 8 octobre 2026
 
