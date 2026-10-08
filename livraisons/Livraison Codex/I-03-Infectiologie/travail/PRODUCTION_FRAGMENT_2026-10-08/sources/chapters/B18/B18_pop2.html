@@ -1,71 +1,110 @@
-<template data-pop="b18-sinusoide" data-title="Sinusoïde hépatique : le sang rencontre les cellules du foie">
-  <div class="lab">Structure normale</div><p>Le sinusoïde est un capillaire spécialisé situé entre les travées d’hépatocytes. Son endothélium facilite les échanges avec l’espace de Disse. Les macrophages de Kupffer surveillent sa lumière ; les cellules stellaires se trouvent dans le compartiment périsinusoïdal.</p>
-  <div class="lab">Conséquence</div><p>La circulation expose le foie aux antigènes et aux cellules immunitaires. Une biopsie observée en trois dimensions montre cette proximité ; elle ne prouve pas que tous les hépatocytes d’une personne porteuse du VHB soient infectés. La fonction d’échange et l’architecture fibreuse doivent être évaluées séparément.</p>
-  <p class="refs"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7925637/" target="_blank" rel="noopener">Imagerie tridimensionnelle primaire de biopsies hépatiques humaines, 2021</a>, consultée le 08.10.2026.</p>
+<template data-pop="b18-s-sinusoide" data-title="Sinusoïde hépatique : un capillaire perméable">
+<p>Les sinusoïdes sont les capillaires du foie ; leur diamètre est de 5 à 10 µm. Leur endothélium est fenêtré : des pores de 100 à 150 nm de diamètre le traversent, regroupés en cribles, et aucune membrane basale ne le double. En microscopie à super-résolution, les pores de l’endothélium humain mesurent surtout 110 à 120 nm.</p>
+<p>Cette perméabilité met le plasma au contact direct des hépatocytes, à travers l’espace de Disse. Elle explique que les virus, les médicaments et les protéines plasmatiques atteignent l’hépatocyte sans franchir de barrière continue.</p>
+<p>Source : <a href="https://doi.org/10.3389/fphys.2021.637136" target="_blank" rel="noopener" data-reference-source="1">Kong et coll., Frontiers in Physiology 2021</a>.</p>
 </template>
-<template data-pop="b18-alt-fonction" data-title="ALT, albumine et bilirubine : trois questions différentes">
-  <div class="lab">Lésion</div><p>L’alanine aminotransférase, ou ALT, est une enzyme contenue dans les hépatocytes. Son augmentation sanguine signale une libération cellulaire, sans mesurer directement le nombre de virions ni la fibrose accumulée. Une valeur varie dans le temps et d’autres maladies peuvent l’élever.</p>
-  <div class="lab">Fonction et limites</div><p>L’albumine et les facteurs de coagulation reflètent notamment la synthèse hépatique ; la bilirubine renseigne aussi son transport et son excrétion. Nutrition, inflammation, hémolyse, médicaments ou anticoagulants peuvent modifier ces résultats. La fonction de Mme R. ne peut pas être déclarée normale puisque ses valeurs n’ont pas été fournies.</p>
-  <p class="refs"><a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL, Clinical Practice Guidelines VHB 2025, évaluation initiale</a>, texte intégral consulté le 08.10.2026. Les intervalles de référence dépendent du laboratoire.</p>
+
+<template data-pop="b18-s-metavir" data-title="Stades Metavir de la fibrose">
+<p>Le score Metavir classe la fibrose histologique en cinq stades, de l’absence de fibrose jusqu’à la cirrhose (F4). Les recommandations de l’EASL utilisent trois repères :</p>
+<div class="table-wrap"><table class="t"><thead><tr><th>Stade</th><th>Nom</th><th>Conséquence</th></tr></thead><tbody>
+<tr><td>F2</td><td>Fibrose significative</td><td>Traitement urgent du VHC</td></tr>
+<tr><td>F3</td><td>Fibrose avancée, « en pont »</td><td>Surveillance du carcinome discutée après guérison du VHC</td></tr>
+<tr><td>F4</td><td>Cirrhose</td><td>Surveillance du carcinome et des varices</td></tr>
+</tbody></table></div>
+<p>Le stade se mesure aujourd’hui surtout par élastographie, dont chaque seuil correspond approximativement à un stade. Le tableau se lit avec une prudence : une valeur d’élastographie n’est pas une histologie, et ses seuils varient selon le virus et l’appareil.</p>
+<p>Sources : <a href="https://easl.eu/wp-content/uploads/2020/10/EASL-recommendations-on-treatment-of-hepatitis-C.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2020</a> ; <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2025, tableau 6</a>.</p>
 </template>
-<template data-pop="b18-kupffer" data-title="Cellules de Kupffer et autres sentinelles du foie">
-  <div class="lab">Rôle</div><p>Les cellules de Kupffer sont des macrophages résidents du foie. Elles participent à la surveillance et à l’élimination de particules dans le compartiment sinusoïdal. Les lymphocytes et plusieurs autres populations immunitaires coopèrent avec elles ; une seule population n’explique pas toute l’hépatite chronique.</p>
-  <div class="lab">Portée de la preuve</div><p>L’atlas de MacParland décrit des profils de cellules provenant de cinq foies humains. Il confirme la diversité cellulaire, mais ne mesure ni la fonction des cellules de Mme R. ni son stade inflammatoire. Un biomarqueur expérimental de macrophage ne remplace pas le bilan clinique.</p>
-  <p class="refs"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6197289/" target="_blank" rel="noopener">MacParland et coll., Nature Communications 2018, étude primaire unicellulaire humaine</a>, consultée le 08.10.2026.</p>
+
+<template data-pop="b18-s-kupffer" data-title="Cellules de Kupffer : deux populations de macrophages">
+<p>Les cellules de Kupffer sont les macrophages résidents du foie ; elles siègent du côté de la lumière des sinusoïdes. L’atlas unicellulaire de MacParland et collaborateurs (8444 cellules issues de cinq foies de donneurs, 20 populations) y distingue deux populations : l’une exprime des gènes inflammatoires, l’autre des gènes de tolérance. La seconde, surtout périportale, sécrète moins de facteur de nécrose tumorale après stimulation.</p>
+<p>Cet équilibre aide à comprendre pourquoi le foie tolère longtemps une infection chronique avant que l’inflammation ne s’installe. L’atlas décrit des populations ; il ne mesure ni leur fréquence réelle ni leur rôle dans une hépatite donnée.</p>
+<p>Source : <a href="https://doi.org/10.1038/s41467-018-06318-7" target="_blank" rel="noopener" data-reference-source="1">MacParland et coll., Nature Communications 2018</a>.</p>
 </template>
-<template data-pop="b18-stellaire" data-title="Cellule stellaire : de la réparation à la matrice fibreuse">
-  <div class="lab">Fonction normale</div><p>Les cellules stellaires résident dans l’espace périsinusoïdal. Elles participent à l’équilibre de la matrice. Une agression persistante peut les activer et accroître leur production de composants fibreux, dont le collagène.</p>
-  <div class="lab">Ce qui change</div><p>L’accumulation de matrice modifie les échanges et l’architecture hépatique. L’infection virale est une cause possible d’agression répétée, mais alcool, maladie métabolique et autres causes peuvent coexister. L’activation cellulaire ne se déduit pas d’un seul chiffre d’ALT.</p>
-  <p class="refs"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7925637/" target="_blank" rel="noopener">Imagerie primaire du microenvironnement hépatique humain, 2021</a> ; <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL VHB 2025, évaluation de la fibrose</a>. Consultées le 08.10.2026.</p>
+
+<template data-pop="b18-s-stellaire" data-title="Cellule étoilée : de la vitamine A au collagène">
+<p><b>Normal.</b> Au repos, la cellule étoilée siège dans l’espace de Disse et stocke la vitamine A.</p>
+<p><b>Activation.</b> Une lésion hépatique chronique, virale, alcoolique ou métabolique, la transforme en myofibroblaste prolifératif et fibrogène. Ce changement est le moteur central de la fibrose : la matrice extracellulaire s’accumule. Les macrophages, les hépatocytes, les cellules endothéliales, les lymphocytes NK et les plaquettes modulent cette activation.</p>
+<p><b>Réversibilité.</b> Les cellules activées disparaissent par apoptose, sénescence ou retour à l’état quiescent. C’est le substrat de la régression de la fibrose quand la cause est supprimée.</p>
+<p>Source : <a href="https://doi.org/10.1038/nrgastro.2017.38" target="_blank" rel="noopener" data-reference-source="1">Tsuchida et Friedman, 2017</a>.</p>
 </template>
-<template data-pop="b18-fibrose" data-title="Fibrose : une histoire cumulée que l’ALT ponctuelle ne raconte pas">
-  <div class="lab">Mécanisme</div><p>La réparation répétée dépose de la matrice extracellulaire. Lorsque le réseau fibreux devient important, il modifie l’architecture du foie et peut précéder la cirrhose. La fibrose représente une conséquence tissulaire accumulée ; une ALT prise aujourd’hui décrit plutôt une cytolyse mesurable à ce moment.</p>
-  <div class="lab">Mesure et limites</div><p>L’élastographie et les indices sanguins peuvent aider à estimer le stade. L’inflammation, la technique et la population modifient leurs performances. Une discordance entre mesures demande une interprétation spécialisée, parfois d’autres examens. Chez Mme R., aucun stade ne peut être inféré des seuls deux résultats d’Ag HBs.</p>
-  <p class="refs"><a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL VHB 2025, sections évaluation de la maladie et fibrose</a>, consultées le 08.10.2026.</p>
+
+<template data-pop="b18-s-ntcp" data-title="NTCP : transporteur des acides biliaires et récepteur viral">
+<p>Le NTCP capte les acides biliaires à la membrane de l’hépatocyte. Le VHB et le VHD s’y fixent par une région spécifique de la grande protéine d’enveloppe du VHB, ce qui fait du transporteur leur récepteur d’entrée.</p>
+<p>Le bulévirtide, lipopeptide synthétique de 47 acides aminés reproduisant cette région, occupe le récepteur. Il bloque l’entrée virale et, du même coup, la captation des acides biliaires : leur concentration monte de façon transitoire, généralement sans symptôme. La dose de 2 mg ne sature pas le transporteur, ce qui est l’une des raisons de son choix.</p>
+<p>Source : <a href="https://easlcampus.eu/sites/default/files/2023-06/EASL%20Clinical%20Practice%20Guidelines%20on%20hepatitis%20delta%20virus.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL, hépatite D, 2023</a>.</p>
 </template>
-<template data-pop="b18-chc" data-title="Carcinome hépatocellulaire : risque lié au terrain et au virus">
-  <div class="lab">Voies de risque</div><p>Une cirrhose multiplie le renouvellement et les altérations tissulaires. Le VHB possède aussi des voies possibles indépendantes de la cirrhose, notamment l’intégration de fragments d’ADN viral et l’expansion clonale de cellules hépatiques. Leur présence biologique n’annonce pas un cancer individuel.</p>
-  <div class="lab">Décision</div><p>La surveillance dépend du risque global, de la fibrose et du contexte personnel selon les recommandations applicables. Une ALT normale, un ADN VHB supprimé ou un Ag HBs encore positif ne suffisent seuls ni à la déclencher ni à l’écarter. Le stade et les autres facteurs de Mme R. restent inconnus.</p>
-  <p class="refs"><a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL VHB 2025, section surveillance du carcinome hépatocellulaire</a> ; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9473722/" target="_blank" rel="noopener">Grudda et coll., JCI 2022, étude de l’ADN intégré</a>. Consultées le 08.10.2026.</p>
+
+<template data-pop="b18-s-taf" data-title="Ténofovir alafénamide : un promédicament ciblé sur l’hépatocyte">
+<p>Le ténofovir alafénamide pénètre dans l’hépatocyte par diffusion passive et par les transporteurs OATP. Il y est hydrolysé, surtout par la carboxylestérase 1, en ténofovir, puis phosphorylé en ténofovir diphosphate actif.</p>
+<p>Cette activation intracellulaire permet une dose de 25 mg, contre 245 mg pour le ténofovir disoproxil, et réduit l’exposition du rein et de l’os au ténofovir plasmatique. L’EASL observe une moindre baisse du débit de filtration et de la densité osseuse après 96 semaines. En contrepartie, le ténofovir alafénamide élève davantage les lipides.</p>
+<p>Sources : <a href="https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=66190" target="_blank" rel="noopener" data-reference-source="1">Vemlidy®, février 2024</a> ; <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2025</a>.</p>
 </template>
-<template data-pop="b18-cccdna" data-title="cccDNA : matrice nucléaire du VHB">
-  <div class="lab">Formation</div><p>L’ADN viral entrant est réparé dans le noyau en un cercle fermé, appelé cccDNA. Cette matrice produit les ARN du VHB, dont l’ARN prégénomique qui sera rétrotranscrit dans la capside. Le cccDNA est distinct de l’ADN VHB mesuré dans le plasma.</p>
-  <div class="lab">Traitement et limite</div><p>Les analogues nucléos(t)idiques inhibent la synthèse de nouvel ADN viral, mais ne détruisent pas directement la matrice cccDNA existante. La suppression de l’ADN sanguin n’est donc pas une preuve de disparition du virus dans tous les hépatocytes. Une mesure de recherche du cccDNA ne fait pas partie du bilan sanguin ordinaire de Mme R.</p>
-  <p class="refs"><a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL VHB 2025, cycle viral et limites des analogues</a>, texte intégral consulté le 08.10.2026.</p>
+
+<template data-pop="b18-s-reactivation" data-title="Réactivation du VHB : définition et mécanisme">
+<p><b>Définition.</b> Hausse brutale de la réplication chez une personne Ag HBs positive peu active, ou chez une personne Ag HBs négative et anti-HBc positive dont l’infection était résolue. Elle se reconnaît à la réapparition de l’ADN (au-delà de 100 UI/mL) ou de l’Ag HBs.</p>
+<p><b>Mécanisme.</b> L’ADNccc persiste dans le noyau ; l’immunité le maintient silencieux. Une perte naturelle ou médicamenteuse de ce contrôle libère la réplication. L’hépatite qui suit peut être grave, voire mortelle.</p>
+<p><b>Prévention.</b> Ag HBs et anti-HBc avant toute immunosuppression ; analogue (entécavir ou ténofovir) si le risque est élevé, poursuivi au moins 6 à 12 mois après la fin de l’immunosuppression, au moins 18 mois après un traitement détruisant les lymphocytes B.</p>
+<p>Source : <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2025, tableau 14</a>.</p>
 </template>
-<template data-pop="b18-integration" data-title="ADN intégré du VHB : antigène possible sans virion complet">
-  <div class="lab">Sens biologique</div><p>Des fragments d’ADN VHB peuvent entrer dans le génome de l’hépatocyte. Certains conservent la capacité de produire des transcrits de l’antigène de surface. Ils ne constituent pas pour autant une matrice complète de réplication virale comme le cccDNA.</p>
-  <div class="lab">Ce que la sérologie ne distingue pas</div><p>Une Ag HBs positive peut refléter plusieurs sources de production. Dans des biopsies de recherche sous traitement, Grudda et collaborateurs ont montré une contribution importante des fragments intégrés. Ce résultat collectif ne permet pas d’attribuer l’Ag HBs de Mme R. à une source donnée ni de prédire son risque tumoral personnel.</p>
-  <p class="refs"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9473722/" target="_blank" rel="noopener">Grudda et coll., JCI 2022, étude primaire</a> ; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11910228/" target="_blank" rel="noopener">étude JCI 2025, évolution de la source des transcrits sous traitement</a>. Consultées le 08.10.2026.</p>
+
+<template data-pop="b18-s-ifn" data-title="Interféron pégylé : une action immunitaire et antivirale">
+<p>L’interféron pégylé α stimule les lymphocytes NK, T et B. Cette activation a des effets cytolytiques et non cytolytiques. Il agit aussi directement sur plusieurs étapes du cycle : stabilité et traduction des ARN viraux, encapsidation, transcription inverse et activité transcriptionnelle de l’ADNccc, par un silence épigénétique.</p>
+<p>Ce double mécanisme explique qu’un traitement de 48 semaines obtienne plus souvent qu’un analogue, à durée égale, une séroconversion HBe et une perte de l’Ag HBs. Dans l’hépatite D, il freine aussi la propagation du virus lors des divisions cellulaires, ce qui justifie son association au bulévirtide dans les essais.</p>
+<p>Sources : <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2025</a> ; <a href="https://easlcampus.eu/sites/default/files/2023-06/EASL%20Clinical%20Practice%20Guidelines%20on%20hepatitis%20delta%20virus.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2023</a>.</p>
 </template>
-<template data-pop="b18-hbv-pol" data-title="Polymérase du VHB : la cible de la suppression de l’ADN">
-  <div class="lab">Étape du cycle</div><p>La polymérase virale rétrotranscrit l’ARN prégénomique en ADN à l’intérieur de la capside. Les analogues nucléos(t)idiques actifs gênent cette synthèse. Leur effet se lit surtout sur l’ADN VHB circulant ; l’Ag HBs peut persister parce que ses sources cellulaires ne sont pas toutes supprimées.</p>
-  <div class="lab">Limite clinique</div><p>Un mécanisme pharmacologique ne suffit pas à choisir un traitement. L’indication dépend notamment de la fibrose, de l’ADN, de l’ALT et du contexte ; les précautions dépendent du médicament. Ces données manquent encore pour Mme R.</p>
-  <p class="refs"><a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL VHB 2025, sections objectifs, indications et analogues nucléos(t)idiques</a>, consultées le 08.10.2026. Les prescriptions suisses sont détaillées dans l’onglet Pharmacologie.</p>
+
+<template data-pop="b18-s-adnccc" data-title="ADNccc : la matrice persistante du VHB">
+<p>L’ADN circulaire clos de façon covalente se forme dans le noyau à partir du génome viral entrant. Il sert de modèle à tous les ARN viraux, dont l’ARN prégénomique.</p>
+<p>Les analogues ne l’atteignent pas directement. Sa quantité ne baisse que modestement sous traitement prolongé, par diminution des nouvelles infections et par dilution lors des divisions cellulaires. Il persiste même après la perte de l’Ag HBs, ce qui explique la possibilité d’une réactivation et d’une réapparition de l’antigène.</p>
+<p>Source : <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2025</a>.</p>
 </template>
-<template data-pop="b18-hcv-arn" data-title="ARN VHC : établir une infection active">
-  <div class="lab">Mesure</div><p>L’amplification d’acides nucléiques recherche l’ARN du VHC dans le sang. Un résultat détectable soutient une infection active ; les anticorps anti-VHC seuls signalent une exposition et peuvent rester positifs après disparition du virus.</p>
-  <div class="lab">Limites</div><p>Le laboratoire précise sa limite de détection, la matrice et ses unités. Un prélèvement trop précoce, une erreur préanalytique ou une exposition ultérieure justifient une réévaluation selon le contexte. Le VHB chronique connu de Mme R. ne permet pas de prédire son résultat VHC.</p>
-  <p class="refs"><a href="https://easl.eu/wp-content/uploads/2020/10/EASL-recommendations-on-treatment-of-hepatitis-C.pdf" target="_blank" rel="noopener">EASL, recommandations VHC 2020, diagnostic virologique</a>, consultées le 08.10.2026 ; les modalités locales du laboratoire restent applicables.</p>
+
+<template data-pop="b18-s-polymerase" data-title="Polymérase du VHB : la cible des analogues">
+<p>La polymérase du VHB est une transcriptase inverse : elle recopie l’ARN prégénomique en ADN circulaire relâché. L’entécavir triphosphate, analogue de la guanosine, inhibe ses trois fonctions : amorçage, synthèse du brin négatif, synthèse du brin positif. Il n’inhibe que faiblement les polymérases humaines.</p>
+<p>Le ténofovir diphosphate, analogue de l’adénosine monophosphate, s’incorpore dans l’ADN viral et arrête l’élongation de la chaîne. La barrière génétique de ces deux molécules est élevée : aucune résistance au ténofovir n’a été observée après cinq ans, 1,2 % pour l’entécavir chez le patient naïf.</p>
+<p>Sources : <a href="https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=57435" target="_blank" rel="noopener" data-reference-source="1">Baraclude®</a> ; <a href="https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=66190" target="_blank" rel="noopener" data-reference-source="1">Vemlidy®</a> ; <a href="https://doi.org/10.1172/JCI161818" target="_blank" rel="noopener" data-reference-source="1">Grudda 2022</a> ; <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2025</a>.</p>
 </template>
-<template data-pop="b18-hcv-cibles" data-title="NS3/4A, NS5A et NS5B : trois fonctions à bloquer">
-  <div class="lab">Cycle du VHC</div><p>NS3/4A coupe la polyprotéine, NS5A contribue à l’organisation du complexe de réplication et NS5B copie l’ARN viral. Les antiviraux directs perturbent ces fonctions par classes différentes. Une association de classes accroît les chances de contrôler aussi des variants moins sensibles à une seule cible.</p>
-  <div class="lab">Application et piège</div><p>Les noms des cibles ne suffisent ni à choisir une association ni à fixer une durée. La cirrhose, les traitements reçus, les interactions et les monographies suisses doivent être examinés. Aucun VHC actif n’a été démontré chez Mme R.</p>
-  <p class="refs"><a href="https://easl.eu/wp-content/uploads/2020/10/EASL-recommendations-on-treatment-of-hepatitis-C.pdf" target="_blank" rel="noopener">EASL, recommandations VHC 2020, antiviraux directs et bilan préalable</a>, consultées le 08.10.2026. Les schémas à jour et disponibles localement relèvent de l’onglet Pharmacologie.</p>
+
+<template data-pop="b18-s-integration" data-title="ADN intégré du VHB : antigène sans virion">
+<p>Des fragments d’ADN du VHB s’intègrent au génome de l’hépatocyte. Ils peuvent produire en abondance les ARN de l’Ag HBs sans former de virion complet.</p>
+<p>Grudda et collaborateurs ont étudié des biopsies de 16 personnes sous analogue : quatre seulement ont vu leur Ag HBs baisser de plus de 0,5 log₁₀ ; chez les autres, l’antigène provenait surtout de l’ADN intégré. Chez une personne Ag HBe négative étudiée cellule par cellule, 50 à 63 % des cellules actives transcrivaient surtout à partir de l’ADN intégré.</p>
+<p>L’intégration participe aussi à la cancérogenèse ; un traitement efficace réduit le nombre d’intégrations et l’expansion clonale des hépatocytes.</p>
+<p>Sources : <a href="https://doi.org/10.1172/JCI161818" target="_blank" rel="noopener" data-reference-source="1">Grudda et coll., 2022</a> ; <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2025</a>.</p>
 </template>
-<template data-pop="b18-hdv" data-title="VHD : l’enveloppe HBs est nécessaire, l’ADN VHB élevé ne l’est pas">
-  <div class="lab">Dépendance</div><p>Le VHD possède son propre ARN, mais emprunte les protéines de surface du VHB pour former son enveloppe. Sa réplication et la mesure de l’ADN VHB ne sont pas équivalentes. Une charge VHB basse n’exclut donc pas un VHD actif.</p>
-  <div class="lab">Chaîne diagnostique</div><p>L’EASL 2023 recommande de rechercher les anticorps anti-VHD au moins une fois chez chaque personne Ag HBs positive. Un résultat positif est suivi de l’ARN VHD pour établir l’infection active. Aucun de ces deux résultats n’est connu chez Mme R.</p>
-  <p class="refs"><a href="https://easlcampus.eu/sites/default/files/2024-05/EASL%20Clinical%20Practice%20Guidelines%20on%20hepatitis%20delta%20virus.pdf" target="_blank" rel="noopener">EASL, Clinical Practice Guidelines on hepatitis delta virus, 2023</a>, sections cycle et dépistage consultées le 08.10.2026.</p>
+
+<template data-pop="b18-s-vhd" data-title="Cycle du VHD : un virus sans enzyme">
+<p>Le virion du VHD se fixe aux protéoglycanes de surface, puis au NTCP. Son complexe ribonucléoprotéique gagne le noyau. L’ARN polymérase II de la cellule copie le génome circulaire selon un mécanisme en cercle roulant ; le ribozyme de l’ARN viral clive les copies, qui sont ensuite refermées en cercles.</p>
+<p>Une adénosine désaminase cellulaire modifie une partie des copies : elle produit la grande forme de l’antigène delta, qui arrête la réplication et favorise l’assemblage. Le virion s’entoure enfin d’une enveloppe portant les trois protéines de surface du VHB.</p>
+<p>Le VHD ne code aucune enzyme : les antiviraux classiques n’ont pas de cible. Il peut aussi persister en l’absence de réplication du virus B et se propager lors des divisions des hépatocytes infectés.</p>
+<p>Source : <a href="https://easlcampus.eu/sites/default/files/2023-06/EASL%20Clinical%20Practice%20Guidelines%20on%20hepatitis%20delta%20virus.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL 2023, figure 1</a>.</p>
 </template>
-<template data-pop="b18-hev" data-title="VHE chronique : définition par l’ARN dans le bon contexte">
-  <div class="lab">Population</div><p>Le VHE est généralement éliminé après une infection aiguë. Une réplication prolongée est décrite surtout après transplantation et dans d’autres états d’immunodépression. L’EASL 2018 rappelle une définition historique à six mois. Chez les greffés d’organe, elle permet de considérer l’infection chronique dès plus de trois mois de virémie, tout en signalant de rares clairances entre trois et six mois.</p>
-  <div class="lab">Examen et limite</div><p>Une réponse anticorps faible sous immunosuppression peut rendre la sérologie insuffisante. L’ARN VHE répond directement à la question de la réplication. Aucun facteur d’immunodépression ni résultat de VHE n’est fourni pour Mme R. : son Ag HBs positif ne permet pas de conclure à un VHE.</p>
-  <p class="refs"><a href="https://easl.eu/wp-content/uploads/2018/10/EASL-CPG-hepatitis-E-virus-infection.pdf" target="_blank" rel="noopener">EASL, Clinical Practice Guidelines on hepatitis E virus infection, 2018</a>, sections diagnostic et immunodépression consultées le 08.10.2026.</p>
+
+<template data-pop="b18-s-vhc-cibles" data-title="Antiviraux directs du VHC : trois cibles">
+<div class="table-wrap"><table class="t"><thead><tr><th>Cible</th><th>Fonction</th><th>Molécules</th></tr></thead><tbody>
+<tr><td>Protéase NS3/4A</td><td>Clive la polyprotéine en protéines matures</td><td>Glécaprévir, voxilaprévir</td></tr>
+<tr><td>NS5A</td><td>Réplication de l’ARN et assemblage</td><td>Velpatasvir, pibrentasvir</td></tr>
+<tr><td>Polymérase NS5B</td><td>Copie l’ARN viral</td><td>Sofosbuvir</td></tr>
+</tbody></table></div>
+<p>Le sofosbuvir est un promédicament nucléotidique : son métabolite actif, analogue de l’uridine triphosphate, est incorporé dans l’ARN viral et termine la chaîne. Les associations fixes visent deux cibles à la fois ; la SASL relève des taux de guérison supérieurs à 95 % pour tous les génotypes avec le sofosbuvir et le velpatasvir.</p>
+<p>Sources : <a href="https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=66095" target="_blank" rel="noopener" data-reference-source="1">Epclusa®</a> ; <a href="https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=66472" target="_blank" rel="noopener" data-reference-source="1">Maviret®</a> ; <a href="https://www.sasl.unibas.ch/guidelines/SASL-SSG-SSI_EOS_HepC_Jan2021.pdf" target="_blank" rel="noopener" data-reference-source="1">SASL 2021</a>.</p>
 </template>
-<template data-pop="b18-pareto-sciences" data-title="Pareto — Sciences fondamentales de B18, hépatite virale chronique">
-  <p>Quelques distinctions organisent la lecture de tous les examens sans remplacer le bilan individuel.</p>
-  <ul><li>L’Ag HBs présent plus de six mois établit la chronicité du VHB, pas son activité ni la fibrose.</li><li>L’ADN VHB mesure la réplication circulante ; ALT, évaluation de la fibrose et fonction hépatique décrivent d’autres dimensions.</li><li>Le cccDNA nucléaire soutient la réplication ; l’ADN intégré peut entretenir la production d’Ag HBs.</li><li>Pour le VHC, un anti-VHC positif demande un ARN pour établir une infection active.</li><li>Une personne Ag HBs positive doit être évaluée pour le VHD ; l’anti-VHD positif appelle la recherche d’ARN VHD.</li><li>Le VHE chronique relève surtout d’un contexte immunodéprimé avec ARN persistant, et ne se déduit pas du VHB.</li></ul>
-  <div class="key"><b>Application.</b> Chez Mme R., seules la persistance de l’Ag HBs et la chronicité du VHB sont documentées. Les autres résultats doivent être obtenus avant d’attribuer une phase, un pronostic ou un traitement.</div>
-  <p class="refs"><a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL VHB 2025</a> ; <a href="https://easl.eu/wp-content/uploads/2020/10/EASL-recommendations-on-treatment-of-hepatitis-C.pdf" target="_blank" rel="noopener">EASL VHC 2020</a> ; <a href="https://easlcampus.eu/sites/default/files/2024-05/EASL%20Clinical%20Practice%20Guidelines%20on%20hepatitis%20delta%20virus.pdf" target="_blank" rel="noopener">EASL VHD 2023</a> ; <a href="https://easl.eu/wp-content/uploads/2018/10/EASL-CPG-hepatitis-E-virus-infection.pdf" target="_blank" rel="noopener">EASL VHE 2018</a>. Consultées le 08.10.2026.</p>
+
+<template data-pop="b18-s-vhe" data-title="Ribavirine et VHE : un mécanisme encore discuté">
+<p>L’hypothèse principale est une déplétion du réservoir cellulaire de guanosine triphosphate, nécessaire à la réplication virale. L’acide mycophénolique, qui réduit lui aussi cette production, a un effet synergique avec la ribavirine in vitro, sans bénéfice démontré in vivo.</p>
+<p>La ribavirine accroît la diversité génétique du virus ; une mutation de la polymérase a été décrite lors d’échecs, sans valeur prédictive établie. Le sofosbuvir agit sur le VHE in vitro ; son efficacité clinique reste inconnue.</p>
+<p>Source : <a href="https://easl.eu/wp-content/uploads/2018/10/EASL-CPG-hepatitis-E-virus-infection.pdf" target="_blank" rel="noopener" data-reference-source="1">EASL, hépatite E, 2018</a>.</p>
+</template>
+
+<template data-pop="b18-s-pareto" data-title="Loi de Pareto — Sciences fondamentales">
+<p class="ratio" data-cover="b18-s-1,b18-s-2,b18-s-3,b18-s-4,b18-s-5"></p>
+<ul>
+<li>Sang : espace porte → sinusoïde → veine centrale ; bile en sens inverse. Pont fibreux entre espaces portes = F3.</li>
+<li>Cellule étoilée activée → myofibroblaste → fibrose réversible si la cause disparaît.</li>
+<li>Albumine, INR, bilirubine = synthèse ; ALAT = inflammation.</li>
+<li>NTCP : récepteur du VHB et du VHD, transporteur des acides biliaires, cible du bulévirtide.</li>
+<li>Entécavir et ténofovir disoproxil éliminés par le rein ; ténofovir alafénamide activé dans l’hépatocyte.</li>
+<li>Immunosuppression → perte du contrôle de l’ADNccc → réactivation ; risque élevé si les lymphocytes B sont détruits.</li>
+<li>VHB : ADNccc nucléaire et ADN intégré → contrôle sans guérison. VHC : ARN cytoplasmique → guérison.</li>
+<li>VHD : ribozyme sans enzyme, enveloppe du VHB.</li>
+</ul>
 </template>
