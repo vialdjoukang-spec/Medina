@@ -1,0 +1,310 @@
+---
+titre: "Furoate de mométasone Sandoz®"
+titulaire: "Sandoz Pharmaceuticals AG"
+atc: R01AD09
+substances: "Mometasoni-17 furoas (ut mometasoni-17 furoas monohydricus)"
+autorisation_swissmedic: 61899
+date_version: 2021-04-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/06e946792f3248e0a48881172d4d6615-fr.html
+---
+
+Furoate de mométasone Sandoz®
+
+Sandoz Pharmaceuticals AG
+
+Composition
+
+Principes actifs
+
+Mometasoni-17 furoas (ut mometasoni-17 furoas monohydricus).
+
+Excipients
+
+Cellulosum microcristallinum et carmellosum natricum, glycerolum, acidum citricum monohydricum, natrii citras dihydricus, polysorbatum 80, benzalkonii chloridum 0,2 mg/g, aqua ad injectabilia.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Furoate de mométasone Sandoz Spray doseur nasal, suspension:
+
+1 pulvérisation (=100 mg de la suspension aqueuse) contient 50 µg de furoate de mométasone.
+
+Indications/Possibilités d’emploi
+
+Le spray doseur nasal Furoate de mométasone Sandoz est indiqué pour le traitement symptomatique de la rhinite allergique saisonnière et chronique (perannuelle) chez l'adulte, chez l'adolescent et chez l'enfant à partir de 6 ans.
+
+Chez les patients présentant une rhinite allergique saisonnière connue, le traitement peut être commencé prophylactiquement 2–4 semaines avant la saison des pollens.
+
+Le spray doseur nasal Furoate de mométasone Sandoz est indiqué pour le traitement des polypes nasaux chez les adultes dès 18 ans.
+
+Le spray doseur nasal Furoate de mométasone Sandoz peut être utilisé chez les adultes et chez les adolescents dès 12 ans pour le traitement symptomatique de la rhino-sinusite aiguë non compliquée (symptômes >1 semaine; <4 semaines) sans signe ni symptôme d'une infection bactérienne grave (absence de symptômes unilatéraux persistants, absence d'indication d'une origine dentaire; absence de gonflement persistant du visage).
+
+Posologie/Mode d’emploi
+
+Général
+
+Furoate de mométasone Sandoz ne doit être utilisé que par voie intranasale. Il est important d'utiliser Furoate de mométasone Sandoz régulièrement pour atteindre un effet thérapeutique complet. Le patient devrait être informé de l'entrée en action différée (voir sous «Propriétés/Effets»).
+
+Posologie
+
+Rhinite allergique saisonnière et chronique
+
+Adultes (y compris en gériatrie), adolescents et enfants dès 12 ans
+
+1x par jour, de préférence le matin, 2 pulvérisations de spray dans chaque narine (correspond à 200 µg de furoate de mométasone/jour).
+
+Lorsque les symptômes sont sous contrôle, la dose peut être réduite à une dose d'entretien de 1x par jour 1 pulvérisation de spray dans chaque narine (correspond à 100 µg de furoate de mométasone/jour).
+
+Enfants entre 6 et 11 ans
+
+1x par jour 1 pulvérisation de spray dans chaque narine (correspond à 50 µg de furoate de mométasone/pulvérisation de spray ou 100 µg de furoate de mométasone/jour). Ne pas augmenter la posologie.
+
+Polypes nasaux
+
+Adultes dès 18 ans
+
+La dose recommandée est de 2 pulvérisations de spray 2x par jour dans chaque narine (1 pulvérisation de spray correspond à 50 µg de furoate de mométasone), ce qui correspond à une dose journalière de 400 µg de furoate de mométasone.
+
+Une fois les symptômes sous contrôle, il est recommandé de réduire la posologie à 2 pulvérisations de spray 1x par jour dans chaque narine (ce qui correspond à 200 µg de furoate de mométasone/jour).
+
+En l'absence d'amélioration après 5 à 6 semaines de traitement, il faudra envisager un changement de thérapie.
+
+Dans le cadre du traitement de la polypose, des études d'efficacité et d'innocuité ont été menées pendant 4 mois avec des doses journalières totales de furoate de mométasone de 400 µg.
+
+Rhino-sinusite aiguë
+
+Adultes et adolescents dès 12 ans
+
+La dose recommandée est de deux pulvérisations de spray 2x par jour dans chaque narine (1 pulvérisation de spray correspond à 50 µg de furoate de mométasone), ce qui correspond à une dose journalière de 400 µg de furoate de mométasone.
+
+Il est recommandé au patient de consulter son médecin si les symptômes s'aggravent pendant le traitement.
+
+Contre-indications
+
+Hypersensibilité au principe actif ou à l'un des excipients conformément à la composition.
+
+Mises en garde et précautions
+
+Furoate de mométasone Sandoz ne devrait pas être utilisé en cas d'infections locales non traitées de la muqueuse nasale.
+
+Après un traumatisme ou une intervention chirurgicale dans le nez, des corticostéroïdes par voie nasale ne devraient être utilisés que lorsque la cicatrisation est complète, du fait de leur effet inhibiteur sur la cicatrisation.
+
+Chez les patients présentant une tuberculose active ou asymptomatique, une infection non traitée d'origine fongique, bactérienne ou virale systémique ou une infection herpétique ophtalmique, Furoate de mométasone Sandoz ne devrait, le cas échéant, être utilisé qu'avec précaution.
+
+Comme pour tout traitement de longue durée, les patients recevant Furoate de mométasone Sandoz sur plusieurs mois ou plus devraient être régulièrement examinés quant à des modifications de l'état de leur muqueuse nasale. Dans des études cliniques, il ne fut observé aucune atrophie de la muqueuse nasale après 12 mois de traitement avec du furoate de mométasone; le furoate de mométasone semblait plutôt normaliser la muqueuse nasale.
+
+En cas d'apparition d'infection fongique localisée au nez ou à la gorge, le traitement par Furoate de mométasone Sandoz devrait être interrompu ou un traitement antifongique adéquat devrait être institué.
+
+Il n'existe pas d'élément indiquant une suppression de l'axe HHS (axe hypothalamo-hypophyso-surrénalien) lors du traitement au long cours par furoate de mométasone. Il est toutefois possible qu'un traitement au long cours par des corticostéroïdes appliqués par voie intranasale (y compris Furoate de mométasone Sandoz) puisse influencer l'axe cortico-surrénalien et provoquer un hypercorticisme chez les patients particulièrement sensibles aux corticostéroïdes et dans des situations particulières. Une attention particulière est cependant requise pour les patients passant d'une thérapie au long cours par un corticoïde systémique à Furoate de mométasone Sandoz et chez lesquels une diminution de la fonction cortico-surrénalienne est soupçonnée.
+
+La tolérance et l'efficacité du furoate de mométasone dans le traitement des polypes unilatéraux en relation avec la mucoviscidose ou dans le traitement des polypes obstruant complètement la cavité nasale n'ont pas été étudiées.
+
+Les polypes unilatéraux d'aspect inhabituel ou irrégulier, en particulier s'ils forment des ulcérations ou s'ils saignent, doivent faire l'objet d'un examen plus poussé.
+
+Les patients sous traitement corticostéroïde et potentiellement immunosupprimés devraient être avertis du risque de contamination de certaines maladies infectieuses (p.ex. rougeole, varicelle) et, en cas d'exposition, orientés immédiatement vers une aide médicale.
+
+La tolérance et l'efficacité de Furoate de mométasone Sandoz n'ont pas été étudiées dans le traitement des polypes chez l'enfant et l'adolescent de moins de 18 ans.
+
+Lors du passage d'un traitement corticostéroïde systémique à un traitement par Furoate de mométasone Sandoz, des symptômes de sevrage des stéroïdes peuvent se manifester en même temps que la symptomatologie nasale s'améliore. Le patient devrait être encouragé à continuer le traitement par Furoate de mométasone Sandoz.
+
+Lors du passage d'un traitement corticostéroïde systémique à un traitement par Furoate de mométasone Sandoz, des allergies préexistantes ne concernant pas la zone nasale et auparavant contrôlés par l'administration systémique de corticoïdes peuvent se manifester à nouveau.
+
+L'utilisation de doses excessives de glucocorticostéroïdes ou un traitement à long terme par ce type de substances peut entraîner des effets indésirables systémiques, y compris des retards de croissance chez l'enfant. L'effet à long terme des stéroïdes appliqués par inhalation ou par voie intranasale n'a pas été étudié de manière exhaustive chez l'enfant. D'une manière générale, on recommande un contrôle médical scrupuleux de la croissance chez les enfants traités à long terme par des glucocorticostéroïdes. Une étude menée chez 49 enfants ayant reçu pendant une année 100 µg de furoate de mométasone par jour n'a pas mis en évidence de retard de croissance.
+
+Suite à l'administration de corticostéroïdes par voie intranasale, des cas isolés de pression intraoculaire élevée ont été rapportés.
+
+Des troubles visuels peuvent apparaître lors de l'administration systémique et topique de corticostéroïdes (y compris par voie intranasale, par inhalation et par voie intraoculaire). Si un patient présente des symptômes tels qu'une vision floue ou des troubles visuels, il faut envisager de l'adresser à un ophtalmologue pour rechercher les causes possibles de ces troubles visuels, notamment une cataracte, un glaucome ou des affections rares, telles que la choriorétinopathie séreuse centrale (CRSC), dont des cas ont été rapportés après l'administration systémique et topique de corticostéroïdes.
+
+Rhino-sinusite aiguë:
+
+En présence de signes ou de symptômes d'une infection bactérienne grave (par exemple de la fièvre, des douleurs unilatérales faciales/dentaires persistantes, un gonflement orbital ou péri-orbital, ou une aggravation des symptômes après une amélioration initiale), on conseillera au patient de consulter immédiatement un médecin.
+
+La sécurité et l'efficacité du furoate de mométasone pour le traitement des symptômes de la rhino-sinusite aiguë n'ont pas été étudiées chez les enfants de moins de 12 ans.
+
+Ce médicament contient 0,02 mg de chlorure de benzalkonium par pulvérisation.
+
+Le chlorure de benzalkonium peut provoquer des irritations ou un gonflement à l'intérieur du nez, surtout s'il est utilisé sur une longue période.
+
+Interactions
+
+Le furoate de mométasone est métabolisée dans le foie par le cytochrome CYP3A4.
+
+Le traitement concomitant avec de puissants inhibiteurs du CYP3A4 (p.ex. kétoconazole, itraconazole, clarithromycine, ritonavir, cobicistat) peut entraîner une augmentation des concentrations plasmatiques de corticostéroïdes et augmenter le risque d'effets secondaires systémiques des corticostéroïdes. La combinaison devrait être évitée à moins que les bénéfices dépassent le risque accru d'effets secondaires systémiques des corticostéroïdes; dans ce cas, les patients devraient faire l'objet d'une surveillance des effets secondaires systémiques des corticostéroïdes.
+
+Une étude clinique combinant furoate de mométasone avec un antihistaminique oral non sédatif (loratadine) a été effectuée: les paramètres pharmacocinétiques respectifs ainsi que les profils de sécurité sont restés inchangés.
+
+Grossesse, allaitement
+
+Les corticoïdes appliqués systémiquement (application sous-cutanée) se révèlent tératogènes en expérimentation animale. Aucune étude clinique n'a été effectuée chez la femme enceinte ou allaitante.
+
+Le traitement par des corticoïdes en application nasale pendant la grossesse et l'allaitement n'aura lieu qu'en cas d'absolue nécessité.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+N'a pas fait l'objet d'études spécifiques.
+
+Effets indésirables
+
+Les effets secondaires qui sont survenus en relation avec un traitement par le furoate de mométasone pendant des études cliniques sur la rhinite allergique sont les suivants:
+
+Effets indésirables liés au traitement de la rhinite allergique par le furoate de mométasone
+
+«Très fréquents» (≥1/10), «fréquents» (≥1/100, <1/10), «occasionnels» (≥1/1000, <1/100), «rares» (≥1/10'000, <1/1000), «très rares» (<1/10'000).
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquent: épistaxis, pharyngite, brûlure nasale, irritations nasales, ulcérations nasales.
+
+Troubles généraux et anomalies au site d'administration
+
+Fréquent: céphalées.
+
+Une épistaxis est survenue généralement de manière peu marquée et transitoire. Elle était plus fréquente dans le groupe de traitement que dans le groupe placebo (5%), mais l'incidence était comparable ou inférieure à celle observée dans les groupes témoins d'autres études menées avec des corticostéroïdes (jusqu'à 15%). Tous les autres effets secondaires étaient comparables à ceux observés dans le groupe placebo.
+
+Dans la population pédiatrique, la fréquence des effets secondaires, par ex. épistaxis (6%), céphalées (3%), irritation nasale (2%) et éternuements (2%) était comparable à celle du groupe placebo.
+
+Chez les patients traités pour des polypes nasaux, la fréquence globale des effets secondaires était comparable à celle du groupe placebo et les effets secondaires observés étaient comparables à ceux observés chez les patients traités pour une rhinite allergique. Les effets secondaires qui sont liés au traitement et qui sont apparus chez plus de 1% des patients d'études cliniques sont repris dans le tableau 1.
+
+Tableau 1
+
+Effets indésirables liés au traitement d'une polypose
+
+«Très fréquents» (≥1/10), «fréquents» (≥1/100, <1/10), «occasionnels» (≥1/1000, <1/100), «rares» (≥1/10'000, <1/1000), «très rares» (<1/10'000).
+
+|  |  |  |
+| --- | --- | --- |
+|  | 200 µg  1x par jour | 200 µg  2x par jour |
+| Affections respiratoires, thoraciques et médiastinales | | |
+| Appareil respiratoire supérieur | | |
+| Infection | fréquent | occasionnel |
+| Épistaxis | fréquent | très fréquent |
+| Affections gastro-intestinales | | |
+| Irritations du pharynx | − | fréquent |
+| Troubles généraux et anomalies au site d'administration | | |
+| Céphalées | fréquent | fréquent |
+
+ 
+
+Des réactions immédiates d'hypersensibilité, y compris bronchospasme et dyspnée, sont apparues rarement après l'application intranasale de furoate de mométasone. Anaphylaxie, angio-œdème et troubles du goût et de l'odorat ont été rapportés très rarement.
+
+Le profil d'effets secondaires lors du traitement de la rhino-sinusite est comparable à celui des autres indications autorisées. Les effets secondaires qui sont liés au traitement et qui sont apparus chez plus de 2% des patients d'études cliniques sont repris dans le tableau 2.
+
+Tableau 2
+
+Effets indésirables liés au traitement de la rhino-sinusite
+
+«Très fréquents» (≥1/10), «fréquents» (≥1/100, <1/10), «occasionnels» (≥1/1000, <1/100), «rares» (≥1/10'000, <1/1000), «très rares» (<1/10'000).
+
+|  |  |  |
+| --- | --- | --- |
+|  | 200 µg  1x par jour | 200 µg  2x par jour |
+| Affections respiratoires, thoraciques et médiastinales | | |
+| Appareil respiratoire supérieur | | |
+| Épistaxis | fréquent | fréquent |
+| Affections gastro-intestinales | | |
+| Douleurs abdominales | fréquent | fréquent |
+| Diarrhée | fréquent | fréquent |
+| Nausées | fréquent | fréquent |
+| Troubles généraux et anomalies au site d'administration | | |
+| Céphalées | fréquent | fréquent |
+
+ 
+
+L'effet secondaire le plus fréquent, l'épistaxis, est apparu à peu près aussi souvent dans le groupe sous placebo (2,6%) que dans les groupes traités par le furoate de mométasone (2,9 ou 3,7%).
+
+Des effets systémiques sont possibles avec des corticostéroïdes appliqués par voie nasale, en particulier s'ils sont prescrits à hautes doses pendant une longue période.
+
+Des cas isolés de glaucome et/ou de pression intraoculaire élevée ont été rapportés suite à l'administration de corticostéroïdes par voie intranasale.
+
+Des cas de vision trouble ont été rapportés.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Il est improbable qu'un surdosage ne nécessite d'autre mesure que l'observation du patient.
+
+L'inhalation ou la prise orale de doses excessives de corticoïdes peut provoquer une suppression de l'axe hypothalamo-hypophyso-surrénalien.
+
+Propriétés/Effets
+
+Code ATC
+
+R01AD09
+
+Mécanisme d'action / PharmacodynamiqueFuroate de mométasone Sandoz est un spray doseur pour l'application intranasale. Il contient du furoate de mométasone micronisé sous forme d'une suspension aqueuse thixotrope. Le furoate de mométasone est un glucocorticoïde synthétique puissant qui possède, après application intranasale, des propriétés locales anti-inflammatoires et antiallergiques.
+
+Aux doses thérapeutiques, on n'observe pas d'effet indésirable systémique corticoïde.
+
+Efficacité clinique
+
+Lors d'études cliniques à long terme, aucune tolérance ou atrophie de la muqueuse n'ont été observées.
+
+Au dosage conseillé de 200 µg 1x par jour, l'effet a commencé en moyenne (médiane) après 36 heures. Chez environ 28% des patients, l'effet du furoate de mométasone a débuté après 12 heures, chez 42% des patients après 24 heures. En conséquence, Furoate de mométasone Sandoz, comme d'autres corticoïdes d'application nasale, n'est pas indiqué pour soulager immédiatement les symptômes de l'allergie aiguë.
+
+Lors des études cliniques concernant la polypose nasale, le furoate de mométasone a conduit à une amélioration significative par rapport au placebo en ce qui concerne les critères d'évaluation pertinents sur le plan clinique comme la taille des polypes nasaux, la congestion nasale et la perte de l'odorat.
+
+Dans deux études cliniques contrôlées contre placebo et contre comparateur actif (amoxicilline) menées auprès de 1954 patients âgés de plus de 12 ans et souffrant d'une rhino-sinusite aiguë sans signe d'infection bactérienne grave, l'administration de furoate de mométasone à un dosage de 200 µg, 2 fois par jour, sur une période de traitement de 15 jours a permis une nette amélioration des symptômes par rapport au placebo (étude P02683 p <0,001; étude P02692 p= 0,038) selon la méthode d'évaluation des symptômes du modèle de notation Major Symptom Score (MSS) (douleurs/pression/tension faciales, douleurs au niveau des sinus et de la tête, rhinorrhée et nez bouché). Les améliorations constatées en termes de MSS dans les deux études après 2 semaines en comparaison de la valeur de départ étaient, sous le furoate de mométasone, 7 à 10% supérieures à celles sous placebo. Les différences par rapport au placebo sont, pour l'étude P02683: –0,81 (IC à 95% –1,18, –0,43); pour l'étude P02692: –0,40 (IC à 95% –0,78, –0,02). Dans une autre étude (A2-3852), on a cherché à déterminer quelle était, pour l'indication rhino-sinusite, l'amélioration minimum nécessaire (en termes de MSS) à la perception d'un bénéfice par les patients concernés. Il est apparu qu'un score MSS de 0,4 à 0,6 correspondait à la différence minimale perceptible. Dans les deux études, il n'a pas été possible de définir, à l'aide du MSS, de différence statistiquement significative concernant la réduction des symptômes entre l'amoxicilline (500 mg trois fois par jour) et le placebo. Le nombre de patients classés en échec thérapeutique (p= 0,0074) par le médecin traitant a été plus faible sous le furoate de mométasone que sous le placebo. De plus, dans la phase d'observation suivante, le nombre de rechutes sous le furoate de mométasone s'est avéré faible et comparable à celui des groupes sous amoxicilline et sous placebo. Une durée de traitement supérieure à 15 jours dans le cas d'une rhino-sinusite aiguë n'a pas été étudiée.
+
+Pharmacocinétique
+
+Absorption
+
+Le furoate de mométasone appliqué sous forme de spray nasal, a une biodisponibilité systémique de <1% dans le plasma (limite de détection d'analyse 0,25 pg/ml). La suspension de furoate de mométasone est mal absorbée au niveau du système gastro-intestinal (à 8%).
+
+Métabolisme
+
+Le métabolisme hépatique est régulé par le cytochrome CYP3A4.
+
+Élimination
+
+Si Furoate de mométasone Sandoz était par mégarde avalé et si donc le furoate de mométasone était absorbé pour une petite part, il serait pratiquement complètement inactivé par l'effet de premier passage hépatique, avant même qu'il ne soit excrété dans l'urine et dans la bile.
+
+Données précliniques
+
+Aucun effet toxique spécifique n'est apparu avec la mométasone. Tous les effets apparus étaient des effets de classe typiques de ce groupe de principes actifs et liés à un effet pharmacologique accru des glucocorticoïdes. Les études précliniques ont montré que le furoate de mométasone est dénué d'effet androgénique, anti-androgénique, œstrogénique ou anti-œstrogénique. Comme d'autres glucocorticoïdes, la substance déploie toutefois une légère action anti-utérotrope et elle ralentit chez l'animal l'élargissement vaginal à des doses orales élevées de 56 mg/kg/jour et 280 mg/kg/jour.
+
+Comme d'autres glucocorticoïdes, la mométasone a montré in vitro à des concentrations élevées un potentiel clastogène. Cependant, en considérant le nombre total des examens réalisés in vitro et in vivo, aucun effet mutagène n'est à craindre aux posologies thérapeutiques.
+
+Le furoate de mométasone est, comme d'autres glucocorticoïdes, tératogène chez le rongeur et le lapin. On a observé des hernies ombilicales chez le rat, des fentes palatines chez la souris et, chez le lapin, une agénésie de la vésicule biliaire, des hernies ombilicales et une courbure des pattes antérieures. De même, une baisse de l'augmentation du poids de la mère et des modifications dans la croissance fœtale (poids fœtal réduit et/ou retard dans l'ossification) chez le rat, la souris et le lapin, ainsi qu'un taux de survie réduit dans la portée chez la souris ont été observés.
+
+Le potentiel cancérogène du furoate de mométasone inhalé (aérosol avec agent propulseur CFC et tenside) à des concentrations de 0,25 à 2,0 µg/l a été examiné pendant 24 mois dans deux études réalisées sur la souris et le rat. Les effets typiques des glucocorticoïdes ont été observés, y compris diverses lésions non néoplasiques. Aucune relation avec la dose statistiquement significative n'a été observée pour aucune des tumeurs.
+
+Lors des études de reproduction, l'administration s.c. de 15 µg/kg de mométasone a conduit à un prolongement de la gestation ainsi qu'à une phase de travail plus longue et plus difficile. Cet effet était lié à une baisse du taux de survie dans la portée ainsi qu'à un poids réduit à la naissance ou à une prise de poids réduite. Aucune influence sur la fertilité n'a été constatée.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Stabilité après ouverture
+
+Utiliser dans les 2 mois suivant la première utilisation.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage original, à température ambiante (15–25°C) et hors de la portée des enfants. Ne pas congeler.
+
+Remarques concernant la manipulation
+
+Avant la première utilisation, le spray doseur de Furoate de mométasone Sandoz devrait être purgé. Pour ce faire, actionner la pompe environ 10 fois jusqu'à ce qu'une nébulisation homogène soit visible. Lorsque Furoate de mométasone Sandoz n'a pas été utilisé pendant plus de 14 jours, appuyer 2 fois sur le dispositif de pompage avant l'emploi.
+
+Bien secouer Furoate de mométasone Sandoz avant chaque usage.
+
+Un mode d'emploi détaillé est joint à l'emballage.
+
+Numéro d’autorisation
+
+61899 (Swissmedic)
+
+Présentation
+
+Furoate de mométasone Sandoz, Spray doseur nasal: emballages de 1x 140 et 3x 140 doses unitaires [B].
+
+Titulaire de l’autorisation
+
+Sandoz Pharmaceuticals SA, Risch; domicile: Rotkreuz
+
+Mise à jour de l’information
+
+Avril 2021

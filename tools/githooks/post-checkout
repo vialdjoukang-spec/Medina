@@ -1,0 +1,4 @@
+#!/bin/sh
+# MEDINA — à la création ou au changement de branche : déposer les pointeurs et rappeler la règle.
+python3 tools/sources_guard.py scaffold --quiet
+python3 tools/sources_guard.py reminder

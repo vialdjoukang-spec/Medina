@@ -1,0 +1,503 @@
+---
+titre: "Olmetec®"
+titulaire: "Daiichi Sankyo (Schweiz) AG"
+atc: C09CA08
+substances: "Olmesartanum medoxomilum"
+autorisation_swissmedic: 55907
+date_version: 2026-09-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/8e038a630a9d4888ac6d517d82022f0d-fr.html
+---
+
+Olmetec®
+
+Daiichi Sankyo (Schweiz) AG
+
+Composition
+
+Principes actifs
+
+Olmesartanum medoxomilum.
+
+Excipients
+
+Cellulosum microcristallinum, Hydroxypropylcellulosum substitutum humile, Hydroxypropylcellulosum, Lactosum monohydricum (Olmetec 10 mg: 61.6 mg; Olmetec 20 mg: 123.2 mg; Olmetec 40 mg: 246.4 mg), Magnesii stearas, enrobage: Titanii dioxidum (E 171), Talcum, Hypromellosum.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimé pelliculé
+
+Olmetec 10 mg: Un comprimé pelliculé blanc, rond avec impression «C13» sur une face contient 10 mg d'olmésartan médoxomil
+
+Olmetec 20 mg: Un comprimé pelliculé blanc, rond avec impression «C14» sur une face contient 20 mg d'olmésartan médoxomil.
+
+Olmetec 40 mg: Un comprimé pelliculé blanc, ovale avec impression «C15» sur une face contient 40 mg d'olmésartan médoxomil.
+
+Indications/Possibilités d’emploi
+
+Traitement de l'hypertension artérielle essentielle.
+
+Posologie/Mode d’emploi
+
+Posologie usuelle
+
+Adultes
+
+La posologie initiale recommandée est de 10 mg d'olmésartan médoxomil par jour (1 comprimé pelliculé de Olmetec 10 mg) en 1 prise. Chez les patients insuffisamment contrôlés à une dose de 10 mg, la posologie peut être augmentée à la posologie optimale de 20 mg d'olmésartan médoxomil (1 comprimé pelliculé de Olmetec 20 mg) une fois par jour. Si une diminution plus importante de la pression artérielle est nécessaire, la posologie peut être augmentée à un maximum de 40 mg par jour ou l'association à l'hydrochlorothiazide peut être envisagée.
+
+L'effet antihypertenseur de l'olmésartan médoxomil apparaît dans les 2 semaines suivant l'instauration du traitement et atteint ses maximum 8 semaines environ après le début du traitement. Tenir compte de ce fait lors de l'adaptation posologique pour chaque patient.
+
+Instructions posologiques particulières
+
+Patients âgés (âgés de 65 ans ou plus)
+
+Aucune adaptation posologique n'est nécessaire chez le patient âgé.
+
+(Les instructions posologiques pour les patients présentant une limitation de la fonction rénale sont décrites au chapitre suivant). Si une augmentation de la dose journalière jusqu'à la dose maximale de 40 mg s'avère nécessaire, la pression sanguine devra être suivie de près.
+
+Patients présentant des troubles de la fonction rénale
+
+Chez les patients ayant une insuffisance rénale légère à modérée (clairance de créatinine comprise entre 30 - 80 ml/min) une adaptation posologique n'est pas nécessaire.
+
+Compte tenu de l'expérience limitée, l'utilisation d'olmésartan médoxomil n'est pas recommandée chez les patients ayant une insuffisance rénale sévère (clairance de la créatinine < 20 ml/min) (voir rubrique «Pharmacocinétique»).
+
+Patients présentant des troubles de la fonction hépatique
+
+Aucune adaptation posologique n'est nécessaire chez le patient ayant une légère limitation de la fonction hépatique. Une dose initiale de 10 mg d'olmésartan médoxomil une fois par jour est recommandée chez le patient ayant une limitation modérée de la fonction hépatique et la dose maximale ne doit pas dépasser 20 mg une fois par jour. Contrôler soigneusement la pression sanguine et la fonction rénale des patients ayant une limitation de la fonction hépatique qui doivent prendre simultanément des diurétiques et/ou d'autres antihypertenseurs. Aucune donnée n'est disponible sur les patients ayant une limitation sévère de la fonction hépatique (voir rubrique «Mises en garde et précautions»). Ne pas administrer l'olmésartan médoxomil chez le patient présentant une obstruction des voies biliaires (voir rubrique «Contre-indications»).
+
+Enfants et adolescents
+
+La sécurité et l'efficacité d'olmésartan médoxomil chez des enfants et des adolescents de moins de 18 ans n'ont pas été établies. Les données actuellement disponibles sont décrites dans les rubriques «Effets indésirables» et «Pharmacocinétique» mais aucune recommandation relative à la posologie ne peut être faite.
+
+L'olmésartan médoxomil ne doit pas être utilisé chez les enfants âgés de moins de 1 an pour des raisons de tolérance et en l'absence de données dans ce groupe d'âge.
+
+Mode d'administration
+
+Pour améliorer l'observance, il est recommandé de prendre Olmetec comprimés pelliculés chaque jour environ à la même heure, lors d'un repas ou en dehors des repas, par exemple au moment du petit déjeuner. Le comprimé doit être avalé avec suffisamment de liquide (p.ex. un verre d'eau). Le comprimé ne peut pas être mâché.
+
+Contre-indications
+
+Hypersensibilité au principe actif ou à l'un des excipients.
+
+2e et 3e trimestres de la grossesse (voir rubrique «Grossesse, allaitement»).
+
+Insuffisance hépatique sévère et obstruction biliaire (voir rubrique «Pharmacocinétique»).
+
+Olmetec est contre-indiqué chez les patients présentant un angio-œdème héréditaire ou chez ceux ayant développé un œdème angioneurotique lors d'un traitement antérieur par un inhibiteur de l'ECA ou un antagoniste du récepteur de l'angiotensine II.
+
+L'utilisation concomitante d'inhibiteurs de l'ECA ou d'antagonistes des récepteurs de l'angiotensine II avec des médicaments à base d'aliskirène est contre-indiquée chez les patients présentant un diabète sucré ou une insuffisance rénale (DFG < 60 ml/min/1.73 m2).
+
+Mises en garde et précautions
+
+Hypersensibilité: Angio-œdème (voir rubrique «Contre-indications» et «Effets indésirables»).
+
+Angio-œdème intestinal
+
+Des angio-œdèmes intestinaux ont été rapportés chez des patients traités par des antagonistes des récepteurs de l'angiotensine II, y compris par olmésartan médoxomil (voir la rubrique «Effets indésirables»). Des douleurs abdominales, des nausées, des vomissements et des diarrhées sont survenus chez ces patients. Les symptômes se sont atténués après l'arrêt des antagonistes des récepteurs de l'angiotensine II. Si un angio-œdème intestinal est diagnostiqué, Olmetec doit être arrêté et une surveillance appropriée doit être mise en place jusqu'à la résolution complète des symptômes.
+
+Hypovolémie intravasculaire
+
+Une hypotension symptomatique, en particulier après la première prise, peut survenir chez les patients présentant une déplétion volémique et/ou sodée secondaire à un traitement diurétique intensif, une alimentation hyposodée, une diarrhée ou des vomissements. En conséquence, une déplétion volémique et/ou sodée devra être corrigée avant toute administration d'olmésartan médoxomil.
+
+Autres états avec stimulation du système rénine-angiotensine-aldostérone
+
+Chez les patients dont la tonicité vasculaire et la fonction rénale dépendent majoritairement de l'activité du système rénine-angiotensine-aldostérone (par ex. les patients atteints d'insuffisance cardiaque congestive sévère, ou d'une atteinte rénale sous-jacente, y compris une sténose de l'artère rénale), le traitement par d'autres médicaments agissant sur ce système a été associé à des cas d'hypotension aiguë, d'azotémie, d'oligurie ou, plus rarement, à une défaillance rénale aiguë. La survenue d'effets similaires lors de la prise d'antagonistes des récepteurs de l'angiotensine II ne peut être exclue.
+
+Hypertension rénovasculaire
+
+Un risque accru d'hypotension sévère et d'insuffisance rénale existe lorsque les patients présentant une sténose bilatérale de l'artère rénale ou une sténose de l'artère sur un rein fonctionnel unique sont traités par des médicaments qui agissent sur le système rénine-angiotensine-aldostérone.
+
+Trouble de la fonction rénale et transplantation rénale
+
+Un contrôle périodique de la kaliémie et de la créatininémie est recommandé chez les patients présentant une altération de la fonction rénale et traités par olmésartan médoxomil. L'administration d'olmésartan médoxomil n'est pas recommandée chez les patients ayant une insuffisance rénale sévère (clairance de la créatinine < 20 ml/min) (voir rubriques «Posologie/Mode d'emploi» et «Pharmacocinétique»).
+
+Aucune donnée n'est disponible sur l'utilisation d'olmésartan médoxomil chez les patients ayant subi récemment une transplantation rénale ou chez les patients ayant une insuffisance rénale terminale (clairance de la créatinine < 12 ml/min).
+
+Trouble de la fonction hépatique
+
+Aucune donnée n'est actuellement disponible chez les patients ayant une insuffisance hépatique sévère. En conséquence, l'utilisation d'olmésartan médoxomil n'est pas recommandée chez ce groupe de patients (voir rubriques «Posologie/Mode d'emploi» et «Pharmacocinétique»).
+
+Hyperkaliémie
+
+L'utilisation de médicaments qui affectent le système rénine-angiotensine-aldostérone peut provoquer une hyperkaliémie.
+
+Le risque, qui peut être fatal, est augmenté chez les sujets âgés, chez les patients avec une insuffisance rénale et chez les patients diabétiques ainsi que chez les patients traités de façon concomitante avec d'autres médicaments qui peuvent augmenter les niveaux de potassium, et/ou chez les patients avec des complications supplémentaires.
+
+Avant de considérer l'utilisation concomitante de médicaments qui affectent le système rénine-angiotensine-aldostérone, le rapport risque/bénéfice devrait être évalué et d'autres alternatives considérées.
+
+Les principaux facteurs de risques d'hyperkaliémie sont:
+
+·Diabète, insuffisance rénale, âge (> 70 ans),
+
+·Combinaison avec un ou plusieurs médicament qui affectent le système rénine-angiotensine-aldostérone et/ou les suppléments potassiques. Certains médicaments ou des classes thérapeutiques de médicaments peuvent provoquer une hyperkaliémie: les substituts de sel contenant du potassium, les diurétiques d'épargne potassique, les IEC, les antagonistes de l'angiotensine II, les produits anti-inflammatoires non stéroïdiens (AINS, y compris les inhibiteurs COX 2), l'héparine, les immunosuppresseurs comme la cyclosporine ou le tracolimus, le triméthoprime,
+
+·Les complications supplémentaires, en particulier la déshydratation, la décompensation cardiaque aiguë, l'acidose métabolique, l'aggravation de la fonction rénale, néphropathies soudaines (p.ex. pathologies infectieuses), la lyse cellulaire (p.ex. ischémie aiguë d'un membre, la rhabdomyolyse, un traumatisme étendu).
+
+Une étroite surveillance du potassium sérique est recommandée chez les patients à risque.
+
+Double inhibition du système rénine-angiotensine-aldostérone (SRAA)
+
+Des données indiquent que l'utilisation concomitante d'inhibiteurs de l'ECA, d'antagonistes des récepteurs de l'angiotensine II ou de l'aliskirène accroît le risque d'hypotension, d'hyperkaliémie et de diminution de la fonction rénale (y compris insuffisance rénale aiguë). Un double blocage du SRAA par l'utilisation concomitante d'inhibiteurs de l'ECA, d'antagonistes des récepteurs de l'angiotensine II ou de l'aliskirène n'est donc pas recommandée.
+
+Si le traitement par un double blocage est considéré comme absolument nécessaire, celui-ci ne doit être mené que sous la surveillance d'un spécialiste et en assurant des contrôles étroits de la fonction rénale, des valeurs électrolytiques et de la tension artérielle.
+
+Les inhibiteurs de l'ECA et les antagonistes des récepteurs de l'angiotensine II ne doivent pas être utilisés de manière concomitante chez les patients atteints de néphropathie diabétique.
+
+Lithium
+
+Comme pour les autres antagonistes des récepteurs de l'angiotensine II, l'association du lithium avec l'olmésartan médoxomil n'est pas recommandée (voir rubrique «Interactions»).
+
+Sténose aortique ou mitrale, cardiomyopathie obstructive hypertrophique
+
+Comme pour les autres vasodilatateurs, une prudence particulière est recommandée chez les patients souffrant de sténose aortique ou mitrale, ou de cardiomyopathie obstructive hypertrophique.
+
+Hyperaldostéronisme primaire
+
+Les patients atteints d'hyperaldostéronisme primaire ne répondent généralement pas aux traitements antihypertenseurs agissant par inhibition du système rénine-angiotensine. En conséquence, l'utilisation d'olmésartan médoxomil n'est pas recommandée chez ces patients.
+
+Entéropathie apparentée à la sprue
+
+Dans de très rares cas, des diarrhées chroniques sévères avec une perte de poids substantielle ont été signalées chez des patients ayant pris l'olmésartan quelques mois voire des années après le commencement du traitement, probablement causées par une réaction locale d'hypersensibilité retardée. Les biopsies intestinales des patients ont souvent mis en évidence une atrophie villositaire. Si un patient développe ces symptômes durant le traitement par l'olmésartan, et en l'absence d'autres étiologies apparentes, le traitement par olmésartan doit être immédiatement arrêté. Le traitement par olmésartan médoxomil ne doit pas être repris.
+
+Si la diarrhée ne s'améliore pas durant la semaine suivant l'arrêt, le conseil d'un spécialiste (notamment un gastro-entérologue) doit être envisagé.
+
+D'autres parties du tractus gastro-intestinal peuvent également être touchées par des altérations liées à l'olmésartan, par exemple sous la forme d'une colite.
+
+Différences ethniques
+
+Comme pour tous les autres antagonistes des récepteurs de l'angiotensine II, la diminution de la pression artérielle sous l'olmésartan médoxomil est légèrement plus faible chez les patients de race noire, vraisemblablement en raison de la prévalence plus élevée d'un taux de rénine bas chez les patients hypertendus dans ce groupe de population.
+
+Grossesse
+
+Voir la rubrique «Grossesse, allaitement».
+
+Divers
+
+Comme pour tout antihypertenseur, une diminution excessive de la pression artérielle chez les patients atteints d'une maladie coronaire ou d'une pathologie ischémique cérébrovasculaire peut entraîner un infarctus du myocarde ou un accident vasculaire cérébral.
+
+Ce médicament contient du lactose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.
+
+Interactions
+
+Les études d'interactions médicamenteuses n'ont été réalisées que chez l'adulte.
+
+Effet d'autres médicaments sur l'olmésartan médoxomil
+
+Autres antihypertenseurs
+
+L'effet antihypertenseur de l'olmésartan médoxomil peut être accentué par l'administration concomitante d'autres antihypertenseurs.
+
+Inhibiteurs de l'ECA, antagonistes des récepteurs de l'angiotensine II ou aliskirène
+
+Voir rubriques «Contre-indications» et «Mises en garde et précautions».
+
+Potassium de substitution et diurétiques épargneurs de potassium
+
+Sur la base de l'expérience acquise lors de l'administration d'autres médicaments modifiant le système rénine-angiotensine, une élévation de la kaliémie est prévisible lors de l'administration concomitante d'un diurétique épargneur de potassium, d'une supplémentation en potassium, de produits à base d'électrolytes contenant du potassium ou d'autres médicaments susceptibles d'augmenter les taux de potassium sérique (p.ex. l'héparine) (voir la rubrique «Mises en garde et précautions»). En conséquence, une telle association n'est pas recommandée.
+
+Anti-inflammatoires non stéroïdiens (AINS)
+
+Les AINS (y compris l'acide acétylsalicylique à des doses > 3 g/jour et les inhibiteurs de la COX2) et les antagonistes des récepteurs de l'angiotensine II peuvent avoir une action synergique et diminuer la filtration glomérulaire. Le risque lié à l'association d'un AINS et d'un antagoniste des récepteurs de l'angiotensine II se résume à l'apparition d'une insuffisance rénale aiguë. Un suivi régulier de la fonction rénale et une hydratation correcte du patient sont recommandés en début de traitement.
+
+En outre, cette association peut également diminuer l'effet antihypertenseur des antagonistes des récepteurs de l'angiotensine II et conduire ainsi à une diminution partielle de leur efficacité.
+
+Autres substances
+
+Une légère diminution de la biodisponibilité de l'olmésartan médoxomil a été observée après traitement par antiacides (hydroxyde d'aluminium et de magnésium). L'administration concomitante de warfarine et de digoxine n'a eu aucun effet sur les propriétés pharmacocinétiques de l'olmésartan.
+
+Effets de l'olmésartan médoxomil sur d'autres médicaments
+
+Lithium
+
+Une augmentation réversible de la lithiémie et de la toxicité du lithium ont été observées lors de l'administration concomitante de lithium et d'inhibiteurs de l'enzyme de conversion de l'angiotensine ou d'antagonistes des récepteurs de l'angiotensine II. En conséquence, l'association d'olmésartan médoxomil et de lithium n'est pas recommandée (voir la rubrique «Mises en garde et précautions»). Si cette association est nécessaire, un contrôle strict de la lithiémie est recommandé. L'administration concomitante de diurétiques et d'olmésartan médoxomil peut entraîner une augmentation supplémentaire du risque de toxicité du lithium.
+
+Autres substances
+
+Des études cliniques spécifiques ont été réalisées chez les volontaires sains avec la warfarine, la digoxine, un antiacide (hydroxyde d'aluminium et de magnésium), l'hydrochlorothiazide et la pravastatine. Aucune interaction cliniquement significative n'a été observée.
+
+Les interactions potentielles entre l'olmésartan médoxomil et les anticoagulants oraux acénocoumarol et phenprocoumone n'ont pas fait l'objet d'études.
+
+In vitro, l'olmésartan médoxomil ne montre aucun effet inhibiteur de pertinence clinique sur les enzymes du cytochrome P-450 humain 1A1/2, 2A6, 2C8/9, 2C19, 2D6, 2E1 et 3A4. Chez le rat, son effet inducteur sur l'activité du cytochrome P-450 est inexistant ou minimale. En conséquence, aucune étude d'interaction in vivo avec les inhibiteurs et inducteurs connus des enzymes du cytochrome P-450 n'a été réalisée. Aucune interaction de pertinence clinique n'est attendue entre l'olmésartan médoxomil et les substances médicamenteuses métabolisées par les enzymes du cytochrome P-450 citées plus haut.
+
+Grossesse, allaitement
+
+Grossesse
+
+L'utilisation des antagonistes des récepteurs de l'angiotensine II est déconseillée au 1er trimestre de la grossesse. L'utilisation des antagonistes des récepteurs de l'angiotensine II est contre-indiquée aux 2e et 3e trimestres de la grossesse (voir la rubrique «Contre-indications»).
+
+On ne dispose d'aucune donnée épidémiologique définitive sur le risque tératogène après l'utilisation d'un inhibiteur de l'ECA pendant le premier trimestre de la grossesse; un risque minime accru ne peut toutefois être éliminé. Même en l'absence de données épidémiologiques contrôlées concernant le risque des antagonistes des récepteurs de l'angiotensine II, il existe peut être des risques comparables pour cette classe de médicaments. Dans la mesure où une poursuite du traitement par des antagonistes des récepteurs de l'angiotensine II n'est pas jugée nécessaire, les patientes qui souhaitent prévoir une grossesse, doivent changer de médicament et prendre un autre traitement antihypertenseur possédant un profil de sécurité d'emploi approprié pour les femmes enceintes. En cas de grossesse déclarée, un traitement par des antagonistes des récepteurs de l'angiotensine II doit être immédiatement arrêté et, si nécessaire, remplacé par un autre traitement.
+
+Dans l'espèce humaine, il est connu qu'un traitement par des antagonistes des récepteurs de l'angiotensine II pendant le deuxième et le troisième trimestre de la grossesse entraîne des effets fœtotoxiques (diminution de la fonction rénale, oligohydramnios, retard de l'ossification crânienne) et des effets toxiques chez le nouveau-né (insuffisance rénale, hypotension, hyperkaliémie) (voir aussi la rubrique «Données précliniques»). En cas d'exposition à des antagonistes des récepteurs de l'angiotensine II à partir du deuxième trimestre de la grossesse, il est recommandé d'effectuer des examens échographiques de la fonction rénale et du crâne.
+
+Les nouveau-nés qui ont été exposés in utero à des antagonistes des récepteurs de l'angiotensine II doivent être étroitement surveillés pour l'hypotension.
+
+Allaitement
+
+L'olmésartan médoxomil est excrété dans le lait de rates allaitantes, mais on ignore si l'olmésartan est excrété dans le lait maternel chez l'être humain.
+
+En raison de l'absence d'information disponible sur l'utilisation d'Olmetec au cours de l'allaitement, Olmetec est déconseillé. Il est préférable d'utiliser d'autres traitements ayant un profil de sécurité bien établi pendant l'allaitement, particulièrement chez le nouveau-né ou le prématuré.
+
+Les nourrissons de mère traitée par antagonistes des récepteurs de l'angiotensine II doivent être fréquemment surveillés sur le plan tensionnel en raison du risque d'hypotension.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Olmetec a une influence mineure ou modéré sur l'aptitude à conduire des véhicules et à utiliser des machines. Les patients prenant des antihypertenseurs peuvent parfois être pris de vertiges et se sentir fatigués, ce qui peut diminuer leurs capacités de réaction.
+
+Effets indésirables
+
+Les réactions indésirables les plus fréquemment notifiées durant un traitement avec Olmetec sont maux de tête (7.7%), symptômes pseudo-grippaux (4.0%) et vertiges (3.7%).
+
+Dans des études de monothérapie, contrôlées contre placebo, les vertiges ont été le seul effet indésirable lié de façon certaine au traitement (avec une incidence de 2.5% pour le groupe traité par l'olmésartan médoxomil contre 0.9% pour le groupe placebo). Les patients recevant l'olmésartan médoxomil, comparés à ceux du groupe placebo, présentaient une incidence plus importante d'hypertriglycéridémie (2.0% contre 1.1%) et d'élévation du taux de créatine phosphokinase (1.3% contre 0.7%).
+
+Les effets indésirables d'Olmetec rapportés au cours des essais cliniques, des investigations de sécurité après l'enregistrement et issus de notifications spontanées, sont résumés dans le tableau ci-dessous.
+
+La terminologie suivante est utilisée pour définir la fréquence des effets indésirables:
+
+Très fréquents (≥1/10); fréquents (≥1/100 à <1/10); occasionnels (≥1/1000 à <1/100); rares (≥1/10'000 à <1/1000); très rares (< 1/10'000); fréquence inconnue (ne peut être estimée sur la base des données disponibles).
+
+|  |  |  |
+| --- | --- | --- |
+| Classe de systèmes d'organes MedDRA | Effet indésirable | Fréquence |
+| Affections hématologiques et du système lymphatique | Thrombocytopénie | Occasionnels |
+| Affections du système immunitaire | Réaction anaphylactique | Occasionnels |
+| Troubles du métabolisme et de la nutrition | Hypertriglycéridémie | Fréquents |
+| Hyperuricémie | Fréquents |
+| Hyperkaliémie | Rares |
+| Affections du système nerveux | Étourdissements | Fréquents |
+| Céphalées | Fréquents |
+| Affections de l'oreille et du labyrinthe | Vertiges | Occasionnels |
+| Affections cardiaques | Angine de poitrine | Occasionnels |
+| Affections vasculaires | Hypotension | Rares |
+| Affections respiratoires, thoraciques et médiastinales | Bronchite | Fréquents |
+| Pharyngite | Fréquents |
+| Toux | Fréquents |
+| Rhinite | Fréquents |
+| Affections gastro-intestinales | Gastro-entérite | Fréquents |
+| Diarrhée | Fréquents |
+| Douleurs abdominales | Fréquents |
+| Nausées | Fréquents |
+| Dyspepsie | Fréquents |
+| Vomissements | Occasionnels |
+| Angio-œdème intestinal | Rares |
+| Entéropathie apparentée à la sprue | Très rares |
+| Colite (y compris la colite microscopique) | Fréquence inconnue |
+| Affections hépatobiliaires | Hépatite auto-immune\* | Fréquence inconnue |
+| Affections de la peau et du tissu sous-cutané | Exanthème | Occasionnels |
+| Dermatite allergique | Occasionnels |
+| Urticaire | Occasionnels |
+| Éruption cutanée | Occasionnels |
+| Prurit | Occasionnels |
+| Œdèmes angioneurotiques | Rares |
+| Affections musculosquelettiques et du tissu conjonctif | Arthrite | Fréquents |
+| Douleurs dorsales | Fréquents |
+| Douleurs au niveau du squelette | Fréquents |
+| Myalgie | Occasionnels |
+| Spasmes musculaires | Rares |
+| Affections du rein et des voies urinaires | Hématurie | Fréquents |
+| Infection urinaire | Fréquents |
+| Insuffisance rénale aiguë | Rares |
+| Insuffisance rénale | Rares |
+| Troubles généraux et anomalies au site d'administration | Douleurs | Fréquents |
+| Douleurs thoraciques | Fréquents |
+| Œdème périphérique | Fréquents |
+| Symptômes pseudo-grippaux | Fréquents |
+| Fatigue | Fréquents |
+| Œdèmes de la face | Occasionnels |
+| Asthénie | Occasionnels |
+| Malaise | Occasionnels |
+| Léthargie | Rares |
+| Investigations | Augmentation des enzymes hépatiques | Fréquents |
+| Augmentation de l'urémie | Fréquents |
+| Augmentation de la créatine phosphokinase dans le sang | Fréquents |
+| Augmentation de la créatininémie | Rares |
+
+ 
+
+\*Des cas d'hépatite auto-immune avec un temps de latence de quelques mois à plusieurs années, réversibles à l'arrêt du traitement, ont été signalés après la mise sur le marché de l'olmésartan.
+
+Des cas isolés de rhabdomyolyse ont été rapportés avec des associations comportant des antagonistes des récepteurs de l'angiotensine II.
+
+Informations supplémentaires pour les populations particulières
+
+Enfants et adolescents
+
+La tolérance de l'olmésartan médoxomil a été évaluée chez 361 enfants et adolescents, âgés de 1 à 17 ans au cours de 2 essais cliniques.
+
+Alors que la nature et la sévérité des événements indésirables sont semblables à celles des adultes, la fréquence des événements indésirables suivants est plus élevée chez les enfants:
+
+·L'épistaxis est un événement indésirable fréquent chez les enfants (≥1/100 à < 1/10) qui n'a pas été rapporté chez les adultes.
+
+·Au cours des 3 semaines d'étude en double aveugle, l'incidence des étourdissements et des céphalées survenus sous traitement a presque doublé chez les enfants âgés de 6 à 17 ans inclus dans le groupe olmésartan médoxomil à dose élevée.
+
+Patients âgés (65 ans et plus)
+
+Chez les sujets âgés, la fréquence de l'hypotension a augmenté à «occasionnelle».
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+L'information concernant le surdosage chez l'homme est limitée.
+
+L'effet le plus probable lié au surdosage est l'hypotension.
+
+Traitement
+
+En cas de surdosage, le patient sera étroitement surveillé et un traitement symptomatique et de soutient sera mis en oeuvre.
+
+Aucune donnée sur l'élimination d'olmésartan médoxomil par dialyse n'est disponible.
+
+Propriétés/Effets
+
+Code ATC
+
+C09CA08
+
+(antagonistes des récepteurs de l'angiotensine II, simples).
+
+Mécanisme d'action
+
+L'olmésartan médoxomil est un antagoniste sélectif puissant des récepteurs de l'angiotensine II (type AT1) actif par voie orale. On présume que tous les effets de l'angiotensine II faisant intervenir les récepteurs AT1, indépendamment de l'origine ou de la voie de synthèse de l'angiotensine II, sont bloqués. L'antagonisme sélectif des récepteurs de l'angiotensine II (AT1) entraîne une augmentation des taux plasmatiques de rénine et des concentrations d'angiotensine l et II, ainsi qu'une petite diminution de la concentration plasmatique d'aldostérone.
+
+Pharmacodynamique
+
+L'angiotensine II est la principale hormone vasoactive du système rénine-angiotensine-aldostérone. Elle joue un rôle important dans la physiopathologie de l'hypertension en agissant au niveau des récepteurs de type 1 (AT1).
+
+En cas d'hypertension, l'olmésartan médoxomil provoque une diminution dose-dépendante et durable de la pression artérielle. Rien n'indique une hypotension après la première administration ni une tachyphylaxie lors d'administration prolongée, ni une hypertension de rebond lors de l'arrêt du traitement.
+
+L'administration quotidienne d'olmésartan médoxomil à raison d'une prise entraîne une diminution progressive et efficace de la pression artérielle sur l'intervalle posologique de 24 heures. À dose journalière totale équivalente, l'administration en 1 ou 2 prises entraîne une diminution similaire de la pression artérielle.
+
+Lors d'un traitement continu, la diminution maximale de la pression artérielle est obtenue 8 semaines après le début du traitement, avec une baisse significative de la pression artérielle visible déjà après 2 semaines de traitement. En association avec l'hydrochlorothiazide, un effet additif sur la diminution de la pression artérielle est observé, cette administration concomitante étant bien tolérée.
+
+Les effets de l'olmésartan médoxomil sur la mortalité et la morbidité ne sont pas encore connus.
+
+Efficacité clinique
+
+L'étude ROADMAP (Randomised Olmesartan and Diabetes Microalbuminuria Prevention Study) réalisée chez 4'447 patients avec un diabète de type 2, normo-albuminurie et au moins un facteur de risque cardiovasculaire additionnel, a examiné si un traitement par l'olmésartan pourrait retarder le début de la microalbuminurie.
+
+Durant la période médiane d'observation de 3.2 années, les patients recevaient soit l'olmésartan soit un placebo en plus d'autres antihypertenseurs, à l'exception des inhibiteurs de l'ECA ou des antagonistes des récepteurs de l'angiotensine II.
+
+Pour le critère d'évaluation principal, l'étude a démontré une réduction du risque concernant le délai de survenue d'une microalbuminurie en faveur d'olmésartan. Après ajustement des différences de la tension artérielle, cette diminution du risque n'était plus statistiquement significative. 8.2% (178 patients sur 2'160) des patients du groupe sous olmésartan et 9.8% (210 patients sur 2'139) des patients du groupe sous placebo ont développé une microalbuminurie.
+
+Pour les critères d'évaluation secondaires, des incidents cardiovasculaires sont apparus chez 96 patients (4.3%) sous olmésartan et chez 94 patients (4.2%) sous placebo. L'incidence de la mortalité cardiovasculaire était plus élevée sous olmésartan que sous placebo (15 patients (0.7%) vs 3 patients (0.1%)), malgré les taux similaires pour les AVC non mortels (14 patients (0.6%) vs 8 patients (0.4%)), les infarctus du myocarde non mortels (17 patients (0.8%) vs 26 (1.2%)) et la mortalité non-cardiovasculaire (11 patients (0.5%) vs 12 patients (0.5%)). La mortalité globale sous olmésartan avait augmenté numériquement (26 patients (1.2%) vs 15 patients (0.7%)), ce qui s'explique principalement par un nombre élevé d'accidents cardiovasculaires mortels.
+
+L'étude ORIENT (Olmesartan Reducing Incidence of End-stage Renal Disease in Diabetic Nephropathy Trial) a examiné les effets d'olmésartan sur les événements rénaux et cardiovasculaires chez 577 patients randomisés japonais et chinois diabétiques de type 2 avec une néphropathie avérée.
+
+Durant un suivi médian de 3.1 années, les patients ont reçu soit olmésartan soit un placebo, en plus des autres antihypertenseurs incluant les inhibiteurs de l'ECA.
+
+Le critère d'évaluation principal combiné (temps écoulé avant la survenue du premier événement de doublement de la créatinine sérique, insuffisance rénale terminale, décès toutes causes confondues) est survenu chez 116 patients du groupe sous olmésartan (41.1%) et chez 129 patients (45.4%) du groupe sous placebo (HR: 0.97 (IC à 95% 0.75 à 1.24); p = 0.791).
+
+Le critère d'évaluation cardiovasculaire secondaire combiné est survenu chez 40 patients traités par olmésartan (14.2%) et 53 patients traités par placebo (18.7%). Ce critère d'évaluation cardiovasculaire combiné inclut les décès cardiovasculaires chez 10 patients (3.5%) sous olmésartan vs 3 patients (1.1%) sous placebo, mortalité globale 19 (6.7%) vs 20 (7.0%), AVC non mortels 8 (2.8%) vs 11 patients (3.9%) et infarctus du myocarde non mortels 3 patients (1.1%) vs 7 (2.5%).
+
+Informations complémentaires
+
+L'administration concomitante d'un inhibiteur de l'ECA et d'un antagoniste des récepteurs de l'angiotensine II a été analysée aux cours de deux études de grande envergure, randomisées, contrôlées («ONTARGET» [ONgoing Telmisartan Alone and in combination with Ramipril Global Endpoint Trial] et «VA NEPHRON-D» [The Veterans Affairs Nephropathy in Diabetes]).
+
+L'étude «ONTARGET» a été réalisée chez des patients ayant des antécédents de maladie cardiovasculaire ou de maladie vasculaire cérébrale, ou atteints d'un diabète de type 2 avec atteinte des organes cibles. L'étude «VA NEPHRON-D» a été réalisée chez des patients diabétiques de type 2 et atteints de néphropathie diabétique.
+
+Par rapport à une monothérapie, ces études n'ont pas mis en évidence d'effet bénéfique significatif sur l'évolution des atteintes rénales et/ou cardiovasculaires et sur la mortalité, alors qu'il a été observé une augmentation du risque d'hyperkaliémie, d'insuffisance rénale aiguë et/ou d'hypotension. Ces résultats sont également applicables à d'autres inhibiteurs de l'ECA et antagonistes des récepteurs de l'angiotensine II, compte tenu de la similarité de leurs propriétés pharmacodynamiques.
+
+C'est pourquoi les inhibiteurs de l'ECA et les antagonistes des récepteurs de l'angiotensine II ne devraient pas être administrés simultanément chez les patients atteints de néphropathie diabétique.
+
+L'étude «ALTITUDE» (Aliskiren Trial in Type 2 Diabetes Using Cardiovascular and Renal Disease Endpoints) a été réalisée dans le but d'évaluer le bénéfice de l'ajout de l'aliskirène à un traitement standard par un inhibiteur de l'ECA ou un antagoniste des récepteurs de l'angiotensine II chez des patients atteints d'un diabète de type 2 et d'une insuffisance rénale chronique et/ou d'une pathologie cardiovasculaire. Cette étude a été arrêtée prématurément en raison d'une augmentation du risque d'événements indésirables. Les décès d'origine cardiovasculaire et les accidents vasculaires cérébraux ont été plus fréquents dans le groupe sous aliskirène que dans le groupe sous placebo; de même que les événements indésirables et certains événements indésirables graves (hyperkaliémie, hypotension, insuffisance rénale).
+
+Pharmacocinétique
+
+Absorption
+
+L'olmésartan médoxomil est une prodrogue. Il est rapidement transformé par les estérases de la muqueuse intestinale et de la veine portale en son métabolite actif, l'olmésartan, après absorption depuis le tube digestif. Aucune trace d'olmésartan médoxomil sous forme inchangée ou de son résidu médoxomil latéral n'a été décelée dans le plasma ou les selles.
+
+La biodisponibilité moyenne absolue d'olmésartan médoxomil à partir de la forme comprimée est de 25.6%.
+
+La concentration plasmatique maximale moyenne (Cmax) d'olmésartan est atteinte dans les 2 heures suivant la prise d'olmésartan médoxomil par voie orale. Après administration orale d'une dose unique, la concentration plasmatique d'olmésartan augmente de manière quasi linéaire en fonction de la dose jusqu'à 80 mg.
+
+L'alimentation modifiant peu la biodisponibilité de l'olmésartan, l'olmésartan médoxomil peut être administré aussi bien avec que sans aliments.
+
+Aucune différence cliniquement significative liée au sexe des patients n'a été observée dans la pharmacocinétique de l'olmésartan.
+
+Distribution
+
+L'olmésartan médoxomil se fixe fortement aux protéines plasmatiques (99.7%). Cependant, la pertinence clinique des interactions compétitives entre l'olmésartan médoxomil et les autres médicaments à forte liaison aux protéines plasmatiques administrés simultanément est faible (comme le confirme l'absence d'interaction cliniquement significative entre l'olmésartan médoxomil et la warfarine).
+
+La fixation d'olmésartan médoxomil aux cellules sanguines est négligeable. Après administration par voie intraveineuse, le volume de distribution moyen (16 – 29 l) est faible.
+
+Métabolisme
+
+La clairance plasmatique totale était généralement de 1.3 l/h (coefficient de variation = 19%) et relativement plus faible que la circulation hépatique (environ 90 l/h). Après administration orale d'une dose unique d'olmésartan médoxomil radiomarqué au 14C, 10 à 16% de la radioactivité sont excrétés dans les urines (la majorité dans les 24 heures suivant l'administration), le reste de la radioactivité est excrété dans les selles. Sur la base d'une disponibilité systémique de 25.6%, on peut calculer que l'olmésartan absorbé est éliminé à la fois par voie rénale (env. 40%) et par voie hépato-biliaire (env. 60%). Aucune trace d'olmésartan médoxomil sous forme inchangée ou de son résidu médoxomil latéral n'a été décelée dans le plasma ou les selles. La totalité de la radioactivité mesurée peut être attribuée à l'olmésartan médoxomil. Aucun autre métabolite n'a été détecté. Le cycle entéro-hépatique de l'olmésartan est minime. Parce que la majeure partie de l'olmésartan est éliminée par les voies biliaires, son utilisation est contre-indiquée chez les patients présentant une obstruction des voies biliaires (voir rubrique «Contre-indications»).
+
+Après administration orale répétée, la demi-vie d'élimination de l'olmésartan varie entre 10 et 15 heures. L'état d'équilibre est atteint dès les premières doses et aucune accumulation n'a été observée après 14 jours de prises répétées.
+
+La clairance rénale est d'environ 0.5 – 0.7 l/h et est indépendante de la dose.
+
+Élimination
+
+Voir aussi sous «Métabolisme».
+
+Cinétique pour certains groupes de patients
+
+Enfants et adolescents
+
+La pharmacocinétique de l'olmésartan a été étudiée dans la population pédiatrique hypertendue âgée de 1 à 16 ans. La clairance de l'olmésartan dans la population pédiatrique était semblable à celle des patients adultes après ajustement en fonction du poids.
+
+Il n'y a pas d'information pharmacocinétique disponible dans la population pédiatrique avec insuffisance rénale.
+
+Patients âgés (65 ans ou plus)
+
+Chez les patients hypertendus, l'AUC à l'état d'équilibre est augmentée de 35% chez les patients âgés (65 - 75 ans) et de 44% chez les sujets très âgés (≥75 ans) par rapport aux sujets plus jeunes (voir rubrique «Posologie/Mode d'emploi»). Ceci pourrait être partiellement lié à une diminution générale de la fonction rénale dans ce groupe de patients.
+
+Troubles de la fonction rénale
+
+L'augmentation de l'AUC à l'état d'équilibre est de 62% chez les patients avec insuffisance rénale légère, de 82% lors d'insuffisance modérée et de 179% lors d'insuffisance sévère, par rapport à un groupe de contrôle sain (voir rubriques «Posologie/Mode d'emploi» et «Mises en garde et précautions»).
+
+Troubles de la fonction hépatique
+
+Après administration orale unique, les valeurs de l'AUC d'olmésartan sont augmentées de 6% chez les patients avec insuffisance hépatique légère et de 65% chez ceux avec insuffisance hépatique modérée par rapport à un groupe de contrôle sain. Deux heures après l'administration, la fraction libre d'olmésartan était de 0.26% chez les volontaires sains, de 0.34% chez les patients avec insuffisance hépatique légère et de 0.41% chez ceux avec insuffisance hépatique modérée.
+
+Après l'administration de doses répétées à des patients ayant une limitation modérée de la fonction hépatique, les valeurs moyennes de l'AUC de l'olmésartan étaient environ 65% supérieures à celles mesurées chez des contrôles sains. Chez les patients ayant une limitation de la fonction hépatique, les valeurs moyennes de la Cmax de l'olmésartan étaient similaires à celles observés chez les volontaires sains.
+
+Aucune étude n'a été réalisée avec l'olmésartan médoxomil chez les patients avec insuffisance hépatique sévère (voir rubriques «Posologie/Mode d'emploi», «Mises en garde et précautions»).
+
+Données précliniques
+
+Les études de toxicité chronique menées chez le rat et le chien ont montré que les effets de l'olmésartan médoxomil sont identiques à ceux observés avec d'autres antagonistes des récepteurs AT1 et des inhibiteurs de l'ECA: augmentation de l'azote uréique sanguin et de la créatinine (du fait des modifications fonctionnelles observées au niveau des reins dues au blocage des récepteurs AT1); diminution de la masse cardiaque; diminution des cellules de la lignée rouge sanguine (érythrocytes, hémoglobine, hématocrite); signes histologiques d'atteinte rénale (altérations régénératrices de l'épithélium rénal, épaississement de la membrane basale, dilatation des tubules). Ces effets indésirables, provoqués par l'effet pharmacologique de l'olmésartan médoxomil, sont également survenus au cours d'essais précliniques menés avec d'autres antagonistes des récepteurs AT1 et avec les inhibiteurs de l'ECA et peuvent être atténués par l'administration orale simultanée de chlorure de sodium. Dans ces deux espèces, une augmentation de l'activité de la rénine plasmatique et une hypertrophie/hyperplasie des cellules juxtaglomérulaires rénales ont été observées. Ces modifications sont caractéristiques d'un effet de classe des inhibiteurs de l'ECA et d'autres antagonistes des récepteurs AT1 et ne semblent pas avoir de pertinence clinique.
+
+Comme pour les autres antagonistes des récepteurs AT1, des cultures cellulaires réalisées in vitro montrent que l'olmésartan médoxomil augmente l'incidence des cassures chromosomiques. Aucun effet significatif n'a été observé lors d'études menés avec l'olmésartan médoxomil in vivo à des doses orales très élevées allant jusqu'à 2'000 mg/kg. Les données de génotoxicité suggèrent dans l'ensemble que l'olmésartan médoxomil n'a pas de potentiel génotoxique dans les conditions d'utilisation thérapeutique.
+
+L'olmésartan médoxomil n'était pas cancérogène, ni chez le rat (étude de 2 ans) ni chez la souris (étude de 6 mois selon le modèle transgénique).
+
+Les études de reproduction menées avec l'olmésartan médoxomil chez le rat n'ont pas montré d'effet sur la fertilité ni de signe de tératogénicité. Comme les autres antagonistes des récepteurs de l'angiotensine II, une diminution de la survie de la descendance due à l'absorption d'olmésartan médoxomil a été observée ainsi qu'une dilatation pelvienne du rein après exposition de la femelle gravide en fin de grossesse et pendant l'allaitement. Comme pour d'autres antihypertenseurs, la toxicité d'olmésartan médoxomil est plus importante chez la lapine gravide que chez la rate gravide; cependant, aucun signe de fœtotoxicité n'a été observé.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Ne pas conserver au-dessus de 30°C.
+
+Conserver le récipient dans son carton pour le protéger de la lumière.
+
+Conserver hors de portée des enfants.
+
+Numéro d’autorisation
+
+55907 (Swissmedic).
+
+Présentation
+
+Olmetec 10 mg: Emballages de 28, 98 comprimés pelliculés [B]
+
+Olmetec 20 mg: Emballages de 28, 98 comprimés pelliculés [B]
+
+Olmetec 40 mg: Emballages de 28, 98 comprimés pelliculés [B]
+
+Titulaire de l’autorisation
+
+Daiichi Sankyo (Suisse) SA, Zurich
+
+Mise à jour de l’information
+
+Septembre 2026

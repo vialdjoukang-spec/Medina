@@ -1,0 +1,395 @@
+---
+titre: "Desonur®"
+titulaire: "Labatec Pharma SA"
+atc: G03AC09
+substances: "Desogestrelum"
+autorisation_swissmedic: 66179
+date_version: 2020-03-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/03cb3bd25aaf4b08afee3c73a14fc359-fr.html
+---
+
+Desonur®
+
+Labatec Pharma SA
+
+Composition
+
+Principes actifs
+
+Desogestrelum.
+
+Excipients
+
+Maydis amylum, Silica colloidalis anhydrica, α-Tocopherolum, Povidonum K 30, Acidum stearicum et lactosum monohydricum (67,25 mg).
+
+Enrobage: Hypromellosum, Macrogolum 6000, Talcum, Propylenglyocolum, Titanii dioxidum (E171).
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimé pelliculé dosé à 0,075 mg de désogestrel.
+
+Indications/Possibilités d’emploi
+
+Contraception orale.
+
+Posologie/Mode d’emploi
+
+Il faut prendre les comprimés pelliculés tous les jours pendant 28 jours, toujours à la même heure, dans l'ordre indiqué sur l'emballage, avec un peu de liquide. Quand une plaquette est vide, il faut en commencer une autre le lendemain, sans interruption de la prise.
+
+Début de la prise
+
+Si la femme n'a pas utilisé de contraceptif hormonal au cours du mois précédent:
+
+Le premier comprimé est pris le premier jour du cycle naturel de la femme (c'est-à-dire le premier jour des règles). Le traitement peut aussi être entrepris les jours 2 à 5, mais, dans ce cas, il est recommandé d'utiliser en plus une contraception mécanique pendant les 7 premiers jours de prise des comprimés pelliculés.
+
+Remplacement d'un contraceptif hormonal combiné (contraceptif oral combiné (COC), d'un anneau vaginal ou d'un patch transdermique):
+
+Il faut prendre le premier comprimé pelliculé de Desonur de préférence le lendemain de la prise du dernier comprimé pelliculé du contraceptif oral combiné précédent contenant un principe actif ou le jour du retrait de l'anneau vaginal ou du patch. Dans ce cas, il n'est pas nécessaire d'utiliser en plus un contraceptif mécanique.
+
+Une autre possibilité est de commencer la prise de Desonur le lendemain du dernier jour de la période normalement sans comprimé (ou le lendemain du dernier jour d'utilisation du placebo) du contraceptif hormonal combiné précédent, ou le dernier jour avant que l'anneau ou le patch ne soit à nouveau utilisé. Dans tous ces cas, il faut toutefois utiliser en plus un contraceptif mécanique pendant les 7 premiers jours de la prise.
+
+Utilisation de Desonur en remplacement d'un contraceptif purement progestatif (minipilule, préparation injectable, implant, DIU libérant un progestatif):
+
+On peut remplacer une autre minipilule par Desonur n'importe quel jour; quand on remplace un implant ou un DIU libérant un progestatif par Desonur, il faut commencer à prendre Desonur au plus tôt le jour du retrait du dispositif précédent; quand on remplace un produit injectable par Desonur , il faut commencer à prendre Desonur le jour prévu pour l'injection suivante. Il est inutile d'utiliser une méthode contraceptive supplémentaire.
+
+Utilisation après un avortement survenu au cours du premier trimestre:
+
+Après un avortement survenu au cours du premier trimestre, on peut immédiatement commencer la prise de Desonur. Dans ce cas, il n'est pas nécessaire de prendre des mesures contraceptives complémentaires.
+
+Utilisation après un accouchement ou un avortement survenu pendant le deuxième trimestre:
+
+Il est recommandé de commencer la prise les jours 21-28 après l'accouchement ou l'avortement. Si la prise débute plus tard, il faut recommander à la femme d'utiliser en plus une contraception mécanique pendant les 7 premiers jours de la prise. Si un rapport sexuel a déjà eu lieu, il faut exclure l'éventualité d'une grossesse avant le début de la prise des comprimés ou bien attendre les premières règles naturelles de la femme. Pour les femmes qui allaitent, voir le paragraphe «Grossesse/Allaitement».
+
+Conduite à tenir en cas d'oubli de la prise d'un comprimé
+
+Si la femme constate qu'elle a oublié de prendre le comprimé dans les 12 heures suivant l'heure normale, elle doit prendre le comprimé immédiatement. Le comprimé pelliculé suivant sera ensuite pris à l'heure habituelle.
+
+S'il s'est écoulé plus de 12 heures depuis l'heure normale de la prise, la fiabilité contraceptive peut être compromise. Il faut prendre immédiatement le comprimé pelliculé oublié, dès que l'oubli est constaté, même si cela implique la prise de deux comprimés pelliculés le même jour. Les comprimés pelliculés suivants doivent être pris à l'heure habituelle. Pendant les 7 jours suivants, il faut utiliser, en plus, une méthode contraceptive mécanique. Si un comprimé a été oublié au cours de la première semaine d'utilisation de Desonur et qu'un rapport sexuel a eu lieu la semaine précédente, il faut envisager l'éventualité d'une grossesse.
+
+Conduite à tenir en cas de vomissements
+
+S'il se produit des vomissements pendant les 3-4 heures suivant la prise, le principe actif risque ne pas être totalement résorbé. Dans un tel cas, suivre les instructions mentionnées au paragraphe «Conduite à tenir en cas d'oubli de la prise d'un comprimé». Pour pouvoir conserver le schéma de prise habituel, il faut prélever le comprimé pelliculé supplémentaire nécessaire dans une plaquette de réserve. Si les vomissements durent plus de 3-4 heures après la prise, il faut utiliser d'autres méthodes contraceptives.
+
+Instructions spéciales pour la posologie
+
+Fillettes et adolescentes: L'efficacité et la sécurité d'emploi de Désogestrel 75 µg ont été étudiées chez des femmes adultes. Si Desonur est indiqué pour des adolescentes, la dose recommandée est la même que chez l'adulte. Desonur n'est pas indiqué chez les fillettes avant la puberté.
+
+Patientes âgées: Desonur n'est pas indiqué après la ménopause.
+
+Insuffisance rénale: Desonur n'a pas été étudié chez les femmes souffrant d'insuffisance rénale et aucune recommandation posologique ne peut être émise.
+
+Insuffisance hépatique: Desonur ne doit pas être utilisé par les femmes souffrant d'insuffisance hépatique.
+
+Contre-indications
+
+·Tumeurs malignes, connues ou suspectées (par exemple des organes génitaux ou du sein), sensibles aux hormones sexuelles
+
+·Hémorragies vaginales d'origine indéterminée
+
+·Tumeurs hépatiques bénignes ou malignes, présentes ou passées
+
+·Maladie hépatique grave présente ou passée, tant qu'il persiste des anomalies des paramètres fonctionnels hépatiques
+
+·Troubles thromboemboliques veineux aigus
+
+·Grossesse certaine ou suspectée
+
+·Hypersensibilité au principe actif ou à l'un des composants de Desonur
+
+Mises en garde et précautions
+
+Avant la première utilisation ou une reprise de l'utilisation de Desonur, le médecin doit relever soigneusement les antécédents (y compris les antécédents familiaux) et pratiquer un examen clinique général et gynécologique, en veillant tout particulièrement aux contre-indications et précautions. Il faut exclure l'éventualité d'une grossesse. Avant de prescrire Desonur, il faut éclaircir les troubles des règles, tels qu'une oligoménorrhée ou une aménorrhée. Il faut fixer la fréquence et la nature de ces examens conformément aux recommandations suisses en matière de gynécologie et en tenant compte de la situation individuelle de la patiente. Ils doivent toujours comprendre une mesure de la pression artérielle, un examen des seins, de l'abdomen et des organes pelviens, y compris frottis cervical systématique.
+
+Motifs imposant l'arrêt immédiat de Desonur
+
+En cas de survenue de l'une des contre-indications mentionnées ci-dessus et d'apparition de l'une des situations citées ci-après, le médicament doit être immédiatement arrêté et un médecin doit être consulté:
+
+·croissance de tumeurs hormonodépendantes (par exemple, myomes), formellement imputable au traitement
+
+·apparition de maladies hépatiques s'accompagnant d'anomalies des paramètres de la fonction hépatique
+
+·apparition d'un ictère, d'une hépatite anictérique ou d'un prurit généralisé
+
+·premiers signes d'une maladie thrombo-embolique veineuse (par exemple douleurs lancinantes lors de la respiration ou de la toux de cause obscure, essoufflement, douleur et sensation d'oppression dans le thorax, douleurs vives ou gonflement d'une jambe)
+
+·première apparition de céphalées migraineuses ou augmentation de la fréquence de maux de tête d'intensité inhabituelle
+
+·troubles aigus de la vision, de l'audition ou de l'élocution et autres déficits sensoriels
+
+·augmentation importante de la pression artérielle
+
+·recrudescence de crises d'épilepsie
+
+·états dépressifs graves
+
+·grossesse avérée ou suspectée
+
+·immobilisation prolongée (par exemple après un accident ou une intervention chirurgicale majeure; arrêter la prise 4-6 semaines avant une opération planifiée)
+
+S'il existe l'une des situations décrites ci-après, il faut mettre en balance, cas par cas, le bénéfice attendu du progestatif et les risques possibles et en discuter avec la femme avant que celle-ci opte pour Desonur. Il faut dire à la patiente de consulter son médecin si l'une ou plusieurs des situations énumérées ci-dessous survient/surviennent pour la première fois ou s'aggrave/s'aggravent.
+
+Pathologies tumorales
+
+Le risque de cancer du sein augmente avec l'âge. Pendant l'utilisation de contraceptifs hormonaux combinés (CHC), le risque de diagnostic de cancer du sein est légèrement augmenté. Après l'arrêt de la prise des CHC, ce risque, augmenté, diminue de façon continue en l'espace de 10 ans. Le risque ne dépend pas de la durée d'utilisation, mais de l'âge de l'utilisatrice. Le nombre prévisible de cas diagnostiqués pour 10'000 femmes utilisant des CHC estro-progestatifs (jusqu'à 10 ans après l'arrêt de la prise) comparé au nombre prévisible pour les femmes n'ayant jamais utilisé de CHC pendant la même période a été calculé. Le tableau ci-après présente les résultats, par tranche d'âge:
+
+|  |  |  |
+| --- | --- | --- |
+| Tranche d'âge | Cas prévisibles chez les utilisatrices de CHC | Cas prévisibles chez les non-utilisatrices |
+| 16-19 ans | 4,5 | 4 |
+| 20-24 ans | 17,5 | 16 |
+| 25-29 ans | 48,7 | 44 |
+| 30-34 ans | 110 | 100 |
+| 35-39 ans | 180 | 160 |
+| 40-44 ans | 260 | 230 |
+
+ 
+
+Il se peut que le risque encouru par les utilisatrices de produits purement progestatifs tels que Desonur soit comparable au risque encouru par les utilisatrices de CHC estro-progestatifs, mais les preuves concernant des produits purement progestatifs sont moins concluantes. Etant donné que les cancers du sein sont relativement rares chez les femmes de moins de 40 ans, le nombre supplémentaire de cancers du sein diagnostiqués chez les utilisatrices de contraceptifs oraux est faible par rapport au risque global d'apparition d'un cancer du sein. Chez les femmes qui avaient utilisé un CHC, les cancers du sein étaient généralement moins évolués, au moment du diagnostic, que chez les femmes qui n'avaient jamais utilisé de CHC. Cette augmentation du risque chez les utilisatrices de CHC pourrait s'expliquer par un diagnostic précoce, par des effets biologiques des CHC ou par une association des deux facteurs.
+
+Après l'utilisation de principes actifs hormonaux tels que celui contenu dans Desonur, on a observé, rarement, des tumeurs bénignes du foie et encore plus rarement des tumeurs malignes du foie, qui, dans quelques cas, ont provoqué des hémorragies intra-abdominales engageant le pronostic vital. S'il survient des douleurs abdominales intenses, une augmentation du volume du foie ou des signes d'hémorragie intra-abdominale, il faut envisager l'éventualité d'une tumeur hépatique dans le diagnostic différentiel.
+
+Evénements thromboemboliques
+
+Des études épidémiologiques montrent une augmentation du risque de maladies thromboemboliques veineuses et artérielles (par exemple, infarctus du myocarde, accident vasculaire cérébral, thrombose veineuse profonde et embolie pulmonaire) lors de l'utilisation de contraceptifs hormonaux combinés. On ne connaît pas la signification clinique de ces résultats pour l'emploi du désogestrel à titre contraceptif sans association à une composante estrogénique. C'est pourquoi il faut arrêter la prise de Desonur en cas de survenue d'une thrombose. Desonur doit également être arrêté pendant une immobilisation prolongée en raison d'une intervention chirurgicale ou d'une maladie. Il faut avertir les femmes qui ont des antécédents de maladies thromboemboliques du risque de réapparition de tels événements.
+
+Cycle menstruel
+
+Pendant l'utilisation de produits purement progestatifs, les règles peuvent devenir plus fréquentes ou plus longues. Il se peut également que les règles ne surviennent plus qu'occasionnellement ou disparaissent totalement (voir «Effets indésirables»). Cela peut entraîner une diminution de l'observance du traitement ou inciter les femmes à refuser cette méthode contraceptive. Pour améliorer l'acceptabilité de ces modifications des règles, il faut soigneusement informer à ce propos les femmes qui optent pour Desonur.
+
+S'il apparaît des saignements très fréquents ou irréguliers, il faut envisager d'adopter une autre méthode contraceptive. En cas d'hémorragies vaginales irrégulières persistantes, il faut exclure l'existence d'une maladie maligne. En cas d'aménorrhée, il faut déterminer si les comprimés pelliculés ont été pris selon les modalités recommandées, et effectuer un test de grossesse. En cas de grossesse, il faut arrêter la prise de Desonur.
+
+Grossesse extra-utérine
+
+Le risque de grossesse ectopique est plus élevé avec les produits purement progestatifs classiques que lors de l'utilisation de contraceptifs hormonaux combinés. Ce phénomène a été attribué aux ovulations fréquentes et au ralentissement du péristaltisme tubaire sous traitement par des préparations purement progestatives. Bien que Desonur inhibe le plus souvent l'ovulation, il faut envisager l'éventualité d'une grossesse ectopique dans le diagnostic différentiel en cas de symptômes abdominaux correspondants (par exemple, aménorrhée, douleurs abdominales).
+
+Troubles dépressifs
+
+Les dépressions et humeurs dépressives sont connues comme étant des effets indésirables potentiels lors de l'utilisation d'hormones sexuelles, y compris de contraceptifs hormonaux (voir aussi la rubrique «Effets indésirables»). De tels troubles peuvent survenir peu de temps après le début du traitement. Une dépression peut être grave et représente un facteur de risque de suicide ou de comportement suicidaire. Les utilisatrices de contraceptifs hormonaux doivent donc être informées des symptômes possibles de troubles dépressifs. Il faut impérativement conseiller à l'utilisatrice de s'adresser immédiatement à un médecin si elle remarque des fluctuations d'humeur ou d'autres symptômes de dépression lorsqu'elle utilise un contraceptif. Les utilisatrices ayant des antécédents de dépression sévère doivent être surveillées attentivement. En cas de réapparition d'états dépressifs graves au cours de l'utilisation de Desonur, le traitement doit être interrompu.
+
+Réduction de l'efficacité
+
+L'efficacité de Desonur peut être compromise par l'oubli de la prise des comprimés pelliculés et par des troubles gastro-intestinaux (voir «Posologie/Mode d'emploi»). Il en va de même en cas d'utilisation concomitante de médicaments qui réduisent la concentration plasmatique de l'étonogestrel, le métabolite actif du désogestrel (voir «Interactions»).
+
+Autres précautions
+
+·Comme avec tous les contraceptifs hormonaux faiblement dosés, une maturation folliculaire est possible et le follicule peut parfois devenir plus gros que lors d'un cycle normal. En général, ces follicules hypertrophiques disparaissent spontanément. Ils sont souvent asymptomatiques, mais sont parfois associés à de légères douleurs abdominales et exigent, rarement, une intervention chirurgicale.
+
+·Bien qu'une influence sur la résistance périphérique à l'insuline et sur la tolérance au glucose soit possible lors de l'utilisation de progestatifs, aucune modification du schéma thérapeutique ne semble nécessaire chez les diabétiques utilisant des produits purement progestatifs. Il faut néanmoins étroitement surveiller les diabétiques pendant les premiers mois de la prise de Desonur.
+
+·Il faut arrêter Desonur si une hypertension artérielle persistante se développe pendant la prise de Desonur, ou si une augmentation significative de la tension artérielle ne répond pas à un traitement hypotenseur adéquat.
+
+·En cas d'apparition de troubles de la fonction hépatique, il faut consulter un spécialiste.
+
+·Pendant l'utilisation de Desonur, les taux sériques d'estradiol diminuent à des valeurs correspondant à celles enregistrées en début de phase folliculaire. Pour l'instant, on ignore si cette modification a des incidences cliniques quelconques du point de vue du métabolisme minéral osseux.
+
+·Pendant la grossesse comme pendant l'utilisation de stéroïdes sexuels, on a décrit les phénomènes suivants, pour lesquels une relation avec l'utilisation d'un progestatif n'est cependant pas démontrée: ictère et/ou prurit liés à une cholestase, lithiase biliaire; porphyrie; lupus érythémateux disséminé; syndrome hémolytique et urémique; chorée de Sydenham; herpes gestationis; perte d'audition due à une otospongiose; première apparition ou aggravation d'un angio-œdème héréditaire.
+
+·Occasionnellement, il peut survenir un chloasma, en particulier chez les femmes qui ont des antécédents de chloasma gravidique. Les femmes prédisposées doivent éviter l'exposition à la lumière solaire et autres rayons ultraviolets pendant l'utilisation de Desonur.
+
+Il faut signaler à l'utilisatrice que les produits tels que Desonur ne protègent pas contre une infection par le VIH (sida) ou contre d'autres maladies sexuellement transmissibles.
+
+Desonur contient moins de 70 mg de lactose. Toutefois, les femmes présentant une rare intolérance héréditaire au galactose, un déficit total en lactase ou une malabsorption du glucose-galactose, ne doivent pas prendre ce médicament.
+
+Interactions
+
+Remarque: Il convient de consulter les informations professionnelles des médicaments utilisés en concomitance afin d'exclure toute interaction potentielle.
+
+Les interactions suivantes ont été décrites dans la littérature (principalement avec des contraceptifs hormonaux combinés, mais aussi dans des cas isolés avec des contraceptifs progestatifs).
+
+Influence d'autres médicaments sur la pharmacocinétique de Desonur
+
+Inducteurs enzymatiques
+
+Des interactions entre des contraceptifs hormonaux et des médicaments ou produits phytothérapeutiques qui induisent des enzymes microsomaux (en particulier le cytochrome P450) et peuvent ainsi provoquer une augmentation de la clairance des hormones sexuelles peuvent entraîner une baisse d'efficacité des contraceptifs hormonaux tels que Desonur ainsi que des saignements irréguliers. Ceci est notamment le cas des barbituriques, du bosentan, de la carbamazépine, du felbamate, du modafinil, de l'oxcarbazépine, de la phénytoïne, de la primidone, de la rifabutine, de la rifampicine et du topiramate, ainsi que des produits contenant du millepertuis (hypericum perforatum).
+
+Une induction enzymatique peut déjà apparaître après quelques jours de traitement. L'induction enzymatique maximale est généralement observée après 2-3 semaines et peut perdurer pendant au moins 4 semaines ou plus après l'arrêt du traitement.
+
+Quand des femmes sont traitées pendant une courte durée par l'un de ces médicaments, il faut leur demander d'utiliser temporairement un contraceptif non hormonal en plus de Desonur ou de choisir un autre type de contraception. La méthode barrière doit être employée pendant l'utilisation concomitante des médicaments et pendant les 28 jours suivant la fin de ce traitement.
+
+En cas de traitement prolongé par des médicaments qui provoquent une induction des enzymes dans le foie, il faut utiliser d'autres méthodes contraceptives (non hormonales).
+
+On sait également que différents inhibiteurs de la protéase du VIH/VHC (par exemple, nelfinavir, bocéprévir, télaprévir) et inhibiteurs non nucléosidiques de la transcriptase inverse (tels qu'éfavirenz [voir ci-après], névirapine) et leurs associations peuvent entraîner une diminution ou une augmentation des concentrations plasmatiques des progestatifs. Ces modifications peuvent être cliniquement significatives dans certains cas.
+
+Par exemple, l'influence d'une thérapie contenant de l'éfavirenz sur la pharmacocinétique d'un implant à base d'étonogestrel a fait l'objet d'une étude publiée. Chez les patients séropositifs (VIH) sous traitement antirétroviral, la Cmax de l'étonogestrel était réduite de 54% et l'AUC de 63% par rapport aux femmes qui ne recevaient pas ce traitement. Les inhibiteurs de la protéase tels que le ritonavir ou le nelfinavir (y compris leurs associations) sont connus comme étant des inhibiteurs puissants du CYP3A4, mais peuvent tout de même présenter des propriétés d'induction enzymatique en cas d'utilisation concomitante avec des hormones stéroïdiennes, et ainsi réduire la concentration plasmatique des progestatifs.
+
+Inhibiteurs enzymatiques
+
+Les inhibiteurs puissants et modérés du CYP3A4 tels que les antifongiques azolés (itraconazol, voriconazol, posaconazol, fluconazol), les antibiotiques macrolides (clarithromycine, érythromycine), le diltiazem, le vérapamil et le jus de pamplemousse peuvent augmenter les concentrations plasmatiques des progestatifs et ainsi augmenter la fréquence des effets indésirables.
+
+Influence sur la résorption gastro-intestinale
+
+Le charbon activé réduit la résorption des stéroïdes. Par conséquent, la prise concomitante de charbon activé peut diminuer l'effet contraceptif de Desonur. Dans de tels cas, il faut procéder comme décrit dans «Conduite à tenir en cas d'oubli de la prise d'un comprimé».
+
+Influence des contraceptifs hormonaux sur la pharmacocinétique d'autres médicaments
+
+Les contraceptifs hormonaux peuvent, à travers différents mécanismes d'interaction, aussi influer sur la pharmacocinétique de certains autres médicaments. Ils peuvent inhiber les enzymes hépatiques microsomaux ou induire la conjugaison hépatique, en particulier la glucuroconjugaison. Par conséquent, les concentrations plasmatiques et tissulaires d'autres médicaments peuvent être soit augmentées (par exemple cyclosporine) soit diminuées (par exemple lamotrigine, voir ci-après). En outre, l'effet pharmacologique des classes de médicaments suivantes peut être influencé: analgésiques, antidépresseurs, antidiabétiques, antipaludéens, certaines benzodiazépines, certains bêtabloquants, corticostéroïdes, anticoagulants oraux et théophylline. Les modifications de la concentration plasmatique résultant de ces interactions ne sont pas toujours cliniquement significatives.
+
+Une étude d'interaction menée avec la lamotrigine (antiépileptique) et un contraceptif oral combiné (30 µg d'éthinylestradiol/150 µg de lévonorgestrel) a montré une augmentation cliniquement significative de la clairance de la lamotrigine, avec une réduction significative correspondante de la concentration plasmatique de lamotrigine lorsque ces médicaments étaient co-administrés. Une telle diminution des concentrations plasmatiques peut s'accompagner d'un contrôle réduit des crises. On ignore dans quelle mesure ces conclusions sont transposables à un progestatif pur tel que Desonur. Si une patiente prenant de la lamotrigine commence un traitement par Desonur, un ajustement de la dose de lamotrigine peut être nécessaire, et la concentration de lamotrigine doit être étroitement surveillée au début du traitement. Il convient de tenir également compte d'une potentielle augmentation significative de la concentration de lamotrigine (éventuellement du domaine toxique) à l'arrêt du contraceptif hormonal.
+
+Grossesse, allaitement
+
+L'usage de ce médicament est contre-indiqué chez les femmes enceintes. Il faut exclure l'éventualité d'une grossesse avant le début de l'utilisation du médicament. En cas de début ou de suspicion de grossesse, il faut immédiatement arrêter la prise de Desonur et consulter le médecin. Les expérimentations animales ont montré que de très fortes doses de substances contenant des progestatifs ont un effet virilisant sur les fœtus femelles.
+
+Des études épidémiologiques de grande ampleur n'ont pas montré d'augmentation du risque de malformation congénitale chez les enfants dont la mère avait utilisé un CHC estro-progestatif avant la grossesse; en outre, chez des femmes qui avaient utilisé des contraceptifs purement progestatifs alors qu'elles étaient enceintes sans le savoir, aucun effet tératogène n'a été observé. Les données de pharmacovigilance portant sur différents contraceptifs oraux combinés contenant du désogestrel (l'étonogestrel est un métabolite du désogestrel) ont également montré l'absence d'augmentation du risque.
+
+Desonur n'a pas d'influence néfaste sur la quantité ou la qualité du lait maternel (concentration en protéines, lactose ou lipides). Cependant, après l'administration orale de désogestrel à des femmes qui allaitent, une faible quantité du métabolite actif étonogestrel est excrétée dans le lait maternel (rapport lait/sérum de 0,37-0,55). Sur la base d'une absorption moyenne de lait de 150 ml/kg, l'absorption moyenne d'étonogestrel par le nouveau-né est d'environ 0,01-0,05 µg/kg et par jour.
+
+Il existe un nombre limité de données à long terme sur des enfants dont les mères ont commencé la prise de Desogestrel 75 µg entre la 4e et la 8e semaine après la naissance. Les nourrissons ont été allaités pendant 7 mois et observés jusqu'à l'âge de 1,5 ans (n=32) ou 2,5 ans (n=14). L'évaluation des données relatives à la taille et au développement physique et psychomoteur n'a montré aucune différence par rapport aux nourrissons dont les mères avaient utilisé un dispositif intra-utérin en cuivre (stérilet en cuivre). Il faut néanmoins soigneusement surveiller le développement et la croissance de l'enfant allaité dont la mère prend Desonur. Sur la base des données disponibles, Desogestrel 75 µg peut être utilisé pendant l'allaitement.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Compte tenu du profil pharmacodynamique, on suppose que Desonur n'a pas d'influence ou du moins pas d'influence notable sur l'aptitude à la conduite de véhicules et à l'utilisation de machines.
+
+Effets indésirables
+
+Les effets indésirables les plus sévères des contraceptifs hormonaux sont déjà décrits sous la rubrique «Mises en garde et précautions» (voir là-bas).
+
+En dehors des irrégularités des règles, les effets secondaires les plus fréquemment décrits (>2,5%) pendant les études cliniques ont été l'acné, les modifications de l'humeur, les douleurs mammaires, les nausées et la prise de poids.
+
+Les effets indésirables observés lors de l'utilisation de Desogestrel 75 µg dans le cadre d'études cliniques et/ou de la surveillance post-commercialisation sont énumérés ci-dessous par systèmes d'organes (MedDRA) et par fréquence.
+
+Les catégories de fréquence suivantes sont utilisées:
+
+Très fréquents (≥1/10); fréquents (>1/100, <1/10); occasionnels (>1/1000, <1/100), rares (>1/10000, <1/1000), inconnus (basé principalement sur les rapports de surveillance spontanée du marché, la fréquence exacte ne peut être estimée).
+
+Infections et infestations
+
+Occasionnels: Infections vaginales.
+
+Affections du système immunitaire
+
+Inconnus: Réactions d'hypersensibilité (y compris réactions anaphylactiques et angio-œdème).
+
+Troubles du métabolisme de la nutrition
+
+Fréquents: Prise de poids.
+
+Affections psychiatriques
+
+Fréquents: Fluctuations de l'humeur, humeur dépressive, diminution de la libido.
+
+Affections du système nerveux
+
+Fréquents: Céphalées.
+
+Affections oculaires
+
+Occasionnels: Problèmes lors du port de lentilles de contact.
+
+Affections gastro-intestinales
+
+Fréquents: Nausées.
+
+Occasionnels: Vomissements.
+
+Affections de la peau et tissu sous-cutané
+
+Fréquents: Acné.
+
+Occasionnels: Alopécie.
+
+Rares: Rash, urticaire, érythème noueux.
+
+Affections des organes de reproduction et du seins
+
+Très fréquents: Hémorragies irrégulières (40-50%).
+
+Fréquents: Aménorrhée, douleurs mammaires.
+
+Occasionnels: Dysménorrhée, kystes de l'ovaire.
+
+Inconnus: Grossesses ectopiques, sécrétions des glandes mammaires.
+
+Troubles généraux
+
+Occasionnels: Fatigue.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+On n'a jamais signalé d'effets néfastes graves après un surdosage. Les symptômes possibles en cas de surdosage sont les nausées, les vomissements et - chez les jeunes filles – de légers saignements vaginaux. On ne connaît pas d'antidote; au besoin, instaurer un traitement symptomatique.
+
+Propriétés/Effets
+
+Code ATC
+
+G03AC09
+
+Mécanisme d'action/Pharmacodynamique
+
+Desonur est un contraceptif oral dont le principe actif est un progestatif, le désogestrel (DSG). Dans le corps, le DSG est transformé en son métabolite actif, l'étonogestrel (ENG, = 3-cétodésogestrel) qui a une forte affinité de fixation pour les récepteurs de la progestérone (par exemple dans le myomètre).
+
+L'effet contraceptif de Desonur repose essentiellement sur une inhibition de l'ovulation. En plus de cette inhibition de l'ovulation, Desonur induit aussi une augmentation de la viscosité de la glaire cervicale, ce qui inhibe le passage des spermatozoïdes.
+
+Désogestrel 75 µg induit une diminution du taux plasmatique d'estradiol comparable à celui de la phase folliculaire précoce.
+
+Aucun effet cliniquement significatif n'a été observé sur le métabolisme des hydrates de carbone ou des lipides, ni sur l'hémostase.
+
+Efficacité clinique
+
+L'indice de Pearl est de 0,4 pour Desogestrel 75 µg et est donc comparable à celui normalement constaté pour les contraceptifs oraux combinés.
+
+Pharmacocinétique
+
+Absorption
+
+Après la prise de Desogestrel 75 µg, le DSG est rapidement et totalement résorbé et transformé en ENG. A l'état d'équilibre, les concentrations plasmatiques maximales d'ENG sont d'environ 640 pg/ml et sont atteintes environ 1,8 heure après la prise du comprimé.
+
+La biodisponibilité de l'ENG est d'environ 70%.
+
+Distribution
+
+L'ENG est lié à hauteur de 95,5-99% aux protéines plasmatiques, essentiellement à l'albumine et aussi, à moindre degré, à la SHBG. Le volume de distribution de l'ENG est de 465 l. L'ENG est excrété dans le lait maternel.
+
+Métabolisme
+
+Le DSG est rapidement et complètement métabolisé en étonogestrel (ENG) actif dans la muqueuse intestinale et lors du premier passage hépatique, par hydroxylation (catalysée par l'iso-enzyme CYP2C9) et déshydratation. L'ENG est hydroxylé (réaction catalysée par l'iso-enzyme CYP3A4), réduit et sulfo- et glucuroconjugué.
+
+Élimination
+
+La demi-vie d'élimination de l'ENG est en moyenne d'environ 30 heures et il n'existe pas de différence selon qu'il s'agit d'une prise unique ou de prises répétées. L'état d'équilibre plasmatique est atteint après 4-5 jours. Après administration intraveineuse, la clairance plasmatique est d'environ 10 l/h.
+
+L'excrétion de l'ENG et de ses métabolites, sous forme de stéroïdes libres ou de conjugués, se fait essentiellement dans les urines et dans les selles, dans la proportion de 1,5:1.
+
+Cinétique pour certains groupes de patients
+
+Il n'existe pas d'informations concernant la pharmacocinétique chez les femmes souffrant d'insuffisance hépatique ou rénale.
+
+Données précliniques
+
+Les études précliniques menées avec des produits purement progestatifs pour évaluer la toxicité après administration répétée, la génotoxicité et le potentiel carcinogène n'ont pas montré de signes nets de risques particuliers pour l'être humain.
+
+Dans les expérimentations animales, des substances de type progestatif ont eu un effet embryolétal et ont induit, aux doses fortes, une virilisation des fœtus femelles. Cependant, des études anciennes concernant le désogestrel n'ont pas montré d'effet virilisant.
+
+Les études menées chez le rat, la souris et le lapin pour évaluer la toxicité sur la reproduction n'ont pas montré de signe d'effet tératogène. Pour les risques chez l'être humain, voir le paragraphe «Grossesse, Allaitement».
+
+Remarques particulières
+
+Influence sur les méthodes de diagnostic
+
+Des études concernant les contraceptifs oraux estro-progestatifs ont montré que les stéroïdes contraceptifs peuvent influer sur les résultats de certains examens biologiques, notamment paramètres biochimiques de la fonction hépatique, thyroïdienne, surrénalienne et rénale, taux plasmatiques de protéines (de transport) (par exemple globuline fixant les corticostéroïdes), lipides et fractions de lipoprotéines, paramètres du métabolisme glucidique ainsi que coagulation et fibrinolyse. En général, ces modifications restent comprises dans la fourchette normale. On ignore si elles surviennent également avec les contraceptifs purement progestatifs.
+
+Stabilité
+
+Ce médicament ne doit être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Tenir hors de portée des enfants. Conserver les comprimés pelliculés de Desonur à température ambiante (15-25 °C).
+
+Numéro d’autorisation
+
+66179 (Swissmedic).
+
+Présentation
+
+Emballages de 1× 28, 3× 28 et 6× 28 comprimés pelliculés [B]
+
+Titulaire de l’autorisation
+
+Labatec Pharma SA, 1217 Meyrin (GE).
+
+Mise à jour de l’information
+
+Mars 2020.

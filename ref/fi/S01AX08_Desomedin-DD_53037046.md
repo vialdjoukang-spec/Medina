@@ -1,0 +1,183 @@
+---
+titre: "Desomedin® DD"
+titulaire: "Bausch & Lomb Swiss AG"
+atc: S01AX08
+substances: "Hexamidini diisetionas"
+autorisation_swissmedic: 53037046
+date_version: 2026-06-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/4d550a73d81141f2a32ea29b0573e94d-fr.html
+---
+
+Desomedin® DD
+
+Bausch & Lomb Swiss AG
+
+Composition
+
+Principes actifs
+
+Hexamidini diisetionas.
+
+Excipients
+
+Natrii chloridum, acidum boricum et borax (corresp. 2,188 mg/ml bore), aqua purificata.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Collyre en solution.
+
+Hexamidini diisetionas 1 mg/1 ml.
+
+Indications/Possibilités d’emploi
+
+Conjonctivites et kératoconjonctivites microbiennes. Dacryocystites et infections des voies lacrymales. Désinfections pré et postopératoires.
+
+Posologie/Mode d’emploi
+
+Adultes
+
+Instiller 1 goutte dans l'œil 4-6 fois par jour. Il convient d'utiliser chaque jour un nouveau flacon unidose, de le refermer immédiatement après chaque emploi et de le jeter à la fin de la journée.
+
+La durée du traitement ne dépasse habituellement pas 8 jours. S'il est nécessaire d'administrer le collyre plus longtemps, le traitement doit être réévalué. La préparation ne doit pas être utilisée pendant plus de 2-3 jours en automédication, sans contrôle médical ultérieur.
+
+Enfants et adolescents
+
+Aucune étude clinique n'ayant été réalisée chez l'enfant et l'adolescent, l'utilisation est déconseillée chez ces patients.
+
+Après l'instillation de Desomedin DD, l'absorption systémique peut être réduite par une occlusion du canal lacrymonasal pendant 2 minutes (les paupières étant fermées).
+
+Contre-indications
+
+Hypersensibilité aux benzamidines ou à l'un des composants du médicament.
+
+Mises en garde et précautions
+
+Risque de sélection de souches résistantes. L'efficacité lors de kératites bactériennes n'est pas prouvée.
+
+Remarque pour les porteurs de lentilles de contact: il ne faut pas porter de lentilles de contact pendant le traitement par Desomedin DD.
+
+En cas de traitement concomitant par d'autres préparations oculaires, attendre 15 minutes entre les instillations.
+
+Ce médicament contient 0,09 mg de bore par goutte, ce qui correspond à 2,188 mg/ml.
+
+Ce médicament ne doit pas être administré à un enfant de moins de 2 ans sans avis médical, car il contient du bore et peut nuire à sa fertilité future.
+
+Interactions
+
+Aucune interaction n'est connue à ce jour.
+
+Grossesse, allaitement
+
+Il n'existe pas d'études contrôlées concernant l'emploi de l'hexamidine chez l'animal et chez la femme enceinte. Dans ces conditions, ce collyre ne doit être utilisé qu'avec précaution. Il n'existe aucune donnée concernant le passage du médicament dans le lait maternel. Ce médicament ne doit donc pas être utilisé pendant l'allaitement.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Juste après l'administration, le collyre peut diminuer passagèrement l'acuité visuelle et donc affecter la capacité de réaction lors de la conduite d'un véhicule ou de l'utilisation de machines. Cette gêne disparaît habituellement quelques minutes après l'utilisation du médicament.
+
+Effets indésirables
+
+Les effets indésirables doivent être présentés selon la classification des classes de systèmes d'organes MedDRA et par fréquence des effets indésirables selon la convention:
+
+très fréquents (≥1/10),
+
+fréquents (≥1/100 à <1/10),
+
+occasionnels (≥1/1000 à <1/100),
+
+rares (≥1/10 000 à <1/1000),
+
+très rares (<10 000), ou
+
+fréquence inconnue (ne peut être estimée sur la base des données disponibles).
+
+Affections oculaires
+
+Fréquence inconnue: réactions d'hypersensibilité locale, telles qu'irritation ou sensibilité des yeux.
+
+Affections du système immunitaire
+
+Fréquence inconnue: réaction allergique
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Aucun cas de surdosage n'est connu à ce jour. Si une quantité excessive de Desomedin DD a été instillée dans l'œil, rincer à l'eau tiède.
+
+Propriétés/Effets
+
+Code ATC
+
+S01AX08
+
+Mécanisme d'action
+
+Collyre anti-infectieux. L'hexamidine est un antiseptique antibactérien cationique, appartenant à la famille des diamidines. In vitro, l'hexamidine est efficace contre les bactéries à Gram positif ainsi que contre les deux formes (trophozoïtes et kystes) d'amibes du genre «Acanthamoeba» et n'est pas inhibée par le pus, le sérum et les débris organiques.
+
+Pharmacodynamique
+
+Un large spectre d'agents pathogènes est associé à la conjonctivite bactérienne chez l'adulte et l'enfant. Les données de la littérature disponibles montrent que, comme chez l'adulte, les agents pathogènes les plus fréquents de la conjonctivite bactérienne chez l'enfant sont les bactéries gram-positives (c.-à-d. Staphylococci et Streptococci spp.).
+
+Efficacité clinique
+
+Pas de données disponibles.
+
+Pharmacocinétique
+
+Absorption
+
+Une résorption systémique du principe actif est possible. Étant donné les faibles quantités de principe actif administrées, le risque d'effets indésirables systémiques est faible.
+
+Distribution
+
+Pas de données disponibles.
+
+Métabolisme
+
+Pas de données disponibles.
+
+Élimination
+
+Pas de données disponibles.
+
+Données précliniques
+
+Aucune donnée préclinique pertinente n'est disponible.
+
+Remarques particulières
+
+Incompatibilités
+
+L'hexamidine, comme toute substance cationique, est incompatible avec les substances anioniques.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Stabilité après ouverture
+
+Après ouverture du sachet aluminium, les flacons unidoses se conservent pendant 30 jours. Utiliser chaque jour un nouveau flacon unidose, le refermer immédiatement après chaque emploi et le jeter à la fin de la journée.
+
+Remarques particulières concernant le stockage
+
+Conserver à température ambiante (15-25 °C), dans l'emballage d'origine. Tenir hors de portée des enfants.
+
+Remarques concernant la manipulation
+
+Pour préserver la stérilité du collyre, l'extrémité du flacon ne doit pas être mise en contact avec les mains ou avec l'œil.
+
+Numéro d’autorisation
+
+53037 (Swissmedic).
+
+Présentation
+
+Desomedin DD collyre en solution 10 × 0,6 ml (refermable). (B)
+
+Titulaire de l’autorisation
+
+Bausch & Lomb Swiss AG, Zug
+
+Mise à jour de l’information
+
+Juin 2026

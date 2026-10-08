@@ -1,0 +1,534 @@
+---
+titre: "Enalapril Spirig HC®"
+titulaire: "Spirig HealthCare AG"
+atc: C09AA02
+substances: "n.d."
+autorisation_swissmedic: 62149
+date_version: 2024-12-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/3d9fcf4357954b5fae87e64faeb8553a-fr.html
+---
+
+Enalapril Spirig HC®
+
+Spirig HealthCare AG
+
+Composition
+
+Principe actif
+
+Maléate d'énalapril.
+
+Excipients
+
+Comprimé à 5 mg d'énalapril: lactose monohydraté, amidon de maïs, hydrogénocarbonate de sodium, hydroxypropylcellulose, talc, stéarate de magnésium.
+
+Comprimé à 10 mg d'énalapril: lactose monohydraté, amidon de maïs, hydrogénocarbonate de sodium, talc, stéarate de magnésium, oxyde de fer rouge (E 172).
+
+Comprimé à 20 mg d'énalapril: lactose monohydraté, amidon de maïs, hydrogénocarbonate de sodium, talc, stéarate de magnésium, oxyde de fer jaune (E 172), oxyde de fer rouge (E 172).
+
+1 comprimé à 5 mg d'énalapril contient 129.8 mg de lactose monohydraté et 0.7 mg de sodium.
+
+1 comprimé à 10 mg d'énalapril contient 124.6 mg de lactose monohydraté et 1.4 mg de sodium.
+
+1 comprimé à 20 mg d'énalapril contient 117.8 mg de lactose monohydraté et 2.8 mg de sodium.
+
+Forme galénique et quantité de principe actif par unité
+
+Comprimé sécable (avec rainure de fragmentation, divisible) à 5 mg, 10 mg et 20 mg.
+
+Indications/Possibilités d’emploi
+
+·Tous les degrés de gravité de l'hypertension artérielle essentielle;
+
+·hypertension rénovasculaire;
+
+·traitement de l'insuffisance cardiaque symptomatique;
+
+·traitement de la dysfonction ventriculaire gauche asymptomatique avec une fraction d'éjection inférieure à 35%, et de ce fait, prévention de l'insuffisance cardiaque symptomatique.
+
+Posologie/Mode d’emploi
+
+La prise d'aliments n'influence pas la résorption d'Enalapril Spirig HC. Le produit peut donc être pris avant, pendant et après le repas.
+
+Hypertension essentielle
+
+La dose quotidienne initiale dans l'hypertension légère est de 10 mg; dans les hypertensions plus marquées, elle est de 20 mg. Le produit s'utilise en une prise par jour.
+
+La dose d'entretien est généralement de 1 comprimé à 20 mg par jour, à ajuster individuellement au cas par cas, sans dépasser une dose maximale de 40 mg par jour.
+
+Emploi chez les enfants et les adolescents
+
+La sécurité et l'efficacité des comprimés d'énalapril ont été examinées chez les enfants et des adolescents hypertendus âgés entre 1 mois et 16 ans.
+
+On ne dispose que de données limitées sur l'efficacité et la tolérance de l'emploi d'Enalapril Spirig HC chez les enfants d'un poids corporel se situant entre 20 kg et <50 kg (de plus de 6 ans environ). Chez les patients capables d'avaler des comprimés, la dose doit être adaptée individuellement à l'état du patient. La dose initiale recommandée est de 2,5 mg (½ comprimé d'Enalapril Spirig HC 5 mg) pour les patients d'un poids corporel se situant entre 20 kg et <50 kg et de 5 mg pour les patients d'un poids corporel de ≥50 kg.
+
+La posologie doit être choisie en fonction des besoins du patient, un maximum de 20 mg par jour chez les patients d'un poids corporel se situant entre 20 et <50 kg et de 40 mg par jour chez les patients d'un poids corporel ≥50 kg ne devant pas être dépassé.
+
+Enalapril Spirig HC n'est pas recommandé chez les nouveau-nés et les patients pédiatriques présentant un taux de filtration glomérulaire <30 ml/min/1,73 m², étant donné que l'on ne dispose pas de données pour ce groupe de patients.
+
+On dispose de données limitées sur la pharmacocinétique chez les enfants de plus de 2 mois (voir sous «Propriétés/Effets» et «Pharmacocinétique»).
+
+Sujets âgés
+
+Il peut arriver que les hypertendus âgés réagissent davantage à l'énalapril que les sujets plus jeunes; la posologie initiale ne devra donc généralement pas excéder 10 mg par jour. Il convient de veiller à ce que la posologie soit adaptée à la fonction rénale, car celle-ci est déterminante pour les paramètres pharmacocinétiques dans cette catégorie de malades (voir sous «Posologie lors d'insuffisance rénale»).
+
+Hypertension rénovasculaire
+
+La tension artérielle et la fonction rénale pouvant réagir de manière particulièrement sensible à l'inhibition de l'ECA chez ces patients, le traitement sera instauré avec une dose initiale réduite (p.ex. 5 mg ou moins). Ajuster ensuite la posologie en fonction des besoins du patient. En général, la dose optimale est de 1 comprimé à 20 mg par jour, pris une fois par jour.
+
+Utilisation concomitante de diurétiques dans l'hypertension
+
+Une hypotension symptomatique peut apparaître après la dose initiale d'Enalapril Spirig HC, surtout en cas de traitement préexistant par diurétiques. La prudence est donc de mise du fait de l'hypovolémie et de l'hyponatrémie potentielles chez ces patients. Cesser l'administration de diurétiques 2 ou 3 jours avant l'instauration du traitement par Enalapril Spirig HC. A défaut, Enalapril Spirig HC sera administré à une dose initiale réduite (5 mg ou moins), afin de permettre l'évaluation des premières réactions tensionnelles obtenues. La dose d'entretien sera ensuite adaptée en fonction des besoins individuels du patient.
+
+Posologie lors d'insuffisance rénale
+
+En général, les prises d'énalapril seront espacées et/ou la posologie sera réduite.
+
+|  |  |  |
+| --- | --- | --- |
+| Fonction rénale | Clairance de la créatinine | Posologie initiale |
+| Insuffisance légère | 31 à 80 ml/min | 5 à 10 mg/jour |
+| Insuffisance modérée | 11 à 30 ml/min | 2,5 à 5 mg/jour |
+| Insuffisance marquée (patients généralement dialysés)\*\* | 10 ml/min ou moins | 2,5 mg le jour  de la dialyse\* |
+
+ 
+
+\* L'énalaprilate est dialysable. Les jours sans dialyse, la dose sera choisie en fonction de la réaction tensionnelle.
+
+\*\* Voir sous «Mises en garde et précautions» – «Patients sous hémodialyse».
+
+Insuffisance cardiaque
+
+La dose initiale pour les patients souffrant d'insuffisance cardiaque symptomatique ou de dysfonction ventriculaire gauche asymptomatique sera de 2,5 mg (½ comprimé d'Enalapril Spirig HC 5 mg) et devra être administrée sous surveillance médicale stricte pour permettre de déterminer l'effet initial sur la tension. Lors du traitement de l'insuffisance cardiaque symptomatique, Enalapril Spirig HC peut être employé avec des diurétiques ou des digitalines.
+
+Une fois le traitement engagé avec succès, il convient d'augmenter les doses en fonction de la réponse du patient, jusqu'à la dose d'entretien usuelle de 20 mg. Celle-ci peut être administrée en une prise journalière unique ou en prises fractionnées. L'adaptation posologique peut être obtenue en l'espace de 2 à 4 semaines. Des symptômes résiduels d'insuffisance cardiaque peuvent nécessiter une adaptation posologique plus rapide.
+
+Une réduction de la mortalité a pu être démontrée avec ce schéma posologique chez les insuffisants cardiaques symptomatiques.
+
+La tension artérielle et la fonction rénale devraient être surveillées avant et après le traitement par Enalapril Spirig HC (voir sous «Mises en garde et précautions»), car des cas d'hypotension et (dans de rares cas) des troubles de la fonction rénale qui en ont découlé ont été observés.
+
+Dans la mesure du possible, les doses de diurétique devraient être réduites avant le début du traitement.
+
+La survenue d'une hypotension après la dose initiale d'Enalapril Spirig HC ne préjuge pas d'une réapparition de celle-ci lors d'un traitement au long cours par Enalapril Spirig HC et n'empêche pas la poursuite du traitement par le médicament.
+
+Il convient également de surveiller la kaliémie (voir sous «Interactions»).
+
+Contre-indications
+
+·Chez les patients présentant une hypersensibilité à l'un des composants du médicament.
+
+·chez les patients souffrant d'un angio-œdème héréditaire ou idiopathique ou chez ceux qui ont développé un œdème angioneurotique lors d'un traitement antérieur avec un inhibiteur de l'ECA ou avec un antagoniste du récepteur de l'angiotensine.
+
+·pendant le deuxième et le troisième trimestre de la grossesse.
+
+L'utilisation concomitante d'Enalapril Spirig HC et de médicaments contenant de l'aliskirène est contre-indiquée chez les patients souffrant de diabète ou d'insuffisance rénale (DFG <60 ml/min/1,73 m2).
+
+·Les inhibiteurs de l'ECA, y compris Enalapril Spirig HC, sont contre-indiqués en association avec le sacubitril/valsartan ou avec le racécadotril en raison du risque accru d'angio-œdèmes (voir «Mises en garde et précautions» et «Interactions»).
+
+Mises en garde et précautions
+
+Hypotension symptomatique
+
+De rares cas d'hypotension symptomatique ont été observés chez des sujets traités pour une hypertension non compliquée. Cette manifestation survient le plus souvent chez l'hypertendu présentant une hypovolémie, associée par exemple à l'administration antérieure de diurétiques, à un régime hyposodé ou à la dialyse, ou encore après des diarrhées et ou des vomissements (voir sous «Interactions» et «Effets indésirables»).
+
+L'hypotension symptomatique n'est pas rare en cas d'insuffisance cardiaque associée ou non à une insuffisance rénale. Elle peut s'observer essentiellement en cas d'insuffisance cardiaque sévère (caractérisée par des doses élevées de diurétiques de l'anse, une hyponatrémie et une insuffisance rénale fonctionnelle). Chez ces patients, une surveillance médicale étroite s'impose lors de l'instauration d'Enalapril Spirig HC, en cas d'ajustement posologique et/ou en cas d'utilisation complémentaire de diurétiques.
+
+Il en sera de même chez les patients atteints d'une cardiopathie ischémique ou de maladie cérébrovasculaire, chez lesquels une chute tensionnelle excessive peut provoquer un infarctus du myocarde ou une attaque cérébrale.
+
+En cas d'hypotension artérielle, le malade restera alité en position horizontale et une compensation volémique peut être requise par voie orale ou sous perfusions intraveineuses de soluté physiologique. En général, l'administration d'Enalapril Spirig HC peut être poursuivie après restitution d'une volémie et d'une tension artérielle satisfaisantes.
+
+Chez certains insuffisants cardiaques normotendus ou hypotendus, Enalapril Spirig HC peut induire une réduction supplémentaire de la tension systémique. Cette réaction prévisible ne nécessite généralement pas l'arrêt du traitement.
+
+En cas de symptômes d'hypotension, une réduction de la posologie ou l'arrêt des diurétiques et/ou d'Enalapril Spirig HC peut s'avérer nécessaire.
+
+Sténose aortique/cardiomyopathie hypertrophique
+
+Comme tous les vasodilatateurs, les inhibiteurs de l'ECA ne devraient être administrés qu'avec prudence à des patients présentant une obstruction dans la voie d'éjection du ventricule gauche.
+
+Insuffisance rénale
+
+Chez certains patients atteints d'insuffisance cardiaque, la survenue d'une hypotension sous Enalapril Spirig HC peut favoriser une aggravation de la fonction rénale. Des cas de défaillance rénale aiguë – généralement réversibles – ont été signalés dans ce contexte.
+
+Chez l'insuffisant rénal, une réduction de la posologie et/ou un espacement des prises peuvent être requis (voir sous «Posologie/Mode d'emploi»).
+
+Certains hypertendus dépourvus de signes d'affection rénale préexistante et placés sous traitement associant Enalapril Spirig HC et un diurétique ont présenté une légère élévation généralement transitoire de l'urémie et de la créatininémie. La réduction de la posologie et/ou l'arrêt des diurétiques et/ou d'Enalapril Spirig HC peut s'avérer nécessaire.
+
+«Double blocage» du système rénine-angiotensine-aldostérone
+
+Voir sous «Interactions».
+
+Hypertension rénovasculaire
+
+Enalapril Spirig HC peut être utilisé lorsqu'une intervention chirurgicale ne peut être envisagée, ou en phase préopératoire. En cas de sténose artérielle rénale bilatérale ou unilatérale, une augmentation du taux sanguin d'urée et une hypercréatininémie ont été relevées, mais ces réactions se sont avérées réversibles après arrêt du traitement. Ces manifestations s'observent plus particulièrement chez les insuffisants rénaux et sont attribuables au rôle fonctionnel de l'angiotensine II dans le maintien de la pression de filtration glomérulaire.
+
+Hypersensibilité/oedème de Quincke
+
+Dans de rares cas, les sujets traités par des inhibiteurs de l'ECA – y compris Enalapril Spirig HC – ont présenté un oedème de Quincke au niveau du visage, des extrémités, des lèvres, de la langue, de la glotte et/ou du larynx (voir également sous «Effets indésirables»). Dans de tels cas, cesser immédiatement l'administration d'Enalapril Spirig HC et placer le patient sous surveillance étroite jusqu'à disparition de l'oedème. Même en cas d'oedème limité à la langue, sans difficulté respiratoire, une surveillance prolongée s'impose, car le traitement par antihistaminiques et par corticostéroïdes peut s'avérer insuffisant.
+
+Dans de très rares cas, des décès ont été rapportés lors d'oedème angioneurotique accompagné d'un oedème du larynx et de la langue. Lorsque la langue, la glotte ou le larynx sont atteints, il existe un risque d'obstruction des voies respiratoires, en particulier chez les patients ayant subi une opération des voies respiratoires. Lorsque la langue, le larynx et la glotte sont touchés, il convient de mettre immédiatement en oeuvre des mesures thérapeutiques adéquates, pouvant inclure l'injection sous-cutanée d'une solution d'adrénaline 1:1000 (de 0,3 ml à 0,5 ml) et/ou des mesures destinées à garantir l'ouverture des voies respiratoires. Le patient doit faire l'objet d'une surveillance médicale étroite.
+
+Chez les patients noirs ayant reçu des inhibiteurs de l'ECA, une incidence plus élevée d'angiooedème par rapport à des patients non noirs a été rapportée.
+
+Les patients qui présentent dans leur anamnèse un épisode d'oedème de Quincke sans rapport avec un traitement par un inhibiteur de l'ECA (p.ex. dans le cadre d'un traitement à des antagonistes du récepteur de l'angiotensine II) peuvent être exposés à un risque plus élevé de développer un oedème de Quincke sous traitement par un inhibiteur de l'ECA (voir aussi sous «Contre-indications»).
+
+Lors de l'administration concomitante d'un inhibiteur de l'ECA et d'un inhibiteur de mTOR (mammalian target of rapamycin; p.ex. temsirolimus, sirolimus, évérolimus) ou d'un inhibiteur de la dipeptidylpeptidase 4 (inhibiteur de la DPP4), ce traitement pourrait exposer les patients à un risque accru d'angio-œdème.
+
+Compte tenu du risque d'angio-œdème, les inhibiteurs de l'ECA, y compris Enalapril Spirig HC, ne doivent pas être co-administrésen association avec le sacubitril/valsartan ou avec le racécadotril. Les patients recevant simultanément une thérapie par le sacubitril/valsartan peuvent présenter un risque accru d'angio-œdèmes. Un traitement par Enalapril Spirig HC ne doit pas être initié avant 36 heures après la dernière dose de l'association sacubitril/valsartan. Un traitement par le sacubitril/valsartan ne doit pas être instauré avant 36 heures après la prise de la dernière dose de la thérapie par Enalapril Spirig HC (voir «Contre-indications» et «Interactions»).
+
+Réactions anaphylactiques lors de la désensibilisation au venin d'hyménoptères
+
+Dans de rares cas, des réactions anaphylactiques potentiellement fatales sont apparues chez des patients traités par des inhibiteurs de l'ECA pendant une désensibilisation au venin d'insecte. Ces réactions ont pu être prévenues par une interruption provisoire du traitement par l'inhibiteur de l'ECA avant la désensibilisation. En outre, dans ces cas, l'inhibiteur de l'ECA ne doit en aucun cas être remplacé par un bêtabloquant. Dans de rares cas, une réaction anaphylactique a pu survenir suite à une piqûre d'insecte.
+
+Réactions anaphylactiques durant une LDL-aphérèse
+
+Dans de rares cas, des réactions anaphylactiques potentiellement fatales sont apparues chez des patients traités par des inhibiteurs de l'ECA durant une LDL-aphérèse au sulfate de dextrane. Ces réactions ont pu être évitées par l'interruption provisoire du traitement à l'inhibiteur de l'ECA avant la LDL-aphérèse.
+
+Patients sous hémodialyse
+
+Chez des patients soumis à une dialyse par membranes «High-Flux» (p.ex. AN69®) et traités simultanément par un inhibiteur de l'ECA, on a pu observer des réactions anaphylactoïdes. Chez ces patients, il convient d'employer un autre type de membrane, ou de prendre en considération un antihypertenseur d'une autre classe de substance.
+
+Toux
+
+On a observé de la toux en relation avec la prise d'inhibiteurs de l'ECA. Cette toux présente la caractéristique d'être non productive, rebelle, mais réversible à l'arrêt du traitement. Lors du diagnostic différentiel de la toux, il faut tenir compte d'un traitement par inhibiteur de l'ECA.
+
+Passage des bêtabloquants à Enalapril Spirig HC
+
+Ne pas cesser brusquement l'administration de bêtabloquants, mais en réduire progressivement la posologie par titrage après l'instauration du traitement par Enalapril Spirig HC (se conformer à l'information professionnelle concernant les médicaments du bêtabloquant en question).
+
+Chirurgie/anesthésie
+
+Lors d'interventions chirurgicales majeures ou en cas d'utilisation d'anesthésiques potentiellement hypotenseurs, Enalapril Spirig HC bloque la formation d'angiotensine II, compensant secondairement la libération de rénine. Une expansion volémique permet de remédier à une baisse tensionnelle attribuée à ce mécanisme.
+
+Hyperkaliémie
+
+Les facteurs de risque pour le développement d'une hyperkaliémie englobent l'insuffisance rénale, le diabète et l'utilisation concomitante de diurétiques épargneurs de potassium (par exemple spironolactone, éplérénone, triamtérène ou amiloride), de suppléments de potassium, de sels diététiques contenant du potassium ou d'autres médicaments qui peuvent élever le potassium sérique (par ex. médicaments à base de triméthoprime) (voir «Interactions»).
+
+La prise de suppléments de potassium, de principes actifs épargneurs de potassium, de sels diététiques contenant du potassium ou d'autres médicaments qui peuvent élever le potassium sérique peut, en particulier chez les patients insuffisants rénaux, provoquer une élévation significative du taux sérique de potassium. L'hyperkaliémie peut entraîner des arythmies sérieuses, parfois mortelles.
+
+Si l'utilisation d'Enalapril Spirig HC en association avec une des substances actives mentionnées ci-dessus est indiquée, la prudence est de rigueur et le taux sérique de potassium doit être contrôlé régulièrement (voir également «Interactions» – «Potassium sérique»).
+
+Hypoglycémie
+
+Les patients diabétiques qui sont traités par des antidiabétiques oraux ou par l'insuline et chez lesquels un nouveau traitement par un inhibiteur de l'ECA est instauré seront informés qu'ils doivent contrôler très strictement leur glycémie pour éviter une hypoglycémie, en particulier au cours des premiers mois d'utilisation concomitante (voir également sous «Interactions» – «Antidiabétiques»).
+
+Enfants et adolescents
+
+On ne dispose que d'expériences limitées relatives à l'efficacité et à la sécurité chez les enfants hypertendus de plus de 6 ans. On ne dispose d'aucune expérience pour d'autres indications chez les enfants. Des données pharmacocinétiques limitées sont disponibles pour les enfants dès 2 mois (voir également sous «Posologie/Mode d'emploi», «Propriétés/Effets» et «Pharmacocinétique»). Enalapril Spirig HC n'est pas recommandé chez les enfants pour d'autres indications que l'hypertension artérielle.
+
+Vu l'absence de données, les comprimés d'Enalapril Spirig HC ne sont pas recommandés chez les nouveau-nés et les enfants qui présentent un taux de filtration glomérulaire <30 ml/min/1,73 m² (voir également sous «Posologie/Mode d'emploi»).
+
+Excipients
+
+Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne devraient pas prendre ce médicament.
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par 1 comprimé, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Interactions
+
+L'administration concomitante d'Enalapril Spirig HC et d'autres antihypertenseurs peut entraîner une action hypotensive accrue; les diurétiques sont plus particulièrement concernés.
+
+Il a été établi que l'association d'Enalapril Spirig HC avec des bêtabloquants, la méthyldopa ou des antagonistes de calcium renforce l'action antihypertensive d'Enalapril Spirig HC.
+
+L'administration simultanée d'Enalapril Spirig HC et de suppléments potassiques ou de diurétiques d'épargne potassique (p.ex. spironolactone, triamtérène ou amiloride) peut favoriser une élévation significative de la kaliémie, notamment chez les patients atteints d'insuffisance rénale (voir sous «Potassium sérique»).
+
+Potassium sérique
+
+Lors des études cliniques, la kaliémie est restée généralement dans la norme. Une élévation moyenne de 0,2 mmol/l de la kaliémie a été observée chez certains patients hypertendus traités par énalapril seul pendant une période atteignant 48 semaines. L'administration simultanée d'un diurétique thiazidique n'a pratiquement pas influencé la kaliémie.
+
+Lorsque Enalapril Spirig HC est administré en même temps qu'un diurétique hypokaliémiant, l'hypokaliémie provoquée par le diurétique est réduite.
+
+Les facteurs de risque ci-après favorisent le développement d'une hyperkaliémie: insuffisance rénale, diabète sucré et administration simultanée de diurétiques épargneurs de potassium (p.ex. spironolactone, éplérénone, triamtérène ou amiloride), de suppléments potassiques, de sels diététiques contenant du potassium ou d'autres médicaments qui peuvent élever le potassium sérique (par ex. médicaments à base de triméthoprime).
+
+Ces médicaments et substances ne seront pris en même temps qu'Enalapril Spirig HC qu'avec prudence et avec des contrôles fréquents de la kaliémie, en particulier chez l'insuffisant rénal (voir également «Mises en garde et précautions» – «Hyperkaliémie»).
+
+Antidiabétiques
+
+Des études épidémiologiques ont suggéré que l'utilisation concomitante d'inhibiteurs de l'ECA et de médicaments antidiabétiques (insulines ou hypoglycémiants oraux) peut provoquer une réduction accrue de la glycémie avec risque d'hypoglycémie. Ce phénomène semble se produire plus souvent dans les premières semaines du traitement concomitant ainsi que chez les patients insuffisants rénaux. Chez les patients diabétiques traités par antidiabétiques oraux ou par l'insuline, la glycémie doit être contrôlée de près pour détecter une éventuelle hypoglycémie, surtout pendant les premiers mois de traitement par un inhibiteur de l'ECA (voir également «Mises en garde et précautions» – «Hypoglycémie»).
+
+Lithium sérique
+
+Comme dans le cas d'autres médicaments qui favorisent une élimination du sodium, l'élimination du lithium peut se trouver réduite. Par conséquent, les taux de lithium doivent être soigneusement surveillés dans le cas d'un traitement par sels de lithium.
+
+Anti-inflammatoires non stéroïdiens, y compris inhibiteurs sélectifs de la cyclo-oxygénase-2
+
+Les anti-inflammatoires non stéroïdiens, y compris les inhibiteurs sélectifs de la cyclo-oxygénase-2 (inhibiteurs de la COX-2) peuvent réduire l'effet des diurétiques et d'autres médicaments antihypertenseurs. C'est pourquoi l'effet antihypertenseur des antagonistes des récepteurs de l'angiotensine II ou des inhibiteurs de l'ECA peut être réduit par des AINS, y compris par des inhibiteurs de la COX-2.
+
+Chez certains patients présentant une fonction rénale diminuée (par exemple patients âgés ou hypovolémiques, y compris patients sous diurétiques) qui sont traités par anti-inflammatoires non stéroïdiens, y compris par des inhibiteurs de la cyclo-oxygénase-2, l'administration simultanée d'antagonistes des récepteurs de l'angiotensine II ou d'inhibiteurs de l'ECA peut provoquer une péjoration supplémentaire de la fonction rénale pouvant aller jusqu'à une éventuelle insuffisance rénale aiguë. Ces effets sont habituellement réversibles. Par conséquent, ces traitements seront associés avec prudence chez des patients présentant une fonction rénale diminuée.
+
+Double blocage du système rénine-angiotensine-aldostérone (SRAA)
+
+Il existe des données indiquant que l'utilisation concomitante d'inhibiteurs de l'ECA, d'antagonistes des récepteurs de l'angiotensine II ou de l'aliskirène augmente le risque d'hypotension, d'hyperkaliémie et de diminution de la fonction rénale (y compris une défaillance rénale aiguë). C'est pour cette raison qu'un double blocage du SRAA par l'utilisation concomitante d'inhibiteurs de l'ECA, d'antagonistes des récepteurs de l'angiotensine II ou de l'aliskirène n'est pas recommandé.
+
+Si le traitement par double blocage est considéré comme absolument nécessaire, celui-ci doit avoir lieu exclusivement sous la supervision d'un spécialiste et sous contrôle étroit de la fonction rénale, des valeurs électrolytiques et de la pression artérielle.
+
+Les inhibiteurs de l'ECA et les antagonistes des récepteurs de l'angiotensine II ne doivent pas être utilisés simultanément chez des patients souffrant de néphropathie diabétique.
+
+Or
+
+On a rapporté dans de rares cas des réactions nitritoïdes (avec des symptômes englobant un rougissement du visage, des nausées, des vomissements et une hypotension) chez des patients traités à la fois par une solution d'or injectable (aurothiomalate sodique) et un inhibiteur de l'ECA, énalapril compris.
+
+Inhibiteurs de mTOR (mammalian target of rapamycin)
+
+Lors de l'administration concomitante d'un inhibiteur de mTOR (p.ex. temsirolimus, sirolimus, évérolimus), ce traitement pourrait exposer les patients à un risque accru d'angio-œdème (voir «Mises en garde et précautions»).
+
+Inhibiteurs de la dipeptidylpeptidase 4 (inhibiteur de la DPP4)
+
+La co-administration d'un inhibiteur de l'ECA et d'un inhibiteur de la DPP4 peut entraîner un risque accru d'angio-œdème (voir «Mises en garde et précautions»).
+
+Inhibiteurs de la néprilysine
+
+L'utilisation concomitante d'un inhibiteur de l'ECA, y compris Enalapril Spirig HC, et de sacubitril/valsartan ou du racécadotril peut augmenter le risque d'angio-œdèmes (voir «Contre-indications» et «Mises en garde et précautions»).
+
+Grossesse, allaitement
+
+Il existe des indices laissant clairement supposer l'existence de risques pour le foetus humain. C'est pourquoi Enalapril Spirig HC ne doit pas être utilisé durant la grossesse. Si une grossesse est constatée, le traitement par Enalapril Spirig HC doit être interrompu, sauf s'il est considéré comme vital pour la mère. Chez les femmes qui pourraient tomber enceintes, une contraception fiable doit être utilisée.
+
+Une étude épidémiologique rétrospective publiée suggère que les enfants dont la mère a été traitée par un inhibiteur de l'ECA pendant le premier trimestre de la grossesse présentent un risque accru (risque relatif = 2,71, intervalle de confiance à 95% 1,72 à 4,27) de présenter des malformations congénitales sévères en comparaison avec les enfants dont la mère n'a pas été exposée aux inhibiteurs de l'ECA pendant le premier trimestre de la grossesse. Le nombre des cas de malformations est faible et les résultats de cette étude n'ont pas pu être répétés jusqu'à présent.
+
+Les inhibiteurs de l'ECA sont en mesure de provoquer une morbidité et une mortalité foetale et néonatale lorsqu'ils sont administrés au cours du deuxième ou du troisième trimestre.
+
+L'emploi d'inhibiteurs de l'ECA au cours du deuxième et du troisième trimestre a été associé à des lésions foetales et néonatales, y compris hypotension artérielle, défaillance rénale, hyperkaliémie et/ou hypoplasie crânienne chez le nouveau-né.
+
+On a rapporté chez la mère des cas d'oligohydramnios, qui étaient vraisemblablement liés à une fonction rénale foetale diminuée et susceptibles d'entraîner des contractures de la musculature des membres, de même que des malformations cranio-faciales et des hypoplasies pulmonaires. Dans quelques cas exceptionnels, dans lesquels le spécialiste évalue tout de même l'emploi d'un inhibiteur de l'ECA au cours d'une grossesse (en raison du fait que d'autres substances ont insuffisamment agi ou sont contre-indiquées), il convient d'informer la patiente des dangers potentiels que court le foetus.
+
+Dans les très rares cas où l'emploi des inhibiteurs de l'ECA pendant la grossesse est inévitable, il conviendrait de procéder, à intervalles réguliers, à des examens par ultrasons, afin de déceler des altérations intra-amniotiques.
+
+Au cas où un oligohydramnios serait constaté, il faudrait interrompre Enalapril Spirig HC, sauf si ce traitement est considéré comme vital pour la mère.
+
+Toutefois, le médecin et la patiente devraient être conscients du fait qu'un oligohydramnios peut survenir alors que le foetus a déjà subi des lésions irréversibles.
+
+Il convient de surveiller soigneusement les nouveau-nés dont la mère a été traitée par Enalapril Spirig HC durant sa grossesse, afin de détecter une éventuelle hypotension, oligurie ou hyperkaliémie.
+
+Etant donné qu'Enalapril Spirig HC passe la barrière placentaire, on a pu, dans certains cas, grâce à la dialyse péritonéale, l'éliminer avec succès du système circulatoire du nouveau-né. Théoriquement ceci pourrait également être réalisé par exsanguino-transfusion.
+
+L'énalapril et l'énalaprilate sont éliminés en très faibles quantités par le lait maternel. Il convient d'être prudent en matière de prescription d'Enalapril Spirig HC à des mères qui allaitent.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+La réponse individuelle au médicament peut varier d'une personne à l'autre. Certains effets indésirables rapportés avec Enalapril Spirig HC peuvent influencer la capacité de conduire des véhicules ou d'utiliser des machines (voir sous «Effets indésirables»), surtout au début du traitement et lors d'une consommation d'alcool.
+
+Effets indésirables
+
+Les effets indésirables ci-après ont été observés durant des études cliniques contrôlées ou après l'introduction du médicament sur le marché:
+
+(très fréquents [≥1/10], fréquents [≥1/100, <1/10], occasionnels [≥1/1'000, <1/100], rares [≥1/10'000, <1/1'000] et très rares [<1/10'000], y compris des cas isolés rapportés).
+
+\* Si l'on considère l'ensemble des expériences faites dans des études cliniques sur l'énalapril (ce qui inclut les «SOLVD Treatment and Prevention Trials» auprès de patients présentant une dysfonction significative du ventricule gauche), les effets indésirables «très fréquents» englobent des vertiges (30,6%), une vision floue (12,6%), de la toux (20,4%), des nausées (12,6%) et une asthénie (31,4%). Dans les études auprès de patients hypertendus, l'incidence est cependant nettement plus faible: occasionnels: vision floue (0,17%); fréquents: vertiges (4,3%), toux (1,3%), envies de vomir (1,4%) et fatigue/asthénie (3,0%).
+
+Affections hématologiques et du système lymphatique
+
+Énalapril donne rarement lieu à des modifications cliniquement significatives des principaux paramètres biologiques.
+
+Rares: neutropénie, diminutions de l'hémoglobine, baisse de l'hématocrite, thrombocytopénie, agranulocytose, dépression de la moelle osseuse.
+
+Affections endocriniennes
+
+Très rares: syndrome de sécrétion inappropriée d'hormone antidiurétique (SIADH).
+
+Troubles du métabolisme et de la nutrition
+
+Occasionnels: cas d'hypoglycémie chez des patients diabétiques traités par antidiabétiques ou par l'insuline.
+
+Affections psychiatriques et du système nerveux
+
+Très fréquents: vertiges (30,6%)\*.
+
+Fréquents: maux de tête, dépression, syncope, altérations du goût.
+
+Occasionnels: confusion mentale, somnolence, insomnie, nervosité, paresthésies, vertiges, diminution de la libido.
+
+Rares: rêves anormaux.
+
+Affections oculaires
+
+Très fréquents: troubles de la vision (vision floue) (12,6%)\*.
+
+Troubles de l'oreille et du conduit auditif
+
+Occasionnels: tinnitus.
+
+Affections fonctionnels cardiaques et vasculaires
+
+Fréquents: hypotension y compris hypotension orthostatique, infarctus du myocarde ou accident vasculaire cérébral, possiblement comme conséquence d'une hypotension artérielle excessive chez des patients à haut risque (voir sous «Mises en garde et précautions»), douleurs thoraciques, troubles du rythme cardiaque, angine de poitrine.
+
+Occasionnels: hypotension orthostatique, palpitations, rougissement.
+
+Rares: syndrome de Raynaud.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Très fréquents: toux (20,4%)\*.
+
+Fréquents: dyspnée, pneumonie.
+
+Occasionnels: rhinorrhée, inflammation de la gorge et enrouement, bronchospasmes/asthme, bronchite.
+
+Rares: infiltrations pulmonaires.
+
+Affections gastro-intestinales
+
+Très fréquents: envies de vomir (12,6%)\*.
+
+Fréquents: diarrhée, douleurs abdominales.
+
+Occasionnels: iléus, pancréatite, vomissements, dyspepsie, constipation, anorexie, sécheresse buccale.
+
+Rares: stomatite, glossite.
+
+Dans de très rares cas, un angiooedème intestinal associé à des inhibiteurs de l'ECA, y compris l'énalapril, a été rapporté.
+
+Affections hépatobiliaires
+
+Rares: défaillance hépatique, hépatite hépatocellulaire ou cholestatique, jaunisse.
+
+Affections de la peau et du tissu sous-cutané
+
+Fréquents: hypersensibilité, oedème angioneurotique.
+
+Les sujets traités par des inhibiteurs de l'ECA – y compris Enalapril Spirig HC – ont présenté un oedème de Quincke au niveau du visage, des extrémités, des lèvres, de la langue, de la glotte et/ou du larynx (voir sous «Mises en garde et précautions»). Dans de tels cas, cesser immédiatement l'administration d'Enalapril Spirig HC et placer le patient sous surveillance étroite jusqu'à disparition de l'oedème. En cas d'oedème limité au visage et aux lèvres, l'état se normalise généralement sans traitement. Toutefois, les antihistaminiques se sont souvent révélés utiles pour soulager les symptômes.
+
+Un oedème angioneurotique accompagné d'un oedème du larynx peut mettre en jeu le pronostic vital. Lorsque la langue, la glotte ou le larynx sont atteints, ce qui comporte un risque d'obstruction des voies respiratoires, il convient d'instaurer immédiatement des mesures thérapeutiques adéquates, pouvant inclure l'injection sous-cutanée d'une solution d'adrénaline 1:1000 (de 0,3 ml à 0,5 ml) et/ou des mesures destinées à garantir l'ouverture des voies respiratoires.
+
+Occasionnels: diaphorèse, hyperhidrose, prurit, urticaire, alopécie.
+
+Rares: érythème multiforme, syndrome de Stevens-Johnson, dermatite exfoliative, nécrolyse épidermique toxique, pemphigus.
+
+Un ensemble de symptômes, pouvant comprendre certains ou tous les symptômes suivants: fièvre, sérosité, vasculite, myalgie/myosite, arthralgie/arthrite, anticorps antinucléaires positifs, hausse de la sédimentation des érythrocytes, éosinophilie et leucocytose, a été décrit. Des éruptions cutanées, une sensibilité à la lumière ou d'autres manifestations dermatologiques peuvent apparaître en même temps.
+
+Affections musculosquelettiques, du tissu conjonctif et des os
+
+Occasionnels: crampes musculaires.
+
+Affections du rein et des voies urinaires
+
+Occasionnels: troubles de la fonction rénale, défaillance rénale.
+
+Rares: oligurie.
+
+Affections des organes de reproduction et du sein
+
+Occasionnels: impuissance.
+
+Troubles généraux et anomalies au site d'administration
+
+Très fréquents: asthénie (31,4%)\*.
+
+Fréquents: fatigue.
+
+Investigations
+
+Fréquents: hyperkaliémie, élévation de la créatinine sérique.
+
+Occasionnels: élévations de l'urée sanguine, hyponatrémie.
+
+Rares: élévations des enzymes hépatiques, augmentations de la bilirubine sérique.
+
+Enfants et adolescents
+
+Le profil des effets secondaires chez les enfants et les adolescents ne se distingue pas de celui observé chez les adultes.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Les cas rapportés de surdosage d'Enalapril Spirig HC chez l'homme sont rares. Les réactions les plus marquées ont consisté en une hypotension prononcée, résultant du blocage du système RAA près de 6 heures après l'ingestion des comprimés, et un état de stupeur.
+
+Des cas d'élévation du taux sérique d'énalaprilate 100 à 200 fois supérieure à la norme thérapeutique ont été observés après ingestion de doses de 300 mg et 440 mg d'énalapril.
+
+En cas de surdosage, on conseille de placer le patient sous perfusion intraveineuse de soluté physiologique. Si disponible, une perfusion d'angiotensine II peut être utile. Si l'ingestion est récente, un émétique doit permettre d'obtenir des résultats efficaces. L'énalaprilate peut être éliminé de la circulation par hémodialyse (voir sous «Mises en garde et précautions» – «Patients sous hémodialyse»).
+
+Propriétés/Effets
+
+Code ATC
+
+C09AA02
+
+Enalapril Spirig HC (maléate d'énalapril) est le sel maléate de l'énalapril, un dérivé de deux acides aminés, la L-alanine et la L-proline. L'énalapril est rapidement résorbé après administration orale et est hydrolysé en énalaprilate, un inhibiteur spécifique de l'ECA (enzyme de conversion de l'angiotensine), de longue durée d'action, dépourvu de sulfhydryle.
+
+Hypertension artérielle
+
+En général, Enalapril Spirig HC administré seul agit efficacement dans l'hypertension de tout degré de gravité. Si l'action antihypertensive s'avère insuffisante, l'on peut associer à Enalapril Spirig HC un diurétique et/ou un bêtabloquant. Il a été démontré que le risque d'hypokaliémie et d'hyperuricémie inhérent aux dérivés thiazidiques est minime sous Enalapril Spirig HC.
+
+Enalapril Spirig HC intervient dans un mécanisme physiologique spécifique, le système rénine-angiotensine-aldostérone, qui joue un rôle important dans la régulation de la tension artérielle.
+
+Enalapril Spirig HC déploie son activité dans l'heure qui suit l'administration et son action persiste généralement pendant 24 heures.
+
+Insuffisance cardiaque
+
+Enalapril Spirig HC soulage la précharge et la postcharge, d'où un rendement accru de la pompe cardiaque et un ralentissement de la fréquence (qui est généralement augmentée dans l'insuffisance cardiaque). Une hypotension artérielle ne peut être exclue, notamment en début de traitement (voir sous «Mises en garde et précautions»).
+
+Le seuil de tolérance à l'effort est souvent amélioré, permettant au patient un meilleur rendement au quotidien.
+
+L'effet d'énalapril a été examiné chez 6'797 patients souffrant d'une dysfonction ventriculaire gauche (SOLVD) au cours d'une étude multicentrique menée en double aveugle, incluant un groupe placebo.
+
+Un total de 2'569 patients présentant tous les degrés d'une insuffisance cardiaque symptomatique (le plus souvent sous forme légère ou moyenne, classes II et III selon les critères de la NYHA) ont été inclus après randomisation dans le «bras traité», et 4'228 patients présentant une dysfonction ventriculaire gauche asymptomatique, dans le «bras de prévention». Si l'on combine les résultats des deux bras, on observe une diminution globale du risque de développement d'accidents ischémiques majeurs. Énalapril a entraîné une baisse de l'incidence des infarctus du myocarde, ainsi que du nombre d'hospitalisations pour angine de poitrine instable, chez tous les patients atteints d'une dysfonction ventriculaire gauche.
+
+Par ailleurs, dans le «bras de prévention», l'énalapril a prévenu, de façon significative, le développement d'une insuffisance cardiaque symptomatique, et a diminué le nombre d'hospitalisations pour insuffisance cardiaque.
+
+Dans le «bras traité», l'énalapril administré comme adjuvant à la thérapie conventionnelle a réduit significativement la mortalité, ainsi que le nombre d'hospitalisations par suite d'insuffisance cardiaque, et amélioré le statut des patients selon la classification de la NYHA.
+
+Dans une étude semblable (CONSENSUS Trial) ayant inclus 253 patients présentant une insuffisance cardiaque grave (NYHA classe IV), énalapril en association avec la thérapie conventionnelle a entraîné une réduction significative de la mortalité et une amélioration visible des symptômes.
+
+Enfants et adolescents
+
+Au cours d'une étude clinique ayant inclus 110 patients hypertendus âgés entre 6 et 16 ans, les patients d'un poids inférieur à 50 kilos ont reçu soit 0,625, 2,5 ou 20 mg d'énalapril par jour, et les patients d'un poids ≥50 kg ont reçu soit 1,25, 5 ou 40 mg d'énalapril par jour. Dans la fourchette des doses entre 2,5 et 20 mg et entre 5 mg et 40 mg, un effet antihypertenseur suffisant a été obtenu, alors qu'à des doses de 0,625 et de 1,25 mg, aucun effet consistant n'a été noté. La dose maximale examinée était de 0,58 mg/kg (jusqu'à 40 mg) une fois par jour.
+
+Pharmacocinétique
+
+Absorption
+
+L'énalapril est rapidement résorbé après administration orale, les pics sériques d'énalapril apparaissant en l'espace d'une heure. Les quantités mises en évidence dans l'urine permettent d'établir que la résorption de l'énalapril après administration orale d'Enalapril Spirig HC est de l'ordre de 60%. Les pics sériques de l'énalaprilate sont observés 3 à 4 heures suivant l'administration d'une dose orale d'Enalapril Spirig HC. La résorption de l'énalapril au niveau du tractus gastro-intestinal n'est pas influencée par la prise d'aliments. La résorption de l'énalapril est indépendante de la dose dans les limites des concentrations thérapeutiques recommandées.
+
+Distribution
+
+La courbe des concentrations sériques de l'énalaprilate révèle une phase terminale prolongée, sans doute en rapport avec la liaison à l'ECA. Chez les personnes ayant une fonction rénale normale, les concentrations sériques de l'énalaprilate se stabilisent au quatrième jour après le début de l'administration d'Enalapril Spirig HC («steady state»). La demi-vie d'élimination de l'énalaprilate accumulé par suite de la prise de doses multiples est de 11 heures.
+
+Métabolisme
+
+Après résorption, l'énalapril est rapidement et presque complètement hydrolysé en énalaprilate, qui constitue le principe actif à proprement parler. Outre sa biotransformation en énalaprilate, on ne trouve aucun indice d'un métabolisme significatif de l'énalapril. L'hydrolyse de l'énalapril est indépendante de la dose dans les limites des concentrations thérapeutiques recommandées.
+
+Elimination
+
+L'énalapril est éliminé principalement par la voie rénale. Les principaux composants retrouvés dans l'urine sont l'énalaprilate, à raison d'environ 40% de la dose administrée, et l'énalapril sous forme inchangée.
+
+Enfants et adolescents
+
+Au cours d'une étude pharmacocinétique avec des doses répétées chez 40 patients pédiatriques hypertendus âgés de plus de 2 mois, les paramètres pharmacocinétiques de l'énalapril étaient comparables aux valeurs chez les adultes.
+
+Données précliniques
+
+Des examens ponctuels et réguliers (répétés) n'ont montré aucun indice laissant supposer l'existence d'une toxicité significative, et les études sur la mutagénicité et la carcinogénité n'ont montré aucun risque pour l'être humain. Les inhibiteurs de l'ECA ont incontestablement un effet toxique pour le foetus lorsqu'ils sont administrés pendant le deuxième ou le troisième trimestre (voir sous «Grossesse/Allaitement»).
+
+Remarques particulières
+
+Incompatibilités
+
+Filtres de dialyse «high-flux»: voir sous «Mises en garde et précautions».
+
+Conservation
+
+Ce médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques concernant le stockage
+
+Conserver dans l'emballage d'origine à une température ne dépassant pas 30 °C et protéger de l'humidité. Conserver hors de portée des enfants.
+
+Numéro d’autorisation
+
+62149 (Swissmedic).
+
+Présentation
+
+Enalapril Spirig HC cpr sécable (divisible) 5 mg: 30 pce [B]
+
+Enalapril Spirig HC cpr sécable (divisible) 10 mg: 28 pce et 98 pce [B]
+
+Enalapril Spirig HC cpr sécable (divisible) 20 mg: 28 pce et 98 pce [B]
+
+Titulaire de l’autorisation
+
+Spirig HealthCare SA, 4622 Egerkingen
+
+Mise à jour de l’information
+
+Décembre 2024.

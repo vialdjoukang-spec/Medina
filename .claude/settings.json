@@ -1,5 +1,31 @@
 {
   "permissions": {
-    "allow": ["Bash(python3 tools/espace.py:*)"]
+    "allow": [
+      "Bash(python3 tools/espace.py:*)",
+      "Bash(python3 tools/sources_guard.py:*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 tools/sources_guard.py scaffold --quiet; python3 tools/sources_guard.py reminder"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 tools/sources_guard.py scaffold --quiet"
+          }
+        ]
+      }
+    ]
   }
 }

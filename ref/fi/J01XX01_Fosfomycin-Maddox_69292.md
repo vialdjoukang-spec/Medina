@@ -1,0 +1,328 @@
+---
+titre: "Fosfomycin Maddox"
+titulaire: "MADDOX Pharma Swiss GmbH"
+atc: J01XX01
+substances: "Fosfomycinum ut Fosfomycinum trometamolum (1:1)"
+autorisation_swissmedic: 69292
+date_version: 2022-11-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/03c362cbd97b469e96e8811bace982d4-fr.html
+---
+
+Fosfomycin Maddox
+
+Composition
+
+Principes actifs
+
+Fosfomycinum ut Fosfomycinum trometamolum (1:1)
+
+Excipients
+
+Saccharum 2.2 g, Saccharinum natricum (corresp 1.8 mg Natrium), Aromatica (arôme mandarine et orange), Excipiens ad granulatum pro charta.
+
+ 
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Fosfomycin Maddox 3 g, granulés pour solution buvable: 1 sachet (8 g) contient 3 g de Fosfomycinum ut Fosfomycinum trometamolum (1:1).
+
+ 
+
+Indications/Possibilités d’emploi
+
+Fosfomycin Maddox est indiqué lors des infections suivantes causées par des germes sensibles à la fosfomycine:
+
+Traitement des infections urinaires aiguës non compliquées chez les femmes et les adolescentes > 12 ans;
+
+Prophylaxie antibiotique périopératoire des biopsies transrectales de la prostate chez l'homme adulte. Il faudrait tenir compte des recommandations officielles pour un emploi approprié des antibiotiques, en particulier pour éviter l’augmentation de la résistance aux antibiotiques.
+
+ 
+
+Posologie/Mode d’emploi
+
+Posologie usuelle
+
+Infections urinaires aiguës non compliquées chez les femmes et les adolescentes (> 12 ans): 1 sachet de Fosfomycin Maddox 3 g en dose unique.
+
+Prophylaxie antibiotique périopératoire des biopsies transrectales de la prostate: 1 sachet de Fosfomycin Maddox 3 g env. 3 heures avant et 24 heures après l’intervention.
+
+Patients présentant des troubles de la fonction rénale
+
+L'utilisation de Fosfomycin Maddox n'est pas recommandée chez les patients présentant une insuffisance rénale (clairance de la créatinine < 10 ml/min, voir chapitre «Pharmacocinétique»).
+
+Enfants
+
+Étant donné qu’il n’existe pas encore un nombre suffisant d’expériences faites avec les enfants de moins de 12 ans , Fosfomycin Maddox ne doit pas être employé chez ceux-ci.
+
+Mode d’emploi correct
+
+Par voie orale.
+
+Dans l'indication d'une infection urinaire aiguë non compliquée, Fosfomycin Maddox devrait être pris à jeun, c’est-à-dire 2-3 heures avant ou après un repas, de préférence le soir, après avoir vidé la vessie.
+
+Fosfomycin Maddox est dissout dans un verre d’eau et bu immédiatement.
+
+ 
+
+Contre-indications
+
+Hypersensibilité connue au principe actif fosfomycine ou à un des excipients selon composition.
+
+ 
+
+Mises en garde et précautions
+
+Étant donné qu’il n’existe pas un nombre suffisant d’expériences faites avec les enfants de moins de 12 ans, Fosfomycin Maddox ne doit pas être employé chez ceux-ci.
+
+Des réactions d'hypersensibilité, y compris anaphylaxie et choc anaphylactique, peuvent survenir au cours du traitement avec la fosfomycine et menacer le pronostic vital (voir chapitre « Effets indésirables »).
+
+Si des réactions de ce type se produisent, il convient de renoncer définitivement à l’administration de fosfomycine. Un traitement médical adéquat est nécessaire.
+
+Des diarrhées induites par les antibiotiques ont été rapportées en liaison avec l'utilisation de presque tous les antibiotiques, y compris la fosfomycine trométamol. Le degré de sévérité peut varier d'une diarrhée légère jusqu'à une colite à issue fatale. L’apparition de diarrhées sévères et continues pendant ou après une antibiothérapie peut être le symptôme d’une diarrhée associée au Clostridium difficile (DACD). Il est donc important d’envisager le diagnostic de DACD pour les patients qui ont développé une diarrhée sévère pendant ou après le traitement avec Fosfomycin Maddox. En cas de DACD suspectée ou confirmée il faut immédiatement entreprendre un traitement approprié (voir chapitre « Effets indésirables »). Les médicaments antipéristaltiques sont contre-indiqués dans cette situation.
+
+En cas d'infections persistantes, un examen approfondi et une réévaluation du diagnostic sont recommandés, car cela est souvent dû à des infections des voies urinaires compliquées ou à la prévalence de pathogènes résistants (par ex., Staphylococcus saprophyticus, voir chapitre «Propriétés/Effets»). En général, les infections des voies urinaires chez les patients de sexe masculin doivent être considérées comme des infections urinaires compliquées pour lesquelles ce médicament n'est pas indiqué (voir chapitre «Indications/Possibilités d'emploi»).
+
+Excipients revêtant un intérêt particulier
+
+Fosfomycin Maddox contient du saccharose. Les patients présentant une intolérance au fructose, un syndrome de malabsorption du glucose et du galactose ou un déficit en sucrase/isomaltase (maladies héréditaires rares) ne doivent pas prendre ce médicament.
+
+Sodium
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par sachet, c.-à-d. qu’il est essentiellement «sans sodium».
+
+ 
+
+Interactions
+
+La prise concomitante de métoclopramide entraîne une réduction significative de la concentration plasmatique et urinaire thérapeutiquement efficace de la fosfomycine. Des effets semblables peuvent survenir avec d’autres médicaments qui augmentent la motilité gastro-intestinale.
+
+Si la fosfomycine trométamol est prise pendant le repas, les taux plasmatiques et urinaires de la fosfomycine baissent. Pour cette raison, il est recommandé de prendre ce médicament à jeun ou 2 à 3 heures après les repas ou après la prise d'autres médicaments.
+
+Problèmes spécifiques en cas de changement d’INR (International Normalized Ratio) : des nombreux cas d’augmentation de l'activité des antagonistes de la vitamine K ont été rapportés chez les patients qui prennent des antibiotiques. Les facteurs de risque incluent des infections graves ou des inflammations, l'âge et un mauvais état de santé général. Dans ces conditions, il est difficile de déterminer si la modification d'INR est due à la maladie infectieuse ou au traitement. Cependant, certaines classes d'antibiotiques sont plus souvent impliquées, en particulier: les fluoroquinolones, les macrolides, les cyclines, le cotrimoxazole et certaines céphalosporines.
+
+Les études d’interactions n’ont été menées que chez les adultes.
+
+ 
+
+Grossesse, Allaitement
+
+Grossesse
+
+Les données disponibles sur la sécurité du traitement par la fosfomycine pendant le 1er trimestre de la grossesse (n=152) sont limitées. Ces données n'ont mis en évidence aucun signal de sécurité en ce qui concerne la tératogénicité jusqu'à maintenant. La fosfomycine traverse le placenta.Les expérimentations animales n’ont révélé aucune toxicité directe ni indirecte ayant une incidence sur la grossesse, le développement embryonnaire, le développement fœtal et/ou le développement post-natal.
+
+Fosfomycin Maddox doit être utilisé pendant la grossesse uniquement si cela est vraiment nécessaire.
+
+Allaitement
+
+Étant donné que Fosfomycin Maddox passe dans le lait maternel même après une dose unique, les femmes qui allaitent ne doivent être traitées que si cela est strictement nécessaire.
+
+Fertilité
+
+Aucune donnée n'est disponible chez l'homme. Chez les rats mâles et femelles, l'administration orale de fosfomycine jusqu'à 1’000 mg/kg/jour n'a pas altéré la fertilité.
+
+ 
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude correspondante n'a été effectuée.
+
+Étant donné que Fosfomycin Maddox peut provoquer des vertiges, les réactions, l’aptitude à la conduite et la capacité à utiliser des machines peuvent être affectées.
+
+ 
+
+Effets indésirables
+
+Après administration d’une dose unique de fosfomycine trométamol, les effets indésirables les plus fréquentes concernent le tractus gastro-intestinal, essentiellement des diarrhées.
+
+Les effets indésirables ont été rapportés aux fréquences suivantes: très fréquent (≥1/10); fréquent (≥1/100 à <1/10); occasionnel (≥1/1’000 à <1/100); rare (≥1/10’000 à <1/1’000); très rare (<1/10’000); fréquence inconnue: ne peut pas être estimée sur la base des données disponibles.
+
+Infections et infestations
+
+Fréquent: vulvovaginite.
+
+Affections du système immunitaire
+
+Fréquence inconnue: réactions anaphylactiques, y compris choc anaphylactique, hypersensibilité (voir chapitre «Mises en garde et précautions»).
+
+Affections du système nerveux
+
+Fréquent: céphalées, sensation vertigineuse.
+
+Affections gastro-intestinales
+
+Fréquent: diarrhée, nausée, dyspepsie, douleur abdominale.
+
+Occasionnel: vomissements.
+
+Fréquence inconnue: colite associée aux antibiotiques (voir chapitre «Mises en garde et précautions»).
+
+Affections de la peau et des tissus sous-cutanés
+
+Occasionnel: rash, urticaire, prurit.
+
+Fréquence inconnue: angioœdème.
+
+L’annonce d’effets secondaires présumés après l’autorisation est d’une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d’effet secondaire nouveau ou grave via le portail d’annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+ 
+
+Surdosage
+
+Les données sur le surdosage de la fosfomycine orale sont limitées.
+
+Signes et symptômes
+
+Des cas d'hypotonie, de somnolence, de troubles électrolytiques, de thrombocytopénie et d’hypoprothrombinémie à la suite de l'administration parentérale de la fosfomycine ont été rapportés.
+
+Traitement
+
+En cas de surdosage, le patient doit être surveillé (particulièrement les taux plasmatiques/sériques d'électrolytes) et recevoir un traitement symptomatique et de soutien. La réhydratation est recommandée pour favoriser l’élimination urinaire de la substance active. La fosfomycine est éliminée efficacement de l'organisme par hémodialyse avec une demi-vie d'élimination moyenne de 4 heures.
+
+ 
+
+Propriétés/Effets
+
+Code ATC
+
+J01XX01
+
+Mécanisme d’action
+
+Fosfomycin Maddox contient le principe actif fosfomycine [mono (2-ammonium-2-hydroxyméthyl-1,3-propanediol) (2R-cis) - (3-méthyloxyranil) phosphonate] sous forme de sel de trométamol. La fosfomycine est un antibiotique (dérivé de l’acide phosphonique) ayant un effet bactéricide. Celui-ci repose sur l’inhibition de la synthèse de la paroi cellulaire des bactéries, inhibant une des premières étapes de la synthèse des peptidoglycanes.
+
+La fosfomycine est transportée activement dans la cellule bactérienne via deux systèmes de transport différents (les systèmes de transport sn-glycérol-3-phosphate et hexose-6).
+
+Pharmacodynamique
+
+La fosfomycine possède une analogie structurelle avec p-énolpyruvate. C’est pourquoi elle inactive l’enzyme énolpyruvyl-transférase et ainsi la condensation d’uridinediphosphate-N-acétylglucosamine avec p-énolpyruvate est bloquée de manière irréversible, l'une des premières étapes de la synthèse de la paroi cellulaire bactérienne. La fosfomycine peut également réduire l’adhérence des bactéries sur la muqueuse de la vessie, qui peut être un facteur prédisposant aux infections urinaires récidivantes.
+
+Les concentrations critiques de sensibilité établies par l'European Committee on Antimicrobial Susceptibility Testing (EUCAST) sont les suivantes (tableau des concentrations critiques de l'EUCAST, version 11, 01.01.2021):
+
+|  |  |  |
+| --- | --- | --- |
+| Espèce | Sensible | Résistant |
+| Enterobacterales | ≤8 mg/l | > 8 mg/l |
+
+ 
+
+Prévalence de la résistance acquise La prévalence de la résistance acquise des espèces individuelles peut varier en fonction de la géographie et du temps. Des informations sur les résistances locales sont donc nécessaires, en particulier pour pouvoir garantir un traitement approprié des infections sévères.
+
+Le tableau suivant est basé sur les données issues des programmes et des études de surveillance. Il comprend les espèces pertinentes dans les indications approuvées:
+
+Espèces couramment sensibles
+
+Microorganismes aérobies à Gram négatif
+
+Escherichia coli
+
+Espèces pour lesquelles une résistance acquise pourrait constituer un problème
+
+Microorganismes aérobies à Gram positif
+
+Enterococcus faecalis
+
+Microorganismes aérobies à Gram négatif
+
+Klebsiella pneumonia
+
+Proteus mirabilis
+
+Espèces naturellement résistantes
+
+Microorganismes aérobies à Gram positif
+
+Staphylococcus saprophyticus
+
+Mécanisme de résistance
+
+Le principal mécanisme de résistance est une mutation chromosomique entraînant une altération des systèmes de transport bactériens de la fosfomycine. D'autres mécanismes de résistance, qui sont transmis par les plasmides ou les transposons, entraînent l'inactivation enzymatique de la fosfomycine via la liaison de la molécule au glutathion ou via le clivage de la liaison carbone-phosphore dans la molécule de fosfomycine, respectivement.
+
+L’activité de la fosfomycine contre les germes les plus fréquents en cas d’infections urinaires est restée inchangée. Seul un petit nombre de bactéries peuvent acquérir une résistance. Le taux de résistance d’E.coli, à l’origine d’infections urinaires non compliquées, est faible.
+
+La plupart des E.coli «Multidrug» résistants et d’autres entérobactériacées, produisant des ESBL (Extended Spectrum Beta-Lactamase), sont sensibles à la fosfomycine. La plupart des MRSA (Methicillin-resistant Staph. aureus) sont également sensibles à la fosfomycine.
+
+Résistance croisée
+
+Il n’y a pas de résistance croisée connue entre la fosfomycine et d’autres classes d'antibiotiques. On ne doit pas s’attendre à une résistance croisée, parce que la structure chimique de la fosfomycine est fondamentalement différente de celle de tous les autres antibiotiques et que la fosfomycine présente un mécanisme d’action unique en son genre.
+
+Efficacité clinique
+
+La fosfomycine possède un spectre antibactérien, qui comprend la plupart des germes gram-positifs et -négatifs des infections caractéristiques des voies urinaires ainsi que des souches produisant la pénicillinase.
+
+In vivo on observe des résistances envers Enterobacter species, Klebsiella species, Entérocoques, Proteus mirabilis, Staph. aureus et Staph. saprophyticus.
+
+De plus, Fosfomycin Maddox empêche l’adhérence des bactéries sur la muqueuse de la vessie qui représente un facteur prédisposant aux infections urinaires récidivantes.
+
+ 
+
+Pharmacocinétique
+
+Absorption
+
+Après l'administration orale d'une dose unique, la fosfomycine trométamol a une biodisponibilité absolue d'environ 33 % à 53 %. La vitesse et le degré d'absorption sont réduits par la prise d'aliments, mais la quantité totale de substance active excrétée dans l'urine au fil du temps est la même. Les concentrations urinaires moyennes en fosfomycine sont maintenues au-dessus du seuil de CMI de 128 μg/ml pendant au moins 24 heures après l'administration d'une dose orale de 3 g à jeun ou après un repas, mais le délai pour atteindre les concentrations maximales dans l'urine est retardé de 4 h. La fosfomycine trométamol est soumise à une circulation entérohépatique. Après l'administration orale d'une dose unique de 3 g, le tmax est de 2-2,5 heures et la Cmax de 22-32 µg/ml.
+
+Distribution
+
+La fosfomycine est distribuée dans les tissus, y compris dans les reins et la paroi de la vessie. La fosfomycine ne se lie pas aux protéines plasmatiques. Le volume de distribution est de 136,1 l.
+
+La fosfomycine traverse la barrière placentaire et passe dans le lait maternel.
+
+Métabolisme
+
+La fosfomycine ne semble pas être métabolisée.
+
+Élimination
+
+La fosfomycine est excrétée sous forme inchangée principalement par les reins par filtration glomérulaire (40 % à 50% de la dose est retrouvée dans les urines) avec une demi-vie d'élimination d'environ 4 heures après la prise par voie orale et dans une moindre mesure, dans les selles (18-28 % de la dose). Même lorsque les aliments retardent l'absorption du médicament, la quantité totale du médicament excrétée dans l'urine au fil du temps est la même. Après administration unique de 3 g de fosfomycine trométamol, une concentration de fosfomycine de 1053–4415 µg/ml dans l’urine est atteinte après 2–4 heures. Des concentrations thérapeutiquement efficaces (>100 µg/ml) restent jusqu’à 48 heures après administration.
+
+Cinétique pour certains groupes de patients
+
+Chez les patients dont la fonction rénale est altérée, la demi-vie d'élimination est augmentée proportionnellement au degré d'insuffisance rénale. Les concentrations urinaires de fosfomycine chez les patients dont la fonction rénale est altérée restent efficaces pendant 48 heures après une dose habituelle, si la clairance de la créatinine est supérieure à 10 ml/min.
+
+Chez les personnes âgées, la clairance de la fosfomycine est réduite du fait de la diminution de la fonction rénale liée à l'âge.
+
+Données précliniques
+
+La fosfomycine n’a pas d’action mutagène. Aucun effet toxique dû à Fosfomycin Maddox n’a été mis en évidence lors des études sur la tératogénèse (rats, lapins), sur la fertilité (rats) et sur la toxicité pré- et post-natale (lapins).
+
+ 
+
+Remarques particulières
+
+Incompatibilités
+
+Non pertinent.
+
+Stabilité
+
+Ce médicament ne peut être utilisé au-delà de la date imprimée sur l’emballage avec «EXP».
+
+Remarques particulières concernant le stockage
+
+Ne pas conserver Fosfomycin Maddox au-dessus de 30 °C. Ne pas congeler. Conserver hors de portée des enfants.
+
+ 
+
+Numéro d’autorisation
+
+69292 (Swissmedic).
+
+ 
+
+Présentation
+
+Fosfomycin Maddox 3 g, granulés pour solution buvable: 1 sachet (A)
+
+ 
+
+Titulaire de l’autorisation
+
+MADDOX Pharma Swiss GmbH
+
+6503 Bellinzona
+
+ 
+
+Mise à jour de l’information
+
+Novembre 2022

@@ -1,0 +1,453 @@
+---
+titre: "Esoméprazole MUT Sandoz®"
+titulaire: "Sandoz Pharmaceuticals AG"
+atc: A02BC05
+substances: "Esomeprazolum (ut esomeprazolum magnesicum dihydricum)"
+autorisation_swissmedic: 65960
+date_version: 2025-05-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/6a17f1c8fb614a08a2220018589f3230-fr.html
+---
+
+Esoméprazole MUT Sandoz®
+
+Sandoz Pharmaceuticals AG
+
+Composition
+
+Principes actifs
+
+Esomeprazolum (ut esomeprazolum magnesicum dihydricum).
+
+Excipients
+
+Polysorbatum 80, macrogolum 4000, povidonum, sacchari spherae (corresp. saccharum max. 11,34 mg pour comprimé à 20 mg; resp. max. 22,68 mg pour comprimé à 40 mg, et maydis amylum), mannitolum, acidi methacrylicui et ethylis acrylatis polymerisatum 1:1, triethylis citras, talcum, glyceroli monostearas 40-50, paraffinum solidum, natrii stearylis fumaras, cellulosum microcristallinum, hypromellosum, titanii dioxidum (E171), ferri oxidum rubrum ed flavum (E172).
+
+1 comprimé à 20 mg contient 0,10 mg de sodium.
+
+1 comprimé à 40 mg contient 0,20 mg de sodium.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+1 comprimé gastro-résistant Esoméprazole MUT Sandoz 20 mg contient 20 mg d'ésoméprazole, lorsque à 21,69 mg d'ésoméprazole-magnésium-dihydrate.
+
+1 comprimé gastro-résistant Esoméprazole MUT Sandoz 40 mg contient 40 mg d'ésoméprazole, lorsque à 43,38 mg d'ésoméprazole-magnésium-dihydrate.
+
+Indications/Possibilités d’emploi
+
+Traitement de l'œsophagite de reflux.
+
+Prophylaxie à long terme de l'œsophagite de reflux.
+
+Traitement symptomatique du reflux gastro-œsophagien (pyrosis, renvois acides) sans œsophagite de reflux érosive/ulcéreuse.
+
+Eradication d'Helicobacter pylori en association avec des antibiotiques appropriés
+
+Guérison de l'ulcère duodénal associé à une infection par Helicobacter pylori.
+
+Prophylaxie des récidives de maladies ulcéreuses associées à Helicobacter pylori.
+
+Traitement curatif des ulcères gastriques induits par les AINS (y compris AINS sélectifs de la COX-2).
+
+Prévention des ulcères gastriques et duodénaux chez les patients à risque qui prennent des AINS (y compris des AINS sélectifs de la COX-2).
+
+Hypersécrétion pathologique y compris syndrome de Zollinger-Ellison et hypersécrétion idiopathique.
+
+Prévention de nouvelles hémorragies d'un ulcère gastrique ou duodénal hémorragique après le traitement à l'ésoméprazole i.v.
+
+Posologie/Mode d’emploi
+
+Posologie usuelle
+
+Adultes
+
+Œsophagite de reflux: 40 mg, 1 fois par jour, durant 4 semaines. Les patients dont l'œsophagite n'est pas totalement guérie ou dont les symptômes persistent peuvent être traités durant 4 semaines supplémentaires.
+
+Prophylaxie à long terme des récidives de l'œsophagite: 20 mg, 1 fois par jour.
+
+Traitement du reflux gastro-œsophagien symptomatique (pyrosis, renvois acides): Dans les cas où une œsophagite peut être exclue, la posologie est de 20 mg, 1 fois par jour. Si les symptômes persistent après 4 semaines de traitement, d'autres examens sont indiqués. Après la disparition des symptômes, de nouveaux troubles chez les patients qui ne prennent pas d'AINS peuvent être traités par l'administration de 20 mg, 1 fois par jour, si nécessaire (voir aussi «Mises en garde et précautions»).
+
+Guérison de l'ulcère duodénal associé à une infection par Helicobacter pylori: Traitement de 7 jours par la prise biquotidienne de 20 mg de Esoméprazole MUT Sandoz, 1 g d'amoxicilline et 500 mg de clarithromycine. Il n'est pas nécessaire de poursuivre le traitement par une monothérapie à base d'antisécrétoires gastriques.
+
+Prophylaxie des récidives d'ulcères associés à Helicobacter pylori: Traitement de 7 jours par la prise biquotidienne de 20 mg de Esoméprazole MUT Sandoz, 1 g d'amoxicilline et 500 mg de clarithromycine.
+
+Traitement curatif des ulcères gastriques imputables à un traitement par un AINS: 40 mg, 1 fois par jour, pendant 4 à 8 semaines.
+
+Prévention des ulcères gastriques et duodénaux liés à un traitement par un AINS chez les patients à risque: 20 mg, 1 fois par jour.
+
+Hypersécrétion pathologique y compris syndrome de Zollinger-Ellison et hypersécrétion idiopathique: La dose initiale recommandée est de 40 mg de Esoméprazole MUT Sandoz 2 fois par jour. La posologie sera ensuite adaptée individuellement. Poursuivre le traitement aussi longtemps qu'il est cliniquement indiqué. Des doses allant jusqu'à 120 mg 2 fois par jour ont été administrées. Les données cliniques disponibles montrent que des doses situées entre 80 mg et 160 mg permettent un contrôle satisfaisant des symptômes pour la plupart des patients. Si l'administration de doses supérieures à 80 mg/jour est nécessaire, il faudra répartir la dose sur deux prises par jour. L'expérience avec des doses supérieures à 80 mg par jour est limitée.
+
+Prévention de nouvelles hémorragies d'un ulcère gastrique ou duodénal après le traitement par ésoméprazole i.v.: Esoméprazole MUT Sandoz 40 mg 1 fois par jour pendant 4 semaines. La phase du traitement oral doit être précédée du traitement inhibiteur de l'acidité gastrique suivant à l'ésoméprazole i.v.: 40 à 80 mg d'ésoméprazole i.v. sous forme de perfusion rapide de 30 minutes, puis perfusion continue de 8 mg/h pendant 3 jours.
+
+Enfants et adolescents
+
+Adolescents de 12 à 18 ans
+
+Œsophagite de reflux: 40 mg, 1 fois par jour, durant 4 semaines. Les patients dont l'œsophagite n'est pas totalement guérie ou dont les symptômes persistent peuvent être traités durant 4 semaines supplémentaires.
+
+Prophylaxie à long terme des récidives de l'œsophagite: 20 mg, 1 fois par jour.
+
+Traitement du reflux gastro-œsophagien symptomatique (pyrosis, renvois acides): Dans les cas où une œsophagite peut être exclue, la posologie est de 20 mg, 1 fois par jour. Si les symptômes persistent après 4 semaines de traitement, d'autres examens sont indiqués. La réapparition de symptômes, après leur élimination initiale consécutive au traitement, peut être traitée sous contrôle médical par 20 mg, 1 fois par jour.
+
+Mode d'administration
+
+Avaler les comprimés d'Esoméprazole MUT Sandoz avec un peu de liquide. Les comprimés ne doivent être ni mâchés, ni broyés.
+
+Chez les patients qui ont des difficultés de déglutition, il est possible de dissoudre les comprimés dans de l'eau non gazeuse avant la prise. Remuer jusqu'à délitement des comprimés (la préparation est trouble). Prendre la préparation immédiatement ou dans les 30 minutes. Remuer une nouvelle fois juste avant la prise. Pour garantir la prise complète du médicament, rincer le verre avec un demi verre d'eau et le boire, car le principe actif est contenu dans les particules solides. Il ne faut ni mâcher ni broyer les pellets.
+
+Pour les patients qui ne sont pas en mesure d'avaler le médicament, les comprimés peuvent être dissous dans l'eau non gazeuse et administrés à travers une sonde gastrique.
+
+Instructions posologiques particulières
+
+Enfants:
+
+Esoméprazole MUT Sandoz ne doit pas être utilisé chez les enfants âgés de <12 ans, étant donné qu'il n'existe pas d'études à ce sujet.
+
+Patients âgés:
+
+Aucune adaptation posologique n'est requise chez les patients âgés.
+
+Patients présentant des troubles de la fonction rénale
+
+Aucun ajustement posologique n'est nécessaire en cas d'altération de la fonction rénale. En raison du manque d'expérience, il convient de traiter avec prudence les patients atteints d'insuffisance rénale sévère (voir «Pharmacocinétique»).
+
+Patients présentant des troubles de la fonction hépatique
+
+Il n'est pas nécessaire d'adapter la posologie chez les patients présentant une insuffisance hépatique légère à modérée. Ne pas dépasser une dose de 20 mg chez les patients souffrant d'insuffisance hépatique grave.
+
+Contre-indications
+
+Hypersensibilité connue à l'ésoméprazole, aux benzimidazoles substitués ou aux autres constituants des comprimés.
+
+Mises en garde et précautions
+
+En présence de signes inquiétants, comme une perte de poids involontaire significative, des vomissements persistants, une dysphagie, une hématémèse ou un méléna et si est suspecté un ulcère gastrique, il convient d'en exclure le caractère malin avant l'instauration du traitement par Esoméprazole MUT Sandoz. Sans clarification préalable de la malignité, le traitement risque de masquer les symptômes et de retarder le diagnostic.
+
+Une surveillance médicale régulière est recommandée pour les patients qui suivent un traitement prolongé (surtout ceux qui sont traités durant plus d'un an).
+
+Quand des patients prennent de l'ésoméprazole à la demande pour le traitement de symptômes récidivants de reflux gastro-œsophagien, il faut les informer de la nécessité de consulter leur médecin si les symptômes se modifient. Lors de la prescription d'ésoméprazole dans cette indication, il faut tenir compte des conséquences des interactions avec les autres médicaments, étant donné la fluctuation des concentrations plasmatiques d'ésoméprazole (voir aussi «Interactions»).
+
+Chez les patients souffrant d'un reflux gastro-œsophagien symptomatique qui nécessitent en même temps un traitement par AINS, les symptômes récidivants ne doivent pas être traités «à la demande» sans une nouvelle vérification du diagnostic par le médecin.
+
+Lors de la prescription d'ésoméprazole pour l'éradication de Helicobacter pylori, il faut tenir compte des possibles interactions avec les médicaments utilisés dans le cadre de la «trithérapie». La clarithromycine est un puissant inhibiteur du CYP3A4. C'est pourquoi il faut tenir compte des contre-indications et interactions avec la clarithromycine chez les patients qui reçoivent, en plus de la «trithérapie», d'autres médicaments qui sont métabolisés par l'intermédiaire du CYP3A4, comme par exemple le cisapride.
+
+Pendant le traitement avec des médicaments inhibiteurs de l'acidité, le taux sérique de gastrine augmente en réaction à la sécrétion réduite d'acidité. Le taux de chromogranine A (CgA) augmente également en réaction à la sécrétion réduite d'acidité. Le taux accru de CgA peut interférer avec des analyses effectuées pour le diagnostic de tumeurs neuroendocrines. Il est mentionné dans la littérature que tout traitement avec un IPP doit être interrompu 5 à 14 jours avant le dosage de la CgA réalisé dans le cadre du diagnostic ou du contrôle de l'évolution de tumeurs neuroendocrines, étant donné que les taux de CgA accrus par le traitement se normalisent en l'espace de 5 à 14 jours (ou d'une période plus longue dans de rares cas). Ce dosage doit être répété si les taux de CgA sont encore trop élevés après cet intervalle.
+
+La diminution de l'acidité dans l'estomac peut, de manière générale, augmenter le nombre de bactéries dans l'estomac. Un traitement par des substances qui inhibent l'acidité peut entraîner une légère augmentation du risque d'infections gastro-intestinales, notamment par des salmonelles ou par Campylobacter, ou éventuellement par Clostridium difficile chez des patients hospitalisés.
+
+L'administration concomitante d'ésoméprazole et de médicaments tels que l'atazanavir ou le nelfinavir n'est pas recommandée (voir «Interactions»).
+
+L'administration concomitante d'ésoméprazole et de clopidogrel est déconseillée (voir «Interactions»).
+
+Fractures osseuses:
+
+Les inhibiteurs de la pompe à protons peuvent, surtout lors d'une utilisation prolongée (>1 an) à dose élevée, accroître modérément le risque de fractures de la hanche, du poignet et de la colonne vertébrale, en particulier chez les patients âgés ou présentant d'autres facteurs de risque connus. Des études observationnelles suggèrent que les inhibiteurs de la pompe à protons peuvent augmenter le risque de fractures de 10 à 40%. Ce risque accru pourrait aussi être dû partiellement à d'autres facteurs de risque. Les patients présentant un risque d'ostéoporose doivent être traités conformément aux directives cliniques applicables et recevoir un apport suffisant en vitamine D et en calcium.
+
+Hypomagnésémie: Une hypomagnésémie sévère a été rapportée chez des patients traités pendant au moins trois mois, mais dans la majorité des cas pendant un an, par des inhibiteurs de la pompe à protons (IPP) tels que l'ésoméprazole. Des manifestations sérieuses d'hypomagnésémie telles qu'états d'épuisement, tétanie, délire, convulsions, vertiges et arythmies ventriculaires peuvent survenir, mais elles peuvent aussi se développer de façon insidieuse et passer ainsi inaperçues. Après l'administration de magnésium et l'arrêt de la prise de l'IPP, l'hypomagnésémie s'est améliorée chez la plupart des patients affectés. Chez les patients devant recevoir un traitement prolongé ou prenant un IPP en association avec de la digoxine ou d'autres médicaments susceptibles de causer une hypomagnésémie (p.ex. diurétiques), le médecin doit envisager des contrôles périodiques des taux de magnésium au cours du traitement par l'IPP.
+
+Lupus érythémateux cutané subaigu: Les inhibiteurs de la pompe à protons sont associés à des cas très peu fréquents de Lupus érythémateux cutané subaigu (LECS). Si des lésions se développent, notamment sur les zones cutanées exposées au soleil, et si elles s'accompagnent d'arthralgie, le patient doit consulter un médecin rapidement et le professionnel de santé doit envisager d'arrêter Esoméprazole MUT Sandoz. La survenue d'un LECS après traitement par un inhibiteur de la pompe à protons peut augmenter le risque de LECS avec d'autres inhibiteurs de la pompe à protons.
+
+Réactions indésirables cutanées sévères (SCAR)
+
+Des réactions indésirables cutanées sévères (SCAR) telles que l'érythème polymorphe (EP), le syndrome de Stevens-Johnson (SSJ), la nécrolyse épidermique toxique (NET), la réaction médicamenteuse avec éosinophilie et symptômes systémiques (DRESS), qui peuvent mettre en jeu le pronostic vital ou être mortelles, ont été rapportées dans de très rares cas en association avec un traitement par l'ésoméprazole.
+
+Les patients doivent être informés des signes et symptômes des réactions cutanées sévères EP/SSJ/NET/DRESS et consulter leur médecin immédiatement s'ils les observent. L'ésoméprazole doit être immédiatement arrêté en cas de signes et symptômes de réactions cutanées sévères et une surveillance étroite/des soins médicaux supplémentaires doivent être assurés au besoin. Le traitement ne doit pas être repris chez les patients atteints d'EP/SSJ/NET/DRESS.
+
+Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé des deux dosages, c.-à-d. qu'il est pratiquement «sans sodium».
+
+Interactions
+
+Effets de l'ésoméprazole d'autres substances
+
+L'inhibition de l'acidité gastrique sous ésoméprazole ou sous un autre IPP peut provoquer une augmentation ou une réduction de l'absorption de médicaments dont l'absorption est influencée par le pH intragastrique. Comme en cas d'utilisation d'autres inhibiteurs de l'acidité intragastrique, l'absorption de médicaments tels que le kétoconazole, l'itraconazole ou l'erlotinib peut être réduite et l'absorption de médicaments tels que la digoxine peut être accrue au cours d'un traitement par l'ésoméprazole. Chez des sujets sains, l'administration concomitante d'oméprazole (20 mg par jour) et de digoxine a conduit à une augmentation de 10% de la biodisponibilité de la digoxine (chez 2 sujets, l'augmentation a atteint jusqu'à 30%).
+
+L'ésoméprazole inhibe le CYP2C19, la principale enzyme impliquée dans son métabolisme. La concentration plasmatique de substances métabolisées par le CYP2C19, comme le diazépam, le citalopram, l'imipramine, la clomipramine, la phénytoïne etc. peut par conséquent augmenter, ce qui peut nécessiter une réduction de la dose. Cela doit surtout être pris en compte en cas de prise irrégulière.
+
+En cas d'administration concomitante de 30 mg d'ésoméprazole et de diazépam, on a observé une réduction de la clairance du diazépam de 45%. L'augmentation des taux plasmatiques de diazépam n'a toutefois été observée qu'au plus tôt 12 heures après administration. Les taux plasmatiques se situent alors au-dessous de la fourchette thérapeutique, ce qui rend improbable une interaction clinique.
+
+En cas d'administration concomitante de 40 mg d'ésoméprazole et de phénytoïne, les concentrations plasmatiques minimales de phénytoïne ont augmenté de 13% chez des épileptiques. Il est donc recommandé de surveiller les taux plasmatiques de phénytoïne lors de l'instauration ou de l'arrêt du traitement par l'ésoméprazole.
+
+Lors de l'administration concomitante de 40 mg d'ésoméprazole à des patients traités par la warfarine, la concentration plasmatique minimale de l'isomère R de la warfarine, moins actif, a certes légèrement augmenté, mais les temps de coagulation sont néanmoins restés à l'intérieur de la fourchette acceptable. Depuis la mise sur le marché, des cas d'augmentation cliniquement significative de l'INR sous traitement concomitant par la warfarine ont été toutefois signalés. Une surveillance étroite est recommandée au début et à la fin d'un traitement par la warfarine ou d'un traitement par d'autres dérivés de la coumarine.
+
+Tout comme l'ésoméprazole, l'oméprazole est un inhibiteur du CYP2C19. Dans une étude croisée, l'administration de 40 mg d'oméprazole chez des volontaires a augmenté la Cmax et de l'ASC du cilostazol de 18 et de 26% respectivement, et celles d'un métabolite actif du cilostazol de 29 et de 69% respectivement.
+
+L'administration concomitante de 40 mg d'ésoméprazole et de cisapride à des volontaires sains a entraîné une augmentation de 32% de l'ASC du cisapride et de 31% de sa demi-vie d'élimination, mais pas une augmentation significative des concentrations plasmatiques maximales. Après l'administration de cisapride seul, on a observé un léger allongement de l'intervalle QTc, mais cet allongement ne s'accentue pas après la prise de cisapride et d'ésoméprazole (voir aussi «Mises en garde et précautions»).
+
+Des taux sériques accrus de tacrolimus ont été rapportés lors d'une utilisation concomitante d'ésoméprazole et de tacrolimus. Les taux sériques de tacrolimus doivent être contrôlés au début ou à la fin du traitement par l'ésoméprazole.
+
+Chez certains patients, on a observé un taux accru de méthotrexate lors d'un traitement concomitant avec un inhibiteur de la pompe à protons. Chez les patients recevant du méthotrexate fortement dosé, il est recommandé de suspendre l'administration d'ésoméprazole.
+
+Des interactions entre l'oméprazole et des agents antirétroviraux ont été rapportées. La signification clinique et les mécanismes de ces interactions rapportées ne sont pas toujours connus. Un pH intragastrique accru pendant un traitement à l'oméprazole peut éventuellement modifier l'absorption du médicament antirétroviral. D'autres mécanismes d'interaction possibles dépendent du CYP2C19. Pour certains agents antirétroviraux tels que l'atazanavir et le nelfinavir, on a rapporté des taux sériques réduits lors d'une administration concomitante d'oméprazole. Par conséquent, une telle association n'est pas recommandée. L'administration d'oméprazole (40 mg, 1x par jour) chez des sujets sains recevant en même temps de l'atazanavir 300 mg/ritonavir 100 mg a entraîné une réduction considérable de l'exposition à l'atazanavir (réduction de l'ASC, de la Cmax et de la Cmin d'environ 75%). L'augmentation de la dose d'atazanavir à 400 mg n'a pas compensé l'influence de l'oméprazole sur l'exposition à l'atazanavir. Des taux sériques accrus ont été rapportés pour d'autres agents antirétroviraux, par exemple pour le saquinavir. Il existe aussi certains agents antirétroviraux dont le taux sérique reste inchangé lors d'une administration concomitante d'oméprazole. Sachant que l'oméprazole et l'ésoméprazole ont des effets pharmacodynamiques et des propriétés pharmacocinétiques similaires, une administration d'ésoméprazole en association avec un traitement aux agents antirétroviraux tels que l'atazanavir ou le nelfinavir n'est pas recommandée.
+
+On a pu démontrer que l'ésoméprazole ne possède pas d'effets cliniquement significatifs sur la pharmacocinétique de l'amoxicilline ou de la quinidine.
+
+Dans des études de courte durée portant sur l'administration simultanée d'ésoméprazole et de naproxène, aucune interaction pharmacocinétique cliniquement pertinente n'a pu être mise en évidence.
+
+Les études auprès de volontaires sains ont révélé une interaction pharmacocinétique/pharmacodynamique entre le clopidogrel et l'ésoméprazole. Dans une de ces études, le clopidogrel a été administré à une dose initiale de 300 mg, puis à une dose d'entretien de 75 mg par jour en association avec 40 mg d'ésoméprazole par jour. Les concentrations plasmatiques du métabolite actif du clopidogrel ont baissé en moyenne de 40% d'après les tests effectués les jours 5, 14 et 29 de l'étude. L'inhibition maximale de l'agrégation plaquettaire après stimulation par ADP a baissé de 14% en moyenne. L'interaction ne peut pas être évitée par un écart temporel entre l'administration du clopidogrel et l'administration de l'ésoméprazole. Des données contradictoires concernant la pertinence clinique de cette interaction PC/PD en termes de complications cardio-vasculaires sévères ont été rapportées par des études observationnelles et des études cliniques. Dans ces conditions, il est recommandé d'éviter une administration concomitante de clopidogrel et d'ésoméprazole.
+
+Effets d'autres substances de l'ésoméprazole
+
+L'ésoméprazole est métabolisé par le CYP2C19 et le CYP3A4. L'administration concomitante d'ésoméprazole et de clarithromycine, un inhibiteur du CYP3A4 (500 mg 2 fois par jour), a eu pour conséquence de doubler l'ASC de l'ésoméprazole. L'administration concomitante d'ésoméprazole et d'un inhibiteur combiné du CYP2C19 et du CYP3A4 comme par ex. le voriconazole peut provoquer plus que le doublement de la Cmax et de l'ASC de l'ésoméprazole. Toutefois, une adaptation posologique de l'ésoméprazole lors d'une posologie usuelle n'est nécessaire dans aucun de ces deux cas. Les médicaments inducteurs du CYP2C19 et/ou du CYP3A4 (par exemple rifampicine ou millepertuis [Hypericum perforatum]) peuvent réduire le taux sérique d'ésoméprazole en augmentant le métabolisme de l'ésoméprazole.
+
+Grossesse, allaitement
+
+Grossesse
+
+Il faut être prudent lors de l'utilisation de ce médicament pendant la grossesse.
+
+Des études de reproduction chez l'animal n'ont pas démontré de risque fœtal mais on ne dispose pas d'étude contrôlée chez la femme enceinte.
+
+Le risque potentiel pour l'humain n'es pas connu.
+
+La prudence est de mise en cas d'emploi pendant la grossesse.
+
+Allaitement
+
+On ignore si l'ésoméprazole passe dans le lait maternel. Aucune étude n'a été menée chez des mères qui allaitent. Esoméprazole MUT Sandoz ne doit donc pas être utilisé pendant l'allaitement.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Esoméprazole MUT Sandoz n'a pas d'effet sur l'aptitude à la conduite automobile ou à l'utilisation de machines.
+
+Effets indésirables
+
+Les effets indésirables suivants ont été observés ou suspectés au cours des études cliniques portant sur l'ésoméprazole et/ou depuis sa mise sur le marché. Aucun d'entre eux n'était dépendant de la dose.
+
+Définition des fréquences de survenue:
+
+Fréquents ≥1/100 à <1/10.
+
+Occasionnels ≥1/1000 à <1/100.
+
+Rares ≥1/10'000 à <1/1000.
+
+Très rares <1/10'000.
+
+Affections hématologiques et du système lymphatique
+
+Rares: Leucopénie, thrombopénie.
+
+Très rares: Agranulocytose, pancytopénie.
+
+Affections du système immunitaire
+
+Rares: Réactions d'hypersensibilité (par exemple œdème angioneurotique, réaction anaphylactique/choc).
+
+Troubles du métabolisme et de la nutrition
+
+Occasionnels: Œdèmes périphériques.
+
+Rares: Hyponatrémie.
+
+Très rares: Hypomagnésémie (voir «Mises en garde et précautions»); une hypomagnésémie sérieuse peut entraîner une hypocalcémie. Une hypomagnésémie peut entraîner une hypokaliémie.
+
+Affections psychiatriques
+
+Occasionnels: Troubles du sommeil.
+
+Rares: Agitation, confusion, dépression.
+
+Très rares: Agressivité, hallucination.
+
+Affections du système nerveux
+
+Fréquents: Maux de tête.
+
+Occasionnels: Obnubilation, vertiges, paresthésie, somnolence.
+
+Rares: Modifications du goût.
+
+Affections oculaires
+
+Rares: Vision floue.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Rares: Constriction des voies respiratoires.
+
+Affections gastro-intestinales
+
+Fréquents: Douleurs abdominales, constipation, diarrhée, flatulences, nausées, vomissements, polypes des glandes fundiques (bénins).
+
+Occasionnels: Sécheresse de la bouche.
+
+Rares: Stomatite, candidose gastro-intestinale.
+
+Très rares: Colite microscopique.
+
+Affections hépatobiliaires
+
+Occasionnels: Augmentation du taux des enzymes hépatiques.
+
+Rares: Hépatite avec ou sans ictère.
+
+Très rares: Insuffisance hépatique, encéphalopathie hépatique.
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: Dermatite, prurit, urticaire, rash.
+
+Rares: Alopécie, photosensibilité.
+
+Très rares: Erythème exsudatif polymorphe, syndrome de Stevens Johnson, nécrolyse épidermique toxique (NET), Lupus érythémateux cutané subaigu (LECS), pustulose exanthématique aiguë généralisée (PEAG), réaction médicamenteuse avec éosinophilie et symptômes systémiques (DRESS).
+
+Affections musculo-squelettiques et du tissu conjonctif
+
+Occasionnels: Fracture de la hanche, du poignet ou de la colonne vertébrale.
+
+Rares: Arthralgie, myalgie.
+
+Très rares: Faiblesse musculaire.
+
+Affections du rein et des voies urinaires
+
+Très rares: Néphrite interstitielle.
+
+Affections des organes de reproduction et du sein
+
+Très rares: Gynécomastie.
+
+Troubles généraux et anomalies au site d'administration
+
+Rares: Malaise, transpiration accrue.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Les symptômes provoqués par un surdosage délibéré en ésoméprazole (nausées, selles molles et faiblesse) ont été transitoires (expérience limitée avec une dose dépassant 240 mg par jour). On n'a relevé aucun incident après l'administration de doses uniques de 80 mg d'ésoméprazole.
+
+On ne connaît pas d'antidote spécifique.
+
+La majeure partie de l'ésoméprazole est liée aux protéines; l'ésoméprazole n'est donc pas rapidement dialysable.
+
+Comme dans tout cas de surdosage, le traitement doit être symptomatique et des mesures générales de soutien doivent être mises en place.
+
+Propriétés/Effets
+
+Code ATC
+
+A02BC05
+
+Mécanisme d'action
+
+L'ésoméprazole est une base faible; il est concentré dans le milieu fortement acide des canalicules sécrétoires de la cellule pariétale où il est converti en sa forme active. Au niveau de la cellule pariétale, l'ésoméprazole provoque un blocage de l'enzyme H+/K+-ATPase, la pompe à protons; il inhibe ainsi très efficacement la sécrétion acide basale comme la sécrétion produite par un stimulus.
+
+Effet sur la sécrétion gastrique d'acide
+
+L'effet apparaît dans un délai d'une heure après l'administration orale de 20 ou 40 mg d'ésoméprazole. En cas de prise répétée de 20 mg d'ésoméprazole, 1 fois par jour, durant 5 jours, la valeur maximale moyenne de la sécrétion d'acide après une stimulation par la pentagastrine est réduite de 90% (mesure effectuée le 5ème jour, environ 6 à 7 h après la prise de la substance).
+
+Après une administration orale de 20 ou 40 mg d'ésoméprazole durant 5 jours, il a été possible de maintenir un pH intragastrique supérieur à 4 pendant en moyenne 13 ou 17 heures; chez des patients souffrant d'un reflux gastro-œsophagien symptomatique (RGO), cet effet a persisté pendant plus de 24 heures.
+
+La proportion des patients dont le pH intragastrique a dépassé 4 pendant au moins 8, 12 ou 16 heures était de 76%, 54% et 24% après une prise de 20 mg d'ésoméprazole et de 97%, 92% et 56% avec 40 mg d'ésoméprazole.
+
+Si l'on utilise la surface sous la courbe (ASC) de la concentration plasmatique en fonction du temps, il est possible d'établir un rapport entre l'inhibition de l'acidité et l'ASC.
+
+Dans une étude clinique randomisée, en double aveugle, avec contrôle par placebo, 764 patients souffrant d'un ulcère gastro-duodénal hémorragique confirmé par endoscopie ont été assignés par randomisation à un traitement par ésoméprazole i.v. (n=375) ou à un traitement par placebo (n=389). Après hémostase endoscopique, les patients ont reçu soit 80 mg d'ésoméprazole, soit un placebo sous forme de perfusion i.v. de 30 minutes, puis d'une perfusion constante de 8 mg/h pendant 72 heures au total. Après ces premières 72 heures, tous les patients ont reçu pendant 27 jours ésoméprazole 40 mg par voie orale pour inhiber l'acidité gastrique. Dans le groupe traité par ésoméprazole i.v., une nouvelle hémorragie au cours des 3 premiers jours s'est produite chez 5,9% des patients, par rapport à 10,3% dans le groupe sous placebo (p=0,0256). Une nouvelle hémorragie au cours des 7 premiers jours a été observée chez 7,2% des patients ayant reçu ésoméprazole i.v., par rapport à 12,9% des patients ayant reçu le placebo (p=0,0096). Une nouvelle hémorragie au cours des 30 premiers jours a été observée chez 7,7% des patients ayant reçu ésoméprazole i.v., par rapport à 13,6% des patients ayant reçu le placebo (p=0,0092). Aucune hémorragie ne s'est produite dans la troisième ou la quatrième semaine de l'étude.
+
+Courbe de Kaplan-Meier du pourcentage cumulé de patients ayant subi une nouvelle hémorragie au cours des 30 premiers jours
+
+Effets thérapeutiques de l'inhibition de l'acidité
+
+Une dose quotidienne de 40 mg d'ésoméprazole a permis d'obtenir une guérison de l'œsophagite de reflux en 4 semaines chez environ 78% des patients, et en 8 semaines chez environ 93% des patients. Un traitement d'une semaine par 20 mg d'ésoméprazole, 2 fois par jour, combiné avec des antibiotiques appropriés, a permis l'éradication d'Helicobacter pylori chez environ 90% des patients. Après une semaine de traitement d'éradication, il n'est pas nécessaire d'enchaîner une monothérapie à base d'inhibiteurs de l'acidité pour parvenir à une guérison effective de l'ulcère et à la disparition des symptômes.
+
+Autres effets en relation avec l'inhibition de l'acidité
+
+On a constaté aussi bien chez l'enfant que chez l'adulte, pendant un traitement prolongé par l'ésoméprazole, une augmentation du nombre de cellules ECL (cellules entérochromaffine-like), ce qui peut s'expliquer par l'augmentation du taux sérique de gastrine. Chez plus de 1000 patients traités par ésoméprazole (10, 20 ou 40 mg par jour) pendant 6 à 12 mois, la prévalence de l'hyperplasie des cellules ECL a augmenté en fonction de la dose et de la durée du traitement. Dans aucun cas il n'est apparu de tumeur carcinoïde à cellules ECL, de dysplasie des cellules ECL ou de cancer de la muqueuse gastrique.
+
+La diminution de l'acidité dans l'estomac peut, de manière générale, augmenter le nombre de bactéries dans l'estomac. Un traitement par des substances qui inhibent l'acidité peut entraîner une légère augmentation du risque d'infections gastro-intestinales, notamment par des salmonelles ou par Campylobacter, ou éventuellement par Clostridium difficile chez des patients hospitalisés.
+
+L'efficacité de l'ésoméprazole pour le traitement curatif des ulcères gastriques a fait l'objet de deux études multicentriques, menées en double insu comparativement à un médicament actif sur un effectif de 846 patients âgés de 18 à 88 ans (âge médian: 59,5 ans). 262 patients ont reçu 40 mg de l'ésoméprazole une fois par jour, 276 patients 20 mg de l'ésoméprazole une fois par jour et 271 patients 150 mg de ranitidine deux fois par jour. Tous les patients avaient pris des AINS (y compris AINS sélectifs de la COX-2) pendant au moins quatre semaines avant la randomisation et ont poursuivi ce traitement pendant toute la durée de l'étude. Ces patients n'étaient pas infectés par Helicobacter pylori et présentaient un ulcère gastrique confirmé par l'endoscopie dont le diamètre allait jusqu'à 25 mm. Au bout de 4 et 8 semaines, les taux de guérison des ulcères gastriques ont été plus élevés dans le groupe traité avec 40 mg d'ésoméprazole et le groupe traité avec 20 mg d'ésoméprazole que dans le groupe ranitidine. Sous traitement avec 40 mg d'ésoméprazole, le taux de guérison au bout de 4 semaines de traitement était de 78% (p=0,036, les valeurs de p indiquées s'appliquent à la comparaison avec la ranitidine) dans la première étude et de 71% (p=0,009) dans la deuxième étude; au bout de 8 semaines, les taux de guérison étaient de 92% (p<0,001) dans la première étude et de 86% (p=0,047) dans la deuxième étude.
+
+L'efficacité de l'ésoméprazole pour la prévention des ulcères gastriques et duodénaux a été évaluée dans deux études multicentriques menées en double versus un placebo, sur un effectif de 1429 patients. 480 patients ont reçu 40 mg d'ésoméprazole une fois par jour, 476 patients 20 mg d'ésoméprazole une fois par jour et 473 un placebo. Pendant toute la durée de l'étude, tous les patients ont pris des AINS (y compris des AINS sélectifs de la COX-2). Ces patients n'étaient pas infectés par Helicobacter pylori mais il s'agissait de patients à risque (c'est-à-dire qu'ils avaient présenté un ulcère gastrique ou duodénal authentifié au cours des 5 années précédentes et/ou avaient au moins 60 ans). Pendant les 6 mois de traitement, la proportion cumulée de patients sans ulcère gastrique ou duodénal a été plus élevée chez les patients traités par ésoméprazole que dans le groupe placebo. Dans la première étude, le pourcentage cumulé observé de patients sans ulcère gastrique ou duodénal a été de 95,9% dans le groupe traité par 40 mg d'ésoméprazole (p=0,0074 versus placebo; test des rangs logarithmiques); dans le groupe traité par 20 mg d'ésoméprazole, ce pourcentage a été de 95,3% (p=0,0180 versus placebo; test des rangs logarithmiques); dans le groupe placebo, il était de 89,2%. Dans la deuxième étude, ce pourcentage était de 95,9% pour les patients traités par 40 mg de Esoméprazole MUT Sandoz (p<0,001 versus placebo; test des rangs logarithmiques), de 95,5% pour les patients traités avec 20 mg d'ésoméprazole (p=0,0001; versus placebo; test des rangs logarithmiques) et de 82,8% dans le groupe placebo. Il n'existe pas d'études cliniques qui aient permis d'évaluer l'effet prophylactique pendant plus de 6 mois.
+
+Pharmacodynamique
+
+L'ésoméprazole est l'énantiomère S du racémate oméprazole. L'ésoméprazole diminue la sécrétion gastrique d'acide par un mécanisme d'action spécifique et ciblé. L'ésoméprazole est un inhibiteur spécifique de la pompe à protons de la cellule pariétale.
+
+Efficacité clinique
+
+Voir aussi «Mécanisme d'action».
+
+Pharmacocinétique
+
+Absorption
+
+L'ésoméprazole est instable en milieu acide; il est par conséquent administré per os sous forme de comprimés gastrorésistants constitués de micropellets filmés gastrorésistants. In vivo, la transformation en énantiomère R est négligeable. L'absorption de l'ésoméprazole est rapide; les concentrations plasmatiques maximales sont atteintes environ 1 à 2 h après l'administration. La biodisponibilité absolue est de 64% après la prise d'une dose unique de 40 mg et atteint 89% après administration répétée une fois par jour. Les valeurs correspondantes pour 20 mg sont respectivement de 50% et 68%.
+
+La prise d'aliments ralentit et diminue l'absorption de l'ésoméprazole mais ce phénomène n'a toutefois pas d'influence notable sur l'effet de l'ésoméprazole sur l'acidité intragastrique.
+
+Distribution
+
+Le volume de distribution apparent à l'état stationnaire est d'environ 0,22 l/kg chez des volontaires sains. L'ésoméprazole se lie aux protéines plasmatiques à raison de 97%.
+
+Métabolisme
+
+L'ésoméprazole est totalement métabolisé par le système du cytochrome P450. La majeure partie de l'ésoméprazole est métabolisée par l'enzyme polymorphe CYP2C19, responsable de la formation des métabolites hydroxylés et déméthylés. Le reste du métabolisme dépend de l'iso-enzyme spécifique CYP3A4, responsable de la formation du principal métabolite plasmatique, l'ésoméprazole sulfone.
+
+Ces paramètres reflètent principalement la pharmacocinétique que l'on observe chez les personnes dont l'enzyme CYP2C19 est fonctionnelle, appelées «métaboliseurs rapides».
+
+Élimination
+
+La clairance plasmatique totale est d'environ 17 l/h après administration d'une dose unique et d'environ 9 l/h après une prise répétée.
+
+La demi-vie d'élimination plasmatique est d'environ 1,3 h après administration répétée d'une dose quotidienne unique.
+
+L'ASC augmente après administration répétée d'ésoméprazole. Cette augmentation dépend de la dose et conduit à un rapport dose/AUC non linéaire après une administration répétée. Cette dépendance du temps et de la dose est imputable à une réduction du métabolisme de premier passage et une diminution de la clairance systémique, causées vraisemblablement par une inhibition de l'enzyme CYP2C19 par l'ésoméprazole et/ou son métabolite sulfone. L'ésoméprazole est totalement éliminé du plasma et n'entraîne pas d'accumulation en cas d'utilisation normale.
+
+L'exposition totale (ASC) et le tmax (temps jusqu'à l'obtention de la concentration plasmatique maximale d'ésoméprazole) après l'administration répétée de 20 mg ou de 40 mg d'ésoméprazole chez l'adolescent (de 12 à 18 ans) se sont avérés similaires, pour les deux doses, aux valeurs observées chez l'adulte.
+
+Les principaux métabolites de l'ésoméprazole n'exercent aucun effet sur la sécrétion acide de l'estomac. Près de 80% d'une dose d'ésoméprazole administrée par voie orale sont éliminés dans l'urine comme métabolites, le reste l'étant par les fèces. On retrouve moins de 1% de la substance sous forme inchangée dans l'urine.
+
+Cinétique pour certains groupes de patients
+
+Environ 3% de la population possèdent une enzyme CYP2C19 non fonctionnelle et sont par conséquent appelés «métaboliseurs lents». Dans ce groupe de patients, le métabolisme de l'ésoméprazole est catalysé principalement par le CYP3A4. Après administration quotidienne répétée d'une dose unique de 40 mg d'ésoméprazole, l'ASC moyenne augmente de 35% à 65% chez les métaboliseurs lents par rapport aux métaboliseurs rapides. Les concentrations plasmatiques maximales moyennes sont supérieures d'environ 60%. Cette exposition plus importante n'a vraisemblablement pas de conséquences cliniques.
+
+Patients âgées:
+
+Le métabolisme de l'ésoméprazole ne subit aucune modification chez les patients âgés (71–80 ans).
+
+Sexe:
+
+Après une prise unique de 40 mg d'ésoméprazole, la valeur moyenne de l'aire sous la courbe des concentrations plasmatiques en fonction du temps est plus élevée (d'environ 30%) chez les femmes que chez les hommes. Cependant, on n'a pas observé de différence entre les sexes après la prise répétée d'une dose par jour. Ces observations n'ont pas d'incidences sur la posologie de l'ésoméprazole dans les deux sexes.
+
+Insuffisance hépatique:
+
+En cas d'insuffisance hépatique légère à modérée, le métabolisme de l'ésoméprazole peut être perturbé. En cas d'insuffisance hépatique grave, le taux de métabolisme est diminué, ce qui provoque un doublement de l'ASC de l'ésoméprazole. C'est pourquoi il ne faut pas dépasser une dose de 20 mg, en cas d'insuffisance hépatique grave. L'ésoméprazole et ses principaux métabolites n'ont aucune tendance à s'accumuler en cas d'administration quotidienne unique.
+
+Insuffisance rénale:
+
+Il n'existe pas d'études portant sur les insuffisants rénaux. Comme seule l'élimination des métabolites de l'ésoméprazole – mais non de la substance inchangée – se fait par voie rénale, on ne s'attend à aucune modification du métabolisme de l'ésoméprazole chez les insuffisants rénaux.
+
+Données précliniques
+
+Les études précliniques dites «corrélationnelles» – basées sur des études classiques de toxicité après administration répétée, des études de génotoxicité et des études de toxicité pour la reproduction – n'ont révélé aucun danger particulier pour l'humain. Des études de cancérogénicité menées sur des rats traités par le mélange racémique ont montré une hyperplasie des cellules ECL gastriques et des tumeurs carcinoïdes. Ces modifications constatées chez le rat sont la conséquence d'une hypergastrinémie importante et prolongée, résultant de la diminution de la production d'acidité gastrique. On les observe chez le rat après traitement prolongé par des inhibiteurs de la sécrétion d'acide.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage original, pas au-dessus de 25°C, à l'abri de l'humidité et hors de la portée des enfants.
+
+Numéro d’autorisation
+
+65960 (Swissmedic)
+
+Présentation
+
+Esoméprazole MUT Sandoz 20 mg, comprimés gastro-résistants: 14, 28, 56 et 98. [B]
+
+Esoméprazole MUT Sandoz 40 mg, comprimés gastro-résistants: 14, 28, 56 et 98. [B]
+
+Titulaire de l’autorisation
+
+Sandoz Pharmaceuticals SA, Risch; domicile: Rotkreuz
+
+Mise à jour de l’information
+
+Mai 2025

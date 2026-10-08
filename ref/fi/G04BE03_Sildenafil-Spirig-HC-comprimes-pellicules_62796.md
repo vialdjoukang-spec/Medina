@@ -1,0 +1,495 @@
+---
+titre: "Sildénafil Spirig HC®, comprimés pelliculés"
+titulaire: "Spirig HealthCare AG"
+atc: G04BE03
+substances: "n.d."
+autorisation_swissmedic: 62796
+date_version: 2025-10-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/19418269999f4b459e4bd3d21764123c-fr.html
+---
+
+Sildénafil Spirig HC®, comprimés pelliculés
+
+Spirig HealthCare AG
+
+Composition
+
+Principe actif
+
+Sildénafil sous forme de sildénafil citrate.
+
+Excipients
+
+Lactose monohydraté, cellulose microcristalline, hydroxypropylcellulose, croscarmellose sodique, fumarate de stéaryle sodique, silice colloïdale anhydre.
+
+Pelliculage:
+
+Hypromellose, polydextrose FCC (E 1200), dioxyde de titane (E 171), talc, maltodextrine, indigotine (E132), triglycérides à chaine moyenne, Ponceau 4R (E124), carmellose sodique, glucose monohydraté, silicate alumino-potassique, lécithine de soja (E 322).
+
+1 comprimé pelliculé de 25 mg de sildénafil contient 73 mg de lactose monohydraté, 0.53 mg de sodium, 0.23 mg de glucose monohydraté et 0.004 mg d'E124.
+
+1 comprimé pelliculé de 50 mg sildénafil contient 146 mg lactose monohydraté, 1.05 mg de sodium, 0.46 mg de glucose monohydraté et 0.008 mg d'E124.
+
+1 comprimé pelliculé de 100 mg sildénafil contient 292 mg lactose monohydraté, 2.09 mg de sodium, 0.91 mg de glucose monohydraté et 0.016 mg d'E124.
+
+Forme galénique et quantité de principe actif par unité
+
+Comprimés pelliculés de 25 mg, 50 mg et 100 mg sildénafil.
+
+Le comprimé filmé de 100 mg a un sillon de sécabilité en croix et est quadri-sécable.
+
+Indications/Possibilités d’emploi
+
+Sildénafil Spirig HC est indiqué dans le traitement de la dysfonction érectile chez l'homme.
+
+Sildénafil Spirig HC ne peut agir qu'en réponse à une stimulation sexuelle.
+
+Posologie/Mode d’emploi
+
+Posologie usuelle
+
+La dose recommandée est de 50 mg. Elle sera prise en cas de besoin environ une heure avant un rapport sexuel. En fonction de l'efficacité et de la tolérance observée, la dose pourra être augmentée à 100 mg ou réduite à 25 mg. La dose maximale recommandée est de 100 mg. Sildénafil Spirig HC ne doit pas être pris plus d'une fois par jour. Si le sildénafil est pris avec de la nourriture, l'installation de son effet peut être retardée par rapport à une prise à jeun (voir «Pharmacocinétique - Absorption»).
+
+Instructions spéciales pour le dosage
+
+Enfants et adolescents
+
+L'utilisation de ce médicament n'est pas indiquée chez des personnes de moins de 18 ans.
+
+Patients âgés
+
+La clairance du sildénafil étant réduite chez le sujet âgé, la dose initiale ne devrait pas dépasser 25 mg (voir «Pharmacocinétique»). La dose pourra être portée à 50 mg ou 100 mg en fonction de l'efficacité et de la tolérance. Les risques cardiovasculaires de ce collectif d'âge doivent être pris en considération (voir «Mises en garde et précautions»).
+
+Patients présentant des troubles de la fonction rénale
+
+En cas d'insuffisance rénale légère à modérée (clairance de la créatinine = 30-80 ml/min), aucune adaptation posologique n'est nécessaire. La clairance du sildénafil étant réduite chez les patients présentant une insuffisance rénale sévère (clairance de la créatinine <30 ml/min), il faut choisir une dose initiale de 25 mg. La dose pourra être portée à 50 mg ou 100 mg en fonction de l'efficacité et de la tolérance.
+
+Patients présentant des troubles de la fonction hépatique
+
+La clairance du sildénafil étant réduite chez les patients présentant une altération de la fonction hépatique, on optera pour une dose initiale de 25 mg. La dose pourra être portée à 50 mg ou 100 mg en fonction de l'efficacité et de la tolérance. Aucune étude n'a inclus de patients atteints d'une insuffisance hépatique sévère.
+
+Co-administration d'autres médicaments
+
+Ritonavir: La co-administration de sildénafil et de ritonavir n'est pas recommandée (voir «Mises en garde et précautions» et «Interactions»). Si toutefois la prescription de sildénafil à un patient sous ritonavir s'avère indispensable, la dose maximale de sildénafil ne devra pas dépasser 25 mg en 48 heures.
+
+Inhibiteurs du CYP3A4: Pour les patients traités simultanément par un inhibiteur du CYP3A4 (p.ex. itraconazole, voriconazole, clarithromycine, érythromycine, saquinavir; pour le ritonavir, voir plus haut), on prescrira une dose initiale de 25 mg de sildénafil (voir «Mises en garde et précautions» et «Interactions»).
+
+Antagonistes des récepteurs α: Afin de minimiser l'éventuelle survenue d'une hypotension orthostatique, les patients sous traitement alpha-bloquant doivent être stabilisés avant d'initier un traitement par sildénafil. De plus, l'instauration du traitement par sildénafil aura lieu à la dose de 25 mg (voir «Mises en garde et précautions» et «Interactions»).
+
+Mode d'administration
+
+Les comprimés pelliculés de Sildénafil Spirig HC doivent être pris par voie orale, environ une heure avant un rapport sexuel.
+
+Contre-indications
+
+On a pu montrer que le sildénafil potentialise l'effet hypotenseur des dérivés nitrés étant donné son effet pharmacologique sur la voie métabolique du monoxyde d'azote/GMPc (voir «Propriétés/Effets»). C'est pourquoi l'administration de Sildénafil Spirig HC à des patients qui utilisent un médicament libérant du monoxyde d'azote (p.ex. la molsidomine, d'autres vasodilatateurs coronariens avec nitro-composé ou un dérivé nitré, quel qu'il soit) est contre-indiquée (voir «Interactions» et «Mises en garde et précautions»).
+
+Par ailleurs, il faudra expressément informer les patients qu'ils ne doivent en aucun cas utiliser des «poppers» (nitrite d'amyle), dérivés nitrés qui font l'objet d'un commerce illégal, ou d'autres dérivés nitrés pendant un traitement avec le sildénafil.
+
+L'utilisation concomitante de sildénafil et de stimulateurs de la guanylate cyclase comme le riociguat est contre-indiquée en raison d'un effet hypotenseur additif.
+
+Chez les patients à qui une activité sexuelle est déconseillée (p.ex. les patients atteints d'une affection cardio-vasculaire grave telle qu'angor instable ou insuffisance cardiaque sévère), les médicaments pour le traitement de la dysfonction érectile, comme le sildénafil, ne doivent pas être utilisés.
+
+Le sildénafil est contre-indiqué chez les patients ayant perdu la vue au niveau d'un œil en raison d'une neuropathie optique ischémique antérieure non artéritique (NAION), que la cécité soit liée ou non à une prise antérieure d'inhibiteurs de la PDE5 (voir «Mises en garde et précautions»).
+
+Le sildénafil est contre-indiqué chez les patients atteints de maladies dégénératives héréditaires de la rétine (p.ex. rétinite pigmentaire).
+
+Sildénafil Spirig HC est contre-indiqué en cas d'hypersensibilité connue à la substance active ou à l'un des composants.
+
+Mises en garde et précautions
+
+Avant de considérer un traitement médicamenteux, une anamnèse et un examen physique du patient seront réalisés afin d'établir le diagnostic de dysfonction érectile et de déterminer ses causes.
+
+La sécurité du sildénafil n'ayant pas été étudiée dans les groupes de patients suivants (non inclus dans des études cliniques), l'utilisation du sildénafil n'est pas recommandée chez ces groupes de patients: insuffisance hépatique sévère, hypotension (pression artérielle <90/50 mmHg), hypertension non contrôlée (pression artérielle >170/110 mmHg), patients ayant récemment souffert d'un AVC ou d'un infarctus du myocarde, patients présentant une affection cardiovasculaire sévère telle qu'insuffisance cardiaque sévère, angor instable ou arythmies menaçant le pronostic vital.
+
+Dérivés nitrés
+
+Les patients atteints d'une affection cardiovasculaire aiguë ne doivent pas être traités avec des dérivés nitrés s'ils ont pris ou s'il est possible qu'ils aient pris du sildénafil, car il pourrait s'ensuivre une hypotension sévère, potentiellement fatale (voir «Interactions»). Bien que les concentrations plasmatiques de sildénafil 24 heures après la prise soient bien inférieures aux concentrations plasmatiques maximales, on ignore si les dérivés nitrés peuvent être administrés sans risque 24 heures après la prise de Sildénafil Spirig HC. Le patient devra en être informé par le médecin.
+
+En cas de besoin correspondant, on ignore à quel moment il est possible d'administrer sans risque des dérivés nitrés à des patients ayant pris du sildénafil. Les concentrations plasmatiques d'une dose unique de 100 mg de sildénafil prise par des volontaires sains sont d'environ 2 ng/ml 24 h après la prise, alors que les pics plasmatiques sont de 440 ng/ml environ. Chez des patients âgés (>65 ans), des patients présentant une altération de la fonction hépatique ou une altération sévère de la fonction rénale (clairance de la créatinine <30 ml/min), ainsi que chez des patients prenant simultanément des inhibiteurs puissants du cytochrome P450 3A4 (p.ex. l'érythromycine), les concentrations plasmatiques de sildénafil, 24 h après la prise, étaient toutefois 3 à 8 fois plus élevées que chez des volontaires sains.
+
+Risques cardiovasculaires
+
+Avant l'instauration de chaque traitement de la dysfonction érectile, le statut cardio-vasculaire du patient doit être pris en compte étant donné que l'activité sexuelle comporte un certain risque cardiaque. Vu ses propriétés vasodilatatrices, le sildénafil provoque un abaissement, léger et passager, de la tension artérielle (voir «Propriétés/Effets») et renforce donc l'effet hypotenseur des dérivés nitrés (voir ci-dessus «Contre-indications» et «Interactions»).
+
+Par exemple, les patients ayant souffert récemment d'un AVC ou d'un infarctus du myocarde ne devraient prendre du sildénafil que si le médecin prescripteur juge appropriée une reprise de l'activité sexuelle.
+
+Des infarctus aigus du myocarde ont rarement été décrits après l'utilisation de sildénafil. La plupart de ces patients, mais pas tous, avaient des facteurs de risque cardiovasculaire préexistants. Beaucoup de ces événements sont survenus pendant ou juste après l'activité sexuelle. Dans des cas isolés, des événements ont été décrits comme s'étant produits juste après la prise de sildénafil sans activité sexuelle.
+
+Des AVC ont aussi rarement été décrits en rapport avec le sildénafil. Un éventuel lien direct de causalité entre ces événements et la prise de sildénafil n'a pu être établi de manière définitive jusqu'ici. Dans les études cliniques contrôlées dans lesquelles ont été inclus des patients sans facteurs de risque cardiovasculaire aigus ou sévères (critères d'exclusion cardiovasculaires: hypotension (pression artérielle <90/50 mmHg), hypertension non contrôlée (pression artérielle >170/110 mmHg), AVC ou infarctus du myocarde récents, affection cardiovasculaire sévère telle qu'insuffisance cardiaque sévère, angor instable ou arythmies menaçant le pronostic vital), l'incidence des décès et des infarctus du myocarde était identique sous sildénafil et sous placebo.
+
+Le sildénafil possède des qualités vasodilatatrices, qui induisent une chute passagère de la tension artérielle. Chez la plupart des patients, cette chute de tension n'a que des conséquences minimes. Avant de prescrire du sildénafil, le médecin devra cependant évaluer scrupuleusement si l'effet vasodilatateur de cette substance ne risque pas de porter atteinte aux patients souffrant de certaines maladies sous-jacentes, en particulier en association à un rapport sexuel. Une hypersensibilité accrue aux substances vasodilatatrices subsiste en particulier en cas d'obstruction systolique ventriculaire gauche (p.ex. un rétrécissement aortique ou une myocardiopathie obstructive hypertrophique) ainsi qu'en cas de syndrome de Shy-Drager, maladie rare se manifestant par une altération grave du mécanisme autonome de contrôle de la pression artérielle.
+
+Alpha-bloquants
+
+La prudence est recommandée lorsque le sildénafil est administré à des patients sous traitement alpha-bloquant, car leur administration concomitante peut entraîner une hypotension symptomatique chez un faible nombre de sujets sensibles (voir «Interactions»). L'apparition de ce phénomène est la plus probable dans les 4 heures suivant la prise de sildénafil. Afin de minimiser l'éventuelle survenue d'une hypotension orthostatique, les patients sous traitement alpha-bloquant doivent être stabilisés avant d'initier un traitement par sildénafil. L'instauration du traitement par sildénafil aura lieu à la dose de 25 mg. Par ailleurs, les médecins doivent avertir leurs patients de la conduite à tenir lorsque des symptômes d'hypotension orthostatique apparaissent.
+
+Interaction avec des stimulateurs de la guanylate cyclase
+
+Comme les inhibiteurs de la PDE5, les stimulateurs de la guanylate cyclase (tels que le riociguat) induisent des modifications du cGMP intracellulaire. Malgré des mécanismes d'action différents, les deux classes de substances exercent une action vasodilatatrice. Lorsque, sous l'association des deux modes d'action, le taux de cGMP augmente, un effet additif sur la pression artérielle systémique avec augmentation du risque d'hypotension symptomatique est à craindre (voir aussi «Interactions»). Sildénafil Spirig HC ne doit par conséquent pas être utilisé conjointement à des stimulateurs de la guanylate cyclase.
+
+Risques oculaires
+
+Dans une étude épidémiologique à grande échelle, un risque accru de décollement de la rétine a été rapporté avec l'utilisation régulière d'inhibiteurs de la PDE5.
+
+Dans deux études épidémiologiques à grande échelle (avec un modèle de cas croisés), le risque de NAION a été évalué respectivement dans 5 temps de demi-vie après la prise chez les patients ayant, le cas échéant, utilisé des inhibiteurs de la PDE5 (sildénafil, tadalafil ou vardénafil). Les deux études ont rapporté un doublement du risque pendant cette période (correspondant à environ 1 jour pour le sildénafil). Des cas de NAION ont également été signalés au cours de la surveillance post-marketing.
+
+Une NAION est un événement rare. Son incidence dans la population générale est estimée entre 2,5 et 11,8 cas pour 100'000 hommes âgés de ≥50 ans par an. L'étude ci-dessus a estimé que 3 cas supplémentaires pour 100'000 hommes par an sont à prévoir chez les hommes qui utilisent un inhibiteur de la PDE5 toutes les semaines pour le traitement de la dysfonction érectile.
+
+Une NAION est associée à une diminution de l'acuité visuelle, pouvant potentiellement entraîner une cécité définitive. L'éventuelle survenue d'une NAION doit donc être prise en compte dans l'évaluation du rapport bénéfice/risque, en particulier chez les patients présentant d'autres facteurs de risque de NAION. Ces facteurs incluent notamment un âge de 50 ans et plus, une hypertension artérielle, du diabète, de l'hyperlipidémie, du tabagisme et des angiopathies coronaires, ainsi qu'un rapport cupule/papille optique abaissé («crowded disc»). En cas de troubles visuels, la NAION doit être comprise dans le diagnostic différentiel.
+
+Le patient doit alors être informé qu'il doit immédiatement interrompre la prise de tous les inhibiteurs de la PDE5, y compris Sildénafil Spirig HC, en cas de perte subite de la vue au niveau d'un œil ou des deux yeux et qu'il doit consulter un médecin. Les médecins doivent également informer leurs patients que les personnes ayant déjà présenté une NAION d'un œil ont un risque accru de NAION.
+
+Priapisme et malformations anatomiques du pénis
+
+Des cas d'érection prolongée et de priapisme ont été signalés au cours de la surveillance post-marketing du sildénafil. Il faut avertir les patients du fait que, si une érection dure plus de 4 heures, ils doivent consulter sans délai un médecin. Le priapisme constitue une urgence urologique. Un priapisme qui n'est pas traité immédiatement peut engendrer des lésions des tissus du pénis et une perte définitive de la puissance sexuelle.
+
+Chez des patients présentant des malformations anatomiques du pénis (p.ex. angulation, fibrose dans la zone du corps caverneux, Induratio penis plastica) ainsi que chez des patients atteints de pathologies prédisposant au priapisme telles que drépanocytose, myélome multiple ou leucémie, le sildénafil doit être utilisé avec prudence.
+
+Traitement concomitant avec le ritonavir
+
+La co-administration de sildénafil et de ritonavir est déconseillée (voir «Interactions»). Le cas échéant, une dose maximale de 25 mg de sildénafil par 48 heures ne doit pas être dépassée.
+
+Hémostase
+
+Le sildénafil ne modifie pas le temps de saignement, même en cas de prise concomitante d'acide acétylsalicylique. Des études in vitro sur des thrombocytes humains ont toutefois indiqué que le sildénafil renforce l'effet antiagrégant du nitroprussiate de sodium (un donneur de monoxyde d'azote).
+
+Aucune donnée concernant l'administration de sildénafil à des patients présentant des troubles de la coagulation ou un ulcère peptique actif n'est disponible. L'administration de Sildénafil Spirig HC à ces patients n'aura donc lieu qu'après une évaluation soigneuse du rapport bénéfice/risque.
+
+Autres précautions
+
+Il n'existe aucune étude concernant la sécurité d'emploi et l'efficacité du sildénafil en association avec d'autres inhibiteurs de la PDE5 ou d'autres procédés de traitement d'une dysfonction érectile. Le recours à de telles associations thérapeutiques est par conséquent déconseillé.
+
+Il n'existe aucune étude concernant la sécurité d'emploi du sildénafil chez les patients souffrant d'une dysfonction érectile et recevant un traitement au long cours par sildénafil en raison d'une hypertension artérielle pulmonaire. Chez ces patients, l'administration concomitante de Sildénafil Spirig HC est donc déconseillée.
+
+L'utilisation de Sildénafil Spirig HC n'est pas indiquée chez les femmes.
+
+Excipients
+
+Sildénafil Spirig HC contient du lactose et glucose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par 1 comprimé pelliculé, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Ce médicament contient le colorant azoïque Ponceau 4R (E124). E124 peut provoquer des réactions allergiques.
+
+Interactions
+
+Interactions pharmacocinétiques
+
+Effets des autres médicaments sur la pharmacocinétique du sildénafil
+
+Études in vitro
+
+Le sildénafil est essentiellement métabolisé par l'intermédiaire du cytochrome P450 (CYP), principalement par l'iso-enzyme CYP3A4 et accessoirement par le CYP2C9. Par conséquent, les inhibiteurs de ces iso-enzymes peuvent entraîner une réduction de la clairance du sildénafil et les inducteurs de ces isoenzymes une augmentation de celle-ci. On peut donc supposer que la concentration plasmatique de sildénafil augmente lorsqu'il est administré simultanément avec un inhibiteur du CYP3A4 et diminue lorsqu'il est administré simultanément avec un inducteur du CYP3A4 (comme p.ex. la rifampicine).
+
+Études in vivo
+
+L'administration concomitante de sildénafil (dose unique de 100 mg) et d'un inhibiteur de la protéase du VIH et puissant inhibiteur du P450, à savoir le ritonavir à l'état d'équilibre (500 mg 2x/j), a causé une multiplication par 4 de la Cmax du sildénafil et par 11 de son AUC. Au bout de 24 heures, les concentrations plasmatiques de sildénafil étaient toujours de 200 ng/ml environ, alors qu'elles sont d'environ 5 ng/ml lorsque le sildénafil est administré seul (voir «Posologie/Mode d'emploi»). Ceci concorde avec le fait que le ritonavir a un effet marqué sur toute une série de substrats du cytochrome P450.
+
+L'administration concomitante de sildénafil (dose unique de 25 mg) et d'un puissant inhibiteur du CYP3A4, l'indinavir à l'état d'équilibre (800 mg/j), a entraîné une multiplication par 4,4 de l'AUC du sildénafil chez 6 patients atteints du VIH au cours d'une étude.
+
+L'administration concomitante de sildénafil (dose unique de 100 mg) et d'un inhibiteur de la protéase du VIH, le saquinavir à l'état d'équilibre (1200 mg 3x/j), également puissant inhibiteur du CYP3A4, a entraîné une multiplication par 2,4 de la Cmax du sildénafil et par 3,1 de l'AUC du sildénafil (voir «Posologie/Mode d'emploi»).
+
+Chez des patients traités par 500 mg d'érythromycine, un inhibiteur modéré du CYP3A4, deux fois par jour pendant cinq jours, l'exposition systémique au sildénafil (AUC) était 2,8 fois plus importante après la prise d'une dose unique de 100 mg de sildénafil.
+
+L'administration concomitante de sildénafil (50 mg) et de cimétidine (800 mg), un inhibiteur faible du CYP3A4, a entraîné une augmentation de 56% du taux plasmatique de sildénafil.
+
+On peut s'attendre à ce que des inhibiteurs puissants du CYP3A4, comme l'itraconazole, le voriconazole ou la clarithromycine exercent une action proportionnellement plus forte sur la pharmacocinétique du sildénafil.
+
+En cas d'administration concomitante de sildénafil et d'un inhibiteur du CYP3A4, on considérera donc la prescription d'une dose initiale de 25 mg.
+
+Le jus de pamplemousse est un faible inhibiteur du métabolisme CYP3A4 au niveau de la paroi intestinale et peut également augmenter les concentrations plasmatiques du sildénafil.
+
+Chez les volontaires sains, l'administration concomitante de sildénafil à l'état d'équilibre (80 mg trois fois par jour) et de bosentan (125 mg 2x/j), antagoniste de l'endothéline et inducteur du CYP3A4 (modéré), du CYP2C9 et, éventuellement, du CYP2C19, a provoqué une baisse de l'ASC du sildénafil de 62,6% et de la Cmax du sildénafil de 55,4%. Pour les inducteurs puissants du CYP3A4 comme la rifampicine, on s'attend à une diminution supérieure des concentrations plasmatiques du sildénafil.
+
+L'administration d'azithromycine (500 mg/jours pendant 3 jours) n'a fait apparaître aucun effet significatif de cet antibiotique sur l'AUC, la Cmax, le tmax, le taux d'élimination ou la demi-vie du sildénafil ou de son principal métabolite.
+
+La biodisponibilité du sildénafil n'a pas été modifiée par l'administration de doses uniques d'un antiacide (hydroxyde de magnésium/hydroxyde d'aluminium).
+
+Bien que l'on ne dispose pas d'études d'interaction spécifiques pour tous les médicaments, l'analyse des données pharmacocinétiques provenant des études cliniques menées à ce jour n'a mis en évidence aucune modification des paramètres pharmacocinétiques du sildénafil lors de l'administration concomitante d'inhibiteurs de la CYP2C9 (comme le tolbutamide, la warfarine, la phénytoïne), d'inhibiteurs de la CYP2D6 (comme les inhibiteurs sélectifs de la recapture de la sérotonine, les antidépresseurs tricycliques), de diurétiques thiazidiques et autres diurétiques apparentés, de diurétiques de l'anse et de diurétiques d'épargne potassique, d'IEC, d'inhibiteurs calciques, d'antagonistes des récepteurs β.
+
+Effets du sildénafil sur la pharmacocinétique des autres médicaments
+
+Études in vitro
+
+Le sildénafil inhibe légèrement les iso-enzymes 1A2, 2C9, 2C19, 2D6, 2E1 et 3A4 (CI50 >150 µM) du cytochrome P450. Comme les pics plasmatiques du sildénafil sont de 1 µM environ après la prise d'une dose recommandée, il semble improbable que sildénafil modifie la clairance des substrats de ces iso-enzymes.
+
+On ne dispose d'aucune donnée sur l'interaction du sildénafil avec des inhibiteurs non spécifiques des phosphodiestérases comme la théophylline ou le dipyridamole.
+
+Études in vivo
+
+Au cours d'études cliniques d'interaction, l'administration concomitante de sildénafil (50 mg) n'a fait apparaître aucune interaction significative avec le tolbutamide (250 mg) ni avec la warfarine (40 mg), deux substances qui sont métabolisées par le CYP2C9. Des cas isolés d'interaction avec la warfarine (prolongement du temps de prothrombine) ont cependant été signalés au cours de la surveillance post-marketing.
+
+On ne peut exclure avec certitude un effet sur l'anticoagulation par la phenprocoumone ou l'acénocoumarol, tous deux distribués en Suisse. Une surveillance étroite des patients sous ces anticoagulants est donc nécessaire lors de traitement concomitant avec le sildénafil.
+
+En cas d'administration concomitante, le sildénafil à l'état d'équilibre (80 mg 3x/j) a causé une augmentation de l'AUC et de la Cmax du bosentan (125 mg 2x/j) de 49,8% et 42% respectivement.
+
+Le sildénafil (100 mg) n'a eu aucune influence sur la pharmacocinétique à l'état d'équilibre du saquinavir et du ritonavir, des inhibiteurs de la protéase du VIH, tous deux substrats du CYP3A4.
+
+Interactions pharmacodynamiques
+
+Dérivés nitrés
+
+Il a pu être démontré que sildénafil renforce l'effet hypotenseur des dérivés nitrés étant donné son effet pharmacologique sur la voie métabolique du monoxyde d'azote/GMPc. C'est pourquoi l'administration concomitante de sildénafil et de dérivés nitrés ou de substances libérant du monoxyde d'azote, molsidomine comprise, est contre-indiquée. Chez des patients atteints d'angor stable et ayant pris, dans le cadre d'études, de la nitroglycérine (trinitrate de glycéryle, trinitrine) une heure après la prise de sildénafil, une baisse tensionnelle cliniquement appréciable a été observée immédiatement après la prise de nitroglycérine, ceci en comparaison des patients ayant pris uniquement de la nitroglycérine. Cette interaction a duré environ 2 heures. L'effet de la prise de nitroglycérine plus d'une heure après celle de sildénafil n'a pas été étudié.
+
+Chez des patients angineux bien contrôlés par un traitement d'entretien avec du mononitrate d'isosorbide (MNIS), la prise de sildénafil a provoqué une chute cliniquement appréciable de la tension, comparativement à ce qui a été constaté chez des patients n'ayant pris que du MNIS. Cet effet était à son maximum environ une heure après la prise de sildénafil; il était encore observable 6 h après la prise.
+
+Le nicorandil est une substance active qui agit simultanément comme un activateur des canaux potassiques et comme un dérivé nitré. En raison du composant dérivé nitré, une interaction grave entre le nicorandil et le sildénafil est possible.
+
+Stimulateurs de la guanylate cyclase
+
+Dans des modèles animaux, une action additive sur la tension artérielle a été observée lorsque le riociguat, un stimulateur de la guanylate cyclase, a été associé à des inhibiteurs de la PDE5 (sildénafil ou vardénafil). A de hautes doses, des effets synergiques sur la pression artérielle systémique sont apparus dans certains cas. Des effets hémodynamiques additifs ont également été observés dans des études cliniques. Par conséquent, l'administration concomitante de sildénafil et de stimulateurs de la guanylate cyclase est contre-indiquée.
+
+Antihypertenseurs
+
+L'administration concomitante de sildénafil à des patients sous traitement alpha-bloquant peut entraîner une hypotension symptomatique chez un faible nombre de sujets sensibles. L'apparition de ce phénomène est la plus probable dans les 4 heures suivant la prise de sildénafil (voir «Mises en garde et précautions»). Dans trois études d'interactions médicamenteuses, l'alpha-bloquant doxazosine (4 mg et 8 mg) et le sildénafil (25 mg, 50 mg ou 100 mg) ont été administrés simultanément chez des patients présentant une hypertrophie bénigne de la prostate (HBP) stabilisée sous traitement par doxazosine. Dans les populations de ces études, des réductions additionnelles moyennes de la pression artérielle en décubitus de 7/7 mmHg, 9/5 mmHg, et 8/4 mmHg et des réductions additionnelles moyennes de la pression artérielle en position debout de 6/6 mmHg, 11/4 mmHg et 4/5 mmHg, respectivement, ont été observées. Des cas d'hypotension orthostatique symptomatique ont été occasionnellement rapportés. Ces rapports incluaient des vertiges et des sensations d'étourdissement, mais aucune syncope.
+
+Dans une étude d'interaction ciblée, du sildénafil (100 mg) a été administré à des sujets hypertendus traités par de l'amlodipine (5 mg ou 10 mg). Ceci a entraîné un abaissement tensionnel supplémentaire de 8 mmHg pour la pression systolique et de 7 mmHg pour la pression diastolique mesurées en position couchée.
+
+Au cours d'une analyse, le profil de sécurité du sildénafil n'a pas différé entre les patients qui avaient reçu, en plus de cette médication, un placebo ou l'un des médicaments antihypertenseurs des classes suivantes: diurétiques, antagonistes des récepteurs β, IEC, antagonistes de l'angiotensine II, ganglioplégiques, inhibiteurs calciques et antagonistes des récepteurs α ou autres antihypertenseurs (vasodilatateurs directs et médicaments à action centrale).
+
+De très rares cas d'hypotension ont été décrits au cours de la surveillance post-marketing sur le traitement concomitant avec un antagoniste de l'angiotensine II ou un IEC. On ignore encore si les effets indésirables rapportés dans ces cas sont imputables à la prise du sildénafil seul, à une interaction médicamenteuse possible entre le sildénafil et l'antihypertenseur pris en même temps, à l'affection cardiovasculaire préexistante ou à une aggravation de celle-ci.
+
+Autres médicaments
+
+Le sildénafil (50 mg) n'a pas accentué la prolongation du temps de saignement induite par l'acide acétylsalicylique (150 mg).
+
+Le sildénafil (50 mg) n'a pas renforcé l'effet hypotenseur de l'alcool chez des volontaires sains présentant en moyenne un taux sanguin maximal d'alcool de 0,8‰ (80 mg/dl).
+
+Grossesse, allaitement
+
+L'utilisation de Sildénafil Spirig HC n'est pas indiquée chez les femmes.
+
+Il n'existe aucune étude adéquate et contrôlée portant sur des femmes enceintes ou allaitantes (voir aussi «Données précliniques»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Étant donné que dans des études cliniques des vertiges et des troubles visuels ont été signalés lors de la prise de sildénafil, les patients devraient connaître leur réaction éventuelle au Sildénafil Spirig HC avant de conduire un véhicule ou d'utiliser une machine. Ceci devra également être considéré si le patient doit exercer des activités requérant l'aptitude à une différenciation précise des couleurs.
+
+Effets indésirables
+
+Résumé du profil de sécurité
+
+Les données concernant la sécurité de sildénafil sont issues d'un ensemble de 74 études cliniques contrôlées contre placebo, ainsi que de la surveillance post-marketing.
+
+Les effets indésirables les plus fréquemment décrits chez les patients traités par le sildénafil ont été céphalées, bouffées congestives, dyspepsie, congestion nasale et vertiges.
+
+Tous les effets indésirables médicalement importants, observés pendant l'utilisation de sildénafil dans les études cliniques et/ou au cours de la surveillance post-marketing, sont énumérés ci-dessous par classe de systèmes d'organes et par fréquence, selon les définitions suivantes: très fréquents (≥1/10), fréquents (≥1/100 et <1/10), occasionnels (≥1/1000 et <1/100), rares (≥1/10'000 et <1/1000), très rares (<10'000), inconnus (provenant essentiellement des déclarations spontanées issues de la surveillance post-marketing, la fréquence exacte ne peut pas être estimée sur la base des données disponibles).
+
+Au sein de chaque groupe de fréquence, les effets indésirables sont classés suivant un ordre décroissant de fréquence.
+
+Infections et infestations
+
+Occasionnels: rhinite.
+
+Affections du système immunitaire
+
+Occasionnels: réactions d'hypersensibilité.
+
+Affections du système nerveux
+
+Très fréquents: céphalées (14,0%).
+
+Fréquents: vertiges.
+
+Occasionnels: somnolence, hypoesthésie.
+
+Rares: syncopes, convulsions (événements aussi bien uniques que récidivants).
+
+Affections oculaires
+
+Fréquents: vision trouble, altération de la vision des couleurs et autres troubles visuels (comme une sensation d'être ébloui ou la vision d'anneaux lumineux).
+
+Occasionnels: hyperémie oculaire (p.ex. de la conjonctive), photophobie, douleurs oculaires, photopsie, troubles conjonctivaux, trouble lacrymaux.
+
+Rares: irritations oculaires, gonflement ou œdème oculaire/palpébral, asthénopie, sécheresse oculaire.
+
+Très rares: mydriase, décoloration sclérale, exophtalmie, hémorragie rétinienne.
+
+Inconnus: déficit du champ visuel, neuropathie optique ischémique antérieure non artéritique (NAION; voir «Mises en garde et précautions»), occlusion de vaisseaux rétiniens.
+
+Affections de l'oreille et du labyrinthe
+
+Occasionnels: vertiges, acouphènes.
+
+Des cas isolés de diminution de l'acuité auditive, unilatérale ou bilatérale et pouvant aller jusqu'à une surdité (irréversible), en partie associés à des acouphènes et/ou des vertiges ont été rapportés. Le lien de causalité entre ceux-ci et la prise d'inhibiteurs de la PDE5, y compris le sildénafil, n'est pas établi.
+
+Affections cardiaques
+
+Occasionnels: tachycardie, palpitations.
+
+Rares: fibrillation auriculaire, infarctus du myocarde.
+
+Inconnus: arythmie ventriculaire, angor instable, mort subite d'origine cardiaque.
+
+Affections vasculaires
+
+Fréquents: bouffées congestives/bouffées de chaleur.
+
+Occasionnels: hypotension.
+
+Rares: hypertension, AVC.
+
+Inconnus: accidents ischémiques transitoires.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquents: congestion nasale.
+
+Occasionnels: épistaxis.
+
+Affections gastro-intestinales
+
+Fréquents: dyspepsie, nausées.
+
+Occasionnels: vomissements, sécheresse buccale, douleur abdominale haute, brûlures d'estomac.
+
+Rares: hypoesthésie orale.
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: éruption cutanée.
+
+Affections musculo-squelettiques et du tissu conjonctif
+
+Occasionnels: myalgies, douleurs dans les membres.
+
+Affections des organes de reproduction et du sein
+
+Inconnus: érection renforcée, priapisme.
+
+Troubles généraux
+
+Occasionnels: fatigue, douleurs mammaires, sensation de chaleur.
+
+Rares: irritabilité.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Dans des études, des volontaires sains ont reçu des doses orales uniques de sildénafil allant jusqu'à 800 mg. Les effets indésirables observés ont été les mêmes qu'aux doses plus faibles; seules leur incidence et leur sévérité ont été plus élevées. Des doses de 200 mg n'ont pas apporté une efficacité supérieure du produit mais ont augmenté l'incidence des effets indésirables (céphalées, bouffées congestives, vertiges, dyspepsie, congestion nasale, troubles visuels).
+
+Traitement
+
+En cas de surdosage, prendre les mesures de soutien standard qui s'imposent en fonction du tableau clinique. Comme le sildénafil se lie fortement aux protéines et qu'il n'est que peu éliminé par voie rénale, il est improbable qu'une dialyse en accélère la clairance.
+
+Propriétés/Effets
+
+Code ATC
+
+G04BE03
+
+Mécanisme d'action
+
+Sildénafil Spirig HC est un traitement oral de la dysfonction érectile. Dans des conditions naturelles, c'est-à-dire lors d'une stimulation sexuelle, il restaure la fonction érectile déficiente en augmentant l'afflux sanguin dans le pénis.
+
+Le mécanisme physiologique responsable de l'érection du pénis comporte la libération de monoxyde d'azote (NO) dans les corps caverneux lors d'une stimulation sexuelle. Le monoxyde d'azote active une enzyme, la guanylate cyclase, ce qui a pour effet d'augmenter la concentration de guanosine monophosphate cyclique (GMPc). Il s'ensuit une relaxation de la musculature lisse des corps caverneux, ce qui permet l'afflux de sang.
+
+Le sildénafil est un inhibiteur puissant et sélectif de la phosphodiestérase de type 5 (PDE5) spécifique du GMPc; cette enzyme présente au niveau des corps caverneux est responsable de la dégradation du GMPc. Le sildénafil agit sur l'érection de manière périphérique. Ainsi, le sildénafil n'exerce aucun effet relaxant direct sur un tissu isolé du corps caverneux humain, mais renforce l'effet relaxant du NO sur ce tissu. Lorsque, du fait d'une stimulation sexuelle, la voie métabolique du NO/GMPc est activée, le sildénafil inhibe la PDE5, ce qui entraîne une élévation de la concentration de GMPc dans les corps caverneux. Une stimulation sexuelle est donc nécessaire pour que le sildénafil puisse produire l'effet pharmacologique escompté et adéquat.
+
+Des études in vitro ont montré que le sildénafil est sélectif pour la PDE5. Son action est plus puissante sur la PDE5 que sur les autres isoenzymes connus de la phosphodiestérase. Il a une sélectivité 10 fois plus importante pour la PDE5 que pour la PDE6, impliquée dans le processus de phototransduction rétinienne. Aux doses maximales recommandées, la sélectivité du sildénafil pour la PDE5 est 80 fois plus élevée que pour la PDE1 et plus de 700 fois plus élevée que pour les PDE2, 3, 4, 7, 8, 9, 10 et 11. En particulier, le sildénafil est plus de 4000 fois plus sélectif pour la PDE5 que pour la PDE3, l'iso-enzyme de la phosphodiestérase spécifique de l'AMPc, impliquée dans le contrôle de la contractilité cardiaque.
+
+Pharmacodynamique de sécurité
+
+Système cardio-vasculaire
+
+La prise de doses orales uniques de 100 mg de sildénafil n'a pas provoqué de modifications cliniquement significatives de l'ECG chez des volontaires sains.
+
+Dans une étude examinant les effets hémodynamiques d'une dose orale unique de 100 mg de sildénafil chez 14 patients atteints de coronaropathie sévère (sténose de >70% sur au moins une coronaire), les valeurs moyennes de tension systolique et diastolique au repos ont diminué respectivement de 7% et 6% par rapport à l'inclusion. La tension pulmonaire systolique moyenne a diminué de 9%. Le sildénafil n'a eu aucun effet sur le débit cardiaque et n'a pas entravé la perfusion des artères coronaires sténosées.
+
+Dans une étude d'effort en double aveugle placebo-contrôlée chez 144 patients souffrant de dysfonction érectile et d'angor chronique stable régulièrement traités par des antiangineux (à l'exclusion de dérivés nitrés), aucune différence cliniquement significative au niveau du temps jusqu'à l'apparition d'un angor contraignant à l'arrêt de l'étude n'a été constatée sous sildénafil par rapport au placebo.
+
+Le sildénafil abaisse légèrement et de manière passagère la tension artérielle; dans la majorité des cas, cette baisse ne se traduit par aucune manifestation clinique significative.
+
+En moyenne, la baisse tensionnelle maximale en position debout était de 8,3 mmHg pour la pression systolique et de 5,3 mmHg pour la pression diastolique après la prise de 100 mg par voie orale. Cette baisse tensionnelle reflète l'effet vasodilatateur du sildénafil, probablement en relation avec des taux plus élevés de GMPc dans la musculature lisse des vaisseaux sanguins.
+
+Troubles visuels
+
+Des modifications légères et passagères de la perception des couleurs (bleu/vert) ont été observées chez quelques-uns des participants aux études cliniques 1 heure après la prise de 100 mg (test de Farnsworth-Munsell sur 100 couleurs); 2 heures après la prise, ces modifications avaient disparu. Le mécanisme à l'origine de la modification de la perception des couleurs est probablement lié à l'inhibition de la PDE6 qui joue un rôle dans la transmission des images à la rétine (voir aussi «Mises en garde et précautions» et «Effets indésirables»). Le sildénafil n'a aucun effet sur l'acuité visuelle ou la perception des contrastes. Dans une petite étude placebo-contrôlée sur 9 patients atteints de DMLA (dégénérescence maculaire liée à l'âge) documentée au stade précoce, le sildénafil en dose unique de 100 mg n'a pas produit de changements significatifs dans les résultats des tests visuels effectués (acuité visuelle, grille d'Amsler, test de Worth, périmètre de Humphrey et test de photostress maculaire).
+
+Spermogramme
+
+L'administration d'une dose orale unique de sildénafil (100 mg) à des volontaires sains n'a pas donné lieu à des modifications de la motilité ou de la morphologie des spermatozoïdes.
+
+Efficacité clinique
+
+Deux études cliniques ont étudié de manière ciblée dans quel intervalle de temps le sildénafil peut induire une érection en réponse à une stimulation sexuelle. L'utilisation d'un pléthysmographe pénien (RigiScan) dans le cadre d'un essai portant sur des patients à jeun a montré qu'une érection à 60% (rigidité nécessaire pour avoir un rapport sexuel) était atteinte en l'espace de 25 minutes en moyenne (entre 12 et 37 minutes). Dans un autre essai utilisant RigiScan, il s'est avéré que le sildénafil pouvait encore produire une érection en réponse à une stimulation sexuelle 4-5 heures après la prise.
+
+Une analyse d'études cliniques en double aveugle placebo-contrôlées sur 700 et 1300 patients-années de suivi (resp. sous placebo et sous sildénafil) n'a révélé aucune différence entre les patients traités par sildénafil et ceux sous placebo sur le plan de l'incidence d'infarctus du myocarde ou de la mortalité cardiovasculaire. Le taux d'infarctus du myocarde était de 0,3 pour 100 patients-années chez des hommes traités par sildénafil ou un placebo.
+
+Pharmacocinétique
+
+Absorption
+
+Le sildénafil est rapidement absorbé. Chez des sujets à jeun, les pics plasmatiques sont atteints en l'espace de 30 à 120 min (médiane: 60 min) après une prise par voie orale. La biodisponibilité absolue moyenne d'une dose orale est de 41% (extrêmes: 25-63%). L'AUC et la Cmax augmentent proportionnellement à la dose orale de sildénafil lorsque celle-ci se situe dans l'intervalle posologique recommandé (25 à 100 mg).
+
+La prise de comprimés pelliculés de sildénafil avec un repas très riche en graisses réduit le taux d'absorption; le tmax est prolongé de 60 min en moyenne tandis que la Cmax diminue de 29% en moyenne. Au total, la biodisponibilité (AUC) n'a toutefois été diminuée que de 11%, ce qui ne devrait pas avoir de signification clinique.
+
+Distribution
+
+Le volume moyen de distribution à l'état d'équilibre (Vss) s'élève à 105 l, ce qui suggère une distribution tissulaire. Le sildénafil et son principal métabolite N-déméthylé circulant dans le sang se lient à environ 96% aux protéines. La liaison protéinique est indépendante de la concentration totale du médicament.
+
+90 min après l'administration du sildénafil (dose unique de 100 mg) à des volontaires sains, moins de 0,0002% (188 ng en moyenne) de la quantité administrée a été retrouvé dans l'éjaculat.
+
+Métabolisme
+
+Le métabolisme du sildénafil est essentiellement hépatique et fait intervenir les iso-enzymes microsomales CYP3A4 (voie métabolique principale) et la CYP2C9 (voie métabolique secondaire). Le principal métabolite circulant résulte de la N-déméthylation du sildénafil. Ceci démontre in vitro un effet inhibiteur sur la PDE5 plus ou moins égal à 50% de celui de la substance mère avec un profil de sélectivité pour les PDE similaire à celui de la substance mère. Les concentrations plasmatiques de ce métabolite correspondent à environ 40% de celles observées pour le sildénafil. Le métabolite N-déméthylé est lui aussi métabolisé.
+
+Élimination
+
+La clairance totale du sildénafil est de 41 l/h avec une demi-vie terminale de 3-5 h. Le sildénafil est surtout éliminé sous forme de métabolites, à 80% environ dans les fèces et à 13% environ par voie rénale. Seule une quantité infime de sildénafil sous forme inchangée et de son métabolite actif N-déméthylé est éliminée par voie rénale (moins de 4% de la dose).
+
+Cinétique pour certains groupes de patients
+
+Patients âgés
+
+Chez des volontaires âgés sains (65 ans ou plus), on a observé une réduction de la clairance du sildénafil, les taux plasmatiques de sildénafil et de son métabolite actif N-déméthylé étant d'environ 90% supérieurs à ceux observés chez des volontaires sains plus jeunes (18 à 45 ans). Compte tenu du fait que la fixation protéique se modifie avec l'âge, l'augmentation correspondante de la concentration plasmatique de sildénafil libre était d'environ 40%.
+
+Insuffisance rénale
+
+Chez des sujets présentant une insuffisance rénale légère (clairance de la créatinine de 50-80 ml/min) à modérée (clairance de la créatinine de 30-49 ml/min), la pharmacocinétique du sildénafil ne s'est pas différenciée significativement de celle observée chez des volontaires de même âge sans insuffisance rénale. Après une dose orale unique de 50 mg, la Cmax et l'AUC moyennes du métabolite N-déméthylé ont augmenté respectivement de 73% et 126%. Chez des volontaires présentant une insuffisance rénale grave (clairance de la créatinine <30 ml/min), la clairance du sildénafil a été diminuée, ce qui s'est traduit par une augmentation de l'AUC (de 100%) et de la Cmax (de 88%) par rapport aux volontaires de même dont les reins étaient sains. En cas d'insuffisance rénale grave, l'AUC du métabolite N-déméthylé était multipliée par trois et sa Cmax avait augmenté de 79%.
+
+Insuffisance hépatique
+
+Chez des volontaires atteints d'insuffisance hépatique légère à modérée (classes A et B de Child-Pugh), la clairance du sildénafil était plus faible que chez des volontaires appariés par âge présentant une fonction hépatique normale, ce qui s'est traduit par une augmentation de l'AUC (de 85%) et de la Cmax (de 47%). La pharmacocinétique du sildénafil chez des patients atteints d'une insuffisance hépatique sévère (classe C de Child-Pugh) n'a pas été étudiée (voir «Posologie/Mode d'emploi»).
+
+Données précliniques
+
+Les données précliniques recueillies ne suggèrent aucun risque particulier pour l'homme. Cette assertion se fonde sur les études habituelles réalisées pour déterminer la sécurité pharmacologique, la toxicité après administration de doses multiples, la génotoxicité, la carcinogénité, la toxicité reproductive et la toxicité sur le développement.
+
+Des études sur la reproduction menées sur des rats et des lapins après administration orale de sildénafil n'ont pas mis en évidence d'effets tératogènes, d'altération de la fertilité ou d'effets indésirables sur le développement péri-/postnatal des descendants.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Une fois divisés, les fragments individuels des comprimés peuvent être conservés pendant 4 semaines.
+
+Remarques particulières concernant le stockage
+
+Ne pas conserver au-dessus de 30°C. Conserver dans l'emballage d'origine à l'abri de l'humidité et tenir hors de portée des enfants.
+
+Numéro d’autorisation
+
+62796 (Swissmedic).
+
+Présentation
+
+25 mg: 4 et 12 comprimés pelliculés. [B]
+
+50 mg: 4, 12 et 24 comprimés pelliculés. [B]
+
+100 mg: 4, 12 et 24 comprimés pelliculés quadri-sécables. [B]
+
+Titulaire de l’autorisation
+
+Spirig HealthCare SA, 4622 Egerkingen.
+
+Mise à jour de l’information
+
+Octobre 2025

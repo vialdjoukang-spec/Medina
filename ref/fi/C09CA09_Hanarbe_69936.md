@@ -1,0 +1,483 @@
+---
+titre: "Hanarbe®"
+titulaire: "Hasten Biopharmaceutic (Switzerland) AG"
+atc: C09CA09
+substances: "Azilsartan médoxomil (sous forme d'azilsartan médoxomil-potassium)"
+autorisation_swissmedic: 69936
+date_version: 2025-05-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/4bc079933200424893e6f451cd79dded-fr.html
+---
+
+Hanarbe®
+
+Composition
+
+Principes actifs
+
+Azilsartan médoxomil (sous forme d'azilsartan médoxomil-potassium).
+
+Excipients
+
+Mannitol, acide fumarique, hydroxyde de sodium\*, hydroxypropylcellulose, croscarmellose sodique\*, cellulose microcristalline, stéarate de magnésium.
+
+\*Un comprimé à 20 mg contient 0,8 mg de sodium. Un comprimé à 40 mg contient 1,6 mg de sodium. Un comprimé à 80 mg contient 3,2 mg de sodium.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimés à 20 mg, 40 mg, 80 mg d'azilsartan médoxomil (sous forme d'azilsartan médoxomil-potassium).
+
+Indications/Possibilités d’emploi
+
+Hanarbe est indiqué dans le traitement de l'hypertension artérielle essentielle chez l'adulte.
+
+Posologie/Mode d’emploi
+
+Hanarbe peut être pris pendant ou en dehors des repas (voir «Pharmacocinétique»).
+
+Posologie usuelle
+
+La posologie initiale recommandée est de 40 mg une fois par jour; elle peut être augmentée jusqu'à un maximum de 80 mg une fois par jour chez les patients dont la pression artérielle n'est pas suffisamment contrôlée par une dose inférieure.
+
+Un effet antihypertenseur presque maximal est obtenu au bout de 2 semaines et l'effet maximal est atteint dans les 4 semaines.
+
+Si la pression artérielle n'est pas correctement contrôlée avec Hanarbe seul, une baisse supplémentaire peut être obtenue en administrant Hanarbe en association avec d'autres antihypertenseurs comme les diurétiques, tels que la chlortalidone et l'hydrochlorothiazide, et les inhibiteurs calciques (voir «Propriétés/Effets»).
+
+Patients présentant des troubles de la fonction hépatique
+
+Hanarbe n'a pas été étudié chez les patients présentant une insuffisance hépatique sévère, son utilisation est donc déconseillée dans ce groupe de patients (voir «Mises en garde et précautions»). L'expérience de traitement par Hanarbe étant limitée chez les patients atteints d'insuffisance hépatique légère à modérée, une surveillance étroite est recommandée et l'initiation du traitement à la dose de 20 mg doit être envisagée (voir «Pharmacocinétique»).
+
+Patients présentant des troubles de la fonction rénale
+
+La prudence est de rigueur chez les patients hypertendus présentant une insuffisance rénale sévère ou terminale, car l'expérience de traitement de ces patients par Hanarbe manque (voir «Mises en garde et précautions» et «Pharmacocinétique). L'hémodialyse n'élimine pas l'azilsartan de la circulation générale.
+
+Aucune adaptation posologique n'est nécessaire chez les patients présentant une insuffisance rénale légère à modérée.
+
+Patients âgés
+
+Aucune adaptation posologique initiale n'est nécessaire chez les patients âgés (voir «Pharmacocinétique»). Toutefois, l'initiation du traitement à la dose de 20 mg peut être envisagée chez les patients de ≥75 ans pouvant présenter un risque d'hypotension artérielle.
+
+Enfants et adolescents
+
+L'azilsartan médoxomil n'est pas indiqué chez les patients de moins de 18 ans. La sécurité et l'efficacité d'Hanarbe chez les enfants et les adolescents âgés de moins de 18 ans n'ont pas été établies. Il n'existe pas d'études à ce sujet.
+
+Patients présentant d'autres maladies sous-jacentes
+
+Déplétion volumique intravasculaire
+
+Chez les patients susceptibles de présenter une déplétion du volume intravasculaire ou une déplétion sodée (p.ex. patients atteints de vomissements, de diarrhée ou traités par de fortes doses de diurétiques), Hanarbe doit être instauré sous surveillance médicale étroite et l'initiation du traitement à la dose de 20 mg peut être envisagée (voir «Mises en garde et précautions»).
+
+Patients à peau noire
+
+Aucune adaptation posologique n'est nécessaire dans la population noire, mais on observe toutefois une moindre baisse de la pression artérielle que chez les autres patients (voir «Propriétés/Effets»). C'est en général le cas des autres antagonistes de récepteurs (AT1) de l'angiotensine II (ARA II) et des inhibiteurs de l'enzyme de conversion (IECA). En conséquence, il est possible qu'une augmentation plus fréquente des doses d'Hanarbe et un traitement associé soient nécessaires pour contrôler la pression artérielle des patients noirs.
+
+Contre-indications
+
+·Hypersensibilité au principe actif ou à l'un des excipients.
+
+·Deuxième et troisième trimestre de grossesse (voir «Mises en garde et précautions» et «Grossesse/Allaitement»).
+
+·Administration concomitante d'azilsartan médoxomil et d'aliskirène chez les patients atteints de diabète (de type 1 et 2) ainsi que chez les patients insuffisants rénaux (TFGe <60 ml/min/1,73 m2) (voir «Interactions»).
+
+Mises en garde et précautions
+
+Patients atteints d'insuffisance rénale, de sténose de l'artère rénale ou d'une insuffisance cardiaque congestive sévère
+
+Chez les patients dont la tonicité vasculaire et la fonction rénale dépendent de façon prédominante de l'activité du système rénine-angiotensine-aldostérone (p.ex. ceux présentant une insuffisance cardiaque congestive, une insuffisance rénale sévère ou une sténose de l'artère rénale), le traitement par des médicaments agissant sur ce système (p.ex. les IECA et ARA II) a été associé à une hypotension artérielle aiguë, une azotémie, une oligurie ou, rarement, à une insuffisance rénale aiguë. Des effets similaires avec Hanarbe ne peuvent être exclus.
+
+Il est recommandé de surveiller étroitement le potassium sérique et la créatinine chez ces patients.
+
+La prudence est de rigueur chez les patients hypertendus présentant une insuffisance rénale sévère, une insuffisance cardiaque décompensée ou une sténose de l'artère rénale, car l'expérience de traitement de ces patients par Hanarbe manque (voir «Posologie/Mode d'emploi» et «Pharmacocinétique).
+
+Comme avec d'autres antihypertenseurs, une baisse excessive de la pression artérielle chez des patients atteints d'une cardiopathie ischémique ou d'une maladie cérébrovasculaire ischémique pourrait entraîner un infarctus du myocarde ou un accident vasculaire cérébral.
+
+«Double inhibition» du système rénine-angiotensine-aldostérone (SRAA)
+
+Voir «Interactions».
+
+Transplantation rénale
+
+Aucune expérience n'est disponible concernant l'utilisation d'Hanarbe chez les patients ayant subi une transplantation rénale récente.
+
+Insuffisance hépatique
+
+Hanarbe n'a pas été étudié chez les patients présentant une insuffisance hépatique sévère, son utilisation est donc déconseillée dans ce groupe de patients (voir «Posologie/Mode d'emploi» et «Pharmacocinétique»).
+
+Hypotension chez les patients présentant une déplétion volumique et/ou sodée marquée
+
+Au début du traitement par Hanarbe, une hypotension symptomatique peut survenir chez les patients présentant une déplétion volumique et/ou électrolytique marquée (p.ex. patients atteints de vomissements, de diarrhée ou sous fortes doses de diurétiques). L'hypovolémie doit être corrigée avant l'administration d'Hanarbe. Sinon le traitement doit être instauré sous surveillance médicale étroite et son initiation à la dose de 20 mg peut être envisagée.
+
+Hyperaldostéronisme primaire
+
+Les patients atteints d'hyperaldostéronisme primaire ne répondent généralement pas aux médicaments antihypertenseurs agissant par l'intermédiaire de l'inhibition du système rénine-angiotensine. En conséquence, l'utilisation d'Hanarbe n'est pas recommandée chez ces patients.
+
+Hyperkaliémie
+
+Selon l'expérience d'autres médicaments agissant sur le système rénine-angiotensine-aldostérone, l'utilisation concomitante d'Hanarbe avec des diurétiques épargneurs de potassium, des médicaments contenant du potassium (compléments ou substituts) ou d'autres médicaments susceptibles d'augmenter les taux de potassium (p.ex. l'héparine) peut entraîner une élévation de la kaliémie chez les patients hypertendus (voir «Interactions»). Chez les patients âgés, les patients présentant une insuffisance rénale, les patients diabétiques et/ou les patients atteints d'autres affections concomitantes, le risque de survenue d'une hyperkaliémie potentiellement mortelle est accru.
+
+Il convient de surveiller les taux de potassium de manière appropriée.
+
+Angioedème intestinal
+
+Des cas d'angioedème intestinal ont été signalés chez des patients traités par des antagonistes des récepteurs de l'angiotensine II (voir «Effets indésirables»). Ces patients présentaient des douleurs abdominales, des nausées, des vomissements et de la diarrhée. Les symptômes se sont résolus après l'arrêt des antagonistes des récepteurs de l'angiotensine II. Si un angioedème intestinal est diagnostiqué, Azilsartan médoxomil doit être arrêté et une surveillance appropriée doit être mise en œuvre jusqu'à disparition complète des symptômes.
+
+Sténose de la valve aortique et mitrale, cardiomyopathie obstructive hypertrophique
+
+Comme avec d'autres vasodilatateurs, la prudence est de rigueur chez les patients atteints de sténose aortique ou mitrale ou de cardiomyopathie obstructive hypertrophique (CMOH).
+
+Grossesse
+
+Un traitement par des ARA II ne doit pas être instauré en cours de grossesse. Chez les patientes souhaitant une grossesse, il convient de passer à un traitement antihypertenseur alternatif ayant un profil de sécurité établi chez la femme enceinte, à moins qu'il ne soit indispensable de poursuivre le traitement par un ARA II. Si une grossesse est constatée en cours de traitement par un ARA II, il faut l'arrêter immédiatement et initier si nécessaire un traitement alternatif (voir «Contre-indications» et «Grossesse/Allaitement»).
+
+Sodium
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé , c.-à-d. qu’il est essentiellement « sans sodium ».
+
+Interactions
+
+«Double inhibition» du système rénine-angiotensine-aldostérone (SRAA) par l'inhibiteur de l'ECA (IECA), l'antagoniste du récepteur de l'angiotensine II (ARA II) ou l'aliskirène
+
+La «double inhibition» du système RAA par des ARA, des IECA ou l'aliskirène a entraîné des hypotensions, des syncopes, des hyperkaliémies et des troubles de la fonction rénale (y compris des insuffisances rénales aiguës) à une fréquence supérieure que lors de l'utilisation de ces substances en monothérapie, en particulier chez les patients normo- ou hypotendus en début de traitement.
+
+Une double inhibition du SRAA doit être réservée à des patients sélectionnés de manière individuelle et un contrôle étroit de la pression artérielle, du potassium sérique et de la fonction rénale est recommandé. La prise concomitante d'Hanarbe et d'aliskirène n'est pas recommandée. Cette association est contre-indiquée chez certains patients (voir «Contre-indications»).
+
+L'administration concomitante est déconseillée
+
+Lithium
+
+Une augmentation réversible de la concentration sérique et de la toxicité du lithium a été rapportée avec les inhibiteurs de l'ECA. Un effet similaire pourrait se produire avec les ARA II. En raison du manque d'expérience sur l'utilisation concomitante d'azilsartan médoxomil et de lithium, cette association est déconseillée. Si l'association se révèle nécessaire, une surveillance étroite des taux sériques de lithium est recommandée.
+
+Diurétiques épargneurs de potassium, médicaments à base de potassium (compléments ou substituts) et autres substances susceptibles d'augmenter le taux de potassium
+
+L'utilisation concomitante de diurétiques épargneurs de potassium, de médicaments à base de potassium (supplémentation ou substitution) ou d'autres médicaments (p.ex. l'héparine) peut entraîner une élévation de la kaliémie. Une surveillance appropriée de celle-ci est nécessaire (voir «Mises en garde et précautions.
+
+La prudence est de rigueur lors d'une utilisation concomitante
+
+Anti-inflammatoires non stéroïdien (AINS), tels qu'inhibiteurs sélectifs de la COX-2, acide acétylsalicylique (>3 g/jour) et AINS non sélectifs
+
+L'administration simultanée d'ARA II et d'AINS (à savoir inhibiteurs sélectifs de la COX-2, acide acétylsalicylique (>3 g/jour) et AINS non sélectifs) peut atténuer l'effet antihypertenseur. En outre, l'utilisation concomitante d'ARA II et d'AINS peut accroître le risque de détérioration de la fonction rénale et entraîner une augmentation du potassium sérique. Par conséquent, il est recommandé de bien hydrater les patients et de surveiller leur fonction rénale dès le début du traitement.
+
+Autres informations
+
+Au cours des essais cliniques, il n'a pas été observé d'interactions cliniquement significatives sous azilsartan médoxomil ou azilsartan avec les médicaments suivants: amlodipine, antiacides, chlortalidone, digoxine, fluconazole, glyburide, kétoconazole, metformine et warfarine.
+
+Après administration en même temps qu’un mélange de substrats du cytochrome (CYP) P450 de référence, aucune interaction cliniquement significative n’a été observée avec la caféine (CYP1A2), le tolbutamide (CYP2C9), le dextrométhorphane (CYP2D6) ou le midazolam (CYP3A4). L’administration concomitante d’azilsartan médoxomil dans le même cocktail de substances actives n’a pas eu d’effet significatif sur l’exposition plasmatique ou urinaire à la fexofénadine (Pgp).
+
+L'influence de substances qui accélèrent le métabolisme d'azilsartan (p.ex. rifampicine ou phénobarbital) et diminuent donc son efficacité n'a pas été étudiée.
+
+L'azilsartan médoxomil est rapidement hydrolysé en sa fraction active, l'azilsartan, par les estérases dans le tractus gastro-intestinal et/ou lors de l'absorption du médicament (voir «Pharmacocinétique»). Les études in vitro montrent que les interactions basées sur une inhibition de l'estérase sont peu probables.
+
+Enfants et adolescents
+
+Les études sur les interactions n'ont été effectuées que chez des adultes.
+
+Grossesse, allaitement
+
+Grossesse
+
+L'utilisation d'ARA II au cours du premier trimestre de grossesse est déconseillée (voir «Mises en garde et précautions»).
+
+L'administration d'ARA II au cours du deuxième et troisième trimestre de grossesse est contre-indiquée (voir «Contre-indications» et «Mises en garde et précautions»).
+
+Aucune donnée n'est disponible sur l'utilisation d'Hanarbe chez les femmes enceintes. Un effet toxique sur la reproduction a été observé lors des études menées chez l'animal (voir «Données précliniques»).
+
+Il n'y a pas de données épidémiologiques définitives concernant le risque tératogène après l'administration d'IECA au cours du premier trimestre de grossesse; un risque légèrement plus élevé ne peut toutefois être exclu. Même en l'absence de données épidémiologiques contrôlées quant au risque des ARA II, cette classe de médicaments pourrait comporter des risques similaires. Tant qu'une poursuite du traitement par un ARA II n'est pas considérée comme nécessaire, les patientes envisageant une grossesse devraient adopter un traitement antihypertenseur alternatif ayant un profil de sécurité approprié pour les femmes enceintes. Si une grossesse est constatée en cours de traitement par un ARA II, il faut l'arrêter immédiatement et initier si nécessaire un traitement alternatif.
+
+L'exposition aux ARAII au cours des deuxième et troisième trimestres de la grossesse est connue pour entraîner une fœtotoxicité (diminution de la fonction rénale, oligohydramnios, retard d'ossification des os du crâne) et une toxicité néonatale (insuffisance rénale, hypotension, hyperkaliémie) (voir «Données précliniques»).
+
+En cas d'exposition aux ARA II à partir du deuxième trimestre de la grossesse, il est recommandé d'effectuer une échographie fœtale afin de vérifier la fonction rénale et les os de la voûte du crâne.
+
+Les nouveau-nés de mères traitées par ARA II doivent être étroitement surveillés sur le plan de l'hypotension (voir «Contre-indications» et «Mises en garde et précautions»).
+
+Allaitement
+
+L'absence d'expérience concernent l'administration d'Hanarbe en cours d'allaitement incite à déconseiller son utilisation. Il convient de préférer un traitement antihypertenseur alternatif dont le profil de sécurité est mieux adapté à l'allaitement, notamment lorsqu'il s'agit de nouveau-nés ou de prématurés.
+
+Fertilité
+
+Il n'existe aucune donnée clinique sur sur les effets de l'azilsartan médoxomil sur la fertilité humaine. Les études chez l’animal ont montré que l'azilsartan médoxomil ne semble pas avoir d'effet chez l’homme et chez la femme (voir «Données précliniques»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude correspondante n'a été effectuée. Lors de la conduite d'un véhicule ou de l'utilisation de machines, il convient de se rappeler que des vertiges ou de la somnolence peuvent occasionnellement survenir sous traitement antihypertenseur.
+
+Effets indésirables
+
+Résumé du profil de sécurité
+
+La sécurité d' Azilsartanmedoxomil aux doses de 20, 40 et 80 mg a été évaluée dans des études cliniques menées chez des patients traités pendant une durée allant jusqu'à 56 semaines.
+
+Les effets indésirables associés à l'administration d' Azilsartanmedoxomil et évalués en essais cliniques aux doses de 20, 40 ou 80 mg étaient pour la plupart légers ou modérés, et non dose-dépendants. Leur incidence globale était similaire à celle observée sous placebo. L'effet indésirable le plus fréquent était les vertiges. La fréquence d'effets indésirables sous  Azilsartanmedoxomil n'était corrélée ni au sexe ni à l'âge ni à l'origine ethnique.
+
+Liste des effets indésirables
+
+Les effets indésirables issus d'une analyse regroupée de données (doses de 40 et de 80 mg) sont rangés par classe de système d’organes de la classification MedDRA et par fréquence selon la convention suivante : très fréquent (≥1/10), fréquent (≥1/100, <1/10), occasionnel (≥1/1 000, <1/100), rare (≥1/10 000, <1/1 000), très rare (<1/10 000), fréquence inconnue (ne peut être estimée sur la base des données disponibles). Dans chaque groupe de fréquence, les effets indésirables sont présentés par ordre décroissant de gravité.
+
+Affections du système nerveux
+
+Fréquent: Vertige
+
+Affections vasculaires
+
+Occasionnel: Hypotension
+
+Affections gastro-intestinales
+
+Fréquent: Diarrhée
+
+Occasionnel: Nausées
+
+Fréquence inconnue: Angioedème intestinal
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnel: Eruptions, démangeaisons
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Occasionnel: Spasmes musculaires
+
+Fréquence inconnue: rhabdomyolyse, arthralgie
+
+Affections du rein et des voies urinaires
+
+Fréquent: Elévation du taux sanguin de créatine phosphokinase
+
+Occasionnel: Elévation du taux de créatininémie, augmentation du taux d'acide urique dans le sang (hyperuricémie)
+
+Troubles généraux et accidents liés au site d'administration
+
+Occasionnel: Fatigue, œdèmes périphériques
+
+Description d’effets indésirables spécifiques et informations complémentaires
+
+Lors de l'administration concomitante d'Azilsartanmedoxomil et de chlortalidone, les fréquences des augmentations de créatininémie et d'hypotension ont passé de «occasionnel» à «fréquent». Aucun azotémie n'a été décrite lors des essais contrôlés contre placebo, mais a été observée fréquemment lors de l'administration simultanée d'Azilsartanmedoxomil et de chlortalidone.
+
+Lors de l'administration concomitante d'Azilsartanmedoxomil et d'amlodipine, les œdèmes périphériques ont passés de «occasionnel» à «fréquent», mais leur fréquence était plus faible que lors de l'administration de l'amlodipine seule.
+
+Dans un essai clinique contrôlé contre placebo, les effets indésirables sous 20 mg d' Azilsartanmedoxomil ont été décrits aux mêmes fréquences que sous doses de 40 mg et 80 mg.
+
+Lors d'un traitement ouvert par Azilsartanmedoxomil, un angiœdème (incluant œdème péribuccal et périorbital) a été observé chez 0,2% des patients, mais non dans les essais contrôlés. Un arrêt prématuré du traitement pour cause d'effets indésirables a été rare au cours des essais en monothérapie contrôlés sous placebo et de fréquence similaire dans les divers groupes (2,3% sous placebo, 1,9% sous Azilsartanmedoxomil 40 mg et 2,6% sous Azilsartanmedoxomil 80 mg).
+
+Investigations
+
+Au cours d'essais cliniques contrôlés contre placebo, des modifications cliniquement significatives de paramètres biologiques standards ont été occasionnellement observées.
+
+Taux sérique de créatinine
+
+Dans les essais en monothérapie randomisés contrôlés contre placebo, l'incidence des élévations de la créatinine sérique après traitement par Azilsartanmedoxomil était similaire à celle observée sous placebo. L'administration concomitante d'Azilsartanmedoxomil avec des diurétiques tels que la chlortalidone a entraîné une incidence supérieure des élévations de la créatinine. Cela est cohérent avec les observations effectuées avec d'autres ARA II et IECA, les élévations de la créatinine sérique lors de la co-administration d'Azilsartanmedoxomil avec des diurétiques étant accompagnées de baisses plus importantes de la pression artérielle qu'en monothérapie. La plupart de ces élévations étaient transitoires ou n'ont pas progressé lors de la poursuite du traitement. Après l'arrêt du traitement, la plupart des cas dans lesquels les taux ne s'étaient pas normalisés sous traitement continu se sont avérés réversibles; chez la plupart des patients, les taux de créatinine sont revenus aux valeurs initiales ou à un niveau proche.
+
+Acide urique
+
+Lors du traitement par Azilsartanmedoxomil, de faibles augmentations des taux sériques moyens d'acide urique (10,8 µmol/l) ont été observées par rapport au placebo (4,3 µmol/l).
+
+Hémoglobine et hématocrite
+
+Comme observé avec d'autres ARA II, les essais en monothérapie contrôlés contre placebo ont montré une faible diminution de l'hémoglobine (env. 3 g/l) et de l'hématocrite (env. 1% vol.).
+
+Angioedème intestinal
+
+Des cas d'angioedème intestinal ont été signalés après l'utilisation d'antagonistes des récepteurs de l'angiotensine II (voir «Mises en garde et précautions»).
+
+ 
+
+L’annonce d’effets secondaires présumés après l’autorisation est d’une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d’effet secondaire nouveau ou grave via le portail d’annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Sur la base de considérations pharmacologiques, le surdosage pourrait se manifester par une hypotension symptomatique et des vertiges. Lors d'essais cliniques contrôlés menées chez des sujets sains, des doses d'Azilsartanmedoxomil allant jusqu'à 320 mg une fois par jour pendant 7 jours ont été bien tolérées.
+
+Traitement
+
+En cas d'hypotension symptomatique, il convient d'instaurer un traitement de soutien et de surveiller les signes vitaux.
+
+L'azilsartan n'est pas éliminé par hémodialyse.
+
+Propriétés/Effets
+
+Code ATC
+
+C09CA09
+
+Mécanisme d'action
+
+L'azilsartan médoxomil est un promédicament efficace par voie orale, rapidement transformé en azilsartan, le principe actif, qui est un antagoniste sélectif de l'angiotensine II dont il bloque la liaison au récepteur AT1 dans de nombreux tissus (voir «Pharmacocinétique»). L'angiotensine II est la principale hormone hypertensive du système rénine-angiotensine. Ses effets physiologiques incluent la vasoconstriction, la stimulation de la synthèse et de la libération d'aldostérone, la stimulation cardiaque et la réabsorption rénale du sodium.
+
+Le blocage du récepteur AT1 de l'angiotensine II inhibe la rétroaction négative de l'angiotensine II sur la sécrétion de rénine. L'augmentation de l'activité de la rénine plasmatique et les taux circulants d'angiotensine II qui en résultent ne compensent pas les effets antihypertenseurs de l'azilsartan.
+
+Pharmacodynamique
+
+Voir «Mécanisme d'action».
+
+Efficacité clinique
+
+Hypertension essentielle
+
+Chez les patients atteints d'hypertension artérielle essentielle légère à sévère, Azilsartanmedoxomil obtient à raison d'une prise par jour en monothérapie ou en association avec d'autres antihypertenseurs une baisse de la pression artérielle systolique (PAS) et diastolique (PAD).
+
+Dans sept essais cliniques contrôlés en double aveugle, 5941 patients au total (3672 sous Azilsartanmedoxomil, 801 sous placebo et 1468 sous comparateur actif) ont été traités. Cet effectif comprenait 51% d'hommes, 26% de sujets âgés de ≥65 ans (5% de ≥75 ans); 67% des patients étaient blancs et 19% noirs.
+
+En semaine 6 de deux essais cliniques chez des patients atteints d'hypertension essentielle légère à modérée (PAS/PAD moyenne à l'inclusion d'env. 145/88 mmHg, PAS/PAD clinique env. 157/92 mmHg), les doses d'Azilsartanmedoxomil de 20 mg, 40 mg et 80 mg avaient obtenu une baisse significative plus marquée de la PAS moyenne sur 24 h mesurée en ambulatoire (MAPA), ainsi que de la PAS clinique prise en position assise à la fin de l'intervalle de prise en guise de placebo.
+
+Par ailleurs, Azilsartanmedoxomil 80 mg a entraîné des baisses significativement supérieures de la PAS par rapport aux doses autorisées les plus élevées d'olmésartan médoxomil et de valsartan (voir tableau ci-dessous).
+
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  | Placebo | Azilsartanmedoxomil 20 mg | Azilsartanmedoxomil 40 mg# | Azilsartanmedoxomil 80 mg# | OLM-M 40 mg# | Valsartan 320 mg# |
+| Critère principal de jugement:  PAS moyenne sur 24 h, variation de la moyenne par moindres carrés entre l'inclusion (valeur initiale) et la semaine 6 (mmHg) | | | | | | |
+| Essai 1 | | | | | | |
+| Variation depuis l'inclusion | -1,4 | -12,2\* | -13,5\* | -14,6\*† | -12,6 | - |
+| Essai 2 | | | | | | |
+| Variation depuis l'inclusion | -0,3 | - | -13,4\* | -14,5\*† | -12,0 | -10,2 |
+| Critère de jugement secondaire principal:  PAS clinique: variation de la moyenne par moindres carrés entre l'inclusion (valeur initiale) et la semaine 6 (mmHg) (LOCF) | | | | | | |
+| Essai 1 | | | | | | |
+| Variation depuis l'inclusion | -2,1 | -14,3\* | -14,5\* | -17,6\* | -14,9 | - |
+| Essai 2 | | | | | | |
+| Variation depuis l'inclusion | -1,8 | - | -16,4\*† | -16,7\*† | -13,2 | -11,3 |
+
+ 
+
+OLM-M = olmésartan médoxomil
+
+\* Différence significative vs placebo d'un niveau de signification 0,05 dans le cadre de l'analyse pas à pas.
+
+† Différence significative vs comparateur(s) d'un niveau de signification de 0,05 dans le cadre de l'analyse pas à pas.
+
+# Dose maximale atteinte dans l'étude 2. Titration forcée en semaine 2, de 20 à 40 mg et de 40 à 80 mg pour Azilsartanmedoxomil, de 20 à 40 mg pour l'olmésartan et de 160 à 320 mg pour le valsartan.
+
+ 
+
+Dans ces deux essais cliniques, la comparaison des principaux effets secondaires entre Azilsartanmedoxomil et les comparateurs actifs (en utilisant un seuil de 3%) s'établissait à: céphalées (Azilsartanmedoxomil 4,8%; olmesartan médoxomil: 5,5% et valsartan 7,6%) et vertige (Azilsartanmedoxomil 3,0%; olmesartan médoxomil 3,3% et valsartan: 1,8%); dyslipidémie (Azilsartanmedoxomil 3,5%; olmesartan médoxomil 2,4% et valsartan 1,1%).
+
+En 24 semaines de traitement, on a observé une diminution de PAS/PAD clinique significativement plus forte sous Azilsartanmedoxomil que sous ramipril (les deux à p<0,001), la variation depuis l'inclusion était de -20,6/-10,2 mmHg sous Azilsartanmedoxomil 40 mg, de -21,2/-10,5 mmHg sous Azilsartanmedoxomil 80 mg et de -12,2/-4,9 mmHg sous ramipril 10 mg. Les principaux effets indésirables (en utilisant un seuil de 3%) étaient: nasopharyngite (Azilsartanmedoxomil 5,5%; ramipril 5,8%), céphalées (Azilsartanmedoxomil 3,7%; Ramipril 4,8%) et toux (Azilsartanmedoxomil 1,2%; ramipril 8,2%).
+
+Dans tous les essais, la majeure partie de l'effet antihypertenseur s'est manifesté dans les 2 premières semaines de traitement. L'effet maximum a été observé après 4 semaines et s'est maintenu jusqu'à la fin de l'essai. L'effet antihypertenseur d'Azilsartanmedoxomil sur la pression artérielle systolique et diastolique s'est maintenu au-delà de l'intervalle de prise de 24 h. Le rapport creux/pic corrigé en fonction du placebo s'établissait à 80% ou plus pour la PAS et la PAD.
+
+Aucun cas d'hypertension rebond n'a été observé après un arrêt brusque d'Azilsartanmedoxomil au bout de 6 mois de traitement.
+
+Dans l'ensemble, aucune différence de tolérance et d'efficacité n'a été notée entre les patients âgés et les patients plus jeunes, mais une sensibilité supérieure aux effets hypotenseurs chez certains individus âgés ne saurait être exclue (voir «Posologie/Mode d'emploi»). Comme avec d'autres ARA II et ICA, l'effet antihypertenseur a été plus faible chez les patients noirs (population ayant généralement un faible taux de rénine) que chez les autres patients.
+
+L'administration concomitante d'Azilsartanmedoxomil 40 et 80 mg avec un inhibiteur calcique (amlodipine) ou un diurétique de type thiazidique (chlortalidone) a obtenu une baisse de la pression artérielle supérieure à celle de l'autre antihypertenseur seul. Dans un essai contrôlé, en association avec 5 mg d'amlodipine, Azilsartanmedoxomil 40 mg a obtenu une diminution de la pression artérielle clinique de 27,0/12,0 et Azilsartanmedoxomil 80 mg de 25,5/12,7 mmHg comparés à 15,9/7,1 mmHg sous amlodipine seule.
+
+Dans un autre essai, en association avec 25 mg de chlortalidone, Azilsartanmedoxomil 40 mg a obtenu une baisse de PAS/PAD clinique de 36,2/16,2 et Azilsartanmedoxomil 80 mg de 34,4/16,0 mmHg, comparés à 21,8/8,9 mmHg sous chlortalidone seule. Par ailleurs, chez les patients dont Azilsartanmedoxomil seul ne pouvait suffisamment contrôler la pression artérielle, l'adjonction de chlortalidone ou d'hydrochlorothiazide a permis d'obtenir une nouvelle baisse de PAS et PAD. Les événements indésirables dose-dépendants, incluant vertiges, hypotension artérielle et élévation de la créatinine sérique, ont été plus fréquents lors de l'administration simultanée avec un diurétique qu'avec Azilsartanmedoxomil seul, tandis que l'hypokaliémie était moins fréquente qu'avec le diurétique seul (voir «Effets indésirables»).
+
+Les effets bénéfiques d'Azilsartanmedoxomil sur la mortalité et la morbidité cardiovasculaire et les lésions d'organe cible sont actuellement inconnus.
+
+Effet sur la repolarisation cardiaque
+
+Une étude approfondie des intervalles QT/QTc, afin d'évaluer le potentiel d'Azilsartanmedoxomil de prolongation de l'intervalle QT/QTc chez des sujets sains, n'a pas mis en évidence de prolongation de l'intervalle QT/QTc à la dose de 320 mg d'Azilsartanmedoxomil.
+
+Pharmacocinétique
+
+Après administration orale, l'azilsartan médoxomil est rapidement hydrolysé en sa fraction active, l'azilsartan, dans le tractus gastro-intestinal et/ou durant l'absorption. Selon des études in vitro, la carboxymethylènebuténolidase participe à l'hydrolyse au niveau de l'intestin et du foie. Les estérases plasmatiques sont également impliquées dans l'hydrolyse de l'azilsartan médoxomil en azilsartan.
+
+Absorption
+
+La biodisponibilité orale absolue estimée de l'azilsartan médoxomil sur la base des taux plasmatiques d'azilsartan est d'environ 60%. Après administration orale d'azilsartan médoxomil, les concentrations plasmatiques maximales (Cmax) d'azilsartan sont atteintes en 1,5 à 3 heures. Les aliments n'ont pas d'incidence sur la biodisponibilité de l'azilsartan (voir «Posologie/Mode d'emploi»).
+
+Distribution
+
+Le volume de distribution de l'azilsartan est d'environ 16 litres. L'azilsartan est fortement lié aux protéines plasmatiques (>99%), principalement à l'albumine sérique. La liaison protéique est constante à des concentrations plasmatiques d'azilsartan nettement supérieures à celles atteintes avec les doses recommandées.
+
+Métabolisme
+
+L'azilsartan est métabolisé en deux métabolites principaux. Le métabolite majeur dans le plasma, désigné par métabolite M-II, est formé par O-désalkylation; le métabolite mineur, dit métabolite M-I, est formé en moindre quantité par décarboxylation. La création du métabolite M-II corrèle principalement avec l'activité de CYP2C9. L'exposition systémique aux métabolites chez l'homme est d'environ 50% (M-II) et inférieure à 1% (M-I) de celles de l'azilsartan. Les M-I et M-II ne contribuent pas à l'activité pharmacologique d'Hanarbe. L'influence du génotype de CYP2C9 sur la pharmacocinétique de l'azilsartan n'a pas été étudiée. L’enzyme majeure responsable du métabolisme de l’azilsartan est le CYP2C9.
+
+Elimination
+
+Après l'administration d'une dose orale d'azilsartan médoxomil marqué au 14C, environ 55% de la radioactivité sont dosés dans les selles et environ 42% dans l'urine, avec 15% de la dose étant excrétée dans l'urine sous forme d'azilsartan. La demi-vie d'élimination de l'azilsartan est d'environ 11 heures, sa clairance rénale d'environ 2,3 ml/min. Les taux d'équilibre d'azilsartan sont obtenus dans les 5 jours et aucune accumulation dans le plasma ne se produit en cas d'administration quotidienne répétée.
+
+Linéarité/non-linéarité
+
+Après administration unique ou multiple, une proportionnalité à la dose de l'exposition a été observée pour l'azilsartan dans la plage comprise entre 20 mg et 320 mg d'azilsartan médoxomil.
+
+Cinétique pour certains groupes de patients
+
+Troubles de la fonction hépatique
+
+L'administration d' Azilsartanmedoxomil pendant 5 jours au maximum chez des sujets présentant une insuffisance hépatique légère (Child-Pugh A) ou modérée (Child-Pugh B) a entraîné une légère augmentation de l'exposition à l'azilsartan (ASC augmentée de 1,3 à 1,6 fois) (voir «Posologie/Mode d'emploi»). Azilsartanmedoxomil n'a pas été étudié chez les patients atteints d'une insuffisance hépatique sévère (voir «Mises en garde et précautions»).
+
+Troubles de la fonction rénale
+
+Chez les patients présentant une insuffisance rénale légère, modérée et sévère, l'exposition totale à l'azilsartan (ASC) a été augmentée respectivement de ±30%, ±25% et ±95%. Il n'a pas été observé d'augmentation (±5%) chez les patients atteints d'une insuffisance rénale terminale traités par dialyse. Toutefois, les données d'utilisation chez les patients atteints d'une insuffisance rénale sévère ou terminale sont absentes (voir Posologie/Mode d'emploi»). L'hémodialyse n'élimine pas l'azilsartan de la circulation générale.
+
+Patients âgés
+
+La pharmacocinétique de l'azilsartan ne diffère pas de manière significative entre les patients jeunes (de 18 à 45 ans) et les patients âgés (de 65 à 85 ans).
+
+Enfants et adolescents
+
+La pharmacocinétique de l'azilsartan n'a pas été étudiée chez les enfants et adolescents âgés de moins de 18 ans.
+
+Sexe
+
+La pharmacocinétique de l'azilsartan ne présente pas de différence significative entre hommes et femmes. Aucune adaptation posologique n'est nécessaire sur la base du sexe.
+
+Race
+
+La pharmacocinétique de l'azilsartan ne présente pas de différence significative entre les populations noire et blanche. Aucune adaptation posologique n'est nécessaire sur la base de l'origine ethnique.
+
+Données précliniques
+
+Génotoxicité
+
+Les études in vitro et in vivo du potentiel mutagène et d'activité clastogène de l'azilsartan et du M-II, le métabolite principal chez l'homme, indiquent que ces deux substances de comportent aucun risque génotoxique pour l'homme.
+
+Carcinogénicité
+
+Le potentiel carcinogène de l'azilsartan médoxomil et du M-II a fait l'objet d'une étude de 6 mois sur des souris transgéniques rasH2 et d'une étude de 2 ans sur des rats. Aucune des deux substances ne s'est avérée carcinogène chez ces espèces. L'azilsartan, le principe actif issu du promédicament azilsartan médoxomil, ne s'est pas révélé carcinogène dans des études de 2 ans sur souris et rats.
+
+Toxicité pour la reproduction
+
+Dans les études de fertilité conventionnelles chez le rat, il n’a pas été observé d’effet sur la fertilité mâle ou femelle.
+
+L'azilsartan médoxomil, l'azilsartan et le M-II ne se sont pas révélés tératogènes chez le rat et le lapin. Dans des études de développement péri- et post-natal de rats, des effets indésirables sur la viabilité des petits ont été observés après l'administration d'azilsartan médoxomil à des rates gravides et allaitantes (avec, sur base des mg/m2, une dose de 1,2 fois la dose maximale recommandée chez l'homme).
+
+L’azilsartan et le M-II ont traversé le placenta et ont été trouvés dans les foetus de rates en gestation;
+
+ils ont également été excrétés dans le lait de rates en période de lactation.
+
+Analyses de toxicité chez des animaux juvéniles
+
+Les effets de l’azilsartan médoxomil, seul ou en association à M-II, sur de jeunes rats ont été examinés au cours d’une série d’études pilotes et définitives d’une durée de 7 jours à 3 mois portant sur la toxicité orale chez des animaux juvéniles. Le traitement avait été instauré à différents âges, entre le jour postnatal 0 [JPN 0; nouveau-né] et JPN 21.
+
+Les résultats de ces études indiquent que les rats juvéniles étaient plus sensibles aux altérations de la morphologie et de la fonction rénales causées par l’angiotensine pendant les deux premières semaines postnatales, qui correspondent à la phase de néphrogenèse.
+
+Remarques particulières
+
+Incompatibilités
+
+Non pertinent.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Ne pas conserver au-dessus de 25°C.
+
+Conserver dans l'emballage original, pour le protéger de la lumière et de l'humidité.
+
+Conserver hors de portée des enfants.
+
+Numéro d’autorisation
+
+69936 (Swissmedic)
+
+Présentation
+
+Hanarbe comprimés 20 mg: 14, 28 et 98 comprimés  (actuellement indisponible dans le commerce) [B]
+
+Hanarbe comprimés 40 mg: 14, 28 et 98 comprimés [B]
+
+Hanarbe comprimés 80 mg: 14, 28 et 98 comprimés [B]
+
+Titulaire de l’autorisation
+
+Hasten Biopharmaceutic (Switzerland) AG, Zug.
+
+Mise à jour de l’information
+
+Mai 2025

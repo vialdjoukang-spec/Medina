@@ -1,0 +1,787 @@
+---
+titre: "Co-Irbésartan Sandoz®"
+titulaire: "Sandoz Pharmaceuticals AG"
+atc: C09DA04
+substances: "Irbesartanum, hydrochlorothiazidum"
+autorisation_swissmedic: 62640
+date_version: 2025-04-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/69192cc6710b409fa21d55f975817ad9-fr.html
+---
+
+Co-Irbésartan Sandoz®
+
+Sandoz Pharmaceuticals AG
+
+Composition
+
+Principes actifs
+
+Irbesartanum, hydrochlorothiazidum.
+
+Excipients
+
+Cellulosum microcristallinum, lactosum monohydricum, carmellosum natricum conexum, silica colloidalis anhydrica, hypromellosum, cellulosum microcristallinum silificatum, magnesii stearas.
+
+Film:
+
+Hypromellosum, Hydroxypropylcellulosum, macrogolum 6000, lactosum monohydricum, titanii dioxidum (E 171), E 172 (rubrum), E 172 (nigrum) seulement 300 mg/25 mg, E 172 (flavum) seulement 150 mg/12,5 mg et 300 mg/12,5 mg, talcum.
+
+1 comprimé pelliculé 150 mg/12,5 mg contient 8,252 mg lactose monohydraté et 0,595 mg de sodium.
+
+1 comprimé pelliculé 300 mg/12,5 mg contient 20,504 mg lactose monohydraté et 1,4 mg de sodium.
+
+1 comprimé pelliculé 300 mg/25 mg contient 16,504 mg lactose monohydraté et 1,19 mg de sodium.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Co-Irbésartan Sandoz 150/12,5: comprimés pelliculés à 150 mg d'irbésartan et 12,5 mg d'hydrochlorothiazide.
+
+Co-Irbésartan Sandoz 300/12,5: comprimés pelliculés à 300 mg d'irbésartan et 12,5 mg d'hydrochlorothiazide.
+
+Co-Irbésartan Sandoz 300/25: comprimés pelliculés à 300 mg d'irbésartan et 25 mg d'hydrochlorothiazide.
+
+Indications/Possibilités d’emploi
+
+Traitement de l'hypertension artérielle essentielle lorsque l'effet d'une monothérapie reste insuffisant.
+
+Traitement initial en cas d'hypertension prononcée, lorsqu'un contrôle rapide de la pression artérielle (en termes de jours ou de semaines) est de première importance clinique.
+
+Posologie/Mode d’emploi
+
+Posologie usuelle
+
+Co-Irbésartan Sandoz peut être administré aux patients dont la tension artérielle est mal contrôlée par l'irbésartan ou l'hydrochlorothiazide en monothérapie. Un traitement par Co-Irbésartan Sandoz 150/12,5 peut être directement instauré chez les patients présentant une hypertension marquée.
+
+La prise des comprimés pelliculés de Co-Irbésartan Sandoz a lieu 1 fois par jour, pendant ou en dehors des repas.
+
+Si elle est cliniquement appropriée, une substitution de la monothérapie par l'association fixe peut s'effectuer comme suit:
+
+·Irbésartan 150 mg/hydrochlorothiazide 12,5 mg (1 comprimé pelliculé par jour de Co-Irbésartan Sandoz 150/12,5) chez les patients dont la pression artérielle est mal contrôlée par l'hydrochlorothiazide seul ou par 150 mg d'irbésartan seul (Irbésartan Sandoz 150).
+
+·Irbésartan 300 mg/hydrochlorothiazide 12,5 mg (1 comprimé pelliculé par jour de
+
+Co-Irbésartan Sandoz 300/12,5) chez les patients dont la pression artérielle est mal contrôlée par 300 mg d'irbésartan (Irbésartan Sandoz 300) ou par irbésartan 150 mg/hydrochlorothiazide 12,5 mg (Co-Irbésartan Sandoz 150/12,5).
+
+·Irbésartan 300 mg/hydrochlorothiazide 25 mg (1 comprimé pelliculé par jour de Co-Irbésartan Sandoz 300/25) chez les patients dont la pression artérielle est mal contrôlée par irbésartan 150 mg/hydrochlorothiazide 12,5 mg (Co-Irbésartan Sandoz 150/12,5) ou par irbésartan 300 mg/hydrochlorothiazide 12,5 mg (Co-Irbésartan Sandoz 300/12,5). Voir «Propriétés/Effets».
+
+Des doses supérieures à 300 mg d'irbésartan et 25 mg d'hydrochlorothiazide par jour ne sont pas recommandées.
+
+Si un contrôle adéquat de la tension artérielle n'est pas atteint avec Co-Irbésartan Sandoz seul, un autre antihypertenseur (par ex. un bêtabloquant ou un inhibiteur calcique à longue durée d'action) peut être ajouté (voir aussi «Interactions/Diurétiques et autres antihypertenseurs»).
+
+Instructions posologiques particulières
+
+Hypovolémie
+
+Une déplétion hydrosodée et/ou une hypovolémie doivent être corrigées avant la prise de Co-Irbésartan Sandoz (voir «Mises en garde et précautions»), notamment chez les patients traités par de fortes doses de diurétiques.
+
+Opérations chirurgicales
+
+Administration de myorelaxants et d'anesthésiques: voir «Interactions/Autres informations sur les interactions avec l'hydrochlorothiazide».
+
+Patients présentant des troubles de la fonction hépatique
+
+Co-Irbésartan Sandoz est contre-indiqué chez les patients atteints d'une insuffisance hépatique sévère étant donné qu'il n'existe pas d'expérience clinique chez ces patients.
+
+Les thiazidiques doivent être utilisés avec précaution chez les patients atteints d'insuffisance hépatique.
+
+Un ajustement de la posologie de Co-Irbésartan Sandoz 150/12,5 n'est pas nécessaire chez les patients atteints d'une insuffisance hépatique légère à modérée. La dose de 150 mg d'irbésartan, c'est-à-dire 1 comprimé pelliculé par jour de Co-Irbésartan Sandoz 150/12,5, ne doit pas être dépassée (voir «Mises en garde et précautions/Troubles de la fonction hépatique»).
+
+Patients présentant des troubles de la fonction rénale
+
+En raison de la présence d'hydrochlorothiazide, Co-Irbésartan Sandoz est contre-indiqué chez les patients atteints d'une insuffisance rénale sévère (clairance de la créatinine ≤30 ml/min); il convient alors de préférer les diurétiques de l'anse. Chez les patients atteints d'insuffisance rénale avec une clairance de la créatinine >30 ml/min, une adaptation de la posologie n'est pas nécessaire.
+
+Patients âgés
+
+Aucune adaptation posologique n'est nécessaire chez les patients âgés (voir «Pharmacocinétique»).
+
+Enfants et adolescents
+
+La sécurité d'emploi et l'efficacité de Co-Irbésartan Sandoz n'ont pas été établies chez l'enfant et l'adolescent.
+
+Contre-indications
+
+·Hypersensibilité au principe actif, à l'un des excipients selon la composition ou à d'autres dérivés des sulfamidés; les réactions d'hypersensibilité ont en général plus de chances de se produire chez les patients avec des antécédents d'allergie ou d'asthme bronchique.
+
+·Co-administration avec des médicaments contenant de l'aliskiren chez des patients diabétiques (type 1 et type 2) ou souffrant d'une insuffisance rénale (débit de filtration glomérulaire (DFG) <60 ml/min/1,73 m2).
+
+·Co-administration avec des inhibiteurs de l'enzyme de conversion de l'angiotensine (ECA) chez des patients souffrant de néphropathie diabétique.
+
+·Patients atteints d'un angiœdème héréditaire ou chez lesquels un œdème angioneurotique est apparu suite à un traitement antérieur par un inhibiteur de l'ECA ou par un antagoniste des récepteurs de l'angiotensine II (ARA II).
+
+·Anurie.
+
+·Grossesse (voir «Grossesse, Allaitement»).
+
+·Insuffisances hépatique et rénale sévères (clairance de la créatinine ≤30 ml/min: voir «Pharmacocinétique/Cinétique pour certains groupes de patients»).
+
+·Hypokaliémie, hyponatrémie, hypercalcémie et hyperuricémie symptomatique (goutte ou calculs urinaires dans l'anamnèse) réfractaires au traitement.
+
+Mises en garde et précautions
+
+Hypotension
+
+Co-Irbésartan Sandoz a été occasionnellement associé à une hypotension symptomatique, non seulement chez des patients présentant des facteurs de risque particuliers (déplétion hydrique et/ou sodée, secondaire à un traitement diurétique intensif, une alimentation hyposodée, une diarrhée, des vomissements ou une hémodialyse), mais également chez des patients sans ces facteurs de risque.
+
+Angioedème intestinal
+
+Des angioedèmes intestinaux ont été rapportés chez des patients traités par des antagonistes des récepteurs de l'angiotensine II, y compris l'irbésartan (voir «Effets indésirables»). Ces patients présentaient des douleurs abdominales, des nausées, des vomissements et de la diarrhée. Les symptômes se sont résolus après l'arrêt des antagonistes des récepteurs de l'angiotensine II. Si un angioedème intestinal est diagnostiqué, l'irbésartan doit être arrêté et une surveillance appropriée doit être mise en œuvre jusqu'à disparition complète des symptômes.
+
+Troubles de la fonction hépatique
+
+Chez les patients présentant une insuffisance hépatique légère à modérée, il convient de ne pas dépasser la dose journalière de 150 mg d'irbésartan/12,5 mg d'hydrochlorothiazide (1 comprimé pelliculé de Co-Irbésartan Sandoz 150/12,5). Les thiazidiques doivent être utilisés avec prudence chez les patients atteints d'insuffisance hépatique ou d'une maladie évolutive du foie, car des altérations même discrètes de l'équilibre hydroélectrolytique peuvent déclencher un coma hépatique.
+
+Hypertension rénovasculaire
+
+Il existe un risque accru d'hypotension sévère et d'insuffisance rénale lorsque des patients présentant une sténose bilatérale de l'artère rénale ou une sténose artérielle rénale sur rein fonctionnel unique reçoivent d'autres médicaments qui agissent sur le système rénine-angiotensine-aldostérone.
+
+Bien que cela ne soit pas établi pour Co-Irbésartan Sandoz, un phénomène similaire est à prévoir avec un ARA II.
+
+Insuffisance rénale et transplantation rénale
+
+Lorsque Co-Irbésartan Sandoz est administré à des insuffisants rénaux, un contrôle périodique des taux sanguins de potassium, de créatinine et d'acide urique est recommandé. Aucune expérience n'est disponible concernant l'utilisation de Co-Irbésartan Sandoz chez des patients à transplantation rénale récente. Une azotémie liée aux diurétiques thiazidiques peut survenir chez des patients dont la fonction rénale est altérée. Co-Irbésartan Sandoz est contre-indiqué chez les patients ayant une insuffisance rénale sévère (clairance de la créatinine ≤30 ml/min).
+
+Sténose de la valve aortique et mitrale, cardiomyopathie obstructive hypertrophique
+
+Comme avec les autres vasodilatateurs, une prudence particulière est indiquée chez les patients atteints de sténose aortique ou mitrale ou de cardiomyopathie obstructive hypertrophique.
+
+Hyperaldostéronisme primaire
+
+Les patients atteints d'hyperaldostéronisme primaire ne répondent généralement pas aux antihypertenseurs agissant par inhibition du système rénine-angiotensine. En conséquence, l'utilisation de Co-Irbésartan Sandoz n'est pas recommandée chez ces patients.
+
+Double blocage du système rénine-angiotensine-aldostérone (SRAA):
+
+Voir «Interactions».
+
+Effets métaboliques et endocriniens
+
+Les thiazidiques sont susceptibles d'entraîner une intolérance au glucose. Chez les diabétiques, une adaptation de la posologie de l'insuline ou des hypoglycémiants oraux peut s'avérer nécessaire. Un diabète latent peut se manifester pendant un traitement thiazidique.
+
+Une augmentation des taux sanguins de cholestérol, de triglycérides et d'acide urique a été associée au traitement par thiazidiques.
+
+Une hyperuricémie peut survenir ou une crise de goutte peut être déclenchée chez certains patients prédisposés recevant des diurétiques thiazidiques.
+
+Troubles électrolytiques
+
+Comme pour tout patient sous traitement diurétique, une surveillance régulière du taux sérique d'électrolytes à intervalles appropriés s'impose.
+
+Les thiazidiques, dont l'hydrochlorothiazide, peuvent provoquer un déséquilibre hydroélectrolytique (hypokaliémie, hyponatrémie et alcalose hypochlorémique). Bien qu'une hypokaliémie puisse survenir sous thiazidiques, l'administration simultanée d'irbésartan peut atténuer une hypokaliémie induite par un diurétique.
+
+Le déficit en chlorures est en général peu important et ne nécessite généralement pas de traitement.
+
+Les thiazidiques peuvent réduire l'excrétion urinaire de calcium et provoquer une élévation légère et transitoire de la calcémie, même en l'absence d'un trouble connu du métabolisme calcique. Une hypercalcémie importante peut être le symptôme d'une hyperparathyroïdie débutante. Les thiazidiques doivent être arrêtés avant d'explorer la fonction parathyroïdienne.
+
+Les thiazidiques augmentent l'élimination urinaire du magnésium, il peut en résulter une hypomagnésémie.
+
+Test antidopage
+
+Cette spécialité contient de l'hydrochlorothiazide, principe actif pouvant induire une réaction positive des tests pratiqués lors des contrôles antidopage.
+
+Patients atteints d'insuffisance cardiaque sévère ou d'une maladie rénale
+
+Chez les patients dont la tonicité vasculaire et la fonction rénale dépendent de façon prédominante de l'activité du système rénine-angiotensine-aldostérone (p.ex. présentant une insuffisance cardiaque sévère ou une maladie rénale préexistante, y compris une sténose d'artère rénale), le traitement par d'autres produits agissant sur ce système a été associé à une hypotension aiguë, une azotémie, une oligurie ou rarement une insuffisance rénale aiguë. Bien que non établie pour Co-Irbésartan Sandoz, la possibilité d'un effet similaire ne peut être exclue avec les antagonistes des récepteurs de l'angiotensine II.
+
+Patients atteints de cardiomyopathie ischémique ou d'une maladie cardiovasculaire ischémique
+
+Comme avec tous les antihypertenseurs, une baisse brutale de la pression artérielle chez des patients atteints de cardiomyopathie ischémique ou d'une maladie cardiovasculaire ischémique pourrait entraîner un infarctus du myocarde ou un accident vasculaire cérébral.
+
+Patients ayant subi une sympathectomie
+
+L'effet hypotenseur des diurétiques thiazidiques peut être accentué chez ces patients.
+
+Réactions d'hypersensibilité
+
+Des réactions d'hypersensibilité à l'hydrochlorothiazide peuvent survenir chez des patients avec ou sans antécédents allergiques ou d'asthme bronchique; elles sont cependant plus probables chez les patients présentant de tels antécédents.
+
+Photosensibilité
+
+Des cas de réactions de photosensibilité ont été rapportés avec les diurétiques thiazidiques. Si de telles réactions surviennent durant le traitement, il est recommandé d'arrêter celui-ci. Si la reprise du traitement par diurétique est jugée nécessaire, il est recommandé de protéger les zones exposées au soleil ou aux UVA artificiels.
+
+Hypoglycémie
+
+L'irbésartan peut induire une hypoglycémie, en particulier chez les patients traités pour un diabète. Par conséquent, il peut être nécessaire d'adapter la dose d'un traitement antidiabétique tel que le répaglinide ou l'insuline (voir «Effets indésirables»). Il est important d'informer les patients, en particulier les patients traités pour un diabète, du risque d'hypoglycémie pendant le traitement avec l'irbésartan.
+
+Lupus érythémateux disséminé
+
+Des cas d'exacerbation ou d'activation de lupus érythémateux disséminé sous diurétiques thiazidiques ont été rapportés.
+
+Épanchement choroïdien, glaucome secondaire aigu à angle fermé et/ou myopie aiguë
+
+L'hydrochlorothiazide (HCTZ) est un sulfamide. Les sulfamides ou dérivés sulfamides peuvent provoquer une réaction idiosyncrasique susceptible d'entraîner un épanchement choroïdien avec une anomalie du champ visuel, un glaucome secondaire aigu à angle fermé et/ou une myopie aiguë. Cela se manifeste par une détérioration aiguë de l'acuité visuelle ou des douleurs oculaires, qui surviennent typiquement dans les heures ou les semaines suivant le début de la prise du médicament. Un glaucome aigu à angle fermé non traité peut entraîner une perte définitive de la vision. Le traitement initial consiste à arrêter le plus rapidement possible l'HCTZ. Des mesures chirurgicales et médicales doivent être envisagées si la pression intraoculaire ne peut être contrôlée par d'autres moyens. Une allergie préexistante aux sulfamides ou aux pénicillines pourrait être un facteur de risque de survenue d'un glaucome aigu à angle fermé sous traitement par HCTZ.
+
+Psoriasis
+
+L'utilisation de Co-Irbésartan Sandoz chez les patients souffrant de psoriasis, ou chez les patients avec des antécédents de poussées de psoriasis, doit être soigneusement évaluée en raison d'un risque d'exacerbation du psoriasis.
+
+Cancer de la peau non mélanome
+
+Un risque accru de cancer de la peau non mélanome (CPNM) [carcinome basocellulaire (CB) et carcinome épidermoïde (CE)] avec une augmentation de la dose cumulative d'exposition à l'hydrochlorothiazide (HCTZ) a été observé dans deux études épidémiologiques issues du registre national danois des cancers. Les actions photosensibilisantes de l'HCTZ pourraient constituer un mécanisme possible du CPNM.
+
+Les patients prenant de l'HCTZ doivent être informés du risque de CPNM et être invités à vérifier régulièrement leur peau pour détecter toute nouvelle lésion et à signaler rapidement toute lésion cutanée suspecte. Des mesures préventives possibles telles qu'une exposition limitée au soleil et aux rayons UV et, en cas d'exposition, une protection adéquate, devraient être conseillées aux patients afin de minimiser le risque de cancer de la peau. Les lésions cutanées suspectes doivent être examinées rapidement, y compris éventuellement par un examen histologique des biopsies. L'utilisation d'HCTZ peut également devoir être reconsidérée chez les patients ayant déjà présenté un CPNM (voir «Effets indésirables»).
+
+Toxicité respiratoire aiguë
+
+De très rares cas graves de toxicité respiratoire aiguë, notamment de syndrome de détresse respiratoire aiguë (SDRA), ont été rapportés après la prise d'hydrochlorothiazide. L'œdème pulmonaire se développe généralement quelques minutes à quelques heures après la prise d'hydrochlorothiazide. Au début, les symptômes comportent dyspnée, fièvre, détérioration de la fonction pulmonaire et hypotension. Si un diagnostic de SDRA est suspecté, Co-Irbésartan Sandoz doit être arrêté et un traitement approprié doit être administré. L'hydrochlorothiazide ne doit pas être administré à des patients ayant déjà présenté un SDRA à la suite d'une prise d'hydrochlorothiazide.
+
+Nouveau-nés
+
+Tous les nouveau-nés dont les mères ont été traitées par Co-Irbésartan Sandoz durant la grossesse doivent être soigneusement examinés quant à une excrétion urinaire suffisante, une hyperkaliémie et leur tension artérielle. Des mesures médicales adéquates, comme par exemple une réhydratation, peuvent être nécessaires pour éliminer le médicament (voir «Grossesse/Allaitement»).
+
+Sodium
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé pelliculé, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Lactose
+
+Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.
+
+Interactions
+
+Interactions pharmacocinétiques
+
+La pharmacocinétique de la digoxine et de la simvastatine n'a pas été modifiée lors de l'administration concomitante d'une dose de 150 mg d'irbésartan chez l'homme sain. La pharmacocinétique de l'irbésartan n'est pas modifiée en cas d'administration simultanée d'hydrochlorothiazide. L'irbésartan est principalement métabolisé par le CYP2C9, et dans une moindre mesure par glucuro-conjugaison. Il est peu probable que l'inhibition de la voie de la glucuronyl-transférase entraîne des interactions cliniquement significatives.
+
+Études in vitro
+
+In vitro, des interactions ont été observées entre l'irbésartan d'une part, et la warfarine, le tolbutamide (substrat du CYP2C9) et la nifédipine (inhibiteur du CYP2C9) d'autre part. Cependant, il n'a pas été observé d'interactions pharmacocinétiques et pharmacodynamiques cliniquement significatives, quand l'irbésartan a été co-administré avec la warfarine chez l'homme sain. La pharmacocinétique de l'irbésartan n'est pas modifiée en cas d'administration simultanée de nifédipine. L'administration concomitante d'irbésartan et d'acénocoumarol n'a entraîné aucune interaction pharmacodynamique significative.
+
+Inducteurs enzymatiques
+
+Les effets d'inducteurs de CYP2C9 tels que la rifampicine sur la pharmacocinétique de l'irbésartan n'ont pas été évalués. D'après les données expérimentales in vitro, aucune interaction n'est à prévoir avec les substances dont le métabolisme est lié aux isoenzymes du cytochrome P450 CYP1A1, CYP1A2, CYP2A6, CYP2B6, CYP2D6, CYP2E1 ou CYP3A4.
+
+Inhibiteurs enzymatiques
+
+Double blocage du système rénine-angiotensine-aldostérone (SRAA) par un inhibiteur de l'ECA, un antagoniste des récepteurs de l'angiotensine II (ARA II) ou l'aliskiren
+
+Par rapport à une monothérapie par l'une de ces substances, le double blocage du SRAA par un ARA II, un inhibiteur de l'ECA ou l'aliskiren a augmenté la fréquence des cas d'hypotension, de syncope, d'hyperkaliémie et de troubles de la fonction rénale (y compris une défaillance rénale aiguë), en particulier en début de traitement chez les patients normotendus ou hypertendus. En conséquence, le double blocage du SRAA par l'association d'un inhibiteur de l'ECA, ARA II ou d'aliskiren n'est pas recommandé (voir «Contre-indications»).
+
+Néanmoins, si une telle association est considérée comme absolument nécessaire, elle doit se limiter à des patients définis au cas par cas, et ne pourra se faire que sous la surveillance d'un spécialiste avec un contrôle étroit et fréquent de la pression artérielle, de l'ionogramme sanguin et de la fonction rénale.
+
+La prise simultanée de Co-Irbésartan Sandoz et de l'aliskiren n'est pas recommandée. Cette association est contre-indiquée chez certains patients (voir «Contre-indications»). La prise simultanée de Co-Irbésartan Sandoz et d'inhibiteurs de l'ECA est contre-indiquée chez les patients souffrant de néphropathie diabétique et n'est pas recommandée chez les autres patients.
+
+Anti-inflammatoires non stéroïdiens (AINS) / inhibiteurs sélectifs de la COX-2
+
+Lorsque des antagonistes des récepteurs de l'angiotensine II sont administrés simultanément avec des AINS (c.-à-d. inhibiteurs sélectifs de la COX-2, acide acétylsalicylique [>3 g/jour] et AINS non sélectifs), l'effet antihypertenseur peut diminuer.
+
+Chez les patients âgés et les patients qui présentent une déplétion hydrique (y compris ceux sous traitement diurétique) ou qui sont atteints d'insuffisance rénale, la co-administration d'AINS (y compris d'inhibiteurs sélectifs de la COX-2) et d'ARA II (y compris l'irbésartan) peut provoquer une détérioration (généralement réversible) de la fonction rénale (y compris insuffisance rénale aiguë). Le traitement par irbésartan et anti-inflammatoires non stéroïdiens doit être instauré avec prudence et la fonction rénale doit être surveillée périodiquement. L'effet antihypertenseur des antagonistes des récepteurs de l'angiotensine II (y compris l'irbésartan) peut être atténué par les AINS (y compris les inhibiteurs sélectifs de la COX-2).
+
+Autres interactions
+
+Diurétiques et autres antihypertenseurs
+
+L'effet antihypertenseur de l'irbésartan peut être augmenté par l'utilisation concomitante d'autres antihypertenseurs. L'irbésartan et l'hydrochlorothiazide (à des doses allant jusqu'à 300 mg d'irbésartan et 25 mg d'hydrochlorothiazide) peuvent être associés sans problème à d'autres antihypertenseurs tels que des bêta-bloquants ou des antagonistes calciques à longue durée d'action. Un traitement antérieur par des diurétiques à dose élevée peut provoquer une hypovolémie et un risque d'hypotension, lorsqu'un traitement par Co-Irbésartan Sandoz est initié, sauf si la déplétion volémique est préalablement corrigée (voir «Mises en garde et précautions»).
+
+Répaglinide
+
+L'irbésartan a le potentiel d'inhiber l'OATP1B1. Dans une étude clinique, il a été rapporté que l'irbésartan augmentait la Cmax et l'ASC du répaglinide (substrat de l'OATP1B1), de 1,8 fois et 1,3 fois respectivement, lorsqu'il était administré une heure avant le répaglinide. Dans une autre étude, aucune interaction pharmacocinétique pertinente n'a été signalée lorsque les deux médicaments étaient administrés conjointement. Par conséquent, un ajustement de la dose d'un traitement antidiabétique tel que le répaglinide peut être nécessaire (voir «Mises en garde et précautions»).
+
+Lithium
+
+Une augmentation réversible de la concentration sérique de lithium et de la toxicité du lithium a été observée lors de l'administration concomitante de lithium et d'inhibiteurs de l'ECA, d'ARA II ou de thiazidiques. Les thiazidiques réduisant la clairance rénale du lithium, la toxicité du lithium peut être plus élevée après l'utilisation de Co-Irbésartan Sandoz. Une surveillance étroite de la concentration sérique de lithium est donc recommandée en cas d'administration concomitante.
+
+Apport en potassium, diurétiques épargneurs de potassium ou autres médicaments pouvant augmenter la kaliémie
+
+La déplétion potassique des diurétiques thiazidiques est en général atténuée par les effets de l'irbésartan. Cependant, selon l'expérience acquise avec d'autres substances intervenant dans le système rénine-angiotensine, l'administration concomitante de diurétiques épargneurs de potassium, une supplémentation en potassium, des sels de régime contenant du potassium ou d'autres médicaments pouvant augmenter les taux de potassium sérique (p.ex. héparine) peuvent donner lieu à une élévation de la kaliémie, parfois sévère. Une telle association avec l'irbésartan requiert une surveillance étroite du taux sérique de potassium.
+
+L'hypokaliémie peut intensifier les arythmies cardiaques lors de l'utilisation concomitante de digitaliques ou de certains antiarythmiques.
+
+Un contrôle régulier de la kaliémie est recommandé lors de l'administration simultanée de médicaments influencés par le potassium sérique.
+
+Autres informations sur les interactions avec l'hydrochlorothiazide
+
+Etant donné la présence d'un dérivé thiazidique dans Co-Irbésartan Sandoz, les interactions suivantes ne peuvent être exclues.
+
+Alcool, barbituriques ou stupéfiants: une hypotension orthostatique peut être accentuée.
+
+Corticostéroïdes, glucocorticoïde, ACTH, diurétiques kaliurétiques (p.ex. furosémide), amphotéricine B, carbénoxolone, pénicilline G et salicylates: la déplétion électrolytique, en particulier l'hypokaliémie, peut s'accentuer.
+
+Glycosides digitaliques: une hypokaliémie ou hypomagnésémie induite par des thiazides peut favoriser l'apparition d'arythmies induites par les digitaliques.
+
+Vitamine D ou sels de calcium: en réduisant l'élimination urinaire du calcium, les diurétiques thiazidiques peuvent augmenter la calcémie. Si des compléments calciques doivent être prescrits, il faudra surveiller le taux de calcium sérique et adapter la posologie du calcium en fonction des résultats.
+
+Effet de Co-Irbésartan Sandoz sur d'autres médicaments
+
+Diurétiques et antihypertenseurs: l'hydrochlorothiazide peut accentuer l'effet d'autres antihypertenseurs. Il peut en outre interagir avec le diazoxide. Surveiller la glycémie et les taux d'acide urique ainsi que la pression sanguine.
+
+Antidiabétiques (insuline et antidiabétiques oraux): une adaptation posologique de l'antidiabétique peut être nécessaire.
+
+Sympathomimétiques (p.ex. noradrénaline): l'effet des sympathomimétiques peut être atténué, mais pas suffisamment pour en exclure l'usage.
+
+Myorelaxants/anesthésiques: l'effet des myorelaxants non déporalisants, pré-anesthésiques et anesthésiques principaux (p.ex. tubocurarine) peut être renforcé par l'hydrochlorothiazide. Une adaptation posologique peut être nécessaire (les pré-anesthésiques et les anesthésiques principaux doivent être administrés à posologie réduite). Si possible, le traitement par l'hydrochlorothiazide doit être arrêté une semaine avant l'intervention chirurgicale.
+
+Traitement hypo-uricémiant: une adaptation de la posologie des traitements de la goutte peut s'avérer nécessaire, puisque l'hydrochlorothiazide entraîne une élévation du taux sanguin d'acide urique. Une augmentation du dosage de probénécide ou de sulfinpyrazone peut être nécessaire. L'administration simultanée de diurétiques thiazidiques peut augmenter la fréquence de l'apparition de réactions d'hypersensibilité à l'allopurinol.
+
+Bêtabloquants et diazoxide: l'effet hyperglycémiant des bêtabloquants et du diazoxide peut être augmenté.
+
+Cytostatiques: les thiazides peuvent diminuer l'élimination rénale des cytostatiques (p.ex. cyclophosphamide, méthotrexate) et par conséquent renforcer leur toxicité pour la moelle osseuse.
+
+Amantadine: le risque d'effets indésirables par amantadine peut augmenter.
+
+Méthyldopa: lors de l'administration concomitante de méthyldopa et d'hydrochlorothiazide, des cas isolés d'anémie hémolytique ont été décrits.
+
+Ciclosporine: l'administration concomitante de ciclosporine est susceptible d'augmenter le risque d'hyperuricémie, et des symptômes de goutte peuvent apparaître.
+
+Carbamazépine: l'administration concomitante de carbamazépine et d'hydrochlorothiazide a été associée à un risque d'hyponatrémie symptomatique. Pendant la co-administration de ces médicaments, les taux d'électrolytes doivent être surveillés. Il convient d'utiliser, si possible, un diurétique d'une autre classe de médicaments.
+
+Effet d'autres médicaments sur Co-Irbésartan Sandoz
+
+Cholestyramine et colestipol: l'absorption de l'hydrochlorothiazide peut être altérée en présence de résines échangeuses d'anions telles que la cholestyramine et le colestipol.
+
+Anti-inflammatoires non stéroïdiens (p.ex. salicylés, indométacine): chez certains patients, l'administration d'un anti-inflammatoire non stéroïdien peut réduire les effets diurétiques, natriurétiques et antihypertenseurs des diurétiques thiazidiques. La présence simultanée d'une hypovolémie peut provoquer une insuffisance rénale aiguë.
+
+Anticholinergiques (p.ex. atropine, bipéridène): la biodisponibilité des diurétiques thiazidiques peut augmenter lors de l'administration concomitante d'anticholinergiques (p.ex. atropine, bipéridène) et cela probablement à cause d'une motilité gastro-intestinale réduite et d'un retard de la vidange gastrique.
+
+Grossesse, allaitement
+
+Grossesse
+
+Premier trimestre
+
+Il n'existe pas d'études contrôlées chez la femme. Les études chez l'animal avec l'irbésartan ont montré des effets toxiques sur la reproduction (voir «Données précliniques»).
+
+Les données épidémiologiques concernant le risque tératogène après une exposition aux inhibiteurs de l'ECA lors du premier trimestre de la grossesse ne sont pas concluantes; une légère augmentation du risque n'est cependant pas à exclure. Bien qu'il n'existe aucune étude épidémiologique contrôlée concernant l'utilisation des ARA II, un risque similaire ne peut être exclu pour cette catégorie de médicaments.
+
+Deuxième et troisième trimestre
+
+Une exposition in utero aux inhibiteurs de l'ECA administrés au cours des 2e et 3e trimestres de la grossesse a entraîné une lésion et la mort du fœtus.
+
+Le traitement par les ARA II au cours des 2e et 3e trimestres de la grossesse est connu pour entraîner une fœtotoxicité (diminution de la fonction rénale, oligohydramnios, retard de formation des os du crâne) et une toxicité néonatale (insuffisance rénale, hypotension, hyperkaliémie). Aucune expérience n'est disponible concernant l'utilisation de Co-Irbésartan Sandoz chez la femme enceinte.
+
+Les thiazidiques traversent la barrière placentaire et sont retrouvés dans le sang du cordon ombilical. Ils peuvent donc provoquer des perturbations électrolytiques prénatales et probablement d'autres réactions décrites chez les adultes. Des cas de thrombocytopénie néonatale ou d'ictère fœtal ou néonatal ont été associés à un traitement thiazidique.
+
+Pour les raisons susmentionnées, Co-Irbésartan Sandoz, comme tout médicament qui agit directement sur le SRAA, est contre-indiqué pendant la grossesse.
+
+A moins que le traitement avec un ARA II ne soit absolument nécessaire, il est recommandé de modifier le traitement antihypertenseur chez les patientes qui envisagent une grossesse, en faveur d'un médicament ayant un profil de sécurité établi pendant la grossesse.
+
+En cas de diagnostic de grossesse pendant le traitement par un ARA II, ce traitement doit être arrêté immédiatement, et le cas échéant un traitement alternatif sera instauré.
+
+En cas d'administration d'un ARA II pendant le 2e trimestre de la grossesse, il est recommandé de faire une échographie afin de vérifier la fonction rénale et les os du crâne.
+
+Allaitement
+
+On ne sait pas si l'irbésartan ou ses métabolites sont excrétés dans le lait maternel. Les études chez l'animal ont montré que l'irbésartan ou ses métabolites sont excrétés dans le lait (voir «Données précliniques»). Les thiazidiques passent dans le lait maternel humain et peuvent, à forte dose, entraîner une diurèse intense, ce qui peut inhiber la lactation.
+
+Au cours du traitement par Co-Irbésartan Sandoz il est déconseillé d'allaiter. En raison du risque d'effets nocifs pour le nourrisson allaité, il faut décider s'il est préférable d'interrompre soit l'allaitement, soit le traitement, en tenant compte de l'importance du médicament pour la mère.
+
+Nouveau-nés
+
+Les nouveau-nés de mères traitées par un ARA II doivent être surveillés étroitement sur le plan de l'hypotension (voir aussi «Mises en garde et précautions/Nouveau-nés»).
+
+Fertilité
+
+Il n'existe pas d'études contrôlées sur la fertilité chez l'homme. Les études chez l'animal avec l'irbésartan n'ont pas montré d'effets toxiques sur la fertilité (voir «Données précliniques»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Co-Irbésartan Sandoz a une certaine influence sur l'aptitude à la conduite ou l'utilisation de machines.
+
+En raison des éventuels effets indésirables (p.ex. vertiges ou fatigue) pouvant survenir lors d'un traitement avec Co-Irbésartan Sandoz, la prudence est de rigueur lors de la conduite ou de l'utilisation de machines.
+
+Effets indésirables
+
+Indication de fréquence des effets indésirables: très fréquents (≥1/10), fréquents (<1/10 à ≥1/100), occasionnels (<1/100 à ≥1/1'000), rares (<1/1'000 à ≥1/10'000), très rares (<1/10'000); fréquence inconnue (ne peut être estimée sur la base des données disponibles).
+
+Association irbésartan/hydrochlorothiazide
+
+Parmi les 898 patients hypertendus qui ont reçu diverses posologies d'irbésartan/hydrochlorothiazide (dans la fourchette de 37,5 mg/6,25 mg à 300 mg/25 mg) dans des études contrôlées versus placebo, 29,5% des patients ont eu des effets indésirables. Les effets indésirables les plus fréquemment rapportés ont été vertiges (5,6%), fatigue (4,9%), nausées/vomissements (1,8%) et miction anormale (1,4%). De plus, des augmentations de l'azote uréique du sang (BUN) (2,3%), de créatine kinase (1,7%) et de créatinine (1,1%) ont aussi été fréquemment observées lors des essais cliniques.
+
+Effets indésirables rapportés spontanément ainsi que ceux observés dans les études contrôlées versus placebo:
+
+Affections du système immunitaire
+
+Fréquence inconnue: cas de réactions d'hypersensibilité, tels qu'angioedème, rash, urticaire.
+
+Troubles du métabolisme et de la nutrition
+
+Fréquence inconnue: hyperkaliémie.
+
+Affections du système nerveux
+
+Fréquents: vertiges, céphalées.
+
+Occasionnels: vertiges (orthostatiques).
+
+Rares: crise hypertensive.
+
+Affections de l'oreille et du labyrinthe
+
+Fréquence inconnue: acouphènes.
+
+Affections cardiaques
+
+Occasionnels: syncope, hypotension, tachycardie, œdème.
+
+Affections vasculaires
+
+Occasionnels: bouffées vasomotrices.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Très rares: syndrome de détresse respiratoire aiguë (SDRA) (voir rubrique «Mises en garde et précautions»).
+
+Fréquence inconnue: toux.
+
+Affections gastro-intestinales
+
+Fréquents: nausées/vomissements.
+
+Occasionnels: diarrhée.
+
+Rares: angioedème intestinal.
+
+Fréquence inconnue: dyspepsie.
+
+Affections hépatobiliaires
+
+Occasionnels: ictères.
+
+Fréquence inconnue: anomalie de la fonction hépatique.
+
+Affections de la peau et du tissu sous-cutané
+
+Rares: alopécie.
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Occasionnels: œdème des extrémités.
+
+Rares: myalgies.
+
+Fréquence inconnue: arthralgies.
+
+Affections du rein et des voies urinaires
+
+Fréquence inconnue: altération de la fonction rénale incluant des cas isolés d'insuffisance rénale chez des patients à risque (voir «Mises en garde et précautions»).
+
+Affections des organes de reproduction et du sein
+
+Fréquents: miction anormale.
+
+Occasionnels: dysfonctionnement sexuel, modification de la libido.
+
+Troubles généraux et anomalies au site d'administration
+
+Fréquents: fatigue.
+
+Investigations
+
+Fréquents: augmentation des taux sanguins de l'azote uréique, créatinine et créatine kinase.
+
+Occasionnels: baisses du potassium et du sodium plasmatiques.
+
+Pharmacovigilance
+
+Des réactions d'hypersensibilité (urticaire, angioœdème, réactions anaphylactiques y compris choc anaphylactique) ont été observées depuis la mise sur le marché de Co-Irbésartan Sandoz.
+
+De plus, de rares cas d'étourdissement, toux, dyspnée, syncope, hypotension, crise hypertensive, myalgie et alopécie ont été rapportés.
+
+Lors de la phase après commercialisation, les effets indésirables suivants ont été rapportés: vertiges, acouphènes, asthénie, hyperkaliémie, thrombocytopénie (y compris purpura thrombocytopénique), jaunisse, augmentation des valeurs hépatiques, hépatite, anémie, diminution de la fonction rénale (y compris des cas d'insuffisance rénale), psoriasis (et exacerbation du psoriasis), photosensibilité et hypoglycémie (voir «Mises en garde et précautions»).
+
+Informations supplémentaires sur les différents composants
+
+En plus des effets indésirables listés ci-dessus pour l'association des composants, d'autres événements indésirables rapportés par ailleurs avec l'un des composants peuvent être des effets indésirables de Co-Irbésartan Sandoz.
+
+Effets indésirables rapportés avec l'utilisation de l'irbésartan seul
+
+Troubles généraux et anomalies au site d'administration
+
+Occasionnels: douleur thoracique.
+
+Investigations
+
+Très fréquents: une hyperkaliémie est survenue plus souvent chez les patients diabétiques traités par irbésartan que chez ceux traités par placebo. Chez les patients hypertendus diabétiques ayant une microalbuminurie et une fonction rénale normale, une hyperkaliémie (≥5,5 mEq/l) est survenue chez 29,4% (c'est-à-dire très fréquemment) des patients du groupe irbésartan 300 mg et chez 22% des patients du groupe placebo.
+
+Chez les patients hypertendus diabétiques ayant une insuffisance rénale chronique et une protéinurie patente, une hyperkaliémie (≥5,5 mEq/l) est survenue chez 46,3% des patients du groupe irbésartan et 26,3% des patients du groupe placebo.
+
+Fréquents: des augmentations significatives de la créatine kinase plasmatique ont été observées fréquemment (1,7%) chez les sujets traités par irbésartan. Aucune de ces augmentations n'a été associée à des événements musculosquelettiques cliniquement identifiables.
+
+Chez 1,7% des patients hypertendus ayant une atteinte rénale diabétique avancée traitée par l'irbésartan, une diminution de l'hémoglobine non cliniquement significative a été observée.
+
+Effets indésirables rapportés avec l'utilisation de l'hydrochlorothiazide seul
+
+Tumeurs bénignes, malignes et non précisées (incl. kystes et polypes)
+
+Fréquence inconnue: cancer de la peau non mélanome (CPNM, carcinome basocellulaire et carcinome épidermoïde).
+
+Affections hématologiques et du système lymphatique
+
+Rares: thrombocytopénie, accompagnée parfois de purpura.
+
+Fréquence inconnue: leucopénie, neutropénie/agranulocytose, dépression médullaire et anémie hémolytique, anémie aplasique.
+
+Affections psychiatriques
+
+Rares: dépression, troubles du sommeil.
+
+Affections du système nerveux
+
+Rares: maux de tête, vertiges ou étourdissements, paresthésies, sensation de tête vide, agitation.
+
+Affections oculaires
+
+Fréquence inconnue: trouble transitoire de la vision (surtout dans les premières semaines du traitement), xanthopsie, épanchement choroïdien, glaucome secondaire aigu à angle fermé et/ou myopie aiguë (voir «Mises en garde et précautions»).
+
+Affections cardiaques
+
+Rares: arythmies.
+
+Affections vasculaires
+
+Occasionnels: hypotension orthostatique pouvant être renforcée par l'alcool, les anesthésiques ou les sédatifs.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquence inconnue: détresse respiratoire  (y compris pneumopathie et œdème pulmonaire).
+
+Affections gastro-intestinales
+
+Occasionnels: perte d'appétit, nausée légère et vomissement.
+
+Rares: douleurs abdominales, constipation, diarrhée et troubles gastro-intestinaux.
+
+Fréquence inconnue: pancréatite, sialadénite.
+
+Affections hépatobiliaires
+
+Rares: ictère (ictère cholestatique intra-hépatique).
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: urticaire et autres éruptions cutanées.
+
+Rares: réaction de photosensibilisation.
+
+Fréquence inconnue: réactions anaphylactiques, vascularite nécrosante, épidermolyse aiguë toxique, réactions rappelant un lupus érythémateux et réactivation d'un lupus érythémateux cutané.
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Fréquence inconnue: spasmes musculaires, faiblesse.
+
+Affections du rein et des voies urinaires
+
+Fréquence inconnue: néphrite interstitielle, altération de la fonction rénale.
+
+Affections des organes de reproduction et du sein
+
+Occasionnels: impuissance.
+
+Troubles généraux et anomalies au site d'administration
+
+Fréquence inconnue: fièvre.
+
+Investigations
+
+Fréquents: hypokaliémie.
+
+Occasionnels: hyponatrémie, hypomagnésémie et hyperuricémie.
+
+Rares: hypercalcémie, hyperglycémie, glycosurie, détérioration d'un syndrome métabolique lié au diabète.
+
+Fréquence inconnue: alcalose hypochlorémique.
+
+Les effets secondaires dose-dépendants liés à l'hydrochlorothiazide (en particulier les déséquilibres électrolytiques) peuvent être majorés en cas d'augmentation de la dose d'hydrochlorothiazide.
+
+Description d'effets indésirables spécifiques et informations complémentaires
+
+Cancer de la peau non mélanome: d'après les données disponibles provenant d'études épidémiologiques, une association cumulative dose-dépendante entre l'hydrochlorothiazide et le CPNM a été observée (voir aussi «Mises en garde et précautions» et «Propriétés/Effets»).
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Dans une étude clinique, des dosages de 600 ou 900 mg irbésartan/jour n'ont pas été associés plus fréquemment à des effets indésirables que des dosages de 150 ou 300 mg/jour.
+
+En cas de surdosage par irbésartan, les signes cliniques les plus fréquents sont probablement une hypotension et une tachycardie. Une bradycardie pourrait également survenir.
+
+Le surdosage d'hydrochlorothiazide est associé à un désordre électrolytique (hypokaliémie, hypochlorémie, hyponatrémie) ainsi qu'à une déshydratation résultant d'une diurèse excessive.
+
+Traitement
+
+Il n'existe pas d'antidote spécifique pour le traitement d'un surdosage par Co-Irbésartan Sandoz. Le patient doit être placé sous étroite surveillance et un traitement symptomatique et de soutien doit être instauré si nécessaire.
+
+L'irbésartan n'est pas hémodialysable. La proportion d'hydrochlorothiazide éliminée par hémodialyse n'a pas été déterminée.
+
+Propriétés/Effets
+
+Code ATC
+
+C09DA04
+
+Mécanisme d'action
+
+Co-Irbésartan Sandoz est une association d'un ARA II, l'irbésartan, et d'un diurétique thiazidique, l'hydrochlorothiazide. L'association de ces composants a un effet antihypertenseur additif, c.-à-d. qu'elle obtient une baisse de la pression artérielle plus importante que chacun de ces composants utilisés seuls.
+
+L'irbésartan est un antagoniste sélectif des récepteurs de l'angiotensine II (type AT1), actif par voie orale. Il bloque l'effet physiologique de l'angiotensine II médié par les récepteurs AT1, indépendamment de l'origine ou de la voie de synthèse de l'angiotensine II. L'effet antagoniste sélectif sur les récepteurs de l'angiotensine II (AT1) provoque une élévation des taux plasmatiques de rénine et des taux d'angiotensine II et une baisse de la concentration plasmatique d'aldostérone. La kaliémie n'est pas modifiée de façon significative par l'irbésartan seul aux doses recommandées. L'irbésartan n'inhibe pas l'ECA (kininase II), enzyme qui génère la formation d'angiotensine II et dégrade la bradykinine en métabolites inactifs.
+
+L'efficacité de l'irbésartan ne dépend pas d'une activation métabolique.
+
+L'hydrochlorothiazide est un diurétique thiazidique. Le mécanisme de l'effet antihypertenseur des diurétiques thiazidiques n'est pas complètement connu. Les thiazidiques agissent sur la réabsorption électrolytique au niveau des tubules du rein, en augmentant l'élimination du sodium et du chlorure environ dans les mêmes proportions. En favorisant la diurèse, l'hydrochlorothiazide diminue le volume plasmatique, augmente l'activité de la rénine plasmatique et la sécrétion d'aldostérone (avec pour conséquence une perte en potassium et en bicarbonates au niveau des reins) et diminue la kaliémie. L'administration simultanée d'un ARA II bloque l'axe rénine-angiotensine-aldostérone et tend à réduire les pertes potassiques induites par l'hydrochlorothiazide. La diurèse commence 2 heures après une administration orale d'hydrochlorothiazide; elle atteint son maximum environ 4 heures après la prise pour se maintenir pendant environ 6 à 12 heures.
+
+Cancer de la peau non mélanome (CPNM): d'après les données disponibles provenant d'études épidémiologiques, une association cumulative dose-dépendante entre l'hydrochlorothiazide (HCTZ) et le CPNM a été observée. Une étude comprenait une population composée de 71'533 cas de carcinome basocellulaire (CB) et de 8'629 cas de carcinome épidermoïde (CE) appariés à 1'430'833 et 172'462 témoins de la population, respectivement. Une utilisation élevée d'HCTZ (dose cumulative ≥50'000 mg) a été associée à un odds ratio (OR) ajusté de 1,29 (intervalle de confiance de 95%: 1,23−1,35) pour le CB et de 3,98 (intervalle de confiance de 95%: 3,68−4,31) pour le CE. Une relation claire entre la relation dose-réponse cumulative a été observée pour le CB et le CE. Une autre étude a montré une association possible entre le cancer des lèvres (CE) et l'exposition à l'HCTZ: 633 cas de cancer des lèvres ont été appariés à 63'067 témoins de la population, à l'aide d'une stratégie d'échantillonnage axée sur les risques. Une relation dose-réponse cumulative a été démontrée avec un OR ajusté de 2,1 (intervalle de confiance de 95%: 1,7−2,6) allant jusqu'à un OR de 3,9 (3,0−4,9) pour une utilisation élevée (≥25'000 mg) et un OR de 7,7 (5,7−10,5) pour la dose cumulative la plus élevée (≥100'000 mg) (voir «Mises en garde et précautions»).
+
+L'association d'hydrochlorothiazide et d'irbésartan entraîne une baisse supplémentaire dose-dépendante de la pression artérielle aux doses thérapeutiques recommandées. Une dose par jour de 150 mg d'irbésartan et de 12,5 mg d'hydrochlorothiazide a permis d'obtenir 24 heures après la prise une diminution moyenne de la pression systolique/diastolique de 12,9/6,9 mmHg, ajustée par rapport au placebo. L'effet maximal intervenait après 3 à 6 heures. L'association de 150 mg d'irbésartan et de 12,5 mg d'hydrochlorothiazide en une seule prise par jour a produit une baisse de la pression artérielle notable sur 24 heures avec une diminution moyenne de la pression systolique/diastolique de 15,8/10,0 mmHg sur 24 heures, ajustée par rapport au placebo (mesure ambulatoire de la pression). La baisse de pression à la fin de l'intervalle entre les doses représente au moins 68% de des baisses maximales diastoliques et systoliques correspondantes après ajustement par rapport au placebo.
+
+L'addition de 12,5 mg d'hydrochlorothiazide à 300 mg d'irbésartan chez les patients mal contrôlés par 300 mg d'irbésartan seul produit une baisse de la pression artérielle diastolique supplémentaire d'au moins 6,1 mmHg 24 heures après la prise. L'association de 300 mg d'irbésartan et de 12,5 mg d'hydrochlorothiazide a obtenu une diminution de la pression systolique/diastolique pouvant atteindre 13,6/11,5 mmHg, ajustée par rapport au placebo.
+
+Des données cliniques limitées suggèrent que les patients dont l'hypertension n'est pas suffisamment contrôlée avec l'association 300 mg d'irbésartan et 12,5 mg d'hydrochlorothiazide peuvent mieux répondre au traitement quand la dose est augmentée à 300 mg d'irbésartan et 25 mg d'hydrochlorothiazide. Chez ces patients, une baisse plus importante de la pression artérielle a été observée (7,2 à 13,3 mmHg [systolique] respectivement –0,6 à 8,3 mmHg [diastolique]).
+
+Chez les patients dont l'hypertension n'a pas pu être contrôlée de manière adéquate par l'hydrochlorothiazide 25 mg seul, l'addition d'irbésartan a entraîné une baisse moyenne de la pression systolique/diastolique de 11,1/7,2 mmHg, ajustée par rapport au placebo.
+
+L'effet antihypertenseur de l'irbésartan en association avec l'hydrochlorothiazide apparaît dès la première dose et devient manifeste en 1–2 semaines, l'effet maximal étant observé 6 à 8 semaines après le début du traitement. Lors d'études à long terme, l'effet de l'irbésartan/hydrochlorothiazide s'est maintenu au-delà d'un an. Aucun rebond d'hypertension n'a été observé avec l'irbésartan ou l'hydrochlorothiazide.
+
+L'efficacité de Co-Irbésartan Sandoz est indépendante de l'âge, du sexe ou de l'appartenance ethnique.
+
+Pharmacodynamique
+
+Voir «Mécanisme d'action».
+
+Efficacité clinique
+
+Deux essais cliniques ont été menés avec irbésartan/hydrochlorothiazide administré comme traitement initial de l'hypertension.
+
+·Dans le premier (comptant 697 personnes randomisées et 695 traitées), les patients présentant une hypertension sévère (PAD assise >110 mmHg) ont été traités par irbésartan 150 mg ou par irbésartan/hydrochlorothiazide 150/12,5 mg et après une semaine par irbésartan 300 mg ou irbésartan/hydrochlorothiazide 300/25 mg.
+
+La pression artérielle moyenne à l'inclusion était de 172/113 mmHg environ dans chaque groupe de traitement. La baisse de la pression artérielle (PAS/PAD assise) à 5 semaines était de 30,8/24,0 mmHg dans le groupe irbésartan/hydrochlorothiazide et de 21,1/19,3 mmHg dans le groupe irbésartan (p<0,0001). Une plus grande proportion des patients du groupe irbésartan/hydrochlorothiazide a atteint une pression artérielle diastolique <90 mmHg (47,2% sous irbésartan/hydrochlorothiazide contre 33,2% sous irbésartan; p=0,0005). De même, une plus grande proportion des patients du groupe irbésartan/hydrochlorothiazide avait atteint en même temps une PAS assise de <140 mmHg et une PAD assise de <90 mmHg (34,6% sous irbésartan/hydrochlorothiazide contre 19,2% sous irbésartan; p<0,0001). En outre, après 5 semaines de traitement, les pressions artérielles élevées (PAS assise ≥180 mmHg ou PAD assise ≥110 mmHg) étaient moins fréquentes dans le groupe sous irbésartan/hydrochlorothiazide que sous irbésartan seul (5,4% contre 13,8%; p=0,0003).
+
+·Dans l'autre essai (538 personnes randomisées), les patients présentant une hypertension modérée ont été traités par irbésartan 150 mg, hydrochlorothiazide 12,5 mg ou irbésartan/hydrochlorothiazide 150/12,5 mg et après 2 semaines par irbésartan 300 mg, hydrochlorothiazide 25 mg ou irbésartan/hydrochlorothiazide 300/25 mg. La pression artérielle moyenne à l'inclusion était de 162/98 mmHg environ dans tous les groupes de traitement.
+
+Pharmacocinétique
+
+Absorption
+
+L'administration concomitante de l'hydrochlorothiazide et de l'irbésartan n'a pas d'effet sur la pharmacocinétique de l'irbésartan.
+
+L'irbésartan et l'hydrochlorothiazide sont des médicaments actifs par voie orale et ne nécessitent pas de biotransformation pour exercer leurs effets.
+
+Après administration orale de Co-Irbésartan Sandoz, la biodisponibilité absolue est de 60–80% pour l'irbésartan et de 50–80% pour l'hydrochlorothiazide. La prise simultanée d'aliments n'affecte pas la biodisponibilité de l'irbésartan. Le pic de concentration plasmatiques est atteint 1,5 à 2 heures après administration orale pour l'irbésartan et 1 à 2,5 heures pour l'hydrochlorothiazide.
+
+L'irbésartan présente une pharmacocinétique linéaire et proportionnelle à la dose dans une fourchette de 10 à 600 mg. A des doses supérieures à 600 mg, on observe une augmentation moins que proportionnelle de l'absorption orale: la cause en est inconnue.
+
+L'état d'équilibre des concentrations plasmatiques est atteint 3 jours après le début du traitement à raison d'une prise par jour. Une accumulation limitée d'irbésartan (<20%) est observée dans le plasma après administration répétée d'une dose par jour.
+
+Distribution
+
+La liaison de l'irbésartan aux protéines plasmatiques est de l'ordre de 96%, sa liaison aux cellules sanguines est minime. Le volume apparent de distribution est de 53 à 93 litres. La liaison de l'hydrochlorothiazide aux protéines plasmatiques est de 68% et son volume apparent de distribution est 3,6 à 7,8 litres.
+
+L'hydrochlorothiazide traverse la barrière placentaire, mais pas la barrière hémato-encéphalique; il est excrété dans le lait maternel.
+
+Métabolisme
+
+Après administration orale ou intraveineuse d'irbésartan marqué au 14C, 80 à 85% de la radioactivité plasmatique circulante peuvent être attribués à l'irbésartan inchangé. L'irbésartan est métabolisé dans le foie par glucuronoconjugaison et oxydation. Le métabolite circulant principal est le glucuronide d'irbésartan (approximativement 6%). Des études in vitro montrent que l'irbésartan est oxydé principalement par l'isoenzyme CYP2C9 du cytochrome P450. L'isoenzyme CYP3A4 a un effet négligeable.
+
+Élimination
+
+Aux doses thérapeutiques, l'irbésartan présente une pharmacocinétique linéaire pour la gamme des doses thérapeutiques avec une demi-vie terminale d'élimination de 11 à 15 heures.
+
+La clairance totale et la clairance rénale sont respectivement de 157–176 et 3–3,5 ml/min (après administration intraveineuse).
+
+L'irbésartan et ses métabolites sont éliminés par voie biliaire et rénale. Après administration orale ou intraveineuse d'irbésartan marqué au 14C, approximativement 20% de la radioactivité sont retrouvés dans les urines et le reste dans les fèces. Une quantité inférieure à 2% de la dose est excrétée dans les urines sous forme d'irbésartan inchangé.
+
+L'hydrochlorothiazide n'est pas métabolisé mais éliminé rapidement par les reins. Sa demi-vie plasmatique varie entre 5 et 15 heures. Au moins 61% de la dose orale sont éliminés sous forme inchangée dans les 24 heures suivant la prise.
+
+Cinétique pour certains groupes de patients
+
+Dans une étude, des concentrations plasmatiques d'irbésartan un peu plus élevées furent observées chez des femmes hypertendues. Cependant, il n'y a pas eu de différence concernant la demi-vie et l'accumulation d'irbésartan après des doses répétées. Aucun ajustement posologique n'est nécessaire chez la femme.
+
+Troubles de la fonction hépatique
+
+Chez les patients présentant une cirrhose du foie légère à modérée, l'ASC tout comme la Cmax de l'irbésartan sont augmentées. Ces valeurs ne diffèrent cependant pas de manière statistiquement significative par rapport à celles observées chez les sujets sans atteinte hépatique.
+
+Ces paramètres n'ont pas été étudiés chez les patients présentant une cirrhose du foie sévère.
+
+Troubles de la fonction rénale
+
+La pharmacocinétique de l'irbésartan n'est pas significativement modifiée chez les insuffisants rénaux ou les patients soumis à une hémodialyse. L'irbésartan n'est pas éliminé par hémodialyse. Chez les patients atteints d'insuffisance rénale sévère (<20 ml/min), il a été rapporté que la demi-vie d'élimination de l'hydrochlorothiazide augmente jusqu'à 21 heures.
+
+Co-Irbésartan Sandoz ne doit pas être utilisé chez les patients ayant une insuffisance rénale sévère (clairance de la créatinine ≤30 ml/min: voir «Contre-indications»).
+
+Patients âgés
+
+L'ASC et la Cmax de l'irbésartan étaient un peu plus élevées chez les sujets âgés (≥65 ans) que chez les sujets jeunes (18–40 ans). Cependant, la demi-vie terminale n'était pas notablement modifiée. Aucun ajustement posologique n'est nécessaire chez la personne âgée.
+
+Données précliniques
+
+Irbésartan/Hydrochlorothiazide
+
+Toxicité en cas d'administration répétée
+
+La toxicité potentielle après administration orale de l'association irbésartan/hydrochlorothiazide a été évaluée chez les rats et les macaques dans des études d'une durée maximum de 6 mois. Il n'a pas été observé de données toxicologiques ayant une implication en thérapeutique humaine. Les effets observés étaient dus à l'activité pharmacologique de l'irbésartan (le blocage de l'angiotensine-II induit la stimulation des cellules produisant la rénine) et se produisent aussi avec les inhibiteurs de l'ECA. Ces constatations n'ont pas de rapport avec l'utilisation aux doses thérapeutiques de l'association irbésartan/hydrochlorothiazide chez l'homme.
+
+Mutagénicité/Carcinogénicité
+
+Il n'a pas été mis en évidence de mutagénicité ou de clastogénicité avec l'association d'irbésartan/hydrochlorothiazide.
+
+Le potentiel carcinogène n'a pas été étudié chez l'animal avec l'association irbésartan/hydrochlorothiazide.
+
+Toxicité sur la reproduction
+
+Aucun effet tératogène n'a été observé chez les rates recevant une association d'irbésartan/hydrochlorothiazide à des doses toxiques pour la mère.
+
+Les effets de l'association d'irbésartan/hydrochlorothiazide sur la fertilité n'ont pas été évalués dans des études sur l'animal.
+
+Irbésartan
+
+Toxicité en cas d'administration répétée
+
+Il n'y a pas eu de preuve de toxicité systémique ou d'organe cible anormale à des doses cliniquement pertinentes. Dans les études de sécurité non cliniques, de fortes doses d'irbésartan (≥250 mg/kg/jour chez le rat et ≥100 mg/kg/jour chez le macaque) ont entraîné une réduction des paramètres des globules rouges (érythrocytes, hémoglobine, hématocrite).
+
+À très fortes doses (≥500 mg/kg/jour), des modifications dégénératives du rein (telles que néphrite interstitielle, distension tubulaire, tubules basophiles, augmentation des concentrations plasmatiques d'urée et de créatinine) ont été induites par l'irbésartan chez le rat et le macaque et sont considérées comme secondaires aux effets hypotenseurs du médicament qui ont entraîné une diminution de la perfusion rénale. En outre, l'irbésartan a induit une hyperplasie et une hypertrophie des cellules juxtaglomérulaires (chez le rat à ≥90 mg/kg/jour, chez le macaque à ≥10 mg/kg/jour). Tous ces changements ont été considérés comme étant causés par l'action pharmacologique de l'irbésartan. Pour les doses thérapeutiques d'irbésartan chez l'homme, une hyperplasie et une hypertrophie des cellules juxtaglomérulaires rénales ne semble pas pertinente.
+
+Mutagénicité/Carcinogénicité
+
+L'irbésartan n'était pas mutagène dans une batterie de tests in vitro (test microbien d'Ames, test de réparation de l'ADN des hépatocytes de rat, test de mutation du gène de la cellule de mammifère V79). L'irbésartan était négatif dans plusieurs tests pour l'induction d'aberrations chromosomiques (in vitro - dosage des lymphocytes humains; in vivo - étude sur le micronoyau chez la souris).
+
+L'irbésartan n'a montré aucun signe de carcinogénicité.
+
+Toxicité sur la reproduction
+
+La fertilité et les fonctions de reproduction n'ont pas été affectées dans les études sur les rats mâles et femelles, même à des doses orales d'irbésartan entraînant une certaine toxicité chez les parents (de 50 à 650 mg/kg/jour), y compris la mortalité à la dose la plus élevée. Aucun effet significatif sur le nombre de corps jaunes, d'implants ou de fœtus vivants n'a été observé. L'irbésartan n'a pas affecté la survie, le développement ou la reproduction de la progéniture. Des études sur les animaux indiquent que l'irbésartan radiomarqué est détecté chez les fœtus de rats et de lapins.
+
+Les études menées chez l'animal avec l'irbésartan ont mis en évidence des effets toxiques transitoires (augmentation de la formation de cavernes au niveau rénal et pelvien, hydro-uretère ou œdème sous cutanés) chez les fœtus de rats. Ces effets n'étaient plus retrouvés après la naissance. L'irbésartan est excrété dans le lait des rates allaitantes. Suite à l'administration d'irbésartan à ces rates, un léger retard de la prise de poids a été observé dans la portée avant sevrage.
+
+Chez le lapin, des avortements ou des résorptions précoces ont été observés à des doses entraînant des effets toxiques importants y compris létaux pour la mère.
+
+Aucun effet tératogène n'a été constaté chez le rat ou le lapin.
+
+Hydrochlorothiazide
+
+Mutagénicité/carcinogénicité
+
+L'hydrochlorothiazide n'a pas été génotoxique in vitro dans le test de mutagénicité d'Ames des souches Salmonella typhimurium TA 98, TA 100, TA 1535, TA 1537 et TA 1538 et dans le test d'aberrations chromosomiques de l'Ovaire de Hamster Chinois (CHO) ou in vivo dans des tests utilisant des chromosomes de cellules germinales de souris et des chromosomes de moelle osseuse de hamster chinois. Des résultats positifs ont été obtenus uniquement dans les tests in vitro CHO Sister Chromatid Exchange (clastogénicité) et dans les tests de cellules de lymphome de souris (mutagénicité), en utilisant respectivement des concentrations d'hydrochlorothiazide de 43 à 1300 μg/ml et 500 à 1200 μg/ml.
+
+Des études d'alimentation de deux ans chez la souris et le rat menées sous les auspices du Programme National de Toxicologie (National Toxicology Program, NTP) n'ont révélé aucun signe de potentiel cancérogène de l'hydrochlorothiazide chez la souris femelle (à des doses allant jusqu'à environ 600 mg/kg/jour) ou chez le rat mâle et femelle (à des doses allant jusqu'à environ 100 mg/kg/jour). Cependant, le NTP a trouvé des preuves équivoques d'hépatocarcinogénicité chez les souris mâles.
+
+Toxicité sur la reproduction
+
+L'hydrochlorothiazide traverse la barrière placentaire chez l'animal expérimental. Des études réalisées sur trois espèces (souris, rat et lapin) n'ont mis en évidence aucun indice d'un effet tératogène.
+
+Remarques particulières
+
+Stabilité
+
+Ce médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage original, à température ambiante (15–25°C), à l'abri de l'humidité et hors de la portée des enfants.
+
+Numéro d’autorisation
+
+62640 (Swissmedic)
+
+Présentation
+
+Co-Irbésartan Sandoz 150/12,5: emballages à 28 et 98 comprimés pelliculés. [B]
+
+Co-Irbésartan Sandoz 300/12,5: emballages à 28 et 98 comprimés pelliculés. [B]
+
+Co-Irbésartan Sandoz 300/25: emballages à 28 et 98 comprimés pelliculés. [B]
+
+Titulaire de l’autorisation
+
+Sandoz Pharmaceuticals SA, Risch; domicile: Rotkreuz
+
+Mise à jour de l’information
+
+Avril 2025

@@ -1,0 +1,543 @@
+---
+titre: "Tadalafil Sandoz®"
+titulaire: "Sandoz Pharmaceuticals AG"
+atc: G04BE08
+substances: "Tadalafilum"
+autorisation_swissmedic: 66581
+date_version: 2025-11-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/952c5ba4ea0f426098ef7e355022c59e-fr.html
+---
+
+Tadalafil Sandoz®
+
+Sandoz Pharmaceuticals AG
+
+Composition
+
+Principes actifs
+
+Tadalafilum.
+
+Excipients
+
+Lactosum monohydricum, natrii laurilsulfas, povidonum K-12, crospovidonum (type B), natrii stearylis fumaras, poly(alcohol vinylicus) (E1203), macrogolum 3350 (E1521), titanii dioxidum (E171), talcum, ferri oxidum flavum (E172).
+
+1 comprimé pelliculé à 2,5 mg du tadalafil contient 44,125 mg de lactose monohydraté et 0,06 mg de sodium.
+
+1 comprimé pelliculé à 5 mg du tadalafil contient 88,25 mg de lactose monohydraté et 0,12 mg de sodium.
+
+1 comprimé pelliculé à 10 mg du tadalafil contient 176,50 mg de lactose monohydraté et 0,24 mg de sodium.
+
+1 comprimé pelliculé à 20 mg du tadalafil contient 353,00 mg de lactose monohydraté et 0,48 mg de sodium.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimés pelliculés de 2,5 mg, 5 mg, 10 mg et 20 mg de tadalafil.
+
+Indications/Possibilités d’emploi
+
+Traitement de la dysfonction érectile.
+
+Une stimulation sexuelle est requise pour que Tadalafil Sandoz soit efficace.
+
+Traitement des symptômes fonctionnels d'une hyperplasie bénigne de la prostate.
+
+Tadalafil Sandoz n'est pas indiqué chez la femme.
+
+Posologie/Mode d’emploi
+
+Utilisation chez l'homme adulte
+
+La fréquence d'administration maximale est d'une prise par jour. La prise peut se faire indépendamment des repas.
+
+Dysfonction érectile
+
+Comprimés pelliculés de 10 mg et 20 mg:
+
+Les comprimés pelliculés Tadalafil Sandoz 10 mg et 20 mg sont indiqués pour une prise à la demande en prévision d'un rapport sexuel.
+
+La dose recommandée est de 10 mg et ne doit être prise qu'en prévision d'un rapport sexuel. Tadalafil Sandoz peut être pris entre 30 minutes et 36 heures avant l'activité sexuelle. Chez les patients qui ne présentent pas un effet suffisant avec Tadalafil Sandoz 10 mg, la dose de 20 mg peut être essayée.
+
+La fenêtre temporelle optimale et la dose optimale doivent être déterminées individuellement.
+
+La dose maximale est de 20 mg par jour. La prise quotidienne de 10 mg et 20 mg sur une période prolongée n'est pas recommandée.
+
+Le comprimé pelliculé peut être pris pendant ou hors des repas.
+
+Comprimés pelliculés de 2,5 mg et 5 mg:
+
+Chez les patients qui prévoient un usage fréquent de Tadalafil Sandoz (au moins deux fois par semaine), la prise quotidienne de Tadalafil Sandoz avec des doses plus faibles peut être considérée comme adéquate, la décision dépendant du choix du patient et de l'avis du médecin.
+
+Chez ces patients, la posologie recommandée est de 2,5 mg, une fois par jour, approximativement au même moment de la journée. La dose peut être augmentée à un maximum de 5 mg une fois par jour en cas d'efficacité insuffisante.
+
+Le dosage quotidien doit être réévalué périodiquement dans le cas d'une prise continue.
+
+L'expérience disponible à ce jour concernant l'administration quotidienne ne dépasse pas 1 an.
+
+Hyperplasie bénigne de la prostate
+
+Comprimés pelliculés de 2,5 mg et 5 mg:
+
+La dose recommandée est de 5 mg une fois par jour, approximativement au même moment de la journée. Chez les patients qui constatent des effets indésirables intolérables, une réduction de la dose à 2,5 mg peut être envisagée. Une dose maximale de 5 mg ne doit pas être dépassée en cas d'utilisation quotidienne.
+
+Chez les patients qui présentent à la fois une hyperplasie bénigne de la prostate et une dysfonction érectile et qui sont traités avec 5 mg de tadalafil par jour, aucune utilisation supplémentaire de tadalafil à la demande ne doit être faite.
+
+Instructions posologiques particulières
+
+Enfants et adolescents
+
+Tadalafil Sandoz ne doit pas être pris par les personnes âgées de moins de 18 ans.
+
+Patients âgés
+
+Aucun ajustement posologique n'est nécessaire chez les patients âgés. Une augmentation de la dose à 20 mg ne devrait se faire qu'avec précaution. On ne dispose que de très peu d'expérience chez les patients âgés de plus de 75 ans.
+
+Patients présentant des troubles de la fonction rénale
+
+Aucun ajustement posologique n'est nécessaire chez les patients atteints d'insuffisance rénale légère. On usera de précautions en augmentant la dose à 20 mg. Chez les patients atteints d'insuffisance rénale modérée ou sévère, la dose maximale est de 10 mg (voir «Pharmacocinétique» et «Mises en garde et précautions»).
+
+Chez les patients atteints d'insuffisance rénale sévère, l'administration quotidienne de tadalafil (2,5 mg ou 5 mg) n'est pas recommandée.
+
+Patients présentant des troubles de la fonction hépatique
+
+Tadalafil Sandoz ne doit pas être utilisé en cas d'insuffisance hépatique sévère (voir «Contre-indications»). Chez les patients présentant une insuffisance hépatique légère à modérée (Child-Pugh A et B), la dose recommandée pour le traitement de la dysfonction érectile est de 10 mg de Tadalafil Sandoz au besoin.
+
+L'administration quotidienne de Tadalafil Sandoz pour le traitement de la dysfonction érectile ou pour le traitement de l'hyperplasie bénigne de la prostate n'a pas été évaluée chez les patients atteints d'insuffisance hépatique. Par conséquent, l'utilisation quotidienne n'est pas recommandée chez les patients atteints d'insuffisance hépatique.
+
+Patients atteints de diabète
+
+Aucun ajustement posologique n'est nécessaire chez les patients diabétiques.
+
+Contre-indications
+
+Tadalafil Sandoz ne doit pas être utilisé chez les patients qui présentent une hypersensibilité connue au tadalafil ou à l'un des excipients.
+
+Lors des essais cliniques, il a été montré que le tadalafil potentialisait l'effet hypotenseur des nitrates et autres donneurs de NO. Cela résulterait des effets conjugués des dérivés nitrés ou d'autres donneurs de NO et du tadalafil sur la voie monoxyde d'azote/GMPc. Tadalafil Sandoz est donc contre-indiqué chez les patients qui reçoivent des dérivés organiques nitrés sous n'importe quelle forme (voir «Interactions»). De même, une co-médication avec la molsidomine est contre-indiquée.
+
+On informera clairement les patients qu'ils ne doivent en aucune façon prendre de dérivés nitrés obtenus illégalement, connus sous le nom de «poppers» (nitrite d'amyle) ou d'autres dérivés nitrés durant le traitement avec Tadalafil Sandoz.
+
+En raison de son effet hypotenseur additif, Tadalafil Sandoz ne doit pas être combiné avec des stimulateurs de la guanylate cyclase (comme par ex. le riociguat).
+
+Tadalafil Sandoz est contre-indiqué en cas d'insuffisance hépatique sévère (classe C de Child-Pugh).
+
+Toute activité sexuelle comporte un risque cardiaque potentiel chez les patients présentant des antécédents cardiovasculaires. Le traitement avec Tadalafil Sandoz ne doit donc pas être utilisé chez les hommes atteints d'une maladie cardiaque grave et pour qui l'activité sexuelle est déconseillée.
+
+Les groupes de patients présentant les antécédents cardiovasculaires suivants n'ont pas été inclus dans les essais cliniques:
+
+·patients ayant présenté un infarctus du myocarde au cours des 90 derniers jours,
+
+·patients souffrant d'angor instable ou présentant des douleurs angineuses pendant les rapports sexuels,
+
+·patients ayant présenté une insuffisance cardiaque supérieure ou égale à la classe II de la classification NYHA au cours des 6 derniers mois,
+
+·patients présentant des arythmies non contrôlées, une hypotension artérielle (<90/50 mm Hg) ou une hypertension artérielle non contrôlée,
+
+·patients ayant eu un accident vasculaire cérébral au cours des 6 derniers mois.
+
+Le tadalafil est contre-indiqué chez les patients présentant une perte de la vision d'un oeil due à une neuropathie optique ischémique antérieure non artéritique (NOIAN), que cet événement ait été associé ou non à une exposition antérieure à un inhibiteur de la PDE5 (voir rubrique «Mises en garde et précautions»).
+
+Le tadalafil est contre-indiqué chez les patients atteints de maladies héréditaires dégénératives de la rétine (rétinite pigmentaire, p. ex.).
+
+Mises en garde et précautions
+
+L'investigation d'une dysfonction érectile doit inclure la détermination de causes sous-jacentes potentielles. Après la pose d'un diagnostic médical correspondant, un traitement approprié sera fixé.
+
+Avant le début du traitement d'une hyperplasie bénigne de la prostate avec le tadalafil, on procèdera à un diagnostic différentiel pour exclure d'autres causes des troubles, notamment un cancer de la prostate. Avant le début du traitement et à intervalles réguliers pendant le traitement, on procèdera à un examen du patient par toucher rectal et éventuellement à un dosage de l'antigène spécifique de la prostate (PSA).
+
+Effets cardiovasculaires
+
+Avant le début de tout traitement de la dysfonction érectile le médecin doit faire un bilan de l'état cardiovasculaire du patient car un certain risque cardiaque est associé à l'activité sexuelle.
+
+Des événements cardiovasculaires graves, tels qu'infarctus du myocarde, mort subite d'origine cardiaque, angor instable, arythmie ventriculaire, accidents vasculaires cérébraux, attaques ischémiques transitoires, douleurs thoraciques, tachycardie ou palpitations, ont fait l'objet de notifications spontanées après la commercialisation et/ou ont été rapportés lors des essais cliniques. La plupart des patients chez qui ces événements ont été observés présentaient des facteurs de risque cardiovasculaire préexistants. Cependant, il n'est pas possible de déterminer avec certitude si ces événements sont directement liés à ces facteurs de risque, à Tadalafil Sandoz, à l'activité sexuelle, à une association de ces facteurs, ou à d'autres facteurs.
+
+Le patient doit être informé de s'abstenir de toute activité sexuelle et d'informer son médecin si des douleurs thoraciques surviennent pendant l'activité sexuelle.
+
+Le tadalafil a des propriétés vasodilatatrices qui provoquent une légère chute passagère de la tension artérielle (voir «Mises en garde et précautions») et, de ce fait, renforcent l'effet hypotenseur des dérivés nitrés (voir «Contre-indications»).
+
+Les stimulateurs de la guanylate cyclase (comme le riociguat) induisent, tout comme les inhibiteurs de la PDE5, des variations du GMP cyclique intracellulaire. Bien qu'agissant par des mécanismes distincts, ces deux classes de substances exercent un effet vasodilatateur. Lorsque, sous l'effet d'une association de ces deux principes actifs, le taux de GMP cyclique s'élève, il faut s'attendre à un effet additif sur la pression sanguine systémique, avec un risque accru d'hypotension symptomatique (voir aussi «Interactions»). Par conséquent, Tadalafil Sandoz ne doit pas être utilisé en même temps que des stimulateurs de la guanylate cyclase (voir «Contre-indications»).
+
+Chez les patients recevant des alpha1-bloquants, la prise concomitante de tadalafil peut conduire à une hypotension symptomatique (voir «Interactions»). L'association du tadalafil et de la doxazosine n'est donc pas recommandée.
+
+Insuffisance hépatique
+
+Les données cliniques concernant la sécurité d'emploi du tadalafil à dose unique chez les patients atteints d'insuffisance hépatique sévère (classe C de Child-Pugh) sont limitées.
+
+L'administration quotidienne n'a pas été évaluée chez les patients atteints d'insuffisance hépatique et elle n'est pas recommandée chez les patients atteints d'insuffisance hépatique sévère. Chez les patients présentant une insuffisance hépatique légère à modérée, le médecin prescripteur devra procéder à une évaluation individuelle soigneuse du rapport bénéfice/risque.
+
+Insuffisance rénale
+
+Les données cliniques concernant la sécurité d'emploi du tadalafil chez les patients atteints d'insuffisance rénale sévère (clairance de la créatinine ≤30 ml/min) sont limitées.
+
+En raison d'une augmentation de la biodisponibilité du tadalafil (AUC), d'une expérience clinique limitée et de l'impossibilité d'augmenter la clairance par une dialyse, l'administration quotidienne de Tadalafil Sandoz n'est pas recommandée chez les patients atteints d'insuffisance rénale sévère.
+
+Risques oculaires
+
+Une vaste étude épidémiologique a mis en évidence des éléments indiquant l'existence d'un risque accru de décollement de la rétine lors de l'utilisation régulière d'inhibiteurs de la PDE5.
+
+Dans deux études épidémiologiques de grande envergure (conception avec permutations), le risque de développer une NOIAN a été examiné sur une période de 5 demi-vies après la prise de chaque médicament, chez des patients qui utilisaient des inhibiteurs de la PDE-5 au besoin (sildénafil, tadalafil ou vardénafil). Les deux études ont constaté pendant cette période (pour le tadalafil, ceci correspond à 4 jours à peine), un doublement du risque. Des cas de NOIAN ont également été annoncés en provenance de la surveillance du marché.
+
+Une NOIAN est un événement rare. Dans la population générale, sa fréquence chez les hommes âgés de ≥50 ans est estimée 2,5–11,8 cas par 100'000 hommes et par année. L'étude susmentionnée a estimé que, chez les hommes qui utilisent une fois par semaine un inhibiteur de la PDE-5 pour traiter la dysfonction érectile, il faut s'attendre à 3 cas supplémentaires par 100'000 hommes et par année.
+
+Une NOIAN est associée à une diminution de l'acuité visuelle, pouvant aller, selon les circonstances, jusqu'à une perte permanente de la vision. L'éventualité d'une NOIAN doit donc être prise en compte lors de l'évaluation du rapport bénéfice-risque, en particulier chez les patients qui présentent d'autres facteurs de risque de NOIAN. Au nombre de ces facteurs figure un âge supérieur à 50 ans, l'hypertension artérielle, le diabète, l'hyperlipidémie, le tabagisme et les angiopathies coronariennes, ainsi qu'un rapport Cup/Disc («crowded disc») faible. En cas d'apparition de troubles visuels correspondants, on envisagera une NOIAN dans le diagnostic différentiel.
+
+Les patients doivent être avertis qu'en cas de perte soudaine de la vue de l'un ou des deux yeux, ils doivent arrêter immédiatement tous les inhibiteurs de la PDE5, y compris Tadalafil Sandoz, et consulter un médecin. Il incombe aux médecins, à cet égard, d'expliquer aussi à leurs patients que les personnes chez qui une NOIAN est déjà survenue à un œil, présentent un risque plus élevé de NOIAN.
+
+Diminution de l'ouïe
+
+Une surdité subite, partielle ou complète, pouvant s'accompagner d'acouphènes, a été rapportée en lien avec l'utilisation d'inhibiteurs de la PDE5. Le patient doit être informé d'arrêter de prendre le tadalafil en cas d'apparition d'une surdité subite, partielle ou complète et de consulter immédiatement un médecin.
+
+Interactions avec des inhibiteurs du CYP3A4
+
+Tadalafil Sandoz doit être prescrit avec prudence chez les patients utilisant des inhibiteurs sélectifs puissants du CYP3A4 (ritonavir, saquinavir, kétoconazole, itraconazole et érythromycine), une augmentation de l'exposition (AUC) au tadalafil ayant été observée en association avec ces médicaments (voir «Interactions»).
+
+Priapisme
+
+Des cas de priapisme ont été rapportés lors de l'utilisation d'inhibiteurs de la PDE5. On recommandera aux patients ayant des érections d'une durée supérieure à 4 heures de solliciter une assistance médicale. Si le priapisme n'est pas traité immédiatement, des lésions du tissu pénien et une impuissance permanente peuvent en résulter.
+
+Tadalafil Sandoz doit être utilisé avec prudence chez les patients présentant des pathologies susceptibles de les prédisposer au priapisme (comme une drépanocytose, un myélome multiple ou une leucémie) ou chez les patients présentant une malformation anatomique du pénis (comme une angulation, une fibrose du corps caverneux ou la maladie de La Peyronie).
+
+Autres mesures de précaution
+
+L'innocuité et l'efficacité de l'association du tadalafil avec d'autres inhibiteurs de PDE5 ou traitements de la dysfonction érectile n'ont pas été étudiées. Il n'est donc pas recommandé de recourir à de telles associations.
+
+L'efficacité du tadalafil n'est pas connue chez les patients atteints de lésions de la moelle épinière ou d'autres pathologies neurologiques.
+
+Tadalafil Sandoz contient du lactose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne devraient pas prendre ce médicament.
+
+Ce médicament contient moins de 1 mmol de sodium (23 mg) par comprimé pelliculé, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Interactions
+
+Les études d'interaction ont été conduites avec la dose de 10 mg et/ou 20 mg de tadalafil, comme indiqué ci-après. En ce qui concerne les études d'interaction où seule la dose de 10 mg a été utilisée, celles-ci ne permettent pas d'exclure la possibilité d'interactions cliniquement pertinentes à des doses plus fortes.
+
+Interactions pharmacocinétiques
+
+Effets d'autres médicaments sur la pharmacocinétique du tadalafil
+
+Le tadalafil est principalement métabolisé par le CYP3A4.
+
+Inhibiteurs du CYP3A4
+
+En présence d'un inhibiteur sélectif du CYP3A4, le kétoconazole (200 mg par jour), l'exposition (AUC) au tadalafil est multipliée par 2 et la Cmax majorée de 15% par rapport aux valeurs de l'AUC et de la Cmax observées sous tadalafil seul. A la dose de 400 mg par jour, le kétoconazole multiplie par 4 l'exposition (AUC) au tadalafil et augmente la Cmax de 22%.
+
+Le ritonavir multiplie par 2 l'exposition (AUC) au tadalafil, sans modification de la Cmax.
+
+D'autres inhibiteurs de la protéase, comme le saquinavir, et d'autres inhibiteurs modérés à puissants du CYP3A4, tels que l'érythromycine, la clarithromycine, l'itraconazole et le jus de pamplemousse, doivent être co-administrés avec prudence, car ils sont susceptibles d'augmenter les concentrations plasmatiques de tadalafil.
+
+Lors d'une association de Tadalafil Sandoz avec un inhibiteur du CYP3A4, la dose ne doit pas dépasser 1x 2,5 mg par jour dans le cas d'une prise quotidienne ou 10 mg dans le cas d'une prise à la demande.
+
+Inducteurs du CYP3A4
+
+L'AUC du tadalafil a été diminuée de 88% lors de l'administration concomitante de rifampicine, un inducteur du CYP3A4. On peut s'attendre à ce que l'administration concomitante d'autres inducteurs du CYP3A4 diminue également les concentrations plasmatiques de tadalafil.
+
+Médicaments qui exercent une influence sur le pH gastrique
+
+L'administration concomitante d'un antiacide (hydroxyde de magnésium/hydroxyde d'aluminium) et de tadalafil n'affecte pas la biodisponibilité (AUC) du tadalafil.
+
+L'augmentation du pH gastrique résultant de l'administration de nizatidine, un antagoniste H2, n'a pas d'effet significatif sur la pharmacocinétique du tadalafil.
+
+Effet du tadalafil sur la pharmacocinétique d'autres substances
+
+Le tadalafil n'est ni un inhibiteur ni un inducteur des CYP3A4, CYP1A2, CYP2D6, CYP2E1 et CYP2C9. Tadalafil Sandoz ne devrait donc pas avoir d'effet sur la clairance des médicaments métabolisés par ces iso-enzymes du CYP.
+
+Le tadalafil n'a eu aucun effet cliniquement significatif sur la pharmacocinétique et sur la pharmacodynamie de la théophylline, un substrat du CYP1A2.
+
+Anticoagulants
+
+Le tadalafil n'a pas eu d'effet cliniquement significatif sur l'exposition (AUC) à la warfarine-S ou à la warfarine-R (substrat du CYP2C9) ni sur le temps de prothrombine observé sous warfarine. On ne dispose pas de données correspondantes sur l'acénocoumarol et la phenprocoumone.
+
+Alcool
+
+Les concentrations en alcool (concentration sanguine maximale moyenne de 0,08%) n'ont pas été affectées par l'administration concomitante de tadalafil (10 mg ou 20 mg). En outre, aucune modification des concentrations de tadalafil n'a été observée trois heures après l'administration concomitante d'alcool.
+
+Interactions pharmacodynamiques
+
+Dérivés nitrés
+
+Les études cliniques ont montré que le tadalafil (5 mg, 10 mg et 20 mg) majorait les effets hypotenseurs des dérivés nitrés et d'autres donneurs de NO. L'administration de Tadalafil Sandoz à des patients qui reçoivent des dérivés organo-nitrés sous n'importe quelle forme ou d'autres donneurs de NO est donc contre-indiquée. (voir «Contre-indications»).
+
+Une étude clinique réalisée chez 150 patients ayant reçu des doses quotidiennes de 20 mg de tadalafil pendant 7 jours, et 0,4 mg de nitroglycérine sublinguale à divers moments a montré une potentialisation des effets hypotenseurs de la nitroglycérine sublinguale par le tadalafil pour les doses sublinguales de nitroglycérine administrées jusqu'à 24 heures après la fin du traitement au tadalafil. Cette interaction n'était plus détectable 48 heures après la dernière prise de tadalafil. Ainsi, chez un patient qui prend Tadalafil Sandoz (2,5 mg à 20 mg) et chez qui l'administration d'un dérivé nitré est jugée nécessaire pour le pronostic vital, un délai minimum de 48 heures après la dernière prise de Tadalafil Sandoz doit être respecté, avant d'administrer un dérivé nitré. Dans ce cas, les dérivés nitrés ne doivent être administrés que sous un contrôle médical strict comprenant une surveillance hémodynamique appropriée.
+
+Stimulateurs de la guanylate cyclase
+
+Dans des modèles animaux, un effet additif sur la pression sanguine a été observé lorsque le riociguat, un stimulateur de la guanylate cyclase, a été combiné avec des inhibiteurs de la PDE5 (sildénafil et vardénafil). A des doses plus élevées, des effets sur-additifs sur la pression sanguine sont apparus dans certains cas. Il faut aussi s'attendre à une interaction comparable avec le tadalafil. Tadalafil Sandoz ne doit pas être utilisé en même temps que des stimulateurs de la guanylate cyclase (voir «Contre-indications»).
+
+Antihypertenseurs
+
+La possibilité que le tadalafil puisse augmenter les effets hypotenseurs des agents antihypertenseurs a été évaluée dans des études de pharmacologie clinique. Les classes majeures d'antihypertenseurs ont été étudiées, incluant les bloqueurs des canaux calciques (amlodipine), les inhibiteurs de l'enzyme de conversion de l'angiotensine (IEC) (énalapril), les bêtabloquants (métoprolol), les diurétiques thiazidiques (bendrofluméthiazide) et les antagonistes des récepteurs de l'angiotensine II. Aucun effet cliniquement significatif n'a été observé après la prise de doses de tadalafil allant jusqu'à 10 mg en association avec un traitement de l'une ou l'autre de ces classes. Le tadalafil (20 mg) a été étudié en association avec un nombre d'antihypertenseurs allant jusqu'à 4. Cependant, des conseils cliniques appropriés doivent être donnés aux patients concernant la possibilité d'une diminution de la pression artérielle en cas de traitement concomitant par des antihypertenseurs.
+
+Alpha-bloquants
+
+Dans une autre étude, l'effet du tadalafil (20 mg en prise unique ou à une dose journalière de 5 mg) a été examiné sur l'effet hypotenseur de la doxazosine, un antagoniste des récepteurs alpha-adrénergiques (4 mg ou 8 mg par jour). L'administration concomitante de tadalafil renforce l'effet hypotenseur de la doxazosine. Cet effet se maintient au moins pendant 12 heures et peut s'accompagner de symptômes cliniques tels que syncopes (voir «Mises en garde et précautions»).
+
+L'interaction du tadalafil avec l'alfuzosine et la tamsulosine, des alpha-(1)-bloquants, a été étudié chez un nombre limité de volontaires en bonne santé. Aucun effet cliniquement significatif du tadalafil sur les variations de la pression artérielle induites par l'alfuzosine ou la tamsulosine n'a été relevé dans ces études.
+
+On observera néanmoins une prudence particulière chez les patients traités par des alpha-bloquants lors de l'utilisation du tadalafil, notamment chez les patients âgés. Le traitement sera instauré avec la dose minimale et adapté de façon progressive.
+
+Autres
+
+Le tadalafil n'affecte pas l'augmentation du temps de saignement provoquée par l'acide acétylsalicylique.
+
+Grossesse, allaitement
+
+Grossesse
+
+Tadalafil Sandoz n'est pas indiqué chez la femme.
+
+Aucun signe de tératogénicité, d'embryotoxicité ou de fœtotoxicité n'a été observé chez des rates ou des souris recevant jusqu'à 1'000 mg/kg/jour de tadalafil.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Bien que la fréquence des sensations vertigineuses rapportées ait été similaire dans le bras sous placebo et le bras sous tadalafil des études cliniques, les patients doivent connaître la manière dont ils réagissent à Tadalafil Sandoz avant de conduire un véhicule ou d'utiliser des machines.
+
+Effets indésirables
+
+Les effets indésirables observés dans des études cliniques dans les indications de dysfonction érectile (DE) et/ou d'hyperplasie bénigne de la prostate (HBP) (au total environ 8000 patients sous tadalafil versus environ 4000 patients sous placebo) ou après commercialisation sous tadalafil figurent ci-après. Certains effets indésirables ont été observés plus fréquemment sous les doses plus élevées. En outre, les deux effets indésirables les plus fréquents (céphalées et dyspepsie) ont été observés avec une incidence nettement supérieure dans les études sur la DE que dans les études sur la HBP (voir ci-dessous).
+
+Résumé du profil de sécurité
+
+Dans les études cliniques dans lesquelles le tadalafil a été utilisé au besoin pour le traitement de la dysfonction érectile, la diarrhée a été observée plus fréquemment chez des patients âgés de ≥65 ans que chez des patients plus jeunes. En outre, le profil de sécurité ne s'est pas distingué de façon importante chez les patients âgés par rapport à celui des jeunes utilisateurs. Il existe cependant peu de données sur les effets indésirables chez les patients de plus de 75 ans.
+
+Liste des effets indésirables
+
+Les effets indésirables sont rangés par classe de système d'organes de la classification MedDRA et par fréquence selon la convention suivante:
+
+«très fréquents» (≥1/10)
+
+«fréquents» (≥1/100, <1/10)
+
+«occasionnels» (≥1/1'000, <1/100)
+
+«rares» (≥1/10'000, <1/1'000)
+
+«très rares» (<1/10'000)
+
+«fréquence inconnue» (ne peut être estimée sur la base des données disponibles)
+
+Affections du système immunitaire
+
+Occasionnels: réactions d'hypersensibilité
+
+Affections du système nerveux
+
+Fréquents: céphalées
+
+Occasionnels: vertiges
+
+Rares: amnésie transitoire
+
+Fréquence inconnue: migraine, crises convulsives
+
+Affections oculaires
+
+Occasionnels: douleurs oculaires, vision trouble
+
+Rares: gonflement des paupières, hyperhémie conjonctivale, perte du champ visuel
+
+Fréquence inconnue: neuropathie optique ischémique antérieure non artéritique (NOIAN), occlusion de la veine rétinienne (voir «Mises en garde et précautions»)
+
+Affections de l'oreille et du labyrinthe
+
+La surveillance du marché a reçu des annonces de cas de diminutions unilatérales ou bilatérales aiguës de l'ouïe pouvant aller jusqu'à une surdité (irréversible), occasionnellement accompagnées d'acouphènes et/ou de vertiges. On ignore si ces effets ont un lien de causalité avec la prise d'inhibiteurs de PDE5.
+
+Affections cardiaques
+
+Occasionnels: palpitations, tachycardie
+
+Rares: infarctus du myocarde
+
+Fréquence inconnue: angor instable, arythmies ventriculaires, mort cardiaque subite
+
+Affections vasculaires
+
+Fréquents: bouffées vasomotrices
+
+Occasionnels: hypotension (rapportée plus fréquemment lorsque le tadalafil est administré à des patients qui sont traités avec des antihypertenseurs), hypertension
+
+Rares: syncopes, attaques ischémiques transitoires, accident vasculaire cérébral (chez la plupart des patients chez lesquels ces événements ont été rapportés, des facteurs de risque cardiovasculaire connus étaient présents)
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquents: congestion nasale
+
+Occasionnels: épistaxis, dyspnée
+
+Affections gastro-intestinales
+
+Fréquents: dyspepsie
+
+Occasionnels: douleurs abdominales, nausées, vomissements, reflux gastro-œsophagien
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: éruption cutanée
+
+Rares: urticaire, hyperhidrose
+
+Fréquence inconnue: dermatite exfoliative, syndrome de Stevens-Johnson
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Fréquents: myalgies, douleurs dorsales, douleurs dans les extrémités
+
+Affections des organes de reproduction et du sein
+
+Occasionnels: érections de longue durée
+
+Rare: priapisme.
+
+Troubles généraux et anomalies au site d'administration
+
+Occasionnels: fatigue, douleurs thoraciques, œdèmes périphériques.
+
+Fréquence inconnue: œdème facial
+
+Une légère augmentation de l'incidence des anomalies de l'ECG, principalement une bradycardie sinusale, a été rapportée chez des patients traités par le tadalafil une fois par jour, par rapport au placebo. La plupart de ces anomalies de l'ECG n'ont pas été associées à des effets indésirables.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Des doses uniques allant jusqu'à 500 mg ont été données à des sujets sains et des doses multiples allant jusqu'à 100 mg par jour ont été données à des patients. Les événements indésirables ont été similaires à ceux observés avec des doses plus faibles.
+
+En cas de surdosage, les mesures habituelles de traitement symptomatique doivent être mises en œuvre selon les besoins. L'élimination du tadalafil par hémodialyse est négligeable.
+
+Propriétés/Effets
+
+Code ATC
+
+G04BE08
+
+Mécanisme d'action
+
+Le tadalafil est un inhibiteur sélectif et réversible de la phosphodiestérase de type 5 (PDE5), spécifique de la guanosine monophosphate cyclique (GMPc). La PDE5 est une enzyme qui se trouve dans la musculature lisse du corps caverneux, de la prostate et de la vessie ainsi que dans la musculature lisse vasculaire et viscérale, dans les muscles squelettiques, les poumons, les reins, le cervelet, les thrombocytes et le pancréas. Le tadalafil exerce sur la PDE5 un effet plus puissant que sur d'autres phosphodiestérases, en particulier les PDE qui agissent dans le système cardiovasculaire:
+
+·il est >10'000 fois plus puissant sur la PDE5 que sur la PDE3, une enzyme que l'on trouve dans le cœur et dans les vaisseaux sanguins. Cette plus grande sélectivité pour la PDE5 par rapport à la PDE3 est importante car l'enzyme PDE3 influence la contractilité cardiaque;
+
+·il est >10'000 fois plus puissant sur la PDE5 que sur la PDE1, PDE2, PDE4, PDE7 (des enzymes qui se trouvent dans le cœur, le cerveau, les vaisseaux sanguins, les leucocytes du foie, dans le muscle squelettique et dans d'autres organes);
+
+·il est >9'000 fois plus puissant sur la PDE5 que sur la PDE8, PDE9, PDE10;
+
+·il est environ 700 fois plus puissant sur la PDE5 que sur la PDE6, une enzyme qui se trouve dans la rétine et est responsable de la phototransduction;
+
+·il est 14 fois plus puissant sur la PDE5 que sur la PDE11.
+
+Lorsque la stimulation sexuelle provoque la libération locale de monoxyde d'azote (NO), l'inhibition de la PDE5 par le tadalafil entraîne une augmentation du taux de GMPc dans les corps caverneux. Il en résulte une relaxation de la musculature lisse et un afflux sanguin dans les corps caverneux, permettant ainsi l'obtention d'une érection. En cas de dysfonction érectile, le tadalafil n'a pas d'effet en l'absence de stimulation sexuelle.
+
+Les effets de l'inhibition de la PDE5 sur la concentration de GMPc s'observent également sur la musculature lisse de la prostate, de la vessie et des vaisseaux sanguins qui les irriguent. La relaxation vasculaire qui en résulte augmente le flux sanguin.
+
+Pharmacodynamie
+
+Pharmacodynamie de sécurité
+
+Pour une évaluation du temps écoulé jusqu'à l'ischémie, 23 patients souffrant d'un angor stable avec ischémie objectivable à l'effort ont été inclus dans une étude avec permutation réalisée en aveugle. La différence moyenne du temps total d'exercice sur tapis roulant entre tadalafil (10 mg) et le placebo a été de 3 secondes et n'a pas été significative.
+
+Dans une autre étude avec permutation réalisée en double aveugle avec contrôle de placebo et destinée à évaluer les effets du tadalafil sur l'irrigation du myocarde, 7 patients avec une cardiopathie coronarienne ont reçu soit tadalafil 20 mg, soit un placebo, puis l'inverse. L'irrigation du myocarde a été mesurée par PET (tomographie par émission de positrons) aussi bien au repos que sous stress pharmacologique induit par la dobutamine. Le tadalafil n'a pas eu d'effet significatif sur la perfusion du myocarde.
+
+Aucun effet n'a été observé sur l'acuité visuelle, l'électrorétinogramme, la pression intra-oculaire ou le réflexe pupillaire. Des modifications de la vision des couleurs ont été rapportées rarement (<0,1%) dans le cadre de la totalité des études cliniques. Aucune altération de la distinction entre les couleurs (bleu/vert) n'a été détectée par le test des 100 couleurs de Farnsworth-Munsell.
+
+Après administration quotidienne de 10 mg ou 20 mg de tadalafil pendant 6 mois, aucune modification cliniquement significative de la concentration, du nombre, de la motilité ou de la morphologie des spermatozoïdes n'a été constatée.
+
+Trois études ont été conduites chez des hommes pour évaluer l'effet potentiel du tadalafil 10 mg (une étude de 6 mois) et 20 mg (une étude de 6 mois et une de 9 mois), administrés quotidiennement, sur la spermatogenèse. Dans deux de ces études, il a été observé une diminution du nombre et de la concentration des spermatozoïdes sous traitement de tadalafil, diminution dont la signification clinique est peu probable. Aucune modification de la motilité ou de la morphologie des spermatozoïdes, ni de la concentration de FSH (hormone folliculo-stimulante) n'a été observée.
+
+Études cliniques
+
+Dysfonction érectile
+
+Le tadalafil a été évalué au cours de 16 essais cliniques à des doses variant de 2 mg à 100 mg, chez 3250 patients atteints de dysfonction érectile de sévérité variable et d'étiologies diverses. L'âge des patients inclus dans ces études allait de 21 à 86 ans et ils étaient de différentes origines ethniques. La plupart des patients présentaient une dysfonction érectile depuis au moins un an.
+
+Dans les études sur la population générale où l'efficacité était le critère principal, 81% des patients ont rapporté que tadalafil améliorait leurs érections en comparaison avec 35% des patients sous placebo. La supériorité du tadalafil par rapport au placebo s'est manifestée indépendamment du degré de sévérité de la dysfonction érectile (respectivement 86%, 83% et 72% sous tadalafil pour les formes légères, modérées et sévères, en comparaison avec 45%, 42% et 19% sous placebo). Dans les études où l'efficacité était le critère principal, 75% des tentatives de rapport sexuel ont été réussies chez les patients traités par tadalafil, en comparaison avec 32% sous placebo.
+
+La prise journalière de tadalafil a été examinée dans 4 études cliniques à des dosages de 2,5 mg, 5 mg et 10 mg chez un total de 1070 patients âgés de 21 à 82 ans, atteints de dysfonction érectile d'étiologies variées et à différents degrés de sévérité (dont 1 étude chez des patients diabétiques).
+
+Les études incluaient aussi bien des patients naïfs de traitement que des patients qui avaient déjà répondu à des inhibiteurs de la PDE5 à la demande. Dans les trois études chez les patients non-diabétiques (n = 772), le pourcentage moyen des tentatives de rapport sexuel réussies était de 50% sous tadalafil 2,5 mg, de 65% sous tadalafil 5 mg et de 39% sous placebo.
+
+Dans l'étude menée chez des patients atteints de dysfonction érectile secondaire à un diabète (n = 298), le taux de réponses correspondant était de 46% sous tadalafil 2,5 mg, de 41% sous tadalafil 5 mg et de 28% sous placebo.
+
+Hyperplasie bénigne de la prostate
+
+L'efficacité du tadalafil a été examinée dans 4 études multinationales, randomisées, contrôlées par placebo, en double aveugle, menées chez des hommes présentant des symptômes d'hyperplasie de la prostate, avec une durée de traitement de 12 semaines. Ont été inclus plus de 1500 patients d'âges divers (de 45 à 92 ans).
+
+En ce qui concerne le critère primaire − amélioration du score total IPSS (IPSS = International Prostate Symptom Score) − le tadalafil a manifesté dans les 4 études une supériorité statistiquement significative par rapport au placebo à la dose de 5 mg/jour, et dans une étude à la dose de 2,5 mg/jour. Sous 5 mg de tadalafil (n = 742), l'IPSS a diminué en moyenne de 4,8 à 6,3 points par rapport à sa valeur initiale, sous 2,5 mg de tadalafil (n = 207), il a diminué de 3,8 à 4,6 points et sous placebo (n = 735), il a diminué de 2,2 à 4,2 points. La différence moyenne sous traitement par rapport au placebo a été de 1,9 à 2,6 points pour la dose de 5 mg et de 0,8 à 1,6 points pour la dose de 2,5 mg. Pour le critère secondaire important du score BII (BII = Benign Prostatic Hyperplasia Impact Index), une supériorité statistiquement significative par rapport au placebo n'a pu être montrée que pour 5 mg de tadalafil (p <0,001), mais non pour la dose de 2,5 mg. Numériquement, la dose de 2,5 mg a cependant été aussi meilleure que le placebo.
+
+Une de ces études a examiné l'amélioration de la dysfonction érectile et des symptômes d'hyperplasie bénigne de la prostate chez des patients atteints des deux affections. Dans cette étude, les améliorations dans les domaines EF de l'IIE (domaine de la fonction érectile de l'International Index of Erectile Function) et du score total IPSS ont été de 6,5 et -6,1 sous tadalafil 5 mg, et de 5,2 et -4,6 sous tadalafil 2,5 mg, en comparaison avec 1,8 et -3,8 sous placebo. Le taux moyen d'essais réussis de rapports sexuels par personne s'est élevé à 71,9% sous tadalafil 5 mg et à 64,0% sous tadalafil 2,5 mg, alors qu'il n'était que de 48,3% sous placebo.
+
+Dans l'étude ouverte d'extension, dans laquelle des patients ont reçu jusqu'à 1 an un traitement de tadalafil 5 mg/jour après la phase de traitement en double aveugle de 12 semaines, l'amélioration du score total IPSS obtenue avec le tadalafil jusqu'à la semaine 12 du traitement en double aveugle a pu être maintenue pendant une année.
+
+Pharmacocinétique
+
+Absorption
+
+Le tadalafil est rapidement absorbé après administration par voie orale (Tmax de 2 heures environ). La biodisponibilité absolue du tadalafil après administration orale n'a pas été déterminée. Une étude avec du tadalafil radiomarqué administré par voie orale en solution dans du polyéthylène glycol à des sujets mâles sains a montré que 81% (coefficient de variation de 24%) de la dose étaient absorbés par voie systémique sous forme de tadalafil et/ou de ses métabolites. La vitesse et le taux d'absorption du tadalafil ne sont pas influencés par l'alimentation. L'heure des prises (matin ou soir) n'a aucun effet cliniquement significatif sur la vitesse ou le taux d'absorption.
+
+La cinétique d'absorption du tadalafil chez les sujets sains est linéaire pour des doses comprises entre 2,5 mg et 20 mg. L'état stationnaire est atteint dans les 5 jours lors d'une prise quotidienne, avec un taux d'accumulation de 1,6.
+
+Distribution
+
+Le volume moyen de distribution est d'environ 63 l, ce qui suggère que le tadalafil est distribué dans les tissus. Le tadalafil est lié à 94% aux protéines plasmatiques.
+
+Moins de 0,0005% de la dose administrée s'est retrouvé dans le liquide séminal de sujets sains.
+
+Métabolisme
+
+Le tadalafil est essentiellement métabolisé dans le foie par le CYP3A4. Le principal métabolite circulant est le dérivé méthylcatéchol glucuronide. Ce métabolite est au moins 13'000 fois moins puissant que le tadalafil sur la PDE5. En conséquence, il ne devrait pas être cliniquement actif aux concentrations observées.
+
+Élimination
+
+La clairance moyenne du tadalafil est d'environ 2,5 l/h après administration par voie orale et la demi-vie moyenne est de 17,5 heures chez les sujets sains. Le tadalafil est essentiellement excrété sous forme de métabolites inactifs, principalement dans les selles (environ 61% de la dose) et, à un moindre degré, dans les urines (environ 36% de la dose).
+
+Cinétique pour certains groupes de patients
+
+Patients âgés
+
+Les sujets âgés sains (âgés de 65 ans ou plus) avaient une clairance inférieure après administration orale de tadalafil, entraînant une AUC supérieure de 25% à celle des sujets sains âgés de 19 à 45 ans.
+
+Insuffisance rénale
+
+Des études de pharmacologie clinique utilisant des doses uniques de tadalafil (5 mg à 20 mg), ont montré que l'exposition au tadalafil (AUC) était approximativement doublée chez les sujets atteints d'insuffisance rénale légère (clairance de la créatinine 51 à 80 ml/min) ou modérée (clairance de la créatinine 31 à 50 ml/min), ainsi que chez les sujets présentant une insuffisance rénale terminale traités par hémodialyse. La Cmax était supérieure de 41% à celle observée chez des sujets sains. L'élimination du tadalafil par hémodialyse est négligeable.
+
+Insuffisance hépatique
+
+L'AUC d'une dose unique de tadalafil n'est pas différente de manière cliniquement significative entre les patients présentant une insuffisance hépatique légère à modérée (Child-Pugh, classes A et B) et les sujets sains. On ne dispose pas de données sur l'administration de doses supérieures à 10 mg de tadalafil ni sur l'administration quotidienne de doses de 2,5 mg ou 5 mg chez des patients atteints d'insuffisance hépatique. (voir aussi «Contre-indications»).
+
+Données précliniques
+
+Les données précliniques issues des études conventionnelles de pharmaco-toxicologie, de génotoxicité, de cancérogenèse et de toxicité de la reproduction n'ont pas révélé de risque particulier pour l'homme.
+
+Aucune altération de la fertilité n'a été observée chez les rats mâles et femelles. Chez les chiens ayant reçu quotidiennement du tadalafil à raison de 25 mg/kg/jour ou davantage, des altérations de l'épithélium des tubes séminifères ont été observées, entraînant une diminution de la spermatogenèse chez certains chiens.
+
+Tératogénicité, embryo- et fœto-toxicité
+
+Chez des rats ou des souris qui ont reçu jusqu'à 1'000 mg/kg de tadalafil par jour, il n'y a pas eu de signes de tératogénicité, d'embryo- ou de fœto-toxicité.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage original, pas au-dessus de 30°C et hors de la portée des enfants.
+
+Numéro d’autorisation
+
+66581 (Swissmedic)
+
+Présentation
+
+Tadalafil Sandoz 2,5 mg: emballage à 28 comprimés pelliculés. [B]
+
+Tadalafil Sandoz 5 mg: emballages à 28 et 84 comprimés pelliculés. [B]
+
+Tadalafil Sandoz 10 mg: emballages à 4 et 12 comprimés pelliculés. [B]
+
+Tadalafil Sandoz 20 mg: emballages à 4, 12 et 24 comprimés pelliculés (quadri-sécables). [B]
+
+Titulaire de l’autorisation
+
+Sandoz Pharmaceuticals SA, Risch; domicile: Rotkreuz
+
+Mise à jour de l’information
+
+Novembre 2025

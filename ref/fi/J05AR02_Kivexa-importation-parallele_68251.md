@@ -1,0 +1,584 @@
+---
+titre: "Kivexa (importation parallèle)"
+titulaire: "APS Arzneimittel-Parallelimport-Service AG"
+atc: J05AR02
+substances: "Abacavir (sous forme de sulfate d'abacavir), lamivudine"
+autorisation_swissmedic: 68251, 68253, 68455
+date_version: 2020-08-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/328eb5c1d423473cb921abd5eb88af97-fr.html
+---
+
+Kivexa (importation parallèle)
+
+APS-Arzneimittel-Parallelimport-Service AG
+
+Médicament importé conformément à l’article 14 paragraphe 2 de la loi sur les produits thérapeutiques «importation parallèle» de Kivexa, comprimés pelliculés (numéro d’autorisation: 56977) du titulaire de l’autorisation ViiV Healthcare GmbH, 3053 Münchenbuchsee.
+
+Composition
+
+Principes actifs
+
+Abacavir (sous forme de sulfate d'abacavir), lamivudine.
+
+Excipients
+
+Noyau du comprimé:
+
+Inconnus.
+
+Pelliculage:
+
+Inconnus.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimés pelliculés à 600 mg d'abacavir et 300 mg de lamivudine
+
+Indications/Possibilités d’emploi
+
+Kivexa est une association de deux analogues nucléosidiques (abacavir et lamivudine). Il est indiqué, en association à d'autres agents antirétroviraux, pour le traitement de l'infection par le Virus de l'Immunodéficience Humaine (VIH) chez les adultes et les enfants pesant au moins 25 kg.
+
+Les bénéfices thérapeutiques démontrés de l'association abacavir / lamivudine reposent essentiellement sur les résultats d'études réalisées chez des patients n'ayant jamais été traités par antirétroviraux (voir «Propriétés / Effets»).
+
+Posologie/Mode d’emploi
+
+Le traitement doit être instauré et surveillé par un médecin expérimenté dans la prise en charge de l'infection à VIH.
+
+Kivexa peut être pris au cours ou en dehors des repas.
+
+Posologie usuelle
+
+Adultes et enfants pesant au moins 25 kg
+
+La dose recommandée est d'un comprimé de Kivexa une fois par jour.
+
+Kivexa ne doit pas être administré aux patients pesant moins de 25 kg, car Kivexa est une association fixe (comprimé combiné) ne permettant pas de réduction de la posologie. Chez les patients pesant moins de 25 kg, il faut recourir aux monopréparations contenant le principe actif correspondant abacavir et lamivudine.
+
+Lorsqu'un arrêt du traitement par Kivexa ou un ajustement de la dose est indiqué, il faut administrer les monopréparations contenant le principe actif correspondant abacavir ou lamivudine. Dans ces cas, le médecin traitant est tenu de procéder conformément à l'information professionnelle respective.
+
+Instructions posologiques particulières
+
+Enfants
+
+Enfants (pesant moins de 25 kg)
+
+L'administration de Kivexa n'est pas recommandée pour le traitement des enfants pesant moins de 25 kg, du fait de l'impossibilité de procéder aux ajustements posologiques nécessaires. Le médecin traitant est tenu de procéder conformément à l'information professionnelle des monopréparations contenant le principe actif abacavir ou lamivudine.
+
+Patients âgés
+
+Aucune donnée pharmacocinétique n'est actuellement disponible chez les patients âgés de plus de 65 ans. Chez le sujet âgé, une attention particulière doit être portée en raison de modifications liées à l'âge, telles qu'une diminution de la fonction rénale et une altération des paramètres hématologiques.
+
+Patients présentant des troubles de la fonction rénale
+
+L'administration de Kivexa n'est pas recommandée chez les patients ayant une clairance de la créatinine < 50 ml/min (voir „Pharmacocinétique”).
+
+Patients présentant des troubles de la fonction hépatique
+
+Aucune donnée n'est disponible sur l'emploi de Kivexa chez les patients présentant une insuffisance hépatique. Les données obtenues chez les patients souffrant d'une insuffisance hépatique légère à sévère ont révélé que la pharmacocinétique de la lamivudine n'est pas significativement affectée par une altération de la fonction hépatique, un ajustement de la dose n'étant donc pas nécessaire. Les données obtenues pour l'abacavir à partir d'une étude de pharmacocinétique, réalisée chez des patients souffrant d'une insuffisance hépatique légère, ont révélé une grande variabilité des concentrations plasmatiques d'abacavir (ASC). Par conséquent, l'administration de Kivexa n'est pas recommandée chez les patients souffrant d'une insuffisance hépatique légère, car elle risquerait d'imposer une réduction de la dose d'abacavir. Kivexa est contre-indiqué chez les patients présentant une insuffisance hépatique modérée à sévère (voir „Pharmacocinétique”).
+
+Contre-indications
+
+Kivexa est contre-indiqué chez les patients présentant une hypersensibilité connue à l'abacavir, à la lamivudine ou à l'un de ses excipients. Voir aussi l'information sur LES REACTIONS D'HYPERSENSIBILITE sous «Mises en garde et précautions» et « Effets indésirables »
+
+Kivexa est contre-indiqué chez les patients présentant une insuffisance hépatique modérée à sévère.
+
+Mises en garde et précautions
+
+Les mises en garde et précautions d'emploi particulières, liées à l'abacavir et à la lamivudine, sont décrites ci-dessous. Il n'y a pas de mise en garde ni de précaution supplémentaire spécifique à l'association Kivexa.
+
+Réaction d'hypersensibilité (voir aussi «Effets indésirables»)
+
+L'abacavir est associé à un risque de réactions d'hypersensibilité (RHS) caractérisées par de la fièvre et/ou une éruption cutanée ainsi que d'autres symptômes évocateurs d'une atteinte multi-organique. Les RHS peuvent mettre en jeu le pronostic vital du patient et même avoir une issue fatale en l'absence d'un traitement approprié. Le risque de RHS sous abacavir est élevé chez les patients porteurs de l'allèle HLA-B\*5701. Avec une fréquence faible, des réactions d'hypersensibilité à l'abacavir ont cependant été rapportées aussi chez des patients ne portant pas cet allèle.
+
+Les points suivants doivent être respectés:
+
+·Le statut HLA-B\*5701 du patient doit si possible être vérifié avant de commencer un traitement par l'abacavir. Il doit également être vérifié avant une reprise du traitement par l'abacavir chez les patients ayant bien toléré l'abacavir par le passé, mais dont le statut HLA-B\*5701 est inconnu.
+
+·Kivexa est contre-indiqué chez les porteurs de l'allèle HLA-B\*5701 et, indépendamment du statut HLA-B\*5701, chez les patients ayant subi une RHS à l'abacavir suspectée lors d'un traitement par un autre médicament contenant de l'abacavir (p.ex. Ziagen, Trizivir, Triumeq).
+
+·Chaque patient doit être incité à lire entièrement la notice d'emballage de Kivexa. Il faut instruire les patients qu'ils doivent prendre la carte des mises en garde dans l'emballage et toujours la porter sur eux.
+
+·Chez tout patient traité par Kivexa, le diagnostic clinique d'une suspicion de réaction d'hypersensibilité doit rester la base de toute décision clinique.
+
+·Lors d'une suspicion de RHS, l'administration de Kivexa doit immédiatement être arrêtée même si le patient ne porte pas l'allèle HLA-B\*5701. Retarder l'arrêt du traitement par Kivexa après l'apparition d'une réaction d'hypersensibilité peut entraîner une réaction menaçant le pronostic vital. L'état clinique ainsi que les taux d'aminotransférases hépatiques et de bilirubine doivent être surveillés.
+
+·Les patients ayant eu une réaction d'hypersensibilité doivent être instruits d'éliminer leurs comprimés restants de Kivexa pour éviter toute reprise d'abacavir.
+
+·La reprise d'un traitement par des médicaments contenant de l'abacavir après une suspicion de RHS à l'abacavir peut entraîner une réapparition des symptômes déjà en l'espace de quelques heures. Cette situation peut entraîner une hypotension menaçant le pronostic vital et conduire au décès du patient.
+
+·Avant de reprendre l'administration d'abacavir chez un patient ayant arrêté un traitement par l'abacavir pour une quelconque raison, il faut constater, indépendamment du statut HLA-B\*5701, quelle avait été la raison de l'arrêt du traitement précédent. Si une RHS ne peut pas être exclue, il ne faut JAMAIS PLUS administrer Kivexa ou un autre médicament contenant de l'abacavir (p.ex. Ziagen, Trizivir, Triumeq).
+
+·Si la survenue d'une réaction d'hypersensibilité par le passé peut par contre être exclue, le traitement par Kivexa peut être repris. Dans de rares cas, des patients qui avaient arrêté un traitement par l'abacavir pour des raisons autres que des symptômes de RHS et repris de l'abacavir ultérieurement ont également présenté des réactions mettant en jeu le pronostic vital (voir «Effets indésirables». Les patients doivent être prévenus que des RHS peuvent survenir après la reprise d'un traitement par Kivexa ou par un autre médicament contenant de l'abacavir (p.ex. Ziagen, Trizivir, Triumeq) et qu'un nouveau traitement par Kivexa ou par un autre médicament contenant de l'abacavir (p.ex. Ziagen, Trizivir, Triumeq) ne doit être commencé que si une prise en charge médicale rapide est assurée.
+
+Description clinique d'une RHS à l'abacavir:
+
+Les RHS à l'abacavir ont été bien caractérisées dans le cadre des études cliniques et de la pharmacovigilance. Les symptômes apparaissent généralement dans les six premières semaines de prise d'abacavir (le délai médian de survenue des symptômes est de 11 jours), bien que ces réactions puissent survenir à tout moment au cours du traitement.
+
+La quasi-totalité des RHS à l'abacavir s'accompagnent de fièvre et/ou d'une éruption cutanée qui font partie du syndrome. Les autres signes et symptômes observés dans le cadre de RHS à l'abacavir ont inclus entre autres des symptômes respiratoires et gastro-intestinaux qui peuvent conduire à une erreur diagnostique entre réaction d'hypersensibilité et affection respiratoire (pneumonie, bronchite, pharyngite) ou gastro-entérite (voir « Effets indésirables »). Les symptômes liés à une RHS s'aggravent avec la poursuite du traitement et peuvent menacer le pronostic vital. Ces symptômes disparaissent généralement à l'arrêt du traitement par l'abacavir.
+
+Insuffisance rénale: Fautes d'études adéquates, il est impossible de formuler des recommandations posologiques spécifiques. En cas d'insuffisance rénale, il faut étroitement surveiller le patient.
+
+Acidose lactique: Des cas d'acidose lactique, associée en général à une hépatomégalie et une stéatose hépatique, ont été signalés au cours du traitement par analogues nucléosidiques. Les symptômes précoces (hyperlactatémie symptomatique) comportent des troubles digestifs bénins (nausées, vomissements et douleurs abdominales), une sensation de malaise non spécifique, inappétence, perte pondérale, troubles respiratoires (respiration rapide ou/et profonde) ou symptômes neurologiques (y compris un déficit moteur).
+
+L'acidose lactique est liée à un taux de mortalité élevé et peut être associée à une pancréatite, une insuffisance hépatique ou rénale.
+
+L'acidose lactique apparaît généralement après quelques mois de traitement ou plus.
+
+Le traitement par analogues nucléosidiques doit être arrêté à l'apparition d'une hyperlactatémie (symptomatique) et d'une acidose métabolique/lactique (avec ou sans hépatite), d'une hépatomégalie évolutive ou d'une élévation rapide des transaminases.
+
+Les analogues nucléosidiques doivent être utilisés avec prudence chez tous les patients, mais notamment chez les femmes obèses, présentant une hépatomégalie, une hépatite ou tout autre facteur de risque connu d'une affection et d'une stéatose hépatiques (certains médicaments et alcool compris). Les patients co-infectés par l'hépatite C et traités par un interféron-alpha et la ribavirine sont exposés à un risque particulier.
+
+Les patients à haut risque doivent faire l'objet d'une surveillance étroite.
+
+Lipides sériques et glycémie : un traitement antirétroviral peut s'accompagner d'une augmentation des taux de lipides sériques et de la glycémie. Le contrôle de la maladie et des modifications du mode de vie peuvent aussi y contribuer. Il est donc recommandé de vérifier les taux sériques de lipides et la glycémie. Les troubles du métabolisme lipidique doivent être traités en fonction des nécessités cliniques.
+
+Pancréatite: Des cas de pancréatite ont été rapportés, mais un lien de causalité au traitement par la lamivudine ou l'abacavir est incertain.
+
+Etudes cliniques: La démonstration du bénéfice de l'association abacavir / lamivudine administrée en une prise journalière unique repose essentiellement sur une étude réalisée chez des patients adultes, n'ayant jamais été traités par antirétroviraux, et recevant l'abacavir et la lamivudine en association avec l'efavirenz (voir «Propriétés / Effets»).
+
+Trithérapie nucléosidique: Des taux élevés d'échec virologique et d'émergence de résistance ont été rapportés à un stade précoce lorsque l'abacavir et la lamivudine étaient associés au ténofovir disoproxil fumarate selon un schéma posologique en une prise par jour.
+
+Affections hépatiques: Si la lamivudine est utilisée à la fois pour le traitement de l'infection par le VIH et par le virus de l'hépatite B (VHB), des informations supplémentaires sur l'emploi de la lamivudine dans le traitement de l'hépatite B sont disponibles dans l'information professionnelle sur Zeffix.
+
+L'innocuité et l'efficacité de Kivexa n'ont pas encore été établies chez les patients présentant des troubles sous-jacents significatifs de la fonction hépatique. Kivexa est contre-indiqué chez les patients souffrant d'une insuffisance hépatique modérée à sévère (voir «Contre-indications»).
+
+Les patients atteints d'hépatite chronique B ou C et traités par association d'antirétroviraux présentent un risque accru de développer des troubles hépatiques sévères et potentiellement fatals. En cas d'administration concomitante d'un traitement antiviral de l'hépatite B ou C, veuillez consulter les informations de ces médicaments destinées au corps médical.
+
+Si le traitement par Kivexa est arrêté chez des patients co-infectés par le virus de l'hépatite B, il est recommandé de procéder à une surveillance régulière des paramètres hépatiques et des marqueurs de la réplication du VHB, l'arrêt de la lamivudine pouvant entraîner une exacerbation sévère aiguë de l'hépatite (voir Information professionnelle sur Zeffix).
+
+Les patients ayant des troubles préexistants de la fonction hépatique (y compris une hépatite chronique active) ont, au cours d'un traitement par association d'antirétroviraux, une fréquence plus élevée d'anomalies de la fonction hépatique et doivent faire l'objet d'une surveillance clinique appropriée. Chez ces patients, en cas d'aggravation confirmée de l'atteinte hépatique, l'interruption ou l'arrêt du traitement doit être envisagé.
+
+Dysfonctionnement mitochondrial: Il a été démontré que les analogues nucléosidiques et nucléotidiques entraînent, in vitro et in vivo, des atteintes mitochondriales plus ou moins sévères. Des cas de dysfonctionnement mitochondrial ont été rapportés chez des enfants en bas âge non infectés par le VIH, exposés in utero et/ou en période post-natale à des analogues nucléosidiques. Les effets indésirables principalement rapportés sont des troubles hématologiques (anémie, neutropénie) et métaboliques (hyperlactatémie, hyperlipasémie). Ces effets indésirables sont souvent transitoires. Des troubles neurologiques d'apparition tardive ont été rapportés (hypertonie, convulsions, troubles du comportement). Le caractère transitoire ou permanent de ces troubles neurologiques n'est pas établi à ce jour. Tout enfant exposé in utero à des analogues nucléosidiques ou nucléotidiques, y compris les enfants séronégatifs pour le VIH, doit faire l'objet d'un suivi clinique et biologique et d'un bilan approfondi à la recherche d'un éventuel dysfonctionnement mitochondrial devant tout signe ou symptôme évocateur. Ces données ne modifient pas les recommandations actuelles nationales quant à l'utilisation d'un traitement antirétroviral chez la femme enceinte dans la prévention de la transmission materno-fœtale du VIH.
+
+Syndrome de restauration immunitaire: Chez les patients infectés par le VIH et présentant un déficit immunitaire sévère au moment de l'instauration du traitement par association d'antirétroviraux (ART), une réaction inflammatoire à des infections opportunistes asymptomatiques ou résiduelles peut apparaître, entraînant des manifestations cliniques graves ou une aggravation des symptômes. De telles réactions ont été observées classiquement au cours des premières semaines ou mois suivant l'instauration du traitement par association d'antirétroviraux. Des exemples pertinents sont les rétinites à cytomégalovirus, les infections mycobactériennes généralisées et/ou localisées, et les pneumopathies à Pneumocystis jiroveci (souvent désignées par PCP ou PJP). Tout symptôme inflammatoire doit être évalué et un traitement doit être instauré si nécessaire.
+
+Des maladies auto-immunes (par exemple maladie de Basedow, polymyosite et syndrome de Guillain-Barré) ont également été rapportées dans le cadre de la reconstitution immunitaire. Toutefois, le temps écoulé jusqu'à leur apparition est plus variable et peut atteindre de nombreux mois après le début du traitement. De plus, les manifestations de ces maladies peuvent être atypiques.
+
+Excipients: Kivexa contient le colorant azoïque jaune orangé S, susceptible de provoquer des réactions allergiques.
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé, c'est-à-dire qu'il est essentiellement «sans sodium».
+
+Infections opportunistes: Les patients doivent être informés que Kivexa, comme tout autre traitement antirétroviral, ne guérit pas l'infection par le VIH et que l'apparition d'infections opportunistes ou d'autres complications liées à l'évolution de l'infection par le VIH reste possible. Les patients doivent donc faire l'objet d'une surveillance clinique étroite, effectuée par un médecin expérimenté dans la prise en charge des patients infectés par le VIH.
+
+Transmission du VIH: Les patients doivent être informés que les traitements antirétroviraux disponibles, y compris Kivexa, n'ont pas démontré leur capacité à réduire la transmission par voie sexuelle ou par voie sanguine du VIH. Les précautions appropriées doivent donc être maintenues.
+
+Faiblesse musculaire généralisée: Très rarement, on a observé une faiblesse motrice généralisée chez des patients recevant un traitement antirétroviral en association, abacavir et lamivudine compris. Beaucoup de ces cas, mais non la totalité, se sont manifestés dans le cadre d'une acidose lactique. Cliniquement, cette faiblesse motrice peut simuler un syndrome de Guillain-Barré, y compris paralysie respiratoire. Après l'arrêt du traitement, les symptômes peuvent parfois persister, voire s'aggraver, le cas échéant (voir aussi «Effets indésirables»).
+
+Infarctus du myocarde:
+
+Dans plusieurs études épidémiologiques d'observation, l'utilisation de l'abacavir a été associée à un risque accru d'infarctus du myocarde. Les méta-analyses d'études contrôlées randomisées n'ont révélé aucun risque accru d'infarctus du myocarde chez les patients sous abacavir. Jusqu'à présent, il n'a pas été constaté de mécanisme biologique susceptible d'expliquer l'éventuelle augmentation du risque d'infarctus du myocarde.
+
+Dans l'ensemble, les données disponibles provenant des études d'observation et des études cliniques contrôlées sont hétérogènes et ne fournissent donc pas de preuve concluante d'un lien de causalité entre le traitement par l'abacavir et le risque d'infarctus du myocarde.
+
+Par mesure de précaution, il convient de tenir compte du risque sous-jacent de cardiopathies coronaires lors de la prescription de traitements antirétroviraux, y compris de l'abacavir, et il faut prendre des mesures pour minimiser tous les facteurs de risque contrôlables (p.ex. hypertension artérielle, hyperlipidémie, diabète et tabagisme).
+
+Interactions
+
+Kivexa contient de l'abacavir et de la lamivudine. A ce titre, les interactions médicamenteuses observées pour chacun des deux composants peuvent se produire avec Kivexa. Les études cliniques ont montré qu'il n'y a pas d'interaction cliniquement significative entre l'abacavir et la lamivudine.
+
+Les enzymes du cytochrome P450 (tels que CYP 3A4, CYP 2C9 ou CYP 2D6) ne jouent pas un rôle majeur dans le métabolisme de l'abacavir ni dans celui de la lamivudine qui ne sont eux-mêmes ni inhibiteurs ni inducteurs de ce système enzymatique. Par conséquent, le risque d'interactions avec les antirétroviraux inhibiteurs de la protéase, les analogues non nucléosidiques et les autres médicaments métabolisés par les principales enzymes du cytochrome P450 est faible.
+
+Effet de l'abacavir sur d'autres médicaments
+
+In vitro, l'abacavir n'a aucun ou seulement un faible effet inhibiteur sur les molécules de transport OATP1B1 (organic anion transporter 1B1), OATP1B3, BCRP (breast cancer resistance protein) ou Pgp (glycoprotéine P), et un faible effet inhibiteur sur OCT1 (organic cation transporter 1), OCT2 et MATE2-K (multidrug and toxin extrusion protein 2-K). L'abacavir ne devrait donc avoir aucune influence sur les concentrations plasmatiques des principes actifs faisant office de substrats de ces transporteurs.
+
+In vitro l'abacavir s'est avéré être un inhibiteur de MATE1; la probabilité d'une influence sur les concentrations plasmatiques des substrats de MATE1 en cas d'exposition thérapeutique (jusqu'à 600 mg) est néanmoins faible.
+
+Effet d'autres médicaments sur l'abacavir
+
+In vitro, l'abacavir n'est pas un substrat d'OATP1B1, d'OATP1B3, d'OCT1, d'OCT2, d'OAT1, de MATE1, de MATE2-K, de MRP2 (multidrug resistance-associated protein 2) ni de MRP4; les principes actifs ayant un effet modulateur sur ces transporteurs ne devraient donc pas influencer les concentrations plasmatiques de l'abacavir.
+
+Bien que l'abacavir s'avère in vitro être un substrat du BCRP et de la Pgp, aucune modification significative de la pharmacocinétique de l'abacavir n'a été observée dans les études cliniques en cas de co-administration d'abacavir avec du lopinavir/ritonavir (inhibiteurs de la Pgp et de la BCRP).
+
+Interactions avec l'abacavir
+
+La liste des interactions répertoriées ci-dessous doit pas être considérée comme exhaustive, mais elle est représentative des classes thérapeutiques nécessitant une prudence particulière.
+
+Les inducteurs enzymatiques puissants, tels que la rifampicine, le phénobarbital et la phénytoïne, peuvent, par leur action sur l'UDP-glucuronyltransférase, entraîner une réduction légère des concentrations plasmatiques d'abacavir.
+
+Le métabolisme de l'abacavir est modifié par la consommation concomitante d'éthanol, avec une augmentation d'environ 41% de l'ASC de l'abacavir. Ces données ne sont pas considérées comme cliniquement significatives. L'abacavir n'a pas d'effet sur le métabolisme de l'éthanol.
+
+Les rétinoïdes sont éliminés par l'alcool-déshydrogénase. Une interaction avec l'abacavir est possible mais n'a pas été étudiée.
+
+Dans une étude pharmacocinétique, la coadministration de 600 mg d'abacavir deux fois par jour, avec la méthadone, a entraîné une réduction de 35% de la Cmax de l'abacavir et un allongement d'une heure du tmax sans changement de l'ASC. Ces modifications ne sont pas considérées comme cliniquement pertinentes. Dans cette étude, l'abacavir a augmenté de 22% la clairance systémique moyenne de la méthadone. Par conséquent, un effet inducteur enzymatique ne peut être exclu. Les patients traités conjointement par la méthadone et l'abacavir doivent être surveillés, afin de détecter les symptômes évocateurs d'un état de manque, suggérant un sous-dosage en méthadone, un re-titrage de la méthadone pouvant parfois s'avérer nécessaire.
+
+Tipranavir/ritonavir: Tipranavir/ ritonavir (250 mg/200 mg deux fois par jour) a réduit l'ASC et la concentration plasmatique Cmax de l'abacavir de 44%. L'importance clinique de cette interaction n'est pas connue. Aucune recommandation posologique ne peut être formulée sur l'administration concomitante d'abacavir et de tipranavir/ ritonavir.
+
+Effet de la lamivudine sur d'autres médicaments
+
+In vitro, la lamivudine ne présente aucun ou seulement un faible effet inhibiteur sur les transporteurs de principes actifs OATP1B1 (organic anion transporter 1B1), OATP1B3, BCRP (breast cancer resistance protein) ou Pgp (glycoprotéine P), MATE1 (multidrug and toxin extrusion protein 1), MATE2-K ou OCT3 (organic cation transporter 3). La lamivudine ne devrait donc avoir aucune influence sur les concentrations plasmatiques des principes actifs faisant office de substrats de ces transporteurs.
+
+In vitro, la lamivudine s'est avérée être un inhibiteur d'OCT1 et OCT2, avec des valeurs IC50 de respectivement 17 et 33 μM; la probabilité d'une influence sur les concentrations plasmatiques des substrats d'OCT1 et OCT2 en cas d'exposition thérapeutique (jusqu'à 300 mg) est néanmoins faible.
+
+Effet d'autres médicaments sur la lamivudine
+
+In vitro, la lamivudine s'avère être un substrat de MATE1, de MATE2-K et d'OCT2. Il est démontré que le triméthoprime (un inhibiteur de ces molécules de transport) augmente les concentrations plasmatiques de la lamivudine; cette interaction n'est cependant pas considérée comme cliniquement significative, car aucun ajustement posologique de la lamivudine n'est nécessaire.
+
+La lamivudine est un substrat du transporteur hépatique OCT1. L'élimination hépatique ne jouant qu'un rôle secondaire dans la clairance de la lamivudine, les interactions de produits thérapeutiques dues à l'inhibition de l'OCT1 ne devraient pas être cliniquement significatives.
+
+La lamivudine est un substrat de la Pgp et de la BCRP; toutefois, du fait de sa biodisponibilité élevée, il est improbable que ces transporteurs jouent un rôle significatif dans la résorption de la lamivudine. L'administration concomitante de principes actifs inhibant ces transporteurs d'efflux ne devrait donc pas avoir d'incidence significative sur la disponibilité et l'élimination de la lamivudine.
+
+Interactions avec la lamivudine
+
+Le risque d'interactions métaboliques avec la lamivudine est faible en raison d'un métabolisme et d'une liaison aux protéines plasmatiques limités, de même que de l'élimination essentiellement rénale de la lamivudine. Des interactions potentielles avec d'autres médicaments coadministrés avec Kivexa doivent être envisagées, en particulier avec les médicaments à élimination essentiellement rénale, par sécrétion tubulaire active, via le système de transport cationique (p.ex. le triméthoprime). D'autres médicaments (p.ex. la ranitidine, la cimétidine), ne sont éliminés que partiellement par ce mécanisme et n'ont pas présenté d'interactions avec la lamivudine. Les analogues nucléosidiques (p.ex. la zidovudine et la didanosine) ne sont pas éliminés par ce mécanisme, les interactions avec la lamivudine étant donc peu probables.
+
+Sorbitol: la coadministration d'une solution à base de sorbitol (3,2 g; 10,2 g; 13,4 g) et d'une dose unique d'une solution buvable de lamivudine à 300 mg a entrainé chez l'adulte une baisse dose-dépendante de l'exposition à la lamivudine (ASC∞) respectivement de 14%, 32% ou 36% et de la Cmax de la lamivudine respectivement de 28%, 52% ou 55%. La coadministration de médicaments contenant du sorbitol et de lamivudine doit être évitée dans la mesure du possible.
+
+Triméthoprime: l'administration de triméthoprime (160 mg) et de sulfaméthoxazole (800 mg) entraîne une augmentation de 40% du taux plasmatique de lamivudine en raison du triméthoprime. Il n'est cependant pas nécessaire d'adapter la posologie de la lamivudine, sauf en cas d'insuffisance rénale (voir «Posologie / Mode d'emploi»). La pharmacocinétique du triméthoprime et du sulfaméthoxazole n'est pas modifiée par la lamivudine. Lorsque l'administration concomitante de Kivexa et de cotrimoxazole est indiquée, les patients doivent être maintenus sous surveillance clinique. La coadministration de Kivexa et de fortes doses de cotrimoxazole pour le traitement de la pneumonie à Pneumocystis jiroveci et de la toxoplasmose est déconseillée.
+
+Ganciclovir i.v., foscarnet i.v.: en l'absence de données complémentaires, la coadministration de lamivudine avec le ganciclovir ou le foscarnet intraveineux n'est pas recommandée.
+
+Emtricitabine: la lamivudine peut inhiber la phosphorylation intracellulaire de l'emtricitabine lorsque ces deux médicaments sont utilisés simultanément. En outre, le mécanisme de résistance du virus à la lamivudine et à l'emtricitabine est médié par une mutation du même gène de la transcriptase virale (M184V) et l'efficacité thérapeutique de ces deux substances médicamenteuses en association peut être diminuée. L'utilisation concomitante de la lamivudine et de l'emtricitabine ou d'associations à dose fixe contenant de l'emtricitabine n'est pas recommandée.
+
+Grossesse, allaitement
+
+Grossesse
+
+Il n'existe pas d'étude adéquate et bien contrôlée chez les femmes enceintes et la sécurité d'administration d'abacavir, de lamivudine ou de Kivexa pendant la grossesse n'a pas été établie pour l'instant. De ce fait, l'utilisation de Kivexa pendant la grossesse ne doit être envisagée que si le bénéfice escompté pour la mère justifie les risques potentiels pour le fœtus.
+
+L'abacavir a été étudié chez plus de 2'000 femmes pendant la grossesse et après la naissance dans le registre de grossesse sur le traitement antirétroviral. Les données humaines disponibles dans le registre du traitement antirétroviral pendant la grossesse ne montrent pas d'augmentation du risque d'anomalies congénitales graves sous abacavir par rapport à l'incidence de base (cf «Expérience clinique»). La lamivudine a été étudiée chez plus de 11'000 femmes pendant la grossesse et après la naissance dans le registre de grossesse sur le traitement antirétroviral. Les données humaines disponibles dans le registre du traitement antirétroviral pendant la grossesse ne montrent pas d'augmentation du risque d'anomalies congénitales graves sous lamivudine par rapport à l'incidence de base (cf «Expérience clinique»).
+
+Des études conduites chez l'animal avec l'abacavir et la lamivudine ont révélé une toxicité sur la reproduction (voir «Données précliniques»). Chez les nouveau-nés et les enfants ayant été exposés in utero ou au cours de l'accouchement à des inhibiteurs nucléosidiques de la transcriptase inverse (INTI), une augmentation légère et transitoire de la lactatémie sérique a été signalée, ce qui pourrait être attribué à un dysfonctionnement mitochondrial. La pertinence clinique de cette augmentation transitoire de la lactatémie sérique est inconnue. De plus, des cas rarissimes de retard dans le développement, de crises convulsives et d'autres affections neurologiques ont été rapportés. Néanmoins, un lien de causalité entre l'apparition de ces troubles et l'administration des INTI n'a pas été démontré. Ces données ne modifient pas les recommandations en vigueur concernant la mise en œuvre d'un traitement antirétroviral chez la femme enceinte en vue d'une prévention de la transmission du VIH de la mère à l'enfant.
+
+Allaitement
+
+Les experts de la santé recommandent que dans la mesure du possible, les femmes infectées par le VIH n'allaitent pas leurs enfants, afin d'éviter une transmission du VIH.
+
+Différentes études chez des mères allaitantes traitées par la lamivudine et l'abacavir et leurs enfants ont montré que la lamivudine et l'abacavir sont détectables dans le lait maternel humain à des concentrations similaires ou supérieures à celles observées dans le sérum. La lamivudine a même été mesurée à de faibles concentrations dans le sérum des enfants allaités. Les mères doivent donc être informées qu'elles ne doivent pas allaiter pendant le traitement par la lamivudine et l'abacavir.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude n'a été réalisée concernant les effets de Kivexa sur l'aptitude à conduire des véhicules et à utiliser des machines. L'état clinique du patient et le profil d'effets indésirables de Kivexa doivent être pris en considération lorsque l'on évalue l'aptitude du patient à conduire des véhicules et à utiliser des machines.
+
+Effets indésirables
+
+Kivexa contient de l'abacavir et de la lamivudine. A ce titre, les effets indésirables survenant avec chacun des deux composants pourraient apparaître avec Kivexa. Pour plusieurs de ces effets indésirables, il est incertain s'ils sont en rapport avec la substance active du médicament ou avec un autre médicament utilisé dans le traitement de l'infection à VIH ou bien s'ils peuvent être attribués au processus pathologique sous-jacent.
+
+Hypersensibilité (cf. «Mises en garde et précautions»):
+
+Les réactions d'hypersensibilité (RHS) à l'abacavir sont un effet indésirable fréquemment observé sous abacavir. La réaction d'hypersensibilité est caractérisée par la survenue de symptômes suggérant une atteinte multi-organique. La liste ci-dessous indique les signes et symptômes signalés en rapport avec une telle réaction d'hypersensibilité dans des études cliniques ou dans le cadre de la pharmacovigilance. Les signes et symptômes rapportés chez au moins 10% des patients ayant subi une réaction d'hypersensibilité apparaissent en gras.
+
+Chez la quasi-totalité des patients présentant une réaction d'hypersensibilité, le syndrome comporte de la fièvre et/ou une éruption cutanée (habituellement maculopapuleuse ou urticarienne), cependant certains patients ont présenté une hypersensibilité sans fièvre ni éruption cutanée.
+
+Les symptômes évocateurs comprennent également des manifestations gastro-intestinales, respiratoires ou générales telles que léthargie et sensation générale de maladie.
+
+|  |  |
+| --- | --- |
+| Affections de la peau: | éruption cutanée (habituellement maculopapuleuse ou urticarienne), très rarement érythème polymorphe exsudatif. |
+| Affections gastro-intestinales: | nausées, vomissements, diarrhées, douleurs abdominales, ulcérations buccales. |
+| Affections respiratoires: | dyspnée, toux, maux de gorge, syndrome de détresse respiratoire aiguë de l'adulte (insuffisance pulmonaire aiguë), insuffisance respiratoire. |
+| Effets divers: | fièvre, léthargie, sensation de malaise général, œdèmes, lymphadénopathie, hypotension artérielle, conjonctivite, anaphylaxie. |
+| Affections du système nerveux / Affections psychiatriques: | céphalées, paresthésies. |
+| Affections hématologiques et du système lymphatique: | lymphopénie. |
+| Affections hépatobiliaires/ pancréatiques: | valeurs accrues aux tests fonctionnels hépatiques, insuffisance hépatique. |
+| Affections musculosquelettiques et du tissu conjonctif: | myalgies, rarement myolyse, arthralgies, élévation de la créatine phosphokinase. |
+| Affections du rein et des voies urinaires: | élévation de la créatinine, insuffisance rénale. |
+
+ 
+
+La reprise du traitement par l'abacavir après une RHS à l'abacavir entraîne une réapparition rapide des symptômes en quelques heures. Cette récidive est généralement plus sévère que l'épisode initial; elle peut entraîner une hypotension menaçant le pronostic vital, et conduire au décès. Des réactions similaires sont également apparues occasionnellement chez des patients après reprise du traitement par l'abacavir, alors qu'ils n'avaient présenté qu'un seul des symptômes évocateurs d'une réaction d'hypersensibilité (voir ci-dessus) avant d'arrêter la prise d'abacavir. Dans des cas isolés, de telles réactions ont également été observées chez des patients ayant repris le traitement par l'abacavir après l'avoir arrêté sans avoir eu de symptôme d'hypersensibilité (c'est-à-dire chez des patients précédemment considérés comme tolérants l'abacavir).
+
+Voir la section «Mises en garde et précautions» pour les détails de la prise en charge clinique lors d'une suspicion de RHS à l'abacavir.
+
+Beaucoup d'effets indésirables, listés dans le tableau ci-dessous (nausées, vomissements, diarrhées, fièvre, léthargie, éruptions cutanées), apparaissent fréquemment chez les patients présentant une hypersensibilité à l'abacavir. De ce fait, les patients chez lesquels un ou plusieurs de ces symptômes ont été identifiés, doivent être soumis à un examen approfondi pour déceler une réaction d'hypersensibilité. Si Kivexa a été arrêté en raison de ces symptômes et qu'il est décidé de reprendre le traitement par un médicament contenant de l'abacavir, cette reprise doit intervenir dans un établissement où une assistance médicale rapide est assurée (voir «Mises en garde et précautions»). Très rarement, on a signalé des cas d'érythème multiforme, de syndrome de Stevens-Johnson ou de syndrome de Lyell dans lesquels une hypersensibilité à l'abacavir ne pouvait être exclue. Dans de tels cas, les médicaments contenant de l'abacavir doivent être arrêtés définitivement.
+
+Les effets indésirables considérés comme pouvant être, au moins éventuellement, liés à l'abacavir ou à la lamivudine sont listés ci-dessous par système d'organe, classe d'organe et fréquence absolue. Les fréquences sont définies selon les catégories suivantes: «très fréquent» (≥1/10), «fréquent» (≥1/100 et < 1/10), «occasionnel» (≥1/1000 et < 1/100), «rare» (≥1/10000 et < 1/1000), «très rare» (< 1/10000).
+
+|  |  |  |
+| --- | --- | --- |
+| Système/Organe | Abacavir | Lamivudine |
+| Affections hématologiques et du système lymphatique |  | Occasionnel: neutropénie et anémie (toutes deux parfois sévères), thrombocytopénie  Très rare: aplasie érythrocytaire |
+| Affections du système immunitaire | Fréquent : hypersensibilité |  |
+| Troubles du métabolisme et de la nutrition | Fréquent: anorexie |  |
+| Affections du système nerveux | Fréquent : céphalées  Très rare : faiblesse motrice généralisée | Fréquent: céphalées, insomnie  Très rare: des cas de neuropathie périphérique (ou paresthésie) ont été rapportés |
+| Affections respiratoires, thoraciques et médiastinales |  | Fréquent: toux, symptomatologie nasale |
+| Affections gastro-intestinales | Fréquent : nausées, vomissements, diarrhées  Rare : des pancréatites ont été rapportées mais la relation de causalité au traitement par abacavir est incertaine | Fréquent: nausées, vomissements, douleurs ou crampes abdominales, diarrhées  Rare : élévation de l'amylase sérique. Des cas de pancréatite ont été rapportés |
+| Affections hépatobiliaires |  | Occasionnel: élévation transitoire des enzymes hépatiques (ASAT, ALAT)  Rare: hépatite |
+| Affections de la peau et du tissu sous-cutané | Fréquent : éruption cutanée (sans symptôme systémique)  Très rare: érythème multiforme, syndrome de Stevens-Johnson et syndrome de Lyell | Fréquent: éruption cutanée, alopécie |
+| Affections musculosquelettiques et du tissu conjonctif |  | Fréquent: arthralgies, troubles musculaires  Rare: rhabdomyolyse |
+| Troubles généraux et anomalies au site d'administration | Fréquent : fièvre, léthargie, fatigue | Fréquent: fatigue, malaise, fièvre |
+
+ 
+
+Des cas d'acidose lactique, parfois fatale, associée habituellement à une hépatomégalie sévère et à une stéatose hépatique, ont été observés après administration d'analogues nucléosidiques (voir «Mises en garde et précautions»).
+
+On a constaté, chez les patients infectés par le VIH et traités par association d'antirétroviraux, des anomalies métaboliques, telles que l'hypertriglycéridémie, l'hypercholestérolémie, l'insulinorésistance, l'hyperglycémie et l'hyperlactatémie (voir «Mises en garde et précautions»).
+
+Chez les patients infectés par le VIH et présentant un déficit immunitaire sévère au moment de l'instauration du traitement par association d'antirétroviraux, une réaction inflammatoire à des infections opportunistes asymptomatiques ou résiduelles peut se produire (voir «Mises en garde et précautions»).
+
+Une faiblesse motrice généralisée simulant cliniquement un syndrome de Guillain-Barré a très rarement été observée au cours du traitement par abacavir. Une telle faiblesse motrice peut survenir avec ou sans hyperlactatémie, y compris insuffisance respiratoire (voir «Mises en garde et précautions» et «Acidose lactique»).
+
+Population pédiatrique:
+
+La base de données de sécurité sur laquelle s'appuie l'administration de Kivexa 1x par jour chez les patients pédiatriques provient de l'étude ARROW (COL105677), dans laquelle 669 patients pédiatriques infectés par le VIH-1 ont reçu de l'abacavir et de la lamivudine 1x par jour ou 2x par jour (voir «Propriétés/Effets/Études cliniques»). Dans cette population, 104 patients pédiatriques infectés par le VIH-1 et pesant au moins 25 kg ont reçu l'abacavir et la lamivudine sous forme d'association à dose fixe. En comparaison avec les adultes, aucun effet indésirable supplémentaire n'a été identifié chez les patients pédiatriques recevant leur dose quotidienne en 1 ou en 2 prise(s) par jour.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+A l'exception des effets mentionnés dans le paragraphe „Effets indésirables“, aucun symptôme ou signe spécifique n'a été identifié suite à un surdosage aigu d'abacavir ou de lamivudine.
+
+En cas de surdosage, le patient doit être surveillé pour déceler des signes d'intoxication (voir «Effets indésirables») et, si nécessaire, un traitement symptomatique doit être mis en œuvre. La lamivudine étant dialysable, une hémodialyse continue peut être réalisée en cas de surdosage, bien que cela n'ait pas été étudié de manière ciblée. On ignore si l'abacavir peut être éliminé par dialyse péritonéale ou hémodialyse.
+
+Propriétés/Effets
+
+Code ATC
+
+J05AR02
+
+Mécanisme d'action
+
+L'abacavir et la lamivudine sont des inhibiteurs nucléosidiques de la transcriptase inverse et des inhibiteurs sélectifs puissants des virus VIH-1 et VIH-2. Au niveau intracellulaire, tant l'abacavir que la lamivudine sont métabolisés séquentiellement par des kinases intracellulaires, en leurs composés 5'-triphosphatés (TP), qui représentent leurs métabolites actifs. La lamivudine-TP et le carbovir-TP (forme active, triphosphatée de l'abacavir) agissent en tant que substrats et inhibiteurs compétitifs de la transcriptase inverse (TI) du VIH. Cependant, leur principale activité antivirale s'exerce grâce à l'incorporation du monophosphate à l'intérieur de la chaîne d'ADN viral, bloquant ainsi l'élongation de cette chaîne. Le triphosphate de l'abacavir et le triphosphate de la lamivudine présentent une affinité significativement moins marquée pour les ADN polymérases des cellules hôtes.
+
+L'activité antivirale d'abacavir dans les cultures de cellules n'a pas été antagonisée en association avec les inhibiteurs nucléosidiques de la transcriptase inverse (INTI) didanosine, emtricitabine, lamivudine, stavudine, ténofovir, zalcitabine ou zidovudine, en association avec l'inhibiteur non nucléosidique de la transcriptase inverse (INNTI) névirapine ni avec l'inhibiteur de protéase (IP) amprénavir. Aucun effet antagoniste n'a été observé in vitro avec la lamivudine et d'autres substances antirétrovirales (substances testées: abacavir, didanosine, névirapine, zalcitabine et zidovudine).
+
+Le développement d'une résistance du VIH-1 à la lamivudine résulte de l'apparition d'une mutation de la séquence d'acides aminés (M184V) proche du site actif de la transcriptase inverse virale. Cette mutation apparaît aussi bien in vitro que chez les patients infectés par le VIH-1 et recevant un traitement antirétroviral contenant de la lamivudine.
+
+Des souches VIH-1 résistantes à l'abacavir ont été identifiées in vitro et sont associées à des modifications génotypiques spécifiques sur le codon de la transcriptase inverse: TI (codons M184V, K65R, L74V et Y115F). Des études réalisées in vitro et in vivo montrent que la résistance du virus à l'abacavir apparaît relativement lentement. Cette diminution de sensibilité nécessite de multiples mutations pour atteindre un seuil de CI50 huit fois supérieur (considéré comme cliniquement significatif) à celui observé avec une souche virale sauvage. Les souches résistantes à l'abacavir peuvent également montrer une diminution de la sensibilité à la lamivudine, la zalcitabine, le ténofovir, l'emtricitabine et/ou la didanosine, tout en restant sensibles à la zidovudine et à la stavudine.
+
+Une résistance croisée entre l'abacavir ou la lamivudine et les antirétroviraux d'autres classes, p.ex. les inhibiteurs de la protéase ou inhibiteurs non-nucléosidique de la transcriptase inverse est peu probable. Une diminution de la sensibilité à l'abacavir a été observée au niveau d'isolats cliniques provenant des patients ayant une réplication virale non contrôlée, préalablement traités par d'autres inhibiteurs nucléosidiques et présentant une résistance à ceux-ci.
+
+Il est peu probable que des isolats cliniques présentant au moins trois mutations de résistance aux inhibiteurs nucléosidiques disponibles de la transcriptase inverse, soient encore sensibles à l'abacavir. Une résistance croisée induite par la mutation M184V-RT sur la transcriptase inverse se limite aux agents antirétroviraux de la classe des inhibiteurs nucléosidiques. La zidovudine, la stavudine, l'abacavir et le ténofovir conservent leur activité antirétrovirale sur le virus VIH-1 résistant à la lamivudine. L'abacavir conserve son activité antirétrovirale sur le virus VIH-1 résistant à la lamivudine porteur uniquement de la mutation M184V.
+
+Pharmacodynamique
+
+Aucune donnée.
+
+Efficacité clinique
+
+Patients n'ayant jamais reçu d'antirétroviraux
+
+L'association abacavir / lamivudine en une prise journalière a fait l'objet d'une étude contrôlée, multicentrique, en double aveugle (CNA30021) réalisée sur 48 semaines chez 770 sujets adultes infectés par le VIH, n'ayant jamais reçu d'antirétroviraux. Ces patients, pour la plupart asymptomatiques (stade A de la classification CDC), étaient randomisés, afin de recevoir soit 600 mg d'abacavir (ABC) une fois par jour, soit 300 mg d'abacavir deux fois par jour, en association avec 300 mg de lamivudine une fois par jour et 600 mg d'efavirenz une fois par jour. Les résultats de cette étude sont résumés dans le tableau ci-après:
+
+Réponse virologique exprimée en charge virale plasmatique (ARN VIH-1) < 50 copies/ml à la semaine 48 / population en ITT (patients exposés)
+
+|  |  |  |
+| --- | --- | --- |
+| Schéma posologique | ABC une fois par jour (N = 384) | ABC deux fois par jour  (N = 386) |
+| Réponse virologique | 253/384 (66%) | 261/386 (68%) |
+
+ 
+
+Une réponse clinique similaire a été observée avec les deux schémas posologiques d'abacavir (point estimé pour la différence entre les traitements: -1,7 [- 8,4; 4,9] IC 95%). Ces résultats permettent de conclure, avec un intervalle de confiance de 95%, que la différence réelle ne serait pas supérieure à 8,4% en faveur du schéma posologique «deux fois / jour». Cette différence potentielle est suffisamment faible pour conclure à la non-infériorité du schéma en une prise par jour par rapport au schéma en deux prises par jour.
+
+Globalement, l'incidence des échecs virologiques (charge virale > 50 copies/ml) a été faible et similaire dans les deux groupes de traitement «une fois / jour» et «deux fois / jour» (respectivement 10% et 8%). Sur le petit échantillon de patients pour lesquels une analyse génotypique a été réalisée, une tendance en faveur d'un taux plus élevé de mutations associées aux INTI a été observée dans le groupe «abacavir une fois / jour» par rapport au groupe «abacavir deux fois / jour». Cependant, les données limitées issues de cette étude ne permettent pas de tirer de conclusion définitive. Les données à long terme (au-delà de 48 semaines) sur l'emploi de l'abacavir en une prise journalière unique restent actuellement limitées.
+
+Dans le cadre d'une étude multicentrique, randomisée et contrôlée auprès de patients pédiatriques infectés par le VIH, différents schémas d'administration avec 1 prise ou 2 prises quotidiennes d'abacavir et de lamivudine ont été comparés de façon randomisée. 1206 patients pédiatriques âgés de 3 mois à 17 ans ont été inclus dans l'étude ARROW (COL105677) et ont été traités selon les recommandations posologiques, en fonction des tranches de poids, définies par les lignes directrices de l'Organisation Mondiale de la Santé («Antiretroviral therapy of HIV infection in infants and children, 2006»). Après 36 semaines d'administration d'abacavir et de lamivudine en deux prises journalières, 669 patients éligibles ont été randomisés afin soit, de continuer le traitement en deux prises par jour, soit de passer au schéma posologique en une prise journalière unique et ce, pendant un minimum de 96 semaines. Au sein de cette population, 104 patients pesant au moins 25 kg ont reçu 1x par jour une association à dose fixe composée de 600 mg d'abacavir et de 300 mg de lamivudine. La durée d'exposition médiane était de 596 jours. Les résultats obtenus sont résumés dans le tableau ci-dessous:
+
+Réponse virologique (<80 copies d'ARN du VIH-1 par ml) à la semaine 48 et à la semaine 96 dans l'étude ARROW avec randomisation pour l'administration d'abacavir + lamivudine 1x versus 2x par jour (observed analysis)
+
+|  |  |  |
+| --- | --- | --- |
+|  | 2x par jour  N (%) | 1x par jour  N (%) |
+| Semaine 0 (après ≥36 semaines de traitement) | | |
+| ARN du VIH-1 <80 c/ml dans le plasma | 250/331 (76) | 237/335 (71) |
+| Différence de risque (1x/jour vs 2x/jour) | -4,8% (IC à 95%: -11,5%, +1,9%), p = 0,16 | |
+| Semaine 48 | | |
+| ARN du VIH-1 <80 c/ml dans le plasma | 242/331 (73) | 236/330 (72) |
+| Différence de risque (1x/jour vs 2x/jour) | -1,6% (IC à 95%: -8,4 %, +5,2%), p = 0,65 | |
+| Semaine 96 | | |
+| ARN du VIH-1 <80 c/ml dans le plasma | 234/326 (72) | 230/331 (69) |
+| Différence de risque (1x/jour vs 2x/jour) | -2,3% (IC à 95%: -9,3%, +4,7%), p = 0,52 | |
+
+ 
+
+La non-infériorité du groupe sous abacavir + lamivudine en une prise journalière unique a été démontrée par rapport au groupe en deux prises par jour (borne de non-infériorité prédéfinie de -12%) pour le critère principal d'évaluation: charge virale < 80 c/ml à la semaine 48, ainsi qu'à la semaine 96 (critère d'évaluation secondaire). Pour tous les autres seuils testés (< 200 c/ml, < 400 c/ml, < 1000 c/ml), les résultats étaient dans les limites de cette borne de non-infériorité. Les tests d'hétérogénéité en sous-groupes pour les posologies en une ou deux prises par jour n'ont mis en évidence aucun effet significatif du sexe, de l'âge ou de la charge virale au moment de la randomisation. Les conclusions supportent la non-infériorité, quelle que soit la méthode d'analyse.
+
+Patients prétraités
+
+Dans l'étude CAL30001, 182 patients prétraités et en échec virologique recevaient, par randomisation, soit Kivexa en une prise par jour, soit 300 mg d'abacavir deux fois par jour et 300 mg de lamivudine une fois par jour, dans les deux cas en association avec du ténofovir et un inhibiteur de la protéase ou un inhibiteur non-nucléosidique de la transcriptase inverse, sur 48 semaines de traitement. Les résultats de cette étude révèlent que sur la base de réductions analogues de l'ARN-VIH-1, mesurées par l'évolution de l'aire moyenne sous la courbe (AAUCMB, -1,65 log10 copies/ml vs -1,83 log10 copies/ml [- 0,13; 0,38] IC 95%), le groupe Kivexa n'était pas inférieur au groupe recevant de l'abacavir deux fois par jour. La proportion des patients avec une charge virale ARN-VIH-1 < 50 copies/ml (50% vs 47%) et < 400 copies/ml (54% vs 57%) était comparable dans les deux groupes (population ITT). Cependant, étant donné que seuls les patients modérément prétraités ont été inclus dans cette étude, avec un déséquilibre entre les volets d'étude par rapport à la charge virale, ces résultats doivent être interprétés avec précaution.
+
+Dans l'étude ESS30008, 260 patients en succès virologique sous un traitement de première intention contenant 300 mg d'abacavir et 150 mg de lamivudine (les deux administrés deux fois par jour), associés à un inhibiteur de la protéase ou un inhibiteur non-nucléosidique de la transcriptase inverse, ont été randomisés, afin de poursuivre ce schéma posologique ou de changer pour Kivexa associé à un inhibiteur de la protéase ou un inhibiteur non-nucléosidique de la transcriptase inverse, pendant 48 semaines. Les résultats montrent que, sur la base de la proportion des patients ayant une charge virale ARN-VIH-1 < 50 copies/ml, le groupe Kivexa a présenté une réponse virologique comparable (non-infériorité) à celle constatée dans le groupe abacavir / lamivudine (respectivement 90% et 85%, [-1,4; 12,2] IC 90%).
+
+Résultats des études cliniques avec dépistage de l'allèle B\*5701
+
+Dans l'étude prospective CNA106030 (PREDICT-1), un dépistage de l'allèle HLA-B\*5701 avant le début du traitement, associé au renoncement à l'administration d'abacavir chez les patients porteurs de cet allèle, a entraîné une réduction de l'incidence des cas de suspicion clinique de réactions d'hypersensibilité à l'abacavir de 7,8% (66 sur 847) à 3,4% (27 sur 803) (p <0,0001) et a fait baisser l'incidence des réactions d'hypersensibilité confirmées par un test épicutané de 2,7% (23 sur 842) à 0,0% (0 sur 802) (p <0,0001). Sur la base de cette étude, il est estimé que 48% à 61% des patients porteurs de l'allèle HLA-B\*5701 vont développer une réaction d'hypersensibilité au cours du traitement par l'abacavir, par rapport à 0% à 4% des patients non porteurs de cet allèle.
+
+Registre sur le traitement antirétroviral pendant la grossesse
+
+Des rapports prospectifs sur plus de 2'000 grossesses exposées à l'abacavir ayant mené à des naissances vivantes ont été portés au registre sur le traitement antirétroviral pendant la grossesse. Ces rapports concernent plus de 800 expositions pendant le 1er trimestre dont 27 étaient associées à des anomalies congénitales, et plus de 1'100 expositions pendant le 2e et le 3e trimestres dont 32 étaient associées à des anomalies congénitales. La prévalence (IC à 95%) des malformations au cours du premier trimestre était de 3,1% (2,0, 4,4%) et de 2,7% (1,9, 3,9%) au cours des 2e et 3e trimestres. Dans la population de référence, l'incidence de base des anomalies congénitales chez les femmes enceintes s'élève à 2,7%. Dans le registre des grossesses sous abacavir, aucune corrélation entre l'abacavir et des anomalies congénitales n'a été observée.
+
+Des rapports prospectifs sur plus de 11'000 grossesses exposées à la lamivudine ayant mené à des naissances vivantes ont été portés au registre sur le traitement antirétroviral pendant la grossesse. Ces rapports concernent plus de 4'200 expositions pendant le 1er trimestre dont 135 étaient associées à des anomalies congénitales, et plus de 6'900 expositions pendant le 2e et le 3e trimestres dont 198 étaient associées à des anomalies congénitales. La prévalence (IC à 95%) des malformations au cours du premier trimestre était de 3,2% (2,6, 3,7%) et de 2,8% (2,4, 3,2%) au cours des 2e et 3e trimestres. Dans la population de référence, l'incidence de base des anomalies congénitales chez les femmes enceintes s'élève à 2,7%. Le registre du traitement antirétroviral pendant la grossesse ne montre aucune augmentation du risque d'anomalies congénitales graves sous lamivudine par rapport à l'incidence de base.
+
+Pharmacocinétique
+
+L'association fixe abacavir / lamivudine (FDC) s'est avérée bioéquivalente à la lamivudine et l'abacavir administrés séparément. Ce résultat a été étayé par une étude de bioéquivalence à trois volets, croisée, comparant, chez des volontaires (n = 30), l'administration d'une dose unique de l'association fixe (sujets à jeun), l'administration de 2 comprimés de 300 mg d'abacavir associés à 2 comprimés de 150 mg de lamivudine (sujets à jeun) et l'administration de l'association fixe lors d'un repas riche en graisses. A jeun, l'aire sous la courbe des concentrations plasmatiques (ASC) et les concentrations plasmatiques maximales (Cmax) de chaque substance n'ont mis en évidence aucune différence significative en terme d'absorption. De même, l'administration de l'association fixe à jeun ou avec prise de nourriture n'a pas mis en évidence d'effet cliniquement significatif de la prise de nourriture. Ces résultats indiquent que l'association fixe abacavir / lamivudine peut être administrée avec ou sans nourriture. Les propriétés pharmacocinétiques de la lamivudine et de l'abacavir sont décrites ci-après.
+
+Absorption
+
+Après administration orale, l'abacavir et la lamivudine sont bien et rapidement absorbés au niveau du tractus gastro-intestinal. Chez l'adulte, la biodisponibilité absolue après administration orale d'abacavir et de lamivudine est respectivement d'environ 83% et 80 à 85%. Le délai moyen jusqu'à l'obtention de la concentration sérique maximale tmax est respectivement d'environ 1,5 heures pour l'abacavir et 1,0 heure pour la lamivudine. Après administration d'une dose unique de 600 mg d'abacavir, la valeur moyenne de Cmax est de 4,26 µg/ml (coefficient de variation CV = 28%) et la valeur moyenne de l'ASC∞ de 11,95 µg.h/ml (CV = 21%). Après administration de doses orales multiples de 300 mg de lamivudine une fois par jour pendant sept jours, la valeur moyenne de la Cmax à l'état d'équilibre est de 2,04 µg/ml (CV = 26%) et la valeur moyenne de l'ASC 24h de 8,87 µg.h/ml (CV = 21%).
+
+Distribution
+
+Selon les études entreprises après injection intraveineuse, il est connu que le volume apparent moyen de distribution est de 0,8 l/kg pour l'abacavir et de 1,3 l/kg pour la lamivudine. Les études de liaison aux protéines plasmatiques réalisées in vitro révèlent une liaison faible à modérée de l'abacavir aux protéines plasmatiques humaines (env. 49%) pour des concentrations thérapeutiques d'abacavir. Aux doses thérapeutiques, la lamivudine présente une pharmacocinétique linéaire et, in vitro, sa liaison aux protéines plasmatiques est faible (< 36%). Ceci indique un faible risque d'interactions médicamenteuses par déplacement des sites de liaison protéique.
+
+Les données montrent que l'abacavir et la lamivudine pénètrent dans le système nerveux central (SNC) et peuvent être mis en évidence dans le liquide céphalorachidien (LCR). Les études réalisées avec l'abacavir montrent un ratio des ASC d'abacavir «LCR/plasma» entre 30 et 44%. Les pics de concentration observés étaient 9 fois supérieures aux valeurs de CI50 de l'abacavir (0,08 µg/ml ou 0,26 µM) lorsque l'abacavir a été administré à une posologie de 600 mg deux fois par jour. Deux à quatre heures après administration orale, le rapport moyen des concentrations LCR/sérum de la lamivudine est d'environ 12%. L'importance réelle de la pénétration de la lamivudine dans le SNC et sa corrélation avec une efficacité clinique ne sont pas connues.
+
+Métabolisme
+
+L'abacavir est en majeure partie métabolisé au niveau hépatique. Environ 2% de la dose administrée sont éliminés au niveau rénal sous forme inchangée. Chez l'homme, l'abacavir est principalement métabolisé par l'alcool déshydrogénase et la glucuronyl-transférase. Ceci conduit à la formation de l'acide 5'-carboxylique et du 5'-glucuronoconjugué qui représentent environ 66% de la dose administrée. Ces métabolites sont éliminés dans les urines.
+
+Dans l'élimination de la lamivudine, le métabolisme joue un rôle secondaire. La substance est essentiellement éliminée par voie rénale sous forme inchangée. Le risque d'interactions métaboliques médicamenteuses avec la lamivudine est faible en raison d'un métabolisme hépatique limité (5 à 10%).
+
+Élimination
+
+La demi-vie moyenne de l'abacavir est d'environ 1,5 heures. Après administration orale de doses répétées d'abacavir (300 mg, 2 x /jour), aucune accumulation significative d'abacavir n'a été observée. L'élimination de l'abacavir se fait par métabolisme hépatique, suivi d'une excrétion des métabolites, principalement dans les urines. Env. 83% de la dose administrée sont éliminés sous forme de différents métabolites ou d'abacavir inchangé dans les urines, le reste étant éliminé dans les fèces.
+
+La demi-vie d'élimination de la lamivudine est comprise entre 5 et 7 heures. La clairance systémique moyenne de la lamivudine est d'environ 0,32 l/h/kg, avec une élimination essentiellement rénale (> 70%), de par une sécrétion tubulaire active. Des études effectuées chez l'insuffisant rénal révèlent que l'élimination de la lamivudine est altérée lors d'un trouble de la fonction rénale. La posologie doit être réduite chez les patients ayant une clairance de la créatinine < 50 ml/min (voir «Mises en garde et précautions»).
+
+Pharmacocinétique intracellulaire
+
+Dans une étude réalisée chez 20 patients infectés par le VIH et traités par abacavir (300 mg, 2 fois / jour), la valeur de la moyenne géométrique de la demi-vie intracellulaire terminale du carbovir-TP à l'état d'équilibre, après une seule dose d'abacavir de 300 mg administrée avant la période de prélèvement de 24 heures, était de 20,6 heures, alors que dans la même étude, la demi-vie plasmatique de l'abacavir était de 2,6 heures.
+
+Les paramètres pharmacocinétiques à l'état d'équilibre de l'abacavir ont été étudiés au cours d'une étude croisée menée chez 27 patients infectés par le VIH dans laquelle la posologie de 600 mg d'abacavir administrés une fois par jour a été comparée à la posologie de 300 mg d'abacavir administrés deux fois par jour. Le taux intracellulaire de carbovir-TP au niveau des cellules mononuclées du sang périphérique était plus élevé à la posologie de 600 mg d'abacavir administrés une fois par jour qu'à la posologie de 300 mg d'abacavir administrés deux fois par jour. Les paramètres pharmacocinétiques sont résumés dans le tableau ci-dessous.
+
+|  |  |  |
+| --- | --- | --- |
+|  | GLS Mean Ratio (intervalle de confiance à 90%) | |
+| Paramètres pharmacocinétiques intracellulaires du carbovir-TP | Traitement B / traitement A (n:27/27) | Femmes / hommes (n:9/18) |
+| ASC(0-24) | 1,32 (1,07, 1,63) | 2,09 (1,69, 2,58) |
+| Cmax | 1,99 (1,61, 2,45) | NA |
+| Cτ | 1,18 (0,82, 1,71) | 2,13 (1,36, 3,35) |
+| Cmoy | 1,32 (1,07, 1,63) | 2,09 (1,69, 2,58) |
+
+ 
+
+GLS Mean Ratio: Geometric Least Square Mean Ratio (rapport des moyennes géométriques des moindres carrés)
+
+Traitement A: 300 mg d'abacavir 2 fois par jour
+
+Traitement B: 600 mg d'abacavir 1 fois par jour
+
+NA: non applicable
+
+Les comparaisons femmes / hommes sont basées sur les valeurs moyennes pour les traitements A et B obtenues à partir de valeurs enregistrées chez des patients individuels.
+
+|  |  |  |
+| --- | --- | --- |
+|  | GLS Mean Ratio (intervalle de confiance à 90%) | |
+| Paramètres pharmacocinétiques plasmatiques de l'abacavir | Traitement B / traitement A (n:27/27) | Femmes / hommes (n:9/18) |
+| ASC(0-24) | 1,08 (1,02, 1,15) | 1,60 (1,24, 2,05) |
+| ASC(0-24) ajustée en fonction du poids | 1,08 (1,02, 1,15) | 1,38 (1,05, 1,82) |
+| Cmax | 2,09 (1,88, 2,32) | NA |
+| Cτ | 0,374 (0,283, 0,494) | 1,84 (0,93, 3,64) |
+| Cmoy | 1,08 (1,02, 1,15) | 1,60 (1,24, 2,05) |
+
+ 
+
+GLS Mean Ratio: Geometric Least Square Mean Ratio (rapport des moyennes géométriques des moindres carrés)
+
+Traitement A: 300 mg d'abacavir 2 fois par jour
+
+Traitement B: 600 mg d'abacavir 1 fois par jour
+
+L'ASC(0-24) ajustée en fonction du poids est calculée de la manière suivante: ASC(0-24) \* poids (kg)/70 kg
+
+NA: non applicable
+
+Les comparaisons femmes / hommes sont basées sur les valeurs moyennes pour les traitements A et B obtenues à partir de valeurs enregistrées chez des patients individuels.
+
+Dans cette étude, les effets indésirables gastro-intestinaux étaient deux fois plus fréquents à la posologie de 600 mg d'abacavir administrés une fois jour qu'à la posologie de 300 mg d'abacavir administrés deux fois jour.
+
+Pour les patients traités par la lamivudine (300 mg une fois / jour), la demi-vie intracellulaire terminale de la lamivudine-TP était prolongée jusqu'à 16 à 19 heures, alors que la demi-vie plasmatique de la lamivudine était de 5 à 7 heures.
+
+Dans une étude croisée réalisée chez 60 volontaires sains, les paramètres pharmacocinétiques de la lamivudine-TP intracellulaire étaient similaires (ASC24h à l'état d'équilibre et Cmax24h à l'état d'équilibre) ou inférieurs (-24% pour la Crésiduelle) à la posologie de 300 mg de lamivudine administrés une fois par jour pendant 7 jours comparé à la posologie de 150 mg de lamivudine administrés deux fois par jour pendant 7 jours. La variabilité entre les sujets était plus importante pour les concentrations intracellulaires de lamivudine-TP que pour les concentrations plasmatiques minimales. Ces données corroborent l'emploi de la lamivudine (300 mg) et de l'abacavir (600 mg), administrés une fois par jour pour le traitement des patients infectés par le VIH. De plus, l'efficacité et la sécurité de cette association, administrée une fois par jour, a été démontrée dans une étude clinique pivot (CNA30021 – voir « Expérience clinique»).
+
+Cinétique pour certains groupes de patients
+
+Enfants et adolescents
+
+Les données pharmacocinétiques concernant l'utilisation de Kivexa chez les patients pédiatriques pesant au moins 25 kg sont limitées. Les recommandations posologiques pour cette population reposent essentiellement sur les données de sécurité et d'efficacité obtenues dans une étude contrôlée dans laquelle les patients ont reçu soit Kivexa, soit une association de 3TC et Ziagen. Pour les informations concernant la pharmacocinétique des monosubstances chez les patients pédiatriques, veuillez consulter les informations professionnelles de 3TC et de Ziagen (voir «Posologie/Mode d'emploi», «Effets indésirables», «Expérience clinique»).
+
+Troubles de la fonction hépatique
+
+Aucune donnée n'est disponible sur l'emploi de Kivexa chez les patients présentant des troubles de la fonction hépatique. Des données pharmacocinétiques ne sont disponibles que pour l'abacavir et la lamivudine administrés séparément.
+
+Les données obtenues chez les patients souffrant d'une insuffisance hépatique modérée à sévère montrent que la pharmacocinétique de la lamivudine n'est pas significativement affectée par une altération de la fonction hépatique.
+
+L'abacavir est principalement métabolisé par le foie. La pharmacocinétique de l'abacavir a été étudiée chez les patients présentant une insuffisance hépatique légère (score de Child-Pugh de 5-6), recevant une dose unique de 600 mg. Les résultats ont révélé une augmentation moyenne de l'ASC et de la demi-vie de l'élimination de l'abacavir respectivement d'un facteur 1,89 [1,32; 2,70] et 1,58 [1,22; 2,04]. En raison de la forte variabilité de la disponibilité plasmatique en abacavir, aucune recommandation de réduction posologique ne peut être émise pour les patients souffrant d'une insuffisance hépatique légère (voir « Posologie/Mode d'emploi », «Contre-indications» et «Mises en garde et précautions »).
+
+Troubles de la fonction rénale
+
+Des données pharmacocinétiques ne sont disponibles que pour l'abacavir et la lamivudine administrés séparément. L'abacavir est essentiellement métabolisé par le foie, env. 2% de la dose administrée étant éliminés sous forme inchangée dans les urines. La pharmacocinétique de l'abacavir chez les patients au stade terminal d'insuffisance rénale est similaire à celle des patients ayant une fonction rénale normale. Des études réalisées avec la lamivudine révèlent une augmentation des concentrations plasmatiques (ASC) chez les patients souffrant d'une insuffisance rénale du fait d'une diminution de la clairance. Une réduction de la posologie est nécessaire chez les patients ayant une clairance de la créatinine < 50 ml/min.
+
+Patients âgés
+
+La pharmacocinétique n'a pas été étudiée chez les patients de plus de 65 ans.
+
+Sexe
+
+Dans une étude croisée menée chez 27 patients infectés par le VIH et portant sur les paramètres pharmacocinétiques à l'état d'équilibre de l'abacavir à la posologie de 600 mg d'abacavir administrés une fois par jour par rapport à la posologie de 300 mg d'abacavir administrés deux fois par jour, les taux intracellulaires de carbovir-TP et les concentrations plasmatiques d'abacavir étaient plus élevés chez les femmes que chez les hommes. L'ASC(0-24) des concentrations plasmatiques d'abacavir et l'ASC(0-24) ajustée en fonction du poids étaient respectivement 60% et 38% plus élevées chez les femmes que chez les hommes (voir sous «Pharmacocinétique intracellulaire»).
+
+Données précliniques
+
+A l'exception des résultats négatifs d'un test du micronucléus réalisé in vivo chez le rat, on ne dispose d'aucune donnée sur les effets de l'association abacavir / lamivudine chez l'animal.
+
+Mutagénicité
+
+L'abacavir et la lamivudine ne se sont pas avérés mutagènes dans les tests bactériologiques. Cependant, comme avec bien d'autres analogues nucléosidiques, une activité mutagène dans les tests in vitro a été observée chez les mammifères, tels que dans le test du lymphome de souris. Ces résultats correspondent à l'activité connue pour d'autres analogues nucléosidiques. Les résultats d'un test du micronucléus réalisé in vivo chez le rat avec l'association abacavir / lamivudine se sont avérés négatifs.
+
+La lamivudine n'a déployé aucune activité génotoxique dans les études in vivo aux posologies permettant d'obtenir des concentrations plasmatiques 30 à 40 fois supérieures à celles pouvant être atteintes chez l'homme. L'abacavir présente un faible potentiel d'induction d'aberrations chromosomiques, tant in vitro que in vivo, pour les plus fortes concentrations testées.
+
+Carcinogénicité
+
+Le potentiel carcinogène de l'association abacavir / lamivudine n'a pas été étudié. Dans des études de carcinogénicité à long terme, réalisées chez le rat et la souris après administration orale de lamivudine, aucun potentiel carcinogène n'a été mis en évidence. Les études de carcinogénicité, effectuées après administration d'abacavir par voie orale, chez le rat et la souris, ont révélé une augmentation de l'incidence des tumeurs bénignes et malignes. Les tumeurs malignes ont été observées au niveau des glandes préputiales (mâles) et clitoridiennes (femelles) des deux espèces, de la glande thyroïde des rats mâles, ainsi qu'au niveau du foie, de la vessie, des ganglions lymphatiques et du tissu sous-cutané des rats femelles.
+
+La majorité de ces tumeurs est apparue aux plus fortes doses d'abacavir administrées (330 mg/kg/jour chez la souris et 600 mg/kg/jour chez le rat), à l'exception de la tumeur de la glande préputiale, qui est survenue à une dose de 110 mg/kg chez la souris. L'exposition systémique, réalisée à la dose sans effet chez la souris et le rat, était équivalente à respectivement 3 et 7 fois l'exposition observée chez l'homme au cours du traitement. Bien que le potentiel carcinogène chez l'homme soit inconnu, ces données suggèrent que le bénéfice clinique escompté est supérieur au risque carcinogène.
+
+Toxicité en cas d'administration répétée
+
+Au cours d'études toxicologiques, une augmentation du poids du foie a été observée chez le rat et le singe après administration d'abacavir. La pertinence clinique de ces observations est inconnue. Des études cliniques n'ont fourni aucun indice évoquant une hépatotoxicité de l'abacavir. De plus, une auto-induction du métabolisme de l'abacavir ou une induction du métabolisme d'autres médicaments métabolisés au niveau hépatique n'a pas été observée chez l'homme.
+
+Chez la souris et le rat, une légère dégénérescence myocardique a été observée après administration d'abacavir pendant deux ans. L'exposition systémique était équivalente à 7 à 24 fois l'exposition systémique escomptée chez l'homme. La pertinence clinique de ces résultats n'est pas connue.
+
+Toxicité sur la reproduction
+
+Les études de toxicité sur la reproduction réalisées chez l'animal ont révélé que la lamivudine et l'abacavir franchissent le placenta.
+
+Aucun signe de tératogénicité n'est apparu lors des études réalisées chez l'animal avec la lamivudine. Cependant, des observations indiquent une augmentation de la létalité embryonnaire précoce chez la lapine suite à une exposition systémique relativement faible, comparable à celle obtenue chez l'homme. Un effet similaire n'a pas été observé chez le rat, même après une exposition systémique très élevée.
+
+Une toxicité de l'abacavir sur le développement embryonnaire et fœtal a été observée chez le rat, mais pas chez le lapin. Ces résultats incluaient une diminution du poids des fœtus, des œdèmes fœtaux ainsi qu'une augmentation des malformations squelettiques, une augmentation des morts in utero précoces et des mort-nés. Au vu de cette toxicité embryo-fœtale, aucune conclusion ne peut être tirée quant au potentiel tératogène de l'abacavir.
+
+Une étude de fertilité entreprise chez le rat a révélé que l'abacavir et la lamivudine n'ont pas d'effet sur la fertilité des animaux mâles ou femelles.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Ne pas conserver au-dessus de 30°C. Conserver dans l'emballage d'origine et hors de portée des enfants.
+
+Numéro d’autorisation
+
+Numéro d'autorisation (Original)
+
+56977 (Swissmedic).
+
+Numéro d'autorisation (Importateur)
+
+68251 (Swissmedic) (Belgique).
+
+68455 (Swissmedic) (France).
+
+68253 (Swissmedic) (Lituanie).
+
+Présentation
+
+30 comprimés pelliculés, (A).
+
+Titulaire de l’autorisation
+
+Titulaire de l'autorisation (Original)
+
+ViiV Healthcare GmbH, 3053 Münchenbuchsee
+
+Titulaire de l'autorisation (Importateur)
+
+APS-Arzneimittel-Parallelimport-Service AG, 6330 Cham.
+
+Mise à jour de l’information
+
+Août 2020

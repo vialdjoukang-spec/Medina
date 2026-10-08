@@ -1,0 +1,911 @@
+---
+titre: "Rivaroxaban Viatris"
+titulaire: "Viatris Pharma GmbH"
+atc: B01AF01
+substances: "Rivaroxabanum"
+autorisation_swissmedic: 69319
+date_version: 2025-05-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/5ad8c5722b144a81aad42bf73166193d-fr.html
+---
+
+Rivaroxaban Viatris
+
+Viatris Pharma GmbH
+
+Composition
+
+Principes actifs
+
+Rivaroxabanum.
+
+Excipients
+
+Noyau du comprimé
+
+Cellulosum microcristallinum, lactosum monohydricum, carmellosum natricum conexum, hypromellosum, natrii laurilsulfas, magnesii stearas.
+
+Enrobage du comprimé
+
+Poly(alcohol vinylicus), macrogolum 3350, talcum, titanii dioxidum (E171), ferri oxidum rubrum (E172).
+
+Un comprimé pelliculé de 10 mg contient 20,250 mg de lactose monohydraté et 0,227 mg de sodium.
+
+Un comprimé pelliculé de 15 mg contient 30,375 mg de lactose monohydraté et 0,340 mg de sodium.
+
+Un comprimé pelliculé de 20 mg contient 40,500 mg de lactose monohydraté et 0,454 mg de sodium.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimés pelliculés à 10 mg de rivaroxaban.
+
+Comprimés pelliculés à 15 mg de rivaroxaban.
+
+Comprimés pelliculés à 20 mg de rivaroxaban.
+
+Indications/Possibilités d’emploi
+
+·Prévention des thromboses en cas d'interventions orthopédiques majeures des extrémités inférieures telles que prothèse de la hanche ou du genou.
+
+·Traitement des thromboses veineuses profondes (TVP) et des embolies pulmonaires (EP) ainsi que prévention des récidives de TVP et d'embolie pulmonaire.
+
+·Prévention de l'accident vasculaire cérébral et de l'embolie systémique en présence de fibrillation auriculaire non valvulaire.
+
+Posologie/Mode d’emploi
+
+Les comprimés de Rivaroxaban Viatris doivent être pris avec de l'eau.
+
+Rivaroxaban Viatris 10 mg peut être pris avec ou en dehors des repas.
+
+Afin d'améliorer la biodisponibilité, Rivaroxaban Viatris 15 mg et Rivaroxaban Viatris 20 mg doivent être pris avec un repas.
+
+Comprimés broyés
+
+Les patients qui ne sont pas aptes à avaler des comprimés entiers peuvent broyer les comprimés immédiatement avant la prise et les prendre par voie orale avec de l'eau ou un mets visqueux (comme p.ex. compote de pommes). Lors de la prise de comprimés pelliculés de 15 mg ou 20 mg de Rivaroxaban Viatris sous forme broyée, le patient doit immédiatement manger quelque chose après la prise.
+
+Sondes gastriques
+
+Les comprimés broyés de Rivaroxaban Viatris peuvent également être administrés par des sondes gastriques (voir rubrique «Pharmacocinétique»). Le comprimé broyé de Rivaroxaban Viatris devra être pris avec un peu d'eau par la sonde, puis il faut procéder à un rinçage avec de l'eau. Immédiatement après l'administration d'un comprimé broyé de Rivaroxaban Viatris 15 mg ou 20 mg par sonde gastrique, des aliments devraient être administrés par voie entérale (voir rubrique «Remarques particulières/Remarques concernant la manipulation»).
+
+Patients adultes
+
+Tableau 1: Aperçu de la posologie pour les adultes
+
+Des informations plus détaillées sur chaque indication figurent à la fin de ce tableau à la rubrique «Instructions posologiques particulières».
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Indication | Situation | Posologie | Recommandation |
+| Thromboprophylaxie en cas d'interventions orthopédiques majeures |  | 10 mg une fois par jour | La dose initiale doit être prise 6 à 10 heures après l'intervention chirurgicale à condition qu'une hémostase locale ait pu être obtenue.  Le traitement sera poursuivi en fonction du risque de thromboembolie individuel.  ·Chez les patients subissant une chirurgie majeure de la hanche, une durée de traitement de 5 semaines est recommandée.  ·Chez les patients subissant une chirurgie majeure du genou, une durée de traitement de 2 semaines est recommandée. |
+| Traitement des TVP et des EP | Jour 1 à 21 | 15 mg deux fois par jour | Le schéma posologique indiqué doit absolument être respecté. |
+| Traitement ultérieur et prophylaxie des récidives de TVP et d'EP | À partir du jour 22 | 20 mg une fois par jour | Le traitement doit être poursuivi tant que le risque de thromboembolie veineuse (TEV) persiste. |
+| Après une durée de traitement d'au moins 6 mois | 10 mg ou 20 mg une fois par jour | Le traitement doit être poursuivi tant que le risque de thromboembolie veineuse (TEV) persiste.  Posologie et durée du traitement sur la base d'une évaluation du risque individuel. |
+| Prophylaxie de l'accident vasculaire cérébral et de l'embolie systémique en présence de fibrillation auriculaire non valvulaire | Clairance de la créatinine ≥50 ml/min | 20 mg une fois par jour (posologie maximale recommandée) | Le traitement doit être poursuivi tant que les facteurs de risque d'accident vasculaire cérébral et d'embolie systémique persistent. |
+| Clairance de la créatinine de 30 à 49 ml/min | 15 mg une fois par jour | Voir rubrique «Instructions posologiques particulières». |
+| Clairance de la créatinine de 15 à 29 ml/min | En cas d'insuffisance rénale sévère (clairance de la créatinine de 15 à 29 ml/min), la prudence est de rigueur, car dans ce cas les données cliniques sont limitées.  Voir rubrique «Instructions posologiques particulières». |
+
+ 
+
+Durée de traitement et posologie en cas de thromboses veineuses profondes (TVP) et d'embolies pulmonaires (EP) et pour la prophylaxie des récidives de TVP et d'embolie pulmonaire (EP) chez les adultes (indications posologiques dans le tableau 1)
+
+La durée du traitement doit être adaptée aux directives générales. La durée recommandée de l'anticoagulation est de 3 mois après un premier événement de thrombose veineuse ou d'embolie pulmonaire et en présence d'un facteur de risque transitoire, tel qu'une intervention chirurgicale ou en cas de genèse idiopathique et d'événement distal. En cas de genèse idiopathique et d'événement proximal, le traitement est habituellement de 6 mois. À ce moment-là, il convient de réévaluer les bénéfices par rapport aux risques avant de poursuivre le traitement.
+
+Si le traitement de la TVP ou de l'EP est poursuivi au-delà de 6 mois, Rivaroxaban Viatris 20 mg doit être prescrit une fois par jour chez les patients chez lesquels le risque de TVP ou d'EP récidivante est évalué comme étant élevé. Chez les patients présentant un risque faible de récidive de TVP ou d'EP, l'administration de Rivaroxaban Viatris 10 mg une fois par jour ou de Rivaroxaban Viatris 20 mg une fois par jour peut être envisagée sur la base d'une évaluation soigneuse du risque individuel de TVP ou d'EP récidivante par rapport au risque hémorragique (voir également rubrique «Propriétés/Effets»).
+
+Prophylaxie de l'accident vasculaire cérébral et de l'embolie systémique en présence de fibrillation auriculaire non valvulaire (indications posologiques dans le tableau 1)
+
+Patients qui doivent subir une cardioversion
+
+Chez les patients chez lesquels une cardioversion pourrait être nécessaire, le traitement par Rivaroxaban Viatris peut être instauré ou poursuivi.
+
+Lorsque la stratégie de cardioversion repose sur une échocardiographie transœsophagienne (ETO), le traitement par Rivaroxaban Viatris doit être instauré au plus tard 4 heures avant la cardioversion chez les patients naïfs de traitement par anticoagulants jusqu'à présent afin d'assurer une anticoagulation adéquate (voir rubrique «Pharmacodynamie» et «Pharmacocinétique»).
+
+Patients qui en raison d'une angioplastie coronaire avec la pose d'un stent sont traités en complément avec un inhibiteur de P2Y12
+
+Afin de contrôler le risque hémorragique, une réduction de la dose de Rivaroxaban Viatris à 15 mg une fois par jour (10 mg une fois par jour en cas d'altération modérée de la fonction rénale [clairance de la créatinine de 30 à 49 ml/min]) peut être envisagée pendant la durée du traitement complémentaire par un inhibiteur de P2Y12. Dans ce cas, il faut évaluer la diminution escomptée du risque hémorragique par rapport au risque de thromboembolie du patient (voir rubriques «Mises en garde et précautions» et «Efficacité clinique»).
+
+Instructions posologiques particulières
+
+Patients âgés (>65 ans)
+
+Aucun ajustement posologique n'est nécessaire.
+
+Poids corporel
+
+Aucun ajustement posologique n'est nécessaire.
+
+Sexe
+
+Aucun ajustement posologique n'est nécessaire.
+
+Patients présentant des troubles de la fonction hépatique
+
+Chez les patients présentant une insuffisance hépatique légère et modérée (Child Pugh A et B) et des paramètres de coagulation normaux, il n'est pas nécessaire d'ajuster la posologie. Il faut toutefois contrôler régulièrement la coagulation plasmatique en fonction de la situation clinique (voir également la rubrique «Pharmacodynamie»). Chez tous les patients atteints d'affections hépatiques associées à une coagulopathie, le risque hémorragique est majoré et le traitement par Rivaroxaban Viatris contre-indiqué.
+
+Aucun ajustement posologique n'est nécessaire chez les patients présentant d'autres affections hépatiques sans coagulopathie.
+
+Patients présentant des troubles de la fonction rénale
+
+En cas d'insuffisance rénale légère (clairance de la créatinine de 50 à 80 ml/min), un ajustement posologique n'est pas nécessaire. Toutefois, chez les patients traités simultanément par d'autres médicaments qui augmentent les concentrations plasmatiques du rivaroxaban (voir rubrique «Interactions»), Rivaroxaban Viatris doit être administré avec prudence.
+
+En cas d'insuffisance rénale modérée (clairance de la créatinine de 30 à 49 ml/min), un ajustement posologique est nécessaire chez les patients présentant une fibrillation auriculaire non valvulaire. Dans ce cas, la dose recommandée est de 15 mg de Rivaroxaban Viatris une fois par jour (voir rubrique «Posologie/Mode d'emploi»).
+
+En cas d'insuffisance rénale sévère (clairance de la créatinine de 15-29 ml/min), la prudence est de rigueur car dans ce cas les données cliniques sont limitées. Ces patients ont montré une concentration plasmatique de rivaroxaban significativement augmentée (en moyenne de 1,6 fois). Dès le début du traitement, ils doivent être surveillés étroitement sur la présence de signes et symptômes de complications hémorragiques et d'anémie et leur coagulation plasmatique doit être contrôlée. Du fait de leur maladie sous-jacente, ces patients présentent un risque accru non seulement d'hémorragie, mais aussi de thrombose.
+
+Il faut rechercher l'origine de chaque chute inexpliquée de l'hémoglobine ou de la tension artérielle.
+
+Des études chez des patients insuffisants rénaux et dialysés (clairance de la créatinine <15 ml/min) n'ont pas été réalisées à ce jour. C'est pourquoi Rivaroxaban Viatris ne doit pas être utilisé chez ces patients (voir rubrique «Contre-indications»).
+
+Enfants et adolescents
+
+Rivaroxaban Viatris n'est pas autorisé pour l'utilisation chez la population pédiatrique, car la sécurité l'efficacité n'ont pas encore été étudiées chez ces patients.
+
+Informations plus détaillées sur la posologie/mode d'emploi
+
+Prise retardée/vomissements
+
+En cas d'oubli d'une dose, le patient doit prendre Rivaroxaban Viatris immédiatement, mais uniquement si ceci est possible le même jour. Dans le cas contraire, le patient ne doit pas prendre la dose et doit poursuivre le traitement recommandé normalement dès le lendemain. Le patient ne doit pas prendre deux doses le même jour pour compenser une dose oubliée.
+
+Si le patient vomit le comprimé de Rivaroxaban Viatris dans les 30 minutes qui suivent la prise, une nouvelle dose doit être prise. En cas de vomissements plus de 30 minutes après la prise, la dose ne doit pas être à nouveau prise et le traitement doit être poursuivi comme d'habitude au moment prévu pour la prise suivante.
+
+Passage d'anticoagulants administrés par voie parentérale à Rivaroxaban Viatris
+
+Chez les patients momentanément traités par des anticoagulants par voie parentérale, le traitement par Rivaroxaban Viatris doit être initié 0 à 2 heures avant le moment de la prochaine administration planifiée du médicament parentéral (p.ex. HBPM) ou au moment de l'arrêt d'une perfusion d'héparine.
+
+Passage de Rivaroxaban Viatris à des anticoagulants administrés par voie parentérale
+
+La première dose de l'anticoagulant parentéral doit être administrée au moment où la dose suivante de Rivaroxaban Viatris devrait être prise.
+
+Passage d'antagonistes de la vitamine K (AVK) à Rivaroxaban Viatris
+
+Le traitement par AVK est arrêté. Si l'INR ≤2,5, le traitement par Rivaroxaban Viatris peut être initié.
+
+Après le passage d'AVK à Rivaroxaban Viatris, les INR seront faussement élevées après la prise de Rivaroxaban Viatris. L'INR doit donc être déterminée avant la prise de Rivaroxaban Viatris.
+
+Passage de Rivaroxaban Viatris à des antagonistes de la vitamine K (AVK)
+
+Une anticoagulation inadéquate est possible pendant le passage de Rivaroxaban Viatris à AVK. Une anticoagulation continue adéquate doit être assurée lors de chaque transition à un anticoagulant alternatif. Il faut tenir compte du fait que Rivaroxaban Viatris peut contribuer à une augmentation de l'INR. Chez les patients chez lesquels Rivaroxaban Viatris est remplacé par un AVK, l'AVK doit être administré simultanément jusqu'à une INR ≥2,0. Pendant les deux premiers jours de la transition, il faut utiliser la dose initiale habituelle de l'AVK suivie de l'AVK à dose ajustée en fonction des INR. Chez les patients traités simultanément par Rivaroxaban Viatris et AVK, la mesure de l'INR ne doit pas être réalisée moins de 24 heures après la prise précédente de Rivaroxaban Viatris, toutefois avant la prise suivante. Dès l'arrêt du traitement par Rivaroxaban Viatris, une mesure de l'INR fiable peut être effectuée à tout moment à condition que la dernière prise remonte à au moins 24 heures.
+
+Contre-indications
+
+Rivaroxaban Viatris est contre-indiqué en cas de:
+
+·hypersensibilité au principe actif ou à l'un des excipients en fonction de la composition.
+
+·endocardite aiguë d'origine bactérienne.
+
+·saignement évolutif cliniquement significatif.
+
+·ulcère gastro-intestinal aigu ou maladies gastro-intestinales ulcéreuses.
+
+·hépatopathie grave et insuffisance hépatique sévère associées à un risque hémorragique significativement majoré et insuffisance hépatique légère à modérée associée à une coagulopathie.
+
+·insuffisance rénale nécessitant une dialyse.
+
+·grossesse et allaitement (voir la rubrique correspondante).
+
+Mises en garde et précautions
+
+Risque hémorragique
+
+Comme d'autres anticoagulants, Rivaroxaban Viatris devrait être utilisé avec prudence chez les patients présentant un risque hémorragique majoré. Il faut procéder à une évaluation soigneuse du rapport bénéfice/risque individuel avant le traitement en cas de:
+
+·situations avec une augmentation du risque d'hémorragies incontrôlées (hémorragie intracrânienne, hémorragies gastro-intestinales).
+
+·accident cérébral hémorragique récent, hémorragies intracrâniennes ou intracérébrales sans saignement évolutif cliniquement significatif.
+
+·ulcère gastro-intestinal récent/maladie gastro-intestinale ulcéreuse récente.
+
+·diathèse hémorragique congénitale ou acquise.
+
+·hypertension artérielle grave non contrôlée.
+
+·rétinopathie vasculaire.
+
+·anomalies vasculaires intrarachidiennes ou intracérébrales.
+
+·interventions chirurgicales cérébrales, spinales ou oculaires récentes.
+
+·antécédents de bronchectasie ou d'hémorragie pulmonaire.
+
+Des hémorragies au cours du traitement antithrombotique peuvent être un indice de cancer non diagnostiqué, en particulier, de cancer gastro-intestinal ou urogénital. Les patients atteints d'un cancer actif peuvent présenter simultanément un risque majoré de thrombose et d'hémorragie. Le bénéfice individuel du traitement antithrombotique par le rivaroxaban doit être évalué par rapport au risque d'hémorragie chez ces patients, en fonction de la localisation de la tumeur, du traitement antinéoplasique et du stade de la maladie.
+
+Chez les patients présentant un risque hémorragique majoré tel p.ex. une hypertension artérielle grave non contrôlée, une insuffisance rénale sévère, un traitement systémique concomitant par des antifongiques azolés ou des inhibiteurs de la protéase du VIH et traités simultanément par des médicaments influençant la coagulation ou après passage à ces médicaments, il faut être attentif, après le début du traitement, à des signes de complications hémorragiques. La coagulation plasmatique doit être contrôlée pendant le traitement, si possible. Sous le traitement par Rivaroxaban Viatris, la possibilité d'une hémorragie doit être envisagée lors de l'évaluation de tous les patients et l'origine probable doit être recherchée lors de chaque chute inexpliquée de l'hémoglobine ou de la tension artérielle.
+
+Interactions avec d'autres médicaments (voir également rubrique «Interactions»)
+
+La prudence est de mise chez les patients traités en même temps avec des médicaments influençant la coagulation sanguine, comme les anti-inflammatoires non stéroïdiens (AINS), l'acide acétylsalicylique, les inhibiteurs de l'agrégation plaquettaire, d'autres anticoagulants ou les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS) et les inhibiteurs sélectifs de la recapture de sérotonine et noradrénaline (IRSN). Chez les patients présentant un risque de maladie gastro-intestinale ulcéreuse, un traitement prophylactique adapté peut être envisagé (voir la rubrique «Interactions»).
+
+Pour le contrôle des effets pharmacodynamiques du rivaroxaban, utiliser l'activité de l'anti-facteur Xa et le TP.
+
+Patients présentant un syndrome des antiphospholipides
+
+Les anticoagulants oraux à action directe, dont le rivaroxaban, ne sont pas recommandés chez les patients ayant des antécédents thrombotiques auxquels on a diagnostiqué un syndrome des antiphospholipides. Comparé à un traitement par antagonistes de la vitamine K, un traitement par des anticoagulants oraux à action directe pourrait être associé à un taux accru d'événements thrombotiques récurrents, notamment chez les patients triplement positifs (anticoagulant du lupus, anticorps anticardiolipine et anticorps anti-bêta 2-glycoprotéine I).
+
+Troubles de la fonction rénale
+
+Rivaroxaban Viatris doit être utilisé avec prudence chez les patients présentant un trouble modéré de la fonction rénale (clairance de la créatinine de 30 à 49 ml/min) et recevant simultanément d'autres médicaments qui entraînent une élévation des concentrations plasmatiques de rivaroxaban (voir rubrique «Interactions»).
+
+Agranulocytose
+
+Après l'autorisation de mise sur le marché, des cas isolés d'agranulocytose ont été rapportés sous le traitement par Rivaroxaban Viatris. Les patients doivent être priés d'informer leur médecin si d'éventuels symptômes (ulcères des muqueuses, p.ex. de la muqueuse buccale, fièvre élevée et troubles de la déglutition sévères (angine)) de cet effet indésirable sévère surviennent. En cas de suspicion justifiée, des investigations plus approfondies (e.a. contrôle de l'hémogramme) doivent être réalisées et des mesures adéquates (e.a. arrêt de Rivaroxaban Viatris et des autres médicaments potentiellement déclencheurs, surveillance du patient) doivent être instaurées.
+
+Réactions dermatologiques
+
+Après l'autorisation de mise sur le marché, des cas isolés de réactions cutanées sévères, y compris syndrome de Stevens-Johnson, nécrolyse épidermique toxique (NET) et syndrome DRESS, ont été rapportés sous le traitement par rivaroxaban. Les patients doivent être priés d'informer leur médecin si d'éventuels symptômes (p.ex. éruption cutanée s'aggravant de plus en plus et accompagnée de vésicules et d'ulcères des muqueuses, p.ex. muqueuse buccale) de cette réaction cutanée sévère surviennent. En cas de suspicion justifiée, des investigations plus approfondies doivent être réalisées et des mesures adéquates (e.a. arrêt de Rivaroxaban Viatris et des autres médicaments potentiellement déclencheurs) doivent être instaurées.
+
+Fractures de la hanche
+
+Il n'existe pas de résultats d'études cliniques interventionnelles portant sur l'utilisation de rivaroxaban en cas de fractures de la hanche.
+
+Patients porteurs de valves cardiaques artificielles
+
+Rivaroxaban Viatris ne doit pas être utilisé dans le cadre d'une thromboprophylaxie après un remplacement valvulaire aortique transcathéter (TAVI). Une étude clinique contrôlée réalisée chez des patients ayant subi un TAVI et traités par Rivaroxaban Viatris 10 mg une fois par jour, en comparaison avec un traitement antiagrégant plaquettaire, a mis en évidence une augmentation de la mortalité, un risque hémorragique majoré et un plus grand nombre de complications thromboemboliques. Il n'y a pas de données qui prouvent la sécurité et l'efficacité du rivaroxaban chez des patients porteurs d'autres prothèses valvulaires cardiaques. L'utilisation de Rivaroxaban Viatris n'est donc en principe pas recommandée chez les patients porteurs de valves artificielles.
+
+Il n'existe aucune expérience pour l'utilisation de rivaroxaban chez les patients présentant des fibrillations auriculaires avec attaque ischémique récente (<14 jours après l'attaque, <3 jours après un accident ischémique transitoire). C'est pourquoi Rivaroxaban Viatris ne doit pas être utilisé dans ces cas.
+
+Recommandations posologiques avant et après interventions invasives et chirurgicales
+
+En cas d'intervention invasive ou chirurgicale, Rivaroxaban Viatris doit être arrêté au moins 24 heures avant l'intervention. En raison du lien entre la demi-vie du rivaroxaban d'une part et l'âge ainsi que la fonction rénale d'autre part (voir la rubrique «Pharmacocinétique/Métabolisme» et «Pharmacocinétique/Cinétique pour certains groupes de patients»), ce délai peut être prolongé. En cas d'urgence, il faut peser le risque accru d'hémorragie contre la nécessité de l'intervention.
+
+Le traitement par Rivaroxaban Viatris devrait être poursuivi le plus vite possible après l'intervention invasive ou chirurgicale si la situation clinique le permet et si une hémostase appropriée est assurée (voir rubrique «Pharmacocinétique»).
+
+Anesthésie péridurale/rachidienne
+
+En cas d'anesthésies neuraxiales (anesthésie rachidienne/péridurale) ou de ponction lombaire/péridurale chez les patients traités par des anticoagulants, le risque d'apparition d'un hématome péridural/rachidien est majoré. Ces hématomes peuvent provoquer une paralysie prolongée ou permanente. Ce risque peut être majoré par l'utilisation postopératoire de cathéters périduraux à demeure ou par l'utilisation concomitante de médicaments adjuvants modifiant l'hémostase. Le risque peut également être augmenté en cas de ponctions répétées ou traumatisantes. Le cas échéant, les patients doivent faire l'objet d'une surveillance fréquente avec recherche de signes et symptômes d'atteinte neurologique (p.ex. engourdissement ou faiblesse des jambes, dysfonctionnement des intestins ou de la vessie). Si des troubles neurologiques sont relevés, il est nécessaire de réaliser un diagnostic et un traitement de toute urgence. Avant toute intervention cérébrospinale, le médecin devra évaluer les bénéfices potentiels ainsi que le risque encouru chez les patients sous anticoagulants ou chez les patients devant être éventuellement placés sous anticoagulants.
+
+Afin de réduire le risque d'hémorragie potentiel lié à l'utilisation concomitante de rivaroxaban et l'anesthésie cérébrospinale (épidurale/spinale) ou la ponction spinale, le profil pharmacocinétique du rivaroxaban doit être pris en considération. La mise en place ou le retrait d'un cathéter épidural ou une ponction lombaire seront effectués de préférence au moment où l'effet anticoagulatoire du rivaroxaban est évalué comme étant faible.
+
+Sur base des propriétés PC générales, le retrait d'un cathéter épidural doit avoir lieu au plus tôt deux demi-vies, c.-à-d. chez les jeunes patients au plus tôt 18 heures et chez les patients âgés au plus tôt 26 heures, après la dernière prise de rivaroxaban. La dose suivante de rivaroxaban doit être prise au plus tôt 6 heures après le retrait du cathéter.
+
+En cas de ponction traumatisante, la prise de Rivaroxaban Viatris doit être retardée de 24 heures.
+
+Patients atteints d'une fibrillation auriculaire non valvulaire, qui en raison d'une angioplastie coronaire avec la pose d'un stent sont traités en complément avec un inhibiteur de P2Y12
+
+Les patients atteints d'une fibrillation auriculaire non valvulaire, qui en raison d'une angioplastie coronaire avec la pose d'un stent sont traités en complément du rivaroxaban avec un antagoniste de P2Y12 présentent un risque hémorragique majoré. Afin de gérer ce risque, une réduction posologique de Rivaroxaban Viatris peut être envisagée (voir rubrique «Instructions posologiques particulières»). Une étude interventionnelle ayant pour objectif primaire l'évaluation du risque hémorragique a fourni des données cliniques limitées sur l'efficacité et la sécurité d'une posologie réduite de rivaroxaban 15 mg administré une fois par jour (voir rubrique «Efficacité clinique»). L'étude ne permet toutefois pas une évaluation définitive du rapport bénéfice/risque d'un tel ajustement posologique. Les risques d'hémorragie et de thromboembolie doivent être évalués individuellement.
+
+Patients atteints d'embolie pulmonaire hémodynamiquement instables ou patients soumis à une thrombolyse ou à une embolectomie pulmonaire
+
+L'emploi de Rivaroxaban Viatris à titre de solution de remplacement pour de l'héparine non fractionnée n'est pas recommandé chez les patients atteints d'une embolie pulmonaire hémodynamiquement instable ou des patients soumis à une thrombolyse ou à une embolectomie pulmonaire. La sécurité et l'efficacité de rivaroxaban chez des patients dans ces situations n'ont pas fait l'objet d'études.
+
+Excipients
+
+Les comprimés pelliculés de Rivaroxaban Viatris contiennent, selon le dosage, 20,250 à 40,500 mg de lactose. Les patients présentant une rare intolérance héréditaire au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose ne doivent pas prendre ce médicament.
+
+Ce médicament contient moins de 1 mmol de sodium (23 mg) par comprimé pelliculé, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Interactions
+
+Interactions pharmacocinétiques
+
+Le rivaroxaban est métabolisé par le biais du CYP3A4, CYP2J2 et de mécanismes indépendants du CYP. Des études in vitro montrent en outre que le rivaroxaban est un substrat des protéines de transport P-gp (P-glycoprotéine) et Bcrp (breast cancer resistance protein).
+
+Le rivaroxaban n'a pas d'effet inhibiteur ou inducteur sur les isoformes principales du CYP, tels que le CYP3A4.
+
+Inhibiteurs enzymatiques
+
+Données in vivo
+
+Inhibiteurs du CYP3A4 et/ou de la P-gp
+
+Chez les patients traités simultanément par voie systémique avec des antifongiques azolés (tels que kétoconazole, itraconazole, voriconazole et posaconazole) ou des inhibiteurs de la protéase du VIH (p.ex. ritonavir), l'administration de Rivaroxaban Viatris n'est pas recommandée. Ces principes actifs sont des inhibiteurs puissants aussi bien du CYP3A4 que de la P-gp et peuvent donc entraîner une augmentation de la concentration plasmatique du rivaroxaban jugée cliniquement pertinente (en moyenne de 2,6 fois), ce qui peut être associé à un risque hémorragique majoré (voir rubrique «Mises en garde et précautions»).
+
+L'administration concomitante de rivaroxaban et de kétoconazole (400 mg par jour) ou de ritonavir (600 mg 2x par jour) a entraîné une augmentation de respectivement 2,6 fois et 2,5 fois la valeur moyenne de l'AUC du rivaroxaban à l'état d'équilibre et une augmentation de 1,7 fois respectivement 1,6 fois la valeur moyenne de la Cmax du rivaroxaban, avec une majoration significative de ses effets pharmacodynamiques, ce qui peut entraîner une augmentation du risque hémorragique.
+
+L'administration concomitante de fluconazole, un inhibiteur modéré du CYP3A4, a entraîné une augmentation de respectivement 1,3 fois et 1,4 fois la Cmax et l'AUC du rivaroxaban. Le fluconazole a toutefois un effet plus faible sur l'exposition de rivaroxaban et peut être administré en même temps.
+
+La clarithromycine (500 mg 2x par jour), considérée comme un puissant inhibiteur du CYP3A4 et un inhibiteur modéré de la P-gp, a entraîné une augmentation de 1,5 fois la valeur moyenne de l'AUC et de 1,4 fois la valeur moyenne de la Cmax du rivaroxaban à l'état d'équilibre.
+
+L'érythromycine (500 mg 3x par jour), qui inhibe modérément le CYP3A4 et la P-gp, a entraîné une augmentation de 1,3 fois la valeur moyenne de l'AUC et de la Cmax moyenne du rivaroxaban à l'état d'équilibre. Cette augmentation se situe dans les limites de la variabilité normale de l'AUC et de la Cmax et n'est pas jugée cliniquement pertinente.
+
+Chez les patients présentant des troubles légers de la fonction rénale, l'érythromycine (500 mg 3x par jour) a entraîné une augmentation d'un facteur 1,8 de l'AUC moyenne du rivaroxaban et une augmentation d'un facteur 1,6 de la Cmax par rapport aux patients qui présentaient une fonction rénale normale et qui n'étaient pas sous co-médication. Chez les patients présentant des troubles modérés de la fonction rénale, une augmentation d'un facteur 2 de l'AUC et une augmentation d'un facteur 1,6 de la Cmax ont été mesurées par rapport aux patients qui présentaient une fonction rénale normale et qui n'étaient pas sous co-médication.
+
+Selon une analyse des données de l'étude ROCKET AF, l'administration concomitante de rivaroxaban et de médicaments qui sont simultanément des inhibiteurs de la P-gp et des inhibiteurs faibles ou modérés du CYP3A4 (p.ex. amiodarone, diltiazem, vérapamil, chloramphénicol, cimétidine et érythromycine) n'a entraîné aucune augmentation des taux d'hémorragie chez les patients présentant un trouble modéré de la fonction rénale (clairance de la créatinine de 30 à 49 ml/min). La prudence est de rigueur chez ces patients car des taux élevés de rivaroxaban sont possibles (voir la rubrique «Mises en garde et précautions»).
+
+Inducteurs enzymatiques
+
+Données in vivo
+
+Inducteurs du CYP3A4
+
+L'administration concomitante de rivaroxaban et de rifampicine, phénytoïne, carbamazépine, phénobarbital, millepertuis, de puissants inducteurs du CYP3A4, peut entraîner une diminution de la concentration plasmatique de rivaroxaban. L'utilisation concomitante de rivaroxaban et de rifampicine a entraîné une diminution d'environ 50% de l'AUC moyenne du rivaroxaban, associée à une réduction proportionnelle de ses effets pharmacodynamiques.
+
+L'emploi simultané des inducteurs puissants du CYP3A4 chez les patients traités par Rivaroxaban Viatris requiert une prudence particulière.
+
+Autres interactions
+
+Substrats du CYP3A4
+
+Aucune interaction pharmacocinétique ou pharmacodynamique cliniquement significative n'a été observée lors de l'administration concomitante de rivaroxaban et de midazolam (substrat du CYP3A4), de digoxine (substrat de la P-gp), d'atorvastatine (substrat du CYP3A4 et de la P-gp), de ranitidine (antagoniste du récepteur H2), de l'inhibiteur de la pompe à protons oméprazole ou des antiacides hydroxyde d'aluminium/de magnésium.
+
+Interactions pharmacodynamiques
+
+AINS/antiagrégants plaquettaires
+
+La prudence est de rigueur chez les patients traités simultanément par des médicaments agissant sur la coagulation comme les anti-inflammatoires non stéroïdiens (AINS), l'acide acétylsalicylique, les antiagrégants plaquettaires ou d'autres anticoagulants car ces médicaments augmentent le risque de saignement.
+
+Aucun allongement cliniquement significatif du temps de saignement n'a été observé après administration concomitante de rivaroxaban et de 500 mg de naproxène ou 500 mg d'acide acétylsalicylique. L'antiagrégant plaquettaire clopidogrel (dose initiale 300 mg, suivie d'une dose d'entretien de 75 mg) n'a montré aucune interaction pharmacocinétique avec rivaroxaban 15 mg, un allongement significatif du temps de saignement a été observé.
+
+Warfarine
+
+Un passage de l'antagoniste de la vitamine K warfarine (INR 2,0 à 3,0) au rivaroxaban (20 mg) a augmenté le temps de prothrombine/INR (néoplastine) de manière supra-additive (INR individuels de jusqu'à 12 ont été observés), alors que les effets sur le TCA, l'inhibition de l'activité du facteur Xa et le potentiel de thrombine endogène (ETP) étaient additifs.
+
+Si l'on souhaite tester les effets pharmacodynamiques du rivaroxaban pendant la période de transition, l'activité anti-facteur Xa, PiCT et HepTest peuvent être utilisés car ces tests ne sont pas affectés par la warfarine. Le quatrième jour après la dernière dose de warfarine, tous les tests (y compris TP, TCA, inhibition de l'activité du facteur Xa et HepTest) ne révèlent que l'effet du rivaroxaban.
+
+Aucune interaction pharmacocinétique entre la warfarine et le rivaroxaban n'a été constatée.
+
+Comme avec les autres anticoagulants, en cas d'utilisation concomitante avec les ISRS et les IRSN, une augmentation du risque hémorragique est possible en raison de l'effet décrit de ces médicaments sur les plaquettes. Dans le cadre du programme de développement clinique du rivaroxaban, un plus grand nombre numérique d'hémorragies sévères ou modérées cliniquement pertinentes a été observé en cas d'administration concomitante dans tous les groupes de traitement.
+
+Autres interactions
+
+Analyses de laboratoire
+
+Les tests de coagulation courants (TP, TCA) ainsi que des tests spécifiques des facteurs de coagulation sont influencés par le rivaroxaban en raison de son mécanisme d'action (voir rubrique «Pharmacodynamie»). Les tests des D-dimères, du facteur XIII, du temps de thrombine et le dosage du fibrinogène ne sont pas influencés.
+
+Grossesse, allaitement
+
+Grossesse
+
+Le rivaroxaban est contre-indiqué pendant la grossesse et les femmes en âge de procréer doivent utiliser une méthode de contraception très efficace. Il n'existe pas de données relatives à l'application de rivaroxaban chez la femme enceinte. Les expérimentations réalisées sur le rat et le lapin ont montré une toxicité sur la reproduction marquée du rivaroxaban, qui est liée à son mécanisme d'action pharmacologique (p.ex. complications hémorragiques). Un potentiel tératogène primaire n'a pas été observé (voir rubrique «Contre-indications» et «Données précliniques»).
+
+Allaitement
+
+Aucune donnée n'est disponible concernant l'utilisation du rivaroxaban pendant l'allaitement. Les données recueillies chez l'animal indiquent que le rivaroxaban passe dans le lait maternel. En conséquence, l'utilisation de Rivaroxaban Viatris n'est pas recommandée pendant l'allaitement (voir rubrique «Contre-indications»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude correspondante n'a été effectuée.
+
+Des vertiges et des syncopes ont été rapportés (voir rubrique «Effets indésirables»); ces effets secondaires peuvent altérer l'aptitude à conduire ou la capacité à utiliser des machines. Les patients chez lesquels ces effets secondaires apparaissent doivent renoncer à conduire des véhicules ou à utiliser des machines.
+
+Effets indésirables
+
+La sécurité du rivaroxaban a été analysée dans 20 études de phase III menées chez environ 70'000 patients adultes.
+
+Les effets médicamenteux indésirables sont représentés par classe de systèmes d'organes et par fréquence.
+
+Les fréquences sont définies de la manière suivante.
+
+Très fréquents: ≥1/10.
+
+Fréquents: ≥1/100, <1/10.
+
+Occasionnels: ≥1/1000, <1/100.
+
+Rares: ≥1/10'000, <1/1000.
+
+Très rares: <1/10'000.
+
+Fréquence inconnue: Ces effets indésirables ont été observés dans d'autres études cliniques que celles mentionnées plus haut ou ils proviennent de la surveillance post-commercialisation.
+
+Les effets indésirables suivants ont été observés dans le cadre d'études cliniques menées avec le rivaroxaban.
+
+Affections hématologiques et du système lymphatique
+
+Fréquents: anémie.
+
+Occasionnels: thrombocytose.
+
+Fréquence inconnue (rapports post-commercialisation): thrombocytopénie, agranulocytose.
+
+Affections du système immunitaire
+
+Occasionnels: dermatite allergique, hypersensibilité.
+
+Fréquence inconnue (rapports post-commercialisation): œdème allergique, angioœdème.
+
+Affections du système nerveux
+
+Fréquents: vertiges, céphalées.
+
+Occasionnels: hémorragies cérébrales et intracrâniennes, syncope.
+
+Affections oculaires
+
+Fréquents: saignements oculaires (y compris saignement conjonctival).
+
+Affections cardiaques
+
+Occasionnels: tachycardie.
+
+Affections vasculaires
+
+Fréquents: saignement gingival, hémorragie postinterventionnelle (y compris anémie postopératoire et saignements de plaies), hypotension, hématomes, hémorragie du tube digestif (y compris saignement rectal, hématémèse), hémorragie dans l'appareil urogénital (y compris hématurie et ménorragie).
+
+Rares: formation de pseudoanévrismes après interventions percutanées.
+
+Très rares: hémorragie d'ulcère gastro-intestinal mortelle.
+
+Des cas isolés d'hémorragies surrénales ont été rapportés.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquents: épistaxis, hémoptysie.
+
+Fréquence inconnue (rapports post-commercialisation): pneumonie à éosinophiles.
+
+Affections gastro-intestinales
+
+Fréquents: nausées, constipation, diarrhée, douleurs abdominales et gastro-intestinales (y compris douleurs épigastriques, troubles gastriques), dyspepsie (y compris troubles épigastriques), vomissements.
+
+Occasionnels: sécheresse buccale.
+
+Affections hépatobiliaires
+
+Fréquents: augmentation des transaminases.
+
+Occasionnels: troubles de la fonction hépatique, augmentation de la lipase, augmentation de l'amylase, bilirubinémie élevée, augmentation de la LDH, augmentation de la phosphatase alcaline, augmentation de la GGT.
+
+Rares: ictère, augmentation de la bilirubine conjuguée (avec ou sans augmentation simultanée du taux d'ALAT).
+
+Fréquence inconnue (rapports post-commercialisation): cholestase, hépatite (y compris lésions hépatocellulaires).
+
+Affections de la peau et du tissu sous-cutané
+
+Fréquents: prurit (y compris cas de prurit généralisé), rash, ecchymose, hémorragies cutanées et sous-cutanées.
+
+Occasionnels: urticaire.
+
+Fréquence inconnue (rapports post-commercialisation): syndrome de Stevens-Johnson, nécrolyse épidermique toxique, syndrome DRESS.
+
+Affections musculo-squelettiques et systémiques
+
+Fréquents: douleurs dans les extrémités.
+
+Occasionnels: hémarthrose.
+
+Rares: saignement musculaire.
+
+Fréquence inconnue: syndrome du compartiment comme effet secondaire d'une hémorragie.
+
+Affections du rein et des voies urinaires
+
+Fréquents: hémorragie dans l'appareil urogénital (y compris hématurie et ménorragie), insuffisance rénale.
+
+Fréquence inconnue: défaillance rénale/insuffisance rénale aiguë suite à une hypoperfusion provoquée par une hémorragie, néphropathie liée aux anticoagulants.
+
+Troubles généraux
+
+Fréquents: fièvre, œdème périphérique, asthénie (y compris fatigue).
+
+Occasionnels: sensation de malaise, suppuration.
+
+Rares: œdème localisé.
+
+Effets indésirables après la commercialisation
+
+Depuis la commercialisation, les effets indésirables suivants ont été rapportés avec une relation temporelle avec l'utilisation de rivaroxaban. La fréquence de ces effets secondaires rapportés dans le cadre de l'expérience après l'autorisation de mise sur le marché ne peut pas être estimée.
+
+Affections hématologiques et du système lymphatique: thrombocytopénie, agranulocytose.
+
+Affections du système immunitaire: œdème allergique, angio-œdème.
+
+Affections hépatobiliaires: hépatite (y compris lésions hépatocellulaires), cholestase.
+
+Affections respiratoires, thoraciques et médiastinales: pneumonie à éosinophiles.
+
+Affections de la peau et du tissu sous-cutané: syndrome de Stevens-Johnson, nécrolyse épidermique toxique, syndrome DRESS.
+
+Affections du rein et des voies urinaires: néphropathie liée aux anticoagulants.
+
+Lésions, intoxications et complications liées aux procédures: rupture de la rate (dans les études poolées de phase III, ces événements étaient très rares).
+
+Description de certains effets indésirables
+
+En raison de son mode d'action pharmacologique, l'utilisation de rivaroxaban peut être associé à un risque majoré de saignements occultes ou visibles à partir de tous les tissus ou organes; ces saignements peuvent conduire à une anémie post-hémorragique. Les symptômes et le degré de gravité (y compris une issue mortelle) varient en fonction de la localisation et de l'intensité de l'hémorragie et/ou de l'anémie.
+
+Les complications hémorragiques peuvent se traduire par une sensation de faiblesse, une pâleur, des vertiges, des céphalées ou un œdème inexpliqué ainsi que par une dyspnée et un choc incompréhensible. Dans quelques cas, une anémie a provoqué les symptômes d'une ischémie cardiaque tels que douleur thoracique ou angine de poitrine. Des complications connues consécutives à une hémorragie sévère telles qu'un syndrome des loges, une rupture de la rate et une défaillance rénale aiguë liée à une hypoperfusion ont été rapportées sous rivaroxaban.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Symptômes
+
+Un surdosage consécutif à l'administration de rivaroxaban peut entraîner des complications hémorragiques en raison de ses propriétés pharmacodynamiques. Des cas isolés de surdosages avec des doses allant jusqu'à 1960 mg ont été rapportés chez les adultes. En cas de surdosage, le patient doit être surveillé attentivement pour détecter toute complication hémorragique ou tout autre effet indésirable. En raison de l'absorption limitée du produit, à des doses suprathérapeutiques de 50 mg ou plus de rivaroxaban, un effet de plafonnement sans augmentation supplémentaire de l'exposition plasmatique moyenne est attendu.
+
+Traitement
+
+L'utilisation de charbon actif pourra être envisagée afin de limiter l'absorption. Une absorption de charbon actif jusqu'à 8 heures après le surdosage peut encore réduire l'absorption du rivaroxaban.
+
+Les mesures doivent être adaptées individuellement en fonction du degré de gravité et de la localisation de l'hémorragie.
+
+Un traitement symptomatique adapté, p.ex. compression mécanique, intervention chirurgicale, remplissage vasculaire et correction hémodynamique, transfusion sanguine ou transfusion de produits sanguins, doit être envisagé.
+
+Si les mesures ci-dessus ne suffisent pas à contrôler le saignement, l'administration d'un des procoagulants suivants doit être envisagée:
+
+·concentré du complexe de prothrombine (PCC)
+
+·concentré du complexe de prothrombine activé (APCC)
+
+·andexanet alfa (antidote spécifique de l'inhibiteur du facteur Xa)
+
+L'expérience clinique avec l'utilisation de ces produits chez les adultes qui prennent du rivaroxaban n'est cependant que très restreinte à l'heure actuelle (voir la rubrique «Pharmacodynamique»).
+
+Aucun effet du sulfate de protamine ou de la vitamine K sur l'activité anticoagulante du rivaroxaban n'est attendu. Il n'existe ni des raisons scientifiques ni des expériences qui parlent en faveur d'un bénéfice potentiel de l'utilisation d'agents hémostatiques systémiques (desmopressine, aprotinine, p.ex.) chez les patients traités par le rivaroxaban.
+
+L'expérience est limitée au sujet de l'emploi d'acide tranexamique chez les adultes. Il n'existe aucune expérience sur l'utilisation de l'aprotinine ou de l'acide aminocaproïque chez les adultes.
+
+Étant donné la forte liaison du rivaroxaban aux protéines plasmatiques, le produit n'est probablement pas dialysable.
+
+Propriétés/Effets
+
+Code ATC
+
+B01AF01
+
+Mécanisme d'action
+
+Le rivaroxaban est un inhibiteur direct hautement sélectif du facteur Xa, doté d'une biodisponibilité par voie orale. L'activation du facteur X en facteur Xa (FXa) via voies intrinsèques et extrinsèques, joue un rôle central dans la cascade de coagulation sanguine. La prothrombine FXa est transformée en thrombine par le complexe prothrombinase, ce qui entraîne finalement la formation d'un bouchon de fibrine et l'activation plaquettaire par la thrombine. Une molécule FXa peut générer plus de 1000 molécules de thrombine via la cascade de coagulation sanguine. De plus, le taux de réaction du FXa lié à la prothrombinase par rapport au FXa libre augmente de 300'000 fois et provoque une augmentation massive de la formation de thrombine. Les inhibiteurs sélectifs du FXa peuvent stopper cette augmentation massive.
+
+Pharmacodynamie
+
+Les informations ci-dessous se basent sur des données qui ont été recueillies chez les adultes.
+
+Une inhibition dose-dépendante de l'activité du FXa a été observée chez l'homme. Le temps de prothrombine (TP) est influencé par le rivaroxaban et lié à la concentration plasmatique de rivaroxaban (r=0,98) lorsque la Neoplastin® est utilisée comme réactif. Des résultats différents pourraient être observés avec d'autres réactifs. Le résultat du TP doit être exprimé en secondes car l'INR (International Normalized Ratio) est étalonnée et validée uniquement pour les coumariniques et ne peut pas être utilisé avec les autres anticoagulants. Les percentiles 5/95 du TP (Neoplastin®) 2 à 4 heures après la prise du comprimé (Cmax) sont compris entre 13 et 25 secondes pour rivaroxaban 10 mg, entre 16 et 33 secondes pour rivaroxaban 15 mg et entre 14 et 40 secondes pour rivaroxaban 20 mg.
+
+Chez les patients atteints d'une insuffisance rénale modérée traités par 15 mg une fois par jour, les percentiles 5/95 sont compris entre 10 et 50 secondes.
+
+Au cours d'une étude pharmacologique portant sur la suppression de l'effet du rivaroxaban, l'effet d'une dose unique (50 UI/kg) de deux PCC différents (PCC à 3 facteurs [facteurs II, IX et X], PCC à 4 facteurs [facteurs II, VII, IX et X]) a été évalué chez des volontaires sains. Le concentré PCC à 3 facteurs a diminué le TP (Neoplastin®) moyen d'environ 1 seconde en 30 minutes, par comparaison avec une diminution de 3,5 secondes avec le PCC à 4 facteurs. En revanche, le PCC à 3 facteurs a développé un effet plus intense et plus rapide que le PCC à 4 facteurs sur l'effet inverse, la génération endogène de thrombine.
+
+Les tests chromogènes anti-facteur Xa destinés au dépistage des héparines sont influencés par le rivaroxaban. Des tests chromogènes anti-facteur-Xa avec des normes d'étalonnage spécifiques au rivaroxaban et des contrôles sont disponibles dans le commerce. Ils sont recommandés pour le dépistage sensible de l'effet pharmacodynamique du rivaroxaban. Les valeurs du temps de céphaline activé (TCA) et du HepTest® sont également allongées de manière dose-dépendante. Ces tests ne sont toutefois pas recommandés pour évaluer les effets pharmacodynamiques du rivaroxaban.
+
+Il n'est pas nécessaire de surveiller les paramètres de coagulation pendant le traitement par rivaroxaban.
+
+Chez les patients à risque et lors du passage d'anticoagulants, on peut utiliser le dosage de l'activité anti-facteur Xa et le TP pour tester les effets pharmacodynamiques du rivaroxaban.
+
+Efficacité clinique
+
+Prévention des thromboembolies veineuses (TEV) chez des patients devant subir des interventions orthopédiques majeures des membres inférieurs
+
+Plus de 9500 patients (7050 arthroplasties totales de la hanche et 2531 arthroplasties totales du genou) ont été évalués lors des essais cliniques de phase III, contrôlés, randomisés, en double aveugle, du programme RECORD. Le traitement par rivaroxaban 10 mg en une prise quotidienne, débuté 6 heures après l'intervention, a été comparé au traitement par énoxaparine 40 mg en une prise quotidienne débuté 12 heures avant l'intervention. Lors des trois études de phase III (voir tableau ci-dessous), le rivaroxaban a significativement réduit l'incidence des TEV totales (toute TVP, EP non mortelle et décès) et des TEV majeures (TVP proximale, EP non mortelle et décès lié aux TEV). Par ailleurs, lors de ces trois études, la fréquence des TEV symptomatiques (TVP symptomatique, EP non mortelle, décès lié aux TEV) a été inférieure chez les patients traités par rivaroxaban par rapport à celle observée chez les patients sous énoxaparine. Le taux d'hémorragies majeures a été comparable dans les deux groupes traités (tableau 2).
+
+Tableau 2: Résultats relatifs à l'efficacité et la sécurité des études RECORD de phase III
+
+|  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | RECORD 1 | | | RECORD 2 | | | RECORD 3 | | |
+| Population de l'étude | 4541 patients subissant une arthroplastie totale de la hanche | | | 2509 patients subissant une arthroplastie totale de la hanche | | | 2531 patients subissant une arthroplastie totale du genou | | |
+| Posologie et durée du traitement après l'intervention | Rivaroxaban 10 mg/jour 35 ± 4 jours | Énoxaparine 40 mg/jour 35 ± 4 jours | p | Rivaroxaban 10 mg/jour 35 ± 4 jours | Énoxaparine 40 mg/jour 12 ± 2 jours | p | Rivaroxaban 10 mg/jour 12 ± 2 jours | Énoxaparine 40 mg/jour 12 ± 2 jours | p |
+| Toutes les TEV | 18 (1,1%) | 58 (3,7%) | <0,001 | 17 (2,0%) | 81 (9,3%) | <0,001 | 79 (9,6%) | 166 (18,9 %) | <0,001 |
+| TEV majeures | 4 (0,2%) | 33 (2,0%) | <0,001 | 6 (0,6%) | 49 (5,1%) | <0,001 | 9 (1,0%) | 24 (2,6%) | 0,01 |
+| TEV symptomatiques | 6 (0,4%) | 11 (0,7%) |  | 3 (0,4%) | 15 (1,7%) |  | 8 (1,0%) | 24 (2,7%) |  |
+| Hémorragies majeures | 6 (0,3%) | 2 (0,1%) |  | 1 (0,1%) | 1 (0,1%) |  | 7 (0,6%) | 6 (0,5%) |  |
+
+ 
+
+L'analyse poolée des résultats des essais de phase III confirme les données obtenues au cours des différentes études en termes de réduction des TEV totales, des TEV majeures et des TEV symptomatiques avec rivaroxaban 10 mg une fois par jour par rapport à l'énoxaparine 40 mg, en une prise quotidienne.
+
+En plus du programme RECORD, une étude de cohorte non interventionnelle en ouvert (XAMOS) a été conduite après l'autorisation avec 17'413 patients qui ont dû se soumettre à une intervention orthopédique majeure sur le genou ou la hanche, étude conduite afin de comparer le rivaroxaban à d'autres traitements standard pour la prophylaxie des thromboses dans des conditions de pratique clinique. Des thromboses veineuses profondes symptomatiques se sont produites chez 57 (0,6%) des patients du groupe rivaroxaban (N=8778) et chez 88 patients (1,0%) sous traitement standard (N=8635; RR: 0,63; IC à 95 %: 0,43-0,91; population de sécurité). Des hémorragies de grande ampleur se sont produites chez 35 (0,4%) des patients du groupe rivaroxaban et chez 29 (0,3%) des patients sous traitement standard. Cette étude non interventionnelle confirme les données concernant l'efficacité et la sécurité provenant du programme RECORD.
+
+Traitement de la thrombose veineuse profonde (TVP), de l'embolie pulmonaire (EP) et prévention d'une récidive de TVP et d'embolie pulmonaire (EP)
+
+Plus de 12'800 patients ont été analysés dans quatre études cliniques randomisées, contrôlées de phase III (Einstein-DVT, Einstein PE, Einstein-Extension et Einstein-Choice), et une analyse définie au préalable des données poolées d'Einstein DVT et Einstein PE a été réalisée. Les traitements de toutes les études ont duré globalement jusqu'à 21 mois.
+
+Dans le cadre de l'étude Einstein-DVT, un total de 3449 patients présentant une TVP aiguë ont été analysés au cours du traitement de la TVP et de la prévention d'une récidive de TVP et d'EP. Le traitement a duré jusqu'à 12 mois pour autant que le médecin pouvait le justifier du point de vue clinique.
+
+Dans le cadre du premier traitement de la TVP aiguë de 3 semaines, une dose de 15 mg de rivaroxaban a été administrée deux fois par jour, suivie d'un traitement avec 20 mg de rivaroxaban une fois par jour.
+
+Dans le cadre de l'étude Einstein PE, 4832 patients atteints d'EP aiguë durant le traitement de l'EP ainsi que durant la prévention de TVP et d'EP récidivants ont été examinés. La durée du traitement, qui variait en fonction de l'évaluation clinique du médecin examinateur, pouvait atteindre 12 mois.
+
+Dans le cadre du premier traitement de 3 semaines de l'EP aiguë, 15 mg de rivaroxaban ont été administrés deux fois par jour. Ensuite, un traitement avec 20 mg de rivaroxaban une fois par jour a été mené.
+
+Aussi bien dans le cadre de l'étude Einstein DVT que dans le cadre de l'étude Einstein PE, le schéma posologique du traitement comparatif comportait l'administration d'énoxaparine sur au moins 5 jours en combinaison avec un antagoniste de la vitamine K, pour atteindre des INR se situant dans la fourchette thérapeutique (≥2,0). Le traitement a été poursuivi avec un antagoniste de la vitamine K à dose ajustée, afin de maintenir les INR dans la fourchette thérapeutique de 2,0 à 3,0.
+
+Dans le cadre de l'étude Einstein-Extension, 1197 patients présentant une TVP ou une EP ont été analysés pour évaluer la prévention d'une récidive de TVP et d'EP. Le traitement a duré jusqu'à 12 mois pour autant que le médecin pouvait le justifier du point de vue clinique. Rivaroxaban 20 mg une fois par jour a été comparé à un placebo.
+
+Les quatre études de phase III ont utilisé les mêmes critères d'efficacité primaires et secondaires prédéfinis. Le critère d'efficacité primaire était les TEV symptomatiques récurrentes définies comme TVP récidivante, EP mortelle ou non mortelle. Le critère d'efficacité secondaire était défini comme TVP récidivante, EP non mortelle et mortalité globale.
+
+L'étude Einstein-DVT (voir tableau 3) a montré que le rivaroxaban n'est pas inférieur au traitement standard par énoxaparine/AVK en ce qui concerne le critère d'efficacité primaire. Le bénéfice clinique prédéfini (critère d'efficacité primaire plus hémorragies majeures) a été calculé avec un hazard ratio de 0,67 (IC à 95%=0,47-0,95), valeur p nominale p=0,027) en faveur du rivaroxaban.
+
+Les taux d'incidence du critère primaire de sécurité (hémorragies graves et légères cliniquement significatives) et également ceux du critère secondaire de sécurité (hémorragies graves) ont été comparables dans les deux groupes.
+
+L'étude Einstein PE (voir le tableau 4) a montré que le rivaroxaban n'est pas inférieur à l'énoxaparine/AVK en ce qui concerne le principal critère d'efficacité (p=0,0026 (test de la non-infériorité); hazard ratio: 1,12 (0,75-1,68)).
+
+Le bénéfice thérapeutique prédéfini (principal critère d'efficacité et hémorragies sévères) a été rapporté avec un hazard ratio de 0,85 ((95% IC=0,63-1,14), valeur p nominale p=0,275).
+
+Une analyse poolée définie préalablement des données de l'étude Einstein DVT et LE a été réalisée (voir le tableau 5).
+
+Dans l'étude Einstein-Extension (voir tableau 6), le rivaroxaban s'est révélé supérieur au placebo en ce qui concerne les critères d'efficacité primaires et secondaires. Pour le critère de sécurité primaire (hémorragies majeures), une augmentation non significative du taux d'incidence a été constatée par rapport au placebo dans le groupe rivaroxaban. L'association d'hémorragies sévères et non sévères, mais cliniquement significatives (critère secondaire de sécurité) est apparue significativement plus souvent dans le groupe rivaroxaban.
+
+Dans le cadre de l'étude Einstein-Choice incluant 3396 patients présentant une TVP et/ou une EP symptomatique confirmée, ayant terminé un traitement anticoagulant d'une durée de 6 à 12 mois, la prévention de l'EP mortelle ou de récidives de TVP ou d'EP symptomatiques non mortelles a été analysée. Les patients, chez lesquels une anticoagulation continue était indiquée à des doses thérapeutiques en raison d'un risque élevé de récidive de TVP et d'EP, étaient exclus de l'étude. En fonction du moment où a eu lieu la randomisation pour chaque patient, la durée maximale du traitement était de 12 mois (médiane: 351 jours). L'administration de 20 mg de rivaroxaban une fois par jour et de 10 mg de rivaroxaban une fois par jour a été comparée à l'administration de 100 mg d'acide acétylsalicylique une fois par jour. Les deux posologies de rivaroxaban, aussi bien la dose de 20 mg que la dose de 10 mg étaient supérieures à l'acide acétylsalicylique 100 mg concernant le critère primaire d'efficacité.
+
+Le critère primaire de sécurité (hémorragies majeures) était similaire dans les groupes de traitement rivaroxaban 10 mg, rivaroxaban 20 mg ou acide acétylsalicylique 100 mg, administrés dans tous les groupes une fois par jour. Les résultats étaient cohérents entre les patients ayant eu une TVP provoquée ou non provoquée (voir tableau 7).
+
+Tableau 3: Résultats relatifs à l'efficacité et l'innocuité issus de l'étude Einstein-DVT de phase III
+
+|  |  |  |
+| --- | --- | --- |
+| Population d'étude | 3449 patients présentant une thrombose veineuse profonde aiguë symptomatique | |
+| Dose et durée du traitement | Rivaroxabana 3, 6 ou 12 mois N=1731 | Énoxaparine/AVKb 3, 6 ou 12 mois N=1718 |
+| Récidive de TEV symptomatique\* | 36 (2,1%) | 51 (3,0%) |
+| Récidive d'EP symptomatique | 20 (1,2%) | 18 (1,0%) |
+| Récidive de TVP symptomatique | 14 (0,8%) | 28 (1,6%) |
+| EP et TVP symptomatiques | 1 (0,1%) | 0 |
+| EP mortelle ou décès, dans lequel une EP ne pouvait être exclue | 4 (0,2%) | 6 (0,3%) |
+| Hémorragies majeures | 14 (0,8%) | 20 (1,2%) |
+
+ 
+
+a Rivaroxaban 15 mg deux fois par jour pendant 3 semaines, puis 20 mg une fois par jour.
+
+b Énoxaparine pendant au moins 5 jours, puis AVK.
+
+\* p<0,0001 (non-infériorité), hazard ratio: 0,680 (0,443-1,042), p=0,076 (supériorité).
+
+Tableau 4: Résultats relatifs à l'efficacité et la sécurité issus de l'étude Einstein-PE de phase III
+
+|  |  |  |
+| --- | --- | --- |
+| Population d'étude | 4832 patients atteints d'embolie pulmonaire aiguë symptomatique | |
+| Posologie et durée du traitement | Rivaroxabana 3, 6 ou 12 mois N=2419 | Énoxaparine/AVKb 3, 6 ou 12 mois N=2413 |
+| TEV symptomatique récidivante\* | 50 (2,1%) | 44 (1,8%) |
+| EP symptomatique récidivante\* | 23 (1,0%) | 20 (0,8%) |
+| TVP symptomatique récidivante | 18 (0,7%) | 17 (0,7%) |
+| EP et TVP symptomatiques | 0 | 2 (<0,1%) |
+| EP mortelle/décès lors desquels une EP n'a pas pu être exclue | 11 (0,5%) | 7 (0,3%) |
+| Hémorragies sévères | 26 (1,1%) | 52 (2,2%) |
+
+ 
+
+a Rivaroxaban 15 mg deux fois par jour durant 3 semaines, suivi de 20 mg une fois par jour.
+
+b Énoxaparine durant au moins 5 jours, puis AVK.
+
+\* p<0,0026 (non-infériorité), hazard ratio: 1,12 (0,75-1,68).
+
+Tableau 5: Résultats sur l'efficacité et la sécurité à partir de l'analyse poolée des études de phase III Einstein-DVT et Einstein-PE
+
+|  |  |  |
+| --- | --- | --- |
+| Population d'étude | 8281 patients atteints de TVP symptomatique aiguë ou d'EP | |
+| Posologie et durée du traitement | Rivaroxabana 3, 6 ou 12 mois N=4150 | Énoxaparine/AVKb 3, 6 ou 12 mois N=4131 |
+| TEV symptomatique récidivante\* | 86 (2,1%) | 95 (2,3%) |
+| EP symptomatique récidivante | 43 (1,0%) | 38 (0,9%) |
+| TVP symptomatique récidivante | 32 (0,8%) | 45 (1,1%) |
+| EP et TVP symptomatiques | 1 (<0,1%) | 2 (<0,1%) |
+| EP mortelle/décès lors desquels une EP n'a pas pu être exclue | 15 (0,4%) | 13 (0,3%) |
+| Hémorragies sévères | 40 (1,0%) | 72 (1,7%) |
+
+ 
+
+a Rivaroxaban 15 mg deux fois par jour pendant 3 semaines, suivi de 20 mg une fois par jour.
+
+b Énoxaparine pendant au moins 5 jours, puis AVK.
+
+\* p<0,001 (non-infériorité), hazard ratio: 0,89 (0,66-1,19).
+
+Tableau 6: Résultats relatifs à l'efficacité et l'innocuité issus de l'étude Einstein-Extension de phase III
+
+|  |  |  |
+| --- | --- | --- |
+| Population d'étude | 1197 patients bénéficiant d'un traitement prolongé dans la prévention secondaire de la thromboembolie veineuse récidivante | |
+| Dose et durée du traitement | Rivaroxabana 6 ou 12 mois N=602 | Placebo 6 ou 12 mois N=595 |
+| Récidive de TEV symptomatique\* | 8 (1,3%) | 42 (7,1%) |
+| Récidive d'EP symptomatique | 2 (0,3%) | 13 (2,2%) |
+| Récidive de TVP symptomatique | 5 (0,8%) | 31 (5,2%) |
+| EP mortelle ou décès, dans lequel une EP ne pouvait être exclue | 1 (0,2%) | 1 (0,2%) |
+| Hémorragies majeures | 4 (0,7%) | 0 (0,0%) |
+
+ 
+
+a Rivaroxaban 20 mg une fois par jour.
+
+\* p<0,0001 (supériorité), hazard ratio: 0,19 (0,09-0,39).
+
+Tableau 7: Résultats concernant l'efficacité en comparaison avec l'acide acétylsalicylique et concernant l'innocuité du médicament issus de l'étude de phase III Einstein Choice
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Population d'étude | 3396 patients bénéficiant d'une prévention prolongée de thromboembolie récidivante | | |
+| Dose du traitement | Rivaroxaban 20 mg a N=1107 | Rivaroxaban 10 mg b N=1127 | Acide acétylsalicylique 100 mgc N=1131 |
+| Durée du traitement [intervalle interquartile] | 349 [189-362] jours | 353 [190-362] jours | 350 [186-362] |
+| TEV symptomatique récidivante\* | 17 (1,5%)\* | 13 (1,2%)\*\* | 50 (4,4%) |
+| EP symptomatique récidivante | 6 (0,5%) | 6 (0,5%) | 19 (1,7%) |
+| TVP symptomatique récidivante | 9 (0,8%) | 8 (0,7%) | 30 (2,7%) |
+| EP mortelle ou décès, dans lequel une EP ne pouvait être exclue | 2 (0,2%) | 0 | 2 (0,2%) |
+| Hémorragies majeures | 6 (0,5%) | 5 (0,4%) | 3 (0,3%) |
+
+ 
+
+a Rivaroxaban 20 mg une fois par jour.
+
+b Rivaroxaban 10 mg une fois par jour.
+
+c Acide acétylsalicylique (AAS) 100 mg une fois par jour.
+
+\* p<0,001 (supériorité) rivaroxaban 20 mg a versus AAS 100 mg c, hazard ratio: 0,34 (0,20-0,59).
+
+\*\* p<0,001 (supériorité) rivaroxaban 10 mg b versus AAS 100 mg c, hazard ratio: 0,26 (0,14-0,47).
+
+Prophylaxie de l'accident vasculaire cérébral et de l'embolie systémique chez les patients en fibrillation auriculaire non valvulaire
+
+Le programme de développement clinique de rivaroxaban a été prévu pour démontrer l'efficacité de rivaroxaban dans la prévention de l'accident vasculaire cérébral et l'embolie systémique chez les patients présentant des fibrillations auriculaires non valvulaires (Atrial fibrillation: AF).
+
+Dans l'étude pivot ROCKET-AF menée en double aveugle, 14'264 patients ont été traités soit par rivaroxaban 20 mg par voie orale une fois par jour (chez les patients avec une ClCr 30-49 ml/min, 15 mg par voie orale une fois par jour), soit par warfarine, dont la dose a été augmentée jusqu'à un INR cible de 2,5 (fourchette thérapeutique de 2,0 à 3,0). La durée moyenne de traitement était de 19 mois, globalement le traitement a duré jusqu'à 41 mois.
+
+Par rapport à la warfarine, le rivaroxaban a réduit significativement le critère primaire composite associant l'accident vasculaire cérébral et l'embolie systémique. En outre, les critères secondaires majeurs (critère composite d'accident vasculaire cérébral, embolie systémique et décès vasculaire ainsi que le critère composite d'accident vasculaire cérébral, embolie systémique, infarctus du myocarde et décès vasculaire) ont été eux aussi réduits de manière significative (voir tableau 8).
+
+Les taux d'incidence du critère primaire de sécurité (hémorragies graves et légères cliniquement significatives) ont été comparables dans les deux groupes traités (voir tableau 9).
+
+Tableau 8: Résultats relatifs à l'efficacité issus de l'étude ROCKET AF de phase III
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Population d'étude | Patients en fibrillation auriculaire non valvulairea | | |
+| Dose | Rivaroxaban 20 mg une fois par jour (15 mg une fois par jour chez des patients présentant une insuffisance rénale modérée) Taux d'événements (par 100 années-patient) | Warfarine dose augmentée jusqu'à l'INR cible de 2,5 (fourchette thérapeutique 2,0 à 3,0) Taux d'événements (par 100 années-patient) | Hazard ratio (IC à 95%) valeur p |
+| Accident vasculaire cérébral et embolie systémique\* | 189 (1,70%) | 243 (2,15%) | 0,79 (0,65-0,95) 0,015 |
+| Accident vasculaire cérébral, embolie systémique et décès vasculaire\* | 346 (3,11%) | 410 (3,63%) | 0,86 (0,74-0,99) 0,034 |
+| Accident vasculaire cérébral, embolie systémique, décès vasculaire et infarctus du myocarde\* | 433 (3,91%) | 519 (4,62%) | 0,85 (0,74-0,96) 0,010 |
+| Accident vasculaire cérébral | 184 (1,65%) | 221 (1,96%) | 0,85 (0,70-1,03) 0,092 |
+| Embolie systémique\*\* | 5 (0,04%) | 22 (0,19%) | 0,23 (0,09-0,61) 0,003 |
+
+ 
+
+a Population sécurité dans le traitement.
+
+\* Statistiquement supérieur.
+
+\*\* Nominalement significatif.
+
+Tableau 9: Résultats relatifs à l'innocuité issus de l'étude ROCKET AF de phase III
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Population d'étude | Patients en fibrillation auriculaire non valvulairea | | |
+| Dose | Rivaroxaban 20 mg une fois par jour (15 mg une fois par jour chez des patients présentant une insuffisance rénale modérée) Taux d'événements (par 100 années-patient) | Warfarine dose augmentée jusqu'à INR cible de 2,5 (fourchette thérapeutique 2,0 à 3,0) Taux d'événements (par 100 années-patient) | Hazard ratio (IC à 95%) valeur p |
+| Hémorragies graves et légères cliniquement significatives | 1475 (14,91%) | 1449 (14,52%) | 1,03 (0,96-1,11) 0,442 |
+| Hémorragies graves | 395 (3,60%) | 386 (3,45%) | 1,04 (0,90-1,20) 0,576 |
+| Décès\* | 27 (0,24%) | 55 (0,48%) | 0,50 (0,31-0,79) 0,003 |
+| Hémorragie dans un organe critique\* | 91 (0,82%) | 133 (1,18%) | 0,69 (0,53-0,91) 0,007 |
+| Hémorragie intracrânienne\* | 55 (0,49%) | 84 (0,74%) | 0,67 (0,47-0,93) 0,019 |
+| Chute de l'hémoglobine\* | 305 (2,77%) | 254 (2,26%) | 1,22 (1,03-1,44) 0,019 |
+| Transfusion de 2 unités ou plus de concentré érythrocytaire ou de sang complet\* | 183 (1,65%) | 149 (1,32%) | 1,25 (1,01-1,55) 0,044 |
+| Hémorragies légères cliniquement significatives | 1185 (11,80%) | 1151 (11,37%) | 1,04 (0,96-1,13) 0,345 |
+
+ 
+
+a Population sécurité dans le traitement.
+
+\* Nominalement significatif.
+
+Patients devant subir une cardioversion
+
+Une étude prospective, exploratoire, multicentrique, randomisée, en ouvert avec évaluation en aveugle du critère principal (X-VERT) a été menée chez 1504 patients (naïfs aux anticoagulants oraux et prétraités) atteints de fibrillation atriale non valvulaire devant bénéficier d'une cardioversion. Cette étude a comparé l'efficacité du rivaroxaban à un AVK à dose ajustée (randomisés 2:1), dans la prévention d'événements cardiovasculaires. Des stratégies de cardioversion guidée par ETO (1-5 jours de prétraitement) ou conventionnelle (au moins trois semaines de prétraitement) ont été employées. Le critère principal d'évaluation de l'efficacité (tout AVC, accident ischémique transitoire, embolie systémique hors SNC, infarctus du myocarde et décès cardiovasculaire) est survenu chez 5 patients (0,5%) dans le groupe rivaroxaban (N=978) et chez 5 patients (1,0%) dans le groupe AVK (N=492; RR 0,50; IC à 95 % 0,15-1,73; population en intention de traiter modifiée). Le critère principal d'évaluation de la tolérance (hémorragie majeure selon critères ISTH) est survenu chez 6 patients (0,6%) et 4 patients (0,8%) dans le groupe rivaroxaban (N=988) et le groupe AVK (N=499), respectivement (RR 0,76; IC à 95% 0,21-2,67; population sécurité). La fréquence de toutes les hémorragies cliniquement pertinentes (sévères + légères) était de 3,3% (33 patients) dans le groupe rivaroxaban et de 2,8% dans le groupe AVK. Ces données montrent une efficacité et une tolérance comparables entre le groupe rivaroxaban et le groupe AVK dans le cadre de la cardioversion.
+
+Patients atteints d'une fibrillation auriculaire non valvulaire, qui en raison d'une angioplastie coronaire avec la pose d'un stent sont traités en complément avec un inhibiteur de P2Y12
+
+L'étude multicentrique, ouverte PIONEER AF-PCI évaluait différents traitements anticoagulants chez des patients atteints de fibrillation auriculaire non valvulaire qui devaient subir une angioplastie coronaire avec la pose d'un stent en raison d'une maladie artériosclérotique sous-jacente. Les patients ayant des antécédents d'AVC/d'AIT avaient été exclus de l'étude. Les participants de l'étude ont été randomisés pour une durée de 12 mois pour être traités soit par rivaroxaban 15 mg une fois par jour (10 mg de rivaroxaban pour les patients présentant une clairance de la créatinine de 30 à 49 ml/min) en complément d'un inhibiteur de P2Y12 (p.ex. clopidogrel) soit par un AVK en complément d'une DAPT (administration pendant 3, 6 ou 12 mois suivie de la prise d'AAS à faible dose).
+
+Le critère primaire de sécurité, à savoir les événements hémorragiques cliniquement significatifs, est survenu chez 109 (15,7%) patients dans le groupe rivaroxaban et chez 167 patients (24,0%) dans le groupe AVK (RR 0,59; IC à 95% 0,47-0,76; p<0,001). Le critère secondaire, une combinaison de décès CV, d'infarctus du myocarde (IM) et d'accident vasculaire cérébral, est survenu chez 41 (5,9%) patients dans le groupe rivaroxaban et chez 36 patients (5,2%) dans le groupe AVK; des thromboses de stent sont survenues chez 5 patients traités par le rivaroxaban et chez 4 patients traités par l'AVK.
+
+L'étude PIONEER AF-PCI ne permet pas d'évaluation définitive du rapport bénéfice/risque de la posologie réduite de rivaroxaban (15 mg une fois par jour) en comparaison avec la posologie standard (20 mg une fois par jour) chez les patients atteints d'une fibrillation auriculaire non valvulaire, ce dernier point n'ayant pas été évalué dans le cadre de l'étude.
+
+Pharmacocinétique
+
+Absorption
+
+Les informations ci-dessous se basent sur des données qui ont été recueillies chez les adultes.
+
+Le rivaroxaban est rapidement absorbé. La concentration plasmatique maximale (Cmax) est atteinte au bout de 2-4 heures après l'administration orale.
+
+Le rivaroxaban 10 mg est presque complètement résorbé par voie orale et la biodisponibilité orale du comprimé à 10 mg est élevée (80-100%), indépendamment d'une prise à jeun ou après un repas. La prise d'aliments n'influence pas l'AUC ou la Cmax du rivaroxaban administré à la dose de 10 mg. La résorption est saturable.
+
+À une dose de 20 mg, la biodisponibilité sans prise de nourriture n'est que de 66%. Lors de la prise des comprimés à 20 mg avec un repas, la résorption est complète. Rivaroxaban Viatris 15 mg et 20 mg devraient donc être pris pendant les repas (voir rubrique «Posologie/Mode d'emploi»).
+
+Les comprimés de rivaroxaban à 10 mg, 15 mg et 20 mg ont montré une linéarité de la dose lors d'une prise avec un repas.
+
+La variabilité interindividuelle (CV %) des caractéristiques pharmacocinétiques du rivaroxaban de près de 30% à 40% une fois l'état d'équilibre atteint (4-5 jours) est considérée comme modérée.
+
+Chez les patients qui ont reçu 20 mg de rivaroxaban une fois par jour pour le traitement d'une thrombose veineuse profonde aiguë, des moyennes géométriques de la concentration sanguine de rivaroxaban de 215 µg/l (22-535 µg/l) et de 32 µg/l (6-239 µg/l) ont été mesurées 2-4 heures et respectivement environ 24 heures après la prise (ces instants correspondent environ à la concentration maximale et minimale au cours de l'intervalle posologique).
+
+L'absorption du rivaroxaban varie en fonction du lieu de la libération du principe actif dans le tractus gastro-intestinal. Lorsque le rivaroxaban est libéré par des granulés à l'extrémité proximale de l'intestin grêle, une AUC réduite de 29% et une Cmax réduite de 56% par rapport aux comprimés pris par voie orale ont été constatées. L'exposition au principe actif a également été réduite lorsque la libération s'est faite à l'extrémité distale de l'intestin grêle ou au niveau de la partie ascendante du côlon. C'est pourquoi l'administration de rivaroxaban par sonde gastrique dans un site distal par rapport à l'estomac devrait être évitée car cela résulte en une diminution de la résorption du principe actif et, par conséquent, en une réduction de l'exposition au principe actif.
+
+La biodisponibilité (AUC et Cmax) de comprimés pelliculés broyés de 20 mg de rivaroxaban, pris par voie orale, était comparable à celle de comprimés broyés administrés par sonde gastrique. Grâce au profil pharmacocinétique proportionnel à la dose du rivaroxaban, ces résultats ont également pu être transférés à des doses plus faibles de rivaroxaban.
+
+Distribution
+
+Le niveau de liaison aux protéines plasmatiques chez l'homme adulte est élevé, environ 92% à 95%, la liaison se faisant essentiellement avec l'albumine. Le volume de distribution est modéré: le Vss est d'environ 50 litres.
+
+Métabolisme
+
+Les informations ci-dessous se basent sur des données qui ont été recueillies chez les adultes.
+
+Le rivaroxaban sous forme inchangée est le principal composant retrouvé dans le plasma humain, aucun métabolite majeur ou actif n'étant présent dans la circulation. Le rivaroxaban subit une dégradation par voie métabolique (2/3 de la dose administrée environ) et également par élimination directe sous forme inchangée (1/3 environ). La métabolisation du rivaroxaban se déroule via le CYP3A4, CYP2J2 et des mécanismes indépendants des CYP. La dégradation par oxydation de la fraction morpholinone et l'hydrolyse des liaisons amides sont les principaux points de biotransformation. Avec une clairance systémique de l'ordre de 10 l/h, le rivaroxaban est un principe actif caractérisé par une faible clairance. Le rivaroxaban a été éliminé du plasma avec une demi-vie terminale de 5 à 9 heures chez des sujets jeunes, chez les sujets âgés avec une demi-vie terminale de 11 à 13 heures.
+
+Élimination
+
+L'excrétion du rivaroxaban et de ses métabolites passe à la fois par voie rénale et entérale. Le rivaroxaban est éliminé (environ 1/3) sous forme inchangée via sécrétion active par les urines. D'après les études in vitro, le rivaroxaban est un substrat des protéines de transport P-gp (glycoprotéine-P) et BCRP (breast cancer resistance protein, protéine de résistance au cancer du sein).
+
+Cinétique pour certains groupes de patients
+
+Troubles de la fonction hépatique
+
+Chez les adultes atteints d'insuffisance hépatique légère (niveau Child Pugh A), les modifications des caractéristiques pharmacocinétiques du rivaroxaban observées étaient mineures (multiplication par 1,2 en moyenne de l'AUC du rivaroxaban) et aucune différence significative n'a été constatée par rapport aux volontaires sains en ce qui concerne la pharmacodynamie.
+
+Chez les patients atteints d'insuffisance hépatique modérée (niveau Child Pugh B), l'AUC moyenne du rivaroxaban a été multipliée significativement par 2,3 par rapport aux volontaires sains et l'inhibition totale de l'activité du facteur Xa a été augmentée d'un facteur 2,6; l'allongement du TP a connu une augmentation similaire (multiplié par 2,1).
+
+Troubles de la fonction rénale
+
+Chez les adultes, il a été observé un lien inverse entre l'augmentation de l'exposition au rivaroxaban et la diminution de la fonction rénale évaluée par la mesure de la clairance de la créatinine (ClCr). En cas d'insuffisance rénale légère (ClCr de 50 à 80 ml/min), modérée (ClCr de 30 à 50 ml/min) ou sévère (ClCr <30 ml/min), les concentrations plasmatiques du rivaroxaban (AUC) ont été multipliées respectivement par 1,4; 1,5 et 1,6. Les augmentations correspondantes des effets pharmacodynamiques ont été plus marquées. En cas d'insuffisance rénale légère, modérée ou sévère, l'inhibition globale de l'activité du facteur Xa a été augmentée respectivement d'un facteur 1,5; 1,9 et 2,0; l'allongement du TP a connu une augmentation similaire (multiplié respectivement par 1,3; 2,2 et 2,4).
+
+Patients âgés (>65 ans)
+
+Des concentrations plasmatiques plus élevées ont été observées chez les patients âgés par rapport à des patients plus jeunes, avec une AUC moyenne environ 1,5 fois supérieure, principalement en raison de la réduction de la clairance totale (apparente) et rénale. Un ajustement posologique n'est pas nécessaire.
+
+Sexe
+
+Chez les adultes, aucune différence cliniquement pertinente n'a été notée entre les hommes et les femmes quant aux caractéristiques pharmacocinétiques et pharmacodynamiques.
+
+Poids corporel
+
+Chez les adultes, les poids extrêmes (<50 kg ou >120 kg) n'ont eu qu'une incidence mineure sur les concentrations plasmatiques du rivaroxaban (moins de 25%). Un ajustement posologique n'est pas nécessaire.
+
+Différences interethniques
+
+Chez les adultes, aucune différence interethnique cliniquement pertinente n'a été relevée en ce qui concerne les caractéristiques pharmacocinétiques et pharmacodynamiques du rivaroxaban.
+
+Données précliniques
+
+Sur la base des études conventionnelles de sécurité pharmacologique, de toxicité en administration unique, de toxicité en administration répétée, de génotoxicité, de toxicité sur la reproduction et de phototoxicité, les données précliniques ne permettent pas d'identifier de dangers particuliers pour l'être humain.
+
+Chez des rats juvéniles, traités par le rivaroxaban à partir du 10e jour de vie pendant une durée maximale de 3 mois, des signes d'augmentation des effets pharmacodynamiques ont été observés. Aucun indice de toxicité spécifique à un organe n'a été constaté.
+
+Pharmacologie de sécurité
+
+Dans des études portant sur la sécurité pharmacologique, le rivaroxaban n'a montré aucun effet négatif sur le système cardiovasculaire et respiratoire, le système nerveux central ainsi que sur la fonction rénale et gastro-intestinale (doses allant jusqu'à 30 mg/kg, 38 fois la concentration plasmatique thérapeutique). Des études cardiovasculaires menées in vitro et in vivo n'ont fourni aucun indice d'un potentiel arythmogène du rivaroxaban.
+
+Génotoxicité
+
+Des études de génotoxicité (test d'Ames, test de cytogénétique in vitro et test micronucléique sur la souris) n'ont montré aucun résultat négatif.
+
+Carcinogénicité
+
+Des études portant sur la carcinogénicité menées sur des souris et des rats pendant deux ans avec une dose maximale de 60 mg/kg/jour de rivaroxaban n'ont fourni aucun indice d'un potentiel carcinogène.
+
+Toxicité sur la reproduction
+
+Des essais sur la toxicité de reproduction menés sur des rats avec une dose allant jusqu'à 200 mg/kg (33 à 50 fois la concentration plasmatique thérapeutique) n'ont eu aucun effet sur la fertilité masculine et féminine. Des études sur la toxicité de développement ont montré chez le rat à partir d'une dose de 10 mg/kg (4 fois la concentration plasmatique thérapeutique) et chez le lapin à partir d'une dose de 2,5 mg/kg (3 fois la concentration plasmatique thérapeutique) une toxicité embryonnaire ainsi que des effets sur le placenta attribués essentiellement à une augmentation de la tendance hémorragique. Des indices d'un effet tératogène primaire n'ont pas été constatés.
+
+Autres données
+
+Un test de phototoxicité in vitro (test 3T3) n'a révélé aucun risque pour l'utilisation thérapeutique prévue de rivaroxaban.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Ne pas conserver au-dessus de 25 °C.
+
+Conserver hors de portée des enfants.
+
+Remarques concernant la manipulation
+
+Broyage des comprimés
+
+Les comprimés pelliculés Rivaroxaban Viatris peuvent être écrasés et mis en suspension dans 50 ml d'eau, administrés par sonde nasogastrique ou par sonde gastrique, après vérification de leur position correcte dans l'estomac. Ensuite, la sonde doit être rincée à l'eau. Étant donné que l'absorption du rivaroxaban dépend du lieu de libération de la substance active, il convient d'éviter d'utiliser le rivaroxaban en position distale par rapport à l'estomac, car cela peut entraîner une diminution de l'absorption et donc de l'exposition à la substance active. L'administration d'une alimentation entérale n'est pas nécessaire immédiatement après l'administration des comprimés pelliculés écrasés à 10 mg. Une alimentation entérale doit être administrée immédiatement après l'administration des comprimés pelliculés broyés à 15 mg ou 20 mg.
+
+Numéro d’autorisation
+
+69319 (Swissmedic).
+
+Présentation
+
+Comprimés pelliculés à 10 mg: emballages de 10, 30 et 98 comprimés pelliculés. (B)
+
+Comprimés pelliculés à 15 mg: emballages de 14, 28 ou 98 comprimés pelliculés. (B)
+
+Comprimés pelliculés à 20 mg: emballages de 14, 28 ou 98 comprimés pelliculés. (B)
+
+Titulaire de l’autorisation
+
+Viatris Pharma GmbH, 6312 Steinhausen.
+
+Mise à jour de l’information
+
+Mai 2025.
+
+[Version 104 F]

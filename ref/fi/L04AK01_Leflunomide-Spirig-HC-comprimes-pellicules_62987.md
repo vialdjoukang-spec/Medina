@@ -1,0 +1,565 @@
+---
+titre: "Léflunomide Spirig HC, comprimés pelliculés"
+titulaire: "Spirig HealthCare AG"
+atc: L04AK01
+substances: "Léflunomide"
+autorisation_swissmedic: 62987
+date_version: 2025-11-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/d487c4e5d6b14755992738b9da1057dd-fr.html
+---
+
+Léflunomide Spirig HC, comprimés pelliculés
+
+Composition
+
+Principes actifs
+
+Léflunomide.
+
+Excipients
+
+Noyau: lactose monohydraté 18,50 mg (pour les comprimés pelliculés de 10 mg) resp. 37,00 mg (pour les comprimés pelliculés de 20 mg) resp. 185,00 mg (pour les comprimés pelliculés de 100 mg), amidon de maïs, crospovidone, povidone K 30, stéarate de magnésium, silice colloïdale anhydre.
+
+Pelliculage: hypromellose, macrogol 8000, dioxyde de titane (E 171), oxyde de fer jaune (E 172) (uniquement pour les comprimés pelliculés de 20 mg), talc.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+1 comprimé pelliculé contient: 10 mg, 20 mg resp. 100 mg de léflunomide.
+
+Indications/Possibilités d’emploi
+
+Traitement de la polyarthrite rhumatoïde active.
+
+Traitement du rhumatisme psoriasique actif.
+
+Posologie/Mode d’emploi
+
+Adultes
+
+Posologie usuelle
+
+Polyarthrite rhumatoïde active
+
+Le traitement par le léflunomide est habituellement débuté par une dose de charge de 100 mg administrée une fois par jour pendant 3 jours. L’omission de la dose de charge peut diminuer le risque d’apparition d’effets indésirables (voir «Propriétés/Effets» pour de plus amples informations relatives à la dose de charge). La dose d’entretien recommandée est de 20 mg de léflunomide une fois par jour. Si la dose de 20 mg est mal tolérée, elle peut être réduite à 10 mg une fois par jour (voir «Mises en garde et précautions»).
+
+Rhumatisme psoriasique actif
+
+Le traitement par le léflunomide est débuté par une dose de charge de 100 mg administrée une fois par jour pendant 3 jours. La dose d’entretien recommandée est de 20 mg de léflunomide une fois par jour.
+
+Les ALAT (SGPT) doivent être contrôlées avant le début du traitement puis tous les mois ou à intervalles plus fréquents pendant les 6 premiers mois de traitement et ensuite toutes les 8 semaines.
+
+Une numération globulaire complète, comportant une numération et une formule leucocytaire et une numération plaquettaire, doit être réalisée avant le début du traitement, puis toutes les 2 semaines pendant les 6 premiers mois, puis toutes les 8 semaines (voir «Mises en garde et précautions»).
+
+Groupes de patients particuliers
+
+L’expérience clinique disponible à ce jour ne permet pas de donner des recommandations posologiques concernant les groupes suivants:
+
+– patients atteints d’une fonction rénale diminuée (créatininémie > 133 µmol/l (1,5 mg/dl))
+
+– patients présentant une hypoprotéinémie sévère, par ex. en cas d’insuffisance hépatique sévère ou de syndrome néphrotique.
+
+Aucun ajustement de dose n’est requis chez les sujets âgés.
+
+Association avec d’autres médicaments antirhumatismaux
+
+Si le patient est déjà traité par AINS et/ou par corticoïdes à faible dose, ceux-ci peuvent être poursuivis après la mise en route du traitement par le léflunomide. L’administration concomitante de léflunomide (10 à 20 mg/jour) et de méthotrexate (10 à 25 mg/semaine) à des patients atteints de polyarthrite rhumatoïde a montré qu’il n’y avait pas d’interaction pharmacocinétique entre les deux produits (voir «Interactions»). L’utilisation de léflunomide en association avec les antipaludéens utilisés dans les affections rhumatismales (par ex. chloroquine ou hydroxychloroquine), les sels d’or administrés par voie orale ou intramusculaire, la D-pénicillamine, l’azathioprine ou d’autres immunosuppresseurs (à l’exception du méthotrexate) n’a pas été étudiée. Le risque lié à une association de traitements de fond, en particulier lors de traitement à long terme, est inconnu. Puisqu’une telle thérapeutique peut conduire à une toxicité additive ou même synergique (par ex. hépato- ou hémato-toxicité), une association avec un autre traitement de fond (par ex. le méthotrexate) n’est pas souhaitable. Par ailleurs, le remplacement du léflunomide par un autre traitement de fond, sans période de washout, peut augmenter la possibilité de risques additifs d’effets indésirables, même longtemps après l’arrêt du léflunomide.
+
+Précautions d’utilisation
+
+Les comprimés pelliculés de Léflunomide Spirig HC doivent être avalés sans être croqués, avec une quantité suffisante de liquide. L’absorption du léflunomide n’est pas affectée par l’ingestion simultanée d’aliments.
+
+Enfants et adolescents
+
+En raison d’un manque d’expérience clinique le léflunomide n’est pas recommandé chez l’enfant et l’adolescent âgé de moins de 18 ans.
+
+Contre-indications
+
+La prise de Léflunomide Spirig HC est contre-indiquée dans les situations suivantes:
+
+·hypersensibilité au léflunomide, tériflunomide  (notamment antécédent de syndrome de Stevens-Johnson, syndrome de Lyell ou érythème polymorphe) ou à l’un des excipients.
+
+·immunodéficience grave, par ex. SIDA
+
+·dysfonction médullaire grave ou anémie sévère, leucopénie, neutropénie ou thrombopénie d’origine autre que la polyarthrite rhumatoïde ou le rhumatisme psoriasique
+
+·infections graves
+
+·insuffisance hépatique
+
+·insuffisance rénale modérée à sévère, en raison de l’expérience clinique insuffisante dans ce groupe de patients
+
+·patients présentant une hypoprotéinémie sévère, par ex. en cas de syndrome néphrotique
+
+·les hommes susceptibles de procréer et n’utilisant pas de méthode contraceptive mécanique au cours du traitement par le léflunomide
+
+·les femmes enceintes ou en âge de procréer n’utilisant pas de méthode contraceptive efficace pendant le traitement et une certaine période de temps après l’arrêt du traitement (voir «Grossesse, Allaitement»).
+
+Les femmes ne doivent pas allaiter pendant le traitement par le léflunomide.
+
+En raison d’un manque d’expérience clinique le léflunomide n’est pas recommandé chez l’enfant et l’adolescent âgé de moins de 18 ans.
+
+Mises en garde et précautions
+
+Léflunomide Spirig HC ne doit être administré aux patients que sous surveillance médicale.
+
+Le métabolite actif du léflunomide A771726 (tériflunomide) a une demi-vie longue, habituellement de 1 à 4 semaines. Des effets indésirables graves peuvent survenir (par ex.: réactions hépatotoxiques, hématologiques ou réactions allergiques, voir ci-dessous), même après l’arrêt du traitement par le léflunomide. Par conséquent, une procédure de washout et de surveillance devront être suivies lorsque de tels effets toxiques surviennent, ou lorsque le léflunomide est remplacé par un autre traitement de fond (par ex. le méthotrexate), ou encore lorsqu’une grossesse (prévue ou non prévue (voir «Surdosage»).
+
+De même, un traitement récent par des médicaments hépatotoxiques ou hématotoxiques (par ex. le méthotrexate) pourrait augmenter l’apparition d’effets secondaires; aussi, l’instauration d’un traitement par léflunomide doit être envisagée avec prudence, en prenant en compte la balance bénéfices/risques et une surveillance des plus attentives est recommandée au début du traitement de relais par le léflunomide. En cas de suspicion de réactions immunologiques/allergiques sévères, une administration prolongée de colestyramine ou de charbon activé peut être nécessaire pour achever une élimination rapide et suffisante.
+
+Une co-administration du tériflunomide avec le léflunomide n'est pas recommandée puisque le léflunomide est le composé parent du tériflunomide.
+
+Réactions hépatiques
+
+Il a été rapporté au cours du traitement par le léflunomide de rares cas d’atteintes hépatiques sévères, y compris des cas d’évolution fatale. La plupart des cas sont survenus au cours des 6 premiers mois. Bien que dans la plupart des cas d’autres facteurs de risque aient été présents, une relation causale avec le léflunomide ne peut pas être exclue. Il est donc indispensable de se conformer strictement aux recommandations de surveillance indiquées.
+
+Un traitement concomitant avec le méthotrexate et/ou un autre traitement hépatotoxique peut entraîner un risque accru de réactions hépatiques graves et est déconseillé.
+
+Les ALAT (SGPT) doivent être contrôlées avant le début du traitement puis tous les mois ou à intervalles plus fréquents pendant les 6 premiers mois de traitement et ensuite toutes les 6 à 8 semaines. En cas d’élévation des ALAT (SGPT) entre 2 et 3 fois la limite supérieure de la normale, une diminution de la dose de 20 mg à 10 mg peut être envisagée et une surveillance des transaminases doit être réalisée toutes les semaines. Si l’élévation des ALAT (SGPT) persiste à plus de 2 fois la limite supérieure de la normale ou si les ALAT s’élèvent à plus de 3 fois la limite supérieure de la normale après réduction de posologie, le léflunomide doit être arrêté et une procédure de washout doit être initiée (voir «Surdosage»). Il est recommandé de maintenir la surveillance des enzymes hépatiques après l’arrêt du traitement par le léflunomide jusqu’à ce que les taux des enzymes hépatiques se soient normalisés.
+
+L’A771726, métabolite actif du léflunomide, étant fortement lié aux protéines plasmatiques et éliminé par métabolisation hépatique et excrétion biliaire, les taux plasmatiques de l’A771726 peuvent être plus élevés chez les patients présentant une hypoprotéinémie. Léflunomide Spirig HC est contre-indiqué chez les patients présentant une hypoprotéinémie sévère ou une insuffisance hépatique.
+
+Réactions hématologiques
+
+Une numération globulaire complète, comportant une numération et une formule leucocytaire et une numération plaquettaire, doit être réalisée avant le début du traitement, puis toutes les 2 semaines pendant les 6 premiers mois, puis toutes les 8 semaines.
+
+Chez les patients ayant une anémie, une leucopénie et/ou une thrombopénie préexistantes, ainsi que chez les patients présentant des anomalies de la fonction médullaire ou un risque d’insuffisance médullaire, le risque d’anomalies hématologiques augmente (voir «Interactions»).
+
+Dans les cas suivants un contrôle fréquent de la formule hématologique est nécessaire (numération globulaire complète comportant une numération et une formule leucocytaire et une numération plaquettaire):
+
+·en cas d’administration récente ou concomitante de produits immunosuppresseurs ou hématotoxiques ou lorsqu’un traitement par le léflunomide est mis en route après l’administration de ces produits sans qu’il ait eu entre temps de période de washout;
+
+·chez les patients ayant des antécédents d‘anomalies hématologiques importantes ou présentant au début des anomalies hématologiques importantes d’origine autre que la polyarthrite rhumatoïde.
+
+Si des réactions hématologiques à retentissement clinique apparaissent (incluant une pancytopénie), le traitement par Léflunomide Spirig HC et les immunosuppresseurs concomitants doit être arrêté et une procédure de washout doit être instaurée.
+
+Réactions cutanées
+
+En cas de stomatite ulcéreuse, l’administration de léflunomide doit être arrêtée.
+
+De très rares cas de Syndrome de Stevens-Johnson ou de syndrome de Lyell, de nécrolyse épidermique toxique et DRESS (drug reaction with eosinophilia and systemic symptoms) ont été rapportés chez les patients traités par le léflunomide  (voir «Effets indésirables»). Dès qu’une réaction cutanée ou muqueuse de ce type est observée, conduisant à suspecter ce type de réactions graves, Léflunomide Spirig HC et tout autre médicament associé pouvant être mis en cause doivent être arrêtés et une procédure d'élimination («washout») doit être débutée immédiatement. Un washout complet du léflunomide est essentiel dans de tels cas (voir «Surdosage»).
+
+Dans de tels cas, une nouvelle exposition au léflunomide est contre-indiquée.
+
+Rarement, le DRESS peut être compliqué d'une lymphohistiocytose hémophagocytaire (LH), y compris un syndrome d'activation des macrophages (SAM).
+
+Des cas de LH/SAM ont également été signalés indépendamment d'un DRESS. La LH et le SAM sont des pathologies hyper-inflammatoires graves et potentiellement mortelles. Si un patient développe l'une de ces pathologies, le traitement par Léflunomide Spirig HC doit être interrompu et une procédure d'élimination accélérée (washout) doit être effectuée. Une détection précoce et une prise en charge rapide sont cruciales pour améliorer le pronostic.
+
+Des ulcères cutanés peuvent survenir pendant le traitement par le léflunomide. Si un ulcère cutané associé au léflunomide est suspecté ou si les ulcères cutanés persistent malgré un traitement approprié, l'arrêt du léflunomide et une procédure de washout doivent être envisagés. La décision de reprendre le léflunomide à la suite d'ulcères cutanés doit être fondée sur le jugement clinique d'une cicatrisation adéquate.
+
+Une altération de la cicatrisation des plaies après une intervention chirurgicale peut survenir chez les patients traités par léflunomide. Après une évaluation individuelle, une interruption du traitement par léflunomide peut être envisagée pendant la période périchirurgicale, suivie par la réalisation d’une procédure de washout comme décrite plus bas dans cette section. En cas d’interruption du traitement, la décision de reprendre le traitement par léflunomide doit se baser sur une évaluation clinique qui témoigne d’une cicatrisation adéquate des plaies.
+
+Infections
+
+Les médicaments à visée immunosuppressive peuvent majorer la sensibilité des patients aux infections, y compris les infections opportunistes, et celles-ci peuvent être de nature plus grave. Par conséquent, toute infection nécessitera un traitement précoce et à dose élevée.
+
+Quelques rares cas d’infections sévères, y compris de septicémie, dont certains ont eu une évolution fatale, ont été rapportés. Dans la plupart des cas, d’autres facteurs d’influence (co-administration avec d’autres médicaments immunosuppresseurs, affections concomitantes) augmentant la sensibilité aux infections, étaient également présents.
+
+En cas de survenue d’une infection sévère non contrôlée, il peut s’avérer nécessaire d’interrompre le traitement par le léflunomide et d’accélérer son élimination par la procédure de washout.
+
+De rares cas de Leucoencéphalite Multifocale Progressive (LMP) ont été rapportés chez des patients recevant du léflunomide parmi d'autres immunosuppresseurs.
+
+Avant de commencer le traitement, tous les patients doivent être dépistés pour la tuberculose active et inactive (latente), selon les recommandations locales. Les patients ayant un antécédant de tuberculose doivent être très étroitement surveillés à cause de la possibilité de réactivation de l'infection.
+
+Vaccinations: voir «Interactions».
+
+Réactions respiratoires
+
+Une pneumopathie interstitielle ainsi que, dans de très rares cas, une hypertension pulmonaire, ont  été rapportées pendant un traitement par léflunomide (voir «Effets indésirables») et peuvent menacer le pronostic vital. Le risque de leur occurrence augmente chez les patients avec un historique de pneumopathie interstitielle. Elles peuvent se manifester de manière aiguë durant une thérapie. Des troubles pulmonaires tels qu’une dyspnée ou une toux peuvent exiger une interruption de la thérapie et des investigations.
+
+Neuropathie périphérique
+
+Des cas de neuropathie périphérique ont été rapportés chez des patients traités par léflunomide. La plupart des patients ont récupéré suite à l’arrêt du traitement par léflunomide mais certains patients ont conservé des symptômes persistants. Un âge supérieur à 60 ans, la prise concomitante de médicaments neurotoxiques et un diabète peuvent accroître le risque de neuropathie périphérique. Si un patient traité par léflunomide développe une neuropathie périphérique, il faut envisager l’arrêt du traitement par léflunomide et l’instauration de la procédure du washout.
+
+Tension artérielle
+
+La pression artérielle doit être contrôlée avant le début du traitement par léflunomide puis de façon régulière.
+
+Insuffisance rénale
+
+L’expérience clinique disponible à ce jour ne permet pas de donner des recommandations posologiques chez les patients présentant une insuffisance rénale. La liaison protéique importante du métabolite actif A771726 doit être prise en considération.
+
+Troubles gastro-intestinaux
+
+Une colite, y compris une colite microscopique a été rapportée chez les patients traités par le léflunomide. Un diagnostic doit être posé et des mesures appropriées doivent être mises en œuvre chez les patients sous traitement par léflunomide et présentant une diarrhée chronique inexpliquée.
+
+Interférence avec la détermination des taux de calcium ionisé
+
+L’analyse des taux de calcium ionisé peut aboutir à des valeurs faussement plus faibles sous traitement par léflunomide et/ou tériflunomide (le métabolite actif de léflunomide) selon le type d'analyseur de calcium ionisé utilisé (par ex. analyseur des gaz du sang). Dès lors, il est nécessaire de remettre en question la plausibilité des taux de calcium ionisé plus faibles observés chez les patients traités par léflunomide ou tériflunomide. En cas de résultats douteux, il est recommandé de déterminer la concentration en calcium sérique totale corrigée en fonction de l'albumine.
+
+Procédure de washout
+
+Après l’arrêt du traitement par le léflunomide:
+
+·Soit par administration de 8 g de colestyramine 3 fois par jour sur une période de 11 jours;
+
+·Soit par administration de 50 g de charbon activé en poudre 4 fois par jour sur une période de 11 jours.
+
+Quelle que soit la procédure, on contrôlera les taux plasmatiques à deux reprises à un intervalle d’au moins 14 jours et on respectera une période d’attente d’un mois et demi entre le 1er taux inférieur à 0,02 mg/l et l’événement nécessitant un washout (par ex. une grossesse).
+
+La colestyramine et le charbon activé en poudre pouvant influencer l’absorption des œstrogènes et des progestatifs, on ne peut pas garantir qu’une telle contraception soit efficace durant la période de washout. Il est recommandé d’utiliser une autre méthode contraceptive pendant la période de washout.
+
+Procréation (femmes)
+
+Voir «Grossesse, Allaitement».
+
+Procréation (hommes)
+
+Les patients masculins devront être prévenus d’une possible toxicité fœtale transmise par le père. Il convient d’assurer une contraception efficace pendant le traitement avec léflunomide.
+
+Il n’existe pas de données spécifiques sur le risque de toxicité fœtale d’origine masculine. Il n’a pas été conduit d’étude spécifique chez l’animal pour évaluer ce risque. Afin de réduire tout risque éventuel, les hommes souhaitant procréer doivent envisager d’interrompre le traitement par le léflunomide et d’initier une procédure de washout.
+
+Quelle que soit la méthode de washout utilisée (colestyramine ou charbon actif), les concentrations plasmatiques de l’A771726 doivent être mesurées une première fois. Ensuite, les taux plasmatiques de l’A771726 doivent être contrôlés après un délai d’au moins 14 jours. Si dans les deux dosages, les concentrations plasmatiques sont inférieures à 0,02 mg/l, et après une période d’attente d’au moins 3 mois, le risque de toxicité fœtale est très faible.
+
+Lactose
+
+Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose ne devraient pas prendre ce médicament.
+
+Interactions
+
+Les études d’interactions ont été réalisées chez les adultes.
+
+Une majoration des effets secondaires peut survenir en cas d’administration récente ou concomitante du léflunomide et de produits hépatotoxiques, hématotoxiques ou immunosuppresseurs, ou lorsqu’un traitement par le léflunomide est initié après l’administration de ces produits sans qu’il y ait entre temps de période de washout.
+
+Méthotrexate: dans une étude conduite chez 30 patients et étudiant l’association du léflunomide (à la dose de 10 à 20 mg par jour) au méthotrexate (à la dose de 10 à 25 mg par semaine), une augmentation des taux d’enzymes hépatiques de 2 à 3 fois au-delà de la limite supérieure de la normale a été observée chez 5 des 30 patients. Ces anomalies ont été réversibles chez 2 patients pour lesquels les traitements ont été poursuivis et chez 3 patients pour lesquels le léflunomide seul a été interrompu. Une augmentation des enzymes hépatiques à plus de 3 fois la valeur supérieure de la normale a été observée chez 5 autres patients. Toutes ces élévations enzymatiques ont été réversibles pour 2 d’entre elles alors que les 2 traitements étaient poursuivis et également pour les 3 autres après arrêt du léflunomide.
+
+Vaccination: aucune donnée clinique sur l'efficacité et la sécurité au cours d'un traitement par le léflunomide n'est disponible. Cependant, les vaccinations avec un vaccin vivant ne sont pas recommandées. Un vaccin vivant ne devra être administré qu'après arrêt du traitement par le léflunomide depuis plus de 6 mois.
+
+Warfarine (et dérivés de la coumarine): des cas d'élévation du temps de prothrombine ont été rapportés lorsque la warfarine et le léflunomide étaient co-administrés. Une interaction pharmacodynamique a été observée dans une étude de pharmacologie clinique. C'est pourquoi, lorsque la warfarine est co-administrée, il est recommandé de surveiller étroitement et faire le suivi de l'INR.
+
+Alimentation: l'absorption n'est pas affectée par la prise de nourriture.
+
+En raison des effets hépatotoxiques additifs, il est recommandé d’éviter de consommer de l’alcool au cours d’un traitement par le léflunomide.
+
+La liaison protéique importante de l’A771726 est susceptible d’entraîner un déplacement d’autres médicaments à forte liaison protéique.
+
+Effet d'autres médicaments sur le léflunomide:
+
+Des études in vitro d'inhibition dans les microsomes humains du foie suggèrent que les cytochromes P450 (CYP) 1A2, 2C19 et 3A4 sont impliqués dans le métabolisme du léflunomide. Une étude d'interaction in vivo avec le léflunomide et la cimétidine (inhibiteur faible non spécifique du cytochrome P450) a démontré l'absence d'impact significatif sur l'exposition au A771726.
+
+L’administration concomitante à des volontaires d’une dose unique de léflunomide et de doses multiples de rifampicine (un inducteur non spécifique du CYP) n’a été suivie d’aucune modification de la pharmacocinétique du léflunomide et de son métabolite mineur le TFMA.
+
+Par contre, les taux plasmatiques de l’A771726 ont été augmentés d’environ 40% sans modification significative des aires sous la courbe. Le mécanisme en cause n’est pas clairement expliqué. La possibilité que le taux plasmatique du léflunomide puisse continuer à augmenter suite à des doses multiples doit être prise en considération chez les patients recevant de la rifampicine en association avec du léflunomide.
+
+L'administration de colestyramine ou du charbon activé entraîne une diminution rapide et significative de la concentration plasmatique de l’A771726. Sous traitement par le léflunomide il faut éviter de prendre de la colestyramine ou du charbon activé. Le mécanisme implique vraisemblablement l’interruption du cycle entéro-hépatique et/ou la survenue d’une dialyse gastro-intestinale de l’A771726.
+
+Si le patient est déjà traité par anti-inflammatoires non stéroïdiens (AINS) et/ou par corticoïdes, ceux-ci peuvent être poursuivis après la mise en route du traitement par le léflunomide.
+
+Effet du léflunomide sur d'autres médicaments:
+
+Substrats Breast Cancer Resistance Protein (BCRP): bien qu'une interaction pharmacocinétique avec un substrat du BCRP (par ex. rosuvastatine) ait été observée avec l’A771726, aucune interaction pharmacocinétique n’a été démontrée chez 12 patients entre le léflunomide (10 à 20 mg par jour) et le méthotrexate (un substrat BCRP; 10 à 25 mg par semaine).
+
+Des études d'interaction in vivo ont démontré une absence d'interaction significative entre le léflunomide et des contraceptifs oraux triphasiques. Malgré tout, une interaction pharmacocinétique avec des contraceptifs oraux (0,03 mg éthinylestradiol et 0,15 mg lévonorgestrel) a été observée avec l’A771726. Bien qu'il ne soit pas attendu que cette interaction affecte l'efficacité des contraceptifs, il faut prendre en considération le type de contraceptif oral utilisé.
+
+Les études d'interactions pharmacocinétique et pharmacodynamique suivantes ont été réalisées avec l’A771726.
+
+Elles montrent une inhibition in vivo du CYP2C8 par l'A771726. De ce fait, il est recommandé de faire un suivi des patients avec un traitement concomitant de médicaments métabolisés par CYP2C8 tels que répaglinide, paclitaxel, pioglitazone ou rosiglitazone à cause du risque d'une exposition plus élevée de ces patients à ces médicaments.
+
+Les résultats de ces études suggèrent que l’A771726 est un inducteur faible du CYP1A2 in vivo. Les médicaments métabolisés par CYP1A2 (comme la duloxétine, alosétron, théophylline et tizanidine) doivent être utilisés avec précaution durant un traitement concomitant avec le léflunomide car cela pourrait entraîner une diminution de l'efficacité de ces produits.
+
+Effet sur les substrats BCRP et/ou organic anion transporting peptide (OATP) B1 et B3: il ne faut pas dépasser la dose de 10 mg/jour dans le cas d’une l’utilisation concomitante avec la rosuvastatine.
+
+Pour d’autres substrats des BRCP: méthotrexate, topotécan, sulfasalazine, daunorubicine, doxorubicine et de la famille des OATP, spécialement l’inhibiteur de la HMG-CoA reductase (comme simvastatine, atorvastatine, pravastatine, méthotrexate, natéglinide, répaglinide, rifampicine), le traitement concomitant doit être réalisé avec précaution. Les patients doivent être suivis de près pour les signes et symptômes liés à l’exposition excessive à ces produits et une réduction de la dose de ceux-ci doit alors être considérée.
+
+Grossesse, Allaitement
+
+Grossesse
+
+Des études chez les animaux ont relevé des lésions chez le fœtus. L’A771726 est tératogène chez les rats et les lapins et pourrait entraîner des lésions fatales chez le fœtus humain.
+
+Une étude prospective sur l’issue de la grossesse a été conduite par OTIS (Organization of Teratology Information Specialists) pour évaluer le risque de malformations congénitales et autres conséquences indésirables liées à l’exposition par inadvertance au léflunomide durant le premier trimestre de la grossesse. Les sujets enceintes ont été recrutées dans un des 3 groupes: les femmes avec un diagnostic d’arthrite rhumatoïde qui ont utilisé au moins une dose de léflunomide (N = 64), en comparaison avec des sujets souffrant de la même maladie qui n’ont pas été exposées au léflunomide durant leur grossesse (N = 108) et des femmes enceintes saines (N = 78). Une exposition au léflunomide par inadvertance durant le premier trimestre de grossesse suivi de l’arrêt du traitement et d’une procédure de washout avec la cholestyramine a résulté en des défauts structurels majeurs dans 5.4% des nouveau-nés vivants en comparaison aux 2 autres groupes (4,2% dans le groupe avec maladie correspondante et 4,2% dans le groupe de femmes enceintes saines).
+
+Les résultats de cette étude, qui a été stoppée prématurément dû à la diminution du recrutement, ne change pas la contre-indication initiale de l’utilisation du léflunomide durant la grossesse. En particulier, l’étude n’abordait pas les possibles risques associés à une utilisation du léflunomide tout au long du développement embryonnaire car tous les sujets appartenant au groupe exposé au léflunomide ont arrêté le traitement dès l’annonce de la grossesse; presque tous ont suivi au moins une procédure de washout et la plupart des sujets n’a pas été exposée au léflunomide au-delà de 3 mois post-conception.
+
+Le léflunomide ne doit pas être administré à la femme enceinte ou à la femme en âge de procréer qui n’utiliserait pas une méthode efficace de contraception pendant le traitement et jusqu’à la diminution du taux au-dessous de 0,02 mg/l (période d’attente ou période de washout; voir ci-dessus). Avant de débuter un traitement par le léflunomide il faut s’assurer que la patiente n’est pas enceinte.
+
+Il est recommandé que les femmes en âge de procréer ne reçoivent Léflunomide Spirig HC qu’après confirmation qu’elles utilisent une méthode contraceptive efficace. Lors d’une étude ayant administré à des volontaires saines du léflunomide associé à une pilule contraceptive orale triphasique contenant 30 µg d’éthinylestradiol, aucune réduction de l’activité contraceptive de la pilule n’a été observée, et la pharmacocinétique de l’A771726 est demeurée dans les limites prévisibles.
+
+Les patientes doivent être informées qu’en cas de retard menstruel, ou autre motif faisant suspecter une grossesse, elles doivent avertir immédiatement leur médecin pour faire pratiquer un test de grossesse. Si celui-ci est positif, le médecin et la patiente doivent discuter du risque pour la grossesse en cours.
+
+Si la procédure du washout (voir «Mises en garde et précautions») est instaurée dès que l’on constate un retard menstruel, il est possible que la diminution rapide du taux sanguin du métabolite actif permette de diminuer le risque que le léflunomide peut avoir pour le fœtus.
+
+Chez les femmes sous traitement par le léflunomide et souhaitant avoir un enfant, le respect d’une période d’attente (voir ci-dessous) ou l’initiation d’une procédure de washout est recommandée afin de s’assurer que le fœtus n’est pas exposé à des concentrations toxiques de l’A771726 (concentration-seuil inférieure à 0,02 mg/l).
+
+Période d’attente
+
+Les concentrations plasmatiques de l’A771726 peuvent être supérieures à 0,02 mg/l pendant une durée prolongée. On peut s’attendre à ce que les concentrations décroissent en dessous de 0,02 mg/l environ 2 ans après l’arrêt du traitement par léflunomide.
+
+Après une période d’attente de 2 ans, les concentrations plasmatiques de l’A771726 sont mesurées une première fois.
+
+Ensuite, les taux plasmatiques de l’A771726 doivent être contrôlés à nouveau après un délai d’au moins 14 jours. Si, lors des 2 dosages, les concentrations sont inférieures à 0,02 mg/l, le risque tératogène est négligeable.
+
+Il faut respecter une période d’attente d’un mois et demi entre le premier taux inférieur à 0,02 mg/l et la fécondation.
+
+Pour de plus amples informations sur les examens de contrôle, contactez le titulaire de l’autorisation de mise sur le marché ou son représentant local (voir «Titulaire de l’autorisation»).
+
+Les femmes en âge de procréer doivent être averties de la nécessité d’une période d’attente de 2 ans après l’arrêt du traitement avant d’envisager une grossesse. Si une période d’environ 2 ans sous contraception fiable n’est pas envisageable, une prophylaxie par washout peut être conseillée.
+
+Allaitement
+
+Les études animales ont indiqué que le léflunomide et ses métabolites passent dans le lait maternel. Par conséquent, les femmes ne doivent pas allaiter lorsqu’elles sont traitées par le léflunomide.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+L’occurrence de vertiges pourrait altérer la capacité du patient à se concentrer et de réagir correctement. Dans ce cas, les patients ne doivent pas conduire ou utiliser des machines.
+
+Effets indésirables
+
+Les effets indésirables sont rangés par classe de système d'organes de la classification MedDRA et par fréquence selon la convention suivante:«très fréquents» (≥ 1/10), «fréquents» (≥ 1/100 à < 1/10), «occasionnels» (≥ 1/1000 à < 1/100), «rares» (≥ 1/10 000 à < 1/1000), «très rares» (< 1/10 000), «Fréquence inconnue» (ne peut être estimée sur la base des données disponibles).
+
+Infections et infestations
+
+Rares: infections sévères, y compris états septiques pouvant être fatals.
+
+Les immunosuppresseurs peuvent augmenter la sensibilité aux infections, y compris aux infections opportunistes. Ainsi l’incidence globale des infections telles que rhinite, bronchite ou pneumonie peut augmenter.
+
+Tumeurs bénignes, malignes et non précisées (incl kystes et polypes)
+
+On sait que le risque d’affections malignes et notamment les syndromes lymphoprolifératifs, est augmenté lors d’utilisation de certains immunosuppresseurs.
+
+Affections hématologiques et du système lymphatique
+
+Fréquents: leucopénie avec leucocytes > 2 G/l.
+
+Occasionnels: anémie, thrombopénie modérée (plaquettes < 100 G/l).
+
+Rares: leucopénie sévère avec leucocytes < 2 G/l, éosinophilie et pancytopénie (probablement par mécanisme anti-prolifératif).
+
+Très rares: agranulocytose.
+
+L’utilisation récente, concomitante ou consécutive de produits potentiellement myélotoxiques peut être associée à un risque majoré d’effets hématologiques.
+
+Affections du système immunitaire
+
+Fréquents: réactions allergiques.
+
+Très rares: réactions anaphylactiques/anaphylactoïdes sévères, vascularites (y compris vascularite cutanée nécrosante).
+
+Fréquence inconnue: lupus érythémateux disséminé ou réactions semblables à un lupus.
+
+Troubles du métabolisme et de la nutrition
+
+Fréquents: augmentation de la CPK (créatine phosphokinase).
+
+Occasionnels: hypokaliémie, hyperlipidémie, hypophosphatémie. Les taux d’acide urique diminuent généralement.
+
+Rares: augmentation de la LDH (lactate deshydrogenase).
+
+Affections psychiatriques
+
+Occasionnels: anxiété.
+
+Affections du système nerveux
+
+Fréquents: céphalées, étourdissements, paresthésies.
+
+Occasionnels: perturbations du goût.
+
+Très rares: neuropathie périphérique.
+
+Affections cardiaques
+
+Fréquents: augmentation de la pression artérielle.
+
+Rares: hypertension artérielle sévère.
+
+Affections respiratoires, thoraciques et mediastinales
+
+Rares: pneumopathies interstitielles pouvant être fatales.
+
+Fréquence inconnue: hypertension pulmonaire, nodule pulmonaire.
+
+Affections gastro-intestinales
+
+Très fréquents: diarrhées (17,5%).
+
+Fréquents: nausées, douleurs abdominales, vomissements, lésions de la muqueuse buccale (par ex. stomatite aphteuse ou aphtes buccaux), colites, y compris les colites microscopiques comme la colite lymphocytaire ou la colite collagène.
+
+Très rares: pancréatite.
+
+Affections hépatobiliaires
+
+Fréquents: élévation des transaminases hépatiques (notamment ALAT).
+
+Rares: élévation des valeurs de gamma-GT, phosphatases alcalines ou bilirubine, hépatite, ictère/cholestase.
+
+Très rares: atteintes hépatiques sévères, notamment insuffisance hépatique aiguë et nécrose hépatique aiguë pouvant être d’évolution fatale.
+
+Affections de la peau et du tissu sous-cutané
+
+Fréquents: augmentation de la chute des cheveux, éruption (notamment éruption maculopapulaire), prurit, eczéma et sécheresse cutanée.
+
+Occasionnels: urticaire.
+
+Très rares: syndrome de Stevens-Johnson, syndrome de Lyell, érythème polymorphe.
+
+Fréquence inconnue: lupus cutané érythémateux, psoriasis pustuleux ou aggravation d’un psoriasis, ulcère cutané, DRESS (réaction médicamenteuse avec éosinophilie et symptômes systémiques).
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Fréquents: ténosynovite.
+
+Occasionnels: rupture tendineuse; une relation de cause à effet n’a pas pu être prouvée.
+
+Affections du rein et des voies urinaires
+
+Fréquence inconnue: insuffisance rénale.
+
+Affections des organes de reproduction et du sein
+
+Fréquence inconnue: diminution faible et réversible de la concentration du sperme, du nombre et de la mobilité des spermatozoïdes.
+
+Troubles généraux et anomalies au site d’administration
+
+Fréquents: anorexie, amaigrissement (généralement non significatif), asthénie.
+
+Autres remarques
+
+Le métabolite actif A771726 a une longue demi-vie d’une à quatre semaines. Pour cette raison des effets indésirables peuvent survenir ou persister même après l’arrêt du traitement par le léflunomide. En cas de survenue d’un effet secondaire sévère ou s’il s’avère nécessaire, pour toute autre raison, d’éliminer rapidement l’A771726 de l’organisme, des mesures d’élimination telles que décrites dans «Surdosage» devront être entreprises et poursuivies, et éventuellement répétées en fonction de l’état clinique du patient.
+
+L’annonce d’effets secondaires présumés après l’autorisation est d’une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d’effet secondaire nouveau ou grave via le portail d’annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Des cas de surdosage prolongé chez des patients ayant pris quotidiennement jusqu’à 5 fois la dose journalière recommandée de léflunomide, ainsi que des cas de surdosage aigu chez des adultes et des enfants ont été rapportés. Dans la majorité des cas, aucun effet indésirable n’a été rapporté. Les effets secondaires apparus correspondaient au profil habituel de tolérance du léflunomide: douleur abdominale, nausée, diarrhée, élévation des enzymes hépatiques, anémie, leucopénie, prurit et rash.
+
+Conduite à tenir
+
+En cas de survenue d’un surdosage important ou d’une toxicité, il faudra administrer de la colestyramine ou du charbon activé. La colestyramine administrée par voie orale à la dose de 8 g trois fois par jour pendant 24 heures à trois volontaires a permis d’abaisser les taux plasmatiques de l’A771726 d’environ 40% en 24 heures et de 49 à 65% en 48 heures.
+
+L’administration de charbon activé (poudre mise en suspension) par voie orale ou par sonde nasogastrique (50 g toutes les 6 heures pendant 24 heures) s’est avérée abaisser les taux plasmatiques du métabolite actif A771726 de 37% en 24 heures et de 48% en 48 heures.
+
+Ces procédures d’élimination peuvent être répétées en fonction de l’état clinique de la personne. La durée d’une procédure de washout complète avec de la colestyramine ou du charbon activé est habituellement de 11 jours. Cette durée peut être modifiée en fonction des éléments cliniques ou des paramètres biologiques.
+
+Les études réalisées tant chez les patients hémodialysés que chez les patients sous DPCA (dialyse péritonéale continue ambulatoire) montrent que l’A771726, métabolite principal du léflunomide, n’est pas dialysable.
+
+Propriétés/Effets
+
+Code ATC
+
+L04AK01
+
+Mécanisme d’action
+
+Le léflunomide est un promédicament. Le métabolite actif A771726 inhibe la synthèse des pyrimidines ainsi que la tyrosine-protéine-kinase associée aux récepteurs. Le mécanisme exact de l’action immunosuppressive n’est pas encore élucidé.
+
+In vitro, après stimulation mitogénique, l’A771726 inhibe la prolifération des lymphocytes T, la synthèse de l’ADN et l’expression de certains antigènes présents à la surface de la cellule ou au sein du noyau et directement impliqués dans l’activation et la prolifération des lymphocytes T. L’A771726 inhibe la prolifération, stimulée par les mitogènes, des monocytes humains du sang périphérique, ainsi que la prolifération des lignées cellulaires murines et humaines transformées, et ce de façon dose-dépendante. Cette action antiproliférative est annulée par l’addition d’uridine au milieu de culture cellulaire, ce qui indique que l’A771726 agit au niveau de la voie de biosynthèse des pyrimidines. Les études de liaison ayant utilisé un ligand radiomarqué démontrent que le métabolite actif se lie, en l’inhibant, à l’enzyme humaine dihydroorotate déshydrogénase (DHODH).
+
+Pharmacodynamique
+
+Voir «Mécanisme d’action».
+
+Efficacité clinique
+
+On a pu observer une diminution de la vitesse de sédimentation (VS), des taux de protéine C-réactive (CRP) et du facteur rhumatoïde (FR) chez les patients atteints de polyarthrite rhumatoïde. Les essais cliniques ont démontré une amélioration du score de la sensibilité et du gonflement des articulations atteintes, une amélioration générale des symptômes (évaluée par le médecin ou estimée par le patient lui-même), une augmentation de la capacité fonctionnelle et de la qualité de vie. Les améliorations des paramètres radiologiques sont jusqu’à présent données sur 2 ans.
+
+L’efficacité du léflunomide chez les patients souffrant d’arthrite psoriasique a été observée dans une étude en double aveugle avec contrôle placebo et a été définie par les critères de répondeurs PsARC. Ceux-ci comprennent l’effet du médicament sur les inflammations et les douleurs articulaires ainsi que l’évaluation globale des patients et médecins. Le léflunomide a entraîné, par rapport au placebo, une amélioration significative des symptômes. Au bout de 6 mois de traitement, 59% des patients traités par le léflunomide et 29.7% des patients recevant le placebo ont répondu aux critères des répondeurs PsARC.
+
+Une amélioration de l‘état rhumatismal du patient peut apparaître dès 4 semaines après la mise en route du traitement par le léflunomide. Une amélioration complémentaire de l’état clinique peut apparaître après 4 à 6 mois de traitement. En règle générale, le léflunomide est administré au long cours.
+
+Le léflunomide a été évalué dans une étude multicentrique, randomisée, en double-aveugle, contrôlée chez 94 patients (47 par bras) présentant une arthropathie idiopathique juvénile (JRA), selon les critères de l’American College of Rheumatology (ACR). Les patients étaient âgés de 3 à 17 ans avec une arthropathie idiopathique juvénile, quel que soit le mode de survenue de la maladie, et sans traitement antérieur par méthotrexate ou léflunomide. Après 16 semaines de traitement (fin de l’étude), le taux de réponse a été de 68% pour les patients pédiatriques traités par léflunomide contre 89% pour ceux traités par méthotrexate selon le DOI (Definition Of Improvement ≥30%).
+
+Étude post-marketing
+
+Une étude multi-centrique (LEADER study), contrôlée et randomisée a évalué le taux de réponse de l’efficacité clinique chez les patients DMARD (Disease-modifying antirheumatic drug) naïfs  (n = 121) souffrant de RA (Rheumatoid Arthritis) et traités avec léflunomide, en se basant sur le critère ACR20 évalué à 3 mois comme critère principal dans 2 groupes de régimes à 2 dosage initiaux (avec ou sans dose de charge). Durant la période en double-aveugle des 3 premiers jours, 2 groupes parallèles ont reçu soit 20 mg soit 100 mg de léflunomide contre placebo. La période initiale était suivie par un maintien d’une période de 3 mois en ouvert, pendant laquelle les 2 groupes recevaient 20 mg de léflunomide par jour. L’efficacité de léflunomide a été confirmée dans cette étude, mais il n’a pas été observé de bénéfice global augmenté dans la population étudiée avec un régime comportant une dose de charge. En fin d’étude, le taux de réponse de ACR20 était de 58,5% dans le groupe avec dose de charge versus 77,8% dans le groupe sans dose de charge (p = 0,025). Concernant l’analyse des critères secondaires (ACR50, ACR 70, DAS28), aucune différence significative dans les 2 groupes n’a été observée avec un seuil de probabilité de 0,05. Une réponse clinique a été observée durant le premier mois de traitement dans plus de la moitié des sujets, sans différence significative à 30 jours entre groupes de traitements pour tous les critères d’efficacité.
+
+Les données de sécurité obtenues des 2 groupes de traitement étaient cohérents avec le profil de sécurité connu de léflunomide, cependant l’incidence des évènements gastro-intestinaux et de l’élévation des enzymes hépatiques tendait à être plus élevée chez les patients ayant reçu une dose de charge de 100 mg de léflunomide.
+
+Pharmacocinétique
+
+Le léflunomide n’est pas présent dans le plasma à des concentrations mesurables. Toutes les indications se fondent sur le taux du métabolite actif.
+
+Il semble, sur la base des études à doses répétées effectuées chez des patients atteints de polyarthrite rhumatoïde, que les paramètres pharmacocinétiques soient linéaires tout au long de la période de dose de charge utilisée lors des essais cliniques (à savoir 100 mg par jour pendant 3 jours) ainsi qu’avec les doses quotidiennes d’entretien comprises entre 5 et 25 mg. Dans ces études, l’effet clinique s’est révélé étroitement lié aux taux plasmatiques de l’A771726 et à la dose quotidienne de léflunomide. Les facteurs tels que l’âge, le sexe et la taille n’ont pas eu d’influence significative sur le plan clinique sur la clairance de l’A771726.
+
+Absorption
+
+Le léflunomide est rapidement et quasi complètement absorbé (la demi-vie d’absorption est de 0,45 heure chez le sujet sain). Il n’a pas été réalisé chez l’homme d’étude de la biodisponibilité absolue. La biodisponibilité relative par rapport à la suspension s’élève à environ 80 à 90%. Lors des études avec le produit radiomarqué, les pics de concentrations plasmatiques de l’A771726 ont été observés entre 5 et 24 heures. Le taux plasmatique moyen de l’A771726 à l’état d’équilibre a été d’environ 30 µg/ml.
+
+Le léflunomide peut être administré pendant les repas, les valeurs de l’ASC et de la Cmax s’étant avérées bioéquivalentes à jeun et en postprandial.
+
+Distribution
+
+Dans le plasma du sujet sain, l’A771726 est lié de façon importante à l’albumine. La fraction non liée de l’A771726 a été de 0,62%. La liaison de l’A771726 a été linéaire jusqu’à 573 µg/ml.
+
+La liaison plasmatique de l’A771726 est apparue légèrement diminuée et plus variable chez les patients atteints de polyarthrite rhumatoïde ou d’insuffisance rénale chronique, de sorte que la fraction non liée s’est élevée à respectivement 0,80% et 1,44%.
+
+En accord avec sa forte liaison protéique, l’A771726 a présenté un faible volume de distribution apparent (d’environ 11 litres).
+
+Métabolisme
+
+Le léflunomide est rapidement transformé en un métabolite actif, l’A771726, par un métabolisme de premier passage (ouverture du cycle) au niveau de la paroi intestinale et du foie. 13% de la substance mère sont hydroxylés et éliminés dans les urines sous forme de glucuronide (principalement dans les échantillons de 0 à 24 heures). Lors d’une étude ayant utilisé le léflunomide radiomarqué au 14C chez trois volontaires sains, aucune quantité de léflunomide inchangé n’a été décelée dans le plasma, les urines ou les fèces. Le seul métabolite plasmatique radiomarqué retrouvé a été l’A771726, sans qu’il n'y ait de capture préférentielle par les érythrocytes. La dégradation du métabolite actif suit pour moitié la voie aboutissant au glucuronide (élimination biliaire), et pour l’autre moitié celle de la conversion en TFMA-oxanilate ou en glucuronide de TFMA (4-trifluorométhylalanine; élimination urinaire). La concentration de TFMA (un carcinogène potentiel) était généralement corrélée à la concentration de la substance mère (environ 1/1’000 de celle du léflunomide). Le principal composant fécal a été l’A771726. La biotransformation métabolique de l’A771726 n’est pas contrôlée par une seule enzyme (cytochrome P450) et elle a été mise en évidence au niveau des fractions cellulaires microsomiques et cytosoliques. Un métabolite mineur, la TFMA (4-trifluorométhylaniline), a été décelé dans le plasma de l’homme, mais ses concentrations étaient très faibles comparées à l’A771726 et en partie inférieures à la limite de quantification (< 10 ng/ml).
+
+Élimination
+
+L’élimination du léflunomide radiomarqué a été lente, entre 89 et 94% de la radioactivité totale ayant été éliminés dans les 28 jours. Les études in vivo et in vitro du métabolisme du léflunomide ont montré que l’A771726 est éliminé par excrétion lente dans les fèces, probablement par élimination biliaire et par une transformation métabolique pour donner le métabolite acide oxanilique qui est excrété dans les urines. La clairance apparente chez les sujets sains s’est élevée à environ 0,7 ml/min. Le métabolite A771726 a une demi-vie d’une à quatre semaines.
+
+L’administration d’une suspension orale de charbon activé en poudre ou de colestyramine entraîne une augmentation rapide de la clairance plasmatique de l’A771726 (voir «Surdosage»); il en résulte une réduction de la demi-vie d’élimination à 24 heures. On suppose que cela fait appel à un mécanisme de dialyse gastro-intestinale et/ou à l’interruption du cycle entéro-hépatique.
+
+Cinétique pour certains groupes de patients
+
+Patients âgés
+
+Chez les patients âgés aucun changement de la pharmacocinétique n’a été observé.
+
+Enfants
+
+La pharmacocinétique de l’A771726, après une administration orale de léflunomide, a été évaluée chez 73 patients âgés de 3 à 17 ans, présentant une arthropathie idiopathique juvénile. Les résultats d’une analyse de cinétique de population ont démontré que les patients ayant un poids corporel ≤ 40 kg ont une concentration plasmatique de l’A771726 (concentration à l’état d’équilibre) réduite par rapport aux patients adultes présentant une polyarthrite rhumatoïde.
+
+Troubles de la fonction rénale
+
+Le léflunomide a été administré à la dose orale unique de 100 mg à trois patients hémodialysés et trois patients sous dialyse péritonéale continue ambulatoire (DPCA). Chez les patients hémodialysés, l’A771726 a été éliminé plus rapidement, avec une demi-vie plus courte. Les paramètres pharmacocinétiques observés chez les trois patients sous DPCA se sont révélés comparables avec ceux constatés chez les volontaires sains. Les expériences chez les patients atteints d’insuffisance rénale sont limitées. Il y aurait le risque d’une augmentation du taux de TFMA, mais les taux enregistrés jusqu’ici n’ont jamais dépassé 20 µg/ml. Ils sont donc restés à un niveau de concentration probablement dépourvu de toute signification clinique.
+
+Troubles de la fonction hépatique
+
+Aucune donnée n’est disponible quant au traitement des patients insuffisants hépatiques. Le métabolite actif A771726 se lie de manière importante aux protéines et est éliminé par métabolisme hépatique et par sécrétion biliaire. Ces processus sont susceptibles d’être affectés par un dysfonctionnement hépatique (voir «Contre-indications»).
+
+Données précliniques
+
+Toxicité chronique
+
+Une administration orale répétée de léflunomide à la souris, le rat, le chien et le singe a montré que les principaux organes cibles pour la toxicité étaient la moelle osseuse, le sang, le tractus digestif, la peau, la rate, le thymus et les ganglions lymphatiques. Les principaux effets observés étaient une anémie, une leucopénie, une diminution du nombre de plaquettes et une insuffisance médullaire globale; ceux-ci reflètent le mode d’action du produit (inhibition de la synthèse de l’ADN). La toxicité chez les animaux a été observée à des doses équivalentes aux doses thérapeutiques humaines.
+
+Génotoxicité/carcinogénicité
+
+Le léflunomide n’était pas mutagène dans les études réalisées. Le métabolite trifluorométhylaniline (TFMA) s’est avéré mutagène in vitro.
+
+Le léflunomide n’a fait preuve d’aucun potentiel carcinogène lors d’une étude de carcinogénicité chez le rat. Lors d’une étude du potentiel carcinogène chez la souris, une incidence accrue de lymphomes malins a été observée chez les mâles du groupe recevant la dose la plus élevée, considérée comme due à l’action immunosuppressive du léflunomide. Chez les souris femelles, une incidence accrue, dose dépendante, d’adénomes bronchiolo-alvéolaires et de cancers du poumon a été observée. La pertinence de ces résultats observés chez la souris sur l’utilisation clinique du léflunomide est incertaine.
+
+Toxicité sur la reproduction
+
+Le léflunomide est embryotoxique et tératogène chez le rat et le lapin à des doses correspondant aux doses thérapeutiques humaines et il a montré des effets toxiques sur les organes de reproduction masculins dans les études de toxicité à dose répétée. La fertilité n’a pas été réduite.
+
+Remarques particulières
+
+Influence sur les méthodes de diagnostic
+
+L’identification sérologique des agents pathogènes (viraux, bactériens, fongiques) ou l’efficacité des tests cutanés (par ex. à la tuberculine) peuvent être mise en défaut.
+
+Stabilité
+
+Ce médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l’emballage d’origine à température ambiante (15-25°C).
+
+Tenir hors de portée des enfants.
+
+Numéro d’autorisation
+
+62987 (Swissmedic)
+
+Présentation
+
+Léflunomide Spirig HC 10 mg: emballages de 30 et 100 comprimés pelliculés. [A]
+
+Léflunomide Spirig HC 20 mg: emballages de 30 et 100 comprimés pelliculés. [A]
+
+Léflunomide Spirig HC 100 mg: emballage de 3 comprimés pelliculés. [A]
+
+Titulaire de l’autorisation
+
+Spirig HealthCare SA, 4622 Egerkingen
+
+Mise à jour de l’information
+
+Novembre 2025

@@ -1,0 +1,447 @@
+---
+titre: "Letrozol Viatris"
+titulaire: "Viatris Pharma GmbH"
+atc: L02BG04
+substances: "Letrozolum"
+autorisation_swissmedic: 60883
+date_version: 2020-08-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/0af0d9fd5edc49a3a3cedca43624b0da-fr.html
+---
+
+Letrozol Viatris
+
+Viatris Pharma GmbH
+
+Composition
+
+Principes actifs
+
+Letrozolum.
+
+Excipients
+
+Lactosum monohydricum 61,5 mg, cellulosum microcristallinum, maydis amylum pregelificatum, carboxymethylamylum natricum 5 mg (correspond à 0,14-0,21 mg de sodium), magnesii stearas, silica colloidalis anhydrica.
+
+Enrobage: hypromellosum, talcum, macrogolum (PEG 8000), titanii dioxidum, ferrum oxidatum flavum.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimés pelliculés à 2,5 mg.
+
+Indications/Possibilités d’emploi
+
+Traitement adjuvant du cancer du sein au stade précoce (positif pour les récepteurs aux œstrogènes ou à la progestérone ou statut inconnu), chez la femme en post-ménopause.
+
+Traitement adjuvant du cancer du sein au stade précoce (positif pour les récepteurs aux œstrogènes ou à la progestérone ou statut inconnu), chez la femme en post-ménopause ayant reçu un traitement adjuvant par le tamoxifène pendant 5 ans (thérapie adjuvante étendue).
+
+Traitement du cancer du sein au stade avancé chez la femme en post-ménopause (ménopause naturelle ou artificielle) dont la tumeur présente des récepteurs aux œstrogènes ou à la progestérone ou un statut inconnu.
+
+Posologie/Mode d’emploi
+
+Patientes adultes
+
+La posologie recommandée est de 2,5 mg de Letrozol Viatris 1 fois par jour (1x/jour), pris au cours ou en dehors des repas (cf. «Pharmacocinétique/Absorption»).
+
+La thérapie adjuvante par Letrozol Viatris doit être effectuée pendant 5 ans ou jusqu'à l'apparition d'une récidive. La thérapie adjuvante étendue par Letrozol Viatris suite au traitement de 5 ans par le tamoxifène doit être poursuivie jusqu'à l'apparition d'une récidive.
+
+Chez les patientes présentant un cancer du sein au stade avancé, le traitement par Letrozol Viatris doit être poursuivi jusqu'à l'apparition d'une progression tumorale.
+
+Instructions spéciales pour la posologie
+
+Patients présentant des troubles de la fonction hépatique
+
+Aucun ajustement de la dose n'est nécessaire chez les patientes atteintes d'insuffisance hépatique légère à modérée (score Child-Pugh A ou B). Une surveillance étroite s'impose chez les patientes atteintes d'insuffisance hépatique sévère (score Child-Pugh C) (cf. «Mises en garde et précautions» et «Pharmacocinétique»).
+
+Patients présentant des troubles de la fonction rénale
+
+Aucun ajustement de la dose n'est nécessaire en cas d'insuffisance rénale (clairance de la créatinine ≥10 ml/min). Les données sont insuffisantes chez les patientes présentant une clairance de la créatinine <10 ml/min (cf. «Mises en garde et précautions» et «Pharmacocinétique»).
+
+Patientes âgées
+
+Aucun ajustement posologique n'est nécessaire chez les patientes âgées.
+
+Enfants et adolescents
+
+Letrozol Viatris ne doit pas être utilisé chez l'enfant et l'adolescent.
+
+Mode d'administration
+
+Letrozol Viatris peut être pris au cours ou en dehors des repas, car l'alimentation n'a aucun effet sur l'ampleur de l'absorption.
+
+Prise oubliée
+
+Une dose oubliée doit être prise aussitôt que la patiente s'en aperçoit. Toutefois, dans le cas où il est presque l'heure de la prise de la dose suivante, la patiente ne doit pas prendre la dose oubliée, mais poursuivre son schéma de prise normal. Les doses ne doivent pas être doublées car des doses quotidiennes supérieures à la dose recommandée de 2,5 mg peuvent entraîner une augmentation de l'exposition systémique plus que proportionnelle à la dose (cf. «Pharmacocinétique»).
+
+Contre-indications
+
+Hypersensibilité au principe actif ou à l'un des excipients. Statut endocrinien préménopausal.
+
+Grossesse, allaitement (cf. «Grossesse, Allaitement» et «Données précliniques»).
+
+Mises en garde et précautions
+
+Etat ménopausique
+
+Chez les patientes dont l'état post-ménopausique ne semble pas évident, il faut, avant de débuter le traitement, déterminer les taux de LH, de FSH et/ou d'estradiol afin d'établir clairement le statut ménopausique.
+
+Interactions
+
+L'administration concomitante de Letrozol Viatris et de tamoxifène, d'autres anti-œstrogènes ou de traitements à base d'œstrogènes doit être évitée, car ces substances peuvent diminuer l'action pharmacologique du létrozole (cf. «Interactions»).
+
+Effets sur les os
+
+Letrozol Viatris diminue les concentrations d'œstrogènes circulants et peut par conséquent entraîner une diminution de la densité minérale osseuse lors d'un traitement de longue durée. Dans une étude contrôlée contre placebo, une ostéoporose et des fractures ont été plus souvent observées sous létrozole que sous placebo. Chez les femmes présentant une ostéoporose ou un risque d'ostéoporose, il faut, lors du traitement adjuvant par Letrozol Viatris, déterminer la densité osseuse par ostéodensitométrie au début du traitement, puis à intervalles réguliers. Le cas échéant, une prophylaxie ou une thérapie de l'ostéoporose devra être instaurée et soigneusement surveillée.
+
+Tendinite et rupture du tendon
+
+Des cas de tendinite et de rupture du tendon (rares) peuvent survenir. Les patients doivent être étroitement surveillés et des mesures appropriées (p.ex. immobilisation) doivent être prises pour les tendons touchés (cf. rubrique «Effets indésirables»).
+
+Insuffisance rénale
+
+Letrozol Viatris n'a pas fait l'objet d'études cliniques chez les patientes présentant une clairance de la créatinine <10 ml/min. Le rapport bénéfice/risque devra être examiné attentivement avant une administration de Letrozol Viatris chez de telles patientes.
+
+Insuffisance hépatique
+
+Chez les patientes avec insuffisance hépatique grave (Child-Pugh C), l'exposition systémique et la demi-vie terminale étaient environ 2x plus élevées que chez les volontaires saines (cf. «Pharmacocinétique»). C'est pourquoi ces patientes doivent être surveillées étroitement. Des données cliniques portant sur des doses réitérées ne sont pas disponibles.
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé pelliculé, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne devraient pas prendre ce médicament.
+
+Interactions
+
+Le létrozole est métabolisé essentiellement dans le foie. La clairance métabolique du létrozole est assurée par les enzymes CYP3A4 et CYP2A6 du cytochrome P450. Par conséquent, les médicaments connus pour exercer des effets sur le CYP3A4 et le CYP2A6 peuvent influencer l'élimination systémique du létrozole. Le métabolisme du létrozole semble présenter une faible affinité pour le CYP3A4 car une saturation de cette enzyme n'a pas été possible, même à des concentrations plus de 150 fois supérieures aux concentrations plasmatiques de létrozole observées dans la situation clinique typique à l'état d'équilibre du létrozole.
+
+Médicaments susceptibles d'augmenter la concentration sérique de létrozole
+
+Les inhibiteurs du CYP3A4 et du CYP2A6 pourraient diminuer la métabolisation du létrozole et provoquer ainsi une augmentation des concentrations plasmatiques de létrozole. L'administration concomitante de médicaments inhibant fortement ces enzymes (inhibiteurs puissants du CYP3A4: entre autres itraconazole, posaconazole, voriconazole, cobicistat, ritonavir, clarithromycine et télithromycine; inhibiteurs puissants du CYP2A6) peut augmenter l'exposition au létrozole. La prudence est donc recommandée lors de l'utilisation concomitante d'inhibiteurs puissants du CYP3A4 ou du CYP2A6.
+
+Médicaments susceptibles de diminuer la concentration sérique de létrozole
+
+Les inducteurs du CYP3A4 pourraient accélérer la métabolisation du létrozole et provoquer ainsi une diminution des concentrations plasmatiques de létrozole. L'administration concomitante de médicaments inducteurs du CYP3A4 (p.ex. phénytoïne, rifampicine, carbamazépine, phénobarbital et millepertuis) peut diminuer l'exposition au létrozole. La prudence est donc recommandée lors de l'utilisation concomitante d'inducteurs puissants du CYP3A4. Aucun médicament inducteur du CYP2A6 n'est connu à ce jour.
+
+L'administration concomitante non indiquée de létrozole (2,5 mg) et de tamoxifène (20 mg/jour) a entraîné une diminution moyenne de la concentration plasmatique de létrozole de 38% (cf. «Mises en garde et précautions»). Le létrozole n'a pas eu d'effets sur la concentration plasmatique de tamoxifène.
+
+Les expériences cliniques issues des études sur le traitement de deuxième intention du carcinome mammaire montrent que ni l'effet thérapeutique ni l'apparition d'effets indésirables du traitement par Letrozol Viatris ne sont augmentés lorsque Letrozol Viatris est administré immédiatement après le tamoxifène.
+
+Médicaments dont les concentrations sériques systémiques pourraient être influencées par le létrozole
+
+In vitro, le létrozole inhibe l'isoenzyme CYP2A6 et dans une moindre mesure l'isoenzyme CYP2C19 du cytochrome-P450; la pertinence clinique de cette observation est cependant inconnue. La prudence est donc recommandée lors de l'administration concomitante de létrozole et de médicaments dont l'élimination a lieu  essentiellement via le CYP2C19 et qui présentent une marge thérapeutique étroite (p.ex. phénytoïne et clopidogrel). Aucun substrat du CYP2A6 ayant une marge thérapeutique étroite n'est connu à ce jour.
+
+Les études d'interactions cliniques réalisées avec la cimétidine (connue pour être un inhibiteur non spécifique du CYP2C19 et du CYP3A4) et la warfarine (un substrat sensible du CYP2C9 ayant une marge thérapeutique étroite, utilisé fréquemment en traitement associé dans la population cible du létrozole) ont révélé que l'administration concomitante de Letrozol Viatris et de ces médicaments n'entraîne aucune interaction cliniquement pertinente.
+
+Un examen des données des études cliniques n'a montré aucune autre interaction cliniquement pertinente avec d'autres médicaments fréquemment prescrits.
+
+Grossesse, allaitement
+
+Letrozol Viatris est contre-indiqué pendant la grossesse et l'allaitement (cf. «Contre-indications»).
+
+Des cas d'avortements spontanés et de malformations congénitales ont été rapportés après la commercialisation chez des enfants dont les mères avaient pris du létrozole pendant la grossesse (cf. «Mises en garde et précautions» et «Données précliniques»). Le médecin doit informer les femmes en âge de procréer, les femmes ménopausées et celles récemment ménopausées de la nécessité d'une contraception appropriée. Letrozol Viatris est indiqué uniquement chez la femme post-ménopausée (cf. «Mises en garde et précautions»).
+
+Aucune donnée adéquate n'existe sur l'utilisation du létrozole la femme enceinte.
+
+Des études expérimentales chez l'animal ont montré une toxicité sur la reproduction (cf. «Données précliniques»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Étant donné que de la fatigue et des vertiges ont été observés sous létrozole et que de la somnolence a été rapportée occasionnellement, la prudence est de rigueur lors de la conduite de véhicules et l'utilisation de machines.
+
+Effets indésirables
+
+Des effets indésirables sont apparus chez 80% des patientes lors de la thérapie adjuvante et de la thérapie adjuvante élargie ainsi que chez environ un tiers des patientes traitées lors du traitement du carcinome mammaire au stade avancé. Les effets indésirables observés étaient généralement de nature légère à modérée.
+
+Les effets indésirables les plus souvent mentionnés lors des études cliniques étaient: bouffées de chaleur, hypercholestérolémie, hyperhidrose et  fatigue (y compris léthargie, malaise et asthénie). De nombreux effets indésirables (p.ex. bouffées de chaleur, alopécie et saignements vaginaux) sont attribuables à la privation d'œstrogènes.
+
+Les effets indésirables ci-après ont été observés dans le cadre d'études cliniques ainsi que de la phase post-marketing.
+
+Fréquences: «très fréquents» (≥1/10), «fréquents» (≥1/100 à <1/10), «occasionnels» (≥1/1000 à <1/100), «rares» (≥1/10'000 à <1/1000), «très rares» (<1/10'000), «fréquence inconnue» (basée principalement sur les rapports spontanés de la surveillance du marché, la fréquence exacte ne peut pas être estimée).
+
+Infections et infestations
+
+Occasionnels: infections des voies urinaires.
+
+Affections hématologiques et du système lymphatique
+
+Occasionnels: leucopénie.
+
+Affections du système immunitaire
+
+Fréquence inconnue: réaction anaphylactique, angio-œdème.
+
+Troubles du métabolisme et de la nutrition
+
+Très fréquents: hypercholestérolémie (jusqu'à 42%).
+
+Fréquents: appétit diminué, augmentation de l'appétit, poids augmenté.
+
+Occasionnels: poids diminué.
+
+Affections psychiatriques
+
+Fréquents: dépression.
+
+Occasionnels: anxiété, nervosité, irritabilité.
+
+Affections du système nerveux
+
+Fréquents: céphalées, sensations vertigineuses, vertiges.
+
+Occasionnels: somnolence, insomnies, dysesthésie, paresthésie, hypoesthésie, troubles du goût, diminution de la mémoire, syndrome du canal carpien.
+
+Affections oculaires
+
+Occasionnels: vue trouble, irritation oculaire, cataracte.
+
+Affections cardiaques
+
+Fréquents: palpitations.
+
+Occasionnels: tachycardie, cardiopathie ischémique (y compris un angor [apparition de novo ou détérioration d'un angor, angor nécessitant une intervention chirurgicale]), infarctus du myocarde, insuffisance cardiaque.
+
+Affections vasculaires
+
+Très fréquents: bouffées de chaleur (jusqu'à 51%).
+
+Fréquents: hypertension, événements thromboemboliques veineux.
+
+Occasionnels: hypotension, thrombophlébite superficielle, accident vasculaire cérébral (y compris attaques ischémiques transitoires).
+
+Rares: embolie pulmonaire, thrombose artérielle.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Occasionnels: toux, dyspnée.
+
+Affections gastro-intestinales
+
+Fréquents: douleurs abdominales, nausées, vomissements, dyspepsie, constipation, diarrhée.
+
+Occasionnels: sécheresse buccale, sécheresse muqueuse, stomatite.
+
+Affections hépatobiliaires
+
+Occasionnels: taux accrus d'enzymes hépatiques, hyperbilirubinémie, ictère.
+
+Très rares: hépatite.
+
+Affections de la peau et du tissu sous-cutané
+
+Très fréquents: hyperhidrose (jusqu'à 26%).
+
+Fréquents: peau sèche, éruption érythémateuse, maculo-papuleuse, psoriasiforme et vésiculeuse, alopécie.
+
+Occasionnels: prurit, urticaire.
+
+Fréquence inconnue: érythème multiforme, nécrolyse épidermique toxique.
+
+Affections musculo-squelettiques et du tissu conjonctif
+
+Très fréquents: arthralgies (jusqu'à 40%).
+
+Fréquents: myalgie, douleurs osseuses, douleurs dorsales, arthrite, ostéoporose, fractures osseuses.
+
+Occasionnels: tendinite.
+
+Rares: rupture du tendon.
+
+Fréquence inconnue: doigt à ressaut.
+
+Affections du rein et des voies urinaires
+
+Occasionnels: pollakiurie.
+
+Affections des organes de reproduction et du sein
+
+Fréquents: saignements vaginaux.
+
+Occasionnels: sécheresse vulvovaginale, sécrétions vaginales, douleurs mammaires.
+
+Troubles généraux
+
+Très fréquents: fatigue (jusqu'à 26%) (y compris léthargie, asthénie, malaise).
+
+Fréquents: œdème périphérique, douleurs dans la cage thoracique.
+
+Occasionnels: soif, fièvre, œdèmes généralisés.
+
+Effets indésirables cardiaques
+
+Dans l'étude portant sur la thérapie adjuvante, des infarctus du myocarde ont été observés plus fréquemment sous létrozole; par contre, des événements thromboemboliques veineux ont été plus rarement observés que sous tamoxifène.
+
+Effets indésirables sur le squelette
+
+En ce qui concerne les données de sécurité pour le squelette dans la thérapie adjuvante, voir l'énumération ci-dessus.
+
+Dans la thérapie adjuvante élargie, il y a eu, sous traitement par létrozole, significativement plus de cas d'ostéoporose (12,2% vs. 6,4%) ou de fractures (10,4% vs. 5,8%) que sous placebo. La durée moyenne du traitement par le létrozole a été de 5 ans versus 3 ans pour le placebo.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Des cas isolés de surdosage avec le létrozole ont été rapportés. Aucun traitement spécifique d'un surdosage n'est connu. Le traitement doit être symptomatique et comprendre des mesures de soutien.
+
+Propriétés/Effets
+
+Code ATC
+
+L02BG04
+
+Mécanisme d'action
+
+Le létrozole est un inhibiteur sélectif non stéroïdien de l'aromatase qui inhibe l'aromatase par liaison compétitive à l'hème de la sous-unité du cytochrome-P450 de l'enzyme et réduit ainsi la biosynthèse d'œstrogènes dans tous les tissus.
+
+L'élimination de la stimulation œstrogénique est une condition préalable à la réponse tumorale lorsque la croissance du tissu tumoral est œtrogéno-dépendante. Après la ménopause, la synthèse des œstrogènes provient essentiellement de l'activité de l'aromatase, qui transforme les androgènes sécrétés par la corticosurrénale - principalement d'androstènedione et la testostérone - en estrone (E1) et en estradiol (E2). La suppression de la biosynthèse des œstrogènes dans les tissus périphériques et dans les tissus cancéreux peut être obtenue par une inhibition spécifique de l'aromatase.
+
+Pharmacodynamique
+
+Chez des femmes en post-ménopause en bonne santé, des doses uniques de 0,1/0,5 et 2,5 mg de létrozole ont réduit les taux sériques d'estrone de 75-78% et les taux d'estradiol de 78% par rapport à la valeur initiale. L'effet maximal a été atteint en 48-78 h.
+
+Chez les patientes en post-ménopause porteuses d'un carcinome mammaire à un stade avancé, des doses quotidiennes de 0,1 à 5 mg ont réduit, dans tous les cas, les concentrations plasmatiques d'estradiol, d'estrone et de sulfate d'estrone de 75-95% par rapport à la valeur initiale. Après administration de doses ≥0,5 mg, de nombreuses concentrations en estrone et en sulfate d'estrone étaient inférieures au seuil de détection, ce qui indique que la suppression œstrogénique est plus importante avec ces doses. La suppression de la biosynthèse œstrogénique s'est maintenue tout au long du traitement chez toutes ces patientes.
+
+Pharmacodynamique de sécurité
+
+Aucune altération de la stéroïdogenèse surrénale n'a été observée. On n'a constaté aucune modification cliniquement pertinente des concentrations plasmatiques de cortisol, d'aldostérone, de 11-désoxycortisol, de 17-hydroxyprogestérone et d'ACTH, ni de l'activité de la rénine plasmatique chez les patientes en post-ménopause ayant reçu des doses quotidiennes de létrozole de 0,1 à 5 mg. Les résultats du test de stimulation par l'ACTH réalisé après 6 et 12 semaines de traitement à des doses quotidiennes de 0,1/0,25/0,5/1/2,5 et 5 mg, n'ont indiqué aucun affaiblissement de la production d'aldostérone ou de cortisol. Un complément en glucocorticoïdes et en minéralocorticoïdes n'est donc pas nécessaire.
+
+Les concentrations plasmatiques en androgènes (androstènedione et testostérone) n'ont pas été modifiées chez les femmes en post-ménopause en bonne santé après administration de doses uniques de 0,1/0,5 et 2,5 mg de létrozole et aucune modification n'a été notée au niveau des concentrations plasmatiques en androstènedione chez les patientes en post-ménopause recevant des doses quotidiennes de 0,1 à 5 mg de létrozole. L'inhibition de la biosynthèse des œstrogènes n'entraîne donc pas d'accumulation des précurseurs androgènes. Le létrozole n'influe pas sur les taux plasmatiques en LH et FSH ni sur la fonction thyroïdienne des patientes (mesurée par dosage de la TSH, de la T4 et de la T3).
+
+Efficacité clinique
+
+Thérapie adjuvante du carcinome mammaire
+
+Dans une étude randomisée, en double aveugle (BIG 1-98), menée auprès de plus de 8000 patientes en post-ménopause atteintes d'un carcinome mammaire au stade précoce positif pour les récepteurs hormonaux, une randomisation des traitements suivants a été effectuée: tamoxifène pendant 5 ans (A), létrozole pendant 5 ans (B), tamoxifène pendant 2 ans, suivi de létrozole pendant 3 ans (C) ou létrozole pendant 2 ans suivi de tamoxifène pendant 3 ans (D).
+
+L'étude était conçue pour répondre à deux questions principales:
+
+1.La monothérapie par le létrozole durant 5 ans est-elle supérieure à un traitement par tamoxifène pendant 5 ans?
+
+2.Le changement de principe actif endocrinien après environ 2 ans est-il supérieur au schéma comprenant le même principe actif inchangé pendant 5 ans au total?
+
+L'analyse primaire ayant porté sur la première question a été réalisée après une période de suivi de 26 mois en médiane (durée médiane de traitement 24 mois) et a inclus les données des groupes de traitement sans changement (groupes A et B) et les données collectées jusqu'à 30 jours après le changement de traitement (groupes C et D). Le létrozole était supérieur au tamoxifène au niveau de l'ensemble des critères d'évaluation, à l'exception de la survie globale et du carcinome mammaire controlatéral. Concernant le critère primaire de l'étude, la survie sans maladie (DFS), le létrozole a été significativement plus efficace que le tamoxifène (hazard ratio (HR): 0,81; IC 95%: 0,70-0,93; p=0,003). La DFS calculée à 5 ans a été de 84,0% pour le létrozole contre 81,4% pour le tamoxifène. Pour la survie globale (OS), il n'y a pas eu de différence significative entre le létrozole et le tamoxifène (166 décès sous létrozole contre 192 décès sous tamoxifène; HR 0,86; IC 95%: 0,70-1,06).
+
+Au terme de l'étude, après un suivi médian de 96 mois (durée médiane du traitement 60 mois), la différence de DFS est restée significative (HR 0,87; IC 95%: 0,78-0,97; p=0,01). La différence en termes de survie globale est restée statistiquement non significative (HR 0,89; IC 95%: 0,77-1,02). Lors de l'analyse finale, une réduction du risque de carcinome mammaire invasif contralatéral (HR 0,62; IC 95%: 0,43-0,90) a été observée sous traitement par létrozole par comparaison avec le tamoxifène chez un total de n=4922 patientes évaluables.
+
+Concernant la seconde question principale, aucune différence significative n'est apparue entre un changement de traitement après environ deux ans et la poursuite du principe actif identique pendant 5 ans.
+
+Après une période médiane de traitement de 60 mois, on a observé un risque significativement plus élevé d'infarctus du myocarde sous létrozole par comparaison avec le tamoxifène (1,0% vs. 0,5%; risque relatif [RR] 2,0; IC 95%: 1,00-3,99). En revanche, le risque d'événements thromboemboliques veineux était significativement moindre sous létrozole que sous tamoxifène (2,1% vs. 3,6%; RR 0,57; IC 95%: 0,41-0,80). Il n'y a pas eu de différence significative entre les traitements concernant d'autres événements cardiovasculaires ou cérébrovasculaires. Un risque significativement plus élevé de fractures osseuses a été constaté sous létrozole par comparaison avec le tamoxifène (10,2% vs. 7,2%; RR 1,42; IC 95%: 1,18-1,71), ainsi qu'un risque supérieur d'ostéoporose (5,1% vs. 2,7%; RR 1,88; IC 95%: 1,41-2,51).
+
+Un risque significativement diminué d'hyperplasie ou de carcinome de l'endomètre a été rapporté sous létrozole par comparaison avec le tamoxifène (0,2% vs. 2,3%; RR 0,11; IC 95%: 0,05-0,24). Les malignomes primaires supplémentaires de localisation non mammaire ont été également moins fréquents sous létrozole que sous tamoxifène.
+
+Une étude séparée (D2407) de la densité osseuse (BMD), des marqueurs osseux et des taux de lipides sériques, au cours de laquelle 263 patientes ont été traitées par létrozole ou tamoxifène pendant jusqu'à deux ans, a montré une différence significative des changements de la BMD par rapport à la valeur initiale en faveur du tamoxifène. Une diminution médiane de la BMD de -4,1% a été mesurée au niveau lombaire après deux ans sous létrozole contre une augmentation médiane de +0,3% sous tamoxifène. Les résultats observés au niveau de la BMD des hanches étaient comparables.
+
+Thérapie adjuvante élargie après 5 ans de traitement adjuvant par le tamoxifène
+
+Dans une étude en double aveugle, randomisée, contrôlée contre Placebo et menée auprès de 5168 femmes en post-ménopause atteintes d'un carcinome mammaire primitif positif aux récepteurs hormonaux ou de statut inconnu, les patientes sans récidive à la fin du traitement standard adjuvant par le tamoxifène (4,5 à 6 ans) ont été randomisées soit dans le groupe sous létrozole (n=2582) soit dans le groupe placebo (n=2586).
+
+Dans l'analyse primaire effectuée après un suivi d'une durée médiane de 28 mois (durée médiane de traitement 24 mois), le létrozole a réduit de 42% le risque de récidive du carcinome mammaire par rapport au placebo (total events pour le létrozole 92 [3,6%] vs. 155 [6%] pour le placebo; HR 0,58; IC 95%: 0,45-0,76; p=0,00003). Le bénéfice statistiquement significatif pour le létrozole était indépendant du statut ganglionnaire, du statut des récepteurs hormonaux ou d'une chimiothérapie adjuvante préalable. 113 décès au total ont été rapportés (51 [2,0%] sous létrozole, 62 [2,4%] sous placebo). La différence entre les deux groupes n'était pas statistiquement significative (HR 0,82; IC 95%: 0,56-1,19). Dans le groupe des patientes avec des ganglions positifs, le risque de mortalité sous létrozole était réduit significativement (HR 0,61; IC 95%: 0,38-0,97). Chez les patientes avec des ganglions négatifs, aucune différence significative n'a été observée (hazard ratio 1,36; p=0,385; IC 95%: 0,68-2,71).
+
+Après une période de suivi d'une durée médiane égale à 28 mois, l'analyse QoL (SF-36) n'a montré aucune différence cliniquement pertinente au niveau des scores mesurés pour la santé physique, les douleurs et la vitalité entre le groupe sous létrozole et le groupe sous placebo.
+
+Après la levée de l'aveugle lors de l'étude, les patientes ont pu passer du placebo au létrozole, si elles le souhaitaient. 1551 patientes sont passées au létrozole dans un délai médian de 31 mois après l'inclusion dans l'étude.
+
+Lors de l'analyse finale des données de l'étude, après une durée médiane du suivi de 62 mois (durée médiane de traitement 60 mois), la différence au niveau des récidives du carcinome mammaire était statistiquement significative (HR 0,75; IC 95%: 0,63-0,89; p=0,001) en faveur du létrozole. Indépendamment d'un éventuel changement, il n'y a cependant pas eu de différence significative entre les groupes de traitement pour la survie globale.
+
+Dans l'analyse à 24 mois des résultats de la sous-étude sur la densité osseuse (durée médiane du suivi égale à 61 mois), le létrozole a été associé à une diminution significativement plus marquée de la BMD au niveau de la hanche (diminution médiane 3,8%) par comparaison avec le placebo (diminution médiane 2,0%).
+
+Traitement de première intention du carcinome mammaire au stade avancé
+
+Une étude clinique contrôlée menée en double aveugle auprès de 907 patientes en post-ménopause présentant un carcinome mammaire localisé à un stade avancé ou avec métastases a comparé 2,5 mg de létrozole avec le tamoxifène en traitement de première intention. Le schéma de l'étude a permis en cas de progression un changement à l'autre thérapie en question. Ce faisant, le létrozole était supérieur au tamoxifène pour les paramètres ci-après.
+
+Temps médian jusqu'à la progression (critère d'efficacité primaire: 9,4 mois vs. 6,0 mois; HR 0,72; IC 95%: 0,62-0,83; p<0,0001); taux de réponse objective total (complete response + partial response; 32% vs. 21%; odds ratio [OR] 1,78; IC 95%:1,32-2,40 p=0,0002); temps médian jusqu'à l'échec thérapeutique (9,0 mois vs. 5,7 mois; HR 0,73; IC 95%: 0,64-0,84; p<0,0001).
+
+Le létrozole s'est également montré supérieur en ce qui concerne le taux de réponse objective et le temps jusqu'à la progression dans les sous-groupes présentant une tumeur positive pour les récepteurs hormonaux ou dont le statut était inconnu.
+
+Le létrozole était supérieur au tamoxifène au niveau du taux de réponse et du temps jusqu'à la progression tant chez les patientes qui avaient reçu une thérapie adjuvante préalable (par tamoxifène) que chez les patientes naïves de thérapie adjuvante préalable.
+
+Chez les patients ≥70 ans, la durée médiane jusqu'à la progression était significativement plus longue sous létrozole que sous tamoxifène avec 12,1 versus 5,8 mois. Le taux de réponse global était sous létrozole significativement plus élevé que sous tamoxifène (40,1% vs. 18,9%). L'analyse de la survie globale s'est avérée difficile en raison du schéma de l'étude qui, en cas de progression, autorisait un changement entre les groupes de traitement. Lors de l'évaluation de la survie globale au moment du changement, la survie médiane sous létrozole était de 42 mois, sous tamoxifène de 30 mois.
+
+Traitement de deuxième intention du carcinome mammaire au stade avancé
+
+Deux études cliniques contrôlées chez des patientes en post-ménopause présentant un cancer du sein à un stade avancé et ayant reçu un traitement anti-œstrogénique ont comparé deux doses de létrozole (0,5 mg et 2,5 mg) avec l'acétate de mégestrol d'une part et avec l'aminoglutéthimide d'autre part.
+
+Le létrozole 2,5 mg était significativement supérieur à l'acétate de mégestrol en termes de taux de réponse (24% vs. 16%, p=0,04) et de temps jusqu'à l'échec thérapeutique (Time to Treatment Failure, p=0,04). Le temps jusqu'à la progression de l'affection (Time to Progression, p=0,07) et le taux de survie global (p=0,2) n'ont à l'inverse pas montré de différence significative.
+
+Dans la deuxième étude, le létrozole 2,5 mg était supérieur à l'aminoglutéthimide en termes de temps jusqu'à la progression (Time to Progression, p=0,008), de temps jusqu'à l'échec thérapeutique (Time to Treatment Failure, p=0,003), et en termes de taux de survie global (p=0,002), mais pas en ce qui concerne le taux de réponse.
+
+Pharmacocinétique
+
+Absorption
+
+Le létrozole est rapidement et complètement absorbé par le tractus gastro-intestinal (biodisponibilité absolue moyenne: 99,9%). L'absorption concomitante de nourriture diminue légèrement la vitesse d'absorption. La quantité absorbée (AUC) reste cependant inchangée. Le létrozole peut donc être pris indifféremment pendant ou en dehors des repas.
+
+Distribution
+
+La liaison du létrozole aux protéines plasmatiques, essentiellement à l'albumine (55%), est d'environ 60%. La concentration du létrozole dans les érythrocytes représente environ 80% de sa concentration plasmatique. Après l'administration d'une dose de 2,5 mg de létrozole marqué au C14, environ 82% de la radioactivité mesurée dans le plasma se rapportaient à la molécule inchangée. L'exposition systémique aux métabolites est donc faible. La diffusion tissulaire du létrozole est rapide et importante. Son volume apparent de distribution à l'état d'équilibre est d'environ 1,87 ± 0,47 l/kg.
+
+Métabolisme et élimination
+
+Le létrozole est essentiellement éliminé (environ 95% de la clairance plasmatique totale) par voie métabolique (Clm=2,1 l/h), sous la forme d'un métabolite (carbinol) pharmacologiquement inactif. La clairance métabolique du létrozole est relativement lente par rapport au flux sanguin hépatique (environ 90 l/h). On a observé que CYP3A4 et CYP2A6 étaient à même de transformer le létrozole en ce métabolite. La formation de métabolites peu importants et non identifiés, ainsi que l'excrétion rénale et fécale directes ne jouent qu'un rôle mineur dans l'élimination totale du létrozole. Sur une période de deux semaines après l'administration de 2,5 mg de létrozole marqué au C14 à des volontaires en post-ménopause et en bonne santé, 88,2 ± 7,6% de la radioactivité ont été retrouvés dans les urines et 3,8 ± 0,9% dans les fèces. Au moins 75% de la radioactivité retrouvée dans les urines dans un délai de 216 h (84 ± 7,8% de la dose) étaient liés à un glucuroconjugué du métabolite du carbinol, environ 9% à 2 métabolites non identifiés et 6% au létrozole inchangé.
+
+La demi-vie apparente d'élimination plasmatique terminale est d'environ 2 à 4 jours.
+
+Linéarité/Non linéarité
+
+Après administration de doses orales uniques allant jusqu'à 10 mg (intervalle posologique de 0,01 à 30 mg) et de doses quotidiennes allant jusqu'à 1,0 mg (intervalle posologique de 0,1 à 5 mg), la pharmacocinétique du létrozole a été proportionnelle à la dose. Après administration quotidienne de 2,5 mg de létrozole, les concentrations à l'état d'équilibre sont atteintes dans un délai de 2 à 6 semaines. Les concentrations plasmatiques à l'état d'équilibre sont à ce moment environ 7x plus élevées que les concentrations mesurées après administration d'une dose unique de 2,5 mg et sont 1,5-2x supérieures aux valeurs à l'état d'équilibre extrapolées d'après les concentrations obtenues avec une dose unique. Ces résultats indiquent que la pharmacocinétique du létrozole est légèrement non linéaire. Après administration d'une dose orale unique de 30 mg, une augmentation de l'AUC légèrement excessive par rapport à la dose a été observée. À des doses quotidiennes de 2,5 et 5 mg, les valeurs de l'AUC ont été environ 3,8 et 12 fois supérieures aux valeurs mesurées après l'administration d'une dose de 1,0 mg, au lieu d'être, comme attendu, 2,5 et 5 fois supérieures à celles-ci. La posologie recommandée de 2,5 mg/jour se situe donc vraisemblablement à la limite à partir de laquelle une disproportionnalité se manifeste, alors que cette disproportionnalité est déjà nettement marquée à une posologie de 5 mg/jour. Cette augmentation plus que proportionnelle à la dose repose vraisemblablement sur la saturation des processus d'élimination métabolique. Les concentrations à l'état d'équilibre ont été atteintes après un à deux mois avec tous les schémas posologiques étudiés (de 0,1 à 5,0 mg par jour). Les concentrations à l'état d'équilibre se maintenant sur une durée prolongée, il est possible de conclure qu'il ne se produit pas d'accumulation continue de létrozole.
+
+Cinétique pour certains groupes de patientes
+
+Troubles de la fonction hépatique
+
+Dans une étude incluant des volontaires présentant une fonction hépatique de degrés divers, les AUC chez les volontaires présentant une insuffisance hépatique modérée (Child-Pugh B) étaient en moyenne environ 37% supérieures aux valeurs des volontaires saines; cependant, elles restaient dans la limite observée chez les volontaires ne présentant pas d'insuffisance hépatique. Dans une étude comparative de pharmacocinétique, après l'administration d'une dose unique de létrozole, les valeurs d'AUC ainsi que de t½ chez 8 patientes avec cirrhose hépatique et insuffisance hépatique grave (Child-Pugh C) étaient respectivement 95% et 187% plus élevées que chez 8 volontaires saines. Par conséquent, chez les patientes présentant un carcinome mammaire et une insuffisance hépatique grave, des taux plasmatiques de létrozole plus élevés que chez les patientes sans insuffisance hépatique sont à prévoir. Cependant, comme aucune augmentation de la toxicité n'a été remarquée chez les patientes qui avaient reçu des doses journalières de 5 à 10 mg, une adaptation de la posologie chez les patientes avec insuffisance hépatique grave n'est pas indiquée; par contre, ces patientes doivent être suivies étroitement.
+
+Troubles de la fonction rénale
+
+Dans une étude incluant 16 volontaires présentant une fonction rénale de degrés divers (clairance de la créatinine sur 24 h de 9-116 ml/min), aucune influence sur la pharmacocinétique du létrozole après administration d'une dose unique de 2,5 mg n'a été constatée.
+
+En plus de cette étude, une analyse de covariance des données de deux études pivotales (étude AR/BC2 et étude AR/BC3) a été réalisée. La clairance de la créatinine calculée (CrCl) (intervalle dans l'étude AR/BC2: de 19 à 187 ml/min; intervalle dans l'étude AR/BC3: de 10 à 180 ml/min) n'a pas montré de rapport statistiquement significatif avec les taux plasmatiques résiduels de létrozole à l'état d'équilibre (Cmin). En outre, les données des études AR/BC2 et AR/BC3 sur le traitement de deuxième intention du cancer du sein métastatique n'ont pas révélé d'effets indésirables du létrozole sur la CrCl ou la fonction rénale.
+
+Pour cette raison, aucun ajustement posologique n'est nécessaire chez les patientes atteintes d'insuffisance rénale grave (CrCl ≥10 ml/min). On ne dispose que d'informations très limitées pour les patientes atteintes d'insuffisance rénale sévère (<10 ml/min).
+
+Patientes âgées
+
+L'âge n'a pas d'influence sur la pharmacocinétique du létrozole.
+
+Données précliniques
+
+L'administration orale de létrozole à des rats femelles a entraîné une diminution des accouplements et des taux de gestation ainsi qu'une augmentation des pertes préimplantatoires.
+
+Les effets pharmacologiques du létrozole ont donné lieu à des réponses squelettiques, neuroendocriniennes et reproductrices dans le cadre d'un essai sur de jeunes rats. La croissance osseuse et la maturation étaient réduites chez les jeunes mâles sous la dose la plus faible (0,003 mg/kg/jour) et augmentées sous la dose la plus faible (0,003 mg/kg) chez les jeunes femelles. La densité minérale osseuse (BMD) était également abaissée chez les femelles sous cette dose. Dans cette même étude ont été rapportées sous tous les dosages testés une diminution de la fertilité accompagnée d'une hypertrophie de l'hypophyse, des altérations testiculaires avec dégénérescence de l'épithélium des canaux séminifères et d'une atrophie du système de reproduction chez les femelles. À l'exception des dimensions osseuses chez les femelles et des changements morphologiques des testicules, tous les effets observés étaient au moins partiellement réversibles.
+
+Lors d'expérimentations in vitro comme in vivo sur les propriétés génotoxiques, aucun indice de génotoxicité n'a été observé.
+
+Dans une étude conventionnelle de carcinogénicité, des doses de 0,6 à 60 mg/kg/jour (environ 1 à 100 fois les doses quotidiennes humaines maximales, sur la base de mg/m²) ont été administrées à des souris par l'intermédiaire d'une alimentation par sonde pendant une durée atteignant jusqu'à 2 ans. Cette étude a montré une augmentation dose-dépendante de l'incidence des tumeurs bénignes du stroma ovarien. L'incidence des adénomes et carcinomes hépatocellulaires combinés a montré une tendance significative chez les souris femelles lorsque le groupe ayant reçu les fortes doses a été exclu en raison de la faible survie. Dans une étude séparée, les valeurs plasmatiques de l'AUC0-12h chez des souris ayant reçu une dose de 0,6 mg/kg/jour ont été 0,4 fois plus élevées que les valeurs de l'AUC0-24h chez des patientes atteintes de carcinome mammaire et traitées à la posologie recommandée.
+
+Suite à une étude de carcinogénicité de 104 semaines sur des rats, aucune tumeur dépendante du traitement n'a pu être mise en évidence. Une diminution de l'incidence des tumeurs mammaires bénignes et malignes a été observée chez les rates pour toutes les doses de létrozole.
+
+Dans une étude de carcinogénicité réalisée chez la souris pendant 104 semaines, aucune tumeur liée au traitement n'a été mise en évidence chez les souris mâles. Une augmentation en général dose-dépendante de l'incidence des tumeurs bénignes ovariennes à cellules de la thèque et de la granulosa a été observée chez les souris femelles à tous les niveaux posologiques de létrozole étudiés. La survenue de ces tumeurs a été attribuée à l'inhibition pharmacologique de la synthèse des estrogènes et elle est éventuellement en rapport avec l'augmentation des taux de LH secondaire à la diminution des taux d'estrogènes circulants.
+
+L'administration orale de létrozole à des rates Sprague-Dawley gestantes a entraîné une légère augmentation de l'incidence de malformations fœtales (bombement de la tête et fusion des corps vertébraux/des vertèbres) chez les animaux traités. Aucune malformation semblable n'a été observée chez le lapin blanc de Nouvelle-Zélande. La question de savoir dans quelle mesure elles sont une conséquence indirecte des propriétés pharmacologiques (inhibition de la biosynthèse des œstrogènes) ou la manifestation d'un effet direct du létrozole reste non résolue.
+
+Les observations précliniques se sont concentrées sur celles qui sont en relation avec les effets pharmacologiques reconnus. Ceux-ci constituent les seuls doutes quant à la sûreté de l'utilisation chez l'être humain basée sur des études chez l'animal. C'est pourquoi Letrozol Viatris est contre-indiqué pendant la grossesse et l'allaitement (cf. «Contre-indications»).
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage d'origine à température ambiante (15-25 °C), à l'abri de l'humidité et hors de portée des enfants.
+
+Numéro d’autorisation
+
+60883 (Swissmedic).
+
+Présentation
+
+Comprimés pelliculés de 2,5 mg: 30 et 100. [B]
+
+Titulaire de l’autorisation
+
+Viatris Pharma GmbH, 6312 Steinhausen.
+
+Mise à jour de l’information
+
+Août 2020.
+
+[Version 105 F]

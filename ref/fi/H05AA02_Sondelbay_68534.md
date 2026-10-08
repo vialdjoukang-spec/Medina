@@ -1,0 +1,673 @@
+---
+titre: "Sondelbay®"
+titulaire: "Accord Healthcare AG"
+atc: H05AA02
+substances: "Tériparatide ADNr (rhPTH[1-34]), produite selon la technique de l'ADN recombinant par E. coli et identique à la séquence des 34 acides aminés de l'extrémité amino-terminale de la parathormone humaine endogène"
+autorisation_swissmedic: 68534
+date_version: 2026-07-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/cce93c9ad6d041738fb061b267e70edb-fr.html
+---
+
+▼ Ce médicament fait l’objet d’une surveillance supplémentaire qui permettra l’identification rapide de nouvelles informations relatives à la sécurité. Les professionnels de santé sont tenus de déclarer toute suspicion d’effet secondaire nouveau ou grave. Voir la rubrique «Effets indésirables» pour les modalités de déclaration des effets secondaires.
+
+ 
+
+Sondelbay®
+
+ 
+
+Composition
+
+Principes actifs
+
+Tériparatide ADNr (rhPTH[1-34]), produite selon la technique de l'ADN recombinant par E. coli et identique à la séquence des 34 acides aminés de l'extrémité amino-terminale de la parathormone humaine endogène.
+
+ 
+
+Excipients
+
+Acide acétique glacial (E260), Acétate de sodium (E262), Mannitol (E421), Métacrésol, Acide chlorhydrique (pour l’ajustement du pH, E507), Hydroxyde de sodium (pour l’ajustement du pH, E524), Eau pour preparations injectables.
+
+Un millilitre contient 0.1 mg de sodium.
+
+ 
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Solution injectable en stylo prérempli pour utilisation sous-cutanée. Solution incolore, limpide.
+
+Un stylo prérempli avec 2.4 ml contient 600 microgrammes de tériparatide (correspondant à 250 microgrammes par ml).
+
+Chaque dose de 80 microlitres contient 20 microgrammes de tériparatide.
+
+ 
+
+Indications/Possibilités d'emploi
+
+Sondelbay est utilisé pour le traitement de femmes après la ménopause présentant une ostéoporose manifeste et un risque de fracture élevé. Chez des femmes après la ménopause, on montré une réduction significative de l'incidence de fractures vertébrales et non vertébrales.
+
+Sondelbay est indiqué chez les hommes atteints d'ostéoporose primaire ou hypogonadique présentant un risque élevé de fractures. Chez les hommes atteints d'ostéoporose primaire ou hypogonadique, Sondelbay augmente la densité minérale osseuse.
+
+Traitement de l’ostéoporose induite par les glucocorticoïdes chez l'adulte présentant un risque accru de fractures.
+
+ 
+
+Posologie/Mode d'emploi
+
+L'utilisation ne doit se faire que par un médecin bénéficiant d'une expérience particulière dans le traitement de l'ostéoporose.
+
+La technique d'injection correcte doit être expliquée au patient. Veuillez suivre le mode d'emploi du stylo prérempli.
+
+On ne dispose d'aucune expérience sur la combinaison de tériparatide avec des traitements anti-résorption de l'ostéoporose (p.ex. bisphosphonates).
+
+Après la fin du traitement par le tériparatide, d'autres traitements contre l'ostéoporose peuvent être appliqués.
+
+Afin d'assurer la traçabilité des médicaments biotechnologiques, il convient de documenter pour chaque traitement le nom commercial et le numéro de lot.
+
+ 
+
+Posologie usuelle
+
+La dose recommandée est de 20 microgrammes par jour, administrés au moyen d'une injection sous-cutanée journalière dans la cuisse ou l'abdomen.
+
+Il est conseillé aux patients qui ingèrent peu de calcium et de vitamine D dans la nourriture de prendre un complément de ces substances.
+
+ 
+
+Durée du traitement
+
+L'efficacité et la sécurité d'emploi n'ont pas été démontrées lors d'un traitement de plus de 24 mois. Par conséquent, une durée de traitement maximale de 24 mois est recommandée.
+
+ 
+
+Instructions posologiques particulières
+
+Patients présentant des troubles de la fonction hépatique
+
+La sécurité et l'efficacité n'ont pas été étudiées chez les patients présentant une fonction hépatique altérée.
+
+ 
+
+Patients présentant des troubles de la fonction rénale
+
+Sondelbay ne doit pas être utilisé chez les patients présentant une insuffisance rénale sévère. En cas d'urolithiase, Sondelbay ne doit être utilisé qu'avec prudence, de même en cas d'atteinte modérée de la fonction rénale.
+
+Enfants et adolescents
+
+La sécurité d'emploi et l'efficacité du tériparatide ne sont pas démontrées chez les enfants et les adolescents de moins de 18 ans. Sondelbay ne doit pas être utilisé chez les enfants ou les adolescents (âgés de moins de 18 ans).
+
+ 
+
+Jeunes adultes avant la fermeture épiphysaire
+
+Sondelbay ne doit pas être utilisé chez les jeunes adultes chez lesquels la fermeture épiphysaire n'a pas encore eu lieu.
+
+ 
+
+Patients âgés
+
+La sécurité et l'efficacité de tériparatide ont été étudiées chez des femmes d'un âge moyen de 69,5 ans. Aucun ajustement posologique lié à l'âge n'est nécessaire.
+
+ 
+
+Contre-indications
+
+·Autres maladies du métabolisme osseux à l'exception d'une ostéoporose primaire (y compris hyperparathyroïdie et syndrome de Paget) et élévation peu claire du taux de phosphatase alcaline.
+
+·Antécédents de radiothérapie du squelette. Antécédents de radiothérapie avec source de rayonnement extérieure ou source de rayonnement implantée, dans laquelle le squelette se trouvait dans le champ du rayonnement.
+
+·Hypercalcémie préexistante (en raison de la possibilité d'une aggravation de l'hypercalcémie).
+
+·Métastases osseuses antérieures ou existantes ou tumeurs osseuses malignes.
+
+·Insuffisance rénale sévère.
+
+·Enfants et adolescents.
+
+·Jeunes adultes avant fermeture épiphysaire.
+
+·Grossesse, allaitement.
+
+·Hypersensibilité au tériparatide ou à l'un des excipients
+
+ 
+
+Mises en garde et précautions
+
+Chez des rats, il y a eu une augmentation, de l'incidence d'ostéosarcomes (tumeurs osseuses malignes) dépendante de la dose et de la durée du traitement (voir «Données précliniques»). Jusqu'à ce que l'on dispose de nouvelles données, la durée de traitement recommandée de 24 mois ne doit pas être dépassée.
+
+Le traitement de 24 mois avec tériparatide ne doit pas être répété.
+
+Les groupes de patients suivants présentent un risque accru de développer des ostéosarcomes et doivent donc être exclus d'un traitement avec le tériparatide (voir «Contre-indications»):
+
+·Patients souffrant de la maladie de Paget ou présentant une élévation peu claire de la phosphatase alcaline.
+
+·Enfants et adolescents
+
+·Antécédents de radiothérapie du squelette
+
+ 
+
+Hypotension
+
+Dans de courtes études cliniques menées avec tériparatide, des épisodes isolés d'hypotension orthostatique passagère ont été observés. Typiquement, l'épisode a commencé dans les quatre heures qui ont suivi l'application et a disparu spontanément en l'espace de quelques minutes à quelques heures. Si une hypotension orthostatique passagère s'est manifestée, elle est survenue pendant les premières utilisations, s'est améliorée sous l'effet d'une position allongée transitoire et ne s'est pas reproduite lors de la poursuite du traitement.
+
+ 
+
+Hypercalcémie
+
+Le tériparatide n'a pas été étudié chez des patients présentant une hypercalcémie préexistante. Ces patients doivent être exclus d'un traitement avec tériparatide car l'hypercalcémie peut éventuellement se renforcer. Chez des patients normocalcémiques, une élévation légère et passagère du taux de calcium sérique a été observée après l'injection. Les taux de calcium sérique ont atteint un maximum après 4 à 6 heures et sont retombés à leur valeur initiale 16 à 24 heures après chaque injection de tériparatide. Ces effets doivent toujours être pris en compte, car les concentrations sériques de calcium observées dans les 16 heures suivant une dose peuvent refléter l'effet pharmacologique du tériparatide. Une hypercalcémie persistante n'a pas été observée dans les études cliniques avec tériparatide. Si une hypercalcémie persistante est constatée, le traitement par tériparatide doit être interrompu jusqu'à ce que la cause de l'hypercalcémie soit élucidée.
+
+Les patients chez qui un trouble hypercalcémique tel qu'un hyperparathyroïdisme primaire est connu ne doivent pas être traités par tériparatide (voir «Contre-indications»).
+
+Une surveillance régulière des taux de calcium n'est pas nécessaire pendant le traitement.
+
+ 
+
+Urolithiase
+
+Le tériparatide n'a pas été étudié chez des patients souffrant d'une urolithiase existante. Le tériparatide doit être utilisé avec prudence chez des patients souffrant d'une urolithiase existante ou d'une urolithiase survenue peu auparavant, car il est possible que cet état se détériore.
+
+Taux de calcium urinaire: Le tériparatide augmente l'excrétion de calcium dans l'urine; néanmoins, la fréquence d'une hypercalciurie, dans les études cliniques menées chez des patients traités avec tériparatide et des patients traités avec un placebo était similaire ( voir «Pharmacocinétique, Troubles de la fonction rénale»).
+
+ 
+
+Examens de laboratoire
+
+Fonction rénale
+
+Dans les études cliniques, aucun effet indésirable cliniquement significatif n'a été observé sur la fonction rénale. Ont été déterminés: clairance de la créatinine, azote uréique sanguin (BUN), créatinine et électrolytes sériques; poids spécifique et pH de l'urine; sédiment urinaire. Il n'a pas été réalisé d'études au long cours chez des patients atteints d'insuffisance rénale sévère, chez des patients sous dialyse aiguë ou chronique, ou chez des patients avec des greffes rénales fonctionnelles.
+
+La prudence est de mise chez les patients atteints d'altération modérée de la fonction rénale.
+
+ 
+
+Taux sériques d'acide urique
+
+Le tériparatide augmente les concentrations d'acide urique dans le sérum. Dans les études cliniques, 2.8% des patients sous tériparatide avaient des concentrations sériques d'acide urique supérieures à la limite du domaine normal, par rapport à 0.7% des patients sous placebo. L'hyperuricémie n'a toutefois pas entraîné d'augmentation de la goutte, des arthralgies ou de l'urolithiase.
+
+ 
+
+Excipients présentant un intérêt particulier
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par dose, c.-à-d. qu'il est essentiellement «sans sodium».
+
+ 
+
+Interactions
+
+Interactions pharmacodynamiques
+
+Influence d'autres médicaments sur l'action du tériparatide
+
+L'administration concomitante de raloxifène ou une hormonothérapie concomitante n'ont modifié ni l'effet de tériparatide sur les taux sériques ou urinaires de calcium ni les effets secondaires cliniques.
+
+On ne dispose d'aucune donnée sur l'utilisation concomitante d'autres traitements anti-résorption de l'ostéoporose (p.ex. bisphosphonates) et du tériparatide.
+
+Influence du tériparatide sur l'action d'autres médicaments
+
+Dans une étude menée chez 15 sujets en bonne santé qui ont reçu chaque jour de la digoxine jusqu'à atteindre de l'état d'équilibre, une dose unique de tériparatide n'a pas modifié l'effet cardiaque de la digoxine. Dans le cas d'une hypercalcémie, la toxicité de la digoxine est toutefois augmentée. Comme le tériparatide augmente passagèrement le taux de calcium sérique, tériparatide sera utilisé avec prudence chez des patients traités par digoxine.
+
+Dans des études d'interactions pharmacologiques, aucune interaction cliniquement significative n'a été observée entre le tériparatide et l'hydrochlothiazide, le furosémide, l'aténolol ainsi que les formes retard du diltiazem, de la nifédipine, de la félodipine et de la nisoldipine.
+
+ 
+
+Grossesse, Allaitement
+
+Grossesse
+
+Des études menées chez le lapin ont montré des effets toxiques sur la reproduction (voir «Données précliniques»). Le risque potentiel pour l'être humain n'est pas connu.
+
+Tériparatide ne doit pas être utilisé pendant la grossesse (voir «Contre-indications»).
+
+ 
+
+Allaitement
+
+On ignore si le tériparatide passe dans le lait maternel. Tériparatide ne doit pas être utilisé pendant ou l'allaitement (voir «Contre-indications»).
+
+ 
+
+Effet sur l'aptitude à la conduite et l'utilisation de machines
+
+Aucune étude n'a été menée sur les effets sur l'aptitude à la conduite de véhicules et à l'utilisation de machines. Toutefois, une hypotension orthostatique passagère ou un vertige ont a été observés chez quelques patients isolés. Les patients devraient s'abstenir de conduire un véhicule ou d'utiliser des machines jusqu'à ce que les symptômes aient disparu.
+
+ 
+
+Effets indésirables
+
+Liste des effets indésirables
+
+Les effets indésirables sont classés par classes de systèmes d'organes MedDRA et par fréquence selon la convention suivante:
+
+« très fréquent » (≥1/10),
+
+« fréquent » (≥1/100, <1/10),
+
+« occasionnel » (≥1/1'000, <1/100),
+
+« rare » (≥1/10'000, <1/1'000),
+
+« très rare » (<1/10'000),
+
+« fréquence inconnue » (ne peut pas être estimée sur la base des données disponibles).
+
+ 
+
+Affections hématologiques et du système lymphatique
+
+Fréquent: anémie
+
+ 
+
+Affections du système immunitaire
+
+Rare: anaphylaxie
+
+ 
+
+Troubles du métabolisme et de la nutrition
+
+Fréquent: hypercholestérolémie
+
+Occasionnel: hypercalcémie > 2,76 mmol/l (11 mg/dl).
+
+Rare: hypercalcémie > 3,25 mmol/l (13 mg/dl).
+
+ 
+
+Affections psychiatriques
+
+Fréquent: dépression.
+
+ 
+
+Affections du système nerveux
+
+Fréquent: vertiges, insomnie, syndrome sciatique, syncope, céphalées.
+
+ 
+
+Affections de l'oreille et du labyrinthe
+
+Fréquent: vertiges.
+
+ 
+
+Affections cardiaques
+
+Fréquent: angine de poitrine, palpitations cardiaques.
+
+Occasionnel: tachycardie.
+
+ 
+
+Affections vasculaires
+
+Fréquent: hypertension, hypotension.
+
+ 
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquent: rhinite, toux accrue, pharyngite, dyspnée, pneumonie.
+
+Occasionnel: emphysème
+
+ 
+
+Affections gastro-intestinales
+
+Fréquent: nausées, constipation, diarrhée, dyspepsie, vomissements, affection gastro-intestinale, affection dentaire.
+
+Occasionnel: hémorroïdes
+
+ 
+
+Affections de la peau et du tissu sous-cutané
+
+Fréquent: éruption cutanée, transpiration.
+
+ 
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Très fréquent: arthralgie 10,1 %.
+
+Fréquent: crampes des jambes, crampes dorsales.
+
+Occasionnel: myalgie, arthralgie, crampes musculaires.
+
+Très rare: crampes sévères de la musculature dorsale.
+
+ 
+
+Affections du rein et des voies urinaires
+
+Occasionnel: incontinence urinaire, polyurie, impériosité mictionnelle, néphrolithiase
+
+Rare: insuffisance rénale / détérioration de la fonction rénale
+
+ 
+
+Troubles généraux et anomalies au site d'administration
+
+Très fréquent: douleurs 21,3 %.
+
+Fréquent: asthénie, douleurs cervicales, réactions légères et transitoires au site d'injection avec douleurs, gonflements, érythèmes, hématomes locaux, prurit et légères hémorragies au site d'injection.
+
+Rare: dyspnée aiguë, œdème de la région buccale et faciale, urticaire généralisée, douleur thoracique, anaphylaxie.
+
+ 
+
+Investigations
+
+Fréquent: hyperuricémie.
+
+Occasionnel: prise de poids, souffles cardiaques, augmentation de la phosphatase alcaline
+
+ 
+
+Le tériparatide peut provoquer une légère élévation passagère des taux de calcium. sérique. Si des échantillons de sang sont prélevés chez un patient, cela doit se faire au minimum 16 heures après la dernière injection de tériparatide.
+
+Le tériparatide peut causer de faibles élévations de l'excrétion de calcium urinaire, l'incidence de l'hypercalciurie n'a toutefois pas été différente dans les études cliniques de celle des patients traités avec le placebo (voir «Précautions»).
+
+Immunogénicité: Dans une vaste étude clinique, des anticorps qui faisaient une réaction croisée avec tériparatide ont été détectés chez 2.8% des femmes traitées avec le tériparatide. D'une façon générale, des anticorps ont été détectés pour la première fois au bout de 12 mois de traitement et leur titre a diminué après l'arrêt du traitement. Il n'a pas été constaté de signes de réaction d'hypersensibilité, de réactions allergiques, d'effets sur le calcium sérique ou d'incidences sur la réponse de la densité minérale osseuse.
+
+ 
+
+L'annonce d’effets secondaires présumés après l'autorisation est d’une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+ 
+
+Surdosage
+
+Pendant les études cliniques, aucun cas de surdosage n'a été rapporté. Le tériparatide a été bien toléré jusqu'à des doses de 100 µg. Dans une étude clinique, des doses de 60 µg par jour administrées pendant 6 semaines ont été bien tolérées.
+
+ 
+
+Signes et symptômes
+
+Comme répercussions d'un surdosage, on peut s'attendre à une hypercalcémie survenant de façon retardée ainsi qu'à un risque d'hypotension orthostatique. Une nausée, des vomissements, un vertige et des maux de tête peuvent également se manifester.
+
+ 
+
+Expériences de surdosage mentionnées dans les annonces spontanées après commercialisation
+
+Depuis la commercialisation, il y a eu des annonces spontanées d'erreurs de dosage au cours desquelles le contenu total (jusqu'à 800 µg) du stylo de tériparatide a été administré en une seule dose. Les événements passagers ont englobé des nausées, une faiblesse/léthargie et une hypotension. Dans quelques cas, aucun événement indésirable n'est apparu à la suite d'un surdosage. Aucun cas de décès n'a été rapporté en lien avec un surdosage.
+
+Traitement
+
+Il n'existe pas d'antidote spécifique pour le tériparatide. Le traitement d'un surdosage présumé doit inclure un arrêt temporaire de tériparatide, une surveillance du taux de calcium sérique ainsi que des mesures de soutien appropriées telles qu'une hydratation.
+
+Propriétés/Effets
+
+Code ATC
+
+H05AA02
+
+Sondelbay est un biosimilaire.
+
+ 
+
+Mécanisme d'action
+
+La parathormone endogène (PTH), composée de 84 acides aminés, est le principal régulateur du métabolisme du calcium et du phosphate dans l'os et le rein. L'effet physiologique de la PTH comprend la stimulation de la formation de l'os par une action directe sur les cellules qui forment l'os (ostéoblastes); indirectement, la PTH induit une augmentation de l'absorption intestinale de calcium, une augmentation de la réabsorption tubulaire de calcium et de l'excrétion rénale de phosphate. L'effet biologique de la PTH implique la liaison à des récepteurs spécifiques de la PTH la surface cellulaire. Le tériparatide [rhPTH(1-34)] est le fragment actif (1-34) de la parathormone humaine endogène, qui est produit par la technique de l'ADN recombinant. Le tériparatide se lie à ces récepteurs avec la même affinité que la PTH et il exerce un effet analogue à celui de la PTH sur l'os et le rein. Comme c'est le cas pour la PTH, on peut aussi assumer pour le tériparatide, qu'il ne s'accumule pas dans l'os ou dans d'autres tissus.
+
+ 
+
+Pharmacodynamique
+
+Le tériparatide est un médicament qui induit la formation d'os, utilisé pour le traitement de l'ostéoporose. L'action du tériparatide l'os dépend du type d'exposition systémique. L'administration de tériparatide une fois par jour accroît la formation de nouveau tissu osseux sur des surfaces trabéculaires et corticales (au niveau de l'endoste et du périoste) par une stimulation de l'activité des ostéoblastes plus forte que la stimulation de l'activité des ostéoclastes. À l'inverse, un excédent permanent de PTH endogène peut être nocif pour le squelette car la résorption osseuse peut alors être stimulée plus fortement que la dégradation de l'os.
+
+ 
+
+Efficacité clinique
+
+Le programme clinique a comporté des études menées chez des hommes et chez des femmes, après la ménopause, atteints d'ostéoporose. Des femmes ont été traités jusqu'à 24 mois pour permettre d'évaluer l'effet sur des fractures vertébrales. Des hommes ont été traités jusqu'à 14 mois pour permettre d'évaluer l'effet sur la densité minérale osseuse. Parmi les femmes et les hommes qui ont participé à des études sur le traitement pas le tériparatide, 1930 personnes ont été observées systématiquement sur 18 mois dans une étude de suivi après la fin du traitement.
+
+ 
+
+Traitement de femmes après la ménopause atteintes d'ostéoporose
+
+Dans l'étude pivot 1637 femmes après la ménopause (âge moyen de 69.5 ans) ont été incluses. 90% des patientes présentaient une ou plusieurs fractures vertébrales au début du traitement. Toutes les patientes ont reçu chaque jour 1000 mg de calcium et au moins 400 UI de vitamine D. Les résultats du traitement par tériparatide, qui a duré jusqu'à 24 mois (en moyenne 19 mois), montrent un effet significatif dans la prévention de fractures.
+
+ 
+
+Effet sur des fractures vertébrales
+
+Le tériparatide, administré sur une durée médiane de 19 mois, a réduit significativement, par rapport au placebo, le risque et la gravité de nouvelles fractures vertébrales chez des femmes, après la ménopause, atteintes d'ostéoporose. Le tériparatide a réduit de 65% l'incidence d'une ou de plusieurs nouvelles fractures vertébrales et de 77% l'incidence de fractures multiples (Tableau 1). 11 femmes doivent être traitées sur une période moyenne de 19 mois pour qu'une ou plusieurs fractures vertébrales soient prévenues.
+
+ 
+
+Effet sur des fractures non-vertébrales
+
+Le tériparatide a réduit significativement de 53% l'incidence globale de fractures non-vertébrales dues à l'ostéoporose, y compris les fractures du poignet, des côtes, des malléoles, des os du bras, de la hanche, du pied, du bassin et autres.
+
+ 
+
+Effet sur la densité minérale osseuse
+
+Le tériparatide a augmenté rapidement la densité minérale osseuse des vertèbres lombaires. Une augmentation significative a déjà été observée au bout de 3 mois et elle s'est poursuivie pendant toute la durée du traitement. Au bout d'une durée moyenne de traitement de 19 mois, la densité minérale osseuse a augmenté de 9% dans les vertèbres lombaires et de 4% dans la hanche (p <0.001) par rapport au placebo. L'efficacité du tériparatide ne dépendait pas de l'âge, du taux de base du métabolisme osseux et de la densité minérale osseuse au début du traitement.
+
+ 
+
+Efficacité en cas de douleurs dorsales
+
+Le tériparatide réduit significativement l'incidence et le degré de gravité de douleurs dorsales. Chez des femmes, après la ménopause, atteintes d'ostéoporose, il y a eu une réduction significative (p= 0.017) de 26%, par rapport au placebo, des mentions spontanées de l'apparition de nouvelles douleurs dorsales ou de l'aggravation de douleurs dorsales.
+
+ 
+
+Effet sur la perte de taille corporelle
+
+Sur les 86 femmes après la ménopause qui ont souffert de fractures vertébrales, les femmes traitées avec le tériparatide ont subi une réduction significativement plus petite de la taille corporelle que celles qui étaient traitées avec le placebo (p=0.001).
+
+ 
+
+Histologie de l'os
+
+L'effet du tériparatide sur l'histologie de l'os a été examiné sur une biopsie de la crête iliaque chez 61 femmes après la ménopause qui avaient été traitées, sur une période allant jusqu'à 24 mois,avec un placebo ou avec 20 ou 40 µg de tériparatide. L'augmentation de la densité minérale osseuse et la robustesse obtenues avec tériparatide l'ont été sans signe de toxicité cellulaire ou d'effet délétère sur l'architecture osseuse ou sur la minéralisation. Ces résultats de biopsies osseuses humaines correspondent à ceux qui ont été trouvés dans des études pré-cliniques chez des primates.
+
+ 
+
+Efficacité sur des fractures après la fin du traitement
+
+Après fin du traitement de tériparatide, 1262 femmes après la ménopause ayant participé à l'étude pivot ont été incluses dans une étude post-thérapeutique de suivi. En l'espace de 18 mois, environ 50% des femmes de chacun des précédents bras de traitement avaient commencé un traitement de l'ostéoporose avec un médicament autorisé, selon l'appréciation de leur médecin (pas de tériparatide). Toutes les femmes ont reçu 1000 mg de calcium par jour et au moins 400 UI de vitamine D par jour.
+
+Pendant 18 mois en moyenne après la fin du traitement de tériparatide, il y a eu une réduction significative de 40% du risque relatif de nouvelles fractures vertébrales chez les femmes traitées précédemment avec tériparatide, par rapport à celles qui avaient reçu le placebo. Cette réduction du risque relatif était similaire chez les femmes recevant ou ne recevant pas de traitement de l'ostéoporose (41% et 37%). Pendant toute la durée de la période d'observation, il y a eu une réduction de 42% du risque de fractures non-vertébrales dues à l'ostéoporose chez les femmes précédemment traitées avec tériparatide, par rapport à celles qui avaient reçu le placebo.
+
+Les données de cette étude démontrent que, indépendamment de la suite du traitement choisie, le risque de subir une fracture était réduit chez les femmes qui avaient été traitées précédemment avec tériparatide.
+
+Dans une étude ouverte, 503 femmes après la ménopause qui souffraient d'une grave ostéoporose et présentaient une fracture ostéoporotique survenue dans les 3 années précédentes (83% avaient reçu auparavant un traitement contre l'ostéoporose) ont reçu tériparatide sur une période allant jusqu’à 24 mois. Au bout de 24 mois, la densité minérale osseuse (BMD) avait augmenté en moyenne de 10.5% au niveau du rachis lombaire, de 2.6% au niveau de toute la hanche et de 3.9% au niveau du col du fémur. Du 18e au 24e mois, l'augmentation moyenne de la densité minérale osseuse a été de 1.4% au niveau du rachis lombaire, de 1.2% au niveau de toute la hanche et de 1.6% au niveau du col du fémur.
+
+ 
+
+Ostéoporose chez l'homme
+
+L'efficacité de l'administration quotidienne d'une dose de tériparatide a été démontrée dans une étude clinique contrôlée avec placebo, menée en double aveugle chez 437 hommes. Ces hommes souffraient soit d'une ostéoporose idiopathique, soit d'une ostéoporose due à un hypogonadisme primaire. Tous les patients recevaient 1000 mg de calcium et au moins 400 UI de vitamine D par jour, et ils ont été traités sur une période allant jusqu'à 14 mois.
+
+Dans cette étude, le tériparatide a augmenté rapidement la densité minérale osseuse du rachis lombaire chez ces hommes. Cette augmentation s'est révélée précoce et significative après seulement 3 mois, et elle s'est poursuivie pendant toute la durée du traitement. Après une durée de traitement moyenne de 11 mois la densité minérale osseuse a augmenté en moyenne de 5% au niveau de la colonne vertébrale et de 1% au niveau de la hanche, par rapport au placebo. L'augmentation de la densité minérale osseuse a été similaire chez les hommes atteints d'ostéoporose hypogonadique ou idiopathique. L'efficacité du tériparatide ne dépendait pas de l'âge, du taux de base du métabolisme osseux et de la densité minérale osseuse au début du traitement.
+
+ 
+
+Tableau 1
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Incidence de fractures vertébrales chez des femmes après la ménopause. | | | | | |
+|  | Placebo (N= 448) (%) | Tériparatide (N= 444) (%) | Diminution  absolue du risque (%) | Diminution  relative du  risque (%)  par rapport au placebo | Diminution  relative du risque  (IC\*\* à 95%) par rapport  au placebo |
+| Nouvelle fracture (≥1) | 14.3 | 5.0\* | 9.3 | 65 | 0.35  (0.22, 0.55) |
+| Fractures multiples (≥2) | 4.9 | 1.1\* | 3.8 | 77 | 0.23  (0.09, 0.60) |
+| Fracture modérée ou grave (≥ 1) | 9.4 | 0.9\* | 8.5 | 90 | 0.10  (0.04, 0.27) |
+
+\* p ≤0.001 par rapport au placebo.
+
+\*\* IC = intervalle de confiance.
+
+ 
+
+Ostéoporose induite par les glucocorticoïdes
+
+L’efficacité du tériparatide chez des hommes et des femmes qui recevaient un traitement systémique de glucocorticoïdes de longue durée (au minimum 5 mg/jour de prednisone ou d'un équivalent sur 3 mois au minimum) a été montrée dans la phase initiale de 18 mois d'une étude randomisée en double-aveugle de 36 mois avec comparateur actif (alendronate 10 mg/jour) (N= 428). 28% des patients présentaient avant le début de l'étude une ou plusieurs fractures vertébrales démontrées à la radiologie. Tous les patients recevaient 1000 mg de calcium et 800 UI de vitamine D par jour.
+
+Ont participé à cette étude des femmes avant (N=67) et après la ménopause (N=277) ainsi que des hommes (N=83). Les femmes après la ménopause avaient un âge moyen de 61 ans avant le début du traitement, un score T moyen de densité minérale osseuse (BMD) du rachis lombaire de -2.7 et elles recevaient une dose journalière moyenne de 7.5 mg d’équivalent de prednisone. 34% avaient une ou plusieurs fractures vertébrales démontrées à la radiologie. Les femmes après la ménopause avaient un âge moyen de 37 ans avant le début du traitement, un score T moyen de densité minérale osseuse (BMD) du rachis
+
+lombaire de -2.5 et elles recevaient une dose journalière moyenne de 10 mg d’équivalent de prednisone. 9% avaient une ou plusieurs fractures vertébrales démontrées à la radiologie. Les hommes avaient un âge moyen de 57 ans, un score T moyen de densité minérale osseuse (BMD) du rachis lombaire de -2.2 et ils recevaient une dose journalière moyenne de 10 mg d’équivalent de prednisone. 24% avaient une ou plusieurs fractures vertébrales démontrées à la radiologie.69% des patients ont terminé la phase initiale de 18 mois de l'étude. À la fin de la phase initiale de. 18 mois, la densité minérale osseuse (BMD) du rachis lombaire avait augmenté de manière significative sous tériparatide (7.2%) par rapport à l’alendronate (3.4%) (p <0.001). Sous tériparatide il y a eu une augmentation de la BMD au niveau de toute la hanche de 3.6% et sous alendronate de 2.2% (p <0.01), la BMD du col du fémur était augmentée de 3.7% sous tériparatide et de 2.1% sous alendronate (p<0.05).Entre le 18e et le 24e mois, la BMD sous tériparatide a encore augmenté de 1.7% au niveau du rachis lombaire, de 0.9% au niveau de toute la hanche et de 0.4% au niveau du col du fémur.
+
+Un examen radiographique de la colonne vertébrale effectué au bout de 36 mois chez 169 patients sous alendronate et chez 173 patients sous tériparatide a montré qu'une nouvelle fracture vertébrale était survenue chez 13 patients sous alendronate (7.7%) par rapport à 3 patients sous tériparatide (1.7%) (p= 0.01). Chez 15 patients sur 214 sous alendronate (7.0%), une fracture non vertébrale était survenue, par rapport à 16 patients sur 214 sous tériparatide (7.5%) (p= 0.84).
+
+Chez les femmes avant la ménopause, il y a eu une augmentation significativement plus grande de la BMD dans le groupe sous tériparatide au niveau du rachis lombaire (4.2% par rapport à -1.9%; p<0.001) et de toute la hanche (3.8% par rapport à 0.9%; p=0.005) que dans le groupe sous alendronate. Toutefois, on n'a pas montré d'effet significatif sur le taux de fractures.
+
+ 
+
+Pharmacocinétique
+
+Absorption
+
+Après une injection sous-cutanée (s.c.), le tériparatide a une biodisponibilité absolue de 95%. Après une injection sous-cutanée d'une dose de 20 µg, le pic de concentration molaire de tériparatide a brièvement dépassé de 4 à 5 fois le domaine de référence supérieur de la concentration endogène de PTH (65 pg/ml [7.0 pM]) pendant environ 30 minutes, puis la concentration a chuté en l'espace de 3 heures à des valeurs indétectables. L'exposition systémique moyenne (PTH endogène plus tériparatide) sur une période de 24 heures n'a pas dépassé la limite supérieure des valeurs normales et elle se situe en dessous des taux trouvés chez des patients atteints d'hyperparathyroïdie légère.
+
+ 
+
+Distribution
+
+Le volume de distribution est d'environ 1.7 l/kg. La demi-vie du tériparatide après une administration sous-cutanée est d'environ 1 heure; ceci correspond au temps requis pour la résorption du site d'injection.
+
+ 
+
+Métabolisme
+
+On n'a pas réalisé d'études de métabolisme ou d'excrétion avec le tériparatide, on assume néanmoins que le métabolisme périphérique de la parathormone a lieu principalement dans le foie et les reins.
+
+ 
+
+Élimination
+
+Tériparatide est éliminé par une clairance hépatique et extra-hépatique (environ 62 l/h chez la femme et 94 l/h chez l'homme).
+
+ 
+
+Cinétique pour certains groupes de patients
+
+Sexe
+
+L'exposition systémique de tériparatide est plus basse de 20 à 30% chez l'homme que chez la femme. Toutefois, il n'est apparu aucune différence spécifique du sexe en termes de sécurité, de tolérance ou d'effets pharmacodynamiques. Aucune adaptation posologique en raison du sexe n'est requise.
+
+ 
+
+Troubles de la fonction hépatique
+
+Des données pré-cliniques suggèrent que le tériparatide est principalement métabolisé dans les cellules hépatiques de Kupffer. Il est par conséquent improbable que des maladies dans lesquelles la fonction des hépatocytes est limitée exercent un effet cliniquement significatif sur l'exposition systémique au tériparatide (voir «Propriétés/Effets»).
+
+ 
+
+Troubles de la fonction rénale
+
+Chez des patients atteints d'insuffisance rénale chronique légère, modérée ou sévère, on n'a pas constaté de différences en termes de pharmacocinétique et d'innocuité lors de l'administration d'une dose unique de tériparatide.
+
+Cependant, des patients atteints d'insuffisance rénale (CrCl <30 ml/min) ont présenté sous tériparatide une augmentation de l'AUC et de t1/2 et une plus petite augmentation du calcium sérique et urinaire. la Cmax restant inchangée. Des études au long cours sur l'efficacité et la sécurité n'ont pas été réalisées chez des patients ayant des concentrations sériques de créatinine <177 µmol/l. Il n'a pas été effectué d'études chez des patients sous dialyse.
+
+ 
+
+Insuffisance cardiaque
+
+Chez des patients souffrant d’insuffisance cardiaque stable (New York Heart Association Class I-III et dysfonction cardiaque en outre démontrée), qui ont reçu deux doses uniques de 20 µg de tériparatide, aucun changement cliniquement significatif n'a été constaté en termes de pharmacocinétique, de tension artérielle, de fréquence du pouls ou d'autres paramètres de sécurité. Aucune adaptation posologique n'est requise en raison d'une insuffisance cardiaque légère à modérée. On ne dispose pas de données de patients atteints d'insuffisance cardiaque grave.
+
+ 
+
+Patients âgés
+
+On n'a pas constaté de différences dans la pharmacocinétique en fonction de l'âge (intervalle de 31 à 85 ans).
+
+ 
+
+Données précliniques
+
+Carcinogénicité
+
+Chez des rats, traités quotidiennement pendant presque toute la vie avec des injections de 5.30 ou 75 µg/kg, de tériparatide, il y a eu une augmentation de la formation d'os dépendante de la dose et une augmentation de l'incidence d'ostéosarcomes (voir «Mises en garde et précautions»). Les ostéosarcomes, tumeurs osseuses malignes rares chez le rat, ont été observés chez des rats mâles et femelles dans tous les groupes de doses. Les ostéosarcomes ne sont survenus chez les rats qu'en lien avec une forte augmentation de la formation d'os. Le tériparatide n'a pas augmenté l'incidence d'une quelconque autre néoplasie chez le rat.
+
+Une deuxième étude de carcinogénicité a révélé que la survenue d'ostéosarcomes dépend de la dose et de la durée du traitement. Des rats blancs au squelette mature qui ont reçu pendant 6 ou 20 mois des doses quotidiennes de 5 µg/kg de tériparatide, n'ont pas développé d'ostéosarcomes. Ce niveau de dosage sans répercussion observée (no-observed-effect-level [NOEL]), au sens de néoplasies osseuses correspond à une exposition systémique trois fois supérieure à celle obtenue chez des femmes après la ménopause et des hommes à qui une dose déterminée à partir de l'AUC de 20 µg (environ 0.3 µg/kg) est administrée.
+
+Si la pertinence de ces résultats n'est pas connue pour l'être humain, on n'a néanmoins observé aucun ostéosarcome, ni dans les études cliniques, ni pendant la période d'observation subséquente au traitement. De même, chez des singes ovariectomisés qui ont été observés pendant 18 mois ou pendant une période de suivi de 3 ans après la fin du traitement, aucune tumeur osseuse n'a été observée. Une élévation chronique des taux sanguins de PTH, telle qu'elle se produit sur le plan clinique dans l'hyperparathyroïdie primaire ou secondaire, n'est pas associée à un risque accru d'ostéosarcome.
+
+Des études chez l'animal ont montré qu'un flux sanguin hépatique fortement réduit diminue l'apport de PTH au principal système de dégradation et par conséquent, également l'excrétion de PTH (I-84). Des études in vitro ont montré que des cellules phagocytaires à haute capacité spécifiques du foie constituent le principal système de dégradation dans les capillaires sinusoïdes hépatiques. Ce sont ces cellules de Kupffer hépatiques, et non les hépatocytes, qui fragmentent la PTH (I-34) et la PTH (I-84). Les fragments sont ensuite éliminés de la circulation sanguine par excrétion rénale.
+
+ 
+
+Toxicité sur la reproduction
+
+Le tériparatide n'a pas manifesté d'effets tératogènes chez le rat, la souris ou le lapin. Chez des lapines gestantes, il y a eu, à des doses >3 µg/kg, une mortalité embryonnaire ou fœtale imputable à l'élévation des valeurs du calcium sanguin. À des doses allant jusqu'à 300 µg/kg, le tériparatide n'a pas altéré la fertilité des rats mâles ou femelles.
+
+ 
+
+Mutagénicité
+
+Le tériparatide ne s'est avéré génotoxique dans aucun des systèmes de test suivants: test d'Ames de mutagénèse bactérienne avec ou sans activation, test de lymphome chez la souris pour des mutations de cellules mammaires, test d'aberrations chromosomiques dans des cellules ovariennes de hamster chinois et test du micronoyau in vivo chez des souris.
+
+ 
+
+Remarques particulières
+
+Incompatibilités
+
+En l'absence d'études de compatibilité, ce médicament ne doit pas être mélangé à d'autres médicaments.
+
+ 
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+ 
+
+Stabilité après ouverture
+
+La stabilité chimique et physique «in use» a été démontrée pendant 28 jours à 2-8 °C. Après la première injection, Sondelbay peut être conservé pendant 28 jours maximum aux températures indiquées ci-dessus. Les autres durées et conditions de stockage «in-use» relèvent de la responsabilité de l'utilisateur.
+
+Sondelbay peut être conservé à une température ne dépassant pas 25 °C pendant 3 jours maximum s'il n'est pas possible de le réfrigérer. Après ce délai, le stylo prérempli doit être remis au réfrigérateur et utilisé dans les 28 jours suivant la première injection.
+
+Au bout de 28 jours, le stylo prérempli doit être éliminé de façon appropriée, même s'il reste encore de la solution dans le injector.
+
+ 
+
+Remarques particulières concernant le stockage
+
+À conserver au réfrigérateur (entre 2°C et 8°C), ne pas congeler. Le médicament ne doit pas être utilisé s'il a été congelé. Conserver le récipient dans son carton pour le protéger de la lumière. Le stylo prérempli doit être remis au réfrigérateur immédiatement après avoir été utilisé avec capuchon de protection attaché afin de protéger la cartouche contre les dommages physiques et la lumière. Ne pas conserver le stylo prérempli avec l'aiguille fixée dessus.
+
+Conserver hors de portée des enfants.
+
+ 
+
+Remarques concernant la manipulation
+
+Sondelbay est fourni dans un stylo prérempli. Chaque stylo prérempli doit être utilisé par un seul patient, même si l'aiguille a été changée. Une nouvelle aiguille stérile doit être utilisée à chaque injection. Chaque emballage de Sondelbay contient un mode d'emploi qui décrit entièrement l'utilisation de le stylo prérempli. Aucune aiguille n'est fournie avec le produit. L'appareil peut être utilisé avec des aiguilles pour stylos préremplis (31G ou 32G ; 4 mm, 5 mm ou 8 mm).
+
+La date de la première injection doit être inscrite sur l'emballage extérieur et / ou sur le stylo prérempli de Sondelbay.
+
+Ne pas utiliser le stylo prérempli si la solution est trouble, colorée ou contient des particules.
+
+ 
+
+Numéro d'autorisation
+
+68534 (Swissmedic).
+
+ 
+
+Présentation
+
+Sondelbay, Solution injectable dans un stylo prérempli 2.4 ml: 1 [B]
+
+Les aiguilles ne sont pas livrées avec le produit.
+
+ 
+
+Titulaire de l'autorisation
+
+Accord Healthcare AG, 4103 Bottmingen.
+
+ 
+
+Mise à jour de l'information
+
+Juillet 2026.

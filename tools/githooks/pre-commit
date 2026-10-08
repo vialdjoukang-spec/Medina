@@ -1,0 +1,4 @@
+#!/bin/sh
+# MEDINA — politique des sources : pointeurs dans les nouveaux chapitres/remises, puis contrôle bloquant.
+python3 tools/sources_guard.py scaffold --quiet && git add chapters/*/SOURCES_POLITIQUE.md "livraisons/"*/*/SOURCES_POLITIQUE.md 2>/dev/null
+python3 tools/sources_guard.py check || { echo "Commit refusé : source hors politique (voir docs/collaboration/POLITIQUE_SOURCES.md)."; exit 1; }
