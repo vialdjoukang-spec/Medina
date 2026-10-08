@@ -17,6 +17,8 @@
 
 Trois relectures ont couvert séparément les doses et FI, les mécanismes et la provenance, puis la clinique et la structure. La relecture pharmacologique n'a relevé aucune erreur bloquante de dose, voie ou seuil ; elle a demandé la précision sur l'échec de prophylaxie Malarone, ajoutée dans `B50_b.html`, `B50_d.html` et `B50_pop3.html`. La relecture des sciences a corrigé deux attributions : le chiffre OFSP d'environ 300 cas toutes espèces, et le retrait d'un mécanisme médullaire absent de la page OMS citée. La conclusion clinique/structurelle reste consignée à part si elle apporte de nouvelles réserves.
 
+Contrôle direct complémentaire des **textes FI complets** avec `tools/swissmedic_fi.py` de la branche Claude (AIPS via AmiKo) : recherche par nom puis lecture des GTIN `7680545940387` (Riamet, décembre 2019) et `7680541500165` (Malarone, décembre 2025). Les passages sur les six doses et 24 comprimés, la prise avec lipides, le vomissement dans l'heure, les quatre comprimés de Malarone pendant trois jours, la limite rénale et l'autre schizonticide après échec de prophylaxie ont été retrouvés dans ces textes.
+
 ## Réserves pour l'application à une personne
 
 La destination et le traitement antipaludique antérieur, les constantes et bilans d'organes, la glycémie, la possibilité d'absorber l'oral et les interactions ne sont pas fournis dans le cas pédagogique. Aucun traitement final n'est attribué au patient avant ces données. Si une forme grave est constatée, le produit d'artésunate IV effectivement disponible, sa notice, sa préparation et le protocole hospitalier doivent être vérifiés sans retarder l'organisation des soins.
