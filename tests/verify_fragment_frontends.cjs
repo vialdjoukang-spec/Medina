@@ -29,7 +29,7 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
    check(f.id+' : toutes les catégories sont visibles',await page.locator('.mcg-category-card').count()===O.blocks.length);
    check(f.id+' : un frontend distinct',await page.locator('html').getAttribute('data-medina-fragment')===f.id);
    const visual=await page.evaluate(()=>({font:getComputedStyle(document.querySelector('.mcg-cover h1')).fontFamily,scheme:getComputedStyle(document.documentElement).colorScheme,body:getComputedStyle(document.body).backgroundColor,brand:getComputedStyle(document.querySelector('.brand strong')).color}));
-   check(f.id+' : clair même avec système sombre',!visual.scheme.includes('dark')&&visual.body==='rgb(238, 240, 243)',visual);
+   check(f.id+' : clair même avec système sombre',!visual.scheme.includes('dark')&&visual.body==='rgb(232, 235, 240)',visual);
    check(f.id+' : Atkinson Hyperlegible Next affichée',visual.font.includes('Atkinson Hyperlegible Next'),visual);
    check(f.id+' : marque lisible',visual.brand==='rgb(13, 15, 18)',visual);
    await noOverflow(page,f.id+' accueil bureau');
