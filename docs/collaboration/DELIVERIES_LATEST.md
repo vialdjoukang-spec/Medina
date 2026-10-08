@@ -1,3 +1,17 @@
+## 2026-10-08 — PR #12, tête 7775e6e : I89
+
+État : **repéré et reçu ; non intégré ; médicalement bloqué ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.
+
+- Baseline et `main` de réception : `918ef69a8526bf0be38ffdf4f88438ad61d9a8a7`.
+- 24 originaux archivés sans modification ; empreinte Git des originaux `cc9f0b6739915a1207d98c20b1939ef33c7fd33a`.
+- 11/11 empreintes de proposition exactes ; 2/2 baselines de remplacement exactes ; neuf ajouts absents comme déclaré.
+- Contrôles producteurs archivés : 118 tests, 2 595 contrôles natifs et 73 contrôles S01 annoncés sans échec, non reproduits.
+- Blocage de chaîne : I83 reste actif et non intégré/publié.
+- Blocages médicaux ciblés : octréotide hors indication insuffisamment étayé, statut suisse Verdye actuel non vérifié, mécanismes sans source primaire contre-lue.
+- Aucune injection canonique, reconstruction, vérification navigateur ni publication du site.
+
+[Rapport](reviews/2026-10-08/PR12_7775E6E_I89/RECEPTION.md) · [Reçu](receipts/CLAUDE_I89_7775E6E_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête d5b46aa : I83-HARMONISATION-5
 
 État : **repéré et reçu ; delta médical accepté ; non intégré ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.

@@ -1,3 +1,16 @@
+## Réception Claude I89 — tête 7775e6e, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) remet un lot complet I89 à la tête `7775e6e1544ca7753946921d3ec61a7dd45d1c65`, exactement basé sur `main` `918ef69a8526bf0be38ffdf4f88438ad61d9a8a7`. Les 24 originaux sont archivés sans modification ; les 11 propositions et les deux baselines de remplacement concordent.
+
+État : **repéré et reçu ; non intégré ; médicalement bloqué ; contrôles producteurs archivés mais non reproduits ; publication documentaire seulement**.
+
+Blocages : I83 reste actif tant que son intégration/publication n’est pas close ; les doses hors indication d’octréotide pour le chylothorax ne disposent pas d’un appui primaire/protocolaire suffisant ; le statut suisse actuel de Verdye doit être vérifié ; plusieurs mécanismes doivent recevoir une source primaire ou une qualification explicite. Le workspace ne permet pas d’exécuter reconstruction, tests ni navigateur.
+
+Rapport : [PR12_7775E6E_I89/RECEPTION.md](reviews/2026-10-08/PR12_7775E6E_I89/RECEPTION.md)  
+Reçu : [CLAUDE_I89_7775E6E_RECEPTION_2026-10-08.json](receipts/CLAUDE_I89_7775E6E_RECEPTION_2026-10-08.json)
+
+Aucune source canonique, route, attribution ni chapitre actif n’a changé.
+
 ## Réception Claude I83 — harmonisation-5 d5b46aa, 8 octobre 2026
 
 La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a remis un cinquième paquet complet à la tête `d5b46aa2502c91517f7f80c8ac158f42605257e8`, basé sur `main` `3dac92808b055e235ee6f57cfec8e283455a85ca`. Les 14 originaux sont archivés sans modification ; les huit couples baseline/proposition, soit 16 valeurs SHA-256, sont exacts. Seul `I83_b.html` change depuis la v4.
