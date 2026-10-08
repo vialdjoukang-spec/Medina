@@ -1,3 +1,5 @@
+> **Règle universelle du 8 octobre 2026 — efficacité plutôt que volume.** Un cours n’est pas meilleur parce qu’il est long. Chaque phrase apporte une information utile ; le mécanisme précède la conséquence clinique puis la conduite ; phrases courtes et complètes ; termes médicaux dédiés, définis à leur première occurrence ; détail approfondi dans les fenêtres interactives. Aucune information utile n’est retirée ; répétitions, paraphrases et remplissage sont supprimés. Voir `docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md`, section 7.
+
 # Guide de rédaction MEDINA — « Le lecteur comprend, il ne devine pas »
 
 > Exigence du propriétaire (26.09.2026). Ce guide s’applique à chaque phrase d’un cours : îlots, tableaux, encadrés, fenêtres, quiz, Pareto. Il complète PROMPT_MEDINA.md (§ 4 contrat HTML, § 10 contenu, § 11 rigueur) sans rien en retirer.

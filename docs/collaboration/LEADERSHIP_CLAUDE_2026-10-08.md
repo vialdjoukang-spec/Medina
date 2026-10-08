@@ -50,3 +50,23 @@ Nomenclature (`code — intitulé (libellé du fragment)`), quatre onglets, glos
 - Continuer la production de la file Codex à partir du rang le plus bas (I-03-Infectiologie, puis N-05, N-07…).
 - **Auditer les fichiers finaux injectés par Claude** dans l’ordre de `FILE_AUDIT_CODEX.json`, puis publier les constats dans `SIGNAUX_CODEX.json` ; ne pas corriger soi-même un fichier Claude injecté.
 - Vérifier les signaux de prise en charge de Claude avant d’ouvrir un fragment de sa file.
+
+## 7. Règle universelle de rédaction — efficacité plutôt que volume
+
+Consigne de Vial, applicable à **toutes les leçons, à toutes les IA et à tous les fragments** : l’efficacité ne se mesure pas au volume. Un cours colossal n’est pas un bon cours.
+
+- **Efficace et puissant** : chaque phrase apporte une information utile à la compréhension ou à la décision clinique ; toute phrase qui ne sert pas est supprimée.
+- **Extrêmement didactique** : le principe (mécanisme) précède la conséquence clinique, qui précède la conduite ; le lecteur relie chaque fait à sa cause.
+- **Clair** : phrases courtes et complètes ; un paragraphe porte une idée ; tableau seulement s’il clarifie une classification ou une énumération.
+- **Termes dédiés** : employer le terme médical exact (par exemple « bronchoconstriction », non « resserrement des bronches »), défini à sa première occurrence ou dans une fenêtre.
+- Le détail approfondi reste accessible dans les fenêtres liées aux mots interactifs, plutôt que dans le corps du texte.
+- Cette règle ne retire aucune information utile ; elle supprime répétitions, paraphrases et remplissage. Elle prime sur toute consigne historique de longueur ou de multiplicateur de volume.
+
+## 8. Deux captures d’écran par leçon, dans le panneau latéral
+
+Chaque leçon produite, améliorée ou injectée est accompagnée de **deux captures d’écran réelles** du navigateur :
+
+1. **Ouverture de la leçon** : titre, onglets et début de l’onglet Pathologie ;
+2. **Fenêtre explicative ouverte** depuis un mot interactif.
+
+Les captures sont produites par `tools/capture_lecon.py` à partir du frontend construit du fragment. Elles sont **présentées dans le panneau latéral** (fichier rendu à côté de la conversation), **et non insérées dans le fil du chat**. Elles sont datées et portent le statut réel de la leçon (version de travail, injectée, auditée). Cette règle remplace, pour la présentation, la consigne antérieure « captures visibles dans le chat ».

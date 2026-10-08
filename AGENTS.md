@@ -2,9 +2,13 @@
 
 Consigne directe de Vial, prioritaire sur toutes les sections ci-dessous qui lui sont contraires : **Claude est Leader du projet.** Lire [LEADERSHIP_CLAUDE_2026-10-08.md](docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md). Claude rédige ses cours dans un français très agréable et captivant ; un **second agent distinct** les relit, renforce les points faibles et **injecte directement** (« Auto-audit par Agent différé opus 5.5 ») ; **Codex audite ensuite le fichier final injecté**. Claude améliore systématiquement les cours Codex reçus, sauf s’ils sont captivants et corrects sur le fond. Après ses onze fragments, Claude peut entamer les fragments Codex en ordre inverse de création (M-21 vers I-03). Une erreur médicale démontrée reste prioritaire.
 
-## Captures visibles dans le chat — 8 octobre 2026
+Règles universelles ajoutées : **l’efficacité prime sur le volume** — information efficace, puissante, extrêmement didactique, claire, en termes médicaux dédiés, sans remplissage ni perte d’information utile ; **deux captures d’écran réelles par leçon** (ouverture de la leçon et fenêtre explicative ouverte, `tools/capture_lecon.py`), présentées dans le **panneau latéral**, non dans le fil du chat. Voir les sections 7 et 8 du même document.
 
-Vial demande explicitement de voir les captures du travail sur les cours **ici, de manière dynamique**. Afficher les captures dans les messages et réponses avec une image visible, accompagnée du lien direct du cours ; les sorties techniques et les seuls liens de téléchargement ne suffisent pas. Pour présenter une navigation, produire une capture animée issue du navigateur réel et l’afficher directement. Garder le statut de version de travail et dater/versionner les captures ; ne pas inventer un rendu ni annoncer un flux en direct pour une animation enregistrée. Le workflow Pages publie les captures et l’animation sous `apercus/controle/` après les contrôles.
+## Captures visibles — 8 octobre 2026 (présentation remplacée)
+
+> Remplacé pour la présentation par la règle du panneau latéral : deux captures par leçon, affichées à côté de la conversation, non dans le fil du chat (section 8 de `docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md`).
+
+Vial demandait explicitement de voir les captures du travail sur les cours **ici, de manière dynamique**. Afficher les captures dans les messages et réponses avec une image visible, accompagnée du lien direct du cours ; les sorties techniques et les seuls liens de téléchargement ne suffisent pas. Pour présenter une navigation, produire une capture animée issue du navigateur réel et l’afficher directement. Garder le statut de version de travail et dater/versionner les captures ; ne pas inventer un rendu ni annoncer un flux en direct pour une animation enregistrée. Le workflow Pages publie les captures et l’animation sous `apercus/controle/` après les contrôles.
 
 ## Alignement avec Claude — police de lecture, 8 octobre 2026
 
