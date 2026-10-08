@@ -393,5 +393,11 @@ def finish_surface(source, fragment, root):
     category_css = (Path(root) / 'engine/category_organisation.css').read_text(encoding='utf-8')
     category_js = (Path(root) / 'engine/category_organisation.js').read_text(encoding='utf-8')
     source = source.replace('</head>', '<style id="medina-category-organisation-css">' + category_css + '</style></head>', 1)
+    import base64
+    faces = ''.join("@font-face{font-family:'MEDINA Serif';font-style:%s;font-weight:%s;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
+                    % (style, weight, base64.b64encode((Path(root) / 'shell/fonts' / name).read_bytes()).decode())
+                    for name, style, weight in (('ss-400.woff2', 'normal', '400 500'), ('ss-400i.woff2', 'italic', '400'), ('ss-600.woff2', 'normal', '600 700')))
+    atlas_css = (Path(root) / 'engine/atlas_v2.css').read_text(encoding='utf-8')
+    source = source.replace('</head>', '<style id="medina-atlas-v2">' + faces + atlas_css + '</style></head>', 1)
     source = source.replace('</body>', '<script id="medina-category-organisation-data" type="application/json">' + payload + '</script><script id="medina-category-organisation-runtime">' + category_js + '</script></body>', 1)
     return source
