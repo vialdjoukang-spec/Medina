@@ -1,3 +1,11 @@
+## I83 — statut de la conduite intra-artérielle, tête e2c023c, 8 octobre 2026
+
+Trois objets nouveaux sont reçus et archivés. La conduite après injection intra-artérielle est désormais explicitement présentée comme une instruction propre aux libellés Aethoxysklerol/Sclerovein, non comme une recommandation issue d’essais ; l’avis vasculaire immédiat et le protocole local d’urgence ischémique priment. Les contrôles producteur ciblent le main `e434eac` mais ne sont pas rejoués. I83 reste non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_E2C023C_I83_INTRAARTERIELLE_STATUT/RECEPTION.md).
+
+## I83 — présentations Rapidocain sans conservateur, tête 6d5797c, 8 octobre 2026
+
+Quatre objets nouveaux sont reçus et archivés. Les présentations sans conservateur de Rapidocain 10 mg/ml (ampoules 5 et 10 ml, flacon 20 ml) et l’absence d’adrénaline concordent avec l’information professionnelle approuvée par Swissmedic publiée par Compendium. La tumescence reste hors indication décrite et la préparation adrénaline/bicarbonate doit suivre un protocole institutionnel. Les contrôles producteur ne sont pas rejoués ; I83 reste non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_6D5797C_I83_RAPIDOCAIN_PRESENTATIONS/RECEPTION.md).
+
 ## I83 — causalité médicamenteuse et injection intra-artérielle, tête 20c67c0, 8 octobre 2026
 
 Six objets nouveaux sont reçus et archivés. PH-02 distingue désormais chronologie et causalité et interdit l’arrêt automatique d’un médicament. Les extraits Aethoxysklerol/Sclerovein fournis confirment l’alternative mépivacaïne dans la conduite décrite après injection intra-artérielle. Le producteur déclare 1 923 contrôles natifs et 72 contrôles S01 sans erreur sur `main` `e5bde2b`. L’injection reste différée : documents officiels non contre-vérifiés, contrôles non reproduits et audit exhaustif I83 inachevé. [Rapport](reviews/2026-10-08/PR12_20C67C0_I83_PH02_INTRAARTERIELLE/RECEPTION.md).
