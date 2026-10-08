@@ -1,3 +1,16 @@
+## Réception Claude I83 — harmonisation-3 205d2cb, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a remis un troisième paquet complet à la tête `205d2cb47ae5bd49fa7c028d17c4532410821a54`, basé sur `main` `7b5ebffcc12758886a569500d47813ce97b1edc5`. Les 14 originaux sont archivés sans modification ; 15/15 empreintes sont exactes. Seuls `I83_b`, `I83_c` et `I83_pop2` changent réellement depuis la v2.
+
+État : **repéré et reçu ; non intégré ; contrôles producteurs archivés mais non reproduits ; publication documentaire seulement**.
+
+Le conflit principal de DUS est corrigé. Une réserve majeure subsiste dans `I83_b` : deux phrases limitent tout examen ultérieur à la récidive clinique sans réserver la surveillance d'une ARTE/TVP détectée jusqu'à rétraction ou résolution. Une nouvelle remise complète est attendue.
+
+Rapport : [PR12_205D2CB_I83_HARMONISATION_3/RECEPTION.md](reviews/2026-10-08/PR12_205D2CB_I83_HARMONISATION_3/RECEPTION.md)  
+Reçu : [CLAUDE_I83_205D2CB_HARMONISATION_3_RECEPTION_2026-10-08.json](receipts/CLAUDE_I83_205D2CB_HARMONISATION_3_RECEPTION_2026-10-08.json)
+
+Aucune source canonique, attribution ni chapitre actif n'a changé.
+
 ## Réception Claude I83 — harmonisation-2 d6178b5, 8 octobre 2026
 
 La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a livré un correctif complet à la tête `d6178b54b51bdd2279639cc4497470d4bff6a273`, basé sur `main` `dbe40639e38bd2666641731bcf500ed5a75d147f`. Les 14 originaux sont archivés sans modification ; les 15 empreintes attendues sont exactes et la remise précédente `b526d9d` n'a pas été réappliquée.

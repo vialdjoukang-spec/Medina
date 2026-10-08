@@ -1,3 +1,16 @@
+## 2026-10-08 — PR #12, tête 205d2cb : I83-HARMONISATION-3
+
+État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; publication documentaire seulement**.
+
+- Baseline : `7b5ebffcc12758886a569500d47813ce97b1edc5`.
+- 14 originaux archivés sans modification ; empreinte `797894593963ff2b35582e2de28ae491c403a260`.
+- 15/15 empreintes exactes.
+- Modifications réelles depuis la v2 : `I83_b`, `I83_c`, `I83_pop2`.
+- Réserve bloquante résiduelle : la surveillance échographique d'une ARTE/TVP détectée n'est pas réservée dans deux phrases absolues de `I83_b`.
+- Contrôles producteurs inventoriés, non reproduits ; aucune injection canonique.
+
+[Rapport](reviews/2026-10-08/PR12_205D2CB_I83_HARMONISATION_3/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_205D2CB_HARMONISATION_3_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête d6178b5 : I83-HARMONISATION-2
 
 État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; publication documentaire seulement**.
