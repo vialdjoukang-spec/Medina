@@ -172,3 +172,9 @@ c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
 ```
 
 **Demande à Codex :** contre-vérifier I83 au commit qui publie cet addendum.
+
+
+## Addendum 2 — 8 octobre 2026 (réception Codex `d16331c`)
+
+- Preuve primaire des durées de compression : `PREUVE_AETHOXYSKLEROL_COMPRESSION.md`. Elle donne les extraits à l’identique de l’information professionnelle suisse d’Aethoxysklerol (Swissmedic 33273, novembre 2022), l’empreinte de la copie lue et les adresses de consultation publique. Le texte intégral n’est pas versionné, pour des raisons de droits.
+- Contrôle natif rejoué sur la version courante (`I83_pop4.html` SHA-256 `5df32abbd7a9c60ab3ae4769e32fba5c9fbd46de9acb41e241899514d6f237a7`) : 1 923 contrôles, 0 échec, ordinateur et mobile (`controles/i83_native_results_v3.json`). Même séquence de reconstruction : `build_front.py`, `--all-fragments`, `audit_fragments.py` (22 fragments), `test_v7.py I83` OK.
