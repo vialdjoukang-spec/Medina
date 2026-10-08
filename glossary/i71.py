@@ -35,5 +35,3 @@ L=[
 ('Bernard-Horner',[('Bernard-Horner','nom propre : Claude Bernard et Johann Horner')],'Syndrome de Claude Bernard-Horner','<p>Ptosis, myosis, énophtalmie par atteinte sympathique.</p>'),
 ]
 for x in L: a(*x)
-for c,tt in [('I71.0','Dissection de l’aorte'),('I71.1','Anévrisme de l’aorte thoracique, rompu'),('I71.2','Anévrisme de l’aorte thoracique, sans mention de rupture'),('I71.3','Anévrisme de l’aorte abdominale, rompu'),('I71.4','Anévrisme de l’aorte abdominale, sans mention de rupture'),('I71.5','Anévrisme de l’aorte thoraco-abdominale, rompu'),('I71.6','Anévrisme de l’aorte thoraco-abdominale, sans mention de rupture')]:
-    a(c,[(c,'code de la Classification internationale des maladies, 10e révision, modification allemande')],tt,'<p>Code CIM-10-GM.</p>')
