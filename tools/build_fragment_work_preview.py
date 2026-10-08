@@ -228,13 +228,63 @@ def mark_preview(source, manifest):
     source = re.sub(r'(window\.MEDINA_WORK_PREVIEW=).*?(;</script>)',
                     lambda match: match.group(1) + json_text(metadata) + match.group(2), source, count=1, flags=re.S)
     labels = "; ".join(chapter["code"] + " — " + chapter["title"] for chapter in manifest["chapters"])
+    course_count = len(manifest["chapters"])
     banner = ('<aside class="medina-work-preview" id="medina-work-preview-banner" role="note">'
-              '<strong>Version de travail · Infectiologie</strong><p>I-03-Infectiologie · ' +
-              html.escape(labels) + '. Contenu en cours de rédaction et de revue interne.</p>'
-              '<a href="#/home">Voir les catégories d’infectiologie</a></aside>')
+              '<strong>Version de travail · Infectiologie <span>' + str(course_count) +
+              ' cours</span></strong><details><summary>Chapitres visibles</summary><p>' +
+              html.escape(labels) + '</p></details>'
+              '<a id="medina-work-categories-link" href="#/home">Voir les catégories</a></aside>')
     source, count = re.subn(r'<aside class="medina-work-preview".*?</aside>', lambda _: banner, source, count=1, flags=re.S)
     if count != 1:
         raise ValueError("Le bandeau de consultation est absent.")
+    runtime = re.compile(r'(<script id="medina-category-organisation-runtime">)(.*?)(</script>)', re.S)
+    match = runtime.search(source)
+    if not match or match.group(2).count('available.slice(0,3)') != 1:
+        raise ValueError("La liste des cours en accueil a changé ; contrôle manuel nécessaire.")
+    home_runtime = match.group(2).replace('available.slice(0,3)', 'available').replace('↗', '→')
+    source = source[:match.start()] + match.group(1) + home_runtime + match.group(3) + source[match.end():]
+    home_style = '''<style id="medina-t1-work-home-style">
+html[data-medina-fragment="T1"] .medina-work-preview{display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px;padding:8px 14px;background:#fbf9f2;border-color:#e5dbbd;box-shadow:0 2px 8px #372b1410}
+html[data-medina-fragment="T1"] .medina-work-preview strong{font-weight:600}
+html[data-medina-fragment="T1"] .medina-work-preview strong span{margin-left:8px;font-size:.82em;font-weight:500;color:#6c6042}
+html[data-medina-fragment="T1"] .medina-work-preview details{font-size:.82em}
+html[data-medina-fragment="T1"] .medina-work-preview summary{cursor:pointer;list-style:revert}
+html[data-medina-fragment="T1"] .medina-work-preview details p{max-width:80ch;margin:7px 0}
+html[data-medina-fragment="T1"] .medina-work-preview a{margin:0 0 0 auto;font-size:.82em}
+html[data-medina-fragment="T1"] .mcg-home{--atlas-font:'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif}
+html[data-medina-fragment="T1"] .mcg-cover{padding:20px 0 26px;margin-bottom:25px}
+html[data-medina-fragment="T1"] .mcg-cover h1{margin:12px 0!important;font-size:clamp(34px,4vw,58px)!important}
+html[data-medina-fragment="T1"] .mcg-counts{margin-top:16px}
+html[data-medina-fragment="T1"] #mcg-categories-title{scroll-margin-top:calc(var(--medina-work-header-height,140px) + 14px)}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-featured-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-featured-lesson{border:1px solid #dde5dd!important;box-shadow:0 3px 12px #14301f0c!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-featured-lesson:hover{background:#f7faf7!important;box-shadow:0 6px 18px #14301f14!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-draft-access{display:none!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card{min-height:145px!important;padding:16px 18px!important;overflow:hidden;background:#fff!important;color:#21352a!important;border:1px solid #e2e8e1!important;box-shadow:0 2px 5px #14301f0a,0 6px 17px #14301f10!important;transform:none}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--cat);border-radius:14px 0 0 14px}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card *{color:#21352a!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card:hover{transform:translateY(-2px);box-shadow:0 4px 10px #14301f12,0 9px 20px #14301f16!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card h2{font:600 18px/1.32 var(--atlas-font)!important;color:#21352a!important;letter-spacing:-.012em;margin:12px 0!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card .mcg-category-foot,html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card .mcg-category-foot *{color:#5e6d63!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card .mcg-category-number{background:#f1f5f0!important;color:#476149!important;font-weight:600!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card .mcg-code{background:#f6f8f5!important;color:#435547!important;border-color:#dce6db!important}
+html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-foot .mcg-available-dot{background:#218253!important}
+@media(max-width:650px){html[data-medina-fragment="T1"] .medina-work-preview{gap:4px 12px;padding:7px 10px}html[data-medina-fragment="T1"] .medina-work-preview a{margin-left:0}html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-grid{grid-template-columns:1fr!important}html[data-medina-fragment="T1"][data-medina-fragment] body .mcg-category-card{min-height:130px!important}}
+@media(prefers-reduced-motion:reduce){html[data-medina-fragment="T1"] .mcg-category-card{transition:none!important}}
+</style>'''
+    source = source.replace('</head>', home_style + '</head>', 1)
+    category_jump = '''<script id="medina-t1-category-jump">
+document.getElementById('medina-work-categories-link').addEventListener('click',()=>{
+  let tries=0;
+  const show=()=>{const heading=document.getElementById('mcg-categories-title');
+    if(heading){heading.scrollIntoView({block:'start',behavior:'instant'});return;}
+    if(++tries<30)requestAnimationFrame(show);
+  };
+  requestAnimationFrame(show);
+});
+</script>'''
+    source = source.replace('</body>', category_jump + '</body>', 1)
     return source
 
 

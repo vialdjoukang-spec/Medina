@@ -302,6 +302,7 @@ async def main():
             home = await page.evaluate("""() => ({work:window.MEDINA_WORK_PREVIEW,complete:window.MEDINA_COMPLETE,
               data:JSON.parse(document.querySelector('#medora-data').textContent),organisation:window.MEDINA_CATEGORY_ORGANISATION,
               courses:[...document.querySelectorAll('template[id^="ch-"]')].map(x=>x.id.slice(3)),
+              featured_codes:[...document.querySelectorAll('.mcg-featured-grid .mcg-code')].map(x=>x.textContent.trim()),
               scheme:getComputedStyle(document.documentElement).colorScheme,bg:getComputedStyle(document.body).backgroundColor,
               banner:document.querySelector('#medina-work-preview-banner').getBoundingClientRect().toJSON(),
               title:document.title})""")
@@ -313,6 +314,7 @@ async def main():
             check(name + ": no final certification", home["complete"] == [] and all(home["work"].get(flag) is False for flag in ("fragment_complete", "final_validation", "external_audit", "canonical_injection")))
             check(name + ": exclusive T1 catalogue", home["data"]["fragment"]["id"] == "T1" and len(home["data"]["specialties"]) == 1 and len(home["data"]["entries"]) == 184, len(home["data"]["entries"]))
             check(name + ": no foreign mounted course", sorted(home["courses"]) == sorted(ARGS.codes), home["courses"])
+            check(name + ": every work course has a home card", sorted(home["featured_codes"]) == sorted(ARGS.codes), home["featured_codes"])
             check(name + ": light under dark OS and saved night", "light" in home["scheme"] and "dark" not in home["scheme"] and home["bg"] == "rgb(238, 240, 243)", {"scheme": home["scheme"], "bg": home["bg"]})
             check(name + ": visible banner", home["banner"]["x"] >= -1 and home["banner"]["right"] <= viewport["width"] + 1 and home["banner"]["top"] >= -1 and home["banner"]["bottom"] <= viewport["height"], home["banner"])
             await overflow(page, name + "/home")
