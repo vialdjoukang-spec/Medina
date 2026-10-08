@@ -5,30 +5,13 @@ from cardio_1 import a, G
 
 for code, title, d in [
     ('J96.0', 'Insuffisance respiratoire aiguë, non classée ailleurs',
-     '<p>Catégorie CIM-10-GM 2024 de l’insuffisance respiratoire installée en heures ou en jours. Une insuffisance chronique préexistante se code en plus par J96.1.</p>'),
+     '<p>Catégorie CIM-10-GM 2024 de l’insuffisance respiratoire installée en heures ou en jours.</p>'),
     ('J96.1', 'Insuffisance respiratoire chronique, non classée ailleurs',
-     '<p>Catégorie CIM-10-GM 2024 de l’insuffisance respiratoire installée en mois ou en années, souvent compensée sur le plan acido-basique.</p>'),
+     '<p>Catégorie CIM-10-GM 2024 de l’insuffisance respiratoire installée en mois ou en années.</p>'),
     ('J96.9', 'Insuffisance respiratoire, sans précision',
-     '<p>Catégorie CIM-10-GM 2024 employée lorsque la temporalité n’est pas documentée. Elle exprime un manque de précision du dossier, non une forme clinique.</p>'),
-    ('J96.00', 'Insuffisance respiratoire aiguë, type I (hypoxémique)',
-     '<p>Cinquième caractère 0 : hypoxémie sans hypercapnie.</p>'),
-    ('J96.01', 'Insuffisance respiratoire aiguë, type II (hypercapnique)',
-     '<p>Cinquième caractère 1 : hypercapnie, avec ou sans hypoxémie associée.</p>'),
-    ('J96.09', 'Insuffisance respiratoire aiguë, type non précisé',
-     '<p>Cinquième caractère 9 : le type gazométrique n’est pas documenté.</p>'),
-    ('J96.10', 'Insuffisance respiratoire chronique, type I (hypoxémique)',
-     '<p>Cinquième caractère 0 : hypoxémie chronique sans hypercapnie.</p>'),
-    ('J96.11', 'Insuffisance respiratoire chronique, type II (hypercapnique)',
-     '<p>Cinquième caractère 1 : hypercapnie chronique, avec ou sans hypoxémie.</p>'),
-    ('J96.19', 'Insuffisance respiratoire chronique, type non précisé',
-     '<p>Cinquième caractère 9 : type gazométrique non documenté.</p>'),
+     '<p>Catégorie CIM-10-GM 2024 employée lorsque la temporalité n’est pas documentée.</p>'),
 ]:
     a(code, [(code, 'code CIM-10-GM 2024')], title, d)
-
-a('R09.2', [('R09.2', 'code CIM-10-GM 2024')], 'Arrêt respiratoire',
-  '<p>Code exclu de J96 : l’arrêt respiratoire et l’insuffisance cardiopulmonaire se codent en R09.2.</p>')
-a('Z99.1', [('Z99.1', 'code CIM-10-GM 2024')], 'Dépendance envers un respirateur',
-  '<p>Code supplémentaire de J96.1 lorsque la respiration nécessite durablement un respirateur, par exemple une ventilation à domicile.</p>')
 
 a('PAO₂', [('P', 'Pression partielle'), ('A', 'Alvéolaire (A majuscule)'), ('O₂', 'en dioxygène')], 'Pression alvéolaire en oxygène',
   '<p>Pression d’oxygène dans le gaz alvéolaire, calculée par l’équation des gaz alvéolaires ; environ 100 mmHg à l’air ambiant au niveau de la mer. Le A majuscule la distingue de la PaO₂ artérielle (a minuscule).</p>', 'j96-equation-alveolaire')
@@ -64,3 +47,12 @@ a('IOTA', [('I', 'Improving'), ('O', 'Oxygen'), ('T', 'Therapy in'), ('A', 'Acut
   '<p>Méta-analyse de 25 essais et 16 037 adultes en situation aiguë : la stratégie libérale d’oxygène augmente la mortalité hospitalière (risque relatif 1,21) par rapport à une stratégie conservatrice.</p>', 'j96-cibles')
 a('RECOVERY-RS', [('RECOVERY-RS', 'nom propre de l’essai, non développable lettre à lettre')], 'Essai RECOVERY-RS (2022)',
   '<p>Essai britannique chez 1 273 adultes en insuffisance respiratoire hypoxémique liée à la COVID-19 : la pression positive continue a réduit le critère combinant intubation et décès à 30 jours par rapport à l’oxygène standard ; le haut débit nasal n’a pas montré de bénéfice.</p>', 'j96-contentieux-hypoxemique')
+
+a('ARF', [('A', 'Acute'), ('R', 'Respiratory'), ('F', 'Failure')], 'Étude ARF (1999)',
+  '<p>Étude prospective du groupe scandinave « Acute Respiratory Failure » : toutes les admissions en soins intensifs de Suède, du Danemark et d’Islande pendant huit semaines de 1997. L’insuffisance aiguë, définie par une intubation avec ventilation d’au moins 24 heures, avait une incidence de 77,6 pour 100 000 adultes par an et une mortalité à 90 jours de 41,0 %.</p>')
+a('DIABOLO', [('DIABOLO', 'nom propre de l’essai, non développable lettre à lettre')], 'Essai DIABOLO (2016)',
+  '<p>Essai randomisé français en double aveugle chez 380 patients atteints de BPCO, ventilés par voie invasive et porteurs d’une alcalose métabolique : l’acétazolamide intraveineux n’a pas réduit significativement la durée de ventilation par rapport au placebo.</p>', 'j96-acetazolamide')
+a('HCl', [('H', 'Hydrogène'), ('Cl', 'Chlore')], 'Chlorhydrate',
+  '<p>Acide chlorhydrique ; dans un nom de médicament, « HCl » désigne la forme de sel chlorhydrate du principe actif, par exemple le chlorhydrate de morphine.</p>')
+a('OrPha', [('OrPha', 'élément du nom commercial du produit, non développable lettre à lettre')], 'Naloxon OrPha®',
+  '<p>Nom commercial suisse d’une solution injectable de chlorhydrate de naloxone, dont l’information professionnelle approuvée par Swissmedic fonde la posologie citée dans ce cours.</p>', 'j96-naloxone')

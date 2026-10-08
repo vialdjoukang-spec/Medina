@@ -62,9 +62,7 @@ a('FROM JANE',[('F','Fièvre'),('R','Roth (taches de)'),('O','Osler (nodosités 
  '<p>Aide pédagogique, non critère officiel.</p>','i33-mnemo-fromjane')
 a('qSOFA',[('q','quick (rapide)'),('S','Sequential'),('O','Organ'),('F','Failure'),('A','Assessment')],'Score qSOFA (évaluation rapide des défaillances d’organes)',
  '<p>Outil de repérage du sepsis au lit du patient : fréquence respiratoire ≥ 22/min, pression artérielle systolique ≤ 100 mmHg, altération de la conscience ; un point par critère. Un score ≥ 2 signale un risque élevé. Outil de repérage, non critère diagnostique.</p>','i33-v-sepsis')
-a('B37.6',[('B37.6','code CIM-10 : B = maladies infectieuses et parasitaires ; B37 = candidose ; .6 = endocardite à <i>Candida</i>')],'Code CIM-10 B37.6 : endocardite à Candida',
- '<p>Code « dague » de l’endocardite à <i>Candida</i>, associé au code « étoile » I39.8* dans le système dague-étoile.</p>')
 a('Libman-Sacks',[('Libman-Sacks','noms propres : Emanuel Libman et Benjamin Sacks, médecins new-yorkais, 1924')],'Endocardite de Libman-Sacks',
  '<p>Endocardite verruqueuse non infectieuse du lupus érythémateux systémique et du syndrome des antiphospholipides : dépôts stériles de fibrine et de complexes immuns sur les deux faces des valves, emboligènes, avec des hémocultures négatives. Diagnostic différentiel de l’endocardite infectieuse.</p>','i33-etnb')
 if 'IDSA' not in G: a('IDSA',[('I','Infectious'),('D','Diseases'),('S','Society of'),('A','America')],'Infectious Diseases Society of America (Société américaine d’infectiologie)',
- '<p>Société savante américaine des maladies infectieuses ; auteure notamment des recommandations sur les candidoses (2016), qui fixent les doses antifongiques de l’endocardite à <i>Candida</i>.</p>')
+ '<p>Société savante américaine des maladies infectieuses. Ses recommandations ne fondent pas la conduite dans MEDINA ; elles ne sont citées qu’en comparaison avec les sources suisses et européennes.</p>')
