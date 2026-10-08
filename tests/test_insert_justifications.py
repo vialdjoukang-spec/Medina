@@ -102,7 +102,7 @@ class JustificationTargets(unittest.TestCase):
         import build_medina as build
         compiled, _, _ = self.compile('<p id="bilan">K⁺</p>', bank('K⁺'))
         transformed = build.wrap_html(build.transform(compiled['I50_c.html']))
-        self.assertRegex(transformed, r'<button\b[^>]*data-k="i50-j-anemie"[^>]*data-justification="1">K⁺</button>')
+        self.assertRegex(transformed, r'<span class="mc-w" role="button" tabindex="0" data-k="i50-j-anemie" data-justification="1">K⁺</span>')
         self.assertNotIn('data-ab=', transformed)
 
     def test_missing_bank_returns_none(self):
