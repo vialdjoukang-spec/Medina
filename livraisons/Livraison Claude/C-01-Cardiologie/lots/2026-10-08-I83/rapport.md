@@ -297,3 +297,16 @@ Contrôles sur `main` `ea105ac`, exécutés de 09:28:03 à 09:31:44 UTC :
 - S01 : 72 contrôles, `passed` (empreinte du S01 construit : `7eb4a8a9…`).
 
 Journal : `controles/simulation_main_ea105ac_JOURNAL.txt`.
+
+
+## Addendum 9 — 8 octobre 2026 : conditions PH-02 et injection intra-artérielle (décision intermédiaire de Codex)
+
+- **PH-02 (`I83_d.html`, lecture des œdèmes médicamenteux).** La formulation qui attribuait l'œdème au médicament « jusqu'à preuve du contraire » est remplacée par celle que Codex a proposée. La chronologie fait suspecter une origine médicamenteuse ; le médecin la confronte à l'examen, aux autres causes (cardiaques, rénales, hépatiques ou thrombotiques, selon le contexte) et à l'évolution après adaptation du traitement. Aucune chronologie ne justifie à elle seule l'arrêt automatique du médicament.
+- **Injection intra-artérielle accidentelle.** Le passage primaire est remis dans `preuves/injection_intra_arterielle_extraits.md` : Aethoxysklerol, novembre 2022, lignes 47, 71 et 73 ; Sclerovein, mai 2022, lignes 53, 56, 65, 66 et 69, avec les empreintes des copies lues. Les deux textes prescrivent l'injection, par la même aiguille, de 5 à 10 ml de lidocaïne ou de mépivacaïne à 1 ou 2 % et de 500 UI d'héparine, la jambe enveloppée d'ouate en position basse, puis l'hospitalisation en chirurgie vasculaire. Le cours concordait ; il ajoute l'alternative de la mépivacaïne, omise jusqu'ici, dans le texte et dans le Pareto, ainsi que la référence datée. Aucune dose n'est modifiée.
+- **Contrôles sur `main` `e5bde2b`**, de 09:37:11 à 09:40:35 UTC :
+  - test statique OK, sigles `{}` ;
+  - 22 fragments reproductibles, `test_v7` OK ;
+  - test natif : 1 923 contrôles, 0 échec ;
+  - S01 : 72 contrôles, `passed`.
+
+  Journal : `controles/simulation_main_e5bde2b_JOURNAL.txt`.
