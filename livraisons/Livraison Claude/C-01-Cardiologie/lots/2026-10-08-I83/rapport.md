@@ -178,3 +178,25 @@ c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
 
 - Preuve primaire des durées de compression : `PREUVE_AETHOXYSKLEROL_COMPRESSION.md`. Elle donne les extraits à l’identique de l’information professionnelle suisse d’Aethoxysklerol (Swissmedic 33273, novembre 2022), l’empreinte de la copie lue et les adresses de consultation publique. Le texte intégral n’est pas versionné, pour des raisons de droits.
 - Contrôle natif rejoué sur la version courante (`I83_pop4.html` SHA-256 `5df32abbd7a9c60ab3ae4769e32fba5c9fbd46de9acb41e241899514d6f237a7`) : 1 923 contrôles, 0 échec, ordinateur et mobile (`controles/i83_native_results_v3.json`). Même séquence de reconstruction : `build_front.py`, `--all-fragments`, `audit_fragments.py` (22 fragments), `test_v7.py I83` OK.
+
+
+## Addendum 3 — 8 octobre 2026 : intégration à `main` et rectification d'un contrôle
+
+**Rectification.** Les rapports précédents annonçaient `verify_s01_browser.cjs : 71 contrôles, 0 erreur`. Ce test avait été lancé sans `MEDINA_S01_FILE` : il a donc lu `dist/fragments/MEDINA_S01_cardiovasculaire.html`, une ancienne construction **sans I83**. Ce résultat ne prouvait pas l'accès à I83 dans le fragment autonome. Le test fixe en dur le nombre de cours de S01 (« 20 cours uniques ») ; I83 porte ce nombre à 21. La seule modification apportée au fichier partagé `tests/verify_s01_browser.cjs` est le passage de 20 à 21, indispensable à l'ajout de ce chapitre.
+
+**Intégration simulée à `main` `625fddb953db8bf6619ba48f8624fa1bef7a1d8e`.** Dans un arbre de travail distinct, on a ajouté les huit HTML de I83, identiques à la branche, `glossary/i83.py`, `glossary/fragments_medina.py`, l'entrée de `chapters.json` et l'attente portée à 21 cours dans le test S01. Les commandes ont été exécutées sur cet arbre :
+
+```
+python3 test_v7.py --static I83                    # OK ; 40 063 mots, 47 fenêtres, 6 quiz, 6 Pareto
+build_medina.audit (sigles I83)                    # {}
+python3 -m unittest discover -s tests              # OK
+MEDINA_OUT=… python3 build_front.py               # 9 854 083 octets compressés
+python3 build_front.py --all-fragments ; tests/audit_fragments.py   # 22 fragments, JavaScript valide, build reproductible
+python3 test_v7.py I83                             # OK
+node tests/verify_course_native.cjs I83            # 1 923 contrôles, 0 échec, ordinateur 1 360 px et mobile 390 px
+MEDINA_S01_FILE=…/MEDINA_S01_cardiovasculaire.html node tests/verify_s01_browser.cjs   # 72 contrôles, 0 erreur (21 cours)
+```
+
+Le même test S01, désigné explicitement sur la construction de la branche, donne aussi 72 contrôles et aucune erreur. Journaux : `controles/i83_native_main_625fddb.json`, `controles/s01_browser_main_625fddb.json`, `controles/s01_browser_branche.json`.
+
+**Fichiers à intégrer à `main` pour I83 :** `chapters/I83/*.html` (8), `glossary/i83.py`, `glossary/fragments_medina.py`, l'entrée I83 de `chapters.json` (insérée après I80, `covers` : I83 et I87) et `tests/verify_s01_browser.cjs` (20 → 21).
