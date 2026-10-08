@@ -6,7 +6,7 @@ OUT=os.environ.get('MEDINA_OUT','/mnt/user-data/outputs' if os.path.isdir('/mnt/
 os.environ['MEDINA_V6']=ROOT+'/shell/medina_front.html'
 sys.path.insert(0,ROOT);sys.path.insert(0,ROOT+'/shell')
 import build_medina as B
-from fragment_surface import isolate_specialty, finish_surface
+from fragment_surface import isolate_specialty, finish_surface, frontend_entries, fragment_chapters as specialty_chapters
 from tools.atomic_output import atomic_output
 from data import WAVES,DONE_SYS,DONE_COURSES,PRIO,PLAN
 parser=argparse.ArgumentParser()
@@ -24,10 +24,7 @@ if fragments:
 explicit={x:f['id'] for f in fragments for x in f['rattachements'] if re.fullmatch(r'[A-Z][0-9]{2}',x)}
 
 def fragment_chapters(fragment,entries):
-    attached=set(fragment['rattachements'])
-    systems={e['code']:e.get('system') for e in entries}
-    return [c for c in cfg if c.get('integrated') and
-            (c['code'] in attached or (c['code'] not in explicit and systems.get(c['code']) in attached))]
+    return specialty_chapters(fragment, entries, ROOT)
 
 def fragment_shell(fragment):
     s=open(ROOT+'/shell/medina_front.html',encoding='utf-8').read()
@@ -35,8 +32,7 @@ def fragment_shell(fragment):
     match=re.search(pattern,s,re.S)
     assert match
     data=json.loads(match.group(2));attached=set(fragment['rattachements'])
-    data['entries']=[e for e in data['entries'] if e['code'] in attached or
-                     (e['code'] not in explicit and e.get('system') in attached)]
+    data['entries']=frontend_entries(fragment, data['entries'], ROOT)
     codes={e['code'] for e in data['entries']};systems={e.get('system') for e in data['entries']}
     specialties={x for e in data['entries'] for x in e.get('specialties',[])}
     data['specialties']=[x for x in data['specialties'] if x['id'] in specialties]
@@ -55,8 +51,7 @@ def fragment_shell(fragment):
     data['meta']['entries']=len(data['entries'])
     data['meta']['sspVisible']=len(data['ssps'])
     data['fragment']={'id':fragment['id'],'name':fragment['nom'],'systems':sorted(systems)}
-    if fragment.get('surface') == 'courses-v1':
-        isolate_specialty(data, fragment, fragment_chapters(fragment, data['entries']), DONE_COURSES)
+    isolate_specialty(data, fragment, fragment_chapters(fragment, data['entries']), DONE_COURSES)
     payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
     s=s[:match.start()]+match.group(1)+payload+match.group(3)+s[match.end():]
     name=fragment['nom']
@@ -152,6 +147,14 @@ try:
         i=s.rindex('</body>');s=s[:i]+tail+s[i:]
         if selected:
             s=finish_surface(s, fragment, ROOT)
+        # The actual Anthropic fonts travel with every standalone page.
+        import base64
+        typography=open(ROOT+'/shell/typography.css',encoding='utf-8').read()
+        for style in ('Roman','Italic'):
+            font_path='assets/fonts/AnthropicSerif-'+style+'-Web.woff2'
+            with open(ROOT+'/'+font_path,'rb') as font:
+                typography=typography.replace('../'+font_path,'data:font/woff2;base64,'+base64.b64encode(font.read()).decode())
+        s=s.replace('</head>','<style id="medina-typography">'+typography+'</style></head>',1)
         if selected:
             present={c['code'] for c in chap}
             absent={c['code'] for c in cfg}-present

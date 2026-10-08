@@ -1,0 +1,32 @@
+/* Anthropic Serif authentique : fichiers publics référencés par www.anthropic.com.
+   Métadonnées : Anthropic Serif Web, version 26.043.1 ; Copyright 2025-2026 Anthropic PBC.
+   Les constructeurs remplacent ces URL locales par des data:font/woff2 afin que les HTML
+   restent autonomes. Provenance et empreintes : assets/fonts/PROVENANCE.json. */
+@font-face{
+ font-family:'Anthropic Serif';
+ src:url('../assets/fonts/AnthropicSerif-Roman-Web.woff2') format('woff2');
+ font-style:normal;
+ font-weight:300 800;
+ font-display:swap;
+}
+@font-face{
+ font-family:'Anthropic Serif';
+ src:url('../assets/fonts/AnthropicSerif-Italic-Web.woff2') format('woff2');
+ font-style:italic;
+ font-weight:300 800;
+ font-display:swap;
+}
+:root{
+ /* La famille de secours rend notamment les caractères grecs absents du fichier original. */
+ --medina-serif:'Anthropic Serif',Georgia,'Times New Roman',serif;
+ --font-serif:var(--medina-serif);
+}
+/* Le lecteur de cours conserve sa police choisie via --mc-font, y compris ses fenêtres. */
+html body,html body :where(:not(.mc,.mc *,.mc-dlg,.mc-dlg *)){
+ font-family:var(--medina-serif)!important;
+ font-optical-sizing:auto;
+ font-synthesis:none;
+}
+/* Les fragments de code conservent une chasse fixe. */
+html body :where(:not(.mc,.mc *,.mc-dlg,.mc-dlg *)):is(pre,code,kbd,samp),
+html body :is(pre,code,kbd,samp) :where(:not(.mc,.mc *,.mc-dlg,.mc-dlg *)){font-family:ui-monospace,SFMono-Regular,Consolas,monospace!important}
