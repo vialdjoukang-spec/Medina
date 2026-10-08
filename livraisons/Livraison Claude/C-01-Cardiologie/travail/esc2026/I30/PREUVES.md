@@ -51,3 +51,13 @@ Fichiers contrôlés : `out/i30-esc-2026-comparaison__P1.html`, `jobs/i30-esc-20
 
 - La cinquième définition est un document de consensus ; aucune classe n’y est attribuée.
 - Les exemples Abbott de la même cellule canonique (16 ng/L chez la femme, 34 ng/L chez l’homme) n’ont pas été relus dans une notice du fabricant ; ils sont hors du champ de la réserve MED-03 et restent à vérifier.
+
+
+## Précision aiguë ou chronique (retour de Codex, réception `315280c`)
+
+Cinquième définition universelle de l’infarctus, Eur Heart J 2026, doi:10.1093/eurheartj/ehag101, section 6.
+
+- Encadré 1 : « Acute myocardial injury is defined as a rise and/or fall in cardiac troponin I or T with at least one value above the sex-specific 99th percentile URL. »
+- Encadré 2 : « Chronic myocardial injury is considered if two or more cardiac troponin I or T values are above the sex-specific 99th percentile URL when testing is performed in a stable clinical setting. Chronic myocardial injury is confirmed when a cardiac or non-cardiac condition associated with cardiac remodelling is identified and is excluded when the elevation in cardiac troponin is explained by analytical interference or reduced clearance. »
+
+Conséquence dans le cours : la myopéricardite exige une lésion **aiguë**, démontrée par la cinétique. Une élévation stable relève d’une lésion chronique et ne qualifie pas une myopéricardite.

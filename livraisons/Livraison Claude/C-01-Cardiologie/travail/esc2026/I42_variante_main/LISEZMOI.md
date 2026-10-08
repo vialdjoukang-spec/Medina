@@ -1,0 +1,1 @@
+La variante main de I42 crée la fenêtre i42-esc-2026-comparaison, absente de main : contenu Codex de 83bff14 (chapters/I42/I42_pop_esc_comparison.html) suivi des rubriques Claude. La variante intégration (dossier I42) la complète.
