@@ -21,11 +21,14 @@ def build():
                 course = dict(course, state=state, source_fragment_id=owners.get(course['code']))
                 for c in course.get('covers', [course['code']]):
                     alias.setdefault(c, course)
-    queues = {'Claude': ['S01'] + plan['agents']['Claude']['queue'], 'Codex': plan['agents']['Codex']['queue']}
+    space = {'Claude': 'espace_partage/FRAGMENTS_CLAUDE_A_AUDITER_PAR_CODEX', 'Codex': 'espace_partage/FRAGMENTS_CODEX_A_AUDITER_PAR_CLAUDE'}
+    remitted = {agent: [fid for fid, f in names.items() if (ROOT / space[agent] / f['label'] / 'REMISE.md').exists()] for agent in space}
+    # La cardiologie historiquement partagée reste dans la file de Claude tant qu'elle n'est pas remise.
+    queues = {'Claude': [f for f in ['S01'] + plan['agents']['Claude']['queue'] if f not in remitted['Claude']],
+              'Codex': [f for f in plan['agents']['Codex']['queue'] if f not in remitted['Codex']]}
     out = {'date': '2026-10-08', 'rule': 'Toutes les catégories CIM du fragment reçoivent un cours ; aucune lacune.', 'queues': {}}
     for agent, queue in queues.items():
-        items = []
-        for rank, fid in enumerate(queue):
+        def fragment(fid, rank):
             fed = set(federal.get(fid, {}).get('codes', {}))
             blocks = {}
             for e in sorted((e for e in full['entries'] if owners.get(e['code']) == fid), key=lambda e: e['code']):
@@ -37,8 +40,11 @@ def build():
                                      'federal': e['code'] in fed or bool(course and course['code'] in fed)})
             cats = sum(len(b['lessons']) for b in blocks.values())
             done = sum(1 for b in blocks.values() for l in b['lessons'] if l['course'])
-            items.append({'id': fid, 'label': names[fid]['label'], 'position': 'actif' if rank == 0 else ('suivant' if rank == 1 else 'en file'),
-                          'categories': cats, 'covered': done, 'blocks': list(blocks.values())})
+            return {'id': fid, 'label': names[fid]['label'], 'position': 'actif' if rank == 0 else ('suivant' if rank == 1 else 'en file'),
+                    'categories': cats, 'covered': done, 'blocks': list(blocks.values())}
+        items = [fragment(fid, rank) for rank, fid in enumerate(queue)]
+        for fid in remitted[agent]:
+            items.append(dict(fragment(fid, -1), position='remis pour audit croisé'))
         out['queues'][agent] = items
     return out
 
