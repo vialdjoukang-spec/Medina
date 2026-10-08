@@ -1,0 +1,120 @@
+{
+  "kind": "propositions_de_revue_interne_ciblee",
+  "date": "2026-10-08",
+  "source_head": "2f4a7dbffba7c43ec791fb6dcea4be7d553ff5a9",
+  "source_root": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/sources",
+  "applied": false,
+  "final_external_audit": false,
+  "human_medical_validation": false,
+  "fragment_complete": false,
+  "shared_texts": {
+    "bicarbonate_scope": "Dans le choc septique avec acidémie métabolique sévère (pH ≤ 7,20) et atteinte rénale aiguë de stade 2 ou 3, la Surviving Sepsis Campaign 2026 suggère le bicarbonate (recommandation conditionnelle, certitude très faible).",
+    "phoenix_exclusions": "Les critères Phoenix ne s’appliquent ni aux hospitalisations pour la naissance, ni aux enfants dont l’âge postconceptionnel est inférieur à 37 semaines."
+  },
+  "corrections": [
+    {
+      "id": "REV-A41-01",
+      "severity": "precision_clinique_mineure",
+      "file": "chapters/A41/A41_b.html",
+      "line": 61,
+      "old": "Le seuil formel de référence de Sepsis-3 reste une pression moyenne ≥ 65 mmHg sous vasopresseur, distinct de sa cible initiale individualisée de 60 à 65 mmHg.",
+      "proposed": "Le critère Sepsis-3 porte sur le besoin d’un vasopresseur pour maintenir une pression artérielle moyenne ≥ 65 mmHg. Il ne faut pas le lire comme l’obligation d’avoir déjà corrigé la pression au moment de l’évaluation. La cible thérapeutique initiale individualisée de 60 à 65 mmHg, proposée dès 65 ans par la Surviving Sepsis Campaign 2026, ne supprime pas le diagnostic clinique retenu chez Mme R.",
+      "justification": "La définition primaire dit que le vasopresseur est nécessaire pour élever ou maintenir la PAM. L’interprétation clinique est explicitement séparée de la cible thérapeutique, sans retirer le diagnostic de choc corrigé par Claude.",
+      "source_ids": [
+        "S02",
+        "S01"
+      ],
+      "preserve": "Diagnostic clinique de choc septique retenu ; pas de conversion mécanique en sepsis sans choc à PAM 64."
+    },
+    {
+      "id": "REV-A41-02",
+      "severity": "restriction_de_population_mineure",
+      "targets": [
+        {
+          "file": "chapters/A41/A41_b.html",
+          "line": 166,
+          "placement": "Après la phrase définissant le sepsis pédiatrique par Phoenix ≥ 2."
+        },
+        {
+          "file": "chapters/A41/A41_pop_pa.html",
+          "line": 31,
+          "window": "a41-phoenix",
+          "placement": "Après la définition initiale."
+        }
+      ],
+      "add_shared_text": "phoenix_exclusions",
+      "source_ids": [
+        "S03"
+      ],
+      "preserve": "Une seule phrase de population ; aucun nouveau chapitre pédiatrique."
+    },
+    {
+      "id": "REV-A41-03",
+      "severity": "precision_de_portee_et_de_preuve_mineure",
+      "targets": [
+        {
+          "file": "chapters/A41/A41_b.html",
+          "line": 108,
+          "selector": "ligne Rein du tableau",
+          "old": "bicarbonate seulement si le pH est de 7,2 ou moins avec une atteinte rénale aiguë de stade 2 ou 3 (conditionnelle, très faible)"
+        },
+        {
+          "file": "chapters/A41/A41_pop_pa.html",
+          "line": 22,
+          "window": "a41-ira",
+          "old": "Elle suggère le bicarbonate lorsque le pH est de 7,2 ou moins et que l’atteinte rénale est de stade 2 ou 3."
+        },
+        {
+          "file": "chapters/A41/A41_pop_pa.html",
+          "line": 27,
+          "window": "a41-mesures",
+          "old": "Elle suggère le bicarbonate si le pH est de 7,2 ou moins avec une atteinte rénale aiguë de stade 2 ou 3."
+        }
+      ],
+      "use_shared_text": "bicarbonate_scope",
+      "add_once_in_window": "a41-ira",
+      "add_evidence_text": "Dans BICARICU-2 (2025), le bicarbonate n’a pas réduit la mortalité à 90 jours. Le moindre recours à l’épuration est un résultat secondaire ; il ne démontre pas un gain de survie.",
+      "add_reference": {
+        "url": "https://jamanetwork.com/journals/jama/fullarticle/2840824",
+        "title": "Jung et coll., BICARICU-2, JAMA 2025, doi:10.1001/jama.2025.20231",
+        "consulted": "2026-10-08",
+        "scope": "Résumé et résultats primaires effectivement lus."
+      },
+      "source_ids": [
+        "S01",
+        "S04"
+      ],
+      "preserve": "Conserver la suggestion SSC2026, ne pas la transformer en indication obligatoire ni la supprimer du fait de BICARICU-2."
+    },
+    {
+      "id": "REV-A41-04",
+      "severity": "harmonisation_du_schema_mineure",
+      "file": "chapters/A41/A41_b.html",
+      "line": 6,
+      "old_svg": [
+        "qSOFA : dépistage seulement,",
+        "un résultat négatif n’exclut pas le sepsis"
+      ],
+      "proposed_svg": [
+        "qSOFA : repérage du risque,",
+        "jamais seul pour dépister ou exclure"
+      ],
+      "justification": "La prose des lignes 12–15 expose déjà correctement l’usage pronostique et la faible sensibilité. Harmoniser les deux lignes SVG avec cette prose et vérifier leur largeur.",
+      "source_ids": [
+        "S01",
+        "S02"
+      ]
+    }
+  ],
+  "gate": {
+    "current": "Redaction substantiellement terminee ; quatre retouches ciblees non appliquees par cet agent.",
+    "after_corrections": "Controle interne cible suffisant pour poursuivre le chapitre suivant du meme fragment.",
+    "not_claimed": [
+      "Fragment complet",
+      "Audit croise final realise",
+      "Injection finale du fragment",
+      "Validation medicale humaine",
+      "Verification exhaustive de toutes les references de A41"
+    ]
+  }
+}

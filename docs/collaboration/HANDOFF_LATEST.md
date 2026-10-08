@@ -1,3 +1,7 @@
+## B24 — aperçu interne Infectiologie, 8 octobre 2026
+
+Le travail médical gelé au SHA `79d8ece8ed8742da6c753e02080caa7904486d02` ajoute les quatre panneaux B24 et conserve les précisions internes A41. Les 19 empreintes sont exactes ; 168 tests Python, 223 contrôles statiques et 2223 contrôles navigateur ordinateur/mobile passent. Les polices et préférences retenues avec Claude sont conservées. Le réglage d’accès complet permet la reprise de publication ; vérifier séparément le workflow Pages et le lien B24. **T1 reste EN_PRODUCTION, non transmis pour audit final et non injecté.** [Reçu](receipts/CODEX_B24_APERCU_2026-10-08.json) · [Rapport interne](../../livraisons/Livraison%20Codex/I-03-Infectiologie/travail/PRODUCTION_FRAGMENT_2026-10-08/rapport.md).
+
 ## Alignement visuel avec Claude — 8 octobre 2026
 
 Sur instruction directe de Vial, Atkinson Hyperlegible Next de Claude (`f928674`) est la police par défaut. Ses deux commits frontend sont repris avec son attribution. La publication `04a67ee` est vérifiée (24 pages HTTP 200, 4 pages dans le navigateur, vraies fontes Atkinson, aucun débordement ni erreur JavaScript). Les 22 spécialités, le thème clair, les contrastes et les préférences de lecture sont vérifiés ; les sources médicales et statuts d’injection sont inchangés. [Réalisation](FRONTENDS_2026-10-08.md) · [Reçu d’alignement](receipts/CODEX_ALIGNEMENT_ATKINSON_2026-10-08.json). Les mentions Anthropic et publication à vérifier ci-dessous correspondent aux étapes antérieures ; le reçu d’alignement donne l’état actuel.

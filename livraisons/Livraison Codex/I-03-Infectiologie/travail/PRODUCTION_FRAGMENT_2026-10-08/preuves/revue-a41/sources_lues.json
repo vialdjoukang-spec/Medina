@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-08",
+  "method": "Lecture ciblée des sources primaires via outil web, complétée par les preuves documentaires existantes réellement relues. Pas de consultation exhaustive de toute la bibliographie.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Surviving Sepsis Campaign 2026 — page officielle SCCM",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "publication": "2026-03-23",
+      "doi": "10.1007/s00134-026-08361-1",
+      "read": "Énoncés, degrés de certitude et remarques : dépistage, antimicrobiens, réanimation hémodynamique, surveillance, assistance respiratoire et bicarbonate.",
+      "limit": "Lecture de la page officielle ; aucun texte intégral nouveau des rationales de la revue déclaré.",
+      "extract_locators": [
+        "dépistage L446–449",
+        "remplissage L471–486",
+        "PAM L498–506",
+        "antibiotiques L512–528",
+        "lactate L708–715",
+        "décubitus ventral L862–865",
+        "bicarbonate L958–967"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "Singer et coll., Sepsis-3, JAMA 2016",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2492881",
+      "read": "Définition et critères cliniques, besoin de vasopresseur, limites qSOFA, tableau SOFA et mortalités des groupes.",
+      "extract_locators": [
+        "tableau comparatif des critères L203 et L419",
+        "groupes avec lactate > 4 sans hypotension L398"
+      ],
+      "inference": "La proposition concernant la PAM 64 sépare la dépendance au vasopresseur de l’atteinte déjà obtenue d’une cible : interprétation clinique explicitée, pas citation littérale d’une nouvelle recommandation."
+    },
+    {
+      "id": "S03",
+      "title": "Schlapbach et coll., critères Phoenix, JAMA 2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10900966/",
+      "read": "Population étudiée, définition, notes de tableau et limites d’applicabilité.",
+      "extract_locators": [
+        "population L608–612",
+        "notes d’âge et exclusions L654, L671",
+        "limites L748"
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "Jung et coll., BICARICU-2, JAMA 2025",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2840824",
+      "doi": "10.1001/jama.2025.20231",
+      "read": "Résumé, critères d’inclusion, résultats de mortalité et épuration, discussion des limites.",
+      "extract_locators": [
+        "question et résumé L396–411",
+        "résultats/discussion L651–670"
+      ],
+      "facts": "627 analysés ; mortalité J90 : 62,1 % versus 61,7 %, P = 0,91 ; épuration : 35 % versus 50 %, résultat secondaire.",
+      "limit": "Pas une revue systématique exhaustive des essais de bicarbonate publiés en 2026."
+    },
+    {
+      "id": "S05",
+      "title": "Hernández et coll., ANDROMEDA-SHOCK-2, JAMA 2025",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2840823",
+      "read": "Résumé et résultats hiérarchisés, mortalité et support des fonctions vitales.",
+      "extract_locators": [
+        "résultats L297–322"
+      ],
+      "facts": "1 467 analysés ; résultat hiérarchisé favorable ; mortalité 26,5 % versus 26,6 %. L’explication actuelle du cours ne transforme pas cet effet en bénéfice de survie."
+    },
+    {
+      "id": "S06",
+      "title": "ESE et Endocrine Society — glucocorticoid-induced adrenal insufficiency, 2024",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/glucocorticoid-induced-adrenal-insufficiency",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11180513/",
+      "read": "Page officielle : exposition à risque, équivalents physiologiques et conduite en situation de stress ; texte primaire consulté en parallèle.",
+      "extract_locators": [
+        "page officielle L159–160",
+        "recommandation R2.2 et tableau de stress"
+      ],
+      "facts": "Le texte officiel affiche bien 4–6 mg de prednisone/prednisolone pour l’équivalent physiologique de 15–25 mg d’hydrocortisone."
+    },
+    {
+      "id": "S07",
+      "title": "EAU — Urological infections, page du guideline",
+      "url": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+      "read": "Tableau des traitements parentéraux de la pyélonéphrite, gentamicine et note de monothérapie.",
+      "extract_locators": [
+        "tableau L553–555"
+      ],
+      "facts": "Gentamicine 6–7 mg/kg une fois par jour ; absence d’étude en monothérapie explicitée.",
+      "limit": "La conformité intégrale des doses et FI suisses relève de la vérification distincte de l’agent doses."
+    },
+    {
+      "id": "S08",
+      "title": "Dobutrex — Compendium suisse, fiche produit",
+      "url": "https://compendium.ch/fr/product/1029154-dobutrex-inf-los-250-mg-50ml",
+      "read": "Fiche produit courte réellement obtenue en allemand ; rubrique des contre-indications.",
+      "extract_locators": [
+        "contre-indications L89"
+      ],
+      "facts": "Asthma figure dans la liste.",
+      "limit": "Swissmedicinfo ShowText authNr 45687 non exploitable par l’outil ; aucune lecture intégrale nouvelle de cette FI prétendue."
+    },
+    {
+      "id": "S09",
+      "title": "Leone et coll. — consensus du choc réfractaire, présentation officielle ESICM",
+      "url": "https://www.esicm.org/clinical-criteria-definition-refractory-septic-shock/",
+      "primary_abstract": "https://pubmed.ncbi.nlm.nih.gov/41874620/",
+      "read": "Présentation officielle ESICM réellement ouverte ; résumé primaire indexé obtenu via recherche.",
+      "extract_locators": [
+        "ESICM L29–32"
+      ],
+      "facts": "La combinaison décrite dans le cours correspond au consensus. Le texte ESICM rappelle la nécessité d’une validation externe des critères.",
+      "limit": "Le texte intégral original de Leone n’a pas été relu ; la page PubMed ouverte directement n’a livré qu’une extraction vide."
+    },
+    {
+      "id": "S10",
+      "title": "ESUR Guidelines 2025",
+      "url": "https://www.esur.org/wp-content/uploads/2025/12/Guidelines-2025-ESUR-vf-1.pdf",
+      "local_evidence": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/esur2025pdf.pdf",
+      "local_text": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/esur2025pdf.txt",
+      "read": "Pages imprimées 15–18 : risque rénal, voie d’administration, urgence, prévention individualisée et suivi ; preuve déjà consultée et relue de façon ciblée.",
+      "limit": "Les autres domaines ESUR ne sont pas inclus dans cette revue."
+    },
+    {
+      "id": "S11",
+      "title": "Universitätsspital Basel, LM-Update 03/2023, Änderungen der Referenzwerte",
+      "url": "https://www.unispital-basel.ch/dam/jcr%3Af60b0770-1163-4678-8bb3-9f8898ee70b9/2023_3%20Aenderungen%20Referenzwerte%20Klinische%20Chemie.pdf",
+      "date_of_document": "2023-05-02",
+      "effective_from": "2023-05-03",
+      "local_evidence": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/basel2023.pdf",
+      "read": "Tableau de gazométrie page 2, valeurs actuel/standard et sexes ; preuve déjà consultée, texte relu ciblé.",
+      "limit": "Document daté de 2023, ne prouve pas l’absence de mise à jour en 2026 ; les valeurs du laboratoire traitant restent prioritaires."
+    },
+    {
+      "id": "S12",
+      "title": "CHUV, gazométrie artérielle, V16 du 16 juillet 2024",
+      "local_evidence": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/chuvarteriel.txt",
+      "read": "Liste des paramètres calculés : bicarbonate actuel et standard distincts ; preuve existante relue.",
+      "limit": "Pas de nouvelle récupération réseau de la version courante."
+    },
+    {
+      "id": "S13",
+      "title": "Medics, Anionenlücke",
+      "local_evidence": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/medicsanion.txt",
+      "read": "Matrice sérum/plasma, formule sans potassium, plage de référence ; preuve existante relue."
+    },
+    {
+      "id": "S14",
+      "title": "Viollier, Standard-Bikarbonat, entrée 14157",
+      "local_evidence": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/viollier14157.txt",
+      "read": "Nature du paramètre et plage 21–29 ; preuve existante relue."
+    },
+    {
+      "id": "S15",
+      "title": "Jung et coll., Diagnosis and management of metabolic acidosis, 2019",
+      "local_evidence": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/jung-springer.txt",
+      "read": "Recommandations R1.1, R1.3 et R1.4 ; distinction troubles mixtes et correction du trou anionique par albumine ; preuve existante relue."
+    },
+    {
+      "id": "S16",
+      "title": "Surviving Sepsis Campaign 2021 — page officielle SCCM",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021",
+      "read": "Comparaison ciblée des anciennes recommandations à celles de 2026, contrôle de la cible glycémique historique.",
+      "limit": "SSC2021 n’est pas traitée comme la recommandation actuelle."
+    }
+  ],
+  "archived_reviews": [
+    "espace_partage/COURS_CODEX_A_AUDITER_PAR_CLAUDE/A41/rapport_audit_claude.md",
+    "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/preuves/rapport_audit_claude_a556323.md",
+    "livraisons/Livraison Claude/I-03-Infectiologie/archives/AUDIT_A41_39B7FF0_RECU_20261007_5BEE2A4/ (observations et listes de sources des trois fichiers JSON archivés)"
+  ]
+}
