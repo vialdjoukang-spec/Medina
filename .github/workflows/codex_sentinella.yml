@@ -75,13 +75,16 @@ jobs:
           except (OSError, ValueError):
               result = {"scan_status": "indisponible", "entries": [], "notifications": {}}
           notifications = result.get("notifications", {})
+          entries = result.get("entries", [])
           lines = [
               "## Codex_Sentinella", "",
               "Scan : **" + str(result.get("scan_status")) + "**  ",
-              "Livraisons Claude actuellement repérées : **" + str(len(result.get("entries", []))) + "**  ",
+              "Têtes Claude portant un signal : **" + str(len({e.get("sha") for e in entries})) + "**  ",
+              "Remises de fragment : **" + str(sum(e.get("kind") == "fragment_delivery" for e in entries)) + "**  ",
+              "Consignes Claude : **" + str(sum(e.get("kind") == "claude_instruction" for e in entries)) + "**  ",
               "Nouvelles notifications : **" + str(len(notifications.get("created", []))) + "**  ",
               "Erreur de notification : **" + str(notifications.get("error")) + "**", "",
-              "Une issue par SHA sert de file durable et de signal à la reprise de Codex. "
+              "Une issue par empreinte de remise ou de consignes sert de file durable à Codex. "
               "Le fichier `sentinella.json` conserve l'ordre proposé pour les agents.",
               "La détection ne lance aucun audit, aucune injection et ne réveille pas une session Codex inactive.",
               "Les déclencheurs GitHub et la planification toutes les cinq minutes sont soumis aux délais d'Actions.",

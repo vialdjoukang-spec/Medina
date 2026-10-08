@@ -123,9 +123,13 @@ def selection(data, fragment):
     return [data[ident]]
 
 
-def primary_sources(root, fragment):
+def primary_sources(root, fragment, *, bootstrap_courses=()):
     files = {}
     for chapter in fragment["chapters"]:
+        # Seule inspect_claude fournit cette liste, après vérification d'un
+        # lot de création complet. Les exports restent stricts par défaut.
+        if chapter["code"] in bootstrap_courses:
+            continue
         directory = safe_child(root, f"chapters/{chapter['code']}")
         if not directory.is_dir():
             raise DeliveryError(f"Dossier de cours absent : {directory}")
@@ -138,6 +142,77 @@ def primary_sources(root, fragment):
                 raise DeliveryError(f"Une source doit être un fichier : {path}")
             files[path.relative_to(root).as_posix()] = path.read_bytes()
     return files
+
+
+def declared_course_bootstraps(root, directory, fragment, announced, records):
+    """Autoriser une création annoncée, jamais masquer une source perdue.
+
+    Une création provisoire exige une déclaration canonique appartenant au
+    fragment, aucun HTML/JSON préexistant et les huit sources HTML explicites.
+    Leur contrôle technique ne certifie pas la médecine ou l'achèvement du cours.
+    """
+    declarations = load_json(root / "chapters.json")
+    grouped = {}
+    for record in records:
+        if not isinstance(record, dict):
+            raise DeliveryError("Une entrée files doit être un objet JSON.")
+        target = record.get("target_path")
+        safe_child(root, target)
+        parts = PurePosixPath(target).parts
+        if len(parts) == 3 and parts[0] == "chapters":
+            grouped.setdefault(parts[1], []).append(record)
+    bootstraps = set()
+    for chapter in announced:
+        code = chapter["code"]
+        canonical = safe_child(root, f"chapters/{code}")
+        if canonical.exists() and not canonical.is_dir():
+            raise DeliveryError(f"Dossier de cours invalide : {canonical}")
+        present = list(canonical.iterdir()) if canonical.is_dir() else []
+        expected = {f"chapters/{code}/{code}_{suffix}.html"
+                    for suffix in ("a", "b", "c", "d", "pop1", "pop2", "pop3", "pop4")}
+        delivered = grouped.get(code, [])
+        declared = [entry for entry in declarations if entry.get("code") == code]
+        if any(path.suffix == ".html" for path in present):
+            if (len(declared) == 1 and declared[0].get("provisional") is True
+                    and not all(safe_child(root, path).is_file() for path in expected)):
+                raise DeliveryError(f"Collision : sources canoniques partielles déjà présentes pour {code}.")
+            # Un cours déjà présent garde toutes les règles ordinaires de
+            # réconciliation ; un fichier ajouté ne requalifie pas sa baseline.
+            continue
+        if (len(declared) != 1 or declared[0].get("integrated") is not True
+                or declared[0].get("provisional") is not True
+                or declared[0].get("owner") != fragment["id"]
+                or chapter.get("owner_fragment", fragment["id"]) != fragment["id"]):
+            raise DeliveryError(f"Création non déclarée ou appartenance incohérente : {code}.")
+        if any(path.suffix in (".html", ".json") for path in present):
+            raise DeliveryError(f"Collision : sources canoniques partielles déjà présentes pour {code}.")
+        if len(delivered) != 8 or {entry["target_path"] for entry in delivered} != expected:
+            raise DeliveryError(f"Création incomplète : les huit HTML du cours {code} sont obligatoires.")
+        for entry in delivered:
+            target = entry["target_path"]
+            if entry.get("operation") != "add" or "sha256" not in entry or entry["sha256"] is not None:
+                raise DeliveryError(f"Création du cours : operation:add et sha256:null obligatoires : {target}")
+            proposed_sha = valid_sha(entry.get("proposed_sha256"))
+            if entry.get("source_path", "sources/" + target) != "sources/" + target:
+                raise DeliveryError(f"Le fichier livré doit conserver son chemin canonique : {target}")
+            payload = safe_child(directory, "sources/" + target)
+            if not payload.is_file():
+                raise DeliveryError(f"Fichier livré absent : {payload}")
+            data = payload.read_bytes()
+            try:
+                decoded = data.decode("utf-8")
+            except UnicodeError as error:
+                raise DeliveryError(f"Source livrée invalide : {target} ({error})") from error
+            if not decoded.strip():
+                raise DeliveryError(f"Fichier livré vide : {target}")
+            if digest(data) != proposed_sha:
+                raise DeliveryError(f"Empreinte du fichier corrigé incohérente : {target}")
+            if safe_child(root, target).exists():
+                raise DeliveryError(f"Collision : le fichier canonique existe déjà : {target}")
+        if not safe_child(root, "chapters").is_dir():
+            raise DeliveryError("Dossier canonique chapters absent ; création automatique interdite.")
+        bootstraps.add(code)
+    return bootstraps
 
 
 def chapter_records(fragment):
@@ -355,6 +430,8 @@ def inspect_claude(root, directory):
         code = chapter.get("code")
         if not isinstance(code, str) or code not in chapters or chapters[code] != chapter.get("title"):
             raise DeliveryError(f"Code ou titre de cours incohérent : {chapter!r}")
+    if len({c["code"] for c in announced}) != len(announced):
+        raise DeliveryError("Un cours est annoncé plusieurs fois.")
     records = manifest.get("files")
     if not isinstance(records, list) or not records:
         raise DeliveryError("Aucun fichier livré ; un modèle vide n'est pas une contribution.")
@@ -364,7 +441,8 @@ def inspect_claude(root, directory):
     for entry in sources.rglob("*"):
         if entry.is_symlink():
             raise DeliveryError(f"Lien symbolique dans les sources livrées : {entry}")
-    allowed, seen, changed = primary_sources(root, fragment), set(), []
+    bootstraps = declared_course_bootstraps(root, directory, fragment, announced, records)
+    allowed, seen, changed = primary_sources(root, fragment, bootstrap_courses=bootstraps), set(), []
     announced_codes = {c["code"] for c in announced}
     for record in records:
         if not isinstance(record, dict):
@@ -416,6 +494,8 @@ def inspect_claude(root, directory):
             changed.append({"target_path": target, "path": canonical, "operation": operation,
                             "original": None if operation == "add" else allowed[target],
                             "proposed": proposed, "original_sha256": original, "proposed_sha256": digest(proposed)})
+            if parts[1] in bootstraps:
+                changed[-1]["bootstrap_course"] = parts[1]
     if not changed:
         raise DeliveryError("Aucune source corrigée ; cette copie de travail ne constitue pas une livraison.")
     return manifest, fragment, changed, len(records)
@@ -427,6 +507,7 @@ def check_claude(root, directory):
             "source_commit": manifest["source_commit"], "verified_files": count,
             "changed_files": [c["target_path"] for c in changed],
             "added_files": [c["target_path"] for c in changed if c["operation"] == "add"],
+            "bootstrapped_courses": sorted({c["bootstrap_course"] for c in changed if "bootstrap_course" in c}),
             "status": "empreintes et chemins conformes ; sources corrigées à examiner ; aucune injection"}
 
 
@@ -493,19 +574,36 @@ def rollback_addition(change):
 def apply_claude(root, directory):
     manifest, fragment, changed, count = inspect_claude(root, directory)
     # Les fichiers sont tous validés avant préparation puis remplacement.
-    staged, replaced = [], []
+    staged, replaced, created_directories = [], [], []
+    completed = False
+    bootstraps = sorted({c["bootstrap_course"] for c in changed if "bootstrap_course" in c})
     now = datetime.now(timezone.utc)
     receipt_name = f"CLAUDE_PACKET_{fragment['id']}_{now.strftime('%Y%m%dT%H%M%S%fZ')}.json"
     receipt_path = safe_child(root, "docs/collaboration/receipts/" + receipt_name)
     if receipt_path.exists():
         raise DeliveryError("Un reçu existe déjà sous ce nom ; aucun fichier n'a été injecté.")
     try:
+        for code in bootstraps:
+            canonical = safe_child(root, "chapters/" + code)
+            if not canonical.exists():
+                try:
+                    canonical.mkdir()
+                except FileExistsError as error:
+                    raise DeliveryError(f"Collision concurrente du dossier de cours : {code}") from error
+                identity = canonical.stat(follow_symlinks=False)
+                created_directories.append((canonical, (identity.st_dev, identity.st_ino)))
+            if not canonical.is_dir() or any(p.suffix in (".html", ".json") for p in canonical.iterdir()):
+                raise DeliveryError(f"Collision concurrente de sources du nouveau cours : {code}")
         for change in changed:
             with tempfile.NamedTemporaryFile(dir=change["path"].parent, prefix=".livraison-", delete=False) as output:
                 output.write(change["proposed"])
                 staged.append((Path(output.name), change))
             mode = 0o644 if change["operation"] == "add" else change["path"].stat().st_mode & 0o777
             os.chmod(output.name, mode)
+        for code in bootstraps:
+            canonical = safe_child(root, "chapters/" + code)
+            if any(p.suffix in (".html", ".json") for p in canonical.iterdir()):
+                raise DeliveryError(f"Collision concurrente de sources du nouveau cours : {code}")
         for change in changed:
             no_symlinks(change["path"])
             if change["operation"] == "add":
@@ -533,12 +631,14 @@ def apply_claude(root, directory):
         receipt = {"schema_version": 1, "producer": "Claude", "received_by": "tools/livraison.py",
                    "received_at": now.isoformat(), "source_commit": manifest["source_commit"],
                    "fragment": {"id": fragment["id"], "label": fragment["label"]},
+                   "bootstrapped_courses": bootstraps,
                    "status": INJECTED, "verification_scope": "chemins, empreintes originales et présence des corrections",
                    "checks": checks, "integration_commit": None, "publication": "non effectuée par cet outil",
                    "files": [{k: c[k] for k in ("target_path", "operation", "original_sha256", "proposed_sha256")} for c in changed],
                    "limits": ["Reconstruction et contrôles du projet à exécuter.", "Validation médicale et complétude CIM-11 non établies par cet outil."]}
         receipt_path.parent.mkdir(parents=True, exist_ok=True)
         receipt_path.write_bytes(json_bytes(receipt))
+        completed = True
     except Exception as error:
         rollback_conflicts = []
         for change in reversed(replaced):
@@ -554,9 +654,20 @@ def apply_claude(root, directory):
     finally:
         for temporary, _ in staged:
             temporary.unlink(missing_ok=True)
+        if not completed:
+            # Ne retirer que les dossiers vides créés ici. Toute source ou tout
+            # dossier concurrent reste intact ; aucun retrait récursif.
+            for canonical, identity in reversed(created_directories):
+                try:
+                    stat = no_symlinks(canonical).stat(follow_symlinks=False)
+                    if (stat.st_dev, stat.st_ino) == identity:
+                        canonical.rmdir()
+                except (OSError, DeliveryError):
+                    pass
     return {"action": "apply-claude", "fragment": fragment["id"], "verified_files": count,
             "changed_files": [c["target_path"] for c in changed],
             "added_files": [c["target_path"] for c in changed if c["operation"] == "add"],
+            "bootstrapped_courses": bootstraps,
             "receipt": receipt_path.relative_to(root).as_posix(), "status": INJECTED}
 
 

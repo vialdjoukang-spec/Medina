@@ -7,6 +7,10 @@ Consigne directe de Vial, prioritaire sur toutes les sections ci-dessous qui lui
 Règles universelles ajoutées : **l’efficacité prime sur le volume** — information efficace, puissante, extrêmement didactique, claire, en termes médicaux dédiés, sans remplissage ni perte d’information utile ; **deux captures d’écran réelles par leçon** (ouverture de la leçon et fenêtre explicative ouverte, `tools/capture_lecon.py`), présentées dans le **panneau latéral**, non dans le fil du chat. Voir les sections 7 et 8 du même document.
 Règle universelle de langue : un français **merveilleux à lire, riche, professionnel et esthétique, sans excès** (section 9). File de production Claude : `organisation/FILE_FRAGMENTS_CLAUDE.json`, un fragment à la fois, leçon par leçon (section 10).
 
+## Exception ciblée C-01 — instruction directe de Vial, 8 octobre 2026
+
+Vial demande de corriger et d'intégrer immédiatement les parties exploitables, avec un marquage rouge repérable par Claude pour les cas délicats. Lire [l'exception documentée](docs/collaboration/instructions/EXCEPTION_C01_RESERVES_VIAL_2026-10-08.md). Des tranches **provisoires avec réserves**, techniquement contrôlées, sont autorisées pour la remise C-01 PR16. Elles ne constituent pas l'audit final ni l'état INJECTE. Les attributions, chapitres actifs, autres fragments et verrous finaux restent inchangés. Une incertitude ne devient pas une recommandation thérapeutique applicable par la seule couleur rouge. Le registre append-only `organisation/provisional_integrations.json` donne les chemins, empreintes, contrôles et actions attendues de Claude.
+
 ## Captures visibles — 8 octobre 2026 (présentation remplacée)
 
 > Remplacé pour la présentation par la règle du panneau latéral : deux captures par leçon, affichées à côté de la conversation, non dans le fil du chat (section 8 de `docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md`).

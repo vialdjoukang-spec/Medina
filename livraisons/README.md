@@ -20,3 +20,7 @@ Les sources restent dans leurs dossiers canoniques. L'auteur pousse sa branche e
 Les anciens rapports et lots sans manifeste restent recevables. Leur périmètre est rapproché des commits et documenté dans un reçu. Les états de livraison, d'intégration et de publication restent distincts ; une contribution partielle ne certifie ni un cours entier ni la complétude CIM-11 d'un système.
 
 L'outil `tools/livraison.py` exporte les paquets, prépare une copie Claude sur demande explicite, contrôle les empreintes et peut injecter les fichiers corrigés dans les sources canoniques. La reconstruction et les contrôles du projet restent une étape séparée. Les [commandes et conditions d'intégration](../docs/collaboration/DELIVERY_PROTOCOL.md) figurent dans le protocole commun.
+
+## Sources actuelles — 8 octobre 2026
+
+Les 22 exports complets (287 fichiers primaires) référencent le commit distant vérifié `0a75a10d4a8f8fec2f742f70e5ee1e002deaec27`. I51 est publié provisoirement avec trois réserves ouvertes ; les huit autres cours C01 sont archivés sans injection. [Reçu de publication](../docs/collaboration/receipts/CLAUDE_C01_PR16_I51_PUBLICATION_2026-10-08.json).

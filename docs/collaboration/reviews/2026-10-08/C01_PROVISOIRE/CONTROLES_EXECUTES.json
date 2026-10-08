@@ -1,0 +1,74 @@
+{
+  "completed_at": "2026-10-08T19:58:52.066Z",
+  "scope": "I51 adaptation provisoire ; pas de validation médicale humaine ou exhaustive des 30 cours",
+  "result": "passed",
+  "checks": [
+    {
+      "kind": "unit",
+      "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
+      "exit_code": 0,
+      "tests": 212,
+      "duration_seconds": 35.607,
+      "output": "Ran 212 tests in 35.607s; OK"
+    },
+    {
+      "kind": "static",
+      "command": "python3 test_v7.py --static I51",
+      "exit_code": 0,
+      "output": "I51 mots 22464 fenêtres 72 quiz 5 pareto 8; OK"
+    },
+    {
+      "kind": "build",
+      "command": "python3 build_front.py --all-fragments",
+      "exit_code": 0,
+      "fragments": 22,
+      "note": "Constructions complètes après ajout du CSS des réserves ; S01 reconstruit après les dernières corrections médicales."
+    },
+    {
+      "kind": "build",
+      "command": "python3 build_front.py --fragment S01",
+      "exit_code": 0,
+      "raw_bytes": 10178927,
+      "compressed_bytes": 5118781,
+      "templates": 1838
+    },
+    {
+      "kind": "build",
+      "command": "python3 build_front.py",
+      "exit_code": 0,
+      "raw_bytes": 17379250,
+      "compressed_bytes": 10453309,
+      "templates": 2479
+    },
+    {
+      "kind": "build",
+      "command": "python3 tests/audit_fragments.py --help",
+      "exit_code": 0,
+      "output": "audit réussi : 22 fragments, JavaScript valide, build reproductible",
+      "note": "Ce script ne traite pas --help : l'audit complet et les deux builds de reproductibilité ont réellement été exécutés."
+    },
+    {
+      "kind": "desktop_and_mobile",
+      "command": "node tests/verify_course_native.cjs I51",
+      "exit_code": 0,
+      "assertions": 1971,
+      "failures": 0,
+      "evidence": "browser/i51_native_results.json"
+    },
+    {
+      "kind": "desktop_and_mobile",
+      "command": "node tests/verify_c01_reserves.cjs",
+      "exit_code": 0,
+      "assertions": 90,
+      "failures": 0,
+      "evidence": "reserves/i51_reservations_results.json"
+    }
+  ],
+  "not_executed": [
+    "Certification clinique par un médecin",
+    "Audit exhaustif des huit autres nouveaux cours du lot C01",
+    "Validation exhaustive des 30 cours historiques",
+    "Vérification d'un inventaire CIM-11 complet"
+  ],
+  "publication": "Non exécutée à l'instant de ce gel des preuves ; à vérifier séparément."
+}

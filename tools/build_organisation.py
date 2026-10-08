@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Construit le tableau de bord autonome depuis les sources canoniques MEDINA."""
 import argparse
+import importlib.util
 import json
-import re
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,23 +21,16 @@ def load_data(generated_at):
     registry = json.loads((ROOT / "organisation/fragments.json").read_text())
     fragments = json.loads((ROOT / "fragments.json").read_text())
     chapters = [c for c in json.loads((ROOT / "chapters.json").read_text()) if c.get("integrated")]
-    source = (ROOT / "shell/medina_front.html").read_text()
-    match = re.search(r'<script id="medora-data" type="application/json">(.*?)</script>', source, re.S)
-    catalogue = json.loads(match.group(1))
+    spec = importlib.util.spec_from_file_location("organisation_fragment_surface", ROOT / "fragment_surface.py")
+    surface = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(surface)
+    catalogue, owner, _ = surface.frontend_catalog(ROOT)
     entries = catalogue["entries"]
     names = {f["id"]: f for f in registry}
     assert len(names) == len(fragments) == 22
     assert set(names) == {f["id"] for f in fragments}
     assert sorted(f["order"] for f in registry) == list(range(1, 23))
-    explicit = {x: f["id"] for f in fragments for x in f["rattachements"] if re.fullmatch(r"[A-Z][0-9]{2}", x)}
-    owner = {}
     by_code = {e["code"]: e for e in entries}
-    for f in fragments:
-        attached = set(f["rattachements"])
-        for e in entries:
-            if e["code"] in attached or (e["code"] not in explicit and e.get("system") in attached):
-                assert e["code"] not in owner, e["code"]
-                owner[e["code"]] = f["id"]
     assert set(owner) == set(by_code), "Catégories non rattachées"
     production, assignments = load_plan(ROOT, owner)
     fragment_by_id = {f["id"]: f for f in fragments}

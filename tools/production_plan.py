@@ -1,5 +1,6 @@
 """Validate the shared allocation and the single active chapter recorded per agent."""
 import json
+import importlib.util
 import re
 from pathlib import Path
 from pathlib import PurePosixPath
@@ -51,10 +52,10 @@ def validate_plan(plan, registry, category_owners=None, courses=None, titles=Non
             if active.get("fragment_id") not in queue or active.get("stage") not in STAGES:
                 raise ValueError("Le chapitre actif doit appartenir à la file de son agent et avoir un état explicite.")
             code = active["code"]
-            if category_owners is not None and category_owners.get(code) != active["fragment_id"]:
-                raise ValueError("Le code du chapitre n’appartient pas au fragment déclaré dans le catalogue.")
             if courses is not None and courses.get(code, code) != code:
                 raise ValueError("Réserver le cours primaire, pas une catégorie déjà couverte par ce cours.")
+            if category_owners is not None and category_owners.get(code) != active["fragment_id"]:
+                raise ValueError("Le code du chapitre n’appartient pas au fragment déclaré dans le catalogue.")
             if titles is not None and titles.get(code) != active["title"]:
                 raise ValueError("L’intitulé du chapitre doit être celui des sources canoniques.")
             if active["code"] in active_codes:
@@ -72,18 +73,12 @@ def load_plan(root, category_owners=None):
     source = (root / "shell/medina_front.html").read_text()
     entries = json.loads(re.search(r'<script id="medora-data" type="application/json">(.*?)</script>', source, re.S).group(1))["entries"]
     if category_owners is None:
-        fragments = json.loads((root / "fragments.json").read_text())
-        explicit = {code: f["id"] for f in fragments for code in f["rattachements"]
-                    if re.fullmatch(r"[A-Z][0-9]{2}", code)}
-        category_owners = {}
-        for f in fragments:
-            attached = set(f["rattachements"])
-            for entry in entries:
-                code = entry["code"]
-                if code in attached or (code not in explicit and entry.get("system") in attached):
-                    if code in category_owners:
-                        raise ValueError("Une catégorie appartient à deux fragments : " + code)
-                    category_owners[code] = f["id"]
+        # The isolated frontends own category placement. Legacy anatomical
+        # attachments still describe B18 as hepatic, while its frontend is T1.
+        spec = importlib.util.spec_from_file_location("production_plan_surface", root / "fragment_surface.py")
+        surface = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(surface)
+        category_owners = surface.frontend_catalog(root)[1]
     chapters = [c for c in json.loads((root / "chapters.json").read_text()) if c.get("integrated")]
     courses = {code: chapter["code"] for chapter in chapters for code in chapter.get("covers", [chapter["code"]])}
     titles = {entry["code"]: entry["title"] for entry in entries}

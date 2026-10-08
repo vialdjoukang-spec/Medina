@@ -4,7 +4,9 @@
 Avec fragment-unique-2026-10-08, les opérations historiques par cours sont
 interdites. La garde vérifie les preuves enregistrées d'un fragment entier ;
 elle ne réalise ni revue médicale ni certification CIM-11. Aucun fragment
-incomplet ne peut être transmis, audité ou injecté par cet outil.
+incomplet ne peut être transmis, audité ou déclaré INJECTE par cet outil.
+L'exception explicite de Vial du 8 octobre est contrôlée dans un registre
+provisoire distinct ; elle ne remplace ni l'audit final ni les verrous INJECTE.
 
   python3 tools/espace.py deposer  <dossier_lot> --auteur Claude|Codex
   python3 tools/espace.py ouvrir   <CODE>          # lecture seule sous le nouveau protocole
@@ -14,6 +16,12 @@ incomplet ne peut être transmis, audité ou injecté par cet outil.
   python3 tools/espace.py garde <avant> <apres>    # CI
 """
 import argparse, hashlib, json, os, pathlib, re, shutil, subprocess, sys
+try:
+    from provisional_integration import ProvisionalError, validate_provisional
+except ModuleNotFoundError as error:
+    if error.name != "provisional_integration":
+        raise
+    from tools.provisional_integration import ProvisionalError, validate_provisional
 R = pathlib.Path(__file__).resolve().parents[1]
 W = R.parent / "medina_espace"
 ESP = {"Claude": "espace_partage/COURS_CLAUDE_A_AUDITER_PAR_CODEX", "Codex": "espace_partage/COURS_CODEX_A_AUDITER_PAR_CLAUDE"}
@@ -264,6 +272,16 @@ def validate_fragment_guard(before, after):
                     raise FragmentError(f"{ident} : source médicale verrouillée modifiée : {path}.")
             else:
                 authorized[path] = digest
+    # Vial's explicit 8 October exception is documented independently from
+    # final fragment review/injection. It cannot reopen an INJECTE fragment.
+    try:
+        provisional = validate_provisional(before, after, old, new)
+    except ProvisionalError as error:
+        raise FragmentError(str(error)) from error
+    for path, digest in provisional.items():
+        if path in locked:
+            raise FragmentError(f"Provisoire : source d'un fragment INJECTE verrouillée : {path}.")
+        authorized[path] = digest
     for path in changed_medical:
         data = after.read(path, required=False)
         if data is None or authorized.get(path) != hashlib.sha256(data).hexdigest():
@@ -387,7 +405,7 @@ def garde(av, ap):
         before, after = GitTree(R, av), GitTree(R, ap)
         errors = validate_fragment_guard(before, after)
         if errors is not None:
-            print("Sources médicales modifiées sans injection de fragment complet auditée :", errors or "aucune")
+            print("Sources médicales modifiées sans preuve admissible (audit final ou exception provisoire Vial) :", errors or "aucune")
             return 1 if errors else 0
     except FragmentError as error:
         print(f"REFUS garde-espace : {error}")

@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "kind": "exception_c01_vial_2026-10-08",
+  "integrations": [
+    {
+      "id": "C01_I51_PR16_20261008_TRANCHE_1",
+      "fragment_id": "S01",
+      "label": "C-01-Cardiologie",
+      "status": "PROVISOIRE_AVEC_RESERVES",
+      "base_commit": "98b2e57382b15d188bf7a89fb417d99eeaf3053a",
+      "authority": {
+        "requested_by": "Vial",
+        "request_path": "docs/collaboration/instructions/EXCEPTION_C01_RESERVES_VIAL_2026-10-08.md",
+        "request_sha256": "850be24be19238a7b81cb2a13bfb2190e1e3a4dda25213b6bbac7ba14aa93496"
+      },
+      "courses": [
+        "I51"
+      ],
+      "source_dir": "livraisons/Livraison Codex/C-01-Cardiologie/travail/INTEGRATION_PROVISOIRE_2026-10-08/sources",
+      "files": {
+        "chapters/I51/I51_a.html": {
+          "before_sha256": null,
+          "sha256": "5d1add95d2fe7ca30021123d7b1cc646a205cd8b76a9cbfa56a046c107c8dd51"
+        },
+        "chapters/I51/I51_b.html": {
+          "before_sha256": null,
+          "sha256": "d6dc82e0f49f0263224caa490ebff19f3d8ea205131b01c308252e0e4372ba7e"
+        },
+        "chapters/I51/I51_c.html": {
+          "before_sha256": null,
+          "sha256": "6fecd28ac66f24a6a0e47815f4d34cf045c1e95395099e7bd857d028f3eaf6f2"
+        },
+        "chapters/I51/I51_d.html": {
+          "before_sha256": null,
+          "sha256": "6940966751118acc0d69ab710ea0b695d35f0e042a2e434452203c0d30bf6c80"
+        },
+        "chapters/I51/I51_pop1.html": {
+          "before_sha256": null,
+          "sha256": "9bb16b86cca4a0dbdff8717ede8b41a5bd174fb4542eb05f07f5141762c98fcc"
+        },
+        "chapters/I51/I51_pop2.html": {
+          "before_sha256": null,
+          "sha256": "8ba2a99710f1ce720684f72a0bdb2078bb88160777673d0f5ec913c390f43275"
+        },
+        "chapters/I51/I51_pop3.html": {
+          "before_sha256": null,
+          "sha256": "aa85217f2b4a39ef052320dbfef48846f8882bc17535804b008e22938efa4505"
+        },
+        "chapters/I51/I51_pop4.html": {
+          "before_sha256": null,
+          "sha256": "8959d5e14368509f08a6429cae2ba36acffdb51262cdc5aaed3916031cb63541"
+        },
+        "glossary/i51.py": {
+          "before_sha256": null,
+          "sha256": "90b9574d93dbc27ac7050ab4e59d0871e2068f17bdb3e1c261a0f31b3ff78986"
+        },
+        "chapters.json": {
+          "before_sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+          "sha256": "79f46fb907f4c22a16b132ed520b3cf3dd9b26eb725abce5b8389f7d8e4aded4"
+        }
+      },
+      "report_path": "docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/CONTRELECTURE_I51.md",
+      "report_sha256": "f71ed65ac3e5ba0eff75b7339c76141bc9b7259cdba48c87a0115fe96f1f5113",
+      "checks": [
+        {
+          "kind": "unit",
+          "result": "passed",
+          "evidence_path": "docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/CONTROLES_EXECUTES.json",
+          "evidence_sha256": "21f3cc31ec6fbfcb905195dcede91f16f3dd0f6e0620a75131b2837f21de66bc"
+        },
+        {
+          "kind": "static",
+          "result": "passed",
+          "evidence_path": "docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/CONTROLES_EXECUTES.json",
+          "evidence_sha256": "21f3cc31ec6fbfcb905195dcede91f16f3dd0f6e0620a75131b2837f21de66bc"
+        },
+        {
+          "kind": "build",
+          "result": "passed",
+          "evidence_path": "docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/CONTROLES_EXECUTES.json",
+          "evidence_sha256": "21f3cc31ec6fbfcb905195dcede91f16f3dd0f6e0620a75131b2837f21de66bc"
+        },
+        {
+          "kind": "desktop",
+          "result": "passed",
+          "evidence_path": "docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/browser/i51_native_results.json",
+          "evidence_sha256": "de347eb3151d50a9b9c6564ce610687e2537f4e48210933cb70ce2793addc3b7"
+        },
+        {
+          "kind": "mobile",
+          "result": "passed",
+          "evidence_path": "docs/collaboration/reviews/2026-10-08/C01_PROVISOIRE/reserves/i51_reservations_results.json",
+          "evidence_sha256": "25fedd524df9bc03e5d0ab74058f472fc0a27815baf9a1b549c7cd4e31479eaf"
+        }
+      ],
+      "reservations": [
+        {
+          "id": "C01-I51-AOD-DOSE",
+          "course": "I51",
+          "status": "open",
+          "reason": "Les adaptations posologiques de fibrillation auriculaire ne sont pas un schéma validé du thrombus ventriculaire hors indication.",
+          "action": "Claude : vérifier les essais et conditions posologiques propres au thrombus ventriculaire ; conserver la limite spécialisée visible jusqu'à correction sourcée.",
+          "targets": [
+            {
+              "path": "chapters/I51/I51_d.html",
+              "marker_id": "i51-reserve-aod"
+            }
+          ]
+        },
+        {
+          "id": "C01-I51-LEVOSIMENDAN-STATUT",
+          "course": "I51",
+          "status": "open",
+          "reason": "Monographie suisse actuelle et sélection des patients non établies ; l'inotropie peut aggraver une obstruction dynamique.",
+          "action": "Claude : retrouver la monographie applicable et délimiter les situations sans obstruction ; ne pas transformer l'option en protocole automatique.",
+          "targets": [
+            {
+              "path": "chapters/I51/I51_d.html",
+              "marker_id": "i51-reserve-levo"
+            }
+          ]
+        },
+        {
+          "id": "C01-I51-CHOC",
+          "course": "I51",
+          "status": "open",
+          "reason": "Traitement du choc du Tako-tsubo variable selon obstruction, congestion et hémodynamique ; contrelecture finale non achevée.",
+          "action": "Claude : achever la revue primaire du choc ; préserver les précautions visibles sur remplissage, bêtabloquants et médicaments aggravant le gradient.",
+          "targets": [
+            {
+              "path": "chapters/I51/I51_b.html",
+              "marker_id": "i51-reserve-choc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<div class="panel" id="pS" hidden>
+  <div class="sci-bar ui" role="tablist" aria-label="Sciences de B18 — Hépatite virale chronique">
+    <button role="tab" aria-selected="true" aria-controls="b18-s-anat" data-s="b18-s-anat">Architecture du foie</button>
+    <button role="tab" aria-selected="false" aria-controls="b18-s-immuno" data-s="b18-s-immuno">Immunité et fibrose</button>
+    <button role="tab" aria-selected="false" aria-controls="b18-s-hbv" data-s="b18-s-hbv">Virologie du VHB</button>
+    <button role="tab" aria-selected="false" aria-controls="b18-s-hcv" data-s="b18-s-hcv">Virologie du VHC</button>
+    <button role="tab" aria-selected="false" aria-controls="b18-s-hdvhev" data-s="b18-s-hdvhev">VHD et VHE</button>
+  </div>
+  <div class="chap-body sci-body">
+    <div class="sci" id="b18-s-anat" role="tabpanel">
+      <section class="ilot" id="b18-s-1">
+        <h2>1. Une même cellule assure des fonctions différentes</h2>
+        <p><b>Mme R., 42 ans</b>, consulte après deux résultats d’antigène HBs positifs espacés de plus de six mois. Cette persistance établit une infection chronique par le VHB ; elle ne mesure ni la réplication ni la gravité du foie. Son ADN VHB, ses transaminases, son statut HBeAg et sa fibrose ne sont pas encore connus.</p>
+        <p data-science-source="liver-imaging">Le sang provenant de la veine porte et de l’artère hépatique traverse les <button class="w" data-k="b18-sinusoide">sinusoïdes hépatiques</button> avant de rejoindre une veine centrale. Les hépatocytes, disposés en travées, échangent avec ce sang à travers l’endothélium sinusoïdal. Ils synthétisent notamment l’albumine et les facteurs de coagulation, transforment des substrats et sécrètent la bile dans des canalicules qui cheminent vers les voies biliaires. Cette circulation donne accès au virus et aux cellules immunitaires, sans signifier que chaque hépatocyte soit infecté.</p>
+        <p>Le schéma relie la circulation à la fonction. Les flèches décrivent des directions, sans représenter la longueur réelle des trajets ni le nombre de cellules.</p>
+        <figure data-science-source="liver-imaging">
+          <svg viewBox="0 0 680 240" role="img" aria-labelledby="b18-liver-title b18-liver-desc">
+            <title id="b18-liver-title">Échanges normaux dans un lobule hépatique simplifié</title>
+            <desc id="b18-liver-desc">Le sang va de l’espace porte vers la veine centrale à travers les sinusoïdes. La bile chemine des hépatocytes vers la voie biliaire porte. Les cellules de Kupffer et stellaires bordent les sinusoïdes.</desc>
+            <rect x="10" y="10" width="660" height="215" rx="12" fill="#f5faf7" stroke="#355c49"/>
+            <rect x="25" y="75" width="170" height="90" rx="10" fill="#fff" stroke="#355c49"/>
+            <text x="42" y="105" font-size="17" fill="#203a2d">Espace porte</text>
+            <text x="42" y="134" font-size="15" fill="#203a2d">Sang entrant · bile sortante</text>
+            <rect x="255" y="55" width="220" height="130" rx="10" fill="#fff" stroke="#355c49"/>
+            <text x="290" y="85" font-size="17" fill="#203a2d">Travées d’hépatocytes</text>
+            <text x="298" y="114" font-size="15" fill="#203a2d">Sinusoïdes : échange</text>
+            <text x="292" y="143" font-size="15" fill="#203a2d">Kupffer · stellaires</text>
+            <rect x="530" y="75" width="120" height="90" rx="10" fill="#fff" stroke="#355c49"/>
+            <text x="540" y="105" font-size="16" fill="#203a2d">Veine centrale</text>
+            <text x="201" y="106" font-size="26" fill="#203a2d">→</text>
+            <text x="488" y="106" font-size="26" fill="#203a2d">→</text>
+            <text x="229" y="205" font-size="15" fill="#203a2d">← La bile rejoint la voie biliaire de l’espace porte</text>
+          </svg>
+          <figcaption>Schéma fonctionnel du lobule : les sens du sang et de la bile diffèrent. Il ne montre ni une lésion ni une histologie de Mme R.</figcaption>
+        </figure>
+        <p>La <button class="w" data-k="b18-alt-fonction">transaminase ALT</button> augmente lorsque des hépatocytes lésés libèrent leur contenu. L’albumine et le temps de prothrombine renseignent plutôt la synthèse hépatique, avec des causes non hépatiques possibles. La bilirubine dépend de sa production, de sa conjugaison et de son excrétion. Ces tests ne sont donc pas interchangeables. Une ALT isolée, même normale, ne décrit pas la fibrose, la réserve fonctionnelle et le risque tumoral.</p>
+        <div class="key"><b>À retenir.</b> Chez Mme R., le premier enjeu consiste à mesurer séparément activité virale, lésion, fibrose et fonction. La persistance de l’antigène HBs ne remplace aucune de ces mesures.</div>
+        <p class="src">Sources : <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7925637/" target="_blank" rel="noopener">étude primaire d’imagerie tridimensionnelle de biopsies humaines, 2021</a> ; <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL, recommandation VHB 2025, évaluation initiale et stratification</a>. Consultées le 08.10.2026. Le schéma simplifie une architecture variable et n’a aucune valeur d’examen individuel.</p>
+      </section>
+    </div>
+    <div class="sci" id="b18-s-immuno" role="tabpanel" hidden>
+      <section class="ilot" id="b18-s-2">
+        <h2>2. La lésion chronique naît d’interactions entre virus, immunité et réparation</h2>
+        <p data-science-source="macparland">Les <button class="w" data-k="b18-kupffer">cellules de Kupffer</button> sont des macrophages résidents ; les lymphocytes et d’autres cellules surveillent le compartiment hépatique. L’atlas unicellulaire de MacParland distingue plusieurs populations immunitaires et stromales dans des foies humains. Il documente cette diversité, sans établir l’état immunitaire de Mme R. ni une réponse universelle à chaque virus.</p>
+        <p data-science-source="easl-hbv">Dans le VHB chronique, réplication et réponse de l’hôte évoluent. Une élévation de l’ALT peut traduire une atteinte hépatocytaire associée à l’inflammation, mais sa valeur ponctuelle dépend aussi du moment du prélèvement et d’autres causes de cytolyse. L’EASL 2025 classe le risque à partir d’un ensemble incluant ADN VHB, HBeAg, ALT, fibrose et contexte personnel ; une « phase » ne se déduit pas du seul antigène HBs. Une personne à ALT normale peut encore présenter une fibrose significative.</p>
+        <p data-science-source="easl-hbv">Quand la lésion et la réparation persistent, les <button class="w" data-k="b18-stellaire">cellules stellaires</button> contribuent au dépôt de matrice extracellulaire et de collagène. La <button class="w" data-k="b18-fibrose">fibrose</button> modifie progressivement l’architecture et la circulation du foie. La cirrhose représente une réorganisation avancée ; la possibilité d’une complication existe avant elle, surtout dans l’infection par le VHB. La mesure non invasive de la fibrose évalue un état tissulaire, sans identifier à elle seule la cause ni compter les cellules infectées.</p>
+        <p>Pour distinguer ces informations, l’équipe confronte les examens plutôt que de les lire en substitution. Le tableau indique la question utile de chaque mesure.</p>
+        <table class="t"><caption>Trois dimensions à garder distinctes chez Mme R.</caption><thead><tr><th>Mesure</th><th>Question éclairée</th><th>Limite</th></tr></thead><tbody><tr><td>ADN VHB sanguin</td><td>Quelle réplication circule actuellement ?</td><td>Ne mesure pas directement les lésions anciennes.</td></tr><tr><td>ALT sérique</td><td>Existe-t-il une cytolyse mesurable au prélèvement ?</td><td>Une valeur unique ne classe pas la fibrose.</td></tr><tr><td>Élastographie ou autre évaluation validée</td><td>Quelle est la probabilité d’une fibrose significative ?</td><td>L’inflammation et la méthode influencent l’interprétation.</td></tr></tbody></table>
+        <p>Si Mme R. avait une ALT normale, cela ne fournirait ni son ADN viral ni son stade de fibrose. À l’inverse, une ALT élevée demanderait une interprétation avec les autres résultats et causes possibles.</p>
+        <div class="key"><b>À retenir.</b> L’immunité peut limiter le virus tout en participant à la lésion. L’inflammation répétée favorise la fibrose ; seul un bilan combiné permet d’estimer l’état actuel de Mme R.</div>
+        <p class="src">Sources : <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6197289/" target="_blank" rel="noopener">MacParland et coll., Nature Communications 2018, atlas unicellulaire humain</a> ; <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL, recommandation VHB 2025, sections évaluation, fibrose et indications</a>. Consultées le 08.10.2026. L’atlas porte sur cinq foies et n’est pas une étude pronostique de Mme R.</p>
+      </section>
+      <section class="ilot" id="b18-s-3">
+        <h2>3. Le cancer suit plusieurs voies, que la seule ALT ne résume pas</h2>
+        <p data-science-source="easl-hbv">La fibrose avancée et la cirrhose augmentent le risque de <button class="w" data-k="b18-chc">carcinome hépatocellulaire</button> en associant remodelage, inflammation et renouvellement cellulaire. Pour le VHB, l’intégration de fragments d’ADN viral et l’expansion clonale d’hépatocytes constituent aussi des mécanismes étudiés. Une intégration n’est pas une preuve qu’un cancer apparaîtra chez Mme R. ; elle aide à comprendre pourquoi la suppression de l’ADN sanguin ne ramène pas automatiquement son risque à zéro. L’EASL fonde la surveillance sur le risque clinique, et non sur l’ALT isolée.</p>
+        <p data-science-source="jci-hbs">Dans des biopsies de patients traités, l’étude de Grudda et collaborateurs distingue les transcrits d’Ag HBs issus de l’ADN viral circulaire intranucléaire et ceux issus d’ADN intégré. La contribution intégrée peut devenir dominante pendant la suppression virologique. Ces données ne permettent pas de localiser l’origine de l’Ag HBs de Mme R. avec une simple sérologie.</p>
+        <div class="key"><b>À retenir.</b> Une ALT rassurante à un instant donné ne suffit pas à estimer le risque de cancer. Fibrose, histoire de l’infection et facteurs personnels restent nécessaires.</div>
+        <p class="src">Sources : <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL, VHB 2025, sections carcinogenèse et surveillance</a> ; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9473722/" target="_blank" rel="noopener">Grudda et coll., JCI 2022, étude primaire des transcrits issus de l’ADN intégré</a>. Consultées le 08.10.2026. L’étude moléculaire ne fournit pas un score de risque individuel.</p>
+      </section>
+    </div>
+    <div class="sci" id="b18-s-hbv" role="tabpanel" hidden>
+      <section class="ilot" id="b18-s-4">
+        <h2>4. Le VHB laisse deux traces moléculaires de sens différent</h2>
+        <p data-science-source="easl-hbv">Le VHB apporte un ADN partiellement double brin à l’hépatocyte. Après entrée, les enzymes de la cellule réparent cet ADN en <button class="w" data-k="b18-cccdna">ADN circulaire fermé, ou cccDNA</button>, dans le noyau. Ce modèle sert à produire les ARN viraux. Un ARN prégénomique est emballé dans la capside, puis la polymérase virale le rétrotranscrit en ADN. La chaîne ADN → ARN → ADN explique la cible des analogues nucléos(t)idiques. Elle ne signifie pas que le VHB soit un rétrovirus intégré comme le VIH.</p>
+        <p data-science-source="jci-hbs">Des fragments de <button class="w" data-k="b18-integration">l’ADN du VHB peuvent s’intégrer</button> au génome de l’hépatocyte. Ils peuvent produire l’antigène de surface sans former nécessairement un nouveau virion complet. Le cccDNA, lui, reste un support majeur de transcription et de nouvelles particules. La positivité de l’Ag HBs ne sépare pas ces deux origines ; l’ADN VHB plasmatique mesure une autre dimension, la réplication circulante. L’intégration est une possibilité biologique, pas un résultat observé chez Mme R.</p>
+        <p>Ce schéma suit les étapes qui changent l’interprétation clinique ; les flèches ne représentent pas des vitesses ni un nombre de copies.</p>
+        <figure data-science-source="easl-hbv">
+          <svg viewBox="0 0 690 230" role="img" aria-labelledby="b18-hbv-title b18-hbv-desc">
+            <title id="b18-hbv-title">Deux voies de production de l’antigène HBs dans l’hépatocyte</title>
+            <desc id="b18-hbv-desc">Le cccDNA nucléaire produit les ARN nécessaires à la réplication. Des fragments intégrés peuvent aussi produire de l’antigène HBs sans être une preuve de virions complets.</desc>
+            <rect x="8" y="10" width="674" height="208" rx="12" fill="#f5faf7" stroke="#355c49"/>
+            <rect x="24" y="66" width="156" height="95" rx="10" fill="#fff" stroke="#355c49"/>
+            <text x="40" y="97" font-size="16" fill="#203a2d">ADN VHB entrant</text>
+            <text x="40" y="128" font-size="15" fill="#203a2d">partiellement double</text>
+            <rect x="245" y="35" width="188" height="74" rx="10" fill="#fff" stroke="#355c49"/>
+            <text x="267" y="66" font-size="17" fill="#203a2d">cccDNA nucléaire</text>
+            <text x="267" y="90" font-size="14" fill="#203a2d">ARN → nouvelles capsides</text>
+            <rect x="245" y="133" width="188" height="62" rx="10" fill="#fff" stroke="#355c49"/>
+            <text x="259" y="159" font-size="16" fill="#203a2d">Fragment intégré</text>
+            <text x="259" y="180" font-size="14" fill="#203a2d">Ag HBs possible</text>
+            <rect x="500" y="66" width="165" height="95" rx="10" fill="#fff" stroke="#355c49"/>
+            <text x="517" y="97" font-size="16" fill="#203a2d">Ag HBs sanguin</text>
+            <text x="517" y="128" font-size="14" fill="#203a2d">origine non précisée</text>
+            <text x="193" y="82" font-size="26" fill="#203a2d">↗</text>
+            <text x="193" y="166" font-size="26" fill="#203a2d">↘</text>
+            <text x="452" y="108" font-size="26" fill="#203a2d">→</text>
+            <text x="452" y="176" font-size="26" fill="#203a2d">↗</text>
+          </svg>
+          <figcaption>Deux sources possibles d’Ag HBs. Le dessin ne permet pas de quantifier leurs parts chez une personne.</figcaption>
+        </figure>
+        <p data-science-source="easl-hbv">Les analogues nucléos(t)idiques inhibent la <button class="w" data-k="b18-hbv-pol">polymérase du VHB</button> et abaissent l’ADN circulant. Ils n’éliminent pas directement tous les cccDNA ni les fragments intégrés ; la perte de l’Ag HBs reste donc moins fréquente que la suppression de l’ADN. Le choix d’un médicament, sa dose et sa durée dépendent du bilan, de la fonction rénale et d’autres situations traitées dans l’onglet Pharmacologie. Aucun traitement n’est déduit ici de la seule persistance de l’Ag HBs chez Mme R.</p>
+        <div class="key"><b>À retenir.</b> L’Ag HBs persistant établit la chronicité du VHB. L’ADN circulant décrit la réplication actuelle. Ces marqueurs ne prouvent ni une phase clinique ni la disparition du cccDNA.</div>
+        <p class="src">Sources : <a href="https://easlcampus.eu/sites/default/files/2025-08/EASL_CPGs_on_management_of_HBV_infection.pdf" target="_blank" rel="noopener">EASL, VHB 2025, cycle et objectifs thérapeutiques</a> ; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9473722/" target="_blank" rel="noopener">Grudda et coll., JCI 2022, Ag HBs issu de l’ADN intégré pendant traitement</a> ; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11910228/" target="_blank" rel="noopener">étude JCI 2025 des sources de transcription de l’Ag HBs pendant traitement</a>. Consultées le 08.10.2026. Les biopsies de recherche ne sont pas une indication de biopsie pour Mme R.</p>
+      </section>
+    </div>
+    <div class="sci" id="b18-s-hcv" role="tabpanel" hidden>
+      <section class="ilot" id="b18-s-5">
+        <h2>5. Le VHC réplique son ARN sans réservoir d’ADN analogue à celui du VHB</h2>
+        <p data-science-source="hcv-in-situ">Le VHC possède un génome à ARN. Dans les hépatocytes étudiés par hybridation in situ, l’ARN viral génomique et son intermédiaire de réplication ont été retrouvés surtout dans le cytoplasme. L’intermédiaire de brin opposé permet de produire de nouveaux ARN. Le VHC ne passe pas par un cccDNA nucléaire comparable à celui du VHB. Cette distinction aide à comprendre pourquoi un anticorps anti-VHC peut persister après élimination du virus, tandis que l’<button class="w" data-k="b18-hcv-arn">ARN VHC</button> recherche une infection active.</p>
+        <p data-science-source="easl-hcv">La polyprotéine virale est découpée puis les protéines non structurales organisent la réplication. La protéase <button class="w" data-k="b18-hcv-cibles">NS3/4A</button>, la protéine NS5A et la polymérase NS5B fournissent des cibles à des antiviraux directs. Bloquer plusieurs étapes évite de laisser se multiplier les variants sensibles à une seule inhibition. Ce mécanisme n’autorise pas à choisir un schéma pour Mme R., chez qui aucune infection par le VHC n’est documentée ; le choix réel dépend notamment de la cirrhose, des traitements antérieurs et des interactions.</p>
+        <p>Une comparaison courte prévient la confusion entre les marqueurs des deux infections.</p>
+        <table class="t"><caption>Ce que dit un résultat virologique positif</caption><thead><tr><th>Virus</th><th>Marqueur positif</th><th>Question encore ouverte</th></tr></thead><tbody><tr><td>VHB</td><td>Ag HBs durable</td><td>Quelle réplication et quelle atteinte hépatique ?</td></tr><tr><td>VHC</td><td>Anti-VHC</td><td>L’ARN est-il encore détectable ?</td></tr><tr><td>VHC</td><td>ARN VHC</td><td>Quel est le stade hépatique et quel schéma est approprié ?</td></tr></tbody></table>
+        <p>Chez Mme R., les deux Ag HBs positifs ne disent rien de la présence d’un VHC. Une sérologie et, selon son résultat et le contexte, une recherche d’ARN répondent à cette question distincte.</p>
+        <div class="quiz ui"><p><b>Micro-cas.</b> L’anti-VHC de Mme R. serait positif, mais aucun ARN VHC n’aurait été mesuré. Quelle conclusion est fondée ?</p><button data-ok="0">Elle présente nécessairement un VHC actif.</button><button data-ok="1">Une exposition est possible ; l’ARN est requis pour établir l’infection active.</button><p class="fb" hidden>L’anticorps peut rester positif après guérison. L’ARN précise si le virus circule actuellement.</p></div>
+        <div class="key"><b>À retenir.</b> Pour le VHC, l’ARN répond à la question de l’infection active. Le résultat anti-VHC seul ne permet pas cette conclusion.</div>
+        <p class="src">Sources : <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC111615/" target="_blank" rel="noopener">étude primaire d’hybridation in situ d’ARN VHC dans des biopsies humaines, Journal of Virology 2000</a> ; <a href="https://easl.eu/wp-content/uploads/2020/10/EASL-recommendations-on-treatment-of-hepatitis-C.pdf" target="_blank" rel="noopener">EASL, recommandations thérapeutiques VHC 2020, cibles et bilan préalable</a>. Consultées le 08.10.2026. La distribution observée dans ces biopsies ne prédit pas celle de Mme R.</p>
+      </section>
+    </div>
+    <div class="sci" id="b18-s-hdvhev" role="tabpanel" hidden>
+      <section class="ilot" id="b18-s-6">
+        <h2>6. Le VHD emprunte l’enveloppe du VHB</h2>
+        <p data-science-source="easl-hdv">Le virus de l’hépatite D possède un ARN distinct du VHB. Il dépend des protéines de surface HBs pour former des particules capables d’entrer dans l’hépatocyte et d’en sortir. Une <button class="w" data-k="b18-hdv">infection par le VHD</button> ne se déduit pas de l’Ag HBs positif : cet antigène rend la co-infection possible, sans la démontrer. L’ARN VHD peut être présent même quand l’ADN VHB est peu détectable. Un ADN VHB bas ne constitue donc pas un test d’exclusion du VHD.</p>
+        <p data-science-source="easl-hdv">L’EASL 2023 recommande une recherche anti-VHD au moins une fois chez toute personne Ag HBs positive, puis la mesure de l’ARN VHD en cas d’anticorps positif pour confirmer une infection active. Chez Mme R., ces examens restent à faire ; son résultat anti-VHD n’a pas été fourni. Une hépatite D chronique peut accélérer la progression hépatique, ce qui change l’évaluation du risque et les options spécialisées.</p>
+        <div class="key"><b>À retenir.</b> L’Ag HBs est une condition biologique du VHD, pas son diagnostic. L’anti-VHD puis l’ARN VHD répondent à deux questions successives.</div>
+        <p class="src">Source primaire : <a href="https://easlcampus.eu/sites/default/files/2024-05/EASL%20Clinical%20Practice%20Guidelines%20on%20hepatitis%20delta%20virus.pdf" target="_blank" rel="noopener">EASL, Clinical Practice Guidelines on hepatitis delta virus, 2023</a>, sections cycle et dépistage. Consultée le 08.10.2026. La recommandation s’applique aux personnes Ag HBs positives ; elle ne préjuge pas du statut de Mme R.</p>
+      </section>
+      <section class="ilot" id="b18-s-7">
+        <h2>7. Le VHE chronique concerne surtout une immunité diminuée</h2>
+        <p data-science-source="easl-hev">Le virus de l’hépatite E provoque le plus souvent une infection aiguë. Une <button class="w" data-k="b18-hev">persistance de son ARN</button> est cependant décrite sous immunosuppression, notamment après greffe d’organe, ainsi que dans certains autres états immunodéprimés. L’EASL 2018 rappelle l’ancienne définition à six mois ; chez les greffés d’organe, une virémie au-delà de trois mois permet déjà de considérer une infection chronique, tout en reconnaissant quelques clairances ultérieures. Une sérologie isolée peut être peu informative quand la réponse anticorps est diminuée.</p>
+        <p>Mme R. n’a aucun antécédent de greffe ou traitement immunosuppresseur fourni. Il serait donc infondé de lui attribuer un VHE chronique. Cette autre cause devient pertinente devant une cytolyse inexpliquée ou une exposition compatible, surtout si une immunodépression est établie. La recherche d’ARN répond alors à une question différente de celle de l’ADN VHB.</p>
+        <div class="key"><b>À retenir.</b> La chronicité du VHE se prouve par la persistance de son ARN dans un contexte adapté. Elle n’accompagne pas automatiquement une infection chronique par le VHB.</div>
+        <p class="src">Source primaire : <a href="https://easl.eu/wp-content/uploads/2018/10/EASL-CPG-hepatitis-E-virus-infection.pdf" target="_blank" rel="noopener">EASL, Clinical Practice Guidelines on hepatitis E virus infection, 2018</a>, sections immunodépression et diagnostic. Consultée le 08.10.2026. La recommandation porte principalement sur les génotypes européens 3 et 4 ; elle ne constitue pas un dépistage universel du VHE chez Mme R.</p>
+        <button class="pareto-btn ui" data-k="b18-pareto-sciences">▲ Loi de Pareto — Sciences fondamentales de B18</button>
+      </section>
+    </div>
+  </div>
+</div>
