@@ -1,3 +1,5 @@
+**Politique des sources (8 octobre 2026)** : sources suisses d'abord (sociétés savantes, universités, Swissmedic/OFSP), puis européennes applicables en Suisse ; recherche indexée avec `origine` CH/EU ; toute autre source exige `derogation`. Lire `docs/collaboration/POLITIQUE_SOURCES.md` ; contrôle bloquant `python3 tools/sources_guard.py check` (CI et commit).
+
 **Référence médicamenteuse suisse = `ref/fi/` ; aucune posologie, interaction ou contre-indication sans vérification dans ce corpus.** Corpus : informations professionnelles (FI) AIPS Swissmedic en français, version du 8 octobre 2026, indexées dans `ref/fi/INDEX.md` ; régénération avec `tools/aips_to_fi.py`.
 
 ## Alignement avec Claude — police de lecture, 8 octobre 2026

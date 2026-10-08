@@ -1,0 +1,25 @@
+name: Politique des sources MEDINA
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+      - name: Tests du garde-fou
+        run: python -m unittest discover -s tests -p test_sources_guard.py
+      - name: Contrôle des sources (écarts nouveaux et pointeurs manquants)
+        run: python tools/sources_guard.py check --base origin/main
