@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête d94b11f : I83 sur main 31b086a et preuves suisses
+
+État : **reçu et archivé ; non injecté**. Six objets. La simulation producteur est réconciliée avec le main courant ; les données OFSP sont parseables et cohérentes. La prétendue preuve Rapidocain ne contient cependant aucun des passages annoncés, ce qui bloque toujours l’injection. [Rapport](reviews/2026-10-08/PR12_D94B11F_I83_MAIN31B_PROOFS/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête b983cb6 : attestation S01 et preuves suisses I83
 
 État : **reçu et archivé ; non injecté**. Quatre objets. Le S01 v5 reprend exactement les assertions et le résultat du v4, mais une attestation horodatée lie désormais le résultat aux empreintes de construction. Les sources suisses restent non contre-vérifiées indépendamment et la simulation se fonde sur un ancien main. [Rapport](reviews/2026-10-08/PR12_B983CB6_I83_ATTESTATION_SOURCES/RECEPTION.md).

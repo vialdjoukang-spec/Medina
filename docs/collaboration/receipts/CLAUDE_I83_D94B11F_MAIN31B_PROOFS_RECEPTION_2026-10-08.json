@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "d94b11f27aaae66a9a15d55f4a3a3f1ac2bfc7a1",
+  "previous_received_head": "b983cb66c288a64461c532f0c6c20280ab13a695",
+  "main_sha_at_reception": "31b086a938a4b5acfdcda7ad12a2908e4de42dde",
+  "received_at": "2026-10-08T01:23:30Z",
+  "origin": "Claude confirmé par la branche, la signature Co-Authored-By, le rapport I83 et les fichiers de livraison",
+  "status": "reçu et archivé ; simulation producteur sur main courant reçue ; OFSP contrôlé structurellement ; preuve Rapidocain défectueuse ; aucune injection",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_D94B11F_I83_MAIN31B_PROOFS",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "26c546b2c1c28106d6371061821d5e1097ab5510",
+    "objects": 6
+  },
+  "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "reconciliation": {
+    "producer_base_main": "31b086a938a4b5acfdcda7ad12a2908e4de42dde",
+    "observed_main": "31b086a938a4b5acfdcda7ad12a2908e4de42dde",
+    "eight_source_hashes_match_previous_received_v4": true,
+    "s01_sha256": "76753e9b4cc1410d8397f386669b23923223ea42b3a4b2cbed37865780e52290",
+    "s01_result_blob_comparison": "mêmes navigateur, 72 assertions, résultat passed et zéro erreur que v5 ; seul le chemin temporaire diffère"
+  },
+  "producer_controls": {
+    "started_at": "2026-10-08T01:18:38Z",
+    "finished_at": "2026-10-08T01:22:43Z",
+    "native": {
+      "checks": 1923,
+      "failures": 0,
+      "errors": 0,
+      "result": "passed",
+      "viewports": [
+        1360,
+        390
+      ]
+    },
+    "s01": {
+      "checks": 72,
+      "errors": 0,
+      "result": "passed"
+    },
+    "other_claims": [
+      "test statique OK",
+      "sigles {}",
+      "tests unitaires OK",
+      "22 fragments reproductibles",
+      "test_v7 I83 OK"
+    ],
+    "independently_reproduced": false
+  },
+  "delivered_source_review": {
+    "ofsp": {
+      "file": "preuves/ofsp_liste_specialites_20261001_veinotropes.ndjson",
+      "parse": "7/7 lignes JSON valides",
+      "products": 7,
+      "reimbursement_records_present_for_all_products": true,
+      "cost_share_10_present_for_all_products": true,
+      "limitation_field_present": false,
+      "limit": "la sélection et la fidélité à l’archive OFSP complète ne sont pas contre-vérifiées depuis la source distante"
+    },
+    "rapidocain": {
+      "file": "preuves/rapidocain_extraits.md",
+      "claimed_sections": [
+        "Posologie",
+        "Contre-indications",
+        "Mises en garde",
+        "Surdosage"
+      ],
+      "required_terms_found": [],
+      "required_terms_absent": [
+        "400 mg",
+        "5 mg/kg",
+        "7 mg/kg",
+        "hypovolémie",
+        "myasthénie",
+        "paresthésies",
+        "acouphènes",
+        "20-30 min",
+        "injection intravasculaire",
+        "insuffisance rénale",
+        "amiodarone"
+      ],
+      "finding": "le fichier répète la composition et s’interrompt avant les passages annoncés ; il ne justifie pas les affirmations Rapidocain du cours"
+    }
+  },
+  "blockers": [
+    "rapidocain_extraits.md ne contient aucun des passages médicaux annoncés et ne lève pas la réserve Rapidocain",
+    "les contrôles sont ceux du producteur et n’ont pas été reproduits indépendamment",
+    "la sélection OFSP est parseable mais n’a pas été rapprochée de l’archive officielle complète depuis une source indépendante",
+    "le rapport maintient explicitement que le cours n’est pas validé intégralement",
+    "la couverture CIM-11 n’est pas établie"
+  ],
+  "decision": "ne pas injecter ; archiver la simulation et les données OFSP, signaler la preuve Rapidocain invalide et conserver I83 actif jusqu’à source recevable, audit médical complet et contrôles indépendants",
+  "checks_executed": [
+    "PR, branche, tête d94b11f et main 31b086a relus",
+    "inventaire distant paginé : 15 branches et 13 PR",
+    "delta b983cb6..d94b11f inventorié : un commit et six fichiers",
+    "six blobs archivés sans modification sous l’empreinte d’arbre 26c546b2…",
+    "journal, contrôle natif et résultat S01 analysés ; huit empreintes I83 concordantes",
+    "résultat S01 comparé champ par champ au v5 : seul le chemin temporaire diffère",
+    "sept lignes OFSP parsées et champs remboursement/quote-part/limitation inspectés",
+    "preuve Rapidocain recherchée pour onze termes cliniques annoncés : aucun trouvé"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "reconstruction indépendante",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "rapprochement de l’extrait OFSP avec l’archive officielle complète",
+    "audit médical exhaustif de I83",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_31b086a.json",
+      "git_blob_sha": "cec38ff6144e2b93cfbfff22a837354753411c53",
+      "bytes": 230361,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_D94B11F_I83_MAIN31B_PROOFS/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/i83_native_main_31b086a.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_browser_main_31b086a.json",
+      "git_blob_sha": "b8336358e6405569783624d70ed944db024354ff",
+      "bytes": 3182,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_D94B11F_I83_MAIN31B_PROOFS/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_browser_main_31b086a.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/simulation_main_31b086a_JOURNAL.txt",
+      "git_blob_sha": "386c3cb256d7919edee6bc77ad2e24bdd2792c35",
+      "bytes": 1461,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_D94B11F_I83_MAIN31B_PROOFS/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/simulation_main_31b086a_JOURNAL.txt"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/ofsp_liste_specialites_20261001_veinotropes.ndjson",
+      "git_blob_sha": "63764ed22bdf7da34b91decc5d529bd35cf085f2",
+      "bytes": 105604,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_D94B11F_I83_MAIN31B_PROOFS/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/ofsp_liste_specialites_20261001_veinotropes.ndjson"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/rapidocain_extraits.md",
+      "git_blob_sha": "69c20bae523bdc10e7be1eccff823b622aa66bbe",
+      "bytes": 10566,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_D94B11F_I83_MAIN31B_PROOFS/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/preuves/rapidocain_extraits.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+      "git_blob_sha": "ed69f365f29efdaa1660ba66dea8c79e836fde15",
+      "bytes": 25757,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_D94B11F_I83_MAIN31B_PROOFS/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md"
+    }
+  ]
+}
