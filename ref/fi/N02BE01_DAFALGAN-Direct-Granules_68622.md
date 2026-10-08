@@ -1,0 +1,409 @@
+---
+titre: "DAFALGAN® Direct Granulés"
+titulaire: "UPSA Switzerland AG"
+atc: N02BE01
+substances: "Paracétamol"
+autorisation_swissmedic: 68622
+date_version: 2025-09-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/144f76c17d914a6a89d2ee4d483c70a9-fr.html
+---
+
+DAFALGAN® Direct Granulés
+
+UPSA Switzerland AG
+
+Composition
+
+Principes actifs
+
+Paracétamol.
+
+Excipients
+
+1 sachet de Dafalgan Direct Granulés 250 mg, arôme fraise contient: copolymère basique d'acrylate de butyle et de méthyle, dispersion de polyacrylate 30 %, dioxyde de silicium hydrophobe hautement dispersé, mannitol (E 421), crospovidone, 6,8 mg de benzoate de sodium (E 211), sucralose (E 955), arôme fraise ((contient de la gomme arabique (E 414), alcool benzylique)), 1,1 mg de sodium.
+
+1 sachet de Dafalgan Direct Granulés 500 mg, arôme baies rouges, contient: copolymère basique d'acrylate de butyle et de méthyle, dispersion de polyacrylate 30 %, dioxyde de silicium hydrophobe hautement dispersé, mannitol (E 421), crospovidone, 13,5 mg de benzoate de sodium (E 211), sucralose (E 955), arôme baies rouges ((contient de la gomme arabique (E 414), alcool benzylique)), 2,2 mg de sodium.
+
+1 sachet de Dafalgan Direct Granulés 500 mg, arôme pamplemousse, contient: copolymère basique d'acrylate de butyle et de méthyle, dispersion de polyacrylate 30 %, dioxyde de silicium hydrophobe hautement dispersé, mannitol (E 421), crospovidone, 13,5 mg de benzoate de sodium (E 211), sucralose (E 955), arôme pamplemousse (contient de la maltodextrine, du sorbitol (E 420), de la gomme arabique (E 414), du dioxyde de soufre (E220), de l'alcool benzylique)), 2,2 mg de sodium.
+
+1 sachet de Dafalgan Direct Granulés 1'000 mg, arôme baies rouges, contient: copolymère basique d'acrylate de butyle et de méthyle, dispersion de polyacrylate 30 %, dioxyde de silicium hydrophobe hautement dispersé, mannitol (E 421), crospovidone, 27 mg de benzoate de sodium (E 211), sucralose (E 955), arôme baies rouges ((contient de la gomme arabique (E 414), alcool benzylique)), 4,4 mg de sodium.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Granulés:
+
+Sachet de 250 mg de paracétamol.
+
+Sachet de 500 mg de paracétamol.
+
+Sachet de 1'000 mg de paracétamol.
+
+Indications/Possibilités d’emploi
+
+Traitement contre les douleurs d'intensité faible à modérée (maux de tête, maux de dents, douleurs articulaires et ligamentaires, douleurs dorsales, douleurs pendant la menstruation, douleurs après blessures, douleurs lors de refroidissements). Traitement symptomatique de la fièvre.
+
+1'000 mg seulement: Traitement symptomatique des douleurs arthrosiques.
+
+Posologie/Mode d’emploi
+
+Il ne faut pas dépasser la dose quotidienne maximale de 4'000 mg de paracétamol. La dose quotidienne maximale pour les enfants âgés de 9 à 12 ans est de 2'000 mg. Les enfants âgés de moins de 9 ans reçoivent des doses plus faibles (voir tableau), qui doivent être respectées scrupuleusement.
+
+Pour prévenir le risque de surdosage, il faut s'assurer que les autres médicaments absorbés ne contiennent pas de paracétamol. La durée d'utilisation continue maximale pour les enfants jusqu'à 12 ans sans consultation médicale est de 3 jours.
+
+Chez les enfants (<12 ans), la dose doit être déterminée en fonction du poids. Le poids minimum des patients >12 ans doit être respecté. En général, la dose quotidienne maximale ne doit pas dépasser 75 mg/kg chez les enfants.
+
+|  |  |  |
+| --- | --- | --- |
+| Poids  (âge) | Dose individuelle recommandée | Dose journalière maximale |
+| >15 kg - ≤22 kg (3-6 ans) | 250 mg de paracétamol | 1'000 mg de paracétamol |
+| >22 kg - ≤30 kg (6-9 ans) | 250-500 mg de paracétamol | 1'500 mg de paracétamol |
+| >30 kg - ≤40 kg (9-12 ans) | 500 mg de paracétamol | 2'000 mg de paracétamol |
+| >40 kg (>12 ans et adultes) | 500-1'000 mg de paracétamol | 4'000 mg de paracétamol |
+
+ 
+
+Respecter un intervalle de 4 à 8 h (adultes) ou 6 à 8 h (enfants) entre chaque prise.
+
+Le contenu du sachet doit être placé directement dans la bouche, sur la langue. Les granulés se dissolvent dans la salive et doivent ensuite être avalés sans prendre d'eau supplémentaire.
+
+La prise après un repas peut retarder l'apparition des effets.
+
+Un surdosage peut gravement endommager le foie.
+
+Groupes de patients particuliers
+
+Patients pédiatriques: Le dosage quotidien maximal ne doit pas excéder 75 mg/kg de poids corporel. L'intervalle minimal entre les prises du médicament est de 6 à 8 heures.
+
+Patients âgés: Normalement, aucune adaptation posologique n'est requise pour les patients âgés (cf. «Pharmacocinétique: Cinétique pour certains groupes de patients»). Toutefois, il convient de tenir compte simultanément des facteurs de risque existants qui surviennent parfois chez les patients âgés et exigent une adaptation posologique.
+
+Troubles de la fonction hépatique: Chez les patients ayant une maladie hépatique chronique ou compensée active, en particulier une insuffisance hépatocellulaire légère à modérée, alcoolisme chronique, déficit d'alimentation chronique (faibles réserves de glutathion hépatique) ou déshydratation, ainsi que chez les patients adultes souffrant de cachexie, la dose doit être réduite ou l'intervalle entre les doses étendu. La dose quotidienne ne doit pas dépasser 2 g (cf. aussi «Contre-indications» et «Mises en garde et précautions»).
+
+Dafalgan est contre-indiqué chez les patients présentant une insuffisance hépatique sévère (cf. «Contre-indications»).
+
+Troubles de la fonction rénale: Chez les patients atteints de troubles de la fonction rénale, l'intervalle minimal entre les prises doit être adapté et la dose journalière maximale doit être réduite conformément au tableau suivant.
+
+|  |  |  |
+| --- | --- | --- |
+| Clairance de la créatinine | Intervalle posologique | Dose journalière maximale |
+| cl 10-50 ml/min | 6 heures | 3000 mg/jour |
+| cl <10 ml/min | 8 heures | 2000 mg/jour |
+
+ 
+
+Contre-indications
+
+·Hypersensibilité au paracétamol et aux substances apparentées (p.ex. propacétamol) ou à un des excipients selon la composition (cf. «Composition»).
+
+·Troubles graves de la fonction hépatique (cirrhose hépatique et ascite)/hépatite aiguë ou maladie hépatique décompensée active.
+
+·Hyperbilirubinémie constitutionnelle héréditaire (maladie de Gilbert).
+
+Mises en garde et précautions
+
+Dans les cas suivants, une consultation médicale est requise avant le début du traitement:
+
+·insuffisance rénale (clairance de la créatinine <50 ml/ml), (voir rubrique «Posologie/Mode d'emploi»);
+
+·insuffisance hépatique légère à modérée, (voir rubrique «Posologie/Mode d'emploi»);
+
+·déficit en glucose-6-phosphate déshydrogénase (peut entraîner une anémie hémolytique);
+
+·prise concomitante de médicaments potentiellement hépatotoxiques ou d'inducteurs des enzymes hépatiques;
+
+·anorexie, boulimie, cachexie, malnutrition chronique, carence alimentaire, septicémie (faibles réserves de glutathion hépatique), (voir rubrique «Posologie/Mode d'emploi»);
+
+·déshydratation, hypovolémie.
+
+Les dosages dépassant la posologie recommandée présentent le risque d'endommager très gravement le foie. Les symptômes cliniques d'une lésion hépatique surviennent généralement 1 à 2 jours après le surdosage de paracétamol. Une lésion hépatique maximale s'observe généralement après 3 à 4 jours. Le traitement avec un antidote doit débuter dès que possible (cf. «Surdosage»).
+
+Des cas d'acidose métabolique à trou anionique augmenté (AMTAA) due à une acidose à l'acide pyroglutamique (5-oxoproline) ont été rapportés chez des patients atteints de maladies graves, telles qu'une insuffisance rénale sévère et un sepsis, ou chez des patients souffrant de malnutrition ou d'autres causes de déficit en glutathion (par exemple, l'alcoolisme chronique) ayant été traités par une dose thérapeutique de paracétamol pendant une période prolongée ou par une association de paracétamol et de flucloxacilline.
+
+En cas de suspicion d'AMTAA due à une acidose à l'acide pyroglutamique, l'arrêt immédiat du paracétamol et une surveillance étroite sont recommandés. Le dosage de l'acide pyroglutamique (5-oxoproline) dans les urines peut être utile pour identifier l'acidose à l'acide pyroglutamique comme cause sous-jacente d'AMTAA chez les patients présentant de multiples facteurs de risque.
+
+Si la flucloxacilline est utilisée après l'arrêt du paracétamol, il est conseillé de s'assurer qu'il n'y a pas de signes d'acidose métabolique avec augmentation du trou anionique, car il est possible que la flucloxacilline maintienne le tableau clinique d'acidose métabolique avec augmentation du trou anionique (voir chapitre «Interactions»).
+
+Le paracétamol peut entraîner des réactions cutanées graves comme une pustulose exanthématique aiguë généralisée (PEAG), un syndrome de Stevens-Johnson (SJS) et une nécrolyse épidermique toxique (NET), qui peuvent entraîner le décès. Les patients doivent être informés des symptômes des réactions cutanées graves, et l'utilisation du médicament doit être interrompue dès la première apparition de réactions cutanées ou d'autres signes d'hypersensibilité.
+
+Il est déconseillé de consommer de l'alcool au cours du traitement. L'alcool peut accroître la toxicité hépatique du paracétamol, en particulier lors de carence alimentaire simultanée ou de la malnutrition. Dans de tels cas, une dose thérapeutique de paracétamol peut déjà conduire à des lésions hépatiques.
+
+Le patient doit être mis en garde contre l'absorption régulière et prolongée d'analgésiques sans prescription médicale. En cas de douleurs persistantes, il devra consulter un médecin.
+
+Il faut signaler aux parents d'enfants qu'il ne faut pas prendre des analgésiques de manière prolongée sans prescription médicale et que si l'enfant présente une forte fièvre ou une détérioration de son état de santé, il est nécessaire de consulter rapidement un médecin.
+
+Lorsque des analgésiques sont utilisés pendant une période prolongée (> 3 mois) chez des patients souffrant de céphalées chroniques et que l'utilisation a lieu tous les deux jours ou plus, des céphalées peuvent apparaître ou des céphalées déjà existantes peuvent s'aggraver. Les céphalées provoquées par une utilisation excessive d'analgésiques ne doivent pas être traitées par une augmentation de la dose. Dans de tels cas, la prise d'analgésiques doit être arrêtée en concertation avec le médecin.
+
+L'absorption prolongée d'analgésiques, surtout en cas de prise concomitante de plusieurs principes actifs analgésiques, peut entraîner une lésion rénale irréversible avec risque d'une insuffisance rénale terminale (néphropathie due aux analgésiques).
+
+Chez les patients présentant un statut de déplétion en glutathion, p.ex. en cas de septicémie, l'administration du paracétamol peux renforcer le risque d'une acidose métabolique.
+
+Sodium: Ce médicament contient moins de 1 mmol (23 mg) de sodium par sachet, c'est-à-dire qu'il est essentiellement «sans sodium».
+
+Benzoate de sodium: Dafalgan Direct Granulés contient du benzoate.
+
+Anhydride sulfureux: Dafalgan Direct Granulés 500 mg, arôme pamplemousse, contient de l'anhydride sulfureux. L'anhydride sulfureux peut, dans de rares cas, provoquer des réactions d'hypersensibilité sévères et des bronchospasmes
+
+Alcool benzylique: Dafalgan Direct Granulés contient de l'alcool benzylique. L'alcool benzylique peut provoquer des réactions allergiques. L'alcool benzylique a été associé à un risque d'effets indésirables graves, y compris des problèmes respiratoires (syndrome de Gasping), chez les jeunes enfants. Il existe un risque accru chez les jeunes enfants en raison de l'accumulation.
+
+Pendant la grossesse ou l'allaitement, de grandes quantités d'alcool benzylique peuvent s'accumuler dans l'organisme et provoquer des effets secondaires (acidose métabolique).
+
+En raison du risque d'accumulation et de toxicité (acidose métabolique), les grandes quantités ne doivent être utilisées qu'avec prudence et en cas de nécessité absolue, en particulier chez les personnes dont la fonction hépatique ou rénale est réduite.
+
+Sorbitol: Dafalgan Direct Granulés 500 mg, arôme pamplemousse, contient 0,33 mg de sorbitol par sachet. Il faut tenir compte de l'effet additif des médicaments contenant du sorbitol (ou du fructose) utilisés simultanément et de la prise de sorbitol (ou de fructose) par voie alimentaire. La teneur en sorbitol des médicaments administrés par voie orale peut affecter la biodisponibilité d'autres médicaments administrés simultanément par voie orale.
+
+Interactions
+
+Les médicaments inducteurs d'enzymes comme le phénobarbital, la carbamazépine, l'hydrazide de l'acide isonicotinique (isoniazide, HIN) et la rifampicine aggravent l'hépatotoxicité du paracétamol. Faire preuve de prudence en cas d'administration concomitante de paracétamol.
+
+Phénytoïne: la prise concomitante peut réduire l'efficacité du paracétamol et, par une augmentation des métabolites toxiques du paracétamol, augmenter le risque d'hépatotoxicité. Les patients traités par phénytoïne doivent éviter une prise excessive et/ou chronique de paracétamol. Les patients doivent être surveillés pour déceler d'éventuels signes d'hépatotoxicité.
+
+Alcool: voir rubrique «Mises en garde et précautions».
+
+Les agents qui ralentissent l'évacuation gastrique (p.ex. propanthéline) diminuent la vitesse de résorption.
+
+Les agents qui accélèrent l'évacuation gastrique (p.ex. métoclopramide) augmentent la vitesse de résorption.
+
+Chloramphénicol: le paracétamol multiplie par cinq la demi-vie d'élimination du chloramphénicol.
+
+Salicylamide: le salicylamide prolonge la demi-vie d'élimination du paracétamol et multiplie la production de métabolites hépatotoxiques.
+
+Chlorzoxazone: l'administration simultanée de paracétamol et de chlorzoxazone augmente l'hépatotoxicité des deux substances.
+
+Zidovudine: le risque d'une neutropénie se trouve renforcé par une administration simultanée de la zidovudine et du paracétamol.
+
+Le probénécide inhibe la conjugaison du paracétamol à l'acide glucuronique, ce qui réduit environ de moitié la clairance du paracétamol. En cas de prise concomitante, la dose de paracétamol doit être réduite.
+
+La cholestyramine réduit l'absorption du paracétamol.
+
+Anticoagulants: l'effet anticoagulant de la warfarine et d'autres coumarines peut être renforcé en cas d'absorption quotidienne prolongée de paracétamol, ce qui augmente le risque d'hémorragies. Il faut surveiller de près l'INR (international normalized ratio) en cas de prise concomitante, et 1 semaine après la fin du traitement par paracétamol. Des prises occasionnelles n'ont pas d'effet significatif. Il n'existe pas de données concernant l'interaction entre le paracétamol et les nouveaux anticoagulants oraux (dabigatran, rivaroxaban, apixaban).
+
+Flucloxacilline: La prudence est de mise lorsque le paracétamol est utilisé concomitamment avec la flucloxacilline, car l'utilisation concomitante a été associée à une acidose métabolique à trou anionique augmenté, due à une acidose à l'acide pyroglutamique (5-oxoproline), en particulier chez les patients présentant des facteurs de risque (voir rubrique «Mises en garde et précautions»).
+
+Interactions avec les examens paramédicaux
+
+Le paracétamol peut fausser les valeurs d'uricémie obtenues par la méthode à l'acide phosphotungstique.
+
+Grossesse, allaitement
+
+Grossesse
+
+Les études épidémiologiques sur le développement neurologique des enfants exposés au paracétamol in utero ne présentent pas de résultats clairs. Le risque de lésions fonctionnelles et organiques, de malformations et de troubles de l'adaptation lorsque du paracétamol est pris pendant la grossesse à une posologie correcte est actuellement considéré comme faible. Il n'existe pas d'études contrôlées chez les femmes enceintes. Les études menées chez les animaux n'ont montré aucune toxicité sur la reproduction (voir «Données précliniques»).
+
+En cas de nécessité clinique, le paracétamol peut être pris ou utilisé pendant la grossesse. Toutefois, il convient de prendre ou d'utiliser la dose efficace la plus faible pendant la durée la plus courte possible et à la fréquence la plus basse possible.
+
+Allaitement
+
+Le paracétamol passe dans le lait maternel. La concentration dans le lait maternel est similaire à la concentration momentanée dans le plasma de la mère. Des cas de rashs cutanés chez les nourrissons allaités ont été rapportés. Des conséquences préjudiciables durables pour le nourrisson ne sont pas connues. Bien que l'utilisation du paracétamol soit considérée comme compatible avec l'allaitement, la prudence est de mise lors de l'utilisation du Dafalgan pendant l'allaitement.
+
+Fertilité
+
+Aucune donnée clinique sur la fertilité n'est disponible. Dans les études menées sur le paracétamol chez l'animal, un effet sur la fertilité a été observé (voir «Données précliniques»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Des expériences à long terme montrent que le principe actif, à la posologie recommandée, n'a aucune influence négative sur les capacités de réactions.
+
+Effets indésirables
+
+Très fréquent (≥1/10), fréquent (≥1/100, <1/10), occasionnel (≥1/1'000, <1/100), peu fréquent (≥1/10'000, <1/1'000), très rare (<1/10'000), fréquence inconnue (ne peut être estimée à partir des données disponibles).
+
+Affections du sang et du système lymphatique
+
+Rares: thrombocytopénie, neutropénie, leucopénie, agranulocytose, pancytopénie, anémie hémolytique (en particulier chez les patients présentant une carence en G-6-PD).
+
+Affections du système immunitaire
+
+Rares: réaction anaphylactique (hypotension incluse), choc anaphylactique, réaction d'hypersensibilité, angio-œdème.
+
+Peu de patients (5-10%) souffrant d'asthme induit par l'acide acétylsalicylique ou d'autres manifestations d'intolérance à l'acide acétylsalicylique pourraient réagir de manière similaire au paracétamol (asthme dû aux analgésiques).
+
+Affections respiratoires, thoraciques et médiastinales
+
+Bronchospasme.
+
+Troubles du métabolisme et de la nutrition
+
+Fréquence inconnue: Acidose métabolique à trou anionique augmenté (AMTAA).
+
+Des cas d'acidose métabolique à trou anionique augmenté dus à une acidose pyroglutamique (5-oxoproline) ont été observés chez des patients présentant des facteurs de risque et prenant du paracétamol (voir rubrique « Mises en garde et précautions »). Une acidose pyroglutamique peut survenir chez ces patients en raison d'un faible taux de glutathion.
+
+Affections gastro-intestinales
+
+Fréquents: vomissements.
+
+Fréquence inconnue: diarrhée, douleurs abdominales.
+
+Affections hépatobiliaires
+
+Voir rubriques «Mises en garde et précautions» et «Surdosage».
+
+Fréquence inconnue: augmentation des enzymes hépatiques, cholestase, ictère.
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: urticaire, érythème, éruption cutanée.
+
+Très rares: Pustulose exanthématique aiguë généralisée (PEAG), nécrolyse épidermique toxique (NET, syndrome de Lyell), syndrome de Stevens-Johnson (SJS).
+
+Fréquence inconnue: purpura, bouffées vasomotrices, prurit, exanthème médicamenteux fixe.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Une prise en charge médicale est nécessaire en cas de surdosage, même en l'absence de symptômes.
+
+Après la prise orale de 7,5 à 10 g de paracétamol chez les adultes et de 140 à 200 mg/kg de poids corporel chez l'enfant (même à doses plus faibles déjà chez les patients prédisposés, p.ex. ceux avec une consommation excessive d'alcool ou une réserve de glutathion déficitaire en cas de carence nutritionnelle), apparaissent des signes d'intoxication aiguë des cellules hépatiques et du tubule rénal sous forme de nécroses cellulaires mettant la vie en danger. Ces nécroses peuvent entraîner une insuffisance hépatocellulaire, une acidose métabolique (qui peut dans certains cas provenir de l'acide lactique ou de l'acide pyroglutamique) et une encéphalopathie, qui peuvent entraîner le coma et le décès.
+
+Des concentrations plasmatiques de >200 µg/ml après 4 h, de >100 µg/ml après 8 h, de >50 µg/ml après 12 h et de >30 µg/ml après 15 h provoquent des lésions hépatiques à issue fatale par coma hépatique. L'hépatotoxicité est directement dépendante de la concentration dans le plasma.
+
+Les premiers signes de symptômes cliniques d'une lésion hépatique surviennent généralement après 1 à 2 jours, atteignant leur maximum en 3 à 4 jours.
+
+Symptômes
+
+1ère phase (= 1er jour): nausées, vomissements, douleurs abdominales, inappétence, sentiment général de malaise, pâleur, mal-être, hypersudation (transpiration).
+
+2ème phase (= 2ème jour): amélioration subjective, hypertrophie hépatique, taux de transaminases élevés (AST, ALT), augmentation du taux de bilirubine, temps de thromboplastine prolongé, augmentation de la lactate déshydrogénase.
+
+3ème phase (= 3ème jour): taux de transaminases fortement élevés (AST, ALT), ictère, hypoglycémie, coma hépatique.
+
+Les événements suivants ont été observés à la suite d'un surdosage de paracétamol:
+
+·Nécrose hépatique
+
+·Insuffisance rénale aiguë,
+
+·Coagulation intravasculaire disséminée,
+
+·Rares cas de pancréatite aiguë
+
+Traitement
+
+La simple suspicion d'intoxication au paracétamol justifie un traitement immédiat qui englobera les mesures suivantes:
+
+Lavage gastrique (seulement judicieux dans les premières 1 à 2 heures suivant l'intoxication), puis administration du charbon actif. Administration orale de N-acétylcystéine ou de méthionine. Lorsque l'administration orale de l'antidote n'est pas possible ou qu'elle n'est pas aisée (p.ex. en cas de vomissements violents, troubles de la conscience), celui-ci peut être administré par voie intraveineuse, si possible en l'espace de 8 heures. La N-acétylcystéine peut encore apporter une certaine protection après 16 heures.
+
+Mesurer la concentration du paracétamol dans le plasma (pas avant 4 h après la prise).
+
+Les tests hépatiques doivent être réalisés au début du traitement et répétés toutes les 24 h. Dans la plupart des cas, les transaminases hépatiques se normalisent en 1 à 2 semaines, la fonction hépatique étant entièrement rétablie. Toutefois, dans les cas très graves, une transplantation hépatique peut être nécessaire.
+
+L'hémodialyse ou la dialyse péritonéale ne présentent pas d'utilité significative pour l'élimination du paracétamol.
+
+Vous pouvez demander des informations détaillées concernant le traitement auprès du Centre suisse d'information toxicologique (CITS).
+
+Propriétés/Effets
+
+Code ATC N02BE01
+
+Mécanisme d'action
+
+Le paracétamol est un analgésique et un antipyrétique à action centrale et périphérique. Le mécanisme d'action n'est pas entièrement clair.
+
+Pour l'effet analgésique, il a été établi que l'inhibition de la synthèse des prostaglandines est plus forte au niveau central que périphérique.
+
+L'effet antipyrétique se base sur une inhibition de l'effet de pyrogènes endogènes sur le centre thermorégulateur dans l'hypothalamus.
+
+Le paracétamol n'a pas d'effet antiphlogistique marqué et n'influe ni sur l'hémostase, ni sur la muqueuse gastrique.
+
+Deux études cliniques montrent que l'effet antalgique de Dafalgan comprimés effervescents se fait plus rapidement que l'effet des comprimés de paracétamol: le délai moyen jusqu'à la perception de l'effet est de 20 min au lieu de 45 min. De plus, l'effet est supérieur durant 30 à 45 min après la prise.
+
+Pharmacodynamique
+
+Aucune donnée.
+
+Efficacité clinique
+
+Aucune donnée.
+
+Pharmacocinétique
+
+Absorption
+
+Elle est rapide (10 à 60 minutes après la prise) et presque complète après administration orale et dépend de la dose.
+
+Le taux d'absorption présente une corrélation directe avec la rapidité de la vidange gastrique. L'ingestion simultanée de nourriture ralentit la résorption.
+
+Distribution
+
+La distribution du paracétamol est presque uniforme dans la plupart des tissus. Aux doses thérapeutiques, la liaison aux protéines plasmatiques est faible (5-13%) et peut atteindre 50% en cas de surdosage. Le volume de distribution est de l'ordre de 1 à 2 l/kg de poids corporel chez les adultes et de 0.7 à 1.0 l/kg de poids corporel chez les enfants.
+
+Métabolisme
+
+Le paracétamol est métabolisé dans le foie et soumis à deux voies de biotransformation principales: la conjugaison à l'acide glucuronique (60-80%) et celle à l'acide sulfurique (20-40%); cette dernière est rapidement saturée par des doses élevées, dans la gamme thérapeutique. Une saturation de la glucurono-conjugaison ne se produit qu'en cas d'absorption de doses supérieures, hépatotoxiques.
+
+Une petite partie (moins de 4%) est métabolisée par le cytochrome P450 en un intermédiaire réactif (N-acétyl benzoquinone imine) qui, sous dosage normal, est détoxifié par le glutathion réduit et excrété via l'urine, après conjugaison avec la cystéine et l'acétyl-cystéine (acide mercapturique). Cependant, après un surdosage massif, la quantité de métabolites toxiques augmente.
+
+Élimination
+
+Chez les adultes, environ 90% de la quantité absorbée est excrétée par voie rénale en 24 heures, principalement sous forme de glucuronide (environ 60%) et de conjugué sulfate (environ 30%). Moins de 5% est excrété par voie rénale sans avoir subi de modifications. La demi-vie plasmatique est d'environ 2,7 heures et la clairance totale est d'environ 18 litres/h. Le paracétamol ne passe pas dans la bile. Il passe la barrière placentaire et dans le lait maternel.
+
+Cinétique pour certains groupes de patients.
+
+Insuffisance hépatique: La durée de demi-vie plasmatique reste pratiquement inchangée chez les patients souffrant d'une insuffisance hépatique légère. Elle est toutefois nettement prolongée chez les patients souffrant d'une insuffisance hépatique grave.
+
+Des études cliniques avec le paracétamol oral, en raison de concentrations plasmatiques accrues de paracétamol et d'une demi-vie d'élimination prolongée chez les patients atteints de maladies hépatiques chroniques, notamment cirrhoses hépatiques d'origine alcoolique, ont mis en évidence un métabolisme modérément altéré du paracétamol. Toutefois, aucune accumulation significative de paracétamol n'a été observée. La demi-vie plasmatique accrue du paracétamol a été liée à une réduction de la capacité métabolique hépatique. Pour cette raison, le paracétamol doit être utilisé avec prudence chez les patients atteints de maladie hépatique, la dose quotidienne maximale doit être limitée à 2 g (voir rubrique «Posologie/Mode d'emploi»). Le paracétamol est contre-indiqué en cas de maladie hépatique active décompensée, notamment d'hépatite due à l'abus d'alcool (à cause de l'induction de CYP2E1, qui augmente la formation des métabolites hépatotoxiques du paracétamol).
+
+Insuffisance rénale: En cas d'insuffisance rénale grave (clairance de la créatinine de 10 à 30 ml/min), l'élimination du paracétamol est peu ralentie, la demi-vie d'élimination se situant entre 2 et 5,3 heures. La vitesse d'élimination des glucuronides et des conjugués sulfates est 3 fois plus faible chez les patients atteints d'insuffisance rénale grave que chez les sujets sains. Cependant, il n'est pas nécessaire d'adapter la posologie dans cette population, les glucuronides et conjugués sulfates n'étant pas toxiques. Il est toutefois recommandé de prolonger l'intervalle minimal entre les administrations conformément aux recommandations de dosage si le paracétamol est utilisé chez des patients atteints d'insuffisance rénale modérée à grave (clairance de la créatinine ≤50 ml/min) (cf. «Posologie/Mode d'emploi»).
+
+Chez les patients sous hémodialyse, la demi-vie peut être réduite de 40 à 50% après l'administration de doses thérapeutiques de paracétamol.
+
+Personnes âgées: La durée de demi-vie peut être prolongée et s'accompagner d'une diminution de la clairance du médicament. Aucune adaptation de posologie n'est normalement nécessaire pour ce groupe.
+
+Nouveau-nés, nourrissants et enfants: Les paramètres pharmacocinétiques observés chez les nourrissants et les enfants sont très similaires à ceux des adultes, hormis la demi-vie plasmatique qui est raccourcie (env. 2 heures) par rapport à celle des adultes. La demi-vie plasmatique du médicament chez les nouveau-nés est plus longue que celle chez les nourrissants (env. 3,5 heures). Les nouveau-nés, les nourrissants et les enfants jusqu'à 10 ans éliminent significativement moins de glucuronides et plus de conjugués sulfates que les adultes. La sécrétion totale de paracétamol et de ses métabolites reste inchangée à tout âge.
+
+Données précliniques
+
+Toxicité
+
+Les doses aiguës très élevées de paracétamol sont hépatotoxiques.
+
+Mutagénicité, carcinogénicité
+
+On a observé un potentiel génotoxique lors de divers essais. Il convient de relativiser ce fait, car cela dépend de la dose. Les mécanismes qui semblent provoquer ces effets suggèrent qu'une posologie au-dessous d'un certain seuil ne provoque pas d'effets génotoxiques; lorsque la réserve de glutathion est diminuée, le seuil pourrait être plus bas.
+
+Les seuils qui ont montré un effet génotoxique dans les essais chez l'animal se situent clairement dans la gamme posologique toxique qui provoque des lésions hépatiques et médullaires. De plus, les doses non hépatotoxiques (jusqu'à 300 mg/kg chez le rat et 1'000 mg/kg chez la souris) n'ont pas d'effets carcinogènes. Donc, on peut pratiquement exclure qu'une posologie thérapeutique aurait un effet génotoxique ou carcinogène.
+
+Toxicité sur la reproduction
+
+Il n'existe pas d'études conventionnelles utilisant les normes actuellement acceptées pour l'évaluation de la toxicité sur la reproduction et le développement. Cependant, les études menées sur le paracétamol chez l'animal n'ont montré aucun effet sur la reproduction et aucun effet tératogène.
+
+L'administration multiple de doses élevées (hépatotoxiques) de paracétamol a abouti à une atrophie testiculaire chez les souris et les rats. L'administration répétée à des rats mâle de doses très élevées de paracétamol (≥500 mg/kg) a entraîné une fertilité réduite (perte de la libido et de la performance sexuelle ainsi que de la motilité des spermatozoïdes).
+
+Remarques particulières
+
+Les médicaments contenant du paracétamol ne doivent pas être administrés aux enfants qui ont absorbé de l'alcool par mégarde.
+
+Influence sur les méthodes de diagnostic
+
+Le paracétamol peut induire des perturbations dans la mesure de la glycémie par la méthode dite à la glucose oxydase. Il peut également être responsable d'une élévation apparente de l'uricémie lorsqu'elle est dosée par la méthode de réduction du phosphotungstate.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques concernant le stockage
+
+Conserver à une température située entre 15 et 30°C.
+
+Conserver hors de portée des enfants.
+
+Numéro d’autorisation
+
+68622 (Swissmedic).
+
+Présentation
+
+Dafalgan Direct Granulés 250 mg arôme fraise 16 [D]
+
+Dafalgan Direct Granulés 500 mg arôme pamplemousse 16 [D] (indisponible à la vente actuellement)
+
+Dafalgan Direct Granulés 500 mg arôme baies rouges: 16 [D]
+
+Dafalgan Direct Granulés 1'000 mg arôme baies rouges: 16 [B]
+
+Titulaire de l’autorisation
+
+UPSA Switzerland AG, Zug.
+
+Mise à jour de l’information
+
+Septembre 2025

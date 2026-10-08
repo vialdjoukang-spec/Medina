@@ -1,0 +1,715 @@
+---
+titre: "Valganciclovir-Mepha Comprimés pelliculés"
+titulaire: "Mepha Pharma AG"
+atc: J05AB14
+substances: "n.d."
+autorisation_swissmedic: 65032
+date_version: 2023-08-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/965815a9020c4911836c5b58ade2cd51-fr.html
+---
+
+Valganciclovir-Mepha Comprimés pelliculés
+
+Mepha Pharma AG
+
+Composition
+
+Principe actifs
+
+Valganciclovir (sous forme de chlorhydrate de valganciclovir).
+
+Excipients
+
+Noyau du comprimé: cellulose microcristalline, mannitol, stéarate de magnésium, silice colloïdale anhydre, crospovidone.
+
+Enrobage: hypromellose, lactose monohydraté, dioxyde de titane (E171), triacétine, oxyde de fer rouge (E172).
+
+1 comprimé pelliculé contient: 6,7 mg de lactose monohydraté.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+1 comprimé pelliculé rose, ovale avec des coins biseautés contient 450 mg de valganciclovir sous forme de chlorhydrate de valganciclovir (496,3 mg).
+
+Le comprimé porte les mentions «93» et «5465».
+
+Indications/Possibilités d’emploi
+
+Valganciclovir-Mepha est indiqué pour le traitement d'induction d'une rétinite à CMV active chez les patients présentant un syndrome d'immunodéficience acquise (sida) et dont la vue semble être en danger.
+
+Chez les patients avec sida déclaré, Valganciclovir-Mepha peut être utilisé à titre de traitement d'entretien au terme d'un traitement d'induction ainsi que pour le traitement d'une rétinite à CMV inactive. La nécessité d'instaurer ou de poursuivre un traitement d'entretien doit être contrôlée à intervalles réguliers sous l'angle du bilan immunitaire général, du nombre de cellules CD4 ainsi que de la réponse du patient aux modifications de son traitement anti-VIH.
+
+Valganciclovir-Mepha est indiqué pour la prophylaxie d'une affection à CMV chez les patients ayant bénéficié d'une transplantation d'organe solide, qui présentent un risque accru de développer une telle maladie. Chez les patients ayant subi une transplantation hépatique, l'incidence de maladies à CMV s'est avérée plus élevée dans le groupe valganciclovir (900 mg une fois par jour) que dans le groupe ganciclovir (1 g par voie orale trois fois par jour). Les patients ayant bénéficié d'une transplantation pulmonaire n'ont pas été inclus dans les études cliniques sur valganciclovir.
+
+Posologie/Mode d’emploi
+
+Attention – Afin d'éviter tout surdosage, les recommandations posologiques doivent être strictement respectées. Afin de prévenir tout effet indésirable en relation avec un surdosage, il convient de veiller en particulier à réadapter la dose lors de toute diminution de la fonction rénale (en cas d'autres infections sévères, par exemple).
+
+La biodisponibilité du ganciclovir est notablement plus élevée avec les comprimés pelliculés de Valganciclovir-Mepha qu'avec les capsules de ganciclovir (Cymevene®); il n'est donc pas possible de substituer telles quelles les capsules de ganciclovir aux comprimés pelliculés de Valganciclovir-Mepha.
+
+Traitement d'induction de la rétinite à CMV
+
+Chez les patients avec rétinite à CMV active, la dose recommandée est de 900 mg de valganciclovir (deux comprimés pelliculés à 450 mg) deux fois par jour pendant 21 jours. Un traitement d'induction de plus longue durée peut accroître le risque de toxicité médullaire (voir «Mises en garde et précautions»).
+
+Traitement d'entretien de la rétinite à CMV
+
+Après traitement d'induction ainsi que chez les patients avec rétinite à CMV inactive, la dose recommandée est de 900 mg de valganciclovir une fois par jour (deux comprimés pelliculés à 450 mg). Chez les patients présentant une aggravation de leur rétinite, le traitement d'induction peut être renouvelé.
+
+La durée du traitement d'entretien doit être définie individuellement.
+
+À ce jour, la sécurité d'emploi et l'efficacité de valganciclovir dans le cadre du traitement de la rétinite à CMV n'ont pas été démontrées lors d'études cliniques adéquates et bien contrôlées réalisées chez des patients pédiatriques.
+
+Prophylaxie d'une affection à CMV chez les transplantés
+
+Chez les transplantés rénaux, la dose recommandée est de 900 mg (deux comprimés pelliculés à 450 mg) une fois par jour, l'administration étant commencée dans les 10 jours suivant la transplantation et étant poursuivie jusqu'au 200e jour après la transplantation.
+
+Chez les patients ayant subi une autre transplantation d'organe solide qu'un rein, la dose recommandée est de 900 mg de valganciclovir (deux comprimés pelliculés à 450 mg) une fois par jour, l'administration étant commencée dans les 10 jours suivant la transplantation et étant poursuivie jusqu'au 100e jour après la transplantation.
+
+Si possible, les comprimés pelliculés doivent être pris avec les repas.
+
+Posologie usuelle
+
+Valganciclovir-Mepha est administré par voie orale et doit être pris avec un repas (voir «Pharmacocinétique, Absorption» et «Cinétique pour certains groupes de patients»). Le valganciclovir est rapidement et totalement transformé en ganciclovir. La biodisponibilité du ganciclovir de Valganciclovir-Mepha étant jusqu'à 10 fois plus élevée que celle des capsules de ganciclovir (Cymevene®), la posologie décrite ci-dessous ainsi que les modalités d'administration des comprimés pelliculés de Valganciclovir-Mepha doivent être strictement respectées (voir «Mises en garde et précautions» et «Surdosage»).
+
+Instructions posologiques particulières
+
+Patients présentant des troubles de la fonction hépatique
+
+La sécurité et l'efficacité de Valganviclovir-Mepha n'ont pas été étudiées chez les patients présentant une insuffisance hépatique (voir «Pharmacocinétique», «Cinétique pour certains groupes de patients» et «Troubles de la fonction hépatique»).
+
+Patients présentant des troubles de la fonction rénale
+
+Le taux sérique de créatinine ou la clairance estimée de la créatinine doivent être étroitement surveillés. La dose doit être adaptée à la clairance de la créatinine, conformément au tableau ci-après (voir «Mises en garde et précautions» et «Pharmacocinétique»).
+
+Une valeur approximative de la clairance de la créatinine peut être obtenue sur la base de la créatinine sérique à l'aide de la formule suivante:
+
+Chez l'homme = (140 – âge [années]) × (poids corporel [kg]): (72) × (0,011× créatinine sérique [µmol/l]).
+
+Chez la femme = 0,85× valeur calculée sur la base de la formule chez l'homme.
+
+Tableau 1: Valganciclovir-Mepha, comprimés pelliculés, posologie en cas d'insuffisance rénale
+
+|  |  |  |
+| --- | --- | --- |
+| ClCr (ml/min) | Dose d'induction de valganciclovir | Dose d'entretien/Dose prophylactique de valganciclovir |
+| ≥60 | 900 mg (2 comprimés pelliculés) deux fois par jour | 900 mg (2 comprimés pelliculés) une fois par jour |
+| 40 – 59 | 450 mg (1 comprimé pelliculé) deux fois par jour | 450 mg (1 comprimé pelliculé) une fois par jour |
+| 25 – 39 | 450 mg (1 comprimé pelliculé) une fois par jour | 450 mg (1 comprimé pelliculé) tous les 2 jours |
+| 10 – 24 | 450 mg (1 comprimé pelliculé) tous les 2 jours | 450 mg (1 comprimé pelliculé) deux fois par semaine |
+
+ 
+
+Patients dialysés
+
+Pour les patients sous dialyse (ClCr < 10 ml/min), il n'est pas possible de recommander une posologie. De ce fait, Valganciclovir-Mepha ne devra pas être utilisé chez ces patients (voir «Mises en garde et précautions»).
+
+Patients âgés
+
+La tolérance et l'efficacité n'ont pas été étudiées chez cette population de patients.
+
+Aucune étude n'a été réalisée chez des adultes âgés de plus de 65 ans. En raison de la diminution de la clairance rénale avec l'âge, l'état de la fonction rénale doit notamment être pris en compte lors de l'administration de Valganciclovir-Mepha à des patients âgés (voir tableau 1 et «Pharmacocinétique, Cinétique pour certains groupes de patients, Patients âgés»).
+
+Enfants et adolescents
+
+La tolérance et l'efficacité n'ont pas été démontrées chez les patients pédiatriques. L'administration de Valganciclovir-Mepha chezles patients pédiatriques n'est pas recommandée, étant donné que les propriétés pharmacocinétiques de ce produit n'ont pas été étudiées chez cette population de patients (voir «Mises en garde et précautions»).
+
+Mode d'administration
+
+Valganciclovir-Mepha est administré par voie orale et doit, dans la mesure du possible, être pris avec les repas (voir «Pharmacocinétique, Absorption»).
+
+Les comprimés pelliculés ne doivent être ni cassés ni écrasés. Etant donné que Valganciclovir-Mepha est potentiellement tératogène et cancérogène chez l'homme, la prudence est de rigueur lors de la manipulation de comprimés pelliculés (voir «Mises en garde et précautions»). Eviter tout contact direct de la peau et des muqueuses avec des comprimés pelliculés cassés ou écrasés et toute inhalation de résidus en poudre. Si un tel contact vient à se produire, laver soigneusement la zone concernée à l'eau et au savon; en cas de contact oculaire, rincer soigneusement à l'eau claire.
+
+La durée du traitement est fonction de l'indication (voir «Posologie/Mode d'emploi»).
+
+Contre-indications
+
+Valganciclovir-Mepha est contre-indiqué chez les patients présentant une hypersensibilité connue au valganciclovir, au ganciclovir ou à l'un des excipients conformément à la composition.
+
+Valganciclovir-Mepha est contre-indiqué pendant la grossesse, l'allaitement ainsi que chez l'homme désireux de concevoir un enfant (voir «Grossesse/Allaitement»).
+
+Mises en garde et précautions
+
+Allergie croisée
+
+La structure chimique du ganciclovir étant proche de celle de l'aciclovir et du penciclovir, une allergie croisée peut se produire avec ces médicaments.
+
+Par conséquent, la prudence est recommandée lorsque Valganciclovir-Mepha est prescrit à des patients présentant une hypersensibilité connue à l'aciclovir ou au penciclovir (ou à leurs promédicaments, le valaciclovir ou le famciclovir).
+
+Mutagénicité, tératogénicité, carcinogénicité, fertilité et contraception
+
+Au cours de l'expérimentation animale, le ganciclovir s'est avéré mutagène, tératogène, et cancérogène, et il a altéré la fertilité. Valganciclovir-Mepha doit de ce fait être considéré comme une substance potentiellement tératogène et cancérogène chez l'être humain, de nature à provoquer des malformations à la naissance et des affections cancéreuses. Avant d'instaurer un traitement par le valganciclovir, les patients doivent être informés des risques potentiels pour l'enfant à naître et de la nécessité d'utiliser au moins une méthode de contraception fiable, ou même deux de préférence. Des essais cliniques et non-cliniques ont montré que Valganciclovir est susceptible d'entraîner une inhibition transitoire ou permanente de la spermatogenèse (voir «Grossesse/Allaitement», «Effets indésirables» et «Données précliniques»).
+
+Les femmes en âge de procréer doivent être informées de la nécessité d'adopter des mesures de contraception efficaces pendant le traitement et pendant 30 jours au moins après son arrêt. Il est recommandé aux hommes sexuellement actifs d'utiliser une contraception à effet barrière pendant toute la durée du traitement par Valganciclovir-Mepha ainsi que pendant 90 jours au moins après la fin du traitement, sauf si le risque de grossesse est exclu chez leur partenaire (voir «Données précliniques»).
+
+Myélosuppression
+
+Valganciclovir doit être utilisé avec prudence chez des patients atteints de cytopénie hématologique préexistante ou présentant des antécédents de cytopénie hématologique liée à d'autres substances, ainsi que chez des patients sous radiothérapie.
+
+Leucopénie, neutropénie, anémie, thrombopénie, pancytopénie, insuffisance médullaire et anémie aplasique sévères ont été observées chez des patients traités par le valganciclovir (et par le ganciclovir). Le traitement ne doit donc pas être instauré lorsque le nombre absolu de neutrophiles est inférieur à 500 cellules/µl, le nombre de thrombocytes inférieur à 25'000/µl ou le taux d'hémoglobine inférieur à 8 g/dl (voir «Posologie/Mode d'emploi» et «Effets indésirables»).
+
+Pendant le traitement, il est recommandé de surveiller chez tous les patients la numération/formule sanguine ainsi que le nombre de thrombocytes, notamment chez les patients présentant une insuffisance rénale (voir «Anomalies biologiques»). En raison de la fréquence de la leucopénie, il est recommandé d'effectuer un contrôle de la numération des leucocytes tous les deux jours pendant les 14 premiers jours du traitement. Chez les patients ayant développé une leucopénie lors d'un traitement précédent par le valganciclovir/ganciclovir, ou chez les patients avec une numération leucocytaire inférieure à 2000/mm³ avant le traitement, la numération/formule sanguine doit être contrôlée quotidiennement. Chez les patients avec leucopénie, neutropénie, anémie et/ou thrombopénie sévères, il est recommandé d'instaurer un traitement par des facteurs de croissance hématopoïétiques et/ou d'interrompre le traitement (voir «Effets indésirables»).
+
+Chez les patients présentant une insuffisance rénale, un ajustement posologique est nécessaire en fonction de la clairance de la créatinine (voir «Posologie/Mode d'emploi» et «Cinétique pour certains groupes de patients»). Pour les patients sous dialyse (ClCr <10 ml/min) il n'est pas possible de recommander une posologie. De ce fait, Valganciclovir-Mepha ne devra pas être utilisé chez ces patients (voir «Posologie/Mode d'emploi» et «Cinétique pour certains groupes de patients»).
+
+Co-administration avec d'autres médicaments
+
+Des crises convulsives ont été observées chez des patients prenant l'association imipénem-cilastatine et le ganciclovir. Aussi Valganciclovir-Mepha ne doit-il être administré en même temps que l'association imipénem-cilastatine que si le bénéfice potentiel l'emporte sur les risques encourus (voir «Interactions»).
+
+Tant la zidovudine que Valganciclovir-Mepha peuvent entraîner une neutropénie et une anémie. Certains patients ne tolèrent pas l'administration simultanée de ces deux médicaments à pleine posologie (voir «Interactions»).
+
+Etant donné que les concentrations plasmatiques de didanosine peuvent augmenter sous traitement concomitant par Valganciclovir-Mepha, l'apparition éventuelle d'effets toxiques de la didanosine doit être étroitement surveillée (voir «Interactions»).
+
+Un traitement simultané par Valganciclovir-Mepha et des médicaments connus pour leur effet myélosuppressif ou néphrotoxique peut entraîner un renforcement des effets toxiques (voir «Interactions»).
+
+Valganciclovir-Mepha n'est pas recommandé chez les patients pédiatriques (voir «Posologie/Mode d'emploi»).
+
+La biodisponibilité du ganciclovir présent dans valganciclovir est jusqu'à 10 fois plus élevée que celle des capsules de ganciclovir (Cymevene®). Il n'est donc pas possible de substituer tels quels les comprimés pelliculés de valganciclovir aux capsules de ganciclovir. Les patients passant des capsules de ganciclovir à Valganciclovir-Mepha doivent être informés qu'il existe un risque de surdosage s'ils prennent un dosage de Valganciclovir-Mepha supérieur à celui qui leur a été prescrit (voir «Posologie/Mode d'emploi» et «Surdosage»).
+
+Aucun patient ayant bénéficié d'une transplantation pulmonaire n'a été inclus dans l'étude clinique contrôlée sur le valganciclovir utilisé dans la prophylaxie des maladies à CMV après une transplantation d'organe (voir «Propriétés/Effets, Efficacité clinique»). Les données disponibles chez ce groupe de patients sont par conséquent limitées.
+
+Crises convulsives, sédation, vertiges, ataxie et/ou confusion mentale ont été rapportés lors de l'utilisation de Valganciclovir-Mepha et/ou du ganciclovir.
+
+Excipients
+
+Valganciclovir-Mepha contient du lactose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne devraient pas prendre ce médicament.
+
+Interactions
+
+Imipénem-cilastatine
+
+Chez des patients ayant pris simultanément l'association imipénem-cilastatine et du ganciclovir, des crises convulsives ont été signalées et une interaction pharmacodynamique entre ces deux substances semble possible. Ces médicaments ne doivent donc être administrés conjointement que lorsque le bénéfice potentiel l'emporte sur les risques encourus (voir «Mises en garde et précautions»).
+
+Interactions médicamenteuses potentielles
+
+Des effets toxiques peuvent être renforcés lorsque le ganciclovir/valganciclovir est administré simultanément à d'autres médicaments connus pour leur action myélosuppressive ou altérant la fonction rénale. Parmi ceux-ci se trouvent des analogues nucléosidiques (par ex. zidovudine, didanosine, stavudine), des immunosuppresseurs (par ex. ciclosporine, tacrolimus, mycophénolate mofétil), des substances antinéoplasiques (par ex. doxorubicine, vinblastine, vincristine, hydroxyurée) et des agents anti-infectieux (triméthoprime/sulfamides, dapsone, amphotéricine B, flucytosine, pentamidine), ainsi que les interférons pégylés/la ribavirine.
+
+Étant donné que le ganciclovir est éliminé par voie rénale (voir «Pharmacocinétique»), la toxicité peut également être renforcée lorsque Valganciclovir-Mepha est administré en même temps que des médicaments susceptibles de diminuer la clairance rénale du ganciclovir et, de ce fait, d'augmenter la concentration de cette substance dans l'organisme. La clairance rénale du ganciclovir est susceptible d'être inhibée par deux mécanismes: (a) par la néphrotoxicité due à des substances actives telles que le cidofovir ou le foscarnet et (b) par l'inhibition compétitive au niveau de la sécrétion tubulaire rénale active, due par exemple à d'autres analogues nucléosidiques.
+
+Ces médicaments ne doivent donc être utilisés en même temps que le ganciclovir que lorsque le bénéfice possible l'emporte sur les risques potentiels encourus (voir «Mises en garde et précautions»).
+
+Zidovudine
+
+La zidovudine et le ganciclovir sont susceptibles d'entraîner une neutropénie et une anémie. En cas d'administration simultanée une interaction pharmacodynamique peut se produire. Il est donc possible que certains patients ne supportent éventuellement pas un traitement concomitant par ces deux médicaments administrés à pleine posologie (voir «Mises en garde et précautions»).
+
+Didanosine
+
+En ce qui concerne les concentrations plasmatiques de la didanosine, une augmentation de l'AUC de 38 à 67% a été observée lors de l'administration de ganciclovir intraveineux aux doses de 5 et 10 mg/kg/jour. Ces résultats confirment une interaction pharmacocinétique en cas d'administration concomitante de ces substances. Aucun effet significatif n'a été observé sur les concentrations de ganciclovir. Les patients doivent faire l'objet d'une étroite surveillance quant à l'apparition d'effets toxiques de la didanosine (par ex. pancréatite) (voir «Mises en garde et précautions»).
+
+Probénécide
+
+L'administration simultanée de probénécide et de ganciclovir oral a entraîné une diminution statistiquement significative de la clairance rénale du ganciclovir (20%), laquelle s'est traduite par une exposition au médicament significativement plus élevée sur le plan statistique (40%). Ces modifications ont correspondu à une interaction résultant d'un processus de compétition au niveau de l'excrétion tubulaire rénale. Les patients prenant simultanément du valganciclovir et du probénécide doivent donc être étroitement surveillés quant à la survenue d'effets toxiques du ganciclovir.
+
+Interactions pharmacocinétiques et pharmacodynamiques
+
+Interactions médicamenteuses avec Valganciclovir-Mepha
+
+Valganciclovir est le promédicament du ganciclovir. Il faut donc s'attendre aux mêmes interactions médicamenteuses que celles observées avec le ganciclovir.
+
+Grossesse, allaitement
+
+Grossesse
+
+La sécurité d'emploi de Valganciclovir-Mepha chez la femme enceinte n'a pas été étudiée systématiquement. Chez l'être humain, le ganciclovir, métabolite actif de Valganciclovir-Mepha, traverse facilement la barrière placentaire. Compte tenu de son mécanisme d'action pharmacologique, ainsi que de la toxicité sur la reproduction et de la tératogénicité observées dans les études chez l'animal réalisées avec le ganciclovir (voir «Données précliniques»), il existe un risque de tératogénicité chez l'être humain.
+
+Valganciclovir-Mepha ne doit pas être utilisé durant la grossesse (voir «Contre-indications»).
+
+Allaitement
+
+On ignore si le ganciclovir passe dans le lait maternel chez l'être humain. Des données issues de l'expérimentation animale indiquent que le ganciclovir est excrété dans le lait de rates allaitantes. Il est donc probable que le ganciclovir passe dans le lait maternel et provoque éventuellement des effets indésirables graves chez le nourrisson allaité. Il convient par conséquent de décider avant le début du traitement par Valganciclovir-Mepha s'il faut arrêter d'allaiter ou si Valganciclovir-Mepha ne doit pas être utilisé pendant la période d'allaitement (voir «Contre-indications»).
+
+Fertilité
+
+On a observé dans le cadre de l'expérimentation animale que le ganciclovir affecte la fertilité masculine et féminine (voir «Données précliniques»). Une étude clinique a comparé un groupe de patients greffés rénaux ayant reçu valganciclovir pendant une période allant jusqu'à 200 jours en guise de prévention du CMV versus un groupe de patients contrôles non-traités. La spermatogenèse a été inhibée sous valganciclovir. Lors des contrôles à environ six mois de l'arrêt du traitement, la densité en spermatozoïdes était comparable chez les patients traités et chez les sujets du groupe contrôle. Dans le groupe des patients traités par valganciclovir, tous les patients qui avaient une densité de spermatozoïdes normale (n=7) et 8/13 patients avec une densité faible en spermatozoïdes au début de l'étude présentaient une numération de spermatozoïdes normale 6 mois après la fin du traitement. Tous les sujets du groupe contrôle dont la densité en spermatozoïdes était normale (n=6) et 2/4 patients avec une densité faible en spermatozoïdes au début de l'étude présentaient une numération de spermatozoïdes normale lors du contrôle du suivi.
+
+Contraception
+
+Les femmes en âge de procréer doivent être informées de la nécessité d'adopter des mesures de contraception efficaces pendant le traitement et pendant 30 jours au moins suivant son arrêt. Il est recommandé aux hommes sexuellement actifs d'utiliser une contraception à effet barrière (préservatif) pendant toute la durée du traitement par Valganciclovir-Mepha ainsi que pendant 90 jours au moins après la fin du traitement, sauf si le risque de grossesse est exclu chez leur partenaire (voir «Données précliniques»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude correspondante n'a été effectuée.
+
+Crises convulsives, sédation, vertiges et confusion mentale ont été rapportés lors de l'utilisation de Valganciclovir-Mepha et/ou de ganciclovir. De tels effets compromettent la vigilance, notamment lors de la conduite d'un véhicule ou de la commande de machines.
+
+Effets indésirables
+
+Données issues des études cliniques
+
+Le valganciclovir, promédicament du ganciclovir, est rapidement transformé en ganciclovir après administration orale. Il faut donc s'attendre, avec Valganciclovir-Mepha, aux mêmes effets indésirables que ceux enregistrés sous ganciclovir. Tous les effets indésirables constatés lors des études cliniques avec le valganciclovir avaient déjà été observés avec le ganciclovir.
+
+Par conséquent, la liste des réactions indésirables regroupe les réactions médicamenteuses indésirables rapportées lors de l'administration de ganciclovir par voie intraveineuse ou orale (plus disponible) ou de valganciclovir.
+
+Chez les patients traités par le valganciclovir/ganciclovir, les réactions médicamenteuses indésirables les plus sévères et les plus fréquentes étaient de nature hématologique, comme la neutropénie, l'anémie et la thrombopénie.
+
+Les fréquences des réactions indésirables mentionnées dans la liste proviennent d'un collectif combiné de patients (n = 1704) ayant reçu, dans le cadre d'études cliniques, un traitement d'entretien par le ganciclovir (études GAN 1697, GAN 1653, 2304, GAN 1774, GAN 2226, AVI 034, GAN 041) ou par le valganciclovir (études WV1537, WV15705). Y font exception les réactions anaphylactiques, l'agranulocytose et la granulopénie, dont les fréquences proviennent d'études post-marketing. Les fréquences s'expriment en pourcentage et sont présentées par catégorie de fréquence CIOMS selon la définition suivante: très fréquents (≥1/10); fréquents (≥1/100 - <1/10); occasionnels (≥1/1'000 - <1/100); rares (≥1/10'000 - <1/1'000); très rares (<1/10'000).
+
+Le profil de sécurité global du ganciclovir/valganciclovir coïncide chez les patients atteints de VIH et chez les patients transplantés, à l'exception du décollement de la rétine, qui n'a été décrit que chez les patients atteints de rétinite à CMV. Il existe toutefois quelques différences quant à la fréquence d'apparition de certaines réactions. Le valganciclovir est lié à un risque de diarrhée plus élevé que le ganciclovir intraveineux. Pyrexie, infections à Candida, dépression, neutropénie sévère (ANC < 500/µl) et réactions cutanées sont observées plus fréquemment chez les patients atteints de VIH, tandis que des troubles de la fonction rénale et hépatique sont décrits plus souvent chez les patients transplantés.
+
+Patients pédiatriques
+
+La prise de Valganciclovir-Mepha n'est pas recommandée chez les patients pédiatriques.
+
+D'après les expériences acquises dans les études pédiatriques, le valganciclovir semble offrir un profil de sécurité semblable chez les enfants et adolescents et chez les adultes. En raison du risque accru de cytopénies hématologiques chez les nouveau-nés et les enfants en bas âge, une surveillance attentive des numérations des cellules sanguines est requise dans ce groupe d'âge. On conseille d'autre part de surveiller chez les patients pédiatriques les paramètres des fonctions hépatique et rénale à la recherche d'anomalies et de surveiller aussi les pertes liquidiennes gastro-intestinales.
+
+Infections et infestations
+
+Très fréquents: infections à Candida, y compris candidose buccale (22 %), infection des voies respiratoires supérieures et inférieures (16 %).
+
+Fréquents: sepsis (dans quelques études cliniques jusqu'à 16 %), grippe, infection des voies urinaires (dans quelques études cliniques jusqu'à 11%), cellulite.
+
+Affections hématologiques et du système lymphatique
+
+Très fréquents: neutropénie (26 %), anémie (20 %).
+
+Fréquents: thrombopénie, leucopénie (dans quelques études cliniques jusqu'à 38 %), pancytopénie (dans quelques études cliniques jusqu'à 31 %).
+
+Occasionnels: insuffisance médullaire.
+
+Rares: anémie aplasique, agranulocytose\*, granulopénie\*.
+
+Fréquence inconnue: hémorragies potentiellement fatales en rapport avec une thrombopénie.
+
+Affections du système immunitaire
+
+Fréquents: hypersensibilité.
+
+Rares: réaction anaphylactique\*.
+
+Troubles du métabolisme et de la nutrition
+
+Très fréquents: perte d'appétit (12 %).
+
+Fréquents: perte de poids.
+
+Affections psychiatriques
+
+Fréquents: dépression, confusion, troubles anxieux, perte de la libido.
+
+Occasionnels: agitation, psychose, pensée anormale, hallucinations, rêves anormaux.
+
+Fréquence inconnue: instabilité émotionnelle.
+
+Affections du système nerveux
+
+Très fréquents: céphalée (17 %).
+
+Fréquents: insomnie (dans quelques études cliniques jusqu'à 18 %), neuropathie périphérique, vertiges, paresthésie, hypoesthésie, convulsions, dysgueusie (trouble du goût).
+
+Occasionnels: tremblements (dans quelques études cliniques jusqu'à 27 %), somnolence, myoclonie, sécheresse buccale, sueur, stupeur, démence, ataxie.
+
+Fréquence inconnue: hyperkinésie, coma.
+
+Affections oculaires
+
+Fréquents: décollement de la rétine\*\* (dans quelques études jusqu'à 14 %), troubles visuels (dans quelques études cliniques jusqu'à 18 %), mouches volantes (dans quelques études cliniques jusqu'à 12%), douleurs oculaires, conjonctivite, œdème maculaire.
+
+Occasionnels: rétinite.
+
+Fréquence inconnue: glaucome, amblyopie.
+
+Affections de l'oreille et du labyrinthe
+
+Fréquents: douleurs auriculaires.
+
+Occasionnels: surdité, acouphènes.
+
+Affections cardiaques
+
+Occasionnels: arythmies, tachycardies.
+
+Rares: douleurs pectangineuses.
+
+Affections vasculaires
+
+Fréquents: hypotension, thrombophlébite.
+
+Occasionnels: thromboses veineuses profondes.
+
+Fréquence inconnue: vasodilatation.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Très fréquents: toux (18 %), dyspnée (12 %).
+
+Rares: asthme (troubles similaires).
+
+Affections gastro-intestinales
+
+Très fréquents: diarrhée (34 %), nausée (26 %), vomissements (15 %), douleurs abdominales (11 %).
+
+Fréquents: constipation (dans quelques études cliniques jusqu'à 21 %), dyspepsie (dans quelques études cliniques jusqu'à 13 %), flatulence (dans quelques études cliniques jusqu'à 13 %), douleurs épigastriques, ulcération buccale, dysphagie, ballonnements abdominaux, pancréatite.
+
+Occasionnels: incontinence fécale.
+
+Rares: douleurs pharyngées.
+
+Affections hépatobiliaires
+
+Fréquents: élévation du taux sanguin de phosphatase alcaline, trouble de la fonction hépatique (dans quelques études cliniques jusqu'à 13 %), élévation du taux d'aspartate aminotransférase, élévation du taux d'alanine aminotransférase.
+
+Occasionnels: hépatite.
+
+Affections de la peau et du tissu sous-cutané
+
+Très fréquents: dermatite (12 %).
+
+Fréquents: sueurs nocturnes, prurit, éruption, alopécie.
+
+Occasionnels: sécheresse cutanée, urticaire.
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Fréquents: douleurs dorsales (dans quelques études cliniques jusqu'à 18 %), myalgie, arthralgie, spasmes musculaires.
+
+Fréquence inconnue: myasthénie.
+
+Affections du rein et des voies urinaires
+
+Fréquents: trouble de la fonction rénale, diminution de la clairance rénale de la créatinine, élévation des taux sanguins de créatinine (dans quelques études cliniques jusqu'à 16 %).
+
+Occasionnels: insuffisance rénale, hématurie (dans quelques études cliniques jusqu'à 16 %), élévation du taux d'urée, hyponatrémie, pollakiurie, modifications de la fréquence de miction.
+
+Affections des organes de reproduction et du sein
+
+Occasionnels: stérilité chez l'homme, impuissance.
+
+Fréquence inconnue: douleurs dans les seins.
+
+Troubles généraux et anomalies au site d'administration
+
+Très fréquents: pyrexie (34 %), fatigue (19 %).
+
+Fréquents: douleurs (dans quelques études cliniques jusqu'à 11 %), frissons, sensation de maladie, asthénie.
+
+Occasionnels: douleurs dans la cage thoracique.
+
+\*\* Un décollement de la rétine n'a été décrit que chez des patients atteints du SIDA, qui étaient traités pour une rétinite à CMV.
+
+\* Les fréquences de ces réactions indésirables correspondent à celles tirées des expériences post-marketing.
+
+Description d'effets indésirables spécifiques et informations complémentaires
+
+Neutropénie
+
+Le taux de neutrophiles précédant le traitement ne permet pas de prédire le risque de neutropénie. Celle-ci survient généralement pendant la première ou la deuxième semaine du traitement d'induction. Après l'arrêt du médicament ou après une réduction de la dose administrée, la numération cellulaire se normalise la plupart du temps au bout de 2 à 5 jours (voir «Mises en garde et précautions»).
+
+Thrombopénie
+
+Les patients ayant une faible numération plaquettaire au début du traitement (< 100'000/µl) présentent un risque accru de développer une thrombopénie. Ce risque est plus élevé chez les patients avec une immunosuppression iatrogène due à un traitement par des immunosuppresseurs que chez les patients atteints du VIH (voir «Mises en garde et précautions»). Une thrombopénie sévère peut s'accompagner d'une hémorragie potentiellement fatale.
+
+Influence de la durée du traitement ou de l'indication sur les réactions indésirables
+
+Une neutropénie sévère (ANC < 500/μl) survient plus fréquemment chez les patients atteints d'une rétinite à CMV (16 %), traités par le valganciclovir, que chez les patients ayant subi une transplantation d'organe solide et qui sont traités par le valganciclovir ou le ganciclovir oral. Chez les patients traités par le valganciclovir ou le ganciclovir oral jusqu'au 100e jour suivant la transplantation, l'incidence d'une neutropénie sévère était de 5 % et de 3 % respectivement, alors qu'elle était de 10 % chez les patients traités par le valganciclovir jusqu'au 200e jour suivant la transplantation.
+
+Chez les patients ayant subi une transplantation d'organe solide et qui ont été traités par du valganciclovir ou du ganciclovir oral jusqu'au 100e ou 200e jour suivant la transplantation, le taux sérique de créatinine s'est accru plus fortement que chez les patients atteints de rétinite à CMV. Toutefois, un trouble de la fonction rénale survient plus souvent chez les patients ayant reçu une transplantation d'organe solide, indépendamment du traitement.
+
+Chez les transplantés rénaux à haut risque, le profil de sécurité global de Valganciclovir-Mepha ne s'est pas modifié lors d'une prolongation de la prophylaxie jusqu'à 200 jours. Dans le bras traité pendant 200 jours, une incidence de leucopénie légèrement plus élevée a été constatée, alors que les incidences de neutropénie, d'anémie et de thrombopénie étaient comparables dans les deux bras.
+
+Anomalies biologiques
+
+Les anomalies biologiques documentées chez des patients adultes atteints de rétinite à CMV et chez les patients adultes ayant subi une transplantation d'organe solide qui ont reçu du valganciclovir jusqu'au 100e jour après la transplantation figurent dans le tableau 2. L'incidence de ces anomalies biologiques a été comparable à celle observée lors de la prophylaxie prolongée jusqu'au 200e jour chez les transplantés rénaux à haut risque.
+
+Tableau 2: Anomalies biologiques
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Anomalies biologiques | Patients avec rétinite à CMV | Patients ayant subi une transplantation d'organe solide | |
+|  | Valganciclovir n=370 % | Valganciclovir n=244 % | Ganciclovir oral n=126 % |
+| Neutropénie: ANC/µl | | | |
+| <500 | 16 | 5 | 3 |
+| 500–< 750 | 17 | 3 | 2 |
+| 750–< 1000 | 17 | 5 | 2 |
+| Anémie: hémoglobine g/dl | | | |
+| <6,5 | 7 | 1 | 2 |
+| 6,5–<8,0 | 10 | 5 | 7 |
+| 8,0–<9,5 | 14 | 31 | 25 |
+| Thrombopénie: thrombocytes/µl | | | |
+| <25'000 | 3 | 0 | 2 |
+| 25'000–<–50'000 | 5 | 1 | 3 |
+| 50'000–<100'000 | 21 | 18 | 21 |
+| Créatinine sérique mg/dl | | | |
+| >2,5 | 2 | 14 | 21 |
+| >1,5–2,5 | 11 | 45 | 47 |
+
+ 
+
+Effets indésirables identifiés après la mise sur le marché
+
+Voir «Effets indésirables» ci-dessus. Les effets indésirables rapportés au cours de la phase post-marketing correspondent à ceux constatés au cours des études cliniques menées avec le valganciclovir et le ganciclovir/valganciclovir.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Expérience avec le surdosage de valganciclovir et de ganciclovir intraveineux
+
+Il faut s'attendre qu'un surdosage de valganciclovir entraîne éventuellement une néphrotoxicité accrue (voir «Posologie/Mode d'emploi» et «Mises en garde et précautions»).
+
+Des rapports issus d'études cliniques et de la pharmacovigilance post-marketing font état de surdosages avec le ganciclovir intraveineux, avec parfois des issues fatales. Dans certains de ces cas, il n'a pas été mentionné d'effets indésirables. Chez la plupart des patients, un ou plusieurs des effets indésirables suivants ont été observés:
+
+Hématotoxicité: myélosuppression, y compris pancytopénie, insuffisance médullaire, leucopénie, neutropénie, granulopénie.
+
+Hépatotoxicité: hépatite, trouble de la fonction hépatique.
+
+Néphrotoxicité: aggravation d'une hématurie chez un patient insuffisant rénal, lésion rénale aiguë, augmentation du taux de créatinine.
+
+Toxicité gastro-intestinale: douleurs abdominales, diarrhée, vomissements.
+
+Neurotoxicité: tremblement généralisé, convulsions.
+
+Chez des patients ayant reçu une surdose de valganciclovir, l'hémodialyse et l'hydratation peuvent éventuellement faire baisser efficacement les taux plasmatiques de médicament (voir «Cinétique chez certains groupes de patients, Patients dialysés»).
+
+Propriétés/Effets
+
+Code ATC
+
+J05AB14
+
+Mécanisme d'action
+
+Pharmacodynamique
+
+Groupe pharmacothérapeutique: virostatique pour emploi systémique.
+
+Le valganciclovir, ester L-valylique (promédicament du ganciclovir), est rapidement transformé, après administration orale, en ganciclovir par des estérases du foie et de la paroi intestinale. Le ganciclovir est un analogue synthétique de la 2'-désoxyguanosine, qui inhibe la réplication des herpèsvirus in vitro et in vivo. Les virus sensibles chez l'homme sont notamment le cytomégalovirus humain (CMV), les virus de l'Herpes simplex 1 et 2 (HSV1 et HSV2), les herpèsvirus humains 6, 7 et 8 (HHV6, HHV7, HHV8), le virus d'Epstein-Barr (EBV), le virus varicelle-zona (VZV) et le virus de l'hépatite B.
+
+Dans les cellules infectées par le CMV, le ganciclovir est d'abord phosphorylé en monophosphate de ganciclovir par la kinase virale UL97. Après nouvelle phosphorylation par des kinases cellulaires, il se forme du triphosphate de ganciclovir, qui est lentement métabolisé à l'intérieur de la cellule. Il a été montré que, dans les cellules infectées par HSV et CMV, cela intervient avec des demi-vies de respectivement 18 et 6-24 heures après élimination du ganciclovir extra-cellulaire. Etant donné qu'elle dépend en grande partie de la kinase virale, la phosphorylation du ganciclovir se produit préférentiellement dans les cellules infectées.
+
+L'activité virostatique du ganciclovir est due à l'inhibition de la synthèse de l'ADN viral par deux mécanismes:
+
+·inhibition compétitive de l'incorporation du triphosphate de désoxyguanosine dans l'ADN par la polymérase de l'ADN viral et
+
+·incorporation de triphosphate de ganciclovir dans l'ADN viral, ce qui brise la chaîne d'ADN viral ou ne permet qu'une minime prolongation de cette chaîne d'ADN.
+
+Activité antivirale
+
+L'activité antivirale (CI50) du ganciclovir à l'égard du CMV in vitro varie de 0,08 µM (0,02 µg/ml) à 14 µM (3,5 µg/ml).
+
+L'effet clinique antiviral du valganciclovir a été démontré dans le traitement de patients atteints de sida et présentant une rétinite à CMV nouvellement diagnostiquée (étude clinique WV15376). L'excrétion de CMV par voie urinaire constatée chez 46% (32/69) des patients au début de l'étude ne l'était plus que chez 7% (4/55) après quatre semaines de traitement par le valganciclovir.
+
+Efficacité clinique
+
+Traitement de la rétinite à CMV
+
+Des études cliniques avec le valganciclovir ont été menées chez des patients atteints de sida et présentant une rétinite à CMV. En tant que traitement d'induction de la rétinite à CMV, le valganciclovir s'est révélé aussi efficace que le ganciclovir administré par voie intraveineuse. Dans une étude ouverte, randomisée et contrôlée, 160 patients atteints de sida et de rétinite à CMV nouvellement diagnostiquée ont été traités, après randomisation, soit par des comprimés pelliculés de valganciclovir (900 mg deux fois par jour pendant 21 jours, puis 900 mg une fois par jour pendant 7 jours), soit par une solution intraveineuse de ganciclovir (5 mg/kg deux fois par jour pendant 21 jours, puis 5 mg/kg une fois par jour pendant 7 jours). L'âge médian était de 39 ans, la valeur initiale médiane de l'ARN du VIH1 de 4,9 log10 et le nombre médian de cellules CD4 de 23 cellules/mm³. La détermination de la progression de la rétinite à CMV par examen anonyme de clichés rétiniens, effectuée lors du bilan initial ainsi qu'à la quatrième semaine, a constitué le critère d'évaluation primaire du traitement d'induction de trois semaines. Le Tableau 3 présente les résultats après quatre semaines.
+
+Tableau 3: Examen anonyme de clichés rétiniens à la quatrième semaine de l'étude WV15376
+
+|  |  |  |
+| --- | --- | --- |
+|  | Cymevene® i.v. | Valganciclovir-Mepha |
+| Détermination de la progression de la rétinite à CMV à la quatrième semaine | n=80 | n=80 |
+| Progression | 7 | 7 |
+| Pas de progression | 63 | 64 |
+| Décès | 2 | 1 |
+| Arrêt du traitement par suite d'effets indésirables | 1 | 2 |
+| Ne s'est pas présenté(e) au contrôle | 1 | 1 |
+| CMV non confirmé lors du bilan initial ou clichés non évaluables lors du bilan initial | 6 | 5 |
+
+ 
+
+Traitement d'entretien de la rétinite à CMV
+
+Il n'existe pas de données cliniques comparatives relatives à l'efficacité du valganciclovir dans le traitement d'entretien de la rétinite à CMV, car le valganciclovir a été administré en mode ouvert à tous les patients de l'étude WV15376 après la quatrième semaine. La surface sous la courbe de concentration plasmatique (AUC) du ganciclovir après administration de 900 mg de valganciclovir une fois par jour est toutefois semblable à celle enregistrée après administration intraveineuse monoquotidienne de 5 mg/kg de ganciclovir (Cymevene®). Bien que la Cmax du ganciclovir après administration de valganciclovir soit plus faible qu'après administration intraveineuse de ganciclovir, elle reste supérieure à la Cmax enregistrée après administration orale de ganciclovir. L'emploi de valganciclovir à titre de traitement d'entretien est ainsi justifié par une courbe de concentration plasmatique en fonction du temps analogue à celles de deux produits déjà homologués dans le traitement d'entretien de la rétinite à CMV.
+
+La période moyenne (médiane) allant de la randomisation à la progression de la rétinite à CMV a été de 226 (180) jours dans le groupe sous traitement d'induction et d'entretien par le valganciclovir et de 219 (126) jours dans le groupe sous traitement d'induction par le ganciclovir intraveineux et traitement d'entretien par le valganciclovir.
+
+Bien qu'il n'existe pas de données issues d'une comparaison directe, le valganciclovir entraîne une exposition systémique au ganciclovir qui est comparable à celle obtenue avec les doses recommandées de ganciclovir intraveineux, lequel a fait la preuve de son efficacité dans le traitement de la rétinite à CMV. Il a été montré que l'AUC du ganciclovir est corrélée au délai de progression de la rétinite à CMV.
+
+Prophylaxie d'une affection à CMV chez les transplantés
+
+Une étude clinique comparative et contrôlée a été menée en double insu chez des patients ayant bénéficié d'une transplantation cardiaque, hépatique ou rénale (les patients ayant subi une transplantation pulmonaire n'ont pas été inclus dans l'étude) présentant un risque accru de maladie à CMV (D+/R-). Les patients ont reçu soit le valganciclovir (900 mg une fois par jour), soit le ganciclovir oral (1000 mg trois fois par jour), le traitement ayant été instauré dans les 10 jours suivant la transplantation et poursuivi jusqu'au 100e jour après la greffe d'organe. L'incidence d'une maladie à CMV (syndrome à CMV + maladie entraînant une invasion tissulaire) validée par un comité d'évaluation (Endpoint Committee, EC) et apparue au cours des 6 mois suivant la transplantation a été de 12,1 % dans le groupe le valganciclovir (n=239), contre 15,2 % dans le groupe recevant le ganciclovir oral (n=125). La grande majorité de ces cas sont apparus après la fin du traitement prophylactique (c.-à-d. après le 100e jour), les affections survenant globalement plus tard dans le groupe sous valganciclovir que dans le groupe sous ganciclovir oral.
+
+Résultats obtenus avec le valganciclovir et le ganciclovir oral en fonction de l'organe transplanté:
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Incidence d'une maladie à CMV en fonction du type d'organe (ITT, EC) | | | |
+|  | Ganciclovir oral (n=125) % | Valganciclovir (n=239) % | Total (n=364) % |
+| Tous les organes (n= 364) | 15,2 (19) | 12,1 (29) | 13,2 (48) |
+| Cœur (n=56) | 9,5 (2) | 5,7 (2) | 7,1 (4) |
+| Foie (n=177) | 11,9 (7) | 18,6 (22) | 16,4 (29) |
+| Rein (n=120) | 23,1 (9) | 6,2 (5) | 11,7 (14) |
+| Rein-pancréas  (n=11) | 16,7 (1) | 0 | 9,1 (1) |
+
+ 
+
+L'incidence de réactions de rejet aiguës au cours des 6 premiers mois a été de 29,7 % chez les patients ayant été affectés de manière aléatoire au groupe sous valganciclovir, contre 36,0 % chez les patients du groupe recevant le ganciclovir oral. L'incidence de perte du greffon a été identique dans les deux groupes (0,8 %).
+
+Une étude en double aveugle, contrôlée contre placebo, menée chez 326 transplantés rénaux à haut risque de maladie à CMV (D+/R-) a évalué l'efficacité et la sécurité de la prolongation de la prophylaxie contre le CMV par le valganciclovir de 100 à 200 jours après la transplantation. Après randomisation (1:1), les patients ont reçu du valganciclovir (900 mg une fois par jour); le traitement a été commencé dans les 10 jours suivant la transplantation, a été poursuivi jusqu'au 200e ou jusqu'au 100e jour après la transplantation, puis a été suivi de l'administration d'un placebo pendant 100 jours.
+
+La prolongation de la prophylaxie contre le CMV par Valganciclovir jusqu'au 200e jour après la transplantation chez des transplantés rénaux à haut risque s'est avérée supérieure au traitement pendant 100 jours en termes de prévention de maladie à CMV, pendant les 12 premiers mois après la transplantation.
+
+La proportion de patients ayant développé une maladie à CMV pendant les 12 premiers mois après la transplantation, figure dans le tableau 4.
+
+Tableau 4: Proportion de transplantés rénaux atteints d'une maladie à CMV¹, population ITT après 12 mois
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+|  | Valganciclovir 900 mg une fois par jour, 100 jours | Valganciclovir 900 mg une fois par jour, 200 jours | p selon Cochran-Mantel-Haenszel |
+| Patients atteints d'une maladie à CMV confirmée ou suspectée2 | 71/163 (43,6 %) | 36/155 (23,2 %) | 0,0001 |
+| Patients atteints d'une maladie à CMC confirmée | 60/163 (36,8 %) | 25/155 (16,1 %) | < 0,0001 |
+
+ 
+
+¹ La maladie à CMV est définie comme un syndrome à CMV ou un CMV avec invasion tissulaire.
+
+² Un CMV confirmé est un cas cliniquement confirmé de maladie à CMV. Une suspicion de maladie à CMV existait lorsqu'aucune observation à l'examen de la 52e semaine ou aucune confirmation d'une maladie à CMV avant cette date n'étaient présentes chez les patients.
+
+Douze mois après la transplantation, le taux de survie du greffon a été de 98,2 % (160/163) avec le traitement d'une durée de 100 jours et de 98,1 % (152/155) avec le traitement d'une durée de 200 jours. L'incidence d'un rejet aigu confirmé par la biopsie a été, 12 mois après la transplantation, de 17,2 % (28/163) avec le traitement d'une durée de 100 jours et de 11,0 % (17/155) avec le traitement d'une durée de 200 jours.
+
+Résistance virale
+
+Après administration chronique de valganciclovir, des virus résistants au ganciclovir peuvent apparaître par sélection de mutations dans le gène de la kinase virale (UL97), responsable de la monophosphorylation du ganciclovir, ou du gène de la polymérase virale (UL54). Les mutations dans le gène UL97 surviennent plus précocement et plus fréquemment que les mutations dans le gène UL54. Les virus contenant des mutations dans le gène UL97 ne sont résistants qu'au ganciclovir seul; les substitutions les plus fréquemment documentées sont: M460V/I, H520Q, C592G, A594V, L595S et C603W. Les virus avec des mutations dans le gène UL54 peuvent présenter une résistance croisée avec d'autres virostatiques ciblant la polymérase virale, et inversement. Les substitutions d'acides aminés dans le produit génique UL54 provoquant une résistance croisée avec le ganciclovir et le cidofovir sont généralement localisées dans les domaines de l'exonucléase et dans la région V. En revanche, les substitutions d'acides aminés provoquant une résistance croisée avec le foscarnet sont plus largement répandues; elles surviennent cependant fréquemment dans ou entre les régions II (codon 696-742) et III (codon 805-845).
+
+Traitement de la rétinite à CMV
+
+Une analyse génotypique du CMV dans des isolats de granulocytes neutrophiles de 148 patients avec rétinite à CMV ayant participé à une étude clinique a montré que 2,2 %, 6,5 %, 12,8 % et 15,3 % des isolats étaient porteurs de mutations UL97 après respectivement 3, 6, 12 et 18 mois de traitement par le valganciclovir. Une résistance phénotypique n'a pas été identifiée, mais le nombre d'isolats de CMV en culture disponibles pour analyse était très restreint.
+
+Prophylaxie d'une affection à CMV chez les transplantés
+
+La résistance a été étudiée par le biais d'une analyse génotypique du CMV dans des échantillons de granulocytes neutrophiles qui avaient été prélevés a) au 100e jour (fin du traitement prophylactique par le médicament à l'étude) et b) dans des cas où une maladie à CMV était soupçonnée au cours des 6 mois suivant la transplantation. Chez les 245 patients affectés au groupe valganciclovir après randomisation, 198 échantillons prélevés au 100e jour ont pu être étudiés. Aucune mutation vers une résistance au ganciclovir n'a été constatée dans ces échantillons. En revanche, deux mutations vers une résistance au ganciclovir (1,9 %) ont été observées parmi les 103 échantillons de patients du groupe traité par ganciclovir oral.
+
+Chez les 245 patients affectés au groupe valganciclovir, les échantillons de 50 patients chez lesquels était soupçonnée une maladie à CMV ont été étudiés. Aucune mutation vers une résistance n'a été observée. Chez les 127 patients affectés au groupe ganciclovir, les échantillons de 29 patients chez lesquels on soupçonnait une maladie à CMV ont été étudiés. Des mutations vers une résistance ont été constatées sur deux de ces échantillons, ce qui correspond à une incidence de 6,9 %.
+
+La résistance a été évaluée dans une étude lors de laquelle la prophylaxie contre le CMV par le valganciclovir a été prolongée de 100 à 200 jours après la transplantation chez des transplantés rénaux adultes à haut risque de maladie à CMV (D+/R-) (voir «Propriétés/Effets, Efficacité clinique»). Des substitutions d'acides aminés connues pour être associées à une résistance au ganciclovir ont été détectées chez cinq patients du groupe traité pendant 100 jours et chez quatre patients du groupe traité pendant 200 jours qui remplissaient les critères de l'analyse de résistance. Chez six patients, les substitutions d'acides aminés mises en évidence dans le produit génique pUL97 et associées à une résistance ont été les suivantes: A440V, M460V et C592G (dans le groupe traité pendant 100 jours) ainsi que M460V et C603W (dans le groupe traité pendant 200 jours). Chez trois patients, les substitutions d'acides aminés détectées dans le produit génique pUL54 et associées à une résistance ont en outre été les suivantes: E315D (dans le groupe traité pendant 100 jours) ainsi que E315D et P522S (dans le groupe traité pendant 200 jours). Au total, des substitutions d'acides aminés connues et associées à une résistance au ganciclovir ont été plus fréquentes chez les patients pendant le traitement prophylactique qu'après la fin du traitement prophylactique (pendant le traitement: 5/12 [42 %] versus après le traitement: 1/58 [2 %]). La possibilité d'une résistance virale doit être envisagée chez les patients qui ne présentent qu'une réponse clinique minime ou chez qui une excrétion virale persistante survient pendant le traitement.
+
+Pharmacocinétique
+
+Les propriétés pharmacocinétiques du valganciclovir ont été déterminées chez des patients VIH-positifs et CMV-positifs, chez des patients atteints de sida et de rétinite à CMV ainsi que chez des patients ayant bénéficié d'une transplantation d'organe solide.
+
+Les paramètres déterminants pour l'exposition au ganciclovir issu du valganciclovir sont la biodisponibilité et la fonction rénale. La biodisponibilité du ganciclovir issu du valganciclovir a été comparable dans toutes les populations de patients étudiées. L'exposition systémique au ganciclovir, après administration orale de valganciclovir, des patients ayant subi une transplantation cardiaque, rénale ou hépatique était comparable lors d'utilisation de l'algorithme posologique dépendant de la fonction rénale.
+
+Une proportionnalité de la dose au niveau de l'AUC du ganciclovir après administration de 450 à 2625 mg de valganciclovir n'a été démontrée qu'après absorption de nourriture.
+
+Absorption
+
+Le valganciclovir est un promédicament (prodrug) du ganciclovir; après administration orale, il témoigne d'une bonne absorption dans le tractus gastro-intestinal et est rapidement métabolisé en ganciclovir dans la paroi intestinale et le foie. La biodisponibilité du ganciclovir après administration orale de valganciclovir avec un repas est d'environ 60%. L'exposition systémique au valganciclovir est passagère et faible, l'AUC24 et la Cmax correspondant respectivement à environ 1 % et 3 % des valeurs recueillies avec le ganciclovir.
+
+L'exposition systémique au ganciclovir après administration de 900 mg de valganciclovir oral est de 24,9 ± 4,5 µg·h/ml contre 25,6 ± 5,1 µg·h/ml après administration de 5 mg/kg de ganciclovir. Les valeurs correspondantes de la concentration maximale sont de 5,15 ± 1,2 µg/ml contre 9,31 ± 2,1 µg/ml.
+
+Lorsque le valganciclovir a été pris à raison de 875 mg (la dose recommandée est de 900 mg) avec un petit déjeuner (bacon et œuf brouillé), l'AUC24 moyenne et la Cmax moyenne du ganciclovir ont augmenté de respectivement 30 % et 14 % environ par rapport aux valeurs à jeun. C'est pourquoi il est recommandé de prendre Valganciclovir-Mepha avec les repas (voir «Posologie/Mode d'emploi»).
+
+Les données pharmacocinétiques d'une étude menée avec des patients VIH-positifs et CMV-positifs, dont certains étaient gravement malades, ont été comparables à celles obtenues chez des personnes moins sévèrement atteintes.
+
+Valganciclovir chez des patients VIH-positifs et CMV-positifs
+
+L'exposition systémique de patients VIH-positifs et CMV-positifs après administration de ganciclovir ou de Valganciclovir-Mepha deux fois par jour pendant une semaine fournit les valeurs suivantes:
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Paramètre | Ganciclovir (5 mg/kg, i.v.) n=18 | Valganciclovir (900 mg, p.o.) n=25 | |
+| Ganciclovir | Valganciclovir |
+| AUC (0-12 ) (µg·h/ml) | 28,6 ± 9,0 | 32,8 ± 10,1 | 0,37 ± 0,22 |
+| Cmax (µg/ml) | 10,4 ± 4,9 | 6,7 ± 2,1 | 0,18 ± 0,06 |
+
+ 
+
+Il a été montré que l'efficacité du ganciclovir sur le plan de la prolongation du délai jusqu'à la progression de la rétinite à CMV est corrélée à l'exposition systémique (AUC).
+
+Valganciclovir chez des transplantés
+
+L'exposition systémique au ganciclovir (à l'état d'équilibre) après administration orale quotidienne de ganciclovir et de valganciclovir à des patients ayant bénéficié d'une transplantation d'organe solide fournit les valeurs suivantes:
+
+|  |  |  |
+| --- | --- | --- |
+| Paramètre | Ganciclovir (1000 mg 3x par jour)  n=82 | Valganciclovir (900 mg 1x par jour) n=161 |
+|  |  | Ganciclovir |
+| AUC (0-24) (µg·h/ml) | 28,0 ± 10,9 | 46,3 ± 15,2 |
+| Cmax (µg/ml) | 1,4 ± 0,5 | 5,3 ± 1,5 |
+
+ 
+
+Après administration orale de valganciclovir conformément à l'algorithme posologique dépendant de la fonction rénale, l'exposition systémique au ganciclovir est identique chez les patients ayant bénéficié d'une transplantation cardiaque, rénale et hépatique.
+
+Distribution
+
+Compte tenu de la transformation rapide du valganciclovir en ganciclovir, la liaison du valganciclovir aux protéines n'a pas été déterminée. Le volume de distribution du ganciclovir à l'état d'équilibre a été de 0,680 ± 0,161 l/kg après administration intraveineuse. Pour le ganciclovir intraveineux, le volume de distribution est en corrélation avec le poids corporel, et les valeurs du volume de distribution à l'état d'équilibre se situent entre 0,54 et 0,87 l/kg. Le ganciclovir parvient dans le liquide céphalo-rachidien. La liaison aux protéines plasmatiques a été de 1 à 2 % à des concentrations de ganciclovir de 0,5 et 51 µg/ml.
+
+Métabolisme
+
+Le valganciclovir est rapidement hydrolysé en ganciclovir; il n'a pas été détecté d'autres métabolites. Le ganciclovir lui-même n'est pratiquement pas métabolisé. Après administration orale de ganciclovir radiomarqué (dose unique de 1000 mg), aucun métabolite ne représentait plus de 1à 2 % de la radioactivité retrouvée dans les fèces ou l'urine.
+
+Élimination
+
+Après administration de valganciclovir par voie orale, la substance est rapidement hydrolysée en ganciclovir. Le ganciclovir est éliminé de la circulation sanguine systémique par filtration glomérulaire et sécrétion tubulaire active. Chez les patients ayant une fonction rénale normale, le ganciclovir administré par voie intraveineuse a été retrouvé à plus de 90% sous forme inchangée dans l'urine après 24 heures. Chez les patients ayant une fonction rénale normale, les concentrations plasmatiques post-maximales de valganciclovir ont diminué avec une demi-vie située entre 0,4 et 2,0 heures. Chez ces patients, les concentrations de ganciclovir, avec une demi-vie comprise entre 3,5 et 4,5 heures, diminuent de la même manière qu'après une administration intraveineuse directe de ganciclovir.
+
+Cinétique pour certains groupes de patients
+
+Troubles de la fonction hépatique
+
+Aucune étude pharmacocinétique n'a été menée chez les patients atteints d'insuffisance hépatique et traités par le valganciclovir, et aucune donnée de PC de population n'est disponible pour ce groupe de patients.
+
+Transplantés hépatiques stables
+
+La pharmacocinétique du ganciclovir formé à partir du valganciclovir chez des transplantés hépatiques stables a été étudiée dans le cadre d'une étude ouverte menée en quatre étapes avec permutation (n=28). La biodisponibilité du ganciclovir issu du valganciclovir après administration d'une dose unique de 900 mg de valganciclovir prise avec de la nourriture était de 60 % environ. L'AUC0–24 du ganciclovir était comparable à celle obtenue chez des transplantés hépatiques ayant reçu 5 mg/kg de ganciclovir par voie intraveineuse.
+
+Troubles de la fonction rénale
+
+La pharmacocinétique du ganciclovir a été évaluée après administration d'une dose unique de 900 mg de valganciclovir par voie orale chez 24 patients atteints d'insuffisance rénale, sans autres problèmes de santé.
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| Clairance de la créatinine (ml/min) | Nombre de sujets | AUC(0-∞) (µg·h/ml) | Cmax  (µg/ml) | t½  (h) |
+| > 70 | 8 | 28,1 ± 5,8 | 5,8 ± 1,7 | 3,5 ± 0,76 |
+| 51–70 | 6 | 50,5 ± 23 | 6,9 ± 2,5 | 4,9 ± 1,4 |
+| 21–50 | 6 | 100 ± 54 | 7,1 ± 1,6 | 10,2 ± 4,4 |
+| 11–20 | 6 | 252 ± 64 | 8,54 ± 1,2 | 21,8 ± 5,2 |
+| ≤10 | 6 | 407 ± 83 | 10.5 ± 2,7 | 68,1 ± 35 |
+
+ 
+
+Lors d'une diminution de la fonction rénale, il s'est produit une diminution de la clairance du ganciclovir issu du valganciclovir, avec prolongation correspondante de la demi-vie terminale.
+
+Aussi une adaptation de la posologie est-elle nécessaire chez les insuffisants rénaux (voir «Posologie/Mode d'emploi» et «Mises en garde et précautions»).
+
+Patients atteints de mucoviscidose
+
+Dans une étude de pharmacocinétique de phase I, l'exposition systémique au ganciclovir à l'état d'équilibre a été évaluée chez des patients ayant bénéficié d'une greffe de poumon, atteints ou non d'une mucoviscidose (FK) (N=31) et ayant reçu 900 mg de Valganciclovir par jour en traitement prophylactique après la transplantation. L'étude a montré que l'exposition n'était pas plus faible chez les 16 patients atteints de FK examinés que chez 15 patients sans FK. L'exposition au ganciclovir chez les patients ayant bénéficié d'une greffe de poumon était comparable aux concentrations qui se sont avérées efficaces dans la prévention des affections à CMV chez les patients ayant bénéficié d'une transplantation d'autres organes solides. Mais l'étude ne permet pas d'exclure totalement l'éventualité d'une plus faible exposition au ganciclovir et d'un risque accru de résistance au ganciclovir chez certains patients atteints de FK (notamment chez les patients présentant une insuffisance pancréatique avancée).
+
+Patients âgés
+
+Aucune étude portant sur la pharmacocinétique du valganciclovir ou du ganciclovir n'a été menée chez les adultes âgés de plus de 65 ans. Toutefois, étant donné que le valganciclovir est un promédicament du ganciclovir, que le ganciclovir est éliminé principalement par voie rénale et que la clairance rénale diminue avec l'âge, il est probable que la clairance corporelle totale du ganciclovir diminue et que la demi-vie du ganciclovir soit prolongée chez les personnes âgées (voir «Instructions spéciales pour la posologie»).
+
+Données précliniques
+
+Le valganciclovir est un promédicament du ganciclovir. Par conséquent, les effets observés avec le ganciclovir le sont également avec le valganciclovir. La toxicité du valganciclovir constatée dans les études précliniques correspond à celle observée avec le ganciclovir; elle a été provoquée par des concentrations de ganciclovir comparables ou inférieures à celles entraînées par la dose initiale administrée chez l'homme.
+
+La toxicité observée consistait en une gonadotoxicité (perte de cellules testiculaires) et une néphrotoxicité (urémie, dégénérescence cellulaire) irréversibles, ainsi qu'en une myélotoxicité (anémie, neutropénie, lymphopénie) et une toxicité gastro-intestinale (nécrose des cellules muqueuses) réversibles.
+
+D'autres études précliniques ont montré que le ganciclovir est mutagène, cancérogène, tératogène et embryotoxique, et qu'il compromet la fertilité chez les mâles et femelles. Sur la base de l'expérimentation animale au cours de laquelle des expositions systémiques au ganciclovir inférieures aux taux thérapeutiques ont conduit à une aspermie, on estime probable que le ganciclovir (et le valganciclovir) peut être à l'origine d'une inhibition passagère ou durable de la spermatogenèse chez l'homme.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage d'origine. Ne pas conserver au-dessus de 30°C.
+
+Conserver hors de la portée des enfants.
+
+Remarques concernant la manipulation
+
+Les comprimés pelliculés ne doivent être ni cassés ni écrasés. Etant donné que Valganciclovir-Mepha est potentiellement tératogène et cancérogène chez l'homme, la prudence est de rigueur lors de la manipulation de comprimés pelliculés cassés (voir «Mises en garde et précautions»). Eviter tout contact direct de la peau et des muqueuses avec des comprimés pelliculés cassés ou écrasés et toute inhalation de résidus en poudre. Si un tel contact vient à se produire, laver soigneusement la zone concernée à l'eau et au savon; en cas de contact oculaire, rincer soigneusement avec de l'eau stérile ou, si non disponible, à l'eau claire.
+
+Après arrêt du traitement ou péremption, des restes de médicament non utilisés sont à éliminer de façon appropriée.
+
+Numéro d’autorisation
+
+65032 (Swissmedic).
+
+Présentation
+
+Valganciclovir-Mepha 450 mg: emballages blister de 60 comprimés pelliculés (A).
+
+Titulaire de l’autorisation
+
+Mepha Pharma AG, Basel.
+
+Mise à jour de l’information
+
+Août 2023.
+
+Numéro de version interne: 7.2

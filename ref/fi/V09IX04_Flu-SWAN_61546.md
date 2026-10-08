@@ -1,0 +1,360 @@
+---
+titre: "Flu-SWAN"
+titulaire: "SWAN Isotopen AG"
+atc: V09IX04
+substances: "n.d."
+autorisation_swissmedic: 61546
+date_version: 2013-09-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/1cc608bd98e8422483a263aec6c23aef-fr.html
+---
+
+Flu-SWAN
+
+ 
+
+Composition
+
+principe actif :
+
+1 ml contient 185 MBq de Fludeoxyglucose (18F) à la date et à l’heure de calibrage.
+
+excipients : 
+
+·Chlorure de sodium 9 mg (équivalent à 3,54 mg de sodium)
+
+·Ethanol   4 mg
+
+·Eau pour injection 1 ml
+
+Flu-SWAN ne contient pas d’agents conservateur.
+
+ spécifications: 
+
+·Radionucléide [18F]-Fluor
+
+·Pureté du Radionucléide >99%
+
+·Pureté Radiochimique >95%
+
+ 
+
+Forme galénique et quantité de principe actif par unité
+
+Flu-SWAN est une solution limpide, incolore ou légèrement jaunâtre. Flu-SWAN est une solution injectable de radiodiagnostique prête à l’emploi pour application directe.
+
+La concentration en radioactivité est de 185 MBq/ml à la date et à l’heure de référence, qui sont indiquées sur l’emballage (la date et heure de calibrage).
+
+ 
+
+Indications/possibilités d’emploi
+
+Ce médicament est à usage diagnostique uniquement.
+
+Flu-SWAN est indiqué pour examiner le métabolisme régional du glucose en cas d’examens oncologiques, neurologiques, cardiologique et inflammatoires au moyen de la tomographie par émission de positrons (TEP).
+
+ 
+
+Posologie/mode d’emploi
+
+Posologie
+
+L’activité habituellement recommandée chez l’adulte est de 100 à 500 MBq (selon la masse corporelle du patient et le type de caméra utilisé) administrée par injection intraveineuse directe.
+
+Il y a peu de données cliniques concernant la tolérance et l’efficacité diagnostique de ce produit chez les patients de moins de 18 ans. Par conséquent son utilisation en oncologie pédiatrique doit être soigneusement justifiée.
+
+Chez l’enfant, activité recommandée selon les données révisées de la carte de dosage 2D et 3D de l’EANM calculé pour les examens du corps entier avec du 18F-FDG TEP (Pediatric European Task Group EANM 2008) :
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Poids (kg) | Activité (MBq) 2D | Activité (MBq) 3D | Poids (kg) | Activité (MBq) 2D | Activité (MBq) 3D |
+| 3 | 26 | 14 | 32 | 189 | 102 |
+| 4 | 30 | 16 | 34 | 200 | 108 |
+| 6 | 44 | 24 | 36 | 207 | 112 |
+| 8 | 55 | 30 | 38 | 218 | 118 |
+| 10 | 70 | 38 | 40 | 229 | 124 |
+| 12 | 81 | 44 | 42 | 237 | 128 |
+| 14 | 92 | 50 | 44 | 248 | 134 |
+| 16 | 104 | 56 | 46 | 259 | 140 |
+| 18 | 115 | 62 | 48 | 267 | 144 |
+| 20 | 126 | 68 | 50 | 277 | 150 |
+| 22 | 137 | 74 | 52-54 | 292 | 158 |
+| 24 | 148 | 80 | 56-58 | 311 | 168 |
+| 26 | 159 | 86 | 60-32 | 329 | 178 |
+| 28 | 167 | 90 | 64-66 | 348 | 188 |
+| 30 | 178 | 96 | 68 | 363 | 196 |
+
+Préparation du patient
+
+L’administration de Flu-SWAN doit être réalisée chez des patients correctement hydratés et à jeun depuis au moins 4 heures pour obtenir une concentration maximale de l’activité, car l’incorporation de glucose dans les cellules est limitée («cinétique de saturation»). La quantité de liquide ne doit pas être limitée (mais les boissons contenant du glucose sont à éviter).
+
+Pour obtenir des images de qualité optimale et pour réduire l’exposition aux radiations de la vessie, il convient d’inciter le patient à boire suffisamment et de lui demander de vider sa vessie avant et après la tomographie par émission de positrons.
+
+·Oncologie, neurologie et inflammation
+
+Afin d'éviter une hyperfixation du traceur au niveau musculaire, il est recommandé d’éviter toute activité physique importante avant l'examen et de rester au repos strict, entre l'injection et l'examen et lors de l'acquisition des images (patient allongé confortablement, sans lire ni parler).
+
+Le métabolisme cérébral du glucose dépend de l’activité cérébrale. Par conséquent, les examens neurologiques doivent être précédés d’une période de relaxation dans une pièce sombre et calme.
+
+Une mesure de la glycémie doit être effectuée préalablement à l’administration, une hyperglycémie pouvant réduire la sensibilité de l’examen, en particulier lorsque la glycémie dépasse 8 mmol/L. Pour la même raison, la tomographie avec Flu-SWAN doit être évitée chez le sujet présentant un diabète non équilibré.
+
+·Cardiologie
+
+La captation du glucose par le myocarde étant insulino-dépendante, il est recommandé d’administrer une dose de charge de 50 g de glucose environ 1 heure avant l’injection de Flu-SWAN pour l’évaluation de la viabilité myocardique. Une autre option, en particulier chez les patients diabétiques, consiste à ajuster la glycémie par une perfusion combinée d’insuline et de glucose si nécessaire.
+
+Tomographie par émission de positrons
+
+L’activité en Fludeoxyglucose (18F) doit être mesurée à l’aide d’un activimètre juste avant l’injection.
+
+L’injection doit être strictement intraveineuse pour éviter l’irradiation consécutive à une extravasation locale, ainsi que les artefacts d’imagerie.
+
+L’acquisition des images débute habituellement 45 à 90 minutes après l’injection de Flu-SWAN. S’il subsiste une activité suffisante pour permettre des statistiques de comptage adéquates, une tomographie par émission de positrons au Fludeoxyglucose (18F) peut également être réalisée jusqu’à deux ou trois heures après administration, ce qui permet de réduire le bruit de fond.
+
+Si nécessaire, l’examen peut être répété dans un bref délai.
+
+Remarques concernant la manipulation
+
+Les précautions appropriées d’asepsie et de radioprotection doivent être respectées.
+
+Avant utilisation, le conditionnement doit être vérifié et l'activité mesurée à l'aide d'un calibrateur de dose.
+
+Un contrôle visuel de la solution doit être effectué avant l’injection et seules les solutions limpides et dépourvues de particules visibles pourront être utilisées.
+
+Le médicament peut être dilué dans une solution injectable de chlorure de sodium 9 mg/ml (0,9 %).
+
+Le flacon doit être conservé, sans être ouvert, à l’intérieur de sa protection en plomb.
+
+Après désinfection du bouchon, la solution doit être prélevée aseptiquement à travers le bouchon à l’aide d’une seringue munie d’une protection appropriée et d’une aiguille stérile à usage unique.
+
+L’administration de produits radiopharmaceutiques présente des risques pour l’entourage du patient en raison de l’irradiation externe ou de la contamination par les urines, les vomissements, etc... Par conséquent, il faut prendre des mesures de protection contre les radiations conformément aux réglementations nationales.
+
+Exposition aux rayonnements
+
+Selon la publication n°80 de la CIPR (Commission Internationale de Protection Radiologique) (Radiation Dose to Patients from Radiopharmaceuticals, Pergamon Press, 1999), les doses de radiations absorbées par les patients sont les suivantes :
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Dose absorbée par unité d’activité injectée (µGy/MBq) | | | | | |
+| Organes | Adultes | 15 Ans | 10 Ans | 5 Ans | 1 An |
+| Surrénales | 12 | 15 | 24 | 38 | 72 |
+| Vessie | 160 | 210 | 280 | 320 | 590 |
+| Surface osseuse | 11 | 14 | 22 | 35 | 66 |
+| Cerveau | 28 | 28 | 30 | 34 | 48 |
+| Poitrine | 8,6 | 11 | 18 | 29 | 56 |
+| Vésicule biliaire | 12 | 15 | 23 | 35 | 66 |
+| Voies gastro-intestinales | | | | | |
+| Estomac | 11 | 14 | 22 | 36 | 68 |
+| Intestin Grêle | 13 | 17 | 27 | 41 | 77 |
+| Colon | 13 | 17 | 27 | 40 | 74 |
+| Cœur | 62 | 81 | 120 | 200 | 350 |
+| Reins | 21 | 25 | 36 | 54 | 96 |
+| Foie | 11 | 14 | 22 | 37 | 70 |
+| Poumons | 10 | 14 | 21 | 34 | 65 |
+| Muscles | 11 | 14 | 21 | 34 | 65 |
+| Œsophage | 11 | 15 | 22 | 35 | 68 |
+| Ovaires | 15 | 20 | 30 | 44 | 82 |
+| Pancréas | 12 | 16 | 25 | 40 | 76 |
+| Moelle rouge | 11 | 14 | 22 | 32 | 61 |
+| Peau | 8.3 | 10 | 16 | 27 | 52 |
+| Rate | 11 | 14 | 22 | 36 | 69 |
+| Testicules | 12 | 16 | 26 | 38 | 73 |
+| Thymus | 11 | 15 | 22 | 35 | 68 |
+| Thyroïde | 10 | 13 | 21 | 35 | 68 |
+| Utérus | 21 | 26 | 39 | 55 | 100 |
+| Autres organes | 11 | 14 | 22 | 34 | 63 |
+| Dose efficace par unité d’activité injectée (mSv/MBq) | 19 | 25 | 36 | 50 | 95 |
+
+Pour le [18F] Fludeoxyglucose, la dose efficace résultant de l’administration d’une activité de 500 MBq est d'environ 9,5 mSv (pour un individu de 70 kg). Pour cette activité de 500 MBq, les doses de radiations délivrées aux organes critiques : vessie, cœur et cerveau, sont respectivement de : 80 mGy, 31 mGy et 14 mGy.
+
+ 
+
+Contre-indications
+
+Hypersensibilité à la substance active ou à l’un des excipients.
+
+ 
+
+Mises en garde et précautions
+
+Contre-indications relatives
+
+Pendant la grossesse (consulter la rubrique « Grossesse, allaitement »).
+
+Chez tous les patients, l’exposition aux radiations doit être justifiée par le bénéfice attendu. L’activité administrée doit correspondre à la plus faible dose de radiations possible compatible avec le résultat escompté.
+
+Chez le patient insuffisant rénal, l’indication doit être évaluée avec une attention toute particulière car il existe un risque d’exposition accrue aux radiations.
+
+Chez l’enfant, une attention particulière doit être portée à la dose efficace par MBq qui est plus élevée que chez l’adulte (voir rubrique « Remarques particulières »).
+
+Précautions générales
+
+Il est recommandé d’éviter tout contact étroit entre le patient et les jeunes enfants pendant les 12 heures suivant l’injection.
+
+Les produits radiopharmaceutiques ne doivent être réceptionnés, utilisés et administrés que par des personnes autorisées dans des services agréés. Leur réception, leur stockage, leur utilisation, leur transfert et leur élimination sont soumis aux réglementations et aux autorisations appropriées des autorités compétentes. Les produits radiopharmaceutiques doivent être préparés de manière à satisfaire à la fois aux normes de radioprotection et de qualité pharmaceutique.
+
+Flu-SWAN doit être stocké et manipulé derrière un écran adéquat afin de protéger le plus efficacement possible les patients et le personnel hospitalier. En particulier, il est recommandé de se protéger des effets des rayonnements bêta-plus et des photons d’annihilation en utilisant une protection appropriée lors du prélèvement dans le flacon et lors de l’injection.
+
+La solution contient 3,54 mg/ml de sodium. Selon le moment où l'injection a été faite, la teneur en sodium administrée au patient peut, dans certains cas, dépasser 1 mmol (23 mg). Il faut en tenir compte chez les patients qui suivent un régime alimentaire pauvre en sodium.
+
+Ce médicament contient un maximum de 4 mg/ml d'alcool (éthanol). On administre au patient un maximum de 10 ml ; cette quantité de 40 mg/10 ml de ce médicament correspond à 1 ml de bière ou 0,4 ml de vin. La faible quantité d'alcool contenue dans ce médicament n'a aucun effet perceptible.
+
+ 
+
+Interactions
+
+Toute médication entraînant une modification de la glycémie est susceptible d’induire une modification de la sensibilité de l’examen (ex: corticoïdes, valproate, carbamazépine, phénytoïne, phénobarbital et catécholamines).
+
+L’administration de facteurs stimulant l’hématopoïèse (CSF), augmente pendant plusieurs jours la fixation de Flu-SWAN au niveau de la moelle osseuse et de la rate. Il faut en tenir compte pour l’interprétation des images de TEP. Un écart d’au moins 5 jours entre le traitement par les CSF et la TEP peut réduire cette interférence.
+
+L’administration de glucose et d’insuline affecte la captation Flu-SWAN par les cellules. En cas d’hyperglycémie ou en présence de faibles taux plasmatiques d’insuline, la captation de Flu-SWAN dans les organes et les tumeurs se trouve réduite.
+
+ 
+
+Grossesse, allaitement
+
+Aucune donnée n'est disponible concernant l'utilisation de ce produit pendant la grossesse.
+
+Lorsqu'il est nécessaire d'administrer un produit radiopharmaceutique à une femme en âge de procréer, toute éventualité de grossesse doit être écartée. Toute femme n'ayant pas eu ses règles doit être considérée comme enceinte jusqu'à preuve du contraire. Dans le doute, il faut procéder comme dans le cas d’une grossesse avérée.
+
+Les examens utilisant des radionucléides chez la femme enceinte entraînent également l'irradiation du fœtus. La dose absorbée par l’utérus résultant de l’administration d’une activité de 400 MBq de Flu-SWAN est de 8,4 mGy. A cette dose, un effet létal ou une induction de malformations, un retard de croissance ou des troubles fonctionnels ne sont pas attendus; toutefois, le risque d’induction de cancer et de déficiences héréditaires peut se trouver accru.
+
+Flu SWAN ne doit pas être administré pendant la grossesse, sauf si cela s’avère indispensable ou si les avantages pour la mère sont largement supérieurs aux risques encourus par le fœtus.
+
+Flu-SWAN est excrété dans le lait maternel. Avant d'administrer Flu-SWAN à une femme en période d'allaitement, il faut envisager si on peut repousser raisonnablement l'examen jusqu'à la fin de l'allaitement. Lorsque l’administration en cours d’allaitement est indispensable, le lait peut être tiré avant l'injection et conservé pour être utilisé ultérieurement. L'allaitement doit être suspendu pendant au moins 12 heures et le lait produit pendant cette période doit être éliminé.
+
+De plus, pour des raisons de radioprotection, il est conseillé d’éviter tout contact étroit entre la mère et les jeunes enfants pendant les 12 heures suivant l’injection.
+
+ 
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude n’a été réalisée sur l’effet sur l’aptitude à la conduite et l’utilisation de machines.
+
+ 
+
+Effets indésirables
+
+Aucun effet indésirable n'a été observé à ce jour.
+
+La quantité de produit administrée étant extrêmement faible, le principal risque est celui associé aux radiations. L'exposition aux radiations ionisantes peut éventuellement induire des cancers ou développer des déficiences héréditaires. Pour la plupart des examens de médecine nucléaire où la dose de radiations (dose efficace) est inférieure à 20 mSv, la probabilité de survenue de tels effets est faible. Après administration de l’activité maximale recommandée de Fludeoxyglucose (18F), la dose efficace est de l’ordre de 9,5 mSv.
+
+ 
+
+Surdosage
+
+L’éventualité d’un surdosage au sens pharmacologique est très peu probable aux doses utilisées à des fins diagnostiques.
+
+En cas de surdosage de Fludeoxyglucose (18F), la dose délivrée au patient doit être réduite en augmentant autant que possible l'élimination du produit radiopharmaceutique par une diurèse forcée avec mictions fréquentes.
+
+ 
+
+Propriétés/Effets
+
+·Code ATC: V09IX04
+
+·Propriétés physiques: Le [18F]-Fluor possède une demi-vie de 109,8 minutes et émet par rayonnement un positron dont l’énergie maximale est de 0,633 MeV, suivit par l’annihilation d’un photon avec une énergie de 0,511 MeV.
+
+·Propirétés chimiques : pH 4,5-8,5.
+
+·Mécanisme d’action : Le Fludeoxyglucose (18F) est un analogue du glucose qui s’accumule dans toutes les cellules qui utilisent du glucose comme principale source d’énergie, notamment dans les tumeurs qui présentent une consommation accrue du glucose.
+
+·Efficacité : Aux concentrations chimiques recommandées pour les examens de diagnostic, le Fludeoxyglucose (18F) ne semble pas avoir d’activité pharmacodynamique. Voir rubrique « Remarques particulières : Influence sur les méthodes de diagnostic ».
+
+ 
+
+Pharmacocinétique
+
+Après injection intraveineuse, la cinétique du Fludeoxyglucose (18F) dans le compartiment vasculaire est bi-exponentielle avec une période de distribution de 1 minute et une période d'élimination d'environ 12 minutes.
+
+L’incorporation cellulaire du Fludeoxyglucose (18F) fait intervenir des systèmes transporteurs spécifiques des tissus qui sont partiellement dépendants de l’insuline, et peut être influencée par l’alimentation, l’état nutritionnel et l’existence de diabète sucré. Chez les patients diabétiques, on constate une diminution de l’incorporation du Fludeoxyglucose (18F) dans les cellules suite à des altérations de la distribution tissulaire et du métabolisme du glucose.
+
+Le Fludeoxyglucose (18F) est transporté à travers la membrane cellulaire, de manière analogue à celle du glucose, mais ne subit que la première étape de la glycolyse aboutissant à la formation de [18F]-fludésoxyglucose-6-phosphate qui reste piégé dans la cellule et n’est plus métabolisé. En raison de la lente déphosphorylation ultérieure par les phosphatases intracellulaires, le [18F]-fludésoxyglucose-6-phosphate persiste dans les tissus pendant plusieurs heures (mécanisme d’emprisonnement).
+
+Chez le sujet sain, le Fludeoxyglucose (18F) est largement distribué dans l'organisme et plus particulièrement au niveau du cerveau et du cœur puis, dans une moindre mesure, au niveau du poumon et du foie.
+
+L'élimination du Fludeoxyglucose (18F) est essentiellement rénale avec 20 % de l'activité excrétée dans l'urine dans les 2 heures suivant l'injection.
+
+La fixation dans le parenchyme rénal est faible, cependant du fait de l'élimination rénale du Fludeoxyglucose (18F), tout le système urinaire, et surtout la vessie, présente une activité importante.
+
+Le Fludeoxyglucose (18F) traverse la barrière hémato-encéphalique. Environ 7 % de la dose injectée est accumulée dans le cerveau 80 à 100 minutes après l’injection. Les foyers épileptogènes présentent une réduction du métabolisme du glucose entre les crises.
+
+Environ 3 % de l’activité injectée est incorporée par le myocarde dans les 40 minutes. La distribution du Fludeoxyglucose (18F) dans le cœur sain est généralement homogène. Cependant, des variations régionales pouvant atteindre 15 % sont décrites au niveau du septum interventriculaire. Pendant et après une ischémie myocardique réversible, on observe une augmentation de l’incorporation de glucose dans les cellules myocardiques.
+
+0,3 % et 0,9 à 2,4 % de l’activité injectée s’accumulent respectivement au niveau du pancréas et des poumons.
+
+Le Fludeoxyglucose (18F) se fixe également, plus faiblement, au niveau des muscles oculaires, du pharynx et de l'intestin. Une fixation musculaire peut être notée en cas d'effort récent ou en cas de tension musculaire au cours de l'examen.
+
+ 
+
+Données précliniques
+
+Lors des études précliniques de toxicité aiguë, une dose correspondant à 50 fois la dose humaine chez le chien et à 1000 fois la dose humaine chez la souris n’a engendré aucun signe de toxicité.
+
+Aucune étude de toxicité chronique, du potentiel mutagène, de la fonction de reproduction et du potentiel cancérigène n’a été réalisée, en raison du mode d’utilisation du produit (généralement une injection intraveineuse unique de la substance à des doses de l’ordre du ng ou du µg).
+
+ 
+
+Remarques particulières
+
+Incompatibilités:
+
+Ce médicament ne doit pas être mélangé avec d’autres médicaments à l’exception de ceux mentionnés dans la rubrique « remarques concernant la manipulation ».
+
+Influence sur les méthodes de diagnostic
+
+Les pathologies infectieuses et/ou inflammatoires, de même que les processus de régénération consécutifs à une intervention chirurgicale, peuvent engendrer une fixation significative de Flu-SWAN et entraîner des résultats faux positifs.
+
+Des résultats faux positifs ou faux négatifs lors de la tomographie par émission de positrons avec Flu-SWAN sont possibles au cours des deux à quatre premiers mois qui suivent une radiothérapie. Pendant cette période, l’indication clinique d’une tomographie par émission de positrons avec Flu-SWAN doit être suffisamment justifiée.
+
+Afin d’éviter des résultats faux négatifs, un délai d’au moins quatre à six semaines après le dernier traitement par chimiothérapie est recommandé. Pendant cette période, l’indication clinique d’une tomographie par émission de positrons avec Flu-SWAN doit être suffisamment justifiée. Dans l’éventualité d’une cure de chimiothérapie avec des cycles de moins de quatre semaines, la tomographie par émission de positrons avec Flu-SWAN doit avoir lieu juste avant le début d’un cycle.
+
+Dans les cas de lymphome de bas grade et de suspicion de récidive de cancer de l’ovaire la sensibilité limitée de la tomographie par émission de positrons avec le Fludeoxyglucose (18F) doit être prise en compte.
+
+Pour la détection des métastases cérébrales il faut tenir compte de l’efficacité restreinte du Fludeoxyglucose (18F).
+
+Stabilité
+
+Conservation de la préparation prête à l'emploi: 12 heures à compter de l’heure de fabrication. La date et l’heure de péremption sont indiquées sur le conditionnement extérieur et sur chaque flacon.
+
+La préparation ne contient pas de conservateur. Sa stérilité "in use" a été démontrée pendant 12 heures à 15-25°C.
+
+Remarques concernant le stockage
+
+A conserver dans son conditionnement d’origine à 15-25°C.
+
+Le stockage doit être effectué conformément aux réglementations nationales relatives aux produits radioactifs.
+
+Remarques concernant la manipulation
+
+Dispositions légales
+
+L’utilisation de substances radioactives chez l’homme est réglementée par l’ordonnance sur la radioprotection. Le maniement de substances radioactives est soumis à l’obtention d’un agrément délivré par Office fédéral pour la santé publique. Le maniement de substances radioactives ainsi que l’élimination des déchets radioactifs produits doivent respecter les mesures de protections décrites dans l’ordonnance mentionnée ci-dessous, afin d’éviter toute irradiation inutile d’un patient ou du personnel traitant. Les solutions radioactives non utilisées ainsi que les émissions corporelles contaminées doivent impérativement être conservées dans une pièce destinée à la décroissance de la radioactivité, jusqu’à diminution de la radioactivité en dessous du seuil de dérogation du nucléide concerné. L’ordonnance sur la radioprotection est à appliquer (ORap, SR 814.501)
+
+ 
+
+Numéro d’autorisation
+
+61’546
+
+ 
+
+Présentation
+
+Flacon multi-dose de 15 ml en verre, fermé par un bouchon en et scellé par une capsule métallique. Chaque flacon multi-dose est remplit d’une solution de 0.5 à 10,0 ml, selon les besoins de l’utilisateur, ce qui correspond à une activité de 90 à 1850 MBq aux date et heure de calibration. (A)
+
+ 
+
+Titulaire de l’autorisation
+
+SWAN Isotopen AG
+
+SWAN-Haus
+
+Inselspital
+
+CH-3010 BERN
+
+ 
+
+Mise à jour de l’information
+
+Septembre 2013

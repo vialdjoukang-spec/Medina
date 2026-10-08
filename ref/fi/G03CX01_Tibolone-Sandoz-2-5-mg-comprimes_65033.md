@@ -1,0 +1,488 @@
+---
+titre: "Tibolone Sandoz® 2,5 mg, comprimés"
+titulaire: "Sandoz Pharmaceuticals AG"
+atc: G03CX01
+substances: "Tibolonum"
+autorisation_swissmedic: 65033
+date_version: 2025-04-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/35d1d2858a3945dd86c79ed0aa4ccc00-fr.html
+---
+
+Tibolone Sandoz® 2,5 mg, comprimés
+
+Sandoz Pharmaceuticals AG
+
+Composition
+
+Principes actifs
+
+Tibolonum.
+
+Excipients
+
+Lactosum monohydricum 74,8 mg, solani amylum, magnesii stearas, ascorbylis palmitas (E 304).
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+1 comprimé contient 2,5 mg de tibolone.
+
+Indications/Possibilités d’emploi
+
+Traitement des symptômes de la carence en œstrogènes consécutive à la ménopause naturelle ou artificielle (datant d'au moins un an).
+
+Pour prévenir ou retarder l'apparition de l'ostéoporose induite par une carence en œstrogènes chez les femmes postménopausées courant un risque élevé de fractures, chez lesquelles un traitement par d'autres médicaments autorisés pour la prévention de l'ostéoporose ne peut pas être envisagé ou chez les femmes qui souffrent en même temps de symptômes de carence en œstrogènes qui requièrent un traitement.
+
+La décision de prescrire Tibolone Sandoz doit, chez toutes les femmes, être précédée d'un examen individuel en ce qui concerne le risque global. Le risque d'accident vasculaire cérébral doit être pris en considération, notamment chez des femmes de plus de 60 ans (voir aussi sous «Mises en garde et précautions»).
+
+Posologie/Mode d’emploi
+
+La posologie est de 1 comprimé par jour.
+
+Dans toutes les indications, la durée du traitement doit toujours être aussi courte que possible. Le traitement hormonal substitutif (THS) ne doit être poursuivi que tant que le bénéfice l'emporte sur le risque pour la patiente considérée.
+
+Le traitement par Tibolone Sandoz ne doit pas être complété par un progestatif supplémentaire.
+
+Il faut prendre les comprimés avec un peu d'eau ou un autre liquide, si possible toujours à la même heure.
+
+Début de la prise de Tibolone Sandoz
+
+Le traitement par Tibolone Sandoz doit être entrepris au plus tôt 12 mois après les dernières règles naturelles. L'instauration plus précoce d'un traitement par Tibolone Sandoz peut augmenter la fréquence des hémorragies irrégulières ou du spotting. En cas de ménopause induite par une intervention chirurgicale ou une chimiothérapie, le traitement par Tibolone Sandoz peut être entrepris immédiatement.
+
+Remplacement d'un autre produit de THS par Tibolone Sandoz
+
+Chez les femmes à utérus intact, chez lesquelles on remplace un traitement hormonal substitutif purement œstrogénique par Tibolone Sandoz, il faut induire une hémorragie de privation par un progestatif avant le début de la prise de Tibolone Sandoz. Quand on utilise Tibolone Sandoz pour remplacer un THS séquentiel, il faut entreprendre le traitement par Tibolone Sandoz immédiatement après la fin de l'hémorragie de privation. Le remplacement d'un THS combiné par Tibolone Sandoz est possible à tout moment.
+
+Conduite à tenir en cas d'oubli de la prise
+
+Si une prise a été oubliée, il faut prendre la dose omise le plus rapidement possible, sauf si la dernière prise remonte à plus de 12 heures. Dans ce cas, il ne faut pas prendre la dose oubliée et prendre la dose suivante prescrite à l'heure habituelle.
+
+Instructions posologiques particulières
+
+Patientes présentant des troubles de la fonction hépatique
+
+La tibolone est contre-indiquée chez les patientes présentant une insuffisance hépatique.
+
+Patientes présentant des troubles de la fonction rénale
+
+Il n'est pas nécessaire d'adapter la dose chez les patientes dont la fonction rénale est restreinte.
+
+Patientes âgées
+
+Aucune adaptation de la dose n'est nécessaire chez les patientes âgées.
+
+Enfants et adolescents
+
+La tibolone n'est pas indiquée chez la population pédiatrique.
+
+Contre-indications
+
+Dans les situations suivantes ou en cas d'apparition des maladies suivantes pendant la prise de Tibolone Sandoz, il ne faut pas prendre Tibolone Sandoz ou il faut arrêter immédiatement le traitement:
+
+·présence ou antécédents de cancer du sein, ou suspicion d'un tel cancer
+
+·présence ou suspicion de tumeurs hormono-dépendantes (p.ex. cancers de l'endomètre)
+
+·hyperplasie de l'endomètre non traitée
+
+·hémorragies vaginales d'origine indéterminée
+
+·présence ou antécédents d'événements thromboemboliques veineux (p.ex. thrombose veineuse profonde, embolie pulmonaire)
+
+·présence ou antécédents d'événements thromboemboliques artériels (angine de poitrine, infarctus du myocarde, accident vasculaire cérébral ou accident ischémique transitoire)
+
+·maladies thrombophiliques connues (p.ex. déficit en protéine C, en protéine S ou en antithrombine, voir sous «Mises en garde et précautions»)
+
+·maladie hépatique aiguë ou antécédents de maladie hépatique, tant que les paramètres hépatiques sont augmentés
+
+·porphyrie
+
+·grossesse, allaitement
+
+·hypersensibilité connue à l'un des composants de Tibolone Sandoz.
+
+Mises en garde et précautions
+
+Un traitement des symptômes de la ménopause ne doit être instauré que lorsque ceux-ci diminuent la qualité de vie.
+
+Avant l'instauration d'un traitement par la tibolone ou d'un autre traitement hormonal substitutif, il faut (en tenant compte des contre-indications et des précautions) pratiquer un examen clinique général ainsi qu'un examen gynécologique approfondi incluant les organes pelviens et les seins. Ces examens doivent être répétés au moins une fois par an. Il faut également prendre en compte les antécédents personnels et familiaux. Il faut soigneusement peser le rapport bénéfice/risque avant chaque traitement, individuellement pour chaque patiente, et le réévaluer dans le cadre des examens de contrôle annuels. Il faut toujours opter pour la durée de traitement la plus courte possible.
+
+Lorsque Tibolone Sandoz ou un autre traitement est envisagé chez la femme postménopausée, les points suivants doivent être pris en compte individuellement pour chaque patiente: indication thérapeutique, acceptation d'hémorragies vaginales, éventualité de fluctuations de l'humeur ou de troubles de la libido, effets sur le tissu mammaire et autres bénéfices et risques.
+
+Toute hémorragie vaginale anormale, qu'elle survienne sous un THS ou en l'absence de traitement hormonal, nécessite une exploration avant le début d'un traitement par Tibolone Sandoz, notamment pour exclure des causes malignes.
+
+Motifs imposant l'arrêt immédiat du traitement
+
+Le traitement doit être arrêté en cas de survenue d'une contre-indication et dans les situations suivantes:
+
+·symptômes ou suspicion d'une maladie thromboembolique veineuse ou artérielle
+
+·première apparition de céphalées migraineuses ou céphalées répétées, inhabituellement intenses
+
+·perte soudaine, partielle ou complète, de la vision
+
+·trouble soudain de l'audition
+
+·élévation significative de la pression artérielle
+
+·ictère, hépatite ou détérioration de la fonction hépatique
+
+Maladies qui exigent une surveillance médicale particulière
+
+Si l'une des maladies ou l'un des risques suivants sont présents ou sont survenus par le passé et/ou se sont aggravés pendant une grossesse ou pendant des traitements hormonaux antérieurs, il faut étroitement surveiller la patiente. En effet, ces maladies peuvent récidiver ou s'aggraver pendant la prise de Tibolone Sandoz. Cela vaut tout particulièrement pour les maladies suivantes:
+
+·facteurs de risque de tumeurs œstrogéno-dépendantes, p.ex. cancer du sein chez des parents du premier degré
+
+·antécédents personnels ou familiaux d'hyperplasie de l'endomètre (voir ci-dessous)
+
+·léiomyomes ou endométriose
+
+·facteurs de risque d'affections thromboemboliques (voir ci-dessous)
+
+·hypertension
+
+·migraine ou (fortes) céphalées
+
+·diabète sucré avec ou sans atteinte vasculaire
+
+·affections hépatiques (p.ex. adénome hépatique) ou biliaires (p.ex. cholélithiase)
+
+·lupus érythémateux disséminé
+
+·épilepsie
+
+·asthme
+
+·otosclérose
+
+Maladies tumorales
+
+Cancer du sein
+
+Non seulement les études randomisées contrôlées mais aussi les études épidémiologiques ont montré une augmentation du risque de cancer du sein chez les femmes utilisant un THS pendant plusieurs années. Ce risque est surtout accru en cas d'utilisation d'une durée supérieure à 5 ans. Dans une méta-analyse d'études épidémiologiques, le risque relatif (RR) chez les femmes ayant utilisé un THS pendant 5 ans ou plus était de 1,35 (IC à 95%: 1,21; 1,49). Dans des études individuelles, on a même observé une augmentation du risque pour des durées de traitement plus courtes (de 1 à 4 ans). En général, l'augmentation du risque était plus importante avec un traitement œstroprogestatif combiné qu'avec une monothérapie par œstrogènes.
+
+C'est pourquoi, chez toutes les femmes, le médecin doit examiner les seins avant le début d'un THS, et ensuite tous les ans, et les patientes doivent pratiquer des auto-examens mammaires mensuels. Selon l'âge et les facteurs de risque individuels, une mammographie peut aussi être indiquée. Les femmes doivent être informées de la nécessité de signaler immédiatement à leur médecin toute modification de leurs seins.
+
+Deux grandes méta-analyses d'études épidémiologiques ont montré que le risque de développement d'un cancer du sein augmente en fonction de la durée du THS et diminue après l'arrêt du THS.
+
+Le temps nécessaire pour revenir au risque de base correspondant à l'âge dépend de la durée de l'utilisation précédente du THS. Si la durée d'utilisation est supérieure à 5 ans, le risque peut encore être accru pendant 10 ans ou plus après l'arrêt.
+
+Pour la tibolone, on ne dispose d'aucune donnée concernant la persistance du risque accru après l'arrêt, mais un schéma similaire ne peut être exclu.
+
+L'étude WHI a montré, au bout d'une durée moyenne de traitement de 5,6 ans, une augmentation de la fréquence des cancers du sein invasifs sous THS combiné comportant des œstrogènes conjugués et de l'acétate de médroxyprogestérone, comparativement au groupe placebo (risque relatif de 1,24 [IC à 95%: 1,02−1,50]). En revanche, sous œstrogènes en monothérapie, le risque n'était pas augmenté (risque relatif 0,77 [IC à 95%: 0,59−1,01]).
+
+L'étude Million Women Study (MWS), une étude de cohortes non randomisée (âge moyen des femmes au moment de l'inclusion dans l'étude de 55,9 ans) a mis en évidence une augmentation significative du risque de cancer du sein à la posologie de 2,5 mg de tibolone. Dans cette étude, la moitié des femmes recevait un THS avant et/ou au moment de l'inclusion dans l'étude, tandis que l'autre moitié n'avait jamais reçu de THS. Avec tous les types de THS, le risque augmentait avec la durée d'utilisation. Le risque maximal a été observé sous le traitement combiné œstrogéno-progestatif (2,00 [IC à 95%: 1,88−2,12]). Pour la monothérapie par œstrogènes, le risque relatif se situait à 1,30 (IC à 95%: 1,21−1,40) et, pour la tibolone, à 1,45 (IC à 95%: 1,25−1,68). Une étude épidémiologique utilisant la General Practice Research Database (GPRD) n'a pas pu confirmer ces résultats.
+
+Chez les utilisatrices de tibolone, il faut s'attendre à 3 cas supplémentaires (IC à 95%: 0−6) pour 1000 femmes pour une durée de traitement de 5 ans.
+
+Dans une étude contrôlée menée comparativement à un placebo (étude LIBERATE), réalisée auprès de n=3148 femmes (âge moyen de 52,7 ans) ayant des antécédents de cancer du sein, le risque de récidives de cancer du sein était significativement accru sous tibolone (2,5 mg par jour) par rapport au placebo au bout d'une période d'observation de trois ans (HR 1,40, IC à 95%: 1,14−1,70). La tibolone est donc contre-indiquée chez les patientes ayant un antécédent de cancer du sein.
+
+Hyperplasie et cancer de l'endomètre
+
+Chez les femmes à utérus intact, le risque de cancer de l'endomètre est plus élevé sous traitement par des œstrogènes en monothérapie que chez les femmes non traitées et ce risque semble dépendre de la durée du traitement et de la dose d'œstrogènes. Le risque semble maximal en cas d'utilisation prolongée. Il a été établi que l'adjonction d'un progestatif au traitement œstrogénique permettait de réduire le risque d'hyperplasie de l'endomètre, laquelle est considérée comme un stade précurseur du cancer de l'endomètre.
+
+Jusqu'à présent, il n'est pas établi avec certitude que l'augmentation du risque de cancer de l'endomètre s'applique aussi à la tibolone. Les données disponibles émanant des études cliniques sont contradictoires. Des études épidémiologiques suggèrent cependant que le risque de cancer de l'endomètre pourrait également être accru sous tibolone. Le risque d'altérations malignes de l'endomètre augmente avec la durée d'utilisation.
+
+L'augmentation maximale du risque a été observée dans une étude (étude LIFT) randomisée, menée comparativement à un placebo, portant sur n=3519 femmes (âge moyen de 68 ans) ne subissant pas d'examen régulier de l'utérus. Dans cette étude, au bout de 2,9 ans, aucun cas de cancer de l'endomètre n'a été diagnostiqué dans le groupe placebo (n=1773) par rapport à 4 cas dans le groupe tibolone (n=1746). Ceci correspond à 0,8 cas supplémentaire pour 1000 femmes qui ont utilisé la tibolone durant 1 an.
+
+Dans l'étude Million Women Study, on a également observé un risque accru de cancer de l'endomètre chez les femmes qui utilisaient la tibolone (RR 1,8, IC à 95%: 1,4−2,3), le risque augmentant avec la durée d'utilisation.
+
+À l'échographie transvaginale, la tibolone augmente la densité endométriale.
+
+Pendant les premiers mois du traitement, des métrorragies et un spotting peuvent survenir (voir «Propriétés/Effets»). Il faut demander aux femmes d'informer leur médecin si des métrorragies ou un spotting surviennent encore après six mois de traitement, réapparaissent en cours de traitement ou persistent après l'arrêt du traitement. Dans de tels cas, un examen gynécologique doit être effectué afin d'exclure des altérations malignes de l'endomètre (y compris une biopsie de l'endomètre).
+
+Cancer de l'ovaire
+
+Plusieurs études épidémiologiques indiquent qu'un THS pourrait être associé à un risque accru de développement d'un cancer épithélial de l'ovaire. Une augmentation du risque a été observée aussi bien pour la monothérapie par œstrogènes que pour un THS combiné. Tandis que la plupart des études faisaient apparaître une augmentation du risque uniquement lors d'une utilisation prolongée (c'est-à-dire pendant au moins 5 ans), une méta-analyse publiée en 2015 (prenant en compte 17 études prospectives et 35 études rétrospectives) n'a pas montré un tel lien avec la durée d'utilisation. Dans la Million Women Study, le risque de cancer de l'ovaire sous tibolone était comparable à celui observé sous d'autres THS.
+
+Dans l'étude prospective randomisée WHI, contrôlée contre placebo (dans laquelle aucune patiente sous tibolone n'avait été incluse), une augmentation statistiquement non significative du risque (HR 1,41; IC à 95%: 0,75−2,66) a été observée.
+
+Les cancers de l'ovaire étant beaucoup plus rares que les cancers du sein, l'augmentation absolue du risque chez les femmes qui reçoivent ou qui ont reçu jusqu'à récemment un THS est faible.
+
+Maladies thromboemboliques
+
+Cardiopathie coronarienne
+
+Le traitement hormonal substitutif ne doit pas être utilisé pour la prévention des maladies cardiovasculaires. De vastes études cliniques n'ont pas montré d'effets favorables pour la prévention primaire (étude WHI) ou la prévention secondaire (étude HERS) des maladies cardiovasculaires. De même, une étude épidémiologique basée sur la General Practice Research Database (GPRD) n'a pas mis en évidence de protection contre les infarctus du myocarde chez des femmes postménopausées qui prenaient de la tibolone.
+
+L'étude Women's Health Initiative (WHI), vaste étude prospective, randomisée, menée comparativement à un placebo, a porté sur plus de 8000 femmes âgées (âge au début de l'étude compris entre 50 et 79 ans, âge moyen de 63 ans), qui ont reçu un traitement hormonal substitutif (THS) oral comportant des œstrogènes conjugués et de l'acétate de médroxyprogestérone pendant une durée moyenne de 5,2 ans. Cette étude a montré une augmentation du risque d'événements cardiovasculaires comparativement au placebo (risque relatif de 1,24 [IC à 95%: 1,00−1,54], une augmentation absolue du risque de 6 cas pour 10'000 années-femmes). Le risque était maximal pendant la première année suivant le début du THS (risque relatif de 1,81 [IC à 95%: 1,09−3,01]). Plus la ménopause était ancienne, plus le risque augmentait (ménopause datant de moins de 10 ans: risque relatif de 0,89; ménopause datant de 10 à 19 ans: risque relatif de 1,22; ménopause datant de 20 ans ou plus: risque relatif de 1,71). Dans le bras ayant reçu les œstrogènes en monothérapie, aucun effet significatif sur le risque cardiovasculaire n'a été observé (risque relatif de 0,91 [IC à 95%: 0,75−1,12]).
+
+L'étude Heart and Estrogen/Progestin Replacement (HERS et HERS II) est une étude prospective, randomisée, menée comparativement à un placebo chez plus de 1300 femmes postménopausées présentant déjà une maladie coronarienne (âge moyen au moment de l'inclusion dans l'étude de 67 ans). Ces patientes ont reçu un THS oral comportant des œstrogènes conjugués et de l'acétate de médroxyprogestérone, pendant une durée moyenne de 4,1 ans (étude HERS) et de 2,7 ans (étude HERS II). Ces études n'ont pas montré de réduction du risque cardiovasculaire. Le risque relatif était de 0,99 (IC à 95%: 0,84−1,17). Le risque était maximal pendant la première année suivant le début du THS (risque relatif de 1,52 [IC à 95%: 1,01−2,29]).
+
+Bien que nous ne sachions pas encore pour l'instant dans quelle mesure les résultats de ces deux études peuvent être extrapolés à une population plus jeune ou à des produits de THS contenant d'autres principes actifs (outre tibolone), le médecin doit en tenir compte avant de prescrire un THS. Chez les femmes qui présentent déjà des facteurs de risque d'événements vasculaires cérébraux ou cardiovasculaires, il faut si possible envisager d'autres traitements.
+
+Accident vasculaire cérébral ischémique
+
+La tibolone augmente le risque d'accident vasculaire cérébral ischémique dès la première année d'utilisation. Dans l'étude WHI, le risque cérébrovasculaire a également été augmenté, non seulement sous le traitement œstro-progestatif combiné (RR 1,31 [IC à 95%: 1,02−1,68] mais aussi sous le traitement par œstrogènes seuls (RR 1,39 [IC à 95%: 1,10−1,77]).
+
+Une étude randomisée, contrôlée, portant sur n=4506 femmes (âge moyen de 68 ans) a mis en évidence, au bout de 2,9 ans, un risque d'accident vasculaire cérébral 2,2 fois plus élevé chez les femmes traitées par 1,25 mg de tibolone (28/2249) que chez les femmes sous placebo (13/2257). Dans la grande majorité des cas (80%), il s'agissait d'événements ischémiques. La dose de 2,5 mg de tibolone n'a pas été examinée au cours de cette étude.
+
+Le risque relatif est indépendant de l'âge ou du délai écoulé depuis la ménopause. Comme le risque de base d'accident vasculaire cérébral dépend toutefois fortement de l'âge, le risque global augmente avec l'âge chez les femmes qui prennent de la tibolone (ou un autre THS). Chez les femmes qui utilisent de la tibolone durant 5 ans, on estime qu'il faut s'attendre à 4 cas supplémentaires pour 1000 utilisatrices dans la tranche d'âge des 50−59 ans et à 13 cas supplémentaires pour 1000 utilisatrices dans la tranche d'âge des 60−69 ans.
+
+Thromboembolies veineuses
+
+Le traitement hormonal substitutif est associé à un risque accru d'événements thromboemboliques veineux, tels que thrombose veineuse profonde (TEV) ou embolie pulmonaire. Deux études contrôlées randomisées (études WHI et HERS) et plusieurs études épidémiologiques ont montré que le risque était 1,3 à 3 fois plus élevé chez les femmes ayant utilisé un THS que chez les femmes n'ayant jamais reçu un tel traitement. L'étude WHI a montré en particulier une augmentation de l'incidence des embolies pulmonaires. Le risque supplémentaire absolu chez les femmes ayant reçu un THS combiné était de 8 cas pour 10'000 femmes (15 versus 7) et le risque relatif était de 2,13 (IC à 95%: 1,39−3,25). Cette augmentation du risque n'a été constatée que chez les femmes sous THS et non chez les femmes qui avaient antérieurement utilisé un THS. Le risque d'événement thromboembolique est maximal durant la première année d'un THS.
+
+Dans le bras de l'étude WHI ayant reçu des œstrogènes en monothérapie, on a aussi constaté une tendance en faveur d'une augmentation du risque de thromboembolies veineuses. Le risque relatif de thrombose veineuse profonde était de 1,47 (IC à 95%: 0,87−2,47) et celui d'embolie pulmonaire de 1,34 (IC à 95%: 0,70−2,55).
+
+Pour les non-utilisatrices, le nombre de cas de TEV en l'espace de 5 ans est estimé à 3 cas pour 1000 femmes dans la tranche d'âge des 50−59 ans et à 8 cas pour 1000 femmes dans la tranche d'âge des 60−69 ans. Chez les femmes en bonne santé qui utilisent un THS pendant 5 ans, le nombre de cas supplémentaires de TEV a été estimé entre 2 et 6 cas dans la tranche d'âge des 50−59 ans et entre 5 et 15 cas dans la tranche d'âge des 60−69 ans, pour 1000 femmes.
+
+S'il apparaît des symptômes évocateurs (p.ex. gonflement douloureux d'une jambe, douleurs soudaines dans la poitrine, détresse respiratoire) ou en cas de suspicion de maladie thromboembolique, il faut immédiatement arrêter le produit et consulter le médecin. Il faut étroitement surveiller les patientes qui présentent des facteurs de risque d'événements thromboemboliques. Chez ces femmes, le rapport bénéfice/risque doit être soigneusement évalué et, dans la mesure du possible, il faut envisager d'autres traitements.
+
+Les facteurs de risque de thromboembolies veineuses sont les suivants: antécédents personnels ou familiaux correspondants, tabagisme, obésité sévère (index de masse corporelle dépassant 30 kg/m2), lupus érythémateux disséminé et affections malignes. Le risque de thromboembolies veineuses augmente également avec l'âge. Il n'y a pas de consensus à propos du rôle éventuel des varices dans la survenue des thromboembolies veineuses.
+
+S'il y a des antécédents d'avortements spontanés à répétition, il faut effectuer un bilan pour exclure une prédisposition à la thrombophilie. Si ce diagnostic est posé, l'utilisation d'un THS est contre-indiquée.
+
+Chez les femmes qui présentent une combinaison de facteurs de risque ou un degré de gravité élevé d'un seul facteur de risque, on tiendra compte du fait que le risque peut être augmenté de façon plus qu'additive. Il peut en résulter, selon les circonstances, une contre-indication au traitement hormonal substitutif.
+
+Le risque de thromboembolies veineuses peut être temporairement augmenté en cas d'immobilisation prolongée, d'interventions chirurgicales majeures ou après un traumatisme sévère. Chez les femmes recevant un THS, il convient d'accorder une grande attention aux mesures prophylactiques pour éviter les thromboembolies veineuses postopératoires. Suivant la nature de l'intervention et la durée de l'immobilisation, il faut envisager une suspension temporaire du THS 4 à 6 semaines avant l'intervention lors d'opérations programmées. Il ne faut reprendre le traitement qu'une fois que la femme a parfaitement retrouvé sa mobilité.
+
+Chez les femmes sans antécédents de TEV mais dont des parents du premier degré ont déjà eu une thrombose à un âge jeune, on peut envisager un dépistage de la thrombophilie. Si une anomalie thrombophilique est constatée et si, par ailleurs, des thromboses sont connues chez des parents de la patiente ou si l'anomalie constatée est grave (p.ex. déficit en antithrombine, en protéine S ou en protéine C ou une combinaison d'anomalies), la tibolone est alors contre-indiquée.
+
+Chez les femmes qui sont déjà traitées par des anticoagulants, une évaluation minutieuse du rapport bénéfice/risque de la tibolone est nécessaire.
+
+Démence
+
+Dans la Women's Health Initiative Memory Study (WHIMS), une étude randomisée menée comparativement à un placebo dans le cadre de l'étude WHI, plus de 2000 femmes âgées de plus de 65 ans (âge moyen: 71 ans) ont été traitées par voie orale par des œstrogènes équins conjugués et de l'acétate de médroxyprogestérone et ont été suivies pendant 4 ans en moyenne. En outre, 1464 femmes hystérectomisées, âgées de 65 à 79 ans, ont été traitées uniquement par des œstrogènes équins conjugués par voie orale et ont été suivies pendant 5,2 ans en moyenne. Ni le traitement associant œstrogènes conjugués équins et acétate de médroxyprogestérone ni les œstrogènes en monothérapie n'ont eu d'effet favorable sur les fonctions cognitives. Le risque de survenue d'une démence probable était même augmenté avec le THS combiné (risque relatif de 2,05 [IC à 95%: 1,21−3,48]). En nombres absolus, cela représente, par an, 23 cas supplémentaires pour 10'000 femmes traitées.
+
+Même si l'on ignore encore dans quelle mesure les résultats de ces deux études peuvent être extrapolés à une population plus jeune ou à des produits de THS contenant d'autres principes actifs (comme tibolone), le médecin doit en tenir compte quand il évalue le rapport bénéfice/risque d'un THS.
+
+Autres maladies
+
+Les œstrogènes peuvent provoquer une rétention liquidienne. C'est pourquoi il faut étroitement surveiller les patientes présentant des maladies cardiaques ou rénales.
+
+Aucun lien avéré entre l'utilisation d'un THS et la survenue d'une hypertension artérielle clinique n'a été documenté à ce jour. Une légère élévation de la pression artérielle a été observée chez des femmes sous THS, mais une élévation cliniquement importante est rare. Si, pendant le TSH, des valeurs durablement élevées de la pression artérielle sont mesurées, il faut envisager un arrêt du THS.
+
+La tibolone influe sur les lipides sériques. Sur la base des résultats de 18 études au total, les effets suivants ont été observés: le traitement par la tibolone a entraîné une nette diminution dépendante de la dose du cholestérol HDL. Au bout de deux ans de traitement, le taux de HDL a baissé de 14,5% sous 0,625 mg, de 16,7% sous 1,25 mg et de 21,8% sous 2,5 mg. En même temps, le cholestérol total, le cholestérol VLDL, les triglycérides et la lipoprotéine (a) ont diminué également, bien que l'on n'ait pas pu clairement identifier ici de dépendance à la dose. En revanche, le cholestérol LDL est resté inchangé. Jusqu'à présent, l'importance clinique de ces résultats n'est pas connue.
+
+Pendant la prise de produits contenant des œstrogènes ou d'autres préparations de THS, il faut étroitement surveiller les femmes qui présentent une hypertriglycéridémie préexistante (en particulier des formes familiales), étant donné qu'en présence de cette affection, on a signalé, dans de rares cas, une très forte augmentation du taux de triglycérides pendant une œstrogénothérapie, qui a conduit à une pancréatite.
+
+Si une endométriose devait être réactivée pendant un THS, il est recommandé d'arrêter le traitement.
+
+Sous l'association des principes actifs ombitasvir/paritaprévir/ritonavir avec ou sans dasabuvir, une hausse cliniquement significative des ALAT (y compris des cas d'augmentation de plus de 5 fois la limite supérieure à la normale) a été observée significativement plus souvent chez les patientes atteintes d'hépatite C qui utilisaient simultanément un contraceptif à l'éthinylestradiol (EE) que chez les patientes traitées exclusivement par des substances antivirales. À l'inverse, chez les patientes utilisant d'autres œstrogènes (estradiol et valérate d'estradiol, en particulier), l'incidence d'une augmentation des transaminases n'était pas supérieure à celle des patientes sans œstrogénothérapie. Le nombre limité de cas ne permet cependant pas d'exclure un risque similaire à celui de l'EE. On ne dispose d'aucune donnée correspondante pour la tibolone. Le mécanisme de cette interaction étant complètement inconnu, il n'est actuellement pas possible de déterminer si la tibolone pourrait également être concernée par cette interaction en raison de son effet de type œstrogénique. La prudence est donc de rigueur lors de l'administration concomitante de Tibolone Sandoz avec l'association de principes actifs ombitasvir/paritaprévir/ritonavir avec ou sans dasabuvir.
+
+Tibolone Sandoz n'a aucun effet contraceptif.
+
+Les comprimés de Tibolone Sandoz contiennent du lactose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.
+
+Les risques susmentionnés du THS ont été décrits essentiellement lors du traitement de femmes âgées de ≥50 ans. On ne dispose d'aucune donnée sur la possibilité d'extrapolation de ces données à des patientes qui présentent une ménopause précoce (c.-à-d. arrêt de la fonction ovarienne avant l'âge de 40 ans révolus à la suite de maladies endocriniennes/génétiques, d'une ovariectomie, d'un traitement anticancéreux, etc.) jusqu'à ce qu'elles arrivent à l'âge normal de la ménopause. Dans ce groupe d'âge, une évaluation minutieuse du rapport bénéfice/risque doit être effectuée, en tenant également compte de l'étiologie de la ménopause précoce (chirurgie versus autres causes).
+
+Le diagnostic et l'instauration du traitement chez les patientes qui présentent une ménopause précoce doivent être réalisés, dans la mesure du possible, dans un centre spécialisé expérimenté dans le traitement de cette maladie.
+
+Interactions
+
+Interactions pharmacocinétiques
+
+On ne dispose que de données limitées sur des interactions pharmacocinétiques avec la tibolone. D'après des études menées in vitro, la tibolone n'a qu'une très faible influence sur les enzymes du cytochrome P450. Il est donc peu probable que la tibolone soit un inhibiteur cliniquement notable du cytochrome P450.
+
+Des études menées in vivo ont cependant montré que la tibolone modifiait légèrement la pharmacocinétique du midazolam, lequel est métabolisé par le CYP3A4. En conséquence, des interactions sont possibles avec d'autres substrats du CYP3A4.
+
+Les inducteurs du CYP3A4 tels que barbituriques, carbamazépine, hydantoïne et rifampicine, ainsi que les médicaments phytothérapeutiques contenant du millepertuis (Hypericum perforatum), peuvent augmenter le métabolisme de la tibolone et ainsi modifier son effet thérapeutique. Cliniquement, ceci peut entraîner une diminution de l'efficacité et/ou des changements du profil de saignements.
+
+Les hormones sexuelles peuvent abaisser la concentration plasmatique d'autres principes actifs. Ainsi, à la suite d'une induction de la glucuronidation, une augmentation cliniquement pertinente de la clairance de la lamotrigine associée une diminution significative correspondante de la concentration plasmatique de lamotrigine a été observée après une administration simultanée de lamotrigine et d'un contraceptif hormonal combiné contenant de l'éthinylestradiol. Une telle diminution des concentrations plasmatiques peut être associée à une réduction du contrôle des crises. Aucune étude d'interactions avec la tibolone n'a été menée. Le risque d'interactions est probablement limité du fait de la faible activité œstrogénique des métabolites de la tibolone, mais ne peut pas être totalement exclu.
+
+Interactions pharmacodynamiques
+
+Comme la tibolone peut augmenter l'activité fibrinolytique du sang (diminution du taux de fibrinogène; augmentation des taux d'AT III, de plasminogène et de l'activité fibrinolytique), elle peut renforcer l'effet des anticoagulants.
+
+Une étude d'interactions a montré que la tibolone augmentait l'effet de la warfarine. Il faut donc surveiller, de ce point de vue, les femmes qui prennent tibolone et requièrent en même temps une anticoagulation, surtout au début de la prise de tibolone et après la fin de ce traitement. En cas de nécessité, la dose de warfarine doit être adaptée.
+
+Grossesse, allaitement
+
+Grossesse
+
+Il n'existe pas de données concernant l'emploi de la tibolone chez la femme enceinte. Des données recueillies chez l'animal indiquent un risque fœtal. Étant donné que le risque pour l'être humain est inconnu, l'usage de Tibolone Sandoz est contre-indiqué pendant la grossesse.
+
+Allaitement
+
+Il ne faut pas prendre ce médicament pendant l'allaitement, car il peut réduire la production du lait et en modifier la qualité.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude correspondante n'a été effectuée.
+
+On ignore si Tibolone Sandoz a une influence sur l'attention et la capacité de concentration.
+
+Effets indésirables
+
+Études contrôlées
+
+La sécurité de la tibolone a été évaluée dans 21 études menées comparativement à un placebo. Dans ces études, 3476 femmes ont reçu un placebo et 4079 femmes ont été traitées par 1,25 mg ou 2,5 mg de tibolone par jour. La durée de traitement a été comprise entre 2 mois et 4,5 ans. Les effets indésirables observés dans ces études et pendant la surveillance post-commercialisation sont indiqués ci-après par classes de systèmes d'organes et par fréquence.
+
+Les effets indésirables sont rangés par classe de système d'organes de la classification MedDRA et par fréquence selon la convention suivante:
+
+«fréquents» (≥1/100 à <1/10),
+
+«occasionnels» (≥1/1000 à <1/100),
+
+«rares» (≥1/10'000 à <1/1000),
+
+«fréquence inconnue» (ne peut être estimée sur la base des données disponibles).
+
+Troubles du métabolisme et de la nutrition
+
+Fréquents: prise de poids.
+
+Affections du système nerveux
+
+Fréquence inconnue: céphalées, vertige, obnubilation, migraine, dépression.
+
+Affections oculaires
+
+Fréquence inconnue: troubles de la vue (p.ex. vision trouble).
+
+Affections vasculaires
+
+Rares: accident vasculaire cérébral.
+
+Affections gastro-intestinales
+
+Fréquents: douleurs abdominales.
+
+Fréquence inconnue: nausée.
+
+Affections hépatobiliaires
+
+Fréquence inconnue: trouble de la fonction hépatique.
+
+Affections de la peau et du tissu sous-cutané
+
+Fréquents: hypertrichose.
+
+Occasionnels: acné.
+
+Fréquence inconnue: éruption cutanée, prurit, séborrhée.
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Fréquence inconnue: myalgies, arthralgies.
+
+Affections des organes de reproduction et du sein
+
+Fréquents: hypertrophie de l'endomètre ou épaississement de l'endomètre à l'échographie, douleurs mammaires, prurit génital, vaginites, candidose génitale, hémorragies vaginales (également du spotting), douleurs pelviennes, modifications du frottis cervical (y compris dysplasie), leucorrhée, vulvovaginite.
+
+Occasionnels: symptômes mammaires, mycose, mycoses vaginales, douleurs mamelonnaires.
+
+Troubles généraux et anomalies au site d'administration
+
+Fréquence inconnue: œdèmes.
+
+Parmi les effets indésirables susmentionnés, les hémorragies vaginales ou le spotting, les douleurs abdominales et les sensations de tensions dans les seins surviennent principalement durant les premiers mois du traitement et disparaissent ensuite.
+
+Les effets indésirables suivants ont en outre été observés en rapport avec des œstrogènes en monothérapie ou un THS combiné:
+
+tumeurs hormono-dépendantes, bénignes et malignes, variations pondérales, troubles du sommeil, fluctuations de l'humeur, changements de la libido, palpitations, élévation de la pression artérielle, événements thromboemboliques veineux et artériels (p.ex. thrombose veineuse profonde, infarctus du myocarde), affections de la vésicule biliaire, ictère cholestatique, chloasma, hirsutisme, alopécie, urticaire, érythème polymorphe, érythème noueux, purpura vasculaire, douleurs dorsales, augmentation de la taille de myomes utérins, augmentation de la taille des seins.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Chez l'animal, la toxicité aiguë de la tibolone est très faible. On peut donc considérer qu'il n'y a pas de phénomènes d'intoxication, même en cas de prise concomitante de plusieurs comprimés. En cas de surdosage aigu, on peut noter des nausées, des vomissements et des hémorragies de privation. On ne connaît pas d'antidote spécifique. Si la situation l'exige, on peut instaurer un traitement symptomatique.
+
+Propriétés/Effets
+
+Code ATC
+
+G03CX01
+
+Mécanisme d'action/Efficacité clinique
+
+Après administration orale, la tibolone est rapidement transformée en trois métabolites différents qui contribuent au profil pharmacologique de Tibolone Sandoz. Deux de ces métabolites (3α-OH-tibolone et 3β-OH-tibolone) exercent un effet œstrogénique, tandis que le troisième métabolite (isomère Δ4 de la tibolone) possède des effets progestatifs et androgéniques. Chez les femmes postménopausées, Tibolone Sandoz compense la disparition de la production d'œstrogènes et soulage les symptômes de la ménopause. Tibolone Sandoz prévient la déperdition osseuse due à la ménopause ou à une ovariectomie.
+
+Études cliniques
+
+Soulagement des symptômes de la ménopause liés à la carence en œstrogènes
+
+·En général, une amélioration des symptômes de la postménopause est obtenue dans les premières semaines de traitement.
+
+Effets sur l'endomètre et sur les caractéristiques des hémorragies
+
+·Des hyperplasies de l'endomètre et des cancers de l'endomètre ont été rapportés chez des patientes traitées par tibolone (voir sous «Mises en garde et précautions»).
+
+·Une aménorrhée a été observée chez 88% des femmes au bout de 12 mois de traitement par tibolone 2,5 mg. Des métrorragies et/ou un spotting ont été rapportés chez 32,6% des femmes pendant les 3 premiers mois de traitement et chez 11,6% des femmes au bout de 11 à 12 mois de traitement.
+
+Prophylaxie de l'ostéoporose
+
+·La carence œstrogénique après la ménopause entraîne une augmentation du turnover osseux et une diminution de la masse osseuse. L'effet protecteur de la tibolone semble garanti aussi longtemps que le traitement est poursuivi. Après la fin d'un THS, la résorption osseuse est comparable à celle observée chez les femmes non traitées.
+
+·Après deux ans de traitement par tibolone, la densité minérale osseuse (DMO) du rachis a augmenté de 2,6 ± 3,8%. Chez 76% des femmes, la densité osseuse rachidienne a pu être préservée ou augmentée. Une deuxième étude a confirmé ces résultats. Tibolone (2,5 mg) agit aussi sur la densité osseuse de la hanche. Une étude a montré, au bout de 2 ans, une augmentation de 0,7 ± 3,9% au niveau du col du fémur et une augmentation de 1,7 ± 3,0% dans l'ensemble de la hanche. Chez 72,5% des femmes, la densité osseuse de la hanche a pu être préservée ou augmentée. Une deuxième étude a montré qu'au bout de 2 ans, l'augmentation était de 1,3 ± 5,1% au niveau du col du fémur et de 2,9 ± 3,4% dans l'ensemble de la hanche. Chez 84,7% des femmes, la densité osseuse au niveau de la hanche a été préservée, voire augmentée.
+
+Effet sur les seins
+
+·Des études cliniques ont montré que la densité mammographique n'est pas plus forte sous tibolone que sous placebo.
+
+Pharmacocinétique
+
+Absorption
+
+Après administration orale, la tibolone est rapidement et quasiment complètement absorbée. Du fait de la transformation métabolique rapide, les concentrations plasmatiques de tibolone sont très faibles. Les taux plasmatiques de l'isomère Δ4 de la tibolone sont également très faibles. C'est pourquoi, certains paramètres pharmacocinétiques ne peuvent pas être déterminés.
+
+Les concentrations plasmatiques maximales des métabolites 3-α-OH et 3β-OH sont plus élevées, mais il ne se produit pas d'accumulation.
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Tibolone | | Métabolite 3α-OH | | | Métabolite 3β-OH | | | Isomère Δ4 | | |
+| DU | DM | DU | | DM | DU | | DM | DU | | DM |
+| Cmax (ng/ml) | 1,37 | 1,72 | 14,23 | | 14,15 | 3,43 | | 3,75 | 0,47 | | 0,43 |
+| Cmoyenne | -- | -- | -- | | 1,88 | -- | | -- | -- | | -- |
+| Tmax (h) | 1,08 | 1,19 | 1,21 | | 1,15 | 1,37 | | 1,35 | 1,64 | | 1,65 |
+| T1/2 (h) | -- | -- | 5,78 | | 7,71 | 5,87 | | -- | -- | | -- |
+| Cmin (ng/ml) | -- | -- | -- | | 0,23 | -- | | -- | -- | | -- |
+| AUC0-24 (ng/ml) | -- | -- | 53,23 | | 44,73 | 16,23 | | 9,20 | -- | | -- |
+
+ 
+
+DU = dose unique; DM = doses multiples
+
+La prise d'aliments ne modifie pas l'absorption.
+
+Élimination
+
+La tibolone est principalement excrétée sous la forme de métabolites conjugués (essentiellement sous la forme de sulfates). La tibolone elle-même est excrétée en faible proportion dans les urines et en majorité dans la bile et les selles. La demi-vie d'élimination est d'environ 7 heures.
+
+Cinétique pour certains groupes de patients
+
+Troubles de la fonction hépatique: la pharmacocinétique de la tibolone n'a pas été étudiée chez des patients atteints d'insuffisance hépatique grave.
+
+Troubles de la fonction rénale: les paramètres pharmacocinétiques de la tibolone et de ses métabolites sont indépendants de la fonction rénale.
+
+Patientes âgées: la pharmacocinétique d'une dose unique de tibolone chez des femmes postménopausées n'a indiqué aucune influence cliniquement significative de l'âge (45 à 55 ans versus 65 à 75 ans).
+
+Données précliniques
+
+Dans les expérimentations animales, la tibolone a perturbé la fertilité et exercé des effets embryotoxiques, ce qui s'explique par ses propriétés hormonales.
+
+Chez la souris et le rat, la tibolone n'a pas eu d'effet tératogène. Les expérimentations menées chez le lapin ont montré des signes de malformations. Les effets observés dans les études de toxicité chronique et les études de cancérogénicité menées chez le rat et la souris sont imputables aux propriétés œstrogéniques de la tibolone. In vivo, la tibolone n'a pas d'effet génotoxique. La signification clinique de ces données n'est pas formellement connue.
+
+Remarques particulières
+
+Influence sur les méthodes de diagnostic
+
+Les hormones sexuelles peuvent influencer les résultats de certains examens de laboratoire tels que les paramètres biochimiques du foie, de la glande thyroïde, des glandes surrénales et de la fonction rénale, les taux plasmatiques de protéines de liaison et de la fraction lipidique/lipoprotéinique, les paramètres du métabolisme glucidique, de la coagulation et de la fibrinolyse.
+
+Un traitement par la tibolone entraîne une faible baisse des concentrations de globuline liant la thyroxine (TBG) et de T4 totale. La concentration totale de T3 reste inchangée. La tibolone diminue la concentration totale de protéines liant les hormones sexuelles (SHBG), tandis que les taux de la globuline liant le cortisol (CBG) et du cortisol circulant ne sont pas affectés.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage original, à température ambiante (15−25°C), à l'abri de la lumière et de l'humidité et hors de la portée des enfants.
+
+Numéro d’autorisation
+
+65033 (Swissmedic).
+
+Présentation
+
+Tibolone Sandoz 2,5 mg, comprimés: 1 x 28 (emballage-calendrier) [B]
+
+Tibolone Sandoz 2,5 mg, comprimés: 3 x 28 (emballage-calendrier) [B]
+
+Titulaire de l’autorisation
+
+Sandoz Pharmaceuticals SA, Risch domicile Rotkreuz.
+
+Mise à jour de l’information
+
+Avril 2025

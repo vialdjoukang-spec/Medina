@@ -1,0 +1,589 @@
+---
+titre: "Gentamicine AApot solution injectable"
+titulaire: "Armeeapotheke"
+atc: J01GB03
+substances: "Gentamicinum ut Gentamicini sulfas"
+autorisation_swissmedic: 33380
+date_version: 2024-08-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/06773b71d54945c79dc8b775269cc082-fr.html
+---
+
+Gentamicine AApot solution injectable
+
+Armeeapotheke
+
+Composition
+
+Principes actifs
+
+Gentamicinum ut Gentamicini sulfas.
+
+Excipients
+
+Gentamicine 80 mg/2 mL AApot solution injectable: Natrii metabisulfis (E 223) 6.4 mg, aqua ad iniectabile q.s. ad solutionem pro 2 mL corresp. sodium 1.55 mg.
+
+Gentamicine 20 mg/2 mL AApot solution injectable: Natrii metabisulfis (E 223) 3.25 mg, aqua ad iniectabile q.s. ad solutionem pro 2 mL corresp. sodium 0.79 mg.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Gentamicine 80 mg/2 mL AApot solution injectable
+
+1 ampoule de 2 mL contient 80 mg de gentamicine sous forme de sulfate de gentamicine.
+
+Gentamicine 20 mg/2 mL AApot solution injectable
+
+1 ampoule de 2 mL contient 20 mg de gentamicine sous forme de sulfate de gentamicine.
+
+Indications/Possibilités d’emploi
+
+Gentamicine AApot est utilisée pour le traitement d'infections sévères causées par des germes sensibles à la gentamicine lorsque des substances moins toxiques ne sont pas efficaces (voir «Propriétés/Effets»), comme par exemple:
+
+septicémie, bactériémie;
+
+infections des organes urinaires et génitaux;
+
+pneumonies nosocomiales;
+
+infections ostéo-articulaires;
+
+plaies et brûlures infectées;
+
+infections intra-abdominales (y compris péritonite);
+
+infections pelviennes;
+
+infections du système nerveux central (méningite).
+
+Dans toutes les indications, à l'exception des infections des voies urinaires compliquées, Gentamicine AApot ne doit être utilisée qu'en combinaison avec d'autres antibiotiques appropriés (en premier lieu une bêtalactamine ou un autre antibiotique efficace contre les bactéries anaérobies). Bêtalactamines: voir «Incompatibilités».
+
+Gentamicine AApot est également efficace pour le traitement d'infections sévères dues à certains staphylocoques.
+
+En chirurgie, Gentamicine AApot peut éventuellement être utilisée pour traiter des infections présumées ou avérées par des germes sensibles avant l'intervention; le traitement par Gentamicine AApot est poursuivi brièvement en postopératoire.
+
+Cette façon de procéder est particulièrement indiquée lors d'interventions à risque infectieux élevé (tractus gastro-intestinal, voies biliaires et urinaires, etc.).
+
+Il est recommandé de faire appel à un spécialiste, un infectiologue par exemple, pour la pose de l'indication et l'instauration du traitement par gentamicine en milieu hospitalier.
+
+Il convient de tenir compte des recommandations officielles concernant l'utilisation appropriée des antibiotiques, notamment de celles visant à prévenir l'augmentation de la résistance aux antibiotiques.
+
+Posologie/Mode d’emploi
+
+Gentamicine AApot peut être injectée lentement par voie intraveineuse ou intramusculaire. La dose recommandée pour les administrations intraveineuse et intramusculaire est identique.
+
+Le poids corporel au début du traitement sert de base pour calculer la dose correcte.
+
+Posologie usuelle
+
+Patients ayant une fonction rénale normale
+
+1. Adultes
+
+En cas d'infections sévères, la dose est de 3 mg/kg/jour, répartie en 3 doses égales, administrées toutes les 8 heures.
+
+Les directives posologiques simplifiées suivantes peuvent être suivies:
+
+Patients d'un poids supérieur à 60 kg: 80 mg (2 mL) trois fois par jour, ou 120 mg (3 mL) toutes les 12 heures.
+
+Patients pesant moins de 60 kg: 60 mg (1.5 mL) trois fois par jour.
+
+En cas d'infections menaçant le pronostic vital, on peut administrer jusqu'à 5 mg/kg/jour en 3 ou 4 doses. Cette posologie doit être ramenée à 3 mg/kg/jour dès que l'état clinique le permet. Chez ces patients, il est souhaitable de mesurer les taux sériques de l'antibiotique afin de s'assurer qu'ils sont adéquats et non excessifs. Les concentrations maximales se situent généralement entre 4 et 6 µg/mL.
+
+En cas d'infections généralisées ou d'infections des voies urinaires d'intensité modérée, dans lesquelles le microorganisme responsable est hautement sensible, une posologie de 2 mg/kg/jour, administrée en 2 doses égales, peut être envisagée. Toutefois, si la réaction clinique n'est pas immédiate, la posologie doit être augmentée à 3 mg/kg/jour, à administrer en 3 doses égales.
+
+En cas d'infections chroniques ou récidivantes des voies urinaires, Gentamicine AApot peut être administrée à la dose de 160 mg une fois par jour pendant 7 à 10 jours.
+
+2. Enfants
+
+Enfants: 6-7.5 mg/kg/jour (2.0-2.5 mg/kg toutes les 8 heures).
+
+Nouveau-nés de plus de 1 semaine et nourrissons: 7.5 mg/kg/jour (2.5 mg/kg toutes les 8 heures).
+
+Prématurés ou nouveau-nés âgés de 1 semaine ou moins: 5-6 mg/kg/jour (2.5-3.0 mg/kg toutes les 12 heures).
+
+La durée du traitement ne doit normalement pas dépasser 7 à 10 jours, quelle que soit l'infection. Un traitement plus long peut s'avérer nécessaire en cas d'infections complexes ou présentant des complications (voir «Mises en garde et précautions»).
+
+Instructions posologiques particulières
+
+Patients présentant des troubles de la fonction rénale
+
+Chez les patients présentant des troubles de la fonction rénale, la posologie doit être réduite et ajustée à la fonction rénale (voir «Mises en garde et précautions»). Dans la mesure du possible, les taux sériques de gentamicine doivent être surveillés. La prolongation de l'intervalle habituel entre les doses est une méthode d'ajustement posologique. Comme il existe une corrélation étroite entre la concentration de créatinine sérique et la demi-vie sérique de la gentamicine, on peut se baser sur cette dernière pour adapter l'intervalle à appliquer entre les doses. Pour calculer la demi-vie sérique de la gentamicine (en heures), on multiplie par 4 la valeur de la créatinine sérique (exprimée en mg/100 mL). Pour calculer approximativement l'intervalle entre les doses (en heures), on multiplie par 8 la valeur de la créatinine sérique (exprimée en mg/100 mL) (voir Tableau 1). À titre d'exemple, un patient pesant 60 kg et avec un taux de créatinine sérique de 2.0 mg/100 mL peut recevoir 60 mg (1 mg/kg) toutes les 16 heures (2.0 mg/100 mL × 8).
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Tableau 1: Ajustement posologique en cas d'insuffisance rénale:  prolongation des intervalles posologiques pour une dose inchangée | | | | | |
+| Poids corporel | Dose | Clairance de la créatinine (mL/min.) | Créatininémie (mg/100 mL) | BUN (mg/100 mL) | Intervalle posologique |
+| > 60 kg | 80 mg (2 mL) | > 70 | < 1.4 | < 18 | toutes les 8 heures |
+|  |  | 35-70 | 1.4-1.9 | 18-29 | toutes les 12 heures |
+|  |  | 24-34 | 2.0-2.8 | 30-39 | toutes les 18 heures |
+|  |  | 16-23 | 2.9-3.7 | 40-49 | toutes les 24 heures |
+|  |  | 10-15 | 3.8-5.3 | 50-74 | toutes les 36 heures |
+|  |  | 5-9 | 5.4-7.2 | 75-100 | toutes les 48 heures |
+| ≤60 kg | 60 mg (1.5 mL) | comme ci-dessus | | | |
+
+ 
+
+Chez les patients atteints d'infections systémiques sévères et présentant une atteinte rénale, il est parfois préférable d'administrer l'antibiotique plus fréquemment mais à une dose plus faible. Après avoir administré la dose initiale habituelle, la règle approximative pour déterminer les doses réduites à administrer toutes les 8 heures consiste à diviser la dose normalement recommandée par le taux de créatinine sérique (voir Tableau 2). À titre d'exemple, un patient pesant 60 kg et avec une concentration de créatinine sérique de 2.0 mg/100 mL reçoit une dose initiale de 60 mg (1 mg/kg) suivie d'une dose d'entretien d'env. 30 mg (60:2) toutes les 8 heures. On notera que l'état de la fonction rénale peut évoluer au cours du traitement par la gentamicine.
+
+|  |  |  |
+| --- | --- | --- |
+| Tableau 2: Ajustement posologique en cas d'insuffisance rénale:  diminution de la dose pour un intervalle posologique inchangé (8 heures) | | |
+| Créatininémie (mg/100 mL) | Clairance de la créatinine (mL/min/1.73 m2) | Doses suivantes (pourcentage de la dose initiale) |
+| ≤1.0 | > 100 | 100 |
+| 1.1–1.3 | 70-100 | 80 |
+| 1.4–1.6 | 55-70 | 65 |
+| 1.7–1.9 | 45-55 | 55 |
+| 2.0–2.2 | 40–45 | 50 |
+| 2.3–2.5 | 35-40 | 40 |
+| 2.6–3.0 | 30-35 | 35 |
+| 3.1–3.5 | 25-30 | 30 |
+| 3.6–4.0 | 20-25 | 25 |
+| 4.1–5.1 | 15-20 | 20 |
+| 5.2–6.6 | 10-15 | 15 |
+| 6.7–8.0 | < 10 | 10 |
+
+ 
+
+Dans le cadre d'un intervalle posologique de 8 heures, la diminution des doses  et la prolongation des intervalles posologiques sont toutes deux des méthodes appropriées.
+
+Posologie chez les patients sous hémodialyse: la quantité de gentamicine éliminée du sang peut varier en fonction de divers facteurs, notamment selon la méthode de dialyse utilisée. Une séance d'hémodialyse de 6 heures peut faire baisser la concentration sérique de gentamicine d'environ 50%. La dose recommandée à la fin de chaque période de dialyse est de 1 à 1.7 mg/kg PC (Poids Corporel), selon la sévérité de l'infection et de 2 à 2.5 mg/kg PC chez l'enfant.
+
+Chez les patients âgés, des doses d'entretien plus basses que chez les adultes plus jeunes peuvent être indiquées en raison d'une fonction rénale réduite.
+
+Aucun ajustement posologique n'est nécessaire chez les patients dont la fonction hépatique est réduite.
+
+Ces directives posologiques ne constituent pas des recommandations strictes, mais sont plutôt censées donner un ordre de grandeur permettant de fixer la posologie lorsqu'il est impossible de mesurer le taux sérique de gentamicine. Elles doivent être associées à une surveillance attentive des paramètres cliniques et de laboratoire et peuvent, si nécessaire, être modifiées par le médecin traitant.
+
+Administration intraveineuse
+
+Pour l'administration par voie intraveineuse chez l'adulte, la dose unitaire de Gentamicine AApot peut être diluée dans 50 à 200 mL de solution physiologique stérile de NaCl ou dans une solution aqueuse à 5% de dextrose, et perfusée sur une durée de 20 à 60 minutes. Chez les nourrissons et les enfants, il faut diminuer le volume de la solution à perfuser.
+
+Une dose unitaire de Gentamicine AApot peut être administrée sous forme non diluée directement dans la veine ou dans la tubulure pour perfusion sur une durée de 2 à 3 minutes. À répéter toutes les 8 heures si nécessaire.
+
+Blennorragie chez la femme et urétrite gonococcique chez l'homme
+
+Une dose unique de 240 à 280 mg de Gentamicine AApot administrée par voie intramusculaire s'est avérée efficace dans le traitement de l'urétrite gonococcique chez l'homme. La même dose, également administrée par voie intramusculaire, est considérée comme efficace contre les infections à gonocoques des organes génitaux inférieurs chez la femme.
+
+Si l'on utilise Gentamicine AApot 80 mg/2 mL, il est recommandé d'injecter une moitié de la dose dans chaque muscle fessier.
+
+Traitement combiné
+
+La dose de Gentamicine AApot ne doit pas être réduite lors d'une utilisation en traitement combiné.
+
+Contre-indications
+
+·Hypersensibilité au principe actif, à d'autres aminosides (ou aminoglycosides) ou à l'une des substances mentionnées sous «Excipients».
+
+·Myasthénie.
+
+Mises en garde et précautions
+
+Surveillance
+
+Afin d'éviter des effets indésirables, la surveillance continue de la fonction rénale et le contrôle de la fonction vestibulocochléaire sont recommandés, surtout chez les patients dont on sait ou suppose qu'ils présentent une fonction rénale altérée, tout comme le suivi des paramètres hépatiques et de laboratoire.
+
+L'urine doit être analysée pour détecter une diminution du poids spécifique, une augmentation de l'excrétion de protéines et la présence de cellules ou de cylindres urinaires. L'azote uréique sanguin (BUN), la créatinine sérique ou la clairance de la créatinine doivent être déterminés à intervalles réguliers. En cas de signes d'ototoxicité ou de néphrotoxicité, la dose doit être adaptée ou le médicament arrêté.
+
+Troubles de la fonction rénale
+
+Chez les patients atteints d'une insuffisance rénale avancée ou d'une surdité de l'oreille interne préexistante, la gentamicine ne doit être utilisée que si le médecin le juge absolument nécessaire. Chez les patients dont la fonction rénale est réduite, l'intervalle entre les doses doit être prolongé ou la dose réduite (voir «Posologie/Mode d'emploi»).
+
+Néphrotoxicité et ototoxicité
+
+Une néphrotoxicité accrue a été rapportée après l'administration concomitante d'antibiotiques aminosides et de céphalothine.
+
+Une lésion du huitième nerf crânien (nerf vestibulocochléaire) peut survenir, avec une altération de la fonction d'équilibre et de la fonction auditive. L'atteinte vestibulaire constitue la réaction ototoxique la plus fréquente. Une perte auditive se manifeste initialement par une diminution de l'acuité auditive dans les hautes fréquences et est généralement irréversible.
+
+Les symptômes d'une ototoxicité sont: sensation de vertige, bourdonnements d'oreilles (acouphènes), vertige et, plus rarement, perte auditive (voir «Effets indésirables»).
+
+Il existe un risque accru d'ototoxicité chez les patients présentant des mutations de l'ADN mitochondrial (en particulier la substitution A par G du nucléotide 1555 dans le gène de l'ARNr 12S), même si les taux sériques d'aminoside restent dans l'intervalle recommandé pendant le traitement. D'autres approches thérapeutiques doivent être envisagées chez ces patients.
+
+Chez les patients présentant des antécédents maternels de mutations pertinentes ou de surdité induite par les aminosides, des traitements alternatifs ou des tests génétiques doivent être envisagés avant l'administration.
+
+Chez les patients présentant une insuffisance rénale terminale, chez les patients sous hémodialyse intermittente ou chronique ou en dialyse péritonéale chronique, la toxicité est essentiellement auditive, les reins n'étant plus fonctionnels.
+
+Pour réduire le risque de néphrotoxicité et d'ototoxicité, les instructions suivantes doivent être suivies:
+
+·Chez les patients présentant des facteurs de risque supplémentaires, des contrôles réguliers de la fonction auditive, de la fonction d'équilibre et de la fonction rénale sont indiqués. Un risque ototoxique accru a été rapporté en cas d'altération de la fonction hépatique ou auditive, de bactériémie et de fièvre. Une hypovolémie ou une hypotension ainsi que des maladies hépatiques ont été citées comme facteurs de risque supplémentaires de néphrotoxicité.
+
+·Contrôle de la fonction rénale avant, pendant et après le traitement.
+
+·Ajuster la posologie de manière stricte en fonction de la clairance de la créatinine (ou de la concentration de créatinine sérique). En cas d'insuffisance rénale, la dose doit être ajustée à la fonction rénale (voir «Posologie/Mode d'emploi»).
+
+·Contrôles des concentrations sériques de gentamicine en cours de traitement. En cas d'administration conventionnelle plusieurs fois par jour, les pics de concentration ne doivent pas dépasser 10 à 12 mg/L (seuil toxique pour le système vestibulocochléaire) et les concentrations résiduelles 2 mg/L (voir «Posologie/Mode d'emploi»).
+
+·En cas de lésions préexistantes de l'oreille interne (troubles de l'audition ou de l'équilibre) ou de traitement à long terme, une surveillance supplémentaire de la fonction d'équilibre et de la capacité auditive est nécessaire.
+
+·Un traitement prolongé doit être évité. Dans la mesure du possible, la durée du traitement ne doit pas dépasser 7 à 10 jours (voir «Posologie/Mode d'emploi»).
+
+·L'enchaînement immédiat d'un nouveau traitement par aminoside doit être évité; respecter si possible un intervalle de 7 à 14 jours entre les traitements.
+
+·Éviter autant que possible l'administration concomitante d'autres substances potentiellement ototoxiques ou néphrotoxiques. Si cela ne peut être évité, la fonction rénale doit être surveillée de manière particulièrement étroite (voir «Interactions»).
+
+·Assurer une hydratation et une production d'urine suffisantes.
+
+Troubles neuromusculaires
+
+Étant donné que la gentamicine a des propriétés de blocage neuromusculaire, une attention particulière doit être portée aux patients ayant une maladie neuromusculaire préexistante (p.ex. maladie de Parkinson). Cette précaution est aussi valable chez les patients recevant simultanément des myorelaxants (p.ex. lors de l'administration péri-opératoire de gentamicine) (voir «Interactions»).
+
+Diarrhée associée aux antibiotiques et colite pseudo-membraneuse
+
+Le traitement par la gentamicine peut entraîner la croissance excessive de microorganismes résistants au médicament. Si cela se produit, un traitement approprié doit être initié.
+
+Des diarrhées et des colites pseudo-membraneuses ont été observées lors de l'utilisation concomitante de gentamicine avec d'autres antibiotiques. Ces diagnostics doivent être considérés chez tout patient qui développe une diarrhée pendant ou peu après le traitement. La gentamicine doit être arrêtée si une diarrhée sévère et/ou sanglante apparaît pendant le traitement, et un traitement approprié doit être initié. Les médicaments inhibant le péristaltisme ne doivent pas être administrés.
+
+Réactions d'hypersensibilité, réactions croisées
+
+De très rares rapports mentionnent des syndromes de Stevens-Johnson et de Lyell (érythrodermie bulleuse avec épidermolyse) en cas d'utilisation d'aminosides, dont la gentamicine.
+
+On a constaté des allergies croisées entre aminosides.
+
+Brûlures
+
+Chez les patients présentant des brûlures étendues, les concentrations sériques d'aminosides peuvent être réduites. La dose doit donc être ajustée en fonction de la concentration sérique mesurée.
+
+Syndrome semblable au syndrome de Fanconi
+
+Un syndrome semblable au syndrome de Fanconi avec aminoacidurie et acidose métabolique a été observé chez certains enfants et adultes traités par la gentamicine.
+
+Excipients revêtant un intérêt particulier
+
+L'excipient métabisulfite de sodium (E 223) peut provoquer dans de rares cas des réactions d'hypersensibilité sévères et des spasmes bronchiques (voir aussi «Effets indésirables»).
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par ampoule, c'est-à-dire qu'il est essentiellement «sans sodium».
+
+Interactions
+
+Myorelaxants et éther
+
+Les propriétés de blocage neuromusculaire des aminosides sont renforcées par l'éther et les myorelaxants. Lorsque la gentamicine est administrée pendant ou immédiatement après une opération, le blocage neuromusculaire induit par les curares de type non dépolarisant utilisés simultanément peut se prolonger et provoquer une paralysie respiratoire. En raison de leur teneur en citrate, des transfusions importantes de sang anticoagulé peuvent également provoquer de tels phénomènes. Les patients en question doivent être surveillés avec une attention particulière. L'injection de chlorure de calcium permet de lever le blocage neuromusculaire dû aux aminosides.
+
+Anesthésie par le méthoxyflurane
+
+Les aminosides peuvent renforcer l'effet néphrotoxique du méthoxyflurane. En cas d'utilisation concomitante, des néphropathies très graves sont possibles. Avant une intervention chirurgicale, l'anesthésiste doit être informé du traitement par aminosides.
+
+Médicaments potentiellement néphrotoxiques ou ototoxiques
+
+L'utilisation systémique simultanée et/ou séquentielle ou l'utilisation locale d'autres médicaments potentiellement ototoxiques et/ou néphrotoxiques doit être évitée. Ces médicaments comprennent les aminosides (p.ex. amikacine, gentamicine, kanamycine, néomycine, streptomycine, tobramycine, vancomycine), la bacitracine, la polymyxine B, la colistine, les composés inorganiques du platine (p.ex. cisplatine), le méthotrexate à haute dose, l'ifosfamide, la pentamidine, le foscarnet, certaines substances antivirales (aciclovir, ganciclovir, adéfovir, cidofovir, ténofovir), l'amphotéricine B, les immunosuppresseurs (p.ex. ciclosporine, tacrolimus), certaines céphalosporines et des diurétiques de l'anse comme l'acide étacrynique et le furosémide ainsi que les produits de contraste iodés.
+
+Si une telle combinaison est nécessaire, la fonction rénale doit être étroitement surveillée à l'aide de tests de laboratoire correspondants.
+
+Pour le cisplatine, il faut tenir compte du fait que la néphrotoxicité de la gentamicine peut encore être renforcée environ 3 à 4 semaines après l'administration de cette substance.
+
+Autres antibiotiques
+
+Un mélange in vitro d'aminosides et d'antibiotiques bêtalactamines (pénicillines ou céphalosporines) peut provoquer une inactivation réciproque significative. Même lorsqu'un aminoside et une pénicilline sont administrés séparément par des voies différentes, une réduction de la demi-vie sérique ou de la concentration sérique de l'aminoside a été observée chez les patients atteints d'insuffisance rénale ainsi que chez certains patients à la fonction rénale normale.
+
+Une réduction de la demi-vie sérique de la gentamicine a été rapportée chez des patients atteints d'insuffisance rénale sévère et recevant simultanément de la gentamicine et de la carbénicilline. Normalement, une telle inactivation de l'aminoside n'est cliniquement significative qu'en cas d'insuffisance rénale sévère.
+
+Grossesse, allaitement
+
+Grossesse
+
+Les données concernant l'utilisation de la gentamicine chez la femme enceinte sont limitées. Les études menées chez l'animal ont montré une toxicité sur la reproduction (voir «Données précliniques»). La gentamicine franchit la barrière placentaire et peut nuire à la santé du fœtus lorsqu'elle est administrée à la femme enceinte. Une surdité congénitale totale, irréversible et bilatérale a été rapportée chez des enfants dont les mères avaient été traitées pendant la grossesse par des aminosides, dont la gentamicine. En raison du risque potentiel de lésions fœtales au niveau de l'oreille interne ou du rein, Gentamicine AApot doit uniquement être utilisée en cas d'indication menaçant le pronostic vital et si aucune autre option thérapeutique n'est disponible. Lorsque la gentamicine doit être appliquée pendant la grossesse, ou lorsque la patiente débute une grossesse pendant l'application de gentamicine, il faut l'informer des risques potentiels encourus par le fœtus, et un contrôle des fonctions auditive et rénale du nouveau-né devrait être effectué.
+
+Allaitement
+
+La gentamicine passe dans le lait maternel, et des concentrations sériques faibles ont été mesurées chez les enfants allaités. Il faut décider si l'allaitement doit être interrompu ou si la gentamicine doit être arrêtée ou ne pas être administrée. Les enfants allaités peuvent présenter une diarrhée et des infections fongiques des muqueuses, ce qui peut nécessiter l'arrêt de l'allaitement. L'éventualité d'une sensibilisation doit être prise en compte.
+
+Fertilité
+
+Aucune donnée concernant les effets de Gentamicine AApot sur la fertilité n'est disponible, ni chez l'être humain ni chez l'animal.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude concernant les effets sur l'aptitude à la conduite et l'utilisation de machines n'a été effectuée.
+
+En cas de survenue d'éventuels effets indésirables, tels qu'étourdissements, obnubilation, perte auditive, léthargie, confusion, convulsion ou troubles visuels, Gentamicine AApot peut compromettre l'aptitude à la conduite et l'utilisation de machines.
+
+Effets indésirables
+
+|  |  |
+| --- | --- |
+| Tableau 3: Liste des effets indésirables  Très fréquent (≥1/10); fréquent (≥1/100 à <1/10); occasionnel (≥1/1000 à <1/100); rare (≥1/10 000 à <1/1000); très rare (<1/10 000); fréquence indéterminée (ne peut être estimée sur la base des données disponibles) | |
+| Infections et infestations | |
+| Fréquence indéterminée: | surinfection (due à des bactéries résistantes à la gentamicine)  colite pseudomembraneuse (voir «Mises en garde et précautions») |
+| Affections hématologiques et du système lymphatique | |
+| Occasionnel: | splénomégalie, augmentation ou diminution du nombre de réticulocytes, anémie, leucopénie, granulocytopénie, éosinophilie, thrombopénie, dyscrasie |
+| Rare: | agranulocytose transitoire |
+| Affections du système immunitaire | |
+| Occasionnel: | réactions anaphylactiques (incluant choc anaphylactique) et réactions d'hypersensibilité1 |
+| Troubles du métabolisme et de la nutrition | |
+| Rare: | œdème laryngé, perte de l'appétit, perte de poids, hypocalcémie, hypomagnésémie, hyponatrémie et hypokaliémie, syndrome de type Bartter chez des patients traités à des doses élevées sur une longue durée (plus de 4 semaines) |
+| Très rare: | acidose métabolique, hypophosphatémie |
+| Affections psychiatriques | |
+| Rare: | dépression, léthargie, confusion |
+| Très rare: | hallucinations |
+| Affections du système nerveux | |
+| Occasionnel: | insensibilité, convulsions |
+| Rare: | hypertension intracrânienne idiopathique, syndrome cérébral organique aigu, céphalées, polyneuropathie |
+| Très rare: | paresthésies, encéphalopathie, blocage neuromusculaire, troubles de l'équilibre |
+| Affections oculaires | |
+| Occasionnel: | troubles visuels |
+| Affections de l'oreille et du labyrinthe | |
+| Fréquent à très fréquent: | étourdissements, vertige, bourdonnements, perte auditive, acouphènes |
+| Très rare: | atteinte vestibulaire, maladie de Ménière, surdité |
+| Fréquence indéterminée: | lésion du 8e nerf crânien, perte auditive irréversible et surdité irréversible |
+| Affections cardiaques | |
+| Occasionnel: | hypotension, hypertension |
+| Affections respiratoires, thoraciques et médiastinales | |
+| Occasionnel: | dépression respiratoire |
+| Rare: | fibrose pulmonaire |
+| Affections gastro-intestinales | |
+| Occasionnel: | nausées, vomissements, stomatite |
+| Rare: | augmentation de la salivation |
+| Affections hépatobiliaires | |
+| Occasionnel: | hépatomégalie transitoire, augmentation de l'ASAT, de l'ALAT et de la LDH ainsi que de la phosphatase alcaline et de la bilirubine |
+| Affections de la peau et du tissu sous-cutané | |
+| Occasionnel: | picotements, éruption cutanée, prurit, urticaire, sensation de brûlure généralisée, dermatite allergique |
+| Rare: | alopécie, purpura |
+| Très rare: | syndrome de Stevens-Johnson2, érythrodermie bulleuse avec épidermolyse (syndrome de Lyell)2, érythème multiforme |
+| Affections musculo-squelettiques et du tissu conjonctif | |
+| Occasionnel: | tressaillements musculaires, arthralgie, douleurs musculaires, syndrome pseudo-myasthénique |
+| Rare: | myalgie |
+| Très rare: | tremblements |
+| Affections du rein et des voies urinaires | |
+| Fréquent à très fréquent (patients à risque): | réactions néphrotoxiques (cylindrurie, protéinurie, hématurie, oligurie), augmentation de l'azotémie (BUN), de l'azote non protéique (NPN), de la créatininémie |
+| Rare: | azotémie (réversible) |
+| Très rare: | défaillance rénale aiguë, hyperphosphaturie, aminoacidurie, syndrome semblable au syndrome de Fanconi chez des patients ayant reçu des doses élevées sur une période prolongée (voir «Mises en garde et précautions») |
+| Troubles généraux et anomalies au site d'administration | |
+| Occasionnel: | fièvre, atrophie sous-cutanée, nécrose du tissu adipeux au point d'injection |
+| Fréquence indéterminée: | douleur au point d'injection |
+
+ 
+
+1 Réactions possibles d'hypersensibilité de degré de sévérité variable, pouvant aller de l'éruption cutanée et du prurit à des réactions d'hypersensibilité aiguës sévères (anaphylaxie) en passant par une fièvre d'origine médicamenteuse.
+
+2 Peut se manifester sous forme de réaction d'hypersensibilité.
+
+Néphrotoxicité
+
+Des effets secondaires sont plus fréquemment constatés chez les patients ayant des antécédents d'insuffisance rénale, chez les patients suivant un traitement à long terme et chez les patients recevant des doses supérieures à celle qui sont recommandées. Les patients âgés et les jeunes adultes sont particulièrement vulnérables, et il est conseillé de les soumettre à une surveillance clinique étroite.
+
+Neurotoxicité
+
+Des effets secondaires ont été rapportés au niveau du 8e nerf crânien, touchant aussi bien le nerf vestibulaire que le nerf auditif. Les patients essentiellement concernés sont ceux atteints d'insuffisance rénale et ceux ayant reçu des doses élevées et/ou un traitement prolongé. Les symptômes regroupent des vertiges, des étourdissements, des acouphènes, des bourdonnements d'oreilles et une perte auditive. La perte auditive se manifeste tout d'abord par une diminution de la perception des hautes fréquences et peut être irréversible. Comme avec d'autres aminosides, les altérations vestibulaires peuvent être irréversibles. Les autres facteurs qui accroissent le risque de toxicité peuvent être une déshydratation, l'administration simultanée d'acide étacrynique ou de furosémide ou une exposition antérieure à d'autres substances ototoxiques.
+
+Hypersensibilité aux sulfites
+
+Gentamicine AApot contient du métabisulfite de sodium (E 223) comme antioxydant; celui-ci peut provoquer des réactions d'hypersensibilité chez les patients prédisposés (érythème, urticaire, angiœdème, rhinite, asthme et choc circulatoire).
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament.
+
+Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+La gentamicine a une marge thérapeutique étroite. En cas d'accumulation (p.ex. en cas d'insuffisance rénale), des lésions rénales et des lésions du nerf vestibulocochléaire peuvent apparaître.
+
+Traitement en cas de surdosage
+
+Arrêter le traitement. Il n'y a pas d'antidote spécifique. La gentamicine peut être éliminée du sang par dialyse (avec la dialyse péritonéale, l'élimination est plus lente et implique des interruptions). L'exsanguino-transfusion peut être envisagée chez le nouveau-né.
+
+Traitement des blocages neuromusculaires
+
+En cas de blocage neuromusculaire (en général dû à des interactions, voir «Interactions»), l'administration de chlorure de calcium est recommandée ainsi que le recours à la ventilation artificielle si nécessaire.
+
+Propriétés/Effets
+
+Code ATC
+
+J01GB03
+
+Mécanisme d'action
+
+La gentamicine est un antibiotique de la famille des aminosides. Elle influence la croissance des bactéries sensibles en inhibant la synthèse des protéines. Elle exerce sur les germes pathogènes Gram négatif et Gram positif une action bactéricide qui repose sur sa liaison à la sous-unité 30S du ribosome bactérien.
+
+Mécanismes de résistance
+
+La résistance à la gentamicine peut être due aux mécanismes suivants:
+
+·Inactivation enzymatique: les modifications enzymatiques des molécules d'aminosides constituent le mécanisme de résistance le plus fréquent. Les acétyltransférases, phosphotransférases ou nucléotidyltransférases, qui sont pour la plupart codées par des plasmides, en sont responsables.
+
+·Pénétration réduite et efflux actif: ces mécanismes de résistance se retrouvent surtout chez Pseudomonas aeruginosa.
+
+·Changement de la structure cible: les modifications au sein des ribosomes ne sont qu'occasionnellement à l'origine d'une résistance.
+
+Il existe une importante résistance croisée à la gentamicine et aux autres antibiotiques aminosides.
+
+L'association d'aminosides avec des antibiotiques bêtalactamines déploie un effet synergique in vitro et montre un bénéfice dans les modèles animaux en termes d'efficacité et de limitation de l'apparition de résistances.
+
+Les aminosides sont utilisés en association pour obtenir une synergie bactéricide (essentiellement démontrée in vitro), prévenir l'émergence de résistances et élargir le spectre d'action du traitement.
+
+Valeurs critiques
+
+Définitions: S: sensible à une exposition standard; R: résistant.
+
+La gentamicine est testée à l'aide d'une série conventionnelle de dilution. Les concentrations minimales inhibitrices suivantes pour les germes sensibles et résistants ont été déterminées (voir Tableau 4).
+
+|  |  |  |
+| --- | --- | --- |
+| Tableau 4: Valeurs critiques EUCAST (European Committee on Antimicrobial Susceptibility Testing) (version 14.0) | | |
+| Agents pathogènes | S | R |
+| Enterobacteriales (infections systémiques) | (≤2 mg/L)1 | (>2 mg/L)1 |
+| Enterobacteriales (infections d'origine urinaire) | ≤2 mg/L | >2 mg/L |
+| Acinetobacter ssp. (infections systémiques) | (≤4 mg/L)1 | (>4 mg/L)1 |
+| Acinetobacter ssp. (infections d'origine urinaire) | ≤4 mg/L | >4 mg/L |
+| Staphylococcus aureus (infections systémiques) | (≤2 mg/L)1 | (>2 mg/L)1 |
+| Staphylocoques coagulase négative (infections systémiques) | (≤2 mg/L)1 | (>2 mg/L)1 |
+| Brucella melitensis | (≤0.5 mg/L)1 | (>0.5 mg/L)1 |
+
+ 
+
+1 Les valeurs critiques se basent sur la valeur seuil épidémiologique (ECOFF), qui distingue les isolats de type sauvage de ceux dont la sensibilité est réduite.
+
+Spectre de l'activité antibactérienne
+
+La sensibilité d'un isolat clinique à la gentamicine doit être déterminée par des méthodes standard. Les résultats des analyses doivent être évalués conformément aux directives locales en vigueur en matière de maladies infectieuses et de microbiologie clinique.
+
+La prévalence de la résistance acquise de certaines espèces peut varier localement et dans le temps. Par conséquent, et particulièrement pour le traitement adéquat d'infections sévères, il est nécessaire de disposer d'informations locales sur la situation en matière de résistance. Si l'efficacité de la gentamicine est remise en question en raison de la situation locale en matière de résistance, il convient de recourir au conseil d'experts.
+
+|  |  |
+| --- | --- |
+| Tableau 5: | |
+| Espèces habituellement sensibles | Espèces naturellement résistantes |
+| Microorganismes aérobies Gram positif | Microorganismes aérobies Gram positif |
+| Staphylococcus aureus | Enterococcus spp.§ |
+| Staphylococcus saprophyticus° | Enterococcus faecium |
+| Microorganismes aérobies Gram négatif | Streptococcus spp. § |
+| Acinetobacter baumannii | Microorganismes aérobies Gram négatif |
+| Acinetobacter pittii | Burkholderia cepacia |
+| Citrobacter freundii | Legionella pneumophila |
+| Citrobacter koseri | Pseudomonas aeruginosa |
+| Enterobacter cloacae | Stenotrophomonas maltophilia |
+| Enterococcus faecalis | Microorganismes anaérobies |
+| Escherichia coli | Bacteroides spp. |
+| Klebsiella aerogenes | Clostridioides difficile |
+| Klebsiella oxytoca | Autres microorganismes |
+| Klebsiella pneumoniae | Chlamydia spp. |
+| Morganella morganii | Mycoplasma spp. |
+| Proteus mirabilis | Ureaplasma urealyticum |
+| Proteus vulgaris° |  |
+| Salmonella enterica (salmonelles entériques) |  |
+| Serratia liquefaciens° |  |
+| Serratia marcescens |  |
+
+ 
+
+° Aucune donnée récente n'était disponible au moment de la publication des tableaux. La littérature primaire, les ouvrages de référence et les recommandations thérapeutiques partent du principe d'une sensibilité.
+
+§ Efficacité clinique prouvée pour le traitement de l'endocardite à entérocoques et à streptocoques en association avec la pénicilline, en l'absence de résistance de haut niveau (entérocoques)
+
+Pharmacodynamique
+
+Pas de données disponibles.
+
+Efficacité clinique
+
+Pas de données disponibles.
+
+Pharmacocinétique
+
+Absorption
+
+Comme tous les antibiotiques aminosides, la gentamicine n'est pratiquement pas absorbée par la muqueuse intestinale saine après administration orale. C'est pourquoi l'utilisation thérapeutique se fait par voie parentérale, c'est-à-dire par voie intraveineuse ou intramusculaire.
+
+En cas d'administration intramusculaire de 80 mg de gentamicine, des pics de concentration sérique de 8 µg/mL en moyenne ont normalement été atteints après 30 à 60 minutes chez des patients ayant une fonction rénale normale; les taux sériques sont mesurables pendant 6 à 8 heures chez les adultes.
+
+Après une dose intramusculaire de 1 mg/kg, les concentrations sériques suivantes ont été atteintes dans les 30 à 60 minutes:
+
+·1.5 µg/mL chez des enfants de 6 mois à 5 ans,
+
+·2.0 µg/mL chez des enfants de 5 à 10 ans,
+
+·2.8 µg/mL chez des enfants de plus de 10 ans,
+
+ces concentrations étant mesurables pendant 8 heures.
+
+Si la gentamicine est administrée en perfusion intraveineuse sur 2 heures, les concentrations sériques sont similaires à celles obtenues avec l'administration intramusculaire.
+
+Chez les patients ayant une fonction rénale normale, les concentrations sériques maximales de gentamicine sont d'environ 12 µg/mL après l'administration de 80 mg de Gentamicine AApot en perfusion courte (30 minutes). Lorsque des patients ayant une fonction rénale normale reçoivent 1.0 mg/kg de gentamicine i.v. ou i.m. toutes les 8 heures, la substance ne s'accumule pas dans le sérum.
+
+Chez le nourrisson, l'administration d'une dose unique de 2.5 mg/kg se traduit généralement par des pics de concentration sérique de 3 à 5 µg/mL.
+
+Distribution
+
+Le volume de distribution de la gentamicine est de 0.2 à 0.3 L/kg et correspond approximativement au compartiment extracellulaire. Après administration parentérale, la gentamicine peut être décelée dans le sérum, la lymphe, les tissus, les expectorations et dans les liquides péricardique, pleural, synovial et péritonéal. Les concentrations dans le cortex rénal peuvent dans certains cas être huit fois supérieures aux taux sériques habituels. Les concentrations dans la bile étaient généralement faibles et indiquaient une excrétion biliaire minimale. La gentamicine peut traverser les membranes lipidiques, mais les concentrations dans l'humeur aqueuse oculaire et dans le lait maternel sont faibles.
+
+La gentamicine traverse la barrière placentaire et atteint dans la circulation fœtale environ 40% de la concentration sérique maternelle. Comme les aminosides diffusent mal dans l'espace sous-arachnoïdien après administration parentérale, les concentrations de gentamicine dans le liquide céphalo-rachidien sont souvent faibles et dépendent de la dose, du taux de pénétration et du degré d'inflammation méningée.
+
+Pour la gentamicine, la liaison aux protéines plasmatiques est de l'ordre de 30%, celle aux érythrocytes de 10%.
+
+Métabolisme
+
+La gentamicine n'est pratiquement pas métabolisée dans l'organisme humain et est excrétée sous forme inchangée dans l'urine.
+
+Élimination
+
+Après administration à des patients ayant une fonction rénale normale, 70% ou plus de la dose administrée sont éliminés dans l'urine par filtration glomérulaire (sans réabsorption) en l'espace de 24 heures. Une petite partie est éliminée par la bile et les fèces.
+
+Chez les patients ayant une fonction rénale normale, la demi-vie est de 1 à 3 heures, quel que soit le mode d'administration. Chez le nouveau-né, dont la fonction rénale n'est pas encore pleinement développée, la demi-vie est multipliée par le facteur 2 environ.
+
+Il existe une forte corrélation entre le taux endogène de clairance de la créatinine et celui de créatinine sérique d'une part et la demi-vie sérique de la gentamicine d'autre part. Les résultats de ces examens peuvent servir de repères pour l'ajustement de la dose chez les patients atteints d'insuffisance rénale (voir «Posologie/Mode d'emploi»).
+
+Cinétique pour certains groupes de patients
+
+On constate chez les patients atteints d'une insuffisance rénale sévère une diminution de la concentration urinaire en aminoside ainsi qu'une moins bonne pénétration dans le parenchyme rénal. Il convient de tenir compte de cette élimination réduite de l'antibiotique de même que de la néphrotoxicité et de l'ototoxicité potentielles des aminosides lorsque l'on traite des patients souffrant d'infections des voies urinaires.
+
+Des brûlures concernant une grande surface corporelle (volume accru de liquide extracellulaire) peuvent modifier la pharmacocinétique et conduire à un taux sérique réduit d'aminosides. Chez ces patients, il est particulièrement important de mesurer les concentrations sériques de gentamicine car ces valeurs permettent d'ajuster les doses en conséquence.
+
+La demi-vie sérique peut atteindre 56 à 70 heures en cas d'anurie. Elle est de 3 à 10 heures chez les sujets sous hémodialyse. La dialyse péritonéale a de ce point de vue un effet nettement moins marqué. Chez les patients atteints de mucoviscidose, la demi-vie est fortement raccourcie.
+
+Données précliniques
+
+Toxicité chronique
+
+Des recherches sur la toxicité chronique de la gentamicine (administration i.m.) menées sur diverses espèces animales ont révélé des effets néphrotoxiques et ototoxiques en cas de posologies élevées.
+
+Potentiel mutagène et carcinogène
+
+Aucun examen approfondi de la mutagénicité de Gentamicine AApot n'a été réalisé. Les investigations réalisées à ce jour ont donné des résultats négatifs.
+
+Aucune expérimentation animale de longue durée portant sur le potentiel carcinogène de la substance n'est disponible.
+
+Toxicité sur la reproduction
+
+Comme observé pour toute la classe des antibiotiques aminosides, il existe un risque potentiel d'atteintes rénales et auditives (oreille interne) pour le fœtus. Des anomalies rénales chez les fœtus ont été documentées après administration de gentamicine à des rats et cobayes femelles gravides.
+
+Remarques particulières
+
+Incompatibilités
+
+Attention!
+
+Gentamicine AApot ne doit pas être mélangée à d'autres médicaments mais être administrée séparément.
+
+Influence sur les méthodes de diagnostic
+
+Aucun effet connu.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Le médicament doit être conservé hors de portée des enfants!
+
+Gentamicine AApot doit être conservée à la température ambiante (15-25 °C).
+
+Remarques concernant la manipulation
+
+Gentamicine AApot est destinée à une utilisation unique. Après le prélèvement de la dose nécessaire, la solution injectable restante doit être éliminée.
+
+Numéro d’autorisation
+
+33380 (Swissmedic).
+
+Présentation
+
+Gentamicine 80 mg/2 mL AApot solution injectable: 25 ampoules à 2 mL (clinique) (A)
+
+Gentamicine 20 mg/2 mL AApot solution injectable: 25 ampoules à 2 mL (clinique) (A)
+
+Titulaire de l’autorisation
+
+Pharmacie de l'armée, 3063 Ittigen, Suisse
+
+Mise à jour de l’information
+
+Août 2024

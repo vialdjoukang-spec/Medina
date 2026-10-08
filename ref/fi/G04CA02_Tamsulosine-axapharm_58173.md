@@ -1,0 +1,335 @@
+---
+titre: "Tamsulosine axapharm"
+titulaire: "Axapharm AG"
+atc: G04CA02
+substances: "Chlorhydrate de tamsulosine"
+autorisation_swissmedic: 58173
+date_version: 2023-12-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/ece08806d2ae43838e2ff3334819a1d7-fr.html
+---
+
+Tamsulosine axapharm
+
+Composition
+
+Principes actifs
+
+Chlorhydrate de tamsulosine.
+
+Excipients
+
+Cellulose microcrystalline
+
+Copolymère d’acide méthacrylique et d’acrylate d’éthyle (1:1) dispersion de 30 % avec polysorbate 80 et sodium de laurilsulfate
+
+Citrate de triéthyle
+
+Talc
+
+Oxyde de fer rouge (E172)
+
+Oxyde de fer jaune (E172)
+
+Oxyde de fer noir (E172)
+
+Dioxyde de titane (E171)
+
+Indigotine (E132)
+
+Gélatine
+
+1 capsule retard contient max. 0.0073 mg de sodium
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+1 capsule retard contient: 400 µg de Tamsulosini hydrochloridum (correspondant à 367 µg tamsulosine).
+
+Indications/Possibilités d’emploi
+
+Traitement des symptômes fonctionnels de l’hyperplasie bénigne de la prostate.
+
+Posologie/Mode d’emploi
+
+Posologie ordinaire
+
+Prendre 1 capsule retard par jour, le matin, après le petit-déjeuner ou après le premier repas du jour. Éviter la prise à jeun.
+
+Avaler les capsules retard sans les croquer avec un verre d’eau (environ 150 ml) en position debout ou assise.
+
+Les capsules retard ne doivent être ni croquées ni mâchées, car cela entraverait la libération retardée du principe actif.
+
+On dispose d’expériences suffisantes dans le traitement au long cours jusqu’à 6 ans.
+
+Recommandations posologiques spéciales
+
+Patients atteints de troubles de la fonction hépatique
+
+En cas d’insuffisance hépatique légère à modérée (Child Pugh A et B), aucun ajustement posologique n’est nécessaire. En cas d’insuffisance hépatique sévère (Child Pugh C), la tamsulosine est contre-indiquée.
+
+Patients atteints de troubles de la fonction rénale
+
+En cas d’insuffisance rénale légère à modérée, aucun ajustement posologique n’est nécessaire. La pharmacocinétique de la tamsulosine chez les patients avec une clairance de la créatinine <10 ml/min n’a pas été étudiée; aucune recommandation relative à la posologie ne peut donc être faite pour ces patients.
+
+Patients âgés
+
+Un ajustement de la dose n’est pas nécessaire. Il faut néanmoins prendre en compte le fait que le risque d’hypotensions orthostatiques peut être plus élevé chez les patients gériatriques.
+
+Enfants et adolescents
+
+L’innocuité et l’efficacité de la tamsulosine n’ont pas été étudiées chez les enfants et les adolescents. Il n’existe aucune indication pour cette tranche d’âge.
+
+Contre-indications
+
+-Insuffisance hépatique sévère,
+
+-Antécédents d’hypotension orthostatique,
+
+-Co-administration d’inhibiteurs puissants de la CYP3A4 (par ex. clarithromycine, itraconazole, voriconazole),
+
+-Hypersensibilité à la tamsulosine ou à l’un des composants du médicament.
+
+Mises en garde et précautions
+
+Avant de commencer le traitement par Tamsulosine axapharm, les autres causes susceptibles d’expliquer les symptômes doivent être éliminées au cours du diagnostic différentiel. Avant le traitement, puis à des intervalles réguliers, un examen digital du rectum du patient doit être effectué et l’antigène spécifique de la prostate (PSA) doit éventuellement être déterminé.
+
+Risque d’hypotension
+
+Comme les autres alpha1-bloquants, Tamsulosine axapharm peut induire, dans des cas isolés, une chute de la pression artérielle qui peut, rarement, déclencher une syncope. La prudence est de rigueur chez les patients présentant une réaction hémodynamique excessive aux alpha1-bloquants dans l’anamnèse.
+
+Chez les patients ayant des antécédents d’hypotension orthostatique, la prise de la première dose doit se faire sous surveillance de la fréquence cardiaque et de la pression artérielle. Lors des premiers signes de vertiges ou de faiblesse, le patient doit s’asseoir ou se coucher jusqu’à la disparition des symptômes.La prudence est de rigueur lors de l’utilisation des alpha1-bloquants chez les patients présentant une cardiopathie coronarienne ainsi que chez des patients hypertendus sous traitement antihypertenseur.
+
+Syndrome de l’iris flottant intra-opératoire (IFIS)
+
+Le syndrome de l’iris hypotonique peropératoire (Intraoperative Floppy Iris Syndrome, IFIS) a été observé au cours de chirurgies ophtalmologiques (opération de la cataracte et du glaucome) chez certains patients ayant reçu un traitement par des antagonistes des récepteurs adrénergiques alpha1, comme le chlorhydrate de tamsulosine, avant ou pendant l’opération. Cette variante du syndrome de pupille étroite est caractérisée par l’association d’un iris flasque (qui ondule en réaction aux courants d’irrigation peropératoires), d’un myosis peropératoire progressif (malgré une dilatation préopératoire à l’aide de médicaments mydriatiques standard), et d’un prolapsus potentiel de l’iris vers les incisions pour la phaco-émulsification.
+
+Un IFIS peut augmenter le risque de complications oculaires intra- et postopératoires (par ex. perte du cristallin, décollement de rétine, endophtalmie). L’opérateur doit être informé de la prise de tamsulosine et être préparé le cas échéant à modifier éventuellement ses techniques opératoires (comme par ex. l’utilisation de rétracteurs d’iris à crochets, d’anneaux de dilatation de l’iris ou de substances visco-élastiques).
+
+Il est recommandé, chez les patients pour qui une chirurgie ophtalmologique est prévue immédiatement, de ne pas traiter par la tamsulosine. D'autre part, il n'a pas été prouvé que l’arrêt de la tamsulosine 1-2 semaines avant l’opération de la cataracte est avantageux. Un IFIS a également été parfois rapporté chez des patients qui avaient déjà arrêté la tamsulosine quelques temps avant l’intervention.
+
+Précautions supplémentaires
+
+Les patients présentant une insuffisance rénale sévère (clairance de la créatinine <10 ml/min) doivent être traités avec une grande prudence car aucune donnée n’est disponible chez ces patients.Des études cliniques à court et à long terme ont mis en évidence des troubles de l’éjaculation. Des troubles de l’éjaculation, tels que par ex. des éjaculations rétrogrades ou des anéjaculations, ont également été rapportés après l’autorisation de mise sur le marché du produit.
+
+La co-administration de chlorhydrate de tamsulosine et d’inhibiteurs de CYP3A4 peut augmenter l’exposition à la tamsulosine (voir la rubrique «Interactions»). Il existe tout particulièrement un risque d’augmentation significative de l’exposition à la tamsulosine chez les «CYP2D6 poor metabolisers» traités simultanément par des inhibiteurs puissants de la CYP3A4. Le polymorphisme de la CYP2D6 étant généralement inconnu en dehors des études cliniques, la tamsulosine ne doit pas être administrée avec des inhibiteurs puissants de la CYP3A4 (par ex. itraconazole, voriconazole, clarithromycine, indinavir, nelfinavir, ritonavir, saquinavir).
+
+En cas de co-administration avec des inhibiteurs modérés de la CYP3A4 (par ex. érythromycine, fluconazole, diltiazem, vérapamil), le chlorhydrate de tamsulosine ne doit être utilisé qu’avec précaution.
+
+Ce médicament contient moins de 1 mmol de sodium (23 mg) par capsule retard, c.-à-d. il est essentiellement «sans sodium».
+
+Interactions
+
+Influence d’autres médicaments sur la pharmacocinétique de la tamsulosine
+
+L’administration simultanée de chlorhydrate de tamsulosine et d’inhibiteurs des enzymes CYP peut conduire à une augmentation de l’exposition à la tamsulosine. L’administration simultanée de kétoconazole (un inhibiteur puissant de la CYP3A4) a conduit à une augmentation de la Cmax et de l’ASC de la tamsulosine d’un facteur 2.2 et 2.8, respectivement. La tamsulosine ne doit donc pas être administrée simultanément avec des inhibiteurs puissants de la CYP3A4 (voir la rubrique «Mises en garde et précautions»).
+
+L’administration simultanée de paroxétine (un inhibiteur puissant de la CYP2D6) a conduit à une augmentation de la Cmax et de l’ASC de la tamsulosine d’un facteur 1.3 et 1.6, respectivement.
+
+L’administration simultanée de cimétidine augmente les concentrations plasmatiques de tamsulosine, alors qu’elles sont abaissées par le furosémide. Cependant ces valeurs se situant toujours dans la fenêtre thérapeutique, une adaptation de la dose n’est pas nécessaire.
+
+Les données in vitro indiquent que le diclofénac et la warfarine augmentent le taux d’élimination de la tamsulosine.
+
+L’influence de l’acénocoumarol sur la pharmacocinétique de la tamsulosine n’a pas été étudiée.
+
+In vitro, la fraction de tamsulosine libre dans le plasma humain n’est pas influencée par l’amitriptyline, la chlormadinone, le diazépam, le diclofénac, le glibenclamide, le propranolol ou la simvastatine.Influence de la tamsulosine sur la pharmacocinétique d’autres médicaments
+
+Chez le rat, la tamsulosine n’a pas causé d’induction notable des enzymes hépatiques microsomaux.
+
+Au cours des études cliniques, la tamsulosine n’a pas exercé d’influence sur la pharmacocinétique de l’aténolol, de la digoxine, de l’énalapril ou de la théophylline.
+
+In vitro, la tamsulosine n’influence pas la fraction libre de chlormadinone, de diazépam, ou de propranolol.
+
+Grossesse, Allaitement
+
+Tamsulosine axapharm n’est pas indiqué chez la femme.
+
+Aucune donnée n’est disponible concernant une transmission de la tamsulosine du sperme vers le foetus.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Des études correspondantes n’ont pas été menées. La tamsulosine peut cependant causer des troubles de la vue, des vertiges, une hypotension orthostatique et des syncopes, ce qui peut altérer la capacité à la conduite de véhicules ou l’utilisation de machines.
+
+Effets indésirables
+
+Les effets indésirables sous tamsulosine notés lors des études cliniques et après la mise sur le marché (PMS) sont indiqués ci-après selon les systèmes d’organes et leur fréquence. Le fréquence est définie comme suit:
+
+«Très fréquent» (≥1/10),
+
+«Fréquent» (≥1/100, <1/10),
+
+«Occasionnel» (≥1/1000, <1/100),
+
+«Rare» (≥1/10'000, <1/1000),
+
+«Très rare» (<1/10'000),
+
+«Inconnu» basé principalement sur des déclarations spontanées provenant de la surveillance du marché (ne peut être estimée sur la base des données disponibles).
+
+Affections du système immunitaire
+
+Rare: réactions d’hypersensibilité (y compris angio-œdème).
+
+Affections du système nerveux
+
+Fréquent: vertiges.
+
+Occasionnel: céphalées.
+
+Affections oculaires
+
+Inconnu: vision floue, troubles de la vision.
+
+Des cas de syndrome de l’iris hypotonique peropératoire (IFIS) ont de plus été observés en relation avec un traitement par la tamsulosine pendant des interventions de la cataracte et du glaucome (voir également «Mises en garde et précautions»).
+
+Affections cardio-vasculaires
+
+Occasionnel: palpitations, hypotension orthostatique.
+
+Rare: syncopes.
+
+Très rare: tachycardie, fibrillation auriculaire, arythmies.
+
+Affections des voies respiratoires, du thorax et du médiastin
+
+Occasionnel: rhinite.
+
+Très rare: dyspnée.
+
+Inconnu: épistaxis.
+
+Affections gastro-intestinales
+
+Occasionnel: nausées, vomissements, diarrhées, constipation, sécheresse buccale.
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnel: éruptions cutanées, prurit, urticaire.
+
+Très rare: syndrome de Stevens-Johnson.
+
+Inconnu: érythème multiforme, dermatite exfoliative.
+
+Affections des organes sexuels et des glandes mammaires
+
+Fréquent: troubles de l’éjaculation, y compris éjaculation rétrograde et anéjaculation.
+
+Rare: priapisme.
+
+Affections générales
+
+Occasionnel: asthénie.
+
+Inconnu: Gêne thoracique.
+
+L’annonce d’effets secondaires présumés après l’autorisation est d’une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d’effet secondaire nouveau ou grave via le portail d’annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Un surdosage de chlorhydrate de tamsulosine peut entraîner une hypotension aiguë et parfois sévère ainsi que des vomissements et une diarrhée.
+
+Traitement
+
+La tension artérielle et la fréquence cardiaque peuvent être normalisées en mettant le patient en position couchée. Si cela ne suffit pas, on peut utiliser des succédanés du plasma ou, si nécessaire, des vasopresseurs. On recommande en outre de surveiller la fonction rénale et de prendre des mesures de soutien général. Un traitement par dialyse a peu de chance de succès, car la tamsulosine est très fortement liée aux protéines plasmatiques. Des vomissements peuvent être provoqués afin de réduire l’absorption. Si une dose importante a été avalée, du charbon actif et des laxatifs osmotiques tels que par exemple du sulfate de sodium peuvent s’avérer être des mesures utiles.
+
+Propriétés/Effets
+
+Code ATC
+
+G04CA02
+
+Mécanisme d’action
+
+La tamsulosine se lie de façon sélective et compétitive aux récepteurs adrénergiques alpha1 post-synaptiques; en particulier aux sous-types alpha1A et alpha1D. Ces propriétés se traduisent par une relaxation des muscles lisses de la prostate et de l’urètre.
+
+Pharmacodynamique
+
+La tamsulosine augmente le débit urinaire maximal en diminuant le tonus de la musculature lisse de la prostate et de l’urètre, améliorant ainsi la miction.
+
+Il améliore également la pollakiurie pour laquelle l’instabilité vésicale joue un rôle important. Ces effets sur la pollakiurie et sur les symptômes de la miction se maintiennent lors d’une utilisation à long terme.
+
+Pharmacodynamique d’innocuité
+
+Les alpha-bloquants peuvent entraîner une diminution de la pression artérielle par un mécanisme de diminution des résistances vasculaires périphériques.
+
+Efficacité clinique
+
+Aucune donnée disponible.
+
+Pharmacocinétique
+
+Absorption
+
+Le chlorhydrate de tamsulosine est rapidement résorbé dans l’intestin et a une biodisponibilité presque totale (biodisponibilité absolue 100 ± 19%). La biodisponibilité diminue à 75% lors de la prise sous forme de capsules retard après un repas.
+
+Après la prise juste après un repas d’une dose unique, les concentrations plasmatiques maximales de tamsulosine sont atteintes 6 heures plus tard.
+
+La régularité de la résorption est favorisée si le patient prend Tamsulosine axapharm toujours après un petit déjeuner normal ou après le premier repas de la journée.
+
+L’état d’équilibre est atteint après 5 jours et les concentrations plasmatiques maximales à l’état d’équilibre se situent deux tiers environ plus haut que celles observées après une dose unique.
+
+Il existe une importante variation interindividuelle au niveau des concentrations plasmatiques, que ce soit après une prise unique ou des prises répétées.
+
+La tamsulosine présente une cinétique de résorption linéaire.
+
+Distribution
+
+Chez l’homme, la tamsulosine est liée à plus de 99% aux protéines plasmatiques (surtout la glycoprotéine alpha1 acide). Le volume de distribution est faible (environ 0.2 l/kg).
+
+Métabolisme
+
+Le chlorhydrate de tamsulosine est lentement métabolisé dans le foie; l’effet de premier passage est faible. La plus grande quantité de principe actif présent dans le plasma se trouve sous forme inchangée. Aucun des métabolites n’est plus actif que la molécule initiale.
+
+Les résultats in vitro indiquent que la CYP3A4 et la CYP2D6 participent au métabolisme de la tamsulosine. D’autres isoenzymes CYP sont éventuellement impliquées, dans une moindre mesure.
+
+Élimination
+
+La tamsulosine et ses métabolites sont éliminés principalement dans les urines, à hauteur de 7-10% environ de la dose administrée sont excrétés sous forme inchangée.
+
+Après l’administration d’une dose unique de tamsulosine, on a mesuré des demi-vies d’élimination d’environ 10 heures, respectivement d’environ 13 heures à l’état d’équilibre.
+
+Cinétique de groupes de patients spéciaux
+
+Troubles de la fonction hépatique
+
+Chez des patients présentant une insuffisance hépatique légère ou modérée (Child-Pugh A et B), il n’a pas été observé de modifications cliniquement significatives de la pharmacocinétique de la tamsulosine par rapport à des sujets présentant une fonction hépatique normale. La pharmacocinétique de la tamsulosine chez les patients avec une insuffisance hépatique sévère (Child-Pugh C) n’a pas été examinée.
+
+Troubles de la fonction rénale
+
+Chez les patients présentant une insuffisance rénale modérée (clairance de la créatinine 30-70 ml/min.) à sévère (clairance de la créatinine 10-29 ml/min.) il n’a pas été observé de modifications cliniquement significatives de la pharmacocinétique de la tamsulosine par rapport à des sujets présentant une fonction rénale normale (clairance de la créatinine >90 ml/min). La pharmacocinétique de la tamsulosine chez les patients avec une clairance de la créatinine à ≤10 ml/min n’a pas été examinée.
+
+Données précliniques
+
+À très fortes doses, l’électrocardiogramme est modifié chez le chien. Cette réaction est considérée comme étant cliniquement non significative. La tamsulosine n’a montré aucune propriété génotoxique significative.
+
+Une incidence accrue de modifications prolifératives des glandes mammaires chez les rats et les souris femelles a été observée. Ces résultats, qui sont probablement dus à une hyperprolactinémie et qui n’ont été observés qu’à des doses très élevées, peuvent être considérés comme non pertinents.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP.» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Conserver à température au-dessous de 25°C dans l’emballage original et hors de la portée des enfants.
+
+Numéro d’autorisation
+
+58173 (Swissmedic).
+
+Présentation
+
+Tamsulosine axapharm capsules retard 0.4 mg 10. (B)
+
+Tamsulosine axapharm capsules retard 0.4 mg 30. (B)
+
+Tamsulosine axapharm capsules retard 0.4 mg 100. (B)
+
+Titulaire de l’autorisation
+
+axapharm ag, 6340 Baar.
+
+Mise à jour de l’information
+
+Décembre 2023.

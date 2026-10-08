@@ -1,0 +1,847 @@
+---
+titre: "Risperidon Zentiva®"
+titulaire: "Helvepharm AG"
+atc: N05AX08
+substances: "Risperidonum"
+autorisation_swissmedic: 58735
+date_version: 2020-09-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/01af03708300431b859a0b701eb48aab-fr.html
+---
+
+Risperidon Zentiva®
+
+Helvepharm AG
+
+Composition
+
+Principes actifs
+
+Risperidonum.
+
+Excipients
+
+Noyau du comprimé: Cellulosi pulvis, Lactosum monohydricum, Cellulosum microcristallinum, Carmellosum natricum conexum, Silica colloidalis anhydrica, Natrii laurilsulfas, Magnesii stearas.
+
+Pelliculage du comprimé: Hypromellosum, Titanii dioxidum (E 171), Talcum, Propylenglycolum, Ferri oxidum flavum (E 172) (seulement Risperidon Zentiva 2 mg), Ferri oxidum rubrum (E 172) (seulement Risperidon Zentiva 0.5 mg et 2 mg), Chinolinum flavum (E 104) (seulement Risperidon Zentiva 3 mg et 4 mg), Indigocarminum (E 132) (seulement Risperidon Zentiva 4 mg).
+
+Chaque comprimé pelliculé de Risperidone Zentiva 0,5 mg contient au maximum 0,46 mg de sodium et 58,20 mg de lactose monohydraté.
+
+Chaque comprimé pelliculé de Risperidone Zentiva 1 mg contient au maximum 0,93 mg de sodium et 116,40 mg de lactose monohydraté.
+
+Chaque comprimé pelliculé de Risperidone Zentiva 2 mg contient au maximum 0,93 mg de sodium et 115,65 mg de lactose monohydraté.
+
+Chaque comprimé pelliculé de Risperidone Zentiva 3 mg contient au maximum 0,93 mg de sodium et 114,90 mg de lactose monohydraté.
+
+Chaque comprimé pelliculé de Risperidone Zentiva 4 mg contient au maximum 0,93 mg de sodium et 114,15 mg de lactose monohydraté.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimés pelliculés à 0,5 mg (brun-rouge, ovale, avec entaille de rupture, sécable), 1 mg (blanc, ovale, avec entaille de rupture, sécable), 2 mg (orange, ovale, avec entaille de rupture, sécable), 3 mg (jaune, ovale, avec entaille de rupture, sécable), 4 mg (vert, ovale, avec entaille de rupture, sécable).
+
+Indications/Possibilités d’emploi
+
+Risperidon Zentiva est indiqué:
+
+·dans le traitement de la schizophrénie et autres troubles psychotiques, y compris traitement d'entretien chez les patients ayant répondu au traitement afin de prévenir une récidive.
+
+·comme traitement de durée limitée (jusqu'à 12 semaines) d'une forte agressivité ou de symptômes psychotiques sévères liés à la démence de type Alzheimer et représentant un danger ou une limitation importante du patient et/ou d'autres personnes et ne répondant pas à des méthodes non pharmacologiques (voir «Posologie/Mode d'emploi» et «Mises en garde et précautions/Patients âgés avec démence»).
+
+·comme traitement supplémentaire à des stabilisateurs d'humeur (mood stabilizers) en traitement initial ou en monothérapie pendant une durée allant jusqu'à 12 semaines lors du traitement d'épisodes maniaques associés à des troubles bipolaires. En cas de non réponse des patients, d'autres possibilités de traitement sont à prendre en considération, y compris l'arrêt de Risperidon Zentiva.
+
+Le traitement peut être continué jusqu'à 12 semaines en tout, s'il n'a pas été associé à des stabilisateurs d'humeur. Cette poursuite du traitement sert à consolider la réponse initiale du patient. En cas d'association à des stabilisateurs d'humeur, le traitement par Risperidon Zentiva peut être arrêté plus tôt, car l'effet des stabilisateurs d'humeur en association avec Risperidon Zentiva peut être escompté durant les premières semaines de traitement.
+
+Aucune étude n'a été menée sur la prévention des récidives.
+
+À cause de l'évolution de la maladie et des médicaments utilisés pour le traitement (Risperidon Zentiva compris), l'apparition des symptômes d'une dépression doit être surveillée, même après une réponse initiale au traitement:
+
+·dans le traitement symptomatique des troubles de la sociabilité, du comportement lié à des réactions d'opposition ou d'autres comportements socialement dérangeants chez l'enfant, l'adolescent ou l'adulte ayant une capacité intellectuelle en dessous de la moyenne ou un retard mental, et qui montrent un comportement destructeur comme agressivité, impulsivité et automutilation.
+
+·dans le traitement symptomatique des troubles autistiques accompagnés de symptômes s'étendant surtout à l'hyperactivité et à l'irritabilité (y compris agressivité, automutilation, anxiété et comportements répétitifs) chez les enfants dès 5 ans et les adolescents. L'instauration du traitement et les contrôles réguliers de celui-ci doivent être effectués par un médecin spécialisé expérimenté. Le traitement médicamenteux devrait être mené dans le cadre d'un concept intégré comprenant aussi des mesures socio- et psychothérapeutiques.
+
+Posologie/Mode d’emploi
+
+Risperidon Zentiva est disponible sous forme de comprimés pelliculés. Pour les dosages plus bas, vous pouvez utiliser une solution buvable de Risperidon (disponible sous un autre nom de commercialisation).
+
+Posologie usuelle
+
+Risperidon Zentiva peut être administré 1× ou 2× par jour. Les posologies supérieures à 8 mg/jour doivent être réparties en 2 prises (matin et soir).
+
+Une posologie de 0,25 mg ou une augmentation de la posologie de 0,25 mg chez les enfants ou chez les patients avec démence doit être administrée sous forme de solution buvable.
+
+Schizophrénie et autres troubles psychotiques
+
+Adultes de moins de ~65 ans
+
+Dans tous les cas, aigus ou chroniques, commencer par 2 mg/jour de Risperidon Zentiva; le deuxième jour, possibilité de passer à 4 mg par jour. Ensuite, cette posologie peut être maintenue ou, si nécessaire, encore ajustée. Pour la majorité des patients, la posologie optimale se situe entre 4 et 6 mg/jour. Chez certains patients, une posologie inférieure peut être indiquée au début du traitement ou pour son maintien. Il s'est avéré que les posologies supérieures à 5 mg 2×/jour ne sont pas plus efficaces que les posologies moins élevées, mais qu'elles peuvent causer davantage de troubles extrapyramidaux. Parce que l'innocuité des posologies supérieures à 8 mg 2×/jour n'a pas été vérifiée, elles seront évitées.
+
+Adultes de plus de ~65 ans
+
+Une posologie initiale de 0,5 mg 2×/jour (1 mg/jour) est recommandée. La posologie peut être ajustée individuellement à raison de 0,5 mg 2×/jour et être augmentée jusqu'à une posologie de 1 à 2 mg 2×/jour (soit 2–4 mg/jour). Cette posologie correspond à une exposition un peu plus élevée que chez les patients plus jeunes.
+
+Il est possible d'administrer simultanément une benzodiazépine si une sédation additionnelle est souhaitée.
+
+Traitement de durée limitée d'une forte agressivité ou de symptômes psychotiques sévères liés à une démence de type Alzheimer
+
+Une posologie initiale de 0,25 mg 2×/jour est recommandée. Si nécessaire, la posologie peut être ajustée individuellement par paliers de 0,25 mg 2×/jour; la posologie ne doit pas être augmentée plus souvent que tous les 2 jours. La posologie optimale se situe pour la majorité des patients à 0,5 mg 2×/jour. Toutefois, certains patients peuvent tirer profit de doses pouvant aller jusqu'à 1 mg 2×/jour.
+
+Une fois la posologie optimale atteinte, une administration 1× par jour peut être envisagée.
+
+Au plus tard après trois mois de traitement par Risperidon Zentiva, une interruption du traitement doit être envisagée. Le traitement ne sera réinstauré que lorsque les troubles comportementaux sévères réapparaissent (voir «Mises en garde et précautions/Patients âgés avec démence»).
+
+Épisodes maniaques dans les troubles bipolaires (adultes et adolescents de plus de 15 ans)
+
+La rispéridone devrait être administrée 1× par jour le soir. La dose initiale recommandée est de 2 mg/jour. Si une adaptation posologique est indiquée, elle se fera par paliers de 1 mg et pas plus souvent que toutes les 24 heures.
+
+La dose recommandée se situe entre 2 et 6 mg par jour.
+
+Comme pour tout traitement symptomatique, la nécessité de la poursuite d'un traitement par Risperidon Zentiva doit être régulièrement réévaluée. Aucune donnée n'est disponible sur l'efficacité de Risperidon Zentiva dans la manie bipolaire aiguë au-delà d'une période de 12 semaines.
+
+Traitement supplémentaire: En cas d'association à des stabilisateurs d'humeur, le traitement par Risperidon Zentiva peut être arrêté plus tôt, car l'effet des stabilisateurs d'humeur en association avec Risperidon Zentiva peut être escompté durant les premières semaines de traitement.
+
+À cause de l'évolution de la maladie et des médicaments utilisés pour le traitement (Risperidon Zentiva compris), l'apparition des symptômes d'une dépression doit être surveillée, même après une réponse initiale au traitement.
+
+Traitement symptomatique des troubles de la sociabilité ou d'un comportement socialement dérangeant
+
+Patients ≥50 kg
+
+Une dose initiale de 0,5 mg 1×/jour est recommandée. Si nécessaire, cette posologie peut être ajustée individuellement par paliers de 0,5 mg 1×/jour; un changement de posologie ne doit pas avoir lieu plus souvent que tous les 2 jours. La dose journalière optimale se situe pour la plupart des patients à 1 mg 1×/jour. Toutefois, des doses de 0,5 mg 1×/jour peuvent suffire pour certains patients, alors que d'autres nécessitent 1,5 mg 1×/jour.
+
+Patients <50 kg (enfants dès 5 ans et adultes)
+
+Une dose initiale de 0,25 mg 1×/jour est recommandée. Si nécessaire, cette posologie peut être ajustée individuellement par paliers de 0,25 mg 1×/jour; un changement de posologie ne doit pas avoir lieu plus souvent que tous les 2 jours. La dose journalière optimale se situe pour la plupart des patients à 0,5 mg. Des doses de 0,25 mg 1×/jour peuvent suffire pour certains patients, alors que d'autres nécessitent 0,75 mg 1×/jour.
+
+Comme pour tout traitement symptomatique, la nécessité de la poursuite d'un traitement par Risperidon Zentiva doit être régulièrement réévaluée.
+
+Aucune expérience clinique n'existe avec la rispéridone chez l'enfant de moins de 5 ans (voir «Mises en garde et précautions»).
+
+Autisme (enfants dès 5 ans et adolescents)
+
+La posologie doit être adaptée individuellement en fonction des besoins du patient et de l'effet clinique.
+
+Patients <50 kg
+
+La dose initiale est de 0,25 mg/jour, elle peut être augmentée de 0,25 mg à partir du 4e jour.
+
+La dose d'entretien de 0,5 mg doit être conservée et la réponse clinique vérifiée vers le 14ejour. Ce n'est que chez les patients montrant une réponse clinique insuffisante qu'on peut envisager d'augmenter la dose de 0,25 mg à intervalles de deux semaines.
+
+Patients ≥50 kg
+
+La dose initiale est de 0,5 mg/jour, elle peut être augmentée de 0,5 mg à partir du 4e jour.
+
+La dose d'entretien de 1 mg doit être conservée et la réponse clinique vérifiée vers le 14ejour. Ce n'est que chez les patients montrant une réponse clinique insuffisante qu'on peut envisager d'augmenter la dose de 0,5 mg à intervalles de deux semaines.
+
+Posologie de Risperidon Zentiva chez les patients pédiatriques atteints d'autisme (dose globale en mg/jour)
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| Catégorie de poids | Dose initiale | Dose d'entretien recommandée | Augmentations de la dose (si nécessaire) | Fourchette de doses |
+|  | Jours | |  |  |
+| 1-3 | 4-14+ |
+| <50 kg | 0.25 mg | 0.5 mg | + 0.25 mg à intervalles de ≥2 semaines | <20 kg: 0.5 mg–1.25 mg ≥20 kg: 0.5 mg–2.5 mg\* |
+| ≥50 kg | 0.5 mg | 1.0 mg | + 0.5 mg à intervalles de ≥2 semaines | 1.0 mg–2.5 mg\* |
+
+ 
+
+\* Les patients >45 kg peuvent avoir besoin de doses plus élevées, la dose maximale dans les études était de 3,5 mg/jour.
+
+Risperidon Zentiva peut être administré une ou deux fois par jour.
+
+Les patients qui souffrent de somnolence peuvent profiter d'un changement avec passage à une prise le soir avant le coucher en cas d'administration une fois par jour ou bien d'une administration deux fois par jour. Dans les études sur les troubles autistiques, deux tiers des enfants environ se sont plaints de fatigue, surtout décelable dans la phase de titration.
+
+Lorsqu'une efficacité clinique suffisante est atteinte, on peut envisager de réduire graduellement la posologie pour obtenir l'équilibre idéal entre efficacité et tolérance. Les études contrôlées ne livrent pas d'informations suffisantes pour dire combien de temps on peut traiter les patients autistes par Risperidon Zentiva. Pour cette raison, des contrôles réguliers doivent être effectués par un médecin expérimenté.
+
+Ajustement de la posologie du fait d'effets indésirables/d'interactions
+
+En cas d'apparition d'effets indésirables graves (p.ex. troubles extrapyramidaux, dyskinésies tardives, prise de poids incontrôlée), il faut réduire ou arrêter Risperidon Zentiva (voir aussi «Mises en garde et précautions»).
+
+Passage d'un autre antipsychotique à Risperidon Zentiva
+
+Si un changement du traitement antipsychotique est médicalement indiqué, une réduction progressive de la posologie de l'ancien traitement est recommandée lors du passage à Risperidon Zentiva.
+
+S'il s'agit du passage d'un neuroleptique retard à Risperidon Zentiva, le traitement par Risperidon Zentiva doit commencer au moment prévu pour la prochaine injection. Si un traitement antiparkinsonien est en cours, la nécessité de sa poursuite doit être périodiquement réévaluée.
+
+Patients présentant des troubles de la fonction hépatique
+
+Les patients ayant une insuffisance hépatique montrent une augmentation de la concentration plasmatique de la fraction libre de la rispéridone.
+
+Indépendamment de l'indication, les doses initiales et les doses suivantes doivent être réduites de moitié. L'adaptation posologique doit être plus lente chez les patients ayant des maladies du foie.
+
+Risperidon Zentiva sera administré avec prudence chez ces patients.
+
+Patients présentant des troubles de la fonction rénale
+
+Le pouvoir d'élimination de la fraction active antipsychotique est diminué chez les patients ayant une altération de la fonction rénale par rapport à celui d'un adulte présentant une fonction rénale normale.
+
+Indépendamment de l'indication, les doses initiales et les doses suivantes doivent être réduites de moitié. L'adaptation posologique doit être plus lente chez les patients présentant une affection rénale.
+
+Risperidon Zentiva doit être administré avec prudence chez ces patients.
+
+Enfants et adolescents
+
+Aucune expérience n'est disponible pour les indications schizophrénie et épisodes maniaques chez l'enfant et l'adolescent de moins de 15 ans.
+
+Contre-indications
+
+Hypersensibilité au principe actif ou à l'un des excipients.
+
+Patients atteints de démence avec des symptômes parkinsoniens tels que rigidité musculaire, bradykinésie et troubles posturaux de type parkinsonien.
+
+Patients atteints de démence avec le diagnostic vraisemblable d'une démence à corps de Lewy (en plus des symptômes typiques de la démence, au moins deux des trois symptômes suivants: parkinsonisme, hallucinations visuelles, évolution fluctuante).
+
+Mises en garde et précautions
+
+Patients âgés avec démence
+
+Augmentation de la mortalité globale
+
+Une méta-analyse de 17 études contrôlées menées avec des antipsychotiques atypiques y compris rispéridone a montré une mortalité augmentée chez les patients âgés atteints de démence sous antipsychotiques par rapport à ceux sous placebo. Pour cette population, le taux de mortalité dans les études contrôlées par placebo était de 4,0% chez les patients traités par rispéridone administré par voie orale et de 3,1% dans le groupe placebo. Les patients décédés avaient une moyenne d'âge de 86 ans (intervalle 67–100 ans).
+
+Un profil de facteurs de risque spécifique pour la mortalité accrue sous rispéridone n'est pas identifiable. Par contre, les motifs de décès étaient habituels pour le groupe d'âge >65 ans: évènements cardiovasculaires et cérébro-vasculaires, tumeurs, infections (par ex. pneumonie) et diabète.
+
+Augmentation de la mortalité lors de l'administration simultanée de furosémide
+
+Dans les études contrôlées par placebo menées chez des patients âgés atteints de démence, une augmentation du taux de mortalité a été observée lors d'un traitement simultané par la rispéridone et le furosémide (7,3%; âge moyen 89 ans, intervalle 75–97 ans) comparée à un traitement par la rispéridone seule (3,1%; âge moyen 84 ans, intervalle 70–96 ans) ou le furosémide seul (4,1%; âge moyen 80 ans, intervalle 67–90 ans). L'augmentation du taux de mortalité chez les patients traités par rispéridone plus furosémide a été observée dans deux des quatre études cliniques. Aucune augmentation du taux de mortalité n'a été observée chez les patients ayant pris d'autres diurétiques en association à la rispéridone.
+
+Aucun mécanisme physiopathologique évident pouvant expliquer ce résultat n'a été identifié. De même, la cause des décès n'était pas uniforme. Toutefois, la prudence est de mise et le rapport bénéfice/risque de cette association ou du traitement simultané avec d'autres diurétiques puissants doit être évalué avant l'utilisation.
+
+Indépendamment du traitement, la déshydratation était un facteur général de risque pour la mortalité. En conséquence, elle sera soigneusement évitée chez les patients âgés atteints de démence.
+
+Augmentation des accidents vasculaires cérébraux
+
+Dans les études contrôlées par placebo et menées auprès de patients âgés atteints de démence, l'incidence des accidents vasculaires cérébraux (accidents vasculaires cérébraux et accidents ischémiques transitoires [AIT]), y compris ceux avec issue fatale, a été significativement plus élevée chez les patients traités par rispéridone que chez les patients sous placebo (âge moyen 85 ans; intervalle 73–97 ans).
+
+Les données groupées de six essais contrôlés par placebo menés avec des patients âgés atteints de démence (≥65 ans) ont montré l'apparition d'accidents vasculaires cérébraux (accidents graves et non graves) chez 3,3% (33/989) des patients traités par rispéridone et chez 1,2% (8/693) des patients sous placebo. Le rapport entre le groupe sous rispéridone et le groupe sous placebo (Odds Ratio; intervalle de confiance de 95%) a été de 2,96 (1,33; 7,45), dans le sous-groupe des patients atteints de démence d'origine vasculaire, il était de 5,26 (1,18; 48,11).
+
+Le risque d'accidents vasculaires cérébraux a été plus élevé chez les patients atteints d'une démence de type mixte ou vasculaire que chez ceux atteints de démence d'Alzheimer. Les patients atteints d'autres types de démence que la démence d'Alzheimer ne doivent par conséquent pas être traités par la rispéridone. Les patients doivent être réévalués régulièrement et la nécessité de la poursuite du traitement doit être réexaminée. Lors de la prescription de Risperidon Zentiva à des patients âgés atteints de démence, on évaluera soigneusement et individuellement les bénéfices et les risques, notamment les facteurs prédisposant à un accident vasculaire cérébral. La prudence est particulièrement de mise chez les patients atteints de démence qui présentent une hypertension artérielle, des maladies cardio-vasculaires et chez les patients atteints de démence d'origine vasculaire. Le médecin traitant indiquera aux patients ou à leur personnel soignant qu'ils doivent signaler sans attendre tout signe d'éventuel accident vasculaire cérébral tel que paralysie soudaine, insensibilité du visage, des bras ou des jambes ainsi que troubles de la parole ou de la vision. On évaluera sans délai toutes les possibilités thérapeutiques, y compris l'interruption du traitement (voir aussi «Effets indésirables»).
+
+Enfants et adolescents
+
+Il convient d'évaluer scrupuleusement le rapport bénéfice/risque avant de prescrire Rispéridone Zentiva chez l'enfant et l'adolescent. La nécessité d'une administration de Risperidon Zentiva doit être régulièrement réévaluée (voir «Effets indésirables»). Les indications «traitement symptomatique des troubles de la sociabilité, du comportement lié à des réactions d'opposition ou d'autres comportements socialement dérangeants» et «troubles autistiques» ont été étudiées uniquement chez l'enfant de plus de 5 ans. En conséquence, Risperidon Zentiva ne doit pas être administré pour ces indications aux enfants de moins de 5 ans.
+
+Dans les autres indications, aucune expérience chez les enfants et adolescents de moins de 15 ans n'est disponible.
+
+Chez les enfants et adolescents, les données disponibles reposent sur des études qui couvrent la période d'un an. Ces données montrent que la croissance et le développement des sujets ne sont pas entravés. On ignore cependant les effets sur la croissance et le développement au-delà de la période d'un an. Des examens cliniques réguliers de l'état endocrinien, y compris le contrôle de la taille et du poids, du développement sexuel, d'effets prolactino-dépendants éventuels, et la recherche de symptômes extrapyramidaux et d'autres troubles moteurs devraient donc être effectués.
+
+Somnolence: la somnolence a été souvent observée dans des études contrôlées par un placebo sur des enfants autistes. La plupart des cas étaient de degré léger à modéré. Ils ont surtout été observés au début du traitement, avec la plus grande fréquence pendant les deux premières semaines de traitement et étaient transitoires, avec une durée moyenne de 16 jours (voir «Effets indésirables»). Les patients dont la somnolence est persistante peuvent bénéficier d'un changement de schéma posologique (voir «Posologie/Mode d'emploi – Autisme»).
+
+Hypotension orthostatique
+
+En raison de son activité α1-lytique, la rispéridone peut entraîner une hypotension (orthostatique), notamment durant le premier ajustement posologique. La prudence s'impose chez les patients atteints d'une maladie cardio-vasculaire confirmée (par ex. insuffisance cardiaque, infarctus du myocarde, trouble de la conduction, déshydratation, hypovolémie ou maladie vasculaire cérébrale); dans de tels cas, ajuster la posologie graduellement, selon les recommandations (voir «Posologie/Mode d'emploi»).
+
+La survenue d'une hypotension incitera à envisager une réduction de la dose.
+
+Allongement de l'intervalle QT
+
+Dans les études cliniques, la rispéridone n'a pas été associée à un allongement de l'intervalle QTc. Après le lancement, on a très rarement signalé un allongement du QT. Comme pour les autres antipsychotiques, la prudence est recommandée lorsqu'on prescrit la rispéridone chez les patients atteints d'une maladie cardio-vasculaire et/ou d'une bradycardie, de troubles électrolytiques connus (hypokaliémie, hypomagnésémie) ou présentant un allongement du QT dans leur anamnèse familiale. La prudence est également de rigueur en association avec d'autres médicaments qui allongent l'intervalle QT (voir «Interactions»).
+
+Leucopénie, neutropénie et agranulocytose
+
+Des cas de leucopénie, de neutropénie et d'agranulocytose ont été rapportés lors de l'utilisation d'antipsychotiques (y compris rispéridone) au cours d'études cliniques et/ou depuis la commercialisation. Une agranulocytose a très rarement (<1/10'000 patients) été observée depuis la commercialisation.
+
+Les patients présentant une diminution cliniquement significative du nombre de globules blancs dans les antécédents ou une leucopénie/neutropénie induite par un médicament doivent être surveillés pendant les premiers mois du traitement. L'arrêt du traitement par rispéridone doit être envisagé dès les premiers signes d'une diminution significative des globules blancs, s'il n'existe pas d'autres facteurs étiologiques.
+
+Les patients présentant une neutropénie cliniquement significative doivent être étroitement surveillés afin de déceler une fièvre ou d'autres symptômes ou signes d'une infection et doivent être immédiatement traités en cas d'apparition de tels symptômes ou signes. Chez les patients présentant une neutropénie marquée (nombre absolu de neutrophiles <1× 109/l), il convient d'arrêter le traitement par rispéridone et de contrôler les globules blancs jusqu'à leur normalisation.
+
+Thromboembolie veineuse
+
+Des cas de thromboembolies veineuses (TEV) ont été rapportés en rapport avec l'utilisation d'antipsychotiques. Étant donné que les patients traités par antipsychotiques présentent fréquemment des facteurs de risques acquis de TEV, il convient d'identifier tous les éventuels facteurs de risque de TEV avant et pendant le traitement par rispéridone et de prendre les mesures de précaution nécessaires.
+
+Dyskinésie tardive/symptômes extrapyramidaux (EPS)
+
+Les médicaments ayant des propriétés antidopaminergiques ont été impliqués dans l'induction d'une dyskinésie tardive, qui peut se manifester par des mouvements rythmiques involontaires, surtout de la langue et/ou de la face. L'apparition de symptômes extrapyramidaux est un facteur de risque de dyskinésies tardives. Si des signes ou symptômes d'une dyskinésie tardive apparaissent, il faut envisager d'arrêter la prise de tous les antipsychotiques.
+
+Symptômes extrapyramidaux et psychostimulants
+
+La prudence est recommandée chez les patients recevant simultanément des psychostimulants (p.ex. du méthylphénidate) et de la rispéridone, car des symptômes extrapyramidaux sont susceptibles de survenir lors de l'ajustement posologique de l'un des médicaments ou des deux médicaments. Il convient d'envisager l'arrêt progressif de l'un des traitements ou des deux traitements (voir «Interactions»).
+
+Maladie de Parkinson et démence à corps de Lewy
+
+La prudence est recommandée lorsque Risperidon Zentiva est prescrit à des patients ayant une maladie de Parkinson ou une démence à corps de Lewy. La rispéridone peut provoquer une aggravation de la maladie de Parkinson. Ces deux groupes peuvent présenter un risque accru de syndrome malin des neuroleptiques et une sensibilité accrue aux antipsychotiques (p.ex. avec confusion, émoussement affectif, troubles de l'équilibre avec chutes fréquentes, en plus des symptômes extrapyramidaux).
+
+Syndrome malin des neuroleptiques
+
+Dans de rares cas, les antipsychotiques peuvent entraîner un syndrome malin des neuroleptiques, qui se manifeste par une hyperthermie, une rigidité musculaire, une dystonie neurovégétative, des troubles de la conscience et une élévation des taux sériques de la créatine phosphokinase. D'autres symptômes peuvent être une myoglobinurie (rhabdomyolyse) et une défaillance rénale aiguë. Dans un tel cas, arrêter tous les médicaments antipsychotiques, y compris Risperidon Zentiva.
+
+Hyperglycémie et diabète sucré
+
+Une hyperglycémie, un diabète sucré et l'exacerbation d'un diabète préexistant ont été rapportées pendant le traitement par la rispéridone. L'évaluation de la relation entre l'utilisation d'antipsychotiques atypiques et des anomalies du glucose est compliquée par la possibilité d'une élévation du risque de fond de diabète chez les patients schizophrènes et par l'incidence croissante du diabète dans la population générale. Vu ces facteurs de confusion, le rapport entre l'utilisation d'antipsychotiques atypiques et la survenue d'effets indésirables reliés à une hyperglycémie n'est pas complètement élucidé. Les études épidémiologiques suggèrent cependant qu'il existe un risque accru de survenue d'effets indésirables liés à une hyperglycémie chez les patients traités par des antipsychotiques atypiques. Les patients traités par des antipsychotiques atypiques, y compris par Risperidon Zentiva, doivent être surveillés à la recherche de symptômes d'une hyperglycémie et d'un diabète.
+
+Prise de poids
+
+Des prises de poids significatives ont été rapportées lors de l'utilisation de Risperidon Zentiva. Une surveillance régulière du poids est donc recommandée.
+
+Priapisme
+
+Selon certains rapports, les antagonistes des récepteurs α-adrénergiques peuvent provoquer un priapisme. Un priapisme a été rapporté avec rispéridone depuis la commercialisation (voir rubrique «Effets indésirables»).
+
+Régulation de la température corporelle
+
+Les antipsychotiques peuvent altérer la capacité de l'organisme à diminuer la température corporelle centrale. La prudence est donc recommandée lorsque Risperidon Zentiva est prescrit à des patients exposés à des situations pouvant contribuer à une augmentation de la température corporelle centrale (p.ex. activité physique fatigante, exposition à une chaleur extrême, administration simultanée de médicaments ayant un effet anticholinergique ou déshydratation).
+
+Effet antiémétique
+
+Les essais précliniques réalisés avec la rispéridone ont révélé un effet antiémétique. L'apparition de cet effet chez l'être humain pourrait masquer les signes et les symptômes d'un surdosage de certaines substances ou de maladies telles qu'occlusion intestinale, syndrome de Reye ou tumeur cérébrale.
+
+Crises épileptiques
+
+Comme tous les antipsychotiques, Risperidon Zentiva doit être utilisé avec prudence chez les patients ayant des antécédents de crises épileptiques ou présentant d'autres états pouvant s'accompagner d'une diminution du seuil épileptogène.
+
+Syndrome de l'iris hypotonique peropératoire
+
+Des cas de syndrome d'iris hypotonique peropératoire (IFIS) ont été observés lors d'opérations de la cataracte chez des patients traités par des médicaments dotés d'un effet antagoniste sur les récepteurs α1a-adrénergiques, y compris rispéridone.
+
+L'IFIS peut augmenter le risque de complications oculaires pendant et après l'intervention. Avant l'intervention, le chirurgien ophtalmologue doit être informé de la prise actuelle ou antérieure de médicaments dotés d'un effet antagoniste sur les récepteurs α1a-adrénergiques. Le bénéfice potentiel de l'interruption du traitement par les antagonistes α1 avant l'opération de la cataracte n'a pas été étudié et doit être évalué par rapport au risque d'une interruption du traitement antipsychotique.
+
+Insuffisance rénale et hépatique
+
+Il est recommandé de réduire de moitié les doses initiales et d'entretien chez les patients présentant des troubles des fonctions rénale et hépatique (voir rubrique «Posologie/Mode d'emploi» [«Instructions spéciales pour la posologie»] et «Pharmacocinétique»).
+
+Tumeurs prolactino-dépendantes
+
+Risperidon Zentiva doit être utilisé uniquement avec prudence chez les patients présentant une tumeur prolactino-dépendante (par ex. prolactinomes hypophysaires) ou une tumeur vraisemblablement prolactino-dépendante (par ex. épithéliomas de la glande mammaire).
+
+Excipients
+
+Risperidon Zentiva comprimés pelliculés contient du lactose. Les patients présentant l'intolérance héréditaire rare au galactose, un déficit total en lactase ou une malabsorption du glucose et du galactose ne doivent pas utiliser ce médicament.
+
+Ce médicament contient moins de 1 mmol de sodium (23 mg) par comprimé pelliculé, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Interactions
+
+Interactions pharmacocinétiques
+
+L'alimentation n'a pas d'influence sur l'absorption de rispéridone.
+
+La rispéridone est essentiellement métabolisée par le CYP2D6 et dans une moindre mesure par le CYP3A4. La rispéridone et son métabolite actif, la 9-hydroxyrispéridone, sont des substrats de la glycoprotéine (P-gp). Les substances qui modifient l'activité du CYP2D6 ou les inhibiteurs ou inducteurs puissants de l'activité du CYP3A4 et/ou de la P-gp peuvent influer sur la pharmacocinétique de la fraction antipsychotique active de la rispéridone.
+
+Interactions pharmacodynamiques
+
+Médicaments à action centrale et alcool
+
+Compte tenu des effets primaires sur le SNC de rispéridone, la co-administration avec d'autres médicaments à action centrale ou avec de l'alcool requiert la prudence.
+
+Lévodopa et agonistes dopaminergiques
+
+Rispéridone peut diminuer l'action de la lévodopa et d'autres agonistes dopaminergiques. Si cette association est considérée comme nécessaire, notamment au stade terminal de la maladie de Parkinson, la dose efficace la plus faible doit être prescrite lors de chaque traitement.
+
+Psychostimulants
+
+L'utilisation de psychostimulants (p.ex. méthylphénidate) en combinaison avec la rispéridone peut, en cas de modification de l'un des traitements ou des deux traitements, entraîner l'apparition de symptômes extrapyramidaux (voir «Mises en garde et précautions»).
+
+Médicaments hypotenseurs
+
+Une hypotension cliniquement significative a été observée pendant la phase post-marketing lors de l'utilisation concomitante de la rispéridone et d'antihypertenseurs.
+
+Médicaments connus pour allonger l'intervalle QT
+
+La prudence est de rigueur lors de la prescription de rispéridone avec des médicaments connus pour allonger l'intervalle QT.
+
+Inducteurs enzymatiques
+
+Inducteurs du CYP3A4 et/ou de la P-gp
+
+L'utilisation concomitante de rispéridone et d'un inducteur puissant du CYP3A4 et/ou de la P-gp peut diminuer la concentration plasmatique de la fraction antipsychotique active de la rispéridone. Lors de l'instauration ou de l'arrêt de la co-administration de carbamazépine ou d'un autre inducteur puissant du CYP3A4 et/ou de la P-gp, le médecin doit réévaluer la posologie de Risperidon Zentiva.
+
+Inhibiteurs enzymatiques
+
+Inhibiteurs puissants du CYP2D6
+
+L'utilisation concomitante de rispéridone et d'un inhibiteur puissant du CYP2D6 peut augmenter la concentration plasmatique de la rispéridone, mais la fraction antipsychotique active est moins fortement touchée. À fortes doses, les inhibiteurs puissants du CYP2D6 peuvent augmenter la concentration de la fraction antipsychotique active de la rispéridone (p.ex. paroxétine, voir ci-dessous). Lors de l'instauration ou de l'arrêt de la co-administration de paroxétine, de bupropion, ou d'un autre inhibiteur puissant du CYP2D6, surtout s'ils sont administrés à fortes doses, le médecin doit réévaluer la posologie de Risperidon Zentiva.
+
+Inhibiteurs du CYP3A4 et/ou de la P-gp
+
+L'utilisation concomitante de rispéridone et d'un inhibiteur puissant du CYP3A4 et/ou de la P-gp peut entraîner une augmentation importante de la concentration plasmatique de la fraction antipsychotique active de la rispéridone. Lors de l'instauration ou de l'arrêt de la co-administration d'itraconazole ou d'un autre inhibiteur puissant du CYP3A4 et/ou de la P-gp, le médecin doit réévaluer la posologie de Risperidon Zentiva.
+
+Autres interactions
+
+Substances fortement liées aux protéines
+
+Lors de l'utilisation concomitante de rispéridone et de médicaments fortement liés aux protéines, aucun des principes actifs ne fait l'objet d'un déplacement cliniquement significatif de sa liaison aux protéines plasmatiques.
+
+Lors de l'utilisation de médicaments associés, il convient de respecter les indications sur les voies métaboliques et l'éventuelle nécessité d'un ajustement posologique figurant dans l'information professionnelle correspondante.
+
+Patients pédiatriques
+
+Des études d'interactions n'ont été réalisées que chez l'adulte. La pertinence des résultats de ces études pour les patients pédiatriques n'est pas connue.
+
+Exemples
+
+Des exemples de médicaments interagissant potentiellement avec la rispéridone ou dont l'absence d'interaction avec la rispéridone a été démontrée sont répertoriés ci-dessous:
+
+Effet de rispéridone sur d'autres médicaments
+
+Anticonvulsivants:
+
+·La rispéridone n'a pas d'influence cliniquement significative sur la pharmacocinétique du valproate ou du topiramate.
+
+Antipsychotiques:
+
+·Pour l'aripiprazole, un substrat du CYP2D6 et du CYP3A, il n'existe pas de preuves cliniques suffisantes permettant d'évaluer un éventuel effet de rispéridone sur la pharmacocinétique de l'aripiprazole et de son métabolite actif, le déhydro-aripiprazole.
+
+Glycosides digitaliques:
+
+·La rispéridone n'a pas d'influence cliniquement significative sur la pharmacocinétique de la digoxine.
+
+Lithium:
+
+·La rispéridone n'a pas d'influence cliniquement significative sur la pharmacocinétique du lithium.
+
+Effet d'autres médicaments sur rispéridone
+
+Substances antibactériennes:
+
+·L'érythromycine, un inhibiteur modéré du CYP3A4, ne modifie pas la pharmacocinétique de la rispéridone et de la fraction antipsychotique active.
+
+·La rifampicine, un inducteur puissant du CYP3A4 et un inducteur de la P-gp, diminue la concentration plasmatique de la fraction antipsychotique active.
+
+Anticholinestérases:
+
+·La galantamine et le donépézil, des inhibiteurs de la cholinestérase tous deux substrats du CYP2D6 et du CYP3A4, n'ont pas d'influence cliniquement significative sur la pharmacocinétique de la rispéridone et de la fraction antipsychotique active.
+
+Anticonvulsivants:
+
+·La carbamazépine, un inducteur puissant du CYP3A4 et un inducteur de la P-gp, diminue la concentration plasmatique de la fraction antipsychotique active de la rispéridone.
+
+·Le topiramate diminue modérément la biodisponibilité de la rispéridone, mais n'a pas d'influence sur la biodisponibilité de la fraction antipsychotique active. Cette interaction n'est donc vraisemblablement pas cliniquement significative.
+
+Antimycosiques:
+
+·L'itraconazole, un inhibiteur puissant du CYP3A4 et un inhibiteur de la P-gp, administré à une dose de 200 mg/jour a entraîné une augmentation d'environ 70% des concentrations plasmatiques de la fraction antipsychotique active, à des doses de rispéridone de 2 à 8 mg/jour.
+
+·Le kétoconazole, un inhibiteur puissant du CYP3A4 et un inhibiteur de la P-gp, administré à une dose de 200 mg/jour, a augmenté la concentration plasmatique de la rispéridone et a diminué la concentration plasmatique de la 9-hydroxyrispéridone.
+
+Antipsychotiques:
+
+·Les phénothiazines peuvent augmenter la concentration plasmatique de la rispéridone, mais n'ont pas d'influence sur la concentration plasmatique de la fraction antipsychotique active.
+
+Virostatiques:
+
+·Inhibiteurs de protéases: aucune donnée tirée d'études formelles n'est disponible. Cependant, le ritonavir étant un inhibiteur puissant du CYP3A4 et un inhibiteur faible du CYP2D6, le ritonavir et les inhibiteurs de protéases potentialisés par le ritonavir sont susceptibles d'augmenter la concentration de la fraction antipsychotique active de la rispéridone.
+
+Bêtabloquants:
+
+·Certains bêtabloquants peuvent augmenter la concentration plasmatique de la rispéridone, mais n'ont pas d'influence sur la concentration plasmatique de la fraction antipsychotique active.
+
+Inhibiteurs des canaux calciques:
+
+·Le vérapamil, un inhibiteur modéré du CYP3A4 et un inhibiteur de la P-gp, augmente la concentration plasmatique de la rispéridone et de la fraction antipsychotique active.
+
+Diurétiques:
+
+·Furosémide: tenir compte des indications figurant à la rubrique «Mises en garde et précautions» en ce qui concerne la mortalité accrue chez les patients âgés atteints de démence, recevant simultanément un traitement par le furosémide.
+
+Médicaments gastro-intestinaux:
+
+·Antagonistes des récepteurs H2: la cimétidine et la ranitidine, deux inhibiteurs faibles du CYP2D6 et du CYP3A4, ont augmenté la biodisponibilité de la rispéridone, mais seulement de manière marginale celle de la fraction antipsychotique active.
+
+ISRS et antidépresseurs tricycliques:
+
+·La fluoxétine, un inhibiteur puissant du CYP2D6, augmente la concentration plasmatique de la rispéridone, mais la fraction antipsychotique active est cependant moins fortement touchée.
+
+·La paroxétine, un inhibiteur puissant du CYP2D6, augmente la concentration plasmatique de la rispéridone, mais la fraction antipsychotique active est cependant moins fortement touchée à des doses allant jusqu'à 20 mg/jour. A des doses plus élevées de paroxétine, la concentration de la fraction antipsychotique active de la rispéridone peut cependant augmenter de manière dose-dépendante.
+
+·Les antidépresseurs tricycliques peuvent augmenter la concentration plasmatique de la rispéridone, mais n'ont pas d'influence sur la concentration plasmatique de la fraction antipsychotique active. L'amitriptyline n'a pas d'influence sur la pharmacocinétique de la rispéridone ou de la fraction antipsychotique active.
+
+·La sertraline, un inhibiteur faible du CYP2D6, et la fluvoxamine, un inhibiteur faible du CYP3A4, n'entraînent, à des doses allant jusqu'à 100 mg/jour, pas de variations cliniquement significatives de la concentration de la fraction antipsychotique active de la rispéridone. Cependant, à des doses de sertraline ou de fluvoxamine supérieures à 100 mg/jour, la concentration de la fraction antipsychotique active de la rispéridone peut augmenter.
+
+Grossesse, allaitement
+
+Grossesse
+
+La sécurité d'emploi de la rispéridone chez la femme enceinte n'est pas démontrée.
+
+Une étude observationnelle de cohorte, rétrospective, reposant sur une base de données de sinistres américaine a comparé le risque de malformations congénitales chez les enfants nés vivants de femmes ayant utilisé ou non des antipsychotiques pendant le premier trimestre de la grossesse. Après correction des variables confondantes présentes dans la base de données, le risque de malformations congénitales s'est avéré plus élevé lors du traitement par la rispéridone qu'en l'absence d'exposition aux antipsychotiques (risque relatif = 1.26, IC à 95%: 1,02-1,56). Aucun mécanisme biologique susceptible d'expliquer ce résultat n'est connu et aucun effet tératogène n'a été observé lors des études non cliniques. Sur la base de cette unique étude observationnelle, aucune relation causale n'est démontrée entre l'exposition in utero à la rispéridone et les malformations congénitales.
+
+Bien que l'expérimentation animale n'ait pas révélé de toxicité directe pour la reproduction, quelques effets indirects médiés par la prolactine et par le SNC ont été observés (voir rubrique «Données précliniques»).
+
+Risperidon Zentiva ne doit pas être administré pendant la grossesse, sauf en cas de nécessité évidente. Si un arrêt du traitement s'avère nécessaire pendant la grossesse, celui-ci ne devra pas être brutal.
+
+Troisième trimestre
+
+Les nouveau-nés dont les mères ont pris des antipsychotiques (dont la rispéridone) pendant le troisième trimestre de la grossesse, présentent un risque de symptômes extrapyramidaux et/ou de symptômes de sevrage après la naissance. Ces symptômes chez le nouveau-né peuvent comprendre agitation, augmentation ou diminution inhabituelle du tonus musculaire, tremblements, somnolence, difficultés respiratoires ou problèmes d'alimentation. Ces complications peuvent avoir un degré de sévérité variable. Dans certains cas, ils ont été autolimitants; dans d'autres cas, les nouveau-nés ont nécessité une surveillance en service de soins intensifs ou une hospitalisation prolongée.
+
+Allaitement
+
+L'expérimentation animale a montré que la rispéridone et la 9-hydroxyrispéridone sont excrétées par le lait. Le passage de la rispéridone et de la 9-hydroxyrispéridone dans le lait maternel humain a été démontré. Dans un seul cas, 4,3% de la fraction antipsychotique active (par rapport à la dose de la mère) ont été mesurés dans le lait maternel. En conséquence, les mères traitées par la rispéridone ne devraient pas allaiter.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Risperidon Zentiva peut entraver les activités exigeant de la concentration et de la vigilance. En conséquence, les patients seront avisés d'attendre que leurs réactions individuelles soient évaluées et que leur médecin traitant ait discuté et expliqué cette évaluation avec eux avant de conduire un véhicule ou de manier des machines.
+
+Effets indésirables
+
+Les effets indésirables les plus fréquemment rapportés (fréquence ≥1/10) sont: parkinsonisme, somnolence, céphalées et insomnies.
+
+La palipéridone est le métabolite actif de la rispéridone. Les profils d'effets indésirables de ces deux substances (y compris leurs formulations orales et injectables) ont de ce fait une importance réciproque. Ci-après se trouve une liste complète des effets indésirables qui ont été rapportés avec la rispéridone et/ou la palipéridone dans le cadre d'études cliniques et depuis la mise sur le marché.
+
+Les effets indésirables sont rangés par classe de système d'organes de la classification MedDRA et par fréquence selon la convention suivante: très fréquents (≥1/10), fréquents (≥1/100 à <1/10), occasionnels (≥1/1000 à <1/100), rares (≥1/10'000 à <1/1000), très rares (<1/10'000) ainsi que fréquence inconnue (ne peut être estimée sur la base des données disponibles).
+
+Dans chaque groupe de fréquence, les effets indésirables sont présentés dans l'ordre décroissant de gravité.
+
+Effets indésirables par classe de systèmes d'organes et par fréquence
+
+Infections et infestations
+
+Fréquents: pneumonie, bronchite, infection des voies respiratoires supérieures, sinusite, infection urinaire, infection de l'oreille, grippe.
+
+Occasionnels: infection des voies respiratoires, cystite, infection oculaire, amygdalite, onychomycose, cellulite, infection localisée, infection virale, acrodermatite.
+
+Rares: infection.
+
+Affections hématologiques et du système lymphatique
+
+Occasionnels: neutropénie, diminution du nombre de globules blancs, thrombopénie, anémie, diminution de l'hématocrite, diminution du nombre de granulocytes éosinophiles.
+
+Fréquence inconnue: agranulocytose.
+
+Affections du système immunitaire
+
+Occasionnels: hypersensibilité.
+
+Fréquence inconnue: réaction anaphylactique.
+
+Affections endocriniennes
+
+Fréquents: hyperprolactinémiea.
+
+Rares: sécrétion inadéquate de l'hormone antidiurétique.
+
+Troubles du métabolisme et de la nutrition
+
+Fréquents: prise de poids, augmentation de l'appétit, baisse de l'appétit.
+
+Occasionnels: diabète sucréb, hyperglycémie, polydipsie, perte de poids, anorexie, augmentation du cholestérol.
+
+Rares: coma diabétique, hypoglycémie, augmentation des triglycérides, glycosurie.
+
+Très rares: acidocétose diabétique.
+
+Fréquence inconnue: intoxication à l'eau, hyperinsulinémie.
+
+Affections psychiatriques
+
+Très fréquents insomniesc.
+
+Fréquents: troubles du sommeil, agitation, dépression, anxiété.
+
+Occasionnels: manie, état confusionnel, diminution de la libido, cauchemars.
+
+Rares: catatonie, somnambulisme, émoussement affectif, anorgasmie.
+
+Fréquence inconnue: trouble alimentaire lié au sommeil (prise alimentaire incontrôlée lors du somnambulisme).
+
+Affections du système nerveux
+
+Très fréquents parkinsonismec, somnolence, céphalées.
+
+Fréquents: akathisiec, dystoniec, vertiges, dyskinésiec, tremblements.
+
+Occasionnels: accidents vasculaires cérébraux ischémiques, perte de connaissance, convulsionsc, syncopes, dyskinésie tardive, absence de réponse aux stimuli, diminution de degré de conscience, hyperactivité psychomotrice, troubles de l'équilibre, anomalies de la coordination, vertige positionnel, troubles de l'attention, dysarthrie, dysgueusie, hypoesthésie, paresthésie.
+
+Rares: syndrome malin des neuroleptiques, coma diabétique, tremblements de la tête.
+
+Affections oculaires
+
+Fréquents: vision floue, conjonctivite.
+
+Occasionnels: photophobie, sécheresse oculaire, sécrétion lacrymale accrue, hyperémie oculaire.
+
+Rares: glaucome, troubles de la motricité oculaire, révulsion oculaire, croûtes du bord des paupières.
+
+Fréquence inconnue: syndrome de l'iris hypotonique peropératoire.
+
+Affections de l'oreille et du labyrinthe
+
+Occasionnels: vertiges, acouphènes, otalgies.
+
+Affections cardiaques
+
+Fréquents: tachycardie.
+
+Occasionnels: fibrillation auriculaire, bloc auriculo-ventriculaire, troubles de la conduction, allongement de l'intervalle QT à l'électrocardiogramme, bradycardie, anomalies à l'électrocardiogramme, palpitations.
+
+Rares: arythmies sinusales.
+
+Fréquence inconnue: syndrome de tachycardie orthostatique posturale.
+
+Affections vasculaires
+
+Fréquents: hypertension.
+
+Occasionnels: hypotension, hypotension orthostatique, flush.
+
+Rares: embolie pulmonaire, thrombose veineuse profonde.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquents: dyspnée, douleurs pharyngo-laryngées, toux, épistaxis, nez bouché.
+
+Occasionnels: pneumonie d'aspiration, congestion pulmonaire, obstruction des voies respiratoires, râle pulmonaire, respiration haletante, dysphonie, trouble respiratoire.
+
+Rares: syndrome d'apnées du sommeil, hyperventilation.
+
+Affections gastro-intestinales
+
+Fréquents: symptômes abdominaux, vomissements, nausées, constipation, diarrhée, dyspepsie, sécheresse buccale, douleurs dentaires.
+
+Occasionnels: incontinence fécale, fécalome, gastroentérite, dysphagie, flatulence.
+
+Rares: pancréatite, obstruction intestinale, gonflement de la langue, chéilite, iléus.
+
+Affections hépatobiliaires
+
+Occasionnels: augmentation des transaminases, augmentation du taux de gamma-glutamyl transférase, augmentation du taux des enzymes hépatiques.
+
+Rares: ictère.
+
+Affections de la peau et du tissu sous-cutané
+
+Fréquents: éruption cutanée, érythème.
+
+Occasionnels: urticaire, prurit, alopécie, hyperkératose, eczéma, sécheresse cutanée, coloration de la peau, acné, dermatite séborrhéique, maladies cutanées, lésion cutanée.
+
+Rares: exanthème médicamenteux.
+
+Très rares: angio-œdème.
+
+Fréquence inconnue: syndrome de Stevens-Johnson/nécrolyse épidermique toxique.
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Fréquents: crampes musculaires, douleurs musculosquelettiques, douleurs dorsales, arthralgie.
+
+Occasionnels: augmentation du taux de créatine phosphokinase, posture anormale, raideur articulaire, gonflement des articulations, faiblesse musculaire, douleurs de la nuque.
+
+Rares: rhabdomyolyse.
+
+Affections du rein et des voies urinaires
+
+Fréquents: incontinence urinaire.
+
+Occasionnels: pollakiurie, rétention urinaire, dysurie.
+
+Affections gravidiques, puerpérales et périnatales
+
+Très rares: symptômes extrapyramidaux moteurs et/ou phénomènes de sevrage chez le nouveau-né (voir rubrique «Grossesse/Allaitement»).
+
+Affections des organes de reproduction et du sein
+
+Occasionnels: dysfonction érectile, troubles de l'éjaculation, aménorrhée, troubles menstruelsc, gynécomastie, galactorrhée, dysfonction sexuelle, symptômes mammaires, écoulement vaginal.
+
+Rares: retard des règles, gonflement des glandes mammaires, écoulement mammaire.
+
+Fréquence inconnue: priapisme.
+
+Troubles généraux et anomalies au site d'administration
+
+Fréquents: œdèmec, pyrexie, douleurs thoraciques, asthénie, fatigue, douleurs.
+
+Occasionnels: œdème facial, frissons, augmentation de la température corporelle, troubles de la marche, soif, sensation de maladie, sensation anormale, malaise.
+
+Rares: hypothermie, diminution de la température corporelle, sensation de froid périphérique, syndrome de sevrage médicamenteux.
+
+Fréquence inconnue: induration.
+
+Lésions, intoxications et complications d'interventions
+
+Fréquents: chute.
+
+Occasionnels: douleur postopératoire.
+
+a Une hyperprolactinémie peut dans certains cas provoquer une gynécomastie, des troubles menstruels, une aménorrhée et une galactorrhée.
+
+b Des études contrôlées contre placebo ont fait état d'un diabète sucré chez 0,18% des patients traités par la rispéridone contre 0,11% des patients traités par placebo. L'incidence cumulée de toutes les études cliniques était de 0,43% chez tous les patients traités par la rispéridone.
+
+c Les insomnies comprennent: trouble de l'endormissement, insomnie du milieu de la nuit.
+
+Le parkinsonisme comprend: akinésie, bradykinésie, phénomène de la roue dentée, salivation, symptômes extrapyramidaux moteurs, réflexe fronto-orbiculaire pathologique, raideur musculaire, contractures musculaires, raideur musculosquelettique.
+
+L'akathisie comprend: hyperkinésie, syndrome des jambes sans repos, agitation.
+
+La dystonie comprend: blépharospasme, spasmes cervicaux, emprosthotonos, crampe faciale, hypertonie musculaire, laryngospasme, contractions musculaires involontaires, myotonie, crise oculogyre, opisthotonos, crampe oropharyngée, pleurothotonos, rictus sardonique, tétanie, paralysie de la langue, crampe de la langue, torticolis, trismus.
+
+La dyskinésie comprend: athétose, chorée, mouvements choréoathétosiques, troubles moteurs, secousses musculaires, myoclonie.
+
+Les convulsions comprennent: crises de grand mal.
+
+Les œdèmes comprennent: œdèmes généralisés, œdèmes périphériques, œdème prenant le godet («pitting edema»).
+
+Les troubles menstruels comprennent: règles irrégulières, oligoménorrhée.
+
+Description d'effets indésirables spécifiques
+
+Effets de classe
+
+Allongement de l'intervalle QT
+
+Comme pour d'autres antipsychotiques, de très rares cas d'allongement de l'intervalle QT ont été rapportés sous rispéridone après la mise sur le marché. D'autres effets de classe cardiaques rapportés sous antipsychotiques allongeant l'intervalle QT incluent une arythmie ventriculaire, une fibrillation ventriculaire, une tachycardie ventriculaire, une mort subite, un arrêt cardiaque et des torsades de pointe (voir rubrique «Mises en garde et précautions»).
+
+Prise de poids
+
+Les proportions de patients adultes atteints de schizophrénie traités par rispéridone ou par placebo et qui remplissaient le critère d'une prise de poids de ≥7% du poids corporel ont été comparées dans un pool d'études contrôlées par placebo sur 6–8 semaines. Celles-ci ont mis en évidence une incidence supérieure statistiquement significative de la prise de poids sous rispéridone (18%) par rapport au placebo (9%). Dans une étude contrôlée par placebo de trois semaines portant sur des patients adultes atteints de manie aiguë, l'incidence de la prise de poids de ≥7% comme critère principal était comparable dans le groupe rispéridone (2,5%) et le groupe placebo (2,4%) et un peu plus élevée dans le groupe de contrôle actif (3,5%).
+
+Dans des études de longue durée portant sur une population d'enfants et d'adolescents atteints de troubles du comportement et d'autres comportements dérangeants, le poids a augmenté en moyenne de 7,3 kg après 12 mois de traitement. La prise de poids attendue chez les enfants en bonne santé âgés entre 5 et 12 ans est de 3 à 5 kilos par année. Entre l'âge de 12 et 16 ans, la prise de poids annuelle demeure au niveau de 3 à 5 kg chez les filles, alors que les garçons prennent environ 5 kg par année.
+
+Informations complémentaires relatives à des populations particulières
+
+Les effets indésirables qui ont été rapportés avec une fréquence plus élevée que pour la population adulte chez des patients âgés atteints de démence ou chez des patients pédiatriques sont décrits ci-après:
+
+Patients âgés atteints de démence
+
+Les accidents ischémiques transitoires et les accidents vasculaires cérébraux étaient des effets indésirables qui ont été rapportés dans des études cliniques avec une fréquence de 1,4% respectivement 1,5% chez les patients âgés atteints de démence. En outre, les effets indésirables suivants ont été rapportés avec une fréquence de ≥5% chez les patients âgés atteints de démence et avec une fréquence au moins deux fois plus élevée par rapport aux autres populations adultes: infection urinaire, œdème périphérique, léthargie et toux.
+
+Patients pédiatriques
+
+De manière générale, les effets indésirables attendus chez l'enfant sont comparables à ceux survenant chez l'adulte, en ce qui concerne la fréquence, le type et le degré de sévérité.
+
+Les effets indésirables suivants ont été rapportés avec une fréquence de ≥5% chez les patients pédiatriques (5–17 ans) et avec une fréquence au moins deux fois plus élevée par rapport à celle constatée dans les études cliniques chez les adultes: somnolence/sédation, fatigue, céphalées, augmentation de l'appétit, vomissements, infections des voies respiratoires supérieures, nez bouché, douleurs épigastriques, vertiges, toux, pyrexie, tremblements, diarrhée et énurésie.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Les symptômes escomptés sont le résultat d'une amplification des effets pharmacologiques connus et se présentent sous forme d'obnubilation, de sédation, de tachycardie, d'hypotension et de troubles extrapyramidaux.
+
+Le surdosage a donné lieu à des cas d'allongement de l'intervalle QT et à des convulsions. Des cas de torsades de pointe ont été rapportés en rapport avec un surdosage simultané de rispéridone et de paroxétine.
+
+Traitement
+
+En cas de surdosage, libérer les voies aériennes et les garder dégagées, assurer un apport suffisant en oxygène et appliquer une ventilation assistée. Si nécessaire, administrer du charbon activé et un laxatif au patient. Surveillance immédiate du système cardio-circulatoire. Contrôle électrocardiographique permanent pour détecter une éventuelle arythmie.
+
+Il n'existe pas d'antidote spécifique à rispéridone. Par conséquent, préparer les mesures adéquates. En cas d'intoxication aiguë, prendre en compte la possibilité d'une polyintoxication. Une hypotension et un collapsus circulatoire doivent être traités par les mesures adéquates, comme une perfusion intraveineuse et/ou des médicaments sympathomimétiques. Administrer un anticholinergique en cas de symptômes extrapyramidaux sévères. Maintenir le patient sous étroite surveillance médicale jusqu'à ce qu'il ait récupéré.
+
+Propriétés/Effets
+
+Code ATC
+
+N05AX08
+
+Mécanisme d'action
+
+Risperidon Zentiva (rispéridone) est un antipsychotique qui fait partie d'une nouvelle classe, les dérivés du benzisoxazole. Il présente une forte affinité pour les récepteurs D2-dopaminergiques et 5HT2-sérotoninergiques. La rispéridone occupe également les récepteurs α1-adrénergiques et, avec une moindre affinité, les récepteurs H1-histaminergiques et α2-adrénergiques. La rispéridone ne possède aucune affinité pour les récepteurs cholinergiques. Bien qu'elle soit un puissant antagoniste des récepteurs D2, une caractéristique connue pour influencer favorablement les symptômes positifs de la schizophrénie, la rispéridone diminue moins fortement l'activité motrice et provoque moins souvent une catalepsie que les neuroleptiques classiques. En raison de son antagonisme équilibré des systèmes sérotoninergiques et dopaminergiques centraux, elle risque moins de provoquer des effets secondaires extrapyramidaux et peut également agir sur les symptômes négatifs et affectifs de la schizophrénie.
+
+Pharmacodynamique
+
+Voir Mécanisme d'action.
+
+Efficacité clinique
+
+Voir «Indications/Possibilités d'emploi».
+
+Pharmacocinétique
+
+Absorption
+
+Après administration orale, rispéridone est complètement absorbé et atteint son pic plasmatique en l'espace de 1–2 heures, chez les patients âgés en l'espace de 2–3 heures. La rispéridone peut être prise pendant ou en dehors des repas, car la nourriture ne modifie pas son absorption. La biodisponibilité absolue est de 66% chez les métaboliseurs rapides et de 82% chez les métaboliseurs lents.
+
+Distribution
+
+Rispéridone se distribue rapidement dans l'organisme. Son volume apparent de distribution (Vd) varie entre 1 et 2 l/kg. La liaison aux protéines plasmatiques (albumine, α1 glycoprotéine acide) de la rispéridone s'élève à 88%, et celle de son métabolite actif, la 9-hydroxyrispéridone, à 77%.
+
+Chez la plupart des patients, la rispéridone atteint son état d'équilibre en un jour, la 9-hydroxyrispéridone en 4–5 jours après l'administration. Les concentrations plasmatiques de la rispéridone sont proportionnelles à la dose tant qu'elles sont dans la marge thérapeutique.
+
+Métabolisme
+
+La rispéridone est essentiellement métabolisée dans le foie par le CYP 2D6. Elle est dégradée principalement en 9-hydroxyrispéridone, métabolite exerçant une action pharmacologique comparable à celle de la rispéridone. La rispéridone et la 9-hydroxyrispéridone forment ensemble la fraction antipsychotique active.
+
+Le CYP 2D6 présente un polymorphisme génétique (débrisoquine/dextrométhorphane). La transformation de la rispéridone en 9-hydroxyrispéridone est rapide chez les métaboliseurs rapides et lente chez les métaboliseurs lents. C'est pourquoi, chez les métaboliseurs rapides, les taux plasmatiques de rispéridone sont plus bas et ceux de 9-hydroxyrispéridone plus élevés que chez les métaboliseurs lents. Comme la rispéridone et la 9-hydroxyrispéridone possèdent à peu près la même activité antipsychotique, c'est la somme de leurs concentrations qui est déterminante. C'est pourquoi aucune différence cliniquement pertinente n'a été observée entre les métaboliseurs rapides et les métaboliseurs lents.
+
+La voie de métabolisation par N-désalkylation est moins importante et s'effectue probablement par le CYP3A4.
+
+Élimination
+
+Après administration orale, la rispéridone est éliminée avec une demi-vie de 3 heures. Les demi-vies d'élimination (t½β) de la 9-hydroxyrispéridone et de la fraction antipsychotique active sont de 24 heures, de 34 heures chez les patients âgés.
+
+Après l'administration d'une dose unique, 70% sont excrétés par voie rénale et 14% par les fèces en l'espace d'une semaine. 35–45% de la dose sont retrouvés dans l'urine sous forme de rispéridone ou de 9-hydroxy-rispéridone. Le reste est constitué de métabolites inactifs.
+
+Cinétique pour certains groupes de patients
+
+Troubles de la fonction hépatique
+
+Chez les patients présentant des troubles de la fonction hépatique, un plus faible taux de liaison aux protéines plasmatiques a été observé pour rispéridone.
+
+Bien que les concentrations plasmatiques de rispéridone étaient dans les normes chez les patients avec une insuffisance hépatique, la fraction libre moyenne de la rispéridone dans le plasma était augmentée d'environ 35%.
+
+Troubles de la fonction rénale
+
+Après administration d'une dose unique à des patients insuffisants rénaux, une élévation des taux plasmatiques de la fraction antipsychotique active (AUC et Cmax environ 2 à 2,5 fois plus élevés) et une diminution de 60% de la clairance de la fraction antipsychotique active ont été observées (voir rubrique «Instructions spéciales pour la posologie»).
+
+Patients âgés
+
+Après administration d'une dose unique à des patients âgés, une élévation des taux plasmatiques de la fraction antipsychotique active (AUC et Cmax environ 2 à 2,5 fois plus élevés) et une diminution de 30% de la clairance de la fraction antipsychotique active ont été observées (voir rubrique «Instructions spéciales pour la posologie»).
+
+Enfants et adolescents
+
+La pharmacocinétique de la rispéridone, de la 9-hydroxyrispéridone et de la fraction antipsychotique active est similaire chez les enfants et les adultes.
+
+Données précliniques
+
+Toxicité en cas d'administration répétée
+
+Lors d'études de toxicité avec administration réitérée chez le rat et le chien, les effets observés étaient principalement de nature pharmacologique, comme sédation et effets médiés par la prolactine sur les glandes mammaires et les organes génitaux.
+
+Génotoxicité
+
+La rispéridone n'était pas génotoxique dans les tests standard.
+
+Carcinogénicité
+
+Une incidence augmentée d'adénomes hypophysaires (souris), d'adénomes pancréatiques (rat) et d'adénocarcinomes des glandes mammaires (dans les deux espèces) a été observée dans des études sur la carcinogenèse avec le rat et la souris après administration orale. Ces tumeurs peuvent être en rapport avec une augmentation du taux de prolactine et sont considérées comme cliniquement non pertinentes.
+
+Comme attendu pour un puissant antagoniste D2, une étude de carcinogénicité effectuée sur des rats ayant reçu des doses i.m. de 40 mg/kg a révélé une incidence accrue médiée par la prolactine de néoplasies endocriniennes du pancréas, de l'hypophyse et de la médullosurrénale. Des carcinomes mammaires se sont déclarés aux doses de 5 et 40 mg/kg. Une hypercalcémie a été observée dans les deux groupes de dosage et on présume qu'elle contribue à la hausse de l'incidence des tumeurs médullosurrénales. Chez les rats mâles, des adénomes tubulaires rénaux se sont développés. Aucune tumeur rénale n'est apparue au dosage le plus faible, dans le groupe de contrôle avec NaCl 0,9% et dans celui avec microsphères. Le mécanisme par lequel les rats traités par la rispéridone développent une tumeur rénale est inconnu.
+
+Toxicité sur la reproduction
+
+Bien que la rispéridone n'ait pas eu d'effets directs sur les fonctions de reproduction lors de l'expérimentation animale, des effets indirects médiés par la prolactine ont été observés.
+
+La rispéridone n'a pas montré d'effet tératogène chez le rat ni le lapin.
+
+Chez le rat, des effets négatifs sur le comportement lors de l'accouplement, le poids à la naissance et la survie de la progéniture ont été observés. Les troubles du comportement chez la progéniture n'ont pas été étudiés.
+
+Remarques particulières
+
+Incompatibilités
+
+Risperidon Zentiva comprimés pelliculés: aucune incompatibilité connue.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver à température ambiante (15–25 °C), à l'abri de la lumière et de l'humidité, dans l'emballage original et hors de portée des enfants.
+
+Numéro d’autorisation
+
+58735 (Swissmedic).
+
+Présentation
+
+Risperidon Zentiva comprimés pelliculés 0,5 mg 20. (B)
+
+Risperidon Zentiva comprimés pelliculés 1 mg 20. (B)
+
+Risperidon Zentiva comprimés pelliculés 1 mg 60. (B)
+
+Risperidon Zentiva comprimés pelliculés 2 mg 20. (B)
+
+Risperidon Zentiva comprimés pelliculés 2 mg 60. (B)
+
+Risperidon Zentiva comprimés pelliculés 3 mg 20. (B)
+
+Risperidon Zentiva comprimés pelliculés 3 mg 60. (B)
+
+Risperidon Zentiva comprimés pelliculés 4 mg 20. (B)
+
+Risperidon Zentiva comprimés pelliculés 4 mg 60. (B)
+
+Titulaire de l’autorisation
+
+Helvepharm AG, Frauenfeld.
+
+Mise à jour de l’information
+
+Septembre 2020.

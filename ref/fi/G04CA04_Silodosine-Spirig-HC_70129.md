@@ -1,0 +1,355 @@
+---
+titre: "Silodosine Spirig HC®"
+titulaire: "Spirig HealthCare AG"
+atc: G04CA04
+substances: "Silodosine"
+autorisation_swissmedic: 70129
+date_version: 2021-01-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/d6dee9777dd14da484ab615dd14f28f5-fr.html
+---
+
+Silodosine Spirig HC®
+
+Spirig HealthCare AG
+
+Composition
+
+Principes actifs
+
+Silodosine
+
+Excipients
+
+Mannitol, amidon prégélatinisé, laurylsulfate de sodium, dibéhénate de glycérol (E 471).
+
+Enveloppe de la gélule (4 mg): gélatine, dioxyde de titane (E171), oxyde de fer jaune (E172).
+
+Enveloppe de la gélule (8 mg): gélatine, dioxyde de titane (E171).
+
+Encre d'impression : Gommes laques (E 904), propylèneglycol (E 1520), solution concentrée d'ammoniaque (E 527), oxyde de fer noir (E 172), hydroxyde de potassium (E 525).
+
+Teneur totale en sodium par gélule de Silodosine Spirig HC
+
+Silodosine Spirig HC 4 mg: 0,12 mg
+
+Silodosine Spirig HC 8 mg: 0,24 mg
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Une gélule contient 4 mg ou 8 mg de silodosine.
+
+Indications/Possibilités d’emploi
+
+Traitement symptomatique des troubles fonctionnels accompagnant une hypertrophie bénigne de la prostate (HBP).
+
+Posologie/Mode d’emploi
+
+Posologie
+
+La dose recommandée est d'une gélule de Silodosine Spirig HC 8 mg une fois par jour.
+
+La gélule doit être prise pendant un repas, de préférence à heure fixe. La gélule ne doit être ni ouverte ni croquée, mais doit être avalée entière, de préférence avec un verre d'eau.
+
+Instructions posologiques particulières
+
+Patients présentant des troubles de la fonction hépatique
+
+Chez les patients présentant une insuffisance hépatique légère à modérée (Child-Pugh A et B), aucun ajustement posologique n'est nécessaire. Chez les patients présentant une insuffisance hépatique sévère (Child-Pugh C), Silodosine Spirig HC est contre-indiqué.
+
+Patients présentant des troubles de la fonction rénale
+
+Chez les patients présentant une insuffisance rénale légère (ClCr 50-80 ml/min), aucun ajustement posologique n'est nécessaire (voir «Pharmacocinétique»). Chez les patients présentant une insuffisance rénale modérée (ClCr 30-< 50 mL/min), l'utilisation de Silodosine Spirig HC n'est pas recommandée (voir «Mises en garde et précautions»). En cas d'insuffisance rénale sévère (ClCr < 30 mL/min), Silodosine Spirig HC est contre-indiqué.
+
+Patients âgés
+
+Chez les patients âgés, aucun ajustement posologique n'est nécessaire (voir «Pharmacocinétique»).
+
+Enfants et adolescents
+
+Silodosine Spirig HC n'est pas indiqué dans cette tranche d'âge.
+
+Contre-indications
+
+Insuffisance rénale sévère.
+
+Insuffisance hépatique sévère (Child-Pugh C).
+
+Hypersensibilité au principe actif ou à l'un des autres composants mentionnés sous «Composition».
+
+Mises en garde et précautions
+
+Avant de débuter un traitement par Silodosine Spirig HC, d'autres causes des symptômes (en particulier un cancer de la prostate) doivent être exclues par diagnostic différentiel. Un toucher rectal et, le cas échéant, un dosage de l'antigène prostatique spécifique (APS) doivent être effectués avant le début du traitement, puis à intervalles réguliers pendant le traitement.
+
+Hypotension orthostatique
+
+Comme pour l'utilisation d'autres α1-bloquants, celle de Silodosine Spirig HC peut s'accompagner, notamment au cours des premières heures suivant la prise, dans certains cas d'une baisse de la pression artérielle qui peut, dans de rares cas, entraîner une syncope. Le patient doit être informé de l'éventuelle survenue de tels événements. C'est notamment le cas pour les patients présentant des facteurs de risque de baisse de pression artérielle (p.ex. comédication avec des antihypertenseurs ou présence d'une coronaropathie).
+
+Les patients ayant des antécédents d'hypotension orthostatique doivent être traités avec une prudence particulière. Chez ces patients, la pression artérielle et la fréquence cardiaque doivent notamment être surveillées après la prise de la première dose.
+
+Dès les premiers signes d'hypotension orthostatique (vertiges, sensation de faiblesse, accès de transpiration), le patient doit s'asseoir ou s'allonger jusqu'à disparition des symptômes.
+
+L'utilisation concomitante d'autres antagonistes des récepteurs adrénergiques α1 peut entraîner une forte baisse de la pression artérielle et n'est donc pas recommandée.
+
+La prudence est de mise chez les patients ayant des antécédents d'hypotension marquée suite à l'utilisation d'un autre antagoniste des récepteurs α1.
+
+Syndrome de l'iris hypotonique peropératoire (SIHP)
+
+Le syndrome de l'iris hypotonique peropératoire (SIHP) a été observé au cours d'interventions chirurgicales de la cataracte chez certains patients qui suivaient ou avaient récemment suivi un traitement par des antagonistes des récepteurs adrénergiques α1, tels que la silodosine. Cette variante du syndrome de la pupille étroite (Small Pupil Syndrome) est caractérisée par un iris flasque qui ondule sous l'influence des courants d'irrigation peropératoires, un myosis peropératoire progressif malgré une dilatation préopératoire à l'aide de médicaments mydriatiques standards, et un prolapsus potentiel de l'iris vers les incisions de phaco-émulsification.
+
+Un SIHP peut augmenter le risque de complications oculaires intra-opératoires et postopératoires (p.ex. perte du cristallin, décollement de la rétine, endophtalmie). L'opérateur doit être informé de la prise de silodosine afin d'adapter, le cas échéant, ses techniques opératoires (p.ex. via l'utilisation de rétracteurs d'iris à crochets, d'anneaux de dilatation de l'iris ou de substances viscoélastiques).
+
+En cas d'utilisation d'autres α1-bloquants (en particulier la tamsulosine), la survenue d'un SIHP a également été rapportée lors d'interventions chirurgicales du glaucome. Chez les patients devant subir très prochainement une intervention chirurgicale ophtalmologique, il est recommandé de ne pas instaurer de traitement à base de silodosine ou d'un autre α-bloquant. Il n'est, en revanche, pas prouvé qu'un arrêt du traitement par la silodosine 1 à 2 semaines avant l'intervention apporte un avantage. Dans certains cas, un SIHP a également été rapporté chez des patients qui avaient déjà arrêté l'α-bloquant quelque temps avant l'intervention.
+
+Altération de la fonction rénale
+
+On ne dispose que de données limitées pour les patients présentant une insuffisance rénale modérée (ClCr 30-< 50 mL/min). Étant donné que le risque d'effets indésirables (en particulier vertiges et hypotension orthostatique) augmente chez ces patients en raison de l'exposition accrue à la silodosine (voir «Pharmacocinétique»), une utilisation chez cette population n'est pas recommandée. Si Silodosine Spirig HC est malgré tout utilisé, la dose maximale de 4 mg une fois par jour ne doit pas être dépassée.
+
+Chez les patients présentant une insuffisance rénale sévère (ClCr < 30 mL/min), Silodosine Spirig HC est contre-indiqué.
+
+Insuffisance hépatique
+
+En cas d'insuffisance hépatique sévère (Child-Pugh C), Silodosine Spirig HC est contre-indiqué.
+
+Comédication avec de puissants inhibiteurs du CYP3A4
+
+En cas de traitement concomitant par des inhibiteurs puissants du CYP3A4 (p.ex. itraconazole, voriconazole, clarithromycine, ritonavir et jus de pamplemousse), cela peut conduire à une augmentation de l'exposition à la silodosine (voir «Interactions»). Dans de tels cas, le traitement doit donc être administré avec une prudence particulière.
+
+Comédication avec des inhibiteurs de la PDE5
+
+Les inhibiteurs de la PDE5 présentent également des effets vasodilatateurs. En cas d'administration concomitante d'inhibiteurs de la PDE5 et d'un α1-bloquant tel que la silodosine, chez les patients prédisposés, le risque d'hypotension symptomatique peut être accru, en particulier au moment lorsque la concentration plasmatique de l'inhibiteur de la PDE5 est la plus élevée. Les patients traités par Silodosine Spirig HC doivent donc utiliser un inhibiteur de la PDE5 uniquement s'ils savent comment ils réagissent à la silodosine. Chez les patients qui utilisent déjà des inhibiteurs de la PDE5, le traitement par un antagoniste des récepteurs adrénergiques α1 tel que la silodosine doit être instauré avec une prudence particulière tout en surveillant l'apparition d'éventuels symptômes orthostatiques.
+
+Fertilité
+
+Le traitement par la silodosine entraîne une réduction du nombre de spermatozoïdes dans l'éjaculat, ce qui peut affecter temporairement la fertilité masculine. À l'arrêt du traitement par Silodosine Spirig HC, la fertilité se normalise à nouveau.
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par gélule, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Interactions
+
+Interactions pharmacocinétiques
+
+Influence d'autres médicaments sur la pharmacocinétique de la silodosine
+
+La silodosine subit un métabolisme intensif, principalement par l'intermédiaire du CYP3A4, de l'alcool déshydrogénase et de l'UGT2B7. La silodosine est également un substrat de la P-glycoprotéine. Les substances ayant un effet inhibiteur (p.ex. itraconazole, clarithromycine, ritonavir ou ciclosporine) ou inducteur (p.ex. rifampicine, barbituriques, carbamazépine, phénytoïne) sur ces enzymes et protéines de transport peuvent affecter les concentrations plasmatiques de la silodosine et de ses métabolites actifs.
+
+Inhibiteurs du CYP3A4
+
+Lors d'une étude d'interactions, une augmentation d'un facteur de 3,7 des concentrations plasmatiques maximales de la silodosine et une augmentation d'un facteur de 3,1 de l'exposition à la silodosine (c.-à-d. de l'ASC) ont été observées lors de l'administration concomitante de kétoconazole, inhibiteur puissant du CYP3A4 (400 mg). L'administration concomitante de puissants inhibiteurs du CYP3A4 (p.ex. itraconazole, voriconazole, clarithromycine, ritonavir ou ciclosporine) n'est donc pas recommandée (voir «Mises en garde et précautions»).
+
+Lorsque la silodosine a été administrée en association avec un inhibiteur du CYP3A4 de puissance modérée tel que le diltiazem, une augmentation d'environ 32 % de l'ASC de la silodosine a été observée, mais la Cmax et la demi-vie n'ont pas été affectées. Cette augmentation n'a aucune pertinence clinique, et aucun ajustement posologique n'est nécessaire.
+
+Influence de la silodosine sur la pharmacocinétique d'autres médicaments
+
+In vitro, la silodosine n'a pas entraîné d'inhibition de CYP1A2, 2A6, 2C9, 2C19, 2D6, 2E1 ou 3A4.
+
+In vitro, la silodosine n'a pas entraîné d'induction de CYP1A2, 3A4, 2C8, 2C9 ou 2B6.
+
+In vitro, la silodosine n'a pas entraîné d'inhibition de l'UGT1A1, 1A4 ou 2B7. Une induction de l'UGT par la silodosine ne peut pas être exclue.
+
+In vitro, la silodosine n'a pas entraîné d'inhibition de MDR1, BCRP, BSEP, MATE1, MATE2-K, OAT1, OAT3, OATP1B1, OATP1B3, OCT1 et OCT2.
+
+Digoxine
+
+Les taux à l'état stationnaire de la digoxine, un substrat de la P-glycoprotéine, n'ont pas été affectés de façon significative par l'administration concomitante de silodosine 8 mg une fois par jour.
+
+Interactions pharmacodynamiques
+
+Antihypertenseurs
+
+Dans des études cliniques d'interactions avec le métoprolol, l'amlodipine et le lisinopril, une fréquence plus élevée d'événements orthostatiques a été constatée en cas d'administration concomitante de silodosine par rapport à l'administration des antihypertenseurs avec un placebo. Un traitement concomitant d'antihypertenseurs et de silodosine doit donc être instauré avec prudence, et les patients devront être surveillés afin de détecter d'éventuels effets indésirables.
+
+Grossesse, allaitement
+
+Silodosine Spirig HC n'est pas indiqué chez les femmes.
+
+On ne dispose d'aucune donnée sur l'éventuel passage de la silodosine à partir du sperme au fœtus.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude correspondante n'a été effectuée. Néanmoins, les patients doivent être informés du risque de survenue de symptômes liés à l'hypotension orthostatique (p.ex. vertiges). Ils doivent également faire preuve de prudence lors de la conduite de véhicules ainsi que de l'utilisation de machines, jusqu'à ce que leur réaction individuelle à Silodosine Spirig HC ait été déterminée. C'est le cas, en particulier, en association avec l'alcool.
+
+Effets indésirables
+
+La sécurité d'emploi de silodosine a été étudiée dans le cadre de quatre études cliniques contrôlées par placebo et réalisées en double aveugle (931 patients ayant reçu 8 mg de silodosine et 178 patients ayant reçu 4 mg de silodosine une fois par jour ainsi que 733 patients ayant reçu le placebo).
+
+De surcroît, on dispose des données de sécurité de 3 études à long terme en ouvert. Au total, 2 617 patients ont reçu 8 mg de silodosine une fois par jour dans des études cliniques, dont 1 750 patients ont été exposés pendant au moins 6 mois et 393 patients pendant 1 an.
+
+Lors des études cliniques, les effets indésirables les plus fréquemment rapportés avec la silodosine ont été les troubles de l'éjaculation, en particulier l'éjaculation rétrograde (23,9 %) ou l'anéjaculation (7,1 %). Cet effet peut affecter temporairement la fertilité masculine, mais disparaît quelques jours après l'arrêt du traitement (voir «Mises en garde et précautions»).
+
+Les effets indésirables notés lors des études cliniques et dans le cadre de l'expérience mondiale menée après la mise sur le marché sont indiqués ci-après par classe de systèmes d'organes de la classification MedDRA et par fréquence: très fréquents (≥1/10); fréquents (≥1/100 à <1/10); occasionnels (≥1/1 000 à <1/100); rares (≥1/10 000 à <1/1 000); très rares (<1/10 000); fréquence inconnue (principalement basée sur des déclarations spontanées issues de la surveillance du marché, la fréquence exacte ne pouvant pas être estimée).
+
+Affections du système immunitaire
+
+Très rares: réactions d'hypersensibilité (p.ex. gonflements au niveau du visage, gonflement de la langue, œdème pharyngé ou laryngé).
+
+Affections psychiatriques
+
+Occasionnels: baisse de la libido.
+
+Affections du système nerveux
+
+Fréquents: vertiges, céphalées.
+
+Rares: syncope, perte de conscience.
+
+Affections oculaires
+
+En rapport avec un traitement par silodosine, des cas de syndrome de l'iris hypotonique peropératoire (SIHP) ont été signalés lors d'interventions chirurgicales de la cataracte (voir également «Mises en garde et précautions»).
+
+Affections cardiaques
+
+Occasionnels: tachycardie.
+
+Rares: palpitations.
+
+Affections vasculaires
+
+Fréquents: hypotension orthostatique.
+
+Occasionnels: hypotension
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquents: nez bouché.
+
+Occasionnels: rhinorrhée.
+
+Affections gastro-intestinales
+
+Fréquents: diarrhée.
+
+Occasionnels: sécheresse buccale, nausées.
+
+Affections hépatobiliaires
+
+Occasionnels: valeurs de la fonction hépatique anormales.
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: éruption cutanée, prurit, urticaire, exanthème médicamenteux.
+
+Affections des organes de reproduction et du sein
+
+Très fréquents: éjaculation rétrograde (23,9 %), anéjaculation (7,1 %).
+
+Fréquents: dysfonction érectile.
+
+Occasionnels: autres troubles de l'éjaculation.
+
+Troubles généraux
+
+Occasionnels: asthénie.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+La silodosine a été étudiée chez des volontaires sains de sexe masculin à des doses atteignant jusqu'à 48 mg/jour. L'effet secondaire limitant la dose a été une hypotension orthostatique. En cas de prise récente, il est possible d'envisager des vomissements forcés ou un lavage gastrique. Si le surdosage entraîne une hypotension, une assistance cardio-vasculaire doit être mise en place. La pression artérielle et la fréquence cardiaque peuvent fréquemment être de nouveau normalisées en allongeant le patient. Si ce n'est pas suffisant, un soluté de remplissage et, le cas échéant, des vasopresseurs peuvent être utilisés. En outre, il est recommandé de surveiller la fonction rénale et d'instaurer des soins de soutien généraux.
+
+La silodosine étant fortement (96,6 %) liée aux protéines, la dialyse n'apporte aucun bénéfice significatif.
+
+Propriétés/Effets
+
+Code ATC
+
+G04CA04
+
+Mécanisme d'action
+
+La silodosine possède une sélectivité élevée pour les récepteurs adrénergiques α1A, qui sont principalement localisés dans la prostate, la vessie, le col de la vessie, la capsule prostatique et l'urètre prostatique. Un blocage de ces récepteurs adrénergiques α1A provoque un relâchement des muscles lisses de ces tissus et donc une réduction de la résistance urétrale, sans toutefois affecter la contractilité du muscle lisse détrusor. Ceci entraîne une amélioration des symptômes de stockage (irritatifs) et de vidange (obstructifs) (troubles urinaires du bas appareil, TUBA) associés à une hypertrophie bénigne de la prostate.
+
+Des études in vitro ont montré une sélectivité élevée pour le récepteur α1A (ratio de liaison α1A/α1B 162/1).
+
+Pharmacodynamique
+
+Les alpha-bloquants peuvent entraîner une diminution de la pression artérielle par réduction de la résistance périphérique. Dans les trois études pivots (voir «Efficacité clinique»), un test orthostatique a été effectué à chaque fois après l'administration de la première dose. En moyenne, une baisse de la pression artérielle systolique de 1,1 mmHg sous silodosine 8 mg et de 0,1 mmHg sous placebo a été observée. En moyenne, la fréquence cardiaque a augmenté de 4,1 battements par minute sous silodosine et de 3,5 battements par minute sous placebo.
+
+Efficacité clinique
+
+L'efficacité et la sécurité d'emploi de la silodosine ont été évaluées lors de trois études pivots contrôlées par placebo et réalisées en double aveugle sur un total de 1900 patients, au cours d'une durée de traitement de 12 semaines. Sur ces 1 900 patients, 847 ont reçu 8 mg de silodosine une fois par jour. Des patients présentant des symptômes modérés à sévères de HBP (International Prostate Symptom Score, IPSS, score initial ≥13) ont été inclus dans ces études. Le critère d'évaluation principal était la modification du score IPSS total par rapport à la ligne de base.
+
+Dans les trois études, les patients sous silodosine ont présenté une amélioration significativement plus importante des symptômes de stockage (irritatifs) et de vidange (obstructifs) de l'HBP par rapport aux patients sous placebo. Selon l'étude, le score IPSS total s'est amélioré de 6-7 points sous silodosine et de 3-5 points sous placebo (p < 0,001). Les résultats des principaux critères d'évaluation secondaires étaient cohérents à cet égard.
+
+L'une des trois études pivots présentait en outre un traitement de comparaison actif (tamsulosine 0,4 mg). À cet égard, la non-infériorité de la silodosine 8 mg comparativement à la tamsulosine a été mise en évidence. Dans cette étude, le taux de réponse a également été défini comme la proportion de patients présentant une amélioration de l'IPSS d'au moins 25 %. Ce taux de réponse était significativement plus élevé sous silodosine (68 %) et sous tamsulosine (65 %) que sous placebo (53 %; p < 0,001).
+
+Dans la phrase d'extension à long terme, en ouvert, de ces études contrôlées, les patients ont été traités par silodosine pendant une durée allant jusqu'à 1 an. L'efficacité de la silodosine s'est maintenue au cours de cette période.
+
+Pharmacocinétique
+
+Absorption
+
+L'absorption de la silodosine administrée par voie orale est bonne et proportionnelle à la dose dans la gamme de dose thérapeutique de 4-8 mg une fois par jour. Après administration à jeun, les concentrations plasmatiques maximales sont atteintes au bout de 30 minutes à 1 heure. La biodisponibilité absolue est d'environ 32 %.
+
+L'absorption de nourriture a entraîné une diminution de la Cmax d'environ 30 % et une augmentation du Tmax d'environ 1 heure, mais n'a eu que peu d'effet sur l'ASC.
+
+Chez les volontaires sains de sexe masculin (n=16) d'un âge moyen de 55 ± 8 ans, suite à une administration par voie orale de 8 mg une fois par jour, juste après le petit-déjeuner et pendant une période de 7 jours, les paramètres pharmacocinétiques suivants ont été mesurés: Cmax 87±51 ng/mL (écart type), Tmax 2,5 heures (intervalle: 1,0-3,0), ASC 433 ± 286 ng•h/mL. La silodosine et ses métabolites ont atteint l'état stationnaire en 7 jours suite à une administration de 8 mg une fois par jour.
+
+Distribution
+
+La silodosine présente un volume de distribution de 49,5 L et se lie aux protéines plasmatiques à hauteur de 96 %. Elle ne diffuse pas dans les cellules sanguines.
+
+La silodosine glucuronide se lie aux protéines plasmatiques à hauteur de 92 %.
+
+Métabolisme
+
+La silodosine subit un métabolisme intensif par glucuronidation (UGT2B7), par l'intermédiaire de l'alcool déshydrogénase et de l'aldéhyde déshydrogénase ainsi que par oxydation (principalement par le CYP3A4). Sur les deux principaux métabolites dans le plasma, le conjugué glucuronide de la silodosine (KMD-3213G) possède environ 1/8 de l'activité pharmacologique de la substance mère in vitro, tandis que le dérivé de l'acide carboxylique (KMD-3293) ne possède pas d'activité pharmacologique significative. Le conjugué glucuronide de la silodosine possède une demi-vie d'au moins 24 heures et atteint des concentrations plasmatiques environ quatre fois supérieures à celles de la silodosine. Les concentrations plasmatiques et la demi-vie du dérivé de l'acide carboxylique sont semblables à celles de la substance mère.
+
+Élimination
+
+Sept jours après l'administration orale de silodosine marquée au 14C, environ 33,5 % de la radioactivité a été retrouvée dans les urines et 54,9 % dans les selles. La clairance de la silodosine a été d'environ 10 L/h. La silodosine est éliminée principalement sous forme de métabolites; seules des concentrations très faibles de la substance sous forme inchangée sont retrouvées dans les urines. Les demi-vies terminales de la substance mère et de son conjugué glucuronide sont respectivement de 13 heures et > 24 heures environ.
+
+Cinétique pour certains groupes de patients
+
+Troubles de la fonction hépatique
+
+Lors d'une étude en administration unique, les propriétés pharmacocinétiques de la silodosine n'ont pas été modifiées chez neuf patients présentant une insuffisance hépatique modérée (scores de Child-Pugh de 7 à 9) par rapport aux neuf volontaires sains. Les résultats de cette étude doivent être interprétés avec prudence, étant donné que les patients présentaient des valeurs biochimiques normales, suggérant que la fonction métabolique était normale, et que leur insuffisance hépatique a uniquement été classée comme modérée du fait d'une ascite et d'une encéphalopathie hépatique.
+
+La pharmacocinétique de la silodosine n'a pas été étudiée chez les patients présentant une insuffisance hépatique sévère.
+
+Troubles de la fonction rénale
+
+Lors d'une étude en administration unique, l'exposition à la silodosine non liée chez les patients présentant une insuffisance rénale légère (n=8) et modérée (n=8) a entraîné, en moyenne, une augmentation de la Cmax d'un facteur de 1,6 et de l'ASC d'un facteur de 1,7 par rapport aux patients dont la fonction rénale était normale (n=8). Chez les patients présentant une insuffisance rénale sévère (n=5), l'augmentation de la Cmax a été d'un facteur de 2,2 et celle de l'ASC de 3,7. L'exposition aux principaux métabolites, la silodosine glucuronide et le KMD-3293, a également augmenté.
+
+Patients âgés
+
+L'exposition à la silodosine et à ses principaux métabolites ne varie pas avec l'âge, même chez les patients âgés de plus de 75 ans.
+
+Enfants et adolescents
+
+La pharmacocinétique de la silodosine n'a pas été étudiée chez les patients âgés de moins de 18 ans.
+
+Données précliniques
+
+Les données précliniques issues des études conventionnelles de pharmacologie de sécurité ainsi que de potentiel cancérogène, mutagène et tératogène n'ont pas révélé de risque particulier pour l'homme. Des effets ont été observés chez l'animal (affectant la glande thyroïde chez les rongeurs) uniquement à des expositions considérées comme suffisamment supérieures à l'exposition maximale chez l'homme, et ont peu de signification clinique.
+
+Chez les rats mâles, une baisse de la fertilité a été observée à partir d'expositions correspondant à environ deux fois l'exposition obtenue à la dose maximale recommandée chez l'homme. L'effet constaté a été réversible.
+
+Au cours d'une étude portant sur la fertilité, menée sur des rats mâles, la viabilité et le nombre total des spermatozoïdes ont été nettement moins élevés à une dose de 600 mg/kg/jour (environ 65 fois la dose maximale recommandée chez l'homme). L'examen histopathologique des animaux stériles a mis en évidence des modifications au niveau des testicules et des épididymes à une dose de 200 mg/kg/jour (environ 30 fois la dose maximale recommandée chez l'homme).
+
+Remarques particulières
+
+Stabilité
+
+Ce médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage d'origine à une température ne dépassant pas 30 °C et protéger de la lumière. Conserver hors de portée des enfants.
+
+Numéro d’autorisation
+
+70129 (Swissmedic)
+
+Présentation
+
+Silodosine Spirig HC 4 mg: boîtes de 30 et 100 gélules. B
+
+Silodosine Spirig HC 8 mg: boîtes de 30 et 100 gélules. B
+
+Titulaire de l’autorisation
+
+Spirig HealthCare SA, 4622 Egerkingen.
+
+Mise à jour de l’information
+
+Janvier 2021

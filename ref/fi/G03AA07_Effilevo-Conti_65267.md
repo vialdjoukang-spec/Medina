@@ -1,0 +1,687 @@
+---
+titre: "Effilevo® Conti"
+titulaire: "Effik SA"
+atc: G03AA07
+substances: "Lévonorgestrel et éthinylestradiol"
+autorisation_swissmedic: 65267
+date_version: 2021-08-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/592edcc817cb483bb1dba98d33ddbc8e-fr.html
+---
+
+Effilevo® Conti
+
+Effik SA
+
+Composition
+
+Principes actifs
+
+Lévonorgestrel et éthinylestradiol.
+
+Excipients
+
+Noyau du comprimé: lactose 89 mg, povidone K30, stéarate de magnésium.
+
+Enrobage: alcool polyvinylique, talc, dioxyde de titane (E171), macrogol 3350.
+
+Contenu supplémentaire dans les comprimés avec principe actif: laque aluminique de rouge allura AC (E129) 0,26 mg et laque aluminique d'indigotine (E132), lécithine de soja (E322), oxyde de fer rouge (E172).
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+21 comprimés pelliculés roses contient 0,10 mg de lévonorgestrel et 0,02 mg d'éthinylestradiol.
+
+7 comprimés pelliculés blancs sans principes actifs (comprimés placebo).
+
+Indications/Possibilités d’emploi
+
+Contraception hormonale.
+
+La décision de prescrire Effilevo Conti doit être prise en tenant compte des facteurs de risque de la patiente, notamment ses facteurs de risque de thromboembolie veineuse (TEV), ainsi que du risque de TEV associé à Effilevo Conti en comparaison aux autres CHC (Contraceptifs Hormonaux Combinés) (voir rubriques «Contre-indications» et «Mises en garde et précautions»).
+
+Posologie/Mode d’emploi
+
+Les CHC tels que Effilevo Conti ne devraient être prescrits que par des médecins ayant l'expérience de ces traitements et qui sont en mesure, d'une part, de fournir aux patientes toutes les explications requises sur les avantages et inconvénients de toutes les méthodes contraceptives disponibles et, d'autre part, de procéder à un examen général et gynécologique.
+
+La prescription d'un CHC doit en principe se faire conformément aux dernières recommandations de la Société Suisse de Gynécologie et d'Obstétrique (SSGO).
+
+Les comprimés pelliculés doivent être pris dans l'ordre indiqué sur la plaquette, si possible à la même heure de la journée et de préférence avec du liquide. Pendant 28 jours consécutifs, on prend un comprimé pelliculé par jour.
+
+On commence la plaquette suivante avec les comprimés pelliculés roses, le jour suivant la prise du dernier comprimé pelliculé blanc de la plaquette précédente. Il se produit habituellement une hémorragie de privation, qui apparaît normalement 2 à 3 jours après le début de la prise du placebo (comprimés pelliculés blancs, dernière rangée) et qui peut encore persister alors que la prochaine plaquette est déjà commencée. (voir aussi «Conduite à tenir en cas de saignements irréguliers»).
+
+Début de la prise
+
+Femmes n'ayant pas utilisé de contraceptifs hormonaux le mois précédent
+
+Il faut commencer la prise des comprimés pelliculés le 1er jour du cycle (= 1er jour des règles). Il est aussi possible de commencer du 2e au 5e jour, mais il est alors recommandé d'utiliser d'autres méthodes contraceptives non hormonales (p.ex. des préservatifs, mais pas la méthode d'abstinence périodique d'Ogino-Knaus et ou méthode des températures), pendant les 7 premiers jours de la prise lors du 1er cycle.
+
+Remplacement d'un contraceptif oral combiné (COC), d'un anneau vaginal ou d'un patch transdermique
+
+La prise d'Effilevo Conti se fait de préférence le lendemain de la prise du dernier comprimé pelliculé actif du COC précédent, au plus tard cependant le lendemain du dernier jour de l'intervalle habituel sans comprimé pelliculé ou de la phase placebo. Lors du remplacement d'un anneau vaginal ou d'un patch transdermique, la prise d'Effilevo Conti commence de préférence le jour du retrait du dernier anneau ou du dernier patch ou au plus tard au moment où l'application suivante aurait été prévue.
+
+Remplacement d'une préparation progestative seule (minipilule, injection, implant, dispositif intra-utérin délivrant un progestatif [DIU])
+
+Le remplacement de la minipilule peut se faire un jour quelconque, celui d'un implant ou un DIU délivrant un progestatif au plus tôt le jour du retrait et celui d'une préparation injectable au moment où la prochaine injection devrait être faite. Dans tous ces cas, il faut utiliser d'autres méthodes contraceptives non hormonales pendant les 7 premiers jours de la prise des comprimés pelliculés.
+
+Après un avortement dans le 1er trimestre de la grossesse
+
+La prise d'Effilevo Conti peut être immédiate. Le recours à d'autres méthodes contraceptives supplémentaires est alors inutile.
+
+Après un avortement au 2e trimestre de grossesse ou un accouchement
+
+La décision quant à la (re)prise d'un CHC tel que Effilevo Conti après un avortement au 2e trimestre de grossesse ou un accouchement doit tenir compte du risque accru d'accidents thromboemboliques veineux pendant la période puerpérale (jusqu'à 12 semaines après l'accouchement ou l'avortement; cf. «Mises en garde et précautions»).
+
+Dans tous les cas, après un accouchement ou un avortement au 2e trimestre de grossesse, la prise d'Effilevo Conti doit débuter au plus tôt entre le 21e et le 28e jour. Si le traitement débute plus tard, il est recommandé d'appliquer des méthodes contraceptives supplémentaires non hormonales durant les 7 premiers jours de la prise. Si des rapports sexuels ont eu lieu entre-temps, il convient d'exclure l'éventualité d'une grossesse ou d'attendre les premières règles avant de débuter le traitement.
+
+Conduite à tenir en cas d'oubli de comprimé(s) pelliculé(s)
+
+Si la patiente s'aperçoits dans un intervalle de 12 heures qu'elle a oublié de prendre un comprimé pelliculé à l'heure habituelle, elle devra prendre celui-ci immédiatement. Les comprimés pelliculés suivants seront à nouveau pris à l'heure habituelle. La protection contraceptive n'est alors pas compromise.
+
+Si plus de 12 heures se sont écoulées depuis l'heure habituelle de la prise, il se peut que la protection contraceptive soit réduite.
+
+Les deux règles de base suivantes s'appliquent en cas d'oubli de comprimé(s) pelliculé(s):
+
+1.La prise ne doit jamais être interrompue plus de 7 jours.
+
+2.Une prise régulière pendant au moins 7 jours est nécessaire pour réprimer efficacement l'axe hypothalamo-hypophyso-ovarien.
+
+Il en résulte la conduite à tenir suivante, en fonction de la semaine de prise:
+
+1re semaine de prise
+
+La patiente doit prendre le comprimé oublié dès qu'elle s'en aperçoit, même si cela implique la prise de 2 comprimés pelliculés le même jour. Les comprimés pelliculés suivants devront à nouveau être pris à l'heure habituelle. Pendant les 7 jours suivants, la patiente devra utiliser une autre méthode contraceptive non hormonale. Si la patiente a eu des rapports sexuels pendant les 7 jours précédents, il faudra tenir compte de l'éventualité d'une grossesse. Plus le nombre de comprimés pelliculés oubliés est grand et plus cet oubli est proche de l'intervalle placebo, plus le risque de grossesse est élevé.
+
+2e semaine de prise
+
+La patiente devra prendre le comprimé pelliculé oublié dès qu'elle s'en aperçoit, même si cela implique la prise de 2 comprimés pelliculés le même jour. Les comprimés pelliculés suivants devront être pris à l'heure habituelle. A condition que la prise ait été régulière les 7 jours précédents, aucune autre mesure contraceptive n'est nécessaire. Si cela n'a pas été le cas ou si plusieurs comprimés pelliculés ont été oubliés, la patiente devra utiliser d'autres méthodes contraceptives non hormonales pendant les 7 jours suivants.
+
+3e semaine de prise
+
+Étant donné la proximité de l'intervalle placebo, le risque de grossesse est accru. Lorsque la patiente utilise une des possibilités de prise suivantes, il ne lui est pas nécessaire d'utiliser d'autres méthodes contraceptives, pour autant qu'elle ait pris régulièrement les comprimés pelliculés pendant les 7 jours précédents. Dans le cas contraire, il lui faudra suivre la première des deux possibilités et utiliser une méthode contraceptive non hormonale pendant les 7 jours suivants.
+
+a.La patiente doit prendre le comprimé pelliculé oublié dès qu'elle s'en aperçoit, même si cela implique la prise de 2 comprimés pelliculés le même jour. Les comprimés pelliculés actifs suivants (comprimés pelliculés roses) devront être pris à l'heure habituelle. Les 7 comprimés de placebo (comprimés pelliculés blancs) de la dernière rangée ne seront pas pris. Elle commencera la prise de la plaquette suivante immédiatement après la prise du dernier comprimé actif. Il est improbable qu'une hémorragie de privation apparaisse avant la fin de la 2e plaquette, mais la survenue de petites pertes sanglantes ou de saignements intermenstruels peut être plus fréquente.
+
+b.La patiente interrompt la prise des comprimés pelliculés actifs (roses) de la plaquette actuelle. Elle doit ensuite prendre des comprimés de la dernière rangée (placebo, comprimés pelliculés blancs) jusqu'à 7 jours, y compris le jour de l'oubli, puis continuer avec une nouvelle plaquette.
+
+Si l'hémorragie de privation ne se produit pas pendant le prochain intervalle placebo, il faut envisager l'éventualité d'une grossesse.
+
+Conduite à tenir en cas de troubles gastro-intestinaux
+
+En cas de troubles gastro-intestinaux sévères – quelle que soit leur cause (c.-à-d. aussi en cas de diarrhée d'origine médicamenteuse, etc.) – l'absorption peut être incomplète et des méthodes de contraception supplémentaires doivent être utilisées.
+
+En cas de vomissements dans les 3 à 4 heures suivant la prise d'un comprimé pelliculé actif (rose), il faut observer les règles de base de la rubrique «Conduite à tenir en cas d'oubli de comprimé(s) pelliculé(s)». Afin que le schéma habituel de prise puisse être conservé, la patiente devra prendre le comprimé pelliculé actif (rose) supplémentaire d'une plaquette de réserve.
+
+Décalage de la menstruation
+
+Report de la menstruation (allongement du cycle)
+
+Il faut poursuivre la prise sans respecter l'intervalle placebo. La patiente peut ainsi retarder la menstruation aussi longtemps qu'elle le désire (au maximum jusqu'à la fin de la deuxième plaquette). Pendant cette période, de petites pertes sanglantes ou des saignements intermenstruels peuvent se produire. La prise régulière d'Effilevo Conti sera alors poursuivie après la phase de placebo de 7 jours.
+
+Avance de la menstruation
+
+Le début de la menstruation peut être avancé à un autre jour de la semaine, en raccourcissant à volonté la phase de placebo. Plus l'intervalle est court, plus la survenue d'une hémorragie de privation est improbable et plus de petites pertes sanglantes ou des saignements intermenstruels sont fréquents pendant la prise de la plaquette suivante (comme lors du report de la menstruation).
+
+Conduite à tenir en cas d'irrégularités menstruelles
+
+Des saignements irréguliers (petites pertes sanglantes ou saignements intermenstruels) peuvent se produire avec tous les CHC, en particulier pendant les premiers mois d'utilisation. En cas de saignements irréguliers, un bilan diagnostique n'est judicieux qu'après une phase d'adaptation d'environ 3 cycles.
+
+Si les irrégularités menstruelles persistent ou si elles surviennent pour la première fois après des cycles auparavant réguliers, il faut aussi envisager des causes d'origine non hormonale. Des mesures diagnostiques adéquates permettant d'exclure une grossesse ou une affection maligne sont par conséquent indiquées. Ce diagnostic peut inclure un curetage.
+
+L'hémorragie de privation peut ne pas apparaître au cours de la phase de placebo (comprimés pelliculés blancs). Une grossesse est peu probable si le CHC a été pris conformément aux recommandations. Il convient d'exclure une éventuelle grossesse si le CHC n'a pas été utilisé conformément aux recommandations avant la première absence d'une hémorragie de privation ou en cas d'absence d'hémorragie de privation au cours de deux cycles consécutifs.
+
+Instructions posologiques particulières
+
+Enfants et adolescents
+
+Effilevo Conti n'est indiquée qu'après la ménarche. L'efficacité et la sécurité ont été examinées chez des femmes âgées de 18 ans et plus. Chez les adolescentes (si indiquée), la posologie recommandée est la même que chez les adultes.
+
+Patientes âgées
+
+Effilevo Conti n'est pas recommandé après la ménopause.
+
+Patientes présentant des troubles de la fonction rénale
+
+Effilevo Conti n'a pas été étudié chez les femmes atteintes d'insuffisance rénale.
+
+Patientes présentant des troubles de la fonction hépatique
+
+Effilevo Conti ne doit pas être utilisée chez les femmes avec une insuffisance hépatique.
+
+Contre-indications
+
+·Présence ou risque de thromboembolie veineuse (TEV)
+
+·thromboembolie veineuse (patiente traitée par des anticoagulants) ou antécédents de TEV (p. ex. thrombose veineuse profonde ou embolie pulmonaire);
+
+·facteurs de risque majeurs de thromboembolie veineuse tels qu’une prédisposition connue, héréditaire ou acquise, telle qu’une résistance à la protéine C activée (PCa) (y compris une mutation du facteur V de Leiden), un déficit en antithrombine III, un déficit en protéine C, un déficit en protéine S;
+
+·présence simultanée de multiples facteurs de risque de thromboembolie veineuse, selon la rubrique «Mises en garde et précautions».
+
+·présence ou risque de thromboembolie artérielle (TEA)
+
+·thromboembolie artérielle, antécédents de TEA ou prodromes de TEA (p.ex. angine de poitrine, infarctus du myocarde, accident ischémique transitoire, accident vasculaire cérébral);
+
+·facteurs de risque majeurs de TEA comme:
+
+·diabète avec complications vasculaires
+
+·hypertension artérielle sévère
+
+·dyslipoprotéinémie sévère
+
+·migraine avec signes neurologiques focaux (également dans l'anamnèse)
+
+·prédisposition héréditaire ou acquise à la TEA, telle qu’une hyperhomocystéinémie ou la présence d’anticorps anti-phospholipides (anticorps anti-cardiolipine, anticoagulant lupique);
+
+·présence simultanée de multiples facteurs de risque de TEA, selon la rubrique «Mises en garde et précautions».
+
+·affection hépatique sévère ou antécédent d’affection hépatique sévère, en l’absence de normalisation des tests fonctionnels hépatiques;
+
+·utilisation concomitante avec l'association des principes actifs ombitasvir/paritaprévir/ritonavir avec ou sans dasabuvir, glécaprévir/pibrentasvir et sofosbuvir/velpatasvir/voxilaprévir (médicament pour le traitement de l'hépatite C), (voir «Mises en garde et précautions» et «Interactions»);
+
+·tumeur hépatique (bénigne ou maligne) ou antécédent de tumeur hépatique;
+
+·existence ou suspicion d’une pathologie maligne dépendante des hormones sexuelles au niveau de l’appareil génital et du sein;
+
+·saignements vaginaux d’origine inconnue;
+
+·grossesse confirmée ou suspicion de grossesse;
+
+·hypersensibilité au principe actif ou à l’un des excipients d’Effilevo Conti.
+
+Mises en garde et précautions
+
+Le risque de thromboembolie veineuse (TEV) et de thromboembolie artérielle (TEA) est augmenté chez les femmes utilisant un CHC par rapport à celles qui n'en utilisent pas. Les mises en garde et précautions décrites ci- après doivent être prises en considération avant toute prescription (cf. «Risque de thromboembolie veineuse [TEV]» et «Risque de thromboembolie artérielle [TEA]»). Il est en outre important d'informer la patiente des risques d'accidents thromboemboliques veineux et artériels, des facteurs de risques vasculaires et en particulier des symptômes de TEV et de TEA ainsi que des mesures à prendre en présence de ces symptômes et de suspicion de thrombose (cf. «Les symptômes d'une TEV [thrombose veineuse profonde et embolie pulmonaire]» et «Les symptômes d'une TEA»).
+
+Avant de prescrire Effilevo Conti, les bénéfices associés à son utilisation doivent être évalués par rapport aux maladies/risques détaillés ci- dessous. Le degré de gravité de chaque facteur individuel ainsi que la présence concomitante de plusieurs facteurs de risque doivent être pris en compte et discutés avec la patiente (cf. également «Contre-indications»). La patiente doit en outre être invitée à lire attentivement la notice d'emballage et à suivre les conseils qui y figurent.
+
+Examen médical
+
+Avant le début ou le renouvellement de l'utilisation d'un CHC tel que Effilevo Conti, il est nécessaire de procéder à une anamnèse personnelle et familiale minutieuse ainsi qu'à un examen général et gynécologique approfondi en prenant en compte les «Contre-indications» et les «Mises en garde et précautions» afin de dépister les affections nécessitant un traitement ainsi que les états à risque, et de pouvoir exclure l'éventualité d'une grossesse. Ces examens comprennent généralement une mesure de la tension artérielle, un examen des seins, de l'abdomen et des organes pelviens (avec frottis cytologique du col) et les examens de laboratoire appropriés.
+
+Les examens doivent être répétés à intervalle régulier pendant la durée de la prise des CHC. Le type et la fréquence d'examen doivent toutefois être déterminés individuellement et se référer aux directives de la Société suisse de gynécologie et d'obstétrique (SSGO). Les contre-indications (p.ex. accident ischémique transitoire) et les facteurs de risque (p.ex. anamnèse familiale de thrombose veineuse ou artérielle; voir «Facteurs de risque de TEV» et «Facteurs de risque de TEA») peuvent apparaître pour la première fois en cours de la prise d'un CHC et doivent dès lors être recherchés lors de chaque contrôle.
+
+Motifs imposant l'arrêt immédiat de la prise du médicament
+
+La patiente doit être informée qu'en cas d'apparition de l'une des contre-indications précitées ou de l'une des situations suivantes, il lui faut consulter au plus vite un médecin, qui décidera de la poursuite ou de l'arrêt de la prise du CHC:
+
+·Céphalées apparaissant pour la première fois en présentant un caractère de migraine ou se manifestant de façon répétée avec une intensité inhabituelle;
+
+·troubles soudains de la vision, de l'audition, du langage ou autres troubles sensoriels;
+
+·dès les premiers signes d'événements thromboemboliques (voir «Symptômes de TEV [thrombose veineuse profonde et embolie pulmonaire] et Symptômes de TEA»);
+
+·4 semaines au moins avant une intervention chirurgicale programmée et pendant une immobilisation (p.ex. à la suite d'un accident ou d'une opération);
+
+·augmentation cliniquement pertinente de la tension artérielle (lors de mesures répétées);
+
+·apparition d'un ictère, d'une hépatite, d'un prurit généralisé;
+
+·fortes douleurs épigastriques ou hépatomégalie;
+
+·états dépressifs sévères;
+
+·grossesse ou suspicion de grossesse.
+
+Risque de thromboembolie veineuse (TEV)
+
+Le risque de TEV est augmenté chez les femmes utilisant un CHC par rapport à celles qui n'en utilisent pas. Les CHC contenant du lévonorgestrel, du norgestimate ou de la noréthistérone sont associés au risque de TEV le plus faible.
+
+La décision de prendre le médicament doit être prise uniquement après un entretien approfondi avec la patiente, afin de s'assurer qu'elle comprend:
+
+·Le risque de TEV associé à la prise d'Effilevo Conti;
+
+·Comment ses facteurs de risque personnels préexistants influent sur ce risque?
+
+·Le risque plus élevé de développer une TEV pendant la première année d'utilisation (et en particulier pendant les 3 premiers mois).
+
+·Les données disponibles indiquent que le risque de TEV est accru aussi bien lors de la première utilisation d'un CHC que lors de la réutilisation du même ou d'un autre CHC après une interruption d'au moins 4 semaines ou plus;
+
+·Effilevo Conti est un médicament. En cas d'accident ou d'intervention chirurgicale, la patiente doit informer les médecins traitants qu'elle prend Effilevo Conti.
+
+Environ 2 femmes sur 10'000 n'utilisant pas de CHC et qui ne sont pas enceintes développeront une TEV au cours d'une année. Le risque peut toutefois être considérablement plus élevé, selon les facteurs de risque individuels (voir ci-dessous).
+
+À partir des données épidémiologiques, il est possible d'estimer que 5 à 7 femmes sur 10'000 utilisant un CHC contenant du lévonorgestrel développeront une TEV au cours d'une année.
+
+Le nombre de TEV lié à l'utilisation de CHC contenant du lévonorgestrel au cours d'une année est inférieur au nombre attendu de TEV au cours d'une grossesse ou de la période puerpérale.
+
+La TEV peut être fatale dans 1 à 2 % des cas.
+
+Très rarement, chez des utilisatrices de CHC, des cas de thrombose veineuse ont été signalés en dehors des membres (p.ex. thromboses des veines sinusales ou thromboses des veines hépatiques, mésentériques, rénales ou rétiniennes).
+
+Facteurs de risque de TEV
+
+Le risque de complications thromboemboliques veineuses chez les utilisatrices de CHC peut être considérablement accru si d'autres facteurs de risque sont présents, surtout s'ils sont multiples (voir le tableau ci-dessous). Lors de l'évaluation du rapport bénéfices/risques, il est important de prendre en considération l'augmentation particulière du risque d'accident thromboembolique veineux en présence de plusieurs facteurs de risques concomitants, augmentation qui peut être supérieure à la seule somme des risques pris individuellement. Dans ce cas, le risque global de TEV doit être pris en compte. Effilevo Conti est contre-indiqué chez les femmes présentant simultanément de multiples facteurs de risque qui les exposent globalement à un risque élevé de thrombose veineuse.
+
+Tableau: Facteurs de risque de TEV
+
+|  |  |
+| --- | --- |
+| Facteur de risque | Commentaire |
+| Obésité (indice de masse corporelle supérieur à 30 kg/m²) | L'augmentation de l'IMC accroît considérablement le risque.  Il est particulièrement important d'en prendre compte si d'autres facteurs de risque sont présents. |
+| Immobilisation prolongée, intervention chirurgicale majeure, toute intervention chirurgicale sur les jambes ou la hanche, neurochirurgie ou traumatisme majeur | Dans ces situations, il est conseillé de suspendre la prise des comprimés pelliculés (au moins quatre semaines à l'avance en cas de chirurgie programmée) et de ne reprendre le CHC que deux semaines au moins après la complète remobilisation.  Une autre méthode de contraception doit être utilisée afin d'éviter une grossesse non désirée.  Un traitement anti-thrombotique devra être envisagé si Effilevo Conti n'a pas été interrompu à l'avance. |
+| Antécédents familiaux (chaque thromboembolie veineuse survenue dans la fratrie ou chez un parent, en particulier à un âge relativement jeune, c.-à-d. avant 50 ans) | En cas de prédisposition héréditaire suspectée, la femme devra être adressée à un spécialiste pour avis avant toute décision concernant la prise d'Effilevo Conti.  Si une thrombophilie est détectée, la prise de CHC comme Effilevo Conti est contre-indiquée. |
+| Autres affections médicales associées à un risque accru de TEV | Lupus érythémateux disséminé, syndrome hémolytique et urémique, maladies inflammatoires chroniques intestinales (maladie de Crohn ou rectocolite hémorragique), drépanocytose, affections malignes. |
+| Âge | En particulier au-delà de 35 ans |
+
+ 
+
+Remarque: l'immobilisation temporaire, y compris les trajets aériens >4 heures, peut également constituer un facteur de risque de TEV, en particulier chez les femmes présentant d'autres facteurs de risque.
+
+Il n'existe aucun consensus quant au rôle éventuel joué par les varices et les thrombophlébites superficielles dans l'apparition ou la progression d'une thrombose veineuse.
+
+Le risque accru de thromboembolie pendant la période puerpérale doit être pris en compte. Certaines données indiquent en effet que le risque peut être encore augmenté jusqu'à 12 semaines après l'accouchement.
+
+Symptômes de TEV (thrombose veineuse profonde et embolie pulmonaire)
+
+La patiente doit être informée qu'en cas d'apparition d'un ou de plusieurs de ces symptômes, elle doit consulter un médecin en urgence et indiquer au personnel médical qu'elle prend Effilevo Conti.
+
+·Les symptômes de thrombose veineuse profonde des membres inférieurs peuvent inclure:
+
+·gonflement unilatéral d'une jambe ou le long d'une veine de la jambe;
+
+·sensation de tension ou douleur à une jambe, même si elle n'est ressentie qu'en position debout ou en marchant;
+
+·sensation de chaleur, rougeur ou changement de la coloration cutanée de la jambe affectée.
+
+·Les symptômes de l'embolie pulmonaire peuvent inclure:
+
+·difficulté respiratoire subite et inexpliquée, respiration rapide ou détresse respiratoire, intolérance à l'effort;
+
+·toux d'apparition soudaine, éventuellement accompagnée d'expectorations sanglantes;
+
+·douleur aiguë et soudaine dans la poitrine pouvant s'amplifier à la respiration profonde;
+
+·obnubilation sévère, vertiges ou sensation d'angoisse;
+
+·tachycardie ou arythmie.
+
+Certains de ces symptômes (p.ex. «essoufflement», ou «toux») ne sont pas spécifiques et peuvent être interprétés à tort comme des signes d'événements fréquents ou moins sévères (infections respiratoires, p.ex.).
+
+Risque de thromboembolie artérielle (TEA)
+
+Des études épidémiologiques ont montré une association entre l'utilisation de contraceptifs hormonaux et l'augmentation du risque de thromboembolie artérielle (infarctus du myocarde, accident cérébrovasculaire ou accident ischémique transitoire). Avant de décider de prescrire Effilevo Conti, la patiente doit être informée de ce risque et, surtout, du fait que des facteurs de risque individuels préexistants sont susceptibles d'aggraver ce risque.
+
+De très rares cas de thromboses dans d'autres vaisseaux sanguins (tels que les artères hépatiques, mésentériques, rénales ou rétiniennes) ont été observés chez les utilisatrices.
+
+Facteurs de risque de TEA
+
+Le risque de complications thromboemboliques artérielles ou d'accident cérébrovasculaire chez les utilisatrices de CHC augmente avec la présence de facteurs de risque (voir tableau). Lors de l'évaluation du rapport bénéfices/risques, il est important de prendre en considération l'augmentation particulière du risque d'accident thromboembolique artériel en présence de plusieurs facteurs de risques concomitants, augmentation qui peut être supérieure à la seule somme des risques pris individuellement. Dans ce cas, le risque global de TEA doit être pris en compte. Effilevo Conti est contre-indiqué chez les femmes présentant un facteur de risque sévère ou de multiples facteurs de risque de TEA qui les exposent à un risque élevé de thrombose artérielle.
+
+Tableau: Facteurs de risque de TEA
+
+|  |  |
+| --- | --- |
+| Facteur de risque | Commentaire |
+| Âge | En particulier au-delà de 35 ans |
+| Tabagisme | Il doit être conseillé aux femmes de ne pas fumer si elles souhaitent utiliser un CHC comme Effilevo Conti. Une méthode de contraception différente doit être fortement conseillée aux femmes de plus de 35 ans qui continuent de fumer. |
+| Hypertension artérielle |  |
+| Diabète | L'utilisation de CHC est contre-indiquée chez les femmes diabétiques qui présentent déjà des complications vasculaires. |
+| Dyslipoprotéinémie |  |
+| Valvulopathie cardiaque |  |
+| Fibrillation auriculaire |  |
+| Obésité (indice de masse corporelle supérieur à 30 kg/m2) | L'augmentation de l'IMC accroît considérablement le risque.  Il est particulièrement important d'en tenir compte si d'autres facteurs de risque sont présents. |
+| Antécédents familiaux (thromboembolie artérielle survenue dans la fratrie ou chez un parent, en particulier à un âge relativement jeune, c.-à-d. avant 50 ans). | En cas de prédisposition héréditaire suspectée, la femme devra être adressée à un spécialiste pour avis avant toute décision concernant la prise d'Effilevo Conti.  Si l'examen révèle une thrombophilie, la prise de CHC comme Effilevo Conti est contre-indiquée. |
+| Migraine | L'accroissement de la fréquence ou de la sévérité des migraines lors de la prise d'Effilevo Conti peut être le prodrome d'un événement cérébrovasculaire et constituer un motif d'arrêt immédiat d'Effilevo Conti. |
+| Autres affections médicales associées à un risque accru de TEA. | Hyperhomocystéinémie, Lupus érythémateux disséminé, drépanocytose, affections malignes. |
+
+ 
+
+Symptômes de TEA
+
+Les femmes doivent être informées qu'en cas d'apparition d'un ou de plusieurs de ces symptômes, elles doivent consulter un médecin en urgence et indiquer au personnel médical qu'elles prennent Effilevo Conti.
+
+·Les symptômes d’un accident cérébrovasculaire peuvent inclure:
+
+·perte soudaine de sensibilité ou de force au niveau du visage, d’un bras ou d’une jambe, touchant notamment une moitié du corps;
+
+·confusion soudaine;
+
+·élocution incompréhensible ou difficulté de compréhension;
+
+·troubles subits de la vision d’un ou des deux yeux;
+
+·troubles subits de la marche;
+
+·vertiges;
+
+·troubles de l’équilibre ou de la coordination;
+
+·céphalées soudaines et sévères, ou de durée inhabituelle, de cause inconnue;
+
+·perte de connaissance ou évanouissement avec ou sans épisode convulsif.
+
+·Les symptômes de l’infarctus du myocarde peuvent inclure:
+
+·douleurs, malaise, sensation de pression, sensation de pesanteur, sensation de serrement ou de tension dans la poitrine, le bras ou derrière le sternum;
+
+·douleurs irradiant dans le dos, la mâchoire, le cou, le bras ou l’estomac
+
+·sensation de réplétion, troubles gastriques ou effort de vomissement ;
+
+·sueurs, nausées, vomissements ou vertiges;
+
+·sensation de grande faiblesse, d’angoisse ou essoufflement;
+
+·tachycardie ou arythmies.
+
+·L’occlusion d’un vaisseau peut engendrer d’autres symptômes:
+
+·douleur soudaine, tuméfaction ou cyanose discrète d’une extrémité;
+
+·abdomen aigu.
+
+Suspicion de prédisposition héréditaire ou acquise aux complications thromboemboliques
+
+En cas de suspicion de prédisposition héréditaire ou acquise aux complications thromboemboliques, un examen de la coagulation sanguine doit être effectué par un spécialiste, qui peut le cas échéant demander une analyse de certains paramètres hémostatiques.
+
+Maladies tumorales
+
+Un risque augmenté de cancer du col de l'utérus a été rapporté lors d'une utilisation au long cours des CHC (> 5 ans) dans quelques études épidémiologiques. Néanmoins, ceci est toujours en discussion de façon controversée dans la mesure où ce résultat est influencé par d'autres facteurs, comme une infection par des papillomavirus humains (HPV) (facteur de risque le plus puissant), par la fréquence de la participation au screening du col de l'utérus ou par le comportement sexuel.
+
+Une méta-analyse de 54 études épidémiologiques a montré que le risque relatif (RR) qu'un cancer du sein soit diagnostiqué, est légèrement augmenté chez les femmes qui utilisent des CHC (RR= 1,24). Cette augmentation du risque diminue d'une manière continue après l'arrêt des CHC et n'est plus détectable au bout de 10 ans. Les cancers du sein étant rares avant l'âge de 40 ans, le nombre supplémentaire de cancers du sein diagnostiqués chez les femmes utilisent ou ayant pris récemment un CHC, est faible par rapport au risque total de cancer du sein. Ces études ne donnent pas d'indications sur un lien de causalité. L'augmentation du risque observée peut être due aussi bien à un dépistage plus précoce chez les utilisatrices de CHC qu'aux effets biologiques des CHC ou aux deux facteurs. Les cancers du sein ont été, au moment où le diagnostic a été posé, tendanciellement moins évolués chez les femmes ayant utilisé un CHC que chez les femmes n'en ayant jamais pris.
+
+Dans de rares cas, on a observé à la suite de l'utilisation de principes actifs hormonaux tels que ceux contenus dans Effilevo Conti, des altérations hépatiques bénignes, plus rarement malignes, dont les complications possibles peuvent être à l'origine d'hémorragies intra-abdominales mettant en jeu le pronostic vital. Si des douleurs épigastriques intenses, une hépatomégalie ou des signes en faveur d'une hémorragie intra-abdominale apparaissent, il faut inclure l'éventualité d'une tumeur hépatique dans le diagnostic différentiel.
+
+Troubles dépressifs
+
+Les dépressions ou humeurs dépressives sont des effets indésirables potentiels connus survenant lors de l'utilisation d'hormones sexuelles, y compris les contraceptifs hormonaux (voir également rubrique «Effets indésirables»). Ces troubles peuvent apparaître peu de temps après le début du traitement. Une dépression peut avoir une évolution grave et représente un facteur de risque de suicide ou de comportement suicidaire. Les utilisatrices de contraceptifs hormonaux doivent donc être informées des symptômes possibles des troubles dépressifs. Il est vivement conseillé d'aviser les utilisatrices de s'adresser immédiatement à un médecin si elles remarquent des variations d'humeur ou autres symptômes de dépression lors de l'utilisation du contraceptif. Les patientes présentant des antécédents de dépression sévère doivent être attentivement surveillées. Si des états dépressifs sévères réapparaissent lors de l'utilisation d'Effilevo Conti, la prise du médicament doit être arrêtée.
+
+Autres précautions
+
+Les femmes prenant un contraceptif hormonal ne doivent pas être traitées simultanément par des préparations à base de millepertuis (Hypericum) car celui-ci peut diminuer l'action contraceptive. Des saignements intermenstruels et des cas isolés de grossesses non désirées ont été rapportés (voir aussi «Interactions»).
+
+Chez les femmes atteintes d'hypertriglycéridémie ou ayant des antécédents familiaux d'hypertriglycéridémie, l'utilisation de CHC peut augmenter le risque de pancréatite.
+
+Bien qu'une légère augmentation de la tension artérielle pendant l'utilisation de CHC ait été assez fréquemment rapportée, des valeurs élevées cliniquement significatives sont rares. Si l'utilisation du CHC conduit à une augmentation cliniquement significative de la tension artérielle (confirmée par des mesures répétées), l'utilisation du CHC devra être arrêtée. Dans les cas où l'indication semble justifiée, on pourra envisager la réutilisation d'un CHC, pour autant que la tension artérielle se soit normalisée (sous traitement).
+
+L'utilisation de CHC peut entraîner une diminution de la tolérance au glucose. Les femmes diabétiques et celles ayant une tolérance au glucose réduite doivent donc toutes être attentivement surveillées, particulièrement au cours des premiers mois, lors de l'utilisation d'un CHC. Sauf exception, il n'existe toutefois aucune raison de modifier le traitement antidiabétique.
+
+Des troubles aigus ou chroniques de la fonction hépatique peuvent imposer un arrêt du CHC, jusqu'à ce que les valeurs hépatiques se soient normalisées. La récidive d'un ictère cholestatique apparu pour la première fois pendant une grossesse ou lors d'une utilisation antérieure d'hormones stéroïdiennes sexuelles, doit faire arrêter l'utilisation du CHC.
+
+Chez les patientes atteintes d'hépatite C et utilisant un CHC à base d'éthinylestradiol, une augmentation significativement plus fréquente de l'ALT (y compris les cas d'une augmentation de plus du quintuple, dans des cas isolés de plus de 20 fois la limite supérieure de la normale), que chez les patientes uniquement traitées par des principes antiviraux a été observée sous l'utilisation de l'association des principes actifs ombitasvir/paritaprévir/ritonavir avec ou sans dasabuvir (voir «Interactions»). Des augmentations de l'ALT similaires ont également été observées sous les médicaments anti-VHC qui contenaient du glécaprévir/pibrentasvir ou du sofosbuvir/velpatasvir/voxilaprévir. Par conséquent, Effilevo Conti doit être arrêté avant l'instauration d'un traitement par ces associations de principes actifs. À condition que les paramètres hépatiques soient normaux, la prise d'Effilevo Conti peut être reprise au plus tôt 2 semaines, mieux encore 4 semaines, après l'arrêt des associations de principes actifs ombitasvir/paritaprévir/ritonavir avec ou sans dasabuvir, glécaprévir/pibrentasvir ou sofosbuvir/velpatasvir/voxilaprévir. Ce faisant, il faut tenir compte du fait que l'efficacité du CHC peut encore être entravée en cas d'intervalle de moins de 4 semaines en raison des propriétés inductrices des enzymes du ritonavir et, par conséquent, une méthode barrière supplémentaire doit être utilisée (voir rubrique «Interactions/Inducteurs enzymatiques»).
+
+Les estrogènes peuvent augmenter la lithogénicité de la vésicule biliaire. Des cas de cholélithiase et d'autres affections de la vésicule biliaire (p.ex. cholécystite) ont été rapportés chez des femmes sous contraceptifs hormonaux.
+
+Chez les femmes atteintes d'un angioœdème héréditaire et/ou acquis, des estrogènes exogènes peuvent induire ou aggraver les symptômes.
+
+Les affections suivantes peuvent survenir ou être aggravées pendant la grossesse ou l'utilisation d'un CHC, même si les données actuellement disponibles ne permettent pas d'imputer une relation de causalité claire avec l'utilisation d'un CHC: ictère et/ou prurit cholestatique; cholélithiase; porphyrie; lupus érythémateux disséminé; syndrome hémolytique et urémique; chorée mineure; herpes gestationis; surdité due à une otosclérose. L'utilisation de CHC a en outre été associée à des cas de maladie de Crohn et de colite ulcéreuse.
+
+Chez les femmes prédisposées, l'utilisation de CHC peut occasionnellement provoquer un chloasma, qui est encore renforcé par une exposition intense aux rayons solaires. Les femmes présentant une tendance au chloasma ne devraient donc pas s'exposer à des rayonnements UV importants.
+
+Il faut informer les patientes qu'un CHC n'offre aucune protection contre les infections à VIH (SIDA) et d'autres maladies sexuellement transmissibles.
+
+La prise régulière d'acide folique avant et pendant une grossesse contribue à prévenir les défauts de fermeture du tube neural (Spina bifida, anencéphalie). Hormis une alimentation riche en acide folique, une supplémentation continue de 0,4 mg par jour (p.ex. par une préparation polyvitaminée) est dès lors recommandée pour toutes les femmes à l'arrêt de la contraception hormonale s'il y a souhait ou possibilité de grossesse.
+
+Effilevo Conti contient du lactose. Chaque comprimé pelliculé actif (rose) contient 89,38 mg de lactose. Chaque comprimé pelliculé placebo (blanc) contient 89,50 mg de lactose. Les patientes présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose ne devraient pas prendre ce médicament.
+
+Le rouge allura AC (E129) peut provoquer des reactions allergiques.
+
+Interactions
+
+Afin de connaître les éventuelles interactions, il est recommandé de consulter également l'information professionnelle des médicaments co-administrés.
+
+Influence d'autres substances sur la pharmacocinétique des contraceptifs hormonaux:
+
+Inducteurs enzymatiques
+
+Des interactions peuvent survenir entre contraceptifs hormonaux et médicaments induisant les enzymes microsomales, ce qui peut conduire à une augmentation de la clairance des hormones sexuelles, à une diminution de l'effet contraceptif et à des saignements intermenstruels. Ceci vaut par exemple pour les barbituriques, le bosentan, la carbamazépine, le felbamate, le modafinil, l'oxcarbazépine, la phénytoïne, la primidone, la rifabutine, la rifampicine et le topiramate ainsi que pour les médicaments contenant du millepertuis (Hypericum perforatum).
+
+Une induction enzymatique peut déjà être observée après quelques jours seulement. L'induction enzymatique maximale est généralement atteinte au bout de 2 à 3 semaines et peut persister pendant 4 semaines ou plus après l'arrêt de ces médicaments.
+
+Les femmes traitées sur une courte période par un de ces médicaments doivent provisoirement utiliser une méthode de contraception non hormonale en complément au CHC ou choisir une autre méthode contraceptive. Une méthode de contraception mécanique doit être poursuivie pendant toute la prise concomitante des médicaments et encore pendant 28 jours après l'arrêt du traitement. Lorsque la prise concomitante d'un inducteur enzymatique dure au-delà de la fin de l'emballage du CHC, il faut passer immédiatement après la prise du dernier comprimé contenant du principe actif à l'emballage suivant, c'est-à-dire qu'il ne faut pas prendre les comprimés placebo. Dans ce cas, il ne faut pas s'attendre à l'hémorragie de privation avant la fin du deuxième emballage. En l'absence d'hémorragie de privation pendant l'intervalle avec prise de comprimés blancs placebo à la fin du deuxième emballage, il est impératif d'exclure toute grossesse avant de poursuivre avec un nouvel emballage.
+
+En cas de traitement de longue durée avec des médicaments qui entraînent une induction enzymatique hépatique, il convient d'utiliser des méthodes contraceptives non hormonales fiables.
+
+On sait en outre que différents inhibiteurs de la protéase du VIH/VHC et inhibiteurs non nucléosidiques de la transcriptase inverse peuvent entraîner une baisse ou une augmentation des concentrations plasmatiques en estrogènes et progestatifs. Ces modifications peuvent être cliniquement significatives dans certains cas.
+
+Les inhibiteurs des protéases en particulier, tels que le ritonavir ou le nelfinavir (y compris leurs associations) sont connus comme étant des inhibiteurs puissants du CYP3A4, mais en cas de co-administration avec des hormones stéroïdiennes, ils peuvent entraîner une induction enzymatique et provoquer une baisse des concentrations plasmatiques en estrogènes et progestatifs.
+
+Inhibiteurs enzymatiques
+
+Inhibiteurs forts et modérés du CYP3A comme les antifongiques azolés (p.ex. itraconazole, voriconazole, fluconazole), les macrolides (clarithromycine, érythromycine), diltiazem, vérapamil et le jus de pamplemousse peuvent augmenter les taux plasmatiques des estrogènes et/ou des progestatifs et entraîner des effets indésirables plus nombreux.
+
+Lorsqu'elles étaient administrées en même temps qu'un contraceptif hormonal combiné contenant 0,035 mg d'éthinylestradiol, des doses d'étoricoxib comprises entre 60 et 120 mg/jour ont entraîné une multiplication des concentrations plasmatiques d'éthinylestradiol par un facteur situé entre 1,4 et 1,6. La pertinence clinique de ces modifications n'est pas connue.
+
+Les inhibiteurs de l'HMG-CoA-réductase atorvastatine et rosuvastatine sont eux aussi susceptibles d'augmenter les concentrations plasmatiques des hormones sexuelles (augmentation d'environ 20 à 30% de l'AUC des composantes œstrogénique et progestative) et, dans certaines circonstances, d'accroître ainsi la survenue des effets indésirables.
+
+Interférence avec le métabolisme entéro-hépatique
+
+En cas de prise simultanée et sur une courte durée (jusqu'à 10 jours) d'antibiotiques qui n'interagissent pas avec le système enzymatique du CYP3A4, aucune interaction pharmacocinétique n'est à prévoir. Il est cependant nécessaire d'avertir la patiente que dans certains cas, la maladie (p.ex. maladie vénérienne) contre laquelle l'antibiotique est utilisé peut nécessiter en complément l'utilisation d'une méthode contraceptive mécanique.
+
+En cas de co-médication de longue durée avec des antibiotiques (p.ex. en cas d'ostéomyélite ou de borréliose), les données d'interaction actuellement disponibles sont insuffisantes. Pour exclure avec certitude toute grossesse, il est dans de tels cas recommandé d'utiliser en complément une méthode contraceptive mécanique pendant la durée de l'antibiothérapie et pendant les 7 jours qui suivent la fin de ce traitement.
+
+En cas d'apparition de diarrhées et/ou de vomissements sous traitement antibiotique, se référer aux indications dans le paragraphe «Comportement lors de troubles gastro-intestinaux» dans la rubrique «Posologie/Mode d'emploi».
+
+Influence des contraceptifs hormonaux sur la pharmacocinétique d'autres médicaments
+
+Les contraceptifs hormonaux peuvent, par différents mécanismes d'interaction, influer également sur la pharmacocinétique de certains autres médicaments: ils peuvent inhiber les enzymes hépatiques microsomaux ou induire la conjugaison hépatique, en particulier la glucuroconjugaison. Les concentrations plasmatiques ou tissulaires d'autres médicaments peuvent par conséquent être soit augmentées (p.ex. la cyclosporine) ou diminuées (p.ex. la lamotrigine, voir ci- dessous). Par ailleurs, l'effet pharmacologique des groupes médicamenteux suivants peut également être influencé: analgésiques, antidépresseurs, antidiabétiques, antimalariques, certaines benzodiazépines, certains béta-bloquants, corticostéroïdes et anticoagulants oraux. Les modifications des taux plasmatiques résultant de ces interactions ne sont pas toujours cliniquement pertinentes.
+
+In vitro, l'éthinylestradiol a révélé une inhibition des CYP1A1, CYP1A2, CYP2C19, CYP3A4/5 et CYP2C8. Dans des études cliniques, l'utilisation d'un contraceptif contenant de l'éthinylestradiol a entraîné une augmentation modérée (p.ex. mélatonine et tizanidine) ou légère (p.ex. théophylline) des concentrations plasmatiques de substrats du CYP1A2, ainsi qu'une augmentation uniquement minime ou absente des concentrations plasmatiques de substrats du CYP3A4 (p.ex. midazolam).
+
+Lamotrigine
+
+Une étude sur l'interaction avec la lamotrigine, un antiépileptique, et un contraceptif oral combiné (0,03 mg d'éthinylestradiol/0,15 de lévonorgestrel) a montré une hausse significative de la clairance de la lamotrigine et une diminution significative des taux plasmatiques de lamotrigine lorsque ces médicaments sont administrés en même temps. Une telle diminution des concentrations plasmatiques peut s'accompagner d'une réduction du contrôle des crises. On ignore cependant dans quelle mesure ces résultats sont transposables à d'autres contraceptifs combinés contenant un autre composant progestatifs et/ou une autre dose d'estrogène. Mais on peut partir du principe que ces préparations présentent un profil d'interactions comparable.
+
+Lors du commencement de la prise d'Effilevo Conti est chez une patiente prenant de la lamotrigine, une adaptation de la dose de lamotrigine peut donc être nécessaire, et les concentrations de lamotrigine devraient être surveillées étroitement au début du traitement. En l'occurrence, il peut y avoir une hausse significative du taux de lamotrigine (selon les cas jusqu'à un niveau toxique) lors de l'arrêt de la prise du contraceptif hormonal (ainsi dans certains cas pendant la période de 7 jours en phase placebo).
+
+Interactions au mécanisme inconnu
+
+Dans des études cliniques, une augmentation de l'ALT significativement plus fréquente (y compris les cas d'une augmentation de plus du quintuple, dans des cas isolés de plus de 20 fois la limite supérieure de la normale [LSN]), que chez les patientes uniquement traitées par des principes antiviraux a été observée sous l'utilisation concomitante d'un CHC contenant de l'éthinylestradiol et de l'association des principes actifs ombitasvir/paritaprévir/ritonavir avec ou sans dasabuvir utilisée dans le traitement des infections à VIH. Des augmentations de l'ALT similaires ont également été observées sous les médicaments anti-VHC qui contenaient du glécaprévir/pibrentasvir ou du sofosbuvir/velpatasvir/voxilaprévir. Par conséquent, Effilevo Conti doit être arrêté avant l'instauration d'un traitement par une telle association antivirale (voir également «Contre-indications» et «Mises en garde et précautions»).
+
+Grossesse, allaitement
+
+Grossesse
+
+La prise d'Effilevo Conti est contre-indiquée pendant de la grossesse. Il faut donc exclure toute grossesse avant le début de la prise. Si une grossesse survient ou est suspectée lors de la prise d'Effilevo Conti, la prise du médicament doit être arrêtée immédiatement et le médecin consulté.
+
+Des études expérimentales animales suggèrent des risques pour le fœtus (voir aussi «Données précliniques»). La plupart des études épidémiologiques réalisées jusqu'ici n'ont toutefois montré aucun indice en faveur d'un effet embryotoxique ou tératogène lors de l'utilisation accidentelle de CHC pendant la grossesse.
+
+Allaitement
+
+Le médicament ne doit pas être pris pendant l'allaitement car il peut réduire la production de lait et modifier sa qualité; d'autre part, de faibles concentrations du principe actif peuvent être mesurées dans le lait. Des méthodes de contraception non hormonales devront si possible être utilisées jusqu'à ce que la mère ait complètement cessé d'allaiter.
+
+Concernant le risque d'événements thromboemboliques chez la mère pendant la période puerpérale, voir la rubrique «Mises en garde et précautions».
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude portant sur l'aptitude à la conduite et à l'utilisation de machines n'a été effectuée.
+
+Effets indésirables
+
+Les effets indésirables les plus graves en rapport avec l'utilisation de CHC, sont décrits dans la rubrique «Mises en garde et précautions» (voir la rubrique). Les effets indésirables sérieux incluent en particulier des thromboembolies artérielles et veineuses.
+
+Les effets indésirables suivants peuvent survenir lors de l'utilisation de CHC. Les fréquences sont définies comme suit: fréquents (≥1/100 à <1/10); occasionnels (≥1/1'000 à <1/100); rares (≥1/10'000 à <1/1'000); fréquence indéterminée (la fréquence exacte ne peut être estimée essentiellement sur la base des rapports spontanés issus de la surveillance postcommercialisation).
+
+Infections et infestations
+
+Fréquence indéterminée: candidose vulvovaginale.
+
+Affections du système immunitaire
+
+Rares: réactions d'hypersensibilité.
+
+Fréquence indéterminée: angioœdème.
+
+Troubles du métabolisme et de la nutrition
+
+Fréquents: prise de poids.
+
+Occasionnels: rétention liquidienne, modification de l'appétit.
+
+Rares: perte de poids.
+
+Affections psychiatriques
+
+Fréquents: humeurs dépressives, variation de l'humeur.
+
+Occasionnels: perte de la libido.
+
+Rares: augmentation de la libido.
+
+Affections du système nerveux
+
+Fréquents: céphalées, vertige.
+
+Occasionnels: migraine.
+
+Affections oculaires
+
+Rares: mauvaise tolérance des lentilles de contact.
+
+Affections cardiaques/Affections vasculaires
+
+Rares: thromboembolie veineuse (p.ex. thrombose veineuse profonde, embolie pulmonaire), thromboembolie artérielle (p.ex. accident ischémique transitoire, accident vasculaire cérébral, infarctus du myocarde), augmentation de la tension artérielle.
+
+Affections gastro-intestinales
+
+Fréquents: nausées.
+
+Occasionnels: vomissements, diarrhée.
+
+Affections hépatobiliaires
+
+Rares: cholélithiase, ictère cholestatique, tumeurs hépatiques.
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: érythème, urticaire, prurit généralisé.
+
+Rares: chloasma, érythème noduleux, érythème multiforme, acné, alopécie.
+
+Affections des organes de reproduction et du sein
+
+Fréquents: douleurs du bas-ventre, sensation de tension ou douleurs dans les seins; saignements intermenstruels.
+
+Occasionnels: aménorrhée, augmentation du volume du sein.
+
+Rares: galactorrhée, sécrétion vaginale ou modifications des sécrétions vaginales.
+
+Fréquence indéterminée: vaginite, cervicite.
+
+Troubles généraux
+
+Occasionnels: oedème.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+On ne dispose d'aucune déclaration sur des conséquences sévères d'un surdosage. Les symptômes d'un surdosage sont: nausées, vomissements et saignements vaginaux. Ces derniers peuvent également survenir chez les jeunes filles avant la ménarche suite à la prise accidentelle du médicament. Il n'existe pas d'antidote spécifique.
+
+Un traitement symptomatique est éventuellement requis.
+
+Propriétés/Effets
+
+Code ATC
+
+G03AA07
+
+Mécanisme d'action
+
+Comme pour tous les contraceptifs hormonaux combinés (CHC), l'action contraceptive d'Effilevo Conti repose sur différents facteurs dont les plus importants sont le blocage de l'ovulation et la modification de la glaire cervicale. En outre, l'endomètre offre des conditions défavorables à une nidation en raison des altérations morphologiques et enzymatiques qu'il subit. Enfin, du fait des modifications hormonales induites par le CHC, les cycles deviennent plus réguliers et les saignements moins abondants.
+
+Pour autant qu'ils soient pris correctement, les contraceptifs hormonaux combinés présentent un taux d'échec inférieur à 1% par an.
+
+Pharmacodynamique
+
+Voir rubrique «Mécanisme d'action».
+
+Efficacité clinique
+
+Voir rubrique «Mécanisme d'action».
+
+Pharmacocinétique
+
+Levonorgestrel
+
+Absorption
+
+Après administration orale, le lévonorgestrel est absorbé rapidement et complètement. Les pics sériques sont atteints à 1,3 heure environ après l'administration d'une dose unique de 2,3 ng/ml. La biodisponibilité du lévonorgestrel est quasi totale après la prise orale.
+
+Distribution
+
+Environ 64% du lévonorgestrel sont liés spécifiquement à la SHBG et env. 35% non spécifiquement à l'albumine, seuls 1,1% de la concentration sérique totale se retrouvent sous forme de stéroïdes libres. L'augmentation de la concentration de SHBG induite par l'éthinylestradiol modifie le taux de fixation aux protéines sériques relatifs du lévonorgestrel ce qui augmente la liaison à la SHBG et diminue la liaison à l'albumine ainsi que la fraction libre. Le volume de distribution du lévonorgestrel après une administration unique est d'env. 129 litres.
+
+Métabolisme
+
+La biotransformation du lévonorgestrel passe par les voies connues du métabolisme des stéroïdes, le CYP3A4 étant le principal enzyme participant à ce métabolisme. Les principaux métabolites plasmatiques sont des formes conjuguées et non conjuguées du 3α, 5β-tétrahydro-lévonorgestrel. La clairance métabolique dans le sérum se situe à environ 1,0 ml/min/kg.
+
+Élimination
+
+Les concentrations sériques de lévonorgestrel diminuent selon un processus biphasique avec une demi-vie terminale d'environ 25 heures.
+
+Le lévonorgestrel est éliminé exclusivement sous forme de métabolites, pratiquement à parts égales par voie rénale et biliaire. La demi-vie des métabolites est de 24 heures environ.
+
+Conditions à l'état d'équilibre
+
+Lors d'une prise quotidienne, les concentrations sériques de lévonorgestrel sont multipliées par trois environ jusqu'à l'état d'équilibre dans la deuxième moitié du cycle d'administration. La pharmacocinétique du lévonorgestrel est influencée par la concentration de SHBG, qui est de 1,5 à 1,6 fois plus élevée lors d'une prise journalière d'Effilevo Conti. Ceci entraîne une réduction de la clairance à environ 0,7 ml/min/kg et une diminution du volume de distribution à environ 100 l à l'état d'équilibre.
+
+Éthinylestradiol
+
+Absorption
+
+Après administration orale, l'éthinylestradiol est absorbé rapidement et complètement. Les pics sériques d'env. 50 pg/ml sont atteints au bout d'une à deux heures. La biodisponibilité absolue est de 45% en moyenne (avec des variations de 20–65%) en raison d'une métabolisation présystémique (effet de premier passage).
+
+Distribution
+
+L'éthinylestradiol se lie très fortement (env. 98%), mais non spécifiquement, à l'albumine sérique et induit une augmentation de la concentration sérique de SHBG. Le volume de distribution est d'env. 2,8–8,6 l/kg.
+
+Métabolisme
+
+Au niveau présystemique, l'éthinylestradiol est métabolisé aussi bien dans la muqueuse de l'intestin grêle que dans le foie. Dans la muqueuse de l'intestin grêle, il est conjugué, dans le foie, il est décomposé par un métabolisme de phase I (principaux métabolites: 2-hydroxyéthinylestradiol et 2-méthoxyéthinylestradiol) et par conjugaison. Le cytochrome 3A4 est impliqué dans une large mesure dans le métabolisme.
+
+Élimination
+
+La clairance est de 2,3–7 ml/min/kg environ. Les concentrations sériques d'éthinylestradiol diminuent selon un profil biphasique, avec une demi-vie de 1 heure respectivement de 10–20 heures. L'éthinylestradiol est éliminé seulement sous forme des ses métabolites par voie biliaire et par voie rénale dans un rapport de 6:4. Les conjugués d'acide glucuronique et de sulfate de l'éthinylestradiol et les métabolites de phase I sont soumis à un cycle entérohépatique. La demi-vie d'élimination des métabolites est de 24 heures environ.
+
+Conditions à l'état d'équilibre
+
+L'état d'équilibre est atteint au bout d'une semaine environ.
+
+Cinétique pour certains groupes de patientes
+
+On ne dispose pas de données sur la pharmacocinétique chez des femmes atteintes d'insuffisance rénale ou hépatique.
+
+Données précliniques
+
+Les études précliniques effectuées avec les contraceptifs oraux combinés sur la toxicité après administration répétée, la génotoxicité et le potentiel carcinogène n'ont montré aucun indice clair de risques particuliers pour l'être humain, même si un risque accru de carcinome hépatique a pu être mis en évidence dans des études épidémiologiques, qui a été observé essentiellement chez des femmes sans cirrhose du foie et VBH- et VCH-négatif lors de l'application de longue durée (>6 ans).
+
+Chez les animaux d'expérience, l'éthinylestradiol a déjà présenté un effet embryolétal à une posologie relativement faible qui est considéré comme spécifique à l'espèce. Des malformations du tractus urogénital et une féminisation des fœtus de sexe masculin ont été observées.
+
+La transposition à l'homme de ces résultats issus d'expérimentations sur l'animal est controversée.
+
+Les études toxicologiques de reproduction chez le rat, la souris et le lapin n'ont montré aucun indice d'action tératogène. Voir la rubrique «Grossesse, Allaitement» pour les risques chez l'être humain.
+
+Remarques particulières
+
+Influence sur les méthodes de diagnostic
+
+Les stéroïdes contraceptifs peuvent perturber les résultats de certains tests de laboratoire, tels que les paramètres biochimiques du foie, de la thyroïde, de la fonction surrénalienne et rénale, les taux plasmatiques des protéines (porteuses) et des fractions lipidiques/lipoprotéiniques, les paramètres du métabolisme glucidique, de la coagulation sanguine et de la fibrinolyse. Ces modifications restent en général dans les limites de la normale.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage original à température ambiante (15–25°C) et hors de portée des enfants.
+
+Numéro d’autorisation
+
+65267 (Swissmedic)
+
+Présentation
+
+Emballages à 1x28 comprimés [B]
+
+Emballages à 3x28 comprimés [B]
+
+Emballages à 6x28 comprimés [B]
+
+Titulaire de l’autorisation
+
+EFFIK SA, 1260 Nyon
+
+Mise à jour de l’information
+
+Août 2021

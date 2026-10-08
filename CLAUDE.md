@@ -1,3 +1,5 @@
+**Référence médicamenteuse suisse = `ref/fi/` ; aucune posologie, interaction ou contre-indication sans vérification dans ce corpus.** Corpus : informations professionnelles (FI) AIPS Swissmedic en français, version du 8 octobre 2026, indexées dans `ref/fi/INDEX.md` ; régénération avec `tools/aips_to_fi.py`.
+
 ## Alignement avec Claude — police de lecture, 8 octobre 2026
 
 Dernière instruction directe de Vial : « Pas de conflit avec Claude. Aligne toi avec la Police qu’il a trouvé ». **Atkinson Hyperlegible Next** devient la police par défaut du portail, des 22 frontends et des cours, avec les quatre WOFF2 de Claude (`f928674`). Cette consigne remplace la demande antérieure de police Anthropic Serif ; celle-ci reste une option du lecteur. Conserver les contributions de Claude, les contrastes élevés, le thème clair et la séparation des spécialités. Les réglages du lecteur s’appliquent au texte, aux fenêtres et à Navigo. Aucune modification de source médicale ni de statut de fragment n’est requise par cette consigne. Voir `docs/collaboration/FRONTENDS_2026-10-08.md` et son reçu d’alignement.

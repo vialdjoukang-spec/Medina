@@ -1,0 +1,500 @@
+---
+titre: "Amikacin Ideogen"
+titulaire: "IDEOGEN AG"
+atc: J01GB06
+substances: "Amikacinum ut Amikacini sulfas"
+autorisation_swissmedic: 68217
+date_version: 2019-12-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/dc79f4cb2873408db61bb8672f38dd18-fr.html
+---
+
+Amikacin Ideogen
+
+Composition
+
+Principes actifs
+
+Amikacinum ut Amikacini sulfas
+
+Excipients
+
+Natrii citras dihydricus; Natrii metabisulfis 3.3 mg/ml (E223); Acidum sulfuricum; Aqua ad injectabile qs. ad solutionem pro 1 ml
+
+Corresp. natrium 6.66 mg/ml
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Concentré pour solution injectable/pour perfusion
+
+500 mg Amikacinum (ut Amikacini sulfas 667.5 mg) par flacon perforable de 2 ml
+
+ou
+
+1 g Amikacinum (ut Amikacini sulfas 1.335 g) par flacon perforable de 4 ml
+
+Indications/Possibilités d’emploi
+
+Amikacin Ideogen est indiqué pour le traitement de courte durée de graves infections causées par des germes à gram négatif sensibles à l’amikacine, en particulier Pseudomonas, Escherichia coli, Proteus indolepositifs et -négatifs, Providencia, Klebsiella, Enterobacter, Serratia et Acinetobacter.
+
+En clinique, l’amikacine est utilisée dans la bactériémie et la septicémie (également la septicémie néonatale), dans les graves infections de l’appareil respiratoire, des os et des articulations, du système nerveux central, de la peau et des muqueuses, dans les infections de l’abdomen (y compris la péritonite), dans les brûlures et les infections post-opératoires.
+
+Amikacin Ideogen est d’autre part indiqué dans les infections graves, compliquées et récidivantes du tractus urogénital causées par les germes précités.
+
+Des examens bactériologiques doivent être effectués pour l’identification des germes et de leur sensibilité à l’amikacine. Amikacin Ideogen peut être considéré comme une médication de traitement initial lorsque l’on suspecte une grave infection par des germes à Gram négatif. Le traitement peut être commencé avant l’obtention du résultat du test de sensibilité. Si les germes ne sont pas encore connus, le traitement doit être complété simultanément par un antibiotique de la famille des pénicillines ou des céphalosporines. Lorsque l’on suspecte une infection à germes anaérobies, une préparation adéquate doit être administrée additionnellement.
+
+L’amikacine s’est révélée efficace en association avec une céphalosporine de la 3ème génération dans le traitement empirique d’épisodes fébriles dans les états neutropéniques.
+
+Les recommandations officielles destinées à l’usage adéquat des antibiotiques doivent être observées, particulièrement les recommandations pour prévenir une augmentation de la résistance antibiotique.
+
+Posologie/Mode d’emploi
+
+Avant le traitement, on devrait connaître le poids corporel du patient afin de calculer la posologie adéquate.
+
+Lors de fonction rénale normale
+
+Adultes et enfants dès l’âge de 2 semaines:
+
+La posologie recommandée pour les adultes et les enfants dès l’âge de 2 semaines avec une fonction rénale normale, est de 15 mg/kg/jour, en dose unique ou fractionnée en 2 à 3 doses (7,5 mg/kg toutes les 12 heures ou 5 mg/kg toutes les 8 heures). En général, la durée du traitement est de 7 à 10 jours.
+
+Dose maximale: La dose journalière ne devrait pas dépasser 15 à 20 mg/kg de poids corporel. Chez les patients ayant un poids élevé ou en cas d’augmentation de la dose unique, la dose ne devrait pas dépasser 1,5 g par jour. La dose cumulative généralement appliquée durant le traitement ne devrait pas dépasser 15 g.
+
+En cas d’infections difficiles et compliquées, lorsqu’on considère un traitement d’une durée de plus de 10 jours, on évaluera de nouveau l’usage d’Amikacin Ideogen. Si l’on continue le traitement, il faudra surveiller soigneusement les fonctions rénales, auditives et vestibulaires ainsi que les concentrations sériques de l’amikacine.
+
+Au cas où une réponse thérapeutique ne serait pas observée dans les 3 à 5 jours, il faudrait arrêter le traitement et procéder de nouveau à un test de sensibilité du germe infectant. Une absence de réponse thérapeutique pourrait indiquer la résistance du germe ou la présence d’un foyer septique requérant un drainage chirurgical.
+
+En raison de la toxicité potentielle des aminoglycosides, on ne recommande pas l’administration de doses fixes (c’est-à-dire des doses non-calculées sur la base du poids corporel). Il est indispensable d’adapter la posologie aux besoins individuels du patient.
+
+ 
+
+Nouveaux-nés jusqu’à l’âge de 2 semaines:
+
+Les nouveaux-nés recevront 10 mg/kg comme dose initiale, puis 7,5 mg/kg toutes les 12 heures.
+
+Prématurés:
+
+Les prématurés recevront 7,5 mg/kg toutes les 12 heures.
+
+Instructions posologiques particulières
+
+Insuffisance rénale:
+
+En cas d’insuffisance rénale (clairance de la créatinine ≤50 ml/min), l’amikacine ne doit pas être administrée en dose unique, mais en 2 à 3 fois par jour.
+
+Si possible, la concentration sérique sera déterminée afin que la posologie puisse être adaptée éventuellement. Une adaptation de la posologie peut être également nécessaire chez les patients dialysés. Il est recommandé de mesurer les concentrations maximales et minimales de l’amikacine périodiquement durant le traitement. En particulier lors de prises journalières multiples, des concentrations maximales de plus de 35 μg/ml sont à éviter. D’autre part, la concentration devrait être retombée en dessous de 10 μg/ml avant une nouvelle injection. Si la concentration sérique ne peut pas être établie, la clairance de la créatinine est un bon indicateur de la fonction rénale, pour autant qu’il y ait steady-state. La détermination du taux d’azote uréique du sang (BUN) est moins fiable.
+
+Lors d’insuffisance rénale, la dose peut être adaptée de deux manières: soit espacer les prises en
+
+gardant la posologie normale, soit réduire la dose en observant des intervalles fixes:
+
+1.Posologie normale avec prises plus espacées: Un intervalle entre les prises pour la posologie normale peut être calculé en multipliant la concentration de la créatinine (mg/dl) par 9. Lorsque celle-ci est de 2 mg/dl, p. ex., une dose de 7,5 mg/kg toutes les 18 heures est indiquée.
+
+2.Réduction de la posologie en observant des intervalles fixes: Au départ, on se tient à une posologie normale de 7,5 mg/kg, et on calcule ensuite les doses administrées à intervalles de 12 heures en rapportant la clairance de la créatinine mesurée à la clairance de la créatinine normale. Dose d’entretien toutes les 12 heures = (clcr mesurée en ml/min: clcr normale en ml/min) x 7,5 mg/kg.
+
+Contre-indications
+
+Hypersensibilité à l’amikacine ou à l’un des excipients du médicament (voir «Composition») ou
+
+hypersensibilité à d’autres antibiotiques de la famille des aminoglycosides.
+
+Mises en garde et précautions
+
+Mise en garde (sulfites): Amikacin Ideogen contient du métabisulfite de sodium (E223) pouvant provoquer chez les patients sensibles des réactions allergiques, y compris un choc anaphylactique et des crises d’asthme mettant la vie du sujet en danger, ainsi que des nausées et des diarrhées. La prévalence dans la population n’est pas connue. L’hypersensibilité aux sulfites est toutefois plus souvent observée chez les asthmatiques que chez les non asthmatiques. Amikacin Ideogen ne devrait donc pas être administré aux patients souffrant d’asthme ou hypersensibles à des préparations contenant des sulfites (certains aliments et produits d’agrément, autres médicaments).
+
+Les aminoglycosides sont absorbés rapidement et presque complètement (à l’exception de la vessie) s’ils sont appliqués de manière topique lors d’interventions chirurgicales. Après l’irrigation du champ
+
+opératoire (petit ou grand) avec une préparation aminoglycosidique, on a rapporté des cas de surdité
+
+irréversible, de défaillance rénale et de décès causés par un blocage neuromusculaire.
+
+L’amikacine est potentiellement néphrotoxique, ototoxique et neurotoxique; les patients doivent donc
+
+être suivis de près. Un traitement ne devrait pas durer plus de 10 jours, et au maximum deux semaines.
+
+Chez le prématuré et le nouveau-né, Amikacin Ideogen doit être administré avec prudence particulière, l’immaturité des reins entraînant une prolongation imprévisible de la demi-vie.
+
+Pendant le traitement, la fonction rénale et celle du VIIIème nerf crânien (N. statoacusticus) devraient être surveillées. Une perte de l’audition, débutant par les fréquences élevées, peut être mise en évidence par un audiogramme. Les patients souffrant d’insuffisance rénale ou recevant des doses élevées d’amikacine et suivant un traitement prolongé aux aminoglycosides, ou les patients avec une lésion préexistante du VIIIème nerf crânien ou ayant déjà pris d’autres médicaments à ototoxicité potentielle sont exposés à un plus grand risque.
+
+L’amikacine est accumulé dans les reins, en fonction de la dose administrée et de la durée du traitement. Le patient doit donc être suffisamment hydraté, pour réduire une irritation chimique des tubules rénaux.
+
+La fonction rénale doit être contrôlée avant le début du traitement et par la suite à intervalles réguliers. Une réduction de la dose (voir «Posologie/Mode d’emploi») et une réévaluation du traitement sont indiquées dès l’apparition de symptômes d’une dysfonction rénale tels que l’oligurie, une augmentation de l’urée sérique ou de la créatinine, ou une diminution de la clairance de la créatinine. Lors d’azotémie ou lors d’une diminution de la diurèse, le traitement devrait être arrêté.
+
+Chez les patients âgés, la fonction rénale peut être perturbée sans que cela soit reconnu par la mesure régulière du taux d’azote uréique du sang (BUN) ou de la créatinine sérique. On recommande de mesurer la clairance de la créatinine. Chez les patients âgés il est particulièrement important de
+
+surveiller la fonction rénale pendant le traitement par des aminoglycosides.
+
+Les audiogrammes sont recommandés (chez les patients suffisamment àgés pour être testés) et
+
+particulièrement indiqués chez les patients exposés à un plus grand risque quant aux effets ototoxiques.
+
+Dès l’apparition de symptômes tels que vertiges, acouphènes, bruits dans les oreilles ou perte de
+
+l’audition, il faut adapter la posologie ou arrêter le traitement par Amikacin Ideogen.
+
+Pendant le traitement par Amikacin Ideogen, des germes et des champignons insensibles peuvent se développer.
+
+Lors d’une surinfection, il faut initier sans attendre un traitement approprié.
+
+Les aminoglycosides (y compris l’amikacine) doivent être utilisés avec prudence chez les patients
+
+souffrant de maladies neuromusculaires comme la myasthénie grave ou la maladie de Parkinson, car,
+
+par leur aptitude à produire un blocage neuromusculaire, ils peuvent aggraver l’affaiblissement
+
+musculaire. Un blocage peut être levé par des ions de calcium; un soutien respiratoire mécanique
+
+pourrait être nécessaire.
+
+500 mg/2ml flacon perforable contient moins de 1 mmol (23 mg) de sodium par 2 ml, c.à-d. qu’il est essentiellement «sans sodium». Le flacon perforable de 1g/4 ml contient 26.64 mg de sodium par 4 ml, ce qui équivaut 1.332 % de l’apport alimentaire quotidien maximal recommandé par l’OMS de 2 g de sodium par adulte.
+
+Interactions
+
+Il existe un plus grand risque de paralysie respiratoire si le patient reçoit des anesthésiques, des
+
+myorelaxants tels que la tubocurarine, la succinylcholine, le décaméthonium ou d’importantes quantités de sang anticoagulé au citrate.
+
+L’administration concomitante de céphalosporines peut engendrer une augmentation de la créatinine
+
+sérique.
+
+Amikacin Ideogen ne devrait pas être associé à d’autres produits (systémiques ou topiques) potentiellement neuroou néphrotoxiques, comme p.ex. la bacitracine, la cisplatine, l’amphotéricine B, la céfaloridine, les antibiotiques de la famille des céphalosporines, la paromomycine, la viomycine, la polymyxine B, la colistine, la vancomycine, l’acyclovir ou d’autres aminoglycosides.
+
+Les diurétiques puissants, comme l’acide éthacrynique et le furosémide, peuvent avoir eux aussi des
+
+effets ototoxiques. Leur association aux aminoglycosides est donc déconseillée.
+
+Les aminoglycosides ne doivent pas être mélangés in vitro (seringue ou perfusion) avec d’autres
+
+antibiotiques, car ils s’inactivent réciproquement.
+
+L’association in vivo des aminoglycosides et des antibiotiques du groupe des pénicillines entraîne une
+
+réduction de la demi-vie des aminoglycosides.
+
+L’inactivation des aminoglycosides n’est cliniquement significative que chez les patients souffrant d’une fonction rénale fortement perturbée. L’inactivation peut se continuer dans les échantillons laboratoires (liquides corporels) et fausser les résultats des taux des aminoglycosides. Donc, les échantillons doivent être traités de manière adéquate après leur prélèvement (détermination immédiate, entreposage au congélateur ou adjonction de bêtalactamase).
+
+Il existe un risque accru d’hypocalcémie si les aminoglycosides sont administrés simultanément avec
+
+des bisphosphonates.
+
+Il existe un risque accru de néphrotoxicité et la possibilité d’ototoxicité si les aminoglycosides sont
+
+administrés simultanément avec des produits contenant du platine.
+
+L’indométhacine pourrait éventuellement augmenter la concentration plasmatique de l’amikacine chez le nouveau-né.
+
+La co-administration d’une thiamine (vitamine B1) pourrait mener à la décomposition de la thiamine, en raison du sulfite réactif, composant contenu dans l’amikacine.
+
+Grossesse, Allaitement
+
+Grossesse
+
+Les aminoglycosides pourraient affecter le développement de l’embryon/foetus. Les aminoglycosides pénètrent dans le placenta. Il existe des rapports isolés sur des cas de surdité congénitale totale, bilatérale et irréversible chez des enfants dont les mères ont reçu de la streptomycine pendant la grossesse. Bien que le traitement des femmes enceintes par d’autres aminoglycosides n’ait pas révélé d’effets indésirables sévères sur le foetus ou le nouveau-né, on ne peut pas exclure un risque potentiel.
+
+La tératogénicité ou l’embryotoxicité de l’amikacine n’ont pas été étudiées, mais certaines observations suggèrent une toxicité organique possible. C’est pourquoi l’administration de ce médicament sera généralement évitée pendant la grossesse sauf dans le cas où le traitement est considéré comme vital pour la mère.
+
+Allaitement
+
+On ignore si l’amikacine passe dans le lait maternel. Comme mesure de précaution, les mères renonceront à l’allaitement de leurs enfants durant le traitement par Amikacin Ideogen.
+
+Fertilité
+
+Aucun effet sur la fertilité n’a été rapporté dans les études de toxicité sur la reproduction menées chez la souris et le rat.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+On n’a pas conduit des études. La prudence est de rigueur en raison d’effets indésirables possibles (voir «Effets indésirables»).
+
+Effets indésirables
+
+Les effets indésirables sont rangés par classe de système d’organes de la classification MedDRA et par fréquence. Les fréquences sont définies comme suit: très fréquents (≥1/10), fréquents (≥1/100, <1/10), occasionnels (≥1/1000, <1/100), rares (≥1/10 000, <1/1000), très rares (<1/10 000).
+
+Affections hématologiques et du système lymphatique
+
+Rarement: éosinophilie, leucopénie, thrombocytopénie, granulocytopénie, anémie.
+
+Troubles du métabolisme et de la nutrition
+
+Occasionnellement: hypomagnesiémie.
+
+Affections du système nerveux
+
+La neurotoxicité de l’amikacine peut prendre la forme de paresthésies (péribuccales et périphériques),de démangeaisons, de tressaillements musculaires, de tremblements, de maux de tête et deconvulsions.
+
+Un blocage neuromusculaire et une paralysie respiratoire ont été observés après une injection par voie parentérale, après des instillations topiques (traitement orthopédique, abdominal ou local des
+
+empyèmes) ou après la prise orale d’aminoglycosides. Mais théoriquement, ces phénomènes pourraient survenir avec chaque mode d’application.
+
+Affections oculaires
+
+Occasionnellement: Après l’administration intravitréenne (injection dans l’oeil), on a observé des cas
+
+isolés d’infarctus de la macule, parfois avec une perte de vision persistante.
+
+Affections de l’oreille et du labyrinthe
+
+Fréquemment: Une toxicité auditive/vestibulaire affectant le nerf vestibulo-cochléaire (N VIII) peut se
+
+manifester par une perte de l’audition (qui atteint seulement les fréquences élevées au début) et/ou par des troubles de l’équilibre. Ces derniers sont généralement compensés tandis que les affections
+
+auditives sont le plus souvent irréversibles et pourraient aussi apparaître après l’arrêt du traitement.
+
+L’amikacine affecte en premier lieu la perception acoustique.
+
+Affections cardiaques
+
+Rarement: hypotension, tachycardie, myocardite.
+
+Affections gastro-intestinales
+
+Rarement: nausée, vomissement.
+
+Affections hépatobiliaires
+
+Rarement: augmentation des enzymes hépatiques dans le sérum (SGOT, SGPT, LDH, phosphatase
+
+alcaline et bilirubine), hépatomégalie passagère, splénomégalie et nécroses hépatiques.
+
+Affections de la peau et du tissu sous-cutané
+
+Rarement: Réactions allergiques (p. ex. fièvre médicamenteuse, urticaire, éruptions cutanées).
+
+Affections musculosquelettiques et du tissu conjonctif
+
+Rarement: arthralgies.
+
+Affections du rein et des voies urinaires
+
+Fréquemment: Des effets néphrotoxiques sont observés chez 3 à 8% de tous les malades traités avec l’amikacine, mais ces effets sont généralement réversibles. Ils se manifestent sous forme
+
+d’augmentation de la créatinine sérique, d’apparition de protéines, de matériel cellulaire, de cylindres
+
+dans l’urine, et sous forme d’ azotémie ou d’oligurie.
+
+Troubles généraux et anomalies au site d’administration
+
+Rarement: splénomegalie.
+
+Douleurs au site d’injection et thrombophlébites.
+
+Effets indésirables après commercialisation
+
+La surveillance post-marketing a révélé des cas d’anaphylaxie (réactions anaphylactiques et
+
+anaphylactoïdes, choc anaphylactique), de bronchospasme, d’hypersensitivité, de prurit et d’urticaire. En plus, comme avec tous les aminoglycosides, on a également observé des cas de néphropathie toxique et de défaillance rénale aigüe sous le traitement par l’amikacine.
+
+L’annonce d’effets secondaires présumés après l’autorisation est d’une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d’effet secondaire nouveau ou grave via le portail d’annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+En cas de surdosage ou de réactions toxiques, on pourra entreprendre une dialyse péritonéale ou une hémodialyse. Les concentrations de l’amikacine ont également pu être diminuées pendant une hémofiltration artérioveneuse continue. Chez le nouveau-né, envisager une exsanguino-transfusion.
+
+Propriétés/Effets
+
+Code ATC
+
+J01GB06
+
+L’amikacine est un antibiotique semi-synthétique de la famille des aminoglycosides (dérivé de la
+
+kanamycine, pour l’administration par voie parentérale).
+
+Spectre d’action in vitro
+
+In vitro, Amikacin est efficace contre de nombreux germes à Gram négatif et à Gram positif. Les
+
+concentrations minimales inhibitrices (en μg/ml) sont mentionnées ci-dessous.
+
+ 
+
+a)Germes sensibles à l’amikacine:
+
+ 
+
+|  |  |  |
+| --- | --- | --- |
+| Germes | CMI 75% | CMI 100% |
+| Pseudomonas aeruginosa | 0,8 | 12,5 |
+| Providencia rettgeri | 1,6 | 1,6 |
+| Staph. aureus | 1,6 | 3,1 |
+| Espèces de Klebsiella | 1,6 | 6,2 |
+| Espèces d’Enterobacter. | 1,6 | 6,2 |
+| Providencia stuartii | 3,1 | 3,1 |
+| Espèces de Citrobacter | 3,1 | 6,2 |
+| Espèces de Serratia | 3,1 | 6,2 |
+| Proteus vulgaris/morganii | 3,1 | 6,2 |
+| Escherichia coli | 6,2 | 12,5 |
+| Proteus mirabilis | 6,2 | 12,5 |
+
+ 
+
+ 
+
+ 
+
+|  |  |  |
+| --- | --- | --- |
+| Germe | CMI 50% | CMI 90% |
+| Acinetobacter | 2,41 | 50,0 |
+
+ 
+
+L’amikacine agit également sur quelques germes (p. ex. Proteus rettgeri, Serratia marcescens et Nocardia asteroides) qui inactivent d’autres aminoglycosides par voie enzymatique, y compris la kanamycine, la gentamycine et la tobramycine.
+
+ 
+
+b)Germes insensibles à l’amikacine:
+
+ 
+
+|  |  |  |
+| --- | --- | --- |
+| Germes | CMI 75% | CMI 100% |
+| Enterococci | 25,0 | 50,0 |
+| Neisseria gonorrhoeae | 25,0 | 50,0 |
+
+ 
+
+L’Haemophilus influenzae, les streptocoques en général et les anaérobies stricts et facultatifs sont insensibles à l’amikacine.
+
+La sensibilité à l’amikacine peut être déterminée en utilisant des techniques standardisées et recommandées par le Clinical and Laboratory Standards Institute (CLSI), c’est à dire au moyen de tests sur disque ou par dilution. Le CLSI recommande les paramètres suivants comme critères de sensibilité:
+
+ 
+
+|  |  |  |
+| --- | --- | --- |
+|  | Test sur disque avec 30 μg d’amikacine, diamètre d’inhibition (mm) | Test par dilution (CMI [μg/ml]) |
+| sensible | ≥17 | ≤16 |
+| Intermédiaire | 15 - 16 | 17 - 31 |
+| résistant | ≤14 | ≥32 |
+
+ 
+
+Mécanisme d’action
+
+Les aminoglycosides agissent sur la fraction 30 S des ribosomes bactériennes. La modification du code génétique au niveau de l’ARN messager entraîne une perturbation de la biosynthèse des protéines (translation). Ce mécanisme a un effet bactéricide sur les germes sensibles à Gram négatif et à Gram positif.
+
+Pharmacodynamique
+
+Aucune information
+
+Efficacité clinique
+
+Aucune information
+
+Pharmacocinétique
+
+Amikacin peut être administré aussi bien en deux à trois doses quotidiennes qu’en une dose unique. L’administration fractionnée et l’administration en une seule dose révèlent l’une et l’autre une corrélation linéaire de l’altération des paramètres cinétiques et de la concentration sérique avec la quantité d’amikacine administrée.
+
+Absorption
+
+Administration par voie intramusculaire: Administrée par voie intramusculaire, l’amikacine est rapidement absorbée. Après l’injection de 250 mg (3,7 mg/kg), de 375 mg (5 mg/kg) et de 500 mg (7,5 mg/kg), la concentration sérique au bout d’une heure est de 12, de 16 et de 21 μg/ml. Au bout de 10 heures, les taux sériques correspondants sont tombés à 0,3, à 1,2 et à 2,1 μg/ml.
+
+Administration par voie intraveineuse: Si l’on administre à un adulte une dose unique de 500 mg (7,5 mg/kg) en perfusion rapide de 30 minutes, les valeurs sanguines sont de 38 μg/ml à la fin de la perfusion et de 24 μg/ml, de 18 μg/ml et de 0,75 μg/ml 30 minutes, 1 heure resp. 10 heures après la perfusion.
+
+En cas de perfusion rapide (30 minutes) d’une dose unique de 1000 mg (15 mg/kg), on obtient des valeurs sanguines de 77 μg/ml à la fin de la perfusion et de 47 μg/ml et de 1 μg/ml 1 heure resp. 12 heures après la perfusion.
+
+Chez le patient adulte, l’aire sous la courbe des concentrations plasmatiques (AUC) après l’administration de 15 mg/kg d’amikacine est de 137 et de 193 mg h l -1.
+
+Distribution
+
+Le volume de distribution chez l’adulte est de 24 litres, soit env. 28% du poids corporel. La liaison aux protéines est de 0 à 11%.
+
+Après administration de la dose recommandée, des concentrations thérapeutiques sont mesurées dans les os, le coeur, la vésicule biliaire et le tissu pulmonaire, et des concentrations significatives dans l’urine, la bile, les expectorations, les sécrétions bronchiques et les liquides interstitiel, pleural et synovial.
+
+Comme les autres antibiotiques de la famille des aminoglycosides, l’amikacine atteint en général des concentrations insuffisantes et, surtout, imprévisibles, dans le liquide céphalo-rachidien – même lorsque les méninges sont enflammées.
+
+Chez les petits enfants, les concentrations dans le liquide céphalo-rachidien s’élèvent à 10 à 20% de la concentration sérique, et elles peuvent augmenter jusqu’à 50% lors d’une méningite.
+
+Les antibiotiques de la famille des aminoglycosides traversent la barrière placentaire, les taux mesurés chez le foetus peuvent atteindre 16 à 50% de la concentration sérique maternelle.
+
+On ignore si l’amikacine diffuse dans le lait maternel. Mais pour d’autres antibiotiques de la famille des aminoglycosides, on a constaté une diffusion en petites quantités dans le lait.
+
+Métabolisme
+
+L’amikacine n’est pas métabolisée.
+
+Élimination
+
+L’élimination primaire de l’amikacine se fait par filtration glomérulaire.
+
+Si la fonction rénale est normale, env. 92% d’une dose intramusculaire sont éliminés sous forme inchangée dans l’urine au cours des premières 8 heures resp. env. 98% en 24 heures (Qo = 0,02). La clairance sérique est de 100 ml/min et la clairance rénale de 94 ml/min si la fonction rénale est normale.
+
+La demi-vie d’élimination moyenne de l’amikacine chez l’adulte bien portant est de 2 bonnes heures.
+
+Même lors de l’administration d’une dose journalière unique de 15 mg/kg, la demi-vie reste inchangée – mais elle peut s’élever à 3 à 4 h chez l’adulte malade et à 10 h chez le patient d’âge très avancé.
+
+Cinétique pour certains groupes de patients
+
+Insuffisants rénaux: Chez les patients souffrant d’insuffisance rénale ou présentant une réduction de la pression de filtration glomérulaire, l’élimination de l’amikacine est considérablement plus lente. La fonction rénale doit donc être surveillée attentivement et, au besoin, la dose adaptée (voir «Posologies spéciales»).
+
+En cas de fonction rénale diminuée (clairance de la créatinine <50 ml/min), l’amikacine ne devrait pas être administrée en une dose unique: L’administration d’une dose unique de 15 mg/kg d’amikacine aux patients atteints d’une insuffisance rénale légère à modérée entraîne des concentrations plasmatiques de 82 à 95 μg/ml. Selon l’état de la fonction rénale, la constante d’élimination, la demi-vie, l’AUC, la clairance plasmatique totale et la vitesse d’accumulation sont fortement modifiées (voir «Élimination»).
+
+Donc, chez les patients avec une clairance de la créatinine <50 ml/min et, en particulier chez les insuffisants rénaux encore plus gravement atteints (clairance de la créatinine <25 ml/min), les modifications des paramètres pharmacocinétiques sont très marquées, ce qui entraîne une présence prolongée de l’amikacine dans l’organisme. Ce problème est indépendant de la dose, et une réduction de la dose aboutit même à la disparition de l’effet bénéfique des concentrations sanguines élevées.
+
+Patients âgés: Chez le patient âgé (clairance moyenne de la créatinine de 64 ml/min), les valeurs sanguines après une perfusion de 15 mg/kg en 30 minutes s’élèvent à 55 μg/ml resp. à 5,4 μg/ml après 12 h. L’aire sous la courbe des concentrations plasmatiques (AUC) après l’administration de 15 mg/kg d’amikacine augmente jusqu’à 255 mg ∙ h ∙ l -1 chez le patient âgé, et parfois même plus chez le patient d’âge très avancé.
+
+Données précliniques
+
+Génotoxicité / Carcinogénicité
+
+Il n’existe pas d’études à long terme chez les animaux en ce qui concerne la cancérogenèse et il n’existe pas d’études concernant la mutagenèse.
+
+Toxicité sur la reproduction
+
+L’amikacine a été administrée aux rats à une posologie jusqu’à 10 fois celle de la dose humaine journalière sans que la fertilité chez les femelles ou les mâles ait été influencée. Des effets foetotoxiques et/ou tératogènes ont été observés sous traitement par des aminoglycosides.
+
+Remarques particulières
+
+Incompatibilités
+
+Amikacin Ideogen ne doit pas être mélangé avec d’autres médicaments dans la solution de perfusion (voir aussi «Instructions pour l’administration»).
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Stabilité après ouverture
+
+Amikacin Ideogen est destiné à un usage unique. Les restes non utilisés dans le flacon doivent être éliminés.
+
+La stabilité chimique et physique de la solution pour perfusion reconstituée à une concentration de 0,25 mg/ml et de 5,0 mg/ml a été démontrée pour une durée de 36 heures à une température de 25 °C.
+
+ 
+
+Du point de vue microbiologique, la solution diluée doit être utilisée immédiatement. Si la solution n’est pas utilisée immédiatement, les conditions et la durée de stockage relèvent de la responsabilité de l’utilisateur et ne doivent normalement pas dépasser 24 heures à une température comprise entre 2 et 8 °C, sauf si la reconstitution/dilution s’est déroulée dans des conditions aseptiques contrôlées et validées.
+
+Remarques particulières concernant le stockage
+
+Ne pas conserver au-dessus de 25 °C. Conserver hors de portée des enfants.
+
+Remarques concernant la manipulation
+
+Amikacin Ideogen est généralement administré par voie intramusculaire ou intraveineuse.
+
+Avant l’emploi, le concentré Amikacin Ideogen doit être examiné pour des précipités et des changements de couleur. Parfois, la solution peut prendre une coloration jaunâtre, ce qui n’a cependant pas d’influence sur l’efficacité.
+
+Pour l’injection intraveineuse, Amikacin Ideogen est administré dans 100 ou 200 ml de solution de perfusion compatible à raison de la posologie calculée. Utiliser suffisamment de solution pour une perfusion de 30 ou 60 minutes. Chez les patients pédiatriques, la quantité de liquide dépend de la quantité tolérée par le patient. En ce qui concerne les petits enfants, la perfusion devrait durer 1 à 2 heures.
+
+Amikacin Ideogen ne doit pas être mélangé avec d’autres médicaments dans la solution de perfusion.
+
+Les solutions de perfusion suivantes sont compatibles avec Amikacin Ideogen:
+
+Glucose 5% / Glucose 5% et NaCl 0,45% / NaCl 0,9% / Solution de Ringer avec du lactate.
+
+Numéro d’autorisation
+
+68217 (Swissmedic)
+
+Présentation
+
+500 mg / 2ml: 1 et 5 flacon(s) perforable(s) [A]
+
+1000 mg / 4ml: 1 et 5 flacon(s) perforable(s) [A]
+
+Titulaire de l’autorisation
+
+Ideogen AG, Freienbach
+
+Mise à jour de l’information
+
+Décembre 2019

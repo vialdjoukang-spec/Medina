@@ -1,0 +1,415 @@
+---
+titre: "Testone"
+titulaire: "Dermapharm AG"
+atc: G03BA03
+substances: "Testosteroni undecanoas"
+autorisation_swissmedic: 70570
+date_version: 2025-03-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/1d09557a46f447909cf87d534a6d871f-fr.html
+---
+
+Testone
+
+Dermapharm AG
+
+Composition
+
+Principes actifs
+
+Testosteroni undecanoas.
+
+Excipients
+
+2,0 g Benzylis benzoas, ricini oleum raffinatum, ad solutionem pro 4 ml.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Solution injectable i.m.
+
+1 ampoule de 4 ml de solution injectable contient 1000 mg d'undécanoate de testostérone (correspondant à 631,5 mg de testostérone) (250 mg d'undécanoate de testostérone par ml).
+
+La solution injectable est un liquide huileux limpide, incolore à légèrement jaunâtre.
+
+Indications/Possibilités d’emploi
+
+Thérapie de substitution de la testostérone en cas d'hypogonadisme primaire et secondaire de l'homme.
+
+Posologie/Mode d’emploi
+
+Injection d'une ampoule de Testone (correspondant à 1000 mg d'undécanoate de testostérone) toutes les 10 à 14 semaines. Cette fréquence d'injection permet une augmentation suffisante du taux de testostérone et ne conduit généralement pas à une accumulation.
+
+L'injection doit être effectuée très lentement. Testone doit être injecté uniquement par voie intramusculaire; la voie intravasculaire doit absolument être évitée.
+
+Début du traitement
+
+Avant le début du traitement, il faut déterminer, entre autres, la concentration de testostérone sérique (cf. «Mises en garde et précautions»). L'intervalle minimum entre les deux premières injections peut être raccourci à 6 semaines. Cette dose initiale permettra d'atteindre très rapidement un état d'équilibre de la concentration.
+
+Intervalles thérapeutiques
+
+Il est conseillé de déterminer la concentration de testostérone sérique à la fin d'un intervalle d'injection. En raison de la variabilité des valeurs de laboratoire, toutes les mesures de la testostérone doivent être effectuées par le même laboratoire.
+
+Un taux sérique en dessous des normes suggère que l'intervalle d'injection peut être raccourci. Devant une concentration trop élevée, un allongement de l'intervalle d'injection doit être envisagé. Cet intervalle doit se situer entre 10 et 14 semaines.
+
+Recommandations spéciales pour le dosage
+
+Patients pédiatriques
+
+Aucune étude clinique n'a été menée avec l'undécanoate de testostérone chez les enfants et les adolescents de moins de 18 ans. Testone n'est pas indiqué chez les enfants et les adolescents avant la puberté (cf. «Mises en garde et précautions»).
+
+Patients âgés
+
+Les données disponibles limitées ne permettent pas de supposer qu'un ajustement posologique soit nécessaire chez les patients âgés.
+
+Patients insuffisants rénaux ou hépatiques
+
+Aucune étude portant sur l'efficacité et l'innocuité de l'undécanoate de testostérone n'a été réalisée chez les patients atteints d'insuffisance rénale ou hépatique. Testone est contre-indiqué chez les patients présentant ou ayant présenté des tumeurs hépatiques.
+
+Contre-indications
+
+·carcinome de la prostate androgéno-dépendant,
+
+·carcinome mammaire chez l'homme,
+
+·hypercalcémie dans le cadre de tumeurs malignes,
+
+·tumeur hépatique passée ou présente,
+
+·sexe féminin,
+
+·hypersensibilité par rapport au principe actif ou à l'un des excipients.
+
+Mises en garde et précautions
+
+Testone doit être utilisé uniquement pour le traitement de l'hypogonadisme (hypo- ou hypergonadotrope) confirmé et après l'exclusion d'autres causes susceptibles de provoquer les symptômes. Le déficit en testostérone doit être établi clairement par des symptômes cliniques (régression des caractères sexuels secondaires, modifications de la constitution corporelle, asthénie, diminution de la libido, dysfonction érectile, etc.) et confirmé par deux dosages individuels du taux sérique de testostérone.
+
+Les solutions huileuses comme Testone doivent être injectées uniquement très lentement et exclusivement par voie intramusculaire. L'injection se fait profondément dans le muscle fessier.
+
+Une micro-embolie pulmonaire susceptible de survenir dans de rares cas pendant ou immédiatement après l'injection de solutions huileuses, a été observée également sous undécanoate de testostérone aussi bien dans les études cliniques qu'après la commercialisation. Les symptômes d'une micro-embolie sont les suivants: malaise, toux, dyspnée, augmentation de la sudation, douleurs thoraciques, vertiges, paresthésies ou évanouissement. Ces réactions sont réversibles. Le traitement est symptomatique, par exemple par l'administration d'oxygène supplémentaire.
+
+Hyperplasie prostatique et cancer de la prostate
+
+Les patients traités par des androgènes peuvent présenter une augmentation du risque de développer une hyperplasie prostatique. Les données relatives au risque de cancer de la prostate en relation avec une thérapie par la testostérone ne permettent pas d'établir clairement un rapport causal. Toutefois, les androgènes peuvent accélérer le développement d'un cancer de la prostate existant. C'est pourquoi tous les patients doivent subir un examen approfondi avant le début du traitement par la testostérone, afin d'exclure la présence d'un cancer de la prostate.
+
+Au cours du traitement par la testostérone, un contrôle régulier de la prostate et des seins par des méthodes actuellement reconnues (toucher rectal et dosage de l'antigène prostatique spécifique PSA) doit être effectué au moins une fois par an chez tous les patients. Chez les patients hypogonadiques âgés de plus de 40 ans et chez les patients à risque (facteurs de risque clinique ou familial), un contrôle régulier est recommandé tous les trois mois durant la première année, puis une fois par an.
+
+Affections qui nécessitent une prudence particulière
+
+La prudence est de rigueur chez les patients sujets au développement d'œdèmes (entre autres en cas d'insuffisance cardiaque, hépatique ou rénale ou de coronaropathie) un traitement par des androgènes pouvant entraîner une rétention sodique et liquidienne accrue, ainsi qu'en cas de migraines ou d'épilepsie. En cas d'œdèmes importants, avec ou sans insuffisance cardiaque congestive, le traitement doit être immédiatement arrêté.
+
+Il faut utiliser Testone avec prudence chez les patients hypertendus car la testostérone peut provoquer une augmentation de la tension artérielle.
+
+Surveillance du traitement
+
+Lors d'une androgénothérapie à long terme, l'hémoglobine et l'hématocrite doivent être régulièrement contrôlés afin de détecter tout signe de polyglobulie. Des augmentations de l'hématocrite peuvent nécessiter des réductions de la dose de testostérone ou, le cas échéant, l'arrêt du traitement.
+
+Chez les patients sous traitement androgénique au long cours, il convient de plus de contrôler régulièrement les tests de la fonction hépatique et le profil lipidique. Des modifications du profil lipidique peuvent nécessiter une réduction de la dose.
+
+Troubles du métabolisme du calcium dans les affections tumorales
+
+Les préparations à base de testostérone ne doivent être employées qu'avec prudence dans le cas des patients cancéreux chez lesquels il existe, en raison de métastases osseuses, un risque d'hypercalcémie et d'hypercalciurie. Chez ces patients, il est recommandé de contrôler régulièrement les taux sériques de calcium.
+
+Priapisme
+
+Le patient doit être informé de l'apparition éventuelle d'un priapisme. Le priapisme peut entraîner des lésions irréversibles du pénis et requiert un traitement d'urgence réalisé par l'urologue.
+
+Évènements thromboemboliques
+
+Des évènements thromboemboliques veineux ont été rapportés chez des patients atteints de thrombophilie traités par la testostérone après la mise sur le marché (données issues non seulement des études, mais aussi de la surveillance post-marketing). L'augmentation de l'hématocrite peut notamment augmenter le risque d'évènements thromboemboliques. La prudence est donc de rigueur en particulier en cas d'administration de la testostérone aux patients atteints de thrombophilie. Les patients doivent être informés des symptômes potentiels d'un évènement thromboembolique (p.ex. douleurs, sensation de chaleur et/ou érythème touchant une extrémité, dyspnée). En cas de suspicion d'évènement thromboembolique le traitement par Testone doit être interrompu; des examens diagnostiques doivent être réalisés et un traitement doit être instauré.
+
+Surdosage et abus
+
+Certains symptômes cliniques tels que irritabilité, nervosité, prise de poids, érections d'une durée excessive ou érections fréquentes, peuvent être les signes d'une concentration sérique de testostérone trop élevée et requièrent un ajustement posologique. Le patient doit être informé de ces symptômes.
+
+L'abus d'androgènes afin d'augmenter les performances sportives expose à des risques sérieux pour la santé (pouvant aller jusqu'à une issue fatale) et est totalement déconseillé.
+
+La testostérone fait l'objet d'utilisations abusives, typiquement à des doses supérieures à celles recommandées dans les indications approuvées et/ou en association avec d'autres stéroïdes anabolisants. L'abus de testostérone et d'autres stéroïdes anabolisants peut provoquer des effets indésirables graves, y compris des événements cardiovasculaires (dans certains cas d'issue fatale), hépatiques et/ou psychiatriques. De manière générale, il faut s'attendre à une augmentation de la survenue des effets mentionnés à la rubrique «Effets indésirables».
+
+De plus, l'abus de testostérone peut entraîner une dépendance et des symptômes de sevrage (comme p.ex. des symptômes de dépression) en cas de réduction significative de la dose ou d'interruption brutale de l'utilisation.
+
+Les sportifs doivent être avertis que ce médicament contient une substance (testostérone) qui risque de donner un résultat positif lors des contrôles de dopage.
+
+Autres précautions
+
+Réactions d'hypersensibilité: Des cas de réactions anaphylactiques consécutives à une injection d'undécanoate de testostérone ont été rapportés. Un lien avec l'administration d'undécanoate de testostérone n'est pas établi avec certitude.
+
+Risque d'hémorragie: De manière générale, les injections intramusculaires doivent être évitées chez les patients présentant des troubles de la coagulation héréditaires ou acquis en raison du risque d'hémorragie. Ceci vaut particulièrement pour les patients traités par des anticoagulants étant donné que la testostérone peut renforcer l'effet des anticoagulants coumariniques oraux (voir «Interactions»).
+
+Apnées du sommeil: Des apnées du sommeil préexistantes peuvent être amplifiées. C'est en particulier le cas chez les patients à risque présentant une obésité ou atteints de maladies respiratoires chroniques.
+
+Métabolisme du glucose: Chez les patients qui présentent des taux plasmatiques de testostérone normaux sous une substitution de la testostérone, une amélioration de la sensibilité à l'insuline est possible. Il peut donc être nécessaire de réduire le dosage des antidiabétiques.
+
+Tumeurs hépatiques: Dans de rares cas, lors d'un traitement hormonal tel que les androgènes, des tumeurs hépatiques bénignes encore plus rarement malignes ont été observées, qui dans des cas isolés ont provoqué des hémorragies intra-abdominales menaçant le pronostic vital. Devant un tableau algique aigu de l'hypochondre, une hépatomégalie ou des signes en faveur d'une hémorragie intra-abdominale, la présence d'une tumeur hépatique doit être envisagée lors du diagnostic différentiel.
+
+Fertilité: En cas de doses élevées de testostérone, et en particulier lors d'un traitement de longue durée, la suppression de la sécrétion de FSH par l'hypophyse peut entraîner des troubles de la spermatogenèse avec oligospermie et réduction du volume de l'éjaculat, ainsi qu'une diminution de la taille des testicules.
+
+Patients âgés: Il n'existe actuellement pas de consensus quant aux valeurs de références de la testostéronémie en fonction de l'âge. Cependant, la diminution des valeurs physiologiques de la testostéronémie avec l'âge doit être prise en compte.
+
+Patients pédiatriques: Testone n'est pas indiqué chez les enfants. Chez les enfants, la testostérone peut conduire à, outre une virilisation, une accélération de la croissance et de la maturité osseuse ainsi qu'une soudure prématurée des épiphyses résultant ainsi en une diminution de la taille finale. Une acné peut également apparaître.
+
+Femmes: Testone ne doit pas être utilisé chez la femme en raison de son effet virilisant. Les signes possibles de virilisation sont une acné vulgaire, un hirsutisme, une altération de la voix et une hypertrophie clitoridienne.
+
+Ce médicament contient 2 g de benzoate de benzyle par unité posologique (4 ml), soit 500 mg/ml.
+
+Interactions
+
+Influence d'autres médicaments sur la pharmacocinétique de la testostérone
+
+Inducteurs enzymatiques: médicaments provoquant une induction des enzymes microsomales, comme les barbituriques, la carbamazépine, la phénytoïne, la primidone, la rifabutine, la rifampicine et les préparations à base de millepertuis, peuvent conduire à une augmentation de la clairance de la testostérone.
+
+Inhibiteurs enzymatiques: inversement, l'administration concomitante de puissants inhibiteurs de l'enzyme CYP450 (p.ex. antifongiques azolés, macrolides) peut entraîner une réduction du métabolisme de la testostérone, susceptible de provoquer un renforcement des effets souhaités et des effets indésirables.
+
+Influence des androgènes sur la pharmacocinétique d'autres médicaments
+
+Les androgènes peuvent influencer la métabolisation d'autres médicaments. Les concentrations plasmatiques et tissulaires peuvent donc être modifiées.
+
+Interactions pharmacodynamiques
+
+Anticoagulants oraux:
+
+Le changement de la synthèse des facteurs de coagulation dans le foie peut influencer l'effet des anticoagulants coumariniques, tendanciellement avec un renforcement de l'effet anticoagulant. Un contrôle plus fréquent de l'INR et éventuellement un ajustement posologique de l'anticoagulant oral pendant le traitement par Testone et jusqu'à 8 jours après la fin du traitement est recommandé.
+
+Corticostéroïdes et ACTH:
+
+L'administration concomitante de testostérone et de corticostéroïdes ou d'ACTH peut augmenter le risque d'œdème. Par conséquent, il convient d'utiliser une telle association avec prudence, surtout chez des patients insuffisants cardiaques ou rénaux ou présentant des maladies hépatiques importantes.
+
+Antidiabétiques:
+
+Les androgènes peuvent améliorer la sensibilité à l'insuline et entraîner ainsi une réduction de la glycémie. Un ajustement de la dose des antidiabétiques peut être nécessaire.
+
+Grossesse, allaitement
+
+Testone doit être administré chez l'homme uniquement.
+
+On ne dispose pas de données cliniques évaluant l'undécanoate de testostérone chez la femme. La testostérone ne doit en aucun cas être administrée en cas de grossesse ou d'allaitement.
+
+Fertilité
+
+Une thérapie de substitution de la testostérone peut provoquer une réduction réversible de la spermatogenèse (cf. «Mises en garde et précautions» et «Données précliniques»).
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude n'a été menée dans ce sens. Selon les connaissances actuelles, la testostérone n'a aucune influence négative sur l'attention et la capacité de concentration. Il faut cependant noter que Testone peut provoquer des effets indésirables tels que torpeur, agitation et vertiges susceptibles de compromettre l'aptitude à la conduite (surtout au début du traitement).
+
+Effets indésirables
+
+Les effets indésirables les plus fréquents sous traitement par l'undécanoate de testostérone sont les suivants: acné et douleurs au site d'injection.
+
+Les effets indésirables associés à l'undécanoate de testostérone, qui ont été observés dans six études cliniques (N= 422) et après la commercialisation, et pour lesquels un rapport causal ne peut être exclu sont énumérés ci-après.
+
+Fréquent: ≥1/100 et < 1/10
+
+Occasionnel: ≥1/1000 et < 1/100
+
+Rare: ≥1/10'000 et < 1/1000
+
+Très rare: < 1/10'000
+
+Tumeurs bénignes, malignes et non précisées (incl. kystes et polypes):
+
+Occasionnel: cancer de la prostate in situ.
+
+Rare: cancer de la prostate.
+
+Infections et infestations:
+
+Occasionnel: bronchite, sinusite
+
+Affections hématologiques et du système lymphatique:
+
+Fréquent: polyglobulie.
+
+Affections du système immunitaire:
+
+Occasionnel: réactions d'hypersensibilité (p.ex. prurit, œdème de Quincke, œdème pharyngé, dyspnée, troubles visuels transitoires, collapsus circulatoire).
+
+Des cas de réactions anaphylactiques consécutives à une injection d'undécanoate de testostérone ont été rapportés. Un lien avec l'administration d'undécanoate de testostérone n'est pas établi avec certitude.
+
+Troubles du métabolisme et de la nutrition:
+
+Fréquent: prise de poids.
+
+Occasionnel: augmentation de l'appétit, augmentation de l'HbA1c, hypercholestérolémie, triglycérides élevés. Lors du traitement par de fortes doses et/ou pendant une durée prolongée: rétention de liquide.
+
+Rare: modifications des électrolytes (rétention de sodium, chlorure, potassium, calcium, phosphates anorganiques et eau) pendant un traitement à doses élevées et/ou d'une durée prolongée.
+
+Affections psychiatriques:
+
+Occasionnel: augmentation ou perte de la libido, agitation, insomnie, irritabilité, troubles émotionnels, agressivité, dépressions.
+
+Affections du système nerveux:
+
+Fréquent: confusion.
+
+Occasionnel: céphalées, migraine, tremblements.
+
+Affections vasculaires:
+
+Fréquent: bouffées de chaleur.
+
+Occasionnel: vertiges, augmentation de la tension artérielle, troubles cardiovasculaires.
+
+Rare: micro-embolie pulmonaire (cf. «Mises en garde et précautions»).
+
+Affections respiratoires, thoraciques et médiastinales:
+
+Occasionnel: toux, ronflements, dysphonie, dyspnée.
+
+Affections gastro-intestinales:
+
+Occasionnel: diarrhées, nausées.
+
+Affections hépato-biliaire:
+
+Occasionnel: perturbations pathologiques des taux hépatiques (p.ex. aspartate aminotransférase).
+
+Affections de la peau et du tissu sous-cutané:
+
+Fréquent: acné.
+
+Occasionnel: sécheresse cutanée, érythème, exanthème (y compris exanthème papuleux), prurit, hyperhidrose, alopécie.
+
+Affections musculo-squelettiques, du tissu conjonctif et des os:
+
+Occasionnel: arthralgies, myalgies, crampes musculaires, raideur musculo-squelettique, claquage musculaire, augmentation du taux sérique de créatine phosphokinase.
+
+Affections du rein et des voies urinaires:
+
+Occasionnel: jet urinaire réduit, nycturie, dysurie, rétention urinaire.
+
+Affections des organes de reproduction et du sein:
+
+Fréquent: douleurs mammaires, augmentation du taux d'PSA, palpation anormale de la prostate (p.ex. durcissement), hyperplasie prostatique bénigne.
+
+Occasionnel: prostatite, douleurs testiculaires, durcissement du tissu mammaire, gynécomastie (persistante dans certains cas), taux élevés d'estradiol.
+
+Troubles généraux et anomalies au site d'administration:
+
+Fréquent: réactions au site d'injection (rougeur, hématome, prurit, douleurs).
+
+Occasionnel: fatigue, asthénie, œdèmes, sueurs nocturnes.
+
+Effets de classe des préparations de testostérone
+
+Sous traitement par d'autres préparations à base de testostérone, les effets indésirables suivants ont également été rapportés: nervosité, hostilité, apnée du sommeil, diverses réactions cutanées y compris séborrhée, hypertrichose, érections plus fréquentes, priapisme (cf. «Mises en garde et précautions») ainsi que très rarement ictère.
+
+Des doses élevées de testostérone provoquent souvent une perturbation ou une réduction réversible de la spermatogenèse, ce qui se traduit par une diminution du volume testiculaire.
+
+Bien que ces effets indésirables n'aient pas été rapportés dans des études cliniques menées avec l'undécanoate de testostérone, la survenue de ces effets ne peut être exclue.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+En cas de surdosage, les phénomènes énumérés sous «Effets indésirables» peuvent s'exacerber.
+
+En cas de surdosage abusif de stéroïdes anabolisants androgènes, on a, entre autre, aussi signalé des événements thromboemboliques veineux et artériels, des événements indésirables cardiaques graves (parfois létaux) et des lésions hépatiques (jusqu'à l'insuffisance hépatique). Des troubles psychiatriques (y compris des changements psychotiques) ont également été observées plus fréquemment.
+
+En cas de surdosage, aucune mesure thérapeutique particulière n'est nécessaire sauf une diminution de la dose ou un arrêt du traitement. Il n'existe aucun antidote spécifique.
+
+Propriétés/Effets
+
+Code ATC
+
+G03BA03
+
+Mécanisme d'action
+
+L'undécanoate de testostérone est un ester de la testostérone (androgène naturel). La forme active, la testostérone, provient du clivage de la chaîne latérale.
+
+La testostérone est l'androgène mâle le plus important. La plus grande partie est synthétisée par les testicules et une petite partie par les glandes corticosurrénales.
+
+La testostérone est responsable du développement normal des caractères sexuels masculins pendant la phase fœtale, la petite enfance et la puberté et influence plus tard le phénotype mâle et les fonctions androgéno-dépendantes (comme la spermatogenèse et les glandes sexuelles accessoires). Elle agit également sur la peau, les muscles, le squelette, les reins, le foie, la moelle osseuse et le SNC.
+
+Selon l'organe cible, le spectre des effets de la testostérone est avant tout androgénique (p.ex. au niveau de la prostate, la vésicule séminale, l'épididyme) ou induit l'anabolisme des protéines (p.ex. au niveau des muscles, des os, de l'hématopoïèse, des reins, du foie).
+
+Pour certains organes (p.ex. au niveau de l'hypophyse, des tissus adipeux, du cerveau, des os et des cellules de Leydig), l'effet de la testostérone repose sur sa transformation périphérique en œstradiol, qui se lie aux récepteurs à l'œstrogène dans le noyau des cellules.
+
+Une sécrétion insuffisante de testostérone conduit chez l'homme à un hypogonadisme, caractérisé par des concentrations sériques de testostérone basses. Les symptômes associés sont, entre autres: caractères sexuels secondaires absents ou incomplets ou régression de ceux-ci, libido réduite, impuissance, fatigue, humeurs dépressives, risque accru d'ostéoporose, augmentation du tissu adipeux viscéral ainsi que diminution de la masse corporelle non adipeuse et de la force musculaire. Le recours à une administration d'androgènes augmente alors la concentration sérique de testostérone et améliore ainsi les symptômes.
+
+Chez les patients hypogonadiques, les androgènes conduisent à une réduction de la masse adipeuse du corps, augmentent la masse corporelle non-adipeuse ainsi que la force musculaire et préviennent la perte de masse osseuse. Ils peuvent également améliorer la fonction sexuelle chez ces patients et jouer un rôle psychotrope positif en maintenant la qualité de l'humeur du patient.
+
+Pharmacodynamique
+
+Cf. «Mécanisme d'action».
+
+Efficacité clinique
+
+Cf. «Mécanisme d'action».
+
+Pharmacocinétique
+
+Absorption
+
+Testone est une préparation à libération prolongée d'undécanoate de testostérone administré par voie intramusculaire et échappe ainsi à l'effet de premier passage dans le foie. Après l'injection intramusculaire d'undécanoate de testostérone (en solution huileuse), une libération lente et complète a lieu. Puis, la substance est presque totalement transformée par les estérases sériques en testostérone et acide undécanoïque. La concentration de testostérone sérique peut se trouver augmentée au-delà des valeurs de base un jour seulement après l'injection. Après administration unique de 1000 mg d'undécanoate de testostérone aux patients hypogonadiques, les concentrations maximales moyennes de testostérone ont été de 24 et 45 nmol/l après 7 et 14 jours respectivement.
+
+Distribution
+
+Une liaison d'environ 98% de la testostérone circulante à la globuline de liaison des hormones sexuelles [SHBG] et à l'albumine a été notée. Seule la fraction libre de la testostérone est considérée comme biologiquement active. Après perfusion intraveineuse de testostérone, un volume de distribution apparent d'environ 1,0 l/kg a été mesuré chez les sujets mâles âgés.
+
+Métabolisme
+
+La testostérone provenant de l'hydrolyse estérasique d'undécanoate de testostérone subit un métabolisme hépatique et extrahépatique prononcé et elle est métabolisée et éliminée comme la testostérone endogène. L'acide undécanoïque est métabolisé par β-oxydation comme les autres acides carboxyliques aliphatiques.
+
+Élimination
+
+Après administration de testostérone radioactive, environ 90% de la radioactivité a été mesurée dans les conjugués d'acide glucuronique ou d'acide sulfurique présents dans les urines et 6% dans les fèces. Des androstérones et de l'étiocholanolone sont également apparues dans les urines. La demi-vie est d'environ 53 jours. La testostérone subit une circulation entéro-hépatique.
+
+Comportement à l'état d'équilibre
+
+Chez les patients hypogonadique, après plusieurs injections intramusculaires de 1000 mg d'undécanoate de testostérone, en respectant un intervalle de 10 semaines entre celles-ci, un état d'équilibre a été atteint entre la 3e et la 5e. Les valeurs moyennes des Cmax et Cmin de la testostérone mesurées à l'état d'équilibre ont été de 42 et 17 nmol/l environ. Les concentrations sériques maximales de testostérone ont diminué par la suite selon une demi-vie d'environ 90 jours, ce qui correspond au taux de libération à partir de la réserve médicamenteuse.
+
+Données précliniques
+
+Un nombre limité d'études portant sur la toxicité spécifique de l'undécanoate de testostérone a été réalisé. La testostérone étant cependant la substance biologiquement active provenant de l'hydrolyse de l'undécanoate de testostérone, l'évaluation se base également sur les résultats d'études menées avec la testostérone libre ou ses esters. La toxicité aiguë et chronique est donc faible.
+
+Potentiel mutagène et cancérogène
+
+Les études in vitro et in vivo menées avec l'undécanoate de testostérone et la testostérone n'ont pas permis de mettre en évidence un effet mutagène. La testostérone et ses esters favorisent le développement de tumeurs hormono-dépendantes chez les rongeurs. De manière générale, il convient de considérer que les hormones sexuelles accélèrent le développement de certains tissus et tumeurs hormono-dépendants.
+
+Toxicité sur la reproduction
+
+Les études de fertilité sur les rongeurs et les primates ont montré que les traitements avec la testostérone influencent la fertilité en réprimant la spermatogenèse de manière dose-dépendante.
+
+De plus, aucun effet tératogène ou létal pour les embryons n'a été observé sur les descendants des rats mâles traités par la testostérone. L'administration de Testone peut, à certains stades de développement, entraîner une virilisation des fœtus femelles. Aucun autre signe d'atteinte du développement des organes n'a pu être mis en évidence lors des études d'embryo-toxicologie et de tératogénicité.
+
+Tolérance locale
+
+En ce qui concerne la tolérance locale, aucune augmentation de l'effet irritant local dû au solvant seul n'a pu être mise en évidence lors des tests sur animaux. Le solvant de Testone est présent depuis de nombreuses années au niveau de multiples formulations destinées à une utilisation chez l'homme. Jusqu'à aujourd'hui, aucun effet d'irritation locale parlant en défaveur de son emploi, n'a été observé.
+
+Remarques particulières
+
+Incompatibilités
+
+Étant donné qu'aucune étude évaluant la compatibilité n'a été entreprise, Testone ne doit pas être mélangé à d'autres médicaments.
+
+Stabilité
+
+Ce médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Tenir hors de portée des enfants.
+
+Ne pas conserver au-dessus de 30 °C. Ne pas congeler.
+
+Remarques concernant la manipulation
+
+Le produit doit être inspecté visuellement pour détecter la présence éventuelle de particules avant l'administration. Seule une solution limpide et exempte de particules doit être utilisée.
+
+L'ampoule est conçue pour un usage unique. Le contenu d'une ampoule doit être injecté par voie intramusculaire immédiatement après avoir été prélevé dans une seringue.
+
+Numéro d’autorisation
+
+70570 (Swissmedic).
+
+Présentation
+
+Testone solution injectable i.m.: 1 ampoule à 4 ml (B)
+
+Titulaire de l’autorisation
+
+Dermapharm AG, Hünenberg.
+
+Mise à jour de l’information
+
+Mars 2025.

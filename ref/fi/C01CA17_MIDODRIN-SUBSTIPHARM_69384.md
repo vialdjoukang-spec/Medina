@@ -1,0 +1,347 @@
+---
+titre: "MIDODRIN SUBSTIPHARM"
+titulaire: "Leman SKL SA"
+atc: C01CA17
+substances: "Chlorhydrate de midodrine"
+autorisation_swissmedic: 69384
+date_version: 2024-05-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/3e60961d952c461eb2740703dfcf6434-fr.html
+---
+
+MIDODRIN SUBSTIPHARM
+
+Composition
+
+Principes actifs
+
+Chlorhydrate de midodrine
+
+Excipients
+
+Stéarate de magnésium, silice colloïdale anhydre, cellulose microcristalline, amidon prégélatinisé
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimés à 2,5 mg et 5 mg de chlorhydrate de midodrine.
+
+Indications/Possibilités d’emploi
+
+Hypotension orthostatique «fonctionnelle» avec réaction sympathotonique, après un repos prolongé au lit chez des patients présentant un trouble transitoire de la régulation du système nerveux végétatif.
+
+Hypotension orthostatique suite à un traitement par neuroleptiques et antidépresseurs.
+
+Formes sévères d'hypotension orthostatique (asympathotonique):
+
+Hypotension orthostatique idiopathique (HOI).
+
+Hypotension orthostatique idiopathique avec manifestation neurologique (syndrome de Shy-Drager/SSD).
+
+Hypotension orthostatique secondaire (HOS, par exemple en cas de neuropathie diabétique).
+
+Posologie/Mode d’emploi
+
+Le dosage dépend de la gravité de la maladie et doit être déterminé individuellement.
+
+Le chlorhydrate de midodrine doit être administré pendant la journée lorsque le patient effectue ses activités quotidiennes en position droite. Pour éviter une hypertension de décubitus, la dernière dose doit être prise au moins 4 heures avant le coucher.
+
+En début de traitement, la pression artérielle en position assise et couchée doit être contrôlée régulièrement (au moins 2 fois par semaine) et en cas d'augmentation excessive de la pression artérielle en position couchée, le chlorhydrate de midodrine doit être arrêté.
+
+a) En cas d'hypotension «fonctionnelle» avec réponse sympathique, la dose standard est la suivante:
+
+1 comprimé de 2,5 mg 2 fois par jour, administrés le matin après le lever et le soir au moins 4 heures avant le coucher.
+
+En fonction de l'effet clinique, la dose en traitement de longue durée peut être réduite à 1 comprimé de 2,5 mg de chlorhydrate de midodrine par jour
+
+Une augmentation de la dose jusqu'à 2 x 2 comprimés de 2,5 mg ou 2 x 1 comprimé de 5 mg de chlorhydrate de midodrine par jour  peut être nésessaire.
+
+b) Chez les patients présentant une hypotension induite par des psychotropes 1 comprimé 2,5 mg 2-3 fois par jour.
+
+c) Chez les patients présentant des formes sévères d'hypotension orthostatique (HOI, SSD, HOS), une adaptation individuelle de la dose est nécessaire. La dose doit être prise 30 à 45 minutes avant de se lever, puis plusieurs fois par jour à intervalles rapprochés. La dose initiale doit être de 3 x 1 comprimé de 2,5 mg de chlorhydrate de midodrine par jour, puis elle doit être adaptée au résultat thérapeutique (mesure de la pression artérielle systolique 3 min. après le lever, surveillance de l'apparition de symptômes orthostatiques!). Dans certains cas, des doses allant jusqu'à 15 mg/jour peuvent être indiquées.
+
+La dose doit être augmentée à intervalles d'environ une semaine en fonction de l'effet thérapeutique recherché. Une augmentation de la dose quotidienne supérieure à 30 mg de chlorhydrate de midodrine, répartie en 3 prises uniques, ne peut être recommandée.
+
+Posologies particulières
+
+Enfants et adolescents
+
+La sécurité et l'efficacité chez les enfants de moins de 12 ans et les adolescents n'ont pas été démontrées. MIDODRIN SUBSTIPHARM ne doit donc pas être utilisé dans cette tranche d'âge.
+
+Patients âgés
+
+Aucune étude spécifique n'a été menée sur une éventuelle réduction de la dose chez les patients âgés.
+
+Patients avec insuffisance rénale
+
+Aucune étude spécifique n'a été menée. Cependant, le chlorhydrate de midodrine est généralement contre-indiqué chez les patients souffrant d'une maladie rénale aiguë et d'une insuffisance rénale sévère. Adaptation de la dose en cas d'insuffisance rénale légère à modérée (voir rubrique «Avertissements et mesures de précaution»).
+
+Patients avec insuffisance hépatique
+
+Aucune étude spécifique n'a été menée.
+
+Contre-indications
+
+·Hypersensibilité connue à la substance active ou à l'un des excipients selon la composition
+
+·Cardiopathie organique sévère (par exemple bradycardie, cardiopathie ischémique, insuffisance cardiaque congestive, bloc cardiaque/ troubles de la conduction ou anévrisme aortique)
+
+·Hypertension
+
+·Arythmies
+
+·Trouble circulatoire hypotonique avec réaction hypertonique au test de la station debout,
+
+·Maladies vasculaires oblitérantes, spastiques et scléreuses sévères (par exemple, occlusions et spasmes vasculaires cérébraux)
+
+·Maladie rénale aiguë
+
+·Restriction sévère de la fonction rénale, troubles de la miction de la vessie, notamment en cas d'hypertrophie prostatique avec augmentation du volume d'urine résiduelle
+
+·Rétention urinaire
+
+·Rétention urinaire mécanique
+
+·Rétinopathie diabétique proliférant
+
+·Phéochromocytome
+
+·Hyperthyroïdie
+
+·Glaucome à angle fermé
+
+·Grossesse et allaitement
+
+Mises en garde et précautions
+
+Pendant le traitement, la pression artérielle doit être vérifiée en position couchée et assise. Le risque d'hypertension en position couchée ou assise doit être évalué au début du traitement.
+
+Il faut conseiller aux patients de signaler immédiatement au médecin traitant les symptômes d'hypertension en décubitus, tels que palpitations, maux de tête et troubles de la vue. La posologie doit être adaptée ou le traitement interrompu si nécessaire.
+
+Chez les patients souffrant d'insuffisance rénale, une adaptation de la dose est nécessaire en raison du ralentissement de l'excrétion du métabolite actif en fonction de la gravité de la maladie.
+
+Il est conseillé de contrôler régulièrement la fonction rénale pendant un traitement à long terme au MIDODRIN SUBSTIPHARM. La prudence est de mise chez les patients souffrant d'insuffisance cardiaque, de bradycardie et d'arythmie cardiaque ainsi que de diabète sucré.
+
+L'expérience est insuffisante chez les patients présentant un dysfonctionnement hépatique. Il est donc indiqué de vérifier la fonction hépatique avant et régulièrement pendant le traitement par MIDODRIN SUBSTIPHARM.
+
+Interactions
+
+La midodrine est un inhibiteur du cytochrome P450 CYP2D6 et pourrait donc affecter le métabolisme d'autres médicaments (par exemple perphénazine, amiodarone, métoclopramide) métabolisés par cette isoenzyme du cytochrome 450. Cela pourrait entraîner une augmentation de l'exposition systémique et un effet accru de ces médicaments.
+
+L'administration simultanée de midodrine avec des vasoconstricteurs, des sympathomimétiques, par exemple des préparations décongestionnantes pour le rhume, certains inhibiteurs de l'appétit et d'autres médicaments qui augmentent la pression artérielle (par exemple méthyldopa, antidépresseurs tricycliques, antihistaminiques, hormones thyroïdiennes, inhibiteurs de la MAO ainsi que des médicaments en vente libre) doit être évitée car elle pourrait entraîner une forte augmentation de la pression artérielle.
+
+L'effet de la midodrine peut être antagonisé par des α-bloquants, tels que la prazosine et la phentolamine.
+
+L'administration concomitante de midodrine avec des α- et β-bloquants peut entraîner une diminution de la fréquence cardiaque; une surveillance attentive est nécessaire.
+
+L'administration simultanée de glycosides cardiaques n'est pas recommandée en raison d'une potentialisation de la bradycardie réflexe et d'une augmentation de la fréquence des troubles de la conduction.
+
+La midodrine peut augmenter ou potentialiser l'effet possible d'augmentation de la pression artérielle des préparations à base de cortisone.
+
+L'alcool peut augmenter l'effet des sympathomimétiques, car il provoque une libération de catécholamines en stimulant la médullosurrénale.
+
+Grossesse, allaitement
+
+Grossesse
+
+Aucune donnée clinique sur les femmes enceintes exposées n'est disponible pour MIDODRIN SUBSTIPHARM. Il n'existe pas d'études expérimentales suffisantes sur les animaux en ce qui concerne les effets sur la grossesse, le développement embryonnaire/fœtal, la naissance et le développement postnatal.
+
+Le risque potentiel pour l'homme n'est pas connu. L'utilisation de MIDODRIN SUBSTIPHARM est donc contre-indiquée pendant la grossesse.
+
+Les femmes qui prévoient une grossesse ne doivent pas utiliser la midodrine. Si une femme tombe enceinte pendant le traitement par la midodrine, le traitement doit être interrompu immédiatement une fois la grossesse établie.
+
+Allaitement
+
+Des études menées sur des animaux ont montré que la midodrine passe dans le lait maternel. MIDODRIN SUBSTIPHARM est contre-indiqué pendant l'allaitement. Si l'utilisation de MIDODRIN SUBSTIPHARM est nécessaire pendant l'allaitement, celui-ci doit être évité.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude correspondante n'a été réalisée.
+
+Lors de la conduite de véhicules ou de l'utilisation de machines, une excitabilité, une irritabilité et des nausées peuvent occasionnellement survenir.
+
+Effets indésirables
+
+A fortes doses, telles qu'utilisées dans le traitement des formes sévères d'hypotension orthostatique, une augmentation de la pression sanguine en position couchée a souvent été observée. Cela se produit surtout en cas d'association avec la fludrocortisone et doit être évité en ajustant la dose. Occasionnellement, ce dosage peut également provoquer une bradycardie réflexe. Celle-ci peut être traitée avec de l'atropine.
+
+Les catégories suivantes sont utilisées comme base pour les données de fréquence des effets indésirables:
+
+Très fréquents (≥1/10); fréquents (≥1/100 à < 1/10); occasionnels (≥1/1000 à < 1/100); rares (≥1/10 000 à < 1/1000); fréquence inconnue (ne peut être estimé sur la base des données disponibles).
+
+Affections psychiatriques
+
+Occasionnels: Troubles du sommeil, insomnie
+
+Fréquence inconnue: Crainte, confusion
+
+Affections du système nerveux
+
+Fréquent: Paresthésie
+
+Occasionnels: Maux de tête, irritabilité, nervosité, excitabilité, agitation
+
+Affections cardiaques
+
+Occasionnels: Bradycardie réflexe, tachycardie, palpitations
+
+Rares: arythmies ventriculaires
+
+Affections vasculaires
+
+Fréquents et dose-dépendant: augmentation de la pression artérielle en position allongée
+
+Affections gastro-intestinales
+
+Occasionnels: Nausées, dyspepsies, brûlures d'estomac et stomatites
+
+Fréquence inconnue: Douleurs abdominales, vomissements, diarrhée
+
+Affectations hépatobiliaires
+
+Rares: valeurs anormales de la fonction hépatique, élévation des enzymes hépatiques
+
+Maladies de la peau et du tissu sous-cutané
+
+Très fréquents: Piloérection (chair de poule) (13%)
+
+Fréquents: Prurit (principalement du cuir chevelu), rougeur de la peau, sensation de froid, éruption cutanée
+
+Rares: réactions cutanées allergiques
+
+Affections du rein et des voies urinaires
+
+Fréquents: Rétention urinaire
+
+Occasionnels: Envie urgente d'uriner
+
+Occasionnels et dose-dépendant: Troubles de la miction
+
+ 
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Les symptômes de surdosage sont les mêmes que ceux décrits dans la rubrique «Effets indésirables», notamment hypertension, piloérection (chair de poule), sensation de froid, bradycardie, rétention et urgence urinaires.
+
+Traitement
+
+Outre le soutien habituel des fonctions vitales, les mesures générales, basées sur les propriétés pharmacologiques de la préparation, sont le vomissement provoqué et l'administration d'un médicament α-sympatolytique (par exemple, la phentolamine, le nitroprussiate ou la nitroglycérine).
+
+La bradycardie et les troubles de la conduction bradycardique peuvent être traités par l'atropine aux doses thérapeutiques habituelles.
+
+Le métabolite actif, la desglymidodrine, est dialysable.
+
+Propriétés/Effets
+
+Code ATC
+
+C01CA17
+
+Mécanisme d'action/pharmacodynamique
+
+Le principe actif de MIDODRIN SUBSTIPHARM, le chlorhydrate de midodrine, est un promédicament qui se transforme en un métabolite pharmacologiquement actif, la desglymidodrine, après administration orale. Ce dernier est un α-sympathomimétique qui agit directement sur les récepteurs périphériques. Dans les études expérimentales, l'effet stimulant des récepteurs α a pu être démontré dans plusieurs modèles.
+
+La midodrine ne présente aucun effet β-sympathomimétique et donc aucun effet direct sur la fréquence cardiaque, la contractilité du myocarde, le tonus bronchique et l'activité utérine.
+
+Des études cliniques ont montré une augmentation de la pression artérielle après administration intraveineuse et orale, tant en position couchée que debout, en tonifiant les vaisseaux artériels et veineux.
+
+MIDODRIN SUBSTIPHARM ne provoque pas d'augmentation de la fréquence cardiaque. Une diminution de la fréquence cardiaque a été observée lors d'essais cliniques et est attribuée à la stimulation du réflexe parasympathique.
+
+Les résultats expérimentaux de l'effet du MIDODRIN SUBSTIPHARM sur les récepteurs α de la vessie et de l'urètre ont conduit à une utilisation clinique pour l'incontinence d'effort et les troubles éjaculatoires.
+
+L'effet du MIDODRIN SUBSTIPHARM sur l'incontinence d'effort a pu être objectivé par des mesures urodynamiques et repose essentiellement sur une tonification de l'urètre proximal et du détrusor de la vessie.
+
+Dans diverses formes de troubles éjaculatoires, l'effet cliniquement prouvé de MIDODRIN SUBSTIPHARM est attribué à la stimulation des récepteurs α du canal déférent ou de la région du col de la vessie.
+
+Efficacité clinique
+
+Aucune donnée
+
+Pharmacocinétique
+
+Absorption
+
+La pharmacocinétique de la midodrine a été étudiée chez des volontaires sains et chez des patients présentant une hypotension orthostatique. La midodrine est rapidement et presque complètement absorbé après administration orale sous forme de comprimé.
+
+Les concentrations maximales (10 ng/ml) de midodrine sont trouvées dans le plasma après 20-30 min (après une dose de 2,5 mg). Le principal métabolite actif, la desglymidodrine (ST 1059), est détectable dans le plasma 20 min après la prise orale de midodrine et les concentrations maximales de 5 ng/ml sont atteintes après environ 1 heure.
+
+Les paramètres pharmacocinétiques de l'étude chez les volontaires sains sont donnés dans le tableau ci-dessous.
+
+Paramètres pharmacocinétiques de la desglymidodrine (ST 1059) chez des volontaires après application de 2,5 mg de midodrine:
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Paramètres | Formes d'application | | |
+|  | Intraveineuse | Oral | |
+|  |  |  | Comprimé |
+| tmax (h) | - |  | 1,1±0,5 |
+| cmax (ng/ml) | - |  | 5,0±1,6 |
+| t1/2 (h) | 3,1±0,5 |  | 3,0±0,5 |
+| AUC (ngxh/ml) | 28,7±6,6 |  | 25,6±6,2 |
+| Cl (ml/min) | 1200±229 |  | 1378±319 |
+| U 0-24h  (% de la dose) | 39,8±3,8 |  | 34,4±4,5 |
+
+ 
+
+Distribution
+
+Le volume de distribution du comprimé est de 353 ± 80 L.
+
+Métabolisme
+
+Le principal métabolite actif, la desglymidodrine (ST 1059), responsable de l'effet pharmacodynamique du médicament, est formé à partir de la midodrine par clivage enzymatique de la glycine.
+
+Élimination
+
+Après administration orale, le chlorhydrate de midodrine est éliminé du plasma avec une demi-vie terminale de 0,5 heure. La demi-vie d'élimination terminale de la desglymidodrine (ST 1059) après administration intraveineuse et per os sous forme de comprimé est en moyenne de 3 heures.
+
+Seuls 2 à 3% de MIDODRIN SUBSTIPHARM sont excrétés sous forme inchangée dans l'urine dans les 24 heures suivant l'application. Le métabolite principal actif, la desglymidodrine, est retrouvé dans les urines à hauteur de 30 à 40% de la dose de midodrine administrée.
+
+Des valeurs similaires pour la desglymidodrine ont également été trouvées dans une étude de patients souffrant d'hypotension orthostatique.
+
+Cependant, des doses plus élevées de MIDODRIN SUBSTIPHARM ont été utilisées dans cette étude.
+
+Chez les patients dont la fonction rénale est altérée, l'excrétion du métabolite actif, la desglymidodrine, est retardée.
+
+Chez les patients dialysés, l'élimination de la desglymidodrine peut être accélérée.
+
+Données précliniques
+
+Mutagénicité
+
+La midodrine n'a pas montré de propriétés mutagènes.
+
+Carcinogénicité Aucune étude de cancérogénicité n'est disponible.
+
+Reproduction et la toxicocinétique
+
+Des doses environ 50 fois supérieures à la dose thérapeutique maximale en mg/kg ont montré une augmentation du taux d'avortement chez les rats et les lapins.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne peut être utilisé au-delà de la date imprimée sur l'emballage avec la mention «EXP».
+
+Remarques particulières concernant le stockage
+
+Tenir hors de la portée des enfants.
+
+Conserver dans l'emballage d'origine pour protéger les comprimés de la lumière. Conserver à température ambiante (15-25 °C).
+
+Numéro d’autorisation
+
+69384 (Swissmedic)
+
+Présentation
+
+MIDODRIN SUBSTIPHARM comprimés de 2,5 mg ou 5 mg: 20 et 50 comprimés [B]
+
+Titulaire de l’autorisation
+
+Leman SKL SA ; Lancy
+
+Mise à jour de l’information
+
+Mai 2024

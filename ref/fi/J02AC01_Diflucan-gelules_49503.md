@@ -1,0 +1,627 @@
+---
+titre: "Diflucan®, gélules"
+titulaire: "Pfizer AG"
+atc: J02AC01
+substances: "Fluconazolum"
+autorisation_swissmedic: 49503
+date_version: 2026-07-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/44609a32ab6f4db4a3863eea812304c9-fr.html
+---
+
+Diflucan®, gélules
+
+Pfizer AG
+
+Composition
+
+Principes actifs
+
+Fluconazolum.
+
+Excipients
+
+Gélules à 50 mg: lactosum monohydricum (49.71 mg), maydis amylum, silica colloidalis anhydrica, magnesii stearas, natrii laurilsulfas (corresp. 0.01 mg de sodium), gelatina, titanii dioxidum (E 171), caeruleum protectum V (E 131), lacca, ferrum oxydatum nigrum (E 172).
+
+Gélules à 150 mg: lactosum monohydricum (149.12 mg), maydis amylum, silica colloidalis anhydrica, magnesii stearas, natrii laurilsulfas (corresp. 0.03 mg de sodium), gelatina, titanii dioxidum (E 171), caeruleum protectum V (E 131), lacca, ferrum oxydatum nigrum (E 172).
+
+Gélules à 200 mg: lactosum monohydricum (198.83 mg), maydis amylum, silica colloidalis anhydrica, magnesii stearas, natrii laurilsulfas (corresp. 0.04 mg de sodium), gelatina, titanii dioxidum (E 171), erythrosinum (E 127), indigotinum (E 132), lacca, ferrum oxydatum nigrum (E 172).
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Gélules
+
+1 gélule à 50 mg contient 50 mg de fluconazole. Gélule blanc-bleu sur laquelle le logo Pfizer et l'inscription «FLU 50» sont imprimés en noir.
+
+1 gélule à 150 mg contient 150 mg de fluconazole. Gélule bleue sur laquelle le logo Pfizer et l'inscription «FLU 150» sont imprimés en noir.
+
+1 gélule à 200 mg contient 200 mg de fluconazole. Gélule blanc-violet sur laquelle le logo Pfizer et l'inscription «FLU 200» sont imprimés en noir.
+
+Indications/Possibilités d’emploi
+
+Candidoses des muqueuses. Celles-ci comprennent l'infection de l'oropharynx et de l'œsophage, ainsi que les candidoses mucocutanées et les candidoses orales atrophiques chroniques (irritation chez les porteurs de prothèse dentaire).
+
+Les patients sans comorbidités ainsi que les patients immunodéficients peuvent être traités.
+
+Candidose vaginale aiguë ou récidivante.
+
+Prophylaxie des infections à Candida chez les patients atteints de tumeurs malignes et prédisposés à ce type d'infections en raison d'une chimiothérapie anticancéreuse ou d'une radiothérapie.
+
+Dermatomycoses, y compris tinea pedis, tinea corporis, tinea cruris, infections cutanées à Candida.
+
+Pityriasis versicolor lorsqu'un traitement topique n'est pas envisageable ou ne s'est pas avéré suffisamment efficace.
+
+L'utilisation dans le traitement de l'onychomycose n'est pas documentée cliniquement.
+
+Candidémie.
+
+Méningite à Cryptococcus et prophylaxie des récidives de cette maladie chez les patients atteints du SIDA. Chez certains patients atteints de méningite à Cryptococcus, l'effet antifongique du fluconazole se développe plus lentement que celui de l'amphotéricine B ou de l'association d'amphotéricine B et de flucytosine, sans différence significative en matière de taux de guérison.
+
+Diflucan peut également être utilisé pour traiter d'autres cryptococcoses (par ex. pulmonaire ou cutanée).
+
+Les patients sans comorbidités, les patients atteints du SIDA, les transplantés et les autres patients immunodéprimés peuvent également être traités par fluconazole.
+
+Diflucan ne doit pas être utilisé pour le traitement de la teigne (tinea capitis) chez les enfants et les adolescents.
+
+Posologie/Mode d’emploi
+
+Posologie usuelle
+
+La dose journalière de fluconazole doit être déterminée en fonction de la nature et du degré de sévérité de l'infection fongique. La plupart des cas de candidose vaginale répondent à l'administration d'une dose unique. Le traitement des infections qui nécessitent l'administration de doses multiples doit être poursuivi jusqu'à ce que les paramètres cliniques ou les analyses de laboratoire indiquent la disparition de l'infection fongique active. Un traitement de trop courte durée peut conduire à une récidive de l'infection active.
+
+Les directives thérapeutiques en vigueur émanant des associations professionnelles européennes et américaines doivent également être prises en compte pour le traitement des mycoses invasives. Au moment de leur rédaction, ces directives doivent par ailleurs tenir compte de la concentration minimale inhibitrice (CMI) de chacune des espèces concernées.
+
+Adultes
+
+|  |  |  |
+| --- | --- | --- |
+| Indication | Posologie | Recommandations |
+| Candidose oropharyngée | Dose initiale de 200 à 400 mg le premier jour, puis 100 à 200 mg une fois par jour pendant 7 à 21 jours (jusqu'à la rémission). | Le traitement peut éventuellement être poursuivi plus longtemps chez les patients fortement immunodéprimés. |
+| Candidose œsophagienne | Dose initiale de 200 à 400 mg le premier jour, puis 100 à 200 mg une fois par jour pendant 14 à 30 jours (jusqu'à la rémission). | La durée du traitement peut être prolongée chez les patients fortement immunodéprimés. |
+| Candidémie | Dose initiale de 800 mg le premier jour, puis 400 mg une fois par jour. | La durée du traitement dépend de la réponse clinique.  En général, il est recommandé de poursuivre le traitement pendant les 2 semaines qui suivent la première hémoculture négative et l'amélioration clinique. |
+| Prophylaxie des infections à Candida chez les patients présentant une neutropénie persistante | 200 à 400 mg une fois par jour, en fonction du risque du patient de développer une infection à Candida. | Le traitement doit être instauré plusieurs jours avant la date attendue d'apparition de la neutropénie et poursuivi pendant encore 7 jours après que le nombre de neutrophiles soit revenu à >1'000 cellules/mm3. |
+| Prophylaxie des récidives de candidose des muqueuses chez les patients immunodéprimés | 100 à 200 mg une fois par jour ou 200 mg trois fois par semaine. | Chez les patients présentant une immunosuppression chronique, la prophylaxie doit être poursuivie pour une durée indéterminée. |
+| Candidose orale atrophique chez les porteurs de prothèses dentaires | 50 mg une fois par jour pendant 14 jours. | Traitement par voie orale.     Un traitement antiseptique de la prothèse dentaire doit être entrepris parallèlement. |
+| Candidose vaginale aiguë | 150 mg de fluconazole en dose unique par voie orale. | Traitement par voie orale. |
+| Traitement et prophylaxie des candidoses vaginales récidivantes | 150 mg tous les 3 jours pour un total de 3 doses (jours 1, 4 et 7), suivi d'une dose d'entretien de 150 mg une fois par semaine pendant 6 mois. | Traitement par voie orale. |
+| Traitement de la méningite à Cryptococcus | Dose initiale de 400 mg le premier jour, puis 200 à 400 mg une fois par jour. | En cas d'infection menaçant le pronostic vital, la dose journalière peut être augmentée à 800 mg. La durée du traitement dépend de la réponse clinique et mycologique. Elle est généralement d'au moins 6 à 8 semaines. |
+| Prophylaxie des récidives de méningite à Cryptococcus chez les patients présentant un risque élevé de récidive (c.-à-d., les patients séropositifs ou autrement immunodéprimés) | 200 mg une fois par jour. | Durée du traitement: illimitée. |
+| Dermatomycoses (par ex. tinea pedis, tinea corporis, tinea cruris) et candidoses cutanées | 150 mg une fois par semaine ou 50 mg une fois par jour pendant 2 à 4 semaines. | Le tinea pedis peut cependant nécessiter une durée de traitement allant jusqu'à 6 semaines. |
+| Pityriasis versicolor | 300 à 400 mg une fois par semaine pendant 1 à 3 semaines ou 50 mg une fois par jour pendant 2 à 4 semaines. |  |
+
+ 
+
+Instructions posologiques particulières
+
+Enfants et adolescents
+
+Les gélules de Diflucan ne conviennent pas à une utilisation chez les enfants. D'autres préparations de fluconazole de forme galénique appropriée (suspension orale ou solution pour perfusion) sont destinées aux enfants. Il faut en particulier tenir compte du fait que les recommandations posologiques suivantes (en mg/kg) ne sont pas toujours applicables avec les dosages de gélules disponibles, surtout lorsque le poids corporel est faible.
+
+La posologie chez les enfants et les adolescents est fonction du poids corporel (voir ci-dessous). Une dose d'entretien maximale de 400 mg par jour ne doit pas être dépassée. En principe, le fluconazole est administré une fois par jour.
+
+Pour l'adaptation posologique chez les patients pédiatriques présentant une insuffisance rénale, voir la rubrique «Patients présentant des troubles de la fonction rénale».
+
+Comme c'est le cas chez les adultes, la durée du traitement dépend de la réponse clinique et mycologique de l'infection correspondante.
+
+Adolescents à partir de 12 ans
+
+La clairance du fluconazole est plus élevée chez les enfants que chez les adultes (voir «Pharmacocinétique», rubrique «Cinétique pour certains groupes de patients»). L'exposition des enfants aux doses de 3, 6 et 12 mg/kg est comparable à celle obtenue chez les adultes aux doses de 100, 200 et 400 mg. Chez les adolescents >12 ans, il convient de déterminer au cas par cas, en fonction du poids corporel et du stade de développement pubertaire, si la dose pour adulte est adaptée au patient ou si un ajustement posologique est nécessaire. En cas d'ajustement posologique, les posologies suivantes sont recommandées:
+
+|  |  |  |
+| --- | --- | --- |
+| Indication | Posologie | Recommandations |
+| Candidoses invasives\* | Dose initiale de 25 mg/kg le premier jour (max. 800 mg), suivie de 12 mg/kg une fois par jour (max. 400 mg) | Selon le degré de sévérité de l'affection. Les patients atteints de candidose systémique doivent être traités pendant au moins 3 semaines et jusqu'à au moins 2 semaines après la disparition des symptômes |
+| Candidoses des muqueuses | Dose initiale de 6 mg/kg, suivie de 3 mg/kg une fois par jour |  |
+| Prophylaxie des infections à Candida chez les patients immunodéprimés | 3-12 mg/kg une fois par jour | Selon le degré de sévérité et la durée de la neutropénie présente (voir «Posologie» chez les adultes) |
+| Méningite à Cryptococcus | 6-12 mg/kg une fois par jour | Selon le degré de sévérité de l'affection |
+| Prophylaxie des récidives de méningite à Cryptococcus chez les enfants présentant un risque élevé de récidive | 6 mg/kg une fois par jour |  |
+
+ 
+
+\* Pour le traitement des candidoses invasives, le schéma posologique recommandé pour les patients pédiatriques vise à atteindre une exposition systémique comparable à celle observée chez l'adulte, c'est-à-dire le maintien d'une ASC0-24 comprise entre 400 et 800 mg\*h/l.
+
+Patients âgés
+
+Si la fonction rénale est normale (contrairement aux références de la rubrique qui suit), il n'est pas nécessaire de modifier la posologie.
+
+Patients présentant des troubles de la fonction rénale
+
+Le fluconazole est principalement excrété avec l'urine sous forme inchangée. En cas de traitement par dose unique, il n'est pas nécessaire de modifier la posologie.
+
+Lorsqu'un traitement par doses multiples de Diflucan est nécessaire chez des patients présentant une insuffisance rénale, une dose initiale de 50 à 400 mg doit être administrée. Ensuite, la dose journalière (selon l'indication) doit être adaptée comme suit.
+
+|  |  |
+| --- | --- |
+| Clairance de la créatinine (ml/min) | Pourcentage de la dose recommandée |
+| >50 | 100% |
+| ≤50 (sans dialyse) | 50% |
+| Hémodialyse | 100% après chaque hémodialyse |
+
+ 
+
+Si seule la concentration de la créatinine sérique (Ccr) est connue, la clairance de la créatinine (Cl) peut être estimée au moyen de la formule suivante:
+
+|  |  |  |
+| --- | --- | --- |
+| Hommes: | CI(ml/min) = | [(140 - âge) x (poids en kg)]/[72 x Ccr (mg/100 ml)] |
+| Femmes: |  | 0.85 x résultat de la formule ci-dessus |
+
+ 
+
+Cet ajustement en fonction de la clairance de la créatinine s'applique également aux enfants et aux adolescents (voir aussi la recommandation posologique pour «Enfants et adolescents»).
+
+Patients présentant des troubles de la fonction hépatique
+
+Les données disponibles chez les patients atteints d'insuffisance hépatique étant limitées, le fluconazole doit être utilisé avec prudence chez les patients présentant des troubles de la fonction hépatique.
+
+Mode d'administration
+
+Les gélules doivent être prises entières.
+
+Le fluconazole est disponible aussi bien pour une administration par voie orale (gélules et poudre pour suspension buvable) que pour une administration intraveineuse (solution pour perfusion). La voie d'administration dépend de l'état clinique du patient.
+
+La biodisponibilité étant similaire entre l'administration par voie orale et intraveineuse, le passage d'une administration intraveineuse à une administration orale (ou vice versa) est possible sans ajustement posologique.
+
+Diflucan peut être pris avec ou sans nourriture.
+
+Contre-indications
+
+·Hypersensibilité connue au fluconazole ou à l'un des excipients de Diflucan, ainsi qu'à d'autres dérivés azolés.
+
+·Traitement simultané par des médicaments métabolisés par l'iso-enzyme CYP3A4 du cytochrome P450 et susceptibles d'allonger l'intervalle QT, tels que l'amiodarone, la quinidine, le citalopram, l'érythromycine ou le sertindole (voir «Mises en garde et précautions»).
+
+Mises en garde et précautions
+
+Intervalle QT
+
+Il n'existe pas d'étude approfondie de l'intervalle QT du fluconazole. Certains dérivés azolés ont toutefois été mis en relation avec un allongement du segment QT à l'ECG, et de très rares cas d'allongements de l'intervalle QTc ainsi que de torsades de pointes ont été rapportés après la mise sur le marché du fluconazole. En présence de facteurs de risque potentiels de proarythmies, le fluconazole doit donc être utilisé avec prudence. Ces facteurs de risque englobent un allongement congénital ou acquis de l'intervalle QT, des cardiomyopathies (en particulier en présence d'une insuffisance cardiaque), des arythmies symptomatiques préexistantes, une bradycardie sinusale et des déséquilibres électrolytiques (en particulier une hypokaliémie). En outre, le risque est augmenté en cas de traitement concomitant par d'autres médicaments connus pour allonger l'intervalle QTc. Cela vaut en particulier pour les substrats du CYP3A4 ayant un potentiel d'allongement de l'intervalle QT et pour les antiarythmiques tels que l'amiodarone.
+
+Le traitement simultané par des médicaments de ce type peut par conséquent être contre-indiqué (voir aussi «Interactions» et «Contre-indications»).
+
+Avant de débuter et pendant le traitement par le fluconazole, l'équilibre électrolytique doit être surveillé et tout déséquilibre tel que, le cas échéant, une hypokaliémie, une hypomagnésémie et une hypocalcémie doit être corrigé.
+
+Hépatotoxicité
+
+De rares cas d'hépatotoxicité sévère ont été observés avec le fluconazole, dont certains ont eu une issue fatale, en particulier chez des patients atteints de maladies sous-jacentes graves. Dans les cas d'hépatotoxicité en lien avec le fluconazole, aucune relation manifeste avec la dose journalière totale, la durée du traitement, le sexe ou l'âge des patients n'a été constatée. En règle générale, l'hépatotoxicité du fluconazole était réversible après l'arrêt du traitement.
+
+Des tests de la fonction hépatique doivent être effectués régulièrement pendant le traitement par le fluconazole. Les patients qui présentent des valeurs anormales aux tests de la fonction hépatique pendant un traitement par le fluconazole doivent être surveillés afin de prévenir le développement d'une lésion hépatique plus grave. La prise de fluconazole doit être interrompue en cas d'apparition d'indices cliniques d'une affection hépatique pouvant être imputée au fluconazole.
+
+La prudence est de rigueur pour l'administration de fluconazole à des patients présentant des troubles préexistants de la fonction hépatique.
+
+Réactions cutanées
+
+Dans des cas rares, des patients ont développé, pendant le traitement par le fluconazole, des réactions cutanées sévères telles qu'un syndrome de Stevens-Johnson, une nécrolyse épidermique toxique, une PEAG (pustulose exanthématique aiguë généralisée) ou un syndrome DRESS. Un syndrome DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms) est caractérisé par au moins trois des symptômes suivants: réaction cutanée (telle qu'exanthème ou dermite exfoliative), éosinophilie, fièvre et lymphadénopathie ainsi qu'une ou plusieurs complications systémiques telles qu'hépatite, myocardite, néphrite, péricardite, pneumonie interstitielle ou vasculite. Le syndrome DRESS peut survenir avec une latence de plusieurs semaines.
+
+Chez les patients soignés pour une infection fongique superficielle, le traitement doit être interrompu à l'apparition d'un exanthème pouvant être mis en relation avec le fluconazole. Lorsqu'un exanthème apparaît chez un patient atteint d'une infection fongique invasive/systémique, une surveillance stricte s'impose et l'administration de fluconazole doit être arrêtée si des éruptions bulleuses, un érythème multiforme ou des symptômes systémiques supplémentaires tels que fièvre ou lymphadénopathie se développent.
+
+Les patients atteints du SIDA sont davantage exposés à l'apparition de réactions cutanées graves.
+
+Utilisation chez les femmes en âge de procréer
+
+Des cas d'anomalies congénitales ont été rapportés chez des enfants dont la mère avait été exposée au fluconazole pendant la grossesse (surtout pendant le premier trimestre, voir «Grossesse, Allaitement»). Des cas d'avortements spontanés ont également été rapportés. Par conséquent, les femmes en âge de procréer doivent utiliser une méthode de contraception fiable pendant le traitement et environ 1 semaine (c.-à-d. 5 à 6 demi-vies) après la dernière dose du traitement.
+
+Effets endocriniens
+
+Une insuffisance surrénalienne a été rapportée dans le cadre de l'utilisation d'antifongiques azolés (y compris le fluconazole). Celle-ci était réversible dans la plupart des cas. Il convient de surveiller sur ce point en particulier les patients ayant des facteurs de risque préexistants d'insuffisance surrénalienne et ceux traités par un glucocorticoïde systémique.
+
+Insuffisance rénale
+
+Chez les patients présentant des troubles de la fonction rénale, la prudence est de rigueur pour l'administration de fluconazole (voir aussi «Instructions posologiques particulières»).
+
+Interactions
+
+Le fluconazole est un inhibiteur modéré des iso-enzymes CYP2C9 et CYP3A4 du cytochrome P450, ainsi qu'un inhibiteur de l'iso-enzyme CYP2C19. L'administration de fluconazole à des patients recevant en même temps des substances métabolisées par le CYP2C9, le CYP2C19 ou le CYP3A4 peut entraîner une élévation des taux sériques de ces substances (voir «Interactions»). Lorsque ces substances ont une marge thérapeutique étroite, les patients doivent être surveillés attentivement.
+
+Hypersensibilité
+
+De rares cas d'anaphylaxie ont été décrits.
+
+Excipients revêtant un intérêt particulier
+
+Les gélules de Diflucan 50/150/200 mg contiennent respectivement 49.7/149.1/198.8 mg de lactose par gélule. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.
+
+Les gélules de Diflucan contiennent moins de 1 mmol (23 mg) de sodium par gélule, c.-à-d. qu'elles sont essentiellement «sans sodium».
+
+Interactions
+
+Interactions pharmacocinétiques
+
+Le fluconazole est un inhibiteur modéré des enzymes hépatiques CYP3A4 et CYP2C9, ainsi qu'un inhibiteur du CYP2C19. En raison de ces propriétés, le principe actif possède un potentiel d'interactions considérable et il n'est pas possible de nommer ici tous les partenaires d'interaction potentiels. En cas d'administration concomitante d'autres médicaments, il convient donc en principe de consulter aussi leurs informations professionnelles respectives afin de s'informer sur leurs voies métaboliques et sur les éventuels ajustements posologiques (ou autres mesures) nécessaires. Cela s'applique en particulier chez les patients présentant une insuffisance hépatique ou rénale ainsi que chez ceux qui prennent plusieurs traitements concomitants.
+
+Influence d'autres substances sur la pharmacocinétique du fluconazole
+
+Rifampicine
+
+L'administration concomitante de fluconazole et de rifampicine, un inducteur puissant des enzymes CYP, a entraîné une réduction de 25% de l'ASC (aire sous la courbe de concentration en fonction du temps) du fluconazole et de 20% de la demi-vie du fluconazole. Lors d'un traitement concomitant par la rifampicine, une augmentation de la dose de fluconazole peut donc être nécessaire.
+
+L'influence d'autres inducteurs enzymatiques n'a pas été étudiée. Il est toutefois vraisemblable que l'administration concomitante d'autres inducteurs puissants du CYP3A4 (tels que carbamazépine, phénytoïne, mitotane, enzalutamide ou préparations de millepertuis) entraîne des modifications comparables. Il faut dès lors prendre en compte le fait qu'une induction enzymatique peut persister au moins 4 semaines après l'arrêt de l'inducteur.
+
+Hydrochlorothiazide
+
+L'administration concomitante d'hydrochlorothiazide (doses multiples) et de fluconazole a entrainé une augmentation de 40% de la concentration plasmatique du fluconazole. Chez les sujets sains, aucun ajustement posologique n'est nécessaire. Chez les patients atteints d'insuffisance rénale, cette exposition accrue au fluconazole doit donc être prise en compte.
+
+Influence du fluconazole sur la pharmacocinétique d'autres substances
+
+En cas d'administration concomitante avec des médicaments métabolisés par le CYP2C9, le CYP2C19 ou le CYP3A4, le fluconazole peut entraîner une élévation des taux sériques de ces substances. Le risque d'effets indésirables peut être augmenté en conséquence. Les répercussions de cette association dépendent du principe actif et de sa marge thérapeutique. Les patients recevant des traitements concomitants de ce type doivent par conséquent faire l'objet d'une surveillance étroite et un ajustement posologique est éventuellement à envisager. Il faut tenir compte du fait que l'effet inhibiteur enzymatique du fluconazole persiste 4 à 5 jours au-delà de l'arrêt du traitement en raison de sa longue demi-vie. En cas d'administration concomitante de substances présentant une fenêtre thérapeutique étroite (telles que la ciclosporine), leur concentration plasmatique doit donc également être surveillée après l'arrêt du fluconazole et la dose doit éventuellement être adaptée.
+
+Il faut également tenir compte du fait qu'en cas d'utilisation de médicaments dont le principe actif est appliqué en tant que prodrogue et dont la transformation en fraction active implique une participation importante du CYP3A4, du CYP2C9 ou du CYP2C19, l'administration concomitante d'un inhibiteur enzymatique tel que le fluconazole peut entraîner une diminution cliniquement significative des concentrations plasmatiques de la fraction active et ainsi une efficacité réduite. Cela s'applique par ex. au losartan. Dans le cas d'un traitement concomitant par le fluconazole, la tension artérielle de ces patients doit être étroitement surveillée. D'autres exemples sont la carbamazépine, le clopidogrel, la primidone ou l'acide valproïque.
+
+Substrats du CYP3A4
+
+Dans des études cliniques, l'administration concomitante de fluconazole et de substrats du CYP3A4 a entraîné une augmentation de l'exposition à ces substrats. En cas d'administration concomitante de fluconazole et de substrats du CYP3A4 ayant le potentiel d'allonger l'intervalle QT, le risque de tachyarythmies ventriculaires, y compris de torsades de pointes, est ainsi accru. L'administration concomitante de fluconazole avec de tels principes actifs est donc contre-indiquée. Ceci s'applique par ex. à l'amiodarone, à la quinidine, à l'érythromycine ou au sertindole.
+
+Substrats du CYP2C9/CYP2C19
+
+L'administration concomitante de fluconazole et de substrats du CYP2C9 ou du CYP2C19 peut entraîner une exposition accrue à ces principes actifs. Les patients traités à la fois par du fluconazole et des substrats de ces iso-enzymes doivent faire l'objet d'une surveillance étroite quant aux effets indésirables.
+
+Le tableau suivant présente des exemples de médicaments dont la pharmacocinétique peut être influencée par le fluconazole. Cette liste ne prétend pas être exhaustive. En cas d'administration concomitante d'autres médicaments et de fluconazole, il convient donc en principe de consulter aussi leurs informations professionnelles respectives. Des effets similaires sont également à prévoir avec d'autres principes actifs non mentionnés, qui sont aussi des substrats du CYP3A4, du CYP2C9 ou du CYP2C19.
+
+Les recommandations suivantes sont définies comme suit:
+
+·«contre-indiqué»: substrats du CYP3A4, du CYP2C9 ou du CYP2C19 associés à des effets indésirables potentiellement graves et irréversibles dans certains cas (par ex. torsades de pointes, rhabdomyolyse, etc.). Le médicament ne doit en aucun cas être co-administré avec du fluconazole (voir «Contre-indications»).
+
+·«déconseillé»: substrats du CYP3A4, du CYP2C9 ou du CYP2C19 pour lesquels une augmentation ou une réduction des concentrations plasmatiques est associée à un risque significativement accru d'effets indésirables cliniquement pertinents ou pour lesquels une efficacité réduite représente un risque pertinent pour le patient. L'utilisation de ce type de médicament pendant le traitement ou au cours des deux semaines suivant l'arrêt du fluconazole doit être évitée, sauf si le bénéfice l'emporte sur les risques potentiellement accrus. Si, en raison de l'absence d'alternative ou d'une intolérance aux autres principes actifs, l'administration concomitante est inévitable, le patient doit faire l'objet d'une surveillance minutieuse et étroite, et la posologie du médicament co-administré doit éventuellement être adaptée. Pour les principes actifs pour lesquels des concentrations cibles sont définies, il est recommandé de surveiller les concentrations plasmatiques («Therapeutic Drug Monitoring», TDM).
+
+·«à utiliser avec précaution»: substrats du CYP3A4, du CYP2C9 ou du CYP2C19 pour lesquels une augmentation ou une réduction des concentrations plasmatiques peut représenter un risque cliniquement pertinent. Si le médicament est co-administré avec le fluconazole, une surveillance minutieuse est recommandée. Pour les principes actifs pour lesquels des concentrations cibles sont définies, un TDM est recommandé. La posologie du médicament co-administré doit éventuellement être adaptée.
+
+·«utilisation possible»: aucune interaction cliniquement pertinente. L'utilisation concomitante du principe actif et de fluconazole est possible et aucun ajustement posologique n'est nécessaire.
+
+|  |  |
+| --- | --- |
+| Type de recommandation | Exemples de principes actifs concernés |
+| contre-indiqué | substrats du CYP3A4 connus pour allonger l'intervalle QT (par ex. amiodarone, quinidine, citalopram, érythromycine, sertindole) |
+| déconseillé | alcaloïdes de l'ergot de seigle métabolisés par le CYP3A4  vénétoclax (pendant la titration de dose)  voriconazole  différents principes actifs antinéoplasiques (par ex. olaparib, vinca-alcaloïdes) |
+| à utiliser avec précaution (et éventuellement avec un ajustement posologique) | abrocitinib  aprépitant  avanafil  benzodiazépines de courte durée d'action (par ex. midazolam, triazolam)  inhibiteurs calciques (par ex. amlodipine, félodipine)  carbamazépine  célécoxib  ciclosporine  évérolimus  isavuconazole  ivabradine  ivacaftor  glucocorticoïdes métabolisés par le CYP3A4  méthadone  AINS (par ex. diclofénac, ibuprofène, naproxène)  opiacés à courte durée d'action (alfentanil, fentanyl)  opiacés à longue durée d'action (par ex. oxycodone)  inhibiteurs de la pompe à protons  ranolazine  sildénafil  sirolimus  statines  sulfonylurées  tacrolimus  tadalafil  théophylline  antidépresseurs tricycliques (amitriptyline, nortriptyline)  vardénafil  antagonistes de la vitamine K  différents principes actifs antinéoplasiques (par ex. bortézomib, cyclophosphamide, géfitinib, ibrutinib, tofacitinib)  différents principes actifs antiviraux (par ex. atazanavir, darunavir, névirapine, tipranavir, zidovudine)  zopiclone |
+| ajustement posologique du fluconazole éventuellement nécessaire | bosentan  carbamazépine  préparations de millepertuis  phénobarbital  phénytoïne  rifabutine/rifampicine |
+
+ 
+
+En cas d'administration concomitante d'associations d'antiviraux (VIH ou VHC), il faut tenir compte du fait que l'effet net de l'interaction attendue dépend fortement des propriétés pharmacocinétiques des principes actifs contenus (substrats, inducteurs, inhibiteurs enzymatiques).
+
+Pour les médicaments pour lesquels il existe des études d'interactions spécifiques avec le fluconazole, les résultats sont présentés en détail dans le tableau ci-dessous.
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Médicament | Schéma thérapeutique | Modification des paramètres PKa | Recommandation |
+| abrocitinib | 100 mg d'abrocitinib/400 mg de fluconazole le jour 1 suivis de 200 mg de fluconazole QD les jours 2-7 | abrocitinib et métabolites actifs:  ASC ↑ 2.55 (2.42-2.69) Cmax ↑ 1.23 (1.08-1.42) | à utiliser avec précaution |
+| alfentanil | 20 µg/kg d'alfentanil/400 mg de fluconazole oral | clairance ↓ 55%  Vss ↓ 19%b  t½ ↑ 67%  ASC ↑ 97% | à utiliser avec précaution |
+|  | 20 µg/kg d'alfentanil/400 mg de fluconazole i.v. | clairance ↓ 58%  Vss ↓ 19%  t½ ↑ 80%  ASC ↑ 107% |  |
+| azithromycine | 1'200 mg d'azithromycine orale/800 mg de fluconazole oral | Cmax ↔ ASC ↔ | utilisation possible |
+| benzodiazépines (courte durée d'action): |  |  | à utiliser avec précaution |
+| midazolam oral | 7.5 mg de midazolam/400 mg de fluconazole oral | ASC ↑ 200%  Cmax ↑ 150%  t½ ↑ 150% |  |
+|  | 7.5 mg de midazolam/400 mg de fluconazole i.v. | ASC ↑ 100%  Cmax ↑ 100%  t½ ↑ 150% |  |
+| triazolam | 0.25 mg de triazolam/50 mg de fluconazole oral QD | ASC 1.6 (1.30, 2.34)  Cmax 1.47 (1.08, 2.07)  t½ 1.3 (1.02, 1.70) |  |
+|  | 0.25 mg de triazolam/100 mg de fluconazole oral QD | ASC 2.10 (1.42, 3.57)  Cmax 1.40 (0.94, 2.34)  t½ 1.8 (1.40, 2.29) |  |
+|  | 0.25 mg de triazolam/200 mg de fluconazole oral QD | ASC 4.40 (2.38, 9.49)  Cmax 2.33 (1.33, 4.44)  t½ 2.30 (1.67, 3.23) |  |
+| carbamazépine | 400 mg de carbamazépine TID/150 mg de fluconazole QD pendant 3 jours | clairance ↓ 50%  concentration sérique de carbamazépine ↑ 100% | à utiliser avec précaution |
+| célécoxib | célécoxib 200 mg avec fluconazole 200 mg par jour | Cmax ↑ 68% ASC ↑ 134% | à utiliser avec précaution |
+| éthinylestradiol/ lévonorgestrel (0.03 mg/0.15 mg) (contraceptif hormonal combiné) | après administration concomitante de 50 mg de fluconazole par jour: | éthinylestradiol ASC ↔  lévonorgestrel ASC ↔ | L'influence sur l'efficacité contraceptive est improbable.  Aucune étude n'a été menée avec des contraceptifs contenant d'autres composants progestatifs. |
+|  | après administration concomitante de 200 mg de fluconazole par jour: | éthinylestradiol ASC ↑ 40% lévonorgestrel ASC ↑ 24% |  |
+| fentanyl | 5 µg/kg de fentanyl i.v. le jour 2/400 mg de fluconazole oral le jour 1, suivis de 200 mg de fluconazole oral le jour 2 | clairance 0.81 (0.69, 0.95)  ASC 1.23 (1.05, 1.45)  t½ ↔ | à utiliser avec précaution |
+| AINS  flurbiprofène | 100 mg de flurbiprofène oral/200 mg de fluconazole oral | ASC ↑ 81% Cmax ↑ 23% | à utiliser avec précaution |
+| ibuprofène | 400 mg d'ibuprofène oral/400 mg de fluconazole oral le jour 1, suivis de 200 mg de fluconazole oral | Isomère pharmacologiquement actif [S-(+)-ibuprofène]:  ASC 1.82 (1.72, 1.92) Cmax 1.15 (1.06, 1.24) |  |
+| rifabutine | 300 mg de rifabutine orale/200 mg de fluconazole oral | ASC ↑ 76% Cmax ↑ 91% | à utiliser avec précaution |
+| saquinavir | 1'200 mg de saquinavir oral/200 mg de fluconazole oral QD | ASC ↑ 50% Cmax ↑ 56% clairance ↓ 50% | à utiliser avec précaution |
+| tacrolimus | 0.1 mg/kg/jour de tacrolimus i.v. le jour 1, suivi de 0.15 mg/kg par voie orale BID/100 mg ou 200 mg QD de fluconazole oral | Ctrough médiane ↑ 40% (100 mg/jour de fluconazole) et ↑ 210% (200 mg/jour de fluconazole) | à utiliser avec précaution |
+| théophylline | 240 mg de théophylline orale/100 mg BID de fluconazole pendant 14 jours | Kel ↓ 19%c clairance ↓ 18% | à utiliser avec précaution |
+| voriconazole | voriconazole oral (400 mg toutes les 12 h pendant 1 jour, puis 200 mg toutes les 12 h pendant 2.5 jours), fluconazole oral (400 mg le jour 1, puis 200 mg toutes les 24 h pendant 4 jours) | Cmax 1.57 (1.20, 2.07) ASCτ 1.79 (1.41, 2.28)  Une réduction de la dose et/ou un allongement de l'intervalle posologique n'ont pas entraîné de diminution de l'interaction. | déconseillé |
+| zidovudine | 200 mg de zidovudine orale TID/400 mg de fluconazole oral QD pendant 7 jours | ASC ↑ 74%, Cmax ↑ 84%, clairance ↓ 43%, t½ ↑ 128%. | à utiliser avec précaution |
+
+ 
+
+a  si disponible: rapport test/référence (geometric mean changes) avec un intervalle de confiance de 90% ou de 95%; sinon, modification de chaque paramètre en pourcentage.
+
+b  «Vss»: Steady-state volume of distribution (volume de distribution à l'état d'équilibre).
+
+c «kel»: elimination rate constant (constante de vitesse d'élimination).
+
+«QD»: une fois par jour, «BID»: deux fois par jour, «TID»: trois fois par jour.
+
+Interactions pharmacodynamiques
+
+Antagonistes de la vitamine K
+
+Dans une étude d'interactions, un allongement du temps de prothrombine de 12% a été observé lors de l'administration concomitante de fluconazole et de warfarine à des sujets en bonne santé. Il n'existe aucune étude avec l'acénocoumarol ou la phenprocoumone. Après la commercialisation, des épisodes hémorragiques (épistaxis, hématurie, méléna, hémorragies gastro-intestinales) ont été décrits en relation avec une augmentation du temps de prothrombine chez des patients recevant simultanément du fluconazole et de la warfarine. Chez les patients qui reçoivent des anticoagulants antagonistes de la vitamine K conjointement avec du fluconazole, il faut contrôler étroitement l'INR et, le cas échéant, adapter la posologie des anticoagulants.
+
+Amphotéricine B
+
+Des études in vitro ont mis en évidence un antagonisme entre l'amphotéricine B et les dérivés azolés. Le mécanisme d'action des imidazolés repose sur l'inhibition de la synthèse de l'ergostérol au niveau de la membrane cellulaire fongique. L'amphotéricine B se lie aux stéroïdes dans la membrane cellulaire et modifie la perméabilité de celle-ci. Un effet semblable peut survenir avec l'amphotéricine B liposomale. La pertinence clinique de cet antagonisme est encore inconnue.
+
+Dans le cadre d'expériences animales, l'administration concomitante de fluconazole et d'amphotéricine B à des souris immunodéficientes ou immunocompétentes infectées a donné les résultats suivants: antagonisme des deux principes actifs dans les cas d'infection systémique à A. fumigatus; aucune interaction dans les cas d'infection intracrânienne à Cryptococcus neoformans; léger effet antifongique additif dans les cas d'infection systémique à C. albicans. La pertinence clinique de ces résultats n'est pas connue.
+
+Grossesse, allaitement
+
+Grossesse
+
+L'utilisation du fluconazole pendant la grossesse doit être évitée sauf si, en présence d'une infection fongique sévère ou potentiellement létale, les bénéfices attendus du fluconazole l'emportent sur les risques encourus par le fœtus. Une grossesse doit être exclue avant le début du traitement (pour l'utilisation chez les femmes en âge de procréer, voir «Mises en garde et précautions»).
+
+Des cas d'anomalies congénitales multiples ont été rapportés chez des enfants dont la mère avait été traitée (surtout pendant le premier trimestre de la grossesse) pendant trois mois ou plus par des doses élevées de fluconazole (400 à 800 mg/jour). Il s'agit ici d'un schéma de malformations caractéristique rare qui a comporté les anomalies suivantes: brachycéphalie, fentes palatines et autres malformations faciales, développement anormal de la voûte crânienne, os anormalement longs, côtes anormalement minces, fémurs arqués et arthrogrypose, ainsi que des anomalies cardiaques congénitales. Un lien entre l'administration du fluconazole et ces événements indésirables ne peut pas être exclu.
+
+Des cas d'avortements spontanés et d'anomalies congénitales (en particulier du système cardiovasculaire) chez des enfants ont également été rapportés lorsque la mère avait été traitée par seulement 150 mg de fluconazole en doses uniques ou multiples au cours du premier trimestre de grossesse.
+
+Dans les études chez l'animal, des effets indésirables sur le fœtus ont été également observés lorsque des doses toxiques pour la mère étaient administrées (voir «Données précliniques»).
+
+Allaitement
+
+Le fluconazole passe dans le lait maternel. Des concentrations de fluconazole dans le lait maternel semblables aux concentrations plasmatiques ont été observées (voir «Pharmacocinétique»). L'absorption quotidienne de fluconazole par le nourrisson à travers le lait maternel (pour une absorption de 150 ml/kg/jour de lait maternel) est estimée à environ 40% de la dose néonatale recommandée (pour les nourrissons de moins de 2 semaines) ou de 13% de la dose recommandée pour les nourrissons souffrant de candidose des muqueuses.
+
+Il est déconseillé d'allaiter pendant l'utilisation de fluconazole, en particulier à des doses élevées. En revanche, l'allaitement peut être poursuivi après une dose unique de 150 mg de fluconazole. Il est toutefois recommandé de tirer le lait et de l'éliminer pendant les 48 heures suivant la prise du médicament.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Aucune étude concernant l'influence du fluconazole sur l'aptitude à la conduite n'a été menée. Le fluconazole peut cependant entraîner des effets indésirables tels que des vertiges et, occasionnellement, des crises convulsives, qui sont susceptibles d'altérer la capacité à conduire des véhicules et à utiliser des machines.
+
+Effets indésirables
+
+Les effets indésirables suivants sont rangés par classe de système d'organes de la classification MedDRA et ont été observés pendant le traitement par le fluconazole avec la fréquence suivante: «très fréquents» (≥1/10), «fréquents» (≥1/100 à <1/10), «occasionnels» (≥1/1'000 à <1/100), «rares» (≥1/10'000 à <1/1'000), «très rares» (<1/10'000), «fréquence inconnue» (événements obtenus le plus souvent à partir de notifications spontanées de surveillance du marché et dont la fréquence exacte ne peut être estimée de manière fiable).
+
+Affections hématologiques et du système lymphatique
+
+Rares: neutropénie, leucopénie, thrombopénie, agranulocytose.
+
+Affections du système immunitaire
+
+Rares: anaphylaxie, angioœdème.
+
+Troubles du métabolisme et de la nutrition
+
+Rares: hypokaliémie, hypertriglycéridémie, hypercholestérémie.
+
+Affections psychiatriques
+
+Occasionnels: insomnie, somnolence.
+
+Affections du système nerveux
+
+Fréquents: céphalées.
+
+Occasionnels: vertiges, paresthésies, dysgueusie, convulsions.
+
+Rares: tremblements.
+
+Affections de l'oreille et du labyrinthe
+
+Occasionnels: vertige rotatoire.
+
+Affections cardiaques
+
+Rares: allongement du QT, torsades de pointes.
+
+Affections gastro-intestinales
+
+Fréquents: douleur abdominale, diarrhée, nausées, vomissements.
+
+Occasionnels: bouche sèche, flatulences, dyspepsie.
+
+Affections hépatobiliaires
+
+Fréquents: augmentation de l'ALAT et/ou de l'ASAT, augmentation des phosphatases alcalines.
+
+Occasionnels: hyperbilirubinémie, ictère, cholestase.
+
+Rares: hépatite, nécrose hépatocellulaire, insuffisance hépatique (avec issue fatale dans des cas isolés).
+
+Affections de la peau et du tissu sous-cutané
+
+Fréquents: exanthème.
+
+Occasionnels: prurit, urticaire, transpiration excessive, exanthème médicamenteux (y compris exanthème médicamenteux fixe).
+
+Rares: alopécie, œdème de la face, dermite exfoliative, réactions cutanées sévères (par ex. syndrome de Stevens-Johnson, nécrolyse épidermique toxique, PEAG et syndrome DRESS; voir «Mises en garde et précautions»).
+
+Affections musculo-squelettiques et du tissu conjonctif
+
+Occasionnels: myalgie.
+
+Troubles généraux
+
+Occasionnels: fatigue, malaise, asthénie, fièvre.
+
+Chez certains patients, en particulier chez ceux souffrant de maladies primaires sévères telles que le SIDA ou certaines tumeurs malignes, des anomalies des fonctions rénale et hépatique, ainsi que des troubles hématologiques tels qu'une éosinophilie et une anémie (voir «Mises en garde et précautions») ont été observés pendant le traitement par le fluconazole ou par d'autres préparations comparables. Leur signification clinique et leur lien de causalité avec le traitement par le fluconazole ne sont toutefois pas clairs.
+
+Pédiatrie
+
+Dans les études cliniques, le profil et la fréquence des effets indésirables (y compris les modifications des paramètres biologiques) étaient comparables chez les enfants et chez les adultes.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Des cas d'hallucinations et/ou de comportements paranoïdes ont été rapportés après un surdosage du fluconazole (avec des doses supposées allant jusqu'à 8'200 mg).
+
+Traitement
+
+Il n'existe aucun antidote spécifique. Un traitement symptomatique (avec des mesures de soutien et un lavage gastrique si nécessaire) doit éventuellement être mis en place.
+
+Le fluconazole est essentiellement excrété dans l'urine; une diurèse forcée pourrait donc favoriser son élimination. Une séance d'hémodialyse de 3 heures réduit les concentrations plasmatiques de 50% environ.
+
+Propriétés/Effets
+
+Code ATC
+
+J02AC01
+
+Antifongique à usage systémique, dérivé triazolé.
+
+Mécanisme d'action
+
+Le fluconazole est un antifongique triazolé qui inhibe de façon spécifique la synthèse des stérols fongiques. Le fluconazole présente une plus grande sélectivité pour les enzymes fongiques dépendantes du cytochrome P450 que pour les systèmes enzymatiques du cytochrome P450 des mammifères.
+
+Pharmacodynamique
+
+Microbiologie/développement de résistances
+
+In vitro, le spectre d'action antifongique du fluconazole comprend la plupart des espèces de Candida cliniquement pertinentes (telles que notamment C. albicans, C. parapsilosis et C. tropicalis).
+
+La concentration minimale inhibitrice (CMI) a tendance à être supérieure pour C. glabrata.
+
+C'est également le cas pour C. dubliniensis et C. guilliermondii. Les preuves d'une efficacité adéquate du fluconazole sur ces espèces sont insuffisantes.
+
+C. krusei est intrinsèquement résistant au fluconazole.
+
+C. auris a tendance à se montrer relativement résistant au fluconazole.
+
+Des surinfections par des espèces non albicans pas ou peu sensibles au fluconazole (telles que C. krusei) ont été décrites. Dans ce cas, un autre traitement antifongique est alors nécessaire.
+
+De plus, le fluconazole affiche une efficacité in vitro contre Cryptococcus neoformans et Cryptococcus gattii.
+
+Des résistances croisées avec d'autres antifongiques azolés sont possibles.
+
+Valeurs critiques EUCAST (European Committee on Antimicrobial Susceptibility Testing)
+
+Sur la base d'une analyse des données pharmacocinétiques/pharmacodynamiques, ainsi que des données sur la sensibilité in vitro et la réponse clinique, l'EUCAST-AFST (European Committee on Antimicrobial Susceptibility Testing – Subcommittee on Antifungal Susceptibility Testing) a défini des valeurs critiques du fluconazole pour les différentes espèces de Candida (EUCAST Fluconazole rational document (2020) – v. 3; European Committee on Antimicrobial Susceptibility Testing, antifungal agents, breakpoint tables for interpretation of MICs, v. 10.0, 04.02.2020). Ces valeurs critiques sont présentées dans le tableau suivant:
+
+|  |  |  |
+| --- | --- | --- |
+| Pathogène | Valeur critique CMI (mg/l) | |
+|  | S (sensible) | R (résistant) |
+| Candida albicans | ≤2 | >4 |
+| Candida dubliniensis | ≤2 | >4 |
+| Candida glabrata | ≤0.001 | >16\* |
+| Candida parapsilosis | ≤2 | >4 |
+| Candida tropicalis | ≤2 | >4 |
+| Candida krusei | -- | -- |
+| S = sensible, R = résistant  -- = test de sensibilité non recommandé, car le fluconazole n'est que peu adapté à cette espèce.  \* Une part considérable des infections a concerné C. glabrata avec une CMI de 2–16 mg/l pour le fluconazole et une absence de mécanisme de résistance. Le fluconazole peut être un choix convenable dans les soins médicaux de base, seuls quelques principes actifs étant à disposition pour le traitement des infections des voies urinaires et de la muqueuse. Dans les cas où le fluconazole est le seul antifongique disponible pour le traitement des infections par C. glabrata, un dosage supérieur peut être nécessaire. | | |
+
+ 
+
+Efficacité clinique
+
+Aucune donnée d'étude clinique disponible.
+
+Dans le modèle animal, le fluconazole s'est montré efficace aussi bien après administration intraveineuse qu'après administration orale pour le traitement des infections fongiques suivantes:
+
+·infections à Candida sp., y compris la candidose systémique chez l'animal immunodéficient,
+
+·infections à Cryptococcus neoformans, y compris les infections intracrâniennes,
+
+·infections à Microsporum sp.,
+
+·infections à Trichophyton sp..
+
+Pharmacocinétique
+
+Absorption
+
+Les propriétés pharmacocinétiques du fluconazole en administration intraveineuse et orale sont semblables. Après administration orale, le fluconazole est bien résorbé; les concentrations plasmatiques et la biodisponibilité systémique atteignent plus de 90% de celles obtenues après administration intraveineuse.
+
+Les concentrations plasmatiques sont proportionnelles à la dose administrée. Les pics de concentration plasmatique après une administration unique orale de 100 mg et de 400 mg de fluconazole sont de 1.9 mg/l et de 6.7 mg/l respectivement. Une administration orale pendant 6 à 10 jours conduit à une concentration plasmatique maximale 2.5 fois plus élevée que celle obtenue après une dose unique.
+
+Les concentrations plasmatiques à l'état d'équilibre sont atteintes en 5 à 10 jours lors d'une administration orale de 50 à 400 mg une fois par jour. Si la dose est doublée le premier jour de traitement, les 90% de la concentration plasmatique observée à l'état d'équilibre sont atteints dès le 2e jour.
+
+La résorption orale n'est pas influencée par la prise simultanée de nourriture. Chez le sujet à jeun, les concentrations plasmatiques maximales surviennent environ 0.5 à 1.5 heure après l'administration du médicament.
+
+Distribution
+
+Le volume de distribution est proche de celui de l'eau corporelle totale (0.8 l/kg). La liaison aux protéines plasmatiques est faible (12%). Les concentrations dans la salive et dans les expectorations sont semblables aux concentrations plasmatiques. Chez les patients atteints de méningite fongique, les concentrations de fluconazole dans le liquide céphalorachidien atteignent 80% des concentrations plasmatiques. En l'absence d'inflammation méningée, les concentrations dans le liquide céphalorachidien représentent 60% des concentrations plasmatiques.
+
+Dans la couche cornée, dans l'épiderme et dans les glandes sudoripares de la peau, le fluconazole atteint des concentrations élevées, qui dépassent les concentrations sériques. Le fluconazole s'accumule dans la couche cornée. Lors de l'administration d'une dose journalière de 50 mg en une seule prise pendant 12 jours, les concentrations de fluconazole dans la couche cornée étaient de 73.3 µg/g après 12 jours; elles atteignaient encore 5.8 µg/g sept jours après l'arrêt du traitement. Pour une posologie de 150 mg une fois par semaine pendant 2 semaines, la concentration maximale dans la couche cornée était de 23.4 µg/g le 7e jour et de 7.1 µg/g 7 jours après la deuxième dose.
+
+Le fluconazole traverse la barrière placentaire et passe dans le lait maternel. Dans une étude menée sur n=10 participants, le fluconazole était détectable dans le lait maternel pendant 48 heures après l'administration d'une dose unique de 150 mg. La concentration moyenne dans le lait maternel correspondait à environ 98% de celle dans le plasma de la mère.
+
+Métabolisme
+
+Aucun métabolite circulant n'a été détecté.
+
+Élimination
+
+La demi-vie plasmatique est d'environ 30 heures. Le fluconazole est essentiellement excrété par voie rénale; 80% de la dose administrée sont éliminés sous forme inchangée dans l'urine. La clairance du fluconazole est proportionnelle à la clairance de la créatinine.
+
+La longue demi-vie plasmatique permet l'administration d'une dose unique en cas de candidose vaginale et l'administration d'une dose quotidienne ou d'une dose hebdomadaire dans les autres indications.
+
+Le fluconazole agit spécifiquement sur les enzymes fongiques dépendantes du cytochrome P450. Le fluconazole n'influence ni les concentrations plasmatiques de testostérone chez l'homme ni les concentrations d'hormones stéroïdiennes chez la femme en âge de procréer.
+
+Cinétique pour certains groupes de patients
+
+Enfants et adolescents
+
+Chez les enfants, la clairance systémique est environ deux fois plus élevée que chez les adultes. Par conséquent, la demi-vie est plus courte chez les enfants (environ 20 heures) que chez les adultes. Pour une administration une fois par jour, l'état d'équilibre a été atteint après environ 4 à 5 jours chez les enfants.
+
+Le volume de distribution est plus élevé chez les enfants que chez les adultes: 950 ml/kg chez les enfants dont l'âge moyen est de 6 mois et 880 ml/kg chez les enfants dont l'âge moyen est de 10 ans.
+
+Données pharmacocinétiques chez les enfants et les adolescents
+
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| Âge | Posologie  (mg/kg) | N | Demi-vie  (heures) | Vd  (ml/kg) | Cmax  (μg/ml) | ASC  (μg∙h/ml) |
+| 9 mois - 13 ans | Suspension orale, dose unique de 2 mg/kg | 16 | 25.0  (16-45) | - | 2.9 | 94.7  (48-164) |
+| 9 mois - 13 ans | Suspension orale, dose unique de 8 mg/kg | 14 | 19.5  (10-59) | - | 9.77 | 362.5  (131-725) |
+| 5 ans – 15 ans | i.v., doses multiples de 2 mg/kg | 4 | 17.4\*  (15-20) | 722  (484-1'004) | 5.5  N=5 | 67.4  (51-84) |
+| 5 ans – 15 ans | i.v., doses multiples de 4 mg/kg | 5 | 15.2\*  (9-24) | 729  (467-1'044) | 11.4  N=7 | 139.1  (58-192) |
+| 5 ans – 15 ans | i.v., doses multiples de 8 mg/kg | 7 | 17.6\*  (10-26) | 1'069  (725-1'680) | 14.1  N=8 | 196.7  (134-247) |
+| 5 ans – 15 ans | Suspension orale, doses multiples de 3 mg/kg | 11 | 15.5  (11-22) | - | 5.27 | 41.6  (32-59) |
+
+ 
+
+\* Déterminée le dernier jour.
+
+Patients âgés
+
+La pharmacocinétique d'une dose orale unique de 50 mg de fluconazole a été étudiée chez 22 volontaires d'un âge ≥65 ans. 10 de ces patients ont reçu simultanément un diurétique. Par rapport aux données de populations d'adultes plus jeunes, la concentration plasmatique maximale était augmentée d'un facteur d'environ 1.4 et a été atteinte 1.2 heure après la prise. Par rapport aux sujets plus jeunes, l'ASC moyenne était augmentée d'un facteur d'environ 2.2 et la demi-vie était allongée d'un facteur d'environ 2.1. De plus, la clairance rénale estimée ainsi que le pourcentage de substance inchangée dans l'urine étaient plus bas chez les volontaires âgés que chez les sujets plus jeunes. Les valeurs de la clairance de la créatinine étaient en général aussi diminuées (en moyenne à 74 ml/min) chez les sujets âgés. Ces résultats indiquent que la modification de la pharmacocinétique du fluconazole chez les patients âgés par rapport aux patients plus jeunes est due à la limitation de la fonction rénale.
+
+Troubles de la fonction rénale
+
+Une réduction de la fonction rénale influence fortement la pharmacocinétique du fluconazole. Il existe un rapport inverse entre la demi-vie d'élimination de la substance et la clairance de la créatinine. En cas d'insuffisance rénale, il peut être nécessaire de réduire la dose de Diflucan (voir «Instructions posologiques particulières», rubrique «Patients présentant des troubles de la fonction rénale»).
+
+Hémodialyse: une hémodialyse de 3 heures réduit les concentrations plasmatiques de fluconazole de 50% environ.
+
+Troubles de la fonction hépatique
+
+La pharmacocinétique du fluconazole n'a pas été étudiée chez les patients présentant une insuffisance hépatique.
+
+Données précliniques
+
+Mutagénicité
+
+Les études de mutagénicité avec le fluconazole portant sur quatre souches de S. typhimurium et sur le système des cellules L5178Y de lymphome chez la souris, avec et sans activité métabolique, sont restées négatives. Les études cytogénétiques in vivo (cellules de moelle osseuse de souris après administration orale de fluconazole) et les études in vitro (lymphocytes humains dans une solution contenant 1'000 µg/ml de fluconazole) n'ont mis en évidence aucun indice de mutations chromosomiques.
+
+Carcinogénicité
+
+Des études au long cours menées sur des souris et des rats qui ont reçu du fluconazole pendant 24 mois à des doses journalières orales de 2.5 mg/kg, 5 mg/kg ou 10 mg/kg (environ 2 à 7 fois la dose humaine recommandée) n'ont mis en évidence aucun indice de potentiel carcinogène du fluconazole. Les rats mâles, traités par 5 mg et 10 mg de fluconazole/kg/jour, ont présenté une incidence accrue d'adénomes hépatocellulaires.
+
+Fertilité
+
+La fertilité des rats mâles et femelles n'a pas été influencée par l'administration quotidienne de 5 mg, 10 mg ou 20 mg de fluconazole p.o., ou de 5 mg, 25 mg ou 75 mg de fluconazole/kg en i.v., bien que la gestation ait été légèrement prolongée pour des doses orales de 20 mg/kg.
+
+Toxicité sur la reproduction
+
+Dans des études d'embryotoxicité menées sur des rats, des dosages de 5 ou 10 mg/kg n'ont pas eu d'influence sur le fœtus. À des dosages de 25 mg/kg et 50 mg/kg ou plus, une augmentation des cas d'anomalies anatomiques (côte surnuméraire, dilatation du bassinet rénal) ainsi qu'un retard de l'ossification ont été observés. Chez les rats qui ont reçu des doses allant de 80 mg/kg (environ 20 à 60 fois la dose humaine recommandée) à 320 mg/kg, des anomalies fœtales telles que des côtes ondulées, une fente palatine et une ossification craniofaciale défectueuse ont été fréquemment observées. En outre, le taux de mortalité était accru. Ces effets s'accompagnent d'une inhibition de la synthèse des œstrogènes chez les rats et sont probablement la conséquence de l'effet connu d'une diminution du taux d'œstrogènes sur la grossesse, l'organogenèse et la mise bas.
+
+Chez les lapines en gestation, une altération du gain pondéral a été observée pour tous les dosages du fluconazole. À des doses supérieures à 20 mg/kg, des avortements se sont produits.
+
+Dans une étude périnatale menée sur des rats traités par 5 mg/kg, 20 mg/kg et 40 mg/kg de fluconazole i.v., une dystocie et un allongement de la durée de mise bas ont été observés chez certains animaux à une posologie inférieure à 20 mg/kg (environ 5 à 15 fois la posologie humaine recommandée) et à des doses inférieures à 40 mg/kg. Ces manifestations n'ont cependant pas été observées pour des doses inférieures à 5 mg/kg.
+
+À ces doses, les mises bas difficiles étaient accompagnées d'une légère augmentation du nombre de mort-nés et d'une diminution de celui des nouveau-nés survivants. Chez les rats, l'effet sur la mise bas peut être imputé à l'effet antiœstrogénique, spécifique à l'espèce, des hautes doses de fluconazole. Chez les femmes traitées par fluconazole, ces modifications hormonales n'ont pas été observées.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver à température ambiante (15 à 25 °C), dans l'emballage d'origine et hors de portée des enfants.
+
+Numéro d’autorisation
+
+49503 (Swissmedic).
+
+Présentation
+
+Diflucan 50 mg: 7, 28 gélules [B].
+
+Diflucan 150 mg: 1, 4 gélules [B].
+
+Diflucan 200 mg: 2, 7 gélules [B].
+
+Titulaire de l’autorisation
+
+Pfizer AG, Zürich.
+
+Mise à jour de l’information
+
+Juillet 2026.
+
+LLD V030

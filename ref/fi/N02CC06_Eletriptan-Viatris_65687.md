@@ -1,0 +1,386 @@
+---
+titre: "Eletriptan Viatris"
+titulaire: "Viatris Pharma GmbH"
+atc: N02CC06
+substances: "Eletriptanum ut eletriptani hydrobromidum"
+autorisation_swissmedic: 65687
+date_version: 2021-01-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/58bb550983ef4a81bbe8f780abcd0ccf-fr.html
+---
+
+Eletriptan Viatris
+
+Viatris Pharma GmbH
+
+Composition
+
+Principes actifs
+
+Eletriptanum ut eletriptani hydrobromidum.
+
+Excipients
+
+Comprimés pelliculés à 40 mg: cellulosum microcristallinum, lactosum monohydricum (47.47 mg), carmellosum natricum conexum (corresp. natrium 1.87 mg), magnesii stearas, hypromellosum, triacetinum, E 171, E 110 (0.07 mg).
+
+Comprimés pelliculés à 80 mg: cellulosum microcristallinum, lactosum monohydricum (94.94 mg), carmellosum natricum conexum (corresp. natrium 3.74 mg), magnesii stearas, hypromellosum, triacetinum, E 171, E 110 (0.14 mg).
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Comprimé pelliculé.
+
+Comprimé pelliculé à 40 mg: 1 comprimé pelliculé contient 40 mg d'élétriptan (sous forme de bromhydrate).
+
+Comprimé pelliculé à 80 mg: 1 comprimé pelliculé contient 80 mg d'élétriptan (sous forme de bromhydrate).
+
+Indications/Possibilités d’emploi
+
+Traitement d'attaque de poussées migraineuses avec ou sans aura.
+
+Posologie/Mode d’emploi
+
+Les comprimés pelliculés de Eletriptan Viatris doivent être pris aussi tôt que possible après le début d'une migraine, mais ils sont également efficaces lorsqu'ils sont pris à un stade ultérieur.
+
+Il n'a pas été démontré que la prise de Eletriptan Viatris au cours de la phase d'aura prévient l'apparition de la migraine. De ce fait, Eletriptan Viatris ne doit pas être pris avant la phase céphalalgique de la migraine.
+
+Les comprimés pelliculés de Eletriptan Viatris ne doivent pas être utilisés en prophylaxie.
+
+Les comprimés pelliculés doivent être avalés entiers avec de l'eau.
+
+Adultes (de 18 à 65 ans)
+
+La dose initiale recommandée est de 40 mg.
+
+En cas de récidive des céphalées dans les 24 heures: si la migraine a répondu au traitement et qu'elle réapparaît dans les 24 heures, une prise supplémentaire de la même dose d'élétriptan peut traiter efficacement cette récidive. Si une seconde dose est nécessaire, un délai minimal de deux heures doit être respecté entre la première et la deuxième prise.
+
+En cas d'absence de réponse: si le patient n'est pas soulagé dans les deux heures suivant la première dose, une seconde dose ne doit pas être prise au cours de la même crise étant donné que les études cliniques n'ont pas démontré l'efficacité d'une seconde dose dans un tel cas.
+
+Les études cliniques ont montré que la majorité des patients ne répondant pas au cours d'une crise sont néanmoins susceptibles de répondre au traitement lors des crises ultérieures.
+
+Les patients qui n'obtiennent pas une efficacité satisfaisante avec une dose de 40 mg peuvent être traités de manière efficace à une posologie de 80 mg au cours des crises ultérieures de migraine. Dans les études cliniques, 43% des patients chez qui une dose de 40 mg n'avait pas été efficace lors d'une première crise ont réagi à la même dose lors d'une seconde crise. Un tiers de plus (soit 56% des sujets) ont été efficacement soulagés par une dose de 80 mg lors de la deuxième crise. Cette différence n'était certes pas statistiquement significative, mais elle démontre une supériorité cliniquement significative par rapport à la dose de 40 mg.
+
+La dose quotidienne maximale ne doit pas excéder 160 mg.
+
+Instructions posologiques particulières
+
+Patients présentant des troubles de la fonction hépatique
+
+En cas d'insuffisance hépatique légère à modérée, aucun ajustement de la posologie n'est nécessaire. Étant donné que Eletriptan Viatris n'a pas été étudié chez les patients atteints d'une insuffisance hépatique sévère, son usage est contre-indiqué dans ce groupe de patients.
+
+Patients âgés (plus de 65 ans)
+
+La sécurité et l'efficacité chez les patients âgés de plus de 65 ans n'ont pas été évaluées de manière systématique en raison du faible nombre de patients de ce type inclus dans les essais cliniques. Les effets sur la pression artérielle peuvent être plus marqués dans cette population que chez les adultes plus jeunes (voir «Mises en garde et précautions»).
+
+Enfants et adolescents
+
+Adolescents (de 12 à 17 ans)
+
+Une étude clinique portant sur des adolescents a révélé un taux élevé de réponse au placebo. L'efficacité de Eletriptan Viatris dans ce groupe de patients n'ayant pas été établie, son utilisation n'est donc pas recommandée pour les patients de cette tranche d'âge. Le profil de sécurité de l'élétriptan dans cette population était similaire à celui observé chez l'adulte.
+
+Enfants (de 6 à 11 ans)
+
+La sécurité et l'efficacité de Eletriptan Viatris n'ont pas été étudiées chez l'enfant. Par conséquent, son utilisation n'est pas recommandée dans cette classe d'âge (voir «Cinétique pour certains groupes de patients»).
+
+Contre-indications
+
+Hypersensibilité au principe actif ou à l'un des excipients conformément à la composition.
+
+Insuffisance rénale.
+
+Insuffisance hépatique sévère.
+
+Hypertension artérielle non contrôlée par un traitement médicamenteux.
+
+Maladie coronarienne confirmée, y compris les cardiopathies ischémiques (angine de poitrine, antécédents d'infarctus du myocarde ou ischémie silencieuse confirmée).
+
+Vasospasmes coronariens, symptômes objectifs ou subjectifs d'une cardiopathie ischémique ou d'un angor de Prinzmetal.
+
+Maladies vasculaires périphériques.
+
+Antécédents d'accident vasculaire cérébral (AVC) ou d'accident ischémique transitoire (AIT).
+
+Emploi d'ergotamine ou de dérivés de l'ergotamine (y compris méthysergide) dans les 24 heures précédant ou suivant la prise d'élétriptan (voir «Interactions»).
+
+Eletriptan Viatris n'est pas indiqué dans le traitement de la migraine hémiplégique, ophtalmoplégique ou basilaire.
+
+Administration concomitante d'autres agonistes des récepteurs 5-HT1.
+
+Mises en garde et précautions
+
+Il n'est pas recommandé d'utiliser l'élétriptan en association avec des inhibiteurs puissants de l'isoenzyme CYP3A4 tels que le kétoconazole, l'itraconazole, l'érythromycine, la clarithromycine, la josamycine et les inhibiteurs de la protéase (ritonavir, indinavir et nelfinavir) (voir «Interactions»).
+
+Comme les autres agonistes des récepteurs 5-HT1, Eletriptan Viatris doit également être utilisé uniquement en cas de diagnostic formel de migraine.
+
+Les agonistes des récepteurs 5-HT1, comme Eletriptan Viatris, ne doivent pas être utilisés dans le traitement de céphalées «atypiques», soit des céphalées liées à des affections sous-jacentes potentiellement graves (AVC, rupture d'anévrisme), pour lesquelles une vasoconstriction cérébrovasculaire pourrait être dangereuse.
+
+Comme c'est le cas avec d'autres traitements de la migraine aiguë, d'autres affections neurologiques potentiellement graves doivent être exclues avant de traiter par Eletriptan Viatris les patients chez lesquels une migraine n'avait jamais été diagnostiquée auparavant et chez les migraineux qui présentent des symptômes atypiques. On notera à ce sujet que le risque de présenter certaines affections cérébrovasculaires comme un AVC ou un AIT peut être accru chez le migraineux.
+
+Eletriptan Viatris ne devrait pas être prescrit sans investigation préalable chez les patients chez lesquels une cardiopathie inconnue est probable ou chez les patients présentant un risque de maladie coronarienne (par ex. patients hypertendus, diabétiques, fumeurs ou patients sous traitement de substitution de la nicotine, hommes de plus de 40 ans, femmes post-ménopausées et patients dont l'anamnèse familiale plaide fortement en faveur d'une pathologie coronarienne). Lors de l'investigation cardiologique, il est possible que tous les patients atteints d'une maladie cardiaque ne soient pas identifiés et que, dans de très rares cas, des événements cardiaques graves apparaissent sous traitement par des agonistes des récepteurs 5-HT1 en l'absence de pathologie cardiovasculaire sous-jacente. Les patients présentant une maladie coronarienne avérée ne doivent pas recevoir Eletriptan Viatris (voir rubrique «Contre-indications»).
+
+Les agonistes des récepteurs 5-HT1 ont été mis en relation avec des spasmes des vaisseaux coronaires. Dans de rares cas, une ischémie myocardique ou un infarctus du myocarde a été rapporté sous traitement par des agonistes des récepteurs 5-HT1.
+
+L'effet de l'élétriptan sur la circulation systémique pulmonaire et coronarienne a été étudié chez des patients soumis à une angiographie coronarienne à visée diagnostique. Quinze minutes après la fin d'une perfusion intraveineuse d'élétriptan (50 microgrammes/kg), le diamètre des coronaires avait diminué de 3% en moyenne. La prudence s'impose néanmoins lorsque Eletriptan Viatris est administré à des patients qui présentent un risque d'ischémie coronarienne.
+
+Si, en cours de traitement, des symptômes suggérant la présence d'une cardiopathie ischémique apparaissent, il conviendra de procéder aux investigations appropriées avant de poursuivre le traitement.
+
+Eletriptan Viatris doit être administré uniquement avec prudence aux patients qui ont des antécédents d'épilepsie ou de lésions cérébrales structurelles qui abaissent leur seuil épileptogène.
+
+Dans la fourchette des doses thérapeutiques de l'élétriptan, des hausses légères et passagères de la pression artérielle sont survenues avec des doses de 60 mg ou plus. Cet effet était considérablement plus marqué chez les patients atteints d'insuffisance rénale et chez les sujets âgés. Chez les patients atteints d'insuffisance rénale, l'élévation maximale moyenne de la pression artérielle systolique était de 14 mmHg à 17 mmHg (normale: 3 mmHg) et celle de la pression artérielle diastolique de 14 mmHg à 21 mmHg (normale: 4 mmHg). Chez les patients âgés, l'élévation maximale moyenne de la pression artérielle systolique était de 23 mmHg, par rapport à 13 mmHg chez les adultes plus jeunes (placebo: 8 mmHg). Après la mise sur le marché, des élévations de la pression artérielle ont aussi été rapportées chez des patients traités par 20 mg ou 40 mg d'élétriptan, ainsi que chez des patients qui n'étaient ni insuffisants rénaux ni âgés.
+
+Syndrome sérotoninergique
+
+Dans de rares cas, un syndrome sérotoninergique, un effet indésirable potentiellement mortel, peut apparaître lors de l'administration concomitante de triptans et d'autres médicaments à effet sérotoninergique. Le syndrome sérotoninergique est caractérisé par l'association variée de certains symptômes qui peuvent typiquement inclure les symptômes suivants: hyperréflexie, tremblements, myoclonie, modifications de l'état psychique telles qu'agitation, anxiété, hallucinations, irritabilité pouvant aller jusqu'au délire et au coma, ainsi que tachycardie, fluctuations de la pression artérielle, hyperthermie, nausée, vomissements, diarrhée. Le syndrome sérotoninergique est rare et il apparaît généralement uniquement lorsque deux ou plusieurs médicaments à effet sérotoninergique sont administrés en même temps ou si une posologie est augmentée (voir «Interactions»). Une surveillance étroite du patient est recommandée lorsqu'un traitement concomitant par Eletriptan Viatris et par d'autres médicaments à effet sérotoninergique est cliniquement justifié.
+
+Céphalée persistante induite par des médicaments
+
+L'utilisation excessive de médicaments destinés au traitement des céphalées peut les aggraver. En cas d'apparition ou de suspicion de tels cas, le traitement doit être arrêté. On suspecte le diagnostic de céphalées persistantes induites par des médicaments chez les patients qui présentent des céphalées fréquentes ou quotidiennes malgré (ou en raison de) l'utilisation régulière d'anticéphalalgiques.
+
+Lactose
+
+Les comprimés pelliculés de Eletriptan Viatris contiennent du lactose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne devraient pas prendre Eletriptan Viatris.
+
+E 110
+
+Les comprimés pelliculés de Eletriptan Viatris contiennent du colorant azoïque jaune orangé S (E 110). L'E 110 peut provoquer des réactions allergiques.
+
+Sodium
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé pelliculé (comprimé pelliculé à 40 mg, comprimé pelliculé à 80 mg), c.-à-d. qu'il est essentiellement «sans sodium».
+
+Interactions
+
+Effet de l'élétriptan sur d'autres médicaments
+
+Bien que l'élétriptan soit principalement métabolisé par le CYP3A4, les résultats d'études menées in vitro et in vivo montrent que l'administration d'élétriptan aux doses thérapeutiques ne provoque ni inhibition ni induction du cytochrome P450. Il est donc improbable que l'élétriptan donne lieu à des interactions médicamenteuses cliniquement pertinentes par le biais de ces enzymes (voir ci-après).
+
+Effet d'autres médicaments sur l'élétriptan
+
+Aucun indice d'une interaction avec des bêta-bloquants (sauf avec le propranolol, voir ci-après) n'a été mis en évidence lors des études cliniques pivots.
+
+Les analyses cinétiques de populations de diverses études cliniques montrent que les substances suivantes n'ont probablement aucune influence sur les propriétés pharmacocinétiques de l'élétriptan: bêta-bloquants, antidépresseurs tricycliques, inhibiteurs sélectifs de la recapture de la sérotonine, médicaments destinés à une estrogénothérapie substitutive, contraceptifs oraux contenant des estrogènes et inhibiteurs calciques.
+
+Dans de rares cas, un syndrome sérotoninergique, un effet indésirable potentiellement mortel, peut apparaître lors de l'administration concomitante de triptans et d'autres médicaments à effet sérotoninergique plus ou moins prononcé comme, entre autres, les «inhibiteurs sélectifs de la recapture de la sérotonine» (SSRI), les «inhibiteurs de la recapture de la sérotonine/noradrénaline» (SNRI), les inhibiteurs de la MAO, le L-tryptophane, le lithium, les antidépresseurs tricycliques, les opiacés, le millepertuis (Hypericum perforatum) (voir «Mises en garde et précautions»).
+
+Dans les études cliniques, la concentration plasmatique maximale (Cmax) de l'élétriptan était augmentée d'un facteur 1.1 lors d'une prise avec du propranolol (160 mg), d'un facteur 2.2 lors d'une prise avec du vérapamil (480 mg) et d'un facteur 1.4 lors d'une prise avec du fluconazole (100 mg), tandis que son aire sous la courbe (ASC) était augmentée de respectivement 1.3, 2.7 et 2.0 fois. Ces effets ne sont pas considérés comme cliniquement pertinents car, en comparaison avec les effets observés sous élétriptan administré en monothérapie, ils n'étaient pas associés à une élévation de la pression artérielle ni à une augmentation des effets secondaires.
+
+Dans les études cliniques conduites avec de l'érythromycine (1'000 mg) et du kétoconazole (400 mg), qui sont des inhibiteurs spécifiques et puissants du CYP3A4, des augmentations significatives de la Cmax (facteurs 2 et 2.7) et de l'ASC (facteurs 3.6 et 5.9) de l'élétriptan ont été observées. Cette augmentation de l'exposition était accompagnée d'un allongement de la demi-vie (t1/2) de l'élétriptan, qui est passée de 4.6 à 7.1 heures avec l'érythromycine et de 4.8 à 8.3 heures avec le kétoconazole (voir «Pharmacocinétique»). De ce fait, Eletriptan Viatris ne doit pas être pris en association avec des inhibiteurs puissants du CYP3A4 tels que le kétoconazole, l'itraconazole, l'érythromycine, la clarithromycine, la josamycine et les inhibiteurs de la protéase (ritonavir, indinavir et nelfinavir).
+
+Dans les études cliniques réalisées avec Cafergot® (une association d'ergotamine et de caféine) administré par voie orale une et deux heures après la prise d'élétriptan, une légère élévation additionnelle de la pression artérielle a été observée, prévisible en raison de la pharmacologie des deux médicaments. Il est par conséquent recommandé de ne pas administrer de médicaments contenant de l'ergotamine ou des dérivés de l'ergotamine (par ex. dihydroergotamine) dans les 24 heures suivant la prise d'élétriptan. De même, après l'administration d'un médicament contenant de l'ergotamine, il faudra attendre au moins 24 heures avant d'administrer de l'élétriptan.
+
+Grossesse, allaitement
+
+Grossesse
+
+Des essais chez l'animal n'ont mis en évidence aucun effet tératogène, mais la sécurité de l'élétriptan chez la femme enceinte n'a pas été établie. Eletriptan Viatris ne doit pas être administré durant la grossesse, sauf en cas d'absolue nécessité.
+
+Allaitement
+
+L'élétriptan passe dans le lait maternel. Dans une étude portant sur huit femmes qui avaient reçu une dose unique de 80 mg d'élétriptan, la quantité totale d'élétriptan retrouvée dans le lait maternel au cours des 24 heures suivantes représentait en moyenne 0.02% de la dose. Il est donc conseillé de renoncer à allaiter pendant au moins les 24 heures qui suivent la prise de Eletriptan Viatris.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Chez certains patients, la migraine peut provoquer une fatigue. Certains patients ont également rapporté des étourdissements et une fatigue sous Eletriptan. La prudence est donc recommandée aux patients pendant une crise migraineuse ou après la prise de Eletriptan Viatris s'ils doivent exécuter des tâches requérant une attention soutenue (par ex. conduire un véhicule ou utiliser une machine).
+
+Effets indésirables
+
+Dans le cadre d'études cliniques, Eletriptan a été administré à plus de 5'000 patients. Les effets indésirables étaient généralement temporaires, de nature légère à modérée, et ont disparu spontanément sans autre traitement. La fréquence et la sévérité des effets secondaires étaient similaires, que les patients aient pris pour traiter une même crise deux doses identiques ou qu'ils n'aient pris qu'une seule dose.
+
+Les effets indésirables suivants ont été rapportés dans toutes les études cliniques de phase II/III avec une incidence d'au moins 1% et qui était supérieure à celle observée dans le groupe sous placebo:
+
+|  |  |  |
+| --- | --- | --- |
+|  | élétriptan  (n=6'940) | placebo  (n=1'054) |
+| Affections du système nerveux | | |
+| Endormissement  Sensation de raideur  Hypoesthésie  Paresthésies  Fatigue  Myasthénie  Céphalée | 7.2%  2.9%  1.3%  4.6%  8.2%  1.1%  2.6% | 2.8%  0.3%  0.3%  1.3%  3.1%  0.0%  2.0% |
+| Affections de l'oreille et du labyrinthe | | |
+| Étourdissement/vertiges | 1.2% | 0.5% |
+| Affections cardiaques | | |
+| Palpitation  Tachycardie | 1.2%  1.0% | 0.7%  0.5% |
+| Affections vasculaires | | |
+| Sensation de chaud, bouffée congestive | 2.9% | 1.5% |
+| Affections respiratoires, thoraciques et médiastinales | | |
+| Pharyngite  Sensation de gorge serrée | 1.8%  3.2% | 0.1%  0.2% |
+| Affections gastro-intestinales | | |
+| Bouche sèche  Dyspepsie  Nausées  Douleurs abdominales | 3.9%  1.4%  7.2%  2.1% | 2.4%  0.6%  3.3%  0.7% |
+| Affections de la peau et du tissu sous-cutané | | |
+| Sécrétion de sueur | 1.3% | 0.4% |
+| Affections musculo-squelettiques et du tissu conjonctif | | |
+| Dorsalgie  Myalgie | 1.5%  1.2% | 0.0%  0.1% |
+| Troubles généraux | | |
+| Asthénie | 9.9% | 1.9% |
+| Symptômes au niveau de la poitrine (douleurs, sensation de serrement, sensation de pression) | 4.3% | 0.8% |
+| Frissons | 1.2% | 1.0% |
+| Douleurs | 1.9% | 0.2% |
+
+ 
+
+Effets indésirables identifiés après la mise sur le marché
+
+Une relation de causalité entre les effets indésirables et le principe actif ne peut être ni confirmée, ni exclue:
+
+Affections du système immunitaire: réactions allergiques, sévères dans des cas isolés, y compris angioœdème.
+
+Affections du système nerveux: syncopes.
+
+Affections oculaires: hémianopsie, cécité (parfois unilatérale ou transitoire), diplopie, neuropathie ischémique du nerf optique.
+
+Affections cardiaques/affections vasculaires: hypertension, hypotension, ischémie myocardique ou infarctus du myocarde, artériospasme coronaire.
+
+Affections gastro-intestinales: vomissements, colite ischémique.
+
+Affections de la peau et du tissu sous-cutané: prurit, rash, urticaire.
+
+Certains des symptômes cités comme effets secondaires peuvent faire partie des manifestations de la poussée migraineuse. Les effets secondaires habituellement associés à l'élétriptan sont caractéristiques des médicaments de la classe des agonistes des récepteurs 5-HT1.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+La prise de doses uniques de 120 mg a été tolérée sans effets indésirables significatifs. Néanmoins, un surdosage peut entraîner la survenue d'une hausse de la pression artérielle ou d'autres symptômes cardio-vasculaires plus sévères.
+
+En cas de surdosage, les mesures de soutien usuelles doivent être prises en fonction de l'état du patient. La demi-vie d'élimination de l'élétriptan est d'environ quatre heures. Après un surdosage d'élétriptan, il faudra donc assurer une surveillance du patient et l'application d'un traitement de soutien général pendant au moins 20 heures ou aussi longtemps que persistent les symptômes.
+
+On ignore quels sont les effets d'une hémodialyse ou d'une dialyse péritonéale sur les concentrations sériques d'élétriptan.
+
+Propriétés/Effets
+
+Code ATC
+
+N02CC06
+
+Classe pharmaco-thérapeutique: agoniste des récepteurs 5-HT1.
+
+Mécanisme d'action / Pharmacodynamique
+
+L'élétriptan est un agoniste puissant et sélectif des récepteurs 5-HT1B vasculaires et des récepteurs 5-HT1D neuronaux. Par ailleurs, l'élétriptan possède une forte affinité pour les récepteurs 5-HT1F, ce qui pourrait contribuer à son action anti-migraineuse. L'affinité de l'élétriptan est modeste pour les récepteurs recombinants humains 5-HT1A, 5-HT2B, 5-HT1E et 5-HT7.
+
+Dans le cadre d'études chez l'animal, l'élétriptan a montré une sélectivité beaucoup plus grande pour les vaisseaux carotidiens que pour les vaisseaux coronaires et fémoraux. De plus, il a été prouvé que l'élétriptan inhibe l'inflammation neurogène de la dure-mère chez l'animal. Ces deux mécanismes - vasoconstriction intracrânienne et inhibition de l'inflammation neurogène - pourraient contribuer à son efficacité dans le traitement de la migraine chez l'être humain.
+
+Efficacité clinique
+
+Dans sept études randomisées, menées contre placebo et en double aveugle, incluant au total 5'992 patients âgés de 17 à 78 ans et en majorité des femmes (85%), Eletriptan a atténué les migraines et les symptômes qui y sont associés. Des médicaments actifs ont été utilisés comme substances témoins dans quatre études: pour trois d'entre elles, il s'agissait du sumatriptan (25 mg, 50 mg et 100 mg) et de Cafergot® dans la dernière.
+
+Il a été demandé aux patients de traiter leurs céphalées d'intensité modérée à sévère par Eletriptan. La réponse au traitement, étudiée jusqu'à 4 heures après la prise du médicament, était définie comme une réduction des céphalées, de sévères ou modérées initialement à légères ou nulles. Les symptômes associés à la migraine, tels que nausées, vomissements, photophobie et phonophobie, ont également été évalués.
+
+Dans les 7 études, la proportion de patients dont les céphalées avaient répondu au traitement 2 heures après la prise du médicament était significativement supérieure parmi ceux qui avaient reçu les comprimés pelliculés de Eletriptan, quel que soit le dosage, en comparaison des patients sous placebo. Les taux de réponse obtenus en 2 heures dans ces études contrôlées sont résumés dans le tableau ci-dessous.
+
+|  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Proportion de patients dont les céphalées ont répondu au traitement (céphalée légère ou disparition de la céphalée) 2 heures après la prise du médicament | | | | | | | |
+|  | Placebo | Eletriptan  40 mg | Eletriptan  80 mg | Sumatriptan  25 mg | Sumatriptan  50 mg | Sumatriptan  100 mg | Cafergot® |
+| Étude 1 | 23.8%  (n=126) | 65.0%\*  (n=117) | 77.1%\*  (n=118) | --- | --- | 54.8\*  (n=115) | --- |
+| Étude 2 | 19.0%  (n=232) | 61.6%\*  (n=430) | 64.6%\*  (n=446) | --- | --- | --- | --- |
+| Étude 3 | 21.7%  (n=276) | 61.9%\*  (n=281) | 58.6%\*  (n=290) | --- | --- | --- | --- |
+| Étude 4 | 39.5%  (n=86) | 62.3%\*  (n=175) | 70.0%\*,¥,†  (n=170) | 52.6%  (n=171) | 56.0%\*  (n=175) | --- | --- |
+| Étude 5 | 20.6%  (n=102) | 53.9%\*,¤  (n=206) | 67.9%\*,¤  (n=209) | --- | --- | --- | 33.0%\*  (n=197) |
+| Étude 6 | 31.3%  (n=80) | 63.9%\*,†,‡  (n=169) | 66.9%\*,†,‡  (n=160) | --- | 50.0%\*  (n=176) | 53.1%\*  (n=160) | --- |
+| Étude 7 | 29.5%  (n=122) | 57.5%\*  (n=492) | --- | --- | --- | --- | --- |
+
+ 
+
+\* résultat statistiquement significatif par rapport au placebo
+
+¥ résultat statistiquement significatif par rapport au sumatriptan 25 mg
+
+† résultat statistiquement significatif par rapport au sumatriptan 50 mg
+
+‡ résultat statistiquement significatif par rapport au sumatriptan 100 mg
+
+¤ résultat statistiquement significatif par rapport à Cafergot®
+
+--- aucune étude
+
+Eletriptan s'est également avéré efficace dans le traitement des symptômes associés à la migraine, comme les vomissements, les nausées, la photophobie et la phonophobie.
+
+Les taux de rechute chez les patients qui avaient répondu à Eletriptan étaient faibles. Plus le dosage était faible, plus le taux de rechute était élevé: dans les études de phase II/III, la proportion de patients adultes ayant présenté des rechutes était de 20.6% avec 80 mg et de 23.2% avec 40 mg, tandis qu'elle était de 35.5% avec le placebo.
+
+Si la migraine a répondu au traitement et qu'elle réapparaît dans les 24 heures, une prise supplémentaire de la même dose d'élétriptan peut efficacement traiter cette récidive.
+
+Eletriptan est aussi efficace dans la migraine avec aura, que dans la migraine sans aura et dans la migraine périmenstruelle. Il n'a pas été démontré que la prise de Eletriptan au cours de la phase d'aura prévient la migraine, c'est pourquoi Eletriptan Viatris ne doit pas être pris avant la phase céphalalgique de la poussée migraineuse.
+
+Pharmacocinétique
+
+Absorption
+
+Après administration orale, l'élétriptan est efficacement et rapidement absorbé par le tractus gastro-intestinal (81% au moins). La biodisponibilité orale absolue de l'élétriptan chez l'homme et chez la femme est d'environ 50%. Après prise par voie orale, le Tmax moyen est d'environ 1.5 heure. La pharmacocinétique est linéaire pour toute la fourchette des doses cliniques (de 20 à 80 mg).
+
+Après administration orale avec un repas très riche en graisses, l'ASC et la Cmax de l'élétriptan sont augmentées d'environ 20 à 30%. Lorsque la prise orale a lieu pendant une poussée migraineuse, l'ASC est diminuée de 30% environ et le Tmax est prolongé jusqu'à 2.8 heures.
+
+L'administration de 20 mg d'élétriptan toutes les 8 heures pendant 7 jours a entraîné une accumulation: au jour 7, l'ASC0-8h était 1.9 fois plus importante qu'au jour 1. Lors de l'administration de 40 mg trois fois par jour, la deuxième dose ayant été appliquée après 2 heures et la troisième encore 10 heures plus tard, ainsi que lors de l'administration de 80 mg deux fois par jour à intervalle de 2 heures, l'ASC0-24h au jour 7 était 1.4 fois plus importante que l'ASC0-24h au jour 1.
+
+Distribution
+
+Après administration intraveineuse, le volume de distribution de l'élétriptan est de 138 litres, ce qui indique une distribution tissulaire. L'élétriptan ne se lie que modérément aux protéines plasmatiques (environ 85%).
+
+Métabolisme
+
+Les études in vitro indiquent que l'élétriptan est principalement métabolisé par l'isoenzyme CYP3A4 du cytochrome hépatique P450. Ce résultat est étayé par l'augmentation des concentrations plasmatiques d'élétriptan lors de l'administration concomitante d'érythromycine, connue pour être un inhibiteur puissant et sélectif du CYP3A4. Des études in vitro révèlent également une participation modeste de l'enzyme CYP2D6, bien que les études cliniques ne mettent en évidence aucun effet du polymorphisme du CYP2D6 sur la pharmacocinétique de l'élétriptan.
+
+Deux importants métabolites ont été identifiés, qui contribuent de manière significative à la radioactivité plasmatique après administration d'élétriptan marqué au C14. Le métabolite provenant de la N-oxydation n'a montré aucune activité sur les modèles animaux in vitro. L'autre métabolite, formé par N-déméthylation, a une activité similaire à celle de l'élétriptan dans les modèles animaux in vitro. Une troisième source de radioactivité dans le plasma n'a pas été formellement identifiée; cependant il est très probable qu'il s'agisse d'un mélange de métabolites hydroxylés dont l'excrétion a également été observée dans l'urine et les fèces.
+
+La concentration plasmatique du métabolite N-déméthylé ne représente que 10 à 20% de celle de la substance mère et ne contribue donc probablement pas de manière significative à l'effet thérapeutique de l'élétriptan.
+
+Élimination
+
+La clairance plasmatique moyenne de l'élétriptan s'élève à 36 l/h après administration intraveineuse; il en résulte une demi-vie plasmatique d'environ 4 heures. La clairance rénale moyenne est d'environ 3.9 l/h après administration orale. La clairance non rénale représente environ 90% de la clairance totale, ce qui indique que l'élétriptan est essentiellement éliminé par voie métabolique.
+
+Cinétique pour certains groupes de patients
+
+Sexe
+
+Une méta-analyse d'études de pharmacologie clinique et une analyse cinétique de population, basée sur les données d'études cliniques, montrent que le sexe du sujet n'a pas d'influence clinique significative sur la concentration plasmatique d'élétriptan.
+
+Troubles de la fonction hépatique
+
+Chez les volontaires qui présentent un trouble de la fonction hépatique (Child-Pugh A ou B), on a observé une augmentation statistiquement significative de l'ASC (34%) et de la demi-vie. La Cmax a légèrement augmenté (18%). Cette légère différence au niveau de l'exposition n'est pas considérée comme cliniquement pertinente.
+
+Troubles de la fonction rénale
+
+Chez les volontaires atteints d'une insuffisance rénale légère (clairance de la créatinine de 61 à 89 ml/min), modérée (clairance de la créatinine de 31 à 60 ml/min) ou sévère (clairance de la créatinine <30 ml/min), aucune modification statistiquement significative de la pharmacocinétique de l'élétriptan ou de sa liaison aux protéines plasmatiques n'a été observée.
+
+Dans la fourchette des doses thérapeutiques de l'élétriptan, des hausses légères et temporaires de la pression artérielle se sont produites avec des doses de 60 mg et plus. Cet effet était plus marqué chez les patients atteints d'insuffisance rénale et chez les sujets âgés.
+
+Patients âgés (plus de 65 ans)
+
+En comparaison des adultes plus jeunes, on observe chez les patients âgés (de 65 à 93 ans) une légère réduction statistiquement non significative de la clairance (16%) s'accompagnant d'un allongement statistiquement significatif de la demi-vie (qui passe de 4.4 heures à environ 5.7 heures).
+
+Adolescents (de 12 à 17 ans)
+
+Chez les adolescents souffrant de migraine, la pharmacocinétique de l'élétriptan (40 mg et 80 mg), mesurée entre les poussées migraineuses, était similaire à celle observée chez les adultes sains.
+
+Enfants (de 7 à 11 ans)
+
+Chez les enfants, la clairance de l'élétriptan est inchangée en comparaison de celle qui a été mesurée chez les adolescents. Cependant, le volume de distribution est moindre chez les enfants; il s'ensuit qu'à doses égales, les concentrations plasmatiques sont plus élevées que chez les adultes.
+
+Données précliniques
+
+Les données précliniques issues des études conventionnelles sur la pharmacologie de sécurité, la toxicité en administration répétée, la génotoxicité, la carcinogénicité et la toxicité pour la reproduction n'ont pas révélé de risque particulier pour l'homme.
+
+Remarques particulières
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur le récipient.
+
+Remarques particulières concernant le stockage
+
+Conserver à température ambiante (15-25 °C), dans l'emballage d'origine et hors de la portée des enfants.
+
+Numéro d’autorisation
+
+65687 (Swissmedic).
+
+Présentation
+
+Eletriptan Viatris 40 mg: 4, 6 ou 20 comprimés pelliculés. [B]
+
+Eletriptan Viatris 80 mg: 6 ou 20 comprimés pelliculés. [B]
+
+Titulaire de l’autorisation
+
+Viatris Pharma GmbH, 6312 Steinhausen.
+
+Mise à jour de l’information
+
+Janvier 2021.
+
+[Version 101 F]

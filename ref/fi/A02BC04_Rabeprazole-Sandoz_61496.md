@@ -1,0 +1,437 @@
+---
+titre: "Rabéprazole Sandoz®"
+titulaire: "Sandoz Pharmaceuticals AG"
+atc: A02BC04
+substances: "Rabeprazolum natricum"
+autorisation_swissmedic: 61496
+date_version: 2022-09-01
+source: https://files.refdata.ch/simis-public-prod/MedicinalDocuments/cf8d90f22194429c8ac87dfa81d77477-fr.html
+---
+
+Rabéprazole Sandoz®
+
+Sandoz Pharmaceuticals AG
+
+Composition
+
+Principes actifs
+
+Rabeprazolum natricum.
+
+Excipients
+
+Calcii hydroxidum, mannitolum (E421), hydroxypropylcellulosum, natrii stearyli fumaras, hypromellosum substitutum humile, talcum, hypromellosi phthalas, dibutylis sebaceas, ferri oxidum flavum ed rubrum (E172), titanii dioxidum (E171).
+
+1 comprimé à 10mg contient 0,71 mg de sodium et 1 comprimé à 20mg contient 1,42 mg de sodium.
+
+Forme pharmaceutique et quantité de principe actif par unité
+
+Rabéprazole Sandoz 10 mg: 1 comprimé gastro-résistant contient 10 mg de rabéprazole sodique (corresp. à 9,42 mg de rabéprazole).
+
+Rabéprazole Sandoz 20 mg: 1 comprimé gastro-résistant contient 20 mg de rabéprazole sodique (corresp. à 18,85 mg de rabéprazole).
+
+Indications/Possibilités d’emploi
+
+·Œsophagite de reflux symptomatique, érosive ou ulcérative (GORD).
+
+·Traitement à long terme et prophylaxie des récidives chez les patients atteints d'œsophagite de reflux.
+
+·Traitement symptomatique du reflux gastro-œsophagien (pyrosis, éructation acide) sans œsophagite de reflux érosive ou ulcérative.
+
+·Traitement de l'ulcère gastrique et de l'ulcère duodénal florides.
+
+·En association à des antibiotiques appropriés (voir «Posologie/Mode d'emploi»).
+
+·Éradication d'H. pylori chez les patients atteints d'ulcère duodénal ou gastrique ou de gastrite chronique associés à H. pylori.
+
+·Guérison et prévention des récidives d'ulcère duodénal ou gastrique associé à H. pylori.
+
+Posologie/Mode d’emploi
+
+Posologie usuelle
+
+Œsophagite de reflux, érosive ou ulcérative (GORD): Il est recommandé de prendre 10–20 mg 1 fois par jour pendant quatre à huit semaines.
+
+Traitement à long terme et prophylaxie des récidives de lésions de l'œsophage dues à l'acidité: 1 fois par jour 1 comprimé gastro-résistant à 10 mg ou 20 mg.
+
+Traitement symptomatique du reflux gastro-œsophagien: 1 comprimé gastro-résistant à 10 mg 1 fois par jour chez les patients sans œsophagite pendant 4 semaines au maximum. Dans le cas où les symptômes ne pourraient pas être maîtrisés au bout du traitement de 4 semaines, le patient doit alors continuer à être examiné. Si, après disparition des symptômes, ceux-ci réapparaissent à nouveau, ils peuvent être traités au besoin par 10 mg une fois par jour.
+
+Traitement de l'ulcère gastrique et de l'ulcère duodénal florides chez les patients ayant des tests d'Helicobacter pylori négatifs: chez ces patients, on conseille de prendre 20 mg par jour le matin.
+
+L'ulcère duodénal floride guérit dans la plupart des cas en quatre semaines. Dans certains cas, il peut être nécessaire de continuer le traitement pendant quatre semaines de plus jusqu'à la guérison. Un ulcère gastrique guérit la plupart du temps en six semaines, mais dans certains cas, il peut être nécessaire de poursuivre le traitement pendant six semaines de plus.
+
+Éradication d'H. pylori chez les patients atteints d'ulcère gastro-duodénal ou de gastrite chronique associés à H. pylori: un traitement associé à des antibiotiques est conseillé pour l'éradication d'H. pylori. On recommande de traiter pendant 7 jours par l'une des associations suivantes:
+
+Rabéprazole Sandoz 20 mg 2×/jour + clarithromycine 500 mg 2×/jour + amoxicilline 1 g 2×/jour, ou
+
+Rabéprazole Sandoz 20 mg 2×/jour + clarithromycine 500 mg 2×/jour + métronidazole 400 mg 2×/jour.
+
+Vous trouverez les informations relatives à la clarithromycine, à l'amoxicilline ou au métronidazole dans les monographies correspondantes.
+
+Les meilleurs résultats (éradication >90%) ont été atteints avec l'association rabéprazole + clarithromycine + amoxicilline.
+
+Les deux combinaisons de traitement visant l'éradication d'H. pylori ont conduit à la guérison des ulcères duodénaux ou gastriques associés à H. pylori sans que la poursuite d'un traitement antiulcéreux n'ait été nécessaire.
+
+Pour l'éradication d'H. pylori, Rabéprazole Sandoz doit être pris 2× par jour avec deux antibiotiques appropriés.
+
+Indications requérant la prise de Rabéprazole Sandoz 1×/jour: Il est recommandé de prendre Rabéprazole Sandoz le matin avant de déjeuner. Cependant, l'heure à laquelle il est pris n'affecte pas son efficacité, ni d'ailleurs le fait d'avaler le comprimé en mangeant. C'est donc dans le seul but d'améliorer la compliance thérapeutique qu'il est recommandé de prendre le comprimé gastro-résistant le matin à jeun.
+
+Instructions posologiques particulières
+
+Patients présentant des troubles de la fonction hépatique
+
+À posologie similaire, les taux de rabéprazole sodique sont accrus chez les patients souffrant d'une atteinte hépatique légère à modérée par rapport aux personnes en bonne santé (voir «Pharmacocinétique»). Une adaptation posologique n'est pas nécessaire chez ces patients.
+
+Les patients ayant une affection hépatique sévère doivent être traités avec précaution (voir «Mises en garde et précautions»). Chez les patients ayant une affection hépatique sévère, la dose initiale est de 10 mg.
+
+Patients présentant des troubles de la fonction rénale
+
+Aucun ajustement posologique n'est requis chez les patients ayant une altération de la fonction rénale.
+
+Patients âgés
+
+Commencer le traitement avec 10 mg par jour chez les patients âgés.
+
+Enfants et adolescents
+
+L'emploi de Rabéprazole Sandoz n'est pas recommandé chez les enfants, car on ne dispose d'aucune expérience à ce sujet.
+
+Schéma d'administration
+
+Pour l'éradication d'H. pylori, Rabéprazole Sandoz doit être pris 2× par jour avec deux antibiotiques appropriés.
+
+Indications requérant la prise de Rabéprazole Sandoz 1×/jour: Il est recommandé de prendre Rabéprazole Sandoz le matin avant de déjeuner. Cependant, l'heure à laquelle il est pris n'affecte pas son efficacité, ni d'ailleurs le fait d'avaler le comprimé en mangeant. C'est donc dans le seul but d'améliorer la compliance thérapeutique qu'il est recommandé de prendre le comprimé le matin à jeun.
+
+Mode d'administration
+
+Il est important d'informer les patients qu'ils ne doivent ni croquer ni mâcher le comprimé gastro-résistant, mais seulement l'avaler tout entier.
+
+Contre-indications
+
+Rabéprazole Sandoz ne doit pas être utilisé en cas d'hypersensibilité connue au rabéprazole sodique ou à d'autres dérivés benzimidazoliques, ou encore à l'un des excipients de la préparation.
+
+Mises en garde et précautions
+
+Infections gastro-intestinales
+
+Un traitement avec des inhibiteurs de la pompe à protons, y compris avec Rabéprazole Sandoz, peut augmenter le risque d'infections gastro-intestinales p.ex. par des Salmonella, Campylobacter et Clostridium difficile (voir «Propriétés/Effets»).
+
+Malignité préexistante
+
+Même lorsque le rabéprazole sodique entraîne une amélioration au plan symptomatique, l'éventualité d'un néoplasme malin de l'estomac ou de l'œsophage ne peut être écartée: il faut donc exclure toute malignité avant de traiter par Rabéprazole Sandoz.
+
+Troubles graves de la fonction hépatique
+
+Aucun problème de sécurité majeur lié au médicament n'est ressorti lors d'une étude comparant des patients montrant des troubles de la fonction hépatique légers à moyens à un groupe de contrôle identique dans la répartition de l'âge et du sexe.
+
+Une attention accrue est requise surtout en début d'un traitement par Rabéprazole Sandoz chez les patients souffrant d'un trouble sévère de la fonction hépatique (voir «Effets indésirables»). L'AUC de patients atteints d'un trouble significatif de la fonction hépatique est multipliée par deux environ par rapport à celle des patients en bonne santé.
+
+Atteinte rénale
+
+Une néphrite tubulo-interstitielle aiguë (NTI) a été observée chez des patients prenant du rabéprazole. Cet effet indésirable peut survenir à tout moment durant la période de traitement par rabéprazole. Une néphrite tubulo-interstitielle aiguë peut évoluer vers une insuffisance rénale. Le rabéprazole doit être interrompu en cas de suspicion de NTI, et un traitement approprié doit être rapidement instauré.
+
+Fractures
+
+Les inhibiteurs de la pompe à protons, principalement lorsqu'ils sont administrés à forte dose et pendant de longues périodes (>1 an), peuvent augmenter modérément le risque de fractures de la hanche, du poignet et du rachis, en particulier chez les patients âgés ou en présence d'autres facteurs de risque connus. Des études d'observation indiquent que les inhibiteurs de la pompe à protons peuvent augmenter le risque de fracture de 10 à 40%; toutefois, cette majoration du risque peut, en partie, être liée à d'autres facteurs de risque. Les patients présentant un risque d'ostéoporose doivent être traités selon les recommandations pour la pratique clinique en vigueur et doivent recevoir un apport suffisant de vitamine D et de calcium.
+
+Hypomagnésémie
+
+Une hypomagnésémie sévère a été rapportée chez des patients traités avec des inhibiteurs de la pompe à protons tels que le rabéprazole pendant au moins trois mois, et dans la plupart des cas pendant un an. Des manifestations graves d'hypomagnésémie telles qu'états d'épuisement, tétanie, délire, convulsions, sensations de vertige et arythmies ventriculaires peuvent survenir, mais elles peuvent se développer insidieusement et donc passer inaperçues. Chez la plupart des patients atteints, l'hypomagnésémie s'améliore après apport de magnésium et arrêt de l'inhibiteur de la pompe à protons.
+
+Pour les patients qui requièrent un traitement prolongé ou qui prennent les inhibiteurs de la pompe à protons en concomitance avec de la digoxine ou d'autres substances médicamenteuses susceptibles de provoquer une hypomagnésémie (p.ex. les diurétiques), le médecin doit envisager de surveiller les concentrations de magnésium avant de débuter le traitement par les inhibiteurs de la pompe à protons et périodiquement pendant le traitement.
+
+Méthotrexate
+
+La littérature indique que l'administration concomitante d'inhibiteurs de la pompe à protons (IPP) et du méthotrexate (surtout avec de fortes doses de méthotrexate) peut induire des taux sériques élevés et prolongés de méthotrexate et/ou de ses métabolites. Il est possible que la toxicité du méthotrexate en soit augmentée. En cas de posologies élevées de méthotrexate, il est recommandé d'interrompre temporairement l'IPP.
+
+Influence sur l'absorption de la vitamine B12
+
+Comme tous les médicaments inhibant l'acidité gastrique, le rabéprazole sodique peut diminuer l'absorption de la vitamine B12 (cyanocobalamine) en raison d'une hypo- ou achlorhydrie. Il convient d'en tenir compte lors du traitement prolongé de patients dont la réserve endogène est faible ou en présence de facteurs de risque d'une absorption réduite de la vitamine B12 ou encore si l'on observe des symptômes cliniques correspondants.
+
+Lupus érythémateux cutané subaigu (LECS)
+
+Dans de très rares cas, les inhibiteurs de la pompe à protons sont associés à la survenue d'un lupus érythémateux cutané subaigu (LECS). Si des lésions apparaissent, en particulier dans les surfaces cutanées exposées au soleil, et si ces lésions s'accompagnent d'une arthralgie, le patient doit immédiatement recourir à une assistance médicale et le personnel médical devra envisager l'interruption du traitement par Rabéprazole Sandoz. La survenue d'un LECS après traitement antérieur par un inhibiteur de la pompe à protons peut augmenter le risque d'un LECS sous d'autres inhibiteurs de la pompe à protons.
+
+Augmentation du taux de chromogranine A
+
+Pendant un traitement par des médicaments antiacides, la gastrine sérique augmente en réaction à la diminution de la sécrétion acide. Il en va de même pour la chromogranine A (CgA). Or un taux élevé de CgA peut interférer avec les analyses concernant les tumeurs neuroendocrines. La littérature mentionne qu'un traitement par IPP est à interrompre 5 à 14 jours avant le dosage de la CgA dans le cadre d'une investigation ou d'un contrôle de suivi de tumeurs neuroendocrines, l'élévation iatrogène du taux de CgA se normalisant alors dans les 5 à 14 jours, rarement plus tardivement. Le dosage doit être répété si le taux de CgA est encore trop élevé après ce délai.
+
+Polypes des glandes fundiques (bénins)
+
+L'utilisation prolongée d'inhibiteurs de la pompe à protons (IPP) semble s'accompagner d'un risque accru de polypes des glandes fundiques, qui sont asymptomatiques dans la plupart des cas. Les patients présentant des polypes des glandes fundiques de grande taille ou chez lesquels un ulcère s'est formé sont éventuellement exposés à un risque d'hémorragie gastro-intestinale ou d'obstruction de l'intestin grêle. Le traitement par IPP doit être choisi à une dose aussi faible que possible, pendant la durée la plus courte possible.
+
+Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé des deux dosages, c.-à-d. qu'il est essentiellement «sans sodium».
+
+Interactions
+
+Interactions pharmacocinétiques
+
+Système du cytochrome P450
+
+Comme les autres inhibiteurs de la pompe à protons, le rabéprazole sodique est métabolisé dans le foie par le cytochrome P450 (CYP450). Les examens effectués chez des sujets en bonne santé n'ont révélé aucune interaction de nature pharmacocinétique ou cliniquement significative entre le rabéprazole sodique et l'amoxicilline ou d'autres médicaments testés également métabolisés par le système du CYP450 (tels warfarine, phénytoïne, théophylline, diazépam). Cette observation était indépendante du type de métaboliseur des patients par rapport au diazépam.
+
+Les interactions potentielles entre le rabéprazole et les anticoagulants oraux acénocoumarol et phenprocoumone n'ont pas été étudiées.
+
+Interactions suite à une inhibition de la sécrétion d'acide gastrique
+
+Le rabéprazole sodique exerce une inhibition marquée et durable de la sécrétion gastrique d'acide. Puisqu'il est envisageable que ce médicament interagisse avec les substances dont l'absorption est dépendante du pH, il faut, en cas d'administration simultanée de Rabéprazole Sandoz avec des composés de ce type, examiner au cas par cas si une adaptation posologique est requise. Des études ont été effectuées à ce propos chez des sujets en bonne santé. En prises simultanées avec le rabéprazole sodique, le taux sérique du kétoconazole a présenté une baisse de 33%, et celui de la digoxine une hausse de 22%. Les concentrations plasmatiques du rabéprazole et des métabolites actifs de la clarithromycine augmentent de 24% et 50% respectivement après administration simultanée. Cette interaction est considérée comme utile dans l'éradication d'H. pylori. Il n'existe aucune donnée concernant une interaction éventuelle entre le rabéprazole et l'atazanavir. Dans des études cliniques, des antiacides ont été ajoutés au rabéprazole en cas de nécessité; aucune interaction entre le rabéprazole et des antiacides liquides n'a été observée dans une étude spécialement conçue pour répondre à cette question.
+
+Des examens in vitro sur microsomes hépatiques humains ont montré que le rabéprazole sodique est métabolisé par les isoenzymes 2C19 et 3A4 du CYP450 (voir «Pharmacocinétique»). Dans ces études, effectuées aux concentrations plasmatiques de rabéprazole, ce composé n'a pas présenté d'effets inhibiteurs ou inducteurs sur le CYP3A4.
+
+Alimentation
+
+Lorsqu'on prend un repas contenant peu de graisses, on n'a observé, dans une étude japonaise, aucune interaction d'importance clinique entre le rabéprazole et la nourriture. Lorsqu'on prend le rabéprazole en même temps qu'un repas riche en graisses, l'absorption du rabéprazole peut être retardée de jusqu'à 4 heures ou plus, toutefois la Cmax et l'AUC ne sont pas influencées.
+
+Ciclosporine
+
+Lors de tests in vitro d'incubation effectués avec des microsomes hépatiques humains, le rabéprazole a inhibé le métabolisme de la ciclosporine à une CI50 de 62 micromolaires. Cette concentration est 50 fois supérieure à la concentration maximale atteinte chez des volontaires sains après l'administration quotidienne de 20 mg du rabéprazole pendant 14 jours. C'est pourquoi il est en théorie improbable que des interactions d'importance clinique se manifestent. L'ampleur de l'inhibition est comparable à celle de l'oméprazole à des doses équivalentes.
+
+Méthotrexate
+
+Les rapports de cas, les études pharmacocinétiques publiées et les analyses rétrospectives indiquent que l'administration simultanée d'IPP et de méthotrexate (notamment à hautes doses) peut entraîner un taux sérique plus élevé et prolongé du méthotrexate et/ou de son métabolite hydroxyméthotrexate. Aucune étude d'interaction du méthotrexate avec des IPP n'a cependant été effectuée.
+
+Grossesse, allaitement
+
+Grossesse
+
+On ne dispose pas de données concernant la sécurité d'emploi du rabéprazole chez la femme enceinte. Les études de reproduction chez le rat et le lapin n'ont pas démontré de risque fœtal ou de diminution de la fertilité, bien que le rabéprazole sodique traverse en faible quantité la barrière placentaire chez le rat. Rabéprazole Sandoz doit donc être utilisé pendant la grossesse uniquement sur indication stricte.
+
+Allaitement
+
+On ignore si le rabéprazole sodique passe dans le lait maternel humain. Aucune étude n'a été effectuée à ce sujet chez la femme qui allaite. Cependant, chez le rat, le rabéprazole sodique est excrété dans le lait maternel. C'est pourquoi Rabéprazole Sandoz ne sera administré durant l'allaitement que lors d'indication stricte.
+
+Effet sur l’aptitude à la conduite et l’utilisation de machines
+
+Ses propriétés pharmacodynamiques et son profil d'effets secondaires ne permettent pas de suspecter que Rabéprazole Sandoz puisse affecter les capacités de conduire un véhicule ou d'utiliser une machine. Toutefois, en cas de somnolence et de manque d'attention, il est déconseillé de prendre le volant ou d'utiliser une machine compliquée.
+
+Effets indésirables
+
+Les effets indésirables les plus fréquents (incidence ≥5%) observés dans les études cliniques regroupaient céphalées, diarrhée et nausées.
+
+Les effets indésirables suivants ont été observés durant les études cliniques ainsi que lors de l'administration depuis la mise sur le marché. La fréquence est indiquée comme suit:
+
+«très fréquents» (≥1/10), «fréquents» (≥1/100 à <1/10), «occasionnels» (≥1/1000 à <1/100), «rares» (≥1/10'000 à <1/1000), «très rares» (<1/10'000).
+
+Infections et infestations
+
+Fréquents: infections.
+
+Affections hématologiques et du système lymphatique
+
+Occasionnels: neutropénie, leucopénie, thrombopénie, leucocytose.
+
+Rares: anémie.
+
+Affections du système immunitaire
+
+Rares: réactions anaphylactiques
+
+Troubles du métabolisme et de la nutrition
+
+Occasionnels: perte d'appétit
+
+Rares: prise pondérale
+
+Fréquence indéterminée: hypomagnésémie.
+
+Affections psychiatriques
+
+Fréquents: insomnie.
+
+Occasionnels: nervosité, somnolence.
+
+Rares: dépression.
+
+Affections du système nerveux
+
+Fréquents: maux de tête, vertiges.
+
+Affections oculaires
+
+Rares: troubles visuels.
+
+Affections respiratoires, thoraciques et médiastinales
+
+Fréquents: toux, pharyngite, rhinite.
+
+Occasionnels: bronchite, sinusite.
+
+Rares: bronchospasme, asthme.
+
+Affections gastro-intestinales
+
+Fréquents: diarrhées, vomissement, nausée, douleurs abdominales, constipation, ballonnements, polypes des glandes fundiques (bénins).
+
+Occasionnels: dyspepsie, sécheresse buccale, renvois, gastrite.
+
+Rares: stomatite, troubles gustatifs.
+
+Fréquence indéterminée: colite microscopique.
+
+Affections hépatobiliaires
+
+Occasionnels: élévation du taux des enzymes hépatiques.
+
+Rares: hépatite, ictère, encéphalopathie hépatique chez des patients montrant une affection hépatique sévère (voir également «Mises en garde et précautions»).
+
+Affections de la peau et du tissu sous-cutané
+
+Occasionnels: exanthème, prurit, transpiration, érythème généralement réversible après l'arrêt du traitement, œdème périphérique.
+
+Rares: réactions cutanées bulleuses et urticaire généralement réversibles après l'arrêt du traitement.
+
+Très rares: érythème multiforme, nécrolyse épidermique toxique, syndrome de Stevens-Johnson, lupus érythémateux cutané subaigu, réactions allergiques aiguës systémiques comme angioœdème.
+
+Affections musculo-squelettiques et systémiques
+
+Fréquents: douleurs/douleurs dorsales non spécifiques
+
+Occasionnels: douleurs musculaires, crampes du mollet, douleurs articulaires, fracture de la hanche, du poignet ou du rachis; des élévations des CPK ont été rarement signalées.
+
+Affections du rein et des voies urinaires
+
+Occasionnels: infections des voies urinaires.
+
+Rares: néphrite tubulo-interstitielle (avec évolution possible vers une insuffisance rénale).
+
+Affections des organes de reproduction et du sein
+
+Très rares: gynécomastie.
+
+Troubles généraux
+
+Fréquents: fatigue, symptômes de type grippaux.
+
+Occasionnels: douleurs thoraciques, frissons, fièvre.
+
+Une relation avec la prise du rabéprazole n'a toutefois été établie qu'en ce qui concerne les maux de tête, les diarrhées, les douleurs abdominales, la fatigue, les ballonnements, les éruptions cutanées et la sécheresse buccale.
+
+L'annonce d'effets secondaires présumés après l'autorisation est d'une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d'effet secondaire nouveau ou grave via le portail d'annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.
+
+Surdosage
+
+Signes et symptômes
+
+Les doses maximales administrées n'ont pas dépassé 60 mg deux fois par jour ou 160 mg une fois par jour.
+
+Les effets sont généralement minimes et sont réversibles sans intervention médicamenteuse spécifique. Les symptômes lors d'un surdosage correspondent largement au profil connu des effets indésirables.
+
+Traitement
+
+Aucun antidote spécifique n'est connu. Le rabéprazole sodique se lie fortement aux protéines, si bien qu'il n'est pas facilement dialysable. Comme toujours en cas de surdosage, mettre en œuvre un traitement symptomatique et des mesures de soutien.
+
+Propriétés/Effets
+
+Code ATC
+
+A02BC04
+
+Mécanisme d'action
+
+Le rabéprazole sodique appartient à la famille des dérivés antisécrétoires du benzimidazole, qui inhibent la sécrétion d'acides gastriques en bloquant sélectivement l'H+/K+-ATPase (pompe à protons). Cette inhibition dose-dépendante porte aussi bien sur la sécrétion basale que sur la sécrétion stimulée, quel que soit le type de stimulation. Chez l'animal, le rabéprazole sodique disparaît rapidement du plasma et de la muqueuse gastrique. Le rabéprazole étant légèrement basique, il est rapidement absorbé après chaque prise et se concentre dans l'entourage acide des cellules pariétales. Une protonation transforme la molécule en sa forme active, le sulphénamide de rabéprazole, qui réagit alors avec les cystéines de la pompe à protons. Le rabéprazole sodique se présente sous forme racémique. Les études in vitro indiquent que les deux isomères R(+) rabéprazole et S(-) rabéprazole ne diffèrent pas du point de vue de l'activité.
+
+Pharmacodynamique
+
+Activité antisécrétoire
+
+Elle se manifeste dans l'heure qui suit la prise orale de 20 mg de rabéprazole sodique. Vingt-trois heures après la première dose, 69% de la sécrétion de base est inhibée, ainsi que 82% de la sécrétion stimulée par l'alimentation. Cette inhibition peut durer jusqu'à 48 heures.
+
+Les doses répétées de rabéprazole sodique une fois par jour accentuent légèrement son effet inhibiteur, et l'équilibre pharmacocinétique est atteint après trois jours. Une fois le traitement interrompu, l'activité sécrétoire se normalise sur deux à trois jours.
+
+Une diminution de la teneur en l'acide gastrique augmente le nombre des bactéries, qui existent normalement dans le tractus gastro-intestinal. Le traitement avec des inhibiteurs de la pompe à protons peut augmenter le risque d'infections gastro-intestinales, p.ex. par des Salmonella, Campylobacter et Clostridium difficile.
+
+L'Helicobacter pylori a été mis en relation avec des troubles de la sécrétion d'acide gastrique, y compris l'ulcère gastrique et l'ulcère duodénal. Chez ces patients, le rôle d'Helicobacter pylori dans le développement de la gastrite et de l'ulcère est déterminant.
+
+Le rabéprazole a montré in vitro des effets bactéricides vis-à-vis d'Helicobacter pylori. L'éradication d'H. pylori par l'association rabéprazole et antibiotiques a produit une amélioration des lésions muqueuses dans une proportion élevée de cas. L'expérience des études cliniques contrôlées nous enseigne que l'administration de rabéprazole 20 mg 2×/jour sur 1 semaine, en association à deux antibiotiques (p.ex. clarithromycine et amoxicilline ou clarithromycine et métronidazole, administrés aux doses autorisées) à des patients atteints d'ulcère gastro-duodénal permet d'éradiquer H. pylori à plus de 80%. Comme prévu, les patients chez lesquels des H. pylori résistants au métronidazole ont été isolés au début du traitement ont eu tendance à présenter des taux d'éradication plus bas et à développer des résistances secondaires. C'est pourquoi le choix d'un traitement combiné adéquat pour l'éradication d'H. pylori doit tenir compte des informations locales sur la prévalence des résistances ainsi que des directives thérapeutiques locales. Chez les patients atteints d'infections persistantes, il faut en outre tenir compte du risque de développement de résistances secondaires à un agent antibactérien (dans des souches initialement sensibles).
+
+Efficacité clinique
+
+Effets sur les taux sériques de gastrine
+
+En essais cliniques, les patients ont été traités par 10 ou 20 mg de rabéprazole sodique une fois par jour jusqu'à 43 mois au maximum. La concentration de gastrine sérique a augmenté dans la période de deux à huit semaines suivant le début du traitement, en réponse à l'inhibition de la sécrétion d'acide. Elle est restée stable pendant la suite du traitement. À l'arrêt du traitement, cette concentration est revenue aux valeurs initiales, le plus souvent en l'espace d'une à deux semaines.
+
+Autres activités
+
+Aucune action systémique du rabéprazole sodique n'a été observée jusqu'ici sur le SNC, le système cardio-vasculaire ou le système respiratoire. De même, l'administration p.o. de 20 mg/jour de rabéprazole sodique pendant deux semaines n'a pas affecté la fonction thyroïdienne, le métabolisme des hydrates de carbone, ni les concentrations circulantes de parathormone, cortisol, estrogène, testostérone, prolactine, cholécystokinine, sécrétine, glucagon, hormone folliculostimulante (FSH), hormone lutéinisante (LH), rénine, aldostérone ou somatotropine.
+
+Pharmacocinétique
+
+Absorption
+
+Rabéprazole Sandoz est un comprimé gastro-résistant de rabéprazole sodique. Cette formulation s'avère indispensable en raison de la grande instabilité du rabéprazole sodique en milieu acide. L'absorption du rabéprazole sodique ne débute que lorsque le comprimé gastro-résistant a quitté l'estomac, et elle est rapide: le pic plasmatique (Cmax) de rabéprazole sodique est atteint 3,5 heures environ après une prise de 20 mg. La Cmax et l'AUC du rabéprazole sodique sont linéaires aux doses allant de 10 à 40 mg. La biodisponibilité absolue d'une dose orale de 20 mg n'atteint que 52% environ de celle après administration i.v., ce qui s'explique avant tout par un métabolisme pré-systémique. La biodisponibilité ne diminue pas lors de prises répétées.
+
+L'absorption du rabéprazole sodique n'est pas influencée par la nourriture ou l'heure de la prise.
+
+Distribution
+
+Le rabéprazole sodique se trouve lié à près de 97% aux protéines plasmatiques.
+
+Métabolisme
+
+Après administration orale d'une dose unique de 20 mg de rabéprazole sodique marqué au 14C, le composé est excrété dans les urines sous forme métabolisée uniquement. Environ 90% de la dose métabolisée se retrouve dans les urines principalement sous deux formes: l'une conjuguée à l'acide mercapturique (M5) et l'autre à l'acide carbonique (M6). Il existe en outre deux autres formes non identifiées.
+
+Élimination
+
+Le reste de la dose est retrouvé dans les fèces. Chez le sujet en bonne santé, la demi-vie plasmatique est d'une heure environ (intervalle: 0,7–1,5 h), et la clairance corporelle totale est évaluée à 283 ± 98 ml/min.
+
+Cinétique pour certains groupes de patients
+
+Troubles de la fonction hépatique
+
+Après une dose unique de 20 mg de rabéprazole, les patients atteints d'insuffisance hépatique légère à modérée présentent une AUC doublée par rapport aux sujets en bonne santé, et une demi-vie plasmatique 2–3 fois plus longue. En revanche, après des doses répétées de 20 mg de rabéprazole pendant une semaine, l'AUC n'est plus que 1,5 fois plus élevée et la Cmax 1,2 fois. En cas de troubles hépatiques, la demi-vie du rabéprazole est de 12,3 h, comparé à 2,1 h chez le sujet en bonne santé. La pharmacodynamie du médicament (contrôle du pH gastrique) est cliniquement comparable dans les deux cas.
+
+La dose quotidienne de 20 mg de rabéprazole sodique a été bien tolérée par les patients souffrant d'une cirrhose chronique compensée, bien que l'AUC soit multipliée par deux environ et que la Cmax augmente de 50% (par rapport à des volontaires sains de même sexe).
+
+Troubles de la fonction rénale
+
+Chez les patients en insuffisance rénale chronique terminale exigeant des dialyses périodiques (clairance de la créatinine ≤5 ml/min/1,73 m²), les taux sériques du rabéprazole sont tout à fait similaires à ceux mesurés chez le sujet en bonne santé. Cependant, chez ces patients, l'AUC et la Cmax sont réduites de 35% environ par rapport aux volontaires sains. Chez ce dernier, la demi-vie moyenne du rabéprazole est de 0,82 h. Elle est de 0,95 h chez les patients pendant la dialyse et passe à 3,6 h après celle-ci.
+
+Chez les insuffisants rénaux nécessitant des dialyses, la clairance du rabéprazole est à peu près doublée par rapport à celle des volontaires en bonne santé.
+
+Patients âgés
+
+L'élimination du rabéprazole est légèrement ralentie chez le patient âgé. Après des doses répétées de 1 fois 20 mg/jour de sodium de rabéprazole pendant une semaine, l'AUC atteint près du double de celle observée chez le sujet jeune et en bonne santé, la Cmax augmente de près de 60% et la t½ de près de 30%. Aucune accumulation de rabéprazole n'est observée.
+
+Polymorphismes génétiques
+
+Polymorphisme du CYP2C19: après des doses répétées de 20 mg/jour de rabéprazole pendant une semaine, les métaboliseurs lents (CYP2C19) présentent une AUC environ 1,9 fois plus élevée que les métaboliseurs rapides, et une t½ 1,6 fois plus élevée. En revanche, la Cmax n'augmente que de 40% environ.
+
+Données précliniques
+
+Des effets secondaires n'ont été observés qu'après exposition à des doses largement supérieures aux doses maximales utilisées chez l'homme, de sorte que les effets notés chez l'animal sont négligeables au regard de la sécurité d'emploi chez l'homme.
+
+Les études de mutagenèse ont conduit à des résultats contradictoires. Les tests effectués sur un lignage de cellules de lymphome de souris ont été positifs, alors que le test du micronoyau in vivo ainsi que les tests de réparation d'ADN in vivo et in vitro ont conduit à des résultats négatifs. Les études de cancérogenèse n'ont pas révélé de risque particulier pour l'homme.
+
+Les principales modifications non néoplasiques se sont limitées à l'estomac et ont consisté en un épaississement de la muqueuse, des cellules principales éosinophiles, une gastropathie d'hyperfonctionnement fundique et une hyperplasie des cellules neuroendocrines dans la muqueuse fundique. En général, la fréquence de ces modifications était dose-dépendante et correspondait aux effets pharmacologiques, antisécrétoires et hypergastrinémiques escomptés lors d'un traitement au long cours.
+
+Remarques particulières
+
+Influence sur les méthodes de diagnostic
+
+Hormis quelques cas d'augmentation des enzymes hépatiques, aucun changement notable des données de laboratoire n'a pu être attribué à l'utilisation de rabéprazole.
+
+Stabilité
+
+Le médicament ne doit pas être utilisé au-delà de la date figurant après «EXP» sur l'emballage.
+
+Remarques particulières concernant le stockage
+
+Conserver dans l'emballage original, à température ambiante (15–25°C) et hors de la portée des enfants.
+
+Numéro d’autorisation
+
+61496 (Swissmedic)
+
+Présentation
+
+Rabéprazole Sandoz 10 mg: emballages à 14, 28 et 56 comprimés gastro-résistants. [B]
+
+Rabéprazole Sandoz 20 mg: emballages à 7, 14, 28 et 56 comprimés gastro-résistants. [B]
+
+Titulaire de l’autorisation
+
+Sandoz Pharmaceuticals SA, Risch; domicile: Rotkreuz
+
+Mise à jour de l’information
+
+Septembre 2022
