@@ -1,0 +1,94 @@
+{
+  "mission": "A41 / I-03-Infectiologie : deux réserves documentaires historiques",
+  "consultation_date": "2026-10-08",
+  "client_timezone": "Europe/Zurich",
+  "declared_repository_head": "2f4a7db",
+  "scope": "read-only repository; scratch only",
+  "input_sha256": {
+    "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/sources/chapters/A41/A41_d.html": "96d550742913a8e154475f03d9652587701f92e6758805037165514dd9177d69",
+    "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/sources/chapters/A41/A41_pop_pa.html": "f383ad214398215420af0474e35d53478a6688bbfea14721ff3c8c9bba1e560d",
+    "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/sources/chapters/A41/A41_pop2.html": "cfe80b9362dbbe51519a8aca385b9a2cbbc9076acea486e0bd9aa2dee344d0be"
+  },
+  "decisions": [
+    {
+      "id": "gentamicine_eau",
+      "status": "confirmé",
+      "localisation": [
+        "A41_d.html:32",
+        "A41_pop2.html:data-pop=a41-genta"
+      ],
+      "action": "Préciser tableau 6, pyélonéphrite, et réserve de monothérapie. Conserver la séparation EAU / notice Nardia."
+    },
+    {
+      "id": "nardia_fi_current_primary",
+      "status": "nonvérifié",
+      "detail": "FI officielle ShowText non accessible directement ; contenu conventionnel corroboré par miroir intégral, date corroborée par registre officiel AIPS. Aucun mismatch constaté."
+    },
+    {
+      "id": "dobutrex_asthme_sulfites",
+      "status": "confirmé",
+      "localisation": [
+        "A41_d.html:41",
+        "A41_pop2.html:data-pop=a41-dobutamine"
+      ],
+      "action": "Conserver la contre-indication propre à Dobutrex ; ne pas la généraliser à toute préparation de dobutamine."
+    }
+  ],
+  "source_access": [
+    {
+      "url": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+      "kind": "official guideline full HTML",
+      "access": "read",
+      "locator": "3.6.3, Table 6; 3.4.4.c.2; 3.9"
+    },
+    {
+      "url": "https://uroweb.org/guidelines/urological-infections/chapter/citation-information",
+      "kind": "official edition identification",
+      "access": "read",
+      "locator": "2026 congress edition, ISBN 978-94-92671-32-5"
+    },
+    {
+      "url": "https://www.swissmedicinfopro.ch/NewTexts.aspx",
+      "kind": "official AIPS publication register",
+      "access": "read",
+      "locator": "Gentamicin Nardia / August 2024 / published 02.09.2026"
+    },
+    {
+      "url": "https://compendium.ch/sf/product/1029154-dobutrex-inf-los-250-mg-50ml/mpro",
+      "kind": "Swissmedic-approved professional information, indexed Compendium response",
+      "access": "FI body read in indexed search response; direct open only short product page",
+      "locator": "Zusammensetzung; Kontraindikationen; Juni 2023; auth 45687"
+    },
+    {
+      "url": "https://amiko.oddb.org/de/fi?anchor=Section9053&gtin=70800&highlight=SAPP",
+      "kind": "secondary mirror of full Nardia professional information",
+      "access": "read",
+      "locator": "Dosierung; conventional monitoring; auth 70800; August 2024; mirror generation 2026-10-08"
+    },
+    {
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=70800",
+      "kind": "official professional information direct",
+      "access": "not accessible through web tool"
+    },
+    {
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=45687",
+      "kind": "official professional information direct",
+      "access": "not accessible through web tool"
+    },
+    {
+      "url": "https://compendium.ch/product/32605/mpro?idType=monographienumber",
+      "kind": "Nardia professional information target from Compendium news",
+      "access": "direct open only product short page"
+    },
+    {
+      "url": "https://compendium.ch/news/newmonographies",
+      "kind": "publication news register",
+      "access": "read",
+      "locator": "Nardia publication 04.09.2026, distinct from professional-text date"
+    }
+  ],
+  "repository_files_written": [],
+  "canonical_medical_files_written": [],
+  "fragment_audit_status_changed": false,
+  "input_files_unchanged_at_report_completion": true
+}

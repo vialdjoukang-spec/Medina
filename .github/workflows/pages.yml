@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.x"
+          python-version: "3.12"
       - uses: actions/setup-node@v7
         with:
           node-version: "lts/*"
@@ -44,7 +44,7 @@ jobs:
         run: |
           python build_front.py
           python build_front.py --all-fragments
-          python tools/build_work_preview.py --output dist/apercus/infectiologie.html
+          python tools/build_fragment_work_preview.py --output dist/apercus/infectiologie.html
       - name: Assembler le site
         run: |
           mkdir -p _site/fragments _site/apercus
@@ -53,6 +53,23 @@ jobs:
           cp dist/apercus/*.html _site/apercus/
           python build_index.py --fragments-dir _site/fragments --output _site/index.html
           python tools/build_organisation.py --output _site/organisation.html
+      - name: Installer Chromium pour contrôler les cours en rédaction
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Contrôler l’aperçu Infectiologie sur ordinateur et mobile
+        run: |
+          python tests/verify_fragment_work_preview.py \
+            --url "file://$GITHUB_WORKSPACE/_site/apercus/infectiologie.html" \
+            --sources "livraisons/Livraison Codex/I-03-Infectiologie/travail/PRODUCTION_FRAGMENT_2026-10-08/sources" \
+            --output _site/apercus/controle
+      - name: Conserver les captures et le rapport de lecture
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: controle-cours-infectiologie
+          path: _site/apercus/controle
+          if-no-files-found: warn
       - name: Auditer les fragments
         env:
           MEDINA_FRAGMENTS: ${{ github.workspace }}/_site/fragments
