@@ -66,7 +66,7 @@ Destinataires : **Claude Code** (modèle Opus 5.5 à la demande de Vial) et **Co
 
 ## 6 bis. Précisions de Vial (8 octobre 2026, suite)
 
-- **Captures de chaque chapitre (règle renforcée)** : au moins 3 captures dans chacun des 4 onglets du chapitre (début, milieu, fenêtre ouverte), plus une vue mobile, affichées directement dans la conversation, pour Claude et pour Codex (`tools/captures_chapitre.py`).
+- **Captures de chapitre** : règle levée par Vial le 8 octobre 2026 (« plus besoin de Capture »).
 - **Captures d’écran à chaque livraison** : toute livraison montrée à Vial est accompagnée de captures réelles du rendu (ordinateur et mobile), produites dans un navigateur et envoyées directement dans la conversation.
 - **Tout évoquer, sans bavardage** : un chapitre peut aborder toute notion utile, mais chaque phrase doit apporter une information, un mécanisme ou une décision. Aucun remplissage, aucune transition creuse, aucune répétition.
 - **Sémiologie CS dans tous les fragments concernés** : le module « Sémiologie CS » (compétences cliniques d’examen et d’interrogatoire), aujourd’hui présent en cardiologie, est produit pour **chaque fragment où il s’applique** (pneumologie, gastroentérologie, neurologie, endocrinologie, néphrologie, hématologie, gynécologie, obstétrique, rhumatologie et orthopédie, urologie, dermatologie, ORL, ophtalmologie, urgences, médecine des âges de la vie, etc.). Il fait partie de la complétude du fragment, figure dans sa navigation et suit le modèle `modules/cardiovascular_cs.*`. Les fragments sans examen clinique propre (par exemple éthique et droit) en sont dispensés après justification écrite.

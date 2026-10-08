@@ -1,6 +1,6 @@
-## RÈGLE OBLIGATOIRE EN VIGUEUR — captures de chaque chapitre (Vial, 8 octobre 2026, dernière fois)
+## Captures de chapitre — règle levée (Vial, 8 octobre 2026)
 
-**Chaque chapitre développé = au moins 3 captures dans chacun de ses 4 environnements** (Pathologie, Examens, Sciences, Pharmacologie : début, milieu, fenêtre ouverte), plus une vue mobile, **affichées directement dans la conversation avec Vial**, naturellement, sans attendre qu’il les demande. Aucun chapitre n’est livré, remis ni annoncé sans elles. Outil : `python3 tools/captures_chapitre.py <fragment.html> <CODE> <dossier>`. Claude Code **et Codex** y sont tenus (cumul, R-19.8 et R-19.9).
+Vial : « plus besoin de Capture ; continue la production de cours comme à l’accoutumé, terme interactif cliquable et respect des instructions ». Les captures systématiques par chapitre (ancienne R-19.8/R-19.9) ne sont plus exigées, ni pour Claude ni pour Codex ; toutes les autres règles du cumul restent obligatoires.
 
 ## À LIRE EN PREMIER — cumul OBLIGATOIRE des instructions Claude Code et Codex (8 octobre 2026)
 
