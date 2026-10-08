@@ -15,12 +15,15 @@ Sans --ecrire, rien n'est écrit et le bilan est affiché. --sur-livraison appli
 (par exemple ESC 2026) sur une copie déjà livrée ; un fichier pop cible absent est créé.
 """
 import json
+import os
 import pathlib
 import re
 import sys
 
 ICI = pathlib.Path(__file__).resolve().parent
 LIVR = ICI.parents[1]
+# MEDINA_LOT désigne un dossier de lot (livraison.json + sources/) distinct du dossier du fragment.
+LIVR_LOT = pathlib.Path(os.environ["MEDINA_LOT"]).resolve() if os.environ.get("MEDINA_LOT") else LIVR
 DEPOT = LIVR.parents[2]
 
 NOM = r"(?:Mc|Mac|de |van der |van |Van )?[A-ZÀ-Ý][a-zà-ÿ’'\-]+(?:[ -][A-ZÀ-Ý][a-zà-ÿ’'\-]+)?"
@@ -52,10 +55,10 @@ def dans_balise(texte, pos):
 def main():
     code, res = sys.argv[1], pathlib.Path(sys.argv[2])
     ecrire = "--ecrire" in sys.argv
-    copies = LIVR / "sources" / "chapters" / code
+    copies = LIVR_LOT / "sources" / "chapters" / code
     canon = DEPOT / "chapters" / code
     noms = sorted(p.stem for p in canon.glob("*.html"))
-    declares = {r["target_path"] for r in json.loads((LIVR / "livraison.json").read_text())["files"]}
+    declares = {r["target_path"] for r in json.loads((LIVR_LOT / "livraison.json").read_text())["files"]}
 
     def lire(n):
         c = copies / f"{n}.html"
