@@ -1,3 +1,7 @@
+## Exigences cumulées — à relire à chaque reprise
+
+Lire [EXIGENCES_VIAL_2026-10-08.md](docs/collaboration/EXIGENCES_VIAL_2026-10-08.md) : rédaction et revue en Opus au niveau premium, style direct et concis, fenêtres cliquables, Atkinson Hyperlegible Next, contraste élevé, couleurs vives par spécialité et par catégorie, chapitres sur deux colonnes, thème clair, captures d’écran pendant le travail. Ces exigences priment sur les consignes de typographie et de couleurs antérieures.
+
 ## Consigne frontend active — 8 octobre 2026
 
 Vial demande un accès visuel aux cours, un accueil clair et agréable et une refonte majeure du frontend. **Chaque fragment possède son HTML et sa navigation propres, limités au contenu de sa spécialité.** Les cartes de catégories sont sobres, sur fond clair, avec un relief 3D discret ; la police par défaut est **Anthropic Serif authentique**, embarquée hors ligne. Le lecteur peut adapter sa police et sa taille. La classification frontend est centralisée dans `fragment_surface.py` ; les anciens rattachements anatomiques ne doivent pas réintroduire un cours étranger. L’aperçu de rédaction A41 est une consultation explicitement marquée « Version de travail » sous `apercus/infectiologie.html`, sans injection canonique, sans certification finale et sans remise pour audit du fragment incomplet. Lire `docs/collaboration/FRONTENDS_2026-10-08.md`.
