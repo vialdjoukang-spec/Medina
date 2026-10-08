@@ -284,7 +284,32 @@ document.getElementById('medina-work-categories-link').addEventListener('click',
   requestAnimationFrame(show);
 });
 </script>'''
-    source = source.replace('</body>', category_jump + '</body>', 1)
+    entry_scroll = '''<script id="medina-t1-entry-scroll">
+(()=>{
+  let lastCode='';
+  const routeCode=()=>location.hash.match(/^#\\/entry\\/([A-Z][0-9]{2})(?:$|[/?#])/)?.[1]||'';
+  const alignEntry=()=>{
+    const code=routeCode();
+    if(!code){lastCode='';return;}
+    if(code===lastCode)return;
+    lastCode=code;
+    let tries=0;
+    const whenMounted=()=>{
+      if(routeCode()!==code)return;
+      if(document.querySelector('.mc[data-code="'+code+'"]')){
+        requestAnimationFrame(()=>{if(routeCode()===code)window.scrollTo(0,0)});
+        return;
+      }
+      if(++tries<120)requestAnimationFrame(whenMounted);
+    };
+    requestAnimationFrame(whenMounted);
+  };
+  addEventListener('hashchange',alignEntry);
+  addEventListener('load',alignEntry);
+  alignEntry();
+})();
+</script>'''
+    source = source.replace('</body>', category_jump + entry_scroll + '</body>', 1)
     return source
 
 
