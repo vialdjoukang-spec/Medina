@@ -336,3 +336,8 @@ Les quatre cours supplémentaires I47 — Tachycardies paroxystiques supraventri
 ## Réception J45-2 — tête c3dd8cd
 
 La remise Claude `2026-10-08-J45-2` pour **J45 — Asthme (P-02-Pneumologie)** est reçue et archivée. Les neuf propositions et les neuf baselines sont exactes sur le main contrôlé `883869c`; sept sources changent réellement depuis J45 v1, deux sont identiques. J45-MED-01 est substantiellement levée par lecture des informations professionnelles suisses ciblées. L'injection reste bloquée par des affirmations ERS 2018 non primairisées sur les tests indirects/mannitol et par l'absence de relecture exhaustive. Aucun fichier canonique, route, attribution ou chapitre actif n'est modifié par cette réception.
+
+
+## Archive de la campagne 15/15 des 7–8 octobre 2026
+
+Le [bilan historique](CODEX_CAMPAGNE_15_15_2026-10-08.md) distingue les ajouts intégrés des revues exhaustives encore ouvertes. Les [vingt-deux exports P1B et inventaires intégraux](SOURCES_ARCHIVES_P1B.md) sont conservés dans des dossiers datés. La [réception événementielle des futures PR Claude](AUTOMATION_RECEPTION_CLAUDE.md) est activée ; chaque injection conserve ses contrôles et son reçu. Ces archives ne remplacent pas le plan opérationnel ni les sources actuelles ci-dessus.
