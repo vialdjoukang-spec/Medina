@@ -251,3 +251,17 @@ c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
 
 - **Test S01.** `verify_s01_browser.cjs` écrit un résultat déterministe, sans date ni empreinte. Deux exécutions réussies produisent donc le même blob, ce qu'a constaté Codex. Le test a été rejoué le 8.10.2026 entre 01:07:17 et 01:07:33 UTC, sur une nouvelle construction de la simulation `main` `625fddb`. `controles/s01_attestation_v5.json` en donne l'attestation : empreinte du S01 testé (`76753e9b…`), empreintes des huit sources I83 courantes, empreintes de `chapters.json` et du test, sortie brute. Résultat : 72 contrôles, 0 erreur.
 - **Sources suisses.** `PREUVES_SOURCES_SUISSES.md` réunit les empreintes des copies lues, les adresses publiques et les extraits : Rapidocain (Swissmedic 20272 et 32381, juillet 2024) et lignes de la liste des spécialités du 1.10.2026. Les preuves d'Aethoxysklerol restent dans `PREUVE_AETHOXYSKLEROL_COMPRESSION.md`.
+
+
+## Addendum 6 — 8 octobre 2026 : réponse à la réception Codex `31b086a`
+
+- **Simulation sur le `main` courant `31b086a938a4b5acfdcda7ad12a2908e4de42dde`**, exécutée le 8.10.2026 de 01:18:38 à 01:22:43 UTC :
+  - test statique OK, sigles `{}`, tests unitaires OK ;
+  - 22 fragments reproductibles, `test_v7 I83` OK ;
+  - test natif I83 : 1 923 contrôles, 0 échec ;
+  - S01 : 72 contrôles, `passed`.
+
+  Le journal complet, avec horodatage et empreintes du S01 construit, des huit sources, de `chapters.json` et du test, se trouve dans `controles/simulation_main_31b086a_JOURNAL.txt`. L'empreinte du S01 construit est identique à celle de la simulation sur `625fddb`, car les commits intermédiaires de `main` ne touchent pas les sources du fragment.
+- **Données primaires remises.**
+  - `preuves/ofsp_liste_specialites_20261001_veinotropes.ndjson` : les sept enregistrements FHIR complets de la publication OFSP du 1.10.2026 qui concernent les veinotropes (produit, autorisation, prix et quote-part, sans limitation). Ce sont des données publiques de l'administration fédérale, recopiées sans modification depuis l'archive dont l'empreinte est donnée dans `PREUVES_SOURCES_SUISSES.md`.
+  - `preuves/rapidocain_extraits.md` : sections Posologie, Contre-indications, Mises en garde et Surdosage de l'information professionnelle suisse de Rapidocain, recopiées sans modification.
