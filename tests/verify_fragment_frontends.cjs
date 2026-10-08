@@ -49,6 +49,8 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
     await page.locator('.mc-tabs button').first().click();
     const word=page.locator('.mc-panel:not([hidden]) .mc-w[data-k]').first();if(await word.count()){await word.click();await page.locator('.mc-dlg[open]').waitFor();check(f.id+' : fenêtre explicative accessible',await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()!=='');await page.keyboard.press('Escape')}
    }
+   await page.goto(url+'#/method');await page.locator('.mcg-search-heading').waitFor();
+   check(f.id+' : repères de lecture propres à la spécialité',(await page.locator('#content').innerText()).includes(O.fragment.display_name)&&!(await page.locator('#content').innerText()).includes('67 spécialités'));
    await page.setViewportSize({width:390,height:844});await page.goto(url+'#/home');await page.locator('.mcg-cover').waitFor();await noOverflow(page,f.id+' accueil mobile');
    await page.locator('#menu-toggle').click();check(f.id+' : menu mobile accessible',await page.locator('#menu-toggle').getAttribute('aria-expanded')==='true');
    await page.keyboard.press('Escape');check(f.id+' : menu mobile refermable',await page.locator('#menu-toggle').getAttribute('aria-expanded')==='false');
