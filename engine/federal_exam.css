@@ -1,0 +1,17 @@
+/* MEDINA — bouton « Isolate Federal – CH Exam » : surbrillance « poudre d'or », thème clair exclusif. */
+#medina-federal-toggle{display:inline-flex;align-items:center;gap:7px;margin-left:auto;padding:7px 13px;border:1.5px solid #9a7412;border-radius:999px;background:#fffaf0;color:#4a3500;font:700 13px/1.1 'Atkinson Hyperlegible Next',Georgia,serif;letter-spacing:.01em;cursor:pointer;white-space:nowrap}
+#medina-federal-toggle:hover{background:#fff1c9}
+#medina-federal-toggle:focus-visible{outline:3px solid #1f3428;outline-offset:2px}
+#medina-federal-toggle[aria-pressed="true"]{background:linear-gradient(135deg,#f9e08a,#e9bd3c 55%,#f7dc7c);color:#2b1d00;border-color:#7a5a00;box-shadow:0 0 0 2px #fff6d6,0 2px 8px rgba(154,116,18,.35)}
+#medina-federal-toggle .mfx-star{color:#9a7412}
+#medina-federal-toggle[aria-pressed="true"] .mfx-star{color:#5a3f00}
+html.medina-federal-on[data-medina-fragment][data-medina-fragment] body .mfx-gold,html.medina-federal-on[data-medina-fragment][data-medina-fragment] body .mcg-block .mcg-lesson.mfx-gold,html.medina-federal-on[data-medina-fragment][data-medina-fragment] body .mcg-block .mcg-lesson.mfx-gold:has(.is-available){position:relative;background-color:#fff4cf !important;background-image:radial-gradient(circle at 12% 30%,rgba(255,255,255,.95) 0 1.2px,transparent 2px),radial-gradient(circle at 38% 72%,rgba(255,250,220,.9) 0 1px,transparent 1.8px),radial-gradient(circle at 66% 22%,rgba(255,255,255,.95) 0 1.3px,transparent 2.1px),radial-gradient(circle at 88% 64%,rgba(255,248,210,.9) 0 1px,transparent 1.8px),linear-gradient(120deg,#fff6d8 0%,#f6dc84 40%,#fbe9a8 60%,#f1cf62 100%) !important;background-size:46px 46px,58px 58px,64px 64px,52px 52px,100% 100% !important;border-color:#b8891a !important;box-shadow:0 0 0 1.5px #d9ac35,0 3px 10px rgba(184,137,26,.28) !important;color:#2b1d00 !important;animation:mfx-dust 6s linear infinite}
+html.medina-federal-on[data-medina-fragment][data-medina-fragment] body .mfx-gold :not(.mcg-code):not(.mcg-code *){color:#2b1d00!important}html.medina-federal-on[data-medina-fragment][data-medina-fragment] body .mfx-gold a{text-decoration-color:#7a5a00!important}
+.medina-federal-on .mfx-gold::after{content:'★ Examen fédéral';position:absolute;top:6px;right:8px;padding:1px 7px;border-radius:999px;background:#7a5a00;color:#fff;font:700 10px/1.5 'Atkinson Hyperlegible Next',Georgia,serif;pointer-events:none}
+.medina-federal-on a.mcg-sidebar-lesson.mfx-gold::after{content:'★';top:50%;transform:translateY(-50%);padding:0 5px}
+.medina-federal-on [data-mcg-lesson]:not(.mfx-gold),.medina-federal-on a.mcg-sidebar-lesson:not(.mfx-gold){opacity:.78}
+.mfx-count{display:none}
+.medina-federal-on .mfx-count{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;background:#7a5a00;color:#fff;font:700 11px/1.5 'Atkinson Hyperlegible Next',Georgia,serif}
+@keyframes mfx-dust{from{background-position:0 0,0 0,0 0,0 0,0 0}to{background-position:46px 46px,-58px 58px,64px -64px,-52px -52px,0 0}}
+@media (prefers-reduced-motion:reduce){.medina-federal-on .mfx-gold{animation:none}}
+@media (max-width:640px){#medina-federal-toggle{padding:6px 9px;font-size:12px}#medina-federal-toggle .mfx-label-long{display:none}}

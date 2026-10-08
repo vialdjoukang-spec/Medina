@@ -1,3 +1,7 @@
+## Consigne la plus récente — chaîne continue, 8 octobre 2026
+
+Lire d’abord [CONSIGNES_VIAL_2026-10-08_CHAINE_CONTINUE.pdf](docs/collaboration/instructions/CONSIGNES_VIAL_2026-10-08_CHAINE_CONTINUE.pdf) (source `.md` au même endroit) : il s’applique à Claude et à Codex. **Processus continu sans attendre de relance ; arrêt seulement après remise de tous ses fragments ou sur STOP de Vial ; une correction demandée passe en priorité puis la production reprend.** Claude achève toutes les catégories CIM de C-01-Cardiologie puis remet le fragment à Codex. **Chaque fragment, Claude ou Codex : toutes les catégories CIM reçoivent un cours, aucune lacune.** Sous-agents parallèles par catégorie, un auteur par fichier. Bouton « Isolate Federal – CH Exam » : `organisation/federal_exam.json`, `engine/federal_exam.*`. Pile visible : `organisation/PILE_FRAGMENTS.html` (`tools/pile_fragments.py`).
+
 # MEDINA — coordination des 22 fragments
 
 Instruction reçue le **8 octobre 2026** : Vial demande de lire `Prompt_Codex.pdf` et de continuer. Le [protocole actif](docs/collaboration/PROTOCOLE_FRAGMENTS_2026-10-08.md) remplace les règles incompatibles de progression par remise d’un chapitre, d’audit après injection et de réouverture après injection. L’arrêt Codex antérieur est levé par cette demande de reprise. Les veilles automatiques restent en pause.

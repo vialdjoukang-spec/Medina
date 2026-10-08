@@ -401,4 +401,10 @@ def finish_surface(source, fragment, root):
     atlas_css = (Path(root) / 'engine/atlas_v2.css').read_text(encoding='utf-8')
     source = source.replace('</head>', '<style id="medina-atlas-v2">' + faces + atlas_css + '</style></head>', 1)
     source = source.replace('</body>', '<script id="medina-category-organisation-data" type="application/json">' + payload + '</script><script id="medina-category-organisation-runtime">' + category_js + '</script><script id="medina-atlas-v2-runtime">' + (Path(root) / 'engine/atlas_v2.js').read_text(encoding='utf-8') + '</script></body>', 1)
+    federal = json.loads((Path(root) / 'organisation/federal_exam.json').read_text(encoding='utf-8'))
+    federal_payload = json.dumps({'fragment': fragment['id'], 'button': federal['button'],
+                                  'codes': federal['fragments'].get(fragment['id'], {}).get('codes', {})},
+                                 ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
+    source = source.replace('</head>', '<style id="medina-federal-css">' + (Path(root) / 'engine/federal_exam.css').read_text(encoding='utf-8') + '</style></head>', 1)
+    source = source.replace('</body>', '<script id="medina-federal-data" type="application/json">' + federal_payload + '</script><script id="medina-federal-runtime">' + (Path(root) / 'engine/federal_exam.js').read_text(encoding='utf-8') + '</script></body>', 1)
     return source
