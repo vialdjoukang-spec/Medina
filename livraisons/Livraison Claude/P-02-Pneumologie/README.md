@@ -18,3 +18,10 @@ Sources communes : [chapters.json](https://github.com/vialdjoukang-spec/Medina/b
 | I26 | Embolie pulmonaire aiguë |
 
 L'existence d'un cours ou de catégories CIM-10 ne certifie pas une couverture CIM-11 complète. Les textes sont intégrés dans les dossiers canoniques, puis les fragments sont reconstruits et contrôlés.
+
+## Réceptions du 8 octobre 2026
+
+- `lots/2026-10-08-PR20-349EFD5-J09/` conserve la relecture Claude de **J09 — Grippe** avec ses neuf sources et son rapport. Statut : reçu, non intégré ; le fragment P-02 reste incomplet sous le protocole actif.
+- `lots/2026-10-08-PR20-69E5C11-J96-BROUILLON/` conserve les cinq fichiers présents de **J96 — Insuffisance respiratoire** aux commits `69e5c11` puis `97b7315`. Statut : rédaction en cours archivée, non injectable.
+
+Ces archives n'altèrent ni les attributions, ni le chapitre actif, ni les sources canoniques.
