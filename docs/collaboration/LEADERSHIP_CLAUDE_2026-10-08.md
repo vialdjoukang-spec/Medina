@@ -70,3 +70,17 @@ Chaque leçon produite, améliorée ou injectée est accompagnée de **deux capt
 2. **Fenêtre explicative ouverte** depuis un mot interactif.
 
 Les captures sont produites par `tools/capture_lecon.py` à partir du frontend construit du fragment. Elles sont **présentées dans le panneau latéral** (fichier rendu à côté de la conversation), **et non insérées dans le fil du chat**. Elles sont datées et portent le statut réel de la leçon (version de travail, injectée, auditée). Cette règle remplace, pour la présentation, la consigne antérieure « captures visibles dans le chat ».
+
+## 9. Règle universelle — un français merveilleux à lire
+
+Consigne de Vial : la langue doit être **merveilleuse à lire, riche, professionnelle et esthétiquement rédigée, sans excès**. Concrètement :
+
+- **Richesse sans lourdeur** : vocabulaire précis et varié, verbes forts et exacts ; aucune redondance, aucun adjectif décoratif.
+- **Rythme** : alternance de phrases brèves et de phrases plus amples, toujours complètes ; enchaînements logiques explicites (car, donc, or, ainsi, en revanche).
+- **Élégance professionnelle** : registre universitaire soigné, ton d’un professeur qui transmet ; jamais familier, jamais emphatique, sans métaphore ni effet de style gratuit.
+- **Esthétique de la page** : paragraphes équilibrés, tableaux sobres et commentés, titres évocateurs du contenu médical.
+- L’agent relecteur de la chaîne interne relit chaque leçon spécifiquement pour la langue, en plus du fond.
+
+## 10. File de production Claude
+
+La file est tenue dans `organisation/FILE_FRAGMENTS_CLAUDE.json`. **Un fragment à la fois** ; à l’intérieur, **catégorie par catégorie, leçon par leçon**. Quand un fragment s’achève, le suivant démarre, jusqu’à la fin de la file. Après les onze fragments Claude, la file se poursuit par les fragments Codex en ordre inverse de création (section 4). **Veto de Vial** : si Codex retarde le projet, Claude peut entamer un fragment Codex non injecté plus tôt, après un signal de prise en charge et en conservant les travaux Codex.
