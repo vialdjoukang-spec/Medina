@@ -78,10 +78,10 @@ jobs:
           lines = [
               "## Codex_Sentinella", "",
               "Scan : **" + str(result.get("scan_status")) + "**  ",
-              "Livraisons Claude actuellement repérées : **" + str(len(result.get("entries", []))) + "**  ",
+              "Têtes Claude portant une remise active : **" + str(len(result.get("entries", []))) + "**  ",
               "Nouvelles notifications : **" + str(len(notifications.get("created", []))) + "**  ",
               "Erreur de notification : **" + str(notifications.get("error")) + "**", "",
-              "Une issue par SHA sert de file durable et de signal à la reprise de Codex. "
+              "Une issue par empreinte des fichiers de remise sert de file durable à Codex. "
               "Le fichier `sentinella.json` conserve l'ordre proposé pour les agents.",
               "La détection ne lance aucun audit, aucune injection et ne réveille pas une session Codex inactive.",
               "Les déclencheurs GitHub et la planification toutes les cinq minutes sont soumis aux délais d'Actions.",

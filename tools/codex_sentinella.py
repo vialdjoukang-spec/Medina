@@ -2,13 +2,16 @@
 """Codex_Sentinella: receive Claude deliveries and notify the Codex coordinator.
 
 The existing claude_watch scanner reads remote Git objects in an isolated bare
-store. This entry point adds a durable GitHub issue per delivery SHA, plus a
-machine-readable work order. Discovery never performs an audit or injection.
+store. This entry point adds a durable GitHub issue per delivery-artifact
+fingerprint, plus a machine-readable work order. A branch head containing only
+new drafts cannot recreate an issue for an unchanged fragment handoff.
+Discovery never performs an audit or injection.
 GitHub Actions is best effort; it cannot wake an inactive Codex session.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -24,6 +27,7 @@ import claude_watch
 SHA = re.compile(r"[0-9a-f]{40}\Z")
 REPOSITORY = re.compile(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\Z")
 ISSUE_PREFIX = "Codex_Sentinella : livraison Claude "
+FINGERPRINT_PREFIX = "Codex_Sentinella : remise "
 ISSUE_LABEL = "codex-sentinella"
 
 
@@ -61,9 +65,9 @@ def _request(repository: str, token: str, method: str, route: str, payload=None)
         raise NotificationError("github_unavailable_or_invalid_response") from None
 
 
-def _existing_issue_shas(repository: str, token: str) -> set[str]:
-    """Read every page, including closed issues, before creating a notification."""
-    found = set()
+def _existing_issue_identifiers(repository: str, token: str) -> tuple[set[str], set[str]]:
+    """Read every page, including old SHA issues and closed notifications."""
+    fingerprints, legacy_shas = set(), set()
     page = 1
     while True:
         route = "/issues?" + urllib.parse.urlencode({
@@ -77,10 +81,61 @@ def _existing_issue_shas(repository: str, token: str) -> set[str]:
             if isinstance(title, str) and title.startswith(ISSUE_PREFIX):
                 sha = title[len(ISSUE_PREFIX):]
                 if SHA.fullmatch(sha):
-                    found.add(sha)
+                    legacy_shas.add(sha)
+            if isinstance(title, str) and title.startswith(FINGERPRINT_PREFIX):
+                fingerprint = title[len(FINGERPRINT_PREFIX):]
+                if re.fullmatch(r"[0-9a-f]{64}", fingerprint):
+                    fingerprints.add(fingerprint)
         if len(issues) < 100:
-            return found
+            return fingerprints, legacy_shas
         page += 1
+
+
+def _is_delivery_artifact(path: str) -> bool:
+    parts = path.split("/")
+    if (len(parts) == 4 and parts[:2] ==
+            ["espace_partage", "FRAGMENTS_CLAUDE_A_AUDITER_PAR_CODEX"]):
+        return parts[3] in {"MANIFESTE.json", "REMISE.md"}
+    if len(parts) < 4 or parts[:2] != ["livraisons", "Livraison Claude"]:
+        return False
+    # Historical archives and unfinished working copies are retained in Git
+    # but are not new fragment handoffs. Active legacy lots remain detectable.
+    return ((len(parts) == 4 and parts[3] in {"livraison.json", "MANIFESTE.json", "REMISE.md"})
+            or (len(parts) == 6 and parts[3] == "lots" and parts[5] == "livraison.json"))
+
+
+def _artifact_map(bare: Path, commit: str) -> dict[str, str]:
+    if not SHA.fullmatch(commit):
+        raise ValueError("invalid commit SHA")
+    _, raw = claude_watch._git(bare, ["ls-tree", "-r", "-z", commit], "delivery_artifact_tree")
+    artifacts = {}
+    for row in raw.split(b"\0"):
+        if not row:
+            continue
+        header, path_bytes = row.split(b"\t", 1)
+        mode, kind, oid = header.split(b" ")
+        if kind != b"blob" or mode not in {b"100644", b"100755"}:
+            continue
+        path = path_bytes.decode("utf-8", "strict")
+        if _is_delivery_artifact(path):
+            artifacts[path] = oid.decode("ascii")
+    return artifacts
+
+
+def _artifact_fingerprint(bare: Path, head: str, integration: str) -> dict | None:
+    """Hash active handoff blobs that differ from the current integration tree."""
+    current = _artifact_map(bare, head)
+    baseline = _artifact_map(bare, integration)
+    changed = {path: oid for path, oid in current.items() if baseline.get(path) != oid}
+    if not changed:
+        return None
+    canonical = json.dumps(sorted(changed.items()), ensure_ascii=False,
+                           separators=(",", ":")).encode("utf-8")
+    return {
+        "fingerprint": hashlib.sha256(b"Codex_Sentinella_v2\0" + canonical).hexdigest(),
+        "artifact_count": len(changed),
+        "artifact_paths_sample": sorted(changed)[:12],
+    }
 
 
 def _ensure_label(repository: str, token: str) -> None:
@@ -102,7 +157,7 @@ def _ensure_label(repository: str, token: str) -> None:
             raise
 
 
-def _candidate_order(candidate: dict) -> dict:
+def _candidate_order(candidate: dict, artifact: dict) -> dict:
     sha = candidate.get("commit")
     if not isinstance(sha, str) or not SHA.fullmatch(sha):
         raise ValueError("invalid candidate SHA")
@@ -114,6 +169,9 @@ def _candidate_order(candidate: dict) -> dict:
                             if isinstance(path, str))
     return {
         "sha": sha,
+        "delivery_fingerprint": artifact["fingerprint"],
+        "artifact_count": artifact["artifact_count"],
+        "artifact_paths_sample": artifact["artifact_paths_sample"],
         "refs": sorted(refs),
         "fragments_suggested": fragments,
         "delivery_path_count": len(delivery_paths),
@@ -144,11 +202,12 @@ def _incoming_claude(candidate: dict) -> bool:
 
 
 def _issue_body(order: dict) -> str:
-    # Only the SHA is used in the title. JSON escapes remote path characters.
+    # The title uses the content fingerprint. JSON escapes remote path characters.
     serialized = json.dumps(order, ensure_ascii=False, indent=2).replace("`", "\\u0060")
     return (
         "# Réception Codex_Sentinella\n\n"
-        f"Livraison Claude détectée au commit `{order['sha']}`. "
+        f"Remise Claude détectée au commit `{order['sha']}`, empreinte "
+        f"`{order['delivery_fingerprint']}`. "
         "Codex doit lire le diff et le rapport avant d'ordonner les agents.\n\n"
         "**Statut : détecté, lecture en attente.** La détection ne vaut ni audit, "
         "ni validation médicale, ni autorisation d'injection.\n\n"
@@ -189,26 +248,46 @@ def run(repo_root: Path, state_dir: Path, *, remote="origin", integration_branch
         return result
     queue = json.loads((state_dir / "queue.json").read_text(encoding="utf-8"))
     candidates = queue.get("candidates", [])
-    result["entries"] = [_candidate_order(item) for item in candidates
-                         if item.get("currently_advertised") and
-                         not item.get("reachable_from_integration") and
-                         _incoming_claude(item)]
-    if notify:
+    integration = queue["integration_commit"]
+    bare = state_dir / "git"
+    try:
+        for item in candidates:
+            if (not item.get("currently_advertised") or
+                    item.get("reachable_from_integration") or not _incoming_claude(item)):
+                continue
+            artifact = _artifact_fingerprint(bare, item["commit"], integration)
+            if artifact is not None:
+                result["entries"].append(_candidate_order(item, artifact))
+    except claude_watch.ScanError:
+        result["scan_status"] = "degraded"
+        result["scan_error"] = {"category": "delivery_artifact_scan_failed"}
+        result["entries"] = []
+        _write_json(state_dir / "sentinella.json", result)
+        return result
+    if notify and result["entries"]:
         try:
             _ensure_label(repository, token)
-            existing = _existing_issue_shas(repository, token)
+            existing, legacy_shas = _existing_issue_identifiers(repository, token)
+            for legacy_sha in legacy_shas:
+                try:
+                    artifact = _artifact_fingerprint(bare, legacy_sha, integration)
+                except (claude_watch.ScanError, ValueError):
+                    # An old head may no longer be reachable after force-push.
+                    continue
+                if artifact is not None:
+                    existing.add(artifact["fingerprint"])
             for order in result["entries"]:
-                sha = order["sha"]
-                if sha in existing:
-                    result["notifications"]["already_present"].append(sha)
+                fingerprint = order["delivery_fingerprint"]
+                if fingerprint in existing:
+                    result["notifications"]["already_present"].append(fingerprint)
                     continue
                 _request(repository, token, "POST", "/issues", {
-                    "title": ISSUE_PREFIX + sha,
+                    "title": FINGERPRINT_PREFIX + fingerprint,
                     "body": _issue_body(order),
                     "labels": [ISSUE_LABEL],
                 })
-                result["notifications"]["created"].append(sha)
-                existing.add(sha)
+                result["notifications"]["created"].append(fingerprint)
+                existing.add(fingerprint)
         except NotificationError as error:
             result["notifications"]["error"] = error.category
     _write_json(state_dir / "sentinella.json", result)
@@ -221,7 +300,7 @@ def main(argv=None) -> int:
     parser.add_argument("--state-dir", type=Path, required=True)
     parser.add_argument("--remote", default="origin")
     parser.add_argument("--integration-branch", default="main")
-    parser.add_argument("--notify", action="store_true", help="Create one GitHub issue per new SHA.")
+    parser.add_argument("--notify", action="store_true", help="Create one GitHub issue per new delivery fingerprint.")
     args = parser.parse_args(argv)
     try:
         result = run(args.repo_root, args.state_dir, remote=args.remote,
