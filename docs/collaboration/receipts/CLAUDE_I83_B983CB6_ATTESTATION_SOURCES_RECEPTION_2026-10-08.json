@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "kind": "reception_sans_injection",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": 12,
+  "branch": "claude/loving-shannon-spwrhc",
+  "head_sha": "b983cb66c288a64461c532f0c6c20280ab13a695",
+  "previous_received_head": "2145a2a9fd0e073123fc2ef6d90c8f7d65802c07",
+  "main_sha_at_reception": "6c6128ae5efaf3d27ab19b3508de2dfab77f315d",
+  "received_at": "2026-10-08T01:10:30Z",
+  "origin": "Claude confirmé par la branche, la signature Co-Authored-By, le rapport I83 et les fichiers de livraison",
+  "status": "reçu et archivé ; attestation S01 datée reçue ; preuves suisses non contre-vérifiées indépendamment ; aucune injection",
+  "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_B983CB6_I83_ATTESTATION_SOURCES",
+  "aggregate_content_fingerprint": {
+    "algorithm": "git-tree-sha1",
+    "value": "7234527e304b5949af199391486ec7b25d491be6",
+    "objects": 4
+  },
+  "course": "I83 — Varices des membres inférieurs (C-01-Cardiologie)",
+  "content_comparison": {
+    "s01_v4_git_blob_sha": "e9a5fe6e82c2f75eca8a3d27fbf2be00d9f02036",
+    "s01_v5_git_blob_sha": "d1765afb0dce5ecad87550325b25dc62f51056b2",
+    "normalized_result": "mêmes navigateur, 72 assertions, résultat passed et zéro erreur ; seule la valeur du chemin temporaire diffère",
+    "new_evidence": "s01_attestation_v5.json ajoute les heures UTC, l’empreinte du S01 testé, sa taille, les huit empreintes I83, chapters.json et le script de test"
+  },
+  "producer_control": {
+    "execution": "2026-10-08T01:07:17Z/2026-10-08T01:07:33Z",
+    "base_main": "625fddb953db8bf6619ba48f8624fa1bef7a1d8e",
+    "tested_s01_sha256": "76753e9b4cc1410d8397f386669b23923223ea42b3a4b2cbed37865780e52290",
+    "checks": 72,
+    "errors": 0,
+    "result": "passed",
+    "independently_reproduced": false
+  },
+  "source_review": {
+    "delivered": "empreintes, URLs et extraits pour Rapidocain et l’archive OFSP du 1er octobre 2026",
+    "originals_committed": false,
+    "independent_access": "échec d’accès aux deux URL officielles depuis l’outil de contre-vérification",
+    "malformed_entry": "la ligne ESVS 2022 de PREUVES_SOURCES_SUISSES.md se termine par des champs de passages vides",
+    "conclusion": "preuves documentaires reçues, mais réserves Rapidocain/OFSP non fermées indépendamment"
+  },
+  "blockers": [
+    "la simulation producteur reste basée sur main 625fddb, alors que main observé est 6c6128a ; aucune réconciliation actuelle n’est démontrée",
+    "le résultat S01 v5 est sémantiquement identique au v4 ; l’attestation prouve une exécution producteur, pas une reproduction indépendante",
+    "les copies Rapidocain et OFSP empreintées ne sont pas livrées et les URL officielles n’ont pas pu être ouvertes indépendamment",
+    "le rapport maintient explicitement que le cours n’est pas validé intégralement",
+    "la couverture CIM-11 n’est pas établie"
+  ],
+  "decision": "ne pas injecter ; archiver l’attestation et les preuves, conserver I83 actif et exiger une réconciliation sur main actuel, un contrôle navigateur indépendant et la contre-vérification des sources suisses",
+  "checks_executed": [
+    "PR, branche, tête b983cb6 et main 6c6128a relus",
+    "inventaire distant paginé : 15 branches et 13 PR",
+    "delta 2145a2a..b983cb6 inventorié : un commit et quatre fichiers",
+    "quatre blobs archivés sans modification sous l’empreinte d’arbre 7234527e…",
+    "S01 v4/v5 comparés champ par champ après exclusion du chemin temporaire",
+    "attestation v5 et rapport lus ; huit empreintes I83 concordantes avec la remise v4 déjà reçue",
+    "tentative d’ouverture indépendante des URL Swissmedicinfo et OFSP"
+  ],
+  "checks_not_executed": [
+    "tools/livraison.py apply-claude",
+    "injection canonique",
+    "reconstruction indépendante",
+    "tests unitaires indépendants",
+    "navigateur indépendant ordinateur/mobile",
+    "audit médical exhaustif de I83",
+    "CI ou déploiement d’une injection"
+  ],
+  "assignments_changed": false,
+  "active_chapter_changed": false,
+  "canonical_files_changed": false,
+  "injected": false,
+  "published_course_changes": false,
+  "campaigns_preserved": {
+    "historical": "30 cours, 15 Claude / 15 Codex",
+    "cardiology": "20 cours, 10 Claude / 10 Codex",
+    "fragments": "21 fragments, 11 Claude / 10 Codex"
+  },
+  "inventory": [
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/PREUVES_SOURCES_SUISSES.md",
+      "git_blob_sha": "2632c094a6eabb9c3c14d975bba0d5f68393eb6a",
+      "bytes": 4062,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_B983CB6_I83_ATTESTATION_SOURCES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/PREUVES_SOURCES_SUISSES.md"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_attestation_v5.json",
+      "git_blob_sha": "0296fbe030b6848d3a0f10e68bc6f82ddd80ca96",
+      "bytes": 1457,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_B983CB6_I83_ATTESTATION_SOURCES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_attestation_v5.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_browser_main_v5.json",
+      "git_blob_sha": "d1765afb0dce5ecad87550325b25dc62f51056b2",
+      "bytes": 3180,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_B983CB6_I83_ATTESTATION_SOURCES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/controles/s01_browser_main_v5.json"
+    },
+    {
+      "source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md",
+      "git_blob_sha": "07f79d2aa03a3986261c713d42905492ab857539",
+      "bytes": 24362,
+      "archive_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_B983CB6_I83_ATTESTATION_SOURCES/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I83/rapport.md"
+    }
+  ]
+}

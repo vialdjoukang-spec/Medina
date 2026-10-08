@@ -1,3 +1,7 @@
+## I83 — attestation S01 v5 et preuves suisses, tête b983cb6, 8 octobre 2026
+
+Quatre objets sont reçus et archivés. Le S01 v5 est sémantiquement identique au v4 après exclusion du chemin temporaire ; l’attestation ajoute un horaire et les empreintes de la construction. Les copies Rapidocain/OFSP ne sont pas livrées et leurs URL n’ont pas pu être ouvertes indépendamment. I83 reste actif, non injecté et non validé intégralement. [Rapport](reviews/2026-10-08/PR12_B983CB6_I83_ATTESTATION_SOURCES/RECEPTION.md).
+
 ## I35 — précision rénale du furosémide, tête 2145a2a, 8 octobre 2026
 
 La proposition ajoute la dose initiale plus élevée en cas de maladie rénale chronique, conformément à la figure 15, note a, de l’ESC 2026. Six objets sont reçus et archivés ; l’empreinte proposée et le contrôle producteur concordent. La réserve ciblée est levée, sans injection : I83 reste actif et I35 demeure `pending_exhaustive_review`. [Rapport](reviews/2026-10-08/PR12_2145A2A_I35_RENAL/RECEPTION.md).

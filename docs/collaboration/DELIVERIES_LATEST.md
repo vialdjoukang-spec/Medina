@@ -1,3 +1,7 @@
+## 2026-10-08 — PR #12, tête b983cb6 : attestation S01 et preuves suisses I83
+
+État : **reçu et archivé ; non injecté**. Quatre objets. Le S01 v5 reprend exactement les assertions et le résultat du v4, mais une attestation horodatée lie désormais le résultat aux empreintes de construction. Les sources suisses restent non contre-vérifiées indépendamment et la simulation se fonde sur un ancien main. [Rapport](reviews/2026-10-08/PR12_B983CB6_I83_ATTESTATION_SOURCES/RECEPTION.md).
+
 ## 2026-10-08 — PR #12, tête 2145a2a : correction rénale I35
 
 État : **reçu et archivé ; non injecté**. La limite de dose initiale plus élevée en maladie rénale chronique est ajoutée conformément à l’ESC 2026 ; six objets archivés et 3 269 contrôles producteurs sans erreur déclarée. [Rapport](reviews/2026-10-08/PR12_2145A2A_I35_RENAL/RECEPTION.md).
