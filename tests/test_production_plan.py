@@ -75,6 +75,22 @@ class ProductionPlanTests(unittest.TestCase):
             self.assertEqual({info["queue_order"] for info in owned.values()},
                              set(range(1, count + 1)))
 
+    def test_chapter_delivery_and_repeated_final_audit_are_rejected(self):
+        for key, value in (("delivery_unit", "chapter"), ("cross_audit_rounds", 2)):
+            with self.subTest(rule=key):
+                self.plan = copy.deepcopy(self.original)
+                self.plan["rules"][key] = value
+                with self.assertRaisesRegex(ValueError, "fragment entier"):
+                    self.load()
+
+    def test_reopening_injected_fragment_and_dark_theme_are_rejected(self):
+        for key, value in (("injected_fragment_immutable", False), ("output_theme", "dark")):
+            with self.subTest(rule=key):
+                self.plan = copy.deepcopy(self.original)
+                self.plan["rules"][key] = value
+                with self.assertRaisesRegex(ValueError, "immuable"):
+                    self.load()
+
     def test_two_canonical_chapters_can_advance_in_parallel(self):
         self.plan["agents"]["Claude"]["active_chapter"] = self.chapter("J45", "S02")
         self.plan["agents"]["Codex"]["active_chapter"] = self.chapter("A41", "T1")

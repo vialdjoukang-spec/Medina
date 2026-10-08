@@ -1,3 +1,7 @@
+## Consigne active — reprise et fragments entiers, 8 octobre 2026
+
+Vial demande de prendre connaissance de `Prompt_Codex.pdf` et de continuer. Cette reprise lève le STOP antérieur. Lire [COORDINATION.md](COORDINATION.md) et [le protocole par fragment](docs/collaboration/PROTOCOLE_FRAGMENTS_2026-10-08.md) avant les instructions historiques ci-dessous. **Fragment entier complet et auto-revu avant transmission ; audit croisé unique, correction et injection par l’autre IA ; fragment INJECTÉ immuable ; arrêt après les 22 ; HTML clair exclusivement.** Les règles de remise par chapitre, d’injection autonome avant audit, de renvois successifs et de correction après injection sont remplacées. Les travaux et leurs preuves restent conservés. Le mode multi-agent et un auteur par fichier restent applicables ; les veilles automatiques restent en pause.
+
 # CLAUDE.md — MEDINA (Atlas des cours de médecine par systèmes)
 
 ## Consigne la plus récente — STOP Codex, 8 octobre 2026

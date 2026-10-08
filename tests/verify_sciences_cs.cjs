@@ -8,6 +8,9 @@ const {loadPlaywright, browserOptions} = require('./browser_runtime.cjs');
 const {chromium} = loadPlaywright();
 const out = path.resolve(process.env.MEDINA_QA_OUT || 'audits/SCIENCES_CS_2026-10-07');
 const directory = path.resolve(process.env.MEDINA_FRAGMENTS || 'dist/fragments');
+const browserURL = file => process.env.MEDINA_QA_BASE_URL
+ ? new URL(path.basename(file), process.env.MEDINA_QA_BASE_URL).href
+ : pathToFileURL(file).href;
 const manifest = JSON.parse(fs.readFileSync('fragments.json','utf8')).filter(f=>f.surface==='courses-v1');
 const chapterNames = new Map(JSON.parse(fs.readFileSync('chapters.json','utf8')).filter(c=>c.integrated).map(c=>[c.code,c.title]));
 const expectedCourses = [...chapterNames.keys()].sort();
@@ -29,7 +32,7 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   for(const fragment of manifest){
    const file=path.join(directory,'MEDINA_'+fragment.id+'_'+fragment.slug+'.html');files[fragment.id]=file;snapshots[fragment.id]=digest(file);
-   await page.goto(pathToFileURL(file).href);await ready(page);
+   await page.goto(browserURL(file));await ready(page);
    const organisation=await page.evaluate(()=>window.MEDINA_CATEGORY_ORGANISATION);
    check(fragment.id+' : organisation catégorielle disponible',organisation?.fragment?.id===fragment.id);
    const codes=[...new Set(organisation.blocks.flatMap(block=>block.lessons)
@@ -92,7 +95,7 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
    await page.setViewportSize({width:1360,height:900});
   }
   check('Tous les cours intégrés contrôlés',JSON.stringify([...testedCourses].sort())===JSON.stringify(expectedCourses),{expected:expectedCourses,tested:[...testedCourses].sort()});
-  await page.goto(pathToFileURL(files.S01).href+'#/clinical-skills');await ready(page);
+  await page.goto(browserURL(files.S01)+'#/clinical-skills');await ready(page);
   check('CS : dix étapes et sources',await page.locator('.cs-section').count()===11);
   await page.locator('[data-cs-jump="cs-auscultation"]').click();
   check('CS : plan et focus du titre',await page.evaluate(()=>document.activeElement.id==='cs-h-auscultation'));
@@ -148,11 +151,12 @@ async function shot(page,name){await page.screenshot({path:path.join(out,'captur
    check('CS : correction de la réponse correcte '+i,await quiz.locator('.cs-feedback').getAttribute('data-cs-result')==='correct');
   }
   await page.locator('[data-cs-model="thorax"]').first().click();
-  await page.evaluate(()=>document.documentElement.classList.add('mdn-dark'));await shot(page,'cs_thorax_sombre');await overflow(page,'CS : fenêtre en thème sombre');
+  check('CS : fenêtre en thème clair',await page.evaluate(()=>getComputedStyle(document.documentElement).colorScheme.includes('light')&&!getComputedStyle(document.documentElement).colorScheme.includes('dark')));
+  await shot(page,'cs_thorax_clair');await overflow(page,'CS : fenêtre en thème clair');
   await route(page,'#/entry/I21');check('CS : changement de route ferme la scène',await page.locator('.cs-dialog[open]').count()===0);
   const fallback=await context.newPage();fallback.on('pageerror',e=>errors.push(e.message));
   await fallback.addInitScript(()=>{HTMLCanvasElement.prototype.getContext=()=>null});
-  await fallback.goto(pathToFileURL(files.S01).href+'#/clinical-skills');await ready(fallback);await fallback.locator('[data-cs-model="heart"]').first().click();
+  await fallback.goto(browserURL(files.S01)+'#/clinical-skills');await ready(fallback);await fallback.locator('[data-cs-model="heart"]').first().click();
   check('CS : explications accessibles sans Canvas',await fallback.locator('.cs-canvas-fallback').isVisible());
   await fallback.locator('[data-cs-select="5"]').click();check('CS : valve mitrale accessible sans rendu',await fallback.locator('.cs-point-detail').getAttribute('data-cs-selected')==='mitral-valve');
   check('Aucune erreur JavaScript',errors.length===0,errors);

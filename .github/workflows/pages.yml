@@ -19,12 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v7
         with:
           python-version: "3.x"
       - uses: actions/setup-node@v7
         with:
           node-version: "lts/*"
+      - name: Vérifier les preuves et verrous des fragments avant publication
+        env:
+          BASE_SHA: ${{ github.event.before }}
+        run: |
+          base="$BASE_SHA"
+          if test -z "$base" || test "$base" = 0000000000000000000000000000000000000000; then
+            base=$(git rev-parse HEAD^)
+          fi
+          python3 tools/espace.py garde "$base" HEAD
       - name: Vérifier les tests Python
         run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Construire MEDINA et ses fragments

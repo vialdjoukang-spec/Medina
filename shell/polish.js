@@ -73,7 +73,7 @@ btn.innerHTML='<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="
 const isHome=()=>{const h=location.hash;return h===''||h==='#'||h==='#/'||/^#\/(home|accueil)?\/?$/.test(h)};
 const sync=()=>{if(isHome()){if(!btn.isConnected)document.body.appendChild(btn)}else btn.remove()};
 addEventListener('hashchange',sync);setTimeout(sync,200);})();
-/* ===== MEDINA — modernisation du front-end (phase 2) : hauteur de la barre, mode sombre, messages, insignes ===== */
+/* ===== MEDINA — modernisation du front-end (phase 2) : hauteur de la barre, messages, insignes ===== */
 (()=>{const root=document.documentElement;
 /* Hauteur réelle de la barre supérieure : sert aux onglets collants du cours et aux ancres. */
 const top=document.querySelector('.topbar');const setTop=()=>{if(top)root.style.setProperty('--mdn-top',top.offsetHeight+'px')};setTop();
@@ -87,37 +87,8 @@ const setTabs=()=>{const m=document.querySelector('.mc'),t=m&&m.querySelector('.
 
 if(top&&'ResizeObserver' in window)new ResizeObserver(setTop).observe(top);
 
-/* Mode sombre : la coque d'origine contient de nombreuses couleurs claires codées en dur. Quand le mode sombre est actif,
-   chaque surface claire et chaque texte sombre réellement calculés sont convertis (figures, tracés et insignes exclus).
-   Lecture de tous les styles d'abord, écriture ensuite : pas de recalcul de mise en page en cascade. */
-const rgb=s=>{s=String(s);let m=s.match(/rgba?\(([\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)(?:[ ,/]+([\d.]+))?/);if(m)return{r:+m[1],g:+m[2],b:+m[3],a:m[4]===undefined?1:+m[4]};
- m=s.match(/color\(srgb ([\d.e-]+) ([\d.e-]+) ([\d.e-]+)(?: \/ ([\d.]+))?/);return m?{r:255*m[1],g:255*m[2],b:255*m[3],a:m[4]===undefined?1:+m[4]}:null};
-const lum=c=>{const f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(c.r)+.7152*f(c.g)+.0722*f(c.b)};
-const sat=c=>{const mx=Math.max(c.r,c.g,c.b),mn=Math.min(c.r,c.g,c.b);return mx?(mx-mn)/mx:0};
-const SKIP='svg,figure,.mdn-ecg .sv,.mc-pareto-btn,.fluo,.mc-badge,.mdn-keep,.sidebar,.ring,.mdn-director-track i,.mdn-director-courses a.is-complete,.swatches,.theme-dotset';
-let seen=new WeakSet();
-function autoDark(){if(!root.classList.contains('mdn-dark'))return;const todo=[];
- document.querySelectorAll('#content,.topbar,dialog[open],.mc-navigo,.mdn-toast').forEach(scope=>{if(scope.closest(SKIP))return;const w=document.createTreeWalker(scope,1,{acceptNode:n=>n.matches(SKIP)||n.matches('.mc-panel[hidden]')?2:1});const els=[];for(let n=w.nextNode();n;n=w.nextNode())if(!seen.has(n))els.push(n);els.forEach(el=>{
-  seen.add(el);const cs=getComputedStyle(el);
-  const bw=parseFloat(cs.borderTopWidth)+parseFloat(cs.borderBottomWidth);if(bw>0){const bc=rgb(cs.borderTopColor);if(bc&&bc.a>=.5&&lum(bc)>.6)todo.push([el,'mdn-dk-line'])}
-  if(cs.backgroundImage==='none'&&cs.backgroundColor==='rgba(0, 0, 0, 0)'){const c=rgb(cs.color);if(c&&lum(c)<.3)todo.push(sat(c)<.35||lum(c)<.02?[el,'mdn-dk-ink']:[el,'mdn-dk-tint',cs.color]);return}
-  const bg=rgb(cs.backgroundColor);let light=bg&&bg.a>=.5&&lum(bg)>.5;
-  if(!light&&cs.backgroundImage.includes('gradient'))light=(cs.backgroundImage.match(/(rgba?|color)\([^)]*\)/g)||[]).some(x=>{const c=rgb(x);return c&&c.a>=.5&&lum(c)>.5});
-  if(light)todo.push([el,'mdn-dk-bg']);
-  const c=rgb(cs.color);if(c&&lum(c)<.3)todo.push(sat(c)<.35||lum(c)<.02?[el,'mdn-dk-ink']:[el,'mdn-dk-tint',cs.color]);
- })});
- todo.forEach(([el,k,c])=>{el.classList.add(k);if(c)el.style.setProperty('--mdn-c',c)})}
-function autoLight(){document.querySelectorAll('.mdn-dk-bg,.mdn-dk-ink,.mdn-dk-tint,.mdn-dk-line').forEach(el=>{el.classList.remove('mdn-dk-bg','mdn-dk-ink','mdn-dk-tint','mdn-dk-line');el.style.removeProperty('--mdn-c')});seen=new WeakSet()}
-
-/* Mode sombre facultatif : bouton dans la barre supérieure, choix mémorisé dans ce navigateur. */
-const KEY='medina.dark';let on=false;try{on=localStorage.getItem(KEY)==='1'}catch(e){}
-const apply=v=>{['--t1','--t2'].forEach(k=>{const o=root.style.getPropertyValue(k);if(o)root.style.setProperty('--mdn-'+k.slice(2)+'o',o)});root.classList.toggle('mdn-dark',v);if(v)requestAnimationFrame(autoDark);else autoLight();
- document.querySelectorAll('.mdn-darkbtn').forEach(b=>{b.setAttribute('aria-pressed',String(v));b.title=v?'Revenir au mode clair':'Passer au mode sombre'})};
-apply(on);
-new MutationObserver(()=>{['--t1','--t2'].forEach(k=>{const v=root.style.getPropertyValue(k),n='--mdn-'+k.slice(2)+'o';if(v&&root.style.getPropertyValue(n)!==v)root.style.setProperty(n,v)})}).observe(root,{attributes:true,attributeFilter:['style']});
-function darkButton(){const tb=document.querySelector('.top-actions');if(!tb||tb.querySelector('.mdn-darkbtn'))return;const b=document.createElement('button');b.type='button';b.className='mdn-darkbtn';b.setAttribute('aria-label','Mode sombre');
- b.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>';
- b.onclick=()=>{on=!on;try{localStorage.setItem(KEY,on?'1':'0')}catch(e){}apply(on)};const th=tb.querySelector('.theme-btn');th?th.after(b):tb.appendChild(b);apply(on)}
+/* Les HTML utilisent un thème clair : supprimer l'ancienne préférence sombre du navigateur. */
+try{localStorage.removeItem('medina.dark')}catch(e){}
 
 /* Le lecteur de leçons historique (lesson-core.js) ne peut pas être chargé depuis un fichier local :
    l'erreur technique brute est remplacée par une explication, sans effet sur les cours MEDINA. */
@@ -130,13 +101,12 @@ function draftBadges(){if(typeof MEDINA_hasCourse!=='function')return;const done
 function tocStart(){document.querySelectorAll('.mc .mc-panel').forEach(p=>{const ol=p.querySelector('.mc-toc ol'),n=parseInt(p.querySelector('.mc-ilot h2 .mc-n')?.textContent,10);if(ol&&!isNaN(n)&&ol.start!==n&&ol.children.length===p.querySelectorAll(':scope .mc-body>.mc-ilot').length)ol.start=n})}
 document.addEventListener('click',e=>{
  /* Changement d'onglet depuis la barre collante : le nouveau panneau commence sous les onglets. */
- const b=e.target.closest('.mc .mc-tabs button');if(b){autoDark();requestAnimationFrame(()=>{setTabs();const p=document.querySelector('.mc-panel:not([hidden])'),t=document.querySelector('.mc .mc-tabs');if(!p||!t)return;const st=getComputedStyle(t).position==='sticky';const y=st?scrollY+p.getBoundingClientRect().top-(t.getBoundingClientRect().bottom+12):scrollY+t.getBoundingClientRect().top-(top?top.offsetHeight:0)-8;if(scrollY>y)scrollTo({top:Math.max(0,y),behavior:'instant'})})}
+ const b=e.target.closest('.mc .mc-tabs button');if(b){requestAnimationFrame(()=>{setTabs();const p=document.querySelector('.mc-panel:not([hidden])'),t=document.querySelector('.mc .mc-tabs');if(!p||!t)return;const st=getComputedStyle(t).position==='sticky';const y=st?scrollY+p.getBoundingClientRect().top-(t.getBoundingClientRect().bottom+12):scrollY+t.getBoundingClientRect().top-(top?top.offsetHeight:0)-8;if(scrollY>y)scrollTo({top:Math.max(0,y),behavior:'instant'})})}
  /* Navigo en mode livre : le livre est ramené dans la fenêtre après le changement de page. */
  if(e.target.closest('.mc-navigo-item')&&document.querySelector('.mc.book')){const bk=document.querySelector('.mc-panel:not([hidden]) .mc-body');setTimeout(()=>bk&&bk.scrollIntoView({block:'start',behavior:'smooth'}),340)}
 });
-const run=()=>{darkButton();techNotes();draftBadges();tocStart();setTabs();autoDark()};let tm=null;
-/* Le mode sombre convertit avant le rendu (microtâche) : pas d'éclair blanc au changement de page. */
-new MutationObserver(()=>{if(root.classList.contains('mdn-dark'))autoDark();clearTimeout(tm);tm=setTimeout(run,90)}).observe(document.body,{childList:true,subtree:true});setTimeout(run,350);
+const run=()=>{techNotes();draftBadges();tocStart();setTabs()};let tm=null;
+new MutationObserver(()=>{clearTimeout(tm);tm=setTimeout(run,90)}).observe(document.body,{childList:true,subtree:true});setTimeout(run,350);
 })();
 
 /* Césure française de secours. Le texte des cours est justifié ; sans césure, un navigateur privé de dictionnaire

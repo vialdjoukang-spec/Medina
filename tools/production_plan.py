@@ -17,9 +17,13 @@ def validate_plan(plan, registry, category_owners=None, courses=None, titles=Non
     if plan.get("excluded_fragments") != ["S01"]:
         raise ValueError("Seule la cardiologie est exclue des 21 fragments restants.")
     rules = plan.get("rules", {})
-    for key in ("max_active_chapters_per_agent", "max_active_fragments_per_agent", "delivery_chapters"):
+    for key in ("max_active_chapters_per_agent", "max_active_fragments_per_agent"):
         if rules.get(key) != 1:
-            raise ValueError("Un seul chapitre et un seul fragment actifs par agent ; une livraison par chapitre.")
+            raise ValueError("Un seul chapitre et un seul fragment actifs par agent.")
+    if rules.get("delivery_unit") != "fragment" or rules.get("cross_audit_rounds") != 1:
+        raise ValueError("Remettre un fragment entier pour un seul tour d’audit croisé.")
+    if rules.get("injected_fragment_immutable") is not True or rules.get("output_theme") != "light_only":
+        raise ValueError("Un fragment injecté est immuable ; le HTML utilise exclusivement le thème clair.")
     assignments = {}
     active_codes = set()
     for agent, count in AGENTS.items():
@@ -89,4 +93,4 @@ def load_plan(root, category_owners=None):
 
 if __name__ == "__main__":
     plan, assignments = load_plan(Path(__file__).resolve().parents[1])
-    print(f"OK : {len(assignments)} fragments ; Claude 11 / Codex 10 ; un chapitre actif au maximum par agent.")
+    print(f"OK : {len(assignments)} attributions ; Claude 11 / Codex 10 ; remise par fragment entier, un audit croisé, HTML clair.")
