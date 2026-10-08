@@ -37,3 +37,10 @@ for k,t2 in [('Stevens-Johnson','Albert Stevens et Frank Johnson'),('Bezold-Jari
 a('États-Unis',[('États-Unis','nom de pays')],'États-Unis d’Amérique','<p>Pays ; autorités du médicament : Food and Drug Administration.</p>')
 a('Sud-Est',[('Sud-Est','point cardinal composé')],'Asie du Sud-Est','<p>Région géographique (Chine du Sud, Thaïlande, Malaisie, Indonésie, Philippines, Vietnam…).</p>')
 a('H1',[('H','Histamine'),('1','récepteur de type 1')],'Récepteur H1 de l’histamine','<p>Médie prurit, vasodilatation, perméabilité capillaire ; cible des antihistaminiques.</p>','t78-d-antih')
+# Révision du 08.10.2026 : sigles et noms propres introduits par les sources européennes et suisses.
+a('UK',[('U','United'),('K','Kingdom')],'Royaume-Uni','<p>Abréviation anglaise du Royaume-Uni ; le Resuscitation Council UK publie les recommandations britanniques de traitement de l’anaphylaxie (2021).</p>')
+a('R1',[('R','Radical (chaîne latérale)'),('1','en position 1')],'Chaîne latérale R1 des bêtalactamines','<p>Chaîne latérale portée par le noyau bêtalactame ; sa similitude explique la plupart des réactions croisées entre bêtalactamines (position germanophone 2025).</p>')
+a('SQ',[('S','Standardised'),('Q','Quality')],'Qualité standardisée','<p>Système de standardisation des extraits allergéniques du fabricant ALK (Alutard SQ®, Soluprick SQ®).</p>')
+a('SQ-U',[('SQ','Standardised Quality'),('U','Units')],'Unités de qualité standardisée','<p>Unité de dose des extraits allergéniques ALK ; dose d’entretien des venins Alutard SQ® : 100 000 SQ-U (information professionnelle suisse).</p>','t78-d-ita')
+a('CD203c',[('CD','Cluster of Differentiation'),('203c','203c')],'Marqueur CD203c','<p>Marqueur de surface du basophile, surexprimé lors de son activation ; utilisé avec CD63 dans le test d’activation des basophiles.</p>')
+a('Solu-Medrol',[('Solu-Medrol','nom commercial de la méthylprednisolone injectable')],'Solu-Medrol®','<p>Méthylprednisolone injectable (Pfizer) ; l’information professionnelle suisse rappelle que l’adrénaline est le premier choix dans l’œdème laryngé.</p>')
