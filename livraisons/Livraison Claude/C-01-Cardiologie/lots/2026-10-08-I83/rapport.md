@@ -279,3 +279,21 @@ c0c1dda088686b7abf4f2b38f4f858298a37c46e1d3003f50e06c6b221697c42  I83_pop3.html
 - effets indésirables : paresthésies, acouphènes ;
 - surdosage : 1 à 3 minutes en cas d’injection intravasculaire, 20 à 30 minutes pour le pic après surdosage ;
 - pharmacocinétique rénale.
+
+
+## Addendum 8 — 8 octobre 2026 : restriction des conservateurs de Rapidocain (point relevé par Codex à la reprise `6056851483`)
+
+L'information professionnelle suisse de Rapidocain indique trois éléments :
+- le flacon multidose de 20 ml de Rapidocain avec épinéphrine contient des parahydroxybenzoates de propyle et de méthyle (composition, ligne 47 de la copie) ;
+- les solutions avec conservateurs ne doivent pas être utilisées pour des blocages nécessitant plus de 15 ml (mises en garde, ligne 344) ;
+- ces flacons sont contre-indiqués en cas d'allergie aux anesthésiques de type ester ou aux parahydroxybenzoates (ligne 310).
+
+La fenêtre `i83-d-tumescence` (`I83_pop4.html`, SHA-256 `79ca90654e97fe00619ed3d76ad1847734b41c8f9019af32146b47d18f3d58d9`) ne présente donc plus le flacon multidose de 20 ml comme l'équivalent suisse de la recette ESVS (50 ml). Elle expose ces trois éléments, précise que la tumescence n'est pas une indication décrite par l'information professionnelle et renvoie au protocole de la pharmacie hospitalière pour une préparation sans conservateur.
+
+Contrôles sur `main` `ea105ac`, exécutés de 09:28:03 à 09:31:44 UTC :
+- test statique OK, sigles `{}` ;
+- 22 fragments reproductibles, `test_v7` OK ;
+- test natif : 1 923 contrôles, 0 échec ;
+- S01 : 72 contrôles, `passed` (empreinte du S01 construit : `7eb4a8a9…`).
+
+Journal : `controles/simulation_main_ea105ac_JOURNAL.txt`.
