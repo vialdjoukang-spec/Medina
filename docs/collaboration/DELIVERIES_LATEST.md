@@ -1,3 +1,16 @@
+## 2026-10-08 — PR #12, tête 04cb957 : I89-3
+
+État : **repéré et reçu ; corrections médicales ciblées acceptées ; non intégré ; contrôles de bout en bout non reproduits ; publication documentaire seulement**.
+
+- Baseline : `f204b06ac174d41632b742ec6b82097b1532b2c8`.
+- 18 originaux archivés ; arbre `6d9f53ff5aadda19ae07d3820f94f2704ce14b5d`.
+- 11/11 propositions et 2/2 baselines exactes ; neuf ajouts absents de `main`.
+- Delta I89-2→I89-3 : quatre HTML modifiés.
+- Réserves minoxidil/sources primaires levées dans la contre-relecture ciblée.
+- I83 reste actif ; aucune injection canonique ni publication du site.
+
+[Rapport](reviews/2026-10-08/PR12_04CB957_I89_3/RECEPTION.md) · [Reçu](receipts/CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête 8a6dc7f : I83-HARMONISATION-6
 
 État : **repéré et reçu ; delta médical ciblé favorable ; non intégré ; non contrôlé techniquement de manière indépendante ; publication documentaire seulement**.

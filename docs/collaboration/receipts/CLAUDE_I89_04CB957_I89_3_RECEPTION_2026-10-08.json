@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": {
+    "number": 12,
+    "state": "open",
+    "draft": false,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/12"
+  },
+  "provenance": {
+    "producer": "Claude",
+    "branch": "claude/loving-shannon-spwrhc",
+    "delivery_head_sha": "04cb95729d44648cc65339f28cf6631574babbb2",
+    "baseline_sha": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+    "evidence": [
+      "branch",
+      "SIGNAUX_CLAUDE.json",
+      "livraison.json",
+      "CORRECTIONS_AUDIT_CODEX_2.md"
+    ]
+  },
+  "scope": {
+    "fragment": "C-01-Cardiologie",
+    "platform": "S01",
+    "chapter": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques",
+    "lot": "2026-10-08-I89-3",
+    "replaces": "2026-10-08-I89-2",
+    "assignments_changed": false,
+    "active_chapters_changed": false
+  },
+  "archive": {
+    "root": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3",
+    "original_count": 18,
+    "originals_git_tree_sha1": "6d9f53ff5aadda19ae07d3820f94f2704ce14b5d",
+    "archive_tree_with_provenance_sha1": "e84be709bb593dcd6e90ed43d13669f68d4416c9"
+  },
+  "verification": {
+    "proposal_sha256": "11/11 exact",
+    "replacement_baselines": "2/2 exact",
+    "add_targets_absent": "9/9",
+    "changed_from_i89_2": [
+      "I89_c.html",
+      "I89_d.html",
+      "I89_pop2.html",
+      "I89_pop4.html"
+    ],
+    "unchanged_from_i89_2": [
+      "chapters.json",
+      "I89_a.html",
+      "I89_b.html",
+      "I89_pop1.html",
+      "I89_pop3.html",
+      "glossary/i89.py",
+      "tests/verify_s01_browser.cjs"
+    ]
+  },
+  "medical_review": {
+    "scope": "targeted I89-2 to I89-3 delta review, not exhaustive certification",
+    "resolved": [
+      "minoxidil renal-perfusion extrapolation removed",
+      "corrected mechanisms tied to identified primary or regulatory sources"
+    ],
+    "blocking": [],
+    "remaining_nonblocking": [
+      "US labels are not Swiss product information",
+      "Swiss Verdye status/availability in 2026 not verified",
+      "Lund 1986 is a 10-patient study and only the abstract was reviewed",
+      "unchanged glitazone/ENaC and docetaxel passages not re-reviewed",
+      "I88 not covered; CIM-11 completeness not established"
+    ]
+  },
+  "controls": {
+    "producer_claims": [
+      "118 unit tests passed",
+      "2595 native checks passed",
+      "73 S01 checks passed"
+    ],
+    "independently_executed": [
+      "remote branch and PR inventory",
+      "content comparison against I89-2",
+      "11 proposal SHA-256 checks",
+      "2 baseline SHA-256 checks",
+      "9 add-target absence checks",
+      "static HTML reference audit: 44 identifiers, 111 triggers, no duplicates or missing references"
+    ],
+    "not_executed": [
+      "tools/livraison.py",
+      "canonical injection",
+      "local unit tests",
+      "build",
+      "interactive browser desktop",
+      "interactive browser mobile",
+      "site deployment"
+    ]
+  },
+  "chain": {
+    "current_claude_chapter": "I83",
+    "chapter_released": false,
+    "reason": "I83-HARMONISATION-6 received but not integrated/published"
+  },
+  "status": {
+    "spotted": true,
+    "received": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "reception documentation only"
+  }
+}

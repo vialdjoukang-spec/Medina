@@ -1,3 +1,11 @@
+## Réception Claude I89-3 — tête 04cb957, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) remet I89-3 à la tête `04cb95729d44648cc65339f28cf6631574babbb2`, exactement basée sur `main` `f204b06ac174d41632b742ec6b82097b1532b2c8`. Les 18 originaux sont archivés sans modification ; 11 propositions et deux baselines concordent. Les deux réserves médicales bloquantes de I89-2 sont levées dans ce delta ciblé.
+
+État : **repéré et reçu ; corrections médicales ciblées acceptées ; non intégré ; non contrôlé techniquement de bout en bout ; publication documentaire seulement**. I83 reste le chapitre actif ; aucune attribution, source canonique ni route n'a changé.
+
+[Rapport I89-3](reviews/2026-10-08/PR12_04CB957_I89_3/RECEPTION.md) · [Reçu I89-3](receipts/CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08.json)
+
 ## Réceptions Claude I83-HARMONISATION-6 et I89-2 — 8 octobre 2026
 
 À la tête PR #12 `8a6dc7f28bbdaa5251f9a4b75031875073bf7ccb`, I83-HARMONISATION-6 est reçu : 13 originaux archivés, huit couples baseline/proposition exacts, delta médical ciblé favorable, mais aucune injection faute de contrôles indépendants de reconstruction et navigateur. [Rapport I83](reviews/2026-10-08/PR12_8A6DC7F_I83_HARMONISATION_6/RECEPTION.md) · [Reçu I83](receipts/CLAUDE_I83_8A6DC7F_HARMONISATION_6_RECEPTION_2026-10-08.json).
