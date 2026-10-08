@@ -1,0 +1,961 @@
+{
+  "schema_version": 1,
+  "chapter": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+  "author": "/root/sentinelle_medicale",
+  "date_europe_zurich": "2026-10-08T15:52:42.508288+02:00",
+  "source_head_sha": "04cb95729d44648cc65339f28cf6631574babbb2",
+  "delivery_lot": "2026-10-08-I89-3",
+  "baseline_declared": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+  "receipt": "docs/collaboration/receipts/CLAUDE_I89_04CB957_I89_3_RECEPTION_2026-10-08.json",
+  "decision_medical": "FAVORABLE_DANS_LE_PERIMETRE_MEDICAL_CIBLE",
+  "medical_blocking_findings_remaining": [],
+  "injectable_now": false,
+  "overall_injection_status": "NON_ADMISSIBLE_A_L_INJECTION_FINALE_DU_FAIT_DU_CONTROLE_OBLIGATOIRE",
+  "contractual_blocker_reported_by_coordinator": "Le check-claude obligatoire a échoué pour une limite du contrat de l’outil, sans erreur médicale démontrée. La réception et la technique sont closes ; root prépare STOP surmain sans changer les sources. Ce poste ne transforme pas l’avis médical en autorisation d’injection.",
+  "scope": "Lecture du reçu et des rapports de trois remises, comparaison réelle des huit HTML v2/v3 ; contrelecture des passages modifiés dans quatre fichiers et des fenêtres inchangées ciblées octréotide/Verdye. Ne constitue pas validation exhaustive du chapitre, des couvertures ou des autres lots.",
+  "source_inventory_html": {
+    "I89_a.html": {
+      "sha256": "6ee12f8ead47fd0ac0f800c1da150c7f09f418696a31f125bf17edd447e4ea7a",
+      "bytes": 35843,
+      "changed_from_v2": false,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_a.html"
+    },
+    "I89_b.html": {
+      "sha256": "c6ad8ed489222984ebe6835376f89846d1b8be2fe70f219a32d9b23828b1a85a",
+      "bytes": 58451,
+      "changed_from_v2": false,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_b.html"
+    },
+    "I89_c.html": {
+      "sha256": "ee635834b092e860201a10c9477a2de2a8f562889c68248ccf0b10fd0be55f86",
+      "bytes": 68410,
+      "changed_from_v2": true,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_c.html"
+    },
+    "I89_d.html": {
+      "sha256": "9340a0df4ca51217165a6aad20cf20a46f0e5e5464e7630c106bae81e564d1f6",
+      "bytes": 29802,
+      "changed_from_v2": true,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_d.html"
+    },
+    "I89_pop1.html": {
+      "sha256": "dc7e8d5ccae8e2e29103810b9f7aa019a27ce41266729839a2c8773e002ba4fe",
+      "bytes": 20430,
+      "changed_from_v2": false,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop1.html"
+    },
+    "I89_pop2.html": {
+      "sha256": "39099daa140328595fe600148eb0e75dea612eac0e4f0fc14839baa6f7677350",
+      "bytes": 35586,
+      "changed_from_v2": true,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop2.html"
+    },
+    "I89_pop3.html": {
+      "sha256": "891189883a19d150d8a35f18cbc8051dc7171c22a8509e626f804aae1cf76b10",
+      "bytes": 22776,
+      "changed_from_v2": false,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop3.html"
+    },
+    "I89_pop4.html": {
+      "sha256": "7c618b9b4b3063a919f798d6fb39b8237f6bc9a01ed1b5f90b6ad75954408c54",
+      "bytes": 25342,
+      "changed_from_v2": true,
+      "path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop4.html"
+    }
+  },
+  "changed_files": [
+    "I89_c.html",
+    "I89_d.html",
+    "I89_pop2.html",
+    "I89_pop4.html"
+  ],
+  "changed_lines_reviewed": {
+    "I89_c.html": [
+      85
+    ],
+    "I89_d.html": [
+      74
+    ],
+    "I89_pop2.html": [
+      19,
+      22
+    ],
+    "I89_pop4.html": [
+      5,
+      10,
+      49,
+      55
+    ]
+  },
+  "findings": [
+    {
+      "id_local": "FINAL-01",
+      "origin_reserve": "RéceptionI89-2, blocante1 : minoxidil extrapolé de l’hydralazine",
+      "severity_before": "bloquante",
+      "status_medical": "levée_dans_delta_ciblé",
+      "locations": [
+        {
+          "file": "I89_d.html",
+          "line": 74
+        },
+        {
+          "file": "I89_pop4.html",
+          "line": 49,
+          "data_pop": "i89-d-oedeme-medic"
+        }
+      ],
+      "assessment": "Le lien générique baisse de perfusion rénale est retiré. Le minoxidil décrit baisse artériolaire/pression, mécanismes homéostatiques dont rénine et rétention sel/eau ; l’hydralazine décrit rénine→angiotensineII→aldostérone et débit rénal maintenu/augmenté. Cela correspond aux notices propres à chaque produit.",
+      "sources": [
+        "minoxidil",
+        "hydralazine"
+      ]
+    },
+    {
+      "id_local": "FINAL-02",
+      "origin_reserve": "RéceptionI89-2, blocante2 : AINS/corticoïdes/pénicilline sans primaire au niveau requis",
+      "severity_before": "bloquante",
+      "status_medical": "levée_dans_delta_ciblé",
+      "locations": [
+        {
+          "file": "I89_d.html",
+          "line": 74
+        },
+        {
+          "file": "I89_pop4.html",
+          "line": 49,
+          "data_pop": "i89-d-oedeme-medic"
+        },
+        {
+          "file": "I89_pop4.html",
+          "line": 5,
+          "data_pop": "i89-d-penicilline"
+        },
+        {
+          "file": "I89_pop4.html",
+          "line": 10
+        }
+      ],
+      "assessment": "L’ibuprofène documente rétention hydrique/œdème et interaction natriurétique attribuée aux prostaglandines. La prednisone documente rétention sodée avec œdème/perteK et différences entre glucocorticoïdes naturels et dérivés à forte dose. La pénicillineV documente inhibition de biosynthèse du mucopeptide et activité bactéricide en multiplication ; A/C/G figurent parmi les streptocoques très sensibles. Les sources sont explicitement américaines ; aucune conversion suisse de dose n’est inventée.",
+      "sources": [
+        "ibuprofene",
+        "prednisone",
+        "penicillineV"
+      ]
+    },
+    {
+      "id_local": "FINAL-03",
+      "origin_reserve": "RéceptionI89-2, blocante2 : myxœdème/glycosaminoglycanes",
+      "severity_before": "bloquante",
+      "status_medical": "levée_avec_limite_de_preuve_explicite",
+      "locations": [
+        {
+          "file": "I89_c.html",
+          "line": 85
+        },
+        {
+          "file": "I89_pop2.html",
+          "line": 19,
+          "data_pop": "i89-oed-systemique"
+        },
+        {
+          "file": "I89_pop2.html",
+          "line": 22
+        }
+      ],
+      "assessment": "Résumé Lund1986 réellement lu : dix patients, huit témoins appariés, acide hyaluronique augmenté puis diminué sous thyroxine ; autres glycosaminoglycanes non augmentés, héparane sulfate réduit. Le cours conserve dix patients et attribue aux auteurs seulement une contribution proposée au non-godet. Aucun essai mécanistique causal universel ni accès au texte intégral n’est revendiqué.",
+      "sources": [
+        "Lund1986"
+      ]
+    },
+    {
+      "id_local": "FINAL-04",
+      "origin_reserve": "RéceptionI89-v1, blocante1 : posologies actionnables d’octréotide hors indication",
+      "severity_before": "bloquante",
+      "status_medical": "correction_v2_préservée_et_recontrôlée",
+      "locations": [
+        {
+          "file": "I89_d.html",
+          "line": 58
+        },
+        {
+          "file": "I89_d.html",
+          "line": 63
+        },
+        {
+          "file": "I89_d.html",
+          "line": 90
+        },
+        {
+          "file": "I89_pop4.html",
+          "line": 28,
+          "data_pop": "i89-d-octreotide"
+        }
+      ],
+      "assessment": "Aucune posologie adulte/enfant ni délai d’arrêt chiffré n’est prescrit dans les passages : dose/voie/durée laissées au protocole spécialisé. Les indicationsUS actuelles de SandostatinInjection sont acromégalie, symptômes carcinoïdes etVIPomes, sans chylothorax ; la juridiction est explicite et le statut suisse non revendiqué. Le mécanisme dans le chylothorax demeure hypothétique, données de cas/séries/revues. Risques et interactions retenus concordent avec les rubriques5/7 de la noticeUS2026.",
+      "sources": [
+        "octreotide"
+      ],
+      "remaining_limit": "Le cours cite une version2024 ; le contrôle2026 soutient les énoncés relus mais ne contrevalide pas tout le texte2024 ni les doses de chylothorax, retirées."
+    },
+    {
+      "id_local": "FINAL-05",
+      "origin_reserve": "RéceptionI89-v1, blocante2 puis limite nonbloquante : statut et sécurité suissesVerdye",
+      "severity_before": "blocante_puis_nonbloquante_après_bornage_v2",
+      "status_medical": "bornage_correct_et_limite_historique_affinée_par_lecture_suisse_finale",
+      "locations": [
+        {
+          "file": "I89_d.html",
+          "line": 84
+        },
+        {
+          "file": "I89_pop3.html",
+          "line": 26,
+          "data_pop": "i89-e-icg"
+        },
+        {
+          "file": "I89_pop4.html",
+          "line": 57,
+          "data_pop": "i89-d-traceurs"
+        }
+      ],
+      "assessment": "La remise borne l’autorisation à2023 et la sécurité chiffrée au texte australien, sans disponibilité suisse2026 affirmée. Le SwissPAR officiel et la FI suisse68489 sont réellement accessibles et relus dans cette passe : les indications affichées sont cardiovasculaires/hépatiques/oculaires ; voieIV, aucune lymphographie. Contre-indications iode/hyperthyroïdie/adénome et délai radio-iodé≥une semaine sont présents. Le texte suisse indique de petites quantités possibles d’iodure, sans le pourcentage australien≤5%. L’affirmation historique « FI suisse non vérifiée » reste exacte pour les reçus antérieurs, mais cette réserve documentaire est désormais partiellement levée dans le présent audit.",
+      "sources": [
+        "SwissPAR_Verdye2023",
+        "SwissFI_Verdye68489"
+      ],
+      "remaining_limit": "Pas de vérification commerciale/stock2026 ni revue du registre actif2026 ; information australienne non retéléchargée, pas certification du≤5% australien. Aucun protocole intradermique standard suisse ne découle de la FIIV."
+    }
+  ],
+  "remaining_nonblocking_or_scope_limits": [
+    {
+      "severity": "nonbloquante_dans_cette_contrelecture_ciblée",
+      "issue": "Sources américaines pour mécanismes/risques : pas substitution à une information professionnelle suisse ; juridictions effectivement indiquées dans les passages relus."
+    },
+    {
+      "severity": "nonbloquante_dans_cette_contrelecture_ciblée",
+      "issue": "Verdye : FI suisse maintenant relue au niveau ciblé, disponibilité commerciale2026 toujours non vérifiée ; pourcentage australien non certifié sur source suisse."
+    },
+    {
+      "severity": "nonbloquante_limite_de_preuve",
+      "issue": "Lund1986 : étude de dix patients, résumé seulement, association et hypothèse des auteurs correctement bornées."
+    },
+    {
+      "severity": "limite_de_périmètre_maintenue",
+      "issue": "Glitazones/ENaC, docétaxel et autres faits inchangés ne sont pas fraîchement contrevalidés ; le niveau animal est indiqué, aucun nouveau défaut prouvé dans la présente passe. FOXC2/PIEZO1 et anatomie ont leurs corrections précédemment acceptées, sans réaudit primaire ici."
+    },
+    {
+      "severity": "limite_de_périmètre_maintenue",
+      "issue": "Essai de prophylaxie pénicilline jambe et informationEMA sirolimus : acceptés dans reçus antérieurs ; pas nouvelle lecture primaire dans cette dernière passe. Extrapolation au bras explicitement conservée."
+    },
+    {
+      "severity": "limite_de_couverture",
+      "issue": "I88 non couvert, aucune validation exhaustive deI89/I97 ni deCIM11 ; les couvertures/nomenclatures finales relèvent de la réconciliation technique et clinique antérieure."
+    }
+  ],
+  "primary_access_and_reading": [
+    {
+      "name": "minoxidil",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0b4fc036-9497-442b-b629-c4b386932789.xml",
+      "date_europe_zurich": "2026-10-08T15:41:36.771492+02:00",
+      "http_status": 200,
+      "final_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0b4fc036-9497-442b-b629-c4b386932789.xml",
+      "sha256": "99bc7b7bec374c47e551289ed7e00bb772004028bc3daa2219a2981999ee132d",
+      "bytes": 97840,
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/minoxidil.xml",
+      "content_type": "application/xml",
+      "version_actually_read": "2026-08-25",
+      "reading_level": "extraits pertinents du texte réglementaire complet disponible ; pas lecture exhaustive de toutes les rubriques",
+      "excerpts_read": {
+        "effectiveTime": {
+          "value": "20260825"
+        },
+        "versionNumber": {
+          "value": "12"
+        },
+        "excerpts_read": [
+          {
+            "section": "CLINICAL PHARMACOLOGY",
+            "quote": "Because it causes peripheral vasodilation, minoxidil elicits a number of predictable reactions. Reduction of peripheral arteriolar resistance and the associated fall in blood pressure trigger sympathetic, vagal inhibitory, and renal homeostatic mechanisms, including an increase in renin secretion, that lead to increased cardiac rate and output and salt and water retention. These adverse effects can usually be minimized by concomitant administration of a diuretic and a beta-adrenergic blocking agent or other sympathetic nervous system suppressant."
+          },
+          {
+            "section": "PRECAUTIONS",
+            "quote": "(a) Monitor fluid and electrolyte balance and body weight (see WARNINGS: Salt and Water Retention )."
+          },
+          {
+            "section": "DOSAGE AND ADMINISTRATION",
+            "quote": "Diuretics: Minoxidil must be used in conjunction with a diuretic in patients relying on renal function for maintaining salt and water balance. Diuretics have been used at the following dosages when starting therapy with minoxidil: hydrochlorothiazide (50 mg, b.i.d.) or other thiazides at equi-effective dosage; chlorthalidone (50 mg to 100 mg, once daily); furosemide (40 mg, b.i.d.). If excessive salt and water retention results in a weight gain of more than 5 pounds, diuretic therapy should be changed to furosemide; if the patient is already taking furosemide, dosage should be increased in accordance with the patient’s requirements."
+          },
+          {
+            "section": "PATIENT INFORMATION",
+            "quote": "Often, when a medicine like MINOXIDIL lowers blood pressure, your body tries to return the blood pressure to the original higher level. It does this by holding on to water and salt (so there will be more fluid to pump) and by making your heart beat faster. To prevent this, your doctor will usually prescribe a water tablet to remove the extra salt and water from your body (a diuretic: dye-u-RET-tic) and another medicine to slow your heart beat."
+          }
+        ]
+      }
+    },
+    {
+      "name": "hydralazine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7dc89d53-ade0-40de-b7e3-d14f7151958d.xml",
+      "date_europe_zurich": "2026-10-08T15:41:36.772390+02:00",
+      "http_status": 200,
+      "final_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7dc89d53-ade0-40de-b7e3-d14f7151958d.xml",
+      "sha256": "29cba8eb5be9ca3220e78414eaf7444bbb107e62899a25a3128f31969cae28cb",
+      "bytes": 43680,
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/hydralazine.xml",
+      "content_type": "application/xml",
+      "version_actually_read": "2026-09-14",
+      "reading_level": "extraits pertinents du texte réglementaire complet disponible ; pas lecture exhaustive de toutes les rubriques",
+      "excerpts_read": {
+        "effectiveTime": {
+          "value": "20260914"
+        },
+        "versionNumber": {
+          "value": "1"
+        },
+        "excerpts_read": [
+          {
+            "section": "CLINICAL PHARMACOLOGY",
+            "quote": "The peripheral vasodilating effect of hydralazine results in decreased arterial blood pressure (diastolic more than systolic); decreased peripheral vascular resistance; and an increased heart rate, stroke volume, and cardiac output. The preferential dilatation of arterioles, as compared to veins, minimizes postural hypotension and promotes the increase in cardiac output. Hydralazine usually increases renin activity in plasma, presumably as a result of increased secretion of renin by the renal juxtaglomerular cells in response to reflex sympathetic discharge. This increase in renin activity leads to the production of angiotensin II, which then causes stimulation of aldosterone and consequent sodium reabsorption. Hydralazine also maintains or increases renal and cerebral blood flow."
+          },
+          {
+            "section": "General",
+            "quote": "In hypertensive patients with normal kidneys who are treated with hydralazine, there is evidence of increased renal blood flow and a maintenance of glomerular filtration rate. In some instances where control values were below normal, improved renal function has been noted after administration of hydralazine. However, as with any antihypertensive agent, hydralazine should be used with caution in patients with advanced renal damage."
+          },
+          {
+            "section": "ADVERSE REACTIONS",
+            "quote": "hypotension, paradoxical pressor response, edema."
+          }
+        ]
+      }
+    },
+    {
+      "name": "ibuprofene",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7c7b815b-d6f5-4ce6-b37f-f35d5c9f3254.xml",
+      "date_europe_zurich": "2026-10-08T15:41:36.772051+02:00",
+      "http_status": 200,
+      "final_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7c7b815b-d6f5-4ce6-b37f-f35d5c9f3254.xml",
+      "sha256": "8d368857649c1033ceb456b251cfd1cc47a5637e266fb8b4a786c63386d83a1e",
+      "bytes": 163701,
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/ibuprofene.xml",
+      "content_type": "application/xml",
+      "version_actually_read": "2026-07-29",
+      "reading_level": "extraits pertinents du texte réglementaire complet disponible ; pas lecture exhaustive de toutes les rubriques",
+      "excerpts_read": {
+        "effectiveTime": {
+          "value": "20260729"
+        },
+        "versionNumber": {
+          "value": "7"
+        },
+        "excerpts_read": [
+          {
+            "section": "CLINICAL PHARMACOLOGY",
+            "quote": "Ibuprofen tablets contain ibuprofen which possesses analgesic and antipyretic activities. Its mode of action, like that of other NSAIDs, is not completely understood, but may be related to prostaglandin synthetase inhibition."
+          },
+          {
+            "section": "CLINICAL PHARMACOLOGY",
+            "quote": "prostaglandin activity in the menstrual fluid and to reduce resting and active intrauterine pressure, as well as the frequency of uterine contractions. The probable mechanism of action is to inhibit prostaglandin synthesis rather than simply to provide analgesia."
+          },
+          {
+            "section": "WARNINGS",
+            "quote": "The Coxib and traditional NSAID Trialists’ Collaboration meta-analysis of randomized controlled trails demonstrated an approximately two-fold increase in hospitalizations for heart failure in COX-2 selective-treated patients and nonselective NSAID-treated patients compared to placebo-treated patients. In a Danish National Registry study of patients with heart failure, NSAID use increased the risk of MI, hospitalization for heart failure, and death. Additionally, fluid retention and edema have been observed in some patients treated with NSAIDs. Use of ibuprofen may blunt the CV effects of several therapeutic agents used to treat these medical conditions [e.g., diuretics, ACE inhibitors, or angiotensin receptor blockers (ARBs)] [See DRUG INTERACTIONS ]. Avoid the use of ibuprofen tablets in patients with severe heart failure unless the benefits are expected to outweigh the risk of worsening heart failure. If ibuprofen tablets is used in patients with severe heart failure, monitor patients for signs of worsening heart failure."
+          },
+          {
+            "section": "WARNINGS",
+            "quote": "Long-term administration of NSAIDs has resulted in renal papillary necrosis and other renal injury. Renal toxicity has also been seen in patients in whom renal prostaglandins have a compensatory role in the maintenance of renal perfusion. In these patients, administration of a NSAID may cause a dose dependent reduction in prostaglandin formation and, secondarily, in renal blood flow, which may precipitate overt renal decompensation. Patients at greatest risk of this reaction are those with impaired renal function, heart failure, liver dysfunction, those taking diuretics and ACE inhibitors, and the elderly. Discontinuation of NSAID therapy is usually followed by recovery to the pretreatment state."
+          },
+          {
+            "section": "GENERAL",
+            "quote": "Anemia is sometimes seen in patients receiving NSAIDs, including ibuprofen tablets. This may be due to fluid retention, occult or gross GI blood loss, or an incompletely described effect upon"
+          },
+          {
+            "section": "DRUG INTERACTIONS",
+            "quote": "Clinical studies, as well as post marketing observations, have shown that ibuprofen tablets can reduce the natriuretic effect- of furosemide and thiazides in some patients. This response has been attributed to inhibition of renal prostaglandin synthesis. During concomitant therapy with NSAIDs, the patient should be observed closely for signs of renal failure (see PRECAUTIONS , Renal Effects), as well as to assure diuretic efficacy."
+          },
+          {
+            "section": "DRUG INTERACTIONS",
+            "quote": "Ibuprofen produced an elevation of plasma lithium levels and a reduction in renal lithium clearance in a study of eleven normal volunteers. The mean minimum lithium concentration increased 15% and the renal clearance of lithium was decreased by 19% during this period of concomitant drug administration. This effect has been attributed to inhibition of renal prostaglandin synthesis by ibuprofen. Thus, when ibuprofen and lithium are administered concurrently, subjects should be observed carefully for signs of lithium toxicity. (Read circulars for lithium preparation before use of such concurrent therapy.)"
+          },
+          {
+            "section": "PREGNANCY",
+            "quote": "Data from observational studies regarding other potential embryofetal risks of NSAID use in women in the first or second trimesters of pregnancy are Reproductive studies conducted in rats and rabbits have not demonstrated evidence of developmental abnormalities. However, animal reproduction studies are not always predictive of human response. Based on animal data, prostaglandins have been shown to have an important role in endometrial vascular permeability, blastocyst implantation, and decidualization. In animal studies, administration of prostaglandin synthesis inhibitors such as ibuprofen, resulted in increased pre- and post- implantation loss. Prostaglandins also have been shown to have an important role in fetal kidney development. In published animal studies, prostaglandin synthesis inhibitors have been reported to impair kidney development when administered at clinically relevant doses.”"
+          },
+          {
+            "section": "LABOR & DELIVERY",
+            "quote": "In rat studies with NSAIDs, as with other drugs known to inhibit prostaglandin synthesis, an increased incidence of dystocia, delayed parturition, and decreased pup survival occurred. The effects of ibuprofen tablets on labor and delivery in pregnant women are unknown."
+          }
+        ]
+      }
+    },
+    {
+      "name": "prednisone",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/fec09050-5ac2-451b-a2b9-5a21b2def212.xml",
+      "date_europe_zurich": "2026-10-08T15:41:36.772805+02:00",
+      "http_status": 200,
+      "final_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/fec09050-5ac2-451b-a2b9-5a21b2def212.xml",
+      "sha256": "237d654773e37866f7970dcf86697809a6fdae68cdc36849acba4f2452028841",
+      "bytes": 141663,
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/prednisone.xml",
+      "content_type": "application/xml",
+      "version_actually_read": "2026-09-15",
+      "reading_level": "extraits pertinents du texte réglementaire complet disponible ; pas lecture exhaustive de toutes les rubriques",
+      "excerpts_read": {
+        "effectiveTime": {
+          "value": "20260915"
+        },
+        "versionNumber": {
+          "value": "10"
+        },
+        "excerpts_read": [
+          {
+            "section": "CLINICAL PHARMACOLOGY",
+            "quote": "Naturally occurring glucocorticoids (hydrocortisone and cortisone), which also have salt-retaining properties, are used as replacement therapy in adrenocortical deficiency states. Their synthetic analogs are primarily used for their potent anti-inflammatory effects in disorders of many organ systems."
+          },
+          {
+            "section": "Endocrine Disorders ",
+            "quote": "Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the first choice: synthetic analogs may be used in conjunction with mineralocorticoids where applicable; in infancy mineralocorticoid supplementation is of particular importance); congenital adrenal hyperplasia; hypercalcemia associated with cancer; nonsuppurative thyroiditis."
+          },
+          {
+            "section": "Cardio-Renal ",
+            "quote": "Average and large doses of hydrocortisone or cortisone can cause elevation of blood pressure, salt and water retention, and increased excretion of potassium. These effects are less likely to occur with the synthetic derivatives except when used in large doses. Dietary salt restriction and potassium supplementation may be necessary. All corticosteroids increase calcium excretion."
+          },
+          {
+            "section": "Cardio-Renal",
+            "quote": "As sodium retention with resultant edema and potassium loss may occur in patients receiving corticosteroids, these agents should be used with caution in patients with congestive heart failure, hypertension, or renal insufficiency."
+          },
+          {
+            "section": "\n                               \n                                  Amphotericin B Injection and Potassium-Depleting Agents \n                               \n                           ",
+            "quote": "When corticosteroids are administered concomitantly with potassium-depleting agents (e.g., amphotericin B, diuretics ), patients should be observed closely for development of hypokalemia. In addition, there have been cases reported in which concomitant use of amphotericin B and hydrocortisone was followed by cardiac enlargement and congestive heart failure."
+          },
+          {
+            "section": "Allergic Reactions",
+            "quote": "anaphylactoid or hypersensitivity reactions, anaphylaxis, angioedema."
+          },
+          {
+            "section": "Cardiovascular System",
+            "quote": "bradycardia, cardiac arrest, cardiac arrhythmias, cardiac enlargement, circulatory collapse, congestive heart failure, ECG changes caused by potassium deficiency, edema, fat embolism, hypertension or aggravation of hypertension, hypertrophic cardiomyopathy in premature infants, myocardial rupture following recent myocardial infarction (see WARNINGS: Cardio-Renal ), necrotizing angiitis, pulmonary edema, syncope, tachycardia, thromboembolism, thrombophlebitis, vasculitis."
+          },
+          {
+            "section": "Dermatologic",
+            "quote": "acne, acneiform eruptions, allergic dermatitis, alopecia, angioedema, angioneurotic edema, atrophy and thinning of skin, dry scaly skin, ecchymoses and petechiae (bruising), erythema, facial edema, hirsutism, impaired wound healing, increased sweating, Karposi’s sarcoma (see WARNINGS: General: Kaposi's Sarcoma ), lupus erythematosus-like lesions, perineal irritation, purpura, rash, striae, subcutaneous fat atrophy, suppression of reactions to skin tests, striae, telangiectasis, thin fragile skin, thinning scalp hair, urticaria."
+          },
+          {
+            "section": "Fluid and Electrolyte Disturbances",
+            "quote": "congestive heart failure in susceptible patients, fluid retention, hypokalemia, hypokalemic alkalosis, metabolic alkalosis, hypotension or shock-like reaction, potassium loss, sodium retention with resulting edema."
+          },
+          {
+            "section": "Neurological/Psychiatric",
+            "quote": "amnesia, anxiety, benign intracranial hypertension, convulsions, delirium, dementia (characterized by deficits in memory retention, attention, concentration, mental speed and efficiency, and occupational performance), depression, dizziness, EEG abnormalities, emotional instability and irritability, euphoria, hallucinations, headache, impaired cognition, incidence of severe psychiatric symptoms, increased intracranial pressure with papilledema (pseudotumor cerebri) usually following discontinuation of treatment, increased motor activity, insomnia, ischemic neuropathy, long-term memory loss, mania, mood swings, neuritis, neuropathy, paresthesia, personality changes, psychiatric disorders including steroid psychoses or aggravation of pre-existing psychiatric conditions, restlessness, schizophrenia, verbal memory loss, vertigo, withdrawn behavior."
+          },
+          {
+            "section": "Ophthalmic",
+            "quote": "blurred vision, cataracts (including posterior subcapsular cataracts), central serous chorioretinopathy, establishment of secondary bacterial, fungal and viral infections, exophthalmos, glaucoma, increased intraocular pressure (see PRECAUTIONS: Ophthalmic ), optic nerve damage, papilledema."
+          },
+          {
+            "section": "Alternate Day Therapy",
+            "quote": "During conventional pharmacologic dose corticosteroid therapy, ACTH production is inhibited with subsequent suppression of cortisol production by the adrenal cortex. Recovery time for normal HPA activity is variable depending upon the dose and duration of treatment. During this time the patient is vulnerable to any stressful situation. Although it has been shown that there is considerably less adrenal suppression following a single morning dose of prednisolone (10 mg) as opposed to a quarter of that dose administered every 6 hours, there is evidence that some suppressive effect on adrenal activity may be carried over into the following day when pharmacologic doses are used. Further, it has been shown that a single dose of certain corticosteroids will produce adrenocortical suppression for two or more days. Other corticoids, including methylprednisolone, hydrocortisone, prednisone, and prednisolone, are considered to be short acting (producing adrenocortical suppression for 1¼ to 1½ days following a single dose) and thus are recommended for alternate day therapy."
+          }
+        ]
+      }
+    },
+    {
+      "name": "penicillineV",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/a0f02ee0-2f7e-449a-a742-be7a98cefec5.xml",
+      "date_europe_zurich": "2026-10-08T15:41:36.773144+02:00",
+      "http_status": 200,
+      "final_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/a0f02ee0-2f7e-449a-a742-be7a98cefec5.xml",
+      "sha256": "53de6b80b9465f8659737c4d199387037ffb0ab4fc70666b8c11ef3bcc76d2d9",
+      "bytes": 39164,
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/penicillineV.xml",
+      "content_type": "application/xml",
+      "version_actually_read": "2026-09-29",
+      "reading_level": "extraits pertinents du texte réglementaire complet disponible ; pas lecture exhaustive de toutes les rubriques",
+      "excerpts_read": {
+        "effectiveTime": {
+          "value": "20260929"
+        },
+        "versionNumber": {
+          "value": "3"
+        },
+        "excerpts_read": [
+          {
+            "section": "CLINICAL PHARMACOLOGY",
+            "quote": "Penicillin V exerts a bactericidal action against penicillin-sensitive microorganisms during the stage of active multiplication. It acts through the inhibition of biosynthesis of cell-wall mucopeptide. It is not active against the penicillinase-producing bacteria, which include many strains of staphylococci. The drug exerts high in vitro activity against staphylococci (except penicillinase-producing strains), streptococci (groups A, C, G, H, L and M), and pneumococci. Other organisms sensitive in vitro to penicillin V are Corynebacterium diphtheriae , Bacillus anthracis, Clostridia, Actinomyces bovis , Streptobacillus moniliformis , Listeria monocytogenes, Leptospira, and Neisseria gonorrhoeae . Treponema pallidum is extremely sensitive."
+          },
+          {
+            "section": "INDICATIONS AND USAGE",
+            "quote": "NOTE: Streptococci in groups A, C, G, H, L, and M are very sensitive to penicillin. Other groups, including group D (enterococcus), are resistant."
+          }
+        ]
+      }
+    },
+    {
+      "name": "octreotide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4e2c9856-1836-49f0-9472-4dbeeb408f39.xml",
+      "date_europe_zurich": "2026-10-08T15:41:36.773493+02:00",
+      "http_status": 200,
+      "final_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4e2c9856-1836-49f0-9472-4dbeeb408f39.xml",
+      "sha256": "cc1586b680f1cdd484723892cd9a52fce5210b82e5c52a970dbfa19d9438ed84",
+      "bytes": 102775,
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/octreotide.xml",
+      "content_type": "application/xml",
+      "version_actually_read": "2026-07-22",
+      "reading_level": "extraits pertinents du texte réglementaire complet disponible ; pas lecture exhaustive de toutes les rubriques",
+      "excerpts_read": {
+        "effectiveTime": {
+          "value": "20260722"
+        },
+        "versionNumber": {
+          "value": "23"
+        },
+        "excerpts_read": [
+          {
+            "section": "\n\t\t\t\t\t\t\t\t1.1     Acromegaly\n\t\t\t\t\t\t\t",
+            "quote": "Sandostatin Injection is indicated to reduce blood levels of growth hormone (GH) and insulin growth factor-1 (IGF-1; somatomedin C) in acromegaly patients who have had inadequate response to or cannot be treated with surgical resection, pituitary irradiation, and bromocriptine mesylate at maximally tolerated doses."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t1.2     Carcinoid Tumors\n\t\t\t\t\t\t\t",
+            "quote": "Sandostatin Injection is indicated for treatment of severe diarrhea and flushing episodes associated with metastatic carcinoid tumors."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t1.3     Vasoactive Intestinal Peptide Tumors \n\t\t\t\t\t\t\t",
+            "quote": "Sandostatin Injection is indicated for the treatment of the profuse watery diarrhea associated with vasoactive intestinal peptide tumors (VIPomas)-secreting tumors."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t2.4     Recommended Dosage and Monitoring for Vasoactive Intestinal Peptide Tumors\n\t\t\t\t\t\t\t",
+            "quote": "Daily dosages of 200 mcg to 300 mcg in two to four divided doses given subcutaneously are recommended during the initial 2 weeks of therapy (range, 150 mcg to 750 mcg) to control symptoms of the disease. On an individual basis, dosage may be adjusted to achieve a therapeutic response, but usually doses above 450 mcg/day are not required. Measurement of Plasma vasoactive intestinal peptide (VIP) may be useful in monitoring the progress of therapy."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t5.1     Cardiac Function Abnormalities\n\t\t\t\t\t\t\t",
+            "quote": "Other cardiac conduction abnormalities have occurred during treatment with Sandostatin Injection. In acromegalic patients, bradycardia (< 50 bpm) developed in 25%; conduction abnormalities occurred in 10% and arrhythmias occurred in 9% of patients during Sandostatin Injection therapy [see Adverse Reactions (6)] . Other electrocardiogram (ECG) changes observed included QT prolongation, axis shifts, early repolarization, low voltage, R/S transition, and early R-wave progression. These ECG changes are not uncommon in acromegalic patients. Dose adjustments in drugs, such as beta-blockers that have bradycardia effects may be necessary. In one acromegalic patient with severe congestive heart failure (CHF), initiation of Sandostatin Injection therapy resulted in worsening of CHF with improvement when drug was discontinued. Confirmation of a drug effect was obtained with a positive rechallenge."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t5.2     Cholelithiasis and Complications of Cholelithiasis\n\t\t\t\t\t\t\t",
+            "quote": "Sandostatin Injection may inhibit gallbladder contractility and decrease bile secretion, which may lead to gallbladder abnormalities or sludge. Acute cholecystitis, ascending cholangitis, biliary obstruction, cholestatic hepatitis, or pancreatitis have been reported with Sandostatin Injection therapy. In clinical trials (primarily patients with acromegaly or psoriasis), the incidence of biliary tract abnormalities was 63% (27% gallstones, 24% sludge without stones, 12% biliary duct dilatation). The incidence of stones or sludge in patients who received Sandostatin Injection for 12 months or longer was 52%. Less than 2% of patients treated with Sandostatin Injection for 1 month or less developed gallstones. One patient developed ascending cholangitis during Sandostatin Injection therapy and died. If complications of cholelithiasis are suspected, discontinue Sandostatin Injection and treat appropriately."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t5.3     Hyperglycemia and Hypoglycemia\n\t\t\t\t\t\t\t",
+            "quote": "Monitor glucose levels during Sandostatin Injection therapy. Adjust dosing of insulin or other anti-diabetic therapy accordingly."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t5.4     Thyroid Function Abnormalities\n\t\t\t\t\t\t\t",
+            "quote": "Octreotide suppresses secretion of thyroid stimulating hormone (TSH), which may result in hypothyroidism. Baseline and periodic assessment of thyroid function (TSH, total, and/or free T 4 ) is recommended during chronic therapy [see Adverse Reactions (6)] ."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t6.1     Clinical Trials Experience\n\t\t\t\t\t\t\t",
+            "quote": "Gallbladder Abnormalities"
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t6.1     Clinical Trials Experience\n\t\t\t\t\t\t\t",
+            "quote": "Gallbladder abnormalities, especially stones and/or biliary sludge, frequently develop in patients on chronic Sandostatin Injection therapy [see Warnings and Precautions (5.1)] . In clinical trials (primarily patients with acromegaly or psoriasis), the incidence of biliary tract abnormalities was 63% (27% gallstones, 24% sludge without stones, 12% biliary duct dilatation). The incidence of stones or sludge in patients who received Sandostatin Injection for 12 months or longer was 52%. Less than 2% of patients treated with Sandostatin Injection for 1 month or less developed gallstones."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t6.1     Clinical Trials Experience\n\t\t\t\t\t\t\t",
+            "quote": "In acromegalics, sinus bradycardia (< 50 bpm) developed in 25%; conduction abnormalities occurred in 10% and arrhythmias developed in 9% of patients during Sandostatin Injection therapy [see Warnings and Precautions (5.1)] ."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t6.1     Clinical Trials Experience\n\t\t\t\t\t\t\t",
+            "quote": "Diarrhea, loose stools, nausea, and abdominal discomfort were each seen in 34% to 61% of acromegalic patients in U.S. studies. 2.6% of the patients discontinued therapy due to these symptoms. These symptoms were seen in 5% to 10% of patients with carcinoid tumors and VIPomas."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t6.1     Clinical Trials Experience\n\t\t\t\t\t\t\t",
+            "quote": "Hypothyroidism"
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t6.1     Clinical Trials Experience\n\t\t\t\t\t\t\t",
+            "quote": "In acromegalics, biochemical hypothyroidism alone occurred in 12% while goiter occurred in 8% and 4% required initiation of thyroid replacement therapy during Sandostatin Injection therapy [see Warnings and Precautions (5.4)] . In patients without acromegaly, hypothyroidism has only been reported in several isolated patients and goiter has not been reported."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t7.1     Cyclosporine\n\t\t\t\t\t\t\t",
+            "quote": "Octreotide has been associated with alterations in nutrient absorption, so it may have an effect on absorption of orally administered drugs. Concomitant administration of Sandostatin Injection with cyclosporine may decrease blood levels of cyclosporine and result in transplant rejection."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t7.2     Insulin and Oral Hypoglycemic Drugs\n\t\t\t\t\t\t\t",
+            "quote": "Octreotide inhibits the secretion of insulin and glucagon. Therefore, blood glucose levels should be monitored when Sandostatin Injection treatment is initiated or when the dose is altered and anti-diabetic treatment should be adjusted accordingly."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t7.3     Bromocriptine\n\t\t\t\t\t\t\t",
+            "quote": "Concomitant administration of octreotide and bromocriptine increases the availability of bromocriptine."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t7.4     Other Concomitant Drug Therapy\n\t\t\t\t\t\t\t",
+            "quote": "Concomitant administration of bradycardia-inducing drugs (e.g., beta-blockers) may have an additive effect on the reduction of heart rate associated with octreotide. Dose adjustments of concomitant medication may be necessary."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t8.1     Pregnancy\n\t\t\t\t\t\t\t",
+            "quote": "In postmarketing data, a limited number of exposed pregnancies have been reported in patients with acromegaly. Most women were exposed to octreotide during the first trimester of pregnancy at doses ranging from 100 to 300 mcg/day of Sandostatin Injection or 20 mg to 30 mg once a month of octreotide acetate for injectable suspension, however some women elected to continue octreotide therapy throughout pregnancy. In cases with a known outcome, no congenital malformations were reported."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t8.4     Pediatric Use\n\t\t\t\t\t\t\t",
+            "quote": "The efficacy and safety of Sandostatin Injection using the octreotide acetate for injectable suspension formulation was examined in a single randomized, double-blind, placebo-controlled, 6 month pharmacokinetics study in 60 pediatric patients age 6 to 17 years with hypothalamic obesity resulting from cranial insult. The mean octreotide concentration after 6 doses of 40 mg octreotide acetate for injectable suspension administered by intramuscular (IM) injection every 4 weeks was approximately 3 ng/mL. Steady-state concentrations was achieved after 3 injections of a 40-mg dose. Mean body mass index (BMI) increased 0.1 kg/m 2 in octreotide acetate for injectable suspension-treated subjects compared to 0.0 kg/m 2 in saline control-treated subjects. Efficacy was not demonstrated. Diarrhea occurred in 11 of 30 (37%) patients treated with octreotide acetate for injectable suspension. No unexpected adverse events were observed. However, with octreotide acetate for injectable suspension at 40 mg once a month, the incidence of new cholelithiasis in this pediatric population (33%) was higher than that seen in other adult indications, such as acromegaly (22%) or malignant carcinoid syndrome (24%), where octreotide acetate for injectable suspension was 10 mg to 30 mg once a month."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t12.1     Mechanism of Action\n\t\t\t\t\t\t\t",
+            "quote": "By virtue of these pharmacological actions, octreotide has been used to treat the symptoms associated with metastatic carcinoid tumors (flushing and diarrhea), and VIP secreting adenomas (watery diarrhea)."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t12.2     Pharmacodynamics\n\t\t\t\t\t\t\t",
+            "quote": "Octreotide substantially reduces GH and/or IGF-1 (somatomedin C) levels in patients with acromegaly."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t12.2     Pharmacodynamics\n\t\t\t\t\t\t\t",
+            "quote": "Single doses of octreotide have been shown to inhibit gallbladder contractility and to decrease bile secretion in normal volunteers. In controlled clinical trials, the incidence of gallstone or biliary sludge formation was markedly increased [see Warnings and Precautions (5.2)] ."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t12.3     Pharmacokinetics\n\t\t\t\t\t\t\t",
+            "quote": "After subcutaneous injection, octreotide is absorbed rapidly and completely from the injection site. Peak concentrations of 5.2 ng/mL (100-mcg dose) were reached 0.4 hours after dosing. Using a specific radioimmunoassay, IV and subcutaneous doses were found to be bioequivalent. Peak concentrations and area under the curve (AUC) values were dose proportional after IV single doses up to 200 mcg and subcutaneous single doses up to 500 mcg and after subcutaneous multiple doses up to 500 mcg 3 times a day (1,500 mcg/day). In patients with acromegaly, a mean peak concentration of 2.8 ng/mL (100-mcg dose) was reached in 0.7 hours after subcutaneous dosing."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t12.3     Pharmacokinetics\n\t\t\t\t\t\t\t",
+            "quote": "In healthy volunteers, the distribution of octreotide from plasma was rapid (tα½ = 0.2 h), the volume of distribution (V dss ) was estimated to be 13.6 L, and the total body clearance ranged from 7 L/hr to 10 L/hr. In blood, the distribution into the erythrocytes was found to be negligible and about 65% was bound in the plasma in a concentration-independent manner. Binding was mainly to lipoprotein and, to a lesser extent, to albumin. In patients with acromegaly, the volume of distribution (V dss ) was estimated to be 21.6 ± 8.5 L, and the total body clearance was increased to 18 L/h. The mean percent of the drug bound was 41.2%."
+          },
+          {
+            "section": "\n\t\t\t\t\t\t\t\t12.3     Pharmacokinetics\n\t\t\t\t\t\t\t",
+            "quote": "In patients with acromegaly, the disposition and elimination half-lives were similar to normal subjects."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lund1986",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A3094309%20AND%20SRC%3AMED&format=json&resultType=core",
+      "date_europe_zurich": "2026-10-08T15:41:36.774222+02:00",
+      "http_status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A3094309%20AND%20SRC%3AMED&format=json&resultType=core",
+      "sha256": "27dc027d5db3dd8be0afc461f0282336b0ea6db4988c1085e7409a967d680d9a",
+      "bytes": 5341,
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/Lund1986.json",
+      "content_type": "application/json;charset=UTF-8",
+      "version_actually_read": "1986",
+      "reading_level": "résumé primaire intégral",
+      "excerpts_read": {
+        "level": "résumé primaire",
+        "article": {
+          "id": "3094309",
+          "source": "MED",
+          "pmid": "3094309",
+          "doi": "10.1530/acta.0.1130056",
+          "title": "The effect of l-thyroxine treatment on skin accumulation of acid glycosaminoglycans in primary myxoedema.",
+          "authorString": "Lund P, Hørslev-Petersen K, Helin P, Parving HH.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Lund P",
+                "lastName": "Lund",
+                "firstName": "P",
+                "initials": "P"
+              },
+              {
+                "fullName": "Hørslev-Petersen K",
+                "lastName": "Hørslev-Petersen",
+                "firstName": "K",
+                "initials": "K"
+              },
+              {
+                "fullName": "Helin P",
+                "lastName": "Helin",
+                "firstName": "P",
+                "initials": "P"
+              },
+              {
+                "fullName": "Parving HH",
+                "lastName": "Parving",
+                "firstName": "H H",
+                "initials": "HH"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "journalInfo": {
+            "issue": "1",
+            "volume": "113",
+            "journalIssueId": 789740,
+            "dateOfPublication": "1986 Sep",
+            "monthOfPublication": 9,
+            "yearOfPublication": 1986,
+            "journal": {
+              "medlineAbbreviation": "Acta Endocrinol (Copenh)",
+              "title": "Acta endocrinologica",
+              "issn": "0001-5598",
+              "isoabbreviation": "Acta Endocrinol (Copenh)",
+              "nlmid": "0370312"
+            },
+            "printPublicationDate": "1986-09-01"
+          },
+          "pubYear": "1986",
+          "pageInfo": "56-58",
+          "abstractText": "We assessed skin accumulation of acid glycosaminoglycans in ten patients with primary myxoedema (median age 70 years) before and during l-thyroxine treatment (median 7 months). Eight subjects matched for sex and age served as controls. Acid glycosaminoglycans were determined biochemically on small skin biopsies. Hyaluronic acid was elevated in untreated myxoedema, median 0.60, range 0.39-0.90 microgram hexosamine/mg dried defatted tissue compared to a median control value of 0.52, range 0.43-0.65 microgram hexosamine/mg dried defatted tissue, P less than 0.02. Chondroitin-4,6-sulphate and dermatan sulphate showed no elevation, while heparan sulphate was actually reduced in myxoedema, P less than 0.01. l-thyroxine treatment induced a significant reduction in hyaluronic acid, median 0.41, range 0.24-0.71 microgram hexosamine/mg dried defatted tissue, while no consistent changes occurred in the remaining three acid glycosamine glycans. The accumulation of hyaluronic acid might contribute to the peculiar non-pitting oedema of the skin in myxoedema, due to the strong water-binding capacity of the substance.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Skin",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Humans"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Myxedema",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "DT",
+                      "qualifierName": "drug therapy"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Thyroxine",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "TU",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Glycosaminoglycans",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Chondroitin Sulfates",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Dermatan Sulfate",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Hyaluronic Acid",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Adult"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Middle Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Female"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Male"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Heparan Sulfate",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Glycosaminoglycans",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Hyaluronic Acid",
+                "registryNumber": "9004-61-9"
+              },
+              {
+                "name": "Chondroitin Sulfates",
+                "registryNumber": "9007-28-7"
+              },
+              {
+                "name": "Dermatan Sulfate",
+                "registryNumber": "24967-94-0"
+              },
+              {
+                "name": "Thyroxine",
+                "registryNumber": "Q51BO43MG4"
+              },
+              {
+                "name": "Heparan Sulfate",
+                "registryNumber": "9050-30-0"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1530/acta.0.1130056"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "citedByCount": 12,
+          "hasReferences": "N",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "N",
+          "hasBook": "N",
+          "hasSuppl": "N",
+          "hasLabsLinks": "Y",
+          "hasData": "N",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCompletion": "1986-11-18",
+          "dateOfCreation": "1986-09-01",
+          "dateOfRevision": "2026-01-28",
+          "firstPublicationDate": "1986-09-01",
+          "firstIndexDate": "2008-01-29",
+          "hasEvaluations": "N"
+        }
+      }
+    },
+    {
+      "name": "SwissPAR_Verdye2023",
+      "url": "https://www.swissmedic.ch/dam/swissmedic/en/dokumente/zulassung/swisspar/68489-verdye-01-swisspar-20230526.pdf.download.pdf/SwissPAR%20Verdye.pdf",
+      "http_status": 200,
+      "final_url": "https://www.swissmedic.ch/dam/swissmedic/en/dokumente/zulassung/swisspar/68489-verdye-01-swisspar-20230526.pdf.download.pdf/SwissPAR%20Verdye.pdf",
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/SwissPAR_Verdye2023.pdf",
+      "sha256": "0dea1fc7781258968e7a6a0fe84ba1c820e7778047db87fdd57cb9b452e52d5f",
+      "bytes": 790465,
+      "content_type": "application/pdf",
+      "reading_level": "passages ciblés effectivement lus",
+      "version": "SwissPAR26.05.2023, première autorisation24.04.2023",
+      "passages_read": "pp1/4, décision, indications approuvées ; p8 et annexe, rôle de l’information professionnelle actuellement autorisée",
+      "text_cache": "/workspace/medina-env/i89-injection-finale/sources/SwissPAR_Verdye2023.txt",
+      "text_sha256": "96c9b68c236031113208817e09c6fa4d7cc4ed52e5dbf2c6935568a4451293e2"
+    },
+    {
+      "name": "SwissFI_Verdye68489",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=68489",
+      "http_status": 200,
+      "final_url": "https://www.swissmedicinfo-pro.ch/showText.aspx?textType=FI&lang=FR&authNr=68489&supportMultipleResults=1",
+      "cache": "/workspace/medina-env/i89-injection-finale/sources/SwissFI_Verdye68489.raw",
+      "sha256": "12380c035e3c994e451692b6100f3b74ea00320b3d5b5f8dac6f6fbae92f36ca",
+      "bytes": 75168,
+      "content_type": "text/html; charset=utf-8",
+      "reading_level": "passages ciblés effectivement lus",
+      "version": "Comparaison étrangère : octobre2022 ; informations Swissmedic : décembre2022 ; texte actuel affiché consulté08.10.2026",
+      "excerpts_read": {
+        "Indications/Possibilités d’emploi": "Indications/Possibilités d’emploi\nCe médicament est à usage diagnostique.\nIndications diagnostiques\nExamens diagnostiques de la circulation cardiovasculaire et de la microcirculation\n- Évaluation du débit cardiaque et du volume d’éjection systolique\n- Évaluation du volume sanguin circulant\n- Évaluations de l’irrigation sanguine cérébrale\nExamens diagnostiques de la fonction hépatique\n- Évaluation de l’irrigation sanguine du foie\n- Évaluation de la fonction excrétrice du foie\nAngiographie oculaire\n- Évaluations de l’irrigation sanguine de la choroïde\n",
+        "Contre-indications": "Contre-indications\nVerdye est contre-indiqué pour des raisons de sécurité:\n·chez les patients présentant une hypersensibilité au vert d’indocyanine ou à l’iodure de sodium, sauf en cas de mesures préventives spéciales\n·chez les patients ayant une hypersensibilité à l’iode\n·chez les patients souffrant d’une hyperthyroïdie et chez les patients atteints d’un adénome thyroïdien autonome\n·chez les prématurés et les nouveau-nés nécessitant une exsanguino-transfusion en raison d’une hyperbilirubinémie étant donné que les expérimentations in vitro ont montré que·le vert d’indocyanine peut déplacer la bilirubine de ses sites de liaison aux protéines\n·lorsqu’une injection de Verdye a été mal tolérée par le passé, car des réactions anaphylactiques peuvent survenir.\n",
+        "Mises en garde et précautions": "Mises en garde et précautions\n·L’administration de Verdye doit se faire uniquement sous surveillance médicale, étant donné que son emploi peut provoquer des réactions anaphylactiques sévères (voir rubrique «Effets indésirables»). Les moyens nécessaires à la réanimation doivent être à disposition.\nMesures d’urgence en cas de survenue de réactions anaphylactiques\nStade 1: Réactions cutanées (bouffées de chaleur, érythème, urticaire, œdème), réactions généralisées (nervosité, céphalées)\nInterrompre l’administration de Verdye, laisser le cathéter d’injection ou la canule dans la veine, le cas échéant, administrer des antihistaminiques, si nécessaire, administrer de l’oxygène\nStade 2: Tachycardie, hypertension artérielle\nAdministration d’antihistaminiques, de glucocorticoïdes (p. ex. 100 mg de prednisolone par voie IV), si nécessaire administration d’oxygène\nStade 3: Choc, bronchospasme\nAdministration d’adrénaline (fractionnée, 0,1 mg par voie IV), de glucocorticoïdes (p. ex. 500 à 1 000 mg de prednisolone par voie IV), substitution des volumes, en cas de prédominance des manifestations bronchospastiques: administration de bêta-2-sympathomimétiques et de théophylline; si nécessaire intubation et assistance respiratoire avec 100 % d’oxygène\nStade 4: Arrêt cardio-respiratoire\nRéanimation cardiopulmonaire\nUtilisation concomitante de bêtabloquants\nVerdye doit être utilisé avec prudence chez les patients sous traitement bêtabloquant. Les symptômes d’un choc anaphylactique peuvent s’intensifier sous traitement bêtabloquant. La\nnoradrénaline libérée par les terminaisons nerveuses agissant par inhibition compétitive au niveau des récepteurs bêta-adrénergiques, elle peut ne pas être libérée en quantité suffisante en cas de choc anaphylactique.\n·Étant donné que des effets secondaires sont survenus sous vert d’indocyanine chez des patients présentant une insuffisance rénale avancée, l’indication de l’administration de Verdye doit être posée avec une extrême rigueur chez ces patients.\n·Les préparations d’héparine contenant du bisulfite de sodium diminuent l’absorption maximale du vert d’indocyanine dans le plasma et le sang complet; elles ne peuvent donc pas servir d’anticoagulants lors du prélèvement d’échantillons d’analyses.\n·Le vert d’indocyanine est stable dans le plasma et le sang complet et permet donc d’analyser les échantillons issus de techniques de prélèvement discontinues, même après quelques heures. Le traitement des solutions de colorant doit toujours se faire dans des conditions d’asepsie parfaite.\n·La teneur en iodure de Verdye peut avoir une influence sur les tests de la fonction thyroïdienne mis en œuvre avant ou après l’administration de Verdye. Les examens par absorption\nd’iode radioactif doivent donc uniquement être effectués avec un décalage d’au moins une semaine après l’administration de Verdye.\nVerdye doit être utilisé immédiatement après reconstitution de la solution. Tout résidu doit être jeté.\nVerdye doit être administré uniquement par des médecins expérimentés dans le domaine de l’angiographie en fluorescence, des examens\ndiagnostiques de la fonction hépatique ou des examens diagnostiques de la circulation cardiovasculaire et de la microcirculation.\nIl faut s’assurer que l’aiguille est correctement positionnée dans la veine avant de commencer l’injection de Verdye. Si la préparation s’infiltre dans les tissus environnants, il faut interrompre immédiatement l’injection.\nIl est recommandé de laisser l’aiguille en place sur le site d’injection pendant au moins 5 minutes afin de disposer en cas d’urgence d’une voie d’administration veineuse. Ceci vaut particulièrement si par le passé lors d’une administration de vert d’indocyanine (ICG) des événements allant au-delà des nausées et/ou des vomissements sont survenus ou si le patient souffre d’une allergie alimentaire ou médicamenteuse, d’eczéma, d’asthme ou de rhume des foins. Un set d’urgence contenant p. ex. de l’épinéphrine dosée à 0,1 %, des antihistaminiques, des corticostéroïdes, de l’aminophylline et de l’oxygène doit être à disposition.\nUn test de tolérance antérieur à Verdye qui s’est déroulé sans problème ne peut être considéré comme garantie absolue d’une administration sûre du médicament.\nLes examens ophtalmologiques planifiés, tels que les mesures de l’acuité visuelle, doivent être effectués avant l’administration de Verdye.\nIl peut être judicieux d’administrer à titre préventif aux patients sensibles un médicament pour éviter les nausées et les vomissements et d’effectuer l’injection lentement.\nEn cas d’injection en bolus par voie veineuse périphérique, il faut tout particulièrement veiller à ce que la solution injectable ne pénètre pas dans le tissu, car ceci peut provoquer de sévères lésions tissulaires locales. En cas de pénétration de la solution dans le tissu, de fortes douleurs persistant pendant des heures peuvent survenir au niveau du site d’injection ou dans les zones avoisinantes. La pénétration dans le tissu doit entraîner l’interruption de l’injection, le traitement du tissu lésé et le soulagement de la douleur.\n",
+        "Mise à jour de l’information": "Mise à jour de l’information\nMédicament de comparaison étranger: octobre 2022\nSans ajout d’informations pertinentes pour la sécurité par Swissmedic: décembre 2022\n"
+      },
+      "text_cache": "/workspace/medina-env/i89-injection-finale/sources/SwissFI_Verdye68489.txt",
+      "text_sha256": "f393d86ed2e2813a78a59c0abb41bb1694d0522a3edb76c9b7185c5d05cd0b33"
+    }
+  ],
+  "prior_reviews_read": [
+    "docs/collaboration/reviews/2026-10-08/PR12_7775E6E_I89/RECEPTION.md",
+    "docs/collaboration/reviews/2026-10-08/PR12_DE67651_I89_2/RECEPTION.md",
+    "docs/collaboration/reviews/2026-10-08/PR12_04CB957_I89_3/RECEPTION.md"
+  ],
+  "producer_documents_read": [
+    "2026-10-08-I89-3/CORRECTIONS_AUDIT_CODEX_2.md",
+    "2026-10-08-I89-3/rapport.md",
+    "2026-10-08-I89/verification/reserves_d.txt"
+  ],
+  "not_executed": [
+    "Aucun code entrant ou test du lot",
+    "Aucune injection ou modification candidate/canonique/Git",
+    "Aucun build ni navigateur indépendant par ce poste",
+    "Aucune vérification de nouveaux chapitres"
+  ],
+  "stop": "Rapport final remis, preuves conservées ; aucune recherche supplémentaire ni production après cette remise."
+}

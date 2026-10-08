@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CODEX_ARRET_FINAL_2026-10-08",
+  "date": "2026-10-08T15:51:43.860088+02:00",
+  "repository": "vialdjoukang-spec/Medina",
+  "instruction_utilisateur": "injecte ce qu'il faut injecter puis STOP. je vais changer les règles",
+  "canonical_base_verified": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+  "new_injections_during_final_attempt": [],
+  "chapters": [
+    {
+      "code": "I83",
+      "title": "Varices des membres inférieurs",
+      "fragment": "C-01-Cardiologie",
+      "state": "already_injected_publication_verified",
+      "source_sha": "8a6dc7f28bbdaa5251f9a4b75031875073bf7ccb",
+      "source_integration_sha": "eb276b90465edcd238fd122b4bd178015a5cb8c0",
+      "publication_proof": "docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/PUBLICATION_PAGES.json"
+    },
+    {
+      "code": "I89",
+      "title": "Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques",
+      "fragment": "C-01-Cardiologie",
+      "state": "not_injected_mandatory_check_failed",
+      "source_sha": "04cb95729d44648cc65339f28cf6631574babbb2",
+      "blocking_gate": "tools/livraison.py check-claude",
+      "gate_exit_code": 2,
+      "cause": "Le contrat du checker exige un cours déjà intégré et rejette cette création ; aucun mauvais titre médical déduit du message générique.",
+      "proof": "docs/collaboration/reviews/2026-10-08/I89_INJECTION_FINALE/CONTROLE_TECHNIQUE.json",
+      "manifest_or_checker_modified": false
+    },
+    {
+      "code": "J45",
+      "title": "Asthme",
+      "fragment": "P-02-Pneumologie",
+      "state": "not_injected_open_blocker",
+      "blocking_ids": [
+        "J45-MED-03"
+      ],
+      "proof": "docs/collaboration/receipts/CLAUDE_J45_9AA6504_J45_3_RECEPTION_2026-10-08.json"
+    },
+    {
+      "code": "A41",
+      "title": "Sepsis et choc septique de l’adulte",
+      "fragment": "I-03-Infectiologie",
+      "state": "not_injected_external_Claude_audit_pending",
+      "source_sha": "e3307768ff4c3a6c3af2e790859ff36947c0279d",
+      "remaining_reservations": [
+        "ESP-03 majeure partielle",
+        "ESP-07 mineure partielle"
+      ],
+      "review_pr": "https://github.com/vialdjoukang-spec/Medina/pull/15",
+      "proof": "docs/collaboration/receipts/CODEX_A41_E330776_REMIS_CLAUDE_2026-10-08.json"
+    }
+  ],
+  "stop": {
+    "Codex_production_paused": true,
+    "next_chapter_opened": false,
+    "local_watch_pid": 980,
+    "local_watch_terminated": true,
+    "GitHub_watch_automatic_triggers_removed": true,
+    "manual_workflow_retained": true,
+    "resume_only_on_new_user_instruction": true
+  },
+  "medical_scope": "Les audits IA ciblés et les contrôles techniques ne certifient ni le cours médical exhaustif ni la complétude CIM-11.",
+  "Claude_post_injection_queue_modified": false
+}

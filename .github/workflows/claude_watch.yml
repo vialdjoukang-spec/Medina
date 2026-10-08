@@ -1,14 +1,9 @@
 name: Veille des livraisons Claude
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  # Pause demandée par Vial le 08.10.2026 : injections admissibles puis STOP.
+  # Réactiver la planification seulement après ses nouvelles instructions.
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/claude_watch.yml'
-      - 'tools/claude_watch.py'
 
 permissions:
   contents: read

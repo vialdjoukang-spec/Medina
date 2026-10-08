@@ -1,0 +1,699 @@
+{
+  "schema_version": 1,
+  "chapter": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+  "reviewer": "/root/sentinelle_reception",
+  "written_at_utc": "2026-10-08T13:48:17.067761+00:00",
+  "written_at_europe_zurich": "2026-10-08T15:48:17.067761+02:00",
+  "decision": "non_injectable_condition_obligatoire_check_claude_echouee_tentative_arretee",
+  "injection_performed": false,
+  "new_production_started": false,
+  "task_limit": "Injecter ce qui est réellement admissible puis STOP ; aucun contournement ni nouvelle production.",
+  "identity": {
+    "producer": "Claude",
+    "source_commit": "04cb95729d44648cc65339f28cf6631574babbb2",
+    "producer_base": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+    "archive_commit": "a3b8ac4060529aaf339f17851305c07abac25cc8",
+    "archive_root": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3",
+    "lot_root_relative": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3",
+    "lot_root_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3",
+    "manifest_path_relative": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/livraison.json",
+    "manifest_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/livraison.json",
+    "manifest_sha256": "7473feb52e8f3fd2e90ea36f01089f932363cfb8dd89693cb1fe30ff11d808ea",
+    "manifest_git_blob_sha1": "54eac4dc1ece07be205bc006dc0ea10f63426af2",
+    "reception_report": "docs/collaboration/reviews/2026-10-08/PR12_04CB957_I89_3/RECEPTION.md",
+    "source_byte_provenance_verified": true
+  },
+  "snapshot": {
+    "requested_canonical_commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+    "subsequent_local_HEAD": "5f04f5d950f742ec8848795bc048822d566640c5",
+    "selected_application_paths_diff": [],
+    "remote_main_observed_before_dossier": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+    "remote_head_is_not_an_injection_claim": true
+  },
+  "rules": {
+    "path": "docs/collaboration/REGLES_INJECTION_CLAUDE.md",
+    "sha256": "ccc1b1fe811c14163798b0ae351d9a1dcb20d1d1971f2d6b2a5128eafb2a4ce2",
+    "text_actually_read": "# Injection autonome de Claude et file d'audit de Codex — 8 octobre 2026\n\n## Principe\nClaude n'attend plus l'audit préalable de Codex pour injecter ses chapitres. Codex audite à son rythme, après injection. La qualité reste garantie par deux verrous : la vérification interne de Claude avant injection, l'audit de Codex après injection.\n\n## Conditions d'injection par Claude (toutes obligatoires)\n1. Revue par sous-agents et vérificateur indépendant terminée ; rapport du lot complet.\n2. Contrôles réussis sur la tête actuelle de `main` : sigles `{}`, `test_v7.py --static`, `build_front.py --all-fragments`, `tests/audit_fragments.py`, `verify_course_native.cjs` (0 échec), tests unitaires.\n3. `tools/livraison.py check-claude` conforme.\n4. Aucune réserve bloquante de Codex encore ouverte sur ce chapitre.\n\n## Droit de décision\nPour ses propres chapitres, Claude tranche les désaccords non bloquants avec Codex. Il applique la règle « la source la plus récente l'emporte dans le texte ; l'ancienne reste accessible par un mot vert ». Une erreur médicale démontrée par Codex reste bloquante et doit être corrigée en priorité.\n\n## File d'audit de Codex\n- Chaque injection de Claude ajoute une entrée à `docs/collaboration/FILE_AUDIT_CODEX.json`, avec le statut `a_auditer`.\n- Codex traite la file dans l'ordre et met le statut à `audite_favorable` ou `reserves`, avec un lien vers son rapport.\n- Une réserve bloquante après injection est corrigée par Claude dans le chapitre concerné, en priorité sur la production en cours.\n- Tant que l'audit de Codex n'est pas favorable, le cours porte la mention « en audit croisé » dans le tableau de bord.\n",
+    "all_conditions_obligatory": true,
+    "failed_condition": "tools/livraison.py check-claude conforme",
+    "meaning": "Absence de réserve médicale bloquante au reçu ne dispense pas du contrôle technique obligatoire sur main actuelle."
+  },
+  "package": {
+    "proposal_count": 11,
+    "additions": 9,
+    "replacements": 2,
+    "proposals_sha256_verified": 11,
+    "baseline_replacements_verified": 2,
+    "addition_targets_absent": 9,
+    "files": [
+      {
+        "target_path": "chapters.json",
+        "source_path": "sources/chapters.json",
+        "operation": "replace",
+        "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+        "proposed_sha256": "03ccb667b7d7d34081d9223fa53f14675d224eaf896c7231de411a742f118db8",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters.json",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters.json",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters.json",
+        "bytes": 5150,
+        "actual_proposed_sha256": "03ccb667b7d7d34081d9223fa53f14675d224eaf896c7231de411a742f118db8",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": true,
+            "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": true,
+            "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": true,
+            "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_a.html",
+        "source_path": "sources/chapters/I89/I89_a.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "6ee12f8ead47fd0ac0f800c1da150c7f09f418696a31f125bf17edd447e4ea7a",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_a.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_a.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_a.html",
+        "bytes": 35843,
+        "actual_proposed_sha256": "6ee12f8ead47fd0ac0f800c1da150c7f09f418696a31f125bf17edd447e4ea7a",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_b.html",
+        "source_path": "sources/chapters/I89/I89_b.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "c6ad8ed489222984ebe6835376f89846d1b8be2fe70f219a32d9b23828b1a85a",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_b.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_b.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_b.html",
+        "bytes": 58451,
+        "actual_proposed_sha256": "c6ad8ed489222984ebe6835376f89846d1b8be2fe70f219a32d9b23828b1a85a",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_c.html",
+        "source_path": "sources/chapters/I89/I89_c.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "ee635834b092e860201a10c9477a2de2a8f562889c68248ccf0b10fd0be55f86",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_c.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_c.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_c.html",
+        "bytes": 68410,
+        "actual_proposed_sha256": "ee635834b092e860201a10c9477a2de2a8f562889c68248ccf0b10fd0be55f86",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_d.html",
+        "source_path": "sources/chapters/I89/I89_d.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "9340a0df4ca51217165a6aad20cf20a46f0e5e5464e7630c106bae81e564d1f6",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_d.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_d.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_d.html",
+        "bytes": 29802,
+        "actual_proposed_sha256": "9340a0df4ca51217165a6aad20cf20a46f0e5e5464e7630c106bae81e564d1f6",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_pop1.html",
+        "source_path": "sources/chapters/I89/I89_pop1.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "dc7e8d5ccae8e2e29103810b9f7aa019a27ce41266729839a2c8773e002ba4fe",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop1.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop1.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop1.html",
+        "bytes": 20430,
+        "actual_proposed_sha256": "dc7e8d5ccae8e2e29103810b9f7aa019a27ce41266729839a2c8773e002ba4fe",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_pop2.html",
+        "source_path": "sources/chapters/I89/I89_pop2.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "39099daa140328595fe600148eb0e75dea612eac0e4f0fc14839baa6f7677350",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop2.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop2.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop2.html",
+        "bytes": 35586,
+        "actual_proposed_sha256": "39099daa140328595fe600148eb0e75dea612eac0e4f0fc14839baa6f7677350",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_pop3.html",
+        "source_path": "sources/chapters/I89/I89_pop3.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "891189883a19d150d8a35f18cbc8051dc7171c22a8509e626f804aae1cf76b10",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop3.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop3.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop3.html",
+        "bytes": 22776,
+        "actual_proposed_sha256": "891189883a19d150d8a35f18cbc8051dc7171c22a8509e626f804aae1cf76b10",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "chapters/I89/I89_pop4.html",
+        "source_path": "sources/chapters/I89/I89_pop4.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "7c618b9b4b3063a919f798d6fb39b8237f6bc9a01ed1b5f90b6ad75954408c54",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop4.html",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop4.html",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop4.html",
+        "bytes": 25342,
+        "actual_proposed_sha256": "7c618b9b4b3063a919f798d6fb39b8237f6bc9a01ed1b5f90b6ad75954408c54",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "glossary/i89.py",
+        "source_path": "sources/glossary/i89.py",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "dfc9dfa63053abb41ea71c9da677924959811d0da84d737c7f51ec5fe9c44cac",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/glossary/i89.py",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/glossary/i89.py",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/glossary/i89.py",
+        "bytes": 15160,
+        "actual_proposed_sha256": "dfc9dfa63053abb41ea71c9da677924959811d0da84d737c7f51ec5fe9c44cac",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": false,
+            "sha256": null,
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      },
+      {
+        "target_path": "tests/verify_s01_browser.cjs",
+        "source_path": "sources/tests/verify_s01_browser.cjs",
+        "operation": "replace",
+        "sha256": "dfcf61935c7b6b96e0fba3d2ac557b7d039af365277869dd86328a7381ff3853",
+        "proposed_sha256": "721486da74ccd9c3e8d3df89af6e2dde4d9dbbfe122eee484982cbf5c01286a7",
+        "source_path_absolute": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/tests/verify_s01_browser.cjs",
+        "archived_path": "livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/tests/verify_s01_browser.cjs",
+        "original_source_path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/tests/verify_s01_browser.cjs",
+        "bytes": 11822,
+        "actual_proposed_sha256": "721486da74ccd9c3e8d3df89af6e2dde4d9dbbfe122eee484982cbf5c01286a7",
+        "proposal_matches_announced_sha256": true,
+        "byte_identical_to_exact_source_commit": true,
+        "canonical_states": {
+          "producer_base": {
+            "commit": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+            "exists": true,
+            "sha256": "dfcf61935c7b6b96e0fba3d2ac557b7d039af365277869dd86328a7381ff3853",
+            "matches_baseline_or_expected_absence": true
+          },
+          "canonical_snapshot": {
+            "commit": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+            "exists": true,
+            "sha256": "dfcf61935c7b6b96e0fba3d2ac557b7d039af365277869dd86328a7381ff3853",
+            "matches_baseline_or_expected_absence": true
+          },
+          "subsequent_local_HEAD": {
+            "commit": "5f04f5d950f742ec8848795bc048822d566640c5",
+            "exists": true,
+            "sha256": "dfcf61935c7b6b96e0fba3d2ac557b7d039af365277869dd86328a7381ff3853",
+            "matches_baseline_or_expected_absence": true
+          }
+        }
+      }
+    ],
+    "archive_original_blobs_verified": 18,
+    "archive_provenance_checks": [
+      {
+        "path": "docs/collaboration/SIGNAUX_CLAUDE.json",
+        "git_blob_sha1": "a18ff404de2e7f252c1d4b223014640d4612092b",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/CORRECTIONS_AUDIT_CODEX_2.md",
+        "git_blob_sha1": "037a20fc13f44eda596b8d2d286f446c5fa34d10",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/controles/diff_main.diff",
+        "git_blob_sha1": "0ca6545ff802197e1dae6bcb5c42e01c736d2d7c",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/controles/i89_native_results.json",
+        "git_blob_sha1": "f3e8f7843e4ede6c3ec7a98a14d225541786ec59",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/controles/s01_browser_results.json",
+        "git_blob_sha1": "c7b1fb537956d5ced5ded42d4bdfafea8d3b1a34",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/livraison.json",
+        "git_blob_sha1": "54eac4dc1ece07be205bc006dc0ea10f63426af2",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/rapport.md",
+        "git_blob_sha1": "0475639e0dd3bc722ea496e2360a864b85bcb19e",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters.json",
+        "git_blob_sha1": "e55cd986ae898650e7eb36fd3dc76b3136f3104c",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_a.html",
+        "git_blob_sha1": "19a38d7522f121913f30de107e98a60ecd605ef1",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_b.html",
+        "git_blob_sha1": "9f10395397afdaa12a84299c4169fc1e7671cbe4",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_c.html",
+        "git_blob_sha1": "60665c45fb92d8fc9c8df214496fd8192df8a937",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_d.html",
+        "git_blob_sha1": "94abecd286b72c55d9b307ca160f2a67dcf4c14a",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop1.html",
+        "git_blob_sha1": "65c5cc55ab2874d8b47a9ddaa51b4df82d2e002a",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop2.html",
+        "git_blob_sha1": "f4b6e7e92d246602e9b18618f63e6e6c63c89518",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop3.html",
+        "git_blob_sha1": "5e5aee68f96f0e8686cad1ecd76e0ab2b2b04436",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop4.html",
+        "git_blob_sha1": "16407a7e49471ceaa5bd13ade17f4faa8f7a80ee",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/glossary/i89.py",
+        "git_blob_sha1": "d5a5f6e81bb7af1ca0ddaf489ca89e32ffd63652",
+        "verified": true
+      },
+      {
+        "path": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/tests/verify_s01_browser.cjs",
+        "git_blob_sha1": "7985a855972bd9981cfd1aeae66401bca2e3b85e",
+        "verified": true
+      }
+    ]
+  },
+  "consumed_scope": {
+    "declared_owner_fragment": {
+      "id": "S01",
+      "label": "C-01-Cardiologie",
+      "specialty": "Cardiologie"
+    },
+    "declared_chapter": {
+      "code": "I89",
+      "title": "Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques",
+      "covers": [
+        "I89",
+        "I97"
+      ],
+      "owner_fragment": "S01"
+    },
+    "primary_course_additions": 1,
+    "global_courses_before": 32,
+    "global_courses_after_proposal": 33,
+    "registry_existing_entries_unchanged": true,
+    "covers_are_not_exhaustive_CIM_certification": true,
+    "existing_cover_collisions": [],
+    "direct_fragment_consumers": [
+      {
+        "fragment_id": "S01",
+        "label": "C-01-Cardiologie",
+        "before_course_count": 21,
+        "after_course_count": 22,
+        "added_codes": [
+          "I89"
+        ]
+      }
+    ],
+    "consumer_method": "Lecture statique reproduisant le prédicat de build_front.fragment_chapters avec les métadonnées medora-data et rattachements ; aucun build exécuté.",
+    "test_change_only": "tests/verify_s01_browser.cjs : attente de 21 à 22 cours ; le reste exact du fichier ne change pas.",
+    "shared_registry_and_glossary": "chapters.json global et glossary/i89.py participent au build commun ; l’ajout ne transfère aucune attribution. Collisions runtime laissées aux contrôles techniques, non affirmées par lecture de réception.",
+    "not_covered": "I88 — Lymphadénite non spécifique (C-01-Cardiologie), articulation seulement ; aucune complétude CIM-11."
+  },
+  "internal_review_evidence": [
+    {
+      "path_at_source_commit": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89/rapport.md",
+      "source_commit": "04cb95729d44648cc65339f28cf6631574babbb2",
+      "sha256": "f31088ec8cd4e3bddb92ed7bc3c52c5fa6c6412c76e8da4652869f6f125025c9",
+      "read_scope": "Pièce de revue interne historique effectivement lue ; pas réexécution ni nouveau contrôle médical complet."
+    },
+    {
+      "path_at_source_commit": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89/verification/PLAN.md",
+      "source_commit": "04cb95729d44648cc65339f28cf6631574babbb2",
+      "sha256": "2db54ed66e21404eadd0071c58c2071413478c23255ffcc58e40c57d4aad8013",
+      "read_scope": "Pièce de revue interne historique effectivement lue ; pas réexécution ni nouveau contrôle médical complet."
+    },
+    {
+      "path_at_source_commit": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89/verification/verification_ab.json",
+      "source_commit": "04cb95729d44648cc65339f28cf6631574babbb2",
+      "sha256": "d3c7dca43cc836489bf1bae5a1982fb6f910c97013884d22924d7ea764d758d9",
+      "read_scope": "Pièce de revue interne historique effectivement lue ; pas réexécution ni nouveau contrôle médical complet.",
+      "reviewer": null,
+      "reported_limits": [
+        "Volume : 18 668 mots (texte A+B ≈ 11 440, fenêtres pop1+pop2 ≈ 7 230) contre 18 995 avant ; toujours au-dessus des repères du plan. Le surplus restant est surtout fait d’informations non redondantes ; on peut encore resserrer le tableau 10.2 (colonne « Données principales », reprise dans i89-chir-micro et i89-liposuccion) et le tableau 14.3 (repris partiellement dans i89-suisse).",
+        "Cas de Mme L. : l’excès est calculé à 18 % par rapport au bras droit dans pA ; l’augmentation corrigée par la référence préopératoire (≈ 19 %) est traitée seulement dans i89-e-2 (C). Les deux calculs donnent la même classe ; aucune contradiction.",
+        "Divergence ISL 2023 / AWMF 2017 sur le diagnostic clinique au stade précoce : pA (i89-7, i89-16) écrit désormais que la volumétrie comparée à la référence et l’écho-Doppler tiennent lieu d’examens complémentaires chez Mme L. ; c’est une interprétation de la question 5 de l’AWMF, qui ne nomme pas les examens attendus. Même position que i89-e-1.",
+        "Hypothèses explicitement qualifiées : hausse d’incidence jusqu’à 2 ans (non démontrée) ; écart 16,6 / 21,4 % (« probablement », appuyé sur le 28,2 % des méthodes combinées) ; docétaxel (association) ; obésité (« probablement » par surcharge et compression) ; mécanisme de l’angiosarcome.",
+        "Signes d’alarme de la douleur : aucun seuil d’intensité ni de durée sourcé ; présentés comme raisonnement clinique cohérent avec l’AWMF 2017 et l’ISL 2023.",
+        "Essai de Thomas : réalisé sur la jambe ; l’extrapolation au bras reste écrite dans i89-11 et le quiz 2. Le rapport de risque 0,55 figure bien dans le résumé PubMed (contrairement à la réserve 5 du rédacteur B) ; il n’est cité qu’en D.",
+        "Ridner 2022 : 7,9 % contre 19,2 % portent sur les 209 patientes ayant déclenché l’intervention, non sur les 879 randomisées-analysées ; comparaison entre sous-groupes non randomisés (déclenchements différents). pA n’écrit plus les pourcentages ; le détail reste dans i89-e-bis (C).",
+        "Dupuy 1999 : association cas-témoins (intervalle 5,6 à 908) ; présentée comme telle.",
+        "Webb 2020 : population « œdème chronique de jambe », pas uniquement lymphœdème ; essai monocentrique arrêté à l’analyse intermédiaire.",
+        "Winters 2022, Karlsson 2024, Jonis 2024, Coriddi 2023 : chiffres contrôlés sur les résumés PubMed (src/pubmed) ; données non randomisées (Winters, Karlsson), intermédiaire (Jonis) ou préliminaire (Coriddi, 40 patientes à 24 mois).",
+        "Stewart-Treves : chiffres contrôlés (PubMed 34196958) ; revue de cas publiés, biais de publication ; Manner 2010 : seuls 2 des 33 angiosarcomes secondaires liés à un lymphœdème.",
+        "Lipœdème après grossesse : sourcé par l’AWMF 2017 (chapitre lipœdème) et l’AWMF S2k lipœdème 2024 (section 1.6) ; aucune recommandation propre au lymphœdème pendant la grossesse dans l’ISL 2023 ni l’AWMF 2017 (vérifié par recherche du terme).",
+        "Nomenclature : A46, B74 et I88 ne figurent dans aucun fragment de organisation/fragments.json ; ils gardent le fragment déduit du libellé du catalogue intégré (I-03-Infectiologie, C-01-Cardiologie), comme D ; R59 reste « fragment non encore attribué ». Les codes cités comme codes de classification dans le paragraphe et la fenêtre de codage (Q82.0-, E88.2-, I97.8x, L97, L98.4, N50.8, R59.0, R59.9) restent nus. À trancher par l’orchestrateur.",
+        "Signe de Stemmer : référence corrigée en Vasa 1976 (PubMed 969857) ; l’AWMF 2017 imprime 1979.",
+        "LiMA 17.02 : la position couvre les bas et, sous 17.02.01.11/12, le manchon de bras de classe 2 ; la limite « deux paires par an » est écrite pour les bas dans la LiMA ; elle est reprise telle quelle dans le tableau 14.3.",
+        "Points non vérifiés et conservés comme connaissance clinique classique sans chiffre : lymphadénite mésentérique simulant une appendicite ; réticulose lipomélanique et lymphome cutané à cellules T ; myxœdème peu dépressible ; exérèse ganglionnaire préférée à la cytoponction hors territoire lymphœdémateux pour le diagnostic d’un lymphome ; technique du drainage (régions saines d’abord).",
+        "Fusion des glossaires : glossary_i89_verif_ab.py ajoute D-16-Dermatologie et N50.8 ; C-01-Cardiologie reste défini dans glossary_i89_c.py et glossary_i89_d.py (en garder une seule à la fusion) ; DiSipio dans glossary_i89_a.py ; P-02-Pneumologie dans glossary_i89_b.py."
+      ]
+    },
+    {
+      "path_at_source_commit": "livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89/verification/verification_cd.json",
+      "source_commit": "04cb95729d44648cc65339f28cf6631574babbb2",
+      "sha256": "582f2a8a7962713aa0047ad741da5b9b77b851efe10d30ffd9c9b005c0827b09",
+      "read_scope": "Pièce de revue interne historique effectivement lue ; pas réexécution ni nouveau contrôle médical complet.",
+      "reviewer": "Vérificateur indépendant des onglets Examens, Sciences et Pharmacologie (Claude), 08.10.2026",
+      "reported_limits": [
+        "Doses et données d’information professionnelle non relues par le vérificateur dans une source primaire locale : sirolimus (information du produit Rapamune, EMA : 2 mg/jour, 5–15 ng/mL, contrôles 10–20 jours puis ≥ tous les 3 mois, interactions CYP3A4/P-glycoprotéine, angiœdème avec IEC) ; octréotide (étiquetage américain : indications, interactions ciclosporine, bromocriptine, bêtabloquants) ; pénicilline V (DailyMed) ; prégabaline (Lyrica, EMA). Elles reposent sur la lecture du rédacteur D, sont attribuées à leur source dans le texte et ne sont pas contradictoires avec les connaissances pharmacologiques ; aucun statut suisse n’est affirmé pour l’octréotide ni le sirolimus.",
+        "Pénicilline V en Suisse : seuls des intitulés de sirops (400 000 et 750 000 UI/5 mL) ont été vus par D sur compendium.ch ; la dose de 250 mg deux fois par jour reste une dose d’essai (Thomas et al. 2013, jambe ; extrapolation au bras signalée dans le texte, la fenêtre et le quiz).",
+        "Vert d’indocyanine : contenu en iodure (≤ 5 %) et contre-indications thyroïdiennes tirés de l’information professionnelle australienne de Verdye ; l’information professionnelle suisse sur swissmedicinfo.ch n’a pas été lue. La raison de la contre-indication (iode pouvant aggraver une hyperthyroïdie) est un raisonnement pharmacologique.",
+        "Mécanismes sans source primaire consultée, conservés car classiques et non chiffrés : myxœdème par glycosaminoglycanes ; conduit lymphatique droit et territoires de drainage ; rôle de FOXC2 et PIEZO1 dans les valvules ; rétention sodée des AINS, corticoïdes et minoxidil ; mécanisme de la pénicilline. L’origine veineuse des cellules lymphatiques sous PROX1 est confirmée par Wigle et Oliver, Cell 1999 (PubMed 10499794), non citée dans le texte.",
+        "Intervalle de mesure de 4 cm : usage courant, non trouvé dans l’ISL 2023 ni l’AWMF 2017 ; formulé comme tel.",
+        "Narushima et al. 2016 : l’indication d’anastomose dès le stade II de reflux dermique est l’avis de l’équipe (résumé lu), présentée comme telle.",
+        "Ridner et al. 2022 : chiffres vérifiés dans le résumé ; liens financiers d’auteurs avec ImpediMed confirmés dans la déclaration de conflits.",
+        "Ghanta et al. 2015 et Avraham et al. 2013 : données surtout murines, présentées comme telles ; Manner et al. 2010 : 31 angiosarcomes post-irradiation pour 2 sur lymphœdème, limite écrite.",
+        "NT-proBNP : seuil < 125 pg/mL vérifié dans le texte intégral ESC 2026 ; aucune classe de recommandation n’est écrite.",
+        "Calcul de Mme L. : 18 % (mois 0, cohérent avec I89_a/I89_b) et 19 % rapporté à la référence préopératoire (2 950/2 480 − 1 = 18,95 %) ; formule du tronc de cône vérifiée (exemple : 4 × 1 588 / 37,70 ≈ 168 mL).",
+        "Aucune donnée ESC 2026 ne concerne la pharmacologie lymphatique : pas de fenêtre comparative ESC dans pE, pS ou pP.",
+        "Volume : pE + pS ≈ 8 200 mots, pP ≈ 3 580 mots, fenêtres ≈ 5 740 mots ; les redites ont été retirées, mais le texte reste au-dessus des repères du plan, principalement par les tableaux exigés."
+      ]
+    }
+  ],
+  "medical_receipt": {
+    "status": "deux_reserves_bloquantes_I89_2_levees_au_recu_I89_3_contrelecture_du_delta_seulement",
+    "open_blocking_in_received_delta": 0,
+    "scope": "Minoxidil/hydralazine et mécanismes corrigés ; aucune certification complète du chapitre.",
+    "retained_limits": [
+      "Couverture CIM-11 non établie.",
+      "I88 — Lymphadénite non spécifique (C-01-Cardiologie) est articulée (îlot 13), non couverte.",
+      "Verdye : information professionnelle suisse en vigueur et disponibilité 2026 non vérifiées (compendium.ch et swissmedicinfo.ch inaccessibles) ; juridiction limitée explicitement dans le texte.",
+      "Doses du sirolimus et indications/interactions de l'octréotide : lues dans les informations des produits EMA et américaine, non dans une information professionnelle suisse.",
+      "Mécanismes des œdèmes médicamenteux et de la pénicilline : étiquetages américains (DailyMed, versions de 2026), non l'information professionnelle suisse.",
+      "Myxœdème : Lund 1986 (PMID 3094309), lu en résumé ; mécanisme présenté comme proposé par les auteurs."
+    ],
+    "other_unreviewed_passages": "Glitazones/ENaC et docétaxel non relus dans le delta ; limites conservées.",
+    "new_medical_review_performed_by_this_report": false
+  },
+  "technical_blocker": {
+    "report": "docs/collaboration/reviews/2026-10-08/I89_INJECTION_FINALE/CONTROLE_TECHNIQUE.json",
+    "report_sha256": "7e8211fc0d0b1aa01a03120fb317b363f8640fb7fd3007e3620b6dc1614ed7dc",
+    "mandatory_gate_executed_by": "/root/sentinelle_technique",
+    "mandatory_gate": {
+      "argv": [
+        "python3",
+        "/workspace/medina-env/reprise-i89/injection-finale/source/tools/livraison.py",
+        "check-claude",
+        "--root",
+        "/workspace/medina-env/reprise-i89/injection-finale/source",
+        "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3"
+      ],
+      "started_at_zurich": "2026-10-08T15:41:50.086089+02:00",
+      "finished_at_zurich": "2026-10-08T15:41:50.295038+02:00",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "Livraison interrompue : Code ou titre de cours incohérent : {'code': 'I89', 'title': 'Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques', 'covers': ['I89', 'I97'], 'owner_fragment': 'S01'}\n",
+      "base": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+      "isolated_copy": "/workspace/medina-env/reprise-i89/injection-finale/source",
+      "Git_or_canonical_mutated": false,
+      "overlay_performed": false,
+      "incoming_code_executed": false
+    },
+    "root_cause": {
+      "catalog_filter": "tools/livraison.py catalog() only includes integrated chapters from existing canonical chapters.json",
+      "I89_present_in_current_integrated_catalog": false,
+      "announced_new_code_rejected_before_files_validation": true,
+      "qualification": "Generic Code ou titre incohérent error does not demonstrate a medically incorrect title; this current checker contract rejects a new course absent from integrated catalog",
+      "additional_contract_limitation_read_only": "inspect_claude also requires every declared path to be chapters/<announced_code>/<filename>; catalog/glossary/test proposals are outside that current contract. This later refusal was not independently executed or bypassed."
+    },
+    "clinical_error_in_title_proven": false,
+    "finding": "Le checker actuel ne reconnaît pas une création de cours absente du catalogue déjà intégré. Rejet exécuté, code2 ; aucun manifeste ou outil modifié pour obtenir un passage.",
+    "additional_path_contract_obstacle": "Le code lu exige ensuite des chemins chapters/<code>/<fichier> ; catalogue, glossaire et test sont hors du contrat actuel. Constat statique secondaire, pas deuxième refus exécuté."
+  },
+  "producer_controls_not_independent_current_controls": [
+    {
+      "command": "verifier_sigles I89 ; test_v7.py --static I89 et I83 ; build_front.py ; --all-fragments ; audit_fragments.py ; verify_course_native.cjs I89 ; verify_s01_browser.cjs (22 cours) ; test_v7.py I89 ; unittest discover tests",
+      "base": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+      "result": "{} ; OK (36 953 mots, 43 fenêtres, 8 quiz, 5 Pareto) ; 22 fragments, build reproductible ; natif 2 595 contrôles, 0 échec ; S01 73 réussis ; OK ; 118 tests OK",
+      "build_s01_sha256": "612c493a8a93e41f50320be523cb34e86ed085182a4cc554324f233bfc49eace"
+    }
+  ],
+  "controls_stopped_after_real_gate_failure": [
+    "No proposal overlay",
+    "No incoming glossary/test execution",
+    "Compiled sigles, static, builds global/all-fragments, audit_fragments, nativeI89, unit tests and global/S01 browser tests not run on this candidate"
+  ],
+  "excluded_candidates": [
+    {
+      "chapter": "J45 — Asthme (P-02-Pneumologie)",
+      "reason": "Réserve J45-MED-03 encore ouverte, exclu de cette décision finale."
+    },
+    {
+      "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+      "reason": "ESP03 et nouveau contre-audit Claude encore ouverts, exclu."
+    }
+  ],
+  "handoff_to_technical_done": true,
+  "canonical_modified": false,
+  "git_modified": false,
+  "incoming_code_executed": false,
+  "external_message_sent": false,
+  "limits": [
+    "Les 18 blobs et 11 propositions sont prouvés ; cela ne constitue ni un build ni une validation médicale exhaustive.",
+    "Une voie branche ancienne explicitement hors apply-claude reste reçue et préservée ; elle ne fournit pas un check-claude conforme sous le contrat obligatoire actuel.",
+    "Aucun élargissement de production, aucune entrée de file d’audit créée pour une injection qui n’a pas eu lieu."
+  ]
+}

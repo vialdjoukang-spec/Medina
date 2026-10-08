@@ -2,6 +2,8 @@
 
 Ce dossier est le point d'entrée permanent pour consulter les livraisons, reprendre une mission et remettre une contribution.
 
+**Dernière consigne : STOP Codex avant changement des règles.** [Décision du 8 octobre](ARRET_CODEX_2026-10-08.md) : I83 v6 déjà injecté et publié ; I89, J45 et A41 non injectables. Production et veille automatique Codex en pause ; aucune relance avant les nouvelles instructions.
+
 - [État des lieux étendu du 8 octobre, tableaux et jauges vérifiables](ETAT_DES_LIEUX_2026-10-08.md) et [dashboard interactif autonome](ETAT_DES_LIEUX_2026-10-08.html).
 - [Chaîne des dix fragments Codex, sentinelles et veille](CODEX_CHAINE_FRAGMENTS.md).
 - [Signaux Codex : demande A41 et retours à Claude](SIGNAUX_CODEX.json).

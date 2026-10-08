@@ -1,8 +1,8 @@
 {
   "agent": "Codex",
-  "branche": "codex/a41-corrections-20261008",
-  "mis_a_jour": "2026-10-08T15:35:29.308997+02:00",
-  "consigne": "A41 Codex remis à Claude au SHA exact ; injection Codex après son audit. Claude injecte ses propres chapitres selon REGLES_INJECTION_CLAUDE.md, puis audit Codex ordonné dans FILE_AUDIT_CODEX.json. Corrections bloquantes prioritaires.",
+  "branche": "codex/suivi-remise-a41-20261008",
+  "mis_a_jour": "2026-10-08T15:51:43.860088+02:00",
+  "consigne": "STOP Codex demandé par Vial : vérification finale terminée, aucune nouvelle injection admissible. Production, sous-agents et veille automatique en pause jusqu’aux nouvelles instructions. Les règles et files historiques restent conservées sans ordre de reprise.",
   "lots": [
     {
       "lot": "A41_REPRISE_20261008",
@@ -133,6 +133,17 @@
       "completude_cim11": false,
       "publication_source_commit": "c545b79cb604347c7c1f38c5c8fe03126daafbc9",
       "publication_audit": "docs/collaboration/reviews/2026-10-08/I83_HARMONISATION_V6/PUBLICATION_PAGES.json"
+    },
+    {
+      "lot": "I89_INJECTION_FINALE",
+      "titre": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+      "head_sha": "04cb95729d44648cc65339f28cf6631574babbb2",
+      "etat": "non_injecte_check_claude_obligatoire_echoue",
+      "injectable": false,
+      "sources_deja_injectees": false,
+      "audit_technique": "docs/collaboration/reviews/2026-10-08/I89_INJECTION_FINALE/CONTROLE_TECHNIQUE.json",
+      "audit_medical": "docs/collaboration/reviews/2026-10-08/I89_INJECTION_FINALE/AUDIT_MEDICAL_FINAL.json",
+      "qualification": "Refus technique du contrat des nouveaux cours, aucune erreur médicale de titre inférée ; revue médicale ciblée uniquement."
     }
   ],
   "veille": {
@@ -140,6 +151,17 @@
     "workflow": ".github/workflows/claude_watch.yml",
     "intervalle_local_secondes": 300,
     "audit_et_injection_automatiques": false,
-    "premiere_execution_github_reussie": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37701215617"
+    "premiere_execution_github_reussie": "https://github.com/vialdjoukang-spec/Medina/actions/runs/37701215617",
+    "etat": "pause_demandee_par_utilisateur",
+    "veille_locale_arretee": true,
+    "planification_github_desactivee": true,
+    "reprise_sur_nouvelles_instructions_uniquement": true
+  },
+  "arret": {
+    "demande_utilisateur": "injecte ce qu'il faut injecter puis STOP. je vais changer les règles",
+    "etat": "arrete_attente_nouvelles_regles",
+    "rapport": "docs/collaboration/ARRET_CODEX_2026-10-08.md",
+    "recu": "docs/collaboration/receipts/CODEX_ARRET_FINAL_2026-10-08.json",
+    "new_injections": []
   }
 }

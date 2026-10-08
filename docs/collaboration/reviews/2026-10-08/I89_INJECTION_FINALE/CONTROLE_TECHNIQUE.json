@@ -1,0 +1,521 @@
+{
+  "chapter": "I89 — Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques (C-01-Cardiologie)",
+  "status": "blocked_mandatory_check_claude_new_course_contract",
+  "written_at_zurich": "2026-10-08T15:44:56.930074+02:00",
+  "producer_commit": "04cb95729d44648cc65339f28cf6631574babbb2",
+  "producer_base": "f204b06ac174d41632b742ec6b82097b1532b2c8",
+  "tested_base": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+  "subsequent_HEAD": "5f04f5d9",
+  "selected_application_diff_61_to5f": [],
+  "isolated_copy": "/workspace/medina-env/reprise-i89/injection-finale/source",
+  "mandatory_gate": {
+    "argv": [
+      "python3",
+      "/workspace/medina-env/reprise-i89/injection-finale/source/tools/livraison.py",
+      "check-claude",
+      "--root",
+      "/workspace/medina-env/reprise-i89/injection-finale/source",
+      "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3"
+    ],
+    "started_at_zurich": "2026-10-08T15:41:50.086089+02:00",
+    "finished_at_zurich": "2026-10-08T15:41:50.295038+02:00",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "Livraison interrompue : Code ou titre de cours incohérent : {'code': 'I89', 'title': 'Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques', 'covers': ['I89', 'I97'], 'owner_fragment': 'S01'}\n",
+    "base": "61a841b3c96b3bd4f3ad58ec5870d06945e63292",
+    "isolated_copy": "/workspace/medina-env/reprise-i89/injection-finale/source",
+    "Git_or_canonical_mutated": false,
+    "overlay_performed": false,
+    "incoming_code_executed": false
+  },
+  "root_cause": {
+    "catalog_filter": "tools/livraison.py catalog() only includes integrated chapters from existing canonical chapters.json",
+    "I89_present_in_current_integrated_catalog": false,
+    "announced_new_code_rejected_before_files_validation": true,
+    "qualification": "Generic Code ou titre incohérent error does not demonstrate a medically incorrect title; this current checker contract rejects a new course absent from integrated catalog",
+    "additional_contract_limitation_read_only": "inspect_claude also requires every declared path to be chapters/<announced_code>/<filename>; catalog/glossary/test proposals are outside that current contract. This later refusal was not independently executed or bypassed."
+  },
+  "source_inspection_read_only": {
+    "announced_sources": 11,
+    "all11_sha256_match": true,
+    "nine_additions_absent": true,
+    "two_replacements_base_sha256_match": true,
+    "files": [
+      {
+        "target_path": "chapters.json",
+        "source_path": "sources/chapters.json",
+        "operation": "replace",
+        "sha256": "9458acf43c178c5f3800ca2e70cb60085549fa1f53a77b64439d74f20b882e42",
+        "proposed_sha256": "03ccb667b7d7d34081d9223fa53f14675d224eaf896c7231de411a742f118db8",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters.json",
+        "actual_sha256": "03ccb667b7d7d34081d9223fa53f14675d224eaf896c7231de411a742f118db8",
+        "bytes": 5150,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_a.html",
+        "source_path": "sources/chapters/I89/I89_a.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "6ee12f8ead47fd0ac0f800c1da150c7f09f418696a31f125bf17edd447e4ea7a",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_a.html",
+        "actual_sha256": "6ee12f8ead47fd0ac0f800c1da150c7f09f418696a31f125bf17edd447e4ea7a",
+        "bytes": 35843,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_b.html",
+        "source_path": "sources/chapters/I89/I89_b.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "c6ad8ed489222984ebe6835376f89846d1b8be2fe70f219a32d9b23828b1a85a",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_b.html",
+        "actual_sha256": "c6ad8ed489222984ebe6835376f89846d1b8be2fe70f219a32d9b23828b1a85a",
+        "bytes": 58451,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_c.html",
+        "source_path": "sources/chapters/I89/I89_c.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "ee635834b092e860201a10c9477a2de2a8f562889c68248ccf0b10fd0be55f86",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_c.html",
+        "actual_sha256": "ee635834b092e860201a10c9477a2de2a8f562889c68248ccf0b10fd0be55f86",
+        "bytes": 68410,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_d.html",
+        "source_path": "sources/chapters/I89/I89_d.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "9340a0df4ca51217165a6aad20cf20a46f0e5e5464e7630c106bae81e564d1f6",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_d.html",
+        "actual_sha256": "9340a0df4ca51217165a6aad20cf20a46f0e5e5464e7630c106bae81e564d1f6",
+        "bytes": 29802,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_pop1.html",
+        "source_path": "sources/chapters/I89/I89_pop1.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "dc7e8d5ccae8e2e29103810b9f7aa019a27ce41266729839a2c8773e002ba4fe",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop1.html",
+        "actual_sha256": "dc7e8d5ccae8e2e29103810b9f7aa019a27ce41266729839a2c8773e002ba4fe",
+        "bytes": 20430,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_pop2.html",
+        "source_path": "sources/chapters/I89/I89_pop2.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "39099daa140328595fe600148eb0e75dea612eac0e4f0fc14839baa6f7677350",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop2.html",
+        "actual_sha256": "39099daa140328595fe600148eb0e75dea612eac0e4f0fc14839baa6f7677350",
+        "bytes": 35586,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_pop3.html",
+        "source_path": "sources/chapters/I89/I89_pop3.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "891189883a19d150d8a35f18cbc8051dc7171c22a8509e626f804aae1cf76b10",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop3.html",
+        "actual_sha256": "891189883a19d150d8a35f18cbc8051dc7171c22a8509e626f804aae1cf76b10",
+        "bytes": 22776,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "chapters/I89/I89_pop4.html",
+        "source_path": "sources/chapters/I89/I89_pop4.html",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "7c618b9b4b3063a919f798d6fb39b8237f6bc9a01ed1b5f90b6ad75954408c54",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/chapters/I89/I89_pop4.html",
+        "actual_sha256": "7c618b9b4b3063a919f798d6fb39b8237f6bc9a01ed1b5f90b6ad75954408c54",
+        "bytes": 25342,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "glossary/i89.py",
+        "source_path": "sources/glossary/i89.py",
+        "operation": "add",
+        "sha256": null,
+        "proposed_sha256": "dfc9dfa63053abb41ea71c9da677924959811d0da84d737c7f51ec5fe9c44cac",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/glossary/i89.py",
+        "actual_sha256": "dfc9dfa63053abb41ea71c9da677924959811d0da84d737c7f51ec5fe9c44cac",
+        "bytes": 15160,
+        "base_matches_or_add_absent": true
+      },
+      {
+        "target_path": "tests/verify_s01_browser.cjs",
+        "source_path": "sources/tests/verify_s01_browser.cjs",
+        "operation": "replace",
+        "sha256": "dfcf61935c7b6b96e0fba3d2ac557b7d039af365277869dd86328a7381ff3853",
+        "proposed_sha256": "721486da74ccd9c3e8d3df89af6e2dde4d9dbbfe122eee484982cbf5c01286a7",
+        "payload": "/workspace/Medina/livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_04CB957_I89_3/livraisons/Livraison Claude/C-01-Cardiologie/lots/2026-10-08-I89-3/sources/tests/verify_s01_browser.cjs",
+        "actual_sha256": "721486da74ccd9c3e8d3df89af6e2dde4d9dbbfe122eee484982cbf5c01286a7",
+        "bytes": 11822,
+        "base_matches_or_add_absent": true
+      }
+    ],
+    "html": {
+      "chapters/I89/I89_a.html": {
+        "active_content": [],
+        "ids": [
+          "ch-I89",
+          "pA",
+          "i89-0",
+          "i89-1",
+          "i89-2",
+          "i89-3",
+          "i89-4",
+          "i89-5",
+          "i89-6"
+        ],
+        "data_pop": [],
+        "data_k": [
+          "i89-s-lymphangion",
+          "i89-debit",
+          "i89-debit",
+          "i89-primaire",
+          "i89-e-volume",
+          "i89-codage",
+          "i89-s-lymphangion",
+          "i89-s-fibrose",
+          "i89-cercle",
+          "i89-primaire",
+          "i89-s-vegfc",
+          "i89-risque-cancer",
+          "i89-d-oedeme-medic",
+          "i89-risque-cancer",
+          "i89-erysipele",
+          "i89-primaire",
+          "i89-oed-systemique",
+          "i89-d-oedeme-medic",
+          "i89-s-lourdeur",
+          "i89-s-douleur",
+          "i89-e-volume",
+          "i89-godet-peau",
+          "i89-stemmer",
+          "i89-oed-systemique",
+          "i89-malin",
+          "pareto-i89-bases"
+        ],
+        "panels": [
+          "pA"
+        ]
+      },
+      "chapters/I89/I89_b.html": {
+        "active_content": [],
+        "ids": [
+          "i89-7",
+          "i89-8",
+          "i89-9",
+          "i89-10",
+          "i89-11",
+          "i89-12",
+          "i89-13",
+          "i89-14",
+          "i89-15",
+          "i89-16"
+        ],
+        "data_pop": [],
+        "data_k": [
+          "i89-e-scinti",
+          "i89-malin",
+          "i89-erysipele",
+          "i89-oed-systemique",
+          "i89-d-oedeme-medic",
+          "i89-ddx-veineux",
+          "i89-lipoedeme",
+          "i89-erysipele",
+          "i89-malin",
+          "i89-stewart",
+          "i89-chylothorax",
+          "i89-tdc",
+          "i89-dlm",
+          "i89-d-diuretiques",
+          "i89-ci-tdc",
+          "i89-e-volume",
+          "i89-e-icg",
+          "i89-liposuccion",
+          "i89-chir-micro",
+          "i89-s-fibrose",
+          "i89-erysipele",
+          "i89-d-penicilline",
+          "i89-e-chyle",
+          "i89-chylothorax",
+          "i89-d-octreotide",
+          "i89-d-sirolimus",
+          "i89-e-bis",
+          "i89-suisse",
+          "i89-malin",
+          "pareto-i89-pec"
+        ],
+        "panels": []
+      },
+      "chapters/I89/I89_c.html": {
+        "active_content": [],
+        "ids": [
+          "pE",
+          "i89-e-1",
+          "i89-e-2",
+          "i89-e-3",
+          "i89-e-4",
+          "i89-e-5",
+          "i89-e-6",
+          "i89-e-7",
+          "i89-e-8",
+          "pS",
+          "i89-s-anat",
+          "i89-sa",
+          "i89-s-physio",
+          "i89-sp",
+          "i89-s-immuno",
+          "i89-si",
+          "i89-s-gen",
+          "i89-sg"
+        ],
+        "data_pop": [],
+        "data_k": [
+          "i89-e-volume",
+          "i89-e-bis",
+          "i89-suisse",
+          "i89-e-scinti",
+          "i89-e-icg",
+          "i89-chir-micro",
+          "i89-d-traceurs",
+          "i89-ddx-veineux",
+          "i89-oed-systemique",
+          "i89-d-oedeme-medic",
+          "i89-chylothorax",
+          "i89-e-chyle",
+          "i89-e-genet",
+          "i89-stewart",
+          "i89-lipoedeme",
+          "pareto-i89-exam",
+          "i89-s-lymphangion",
+          "i89-d-diuretiques",
+          "i89-s-fibrose",
+          "i89-s-vegfc",
+          "i89-d-sirolimus",
+          "pareto-i89-sciences"
+        ],
+        "panels": [
+          "pE",
+          "pS"
+        ]
+      },
+      "chapters/I89/I89_d.html": {
+        "active_content": [],
+        "ids": [
+          "pP",
+          "i89-p-1",
+          "i89-p-2",
+          "i89-p-3",
+          "i89-p-4",
+          "i89-p-5",
+          "i89-p-6"
+        ],
+        "data_pop": [],
+        "data_k": [
+          "i89-d-penicilline",
+          "i89-d-diuretiques",
+          "i89-d-benzopyrones",
+          "i89-d-octreotide",
+          "i89-d-sirolimus",
+          "i89-erysipele",
+          "i89-d-penicilline",
+          "i89-d-diuretiques",
+          "i89-oed-systemique",
+          "i89-d-benzopyrones",
+          "i89-chylothorax",
+          "i89-d-octreotide",
+          "i89-d-sirolimus",
+          "i89-d-oedeme-medic",
+          "i89-d-traceurs",
+          "pareto-i89-pharma"
+        ],
+        "panels": [
+          "pP"
+        ]
+      },
+      "chapters/I89/I89_pop1.html": {
+        "active_content": [],
+        "ids": [],
+        "data_pop": [
+          "i89-debit",
+          "i89-cercle",
+          "i89-risque-cancer",
+          "i89-primaire",
+          "i89-s-lourdeur",
+          "i89-s-douleur",
+          "i89-stemmer",
+          "i89-godet-peau",
+          "i89-codage",
+          "pareto-i89-bases"
+        ],
+        "data_k": [
+          "i89-s-fibrose",
+          "i89-e-genet",
+          "i89-e-volume",
+          "i89-malin",
+          "i89-erysipele"
+        ],
+        "panels": []
+      },
+      "chapters/I89/I89_pop2.html": {
+        "active_content": [],
+        "ids": [],
+        "data_pop": [
+          "i89-ddx-veineux",
+          "i89-lipoedeme",
+          "i89-oed-systemique",
+          "i89-malin",
+          "i89-stewart",
+          "i89-tdc",
+          "i89-dlm",
+          "i89-ci-tdc",
+          "i89-chir-micro",
+          "i89-liposuccion",
+          "i89-erysipele",
+          "i89-chylothorax",
+          "i89-suisse",
+          "pareto-i89-pec"
+        ],
+        "data_k": [
+          "i89-s-fibrose",
+          "i89-d-penicilline",
+          "i89-d-octreotide"
+        ],
+        "panels": []
+      },
+      "chapters/I89/I89_pop3.html": {
+        "active_content": [],
+        "ids": [],
+        "data_pop": [
+          "i89-e-volume",
+          "i89-e-bis",
+          "i89-e-scinti",
+          "i89-e-icg",
+          "i89-e-chyle",
+          "i89-e-genet",
+          "i89-s-lymphangion",
+          "i89-s-fibrose",
+          "i89-s-vegfc",
+          "pareto-i89-exam",
+          "pareto-i89-sciences"
+        ],
+        "data_k": [
+          "i89-d-traceurs",
+          "i89-chylothorax",
+          "i89-liposuccion"
+        ],
+        "panels": []
+      },
+      "chapters/I89/I89_pop4.html": {
+        "active_content": [],
+        "ids": [],
+        "data_pop": [
+          "i89-d-penicilline",
+          "i89-d-diuretiques",
+          "i89-d-benzopyrones",
+          "i89-d-octreotide",
+          "i89-d-sirolimus",
+          "i89-d-oedeme-medic",
+          "i89-d-traceurs",
+          "pareto-i89-pharma"
+        ],
+        "data_k": [
+          "i89-erysipele",
+          "i89-malin",
+          "i89-chylothorax",
+          "i89-d-sirolimus",
+          "i89-oed-systemique",
+          "i89-e-scinti"
+        ],
+        "panels": []
+      }
+    },
+    "counts": {
+      "HTML": 8,
+      "panels": 4,
+      "windows": 43,
+      "data_k": 111,
+      "glossary_literal_keys": 45
+    },
+    "active_HTML_found": false,
+    "duplicate_chapter_ids_or_windows_found": false,
+    "missing_authored_targets": [],
+    "glossary_AST": "Read-only parsing: canonical from cardio_1 import a,G plus literal-only registration calls; no incoming import or execution",
+    "runtime_glossary_collision_check": "Not performed after mandatory gate failure",
+    "catalog_delta": {
+      "base_count": 32,
+      "proposed_count": 33,
+      "only_added_entry": {
+        "code": "I89",
+        "covers": [
+          "I89",
+          "I97"
+        ],
+        "title": "Autres atteintes non infectieuses des vaisseaux et des ganglions lymphatiques",
+        "integrated": true,
+        "wave": 9,
+        "added": "2026-10-08"
+      }
+    },
+    "test_delta": {
+      "full_file_and_diff_read": true,
+      "only_change": "One assertion expected course count21→22; every other byte unchanged",
+      "existing_assertions_preserved": true,
+      "I89_navigation": "Existing loop over all integrated codes would include I89",
+      "I97_specific_assertion_added": false,
+      "incoming_test_executed": false,
+      "diff": "/workspace/medina-env/reprise-i89/injection-finale/controls/verify_s01_browser.diff"
+    }
+  },
+  "controls_not_performed_after_gate_failure": [
+    "No proposal overlay",
+    "No incoming glossary/test execution",
+    "Compiled sigles, static, builds global/all-fragments, audit_fragments, nativeI89, unit tests and global/S01 browser tests not run on this candidate"
+  ],
+  "proofs": [
+    {
+      "path": "/workspace/medina-env/reprise-i89/injection-finale/controls/check-claude-command.json",
+      "bytes": 1017,
+      "sha256": "b5f4aa406969de90c3d9fdd15e6059c54e1ce1f68ee1b4ef1165270b2cdba10b"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i89/injection-finale/controls/check-claude.stderr.log",
+      "bytes": 218,
+      "sha256": "32c5e4e575aa7d93c2624c116cb0cf347565cbc30d81680a9e4aab5c6150d0e0"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i89/injection-finale/controls/check-claude.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i89/injection-finale/controls/source-inspection.json",
+      "bytes": 14621,
+      "sha256": "1e59ba1d4a7799f087369d0344b215b3e968d8aa5710885bea340fd36003bb09"
+    },
+    {
+      "path": "/workspace/medina-env/reprise-i89/injection-finale/controls/verify_s01_browser.diff",
+      "bytes": 1153,
+      "sha256": "3b567922101b855e923bd661f421e4a2f38613161a1de1b041bb8cb44c9ef746"
+    }
+  ],
+  "admissible_under_current_mandatory_rule": false,
+  "A41_canonical_unchanged": true,
+  "J45_not_injected": true,
+  "canonical_or_Git_mutated": false,
+  "injection_performed": false,
+  "attempt_stopped": true,
+  "qualification": "Technical gate failure; no medical verdict inferred. Producer tests listed in manifest remain producer evidence, not these independent tests."
+}
