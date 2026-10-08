@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_J45_F30B891_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": {
+    "number": 12,
+    "state": "open",
+    "draft": false,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/12"
+  },
+  "provenance": {
+    "producer": "Claude",
+    "branch": "claude/loving-shannon-spwrhc",
+    "delivery_head_sha": "f30b891602d8bf783058b8811b1530288f9508b5",
+    "baseline_sha": "a3b8ac4060529aaf339f17851305c07abac25cc8",
+    "evidence": [
+      "branch",
+      "SIGNAUX_CLAUDE.json",
+      "livraison.json",
+      "rapport.md"
+    ]
+  },
+  "scope": {
+    "campaign": "21 remaining fragments (11 Claude / 10 Codex)",
+    "historical_campaign": "30 courses (15 Claude / 15 Codex), distinct",
+    "cardiology_backlog": "20 courses (10 Claude / 10 Codex), distinct",
+    "fragment": "P-02-Pneumologie",
+    "fragment_id": "S02",
+    "platform": "S02",
+    "chapter": "J45 — Asthme",
+    "covers": [
+      "J45",
+      "J46"
+    ],
+    "lot": "2026-10-08-J45",
+    "assignments_changed": false,
+    "active_chapters_changed": false
+  },
+  "archive": {
+    "root": "livraisons/Livraison Claude/P-02-Pneumologie/archives/2026-10-08_PR12_F30B891_J45",
+    "original_count": 21,
+    "originals_git_tree_sha1": "902e2baf04f72e3a32700a77d6920e2242d2b620",
+    "archive_tree_with_provenance_sha1": "68176b4b9f30f3e42cce14cdeffa895592e6e1eb"
+  },
+  "verification": {
+    "proposal_sha256": "9/9 exact",
+    "replacement_baselines": "9/9 exact",
+    "canonical_targets": "9/9 present and owned by chapters/J45",
+    "previous_j45_receipts": 0,
+    "static_html": {
+      "ids": 47,
+      "templates": 46,
+      "triggers": 86,
+      "duplicate_ids": 0,
+      "duplicate_templates": 0,
+      "missing_targets": 0,
+      "embedded_scripts": 0
+    },
+    "justifications_json_entries": 15
+  },
+  "medical_review": {
+    "scope": "targeted high-risk delta review, not exhaustive certification",
+    "confirmed": [
+      "GINA 2026 diagnostic reversibility thresholds",
+      "GINA 2026 exacerbation severity thresholds and graded salbutamol doses",
+      "GINA 2026 oxygen target 92-95%",
+      "conditional IV magnesium use and stated GINA duration inconsistency"
+    ],
+    "blocking": [
+      "J45-MED-01: Swiss professional information and reimbursement limits not verified",
+      "J45-MED-02: ERS 2017 PD20/contraindications and parts of ERS/ATS 2022 not read in full text",
+      "J45-MED-03: exhaustive review of all modified claims, windows, quizzes and primary studies not completed"
+    ],
+    "remaining_nonblocking": [
+      "pediatric magnesium infusion duration internally inconsistent in GINA 2026",
+      "fifth CIM-10-GM character, paradoxical pulse threshold and some ABPA criteria not re-read from primary sources",
+      "CIM-11 completeness not established"
+    ]
+  },
+  "controls": {
+    "producer_claims": [
+      "acronym check passed",
+      "static course check: 37340 words, 46 windows, 8 quizzes, 8 Pareto",
+      "15/15 justification targets",
+      "22-fragment build reproducible",
+      "2282 native checks passed",
+      "118 unit tests passed"
+    ],
+    "independently_executed": [
+      "paginated remote branch and PR inventory",
+      "one-commit content inventory",
+      "9 proposal SHA-256 checks",
+      "9 baseline SHA-256 checks",
+      "static HTML identifier/window/reference audit",
+      "justifications JSON parse",
+      "targeted review against official GINA 2026 Summary Guide"
+    ],
+    "not_executed": [
+      "tools/livraison.py locally",
+      "canonical injection",
+      "local unit tests",
+      "local builds",
+      "interactive browser desktop",
+      "interactive browser mobile",
+      "site deployment"
+    ]
+  },
+  "status": {
+    "spotted": true,
+    "received": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "reception documentation only"
+  }
+}

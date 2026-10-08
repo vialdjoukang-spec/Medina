@@ -1,3 +1,17 @@
+## 2026-10-08 — PR #12, tête f30b891 : J45
+
+État : **repéré et reçu ; non intégré ; réserves médicales/documentaires ouvertes ; contrôles de bout en bout non reproduits ; publication documentaire seulement**.
+
+- Campagne : 21 fragments, 11 Claude / 10 Codex ; premier fragment Claude `S02 / P-02-Pneumologie`.
+- Baseline : `a3b8ac4060529aaf339f17851305c07abac25cc8`.
+- 21 originaux archivés ; arbre `902e2baf04f72e3a32700a77d6920e2242d2b620`.
+- 9/9 propositions et 9/9 baselines exactes.
+- Audit statique : 46 fenêtres, 86 déclencheurs, aucune cible manquante.
+- Blocages : information professionnelle suisse, sources ERS non intégrales, revue médicale exhaustive et contrôles locaux navigateur/build.
+- Aucune injection canonique ni publication du site.
+
+[Rapport](reviews/2026-10-08/PR12_F30B891_J45/RECEPTION.md) · [Reçu](receipts/CLAUDE_J45_F30B891_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête 04cb957 : I89-3
 
 État : **repéré et reçu ; corrections médicales ciblées acceptées ; non intégré ; contrôles de bout en bout non reproduits ; publication documentaire seulement**.
