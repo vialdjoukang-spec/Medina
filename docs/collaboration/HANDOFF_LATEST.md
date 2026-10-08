@@ -1,3 +1,16 @@
+## Réception Claude I83 — harmonisation-2 d6178b5, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a livré un correctif complet à la tête `d6178b54b51bdd2279639cc4497470d4bff6a273`, basé sur `main` `dbe40639e38bd2666641731bcf500ed5a75d147f`. Les 14 originaux sont archivés sans modification ; les 15 empreintes attendues sont exactes et la remise précédente `b526d9d` n'a pas été réappliquée.
+
+État : **repéré et reçu ; non intégré ; contrôles producteurs archivés mais non reproduits ; archive et reçu publiés**.
+
+Blocage : contradiction persistante entre plusieurs prescriptions universelles de DUS à 1–4 semaines et la stratification SVS/AVF/AVLS 2023 sans dépistage précoce systématique chez l'asymptomatique à risque moyen après ablation thermique. La formule « seulement » pour la découverte des ARTE I–II doit également être nuancée. Une nouvelle remise complète est attendue.
+
+Rapport : [PR12_D6178B5_I83_HARMONISATION_2/RECEPTION.md](reviews/2026-10-08/PR12_D6178B5_I83_HARMONISATION_2/RECEPTION.md)  
+Reçu : [CLAUDE_I83_D6178B5_HARMONISATION_2_RECEPTION_2026-10-08.json](receipts/CLAUDE_I83_D6178B5_HARMONISATION_2_RECEPTION_2026-10-08.json)
+
+Aucune attribution, aucun chapitre actif et aucune source canonique n'ont été modifiés.
+
 ## Réception Claude I83 — harmonisation b526d9d, 8 octobre 2026
 
 La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a livré 14 originaux à la tête `b526d9d23d1c2286e3128108b3325e7b5a7445d6`, baseline `main` `8d6deeeec54a5557fe93dcea6f6c6e6543e09d83`, empreinte agrégée `4ccef1277ffc9a58f0a5bcfdd365ce7a6f497be6`. Ils sont reçus et archivés sans injection après réconciliation avec le `main` concurrent `db06b1fae3c27e93050850df44c3eb23fcd60164`. Les sept sources de chapitre sont médicalement recevables avec réserves mineures ; le complément de glossaire reste bloqué jusqu'à actualisation ARTE 2023. Les contrôles producteur (1 923 + 72 réussites annoncées) n'ont pas été reproduits : le runtime et `tools/livraison.py` ne sont pas disponibles. [Rapport](reviews/2026-10-08/PR12_B526D9D_I83_HARMONISATION/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_B526D9D_HARMONISATION_RECEPTION_2026-10-08.json).

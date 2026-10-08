@@ -1,3 +1,16 @@
+## 2026-10-08 — PR #12, tête d6178b5 : I83-HARMONISATION-2
+
+État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; publication documentaire seulement**.
+
+- Baseline : `dbe40639e38bd2666641731bcf500ed5a75d147f`.
+- 14 originaux archivés sans modification ; empreinte d'archive `607c711a3be1f6e76554074fd647f7d6994422d7`.
+- 15/15 empreintes de baseline et propositions exactes.
+- 4 propositions nouvelles/modifiées relativement à `b526d9d`; la remise antérieure n'a pas été réappliquée.
+- Réserve bloquante : incohérence persistante des consignes de DUS postopératoire entre passages universels à 1–4 semaines et stratification SVS 2023.
+- Contrôles producteurs inventoriés, non reproduits ; aucune injection canonique.
+
+Rapport : [réception détaillée](reviews/2026-10-08/PR12_D6178B5_I83_HARMONISATION_2/RECEPTION.md) · Reçu : [JSON](receipts/CLAUDE_I83_D6178B5_HARMONISATION_2_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête b526d9d : harmonisation I83
 
 État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; non publié dans les sources canoniques**. Quatorze originaux ont été archivés, empreinte `4ccef1277ffc9a58f0a5bcfdd365ce7a6f497be6`. Le lot a été comparé à sa baseline `8d6deeeec54a5557fe93dcea6f6c6e6543e09d83` puis réconcilié sans écrasement avec `main` `db06b1fae3c27e93050850df44c3eb23fcd60164`. Les sept fichiers de chapitre sont recevables avec réserves mineures ; le glossaire exige une mise à jour ARTE 2023. Les contrôles producteurs annoncés n'ont pas été rejoués faute de runtime local et de `tools/livraison.py`. [Rapport](reviews/2026-10-08/PR12_B526D9D_I83_HARMONISATION/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_B526D9D_HARMONISATION_RECEPTION_2026-10-08.json).
