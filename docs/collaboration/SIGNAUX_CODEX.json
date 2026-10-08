@@ -1,6 +1,6 @@
 {
   "agent": "Codex",
-  "branche": "codex/suivi-remise-a41-20261008",
+  "branche": "codex/protocole-fragments-20261008",
   "mis_a_jour": "2026-10-08T15:51:43.860088+02:00",
   "consigne": "Reprise autorisée le 8 octobre : produire tout I-03-Infectiologie et auto-revoir avant transmission ; audit final unique du fragment par Claude, correction et injection par auditeur ; INJECTE immuable ; HTML clair.",
   "lots": [
@@ -17,7 +17,7 @@
       "commit_a_examiner": "e3307768ff4c3a6c3af2e790859ff36947c0279d",
       "etat": "travail_interne_fragment_incomplet_audit_final_non_demande",
       "correction_medicale_livree": true,
-      "audit_claude_recu": false,
+      "audit_claude_recu": true,
       "injectable": false,
       "demande_envoyee": "https://github.com/vialdjoukang-spec/Medina/pull/12#issuecomment-6061004624",
       "audit_claude_archive": "livraisons/Livraison Claude/I-03-Infectiologie/archives/AUDIT_A41_39B7FF0_RECU_20261007_5BEE2A4/",
@@ -47,13 +47,23 @@
         "closed_by_external_Claude": 0
       },
       "reserves_restantes": [
+        "Réserves mineures du rapport Claude historique conservées ; couverture et auto-revue intégrale de T1 non établies."
+      ],
+      "recu": "docs/collaboration/receipts/CODEX_A41_E330776_REMIS_CLAUDE_2026-10-08.json",
+      "sources_canoniques_modifiees": true,
+      "historical_etat": "remis_Claude_contrelecture_externe_en_attente",
+      "superseded_request_protocol": "fragment-unique-2026-10-08",
+      "historical_reserves_restantes": [
         "ESP-03 majeure : bicarbonate actuel/calculé artériel et matrices.",
         "ESP-07 mineure : protocole de contraste."
       ],
-      "recu": "docs/collaboration/receipts/CODEX_A41_E330776_REMIS_CLAUDE_2026-10-08.json",
-      "sources_canoniques_modifiees": false,
-      "historical_etat": "remis_Claude_contrelecture_externe_en_attente",
-      "superseded_request_protocol": "fragment-unique-2026-10-08"
+      "audit_claude_portee": "Chapitre A41 sous protocole historique ; aucun audit final de fragment",
+      "chapter_audit_commit": "ba6a80f",
+      "chapter_injection_commit": "a5563238887df2a72da7a9f663bdae9ab01f4bc8",
+      "injected_chapter": true,
+      "injected_fragment": false,
+      "sources_canoniques_modifiees_par_cette_reprise": false,
+      "internal_work": "livraisons/Livraison Codex/I-03-Infectiologie/travail/FRAGMENT_COMPLET_2026-10-08/rapport.md"
     }
   ],
   "audits_de_claude": [

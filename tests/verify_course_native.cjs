@@ -2,6 +2,7 @@
  * No build, content edits or external downloads. This does not validate medicine.
  * MEDINA_NATIVE_CODE=I50 node tests/verify_course_native.cjs (or pass the code).
  * MEDINA_CHROMIUM_PATH selects Chromium; MEDINA_QA_CAPTURE=1 saves sample captures.
+ * MEDINA_QA_URL permits local HTTP when file:// is blocked; external requests stay blocked.
  */
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
 const {pathToFileURL}=require('node:url');
@@ -13,7 +14,7 @@ assert.match(code,/^[A-Z]\d{2}(?:\.\d+)?$/,'Code CIM invalide');
 const folder=path.join(root,'chapters',code),bankFile=path.join(folder,code+'_justifications.json');
 const out=path.resolve(process.env.MEDINA_QA_OUT||path.join(root,'audits/MECANISMES_2026-10-07',code.toLowerCase()+'_native_browser'));
 const directory=path.resolve(process.env.MEDINA_FRAGMENTS||path.join(root,'dist/fragments'));
-let file,sources;
+let file,sources,pageUrl;
 const selector='.mc[data-code="'+code+'"]';
 const normal=s=>String(s).replace(/\u00ad/g,'').normalize('NFC').replace(/\s+/g,' ').trim();
 const digest=value=>crypto.createHash('sha256').update(value).digest('hex');
@@ -52,7 +53,7 @@ function finishInputs(){
   if(input.stable)checks.push('Entrée stable : '+input.path);else failures.push({label:'Entrée modifiée pendant le contrôle',path:input.path,before:input.sha256_before,after:input.sha256_after})}
 }
 async function course(page){
- await page.goto(pathToFileURL(file).href+'#/entry/'+code);await page.waitForFunction(()=>window.MDN_READY===true);
+ await page.goto(pageUrl+'#/entry/'+code);await page.waitForFunction(()=>window.MDN_READY===true);
  await page.locator(selector).waitFor();
  if(await page.locator('.mc.book').count())await page.locator('.mc-book').click();
 }
@@ -210,12 +211,17 @@ async function sweep(page,width,expected){
 }
 (async()=>{
  fs.mkdirSync(out,{recursive:true});file=originalFragment();
+ pageUrl=process.env.MEDINA_QA_URL||pathToFileURL(file).href;
+ if(process.env.MEDINA_QA_URL){const local=new URL(pageUrl);assert.ok(['127.0.0.1','localhost','[::1]'].includes(local.hostname)&&local.protocol==='http:','MEDINA_QA_URL doit désigner un serveur HTTP local');}
  sources=fs.readdirSync(folder).filter(name=>name.endsWith('.html')).sort().map(name=>path.join(folder,name));
  check(code+' : quatre panneaux sources présents',['a','b','c','d'].every(part=>sources.includes(path.join(folder,code+'_'+part+'.html'))));
  check(code+' : sources de fenêtres présentes',sources.length>4);
  snapshotInputs();const expected=expectedSources();
  const {chromium}=loadPlaywright(),browser=await chromium.launch(browserOptions(chromium));
- try{const context=await browser.newContext({viewport:{width:1360,height:900},reducedMotion:'reduce'});await context.route(/^https?:/,route=>route.abort());
+ try{const context=await browser.newContext({viewport:{width:1360,height:900},reducedMotion:'reduce'});await context.route(/^https?:/,route=>{
+   if(process.env.MEDINA_QA_URL&&new URL(route.request().url()).origin===new URL(pageUrl).origin)return route.continue();
+   return route.abort();
+  });
   const page=await context.newPage();page.setDefaultTimeout(10000);page.on('pageerror',error=>errors.push(error.message));
   for(const width of [1360,390]){await page.setViewportSize({width,height:width===390?844:900});await attempt(width+' / cours complet',()=>sweep(page,width,expected),page)}
   if(errors.length)failures.push({label:'Erreurs JavaScript',errors});else checks.push('Aucune erreur JavaScript');
