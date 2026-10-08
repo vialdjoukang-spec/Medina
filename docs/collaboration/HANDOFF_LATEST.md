@@ -1,3 +1,16 @@
+## Réception Claude I83 — harmonisation-4 e17107a, 8 octobre 2026
+
+La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a remis un quatrième paquet complet à la tête `e17107aaafff29ac94abf9197a1eef6fb0d6c817`, basé sur `main` `0dc7aa93f8a8cea42b6aa556c38505a66b8919d5`. Les 14 originaux sont archivés sans modification ; 15/15 empreintes sont exactes. Seul `I83_b` change réellement depuis la v3.
+
+État : **repéré et reçu ; non intégré ; contrôles producteurs archivés mais non reproduits ; publication documentaire seulement**.
+
+La réserve v3 est levée, mais le nouveau texte généralise à toute TVP une surveillance échographique jusqu'à résolution. Il faut dissocier l'ARTE, suivie jusqu'à rétraction quand traitée, de la TVP, surveillée selon siège, symptômes, risque d'extension et protocole I80.
+
+Rapport : [PR12_E17107A_I83_HARMONISATION_4/RECEPTION.md](reviews/2026-10-08/PR12_E17107A_I83_HARMONISATION_4/RECEPTION.md)  
+Reçu : [CLAUDE_I83_E17107A_HARMONISATION_4_RECEPTION_2026-10-08.json](receipts/CLAUDE_I83_E17107A_HARMONISATION_4_RECEPTION_2026-10-08.json)
+
+Aucune source canonique, attribution ni chapitre actif n'a changé.
+
 ## Réception Claude I83 — harmonisation-3 205d2cb, 8 octobre 2026
 
 La PR [#12](https://github.com/vialdjoukang-spec/Medina/pull/12) a remis un troisième paquet complet à la tête `205d2cb47ae5bd49fa7c028d17c4532410821a54`, basé sur `main` `7b5ebffcc12758886a569500d47813ce97b1edc5`. Les 14 originaux sont archivés sans modification ; 15/15 empreintes sont exactes. Seuls `I83_b`, `I83_c` et `I83_pop2` changent réellement depuis la v2.

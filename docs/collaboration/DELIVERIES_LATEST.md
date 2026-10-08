@@ -1,3 +1,16 @@
+## 2026-10-08 — PR #12, tête e17107a : I83-HARMONISATION-4
+
+État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; publication documentaire seulement**.
+
+- Baseline : `0dc7aa93f8a8cea42b6aa556c38505a66b8919d5`.
+- 14 originaux archivés sans modification ; empreinte `3b7ed1c72814841e399921fcecf52efb59934d37`.
+- 15/15 empreintes exactes.
+- Seul changement réel depuis la v3 : `I83_b`.
+- Réserve bloquante : la nouvelle phrase impose une surveillance jusqu'à résolution pour toute TVP ; dissocier ARTE et TVP selon les recommandations.
+- Contrôles producteurs inventoriés, non reproduits ; aucune injection canonique.
+
+[Rapport](reviews/2026-10-08/PR12_E17107A_I83_HARMONISATION_4/RECEPTION.md) · [Reçu](receipts/CLAUDE_I83_E17107A_HARMONISATION_4_RECEPTION_2026-10-08.json)
+
 ## 2026-10-08 — PR #12, tête 205d2cb : I83-HARMONISATION-3
 
 État : **repéré et reçu ; non intégré ; non contrôlé indépendamment ; publication documentaire seulement**.
