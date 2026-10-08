@@ -319,6 +319,8 @@ async def main():
             check(name + ": visible banner", home["banner"]["x"] >= -1 and home["banner"]["right"] <= viewport["width"] + 1 and home["banner"]["top"] >= -1 and home["banner"]["bottom"] <= viewport["height"], home["banner"])
             await overflow(page, name + "/home")
             await page.screenshot(path=str(ARGS.output / f"{name}-home.png"))
+            await page.evaluate("document.getElementById('mcg-categories-title').scrollIntoView({block:'start',behavior:'instant'})")
+            await page.screenshot(path=str(ARGS.output / f"{name}-categories.png"))
             section = {"home": {key: value for key, value in home.items() if key not in ("data", "organisation")}, "courses": {}}
             for code in ARGS.codes:
                 try:
