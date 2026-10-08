@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_J45_9AA6504_J45_3_RECEPTION_2026-10-08",
+  "date": "2026-10-08",
+  "repository": "vialdjoukang-spec/Medina",
+  "pull_request": {
+    "number": 12,
+    "state": "open",
+    "draft": false,
+    "url": "https://github.com/vialdjoukang-spec/Medina/pull/12"
+  },
+  "provenance": {
+    "producer": "Claude",
+    "branch": "claude/loving-shannon-spwrhc",
+    "observed_head_sha": "9aa65044972f8bdd5e922a3567a78adb2565f8fb",
+    "delivery_commit_sha": "e007b6f99d50f622b57bb7e2548ea8173a069704",
+    "declared_baseline_sha": "c545b79cb604347c7c1f38c5c8fe03126daafbc9",
+    "main_reconciled_sha": "8f18804c8ce5d78249586d8561cc54ddf49fba2c"
+  },
+  "scope": {
+    "campaign": "21 remaining fragments (11 Claude / 10 Codex)",
+    "historical_campaign": "30 courses (15 Claude / 15 Codex), distinct",
+    "cardiology_backlog": "20 courses (10 Claude / 10 Codex), distinct",
+    "fragment": "P-02-Pneumologie",
+    "fragment_id": "S02",
+    "chapter": "J45 — Asthme",
+    "covers": [
+      "J45",
+      "J46"
+    ],
+    "lot": "2026-10-08-J45-3",
+    "replaces": "2026-10-08-J45-2",
+    "assignments_changed": false,
+    "active_chapters_changed": false
+  },
+  "archive": {
+    "root": "livraisons/Livraison Claude/P-02-Pneumologie/archives/2026-10-08_PR12_9AA6504_J45_3",
+    "original_count": 14,
+    "originals_plus_provenance_git_tree_sha1": "cd1e20d1e52475eac11ba5db1d6c4f80308450f9",
+    "provenance_blob_sha1": "ef2a0ba53eb3ce0c7c6bd3cd923130b1309cbb6b"
+  },
+  "content_comparison": {
+    "changed_from_j45_2": [
+      "J45_c.html",
+      "J45_pop2.html",
+      "J45_pop4.html"
+    ],
+    "identical_to_j45_2": [
+      "J45_a.html",
+      "J45_b.html",
+      "J45_d.html",
+      "J45_pop1.html",
+      "J45_pop3.html",
+      "J45_justifications.json"
+    ]
+  },
+  "verification": {
+    "proposal_sha256": "9/9 exact",
+    "replacement_baselines": "9/9 exact on c545b79cb604347c7c1f38c5c8fe03126daafbc9",
+    "canonical_targets": "9/9 present under chapters/J45",
+    "static_html": {
+      "html_files": 8,
+      "ids": 47,
+      "unique_window_keys": 47,
+      "templates": 47,
+      "duplicate_ids": 0,
+      "missing_targets": 0,
+      "orphan_templates": 0,
+      "embedded_scripts": 0
+    },
+    "justifications": {
+      "valid_json": true,
+      "entries": 15,
+      "unique_ids": 15,
+      "targets_resolved": "15/15"
+    }
+  },
+  "medical_review": {
+    "scope": "targeted delta review; not exhaustive certification",
+    "resolved": [
+      "J45-MED-02: indirect challenge and mannitol claims aligned with ERS 2018 and GINA 2026"
+    ],
+    "blocking": [
+      "J45-MED-03: exhaustive review of 38844 words, 47 windows, 8 quizzes, 8 Pareto and all primary studies not completed"
+    ],
+    "remaining_nonblocking": [
+      "Hallstrand 2018 is an official technical standard, not a primary study",
+      "ERS 2017 methacholine standard not fully read",
+      "OFSP limitation criteria not fully read",
+      "reslizumab current commercialisation not confirmed",
+      "CIM-11 completeness not established"
+    ]
+  },
+  "controls": {
+    "producer_claims": [
+      "acronym check passed",
+      "static course check: 38844 words, 47 windows, 8 quizzes, 8 Pareto",
+      "15/15 justification targets",
+      "22-fragment build reproducible",
+      "2340 native checks passed at 1360 and 390 px",
+      "unit tests passed",
+      "check-claude passed"
+    ],
+    "independently_executed": [
+      "paginated remote branch and PR inventory",
+      "content delta comparison",
+      "9 proposal SHA-256 checks",
+      "9 current baseline SHA-256 checks",
+      "path ownership and conflict check",
+      "static HTML/window/reference audit",
+      "justifications JSON parse and target resolution",
+      "targeted medical review against ERS 2018 and GINA 2026"
+    ],
+    "not_executed": [
+      "tools/livraison.py locally",
+      "canonical injection",
+      "local unit tests",
+      "local builds",
+      "interactive browser desktop",
+      "interactive browser mobile",
+      "site deployment"
+    ]
+  },
+  "status": {
+    "spotted": true,
+    "received": true,
+    "integrated": false,
+    "technically_verified": false,
+    "published": "reception documentation only"
+  }
+}

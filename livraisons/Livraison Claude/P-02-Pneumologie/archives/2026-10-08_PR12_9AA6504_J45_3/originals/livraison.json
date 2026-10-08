@@ -1,0 +1,104 @@
+{
+ "schema_version": 1,
+ "kind": "claude_contribution",
+ "author": "Claude",
+ "status": "J45 — Asthme (P-02-Pneumologie), version 3 : réserve J45-MED-02 de la réception Codex c545b79 levée (tests indirects et mannitol alignés sur Hallstrand 2018, texte intégral) ; remplace J45-2",
+ "fragment": {
+  "id": "S02",
+  "label": "P-02-Pneumologie",
+  "specialty": "Pneumologie"
+ },
+ "source_commit": "c545b79cb604347c7c1f38c5c8fe03126daafbc9",
+ "code_reference": "CIM-10-GM 2024 ; inventaire CIM-11 non établi",
+ "chapters": [
+  {
+   "code": "J45",
+   "title": "Asthme",
+   "covers": [
+    "J45",
+    "J46"
+   ],
+   "owner_fragment": "S02"
+  }
+ ],
+ "files": [
+  {
+   "target_path": "chapters/J45/J45_a.html",
+   "source_path": "sources/chapters/J45/J45_a.html",
+   "sha256": "909345840cc9b604eff4df0eb0141ed0e79797ed8c4a010e23282043c976840a",
+   "proposed_sha256": "03f9b6ffc5f2d5c00bfed692f2679193df3dc6fcb39683c5347bab4f168f1bbe"
+  },
+  {
+   "target_path": "chapters/J45/J45_b.html",
+   "source_path": "sources/chapters/J45/J45_b.html",
+   "sha256": "b0efed9fc1ecb7b9c52193198285a61e5d0ba0da58e6ec6c437cd441fac51108",
+   "proposed_sha256": "aee7c4620e8299c5b53aa4896b0d9df83ec233637d9d0f84d52f6aa5e4b8140b"
+  },
+  {
+   "target_path": "chapters/J45/J45_c.html",
+   "source_path": "sources/chapters/J45/J45_c.html",
+   "sha256": "95d9db05c47f750770a6db9e86e1606a746a7c2974c02936129235273c615825",
+   "proposed_sha256": "a49b444ad7758ab653d2b694899ae38de8fd5b4958b14f05a07399d5575f11bd"
+  },
+  {
+   "target_path": "chapters/J45/J45_d.html",
+   "source_path": "sources/chapters/J45/J45_d.html",
+   "sha256": "1e35d733240e944c587dffa025e720effcd4c0ca035a8d9898e6c0bd43f38e61",
+   "proposed_sha256": "b0bbc51bcc6802ed72e3d19dd060590bd64fbd2fb716aeb5747476a047492d26"
+  },
+  {
+   "target_path": "chapters/J45/J45_justifications.json",
+   "source_path": "sources/chapters/J45/J45_justifications.json",
+   "sha256": "00393fadff3be7a72c61835b94737fe12d03dca4d9b93fd307d71628fbeb7b0e",
+   "proposed_sha256": "7087dbb7f5d66012d3b60b01a38471fe404acc71c10c849fbe445b938e7b503e"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop1.html",
+   "source_path": "sources/chapters/J45/J45_pop1.html",
+   "sha256": "832a8fc0c329c814447b47344b06c9bfa873274a0c8fef4dd811617f70bd265f",
+   "proposed_sha256": "23e88118420cde634d184766789d2274667bbd9f885ae38a150edc39a8d802d0"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop2.html",
+   "source_path": "sources/chapters/J45/J45_pop2.html",
+   "sha256": "ac68031bd9d7ee6944a8e6b2bb2a56cec8d83388ec9de7d93ba738e4bf750508",
+   "proposed_sha256": "3698a56f77159c45e73ed52bd91b601750f78ce4eff3e6a24a9ec6d07fc91cab"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop3.html",
+   "source_path": "sources/chapters/J45/J45_pop3.html",
+   "sha256": "55ee1d61556b4ca1729aeb47c4a330eed763b612a908868873f82af0e9e6cbbc",
+   "proposed_sha256": "05c4677a22e9edf58c3d1a5aa60fa6f13cb5cf071555f181c46366dfdb961705"
+  },
+  {
+   "target_path": "chapters/J45/J45_pop4.html",
+   "source_path": "sources/chapters/J45/J45_pop4.html",
+   "sha256": "abde85d51d9d18f8190f6b364e4d194bae7ea8d23ba8335cc67b6a790ea5540c",
+   "proposed_sha256": "1b81e09fcb12d1a0fbefc3dd05d942696317eef3459dc887216343725458f5b3"
+  }
+ ],
+ "checks": [
+  {
+   "command": "verifier_sigles J45 ; test_v7.py --static J45 ; insert_justifications.py --course J45 ; build_front.py ; --all-fragments ; audit_fragments.py ; verify_course_native.cjs J45 ; unittest discover tests",
+   "base": "c545b79cb604347c7c1f38c5c8fe03126daafbc9",
+   "result": "{} ; OK (38 844 mots, 47 fenêtres, 8 quiz, 8 Pareto) ; 15/15 ; 22 fragments ; natif 2 340 contrôles, 0 échec ; tests unitaires OK",
+   "build_fragment_s02_sha256": "f1d98d71f2a7107974d0918932f82f95dc26d60776b6a86e4ba21b039d9950e0"
+  }
+ ],
+ "limits": [
+  "Couverture CIM-11 non établie.",
+  "Limitations de remboursement (liste des spécialités de l'OFSP) non relues ; mention « LS (LIM) » de compendium.ch citée.",
+  "Reslizumab : mention « hc 03/26 » sur compendium.ch, commercialisation non confirmée.",
+  "Norme ERS 2017 (méthacholine) toujours non relue : catégories de PD20 et contre-indications restent retirées.",
+  "Hyperventilation eucapnique : GINA 2026 (≥ 15 %) dans le texte ; ERS 2018 (≥ 10 %) non repris, selon la règle du référentiel le plus récent."
+ ],
+ "delivery": {
+  "lot": "J45-3",
+  "date": "2026-10-08",
+  "branch": "claude/loving-shannon-spwrhc",
+  "start_commit": "c545b79cb604347c7c1f38c5c8fe03126daafbc9",
+  "report": "rapport.md",
+  "base": "main",
+  "remplace": "lots/2026-10-08-J45-2 (reçu par Codex en c545b79, non intégré)"
+ }
+}
