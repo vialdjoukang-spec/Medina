@@ -160,7 +160,7 @@ t('CHAMPION PHOENIX',[('CHAMPION','Cangrelor versus standard tHerapy to Achieve 
 a('CIR',[('CIR','CIRculation : préfixe éditorial des articles de la revue Circulation dans leur identifiant numérique')],'Préfixe de la revue Circulation dans un identifiant d’article (doi)','<p>Élément d’un identifiant d’objet numérique, non une abréviation clinique.</p>')
 
 # --- références suisses (balayage du 08.10.2026) ---
-a('GSLA',[('G','Groupe'),('S','Suisse'),('L','Lipides'),('A','et Athérosclérose')],'Groupe de travail Lipides et Athérosclérose (Arbeitsgruppe Lipide und Atherosklerose, AGLA en allemand)',
+a('GSLA',[('GSLA','sigle français officiel du Groupe de travail Lipides et Athérosclérose')],'Groupe de travail Lipides et Athérosclérose (Arbeitsgruppe Lipide und Atherosklerose, AGLA en allemand)',
  '<p>Groupe d’experts suisse qui adapte au contexte suisse les recommandations européennes sur les lipides et la prévention de l’athérosclérose ; il publie le calculateur de risque GSLA et le guide de poche « Prévention de l’athérosclérose ».</p>')
 a('SCPRS',[('S','Swiss (suisse)'),('C','Cardiovascular (cardiovasculaire)'),('P','Prevention (prévention)'),('R','Rehabilitation (réadaptation)'),('S','Sports cardiology (cardiologie du sport)')],'Groupe de travail suisse pour la prévention cardiovasculaire, la réadaptation et la cardiologie du sport',
  '<p>Groupe de travail de la Société suisse de cardiologie qui fixe les critères de qualité des programmes de réadaptation cardiaque ; le respect de ces critères conditionne leur prise en charge par l’assurance obligatoire.</p>')
