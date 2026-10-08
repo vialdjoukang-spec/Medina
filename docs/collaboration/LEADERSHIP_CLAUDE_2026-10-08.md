@@ -84,3 +84,5 @@ Consigne de Vial : la langue doit être **merveilleuse à lire, riche, professio
 ## 10. File de production Claude
 
 La file est tenue dans `organisation/FILE_FRAGMENTS_CLAUDE.json`. **Un fragment à la fois** ; à l’intérieur, **catégorie par catégorie, leçon par leçon**. Quand un fragment s’achève, le suivant démarre, jusqu’à la fin de la file. Après les onze fragments Claude, la file se poursuit par les fragments Codex en ordre inverse de création (section 4). **Veto de Vial** : si Codex retarde le projet, Claude peut entamer un fragment Codex non injecté plus tôt, après un signal de prise en charge et en conservant les travaux Codex.
+
+**Parallélisme (précision de Vial)** : plusieurs leçons du fragment actif sont produites en parallèle, un rédacteur et un dossier par leçon ; les injections dans les fichiers partagés (`chapters.json`, `organisation/course_groups.json`) sont faites une à une par les relecteurs.
