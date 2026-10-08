@@ -13,7 +13,7 @@
   const lesson=document.querySelector('.mcg-planned-panel'),item=lesson&&document.querySelector('[data-mcg-block]');
   if(lesson&&item)lesson.style.setProperty('--cat',item.style.getPropertyValue('--cat'));
  }
- document.documentElement.removeAttribute('data-theme');
+ // Conserver le repère du moteur de thèmes ; la surface Atlas impose le clair.
  new MutationObserver(paint).observe(document.body,{childList:true,subtree:true});
  paint();
 })();

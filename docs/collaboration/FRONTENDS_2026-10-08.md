@@ -2,13 +2,17 @@
 
 ## Demande de Vial
 
-Accès visuel aux cours et refonte majeure : un frontend distinct par fragment, contenant uniquement sa spécialité ; accueil clair et agréable ; rectangles de catégories aux intitulés sobres, relief discret ; police Anthropic Serif. Cette demande directe de l’utilisateur complète le protocole du PDF, sans transformer une consultation de rédaction en remise pour l’audit final.
+Accès visuel aux cours et refonte majeure : un frontend distinct par fragment, contenant uniquement sa spécialité ; accueil clair et agréable ; rectangles de catégories aux intitulés sobres, relief discret. La demande initiale Anthropic Serif est remplacée par l’instruction directe suivante : « Pas de conflit avec Claude. Aligne toi avec la Police qu’il a trouvé ». Cette demande directe de l’utilisateur complète le protocole du PDF, sans transformer une consultation de rédaction en remise pour l’audit final.
 
 ## Réalisation
 
 Le portail index présente les 22 spécialités et permet de chercher leur nom. Chaque lien ouvre un HTML autonome propre, avec son accueil, sa navigation, ses catégories et ses cours. Le titre public et l’accent sont spécifiques à la spécialité. Les cours disponibles sont visibles dès l’accueil, sans passer par une interface de production. Le carnet reste local et distinct par fragment.
 
-Les cartes utilisent du blanc et de l’ivoire, un titre sérif régulier et une ombre à plusieurs niveaux discrète. Le rendu est responsive et les animations respectent la préférence de réduction de mouvement. La véritable Anthropic Serif romaine et italique est embarquée en WOFF2 ; les fichiers d’origine, copyright et provenance sont conservés dans assets/fonts/PROVENANCE.json. Les glyphes absents, notamment grecs, utilisent une famille sérif de secours. Le moteur garde les quatre onglets, les fenêtres, le mode livre et les réglages de lecture.
+La surface haute lisibilité de Claude est reprise depuis ses commits `e9b7192ffef7cbb44e53bb05165c244d3d11d796` puis `f92867451d3e46cb160a53379f7196248e4f41a6`, avec son attribution conservée (`c114c4d`, `e05191a`). **Atkinson Hyperlegible Next v2.001** est embarquée en quatre WOFF2 originaux : romain400, italique400, romain600 et romain700. Les cartes de catégories et de spécialités utilisent ses couleurs distinctes, texte blanc à contraste vérifié d’au moins4,5:1 et relief discret ; les surfaces de lecture restent claires et le texte principal presque noir. Le rendu est responsive et les animations respectent la préférence de réduction de mouvement.
+
+Les adaptations d’intégration conservent notre navigation strictement locale, y compris les repères de lecture, et les réglages du lecteur. L’exclusion des cours, fenêtres et Navigo de la règle globale forcée permet de choisir réellement une autre famille ; Anthropic Serif reste une option. Les en-têtes et onglets Navigo gardent un contraste élevé. Le moteur garde les quatre onglets, les fenêtres et le mode livre. La famille choisie améliore la distinction des glyphes ; aucun « standard universel de lecture » ou bénéfice clinique non mesuré n’est revendiqué.
+
+Seuls les commits frontend Claude sont repris : les sources médicales en cours dans sa branche restent conservées à leur emplacement, sans intégration implicite de sa réécriture J09.
 
 `fragment_surface.py` centralise le périmètre frontend par spécialité primaire et propriétaire du cours canonique. A43, B18 et A04 rejoignent l’infectiologie dans le frontend ; l’ancien catalogue documentaire demeure conservé. Les variantes d’un cours restent rattachées à leur cours propriétaire. Les glossaires embarqués ne contiennent que les termes des cours présents et leurs dépendances. Les anciens catalogues globaux et plans médicaux génériques sont retirés des fragments. L’inventaire CIM-11 complet n’est pas déclaré établi.
 
@@ -22,6 +26,6 @@ Le script `tools/build_work_preview.py` vérifie les dix empreintes du dossier i
 
 ## Vérifications
 
-Les résultats exacts sont consignés dans le reçu FRONTENDS_2026-10-08 et ses contrôles associés. Ils portent sur le fonctionnement technique et le périmètre affiché ; ils ne constituent pas une validation médicale finale des cours ou des fragments.
+Les résultats exacts sont consignés dans le reçu FRONTENDS_2026-10-08, le reçu ALIGNEMENT_ATKINSON_2026-10-08 et leurs contrôles associés. Ils portent sur le fonctionnement technique et le périmètre affiché ; ils ne constituent pas une validation médicale finale des cours ou des fragments.
 
 La tête distante 9fa4651 dépose J09 dans l’ancien espace partagé ; elle est conservée lors de l’intégration frontend. Ce dépôt de chapitre n’est pas traité comme un fragment entier prêt pour l’audit unique.

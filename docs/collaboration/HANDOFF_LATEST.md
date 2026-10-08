@@ -1,3 +1,7 @@
+## Alignement visuel avec Claude — 8 octobre 2026
+
+Sur instruction directe de Vial, Atkinson Hyperlegible Next de Claude (`f928674`) est la police par défaut. Ses deux commits frontend sont repris avec son attribution. Les 22 spécialités, le thème clair, les contrastes et les préférences de lecture sont vérifiés ; les sources médicales et statuts d’injection sont inchangés. [Réalisation](FRONTENDS_2026-10-08.md) · [Reçu d’alignement](receipts/CODEX_ALIGNEMENT_ATKINSON_2026-10-08.json). Les mentions Anthropic et publication à vérifier ci-dessous correspondent aux étapes antérieures ; le reçu d’alignement donne l’état actuel.
+
 ## Frontends distincts — 8 octobre 2026
 
 La demande directe de Vial ajoute un accueil moderne clair, Anthropic Serif embarquée et un frontend strictement limité à chaque spécialité. Les 22 frontends sont reconstruits et contrôlés ; le portail donne accès aux 32 cours intégrés. L’aperçu A41 interne est consultable sous `apercus/infectiologie.html#/entry/A41`, avec statut de travail et sans certification finale. Sources médicales canoniques et statuts d’injection inchangés. Voir [la réalisation](FRONTENDS_2026-10-08.md) et [le reçu](receipts/CODEX_FRONTENDS_2026-10-08.json). La publication servie reste à vérifier dans le reçu. La remise distante J09 de 9fa4651 est conservée comme travail de chapitre ; elle ne vaut pas fragment entier prêt à l’audit unique.

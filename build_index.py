@@ -109,8 +109,8 @@ SCRIPT = r"""
 def portal_v2():
     faces = ''.join("@font-face{font-family:'Atkinson Hyperlegible Next';font-style:%s;font-weight:%s;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
                     % (style, weight, base64.b64encode((ROOT / 'shell/fonts' / name).read_bytes()).decode('ascii'))
-                    for name, style, weight in (('ahn-400.woff2', 'normal', '400 500'), ('ahn-400i.woff2', 'italic', '400'),
-                                                ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700 800')))
+                    for name, style, weight in (('ahn-400.woff2', 'normal', '400'), ('ahn-400i.woff2', 'italic', '400'),
+                                                ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700')))
     return faces + (ROOT / 'engine/portal_v2.css').read_text(encoding='utf-8')
 
 

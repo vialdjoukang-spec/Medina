@@ -10,6 +10,10 @@ fs.mkdirSync(out,{recursive:true});
 function check(name,result,detail){assert.ok(result,name+(detail?' : '+JSON.stringify(detail):''));checks.push(name)}
 function payload(source){return JSON.parse(source.match(/<script id="medina-category-organisation-data" type="application\/json">([\s\S]*?)<\/script>/)[1])}
 async function noOverflow(page,label){const size=await page.evaluate(()=>({width:innerWidth,document:document.documentElement.scrollWidth}));check(label+' : pas de débordement',size.document<=size.width+1,size)}
+async function cardContrast(page,selector){return page.locator(selector).evaluateAll(cards=>{
+ const luminance=color=>{const values=color.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4});return values[0]*.2126+values[1]*.7152+values[2]*.0722};
+ return cards.map(card=>{const title=card.querySelector('h2,h3'),fg=luminance(getComputedStyle(title).color),bg=luminance(getComputedStyle(card).backgroundColor);return {title:title.textContent,ratio:(Math.max(fg,bg)+.05)/(Math.min(fg,bg)+.05)}});
+})}
 const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL(req.url,'http://local').pathname).replace(/^\//,'')||'index.html';const file=path.resolve(directory,name);if(!file.startsWith(directory+path.sep)||!fs.existsSync(file)){res.writeHead(404);res.end();return}res.setHeader('Content-Type','text/html;charset=utf-8');res.end(fs.readFileSync(file))});
 (async()=>{
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
@@ -32,6 +36,7 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
    check(f.id+' : clair même avec système sombre',!visual.scheme.includes('dark')&&visual.body==='rgb(238, 240, 243)',visual);
    check(f.id+' : Atkinson Hyperlegible Next affichée',visual.font.includes('Atkinson Hyperlegible Next'),visual);
    check(f.id+' : marque lisible',visual.brand==='rgb(13, 15, 18)',visual);
+   const contrasts=await cardContrast(page,'.mcg-category-card');check(f.id+' : toutes les catégories atteignent 4,5:1',contrasts.every(card=>card.ratio>=4.5),contrasts.filter(card=>card.ratio<4.5));
    await noOverflow(page,f.id+' accueil bureau');
    if(O.blocks.length){
     const b=O.blocks[0];await page.locator('.mcg-category-card').first().click();await page.locator('[data-mcg-block]').waitFor();
@@ -45,9 +50,14 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
     const l=[...available.values()][0];await page.goto(url+'#/entry/'+l.code);await page.locator('.mc[data-code="'+l.code+'"]').waitFor();
     check(f.id+' : les quatre onglets restent disponibles',await page.locator('.mc-tabs button').count()===4);
     check(f.id+' : police du cours par défaut',await page.locator('.mc-font').inputValue()==="'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif");
+    check(f.id+' : texte du cours rendu en Atkinson',(await page.locator('.mc-panel:not([hidden]) p').first().evaluate(p=>getComputedStyle(p).fontFamily)).includes('Atkinson Hyperlegible Next'));
     for(let i=0;i<4;i++){await page.locator('.mc-tabs button').nth(i).click();check(f.id+' : onglet '+(i+1)+' lisible',await page.locator('.mc-panel:not([hidden])').count()===1);await noOverflow(page,f.id+' onglet '+(i+1))}
     await page.locator('.mc-tabs button').first().click();
-    const word=page.locator('.mc-panel:not([hidden]) .mc-w[data-k]').first();if(await word.count()){await word.click();await page.locator('.mc-dlg[open]').waitFor();check(f.id+' : fenêtre explicative accessible',await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()!=='');await page.keyboard.press('Escape')}
+    await page.locator('.mc-font').selectOption("Georgia,'Times New Roman',serif");
+    check(f.id+' : police choisie appliquée au texte',(await page.locator('.mc-panel:not([hidden]) p').first().evaluate(p=>getComputedStyle(p).fontFamily)).startsWith('Georgia'));
+    check(f.id+' : Navigo suit la police choisie',(await page.locator('.mc-navigo-title').evaluate(p=>getComputedStyle(p).fontFamily)).startsWith('Georgia'));
+    const word=page.locator('.mc-panel:not([hidden]) .mc-w[data-k]').first();if(await word.count()){await word.click();await page.locator('.mc-dlg[open]').waitFor();check(f.id+' : fenêtre explicative accessible',await page.locator('.mc-dlg[open] .mc-dlg-b').innerText()!=='');check(f.id+' : fenêtre suit la police choisie',(await page.locator('.mc-dlg[open] .mc-dlg-b').evaluate(p=>getComputedStyle(p).fontFamily)).startsWith('Georgia'));await page.keyboard.press('Escape')}
+    await page.locator('.mc-font').selectOption("'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif");
    }
    await page.goto(url+'#/method');await page.locator('.mcg-search-heading').waitFor();
    check(f.id+' : repères de lecture propres à la spécialité',(await page.locator('#content').innerText()).includes(O.fragment.display_name)&&!(await page.locator('#content').innerText()).includes('67 spécialités'));
@@ -59,6 +69,8 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
   }
   await page.goto(origin+'/index.html');await page.evaluate(()=>document.fonts.ready);
   const links=page.locator('a[href^="fragments/"]');check('Accueil : 22 accès distincts',await links.count()===22);
+  check('Accueil : police Atkinson affichée',(await page.locator('.hero h1').evaluate(p=>getComputedStyle(p).fontFamily)).includes('Atkinson Hyperlegible Next'));
+  const contrasts=await cardContrast(page,'.specialty-card');check('Accueil : les 22 couleurs atteignent 4,5:1',contrasts.length===22&&contrasts.every(card=>card.ratio>=4.5),contrasts.filter(card=>card.ratio<4.5));
   await noOverflow(page,'Portail bureau');await page.screenshot({path:path.join(out,'accueil-desktop.png')});
   await page.setViewportSize({width:390,height:844});await noOverflow(page,'Portail mobile');await page.screenshot({path:path.join(out,'accueil-mobile.png')});
   const preview=path.join(directory,'apercus/infectiologie.html');if(fs.existsSync(preview)){

@@ -5,9 +5,10 @@
 html[data-medina-fragment]{
  --x-font:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,"Segoe UI",Arial,sans-serif;
  --x-bg:#eef0f3;--x-surface:#ffffff;--x-ink:#0d0f12;--x-ink2:#262a31;--x-line:#c9ced6;--x-brand:#14301f;--x-focus:#ffb000;
- --cat:#1565c0;color-scheme:light}
+ --cat:#1565c0;color-scheme:only light}
 html[data-medina-fragment][data-medina-fragment] body{background:var(--x-bg)!important;color:var(--x-ink)!important;-webkit-font-smoothing:antialiased}
-html[data-medina-fragment][data-medina-fragment] body,html[data-medina-fragment][data-medina-fragment] body *:not(svg,svg *,code,.mcg-code){font-family:var(--x-font)!important}
+/* Les cours, fenêtres et Navigo suivent la préférence --mc-font du lecteur. */
+html[data-medina-fragment][data-medina-fragment] body,html[data-medina-fragment][data-medina-fragment] body *:not(svg,svg *,code,.mcg-code,.mc,.mc *,.mc-dlg,.mc-dlg *,.mc-navigo,.mc-navigo *){font-family:var(--x-font)!important}
 html[data-medina-fragment][data-medina-fragment] body :focus-visible{outline:3px solid var(--x-focus)!important;outline-offset:2px!important}
 
 /* ——— Barre latérale ——— */
@@ -128,6 +129,8 @@ html[data-medina-fragment][data-medina-fragment] body .mcg-cover .mcg-counts spa
 /* Cours : onglets, Navigo et métadonnées à contraste élevé */
 html[data-medina-fragment][data-medina-fragment] body .mc-tabs button{color:#14171c!important;font-weight:700!important;opacity:1!important}
 html[data-medina-fragment][data-medina-fragment] body .mc-tabs button[aria-selected="true"]{background:#14301f!important;color:#fff!important}
+html[data-medina-fragment][data-medina-fragment] body :is(.mc-navigo,.mc-navigo *):not(svg,svg *){font-family:var(--mc-font,var(--x-font))!important}
 html[data-medina-fragment][data-medina-fragment] body :is(.mc-navigo-panel,.mc-navigo-panel *):not(svg,svg *){color:#14171c!important;opacity:1!important}
-html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel :is(button,a)[aria-selected="true"],html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel .active{background:#14301f!important;color:#fff!important}
+html[data-medina-fragment][data-medina-fragment] body .mc-navigo-head{background:#fff!important;border-bottom:2px solid var(--x-line)}
+html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel :is(button,a)[aria-selected="true"],html[data-medina-fragment][data-medina-fragment] body .mc-navigo-panel :is(.active,.is-active){background:#14301f!important;color:#fff!important}
 html[data-medina-fragment][data-medina-fragment] body .mc :is(.mc-code,.mc-status){color:#262a31!important}

@@ -86,7 +86,10 @@ async function light(page, name) {
       check(url + ' : 100 palettes conservent une surface claire', paletteResults.count === 100 && paletteResults.failures.length === 0, paletteResults);
       await page.evaluate(() => showThemeStudio());
       check(url + ' : sélecteur chromatique conservé', await page.locator('.theme-card').count() === 100);
-      await page.locator('.theme-card').last().click();
+      // Atlas masque ce sélecteur historique ; son moteur doit rester clair pour
+      // toutes les préférences, même si une ancienne session choisit une palette.
+      if(await page.locator('.theme-card').last().isVisible()) await page.locator('.theme-card').last().click();
+      else await page.evaluate(() => {state.theme='theme-100';applyTheme()});
       check(url + ' : choix chromatique effectif', await page.evaluate(() => document.documentElement.dataset.theme === 'theme-100'));
       await page.evaluate(() => closeModal());
       await light(page, url + ' après choix chromatique');
