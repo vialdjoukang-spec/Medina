@@ -45,8 +45,10 @@ Reprendre au premier fragment non coché de `QUEUE.md`. L'outil refuse d'avancer
 
 Les 22 fragments sont fusionnés ; `QUEUE.md` ne contient aucun restant. `final-audit.json` vérifie la couverture exacte de 15 835 codes actifs dans le périmètre, représentés une seule fois dans 15 758 leçons : 55 cours existants remplis et 15 703 coquilles vides. Les 3 396 fichiers protégés par empreinte restent inchangés. La progression globale de rédaction est de 0,35 %. Les 13 198 étoiles correspondent aux liens pédagogiques SSP documentés ; 2 560 leçons sans correspondance établie restent à arbitrer.
 
-Les 247 tests Python, le build global, les 22 builds de fragments, l'audit de reproductibilité et les contrôles navigateur ordinateur/mobile passent. Le scan informatif GitHub des branches a rencontré une erreur HTTP 403, distincte de ces contrôles et de la garde de fusion.
+Les 248 tests Python, le build global, les 22 builds de fragments, l'audit de reproductibilité et les contrôles navigateur ordinateur/mobile passent. Le scan informatif GitHub des branches a rencontré une erreur HTTP 403, distincte de ces contrôles et de la garde de fusion.
 
 `captures/captures-medina.html` rassemble 46 captures réelles : une vue ordinateur et une vue mobile par fragment, une coquille vide et le portail avec sa progression globale. `captures/captures-medina.zip` permet de télécharger une galerie autonome avec tous les PNG. Les images sont prises après la reconstruction complète, avec les animations neutralisées. `captures/checks.json` conserve les dimensions et vérifications des liens et de l'archive.
 
 Après le déploiement Pages : https://vialdjoukang-spec.github.io/Medina/apercus/controle/nosologie/captures-medina.html.
+
+Le lancement autonome des outils d’aperçu et d’organisation est vérifié, y compris le chargement par chemin de `fragment_surface` et de son moteur voisin. Le contrôle navigateur complet de l’aperçu existant passe sur ordinateur/mobile avec 5 545 vérifications, 409 fenêtres atteignables par vue, et des sources inchangées. `standalone-cli-checks.json` conserve ce bilan. Le contrôle du catalogue compare les codes au mapping courant de la CIM, plutôt qu’à un ancien nombre fixe.
