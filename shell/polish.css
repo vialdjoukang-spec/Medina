@@ -2,7 +2,8 @@
 @property --mdn-a{syntax:'<angle>';initial-value:0deg;inherits:false}
 html{scroll-behavior:smooth}
 body{background:radial-gradient(1200px 600px at 110% -10%,color-mix(in srgb,var(--t3,#496a58) 10%,transparent),transparent 60%),radial-gradient(900px 500px at -10% 110%,color-mix(in srgb,#d9a441 8%,transparent),transparent 60%),var(--bg)}
-.topbar{backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);box-shadow:0 1px 0 color-mix(in srgb,var(--t4,#1f3428) 8%,transparent)}
+/* Barres collantes sans flou d’arrière-plan : le flou était recalculé à chaque image de défilement. */
+.topbar{backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 1px 0 color-mix(in srgb,var(--t4,#1f3428) 8%,transparent)}
 #mdn-progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--t3,#496a58),#d9a441,#D6FF2E);z-index:90;pointer-events:none}
 @supports (animation-timeline:scroll()){#mdn-progress{animation:mdnProg linear both;animation-timeline:scroll(root)}@keyframes mdnProg{to{transform:scaleX(1)}}}
 #content.mdn-enter>*{animation:mdnIn .45s cubic-bezier(.2,.7,.2,1) both}
@@ -183,7 +184,7 @@ dialog :focus:not(:focus-visible){outline:none!important}
 /* La barre était déclarée collante mais .app (overflow:hidden) en faisait un conteneur de défilement : clip rogne
    sans créer de conteneur, la barre et les onglets du cours restent donc visibles pendant la lecture. */
 html body,html body .app{overflow-x:clip!important;overflow-y:visible!important}
-.topbar{background:color-mix(in srgb,var(--bg) 82%,transparent)!important;border-bottom:1px solid color-mix(in srgb,var(--line) 80%,transparent)}
+.topbar{background:color-mix(in srgb,var(--bg) 97%,transparent)!important;border-bottom:1px solid color-mix(in srgb,var(--line) 80%,transparent)}
 .top-actions .iconbtn,.mdn-ecgbtn,.theme-btn{border-radius:12px;transition:background .2s,border-color .2s,box-shadow .2s,transform .2s var(--mdn-ease)}
 .top-actions .iconbtn:hover,.mdn-ecgbtn:hover,.theme-btn:hover{border-color:color-mix(in srgb,var(--mdn-accent) 40%,var(--line));box-shadow:var(--mdn-sh-1);transform:translateY(-1px)}
 .searchwrap{border-radius:14px!important;transition:border-color .2s,box-shadow .2s}
@@ -248,7 +249,7 @@ dialog.mc-dlg::backdrop{background:rgb(12 24 18/.45);backdrop-filter:blur(3px)}
 
 /* ---------- Cours ---------- */
 /* Onglets du cours collants sous la barre supérieure : l'onglet actif reste à portée pendant la lecture. */
-.mc .mc-tabs{position:sticky;top:calc(var(--mdn-top) + 8px);flex-wrap:nowrap;overflow-x:auto;z-index:25;background:color-mix(in srgb,var(--mdn-soft,#eef3ed) 97%,transparent)!important;backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 -9px 0 0 var(--bg),0 10px 24px -18px rgb(18 42 36/.45)}
+.mc .mc-tabs{position:sticky;top:calc(var(--mdn-top) + 8px);flex-wrap:nowrap;overflow-x:auto;z-index:25;background:color-mix(in srgb,var(--mdn-soft,#eef3ed) 97%,transparent)!important;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 -9px 0 0 var(--bg),0 10px 24px -18px rgb(18 42 36/.45)}
 @media(min-width:1100px) and (min-height:721px){.mc .mc-tabs{flex-wrap:nowrap;overflow-x:visible}.mc .mc-tabs button{white-space:normal!important;flex:1 1 auto!important;min-width:min-content!important;padding-block:8px!important}}
 .mc.mdn-tabs-tall .mc-tabs{position:static!important}
 @media(max-width:1099px),(max-height:720px){.mc .mc-tabs{position:static;flex-wrap:wrap}}
