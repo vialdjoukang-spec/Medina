@@ -186,6 +186,17 @@ def augment_catalog(full, root):
             old_subcodes.setdefault(item['code'], item)
         entry['subcodes'] = sorted(old_subcodes.values(), key=lambda item: item['code'])
     missing = {code for code in official if len(code) == 3} - seen
+    # Chapitre V (F00-F99) : absent du catalogue documentaire historique, créé depuis l'OFS (fragment S09).
+    for code in sorted(item for item in missing if item.startswith('F')):
+        entity = official[code]
+        full['entries'].append({
+            'code': code, 'title': entity['title'], 'ofsTitle': entity['title'], 'chapter': entity['chapter'],
+            'block': entity['block'], 'blockTitle': ref['blocks'][entity['block']]['title'],
+            'primaryLabel': 'Psychiatrie et psychothérapie', 'nature': 'Socle psychiatrique',
+            'source': ref['sources']['csv']['url'], 'subcodes': sorted(children.get(code, []), key=lambda item: item['code']),
+            'icd10gm': {'code': code, 'version': '2024', 'publisher': 'OFS', 'language': 'fr'}})
+        seen.add(code)
+    missing -= seen
     if missing:
         raise ValueError('Catégories OFS absentes du catalogue documentaire : ' + ', '.join(sorted(missing)))
     full['meta']['nosologySource'] = ref['sources']['csv']

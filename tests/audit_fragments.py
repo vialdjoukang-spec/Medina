@@ -62,7 +62,7 @@ def reproducibility():
 
 def main():
     fragments = json.loads((ROOT / "fragments.json").read_text(encoding="utf-8"))
-    required_ids = {f"S{number:02d}" for number in range(1, 17)} - {"S09"}
+    required_ids = {f"S{number:02d}" for number in range(1, 17)}  # S09 : psychiatrie (23e fragment)
     required_ids |= {f"T{number}" for number in range(1, 8)}
     manifest_ids = {fragment["id"] for fragment in fragments}
     if manifest_ids != required_ids:

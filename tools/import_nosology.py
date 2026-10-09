@@ -54,7 +54,7 @@ def main():
     entities = []
     for row in rows:
         code = row[6]; chapter = chapters[int(row[3]) - 1]
-        excluded = 'Psychisme exclu' if code.startswith('F') or code.startswith('U63') else (
+        excluded = 'Psychisme exclu' if code.startswith('U63') else (
             'Code non affecté OFS (Content=N)' if row[19] == 'N' else None)
         parent = code[:-1] if len(code) == 6 else code[:3] if len(code) > 3 else None
         entities.append({'code': code, 'title': row[8], 'chapter': chapter,
@@ -62,9 +62,12 @@ def main():
                          'marker': ''.join(mark for mark in ('!', '*', '†') if mark in row[5]),
                          'terminal': row[1] == 'T', 'excluded': excluded})
     active = {item['code'] for item in entities if not item['excluded'] and len(item['code']) == 3}
-    if active != set(old):
+    # Décision de Vial (09.10.2026) : le chapitre V (F00-F99) forme le 23e fragment S09.
+    psychiatry = {code for code in active if code.startswith('F')}
+    if active - psychiatry != set(old):
         raise ValueError('Le catalogue de base et les catégories actives OFS divergent.')
-    mappings = {code: {'fragment': original[code], 'basis': 'spécialité du catalogue existant'} for code in active}
+    mappings = {code: {'fragment': original[code], 'basis': 'spécialité du catalogue existant'} for code in active - psychiatry}
+    mappings.update({code: {'fragment': 'S09', 'basis': 'chapitre V de la CIM-10-GM : fragment Psychiatrie et psychothérapie (décision de Vial)'} for code in psychiatry})
     def assign(spec, ident, basis):
         for code in expand(spec, active):
             mappings[code] = {'fragment': ident, 'basis': basis}
@@ -99,7 +102,7 @@ def main():
     # Relations to other specialties are links, not duplicate course shells.
     for code, mapping in mappings.items():
         secondary = set()
-        anatomical = fragment_by_system.get(old[code].get('system'))
+        anatomical = fragment_by_system.get(old.get(code, {}).get('system'))
         if anatomical:
             secondary.add(anatomical)
         if code[0] in 'CQ' or code[0] == 'D' and code <= 'D48': secondary.add('T4')
@@ -125,6 +128,10 @@ def main():
     ssps = {int(n): label.strip() for n, label in re.findall(r'^\s*SSP\s+(\d+)\s+(.+)', text, re.M)}
     if set(ssps) != set(range(1, 266)): raise ValueError('PROFILES 2017 : 265 SSP attendus.')
     rules = [
+        ('F00-F09', [120, 216, 141]), ('F10-F19', [130]), ('F20-F29', [120, 141]),
+        ('F30-F39', [122, 129, 213]), ('F40-F48', [118, 124, 127, 128, 234, 249, 239, 240]),
+        ('F50-F59', [121, 34]), ('F60-F69', [120, 125]), ('F70-F79', [193]),
+        ('F80-F89', [141, 193, 185]), ('F90-F98', [119, 123, 125, 185, 192]), ('F99', [120]),
         ('I00-I09 I30-I43', [44, 133]), ('I10-I15 I95', [131, 214]),
         ('I20-I25', [44, 151, 204]), ('I26-I28 J80 J96', [46, 206]),
         ('I44-I49', [50, 137, 155, 218]), ('I50-I52', [12, 46, 146]),
@@ -207,7 +214,7 @@ def main():
     for table in (chapter_summary, block_summary):
         for item in table.values(): item['fragments'] = sorted(item['fragments'])
     (ROOT / 'nosology/mapping_summary.json').write_text(json.dumps({'chapters': chapter_summary, 'blocks': block_summary}, ensure_ascii=False, indent=2) + '\n')
-    print(len(active), 'catégories actives ;', sum(not item['excluded'] for item in entities), 'codes actifs hors psychisme.')
+    print(len(active), 'catégories actives ;', sum(not item['excluded'] for item in entities), 'codes actifs (psychiatrie comprise).')
 
 
 if __name__ == '__main__': main()

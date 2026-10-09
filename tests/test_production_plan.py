@@ -67,8 +67,8 @@ class ProductionPlanTests(unittest.TestCase):
         _, assignments = PLAN.load_plan(ROOT)
         expected = {fragment["id"] for fragment in self.registry} - {"S01"}
         self.assertEqual(set(assignments), expected)
-        self.assertEqual(len(assignments), 21)
-        for owner, count in (("Claude", 11), ("Codex", 10)):
+        self.assertEqual(len(assignments), 22)
+        for owner, count in (("Claude", 12), ("Codex", 10)):
             owned = {fragment: info for fragment, info in assignments.items()
                      if info["owner"] == owner}
             self.assertEqual(len(owned), count)

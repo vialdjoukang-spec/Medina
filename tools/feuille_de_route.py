@@ -27,6 +27,11 @@ TYPE = {
          'Société suisse de néonatologie, Pédiatrie suisse (SSP) ; ESPR'),
  'XVIII': (['Physiologie du symptôme', 'Anamnèse et examen orientés', 'Drapeaux rouges', 'Démarche diagnostique étagée',
             'Diagnostics différentiels à ne pas manquer', 'Prise en charge symptomatique'], 'moyenne', 'mediX, Swiss Medical Forum, recommandations de la spécialité'),
+ 'V': (['Sémiologie psychiatrique et entretien', 'Évaluation du risque suicidaire, de violence et de la capacité de discernement',
+        'Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique',
+        'Psychothérapies indiquées', 'Traitement médicamenteux (information professionnelle suisse)',
+        'Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil)', 'Réseau de soins, réhabilitation et réinsertion'],
+       'élevée', 'SSPP (Société suisse de psychiatrie et psychothérapie), SSPPEA (enfant et adolescent) ; EPA, NICE'),
  'XIX': (['Mécanisme lésionnel', 'Évaluation initiale et gravité (ABCDE)', 'Imagerie et bilan lésionnel', 'Traitement d’urgence puis définitif',
           'Rééducation, reprise du travail, assurance accidents (LAA, Suva)'], 'élevée', 'Suva, SSMUS, Swiss Orthopaedics ; ATLS seulement comme donnée'),
 }
@@ -44,6 +49,7 @@ SOURCES = {  # sources de départ à vérifier, jamais citées sans lecture rée
  'S11': 'Société suisse de dermatologie et vénéréologie ; EADV, EDF', 'S12': 'Société suisse d’ORL, SSO (médecine dentaire) ; EAORL-HNS',
  'S13': 'Société suisse d’ophtalmologie ; EURETINA, EGS', 'T3': 'SSMUS (urgence), Tox Info Suisse, Suva ; ERC',
  'T5': 'Swiss Medical Forum, sociétés de radiologie et de médecine de laboratoire ; ESR', 'T6': 'mediX, SSMIG, OFSP ; WONCA Europe',
+ 'S09': 'SSPP, SSPPEA, OFSP (addictions), Infodrog ; EPA, ECNP, NICE',
  'T7': 'ASSM (directives éthiques), FMH, droit fédéral (Fedlex)',
 }
 EXTRA = {'S01': ['Imagerie et explorations fonctionnelles', 'Classification et scores'],

@@ -40,8 +40,8 @@ spec = importlib.util.spec_from_file_location('isolated_surface', root / 'fragme
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 data, owners, courses = module.frontend_catalog(root)
-assert len(data['entries']) == 1636
-assert len(owners) == 1636
+assert len(data['entries']) == 1715
+assert len(owners) == 1715
 '''
         with tempfile.TemporaryDirectory() as cwd:
             result = subprocess.run([sys.executable, '-I', '-c', script, str(ROOT)], cwd=cwd, capture_output=True, text=True)
@@ -51,8 +51,8 @@ assert len(owners) == 1636
         active = [item for item in self.ref['entities'] if not item['excluded']]
         categories = {item['code'] for item in active if len(item['code']) == 3}
         self.assertEqual(categories, set(self.ref['mapping']))
-        self.assertEqual(len(categories), 1636)
-        self.assertEqual(len(active), 15835)
+        self.assertEqual(len(categories), 1715)
+        self.assertEqual(len(active), 16354)
         self.assertEqual(len(self.ref['chapters']), 22)
         fragments = {item['id'] for item in read_json(ROOT / 'organisation/fragments.json')}
         for item in active:
@@ -125,7 +125,7 @@ assert len(owners) == 1636
         state = read_json(ROOT / 'nosology/queue.json')
         if all(value == 'completed' for value in state.values()):
             self.assertEqual(seen, {item['code'] for item in self.ref['entities'] if not item['excluded']})
-            self.assertEqual(len(state), 22)
+            self.assertEqual(len(state), 23)
             self.assertNotIn('- [ ]', (ROOT / 'QUEUE.md').read_text())
 
     def test_progress_does_not_count_duplicated_or_empty_lessons_as_filled(self):

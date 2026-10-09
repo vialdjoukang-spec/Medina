@@ -403,7 +403,7 @@ class FragmentGuardTests(unittest.TestCase):
             self.guard(self.initial, self.commit())
         self.records.pop()
         self.save()
-        with self.assertRaisesRegex(ESPACE.FragmentError, "exactement 22"):
+        with self.assertRaisesRegex(ESPACE.FragmentError, "exactement 23"):
             self.guard(self.initial, self.commit())
 
     def test_protocol_activation_cannot_inject_a_fabricated_submission(self):

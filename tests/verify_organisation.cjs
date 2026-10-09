@@ -21,20 +21,24 @@ const scripts = [...source.matchAll(/<script\b[^>]*type=["']application\/json["'
 const data = scripts.map(x => JSON.parse(x[1])).find(x => x.catalogue && x.fragments);
 assert.ok(data, 'Données du tableau de bord présentes');
 const registry = JSON.parse(fs.readFileSync(path.join(root, 'organisation/fragments.json'), 'utf8'));
-const canonicalSource = fs.readFileSync(path.join(root, 'shell/medina_front.html'), 'utf8');
-const catalogue = JSON.parse(canonicalSource.match(/<script id="medora-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+// Catalogue complété comme dans build_organisation.py (coque documentaire + chapitre V importé de l'OFS).
+const catalogue = {entries: JSON.parse(require('node:child_process').execFileSync('python3', ['-c',
+  'import json,sys; sys.path.insert(0, sys.argv[1]); import fragment_surface as f; full, _, _ = f.frontend_catalog(sys.argv[1]); print(json.dumps([{"code": e["code"], "title": e["title"]} for e in full["entries"]]))',
+  root], {encoding: 'utf8', maxBuffer: 64 * 1024 * 1024}))};
+const FRAGMENTS = registry.length, PRODUCTION = FRAGMENTS - 1;
 const integrated = JSON.parse(fs.readFileSync(path.join(root, 'chapters.json'), 'utf8')).filter(c => c.integrated);
 const blockCount = data.fragments.reduce((sum, f) => sum + f.blocks.length, 0);
 const byId = Object.fromEntries(data.fragments.map(f => [f.id, f]));
 const byCode = Object.fromEntries(catalogue.entries.map(e => [e.code, e]));
-check('Les 22 fragments suivent le registre partagé', data.fragments.length === 22 && JSON.stringify(data.fragments.map(f => [f.id, f.label, f.order])) === JSON.stringify(registry.map(f => [f.id, f.label, f.order])));
+check('Les '+FRAGMENTS+' fragments suivent le registre partagé', data.fragments.length === FRAGMENTS && JSON.stringify(data.fragments.map(f => [f.id, f.label, f.order])) === JSON.stringify(registry.map(f => [f.id, f.label, f.order])));
 check('Le catalogue affiche sa version réelle et aucune certification CIM-11', data.catalogue.full_cim11 === false && data.catalogue.version.includes('CIM-10-GM 2024'));
 check('Le nombre de cours disponibles correspond aux sources intégrées', data.catalogue.integrated_courses === integrated.length && data.fragments.reduce((sum, f) => sum + f.integrated_count, 0) === integrated.length);
 const allCategories = data.fragments.flatMap(f => f.blocks.flatMap(b => b.categories));
 check('Toutes les catégories canoniques sont présentes, sans doublon', data.catalogue.total_categories === catalogue.entries.length && allCategories.length === catalogue.entries.length && new Set(allCategories.map(e => e.code)).size === catalogue.entries.length && allCategories.every(e => byCode[e.code] && byCode[e.code].title === e.title));
-check('Les trois axes sans rattachement CIM sont explicites', ['T2', 'T5', 'T7'].every(id => byId[id].category_count === 0 && byId[id].blocks.length === 0));
+// Depuis l'import nosologique OFS, les axes transversaux reçoivent aussi des catégories (R54, R70-R94, Z02…).
+check('Chaque fragment annonce le nombre exact de ses catégories', data.fragments.every(f => f.category_count === f.blocks.reduce((sum, b) => sum + b.categories.length, 0)));
 const production = data.fragments.filter(f => f.production);
-check('Les 21 attributions excluent la cardiologie et respectent les files 11/10', production.length === 21 && !byId.S01.production && ['Claude','Codex'].every(agent => {
+check('Les '+PRODUCTION+' attributions excluent la cardiologie et respectent les files du plan', production.length === PRODUCTION && !byId.S01.production && ['Claude','Codex'].every(agent => {
   const assigned = production.filter(f => f.production.owner === agent);
   return assigned.length === data.production.allocation[agent] && assigned.every((f, i) => f.production.queue_order === i+1 && f.production.queue_size === assigned.length);
 }));
@@ -47,8 +51,10 @@ for (const f of data.fragments) {
   check(f.label + ' : blocs CIM avec code et intitulé', f.blocks.every(b => b.code && b.title && b.categories.length > 0));
   check(f.label + ' : liens vers les deux espaces de livraison', f.delivery_codex_url.includes('Livraison%20Codex/') && f.delivery_claude_url.includes('Livraison%20Claude/'));
 }
-const cross = byId.S10.blocks.flatMap(b => b.categories).find(e => e.code === 'M30');
-check('M30 garde son rattachement et renvoie au cours M31 d’immunologie', cross?.status === 'covered' && cross.course?.code === 'M31' && cross.course.fragment_id === 'S07' && cross.course.title && cross.course.url.endsWith('#/entry/M31'));
+const crossOwner = data.fragments.find(f => f.blocks.some(b => b.categories.some(e => e.code === 'M30')));
+const crossBlock = crossOwner.blocks.find(b => b.categories.some(e => e.code === 'M30'));
+const cross = crossBlock.categories.find(e => e.code === 'M30');
+check('M30 renvoie au cours M31 d’immunologie qui le couvre', cross?.status === 'covered' && cross.course?.code === 'M31' && cross.course.fragment_id === 'S07' && cross.course.title && cross.course.url.endsWith('#/entry/M31'));
 const pulmonaryPrimary = byId.S02.blocks.flatMap(b => b.categories).filter(e => e.status === 'primary');
 check('La pneumologie distingue ses cours disponibles des leçons à produire', byId.S02.integrated_count === pulmonaryPrimary.length && ['J45','J44','J18','I26'].every(code => pulmonaryPrimary.some(e => e.code === code)) && byId.S02.blocks.flatMap(b => b.categories).some(e => e.status === 'planned'));
 const bronchitis = byId.S02.blocks.flatMap(b => b.categories).filter(e => ['J20','J40','J41','J42'].includes(e.code));
@@ -88,8 +94,8 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
     await page.goto(pageUrl);
     await fragmentButton(page, 'S01').waitFor();
     check('Le fichier autonome démarre sans erreur', errors.length === 0, errors);
-    check('Les 22 noms de fragments figurent dans la bande latérale', await page.locator(fragmentSelector).count() === 22 && (await page.locator(fragmentSelector).allTextContents()).every((text, i) => text.includes(registry[i].label)));
-    check('Les responsables et rangs de file sont affichés pour les 21 fragments', (await page.locator(fragmentSelector).allTextContents()).every((text, i) => !data.fragments[i].production || text.includes(data.fragments[i].production.owner) && text.includes(data.fragments[i].production.queue_order+'/'+data.fragments[i].production.queue_size)));
+    check('Les '+FRAGMENTS+' noms de fragments figurent dans la bande latérale', await page.locator(fragmentSelector).count() === FRAGMENTS && (await page.locator(fragmentSelector).allTextContents()).every((text, i) => text.includes(registry[i].label)));
+    check('Les responsables et rangs de file sont affichés pour les '+PRODUCTION+' fragments', (await page.locator(fragmentSelector).allTextContents()).every((text, i) => !data.fragments[i].production || text.includes(data.fragments[i].production.owner) && text.includes(data.fragments[i].production.queue_order+'/'+data.fragments[i].production.queue_size)));
     check('Le résumé explique le parallélisme et les audits avant injection', (await page.locator('#production-summary').innerText()).includes('sous-agents en parallèle') && (await page.locator('#production-summary').innerText()).includes('avant injection'));
     check('Les attributions gardent les catégories groupées sous leur fragment', (await page.locator('#production-summary').innerText()).includes('fragment entier') && (await page.locator('#production-summary').innerText()).includes('regroupées sous ce fragment'));
     check('Le catalogue CIM-10-GM reste visible', (await page.locator('body').innerText()).includes('CIM-10-GM 2024'));
@@ -122,14 +128,14 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
         check(f.label + ' / ' + b.code + ' : toutes les variantes CIM restent nommées',variants.length===b.categories.length&&b.categories.every(e=>variants.some(text=>text.includes(e.code)&&text.includes(e.title))));
       }
     }
-    await page.goto(pageUrl + '#fragment=S10&block=M30-M36&category=M30');
+    await page.goto(pageUrl + '#fragment=' + crossOwner.id + '&block=' + crossBlock.code + '&category=M30');
     await waitCategory(page, 'M30');
     check('Un lien profond retrouve M30 et son cours M31 nommé', (await chapterRowFor(page, 'M30').innerText()).includes(cross.course.title) && await chapterRowFor(page, 'M30').locator('a[href="' + cross.course.url + '"]').count() === 1);
-    check('Une catégorie affiche son propre fragment entre parenthèses', (await page.locator('#category-title').innerText()).includes('('+byId.S10.label+')'));
+    check('Une catégorie affiche son propre fragment entre parenthèses', (await page.locator('#category-title').innerText()).includes('('+crossOwner.label+')'));
     await page.reload();
     await waitCategory(page, 'M30');
     check('Le fil d’Ariane conserve code et intitulé complet de la leçon', (await page.locator('.breadcrumbs').innerText()).includes(cross.code) && (await page.locator('.breadcrumbs').innerText()).includes(cross.title));
-    check('Le lien profond résiste au rechargement du fichier', await fragmentButton(page, 'S10').getAttribute('aria-current') === 'page');
+    check('Le lien profond résiste au rechargement du fichier', await fragmentButton(page, crossOwner.id).getAttribute('aria-current') === 'page');
     await fragmentButton(page, 'S02').click();
     await blockButton(page, byId.S02.blocks.find(b => b.categories.some(e => e.code === 'J45')).code).click();
     await waitCategory(page, 'J45');
@@ -190,7 +196,7 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
     await shot(page, 'pneumologie_mobile');
     check('La navigation mobile est masquée et inactive avant ouverture', await page.locator('#fragment-sidebar').evaluate(e => e.inert) && await page.locator('#menu-toggle').getAttribute('aria-expanded') === 'false');
     await page.locator('#menu-toggle').click();
-    check('La navigation mobile s’ouvre avec ses 22 fragments accessibles', await page.locator('#menu-toggle').getAttribute('aria-expanded') === 'true' && !(await page.locator('#fragment-sidebar').evaluate(e => e.inert)) && await page.locator(fragmentSelector).count() === 22);
+    check('La navigation mobile s’ouvre avec ses '+FRAGMENTS+' fragments accessibles', await page.locator('#menu-toggle').getAttribute('aria-expanded') === 'true' && !(await page.locator('#fragment-sidebar').evaluate(e => e.inert)) && await page.locator(fragmentSelector).count() === FRAGMENTS);
     await overflow(page, 'Navigation mobile sans débordement horizontal');
     await shot(page, 'fragments_mobile');
     await page.keyboard.press('Escape');
@@ -206,6 +212,6 @@ const contrast = (a,b) => (Math.max(luminance(a),luminance(b))+.05)/(Math.min(lu
     check('Le fichier autonome ne demande aucune ressource distante', requests.length === 0, requests);
     check('Toutes les interactions restent sans erreur JavaScript', errors.length === 0, errors);
     fs.writeFileSync(path.join(out, targeted ? 'targeted_result.json' : 'result.json'), JSON.stringify({file, scope:targeted ? 'interactions ciblées' : 'navigation exhaustive des ' + blockCount + ' blocs', checks:checks.length, blocks:blockCount, fragments:data.fragments.length, catalogue:catalogue.entries.length, courses:integrated.length, errors, requests}, null, 2) + '\n');
-    console.log(JSON.stringify({result:'OK', targeted, checks:checks.length, file, out, categories:catalogue.entries.length, fragments:22, courses:integrated.length}));
+    console.log(JSON.stringify({result:'OK', targeted, checks:checks.length, file, out, categories:catalogue.entries.length, fragments:FRAGMENTS, courses:integrated.length}));
   } finally {await browser.close();}
 })().catch(error => {console.error(error);process.exitCode=1;});

@@ -1,6 +1,6 @@
 # Annexe A — Pathologies couvrant les 265 situations PROFILES (SSP), par spécialité
 
-**272 pathologies** dans les 22 fragments, plus **16 entités du volet psychiatrique** (hors fragments, à produire à part). SSP couvertes : **265 / 265** (toutes).
+**291 pathologies** dans les 23 fragments (psychiatrie S09 comprise). SSP couvertes : **265 / 265** (toutes).
 
 Motif d’inclusion : *fréquente* (socle clinique), *cours existant*, *couverture SSP* (choisie parce qu’elle couvre des SSP encore manquantes), *rattachement SSP* (SSP sans pathologie dans la correspondance de Codex, rattachée explicitement). La correspondance SSP → pathologie est pédagogique, non officielle (PROFILES ne publie aucune table vers la CIM) : à valider. Ordre de production : file des fragments, puis pathologies fréquentes, puis autres. Une pathologie déjà rédigée n’est pas réécrite.
 
@@ -1588,6 +1588,124 @@ Sources de départ (à lire et dater) : SSI, OFSP ; ESCMID, ECDC.
 - **SSP à satisfaire dans ce cours** : 253 patient with sexually transmitted infection
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Agent pathogène, réservoir et transmission → 4. Présentation clinique → 5. Diagnostic microbiologique et différentiel → 6. Traitement anti-infectieux (information professionnelle suisse) → 7. Hygiène, déclaration obligatoire OFSP, vaccination → 8. Microbiologie → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
+## P-23-Psychiatrie et psychothérapie — 19 pathologies
+
+Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodrog ; EPA, ECNP, NICE.
+
+### F00 — Démence de la maladie d’Alzheimer
+
+- **Motif** : couverture SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
+- **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F05 — Delirium, non induit par l’alcool et d’autres substances psycho-actives
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
+- **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F07 — Troubles de la personnalité et du comportement dus à une affection, une lésion et un dysfonctionnement cérébraux
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
+- **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F10 — Troubles mentaux et du comportement liés à l’utilisation d’alcool
+
+- **Motif** : couverture SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F10-F19
+- **SSP à satisfaire dans ce cours** : 130 non-medical substance use (“misuse”), addiction e.g. tobacco, alcohol, illegal
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F17 — Troubles mentaux et du comportement liés à l’utilisation de tabac
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F10-F19
+- **SSP à satisfaire dans ce cours** : 130 non-medical substance use (“misuse”), addiction e.g. tobacco, alcohol, illegal
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F20 — Schizophrénie
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
+- **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F30 — Episode maniaque
+
+- **Motif** : couverture SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F30-F39
+- **SSP à satisfaire dans ce cours** : 122 change in mood; 129 self-harm, including suicide; 213 self-harm and suicide attempt
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F32 — Episodes dépressifs
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F30-F39
+- **SSP à satisfaire dans ce cours** : 122 change in mood; 129 self-harm, including suicide; 213 self-harm and suicide attempt
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F40 — Troubles anxieux phobiques
+
+- **Motif** : couverture SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F40-F48
+- **SSP à satisfaire dans ce cours** : 118 anxiety and panic; 124 irrational fear, fear of illness; 127 obsessive and/or compulsive behaviour; 128 reactions to major stressful events; 234 concern about appearance, body image; 239 loss, death, grieving process, illness of someone close; 240 mental or spiritual suffering; 249 medically unexplained symptoms
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F41 — Autres troubles anxieux
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F40-F48
+- **SSP à satisfaire dans ce cours** : 118 anxiety and panic; 124 irrational fear, fear of illness; 127 obsessive and/or compulsive behaviour; 128 reactions to major stressful events; 234 concern about appearance, body image; 239 loss, death, grieving process, illness of someone close; 240 mental or spiritual suffering; 249 medically unexplained symptoms
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F42 — Trouble obsessionnel-compulsif
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F40-F48
+- **SSP à satisfaire dans ce cours** : 118 anxiety and panic; 124 irrational fear, fear of illness; 127 obsessive and/or compulsive behaviour; 128 reactions to major stressful events; 234 concern about appearance, body image; 239 loss, death, grieving process, illness of someone close; 240 mental or spiritual suffering; 249 medically unexplained symptoms
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F43 — Réaction à un facteur de stress sévère, et troubles de l’adaptation
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F40-F48
+- **SSP à satisfaire dans ce cours** : 118 anxiety and panic; 124 irrational fear, fear of illness; 127 obsessive and/or compulsive behaviour; 128 reactions to major stressful events; 234 concern about appearance, body image; 239 loss, death, grieving process, illness of someone close; 240 mental or spiritual suffering; 249 medically unexplained symptoms
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F45 — Troubles somatoformes
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F40-F48
+- **SSP à satisfaire dans ce cours** : 118 anxiety and panic; 124 irrational fear, fear of illness; 127 obsessive and/or compulsive behaviour; 128 reactions to major stressful events; 234 concern about appearance, body image; 239 loss, death, grieving process, illness of someone close; 240 mental or spiritual suffering; 249 medically unexplained symptoms
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F50 — Troubles de l’alimentation
+
+- **Motif** : couverture SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F50-F59
+- **SSP à satisfaire dans ce cours** : 34 snoring; 121 change in eating behaviour
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F70 — Retard mental léger
+
+- **Motif** : couverture SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F70-F79
+- **SSP à satisfaire dans ce cours** : 193 learning and school problems in childhood and adolescence
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F81 — Troubles spécifiques du développement des acquisitions scolaires
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
+- **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F90 — Troubles hyperkinétiques
+
+- **Motif** : couverture SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F90-F98
+- **SSP à satisfaire dans ce cours** : 119 attention deficit; 123 hyperactivity; 125 irritability, aggressive and violent behaviour; 185 behavioural issues in childhood and adolescence; 192 irritable, crying infant
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F91 — Troubles des conduites
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F90-F98
+- **SSP à satisfaire dans ce cours** : 119 attention deficit; 123 hyperactivity; 125 irritability, aggressive and violent behaviour; 185 behavioural issues in childhood and adolescence; 192 irritable, crying infant
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
+### F98 — Autres troubles du comportement et troubles émotionnels apparaissant habituellement durant l’enfance et l’adolescence
+
+- **Motif** : rattachement SSP · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F90-F98
+- **SSP à satisfaire dans ce cours** : 119 attention deficit; 123 hyperactivity; 125 irritability, aggressive and violent behaviour; 185 behavioural issues in childhood and adolescence; 192 irritable, crying infant
+- **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
+
 ## C-01-Cardiologie — 22 pathologies
 
 Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
@@ -1724,26 +1842,6 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 - **SSP à satisfaire dans ce cours** : 70 request for genetic counselling; 177 basic pre- and post-conception screening for genetic disease and malformation
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles → 11. Classification et scores → 12. Génétique et conseil génétique → 13. Complications et pronostic → 14. Prévention, dépistage et suivi → 15. Situations particulières (grossesse, enfant, sujet âgé) → 16. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 17. Pareto : ce qui fait 80 % de la décision
 
-## Volet psychiatrique (F00-F99, hors des 22 fragments)
-
-Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d’un volet propre », PROMPT_MEDINA.md). Entités nécessaires pour couvrir les SSP :
-
-- **F05** : SSP 216 sudden changes of mental status such as confusion, delusion, ­
-- **F07** : SSP 120 change in behaviour
-- **F10** : SSP 130 non-medical substance use (“misuse”), addiction e.g. tobacco, alcohol, illegal
-- **F17** : SSP 130 non-medical substance use (“misuse”), addiction e.g. tobacco, alcohol, illegal
-- **F20** : SSP 141 disorganised speech
-- **F32** : SSP 122 change in mood, 129 self-harm, including suicide, 213 self-harm and suicide attempt
-- **F40** : SSP 124 irrational fear, fear of illness
-- **F41** : SSP 118 anxiety and panic
-- **F42** : SSP 127 obsessive and/or compulsive behaviour
-- **F43** : SSP 128 reactions to major stressful events, 239 loss, death, grieving process, illness of someone close, 240 mental or spiritual suffering
-- **F45** : SSP 124 irrational fear, fear of illness, 234 concern about appearance, body image, 249 medically unexplained symptoms
-- **F50** : SSP 121 change in eating behaviour
-- **F81** : SSP 193 learning and school problems in childhood and adolescence
-- **F90** : SSP 119 attention deficit, 123 hyperactivity
-- **F91** : SSP 125 irritability, aggressive and violent behaviour, 185 behavioural issues in childhood and adolescence
-- **F98** : SSP 185 behavioural issues in childhood and adolescence
 
 ## Matrice SSP → pathologies
 
@@ -1782,7 +1880,7 @@ Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d�
 | 31 | nasal obstruction | J00, J01, J02, J03 |
 | 32 | neck stiffness and pain | M54 |
 | 33 | painful, red, itchy eyes; eye discharge | H00, H05, H10 |
-| 34 | snoring | G47 |
+| 34 | snoring | F50, G47 |
 | 35 | sore throat | J00, J01, J02, J03, R07 |
 | 36 | squint (strabismus) | H52 |
 | 37 | swelling of face, lips, neck; goitre | E03, E04, E05, T78 |
@@ -1866,19 +1964,19 @@ Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d�
 | 115 | spine injuries | S10 |
 | 116 | thoracic injuries | S25, S28 |
 | 117 | vascular injuries | S25 |
-| 118 | anxiety and panic | psy F41 |
-| 119 | attention deficit | psy F90 |
-| 120 | change in behaviour | R45, psy F07 |
-| 121 | change in eating behaviour | psy F50 |
-| 122 | change in mood | R45, psy F32 |
-| 123 | hyperactivity | psy F90 |
-| 124 | irrational fear, fear of illness | psy F40, psy F45 |
-| 125 | irritability, aggressive and violent behaviour | R45, psy F91 |
+| 118 | anxiety and panic | F40, F41, F42, F43, F45 |
+| 119 | attention deficit | F90, F91, F98 |
+| 120 | change in behaviour | F00, F05, F07, F20, R45 |
+| 121 | change in eating behaviour | F50 |
+| 122 | change in mood | F30, F32, R45 |
+| 123 | hyperactivity | F90, F91, F98 |
+| 124 | irrational fear, fear of illness | F40, F41, F42, F43, F45 |
+| 125 | irritability, aggressive and violent behaviour | F90, F91, F98, R45 |
 | 126 | mental confusion, delirium | R41 |
-| 127 | obsessive and/or compulsive behaviour | psy F42 |
-| 128 | reactions to major stressful events | psy F43 |
-| 129 | self-harm, including suicide | T74, psy F32 |
-| 130 | non-medical substance use (“misuse”), addiction e.g. tobacco, alcohol, illegal | psy F10, psy F17 |
+| 127 | obsessive and/or compulsive behaviour | F40, F41, F42, F43, F45 |
+| 128 | reactions to major stressful events | F40, F41, F42, F43, F45 |
+| 129 | self-harm, including suicide | F30, F32, T74 |
+| 130 | non-medical substance use (“misuse”), addiction e.g. tobacco, alcohol, illegal | F10, F17 |
 | 131 | abnormal blood pressure | I10 |
 | 132 | abnormal external genitalia (female, male) | Q54, Q55 |
 | 133 | abnormal findings upon auscultation | I00, I30, I33, I34, I35, I40, I42 |
@@ -1889,7 +1987,7 @@ Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d�
 | 138 | cachexia and malnutrition | E40, E43, E44, E46 |
 | 139 | cognitive impairment | G30, R41 |
 | 140 | cyanosis | R09 |
-| 141 | disorganised speech | R47, psy F20 |
+| 141 | disorganised speech | F00, F05, F07, F20, F81, R47 |
 | 142 | exophthalmos (proptosis) | E05, H05 |
 | 143 | halitosis (fetor oris) | K05, R19 |
 | 144 | gangrene | I70, I71 |
@@ -1933,15 +2031,15 @@ Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d�
 | 182 | request for abortion | O03 |
 | 183 | suspicion of pregnancy, unplanned pregnancy | O03, Z32 |
 | 184 | abnormal growth and puberty (slowing or acceleration), failure to thrive | E20, E25, E34, R62 |
-| 185 | behavioural issues in childhood and adolescence | psy F91, psy F98 |
+| 185 | behavioural issues in childhood and adolescence | F81, F90, F91, F98 |
 | 186 | child abuse and neglect | T74 |
 | 187 | child immunisation | Z23 |
 | 188 | developmental delay | R62 |
 | 189 | feeding and eating issues during infancy, childhood and adolescence | E84 |
 | 190 | fetal problems during pregnancy | P22, P55, P59 |
 | 191 | infant death | R95 |
-| 192 | irritable, crying infant | R68 |
-| 193 | learning and school problems in childhood and adolescence | psy F81 |
+| 192 | irritable, crying infant | F90, F91, F98, R68 |
+| 193 | learning and school problems in childhood and adolescence | F70, F81 |
 | 194 | low muscle tone and hypotonia | P22, P55, P59 |
 | 195 | well-baby and well-child visit | Z00 |
 | 196 | elder abuse and neglect | T74 |
@@ -1961,10 +2059,10 @@ Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d�
 | 210 | haematemesis | K21, K25, K29, K92 |
 | 211 | intoxication, poisoning | T39, T40, T50, T66, T68, T74 |
 | 212 | mydriasis, myosis | H57 |
-| 213 | self-harm and suicide attempt | T74, psy F32 |
+| 213 | self-harm and suicide attempt | F30, F32, T74 |
 | 214 | severe hypertension, severe hypotension | A41, I10 |
 | 215 | severe acute blood loss | R58 |
-| 216 | sudden changes of mental status such as confusion, delusion, ­ | R41, psy F05 |
+| 216 | sudden changes of mental status such as confusion, delusion, ­ | F00, F05, F07, R41 |
 | 217 | syncope, loss of consciousness | R40, R55 |
 | 218 | cardiorespiratory disturbances and arrest | I44, I46, I47, I48, I49 |
 | 219 | seizures | G40 |
@@ -1982,13 +2080,13 @@ Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d�
 | 231 | management of refractory symptoms (pain, nausea) | Z51 |
 | 232 | need for psychosocial and spiritual support of all involved individuals | Z51 |
 | 233 | absenteeism (school, work) | Z55, Z56, Z59, Z60, Z63 |
-| 234 | concern about appearance, body image | psy F45 |
+| 234 | concern about appearance, body image | F40, F41, F42, F43, F45 |
 | 235 | domestic violence, sexual abuse, rape | Z55, Z56, Z59, Z60, Z63 |
 | 236 | harassing, bullying, mobbing | Z56, Z60 |
 | 237 | issues regarding sexual orientation | Z70 |
 | 238 | issues related to family life such as divorce, single parent and reconstructed family | Z55, Z56, Z59, Z60, Z63 |
-| 239 | loss, death, grieving process, illness of someone close | Z63, psy F43 |
-| 240 | mental or spiritual suffering | Z51, psy F43 |
+| 239 | loss, death, grieving process, illness of someone close | F40, F41, F42, F43, F45, Z63 |
+| 240 | mental or spiritual suffering | F40, F41, F42, F43, F45, Z51 |
 | 241 | problems related to work conditions, burnout, unemployment, financial problems | Z55, Z56, Z59, Z60, Z63 |
 | 242 | consultation before or after trip to foreign (tropical) country | B50 |
 | 243 | determination of work or school incapacity | Z02 |
@@ -1997,7 +2095,7 @@ Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d�
 | 246 | errors or misconduct of a co-worker or other healthcare professional | Z02 |
 | 247 | immunocompromised patient | D84 |
 | 248 | issues linked with food tolerance | K90, T78 |
-| 249 | medically unexplained symptoms | R69, psy F45 |
+| 249 | medically unexplained symptoms | F40, F41, F42, F43, F45, R69 |
 | 250 | nosocomial infection | T80 |
 | 251 | obtain informed consent for a procedure | Z53 |
 | 252 | patient refusing treatment | Z53 |
