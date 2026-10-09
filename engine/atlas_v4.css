@@ -11,7 +11,7 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body{
  background-color:var(--s-sky)!important;background-image:var(--s-wave),linear-gradient(180deg,#e9f7ff 0,#f2fbff 380px,#eefbe8 100%)!important;
  background-size:280px 220px,100% 100%!important;background-attachment:fixed,fixed!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(main,.main,.content,.app-main){background:transparent!important}
-html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar{background:#ffffffe0!important;border-bottom:3px solid transparent!important;
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar{background:#fffffff7!important;border-bottom:3px solid transparent!important;
  border-image:linear-gradient(90deg,var(--s-sun),var(--s-coral),var(--s-lagoon),var(--s-leaf)) 1!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar{background:linear-gradient(180deg,#ffffff,#f0fbff)!important;border-right:1px solid var(--s-line)!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar .nav-main a.active{background:linear-gradient(90deg,var(--s-sea),var(--s-lagoon))!important}
@@ -42,6 +42,9 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-trap{background:#e4f7fd!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-alert{background:#ffe9e2!important}
 /* Consigne finale de Vial : des couleurs vives et vivantes, rien de plus (aucun filigrane, motif ni illustration). */
-html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body{background-image:linear-gradient(180deg,#e9f7ff 0,#f2fbff 380px,#eefbe8 100%)!important;background-size:100% 100%!important}
+/* Fluidité du défilement : le dégradé fixe est porté par un calque fixe composité (body::before) et non par
+   background-attachment:fixed, qui obligeait le navigateur à repeindre toute la fenêtre à chaque image de défilement. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body{background-image:none!important;background-attachment:scroll!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#e9f7ff 0,#f2fbff 380px,#eefbe8 100%)}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover{background:linear-gradient(125deg,#1e88e5 0,#12a5e0 35%,#1fbf8f 70%,#ffc93c 100%)!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-block-heading{background:linear-gradient(120deg,var(--cat,#1e88e5),color-mix(in srgb,var(--cat,#1e88e5) 55%,#1fbf8f))!important}
