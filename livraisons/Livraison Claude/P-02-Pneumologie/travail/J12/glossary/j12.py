@@ -25,3 +25,9 @@ a('UL54', [('UL54', 'désignation du gène viral, sans développement dans les s
   '<p>Gène du CMV dont les mutations figurent, avec celles d’UL97, dans l’algorithme de l’ECIL-10 pour l’infection à CMV réfractaire ou résistante.</p>', 'j12-cmv')
 a('mRESVIA', [('m', 'messager (vaccin à ARN messager)'), ('RESVIA', 'nom commercial, non abréviatif')], 'Vaccin à ARN messager contre le VRS (Moderna)',
   '<p>Vaccin qui code la glycoprotéine F du VRS-A en conformation de préfusion ; autorisé en Suisse dès 18 ans, en une dose unique de 0,5 mL (information professionnelle, août 2026).</p>', 'j12-vaccin-vrs')
+a('SARS', [('S', 'Severe (sévère)'), ('A', 'Acute (aigu)'), ('R', 'Respiratory (respiratoire)'), ('S', 'Syndrome')], 'Syndrome respiratoire aigu sévère',
+  '<p>Pneumonie grave due au coronavirus du SARS, qui a touché plus de 8000 personnes et causé 774 décès en 2002 et 2003 ; son agent utilise le même récepteur, l’ACE2, que le SARS-CoV-2 (Ruuskanen, 2011 ; Hoffmann, 2020).</p>', 'j12-ace2')
+a('SARS-CoV', [('SARS', 'Severe Acute Respiratory Syndrome (syndrome respiratoire aigu sévère)'), ('CoV', 'CoronaVirus')], 'Coronavirus du syndrome respiratoire aigu sévère (2002-2003)',
+  '<p>Coronavirus responsable de l’épidémie de SARS de 2002-2003. Le sérum de patients convalescents de ce SARS neutralisait in vitro l’entrée du SARS-CoV-2 (Hoffmann, 2020).</p>', 'j12-ace2')
+a('MERS', [('M', 'Middle (Moyen-)'), ('E', 'East (Orient)'), ('R', 'Respiratory (respiratoire)'), ('S', 'Syndrome')], 'Syndrome respiratoire du Moyen-Orient',
+  '<p>Pneumonie grave due à un coronavirus. Les recommandations ERS, ESICM, ESCMID et Asociación Latinoamericana de Tórax de 2023 l’excluent, avec la grippe et le SARS, de leur suggestion de corticoïdes dans la pneumonie communautaire grave.</p>', 'j12-contentieux-cortico')
