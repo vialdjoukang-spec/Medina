@@ -34,6 +34,6 @@ Méthode : détecteur de phrases sans verbe conjugué (spaCy fr, /workspace/swee
 | I89 | non | 37 segments réécrits (fenêtres, Pareto, encadrés, seuils, contre-indications, piège) ; faux positifs vérifiés à la main | 2 (scintigraphie, lymphangion) | 5 retirés | Fait |
 | I77 | non | 39 segments réécrits (objectifs, pièges, fenêtres, Pareto) ; faux positifs vérifiés à la main | 2 (collier de perles, tronc cœliaque) | 4 retirés | Fait |
 | I78 | non | 40 segments réécrits (objectifs, corrélation, paramètres clés, fenêtres, doses, Pareto) ; faux positifs vérifiés à la main | 2 (langue, MAV pulmonaire) | 5 retirés | Fait |
-| I97 | non | à faire (≈ 48) | 2 (épanchement, Doppler) | 0 | Partiel |
+| I97 | non | 39 segments réécrits (objectifs, corrélation, critères, fenêtres, doses, Pareto) ; faux positifs vérifiés à la main | 2 (épanchement, Doppler) | 0 | Fait |
 | I85, R00, R02 | non | à faire (≈ 175, 197, 92) | déjà 3, 2, 3 | 0 | Partiel |
 | I00 … R05 (26 cours, dont I26, I27, I51) | oui (`organisation/SCELLES.json`) | non balayés | — | — | Bloqué : la garde `tools/espace.py garde` (CI espace.yml et pages.yml) refuse toute modification d’une source scellée hors branche claude/* ; décision du propriétaire requise |
