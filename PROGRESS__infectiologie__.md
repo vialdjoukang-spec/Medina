@@ -10,7 +10,7 @@ Branche : `course/infectiologie`. Ordre : priority_codes de `organisation/fragme
 | A54 | Gonococcie | existant |
 | A53 | Syphilis | existant |
 | A69 | Borréliose de Lyme | **écrit** (4 panneaux + pop-up, 3 GIF, glossaire `a69.py`) |
-| A46 | Érysipèle | en cours |
+| A46 | Érysipèle | **écrit** (4 panneaux + pop-up, 3 GIF) |
 | A04 | C. difficile / infections intestinales bactériennes | à faire |
 
 Images : `assets/img/infectiologie/` + `ATTRIBUTIONS.json`.
