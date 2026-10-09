@@ -1,0 +1,3 @@
+from cardio_1 import a, G
+# R04 — Hémoptysie (P-02-Pneumologie). Clés absentes de glossary/*.py et des glossaires des dossiers de travail au 09.10.2026.
+a('CIRSE', [('C', 'Cardiovascular (cardiovasculaire)'), ('I', 'and Interventional (et interventionnelle)'), ('R', 'Radiological (de radiologie)'), ('S', 'Society of (Société)'), ('E', 'Europe (d’Europe)')], 'Société européenne de radiologie cardiovasculaire et interventionnelle', '<p>Société savante européenne de radiologie interventionnelle. Ses « Standards of Practice » de 2022 sur l’embolisation des artères bronchiques fixent les indications, la technique, les résultats attendus et les complications de ce geste.</p>', 'r04-eab')
