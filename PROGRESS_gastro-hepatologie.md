@@ -56,3 +56,18 @@ Règles propriétaire ajoutées le 09.10.2026 : RAPPEL VERITE en tête de chaque
 ## Balayage rétroactif (ordre du propriétaire, 09.10.2026)
 Outil : /workspace/sweep/nominal.py (spaCy, détection des phrases sans verbe) puis relecture humaine ; contrôle des images réelles dans les fenêtres, de la justification et des connecteurs.
 - K92 : FAIT (10.10.2026). Encadrés, cartes, Pareto, critères formels et 42 fenêtres sur 54 réécrits en phrases complètes ; justification ajoutée (cartes cliniques, signes, mesures du cirrhotique) ; 3 images réelles ajoutées dans les fenêtres Forrest, ligature et varices. Doses et codes inchangés (déjà vérifiés).
+- K25 : À FAIRE (275 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K21 : À FAIRE (203 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K85 : À FAIRE (220 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K80 : À FAIRE (204 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K74 : À FAIRE (127 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K70 : À FAIRE (164 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K50 : À FAIRE (153 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K51 : À FAIRE (153 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K52 : À FAIRE (110 phrases signalées par le détecteur avant tri, faux positifs compris).
+- C18 : À FAIRE (166 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K35 : À FAIRE (122 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K57 : À FAIRE (117 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K56 : À FAIRE (148 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K90 : À FAIRE (108 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K58 : À FAIRE (54 phrases signalées par le détecteur avant tri, faux positifs compris).
