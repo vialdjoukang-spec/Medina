@@ -1,3 +1,7 @@
+> **RÈGLE FONDAMENTALE (section 11)** : aucun cours produit de mémoire — chaque affirmation vient d'une source lue ; **sources suisses puis européennes, aucune recommandation américaine** ; médicaments selon l'information professionnelle suisse Swissmedic (`tools/swissmedic_fi.py`) ; **plan monographique classique**, sans îlot ni tableau consacré au code CIM. Toute invention ou tricherie est interdite.
+
+> **Règle universelle du 8 octobre 2026.** Efficacité plutôt que volume : information efficace, puissante, extrêmement didactique, claire, en termes dédiés. Deux captures réelles par leçon, présentées dans le panneau latéral. Voir `LEADERSHIP_CLAUDE_2026-10-08.md`, sections 7 et 8.
+
 > **Protocole remplacé pour les travaux nouveaux, 8 octobre 2026.** Lire [le protocole par fragment](PROTOCOLE_FRAGMENTS_2026-10-08.md) et [COORDINATION.md](../../COORDINATION.md). Fragment entier achevé et auto-revu avant audit croisé unique ; l’autre IA corrige puis injecte, INJECTÉ immuable, HTML clair. Les dispositions incompatibles ci-dessous sont conservées comme historique et ne donnent plus d’ordre d’action. Aucun chapitre isolé ne constitue une remise finale.
 
 # Consignes communes — interaction, densité et sources cliniques

@@ -18,8 +18,6 @@ a('P2',[('P','feuillet mitral Postérieur'),('2','segment 2, moyen')],'Segment m
  '<p>Segment le plus souvent atteint par le prolapsus et la rupture de cordage, notamment dans la déficience fibroélastique ; lésion la plus facilement réparable.</p>','i34-sa-app')
 a('P3',[('P','feuillet mitral Postérieur'),('3','segment 3, médial (côté de la commissure postéromédiale)')],'Segment médial du feuillet mitral postérieur (nomenclature de Carpentier)',
  '<p>Troisième segment du feuillet postérieur, voisin de la commissure postéromédiale.</p>','i34-sa-app')
-a('EAE',[('E','European'),('A','Association of'),('E','Echocardiography')],'European Association of Echocardiography (Association européenne d’échocardiographie)',
- '<p>Ancienne association de l’ESC, devenue l’EACVI. Elle a publié avec l’ASE en 2009 les recommandations d’évaluation échocardiographique des sténoses valvulaires.</p>')
 
 # ---- essais et scores
 a('MITRA-FR',[('MITRA','nom d’essai : reprend « mitral » et le dispositif MitraClip ; non développable lettre à lettre'),('FR','France (essai français)')],'Essai MITRA-FR (2018)',
@@ -29,17 +27,15 @@ a('RESHAPE-HF2',[('RESHAPE-HF','nom d’essai : acronyme anglais non développab
 a('TRILUMINATE',[('TRILUMINATE','nom d’essai : Trial to Evaluate Cardiovascular Outcomes in Patients Treated With the Tricuspid Valve Repair System Pivotal ; acronyme non développable lettre à lettre')],'Essai TRILUMINATE Pivotal (2023)',
  '<p>Essai randomisé : réparation tricuspide bord à bord percutanée contre traitement médical dans la fuite tricuspide sévère ; bénéfice sur un critère hiérarchique porté par la qualité de vie, sans effet sur la mortalité.</p>','i34-trilum')
 a('TRISCEND II',[('TRISCEND','nom d’essai : « TRI » pour tricuspide ; le reste de l’acronyme, commercial, n’est pas développable lettre à lettre'),('II','deuxième essai de la série')],'Essai TRISCEND II (2024)',
- '<p>Essai randomisé : remplacement tricuspide percutané contre traitement médical dans la fuite tricuspide sévère ; rapport de gains 2,02, qualité de vie améliorée, au prix d’hémorragies et de stimulateurs.</p>','i34-triscend')
+ '<p>Essai randomisé : remplacement tricuspide percutané contre traitement médical dans la fuite tricuspide sévère ; rapport de gains favorable, porté par les symptômes et la qualité de vie, au prix d’hémorragies et de stimulateurs.</p>','i34-triscend')
 a('TRI-SCORE',[('TRI','TRIcuspide'),('SCORE','score de risque')],'Score de risque de la chirurgie tricuspide isolée',
  '<p>Score de 0 à 12 points (âge, classe NYHA, insuffisance cardiaque droite, dose de furosémide, DFG, bilirubine, FEVG, fonction ventriculaire droite) qui prédit la mortalité hospitalière après chirurgie tricuspide isolée.</p>','i34-triscore')
 a('KCCQ',[('K','Kansas'),('C','City'),('C','Cardiomyopathy'),('Q','Questionnaire')],'Kansas City Cardiomyopathy Questionnaire',
  '<p>Questionnaire de qualité de vie spécifique de l’insuffisance cardiaque, coté de 0 à 100 ; une variation de 5 points est considérée comme cliniquement perceptible.</p>')
-a('PRIME',[('PRIME','nom d’essai : Pharmacological Reduction of functional, Ischemic Mitral rEgurgitation ; acronyme non développable lettre à lettre')],'Essai PRIME (2019)',
- '<p>Essai randomisé : dans la fuite mitrale secondaire ischémique, le sacubitril/valsartan réduisait davantage la surface de l’orifice régurgitant que le valsartan à 12 mois.</p>')
 
 # ---- biologie moléculaire et génétique
 a('5-HT2B',[('5-HT','5-hydroxytryptamine (sérotonine)'),('2B','récepteur de sous-type 2B')],'Récepteur sérotoninergique de sous-type 2B',
- '<p>Récepteur couplé à la protéine Gq, exprimé par les cellules interstitielles valvulaires. Sa stimulation (sérotonine carcinoïde, norfenfluramine, pergolide, cabergoline, ergot, ecstasy) provoque une fibrose valvulaire restrictive.</p>','i34-medic')
+ '<p>Récepteur couplé à la protéine Gq, exprimé par les cellules interstitielles valvulaires. Sa stimulation (sérotonine carcinoïde, norfenfluramine, ergotamine, méthylergonovine ; cabergoline selon son information professionnelle) provoque une fibrose valvulaire restrictive.</p>','i34-medic')
 a('TGF-β',[('T','Transforming (de transformation)'),('G','Growth (croissance)'),('F','Factor (facteur)'),('β','bêta')],'Facteur de croissance transformant bêta',
  '<p>Cytokine profibrosante. Son activation excessive intervient dans le syndrome de Marfan, dans la dégénérescence myxoïde et dans la fibrose valvulaire induite par la sérotonine.</p>')
 a('FBN1',[('FBN','FiBrilliNe'),('1','type 1')],'Gène de la fibrilline 1',
@@ -58,3 +54,11 @@ a('MESC',[('M','Mobilité des feuillets'),('E','Épaississement des feuillets'),
  '<p>Aide pédagogique, non critère officiel : chaque item est coté de 1 à 4 ; un total ≤ 8 est favorable à la commissurotomie mitrale percutanée.</p>','i34-mnemo-mesc')
 a('MATTERHORN',[('MATTERHORN','nom d’essai : acronyme anglais tiré de lettres choisies du titre (Mitral vAlve reconsTrucTion for advancEd insufficiency of functional or iscHemic ORigiN) ; non développable lettre à lettre')],'Essai MATTERHORN (2024)',
  '<p>Essai randomisé allemand de non-infériorité : chez des patients opérables avec fuite mitrale secondaire, la réparation bord à bord percutanée n’était pas inférieure à la chirurgie mitrale à un an, avec moins de complications.</p>','i34-matterhorn')
+
+# ---- ajouts du balayage du 08.10.2026
+a('BRIDGE',[('BRIDGE','nom d’essai : « pont » en anglais, désigne le relais par héparine ; non développable lettre à lettre')],'Essai BRIDGE (2015)',
+ '<p>Essai randomisé chez des patients en fibrillation auriculaire sous warfarine devant subir une intervention programmée : renoncer au relais par héparine de bas poids moléculaire n’augmentait pas les embolies artérielles (0,4 % contre 0,3 %) et réduisait les hémorragies majeures (1,3 % contre 3,2 %).</p>','i34-d-hbpm')
+a('Tri.Fr',[('Tri','Tricuspide'),('Fr','France (essai français)')],'Essai Tri.Fr',
+ '<p>Essai randomisé français indépendant : réparation tricuspide bord à bord associée au traitement médical contre traitement médical seul ; bénéfice sur un score composite porté par les critères rapportés par les patients (ESC/EACTS 2025).</p>','i34-trilum')
+a('LAR',[('L','Long'),('A','Acting (action)'),('R','Release (libération)')],'Long acting release (libération prolongée)',
+ '<p>Suffixe de la forme retard de l’octréotide (Sandostatine® LAR), injectée par voie intramusculaire profonde toutes les quatre semaines.</p>','i34-d-ssa')

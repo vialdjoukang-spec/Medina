@@ -10,7 +10,7 @@ a('SCA',[('S','Syndrome'),('C','Coronarien'),('A','Aigu')],'Syndrome coronarien 
 a('STEMI',[('ST','segment ST'),('E','Elevation (sus-décalage)'),('M','Myocardial (du myocarde)'),('I','Infarction (infarctus)')],'Infarctus du myocarde avec sus-décalage du segment ST',
  '<p>Sus-décalage persistant du ST (ou équivalent d’occlusion) avec symptômes ischémiques : reperfusion immédiate.</p>','i21-omi')
 a('NSTEMI',[('N','Non'),('ST','segment ST'),('E','Elevation (sus-décalage)'),('M','Myocardial (du myocarde)'),('I','Infarction (infarctus)')],'Infarctus du myocarde sans sus-décalage du segment ST',
- '<p>Troponine qui monte et/ou descend au-dessus du 99e percentile dans un contexte ischémique, sans sus-décalage persistant. Codé I21.4 (infarctus sous-endocardique).</p>')
+ '<p>Troponine qui monte et/ou descend au-dessus du 99e percentile dans un contexte ischémique, sans sus-décalage persistant.</p>')
 a('NSTE-ACS',[('N','Non'),('ST','segment ST'),('E','Elevation (sus-décalage)'),('A','Acute (aigu)'),('C','Coronary (coronarien)'),('S','Syndrome')],'Syndrome coronarien aigu sans sus-décalage persistant du segment ST',
  '<p>Terme ESC regroupant le NSTEMI et l’angor instable ; la prise en charge repose sur la stratification du risque.</p>')
 a('OMI',[('O','Occlusion'),('M','Myocardial (du myocarde)'),('I','Infarction (infarctus)')],'Infarctus occlusif du myocarde',
@@ -158,3 +158,11 @@ t('PRISM-PLUS',[('PRISM','Platelet Receptor Inhibition in ischemic Syndrome Mana
 t('PURSUIT',[('PURSUIT','Platelet glycoprotein IIb/IIIa in Unstable angina: Receptor Suppression Using Integrilin Therapy, non strictement lettre à lettre')],'Essai PURSUIT (1998)','<p>Eptifibatide dans le SCA sans sus-décalage : réduction modeste du décès ou de l’infarctus.</p>','i21-d-gp')
 t('CHAMPION PHOENIX',[('CHAMPION','Cangrelor versus standard tHerapy to Achieve optimal Management of Platelet InhibitiON, non strictement lettre à lettre'),('PHOENIX','nom du troisième essai du programme')],'Essai CHAMPION PHOENIX (2013)','<p>Cangrélor contre clopidogrel pendant l’angioplastie : moins d’événements ischémiques périprocéduraux, dont les thromboses de stent.</p>','i21-d-gp')
 a('CIR',[('CIR','CIRculation : préfixe éditorial des articles de la revue Circulation dans leur identifiant numérique')],'Préfixe de la revue Circulation dans un identifiant d’article (doi)','<p>Élément d’un identifiant d’objet numérique, non une abréviation clinique.</p>')
+
+# --- références suisses (balayage du 08.10.2026) ---
+a('GSLA',[('GSLA','sigle français officiel du Groupe de travail Lipides et Athérosclérose')],'Groupe de travail Lipides et Athérosclérose (Arbeitsgruppe Lipide und Atherosklerose, AGLA en allemand)',
+ '<p>Groupe d’experts suisse qui adapte au contexte suisse les recommandations européennes sur les lipides et la prévention de l’athérosclérose ; il publie le calculateur de risque GSLA et le guide de poche « Prévention de l’athérosclérose ».</p>')
+a('SCPRS',[('S','Swiss (suisse)'),('C','Cardiovascular (cardiovasculaire)'),('P','Prevention (prévention)'),('R','Rehabilitation (réadaptation)'),('S','Sports cardiology (cardiologie du sport)')],'Groupe de travail suisse pour la prévention cardiovasculaire, la réadaptation et la cardiologie du sport',
+ '<p>Groupe de travail de la Société suisse de cardiologie qui fixe les critères de qualité des programmes de réadaptation cardiaque ; le respect de ces critères conditionne leur prise en charge par l’assurance obligatoire.</p>')
+a('DGK',[('D','Deutsche (allemande)'),('G','Gesellschaft (Société)'),('K','für Kardiologie (de cardiologie)')],'Deutsche Gesellschaft für Kardiologie – Société allemande de cardiologie',
+ '<p>Société savante allemande qui traduit et adapte les recommandations de l’ESC ; ses versions de poche reproduisent les tableaux de recommandations, avec leurs classes et niveaux de preuve.</p>')

@@ -1,7 +1,7 @@
 {
   "agent": "Codex",
   "branche": "codex/protocole-fragments-20261008",
-  "mis_a_jour": "2026-10-08T15:51:43.860088+02:00",
+  "mis_a_jour": "2026-10-09T05:40:00+00:00",
   "consigne": "Reprise autorisée le 8 octobre : produire tout I-03-Infectiologie et auto-revoir avant transmission ; audit final unique du fragment par Claude, correction et injection par auditeur ; INJECTE immuable ; HTML clair.",
   "lots": [
     {
@@ -170,14 +170,41 @@
     "reprise_sur_nouvelles_instructions_uniquement": true
   },
   "arret": {
-    "demande_utilisateur": "injecte ce qu'il faut injecter puis STOP. je vais changer les règles",
-    "etat": "arrete_attente_nouvelles_regles",
-    "rapport": "docs/collaboration/ARRET_CODEX_2026-10-08.md",
-    "recu": "docs/collaboration/receipts/CODEX_ARRET_FINAL_2026-10-08.json",
-    "new_injections": []
+    "date": "2026-10-09T05:40:00+00:00",
+    "demande_utilisateur": "Sauvegarde et injecte ce qu'il faut injecter",
+    "autorite": "docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md#12",
+    "etat": "ARRET_CODEX_PAR_CLAUDE",
+    "consigne": "Codex est arrêté : aucune production, aucune injection, aucune modification des sources scellées (organisation/SCELLES.json). Attendre une reprise explicite de Vial ou de Claude.",
+    "registre_scelle": "organisation/SCELLES.json",
+    "precedent": {
+      "demande_utilisateur": "injecte ce qu'il faut injecter puis STOP. je vais changer les règles",
+      "etat": "arrete_attente_nouvelles_regles",
+      "rapport": "docs/collaboration/ARRET_CODEX_2026-10-08.md",
+      "recu": "docs/collaboration/receipts/CODEX_ARRET_FINAL_2026-10-08.json",
+      "new_injections": []
+    }
   },
   "protocole": "fragment-unique-2026-10-08",
   "instruction_file": "COORDINATION.md",
   "fragment_actif": "T1",
-  "audit_final_fragment_demande": false
+  "audit_final_fragment_demande": false,
+  "instruction_principale_claude_leader": {
+    "date": "2026-10-08",
+    "source": "Consigne directe de Vial",
+    "document": "docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md",
+    "resume": "Claude est Leader. Chaîne interne Claude : agent rédacteur -> agent relecteur distinct (« Auto-audit par Agent différé opus 5.5 ») qui renforce et injecte ; Codex audite ensuite le fichier final injecté. Claude améliore les cours Codex sauf s'ils sont captivants et corrects. Après ses 11 fragments, Claude reprend les fragments Codex en ordre inverse (M-21 -> I-03).",
+    "action_codex": "Lire le document à chaque reprise ; auditer les fichiers injectés par Claude selon FILE_AUDIT_CODEX.json ; vérifier les signaux de prise en charge avant d'ouvrir un fragment.",
+    "regles_universelles": [
+      "Efficacité plutôt que volume : information efficace, puissante, extrêmement didactique, claire, en termes médicaux dédiés ; aucun remplissage, aucune perte d'information utile.",
+      "Deux captures d'écran réelles par leçon (ouverture ; fenêtre explicative ouverte) via tools/capture_lecon.py, présentées dans le panneau latéral, non dans le fil du chat."
+    ],
+    "regle_fondamentale": "**RÈGLE FONDAMENTALE (section 11)** : aucun cours produit de mémoire — chaque affirmation vient d'une source lue ; **sources suisses puis européennes, aucune recommandation américaine** ; médicaments selon l'information professionnelle suisse Swissmedic (`tools/swissmedic_fi.py`) ; **plan monographique classique**, sans îlot ni tableau consacré au code CIM. Toute invention ou tricherie est interdite.",
+    "regle_en_vigueur_section_12": "**EN VIGUEUR (section 12)** : **aucun cours de Claude n'est audité par Codex** ; Codex **livre** systématiquement ses cours à Claude, qui les corrige puis les **injecte** ; Codex n'injecte plus. Claude audite ses propres cours par agents différés. À l'approche de sa limite hebdomadaire, Claude arrête Codex, injecte et **scelle** les cours (`organisation/SCELLES.json`), non modifiables par Codex."
+  },
+  "demandes_audit_claude": [
+    {
+      "statut": "annulées le 08.10.2026 : les cours Claude ne sont plus audités par Codex (section 12)"
+    }
+  ],
+  "action_codex_actuelle": "ARRÊT. Ne rien produire ni injecter ; les cours injectés sont scellés par Claude (organisation/SCELLES.json)."
 }

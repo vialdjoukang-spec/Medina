@@ -6,7 +6,7 @@ a('ESV',[('E','Extra-'),('S','Systole'),('V','Ventriculaire')],'Extrasystole ven
 a('ESA',[('E','Extra-'),('S','Systole'),('A','Auriculaire')],'Extrasystole auriculaire',
  '<p>Dépolarisation prématurée née dans le myocarde auriculaire : onde P′ prématurée de morphologie différente, QRS fin en règle, pause non compensatrice. Conduite, aberrante ou bloquée selon sa précocité.</p>','i49-ecg-esa')
 a('POTS',[('P','Postural (postural)'),('O','Orthostatic (orthostatique)'),('T','Tachycardia (tachycardie)'),('S','Syndrome')],'Syndrome de tachycardie orthostatique posturale',
- '<p>Augmentation soutenue de la fréquence cardiaque d’au moins 30/min (40/min de 12 à 19 ans) dans les 10 minutes de station debout, sans hypotension orthostatique, avec des symptômes chroniques d’intolérance orthostatique (HRS 2015). Sigle anglais utilisé tel quel en français.</p>','i49-pots-crit')
+ '<p>Augmentation soutenue de la fréquence cardiaque d’au moins 30/min (40/min de 12 à 19 ans) dans les 10 minutes de station debout, sans hypotension orthostatique, avec des symptômes chroniques d’intolérance orthostatique (consensus HRS/EHRA 2015). Sigle anglais utilisé tel quel en français.</p>','i49-pots-crit')
 a('NIH',[('N','National'),('I','Institutes of'),('H','Health')],'National Institutes of Health (Instituts nationaux de la santé des États-Unis)',
  '<p>Agence fédérale américaine de recherche biomédicale ; elle a réuni en 2019 une conférence de consensus d’experts sur le syndrome de tachycardie orthostatique posturale, publiée en 2021.</p>')
 a('CRAVE',[('C','Coffee (café)'),('R','and Real-time (et en temps réel)'),('A','Atrial (auriculaire)'),('V','and Ventricular (et ventriculaire)'),('E','Ectopy (ectopie)')],'Essai CRAVE (café et extrasystoles)',

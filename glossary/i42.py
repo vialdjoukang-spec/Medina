@@ -84,3 +84,6 @@ a('Emery-Dreifuss',[('Emery-Dreifuss','noms propres d’Alan Emery et Fritz Drei
 a('D86.8',[('D86.8','code CIM-10 : D86 = sarcoïdose ; .8 = sarcoïdose d’autres localisations et de localisations associées')],'Code CIM-10 D86.8 : sarcoïdose d’autres localisations','<p>Utilisé avec I43.8 pour la cardiomyopathie sarcoïdosique et avec I41.8 pour la myocardite sarcoïdosique.</p>','i42-sarcoid')
 a('E75.2',[('E75.2','code CIM-10 : E75 = troubles du métabolisme des sphingolipides ; .2 = autres sphingolipidoses (dont la maladie de Fabry)')],'Code CIM-10 E75.2 : autres sphingolipidoses','<p>Code de la maladie de Fabry.</p>','i42-fabry')
 a('O90.3',[('O90.3','code CIM-10 : O90 = complications de la puerpéralité ; .3 = cardiomyopathie au cours de la puerpéralité')],'Code CIM-10 O90.3 : cardiomyopathie du péripartum','<p>Code de la cardiomyopathie du péripartum.</p>','i42-ppcm')
+
+# ---- nom commercial suisse cité pour une posologie (information professionnelle Swissmedic, AIPS, 08.10.2026)
+a('ZOK',[('ZOK','partie du nom commercial « Beloc ZOK » (métoprolol succinate à libération prolongée), non une abréviation développée')],'Beloc ZOK, métoprolol succinate à libération prolongée','<p>Spécialité suisse de métoprolol succinate en comprimés retard ; dose maximale de 200 mg une fois par jour selon son information professionnelle.</p>','i42-d-bb')

@@ -28,10 +28,6 @@ a('Lp(a)',[('L','Lipo-'),('p','protéine'),('(a)','petit a : porteuse de l’apo
  '<p>Lipoprotéine proche du LDL, liée à l’apolipoprotéine(a), dont le taux est surtout génétique. Facteur de risque d’athérosclérose et de RA calcifié.</p>','i35-lpa')
 a('mWHO',[('m','modified (modifiée)'),('W','World'),('H','Health'),('O','Organization')],'Classification de risque maternel de l’Organisation mondiale de la santé modifiée',
  '<p>Classe les cardiopathies de I (risque non augmenté) à IV (grossesse déconseillée). L’ESC 2025 la complète (mWHO 2.0) par des modificateurs de risque.</p>','i35-grossesse')
-a('Q23.1',[('Q23.1','code CIM-10 : Q = malformations congénitales ; Q23 = malformations congénitales des valves aortique et mitrale ; .1 = insuffisance congénitale de la valve aortique')],'Code CIM-10 Q23.1 : insuffisance congénitale de la valve aortique',
- '<p>Code qui inclut la valve aortique bicuspide.</p>')
-a('VARC-3',[('V','Valve'),('A','Academic'),('R','Research'),('C','Consortium'),('3','troisième version')],'Valve Academic Research Consortium, troisième version (2021)',
- '<p>Définitions standardisées des critères de jugement des essais de TAVI et de prothèses valvulaires (désaccord patient-prothèse, dégénérescence, complications).</p>','i35-ppm')
 a('CARPREG II',[('CAR','CARdiac disease (cardiopathie)'),('PREG','in PREGnancy (pendant la grossesse)'),('II','deuxième version')],'Score de risque cardiaque maternel CARPREG II',
  '<p>Score canadien qui estime le risque d’événement cardiaque maternel pendant la grossesse ; ses modificateurs enrichissent la classification mWHO 2.0 (ESC 2025).</p>','i35-grossesse')
 a('SwissTAVI',[('Swiss','suisse'),('TAVI','Transcatheter Aortic Valve Implantation (implantation valvulaire aortique percutanée)')],'Registre national suisse des TAVI',
@@ -95,19 +91,9 @@ a('RECOVERY',[('RECOVERY','nom d’essai arrangé à partir de « Randomized Com
 a('EVOLVED',[('EVOLVED','nom d’essai arrangé à partir de « Early Valve Replacement Guided by Biomarkers of Left Ventricular Decompensation in Asymptomatic Patients With Severe Aortic Stenosis », non strictement lettre à lettre')],'Essai EVOLVED (2024)',
  '<p>Intervention précoce chez des patients porteurs d’un RA sévère asymptomatique avec fibrose myocardique à l’IRM : pas de réduction significative du critère principal.</p>','i35-early')
 a('PARTNER',[('PARTNER','nom d’essai arrangé à partir de « Placement of AoRTic TraNscathetER Valves » (mise en place de valves aortiques par cathéter), non strictement lettre à lettre')],'Programme d’essais PARTNER (Placement of AoRTic TraNscathetER Valves)',
- '<p>Essais du TAVI par valve expansible par ballonnet. Cohorte B (2010) : chez les patients inopérables, mortalité à un an d’environ 50 % sous traitement médical contre environ 30 % après TAVI.</p>','i35-tavi')
-a('PARTNER 3',[('PARTNER','Placement of AoRTic TraNscathetER Valves'),('3','troisième essai')],'Essai PARTNER 3 (2019)',
- '<p>TAVI contre chirurgie chez des patients à faible risque opératoire : TAVI supérieur pour le critère composite décès, AVC ou réhospitalisation à un an ; différence atténuée au suivi à cinq ans.</p>','i35-tavi')
-a('Evolut Low Risk',[('Evolut','nom commercial de la valve auto-expansible évaluée'),('Low Risk','faible risque opératoire')],'Essai Evolut Low Risk (2019)',
- '<p>TAVI par valve auto-expansible contre chirurgie chez des patients à faible risque : non-infériorité.</p>','i35-tavi')
+ '<p>Essais du TAVI par valve expansible par ballonnet. Cohorte B (2010) : chez 358 patients inopérables, mortalité à un an de 50,7 % sous traitement standard contre 30,7 % après TAVI.</p>','i35-tavi')
 a('NOTION',[('NOTION','nom d’essai arrangé à partir de « NOrdic aorTIc valve interventiON » (intervention valvulaire aortique nordique), non strictement lettre à lettre')],'Essai NOTION (Nordic Aortic Valve Intervention)',
  '<p>Premier essai randomisé TAVI contre chirurgie chez des patients à faible risque ; suivi à dix ans sans différence de défaillance des bioprothèses.</p>','i35-tavi')
-a('NOTION-2',[('NOTION','Nordic Aortic Valve Intervention'),('2','deuxième essai')],'Essai NOTION-2 (2024)',
- '<p>TAVI contre chirurgie chez des patients de 75 ans ou moins à faible risque, incluant des valves bicuspides : résultats comparables pour la valve tricuspide, signal défavorable au TAVI dans la bicuspidie.</p>','i35-tavi')
-a('NOTION-3',[('NOTION','Nordic Aortic Valve Intervention'),('3','troisième essai')],'Essai NOTION-3 (2024)',
- '<p>Chez des patients candidats au TAVI avec une maladie coronaire fonctionnellement significative, l’angioplastie a réduit les événements cardiovasculaires majeurs par rapport au traitement conservateur.</p>','i35-coro')
-a('DEDICATE',[('DEDICATE','nom d’essai non développé par ses auteurs ; le suffixe DZHK6 désigne le sixième essai du Deutsches Zentrum für Herz-Kreislauf-Forschung (Centre allemand de recherche cardiovasculaire)')],'Essai DEDICATE (2024)',
- '<p>Essai allemand : TAVI non inférieur à la chirurgie pour décès ou AVC à un an chez des patients de 65 ans et plus à risque faible ou intermédiaire (âge moyen 74 ans).</p>','i35-tavi')
 a('GALILEO',[('GALILEO','nom d’essai arrangé à partir de « Global study comparing a rivAroxaban-based antithrombotic strategy to an antipLatelet-based strategy after TAVR to optimIze clinical outcomEs », non strictement lettre à lettre')],'Essai GALILEO (2020)',
  '<p>Rivaroxaban systématique après TAVI sans indication d’anticoagulation : plus de décès et d’hémorragies que la stratégie antiplaquettaire.</p>','i35-halt')
 a('ATLANTIS',[('ATLANTIS','nom d’essai arrangé à partir de « Anti-Thrombotic strategy to Lower all cardiovascular and Neurologic ischemic and hemorrhagic events after Trans-aortic valve Implantation for aortic Stenosis », non strictement lettre à lettre')],'Essai ATLANTIS (2022)',
@@ -116,7 +102,5 @@ a('POPular TAVI',[('POPular','nom d’essai arrangé à partir de « antiPlatele
  '<p>Cohorte A : aspirine seule contre aspirine et clopidogrel après TAVI, moins d’hémorragies. Cohorte B : anticoagulant seul contre anticoagulant et clopidogrel, moins d’hémorragies.</p>','i35-d-asa')
 a('PROACT Xa',[('PROACT','Prospective Randomized On-X Anticoagulation Clinical Trial'),('Xa','facteur X activé (apixaban)')],'Essai PROACT Xa (2023)',
  '<p>Apixaban contre warfarine chez des porteurs de prothèse aortique mécanique On-X : arrêt prématuré pour excès d’événements thromboemboliques sous apixaban.</p>','i35-inr')
-a('COMPARE',[('COMPARE','nom d’essai arrangé à partir de « COzaar in Marfan PAtients Reduces aortic Enlargement », non strictement lettre à lettre')],'Essai COMPARE (2013)',
- '<p>Losartan ajouté au traitement habituel chez l’adulte atteint d’un syndrome de Marfan : ralentissement de la dilatation aortique.</p>','i35-d-aorte')
 a('On-X',[('On-X','nom commercial d’une prothèse mécanique à double ailette en carbone pyrolytique ; non développable')],'Prothèse mécanique On-X',
- '<p>Prothèse à double ailette de faible thrombogénicité. L’ACC/AHA 2020 admet pour elle un INR de 1,5 à 2,0 en position aortique après trois mois ; l’apixaban y a échoué (PROACT Xa).</p>','i35-inr')
+ '<p>Prothèse à double ailette de faible thrombogénicité. Sa cible d’INR suit le tableau 10 de l’ESC/EACTS 2025 ; l’apixaban y a échoué (PROACT Xa).</p>','i35-inr')

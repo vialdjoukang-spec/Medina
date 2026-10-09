@@ -12,6 +12,8 @@ L=[
 ('EVAR-1',[('EVAR','EndoVascular Aneurysm Repair'),('1','essai n° 1')],'Essai EVAR-1','<p>Endoprothèse versus chirurgie ouverte.</p>'),
 ('DREAM',[('D','Dutch'),('R','Randomized'),('E','Endovascular'),('A','Aneurysm'),('M','Management')],'Essai DREAM','<p>Endoprothèse versus chirurgie ouverte (Pays-Bas).</p>'),
 ('OVER',[('O','Open'),('V','Versus'),('E','Endovascular'),('R','Repair')],'Essai OVER','<p>Endoprothèse versus chirurgie ouverte (États-Unis).</p>'),
+('INSTEAD',[('IN','INvestigation of'),('ST','STent grafts'),('EAD','in Aortic Dissection')],'Essai INSTEAD','<p>Essai randomisé européen de l’endoprothèse ajoutée au traitement médical dans la dissection de type B stable.</p>'),
+('INSTEAD-XL',[('INSTEAD','INvestigation of STent grafts in Aortic Dissection'),('XL','eXtended Length of follow-up (suivi prolongé)')],'Essai INSTEAD-XL (2013)','<p>Suivi à cinq ans de l’essai INSTEAD : l’endoprothèse ajoutée au traitement médical réduit la mortalité aortique (6,9 % contre 19,3 %) et la progression de la dissection de type B stable.</p>'),
 ('IMPROVE',[('IMPROVE','nom d’essai (endoprothèse dans la rupture), non strictement lettre à lettre')],'Essai IMPROVE','<p>Stratégie endovasculaire dans la rupture d’anévrisme.</p>'),
 ('CADISS',[('C','Cervical'),('A','Artery'),('DIS','DISsection'),('S','Stroke Study')],'Essai CADISS (2015)','<p>Antiagrégant versus anticoagulant dans la dissection cervicale : pas de différence.</p>'),
 ('TREAT-CAD',[('TREAT','TREATment'),('CAD','Cervical Artery Dissection')],'Essai suisse TREAT-CAD (2021)','<p>Aspirine versus antivitamine K dans la dissection cervicale.</p>'),
@@ -35,5 +37,3 @@ L=[
 ('Bernard-Horner',[('Bernard-Horner','nom propre : Claude Bernard et Johann Horner')],'Syndrome de Claude Bernard-Horner','<p>Ptosis, myosis, énophtalmie par atteinte sympathique.</p>'),
 ]
 for x in L: a(*x)
-for c,tt in [('I71.0','Dissection de l’aorte'),('I71.1','Anévrisme de l’aorte thoracique, rompu'),('I71.2','Anévrisme de l’aorte thoracique, sans mention de rupture'),('I71.3','Anévrisme de l’aorte abdominale, rompu'),('I71.4','Anévrisme de l’aorte abdominale, sans mention de rupture'),('I71.5','Anévrisme de l’aorte thoraco-abdominale, rompu'),('I71.6','Anévrisme de l’aorte thoraco-abdominale, sans mention de rupture')]:
-    a(c,[(c,'code de la Classification internationale des maladies, 10e révision, modification allemande')],tt,'<p>Code CIM-10-GM.</p>')

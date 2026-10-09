@@ -3,13 +3,13 @@ from cardio_2 import t
 for k,lit,full,d in [
 ('VHB',[('V','Virus de l’'),('H','Hépatite'),('B','B')],'Virus de l’hépatite B','<p>Risque de réactivation sous immunosuppresseurs.</p>'),
 ('VHC',[('V','Virus de l’'),('H','Hépatite'),('C','C')],'Virus de l’hépatite C','<p>Cause d’arthralgies et de facteur rhumatoïde positif (cryoglobulinémie).</p>'),
-('DAS28',[('D','Disease'),('A','Activity'),('S','Score'),('28','sur 28 articulations')],'Score d’activité de la maladie sur 28 articulations','<p>Rémission &lt; 2,6 ; faible ≤ 3,2 ; modérée ≤ 5,1 ; élevée &gt; 5,1.</p>'),
+('DAS28',[('D','Disease'),('A','Activity'),('S','Score'),('28','sur 28 articulations')],'Score d’activité de la maladie sur 28 articulations','<p>Score composite : 28 articulations douloureuses et gonflées, CRP ou vitesse de sédimentation, évaluation globale du patient. Rémission inférieure à 2,6, faible activité jusqu’à 3,2, forte activité au-delà de 5,1 ; la rémission stricte se juge plutôt par le CDAI, le SDAI ou la définition booléenne 2022.</p>'),
 ('CDAI',[('C','Clinical'),('D','Disease'),('A','Activity'),('I','Index')],'Indice clinique d’activité','<p>Score sans biologie ; rémission ≤ 2,8.</p>'),
 ('SDAI',[('S','Simplified'),('D','Disease'),('A','Activity'),('I','Index')],'Indice simplifié d’activité','<p>Inclut la CRP ; rémission ≤ 3,3.</p>'),
 ('SCQM',[('S','Swiss'),('C','Clinical'),('Q','Quality'),('M','Management in rheumatic diseases')],'Registre suisse des maladies rhumatismales','<p>Registre national de qualité et de pharmacovigilance.</p>'),
-('HLA-DRB1',[('HLA','Human Leukocyte Antigen'),('DRB1','locus DR, chaîne bêta 1')],'Gène HLA-DRB1','<p>Porte l’épitope partagé, principal facteur génétique de la polyarthrite rhumatoïde.</p>'),
+('HLA-DRB1',[('HLA','Human Leukocyte Antigen'),('DRB1','locus DR, chaîne bêta 1')],'Gène HLA-DRB1','<p>Porte l’épitope partagé, facteur génétique de la polyarthrite rhumatoïde séropositive.</p>'),
 ('HLA-DR',[('HLA','Human Leukocyte Antigen'),('DR','locus DR')],'Molécules HLA de classe II de type DR','<p>Présentent les peptides aux lymphocytes T CD4.</p>'),
-('PTPN22',[('PTP','Protein Tyrosine Phosphatase'),('N22','non-récepteur de type 22')],'Gène PTPN22','<p>Phosphatase du signal lymphocytaire ; second locus de risque.</p>'),
+('PTPN22',[('PTP','Protein Tyrosine Phosphatase'),('N22','non-récepteur de type 22')],'Gène PTPN22','<p>Phosphatase du signal lymphocytaire ; locus de susceptibilité.</p>'),
 ('RANKL',[('R','Receptor Activator of'),('A','(activateur)'),('N','Nuclear factor'),('K','Kappa-B'),('L','Ligand')],'Ligand du récepteur activateur de NF-κB','<p>Active les ostéoclastes ; responsable des érosions.</p>'),
 ('IL-6',[('IL','InterLeukine'),('6','6')],'Interleukine 6','<p>Cytokine de l’inflammation systémique (CRP, fièvre, anémie) ; cible du tocilizumab et du sarilumab.</p>'),
 ('IL-1',[('IL','InterLeukine'),('1','1')],'Interleukine 1','<p>Cytokine pro-inflammatoire.</p>'),
@@ -28,3 +28,6 @@ a('TNF',[('T','Tumor'),('N','Necrosis'),('F','Factor')],'Facteur de nécrose tum
 a('Gougerot-Sjögren',[('Gougerot-Sjögren','nom propre : Henri Gougerot et Henrik Sjögren')],'Syndrome de Gougerot-Sjögren','<p>Maladie auto-immune des glandes exocrines (sécheresse oculaire et buccale).</p>')
 a('DR4',[('DR','locus HLA-DR'),('4','spécificité 4')],'Antigène HLA-DR4','<p>Porte souvent l’épitope partagé.</p>')
 a('DR1',[('DR','locus HLA-DR'),('1','spécificité 1')],'Antigène HLA-DR1','<p>Porte l’épitope partagé.</p>')
+a('SCREEN-RA',[('SCREEN','dépistage (Screening)'),('RA','Rheumatoid Arthritis')],'Cohorte suisse SCREEN-RA','<p>Cohorte suisse d’apparentés au premier degré de patients atteints de polyarthrite rhumatoïde, suivis pour décrire la phase préclinique.</p>')
+a('RMD',[('R','Rheumatic'),('M','and Musculoskeletal'),('D','Diseases')],'Revue RMD Open','<p>Revue en libre accès de l’EULAR consacrée aux maladies rhumatismales et musculosquelettiques.</p>')
+a('Alpizar-Rodriguez',[('Alpizar-Rodriguez','nom propre : Deshiré Alpizar-Rodriguez, rhumatologue à Genève')],'Alpizar-Rodriguez D.','<p>Première autrice de la publication de la cohorte suisse SCREEN-RA (2017).</p>')

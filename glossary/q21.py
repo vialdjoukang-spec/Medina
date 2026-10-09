@@ -36,8 +36,6 @@ a('ESO',[('E','European'),('S','Stroke'),('O','Organisation')],'European Stroke 
  '<p>Société savante européenne de neurologie vasculaire ; recommandations 2024 sur le foramen ovale perméable après un accident vasculaire cérébral.</p>','q21-rope')
 b('ERS',[('E','European'),('R','Respiratory'),('S','Society')],'European Respiratory Society (Société européenne de pneumologie)',
  '<p>Société savante européenne de pneumologie ; coauteur avec l’ESC des recommandations 2022 sur l’hypertension pulmonaire.</p>','q21-htap')
-a('ISACHD',[('I','International'),('S','Society for'),('A','Adult'),('C','Congenital'),('H','Heart'),('D','Disease')],'International Society for Adult Congenital Heart Disease (Société internationale des cardiopathies congénitales de l’adulte)',
- '<p>Société savante coauteure des recommandations américaines 2025 sur les cardiopathies congénitales de l’adulte.</p>')
 a('SACHER',[('S','Swiss'),('A','Adult'),('C','Congenital'),('HE','HEart disease'),('R','Registry')],'Registre suisse des cardiopathies congénitales de l’adulte',
  '<p>Registre national multicentrique suisse qui documente les adultes porteurs d’une cardiopathie congénitale suivis dans les centres spécialisés.</p>','q21-centres')
 a('CLOSE',[('CLOSE','nom d’essai (« fermer »), formé à partir de « Patent Foramen Ovale CLOsure or Anticoagulants versus Antiplatelet Therapy to Prevent Stroke Recurrence », non strictement lettre à lettre')],'Essai CLOSE (2017)',
@@ -62,5 +60,3 @@ a('Blalock-Taussig',[('Blalock-Taussig','noms propres (Alfred Blalock, chirurgie
  '<p>Anastomose palliative entre une artère sous-clavière et une artère pulmonaire (1944), pour augmenter le débit pulmonaire d’une cardiopathie cyanogène.</p>','q21-bt')
 a('Bland-White-Garland',[('Bland-White-Garland','noms propres (Edward Bland, Paul White, Joseph Garland), non abréviation')],'Syndrome de Bland-White-Garland',
  '<p>Origine anormale de la coronaire gauche depuis l’artère pulmonaire (ALCAPA).</p>','q21-alcapa')
-b('Q21.1',[('Q','chapitre Q de la CIM-10 (malformations congénitales)'),('21','catégorie 21 (malformations des cloisons cardiaques)'),('.1','sous-catégorie 1')],'Code CIM-10 Q21.1 : communication interauriculaire',
- '<p>Code de la communication interauriculaire, qui inclut la persistance du foramen ovale.</p>','q21-cim')

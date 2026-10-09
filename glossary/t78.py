@@ -4,13 +4,13 @@ L=[
 ('GA²LEN',[('G','Global'),('A²','Allergy and Asthma'),('L','(European)'),('E','Excellence'),('N','Network')],'Global Allergy and Asthma Excellence Network','<p>Réseau européen d’excellence ; consensus 2024 sur la définition de l’anaphylaxie.</p>'),
 ('ABCDE',[('A','Airway (voies aériennes)'),('B','Breathing (respiration)'),('C','Circulation'),('D','Disability (état neurologique)'),('E','Exposure (exposition, peau)')],'Approche ABCDE','<p>Évaluation hiérarchisée des menaces vitales.</p>'),
 ('PAF',[('P','Platelet'),('A','Activating'),('F','Factor')],'Facteur d’activation plaquettaire','<p>Médiateur lipidique mastocytaire ; son taux est corrélé à la sévérité de l’anaphylaxie.</p>'),
-('MRGPRX2',[('MRGPR','Mas-Related G Protein-coupled Receptor'),('X2','membre X2')],'Récepteur MRGPRX2','<p>Récepteur mastocytaire des réactions non allergiques aux opiacés, à la vancomycine, aux fluoroquinolones et à certains curares.</p>','t78-mrg'),
+('MRGPRX2',[('MRGPR','Mas-Related G Protein-coupled Receptor'),('X2','membre X2')],'Récepteur MRGPRX2','<p>Récepteur mastocytaire couplé aux protéines G ; voie possible de libération de médiateurs indépendante des IgE (recommandation S2k 2021).</p>','t78-mrg'),
 ('KIT',[('KIT','proto-oncogène KIT (récepteur du facteur de cellule souche)')],'Récepteur KIT (CD117)','<p>Récepteur tyrosine kinase indispensable aux mastocytes ; mutation D816V dans la mastocytose systémique.</p>'),
 ('D816V',[('D','acide aspartique (D)'),('816','en position 816'),('V','remplacé par une valine (V)')],'Mutation KIT D816V','<p>Mutation activatrice somatique de la mastocytose systémique.</p>'),
 ('LTP',[('L','Lipid'),('T','Transfer'),('P','Protein')],'Protéines de transfert lipidique','<p>Allergènes végétaux stables à la chaleur et à la digestion (Pru p 3) ; réactions systémiques.</p>','t78-crd'),
 ('PR-10',[('PR','Pathogenesis-Related protein'),('10','famille 10')],'Protéines PR-10','<p>Homologues de Bet v 1, thermolabiles ; syndrome pollen-aliment.</p>','t78-crd'),
 ('PEN-FAST',[('PEN','PENicilline (allergie rapportée)'),('F','Five years (≤ 5 ans)'),('A','Anaphylaxie ou angio-œdème'),('S','Severe cutaneous reaction (réaction cutanée sévère)'),('T','Treatment required (traitement nécessaire)')],'Score PEN-FAST','<p>Score de risque d’allergie vraie à la pénicilline.</p>','t78-penfast'),
-('LEAP',[('L','Learning'),('E','Early'),('A','About'),('P','Peanut allergy')],'Essai LEAP (2015)','<p>Introduction précoce de l’arachide : allergie réduite de plus de 80 %.</p>'),
+('LEAP',[('L','Learning'),('E','Early'),('A','About'),('P','Peanut allergy')],'Essai LEAP (2015)','<p>Essai d’introduction précoce de l’arachide chez des nourrissons à haut risque : réduction significative de l’allergie à l’arachide (synthèse de Pédiatrie Suisse 2025).</p>'),
 ('DRESS',[('D','Drug'),('R','Reaction with'),('E','Eosinophilia and'),('S','Systemic'),('S','Symptoms')],'Syndrome DRESS','<p>Toxidermie grave retardée avec éosinophilie et atteintes viscérales ; réintroduction interdite.</p>'),
 ('HLA-B*15:02',[('HLA','Human Leukocyte Antigen'),('B*15:02','allèle B*15:02')],'Allèle HLA-B*15:02','<p>Risque de nécrolyse à la carbamazépine chez les patients d’Asie du Sud-Est.</p>','t78-hla'),
 ('HLA-A*31:01',[('HLA','Human Leukocyte Antigen'),('A*31:01','allèle A*31:01')],'Allèle HLA-A*31:01','<p>Toxidermies à la carbamazépine, y compris chez les Européens.</p>','t78-hla'),
@@ -25,17 +25,25 @@ L=[
 ('IgG4',[('Ig','Immunoglobuline'),('G4','sous-classe G4')],'Immunoglobuline G4','<p>Anticorps « bloquants » induits par l’immunothérapie allergénique.</p>'),
 ('IL-10',[('IL','InterLeukine'),('10','10')],'Interleukine 10','<p>Cytokine régulatrice de la tolérance.</p>'),
 ('kUA',[('k','kilo'),('U','Unités'),('A','Allergène-spécifiques')],'Kilo-unités d’anticorps spécifiques par litre','<p>Unité des IgE spécifiques (kUA/L).</p>'),
-('SSAI',[('S','Société'),('S','Suisse d’'),('A','Allergologie et d’'),('I','Immunologie')],'Société suisse d’allergologie et d’immunologie','<p>Société savante suisse de référence ; coautrice de la recommandation S2k 2021 sur l’anaphylaxie.</p>'),
+('SSAI',[('S','Société'),('S','Suisse d’'),('A','Allergologie et d’'),('I','Immunologie')],'Société suisse d’allergologie et d’immunologie','<p>Société savante suisse de référence (SGAI en allemand) ; cosignataire de la recommandation S2k 2021 sur l’anaphylaxie et de la position germanophone 2025 sur les bêtalactamines.</p>'),
 ('S2k',[('S2','niveau de développement 2'),('k','consensus (Konsens)')],'Niveau de recommandation S2k','<p>Recommandation allemande fondée sur un consensus formel d’experts (système de l’AWMF).</p>'),
 ('AWMF',[('A','Arbeitsgemeinschaft der'),('W','Wissenschaftlichen'),('M','Medizinischen'),('F','Fachgesellschaften')],'Association des sociétés médicales scientifiques d’Allemagne','<p>Publie les recommandations germanophones.</p>'),
 ('JAMA',[('J','Journal of the'),('A','American'),('M','Medical'),('A','Association')],'Revue JAMA','<p>Revue médicale générale.</p>'),
 ('CD',[('CD','Cluster of Differentiation (classe de différenciation)')],'Classe de différenciation','<p>Nomenclature des marqueurs de surface des cellules.</p>'),
 ]
 for x in L: a(*x)
-for c,tt in [('T78.0','Choc anaphylactique dû à une intolérance alimentaire'),('T78.1','Autres réactions d’intolérance alimentaire'),('T78.2','Choc anaphylactique, sans précision'),('T78.3','Œdème angioneurotique'),('T78.4','Allergie, sans précision'),('T80.5','Choc anaphylactique dû à un sérum'),('T88.6','Choc anaphylactique dû à un médicament correctement administré')]:
-    a(c,[(c,'code de la Classification internationale des maladies, 10e révision, modification allemande')],tt,'<p>Code CIM-10-GM.</p>')
 for k,t2 in [('Stevens-Johnson','Albert Stevens et Frank Johnson'),('Bezold-Jarisch','Albert von Bezold et Adolf Jarisch')]:
     a(k,[(k,'nom propre : '+t2)],k,'<p>Éponyme ('+t2+').</p>')
 a('États-Unis',[('États-Unis','nom de pays')],'États-Unis d’Amérique','<p>Pays ; autorités du médicament : Food and Drug Administration.</p>')
 a('Sud-Est',[('Sud-Est','point cardinal composé')],'Asie du Sud-Est','<p>Région géographique (Chine du Sud, Thaïlande, Malaisie, Indonésie, Philippines, Vietnam…).</p>')
 a('H1',[('H','Histamine'),('1','récepteur de type 1')],'Récepteur H1 de l’histamine','<p>Médie prurit, vasodilatation, perméabilité capillaire ; cible des antihistaminiques.</p>','t78-d-antih')
+# Révision du 08.10.2026 : sigles et noms propres introduits par les sources européennes et suisses.
+a('UK',[('U','United'),('K','Kingdom')],'Royaume-Uni','<p>Abréviation anglaise du Royaume-Uni ; le Resuscitation Council UK publie les recommandations britanniques de traitement de l’anaphylaxie (2021).</p>')
+a('R1',[('R','Radical (chaîne latérale)'),('1','en position 1')],'Chaîne latérale R1 des bêtalactamines','<p>Chaîne latérale portée par le noyau bêtalactame ; sa similitude explique la plupart des réactions croisées entre bêtalactamines (position germanophone 2025).</p>')
+a('SQ',[('S','Standardised'),('Q','Quality')],'Qualité standardisée','<p>Système de standardisation des extraits allergéniques du fabricant ALK (Alutard SQ®, Soluprick SQ®).</p>')
+a('SQ-U',[('SQ','Standardised Quality'),('U','Units')],'Unités de qualité standardisée','<p>Unité de dose des extraits allergéniques ALK ; dose d’entretien des venins Alutard SQ® : 100 000 SQ-U (information professionnelle suisse).</p>','t78-d-ita')
+a('CD203c',[('CD','Cluster of Differentiation'),('203c','203c')],'Marqueur CD203c','<p>Marqueur de surface du basophile, surexprimé lors de son activation ; utilisé avec CD63 dans le test d’activation des basophiles.</p>')
+a('Solu-Medrol',[('Solu-Medrol','nom commercial de la méthylprednisolone injectable')],'Solu-Medrol®','<p>Méthylprednisolone injectable (Pfizer) ; l’information professionnelle suisse rappelle que l’adrénaline est le premier choix dans l’œdème laryngé.</p>')
+for k,n in [('LTB4','B4'),('LTC4','C4'),('LTD4','D4')]:
+    a(k,[('LT','LeucoTriène'),(n,n)],'Leucotriène '+n,'<p>Médiateur lipidique synthétisé par les mastocytes et les basophiles activés (recommandation S2k 2021).</p>')
+a('C3a',[('C3','Composant 3 du complément'),('a','fragment a (petit fragment de clivage)')],'Fragment C3a du complément','<p>Anaphylatoxine libérée lors du clivage de C3 ; elle peut activer les mastocytes sans IgE (WAO 2020).</p>')
