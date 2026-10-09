@@ -8,7 +8,7 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 01. C-01-Cardiologie (`S01`) — fait
 - [x] 02. P-02-Pneumologie (`S02`) — fait
 - [x] 03. I-03-Infectiologie (`T1`) — fait
-- [ ] 04. G-04-Gastroentérologie et hépatologie (`S03`) — restant
+- [x] 04. G-04-Gastroentérologie et hépatologie (`S03`) — fait
 - [ ] 05. N-05-Neurologie (`S08`) — restant
 - [ ] 06. E-06-Endocrinologie et métabolisme (`S05`) — restant
 - [ ] 07. N-07-Néphrologie (`S04`) — restant
