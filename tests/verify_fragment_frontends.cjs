@@ -153,9 +153,9 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
    await page.setViewportSize({width:1440,height:1000});
   }
   await page.goto(origin+'/index.html');await page.evaluate(()=>document.fonts.ready);
-  const links=page.locator('a[href^="fragments/"]');check('Accueil : 22 accès distincts',await links.count()===22);
+  const links=page.locator('a[href^="fragments/"]');check('Accueil : '+registry.length+' accès distincts',await links.count()===registry.length);
   check('Accueil : police Atkinson affichée',(await page.locator('.hero h1').evaluate(p=>getComputedStyle(p).fontFamily)).includes('Atkinson Hyperlegible Next'));
-  const contrasts=await cardContrast(page,'.specialty-card');check('Accueil : les 22 couleurs atteignent 4,5:1',contrasts.length===22&&contrasts.every(card=>card.ratio>=4.5),contrasts.filter(card=>card.ratio<4.5));
+  const contrasts=await cardContrast(page,'.specialty-card');check('Accueil : toutes les couleurs atteignent 4,5:1',contrasts.length===registry.length&&contrasts.every(card=>card.ratio>=4.5),contrasts.filter(card=>card.ratio<4.5));
   await noOverflow(page,'Portail bureau');await page.screenshot({path:path.join(out,'accueil-desktop.png')});
   await page.setViewportSize({width:390,height:844});await noOverflow(page,'Portail mobile');await page.screenshot({path:path.join(out,'accueil-mobile.png')});
   const preview=path.join(directory,'apercus/infectiologie.html');if(fs.existsSync(preview)){

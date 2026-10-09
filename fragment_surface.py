@@ -25,6 +25,7 @@ SPECIALTY_BY_FRAGMENT = {
     'S14': 'gynecologie', 'S15': 'urologie', 'S16': 'obstetrique',
     'T1': 'infectiologie', 'T2': 'medecine-ages', 'T3': 'urgences',
     'T4': 'oncologie', 'T5': 'diagnostic', 'T6': 'medecine-famille', 'T7': 'ethique',
+    'S09': 'psychiatrie',
 }
 PRIMARY_FRAGMENT = {sid: ident for ident, sid in SPECIALTY_BY_FRAGMENT.items()}
 PRIMARY_FRAGMENT.update({
@@ -40,6 +41,7 @@ PRIMARY_FRAGMENT.update({
     'sante-publique': 'T6', 'medecine-travail': 'T6',
 })
 FRAGMENT_ACCENTS = {
+    'S09': '#7b4fc4',
     'S01': '#b64b43', 'S02': '#3d7184', 'T1': '#317765', 'S03': '#967143',
     'S08': '#6a5e91', 'S05': '#926a45', 'S04': '#3c7a88', 'S06': '#a55768',
     'T4': '#765e7a', 'S14': '#9a657d', 'S16': '#a87258', 'T2': '#727d48',
@@ -105,7 +107,10 @@ def frontend_catalog(root):
 
 def frontend_entries(fragment, entries, root):
     """Select the entries of this specialty, independently of legacy systems."""
-    _, owners, _ = frontend_catalog(root)
+    full, owners, _ = frontend_catalog(root)
+    present = {entry['code'] for entry in entries}
+    # Entrées créées depuis l'OFS (chapitre V, S09), absentes de la coque documentaire historique.
+    entries = list(entries) + [entry for entry in full['entries'] if entry['code'] not in present]
     return [entry for entry in entries if owners.get(entry['code']) == fragment['id']]
 
 

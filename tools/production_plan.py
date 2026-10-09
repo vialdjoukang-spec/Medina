@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 from pathlib import PurePosixPath
 
-AGENTS = {"Claude": 11, "Codex": 10}
+AGENTS = {"Claude": 12, "Codex": 10}
 STAGES = {"writing", "review", "checks", "integration", "blocked"}
 
 
@@ -14,9 +14,9 @@ def validate_plan(plan, registry, category_owners=None, courses=None, titles=Non
         raise ValueError("La répartition attribue des fragments entiers à leurs responsables.")
     names = {fragment["id"]: fragment for fragment in registry}
     if plan.get("allocation") != AGENTS or set(plan.get("agents", {})) != set(AGENTS):
-        raise ValueError("La répartition doit être de 11 fragments Claude et 10 Codex.")
+        raise ValueError("La répartition doit être de 12 fragments Claude et 10 Codex.")
     if plan.get("excluded_fragments") != ["S01"]:
-        raise ValueError("Seule la cardiologie est exclue des 21 fragments restants.")
+        raise ValueError("Seule la cardiologie est exclue des 22 fragments restants.")
     rules = plan.get("rules", {})
     for key in ("max_active_chapters_per_agent", "max_active_fragments_per_agent"):
         if rules.get(key) != 1:
@@ -62,7 +62,7 @@ def validate_plan(plan, registry, category_owners=None, courses=None, titles=Non
                 raise ValueError("Un même chapitre ne peut être actif chez les deux agents.")
             active_codes.add(active["code"])
     if set(assignments) != set(names) - {"S01"}:
-        raise ValueError("Les 21 fragments restants doivent tous être attribués.")
+        raise ValueError("Les 22 fragments restants doivent tous être attribués.")
     return assignments
 
 

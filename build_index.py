@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Génère le portail clair des 22 espaces de spécialité MEDINA."""
+"""Génère le portail des espaces de spécialité MEDINA (23 depuis l’ajout de la psychiatrie)."""
 import argparse
 import base64
 import gzip
@@ -33,6 +33,7 @@ ICONS = {
     'T3': '<path d="m19 2-12 17h8l-2 11 12-18h-8l2-10Z"/>',
     'T5': '<circle cx="14" cy="14" r="9"/><path d="m21 21 8 8m-20-15h10m-5-5v10"/>',
     'T6': '<path d="m3 14 13-11 13 11m-23-2v16h20V12m-15 7h10m-5-5v10"/>',
+    'S09': '<path d="M16 5c-6 0-10 4-10 9 0 3 2 5 4 6v5h8v-3h3c2 0 3-1 3-3v-3l2-1-2-3c0-4-3-7-8-7Z"/><path d="M14 11c1-2 4-2 5 0m-6 4c2 1 4 1 6 0"/>',
     'T7': '<path d="M5 4h22v17H14l-7 7v-7H5V4Z"/><path d="M10 10h12m-12 5h8"/>',
 }
 
@@ -94,7 +95,7 @@ SCRIPT = r"""
  function filter(){
   const query=normalize(input.value.trim());let visible=0;
   for(const card of cards){const match=normalize(card.dataset.search).includes(query);card.hidden=!match;if(match)visible++;}
-  status.textContent=query?(visible===1?'1 spécialité correspond à votre recherche.':visible+' spécialités correspondent à votre recherche.'):'22 spécialités à explorer.';
+  status.textContent=query?(visible===1?'1 spécialité correspond à votre recherche.':visible+' spécialités correspondent à votre recherche.'):'23 spécialités à explorer.';
   empty.hidden=visible!==0;clear.hidden=!input.value;
  }
  function reset(){input.value='';filter();input.focus();}
@@ -151,8 +152,8 @@ def main():
     fragments = json.loads((ROOT / 'fragments.json').read_text(encoding='utf-8'))
     registry = json.loads((ROOT / 'organisation/fragments.json').read_text(encoding='utf-8'))
     names = {fragment['id']: fragment for fragment in registry}
-    if len(fragments) != 22 or len(names) != 22 or {f['id'] for f in fragments} != set(names):
-        raise SystemExit('Le portail doit présenter les 22 spécialités du registre partagé.')
+    if len(fragments) != len(names) or {f['id'] for f in fragments} != set(names):
+        raise SystemExit('Le portail doit présenter toutes les spécialités du registre partagé.')
     fragments.sort(key=lambda fragment: names[fragment['id']]['order'])
     cards = []
     total_courses = 0
@@ -202,20 +203,20 @@ def main():
                 + ''.join(f'<div class="overview-item"><b>{nosology_totals[key][0]}<small> / {nosology_totals[key][1]}</small></b><span>{text}</span>{gauge(label, *nosology_totals[key])}</div>'
                           for key, label, text in (('frequent', 'Pathologies fréquentes', 'pathologies fréquentes rédigées'),
                                                    ('federal_exam', 'Examen fédéral', 'catégories de l’examen fédéral rédigées'),
-                                                   ('global', 'Avancement global', 'catégories CIM rédigées sur les 22 spécialités')))
+                                                   ('global', 'Avancement global', 'catégories CIM rédigées sur les 23 spécialités')))
                 + f'<ul class="motifs" aria-label="Principes de l’atlas">{motifs}</ul></div>'
                 '<p class="legend-note">Jauges calculées sur les catégories CIM-10-GM à trois caractères (les sous-codes sont traités dans le cours de leur catégorie) : (nombre rédigé / total) puis (pourcentage).</p>')
     page = f'''<!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
-<meta name="description" content="Explorez MEDINA : 22 espaces de spécialité pour lire, comprendre et relier les connaissances médicales.">
+<meta name="description" content="Explorez MEDINA : 23 espaces de spécialité pour lire, comprendre et relier les connaissances médicales.">
 <title>MEDINA — Une spécialité, un espace de lecture</title><style>{STYLE}</style><style id="medina-typography">{embedded_typography()}</style><style id="medina-portal-v2">{portal_v2()}</style></head><body data-testid="medina-portal">
 <a class="skip" href="#specialites">Aller aux spécialités</a><div class="wrap">
 <header class="masthead"><a class="brand" href="index.html" aria-label="MEDINA, accueil"><span class="brand-symbol" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 20V5l9 11 9-11v15M3 5l9 7 9-7"/></svg></span><span><span class="brand-name">MEDINA</span><span class="brand-caption">Atlas médical interactif</span></span></a><nav aria-label="Navigation principale"><a href="#specialites"><span class="nav-marker" aria-hidden="true"></span>Les spécialités</a><a href="organisation.html">L’atlas</a></nav></header>
-<main><section class="hero" aria-labelledby="welcome-title" data-testid="portal-hero"><div><p class="eyebrow">Un espace pour apprendre</p><h1 id="welcome-title">Explorer la médecine,<br><em>une spécialité à la fois.</em></h1><p class="hero-copy">Prenez le temps de comprendre et de relier les savoirs. Choisissez une spécialité pour ouvrir votre espace de lecture.</p><div class="hero-meta"><span><strong>22</strong> spécialités</span><span data-testid="portal-course-total"><strong>{total_courses}</strong> cours intégrés</span></div></div>
+<main><section class="hero" aria-labelledby="welcome-title" data-testid="portal-hero"><div><p class="eyebrow">Un espace pour apprendre</p><h1 id="welcome-title">Explorer la médecine,<br><em>une spécialité à la fois.</em></h1><p class="hero-copy">Prenez le temps de comprendre et de relier les savoirs. Choisissez une spécialité pour ouvrir votre espace de lecture.</p><div class="hero-meta"><span><strong>23</strong> spécialités</span><span data-testid="portal-course-total"><strong>{total_courses}</strong> cours intégrés</span></div></div>
 <div class="hero-art" aria-hidden="true"><div class="art-halo"></div><div class="reading-page"><p class="art-note">Le plaisir de comprendre</p><p class="art-title">Un savoir.<br>Plusieurs regards.</p><div class="art-lines"><i></i><i></i><i></i></div><div class="art-subjects"><span>Pathologie</span><span>Examens</span><span>Sciences</span><span>Pharmacologie</span></div><span class="art-seal"><svg width="31" height="31" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M16 5v22M5 16h22m-19-8 16 16m0-16L8 24"/><circle cx="16" cy="16" r="10"/></svg></span></div></div></section>
 <section class="library" id="specialites" aria-labelledby="specialties-title"><div class="library-head"><div><p class="section-kicker">Les espaces de l’atlas</p><h2 id="specialties-title">Quelle spécialité vous intéresse ?</h2><p class="section-copy">Chaque spécialité ouvre ses catégories et ses cours.</p></div><div class="search" role="search"><label class="sr-only" for="specialty-search">Rechercher une spécialité</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="specialty-search" type="search" placeholder="Rechercher une spécialité…" autocomplete="off" aria-controls="specialty-grid" data-testid="specialty-search"><button id="clear-search" type="button" aria-label="Effacer la recherche" hidden>×</button></div></div>
-{overview}<p class="search-status" id="search-status" role="status" aria-live="polite" aria-atomic="true" data-testid="search-status">22 spécialités à explorer.</p><ul class="specialties" id="specialty-grid" data-testid="specialty-grid">{''.join(cards)}</ul>
-<div class="empty" id="search-empty" hidden data-testid="search-empty"><strong>Aucune spécialité trouvée.</strong><span>Essayez un autre nom pour poursuivre votre exploration.</span><br><button id="reset-search" type="button">Voir toutes les spécialités</button></div><noscript><p class="section-copy">Les 22 spécialités restent accessibles ci-dessus. La recherche nécessite JavaScript.</p></noscript></section></main>
+{overview}<p class="search-status" id="search-status" role="status" aria-live="polite" aria-atomic="true" data-testid="search-status">23 spécialités à explorer.</p><ul class="specialties" id="specialty-grid" data-testid="specialty-grid">{''.join(cards)}</ul>
+<div class="empty" id="search-empty" hidden data-testid="search-empty"><strong>Aucune spécialité trouvée.</strong><span>Essayez un autre nom pour poursuivre votre exploration.</span><br><button id="reset-search" type="button">Voir toutes les spécialités</button></div><noscript><p class="section-copy">Les 23 spécialités restent accessibles ci-dessus. La recherche nécessite JavaScript.</p></noscript></section></main>
 <footer class="footer"><p><span class="footer-brand">MEDINA</span><span class="footer-note">Une spécialité, un espace de lecture.</span></p><a href="organisation.html">Explorer l’organisation de l’atlas ↗</a></footer></div><script>{SCRIPT}</script></body></html>
 '''
     args.output.parent.mkdir(parents=True, exist_ok=True)

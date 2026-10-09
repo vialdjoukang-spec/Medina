@@ -27,9 +27,9 @@ def load_data(generated_at):
     catalogue, owner, _ = surface.frontend_catalog(ROOT)
     entries = catalogue["entries"]
     names = {f["id"]: f for f in registry}
-    assert len(names) == len(fragments) == 22
+    assert len(names) == len(fragments) == 23
     assert set(names) == {f["id"] for f in fragments}
-    assert sorted(f["order"] for f in registry) == list(range(1, 23))
+    assert sorted(f["order"] for f in registry) == list(range(1, 24))
     by_code = {e["code"]: e for e in entries}
     assert set(owner) == set(by_code), "Catégories non rattachées"
     production, assignments = load_plan(ROOT, owner)

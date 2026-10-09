@@ -27,3 +27,4 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 20. D-20-Diagnostic clinique et examens complémentaires (`T5`) — fait
 - [x] 21. M-21-Médecine de premier recours et santé publique (`T6`) — fait
 - [x] 22. E-22-Éthique médicale, droit et communication (`T7`) — fait
+- [x] 23. P-23-Psychiatrie et psychothérapie (`S09`) — fait
