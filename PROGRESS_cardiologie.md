@@ -5,10 +5,12 @@ Catégories prioritaires du registre sans cours (`organisation/fragments.json`, 
 
 | Cours | État | Images |
 | --- | --- | --- |
-| I73 — Phénomène de Raynaud, thromboangéite oblitérante et autres acrosyndromes vasculaires (C-01-Cardiologie) | Rédigé ; règles connecteurs et interactivité appliquées (15 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i73_raynaud_phases.gif, i73_raynaud_photo.gif |
-| I95 — Hypotension (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (20 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i95_profils_orthostatiques.gif |
-| I89 — Lymphoedème et autres atteintes non infectieuses des lymphatiques (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (16 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i89_charge_transport.gif, i89_lymphoedeme_photo.gif, i89_histologie_peau.gif |
+| I73 — Phénomène de Raynaud, thromboangéite oblitérante et autres acrosyndromes vasculaires (C-01-Cardiologie) | Rédigé ; règles connecteurs et interactivité appliquées (15 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i73_raynaud_phases_photo.gif, i73_raynaud_photo.gif, i73_arcade_palmaire_gray.gif, i73_capillaroscopie_figure.gif |
+| I95 — Hypotension (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (20 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i95_tilt_tachycardie_posturale.gif, i95_baroreflexe_openstax.gif |
+| I89 — Lymphoedème et autres atteintes non infectieuses des lymphatiques (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (16 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i89_capillaires_lymphatiques_openstax.gif, i89_lymphoedeme_photo.gif, i89_lymphoscintigraphie.gif, i89_capillaire_collecteur.gif, i89_stades_collecteurs.gif |
 
 Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I77, I78, I79, I85, I86, I88, I97–I99, R00–R03, S26, S35–S95, Z95.
 
 État (9.10.2026, 22 h 20) : registre prioritaire S01 achevé (I73, I95, I89) ; prêt pour audit.
+
+Règle image du propriétaire (9.10.2026) : images générées interdites ; toutes les figures C-01 sont des images réelles sous licence libre (PROVENANCE.json).
