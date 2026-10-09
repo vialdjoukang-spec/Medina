@@ -14,6 +14,7 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 | K74 | Fibrose et cirrhose du foie (cACLD, hypertension portale, prévention de la décompensation) | 4 (Commons) | Baveno VII 2022, EASL TNI 2021, EASL cirrhose décompensée 2018, Pugh 1973, FI Carvédilol Sandoz® |
 | K70 | Maladie alcoolique du foie (stéatose, hépatite alcoolique, cirrhose, trouble de l’usage d’alcool) | 3 (Commons) | EASL 2018 maladie alcoolique, STOPAH 2015, Baveno VII, FI Prednisolone Streuli®, Campral®, Antabus® |
 | K50 | Maladie de Crohn | 3 (Commons) | ECCO traitement médical 2024, ECCO-ESGAR 2019, Montréal 2005, STRIDE-II, FI Entocort CIR®, Remicade®, Imurek® |
+| K51 | Rectocolite hémorragique | 3 (Commons) | ECCO traitement médical 2022 et chirurgical 2022, Montréal 2005, Truelove et Witts 1955, FI Pentasa®, Cortiment® MMX®, Xeljanz® |
 
 ## Amendements du propriétaire appliqués (09.10.2026)
 - Règle linguistique : connecteurs et transitions (`liaisons.py`, plans `chapitres/K92_liaisons.py`, `K25_liaisons.py` ; rédaction native dès K21).
@@ -21,9 +22,10 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 - Règle d’image : schémas générés supprimés (K92 Forrest, K25 profondeur, K21 Los Angeles) et remplacés par des images réelles Commons ; `Schema` désactivé dans `images.py`.
 
 ## Restantes (ordre des codes prioritaires du registre)
-K51, K52, C18, K35, K57, K56, K90, K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
+K52, C18, K35, K57, K56, K90, K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
 
 ## Points ouverts
+- K51 : dose des corticoïdes IV et jour d’évaluation de la colite aiguë grave TODO (extraits ECCO chirurgical seulement) ; délai et rythme de la coloscopie de surveillance TODO ; contre-indications FI Pentasa® plus larges que l’ECCO.
 - K50 : azathioprine hors indication suisse dans les MICI (FI Imurek®) ; doses d’entretien du risankizumab et de l’upadacitinib TODO (FI non lues) ; ECCO-ESGAR 2019 non téléchargeable (Cloudflare) : règle des biopsies citée de mémoire documentaire, à vérifier à l’audit ; aucune donnée d’incidence suisse.
 - K70 : prednisolone hors indication suisse dans l’hépatite alcoolique (recommandée par l’EASL 2018) ; schéma IV de la N-acétylcystéine TODO (non détaillé dans la source) ; baclofène sans autorisation suisse dans le trouble de l’usage d’alcool ; pas de recommandation EASL plus récente que 2018 trouvée.
 - K74 : carvédilol préféré par Baveno VII mais hors indication en Suisse et contre-indiqué par la FI si insuffisance hépatique manifeste ; posologie hépatologique du carvédilol TODO (absente des sources lues) ; surveillance du CHC renvoyée au cours C22 (TODO source EASL CHC).

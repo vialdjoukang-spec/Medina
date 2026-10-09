@@ -98,3 +98,11 @@ a('III-IV', [('III-IV', 'classes III et IV (NYHA)')], 'Classes NYHA III et IV', 
 a('IL-23', [('IL', 'Interleukine'), ('23', 'numéro 23')], 'Interleukine 23', '<p>Cytokine qui entretient les lymphocytes Th17 ; cible de l’ustékinumab (p40) et du risankizumab (p19).</p>')
 a('anti-IL-23', [('anti', 'dirigé contre'), ('IL-23', 'interleukine 23')], 'Anticorps anti-interleukine 23', '<p>Biothérapie qui bloque la sous-unité p19 de l’interleukine 23, comme le risankizumab.</p>')
 a('MAdCAM-1', [('M', 'Mucosal'), ('Ad', 'Addressin'), ('C', 'Cell'), ('A', 'Adhesion'), ('M', 'Molecule'), ('1', 'type 1')], 'Molécule d’adhésion MAdCAM-1', '<p>Adressine des vaisseaux de la muqueuse intestinale, ligand de l’intégrine α4β7 ; le védolizumab bloque cette liaison.</p>')
+# K51 — Rectocolite hémorragique
+code('K51.0', 'Pancolite ulcéreuse (chronique)', 'K51 — Rectocolite hémorragique')
+code('K51.2', 'Proctite ulcéreuse (chronique)', 'K51 — Rectocolite hémorragique')
+code('K51.3', 'Rectosigmoïdite ulcéreuse (chronique)', 'K51 — Rectocolite hémorragique')
+code('K51.5', 'Colite gauche', 'K51 — Rectocolite hémorragique')
+for k, t in (('E1', 'proctite (rectum seul)'), ('E2', 'colite gauche (en aval de l’angle colique gauche)'), ('E3', 'colite étendue (au-delà de l’angle colique gauche)')):
+    a(k, [(k[0], 'Extent (étendue, classification de Montréal)'), (k[1], 'catégorie ' + k[1])], 'Montréal ' + k + ' : ' + t, '<p>Catégorie d’étendue de la rectocolite hémorragique selon la classification de Montréal (2005).</p>', 'k51-montreal')
+a('MMX', [('MMX', 'Multi-Matrix (technologie de libération colique)')], 'Technologie MMX', '<p>Comprimé à matrice multiple qui libère le principe actif tout au long du côlon (budésonide MMX).</p>', 'k51-d-budmmx')
