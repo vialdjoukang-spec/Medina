@@ -26,7 +26,7 @@ jobs:
           python-version: "3.12"
       - uses: actions/setup-node@v7
         with:
-          node-version: "lts/*"
+          node-version: "22"
       - name: Vérifier les preuves et verrous des fragments avant publication
         env:
           BASE_SHA: ${{ github.event.before }}
@@ -105,6 +105,10 @@ jobs:
         run: |
           mkdir -p _site/apercus/controle/refonte
           cp docs/collaboration/reviews/2026-10-09/FRONTEND_LECTURE/apercu/* _site/apercus/controle/refonte/
+      - name: Publier les captures des jauges nosologiques
+        run: |
+          mkdir -p _site/apercus/controle/nosologie
+          cp -R docs/nosology/captures/. _site/apercus/controle/nosologie/
       - name: Auditer les fragments
         env:
           MEDINA_FRAGMENTS: ${{ github.workspace }}/_site/fragments
