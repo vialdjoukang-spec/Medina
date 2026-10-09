@@ -5,6 +5,8 @@ import io
 import json
 from pathlib import Path
 import sys
+import subprocess
+import tempfile
 import unittest
 import zipfile
 
@@ -29,6 +31,21 @@ class NosologyTests(unittest.TestCase):
         titles = {row[6]: row[8] for row in rows}
         for item in self.ref['entities']:
             self.assertEqual(item['title'], titles[item['code']])
+
+    def test_file_loaded_surface_resolves_sibling_engine_in_isolated_process(self):
+        script = '''import importlib.util, sys
+from pathlib import Path
+root = Path(sys.argv[1])
+spec = importlib.util.spec_from_file_location('isolated_surface', root / 'fragment_surface.py')
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+data, owners, courses = module.frontend_catalog(root)
+assert len(data['entries']) == 1636
+assert len(owners) == 1636
+'''
+        with tempfile.TemporaryDirectory() as cwd:
+            result = subprocess.run([sys.executable, '-I', '-c', script, str(ROOT)], cwd=cwd, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_every_active_category_has_one_owner_and_exact_chapter_and_block(self):
         active = [item for item in self.ref['entities'] if not item['excluded']]

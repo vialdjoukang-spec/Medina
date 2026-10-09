@@ -320,7 +320,14 @@ async def main():
                 check(name + ": compiled source fingerprints match current draft", declared == input_before,
                       {"compiled_files": len(declared), "current_files": len(input_before)})
             check(name + ": no final certification", home["complete"] == [] and all(home["work"].get(flag) is False for flag in ("fragment_complete", "final_validation", "external_audit", "canonical_injection")))
-            check(name + ": exclusive T1 catalogue", home["data"]["fragment"]["id"] == "T1" and len(home["data"]["specialties"]) == 1 and len(home["data"]["entries"]) == 184, len(home["data"]["entries"]))
+            reference = json.loads((Path(__file__).resolve().parents[1] / 'nosology/reference.json').read_text())
+            expected_codes = {code for code, owner in reference['mapping'].items() if owner['fragment'] == 'T1'}
+            actual_codes = [entry['code'] for entry in home['data']['entries']]
+            check(name + ": exclusive T1 catalogue", home["data"]["fragment"]["id"] == "T1"
+                  and len(home["data"]["specialties"]) == 1 and set(actual_codes) == expected_codes
+                  and len(actual_codes) == len(expected_codes),
+                  {'expected': len(expected_codes), 'actual': len(actual_codes),
+                   'missing': sorted(expected_codes - set(actual_codes)), 'foreign': sorted(set(actual_codes) - expected_codes)})
             check(name + ": no foreign mounted course", sorted(home["courses"]) == sorted(ARGS.codes), home["courses"])
             check(name + ": every work course has a home card", sorted(home["featured_codes"]) == sorted(ARGS.codes), home["featured_codes"])
             check(name + ": light under dark OS and saved night", "light" in home["scheme"] and "dark" not in home["scheme"] and home["background_luminance"] >= 0.75,

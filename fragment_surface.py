@@ -7,7 +7,14 @@ courses, glossaries or references from another fragment.
 import html
 import json
 import re
+import sys
 from pathlib import Path
+
+# Some tools load this module by its file path rather than a package import.
+# Resolve its sibling engine in those standalone CLI processes as well.
+MODULE_ROOT = str(Path(__file__).resolve().parent)
+if MODULE_ROOT not in sys.path:
+    sys.path.insert(0, MODULE_ROOT)
 
 
 SPECIALTY_BY_FRAGMENT = {
