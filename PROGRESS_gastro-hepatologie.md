@@ -57,7 +57,7 @@ Règles propriétaire ajoutées le 09.10.2026 : RAPPEL VERITE en tête de chaque
 Outil : /workspace/sweep/nominal.py (spaCy, détection des phrases sans verbe) puis relecture humaine ; contrôle des images réelles dans les fenêtres, de la justification et des connecteurs.
 - K92 : FAIT (10.10.2026). Encadrés, cartes, Pareto, critères formels et 42 fenêtres sur 54 réécrits en phrases complètes ; justification ajoutée (cartes cliniques, signes, mesures du cirrhotique) ; 3 images réelles ajoutées dans les fenêtres Forrest, ligature et varices. Doses et codes inchangés (déjà vérifiés).
 - K25 : FAIT (10.10.2026). Encadrés, Pareto, définitions formelles, populations particulières et 46 fenêtres sur 51 réécrits en phrases complètes, avec justification (localisation bulbaire, tests, résistances) ; 3 images réelles ajoutées dans les fenêtres (pneumopéritoine, ulcère/érosion, sténose). Doses et codes inchangés.
-- K21 : À FAIRE (203 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K21 : FAIT (10.10.2026). Définitions formelles, encadrés, Pareto, paramètres clés et 39 champs de fenêtres réécrits en phrases complètes, avec justification (épreuve IPP, prise avant repas, seuils) ; 3 images réelles ajoutées dans les fenêtres (œsophagite, Barrett, sténose). Doses et codes inchangés.
 - K85 : À FAIRE (220 phrases signalées par le détecteur avant tri, faux positifs compris).
 - K80 : À FAIRE (204 phrases signalées par le détecteur avant tri, faux positifs compris).
 - K74 : À FAIRE (127 phrases signalées par le détecteur avant tri, faux positifs compris).
