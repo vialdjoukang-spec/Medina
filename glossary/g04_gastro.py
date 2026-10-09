@@ -22,3 +22,13 @@ a('Royaume-Uni', [('Royaume-Uni', 'nom de pays, non une abréviation')], 'Royaum
 code('K92.0', 'Hématémèse', 'K92 — Hémorragies digestives')
 code('K92.1', 'Méléna', 'K92 — Hémorragies digestives')
 code('K92.2', 'Hémorragie gastro-intestinale, sans précision', 'K92 — Hémorragies digestives')
+# K25 — Ulcère gastroduodénal
+a('DGVS', [('D', 'Deutsche (allemande)'), ('G', 'Gesellschaft für (société de)'), ('V', 'Gastroenterologie, Verdauungs- (digestive)'), ('S', 'und Stoffwechselkrankheiten (et métabolique)')], 'Société allemande de gastroentérologie, des maladies digestives et métaboliques', '<p>Société savante européenne (Allemagne) ; auteure de la recommandation S2k 2023 sur Helicobacter pylori et la maladie ulcéreuse gastroduodénale.</p>')
+a('WSES', [('W', 'World'), ('S', 'Society of'), ('E', 'Emergency'), ('S', 'Surgery')], 'Société mondiale de chirurgie d’urgence', '<p>Société savante de chirurgie d’urgence ; auteure de la recommandation de 2020 sur l’ulcère peptique perforé et hémorragique.</p>')
+a('ASA', [('A', 'American'), ('S', 'Society of'), ('A', 'Anesthesiologists')], 'Classification de l’état physique de l’American Society of Anesthesiologists', '<p>Classe de I à VI de l’état général préopératoire ; utilisée comme score de risque de l’ulcère perforé (WSES 2020).</p>')
+a('PULP', [('P', 'Peptic'), ('U', 'Ulcer'), ('L', 'Perforation (le L reprend « ulcer perforation »)'), ('P', 'score')], 'Score PULP (Peptic Ulcer Perforation)', '<p>Score pronostique de mortalité de l’ulcère perforé, fondé sur l’âge, les comorbidités, le délai, le choc, la créatinine et la classe ASA.</p>')
+a('H2', [('H', 'Histamine'), ('2', 'récepteur de type 2')], 'Récepteur H2 de l’histamine', '<p>Récepteur de la cellule pariétale qui stimule la sécrétion acide ; cible des antihistaminiques H2.</p>')
+a('NEM', [('N', 'Néoplasie'), ('E', 'Endocrinienne'), ('M', 'Multiple')], 'Néoplasie endocrinienne multiple', '<p>Syndrome héréditaire de tumeurs endocrines ; le type 1 associe hyperparathyroïdie, tumeurs hypophysaires et tumeurs neuroendocrines pancréatiques ou duodénales, dont le gastrinome.</p>')
+a('MD', [('M', 'Medicinae'), ('D', 'Doctor (docteur en médecine)')], 'Titre de docteur en médecine', '<p>Titre universitaire anglo-saxon figurant dans le nom d’un auteur d’image.</p>')
+a('CC0', [('CC', 'Creative Commons'), ('0', 'zéro droit réservé')], 'Licence Creative Commons zéro', '<p>Renonciation de l’auteur à ses droits : l’œuvre est versée dans le domaine public.</p>')
+nom('Zollinger-Ellison', 'Robert Zollinger, Edwin Ellison', 'Syndrome de Zollinger-Ellison', '<p>Hypersécrétion acide due à un gastrinome ; ulcères multiples, distaux ou réfractaires.</p>')
