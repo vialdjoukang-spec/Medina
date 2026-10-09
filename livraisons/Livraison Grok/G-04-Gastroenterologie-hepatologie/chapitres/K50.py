@@ -35,20 +35,20 @@ C.a(2, 'Épidémiologie et facteurs de risque', P(
  'Après la définition, il faut situer le patient. Ainsi, la maladie débute le plus souvent chez l’adolescent et l’adulte jeune, mais elle peut apparaître à tout âge, y compris après 60 ans. De plus, elle résulte de l’interaction entre une susceptibilité génétique, un microbiote intestinal altéré et des facteurs d’environnement. Parmi ces derniers, le tabagisme est un facteur de risque reconnu, qui aggrave aussi l’évolution ; c’est pourquoi l’arrêt du tabac fait partie du traitement.',
  'Par ailleurs, une maladie de Crohn colique étendue et ancienne augmente le risque de cancer colorectal, et une atteinte du grêle expose au cancer du grêle. En outre, la maladie s’accompagne volontiers de ' + w('k50-mei', 'manifestations extra-intestinales') + ', articulaires, cutanées, oculaires ou hépatobiliaires.')
  + trap('Aucune donnée suisse d’incidence vérifiée n’a été retrouvée dans les sources lues ; aucun chiffre n’est donc avancé.', 'Lacune documentaire')
- + key('Adulte jeune surtout ; gènes, microbiote, environnement ; tabac : risque et aggravation ; manifestations extra-intestinales fréquentes.')
+ + key('La maladie touche surtout l’adulte jeune et naît de l’interaction des gènes, du microbiote et de l’environnement. Le tabac augmente le risque et aggrave l’évolution, et les manifestations extra-intestinales sont fréquentes.')
  + src(ECCO))
 
 C.a(3, 'Physiopathologie', P(
  'Pour comprendre les traitements, il faut suivre la cascade immunitaire. D’abord, une barrière épithéliale défaillante laisse passer des antigènes bactériens ; or, chez le sujet prédisposé, l’immunité innée, par exemple par les variants du gène ' + w('k50-nod2', 'NOD2') + ', répond de façon inadaptée. Ensuite, les lymphocytes T auxiliaires de type 1 et 17 s’activent sous l’effet des interleukines 12 et 23, et produisent du ' + w('k50-tnf', 'TNF-α') + ' et d’autres cytokines.',
  'Par conséquent, chaque cible thérapeutique correspond à un maillon de cette cascade. Ainsi, les anti-TNF neutralisent le TNF-α ; l’' + w('k50-d-ustekinumab', 'ustékinumab') + ' bloque la sous-unité p40 commune aux interleukines 12 et 23, et le ' + w('k50-d-risankizumab', 'risankizumab') + ' la sous-unité p19 de l’interleukine 23 ; le ' + w('k50-d-vedolizumab', 'védolizumab') + ' empêche l’intégrine α4β7 de guider les lymphocytes vers l’intestin ; enfin, l’' + w('k50-d-upadacitinib', 'upadacitinib') + ' inhibe la signalisation intracellulaire par JAK-1.')
- + key('Barrière défaillante + immunité innée inadaptée (NOD2) → lymphocytes Th1/Th17, IL-12/23, TNF-α → inflammation transmurale ; chaque biothérapie cible un maillon.')
+ + key('Une barrière défaillante et une immunité innée inadaptée (NOD2) activent les lymphocytes Th1/Th17, l’IL-12/23 et le TNF-α, ce qui crée l’inflammation transmurale ; chaque biothérapie cible un maillon de cette chaîne.')
  + src(ECCO))
 
 C.a(4, 'Présentation clinique', P(
  'La présentation dépend donc de la localisation et du phénotype. Ainsi, l’atteinte iléale typique associe une diarrhée chronique, des douleurs de la fosse iliaque droite, parfois une masse, un amaigrissement et une fièvre ; à l’inverse, l’atteinte colique peut donner une diarrhée sanglante qui imite la rectocolite. De plus, la ' + w('k50-perianal', 'maladie périanale') + ' se manifeste par des fissures, des fistules ou des abcès, parfois révélateurs.',
  'Par ailleurs, l’évolution transmurale explique les complications. En effet, une sténose provoque des douleurs postprandiales et un syndrome occlusif, alors qu’une fistule peut relier l’intestin à la peau, à la vessie ou à un autre segment digestif. Enfin, l’examen recherche une dénutrition, une anémie et des manifestations extra-intestinales.')
  + C.img('k50_ulcere.gif', 'Photographie endoscopique d’une muqueuse colique inflammatoire avec un ulcère profond, allongé et sinueux.', 'Ulcère serpigineux du côlon dans une maladie de Crohn, vue d’iléocoloscopie. Les ulcères profonds et discontinus, séparés par une muqueuse d’aspect normal, sont typiques.', credit({'auteur': 'Samir (The Scope)', 'licence': 'CC BY-SA 3.0', 'url': 'https://commons.wikimedia.org/wiki/File:CD_serpiginous_ulcer.jpg'}))
- + key('Iléale : diarrhée, douleur de la fosse iliaque droite, amaigrissement. Colique : diarrhée parfois sanglante. Périanale : fistules, abcès. Sténose : syndrome occlusif.')
+ + key('L’atteinte iléale donne une diarrhée, une douleur de la fosse iliaque droite et un amaigrissement, et l’atteinte colique une diarrhée parfois sanglante. L’atteinte périanale se manifeste par des fistules et des abcès, et une sténose par un syndrome occlusif.')
  + src(DIAG))
 
 C.a(5, 'Démarche diagnostique', P(
@@ -58,7 +58,7 @@ C.a(5, 'Démarche diagnostique', P(
  + quiz('Quel examen est indispensable pour poser le diagnostic de maladie de Crohn iléale ?',
    [('Scanner abdominal seul', False), ('Iléocoloscopie avec biopsies de l’iléon terminal et du côlon', True), ('Calprotectine fécale seule', False)],
    'La calprotectine oriente, l’imagerie précise l’étendue, mais l’iléocoloscopie avec biopsies étagées est l’examen diagnostique de référence (ECCO-ESGAR 2019).')
- + key('CRP, calprotectine, coprocultures et C. difficile ; iléocoloscopie avec biopsies étagées ; entéro-IRM ou échographie pour le grêle et les complications.')
+ + key('On dose la CRP et la calprotectine et l’on recherche une infection par coprocultures et C. difficile. Ensuite, on fait une iléocoloscopie avec biopsies étagées, puis une entéro-IRM ou une échographie pour le grêle et les complications.')
  + src(DIAG))
 
 C.a(6, 'Classer la maladie : Montréal', P(
@@ -68,13 +68,13 @@ C.a(6, 'Classer la maladie : Montréal', P(
    ['Localisation (L)', 'L1 : iléale ; L2 : colique ; L3 : iléocolique ; L4 : tractus digestif haut (ajouté à L1-L3)'],
    ['Comportement (B)', 'B1 : ni sténosant ni pénétrant ; B2 : sténosant ; B3 : pénétrant ; p : atteinte périanale']])
  + P('Par exemple, le patient du début, âgé de 24 ans, avec une atteinte de l’iléon terminal sans sténose, est classé A2 L1 B1 ; en revanche, l’apparition d’une fistule le ferait passer en B3.')
- + key('Montréal : âge A1-A3, localisation L1-L4, comportement B1-B3, suffixe p ; le comportement évolue vers la sténose ou la pénétration.')
+ + key('La classification de Montréal décrit l’âge (A1-A3), la localisation (L1-L4), le comportement (B1-B3) et le suffixe p ; or, le comportement évolue avec le temps vers la sténose ou la pénétration.')
  + src(MTL))
 
 C.a(7, 'Principes de traitement', P(
  'Une fois la maladie classée, le traitement suit des principes généraux. D’abord, l’ECCO recommande une ' + w('k50-mdt', 'équipe multidisciplinaire') + ' et une décision partagée avec le patient (consensus de 97 %). Ensuite, la stratégie ' + w('k50-t2t', '« treat-to-target »') + ', avec contrôle étroit, vise des cibles objectives, comme la normalisation de la calprotectine ou de la CRP, plutôt que les seuls symptômes. De plus, le choix du médicament tient compte de son efficacité, de sa sécurité, des manifestations extra-intestinales, de la maladie périanale, des comorbidités et d’un projet de grossesse.',
  'Par ailleurs, l’ECCO 2024 ne hiérarchise plus les traitements « du conventionnel à l’avancé » ; en effet, chaque médicament est jugé sur ses mérites. Cependant, la distinction entre induction et entretien reste essentielle : certains traitements induisent la rémission sans pouvoir l’entretenir, comme les corticoïdes, et d’autres l’entretiennent sans l’induire, comme les thiopurines.')
- + key('Équipe multidisciplinaire, décision partagée, « treat-to-target » sur calprotectine et CRP ; induction et entretien se raisonnent séparément.')
+ + key('Une équipe multidisciplinaire décide avec le patient et vise des cibles objectives, la calprotectine et la CRP ; l’induction et l’entretien se raisonnent séparément.')
  + src(ECCO, STR))
 
 C.a(8, 'Induire la rémission', P(
@@ -84,26 +84,26 @@ C.a(8, 'Induire la rémission', P(
  + quiz('Poussée légère de maladie de Crohn iléale. Quel traitement d’induction ?',
    [('Mésalazine orale', False), ('Budésonide 9 mg/j', True), ('Azathioprine seule', False)],
    'Le budésonide est recommandé pour l’atteinte iléale ou du côlon ascendant légère à modérée ; le 5-ASA n’est pas recommandé, et les thiopurines ne doivent pas servir à l’induction (ECCO 2024).')
- + key('Légère iléo-cæcale : budésonide 9 mg/j ; pas de 5-ASA. Modérée à sévère : corticoïdes systémiques (induction seule) ou traitement avancé : anti-TNF, ustékinumab, risankizumab, védolizumab, upadacitinib.')
+ + key('La forme légère iléo-cæcale reçoit du budésonide 9 mg/j, mais pas de 5-ASA. La forme modérée à sévère reçoit des corticoïdes systémiques, pour l’induction seulement, ou un traitement avancé : anti-TNF, ustékinumab, risankizumab, védolizumab ou upadacitinib.')
  + src(ECCO, FI('Entocort CIR®'), FI('Remicade®')))
 
 C.a(9, 'Entretenir la rémission', P(
  'Une fois la rémission obtenue, il faut la maintenir. Ainsi, les ' + w('k50-thiopurines', 'thiopurines') + ' peuvent être utilisées en monothérapie d’entretien (recommandation faible), mais pas en induction (recommandation forte contre). De plus, quand l’infliximab est débuté, l’ECCO recommande fortement de l’associer à une thiopurine, et de maintenir cette association au moins 6 à 12 mois ; en revanche, l’adalimumab est plutôt utilisé en monothérapie chez le patient naïf de biothérapie.',
  'Par ailleurs, tout traitement avancé qui a induit la rémission est en général poursuivi en entretien. En outre, chez le patient naïf de biothérapie, l’adalimumab et l’ustékinumab semblent d’efficacité équivalente en induction comme en entretien (recommandation faible). Enfin, la réponse est contrôlée par la calprotectine, la CRP et, selon le cas, l’endoscopie ou l’imagerie, conformément à la stratégie « treat-to-target ».')
- + key('Thiopurines : entretien, pas induction. Infliximab + thiopurine ≥ 6-12 mois. Adalimumab en monothérapie. Poursuivre en entretien le traitement qui a induit la rémission.')
+ + key('Les thiopurines servent à l’entretien, mais pas à l’induction. L’infliximab s’associe à une thiopurine pendant ≥ 6-12 mois, alors que l’adalimumab se donne seul. En entretien, on poursuit le traitement qui a induit la rémission.')
  + src(ECCO))
 
 C.a(10, 'Complications et chirurgie', P(
  'Malgré le traitement médical, les complications transmurales peuvent imposer un geste. Ainsi, un abcès est drainé, de préférence par voie percutanée, avant toute immunosuppression ; de plus, une sténose fibreuse symptomatique relève d’une dilatation endoscopique ou d’une résection. Par ailleurs, l’' + w('k50-resection', 'iléocæcectomie') + ' est une option à discuter tôt dans une maladie iléale limitée, en concertation multidisciplinaire.',
  'En outre, la maladie périanale fistulisante associe drainage chirurgical, souvent par séton, et traitement médical, notamment par anti-TNF ; en effet, l’infliximab est autorisé en Suisse dans la maladie de Crohn fistulisante sévère. Enfin, la surveillance endoscopique du cancer colorectal s’impose dans les formes coliques étendues et anciennes.')
- + key('Abcès : drainer avant d’immunosupprimer. Sténose fibreuse : dilatation ou résection. Fistule périanale : séton + anti-TNF. Surveillance du cancer colorectal si colite étendue.')
+ + key('On draine l’abcès avant d’immunosupprimer, sinon le sepsis s’aggrave. La sténose fibreuse se dilate ou se résèque, et la fistule périanale reçoit un séton et un anti-TNF. Une colite étendue impose la surveillance du cancer colorectal.')
  + C.pareto('pareto-k50-clinique', 'Maladie de Crohn', ['k50-1', 'k50-5', 'k50-6', 'k50-7', 'k50-8', 'k50-9', 'k50-10'],
      ['Transmurale, segmentaire, de la bouche à l’anus.',
       'Iléocoloscopie avec biopsies étagées ; entéro-IRM.',
       'Montréal : A, L, B, p.',
-      '« Treat-to-target » : calprotectine et CRP.',
-      'Légère iléale : budésonide ; pas de 5-ASA.',
-      'Modérée à sévère : biothérapie ou upadacitinib ; corticoïdes en induction seulement.',
+      'La stratégie « treat-to-target » vise la normalisation de la calprotectine et de la CRP.',
+      'La forme légère iléale reçoit du budésonide, mais pas de 5-ASA.',
+      'La forme modérée à sévère reçoit une biothérapie ou de l’upadacitinib, et les corticoïdes ne servent qu’à l’induction.',
       'Abcès drainé avant immunosuppression.'])
  + src(ECCO))
 
@@ -114,8 +114,8 @@ C.a(11, 'Synthèse et retour au cas', P(
  + src(ECCO, MTL))
 
 C.a(12, 'Critères formels et paramètres clés', alert(
- '<p><b>Diagnostic.</b> Faisceau clinique, biologique, endoscopique, histologique et radiologique ; aucun critère isolé. <b>Montréal.</b> A1 ≤ 16 ans, A2 17-40, A3 > 40 ; L1 iléale, L2 colique, L3 iléocolique, L4 haute ; B1, B2 sténosant, B3 pénétrant, p périanal. <b>Rémission clinique (essais).</b> CDAI < 150.</p>', 'Critères.')
- + '<div class="key"><b>Paramètres clés.</b> Budésonide 9 mg/j 8 semaines puis 6 mg/j (FI) ; infliximab 5 mg/kg semaines 0, 2, 6 puis toutes les 8 semaines ; adalimumab 160 mg, 80 mg à 2 semaines, puis 40 mg toutes les 2 semaines ; ustékinumab ≈ 6 mg/kg IV puis 90 mg SC toutes les 8 semaines ; védolizumab 300 mg IV semaines 0, 2, 6 ; risankizumab 600 mg IV semaines 0, 4, 8 ; upadacitinib 45 mg/j 12 semaines.</div>'
+ '<p>Le <b>diagnostic</b> repose sur un faisceau d’arguments cliniques, biologiques, endoscopiques, histologiques et radiologiques, car aucun critère isolé ne suffit. La classification de <b>Montréal</b> distingue l’âge (A1 ≤ 16 ans, A2 17-40, A3 > 40), la localisation (L1 iléale, L2 colique, L3 iléocolique, L4 haute) et le comportement (B1, B2 sténosant, B3 pénétrant, p périanal). Dans les essais, la <b>rémission clinique</b> correspond à un CDAI < 150.</p>', 'Critères.')
+ + '<div class="key"><b>Paramètres clés.</b> Le budésonide se donne à 9 mg/j pendant 8 semaines, puis à 6 mg/j (FI). L’infliximab se perfuse à 5 mg/kg aux semaines 0, 2 et 6, puis toutes les 8 semaines. L’adalimumab se donne à 160 mg, puis 80 mg à 2 semaines, puis 40 mg toutes les 2 semaines. L’ustékinumab se donne à environ 6 mg/kg IV, puis 90 mg SC toutes les 8 semaines. Le védolizumab se perfuse à 300 mg IV aux semaines 0, 2 et 6, le risankizumab à 600 mg IV aux semaines 0, 4 et 8, et l’upadacitinib se prend à 45 mg/j pendant 12 semaines.</div>'
  + src(ECCO, MTL, FI('Entocort CIR®')))
 
 # ---------------- Examens
@@ -129,7 +129,7 @@ C.e(1, 'Hiérarchie des examens', P(
    ['Atteinte haute ?', 'Gastroscopie', 'Symptômes hauts'],
    ['Avant biothérapie ?', 'Tuberculose latente, hépatites B et C, VIH', 'Systématique']])
  + P('Le tableau se lit de haut en bas : ainsi, la calprotectine trie les patients, puis l’endoscopie et l’imagerie établissent le diagnostic et la carte des lésions.')
- + key('Calprotectine et CRP, coprocultures, iléocoloscopie avec biopsies, entéro-IRM ou échographie ; bilan infectieux avant biothérapie.')
+ + key('On dose la calprotectine et la CRP, on fait des coprocultures, une iléocoloscopie avec biopsies et une entéro-IRM ou une échographie ; avant une biothérapie, on fait un bilan infectieux.')
  + src(DIAG))
 
 C.e(2, 'Lire les biopsies', P(
@@ -137,8 +137,8 @@ C.e(2, 'Lire les biopsies', P(
  + C.img('k50_granulome.gif', 'Coupe histologique de muqueuse colique : au centre, un amas arrondi de grandes cellules à cytoplasme rose pâle, sans nécrose centrale.', 'Granulome non nécrosant de la muqueuse colique dans une maladie de Crohn, coloration hématoxyline-éosine : amas d’histiocytes épithélioïdes à cytoplasme éosinophile abondant.', credit({'auteur': 'Mikael Häggström', 'licence': 'CC0', 'url': 'https://commons.wikimedia.org/wiki/File:Histopathology_of_granuloma_of_colonic_mucosa.jpg'}))
  + key('Inflammation chronique focale + granulome non nécrosant : évocateur ; absence de granulome : n’exclut pas ; penser à la tuberculose intestinale.')
  + C.pareto('pareto-k50-examens', 'Examens', ['k50-e-1', 'k50-e-2'],
-     ['Calprotectine : inflammation ou trouble fonctionnel.',
-      'Iléocoloscopie : ≥ 2 biopsies par segment, iléon et 5 sites coliques.',
+     ['La calprotectine distingue une inflammation d’un trouble fonctionnel.',
+      'L’iléocoloscopie prélève ≥ 2 biopsies par segment, dans l’iléon et dans 5 sites coliques.',
       'Entéro-IRM : grêle, sténoses, fistules.',
       'Granulome non nécrosant : évocateur, inconstant.'])
  + src(DIAG))
@@ -169,7 +169,7 @@ C.p(1, 'Stratégie et classes', P(
    ['Anti-intégrine', 'Védolizumab', 'Induction et entretien', w('k50-d-vedolizumab', 'Fiche')],
    ['Inhibiteur de JAK', 'Upadacitinib', 'Induction et entretien', w('k50-d-upadacitinib', 'Fiche')]])
  + P('Le tableau se lit par la colonne « Place » : ainsi, un médicament d’induction seule doit toujours être relayé par un traitement d’entretien.')
- + key('Budésonide et corticoïdes : induction ; thiopurines : entretien ; biothérapies et upadacitinib : induction et entretien ; pas de 5-ASA.')
+ + key('Le budésonide et les corticoïdes servent à l’induction, les thiopurines à l’entretien, et les biothérapies et l’upadacitinib aux deux ; on ne donne pas de 5-ASA.')
  + src(ECCO))
 
 C.p(2, 'Doses et statut réglementaire', P('Les éléments suivants proviennent de l’ECCO 2024 et des informations professionnelles suisses ; de plus, les écarts sont signalés.')
@@ -183,47 +183,47 @@ C.p(2, 'Doses et statut réglementaire', P('Les éléments suivants proviennent 
    ['Upadacitinib', '45 mg/j 12 semaines ; entretien (dose : TODO, FI Rinvoq® non lue)', 'ECCO 2024']])
  + trap('L’information professionnelle suisse d’Imurek® (azathioprine) ne mentionne pas les maladies inflammatoires de l’intestin parmi ses indications : son usage dans la maladie de Crohn, recommandé par l’ECCO en entretien, est donc hors indication en Suisse. À valider à l’audit.', 'Point à valider')
  + P('Par exemple, chez le patient du début, si un anti-TNF est choisi, l’infliximab serait associé à l’azathioprine pendant au moins 6 à 12 mois, après information sur ce statut hors indication et dépistage de la tuberculose.')
- + key('Budésonide 9 mg/j ; infliximab 5 mg/kg (0, 2, 6, puis /8 sem) avec thiopurine ; adalimumab 160/80/40 ; azathioprine hors indication en Suisse.')
+ + key('Le budésonide se donne à 9 mg/j ; l’infliximab à 5 mg/kg (semaines 0, 2 et 6, puis toutes les 8 semaines) avec une thiopurine ; l’adalimumab à 160, 80, puis 40 mg. L’azathioprine est hors indication en Suisse.')
  + src(ECCO, FI('Entocort CIR®'), FI('Remicade®'), FI('Imurek®')))
 
 C.p(3, 'Surveillance et effets indésirables', alert(
  'Les biothérapies et les immunosuppresseurs exposent aux infections, dont la réactivation tuberculeuse et l’hépatite B ; c’est pourquoi le dépistage précède le traitement. De plus, l’infliximab peut provoquer des réactions à la perfusion, et il est contre-indiqué en cas d’insuffisance cardiaque modérée ou sévère (NYHA III-IV).', 'Sécurité.')
  + P('Par ailleurs, les thiopurines exigent une formule sanguine régulière, en raison du risque de myélotoxicité, notamment en cas de déficit en TPMT ou de variant NUDT15 ; en outre, elles augmentent le risque de cancers cutanés non mélaniques et de lymphome. Enfin, le budésonide, malgré son fort premier passage hépatique, garde des effets corticoïdes, d’où une durée limitée et une décroissance progressive.')
- + key('Dépistage infectieux avant traitement ; réactions à la perfusion ; NYHA III-IV contre-indique l’infliximab ; formule sanguine sous thiopurines ; protection solaire.')
+ + key('On dépiste les infections avant le traitement et l’on surveille les réactions à la perfusion. Une insuffisance cardiaque NYHA III-IV contre-indique l’infliximab. Sous thiopurines, on contrôle la formule sanguine et l’on conseille une protection solaire, car elles augmentent le risque de cancer cutané.')
  + C.pareto('pareto-k50-pharma', 'Pharmacologie', ['k50-p-1', 'k50-p-2', 'k50-p-3'],
-     ['Pas de 5-ASA dans la maladie de Crohn.',
-      'Corticoïdes : induction, jamais entretien.',
+     ['On ne donne pas de 5-ASA dans la maladie de Crohn.',
+      'Les corticoïdes servent à l’induction, jamais à l’entretien.',
       'Infliximab + thiopurine ≥ 6-12 mois.',
-      'Tuberculose et hépatite B dépistées avant biothérapie.',
-      'TPMT/NUDT15 avant azathioprine.'])
+      'On dépiste la tuberculose et l’hépatite B avant une biothérapie.',
+      'On teste la TPMT et NUDT15 avant l’azathioprine.'])
  + src(ECCO, FI('Remicade®'), FI('Imurek®')))
 
 # ---------------- Fenêtres
 L = lab
-C.pop('k50-calpro', 'Calprotectine fécale', L(('Nature', 'Protéine des polynucléaires neutrophiles, dosée dans les selles.'), ('Usage', 'Distinguer inflammation intestinale et trouble fonctionnel ; suivre la réponse (« treat-to-target »).'), ('Limite', 'Élevée aussi dans les infections, les AINS, les néoplasies.')) + src(DIAG, ECCO))
-C.pop('k50-ileocolo', 'Iléocoloscopie avec biopsies', L(('Technique', 'Exploration du côlon et de l’iléon terminal.'), ('Biopsies (ECCO-ESGAR 2019)', 'Au moins 2 par segment, dans l’iléon et 5 sites coliques dont le rectum.'), ('Signes', 'Ulcères aphtoïdes ou profonds, discontinus ; aspect pavimenteux ; sténoses.')) + src(DIAG))
-C.pop('k50-ire', 'Entéro-IRM', L(('Usage', 'Étendue de l’atteinte du grêle, sténoses, fistules, abcès.'), ('Avantage', 'Pas d’irradiation chez des patients jeunes, souvent réexaminés.'), ('Alternative', 'Échographie intestinale.')) + src(DIAG))
-C.pop('k50-montreal', 'Classification de Montréal', L(('Âge', 'A1 ≤ 16 ans ; A2 17-40 ans ; A3 > 40 ans.'), ('Localisation', 'L1 iléale ; L2 colique ; L3 iléocolique ; L4 haute.'), ('Comportement', 'B1 inflammatoire ; B2 sténosant ; B3 pénétrant ; p : périanal.')) + src(MTL))
-C.pop('k50-transmurale', 'Inflammation transmurale', L(('Définition', 'Atteinte de toute l’épaisseur de la paroi, de la muqueuse à la séreuse.'), ('Conséquences', 'Sténoses, fistules, abcès.')) + src(DIAG))
-C.pop('k50-mei', 'Manifestations extra-intestinales', L(('Exemples', 'Arthrites périphériques et axiales, érythème noueux, pyoderma gangrenosum, uvéite, épisclérite, cholangite sclérosante primitive.'), ('Portée', 'Influencent le choix du traitement (ECCO 2024).')) + src(ECCO))
-C.pop('k50-perianal', 'Maladie périanale', L(('Lésions', 'Fissures, fistules, abcès, sténose anale.'), ('Classification', 'Suffixe « p » de Montréal.'), ('Traitement', 'Drainage (séton) et anti-TNF.')) + src(MTL, ECCO))
-C.pop('k50-nod2', 'Gène NOD2', L(('Rôle', 'Récepteur intracellulaire de fragments bactériens (immunité innée).'), ('Lien', 'Variants associés à la maladie de Crohn iléale.')))
+C.pop('k50-calpro', 'Calprotectine fécale', L(('Nature', 'Protéine des polynucléaires neutrophiles, dosée dans les selles.'), ('Usage', 'Distinguer inflammation intestinale et trouble fonctionnel ; suivre la réponse (« treat-to-target »).'), ('Limite', 'Elle s’élève aussi dans les infections, sous AINS et dans les néoplasies ; elle n’est donc pas spécifique.')) + src(DIAG, ECCO))
+C.pop('k50-ileocolo', 'Iléocoloscopie avec biopsies', L(('Technique', 'Exploration du côlon et de l’iléon terminal.'), ('Biopsies (ECCO-ESGAR 2019)', 'On prélève au moins 2 biopsies par segment, dans l’iléon et dans 5 sites coliques dont le rectum.'), ('Signes', 'Elle montre des ulcères aphtoïdes ou profonds et discontinus, un aspect pavimenteux et des sténoses.')) + src(DIAG) + C.img('k50_ulcere.gif', 'Endoscopie : ulcère colique profond, allongé et sinueux.', 'L’ulcère est profond et entouré de muqueuse moins atteinte, car l’inflammation est discontinue et transmurale ; c’est l’aspect typique de la maladie de Crohn.', credit({'auteur': 'Samir (The Scope)', 'licence': 'CC BY-SA 3.0', 'url': 'https://commons.wikimedia.org/wiki/File:CD_serpiginous_ulcer.jpg'})))
+C.pop('k50-ire', 'Entéro-IRM', L(('Usage', 'Elle précise l’étendue de l’atteinte du grêle et recherche les sténoses, les fistules et les abcès.'), ('Avantage', 'Pas d’irradiation chez des patients jeunes, souvent réexaminés.'), ('Alternative', 'L’échographie intestinale peut la remplacer.')) + src(DIAG) + C.img('k50_irm.gif', 'Entéro-IRM coronale : long segment d’iléon terminal épaissi et rehaussé.', 'La paroi iléale épaissie se rehausse, car elle est inflammatoire et hypervascularisée ; l’IRM mesure ainsi la longueur atteinte sans irradier.', credit({'auteur': 'Hellerhoff', 'licence': 'CC BY-SA 3.0', 'url': 'https://commons.wikimedia.org/wiki/File:Morbus_Crohn_MR-Sellink_T1FSKM_cor.jpg'})))
+C.pop('k50-montreal', 'Classification de Montréal', L(('Âge', 'A1 ≤ 16 ans ; A2 17-40 ans ; A3 > 40 ans.'), ('Localisation', 'L1 désigne l’atteinte iléale, L2 colique, L3 iléocolique et L4 haute.'), ('Comportement', 'B1 désigne la forme inflammatoire, B2 sténosante et B3 pénétrante ; le suffixe p signale une atteinte périanale.')) + src(MTL))
+C.pop('k50-transmurale', 'Inflammation transmurale', L(('Définition', 'L’inflammation touche toute l’épaisseur de la paroi, de la muqueuse à la séreuse.'), ('Conséquences', 'C’est pourquoi elle provoque des sténoses, des fistules et des abcès.')) + src(DIAG))
+C.pop('k50-mei', 'Manifestations extra-intestinales', L(('Exemples', 'Les arthrites périphériques et axiales, l’érythème noueux, le pyoderma gangrenosum, l’uvéite, l’épisclérite et la cholangite sclérosante primitive en sont des exemples.'), ('Portée', 'Elles influencent le choix du traitement (ECCO 2024).')) + src(ECCO))
+C.pop('k50-perianal', 'Maladie périanale', L(('Lésions', 'Elle comprend des fissures, des fistules, des abcès et une sténose anale.'), ('Classification', 'Le suffixe « p » de Montréal la signale.'), ('Traitement', 'On draine par un séton et l’on donne un anti-TNF, car le drainage seul ne ferme pas la fistule.')) + src(MTL, ECCO))
+C.pop('k50-nod2', 'Gène NOD2', L(('Rôle', 'Ce récepteur intracellulaire reconnaît des fragments bactériens et participe à l’immunité innée.'), ('Lien', 'Variants associés à la maladie de Crohn iléale.')))
 C.pop('k50-tnf', 'TNF-α', L(('Nature', 'Cytokine pro-inflammatoire majeure.'), ('Cible', 'Infliximab, adalimumab, certolizumab.')) + src(ECCO))
-C.pop('k50-t2t', 'Stratégie « treat-to-target »', L(('Principe', 'Fixer une cible objective, la mesurer régulièrement et ajuster le traitement si elle n’est pas atteinte.'), ('Cibles', 'Normalisation de la calprotectine ou de la CRP, cicatrisation endoscopique (STRIDE-II).'), ('Niveau', 'Recommandée par l’ECCO 2024 (consensus 97 %).')) + src(ECCO, STR))
+C.pop('k50-t2t', 'Stratégie « treat-to-target »', L(('Principe', 'Fixer une cible objective, la mesurer régulièrement et ajuster le traitement si elle n’est pas atteinte.'), ('Cibles', 'On vise la normalisation de la calprotectine ou de la CRP et la cicatrisation endoscopique (STRIDE-II).'), ('Niveau', 'Recommandée par l’ECCO 2024 (consensus 97 %).')) + src(ECCO, STR))
 C.pop('k50-mdt', 'Équipe multidisciplinaire', L(('Membres', 'Gastroentérologue, chirurgien, radiologue, pathologiste, infirmière spécialisée, diététicien, psychologue.'), ('Niveau', 'Recommandée par l’ECCO 2024 (consensus 97 %).')) + src(ECCO))
-C.pop('k50-5asa', '5-ASA (mésalazine)', L(('ECCO 2024', 'Non recommandé pour l’induction (recommandation forte) ni pour l’entretien (recommandation forte).'), ('Remarque', 'Efficace dans la rectocolite hémorragique, pas dans la maladie de Crohn.')) + src(ECCO))
+C.pop('k50-5asa', '5-ASA (mésalazine)', L(('ECCO 2024', 'Non recommandé pour l’induction (recommandation forte) ni pour l’entretien (recommandation forte).'), ('Remarque', 'La mésalazine est efficace dans la rectocolite hémorragique, mais pas dans la maladie de Crohn.')) + src(ECCO))
 C.pop('k50-nee', 'Nutrition entérale exclusive', L(('Place', 'Induction chez le patient motivé, avec soutien diététique, qui veut éviter les corticoïdes (recommandation faible).')) + src(ECCO))
-C.pop('k50-cs', 'Corticoïdes systémiques', L(('Place', 'Induction de la forme modérée à sévère (recommandation faible).'), ('Jamais', 'En entretien.'), ('Risques', 'Infections, ostéoporose, diabète, dépendance aux corticoïdes.')) + src(ECCO))
-C.pop('k50-thiopurines', 'Thiopurines', L(('Molécules', 'Azathioprine, 6-mercaptopurine.'), ('Place', 'Entretien (recommandation faible) ; pas d’induction (recommandation forte contre) ; association à l’infliximab ≥ 6-12 mois.'), ('Avant', 'TPMT ou NUDT15.')) + src(ECCO, FI('Imurek®')))
-C.pop('k50-tpmt', 'Thiopurine méthyltransférase (TPMT)', L(('Rôle', 'Enzyme qui inactive une partie des thiopurines.'), ('Déficit', 'Aplasie médullaire rapide sous azathioprine (FI Imurek®).'), ('Conduite', 'Activité ou génotype avant traitement ; NUDT15 aussi.')) + src(FI('Imurek®')))
-C.pop('k50-granulome', 'Granulome épithélioïde non nécrosant', L(('Aspect', 'Amas d’histiocytes épithélioïdes sans nécrose caséeuse.'), ('Valeur', 'Évocateur, inconstant ; éliminer tuberculose et autres granulomatoses.')) + src(DIAG))
-C.pop('k50-resection', 'Iléocæcectomie', L(('Indication', 'Maladie iléale limitée, sténose fibreuse, échec médical ; à discuter tôt en équipe.'), ('Suite', 'Prévention et contrôle endoscopique de la récidive postopératoire.')) + src(ECCO))
-C.pop('k50-d-budesonide', 'Budésonide (Entocort CIR®)', L(('Indication suisse', 'Induction et maintien de la rémission des poussées légères à modérées avec atteinte de l’iléon terminal et du côlon proximal.'), ('Dose', '9 mg/j 8 semaines ; entretien 6 mg/j ; réduction progressive.'), ('ECCO 2024', 'Recommandation forte pour l’induction iléale ou du côlon ascendant.')) + src(FI('Entocort CIR®'), ECCO))
-C.pop('k50-d-infliximab', 'Infliximab (Remicade®)', L(('Indication suisse', 'Maladie de Crohn active modérée à sévère après échec du traitement conventionnel ; forme fistulisante sévère.'), ('Schéma', '5 mg/kg IV semaines 0, 2, 6, puis toutes les 8 semaines.'), ('Contre-indications', 'Tuberculose ou infection sévère, insuffisance cardiaque NYHA III-IV.')) + src(FI('Remicade®'), ECCO))
-C.pop('k50-d-ustekinumab', 'Ustékinumab', L(('Cible', 'Sous-unité p40 des interleukines 12 et 23.'), ('Schéma (ECCO 2024)', '≈ 6 mg/kg IV, puis 90 mg SC toutes les 8 semaines.'), ('Place', 'Induction et entretien (recommandation forte).')) + src(ECCO))
-C.pop('k50-d-risankizumab', 'Risankizumab', L(('Cible', 'Sous-unité p19 de l’interleukine 23.'), ('Induction (ECCO 2024)', '600 mg IV semaines 0, 4, 8.'), ('Place', 'Induction et entretien (recommandation forte).')) + src(ECCO))
-C.pop('k50-d-vedolizumab', 'Védolizumab', L(('Cible', 'Intégrine α4β7, migration intestinale des lymphocytes.'), ('Schéma', '300 mg IV semaines 0, 2, 6, puis toutes les 8 semaines (ou 108 mg SC toutes les 2 semaines).'), ('Place', 'Induction et entretien (recommandation forte).')) + src(ECCO))
-C.pop('k50-d-upadacitinib', 'Upadacitinib', L(('Cible', 'Janus kinase 1 (inhibiteur oral).'), ('Induction (ECCO 2024)', '45 mg/j pendant 12 semaines.'), ('Place', 'Induction et entretien (recommandation forte).')) + src(ECCO))
+C.pop('k50-cs', 'Corticoïdes systémiques', L(('Place', 'Ils induisent la rémission de la forme modérée à sévère (recommandation faible).'), ('Jamais', 'En entretien.'), ('Risques', 'Infections, ostéoporose, diabète, dépendance aux corticoïdes.')) + src(ECCO))
+C.pop('k50-thiopurines', 'Thiopurines', L(('Molécules', 'Ce sont l’azathioprine et la 6-mercaptopurine.'), ('Place', 'Elles servent à l’entretien (recommandation faible), mais pas à l’induction (recommandation forte contre), car elles agissent en plusieurs mois ; associées à l’infliximab, elles se donnent pendant ≥ 6-12 mois.'), ('Avant', 'On teste la TPMT ou NUDT15 avant de les prescrire.')) + src(ECCO, FI('Imurek®')))
+C.pop('k50-tpmt', 'Thiopurine méthyltransférase (TPMT)', L(('Rôle', 'Enzyme qui inactive une partie des thiopurines.'), ('Déficit', 'Un déficit expose à une aplasie médullaire rapide sous azathioprine (FI Imurek®).'), ('Conduite', 'On mesure l’activité ou le génotype avant le traitement, ainsi que NUDT15.')) + src(FI('Imurek®')))
+C.pop('k50-granulome', 'Granulome épithélioïde non nécrosant', L(('Aspect', 'C’est un amas d’histiocytes épithélioïdes sans nécrose caséeuse.'), ('Valeur', 'Évocateur, inconstant ; éliminer tuberculose et autres granulomatoses.')) + src(DIAG) + C.img('k50_granulome.gif', 'Histologie : amas arrondi d’histiocytes épithélioïdes sans nécrose centrale.', 'L’absence de nécrose caséeuse distingue ce granulome de celui de la tuberculose ; cependant, il manque dans une grande partie des biopsies.', credit({'auteur': 'Mikael Häggström', 'licence': 'CC0', 'url': 'https://commons.wikimedia.org/wiki/File:Histopathology_of_granuloma_of_colonic_mucosa.jpg'})))
+C.pop('k50-resection', 'Iléocæcectomie', L(('Indication', 'On la propose dans une maladie iléale limitée, une sténose fibreuse ou un échec médical, et on la discute tôt en équipe.'), ('Suite', 'On prévient ensuite la récidive postopératoire et on la contrôle par endoscopie.')) + src(ECCO))
+C.pop('k50-d-budesonide', 'Budésonide (Entocort CIR®)', L(('Indication suisse', 'Induction et maintien de la rémission des poussées légères à modérées avec atteinte de l’iléon terminal et du côlon proximal.'), ('Dose', 'On donne 9 mg/j pendant 8 semaines, puis 6 mg/j en entretien, avec une réduction progressive.'), ('ECCO 2024', 'L’ECCO le recommande fortement pour induire la rémission d’une atteinte iléale ou du côlon ascendant, car il agit localement à cet endroit.')) + src(FI('Entocort CIR®'), ECCO))
+C.pop('k50-d-infliximab', 'Infliximab (Remicade®)', L(('Indication suisse', 'Il est autorisé dans la maladie de Crohn active modérée à sévère après échec du traitement conventionnel et dans la forme fistulisante sévère.'), ('Schéma', 'On perfuse 5 mg/kg IV aux semaines 0, 2 et 6, puis toutes les 8 semaines.'), ('Contre-indications', 'Tuberculose ou infection sévère, insuffisance cardiaque NYHA III-IV.')) + src(FI('Remicade®'), ECCO))
+C.pop('k50-d-ustekinumab', 'Ustékinumab', L(('Cible', 'Sous-unité p40 des interleukines 12 et 23.'), ('Schéma (ECCO 2024)', '≈ 6 mg/kg IV, puis 90 mg SC toutes les 8 semaines.'), ('Place', 'Il sert à l’induction et à l’entretien (recommandation forte).')) + src(ECCO))
+C.pop('k50-d-risankizumab', 'Risankizumab', L(('Cible', 'Il cible la sous-unité p19 de l’interleukine 23.'), ('Induction (ECCO 2024)', '600 mg IV semaines 0, 4, 8.'), ('Place', 'Il sert à l’induction et à l’entretien (recommandation forte).')) + src(ECCO))
+C.pop('k50-d-vedolizumab', 'Védolizumab', L(('Cible', 'Il cible l’intégrine α4β7 et bloque ainsi la migration intestinale des lymphocytes.'), ('Schéma', 'On perfuse 300 mg IV aux semaines 0, 2 et 6, puis toutes les 8 semaines (ou 108 mg SC toutes les 2 semaines).'), ('Place', 'Il sert à l’induction et à l’entretien (recommandation forte).')) + src(ECCO))
+C.pop('k50-d-upadacitinib', 'Upadacitinib', L(('Cible', 'Janus kinase 1 (inhibiteur oral).'), ('Induction (ECCO 2024)', 'On donne 45 mg/j pendant 12 semaines.'), ('Place', 'Il sert à l’induction et à l’entretien (recommandation forte).')) + src(ECCO))
 
 C.termes = [
  (r'calprotectine', 'k50-calpro'), (r'iléocoloscopie', 'k50-ileocolo'), (r'entéro-IRM', 'k50-ire'), (r'Montréal', 'k50-montreal'),
