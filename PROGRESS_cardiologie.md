@@ -30,7 +30,7 @@ Méthode : détecteur de phrases sans verbe conjugué (spaCy fr, /workspace/swee
 | Cours | Scellé | Phrases nominales | Images dans les fenêtres | Styles en ligne | État du balayage |
 | --- | --- | --- | --- | --- | --- |
 | I73 | non | 34 segments réécrits (fenêtres, Pareto, encadrés, mesures, contre-indications) | 2 (capillaroscopie, crise) | 4 retirés | Fait |
-| I95 | non | à faire (≈ 70 segments détectés, faux positifs inclus) | 2 (baroréflexe, inclinaison) | 2 retirés | Partiel |
+| I95 | non | 42 segments réécrits (fenêtres, Pareto, encadrés, critères, doses) | 2 (baroréflexe, inclinaison) | 2 retirés | Fait |
 | I89 | non | à faire (≈ 55) | 2 (scintigraphie, lymphangion) | 5 retirés | Partiel |
 | I77 | non | à faire (≈ 58) | 2 (collier de perles, tronc cœliaque) | 4 retirés | Partiel |
 | I78 | non | à faire (≈ 68) | 2 (langue, MAV pulmonaire) | 5 retirés | Partiel |
