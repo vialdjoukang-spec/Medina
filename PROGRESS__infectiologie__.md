@@ -17,12 +17,13 @@ Branche : `course/infectiologie`. Ordre : priority_codes de `organisation/fragme
 | A09 | Gastro-entérite infectieuse aiguë | **écrit** (20 fenêtres, 3 GIF réels) |
 | B37 | Candidose | **écrit** (16 fenêtres, 3 GIF réels) |
 | B35 | Dermatophytoses | **écrit** (15 fenêtres, 4 GIF réels) |
+| B50 | Paludisme (B50–B54) | **écrit** (24 fenêtres, 4 GIF réels, glossaire `b50.py`) |
 
 Images : `assets/img/infectiologie/` + `ATTRIBUTIONS.json`.
 
 ## Reste à écrire (fragment T1)
 - Pathologies fréquentes vides : A49, B07.
-- priority_codes non écrits : B50 (paludisme), A15, A16 (tuberculose).
+- priority_codes non écrits : A15, A16 (tuberculose).
 
 ## Lacunes nommées / points à vérifier
 - A46 : dose orale d’amoxicilline SSI (500 mg toutes les 12 h, 5 j) vs information Amoxi-Mepha (375–750 mg 3–4×/j, ≥10 j) — à confirmer auprès des auteurs SSI.
@@ -41,3 +42,5 @@ Décision du propriétaire : chaque cours terminé est rebasé sur origin/main, 
 - B02 : chiffre d’atteinte oculaire divergent OFSP (bulletin 5–10 % vs page publique 10–20 %), signalé dans la fenêtre.
 - B37 : pas de directive SSI sur la candidose ; sources européennes (ECMM 2025, IUSTI/OMS 2018, ESCMID 2012) et suisse (FUNGINOS 2021).
 - B35 : pas de directive SSI ni européenne récente sur la peau glabre ; traitement selon information suisse, épidémiologie Lausanne 2020 et Zurich 2026, consensus Delphi 2026 (T. indotineae).
+- B50 : pas de directive SSI ; OMS 2025, CEMV 2019, FI Riamet/Malarone. Écart premier trimestre (OMS 2022 vs FI Riamet 2019) signalé ; aucune FI suisse de l’artésunate, de la primaquine ni de la tafénoquine trouvée (lacune nommée).
+- 2026-10-09 : auteurs des attributions nettoyés (« Unknown author », « Photo Credit », « Content Providers »).
