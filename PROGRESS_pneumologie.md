@@ -28,3 +28,19 @@ Inventaire de référence : `ANNEXE_FEUILLE_DE_ROUTE.md`, section P-02 (45 caté
 - Restant, interactivité : aucune fenêtre nouvelle ajoutée pendant la révision linguistique ; densification des fenêtres à faire leçon par leçon.
 - Restant, images : rechercher des images réelles sous licence libre là où une figure importante a été retirée sans remplacement.
 - Restant, rédaction : C37/C38, C45, Q32–Q34, R07, R09, S20–S29, T27.
+
+## Session du 10.10.2026, 0 h (S02, reprise)
+- C45 — Mésothéliome (couvre tout C45 : plèvre, péritoine, péricarde) : rédigé et livré sur main (4 onglets, 16 fenêtres, 4 fenêtres illustrées, 6 images réelles Wikimedia Commons CC BY-SA 3.0/4.0, CC BY 3.0 et domaine public ; provenance dans `assets/figures/pneumologie/PROVENANCE.json`). Sources lues : ESMO 2022 (Popat), ERS/ESTS/EACTS/ESTRO 2020, CheckMate 743 (Lancet 2021 ; données à 3 ans via NICE TA818), RCP Alimta (EMA), Rev Med Suisse 2023, Suva, Unisanté. Jauge federal_exam : 26/40 (65 %).
+- Points pour l’audit (C45) : le schéma posologique du nivolumab est celui de l’essai et de l’ESMO (3 mg/kg toutes les 2 semaines) ; le schéma autorisé en Suisse doit être lu dans les FI Opdivo et Yervoy. L’ajout de bévacizumab (option ESMO) n’a pas été vérifié dans la FI suisse. Le pémétrexed est documenté par le RCP européen, pas encore confronté à la FI suisse.
+
+## Balayage rétroactif (ordre du propriétaire, 09.10.2026, 23 h 55)
+Contrôle par leçon : phrases complètes (pas de phrase nominale hors cellules de tableau), connecteurs naturels, justification des termes et décisions, images réelles dans les fenêtres, physiopathologie sous chaque élément.
+
+| Leçon | État du balayage |
+|---|---|
+| J45 | FAIT pour les fenêtres : 62 passages télégraphiques réécrits à la main en phrases complètes justifiées ; 3 images réelles ajoutées dans les fenêtres (éosinophiles, débitmètre de pointe, chambre d’inhalation). RESTE : listes d’algorithme de J45_b (paliers, algorithme diagnostique) à réécrire en phrases ; relecture des connecteurs insérés par script dans J45_a–d. |
+| J44, J18, I26, J09, J90, J86, J93, J84, I27, J47, J80, J81, J12, J21, R04, J82, J67, J60, J69, R06, J40, J95, J96, R05, C34 | À FAIRE. Mesure initiale (outil `/workspace/s02w/audit.py`) : une seule image dans les fenêtres par leçon (la planche), aucune pour R06, J40, J95, J96 et R05 ; fenêtres de type Pareto et monographies encore télégraphiques ; connecteurs insérés par script à relire un par un. |
+| C45 | Conforme à la rédaction (écrit selon les nouvelles règles). |
+
+## Restant, rédaction (federal_exam)
+C37/C38, Q32–Q34, R07/R09, S20–S29, T27 (14 catégories). Images déjà téléchargées pour ces leçons dans `/workspace/s02w/fig` (métadonnées `figmeta.json`) ; outils `expand.py`, `integ.py`, `injpop.py` dans `/workspace/s02w`.
