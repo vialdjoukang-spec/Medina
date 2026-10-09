@@ -21,7 +21,7 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 14. R-14-Rhumatologie et orthopédie (`S10`) — fait
 - [x] 15. U-15-Urologie et andrologie (`S15`) — fait
 - [x] 16. D-16-Dermatologie (`S11`) — fait
-- [ ] 17. O-17-Oto-rhino-laryngologie et médecine bucco-dentaire (`S12`) — restant
+- [x] 17. O-17-Oto-rhino-laryngologie et médecine bucco-dentaire (`S12`) — fait
 - [ ] 18. O-18-Ophtalmologie (`S13`) — restant
 - [ ] 19. M-19-Médecine d’urgence, traumatologie et toxicologie (`T3`) — restant
 - [ ] 20. D-20-Diagnostic clinique et examens complémentaires (`T5`) — restant
