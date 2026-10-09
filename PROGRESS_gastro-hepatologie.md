@@ -24,7 +24,7 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 | K58 | Syndrome de l’intestin irritable | S3 DGVS/DGNM 2021 ; FI Colpermin, Duspatalin, Imodium, Constella, Saroten | 3 images réelles (Bristol, coloscopie, psyllium) ; 15 fenêtres ; règles justification et phrases complètes appliquées |
 | K59 | Autres troubles fonctionnels de l’intestin : constipation chronique (K59.0 ; K59.1-K59.4 signalés) | 5 (Commons, dont 3 aussi dans les fenêtres) | S2k DGVS/DGNM 2022 constipation chronique ; FI Movicol®, Duphalac®, Dulcolax®, Laxoberon®, Resolor®, Constella®, Moventig®, Relistor® |
 | K60 | Fissure et fistule des régions anale et rectale (fissure aiguë/chronique, fistule cryptoglandulaire) | 4 (Commons, dont 4 aussi dans les fenêtres) | S3 Analfissur 2020 (DGK, avec SGVC/Suisse), S3 Analfistel 2026 (DGAV/DGK) ; FI Rectogesic®, BOTOX® |
-| | Abcès des régions anale et rectale (subanodermique, intersphinctérien, ischio-anal, supralévatorien ; Fournier) | 5 (Commons, dont 3 aussi dans les fenêtres) | S3 Analabszess 2026 (DGAV/DGK, avec Koloproktologie Schweiz), S3 Analfistel 2026 |
+| K61 | Abcès des régions anale et rectale (subanodermique, intersphinctérien, ischio-anal, supralévatorien ; Fournier) | 5 (Commons, dont 3 aussi dans les fenêtres) | S3 Analabszess 2026 (DGAV/DGK, avec Koloproktologie Schweiz), S3 Analfistel 2026 |
 
 ## Amendements du propriétaire appliqués (09.10.2026)
 - Règle linguistique : connecteurs et transitions (`liaisons.py`, plans `chapitres/K92_liaisons.py`, `K25_liaisons.py` ; rédaction native dès K21).
@@ -34,7 +34,7 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 ## Restantes (ordre des codes prioritaires du registre)
 K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
 
-Priorité examen fédéral (jauge `federal_exam`, 13/89 rédigées au 09.10.2026) — catégories restantes : C15 C16 C17 C19 C20 C21 C22 C23 C24 C25 C26 K20 K22 K23 K26 K27 K28 K29 K30 K31 K36 K37 K38 K40 K41 K42 K43 K44 K45 K46 K55 K61 K62 K63 K64 K65 K66 K67 K71 K72 K73 K75 K76 K77 K81 K82 K83 K86 K87 Q39 Q40 Q41 Q42 Q43 Q44 Q45 R10 R11 R12 R13 R14 R15 R16 R17 R18 R19 S30 S31 S36 T18 T28.
+Priorité examen fédéral (jauge `federal_exam`, 13/89 rédigées au 09.10.2026) — catégories restantes : C15 C16 C17 C19 C20 C21 C22 C23 C24 C25 C26 K20 K22 K23 K28 K29 K30 K31 K36 K37 K38 K40 K41 K42 K43 K44 K45 K46 K55 K62 K63 K64 K65 K66 K67 K71 K72 K73 K75 K76 K77 K81 K82 K83 K86 K87 Q39 Q40 Q41 Q42 Q43 Q44 Q45 R10 R11 R12 R13 R14 R15 R16 R17 R18 R19 S30 S31 S36 T18 T28.
 Règles propriétaire ajoutées le 09.10.2026 : RAPPEL VERITE en tête de chaque chapitre ; images réelles aussi dans les fenêtres ; commentaire explicatif (physiopathologie) sous chaque image et tableau ; pas d’îlot ni de tableau consacré aux codes CIM.
 
 ## Points ouverts
