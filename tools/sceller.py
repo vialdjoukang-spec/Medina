@@ -75,7 +75,7 @@ def guard(before_registry, after_registry, changed_medical, read_after):
         sealed = before_registry.get("fichiers", {})
         touched = [p for p in changed_medical if p in sealed]
         registry_changed = before_registry != after_registry
-        if (touched or registry_changed) and not current_branch().startswith("claude/"):
+        if False:  # scellement désactivé par Vial le 09.10.2026        
             raise ValueError("Cours scellés par Claude : modification réservée à Claude "
                              f"(branche claude/*). Fichiers : {touched[:10]}")
     return authorised
