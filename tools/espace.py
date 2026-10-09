@@ -117,11 +117,12 @@ def fragment_records(tree):
         raise FragmentError("Registre des fragments : protocole ou schéma invalide.")
     records = data.get("fragments")
     registry = json_data(tree.read(FRAGMENT_REGISTRY), FRAGMENT_REGISTRY)
-    if not isinstance(records, list) or len(records) != 23 or not isinstance(registry, list) or len(registry) != 23:
-        raise FragmentError("Le périmètre fixe doit contenir exactement 23 fragments.")
+    # 22 fragments jusqu'au 09.10.2026, puis 23 avec S09 Psychiatrie (décision de Vial).
+    if not isinstance(records, list) or not isinstance(registry, list) or len(records) != len(registry) or len(registry) not in (22, 23):
+        raise FragmentError("Le périmètre fixe doit contenir exactement 23 fragments (22 avant l'ajout de S09).")
     expected = {f.get("id"): f.get("label") for f in registry if isinstance(f, dict)}
     by_id = {f.get("id"): f for f in records if isinstance(f, dict)}
-    if len(expected) != 23 or len(by_id) != 23 or set(by_id) != set(expected):
+    if len(expected) != len(registry) or len(by_id) != len(registry) or set(by_id) != set(expected):
         raise FragmentError("Identifiants de fragments manquants, ajoutés ou dupliqués.")
     for ident, fragment in by_id.items():
         if fragment.get("label") != expected[ident] or fragment.get("status") not in STATES:
