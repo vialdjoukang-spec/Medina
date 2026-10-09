@@ -32,8 +32,10 @@ Méthode : détecteur de phrases sans verbe conjugué (spaCy fr, /workspace/swee
 | I73 | non | 34 segments réécrits (fenêtres, Pareto, encadrés, mesures, contre-indications) | 2 (capillaroscopie, crise) | 4 retirés | Fait |
 | I95 | non | 42 segments réécrits (fenêtres, Pareto, encadrés, critères, doses) | 2 (baroréflexe, inclinaison) | 2 retirés | Fait |
 | I89 | non | 37 segments réécrits (fenêtres, Pareto, encadrés, seuils, contre-indications, piège) ; faux positifs vérifiés à la main | 2 (scintigraphie, lymphangion) | 5 retirés | Fait |
-| I77 | non | à faire (≈ 58) | 2 (collier de perles, tronc cœliaque) | 4 retirés | Partiel |
-| I78 | non | à faire (≈ 68) | 2 (langue, MAV pulmonaire) | 5 retirés | Partiel |
-| I97 | non | à faire (≈ 48) | 2 (épanchement, Doppler) | 0 | Partiel |
-| I85, R00, R02 | non | à faire (≈ 175, 197, 92) | déjà 3, 2, 3 | 0 | Partiel |
+| I77 | non | 39 segments réécrits (objectifs, pièges, fenêtres, Pareto) ; faux positifs vérifiés à la main | 2 (collier de perles, tronc cœliaque) | 4 retirés | Fait |
+| I78 | non | 40 segments réécrits (objectifs, corrélation, paramètres clés, fenêtres, doses, Pareto) ; faux positifs vérifiés à la main | 2 (langue, MAV pulmonaire) | 5 retirés | Fait |
+| I97 | non | 39 segments réécrits (objectifs, corrélation, critères, fenêtres, doses, Pareto) ; faux positifs vérifiés à la main | 2 (épanchement, Doppler) | 0 | Fait |
+| I85 | non | 112 segments réécrits (objectifs, paramètres clés, pièges, 4 fenêtres de monographies, scores, Pareto) ; faux positifs vérifiés à la main | déjà 3 | 0 | Fait |
+| R02 | non | 36 segments réécrits (objectifs, paramètres clés, fenêtres WIfI, essais, 5 monographies, Pareto) ; faux positifs vérifiés à la main | déjà 3 | 0 | Fait |
+| R00 | non | à faire (≈ 197) | déjà 2 | 0 | Partiel |
 | I00 … R05 (26 cours, dont I26, I27, I51) | oui (`organisation/SCELLES.json`) | non balayés | — | — | Bloqué : la garde `tools/espace.py garde` (CI espace.yml et pages.yml) refuse toute modification d’une source scellée hors branche claude/* ; décision du propriétaire requise |
