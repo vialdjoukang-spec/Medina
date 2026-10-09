@@ -185,3 +185,14 @@ Chaque leçon vide suit le plan monographique de base. Les pathologies fréquent
 - **Annexe B, `ANNEXE_FEUILLE_DE_ROUTE.md`** (`python3 tools/feuille_de_route.py`) : la liste exhaustive des 1 244 catégories marquées « Examen fédéral ». C'est une référence de complétude, à traiter après l'annexe A.
 - **Réserve** : la correspondance SSP → pathologie est pédagogique et non officielle, car PROFILES ne publie aucune table vers la CIM. Elle est à valider, sans la présenter comme officielle.
 - Régénérer les deux annexes après chaque injection.
+
+## 13. Frontend de référence (stabilisé le 9 octobre 2026)
+- **Ce qui a été annulé.** Le frontend validé par Vial est celui de la PR #38, enrichi ensuite.
+  - La refonte `eae50d18` (« Refondre la lecture et les accueils des 22 fragments ») a été annulée côté présentation, à la demande de Vial.
+  - Ne pas la réappliquer, ni réintroduire `engine/frontend_v3.css` ou `engine/reading_v3.css`.
+- **Ce qui la remplace** :
+  - couches de style `engine/atlas_v4.css` et `engine/harmonie_v5.css` (couleurs vives, intensité modérément renforcée) ;
+  - accueil d'une spécialité : couverture « Votre espace d'étude », trois jauges, « Ouvrez un cours », « La bibliothèque » ;
+  - dans les cours : Navigo ancré à droite.
+- **Ajouts conservés** : bouton Accueil MEDINA, jauges « (n / total) (x %) », leçons en préparation au format cours, fragment Psychiatrie.
+- **Pas de refonte sans accord.** Toute refonte visuelle exige l'accord explicite de Vial, ainsi que des captures avant et après.

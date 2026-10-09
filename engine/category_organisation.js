@@ -51,7 +51,7 @@
   return '<section class="mcg-block" data-mcg-block="' + h(block.code) + '"><header class="mcg-block-heading"><div><span class="mcg-eyebrow">Catégorie ' + pad(block.order) + ' · ' + h(block.code) + '</span><h2>' + h(block.title) + '</h2></div><span class="mcg-section-count">' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + '</span></header><div class="mcg-lessons">' + block.lessons.map(lesson => lessonCard(block, lesson)).join('') + '</div></section>';
  }
  function cover(compact = false) {
-  return '<header class="mcg-cover' + (compact ? ' is-compact' : '') + '"><div class="mcg-cover-copy"><span class="mcg-eyebrow">MEDINA · Votre bibliothèque médicale</span><h1>' + h(title) + '</h1><p>' + h(F.description || 'Retrouvez les cours de votre spécialité, organisés par catégories.') + '</p><div class="mcg-cover-actions">' + (available.length ? '<a class="mcg-primary-action" href="#/search?available=1">Lire les cours <span aria-hidden="true">→</span></a>' : '') + '<button class="mcg-explore-action" type="button" data-mcg-explore>Les catégories <span aria-hidden="true">↓</span></button></div></div><div class="mcg-counts" aria-label="Contenu de la bibliothèque"><span><b>' + available.length + '</b> cours disponible' + (available.length > 1 ? 's' : '') + '</span><span><b>' + O.blocks.length + '</b> catégorie' + (O.blocks.length > 1 ? 's' : '') + '</span></div></header>';
+  return '<header class="mcg-cover' + (compact ? ' is-compact' : '') + '"><div class="mcg-cover-copy"><span class="mcg-eyebrow"><span class="mcg-available-dot"></span>Votre espace d’étude</span><h1>' + h(title) + '<span class="mcg-title-dot">.</span></h1><p>' + h(F.description || 'Un espace pour apprendre, comprendre et approfondir. Retrouvez les cours de votre spécialité, organisés par catégories.') + '</p><div class="mcg-counts"><span><b>' + O.blocks.length + '</b> catégorie' + (O.blocks.length > 1 ? 's' : '') + '</span><span><b>' + available.length + '</b> cours disponible' + (available.length > 1 ? 's' : '') + '</span></div></div><div class="mcg-cover-art" aria-hidden="true"><div class="mcg-orbit mcg-orbit-one"></div><div class="mcg-orbit mcg-orbit-two"></div><div class="mcg-orbit mcg-orbit-three"></div><div class="mcg-orbit-core">' + book + '</div><span class="mcg-orbit-dot"></span><span class="mcg-orbit-label">Comprendre<br>en profondeur.</span></div></header>';
  }
  function trail(block, lesson) {
   return '<nav class="mcg-breadcrumbs" aria-label="Fil d’Ariane"><a href="#/home">' + h(title) + '</a>' + (block ? '<span aria-hidden="true">/</span><a href="' + h(categoryUrl(block)) + '">' + h(block.title) + '</a>' : '') + (lesson ? '<span aria-hidden="true">/</span><span>' + h(name(lesson)) + '</span>' : '') + '</nav>';
@@ -121,11 +121,8 @@
   pageTitle(block ? block.title + ' · ' + title : title);
   if (block) return '<div class="mcg-home">' + trail(block, selected) + '<a class="mcg-back" href="#/home">← Toutes les catégories</a>' + (selected ? planned(block, selected) : '') + blockSection(block) + rule() + '</div>';
   const filtered = route.q.get('available') === '1', shown = filtered ? O.blocks.filter(b => b.lessons.some(own)) : O.blocks;
-  const last = available.find(item => item.lesson.code === (typeof state !== 'undefined' ? state.last : null));
-  const resume = last ? '<a class="mcg-resume" href="' + h(last.lesson.url) + '"><span><small>Votre dernière lecture</small><strong>' + h(name(last.lesson)) + '</strong></span><span>Reprendre <span aria-hidden="true">→</span></span></a>' : '';
-  const courses = available.length ? '<section class="mcg-start" aria-labelledby="mcg-start-title"><div class="mcg-page-actions"><div><span class="mcg-eyebrow">Pour commencer</span><h2 id="mcg-start-title">Les cours à explorer</h2></div><a class="mcg-text-link" href="#/search?available=1">Voir les ' + available.length + ' cours <span aria-hidden="true">→</span></a></div><div class="mcg-featured-grid">' + available.slice(0,3).map(item => lessonCard(item.block, item.lesson, true)).join('') + '</div></section>' : '<section class="mcg-empty"><h2>Les cours se préparent.</h2><p>Explorez les catégories de cette spécialité pour retrouver les chapitres prévus.</p></section>';
-  const searchForm = '<form class="mcg-home-search" role="search" aria-label="Recherche dans cette spécialité"><label for="mcg-home-query">Trouver un chapitre</label><div><input id="mcg-home-query" name="q" type="search" placeholder="Un intitulé, une maladie ou un code CIM…" autocomplete="off"><button type="submit">Rechercher <span aria-hidden="true">→</span></button></div></form>';
-  return '<div class="mcg-home">' + cover() + fragmentGauges() + resume + searchForm + courses + (F.id === 'T1' ? '<a class="mcg-draft-access" href="../apercus/infectiologie.html#/entry/A41"><span><span class="mcg-eyebrow">Version de travail</span><strong>A41 — Sepsis et choc septique de l’adulte</strong></span><span class="mcg-text-link">Consulter l’aperçu ↗</span></a>' : '') + (F.id === 'S01' ? '<a class="s01-cs-gateway" href="#/clinical-skills"><span><span class="mcg-eyebrow">Pratique clinique</span><strong>Sémiologie · Examen cardiovasculaire</strong></span><span class="mcg-text-link">Explorer le parcours →</span></a>' : '') + '<section aria-labelledby="mcg-categories-title"><div class="mcg-page-actions mcg-categories-heading"><div><span class="mcg-eyebrow">Toute la spécialité</span><h2 id="mcg-categories-title" tabindex="-1">Les catégories</h2></div>' + (O.blocks.length ? '<div class="mcg-filters" aria-label="Filtrer les catégories"><a href="#/home"' + (!filtered ? ' aria-current="true"' : '') + '>Toutes <span>' + O.blocks.length + '</span></a><a href="#/home?available=1"' + (filtered ? ' aria-current="true"' : '') + '>Avec un cours</a></div>' : '') + '</div><div class="mcg-category-grid">' + (shown.map(categoryCard).join('') || '<p class="mcg-empty">Les catégories de cette spécialité seront ajoutées au fil de la rédaction.</p>') + '</div></section>' + rule() + '</div>';
+  const courses = available.length ? '<section class="mcg-start" aria-labelledby="mcg-start-title"><div class="mcg-page-actions"><div><span class="mcg-eyebrow">Ouvrez un cours</span><h2 id="mcg-start-title">À votre rythme.</h2></div><a class="mcg-text-link" href="#/search?available=1">Tous les cours <span aria-hidden="true">↗</span></a></div><div class="mcg-featured-grid">' + available.slice(0,3).map(item => lessonCard(item.block, item.lesson, true)).join('') + '</div></section>' : '<section class="mcg-empty"><h2>Votre espace prend forme.</h2><p>Les premiers cours de cette spécialité sont en préparation. Explorez dès maintenant leur organisation.</p></section>';
+  return '<div class="mcg-home">' + cover() + fragmentGauges() + courses + (F.id === 'T1' ? '<a class="mcg-draft-access" href="../apercus/infectiologie.html#/entry/A41"><span><span class="mcg-eyebrow">Dans l’atelier</span><strong>A41 — Sepsis et choc septique de l’adulte · version de travail</strong></span><span class="mcg-text-link">Voir le cours en rédaction ↗</span></a>' : '') + (F.id === 'S01' ? '<a class="s01-cs-gateway" href="#/clinical-skills"><span><span class="mcg-eyebrow">Pratique clinique</span><strong>Sémiologie · Examen cardiovasculaire</strong></span><span class="mcg-text-link">Explorer le parcours ↗</span></a>' : '') + '<section aria-labelledby="mcg-categories-title"><div class="mcg-page-actions mcg-categories-heading"><div><span class="mcg-eyebrow">La bibliothèque</span><h2 id="mcg-categories-title">Explorez les catégories.</h2></div>' + (O.blocks.length ? '<div class="mcg-filters" aria-label="Filtrer les catégories"><a href="#/home"' + (!filtered ? ' aria-current="true"' : '') + '>Toutes <span>' + O.blocks.length + '</span></a><a href="#/home?available=1"' + (filtered ? ' aria-current="true"' : '') + '>Avec un cours</a></div>' : '') + '</div><div class="mcg-category-grid">' + (shown.map(categoryCard).join('') || '<p class="mcg-empty">Les catégories de cette spécialité seront ajoutées au fil de la rédaction.</p>') + '</div></section>' + rule() + '</div>';
  };
  specialtyPage = homePage;
  searchPageView = function() {
@@ -180,19 +177,7 @@
  showCommandPalette = function() {openModal(title, '<div class="command-links"><a data-close-modal class="command-link" href="#/home">L’accueil et les catégories</a><a data-close-modal class="command-link" href="#/search?available=1">Les cours disponibles</a><a data-close-modal class="command-link" href="#/search">Rechercher un chapitre</a></div><div class="mcg-category-grid">' + O.blocks.map(block => categoryCard(block).replace('<a ', '<a data-close-modal ')).join('') + '</div>');};
  document.getElementById('command-btn').onclick = showCommandPalette;
  const previousBind = bindPage;
- bindPage = function() {
-  previousBind(); document.getElementById('mcg-planned-title')?.focus({preventScroll:true});
-  document.querySelectorAll('.mc .mc-toc:not(details)').forEach(toc=>{
-   const details=document.createElement('details'),summary=document.createElement('summary');
-   details.className=toc.className;summary.textContent='Sommaire de cet onglet';
-   const list=toc.querySelector('ol');if(!list)return;
-   details.open=matchMedia('(min-width:1100px)').matches;
-   details.append(summary,list);toc.replaceWith(details);
-  });
-  const form=document.querySelector('.mcg-home-search');
-  if(form)form.onsubmit=event=>{event.preventDefault();const query=form.elements.q.value.trim();location.hash='#/search?q='+encodeURIComponent(query);};
-  document.querySelector('[data-mcg-explore]')?.addEventListener('click',()=>{const heading=document.getElementById('mcg-categories-title');heading?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});heading?.focus({preventScroll:true});});
- };
+ bindPage = function() {previousBind(); document.getElementById('mcg-planned-title')?.focus({preventScroll:true});};
  document.getElementById('medora-intelligence-link')?.remove();
  document.getElementById('medina-fragment-empty')?.remove();
  const brand = document.querySelector('.brand');
@@ -207,43 +192,6 @@
  const topbar = document.querySelector('.topbar');
  topbar.insertAdjacentHTML('afterbegin', '<a class="mcg-top-title" href="#/home">' + h(title) + '</a>');
  document.getElementById('command-btn').setAttribute('aria-label', 'Ouvrir les catégories de ' + title);
- // One responsive course plan for every specialty. Leave room for reading on laptops.
- MC_navigoMount = function(m) {
-  const host=document.createElement('div');host.className='mc-navigo';
-  host.innerHTML='<button type="button" class="mc-navigo-trigger" aria-controls="mc-navigo-panel" aria-expanded="false"><span aria-hidden="true">▤</span> Plan du cours</button><aside id="mc-navigo-panel" class="mc-navigo-panel" aria-label="Navigo : plan du cours" hidden><div class="mc-navigo-head"><div><small>Plan du cours</small><strong class="mc-navigo-title"></strong></div><button type="button" class="mc-navigo-close" aria-label="Fermer le plan du cours">×</button></div><div class="mc-navigo-tabs" role="group" aria-label="Onglets du cours"></div><label class="mc-navigo-search-label">Rechercher une partie<input class="mc-navigo-search" type="search" placeholder="Titre ou numéro…"></label><nav class="mc-navigo-list" aria-label="Parties et sous-parties"></nav><div class="mc-navigo-foot"></div></aside>';
-  document.body.append(host);
-  const desktop=matchMedia('(min-width:1480px)'),trigger=host.querySelector('.mc-navigo-trigger'),drawer=host.querySelector('.mc-navigo-panel'),list=host.querySelector('.mc-navigo-list'),search=host.querySelector('.mc-navigo-search');
-  let buttons=[],headings=[];
-  function open(on,focus=true){drawer.hidden=desktop.matches?false:!on;trigger.setAttribute('aria-expanded',String(!drawer.hidden));if(focus&&!desktop.matches)(on?search:trigger).focus({preventScroll:true});}
-  function move(heading){
-   const body=heading.closest('.mc-body');
-   if(m.classList.contains('book')&&body){
-    const page=Array.from(body.children).find(child=>child.contains(heading));
-    if(page){body.scrollTo({left:body.scrollLeft+page.getBoundingClientRect().left-body.getBoundingClientRect().left,behavior:'instant'});page.scrollTo({top:page.scrollTop+heading.getBoundingClientRect().top-page.getBoundingClientRect().top-16,behavior:'instant'});heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});return;}
-   }
-   heading.scrollIntoView({block:'start',behavior:'instant'});heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});
-  }
-  function filter(){const query=norm(search.value);let count=0;buttons.forEach(button=>{button.hidden=!norm(button.textContent).includes(query);if(!button.hidden)count++;});host.querySelector('.mc-navigo-foot').textContent=count+' partie'+(count>1?'s':'')+' affichée'+(count>1?'s':'');}
-  function refresh(){
-   if(!m.isConnected)return;
-   const panel=m.querySelector('.mc-panel:not([hidden])');if(!panel)return;
-   host.style.setProperty('--mc-font',m.style.getPropertyValue('--mc-font'));host.style.setProperty('--mc-scale',m.style.getPropertyValue('--mc-scale'));
-   host.querySelector('.mc-navigo-title').textContent=m.querySelector('h1')?.textContent.trim()||'Cours';
-   const tabs=host.querySelector('.mc-navigo-tabs');tabs.replaceChildren();
-   m.querySelectorAll('.mc-tabs [data-p]').forEach(tab=>{const button=document.createElement('button');button.type='button';button.textContent=tab.textContent;button.className=tab.getAttribute('aria-selected')==='true'?'is-active':'';button.setAttribute('aria-pressed',String(tab.getAttribute('aria-selected')==='true'));button.onclick=()=>tab.click();tabs.append(button);});
-   list.replaceChildren();buttons=[];
-   headings=Array.from(panel.querySelectorAll('.mc-ilot h2,.mc-ilot h3,.mc-ilot h4,.mc-sci:not([hidden])>h2')).filter(heading=>!heading.closest('.mc-sci[hidden]'));
-   headings.forEach(heading=>{const button=document.createElement('button');button.type='button';button.className='mc-navigo-item mc-navigo-'+heading.tagName.toLowerCase();button.textContent=MC_navLabel(heading);button.onclick=()=>{buttons.forEach(item=>item.removeAttribute('aria-current'));button.setAttribute('aria-current','location');open(false,false);move(heading);};list.append(button);buttons.push(button);});filter();
-  }
-  trigger.onclick=()=>{refresh();open(drawer.hidden);};host.querySelector('.mc-navigo-close').onclick=()=>open(false);search.oninput=filter;
-  const onKey=event=>{if(event.key==='Escape'&&!desktop.matches&&!drawer.hidden){event.preventDefault();open(false);}};
-  const outside=event=>{if(!desktop.matches&&!drawer.hidden&&!host.contains(event.target))open(false,false);};
-  const resize=()=>open(false,false);
-  document.addEventListener('keydown',onKey);document.addEventListener('pointerdown',outside);desktop.addEventListener('change',resize);
-  const observer=new MutationObserver(()=>{if(!m.isConnected)MC_navigoDestroy();});observer.observe(document.getElementById('content'),{childList:true});
-  MC_NAV_CLEANUP=()=>{observer.disconnect();desktop.removeEventListener('change',resize);document.removeEventListener('keydown',onKey);document.removeEventListener('pointerdown',outside);host.remove();};
-  open(desktop.matches,false);return refresh;
- };
  window.MEDINA_CATEGORY_ORGANISATION = O;
  render();
 })();
