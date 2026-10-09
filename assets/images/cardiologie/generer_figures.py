@@ -137,8 +137,63 @@ def lymph_balance():
     d.text((30, 334), 'puis fibrose et dépôt adipeux (stades II–III). Schéma pédagogique MEDINA.', font=font(11), fill=INK)
     im.quantize(colors=32).save(OUT / 'i89_charge_transport.gif', optimize=True)
 
+def lymph_histo():
+    """Coupe cutanée schématique : peau normale et lymphoedème avancé (stades II-III), d'après la S2k 2017."""
+    import random
+    random.seed(7)
+    W, H = 900, 450
+    im = Image.new('RGB', (W, H), BG); d = ImageDraw.Draw(im)
+    d.text((20, 12), 'Peau : normale et lymphoedème avancé (stades II–III)', font=font(17, True), fill=(30, 30, 30))
+    def panel(x0, w, thick, title):
+        d.text((x0, 44), title, font=font(14, True), fill=(30, 30, 30))
+        y = 72; marks = {}
+        ker = 14 if thick else 5
+        d.rectangle([x0, y, x0 + w, y + ker], fill=(214, 190, 150)); marks['ker'] = y + ker // 2
+        y += ker
+        epi = 22 if thick else 16
+        d.rectangle([x0, y, x0 + w, y + epi], fill=(226, 170, 160))
+        if thick:
+            for i in range(x0, x0 + w - 21, 22):
+                d.polygon([(i, y + epi), (i + 22, y + epi), (i + 11, y + epi + 12)], fill=(226, 170, 160))
+        marks['epi'] = y + epi // 2
+        y += epi
+        cor = 130 if thick else 70
+        d.rectangle([x0, y, x0 + w, y + cor], fill=(244, 214, 214))
+        if thick:
+            for i in range(x0, x0 + w - 21, 22):
+                d.polygon([(i, y), (i + 22, y), (i + 11, y + 12)], fill=(226, 170, 160))
+        n = 80 if thick else 22
+        for _ in range(n):
+            a_ = random.randint(x0 + 4, x0 + w - 40); b_ = random.randint(y + 16, y + cor - 6)
+            d.line([(a_, b_), (a_ + random.randint(18, 34), b_ + random.randint(-4, 4))], fill=(150, 90, 120), width=2 if thick else 1)
+        cx, cy = x0 + w - 70, y + cor // 2
+        r = 20 if thick else 7
+        d.ellipse([cx - r, cy - int(r * 0.7), cx + r, cy + int(r * 0.7)], outline=(40, 90, 170), width=2, fill=(220, 235, 250))
+        marks['cor'] = y + 22; marks['lym'] = cy + 6
+        y += cor
+        sub = 130 if thick else 90
+        d.rectangle([x0, y, x0 + w, y + sub], fill=(250, 238, 200))
+        cell = 16 if thick else 22
+        for i in range(x0 + 4, x0 + w - cell - 2, cell + 4):
+            for j in range(y + 4, y + sub - cell - 2, cell + 4):
+                d.ellipse([i, j, i + cell, j + cell], outline=(210, 180, 110))
+        marks['sub'] = y + sub // 2
+        return marks
+    panel(20, 250, False, 'Normale')
+    m = panel(310, 300, True, 'Lymphoedème avancé')
+    f = font(12)
+    labels = [('ker', 'hyperkératose'), ('epi', 'épiderme hyperplasique, papillomatose'), ('cor', 'derme épaissi, fibrose :'), ('lym', 'vaisseau lymphatique ectasique'), ('sub', 'tissu adipeux sous-cutané accru')]
+    for k, t in labels:
+        yy = m[k]
+        d.line([(612, yy), (628, yy)], fill=(60, 60, 60), width=1)
+        d.text((632, yy - 7), t, font=f, fill=(40, 40, 40))
+    d.text((632, m['cor'] + 8), 'collagène de types I et III', font=f, fill=(40, 40, 40))
+    d.text((20, 412), 'Schéma pédagogique original MEDINA d’après la ligne directrice S2k 2017 (modifications cutanées des stades II et III) ;', font=font(11), fill=GREY)
+    d.text((20, 428), 'épaisseurs non à l’échelle.', font=font(11), fill=GREY)
+    im.quantize(colors=48).save(OUT / 'i89_histologie_peau.gif', optimize=True)
+
 if __name__ == '__main__':
-    raynaud_phases(); orthostatic(); lymph_balance()
+    raynaud_phases(); orthostatic(); lymph_balance(); lymph_histo()
     if len(sys.argv) > 2:
         photo(sys.argv[1], 'i73_raynaud_photo.gif', 420, 'Wikimedia Commons, knotimpressed, CC0')
         photo(sys.argv[2], 'i89_lymphoedeme_photo.gif', 360, 'Wikimedia Commons, Wesalius, CC BY-SA 4.0')

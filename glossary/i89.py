@@ -1,0 +1,5 @@
+from cardio_1 import a, G
+# Abréviations nouvelles du cours I89 (lymphoedème) ; les clés existantes (FOXC2, S2k, AWMF, CIM-10-GM) sont réutilisées.
+a('ISL',[('I','International'),('S','Society of'),('L','Lymphology')],'Société internationale de lymphologie','<p>Société savante internationale de lymphologie ; publie et révise régulièrement le document de consensus sur le diagnostic et le traitement du lymphoedème périphérique (version 2023, revue Lymphology).</p>')
+a('FLT4',[('FLT','Fms-Like Tyrosine kinase'),('4','4')],'Gène FLT4, codant le récepteur VEGFR-3','<p>Gène du récepteur 3 du facteur de croissance de l’endothélium vasculaire, indispensable au développement des vaisseaux lymphatiques. Ses mutations causent certaines formes de lymphoedème congénital primaire (maladie de Nonne et Milroy).</p>')
+a('SOX18',[('SOX','SRY-related HMG-bOX (boîte HMG apparentée à SRY)'),('18','membre 18')],'Gène du facteur de transcription SOX18','<p>Facteur de transcription du développement lymphatique ; ses mutations causent le syndrome hypotrichose-lymphoedème-télangiectasies.</p>')
