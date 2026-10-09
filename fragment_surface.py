@@ -54,6 +54,8 @@ def frontend_catalog(root):
     root = Path(root)
     source = (root / 'shell/medina_front.html').read_text(encoding='utf-8')
     full = json.loads(re.search(DATA_PATTERN, source, re.S).group(2))
+    from nosologyEngine import augment_catalog
+    full, nosology_owners = augment_catalog(full, root)
     fragments = json.loads((root / 'fragments.json').read_text(encoding='utf-8'))
     ids = {fragment['id'] for fragment in fragments}
     explicit, systems = {}, {}
@@ -68,6 +70,7 @@ def frontend_catalog(root):
         owner = explicit.get(entry['code']) or PRIMARY_FRAGMENT.get(entry.get('primary')) or systems.get(entry.get('system'))
         if owner in ids:
             owners[entry['code']] = owner
+    owners.update(nosology_owners)
     courses = {item['code']: dict(item) for item in json.loads((root / 'chapters.json').read_text(encoding='utf-8')) if item.get('integrated')}
     groups_path = root / 'organisation/course_groups.json'
     if groups_path.exists():
@@ -234,13 +237,15 @@ def category_organisation_data(source, fragment, root):
     represented = [variant['code'] for block in result for lesson in block['lessons'] for variant in lesson['variants']]
     if sorted(represented) != sorted(entry['code'] for entry in entries):
         raise ValueError('La navigation doit conserver toutes les catégories du fragment.')
-    return {'fragment': presentation(fragment, root), 'version': 'CIM-10-GM 2024',
+    result_data = {'fragment': presentation(fragment, root), 'version': 'CIM-10-GM 2024',
             'blocks': result, 'category_count': len(entries), 'integrated_count': len({lesson['code'] for block in result for lesson in block['lessons'] if lesson['integrated'] and lesson['source_fragment_id'] == fragment['id']}),
             'courses': [{'code': course['code'], 'title': course['title'],
                          'covers': [code for code in course['covers'] if owners.get(code) == fragment['id']],
                          'source_fragment_id': fragment['id'], 'url': '#/entry/' + course['code']}
                         for course in courses.values()],
             'organisation_url': '../organisation.html'}
+    from nosologyEngine import attach_surface
+    return attach_surface(result_data, root)
 
 
 def isolated_glossary(source, glossary):
