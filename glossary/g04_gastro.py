@@ -191,3 +191,7 @@ a('DGAV', [('D', 'Deutsche'), ('G', 'Gesellschaft für'), ('A', 'Allgemein- und'
 a('LIFT', [('L', 'Ligation of the'), ('I', 'Intersphincteric'), ('F', 'Fistula'), ('T', 'Tract')], 'Ligature du trajet fistuleux intersphinctérien', '<p>Technique qui lie et sectionne le trajet d’une fistule anale entre les deux sphincters, sans couper le muscle.</p>')
 a('BOTOX', [('BOTOX', 'nom commercial de la toxine onabotulinique A, non une abréviation')], 'BOTOX® (toxine onabotulinique A)', '<p>Spécialité de toxine botulique de type A ; les doses de toxine en proctologie sont exprimées en unités équivalentes Botox®.</p>')
 a('PDE5', [('PDE', 'PhosphoDiEstérase'), ('5', 'de type 5')], 'Phosphodiestérase de type 5', '<p>Enzyme qui dégrade le GMP cyclique ; ses inhibiteurs (sildénafil, tadalafil, vardénafil) potentialisent les dérivés nitrés et peuvent provoquer une hypotension sévère.</p>')
+# K61 — Abcès des régions anale et rectale
+for k, t2 in (('K61.0', 'Abcès anal'), ('K61.1', 'Abcès rectal'), ('K61.2', 'Abcès ano-rectal'), ('K61.3', 'Abcès ischio-rectal'), ('K61.4', 'Abcès intrasphinctérien')):
+    code(k, t2, 'K61 — Abcès des régions anale et rectale')
+nom('K.-H', 'initiales du prénom de l’auteur, telles que publiées sur Wikimedia Commons', 'Initiales du prénom de l’auteur K.-H. Günther', '<p>Auteur (Klinikum Main Spessart, Lohr am Main) de la photographie d’abcès de la marge anale publiée sous licence libre sur Wikimedia Commons.</p>')
