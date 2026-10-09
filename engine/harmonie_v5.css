@@ -12,3 +12,12 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medi
 .medina-home:hover{filter:brightness(1.05)}
 .medina-home:focus-visible{outline:3px solid #1e88e5;outline-offset:2px}
 @media (max-width:640px){.medina-home span{display:none}.medina-home{padding:9px 11px}}
+/* Leçon en préparation : police du lecteur (Atkinson par défaut), comme un cours rédigé. */
+html[data-medina-fragment] body .mc.mc-planned,html[data-medina-fragment] body .mc.mc-planned *{font-family:var(--mc-font,'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif)!important}
+/* Intensité des couleurs modérément augmentée (09.10.2026, demande de Vial). */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body{background-image:linear-gradient(180deg,#d9f1ff 0,#e6f6ff 380px,#e3f7d9 100%)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card{background-image:linear-gradient(160deg,#ffffff 50%,color-mix(in srgb,var(--cat) 16%,#ffffff))!important;border-left-width:8px!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar .mcg-sidebar-block>a:not(.active){background:color-mix(in srgb,var(--cat,#1e88e5) 9%,#ffffff)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover{background:linear-gradient(125deg,#1976d2 0,#0b9fd8 35%,#13b884 70%,#ffc22e 100%)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mcg-lesson,.mcg-featured-lesson){background-image:linear-gradient(160deg,#ffffff 55%,#dff3ff)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-tabs button:not(.is-active):not([aria-selected="true"]){background:#f0f9ff!important}

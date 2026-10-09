@@ -49,7 +49,14 @@ function MC_navigoMount(m){
  return refresh;
 }
 function MEDINA_mount(){MC_badges();MC_navigoDestroy();if(MC_SIZE_CLEANUP){MC_SIZE_CLEANUP();MC_SIZE_CLEANUP=null}
- const m=document.querySelector('.mc');if(!m)return;const code=m.dataset.code;
+ const planned=document.querySelector('.mc.mc-planned');
+ if(planned&&!document.querySelector('.mc:not(.mc-planned)')){
+  // Leçon en préparation : pas de barre d'outils, mais mêmes préférences de lecture (police Atkinson par défaut).
+  const f=MC.store.get('font.default',"'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif");
+  const s=Math.min(24,Math.max(14,Number(MC.store.get('fs.default',17))||17));
+  [planned,document.documentElement].forEach(el=>{el.style.setProperty('--mc-font',f);el.style.setProperty('--mc-scale',(s/17).toFixed(3))});
+  planned.style.setProperty('--mc-fs',s+'px');return}
+ const m=document.querySelector('.mc:not(.mc-planned)');if(!m)return;const code=m.dataset.code;
  let navRefresh=()=>{};
  const applyFont=()=>{const f=MC.store.get('font.'+code,MC.store.get('font.default',"'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif"));const s=Math.min(24,Math.max(14,Number(MC.store.get('fs.'+code,17))||17));m.style.setProperty('--mc-font',f);m.style.setProperty('--mc-fs',s+'px');m.style.setProperty('--mc-scale',(s/17).toFixed(3));m.querySelector('.mc-font').value=f;m.querySelector('.mc-size-range').value=s;m.querySelector('.mc-size-value').textContent=s+' px';document.documentElement.style.setProperty('--mc-font',f);document.documentElement.style.setProperty('--mc-scale',(s/17).toFixed(3));navRefresh()};
  m.querySelector('.mc-font').onchange=ev=>{MC.store.set('font.'+code,ev.target.value);MC.store.set('font.default',ev.target.value);applyFont()};
