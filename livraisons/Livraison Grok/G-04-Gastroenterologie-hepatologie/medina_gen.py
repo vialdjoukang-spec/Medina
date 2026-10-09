@@ -18,6 +18,8 @@ class Chapter:
         self.title, self.codeline, self.status, self.pharma_tab = title, codeline, status, pharma_tab
         self.A, self.E, self.S, self.P, self.pops, self.imgs = [], [], [], [], {}, []
         self.toc_e, self.toc_p = toc_e, toc_p
+        self.liaisons = {}
+        self.termes = []
     # --- mots verts, fenêtres, Pareto
     def w(self, key, label):
         return f'<button class="w" data-k="{key}">{label}</button>'
@@ -54,7 +56,22 @@ class Chapter:
     def _toc(self, label, items):
         return '<nav class="toc ui"><b>' + label + '</b><ol>' + ''.join(f'<li><a href="#{i}">{t}</a></li>' for i, n, t, b in items) + '</ol></nav>'
     PAGER = '<div class="pager ui"><button class="prev">← Îlot précédent</button><span></span><button class="next">Îlot suivant →</button></div>'
+    def _lier(self):
+        import liaisons as LZ, os
+        if os.environ.get('MEDINA_DUMP'):
+            for lst in (self.A, self.E, self.P):
+                for i, n, t, b in lst: print(i, t); print(LZ.dump(b))
+            for i, tab, t, b in self.S: print(i, t); print(LZ.dump(b))
+            raise SystemExit
+        for lst in (self.A, self.E, self.P):
+            for k, (i, n, t, b) in enumerate(lst):
+                if i in self.liaisons: b = LZ.apply(b, self.liaisons[i])
+                lst[k] = (i, n, t, LZ.termes(b, self.termes))
+        for k, (i, tab, t, b) in enumerate(self.S):
+            if i in self.liaisons: b = LZ.apply(b, self.liaisons[i])
+            self.S[k] = (i, tab, t, LZ.termes(b, self.termes))
     def render(self):
+        self._lier()
         c, C = self.c, self.code
         head = (f'<template id="ch-{C}"><div class="chap">\n<div class="chap-head"><div class="code">{self.codeline}</div>\n'
                 f'<h1>{self.title}</h1><span class="status">{self.status}</span></div>\n'

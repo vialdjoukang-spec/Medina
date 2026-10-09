@@ -1,4 +1,4 @@
-import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from medina_gen import *
 from images import credit
 
@@ -101,7 +101,7 @@ C.a(8, 'Stratifier le risque', P(
 C.a(9, 'Hémorragie haute non variqueuse : endoscopie et traitement', P(
  'Après réanimation, l’ESGE recommande une endoscopie <b>précoce, dans les 24 heures</b>. Une endoscopie <b>urgente (≤ 12 heures)</b> n’améliore pas le pronostic par rapport à l’endoscopie précoce et n’est pas recommandée de principe. Une ' + w('k92-erythromycine', 'perfusion d’érythromycine (vider l’estomac avant l’endoscopie)') + ' est recommandée avant l’endoscopie chez les patients sélectionnés avec un saignement grave ou actif. Un ' + w('k92-ipp-caillot', 'IPP intraveineux à forte dose') + ' peut être envisagé avant l’endoscopie, sans jamais la retarder.',
  'L’endoscopiste décrit l’ulcère selon la ' + w('k92-forrest', 'classification de Forrest (risque de récidive)') + '. Les ulcères Ia (jet), Ib (suintement) et IIa (vaisseau visible) reçoivent une hémostase endoscopique. Pour un saignement actif, l’ESGE recommande l’injection d’adrénaline <b>associée</b> à une seconde méthode, thermique de contact ou mécanique ; l’adrénaline seule est insuffisante. Le caillot adhérent (IIb) peut être retiré pour traiter la lésion sous-jacente. La tache pigmentée (IIc) et le fond propre (III) ne sont pas traités.')
- + C.img('k92_forrest_schema.gif', 'Six coupes schématiques d’ulcère : jet artériel, suintement, vaisseau visible, caillot adhérent, tache pigmentée, fond propre.', 'Stigmates de Forrest. Les trois premiers imposent une hémostase endoscopique ; les deux derniers ne la justifient pas.', 'Schéma original MEDINA d’après les définitions de l’ESGE 2021.')
+ + C.img('k92_ulcere_gastrique_jet.gif', 'Vue endoscopique d’un ulcère gastrique recouvert de sang, d’où part un jet artériel pulsatile signalé par une flèche ; un cathéter d’injection est visible à gauche.', 'Ulcère gastrique avec saignement en jet, stade Forrest Ia : stigmate à très haut risque, qui impose une hémostase endoscopique immédiate (ESGE 2021).', credit({'auteur': 'Jeremias', 'licence': 'CC BY-SA 3.0', 'url': 'https://commons.wikimedia.org/wiki/File:Bleeding_gastric_ulcer.png'}))
  + P('Après hémostase, ou devant un caillot adhérent non traité, l’IPP est donné à forte dose pendant 72 heures : bolus puis perfusion continue, par exemple 80 mg puis 8 mg/heure, ou bolus intraveineux deux fois par jour, ou forme orale deux fois par jour (ESGE 2021). Une seconde endoscopie systématique n’est pas recommandée. En cas de ' + w('k92-recidive', 'récidive (nouvelle endoscopie, embolisation, chirurgie)') + ', l’endoscopie est répétée ; en cas d’échec, l’embolisation artérielle est envisagée avant la chirurgie.')
  + key('Endoscopie dans les 24 heures ; Forrest Ia, Ib, IIa traités par deux méthodes ; IPP à forte dose 72 heures ; récidive : endoscopie puis embolisation.')
  + src(ESGE21))
@@ -295,4 +295,8 @@ C.pop('k92-d-ipp', 'Pantoprazole intraveineux', L(('Mécanisme', 'Inhibition irr
 C.pop('k92-d-terli', 'Terlipressine (Glypressine®)', L(('Mécanisme', 'Précurseur de la lysine-vasopressine ; vasoconstriction splanchnique par les récepteurs V1.'), ('Indication suisse', 'Traitement aigu des varices œsophagiennes hémorragiques.'), ('Posologie', 'Plus de 50 kg : 1 à 2 mg toutes les 4 à 6 heures ; maximum 12 mg/jour pendant 36 heures puis 6 mg/jour ; au plus 5 jours.'), ('Contre-indications et surveillance', 'Insuffisance coronaire, ischémie dans les 3 derniers mois, grossesse. Surveillance de la pression, de l’ECG, de la saturation, de la natrémie et de la kaliémie ; risque de QT long et de nécrose cutanée.')) + src(FI('Glypressine®')))
 C.pop('k92-d-octreo', 'Octréotide (Sandostatine®)', L(('Mécanisme', 'Analogue de la somatostatine ; réduction du débit splanchnique, mécanisme exact non établi selon l’information professionnelle.'), ('Indication suisse', 'Traitement d’urgence des hémorragies de varices gastro-œsophagiennes du cirrhotique, en association à un traitement endoscopique.'), ('Posologie', '0,025 mg/heure en perfusion continue pendant au maximum 5 jours ; une perfusion de 0,050 mg/h pendant 5 jours a été bien tolérée.'), ('Surveillance', 'Glycémie : risque de diabète ou de modification des besoins en insuline après une hémorragie variqueuse.')) + src(FI('Sandostatine®')))
 
+from K92_liaisons import L as _LZ
+from K92_termes import ajouter as _termes
+_termes(C, ESGE21, ESGE22, BAV7, BSG19, EASL18, FI)
+C.liaisons = _LZ
 C.write()

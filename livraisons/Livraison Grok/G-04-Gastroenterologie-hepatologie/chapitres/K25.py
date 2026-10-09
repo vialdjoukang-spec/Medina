@@ -1,4 +1,4 @@
-import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from medina_gen import *
 from images import credit
 
@@ -21,7 +21,7 @@ C.a(0, 'Question clinique et objectifs', P(
 
 C.a(1, 'Définition et classification', P(
  'L’<b>ulcère gastroduodénal</b> est une perte de substance de la paroi de l’estomac ou du duodénum qui franchit la <b>musculaire muqueuse</b>. L’<b>érosion</b> reste limitée à la muqueuse ; elle cicatrise sans trace et saigne peu. La CIM-10-GM classe l’ulcère selon son siège (estomac K25, duodénum K26, siège non précisé K27), son caractère aigu ou chronique et la présence d’une hémorragie ou d’une perforation.')
- + C.img('k25_profondeur_schema.gif', 'Coupe de la paroi gastrique : érosion limitée à la muqueuse, ulcère atteignant la sous-muqueuse avec une artère érodée, ulcère perforé traversant toute la paroi.', 'Profondeur pariétale. L’érosion reste muqueuse ; l’ulcère atteint la sous-muqueuse et ses artères ; la perforation traverse la séreuse.', 'Schéma original MEDINA.')
+ + C.img('k25_pneumoperitoneum_rx.gif', 'À gauche, radiographie thoracique en décubitus montrant de l’air libre sous la coupole diaphragmatique gauche ; à droite, coupe tomodensitométrique abdominale montrant un pneumopéritoine étendu en avant du foie et de l’estomac.', 'Pneumopéritoine, signe d’une perforation digestive. La radiographie peut le montrer ; cependant, la tomodensitométrie est plus sensible et localise mieux la perforation (WSES 2020).', credit({'auteur': 'Cerevisae', 'licence': 'CC BY-SA 4.0', 'url': 'https://commons.wikimedia.org/wiki/File:Chest_X-ray_showing_presence_of_free_air_under_left_diaphragm.png'}))
  + table(['Classification', 'Catégories', 'Conséquence pratique'], [
    ['Siège', 'Gastrique (K25) ; duodénal (K26)', 'Ulcère gastrique : biopsies et contrôle endoscopique ; ulcère duodénal : contrôle endoscopique en règle non nécessaire'],
    ['Cause', 'Helicobacter pylori ; AINS ou aspirine ; causes rares ; idiopathique', 'Le traitement de la cause prévient la récidive'],
@@ -279,4 +279,8 @@ C.pop('k25-d-amox', 'Amoxicilline', L(('Place', 'Pilier de la trithérapie ; ré
 C.pop('k25-d-clari', 'Clarithromycine', L(('Place', 'Seulement si la souche est sensible : la résistance dépasse 15 %.'), ('Dose', '500 mg deux fois par jour pendant 14 jours.'), ('Interactions', 'Puissant inhibiteur du CYP3A4 ; allongement du QT.')) + src(SSI, FI('Nexium®')))
 C.pop('k25-d-levo', 'Lévofloxacine', L(('Place', 'Seulement si la souche est sensible : la résistance dépasse 15 %.'), ('Dose', '500 mg une fois par jour ou 250 mg deux fois par jour pendant 14 jours.'), ('Sécurité', 'Mises en garde de Swissmedic et de l’EMA sur les fluoroquinolones : tendinopathies, anévrisme aortique, neuropathie ; réserver aux indications justifiées.')) + src(SSI))
 
+from K25_liaisons import L as _LZ
+from K25_termes import ajouter as _termes
+_termes(C, SSI, S2K, ESGE21, WSES, FI)
+C.liaisons = _LZ
 C.write()
