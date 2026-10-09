@@ -39,6 +39,8 @@ def main():
             page.wait_for_selector('.mcg-home>.nosology-gauges')
             assert page.locator('.mcg-home>.nosology-gauges progress').count() == 3
             assert page.locator('.mcg-home>.nosology-gauges b').count() == 3
+            if page.locator('.mcg-home .nosology-gold').count():
+                assert page.locator('.mcg-home .nosology-gold').first.evaluate('(element) => getComputedStyle(element).color') == 'rgb(147, 108, 8)', 'Étoile masquée par le thème'
             shell = next((item for item in built['lessons'] if not item['existing_course']), None)
             if shell:
                 page.goto(url + '#/entry/' + shell['code'])
