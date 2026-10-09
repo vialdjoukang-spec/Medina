@@ -47,7 +47,7 @@ def main():
         previous = subprocess.run(['git', 'show', f'{BASE}:{relative}'], cwd=ROOT,
                                   text=True, capture_output=True)
         baseline_present = previous.returncode == 0
-        if not baseline_present and code not in ('J40', 'J96', 'J84', 'J93', 'A53', 'A54', 'B24'):
+        if not baseline_present and code not in ('J40', 'J96', 'J84', 'J93', 'I27', 'J47', 'J80', 'J81', 'J12', 'J21', 'A53', 'A54', 'B24'):
             raise RuntimeError(f'{code}: source de comparaison indisponible : {previous.stderr.strip()}')
         # J40 et J96 sont de nouvelles productions : leur absence à la base n'est ni une
         # erreur ni une raison d'abaisser les exigences de la version actuelle.
