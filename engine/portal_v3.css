@@ -49,3 +49,35 @@ html body .legend-note{margin:0 0 18px;color:var(--s-mute)!important;font-size:1
 html body .hero-meta span{background:#ffffff!important;border:2px solid #0f6e66!important}
 html body :is(.eyebrow,.section-kicker){color:#0f6e66!important}
 html body .hero h1 em{color:#0f6e66!important}
+/* Style « Atlas froid » (09.10.2026) : changement radical, aucun fond ivoire ou beige. */
+html body{background:#eef3fa!important;background-image:none!important}
+html body :is(.brand-symbol,.art-seal,.empty,.hero-art .reading-page){background:#ffffff!important;border-color:#d5deeb!important}
+html body .hero-art .art-lines i{background:#d5deeb!important}
+html body .hero-art .art-subjects span{background:#e6edf7!important;border-color:#d5deeb!important;color:#334155!important}
+html body .hero-art .art-halo{display:none!important}
+html body .hero h1 em,html body :is(.eyebrow,.section-kicker){color:#3949ab!important}
+html body .hero-meta span{border-color:#3949ab!important}
+html body .specialty-card{background:#ffffff!important;background-image:none!important;border:1px solid #d5deeb!important;border-left:7px solid var(--v)!important;border-top:1px solid #d5deeb!important;border-radius:18px!important;box-shadow:0 1px 2px #0b12200f,0 12px 22px -18px var(--v)!important}
+html body .specialty-card .card-symbol{background:var(--v)!important;border:0!important;color:#fff!important;border-radius:999px!important}
+html body .specialty-card .card-symbol *{color:#fff!important}
+html body .specialty-card h3{margin-top:12px!important}
+html body .overview{background:linear-gradient(120deg,#3949ab,#2f6fb0 48%,#00897b)!important;border:0!important;border-radius:22px!important}
+html body .overview::before{opacity:.0}
+html body .overview-item{background:#ffffffeb!important;border:0!important}
+html body .motifs li{background:#ffffff26!important;border:1px solid #ffffff8c!important;color:#fff!important}
+html body .motifs li svg{color:#fff!important}
+html body .gauge-fluid{background:linear-gradient(180deg,#5c6bc0 0,#3949ab 100%)!important}
+/* Illustration de l'accueil : composition abstraite (orbe, anneaux, satellites), sans papier ivoire. */
+html body .hero-art{position:relative;min-height:380px;display:block!important}
+html body .hero-art>*{display:none!important}
+html body .hero-art::before{content:"";position:absolute;inset:8% 10% 8% 14%;border-radius:50%;
+ background:radial-gradient(circle at 34% 30%,#ffffff 0 5%,#dfe4ff 11%,#7986cb 30%,#3949ab 52%,#1e5f8f 70%,#00897b 88%);
+ box-shadow:0 40px 70px -30px #1e2a6bcc,inset -18px -22px 40px #00000033,inset 14px 12px 30px #ffffff55}
+html body .hero-art::after{content:"";position:absolute;inset:-2% 0 -2% 4%;border-radius:50%;
+ border:1.5px solid #3949ab55;transform:rotate(-18deg) scaleY(.42);
+ box-shadow:0 0 0 22px #00897b0f,0 0 0 23.5px #00897b40,0 0 0 52px #b39ddb10,0 0 0 53.5px #9575cd40}
+html body .hero{position:relative}
+html body .hero::after{content:"";position:absolute;right:6%;top:12%;width:14px;height:14px;border-radius:50%;background:#00897b;
+ box-shadow:-210px 260px 0 -3px #7e57c2,-40px 300px 0 -4px #3949ab,-330px 40px 0 -5px #26a69a,-120px -10px 0 -6px #5c6bc0;pointer-events:none}
+html body .overview{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media (max-width:760px){html body .overview{grid-template-columns:1fr!important}html body .hero-art{min-height:240px}html body .hero::after{display:none}}
