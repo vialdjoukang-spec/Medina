@@ -19,7 +19,7 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 12. M-12-Médecine des âges de la vie (`T2`) — fait
 - [x] 13. I-13-Immunologie et allergologie (`S07`) — fait
 - [x] 14. R-14-Rhumatologie et orthopédie (`S10`) — fait
-- [ ] 15. U-15-Urologie et andrologie (`S15`) — restant
+- [x] 15. U-15-Urologie et andrologie (`S15`) — fait
 - [ ] 16. D-16-Dermatologie (`S11`) — restant
 - [ ] 17. O-17-Oto-rhino-laryngologie et médecine bucco-dentaire (`S12`) — restant
 - [ ] 18. O-18-Ophtalmologie (`S13`) — restant
