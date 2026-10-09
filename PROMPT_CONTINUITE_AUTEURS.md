@@ -30,3 +30,11 @@ OWNER RULES, DEPTH & IMAGES (confirmed: work so far meets the truth standard, co
 - Be as explanatory and detailed as possible; make explicit how this differs from a static, frozen textbook (dynamic links, windows, reasoning, clinical application).
 - Federal exam priority: aim for 100 % of the specialty's federal-exam pathologies (nosology gauge 'federal_exam'). When your fragment reaches 100 % federal_exam, stop and report 'FEDERAL_100' so the specialty audit can start.
 - Reaching 100 % federal_exam means the specialty is "partially done for now"; the rest will be revisited later. Federal-exam items always come first.
+- After each lesson delivered to main, run `python3 tools/refresh_gauges.py` and push the refreshed gauges with it (on conflict in nosology fragment files: take main's version and re-run the script). The federal_exam gauge (categories scale, as shown on the website) decides FEDERAL_100.
+
+OWNER RULES, JUSTIFICATION & STYLE:
+- Every dedicated term, every diagnostic choice and every therapeutic decision must be justified so the reader understands WHY: either directly in the text or in an interactive window opened by clicking the term.
+- Nominal sentences are forbidden: only complete sentences, direct style.
+- Be concise without omitting anything: concision means no padding, never less content. Nothing may be missing.
+
+OWNER ORDER, MANDATORY RETRO-SWEEP (in force now): before continuing new lessons, sweep ALL lessons of your specialty already on main, starting from the first one, and check each against EVERY rule in this brief (truth checkpoint, real images only incl. in windows, connectors written naturally, complete sentences only, interactive terms/windows, justification of every term/diagnostic choice/therapeutic decision, deep simple pathophysiology explanations under every element, exact verified doses and ICD-10-GM codes, nothing missing, no padding). Fix every gap, deliver each corrected lesson to main (refresh gauges), log the sweep status per lesson in your PROGRESS file. Then resume your new-lesson progression.
