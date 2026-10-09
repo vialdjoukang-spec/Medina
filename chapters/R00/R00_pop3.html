@@ -1,0 +1,125 @@
+
+<!-- ===== FENÊTRES R00 : démarche diagnostique, urgences, prise en charge ===== -->
+<template data-pop="r00-ecg-repos" data-title="ECG de repos chez un patient qui a des palpitations">
+<div class="lab">Objectif</div><p>Entre les accès, l’ECG ne montre pas l’arythmie ; il cherche le substrat qui la rend possible ou dangereuse.</p>
+<div class="lab">Ce qu’il faut chercher</div><p>Pré-excitation : PR inférieur à 120 ms et onde delta. QT long : QTc mesuré manuellement, au moins 480 ms sur des ECG répétés selon l’ESC 2022. Aspect de Brugada de type 1 : sus-décalage en dôme d’au moins 2 mm en V1–V2 suivi d’une onde T négative. Hypertrophie ventriculaire gauche, ondes Q de nécrose, onde epsilon ou ondes T négatives en V1–V3 évocatrices d’une cardiomyopathie arythmogène. Bloc auriculoventriculaire ou bloc de branche. Extrasystoles, dont la morphologie oriente vers leur origine.</p>
+<div class="lab">Conséquence</div><p>Un ECG anormal est un signe d’alarme : il justifie un avis cardiologique. Un ECG normal ne réduit pas la probabilité d’une réentrée intranodale, dont le substrat est invisible en rythme sinusal.</p>
+<div class="lab">Piège</div><p>Le calcul automatique du QT est peu fiable en présence d’une onde U, d’un bloc de branche ou d’une fréquence rapide. Le médecin mesure lui-même le QT dans la dérivation où il est le plus long.</p></template>
+
+<template data-pop="r00-alarme" data-title="Signes d’alarme des palpitations">
+<div class="lab">Liste</div><p>Syncope ou présyncope pendant les palpitations ; palpitations ou syncope à l’effort ; cardiopathie structurelle ou électrique connue ; ECG de repos anormal ; mort subite inexpliquée d’un apparenté jeune ; âge avancé et palpitations de type tachycardique selon l’EHRA 2011.</p>
+<div class="lab">Justification</div><p>Chacun de ces éléments augmente la probabilité d’une arythmie qui menace la vie : tachycardie ventriculaire sur cicatrice, canalopathie, pré-excitation. L’ESC 2018 sur la syncope classe aussi parmi les éléments de haut risque une syncope précédée de palpitations brutales, une syncope d’effort ou en décubitus, et un antécédent familial de mort subite.</p>
+<div class="lab">Éléments rassurants</div><p>L’EHRA 2011 note que des accès courts, de moins de 5 minutes, et un trouble panique connu peuvent aider à écarter une arythmie significative, avec des données limitées. Ils ne dispensent pas d’un enregistrement si les accès sont tachycardiques et brutaux.</p>
+<div class="lab">Conséquence pratique</div><p>Un signe d’alarme conduit à un avis cardiologique rapide et, chez le sportif, à l’arrêt de la compétition jusqu’au bilan.</p></template>
+
+<template data-pop="r00-monitoring" data-title="Enregistreurs ambulatoires : principes">
+<div class="lab">Holter</div><p>Enregistrement continu de 24 heures à 7 jours, à deux, trois ou douze dérivations. Il quantifie extrasystoles, pauses et fréquences ; le patient note ses symptômes dans un journal.</p>
+<div class="lab">Patch</div><p>Électrode adhésive à une dérivation, portée jusqu’à 14 jours selon les modèles. Elle est bien tolérée et allonge la période d’observation.</p>
+<div class="lab">Enregistreur d’événements</div><p>Le patient applique l’appareil ou le déclenche pendant l’accès. Il convient aux accès hebdomadaires à mensuels, assez longs pour permettre l’enregistrement, chez un patient capable de l’utiliser.</p>
+<div class="lab">Enregistreur à boucle externe</div><p>Porté en permanence, il garde en mémoire les dernières minutes : au déclenchement, il conserve le tracé qui précède. Il convient aux accès brefs ou accompagnés de malaise.</p>
+<div class="lab">Choix (EHRA 2011)</div><p>Accès quotidiens à hebdomadaires : Holter de 24 heures à 7 jours. Accès hebdomadaires à mensuels, assez longs, bien tolérés : enregistreur d’événements. Accès hebdomadaires à mensuels, brefs, avec retentissement : enregistreur à boucle externe. Accès mensuels à annuels avec retentissement, ou bilan externe négatif : moniteur implantable.</p>
+<div class="lab">Rendements rapportés</div><p>Holter dans les palpitations inexpliquées : environ 33 à 35 %. Enregistreurs d’événements et à boucle : 66 à 83 % chez des patients aux symptômes quotidiens ou hebdomadaires, avec un meilleur rapport coût-efficacité que le Holter.</p><figure><img src="images/cardiologie/r00_holter_patiente.gif" alt="Patiente portant un Holter" width="300" height="600" loading="lazy" decoding="async"><figcaption>Holter porté pendant la vie courante : il ne prouve quelque chose que si le symptôme survient pendant le port. trellamare, Wikimedia Commons, CC BY-SA 3.0.</figcaption></figure></template>
+
+<template data-pop="r00-tachy-decouverte" data-title="Tachycardie de découverte : lecture de l’ECG">
+<div class="lab">QRS fins, réguliers, onde P sinusale</div><p>Onde P positive en DII et négative en aVR, avant chaque QRS : tachycardie sinusale. Le médecin cherche la cause : fièvre, anémie, hypovolémie, hyperthyroïdie, embolie pulmonaire, douleur, substance.</p>
+<div class="lab">QRS fins, réguliers, sans onde P sinusale</div><p>Onde P absente, cachée dans le QRS ou rétrograde après lui : réentrée intranodale ou par voie accessoire. Ondes F en dents de scie, en particulier à 150/min : flutter 2:1. Onde P de morphologie anormale : tachycardie atriale (<a href="#/entry/I47">I47</a>).</p>
+<div class="lab">QRS fins, irréguliers</div><p>Absence d’onde P, ligne de base trémulante : fibrillation auriculaire. Ondes P de plusieurs morphologies : tachycardie atriale multifocale, souvent dans une maladie pulmonaire (<a href="#/entry/I48">I48</a>).</p>
+<div class="lab">QRS larges</div><p>Tachycardie ventriculaire jusqu’à preuve du contraire, surtout chez un patient porteur d’une cardiopathie.</p>
+<div class="lab">Piège</div><p>Une tachycardie sinusale très rapide peut masquer l’onde P dans l’onde T précédente ; une manœuvre vagale ou l’adénosine ralentit transitoirement et la démasque.</p></template>
+
+<template data-pop="r00-qrs-larges" data-title="Tachycardie à QRS larges">
+<div class="lab">Définition</div><p>Tachycardie au-delà de 100/min avec des QRS d’au moins 120 ms.</p>
+<div class="lab">Trois mécanismes</div><p>Tachycardie ventriculaire ; tachycardie supraventriculaire avec bloc de branche préexistant ou fonctionnel ; tachycardie supraventriculaire conduite par une voie accessoire.</p>
+<div class="lab">Règle</div><p>Chez un patient porteur d’une cardiopathie, notamment après un infarctus, une tachycardie à QRS larges est une tachycardie ventriculaire dans la grande majorité des cas. La bonne tolérance hémodynamique n’exclut pas ce diagnostic.</p>
+<div class="lab">Erreur dangereuse</div><p>Le vérapamil intraveineux donné à une tachycardie ventriculaire prise pour une tachycardie supraventriculaire peut provoquer un collapsus, par son effet inotrope négatif et vasodilatateur.</p>
+<div class="lab">Conduite</div><p>Cardioversion synchronisée si l’état est instable ; avis spécialisé et algorithmes de discrimination si l’état est stable (<a href="#/entry/I47">I47</a>).</p></template>
+
+<template data-pop="r00-brady-decouverte" data-title="Bradycardie de découverte : démarche">
+<div class="lab">1. Symptômes</div><p>Syncope, présyncope, fatigue d’effort, essoufflement, confusion, chute. Le lien est établi si le symptôme coïncide avec la bradycardie sur un enregistrement.</p>
+<div class="lab">2. Causes réversibles</div><p>Médicaments, hypothyroïdie, hyperkaliémie, hypothermie, infarctus inférieur, maladie de Lyme, apnées du sommeil.</p>
+<div class="lab">3. ECG</div><p>Bradycardie sinusale, pause sinusale, bloc sino-auriculaire, bloc auriculoventriculaire du premier degré, du deuxième degré de type Mobitz I ou II, ou du troisième degré. Un bloc de Mobitz II ou de haut degré traduit souvent une atteinte sous le nœud, exposée à l’asystolie.</p>
+<div class="lab">4. Réponse à l’effort</div><p>Une accélération normale à l’effort plaide pour une bradycardie de repos d’origine vagale. Une insuffisance chronotrope plaide pour une dysfonction sinusale.</p>
+<div class="lab">Conséquence</div><p>Bradycardie sinusale asymptomatique avec accélération normale : aucune mesure. Bradycardie symptomatique sans cause réversible, ou bloc de haut degré : avis cardiologique et discussion de stimulation selon l’ESC 2021 (<a href="#/entry/I44">I44</a>).</p></template>
+
+<template data-pop="r00-echo-indic" data-title="Indications de l’échocardiographie devant un souffle">
+<div class="lab">Source principale</div><p>Recommandation ACC/AHA de 2006 sur les valvulopathies, actualisée en 2008. Classe I (niveau C) : souffle diastolique, continu, holosystolique, télésystolique, avec clic d’éjection, ou irradiant au cou ou au dos ; souffle mésosystolique de grade 3 ou plus ; souffle avec symptômes ou signes d’insuffisance cardiaque, d’ischémie, de syncope, d’embolie, d’endocardite ou d’autre cardiopathie. Classe IIa : souffle avec autre anomalie cardiaque, ECG ou radiographie anormaux ; symptômes probablement non cardiaques sans exclusion d’une cause cardiaque. Classe III : souffle mésosystolique de grade 2 ou moins jugé innocent ou fonctionnel par un examinateur expérimenté.</p>
+<div class="lab">Relation avec les textes plus récents</div><p>Les recommandations ACC/AHA de 2020 et ESC/EACTS de 2025 sont plus récentes et en vigueur pour la prise en charge des valvulopathies. Elles recommandent l’échocardiographie transthoracique dans l’évaluation initiale de toute valvulopathie connue ou suspectée, sans reprendre la liste détaillée par type de souffle. Il n’y a donc pas de contradiction : la liste de 2006–2008 précise les situations où une valvulopathie doit être suspectée.</p>
+<div class="lab">Niveau de preuve</div><p>Niveau C : consensus d’experts. La logique est physiopathologique ; aucun essai ne compare une stratégie d’échocardiographie systématique à une stratégie clinique.</p>
+<div class="lab">Applicabilité suisse</div><p>Aucune recommandation suisse propre n’a été identifiée. Ces critères sont compatibles avec l’usage suisse et avec les recommandations européennes ; la décision tient compte de l’expérience de l’examinateur et de l’accès à l’échocardiographie.</p>
+<div class="lab">Vérification</div><p>Le texte de 2006–2008 a été relu par une source secondaire le 08.10.2026 ; le texte original n’a pas été consulté directement.</p></template>
+
+<template data-pop="r00-nouveau-ne" data-title="Souffle du nouveau-né">
+<div class="lab">Pourquoi il est présumé pathologique</div><p>Selon la DGPK 2017, un souffle entendu chez un nouveau-né révèle une cardiopathie dans environ un tiers des cas, dont moins de 10 % nécessitent une intervention. La DGPK demande une évaluation immédiate.</p>
+<div class="lab">Cardiopathies ductodépendantes</div><p>Certaines cardiopathies ne sont compatibles avec la vie que tant que le canal artériel reste ouvert : atrésie pulmonaire, hypoplasie du cœur gauche, coarctation critique. La fermeture du canal, dans les premiers jours, provoque une cyanose profonde ou un choc.</p>
+<div class="lab">Oxymétrie de pouls</div><p>La recherche de cardiopathie critique par oxymétrie au premier jour de vie est recommandée en Suisse depuis 2005. Une saturation normale n’exclut pas une cardiopathie sans cyanose, comme une communication interventriculaire.</p>
+<div class="lab">Paradoxe</div><p>Une grande communication interventriculaire peut être silencieuse à la naissance, car les résistances pulmonaires encore élevées limitent le shunt ; le souffle apparaît en quelques semaines.</p>
+<div class="lab">Urgence</div><p>Un nouveau-né avec souffle et cyanose, pouls fémoraux absents ou signes de choc reçoit une perfusion de prostaglandine pour maintenir le canal ouvert, et il est transféré dans un centre de cardiologie pédiatrique (<a href="#/entry/Q21">Q21</a>).</p></template>
+
+<template data-pop="r00-diff-souffle" data-title="Différentiel d’un souffle par gravité">
+<div class="lab">Urgences vitales</div><p>Endocardite : souffle nouveau et fièvre. Complication mécanique d’un infarctus : souffle holosystolique nouveau avec œdème pulmonaire ou choc. Dissection aortique : souffle diastolique et douleur thoracique brutale. Cardiopathie ductodépendante : nouveau-né cyanosé ou en choc.</p>
+<div class="lab">Interventions programmées</div><p>Rétrécissement aortique serré : souffle d’éjection rude, B2 aboli, pouls carotidien lent. Cardiomyopathie hypertrophique obstructive : souffle qui augmente debout et pendant la poussée de Valsalva. Fuite mitrale importante : souffle holosystolique apical irradiant à l’aisselle. Insuffisance aortique importante : souffle diastolique et pouls ample. Communication interauriculaire : dédoublement fixe de B2.</p>
+<div class="lab">Situations bénignes</div><p>Souffle fonctionnel : débit élevé, cause identifiable. Souffle innocent : tous les critères réunis. Sclérose aortique : B2 conservé, Vmax au plus de 2,5 m/s.</p>
+<div class="lab">Conséquence</div><p>Le médecin exclut d’abord les urgences, puis les lésions à intervention, avant de conclure à un souffle bénin.</p></template>
+
+<template data-pop="r00-cardioversion" data-title="Cardioversion électrique synchronisée">
+<div class="lab">Principe</div><p>Un courant électrique dépolarise simultanément tout le myocarde excitable ; les circuits de réentrée sont interrompus, et le nœud sinusal reprend la commande.</p>
+<div class="lab">Synchronisation</div><p>Le choc est délivré sur l’onde R. Un choc tombé pendant la période vulnérable de la repolarisation, sur l’onde T, peut déclencher une fibrillation ventriculaire.</p>
+<div class="lab">Pratique</div><p>Le patient conscient est sédaté. L’énergie et la position des électrodes suivent l’algorithme de l’ERC 2025 et le type d’arythmie. Le médecin vérifie que le mode synchronisé est actif avant chaque choc, car certains défibrillateurs reviennent au mode non synchronisé après une décharge.</p>
+<div class="lab">Fibrillation et flutter auriculaires</div><p>Au-delà de 24 heures d’arythmie ou si la durée est inconnue, le risque d’embolie impose une anticoagulation préalable ou une échocardiographie transœsophagienne, sauf instabilité (<a href="#/entry/I48">I48</a>).</p>
+<div class="lab">Exception</div><p>Une fibrillation ventriculaire ou une tachycardie ventriculaire sans pouls se traite par défibrillation non synchronisée (<a href="#/entry/I46">I46</a>).</p></template>
+
+<template data-pop="r00-endocardite" data-title="Souffle et fièvre : penser à l’endocardite">
+<div class="lab">Situation</div><p>Un souffle nouveau ou modifié chez un patient fébrile, surtout porteur d’une valvulopathie, d’une prothèse, d’un dispositif intracardiaque, ou usager de drogues par voie intraveineuse.</p>
+<div class="lab">Mécanisme du souffle</div><p>Les végétations détruisent les feuillets, perforent une cuspide ou rompent un cordage : une fuite apparaît, souvent mitrale ou aortique.</p>
+<div class="lab">Démarche</div><p>Trois paires d’hémocultures avant tout antibiotique chez un patient stable, puis échocardiographie transthoracique et, souvent, transœsophagienne. Le diagnostic suit les critères de Duke-ISCVID repris par l’ESC 2023.</p>
+<div class="lab">Signes de gravité</div><p>Insuffisance cardiaque par fuite aiguë, bloc auriculoventriculaire nouveau évocateur d’un abcès, embolie cérébrale : ils imposent un avis chirurgical urgent (<a href="#/entry/I33">I33</a>).</p></template>
+
+<template data-pop="r00-souffle-ima" data-title="Souffle nouveau après un infarctus">
+<div class="lab">Rupture de pilier mitral</div><p>La nécrose d’un muscle papillaire, le plus souvent le postéromédial, vascularisé par une seule artère, provoque une fuite mitrale aiguë massive. Le souffle peut être doux, voire absent, car l’oreillette gauche non dilatée égalise rapidement les pressions. L’œdème pulmonaire est brutal.</p>
+<div class="lab">Rupture du septum interventriculaire</div><p>Elle crée un shunt gauche-droite aigu, avec un souffle holosystolique rude au bord gauche du sternum, souvent avec frémissement, et un état de choc.</p>
+<div class="lab">Délai</div><p>Ces complications surviennent surtout dans les jours qui suivent un infarctus, plus souvent après une reperfusion tardive ou absente.</p>
+<div class="lab">Conduite</div><p>Échocardiographie immédiate, soutien hémodynamique et avis chirurgical urgent (<a href="#/entry/I21">I21</a>).</p></template>
+
+<template data-pop="r00-dissection" data-title="Souffle diastolique et douleur thoracique">
+<div class="lab">Mécanisme</div><p>Une dissection de l’aorte ascendante peut dilater l’anneau aortique ou faire prolaber une cuspide : une insuffisance aortique aiguë apparaît, avec un souffle diastolique doux.</p>
+<div class="lab">Clinique</div><p>Douleur thoracique ou dorsale brutale, maximale d’emblée, parfois migratrice ; asymétrie des pouls ou de la pression entre les bras ; déficit neurologique ; souffle diastolique.</p>
+<div class="lab">Conduite</div><p>Angioscanner de l’aorte en urgence ; une dissection de type A relève de la chirurgie urgente (<a href="#/entry/I71">I71</a>).</p>
+<div class="lab">Piège</div><p>Une fuite aortique aiguë est mal tolérée et donne un souffle court et doux, car la pression diastolique du ventricule non dilaté monte vite et réduit le gradient.</p></template>
+
+<template data-pop="r00-rassurer" data-title="Expliquer et rassurer avec des arguments">
+<div class="lab">Ce qu’il faut dire</div><p>« L’enregistrement a eu lieu pendant votre symptôme. Votre cœur battait normalement » ou « il s’agissait de battements prématurés isolés, et votre cœur est normal à l’échographie ». Le médecin explique le mécanisme : la pause et le battement renforcé, ou la perception de battements normaux.</p>
+<div class="lab">Ce qu’il ne faut pas dire</div><p>« Ce n’est rien » ou « c’est le stress » sans enregistrement. Ces formules ne reposent sur aucune preuve, et elles empêchent le patient de reconsulter si les symptômes changent.</p>
+<div class="lab">Signes qui doivent faire reconsulter</div><p>Malaise ou perte de connaissance, palpitations à l’effort, douleur thoracique, accès rapides et prolongés, changement du type de palpitations.</p>
+<div class="lab">Effet attendu</div><p>Une explication fondée sur un enregistrement réduit l’attention portée au cœur et l’anxiété qui amplifie la perception.</p></template>
+
+<template data-pop="r00-vagal-tech" data-title="Manœuvre de Valsalva modifiée">
+<div class="lab">Technique (essai REVERT)</div><p>Patient en position demi-assise ; poussée de 40 mmHg pendant 15 secondes, par exemple en soufflant dans une seringue de 10 mL pour en déplacer le piston ; puis passage immédiat en décubitus avec élévation passive des jambes à 45° pendant 15 secondes ; retour en position demi-assise.</p>
+<div class="lab">Mécanisme</div><p>La poussée réduit le retour veineux. Au relâchement, le retour veineux, augmenté par l’élévation des jambes, élève brusquement la pression artérielle ; le baroréflexe active le nerf vague, qui ralentit la conduction dans le nœud auriculoventriculaire et interrompt la réentrée.</p>
+<div class="lab">Preuve</div><p>Dans l’essai REVERT (Appelboam et al., Lancet 2015), le retour en rythme sinusal était obtenu chez 43 % des patients avec la manœuvre modifiée, contre 17 % avec la manœuvre classique.</p>
+<div class="lab">Limites</div><p>La manœuvre est réservée aux tachycardies régulières à QRS fins chez un patient stable. Elle est contre-indiquée en cas d’instabilité ; elle est inefficace sur une fibrillation auriculaire.</p></template>
+
+<template data-pop="r00-panique-tt" data-title="Trouble panique : traitement">
+<div class="lab">Après exclusion d’une arythmie</div><p>Le traitement commence par l’explication du cercle entre perception, peur et accélération sinusale, appuyée sur l’enregistrement sinusal pendant le symptôme.</p>
+<div class="lab">Psychothérapie</div><p>La thérapie cognitivo-comportementale est un traitement de première ligne. Elle travaille l’interprétation catastrophique des sensations corporelles et l’exposition progressive aux sensations redoutées.</p>
+<div class="lab">Médicaments</div><p>Les inhibiteurs sélectifs de la recapture de la sérotonine sont un traitement de fond reconnu ; leur effet apparaît en plusieurs semaines. Certains d’entre eux, comme le citalopram et l’escitalopram à forte dose, allongent le QT. Les benzodiazépines ne sont pas un traitement de fond, en raison de la dépendance.</p>
+<div class="lab">Orientation</div><p>Un trouble panique sévère ou résistant relève d’une prise en charge psychiatrique. Cette fenêtre résume l’orientation ; elle ne remplace pas un cours de psychiatrie.</p></template>
+
+<template data-pop="r00-prophylaxie" data-title="Antibioprophylaxie de l’endocardite">
+<div class="lab">Patients à haut risque (ESC 2023)</div><p>Prothèse valvulaire, y compris percutanée, ou réparation valvulaire avec matériel prothétique ; antécédent d’endocardite ; cardiopathie congénitale cyanogène non opérée et certaines cardiopathies congénitales réparées avec matériel prothétique ; assistance ventriculaire.</p>
+<div class="lab">Gestes concernés</div><p>Soins dentaires qui manipulent la gencive ou la région périapicale, ou qui perforent la muqueuse buccale, comme une extraction ou un détartrage.</p>
+<div class="lab">Schéma de référence</div><p>Amoxicilline 2 g par voie orale, 30 à 60 minutes avant le soin (ESC 2023) ; chez l’enfant, 50 mg/kg sans dépasser 2 g. Les recommandations suisses de 2021 la donnent une heure avant le soin. Les alternatives en cas d’allergie figurent dans <a href="#/entry/I33">I33</a>.</p>
+<div class="lab">Qui n’en relève pas</div><p>Souffle innocent, souffle fonctionnel, valvulopathie native sans antécédent d’endocardite, prolapsus mitral. Chez eux, l’hygiène buccodentaire et le contrôle dentaire régulier restent la mesure principale.</p>
+<div class="lab">Justification</div><p>Les bactériémies quotidiennes liées au brossage dépassent en cumul celles d’un soin isolé, et aucun essai randomisé n’a démontré l’efficacité de la prophylaxie ; elle est réservée aux patients chez qui une endocardite aurait les conséquences les plus graves.</p></template>
+
+<template data-pop="r00-athlete" data-title="ECG du sportif : critères internationaux de 2017">
+<div class="lab">Constatations normales</div><p>Chez le sportif entraîné, les critères internationaux de 2017 classent comme normales, liées à l’entraînement : la bradycardie sinusale et l’arythmie sinusale, le bloc auriculoventriculaire du premier degré, le bloc de type Mobitz I, le rythme d’échappement jonctionnel et le critère de voltage isolé d’hypertrophie ventriculaire gauche.</p>
+<div class="lab">Mécanisme</div><p>L’entraînement d’endurance augmente le tonus vagal et le volume d’éjection : la fréquence de repos baisse, et la conduction nodale ralentit au repos. Ces modifications régressent avec le désentraînement.</p>
+<div class="lab">Limites</div><p>Une bradycardie très profonde ou des pauses longues demandent une évaluation, surtout s’il existe des symptômes. Les seuils précis du texte original n’ont pas été vérifiés en texte intégral lors de la rédaction.</p>
+<div class="lab">Ce qui n’est jamais normal</div><p>Une syncope d’effort, des palpitations à l’effort, un antécédent familial de mort subite, des ondes T négatives dans les dérivations latérales, une pré-excitation ou un QT long imposent un bilan.</p>
+<div class="lab">Source</div><p>Sharma S et al., J Am Coll Cardiol 2017;69:1057–1075 (relu par source secondaire le 08.10.2026).</p></template>
+
+<template data-pop="r00-grossesse" data-title="Palpitations et souffles pendant la grossesse">
+<div class="lab">Adaptations normales</div><p>Le volume plasmatique et le débit cardiaque augmentent dès le premier trimestre ; la fréquence de repos s’élève d’environ 10 à 20/min et les résistances vasculaires baissent. Ces adaptations expliquent des palpitations fréquentes, des extrasystoles plus nombreuses et un souffle systolique d’éjection doux, fonctionnel, chez beaucoup de femmes enceintes.</p>
+<div class="lab">Ce qui n’est pas normal</div><p>Un souffle diastolique, un souffle de grade 3 ou plus, une dyspnée de repos, une orthopnée, une syncope ou une tachycardie de repos persistante imposent une échocardiographie : un rétrécissement mitral méconnu peut se révéler pendant la grossesse, car l’augmentation du débit et de la fréquence élève la pression auriculaire gauche.</p>
+<div class="lab">Arythmies</div><p>Les tachycardies supraventriculaires peuvent devenir plus fréquentes. Les manœuvres vagales et l’adénosine sont utilisables pour interrompre un accès ; un bêtabloquant β1-sélectif comme le métoprolol ou le bisoprolol est préféré au long cours, et l’aténolol est évité (ESC 2025 sur la grossesse).</p>
+<div class="lab">Piège</div><p>Une tachycardie sinusale inexpliquée chez une femme enceinte dyspnéique fait évoquer une embolie pulmonaire ou une cardiomyopathie du péripartum.</p></template>
