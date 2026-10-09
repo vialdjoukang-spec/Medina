@@ -13,7 +13,7 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 06. E-06-Endocrinologie et métabolisme (`S05`) — fait
 - [x] 07. N-07-Néphrologie (`S04`) — fait
 - [x] 08. H-08-Hématologie (`S06`) — fait
-- [ ] 09. O-09-Oncologie, génétique médicale et soins palliatifs (`T4`) — restant
+- [x] 09. O-09-Oncologie, génétique médicale et soins palliatifs (`T4`) — fait
 - [ ] 10. G-10-Gynécologie et sénologie (`S14`) — restant
 - [ ] 11. O-11-Obstétrique et néonatologie (`S16`) — restant
 - [ ] 12. M-12-Médecine des âges de la vie (`T2`) — restant
