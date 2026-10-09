@@ -56,10 +56,50 @@
  function trail(block, lesson) {
   return '<nav class="mcg-breadcrumbs" aria-label="Fil d’Ariane"><a href="#/home">' + h(title) + '</a>' + (block ? '<span aria-hidden="true">/</span><a href="' + h(categoryUrl(block)) + '">' + h(block.title) + '</a>' : '') + (lesson ? '<span aria-hidden="true">/</span><span>' + h(name(lesson)) + '</span>' : '') + '</nav>';
  }
+ // Leçon en préparation : même habillage qu'un cours rédigé (en-tête, onglets à icônes, sommaire, îlots).
+ const PSY = () => (O.fragment && O.fragment.id) === 'S09';
+ const TABS = () => PSY()
+  ? [['pA','⚕ Pathologie et prise en charge'],['pM','🧠 Sémiologie psychiatrique'],['pE','🔬 Examens complémentaires · causes organiques'],['pY','💬 Psychologie et psychothérapies'],['pS','⚛ Sciences fondamentales'],['pP','💊 Pharmacologie']]
+  : [['pA','⚕ Pathologie et prise en charge'],['pE','🔬 Examens complémentaires'],['pS','⚛ Sciences fondamentales spécialisées'],['pP','💊 Pharmacologie']];
+ const tabOf = t => {
+  const x = t.toLowerCase();
+  if (PSY() && /sémiologie|entretien|risque suicidaire|discernement/.test(x)) return 'pM';
+  if (PSY() && /psychothérap|psycholog|réseau de soins|réhabilitation/.test(x)) return 'pY';
+  if (/examens|imagerie|diagnostic selon|microbiologique|classification et scores|stadification|histologie|explorations/.test(x)) return 'pE';
+  if (/médicament|pharmacolog|anti-infectieux|traitement médicamenteux/.test(x)) return 'pP';
+  if (/physiopathologie|génétique|agent pathogène|carcinogenèse|physiologie|mécanisme/.test(x)) return 'pS';
+  return 'pA';
+ };
+ const DEFAULTS = () => ({
+  pM: ['Sémiologie et entretien psychiatrique propres à la leçon'],
+  pE: [PSY() ? 'Recherche des causes organiques et des diagnostics somatiques différentiels (bilan, imagerie, toxicologie selon le tableau)' : 'Examens complémentaires : indication, interprétation, normal avant pathologique'],
+  pY: ['Approche psychologique et psychothérapeutique adaptée à la leçon'],
+  pS: ['Bases fondamentales utiles à la compréhension de la leçon'],
+  pP: ['Molécules, mécanismes, indications et précautions (information professionnelle suisse)'],
+  pA: ['Définition et classification']});
  function planned(block, lesson) {
-  if (lesson.plan?.length) return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation · plan prévu</span><h2 id="mcg-planned-title" tabindex="-1">' + gold(lesson) + h(lesson.title) + '</h2>' + (lesson.gold_star?.enabled ? '<p>PROFILES 2017 · SSP ' + h(lesson.gold_star.ssp.join(', ')) + ' · correspondance pédagogique</p>' : '') + '<div class="nosology-plan">' + lesson.plan.map(section => '<section><h3>' + h(section.title) + '</h3>' + (section.content ? '<p>' + h(section.content) + '</p>' : '') + '</section>').join('') + '</div>' + variants(lesson) + '</section>';
-  return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation</span><h2 id="mcg-planned-title" tabindex="-1">' + h(lesson.title) + '</h2><p>Le contenu de ce chapitre est en cours de préparation. Vous pouvez déjà consulter les catégories qui lui sont rattachées.</p><ul>' + lesson.variants.map(variant => '<li><strong>' + h(variant.code) + ' — ' + h(variant.title) + '</strong>' + (variant.subcodes.length ? '<details><summary>Sous-catégories</summary><ul>' + variant.subcodes.map(subcode => '<li>' + h(subcode.code) + ' — ' + h(subcode.title) + '</li>').join('') + '</ul></details>' : '') + '</li>').join('') + '</ul></section>';
+  const sections = (lesson.plan?.length ? lesson.plan.map(s => s.title) : ['Définition et classification', 'Épidémiologie', 'Physiopathologie', 'Clinique', 'Examens complémentaires', 'Diagnostic différentiel', 'Traitement', 'Complications et pronostic']);
+  const tabs = TABS(), groups = Object.fromEntries(tabs.map(([id]) => [id, []]));
+  sections.forEach(t => (groups[tabOf(t)] || groups.pA).push(t));
+  tabs.forEach(([id]) => { if (!groups[id].length) groups[id] = DEFAULTS()[id] || []; });
+  // Psychiatrie : les causes organiques sont exclues avant tout diagnostic psychiatrique.
+  if (PSY() && !groups.pE.some(t => /causes organiques/.test(t))) groups.pE.unshift(DEFAULTS().pE[0]);
+  const code = lesson.code.toLowerCase();
+  const head = '<div class="mc-chap-head"><div class="mc-code">' + h(lesson.code) + ' · CIM-10-GM 2024 · ' + h(block.title) + '</div><h1 id="mcg-planned-title" tabindex="-1">' + gold(lesson) + h(lesson.title) + '</h1>'
+   + '<span class="mc-status">En préparation · plan prévu · aucune section rédigée' + (lesson.gold_star?.enabled ? ' · PROFILES 2017, SSP ' + h(lesson.gold_star.ssp.join(', ')) + ' (correspondance pédagogique)' : '') + '</span></div>';
+  const warn = '<div class="mc-alert mcg-plan-warning"><b>Attention :</b> spécifier dans le plan les particularités locales de la leçon.</div>';
+  const bar = '<div class="mc-tabs mc-ui" role="tablist">' + tabs.map(([id, label], i) => '<button type="button" role="tab" aria-controls="' + code + '-' + id + '" data-planned-tab="' + id + '" aria-selected="' + (i === 0) + '">' + h(label) + '</button>').join('') + '</div>';
+  let n = 0;
+  const panels = tabs.map(([id], i) => '<div class="mc-panel" id="' + code + '-' + id + '"' + (i ? ' hidden' : '') + '><nav class="mc-toc mc-ui"><b>Plan de l’onglet</b><ol>' + groups[id].map(t => '<li>' + h(t) + '</li>').join('') + '</ol></nav><div class="mc-chap-body">'
+   + groups[id].map(t => '<section class="mc-ilot"><h2><span class="mc-n">' + (n++) + '</span>' + h(t) + '</h2><p class="mcg-todo">À rédiger.</p></section>').join('') + '</div></div>').join('');
+  return '<section class="mcg-planned-panel mcg-planned-course" aria-labelledby="mcg-planned-title"><div class="mc mc-planned"><div class="mc-chap">' + head + warn + bar + panels + '</div></div>' + variants(lesson) + '</section>';
  }
+ document.addEventListener('click', event => {
+  const tab = event.target.closest('[data-planned-tab]'); if (!tab) return;
+  const root = tab.closest('.mc-planned'); const id = tab.getAttribute('aria-controls');
+  root.querySelectorAll('[data-planned-tab]').forEach(b => b.setAttribute('aria-selected', String(b === tab)));
+  root.querySelectorAll('.mc-panel').forEach(p => { p.hidden = p.id !== id; });
+ });
  readRoute = function() {
   const raw = location.hash.slice(2) || 'home', [head, query = ''] = raw.split('?'), parts = head.split('/').map(decodeURIComponent);
   const result = {type:parts[0] || 'home', id:parts[1] || '', extra:parts[2] || '', q:new URLSearchParams(query)};

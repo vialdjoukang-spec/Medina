@@ -165,13 +165,19 @@ Chaque leçon vide suit le plan monographique de base. Les pathologies fréquent
 - **Validation** : jamais « validé » sans médecin. La mention « revue par IA » est obligatoire.
 
 ## 12. Annexes (la tâche centrale)
-- **Objectif de MEDINA** : produire les **pathologies** qui, ensemble, permettent de satisfaire **toutes** les situations PROFILES 2017 (SSP), en commençant par les pathologies fréquentes. Les SSP sont un critère de couverture, pas une unité de cours.
+- **Principe de Vial : un jeu de déduction.**
+  - D'un côté, les 265 SSP de PROFILES 2017 ; de l'autre, les diagnostics répertoriés dans la CIM-10-GM.
+  - Une SSP renvoie à **tous** les diagnostics où elle se retrouve, différentiels compris.
+  - Tous ces diagnostics sont **prioritaires (P1)** lors de la rédaction de leur système ; les autres catégories du système (**P2**) viennent ensuite.
 - **Annexe A, `ANNEXE_PATHOLOGIES_SSP.md`** (régénérée par `python3 tools/pathologies_ssp.py`) :
-  - 291 pathologies, réparties dans les 23 fragments (dont 19 en psychiatrie), couvrent les **265 SSP sur 265** ;
-  - les pathologies sont classées par spécialité, dans l'ordre de production ;
-  - chaque fiche donne le motif d'inclusion, l'état, la difficulté, les SSP à satisfaire dans ce cours et un plan spécifique numéroté ;
-  - une matrice SSP → pathologies termine l'annexe.
-  - **C'est la feuille de route de production.**
+  - 1 331 diagnostics P1 et 307 catégories P2 ; les 265 SSP sont couvertes ;
+  - dans chaque système, l'ordre de rédaction est le suivant : pathologies fréquentes, puis diagnostics partageant le plus de SSP (les « carrefours » du diagnostic différentiel), puis les autres P1, puis les P2 ;
+  - chaque fiche donne les SSP à satisfaire, les différentiels à traiter en miroir dans le même système et hors système, et le plan spécifique ;
+  - une matrice SSP → diagnostics termine l'annexe.
+- **Réserve à lever pendant la rédaction.** La correspondance SSP → catégories, héritée de l'outil de Codex, est établie par bloc CIM, donc grossière. Par exemple, elle ne relie pas encore F32 aux causes organiques d'un changement d'humeur. À chaque leçon, compléter les différentiels organiques dans l'onglet Examens complémentaires, puis enrichir `exam_mapping` (`tools/import_nosology.py`).
+- **Frontend d'une leçon en préparation.** Elle a le même habillage qu'un cours rédigé : en-tête, onglets à icônes, sommaire et îlots numérotés, avec la mention « Attention : spécifier dans le plan les particularités locales de la leçon ».
+  - En psychiatrie, six onglets : Pathologie, Sémiologie, Examens complémentaires (recherche des causes organiques, systématique), Psychologie et psychothérapies, Sciences fondamentales, Pharmacologie.
+  - Code : `engine/category_organisation.js`, fonction `planned`.
 - **La psychiatrie** (F00 à F99) est le **23e fragment, S09 « P-23-Psychiatrie et psychothérapie »**, depuis la décision de Vial du 9 octobre 2026 :
   - 79 catégories et 519 codes, chacun doté d'une coquille de leçon et d'un plan psychiatrique (sémiologie, risque suicidaire, psychothérapies, cadre légal suisse) ;
   - la file de production Claude compte désormais 12 fragments ;

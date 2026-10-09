@@ -38,14 +38,9 @@ def main():
             if '.' not in l['code']:
                 lessons[l['code']] = l
     ssp_of = {c: set(l['gold_star']['ssp']) if l['gold_star']['enabled'] else set() for c, l in lessons.items()}
-    chosen = {c: 'fréquente' for c in FREQ if c in lessons}
-    chosen.update({c: 'cours existant' for c in lessons if lessons[c]['state'] == 'filled'})
-    covered = set().union(*(ssp_of[c] for c in chosen))
-    while True:
-        best = max((c for c in lessons if c not in chosen), key=lambda c: (len(ssp_of[c] - covered), c in FREQ, -ord(c[0])))
-        gain = ssp_of[best] - covered
-        if not gain: break
-        chosen[best] = 'couverture SSP'; covered |= gain
+    # Principe de Vial : jeu de déduction. Une SSP renvoie à TOUS les diagnostics où elle se retrouve
+    # (différentiels compris) ; tous ces diagnostics sont prioritaires (P1) dans leur système, le reste vient ensuite (P2).
+    chosen = {}
     psy = {}
     for s, targets in MANUAL.items():
         for t in targets:
@@ -54,26 +49,35 @@ def main():
             if t.startswith('PSY:'):
                 psy.setdefault(t[4:], set()).add(s)
             elif t in lessons:
-                chosen.setdefault(t, 'rattachement SSP'); ssp_of[t] = ssp_of[t] | {s}
+                ssp_of[t] = ssp_of[t] | {s}
+    for c in lessons:
+        if ssp_of[c]:
+            chosen.setdefault(c, 'P1 · SSP ' + ', '.join(map(str, sorted(ssp_of[c]))))
+    rest = [c for c in lessons if c not in chosen]
+    holders = {}
+    for c in chosen:
+        for x in ssp_of[c]: holders.setdefault(x, set()).add(c)
+    broad = {x for x, cs in holders.items() if len(cs) > 40}  # SSP transversales, trop générales pour orienter un différentiel
     covered = set().union(*(ssp_of[c] for c in chosen)) | {s for v in psy.values() for s in v}
     missing = sorted(set(range(1, 266)) - covered)
     by_ssp = {}
     for c in chosen:
         for s in ssp_of[c]: by_ssp.setdefault(s, []).append(c)
-    out = ['# Annexe A — Pathologies couvrant les 265 situations PROFILES (SSP), par spécialité', '',
-           f'**{len(chosen)} pathologies** dans les 23 fragments (psychiatrie S09 comprise). '
-           f'SSP couvertes : **{len(covered)} / 265**' + (f' ; non couvertes : {missing}.' if missing else ' (toutes).'), '',
-           'Motif d’inclusion : *fréquente* (socle clinique), *cours existant*, *couverture SSP* (choisie parce qu’elle couvre des SSP encore manquantes), '
-           '*rattachement SSP* (SSP sans pathologie dans la correspondance de Codex, rattachée explicitement). '
-           'La correspondance SSP → pathologie est pédagogique, non officielle (PROFILES ne publie aucune table vers la CIM) : à valider. '
-           'Ordre de production : file des fragments, puis pathologies fréquentes, puis autres. Une pathologie déjà rédigée n’est pas réécrite.', '']
+    out = ['# Annexe A — Diagnostics cibles déduits des 265 situations PROFILES (SSP), par spécialité', '',
+           'Principe (Vial) : jeu de déduction entre les SSP et les diagnostics répertoriés. Une SSP renvoie à **tous** les diagnostics où elle se retrouve, '
+           'différentiels compris. Tous ces diagnostics sont **prioritaires (P1)** lors de la rédaction de leur système ; les autres catégories du système (**P2**) sont rédigées ensuite.', '',
+           f'**{len(chosen)} diagnostics P1** (sur {len(lessons)} catégories) ; **{len(rest)} catégories P2**. SSP couvertes : **{len(covered)} / 265**' + (f' ; non couvertes : {missing}.' if missing else ' (toutes).'), '',
+           'Ordre de rédaction dans un système : pathologies fréquentes, puis diagnostics partageant le plus de SSP (les plus « carrefours » du diagnostic différentiel), puis les autres P1, puis P2. '
+           'Une catégorie déjà rédigée n’est pas réécrite. Réserve : la correspondance SSP → catégories (outil de Codex) est établie par bloc CIM, donc large ; '
+           'elle est pédagogique, non officielle, et doit être affinée catégorie par catégorie pendant la rédaction.', '']
     order = QUEUE + [k for k in sorted(NAMES) if k not in QUEUE]
     for fid in order:
         items = sorted((c for c in chosen if lessons[c]['fragment'] == fid),
-                       key=lambda c: (lessons[c]['state'] == 'filled', c not in FREQ, c))
+                       key=lambda c: (lessons[c]['state'] == 'filled', c not in FREQ, -len(ssp_of[c]), c))
+        p2 = sorted(c for c in rest if lessons[c]['fragment'] == fid)
         if not items: continue
         label = NAMES[fid]['label']
-        out += [f'## {label} — {len(items)} pathologies', '', f'Sources de départ (à lire et dater) : {SOURCES.get(fid, "société suisse, puis européenne")}.', '']
+        out += [f'## {label} — {len(items)} diagnostics P1, {len(p2)} catégories P2', '', f'Sources de départ (à lire et dater) : {SOURCES.get(fid, "société suisse, puis européenne")}.', '']
         for c in items:
             l = lessons[c]; p, diff = plan(fid, l.get('chapter'), c)
             course = COVER.get(c)
@@ -82,9 +86,15 @@ def main():
             if draft and l['state'] != 'filled': state = 'brouillon achevé, à relire (ne pas réécrire)'
             ssps = '; '.join(f'{s} {SSP[str(s)]}' for s in sorted(ssp_of[c]))
             out += [f'### {c} — {l["title"]}', '',
-                    f'- **Motif** : {chosen[c]} · **état** : {state} · **difficulté** : {diff} · chapitre {l.get("chapter")}, bloc {l["block"]}',
+                    f'- **Priorité** : P1{" · fréquente" if c in FREQ else ""} · **état** : {state} · **difficulté** : {diff} · chapitre {l.get("chapter")}, bloc {l["block"]}',
                     f'- **SSP à satisfaire dans ce cours** : {ssps or "aucune propre (socle clinique)"}',
+                    '- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : '
+                    + (', '.join(sorted(d for d in items if d != c and ssp_of[d] & ssp_of[c])[:25]) or '—'),
+                    '- **Différentiels hors système** (SSP partagée, hors SSP transversales) : '
+                    + (', '.join(f'{d} ({lessons[d]["fragment"]})' for d in sorted(d for d in chosen if lessons[d]['fragment'] != fid and (ssp_of[d] & ssp_of[c]) - broad)[:30]) or '—'),
                     '- **Plan** : ' + ' → '.join(f'{i}. {t}' for i, t in enumerate(p)), '']
+        if p2:
+            out += ['**P2 (après les P1 du système)** : ' + ', '.join(f'{c} {lessons[c]["title"]}' for c in p2), '']
     if psy:
         out += ['## Entités psychiatriques hors catalogue', '']
         out += [f'- **{f}** : SSP ' + ', '.join(f'{s} {SSP[str(s)]}' for s in sorted(v)) for f, v in sorted(psy.items())]
@@ -93,7 +103,7 @@ def main():
         cs = by_ssp.get(s, []) + [f'psy {f}' for f, v in psy.items() if s in v]
         out.append(f'| {s} | {SSP[str(s)]} | {", ".join(sorted(cs)[:12])}{" …" if len(cs) > 12 else ""} |')
     (ROOT / 'ANNEXE_PATHOLOGIES_SSP.md').write_text('\n'.join(out), encoding='utf-8')
-    print(len(chosen), 'pathologies ;', len(psy), 'psy ; couvertes', len(covered), '; manquantes', missing)
+    print(len(chosen), 'P1 ;', len(rest), 'P2 ; couvertes', len(covered), '; manquantes', missing)
 
 if __name__ == '__main__':
     main()
