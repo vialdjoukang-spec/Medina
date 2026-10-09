@@ -19,6 +19,7 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 | C18 | Tumeur maligne du côlon : cancer du côlon localisé | 3 (Commons) | ESMO côlon localisé 2020, UICC TNM 8 (tableau S1), OPAS art. 12e (01.07.2026), OFS/ONEC 2018-2022, FI Xeloda®, Eloxatine® |
 | K35 | Appendicite aiguë | 3 (Commons) | WSES Jérusalem 2020, guide CHUV 2022, FI Co-Amoxi-Mepha i.v., Augmentin® |
 | K57 | Maladie diverticulaire : diverticulose et diverticulite aiguë | 3 (Commons, dont 2 aussi dans les fenêtres) | WSES diverticulite 2020, guide CHUV 2022, FI Co-Amoxi-Mepha i.v., Augmentin® |
+| K56 | Iléus paralytique et occlusion intestinale sans hernie (brides, occlusion colique, volvulus du sigmoïde) | 4 (Commons, dont 4 aussi dans les fenêtres) | WSES Bologne 2017, WSES volvulus du sigmoïde 2023, WSES urgences du cancer colorectal 2017, FI Paspertin® |
 
 ## Amendements du propriétaire appliqués (09.10.2026)
 - Règle linguistique : connecteurs et transitions (`liaisons.py`, plans `chapitres/K92_liaisons.py`, `K25_liaisons.py` ; rédaction native dès K21).
@@ -26,9 +27,13 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 - Règle d’image : schémas générés supprimés (K92 Forrest, K25 profondeur, K21 Los Angeles) et remplacés par des images réelles Commons ; `Schema` désactivé dans `images.py`.
 
 ## Restantes (ordre des codes prioritaires du registre)
-K56, K90, K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
+K90, K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
+
+Priorité examen fédéral (jauge `federal_exam`, 13/89 rédigées au 09.10.2026) — catégories restantes : C15 C16 C17 C19 C20 C21 C22 C23 C24 C25 C26 K20 K22 K23 K26 K27 K28 K29 K30 K31 K36 K37 K38 K40 K41 K42 K43 K44 K45 K46 K55 K58 K59 K60 K61 K62 K63 K64 K65 K66 K67 K71 K72 K73 K75 K76 K77 K81 K82 K83 K86 K87 K90 Q39 Q40 Q41 Q42 Q43 Q44 Q45 R10 R11 R12 R13 R14 R15 R16 R17 R18 R19 S30 S31 S36 T18 T28.
+Règles propriétaire ajoutées le 09.10.2026 : RAPPEL VERITE en tête de chaque chapitre ; images réelles aussi dans les fenêtres ; commentaire explicatif (physiopathologie) sous chaque image et tableau ; pas d’îlot ni de tableau consacré aux codes CIM.
 
 ## Points ouverts
+- K56 : dose et produit de contraste hydrosoluble TODO (aucune FI suisse d’amidotrizoate trouvée dans AIPS) ; antiémétique sans effet prokinétique non désigné par les sources (TODO) ; iléus paralytique postopératoire, invagination et iléus biliaire sans recommandation dédiée lue (TODO) ; causes de l’iléus paralytique et onglet Sciences fondés sur des notions classiques, à vérifier ; image du volvulus du sigmoïde issue d’un enfant.
 - K57 : co-amoxicilline dans la diverticulite non perforée hors libellé explicite de la FI ; onglet Sciences (points faibles vasculaires, loi de Laplace, Hartmann) fondé sur des notions classiques non tirées des recommandations lues : à vérifier ; hémorragie diverticulaire (K57.x1/x3) seulement mentionnée, renvoi à K92 ; recommandation ESCP 2020 non accessible (pas de PMC).
 - K35 : traitement antibiotique premier hors libellé explicite de la FI co-amoxicilline ; composantes des scores AIR, AAS et Alvarado non détaillées (tableaux non lus) ; antibiotiques du traitement premier (molécules, durée 7-10 j des essais) à confirmer par une source suisse ; volet pédiatrique résumé.
 - C18 : contentieux CAPOX 3 mois (ESMO) contre 6 mois (FI Xeloda®) ; doses 5-FU/acide folinique de FOLFOX non lues (TODO FI 5-FU) ; recommandation ESMO du cancer métastatique non lue (stade IV seulement nommé) ; K52 : tableau des sous-codes CIM retiré (règle 4 du prompt de vérité).

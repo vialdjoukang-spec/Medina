@@ -23,5 +23,8 @@ Inventaire de référence : `ANNEXE_FEUILLE_DE_ROUTE.md`, section P-02 (45 caté
 ## Mise à jour 09.10.2026, 23 h (livraison directe sur main)
 - Règle images réelles : 143 schémas SVG dessinés recensés dans les 25 leçons de pneumologie ; 43 remplacés par des images réelles sous licence libre (Wikimedia Commons, CDC ; provenance dans `assets/figures/pneumologie/PROVENANCE.json`), 100 retirés ; 10 algorithmes cliniques (J18, I26, J44, J45, J69) restitués en listes textuelles ; paragraphes de lecture des figures réécrits.
 - Règle linguistique appliquée en révision complète : C34, J69.
-- Restant, révision linguistique et interactivité : R06, J09, J18, J40, J44, J45, I26, I27, J12, J21, J47, J60, J67, J80, J81, J82, J84, J86, J90, J93, J95, J96, R04, R05 (outil `extract.py`/`apply.py`, contrôle automatique des chiffres et des fenêtres conservés).
+- Révision linguistique (connecteurs logiques et transitions) FAITE et livrée sur main (09.10.2026, 23 h 50) : R06, J09, J18, J40, J44, J45, I26, I27, J12, J21, J47, J60, J67, J80, J81, J82, J84, J86, J90, J93, J95, J96, R04, R05. Insertion phrase par phrase (outil `conn.py`, gardes ordinaux et étiquettes), chiffres, fenêtres et termes interactifs inchangés ; proportion de phrases sans connecteur ramenée de ~0,8 à 0,12–0,25 selon la leçon ; « Ainsi » varié (Concrètement, De fait).
+- Ancres de justifications réalignées (I26, J45) : la mise en minuscule après connecteur cassait `tools/insert_justifications.py` ; vérifier ces ancres après toute retouche.
+- Restant, interactivité : aucune fenêtre nouvelle ajoutée pendant la révision linguistique ; densification des fenêtres à faire leçon par leçon.
+- Restant, images : rechercher des images réelles sous licence libre là où une figure importante a été retirée sans remplacement.
 - Restant, rédaction : C37/C38, C45, Q32–Q34, R07, R09, S20–S29, T27.
