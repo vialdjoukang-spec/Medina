@@ -15,7 +15,9 @@ Catégories prioritaires du registre sans cours (`organisation/fragments.json`, 
 
 | R00 — Palpitations, anomalies du rythme et souffles cardiaques (couvre R00, R01) (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (56 termes, 76 fenêtres, 3 quiz), images aussi dans 2 fenêtres ; glossaire 0 non couvert ; test_v7 OK | r00_tachycardie_sinusale_ecg.gif, r00_holter_patiente.gif, r00_phonocardiogramme.gif, r00_ecg_preexcitation_12d.gif, r00_onde_delta_ecg.gif |
 
-Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I88, R02, R03, S26, S35–S95, Z95 (I77 et I79 couverts par le cours I77 ; I78 et I97 (couvre I97–I99) rédigés le 9.10.2026).
+| R02 — Gangrène, non classée ailleurs (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (57 termes, 3 quiz), images aussi dans 3 fenêtres ; glossaire 0 non couvert ; test_v7 OK | r02_gangrene_seche_orteils_diabete.gif, r02_gangrene_humide_pied.gif, r02_gangrene_gazeuse_radiographie.gif, r02_clostridium_gram.gif |
+
+Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I88, R03, S26, S35–S95, Z95 (I77 et I79 couverts par le cours I77 ; I78 et I97 (couvre I97–I99) rédigés le 9.10.2026).
 
 État (9.10.2026, 22 h 20) : registre prioritaire S01 achevé (I73, I95, I89) ; prêt pour audit.
 
