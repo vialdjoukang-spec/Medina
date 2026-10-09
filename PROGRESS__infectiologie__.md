@@ -17,6 +17,7 @@ Branche : `course/infectiologie`. Ordre : priority_codes de `organisation/fragme
 | A09 | Gastro-entérite infectieuse aiguë | **écrit** (20 fenêtres, 3 GIF réels) |
 | B37 | Candidose | **écrit** (16 fenêtres, 3 GIF réels) |
 | B35 | Dermatophytoses | **écrit** (15 fenêtres, 4 GIF réels) |
+| A84 | Méningo-encéphalite à tiques | **écrit** (15 fenêtres, 3 GIF réels dont 2 en fenêtre, « Lecture et physiopathologie » sous chaque élément) |
 | A15 | Tuberculose pulmonaire (A15–A16) | **écrit** (27 fenêtres, 3 GIF réels, glossaire `a15.py`) |
 | B50 | Paludisme (B50–B54) | **écrit** (24 fenêtres, 4 GIF réels, glossaire `b50.py`) |
 
@@ -47,3 +48,5 @@ Décision du propriétaire : chaque cours terminé est rebasé sur origin/main, 
 - 2026-10-09 : auteurs des attributions nettoyés (« Unknown author », « Photo Credit », « Content Providers »).
 - A15 : guide national LPS/OFSP V1.2024 + Bulletin OFSP 2025 ; points d’audit : seuil rénal (FI Rimactan < 25 ml/min, Rifater/Rifinah < 30 ml/min) contre adaptation de E et Z seulement dans le guide ; « environ 20 % des cas traités sans confirmation » (guide) contre 93,8 % de confirmation (Bulletin 2025). Notation « HR » évitée (collision glossaire : hazard ratio).
 - 2026-10-09 : main cassé par P-02 (justifications J45/I26 introuvables après révision des connecteurs) ; livraison faite après vérification sur arbre propre d’origin/main que l’échec est préexistant et étranger, avec audit ciblé de mes cours.
+- 2026-10-09 23:4x : jauges T1 après refresh_gauges : federal_exam 10/46 (21,7 %), fréquentes 9/11, global 16/175. Restants federal : A00 A01 A02 A03 A05 A06 A07 A08 A17 A18 A19 A40 A55 A56 A57 A58 A59 A60 A63 A64 A80 A81 A82 A83 A85 A86 A87 A88 A89 B15 B16 B17 B19 Z20 Z21 Z22. Ordre proposé : A87 (méningite virale), B15–B17, A01–A02, A60/A56/A59, A40, A17–A19, A03/A06/A07/A08, A00, A82, A80, A83/A85/A86/A88/A89/A81, A55/A57/A58/A63/A64, Z20–Z22.
+- B07 et A49 (demandés) non encore écrits : hors étoile fédérale, placés après les catégories federal_exam selon la règle de priorité.
