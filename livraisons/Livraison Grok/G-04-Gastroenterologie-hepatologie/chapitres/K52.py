@@ -15,16 +15,16 @@ C.a(0, 'Question clinique et objectifs', P(
  'Pour y répondre, le médecin doit savoir : évoquer la maladie devant une diarrhée aqueuse chronique, surtout chez une femme âgée ; exiger des biopsies du côlon droit et gauche même si la muqueuse paraît normale ; reconnaître les critères histologiques de la ' + w('k52-cc', 'colite collagène') + ' et de la ' + w('k52-cl', 'colite lymphocytaire') + ' ; enfin, traiter par ' + w('k52-d-budesonide', 'budésonide') + ' et retirer les médicaments suspects.')
  + key('Diarrhée aqueuse chronique, nocturne, sans sang, avec coloscopie normale : biopsier pour chercher une colite microscopique.', 'Point de départ.'))
 
-C.a(1, 'Définition et périmètre de la catégorie K52', P(
+C.a(1, 'Définition et périmètre', P(
  'La catégorie K52 regroupe les gastroentérites et colites qui ne sont ni infectieuses ni rattachées à une maladie de Crohn ou à une rectocolite hémorragique. Ainsi, elle comprend les atteintes dues à une irradiation (K52.0), les formes toxiques (K52.1), les formes allergiques et alimentaires (K52.2), la colite indéterminée (K52.3), les autres formes précisées (K52.8) et les formes non précisées (K52.9).',
  'Parmi ces formes, la colite microscopique est la plus fréquente en pratique ; c’est pourquoi elle occupe l’essentiel de ce cours. En effet, il s’agit d’une maladie inflammatoire chronique du côlon, responsable d’une diarrhée aqueuse, dont la muqueuse paraît normale ou presque à l’endoscopie, mais dont l’histologie est anormale (EMCG 2021). Par conséquent, son diagnostic est exclusivement histologique, et elle comporte deux formes, collagène et lymphocytaire, ainsi qu’une forme incomplète.')
- + table(['Sous-catégorie', 'Entité', 'Mécanisme'], [
-   ['K52.0', 'Gastroentérite et colite radiques', 'Lésion des tissus par la radiothérapie'],
-   ['K52.1', 'Gastroentérite et colite toxiques', 'Médicaments ou toxiques'],
-   ['K52.2', 'Formes allergiques et alimentaires', 'Réaction immunitaire à un aliment'],
-   ['K52.3', 'Colite indéterminée', 'Colite inflammatoire non classable entre Crohn et rectocolite'],
-   ['K52.8', 'Autres formes précisées, dont la colite microscopique', 'Inflammation muqueuse microscopique']])
- + P('Le tableau se lit par la colonne « Mécanisme » : en effet, chaque sous-catégorie est définie par sa cause, si bien que l’interrogatoire sur les traitements et les expositions est décisif.')
+ + table(['Entité', 'Mécanisme'], [
+   ['Gastroentérite et colite radiques', 'Lésion des tissus par la radiothérapie'],
+   ['Gastroentérite et colite toxiques', 'Médicaments ou toxiques'],
+   ['Formes allergiques et alimentaires', 'Réaction immunitaire à un aliment'],
+   ['Colite indéterminée', 'Colite inflammatoire non classable entre Crohn et rectocolite'],
+   ['Autres formes précisées, dont la colite microscopique', 'Inflammation muqueuse microscopique']])
+ + P('Le tableau se lit par la colonne « Mécanisme » : en effet, chaque forme est définie par sa cause, si bien que l’interrogatoire sur les traitements et les expositions est décisif.')
  + key('K52 : colites non infectieuses hors Crohn et rectocolite. Colite microscopique : diarrhée aqueuse, muqueuse normale à l’œil, histologie anormale.')
  + src(EMCG))
 
