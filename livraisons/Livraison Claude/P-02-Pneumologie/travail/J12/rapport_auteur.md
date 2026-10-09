@@ -8,8 +8,8 @@ Rédacteur de la chaîne interne Claude, 09.10.2026. Cours unique couvrant J12, 
 - `chapters/J12/J12_b.html` — îlots 7 à 13 (quiz, Pareto diagnostic, Pareto urgences et traitement, Pareto critères) ; dernier îlot : critères formels `div.alert` puis paramètres clés `div.key`.
 - `chapters/J12/J12_c.html` — Examens (4 îlots, 4 quiz, Pareto) et Sciences (Virologie, Anatomopathologie, Physiologie respiratoire, Immunologie ; 4 figures SVG `role="img"` légendées ; liens Science → clinique / examen / traitement / À retenir).
 - `chapters/J12/J12_d.html` — Pharmacologie (4 îlots, Pareto) ; ferme le template.
-- `chapters/J12/J12_pop1.html` — 31 fenêtres cliniques et diagnostiques.
-- `chapters/J12/J12_pop2.html` — 14 fenêtres de monographies et 6 Pareto.
+- `chapters/J12/J12_pop1.html` — 34 fenêtres cliniques, diagnostiques et préventives.
+- `chapters/J12/J12_pop2.html` — 11 fenêtres de monographies et 6 Pareto.
 - `glossary/j12.py` — 15 clés nouvelles : CMV, VZV, hMPV, ACE2, TMPRSS2, ECIL, ECMM, ISHAM, CFV, UL97, UL54, mRESVIA, SARS, SARS-CoV, MERS. Aucune n’existe dans `glossary/*.py` ni dans les glossaires des dossiers `livraisons/` au 09.10.2026 (vérification par chargement de tous les modules et recherche dans les dossiers de travail).
 
 ## Plan
