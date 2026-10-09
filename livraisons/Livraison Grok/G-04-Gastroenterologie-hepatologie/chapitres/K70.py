@@ -33,20 +33,20 @@ C.a(2, 'Seuils de consommation et facteurs de risque', P(
  'Après la définition, il faut quantifier l’exposition. Ainsi, selon l’EASL 2018, le risque de maladie alcoolique du foie augmente au-delà de 30 g d’alcool par jour, ou au-delà de 7 unités par semaine chez la femme et de 14 unités chez l’homme ; de plus, à 100 g par jour, le risque relatif atteint 26. Par ailleurs, le diagnostic est évoqué dès une consommation régulière de plus de 20 g par jour chez la femme et de plus de 30 g par jour chez l’homme, associée à des anomalies cliniques ou biologiques hépatiques.',
  'Cependant, tous les buveurs excessifs ne développent pas une maladie grave. En effet, environ 90 % d’entre eux ont une stéatose, mais une minorité seulement évolue vers la cirrhose. C’est pourquoi l’EASL insiste sur les cofacteurs : sexe féminin, obésité et insulinorésistance, tabagisme, surcharge en fer, hépatites virales et variants du gène ' + w('k70-pnpla3', 'PNPLA3') + '. En outre, l’hépatite alcoolique survient en général après des décennies de consommation lourde, supérieure à 80 g par jour.')
  + trap('Une unité standard ne contient pas la même quantité d’alcool selon les pays ; la source EASL ne précise pas la valeur retenue. Le calcul en grammes (volume en ml × degré × 0,8 / 100) évite cette ambiguïté.', 'Piège des unités')
- + key('Risque au-delà de 30 g/j ; diagnostic évoqué au-delà de 20 g/j (femme) ou 30 g/j (homme) avec anomalies hépatiques ; cofacteurs : sexe féminin, obésité, tabac, fer, virus, PNPLA3.')
+ + key('Le risque apparaît au-delà de 30 g/j, et l’on évoque le diagnostic au-delà de 20 g/j chez la femme ou de 30 g/j chez l’homme en présence d’anomalies hépatiques. Le sexe féminin, l’obésité, le tabac, le fer, les virus et PNPLA3 aggravent le risque.')
  + src(ALD))
 
 C.a(3, 'Physiopathologie', P(
  'Pour comprendre ces seuils, il faut suivre le métabolisme de l’éthanol. D’abord, l’alcool déshydrogénase puis l’aldéhyde déshydrogénase oxydent l’éthanol en acétaldéhyde, puis en acétate ; or, cette oxydation consomme du NAD⁺ et favorise la synthèse d’acides gras, d’où la stéatose. Ensuite, l’induction du cytochrome CYP2E1 produit des espèces réactives de l’oxygène ; de plus, l’éthanol épuise les antioxydants, notamment le glutathion.',
  'Par conséquent, le stress oxydatif et l’acétaldéhyde lèsent l’hépatocyte. En outre, l’alcool augmente la perméabilité intestinale, et les endotoxines bactériennes activent les cellules de Kupffer, qui libèrent des cytokines et attirent les polynucléaires neutrophiles. Enfin, les cellules étoilées activées produisent du collagène autour des veinules centrolobulaires : c’est pourquoi la fibrose alcoolique débute typiquement dans la région périveinulaire.')
- + key('Éthanol → acétaldéhyde, excès de NADH, stress oxydatif (CYP2E1), endotoxines → stéatose, inflammation neutrophile, fibrose périveinulaire.')
+ + key('L’éthanol devient de l’acétaldéhyde, produit un excès de NADH et un stress oxydatif par le CYP2E1, et laisse passer des endotoxines ; il en résulte une stéatose, une inflammation neutrophile et une fibrose périveinulaire.')
  + src(ALD))
 
 C.a(4, 'Présentation clinique', P(
  'La présentation dépend donc du stade. Ainsi, la stéatose est le plus souvent asymptomatique et découverte devant des enzymes hépatiques anormales ; de même, une fibrose avancée peut exister avec des tests hépatiques normaux. En revanche, l’hépatite alcoolique se manifeste par un ' + w('k70-ictere', 'ictère') + ' progressif, souvent associé à de la fièvre, même sans infection, à un malaise, à un amaigrissement et à une dénutrition (EASL 2018).',
  'De plus, l’examen recherche les signes de cirrhose et d’hypertension portale, ainsi que les atteintes extrahépatiques de l’alcool. En effet, l’alcool touche aussi le cœur, le pancréas, le rein et le système nerveux. Par conséquent, un trouble de la conscience chez ce patient évoque une encéphalopathie hépatique, mais aussi une ' + w('k70-wernicke', 'encéphalopathie de Wernicke') + ' ou un ' + w('k70-sevrage', 'syndrome de sevrage') + ', qui doivent être écartés.')
  + C.img('k70_ictere.gif', 'Photographie rapprochée d’un œil dont la sclère est franchement jaune.', 'Ictère conjonctival. Dans l’hépatite alcoolique, c’est le signe cardinal : un ictère d’apparition récente chez un buveur excessif doit faire évoquer le diagnostic (EASL 2018).', credit({'auteur': 'CDC / Dr Thomas F. Sellers, Emory University ; travail dérivé : த.உழவன்', 'licence': 'domaine public', 'url': 'https://commons.wikimedia.org/wiki/File:Jaundice_eye_new.jpg'}))
- + key('Stéatose et fibrose : souvent muettes. Hépatite alcoolique : ictère récent, fièvre, dénutrition. Trouble de conscience : encéphalopathie hépatique, Wernicke ou sevrage.')
+ + key('La stéatose et la fibrose restent souvent muettes. L’hépatite alcoolique donne un ictère récent, une fièvre et une dénutrition. Un trouble de conscience évoque une encéphalopathie hépatique, une encéphalopathie de Wernicke ou un sevrage.')
  + src(ALD))
 
 C.a(5, 'Dépister le trouble de l’usage d’alcool', P(
@@ -55,14 +55,14 @@ C.a(5, 'Dépister le trouble de l’usage d’alcool', P(
  + quiz('Quel marqueur permet de documenter une abstinence sur plusieurs mois ?',
    [('GGT sérique', False), ('Éthylglucuronide dans les cheveux', True), ('ALAT sérique', False)],
    'L’éthylglucuronide capillaire reflète la consommation sur une fenêtre allant jusqu’à environ six mois ; l’urinaire, sur environ 80 heures (EASL 2018, tableau 5).')
- + key('Terme : trouble de l’usage d’alcool (DSM-5). Dépistage : AUDIT ou AUDIT-C. Abstinence : éthylglucuronide urinaire ou capillaire. Intervention brève et équipe multidisciplinaire.')
+ + key('Le terme correct est trouble de l’usage d’alcool (DSM-5). On le dépiste par l’AUDIT ou l’AUDIT-C, et l’on vérifie l’abstinence par l’éthylglucuronide urinaire ou capillaire. Il se traite par une intervention brève et une équipe multidisciplinaire.')
  + src(ALD))
 
 C.a(6, 'Démarche diagnostique de l’atteinte hépatique', P(
  'Une fois la consommation établie, il reste à mesurer l’atteinte hépatique. Ainsi, le bilan comporte la GGT, l’ALAT et l’ASAT, mais aussi un test de fibrose, par exemple l’' + w('k70-elasto', 'élastographie impulsionnelle') + ', car une fibrose avancée peut coexister avec des tests normaux (grade A1). De plus, toute anomalie conduit à une échographie, et d’autres causes sont recherchées : sérologies des hépatites B et C, ferritine et saturation de la transferrine notamment.',
  'Cependant, l’alcool ne s’affirme pas par l’imagerie, qui ne sert qu’à décrire la stéatose, la cirrhose et ses complications. C’est pourquoi la ' + w('k70-biopsie', 'biopsie hépatique') + ' est requise en cas d’incertitude diagnostique, pour un stadage précis ou dans les essais (grade A1). En outre, si une cirrhose est présente, la recherche de varices suit les critères de Baveno, et une surveillance clinique, biologique et échographique est instaurée.')
  + C.img('k70_steatose.gif', 'Coupe histologique de foie colorée : nombreux hépatocytes remplis de grandes vacuoles claires et amas éosinophiles irréguliers dans certains hépatocytes.', 'Biopsie hépatique dans une maladie alcoolique : stéatose macrovacuolaire (vacuoles claires) et hyalin de Mallory (inclusions éosinophiles), sur un foie cirrhotique.', credit({'auteur': 'Ed Uthman', 'licence': 'CC BY 2.0', 'url': 'https://commons.wikimedia.org/wiki/File:Mallorys_Hyalin_in_Alcoholic_Liver_Disease_(2632109950).jpg'}))
- + key('Tests hépatiques et test de fibrose chez tout buveur excessif ; échographie si anomalie ; causes associées ; biopsie si doute ou stadage nécessaire.')
+ + key('Tout buveur excessif reçoit des tests hépatiques et un test de fibrose ; une anomalie conduit à une échographie et à la recherche de causes associées, et la biopsie sert en cas de doute ou de stadage nécessaire.')
  + src(ALD, BAV))
 
 C.a(7, 'Reconnaître l’hépatite alcoolique', P(
@@ -72,20 +72,20 @@ C.a(7, 'Reconnaître l’hépatite alcoolique', P(
  + quiz('Une patiente buveuse a un ictère, une bilirubine à 180 µmol/l et une ASAT à 1 450 UI/l. Que penser ?',
    [('Hépatite alcoolique typique', False), ('Valeur inhabituelle : chercher une autre cause (virale, ischémique, médicamenteuse)', True), ('Stéatose simple', False)],
    'Dans l’hépatite alcoolique, l’ASAT dépasse rarement 300 UI/l (EASL 2018) ; une cytolyse massive oriente vers une autre cause, comme une intoxication au paracétamol ou une hépatite virale.')
- + key('Ictère récent + buveur excessif ; bilirubine > 50 µmol/l ; ASAT > 2 × normale mais rarement > 300 UI/l ; ASAT/ALAT > 1,5-2 ; biopsie transjugulaire si doute.')
+ + key('Un buveur excessif a un ictère récent, une bilirubine > 50 µmol/l et des ASAT > 2 × la normale, mais rarement > 300 UI/l, avec un rapport ASAT/ALAT > 1,5-2. En cas de doute, on fait une biopsie transjugulaire, car elle reste possible malgré les troubles de la coagulation.')
  + src(ALD))
 
 C.a(8, 'Évaluer la gravité de l’hépatite alcoolique', P(
  'Le diagnostic posé, la décision dépend de la gravité. Ainsi, les scores pronostiques doivent être utilisés pour identifier les formes sévères (grade A1). En effet, une ' + w('k70-mdf', 'fonction discriminante de Maddrey') + ' d’au moins 32 définit l’hépatite alcoolique sévère et sert habituellement de seuil de traitement ; à l’inverse, une forme non sévère (inférieure à 32) a une mortalité à un mois inférieure à 10 %.',
  'De plus, d’autres scores sont validés : le ' + w('k70-meld', 'score MELD') + ', le ' + w('k70-gahs', 'score de Glasgow') + ' et le score ' + w('k70-abic', 'ABIC') + '. Par exemple, une fonction de Maddrey d’au moins 32 associée à un score de Glasgow d’au moins 9 désigne un mauvais pronostic et un bénéfice des corticoïdes à 84 jours. Toutefois, ces scores reposent largement sur les mêmes variables et prédisent la survie à court terme avec une efficacité comparable (EASL 2018).')
- + key('Sévère : Maddrey ≥ 32 (ou MELD, Glasgow, ABIC). Maddrey < 32 : mortalité à un mois < 10 %. Glasgow ≥ 9 avec Maddrey ≥ 32 : bénéfice des corticoïdes.')
+ + key('La forme est sévère si le Maddrey est ≥ 32 (ou selon le MELD, le Glasgow ou l’ABIC). Sous 32, la mortalité à un mois est < 10 %. Un Glasgow ≥ 9 avec un Maddrey ≥ 32 désigne les patients qui bénéficient des corticoïdes.')
  + src(ALD, MDF))
 
 C.a(9, 'Traiter l’hépatite alcoolique sévère', P(
  'En cas de forme sévère, la corticothérapie se discute. Ainsi, en l’absence d’infection active, la ' + w('k70-d-prednisolone', 'prednisolone') + ' 40 mg/j ou la méthylprednisolone 32 mg/j doivent être envisagées pour réduire la mortalité à court terme (grade A1), pendant 28 jours. Cependant, l’essai ' + w('k70-stopah', 'STOPAH') + ' n’a montré qu’une réduction limite de la mortalité à 28 jours, et aucun bénéfice au-delà d’un mois ; c’est pourquoi l’EASL précise que les corticoïdes n’influencent pas la survie à moyen et long terme.',
  'De plus, la ' + w('k70-d-nac', 'N-acétylcystéine') + ' intraveineuse pendant cinq jours peut être associée aux corticoïdes (grade B2). Par ailleurs, l’infection doit être recherchée systématiquement avant le traitement, pendant la corticothérapie et au cours du suivi (grade A1), car les corticoïdes exposent au sepsis et à l’hémorragie digestive. Enfin, une ' + w('k70-nutrition', 'évaluation nutritionnelle') + ' vise un apport d’au moins 35 à 40 kcal/kg et de 1,2 à 1,5 g/kg de protéines par jour, par voie orale en première intention (grade A2).')
  + alert('Avant toute corticothérapie : hémocultures, examen d’urine, radiographie thoracique et ponction d’ascite si présente. Une infection active contre-indique le traitement tant qu’elle n’est pas contrôlée.', 'Infection d’abord.')
- + key('Sévère et sans infection active : prednisolone 40 mg/j (ou méthylprednisolone 32 mg/j) 28 jours ; ± N-acétylcystéine IV 5 jours ; 35-40 kcal/kg/j et 1,2-1,5 g/kg/j de protéines ; dépistage répété des infections.')
+ + key('Dans la forme sévère sans infection active, on donne de la prednisolone 40 mg/j (ou de la méthylprednisolone 32 mg/j) pendant 28 jours, éventuellement avec de la N-acétylcystéine IV pendant 5 jours. Le patient reçoit 35-40 kcal/kg/j et 1,2-1,5 g/kg/j de protéines, et l’on dépiste les infections de façon répétée.')
  + src(ALD, STOP))
 
 C.a(10, 'Juger la réponse au septième jour', P(
@@ -94,32 +94,32 @@ C.a(10, 'Juger la réponse au septième jour', P(
  + quiz('Au septième jour de prednisolone, le score de Lille vaut 0,62. Que faire ?',
    [('Poursuivre jusqu’au 28e jour', False), ('Arrêter les corticoïdes et discuter une transplantation précoce chez un patient sélectionné', True), ('Doubler la dose', False)],
    'Un score de Lille ≥ 0,56 définit le non-répondeur nul : les corticoïdes sont arrêtés, et une transplantation précoce peut être proposée à une minorité de patients sélectionnés (EASL 2018).')
- + key('Lille J7 : ≥ 0,45 non-réponse ; ≥ 0,56 non-répondeur nul → arrêt. Répondeur : 28 jours puis arrêt ou décroissance sur 3 semaines.')
+ + key('À J7, un Lille ≥ 0,45 signale une non-réponse, et un Lille ≥ 0,56 un non-répondeur nul, ce qui impose l’arrêt. Le répondeur poursuit 28 jours, puis arrête ou décroît sur 3 semaines.')
  + src(ALD))
 
 C.a(11, 'Cirrhose alcoolique et transplantation', P(
  'Au-delà de l’épisode aigu, la cirrhose alcoolique impose une prise en charge au long cours. Ainsi, l’abstinence complète doit être conseillée et encouragée pour réduire les complications et la mortalité (grade A1) ; de plus, les cofacteurs, comme l’obésité, l’insulinorésistance, la dénutrition, le tabac, la surcharge en fer et les hépatites virales, sont recherchés et traités. En outre, les règles générales de la cirrhose s’appliquent : prévention de la décompensation selon Baveno VII, dépistage des varices et surveillance du carcinome hépatocellulaire, dont l’incidence annuelle est d’environ 2,6 % chez les patients Child-Pugh A et B.',
  'Par ailleurs, la ' + w('k70-tx', 'transplantation hépatique') + ' doit être envisagée chez le patient Child-Pugh C ou avec un MELD d’au moins 15, car elle confère un bénéfice de survie (grade A1). Cependant, la sélection ne doit pas reposer sur le seul critère des six mois d’abstinence (grade A2) ; en effet, la durée d’abstinence exigée dépend de la gravité hépatique et du profil addictologique, et l’évaluation est multidisciplinaire avant et après la greffe.')
- + key('Abstinence complète, cofacteurs, règles générales de la cirrhose (Baveno VII, carcinome hépatocellulaire). Transplantation si Child-Pugh C ou MELD ≥ 15, sans s’en tenir à la règle des six mois.')
+ + key('Le patient vise l’abstinence complète, traite ses cofacteurs et suit les règles générales de la cirrhose (Baveno VII, carcinome hépatocellulaire). On discute la transplantation en Child-Pugh C ou si le MELD est ≥ 15, sans s’en tenir à la règle des six mois.')
  + C.pareto('pareto-k70-clinique', 'Maladie alcoolique du foie', ['k70-2', 'k70-5', 'k70-7', 'k70-8', 'k70-9', 'k70-10', 'k70-11'],
      ['Risque au-delà de 30 g/j d’alcool.',
-      'AUDIT-C pour dépister ; éthylglucuronide pour l’abstinence.',
+      'L’AUDIT-C dépiste, et l’éthylglucuronide vérifie l’abstinence.',
       'Hépatite alcoolique : ictère récent, ASAT rarement > 300 UI/l.',
       'Sévère : Maddrey ≥ 32.',
-      'Prednisolone 40 mg/j 28 jours, sans infection active.',
-      'Lille J7 ≥ 0,45 : non-réponse ; arrêt.',
+      'La prednisolone se donne à 40 mg/j pendant 28 jours, en l’absence d’infection active.',
+      'Un Lille à J7 ≥ 0,45 signale une non-réponse et fait arrêter les corticoïdes.',
       'Transplantation si Child-Pugh C ou MELD ≥ 15.'])
  + src(ALD, BAV))
 
 C.a(12, 'Synthèse et retour au cas', P(
  'Pour conclure, reprenons la patiente du début. Sa bilirubine vaut 210 µmol/l et son ASAT 160 UI/l ; de plus, le taux de prothrombine est allongé et la fonction de Maddrey atteint 48. Il s’agit donc d’une hépatite alcoolique sévère. Or, l’examen d’urine montre une infection urinaire : c’est pourquoi celle-ci est traitée d’abord, puis la prednisolone 40 mg/j est débutée.',
  'Ensuite, au septième jour, la bilirubine a baissé et le score de Lille vaut 0,21 : la patiente est donc une répondeuse partielle, et le traitement est poursuivi jusqu’au 28e jour. Parallèlement, la nutrition, les vitamines du groupe B et le sevrage encadré sont mis en place. Enfin, l’abstinence est préparée avec l’équipe d’addictologie, car c’est elle qui déterminera la survie à long terme.')
- + key('Maddrey ≥ 32 → infection traitée → prednisolone → Lille J7 → poursuite ou arrêt ; nutrition, thiamine et abstinence pour le long terme.')
+ + key('Si le Maddrey est ≥ 32, on traite d’abord l’infection, puis on donne la prednisolone et on calcule le Lille à J7 pour poursuivre ou arrêter. À long terme, la nutrition, la thiamine et l’abstinence restent indispensables.')
  + src(ALD))
 
 C.a(13, 'Critères formels et paramètres clés', alert(
- '<p><b>Hépatite alcoolique.</b> Ictère d’apparition récente chez un buveur excessif ; bilirubine > 50 µmol/l ; ASAT > 2 × la normale, rarement > 300 UI/l ; ASAT/ALAT > 1,5-2. <b>Gravité.</b> Maddrey ≥ 32. <b>Réponse.</b> Lille J7 ≥ 0,45 : non-réponse ; ≥ 0,56 : non-répondeur nul.</p>', 'Critères.')
- + '<div class="key"><b>Paramètres clés.</b> Risque > 30 g/j ; prednisolone 40 mg/j ou méthylprednisolone 32 mg/j, 28 jours ; N-acétylcystéine IV 5 jours (grade B2) ; 35-40 kcal/kg/j et 1,2-1,5 g/kg/j de protéines ; benzodiazépines du sevrage ≤ 10-14 jours ; transplantation si Child-Pugh C ou MELD ≥ 15.</div>'
+ '<p>On parle d’<b>hépatite alcoolique</b> quand un buveur excessif a un ictère récent, une bilirubine > 50 µmol/l et des ASAT > 2 × la normale, rarement > 300 UI/l, avec un rapport ASAT/ALAT > 1,5-2. La <b>gravité</b> se définit par un Maddrey ≥ 32. Pour la <b>réponse</b>, un Lille à J7 ≥ 0,45 signale une non-réponse, et ≥ 0,56 un non-répondeur nul.</p>', 'Critères.')
+ + '<div class="key"><b>Paramètres clés.</b> Le risque apparaît au-delà de 30 g/j. La prednisolone se donne à 40 mg/j, ou la méthylprednisolone à 32 mg/j, pendant 28 jours, et la N-acétylcystéine IV pendant 5 jours (grade B2). Le patient reçoit 35-40 kcal/kg/j et 1,2-1,5 g/kg/j de protéines. Les benzodiazépines du sevrage ne dépassent pas 10-14 jours, et la transplantation se discute en Child-Pugh C ou si le MELD est ≥ 15.</div>'
  + src(ALD))
 
 # ---------------- Examens
@@ -133,17 +133,17 @@ C.e(1, 'Hiérarchie des examens', P(
    ['Hépatite alcoolique sévère ?', w('k70-mdf', 'Maddrey') + ', ' + w('k70-meld', 'MELD'), 'Ictère récent'],
    ['Diagnostic incertain ?', w('k70-biopsie', 'Biopsie transjugulaire'), 'Doute diagnostique']])
  + P('Le tableau se lit de haut en bas : ainsi, la biopsie n’intervient qu’après l’échec des examens simples à trancher.')
- + key('AUDIT-C, puis tests hépatiques et élastographie, puis échographie ; scores de gravité si ictère ; biopsie en cas de doute.')
+ + key('On fait l’AUDIT-C, puis les tests hépatiques et l’élastographie, puis l’échographie ; un ictère impose les scores de gravité, et un doute la biopsie.')
  + src(ALD))
 
 C.e(2, 'Interpréter les marqueurs de l’alcool', P(
  'Les marqueurs indirects, comme la GGT, l’ASAT, l’ALAT, le volume globulaire moyen et la transferrine carboxy-déficiente, reflètent une consommation chronique excessive ; cependant, leur sensibilité et leur spécificité sont modestes, et la maladie hépatique elle-même les modifie. En revanche, les marqueurs directs mesurent l’éthanol ou ses métabolites : l’alcool expiré ou sérique pendant 4 à 12 heures, l’éthylglucuronide urinaire jusqu’à environ 80 heures et l’éthylglucuronide capillaire jusqu’à six mois (EASL 2018, tableau 5).',
  'Par conséquent, le choix dépend de la question. Ainsi, pour une consommation récente, l’éthylglucuronide urinaire suffit ; à l’inverse, pour documenter une abstinence prolongée avant une greffe, l’éthylglucuronide capillaire est préféré.')
- + key('Indirects (GGT, VGM, CDT) : chroniques, peu spécifiques. Directs : éthanol 4-12 h ; éthylglucuronide urinaire ≈ 80 h ; capillaire ≤ 6 mois.')
+ + key('Les marqueurs indirects (GGT, VGM, CDT) reflètent une consommation chronique, mais sont peu spécifiques. Les marqueurs directs couvrent des fenêtres différentes : l’éthanol 4-12 h, l’éthylglucuronide urinaire environ 80 h et l’éthylglucuronide capillaire jusqu’à 6 mois.')
  + C.pareto('pareto-k70-examens', 'Examens', ['k70-e-1', 'k70-e-2'],
      ['AUDIT-C pour dépister.',
       'Élastographie : une fibrose avancée peut avoir des tests normaux.',
-      'Maddrey ≥ 32 : hépatite sévère.',
+      'Un Maddrey ≥ 32 définit l’hépatite sévère.',
       'Éthylglucuronide capillaire : abstinence sur ≤ 6 mois.'])
  + src(ALD))
 
@@ -170,7 +170,7 @@ C.p(1, 'Stratégie et classes', P(
    ['Maintien de l’abstinence', 'Acamprosate', 'Après sevrage, avec prise en charge psychosociale', w('k70-d-acamprosate', 'Monographie')],
    ['Sevrage', 'Benzodiazépines', 'Syndrome de sevrage, ≤ 10-14 jours', w('k70-sevrage', 'Fiche')]])
  + P('Le tableau se lit par la colonne « Place » : ainsi, aucun médicament ne remplace la prise en charge psychosociale de l’addiction, que l’EASL juge l’élément le plus important.')
- + key('Prednisolone pour l’hépatite sévère ; acamprosate pour l’abstinence ; benzodiazépines brèves pour le sevrage ; vitamines B.')
+ + key('La prednisolone traite l’hépatite sévère, l’acamprosate soutient l’abstinence, des benzodiazépines brèves traitent le sevrage, et les vitamines B préviennent l’encéphalopathie de Wernicke.')
  + src(ALD))
 
 C.p(2, 'Doses et statut réglementaire', P('Les éléments suivants proviennent de l’EASL 2018 et des informations professionnelles suisses ; de plus, les écarts sont signalés.')
@@ -188,10 +188,10 @@ C.p(2, 'Doses et statut réglementaire', P('Les éléments suivants proviennent 
 C.p(3, 'Surveillance et effets indésirables', alert(
  'Sous corticoïdes, l’infection est le principal risque : bactérienne, mais aussi aspergillose invasive et pneumocystose, de pronostic très sombre. C’est pourquoi l’infection est recherchée avant, pendant et après le traitement (grade A1), et le score de Lille est calculé au septième jour.', 'Sécurité.')
  + P('Par ailleurs, les benzodiazépines du sevrage ne doivent pas dépasser 10 à 14 jours, en raison du risque d’abus et d’encéphalopathie (grade A1). De plus, une supplémentation en vitamines du groupe B prévient l’encéphalopathie de Wernicke. Enfin, le paracétamol à dose thérapeutique peut léser le foie du buveur chronique dénutri : sa dose est donc surveillée.')
- + key('Infections sous corticoïdes ; Lille J7 ; benzodiazépines ≤ 10-14 jours ; vitamines B ; prudence avec le paracétamol.')
+ + key('Sous corticoïdes, on surveille les infections et l’on calcule le Lille à J7. Les benzodiazépines ne dépassent pas 10-14 jours, on donne des vitamines B, et l’on reste prudent avec le paracétamol.')
  + C.pareto('pareto-k70-pharma', 'Pharmacologie', ['k70-p-1', 'k70-p-2', 'k70-p-3'],
      ['Prednisolone 40 mg/j 28 jours si sévère et sans infection.',
-      'Arrêt si Lille ≥ 0,56 (non-répondeur nul).',
+      'On arrête si le Lille est ≥ 0,56 (non-répondeur nul).',
       'Acamprosate : contre-indiqué si créatinine > 120 µmol/l.',
       'Disulfirame : contre-indiqué si hépatopathie avancée.',
       'Benzodiazépines ≤ 10-14 jours ; vitamines B.'])
@@ -200,30 +200,30 @@ C.p(3, 'Surveillance et effets indésirables', alert(
 # ---------------- Fenêtres
 L = lab
 C.pop('k70-ha', 'Hépatite alcoolique', L(('Définition', 'Syndrome d’ictère d’apparition récente chez un buveur excessif, sous-tendu par une stéatohépatite.'), ('Biologie (EASL 2018)', 'Bilirubine > 50 µmol/l ; ASAT > 2 × normale, rarement > 300 UI/l ; ASAT/ALAT > 1,5-2 ; polynucléose.'), ('Code', 'K70.1.')) + src(ALD))
-C.pop('k70-tua', 'Trouble de l’usage d’alcool', L(('Définition', 'Terme du DSM-5, qui remplace « abus » et « dépendance ».'), ('Dépistage', 'AUDIT ou AUDIT-C (grade A1).'), ('Prise en charge', 'Intervention brève, équipe multidisciplinaire, psychothérapie, médicaments.')) + src(ALD))
-C.pop('k70-mdf', 'Fonction discriminante de Maddrey (modifiée)', L(('Formule', '4,6 × (temps de prothrombine du patient − témoin, en secondes) + bilirubine (mg/dl).'), ('Seuil', '≥ 32 : hépatite alcoolique sévère, seuil habituel de traitement.'), ('Pronostic', '< 32 : mortalité à un mois < 10 %.')) + src(MDF, ALD))
-C.pop('k70-meld', 'Score MELD', L(('Variables', 'Bilirubine, INR, créatinine.'), ('Usage', 'Pronostic à court terme de l’hépatite alcoolique ; priorité de greffe ; MELD ≥ 15 : discuter la transplantation dans la cirrhose alcoolique.')) + src(ALD))
+C.pop('k70-tua', 'Trouble de l’usage d’alcool', L(('Définition', 'Terme du DSM-5, qui remplace « abus » et « dépendance ».'), ('Dépistage', 'AUDIT ou AUDIT-C (grade A1).'), ('Prise en charge', 'On associe une intervention brève, une équipe multidisciplinaire, une psychothérapie et des médicaments, car l’abstinence est le premier facteur pronostique.')) + src(ALD))
+C.pop('k70-mdf', 'Fonction discriminante de Maddrey (modifiée)', L(('Formule', '4,6 × (temps de prothrombine du patient − témoin, en secondes) + bilirubine (mg/dl).'), ('Seuil', 'Un score ≥ 32 définit l’hépatite alcoolique sévère et constitue le seuil habituel de traitement.'), ('Pronostic', '< 32 : mortalité à un mois < 10 %.')) + src(MDF, ALD))
+C.pop('k70-meld', 'Score MELD', L(('Variables', 'Il combine la bilirubine, l’INR et la créatinine.'), ('Usage', 'Il prédit la mortalité à court terme de l’hépatite alcoolique et priorise la greffe ; dans la cirrhose alcoolique, un MELD ≥ 15 fait discuter la transplantation.')) + src(ALD))
 C.pop('k70-gahs', 'Score de Glasgow de l’hépatite alcoolique', L(('Variables', 'Âge, bilirubine, urée, temps de prothrombine, leucocytes.'), ('Échelle', '5 à 12.'), ('Seuil', '≥ 9 avec Maddrey ≥ 32 : mauvais pronostic, bénéfice des corticoïdes à 84 jours.')) + src(ALD))
-C.pop('k70-abic', 'Score ABIC', L(('Variables', 'Âge, bilirubine, INR, créatinine.'), ('Usage', 'Risque de décès à 90 jours : faible, intermédiaire ou élevé.')) + src(ALD))
-C.pop('k70-lille', 'Score de Lille', L(('Variables', 'Données initiales et évolution de la bilirubine entre J0 et J7 de corticoïdes.'), ('Seuils', '≤ 0,16 : répondeur complet ; 0,16-0,56 : partiel ; ≥ 0,56 : non-répondeur nul ; ≥ 0,45 : non-réponse.'), ('Conduite', 'Arrêt des corticoïdes en cas de non-réponse.')) + src(ALD))
-C.pop('k70-steatose', 'Stéatose alcoolique', L(('Lésion', 'Vacuoles lipidiques, surtout macrovacuolaires, dans les hépatocytes.'), ('Fréquence', 'Environ 90 % des buveurs excessifs.'), ('Évolution', 'Peut régresser complètement en quelques semaines d’abstinence.')) + src(ALD))
-C.pop('k70-sha', 'Stéatohépatite alcoolique', L(('Lésions', 'Stéatose, ballonnisation, nécrose, inflammation lobulaire à polynucléaires.'), ('Portée', 'Lésion progressive, qui augmente le risque de cirrhose et de carcinome hépatocellulaire.')) + src(ALD))
-C.pop('k70-mallory', 'Corps de Mallory-Denk', L(('Nature', 'Inclusions éosinophiles des hépatocytes ballonnisés, faites surtout de kératines 8 et 18.'), ('Valeur', 'Évocateurs, mais non spécifiques, de stéatohépatite.')) + src(ALD))
-C.pop('k70-pnpla3', 'Gène PNPLA3', L(('Rôle', 'Variants associés à un risque accru de lésions hépatiques alcooliques chez les sujets caucasiens.'), ('Usage', 'Facteur de risque ; pas de test de routine recommandé.')) + src(ALD))
-C.pop('k70-ictere', 'Ictère', L(('Signe', 'Coloration jaune de la peau et des sclères par la bilirubine.'), ('Valeur ici', 'Signe cardinal de l’hépatite alcoolique quand il est récent.')) + src(ALD))
-C.pop('k70-wernicke', 'Encéphalopathie de Wernicke', L(('Cause', 'Carence en thiamine (vitamine B1).'), ('Prévention', 'Vitamines du groupe B chez le patient alcoolique, notamment dans l’hépatite alcoolique.'), ('Diagnostic différentiel', 'Encéphalopathie hépatique, sevrage.')) + src(ALD))
-C.pop('k70-sevrage', 'Syndrome de sevrage alcoolique', L(('Traitement', 'Benzodiazépines (ou clométhiazole), à limiter à 10-14 jours (grade A1).'), ('Risque', 'Abus et encéphalopathie en cas de prolongation.')) + src(ALD))
-C.pop('k70-audit', 'Questionnaire AUDIT', L(('Contenu', 'Dix questions de l’OMS sur la consommation, la dépendance et les conséquences ; AUDIT-C : les trois premières, sur la consommation.'), ('Usage', 'Dépistage du trouble de l’usage d’alcool (grade A1).')) + src(ALD))
-C.pop('k70-cdt', 'Transferrine carboxy-déficiente', L(('Type', 'Marqueur indirect sérique de consommation chronique excessive.'), ('Limite', 'Sensibilité et spécificité modestes ; facteurs de confusion.')) + src(ALD))
-C.pop('k70-etg', 'Éthylglucuronide', L(('Type', 'Métabolite direct de l’éthanol.'), ('Fenêtre', 'Urine : jusqu’à environ 80 h ; cheveux : jusqu’à 6 mois.'), ('Usage', 'Vérification de l’abstinence (grade A2).')) + src(ALD))
-C.pop('k70-elasto', 'Élastographie impulsionnelle', L(('Usage', 'Mesure de la fibrose chez tout buveur excessif dépisté (grade A1).'), ('Piège', 'Inflammation d’une hépatite alcoolique : valeurs surestimées.')) + src(ALD))
-C.pop('k70-biopsie', 'Biopsie hépatique', L(('Indications (grade A1)', 'Incertitude diagnostique, stadage précis, essais cliniques.'), ('Voie', 'Transjugulaire dans l’hépatite alcoolique (troubles de la coagulation).'), ('Rendement', 'Autre diagnostic dans 10 à 20 % des cas.')) + src(ALD))
-C.pop('k70-stopah', 'Essai STOPAH', L(('Plan', 'Essai britannique 2011-2014 : prednisolone et pentoxifylline dans l’hépatite alcoolique sévère.'), ('Résultat', 'Réduction limite de la mortalité à 28 jours sous prednisolone, aucun bénéfice au-delà d’un mois.')) + src(STOP, ALD))
-C.pop('k70-nutrition', 'Nutrition de l’hépatite alcoolique', L(('Objectifs (grade A2)', '≥ 35-40 kcal/kg/j ; 1,2-1,5 g/kg/j de protéines ; voie orale en premier.'), ('Risque', 'Apport < 21,5 kcal/kg/j : mortalité et infections accrues.'), ('Si échec', 'Nutrition entérale par sonde.')) + src(ALD))
-C.pop('k70-tx', 'Transplantation hépatique', L(('Cirrhose alcoolique (grade A1)', 'Child-Pugh C et/ou MELD ≥ 15.'), ('Abstinence', 'Pas de seul critère des six mois ; évaluation multidisciplinaire.'), ('Hépatite sévère', 'Greffe précoce chez une minorité de non-répondeurs sélectionnés.')) + src(ALD))
-C.pop('k70-d-prednisolone', 'Prednisolone', L(('Dose (EASL 2018)', '40 mg/j, 28 jours ; arrêt brutal ou décroissance sur 3 semaines.'), ('Contre-indication pratique', 'Infection active non contrôlée.'), ('Statut suisse', 'Hépatite alcoolique absente des indications de la FI ; réduction de dose possible en cas de cirrhose.')) + src(ALD, FI('Prednisolone Streuli®')))
-C.pop('k70-d-nac', 'N-acétylcystéine', L(('Principe', 'Restaure le glutathion et limite le stress oxydatif.'), ('Place', 'Intraveineuse, 5 jours, avec corticoïdes (grade B2) ; seule, pas de bénéfice de survie.')) + src(ALD))
-C.pop('k70-d-acamprosate', 'Acamprosate (Campral®)', L(('Indication suisse', 'Maintien de l’abstinence après sevrage, avec mesures psychosociales.'), ('Dose', '2 comprimés 3 fois par jour, débuté vers le 5e jour d’abstinence, 6 à 12 mois.'), ('Contre-indications', 'Créatinine > 120 µmol/l, allaitement ; prudence en Child-Pugh C.')) + src(FI('Campral®'), ALD))
+C.pop('k70-abic', 'Score ABIC', L(('Variables', 'Il combine l’âge, la bilirubine, l’INR et la créatinine.'), ('Usage', 'Il classe le risque de décès à 90 jours en faible, intermédiaire ou élevé.')) + src(ALD))
+C.pop('k70-lille', 'Score de Lille', L(('Variables', 'Il combine les données initiales et l’évolution de la bilirubine entre J0 et J7 de corticoïdes.'), ('Seuils', 'Un score ≤ 0,16 signale un répondeur complet, de 0,16 à 0,56 un répondeur partiel et ≥ 0,56 un non-répondeur nul ; à partir de 0,45, on parle de non-réponse.'), ('Conduite', 'On arrête les corticoïdes en cas de non-réponse, car ils n’apportent alors que le risque infectieux.')) + src(ALD))
+C.pop('k70-steatose', 'Stéatose alcoolique', L(('Lésion', 'Les hépatocytes contiennent des vacuoles lipidiques, surtout macrovacuolaires.'), ('Fréquence', 'Elle touche environ 90 % des buveurs excessifs.'), ('Évolution', 'Peut régresser complètement en quelques semaines d’abstinence.')) + src(ALD) + C.img('k70_steatose.gif', 'Histologie : hépatocytes remplis de grandes vacuoles lipidiques.', 'Les grandes vacuoles repoussent le noyau en périphérie ; elles traduisent l’accumulation de triglycérides due à l’excès de NADH.', credit({'auteur': 'Ed Uthman', 'licence': 'CC BY 2.0', 'url': 'https://commons.wikimedia.org/wiki/File:Mallorys_Hyalin_in_Alcoholic_Liver_Disease_(2632109950).jpg'})))
+C.pop('k70-sha', 'Stéatohépatite alcoolique', L(('Lésions', 'Elle associe une stéatose, une ballonnisation, une nécrose et une inflammation lobulaire à polynucléaires.'), ('Portée', 'Lésion progressive, qui augmente le risque de cirrhose et de carcinome hépatocellulaire.')) + src(ALD) + C.img('k70_hepatite.gif', 'Histologie : hépatocytes ballonnisés, inclusions éosinophiles et polynucléaires.', 'Les hépatocytes ballonnisés, les corps de Mallory-Denk et les polynucléaires signent la stéatohépatite ; c’est cette inflammation que les corticoïdes freinent.', credit({'auteur': 'Countincr (Wikipédia en anglais), image PEIR, université d’Alabama à Birmingham', 'licence': 'CC BY-SA 2.5', 'url': 'https://commons.wikimedia.org/wiki/File:Alcoholic_hepatitis.jpg'})))
+C.pop('k70-mallory', 'Corps de Mallory-Denk', L(('Nature', 'Inclusions éosinophiles des hépatocytes ballonnisés, faites surtout de kératines 8 et 18.'), ('Valeur', 'Ils évoquent une stéatohépatite, mais ne sont pas spécifiques.')) + src(ALD))
+C.pop('k70-pnpla3', 'Gène PNPLA3', L(('Rôle', 'Variants associés à un risque accru de lésions hépatiques alcooliques chez les sujets caucasiens.'), ('Usage', 'C’est un facteur de risque, mais on ne recommande pas de le tester en routine.')) + src(ALD))
+C.pop('k70-ictere', 'Ictère', L(('Signe', 'La bilirubine colore en jaune la peau et les sclères.'), ('Valeur ici', 'Signe cardinal de l’hépatite alcoolique quand il est récent.')) + src(ALD) + C.img('k70_ictere.gif', 'Œil à sclère franchement jaune.', 'La sclère jaunit tôt, car son élastine fixe la bilirubine ; on la voit le mieux à la lumière du jour.', credit({'auteur': 'CDC / Dr Thomas F. Sellers, Emory University ; travail dérivé : த.உழவன்', 'licence': 'domaine public', 'url': 'https://commons.wikimedia.org/wiki/File:Jaundice_eye_new.jpg'})))
+C.pop('k70-wernicke', 'Encéphalopathie de Wernicke', L(('Cause', 'Elle est due à une carence en thiamine (vitamine B1).'), ('Prévention', 'Vitamines du groupe B chez le patient alcoolique, notamment dans l’hépatite alcoolique.'), ('Diagnostic différentiel', 'Il faut la distinguer de l’encéphalopathie hépatique et du sevrage.')) + src(ALD))
+C.pop('k70-sevrage', 'Syndrome de sevrage alcoolique', L(('Traitement', 'Benzodiazépines (ou clométhiazole), à limiter à 10-14 jours (grade A1).'), ('Risque', 'Si on prolonge les benzodiazépines, elles exposent à l’abus et à l’encéphalopathie.')) + src(ALD))
+C.pop('k70-audit', 'Questionnaire AUDIT', L(('Contenu', 'Il comporte dix questions de l’OMS sur la consommation, la dépendance et les conséquences ; l’AUDIT-C reprend les trois premières, qui portent sur la consommation.'), ('Usage', 'Dépistage du trouble de l’usage d’alcool (grade A1).')) + src(ALD))
+C.pop('k70-cdt', 'Transferrine carboxy-déficiente', L(('Type', 'C’est un marqueur sérique indirect de consommation chronique excessive.'), ('Limite', 'Sa sensibilité et sa spécificité sont modestes, et des facteurs de confusion existent.')) + src(ALD))
+C.pop('k70-etg', 'Éthylglucuronide', L(('Type', 'C’est un métabolite direct de l’éthanol.'), ('Fenêtre', 'Il reste détectable jusqu’à environ 80 h dans l’urine et jusqu’à 6 mois dans les cheveux.'), ('Usage', 'Il sert à vérifier l’abstinence (grade A2).')) + src(ALD))
+C.pop('k70-elasto', 'Élastographie impulsionnelle', L(('Usage', 'Mesure de la fibrose chez tout buveur excessif dépisté (grade A1).'), ('Piège', 'L’inflammation d’une hépatite alcoolique surestime les valeurs.')) + src(ALD))
+C.pop('k70-biopsie', 'Biopsie hépatique', L(('Indications (grade A1)', 'On la fait en cas d’incertitude diagnostique, de besoin d’un stadage précis ou d’essai clinique.'), ('Voie', 'Transjugulaire dans l’hépatite alcoolique (troubles de la coagulation).'), ('Rendement', 'Elle trouve un autre diagnostic dans 10 à 20 % des cas.')) + src(ALD))
+C.pop('k70-stopah', 'Essai STOPAH', L(('Plan', 'Cet essai britannique de 2011-2014 a testé la prednisolone et la pentoxifylline dans l’hépatite alcoolique sévère.'), ('Résultat', 'La prednisolone a réduit de façon limite la mortalité à 28 jours, sans aucun bénéfice au-delà d’un mois.')) + src(STOP, ALD))
+C.pop('k70-nutrition', 'Nutrition de l’hépatite alcoolique', L(('Objectifs (grade A2)', 'On vise ≥ 35-40 kcal/kg/j et 1,2-1,5 g/kg/j de protéines, d’abord par voie orale, car la dénutrition aggrave le pronostic.'), ('Risque', 'Apport < 21,5 kcal/kg/j : mortalité et infections accrues.'), ('Si échec', 'On passe à une nutrition entérale par sonde.')) + src(ALD))
+C.pop('k70-tx', 'Transplantation hépatique', L(('Cirrhose alcoolique (grade A1)', 'Child-Pugh C et/ou MELD ≥ 15.'), ('Abstinence', 'La règle des six mois ne suffit pas à elle seule ; une évaluation multidisciplinaire décide.'), ('Hépatite sévère', 'Greffe précoce chez une minorité de non-répondeurs sélectionnés.')) + src(ALD))
+C.pop('k70-d-prednisolone', 'Prednisolone', L(('Dose (EASL 2018)', 'On donne 40 mg/j pendant 28 jours, puis on arrête brutalement ou l’on décroît sur 3 semaines.'), ('Contre-indication pratique', 'Infection active non contrôlée.'), ('Statut suisse', 'L’hépatite alcoolique ne figure pas dans les indications de la FI, et la dose peut être réduite en cas de cirrhose.')) + src(ALD, FI('Prednisolone Streuli®')))
+C.pop('k70-d-nac', 'N-acétylcystéine', L(('Principe', 'Elle restaure le glutathion et limite ainsi le stress oxydatif.'), ('Place', 'On la donne par voie intraveineuse pendant 5 jours avec les corticoïdes (grade B2) ; seule, elle n’améliore pas la survie.')) + src(ALD))
+C.pop('k70-d-acamprosate', 'Acamprosate (Campral®)', L(('Indication suisse', 'Il est autorisé pour maintenir l’abstinence après le sevrage, avec des mesures psychosociales.'), ('Dose', '2 comprimés 3 fois par jour, débuté vers le 5e jour d’abstinence, 6 à 12 mois.'), ('Contre-indications', 'Il est contre-indiqué si la créatinine dépasse 120 µmol/l et pendant l’allaitement, et il demande de la prudence en Child-Pugh C.')) + src(FI('Campral®'), ALD))
 
 C.termes = [
  (r'hépatite alcoolique', 'k70-ha'), (r'trouble de l’usage d’alcool', 'k70-tua'), (r'Maddrey', 'k70-mdf'), (r'MELD', 'k70-meld'),
