@@ -68,11 +68,21 @@ def progress(lessons):
 
 
 def gauges(lessons, frequent_codes):
+    # Les cours sont rédigés par catégorie à trois caractères : les sous-codes
+    # (J45.0…) ne sont jamais remplis isolément et fausseraient le dénominateur.
     frequent_codes = set(frequent_codes)
-    frequent = [lesson for lesson in lessons if not '.' in lesson['code']
-                and frequent_codes.intersection(lesson['icd10gm']['codes'])]
-    federal = [lesson for lesson in lessons if lesson['gold_star']['enabled']]
-    return {'frequent': progress(frequent), 'federal_exam': progress(federal), 'global': progress(lessons)}
+    categories = [lesson for lesson in lessons if '.' not in lesson['code']]
+    frequent = [lesson for lesson in categories if frequent_codes.intersection(lesson['icd10gm']['codes'])]
+    federal = [lesson for lesson in categories if lesson['gold_star']['enabled']]
+    return {'frequent': progress(frequent), 'federal_exam': progress(federal), 'global': progress(categories)}
+
+
+def global_gauge(root):
+    """Avancement de tout MEDINA, sur les catégories à trois caractères des 22 fragments."""
+    lessons = []
+    for path in sorted((Path(root) / 'nosology/fragments').glob('*.json')):
+        lessons += [lesson for lesson in read_json(path)['lessons'] if '.' not in lesson['code']]
+    return progress(lessons)
 
 
 def lesson_is_filled(lesson):
@@ -189,7 +199,7 @@ def attach_surface(organisation, root):
     inventory = read_json(path)
     by_code = {item['code']: item for item in inventory['lessons']}
     organisation['nosology'] = inventory
-    organisation['nosology']['global_progress'] = read_json(Path(root) / 'nosology/progress.json')['global']
+    organisation['nosology']['global_progress'] = global_gauge(root)
     frequency = read_json(Path(root) / 'nosology/frequency.json')
     organisation['nosology']['gauges'] = gauges(inventory['lessons'], frequency['codes'])
     fragments = {item['id']: item for item in read_json(Path(root) / 'fragments.json')}

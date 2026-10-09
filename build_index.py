@@ -129,11 +129,12 @@ def progress(catalogue):
 def gauge(label, part, whole):
     if not whole:
         return (f'<span class="gauge" data-empty><span class="gauge-label">{label}</span><span class="gauge-track" aria-hidden="true">'
-                '<span class="gauge-fluid" style="width:0%"></span></span><span class="gauge-value" title="Non applicable">0 %</span></span>')
-    pct = round(100 * part / whole, 2)
+                '<span class="gauge-fluid" style="width:0%"></span></span><span class="gauge-value" title="Non applicable">(0 / 0) (non applicable)</span></span>')
+    exact = round(100 * part / whole, 1)
+    pct = f'{exact:.1f}'.replace('.', ',').removesuffix(',0')
     return (f'<span class="gauge" role="img" aria-label="{label} : {part} sur {whole}, {pct} %"><span class="gauge-label">{label}</span>'
-            f'<span class="gauge-track" aria-hidden="true"><span class="gauge-fluid" style="width:{pct}%"></span></span>'
-            f'<span class="gauge-value">{pct} %</span></span>')
+            f'<span class="gauge-track" aria-hidden="true"><span class="gauge-fluid" style="width:{exact}%"></span></span>'
+            f'<span class="gauge-value">({part} / {whole}) ({pct} %)</span></span>')
 
 
 MOTIFS = (('M4 12h4l2-5 4 10 2-5h4', 'Quatre onglets par cours'),
@@ -156,6 +157,7 @@ def main():
     cards = []
     total_courses = 0
     totals = [0, 0, 0, 0]
+    nosology_totals = {'frequent': [0, 0], 'federal_exam': [0, 0], 'global': [0, 0]}
     for fragment in fragments:
         ident = fragment['id']
         filename = f"MEDINA_{ident}_{fragment['slug']}.html"
@@ -182,6 +184,8 @@ def main():
         gauges = f'<span class="gauges">{gauge("Catégories", covered, categories)}{gauge("Leçons", done, lessons)}</span>'
         if catalogue.get('nosology', {}).get('gauges'):
             stats = catalogue['nosology']['gauges']
+            for key in nosology_totals:
+                nosology_totals[key][0] += stats[key]['filled']; nosology_totals[key][1] += stats[key]['total']
             gauges = '<span class="gauges">' + ''.join(gauge(label, stats[key]['filled'], stats[key]['total'])
                      for label, key in [('Pathologies fréquentes', 'frequent'), ('Examen fédéral', 'federal_exam'),
                                         ('Avancement global', 'global')]) + '</span>'
@@ -195,10 +199,12 @@ def main():
     covered, categories, done, lessons = totals
     motifs = ''.join(f'<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="{path}"/></svg>{text}</li>' for path, text in MOTIFS)
     overview = (f'<div class="overview" data-testid="portal-overview" aria-label="Progression de l’atlas">'
-                f'<div class="overview-item"><b>{covered}<small> / {categories}</small></b><span>catégories couvertes</span>{gauge("Catégories", covered, categories)}</div>'
-                f'<div class="overview-item"><b>{done}<small> / {lessons}</small></b><span>leçons remplies</span>{gauge("Leçons", done, lessons)}</div>'
-                f'<div class="overview-item"><b>{total_courses}</b><span>cours publiés dans les 22 spécialités</span></div><ul class="motifs" aria-label="Principes de l’atlas">{motifs}</ul></div>'
-                '<p class="legend-note">Jauges : catégories reliées à un cours existant, puis leçons remplies sur le total des leçons et entités prévues. Une coquille vide compte pour zéro leçon remplie.</p>')
+                + ''.join(f'<div class="overview-item"><b>{nosology_totals[key][0]}<small> / {nosology_totals[key][1]}</small></b><span>{text}</span>{gauge(label, *nosology_totals[key])}</div>'
+                          for key, label, text in (('frequent', 'Pathologies fréquentes', 'pathologies fréquentes rédigées'),
+                                                   ('federal_exam', 'Examen fédéral', 'catégories de l’examen fédéral rédigées'),
+                                                   ('global', 'Avancement global', 'catégories CIM rédigées sur les 22 spécialités')))
+                + f'<ul class="motifs" aria-label="Principes de l’atlas">{motifs}</ul></div>'
+                '<p class="legend-note">Jauges calculées sur les catégories CIM-10-GM à trois caractères (les sous-codes sont traités dans le cours de leur catégorie) : (nombre rédigé / total) puis (pourcentage).</p>')
     page = f'''<!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
 <meta name="description" content="Explorez MEDINA : 22 espaces de spécialité pour lire, comprendre et relier les connaissances médicales.">

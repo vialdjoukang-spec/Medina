@@ -381,6 +381,10 @@ def finish_surface(source, fragment, root):
 
     source = re.sub(r'<script([^>]*)>(.*?)</script>', strip, source, flags=re.S)
     source = source.replace('<html ', '<html data-medina-fragment="' + fragment['id'] + '" ', 1)
+    home = ('<a class="medina-home" href="../index.html" aria-label="Retour à l’accueil MEDINA" title="Accueil MEDINA">'
+            '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">'
+            '<path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg><span>Accueil MEDINA</span></a>')
+    source, n = re.subn(r'(<header class="topbar">.*?</button>)', lambda m: m.group(1) + home, source, count=1, flags=re.S)
     # A separate namespace preserves notebooks from the full atlas.
     for key in ('medora.atlas.v3', 'medora.atlas.v1'):
         source = source.replace("'" + key + "'", "'medina.fragment." + fragment['id'] + ".atlas'")
@@ -422,7 +426,7 @@ def finish_surface(source, fragment, root):
     atlas_css = (Path(root) / 'engine/atlas_v2.css').read_text(encoding='utf-8') + (Path(root) / 'engine/atlas_v3.css').read_text(encoding='utf-8') + (Path(root) / 'engine/atlas_v4.css').read_text(encoding='utf-8') + fragment_motif(fragment['id'])
     source = source.replace('</head>', '<style id="medina-atlas-v2">' + faces + atlas_css + '</style></head>', 1)
     reading_css = ''.join((Path(root) / 'engine' / name).read_text(encoding='utf-8')
-                          for name in ('frontend_v3.css', 'reading_v3.css'))
+                          for name in ('frontend_v3.css', 'reading_v3.css', 'harmonie_v5.css'))
     source = source.replace('</head>', '<style id="medina-reading-v3">' + reading_css + '</style></head>', 1)
     source = source.replace('</body>', '<script id="medina-category-organisation-data" type="application/json">' + payload + '</script><script id="medina-category-organisation-runtime">' + category_js + '</script><script id="medina-atlas-v2-runtime">' + (Path(root) / 'engine/atlas_v2.js').read_text(encoding='utf-8') + '</script></body>', 1)
     return source
