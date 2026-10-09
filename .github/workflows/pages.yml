@@ -51,6 +51,10 @@ jobs:
           cp dist/MEDINA.html _site/MEDINA.html
           cp dist/fragments/*.html _site/fragments/
           cp dist/apercus/*.html _site/apercus/
+          # Images des cours (C-01 cardiologie) : servies à côté de MEDINA.html et des fragments.
+          mkdir -p _site/images _site/fragments/images
+          cp -R assets/images/. _site/images/
+          cp -R assets/images/. _site/fragments/images/
           python build_index.py --fragments-dir _site/fragments --output _site/index.html
           python tools/build_organisation.py --output _site/organisation.html
       - name: Installer Chromium pour contrôler les cours en rédaction
