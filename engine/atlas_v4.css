@@ -1,14 +1,14 @@
-/* MEDINA — style « Été vivant » (09.10.2026, demande de Vial) : couleurs vives, printanières et estivales,
-   filigrane marin, motif propre à chaque spécialité. Fondements (PubMed) :
+/* MEDINA — style « Printemps ensoleillé » (09.10.2026, demande de Vial) : couleurs vives, printanières et estivales,
+   filigrane printanier (feuilles, fleurs, soleil), motif propre à chaque spécialité. Fondements (PubMed) :
    Carruthers 2010 (doi:10.1186/1471-2288-10-12) : le gris s’associe à l’humeur anxieuse ou déprimée, le jaune à l’humeur normale ;
    Valdez et Mehrabian 1994 (doi:10.1037//0096-3445.123.4.394) : l’agrément croît surtout avec la luminosité (0,69) puis la saturation (0,22) ;
    bleu, bleu-vert et vert parmi les teintes les plus agréables ; Lankston 2010 (doi:10.1258/jrsm.2010.100256) : bleus et verts de nature apaisants.
    Donc : aucun gris ni beige, fonds lumineux, teintes lagon et feuillage, soleil jaune et corail en accents. Se superpose à atlas_v3.css. */
-html[data-medina-fragment]{--s-sky:#e4f7fd;--s-lagoon:#00b4c6;--s-sea:#1e88e5;--s-sun:#ffc93c;--s-coral:#ff7a59;--s-leaf:#3ec27a;
+html[data-medina-fragment]{--s-sky:#e9f7ff;--s-lagoon:#00b4c6;--s-sea:#1e88e5;--s-sun:#ffc93c;--s-coral:#ff7a59;--s-leaf:#3ec27a;
  --s-ink:#0b2545;--s-ink2:#1d4e75;--s-line:#b9e6f2;
- --s-wave:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='220' viewBox='0 0 280 220'%3E%3Cg fill='none' stroke='%231d6fa5' stroke-opacity='.10' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M0 40q17-14 35 0t35 0 35 0 35 0 35 0 35 0 35 0 35 0'/%3E%3Cpath d='M0 180q17-14 35 0t35 0 35 0 35 0 35 0 35 0 35 0 35 0'/%3E%3Cpath d='M40 100c12-10 30-10 42 0-12 10-30 10-42 0Zm42 0 10-8v16Z'/%3E%3Ccircle cx='60' cy='98' r='1.6'/%3E%3Cpath d='M200 92l5 14 15 1-12 9 4 15-12-9-12 9 4-15-12-9 15-1Z'/%3E%3Cpath d='M150 150c0-14 22-14 22 0m-22 0h22m-18 0v-8m7 8v-11m7 11v-8'/%3E%3Ccircle cx='240' cy='60' r='3'/%3E%3Ccircle cx='248' cy='48' r='2'/%3E%3Ccircle cx='244' cy='36' r='1.4'/%3E%3C/g%3E%3C/svg%3E")}
+ --s-wave:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='220' viewBox='0 0 280 220'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg stroke='%2343a047' stroke-opacity='.16'%3E%3Cpath d='M40 60c10-22 34-22 40-6-16 2-28 6-40 6Zm0 0 34-10'/%3E%3Cpath d='M210 170c-6-20 12-36 28-26-10 10-18 18-28 26Zm0 0 22-22'/%3E%3C/g%3E%3Cg stroke='%23ffb300' stroke-opacity='.22'%3E%3Ccircle cx='200' cy='50' r='9'/%3E%3Cpath d='M200 32v-8m0 52v-8m18-18h8m-52 0h8m13-13-6-6m37 37-6-6m0-25 6-6m-37 37 6-6'/%3E%3C/g%3E%3Cg stroke='%23ec407a' stroke-opacity='.18'%3E%3Ccircle cx='80' cy='160' r='4'/%3E%3Cpath d='M80 150c-4-8 4-12 0-4m0 18c4 8-4 12 0 4m-10-8c-8 4-12-4-4 0m18 0c8-4 12 4 4 0'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body{
- background-color:var(--s-sky)!important;background-image:var(--s-wave),linear-gradient(180deg,#d4f3fb 0,#e4f7fd 420px,#ecfbf3 100%)!important;
+ background-color:var(--s-sky)!important;background-image:var(--s-wave),linear-gradient(180deg,#e9f7ff 0,#f2fbff 380px,#eefbe8 100%)!important;
  background-size:280px 220px,100% 100%!important;background-attachment:fixed,fixed!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(main,.main,.content,.app-main){background:transparent!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar{background:#ffffffe0!important;border-bottom:3px solid transparent!important;
@@ -19,13 +19,12 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-filters :is(button,a):is([aria-pressed="true"],.active,[aria-selected="true"]){background:var(--s-sea)!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar .mcg-sidebar-block>a:not(.active){background:#ffffff!important}
 
-/* Couverture : ciel d’été, soleil, vagues ; le motif de la spécialité (--frag-motif) flotte en filigrane. */
+/* Couverture : ciel de printemps et soleil ; le motif de la spécialité (--frag-motif) flotte en filigrane. */
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover{
  background:
   var(--frag-motif,none) no-repeat right 6% center/190px 190px,
-  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='90' viewBox='0 0 1200 90' preserveAspectRatio='none'%3E%3Cpath d='M0 40q75-30 150 0t150 0 150 0 150 0 150 0 150 0 150 0 150 0V90H0Z' fill='%23ffffff' fill-opacity='.18'/%3E%3Cpath d='M0 60q75-26 150 0t150 0 150 0 150 0 150 0 150 0 150 0 150 0V90H0Z' fill='%23ffffff' fill-opacity='.22'/%3E%3C/svg%3E") no-repeat bottom/100% 90px,
   radial-gradient(circle at 88% 22%,#fff6c2 0 34px,#ffd54f 36px,#ffc93c99 60px,transparent 110px),
-  linear-gradient(125deg,#1e88e5 0,#0aa6d8 45%,#00b4c6 70%,#26c486 100%)!important;
+  linear-gradient(125deg,#1e88e5 0,#12a5e0 40%,#1fbf8f 75%,#7cc84a 100%)!important;
  border:0!important;border-radius:26px!important;box-shadow:0 22px 40px -26px #0a5c8a!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover h1{text-shadow:0 2px 12px #0a3d6b55}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover .mcg-counts span{background:#ffffff33!important;border-color:#ffffffb3!important}
@@ -42,3 +41,7 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.s01-cs-gateway,.cs-gateway){background:linear-gradient(120deg,#fff4cc,#e4f7fd 55%,#e3f8ec)!important;border-left-color:var(--s-sun)!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-trap{background:#e4f7fd!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-alert{background:#ffe9e2!important}
+/* Consigne finale de Vial : des couleurs vives et vivantes, rien de plus (aucun filigrane, motif ni illustration). */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body{background-image:linear-gradient(180deg,#e9f7ff 0,#f2fbff 380px,#eefbe8 100%)!important;background-size:100% 100%!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover{background:linear-gradient(125deg,#1e88e5 0,#12a5e0 35%,#1fbf8f 70%,#ffc93c 100%)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-block-heading{background:linear-gradient(120deg,var(--cat,#1e88e5),color-mix(in srgb,var(--cat,#1e88e5) 55%,#1fbf8f))!important}
