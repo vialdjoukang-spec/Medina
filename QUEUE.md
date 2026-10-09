@@ -6,7 +6,7 @@ Reprise : premier fragment non coché. Une spécialité à la fois.
 Terminé = inventaire et coquilles générés, contrôles locaux passés ; les cours vides restent vides.
 
 - [x] 01. C-01-Cardiologie (`S01`) — fait
-- [ ] 02. P-02-Pneumologie (`S02`) — restant
+- [x] 02. P-02-Pneumologie (`S02`) — fait
 - [ ] 03. I-03-Infectiologie (`T1`) — restant
 - [ ] 04. G-04-Gastroentérologie et hépatologie (`S03`) — restant
 - [ ] 05. N-05-Neurologie (`S08`) — restant
