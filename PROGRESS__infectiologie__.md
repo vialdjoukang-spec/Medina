@@ -17,13 +17,14 @@ Branche : `course/infectiologie`. Ordre : priority_codes de `organisation/fragme
 | A09 | Gastro-entérite infectieuse aiguë | **écrit** (20 fenêtres, 3 GIF réels) |
 | B37 | Candidose | **écrit** (16 fenêtres, 3 GIF réels) |
 | B35 | Dermatophytoses | **écrit** (15 fenêtres, 4 GIF réels) |
+| A15 | Tuberculose pulmonaire (A15–A16) | **écrit** (27 fenêtres, 3 GIF réels, glossaire `a15.py`) |
 | B50 | Paludisme (B50–B54) | **écrit** (24 fenêtres, 4 GIF réels, glossaire `b50.py`) |
 
 Images : `assets/img/infectiologie/` + `ATTRIBUTIONS.json`.
 
 ## Reste à écrire (fragment T1)
 - Pathologies fréquentes vides : A49, B07.
-- priority_codes non écrits : A15, A16 (tuberculose).
+- priority_codes : tous écrits (B50, A15, A16).
 
 ## Lacunes nommées / points à vérifier
 - A46 : dose orale d’amoxicilline SSI (500 mg toutes les 12 h, 5 j) vs information Amoxi-Mepha (375–750 mg 3–4×/j, ≥10 j) — à confirmer auprès des auteurs SSI.
@@ -44,3 +45,5 @@ Décision du propriétaire : chaque cours terminé est rebasé sur origin/main, 
 - B35 : pas de directive SSI ni européenne récente sur la peau glabre ; traitement selon information suisse, épidémiologie Lausanne 2020 et Zurich 2026, consensus Delphi 2026 (T. indotineae).
 - B50 : pas de directive SSI ; OMS 2025, CEMV 2019, FI Riamet/Malarone. Écart premier trimestre (OMS 2022 vs FI Riamet 2019) signalé ; aucune FI suisse de l’artésunate, de la primaquine ni de la tafénoquine trouvée (lacune nommée).
 - 2026-10-09 : auteurs des attributions nettoyés (« Unknown author », « Photo Credit », « Content Providers »).
+- A15 : guide national LPS/OFSP V1.2024 + Bulletin OFSP 2025 ; points d’audit : seuil rénal (FI Rimactan < 25 ml/min, Rifater/Rifinah < 30 ml/min) contre adaptation de E et Z seulement dans le guide ; « environ 20 % des cas traités sans confirmation » (guide) contre 93,8 % de confirmation (Bulletin 2025). Notation « HR » évitée (collision glossaire : hazard ratio).
+- 2026-10-09 : main cassé par P-02 (justifications J45/I26 introuvables après révision des connecteurs) ; livraison faite après vérification sur arbre propre d’origin/main que l’échec est préexistant et étranger, avec audit ciblé de mes cours.
