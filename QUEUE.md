@@ -11,7 +11,7 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 04. G-04-Gastroentérologie et hépatologie (`S03`) — fait
 - [x] 05. N-05-Neurologie (`S08`) — fait
 - [x] 06. E-06-Endocrinologie et métabolisme (`S05`) — fait
-- [ ] 07. N-07-Néphrologie (`S04`) — restant
+- [x] 07. N-07-Néphrologie (`S04`) — fait
 - [ ] 08. H-08-Hématologie (`S06`) — restant
 - [ ] 09. O-09-Oncologie, génétique médicale et soins palliatifs (`T4`) — restant
 - [ ] 10. G-10-Gynécologie et sénologie (`S14`) — restant
