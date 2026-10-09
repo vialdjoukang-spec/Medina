@@ -132,3 +132,45 @@ Chaque leçon vide suit le plan monographique de base. Les pathologies fréquent
   - enregistrer, sceller, ouvrir une PR, puis fusionner une fois les contrôles verts.
 - **Limite hebdomadaire de Vial** : surveillée ; tout fusionner avant d'atteindre 95 %.
 - **Fin de chaque livraison** : un tableau de bord (cours, catégories, fragments, contrôles, réserves).
+
+## 10. Procédure pas à pas pour une leçon (à suivre à la lettre)
+1. **Vérifier avant d'écrire**, pour ne pas faire un double :
+   - le code ou un code qu'il couvre figure-t-il dans `chapters.json` (champ `covers`) ? exemple : J40 couvre J20, J40, J41 et J42 ;
+   - un dossier `livraisons/Livraison Claude/*/travail/<CODE>/` existe-t-il déjà ?
+   - la fiche correspondante de l'annexe porte-t-elle une ligne « Brouillon existant » ?
+   - Si l'une de ces réponses est oui, ne rien réécrire : relire ou compléter.
+2. **Rédaction** dans `livraisons/Livraison Claude/<fragment>/travail/<CODE>/`, jamais directement dans `chapters/`.
+   - Suivre le plan de la fiche, et ne traiter qu'en renvoi les cours du même bloc.
+   - Les sous-codes de la fiche sont traités dans le cours, sans leçon séparée.
+3. **Relecture** par un agent distinct de l'auteur, en deux passes. C'est lui qui injecte dans `chapters/<CODE>/` et `glossary/<code>.py`, avec des ajouts de glossaire conditionnels (`_a`).
+4. **Enregistrement** : suivre la section 3, puis faire une PR et fusionner une fois les contrôles verts.
+
+## 11. Pièges connus (déjà rencontrés : ne pas les reproduire)
+- **Clés de glossaire déjà prises.** Des clés génériques existent déjà :
+  - `ADA` signifie adénosine désaminase : écrire `ADA/EASD` ;
+  - `ALAT` signifie alanine aminotransférase : la recommandation sur la fibrose s'écrit `ATS/ERS/JRS/ALAT` ;
+  - `RECOVERY` est l'essai de chirurgie aortique (i35) : écrire « Recovery » pour l'essai COVID ;
+  - `S2k` et `AWMF` sont dans t78, `FFP2` dans r04, `CFV`, `mRESVIA` et `ISHAM` dans j12, `ESGE` dans le brouillon d50.
+  - Toujours vérifier `glossary/*.py` ET les glossaires des dossiers `travail/`, puis utiliser des ajouts conditionnels.
+- **Sortie des constructions.** Toujours définir `MEDINA_OUT=$PWD/dist`. Sans cette variable, `build_front.py` écrit dans `/mnt/user-data/outputs` et écrase les sorties d'un autre agent.
+- **Erreurs d'environnement, sans rapport avec le cours** :
+  - `test_preview.py` échoue sur `preview/lesson-core.js` absent ;
+  - Playwright attend parfois un autre build de Chromium : lancer `/opt/pw-browsers/chromium-1194/*/chrome` par `executable_path` ;
+  - PubMed répond 203 à travers le proxy : vérifier les PMID par `esummary`.
+- **`tests/audit_sciences.py`** échoue sur I50 dans un clone superficiel : c'est connu. Il faut aussi ajouter chaque nouveau code à sa liste de nouvelles productions.
+- **Recommandations américaines déguisées** : la recommandation de 2020 sur la pneumopathie d'hypersensibilité est ATS/JRS/ALAT, pas ERS. Vérifier les sociétés signataires avant de qualifier un texte d'« européen ».
+- **Jauges** : elles comptent les catégories, jamais les sous-codes. La jauge Examen fédéral repose sur une correspondance PROFILES établie par chapitre, trop large : elle est à affiner, sans la présenter comme officielle.
+- **Push et PR** : chaque push relance les contrôles de la PR. Grouper les instantanés de brouillons, et fusionner dès que tout est vert.
+- **Style** : aucun fond ivoire, beige ou gris, aucun motif ni filigrane. Les titres des cours restent rouges, comme le prévoit la règle d'origine.
+- **Validation** : jamais « validé » sans médecin. La mention « revue par IA » est obligatoire.
+
+## 12. Annexe
+L'annexe `ANNEXE_FEUILLE_DE_ROUTE.md`, régénérée par `python3 tools/feuille_de_route.py`, contient 1 244 fiches : une par leçon « Examen fédéral », classées par spécialité. Chaque fiche donne :
+- la priorité (P0 rédigée, P1 fréquente, P2 examen) et l'état ;
+- le cours couvrant, ou le brouillon existant ;
+- les situations PROFILES avec leur intitulé ;
+- les sous-codes à intégrer ;
+- les renvois du même bloc ;
+- le plan spécifique numéroté et les livrables.
+
+Régénérer l'annexe après chaque injection.
