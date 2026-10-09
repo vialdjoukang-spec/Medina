@@ -81,3 +81,37 @@ a('STOPAH', [('STOPAH', 'nom d’essai : STeroids Or Pentoxifylline for Alcoholi
 a('VGM', [('V', 'Volume'), ('G', 'Globulaire'), ('M', 'Moyen')], 'Volume globulaire moyen', '<p>Taille moyenne des globules rouges ; sa hausse est un marqueur indirect de consommation chronique d’alcool.</p>')
 a('CDT', [('C', 'Carbohydrate-'), ('D', 'Deficient'), ('T', 'Transferrin')], 'Transferrine carboxy-déficiente', '<p>Marqueur sérique indirect de consommation chronique excessive d’alcool.</p>', 'k70-cdt')
 a('J0', [('J', 'jour'), ('0', 'jour du début du traitement')], 'Jour zéro', '<p>Premier jour du traitement, référence des calculs dynamiques comme le score de Lille.</p>')
+# K50 — Maladie de Crohn
+code('K50.0', 'Maladie de Crohn de l’intestin grêle', 'K50 — Maladie de Crohn')
+code('K50.1', 'Maladie de Crohn du gros intestin', 'K50 — Maladie de Crohn')
+code('K50.8', 'Autres formes de maladie de Crohn (atteinte combinée)', 'K50 — Maladie de Crohn')
+code('K50.9', 'Maladie de Crohn, sans précision', 'K50 — Maladie de Crohn')
+a('ECCO', [('E', 'European'), ('C', 'Crohn’s and'), ('C', 'Colitis'), ('O', 'Organisation')], 'Organisation européenne de la maladie de Crohn et de la colite', '<p>Société savante européenne des maladies inflammatoires de l’intestin ; elle publie les recommandations de référence (traitement médical de la maladie de Crohn 2024).</p>')
+a('ECCO-ESGAR', [('ECCO', 'European Crohn’s and Colitis Organisation'), ('ESGAR', 'European Society of Gastrointestinal and Abdominal Radiology')], 'Recommandation commune ECCO et ESGAR', '<p>Recommandation conjointe des gastroentérologues et des radiologues européens sur le diagnostic des maladies inflammatoires de l’intestin (2019).</p>')
+a('IBD', [('I', 'Inflammatory'), ('B', 'Bowel'), ('D', 'Disease')], 'Maladies inflammatoires chroniques de l’intestin', '<p>Terme anglais des titres de sources : maladie de Crohn et rectocolite hémorragique.</p>')
+a('NOD2', [('NOD', 'Nucleotide-binding Oligomerization Domain'), ('2', 'protéine 2')], 'Gène NOD2', '<p>Récepteur intracellulaire de l’immunité innée ; ses variants prédisposent à la maladie de Crohn iléale.</p>', 'k50-nod2')
+for k, t in (('L1', 'localisation iléale'), ('L2', 'localisation colique'), ('L3', 'localisation iléocolique'), ('L4', 'atteinte du tractus digestif haut')):
+    a(k, [(k[0], 'Localisation (classification de Montréal)'), (k[1], t)], 'Montréal ' + k + ' : ' + t, '<p>Catégorie de localisation de la maladie de Crohn selon la classification de Montréal (2005).</p>', 'k50-montreal')
+a('L1-L3', [('L1-L3', 'localisations L1 à L3 de Montréal')], 'Localisations L1 à L3 de Montréal', '<p>Localisations iléale, colique ou iléocolique ; L4 s’y ajoute en cas d’atteinte haute.</p>', 'k50-montreal')
+a('L1-L4', [('L1-L4', 'localisations L1 à L4 de Montréal')], 'Localisations L1 à L4 de Montréal', '<p>Ensemble des catégories de localisation de la classification de Montréal.</p>', 'k50-montreal')
+a('III-IV', [('III-IV', 'classes III et IV (NYHA)')], 'Classes NYHA III et IV', '<p>Insuffisance cardiaque avec symptômes pour une activité minime (III) ou au repos (IV).</p>')
+a('IL-23', [('IL', 'Interleukine'), ('23', 'numéro 23')], 'Interleukine 23', '<p>Cytokine qui entretient les lymphocytes Th17 ; cible de l’ustékinumab (p40) et du risankizumab (p19).</p>')
+a('anti-IL-23', [('anti', 'dirigé contre'), ('IL-23', 'interleukine 23')], 'Anticorps anti-interleukine 23', '<p>Biothérapie qui bloque la sous-unité p19 de l’interleukine 23, comme le risankizumab.</p>')
+a('MAdCAM-1', [('M', 'Mucosal'), ('Ad', 'Addressin'), ('C', 'Cell'), ('A', 'Adhesion'), ('M', 'Molecule'), ('1', 'type 1')], 'Molécule d’adhésion MAdCAM-1', '<p>Adressine des vaisseaux de la muqueuse intestinale, ligand de l’intégrine α4β7 ; le védolizumab bloque cette liaison.</p>')
+# K51 — Rectocolite hémorragique
+code('K51.0', 'Pancolite ulcéreuse (chronique)', 'K51 — Rectocolite hémorragique')
+code('K51.2', 'Proctite ulcéreuse (chronique)', 'K51 — Rectocolite hémorragique')
+code('K51.3', 'Rectosigmoïdite ulcéreuse (chronique)', 'K51 — Rectocolite hémorragique')
+code('K51.5', 'Colite gauche', 'K51 — Rectocolite hémorragique')
+for k, t in (('E1', 'proctite (rectum seul)'), ('E2', 'colite gauche (en aval de l’angle colique gauche)'), ('E3', 'colite étendue (au-delà de l’angle colique gauche)')):
+    a(k, [(k[0], 'Extent (étendue, classification de Montréal)'), (k[1], 'catégorie ' + k[1])], 'Montréal ' + k + ' : ' + t, '<p>Catégorie d’étendue de la rectocolite hémorragique selon la classification de Montréal (2005).</p>', 'k51-montreal')
+a('MMX', [('MMX', 'Multi-Matrix (technologie de libération colique)')], 'Technologie MMX', '<p>Comprimé à matrice multiple qui libère le principe actif tout au long du côlon (budésonide MMX).</p>', 'k51-d-budmmx')
+# K52 — Colites non infectieuses, colite microscopique
+for k, t in (('K52.0', 'Gastroentérite et colite dues à une irradiation'), ('K52.1', 'Gastroentérite et colite toxiques'), ('K52.2', 'Gastroentérite et colite allergiques et alimentaires'), ('K52.3', 'Colite indéterminée'), ('K52.30', 'Pancolite indéterminée'), ('K52.31', 'Colite indéterminée latérale gauche'), ('K52.32', 'Colite indéterminée du côlon rectosigmoïde'), ('K52.38', 'Autres colites indéterminées'), ('K52.8', 'Autres gastroentérites et colites non infectieuses précisées (dont colite microscopique)'), ('K52.9', 'Gastroentérite et colite non infectieuses, sans précision')):
+    code(k, t, 'K52 — Autres gastroentérites et colites non infectieuses')
+a('UEG', [('U', 'United'), ('E', 'European'), ('G', 'Gastroenterology')], 'Fédération européenne de gastroentérologie', '<p>Organisation européenne qui réunit les sociétés nationales et spécialisées de gastroentérologie ; coéditrice des recommandations de 2021 sur la colite microscopique.</p>')
+a('EMCG', [('E', 'European'), ('M', 'Microscopic'), ('C', 'Colitis'), ('G', 'Group')], 'Groupe européen de la colite microscopique', '<p>Groupe d’experts auteur, avec l’UEG, des recommandations européennes de 2021 sur la colite microscopique.</p>')
+a('LIE', [('L', 'Lymphocytes'), ('I', 'Intra-'), ('E', 'Épithéliaux')], 'Lymphocytes intraépithéliaux', '<p>Lymphocytes T situés entre les cellules épithéliales ; ≥ 20 pour 100 cellules définissent la colite lymphocytaire.</p>', 'k52-lie')
+a('MICI', [('M', 'Maladies'), ('I', 'Inflammatoires'), ('C', 'Chroniques de l’'), ('I', 'Intestin')], 'Maladies inflammatoires chroniques de l’intestin', '<p>Maladie de Crohn et rectocolite hémorragique.</p>')
+a('HE', [('H', 'Hématoxyline'), ('E', 'Éosine')], 'Coloration hématoxyline-éosine', '<p>Coloration histologique standard : noyaux bleus, cytoplasmes et collagène roses.</p>')
+a('SeHCAT', [('Se', 'sélénium 75'), ('H', 'Homo-'), ('C', 'Cholic acid (acide cholique)'), ('A', 'conjugué à la'), ('T', 'Taurine')], 'Test au SeHCAT', '<p>Test de rétention d’un acide biliaire marqué au sélénium 75, qui mesure la malabsorption iléale des acides biliaires.</p>')
