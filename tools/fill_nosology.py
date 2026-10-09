@@ -9,7 +9,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from fragment_surface import frontend_catalog
-from nosologyEngine import generate, progress, read_json, reference, sha256
+from nosologyEngine import gauges, generate, progress, read_json, reference, sha256
 
 
 def save(path, value):
@@ -58,6 +58,7 @@ def main():
     file = ROOT / 'nosology/fragments' / (args.fragment + '.json')
     previous = read_json(file) if file.exists() else None
     inventory = generate(codes, args.fragment, ROOT, courses, previous)
+    inventory['gauges'] = gauges(inventory['lessons'], read_json(ROOT / 'nosology/frequency.json')['codes'])
     inventory['preserved_courses'] = [{key: course[key] for key in ('code', 'title', 'covers', 'versions')}
                                      for course in courses.values() if course['source_fragment_id'] == args.fragment]
     inventory['secondary_references'] = [
@@ -91,6 +92,7 @@ def main():
               'lessons': len(inventory['lessons']), 'empty_shells': sum(item['state'] == 'empty' for item in inventory['lessons']),
               'existing_courses_preserved': len(inventory['preserved_courses']), 'aliases_deduplicated': aliases,
               'gold_stars': inventory['gold_stars'], 'progress': inventory['progress'],
+              'gauges': inventory['gauges'],
               'unattached': inventory['unattached'], 'exam_unresolved': inventory['exam_unresolved'],
               'mapping_arbitration': [code for code in codes if len(code) == 3 and code[0] in 'RZST'
                                       and 'transversale' in ref['mapping'][code]['basis']],

@@ -1,3 +1,17 @@
+## Mission active — complétion nosologique CIM-10-GM 2024, 9 octobre 2026
+
+Instruction directe de Vial : remplir et catégoriser les 22 fragments, un seul à la fois, dans `QUEUE.md`, sans contenu de cours et exclusivement selon la CIM-10-GM 2024 française OFS. Ajouter des coquilles au plan monographique adaptatif, conserver les codes en métadonnées, dédoublonner et préserver intégralement les leçons, sous-leçons et versions préexistantes. Moteur réutilisable : `nosologyEngine`. Étoiles d'Or permanentes reliées aux SSP PROFILES, avec les incertitudes de correspondance explicitement consignées. Branche `codex/cim10gm-<fragment>`, commit `cim10gm: <fragment>`, PR et fusion après contrôles pour chaque fragment ; poursuivre toute la file sans confirmation. La mission nosologique prime sur les anciennes demandes incompatibles de production de cours ou de complétude CIM-11.
+
+**Statistiques jaugées obligatoires par fragment : trois jauges distinctes, avec le pourcentage à proximité immédiate.**
+
+1. **Pathologies fréquentes** : leçons remplies parmi les pathologies de la sélection de fréquence documentée, distincte de PROFILES.
+2. **Programme de l'Examen fédéral** : leçons remplies parmi celles reliées aux SSP PROFILES et marquées d'une Étoile d'Or ; signaler les correspondances non arbitrées.
+3. **Progression globale / avancement global du fragment** : leçons remplies sur toutes les leçons du fragment.
+
+Afficher aussi la progression globale de MEDINA, séparément. Une coquille vide ne contribue à aucun numérateur. Une jauge dont le dénominateur est nul affiche « non applicable » et 0 %, sans inventer de pathologie.
+
+Méthode, sources et limites : `docs/nosology/README.md`. Aucun contenu préexistant ne doit être écrasé, y compris lorsqu'un cours possède plusieurs versions ou sous-leçons.
+
 ## Alignement avec Claude — police de lecture, 8 octobre 2026
 
 Dernière instruction directe de Vial : « Pas de conflit avec Claude. Aligne toi avec la Police qu’il a trouvé ». **Atkinson Hyperlegible Next** devient la police par défaut du portail, des 22 frontends et des cours, avec les quatre WOFF2 de Claude (`f928674`). Cette consigne remplace la demande antérieure de police Anthropic Serif ; celle-ci reste une option du lecteur. Conserver les contributions de Claude, les contrastes élevés, le thème clair et la séparation des spécialités. Les réglages du lecteur s’appliquent au texte, aux fenêtres et à Navigo. Aucune modification de source médicale ni de statut de fragment n’est requise par cette consigne. Voir `docs/collaboration/FRONTENDS_2026-10-08.md` et son reçu d’alignement.
