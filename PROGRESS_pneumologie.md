@@ -38,8 +38,12 @@ Contrôle par leçon : phrases complètes (pas de phrase nominale hors cellules 
 
 | Leçon | État du balayage |
 |---|---|
-| J45 | FAIT pour les fenêtres : 62 passages télégraphiques réécrits à la main en phrases complètes justifiées ; 3 images réelles ajoutées dans les fenêtres (éosinophiles, débitmètre de pointe, chambre d’inhalation). RESTE : listes d’algorithme de J45_b (paliers, algorithme diagnostique) à réécrire en phrases ; relecture des connecteurs insérés par script dans J45_a–d. |
-| J44, J18, I26, J09, J90, J86, J93, J84, I27, J47, J80, J81, J12, J21, R04, J82, J67, J60, J69, R06, J40, J95, J96, R05, C34 | À FAIRE. Mesure initiale (outil `/workspace/s02w/audit.py`) : une seule image dans les fenêtres par leçon (la planche), aucune pour R06, J40, J95, J96 et R05 ; fenêtres de type Pareto et monographies encore télégraphiques ; connecteurs insérés par script à relire un par un. |
+| J45 | FAIT : fenêtres (62 passages réécrits), listes d’algorithme de J45_b réécrites en phrases (10.10, 0 h 15), connecteurs relus à la main (78 connecteurs logiques forts contrôlés, 7 corrigés). |
+| J40 | FAIT (10.10) : définitions, étiquettes interactives et fenêtres de doses en phrases complètes justifiées ; connecteurs relus ; 3 images réelles ajoutées dans les fenêtres (Bordetella pertussis, pneumonie lobaire, bronchiectasies). |
+| J86, J84, J93, J90, J47, J67, J60, J12, R04, J81, J21, I27 | FAIT pour les synthèses Pareto et les fenêtres de critères et de doses (détecteur `/workspace/s02w/sweep/tele.py` : étiquettes « X : … » et infinitifs réécrits en phrases complètes justifiées, doses et codes inchangés) ; connecteurs causaux (or, dès lors, par conséquent, c’est pourquoi) relus pour J86–J47 ; une image réelle ajoutée dans une fenêtre de J86, J84, J93, J90, J47, R04, J81. RESTE : relecture des connecteurs de J67, J60, J12, R04, J81, J21, I27 ; quelques fenêtres longues non réécrites (I27 : défaillance droite, cathétérisme, antagonistes de l’endothéline, sotatercept ; J21 : Abrysvo). |
+| R06, J95, J96, R05 | Images réelles ajoutées dans les fenêtres (R06 : épiglottite, angio-œdème, lignes de Kerley ; J95 : atélectasie, canule, pneumomédiastin ; J96 : SDRA, VNI ; R05 : coqueluche, bronchiectasies, spirométrie). RESTE : fenêtres télégraphiques (R06 46, J95 28, J96 36, R05 46 passages détectés) et connecteurs. |
+| J44, J18, I26, J09, J80, J82, J69, C34 | RESTE : fenêtres télégraphiques (J44 55, J18 35, I26 48, J09 32, J80 51, J82 48, J69 53, C34 43 passages détectés), relecture des connecteurs, images dans les fenêtres (une seule, la planche). |
+| Toutes | FAIT : connecteurs retirés devant les questions et les intertitres (115), noms propres rétablis après connecteur (Léa, Pseudomonas…), connecteurs sortis des italiques, phrases nominales après connecteur corrigées, « Planche : » remplacé par une phrase complète. |
 | C45 | Conforme à la rédaction (écrit selon les nouvelles règles). |
 
 ## Restant, rédaction (federal_exam)
