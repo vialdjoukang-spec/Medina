@@ -1,0 +1,51 @@
+/* MEDINA — accueil sobre (09.10.2026) : couleurs de spécialité atténuées, titres à contraste élevé,
+   jauges de progression catégories et leçons, motifs décoratifs non cliquables. Se superpose à portal_v2.css. */
+:root{--s-bg:#e3f1ef;--s-card:#ffffff;--s-line:#d9dde3;--s-ink:#0b0d10;--s-ink2:#3a414b;--s-mute:#5f6773;
+ --s-fluid:#0b8f6c;--s-fluid-hi:#34d39f;--s-rim:#26313b;--s-track:#e7eaee;color-scheme:only light}
+html body{background-color:var(--s-bg)!important;
+ background-image:radial-gradient(circle at 1px 1px,#0f5f5a1f 1px,transparent 1.3px),linear-gradient(180deg,#d6ecea 0,#e3f1ef 560px)!important;background-size:24px 24px,100% 100%!important}
+
+/* Cartes : couleur de spécialité atténuée (bandeau et pastille), fond clair, titre presque noir. */
+html body .specialty-card{background-color:var(--s-card)!important;
+ background-image:linear-gradient(180deg,color-mix(in srgb,var(--v,#1565C0) 30%,#fff) 0,color-mix(in srgb,var(--v) 22%,#fff) 74px,#fff 74px),
+  repeating-linear-gradient(135deg,color-mix(in srgb,var(--v) 16%,transparent) 0 1px,transparent 1px 9px)!important;
+ background-size:100% 100%,100% 74px!important;background-repeat:no-repeat!important;
+ border:1px solid color-mix(in srgb,var(--v) 40%,var(--s-line))!important;border-top:5px solid color-mix(in srgb,var(--v) 85%,#000)!important;
+ box-shadow:0 1px 2px #0b0d100f,0 8px 18px -14px #0b0d1040!important;padding:14px 16px 14px!important}
+html body .specialty-card:hover{border-color:color-mix(in srgb,var(--v) 50%,var(--s-line))!important}
+html body .specialty-card *{color:var(--s-ink)!important}
+html body .specialty-card h3{color:var(--s-ink)!important;font-size:20px!important;font-weight:700!important;margin:16px 0 4px!important}
+html body .specialty-card .card-count{color:var(--s-ink2)!important;padding-top:4px!important;margin-top:0!important;font-size:13px!important}
+html body .specialty-card .count-dot{background:var(--v)!important}
+html body .specialty-card :is(.card-symbol,.card-arrow){filter:none!important;background:#ffffffd9!important;
+ border:1px solid color-mix(in srgb,var(--v) 22%,var(--s-line))!important;color:color-mix(in srgb,var(--v) 80%,#3a414b)!important}
+html body .specialty-card .card-arrow{color:var(--s-mute)!important}
+html body .library-head h2,html body .hero h1{color:var(--s-ink)!important}
+
+/* Jauges : même couleur de fluide pour catégories et leçons, contour foncé bien visible. */
+.gauges{display:grid;gap:7px;margin-top:12px}
+.gauge{display:grid;grid-template-columns:76px minmax(0,1fr) 44px;align-items:center;gap:8px;font-size:12px}
+html body .gauge-label{color:var(--s-ink2)!important;letter-spacing:.01em}
+html body .gauge-value{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;color:var(--s-ink)!important}
+.gauge-track{position:relative;height:12px;border-radius:999px;background:var(--s-track);border:1.5px solid var(--s-rim);overflow:hidden}
+.gauge-fluid{position:absolute;inset:0 auto 0 0;background:linear-gradient(180deg,var(--s-fluid-hi) 0,var(--s-fluid) 100%);border-right:1.5px solid var(--s-rim)}
+.gauge-fluid[style*="width:0%"]{border-right:0}
+.gauge-fluid::after{content:"";position:absolute;inset:2px 3px auto 3px;height:2px;border-radius:999px;background:#ffffff80}
+html body .gauge[data-empty] .gauge-value{color:var(--s-mute)!important;font-weight:600}
+
+/* Panneau global et éléments décoratifs, non cliquables. */
+.overview{align-items:start;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0 0 10px;padding:16px;border:1px solid #b9d9d5;border-top:5px solid #0f6e66;border-radius:16px;background:linear-gradient(135deg,#ffffff,#eef8f6);position:relative;overflow:hidden}
+.overview::before{content:"";position:absolute;inset:0;pointer-events:none;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='60' viewBox='0 0 240 60'%3E%3Cpath d='M0 30h70l8-14 10 32 9-40 9 34 6-12h128' fill='none' stroke='%23138a6e' stroke-opacity='.12' stroke-width='1.4'/%3E%3C/svg%3E") repeat-x center/240px 60px}
+.overview-item{position:relative;display:grid;gap:8px;align-content:start;padding:12px 14px;border-radius:12px;background:#f8f9fbe6;border:1px solid #e3e6ea}
+html body .overview-item b small{font-size:15px;color:var(--s-ink2)!important;font-weight:600}
+html body .overview-item b{font-size:26px;line-height:1;color:var(--s-ink)!important;font-variant-numeric:tabular-nums}
+html body .overview-item span{font-size:12.5px;color:var(--s-ink2)!important}
+.motifs{grid-column:1/-1;position:relative;display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 0;padding:0;list-style:none}
+html body .motifs li{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;border:1px dashed #b9c0c9;background:#fff;color:var(--s-ink2)!important;font-size:12.5px;cursor:default;user-select:none}
+.motifs li svg{width:14px;height:14px;color:var(--s-fluid)}
+html body .legend-note{margin:0 0 18px;color:var(--s-mute)!important;font-size:12.5px}
+@media (max-width:560px){.gauge{grid-template-columns:64px minmax(0,1fr) 40px}html body .overview-item b{font-size:22px}}
+html body .hero-meta span{background:#ffffff!important;border:2px solid #0f6e66!important}
+html body :is(.eyebrow,.section-kicker){color:#0f6e66!important}
+html body .hero h1 em{color:#0f6e66!important}
