@@ -26,4 +26,4 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 19. M-19-Médecine d’urgence, traumatologie et toxicologie (`T3`) — fait
 - [x] 20. D-20-Diagnostic clinique et examens complémentaires (`T5`) — fait
 - [x] 21. M-21-Médecine de premier recours et santé publique (`T6`) — fait
-- [ ] 22. E-22-Éthique médicale, droit et communication (`T7`) — restant
+- [x] 22. E-22-Éthique médicale, droit et communication (`T7`) — fait
