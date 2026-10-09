@@ -9,15 +9,11 @@ L=[
 ('CAPRIE',[('CAPRIE','Clopidogrel versus Aspirin in Patients at Risk of Ischaemic Events')],'Essai CAPRIE (1996)','<p>Clopidogrel légèrement supérieur à l’aspirine, surtout dans l’artériopathie.</p>'),
 ('COMPASS',[('COMPASS','Cardiovascular OutcoMes for People using Anticoagulation StrategieS')],'Essai COMPASS (2018)','<p>Rivaroxaban 2,5 mg × 2 + aspirine : moins d’événements cardiovasculaires et des membres.</p>'),
 ('VOYAGER-PAD',[('VOYAGER','nom d’essai'),('PAD','Peripheral Artery Disease')],'Essai VOYAGER-PAD (2020)','<p>Même stratégie après revascularisation des membres inférieurs.</p>'),
-('FOURIER',[('FOURIER','Further cardiovascular OUtcomes Research with PCSK9 Inhibition in subjects with Elevated Risk')],'Essai FOURIER (2017)','<p>Évolocumab : moins d’événements, dont ceux des membres.</p>'),
-('ODYSSEY',[('ODYSSEY','nom du programme d’essais de l’alirocumab')],'Essai ODYSSEY OUTCOMES (2018)','<p>Alirocumab après syndrome coronarien aigu.</p>'),
-('OUTCOMES',[('OUTCOMES','mot anglais (résultats cliniques), partie du nom d’essai')],'OUTCOMES','<p>Partie du nom de l’essai ODYSSEY OUTCOMES.</p>'),
+('ESUR',[('E','European'),('S','Society of'),('U','Urogenital'),('R','Radiology')],'Société européenne de radiologie urogénitale','<p>Son comité de sécurité des produits de contraste publie des recommandations européennes (version 2025).</p>'),
 ('STRIDE',[('STRIDE','nom d’essai (sémaglutide dans l’artériopathie), non strictement lettre à lettre')],'Essai STRIDE (2025)','<p>Sémaglutide : amélioration de la distance de marche chez le diabétique artériopathe.</p>'),
 ('ASTRAL',[('ASTRAL','Angioplasty and STenting for Renal Artery Lesions')],'Essai ASTRAL (2009)','<p>Pas de bénéfice de l’angioplastie rénale systématique.</p>'),
 ('CORAL',[('CORAL','Cardiovascular Outcomes in Renal Atherosclerotic Lesions')],'Essai CORAL (2014)','<p>Résultat concordant avec ASTRAL.</p>'),
 ('VCAM-1',[('V','Vascular'),('C','Cell'),('A','Adhesion'),('M','Molecule'),('1','1')],'Molécule d’adhésion vasculaire 1','<p>Recrute les monocytes dans la plaque.</p>'),
 ]
 for x in L: a(*x)
-for c,tt in [('I70.0','Athérosclérose de l’aorte'),('I70.1','Athérosclérose de l’artère rénale'),('I70.2','Athérosclérose des artères distales (membres)'),('I74.0','Embolie et thrombose de l’aorte abdominale'),('I74.1','Embolie et thrombose de parties de l’aorte'),('I74.3','Embolie et thrombose des artères des membres inférieurs')]:
-    a(c,[(c,'code de la Classification internationale des maladies, 10e révision, modification allemande')],tt,'<p>Code CIM-10-GM.</p>')
 a('Écho-Doppler',[('Écho','échographie'),('Doppler','effet Doppler (Christian Doppler)')],'Échographie Doppler','<p>Imagerie des vaisseaux et mesure des vitesses de flux.</p>')

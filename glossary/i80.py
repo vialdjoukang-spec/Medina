@@ -25,10 +25,10 @@ L=[
 ('ISRS',[('I','Inhibiteurs'),('S','Sélectifs de la'),('R','Recapture de la'),('S','Sérotonine')],'Inhibiteurs sélectifs de la recapture de la sérotonine','<p>Antidépresseurs ; augmentent le risque hémorragique en association aux anticoagulants.</p>'),
 ]
 for x in L: a(*x)
-for c,tt in [('I80.0','Phlébite et thrombophlébite des vaisseaux superficiels des membres inférieurs'),('I80.1','Phlébite et thrombophlébite de la veine fémorale'),('I80.2','Phlébite et thrombophlébite d’autres vaisseaux profonds des membres inférieurs'),('I80.3','Phlébite et thrombophlébite des membres inférieurs, sans précision'),('I82.0','Syndrome de Budd-Chiari'),('I82.2','Embolie et thrombose de la veine cave'),('I82.8','Embolie et thrombose d’autres veines précisées')]:
-    a(c,[(c,'code de la Classification internationale des maladies, 10e révision, modification allemande')],tt,'<p>Code CIM-10-GM.</p>')
-a('CHEST',[('CHEST','nom de la revue de l’American College of Chest Physicians (non abréviatif)')],'Revue CHEST','<p>Revue et recommandations de l’American College of Chest Physicians.</p>')
 a('EASL',[('E','European'),('A','Association for the'),('S','Study of the'),('L','Liver')],'Association européenne pour l’étude du foie','<p>Recommandations en hépatologie.</p>')
 a('VTE',[('V','Venous'),('T','Thrombo'),('E','Embolism')],'Maladie thromboembolique veineuse (anglais)','<p>Terme anglais des titres de références.</p>')
 for k,t2 in [('VIIa','facteur VII activé'),('VIII','facteur VIII (antihémophilique A)'),('VIIIa','facteur VIII activé'),('XI','facteur XI')]:
     a(k,[(k,'chiffre romain de la nomenclature des facteurs de coagulation : '+t2)],'Facteur '+k,'<p>'+t2[0].upper()+t2[1:]+' de la coagulation.</p>','i80-coag')
+a('ESVM',[('E','European'),('S','Society of'),('V','Vascular'),('M','Medicine')],'Société européenne de médecine vasculaire','<p>Société savante européenne de médecine vasculaire et d’angiologie ; auteur des recommandations de 2025 sur le traitement interventionnel de la maladie thromboembolique veineuse.</p>')
+# Clé conservée pour le cours I83, qui cite ce code ; le cours I80 n’enseigne plus le codage.
+a('I80.0',[('I80.0','code de la Classification internationale des maladies, 10e révision, modification allemande')],'Phlébite et thrombophlébite des vaisseaux superficiels des membres inférieurs','<p>Code CIM-10-GM.</p>')

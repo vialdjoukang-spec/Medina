@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "receipt_id": "CLAUDE_INJECTION_SCELLEMENT_2026-10-09",
+  "date": "2026-10-09",
+  "demande_utilisateur": "Sauvegarde et injecte ce qu'il faut injecter",
+  "autorite": "docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md#12 (point 4)",
+  "source": {
+    "pull_request": "https://github.com/vialdjoukang-spec/Medina/pull/20",
+    "branch": "claude/keen-clarke-sat8mh",
+    "head_sha": "457664e2c32fb872dc488e3604039d4e577a9f8d"
+  },
+  "base_main": "99743f9742757657e1e8a48e2ffaa5c5c5d6e6a1",
+  "merge_commit": "73403ad14fcd3f8930c6965a49c00fcfa7e3f7e5",
+  "resolution_conflits": "12 conflits, tous dans livraisons/Livraison Codex/I-03-Infectiologie/travail ; les 44 fichiers de travail Codex modifiés par PR20 sont restaurés à l'identique de main (un auteur par fichier). Les versions canoniques injectées par Claude (A41, A53, B24) contiennent déjà les posologies des FI suisses (Prezista/Symtuza, Bactrim forte, adrénaline sans débit étranger, schéma SSI de la syphilis latente) : aucune erreur médicale démontrée à reporter.",
+  "registre": {
+    "chemin": "organisation/SCELLES.json",
+    "fichiers": 405,
+    "scelle": true,
+    "verification": "python3 tools/sceller.py verifier : Conforme"
+  },
+  "arret_codex": {
+    "signal": "docs/collaboration/SIGNAUX_CODEX.json#arret",
+    "bannieres": [
+      "AGENTS.md",
+      "COORDINATION.md",
+      "CLAUDE.md"
+    ],
+    "production_plan": "chapitre actif Codex A53 libéré (injecté par Claude sous l'intitulé canonique « Syphilis »)"
+  },
+  "controles": {
+    "unittest": "237 tests OK",
+    "garde_espace": "python3 tools/espace.py garde origin/main HEAD : code 0",
+    "build": "MEDINA + 22 fragments + aperçu I-03",
+    "audit_fragments": "22 fragments, JavaScript valide, build reproductible",
+    "navigateur_apercu": "5543 contrôles ordinateur/mobile, 0 échec",
+    "navigateur_frontends": "472 contrôles, 22 fragments, 0 échec"
+  },
+  "limites": "Décision d'injection et scellement par Claude ; ni validation médicale humaine, ni preuve de couverture CIM-11. Aucun fragment n'est déclaré INJECTÉ au sens du protocole par fragment."
+}

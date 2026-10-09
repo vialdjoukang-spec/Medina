@@ -2,11 +2,12 @@
 <!-- ===== FENÊTRES : diagnostic et examens ===== -->
 <template data-pop="i25-rfcl" data-title="Modèle de probabilité pondérée par les facteurs de risque (RF-CL, ESC 2024)">
 <div class="lab">But</div><p>Estimer la probabilité qu’un patient symptomatique ait une maladie coronaire épicardique obstructive, avant tout examen. Recommandé par l’ESC 2024 (classe I).</p>
-<div class="lab">Variables</div><p>Sexe ; âge par tranches ; type de symptôme (angor typique, atypique, douleur non angineuse, dyspnée) ; nombre de facteurs de risque (0–1, 2–3, 4–5) parmi l’antécédent familial précoce, le tabagisme, la dyslipidémie, l’hypertension et le diabète. La probabilité se lit dans le tableau de l’ESC 2024.</p>
+<div class="lab">Variables</div><p>Sexe ; âge par décennie, de 30 à 80 ans ; score de symptôme : 1 point pour une gêne constrictive rétrosternale ou du cou, de la mâchoire, de l’épaule ou du bras, 1 point pour un déclenchement par un stress physique ou émotionnel, 1 point pour un soulagement par le repos ou les dérivés nitrés en 5 minutes ; une dyspnée d’effort comme symptôme principal vaut 2 points ; nombre de facteurs de risque (0–1, 2–3, 4–5) parmi l’antécédent familial précoce (homme &lt; 55 ans, femme &lt; 65 ans), le tabagisme actuel ou ancien, la dyslipidémie, l’hypertension et le diabète. La probabilité se lit dans le tableau de l’ESC 2024, qui ne dépasse pas 45 %.</p>
+<div class="lab">Exemples lus dans le tableau</div><p>Homme de 65 ans, score 3, deux facteurs : 35 %. Femme de 45 ans, score 2, un facteur : 1 %, probabilité très basse.</p>
 <div class="lab">Catégories</div><p>Très basse ≤ 5 % ; basse &gt; 5–15 % ; modérée &gt; 15–50 % ; élevée &gt; 50–85 % ; très élevée &gt; 85 %.</p>
 <div class="lab">Ajustement clinique</div><p>La probabilité est relevée en cas d’anomalies ECG évocatrices, de dysfonction ventriculaire gauche évocatrice, d’ECG d’effort anormal, d’artériopathie périphérique ou de calcifications coronaires connues.</p>
-<div class="lab">Score calcique (CACS-CL)</div><p>Combiner le modèle au score calcique reclasse davantage de patients en probabilité très basse et permet de différer les examens chez eux.</p>
-<div class="lab">Pourquoi un nouveau modèle</div><p>L’ancienne table de probabilité (ESC 2019 et antérieures) surestimait la prévalence de la maladie obstructive dans les populations contemporaines, ce qui conduisait à trop d’examens.</p>
+<div class="lab">Score calcique (CACS-CL)</div><p>Le score calcique est à envisager chez le patient à probabilité basse (5–15 %) : combiné au modèle, il reclasse une partie de ces patients en probabilité très basse, chez qui aucun examen cardiaque supplémentaire n’est envisagé pour l’instant.</p>
+<div class="lab">Pourquoi un nouveau modèle</div><p>Le modèle de 2019 surestimait la prévalence de la maladie obstructive. Le modèle RF-CL classe trois fois plus de patients en probabilité très basse (38 % contre 12 %) et prédit une incidence annuelle d’infarctus ou de décès de 0,5 %, 1,1 % et 2,1 % pour les probabilités très basse, basse et modérée.</p>
 <div class="lab">Limite</div><p>Le modèle estime une probabilité de sténose obstructive ; il ne dit rien de l’ANOCA ni de l’INOCA.</p></template>
 
 <template data-pop="i25-cac" data-title="Score calcique coronaire (Agatston)">
@@ -45,17 +46,17 @@
 
 <template data-pop="i25-duke" data-title="Score de Duke (épreuve sur tapis roulant)">
 <div class="lab">Formule</div><p>Score = durée d’effort en minutes (protocole de Bruce) − 5 × sous-décalage maximal du ST en mm − 4 × index d’angor (0 : pas d’angor ; 1 : angor non limitant ; 2 : angor ayant arrêté l’épreuve).</p>
-<div class="lab">Lecture</div><p>≥ + 5 : risque faible (mortalité annuelle de l’ordre de 0,25 %). − 10 à + 4 : risque intermédiaire. ≤ − 11 : risque élevé (mortalité annuelle de l’ordre de 5 %), qui justifie une coronarographie.</p>
+<div class="lab">Lecture</div><p>≥ + 5 : risque faible (mortalité annuelle de l’ordre de 0,25 %). − 10 à + 4 : risque intermédiaire. ≤ − 11 : risque élevé (mortalité annuelle de l’ordre de 5 %). L’ESC 2024 retient comme critère de haut risque un score ≤ −10, qui justifie une coronarographie.</p>
 <div class="lab">Exemple</div><p>Effort de 7 minutes, sous-décalage de 2 mm, angor non limitant : 7 − 10 − 4 = − 7, risque intermédiaire.</p>
 <div class="lab">Limite</div><p>Validé sur tapis roulant et dans des populations anciennes ; il ne remplace pas l’imagerie.</p></template>
 
 <template data-pop="i25-hautrisque" data-title="Critères de haut risque d’événements par examen">
-<p>Critères associés à une mortalité cardiovasculaire annuelle estimée &gt; 3 % (ESC 2019, principe maintenu en 2024) :</p>
-<div class="lab">ECG d’effort</div><p>Score de Duke ≤ − 11.</p>
+<p>Critères recommandés par l’ESC 2024 pour identifier un risque élevé d’événements (classe I, niveau B) ; ils conduisent à une coronarographie avec mesure de pression, quels que soient les symptômes (classe I, niveau A) :</p>
+<div class="lab">ECG d’effort</div><p>Score de Duke ≤ −10.</p>
 <div class="lab">Scintigraphie ou TEP</div><p>Zone d’ischémie ≥ 10 % du myocarde ventriculaire gauche.</p>
 <div class="lab">Échocardiographie de stress</div><p>≥ 3 segments sur 16 avec hypokinésie ou akinésie induites.</p>
 <div class="lab">IRM de stress</div><p>≥ 2 segments sur 16 avec défaut de perfusion, ou ≥ 3 segments dysfonctionnels induits par la dobutamine.</p>
-<div class="lab">Coroscanner</div><p>Sténose du tronc commun ≥ 50 % ; atteinte tritronculaire avec sténoses ≥ 70 % ; atteinte bitronculaire avec sténose ≥ 70 % de l’interventriculaire antérieure proximale.</p>
+<div class="lab">Coroscanner</div><p>Sténose du tronc commun ≥ 50 % ; atteinte tritronculaire avec sténoses ≥ 70 % ; atteinte bitronculaire avec sténose ≥ 70 % incluant l’interventriculaire antérieure proximale ; atteinte de la seule interventriculaire antérieure proximale ≥ 70 % avec FFR-CT ≤ 0,80.</p>
 <div class="lab">Autres signaux d’alerte</div><p>Chute de la pression artérielle à l’effort, dilatation ventriculaire transitoire, FEVG ≤ 35 % d’origine ischémique.</p></template>
 
 <template data-pop="i25-ffr" data-title="Réserve coronaire fractionnelle (FFR)">

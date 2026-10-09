@@ -18,16 +18,13 @@ a('EP',[('E','Embolie'),('P','Pulmonaire')],'Embolie pulmonaire',
 a('TIH',[('T','Thrombopénie'),('I','Induite par'),('H','l’Héparine')],'Thrombopénie induite par l’héparine',
  '<p>Dans la forme immunologique, des anticorps activent les plaquettes et exposent à des thromboses malgré leur diminution. Une suspicion impose l’arrêt de toute héparine et une évaluation urgente d’un anticoagulant non héparinique.</p>','i51-tih')
 
-# ---- classifications et codes
-a('CIM-10-CM',[('C','Classification'),('I','Internationale des'),('M','Maladies'),('10','10e révision'),('CM','Clinical Modification (modification clinique américaine)')],'Classification internationale des maladies, 10e révision, modification clinique des États-Unis',
- '<p>Version américaine de la CIM-10, plus détaillée que la version de l’OMS. Elle réserve le code I51.81 au syndrome de Tako-tsubo ; elle ne s’applique pas en Suisse, qui utilise la CIM-10-GM.</p>','i51-codage-tts')
-a('M32.1',[('M32.1','code CIM-10 : M32 = lupus érythémateux systémique ; .1 = lupus avec atteinte d’organes ou de systèmes')],'Code CIM-10 M32.1 : lupus érythémateux systémique avec atteinte viscérale',
- '<p>Employé avec un code astérisque I32.8 (péricardite) ou I39 (endocardite de Libman-Sacks) pour coder l’atteinte cardiaque du lupus.</p>','i51-libman')
 
 # ---- études et essais
 t('RIVAWAR',[('RIVA','RIVAroxaban'),('WAR','WARfarine')],'Essai RIVAWAR (2025)',
  '<p>Nom d’essai formé des premières syllabes des deux molécules comparées, non un sigle lettre à lettre. Essai randomisé ouvert de 261 patients : rivaroxaban contre warfarine pour un thrombus ventriculaire gauche après un infarctus ; résorption équivalente à 12 semaines.</p>','i51-meta-aod')
 t('RED VELVT',[('RED VELVT','nom propre de l’étude ; son développement lettre à lettre n’a pas pu être vérifié lors de la rédaction')],'Étude RED VELVT (2020)',
  '<p>Étude observationnelle rétrospective qui associait les AOD à davantage d’embolies que l’antivitamine K dans le thrombus ventriculaire gauche ; résultat non confirmé par les essais randomisés.</p>','i51-redvelvt')
-t('APEX-AMI',[('APEX','Assessment of PEXelizumab'),('AMI','in Acute Myocardial Infarction')],'Essai APEX-AMI (2007)',
- '<p>Essai du pexélizumab dans l’infarctus aigu traité par angioplastie primaire ; ses données ont servi à décrire le pronostic des ruptures de pilier opérées ou non.</p>','i51-pilier')
+
+# ---- registre européen des complications mécaniques (balayage du 08.10.2026)
+t('CAUTION',[('CAUTION','nom de registre européen des complications mécaniques de l’infarctus opérées ; son développement lettre à lettre n’a pas été vérifié lors du balayage')],'Registre CAUTION (Matteucci et collaborateurs, 2024)',
+ '<p>Cohorte rétrospective de 720 patients opérés d’une rupture septale, d’une rupture de pilier ou d’une rupture de la paroi libre dans 27 centres de 9 pays, surtout européens, de 2001 à 2019 ; mortalité hospitalière de 37,4 %.</p>','i51-caution')

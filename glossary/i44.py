@@ -105,3 +105,9 @@ a('His-Purkinje',[('His-Purkinje','noms de deux anatomistes (Wilhelm His junior,
  '<p>Faisceau de His, branches et réseau de Purkinje : partie infranodale et rapide du tissu de conduction, dépendante du courant sodique et peu sensible au système nerveux autonome.</p>','i44-site')
 a('rS',[('r','petite onde R positive initiale'),('S','grande onde S négative')],'Morphologie rS du QRS',
  '<p>Petite onde R suivie d’une grande onde S : aspect normal en V1, et en DII, DIII et aVF dans l’hémibloc antérieur gauche.</p>','i44-hbag')
+
+# ---- noms de spécialités cités d'après l'information professionnelle suisse (balayage du 08.10.2026)
+a('DigiFab',[('DigiFab','nom de marque déposé (fragments Fab antiDIGoxine), non abréviation')],'DigiFab® : fragments d’anticorps antidigoxine ovins',
+ '<p>Spécialité autorisée en Suisse (Swissmedic 59301) : fragments Fab ovins qui fixent la digoxine ; un flacon de 40 mg neutralise environ 0,5 mg de digoxine.</p>','i44-d-fab')
+a('GlucaGen',[('GlucaGen','nom de marque déposé du glucagon de Novo Nordisk, non abréviation')],'GlucaGen® : glucagon injectable',
+ '<p>Spécialité suisse de glucagon dont l’indication autorisée est l’hypoglycémie sévère (1 mg) ; son emploi dans l’intoxication aux bêtabloquants est hors indication.</p>','i44-d-glucagon')

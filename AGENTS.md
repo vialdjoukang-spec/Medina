@@ -1,10 +1,29 @@
+## ARRÊT CODEX — 9 octobre 2026 (section 12.4)
+
+Vial demande : « Sauvegarde et injecte ce qu'il faut injecter ». Claude applique la section 12.4 de [LEADERSHIP_CLAUDE_2026-10-08.md](docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md) : **Codex est arrêté** (aucune production, aucune injection), le travail Claude est fusionné dans `main` et les sources médicales injectées sont **scellées** dans `organisation/SCELLES.json` ; toute modification hors branche `claude/*` est refusée par la garde. Signal : `docs/collaboration/SIGNAUX_CODEX.json` (clé `arret`).
+
+## INSTRUCTION PRINCIPALE — Claude Leader, 8 octobre 2026
+
+**Audit interne Claude (section 13)** : quatre dimensions obligatoires — esthétique et rédaction, exactitude médicale, exactitude des sources, frontend local agréable — et **deux audits successifs pour valider chaque catégorie** avant injection et scellement.
+
+**EN VIGUEUR (section 12)** : **aucun cours de Claude n'est audité par Codex** ; Codex **livre** systématiquement ses cours à Claude, qui les corrige puis les **injecte** ; Codex n'injecte plus. Claude audite ses propres cours par agents différés. À l'approche de sa limite hebdomadaire, Claude arrête Codex, injecte et **scelle** les cours (`organisation/SCELLES.json`), non modifiables par Codex.
+
+**RÈGLE FONDAMENTALE (section 11)** : aucun cours produit de mémoire — chaque affirmation vient d'une source lue ; **sources suisses puis européennes, aucune recommandation américaine** ; médicaments selon l'information professionnelle suisse Swissmedic (`tools/swissmedic_fi.py`) ; **plan monographique classique**, sans îlot ni tableau consacré au code CIM. Toute invention ou tricherie est interdite.
+
+Consigne directe de Vial, prioritaire sur toutes les sections ci-dessous qui lui sont contraires : **Claude est Leader du projet.** Lire [LEADERSHIP_CLAUDE_2026-10-08.md](docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md). Claude rédige ses cours dans un français très agréable et captivant ; un **second agent distinct** les relit, renforce les points faibles et **injecte directement** (« Auto-audit par Agent différé opus 5.5 ») ; **Codex audite ensuite le fichier final injecté**. Claude améliore systématiquement les cours Codex reçus, sauf s’ils sont captivants et corrects sur le fond. Après ses onze fragments, Claude peut entamer les fragments Codex en ordre inverse de création (M-21 vers I-03). Une erreur médicale démontrée reste prioritaire.
+
+Règles universelles ajoutées : **l’efficacité prime sur le volume** — information efficace, puissante, extrêmement didactique, claire, en termes médicaux dédiés, sans remplissage ni perte d’information utile ; **deux captures d’écran réelles par leçon** (ouverture de la leçon et fenêtre explicative ouverte, `tools/capture_lecon.py`), présentées dans le **panneau latéral**, non dans le fil du chat. Voir les sections 7 et 8 du même document.
+Règle universelle de langue : un français **merveilleux à lire, riche, professionnel et esthétique, sans excès** (section 9). File de production Claude : `organisation/FILE_FRAGMENTS_CLAUDE.json`, un fragment à la fois, leçon par leçon (section 10).
+
 ## Exception ciblée C-01 — instruction directe de Vial, 8 octobre 2026
 
 Vial demande de corriger et d'intégrer immédiatement les parties exploitables, avec un marquage rouge repérable par Claude pour les cas délicats. Lire [l'exception documentée](docs/collaboration/instructions/EXCEPTION_C01_RESERVES_VIAL_2026-10-08.md). Des tranches **provisoires avec réserves**, techniquement contrôlées, sont autorisées pour la remise C-01 PR16. Elles ne constituent pas l'audit final ni l'état INJECTE. Les attributions, chapitres actifs, autres fragments et verrous finaux restent inchangés. Une incertitude ne devient pas une recommandation thérapeutique applicable par la seule couleur rouge. Le registre append-only `organisation/provisional_integrations.json` donne les chemins, empreintes, contrôles et actions attendues de Claude.
 
-## Captures visibles dans le chat — 8 octobre 2026
+## Captures visibles — 8 octobre 2026 (présentation remplacée)
 
-Vial demande explicitement de voir les captures du travail sur les cours **ici, de manière dynamique**. Afficher les captures dans les messages et réponses avec une image visible, accompagnée du lien direct du cours ; les sorties techniques et les seuls liens de téléchargement ne suffisent pas. Pour présenter une navigation, produire une capture animée issue du navigateur réel et l’afficher directement. Garder le statut de version de travail et dater/versionner les captures ; ne pas inventer un rendu ni annoncer un flux en direct pour une animation enregistrée. Le workflow Pages publie les captures et l’animation sous `apercus/controle/` après les contrôles.
+> Remplacé pour la présentation par la règle du panneau latéral : deux captures par leçon, affichées à côté de la conversation, non dans le fil du chat (section 8 de `docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md`).
+
+Vial demandait explicitement de voir les captures du travail sur les cours **ici, de manière dynamique**. Afficher les captures dans les messages et réponses avec une image visible, accompagnée du lien direct du cours ; les sorties techniques et les seuls liens de téléchargement ne suffisent pas. Pour présenter une navigation, produire une capture animée issue du navigateur réel et l’afficher directement. Garder le statut de version de travail et dater/versionner les captures ; ne pas inventer un rendu ni annoncer un flux en direct pour une animation enregistrée. Le workflow Pages publie les captures et l’animation sous `apercus/controle/` après les contrôles.
 
 ## Alignement avec Claude — police de lecture, 8 octobre 2026
 

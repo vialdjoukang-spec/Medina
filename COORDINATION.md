@@ -1,3 +1,20 @@
+## ARRÊT CODEX — 9 octobre 2026 (section 12.4)
+
+Vial demande : « Sauvegarde et injecte ce qu'il faut injecter ». Claude applique la section 12.4 de [LEADERSHIP_CLAUDE_2026-10-08.md](docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md) : **Codex est arrêté** (aucune production, aucune injection), le travail Claude est fusionné dans `main` et les sources médicales injectées sont **scellées** dans `organisation/SCELLES.json` ; toute modification hors branche `claude/*` est refusée par la garde. Signal : `docs/collaboration/SIGNAUX_CODEX.json` (clé `arret`).
+
+## INSTRUCTION PRINCIPALE — Claude Leader, 8 octobre 2026
+
+**Audit interne Claude (section 13)** : quatre dimensions obligatoires — esthétique et rédaction, exactitude médicale, exactitude des sources, frontend local agréable — et **deux audits successifs pour valider chaque catégorie** avant injection et scellement.
+
+**EN VIGUEUR (section 12)** : **aucun cours de Claude n'est audité par Codex** ; Codex **livre** systématiquement ses cours à Claude, qui les corrige puis les **injecte** ; Codex n'injecte plus. Claude audite ses propres cours par agents différés. À l'approche de sa limite hebdomadaire, Claude arrête Codex, injecte et **scelle** les cours (`organisation/SCELLES.json`), non modifiables par Codex.
+
+**RÈGLE FONDAMENTALE (section 11)** : aucun cours produit de mémoire — chaque affirmation vient d'une source lue ; **sources suisses puis européennes, aucune recommandation américaine** ; médicaments selon l'information professionnelle suisse Swissmedic (`tools/swissmedic_fi.py`) ; **plan monographique classique**, sans îlot ni tableau consacré au code CIM. Toute invention ou tricherie est interdite.
+
+Consigne directe de Vial, prioritaire sur toutes les sections ci-dessous qui lui sont contraires : **Claude est Leader du projet.** Lire [LEADERSHIP_CLAUDE_2026-10-08.md](docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md). Claude rédige ses cours dans un français très agréable et captivant ; un **second agent distinct** les relit, renforce les points faibles et **injecte directement** (« Auto-audit par Agent différé opus 5.5 ») ; **Codex audite ensuite le fichier final injecté**. Claude améliore systématiquement les cours Codex reçus, sauf s’ils sont captivants et corrects sur le fond. Après ses onze fragments, Claude peut entamer les fragments Codex en ordre inverse de création (M-21 vers I-03). Une erreur médicale démontrée reste prioritaire.
+
+Règles universelles ajoutées : **l’efficacité prime sur le volume** — information efficace, puissante, extrêmement didactique, claire, en termes médicaux dédiés, sans remplissage ni perte d’information utile ; **deux captures d’écran réelles par leçon** (ouverture de la leçon et fenêtre explicative ouverte, `tools/capture_lecon.py`), présentées dans le **panneau latéral**, non dans le fil du chat. Voir les sections 7 et 8 du même document.
+Règle universelle de langue : un français **merveilleux à lire, riche, professionnel et esthétique, sans excès** (section 9). File de production Claude : `organisation/FILE_FRAGMENTS_CLAUDE.json`, un fragment à la fois, leçon par leçon (section 10).
+
 # MEDINA — coordination des 22 fragments
 
 Instruction reçue le **8 octobre 2026** : Vial demande de lire `Prompt_Codex.pdf` et de continuer. Le [protocole actif](docs/collaboration/PROTOCOLE_FRAGMENTS_2026-10-08.md) remplace les règles incompatibles de progression par remise d’un chapitre, d’audit après injection et de réouverture après injection. L’arrêt Codex antérieur est levé par cette demande de reprise. Les veilles automatiques restent en pause.
