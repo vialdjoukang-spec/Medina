@@ -23,7 +23,7 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 16. D-16-Dermatologie (`S11`) — fait
 - [x] 17. O-17-Oto-rhino-laryngologie et médecine bucco-dentaire (`S12`) — fait
 - [x] 18. O-18-Ophtalmologie (`S13`) — fait
-- [ ] 19. M-19-Médecine d’urgence, traumatologie et toxicologie (`T3`) — restant
+- [x] 19. M-19-Médecine d’urgence, traumatologie et toxicologie (`T3`) — fait
 - [ ] 20. D-20-Diagnostic clinique et examens complémentaires (`T5`) — restant
 - [ ] 21. M-21-Médecine de premier recours et santé publique (`T6`) — restant
 - [ ] 22. E-22-Éthique médicale, droit et communication (`T7`) — restant
