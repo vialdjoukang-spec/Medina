@@ -59,7 +59,7 @@ Outil : /workspace/sweep/nominal.py (spaCy, détection des phrases sans verbe) p
 - K25 : FAIT (10.10.2026). Encadrés, Pareto, définitions formelles, populations particulières et 46 fenêtres sur 51 réécrits en phrases complètes, avec justification (localisation bulbaire, tests, résistances) ; 3 images réelles ajoutées dans les fenêtres (pneumopéritoine, ulcère/érosion, sténose). Doses et codes inchangés.
 - K21 : FAIT (10.10.2026). Définitions formelles, encadrés, Pareto, paramètres clés et 39 champs de fenêtres réécrits en phrases complètes, avec justification (épreuve IPP, prise avant repas, seuils) ; 3 images réelles ajoutées dans les fenêtres (œsophagite, Barrett, sténose). Doses et codes inchangés.
 - K85 : FAIT (10.10.2026). Définitions formelles, encadrés, Pareto et 41 fenêtres réécrits en phrases complètes, avec justification (CPRE, scanner à 72-96 h, nutrition entérale, pénétration des antibiotiques) ; 4 images réelles ajoutées dans les fenêtres (cytostéatonécrose, Cullen, collection aiguë, pseudokyste). Doses et codes inchangés.
-- K80 : À FAIRE (204 phrases signalées par le détecteur avant tri, faux positifs compris).
+- K80 : FAIT (10.10.2026). Définitions formelles, encadrés, Pareto et 52 champs de fenêtres réécrits en phrases complètes, avec justification (opérer la lithiase symptomatique, délais de cholécystectomie et de drainage) ; 4 images réelles ajoutées dans les fenêtres (calculs, échographie, cholécystite, CPRE). Doses et codes inchangés.
 - K74 : À FAIRE (127 phrases signalées par le détecteur avant tri, faux positifs compris).
 - K70 : À FAIRE (164 phrases signalées par le détecteur avant tri, faux positifs compris).
 - K50 : À FAIRE (153 phrases signalées par le détecteur avant tri, faux positifs compris).
