@@ -15,3 +15,12 @@ a('NLST', [('N', 'National (national)'), ('L', 'Lung (pulmonaire)'), ('S', 'Scre
   '<p>Essai randomisé américain qui a montré qu’un dépistage annuel par TDM à faible dose réduit la mortalité par cancer bronchique et la mortalité globale chez les grands fumeurs de 55 à 74 ans. La Suva et les critères d’Helsinki 2014 s’en inspirent pour le dépistage des exposés à l’amiante.</p>', 'j60-depistage-tdm')
 a('HLA-DPB1', [('HLA', 'Human Leukocyte Antigen (antigène leucocytaire humain)'), ('DP', 'locus DP'), ('B1', 'gène de la chaîne bêta 1')], 'Gène HLA-DPB1',
   '<p>Gène qui code la chaîne bêta de la molécule HLA-DP. Son variant codant un acide glutamique en position 69 (Glu69) augmente le risque de sensibilisation au béryllium et de bérylliose chronique (Suva, 2012 ; Marchand-Adam, 2008).</p>', 'j60-hla-glu69')
+# Noms d’auteurs composés cités dans le texte et les références (précédent : Funke-Chambour, j84).
+a('Marchand-Adam', [('Marchand-Adam', 'S. Marchand-Adam, premier auteur')], 'Marchand-Adam et al., Eur Respir J 2008',
+  '<p>Série de huit béryllioses chroniques sévères traitées par corticoïdes après l’arrêt de l’exposition, suivies 69 mois en médiane.</p>', 'j60-d-corticoides')
+a('Mora-Cuesta', [('Mora-Cuesta', 'V. M. Mora-Cuesta, premier auteur')], 'Mora-Cuesta et al., Respirology 2026',
+  '<p>Étude cas-témoins de sept centres espagnols : 81 transplantations pulmonaires pour pneumoconiose, survie comparable à celle des témoins.</p>', 'j60-transplantation')
+a('Müller-Quernheim', [('Müller-Quernheim', 'J. Müller-Quernheim, premier auteur')], 'Müller-Quernheim et al., Eur Respir J 2006',
+  '<p>Étude prospective : chez 84 patients étiquetés sarcoïdose, une bérylliose chronique a été diagnostiquée 34 fois après recherche de l’exposition et du test au béryllium.</p>', 'j60-berylliose')
+a('Vu-Duc', [('Vu-Duc', 'T. Vu-Duc, premier auteur')], 'Vu-Duc et Guillemin, Soz Praventivmed 1999',
+  '<p>Revue de l’histoire de la silicose en Suisse fondée sur les données de la Suva : 200 à 300 nouveaux cas par an des années 1940 aux années 1960, une centaine dès 1974, 30 à 50 dès 1989.</p>')
