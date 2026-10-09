@@ -1,0 +1,40 @@
+/* MEDINA — thème clair commun aux 22 frontends (09.10.2026, demande de Vial) :
+   fond bleu-vert pâle, surfaces blanches, couleur de catégorie (--cat) atténuée en bandeau,
+   titres presque noirs à contraste élevé ; même langage visuel que l'accueil. Se superpose à atlas_v2.css. */
+html[data-medina-fragment]{--y-bg:#e3f1ef;--y-surface:#ffffff;--y-ink:#0b0d10;--y-ink2:#3a414b;--y-line:#cfe2df;--y-brand:#0f6e66;--y-brand-soft:#d3ebe7}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body{background-color:var(--y-bg)!important;
+ background-image:radial-gradient(circle at 1px 1px,#0f5f5a1c 1px,transparent 1.3px)!important;background-size:24px 24px!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar{background:#ffffffe6!important;border-bottom:1px solid var(--y-line)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar{border-right:1px solid var(--y-line)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar .nav-main a.active{background:var(--y-brand-soft)!important;color:var(--y-ink)!important;box-shadow:inset 4px 0 0 var(--y-brand)!important}
+
+/* Couverture du fragment : claire, bandeau teinté, texte foncé. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover{background:linear-gradient(135deg,#ffffff 0,#eef8f6 55%,#d9efeb 100%)!important;
+ border:1px solid var(--y-line)!important;border-top:5px solid var(--y-brand)!important;box-shadow:0 10px 24px -18px #0b3b3666!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover *,
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mcg-cover h1,.mcg-cover p,.mcg-cover .mcg-counts span){color:var(--y-ink)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover .mcg-eyebrow{color:var(--y-brand)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover .mcg-counts span{background:#ffffff!important;border:1.5px solid var(--y-brand)!important}
+
+/* Cartes de catégorie : blanches, bandeau à la couleur atténuée de la catégorie, titre foncé. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card{background-color:#ffffff!important;
+ background-image:linear-gradient(180deg,color-mix(in srgb,var(--cat) 24%,#fff) 0,color-mix(in srgb,var(--cat) 16%,#fff) 46px,#fff 46px)!important;
+ border:1px solid color-mix(in srgb,var(--cat) 35%,#d6dbe1)!important;border-top:5px solid color-mix(in srgb,var(--cat) 85%,#000)!important;
+ box-shadow:0 1px 2px #0b0d100f,0 8px 16px -14px #0b0d1040!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card:hover{box-shadow:0 12px 22px -14px #0b0d1066!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card *,
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card h2{color:var(--y-ink)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card :is(.mcg-category-number,.mcg-code){background:#ffffffd9!important;
+ border:1px solid color-mix(in srgb,var(--cat) 40%,#c9ced6)!important;color:color-mix(in srgb,var(--cat) 75%,#0b0d10)!important}
+
+/* En-tête d'une catégorie ouverte : même traitement clair. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-block-heading{background:linear-gradient(180deg,color-mix(in srgb,var(--cat,#0f6e66) 20%,#fff),#fff)!important;
+ border:1px solid color-mix(in srgb,var(--cat,#0f6e66) 35%,#d6dbe1)!important;border-top:5px solid color-mix(in srgb,var(--cat,#0f6e66) 85%,#000)!important;box-shadow:none!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-block-heading *,
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mcg-block-heading h2,.mcg-block-heading .mcg-eyebrow){color:var(--y-ink)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-block-heading .mcg-section-count{background:#fff!important;border:1px solid color-mix(in srgb,var(--cat,#0f6e66) 40%,#c9ced6)!important;color:var(--y-ink)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(main,.main,.content,.app-main){background:transparent!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-sidebar-block[aria-current],
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-sidebar-block.active,
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-sidebar-block.is-active{background:color-mix(in srgb,var(--cat,#0f6e66) 18%,#fff)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mcg-sidebar-block[aria-current],.mcg-sidebar-block.active,.mcg-sidebar-block.is-active) *{color:var(--y-ink)!important}
