@@ -33,7 +33,7 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
    check(f.id+' : toutes les catégories sont visibles',await page.locator('.mcg-category-card').count()===O.blocks.length);
    check(f.id+' : un frontend distinct',await page.locator('html').getAttribute('data-medina-fragment')===f.id);
    const visual=await page.evaluate(()=>({font:getComputedStyle(document.querySelector('.mcg-cover h1')).fontFamily,scheme:getComputedStyle(document.documentElement).colorScheme,body:getComputedStyle(document.body).backgroundColor,brand:getComputedStyle(document.querySelector('.brand strong')).color}));
-   check(f.id+' : clair même avec système sombre',!visual.scheme.includes('dark')&&visual.body==='rgb(228, 247, 253)',visual);
+   check(f.id+' : clair même avec système sombre',!visual.scheme.includes('dark')&&visual.body==='rgb(233, 247, 255)',visual);
    check(f.id+' : Atkinson Hyperlegible Next affichée',visual.font.includes('Atkinson Hyperlegible Next'),visual);
    check(f.id+' : marque lisible',visual.brand==='rgb(13, 15, 18)',visual);
    const contrasts=await cardContrast(page,'.mcg-category-card');check(f.id+' : toutes les catégories atteignent 4,5:1',contrasts.every(card=>card.ratio>=4.5),contrasts.filter(card=>card.ratio<4.5));
