@@ -22,3 +22,18 @@ Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I88, R03,
 État (9.10.2026, 22 h 20) : registre prioritaire S01 achevé (I73, I95, I89) ; prêt pour audit.
 
 Règle image du propriétaire (9.10.2026) : images générées interdites ; toutes les figures C-01 sont des images réelles sous licence libre (PROVENANCE.json).
+
+## Balayage rétroactif obligatoire (ordre du propriétaire, 10.10.2026)
+
+Méthode : détecteur de phrases sans verbe conjugué (spaCy fr, /workspace/sweep_c01/audit2.py) sur paragraphes, listes, encadrés et fenêtres, puis réécriture manuelle en phrases complètes avec justification (« car », « parce que ») ; contrôle des images (toutes réelles, PROVENANCE.json) ; images réelles ajoutées dans les fenêtres ; suppression des styles en ligne ; test_v7 --static.
+
+| Cours | Scellé | Phrases nominales | Images dans les fenêtres | Styles en ligne | État du balayage |
+| --- | --- | --- | --- | --- | --- |
+| I73 | non | 34 segments réécrits (fenêtres, Pareto, encadrés, mesures, contre-indications) | 2 (capillaroscopie, crise) | 4 retirés | Fait |
+| I95 | non | à faire (≈ 70 segments détectés, faux positifs inclus) | 2 (baroréflexe, inclinaison) | 2 retirés | Partiel |
+| I89 | non | à faire (≈ 55) | 2 (scintigraphie, lymphangion) | 5 retirés | Partiel |
+| I77 | non | à faire (≈ 58) | 2 (collier de perles, tronc cœliaque) | 4 retirés | Partiel |
+| I78 | non | à faire (≈ 68) | 2 (langue, MAV pulmonaire) | 5 retirés | Partiel |
+| I97 | non | à faire (≈ 48) | 2 (épanchement, Doppler) | 0 | Partiel |
+| I85, R00, R02 | non | à faire (≈ 175, 197, 92) | déjà 3, 2, 3 | 0 | Partiel |
+| I00 … R05 (26 cours, dont I26, I27, I51) | oui (`organisation/SCELLES.json`) | non balayés | — | — | Bloqué : la garde `tools/espace.py garde` (CI espace.yml et pages.yml) refuse toute modification d’une source scellée hors branche claude/* ; décision du propriétaire requise |
