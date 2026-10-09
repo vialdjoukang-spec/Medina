@@ -169,6 +169,15 @@ def isolate_specialty(data, fragment, chapters, completed):
     })
 
 
+def fragment_motif(ident):
+    """Motif de la spécialité (icône de l'accueil), en filigrane blanc dans la couverture."""
+    from urllib.parse import quote
+    from build_index import ICONS
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#ffffff" stroke-opacity=".55" '
+           'stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">' + ICONS.get(ident, '') + '</svg>')
+    return 'html[data-medina-fragment]{--frag-motif:url("data:image/svg+xml,' + quote(svg) + '")}'
+
+
 def category_organisation_data(source, fragment, root):
     """Expose real CIM blocks and logical courses without dropping their variants."""
     root = Path(root)
@@ -398,7 +407,7 @@ def finish_surface(source, fragment, root):
                     % (style, weight, base64.b64encode((Path(root) / 'shell/fonts' / name).read_bytes()).decode())
                     for name, style, weight in (('ahn-400.woff2', 'normal', '400'), ('ahn-400i.woff2', 'italic', '400'),
                                                 ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700')))
-    atlas_css = (Path(root) / 'engine/atlas_v2.css').read_text(encoding='utf-8') + (Path(root) / 'engine/atlas_v3.css').read_text(encoding='utf-8')
+    atlas_css = (Path(root) / 'engine/atlas_v2.css').read_text(encoding='utf-8') + (Path(root) / 'engine/atlas_v3.css').read_text(encoding='utf-8') + (Path(root) / 'engine/atlas_v4.css').read_text(encoding='utf-8') + fragment_motif(fragment['id'])
     source = source.replace('</head>', '<style id="medina-atlas-v2">' + faces + atlas_css + '</style></head>', 1)
     source = source.replace('</body>', '<script id="medina-category-organisation-data" type="application/json">' + payload + '</script><script id="medina-category-organisation-runtime">' + category_js + '</script><script id="medina-atlas-v2-runtime">' + (Path(root) / 'engine/atlas_v2.js').read_text(encoding='utf-8') + '</script></body>', 1)
     return source

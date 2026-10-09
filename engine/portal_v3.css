@@ -81,3 +81,28 @@ html body .hero::after{content:"";position:absolute;right:6%;top:12%;width:14px;
  box-shadow:-210px 260px 0 -3px #7e57c2,-40px 300px 0 -4px #3949ab,-330px 40px 0 -5px #26a69a,-120px -10px 0 -6px #5c6bc0;pointer-events:none}
 html body .overview{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 @media (max-width:760px){html body .overview{grid-template-columns:1fr!important}html body .hero-art{min-height:240px}html body .hero::after{display:none}}
+/* Style « Été vivant » (09.10.2026) : lagon, ciel, soleil, corail, feuillage ; filigrane marin ; aucun gris ni beige.
+   Fondements : Carruthers 2010 (doi:10.1186/1471-2288-10-12), Valdez et Mehrabian 1994 (doi:10.1037//0096-3445.123.4.394), Lankston 2010 (doi:10.1258/jrsm.2010.100256). */
+html body{background-color:#e4f7fd!important;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='220' viewBox='0 0 280 220'%3E%3Cg fill='none' stroke='%231d6fa5' stroke-opacity='.10' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M0 40q17-14 35 0t35 0 35 0 35 0 35 0 35 0 35 0 35 0'/%3E%3Cpath d='M0 180q17-14 35 0t35 0 35 0 35 0 35 0 35 0 35 0 35 0'/%3E%3Cpath d='M40 100c12-10 30-10 42 0-12 10-30 10-42 0Zm42 0 10-8v16Z'/%3E%3Ccircle cx='60' cy='98' r='1.6'/%3E%3Cpath d='M200 92l5 14 15 1-12 9 4 15-12-9-12 9 4-15-12-9 15-1Z'/%3E%3Cpath d='M150 150c0-14 22-14 22 0m-22 0h22m-18 0v-8m7 8v-11m7 11v-8'/%3E%3Ccircle cx='240' cy='60' r='3'/%3E%3Ccircle cx='248' cy='48' r='2'/%3E%3Ccircle cx='244' cy='36' r='1.4'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(180deg,#d4f3fb 0,#e4f7fd 520px,#ecfbf3 100%)!important;
+ background-size:280px 220px,100% 100%!important;background-attachment:fixed,fixed!important}
+html body :is(.brand-caption,.section-copy,.hero-copy,.search-status,.legend-note,.footer-note){color:#1d4e75!important}
+html body .hero h1{color:#0b2545!important}
+html body .hero h1 em{color:#0a8fb8!important}
+html body :is(.eyebrow,.section-kicker){color:#e0613f!important}
+html body .hero-meta span{border-color:#00b4c6!important;background:#fff!important}
+/* Illustration : soleil d’été au-dessus d’une mer en vagues, voilier. */
+html body .hero-art::before{inset:4% 18% 40% 30%!important;border-radius:50%!important;
+ background:radial-gradient(circle at 45% 40%,#fffbe0 0 18%,#ffe27a 40%,#ffc93c 62%,#ff9f43 100%)!important;
+ box-shadow:0 0 0 18px #ffc93c26,0 0 0 40px #ffc93c14,0 30px 60px -20px #ff7a5999!important}
+html body .hero-art::after{inset:auto 0 0 0!important;height:52%!important;border:0!important;border-radius:0 0 28px 28px!important;transform:none!important;box-shadow:none!important;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='200' viewBox='0 0 600 200' preserveAspectRatio='none'%3E%3Cpath d='M0 40q50-30 100 0t100 0 100 0 100 0 100 0 100 0V200H0Z' fill='%2326c6da'/%3E%3Cpath d='M0 80q50-26 100 0t100 0 100 0 100 0 100 0 100 0V200H0Z' fill='%2300acc1'/%3E%3Cpath d='M0 125q50-24 100 0t100 0 100 0 100 0 100 0 100 0V200H0Z' fill='%23008ba3'/%3E%3Cpath d='M300 32 300 -48 352 22Z' fill='%23ffffff'/%3E%3Cpath d='M296 30 296 -30 262 22Z' fill='%23ff7a59'/%3E%3Cpath d='M250 34h110l-14 16h-82Z' fill='%230b2545'/%3E%3C/svg%3E") no-repeat bottom/100% 100%!important}
+html body .hero::after{background:#ffc93c!important;box-shadow:-210px 260px 0 -3px #ff7a59,-40px 300px 0 -4px #3ec27a,-330px 40px 0 -5px #00b4c6,-120px -10px 0 -6px #1e88e5!important}
+html body .overview{background:linear-gradient(120deg,#1e88e5,#00b4c6 55%,#26c486)!important}
+html body .gauge-fluid{background:linear-gradient(180deg,#ffe27a 0,#ffc93c 45%,#ff9f43 100%)!important;border-right-color:#0b2545!important}
+html body .gauge-track{border-color:#0b2545!important;background:#ffffff!important}
+html body .specialty-card{background-color:#ffffff!important;background-image:linear-gradient(160deg,#ffffff 60%,color-mix(in srgb,var(--v) 9%,#fff))!important;border-color:#b9e6f2!important;border-left:7px solid var(--v)!important}
+html body .specialty-card :is(h3,*){color:#0b2545!important}
+html body .specialty-card .card-symbol,html body .specialty-card .card-symbol *{color:#fff!important}
+html body .specialty-card .card-symbol{box-shadow:0 0 0 3px #fff,0 0 0 5px color-mix(in srgb,var(--v) 35%,#fff)!important}
+html body :is(.brand-symbol,.search input){border-color:#00b4c6!important}
