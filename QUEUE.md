@@ -16,7 +16,7 @@ Terminé = inventaire et coquilles générés, contrôles locaux passés ; les c
 - [x] 09. O-09-Oncologie, génétique médicale et soins palliatifs (`T4`) — fait
 - [x] 10. G-10-Gynécologie et sénologie (`S14`) — fait
 - [x] 11. O-11-Obstétrique et néonatologie (`S16`) — fait
-- [ ] 12. M-12-Médecine des âges de la vie (`T2`) — restant
+- [x] 12. M-12-Médecine des âges de la vie (`T2`) — fait
 - [ ] 13. I-13-Immunologie et allergologie (`S07`) — restant
 - [ ] 14. R-14-Rhumatologie et orthopédie (`S10`) — restant
 - [ ] 15. U-15-Urologie et andrologie (`S15`) — restant
