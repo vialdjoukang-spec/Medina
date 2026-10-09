@@ -19,3 +19,9 @@ Inventaire de référence : `ANNEXE_FEUILLE_DE_ROUTE.md`, section P-02 (45 caté
 ## Notes de vérification
 - `test_preview.py` signale sur toutes les leçons (J69 compris) une erreur JS d’import de `preview/lesson-core.js` propre à l’environnement de prévisualisation ; fenêtres, abréviations et onglets vérifiés sans fiche absente.
 - `tests/audit_sciences.py` échoue sur J09 (référence de comparaison absente), antérieur à cette branche.
+
+## Mise à jour 09.10.2026, 23 h (livraison directe sur main)
+- Règle images réelles : 143 schémas SVG dessinés recensés dans les 25 leçons de pneumologie ; 43 remplacés par des images réelles sous licence libre (Wikimedia Commons, CDC ; provenance dans `assets/figures/pneumologie/PROVENANCE.json`), 100 retirés ; 10 algorithmes cliniques (J18, I26, J44, J45, J69) restitués en listes textuelles ; paragraphes de lecture des figures réécrits.
+- Règle linguistique appliquée en révision complète : C34, J69.
+- Restant, révision linguistique et interactivité : R06, J09, J18, J40, J44, J45, I26, I27, J12, J21, J47, J60, J67, J80, J81, J82, J84, J86, J90, J93, J95, J96, R04, R05 (outil `extract.py`/`apply.py`, contrôle automatique des chiffres et des fenêtres conservés).
+- Restant, rédaction : C37/C38, C45, Q32–Q34, R07, R09, S20–S29, T27.
