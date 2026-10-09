@@ -101,6 +101,10 @@ jobs:
           name: controle-cours-infectiologie
           path: _site/apercus/controle
           if-no-files-found: warn
+      - name: Publier la galerie de refonte des 22 fragments
+        run: |
+          mkdir -p _site/apercus/controle/refonte
+          cp docs/collaboration/reviews/2026-10-09/FRONTEND_LECTURE/apercu/* _site/apercus/controle/refonte/
       - name: Auditer les fragments
         env:
           MEDINA_FRAGMENTS: ${{ github.workspace }}/_site/fragments

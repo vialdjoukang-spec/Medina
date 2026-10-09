@@ -299,13 +299,21 @@ async def main():
             await page.goto(ARGS.url.split("#")[0] + "#/home")
             await page.wait_for_function("window.MDN_READY===true&&window.MEDINA_WORK_PREVIEW")
             await page.evaluate("document.fonts.ready")
-            home = await page.evaluate("""() => ({work:window.MEDINA_WORK_PREVIEW,complete:window.MEDINA_COMPLETE,
+            home = await page.evaluate("""() => {
+              const luminance=color=>{const values=(color.match(/[0-9.]+/g)||[]).slice(0,3).map(Number).map(v=>{
+                v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4});
+                return values[0]*.2126+values[1]*.7152+values[2]*.0722};
+              return {work:window.MEDINA_WORK_PREVIEW,complete:window.MEDINA_COMPLETE,
               data:JSON.parse(document.querySelector('#medora-data').textContent),organisation:window.MEDINA_CATEGORY_ORGANISATION,
               courses:[...document.querySelectorAll('template[id^="ch-"]')].map(x=>x.id.slice(3)),
               featured_codes:[...document.querySelectorAll('.mcg-featured-grid .mcg-code')].map(x=>x.textContent.trim()),
               scheme:getComputedStyle(document.documentElement).colorScheme,bg:getComputedStyle(document.body).backgroundColor,
+              background_luminance:luminance(getComputedStyle(document.body).backgroundColor),
+              reading_patterns:[...document.querySelectorAll('html,body,#content,.mcg-cover')].flatMap(el=>[null,'::before','::after'].flatMap(pseudo=>{
+                const style=getComputedStyle(el,pseudo);return /url\\(|repeating-|radial-gradient|conic-gradient/.test(style.backgroundImage)&&(!pseudo||!['none','normal'].includes(style.content))?
+                  [{tag:el.tagName,pseudo,image:style.backgroundImage}]:[]})),
               banner:document.querySelector('#medina-work-preview-banner').getBoundingClientRect().toJSON(),
-              title:document.title})""")
+              title:document.title}}""")
             check(name + ": exact work chapter codes", home["work"]["chapter_codes"] == ARGS.codes, home["work"]["chapter_codes"])
             if ARGS.sources:
                 declared = {row["path"]: row["sha256"] for row in home["work"]["source_files"]}
@@ -315,7 +323,9 @@ async def main():
             check(name + ": exclusive T1 catalogue", home["data"]["fragment"]["id"] == "T1" and len(home["data"]["specialties"]) == 1 and len(home["data"]["entries"]) == 184, len(home["data"]["entries"]))
             check(name + ": no foreign mounted course", sorted(home["courses"]) == sorted(ARGS.codes), home["courses"])
             check(name + ": every work course has a home card", sorted(home["featured_codes"]) == sorted(ARGS.codes), home["featured_codes"])
-            check(name + ": light under dark OS and saved night", "light" in home["scheme"] and "dark" not in home["scheme"] and home["bg"] == "rgb(238, 240, 243)", {"scheme": home["scheme"], "bg": home["bg"]})
+            check(name + ": light under dark OS and saved night", "light" in home["scheme"] and "dark" not in home["scheme"] and home["background_luminance"] >= 0.75,
+                  {"scheme": home["scheme"], "bg": home["bg"], "luminance": home["background_luminance"]})
+            check(name + ": reading surfaces without patterns", not home["reading_patterns"], home["reading_patterns"])
             check(name + ": visible banner", home["banner"]["x"] >= -1 and home["banner"]["right"] <= viewport["width"] + 1 and home["banner"]["top"] >= -1 and home["banner"]["bottom"] <= viewport["height"], home["banner"])
             await overflow(page, name + "/home")
             await page.screenshot(path=str(ARGS.output / f"{name}-home.png"))
