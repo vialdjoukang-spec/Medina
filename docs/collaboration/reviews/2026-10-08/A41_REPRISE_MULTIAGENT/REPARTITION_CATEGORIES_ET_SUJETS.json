@@ -1,0 +1,96 @@
+{
+  "user_rule": "Plusieurs catégories et sujets du même chapitre répartis entre agents en parallèle ; assemblage et livraison au coordinateur pour audit avant le chapitre suivant.",
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "candidate_lot": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41",
+  "assignments": [
+    {
+      "agent": "sentinelle_medicale",
+      "topics": [
+        "Définitions et physiopathologie",
+        "Étiologies, variantes et présentation clinique",
+        "Fenêtres diagnostiques et hémocultures"
+      ],
+      "files": [
+        "A41_a.html",
+        "A41_pop1.html"
+      ]
+    },
+    {
+      "agent": "test_allocation",
+      "topics": [
+        "Diagnostic formel",
+        "Réanimation, choix et surveillance",
+        "Différentiels, urgences, formes particulières"
+      ],
+      "files": [
+        "A41_b.html",
+        "A41_pop_pa.html"
+      ]
+    },
+    {
+      "agent": "review_plan",
+      "topics": [
+        "Microbiologie et biomarqueurs",
+        "Gazométrie et examens complémentaires",
+        "Sciences, mécanismes moléculaires et limites"
+      ],
+      "files": [
+        "A41_c.html",
+        "A41_pop_sciences_revision.html"
+      ]
+    },
+    {
+      "agent": "claude_spec",
+      "topics": [
+        "Doses et monographies",
+        "Antibiothérapie selon le foyer et les résistances",
+        "Mécanismes thérapeutiques, interactions et Pareto"
+      ],
+      "files": [
+        "A41_d.html",
+        "A41_pop2.html"
+      ]
+    },
+    {
+      "agent": "sentinelle_technique",
+      "topics": [
+        "Sources officielles et versions",
+        "Contrôle des liens, contrats et navigation"
+      ],
+      "files": [
+        "SOURCES_TRANSVERSALES.json",
+        "SOURCES_TRANSVERSALES.md"
+      ]
+    },
+    {
+      "agent": "sentinelle_reception",
+      "topics": [
+        "Réception des remises Claude",
+        "Veille distante et traçabilité"
+      ],
+      "files": [
+        "RECEPTION.json",
+        "RECEPTION.md"
+      ]
+    },
+    {
+      "agent": "root",
+      "topics": [
+        "Assemblage des catégories et sujets",
+        "Glossaire et banque de justifications",
+        "Audit de cohérence, publication et demande de contrelecture"
+      ],
+      "files": [
+        "glossary/a41.py",
+        "A41_justifications.json",
+        "livraison.json",
+        "rapport.md",
+        "DEMANDE_LECTURE_CROISEE_CLAUDE.md"
+      ]
+    }
+  ],
+  "canonical_editing": false,
+  "next_chapter_gate": "Production complète et remise effective pour audit ; corrections reçues prioritaires. Audit requis avant injection ; fragment suivant seulement après clôture de son périmètre.",
+  "human_timezone": "Europe/Zurich",
+  "created_at_utc": "2026-10-08T11:32:04.014293+00:00"
+}

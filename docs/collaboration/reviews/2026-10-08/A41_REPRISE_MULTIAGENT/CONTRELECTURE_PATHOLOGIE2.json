@@ -1,0 +1,950 @@
+{
+  "schema_version": 1,
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "reviewer": "/root/sentinelle_medicale",
+  "review_type": "Contrelecture indépendante Codex de Pathologie2 ; aucun fichier de l’auteur modifié",
+  "written_at_europe_zurich": "2026-10-08T14:18:47.441854+02:00",
+  "base_commit": "db06b1fae3c27e93050850df44c3eb23fcd60164",
+  "audited_base": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+  "first_full_read": {
+    "A41_b.html": "3d433dd298054a4fd70d4825febdef5f9a136a770b7acc61932ec9a816f05197",
+    "A41_pop_pa.html": "ca7a8f658064de5f7a6aafb4b32d79edf1197fadec3738650000a4a63018a7d1"
+  },
+  "final_sources_reviewed": {
+    "A41_b.html": {
+      "candidate_path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48",
+      "bytes": 94657,
+      "lines": 203,
+      "base_sha256": "e8934903adb6be13d606bb06928342489e97b34d5214899ee8a5da397060d16f",
+      "canonical_still_equals_base": true,
+      "id_count": 6,
+      "id_multiset_preserved": true,
+      "data-k_count": 32,
+      "data-k_multiset_preserved": true,
+      "data-pop_count": 0,
+      "data-pop_multiset_preserved": true,
+      "data-p_count": 0,
+      "data-p_multiset_preserved": true,
+      "data-ok_count": 6,
+      "data-ok_multiset_preserved": true,
+      "data-k_order_preserved": false,
+      "bare_SSC_count": 0
+    },
+    "A41_pop_pa.html": {
+      "candidate_path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_pa.html",
+      "sha256": "e9b464ba7bf3f371e64cde359906ded7037165211cf8b5d77e9de533d241a13f",
+      "bytes": 70605,
+      "lines": 32,
+      "base_sha256": "06d04dd469584b9e5d94233c01da7d40524d668c438626d81c95d3c2df3aac35",
+      "canonical_still_equals_base": true,
+      "id_count": 0,
+      "id_multiset_preserved": true,
+      "data-k_count": 2,
+      "data-k_multiset_preserved": true,
+      "data-pop_count": 32,
+      "data-pop_multiset_preserved": true,
+      "data-p_count": 0,
+      "data-p_multiset_preserved": true,
+      "data-ok_count": 0,
+      "data-ok_multiset_preserved": true,
+      "data-k_order_preserved": true,
+      "bare_SSC_count": 0
+    }
+  },
+  "scope": "203 lignes de b et 32 templates pop_pa intégralement lus ;16 observations initiales P2,7 composants de dépendances P1 et cohérence du cas de Mme R. examinés. Après les premières lectures, seuls les deltas ciblés reçus de l’auteur ont été relus. Vérifications primaires ciblées, pas nouvel audit exhaustif des sources de tous les faits inchangés.",
+  "decision": "Conforme dans le périmètre relu, aucune réserve médicale bloquante prouvée restante dans b/pop_pa. Dépendance de P2-08 vers trois fenêtres pop2 à réunir avec leur revue propriétaire. Contrelecture Claude et contrôles techniques du chapitre restent des étapes distinctes.",
+  "counts": {
+    "initial_P2_observations": 16,
+    "targeted_owned_components_conform": 16,
+    "P1_popup_dependencies_conform": 7,
+    "additional_reservations_or_precisions_resolved": 4,
+    "initial_P2_whole_id_cross_review_closed_by_Claude": 0,
+    "primary_trial_or_mechanistic_abstracts_independently_read": 18
+  },
+  "observations": [
+    {
+      "observation_id": "audit_pathologie_2-01",
+      "severity": "majeure",
+      "locator": "b:198, légende figure2 b:6",
+      "independent_finding": "La définition causale, la réponse dérégulée de l’hôte et le critère opérationnel SOFA ≥2 sont désormais distincts.",
+      "source_ids": [
+        "Sepsis3"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-02",
+      "severity": "majeure",
+      "locator": "b:82 et a41-remplissage pop_pa:24",
+      "independent_finding": "Les mécanismes du chlorure et les études humaines/animales sont bornés. SMART : composite 14,3/15,4 % ; BaSICS : mortalité 26,4/27,2 % ; PLUS : 21,8/22,0 % ; 6S : mortalité 51/43 % et épuration 22/16 %. SAFE/ALBIOS : aucun gain global démontré. Le cas biopsié de Peron est explicitement confondu par la ciclosporine.",
+      "source_ids": [
+        "Surviving2021",
+        "Surviving2026",
+        "PMID29485925",
+        "PMID34375394",
+        "PMID35041780",
+        "PMID22738085",
+        "PMID15163774",
+        "PMID24635772",
+        "PMID22580944",
+        "PMID6826732",
+        "PMID11393388"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-03",
+      "severity": "mineure",
+      "locator": "b:12",
+      "independent_finding": "NEWS, NEWS2, MEWS et SIRS sont des alternatives sans hiérarchie ; grade fort, certitude modérée.",
+      "source_ids": [
+        "Surviving2026"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-04",
+      "severity": "mineure",
+      "locator": "b:41 purpura",
+      "independent_finding": "Antibiotique immédiat ; cultures seulement sans retard ; aucun autre examen préalable.",
+      "source_ids": [
+        "Surviving2026"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-05",
+      "severity": "mineure",
+      "locator": "b:41–42,60–61,191/200",
+      "independent_finding": "La cible âgée de 60–65 et l’hypoperfusion sont séparées. Le choc clinique à MAP 64 est explicitement distingué du seuil de classification ≥65 ; cette réserve indépendante est résolue.",
+      "source_ids": [
+        "Surviving2026",
+        "Sepsis3"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-06",
+      "severity": "mineure",
+      "locator": "b:114–115 ; a41-mesures pop_pa:27",
+      "independent_finding": "Cible usuelle de 8–10 mmol/L après début de l’insuline ; risque d’hypoglycémie ; seuil initial 2026 ≥10 ; surveillance protocolisée.",
+      "source_ids": [
+        "Surviving2021",
+        "Surviving2026"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-07",
+      "severity": "mineure",
+      "locator": "b:199 ; a41-refractaire pop_pa:20",
+      "independent_finding": "Hypoperfusion persistante et absence de réponse aux fluides avec dose base >0,5. Le consensus Delphi et le recours à l’échographie si choc mixte sont conservés ; la dose seule ne définit pas ce stade.",
+      "source_ids": [
+        "PMID41874620"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-08",
+      "severity": "mineure",
+      "locator": "b:46/89/99/199 ; pop_pa:20 ; dépendancepop2",
+      "independent_finding": "Base explicitée dans le corps et les seuils. La primaire suisse confirme les tableaux en base ; aucun rapport sel/base inventé. Trois fenêtres de pop2 restent hors du périmètre de cette revue.",
+      "source_ids": [
+        "PMID41874620",
+        "NoradSwiss67023"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": true
+    },
+    {
+      "observation_id": "audit_pathologie_2-09",
+      "severity": "mineure",
+      "locator": "b:193",
+      "independent_finding": "Le traitement empirique suit le foyer, l’écologie et le risque ; le traitement documenté suit ensuite l’antibiogramme.",
+      "source_ids": [
+        "coherence_interne"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-10",
+      "severity": "mineure",
+      "locator": "b:144",
+      "independent_finding": "Chao : 15 535 +15 535 survivants taïwanais appariés par propension ; HR 0,94. Association limitée aux cas les plus graves, sans causalité démontrée.",
+      "source_ids": [
+        "PMID25210792"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-11",
+      "severity": "mineure",
+      "locator": "b:149 ; a41-vaccins pop_pa:30",
+      "independent_finding": "CAPITA : PCV13, 84 496 adultes ≥65 ; premiers épisodes per protocole à sérotypes vaccinaux : 75/45,6 %. Pneumonies toutes causes : 5,1 %, IC −5,1 à14,2. Pas d’extrapolation aux autres valences.",
+      "source_ids": [
+        "PMID25785969"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-12",
+      "severity": "mineure",
+      "locator": "b:86/90 ; a41-remplissage pop_pa:24",
+      "independent_finding": "SOAP II : 1 679 patients, arythmies 24,1/12,4 % et mortalité globale non différente. ProCESS/ARISE/ProMISe écartent la protocolisation obligatoire ; ils ne testent pas chaque mesure dynamique ni un volume universel de 30 mL/kg.",
+      "source_ids": [
+        "PMID20200382",
+        "PMID24635773",
+        "PMID25272316",
+        "PMID25776532",
+        "Surviving2026"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-13",
+      "severity": "redactionnelle",
+      "locator": "b:197",
+      "independent_finding": "Formulation directe des critères ; faute d’accord retirée.",
+      "source_ids": [
+        "lecture_html"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-14",
+      "severity": "redactionnelle",
+      "locator": "b:203",
+      "independent_finding": "Accords précédente/suivante corrigés.",
+      "source_ids": [
+        "lecture_html"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-15",
+      "severity": "redactionnelle",
+      "locator": "b:134",
+      "independent_finding": "Retrait de liquide après la phase aiguë. Vasopresseurs croissants ou encore élevés et besoin d’expansion figurent dans la définition de cette phase.",
+      "source_ids": [
+        "Surviving2026"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    },
+    {
+      "observation_id": "audit_pathologie_2-16",
+      "severity": "redactionnelle",
+      "locator": "b:108 ; a41-oxygene pop_pa:26",
+      "independent_finding": "Ventilation non invasive et héparine de bas poids moléculaire développées. Le poids prédit pour la ventilation est cohérent avec le raisonnement de 2021.",
+      "source_ids": [
+        "lecture_html",
+        "Surviving2021"
+      ],
+      "codex_targeted_conformity": true,
+      "claude_cross_review_closed": false,
+      "external_dependency_open": false
+    }
+  ],
+  "pathologie1_dependencies": [
+    {
+      "observation_id": "audit_pathologie_1-06",
+      "template": "a41-news2",
+      "finding": "Introduction clinique du barème conforme ; NEWS2 de Mme R. à13 recompté. Barème inchangé non recertifié contre le PDF du Royal College ici.",
+      "independent_targeted_conformity": true
+    },
+    {
+      "observation_id": "audit_pathologie_1-09",
+      "template": "a41-postsepsis",
+      "finding": "≈30 % cumulatif chez les ≥65 ans comprend 22,3 % hospitalier ; revue Prescott distincte.",
+      "source_ids": [
+        "Swiss2025",
+        "Prescott2018"
+      ],
+      "independent_targeted_conformity": true
+    },
+    {
+      "observation_id": "audit_pathologie_1-10",
+      "template": "a41-pam",
+      "finding": "Le gradient de retour veineux dépend du volume contraint et du tonus. Hausse possible de précharge sous noradrénaline ; limites des 105 observations correctes.",
+      "source_ids": [
+        "Hamzaoui2010"
+      ],
+      "independent_targeted_conformity": true
+    },
+    {
+      "observation_id": "audit_pathologie_1-22",
+      "template": "a41-cortico",
+      "finding": "Aldostérone généralement préservée ; hyperkaliémie non attendue et absence non rassurante. Couverture adaptée au risque non écarté, aux doses déjà reçues et à l’absorption.",
+      "source_ids": [
+        "ESE2024"
+      ],
+      "independent_targeted_conformity": true
+    },
+    {
+      "observation_id": "audit_pathologie_1-23",
+      "template": "a41-pam",
+      "finding": "Moins d’épuration dans le sous-groupe hypertendu ; pas de gain de mortalité et davantage de fibrillation atriale sous cible haute. Pas de cible haute systématique.",
+      "source_ids": [
+        "PMID24635770"
+      ],
+      "independent_targeted_conformity": true
+    },
+    {
+      "observation_id": "audit_pathologie_1-24",
+      "template": "a41-bacteriemie",
+      "finding": "Non-infériorité de 7/14 jours dans BALANCE sélectionné, exclusions clés. Pas toute bactériémie à7 jours.",
+      "source_ids": [
+        "PMID39565030"
+      ],
+      "independent_targeted_conformity": true
+    },
+    {
+      "observation_id": "audit_pathologie_1-25",
+      "template": "a41-fasciite",
+      "finding": "Exploration chirurgicale immédiate si suspicion forte ; six heures n’est pas un délai d’attente. Contrôle anatomique dès que possible et pas de stabilisation prolongée à sa place selon 2021.",
+      "source_ids": [
+        "Surviving2021",
+        "Surviving2026"
+      ],
+      "independent_targeted_conformity": true
+    }
+  ],
+  "additional_findings_and_resolution": [
+    {
+      "review_id": "P2-CX-01",
+      "severity": "mineure",
+      "first_read_hash": "3d433dd298054a4fd70d4825febdef5f9a136a770b7acc61932ec9a816f05197",
+      "locator": "b:61/191/200",
+      "original_finding": "Critères formels annoncés atteints à MAP 64 sous vasopresseur, alors que le seuil de référence est ≥65 ; cible âgée pertinente de 60–65.",
+      "final_status": "resolved_after_author_edit_and_independent_delta_read",
+      "evidence": "Le texte final décrit le choc clinique et distingue explicitement seuil de référence/cible individualisée, sans inventer une mesure de pression ni relever arbitrairement la cible âgée."
+    },
+    {
+      "review_id": "P2-CX-02",
+      "severity": "mineure",
+      "locator": "b:116",
+      "original_finding": "Attribution comparative de l’oligurie globale à un obstacle unilatéral « mieux que la volémie », non étayée par le cas multicausal.",
+      "final_status": "resolved_after_author_edit_and_independent_delta_read",
+      "evidence": "L’obstacle infecté impose le drainage ; hypoperfusion et atteinte rénale septique restent possibles ; l’oligurie ne justifie pas seule un nouveau soluté."
+    },
+    {
+      "review_id": "P2-CX-03",
+      "severity": "precision_secondaire",
+      "locator": "b:108 ; pop_pa:21/26",
+      "original_finding": "Poids de ventilation non explicité ; distinguer poids prédit et poids réel utilisé pour remplissage.",
+      "final_status": "resolved_after_author_edit_and_independent_delta_read",
+      "evidence": "6 mL/kg de poids prédit à partir de la taille ; raisonnement cohérent avec 2021, grades 2026 conservés."
+    },
+    {
+      "review_id": "P2-CX-04",
+      "severity": "precision_secondaire",
+      "locator": "b:101/104/127/174/199 ; pop_pa:9",
+      "original_finding": "Synthèses de couverture de stress trop absolues ; tenir compte du risque non écarté et des glucocorticoïdes déjà reçus.",
+      "final_status": "resolved_after_author_edit_and_independent_delta_read",
+      "evidence": "Risque non écarté, doses déjà reçues, hydro ≥200 mg/j ou prednisone ≥50 mg/j et voie parentérale si absorption incertaine conformes à Table8 ESE2024."
+    }
+  ],
+  "case_checks": {
+    "Glasgow": 14,
+    "qSOFA": 3,
+    "NEWS2": 13,
+    "SOFA": 7,
+    "SOFA_sum": "1 respiration +2coagulation +0foie +1circulation +1neurologique +2rein",
+    "BMI": "60/(1.62**2)=22,86kg/m²",
+    "initial_fluid": "30mL/kg×60kg=1800mL",
+    "urine_threshold": "0,5mL/kg/h×60=30mL/h",
+    "time_course": "Cultures15min/AB30min/presseur40min/drainage4h/désescaladeaprèsantibiogramme ; MAP64 choc clinique distinct seuil formel≥65."
+  },
+  "primary_sources_independently_read": [
+    {
+      "source_id": "PMID29485925",
+      "title": "Balanced Crystalloids versus Saline in Critically Ill Adults.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29485925+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/29485925.json",
+      "sha256_measured": "24111619d24327266801b5b90dae104fb1b236e26eef378bb5f476517d974133",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Both balanced crystalloids and saline are used for intravenous fluid administration in critically ill adults, but it is not known which results in better clinical outcomes.<h4>Methods</h4>In a pragmatic, cluster-randomized, multiple-crossover trial conducted in five intensive care units at an academic center, we assigned 15,802 adults to receive saline (0.9% sodium chloride) or balanced crystalloids (lactated Ringer's solution or Plasma-Lyte A) according to the randomization of the unit to which they were admitted. The primary outcome was a major adverse kidney event within 30 days - a composite of death from any cause, new renal-replacement therapy, or persistent renal dysfunction (defined as an elevation of the creatinine level to ≥200% of baseline) - all censored at hospital discharge or 30 days, whichever occurred first.<h4>Results</h4>Among the 7942 patients in the balanced-crystalloids group, 1139 (14.3%) had a major adverse kidney event, as compared with 1211 of 7860 patients (15.4%) in the saline group (marginal odds ratio, 0.91; 95% confidence interval [CI], 0.84 to 0.99; conditional odds ratio, 0.90; 95% CI, 0.82 to 0.99; P=0.04). In-hospital mortality at 30 days was 10.3% in the balanced-crystalloids group and 11.1% in the saline group (P=0.06). The incidence of new renal-replacement therapy was 2.5% and 2.9%, respectively (P=0.08), and the incidence of persistent renal dysfunction was 6.4% and 6.6%, respectively (P=0.60).<h4>Conclusions</h4>Among critically ill adults, the use of balanced crystalloids for intravenous fluid administration resulted in a lower rate of the composite outcome of death from any cause, new renal-replacement therapy, or persistent renal dysfunction than the use of saline. (Funded by the Vanderbilt Institute for Clinical and Translational Research and others; SMART-MED and SMART-SURG ClinicalTrials.gov numbers, NCT02444988 and NCT02547779 .).",
+      "scope": "Résumé : SMART, plan en grappes, critère composite rénal, résultats et mortalité distincte."
+    },
+    {
+      "source_id": "PMID34375394",
+      "title": "Effect of Intravenous Fluid Treatment With a Balanced Solution vs 0.9% Saline Solution on Mortality in Critically Ill Patients: The BaSICS Randomized Clinical Trial.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A34375394+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/34375394.json",
+      "sha256_measured": "8e84b80b4e65037144178ae2d215939e3c35f53448d341b0a1bb7083dca30f11",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Importance</h4>Intravenous fluids are used for almost all intensive care unit (ICU) patients. Clinical and laboratory studies have questioned whether specific fluid types result in improved outcomes, including mortality and acute kidney injury.<h4>Objective</h4>To determine the effect of a balanced solution vs saline solution (0.9% sodium chloride) on 90-day survival in critically ill patients.<h4>Design, setting, and participants</h4>Double-blind, factorial, randomized clinical trial conducted at 75 ICUs in Brazil. Patients who were admitted to the ICU with at least 1 risk factor for worse outcomes, who required at least 1 fluid expansion, and who were expected to remain in the ICU for more than 24 hours were randomized between May 29, 2017, and March 2, 2020; follow-up concluded on October 29, 2020. Patients were randomized to 2 different fluid types (a balanced solution vs saline solution reported in this article) and 2 different infusion rates (reported separately).<h4>Interventions</h4>Patients were randomly assigned 1:1 to receive either a balanced solution (n = 5522) or 0.9% saline solution (n = 5530) for all intravenous fluids.<h4>Main outcomes and measures</h4>The primary outcome was 90-day survival.<h4>Results</h4>Among 11 052 patients who were randomized, 10 520 (95.2%) were available for the analysis (mean age, 61.1 [SD, 17] years; 44.2% were women). There was no significant interaction between the 2 interventions (fluid type and infusion speed; P = .98). Planned surgical admissions represented 48.4% of all patients. Of all the patients, 60.6% had hypotension or vasopressor use and 44.3% required mechanical ventilation at enrollment. Patients in both groups received a median of 1.5 L of fluid during the first day after enrollment. By day 90, 1381 of 5230 patients (26.4%) assigned to a balanced solution died vs 1439 of 5290 patients (27.2%) assigned to saline solution (adjusted hazard ratio, 0.97 [95% CI, 0.90-1.05]; P = .47). There were no unexpected treatment-related severe adverse events in either group.<h4>Conclusion and relevance</h4>Among critically ill patients requiring fluid challenges, use of a balanced solution compared with 0.9% saline solution did not significantly reduce 90-day mortality. The findings do not support the use of this balanced solution.<h4>Trial registration</h4>ClinicalTrials.gov Identifier: NCT02875873.",
+      "scope": "Résumé : BaSICS, randomisés/analysés, admissions chirurgicales, mortalité à 90 jours."
+    },
+    {
+      "source_id": "PMID35041780",
+      "title": "Balanced Multielectrolyte Solution versus Saline in Critically Ill Adults.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35041780+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/35041780.json",
+      "sha256_measured": "95ae9ce95747c405694a16d33e6dbe2fe1b3b0ec26e15e1f29088abbbccb393d",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Whether the use of balanced multielectrolyte solution (BMES) in preference to 0.9% sodium chloride solution (saline) in critically ill patients reduces the risk of acute kidney injury or death is uncertain.<h4>Methods</h4>In a double-blind, randomized, controlled trial, we assigned critically ill patients to receive BMES (Plasma-Lyte 148) or saline as fluid therapy in the intensive care unit (ICU) for 90 days. The primary outcome was death from any cause within 90 days after randomization. Secondary outcomes were receipt of new renal-replacement therapy and the maximum increase in the creatinine level during ICU stay.<h4>Results</h4>A total of 5037 patients were recruited from 53 ICUs in Australia and New Zealand - 2515 patients were assigned to the BMES group and 2522 to the saline group. Death within 90 days after randomization occurred in 530 of 2433 patients (21.8%) in the BMES group and in 530 of 2413 patients (22.0%) in the saline group, for a difference of -0.15 percentage points (95% confidence interval [CI], -3.60 to 3.30; P = 0.90). New renal-replacement therapy was initiated in 306 of 2403 patients (12.7%) in the BMES group and in 310 of 2394 patients (12.9%) in the saline group, for a difference of -0.20 percentage points (95% CI, -2.96 to 2.56). The mean (±SD) maximum increase in serum creatinine level was 0.41±1.06 mg per deciliter (36.6±94.0 μmol per liter) in the BMES group and 0.41±1.02 mg per deciliter (36.1±90.0 μmol per liter) in the saline group, for a difference of 0.01 mg per deciliter (95% CI, -0.05 to 0.06) (0.5 μmol per liter [95% CI, -4.7 to 5.7]). The number of adverse and serious adverse events did not differ meaningfully between the groups.<h4>Conclusions</h4>We found no evidence that the risk of death or acute kidney injury among critically ill adults in the ICU was lower with the use of BMES than with saline. (Funded by the National Health and Medical Research Council of Australia and the Health Research Council of New Zealand; PLUS ClinicalTrials.gov number, NCT02721654.).",
+      "scope": "Résumé : PLUS, mortalité et épuration, absence de différence démontrée."
+    },
+    {
+      "source_id": "PMID22738085",
+      "title": "Hydroxyethyl starch 130/0.42 versus Ringer's acetate in severe sepsis.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A22738085+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/22738085.json",
+      "sha256_measured": "f8e5066716a93b2438dc84687c356005fba4e16e7602e2bad814c9e28d117381",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Hydroxyethyl starch (HES) [corrected] is widely used for fluid resuscitation in intensive care units (ICUs), but its safety and efficacy have not been established in patients with severe sepsis.<h4>Methods</h4>In this multicenter, parallel-group, blinded trial, we randomly assigned patients with severe sepsis to fluid resuscitation in the ICU with either 6% HES 130/0.42 (Tetraspan) or Ringer's acetate at a dose of up to 33 ml per kilogram of ideal body weight per day. The primary outcome measure was either death or end-stage kidney failure (dependence on dialysis) at 90 days after randomization.<h4>Results</h4>Of the 804 patients who underwent randomization, 798 were included in the modified intention-to-treat population. The two intervention groups had similar baseline characteristics. At 90 days after randomization, 201 of 398 patients (51%) assigned to HES 130/0.42 had died, as compared with 172 of 400 patients (43%) assigned to Ringer's acetate (relative risk, 1.17; 95% confidence interval [CI], 1.01 to 1.36; P=0.03); 1 patient in each group had end-stage kidney failure. In the 90-day period, 87 patients (22%) assigned to HES 130/0.42 were treated with renal-replacement therapy versus 65 patients (16%) assigned to Ringer's acetate (relative risk, 1.35; 95% CI, 1.01 to 1.80; P=0.04), and 38 patients (10%) and 25 patients (6%), respectively, had severe bleeding (relative risk, 1.52; 95% CI, 0.94 to 2.48; P=0.09). The results were supported by multivariate analyses, with adjustment for known risk factors for death or acute kidney injury at baseline.<h4>Conclusions</h4>Patients with severe sepsis assigned to fluid resuscitation with HES 130/0.42 had an increased risk of death at day 90 and were more likely to require renal-replacement therapy, as compared with those receiving Ringer's acetate. (Funded by the Danish Research Council and others; 6S ClinicalTrials.gov number, NCT00962156.).",
+      "scope": "Résumé : 6S, mortalité et épuration ; 798 patients analysés."
+    },
+    {
+      "source_id": "PMID15163774",
+      "title": "A comparison of albumin and saline for fluid resuscitation in the intensive care unit.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A15163774+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/15163774.json",
+      "sha256_measured": "0feab56834269401113bbd99394b2bd3b05a3cc1ac31df439f37a69a152007e6",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>It remains uncertain whether the choice of resuscitation fluid for patients in intensive care units (ICUs) affects survival. We conducted a multicenter, randomized, double-blind trial to compare the effect of fluid resuscitation with albumin or saline on mortality in a heterogeneous population of patients in the ICU.<h4>Methods</h4>We randomly assigned patients who had been admitted to the ICU to receive either 4 percent albumin or normal saline for intravascular-fluid resuscitation during the next 28 days. The primary outcome measure was death from any cause during the 28-day period after randomization.<h4>Results</h4>Of the 6997 patients who underwent randomization, 3497 were assigned to receive albumin and 3500 to receive saline; the two groups had similar baseline characteristics. There were 726 deaths in the albumin group, as compared with 729 deaths in the saline group (relative risk of death, 0.99; 95 percent confidence interval, 0.91 to 1.09; P=0.87). The proportion of patients with new single-organ and multiple-organ failure was similar in the two groups (P=0.85). There were no significant differences between the groups in the mean (+/-SD) numbers of days spent in the ICU (6.5+/-6.6 in the albumin group and 6.2+/-6.2 in the saline group, P=0.44), days spent in the hospital (15.3+/-9.6 and 15.6+/-9.6, respectively; P=0.30), days of mechanical ventilation (4.5+/-6.1 and 4.3+/-5.7, respectively; P=0.74), or days of renal-replacement therapy (0.5+/-2.3 and 0.4+/-2.0, respectively; P=0.41).<h4>Conclusions</h4>In patients in the ICU, use of either 4 percent albumin or normal saline for fluid resuscitation results in similar outcomes at 28 days.",
+      "scope": "Résumé : SAFE, population hétérogène et mortalité à 28 jours."
+    },
+    {
+      "source_id": "PMID24635772",
+      "title": "Albumin replacement in patients with severe sepsis or septic shock.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24635772+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/24635772.json",
+      "sha256_measured": "a03718c38bf384597f944edd623b6312bd37dcba0685b9849f421fc8947e275a",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Although previous studies have suggested the potential advantages of albumin administration in patients with severe sepsis, its efficacy has not been fully established.<h4>Methods</h4>In this multicenter, open-label trial, we randomly assigned 1818 patients with severe sepsis, in 100 intensive care units (ICUs), to receive either 20% albumin and crystalloid solution or crystalloid solution alone. In the albumin group, the target serum albumin concentration was 30 g per liter or more until discharge from the ICU or 28 days after randomization. The primary outcome was death from any cause at 28 days. Secondary outcomes were death from any cause at 90 days, the number of patients with organ dysfunction and the degree of dysfunction, and length of stay in the ICU and the hospital.<h4>Results</h4>During the first 7 days, patients in the albumin group, as compared with those in the crystalloid group, had a higher mean arterial pressure (P=0.03) and lower net fluid balance (P<0.001). The total daily amount of administered fluid did not differ significantly between the two groups (P=0.10). At 28 days, 285 of 895 patients (31.8%) in the albumin group and 288 of 900 (32.0%) in the crystalloid group had died (relative risk in the albumin group, 1.00; 95% confidence interval [CI], 0.87 to 1.14; P=0.94). At 90 days, 365 of 888 patients (41.1%) in the albumin group and 389 of 893 (43.6%) in the crystalloid group had died (relative risk, 0.94; 95% CI, 0.85 to 1.05; P=0.29). No significant differences in other secondary outcomes were observed between the two groups.<h4>Conclusions</h4>In patients with severe sepsis, albumin replacement in addition to crystalloids, as compared with crystalloids alone, did not improve the rate of survival at 28 and 90 days. (Funded by the Italian Medicines Agency; ALBIOS ClinicalTrials.gov number, NCT00707122.).",
+      "scope": "Résumé : ALBIOS, pression/bilan hydrique, absence de gain de survie à 28/90 jours."
+    },
+    {
+      "source_id": "PMID20200382",
+      "title": "Comparison of dopamine and norepinephrine in the treatment of shock.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A20200382+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/20200382.json",
+      "sha256_measured": "5683cfc45f8ce788d1bf03f3658eaefe176806981354079124a696e85239ce6a",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Both dopamine and norepinephrine are recommended as first-line vasopressor agents in the treatment of shock. There is a continuing controversy about whether one agent is superior to the other.<h4>Methods</h4>In this multicenter, randomized trial, we assigned patients with shock to receive either dopamine or norepinephrine as first-line vasopressor therapy to restore and maintain blood pressure. When blood pressure could not be maintained with a dose of 20 microg per kilogram of body weight per minute for dopamine or a dose of 0.19 microg per kilogram per minute for norepinephrine, open-label norepinephrine, epinephrine, or vasopressin could be added. The primary outcome was the rate of death at 28 days after randomization; secondary end points included the number of days without need for organ support and the occurrence of adverse events.<h4>Results</h4>The trial included 1679 patients, of whom 858 were assigned to dopamine and 821 to norepinephrine. The baseline characteristics of the groups were similar. There was no significant between-group difference in the rate of death at 28 days (52.5% in the dopamine group and 48.5% in the norepinephrine group; odds ratio with dopamine, 1.17; 95% confidence interval, 0.97 to 1.42; P=0.10). However, there were more arrhythmic events among the patients treated with dopamine than among those treated with norepinephrine (207 events [24.1%] vs. 102 events [12.4%], P<0.001). A subgroup analysis showed that dopamine, as compared with norepinephrine, was associated with an increased rate of death at 28 days among the 280 patients with cardiogenic shock but not among the 1044 patients with septic shock or the 263 with hypovolemic shock (P=0.03 for cardiogenic shock, P=0.19 for septic shock, and P=0.84 for hypovolemic shock, in Kaplan-Meier analyses).<h4>Conclusions</h4>Although there was no significant difference in the rate of death between patients with shock who were treated with dopamine as the first-line vasopressor agent and those who were treated with norepinephrine, the use of dopamine was associated with a greater number of adverse events. (ClinicalTrials.gov number, NCT00314704.)",
+      "scope": "Résumé : SOAP II, arythmies et mortalité, population de chocs non exclusivement septiques."
+    },
+    {
+      "source_id": "PMID24635773",
+      "title": "A randomized trial of protocol-based care for early septic shock.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24635773+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/24635773.json",
+      "sha256_measured": "f1ecb5981e95d07bbaa9bedc8e3c16b76e0c15dadce7803e5b3730212fa55f0e",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>In a single-center study published more than a decade ago involving patients presenting to the emergency department with severe sepsis and septic shock, mortality was markedly lower among those who were treated according to a 6-hour protocol of early goal-directed therapy (EGDT), in which intravenous fluids, vasopressors, inotropes, and blood transfusions were adjusted to reach central hemodynamic targets, than among those receiving usual care. We conducted a trial to determine whether these findings were generalizable and whether all aspects of the protocol were necessary.<h4>Methods</h4>In 31 emergency departments in the United States, we randomly assigned patients with septic shock to one of three groups for 6 hours of resuscitation: protocol-based EGDT; protocol-based standard therapy that did not require the placement of a central venous catheter, administration of inotropes, or blood transfusions; or usual care. The primary end point was 60-day in-hospital mortality. We tested sequentially whether protocol-based care (EGDT and standard-therapy groups combined) was superior to usual care and whether protocol-based EGDT was superior to protocol-based standard therapy. Secondary outcomes included longer-term mortality and the need for organ support.<h4>Results</h4>We enrolled 1341 patients, of whom 439 were randomly assigned to protocol-based EGDT, 446 to protocol-based standard therapy, and 456 to usual care. Resuscitation strategies differed significantly with respect to the monitoring of central venous pressure and oxygen and the use of intravenous fluids, vasopressors, inotropes, and blood transfusions. By 60 days, there were 92 deaths in the protocol-based EGDT group (21.0%), 81 in the protocol-based standard-therapy group (18.2%), and 86 in the usual-care group (18.9%) (relative risk with protocol-based therapy vs. usual care, 1.04; 95% confidence interval [CI], 0.82 to 1.31; P=0.83; relative risk with protocol-based EGDT vs. protocol-based standard therapy, 1.15; 95% CI, 0.88 to 1.51; P=0.31). There were no significant differences in 90-day mortality, 1-year mortality, or the need for organ support.<h4>Conclusions</h4>In a multicenter trial conducted in the tertiary care setting, protocol-based resuscitation of patients in whom septic shock was diagnosed in the emergency department did not improve outcomes. (Funded by the National Institute of General Medical Sciences; ProCESS ClinicalTrials.gov number, NCT00510835.).",
+      "scope": "Résumé : ProCESS, protocole/cibles centrales, absence de bénéfice."
+    },
+    {
+      "source_id": "PMID25272316",
+      "title": "Goal-directed resuscitation for patients with early septic shock.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25272316+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/25272316.json",
+      "sha256_measured": "d641daa4f573dfd43d4259d55e318554551d616e0f811cea66bbc952a0574190",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Early goal-directed therapy (EGDT) has been endorsed in the guidelines of the Surviving Sepsis Campaign as a key strategy to decrease mortality among patients presenting to the emergency department with septic shock. However, its effectiveness is uncertain.<h4>Methods</h4>In this trial conducted at 51 centers (mostly in Australia or New Zealand), we randomly assigned patients presenting to the emergency department with early septic shock to receive either EGDT or usual care. The primary outcome was all-cause mortality within 90 days after randomization.<h4>Results</h4>Of the 1600 enrolled patients, 796 were assigned to the EGDT group and 804 to the usual-care group. Primary outcome data were available for more than 99% of the patients. Patients in the EGDT group received a larger mean (±SD) volume of intravenous fluids in the first 6 hours after randomization than did those in the usual-care group (1964±1415 ml vs. 1713±1401 ml) and were more likely to receive vasopressor infusions (66.6% vs. 57.8%), red-cell transfusions (13.6% vs. 7.0%), and dobutamine (15.4% vs. 2.6%) (P<0.001 for all comparisons). At 90 days after randomization, 147 deaths had occurred in the EGDT group and 150 had occurred in the usual-care group, for rates of death of 18.6% and 18.8%, respectively (absolute risk difference with EGDT vs. usual care, -0.3 percentage points; 95% confidence interval, -4.1 to 3.6; P=0.90). There was no significant difference in survival time, in-hospital mortality, duration of organ support, or length of hospital stay.<h4>Conclusions</h4>In critically ill patients presenting to the emergency department with early septic shock, EGDT did not reduce all-cause mortality at 90 days. (Funded by the National Health and Medical Research Council of Australia and the Alfred Foundation; ARISE ClinicalTrials.gov number, NCT00975793.).",
+      "scope": "Résumé : ARISE, protocole/cibles centrales, absence de bénéfice."
+    },
+    {
+      "source_id": "PMID25776532",
+      "title": "Trial of early, goal-directed resuscitation for septic shock.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25776532+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/25776532.json",
+      "sha256_measured": "878055b7eb4ef708d3613eb1ce83721f389652d46b06fc255213e80fe7bea712",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Early, goal-directed therapy (EGDT) is recommended in international guidelines for the resuscitation of patients presenting with early septic shock. However, adoption has been limited, and uncertainty about its effectiveness remains.<h4>Methods</h4>We conducted a pragmatic randomized trial with an integrated cost-effectiveness analysis in 56 hospitals in England. Patients were randomly assigned to receive either EGDT (a 6-hour resuscitation protocol) or usual care. The primary clinical outcome was all-cause mortality at 90 days.<h4>Results</h4>We enrolled 1260 patients, with 630 assigned to EGDT and 630 to usual care. By 90 days, 184 of 623 patients (29.5%) in the EGDT group and 181 of 620 patients (29.2%) in the usual-care group had died (relative risk in the EGDT group, 1.01; 95% confidence interval [CI], 0.85 to 1.20; P=0.90), for an absolute risk reduction in the EGDT group of -0.3 percentage points (95% CI, -5.4 to 4.7). Increased treatment intensity in the EGDT group was indicated by increased use of intravenous fluids, vasoactive drugs, and red-cell transfusions and reflected by significantly worse organ-failure scores, more days receiving advanced cardiovascular support, and longer stays in the intensive care unit. There were no significant differences in any other secondary outcomes, including health-related quality of life, or in rates of serious adverse events. On average, EGDT increased costs, and the probability that it was cost-effective was below 20%.<h4>Conclusions</h4>In patients with septic shock who were identified early and received intravenous antibiotics and adequate fluid resuscitation, hemodynamic management according to a strict EGDT protocol did not lead to an improvement in outcome. (Funded by the United Kingdom National Institute for Health Research Health Technology Assessment Programme; ProMISe Current Controlled Trials number, ISRCTN36307479.).",
+      "scope": "Résumé : ProMISe, protocole/cibles centrales, absence de bénéfice."
+    },
+    {
+      "source_id": "PMID25210792",
+      "title": "Association of postdischarge rehabilitation with mortality in intensive care unit survivors of sepsis.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25210792+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/25210792.json",
+      "sha256_measured": "2aa486ea81298e18bff9ac5034d7a3f06244a1e25f52d5fe6060f4987007f1fd",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Rationale</h4>Intensive care unit (ICU)-acquired weakness is a common issue for sepsis survivors that is characterized by impaired muscle strength and causes functional disability. Although inpatient rehabilitation has not been found to reduce in-hospital mortality, the impact of postdischarge rehabilitation on sepsis survivors is uncertain.<h4>Objectives</h4>To investigate the benefit of postdischarge rehabilitation to long-term mortality in sepsis survivors.<h4>Methods</h4>We conducted a nationwide, population-based, high-dimensional propensity score-matched cohort study using Taiwan's National Health Insurance Research Database. The rehabilitation cohort comprised 15,535 ICU patients who survived sepsis and received rehabilitation within 3 months after discharge between 2000 and 2010. The control cohort consisted of 15,535 high-dimensional propensity score-matched subjects who did not receive rehabilitation within 3 months after discharge. The endpoint was mortality during the 10-year follow-up period.<h4>Measurements and main results</h4>Compared with the control cohort, the rehabilitation cohort had a significantly lower risk of 10-year mortality (adjusted hazard ratio, 0.94; 95% confidence interval, 0.92-0.97; P < 0.001), with an absolute risk reduction of 1.4 per 100 person-years. The frequency of rehabilitation was inversely associated with 10-year mortality (≥3 vs. 1 course: adjusted hazard ratio, 0.82; P < 0.001). Compared with the control cohort, improved survival was observed in the rehabilitation cohort among ill patients who had more comorbidities, required more prolonged mechanical ventilation, and had longer ICU or hospital stays, but not among those with the opposite conditions (i.e., less ill patients).<h4>Conclusions</h4>Postdischarge rehabilitation may be associated with a reduced risk of 10-year mortality in the subset of patients with particularly long ICU courses.",
+      "scope": "Résumé : Chao, appariement par score de propension et bénéfice associé aux cas graves seulement."
+    },
+    {
+      "source_id": "PMID25785969",
+      "title": "Polysaccharide conjugate vaccine against pneumococcal pneumonia in adults.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25785969+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/25785969.json",
+      "sha256_measured": "5655645664bcd494d8c67a57c98dbe5e09fcc6f60e48cd12220d34eac32057f3",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Pneumococcal polysaccharide conjugate vaccines prevent pneumococcal disease in infants, but their efficacy against pneumococcal community-acquired pneumonia in adults 65 years of age or older is unknown.<h4>Methods</h4>In a randomized, double-blind, placebo-controlled trial involving 84,496 adults 65 years of age or older, we evaluated the efficacy of 13-valent polysaccharide conjugate vaccine (PCV13) in preventing first episodes of vaccine-type strains of pneumococcal community-acquired pneumonia, nonbacteremic and noninvasive pneumococcal community-acquired pneumonia, and invasive pneumococcal disease. Standard laboratory methods and a serotype-specific urinary antigen detection assay were used to identify community-acquired pneumonia and invasive pneumococcal disease.<h4>Results</h4>In the per-protocol analysis of first episodes of infections due to vaccine-type strains, community-acquired pneumonia occurred in 49 persons in the PCV13 group and 90 persons in the placebo group (vaccine efficacy, 45.6%; 95.2% confidence interval [CI], 21.8 to 62.5), nonbacteremic and noninvasive community-acquired pneumonia occurred in 33 persons in the PCV13 group and 60 persons in the placebo group (vaccine efficacy, 45.0%; 95.2% CI, 14.2 to 65.3), and invasive pneumococcal disease occurred in 7 persons in the PCV13 group and 28 persons in the placebo group (vaccine efficacy, 75.0%; 95% CI, 41.4 to 90.8). Efficacy persisted throughout the trial (mean follow-up, 3.97 years). In the modified intention-to-treat analysis, similar efficacy was observed (vaccine efficacy, 37.7%, 41.1%, and 75.8%, respectively), and community-acquired pneumonia occurred in 747 persons in the PCV13 group and 787 persons in placebo group (vaccine efficacy, 5.1%; 95% CI, -5.1 to 14.2). Numbers of serious adverse events and deaths were similar in the two groups, but there were more local reactions in the PCV13 group.<h4>Conclusions</h4>Among older adults, PCV13 was effective in preventing vaccine-type pneumococcal, bacteremic, and nonbacteremic community-acquired pneumonia and vaccine-type invasive pneumococcal disease but not in preventing community-acquired pneumonia from any cause. (Funded by Pfizer; CAPITA ClinicalTrials.gov number NCT00744263.).",
+      "scope": "Résumé : CAPITA, PCV13, premiers épisodes per protocole, sérotypes vaccinaux et pneumonies toutes causes."
+    },
+    {
+      "source_id": "PMID24635770",
+      "title": "High versus low blood-pressure target in patients with septic shock.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24635770+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/24635770.json",
+      "sha256_measured": "0a94f4986d0be8fea14c91d89d8353fd163c16d0510bd5734b6acab0fc410bf3",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>The Surviving Sepsis Campaign recommends targeting a mean arterial pressure of at least 65 mm Hg during initial resuscitation of patients with septic shock. However, whether this blood-pressure target is more or less effective than a higher target is unknown.<h4>Methods</h4>In a multicenter, open-label trial, we randomly assigned 776 patients with septic shock to undergo resuscitation with a mean arterial pressure target of either 80 to 85 mm Hg (high-target group) or 65 to 70 mm Hg (low-target group). The primary end point was mortality at day 28.<h4>Results</h4>At 28 days, there was no significant between-group difference in mortality, with deaths reported in 142 of 388 patients in the high-target group (36.6%) and 132 of 388 patients in the low-target group (34.0%) (hazard ratio in the high-target group, 1.07; 95% confidence interval [CI], 0.84 to 1.38; P=0.57). There was also no significant difference in mortality at 90 days, with 170 deaths (43.8%) and 164 deaths (42.3%), respectively (hazard ratio, 1.04; 95% CI, 0.83 to 1.30; P=0.74). The occurrence of serious adverse events did not differ significantly between the two groups (74 events [19.1%] and 69 events [17.8%], respectively; P=0.64). However, the incidence of newly diagnosed atrial fibrillation was higher in the high-target group than in the low-target group. Among patients with chronic hypertension, those in the high-target group required less renal-replacement therapy than did those in the low-target group, but such therapy was not associated with a difference in mortality.<h4>Conclusions</h4>Targeting a mean arterial pressure of 80 to 85 mm Hg, as compared with 65 to 70 mm Hg, in patients with septic shock undergoing resuscitation did not result in significant differences in mortality at either 28 or 90 days. (Funded by the French Ministry of Health; SEPSISPAM ClinicalTrials.gov number, NCT01149278.).",
+      "scope": "Résumé : SEPSISPAM, sous-groupe hypertendu, absence de gain de mortalité et fibrillation atriale."
+    },
+    {
+      "source_id": "PMID39565030",
+      "title": "Antibiotic Treatment for 7 versus 14 Days in Patients with Bloodstream Infections.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39565030+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/39565030.json",
+      "sha256_measured": "011cf691ae81ae8d3760b47186f86f9f3b34ebc717a3d336fe5f6838b870a6a4",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Background</h4>Bloodstream infections are associated with substantial morbidity and mortality. Early, appropriate antibiotic therapy is important, but the duration of treatment is uncertain.<h4>Methods</h4>In a multicenter, noninferiority trial, we randomly assigned hospitalized patients (including patients in the intensive care unit [ICU]) who had bloodstream infection to receive antibiotic treatment for 7 days or 14 days. Antibiotic selection, dosing, and route were at the discretion of the treating team. We excluded patients with severe immunosuppression, foci requiring prolonged treatment, single cultures with possible contaminants, or cultures yielding <i>Staphylococcus aureus</i>. The primary outcome was death from any cause by 90 days after diagnosis of the bloodstream infection, with a noninferiority margin of 4 percentage points.<h4>Results</h4>Across 74 hospitals in seven countries, 3608 patients underwent randomization and were included in the intention-to-treat analysis; 1814 patients were assigned to 7 days of antibiotic treatment, and 1794 to 14 days. At enrollment, 55.0% of patients were in the ICU and 45.0% were on hospital wards. Infections were acquired in the community (75.4%), hospital wards (13.4%) and ICUs (11.2%). Bacteremia most commonly originated from the urinary tract (42.2%), abdomen (18.8%), lung (13.0%), vascular catheters (6.3%), and skin or soft tissue (5.2%). By 90 days, 261 patients (14.5%) receiving antibiotics for 7 days had died and 286 patients (16.1%) receiving antibiotics for 14 days had died (difference, -1.6 percentage points [95.7% confidence interval {CI}, -4.0 to 0.8]), which showed the noninferiority of the shorter treatment duration. Patients were treated for longer than the assigned duration in 23.1% of the patients in the 7-day group and in 10.7% of the patients in the 14-day group. A per-protocol analysis also showed noninferiority (difference, -2.0 percentage points [95% CI, -4.5 to 0.6]). These findings were generally consistent across secondary clinical outcomes and across prespecified subgroups defined according to patient, pathogen, and syndrome characteristics.<h4>Conclusions</h4>Among hospitalized patients with bloodstream infection, antibiotic treatment for 7 days was noninferior to treatment for 14 days. (Funded by the Canadian Institutes of Health Research and others; BALANCE ClinicalTrials.gov number, NCT03005145.).",
+      "scope": "Résumé : BALANCE, non-infériorité 7/14 jours et exclusions."
+    },
+    {
+      "source_id": "PMID41874620",
+      "title": "Clinical criteria for the definition of refractory septic shock: a joint Delphi consensus from the Society of Critical Care Medicine (SCCM) and European Society of Intensive Care Medicine (ESICM).",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41874620+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/workspace/medina-env/a41-pathologie2/41874620.json",
+      "sha256_measured": "78ff22db3a347a5a8784fa236c2a29dbec43b294ca07fc2aa59ec621b5349501",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Objective</h4>A definition of refractory septic shock is necessary to guide diagnosis, management, prognostication, research, and future guidelines for this most severe form of the disease. We sought to achieve consensus on clinical criteria that would be used to define refractory septic shock.<h4>Design</h4>Review of literature, expert panel position statements, and Delphi rounds with an international expert group.<h4>Setting</h4>Consensus was defined as having at least 75% of panellists in agreement or disagreement on the three highest or lowest levels of a 7-point Likert scale or based on responses to single- or multiple-choice questions, respectively.<h4>Subjects</h4>A panel of multinational, multiprofessional, and multidisciplinary critical care experts assembled by the Society of Critical Care Medicine and the European Society of Intensive Care Medicine (57 invitations and 56 participants).<h4>Measurements and main results</h4>A five-round Delphi process was conducted for consensus and stability. The steering committee proposed 34 statements, and five of them were rejected by panel experts after round 2. Among 29 statements selected from eight domains, consensus was reached for 13. The panel agreed on the need for a comprehensive consensus set of clinical criteria for refractory septic shock. Markers of organ dysfunction (75%, 2 rounds), tissue perfusion (91.1%, 2 rounds) including lactate (94.6%, 2 rounds) and capillary refill time (76.8%, 2 rounds), assessment of fluid responsiveness after initial resuscitation (92.9%, 5 rounds), and use of vasoactive drugs at norepinephrine equivalents greater than 0.5 µg/kg/min (75.0%, 3 rounds) were selected as clinical criteria of refractory septic shock. The use of critical care ultrasound (CCUS) (92.9%, 3 rounds) was the single diagnostic modality that reached a consensus-based agreement.<h4>Conclusions</h4>A consensus for 13 criteria to frame the definition of refractory septic shock was reached. Refractory septic shock is characterised by persistently elevated lactate concentrations and or prolonged capillary refill time in patients with septic shock who are fluid unresponsive, require a norepinephrine base equivalent dose greater than 0.5 µg per kilogram per minute, and undergo CCUS assessment when mixed shock is suspected.",
+      "scope": "Résumé : consensus Delphi 2026, absence de réponse au remplissage et équivalent noradrénaline base."
+    },
+    {
+      "source_id": "PMID22580944",
+      "title": "A randomized, controlled, double-blind crossover study on the effects of 2-L infusions of 0.9% saline and plasma-lyte® 148 on renal blood flow velocity and renal cortical tissue perfusion in healthy volunteers.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A22580944+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "cache": "/workspace/medina-env/a41-pathologie2/22580944.json",
+      "sha256_measured": "013a17a82a8e646f4fd33231dfe35b00ac1a52986d77133489420331ab30eda2",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "<h4>Objective</h4>We compared the effects of intravenous infusions of 0.9% saline ([Cl] 154 mmol/L) and Plasma-Lyte 148 ([Cl] 98 mmol/L, Baxter Healthcare) on renal blood flow velocity and perfusion in humans using magnetic resonance imaging (MRI).<h4>Background</h4>Animal experiments suggest that hyperchloremia resulting from 0.9% saline infusion may affect renal hemodynamics adversely, a phenomenon not studied in humans.<h4>Methods</h4>Twelve healthy adult male subjects received 2-L intravenous infusions over 1 hour of 0.9% saline or Plasma-Lyte 148 in a randomized, double-blind manner. Crossover studies were performed 7 to 10 days apart. MRI scanning proceeded for 90 minutes after commencement of infusion to measure renal artery blood flow velocity and renal cortical perfusion. Blood was sampled and weight recorded hourly for 4 hours.<h4>Results</h4>Sustained hyperchloremia was seen with saline but not with Plasma-Lyte 148 (P < 0.0001), and fall in strong ion difference was greater with the former (P = 0.025). Blood volume changes were identical (P = 0.867), but there was greater expansion of the extravascular fluid volume after saline (P = 0.029). There was a significant reduction in mean renal artery flow velocity (P = 0.045) and renal cortical tissue perfusion (P = 0.008) from baseline after saline, but not after Plasma-Lyte 148. There was no difference in concentrations of urinary neutrophil gelatinase-associated lipocalin after the 2 infusions (P = 0.917).<h4>Conclusions</h4>This is the first human study to demonstrate that intravenous infusion of 0.9% saline results in reductions in renal blood flow velocity and renal cortical tissue perfusion. This has implications for intravenous fluid therapy in perioperative and critically ill patients. NCT01087853.",
+      "scope": "Résumé : Chowdhury, 12 volontaires sains, perfusion rénale ; pas de critère de survie."
+    },
+    {
+      "source_id": "PMID6826732",
+      "title": "Regulation of renal blood flow by plasma chloride.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Regulation+of+renal+blood+flow+by+plasma+chloride%22&format=json&resultType=core&pageSize=5",
+      "cache": "/workspace/medina-env/a41-pathologie2/chloride-wilcox.json",
+      "sha256_measured": "7fe035cc3310d49c705310217b912094716c588cf17963949b938508dd380bd3",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "Micropuncture studies have shown that glomerular filtration rate (GFR) falls in response to a rise in Na(+) or Cl(-) concentrations in the loop of Henle, whereas studies in isolated kidneys have shown that GFR falls in response to osmotic diuresis. To define the separate effects of an acute increase in plasma sodium (P(Na)), chloride (P(Cl)) or osmolality (P(osmol)), changes in renal blood flow (RBF) and GFR were measured during intrarenal infusions of hypertonic NaCl, NaHCO(3), Na acetate, dextrose, NH(4)Cl or NH(4)acetate to denervated kidneys. The infusions raised P(osmol) at the experimental kidney by 30-45 mosmol. RBF increased abruptly by 10-30% with all hypertonic infusions indicating that an acute increase in plasma tonicity causes renal vasodilatation. Renal vasodilatation persisted or increased further during infusion of dextrose, NaHCO(3) and Na acetate, but GFR was unchanged. In contrast, during infusion of the two Cl-containing solutions, vasodilatation was reversed after 1-5 min and RBF and GFR decreased (P < 0.01) below preinfusion levels. Prior salt depletion doubled the vasoconstriction seen with hypertonic NaCl infusions. Overall, changes in RBF were unrelated to changes in P(Na) or fractional Na or fluid reabsorption but correlated with changes in P(Cl) (r = -0.91) and fractional Cl(-) reabsorption (r = 0.94). The intrafemoral arterial infusion of the two Cl-containing solutions did not increase femoral vascular resistance. In conclusion, hyperchloremia produces a progressive renal vasoconstriction and fall in GFR that is independent of the renal nerves, is potentiated by prior salt depletion and is related to tubular Cl(-) reabsorption. Chloride-induced vasoconstriction appears specific for the renal vessels.",
+      "scope": "Résumé : Wilcox, expérience rénale et relation chlorure/vasoconstriction/filtration ; mécanisme expérimental."
+    },
+    {
+      "source_id": "PMID11393388",
+      "title": "Hydroxyethyl starch-induced renal insufficiency after plasma exchange in a patient with polymyositis and liver cirrhosis.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A11393388+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "cache": "/workspace/medina-env/a41-pathologie2/hes-biopsy.json",
+      "sha256_measured": "fa664e7c48a5f015c22df6b15efc26b90315c7069c8811b6366803f5e9e8dc98",
+      "independently_read": "Résumé entier primaire ; pas texte intégral du trial",
+      "abstract_text_as_obtained": "Hydroxyethyl starch (HES) is a macromolecular preparation that has been used as a volume expander since 1991. Renal toxicity of high-dose HES is now well recognized but potential renal toxicity of low-dose HES is poorly documented. Acute renal toxicity of cyclosporin A (CyA) may be responsible for osmotic nephrosis-like lesions. We report here the case of a 30-year-old male who developed cirrhosis due to hepatitis B and delta viruses and polymyositis. Polymyositis was treated with CyA, prednisone and plasma exchanges using low-dose HES as the replacement fluid. Renal insufficiency occurred with biopsy-proven osmotic nephrosis-like lesions, considered to be secondary to HES infusions and/or CyA.",
+      "scope": "Résumé : Peron, biopsie et ciclosporine concomitante ; cas confondu, pas preuve isolée de causalité."
+    },
+    {
+      "source_id": "Surviving2021",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8486643/fullTextXML",
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC8486643.xml",
+      "sha256_measured": "d2be2ebc4667315e15db145476d6a3f6ece077ea0c738f858b134633b78065f6",
+      "independently_read": "Fluid management/Rationale, MAP, glucose/Remark/Rationale, source control et rationale ventilation poids prédit"
+    },
+    {
+      "source_id": "ESE2024",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11180513/fullTextXML",
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC11180513.xml",
+      "sha256_measured": "448be798a014648974d38939ae22b8fd8576acc9f81fec754b079352c77c2163",
+      "independently_read": "R3.1, Table8, minéralocorticoïdes et couverture déjà reçue ; passages effectivement lus"
+    },
+    {
+      "source_id": "Sepsis3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/",
+      "cache": "/tmp/a41-p1-sepsis3.html",
+      "sha256_measured": "edb8cbcc8a47a01733aa9ba6acf7300bb2d77092b6c0a3999f38e98672adaa64",
+      "independently_read": "Définition, Box3, Table1 et critère choc ; lecture primaire indépendante également pour propreP1",
+      "persistent_cache": "/workspace/medina-env/reprise-a41/sources/pathologie1/a41-p1-sepsis3.html"
+    },
+    {
+      "source_id": "Hamzaoui2010",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2945123/fullTextXML",
+      "cache": "/tmp/a41-p1-norepi-full.xml",
+      "sha256_measured": "0eafb5ffbaced218088d1343e0b6b23a78277c45f0e809b39bb495d253e2e4cf",
+      "independently_read": "Introduction/résultats/discussion, capacitance veineuse, 105patients et limites observationnelles",
+      "persistent_cache": "/workspace/medina-env/reprise-a41/sources/pathologie1/a41-p1-norepi-full.xml"
+    },
+    {
+      "source_id": "Swiss2025",
+      "url": "https://sepsis.ch/wp-content/uploads/2025/09/Swiss-Sepsis-Report-EN_.pdf",
+      "cache": "/tmp/a41-p1-swissreport.pdf",
+      "sha256_measured": "1b1c2bb4d149dcdb7fbae83705641854a0bcab2495c10e90739dc65bc77f8afc",
+      "independently_read": "§3.3.5/Figure4 p14 cumulative et chiffres≥65 p6–7",
+      "persistent_cache": "/workspace/medina-env/reprise-a41/sources/pathologie1/a41-p1-swissreport.pdf"
+    },
+    {
+      "source_id": "Surviving2026",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "cache": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.html",
+      "sha256_measured": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "independently_read": "Cartes4,7,10,11,13–14,24,43–47,49,51,53,71–73,89,92 ; énoncés/grades/remarques seulement"
+    },
+    {
+      "source_id": "NoradSwiss67023",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=67023",
+      "cache": "/tmp/a41-pharma-sources/norad_swiss.raw",
+      "sha256_measured": "c03f2bd39e1a7255954163f6aecf7f642aa425920d863f15eea2fa589d57d94f",
+      "independently_read": "Composition/formes et titres de titration noradrénaline base ; miseàjour information octobre2020, pas audit posologique complet"
+    },
+    {
+      "source_id": "Correction2026",
+      "url": "https://doi.org/10.1007/s00134-026-08410-9",
+      "cache": "/workspace/medina-env/reprise-a41/sources/ssc2026_publisher_correction.html",
+      "sha256_measured": "a1f34b5e0f2143c190622c5cc8f1026c0c7a04c9ab9c2b36e9319d6a9b33c64e",
+      "independently_read": "Corps rectificatif5mai2026 : quatre noms sans c final, aucun changement clinique décrit"
+    },
+    {
+      "source_id": "Prescott2018",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29297082+AND+SRC%3AMED&format=json&resultType=core",
+      "cache": "/tmp/a41-p1-prescott2018.json",
+      "sha256_measured": "dd72c958aa4841c01e074c2199f4d2c03a65c1792fffb0713eb1414a6355ec5a",
+      "independently_read": "Résumé de revue fraîchement obtenu/lu :40%réhospitalisations90j et déficits ; pas études originales de chaque chiffre",
+      "persistent_cache": "/workspace/medina-env/reprise-a41/sources/pathologie1/a41-p1-prescott2018.json"
+    }
+  ],
+  "source_limits": [
+    "18résumés primaires de trials/mécanismes lus ; pas leurs textes intégraux. ALBIOS/SOAPII/ARISE résultats relus dans leurs chaînes brutes car une suppression naïve des balises pouvait absorber les comparaisons P<.",
+    "Surviving2026 : cartes officielles/grades/remarques accessibles, publication23mars2026 ; rectificatif5mai nominal lu, pas nouvellelecture de rationale2026 intégrale.",
+    "NoradSwiss : information octobre2020, composition/tableauxbase lus. Les glyphes µ en policeSymbol ne sont pas interprétés comme mg ; pas validation des trois monographies pop2 dans ce rapport.",
+    "Prescott2018 : résumé de revue réellement lu et source40%confirmée ; étudesoriginales de chaque taux et certification « surtout nord-américain » non établies ici.",
+    "Références et barèmes inchangés Phoenix/maternel/NEWS2/KDIGO et chaque autre fait inchangé ne sont pas tous nouvellement contrevalidés sur leurs primaires ; lecture clinique ne vaut pas certification exhaustive.",
+    "Seule lecture de captures officielles/publiques et caches accessibles ; pas exécution de code entrant, pas contournement decaptcha/403, pasécriturecanonique/Git."
+  ],
+  "remaining_actions": [
+    "Réunir la dépendance P2-08 de pop2 auprès auteur/auditeur pharmacologie.",
+    "Obtenir contrelectureClaude du candidat complet et contrôles techniques globaux à empreintes figées avant décision d’injection du root."
+  ],
+  "primary_archive_manifest": "/workspace/medina-env/reprise-a41/sources/pathologie1/ARCHIVAGE.json",
+  "editorial_delta_reviews": [
+    {
+      "date_europe_zurich": "2026-10-08T15:04:55.553271+02:00",
+      "decision": "FAVORABLE_AU_DELTA_EDITORIAL_CIBLE",
+      "scope": "Trois wrappers de boutons du tableau support dans b et cinq blocs de références dans pop_pa, effectivement lus et identité inverse vérifiée. Aucun énoncé clinique nouveau.",
+      "before": {
+        "A41_b.html": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48",
+        "A41_pop_pa.html": "e9b464ba7bf3f371e64cde359906ded7037165211cf8b5d77e9de533d241a13f"
+      },
+      "after": {
+        "A41_b.html": "b3955084555b603f56f905cdaf54407f1c06603bde38dc80930776e5860c1ace",
+        "A41_pop_pa.html": "6e80bc70610be83c8e17927fec8b9b885ca59867e5336da0c85b1b5e6116623f"
+      },
+      "exact_reconstruction_b": true,
+      "exact_reconstruction_pop_pa": true,
+      "green_targets_present_once": [
+        "a41-oxygene",
+        "a41-sdra",
+        "a41-mesures"
+      ],
+      "window_source_blocks": {
+        "a41-pam": "<div class=\"lab\" data-reference-scope=\"a41-pam\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : pression moyenne, énoncés 13–14.</a></li></ul>",
+        "a41-remplissage": "<div class=\"lab\" data-reference-scope=\"a41-remplissage\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : remplissage et solutés, énoncés 10–11 et 43–49.</a></li></ul>",
+        "a41-refractaire": "<div class=\"lab\" data-reference-scope=\"a41-refractaire\">Texte de référence applicable</div><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/41874620/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Leone et coll., 2026 : consensus Delphi sur le choc réfractaire, résumé primaire (PMID 41874620).</a></li></ul>",
+        "a41-desescalade": "<div class=\"lab\" data-reference-scope=\"a41-desescalade\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : désescalade 36–37, durée 39 et procalcitonine 40.</a></li></ul>",
+        "a41-delai-atb": "<div class=\"lab\" data-reference-scope=\"a41-delai-atb\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : initiation de l’antibiotique, énoncés 16–20.</a></li></ul>"
+      },
+      "source_cards_read_from_primary_snapshot": [
+        {
+          "page_order": 10,
+          "sccm_group_id": 10,
+          "statement_and_certainty": "For adults with sepsis-induced hypoperfusion or septic shock, we “suggest” administering at least 30 mL/kg of IV crystalloid in the first 3 hr.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "Fluid resuscitation",
+          "remarks": "Remarks\nConsideration should be given to individual patient characteristics and context when selecting initial fluid volume.\nClinicians prescribing fluids should perform frequent, ongoing reassessment and closely monitor patients to avoid harms of under- or over-resuscitation.\nWeight-based fluid volume should be calculated based on actual body weight, or by adjusted or ideal body weight in patients with body mass index > 30 kg/m2.",
+          "raw_fragment_sha256": "c4361ed23d7d83c4e95d507c8698e009bd9f6637dfecb4096a90ea7389db2e77"
+        },
+        {
+          "page_order": 11,
+          "sccm_group_id": 11,
+          "statement_and_certainty": "For adults with sepsis-induced hypotension, we “suggest” initial IV crystalloid fluid bolus resuscitation followed by vasopressor support if hypotension persists.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Fluid resuscitation",
+          "remarks": "Remarks\nIn patients with unstable septic shock, immediate concurrent administration of vasopressors together with IV crystalloid fluid may be warranted on a case-by-case basis. Presence of unstable shock should be determined by physical examination. Suggestive clinical features of unstable shock include severely reduced blood pressure, mottled skin, ashen appearance, cyanosis/decreased oxygen saturation, tachycardia, and altered mentation.",
+          "raw_fragment_sha256": "3064ac478059786a39d40be75732f9ec39db8a222b7163c6998cb241efab3336"
+        },
+        {
+          "page_order": 13,
+          "sccm_group_id": 13,
+          "statement_and_certainty": "For adults with septic shock, we “recommend” an initial MAP target of 65 mm Hg over higher MAP targets.\nCertainty of evidence: Moderate",
+          "strength": "Strong",
+          "category": "Mean arterial pressure",
+          "remarks": "Remarks\nIn practice, it is not feasible to maintain MAP at exactly 65 mm Hg, so a reasonable range (e.g., within 5 mm Hg) should be used. Vasopressors should be titrated to maintain MAP within this range.",
+          "raw_fragment_sha256": "8c83c0255c1ba90d124d5dc2b9de085285706ceb3a6d3802e54bfc1a8a549031"
+        },
+        {
+          "page_order": 14,
+          "sccm_group_id": 14,
+          "statement_and_certainty": "For adults with septic shock 65 years old or older, we “suggest” an initial MAP range of 60-65 mm Hg over higher ranges.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "Mean arterial pressure",
+          "remarks": "",
+          "raw_fragment_sha256": "345d347d9e1d8904683da2f9831b359f273b664b7a4262e41051d06911396ab1"
+        },
+        {
+          "page_order": 16,
+          "sccm_group_id": 16,
+          "statement_and_certainty": "For adults with possible, probable, or definite septic shock, we “recommend” administering antimicrobial therapy immediately, ideally within 1 hr of recognition.\nCertainty of evidence: Very low",
+          "strength": "Strong",
+          "category": "Antibiotic initiation",
+          "remarks": "",
+          "raw_fragment_sha256": "707114af9a968f3f2ea09d8f4b36cfd5b3a36f0566a3b9efeddb063eac21cf1c"
+        },
+        {
+          "page_order": 17,
+          "sccm_group_id": 17,
+          "statement_and_certainty": "For adults with probable or definite sepsis without shock, we “recommend” administering antimicrobial therapy immediately, ideally within 1 hr of recognition.\nCertainty of evidence: Very low",
+          "strength": "Strong",
+          "category": "Antibiotic initiation",
+          "remarks": "",
+          "raw_fragment_sha256": "d55acddb7e05f8762643f98cad392cb8b3f643b0aba49063c2308e3264c6cdcf"
+        },
+        {
+          "page_order": 18,
+          "sccm_group_id": 18,
+          "statement_and_certainty": "For adults with possible sepsis without shock, we “suggest” a time-limited course of rapid investigation and if concern for infection persists, the administration of antimicrobial therapy within 3 hours from the time when sepsis was first suspected.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Antibiotic initiation",
+          "remarks": "",
+          "raw_fragment_sha256": "f95b73dba729126eb933981a8a5fb290064675dfffafc896c82f0fccf46654fb"
+        },
+        {
+          "page_order": 19,
+          "sccm_group_id": 19,
+          "statement_and_certainty": "Clinicians should perform a rapid assessment of the likelihood of infectious vs. noninfectious causes of acute illness in adults with possible sepsis without shock.",
+          "strength": "Good practice statement",
+          "category": "Antibiotic initiation",
+          "remarks": "",
+          "raw_fragment_sha256": "3fbdbf95f1b6b2a6250a4c572cf65262b26c3e76a8860721f8637453e625e115"
+        },
+        {
+          "page_order": 20,
+          "sccm_group_id": 20,
+          "statement_and_certainty": "For adults with a low likelihood of infection and without shock, we “suggest” deferring antimicrobial therapy while continuing to closely monitor the patient.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Antibiotic initiation",
+          "remarks": "",
+          "raw_fragment_sha256": "5f9964d2da2c4880c7cd80040a04997872462c2655c64e52b0fab76ced5a0f57"
+        },
+        {
+          "page_order": 36,
+          "sccm_group_id": 36,
+          "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend” de-escalation of antimicrobial therapy over no de-escalation when a confirmed microbiological diagnosis and susceptibility profile is available.\nCertainty of evidence: Very low",
+          "strength": "Strong",
+          "category": "Antimicrobial therapy",
+          "remarks": "Remarks\nDe-escalation involves discontinuing unnecessary antimicrobial therapy or narrowing the spectrum of antimicrobial agents where appropriate.",
+          "raw_fragment_sha256": "9d943f512eb5c5519c1f94c43b434cb6a67b58561889632307f2df5176cd126a"
+        },
+        {
+          "page_order": 37,
+          "sccm_group_id": 37,
+          "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest” de-escalation of antimicrobial therapy over no de-escalation when no pathogens are identified on final culture results.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Antimicrobial therapy",
+          "remarks": "",
+          "raw_fragment_sha256": "aac53f723a61ebb6f19e0797ba89fc0aaa271723bfe0e857b5b89c04658127cb"
+        },
+        {
+          "page_order": 39,
+          "sccm_group_id": 39,
+          "statement_and_certainty": "For adults with an initial diagnosis of sepsis or septic shock and adequate source control, we “suggest” using shorter over longer duration of antimicrobial therapy.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Antimicrobial therapy",
+          "remarks": "",
+          "raw_fragment_sha256": "b2c8dca80091ce1b941a5fde16508ec9bc84fcdd4c21597771dfcf83cee3b12c"
+        },
+        {
+          "page_order": 40,
+          "sccm_group_id": 40,
+          "statement_and_certainty": "For adults with an initial diagnosis of sepsis or septic shock and adequate source control where optimal duration of therapy is unclear, we “suggest” using procalcitonin AND clinical evaluation to decide when to discontinue antimicrobial therapy over clinical evaluation alone.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "Antimicrobial therapy",
+          "remarks": "",
+          "raw_fragment_sha256": "cf1eda93433ed10322a631c68d32a170802aaaa735c7447d0725e2528b07c59e"
+        },
+        {
+          "page_order": 43,
+          "sccm_group_id": 43,
+          "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend” using crystalloids as first-line fluid for resuscitation.\nCertainty of evidence: Moderate",
+          "strength": "Strong",
+          "category": "Fluid type",
+          "remarks": "",
+          "raw_fragment_sha256": "6bfb61b5cb15c61aa5764a1ba956494759dff893f7e2a8b02045c46c3f03ce49"
+        },
+        {
+          "page_order": 44,
+          "sccm_group_id": 44,
+          "statement_and_certainty": "For adults with sepsis or septic shock undergoing initial resuscitation, we “suggest” using balanced crystalloids over 0.9% saline.\nCertainty of evidence: Moderate",
+          "strength": "Conditional",
+          "category": "Fluid type",
+          "remarks": "Remarks\nFor patients with sepsis and traumatic brain injury, we suggest using 0.9% saline.",
+          "raw_fragment_sha256": "2eb85c3d3fe20a04582a8146b55c2bb2018d3b41f704e9462dab1748b2ce0a74"
+        },
+        {
+          "page_order": 45,
+          "sccm_group_id": 45,
+          "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest” using crystalloids alone over crystalloids with supplemental albumin for fluid resuscitation.\nCertainty of evidence: Moderate",
+          "strength": "Conditional",
+          "category": "Fluid type",
+          "remarks": "Remarks\nUse of supplemental albumin may be appropriate for patients who already received large crystalloid volumes or have cirrhosis. Supplemental albumin should be avoided in patients with traumatic brain injury.",
+          "raw_fragment_sha256": "45e0d222c0ce151b94967f92cc5a4be110ee322f1565be66897f8b64718e15c8"
+        },
+        {
+          "page_order": 46,
+          "sccm_group_id": 46,
+          "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend against” using starches for resuscitation.\nCertainty of evidence: High",
+          "strength": "Strong",
+          "category": "Fluid type",
+          "remarks": "",
+          "raw_fragment_sha256": "6f2b81188ed273a899b3b1126f5ce2a34705ec5b8f471f6ba9ae39758b05afb6"
+        },
+        {
+          "page_order": 47,
+          "sccm_group_id": 47,
+          "statement_and_certainty": "For adults with sepsis and septic shock, we “suggest against” using gelatin for resuscitation.\nCertainty of evidence: Moderate",
+          "strength": "Conditional",
+          "category": "Fluid type",
+          "remarks": "",
+          "raw_fragment_sha256": "c7fe0c238b8bf13757329cdeaf9b78657eea67f9346715760bdfc3fcaec61780"
+        },
+        {
+          "page_order": 48,
+          "sccm_group_id": 48,
+          "statement_and_certainty": "For adults with sepsis or septic shock who have already received fluid resuscitation with 30 mL/kg and have persistent hypoperfusion, we “suggest” using either a liberal or a restrictive fluid resuscitation strategy based on individual patient and health system factors.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "Resuscitation",
+          "remarks": "Remarks\nThere was wide variability in the protocols used and the volume of fluids received in the liberal vs. restrictive arms across trials. Patient and health system factors to be considered include patients’ current clinical conditions and chronic illnesses (e.g., heart failure) and the availability of monitored beds (i.e., if a restrictive approach necessitates vasopressor use).",
+          "raw_fragment_sha256": "92291283177139a1e4af981ae33ebebfd979b96a2acb27edb550a74088683422"
+        },
+        {
+          "page_order": 49,
+          "sccm_group_id": 49,
+          "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest” using dynamic measures to guide fluid resuscitation over physical examination or static measures alone.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "Resuscitation",
+          "remarks": "Remarks\nDynamic measures include response to a passive leg raise or a fluid bolus using stroke volume (SV), stroke volume variation (SVV), pulse pressure (PP), or pulse pressure variation (PPV).",
+          "raw_fragment_sha256": "faccd7f829f87ad9733f167b66668c6202b68d33d5690feb937647c8fbb4317e"
+        }
+      ],
+      "leone_scope": "Leone2026 PMID41874620, résumé primaire déjà réellement lu ; caption reste résumé, sans prétendre accès au texte intégral.",
+      "limitations": "Contrôle de présence/résolution statique des boutons et liens ; aucune nouvelle ouverture réseau de chaque URL, aucun test navigateur exécuté dans cette contrelecture. L’avis initial médical reste borné à son périmètre ; validation technique et contrelecture Claude distinctes."
+    },
+    {
+      "date_europe_zurich": "2026-10-08T15:16:54.357408+02:00",
+      "decision": "FAVORABLE_AU_DELTA_DOCUMENTAIRE_FINAL",
+      "file": "A41_pop_pa.html",
+      "before_sha256": "6e80bc70610be83c8e17927fec8b9b885ca59867e5336da0c85b1b5e6116623f",
+      "after_sha256": "f383ad214398215420af0474e35d53478a6688bbfea14721ff3c8c9bba1e560d",
+      "after_bytes": 74108,
+      "snapshot_before": "/tmp/A41_pop_pa.avant_support_liens_20261008.html",
+      "scope": "Trois seuls blocs de liens/captions oxygène/SDRA/mesures, réellement lus ; aucune phrase clinique ni dose modifiée.",
+      "exact_reconstruction": true,
+      "old_clinical_content_doses_grades_targets_2021_urls_byte_identical": true,
+      "added_blocks": {
+        "a41-oxygene": "<div class=\"lab\" data-reference-scope=\"a41-oxygene\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : oxygénation et haut débit, énoncés 66–68.</a></li></ul>",
+        "a41-sdra": "<div class=\"lab\" data-reference-scope=\"a41-sdra\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : ventilation protectrice et décubitus ventral, énoncés 71, 73 et 76.</a></li></ul>",
+        "a41-mesures": "<div class=\"lab\" data-reference-scope=\"a41-mesures\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : seuil de début de l’insuline, énoncé 92.</a></li></ul>"
+      },
+      "applicable_cards_rechecked": [
+        {
+          "page_order": 66,
+          "sccm_group_id": 66,
+          "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” titrating FIO2 to target either higher, more liberal oxygen levels or lower, conservative oxygen levels depending on patient factors and resource limitations.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "Oxygen targets",
+          "remarks": "Remarks\nAlthough there was variability across trials informing this recommendation, most used a lower target of approximately 90-93% SpO2 and a higher target of SpO2 ≥ 96.\n“In our practice”, panelists target SpO2 between 90% (IQR 90-92%) to 96% (IQR 94-98%) for patients with sepsis and acute hypoxemic respiratory failure.",
+          "raw_fragment_sha256": "b20ebbe74c417fad429b46113e041c4e0922edf8b529aebe4895f49c896ec506"
+        },
+        {
+          "page_order": 67,
+          "sccm_group_id": 67,
+          "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” using HFNC therapy over conventional oxygen therapy.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Respiratory support",
+          "remarks": "Remarks\nThis recommendation pertains to patients with a PaO2/FIO2 ratio < 200 or SpO2/FIO2 ratio < 235.",
+          "raw_fragment_sha256": "9745d202665978218e3f7de2818fe4b78682931747dbb964ed3722d72e9abea9"
+        },
+        {
+          "page_order": 68,
+          "sccm_group_id": 68,
+          "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” using HFNC as the initial therapy over noninvasive positive pressure ventilation.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "Respiratory support",
+          "remarks": "",
+          "raw_fragment_sha256": "7d29da43410f97a82d7c7980f1eb5de22c3e5aab7df8233ab42281d1e850e38d"
+        },
+        {
+          "page_order": 71,
+          "sccm_group_id": 71,
+          "statement_and_certainty": "For adults with sepsis and ARDS, we “recommend” using a low tidal volume ventilation strategy (6 mL/kg) over a high tidal volume strategy (> 10 mL/kg).\nCertainty of evidence: High",
+          "strength": "Strong",
+          "category": "Mechanical ventilation",
+          "remarks": "",
+          "raw_fragment_sha256": "406a387267912b9f551988e6f5a3626f17dc5757c4ca1256cc2e1fd56013d2bc"
+        },
+        {
+          "page_order": 73,
+          "sccm_group_id": 73,
+          "statement_and_certainty": "For adults with sepsis and ARDS, we “recommend” using an upper limited goal for plateau pressure of 30 cm H2O) over higher plateau pressures.\nCertainty of evidence: High",
+          "strength": "Strong",
+          "category": "Mechanical ventilation",
+          "remarks": "",
+          "raw_fragment_sha256": "c214cc5db00f07090f2338bacb7c898b19efa7030e60b039f5f2522162a0e8a7"
+        },
+        {
+          "page_order": 76,
+          "sccm_group_id": 76,
+          "statement_and_certainty": "For adults with sepsis and moderate-severe ARDS, we “suggest” using prone ventilation for greater than 12 hr daily.\nCertainty of evidence: Moderate",
+          "strength": "Conditional",
+          "category": "Mechanical ventilation",
+          "remarks": "",
+          "raw_fragment_sha256": "112f572076d7e4f968d02e72498bb913ade25619c6ad5ff2cd05c14f66a3d789"
+        },
+        {
+          "page_order": 92,
+          "sccm_group_id": 92,
+          "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend” initiating insulin therapy at a glucose level of ≥ 180 mg/dL (10 mmol/L).\nCertainty of evidence: Moderate",
+          "strength": "Strong",
+          "category": "Insulin therapy",
+          "remarks": "",
+          "raw_fragment_sha256": "8d91ccf2e834b036bd0300242b2cd71a76dca95e39b9abcadb2f4027ee36d7b1"
+        }
+      ],
+      "source_snapshot_sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "network_and_runtime_limit": "Contrôle de liens et cibles statique ; pas nouveau test de chaque serveur en navigateur, réservé au poste technique."
+    }
+  ],
+  "current_reviewed_sha256": {
+    "A41_b.html": "b3955084555b603f56f905cdaf54407f1c06603bde38dc80930776e5860c1ace",
+    "A41_pop_pa.html": "f383ad214398215420af0474e35d53478a6688bbfea14721ff3c8c9bba1e560d"
+  }
+}
