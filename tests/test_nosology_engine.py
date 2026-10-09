@@ -10,7 +10,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from nosologyEngine import BASE_PLAN, generate, progress, read_json, reference, sha256
+from nosologyEngine import BASE_PLAN, gauges, generate, progress, read_json, reference, sha256
 
 
 class NosologyTests(unittest.TestCase):
@@ -114,6 +114,15 @@ class NosologyTests(unittest.TestCase):
     def test_progress_does_not_count_duplicated_or_empty_lessons_as_filled(self):
         lessons = [{'id': 'a', 'state': 'filled'}, {'id': 'b', 'state': 'empty'}, {'id': 'a', 'state': 'filled'}]
         self.assertEqual(progress(lessons), {'filled': 1, 'total': 2, 'percent': 50.0})
+
+    def test_three_gauges_keep_frequency_exam_and_global_separate(self):
+        course = {'code': 'I25', 'title': 'Cours', 'covers': ['I20', 'I25'], 'has_content': True}
+        result = generate(['I20', 'I25', 'I20.0', 'I99'], 'S01', ROOT, {'I25': course})
+        stats = gauges(result['lessons'], ['I20'])
+        self.assertEqual(stats['frequent'], {'filled': 1, 'total': 1, 'percent': 100.0})
+        self.assertEqual(stats['federal_exam'], {'filled': 1, 'total': 2, 'percent': 50.0})
+        self.assertEqual(stats['global'], {'filled': 1, 'total': 3, 'percent': 33.33})
+        self.assertEqual(gauges([], [])['frequent'], {'filled': 0, 'total': 0, 'percent': 0})
 
 
 if __name__ == '__main__': unittest.main()

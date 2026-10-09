@@ -138,6 +138,7 @@ def main():
         ('K40-K46', [73]), ('K50-K52 K90', [59]), ('K55-K67', [52, 55, 58, 60]),
         ('K80-K87', [52, 91, 203, 209]), ('K92', [60, 210]),
         ('E00-E07', [37, 163]), ('E10-E14', [3, 158]), ('E40-E46 E50-E64', [16, 138, 170]),
+        ('E20-E35', [156, 184]), ('E84', [46, 189]), ('E85', [146, 173]),
         ('E65-E68', [15]), ('E70-E77', [264]), ('E78', [162]), ('E86-E87', [156]),
         ('G20-G26', [98]), ('G30-G32', [102, 139]), ('G35-G37', [103, 104]),
         ('G40-G41', [105, 219]), ('G43-G44', [101]), ('G47', [11, 40]),
@@ -175,6 +176,7 @@ def main():
         ('R73', [158]), ('R74', [151, 160]), ('R77', [172]), ('R79', [156, 162]),
         ('R80', [173]), ('R81', [158]), ('R82', [164]), ('R85', [157]), ('R90-R93', [153]),
         ('R95', [191]), ('R96', [14]),
+        ('Q00-Q99', [70, 177]), ('C00-C97', [159, 227]),
     ]
     exam_mapping = {}
     for spec, numbers in rules:
@@ -190,6 +192,21 @@ def main():
             'exam_mapping': dict(sorted(exam_mapping.items())), 'ssp_labels': ssps,
             'exam_mapping_status': 'Mapping pédagogique explicite, pas de table officielle CIM/PROFILES. Sans lien établi : à arbitrer, jamais déclaré non exigible.'}
     (ROOT / 'nosology/reference.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n')
+    chapter_summary = {code: {'title': title(classes[code]), 'fragments': set(), 'excluded_categories': []} for code in chapters}
+    block_summary = {code: {'title': item['title'], 'fragments': set(), 'categories': []} for code, item in blocks.items()}
+    for entity in entities:
+        if len(entity['code']) != 3: continue
+        if entity['excluded']:
+            chapter_summary[entity['chapter']]['excluded_categories'].append({'code': entity['code'], 'reason': entity['excluded']})
+            continue
+        mapping = mappings[entity['code']]
+        associated = {mapping['fragment'], *mapping['secondary_fragments']}
+        chapter_summary[entity['chapter']]['fragments'].update(associated)
+        block_summary[entity['block']]['fragments'].update(associated)
+        block_summary[entity['block']]['categories'].append(entity['code'])
+    for table in (chapter_summary, block_summary):
+        for item in table.values(): item['fragments'] = sorted(item['fragments'])
+    (ROOT / 'nosology/mapping_summary.json').write_text(json.dumps({'chapters': chapter_summary, 'blocks': block_summary}, ensure_ascii=False, indent=2) + '\n')
     print(len(active), 'catégories actives ;', sum(not item['excluded'] for item in entities), 'codes actifs hors psychisme.')
 
 

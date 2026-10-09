@@ -129,7 +129,7 @@ def progress(catalogue):
 def gauge(label, part, whole):
     if not whole:
         return (f'<span class="gauge" data-empty><span class="gauge-label">{label}</span><span class="gauge-track" aria-hidden="true">'
-                '<span class="gauge-fluid" style="width:0%"></span></span><span class="gauge-value">—</span></span>')
+                '<span class="gauge-fluid" style="width:0%"></span></span><span class="gauge-value" title="Non applicable">0 %</span></span>')
     pct = round(100 * part / whole, 2)
     return (f'<span class="gauge" role="img" aria-label="{label} : {part} sur {whole}, {pct} %"><span class="gauge-label">{label}</span>'
             f'<span class="gauge-track" aria-hidden="true"><span class="gauge-fluid" style="width:{pct}%"></span></span>'
@@ -180,6 +180,11 @@ def main():
         for i, value in enumerate((covered, categories, done, lessons)):
             totals[i] += value
         gauges = f'<span class="gauges">{gauge("Catégories", covered, categories)}{gauge("Leçons", done, lessons)}</span>'
+        if catalogue.get('nosology', {}).get('gauges'):
+            stats = catalogue['nosology']['gauges']
+            gauges = '<span class="gauges">' + ''.join(gauge(label, stats[key]['filled'], stats[key]['total'])
+                     for label, key in [('Pathologies fréquentes', 'frequent'), ('Examen fédéral', 'federal_exam'),
+                                        ('Avancement global', 'global')]) + '</span>'
         cards.append(f'''<li class="specialty" data-specialty-item data-search="{html.escape(search_text, quote=True)}">
  <a class="specialty-card" href="fragments/{filename}" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" style="--card-accent:{accent};--card-tint:color-mix(in srgb,{accent} 7%,#fffefa)" title="{html.escape(names[ident]['label'], quote=True)}">
   <div class="card-top"><span class="card-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">{symbol}</svg></span><span class="card-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 12 12 4M4 4h8v8"/></svg></span></div>

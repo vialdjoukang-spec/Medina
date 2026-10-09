@@ -26,6 +26,8 @@ PROFILES décrit des situations et compétences : il ne publie pas une liste off
 
 ## Jauges
 
+Chaque fragment affiche trois jauges distinctes, avec leur pourcentage à proximité : pathologies fréquentes, Examen fédéral et avancement global du fragment. La progression de MEDINA apparaît séparément. `nosology/frequency.json` contient une sélection éditoriale explicite de catégories usuelles, distincte de PROFILES ; elle cite les statistiques de santé OFS pour les catégories étayées et identifie les autres comme propositions à arbitrer. Aucun taux de prévalence ni seuil universel n'est inventé. Un sous-type rare n'hérite pas automatiquement du classement « fréquent » de sa maladie principale. Les fragments de méthodes ou d'éthique peuvent avoir zéro pathologie fréquente : la jauge affiche alors 0 % et « non applicable ».
+
 Le dénominateur inclut les cours canoniques dédoublonnés et chaque coquille détaillée. Le numérateur compte un cours préexistant avec ses quatre fichiers non vides, ou une coquille dont toutes les sections ont été explicitement remplies. Un regroupement de catégories ou un renvoi n'augmente pas le numérateur. `nosology/progress.json` recalcule les jauges des 22 fragments et la jauge globale à chaque invocation ; la file de traitement reste distincte de la rédaction des cours.
 
 ## Reprise et contrôles

@@ -67,6 +67,14 @@ def progress(lessons):
             'percent': round(100 * filled / total, 2) if total else 0}
 
 
+def gauges(lessons, frequent_codes):
+    frequent_codes = set(frequent_codes)
+    frequent = [lesson for lesson in lessons if not '.' in lesson['code']
+                and frequent_codes.intersection(lesson['icd10gm']['codes'])]
+    federal = [lesson for lesson in lessons if lesson['gold_star']['enabled']]
+    return {'frequent': progress(frequent), 'federal_exam': progress(federal), 'global': progress(lessons)}
+
+
 def lesson_is_filled(lesson):
     if lesson.get('existing_course'):
         return lesson.get('state') == 'filled'
@@ -97,6 +105,8 @@ def generate(codes, fragment, root, existing_courses=None, previous=None):
             rejected.append({'code': code, 'reason': 'Autre fragment : ' + owner})
             continue
         course = aliases.get(code) if len(code) == 3 else None
+        if course:
+            entity = entities.get(course['code'], entity)
         key = course['code'] if course else code
         if key in seen:
             continue
@@ -110,7 +120,7 @@ def generate(codes, fragment, root, existing_courses=None, previous=None):
                 'official_icd_crosswalk': False}
         item = {'id': key, 'code': key, 'title': course['title'] if course else entity['title'],
                 'fragment': fragment, 'chapter': entity['chapter'], 'block': entity['block'],
-                'category': code[:3], 'parent': entity.get('parent'),
+                'category': entity['code'][:3], 'parent': entity.get('parent'),
                 'icd10gm': {'version': '2024', 'language': 'fr', 'publisher': 'OFS',
                             'codes': covered, 'marker': entity.get('marker', ''),
                             'source': ref['sources']['csv']['url']},
@@ -180,6 +190,8 @@ def attach_surface(organisation, root):
     by_code = {item['code']: item for item in inventory['lessons']}
     organisation['nosology'] = inventory
     organisation['nosology']['global_progress'] = read_json(Path(root) / 'nosology/progress.json')['global']
+    frequency = read_json(Path(root) / 'nosology/frequency.json')
+    organisation['nosology']['gauges'] = gauges(inventory['lessons'], frequency['codes'])
     fragments = {item['id']: item for item in read_json(Path(root) / 'fragments.json')}
     for link in inventory.get('secondary_references', []):
         target = fragments[link['fragment']]
