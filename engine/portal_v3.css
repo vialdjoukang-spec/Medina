@@ -81,3 +81,33 @@ html body .hero::after{content:"";position:absolute;right:6%;top:12%;width:14px;
  box-shadow:-210px 260px 0 -3px #7e57c2,-40px 300px 0 -4px #3949ab,-330px 40px 0 -5px #26a69a,-120px -10px 0 -6px #5c6bc0;pointer-events:none}
 html body .overview{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 @media (max-width:760px){html body .overview{grid-template-columns:1fr!important}html body .hero-art{min-height:240px}html body .hero::after{display:none}}
+/* Style « Été vivant » (09.10.2026) : lagon, ciel, soleil, corail, feuillage ; filigrane printanier ; aucun gris ni beige.
+   Fondements : Carruthers 2010 (doi:10.1186/1471-2288-10-12), Valdez et Mehrabian 1994 (doi:10.1037//0096-3445.123.4.394), Lankston 2010 (doi:10.1258/jrsm.2010.100256). */
+html body{background-color:#e9f7ff!important;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='220' viewBox='0 0 280 220'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg stroke='%2343a047' stroke-opacity='.16'%3E%3Cpath d='M40 60c10-22 34-22 40-6-16 2-28 6-40 6Zm0 0 34-10'/%3E%3Cpath d='M210 170c-6-20 12-36 28-26-10 10-18 18-28 26Zm0 0 22-22'/%3E%3C/g%3E%3Cg stroke='%23ffb300' stroke-opacity='.22'%3E%3Ccircle cx='200' cy='50' r='9'/%3E%3Cpath d='M200 32v-8m0 52v-8m18-18h8m-52 0h8m13-13-6-6m37 37-6-6m0-25 6-6m-37 37 6-6'/%3E%3C/g%3E%3Cg stroke='%23ec407a' stroke-opacity='.18'%3E%3Ccircle cx='80' cy='160' r='4'/%3E%3Cpath d='M80 150c-4-8 4-12 0-4m0 18c4 8-4 12 0 4m-10-8c-8 4-12-4-4 0m18 0c8-4 12 4 4 0'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),linear-gradient(180deg,#e9f7ff 0,#f2fbff 520px,#eefbe8 100%)!important;
+ background-size:280px 220px,100% 100%!important;background-attachment:fixed,fixed!important}
+html body :is(.brand-caption,.section-copy,.hero-copy,.search-status,.legend-note,.footer-note){color:#1d4e75!important}
+html body .hero h1{color:#0b2545!important}
+html body .hero h1 em{color:#0a8fb8!important}
+html body :is(.eyebrow,.section-kicker){color:#e0613f!important}
+html body .hero-meta span{border-color:#00b4c6!important;background:#fff!important}
+/* Illustration : soleil de printemps au-dessus d’une prairie fleurie. */
+html body .hero-art::before{inset:4% 18% 40% 30%!important;border-radius:50%!important;
+ background:radial-gradient(circle at 45% 40%,#fffbe0 0 18%,#ffe27a 40%,#ffc93c 62%,#ff9f43 100%)!important;
+ box-shadow:0 0 0 18px #ffc93c26,0 0 0 40px #ffc93c14,0 30px 60px -20px #ff7a5999!important}
+html body .hero-art::after{inset:auto 0 0 0!important;height:52%!important;border:0!important;border-radius:0 0 28px 28px!important;transform:none!important;box-shadow:none!important;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='200' viewBox='0 0 600 200' preserveAspectRatio='none'%3E%3Cpath d='M0 90C120 30 220 40 320 80s200 30 280-20V200H0Z' fill='%23a5d66b'/%3E%3Cpath d='M0 130c110-50 230-40 330-10s190 20 270-10V200H0Z' fill='%237cc84a'/%3E%3Cpath d='M0 165c140-30 260-25 360-5s170 10 240-5V200H0Z' fill='%234caf50'/%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='120' cy='150' r='4'/%3E%3Ccircle cx='420' cy='140' r='4'/%3E%3C/g%3E%3Cg fill='%23ffd54f'%3E%3Ccircle cx='120' cy='150' r='1.6'/%3E%3Ccircle cx='420' cy='140' r='1.6'/%3E%3C/g%3E%3Cg fill='%23ec407a'%3E%3Ccircle cx='250' cy='175' r='4'/%3E%3Ccircle cx='520' cy='170' r='4'/%3E%3C/g%3E%3C/svg%3E") no-repeat bottom/100% 100%!important}
+html body .hero::after{background:#ffc93c!important;box-shadow:-210px 260px 0 -3px #ff7a59,-40px 300px 0 -4px #3ec27a,-330px 40px 0 -5px #00b4c6,-120px -10px 0 -6px #1e88e5!important}
+html body .overview{background:linear-gradient(120deg,#1e88e5,#1fbf8f 60%,#7cc84a)!important}
+html body .gauge-fluid{background:linear-gradient(180deg,#ffe27a 0,#ffc93c 45%,#ff9f43 100%)!important;border-right-color:#0b2545!important}
+html body .gauge-track{border-color:#0b2545!important;background:#ffffff!important}
+html body .specialty-card{background-color:#ffffff!important;background-image:linear-gradient(160deg,#ffffff 60%,color-mix(in srgb,var(--v) 9%,#fff))!important;border-color:#b9e6f2!important;border-left:7px solid var(--v)!important}
+html body .specialty-card :is(h3,*){color:#0b2545!important}
+html body .specialty-card .card-symbol,html body .specialty-card .card-symbol *{color:#fff!important}
+html body .specialty-card .card-symbol{box-shadow:0 0 0 3px #fff,0 0 0 5px color-mix(in srgb,var(--v) 35%,#fff)!important}
+html body :is(.brand-symbol,.search input){border-color:#00b4c6!important}
+/* Consigne finale de Vial : des couleurs vives et vivantes, rien de plus. */
+html body{background-image:linear-gradient(180deg,#e9f7ff 0,#f2fbff 520px,#eefbe8 100%)!important;background-size:100% 100%!important}
+html body .hero-art,html body .hero::after{display:none!important}
+html body .hero{grid-template-columns:1fr!important}
+html body .overview{background:linear-gradient(120deg,#1e88e5,#1fbf8f 60%,#ffc93c)!important}

@@ -1,0 +1,47 @@
+/* MEDINA — style « Printemps ensoleillé » (09.10.2026, demande de Vial) : couleurs vives, printanières et estivales,
+   filigrane printanier (feuilles, fleurs, soleil), motif propre à chaque spécialité. Fondements (PubMed) :
+   Carruthers 2010 (doi:10.1186/1471-2288-10-12) : le gris s’associe à l’humeur anxieuse ou déprimée, le jaune à l’humeur normale ;
+   Valdez et Mehrabian 1994 (doi:10.1037//0096-3445.123.4.394) : l’agrément croît surtout avec la luminosité (0,69) puis la saturation (0,22) ;
+   bleu, bleu-vert et vert parmi les teintes les plus agréables ; Lankston 2010 (doi:10.1258/jrsm.2010.100256) : bleus et verts de nature apaisants.
+   Donc : aucun gris ni beige, fonds lumineux, teintes lagon et feuillage, soleil jaune et corail en accents. Se superpose à atlas_v3.css. */
+html[data-medina-fragment]{--s-sky:#e9f7ff;--s-lagoon:#00b4c6;--s-sea:#1e88e5;--s-sun:#ffc93c;--s-coral:#ff7a59;--s-leaf:#3ec27a;
+ --s-ink:#0b2545;--s-ink2:#1d4e75;--s-line:#b9e6f2;
+ --s-wave:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='220' viewBox='0 0 280 220'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg stroke='%2343a047' stroke-opacity='.16'%3E%3Cpath d='M40 60c10-22 34-22 40-6-16 2-28 6-40 6Zm0 0 34-10'/%3E%3Cpath d='M210 170c-6-20 12-36 28-26-10 10-18 18-28 26Zm0 0 22-22'/%3E%3C/g%3E%3Cg stroke='%23ffb300' stroke-opacity='.22'%3E%3Ccircle cx='200' cy='50' r='9'/%3E%3Cpath d='M200 32v-8m0 52v-8m18-18h8m-52 0h8m13-13-6-6m37 37-6-6m0-25 6-6m-37 37 6-6'/%3E%3C/g%3E%3Cg stroke='%23ec407a' stroke-opacity='.18'%3E%3Ccircle cx='80' cy='160' r='4'/%3E%3Cpath d='M80 150c-4-8 4-12 0-4m0 18c4 8-4 12 0 4m-10-8c-8 4-12-4-4 0m18 0c8-4 12 4 4 0'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body{
+ background-color:var(--s-sky)!important;background-image:var(--s-wave),linear-gradient(180deg,#e9f7ff 0,#f2fbff 380px,#eefbe8 100%)!important;
+ background-size:280px 220px,100% 100%!important;background-attachment:fixed,fixed!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(main,.main,.content,.app-main){background:transparent!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar{background:#ffffffe0!important;border-bottom:3px solid transparent!important;
+ border-image:linear-gradient(90deg,var(--s-sun),var(--s-coral),var(--s-lagoon),var(--s-leaf)) 1!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar{background:linear-gradient(180deg,#ffffff,#f0fbff)!important;border-right:1px solid var(--s-line)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar .nav-main a.active{background:linear-gradient(90deg,var(--s-sea),var(--s-lagoon))!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.badge,.mcg-filters,.sidebar-note){background:#ffffff!important;border-color:var(--s-line)!important;color:var(--s-ink)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-filters :is(button,a):is([aria-pressed="true"],.active,[aria-selected="true"]){background:var(--s-sea)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar .mcg-sidebar-block>a:not(.active){background:#ffffff!important}
+
+/* Couverture : ciel de printemps et soleil ; le motif de la spécialité (--frag-motif) flotte en filigrane. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover{
+ background:
+  var(--frag-motif,none) no-repeat right 6% center/190px 190px,
+  radial-gradient(circle at 88% 22%,#fff6c2 0 34px,#ffd54f 36px,#ffc93c99 60px,transparent 110px),
+  linear-gradient(125deg,#1e88e5 0,#12a5e0 40%,#1fbf8f 75%,#7cc84a 100%)!important;
+ border:0!important;border-radius:26px!important;box-shadow:0 22px 40px -26px #0a5c8a!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover h1{text-shadow:0 2px 12px #0a3d6b55}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover .mcg-counts span{background:#ffffff33!important;border-color:#ffffffb3!important}
+
+/* Cartes : blanches, rail coloré vif, ombre colorée ; numéro sur pastille ensoleillée. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card{border:1px solid var(--s-line)!important;border-left:7px solid var(--cat)!important;
+ background-color:#ffffff!important;background-image:linear-gradient(160deg,#ffffff 60%,color-mix(in srgb,var(--cat) 8%,#ffffff))!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card :is(*,h2){color:var(--s-ink)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card .mcg-category-number{background:var(--cat)!important;color:#fff!important;box-shadow:0 0 0 3px #ffffff,0 0 0 5px color-mix(in srgb,var(--cat) 35%,#fff)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-category-card .mcg-code{background:#f0fbff!important;border-color:var(--s-line)!important;color:var(--s-ink2)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mcg-lesson,.mcg-featured-lesson){border-color:var(--s-line)!important;background-color:#ffffff!important;background-image:linear-gradient(160deg,#ffffff 65%,#f0fbff)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mcg-lesson,.mcg-featured-lesson) *{color:var(--s-ink)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-block-heading{background:var(--frag-motif,none) no-repeat right 4% center/120px 120px,linear-gradient(120deg,var(--cat,#1e88e5),color-mix(in srgb,var(--cat,#1e88e5) 55%,#00b4c6))!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.s01-cs-gateway,.cs-gateway){background:linear-gradient(120deg,#fff4cc,#e4f7fd 55%,#e3f8ec)!important;border-left-color:var(--s-sun)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-trap{background:#e4f7fd!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-alert{background:#ffe9e2!important}
+/* Consigne finale de Vial : des couleurs vives et vivantes, rien de plus (aucun filigrane, motif ni illustration). */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body{background-image:linear-gradient(180deg,#e9f7ff 0,#f2fbff 380px,#eefbe8 100%)!important;background-size:100% 100%!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-cover{background:linear-gradient(125deg,#1e88e5 0,#12a5e0 35%,#1fbf8f 70%,#ffc93c 100%)!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mcg-block-heading{background:linear-gradient(120deg,var(--cat,#1e88e5),color-mix(in srgb,var(--cat,#1e88e5) 55%,#1fbf8f))!important}
