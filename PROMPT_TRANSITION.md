@@ -164,13 +164,15 @@ Chaque leçon vide suit le plan monographique de base. Les pathologies fréquent
 - **Style** : aucun fond ivoire, beige ou gris, aucun motif ni filigrane. Les titres des cours restent rouges, comme le prévoit la règle d'origine.
 - **Validation** : jamais « validé » sans médecin. La mention « revue par IA » est obligatoire.
 
-## 12. Annexe
-L'annexe `ANNEXE_FEUILLE_DE_ROUTE.md`, régénérée par `python3 tools/feuille_de_route.py`, contient 1 244 fiches : une par leçon « Examen fédéral », classées par spécialité. Chaque fiche donne :
-- la priorité (P0 rédigée, P1 fréquente, P2 examen) et l'état ;
-- le cours couvrant, ou le brouillon existant ;
-- les situations PROFILES avec leur intitulé ;
-- les sous-codes à intégrer ;
-- les renvois du même bloc ;
-- le plan spécifique numéroté et les livrables.
-
-Régénérer l'annexe après chaque injection.
+## 12. Annexes (la tâche centrale)
+- **Objectif de MEDINA** : produire les **pathologies** qui, ensemble, permettent de satisfaire **toutes** les situations PROFILES 2017 (SSP), en commençant par les pathologies fréquentes. Les SSP sont un critère de couverture, pas une unité de cours.
+- **Annexe A, `ANNEXE_PATHOLOGIES_SSP.md`** (régénérée par `python3 tools/pathologies_ssp.py`) :
+  - 272 pathologies dans les 22 fragments et 16 entités du volet psychiatrique couvrent les **265 SSP sur 265** ;
+  - les pathologies sont classées par spécialité, dans l'ordre de production ;
+  - chaque fiche donne le motif d'inclusion, l'état, la difficulté, les SSP à satisfaire dans ce cours et un plan spécifique numéroté ;
+  - une matrice SSP → pathologies termine l'annexe.
+  - **C'est la feuille de route de production.**
+- **La psychiatrie** (F00 à F99) est hors des 22 fragments, par décision du projet. Ses 16 entités sont listées dans l'annexe A et forment un volet propre, à produire.
+- **Annexe B, `ANNEXE_FEUILLE_DE_ROUTE.md`** (`python3 tools/feuille_de_route.py`) : la liste exhaustive des 1 244 catégories marquées « Examen fédéral ». C'est une référence de complétude, à traiter après l'annexe A.
+- **Réserve** : la correspondance SSP → pathologie est pédagogique et non officielle, car PROFILES ne publie aucune table vers la CIM. Elle est à valider, sans la présenter comme officielle.
+- Régénérer les deux annexes après chaque injection.
