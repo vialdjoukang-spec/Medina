@@ -18,6 +18,7 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 | K52 (centré sur la colite microscopique K52.8) | Autres gastroentérites et colites non infectieuses | 3 (Commons) | UEG/EMCG 2021, FI Entocort CIR® |
 | C18 | Tumeur maligne du côlon : cancer du côlon localisé | 3 (Commons) | ESMO côlon localisé 2020, UICC TNM 8 (tableau S1), OPAS art. 12e (01.07.2026), OFS/ONEC 2018-2022, FI Xeloda®, Eloxatine® |
 | K35 | Appendicite aiguë | 3 (Commons) | WSES Jérusalem 2020, guide CHUV 2022, FI Co-Amoxi-Mepha i.v., Augmentin® |
+| K57 | Maladie diverticulaire : diverticulose et diverticulite aiguë | 3 (Commons, dont 2 aussi dans les fenêtres) | WSES diverticulite 2020, guide CHUV 2022, FI Co-Amoxi-Mepha i.v., Augmentin® |
 
 ## Amendements du propriétaire appliqués (09.10.2026)
 - Règle linguistique : connecteurs et transitions (`liaisons.py`, plans `chapitres/K92_liaisons.py`, `K25_liaisons.py` ; rédaction native dès K21).
@@ -25,9 +26,10 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 - Règle d’image : schémas générés supprimés (K92 Forrest, K25 profondeur, K21 Los Angeles) et remplacés par des images réelles Commons ; `Schema` désactivé dans `images.py`.
 
 ## Restantes (ordre des codes prioritaires du registre)
-K57, K56, K90, K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
+K56, K90, K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
 
 ## Points ouverts
+- K57 : co-amoxicilline dans la diverticulite non perforée hors libellé explicite de la FI ; onglet Sciences (points faibles vasculaires, loi de Laplace, Hartmann) fondé sur des notions classiques non tirées des recommandations lues : à vérifier ; hémorragie diverticulaire (K57.x1/x3) seulement mentionnée, renvoi à K92 ; recommandation ESCP 2020 non accessible (pas de PMC).
 - K35 : traitement antibiotique premier hors libellé explicite de la FI co-amoxicilline ; composantes des scores AIR, AAS et Alvarado non détaillées (tableaux non lus) ; antibiotiques du traitement premier (molécules, durée 7-10 j des essais) à confirmer par une source suisse ; volet pédiatrique résumé.
 - C18 : contentieux CAPOX 3 mois (ESMO) contre 6 mois (FI Xeloda®) ; doses 5-FU/acide folinique de FOLFOX non lues (TODO FI 5-FU) ; recommandation ESMO du cancer métastatique non lue (stade IV seulement nommé) ; K52 : tableau des sous-codes CIM retiré (règle 4 du prompt de vérité).
 - K52 : entretien par budésonide hors indication suisse (FI : induction seule) ; rectite radique, colites toxiques et allergiques sans recommandation dédiée lue (TODO) ; dose de lopéramide TODO ; fraction de premier passage du budésonide à confirmer dans la FI.
