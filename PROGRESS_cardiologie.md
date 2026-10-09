@@ -9,8 +9,9 @@ Catégories prioritaires du registre sans cours (`organisation/fragments.json`, 
 | I95 — Hypotension (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (20 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i95_tilt_tachycardie_posturale.gif, i95_baroreflexe_openstax.gif |
 | I89 — Lymphoedème et autres atteintes non infectieuses des lymphatiques (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (16 fenêtres) ; glossaire 0 non couverte ; frontend S01 contrôlé | i89_capillaires_lymphatiques_openstax.gif, i89_lymphoedeme_photo.gif, i89_lymphoscintigraphie.gif, i89_capillaire_collecteur.gif, i89_stades_collecteurs.gif |
 | I77 — Dysplasie fibromusculaire et autres atteintes des artères (couvre I77, I79) (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (19 fenêtres) ; glossaire 0 non couvert | i77_dfm_renale_angiographie.gif, i77_dfm_carotide_angiographie.gif, i77_dfm_angioscanner.gif, i77_compression_tronc_coeliaque.gif |
+| I78 — Télangiectasie hémorragique héréditaire et autres maladies des capillaires (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (16 fenêtres, 3 quiz) ; glossaire 0 non couvert | i78_telangiectasies_levres.gif, i78_telangiectasies_langue.gif, i78_telangiectasies_visage.gif, i78_mavp_histologie.gif, i78_foie_scanner.gif |
 
-Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I77, I78, I79, I85, I86, I88, I97–I99, R00–R03, S26, S35–S95, Z95.
+Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I85, I86, I88, I97–I99, R00–R03, S26, S35–S95, Z95 (I77 et I79 couverts par le cours I77 ; I78 rédigé le 9.10.2026).
 
 État (9.10.2026, 22 h 20) : registre prioritaire S01 achevé (I73, I95, I89) ; prêt pour audit.
 
