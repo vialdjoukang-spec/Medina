@@ -11,8 +11,9 @@ Catégories prioritaires du registre sans cours (`organisation/fragments.json`, 
 | I77 — Dysplasie fibromusculaire et autres atteintes des artères (couvre I77, I79) (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (19 fenêtres) ; glossaire 0 non couvert | i77_dfm_renale_angiographie.gif, i77_dfm_carotide_angiographie.gif, i77_dfm_angioscanner.gif, i77_compression_tronc_coeliaque.gif |
 | I78 — Télangiectasie hémorragique héréditaire et autres maladies des capillaires (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (16 fenêtres, 3 quiz) ; glossaire 0 non couvert | i78_telangiectasies_levres.gif, i78_telangiectasies_langue.gif, i78_telangiectasies_visage.gif, i78_mavp_histologie.gif, i78_foie_scanner.gif |
 | I97 — Troubles circulatoires après un acte médical (couvre I97, I98, I99) (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (12 fenêtres, 3 quiz) ; glossaire 0 non couvert ; renvois I30, I48, I89 sans duplication | i97_epanchement_pericardique_echo.gif, i97_doppler_mitral_respiratoire.gif, i97_bandage_lymphologique_bras.gif |
+| I85 — Varices œsophagiennes et varices d’autres localisations (couvre I85, I86) (C-01-Cardiologie) | Rédigé ; connecteurs et interactivité (81 termes, 77 fenêtres, 3 quiz), images aussi dans 3 fenêtres ; renvoi K74 ; glossaire 0 non couvert ; test_v7 OK | i85_varices_oesophagiennes_scanner.gif, i85_ulceres_post_ligature_endoscopie.gif, i85_varices_gastriques_endoscopie.gif, i85_varices_signes_rouges_endoscopie.gif, i85_caput_medusae_scanner.gif |
 
-Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I85, I86, I88, R00–R03, S26, S35–S95, Z95 (I77 et I79 couverts par le cours I77 ; I78 et I97 (couvre I97–I99) rédigés le 9.10.2026).
+Restent sans cours dans le catalogue S01 (hors registre prioritaire) : I88, R00–R03, S26, S35–S95, Z95 (I77 et I79 couverts par le cours I77 ; I78 et I97 (couvre I97–I99) rédigés le 9.10.2026).
 
 État (9.10.2026, 22 h 20) : registre prioritaire S01 achevé (I73, I95, I89) ; prêt pour audit.
 

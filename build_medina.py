@@ -66,7 +66,7 @@ def wrap_text(txt, svg=False):
 
 TOKEN = re.compile(r'(<!--.*?-->|<[^>]+>)', re.S)
 def wrap_html(src):
-    out = []; stack_button = 0; in_svg = 0; skip = 0; references = 0; anchors = 0; spans = []
+    out = []; stack_button = 0; in_svg = 0; skip = 0; references = 0; anchors = 0; spans = []; figcap = 0
     for part in TOKEN.split(src):
         if not part: continue
         if part.startswith('<'):
@@ -77,6 +77,8 @@ def wrap_html(src):
                 spans.pop()
             if low.startswith('<ul') and 'data-justification-sources="1"' in low: references += 1
             elif low.startswith('</ul') and references: references -= 1
+            if re.match(r'<figcaption(?:\s|>)', low): figcap += 1
+            elif re.match(r'</figcaption\s*>', low) and figcap: figcap -= 1
             if re.match(r'<a(?:\s|>)', low): anchors += 1
             elif re.match(r'</a\s*>', low) and anchors: anchors -= 1
             if low.startswith('<button'): stack_button += 1
@@ -88,7 +90,11 @@ def wrap_html(src):
             out.append(part)
         else:
             if skip or stack_button or references or anchors or (spans and spans[-1]): out.append(part)
-            else: out.append(wrap_text(part, svg=bool(in_svg)))
+            else:
+                wrapped = wrap_text(part, svg=bool(in_svg))
+                # Crédits d’images : le titre « MD » suivant le nom d’un auteur n’est pas un terme interactif.
+                if figcap: wrapped = re.sub(r'<span class="mc-ab" role="button" tabindex="0" data-ab="MD">MD</span>', 'MD', wrapped)
+                out.append(wrapped)
     return ''.join(out)
 
 CAND = re.compile(r'(?<![A-Za-zÀ-ÿ0-9])([A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9₀-₉⁺′\-/.]*)')
