@@ -50,3 +50,5 @@ Les 248 tests Python, le build global, les 22 builds de fragments, l'audit de re
 `captures/captures-medina.html` rassemble 46 captures réelles : une vue ordinateur et une vue mobile par fragment, une coquille vide et le portail avec sa progression globale. `captures/captures-medina.zip` permet de télécharger une galerie autonome avec tous les PNG. Les images sont prises après la reconstruction complète, avec les animations neutralisées. `captures/checks.json` conserve les dimensions et vérifications des liens et de l'archive.
 
 Après le déploiement Pages : https://vialdjoukang-spec.github.io/Medina/apercus/controle/nosologie/captures-medina.html.
+
+Le lancement autonome des outils d’aperçu et d’organisation est vérifié, y compris le chargement par chemin de `fragment_surface` et de son moteur voisin. Le contrôle navigateur complet de l’aperçu existant passe sur ordinateur/mobile avec 5 545 vérifications, 409 fenêtres atteignables par vue, et des sources inchangées. `standalone-cli-checks.json` conserve ce bilan. Le contrôle du catalogue compare les codes au mapping courant de la CIM, plutôt qu’à un ancien nombre fixe.
