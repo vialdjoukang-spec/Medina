@@ -1,0 +1,14 @@
+/* MEDINA — harmonisation finale (09.10.2026) : mêmes couleurs vives sur l'accueil d'un fragment, ses catégories
+   et ses cours ; aucun fond ivoire, beige ou vert sombre isolé. Chargée en dernier. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-course-star{background:linear-gradient(90deg,#fff3c4,#e4f7fd)!important;border:1px solid #b9e6f2!important;color:#0b2545!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mc-tabs button.is-active,.mc-tabs button[aria-selected="true"],.mc-sci-tabs button.is-active,.mc-navigo-trigger,.toast,.mcg-filters .active){background:linear-gradient(90deg,#1e88e5,#00b4c6)!important;color:#fff!important;border-color:transparent!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.mc-tabs button.is-active,.mc-navigo-trigger,.toast) *{color:#fff!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-sci-tabs button:not(.is-active),
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .mc-tabs button:not(.is-active):not([aria-selected="true"]){background:#ffffff!important;color:#0b2545!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress progress{accent-color:#ffb300}
+/* Bouton « Accueil MEDINA » présent dans tous les fragments. */
+.medina-home{display:inline-flex;align-items:center;gap:8px;margin-right:auto;margin-left:6px;padding:9px 16px;border-radius:999px;
+ background:linear-gradient(90deg,#ffc93c,#ff9f43);color:#0b2545!important;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:0 6px 14px -8px #ff7a59}
+.medina-home:hover{filter:brightness(1.05)}
+.medina-home:focus-visible{outline:3px solid #1e88e5;outline-offset:2px}
+@media (max-width:640px){.medina-home span{display:none}.medina-home{padding:9px 11px}}

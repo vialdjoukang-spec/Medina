@@ -137,8 +137,9 @@ assert len(owners) == 1636
         result = generate(['I20', 'I25', 'I20.0', 'I99'], 'S01', ROOT, {'I25': course})
         stats = gauges(result['lessons'], ['I20'])
         self.assertEqual(stats['frequent'], {'filled': 1, 'total': 1, 'percent': 100.0})
-        self.assertEqual(stats['federal_exam'], {'filled': 1, 'total': 2, 'percent': 50.0})
-        self.assertEqual(stats['global'], {'filled': 1, 'total': 3, 'percent': 33.33})
+        # Les sous-codes (I20.0) ne comptent pas : les cours sont rédigés par catégorie.
+        self.assertEqual(stats['federal_exam'], {'filled': 1, 'total': 1, 'percent': 100.0})
+        self.assertEqual(stats['global'], {'filled': 1, 'total': 2, 'percent': 50.0})
         self.assertEqual(gauges([], [])['frequent'], {'filled': 0, 'total': 0, 'percent': 0})
 
 
