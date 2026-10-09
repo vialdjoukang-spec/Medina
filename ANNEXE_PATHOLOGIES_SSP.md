@@ -191,7 +191,7 @@ Sources de départ (à lire et dater) : Société suisse de pneumologie, Ligue p
 - **Priorité** : P1 · fréquente · **état** : rédigée · **difficulté** : élevée · chapitre X, bloc J40-J47
 - **SSP à satisfaire dans ce cours** : 6 fever, chills, hyperthermia; 45 cough, expectoration, haemoptysis; 46 dyspnoea; 49 painful respiration, wheezing, stridor
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I26, I27, J09, J12, J18, J21, J44, J45, J47, J60, J67, J68, J69, J70, J80, J82, J84, J86, J90, J93, J95, J96, R04, R05, R06
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08), G07 (S08), G08 (S08), G09 (S08), I50 (S01), I51 (S01), J00 (S12), J01 (S12), J02 (S12), J03 (S12), J04 (S12), J05 (S12), J06 (S12), J30 (S12), J31 (S12), J32 (S12), J33 (S12), J34 (S12), J35 (S12), J36 (S12), J37 (S12), J38 (S12), J39 (S12), R50 (T6), T78 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles respiratoires → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### J09 — Grippe
@@ -199,7 +199,7 @@ Sources de départ (à lire et dater) : Société suisse de pneumologie, Ligue p
 - **Priorité** : P1 · fréquente · **état** : rédigée · **difficulté** : élevée · chapitre X, bloc J09-J18
 - **SSP à satisfaire dans ce cours** : 6 fever, chills, hyperthermia; 45 cough, expectoration, haemoptysis; 46 dyspnoea
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I26, I27, J12, J18, J21, J40, J44, J45, J47, J60, J67, J68, J69, J70, J80, J82, J84, J86, J90, J93, J95, J96, R04, R05, R06
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08), G07 (S08), G08 (S08), G09 (S08), I50 (S01), I51 (S01), R50 (T6)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles respiratoires → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### J18 — Pneumonies de l’adulte
@@ -207,7 +207,7 @@ Sources de départ (à lire et dater) : Société suisse de pneumologie, Ligue p
 - **Priorité** : P1 · fréquente · **état** : rédigée · **difficulté** : élevée · chapitre X, bloc J09-J18
 - **SSP à satisfaire dans ce cours** : 6 fever, chills, hyperthermia; 45 cough, expectoration, haemoptysis; 46 dyspnoea
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I26, I27, J09, J12, J21, J40, J44, J45, J47, J60, J67, J68, J69, J70, J80, J82, J84, J86, J90, J93, J95, J96, R04, R05, R06
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08), G07 (S08), G08 (S08), G09 (S08), I50 (S01), I51 (S01), R50 (T6)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles respiratoires → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### J44 — Bronchopneumopathie chronique obstructive
@@ -247,7 +247,7 @@ Sources de départ (à lire et dater) : Société suisse de pneumologie, Ligue p
 - **Priorité** : P1 · **état** : rédigée · **difficulté** : élevée · chapitre X, bloc J09-J18
 - **SSP à satisfaire dans ce cours** : 6 fever, chills, hyperthermia; 45 cough, expectoration, haemoptysis; 46 dyspnoea
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I26, I27, J09, J18, J21, J40, J44, J45, J47, J60, J67, J68, J69, J70, J80, J82, J84, J86, J90, J93, J95, J96, R04, R05, R06
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08), G07 (S08), G08 (S08), G09 (S08), I50 (S01), I51 (S01), R50 (T6)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles respiratoires → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### J21 — Bronchiolite aiguë et infections respiratoires basses non précisées
@@ -255,7 +255,7 @@ Sources de départ (à lire et dater) : Société suisse de pneumologie, Ligue p
 - **Priorité** : P1 · **état** : rédigée · **difficulté** : élevée · chapitre X, bloc J20-J22
 - **SSP à satisfaire dans ce cours** : 6 fever, chills, hyperthermia; 45 cough, expectoration, haemoptysis; 46 dyspnoea
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I26, I27, J09, J12, J18, J40, J44, J45, J47, J60, J67, J68, J69, J70, J80, J82, J84, J86, J90, J93, J95, J96, R04, R05, R06
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), E84 (S05), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08), G07 (S08), G08 (S08), G09 (S08), I50 (S01), I51 (S01), R50 (T6)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles respiratoires → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### J47 — Bronchectasies
@@ -372,7 +372,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 56 anal itching, anal pain, anal protrusion; 57 anal bleeding; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : L29 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -380,7 +380,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : brouillon achevé, à relire (ne pas réécrire) · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -388,7 +388,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -396,7 +396,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -404,7 +404,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -412,7 +412,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -420,7 +420,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -428,7 +428,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K80-K87
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 91 jaundice (icterus); 203 acute abdominal, epigastric pain; 209 colic
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K70, K71, K72, K73, K74, K75, K76, K77, K81, K82, K83, K85, K86, K87, R10, R17
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : B15 (T1), B16 (T1), B17 (T1), B18 (T1), B19 (T1), N20 (S15), N21 (S15), N22 (S15), N23 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -436,7 +436,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K80-K87
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 91 jaundice (icterus); 203 acute abdominal, epigastric pain; 209 colic
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K70, K71, K72, K73, K74, K75, K76, K77, K80, K81, K82, K83, K86, K87, R10, R17
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : B15 (T1), B16 (T1), B17 (T1), B18 (T1), B19 (T1), N20 (S15), N21 (S15), N22 (S15), N23 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -452,7 +452,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K35-K38
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 203 acute abdominal, epigastric pain
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, R10
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -508,7 +508,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 56 anal itching, anal pain, anal protrusion; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : L29 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -516,7 +516,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 57 anal bleeding; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -524,7 +524,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -532,7 +532,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -540,7 +540,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -548,7 +548,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -556,7 +556,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -564,7 +564,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -572,7 +572,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -580,7 +580,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K20-K31
 - **SSP à satisfaire dans ce cours** : 47 heartburn (pyrosis); 48 impaired or painful passage of food, dysphagia, regurgitation; 52 abdominal, epigastric pain; 210 haematemesis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R12, R13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -588,7 +588,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -596,7 +596,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -604,7 +604,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -612,7 +612,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K55-K64
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -620,7 +620,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K65-K67
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K66, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -628,7 +628,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K65-K67
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K67, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -636,7 +636,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K65-K67
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 55 altered defaecation pattern, incontinence, pain; 58 constipation; 60 melena, fresh blood, mucus, pus in faeces
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K80, K81, K82, K83, K85, K86, K87, K92, R10, R15
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -644,7 +644,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K80-K87
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 91 jaundice (icterus); 203 acute abdominal, epigastric pain; 209 colic
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K70, K71, K72, K73, K74, K75, K76, K77, K80, K82, K83, K85, K86, K87, R10, R17
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : B15 (T1), B16 (T1), B17 (T1), B18 (T1), B19 (T1), N20 (S15), N21 (S15), N22 (S15), N23 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -652,7 +652,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K80-K87
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 91 jaundice (icterus); 203 acute abdominal, epigastric pain; 209 colic
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K70, K71, K72, K73, K74, K75, K76, K77, K80, K81, K83, K85, K86, K87, R10, R17
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : B15 (T1), B16 (T1), B17 (T1), B18 (T1), B19 (T1), N20 (S15), N21 (S15), N22 (S15), N23 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -660,7 +660,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K80-K87
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 91 jaundice (icterus); 203 acute abdominal, epigastric pain; 209 colic
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K70, K71, K72, K73, K74, K75, K76, K77, K80, K81, K82, K85, K86, K87, R10, R17
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : B15 (T1), B16 (T1), B17 (T1), B18 (T1), B19 (T1), N20 (S15), N21 (S15), N22 (S15), N23 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -668,7 +668,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K80-K87
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 91 jaundice (icterus); 203 acute abdominal, epigastric pain; 209 colic
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K70, K71, K72, K73, K74, K75, K76, K77, K80, K81, K82, K83, K85, K87, R10, R17
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : B15 (T1), B16 (T1), B17 (T1), B18 (T1), B19 (T1), N20 (S15), N21 (S15), N22 (S15), N23 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -676,7 +676,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K80-K87
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 91 jaundice (icterus); 203 acute abdominal, epigastric pain; 209 colic
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K70, K71, K72, K73, K74, K75, K76, K77, K80, K81, K82, K83, K85, K86, R10, R17
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : B15 (T1), B16 (T1), B17 (T1), B18 (T1), B19 (T1), N20 (S15), N21 (S15), N22 (S15), N23 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -788,7 +788,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K35-K38
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 203 acute abdominal, epigastric pain
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, R10
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -796,7 +796,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K35-K38
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 203 acute abdominal, epigastric pain
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, R10
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -804,7 +804,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XI, bloc K35-K38
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain; 203 acute abdominal, epigastric pain
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, R10
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -1012,7 +1012,7 @@ Sources de départ (à lire et dater) : SSG (gastroentérologie), SASL (foie) ; 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R10-R19
 - **SSP à satisfaire dans ce cours** : 52 abdominal, epigastric pain
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -1982,7 +1982,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 7 flushing; 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : E34 (S05), O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -1990,7 +1990,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -1998,7 +1998,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2006,7 +2006,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2014,7 +2014,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2022,7 +2022,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2030,7 +2030,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2054,7 +2054,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2062,7 +2062,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2070,7 +2070,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2078,7 +2078,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2086,7 +2086,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2094,7 +2094,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2102,7 +2102,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2110,7 +2110,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2118,7 +2118,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N91, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2126,7 +2126,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N92, N93, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2134,7 +2134,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N94, N95, N96, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2142,7 +2142,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N97, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2150,7 +2150,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N98, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2158,7 +2158,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N80-N98
 - **SSP à satisfaire dans ce cours** : 65 issues related to conception, e.g. infertility and sterilisation; 66 menstrual symptoms: disorders of menstruation, painful menstruation,; 67 pelvic mass; 68 pelvic pain; 74 symptoms related to menopause; 78 uterine prolapse, pelvic relaxation; 79 vaginal bleeding
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, Z31
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O00 (S16), O01 (S16), O02 (S16), O03 (S16), O04 (S16), O05 (S16), O06 (S16), O07 (S16), O08 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2166,7 +2166,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2174,7 +2174,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2182,7 +2182,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2190,7 +2190,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2198,7 +2198,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2206,7 +2206,7 @@ Sources de départ (à lire et dater) : gynécologie suisse (SGGG) ; ESGO, ESHRE
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N70-N77
 - **SSP à satisfaire dans ce cours** : 68 pelvic pain; 80 vaginal discharge; 253 patient with sexually transmitted infection
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N70, N71, N72, N73, N74, N75, N76, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : A53 (T1), A54 (T1), A55 (T1), A56 (T1), A57 (T1), A58 (T1), A59 (T1), A60 (T1), A63 (T1), A64 (T1), B24 (T1), Z20 (T1), Z21 (T1), Z22 (T1)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2466,7 +2466,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2474,7 +2474,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M15-M19
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2482,7 +2482,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M15-M19
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2490,7 +2490,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M15-M19
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2498,7 +2498,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M15-M19
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2506,7 +2506,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M20-M25
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2658,7 +2658,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M30-M36
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility; 168 elevated biomarkers of inflammation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07), R70 (T5)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2666,7 +2666,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M30-M36
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility; 168 elevated biomarkers of inflammation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07), R70 (T5)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2674,7 +2674,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M30-M36
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility; 168 elevated biomarkers of inflammation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07), R70 (T5)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2682,7 +2682,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M30-M36
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility; 168 elevated biomarkers of inflammation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07), R70 (T5)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -2994,7 +2994,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M00-M03
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3002,7 +3002,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M00-M03
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3010,7 +3010,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M00-M03
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3018,7 +3018,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M00-M03
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3026,7 +3026,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3034,7 +3034,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3042,7 +3042,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3050,7 +3050,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3058,7 +3058,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3066,7 +3066,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3074,7 +3074,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3082,7 +3082,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M15-M19
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3090,7 +3090,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M20-M25
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3098,7 +3098,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M20-M25
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3106,7 +3106,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M20-M25
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3114,7 +3114,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M20-M25
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3122,7 +3122,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIII, bloc M20-M25
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -3194,7 +3194,7 @@ Sources de départ (à lire et dater) : Société suisse de rhumatologie, Swiss 
 
 - **Priorité** : P1 · **état** : rédigée · **difficulté** : élevée · chapitre XIII, bloc M05-M14
 - **SSP à satisfaire dans ce cours** : 86 swollen or painful joints, morning stiffness, reduction of joint motility
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : M00, M01, M02, M03, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M33, M34, M35, M36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : M31 (S07), M32 (S07)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -4418,7 +4418,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T08-T14
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4426,7 +4426,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4434,7 +4434,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4442,7 +4442,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4450,7 +4450,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 129 self-harm, including suicide; 186 child abuse and neglect; 196 elder abuse and neglect; 211 intoxication, poisoning; 213 self-harm and suicide attempt
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : F30 (S09), F31 (S09), F32 (S09), F33 (S09), F34 (S09), F38 (S09), F39 (S09), T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4458,7 +4458,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 8 hypothermia; 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T69, T70, T71, T73, T74, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4466,7 +4466,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4474,7 +4474,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4482,7 +4482,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4490,7 +4490,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4498,7 +4498,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4506,7 +4506,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4514,7 +4514,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4522,7 +4522,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T00-T07
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4530,7 +4530,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T08-T14
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4538,7 +4538,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T08-T14
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4546,7 +4546,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T08-T14
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4554,7 +4554,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T08-T14
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4562,7 +4562,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T08-T14
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4570,7 +4570,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T08-T14
 - **SSP à satisfaire dans ce cours** : 108 contusion, soft tissue bruising; 114 laceration, closed or open wound; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4578,7 +4578,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T67, T68, T69, T70, T71, T73, T74, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4586,7 +4586,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T68, T69, T70, T71, T73, T74, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4594,7 +4594,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T70, T71, T73, T74, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4602,7 +4602,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T71, T73, T74, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4610,7 +4610,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T73, T74, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4618,7 +4618,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T74, T75
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4626,7 +4626,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 107 burn, cold injury; 110 drowning or near drowning; 211 intoxication, poisoning
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T20 (S11), T21 (S11), T22 (S11), T23 (S11), T24 (S11), T25 (S11), T26 (S13), T27 (S02), T28 (S03), T29 (S11), T30 (S11), T31 (S11), T32 (S11), T33 (S11), T34 (S11), T35 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4634,7 +4634,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 166 blood group incompatibility; 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : O36 (S16), P55 (S16)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4642,7 +4642,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S40-S49
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4650,7 +4650,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S40-S49
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4658,7 +4658,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S40-S49
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4666,7 +4666,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S40-S49
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4674,7 +4674,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S50-S59
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4682,7 +4682,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S50-S59
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4690,7 +4690,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S50-S59
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4698,7 +4698,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S50-S59
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4706,7 +4706,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S60-S69
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4714,7 +4714,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S60-S69
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4722,7 +4722,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S60-S69
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4730,7 +4730,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S60-S69
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4738,7 +4738,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S70-S79
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4746,7 +4746,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S70-S79
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S78, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4754,7 +4754,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S70-S79
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S79, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4762,7 +4762,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S70-S79
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S80, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4770,7 +4770,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S80-S89
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S87, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S87, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4778,7 +4778,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S80-S89
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S88, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S88, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4786,7 +4786,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S80-S89
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S89, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S89, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4794,7 +4794,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S80-S89
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S90, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S90, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4802,7 +4802,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S90-S99
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S97, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4810,7 +4810,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S90-S99
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S98, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4818,7 +4818,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S90-S99
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S99, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4826,7 +4826,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc S90-S99
 - **SSP à satisfaire dans ce cours** : 113 injuries of the extremities; 220 uncomplicated common trauma
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, T00, T01
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : S40, S47, S48, S49, S50, S57, S58, S59, S60, S67, S68, S69, S70, S77, S78, S79, S80, S87, S88, S89, S90, S97, S98, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4834,7 +4834,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4842,7 +4842,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4850,7 +4850,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4858,7 +4858,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4866,7 +4866,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4874,7 +4874,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4882,7 +4882,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4890,7 +4890,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4898,7 +4898,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4906,7 +4906,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4914,7 +4914,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4922,7 +4922,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T36-T50
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4930,7 +4930,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4938,7 +4938,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T53, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4946,7 +4946,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T54, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4954,7 +4954,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T55, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4962,7 +4962,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T56, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4970,7 +4970,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T57, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4978,7 +4978,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T58, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4986,7 +4986,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T59, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -4994,7 +4994,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T60, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5002,7 +5002,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T61
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5010,7 +5010,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5018,7 +5018,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5026,7 +5026,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5034,7 +5034,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5042,7 +5042,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T51-T65
 - **SSP à satisfaire dans ce cours** : 211 intoxication, poisoning; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T66, T67, T68, T69, T70, T71, T73, T74, T75, T80, T81, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5050,7 +5050,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T82, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5058,7 +5058,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T81, T83, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5066,7 +5066,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T81, T82, T84, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5074,7 +5074,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T81, T82, T83, T85, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5082,7 +5082,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T81, T82, T83, T84, T86, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5090,7 +5090,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T81, T82, T83, T84, T85, T87, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5098,7 +5098,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T81, T82, T83, T84, T85, T86, T88
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5106,7 +5106,7 @@ Sources de départ (à lire et dater) : SSMUS (urgence), Tox Info Suisse, Suva ;
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIX, bloc T80-T88
 - **SSP à satisfaire dans ce cours** : 250 nosocomial infection; 263 suspicion of drug intolerance or interaction (including complementary medicine)
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T80, T81, T82, T83, T84, T85, T86, T87
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -5213,7 +5213,7 @@ Sources de départ (à lire et dater) : mediX, SSMIG, OFSP ; WONCA Europe.
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R50-R69
 - **SSP à satisfaire dans ce cours** : 6 fever, chills, hyperthermia
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : —
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08), G07 (S08)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : A15 (T1), A16 (T1), A17 (T1), A18 (T1), A19 (T1), A40 (T1), A41 (T1), A80 (T1), A81 (T1), A82 (T1), A83 (T1), A84 (T1), A85 (T1), A86 (T1), A87 (T1), A88 (T1), A89 (T1), B50 (T1), B51 (T1), B52 (T1), B53 (T1), B54 (T1), G00 (S08), G01 (S08), G02 (S08), G03 (S08), G04 (S08), G05 (S08), G06 (S08), G07 (S08), G08 (S08), G09 (S08), J09 (S02), J12 (S02), J18 (S02), J21 (S02), J40 (S02)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
 ### R53 — Malaise et fatigue
@@ -5744,7 +5744,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L00-L08
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5752,7 +5752,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5760,7 +5760,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5768,7 +5768,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5776,7 +5776,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5784,7 +5784,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5792,7 +5792,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L40-L45
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5800,7 +5800,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L50-L54
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5816,7 +5816,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 89 hyper- or hypopigmentation; 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5824,7 +5824,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 89 hyper- or hypopigmentation; 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5832,7 +5832,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa; 200 pressure ulcers
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5848,7 +5848,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L00-L08
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5856,7 +5856,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L00-L08
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5864,7 +5864,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L00-L08
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5872,7 +5872,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L00-L08
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5880,7 +5880,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L00-L08
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5888,7 +5888,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L00-L08
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5896,7 +5896,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 56 anal itching, anal pain, anal protrusion; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : K60 (S03), K64 (S03)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5904,7 +5904,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5912,7 +5912,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5920,7 +5920,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5928,7 +5928,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5936,7 +5936,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5944,7 +5944,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5952,7 +5952,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5960,7 +5960,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5968,7 +5968,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5976,7 +5976,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5984,7 +5984,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -5992,7 +5992,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6000,7 +6000,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6008,7 +6008,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6016,7 +6016,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L80-L99
 - **SSP à satisfaire dans ce cours** : 90 infected wound, delayed wound healing, skin ulcers; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6048,7 +6048,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6056,7 +6056,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6064,7 +6064,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6072,7 +6072,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6080,7 +6080,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6088,7 +6088,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L20-L30
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6096,7 +6096,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L40-L45
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6104,7 +6104,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L40-L45
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6112,7 +6112,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L40-L45
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6120,7 +6120,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L40-L45
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6128,7 +6128,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L40-L45
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6136,7 +6136,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L50-L54
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6144,7 +6144,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L50-L54
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6152,7 +6152,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L50-L54
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6160,7 +6160,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L50-L54
 - **SSP à satisfaire dans ce cours** : 9 itching; 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6304,7 +6304,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R20-R23
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6312,7 +6312,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R20-R23
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-; 95 redness of the skin (localized or diffuse) and/or mucosa
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6472,7 +6472,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L10-L14
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6480,7 +6480,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L10-L14
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6488,7 +6488,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L10-L14
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6496,7 +6496,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L10-L14
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6504,7 +6504,7 @@ Sources de départ (à lire et dater) : Société suisse de dermatologie et vén
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XII, bloc L10-L14
 - **SSP à satisfaire dans ce cours** : 93 macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne-
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6526,7 +6526,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6534,7 +6534,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6542,7 +6542,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6550,7 +6550,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6558,7 +6558,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6566,7 +6566,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6590,7 +6590,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R30-R39
 - **SSP à satisfaire dans ce cours** : 63 anuria, pollakiuria, oliguria, polyuria; 64 dysuria, pyuria, haematuria; 75 urethral discharge; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N00 (S04), N01 (S04), N02 (S04), N03 (S04), N04 (S04), N05 (S04), N06 (S04), N07 (S04), N08 (S04), N10 (S04), N11 (S04), N12 (S04), N13 (S04), N14 (S04), N15 (S04), N16 (S04), N17 (S04), N18 (S04), N19 (S04), N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6598,7 +6598,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R30-R39
 - **SSP à satisfaire dans ce cours** : 63 anuria, pollakiuria, oliguria, polyuria; 64 dysuria, pyuria, haematuria; 75 urethral discharge; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N00 (S04), N01 (S04), N02 (S04), N03 (S04), N04 (S04), N05 (S04), N06 (S04), N07 (S04), N08 (S04), N10 (S04), N11 (S04), N12 (S04), N13 (S04), N14 (S04), N15 (S04), N16 (S04), N17 (S04), N18 (S04), N19 (S04), N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6606,7 +6606,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R30-R39
 - **SSP à satisfaire dans ce cours** : 63 anuria, pollakiuria, oliguria, polyuria; 64 dysuria, pyuria, haematuria; 75 urethral discharge; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N00 (S04), N01 (S04), N02 (S04), N03 (S04), N04 (S04), N05 (S04), N06 (S04), N07 (S04), N08 (S04), N10 (S04), N11 (S04), N12 (S04), N13 (S04), N14 (S04), N15 (S04), N16 (S04), N17 (S04), N18 (S04), N19 (S04), N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6614,7 +6614,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R30-R39
 - **SSP à satisfaire dans ce cours** : 63 anuria, pollakiuria, oliguria, polyuria; 64 dysuria, pyuria, haematuria; 75 urethral discharge; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N00 (S04), N01 (S04), N02 (S04), N03 (S04), N04 (S04), N05 (S04), N06 (S04), N07 (S04), N08 (S04), N10 (S04), N11 (S04), N12 (S04), N13 (S04), N14 (S04), N15 (S04), N16 (S04), N17 (S04), N18 (S04), N19 (S04), N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6622,7 +6622,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R30-R39
 - **SSP à satisfaire dans ce cours** : 63 anuria, pollakiuria, oliguria, polyuria; 64 dysuria, pyuria, haematuria; 75 urethral discharge; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N00 (S04), N01 (S04), N02 (S04), N03 (S04), N04 (S04), N05 (S04), N06 (S04), N07 (S04), N08 (S04), N10 (S04), N11 (S04), N12 (S04), N13 (S04), N14 (S04), N15 (S04), N16 (S04), N17 (S04), N18 (S04), N19 (S04), N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6630,7 +6630,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R30-R39
 - **SSP à satisfaire dans ce cours** : 63 anuria, pollakiuria, oliguria, polyuria; 64 dysuria, pyuria, haematuria; 75 urethral discharge; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N00 (S04), N01 (S04), N02 (S04), N03 (S04), N04 (S04), N05 (S04), N06 (S04), N07 (S04), N08 (S04), N10 (S04), N11 (S04), N12 (S04), N13 (S04), N14 (S04), N15 (S04), N16 (S04), N17 (S04), N18 (S04), N19 (S04), N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6638,7 +6638,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R30-R39
 - **SSP à satisfaire dans ce cours** : 63 anuria, pollakiuria, oliguria, polyuria; 64 dysuria, pyuria, haematuria; 75 urethral discharge; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N00 (S04), N01 (S04), N02 (S04), N03 (S04), N04 (S04), N05 (S04), N06 (S04), N07 (S04), N08 (S04), N10 (S04), N11 (S04), N12 (S04), N13 (S04), N14 (S04), N15 (S04), N16 (S04), N17 (S04), N18 (S04), N19 (S04), N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -6646,7 +6646,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6654,7 +6654,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6662,7 +6662,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6670,7 +6670,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N48, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6678,7 +6678,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N49, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6686,7 +6686,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N50, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6694,7 +6694,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N51, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6702,7 +6702,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N40-N51
 - **SSP à satisfaire dans ce cours** : 71 scrotal pain, swelling, mass; 72 sexual complaints and dysfunction; 75 urethral discharge; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, R30, R31, R32, R33, R34
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6710,7 +6710,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6718,7 +6718,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6726,7 +6726,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6734,7 +6734,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6742,7 +6742,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6750,7 +6750,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6758,7 +6758,7 @@ Sources de départ (à lire et dater) : Société suisse d’urologie ; EAU.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N30-N39
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N20, N21, N22, N23, N30, N31, N32, N33, N34, N35, N36, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : N25 (S04), N26 (S04), N27 (S04), N28 (S04), N29 (S04)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -6909,7 +6909,7 @@ Sources de départ (à lire et dater) : SSAI (allergologie et immunologie) ; EAA
 - **Priorité** : P1 · fréquente · **état** : rédigée · **difficulté** : élevée · chapitre XIX, bloc T66-T78
 - **SSP à satisfaire dans ce cours** : 37 swelling of face, lips, neck; goitre; 49 painful respiration, wheezing, stridor; 87 changes in oral, genital or perianal mucosa; 248 issues linked with food tolerance; 263 suspicion of drug intolerance or interaction (including complementary medicine)
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : Z88
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : E00 (S05), E01 (S05), E02 (S05), E03 (S05), E04 (S05), E05 (S05), E06 (S05), E07 (S05), J00 (S12), J01 (S12), J02 (S12), J03 (S12), J04 (S12), J05 (S12), J06 (S12), J30 (S12), J31 (S12), J32 (S12), J33 (S12), J34 (S12), J35 (S12), J36 (S12), J37 (S12), J38 (S12), J39 (S12), J40 (S02), J44 (S02), J45 (S02), J47 (S02), J60 (S02)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : E00 (S05), E01 (S05), E02 (S05), E03 (S05), E04 (S05), E05 (S05), E06 (S05), E07 (S05), J00 (S12), J01 (S12), J02 (S12), J03 (S12), J04 (S12), J05 (S12), J06 (S12), J30 (S12), J31 (S12), J32 (S12), J33 (S12), J34 (S12), J35 (S12), J36 (S12), J37 (S12), J38 (S12), J39 (S12), J40 (S02), J44 (S02), J45 (S02), J47 (S02), J60 (S02), J67 (S02), J68 (S02), J69 (S02), J70 (S02), J82 (S02), J84 (S02), J86 (S02), K90 (S03), R06 (S02)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Mécanisme lésionnel → 4. Évaluation initiale et gravité (ABCDE) → 5. Imagerie et bilan lésionnel → 6. Traitement d’urgence puis définitif → 7. Rééducation, reprise du travail, assurance accidents (LAA, Suva) → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
 ### D84 — Déficits immunitaires
@@ -6946,7 +6946,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O80-O82
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -6962,7 +6962,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O10-O16
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -6970,7 +6970,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -6978,7 +6978,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -6986,7 +6986,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -6994,7 +6994,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P05-P08
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P05, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P05, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7002,7 +7002,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7010,7 +7010,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7018,7 +7018,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7026,7 +7026,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7034,7 +7034,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7042,7 +7042,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7050,7 +7050,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7058,7 +7058,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XXI, bloc Z30-Z39
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 177 basic pre- and post-conception screening for genetic disease and malformation; 180 problems related to lactation; 181 process and basic care of pregnancy; 183 suspicion of pregnancy, unplanned pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O00, O01, O02, O03, O04, O05, O06, O07, O08, O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -7066,7 +7066,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 166 blood group incompatibility; 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, P55, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T80 (T3)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7074,7 +7074,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O80-O82
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7082,7 +7082,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O80-O82
 - **SSP à satisfaire dans ce cours** : 176 basic care in normal delivery and childbed; 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7090,7 +7090,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 166 blood group incompatibility; 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O36, P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O36, P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : T80 (T3)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7162,7 +7162,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O10-O16
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7170,7 +7170,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O10-O16
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7178,7 +7178,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O10-O16
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7186,7 +7186,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O10-O16
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7194,7 +7194,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O10-O16
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7202,7 +7202,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O10-O16
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7210,7 +7210,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7218,7 +7218,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7226,7 +7226,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7234,7 +7234,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7242,7 +7242,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7250,7 +7250,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7258,7 +7258,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7266,7 +7266,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O20-O29
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7274,7 +7274,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O31, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7282,7 +7282,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O32, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7290,7 +7290,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O33, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7298,7 +7298,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O34, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7306,7 +7306,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O35, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7314,7 +7314,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O36, O40, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7322,7 +7322,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O41, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7330,7 +7330,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O42
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7338,7 +7338,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7346,7 +7346,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7354,7 +7354,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7362,7 +7362,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7370,7 +7370,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7378,7 +7378,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7386,7 +7386,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O30-O48
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7394,7 +7394,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7402,7 +7402,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7410,7 +7410,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7418,7 +7418,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7426,7 +7426,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7434,7 +7434,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7442,7 +7442,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7450,7 +7450,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7458,7 +7458,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7466,7 +7466,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7474,7 +7474,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7482,7 +7482,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7490,7 +7490,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7498,7 +7498,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7506,7 +7506,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7514,7 +7514,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O60-O75
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7522,7 +7522,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7530,7 +7530,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7538,7 +7538,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7546,7 +7546,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7554,7 +7554,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7562,7 +7562,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7570,7 +7570,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7578,7 +7578,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O85-O92
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7586,7 +7586,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O94-O99
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7594,7 +7594,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O94-O99
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7602,7 +7602,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O94-O99
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7610,7 +7610,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O94-O99
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7618,7 +7618,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O94-O99
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7626,7 +7626,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XV, bloc O94-O99
 - **SSP à satisfaire dans ce cours** : 178 maternal problems during pregnancy, fever, oedema, hypertension, premature labour; 179 problems related to delivery; 181 process and basic care of pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie de la grossesse concernée → 4. Présentation clinique et dépistage → 5. Surveillance materno-fœtale → 6. Prise en charge (gynécologie suisse) → 7. Médicaments compatibles grossesse et allaitement → 8. Complications et pronostic → 9. Prévention, dépistage et suivi → 10. Situations particulières (grossesse, enfant, sujet âgé) → 11. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 12. Pareto : ce qui fait 80 % de la décision
 
@@ -7634,7 +7634,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P10-P15
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7642,7 +7642,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P10-P15
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7650,7 +7650,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P10-P15
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7658,7 +7658,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P10-P15
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7666,7 +7666,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P10-P15
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7674,7 +7674,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P10-P15
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7682,7 +7682,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7690,7 +7690,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7698,7 +7698,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P24, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7706,7 +7706,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P25, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7714,7 +7714,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P26, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7722,7 +7722,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P27, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7730,7 +7730,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P28, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7738,7 +7738,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P29, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7746,7 +7746,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P20-P29
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P35, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7754,7 +7754,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P35-P39
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P36
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7762,7 +7762,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P35-P39
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7770,7 +7770,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P35-P39
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7778,7 +7778,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P35-P39
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7786,7 +7786,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P35-P39
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7794,7 +7794,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7802,7 +7802,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7810,7 +7810,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7818,7 +7818,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7826,7 +7826,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7834,7 +7834,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7842,7 +7842,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7850,7 +7850,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7858,7 +7858,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7866,7 +7866,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P50-P61
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7874,7 +7874,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P70-P74
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7882,7 +7882,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P70-P74
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7890,7 +7890,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P70-P74
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7898,7 +7898,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P70-P74
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7906,7 +7906,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P75-P78
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7914,7 +7914,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P75-P78
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7922,7 +7922,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P75-P78
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7930,7 +7930,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P75-P78
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7938,7 +7938,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P80-P83
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7946,7 +7946,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P80-P83
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7954,7 +7954,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P80-P83
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7962,7 +7962,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P90-P96
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7970,7 +7970,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P90-P96
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7978,7 +7978,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P90-P96
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7986,7 +7986,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P90-P96
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -7994,7 +7994,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P90-P96
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8002,7 +8002,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P90-P96
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8010,7 +8010,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P90-P96
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity; 190 fetal problems during pregnancy; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P04, P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8018,7 +8018,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P00-P04
 - **SSP à satisfaire dans ce cours** : 190 fetal problems during pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P01, P02, P03, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P01, P02, P03, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8026,7 +8026,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P00-P04
 - **SSP à satisfaire dans ce cours** : 190 fetal problems during pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P02, P03, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P02, P03, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8034,7 +8034,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P00-P04
 - **SSP à satisfaire dans ce cours** : 190 fetal problems during pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P03, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P03, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8042,7 +8042,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P00-P04
 - **SSP à satisfaire dans ce cours** : 190 fetal problems during pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8050,7 +8050,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P00-P04
 - **SSP à satisfaire dans ce cours** : 190 fetal problems during pregnancy
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P00, P01, P02, P03, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8058,7 +8058,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P05-P08
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8066,7 +8066,7 @@ Sources de départ (à lire et dater) : gynécologie suisse, Société suisse de
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XVI, bloc P05-P08
 - **SSP à satisfaire dans ce cours** : 175 abnormal birth weight and prematurity
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P05, P07, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : P05, P07, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Adaptation néonatale normale → 4. Présentation clinique → 5. Diagnostic et dépistage néonatal → 6. Prise en charge (pédiatrie suisse) → 7. Complications et pronostic → 8. Prévention, dépistage et suivi → 9. Situations particulières (grossesse, enfant, sujet âgé) → 10. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 11. Pareto : ce qui fait 80 % de la décision
 
@@ -8431,7 +8431,7 @@ Sources de départ (à lire et dater) : Société suisse de néphrologie ; ERA, 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N25-N29
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N26, N27, N28, N29
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15), R35 (S15), R36 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
 ### N26 — Rein scléreux, sans précision
@@ -8439,7 +8439,7 @@ Sources de départ (à lire et dater) : Société suisse de néphrologie ; ERA, 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N25-N29
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N25, N27, N28, N29
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15), R35 (S15), R36 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
 ### N27 — Petit rein de cause inconnue
@@ -8447,7 +8447,7 @@ Sources de départ (à lire et dater) : Société suisse de néphrologie ; ERA, 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N25-N29
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N25, N26, N28, N29
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15), R35 (S15), R36 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
 ### N28 — Autres affections du rein et de l’uretère, non classées ailleurs
@@ -8455,7 +8455,7 @@ Sources de départ (à lire et dater) : Société suisse de néphrologie ; ERA, 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N25-N29
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N25, N26, N27, N29
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15), R35 (S15), R36 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
 ### N29 — Autres affections du rein et de l’uretère au cours de maladies classées ailleurs
@@ -8463,7 +8463,7 @@ Sources de départ (à lire et dater) : Société suisse de néphrologie ; ERA, 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre XIV, bloc N25-N29
 - **SSP à satisfaire dans ce cours** : 64 dysuria, pyuria, haematuria; 76 urinary incontinence and enuresis; 77 urinary retention
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : N25, N26, N27, N28
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : N20 (S15), N21 (S15), N22 (S15), N23 (S15), N30 (S15), N31 (S15), N32 (S15), N33 (S15), N34 (S15), N35 (S15), N36 (S15), N37 (S15), N39 (S15), N40 (S15), N41 (S15), N42 (S15), N43 (S15), N44 (S15), N45 (S15), N46 (S15), N47 (S15), N48 (S15), N49 (S15), N50 (S15), N51 (S15), R30 (S15), R31 (S15), R32 (S15), R33 (S15), R34 (S15), R35 (S15), R36 (S15)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
 ### C64 — Tumeur maligne du rein, à l’exception du bassinet
@@ -8570,7 +8570,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G40-G47
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8578,7 +8578,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8586,7 +8586,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · fréquente · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G60-G64
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8618,7 +8618,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R25-R29
 - **SSP à satisfaire dans ce cours** : 96 abnormal sense of balance, falls; 97 abnormal gait; 98 abnormal involuntary movements, tremor, tic, lack of coordination; 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -8626,7 +8626,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R25-R29
 - **SSP à satisfaire dans ce cours** : 96 abnormal sense of balance, falls; 97 abnormal gait; 98 abnormal involuntary movements, tremor, tic, lack of coordination; 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -8634,7 +8634,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R25-R29
 - **SSP à satisfaire dans ce cours** : 96 abnormal sense of balance, falls; 97 abnormal gait; 98 abnormal involuntary movements, tremor, tic, lack of coordination; 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -8642,7 +8642,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R25-R29
 - **SSP à satisfaire dans ce cours** : 96 abnormal sense of balance, falls; 97 abnormal gait; 98 abnormal involuntary movements, tremor, tic, lack of coordination; 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G20, G21, G22, G23, G24, G25, G26, G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
@@ -8738,7 +8738,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 20 asymmetric face, deformation; 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8763,7 +8763,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R40-R46
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 122 change in mood; 125 irritability, aggressive and violent behaviour
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : —
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : F00 (S09), F01 (S09), F02 (S09), F03 (S09), F04 (S09), F05 (S09), F06 (S09), F07 (S09), F09 (S09), F20 (S09), F21 (S09), F22 (S09), F23 (S09), F24 (S09), F25 (S09), F28 (S09), F29 (S09), F30 (S09), F31 (S09), F32 (S09), F33 (S09), F34 (S09), F38 (S09), F39 (S09), F60 (S09), F61 (S09), F62 (S09), F63 (S09), F64 (S09), F65 (S09)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : F00 (S09), F01 (S09), F02 (S09), F03 (S09), F04 (S09), F05 (S09), F06 (S09), F07 (S09), F09 (S09), F20 (S09), F21 (S09), F22 (S09), F23 (S09), F24 (S09), F25 (S09), F28 (S09), F29 (S09), F30 (S09), F31 (S09), F32 (S09), F33 (S09), F34 (S09), F38 (S09), F39 (S09), F60 (S09), F61 (S09), F62 (S09), F63 (S09), F64 (S09), F65 (S09), F66 (S09), F68 (S09), F69 (S09), F90 (S09), F91 (S09), F92 (S09), F93 (S09), F94 (S09), F95 (S09), F98 (S09), F99 (S09)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
 ### R47 — Troubles du langage, non classés ailleurs
@@ -8771,7 +8771,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 - **Priorité** : P1 · **état** : à produire · **difficulté** : moyenne · chapitre XVIII, bloc R47-R49
 - **SSP à satisfaire dans ce cours** : 19 alteration of voice (hoarseness, aphonia, dysphonia); 99 disorders of speech or language; 141 disorganised speech
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : R48, R49
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : F00 (S09), F01 (S09), F02 (S09), F03 (S09), F04 (S09), F05 (S09), F06 (S09), F07 (S09), F09 (S09), F20 (S09), F21 (S09), F22 (S09), F23 (S09), F24 (S09), F25 (S09), F28 (S09), F29 (S09), F80 (S09), F81 (S09), F82 (S09), F83 (S09), F84 (S09), F88 (S09), F89 (S09), J00 (S12), J01 (S12), J02 (S12), J03 (S12), J04 (S12), J05 (S12)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : F00 (S09), F01 (S09), F02 (S09), F03 (S09), F04 (S09), F05 (S09), F06 (S09), F07 (S09), F09 (S09), F20 (S09), F21 (S09), F22 (S09), F23 (S09), F24 (S09), F25 (S09), F28 (S09), F29 (S09), F80 (S09), F81 (S09), F82 (S09), F83 (S09), F84 (S09), F88 (S09), F89 (S09), J00 (S12), J01 (S12), J02 (S12), J03 (S12), J04 (S12), J05 (S12), J06 (S12), J30 (S12), J31 (S12), J32 (S12), J33 (S12), J34 (S12), J35 (S12), J36 (S12), J37 (S12), J38 (S12), J39 (S12)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Physiologie du symptôme → 4. Anamnèse et examen orientés → 5. Drapeaux rouges → 6. Démarche diagnostique étagée → 7. Diagnostics différentiels à ne pas manquer → 8. Prise en charge symptomatique → 9. Complications et pronostic → 10. Prévention, dépistage et suivi → 11. Situations particulières (grossesse, enfant, sujet âgé) → 12. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 13. Pareto : ce qui fait 80 % de la décision
 
 ### C70 — Tumeur maligne des méninges
@@ -8826,7 +8826,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G35-G37
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8834,7 +8834,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G35-G37
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8842,7 +8842,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G35-G37
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8858,7 +8858,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8866,7 +8866,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8874,7 +8874,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8882,7 +8882,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8890,7 +8890,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8898,7 +8898,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8906,7 +8906,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8914,7 +8914,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G50-G59
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8922,7 +8922,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G60-G64
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8930,7 +8930,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G60-G64
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8938,7 +8938,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G60-G64
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G64, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8946,7 +8946,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G60-G64
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G90, G91, G92, G93, G94, G95, G96, G97
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : I70 (S01), I71 (S01), I73 (S01), I77 (S01), I78 (S01), I79 (S01), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10), R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8954,7 +8954,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G70-G73
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8962,7 +8962,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G70-G73
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8970,7 +8970,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G70-G73
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8978,7 +8978,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G70-G73
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 194 low muscle tone and hypotonia
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8986,7 +8986,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -8994,7 +8994,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9002,7 +9002,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9010,7 +9010,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9018,7 +9018,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9026,7 +9026,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9034,7 +9034,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9042,7 +9042,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9050,7 +9050,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9058,7 +9058,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G90-G99
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 104 sensory loss, changes in various forms of sensation
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R20 (S11)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9066,7 +9066,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9074,7 +9074,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9082,7 +9082,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9090,7 +9090,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9098,7 +9098,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9106,7 +9106,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9114,7 +9114,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9122,7 +9122,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9130,7 +9130,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9138,7 +9138,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I60-I69
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis; 205 acute neurological deficits
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9306,7 +9306,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G80-G83
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9314,7 +9314,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G80-G83
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9322,7 +9322,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G80-G83
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9330,7 +9330,7 @@ Sources de départ (à lire et dater) : Société suisse de neurologie ; EAN.
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre VI, bloc G80-G83
 - **SSP à satisfaire dans ce cours** : 103 paresis, paralysis
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : —
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9918,7 +9918,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9926,7 +9926,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9934,7 +9934,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9942,7 +9942,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9950,7 +9950,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9958,7 +9958,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9966,7 +9966,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9974,7 +9974,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -9982,7 +9982,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F00-F09
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech; 216 sudden changes of mental status such as confusion, delusion, ­
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R41 (S08), R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10046,7 +10046,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
 - **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F81
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F81, F82, F83, F84, F88, F89, F90, F91, F92, F93, F94, F95, F98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10054,7 +10054,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
 - **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80, F82, F83, F84, F88, F89, F90, F91, F92, F93, F94, F95, F98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10062,7 +10062,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
 - **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80, F81, F83, F84, F88, F89, F90, F91, F92, F93, F94, F95, F98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10070,7 +10070,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
 - **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80, F81, F82, F84, F88, F89, F90, F91, F92, F93, F94, F95, F98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10078,7 +10078,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
 - **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80, F81, F82, F83, F88, F89, F90, F91, F92, F93, F94, F95, F98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10086,7 +10086,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
 - **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80, F81, F82, F83, F84, F89, F90, F91, F92, F93, F94, F95, F98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10094,7 +10094,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F80-F89
 - **SSP à satisfaire dans ce cours** : 141 disorganised speech; 185 behavioural issues in childhood and adolescence; 193 learning and school problems in childhood and adolescence
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F70, F71, F72, F73, F74, F78, F79, F80, F81, F82, F83, F84, F88, F90, F91, F92, F93, F94, F95, F98
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10102,7 +10102,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10110,7 +10110,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10118,7 +10118,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10126,7 +10126,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10134,7 +10134,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10142,7 +10142,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10150,7 +10150,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10158,7 +10158,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F20-F29
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 141 disorganised speech
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F60, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F60, F61, F62, F63, F64, F65, F66, F68, F69, F80, F81, F82, F83, F84, F88, F89, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08), R47 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10222,7 +10222,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F61, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F61, F62, F63, F64, F65, F66, F68, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10230,7 +10230,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F62, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F62, F63, F64, F65, F66, F68, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10238,7 +10238,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F63, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F63, F64, F65, F66, F68, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10246,7 +10246,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F64, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F64, F65, F66, F68, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10254,7 +10254,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F65, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F65, F66, F68, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10262,7 +10262,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F66, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F66, F68, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10270,7 +10270,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F68, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F68, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10278,7 +10278,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F69
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F69, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10286,7 +10286,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F60-F69
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour; 125 irritability, aggressive and violent behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F90, F91, F92, F93, F94, F95, F98, F99
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10430,7 +10430,7 @@ Sources de départ (à lire et dater) : SSPP, SSPPEA, OFSP (addictions), Infodro
 
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre V, bloc F99-F99
 - **SSP à satisfaire dans ce cours** : 120 change in behaviour
-- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68
+- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69
 - **Différentiels hors système** (SSP partagée, hors SSP transversales) : R45 (S08)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Sémiologie psychiatrique et entretien → 4. Évaluation du risque suicidaire, de violence et de la capacité de discernement → 5. Diagnostic selon la CIM-10-GM (DSM-5-TR seulement comme donnée) et diagnostic différentiel somatique → 6. Psychothérapies indiquées → 7. Traitement médicamenteux (information professionnelle suisse) → 8. Cadre légal suisse : placement à des fins d’assistance, mesures de protection (Code civil) → 9. Réseau de soins, réhabilitation et réinsertion → 10. Complications et pronostic → 11. Prévention, dépistage et suivi → 12. Situations particulières (grossesse, enfant, sujet âgé) → 13. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 14. Pareto : ce qui fait 80 % de la décision
 
@@ -10443,7 +10443,7 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I70-I79
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 144 gangrene
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I70, I71, I77, I78, I79, R02
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### I77 — Autres atteintes des artères et artérioles
@@ -10451,7 +10451,7 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I70-I79
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 144 gangrene
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I70, I71, I73, I78, I79, R02
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### I78 — Maladies des capillaires
@@ -10459,7 +10459,7 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I70-I79
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 144 gangrene
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I70, I71, I73, I77, I79, R02
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### I79 — Atteintes des artères, artérioles et capillaires au cours de maladies classées ailleurs
@@ -10467,7 +10467,7 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 - **Priorité** : P1 · **état** : à produire · **difficulté** : élevée · chapitre IX, bloc I70-I79
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 144 gangrene
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I70, I71, I73, I77, I78, R02
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### I85 — Varices œsophagiennes
@@ -10651,7 +10651,7 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 - **Priorité** : P1 · fréquente · **état** : rédigée · **difficulté** : élevée · chapitre IX, bloc I70-I79
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 144 gangrene
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I71, I73, I77, I78, I79, R02
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### I80 — Thrombose veineuse profonde et thromboses veineuses
@@ -10771,7 +10771,7 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 - **Priorité** : P1 · **état** : rédigée · **difficulté** : élevée · chapitre IX, bloc I70-I79
 - **SSP à satisfaire dans ce cours** : 85 pain, burning, cramp, numbness in the extremities; 144 gangrene
 - **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : I70, I73, I77, I78, I79, R02
-- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10)
+- **Différentiels hors système** (SSP partagée, hors SSP transversales) : G50 (S08), G51 (S08), G52 (S08), G53 (S08), G54 (S08), G55 (S08), G56 (S08), G57 (S08), G58 (S08), G59 (S08), G60 (S08), G61 (S08), G62 (S08), G63 (S08), G64 (S08), M60 (S10), M61 (S10), M62 (S10), M63 (S10), M65 (S10), M66 (S10), M67 (S10), M68 (S10), M70 (S10), M71 (S10), M72 (S10), M73 (S10), M75 (S10), M76 (S10), M77 (S10), M79 (S10)
 - **Plan** : 0. Définition et classification → 1. Épidémiologie (Suisse, puis Europe) → 2. Physiopathologie et mécanismes → 3. Facteurs de risque et étiologie → 4. Anamnèse → 5. Examen clinique → 6. Examens complémentaires et diagnostic différentiel → 7. Traitement non médicamenteux → 8. Traitement médicamenteux (information professionnelle suisse) → 9. Urgences et critères d’hospitalisation → 10. Imagerie et explorations fonctionnelles → 11. Classification et scores → 12. Complications et pronostic → 13. Prévention, dépistage et suivi → 14. Situations particulières (grossesse, enfant, sujet âgé) → 15. Critères formels du diagnostic (div.alert) puis paramètres clés (div.key) → 16. Pareto : ce qui fait 80 % de la décision
 
 ### Q21 — Cardiopathies congénitales de l’adulte
@@ -10794,126 +10794,126 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 | 3 | excessive thirst, excessive fluid intake (polydipsia) | E10, E11, E12, E13, E14, R63 |
 | 4 | fatigue, tiredness | R53 |
 | 5 | feeling of illness | R68 |
-| 6 | fever, chills, hyperthermia | A15, A16, A17, A18, A19, A40, A41, A80, A81, A82, A83, A84 … |
+| 6 | fever, chills, hyperthermia | A15, A16, A17, A18, A19, A40, A41, A80, A81, A82, A83, A84, A85, A86, A87, A88, A89, B50, B51, B52, B53, B54, G00, G01, G02, G03, G04, G05, G06, G07, G08, G09, J09, J12, J18, J21, J40, R50 |
 | 7 | flushing | E34, N95 |
 | 8 | hypothermia | T68 |
-| 9 | itching | L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L50 … |
+| 9 | itching | L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L50, L51, L52, L53, L54 |
 | 10 | pain of all types | R52 |
 | 11 | sleep problems | G47 |
 | 12 | swelling, oedema (diffuse or local) | I50, I51, I80, I83, I85, I86, I88, I89, R60 |
 | 13 | unnatural death | R99 |
 | 14 | unexpected or sudden death | R96 |
 | 15 | weight gain, obesity | E65, E66, E67, E68, R63 |
-| 16 | weight loss, malnutrition, loss of appetite | E40, E41, E42, E43, E44, E45, E46, E50, E51, E52, E53, E54 … |
+| 16 | weight loss, malnutrition, loss of appetite | E40, E41, E42, E43, E44, E45, E46, E50, E51, E52, E53, E54, E55, E56, E58, E59, E60, E61, E63, E64, R63 |
 | 17 | abnormal eye movements | H49, H50, H51, H52 |
-| 18 | acute and gradual loss of vision (acute, slow, temporary, partial) | H25, H26, H27, H28, H30, H31, H32, H33, H34, H35, H36, H40 … |
-| 19 | alteration of voice (hoarseness, aphonia, dysphonia) | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34 … |
+| 18 | acute and gradual loss of vision (acute, slow, temporary, partial) | H25, H26, H27, H28, H30, H31, H32, H33, H34, H35, H36, H40, H42, H43, H44, H45, H46, H47, H48, H53, H54 |
+| 19 | alteration of voice (hoarseness, aphonia, dysphonia) | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34, J35, J36, J37, J38, J39, R47, R48, R49 |
 | 20 | asymmetric face, deformation | G51 |
 | 21 | bleeding nose | R04 |
 | 22 | blepharospasm | G24 |
 | 23 | difficulty in swallowing, choking | R13, T17 |
-| 24 | discharge from ear | H60, H61, H62, H65, H66, H67, H68, H69, H70, H71, H72, H73 … |
-| 25 | dryness, pain, mass in mouth or throat, oral lesions | K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K10, K11 … |
-| 26 | earache | H60, H61, H62, H65, H66, H67, H68, H69, H70, H71, H72, H73 … |
-| 27 | facial, jaw or tooth pain, trismus | K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K10, K11 … |
-| 28 | hearing impairment: hyper- and hypoacusis, deafness, whistling, tinnitus | H60, H61, H62, H65, H66, H67, H68, H69, H70, H71, H72, H73 … |
+| 24 | discharge from ear | H60, H61, H62, H65, H66, H67, H68, H69, H70, H71, H72, H73, H74, H75 |
+| 25 | dryness, pain, mass in mouth or throat, oral lesions | K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K10, K11, K12, K13, K14 |
+| 26 | earache | H60, H61, H62, H65, H66, H67, H68, H69, H70, H71, H72, H73, H74, H75 |
+| 27 | facial, jaw or tooth pain, trismus | K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K10, K11, K12, K13, K14 |
+| 28 | hearing impairment: hyper- and hypoacusis, deafness, whistling, tinnitus | H60, H61, H62, H65, H66, H67, H68, H69, H70, H71, H72, H73, H74, H75, H80, H81, H82, H83, H90, H91, H92, H93, H94, H95 |
 | 29 | micro- and macrocephaly | Q02, Q03 |
-| 30 | nasal discharge | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34 … |
-| 31 | nasal obstruction | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34 … |
+| 30 | nasal discharge | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34, J35, J36, J37, J38, J39 |
+| 31 | nasal obstruction | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34, J35, J36, J37, J38, J39 |
 | 32 | neck stiffness and pain | M54 |
-| 33 | painful, red, itchy eyes; eye discharge | H00, H01, H02, H03, H04, H05, H06, H10, H11, H13, H15, H16 … |
+| 33 | painful, red, itchy eyes; eye discharge | H00, H01, H02, H03, H04, H05, H06, H10, H11, H13, H15, H16, H17, H18, H19, H20, H21, H22 |
 | 34 | snoring | F50, F51, F52, F53, F54, F55, F59, G47 |
-| 35 | sore throat | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34 … |
+| 35 | sore throat | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34, J35, J36, J37, J38, J39, R07 |
 | 36 | squint (strabismus) | H49, H50, H51, H52 |
 | 37 | swelling of face, lips, neck; goitre | E00, E01, E02, E03, E04, E05, E06, E07, T78 |
-| 38 | swelling of the eyelid | H00, H01, H02, H03, H04, H05, H06, H10, H11, H13, H15, H16 … |
-| 39 | visual disturbances, photophobia, light flashes, floating objects, diplopia, colour | H25, H26, H27, H28, H30, H31, H32, H33, H34, H35, H36, H40 … |
+| 38 | swelling of the eyelid | H00, H01, H02, H03, H04, H05, H06, H10, H11, H13, H15, H16, H17, H18, H19, H20, H21, H22 |
+| 39 | visual disturbances, photophobia, light flashes, floating objects, diplopia, colour | H25, H26, H27, H28, H30, H31, H32, H33, H34, H35, H36, H40, H42, H43, H44, H45, H46, H47, H48, H49, H50, H51, H52, H53, H54 |
 | 40 | apnoea, apnoea with arousal | G47 |
 | 41 | change of respiratory pattern | J95, R06 |
 | 42 | changes of breast size, breast lump, breast discharge | N60, N61, N62, N63, N64 |
 | 43 | chest discomfort | I25, R07 |
 | 44 | chest pain | I00, I21, I25, I30, I33, I34, I35, I40, I42, R07 |
-| 45 | cough, expectoration, haemoptysis | A15, A16, A17, A18, A19, J09, J12, J18, J21, J40, J44, J45 … |
-| 46 | dyspnoea | E84, I26, I27, I50, I51, J09, J12, J18, J21, J40, J44, J45 … |
+| 45 | cough, expectoration, haemoptysis | A15, A16, A17, A18, A19, J09, J12, J18, J21, J40, J44, J45, J47, J60, J67, J68, J69, J70, J82, J84, J86, R04, R05 |
+| 46 | dyspnoea | E84, I26, I27, I50, I51, J09, J12, J18, J21, J40, J44, J45, J47, J60, J67, J68, J69, J70, J80, J82, J84, J86, J90, J93, J95, J96, R06 |
 | 47 | heartburn (pyrosis) | K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, R12 |
 | 48 | impaired or painful passage of food, dysphagia, regurgitation | K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, R13 |
-| 49 | painful respiration, wheezing, stridor | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34 … |
+| 49 | painful respiration, wheezing, stridor | J00, J01, J02, J03, J04, J05, J06, J30, J31, J32, J33, J34, J35, J36, J37, J38, J39, J40, J44, J45, J47, J60, J67, J68, J69, J70, J82, J84, J86, R06, T78 |
 | 50 | palpitations | I44, I46, I47, I48, I49 |
 | 51 | parietal chest pain | R07 |
-| 52 | abdominal, epigastric pain | K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35 … |
+| 52 | abdominal, epigastric pain | K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K35, K36, K37, K38, K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K80, K81, K82, K83, K85, K86, K87, R10 |
 | 53 | abdominal distension | R14 |
 | 54 | abdominal mass | R16, R18, R19 |
-| 55 | altered defaecation pattern, incontinence, pain | K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66 … |
+| 55 | altered defaecation pattern, incontinence, pain | K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, R15 |
 | 56 | anal itching, anal pain, anal protrusion | K60, K64, L29 |
 | 57 | anal bleeding | K62, K64, K92 |
-| 58 | constipation | K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66 … |
-| 59 | diarrhoea | A00, A01, A02, A03, A04, A05, A06, A07, A08, A09, K50, K51 … |
-| 60 | melena, fresh blood, mucus, pus in faeces | K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66 … |
+| 58 | constipation | K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67 |
+| 59 | diarrhoea | A00, A01, A02, A03, A04, A05, A06, A07, A08, A09, K50, K51, K52, K90 |
+| 60 | melena, fresh blood, mucus, pus in faeces | K55, K56, K57, K58, K59, K60, K61, K62, K63, K64, K65, K66, K67, K92 |
 | 61 | nausea, vomiting | R11 |
 | 62 | atypical sexual development | E25, Q56 |
-| 63 | anuria, pollakiuria, oliguria, polyuria | N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11, N12 … |
-| 64 | dysuria, pyuria, haematuria | N20, N21, N22, N23, N25, N26, N27, N28, N29, N30, N31, N32 … |
-| 65 | issues related to conception, e.g. infertility and sterilisation | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91 … |
-| 66 | menstrual symptoms: disorders of menstruation, painful menstruation, | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91 … |
-| 67 | pelvic mass | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91 … |
-| 68 | pelvic pain | N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83 … |
+| 63 | anuria, pollakiuria, oliguria, polyuria | N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, R30, R31, R32, R33, R34, R35, R36 |
+| 64 | dysuria, pyuria, haematuria | N20, N21, N22, N23, N25, N26, N27, N28, N29, N30, N31, N32, N33, N34, N35, N36, N37, N39, R30, R31, R32, R33, R34, R35, R36 |
+| 65 | issues related to conception, e.g. infertility and sterilisation | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, Z31 |
+| 66 | menstrual symptoms: disorders of menstruation, painful menstruation, | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98 |
+| 67 | pelvic mass | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98 |
+| 68 | pelvic pain | N70, N71, N72, N73, N74, N75, N76, N77, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98 |
 | 69 | request for contraception, emergency contraception | Z30 |
-| 70 | request for genetic counselling | Q00, Q01, Q02, Q03, Q04, Q05, Q06, Q07, Q10, Q11, Q12, Q13 … |
+| 70 | request for genetic counselling | Q00, Q01, Q02, Q03, Q04, Q05, Q06, Q07, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q21, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q37, Q38, Q39, Q40, Q41, Q42, Q43, Q44, Q45, Q50, Q51, Q52, Q53, Q54, Q55, Q56, Q60, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q69, Q70, Q71, Q72, Q73, Q74, Q75, Q76, Q77, Q78, Q79, Q80, Q81, Q82, Q83, Q84, Q85, Q86, Q87, Q89, Q90, Q91, Q92, Q93, Q95, Q96, Q97, Q98, Q99 |
 | 71 | scrotal pain, swelling, mass | N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51 |
 | 72 | sexual complaints and dysfunction | N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51 |
 | 73 | swelling, pain in groin | K40, K41, K42, K43, K44, K45, K46 |
-| 74 | symptoms related to menopause | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91 … |
-| 75 | urethral discharge | N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51 … |
-| 76 | urinary incontinence and enuresis | N25, N26, N27, N28, N29, N30, N31, N32, N33, N34, N35, N36 … |
-| 77 | urinary retention | N25, N26, N27, N28, N29, N30, N31, N32, N33, N34, N35, N36 … |
-| 78 | uterine prolapse, pelvic relaxation | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91 … |
-| 79 | vaginal bleeding | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91 … |
+| 74 | symptoms related to menopause | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98 |
+| 75 | urethral discharge | N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36 |
+| 76 | urinary incontinence and enuresis | N25, N26, N27, N28, N29, N30, N31, N32, N33, N34, N35, N36, N37, N39, R30, R31, R32, R33, R34, R35, R36 |
+| 77 | urinary retention | N25, N26, N27, N28, N29, N30, N31, N32, N33, N34, N35, N36, N37, N39, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49, N50, N51, R30, R31, R32, R33, R34, R35, R36 |
+| 78 | uterine prolapse, pelvic relaxation | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98 |
+| 79 | vaginal bleeding | N80, N81, N82, N83, N84, N85, N86, N87, N88, N89, N90, N91, N92, N93, N94, N95, N96, N97, N98, O00, O01, O02, O03, O04, O05, O06, O07, O08 |
 | 80 | vaginal discharge | N70, N71, N72, N73, N74, N75, N76, N77 |
-| 81 | abnormal posture and back deformities | M40, M41, M42, M43, M45, M46, M47, M48, M49, M50, M51, M53 … |
-| 82 | back pain | M40, M41, M42, M43, M45, M46, M47, M48, M49, M50, M51, M53 … |
-| 83 | deformities of skeleton and joints | M40, M41, M42, M43, M45, M46, M47, M48, M49, M50, M51, M53 … |
-| 84 | myalgia | M60, M61, M62, M63, M65, M66, M67, M68, M70, M71, M72, M73 … |
-| 85 | pain, burning, cramp, numbness in the extremities | G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61 … |
-| 86 | swollen or painful joints, morning stiffness, reduction of joint motility | M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13 … |
+| 81 | abnormal posture and back deformities | M40, M41, M42, M43, M45, M46, M47, M48, M49, M50, M51, M53, M54 |
+| 82 | back pain | M40, M41, M42, M43, M45, M46, M47, M48, M49, M50, M51, M53, M54 |
+| 83 | deformities of skeleton and joints | M40, M41, M42, M43, M45, M46, M47, M48, M49, M50, M51, M53, M54 |
+| 84 | myalgia | M60, M61, M62, M63, M65, M66, M67, M68, M70, M71, M72, M73, M75, M76, M77, M79 |
+| 85 | pain, burning, cramp, numbness in the extremities | G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, I70, I71, I73, I77, I78, I79, M60, M61, M62, M63, M65, M66, M67, M68, M70, M71, M72, M73, M75, M76, M77, M79 |
+| 86 | swollen or painful joints, morning stiffness, reduction of joint motility | M00, M01, M02, M03, M06, M07, M08, M09, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M31, M32, M33, M34, M35, M36 |
 | 87 | changes in oral, genital or perianal mucosa | T78 |
 | 88 | ecchymosis, haematoma, purpura | D65, D66, D67, D68, D69 |
 | 89 | hyper- or hypopigmentation | L80, L81 |
-| 90 | infected wound, delayed wound healing, skin ulcers | L00, L01, L02, L03, L04, L05, L08, L80, L81, L82, L83, L84 … |
-| 91 | jaundice (icterus) | B15, B16, B17, B18, B19, K70, K71, K72, K73, K74, K75, K76 … |
-| 92 | lack or loss of hair, excess hair | L60, L62, L63, L64, L65, L66, L67, L68, L70, L71, L72, L73 … |
-| 93 | macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne- | L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14 … |
-| 94 | nail complaints | L60, L62, L63, L64, L65, L66, L67, L68, L70, L71, L72, L73 … |
-| 95 | redness of the skin (localized or diffuse) and/or mucosa | L00, L01, L02, L03, L04, L05, L08, L40, L41, L42, L43, L44 … |
+| 90 | infected wound, delayed wound healing, skin ulcers | L00, L01, L02, L03, L04, L05, L08, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99 |
+| 91 | jaundice (icterus) | B15, B16, B17, B18, B19, K70, K71, K72, K73, K74, K75, K76, K77, K80, K81, K82, K83, K85, K86, K87, R17 |
+| 92 | lack or loss of hair, excess hair | L60, L62, L63, L64, L65, L66, L67, L68, L70, L71, L72, L73, L74, L75 |
+| 93 | macules, papules, pustules, blisters, ulcers and abscess, bullae, thickening, ne- | L00, L01, L02, L03, L04, L05, L08, L10, L11, L12, L13, L14, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L40, L41, L42, L43, L44, L45, L50, L51, L52, L53, L54, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23 |
+| 94 | nail complaints | L60, L62, L63, L64, L65, L66, L67, L68, L70, L71, L72, L73, L74, L75 |
+| 95 | redness of the skin (localized or diffuse) and/or mucosa | L00, L01, L02, L03, L04, L05, L08, L40, L41, L42, L43, L44, L45, L80, L81, L82, L83, L84, L85, L86, L87, L88, L89, L90, L91, L92, L93, L94, L95, L97, L98, L99, R21, R23 |
 | 96 | abnormal sense of balance, falls | R25, R26, R27, R29 |
 | 97 | abnormal gait | R25, R26, R27, R29 |
 | 98 | abnormal involuntary movements, tremor, tic, lack of coordination | G20, G21, G22, G23, G24, G25, G26, R25, R26, R27, R29 |
 | 99 | disorders of speech or language | R47, R48, R49 |
 | 100 | dizziness, vertigo | H80, H81, H82, H83, H90, H91, H92, H93, H94, H95, R42 |
-| 101 | headache | A80, A81, A82, A83, A84, A85, A86, A87, A88, A89, G00, G01 … |
+| 101 | headache | A80, A81, A82, A83, A84, A85, A86, A87, A88, A89, G00, G01, G02, G03, G04, G05, G06, G07, G08, G09, G43, G44, R51 |
 | 102 | memory disturbance, cognitive impairment | G30, G31, G32, R41 |
-| 103 | paresis, paralysis | G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83 … |
-| 104 | sensory loss, changes in various forms of sensation | G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58 … |
+| 103 | paresis, paralysis | G35, G36, G37, G45, G70, G71, G72, G73, G80, G81, G82, G83, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69, R25, R26, R27, R29 |
+| 104 | sensory loss, changes in various forms of sensation | G35, G36, G37, G50, G51, G52, G53, G54, G55, G56, G57, G58, G59, G60, G61, G62, G63, G64, G90, G91, G92, G93, G94, G95, G96, G97, G98, G99, R20 |
 | 105 | twitches, convulsion, seizure | G40, G41, R56 |
 | 106 | abdominal injuries | S30, S31, S32, S33, S34, S35, S36, S37, S38, S39 |
-| 107 | burn, cold injury | T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30, T31 … |
-| 108 | contusion, soft tissue bruising | T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11 … |
+| 107 | burn, cold injury | T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30, T31, T32, T33, T34, T35, T66, T67, T68, T69, T70, T71, T73, T74, T75 |
+| 108 | contusion, soft tissue bruising | T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14 |
 | 109 | dislocation of joint | S43, S83 |
 | 110 | drowning or near drowning | T66, T67, T68, T69, T70, T71, T73, T74, T75 |
 | 111 | foreign body | T15, T16, T17, T18, T19 |
 | 112 | head and brain injuries and trauma | S00, S01, S02, S03, S04, S05, S06, S07, S08, S09 |
-| 113 | injuries of the extremities | S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51 … |
-| 114 | laceration, closed or open wound | T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11 … |
+| 113 | injuries of the extremities | S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S73, S74, S75, S76, S77, S78, S79, S80, S81, S82, S83, S84, S85, S86, S87, S88, S89, S90, S91, S92, S93, S94, S95, S96, S97, S98, S99 |
+| 114 | laceration, closed or open wound | T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14 |
 | 115 | spine injuries | S10, S11, S12, S13, S14, S15, S16, S17, S18, S19 |
 | 116 | thoracic injuries | S20, S21, S22, S23, S24, S25, S26, S27, S28, S29 |
 | 117 | vascular injuries | S25 |
 | 118 | anxiety and panic | F40, F41, F42, F43, F44, F45, F48 |
 | 119 | attention deficit | F90, F91, F92, F93, F94, F95, F98 |
-| 120 | change in behaviour | F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22 … |
+| 120 | change in behaviour | F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F60, F61, F62, F63, F64, F65, F66, F68, F69, F99, R45 |
 | 121 | change in eating behaviour | F50, F51, F52, F53, F54, F55, F59 |
 | 122 | change in mood | F30, F31, F32, F33, F34, F38, F39, R45 |
 | 123 | hyperactivity | F90, F91, F92, F93, F94, F95, F98 |
 | 124 | irrational fear, fear of illness | F40, F41, F42, F43, F44, F45, F48 |
-| 125 | irritability, aggressive and violent behaviour | F60, F61, F62, F63, F64, F65, F66, F68, F69, F90, F91, F92 … |
+| 125 | irritability, aggressive and violent behaviour | F60, F61, F62, F63, F64, F65, F66, F68, F69, F90, F91, F92, F93, F94, F95, F98, R45 |
 | 126 | mental confusion, delirium | R41 |
 | 127 | obsessive and/or compulsive behaviour | F40, F41, F42, F43, F44, F45, F48 |
 | 128 | reactions to major stressful events | F40, F41, F42, F43, F44, F45, F48 |
@@ -10926,16 +10926,16 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 | 135 | abnormal findings upon palpation | R22 |
 | 136 | abnormal findings upon percussion | J96, R22 |
 | 137 | bradycardia, tachycardia, irregular pulse | I44, I46, I47, I48, I49, R00 |
-| 138 | cachexia and malnutrition | E40, E41, E42, E43, E44, E45, E46, E50, E51, E52, E53, E54 … |
+| 138 | cachexia and malnutrition | E40, E41, E42, E43, E44, E45, E46, E50, E51, E52, E53, E54, E55, E56, E58, E59, E60, E61, E63, E64, R64 |
 | 139 | cognitive impairment | G30, G31, G32, R41 |
 | 140 | cyanosis | R09 |
-| 141 | disorganised speech | F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22 … |
+| 141 | disorganised speech | F00, F01, F02, F03, F04, F05, F06, F07, F09, F20, F21, F22, F23, F24, F25, F28, F29, F80, F81, F82, F83, F84, F88, F89, R47 |
 | 142 | exophthalmos (proptosis) | E05, H05 |
 | 143 | halitosis (fetor oris) | K05, R19 |
 | 144 | gangrene | I70, I71, I73, I77, I78, I79, R02 |
 | 145 | impairment or loss of consciousness, coma | R40 |
 | 146 | oedema | E85, I50, I51, I80, I83, I85, I86, I88, I89, R60 |
-| 147 | pallor | D50, D51, D52, D53, D55, D56, D57, D58, D59, D60, D61, D62 … |
+| 147 | pallor | D50, D51, D52, D53, D55, D56, D57, D58, D59, D60, D61, D62, D63, D64 |
 | 148 | pulseless patient | I46 |
 | 149 | transient loss of consciousness, syncope | R55 |
 | 150 | abnormal blood gas values | E87, J96 |
@@ -10944,45 +10944,45 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 | 153 | abnormal X-rays of abdomen, chest and skeleton | R90, R91, R92, R93 |
 | 154 | abnormal leukocyte count | D70, D71, D72, D73, D74, D75, D76, D77, R72 |
 | 155 | abnormal ECG | I44, I46, I47, I48, I49 |
-| 156 | abnormal electrolytes | E20, E21, E22, E23, E24, E25, E26, E27, E28, E29, E30, E31 … |
+| 156 | abnormal electrolytes | E20, E21, E22, E23, E24, E25, E26, E27, E28, E29, E30, E31, E32, E34, E35, E86, E87, R79 |
 | 157 | abnormal faecal analyses, occult blood, parasites | A00, A01, A02, A03, A04, A05, A06, A07, A08, A09, R85 |
 | 158 | abnormal glycaemia and markers of glycaemia homeostasis | E10, E11, E12, E13, E14, R73, R81 |
-| 159 | abnormal histology, cytology and molecular genetic test | C00, C01, C02, C03, C04, C05, C06, C07, C08, C09, C10, C11 … |
-| 160 | abnormal liver enzymes | B15, B16, B17, B18, B19, K70, K71, K72, K73, K74, K75, K76 … |
-| 161 | abnormal markers of kidney function | N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11, N12 … |
+| 159 | abnormal histology, cytology and molecular genetic test | C00, C01, C02, C03, C04, C05, C06, C07, C08, C09, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C30, C31, C32, C33, C34, C37, C38, C39, C40, C41, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C55, C56, C57, C58, C60, C61, C62, C63, C64, C65, C66, C67, C68, C69, C70, C71, C72, C73, C74, C75, C76, C77, C78, C79, C80, C81, C82, C83, C84, C85, C86, C88, C90, C91, C92, C93, C94, C95, C96, C97 |
+| 160 | abnormal liver enzymes | B15, B16, B17, B18, B19, K70, K71, K72, K73, K74, K75, K76, K77, R74 |
+| 161 | abnormal markers of kidney function | N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11, N12, N13, N14, N15, N16, N17, N18, N19 |
 | 162 | abnormal serum lipids | E78, R79 |
 | 163 | abnormal thyroid hormones | E00, E01, E02, E03, E04, E05, E06, E07 |
-| 164 | abnormal urine sediment | N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11, N12 … |
-| 165 | anaemia | D50, D51, D52, D53, D55, D56, D57, D58, D59, D60, D61, D62 … |
+| 164 | abnormal urine sediment | N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, R82 |
+| 165 | anaemia | D50, D51, D52, D53, D55, D56, D57, D58, D59, D60, D61, D62, D63, D64, R71 |
 | 166 | blood group incompatibility | O36, P55, T80 |
 | 167 | effusion detected by ultrasound (abdomen, pleura) | J60, J90, J93, R16, R18, R19 |
 | 168 | elevated biomarkers of inflammation | M31, M32, M33, M34, M35, M36, R70 |
 | 169 | low bone density | M80, M81, M82, M83, M84, M85 |
-| 170 | nutritional deficiencies | E40, E41, E42, E43, E44, E45, E46, E50, E51, E52, E53, E54 … |
+| 170 | nutritional deficiencies | E40, E41, E42, E43, E44, E45, E46, E50, E51, E52, E53, E54, E55, E56, E58, E59, E60, E61, E63, E64 |
 | 171 | polycythaemia | D70, D71, D72, D73, D74, D75, D76, D77 |
 | 172 | proteinemia, albuminemia | R77 |
-| 173 | proteinuria | E85, N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11 … |
+| 173 | proteinuria | E85, N00, N01, N02, N03, N04, N05, N06, N07, N08, N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, R80 |
 | 174 | thrombopenia, thrombocytosis | D65, D66, D67, D68, D69 |
-| 175 | abnormal birth weight and prematurity | P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22 … |
+| 175 | abnormal birth weight and prematurity | P05, P07, P08, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96 |
 | 176 | basic care in normal delivery and childbed | O80, O81, O82, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39 |
-| 177 | basic pre- and post-conception screening for genetic disease and malformation | Q00, Q01, Q02, Q03, Q04, Q05, Q06, Q07, Q10, Q11, Q12, Q13 … |
-| 178 | maternal problems during pregnancy, fever, oedema, hypertension, premature labour | O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24 … |
-| 179 | problems related to delivery | O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24 … |
+| 177 | basic pre- and post-conception screening for genetic disease and malformation | Q00, Q01, Q02, Q03, Q04, Q05, Q06, Q07, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q21, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q37, Q38, Q39, Q40, Q41, Q42, Q43, Q44, Q45, Q50, Q51, Q52, Q53, Q54, Q55, Q56, Q60, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q69, Q70, Q71, Q72, Q73, Q74, Q75, Q76, Q77, Q78, Q79, Q80, Q81, Q82, Q83, Q84, Q85, Q86, Q87, Q89, Q90, Q91, Q92, Q93, Q95, Q96, Q97, Q98, Q99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39 |
+| 178 | maternal problems during pregnancy, fever, oedema, hypertension, premature labour | O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99 |
+| 179 | problems related to delivery | O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99 |
 | 180 | problems related to lactation | Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39 |
-| 181 | process and basic care of pregnancy | O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24 … |
+| 181 | process and basic care of pregnancy | O10, O11, O12, O13, O14, O15, O16, O20, O21, O22, O23, O24, O25, O26, O28, O29, O30, O31, O32, O33, O34, O35, O36, O40, O41, O42, O43, O44, O45, O46, O47, O48, O60, O61, O62, O63, O64, O65, O66, O67, O68, O69, O70, O71, O72, O73, O74, O75, O80, O81, O82, O85, O86, O87, O88, O89, O90, O91, O92, O94, O95, O96, O97, O98, O99, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39 |
 | 182 | request for abortion | O00, O01, O02, O03, O04, O05, O06, O07, O08 |
-| 183 | suspicion of pregnancy, unplanned pregnancy | O00, O01, O02, O03, O04, O05, O06, O07, O08, Z32, Z33, Z34 … |
-| 184 | abnormal growth and puberty (slowing or acceleration), failure to thrive | E20, E21, E22, E23, E24, E25, E26, E27, E28, E29, E30, E31 … |
-| 185 | behavioural issues in childhood and adolescence | F80, F81, F82, F83, F84, F88, F89, F90, F91, F92, F93, F94 … |
+| 183 | suspicion of pregnancy, unplanned pregnancy | O00, O01, O02, O03, O04, O05, O06, O07, O08, Z32, Z33, Z34, Z35, Z36, Z37, Z38, Z39 |
+| 184 | abnormal growth and puberty (slowing or acceleration), failure to thrive | E20, E21, E22, E23, E24, E25, E26, E27, E28, E29, E30, E31, E32, E34, E35, R62 |
+| 185 | behavioural issues in childhood and adolescence | F80, F81, F82, F83, F84, F88, F89, F90, F91, F92, F93, F94, F95, F98 |
 | 186 | child abuse and neglect | T74 |
 | 187 | child immunisation | Z23, Z24, Z25, Z26, Z27, Z28 |
 | 188 | developmental delay | R62 |
 | 189 | feeding and eating issues during infancy, childhood and adolescence | E84 |
-| 190 | fetal problems during pregnancy | P00, P01, P02, P03, P04, P10, P11, P12, P13, P14, P15, P20 … |
+| 190 | fetal problems during pregnancy | P00, P01, P02, P03, P04, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96 |
 | 191 | infant death | R95 |
 | 192 | irritable, crying infant | F90, F91, F92, F93, F94, F95, F98, R68 |
-| 193 | learning and school problems in childhood and adolescence | F70, F71, F72, F73, F74, F78, F79, F80, F81, F82, F83, F84 … |
-| 194 | low muscle tone and hypotonia | G70, G71, G72, G73, P10, P11, P12, P13, P14, P15, P20, P21 … |
+| 193 | learning and school problems in childhood and adolescence | F70, F71, F72, F73, F74, F78, F79, F80, F81, F82, F83, F84, F88, F89 |
+| 194 | low muscle tone and hypotonia | G70, G71, G72, G73, P10, P11, P12, P13, P14, P15, P20, P21, P22, P23, P24, P25, P26, P27, P28, P29, P35, P36, P37, P38, P39, P50, P51, P52, P53, P54, P55, P56, P57, P58, P59, P60, P61, P70, P71, P72, P74, P75, P76, P77, P78, P80, P81, P83, P90, P91, P92, P93, P94, P95, P96 |
 | 195 | well-baby and well-child visit | Z00 |
 | 196 | elder abuse and neglect | T74 |
 | 197 | functional impairment (cognition, sensory and motor) | R54, Z54, Z74 |
@@ -10995,11 +10995,11 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 | 204 | acute chest; epigastric, arm, jaw, tooth pain | I21, I25 |
 | 205 | acute neurological deficits | G45, I60, I61, I62, I63, I64, I65, I66, I67, I68, I69 |
 | 206 | acute severe dyspnoea | I26, I27, J80, J96 |
-| 207 | acute severe headache, meningism | A80, A81, A82, A83, A84, A85, A86, A87, A88, A89, G00, G01 … |
-| 208 | burn | T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30, T31 … |
+| 207 | acute severe headache, meningism | A80, A81, A82, A83, A84, A85, A86, A87, A88, A89, G00, G01, G02, G03, G04, G05, G06, G07, G08, G09 |
+| 208 | burn | T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30, T31, T32, T33, T34, T35 |
 | 209 | colic | K80, K81, K82, K83, K85, K86, K87, N20, N21, N22, N23 |
 | 210 | haematemesis | K20, K21, K22, K23, K25, K26, K27, K28, K29, K30, K31, K92 |
-| 211 | intoxication, poisoning | T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47 … |
+| 211 | intoxication, poisoning | T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T73, T74, T75 |
 | 212 | mydriasis, myosis | H57 |
 | 213 | self-harm and suicide attempt | F30, F31, F32, F33, F34, F38, F39, T74 |
 | 214 | severe hypertension, severe hypotension | A40, A41, I10, I95, R57 |
@@ -11008,14 +11008,14 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 | 217 | syncope, loss of consciousness | R40, R55 |
 | 218 | cardiorespiratory disturbances and arrest | I44, I46, I47, I48, I49 |
 | 219 | seizures | G40, G41, R56 |
-| 220 | uncomplicated common trauma | S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51 … |
+| 220 | uncomplicated common trauma | S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S73, S74, S75, S76, S77, S78, S79, S80, S81, S82, S83, S84, S85, S86, S87, S88, S89, S90, S91, S92, S93, S94, S95, S96, S97, S98, S99, T00, T01, T02, T03, T04, T05, T06, T07, T08, T09, T10, T11, T12, T13, T14 |
 | 221 | consultation before engaging in sports activities | Z02 |
 | 222 | immunization plan | Z23, Z24, Z25, Z26, Z27, Z28 |
 | 223 | promotion of healthy life style | Z71, Z72 |
 | 224 | request for check-up, health examination, radiologic and laboratory procedures | Z00, Z01, Z10 |
 | 225 | screening for asymptomatic conditions | Z08, Z11, Z12, Z13 |
 | 226 | shared assessment of risks and benefits of screening and treating asymptomatic | Z08, Z11, Z12, Z13 |
-| 227 | shared assessment of risks and protective factors for frequent life-compromising | C00, C01, C02, C03, C04, C05, C06, C07, C08, C09, C10, C11 … |
+| 227 | shared assessment of risks and protective factors for frequent life-compromising | C00, C01, C02, C03, C04, C05, C06, C07, C08, C09, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C30, C31, C32, C33, C34, C37, C38, C39, C40, C41, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C55, C56, C57, C58, C60, C61, C62, C63, C64, C65, C66, C67, C68, C69, C70, C71, C72, C73, C74, C75, C76, C77, C78, C79, C80, C81, C82, C83, C84, C85, C86, C88, C90, C91, C92, C93, C94, C95, C96, C97 |
 | 228 | caregivers’ fatigue, loss of energy | Z63 |
 | 229 | change in treatment goals and end-of-life decisions | Z51 |
 | 230 | holistic care of the dying patient | Z51 |
@@ -11041,7 +11041,7 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 | 250 | nosocomial infection | T80, T81, T82, T83, T84, T85, T86, T87, T88 |
 | 251 | obtain informed consent for a procedure | Z53 |
 | 252 | patient refusing treatment | Z53 |
-| 253 | patient with sexually transmitted infection | A53, A54, A55, A56, A57, A58, A59, A60, A63, A64, B24, N70 … |
+| 253 | patient with sexually transmitted infection | A53, A54, A55, A56, A57, A58, A59, A60, A63, A64, B24, N70, N71, N72, N73, N74, N75, N76, N77, Z20, Z21, Z22 |
 | 254 | patient with other cultural background, migration | Z59, Z60 |
 | 255 | physical and psychosocial inpatient and outpatient rehabilitation | Z49, Z50 |
 | 256 | poor adherence to treatment | Z71, Z72 |
@@ -11051,6 +11051,6 @@ Sources de départ (à lire et dater) : Société suisse de cardiologie ; ESC.
 | 260 | request for information about gene therapy | Z71 |
 | 261 | request for information related to organ donation, transplantation | Z52, Z94 |
 | 262 | benefits and risks of complementary medicine | Z76 |
-| 263 | suspicion of drug intolerance or interaction (including complementary medicine) | T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47 … |
+| 263 | suspicion of drug intolerance or interaction (including complementary medicine) | T36, T37, T38, T39, T40, T41, T42, T43, T44, T45, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T78, T80, T81, T82, T83, T84, T85, T86, T87, T88, Z88 |
 | 264 | suspicion of rare disease | E70, E71, E72, E73, E74, E75, E76, E77 |
 | 265 | vulnerable patient | Z59, Z60 |

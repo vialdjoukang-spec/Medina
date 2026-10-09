@@ -89,9 +89,9 @@ def main():
                     f'- **Priorité** : P1{" · fréquente" if c in FREQ else ""} · **état** : {state} · **difficulté** : {diff} · chapitre {l.get("chapter")}, bloc {l["block"]}',
                     f'- **SSP à satisfaire dans ce cours** : {ssps or "aucune propre (socle clinique)"}',
                     '- **Différentiels à traiter en miroir** (diagnostics partageant au moins une SSP, même système) : '
-                    + (', '.join(sorted(d for d in items if d != c and ssp_of[d] & ssp_of[c])[:25]) or '—'),
+                    + (', '.join(sorted(d for d in items if d != c and ssp_of[d] & ssp_of[c])) or '—'),
                     '- **Différentiels hors système** (SSP partagée, hors SSP transversales) : '
-                    + (', '.join(f'{d} ({lessons[d]["fragment"]})' for d in sorted(d for d in chosen if lessons[d]['fragment'] != fid and (ssp_of[d] & ssp_of[c]) - broad)[:30]) or '—'),
+                    + (', '.join(f'{d} ({lessons[d]["fragment"]})' for d in sorted(d for d in chosen if lessons[d]['fragment'] != fid and (ssp_of[d] & ssp_of[c]) - broad)) or '—'),
                     '- **Plan** : ' + ' → '.join(f'{i}. {t}' for i, t in enumerate(p)), '']
         if p2:
             out += ['**P2 (après les P1 du système)** : ' + ', '.join(f'{c} {lessons[c]["title"]}' for c in p2), '']
@@ -101,7 +101,7 @@ def main():
     out += ['', '## Matrice SSP → pathologies', '', '| SSP | Situation | Pathologies |', '|---|---|---|']
     for s in range(1, 266):
         cs = by_ssp.get(s, []) + [f'psy {f}' for f, v in psy.items() if s in v]
-        out.append(f'| {s} | {SSP[str(s)]} | {", ".join(sorted(cs)[:12])}{" …" if len(cs) > 12 else ""} |')
+        out.append(f'| {s} | {SSP[str(s)]} | {", ".join(sorted(cs))} |')
     (ROOT / 'ANNEXE_PATHOLOGIES_SSP.md').write_text('\n'.join(out), encoding='utf-8')
     print(len(chosen), 'P1 ;', len(rest), 'P2 ; couvertes', len(covered), '; manquantes', missing)
 
