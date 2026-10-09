@@ -16,11 +16,12 @@ Branche : `course/infectiologie`. Ordre : priority_codes de `organisation/fragme
 | B00 | Herpès simplex | **écrit** (21 fenêtres, 2 GIF réels) |
 | A09 | Gastro-entérite infectieuse aiguë | **écrit** (20 fenêtres, 3 GIF réels) |
 | B37 | Candidose | **écrit** (16 fenêtres, 3 GIF réels) |
+| B35 | Dermatophytoses | **écrit** (15 fenêtres, 4 GIF réels) |
 
 Images : `assets/img/infectiologie/` + `ATTRIBUTIONS.json`.
 
 ## Reste à écrire (fragment T1)
-- Pathologies fréquentes vides : A49, B07, B35.
+- Pathologies fréquentes vides : A49, B07.
 - priority_codes non écrits : B50 (paludisme), A15, A16 (tuberculose).
 
 ## Lacunes nommées / points à vérifier
@@ -39,3 +40,4 @@ Décision du propriétaire : chaque cours terminé est rebasé sur origin/main, 
 - B00 : seule donnée suisse lue = séroprévalence 1992–1993 (Bünzli 2004) — lacune nommée.
 - B02 : chiffre d’atteinte oculaire divergent OFSP (bulletin 5–10 % vs page publique 10–20 %), signalé dans la fenêtre.
 - B37 : pas de directive SSI sur la candidose ; sources européennes (ECMM 2025, IUSTI/OMS 2018, ESCMID 2012) et suisse (FUNGINOS 2021).
+- B35 : pas de directive SSI ni européenne récente sur la peau glabre ; traitement selon information suisse, épidémiologie Lausanne 2020 et Zurich 2026, consensus Delphi 2026 (T. indotineae).
