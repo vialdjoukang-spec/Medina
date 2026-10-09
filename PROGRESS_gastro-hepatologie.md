@@ -51,3 +51,8 @@ Règles propriétaire ajoutées le 09.10.2026 : RAPPEL VERITE en tête de chaque
 - K25 : divergence FI suisses (trithérapie 7 j, IPP 20 mg 2×/j ; Pylera® 10 j) vs SSI 2026 (IPP 40 mg 2×/j, 14 j) : signalée dans le cours, à valider par l’audit.
 - K21 : grade B de Los Angeles concluant (Lyon 2.0) vs non concluant (S2k 2023) ; chimioprévention IPP du Barrett (ESGE 2023 oui, S2k non) ; aucune spécialité orale d’anti-H2 trouvée dans AmiKo : signalés dans le cours.
 - `preview/lesson-core.js` absent : erreur JS préexistante des aperçus (aussi sur J40), hors périmètre G-04.
+
+
+## Balayage rétroactif (ordre du propriétaire, 09.10.2026)
+Outil : /workspace/sweep/nominal.py (spaCy, détection des phrases sans verbe) puis relecture humaine ; contrôle des images réelles dans les fenêtres, de la justification et des connecteurs.
+- K92 : FAIT (10.10.2026). Encadrés, cartes, Pareto, critères formels et 42 fenêtres sur 54 réécrits en phrases complètes ; justification ajoutée (cartes cliniques, signes, mesures du cirrhotique) ; 3 images réelles ajoutées dans les fenêtres Forrest, ligature et varices. Doses et codes inchangés (déjà vérifiés).
