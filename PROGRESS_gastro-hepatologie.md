@@ -21,6 +21,7 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 | K57 | Maladie diverticulaire : diverticulose et diverticulite aiguë | 3 (Commons, dont 2 aussi dans les fenêtres) | WSES diverticulite 2020, guide CHUV 2022, FI Co-Amoxi-Mepha i.v., Augmentin® |
 | K56 | Iléus paralytique et occlusion intestinale sans hernie (brides, occlusion colique, volvulus du sigmoïde) | 4 (Commons, dont 4 aussi dans les fenêtres) | WSES Bologne 2017, WSES volvulus du sigmoïde 2023, WSES urgences du cancer colorectal 2017, FI Paspertin® |
 | K90 | Malabsorption intestinale : maladie cœliaque de l’adulte (autres malabsorptions signalées) | 4 (Commons, dont 4 aussi dans les fenêtres) | ESsCD 2025 parties 1 et 2, FI Entocort CIR® |
+| K58 | Syndrome de l’intestin irritable | S3 DGVS/DGNM 2021 ; FI Colpermin, Duspatalin, Imodium, Constella, Saroten | 3 images réelles (Bristol, coloscopie, psyllium) ; 15 fenêtres ; règles justification et phrases complètes appliquées |
 
 ## Amendements du propriétaire appliqués (09.10.2026)
 - Règle linguistique : connecteurs et transitions (`liaisons.py`, plans `chapitres/K92_liaisons.py`, `K25_liaisons.py` ; rédaction native dès K21).
@@ -30,10 +31,11 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 ## Restantes (ordre des codes prioritaires du registre)
 K58 ; puis les autres catégories de `nosology/fragments/S03.json`.
 
-Priorité examen fédéral (jauge `federal_exam`, 13/89 rédigées au 09.10.2026) — catégories restantes : C15 C16 C17 C19 C20 C21 C22 C23 C24 C25 C26 K20 K22 K23 K26 K27 K28 K29 K30 K31 K36 K37 K38 K40 K41 K42 K43 K44 K45 K46 K55 K58 K59 K60 K61 K62 K63 K64 K65 K66 K67 K71 K72 K73 K75 K76 K77 K81 K82 K83 K86 K87 Q39 Q40 Q41 Q42 Q43 Q44 Q45 R10 R11 R12 R13 R14 R15 R16 R17 R18 R19 S30 S31 S36 T18 T28.
+Priorité examen fédéral (jauge `federal_exam`, 13/89 rédigées au 09.10.2026) — catégories restantes : C15 C16 C17 C19 C20 C21 C22 C23 C24 C25 C26 K20 K22 K23 K26 K27 K28 K29 K30 K31 K36 K37 K38 K40 K41 K42 K43 K44 K45 K46 K55 K59 K60 K61 K62 K63 K64 K65 K66 K67 K71 K72 K73 K75 K76 K77 K81 K82 K83 K86 K87 Q39 Q40 Q41 Q42 Q43 Q44 Q45 R10 R11 R12 R13 R14 R15 R16 R17 R18 R19 S30 S31 S36 T18 T28.
 Règles propriétaire ajoutées le 09.10.2026 : RAPPEL VERITE en tête de chaque chapitre ; images réelles aussi dans les fenêtres ; commentaire explicatif (physiopathologie) sous chaque image et tableau ; pas d’îlot ni de tableau consacré aux codes CIM.
 
 ## Points ouverts
+- K58 : amitriptyline et rifaximine hors indication suisse (doses S3) ; à valider.
 - K90 : doses de fer, vitamines et enzymes pancréatiques TODO (absentes des recommandations lues) ; budésonide en capsules ouvertes dans la forme réfractaire hors indication suisse ; justification pharmacocinétique de l’ouverture des capsules non tirée de la source (à vérifier) ; sprue tropicale et syndrome de l’anse borgne non traités (TODO) ; partie 2 ESsCD publiée en 2026 (version PMC lue).
 - K56 : dose et produit de contraste hydrosoluble TODO (aucune FI suisse d’amidotrizoate trouvée dans AIPS) ; antiémétique sans effet prokinétique non désigné par les sources (TODO) ; iléus paralytique postopératoire, invagination et iléus biliaire sans recommandation dédiée lue (TODO) ; causes de l’iléus paralytique et onglet Sciences fondés sur des notions classiques, à vérifier ; image du volvulus du sigmoïde issue d’un enfant.
 - K57 : co-amoxicilline dans la diverticulite non perforée hors libellé explicite de la FI ; onglet Sciences (points faibles vasculaires, loi de Laplace, Hartmann) fondé sur des notions classiques non tirées des recommandations lues : à vérifier ; hémorragie diverticulaire (K57.x1/x3) seulement mentionnée, renvoi à K92 ; recommandation ESCP 2020 non accessible (pas de PMC).
