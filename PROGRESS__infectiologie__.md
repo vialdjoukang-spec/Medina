@@ -26,3 +26,5 @@ Images : `assets/img/infectiologie/` + `ATTRIBUTIONS.json`.
 - A69 : épidémiologie suisse Sentinella 2008–2011 seulement (pas d’estimation nationale plus récente lue).
 - A04 : seuil leucocytaire SSI exprimé en « /mL » (lu comme /µL = 15 G/L).
 - Relecture médicale humaine non effectuée (mentionnée dans chaque en-tête).
+
+- 2026-10-09 : règle images du propriétaire appliquée — 3 schémas auto-dessinés et le SVG espèces A69 supprimés, remplacés par des images réelles sous licence libre (lymphocytome borrélien, Ixodes ricinus, anatomie cutanée Blausen, Gram de C. difficile). Aucune image générée restante.
