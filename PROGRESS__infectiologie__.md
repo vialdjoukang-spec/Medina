@@ -11,6 +11,18 @@ Branche : `course/infectiologie`. Ordre : priority_codes de `organisation/fragme
 | A53 | Syphilis | existant |
 | A69 | Borréliose de Lyme | **écrit** (4 panneaux + pop-up, 3 GIF, glossaire `a69.py`) |
 | A46 | Érysipèle | **écrit** (4 panneaux + pop-up, 3 GIF) |
-| A04 | C. difficile / infections intestinales bactériennes | à faire |
+| A04 | C. difficile / infections intestinales bactériennes | **écrit** (4 panneaux + pop-up, 4 GIF) |
 
 Images : `assets/img/infectiologie/` + `ATTRIBUTIONS.json`.
+
+## Reste à écrire (fragment T1)
+- Pathologies fréquentes vides : A09, A49, B00, B02, B07, B35, B37.
+- priority_codes non écrits : B50 (paludisme), A15, A16 (tuberculose).
+
+## Lacunes nommées / points à vérifier
+- A46 : dose orale d’amoxicilline SSI (500 mg toutes les 12 h, 5 j) vs information Amoxi-Mepha (375–750 mg 3–4×/j, ≥10 j) — à confirmer auprès des auteurs SSI.
+- A46 : SSI en ligne « pipéracilline-tazobactam 4.5 mg » = coquille pour 4,5 g (signalée dans le texte).
+- A46 : aucune incidence suisse d’érysipèle trouvée.
+- A69 : épidémiologie suisse Sentinella 2008–2011 seulement (pas d’estimation nationale plus récente lue).
+- A04 : seuil leucocytaire SSI exprimé en « /mL » (lu comme /µL = 15 G/L).
+- Relecture médicale humaine non effectuée (mentionnée dans chaque en-tête).
