@@ -111,7 +111,32 @@ def portal_v2():
                     % (style, weight, base64.b64encode((ROOT / 'shell/fonts' / name).read_bytes()).decode('ascii'))
                     for name, style, weight in (('ahn-400.woff2', 'normal', '400'), ('ahn-400i.woff2', 'italic', '400'),
                                                 ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700')))
-    return faces + (ROOT / 'engine/portal_v2.css').read_text(encoding='utf-8')
+    return faces + (ROOT / 'engine/portal_v2.css').read_text(encoding='utf-8') + (ROOT / 'engine/portal_v3.css').read_text(encoding='utf-8')
+
+
+def progress(catalogue):
+    """Catégories couvertes et leçons intégrées, d'après l'organisation du fragment construit."""
+    lessons = [lesson for block in catalogue.get('blocks', []) for lesson in block.get('lessons', [])]
+    done = [lesson for lesson in lessons if lesson.get('integrated')]
+    categories = catalogue.get('category_count', 0)
+    covered = min(categories, sum(len(lesson.get('variants') or [lesson]) for lesson in done))
+    return covered, categories, len(done), len(lessons)
+
+
+def gauge(label, part, whole):
+    if not whole:
+        return (f'<span class="gauge" data-empty><span class="gauge-label">{label}</span><span class="gauge-track" aria-hidden="true">'
+                '<span class="gauge-fluid" style="width:0%"></span></span><span class="gauge-value">—</span></span>')
+    pct = round(100 * part / whole)
+    return (f'<span class="gauge" role="img" aria-label="{label} : {part} sur {whole}, {pct} %"><span class="gauge-label">{label}</span>'
+            f'<span class="gauge-track" aria-hidden="true"><span class="gauge-fluid" style="width:{pct}%"></span></span>'
+            f'<span class="gauge-value">{pct} %</span></span>')
+
+
+MOTIFS = (('M4 12h4l2-5 4 10 2-5h4', 'Quatre onglets par cours'),
+          ('M12 3 4 7v6c0 4 3.5 7 8 8 4.5-1 8-4 8-8V7l-8-4Z', 'Sources suisses, puis européennes'),
+          ('M6 4h12v16H6zM9 8h6M9 12h6M9 16h4', 'Information professionnelle Swissmedic'),
+          ('M5 12l4 4 10-10', 'Relecture distincte en deux passes'))
 
 
 def main():
@@ -127,6 +152,7 @@ def main():
     fragments.sort(key=lambda fragment: names[fragment['id']]['order'])
     cards = []
     total_courses = 0
+    totals = [0, 0, 0, 0]
     for fragment in fragments:
         ident = fragment['id']
         filename = f"MEDINA_{ident}_{fragment['slug']}.html"
@@ -147,12 +173,24 @@ def main():
         label = 'cours intégré' if count == 1 else 'cours intégrés'
         search_text = ' '.join([specialty, names[ident]['specialty'], names[ident]['label'], description])
         symbol = ICONS[ident]
+        covered, categories, done, lessons = progress(catalogue)
+        for i, value in enumerate((covered, categories, done, lessons)):
+            totals[i] += value
+        gauges = f'<span class="gauges">{gauge("Catégories", covered, categories)}{gauge("Leçons", done, lessons)}</span>'
         cards.append(f'''<li class="specialty" data-specialty-item data-search="{html.escape(search_text, quote=True)}">
  <a class="specialty-card" href="fragments/{filename}" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" style="--card-accent:{accent};--card-tint:color-mix(in srgb,{accent} 7%,#fffefa)" title="{html.escape(names[ident]['label'], quote=True)}">
   <div class="card-top"><span class="card-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">{symbol}</svg></span><span class="card-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 12 12 4M4 4h8v8"/></svg></span></div>
   <h3>{html.escape(specialty)}</h3><p class="card-description">{html.escape(description)}</p>
   <span class="card-count"><i class="count-dot" aria-hidden="true"></i><span>{count} {label}</span></span>
+  {gauges}
  </a></li>''')
+    covered, categories, done, lessons = totals
+    motifs = ''.join(f'<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="{path}"/></svg>{text}</li>' for path, text in MOTIFS)
+    overview = (f'<div class="overview" data-testid="portal-overview" aria-label="Progression de l’atlas">'
+                f'<div class="overview-item"><b>{covered}<small> / {categories}</small></b><span>catégories couvertes</span>{gauge("Catégories", covered, categories)}</div>'
+                f'<div class="overview-item"><b>{done}<small> / {lessons}</small></b><span>leçons intégrées</span>{gauge("Leçons", done, lessons)}</div>'
+                f'<div class="overview-item"><b>{total_courses}</b><span>cours publiés dans les 22 spécialités</span></div><ul class="motifs" aria-label="Principes de l’atlas">{motifs}</ul></div>'
+                '<p class="legend-note">Jauges : part des catégories de la spécialité couvertes par un cours intégré, puis part des leçons prévues déjà intégrées.</p>')
     page = f'''<!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
 <meta name="description" content="Explorez MEDINA : 22 espaces de spécialité pour lire, comprendre et relier les connaissances médicales.">
@@ -162,7 +200,7 @@ def main():
 <main><section class="hero" aria-labelledby="welcome-title" data-testid="portal-hero"><div><p class="eyebrow">Un espace pour apprendre</p><h1 id="welcome-title">Explorer la médecine,<br><em>une spécialité à la fois.</em></h1><p class="hero-copy">Prenez le temps de comprendre et de relier les savoirs. Choisissez une spécialité pour ouvrir votre espace de lecture.</p><div class="hero-meta"><span><strong>22</strong> spécialités</span><span data-testid="portal-course-total"><strong>{total_courses}</strong> cours intégrés</span></div></div>
 <div class="hero-art" aria-hidden="true"><div class="art-halo"></div><div class="reading-page"><p class="art-note">Le plaisir de comprendre</p><p class="art-title">Un savoir.<br>Plusieurs regards.</p><div class="art-lines"><i></i><i></i><i></i></div><div class="art-subjects"><span>Pathologie</span><span>Examens</span><span>Sciences</span><span>Pharmacologie</span></div><span class="art-seal"><svg width="31" height="31" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M16 5v22M5 16h22m-19-8 16 16m0-16L8 24"/><circle cx="16" cy="16" r="10"/></svg></span></div></div></section>
 <section class="library" id="specialites" aria-labelledby="specialties-title"><div class="library-head"><div><p class="section-kicker">Les espaces de l’atlas</p><h2 id="specialties-title">Quelle spécialité vous intéresse ?</h2><p class="section-copy">Chaque spécialité ouvre ses catégories et ses cours.</p></div><div class="search" role="search"><label class="sr-only" for="specialty-search">Rechercher une spécialité</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="specialty-search" type="search" placeholder="Rechercher une spécialité…" autocomplete="off" aria-controls="specialty-grid" data-testid="specialty-search"><button id="clear-search" type="button" aria-label="Effacer la recherche" hidden>×</button></div></div>
-<p class="search-status" id="search-status" role="status" aria-live="polite" aria-atomic="true" data-testid="search-status">22 spécialités à explorer.</p><ul class="specialties" id="specialty-grid" data-testid="specialty-grid">{''.join(cards)}</ul>
+{overview}<p class="search-status" id="search-status" role="status" aria-live="polite" aria-atomic="true" data-testid="search-status">22 spécialités à explorer.</p><ul class="specialties" id="specialty-grid" data-testid="specialty-grid">{''.join(cards)}</ul>
 <div class="empty" id="search-empty" hidden data-testid="search-empty"><strong>Aucune spécialité trouvée.</strong><span>Essayez un autre nom pour poursuivre votre exploration.</span><br><button id="reset-search" type="button">Voir toutes les spécialités</button></div><noscript><p class="section-copy">Les 22 spécialités restent accessibles ci-dessus. La recherche nécessite JavaScript.</p></noscript></section></main>
 <footer class="footer"><p><span class="footer-brand">MEDINA</span><span class="footer-note">Une spécialité, un espace de lecture.</span></p><a href="organisation.html">Explorer l’organisation de l’atlas ↗</a></footer></div><script>{SCRIPT}</script></body></html>
 '''
