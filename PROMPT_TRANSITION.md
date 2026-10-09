@@ -5,7 +5,7 @@ Version du 9 octobre 2026. Ce document prime sur toute passation antérieure. To
 ## 1. Projet et propriétaire
 - **MEDINA** est l'atlas de cours de médecine du Dr Vial Tato Djoukang (Neuchâtel), qui prépare l'examen fédéral suisse de médecine humaine.
 - **Dépôt** : `vialdjoukang-spec/Medina`, branche par défaut `main`.
-- **Site** : https://vialdjoukang-spec.github.io/Medina/ (22 frontends dans `fragments/`, plus l'accueil).
+- **Site** : https://vialdjoukang-spec.github.io/Medina/ (23 frontends dans `fragments/`, plus l'accueil).
 - **Langue et ton** : français, phrases complètes, densité sans remplissage. Vial dicte souvent : interpréter avec bienveillance.
 - **Autorisations** : accord permanent pour les branches, commits, pushes, PR et fusions dans MEDINA, une fois les contrôles passés.
 
@@ -31,9 +31,9 @@ Version du 9 octobre 2026. Ce document prime sur toute passation antérieure. To
     - Fichiers : `engine/atlas_v4.css`, `engine/harmonie_v5.css`, `engine/portal_v3.css`.
 
 ## 3. Architecture technique
-- **Catalogue** : CIM-10-GM 2024 (source OFS), dans `shell/medina_front.html`. La nosologie complète importée par Codex se trouve dans `nosology/` (`fragments/<ID>.json`, `frequency.json`).
+- **Catalogue** : CIM-10-GM 2024 (source OFS), dans `shell/medina_front.html`, complété depuis l'OFS par le chapitre V (psychiatrie) : 1 715 catégories en tout. La nosologie complète importée par Codex se trouve dans `nosology/` (`fragments/<ID>.json`, `frequency.json`).
 - **Construction** :
-  - `MEDINA_OUT=$PWD/dist python3 build_front.py --all-fragments` construit les 22 frontends (couches `fragment_surface.py` et `engine/*`) ;
+  - `MEDINA_OUT=$PWD/dist python3 build_front.py --all-fragments` construit les 23 frontends (couches `fragment_surface.py` et `engine/*`) ;
   - `python3 build_index.py --fragments-dir dist/fragments --output dist/index.html` construit l'accueil ;
   - la publication sur Pages part automatiquement à chaque push sur `main` (`.github/workflows/pages.yml`).
 - **Enregistrer un cours** :
@@ -167,12 +167,15 @@ Chaque leçon vide suit le plan monographique de base. Les pathologies fréquent
 ## 12. Annexes (la tâche centrale)
 - **Objectif de MEDINA** : produire les **pathologies** qui, ensemble, permettent de satisfaire **toutes** les situations PROFILES 2017 (SSP), en commençant par les pathologies fréquentes. Les SSP sont un critère de couverture, pas une unité de cours.
 - **Annexe A, `ANNEXE_PATHOLOGIES_SSP.md`** (régénérée par `python3 tools/pathologies_ssp.py`) :
-  - 272 pathologies dans les 22 fragments et 16 entités du volet psychiatrique couvrent les **265 SSP sur 265** ;
+  - 291 pathologies, réparties dans les 23 fragments (dont 19 en psychiatrie), couvrent les **265 SSP sur 265** ;
   - les pathologies sont classées par spécialité, dans l'ordre de production ;
   - chaque fiche donne le motif d'inclusion, l'état, la difficulté, les SSP à satisfaire dans ce cours et un plan spécifique numéroté ;
   - une matrice SSP → pathologies termine l'annexe.
   - **C'est la feuille de route de production.**
-- **La psychiatrie** (F00 à F99) est hors des 22 fragments, par décision du projet. Ses 16 entités sont listées dans l'annexe A et forment un volet propre, à produire.
+- **La psychiatrie** (F00 à F99) est le **23e fragment, S09 « P-23-Psychiatrie et psychothérapie »**, depuis la décision de Vial du 9 octobre 2026 :
+  - 79 catégories et 519 codes, chacun doté d'une coquille de leçon et d'un plan psychiatrique (sémiologie, risque suicidaire, psychothérapies, cadre légal suisse) ;
+  - la file de production Claude compte désormais 12 fragments ;
+  - le contrôle `tools/espace.py` n'autorise que cet ajout de S09, à l'état initial.
 - **Annexe B, `ANNEXE_FEUILLE_DE_ROUTE.md`** (`python3 tools/feuille_de_route.py`) : la liste exhaustive des 1 244 catégories marquées « Examen fédéral ». C'est une référence de complétude, à traiter après l'annexe A.
 - **Réserve** : la correspondance SSP → pathologie est pédagogique et non officielle, car PROFILES ne publie aucune table vers la CIM. Elle est à valider, sans la présenter comme officielle.
 - Régénérer les deux annexes après chaque injection.

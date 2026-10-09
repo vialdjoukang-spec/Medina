@@ -49,6 +49,8 @@ def main():
     psy = {}
     for s, targets in MANUAL.items():
         for t in targets:
+            if t.startswith('PSY:') and t[4:] in lessons:
+                t = t[4:]
             if t.startswith('PSY:'):
                 psy.setdefault(t[4:], set()).add(s)
             elif t in lessons:
@@ -59,7 +61,7 @@ def main():
     for c in chosen:
         for s in ssp_of[c]: by_ssp.setdefault(s, []).append(c)
     out = ['# Annexe A — Pathologies couvrant les 265 situations PROFILES (SSP), par spécialité', '',
-           f'**{len(chosen)} pathologies** dans les 22 fragments, plus **{len(psy)} entités du volet psychiatrique** (hors fragments, à produire à part). '
+           f'**{len(chosen)} pathologies** dans les 23 fragments (psychiatrie S09 comprise). '
            f'SSP couvertes : **{len(covered)} / 265**' + (f' ; non couvertes : {missing}.' if missing else ' (toutes).'), '',
            'Motif d’inclusion : *fréquente* (socle clinique), *cours existant*, *couverture SSP* (choisie parce qu’elle couvre des SSP encore manquantes), '
            '*rattachement SSP* (SSP sans pathologie dans la correspondance de Codex, rattachée explicitement). '
@@ -83,9 +85,9 @@ def main():
                     f'- **Motif** : {chosen[c]} · **état** : {state} · **difficulté** : {diff} · chapitre {l.get("chapter")}, bloc {l["block"]}',
                     f'- **SSP à satisfaire dans ce cours** : {ssps or "aucune propre (socle clinique)"}',
                     '- **Plan** : ' + ' → '.join(f'{i}. {t}' for i, t in enumerate(p)), '']
-    out += ['## Volet psychiatrique (F00-F99, hors des 22 fragments)', '',
-            'Exclu des fragments par décision du projet (« la psychiatrie fera l’objet d’un volet propre », PROMPT_MEDINA.md). Entités nécessaires pour couvrir les SSP :', '']
-    out += [f'- **{f}** : SSP ' + ', '.join(f'{s} {SSP[str(s)]}' for s in sorted(v)) for f, v in sorted(psy.items())]
+    if psy:
+        out += ['## Entités psychiatriques hors catalogue', '']
+        out += [f'- **{f}** : SSP ' + ', '.join(f'{s} {SSP[str(s)]}' for s in sorted(v)) for f, v in sorted(psy.items())]
     out += ['', '## Matrice SSP → pathologies', '', '| SSP | Situation | Pathologies |', '|---|---|---|']
     for s in range(1, 266):
         cs = by_ssp.get(s, []) + [f'psy {f}' for f, v in psy.items() if s in v]
