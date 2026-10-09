@@ -38,3 +38,8 @@ OWNER RULES, JUSTIFICATION & STYLE:
 - Be concise without omitting anything: concision means no padding, never less content. Nothing may be missing.
 
 OWNER ORDER, MANDATORY RETRO-SWEEP (in force now): before continuing new lessons, sweep ALL lessons of your specialty already on main, starting from the first one, and check each against EVERY rule in this brief (truth checkpoint, real images only incl. in windows, connectors written naturally, complete sentences only, interactive terms/windows, justification of every term/diagnostic choice/therapeutic decision, deep simple pathophysiology explanations under every element, exact verified doses and ICD-10-GM codes, nothing missing, no padding). Fix every gap, deliver each corrected lesson to main (refresh gauges), log the sweep status per lesson in your PROGRESS file. Then resume your new-lesson progression.
+
+DELIVERY GUARD (owner decision, 9–10 Oct 2026 — see docs/collaboration/instructions/DECISION_VIAL_2026-10-10_DESCELLEMENT_ET_INJECTION_DIRECTE.md):
+- All lessons are unsealed (`organisation/SCELLES.json` has `"scelle": false`); you may correct any lesson of your specialty.
+- Before EVERY commit that touches `chapters/`, `glossary/` or `chapters.json`, run `python3 tools/sceller.py enregistrer` and include `organisation/SCELLES.json` in the same commit. Without it, the CI check "Garde des fragments" and the GitHub Pages publication fail and your lesson does not reach the public site. On a merge conflict in `organisation/SCELLES.json`, take either side, then re-run `python3 tools/sceller.py enregistrer` and commit.
+- Never edit `tools/espace.py`, `tools/sceller.py`, `tools/provisional_integration.py` or the workflows.
