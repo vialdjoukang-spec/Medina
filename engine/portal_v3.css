@@ -107,7 +107,9 @@ html body .specialty-card .card-symbol,html body .specialty-card .card-symbol *{
 html body .specialty-card .card-symbol{box-shadow:0 0 0 3px #fff,0 0 0 5px color-mix(in srgb,var(--v) 35%,#fff)!important}
 html body :is(.brand-symbol,.search input){border-color:#00b4c6!important}
 /* Consigne finale de Vial : des couleurs vives et vivantes, rien de plus. */
-html body{background-image:linear-gradient(180deg,#e9f7ff 0,#f2fbff 520px,#eefbe8 100%)!important;background-size:100% 100%!important}
+/* Fluidité du défilement : dégradé fixe porté par un calque composité, sans background-attachment:fixed. */
+html body{background-image:none!important;background-attachment:scroll!important}
+html body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#e9f7ff 0,#f2fbff 520px,#eefbe8 100%)}
 html body .hero-art,html body .hero::after{display:none!important}
 html body .hero{grid-template-columns:1fr!important}
 html body .overview{background:linear-gradient(120deg,#1e88e5,#1fbf8f 60%,#ffc93c)!important}
