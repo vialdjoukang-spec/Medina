@@ -24,6 +24,7 @@ Statut des cours : rédigés et contrôlés techniquement (abréviations, fenêt
 | K58 | Syndrome de l’intestin irritable | S3 DGVS/DGNM 2021 ; FI Colpermin, Duspatalin, Imodium, Constella, Saroten | 3 images réelles (Bristol, coloscopie, psyllium) ; 15 fenêtres ; règles justification et phrases complètes appliquées |
 | K59 | Autres troubles fonctionnels de l’intestin : constipation chronique (K59.0 ; K59.1-K59.4 signalés) | 5 (Commons, dont 3 aussi dans les fenêtres) | S2k DGVS/DGNM 2022 constipation chronique ; FI Movicol®, Duphalac®, Dulcolax®, Laxoberon®, Resolor®, Constella®, Moventig®, Relistor® |
 | K60 | Fissure et fistule des régions anale et rectale (fissure aiguë/chronique, fistule cryptoglandulaire) | 4 (Commons, dont 4 aussi dans les fenêtres) | S3 Analfissur 2020 (DGK, avec SGVC/Suisse), S3 Analfistel 2026 (DGAV/DGK) ; FI Rectogesic®, BOTOX® |
+| | Abcès des régions anale et rectale (subanodermique, intersphinctérien, ischio-anal, supralévatorien ; Fournier) | 5 (Commons, dont 3 aussi dans les fenêtres) | S3 Analabszess 2026 (DGAV/DGK, avec Koloproktologie Schweiz), S3 Analfistel 2026 |
 
 ## Amendements du propriétaire appliqués (09.10.2026)
 - Règle linguistique : connecteurs et transitions (`liaisons.py`, plans `chapitres/K92_liaisons.py`, `K25_liaisons.py` ; rédaction native dès K21).
@@ -37,6 +38,7 @@ Priorité examen fédéral (jauge `federal_exam`, 13/89 rédigées au 09.10.2026
 Règles propriétaire ajoutées le 09.10.2026 : RAPPEL VERITE en tête de chaque chapitre ; images réelles aussi dans les fenêtres ; commentaire explicatif (physiopathologie) sous chaque image et tableau ; pas d’îlot ni de tableau consacré aux codes CIM.
 
 ## Points ouverts
+- K61 : molécule et posologie de l’antibiothérapie d’exception (5-7 j) non fixées par la S3 : protocole local, source suisse TODO ; antalgie sans molécule recommandée ; image de Fournier après débridement (contexte non suisse)
 - K60 : inhibiteurs calciques locaux (nifédipine 0,2 %, diltiazem 2 %) magistraux hors indication, fréquence d’application non précisée par la S3 lue (TODO) ; toxine botulique hors indication en Suisse ; céphalées sous nitrés 30 % (S3) vs 57 % (FI Rectogesic®) à arbitrer ; image endoscopique de fissure chronique interprétée d’après la description du fichier
 - K59 : linaclotide hors indication suisse dans la constipation chronique (FI Constella® : SII-C seulement) ; lubiprostone cité par la S2k comme autorisé en Suisse, mais aucune FI Amitiza® dans AIPS (TODO) ; diarrhée fonctionnelle, intestin neurogène, mégacôlon et spasme anal sans recommandation lue (TODO)
 - K58 : amitriptyline et rifaximine hors indication suisse (doses S3) ; à valider.
