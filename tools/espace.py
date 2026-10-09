@@ -303,8 +303,16 @@ def validate_fragment_guard(before, after):
                     fragment["locked_files"]):
                 raise FragmentError(f"{ident} : activation avec fragment prétendument validé ou injecté interdite.")
         return []
-    if set(old) != set(new):
+    added = set(new) - set(old)
+    # Seule exception : l'ajout unique de S09 (Psychiatrie), à l'état initial, décidé par Vial le 09.10.2026.
+    if set(old) - set(new) or added - {"S09"}:
         raise FragmentError("Ajout ou suppression de fragment interdit.")
+    for ident in added:
+        fragment = new[ident]
+        if (fragment["status"] not in INITIAL_STATES or fragment["complete"] or fragment["locked_files"] or
+                any(fragment[key] is not None for key in ("internal_review", "cross_audit", "injection"))):
+            raise FragmentError(f"{ident} : un fragment ajouté doit être à l'état initial.")
+    new = {ident: fragment for ident, fragment in new.items() if ident not in added}
     authorized = {}
     locked = {}
     errors = []
