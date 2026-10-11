@@ -2,133 +2,136 @@
   "code": "D50",
   "actor": "C01-R-HEM",
   "runtime_agent_id": "/root/c01_r_hem",
-  "checked_at": "2026-10-11T19:07:33.134483+00:00",
   "medical_human_validation": false,
-  "actual_loaded_definitions": {
-    "Hb": {
-      "lit": [
-        [
-          "H",
-          "Hémo-"
-        ],
-        [
-          "b",
-          "-globine"
-        ]
-      ],
-      "full": "Hémoglobine",
-      "def": "<p>Anémie si Hb &lt; 130 g/L (homme) ou &lt; 120 g/L (femme) selon l’OMS.</p>",
-      "ref": null
-    },
-    "VGM": {
-      "lit": [
-        [
-          "V",
-          "Volume"
-        ],
-        [
-          "G",
-          "Globulaire"
-        ],
-        [
-          "M",
-          "Moyen"
-        ]
-      ],
-      "full": "Volume globulaire moyen",
-      "def": "<p>Taille moyenne des globules rouges ; sa hausse est un marqueur indirect de consommation chronique d’alcool.</p>",
-      "ref": null
-    },
-    "MICI": {
-      "lit": [
-        [
-          "M",
-          "Maladies"
-        ],
-        [
-          "I",
-          "Inflammatoires"
-        ],
-        [
-          "C",
-          "Chroniques de l’"
-        ],
-        [
-          "I",
-          "Intestin"
-        ]
-      ],
-      "full": "Maladies inflammatoires chroniques de l’intestin",
-      "def": "<p>Maladie de Crohn et rectocolite hémorragique.</p>",
-      "ref": null
-    }
-  },
-  "source_paths": [
-    {
-      "key": "Hb",
-      "path": "glossary/cardio_1.py",
-      "sha256": "c687b9000eb735b0306261ed28fee05b74ae9f2bcd456d26faeb54fefc594c84"
-    },
-    {
-      "key": "VGM",
-      "path": "glossary/g04_gastro.py",
-      "sha256": "d46e8ed5a19b2f36c3b49150ce31eb9abb6176bafe3d6fd3dff3d182507a4d5d"
-    },
-    {
-      "key": "MICI",
-      "path": "glossary/g04_gastro.py",
-      "sha256": "d46e8ed5a19b2f36c3b49150ce31eb9abb6176bafe3d6fd3dff3d182507a4d5d"
-    }
-  ],
-  "observation": "Le glossaire partagé Hb ne précise ni la population adulte non enceinte ni les seuils gestationnels. Les définitions VGM et MICI restent nominales et les ajouts conditionnels D50 ne les écrasent pas. La portée clinique du seuil Hb est correctement explicitée dans D50, mais sa définition commune rend une déclaration exhaustive de conformité trop large. Aucun glossaire partagé n’est modifié par l’auteur.",
-  "status": "corrected_in_D50_without_shared_glossary_mutation",
-  "observed_pre_correction_final_files": [
-    {
-      "path": "chapters/D50/D50_a.html",
-      "sha256": "c0f4beecdc975b6910b9c81f2e096948013a93bd06b896a092af0c087e846ef5"
-    },
-    {
-      "path": "chapters/D50/D50_b.html",
-      "sha256": "c3d15c21a5aa019abafdf43a510644fd8a439096604bbe372409f10aa7ed45f2"
-    },
-    {
-      "path": "chapters/D50/D50_c.html",
-      "sha256": "c09634f200c4256e7d90c7767d9103fd50bb946ea4b2e61cc5c6177a5d7d62da"
-    },
-    {
-      "path": "chapters/D50/D50_d.html",
-      "sha256": "3d2db56d07b89df1ec8e6d61cf58d6c5aceca0ff58141abc353ce5cc1107e3d2"
-    },
-    {
-      "path": "chapters/D50/D50_pop1.html",
-      "sha256": "ad5b0f4efd02dbecd55a41094153ae459accb293447d64bc93f10b02cd67a6bc"
-    },
-    {
-      "path": "chapters/D50/D50_pop2.html",
-      "sha256": "e639512d2a02fcf9014f678482a5897e70c6292982878afa779fd53d67cf0f2f"
-    },
-    {
-      "path": "glossary/d50.py",
-      "sha256": "d3f999480d5ac4dccd2c8d597a6921a4b5789d826d8445dac13430ccda7217ae"
-    }
-  ],
+  "checked_at": "2026-10-11T20:31:31.064753+00:00",
   "final_files": {
-    "chapters/D50/D50_a.html": "e33873f46edcd07d6ed09ef4f2c99a84d997c60d10fe7b1322eea40f29129723",
-    "chapters/D50/D50_b.html": "56fc81081526d12807fb23078ca4b3afc2ea181f0606a0dae37c9ad2b1e2ebd0",
-    "chapters/D50/D50_c.html": "6b91ff9129f21df9a55486b88786de0898baf09d4cb75ff034ed2c6fe73893b1",
-    "chapters/D50/D50_d.html": "4da171fd0916bb5bceb6a3aea525559a99acbf41db3a0be5a92244b0c2cb3664",
-    "chapters/D50/D50_pop1.html": "7750306d3772144c2a27c839adf3f4ec3fd07f68839f60c8b896336b9a7e3ea1",
-    "chapters/D50/D50_pop2.html": "4d949acc39d0e7e8e622b9b71f5f6c5f6bb85ac007e1f5e9a623fa470acef2bb",
-    "glossary/d50.py": "eb855036ca82b9887b0f55a32b69e6346ac8be4b955225cdb44c42bf48c0daca"
+    "chapters/D50/D50_a.html": "ec7a387ddbe40fa741272a4f6c730e54e55048349539e1faa99fc8c7151a2a0d",
+    "chapters/D50/D50_b.html": "5563a482609e0d4c8673f60e7d69a1432d013d7e0ca94b2a2b609e71de24e61a",
+    "chapters/D50/D50_c.html": "75e2d88608c0ec6dbe8c69ed922268cc97f8229b03af38d6fc88cef305b2e1b2",
+    "chapters/D50/D50_d.html": "1769f7e808eb632c6cdc4948898d6d8c2be2851b45a8f0a5d53462dd3f9cac2f",
+    "chapters/D50/D50_pop1.html": "3280813d6bf5f4f4e6e50d5c983f15b2539e56d3fb2cb691f6a1c6cd02e30766",
+    "chapters/D50/D50_pop2.html": "4122c0ad363deb4661c183a8ce018780af85e116ecf5181e79830a5f676c0e06",
+    "glossary/d50.py": "13c1e24b3c148a299cd9a6c112bcd5a7e839a50a7edc9427ebf51a8835fd80e2"
   },
-  "corrected_at": "2026-10-11T19:19:01.037238+00:00",
-  "resolution": "L’auteur développe les trois termes dans les six HTML et ses propres définitions. Les notions ouvrent d50-anemie-def, d50-volume-globulaire et d50-mici. Les sources historiques du glossaire partagé restent inchangées ; toutes les surfaces visibles du cours et les 68 fenêtres ont été contrôlées sur ordinateur et mobile : aucun déclencheur data-ab Hb, VGM ou MICI.",
+  "actual_loaded_definitions": [
+    {
+      "key": "OMS",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nO\nOr­ga­ni­sa­tion\nM\nMon­diale\nS\nde la Santé\n\nOMS = Or­ga­ni­sa­tion mon­diale de la santé\n\nRes­pon­sable de la Clas­si­fi­ca­tion in­ter­na­tio­nale des ma­la­dies.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "SGH",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nS\nSchwei­ze­rische (suisse)\nG\nGe­sell­schaft (so­ciété)\nH\nfür Hä­ma­to­lo­gie (d’hé­ma­to­lo­gie)\n\nSGH = So­ciété suisse d’hé­ma­to­lo­gie\n\nLa So­ciété suisse d’hé­ma­to­lo­gie par­ti­cipe au guide com­mun On­ko­pe­dia sur la ca­rence mar­tiale, ver­sion avril 2025.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "SSH",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nS\nSo­ciété\nS\nSuisse\nH\nd’Hé­ma­to­lo­gie\n\nSSH = So­ciété suisse d’hé­ma­to­lo­gie\n\nSSH dé­signe en fran­çais la SGH, qui par­ti­cipe au guide On­ko­pe­dia sur la ca­rence mar­tiale.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "TCMH",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nT\nTe­neur\nC\nCor­pus­cu­laire\nM\nMoyenne\nH\nen Hé­mo­glo­bine\n\nTCMH = Te­neur cor­pus­cu­laire moyenne en hé­mo­glo­bine\n\nLa TCMH me­sure la quan­tité moyenne d’hé­mo­glo­bine par hé­ma­tie, ex­pri­mée en pi­co­grammes. Une va­leur in­fé­rieure à 28 pg dé­fi­nit l’hy­po­chro­mie ; le seuil exact dé­pend du la­bo­ra­toire. Elle est plus fiable que le vo­lume glo­bu­laire moyen pour re­pé­rer une ca­rence mar­tiale, car elle dé­pend moins du délai d’ana­lyse et de l’au­to­mate (BSG 2021).\n\nAP­PRO­FON­DIS­SE­MENT — STADES DE LA CA­RENCE : RÉ­SERVES ET ÉRY­THRO­POÏÈSE\nProgression décrite par Onkopedia 2025\nDé­plé­tion des ré­serves. La fer­ri­tine di­mi­nue ; hé­mo­glo­bine et in­dices glo­bu­laires res­tent nor­maux. Il n’existe pas en­core de res­tric­tion éry­thro­poïé­tique dé­mon­trée.\nÉry­thro­poïèse ca­ren­cée. L’ap­pro­vi­sion­ne­ment mé­dul­laire de­vient in­suf­fi­sant ; contenu ré­ti­cu­lo­cy­taire en hé­mo­glo­bine bas, hé­ma­ties hy­po­chromes et mar­queurs d’in­cor­po­ra­tion per­tur­bés peuvent ap­pa­raître avant la baisse d’hé­mo­glo­bine.\nAné­mie fer­ri­prive. L’hé­mo­glo­bine passe sous le seuil ap­pli­cable ; hy­po­chro­mie et mi­cro­cy­tose sont fré­quentes, mais peuvent man­quer au début ou dans une ca­rence mixte.\n\nLes mar­queurs de res­tric­tion, no­tam­ment pro­to­por­phy­rine de zinc et ré­cep­teur so­luble, ne doivent pas être dé­crits comme for­cé­ment éle­vés dans une simple dé­plé­tion iso­lée. Les seuils pré­cis dé­pendent de la mé­thode ana­ly­tique.\n\nLe guide On­ko­pe­dia traite les stades avec res­tric­tion éry­thro­poïé­tique. Pour le seul stade de ré­serves basses, la dé­ci­sion dé­pend de si­tua­tions par­ti­cu­lières ; les po­si­tions suisses sur la fa­tigue sans ané­mie di­vergent, comme l’ex­plique la com­pa­rai­son des seuils et in­di­ca­tions.\n\nRé­fé­rences : On­ko­pe­dia, guide com­mun avec SGH/SSH et SGMO, avril 2025 ; Clé­nin, Swiss Med Wkly 2017 ; Del­phi suisse 2019, degré d’ac­cord in­di­qué dans le texte ; mediX, mise à jour 08/2025.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "TSAT",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nT\nTrans­fer­rine\nSAT\nSATuration\n\nTSAT = Sa­tu­ra­tion de la trans­fer­rine\n\nLa TSAT rap­porte le fer sé­rique à la ca­pa­cité to­tale de fixa­tion de la trans­fer­rine, en pour cent. Une va­leur in­fé­rieure à 20 % sou­tient une dis­po­ni­bi­lité in­suf­fi­sante du fer, pour l’éry­thro­poïèse selon le contexte, que les ré­serves soient vides ou sé­ques­trées par l’in­flam­ma­tion. L’abré­via­tion vient de l’an­glais trans­fer­rin sa­tu­ra­tion.\n\nAP­PRO­FON­DIS­SE­MENT — SA­TU­RA­TION DE LA TRANS­FER­RINE : MÉ­THODE ET IN­TER­PRÉ­TA­TION\nDéfinition et valeur normale\n\nLa TSAT est le rap­port du fer sé­rique à la ca­pa­cité to­tale de fixa­tion de la trans­fer­rine, en pour cent. Une mo­lé­cule de trans­fer­rine fixe au plus deux ions de fer ; à 50 % de sa­tu­ra­tion, elle porte en moyenne un ion. On­ko­pe­dia 2025 donne un in­ter­valle usuel de 16 à 45 % : il doit être confronté à celui du la­bo­ra­toire, et ne se ré­duit pas au seuil thé­ra­peu­tique de 20 %.\n\nInterprétation\n\nUne va­leur basse sou­tient une res­tric­tion de dis­po­ni­bi­lité du fer. Le Del­phi suisse 2019 uti­lise < 20 % dans plu­sieurs contextes ; On­ko­pe­dia 2025 dé­crit ≤ 15 % pour une éry­thro­poïèse ca­ren­cée. Cette dif­fé­rence dé­pend de la ques­tion cli­nique : au­cune va­leur unique ne dis­tingue seule des ré­serves vides d’une sé­ques­tra­tion in­flam­ma­toire.\n\nLe fer sé­rique varie selon l’heure et baisse sous in­flam­ma­tion. La trans­fer­rine, pro­téine né­ga­tive de phase aiguë, peut éga­le­ment bais­ser et mo­di­fier le rap­port. Une me­sure peu après la prise orale est trom­peuse : l’in­for­ma­tion pro­fes­sion­nelle Fe­rac­cru® ob­serve un pic de TSAT une heure et demie à trois heures après l’ad­mi­nis­tra­tion. La ré­ponse cli­nique et le reste du bilan dé­ter­minent l’in­ter­pré­ta­tion.\n\nRé­fé­rences : On­ko­pe­dia, guide com­mun avec SGH/SSH et SGMO, avril 2025 ; Del­phi suisse 2019, degré d’ac­cord in­di­qué dans le texte ; in­for­ma­tion pro­fes­sion­nelle suisse Fe­rac­cru®, août 2021 ; Ho­ving et al., Br J Hae­ma­tol 2025, avis d’ex­perts.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "OFSP",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nO\nOf­fice\nF\nFé­dé­ral\nS\nde la Santé\nP\nPu­blique\n\nOFSP = Of­fice fé­dé­ral de la santé pu­blique (Suisse)\n\nAu­to­rité fé­dé­rale : plan de vac­ci­na­tion suisse, exa­men fé­dé­ral de mé­de­cine hu­maine, liste des spé­cia­li­tés rem­bour­sées.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "BSG",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nB\nBri­tish\nS\nSo­ciety of\nG\nGas­troen­te­ro­logy\n\nBSG = So­ciété bri­tan­nique de gas­troen­té­ro­lo­gie\n\nSo­ciété sa­vante eu­ro­péenne (Royaume-Uni) ; au­teur de la re­com­man­da­tion de 2019 sur l’hé­mor­ra­gie di­ges­tive basse aiguë.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "ACPGBI",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nA\nAs­so­cia­tion\nCP\nof ColoProctology (de co­lo­proc­to­lo­gie)\nGB\nof Great Bri­tain (de Grande-Bre­tagne)\nI\nand Ire­land (et d’Ir­lande)\n\nACPGBI = As­so­cia­tion de co­lo­proc­to­lo­gie de Grande-Bre­tagne et d’Ir­lande\n\nCette as­so­cia­tion est par­te­naire de la BSG pour la cla­ri­fi­ca­tion 2025 du test im­mu­no­chi­mique fécal dans l’ané­mie fer­ri­prive.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "MonoFer",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nMonoFer\nnom com­mer­cial suisse du dé­ri­so­mal­tose fer­rique, et non abré­via­tion dé­ve­lop­pable lettre à lettre\n\nMonoFer = MonoFer® — dé­ri­so­mal­tose fer­rique\n\nMonoFer® est une pré­pa­ra­tion in­tra­vei­neuse suisse. Les doses, contre-in­di­ca­tions et pré­cau­tions propres au pro­duit sont dé­taillées dans la fe­nêtre.\n\nAP­PRO­FON­DIS­SE­MENT — DÉ­RI­SO­MAL­TOSE FER­RIQUE : MONOFER®\nMécanisme et indication\n\nLe com­plexe fer­rique-glu­ci­dique per­met une li­bé­ra­tion contrô­lée de fer bio­dis­po­nible vers les pro­téines de trans­port et de sto­ckage. MonoFer® traite une ca­rence lorsque le fer oral est in­ef­fi­cace ou in­uti­li­sable, ou qu’une as­si­mi­la­tion ra­pide est cli­ni­que­ment né­ces­saire ; le dé­fi­cit est confirmé bio­lo­gi­que­ment.\n\nPreuve et limite\n\nL’in­for­ma­tion pro­fes­sion­nelle rap­porte chez 351 pa­tients hé­mo­dia­ly­sés une ef­fi­ca­cité non in­fé­rieure à celle du fer-sac­cha­rose pour la dose to­tale étu­diée de 500 mg. En re­vanche, la non-in­fé­rio­rité n’a pas été dé­mon­trée dans l’essai de 338 pa­tients avec ma­la­die in­tes­ti­nale com­pa­rant une dose cal­cu­lée selon Gan­zoni mo­di­fié au sul­fate oral. La méta-ana­lyse eu­ro­péenne 2021 trouve moins d’hy­po­phos­pha­té­mies qu’avec le car­boxy­mal­tose, mais les es­sais et les doses sont hé­té­ro­gènes : elle ne ga­ran­tit pas l’ab­sence de cet effet.\n\nDose autorisée\n\nLa per­fu­sion ne dé­passe pas 20 mg/kg par ad­mi­nis­tra­tion et par se­maine. Jusqu’à 1000 mg, elle dure plus de quinze mi­nutes ; au-delà, au moins trente mi­nutes. Un be­soin dé­pas­sant 20 mg/kg se frac­tionne à au moins une se­maine d’in­ter­valle. Le bolus ne dé­passe pas 500 mg, jusqu’à trois fois par se­maine, sans dé­pas­ser la li­mite heb­do­ma­daire. La di­lu­tion au chlo­rure de so­dium à 0,9 % suit l’in­for­ma­tion pro­fes­sion­nelle. L’hé­mo­glo­bine se me­sure au plus tôt quatre se­maines après la der­nière ad­mi­nis­tra­tion.\n\nSécurité et terrains\n\nLe pro­duit est contre-in­di­qué au pre­mier tri­mestre, en cas de sur­charge, d’ané­mie non fer­ri­prive ou de ma­la­die hé­pa­tique dé­com­pen­sée. Une hy­per­sen­si­bi­lité au pro­duit ou une hy­per­sen­si­bi­lité grave à un autre fer pa­ren­té­ral le contre-in­diquent éga­le­ment. L’in­for­ma­tion pro­fes­sion­nelle ne de­mande pas d’adap­ta­tion ré­nale. Les don­nées hé­pa­tiques in­suf­fi­santes im­posent pru­dence et bilan mar­tial ; aucun schéma n’est éta­bli avant dix-huit ans.\n\nL’ad­mi­nis­tra­tion exige per­son­nel formé, ré­ani­ma­tion dis­po­nible et sur­veillance pen­dant au moins trente mi­nutes. Le trai­te­ment s’in­ter­rompt en cas de ré­ac­tion, d’ex­tra­va­sa­tion ou de bac­té­rié­mie. Après le pre­mier tri­mestre, il de­mande in­di­ca­tion mo­ti­vée, éva­lua­tion bé­né­fice-risque et sur­veillance fœ­tale. Le pas­sage dans le lait est faible dans les don­nées dis­po­nibles. Le pro­duit ne s’as­so­cie pas au fer oral ; le suivi vé­ri­fie l’ef­fi­ca­cité et le risque de sur­charge.\n\nRé­fé­rences : in­for­ma­tion pro­fes­sion­nelle suisse MonoFer®, juin 2026 ; Schae­fer et al., méta-ana­lyse 2021.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "mediX",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nmediX\nnom propre d’un ré­seau suisse de mé­de­cins de fa­mille, non acro­nyme\n\nmediX = Ré­seau de mé­de­cins de fa­mille mediX\n\nRé­seau suisse qui pu­blie des re­com­man­da­tions de pra­tique pour la mé­de­cine de pre­mier re­cours ; sa re­com­man­da­tion « Hy­per­to­nie » (ré­vi­sée en 2024, mise à jour en 2025) s’ap­puie sur l’ESC 2024.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "DMT1",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nD\nDi­va­lent (di­va­lent)\nM\nMetal (des mé­taux)\nT\nTrans­por­ter (trans­por­teur)\n1\ntype 1\n\nDMT1 = Trans­por­teur des mé­taux di­va­lents de type 1\n\nDMT1 est une pro­téine api­cale de l’en­té­ro­cyte qui fait en­trer le fer ali­men­taire. Son ex­pres­sion aug­mente en cas d’hy­poxie et de ca­rence.\n\nAP­PRO­FON­DIS­SE­MENT — ANA­TO­MIE ET BIO­CHI­MIE DE L’AB­SORP­TION DU FER\nDu tube digestif au plasma\n\nLe duo­dé­num est le prin­ci­pal site d’ab­sorp­tion ; le jé­ju­num proxi­mal y par­ti­cipe. À la mem­brane api­cale, le cy­to­chrome b duo­dé­nal ré­duit le fer fer­rique Fe³⁺ en fer fer­reux Fe²⁺, qui peut fran­chir la mem­brane grâce à DMT1. Le pas­sage ba­so­la­té­ral dé­pend de la fer­ro­por­tine. L’hé­phæs­tine, une fer­roxy­dase conte­nant du cuivre, ré­oxyde le Fe²⁺ en Fe³⁺ avant son trans­port lié à la trans­fer­rine.\n\nDe la cellule normale à la carence\n\nL’en­té­ro­cyte stocke aussi du fer dans la fer­ri­tine. Si l’hep­ci­dine pro­voque l’in­ter­na­li­sa­tion puis la dé­gra­da­tion de la fer­ro­por­tine, l’ex­port di­mi­nue. En ca­rence, plu­sieurs pro­téines de ce sys­tème sont da­van­tage ex­pri­mées ; cette adap­ta­tion de­meure li­mi­tée et peut être dé­pas­sée par les pertes. Une dé­ri­va­tion di­ges­tive peut sous­traire les sites d’ab­sorp­tion au tra­jet des ali­ments.\n\nScience → cli­nique, exa­men, trai­te­ment. Une ali­men­ta­tion suf­fi­sante n’ex­clut donc pas une ma­lab­sorp­tion. Une fer­ri­tine basse do­cu­mente les ré­serves épui­sées ; si une ma­lab­sorp­tion ex­plique l’échec du fer oral cor­rec­te­ment uti­lisé, une sub­sti­tu­tion in­tra­vei­neuse peut contour­ner l’étape in­tes­ti­nale, après vé­ri­fi­ca­tion de l’in­di­ca­tion et de la pré­pa­ra­tion.\n\nRé­fé­rences : On­ko­pe­dia, guide com­mun avec SGH/SSH et SGMO, avril 2025 ; BSG, re­com­man­da­tions adultes 2021.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "dL",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nd\ndéci-, fac­teur 0,1\nL\nlitre\n\ndL = Dé­ci­litre\n\nUn dé­ci­litre cor­res­pond à 0,1 litre. Une concen­tra­tion de 1 mg/dL cor­res­pond donc à 10 mg/L.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "TMPRSS6",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nTM\nTransMembrane (trans­mem­bra­naire)\nPRSS\nPRotease, Se­rine (pro­téase à sé­rine)\n6\nmembre 6\n\nTMPRSS6 = Gène de la pro­téase trans­mem­bra­naire à sé­rine 6 (ma­trip­tase-2)\n\nTMPRSS6 code la ma­trip­tase-2, qui freine la syn­thèse hé­pa­tique d’hep­ci­dine par la voie hé­pa­tique des pro­téines mor­pho­gé­né­tiques os­seuses et de leurs mé­dia­teurs de si­gna­li­sa­tion. Ses va­riants pa­tho­gènes causent l’ané­mie fer­ri­prive ré­frac­taire au fer.\n\nAP­PRO­FON­DIS­SE­MENT — ANÉ­MIE FER­RI­PRIVE RÉ­FRAC­TAIRE AU FER\n\nL’ané­mie ré­frac­taire par ca­rence en fer est une ma­la­die hé­ré­di­taire rare due à des va­riants pa­tho­gènes de TMPRSS6. Ce gène code la ma­trip­tase-2 ; son at­teinte main­tient l’hep­ci­dine éle­vée mal­gré la ca­rence.\n\nRE­CON­NAÎTRE\n\nLe pa­tient pré­sente une ané­mie hy­po­chrome mi­cro­cy­taire avec TSAT très basse, sou­vent in­fé­rieure à 10 %, sans in­flam­ma­tion. La fer­ri­tine reste re­la­ti­ve­ment conser­vée. La ré­ponse au fer oral est nulle ou par­tielle, et la ré­ponse in­tra­vei­neuse in­com­plète. Un rap­port TSAT/hep­ci­dine bas peut aider, selon une mé­thode stan­dar­di­sée et un in­ter­valle adapté à l’âge. Le diag­nos­tic as­so­cie pro­fil cli­nique et ana­lyse gé­né­tique, après ex­clu­sion des causes ac­quises.\n\nTRAI­TER\n\nLa ré­ponse au fer in­tra­vei­neux est sou­vent plus re­pro­duc­tible mais par­tielle ; au­cune re­com­man­da­tion in­ter­na­tio­nale fon­dée sur des es­sais n’existe, et la conduite re­pose sur des avis d’ex­perts.\n\nRé­fé­rence : Ho­ving et al., Br J Hae­ma­tol 2025.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "AEGIS",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nAEGIS\nnom d’es­sais du mal­tol fer­rique ; aucun dé­ve­lop­pe­ment lit­té­ral fourni par l’in­for­ma­tion pro­fes­sion­nelle suisse\n\nAEGIS = Es­sais AEGIS du mal­tol fer­rique\n\nAEGIS dé­signe des pro­grammes d’es­sais chez les pa­tients at­teints de ma­la­dies in­flam­ma­toires in­tes­ti­nales ou de ma­la­die ré­nale, dé­crits dans l’in­for­ma­tion pro­fes­sion­nelle Fe­rac­cru®.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "H1",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nH\nHis­ta­mine\n1\nré­cep­teur de type 1\n\nH1 = Ré­cep­teur H1 de l’his­ta­mine\n\nMédie pru­rit, va­so­di­la­ta­tion, per­méa­bi­lité ca­pil­laire ; cible des an­ti­his­ta­mi­niques.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "FGF23",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nF\nFi­bro­blast (des fi­bro­blastes)\nG\nGrowth (de crois­sance)\nF\nFac­tor (fac­teur)\n23\nnu­méro 23\n\nFGF23 = Fac­teur de crois­sance des fi­bro­blastes 23\n\nFGF23 est une hor­mone phos­pha­tu­rique pro­duite par l’os. Cer­taines pré­pa­ra­tions de fer in­tra­vei­neux, sur­tout le car­boxy­mal­tose, élèvent sa forme in­tacte : le rein perd du phos­phate et l’ac­ti­va­tion de la vi­ta­mine D di­mi­nue.\n\nAP­PRO­FON­DIS­SE­MENT — HY­PO­PHOS­PHA­TÉ­MIE APRÈS FER IN­TRA­VEI­NEUX\nDu mécanisme au symptôme\n\nLe car­boxy­mal­tose peut aug­men­ter for­te­ment le FGF23 in­tact. Ce fac­teur di­mi­nue la ré­ab­sorp­tion ré­nale du phos­phate et l’ac­ti­va­tion de la vi­ta­mine D. La baisse de cal­ci­triol puis la ré­ponse de pa­ra­thor­mone peuvent pro­lon­ger la perte de phos­phate. Une fa­tigue ag­gra­vée, des my­al­gies ou des dou­leurs os­seuses après per­fu­sion de­mandent donc une éva­lua­tion, et ne si­gni­fient pas né­ces­sai­re­ment une ca­rence per­sis­tante.\n\nFréquence et portée des chiffres\n\nLa méta-ana­lyse eu­ro­péenne de 42 es­sais pu­bliée en 2021 trouve des taux grou­pés d’hy­po­phos­pha­té­mie de 47 % après car­boxy­mal­tose et 4 % après dé­ri­so­mal­tose. Jusqu’à 45 % des pa­tients res­taient hy­po­phos­pha­té­miques à la fin d’études al­lant jusqu’à trois mois. Les seuils, po­pu­la­tions et contrôles étaient hé­té­ro­gènes ; ces chiffres ne sont pas une pro­ba­bi­lité per­son­nelle constante.\n\nRisques et surveillance selon l’information professionnelle suisse\n\nFe­rin­ject® cite fortes doses ré­pé­tées, ca­rence en vi­ta­mine D, ma­lab­sorp­tion, ma­la­dies in­flam­ma­toires chro­niques de l’in­tes­tin, hy­per­pa­ra­thy­roï­die, té­lan­giec­ta­sie hé­mor­ra­gique hé­ré­di­taire et os­téo­po­rose parmi les fac­teurs per­ti­nents. La méta-ana­lyse ajoute dé­fi­cit mar­tial sé­vère et fonc­tion ré­nale pré­ser­vée. Le mé­de­cin contrôle le phos­phate chez les pa­tients re­ce­vant plu­sieurs doses éle­vées ou un trai­te­ment pro­longé, et chez ceux pré­sen­tant des fac­teurs de risque. Si l’hy­po­phos­pha­té­mie per­siste, il ré­éva­lue le trai­te­ment par car­boxy­mal­tose.\n\nUne os­téo­ma­la­cie et des frac­tures sont rap­por­tées. La qua­li­fi­ca­tion gé­né­ra­le­ment bé­nigne de l’avis gy­né­co­lo­gique 2022 ne pré­vaut pas sur l’in­for­ma­tion pro­fes­sion­nelle Fe­rin­ject® de juin 2025, qui dé­crit ces com­pli­ca­tions et im­pose la sur­veillance ci­blée.\n\nRé­fé­rences : Schae­fer et al., méta-ana­lyse 2021 ; in­for­ma­tion pro­fes­sion­nelle suisse Fe­rin­ject®, juin 2025 ; gy­né­co­lo­gie suisse, avis n° 77, 24.08.2022 ; On­ko­pe­dia, guide com­mun avec SGH/SSH et SGMO, avril 2025.",
+      "missing": false,
+      "overflow": false
+    },
+    {
+      "key": "CIM-10-GM",
+      "text": "DÉ­FI­NI­TION LIT­TÉ­RALE\nC\nClas­si­fi­ca­tion\nI\nIn­ter­na­tio­nale des\nM\nMa­la­dies\n10\n10e ré­vi­sion\nGM\nGer­man Mo­di­fi­ca­tion (adap­ta­tion al­le­mande, uti­li­sée en Suisse)\n\nCIM-10-GM = Clas­si­fi­ca­tion in­ter­na­tio­nale des ma­la­dies, 10e ré­vi­sion, mo­di­fi­ca­tion al­le­mande\n\nNo­men­cla­ture de co­dage diag­nos­tique en vi­gueur en Suisse (ver­sion 2024 dans MEDINA).",
+      "missing": false,
+      "overflow": false
+    }
+  ],
+  "source_paths": [
+    "glossary/d50.py",
+    "Modules partagés conservés dans le scratch, non modifiés par cet auteur"
+  ],
+  "observation": "Les définitions effectivement chargées ont été physiquement ouvertes et lues ; aucune fenêtre approfondie absente.",
+  "status": "corrected_author_pending_independent_P2",
+  "resolution": "Hb/VGM/MICI ont été développés lors de la reprise précédente. Cette reprise développe aussi AINS/BMP/SMAD/CRP dans les six HTML et la définition locale TMPRSS6, avec trois fenêtres D50 propres. Les immunoglobulines A, la Société européenne de cardiologie et Kidney Disease: Improving Global Outcomes sont également développés afin de ne pas importer des critères ou commentaires spécialisés supplémentaires. Les identités générales BSG/mediX/OFSP restent lisibles ; leurs définitions ne fondent aucune conduite D50.",
   "browser_proof": {
-    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controles_navigateur.json",
-    "sha256": "ecb44cb11e2b0a69153cb27238fa235066343384ecda89a90dd7a2a5d3411b53"
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controles_navigateur_apres_P1.json",
+    "sha256": "2afd99e231017c9d52dab0746415d1fc0f57432925c6375f7e655e1cee7a81a2",
+    "explanation": "Tous les glossaires réellement chargés, les 71 fenêtres et les cinq quiz/figures contrôlés à 1440 et 390 pixels."
   },
   "change_journal": {
-    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/corrections_termes_contextualises.json",
-    "sha256": "d2f1d789207a86f2f8bbd5d98a89415485686cb162d5ab3f564333a5a65c305e"
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/corrections_apres_P1.json",
+    "sha256": "8490de35814920adbf864c53ece287785a1273a004a317b06f0602b14bf044b5",
+    "explanation": "Historique auteur des corrections et statut distinct de P2."
   }
 }

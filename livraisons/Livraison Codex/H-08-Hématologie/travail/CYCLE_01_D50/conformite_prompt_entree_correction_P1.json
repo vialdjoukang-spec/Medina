@@ -1,0 +1,137 @@
+{
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "code": "D50",
+  "medical_human_validation": false,
+  "phase": "entree_reprise_auteur_apres_P1_croise",
+  "checked_at": "2026-10-11T20:11:08.684060+00:00",
+  "verdict": "conforme",
+  "prompt_files": {
+    "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+    "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
+    "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+    "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+  },
+  "checks": [
+    {
+      "id": "autorisation",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/provenance_reprise_correction_P1.json",
+          "sha256": "e25b082b498f0e43e8cbaa6d00c03d566af14a0e2f05dbaf45d04899c04d5c29",
+          "explanation": "Auteur unique D50 désigné par instruction ; root autorise après P1 complet les corrections du seul dossier de remise D50. Le P1 complet est reçu et lu ; aucune injection ni nouvelle production."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Rôle auteur et périmètre Cycle1 explicites."
+        }
+      ]
+    },
+    {
+      "id": "perimetre_provenance",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/provenance_reprise_correction_P1.json",
+          "sha256": "e25b082b498f0e43e8cbaa6d00c03d566af14a0e2f05dbaf45d04899c04d5c29",
+          "explanation": "Remise Codex D50 existante reprise ; original Claude et photographie privée avant correction conservés. Aucune copie concurrente créée ni changement I63/G/coque."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Rôle auteur et périmètre Cycle1 explicites."
+        }
+      ]
+    },
+    {
+      "id": "sources_lues",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/provenance_reprise_correction_P1.json",
+          "sha256": "e25b082b498f0e43e8cbaa6d00c03d566af14a0e2f05dbaf45d04899c04d5c29",
+          "explanation": "Les passages déjà consultés et les téléchargements primaires sont accessibles. Avant toute nouvelle formulation, les passages FI et sources concernés seront réellement relus ; ce contrôle engage la méthode et ne préjuge pas la réussite finale."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Rôle auteur et périmètre Cycle1 explicites."
+        }
+      ]
+    },
+    {
+      "id": "contexte_suisse",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/provenance_reprise_correction_P1.json",
+          "sha256": "e25b082b498f0e43e8cbaa6d00c03d566af14a0e2f05dbaf45d04899c04d5c29",
+          "explanation": "Contrat suisse intégralement relu pour cette reprise ; FI des produits exacts d’abord et identité de forme Maltofer à revérifier. CI, prudence et situations particulières ne seront pas fusionnées."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Rôle auteur et périmètre Cycle1 explicites."
+        }
+      ]
+    },
+    {
+      "id": "independance",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/provenance_reprise_correction_P1.json",
+          "sha256": "e25b082b498f0e43e8cbaa6d00c03d566af14a0e2f05dbaf45d04899c04d5c29",
+          "explanation": "Reprise auteur C01-R-HEM distincte de la mission croisée I63 achevée P1 ; C01-R-NEUR demeure auditeur D50 et reprendra P2. L’auteur ne se décerne aucun audit indépendant."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Rôle auteur et périmètre Cycle1 explicites."
+        }
+      ]
+    },
+    {
+      "id": "contrat_cours",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/provenance_reprise_correction_P1.json",
+          "sha256": "e25b082b498f0e43e8cbaa6d00c03d566af14a0e2f05dbaf45d04899c04d5c29",
+          "explanation": "Guide, deux Prompts et lancement intégralement relus ; quatre onglets et fenêtres/quiz/Pareto/glossaires actualisés à recontrôler sur nouvelles empreintes et rendu S06 récent."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Rôle auteur et périmètre Cycle1 explicites."
+        }
+      ]
+    },
+    {
+      "id": "honnetete",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/provenance_reprise_correction_P1.json",
+          "sha256": "e25b082b498f0e43e8cbaa6d00c03d566af14a0e2f05dbaf45d04899c04d5c29",
+          "explanation": "Entrée initiale historiquement insuffisante conservée. Nouvelle entrée datée réellement après P1, réserves F1–F4 ouvertes jusqu’à corrections/preuves ; aucune validation humaine ni note propre."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Rôle auteur et périmètre Cycle1 explicites."
+        }
+      ]
+    }
+  ],
+  "blocking_reserves_at_entry": [
+    "D50-P1-F1",
+    "D50-P1-F2",
+    "D50-P1-F3",
+    "D50-P1-F4"
+  ],
+  "scope_note": "Conformité réelle de l’application de la méthode à la reprise, pas conformité médicale du chapitre avant correction.",
+  "historical_initial_entry_verdict": "non_conforme"
+}

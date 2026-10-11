@@ -11,7 +11,7 @@ if 'DMT1' not in G:
 if 'FGF23' not in G:
     a('FGF23', [('F', 'Fibroblast (des fibroblastes)'), ('G', 'Growth (de croissance)'), ('F', 'Factor (facteur)'), ('23', 'numéro 23')], 'Facteur de croissance des fibroblastes 23', '<p>FGF23 est une hormone phosphaturique produite par l’os. Certaines préparations de fer intraveineux, surtout le carboxymaltose, élèvent sa forme intacte : le rein perd du phosphate et l’activation de la vitamine D diminue.</p>', 'd50-hypophos')
 if 'TMPRSS6' not in G:
-    a('TMPRSS6', [('TM', 'TransMembrane (transmembranaire)'), ('PRSS', 'PRotease, Serine (protéase à sérine)'), ('6', 'membre 6')], 'Gène de la protéase transmembranaire à sérine 6 (matriptase-2)', '<p>TMPRSS6 code la matriptase-2, qui freine la synthèse hépatique d’hepcidine par la voie BMP–SMAD. Ses variants pathogènes causent l’anémie ferriprive réfractaire au fer.</p>', 'd50-irida')
+    a('TMPRSS6', [('TM', 'TransMembrane (transmembranaire)'), ('PRSS', 'PRotease, Serine (protéase à sérine)'), ('6', 'membre 6')], 'Gène de la protéase transmembranaire à sérine 6 (matriptase-2)', '<p>TMPRSS6 code la matriptase-2, qui freine la synthèse hépatique d’hepcidine par la voie hépatique des protéines morphogénétiques osseuses et de leurs médiateurs de signalisation. Ses variants pathogènes causent l’anémie ferriprive réfractaire au fer.</p>', 'd50-irida')
 if 'SGH' not in G:
     a('SGH', [('S','Schweizerische (suisse)'),('G','Gesellschaft (société)'),('H','für Hämatologie (d’hématologie)')], 'Société suisse d’hématologie', '<p>La Société suisse d’hématologie participe au guide commun Onkopedia sur la carence martiale, version avril 2025.</p>')
 if 'SSH' not in G:

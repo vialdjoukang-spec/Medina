@@ -2,7 +2,7 @@
   "code": "D50",
   "actor": "C01-R-HEM",
   "runtime_agent_id": "/root/c01_r_hem",
-  "recorded_at": "2026-10-11T19:06:10.051426+00:00",
+  "recorded_at": "2026-10-11T20:31:31.073525+00:00",
   "medical_human_validation": false,
   "observations": [
     {
@@ -27,10 +27,30 @@
       "id": "shared_generic_glossary",
       "verdict": "corrected_with_contextual_D50_windows",
       "reason": "Après signalement au coordinateur, les termes visibles Hb/VGM/MICI ont été développés. Le VGM reçoit une fenêtre contextualisée D50 ; aucun glossaire partagé n’est écrasé. Les preuves antérieures à cette correction restent intermédiaires et sont remplacées par la nouvelle construction S06, les tests et captures finales."
+    },
+    {
+      "id": "D50_P1_unfavorable",
+      "verdict": "historical_independent_pass_preserved",
+      "reason": "P1 indépendant défavorable 17,5/20 et quatre réserves ; cette reprise ne change ni son score ni ses SHA.",
+      "proof": {
+        "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_D50/passe_1.json",
+        "sha256": "b8017e86e5246a6a9d4a67e5bf8b0d7f8986c6de176b57372ddeefa2038464f4",
+        "explanation": "Rapport indépendant P1 lu avant correction."
+      }
+    },
+    {
+      "id": "intermediate_TMPRSS6_residual",
+      "verdict": "corrected_then_rebuilt",
+      "reason": "Une ouverture réelle de TMPRSS6 pendant les premiers tests après P1 retrouvait BMP/SMAD dans la définition locale. Le test a échoué honnêtement ; définition corrigée, rendu précédent invalidé, nouvelle construction et contrôles réels réalisés ensuite."
+    },
+    {
+      "id": "post_P1_extra_loaded_glossaries",
+      "verdict": "contextualized_then_rebuilt",
+      "reason": "La lecture complète des anciennes 20 définitions a motivé le développement IgA/ESC/KDIGO. Les contrôles avant cette modification restent historiques. La version finale charge 17 définitions physiques, toutes lues ; les dates de publication vérifiées restent distinctes des recommandations complètes non accessibles."
     }
   ],
   "original_files_unchanged": true,
   "original_file_count": 8,
-  "original_files_checked_again_at": "2026-10-11T19:19:01.037238+00:00",
-  "final_frontend_sha256": "3c41815a1f3eb6645ae2808bc85f35cf71f0a0178d11f2e8376d9b870e7b2590"
+  "original_files_checked_again_at": "2026-10-11T20:31:31.073531+00:00",
+  "final_frontend_sha256": "cba0de7a9a02b2a9891522abb76110b6e0b7a09c3356d52da10a09f5bf46eb86"
 }
