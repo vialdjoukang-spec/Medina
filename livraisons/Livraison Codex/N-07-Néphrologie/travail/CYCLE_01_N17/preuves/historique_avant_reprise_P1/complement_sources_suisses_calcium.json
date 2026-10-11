@@ -1,0 +1,56 @@
+{
+  "code": "N17",
+  "actor": "C01-R-NEPH",
+  "runtime_agent_id": "/root/c01_r_neph",
+  "checked_at": "2026-10-11T19:19:32.314314+00:00",
+  "scope": "Complément de recherche pour audit indépendant ; aucune nouvelle prescription/dose dans le chapitre.",
+  "medical_human_validation": false,
+  "sources": [
+    {
+      "id": "FI_KCL_SINTETICA",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680514340132",
+      "source_title": "Information professionnelle suisse KALIUM chloratum15%Sintetica — AIPS via AmiKo",
+      "authorization_number": "51434",
+      "version_date": "février2024",
+      "section": "Surdosage :signes et symptômes, traitement, mesures d’urgence ; miseàjour/licence",
+      "passage": "Solution à10% de chlorure de calcium ou de gluconate de calcium en perfusionIVlente :environ10à20mlen10minutes.",
+      "population": "Surdosage de potassium, arrêt de la perfusion deKCl ; pas recommandation générale toutesIRA.",
+      "actual_reading_scope": "Lignes130–160 et200–225 du texte ; aucune prétention de lecture intégrale de la FI KCl.",
+      "scratch_text": "/workspace/work/cycle1-sources-N17/calcium-current/fi_kcl_sintetica.txt",
+      "read_text_sha256": "42ed9a6eb4c2d9eb72990f40ca8ff269cac3b1be73f0cbbd0c4f06f28272b3e2",
+      "limitations": "La FI suisse deKCl est effectivement consultée, mais ne constitue pas la FI du produit exact de calcium ; pas identité du gluconate ou distinction d’équivalence entre sels. N’arbitre pas osmolarité280/660 et ne valide pas le schémaUKKA30ml/10min pour N17. Autres mesures anciennes non incorporées au chapitre."
+    },
+    {
+      "id": "RMS_RHABDO2020",
+      "url": "https://www.revmed.ch/revue-medicale-suisse/2020/revue-medicale-suisse-716/rhabdomyolyse-prise-en-charge-medicale-initiale",
+      "pdf_url": "https://www.revmed.ch/view/593362/6319047/RMS_716_complet.pdf",
+      "source_title": "Dall’Aglio,Kissling,Vollenweider,Jaccard — Rhabdomyolyse:priseencharge médicaleinitiale",
+      "version_date": "25.11.2020,RevMedSuisse16:2272–2278,DOI10.53738/REVMED.2020.16.716.2272",
+      "section": "Introductionpopulation ; tableau4p2277, calcium et paragraphe hypocalcémietransitoire",
+      "passage": "Gluconate de calcium :1à2ampoules10ml diluées100mlG5% sur10minutes ; indications symptômes hypocalcémie/hyperK sévère, répéteraubesoinselon symptômes, attentionhyperCa.",
+      "population": "Rhabdomyolyse,priseenchargeinitiale hospitalière ; contextehypoCa initiale/risquerebondhyperCa.",
+      "actual_reading_scope": "PDF extraitlignes2450–2530 et2720–2835 ; pas lecture du numérocomplet ou de tout l’article.",
+      "scratch_pdf": "/workspace/work/cycle1-sources-N17/calcium-current/rms716.pdf",
+      "download_sha256": "cec0d785c4db730dbd36f175f956dd7a43b5c2c84e8b84fd8f856009929fac31",
+      "scratch_text": "/workspace/work/cycle1-sources-N17/calcium-current/rms716.txt",
+      "read_text_sha256": "51411e4c7248b0d8d226243b4d07dc927c2bd88c8e7de5cdcf7c41097f9e527e",
+      "limitations": "Population particulière ; ni nom du produit exact ni osmolarité. Le schéma ne se généralise pas silencieusement à toute hyperK/IRA et ne résout pas la différenceUKKA/HUG. Page d’article seul retrouvée et enregistrée."
+    },
+    {
+      "id": "EMJ2026_PENDING",
+      "doi": "10.1136/emermed-2025-215469",
+      "pmid": "41506858",
+      "source_title": "Acute hyperkalaemia in emergency care:evidence-basedapproaches",
+      "publisher_url": "https://emj.bmj.com/lookup/doi/10.1136/emermed-2025-215469",
+      "publisher_result": "HTTP429 ; aucun texte intégral obtenu ou lu.",
+      "pubmed_result": "HTTP203 page cookies uniquement, pas article ou résumé lu.",
+      "metadata_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41506858%20AND%20SRC:MED&format=json",
+      "metadata_sha256": "9e7908ddca998f191f48102e7e6aacb6eed8e12cf518213f3ecd5dcaef8c9dd6",
+      "metadata_read": true,
+      "full_text_read": false,
+      "limits": "EuropePMC :isOpenAccess:N,inEPMC:N,inPMC:N,hasPDF:N ; firstIndexDate2026-01-09 et firstPublicationDate2026-05-05 sont deux champs distincts. Métadonnées bibliographiques ne fondent aucune décision médicale. Auteurs/affiliations suisses signalés comme piste parcoordinateur, non vérifiés dans texte intégral par cet auteur."
+    }
+  ],
+  "clinical_effect": "Réserves actuelles conservées. Les premiers deux passages fournissent un contexte suisse pertinent à juger par auditeurs, sans documenter une préparation précise résolvant le conflit entier.",
+  "verdict": "NON_CONFORME"
+}

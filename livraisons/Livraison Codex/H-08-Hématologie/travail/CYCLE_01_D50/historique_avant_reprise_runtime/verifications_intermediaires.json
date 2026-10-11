@@ -1,0 +1,36 @@
+{
+  "code": "D50",
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "recorded_at": "2026-10-11T19:06:10.051426+00:00",
+  "medical_human_validation": false,
+  "observations": [
+    {
+      "id": "entry_initial_incomplete",
+      "verdict": "invalidated",
+      "reason": "La lecture intégrale du modèle I50 a été terminée après la première passe. Le premier contrôle success_for_start_only reste historique et ne constitue pas une entrée conforme. La reprise corrective réelle est datée du 11.10.2026 à 18:03:59.755736+00:00.",
+      "historical_record": "conformite_prompt_entree_initiale_historique.json",
+      "corrective_record": "conformite_prompt_entree.json"
+    },
+    {
+      "id": "intermediate_nominal_sentences",
+      "verdict": "corrected",
+      "reason": "La relecture a identifié puis reformulé phrases nominales et infinitifs prescriptifs hérités, dans les fenêtres, Pareto, critères, quiz et glossaire. Les cellules et libellés de schémas conservent leur fonction de repères, avec introductions et commentaires."
+    },
+    {
+      "id": "old_S06_render",
+      "verdict": "invalidated",
+      "reason": "Les premières commandes build_front.py sans --fragment reconstruisaient MEDINA.html. L’URL des captures pointait encore vers S06 construit à 18:09:56 ; ces tests ne prouvaient pas les dernières modifications. Le S06 définitif a été construit explicitement par --fragment S06, sa charge entière a été comparée aux six sources transformées et le fichier servi a été vérifié par SHA256. Les nouvelles captures et contrôles seuls fondent la remise finale.",
+      "final_binding": "liaison_sources_rendu.json"
+    },
+    {
+      "id": "shared_generic_glossary",
+      "verdict": "corrected_with_contextual_D50_windows",
+      "reason": "Après signalement au coordinateur, les termes visibles Hb/VGM/MICI ont été développés. Le VGM reçoit une fenêtre contextualisée D50 ; aucun glossaire partagé n’est écrasé. Les preuves antérieures à cette correction restent intermédiaires et sont remplacées par la nouvelle construction S06, les tests et captures finales."
+    }
+  ],
+  "original_files_unchanged": true,
+  "original_file_count": 8,
+  "original_files_checked_again_at": "2026-10-11T19:19:01.037238+00:00",
+  "final_frontend_sha256": "3c41815a1f3eb6645ae2808bc85f35cf71f0a0178d11f2e8376d9b870e7b2590"
+}

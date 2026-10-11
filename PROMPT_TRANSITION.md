@@ -1,5 +1,9 @@
 # MEDINA — Prompt de transition (unité de vérité)
 
+## Mise à jour prioritaire — clarté, bases et calculs, 11 octobre 2026
+
+Lire et appliquer intégralement [l'instruction directe de Vial](docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md). Chaque phrase du cours et de ses fenêtres doit être immédiatement compréhensible. Chaque paramètre quantitatif reçoit son intervalle de référence suisse applicable, ses unités, sa population et ses conditions, sans confondre normalité, seuil diagnostique et cible. Tout calcul important ou rapport ouvre une explication progressive partant des bases. Toute gradation figure dans un tableau introduit et commenté. Le chapitre couvre l'intégralité du contenu suisse pertinent à son sujet, avec matrice de couverture ; les bases anatomiques, physiologiques et biochimiques sont robustes. Les audits et contre-audits font appliquer et relire les corrections ; la cible de clôture est 20/20. Cette règle permanente s'applique aux systèmes S01 à S08 et S10 à S16 nommés dans l'instruction. Le Cycle 1 reste le seul cycle autorisé ; ses anciennes preuves restent historiques et doivent être renouvelées sur le Prompt mis à jour.
+
 Version du 9 octobre 2026. Ce document prime sur toute passation antérieure. Toute IA qui reprend MEDINA le lit en entier, puis lit `CLAUDE.md`, `docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md` (sections 7 à 13) et `docs/STYLE_REDACTION.md`. Elle agit ensuite comme si elle avait conduit le projet depuis le début.
 
 ## 1. Projet et propriétaire

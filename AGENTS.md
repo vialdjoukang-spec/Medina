@@ -1,3 +1,7 @@
+## Prompt de vérité mis à jour — clarté, bases et calculs, 11 octobre 2026
+
+Lire et appliquer [la nouvelle instruction directe de Vial](docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md), intégrée dans PROMPT_TRANSITION.md et PROMPT_MEDINA.md : clarté immédiate de toutes les phrases et fenêtres, normalité suisse contextualisée des paramètres, calculs importants cliquables depuis les bases, gradations en tableaux, couverture suisse complète, anatomie/physiologie/biochimie robustes, corrections appliquées et relues, cible 20/20. Elle s'applique dès cette reprise au Cycle 1 ; les preuves antérieures sont conservées et les vérifications d'entrée/sortie sont renouvelées honnêtement sur cette version.
+
 ## Cycle 1 autorisé — 11 octobre 2026
 
 Vial lance explicitement le cycle 1 : I63, E11, N17, D50. Lire [l’instruction d’exécution](docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md). Chaque rédacteur et auditeur vérifie l’application réussie du Prompt de vérité en entrée et en sortie ; toute exigence non vérifiée reste une réserve. Les anciennes modalités incompatibles sont remplacées dans ce seul périmètre. Les agents n’écrivent pas de sources canoniques ; le coordinateur injecte successivement après audits et contrôles.

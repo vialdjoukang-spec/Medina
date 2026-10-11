@@ -1,0 +1,61 @@
+{
+  "code": "D50",
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "medical_human_validation": false,
+  "frozen_at": "2026-10-11T20:32:59.268190+00:00",
+  "status": "author_corrections_ready_for_independent_P2",
+  "final_files": {
+    "chapters/D50/D50_a.html": "ec7a387ddbe40fa741272a4f6c730e54e55048349539e1faa99fc8c7151a2a0d",
+    "chapters/D50/D50_b.html": "5563a482609e0d4c8673f60e7d69a1432d013d7e0ca94b2a2b609e71de24e61a",
+    "chapters/D50/D50_c.html": "75e2d88608c0ec6dbe8c69ed922268cc97f8229b03af38d6fc88cef305b2e1b2",
+    "chapters/D50/D50_d.html": "1769f7e808eb632c6cdc4948898d6d8c2be2851b45a8f0a5d53462dd3f9cac2f",
+    "chapters/D50/D50_pop1.html": "3280813d6bf5f4f4e6e50d5c983f15b2539e56d3fb2cb691f6a1c6cd02e30766",
+    "chapters/D50/D50_pop2.html": "4122c0ad363deb4661c183a8ce018780af85e116ecf5181e79830a5f676c0e06",
+    "glossary/d50.py": "13c1e24b3c148a299cd9a6c112bcd5a7e839a50a7edc9427ebf51a8835fd80e2"
+  },
+  "proofs": {
+    "author_review": {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/revue_auteur.json",
+      "sha256": "e41d49c7f65f18f666b2a2da0ae1bfd0f9db834665e7b70cabe05ba2617388ed",
+      "explanation": "Revue auteur actuelle entrée/sortie réelles sur nouveaux SHA."
+    },
+    "corrections": {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/corrections_apres_P1.json",
+      "sha256": "616b685288ed119a85a309e1d3f7e2a998d9fb1a17975283d645e0759e6bde88",
+      "explanation": "Réponses F1–F4 et compléments avec chronologie historique conservée."
+    },
+    "source_ledger": {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/registre_affirmations_sources.json",
+      "sha256": "cd0cb5953d610855726f0ff0820a80ad71814c928207c17d75f513a3ab42bee1",
+      "explanation": "Toutes les surfaces actuelles."
+    },
+    "swiss_matrix": {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/matrice_contexte_suisse_D50.json",
+      "sha256": "761eea64a70e9b2268b46b0c0987db91fb3eba24f3da6d882c214850778cf983",
+      "explanation": "Matrice actuelle, audit indépendant toujours en attente."
+    },
+    "technical": {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controles_techniques_finaux.json",
+      "sha256": "1fa434ffba428dc4b9239bd42e94bbdde3fb271eb1443894b2cb45faa7a23e99",
+      "explanation": "Rendu et tests réellement actuels."
+    },
+    "exit_prompt": {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/conformite_prompt_sortie_correction_P1.json",
+      "sha256": "8b070a9a28de3ade1c759c6c9be7ecdeb8379a3fbc4aefadfef516af256f09b3",
+      "explanation": "Lecture intégrale réelle et application vérifiée en sortie après les preuves."
+    }
+  },
+  "independent_audit_status": "P1_unfavorable_preserved_P2_pending",
+  "blocking_reserves": [],
+  "pending_independent_findings": [
+    "D50-P1-F1",
+    "D50-P1-F2",
+    "D50-P1-F3",
+    "D50-P1-F4"
+  ],
+  "source_corpus_private": "/workspace/work/cycle1-sources-D50",
+  "http_preview_url": "http://127.0.0.1:8794/fragments/MEDINA_S06_hematopoietique-lymphatique.html#/entry/D50",
+  "frontend_sha256": "cba0de7a9a02b2a9891522abb76110b6e0b7a09c3356d52da10a09f5bf46eb86",
+  "freeze_rule": "Aucune modification des sept sources ou de leurs preuves liées sans instruction de correction du coordinateur ; aucun audit indépendant favorable ni injection implicites."
+}

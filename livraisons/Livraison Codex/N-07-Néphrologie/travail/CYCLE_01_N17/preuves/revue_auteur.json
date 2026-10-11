@@ -1,449 +1,289 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "code": "N17",
   "actor": "C01-R-NEPH",
-  "runtime_agent_id": "/root/c01_r_neph",
+  "runtime_agent_id": "/root/c01_r_neph_resume",
+  "recorded_at": "2026-10-11T21:50:28.115478+00:00",
   "medical_human_validation": false,
-  "recorded_at": "2026-10-11T19:33:27.610289+00:00",
   "entry": {
     "actor": "C01-R-NEPH",
-    "runtime_agent_id": "/root/c01_r_neph",
-    "verdict": "NON_CONFORME",
-    "checked_at": "2026-10-11T19:09:43.835500+00:00",
+    "runtime_agent_id": "/root/c01_r_neph_resume",
+    "verdict": "conforme",
+    "checked_at": "2026-10-11T21:30:47.654849+00:00",
     "prompt_files": {
-      "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
-      "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+      "PROMPT_MEDINA.md": "b01cd3421cee0e2b0f0d953c66e2ba97521ffa64656f0ef4bc0b4ce478d95fe2",
+      "PROMPT_TRANSITION.md": "573db933ab4da4c79b1138d5ea2b123f3e7a2bcdd956d223a45a589e0f25ed7b",
       "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
-      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+      "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
     },
     "supplemental_prompt_files": {
       "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706"
     },
+    "application_scope": "Phase finale prospective ; aucune injection ni validation médicale humaine ; état historique non conforme inchangé.",
     "checks": [
       {
         "id": "autorisation",
         "status": "conforme",
-        "observation": "Exception explicite limitée au calcium importé N17 ; aucune autre portée.",
+        "observation": "Mission auteurCycle1 etavenant lus ; finalisation autorisée.",
         "evidence": [
           {
-            "path": "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md",
-            "sha256": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706",
-            "explanation": "Avenant lu intégralement avant reprise."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/constat_entree_phase_finale_rectifiee.json",
+            "sha256": "a837eb0ff079d078d54e2fe6db1d945a57630e6bf055304aa80f58c865df45e7",
+            "explanation": "Constat stable renouvelé après réparation réelle de l’accès àERC ; historiqueerronépréservé, phasefinale prospective."
           }
         ]
       },
       {
         "id": "perimetre_provenance",
         "status": "conforme",
-        "observation": "Auteur/runtime réels C01-R-NEPH ; sept sources de travail propres, historique exact conservé ; aucun canonique touché.",
+        "observation": "Dossier isolé et snapshotsP1 conservés ; nouveau runtime exact.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_avenant_calcium/revue_auteur.json",
-            "sha256": "dd13f3c7dc74356f519e512065be4f19d3308121c55d8d505e20ca5d1d889c3d",
-            "explanation": "État auteur préalable historisé avant correction. La copie exacte existait avant cette entrée ; seule la localisation de la copie historique est explicitée à la normalisation de la remise finale."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/constat_entree_phase_finale_rectifiee.json",
+            "sha256": "a837eb0ff079d078d54e2fe6db1d945a57630e6bf055304aa80f58c865df45e7",
+            "explanation": "Constat stable renouvelé après réparation réelle de l’accès àERC ; historiqueerronépréservé, phasefinale prospective."
           }
         ]
       },
       {
         "id": "sources_lues",
         "status": "conforme",
-        "observation": "Sources primaires réellement lues avant correction ; versions et limites nommées, fabricants publics seulement.",
+        "observation": "Passages primaires réellement consultés ; PDF inaccessible distingué du texteweb.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_primaire_calcium_import.json",
-            "sha256": "0919fe2616912b31ae5062027de683021e3370e991fbfc6c07dfe5f37300a02f",
-            "explanation": "Données vérifiées et différences réellement établies."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/constat_entree_phase_finale_rectifiee.json",
+            "sha256": "a837eb0ff079d078d54e2fe6db1d945a57630e6bf055304aa80f58c865df45e7",
+            "explanation": "Constat stable renouvelé après réparation réelle de l’accès àERC ; historiqueerronépréservé, phasefinale prospective."
           }
         ]
       },
       {
         "id": "contexte_suisse",
-        "status": "non_conforme",
-        "observation": "Import couvert par avenant ; divergences osmolarité et schéma hyperK suisse persistent.",
+        "status": "conforme",
+        "observation": "Recherche suisse d’abord ; différences de portée et choix ciblé attribués, aucune autorisation inventée.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_primaire_calcium_import.json",
-            "sha256": "0919fe2616912b31ae5062027de683021e3370e991fbfc6c07dfe5f37300a02f",
-            "explanation": "Deux réserves explicites non maquillées."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/constat_entree_phase_finale_rectifiee.json",
+            "sha256": "a837eb0ff079d078d54e2fe6db1d945a57630e6bf055304aa80f58c865df45e7",
+            "explanation": "Constat stable renouvelé après réparation réelle de l’accès àERC ; historiqueerronépréservé, phasefinale prospective."
           }
         ]
       },
       {
         "id": "independance",
         "status": "conforme",
-        "observation": "Mission auteur uniquement ; aucune revue E11 ni contrôle indépendant commencé.",
+        "observation": "Auteur unique, audits ultérieurs distincts.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_avenant_calcium/revue_auteur.json",
-            "sha256": "dd13f3c7dc74356f519e512065be4f19d3308121c55d8d505e20ca5d1d889c3d",
-            "explanation": "Identité réelle du rôle et séparation conservée. La copie exacte existait avant cette entrée ; seule la localisation de la copie historique est explicitée à la normalisation de la remise finale."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/constat_entree_phase_finale_rectifiee.json",
+            "sha256": "a837eb0ff079d078d54e2fe6db1d945a57630e6bf055304aa80f58c865df45e7",
+            "explanation": "Constat stable renouvelé après réparation réelle de l’accès àERC ; historiqueerronépréservé, phasefinale prospective."
           }
         ]
       },
       {
         "id": "contrat_cours",
         "status": "conforme",
-        "observation": "I50 entièrement relu dans reprise précédente ; surfaces sous exigences Prompts et guide, correction limitée puis relecture/tests prévus.",
+        "observation": "ModèleI50 etPrompts relus ; phasefinale vise les surfaces demandées avec calculs etfigures.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/reprise_methode_auteur.json",
-            "sha256": "f50c93bcbb73e03e677f49054f7b70092a7527895c981e4720c990ba6f5af624",
-            "explanation": "Écart initial conservé, relecture intégrale réelle déjà effectuée."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/constat_entree_phase_finale_rectifiee.json",
+            "sha256": "a837eb0ff079d078d54e2fe6db1d945a57630e6bf055304aa80f58c865df45e7",
+            "explanation": "Constat stable renouvelé après réparation réelle de l’accès àERC ; historiqueerronépréservé, phasefinale prospective."
           }
         ]
       },
       {
         "id": "honnetete",
         "status": "conforme",
-        "observation": "Absence de validation médicale humaine ; pas dose de mémoire, aucune autorisation suisse inventée ; verdict réel NON_CONFORME.",
+        "observation": "Aucun score indépendant ni validation médicale humaine revendiqués ; pas d’heure rétroactive.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_primaire_calcium_import.json",
-            "sha256": "0919fe2616912b31ae5062027de683021e3370e991fbfc6c07dfe5f37300a02f",
-            "explanation": "Faits et zones non vérifiées séparés."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/constat_entree_phase_finale_rectifiee.json",
+            "sha256": "a837eb0ff079d078d54e2fe6db1d945a57630e6bf055304aa80f58c865df45e7",
+            "explanation": "Constat stable renouvelé après réparation réelle de l’accès àERC ; historiqueerronépréservé, phasefinale prospective."
           }
         ]
       }
-    ],
-    "application_scope": "Nouvelle correction prospective sous exception ciblée ; exactitude des passages vérifiés et réserve de sécurité persistante explicite. Ne prétend pas ouvrir une injection."
+    ]
   },
   "exit": {
     "actor": "C01-R-NEPH",
-    "verdict": "NON_CONFORME",
-    "checked_at": "2026-10-11T19:33:27.610289+00:00",
+    "runtime_agent_id": "/root/c01_r_neph_resume",
+    "verdict": "conforme",
+    "checked_at": "2026-10-11T21:50:28.115464+00:00",
     "prompt_files": {
-      "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
-      "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+      "PROMPT_MEDINA.md": "b01cd3421cee0e2b0f0d953c66e2ba97521ffa64656f0ef4bc0b4ce478d95fe2",
+      "PROMPT_TRANSITION.md": "573db933ab4da4c79b1138d5ea2b123f3e7a2bcdd956d223a45a589e0f25ed7b",
       "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
-      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+      "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
     },
     "supplemental_prompt_files": {
       "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706"
     },
+    "application_scope": "Relecture et remise auteur sur les sept empreintes finales, prête aux audits distincts ; aucun verdict favorable d’injection.",
     "checks": [
       {
         "id": "autorisation",
         "status": "conforme",
-        "observation": "Reprise d’auteur unique N17 autorisée explicitement ; avenant strictement limité au produit importé exact. Aucune injection ni publication engagée.",
+        "observation": "Cycle1 N17 et supplément exact respectés ; aucun cycle suivant lancé.",
         "evidence": [
           {
-            "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
-            "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
-            "explanation": "Cycle 1 explicitement autorisé, N17 assigné à C01-R-NEPH et séparation des rôles."
-          },
-          {
-            "path": "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md",
-            "sha256": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706",
-            "explanation": "Exception documentaire ciblée, effectivement lue ; aucun numéro suisse inventé."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_reprise_P1.json",
+            "sha256": "a315ca8865f7d9fe8200f812cd0419def7b58c30e43e058baf36eb61310d19a5",
+            "explanation": "Cycle1 N17 et supplément exact respectés ; aucun cycle suivant lancé."
           }
         ]
       },
       {
         "id": "perimetre_provenance",
         "status": "conforme",
-        "observation": "Sept sources propres N17 gelées ; provenance originale et historique des versions pré-avenant conservés. Rendu et production_cycle uniquement dans copie scratch, aucune modification canonique par l’auteur.",
+        "observation": "Sept fichiers propres N17 uniquement, corpus et builds isolés ; états P1 et anciennes non-conformités conservés.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/provenance_reprise_calcium.json",
-            "sha256": "e051dbd29a72d214e0dd14901577efba791ea9f4b6ee0c93b5d03b43d5ed2f3b",
-            "explanation": "Provenance actuelle, source et rendu, séparation scratch/canonique et absence d’injection."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/empreintes_finales_avenant.json",
-            "sha256": "6a8bc5fd41ff2e5fa0938c0dfc4849477ab32fd10408c179717a795a37d90ef8",
-            "explanation": "Empreintes des six HTML et du glossaire final vérifiées contre les fichiers."
-          },
-          {
-            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/INVENTAIRE_DISTANT_CIBLE.json",
-            "sha256": "c64d0d79e05271082a2733f37f497157d80d96e1d470e8c09eb428c31c4e8e19",
-            "explanation": "Inventaire initial du coordinateur, 87 arbres ciblés ; absence de doublon avant production."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/empreintes_finales_reprise_P1.json",
+            "sha256": "b07ac584208625ddde059a1cc1e5ad955f99a4cf6903eda499b277f7e7037512",
+            "explanation": "Sept fichiers propres N17 uniquement, corpus et builds isolés ; états P1 et anciennes non-conformités conservés."
           }
         ]
       },
       {
         "id": "sources_lues",
         "status": "conforme",
-        "observation": "507 blocs et dix définitions de glossaire reliés à 65 passages de 23 documents réellement lus. Sept surfaces finales entièrement relues. Il s’agit du constat auteur de lecture et traçabilité ; la suffisance scientifique et l’applicabilité clinique restent à juger indépendamment.",
+        "observation": "Textes et passages réellement lus, sourceweb distinguée des téléchargementsPDF ; lecture ERC finale réparée et constat erroné conservé.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/source_ledger.json",
-            "sha256": "35ae7d7b313accc333b848bb0fa31b47a6b1837aad28a94e9ebd48bef36dfdb0",
-            "explanation": "517 unités localisées et à clés canoniques ; populations, limites et versions explicites."
-          },
-          {
             "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/sources_passages.json",
-            "sha256": "1a5a5d522df60d3cf5f426e1de22277616a41ae9493839832cfcd65eb0645836",
-            "explanation": "Registre des textes et des passages réellement lus ; 23 textes et 65 spans contrôlés."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/acces_sources_auditeur_avenant.json",
-            "sha256": "cdf72be72ee5450704d05e21d3752cbba4113d057da5fdcf10142ac7795d4d70",
-            "explanation": "Chemins scratch accessibles à l’auditeur et empreintes intégrales/textuelles, limites complémentaires."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_avenant.json",
-            "sha256": "4c334de4562d2b40c6df43f4afcb7c89e5c8610093f247bf26efb6bd176817d0",
-            "explanation": "Relecture entière des sept surfaces après correction ; méthode actuelle sans retrocertification initiale."
+            "sha256": "3844f3aa0b60f0d308f913aaa62772c188e4f9d3d67abb814c3ed6585df53bfd",
+            "explanation": "Textes et passages réellement lus, sourceweb distinguée des téléchargementsPDF ; lecture ERC finale réparée et constat erroné conservé."
           }
         ]
       },
       {
         "id": "contexte_suisse",
-        "status": "non_conforme",
-        "observation": "FI suisses exactes initiales conservées et produit calcium importé documenté conformément à l’avenant. Absence historique de FI nationale désormais couverte pour ce seul produit. HUG280 mOsm/L et FI660 mOsm/L théoriques non expliqués ; différence HUG/UKKA et son applicabilité au produit à juger. UKKA justifie la différence entre hypocalcémie et hyperK ; la FI et la recommandation clinique restent distinctes. Aucun nouveau prérequis universel de protocole suisse : l’option européenne après recherche infructueuse tracée est contractuellement admise.",
+        "status": "conforme",
+        "observation": "Références suisses prioritaires, normalité contextualisée et couverture localisée ; arbitrage calcium explicite, différences réelles et décision indépendante en attente.",
         "evidence": [
           {
             "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/matrice_contexte_suisse.json",
-            "sha256": "b73f3032a7c60ebc57dca27d1a925457c0ecbcd387cc767deee02ff5ad87b52b",
-            "explanation": "32 décisions importantes, imported_product exact, aucun swissmedic_product fictif ; arbitrage restant explicitement non conforme."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_primaire_calcium_import.json",
-            "sha256": "0919fe2616912b31ae5062027de683021e3370e991fbfc6c07dfe5f37300a02f",
-            "explanation": "Lecture réelle des primaires avant correction : quantité totale, pH compatible, osmolarité et débit distincts."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/complement_sources_suisses_calcium.json",
-            "sha256": "f721be78d19a49d1d403f4c3840fd73da5cf3eae745f56762809f69379acec91",
-            "explanation": "Contrôle limité KCl/surdosage, RMS/rhabdomyolyse et absence de texte intégral EMJ ; aucune dose généralisée."
-          },
-          {
-            "path": "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
-            "sha256": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
-            "explanation": "Rôle distinct FI/recommandation clinique ; source suisse examinée d’abord puis option européenne si lacune tracée."
-          },
-          {
-            "path": "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md",
-            "sha256": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706",
-            "explanation": "Exception explicite résout le critère documentaire national pour ce seul produit, sans résoudre automatiquement les écarts cliniques."
+            "sha256": "98716e4027e250a9f74e3937f62182b4efb443caeb5f12b9302888594ea4822b",
+            "explanation": "Références suisses prioritaires, normalité contextualisée et couverture localisée ; arbitrage calcium explicite, différences réelles et décision indépendante en attente."
           }
         ]
       },
       {
         "id": "independance",
         "status": "conforme",
-        "observation": "Revue auteur par C01-R-NEPH, runtime réel /root/c01_r_neph. Audit N17 par C01-R-ENDO et contre-audit différé par C01-CA-NEPH attendus. Aucun audit E11 commencé ; aucune validation médicale humaine ni note attribuée.",
+        "observation": "Revue auteur seule ; ni auditN17 ni auditE11 ni note indépendante produits par cet auteur.",
         "evidence": [
           {
-            "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
-            "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
-            "explanation": "Rôles distincts explicitement assignés."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/provenance_reprise_calcium.json",
-            "sha256": "e051dbd29a72d214e0dd14901577efba791ea9f4b6ee0c93b5d03b43d5ed2f3b",
-            "explanation": "Auteur unique, rôle et absence de changement de registre, publication ou injection."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_reprise_P1.json",
+            "sha256": "a315ca8865f7d9fe8200f812cd0419def7b58c30e43e058baf36eb61310d19a5",
+            "explanation": "Revue auteur seule ; ni auditN17 ni auditE11 ni note indépendante produits par cet auteur."
           }
         ]
       },
       {
         "id": "contrat_cours",
         "status": "conforme",
-        "observation": "Méthode actuelle sous Prompts et avenant : quatre onglets, critères et paramètres en fin Pathologie, fenêtres, glossaire conditionnel, quatre disciplines, cinq figures, 14 Pareto et quatre quiz relus. Script officiel HTTP et contrôles exhaustifs ordinateur/mobile réussis sur les empreintes actuelles ; captures examinées. Constat auteur de forme et méthode, sans certification médicale indépendante.",
+        "observation": "Contrat de cours et fonction des75 fenêtres vérifiés ; paletteCycle1 désormais réellement contrôlée sur chaqueformat, nouveaux testHTTP et hash du rendu.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/reprise_methode_auteur.json",
-            "sha256": "f50c93bcbb73e03e677f49054f7b70092a7527895c981e4720c990ba6f5af624",
-            "explanation": "Lacune initiale de lecture I50 nommée ; lecture entière du modèle lors de la reprise antérieure, sans audit médical d’I50."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_avenant.json",
-            "sha256": "4c334de4562d2b40c6df43f4afcb7c89e5c8610093f247bf26efb6bd176817d0",
-            "explanation": "Sept surfaces finales entièrement relues, et Prompts/guide/instructions de sortie lus."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_technique_avenant.json",
-            "sha256": "9792087b52f14d214083ba0dcf12dea24bb7ed73712e52b8940fe17bb4405486",
-            "explanation": "Version réellement testée en HTTP sur ordinateur/mobile, 56 fenêtres et captures contrôlées."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_officielle_http.json",
-            "sha256": "2c70ce717d2c2ea55ace90ccf876d07e81ecb79f9294a50dce6265ef5e96fe6e",
-            "explanation": "Commande test_v7.py --url effectivement réussie : 14346 mots, 56 fenêtres, quatre quiz et 14 Pareto, OK."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_navigateur.json",
-            "sha256": "ff759e97f9851b96fab69febe21e60ba77ea16e30aaf2b682597325b5aa5a60b",
-            "explanation": "56 fenêtres déclenchées par les liens réels sur les deux viewports, quatre onglets, disciplines, quiz et mode livre."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_controles_avenant.json",
-            "sha256": "51ab01c69395a8747fa2676e2c6f2bc161da9f3b68adb59b8073f014bdea147c",
-            "explanation": "Fenêtre calcium ouverte et couleur/largeurs contrôlées sur le rendu final."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_jauges_blanches.json",
-            "sha256": "f2e01d88a693b503b97e6d74884d8196d1fed69267c77b7707cbb6f9c9a78ccc",
-            "explanation": "Contours/rails blancs ; fixtures 50% explicitement fictives, compteurs réels inchangés."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_technique_reprise_P1.json",
+            "sha256": "826ecdb2a12b699fa4b3190cf1aef9bdd0b4b451e64761522d513d8d595ccc06",
+            "explanation": "Rendu reconstruit après activation correcte du catalogue isolé, couleurs bleu/orange mesurées, précédent constat conservé."
           }
         ]
       },
       {
         "id": "honnetete",
         "status": "conforme",
-        "observation": "Verdict actuel NON_CONFORME réel, réserves non effacées ; exception nationale désormais distinguée des écarts cliniques. Source allemande datée 2014 réellement servie en 2026, aucune prétendue FI fabricant derrière login. Dose FI hypocalcémie et comparaison UKKA attribuées, sans schéma hyperK suisse assemblé. Les premières chronologies, l’écart initial I50 et les échecs techniques historiques sont conservés.",
+        "observation": "Anciennes réserves et erreur de qualificationERC conservées ; aucune validation humaine ni levée définitive de réserve ni autorisation d’injection revendiquées.",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/revision_medicale_calcium_import.json",
-            "sha256": "62e5465860ceef19e48ff4ecde753f660a3c4a5a0b988d15f90015fdb236b2f9",
-            "explanation": "Correction prospective sous avenant, première détection de six clés de glossaire puis correction ; sources historiques préservées."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/rectification_lecture_ERC2025.json",
+            "sha256": "fab176c0b6146e8f575e8fd8718e72eb52f051c38dca817d8f4655ced2d57500",
+            "explanation": "Anciennes réserves et erreur de qualificationERC conservées ; aucune validation humaine ni levée définitive de réserve ni autorisation d’injection revendiquées."
           },
           {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_avenant_calcium/revue_auteur.json",
-            "sha256": "dd13f3c7dc74356f519e512065be4f19d3308121c55d8d505e20ca5d1d889c3d",
-            "explanation": "Revue exacte avant exception, motifs historiques intacts et non utilisés comme verdict actuel."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/reprise_methode_auteur.json",
-            "sha256": "f50c93bcbb73e03e677f49054f7b70092a7527895c981e4720c990ba6f5af624",
-            "explanation": "Écart initial I50 non rétrocertifié."
-          },
-          {
-            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/complement_sources_suisses_calcium.json",
-            "sha256": "f721be78d19a49d1d403f4c3840fd73da5cf3eae745f56762809f69379acec91",
-            "explanation": "Limites exactes de lecture et de disponibilité des sources supplémentaires."
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_activation_palette_cycle1/revue_auteur.json",
+            "sha256": "a32a71d3d4042ac8b7d37ea35d142712b9f0a9ac2e438a2ae1473027c8604fb6",
+            "explanation": "Revue précédente conservée ; omission de vérification palette constatée et corrigée prospectivement."
           }
         ]
       }
     ],
-    "interpretation": "Sortie réellement vérifiée après lecture entière actuelle des Prompts, des consignes de sortie et de l’avenant, puis contrôle des preuves et SHA stabilisés. Méthode actuelle distincte de la réserve clinique et des écarts historiques.",
     "reading_and_chronology": {
-      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_avenant.json",
-      "sha256": "4c334de4562d2b40c6df43f4afcb7c89e5c8610093f247bf26efb6bd176817d0",
-      "explanation": "Lecture effective avant consignation, preuves stabilisées avant la présente sortie."
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_reprise_P1.json",
+      "sha256": "a315ca8865f7d9fe8200f812cd0419def7b58c30e43e058baf36eb61310d19a5",
+      "explanation": "Relecture réelle consignée avant sortie, preuves stables et hashes finaux vérifiés."
     }
   },
   "final_files": {
-    "chapters/N17/N17_a.html": "e5e757aec79227cc63bf941385e4586a2aa199c053401ac6bc8c995948d64c26",
-    "chapters/N17/N17_b.html": "e789c57cb8b45bc0e480ba17f65dd91b92c2f764fca51468afd1840a4aad1c65",
-    "chapters/N17/N17_c.html": "b4130147b320ad1653ea6299b8d4824b84b2a58da142139846483c81223c0485",
-    "chapters/N17/N17_d.html": "94a8e751772ceabc9580b3d32fcf20cc3620a8851e4042bec97a29aa9343eca9",
-    "chapters/N17/N17_pop1.html": "e67165aa7c2be7aa7f414085da86505b76d972684c1707748d8213eee62dd171",
-    "chapters/N17/N17_pop2.html": "566de1c0977bbd54e8e0ff193311587dbc3ea28f7e1ea4e5cd76ede1e3fd22e3",
-    "glossary/n17.py": "df4317dd80c0cdf415c817e7e479e35126a58afd468b2b8b9f99542b73735a5f"
+    "chapters/N17/N17_a.html": "51773917edd2cfeff47def82d7b3824ad80e46aa8b2527eab93279f9f194a753",
+    "chapters/N17/N17_b.html": "f8a5fb13c71b402eb2f795a545891ba820c9cd7f053e2ff34ed02eaef208c046",
+    "chapters/N17/N17_c.html": "8d137fc677abc1476b284488e431e65dc4a532e71af002d6d3541a536d716de7",
+    "chapters/N17/N17_d.html": "d2622e7d1e6699e92c13af0bd84c4355c613d041cc4a191c81de71254d61389e",
+    "chapters/N17/N17_pop1.html": "a68f84473f82c425bd417849ff9c3e7cd0143cb88150065837f23e7a7eeed1a5",
+    "chapters/N17/N17_pop2.html": "83df0a7accc25382bb6b99a19f6ce4ea6fe9adf9cc152e728a4942781b87d952",
+    "glossary/n17.py": "9ada51bb3e33898c883af8da68b3b396804e8ea5abdef3778b1d30b7c45c3503"
   },
-  "blocking_reserves": [
-    {
-      "id": "N17-CALCIUM-OSMOLARITE",
-      "description": "FI : osmolarité théorique660 mOsm/L ; HUG : 280 mOsm/L sans qualification. pH HUG6,9 compatible avec FI5,5–7,5. Aucune explication primaire de la différence d’osmolarité établie.",
-      "effect": "Réserve de sécurité actuelle ; la formulation enseignée ne déduit aucune innocuité périphérique de280. Portée clinique à juger indépendamment, sans réactiver l’ancienne exigence de FI nationale.",
-      "related_locations": [
-        "chapters/N17/N17_pop2.html#n17-calcium"
-      ],
-      "references": [
-        {
-          "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_primaire_calcium_import.json",
-          "sha256": "0919fe2616912b31ae5062027de683021e3370e991fbfc6c07dfe5f37300a02f",
-          "explanation": "Différences documentaires primaires réellement lues."
-        },
-        {
-          "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/sources_passages.json",
-          "sha256": "1a5a5d522df60d3cf5f426e1de22277616a41ae9493839832cfcd65eb0645836",
-          "explanation": "CALCURRENT, HUGCAL et UKCALRATE localisent les textes, versions et passages."
-        },
-        {
-          "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/matrice_contexte_suisse.json",
-          "sha256": "b73f3032a7c60ebc57dca27d1a925457c0ecbcd387cc767deee02ff5ad87b52b",
-          "explanation": "Différences séparées, imported_product exact et portée chapitre."
-        }
-      ]
-    },
-    {
-      "id": "N17-CALCIUM-DEBIT-APPLICABILITE",
-      "description": "UKKA explique pourquoi30 mL/10min en hyperK diffère du débit FI hypocalcémie ; HUG maintient toutefois une limite2 mL/min. Différence HUG/UKKA et applicabilité au produit importé exact non arbitrées par l’auteur.",
-      "effect": "Aucun schéma hyperK suisse assemblé ni prétention de validation ; recommandation européenne admissible après recherche suisse infructueuse tracée. L’auditeur juge séparément l’écart factuel, la formulation actuelle et les exigences contractuelles, sans exiger par principe un protocole suisse supplémentaire.",
-      "related_locations": [
-        "chapters/N17/N17_pop2.html#n17-calcium",
-        "chapters/N17/N17_d.html#n17-p-4"
-      ],
-      "references": [
-        {
-          "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_primaire_calcium_import.json",
-          "sha256": "0919fe2616912b31ae5062027de683021e3370e991fbfc6c07dfe5f37300a02f",
-          "explanation": "Différences documentaires primaires réellement lues."
-        },
-        {
-          "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/sources_passages.json",
-          "sha256": "1a5a5d522df60d3cf5f426e1de22277616a41ae9493839832cfcd65eb0645836",
-          "explanation": "CALCURRENT, HUGCAL et UKCALRATE localisent les textes, versions et passages."
-        },
-        {
-          "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/matrice_contexte_suisse.json",
-          "sha256": "b73f3032a7c60ebc57dca27d1a925457c0ecbcd387cc767deee02ff5ad87b52b",
-          "explanation": "Différences séparées, imported_product exact et portée chapitre."
-        }
-      ]
-    }
-  ],
-  "entry_normalization": {
-    "performed_at": "2026-10-11T19:33:27.600445+00:00",
-    "original_entry": {
-      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/entree_reprise_medicale_calcium_import.json",
-      "sha256": "3c819952cbb279d49c469e0a1720ae0f4060f9d33abe470711802748976a5ab9",
-      "explanation": "Entrée prospective originale immutable,19:09:43UTC ; aucun constat ni date réécrit."
-    },
-    "original_entry_sha256": "3c819952cbb279d49c469e0a1720ae0f4060f9d33abe470711802748976a5ab9",
-    "explanation": "La nouvelle revue conserve le constat/dates de l’entrée prospective. Les deux références vers la revue antérieure, déjà historisée avant l’entrée, pointent maintenant vers cette copie exacte à SHA identique ; pas de rétrocertification ni substitution des observations."
-  },
+  "blocking_reserves": [],
   "source_ledger": {
     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/source_ledger.json",
-    "sha256": "35ae7d7b313accc333b848bb0fa31b47a6b1837aad28a94e9ebd48bef36dfdb0",
-    "explanation": "517 unités,23 documents,65 passages, sept empreintes finales actuelles et réserve clinique distincte."
+    "sha256": "877ed787a63fc7da18c71dfdda3f3152510e0c50754d812a772e0d87549af763",
+    "explanation": "Registre renouvelé, assertions et passages identifiés, sept surfaces finales ; suffisance jugée indépendamment."
   },
   "swiss_context": {
-    "verdict": "non_conforme",
+    "verdict": "arbitrage_auteur_pour_audit_independant",
     "matrix_path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/matrice_contexte_suisse.json",
-    "matrix_sha256": "b73f3032a7c60ebc57dca27d1a925457c0ecbcd387cc767deee02ff5ad87b52b"
+    "matrix_sha256": "98716e4027e250a9f74e3937f62182b4efb443caeb5f12b9302888594ea4822b"
+  },
+  "coverage": {
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/matrice_couverture_suisse.json",
+    "sha256": "02cd5dee07d9530f988df65859827e71e5a4e9839daa6ebcc45220d81529ce03",
+    "explanation": "Recommandations pertinentes et exclusions de portée inspectables."
   },
   "technical_checks": {
-    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_technique_avenant.json",
-    "sha256": "9792087b52f14d214083ba0dcf12dea24bb7ed73712e52b8940fe17bb4405486",
-    "explanation": "Tests/captures réels et empreintes actuelles ; aucune validation médicale déduite."
-  },
-  "method_reprise": {
-    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/reprise_methode_auteur.json",
-    "sha256": "f50c93bcbb73e03e677f49054f7b70092a7527895c981e4720c990ba6f5af624",
-    "explanation": "Écart initial conservé, lecture complète du gabarit effectuée dans reprise antérieure."
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/verification_technique_reprise_P1.json",
+    "sha256": "826ecdb2a12b699fa4b3190cf1aef9bdd0b4b451e64761522d513d8d595ccc06",
+    "explanation": "Nouveau testHTTP et contrôle palette sur le nouveau rendu ; fonctionnalité précédente explicitement distinguée."
   },
   "current_surface_reading": {
-    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_avenant.json",
-    "sha256": "4c334de4562d2b40c6df43f4afcb7c89e5c8610093f247bf26efb6bd176817d0",
-    "explanation": "Relecture complète des sept sources finales sous exigences et avenant."
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/relecture_surfaces_reprise_P1.json",
+    "sha256": "a315ca8865f7d9fe8200f812cd0419def7b58c30e43e058baf36eb61310d19a5",
+    "explanation": "Sept surfaces finales effectivement relues."
   },
-  "global_verdict": "NON_CONFORME",
-  "injection_verdict": "NON_CONFORME_POUR_INJECTION",
-  "formal_state_changed": false,
-  "score": null,
-  "guard_expected_result": "Rejet de toute transition favorable : entrée/sortie NON_CONFORME et réserves actuelles non vides. Aucun schéma ni exception documentaire ne transforme ce constat en validation clinique.",
-  "historical_national_FI_issue": {
-    "current_status": "exception_documentaire_explicitement_autorisee_pour_ce_seul_produit",
-    "authority": {
-      "path": "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md",
-      "sha256": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706",
-      "explanation": "Autorité Vial, exception limitée à N17 et Calciumgluconat B. Braun10%, statut import allemand conservé."
-    },
-    "not_a_current_automatic_block": true
-  },
-  "history": [
+  "independent_score": null,
+  "global_verdict": "remise_auteur_figee_pour_audits",
+  "injection_verdict": "NON_AUTORISEE_AVANT_AUDITS_ET_CONTROLE",
+  "pending_independent_findings": [
     {
-      "review": {
-        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_avenant_calcium/revue_auteur.json",
-        "sha256": "dd13f3c7dc74356f519e512065be4f19d3308121c55d8d505e20ca5d1d889c3d",
-        "explanation": "Copie exacte de la dernière revue avant avenant ; verdict et motifs historiques conservés."
-      },
-      "exit_checked_at": "2026-10-11T18:53:31.738896+00:00",
-      "reason": "Nouvelle correction prospective sous autorité explicite, nouvelle version de sources ; pas d’effacement de la non-conformité historique."
-    },
-    {
-      "review": {
-        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/revue_auteur_historique_sortie_184219.json",
-        "sha256": "29a152aadebcdf2b418cf2242e4cc67ebe17eca9bdf87ce730a615ee05186eb1",
-        "explanation": "Copie exacte de la revue précédente ; sortie 18:42:19 citant preuve officielle 18:43:12. Cette sortie ne peut certifier ce contrôle ultérieur."
-      },
-      "obsolete_exit_checked_at": "2026-10-11T18:42:19.302744+00:00",
-      "reason": "La sortie précédente était antérieure à une preuve HTTP ajoutée après sa création ; elle est conservée, pas antidatée ni réécrite comme si la preuve existait déjà."
+      "id": "N17-CALCIUM-HISTORIQUE",
+      "description": "Réserve historique conservée ; sa levée définitive exige les deux niveaux indépendants. Ils examinent le schéma attribué Europe/UKKA contre débitHUG et la propriétéFI660 contre HUG280.",
+      "author_arbitration": "Schéma hyperK urgent distinct de la réplétion hypocalcémique ;660 est une propriété théorique du produit exact,280 ne détermine ni voie ni dilution ; concentrationHUG limitée àperfusionscontinues. Aucun consensus suisse inventé."
     }
   ],
+  "history": [
+    {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_reprise_P1/revue_auteur.json",
+      "sha256": "049b244a3f93af7cf64aea978ca7f601091463cbf50cf46c58529cc054b48176",
+      "explanation": "Copie exacte de la revue historique NON_CONFORME avant cette reprise, sans modification."
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/rectification_lecture_ERC2025.json",
+      "sha256": "fab176c0b6146e8f575e8fd8718e72eb52f051c38dca817d8f4655ced2d57500",
+      "explanation": "Mauvaise qualification de captureweb explicitement corrigée avant vraie lecture locale."
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_activation_palette_cycle1/revue_auteur.json",
+      "sha256": "a32a71d3d4042ac8b7d37ea35d142712b9f0a9ac2e438a2ae1473027c8604fb6",
+      "explanation": "Revue exacte avant correction de palette du seul aperçu ; sept sources identiques."
+    }
+  ],
+  "E11_audit_started": false,
   "independent_audits_started_by_author": false,
-  "E11_audit_started": false
+  "frontend_revision": "Activation réelle production_cycle:1 ; historique de contrôle incomplet conservé ; nouvelle sortie à heure réelle."
 }

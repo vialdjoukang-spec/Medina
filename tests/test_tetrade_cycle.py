@@ -201,6 +201,14 @@ class TetradeGuardTests(unittest.TestCase):
                 with self.assertRaisesRegex(C.CycleError, "Seconde passe"):
                     C.review(Tree(self.files), row, "cross_audit", actor, files)
 
+    def test_nineteen_with_minor_reserve_cannot_close_updated_cycle(self):
+        row, data, reports, actor, files = self.complete_review()
+        reports[1].update(score=19, minor_reserve_justification="Réserve de fixture justifiée")
+        data["passes"][1]["report"] = self.reference("preuves/passe-2.json", reports[1])
+        row["cross_audit"] = self.reference("preuves/revue.json", data)
+        with self.assertRaisesRegex(C.CycleError, "20/20 requis"):
+            C.review(Tree(self.files), row, "cross_audit", actor, files)
+
     def test_nine_checks_or_ten_duplicates_are_insufficient(self):
         for duplicates in (False, True):
             with self.subTest(duplicates=duplicates):

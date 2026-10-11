@@ -1,0 +1,79 @@
+{
+  "code": "D50",
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem_resume",
+  "checked_at": "2026-10-11T22:11:19.727292+00:00",
+  "final_files": {
+    "chapters/D50/D50_a.html": "88e36031c30111972f848fb98e1ac563c51d21d7a7dfd1dbbe42bf3956eb5758",
+    "chapters/D50/D50_b.html": "7161814bab50af6594652d25284528e71d72061599bd968a55b7fdd2b19e757d",
+    "chapters/D50/D50_c.html": "c4958d09b550deaf5d89e31563ca8ad17e4546cbc737a872b2243a3b41d65400",
+    "chapters/D50/D50_d.html": "c46bcfc8fe4a64b5602cca8d0418cfe2bff5f246a7be9f99c6e6355942579a6f",
+    "chapters/D50/D50_pop1.html": "780c31951360f27c210510f77a8ac796fd7e6c5102f11e86fb0d3a7bd73b9ede",
+    "chapters/D50/D50_pop2.html": "f8ed026b6b18775c9c6d327f2b5019670210de7b8a2f4a1f6ca08414310675d2",
+    "glossary/d50.py": "c424cff1adf1ee7eafb5aba4089424a1ae4bf43c41e0fdc29b92dbba57622920"
+  },
+  "normality_scope": {
+    "swiss_laboratory_sources": [
+      "VIOLLIER_HB",
+      "VIOLLIER_FERR",
+      "VIOLLIER_TSAT",
+      "VIOLLIER_CRP",
+      "VIOLLIER_MCV",
+      "VIOLLIER_MCH",
+      "VIOLLIER_RETI",
+      "VIOLLIER_CHR",
+      "VIOLLIER_INDEX",
+      "VIOLLIER_MCHC",
+      "VIOLLIER_IRON",
+      "VIOLLIER_TIBC",
+      "VIOLLIER_HCT",
+      "LUKS_PHOS"
+    ],
+    "population_age_method_units_distinguished": true,
+    "no_age_invented_where_unspecified": true,
+    "no_harmonized_hepcidin_normality_invented": true,
+    "renal_G1_category_not_universal_interval": true
+  },
+  "calculation_windows": [
+    "d50-conversion-hb",
+    "d50-fer-sang",
+    "d50-dose-volume",
+    "d50-index-ferritine",
+    "d50-rapport-hepcidine",
+    "d50-teneur-globulaire",
+    "d50-concentration-globulaire",
+    "d50-conversion-phosphate",
+    "d50-rapport-cotes",
+    "d50-conversion-ferritine",
+    "d50-poids-modele",
+    "d50-ganzoni",
+    "d50-tsat"
+  ],
+  "calculation_sequence": "bases et sens de la mesure → unités → étapes → exemple fictif → interprétation → limites",
+  "gradation_contexts": [
+    "d50-anemie-def",
+    "d50-ferritine",
+    "d50-tsat",
+    "d50-hypophos",
+    "d50-sport",
+    "d50-irc",
+    "d50-filtration-renale"
+  ],
+  "fictive_vignettes_explicit": true,
+  "figures_count": 5,
+  "figure_scope": "Schémas originaux, sources et légendes HTML : normal → pathologique → implication ; taille réelle contrôlée sur mobile.",
+  "browser": {
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controle_navigateur_reprise_clarte.json",
+    "sha256": "0b8cd50168d1a6cd0bc84b0f2c98ea201062700f77cc821d3b0908e2159f95f7"
+  },
+  "ledger": {
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/registre_affirmations_sources.json",
+    "sha256": "c21f32fbc00920ed98081684a6486ad35e88e2ad97f6a2800876036153c992f4"
+  },
+  "coverage": {
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/matrice_couverture_suisse_clarte.json",
+    "sha256": "c406e275a22bf317435a3d47d2b57b165a7b987f2c1a8c53974ac679e2d9aaa1"
+  },
+  "independent_verdict": "pending_fresh_cross_audit",
+  "medical_human_validation": false
+}
