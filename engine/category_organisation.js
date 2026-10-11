@@ -36,8 +36,36 @@
  const filterNotice = () => activeFilter() ? '<div class="mcg-filter-notice" role="status"><strong>Filtre : ' + h(filterNames[activeFilter()]) + '</strong><a class="mcg-back" href="#/home">← Toutes les leçons</a></div>' : '';
  const pad = value => String(value).padStart(2, '0');
  const name = lesson => lesson.code + ' — ' + lesson.title;
- const gold = lesson => lesson.gold_star?.enabled ? '<span class="nosology-gold" role="img" aria-label="Étoile d’Or permanente · PROFILES SSP ' + h(lesson.gold_star.ssp.join(', ')) + '" title="Lien pédagogique PROFILES 2017 · SSP ' + h(lesson.gold_star.ssp.join(', ')) + '">★</span>' : '';
+ let goldIconIndex = 0;
+ const gold = lesson => {
+  if (!lesson.gold_star?.enabled) return '';
+  const id = 'mcg-gold-' + (++goldIconIndex);
+  return '<sup class="nosology-gold" role="img" aria-label="Étoile d’Or permanente · PROFILES SSP ' + h((Array.isArray(lesson.gold_star.ssp) ? lesson.gold_star.ssp : []).join(', ')) + '" title="Lien pédagogique PROFILES 2017 · SSP ' + h((Array.isArray(lesson.gold_star.ssp) ? lesson.gold_star.ssp : []).join(', ')) + '"><svg class="mcg-gold-symbol" viewBox="0 0 80 84" aria-hidden="true" focusable="false"><defs>'
+   + '<linearGradient id="'+id+'-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff3a6"/><stop offset=".2" stop-color="#efc34e"/><stop offset=".43" stop-color="#b97908"/><stop offset=".57" stop-color="#ffdf70"/><stop offset=".8" stop-color="#f5c64a"/><stop offset="1" stop-color="#8f5700"/></linearGradient>'
+   + '<radialGradient id="'+id+'-shadow"><stop stop-color="#76500a" stop-opacity=".28"/><stop offset="1" stop-color="#76500a" stop-opacity="0"/></radialGradient></defs>'
+   + '<ellipse cx="41" cy="79" rx="30" ry="4" fill="url(#'+id+'-shadow)"/>'
+   + '<path d="M40 5L50 28L76 31L56 48L61 74L40 61L19 74L24 48L4 31L30 28Z" fill="url(#'+id+'-metal)" stroke="#9b6305" stroke-width="1"/>'
+   + '<path d="M40 5L40 41L30 28Z" fill="#fff5b5"/><path d="M76 31L40 41L50 28Z" fill="#ffeb94"/><path d="M61 74L40 41L56 48Z" fill="#ad6b03"/><path d="M19 74L40 41L40 61Z" fill="#ffe899"/><path d="M4 31L40 41L24 48Z" fill="#cc8f18"/>'
+   + '<path d="M40 8L31 29L8 32M41 42L58 70" fill="none" stroke="#fff5c2" stroke-width="1.25" stroke-linecap="round" stroke-opacity=".9"/>'
+   + '<path d="M50 29L72 32L55 47M40 60L20 72" fill="none" stroke="#805009" stroke-width=".9" stroke-opacity=".5"/>'
+   + '</svg></sup>';
+ };
+ const markedTitle = (lesson, label = lesson.title) => {
+  const star = gold(lesson);
+  if (!star) return h(label);
+  const glyphs = Array.from(label.trimEnd()), last = glyphs.pop() || '';
+  return h(glyphs.join('')) + '<span class="mcg-star-tail">' + h(last) + star + '</span>';
+ };
  const pct = v => (v.total ? Math.round(1000*v.filled/v.total)/10 : 0).toLocaleString('fr-CH') + ' %';
+ const categoryProgress = block => {
+  if (!block.progress) return '';
+  return '<div class="mcg-category-progress" data-mcg-category-progress="' + h(block.code) + '" aria-label="Avancement de cette catégorie">' + [['federal_exam','Leçons fédérales'],['global','Avancement global de la catégorie']].map(([key,label]) => {
+   const value = block.progress[key];
+   if (!value) return '';
+   const percentage = value.percent.toLocaleString('fr-CH', {maximumFractionDigits:2}) + ' %';
+   return '<div class="mcg-category-gauge" data-mcg-progress-kind="' + key + '"><span class="mcg-category-gauge-copy"><span>' + h(label) + '</span><b data-mcg-progress-count>' + value.filled + ' / ' + value.total + '</b></span><progress max="' + Math.max(1,value.total) + '" value="' + value.filled + '" aria-label="' + h(label + ' : ' + value.filled + ' sur ' + value.total) + '"></progress><b data-mcg-progress-percent>' + h(percentage) + '</b></div>';
+  }).join('') + '</div>';
+ };
  const gauge = (label, value, note='', filter='') => {
   if (!value) return '';
   const linked = filterCodes.has(filter), tag = linked ? 'a' : 'div';
@@ -72,20 +100,20 @@
  const rule = () => '<details class="mcg-rule"><summary>Un mot souligné ? Explorez son explication.</summary><p>Dans les cours, les mots interactifs ouvrent les mécanismes, les précisions et leurs sources. Les quatre onglets vous accompagnent du raisonnement à la prise en charge.</p></details>';
  function categoryCard(block) {
   const count = block.lessons.filter(own).length;
-  return '<a class="mcg-category-card" href="' + h(categoryUrl(block)) + '" data-mcg-category="' + h(block.code) + '" aria-label="Catégorie ' + pad(block.order) + ' : ' + h(block.title) + ' — ' + h(block.code) + '"><div class="mcg-category-top"><span class="mcg-category-number">' + pad(block.order) + '</span><span class="mcg-code">' + h(block.code) + '</span></div><h2>' + h(block.title) + '</h2><span class="mcg-category-foot"><span>' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + (count ? '<i class="mcg-available-dot"></i>' + count + ' disponible' + (count > 1 ? 's' : '') : '') + '</span>' + arrow + '</span></a>';
+  return '<a class="mcg-category-card" href="' + h(categoryUrl(block)) + '" data-mcg-category="' + h(block.code) + '" aria-label="Catégorie ' + pad(block.order) + ' : ' + h(block.title) + ' — ' + h(block.code) + '"><div class="mcg-category-top"><span class="mcg-category-number">' + pad(block.order) + '</span><span class="mcg-code">' + h(block.code) + '</span></div><h2>' + h(block.title) + '</h2>' + categoryProgress(block) + '<span class="mcg-category-foot"><span>' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + (count ? '<i class="mcg-available-dot"></i>' + count + ' disponible' + (count > 1 ? 's' : '') : '') + '</span>' + arrow + '</span></a>';
  }
  function variants(lesson) {
   const listed = lesson.searchVariants || lesson.variants;
   const entities = lesson.entities || [];
-  const nested = entities.length ? '<details class="mcg-variants"><summary>Entités détaillées · ' + entities.length + '</summary><ul>' + entities.map(entity => '<li><a href="' + h(filteredUrl('#/entry/' + encodeURIComponent(entity.code))) + '">' + gold(entity) + h(entity.code + ' — ' + entity.title) + '</a></li>').join('') + '</ul></details>' : '';
+  const nested = entities.length ? '<details class="mcg-variants"><summary>Entités détaillées · ' + entities.length + '</summary><ul>' + entities.map(entity => '<li><a href="' + h(filteredUrl('#/entry/' + encodeURIComponent(entity.code))) + '">' + markedTitle(entity, entity.code + ' — ' + entity.title) + '</a></li>').join('') + '</ul></details>' : '';
   if (listed.length === 1 && listed[0].code === lesson.code && listed[0].title === lesson.title) return nested;
   return '<details class="mcg-variants"><summary>Voir les catégories regroupées</summary><ul>' + listed.map(variant => '<li data-mcg-variant="' + h(variant.code) + '"><b>' + h(variant.code) + '</b> — ' + h(variant.title) + '</li>').join('') + '</ul></details>' + nested;
  }
  function lessonCard(block, lesson, featured = false) {
-  return '<article class="mcg-lesson' + (featured ? ' mcg-featured-lesson' : '') + '" data-mcg-lesson="' + h(lesson.code) + '" data-mcg-reference="false"><a class="mcg-lesson-main" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + ' · ' + status(lesson) + '"><span class="mcg-lesson-icon">' + book + '</span><span class="mcg-course-copy"><span class="mcg-code">' + h(lesson.code) + '</span><span class="mcg-lesson-title">' + gold(lesson) + h(lesson.title) + '</span><span class="mcg-lesson-state ' + (own(lesson) ? 'is-available' : 'is-planned') + '">' + status(lesson) + ' <span aria-hidden="true">→</span></span></span></a>' + (!featured ? variants(lesson) : '') + '</article>';
+  return '<article class="mcg-lesson' + (featured ? ' mcg-featured-lesson' : '') + '" data-mcg-lesson="' + h(lesson.code) + '" data-mcg-reference="false"><a class="mcg-lesson-main" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + ' · ' + status(lesson) + '"><span class="mcg-lesson-icon">' + book + '</span><span class="mcg-course-copy"><span class="mcg-code">' + h(lesson.code) + '</span><span class="mcg-lesson-title">' + markedTitle(lesson) + '</span><span class="mcg-lesson-state ' + (own(lesson) ? 'is-available' : 'is-planned') + '">' + status(lesson) + ' <span aria-hidden="true">→</span></span></span></a>' + (!featured ? variants(lesson) : '') + '</article>';
  }
  function blockSection(block) {
-  return '<section class="mcg-block" data-mcg-block="' + h(block.code) + '"><header class="mcg-block-heading"><div><span class="mcg-eyebrow">Catégorie ' + pad(block.order) + ' · ' + h(block.code) + '</span><h2>' + h(block.title) + '</h2></div><span class="mcg-section-count">' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + '</span></header><div class="mcg-lessons">' + block.lessons.map(lesson => lessonCard(block, lesson)).join('') + '</div></section>';
+  return '<section class="mcg-block" data-mcg-block="' + h(block.code) + '"><header class="mcg-block-heading"><div><span class="mcg-eyebrow">Catégorie ' + pad(block.order) + ' · ' + h(block.code) + '</span><h2>' + h(block.title) + '</h2></div><span class="mcg-section-count">' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + '</span></header>' + categoryProgress(block) + '<div class="mcg-lessons">' + block.lessons.map(lesson => lessonCard(block, lesson)).join('') + '</div></section>';
  }
  function cover(compact = false) {
   const count = visibleAvailable().length, categories = visibleBlocks().length;
@@ -95,8 +123,8 @@
   return '<nav class="mcg-breadcrumbs" aria-label="Fil d’Ariane"><a href="' + h(filteredUrl('#/home')) + '">' + h(title) + '</a>' + (block ? '<span aria-hidden="true">/</span><a href="' + h(categoryUrl(block)) + '">' + h(block.title) + '</a>' : '') + (lesson ? '<span aria-hidden="true">/</span><span>' + h(name(lesson)) + '</span>' : '') + '</nav>';
  }
  function planned(block, lesson) {
-  if (lesson.plan?.length) return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation · plan prévu</span><h2 id="mcg-planned-title" tabindex="-1">' + gold(lesson) + h(lesson.title) + '</h2>' + (lesson.gold_star?.enabled ? '<p>PROFILES 2017 · SSP ' + h(lesson.gold_star.ssp.join(', ')) + ' · correspondance pédagogique</p>' : '') + '<div class="nosology-plan">' + lesson.plan.map(section => '<section><h3>' + h(section.title) + '</h3>' + (section.content ? '<p>' + h(section.content) + '</p>' : '') + '</section>').join('') + '</div>' + variants(lesson) + '</section>';
-  return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation</span><h2 id="mcg-planned-title" tabindex="-1">' + h(lesson.title) + '</h2><p>Le contenu de ce chapitre est en cours de préparation. Vous pouvez déjà consulter les catégories qui lui sont rattachées.</p><ul>' + lesson.variants.map(variant => '<li><strong>' + h(variant.code) + ' — ' + h(variant.title) + '</strong>' + (variant.subcodes.length ? '<details><summary>Sous-catégories</summary><ul>' + variant.subcodes.map(subcode => '<li>' + h(subcode.code) + ' — ' + h(subcode.title) + '</li>').join('') + '</ul></details>' : '') + '</li>').join('') + '</ul></section>';
+  if (lesson.plan?.length) return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation · plan prévu</span><h2 id="mcg-planned-title" tabindex="-1">' + markedTitle(lesson) + '</h2>' + (lesson.gold_star?.enabled ? '<p>PROFILES 2017 · SSP ' + h(lesson.gold_star.ssp.join(', ')) + ' · correspondance pédagogique</p>' : '') + '<div class="nosology-plan">' + lesson.plan.map(section => '<section><h3>' + h(section.title) + '</h3>' + (section.content ? '<p>' + h(section.content) + '</p>' : '') + '</section>').join('') + '</div>' + variants(lesson) + '</section>';
+  return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation</span><h2 id="mcg-planned-title" tabindex="-1">' + markedTitle(lesson) + '</h2><p>Le contenu de ce chapitre est en cours de préparation. Vous pouvez déjà consulter les catégories qui lui sont rattachées.</p><ul>' + lesson.variants.map(variant => '<li><strong>' + h(variant.code) + ' — ' + h(variant.title) + '</strong>' + (variant.subcodes.length ? '<details><summary>Sous-catégories</summary><ul>' + variant.subcodes.map(subcode => '<li>' + h(subcode.code) + ' — ' + h(subcode.title) + '</li>').join('') + '</ul></details>' : '') + '</li>').join('') + '</ul></section>';
  }
  readRoute = function() {
   const raw = location.hash.slice(2) || 'home', [head, query = ''] = raw.split('?'), parts = head.split('/').map(decodeURIComponent);
@@ -176,7 +204,7 @@
  footer = () => (!activeFilter() && O.nosology?.secondary_references?.length ? '<details class="mcg-variants"><summary>Renvois associés à cette spécialité · ' + O.nosology.secondary_references.length + '</summary><ul>' + O.nosology.secondary_references.map(link=>'<li><a href="'+h(link.url)+'">'+h(link.code)+' · '+h(link.fragment)+'</a></li>').join('')+'</ul></details>' : '') + '<footer class="mcg-footer"><span>MEDINA <span aria-hidden="true">/</span> ' + h(title) + '</span><span>' + h(O.version) + ' <span aria-hidden="true">·</span> <a href="../index.html">Toutes les spécialités ↗</a></span></footer>';
  drawSidebar = function() {
   const active = aliases.get(route?.id), category = route?.q.get('category') || active?.block.code;
-  document.getElementById('spec-nav').innerHTML = visibleBlocks().map(block => '<details class="mcg-sidebar-block" ' + (category === block.code ? 'open' : '') + ' data-mcg-sidebar-category="' + h(block.code) + '"><summary><span>' + pad(block.order) + '</span><b>' + h(block.title) + '</b></summary><a class="mcg-sidebar-all" href="' + h(categoryUrl(block)) + '">Tous les chapitres <span aria-hidden="true">→</span></a>' + block.lessons.map(lesson => '<a class="mcg-sidebar-lesson ' + (active?.lesson.code === lesson.code ? 'active' : '') + '" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + '" data-fragment-chapter="' + (own(lesson) ? h(lesson.code) : '') + '" data-mcg-sidebar-lesson="' + h(lesson.code) + '"><span>' + h(lesson.title) + '<small>' + h(lesson.code) + ' · ' + (own(lesson) ? 'Disponible' : 'En préparation') + '</small></span></a>').join('') + '</details>').join('') || '<p class="mcg-sidebar-empty">Aucune catégorie à afficher.</p>';
+  document.getElementById('spec-nav').innerHTML = visibleBlocks().map(block => '<details class="mcg-sidebar-block" ' + (category === block.code ? 'open' : '') + ' data-mcg-sidebar-category="' + h(block.code) + '"><summary><span>' + pad(block.order) + '</span><b>' + h(block.title) + '</b></summary><a class="mcg-sidebar-all" href="' + h(categoryUrl(block)) + '">Tous les chapitres <span aria-hidden="true">→</span></a>' + block.lessons.map(lesson => '<a class="mcg-sidebar-lesson ' + (active?.lesson.code === lesson.code ? 'active' : '') + '" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + '" data-fragment-chapter="' + (own(lesson) ? h(lesson.code) : '') + '" data-mcg-sidebar-lesson="' + h(lesson.code) + '"><span>' + '<span class="mcg-sidebar-title">' + markedTitle(lesson) + '</span><small>' + h(lesson.code) + ' · ' + (own(lesson) ? 'Disponible' : 'En préparation') + '</small></span></a>').join('') + '</details>').join('') || '<p class="mcg-sidebar-empty">Aucune catégorie à afficher.</p>';
   document.querySelectorAll('.nav-main a').forEach(link => {
    const base = link.dataset.mcgBaseHref || link.getAttribute('href');
    link.dataset.mcgBaseHref = base;
@@ -186,10 +214,6 @@
   if(O.nosology){
    const note=document.querySelector('.sidebar-note');
    if(note)note.innerHTML=fragmentGauges()+gauge('MEDINA · avancement global',O.nosology.global_progress);
-   document.querySelectorAll('[data-mcg-sidebar-lesson]').forEach(link=>{
-    const item=aliases.get(link.dataset.mcgSidebarLesson);
-    if(item?.lesson.gold_star?.enabled)link.insertAdjacentHTML('afterbegin',gold(item.lesson));
-   });
   }
  };
  showCommandPalette = function() {openModal(title, '<div class="command-links"><a data-close-modal class="command-link" href="' + h(filteredUrl('#/home')) + '">L’accueil et les catégories</a><a data-close-modal class="command-link" href="' + h(filteredUrl('#/search?available=1')) + '">Les cours disponibles</a><a data-close-modal class="command-link" href="' + h(filteredUrl('#/search')) + '">Rechercher un chapitre</a></div><div class="mcg-category-grid">' + visibleBlocks().map(block => categoryCard(block).replace('<a ', '<a data-close-modal ')).join('') + '</div>');};
@@ -198,6 +222,20 @@
  const previousBind = bindPage;
  bindPage = function() {
   previousBind(); document.getElementById('mcg-planned-title')?.focus({preventScroll:true});
+  const readerLesson = aliases.get(route?.id)?.lesson, readerTitle = document.querySelector('.mc-chap-head h1');
+  if (readerLesson?.gold_star?.enabled && readerTitle && !readerTitle.querySelector('.nosology-gold')) {
+   const walker = document.createTreeWalker(readerTitle, NodeFilter.SHOW_TEXT);
+   let lastText = null, node;
+   while ((node = walker.nextNode())) if (node.textContent.trim()) lastText = node;
+   if (lastText) {
+    // Decorate the reader heading only. Existing heading elements and course panels stay intact.
+    const index = lastText.data.search(/\S\s*$/u), finalGlyph = lastText.splitText(index);
+    const glyphLength = Array.from(finalGlyph.data)[0].length;
+    if (finalGlyph.length > glyphLength) finalGlyph.splitText(glyphLength);
+    const tail = document.createElement('span'); tail.className = 'mcg-star-tail';
+    finalGlyph.before(tail); tail.append(finalGlyph); tail.insertAdjacentHTML('beforeend', gold(readerLesson));
+   }
+  }
   document.querySelectorAll('.mc .mc-toc:not(details)').forEach(toc=>{
    const details=document.createElement('details'),summary=document.createElement('summary');
    details.className=toc.className;summary.textContent='Sommaire de cet onglet';

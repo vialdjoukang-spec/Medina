@@ -136,7 +136,7 @@ def create_overlay(root, verified_files, manifest, overlay):
     """Copy work sources and shadow build metadata; keep the frontend unchanged."""
     root, overlay = Path(root), Path(overlay)
     overlay.mkdir()
-    excluded = {".git", "__pycache__", "dist", "work", "chapters", "glossary", "shell", "chapters.json", "organisation"}
+    excluded = {".git", "__pycache__", "dist", "work", "chapters", "glossary", "shell", "chapters.json", "organisation", "nosology"}
     for item in root.iterdir():
         if item.name not in excluded:
             (overlay / item.name).symlink_to(item, target_is_directory=item.is_dir())
@@ -193,6 +193,39 @@ def create_overlay(root, verified_files, manifest, overlay):
     build_data = (root / "shell/data.py").read_text(encoding="utf-8")
     build_data += "\n# Internal fragment consultation: no final certification.\nDONE_COURSES = set()\nDONE_SYS = set()\n"
     (overlay / "shell/data.py").write_text(build_data, encoding="utf-8")
+    # The preview changes canonical grouping (only declared drafts are readable).
+    # Its catalogue must use that same grouping, rather than the production one.
+    # Shadow metadata locally: never write through a link to a source inventory.
+    if (root / "nosology/fragments" / (FRAGMENT + ".json")).exists():
+        (overlay / "nosology").mkdir()
+        for item in (root / "nosology").iterdir():
+            if item.name != "fragments":
+                (overlay / "nosology" / item.name).symlink_to(item, target_is_directory=item.is_dir())
+        (overlay / "nosology/fragments").mkdir()
+        for item in (root / "nosology/fragments").iterdir():
+            if item.name != FRAGMENT + ".json":
+                (overlay / "nosology/fragments" / item.name).symlink_to(item, target_is_directory=item.is_dir())
+        from fragment_surface import frontend_catalog
+        from nosologyEngine import generate, reference
+        ref = reference(str(overlay.resolve()))
+        codes = [item["code"] for item in ref["entities"] if not item.get("excluded")
+                 and ref["mapping"].get(item["code"][:3], {}).get("fragment") == FRAGMENT]
+        _, _, courses = frontend_catalog(overlay)
+        preview_courses = {code: dict(course, has_content=True) for code, course in courses.items()
+                           if course["source_fragment_id"] == FRAGMENT}
+        previous = json.loads((root / "nosology/fragments" / (FRAGMENT + ".json")).read_text(encoding="utf-8"))
+        aliases = {code: course["code"] for course in preview_courses.values()
+                   for code in set(course.get("covers", [])) | {course["code"]}}
+        expected_ids = {aliases.get(code, code) if len(code) == 3 else code for code in codes}
+        previous["lessons"] = [lesson for lesson in previous["lessons"] if lesson["id"] in expected_ids]
+        inventory = generate(codes, FRAGMENT, overlay, existing_courses=preview_courses, previous=previous)
+        claimed = set()
+        for lesson in inventory["lessons"]:
+            for code in lesson["icd10gm"]["codes"]:
+                if code in claimed:
+                    raise ValueError("Classification de l’aperçu ambiguë : " + code)
+                claimed.add(code)
+        (overlay / "nosology/fragments" / (FRAGMENT + ".json")).write_text(json_text(inventory) + "\n", encoding="utf-8")
 
 
 def mark_preview(source, manifest):

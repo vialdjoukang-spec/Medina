@@ -162,20 +162,39 @@ html[data-medina-fragment] .mc-chap-head h1{font-size:clamp(28px,3.1vw,42px)!imp
 html[data-medina-fragment] .mc-chap-head .mc-code{font-weight:400;color:var(--atlas-accent)}
 /* Immutable curriculum markers and empty monographic shells. */
 #content .nosology-gold,.sidebar .nosology-gold{display:inline-block;color:#936c08!important;margin-right:.5em;font-size:1.15em;cursor:default}
+/* Keep the last letter and its editorial marker together without fixing title widths. */
+.mcg-star-tail{white-space:nowrap}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,.sidebar) sup.nosology-gold{display:inline-block!important;vertical-align:super;line-height:0;font-size:.72em!important;margin:0 0 0 2px!important;padding:0;border:0;background:transparent!important;color:#a16906!important;cursor:default;pointer-events:none}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,.sidebar) .mcg-gold-symbol{display:inline-block;width:17px;height:17px;overflow:visible;vertical-align:baseline}
+/* Category totals stay independent of the active curriculum filter. These are indicators. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-progress{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px;margin:14px 0 20px;width:100%;min-width:0;font:400 12px/1.45 var(--x-font);color:#0b2545!important;cursor:default}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-progress :is(span,b){color:#0b2545!important;font-size:12px!important;line-height:1.45!important;letter-spacing:0}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-gauge{display:grid;gap:4px;min-width:0}
+.mcg-category-gauge-copy{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:3px 8px;min-width:0}
+.mcg-category-gauge-copy>span{flex:1 1 120px}
+[data-mcg-progress-count],[data-mcg-progress-percent]{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
+.mcg-category-gauge progress{display:block;width:100%;height:7px;accent-color:#ffb300;border:0;border-radius:3px}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card .mcg-category-progress{grid-template-columns:1fr;gap:10px;margin:0 0 16px}
+@media(max-width:700px){html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-progress{grid-template-columns:1fr;gap:12px}}
 .nosology-progress{display:grid;gap:.45rem;margin:.9rem 0;font-size:.75rem;color:var(--ink,#263832)}
 .nosology-progress progress{width:100%;height:.6rem;accent-color:var(--atlas-accent,#317765)}
 /* The metal funnel is a label, not a control; only the first two gauges navigate. */
 .mcg-filter-heading{display:flex;align-items:center;gap:10px;margin:0 0 4px;color:var(--s-ink,#0b2545);cursor:default}
-.mcg-filter-symbol{display:block;width:42px;height:42px;flex:0 0 42px;overflow:visible;pointer-events:none}
+.mcg-filter-symbol{display:block;width:4.2px;height:4.2px;flex:0 0 4.2px;overflow:visible;pointer-events:none}
 .mcg-filter-label{font-size:14px;font-weight:700;letter-spacing:.02em}
-.nosology-progress[data-mcg-filter]{position:relative;padding:10px 12px;border:1px solid #b9e6f2;border-radius:9px;background:linear-gradient(145deg,#fff,#f0fbff);color:var(--s-ink,#0b2545);text-decoration:none!important;cursor:pointer;transition:border-color .15s,box-shadow .15s,background-color .15s}
-.nosology-progress[data-mcg-filter]:hover{border-color:#1e88e5;box-shadow:0 3px 12px #1e88e51a}
+.nosology-progress[data-mcg-filter]{position:relative;padding:0;min-height:44px;cursor:pointer;transition:text-shadow .15s}
+/* These link and copy rules outrank the later Atlas sidebar colours, including
+   hover and selected states. The progress track keeps its existing fill. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter],
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter] :is(span,b){color:#075ab5!important;text-decoration:none!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;text-shadow:0 1px 0 #fff,0 1px 1px #0b254524}
+.nosology-progress[data-mcg-filter] progress{border:0;border-radius:3px;box-shadow:inset 0 1px 2px #0b254530,0 1px 0 #ffffffb3}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter]:hover,
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter]:hover :is(span,b){text-shadow:0 1px 0 #fff,0 2px 2px #0b254530}
 .nosology-progress[data-mcg-filter]:focus-visible{outline:3px solid #1e88e5;outline-offset:3px}
-.nosology-progress[data-mcg-filter][aria-current="page"]{border-color:#1e88e5;box-shadow:inset 3px 0 #1e88e5;background:#e9f7ff}
-.nosology-progress[data-mcg-filter]>span:first-child{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.nosology-progress[data-mcg-filter][aria-current="page"]{font-weight:700}
 .sidebar .mcg-filter-heading{gap:7px}
-.sidebar .mcg-filter-symbol{width:36px;height:36px;flex-basis:36px}
-.sidebar .nosology-progress[data-mcg-filter]{padding:8px;margin:.6rem 0}
+.sidebar .mcg-filter-symbol{width:3.6px;height:3.6px;flex-basis:3.6px}
+.sidebar .nosology-progress[data-mcg-filter]{margin:.6rem 0}
 .mcg-filter-notice{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 18px;margin:0 0 24px;padding:13px 16px;border:1px solid #b9e6f2;border-left:4px solid #1e88e5;border-radius:9px;background:#f0fbff;color:#0b2545;font-size:14px;line-height:1.5}
 .mcg-filter-notice .mcg-back{margin:0;color:#155a8a!important;text-decoration:underline;text-underline-offset:3px}
 /* Keep the entire category rail reachable on short screens, including the global gauges. */
@@ -190,3 +209,19 @@ html[data-medina-fragment] .mc-chap-head .mc-code{font-weight:400;color:var(--at
 .nosology-course-star{padding:.65rem 1rem;background:#fbf7e9;border-radius:.5rem;color:#725606;font-size:.85rem}
 .mcg-home>.nosology-gauges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;border-bottom:1px solid #dbe3de;margin-bottom:1.5rem}
 @media(max-width:700px){.mcg-home>.nosology-gauges{grid-template-columns:1fr;gap:0}}
+/* Compact category containers only. Titles remain complete and course typography is untouched. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card{min-height:104px!important;height:auto;padding:10px 12px!important;border-radius:12px!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card h2{font-size:16px!important;line-height:1.4!important;margin:8px 0 10px!important;overflow-wrap:break-word}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card .mcg-category-number{min-width:24px;min-height:24px;padding:0 5px}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card .mcg-code{padding:3px 6px!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading{gap:12px;padding:14px 18px!important;margin:6px 0 14px!important;border-radius:12px!important}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading>div{min-width:0}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading h2{font-size:24px!important;line-height:1.25!important;margin:5px 0 0!important;overflow-wrap:break-word}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading .mcg-section-count{margin-top:0;flex-shrink:0}
+@media(max-width:700px){
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card{min-height:96px!important;padding:9px 10px!important}
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card h2{font-size:15px!important}
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading{padding:12px 14px!important}
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading h2{font-size:21px!important}
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading .mcg-section-count{margin-top:6px}
+}

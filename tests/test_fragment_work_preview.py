@@ -209,6 +209,7 @@ class FragmentWorkPreviewTests(unittest.TestCase):
 
     def test_overlay_appends_new_chapter_and_clears_historical_certification(self):
         before = (ROOT / "chapters.json").read_bytes()
+        inventory_before = (ROOT / "nosology/fragments/T1.json").read_bytes()
         manifest, files = self.read()
         overlay = self.base / "overlay"
         PREVIEW.create_overlay(ROOT, files, manifest, overlay)
@@ -225,6 +226,28 @@ class FragmentWorkPreviewTests(unittest.TestCase):
         self.assertFalse(final_glossary.is_symlink())
         shadow = (overlay / "shell/data.py").read_text()
         self.assertIn("DONE_COURSES = set()\nDONE_SYS = set()", shadow)
+        self.assertEqual((ROOT / "nosology/fragments/T1.json").read_bytes(), inventory_before)
+        preview_inventory = overlay / "nosology/fragments/T1.json"
+        self.assertFalse(preview_inventory.is_symlink())
+        lessons = {lesson["code"]: lesson for lesson in json.loads(preview_inventory.read_text())["lessons"]}
+        self.assertEqual(lessons["A16"]["state"], "empty")
+        self.assertEqual(lessons["A41"]["state"], "filled")
+        self.assertEqual(lessons["B24"]["state"], "filled")
+        self.assertTrue((overlay / "nosology/fragments/S01.json").is_symlink())
+
+    def test_overlay_grouping_does_not_restore_old_canonical_aliases(self):
+        self.manifest["chapters"][0]["covers"] = ["A40", "A41", "A42"]
+        self.write_manifest()
+        manifest, files = self.read()
+        overlay = self.base / "grouped-overlay"
+        PREVIEW.create_overlay(ROOT, files, manifest, overlay)
+        inventory = json.loads((overlay / "nosology/fragments/T1.json").read_text())
+        lessons = {lesson["code"]: lesson for lesson in inventory["lessons"]}
+        self.assertNotIn("A40", lessons)
+        self.assertNotIn("A42", lessons)
+        self.assertEqual(lessons["A41"]["icd10gm"]["codes"], ["A40", "A41", "A42"])
+        codes = [code for lesson in inventory["lessons"] for code in lesson["icd10gm"]["codes"]]
+        self.assertEqual(len(codes), len(set(codes)))
 
     def test_compiled_courses_need_four_panels_each(self):
         self.assertEqual(PREVIEW.verify_output(pack_html(course_html("A41") + course_html("B24")), self.manifest), 0)

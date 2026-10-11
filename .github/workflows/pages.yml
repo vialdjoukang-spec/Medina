@@ -72,6 +72,12 @@ jobs:
           MEDINA_OUT: ${{ github.workspace }}/_site
           MEDINA_QA_OUT: ${{ github.workspace }}/work/frontend-filters
         run: node tests/verify_fragment_filters.cjs
+      - name: Vérifier les jauges de catégorie et les étoiles fédérales
+        env:
+          MEDINA_OUT: ${{ github.workspace }}/_site
+          MEDINA_QA_OUT: ${{ github.workspace }}/work/frontend-categories
+          MEDINA_TEST_COMPACT: "1"
+        run: node tests/verify_category_progress.cjs
       - name: Contrôler l’aperçu Infectiologie sur ordinateur et mobile
         run: |
           python tests/verify_fragment_work_preview.py \

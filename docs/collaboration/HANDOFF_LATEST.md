@@ -1,3 +1,11 @@
+## Jauges de catégories et filtres bleus — 11 octobre 2026
+
+Les trois tâches de Vial sont réalisées dans l’ordre, avec sept agents au total : deux filtres bleus sans cadre ni soulignement et relief discret, symbole Filtre réduit exactement dix fois ; progression fédérale/globale A/B et pourcentage dans chaque catégorie ; étoiles dorées en exposant après les titres et catégories plus compactes. Les dénominateurs originaux restent stables sous filtrage. Les cartes de la modale utilisent la même présentation. L’aperçu conserve ses regroupements propres grâce à un inventaire temporaire isolé.
+
+Audit et contre-audit croisés des trois binômes, puis contrôle final indépendant : **254 tests Python, 35 766 contrôles des 330 catégories sur 23 fragments, 5 313 étoiles vérifiées, 1 509 contrôles des filtres, 941 contrôles de l’interface et 128 ouvertures à froid réussis**. Aucune erreur JavaScript. **3 923 fichiers protégés inchangés** ; anciennes jauges et filtres identiques à la version précédente. Corps, fenêtres, titres et typographie de six cours comparés dans le navigateur. Aucun cours produit, modifié ou audité médicalement ; statuts, scellés et STOP préservés. Captures réelles présentées dans la conversation, sans ajout d’images à GitHub.
+
+Source contrôlée : `563e3f776bf9b6499609f910b499d7a595dcb1fd`, base `84ebd0d5d31d7655b433727b23463191e52b5081`. [Reçu détaillé](receipts/FRONTEND_CATEGORIES_JAUGES_2026-10-11.json). Le workflow Pages contrôle aussi les jauges et étoiles ; la disponibilité publique fait l’objet d’une vérification séparée après fusion.
+
 ## Filtres des jauges et premier affichage — 11 octobre 2026
 
 Sur autorisation explicite de Vial, sept agents au total corrigent uniquement le frontend. Les 23 fragments attendent leur interface finale avant le premier rendu ; les entrées de cours attendent aussi la décompression. Les deux premières jauges ouvrent une version filtrée de la structure actuelle : Pathologies fréquentes ou Pathologies Examen Fédéral. L’entonnoir métallique « Filtre » reste non interactif ; l’accueil demeure sans filtre par défaut et les deux jauges globales restent inchangées. Le filtre est conservé dans les catégories, la recherche et les retours du lecteur. Les jauges restent accessibles sur écrans courts.
