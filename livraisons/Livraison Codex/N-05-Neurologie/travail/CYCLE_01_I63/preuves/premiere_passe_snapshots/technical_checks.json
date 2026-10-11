@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "code": "I63",
+  "scope": "chapter",
+  "actor": "C01-R-NEUR",
+  "runtime_agent_id": "/root/c01_r_neur",
+  "checked_at": "2026-10-11T18:21:12.356387+00:00",
+  "verdict": "pass",
+  "final_files": [
+    {
+      "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/chapters/I63/I63_a.html",
+      "sha256": "e79e6e2c53053251c164ba05a3ec1e797ef9fca06846b3de1dbeda63f5647204"
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/chapters/I63/I63_b.html",
+      "sha256": "ea735d781c9d1977724509b047de1df998053aa3a7515103b982069bbd36d4cb"
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/chapters/I63/I63_c.html",
+      "sha256": "5fe03efd82c9e38199d764d3596bb9dc801f7f868834eca7c7082038f32fed65"
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/chapters/I63/I63_d.html",
+      "sha256": "2c8d86b5cef5bbad367baf96196bf71e2361466ecfe4d8f447b051779dcdbc79"
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/chapters/I63/I63_pop1.html",
+      "sha256": "8cafa96851ebcca96fc0322e621bb5a0bf5f25658d12b3f815663108f3a3ed50"
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/chapters/I63/I63_pop2.html",
+      "sha256": "b4532b73979b32cb5c7474510ec475005ad48121ac1ef03961836727b276813d"
+    },
+    {
+      "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/glossary/i63.py",
+      "sha256": "564271bd0f5bc704d1b79dfef6b323b3315fab6bd075c30705929f19ae29a0d3"
+    }
+  ],
+  "isolated_copy": "/workspace/work/i63-validation",
+  "MEDINA_OUT": "/workspace/work/i63-validation/dist",
+  "production_cycle_metadata": 1,
+  "frontend": {
+    "path": "/workspace/work/i63-validation/dist/fragments/MEDINA_S08_nerveux.html",
+    "sha256": "f0b01c5b27e3e258d778862670299d9ef8d27873e2050c8bd95c19b7f0a8255e",
+    "url": "http://127.0.0.1:8173/fragments/MEDINA_S08_nerveux.html",
+    "category_css_sha256": "5da38f0c703df8e26a6084888e389650a47504a39fbd63ea5af427ab2dc0ca99",
+    "tetrade_css_sha256": "147ed9db13d11740510d500cc1caf336153b316ecad6a88d62a32cd36fcc75bd"
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "build_medina.py",
+        "I63"
+      ],
+      "cwd": "/workspace/work/i63-validation",
+      "exit_code": 0,
+      "log": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/build_medina.log",
+        "sha256": "dc33364fa2b7a1996bd47b4d0b1c2f1e2cafd90ff47eda5b9ab6a6a50b4b8dfa"
+      },
+      "checked_at": "2026-10-11T18:20:51.096650+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "test_v7.py",
+        "--static",
+        "I63"
+      ],
+      "cwd": "/workspace/work/i63-validation",
+      "exit_code": 0,
+      "log": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/test_v7_static.log",
+        "sha256": "0874af0d12dc0ac794ec4bbc5ff09977cf0790212f25e33ca0e96b5bd241894e"
+      },
+      "checked_at": "2026-10-11T18:20:51.616494+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "build_front.py",
+        "--fragment",
+        "S08"
+      ],
+      "cwd": "/workspace/work/i63-validation",
+      "exit_code": 0,
+      "log": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/build_front.log",
+        "sha256": "75207dfd92a43913696b9cae2aaec2b84b8adf76383fb0b27e39ef39bf7b94ab"
+      },
+      "checked_at": "2026-10-11T18:20:54.252908+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "test_v7_http.py",
+        "I63"
+      ],
+      "cwd": "/workspace/work/i63-validation",
+      "MEDINA_OUT": "/workspace/work/i63-validation/dist",
+      "MEDINA_CHROMIUM": "/usr/bin/chromium",
+      "exit_code": 0,
+      "log": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/test_v7_http.log",
+        "sha256": "0874af0d12dc0ac794ec4bbc5ff09977cf0790212f25e33ca0e96b5bd241894e"
+      },
+      "adaptation": "Copie exacte de test_v7.py avec la seule cible F remplacée par URL HTTP du fragment S08 ; Chromium explicite. file:// est bloqué dans cet environnement."
+    }
+  ],
+  "browser_checks": {
+    "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/browser_checks.json",
+    "sha256": "5dc7fde48f1b932fe05da7a3b844a1c5cdf7d825123f96ae12cafa111f816792"
+  },
+  "desktop_mobile": {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "four_tabs": true,
+    "book_mode_all_tabs": true,
+    "five_sciences": true,
+    "all_windows_per_viewport": 30,
+    "four_paretos_per_viewport": 4,
+    "quiz_feedbacks_per_viewport": 4,
+    "javascript_errors": [],
+    "horizontal_overflow": false,
+    "body_color": "rgb(23, 62, 137)",
+    "interactive_color": "rgb(155, 57, 0)",
+    "font": "Atkinson Hyperlegible Next",
+    "two_filter_gauge_border_colors": "rgb(255, 255, 255)",
+    "gauge_appearance": "none",
+    "gauge_note": "Deux valeurs nulles au stade de livraison : le remplissage jaune défini dans CSS n’est pas visible et sa couleur ne peut pas être prouvée par le pseudo-style retourné par Chromium. Le contrôle ici porte sur les contours blancs demandés."
+  },
+  "abbreviations": {
+    "I63_uncovered": 0,
+    "note": "build_medina rapporte aussi des avertissements historiques hors I63 (J44: ZZ ; J96: spO₂ ; I51: NEJMoa1406761). Aucun n’a été modifié ou déclaré corrigé par cet auteur."
+  },
+  "source_contract": {
+    "words_builder": 18268,
+    "popup_templates": 30,
+    "quiz": 4,
+    "pareto": 4,
+    "svg_figures": 7,
+    "new_conditional_glossary_entries": 9,
+    "inline_style": 0,
+    "classes_outside_closed_list": 0
+  },
+  "captures": [
+    {
+      "evidence": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/captures_reglementaires/i63-1-ouverture.png",
+        "sha256": "30760dbeba38bd18909e5eee9a4330626b7389a299740721d6a47bffe060450d"
+      },
+      "visually_inspected": true,
+      "inspected_at": "2026-10-11T18:21:12.356387+00:00",
+      "observation": "Titre, quatre onglets, sommaire et premier titre du corps visibles ; contours des deux jauges blancs."
+    },
+    {
+      "evidence": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/captures_reglementaires/i63-2-explication.png",
+        "sha256": "a5abd65a83f90230e838a6dffcbdfe80354ab4ae97a72fcb47ee392b339685ab"
+      },
+      "visually_inspected": true,
+      "inspected_at": "2026-10-11T18:21:12.356387+00:00",
+      "observation": "Fenêtre AIT ouverte et lisible ; corps bleu contrasté, référence/terme orange foncé, Atkinson."
+    },
+    {
+      "evidence": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/i63-1440-ouverture-corps.png",
+        "sha256": "37c22c89eb9010adaee3972d839aa0cc0f83eff252d6ede0cf609e23f7d5b77f"
+      },
+      "visually_inspected": true,
+      "inspected_at": "2026-10-11T18:21:12.356387+00:00",
+      "observation": "Ouverture supplémentaire 1440 × 1200 montrant le premier paragraphe bleu en plus du titre et des onglets."
+    },
+    {
+      "evidence": {
+        "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_01_I63/preuves/i63-390-ouverture.png",
+        "sha256": "e25212aaf4b493006ac5bed0c773878dbdbc6ac6a42a48191e0d90d3203b73d2"
+      },
+      "visually_inspected": true,
+      "inspected_at": "2026-10-11T18:21:12.356387+00:00",
+      "observation": "Ouverture mobile 390 × 844 ; titre et quatre onglets lisibles, sans débordement."
+    }
+  ],
+  "medical_human_validation": false,
+  "independent_audits_pending": true
+}

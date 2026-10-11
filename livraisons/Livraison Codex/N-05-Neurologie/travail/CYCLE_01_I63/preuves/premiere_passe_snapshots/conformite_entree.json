@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "chapter_code": "I63",
+  "agent": "C01-R-NEUR",
+  "role": "author",
+  "stage": "entry",
+  "checked_at": "2026-10-11T17:19:25.198015+00:00",
+  "verdict": "conforme_pour_demarrer_la_redaction",
+  "human_medical_validation": false,
+  "checks": [
+    {
+      "id": "authorization_scope",
+      "result": "pass",
+      "evidence": [
+        "AGENTS.md",
+        "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md"
+      ],
+      "detail": "Un seul auteur, I63 seulement, livraison isolée sans écriture canonique ; nouvelles instructions du propriétaire applicables."
+    },
+    {
+      "id": "truth_prompt_read",
+      "result": "pass",
+      "evidence": {
+        "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+        "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
+        "AGENTS.md": "797e40168515040b95ffbc6b99779cdf3c11071f1eff8d9202ae37ce69560125",
+        "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+        "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
+        "CHAPTER_SPEC.md": "d43b97e59597334c3adcc194c341fa7abcf6d8d9da50d41bb351d349e04fbc1c"
+      },
+      "detail": "Documents lus ; aucune consigne historique incompatible considérée comme autorisation globale."
+    },
+    {
+      "id": "duplicate_remote_inventory",
+      "result": "pass",
+      "evidence": {
+        "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/INVENTAIRE_DISTANT_CIBLE.json",
+        "sha256": "c64d0d79e05271082a2733f37f497157d80d96e1d470e8c09eb428c31c4e8e19"
+      },
+      "detail": "Coordinateur a inspecté 87 arbres distants et transmis le feu vert : aucun brouillon I63 ; inventaire API général partiel distingué du contrôle ciblé complet."
+    },
+    {
+      "id": "sources_accessible",
+      "result": "pass",
+      "evidence": [
+        "/workspace/work/cycle1-sources-I63/bern_stroke_2026.pdf",
+        "/workspace/work/cycle1-sources-I63/swiss_revascularisation_2021.pdf",
+        "/workspace/work/cycle1-sources-I63/eso_directory.html",
+        "/workspace/work/cycle1-sources-I63/fi_actilyse.txt",
+        "/workspace/work/cycle1-sources-I63/fi_metalyse_5000.txt"
+      ],
+      "detail": "Sources suisses effectives et FI exactes téléchargées ; la rédaction reste limitée aux passages qui seront réellement lus."
+    },
+    {
+      "id": "independence",
+      "result": "pass",
+      "detail": "Auteur n’effectue pas l’audit favorable de son propre chapitre ; auditeur croisé C01-R-HEM, contre-auditeur nouveau C01-CA-NEUR."
+    },
+    {
+      "id": "no_memory_claims",
+      "result": "pass",
+      "detail": "Aucun contenu médical rédigé avant l’inventaire et les lectures ; chaque contenu futur doit rejoindre le registre de passages."
+    }
+  ],
+  "output_checks_pending": [
+    "medical_complete",
+    "source_coverage",
+    "frontend_desktop_mobile",
+    "final_hashes",
+    "crossed_audit",
+    "counter_audit",
+    "coordinator_control"
+  ],
+  "blocking_reservations": []
+}

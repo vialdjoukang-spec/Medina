@@ -1,0 +1,140 @@
+{
+  "code": "N17",
+  "actor": "C01-R-NEPH",
+  "runtime_agent_id": "/root/c01_r_neph",
+  "checked_at": "2026-10-11T19:09:43.829737+00:00",
+  "authority": {
+    "path": "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md",
+    "sha256": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706"
+  },
+  "medical_human_validation": false,
+  "sources": [
+    {
+      "source_id": "CALCURRENT",
+      "organization": "B. Braun Melsungen AG / Fachinfo-Service",
+      "title": "Calciumgluconat B. Braun 10 % Injektionslösung — Fachinformation",
+      "url": "https://www.fachinfo.de/fi/pdf/002742/calciumgluconat-b-braun-10-injektionsloesung",
+      "version_date": "juillet 2014, code002742-15203 ; servie le11.10.2026",
+      "scratch_text": "/workspace/work/cycle1-sources-N17/calcium-current/fachinfo_current.txt",
+      "scratch_download": "/workspace/work/cycle1-sources-N17/calcium-current/fachinfo_current.pdf",
+      "download_sha256": "a619b9e2690d882ad7de00d7c0510839f613bbef2ec9e025227f66f7ecaccd0d",
+      "read_text_sha256": "cd8c51268689eb16969efc355e92bb6f6023a726421837059819b5627f3ef078",
+      "reading_completed_at": "2026-10-11T19:09:43.829885+00:00",
+      "reading_scope": "FI entière",
+      "population": "Hypocalcémie aiguë symptomatique ; populations de la FI",
+      "limits": "FI allemande, non Swissmedic. La version actuellement servie reste2014 ; l’identité du lot importé réel demande contrôle hospitalier. Hyperkaliémie hors indication FI."
+    },
+    {
+      "source_id": "PHELCUR",
+      "organization": "PHEL, Pharmacie des Hôpitaux de l’Est Lémanique",
+      "title": "Médicaments contenant du calcium — PHEL.FP.217 V09",
+      "url": "https://www.phel.ch/upload/docs/application/pdf/2026-10/medicaments_contenant_calcium_2026-10-11_07-39-14_968.pdf",
+      "version_date": "09.12.2025 ; nom de fichier2026 ne remplace pas la date imprimée",
+      "scratch_text": "/workspace/work/cycle1-sources-N17/calcium-complement/phel_calcium_current.txt",
+      "scratch_download": "/workspace/work/cycle1-sources-N17/calcium-complement/phel_calcium_current.pdf",
+      "download_sha256": "43097f4c9af5b0ed66a899094834854d3b1c41929c30d053ce87790d487ce43c",
+      "read_text_sha256": "19807c040642524402afb6f5a8e3f0facf478cb88b610dfecb7c47d8cb8e6600",
+      "reading_completed_at": "2026-10-11T19:09:43.831403+00:00",
+      "reading_scope": "texte entier",
+      "population": "Hôpitaux partenaires PHEL ; préparations locales",
+      "limits": "Monographie institutionnelle suisse ; pas recommandation nationale ; aucune dose générique hyperkaliémie n’est explicitement donnée. Références américaines non retenues comme base."
+    },
+    {
+      "source_id": "PHELIMPORT",
+      "organization": "PHEL",
+      "title": "PHELinfos89 — nouveautés du formulaire : gluconate de calcium",
+      "url": "https://www.phel.ch/upload/docs/application/pdf/2025-06/phelinfos_89_final.pdf",
+      "version_date": "mai2025",
+      "scratch_text": "/workspace/work/cycle1-sources-N17/calcium-complement/phelinfos89.txt",
+      "scratch_download": "/workspace/work/cycle1-sources-N17/calcium-complement/phelinfos89.pdf",
+      "download_sha256": "417d784424b3d5eb93d88ce2c7db43a79558cbc668da4a2ba2600017356cf886",
+      "read_text_sha256": "b2d22be22764c0d57844db53e0fb9c3a3eafdd0beccd3a73424ee806697951aa",
+      "reading_completed_at": "2026-10-11T19:09:43.834413+00:00",
+      "reading_scope": "pages imprimées6–7 et photographie du produit",
+      "population": "Logistique du médicament dans les hôpitaux partenaires PHEL",
+      "limits": "Pages imprimées6–7 seulement, avec images du conditionnement ; preuve du produit/import et équivalences, pas fondement clinique américain."
+    },
+    {
+      "source_id": "HUGCAL",
+      "organization": "Pharmacie clinique des HUG",
+      "title": "CALCIUM / Ca2+ — recommandations d’utilisation",
+      "url": "https://www.hug.ch/pharmacie/recommandations/document/calcium",
+      "version_date": "14.08.2026",
+      "scratch_text": "/workspace/work/cycle1-sources-N17/calcium-complement/hug_calcium2026.txt",
+      "scratch_download": "/workspace/work/cycle1-sources-N17/calcium-complement/hug_calcium2026.pdf",
+      "download_sha256": "a2ed00cb370fef318e22e61c5135532cebc4819851655830a049e7980d50099f",
+      "read_text_sha256": "4fb80732c8a82ec34eb14ba4a3c5a76e420676382057fcd442e6644b84f41745",
+      "reading_completed_at": "2026-10-11T19:09:43.834792+00:00",
+      "reading_scope": "texte entier",
+      "population": "Usage institutionnel HUG ; spécialités injectables, article446788",
+      "limits": "Monographie institutionnelle suisse non nationale ; osmolarité280mOsm/L discordante avec FI théorique660, nature de la mesure non précisée ; dose totale hyperK non établie par ce tableau."
+    },
+    {
+      "source_id": "BBCATALOG",
+      "organization": "B. Braun, catalogue Allemagne",
+      "title": "Calciumgluconat10%B.Braun — Mini-Plasco connect20×10ml",
+      "url": "https://catalogs.bbraun.de/de-DE/p/000000000002353745/calciumgluconat-10-b-braun-mini-plasco-connect-20-x-10-ml",
+      "version_date": "Page publique servie11.10.2026, pas date de FI",
+      "scratch_text": "/workspace/work/cycle1-sources-N17/calcium-current/bbraun_miniplasco.txt",
+      "scratch_download": "/workspace/work/cycle1-sources-N17/calcium-current/bbraun_miniplasco.html",
+      "download_sha256": "f74d4948593c16dc6c27b9371b62d4e5011d9b6399f81c925ad90022b342ce36",
+      "read_text_sha256": "c87f6275f017311cf8da75c5adc9b14a08ed9890f90a1b0b852f630ce503a98b",
+      "reading_completed_at": "2026-10-11T19:09:43.835266+00:00",
+      "reading_scope": "texte entier",
+      "population": "Identité et présentation commerciale allemande",
+      "limits": "Page publique lue intégralement. Contenu clinique de famille derrière authentification ; aucune FI fabricant consultée ou contournée."
+    }
+  ],
+  "findings": [
+    {
+      "id": "identity",
+      "status": "documente",
+      "observation": "Présentation Mini-Plasco connect20×10ml, SKU2353745, dans catalogue public B.Braun ; PHEL décrit la spécialité allemande importée et le retrait Calcium-Sandoz2017. Pas d’AMM suisse attribuée."
+    },
+    {
+      "id": "calcium_total",
+      "status": "arbitre",
+      "observation": "FI§2 :940mg de calcium gluconate/10ml=2,10mmol Ca ; calcium-D-saccharate tétrahydraté ajoute0,15mmol ; total2,25mmol/10ml. HUG/PHEL1g/10ml est un libellé pratique du sel, pas1g de calcium élémentaire.0,225mmol/ml est arithmétique, FI0,23 est arrondi."
+    },
+    {
+      "id": "ph",
+      "status": "arbitre",
+      "observation": "HUGpH6,9 appartient à la plage FI5,5–7,5. Aucune contradiction de pH démontrée."
+    },
+    {
+      "id": "indication",
+      "status": "documente",
+      "observation": "FI§4.1 seulement hypocalcémie aiguë symptomatique ; HUGp2/PHELp2 documentent l’usage de cardioprotection hyperkaliémique local, hors indication de cette FI allemande."
+    },
+    {
+      "id": "rates",
+      "status": "divergence_documentee",
+      "observation": "FI§4.2 et HUGp2 :2ml/min=0,45mmol/min. UKKA§16.2a p73 :30ml/10min ; p78–79 justifie explicitement3ml/min pour antagonisme hyperK versus2ml/min substitution hypocalcémie. Ce raisonnement britannique ne prouve pas une adoption hospitalière suisse du débit."
+    },
+    {
+      "id": "populations",
+      "status": "documente",
+      "observation": "FI§4.3–4.6 :hypercalcémie/hypercalciurie, glycosides, ceftriaxone notamment nouveau-nés≤28jours, insuffisance rénale/calcium-phosphate, grossesse nécessité clinique et surveillance, allaitement décision risque/bénéfice ; pédiatrie<18 voie IV lente diluée sans IM. Aucune dose pédiatrique hyperK extrapolée."
+    },
+    {
+      "id": "availability_limits",
+      "status": "documente",
+      "observation": "RefMedCHUV consulté11.10.2026 renvoie vers authentification ; contenu professionnel fabricant de famille restreint ; aucune tentative de contournement, aucune lecture fictive."
+    }
+  ],
+  "unresolved_divergences": [
+    {
+      "id": "osmolarity",
+      "blocking": true,
+      "observation": "HUG14.08.2026p2 :280mOsm/L ; FI2014§3 :osmolarité théorique660mosm/L. HUG ne dit pas mesurée ; aucun arbitrage primaire expliquant la différence. Ne pas inventer changement de formulation/erreur/mesure réelle."
+    },
+    {
+      "id": "hyperk_scheme",
+      "blocking": true,
+      "observation": "Aucun schéma dose-débit hospitalier suisse du produit exact retrouvé arbitrant3ml/min UKKA contre limite2ml/min HUG. Aucune dose hyperkaliémie executable ajoutée."
+    }
+  ],
+  "method": "Lecture primaire effective précédant toute correction médicale ; notice intégrale allemande, pages PHEL pertinentes, monographie HUG intégrale ; sources nationales non fabriquées.",
+  "author_verdict": "NON_CONFORME",
+  "injection_verdict": "NON_CONFORME_POUR_INJECTION"
+}

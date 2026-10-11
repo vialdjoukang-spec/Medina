@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "code": "E11",
+  "chapter_title": "Diabète sucré de type 2",
+  "fragment_id": "S05",
+  "actor": "C01-R-ENDO",
+  "runtime_agent_id": "/root/c01_r_endo",
+  "role": "author",
+  "medical_human_validation": false,
+  "entry": {
+    "actor": "C01-R-ENDO",
+    "code": "E11",
+    "phase": "entry_reprise_corrective_2",
+    "verdict": "conforme",
+    "checked_at": "2026-10-11T18:29:24.557847+00:00",
+    "prompt_files": {
+      "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
+      "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+      "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+    },
+    "checks": [
+      {
+        "id": "autorisation",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+            "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+            "explanation": "Instruction directe de lancement ; tableau attribuant E11/S05 à C01-R-ENDO, cycle 1 uniquement."
+          }
+        ]
+      },
+      {
+        "id": "perimetre_provenance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/original_hashes.json",
+            "sha256": "41edd1570182ac2d9daf9a0da21ad883b07f717ad93b4cc6b129f28d3c27b6b7",
+            "explanation": "Huit originaux Claude contrôlés encore identiques ; reprise dans dossier auteur distinct."
+          },
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/INVENTAIRE_DISTANT_CIBLE.json",
+            "sha256": "c64d0d79e05271082a2733f37f497157d80d96e1d470e8c09eb428c31c4e8e19",
+            "explanation": "Inventaire distant de 87 arbres Git communiqué avant autorisation de reprise."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/rapport_auteur.md",
+            "sha256": "55580c398dbcf368986ba5985f7dc9955985ba9cd06adde9772cee836f7b5f84",
+            "explanation": "Périmètre E11 seulement ; renvois sans extension de covers ni complétude de fragment."
+          }
+        ]
+      },
+      {
+        "id": "sources_lues",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/sources.json",
+            "sha256": "bb0ed41e8c78ad7a8c0209637f567db4541b94fddc0ecf5ef1299695a4addd16",
+            "explanation": "54 sources dont 21 FI exactes ; sections/populations/limites et téléchargements conservés. mediX inaccessible explicitement retiré."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/source_ledger.json",
+            "sha256": "08dbfd178d7fa7d3246ba1e5feb33609b03e3f44cb686aa8e616f7598d868d05",
+            "explanation": "392 liaisons, 90 blocs et glossaire des sept fichiers finaux réellement relus ; granularité déclarée, pas certification automatique."
+          }
+        ]
+      },
+      {
+        "id": "contexte_suisse",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/matrice_contexte_suisse.json",
+            "sha256": "f39ac6d6f605a9c14f0e7ea19a7685634b9de086834a4162572316751594d534",
+            "explanation": "82 décisions de portée chapitre ; produits exacts et passages, priorité suisse et divergences expliquées. Vérification auteur ; verdict de l’auditeur distinct en attente."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/corrections-medicales.json",
+            "sha256": "0d91b2a864f8ecc8059ac7f0d5c5b8e74e12c87fbe925bd0591504c11b5b9e6d",
+            "explanation": "Corrections de doses, seuils, voies, grossesse/allaitement, contraintes de produit et recommandations."
+          }
+        ]
+      },
+      {
+        "id": "independance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+            "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+            "explanation": "Auteur C01-R-ENDO distinct de C01-R-NEPH et du contre-auditeur différé C01-CA-ENDO ; aucun audit de son propre chapitre."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/rapport_auteur.md",
+            "sha256": "55580c398dbcf368986ba5985f7dc9955985ba9cd06adde9772cee836f7b5f84",
+            "explanation": "Remise sans note d’audit, injection ni validation médicale humaine ; l’auteur conserve son seul rôle."
+          }
+        ]
+      },
+      {
+        "id": "contrat_cours",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/technical_checks.json",
+            "sha256": "2a52fda4ec1b056c78903942e2141b45b541cfe0ea7bce437ba882a015e2a422",
+            "explanation": "Build, static, quatre onglets/disciplines, fenêtres, glossaire, Pareto, quiz, contrôles lecteur et captures réellement examinées."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/sciences.json",
+            "sha256": "e754e689ace184df15efee12a8b13b8fcca376a543c1e081d1bd28f84ac96cd5",
+            "explanation": "Quatre disciplines avec figures et corrélations explicites ; critères ciblés vérifiés."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/final_files.json",
+            "sha256": "b2e047152b25c325c3dc0f66bad37d81812b10f58f10ffd52326eea2789b8f02",
+            "explanation": "Empreintes finales des six HTML et du glossaire."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/lecture_modele_I50.json",
+            "sha256": "e4e76c74578efdebb76afb2848e1eb48d26506d474559879f94064c07d809ec2",
+            "explanation": "Les huit HTML du modèle I50 sont intégralement lus avant cette nouvelle entrée ; leur structure est analysée sans audit médical du modèle."
+          }
+        ]
+      },
+      {
+        "id": "honnetete",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/conformite_entree_initiale.json",
+            "sha256": "18bb05bf72dc6b563578aeb3ea59848773afcab1f1f939d11e004346b9704702",
+            "explanation": "Constat initial non favorable conservé ; réserves de sources et de contrôles n’ont pas été présentées comme levées à cette date."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/rapport_auteur.md",
+            "sha256": "55580c398dbcf368986ba5985f7dc9955985ba9cd06adde9772cee836f7b5f84",
+            "explanation": "Accès/source partiels déclarés, absence de source inaccessible transformée en preuve, distinction IA/médecin et tests/audit."
+          }
+        ]
+      }
+    ],
+    "scope": "Entrée réussie de la nouvelle reprise corrective, après lectures obligatoires et avant relecture intégrale des sept surfaces E11. Aucun audit indépendant.",
+    "historical_records": {
+      "initial_entry": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/conformite_entree_initiale.json",
+      "entry_revalidation_after_work": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/conformite_entree.json",
+      "first_author_review": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/revue_auteur.json"
+    },
+    "history_preserved": "Les premiers constats et leur revalidation restent conservés à leurs vraies dates et statuts. Cette nouvelle entrée est prospective, jamais rétroactive.",
+    "final_files_at_entry": {
+      "chapters/E11/E11_a.html": "aca2544855b094cd38acfcbe9268fc0cc154f01793279d37a5eb2765650c7ffa",
+      "chapters/E11/E11_b.html": "39446a8eef3b8812a1482ac1cf39628e6c9e8509567af87e35b50e6be5c67045",
+      "chapters/E11/E11_c.html": "4462150b40ef06abd7e691613ec06724aa212462e2f437924036265e4c71680b",
+      "chapters/E11/E11_d.html": "1f367070efb0fbce7fd2eead5f8eb28002dab263e0f4181437e69dab0954a2b5",
+      "chapters/E11/E11_pop1.html": "d9ec6262048e27f73b6cc2a68c53febf5e1dfd4182d62362f14e5032e76b5d2b",
+      "chapters/E11/E11_pop2.html": "b694bc86f78016d76f8970f93133a9df84d7c1e83c892ec953dbfa4c887cdb62",
+      "glossary/e11.py": "da470b0afd3d93ff1089ebbdc20838933cbdfa4c68bb777f6d2c9c32a8038f4b"
+    },
+    "blocking_reserves": []
+  },
+  "exit": {
+    "actor": "C01-R-ENDO",
+    "phase": "exit_reprise_corrective_2",
+    "verdict": "conforme",
+    "checked_at": "2026-10-11T18:53:47.578391+00:00",
+    "prompt_files": {
+      "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
+      "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+      "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+    },
+    "checks": [
+      {
+        "id": "autorisation",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+            "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+            "explanation": "Instruction directe de lancement ; tableau attribuant E11/S05 à C01-R-ENDO, cycle 1 uniquement."
+          }
+        ]
+      },
+      {
+        "id": "perimetre_provenance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/original_hashes.json",
+            "sha256": "41edd1570182ac2d9daf9a0da21ad883b07f717ad93b4cc6b129f28d3c27b6b7",
+            "explanation": "Huit originaux Claude contrôlés encore identiques ; reprise dans dossier auteur distinct."
+          },
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/INVENTAIRE_DISTANT_CIBLE.json",
+            "sha256": "c64d0d79e05271082a2733f37f497157d80d96e1d470e8c09eb428c31c4e8e19",
+            "explanation": "Inventaire distant de 87 arbres Git communiqué avant autorisation de reprise."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/rapport_auteur.md",
+            "sha256": "399f5d90d0ff955b24f9a12f553286d3ce059c78155d23eb2903657d810e92f6",
+            "explanation": "Périmètre E11 seulement ; renvois sans extension de covers ni complétude de fragment."
+          }
+        ]
+      },
+      {
+        "id": "sources_lues",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/sources.json",
+            "sha256": "eacce3d3a339c56ddbe5622d28c3adf834888ff5fee4400b06dadba9c9d40d55",
+            "explanation": "54 sources dont 21 FI exactes ; sections/populations/limites et téléchargements conservés. mediX inaccessible explicitement retiré."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
+            "sha256": "0e4886adca759d1a0e8c04e077f6ca98b44f4baf8e0f420f59340fbb43471ca5",
+            "explanation": "394 liaisons, 90 blocs et glossaire des sept fichiers finaux réellement relus ; granularité déclarée, pas certification automatique."
+          }
+        ]
+      },
+      {
+        "id": "contexte_suisse",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/matrice_contexte_suisse.json",
+            "sha256": "1ee56be7057e8337bce7834e9d3463b127243e84cb0c091c994eab3d676cc507",
+            "explanation": "82 décisions de portée chapitre ; produits exacts et passages, priorité suisse et divergences expliquées. Vérification auteur ; verdict de l’auditeur distinct en attente."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/corrections-medicales.json",
+            "sha256": "0d91b2a864f8ecc8059ac7f0d5c5b8e74e12c87fbe925bd0591504c11b5b9e6d",
+            "explanation": "Corrections de doses, seuils, voies, grossesse/allaitement, contraintes de produit et recommandations."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/corrections_reprise2.json",
+            "sha256": "2c653f23f9b05dfd7d66480d70b17f4f05b6010b5b16225940f0b2fd24a6b4c3",
+            "explanation": "Écarts réels corrigés après la nouvelle entrée ; données suisses exactes, pas modification pour satisfaire un schéma."
+          }
+        ]
+      },
+      {
+        "id": "independance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+            "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+            "explanation": "Auteur C01-R-ENDO distinct de C01-R-NEPH et du contre-auditeur différé C01-CA-ENDO ; aucun audit de son propre chapitre."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/rapport_auteur.md",
+            "sha256": "399f5d90d0ff955b24f9a12f553286d3ce059c78155d23eb2903657d810e92f6",
+            "explanation": "Remise sans note d’audit, injection ni validation médicale humaine ; l’auteur conserve son seul rôle."
+          }
+        ]
+      },
+      {
+        "id": "contrat_cours",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/technical_checks.json",
+            "sha256": "390570c1b05c98cb336edff103ae1deddf5e058a471497701054a8e918514ba4",
+            "explanation": "Build, contrôle officiel HTTP ordinateur/mobile, quatre onglets/disciplines, fenêtres, glossaire, Pareto, quiz, contrôles lecteur et captures réellement examinées."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/sciences.json",
+            "sha256": "10fbb128fc6b4d9fc7ddfc49ae9d0705b68f79efbecdded9da87abd76d923bad",
+            "explanation": "Quatre disciplines avec figures et corrélations explicites ; critères ciblés vérifiés."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/final_files.json",
+            "sha256": "c4dfb6b58e9b243215291da43b49343a3acd3292c7f9e7076dfd5d46914e28d9",
+            "explanation": "Empreintes finales des six HTML et du glossaire."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/lecture_surfaces_reprise2.json",
+            "sha256": "7b3ceb5f5393d252afc42811de929695e548ddf3d230d9b2ac61190ffa209b34",
+            "explanation": "Relecture des sept surfaces après l’entrée prospective et contrôles finaux liés à leurs empreintes."
+          }
+        ]
+      },
+      {
+        "id": "honnetete",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/conformite_entree_initiale.json",
+            "sha256": "18bb05bf72dc6b563578aeb3ea59848773afcab1f1f939d11e004346b9704702",
+            "explanation": "Constat initial non favorable conservé ; réserves de sources et de contrôles n’ont pas été présentées comme levées à cette date."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/rapport_auteur.md",
+            "sha256": "399f5d90d0ff955b24f9a12f553286d3ce059c78155d23eb2903657d810e92f6",
+            "explanation": "Accès/source partiels déclarés, absence de source inaccessible transformée en preuve, distinction IA/médecin et tests/audit."
+          },
+          {
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/revue_auteur.json",
+            "sha256": "5b09b4903ad042f3105a9ae02d32c9df35cda36d8ece0671a2fc1f9af0e8bc4a",
+            "explanation": "La première passe et sa revalidation tardive restent conservées sans antidatation."
+          }
+        ]
+      }
+    ],
+    "reread_complete": true,
+    "scope": "Contrôle auteur de sa remise ; aucun audit indépendant ni validation médicale humaine."
+  },
+  "final_files": {
+    "chapters/E11/E11_a.html": "1b4ee27626ea7a80d0c765f4a96f92b09050887ca0a2ab4856574c50340cdc00",
+    "chapters/E11/E11_b.html": "b08d6de5194132079fed9d6a44b47f3a05c25f2445b8f43f54c910985da69937",
+    "chapters/E11/E11_c.html": "1586de977e54dbaf93292df16ee11e41354c5653251efbbfbb72d80aad3670b3",
+    "chapters/E11/E11_d.html": "a1da21a6f4d956945b1e2b2cf7f7b527319d40f0dc621d3043a9d72d75ec1dab",
+    "chapters/E11/E11_pop1.html": "38d3994c2a1b683fa9de7d0f01ec98b4b319473c3c31ec8a533ba678dff68e85",
+    "chapters/E11/E11_pop2.html": "20db60720f8643222046f69429030d46544da5eac2ec5ee3b2f23a5d012f1b41",
+    "glossary/e11.py": "da470b0afd3d93ff1089ebbdc20838933cbdfa4c68bb777f6d2c9c32a8038f4b"
+  },
+  "source_ledger": {
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
+    "sha256": "0e4886adca759d1a0e8c04e077f6ca98b44f4baf8e0f420f59340fbb43471ca5",
+    "explanation": "394 liaisons de passages et blocs finaux, avec limites et granularité déclarées."
+  },
+  "swiss_context": {
+    "verdict": "verifie_par_auteur_audit_independant_en_attente",
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/matrice_contexte_suisse.json",
+    "sha256": "1ee56be7057e8337bce7834e9d3463b127243e84cb0c091c994eab3d676cc507",
+    "explanation": "82 décisions, pas de verdict d’auditeur créé par l’auteur."
+  },
+  "technical_checks": {
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/technical_checks.json",
+    "sha256": "390570c1b05c98cb336edff103ae1deddf5e058a471497701054a8e918514ba4",
+    "explanation": "Test officiel HTTP et banc exhaustif finaux, six PNG vus."
+  },
+  "blocking_reserves": [],
+  "independent_steps_pending": [
+    "audit_croise_deux_passes_C01-R-NEPH",
+    "contre_audit_differe_C01-CA-ENDO",
+    "controle_coordinateur",
+    "publication_verifiee_apres_injection"
+  ],
+  "entry_historical_reserves_preserved": true,
+  "historical_passes": [
+    {
+      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/controle_auteur_passe1/preuves/revue_auteur.json",
+      "sha256": "5b09b4903ad042f3105a9ae02d32c9df35cda36d8ece0671a2fc1f9af0e8bc4a",
+      "explanation": "Revalidation première passe datée après ses travaux ; historique conservé."
+    }
+  ],
+  "reread_evidence": {
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/lecture_surfaces_reprise2.json",
+    "sha256": "7b3ceb5f5393d252afc42811de929695e548ddf3d230d9b2ac61190ffa209b34",
+    "explanation": "Séquence prospective et relecture effective."
+  }
+}
