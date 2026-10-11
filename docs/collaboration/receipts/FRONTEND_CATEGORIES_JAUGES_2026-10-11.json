@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-11",
+  "scope": "Frontend : filtres bleus, progression par catégorie, étoiles fédérales et catégories compactes",
+  "base_commit": "84ebd0d5d31d7655b433727b23463191e52b5081",
+  "source_commit": "563e3f776bf9b6499609f910b499d7a595dcb1fd",
+  "team": {
+    "agent_limit": 7,
+    "nested_agents": 0,
+    "A1_A2": "Filtres : audit et contre-audit validés sur 23 fragments",
+    "A3_A4": "Calculs et présentation : audit et contre-audit validés sur 330 catégories",
+    "A5_A6": "Compacité et captures : audit et contre-audit validés",
+    "A0": "Intégration, vérifications indépendantes et contrôle final"
+  },
+  "changes": [
+    "Deux filtres bleus sans cadre ni soulignement, relief discret et focus clavier préservé.",
+    "Symbole métallique Filtre réduit exactement dix fois, libellé non interactif.",
+    "Jauges fédérale/globale par catégorie : A/B et pourcentage, dénominateurs originaux stables sous filtrage.",
+    "Étoile dorée SVG en exposant après la dernière lettre du titre, dans catalogue, barre latérale et titre du lecteur.",
+    "En-têtes et cartes plus compacts, titres complets et présentation uniforme dans la modale.",
+    "Inventaire temporaire de l’aperçu aligné sur ses regroupements, sans écriture des sources médicales.",
+    "Contrôle navigateur des catégories ajouté au workflow Pages ; nouvelles captures conservées localement."
+  ],
+  "validation": {
+    "python_unittest": {
+      "result": "passed",
+      "tests": 254
+    },
+    "categories_browser": {
+      "result": "passed",
+      "fragments": 23,
+      "categoriesChecked": 330,
+      "checks": 35766,
+      "starChecks": 5313,
+      "courseComparisons": 6,
+      "baseline": true,
+      "compact": true,
+      "subset": false,
+      "modalOpenedBy": "visible-button",
+      "browser": "151.0.7922.173",
+      "errors": []
+    },
+    "filters_browser": {
+      "result": "passed",
+      "fragments": 23,
+      "checks": 1509
+    },
+    "independent_frontend_browser": {
+      "result": "passed",
+      "fragments": 23,
+      "checks": 941
+    },
+    "bootstrap_browser": {
+      "result": "passed",
+      "fragments": 23,
+      "cold_routes": 128
+    },
+    "protected_files": {
+      "result": "passed",
+      "protected_files": 3923,
+      "changed": []
+    },
+    "original_gauges_and_filters": {
+      "result": "passed",
+      "fragments": 23,
+      "unchanged": [
+        "gauges",
+        "global_progress",
+        "filters"
+      ]
+    },
+    "guard": "Aucune source médicale modifiée sans preuve admissible."
+  },
+  "remote_inventory": {
+    "target_commit": "84ebd0d5d31d7655b433727b23463191e52b5081",
+    "scan_complete": false,
+    "limitations": "Limites historiques des grands diffs de branches et PR24 ; aucune livraison médicale fusionnée pour ce chantier."
+  },
+  "clinical_scope": "Aucun cours produit, modifié ou audité médicalement. Statuts, scellés et signal STOP préservés.",
+  "screenshots": "Captures réelles locales dans work/frontend-categories/, présentées dans la conversation ; aucune nouvelle image ajoutée à GitHub."
+}
