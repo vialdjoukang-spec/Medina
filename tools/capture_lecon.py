@@ -14,6 +14,7 @@ import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from playwright.async_api import async_playwright
 
@@ -81,7 +82,8 @@ async def capture_one(page, base_url, code, output):
 async def run(args):
     args.output.mkdir(parents=True, exist_ok=True)
     report = {"captured_at_utc": datetime.now(timezone.utc).isoformat(),
-              "source": args.html.resolve().as_uri(), "viewport": VIEWPORT, "lecons": []}
+              "captured_at": datetime.now(ZoneInfo("Europe/Zurich")).isoformat(),
+              "source": args.url or args.html.resolve().as_uri(), "viewport": VIEWPORT, "lecons": []}
     async with async_playwright() as playwright:
         launch = {"headless": True, "args": ["--no-sandbox", "--disable-dev-shm-usage"]}
         if args.browser_executable:
@@ -106,6 +108,7 @@ async def run(args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--html", required=True, type=Path, help="Frontend de fragment construit")
+    parser.add_argument("--url", help="URL HTTP du même frontend lorsque file:// est bloqué dans l'environnement")
     parser.add_argument("--output", required=True, type=Path, help="Dossier des PNG")
     parser.add_argument("--browser-executable", type=Path, help="Chromium local facultatif")
     parser.add_argument("codes", nargs="+", help="Codes CIM des leçons, par exemple J45 J44")

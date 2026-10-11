@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scope": "Préparation technique du cycle 1 uniquement",
+  "checked_at": "2026-10-11T19:46:45.310497+02:00",
+  "medical_human_validation": false,
+  "medical_injections": [],
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -p test_tetrade_cycle.py -v",
+      "result": "passed",
+      "count": 26
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p test_espace_fragments.py",
+      "result": "passed",
+      "count": 29
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p test_production_plan.py",
+      "result": "passed",
+      "count": 17
+    },
+    {
+      "command": "python3 -m unittest discover -s tests",
+      "result": "passed",
+      "count": 274,
+      "limitation": "Exécution précédente à 16 tests du nouveau cycle ; dix tests de contrat supplémentaires ont ensuite passé dans la suite ciblée à 26 tests."
+    },
+    {
+      "command": "python3 build_fragments.py",
+      "result": "passed",
+      "fragments": 23
+    },
+    {
+      "command": "python3 build_index.py puis node tests/verify_fragment_frontends.cjs",
+      "result": "passed",
+      "checks": 941,
+      "fragments": 23
+    },
+    {
+      "command": "python3 tools/sceller.py verifier",
+      "result": "Conforme"
+    }
+  ],
+  "scope_limits": [
+    "Les chapitres du cycle 1 ne sont pas encore injectés.",
+    "La palette des cours se déclenche à production_cycle=1 ; les vérifications des cours eux-mêmes seront attachées aux dossiers finaux.",
+    "Les contrôles techniques ne jugent ni les recommandations ni les passages cités."
+  ],
+  "current_medical_reserve": "N17 : aucune FI suisse du produit injectable standard de calcium identifiée ; pas de prescription de ce produit enseignée dans la version de travail, aucune conformité finale déclarée."
+}

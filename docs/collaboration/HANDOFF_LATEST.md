@@ -1,3 +1,7 @@
+# Cycle 1 lancé — 11 octobre 2026
+
+Sur ordre explicite de Vial, quatre auteurs C01-R-NEUR/ENDO/NEPH/HEM sont engagés sur I63/E11/N17/D50. [Consigne](instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md). Vérification du Prompt en entrée et sortie de chaque mission ; production fondée sur sources réellement lues, puis deux passes croisées, deux contre-audits différés neufs, contrôle final et injections successives. Les brouillons Claude E11/D50 sont préservés et repris dans des dossiers Codex distincts. Aucune injection à cette étape ; cycle 2 non autorisé. Gardes ciblées et contrôles préparés dans cette reprise, sans certifier les fragments complets.
+
 ## Plan de progression lente de la tétrade — 11 octobre 2026
 
 La pièce jointe de Vial confirme **Neurologie, Endocrinologie et métabolisme, Néphrologie, Hématologie**. Le plan comprend **30 cycles, 120 missions et l’inventaire des 270 catégories**, avec reprise des brouillons E11 et D50. Les auteurs, binômes croisés et contre-auditeurs différés sont nommés par cycle ; Codex contrôle puis prévoit quatre injections successives. Les missions ne sont pas lancées. [Instruction](instructions/TETRADE_30_CYCLES_VIAL_2026-10-11.md) · [reçu et contrôles](receipts/PLAN_TETRADE_30_CYCLES_2026-10-11.json).

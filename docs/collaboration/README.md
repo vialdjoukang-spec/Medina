@@ -1,3 +1,5 @@
+**Mission active du 11 octobre 2026 : [exécution du cycle 1](instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md).** I63, E11, N17, D50 ; Prompt vérifié en entrée/sortie, audits croisés, contre-audits différés et injections successives sous garde.
+
 ## Nouvelle planification de Vial — tétrade, 11 octobre 2026
 
 [Plan de 30 cycles, PDF et HTML interactif](instructions/TETRADE_30_CYCLES_VIAL_2026-10-11.md) pour Neurologie, Endocrinologie et métabolisme, Néphrologie et Hématologie, confirmées par sa pièce jointe. La nouvelle chaîne par chapitre s’applique à cette tétrade ; les exigences médicales du Prompt sont conservées. Cette livraison est un plan ; aucune mission médicale n’est démarrée.
