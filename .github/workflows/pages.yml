@@ -57,11 +57,16 @@ jobs:
           cp -R assets/images/. _site/fragments/images/
           python build_index.py --fragments-dir _site/fragments --output _site/index.html
           python tools/build_organisation.py --output _site/organisation.html
+          # Plan demandé par Vial : PDF, HTML autonome et données de planification.
+          mkdir -p _site/progression
+          cp organisation/progression/plan-tetrade-30-cycles.* _site/progression/
       - name: Installer Chromium pour contrôler les cours en rédaction
         run: |
           python -m pip install playwright==1.55.0 Pillow==11.3.0
           python -m playwright install --with-deps chromium
           npm install --no-save --package-lock=false playwright@1.55.0
+      - name: Vérifier les étapes et barrières du plan de la tétrade
+        run: python tests/verify_tetrade_plan.py --html _site/progression/plan-tetrade-30-cycles.html
       - name: Vérifier le premier affichage des fragments
         env:
           MEDINA_OUT: ${{ github.workspace }}/_site
