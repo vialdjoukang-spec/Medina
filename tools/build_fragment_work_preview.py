@@ -239,9 +239,10 @@ def mark_preview(source, manifest):
         raise ValueError("Le bandeau de consultation est absent.")
     runtime = re.compile(r'(<script id="medina-category-organisation-runtime">)(.*?)(</script>)', re.S)
     match = runtime.search(source)
-    if not match or match.group(2).count('available.slice(0,3)') != 1:
+    featured_courses = re.compile(r'\b(viewAvailable|available)\.slice\(0,3\)')
+    if not match or len(featured_courses.findall(match.group(2))) != 1:
         raise ValueError("La liste des cours en accueil a changé ; contrôle manuel nécessaire.")
-    home_runtime = match.group(2).replace('available.slice(0,3)', 'available').replace('↗', '→')
+    home_runtime = featured_courses.sub(r'\1', match.group(2)).replace('↗', '→')
     source = source[:match.start()] + match.group(1) + home_runtime + match.group(3) + source[match.end():]
     home_style = '''<style id="medina-t1-work-home-style">
 html[data-medina-fragment="T1"] .medina-work-preview{display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px;padding:8px 14px;background:#fbf9f2;border-color:#e5dbbd;box-shadow:0 2px 8px #372b1410}

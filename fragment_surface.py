@@ -385,6 +385,25 @@ def finish_surface(source, fragment, root):
         return match.group(0)
 
     source = re.sub(r'<script([^>]*)>(.*?)</script>', strip, source, flags=re.S)
+    # The shell and its legacy wrappers used to render while this large standalone
+    # document was still being parsed. The category runtime, installed at the end,
+    # owns the first render; even legacy redirects must wait for its local routes.
+    render_signature = r'(\bfunction\s+render\s*\(\s*\)\s*\{|\brender\s*=\s*function\s*\(\s*\)\s*\{)'
+    render_guard = ("if(!window.MEDINA_FRAGMENT_READY)return;"
+                    "if(!window.MDN_READY&&document.getElementById('mdn-pack')){"
+                    "const requested=readRoute();"
+                    "if(requested.type==='entry'&&(window.MEDINA_ALIAS||{})[requested.id])return;}")
+
+    def defer_render(match):
+        attrs, body = match.group(1), match.group(2)
+        if re.search(r'\btype="(?:application/json|application/octet-stream)"', attrs):
+            return match.group(0)
+        body = re.sub(render_signature, lambda m: m.group(1) + render_guard, body)
+        return '<script' + attrs + '>' + body + '</script>'
+
+    source = re.sub(r'<script([^>]*)>(.*?)</script>', defer_render, source, flags=re.S)
+    source = source.replace('</head>',
+                            '<script id="medina-fragment-startup">window.MEDINA_FRAGMENT_READY=false;</script></head>', 1)
     source = source.replace('<html ', '<html data-medina-fragment="' + fragment['id'] + '" ', 1)
     home = ('<a class="medina-home" href="../index.html" aria-label="Retour à l’accueil MEDINA" title="Accueil MEDINA">'
             '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">'
@@ -405,6 +424,10 @@ def finish_surface(source, fragment, root):
     source = source.replace('aria-label="Rechercher dans Medina"', 'aria-label="Rechercher un cours du fragment"')
     css = (Path(root) / 'shell/fragment.css').read_text(encoding='utf-8')
     js = ((Path(root) / 'shell/fragment.js').read_text(encoding='utf-8') if fragment.get('surface') == 'courses-v1' else '')
+    if js:
+        js, course_renders = re.subn(render_signature, lambda m: m.group(1) + render_guard, js)
+        if course_renders != 1:
+            raise ValueError('Le moteur local des cours doit attendre la surface du fragment.')
     source = source.replace('</head>', '<style id="medina-fragment-css">' + css + '</style></head>', 1)
     if fragment['id'] == 'S01':
         module = Path(root) / 'modules'
@@ -422,6 +445,13 @@ def finish_surface(source, fragment, root):
     payload = json.dumps(category_organisation_data(source, fragment, root), ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     category_css = (Path(root) / 'engine/category_organisation.css').read_text(encoding='utf-8')
     category_js = (Path(root) / 'engine/category_organisation.js').read_text(encoding='utf-8')
+    category_js, final_renders = re.subn(
+        r'(?m)^([ \t]*)render\(\);(?=\s*\}\)\(\);\s*\Z)',
+        r'\1window.MEDINA_FRAGMENT_READY=true;\n\1render();', category_js)
+    if final_renders != 1:
+        raise ValueError('Le premier rendu doit appartenir au moteur final des catégories.')
+    source = source.replace('Chargement du registre médical…',
+                            'Ouverture de ' + html.escape(own_data['fragment']['display_name']) + '…', 1)
     source = source.replace('</head>', '<style id="medina-category-organisation-css">' + category_css + '</style></head>', 1)
     import base64
     faces = ''.join("@font-face{font-family:'Atkinson Hyperlegible Next';font-style:%s;font-weight:%s;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"

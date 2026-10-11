@@ -164,6 +164,27 @@ html[data-medina-fragment] .mc-chap-head .mc-code{font-weight:400;color:var(--at
 #content .nosology-gold,.sidebar .nosology-gold{display:inline-block;color:#936c08!important;margin-right:.5em;font-size:1.15em;cursor:default}
 .nosology-progress{display:grid;gap:.45rem;margin:.9rem 0;font-size:.75rem;color:var(--ink,#263832)}
 .nosology-progress progress{width:100%;height:.6rem;accent-color:var(--atlas-accent,#317765)}
+/* The metal funnel is a label, not a control; only the first two gauges navigate. */
+.mcg-filter-heading{display:flex;align-items:center;gap:10px;margin:0 0 4px;color:var(--s-ink,#0b2545);cursor:default}
+.mcg-filter-symbol{display:block;width:42px;height:42px;flex:0 0 42px;overflow:visible;pointer-events:none}
+.mcg-filter-label{font-size:14px;font-weight:700;letter-spacing:.02em}
+.nosology-progress[data-mcg-filter]{position:relative;padding:10px 12px;border:1px solid #b9e6f2;border-radius:9px;background:linear-gradient(145deg,#fff,#f0fbff);color:var(--s-ink,#0b2545);text-decoration:none!important;cursor:pointer;transition:border-color .15s,box-shadow .15s,background-color .15s}
+.nosology-progress[data-mcg-filter]:hover{border-color:#1e88e5;box-shadow:0 3px 12px #1e88e51a}
+.nosology-progress[data-mcg-filter]:focus-visible{outline:3px solid #1e88e5;outline-offset:3px}
+.nosology-progress[data-mcg-filter][aria-current="page"]{border-color:#1e88e5;box-shadow:inset 3px 0 #1e88e5;background:#e9f7ff}
+.nosology-progress[data-mcg-filter]>span:first-child{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.sidebar .mcg-filter-heading{gap:7px}
+.sidebar .mcg-filter-symbol{width:36px;height:36px;flex-basis:36px}
+.sidebar .nosology-progress[data-mcg-filter]{padding:8px;margin:.6rem 0}
+.mcg-filter-notice{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 18px;margin:0 0 24px;padding:13px 16px;border:1px solid #b9e6f2;border-left:4px solid #1e88e5;border-radius:9px;background:#f0fbff;color:#0b2545;font-size:14px;line-height:1.5}
+.mcg-filter-notice .mcg-back{margin:0;color:#155a8a!important;text-decoration:underline;text-underline-offset:3px}
+/* Keep the entire category rail reachable on short screens, including the global gauges. */
+@media(max-height:900px){
+ html[data-medina-fragment] .sidebar{overflow-y:auto;overscroll-behavior:contain}
+ html[data-medina-fragment] .sidebar .nav-list{flex:0 0 auto;max-height:160px}
+ html[data-medina-fragment] .sidebar .sidebar-note{flex-shrink:0}
+}
+@media(prefers-reduced-motion:reduce){.nosology-progress[data-mcg-filter]{transition:none}}
 .nosology-plan section{min-height:4rem;border-top:1px solid #dbe3de;padding:1rem 0}
 .nosology-plan h3{margin:0;font-size:1rem}
 .nosology-course-star{padding:.65rem 1rem;background:#fbf7e9;border-radius:.5rem;color:#725606;font-size:.85rem}

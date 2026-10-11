@@ -61,6 +61,17 @@ jobs:
         run: |
           python -m pip install playwright==1.55.0 Pillow==11.3.0
           python -m playwright install --with-deps chromium
+          npm install --no-save --package-lock=false playwright@1.55.0
+      - name: Vérifier le premier affichage des fragments
+        env:
+          MEDINA_OUT: ${{ github.workspace }}/_site
+          MEDINA_QA_OUT: ${{ github.workspace }}/work/frontend-bootstrap
+        run: node tests/verify_fragment_bootstrap.cjs
+      - name: Vérifier les filtres des jauges sans modifier les cours
+        env:
+          MEDINA_OUT: ${{ github.workspace }}/_site
+          MEDINA_QA_OUT: ${{ github.workspace }}/work/frontend-filters
+        run: node tests/verify_fragment_filters.cjs
       - name: Contrôler l’aperçu Infectiologie sur ordinateur et mobile
         run: |
           python tests/verify_fragment_work_preview.py \
