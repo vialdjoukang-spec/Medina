@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "code": "N17",
+  "actor": "C01-R-NEPH",
+  "runtime_agent_id": "/root/c01_r_neph",
+  "checked_at": "2026-10-11T19:31:33.291740+00:00",
+  "final_files": {
+    "chapters/N17/N17_a.html": "e5e757aec79227cc63bf941385e4586a2aa199c053401ac6bc8c995948d64c26",
+    "chapters/N17/N17_b.html": "e789c57cb8b45bc0e480ba17f65dd91b92c2f764fca51468afd1840a4aad1c65",
+    "chapters/N17/N17_c.html": "b4130147b320ad1653ea6299b8d4824b84b2a58da142139846483c81223c0485",
+    "chapters/N17/N17_d.html": "94a8e751772ceabc9580b3d32fcf20cc3620a8851e4042bec97a29aa9343eca9",
+    "chapters/N17/N17_pop1.html": "e67165aa7c2be7aa7f414085da86505b76d972684c1707748d8213eee62dd171",
+    "chapters/N17/N17_pop2.html": "566de1c0977bbd54e8e0ff193311587dbc3ea28f7e1ea4e5cd76ede1e3fd22e3",
+    "glossary/n17.py": "df4317dd80c0cdf415c817e7e479e35126a58afd468b2b8b9f99542b73735a5f"
+  },
+  "command": "MEDINA_CHROMIUM=/usr/bin/chromium python3 test_v7.py --url http://127.0.0.1:8764/fragments/MEDINA_S04_renal-voies-urinaires.html N17",
+  "cwd": "/workspace/work/cycle1-render-N17",
+  "test_script_source": "test_v7.py",
+  "test_script_sha256": "81279818877b99e7558c462f0db39871e884e4db1f605817fc30e806f11ae632",
+  "scratch_script_sha256": "81279818877b99e7558c462f0db39871e884e4db1f605817fc30e806f11ae632",
+  "rendered_html_path": "/workspace/work/cycle1-render-N17/site/fragments/MEDINA_S04_renal-voies-urinaires.html",
+  "rendered_html_sha256": "d701d7ca93681232ccdd3d0548c2d4691d5a9c6b24e6c3390b396321863e9eef",
+  "actual_output": "N17 mots 14346 fenêtres 56 quiz 4 pareto 14\nFrontend réellement contrôlé : http://127.0.0.1:8764/fragments/MEDINA_S04_renal-voies-urinaires.html\nOK\n",
+  "exit_code": 0,
+  "viewports": [
+    {
+      "width": 1300,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks_executed": [
+    "audit statique abréviations/classes/styles et fenêtres/Pareto",
+    "cours réellement affiché ordinateur/mobile",
+    "liens de fenêtres visibles dans l’onglet initial ordinateur ; ne prétend pas parcourir toutes les fenêtres cachées",
+    "quatre onglets ordinateur",
+    "Navigo/focus",
+    "taille de police 21 px et retour 17 px",
+    "mode livre aller/retour",
+    "débordement horizontal mobile",
+    "erreurs JavaScript du script, avec son exception lesson-core historique"
+  ],
+  "checks_conditional": [
+    "barre supérieure et mode sombre seulement si .mdn-darkbtn présent, selon script inchangé"
+  ],
+  "relationship_to_previous_checks": "Contrôle officiel exécuté sur la version médicale corrigée sous avenant. Les contrôles exhaustifs HTTP ont ouvert les 56 fenêtres réelles et les quatre quiz, sur ordinateur et mobile, sur ce même HTML. Les preuves antérieures et leur résultat propre restent dans historique_avant_avenant_calcium/.",
+  "medical_sources_changed": true,
+  "medical_human_validation": false,
+  "medical_verdict": "NON_CONFORME_POUR_INJECTION",
+  "tested_script_path": "/workspace/work/cycle1-render-N17/test_v7.py",
+  "tested_script_sha256": "81279818877b99e7558c462f0db39871e884e4db1f605817fc30e806f11ae632",
+  "script_equality_at_recording": true,
+  "observation": "Résultat effectivement retourné après la correction de six clés de glossaire, observé avant les captures du 19:19:38 UTC. checked_at date la consignation et la vérification des empreintes actuelles, sans reconstruire une heure exacte de fin de processus.",
+  "calcium_remaining_safety_reserves": true,
+  "historical_report": {
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/historique_avant_avenant_calcium/verification_officielle_http.json",
+    "sha256": "e383e162ee598adedd7d3ecd71bffc3da17bb5ee639e6ba4c9b5687a7173a2c5",
+    "explanation": "Copie exacte du résultat antérieur ; empreintes et volume antérieurs, aucune substitution rétroactive."
+  }
+}

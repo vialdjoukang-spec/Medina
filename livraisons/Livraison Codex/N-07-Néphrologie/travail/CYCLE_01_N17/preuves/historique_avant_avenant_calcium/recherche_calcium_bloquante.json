@@ -1,0 +1,71 @@
+{
+  "chapter": "N17",
+  "status": "reserve_bloquante",
+  "official_search_evidence": {
+    "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/RECHERCHE_CALCIUM_SWISSMEDIC.json",
+    "sha256": "8e8d374824f94c6745377f2dba839e0ccc604077a557af44765471a82f36f736"
+  },
+  "official_findings": {
+    "source_url": "https://www.swissmedic.ch/dam/swissmedic/fr/dokumente/internetlisten/erweiterte_ham_ind.xlsx.download.xlsx/erweiterte_ham_ind.xlsx",
+    "source_title": "Swissmedic — Liste étendue des médicaments à usage humain autorisés",
+    "listed_version": "30.09.2026",
+    "accessed_at": "2026-10-11T19:50:20.446927+02:00",
+    "download_sha256": "bad34d1f2f743968283d55ed46a1269def280c41f445098d09c48d3b8d777a14",
+    "query": "ATC A12* ou B05*, principe actif contenant calcii ou calcium ; contrôle du nom, de la formulation et de l’indication.",
+    "records": [
+      {
+        "sheet": "Erweiterte Liste HAM",
+        "row": 9674,
+        "authorization": 68896,
+        "product": "Calrecia 100 mmol/l, Infusionslösung",
+        "ATC": "B05XA07",
+        "active_ingredients": "calcii chloridum dihydricum",
+        "indication": "Calrecia wird angewendet zur Calciumsubstitution bei kontinuierlicher Nierenersatztherapie (CRRT), langsamer verlängerter (täglicher) Dialyse (SLEDD) und therapeutischem Plasmaaustausch (TPE) mit Citratantikoagulation.",
+        "status": "zugelassen"
+      },
+      {
+        "sheet": "Erweiterte Liste HAM",
+        "row": 11032,
+        "authorization": 70586,
+        "product": "Icalziss 340 mmol/l, Infusionslösung",
+        "ATC": "B05XA07",
+        "active_ingredients": "calcii chloridum dihydricum",
+        "indication": "Zur Calciumsubstitution während extrakorporaler Therapien mit regionaler Citrat-Antikoagulation (RCA) im Rahmen einer kontinuierlichen Nierenersatztherapie (CRRT) und eines therapeutischen Plasmaaustauschs (TPE).",
+        "status": "zugelassen"
+      }
+    ],
+    "limits": [
+      "Cette liste décrit les autorisations ; elle ne prouve pas la disponibilité hospitalière des produits importés ou des préparations magistrales.",
+      "Les solutions de substitution en CRRT/TPE avec citrate ne constituent pas une FI pour une préparation standard de cardioprotection dans l’hyperkaliémie.",
+      "Cette recherche ne permet aucun verdict favorable sur un produit non documenté."
+    ],
+    "matches_broad_query_count": 101,
+    "broad_query_review": "Les autres correspondances sont des compléments oraux ou des solutions mixtes de remplacement hydroélectrolytique, nutrition et dialyse ; aucune préparation standard injectable de gluconate de calcium ne ressort de cette interrogation."
+  },
+  "other_searches_read": [
+    "AmiKo français/deutsch calcium gluconate/chlorure : calcium hydrogel, aucun injectable standard trouvé dans ces interrogations.",
+    "FI Calciumgluconat B. Braun 10 % : document allemand de juillet 2014, publié sur le serveur de la pharmacie Bâle.",
+    "FI glucose Bichsel et glucose B. Braun : contre-indications anurie/acidose empêchant leur substitution automatique au glucose Fresenius retenu."
+  ],
+  "foreign_fi": {
+    "passage_id": "CALDE",
+    "organization_or_document": "CALDE",
+    "url": "https://www.spitalpharmazie-basel.ch/pdf/FI-9133925_Calciumgluconat.pdf",
+    "version_date": "Calciumgluconat B.Braun10%, Fachinformation allemande, juillet2014",
+    "section": "FI allemande pages1–4 ; preuve du statut allemand BfArM",
+    "passage": "PAGE 1\n002742-15203 \nJuli 2014  \nFachinformation\n \nCalciumgluconat B. Braun 10 % \n \nInjektionslösung\n \n1\n 1. BEZEICHNUNG DES ARZNEIMITTELS\nCalciumgluc",
+    "population": "Hypocalcémie symptomatique ; produit allemand",
+    "limits": "Hébergement hospitalier suisse ne signifie pas autorisation Swissmedic ; hyperkaliémie hors indication ; identité/import/usage local non établis ; réserve bloquante",
+    "read_text_sha256": "1f60286dbfa692880d2fecdb49748d96967b66412eeec112295d8091e50f774a",
+    "scratch_document": "/workspace/work/cycle1-sources-N17/calcium_basel.txt"
+  },
+  "course_action": "Le mécanisme de cardioprotection et la distinction des sels sont exposés ; aucune dose de calcium injectable n’est enseignée. La réserve reste bloquante pour tout verdict favorable et injection.",
+  "calcium_import_complement": {
+    "added_at_utc": "2026-10-11T18:29:33.751850+00:00",
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/complement_calcium_import_suisse.json",
+    "sha256": "2ecbbeccb5c2097d0b7c7e2689db54fe838682247e9e212b6aeaa78ac60f8a8b",
+    "medical_source_files_unchanged": true,
+    "FI_swiss_exact_still_unestablished": true,
+    "medical_verdict": "NON_CONFORME_POUR_INJECTION"
+  }
+}

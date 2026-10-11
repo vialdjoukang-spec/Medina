@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "cycle": 1,
+  "agent": "C01-R-ENDO",
+  "role": "author",
+  "chapter_code": "E11",
+  "phase": "entry",
+  "verdict": "application_en_cours_avec_reserves",
+  "prompt_read": [
+    "PROMPT_TRANSITION.md",
+    "PROMPT_MEDINA.md",
+    "AGENTS.md",
+    "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+    "docs/collaboration/instructions/TETRADE_30_CYCLES_VIAL_2026-10-11.md",
+    "docs/STYLE_REDACTION.md",
+    "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
+    "CHAPTER_SPEC.md"
+  ],
+  "checks": [
+    {
+      "requirement": "Authorized Cycle1 role and scope",
+      "status": "verified",
+      "evidence": "CYCLE_01_EXECUTION table C01-R-ENDO,E11,S05; user explicitly launches Cycle1"
+    },
+    {
+      "requirement": "No duplication and provenance preserved",
+      "status": "verified",
+      "evidence": "Parent remote inventory 87 Git trees; Claude E11 draft reused; original_hashes.json"
+    },
+    {
+      "requirement": "Sources actually read before accepting medical claims",
+      "status": "pending_blocking",
+      "evidence": "Original author report fully read; sources re-fetched; 2026 PMID metadata confirmed only, fulltext pending; every claim requires independent passage verification"
+    },
+    {
+      "requirement": "No invention, no silent memory-based supplementation",
+      "status": "applied",
+      "evidence": "Draft claims provisional until source verification; uncertainties recorded"
+    },
+    {
+      "requirement": "Independent audits and canonical injection",
+      "status": "verified",
+      "evidence": "Crossauditor C01-R-NEPH distinct, fresh C01-CA-ENDO, author writes only separate draft folder, no canonical writes"
+    },
+    {
+      "requirement": "Four dimensions, frontend and hashes",
+      "status": "pending_blocking",
+      "evidence": "Medical/writing/source/frontend verification planned, output only after actual tests"
+    }
+  ]
+}
