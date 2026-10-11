@@ -1,0 +1,349 @@
+{
+  "actor": "C01-R-NEPH",
+  "runtime_agent_id": "/root/c01_r_neph",
+  "verdict": "conforme",
+  "checked_at": "2026-10-11T20:32:31.267884+00:00",
+  "prompt_files": {
+    "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
+    "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+    "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+    "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+  },
+  "checks": [
+    {
+      "id": "autorisation",
+      "status": "conforme",
+      "observation": "P1 indépendante E11 autorisée et complète ; aucun fichier médical auteur, Git, registre ou injection modifié.",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1.json",
+          "sha256": "2cff2a455696e532f8c678478fdb199e945ffeac2f1336bfcaec2039aa95a09a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1_scelle.json",
+          "sha256": "61d011e35d7363fbf2d1648534751532d66c7766ebe6bad7c5512f98b18da784"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/sources_independantes_p1.json",
+          "sha256": "31788cd468e5dd6176d95a0a011d0b23744c2b7fdd437dab0b285f0ec655e78a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_fi_p1.json",
+          "sha256": "22bd4fa6b1fd014049320ab3a341571dad3750cb3e063fb69414353c06fe7f24"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_officielle_http_p1.json",
+          "sha256": "4929924b1ceadcab70cd39497e7a46cd98d57d14da23ee6ab25c7f93e77d173d"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_navigateur_p1.json",
+          "sha256": "0519c2e786d6a1e6de096598d8d6eed0aed45006fc482cc2a07cd65118d53207"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/glossaire_charge_p1.json",
+          "sha256": "d087538db5704fe20e43a58df717b5cb17823b5e2190cb37a0b3d67422fa4c7b"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_captures_p1.json",
+          "sha256": "7744b62839fec46838aa245c1c5522f9e0c5e83dd63d084371063d7922398162"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/controles_numeriques_p1.json",
+          "sha256": "1b5fae9d3b87118da7f72a61ef53a38e76336af92f2a0347eecf1384ae940cd2"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_surfaces_p1.json",
+          "sha256": "e386fce5a0679a6ee0e96701fd735cdf02128a10489a7dca17a3eda5189c04ac"
+        }
+      ]
+    },
+    {
+      "id": "perimetre_provenance",
+      "status": "conforme",
+      "observation": "Les sept empreintes E11 du commit d63d84cb sont recalculées maintenant et identiques au gel P1 ; rapports figés historiques conservés.",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1.json",
+          "sha256": "2cff2a455696e532f8c678478fdb199e945ffeac2f1336bfcaec2039aa95a09a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1_scelle.json",
+          "sha256": "61d011e35d7363fbf2d1648534751532d66c7766ebe6bad7c5512f98b18da784"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/sources_independantes_p1.json",
+          "sha256": "31788cd468e5dd6176d95a0a011d0b23744c2b7fdd437dab0b285f0ec655e78a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_fi_p1.json",
+          "sha256": "22bd4fa6b1fd014049320ab3a341571dad3750cb3e063fb69414353c06fe7f24"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_officielle_http_p1.json",
+          "sha256": "4929924b1ceadcab70cd39497e7a46cd98d57d14da23ee6ab25c7f93e77d173d"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_navigateur_p1.json",
+          "sha256": "0519c2e786d6a1e6de096598d8d6eed0aed45006fc482cc2a07cd65118d53207"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/glossaire_charge_p1.json",
+          "sha256": "d087538db5704fe20e43a58df717b5cb17823b5e2190cb37a0b3d67422fa4c7b"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_captures_p1.json",
+          "sha256": "7744b62839fec46838aa245c1c5522f9e0c5e83dd63d084371063d7922398162"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/controles_numeriques_p1.json",
+          "sha256": "1b5fae9d3b87118da7f72a61ef53a38e76336af92f2a0347eecf1384ae940cd2"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_surfaces_p1.json",
+          "sha256": "e386fce5a0679a6ee0e96701fd735cdf02128a10489a7dca17a3eda5189c04ac"
+        }
+      ]
+    },
+    {
+      "id": "sources_lues",
+      "status": "conforme",
+      "observation": "54 documents primaires localisés, scopes réels conservés, 21 FI exactes cherchées et relues, 30 contrôles numériques indépendants. Résumés d’essais identifiés comme tels ; preuves auteur non considérées comme validation.",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1.json",
+          "sha256": "2cff2a455696e532f8c678478fdb199e945ffeac2f1336bfcaec2039aa95a09a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1_scelle.json",
+          "sha256": "61d011e35d7363fbf2d1648534751532d66c7766ebe6bad7c5512f98b18da784"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/sources_independantes_p1.json",
+          "sha256": "31788cd468e5dd6176d95a0a011d0b23744c2b7fdd437dab0b285f0ec655e78a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_fi_p1.json",
+          "sha256": "22bd4fa6b1fd014049320ab3a341571dad3750cb3e063fb69414353c06fe7f24"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_officielle_http_p1.json",
+          "sha256": "4929924b1ceadcab70cd39497e7a46cd98d57d14da23ee6ab25c7f93e77d173d"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_navigateur_p1.json",
+          "sha256": "0519c2e786d6a1e6de096598d8d6eed0aed45006fc482cc2a07cd65118d53207"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/glossaire_charge_p1.json",
+          "sha256": "d087538db5704fe20e43a58df717b5cb17823b5e2190cb37a0b3d67422fa4c7b"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_captures_p1.json",
+          "sha256": "7744b62839fec46838aa245c1c5522f9e0c5e83dd63d084371063d7922398162"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/controles_numeriques_p1.json",
+          "sha256": "1b5fae9d3b87118da7f72a61ef53a38e76336af92f2a0347eecf1384ae940cd2"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_surfaces_p1.json",
+          "sha256": "e386fce5a0679a6ee0e96701fd735cdf02128a10489a7dca17a3eda5189c04ac"
+        }
+      ]
+    },
+    {
+      "id": "contexte_suisse",
+      "status": "conforme",
+      "observation": "Priorité aux sociétés suisses et FI exactes, recommandations européennes attribuées. Restrictions Glucophage et différences produit/population maintenues comme constats, sans fabriquer une obligation suisse inexistante.",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1.json",
+          "sha256": "2cff2a455696e532f8c678478fdb199e945ffeac2f1336bfcaec2039aa95a09a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1_scelle.json",
+          "sha256": "61d011e35d7363fbf2d1648534751532d66c7766ebe6bad7c5512f98b18da784"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/sources_independantes_p1.json",
+          "sha256": "31788cd468e5dd6176d95a0a011d0b23744c2b7fdd437dab0b285f0ec655e78a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_fi_p1.json",
+          "sha256": "22bd4fa6b1fd014049320ab3a341571dad3750cb3e063fb69414353c06fe7f24"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_officielle_http_p1.json",
+          "sha256": "4929924b1ceadcab70cd39497e7a46cd98d57d14da23ee6ab25c7f93e77d173d"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_navigateur_p1.json",
+          "sha256": "0519c2e786d6a1e6de096598d8d6eed0aed45006fc482cc2a07cd65118d53207"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/glossaire_charge_p1.json",
+          "sha256": "d087538db5704fe20e43a58df717b5cb17823b5e2190cb37a0b3d67422fa4c7b"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_captures_p1.json",
+          "sha256": "7744b62839fec46838aa245c1c5522f9e0c5e83dd63d084371063d7922398162"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/controles_numeriques_p1.json",
+          "sha256": "1b5fae9d3b87118da7f72a61ef53a38e76336af92f2a0347eecf1384ae940cd2"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_surfaces_p1.json",
+          "sha256": "e386fce5a0679a6ee0e96701fd735cdf02128a10489a7dca17a3eda5189c04ac"
+        }
+      ]
+    },
+    {
+      "id": "independance",
+      "status": "conforme",
+      "observation": "C01-R-NEPH (/root/c01_r_neph) distinct de C01-R-ENDO ; pas accès au raisonnement privé du rédacteur, pas correction de ses sources.",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1.json",
+          "sha256": "2cff2a455696e532f8c678478fdb199e945ffeac2f1336bfcaec2039aa95a09a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1_scelle.json",
+          "sha256": "61d011e35d7363fbf2d1648534751532d66c7766ebe6bad7c5512f98b18da784"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/sources_independantes_p1.json",
+          "sha256": "31788cd468e5dd6176d95a0a011d0b23744c2b7fdd437dab0b285f0ec655e78a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_fi_p1.json",
+          "sha256": "22bd4fa6b1fd014049320ab3a341571dad3750cb3e063fb69414353c06fe7f24"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_officielle_http_p1.json",
+          "sha256": "4929924b1ceadcab70cd39497e7a46cd98d57d14da23ee6ab25c7f93e77d173d"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_navigateur_p1.json",
+          "sha256": "0519c2e786d6a1e6de096598d8d6eed0aed45006fc482cc2a07cd65118d53207"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/glossaire_charge_p1.json",
+          "sha256": "d087538db5704fe20e43a58df717b5cb17823b5e2190cb37a0b3d67422fa4c7b"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_captures_p1.json",
+          "sha256": "7744b62839fec46838aa245c1c5522f9e0c5e83dd63d084371063d7922398162"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/controles_numeriques_p1.json",
+          "sha256": "1b5fae9d3b87118da7f72a61ef53a38e76336af92f2a0347eecf1384ae940cd2"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_surfaces_p1.json",
+          "sha256": "e386fce5a0679a6ee0e96701fd735cdf02128a10489a7dca17a3eda5189c04ac"
+        }
+      ]
+    },
+    {
+      "id": "contrat_cours",
+      "status": "conforme",
+      "observation": "Les sept surfaces intégrales, toutes fenêtres et définitions effectivement chargées, figures, quiz, Pareto et contrôles HTTP desktop/mobile sont examinés. Les défauts médicaux et de lecture sont explicitement rapportés ; P2 non prétendue achevée.",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1.json",
+          "sha256": "2cff2a455696e532f8c678478fdb199e945ffeac2f1336bfcaec2039aa95a09a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1_scelle.json",
+          "sha256": "61d011e35d7363fbf2d1648534751532d66c7766ebe6bad7c5512f98b18da784"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/sources_independantes_p1.json",
+          "sha256": "31788cd468e5dd6176d95a0a011d0b23744c2b7fdd437dab0b285f0ec655e78a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_fi_p1.json",
+          "sha256": "22bd4fa6b1fd014049320ab3a341571dad3750cb3e063fb69414353c06fe7f24"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_officielle_http_p1.json",
+          "sha256": "4929924b1ceadcab70cd39497e7a46cd98d57d14da23ee6ab25c7f93e77d173d"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_navigateur_p1.json",
+          "sha256": "0519c2e786d6a1e6de096598d8d6eed0aed45006fc482cc2a07cd65118d53207"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/glossaire_charge_p1.json",
+          "sha256": "d087538db5704fe20e43a58df717b5cb17823b5e2190cb37a0b3d67422fa4c7b"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_captures_p1.json",
+          "sha256": "7744b62839fec46838aa245c1c5522f9e0c5e83dd63d084371063d7922398162"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/controles_numeriques_p1.json",
+          "sha256": "1b5fae9d3b87118da7f72a61ef53a38e76336af92f2a0347eecf1384ae940cd2"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_surfaces_p1.json",
+          "sha256": "e386fce5a0679a6ee0e96701fd735cdf02128a10489a7dca17a3eda5189c04ac"
+        }
+      ]
+    },
+    {
+      "id": "honnetete",
+      "status": "conforme",
+      "observation": "Les deux Prompts ont été réellement relus en entier maintenant, après les preuves finalisées ; les rapports P1 et leurs SHA recalculés. Méthode conforme distincte du chapitre NON_CONFORME 14/20 ; aucune note forcée, injection ou validation médicale humaine.",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1.json",
+          "sha256": "2cff2a455696e532f8c678478fdb199e945ffeac2f1336bfcaec2039aa95a09a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/P1_scelle.json",
+          "sha256": "61d011e35d7363fbf2d1648534751532d66c7766ebe6bad7c5512f98b18da784"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/sources_independantes_p1.json",
+          "sha256": "31788cd468e5dd6176d95a0a011d0b23744c2b7fdd437dab0b285f0ec655e78a"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_fi_p1.json",
+          "sha256": "22bd4fa6b1fd014049320ab3a341571dad3750cb3e063fb69414353c06fe7f24"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_officielle_http_p1.json",
+          "sha256": "4929924b1ceadcab70cd39497e7a46cd98d57d14da23ee6ab25c7f93e77d173d"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/verification_navigateur_p1.json",
+          "sha256": "0519c2e786d6a1e6de096598d8d6eed0aed45006fc482cc2a07cd65118d53207"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/glossaire_charge_p1.json",
+          "sha256": "d087538db5704fe20e43a58df717b5cb17823b5e2190cb37a0b3d67422fa4c7b"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_captures_p1.json",
+          "sha256": "7744b62839fec46838aa245c1c5522f9e0c5e83dd63d084371063d7922398162"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/controles_numeriques_p1.json",
+          "sha256": "1b5fae9d3b87118da7f72a61ef53a38e76336af92f2a0347eecf1384ae940cd2"
+        },
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_E11/lecture_surfaces_p1.json",
+          "sha256": "e386fce5a0679a6ee0e96701fd735cdf02128a10489a7dca17a3eda5189c04ac"
+        }
+      ]
+    }
+  ],
+  "application_scope": "Succès de méthode à la sortie réelle de la première passe E11. Les douze constats, dont les contre-indications et collisions chargées, maintiennent le chapitre NON_CONFORME 14/20. Deuxième passe non commencée ; aucune validation humaine.",
+  "medical_human_validation": false,
+  "phase": "sortie_reelle_P1",
+  "chapter_verdict": "NON_CONFORME",
+  "chapter_score": 14,
+  "second_pass_completed": false
+}

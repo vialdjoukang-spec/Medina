@@ -1,0 +1,381 @@
+{
+  "code": "D50",
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "medical_human_validation": false,
+  "recorded_at": "2026-10-11T20:31:31.064136+00:00",
+  "reading_interval": {
+    "after": "2026-10-11T20:11:08.684060+00:00",
+    "before": "2026-10-11T20:31:31.064143+00:00"
+  },
+  "timing_note": "Les heures individuelles de consultation ne sont pas reconstruites. Ce registre est écrit après les lectures réelles, sans antidater les consultations.",
+  "consultations": [
+    {
+      "source": "ferro sanol",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680365270213",
+      "version": "avril 2021",
+      "private_file": "/workspace/work/cycle1-sources-D50/fi_ferro_sanol_P1.txt",
+      "sha256": "a890cc0b045a8c8e52ba26554f11a6cc40beb54d715299527e875cb8d0dc692b",
+      "scope": "Recherche produit puis texte ; contre-indications, mises en garde, interactions et date finale réellement relus.",
+      "finding": "Les maladies digestives inflammatoires relèvent de la prudence. Leurs intitulés ne figurent pas dans la liste des contre-indications. Le passage produit ne permet pas d’inventer une contre-indication spécifique oral + IV ; cette attribution a été retirée de sa note."
+    },
+    {
+      "source": "Tardyferon / Ferrum Hausmann",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680374480016",
+      "additional_url": "https://amiko.oddb.org/fr/fi?gtin=7680351020433",
+      "version": "juillet 2025 / mai 2021",
+      "scope": "Listes de contre-indications et mises en garde réellement relues dans les textes privés déjà consultés.",
+      "finding": "Intolérance prouvée pour Tardyferon, fondée pour Ferrum Hausmann : ces qualificatifs ne deviennent pas une interdiction universelle de tout fer oral en cas d’inflammation. L’attribution oral + IV a aussi été retirée de la note Ferrum, où elle ne constitue pas une contre-indication listée."
+    },
+    {
+      "source": "Maltofer comprimé à croquer",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680465370844",
+      "version": "août 2021",
+      "private_file": "/workspace/work/cycle1-sources-D50/fi_Maltofer_croquer_P1.txt",
+      "sha256": "0422090b1b8c48dcf7d0e19765937a1afa78d6b0a5cbad215299c1fae1395ec8",
+      "scope": "Recherche exacte puis information professionnelle commune intégralement relue, y compris présentations, composition, posologie, précautions, pharmacologie et date.",
+      "finding": "Comprimé à croquer : autorisation 46537, GTIN 7680465370844, 100 mg. Comprimé filmé : autorisation 55363, GTIN 7680553630041, 100 mg. Sirop : autorisation 30124, GTIN 7680301240218, 10 mg/mL. Le lien exact du comprimé filmé a été consulté ; son texte est byte-identique au texte commun effectivement lu, et ne constitue pas une seconde lecture indépendante."
+    },
+    {
+      "source": "BSG 2021",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8515119/",
+      "section": "Background, Table 1, History and examination, exploration du grêle/capsule",
+      "scope": "Passages effectivement relus après P1.",
+      "finding": "Utilisation prolongée des anti-inflammatoires non stéroïdiens parmi les facteurs de risque ; entéropathie parmi les causes identifiées par capsule. L’exposition ne prouve pas une cause unique et ne dispense pas du bilan indiqué."
+    },
+    {
+      "source": "Hoving et al. 2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11985374/",
+      "section": "Introduction et figure 1",
+      "scope": "Introduction réellement relue dans le XML primaire, mécanisme normal et perturbation.",
+      "finding": "La matriptase-2 codée par TMPRSS6 atténue la synthèse hépatique d’hepcidine via les protéines morphogénétiques osseuses et leurs médiateurs de signalisation. Les variants pathogènes dérèglent ce frein ; la fenêtre n’importe pas le contexte vasculaire pulmonaire du glossaire partagé."
+    },
+    {
+      "source": "Onkopedia 2025 avec SGH/SSH et Delphi suisse 2019",
+      "url": "https://www.onkopedia.com/de/onkopedia/guidelines/eisenmangel-und-eisenmangelanaemie/@@guideline/html/index.html",
+      "additional_url": "https://doi.org/10.4414/smw.2019.20097",
+      "section": "Onkopedia 3.5.6 et 3.6.1 ; discussion diagnostique du Delphi",
+      "scope": "Passages ferritine, inflammation et bilan réellement relus.",
+      "finding": "La protéine C réactive contextualise la ferritine ; inflammation, cancer et atteinte hépatique peuvent élever celle-ci malgré une carence. Aucun seuil général ne remplace les critères par population."
+    },
+    {
+      "source": "ESsCD 2025 Partie 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12704582/",
+      "section": "QII.1 et son résumé des preuves",
+      "scope": "Recommandation et justification relues pour les termes développés.",
+      "finding": "Anticorps anti-transglutaminase tissulaire de classe immunoglobuline A, immunoglobulines A totales simultanées, régime contenant du gluten. Les critères chiffrés d’immunodéficience du glossaire général ne sont plus importés."
+    }
+  ],
+  "primary_hash_checks": [
+    {
+      "id": "ONK2025",
+      "path": "/workspace/work/cycle1-sources-D50/onkopedia.html",
+      "sha256": "157212ddd73ca8886c1e33d181d91138ccc8cbaa6d07c5618b90880887626f52",
+      "scope": [
+        "En-tête sociétés participantes",
+        "2.3–2.4 métabolisme et causes",
+        "3.1–3.6 clinique, stades et laboratoire",
+        "4.1–4.3 traitement, contrôle, hypophosphatémie"
+      ]
+    },
+    {
+      "id": "CLENIN2017",
+      "path": "/workspace/work/cycle1-sources-D50/clenin-full.html",
+      "sha256": "063948a3b66616f252b1bc0dad28b0c09fb95b9417196cbc6778e331e96229f2",
+      "scope": [
+        "Introduction",
+        "Metabolism",
+        "Clinical symptoms",
+        "Laboratory tests, tableau 3",
+        "Treatment et Follow-up"
+      ]
+    },
+    {
+      "id": "DELPHI2019",
+      "path": "/workspace/work/cycle1-sources-D50/delphi-full.html",
+      "sha256": "d5a9fe133e62e0957c3b3079949b7031080f40c2916da82014e4af388fa4c7ac",
+      "scope": [
+        "Methods : 93 experts, 80 établissements",
+        "Core questions",
+        "Treatments and disease-specific statements",
+        "Discussion : limites et risque de surtraitement"
+      ]
+    },
+    {
+      "id": "SGGG2022",
+      "path": "/workspace/work/cycle1-sources-D50/sggg2022.pdf",
+      "sha256": "28c75d836abeab9fdab4a860d3b0a99e6c343c1768a4881c34e7de711591fe22",
+      "scope": [
+        "p.1 diagnostic et dépistage",
+        "p.2 traitement oral et critères intraveineux",
+        "p.3 sécurité, grossesse",
+        "p.4–5 post-partum",
+        "p.5–6 transfusion et résumé (Hb<95)"
+      ]
+    },
+    {
+      "id": "MEDIX2025",
+      "path": "/workspace/work/cycle1-sources-D50/medix-consultation.txt",
+      "sha256": "1a5c2238f4f99bd20af2002db1f576988ad3201b7152a203ff869dbaebc91f39",
+      "scope": [
+        "3.1 diagnostic",
+        "3.2 dépistage et étiologie",
+        "4.2 indications",
+        "4.3 contrôle"
+      ]
+    },
+    {
+      "id": "OFSP2020",
+      "path": "/workspace/work/cycle1-sources-D50/ofsp2020summary.pdf",
+      "sha256": "669868524380325dba4769ac4c4ac185fa587f01065d4d0b97517cedc3bcf69a",
+      "scope": [
+        "Résumé p.1–3 : résultats cliniques et données individuelles"
+      ]
+    },
+    {
+      "id": "WHO2024",
+      "path": "/workspace/work/cycle1-sources-D50/who2024.pdf",
+      "sha256": "315a402cb68eaa892b81ae02d41997c3bd4b3bb5d767a320fac544a30dbbab23",
+      "scope": [
+        "Tableaux2–4, PDFp.12–15, impriméxi–xiv",
+        "Choix du5e percentile et incertitude masculine135"
+      ]
+    },
+    {
+      "id": "WHO2020",
+      "path": "/workspace/work/cycle1-sources-D50/who2020.pdf",
+      "sha256": "8bd906fa5206bbe4b09308ea4372a60dca2719179708a8cb47beb758fc63f48f",
+      "scope": [
+        "Recommandations et tableau1, PDFp.11–13, impriméix–xi"
+      ]
+    },
+    {
+      "id": "BSG2021",
+      "path": "/workspace/work/cycle1-sources-D50/bsg2021-xml.html",
+      "sha256": "857edda60a688fcea02b184e0ec23fd1ad618eac80af749151467626f91d79c7",
+      "scope": [
+        "Résumé recommandations1–39",
+        "Definitions",
+        "History/examination",
+        "Coeliac disease",
+        "GI/renal tract imaging",
+        "Recurrent IDA",
+        "Treatment and monitoring",
+        "Safety",
+        "Young women, young men, elderly",
+        "GI surgery"
+      ]
+    },
+    {
+      "id": "FIT2025",
+      "path": "/workspace/work/cycle1-sources-D50/fit2025.pdf",
+      "sha256": "492309ba0b219ff1d84e09df06f69e1c8b49a0e0324d1ba6d59a5077b3829d35",
+      "scope": [
+        "PDF intégral3pages, recommandations1–6"
+      ]
+    },
+    {
+      "id": "KDIGO2026",
+      "path": "/workspace/work/cycle1-sources-D50/kdigo2026.pdf",
+      "sha256": "08829c8b41d6964ab849a973dadfa69cd778e45e8550c5f2b8a7765302039a14",
+      "scope": [
+        "S18–S22, bilan et recommandations2.1–2.4",
+        "Points de pratique2.2–2.8"
+      ]
+    },
+    {
+      "id": "HOVING2025",
+      "path": "/workspace/work/cycle1-sources-D50/hoving2025-xml.html",
+      "sha256": "6159fbc353ca247eefd835093b77dffbb78d6f433ac3217ca7718aa3afa785b0",
+      "scope": [
+        "Introduction",
+        "Figure1 et tableau1 : mécanisme/phénotype",
+        "Diagnostic et principes de traitement"
+      ]
+    },
+    {
+      "id": "SCHAEFER2021",
+      "path": "/workspace/work/cycle1-sources-D50/schaefer2021-xml.html",
+      "sha256": "624ed70dfa444557ba3c7f03c22c6d3ec1e6a677e6b8835338574e02ecccc62a",
+      "scope": [
+        "Abstract",
+        "Introduction mécanismeFGF23",
+        "Methods and Results42trials"
+      ]
+    },
+    {
+      "id": "SIMIC2023",
+      "path": "/workspace/work/cycle1-sources-D50/simic2023-full.html",
+      "sha256": "1ef494b8f300276b748b9d2fa7535bd807b7ec19c192f7dd4a2871dda7d489b7",
+      "scope": [
+        "Abstract",
+        "Methods : inclusion",
+        "Results"
+      ]
+    },
+    {
+      "id": "KARCZEWSKI2024",
+      "path": "/workspace/work/cycle1-sources-D50/karczewski2024-full.html",
+      "sha256": "8f9b134c486c8cff1dc0ae3799bc2e7f7ee81c42724a814069f4f3e1bc63f08e",
+      "scope": [
+        "Introduction",
+        "Methods",
+        "Results : effectofdifferentirondoses"
+      ]
+    },
+    {
+      "id": "PORTELA2024",
+      "path": "/workspace/work/cycle1-sources-D50/portela2024-full.html",
+      "sha256": "e58de11f9353d365ab35687f9a2eb96892209721338fee180a1760bb2ad65e2b",
+      "scope": [
+        "Methods, sélection et mesures",
+        "Results77patients",
+        "Modèle ajusté dose/phosphate",
+        "Discussionlimites"
+      ]
+    },
+    {
+      "id": "COELIAC2025",
+      "path": "/workspace/work/cycle1-sources-D50/coeliac2025.html",
+      "sha256": "887c76134f586b2164a741a28c768b6adcc480b7eb666b7c66874b3cb2a06df3",
+      "scope": [
+        "QII.1 initialserology",
+        "QII.6 diagnosticavecgluten",
+        "Table3 case-finding chronicirondeficiency/unexplainedanaemia"
+      ]
+    },
+    {
+      "id": "ESC_META2026",
+      "path": "/workspace/work/cycle1-sources-D50/esc2026-publication-consultation.txt",
+      "sha256": "e089c808b5530913ad166f5cde0236548361f0845dabdd55633248894b0510eb",
+      "scope": [
+        "Lignes 583–594 : titre, date et lien vers le document"
+      ]
+    },
+    {
+      "id": "TARDY",
+      "path": "/workspace/work/cycle1-sources-D50/fi_Tardyferon.txt",
+      "sha256": "6a633bf439ea35b79577e3b8b5a7c616212418094b5b6fca4eeec90f586035b8",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    },
+    {
+      "id": "SANOL",
+      "path": "/workspace/work/cycle1-sources-D50/fi_ferro_sanol_P1.txt",
+      "sha256": "a890cc0b045a8c8e52ba26554f11a6cc40beb54d715299527e875cb8d0dc692b",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    },
+    {
+      "id": "FERRUM",
+      "path": "/workspace/work/cycle1-sources-D50/fi_Ferrum_Hausmann.txt",
+      "sha256": "3fb7f29898e4c06c1cf0df2b74a7cbcaf8280c82f8a6e86c5d4e1b6de991fd14",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    },
+    {
+      "id": "MALTOFER",
+      "path": "/workspace/work/cycle1-sources-D50/fi_Maltofer_croquer_P1.txt",
+      "sha256": "0422090b1b8c48dcf7d0e19765937a1afa78d6b0a5cbad215299c1fae1395ec8",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    },
+    {
+      "id": "FERACCRU",
+      "path": "/workspace/work/cycle1-sources-D50/fi_Feraccru.txt",
+      "sha256": "f9b170af3ef9013debe8c1336975a69bc858ddc8733b93c3eb9c51f5eb8e9f08",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    },
+    {
+      "id": "FERINJECT",
+      "path": "/workspace/work/cycle1-sources-D50/fi_Ferinject.txt",
+      "sha256": "74a492815f9a10ace5f1b0ddb844dc6a81f2a5f9aca1b6874bbb56206e4746f8",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    },
+    {
+      "id": "MONOFER",
+      "path": "/workspace/work/cycle1-sources-D50/fi_Monofer.txt",
+      "sha256": "db9d9d88a4ab00b8c369d39ab361425b076eec53e18d89a30aee6edc952de47a",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    },
+    {
+      "id": "VENOFER",
+      "path": "/workspace/work/cycle1-sources-D50/fi_Venofer.txt",
+      "sha256": "a242824f7e016b7b0c8dbe6fbf36f893ee9b1e708976b3dde85d64056935076c",
+      "scope": [
+        "Indications",
+        "Posologie/Mode d’emploi",
+        "Contre-indications",
+        "Mises en garde",
+        "Interactions",
+        "Grossesse/allaitement",
+        "Effets indésirables",
+        "Propriétés/efficacité clinique"
+      ]
+    }
+  ],
+  "source_details": {
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/catalogue_sources_primaires.json",
+    "sha256": "2085324ab004a50acdaf5c9a340b965360ff9de9fd08921ad89c238b5824e8e1",
+    "explanation": "Versions, passages, populations et limitations ; textes privés accessibles aux auditeurs."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "cycle": 1,
+  "actor": "Codex — coordinateur du fil",
+  "runtime_agent_id": "/root",
+  "checked_at": "2026-10-11T20:33:57.199963+00:00",
+  "scope": "Réception documentaire des remises auteurs corrigées après P1 ; pas clôture indépendante des réserves ni contrôle final du cycle",
+  "medical_human_validation": false,
+  "canonical_chapters_injected": 0,
+  "formal_registry_changed_by_this_check": false,
+  "cycle_2_authorized": false,
+  "clinical_verdict": null,
+  "score": null,
+  "chapters": [
+    {
+      "code": "D50",
+      "actor": "C01-R-HEM",
+      "runtime_agent_id": "/root/c01_r_hem",
+      "source_dir": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50",
+      "review": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/revue_auteur.json",
+        "sha256": "e41d49c7f65f18f666b2a2da0ae1bfd0f9db834665e7b70cabe05ba2617388ed"
+      },
+      "final_files": {
+        "chapters/D50/D50_a.html": "ec7a387ddbe40fa741272a4f6c730e54e55048349539e1faa99fc8c7151a2a0d",
+        "chapters/D50/D50_b.html": "5563a482609e0d4c8673f60e7d69a1432d013d7e0ca94b2a2b609e71de24e61a",
+        "chapters/D50/D50_c.html": "75e2d88608c0ec6dbe8c69ed922268cc97f8229b03af38d6fc88cef305b2e1b2",
+        "chapters/D50/D50_d.html": "1769f7e808eb632c6cdc4948898d6d8c2be2851b45a8f0a5d53462dd3f9cac2f",
+        "chapters/D50/D50_pop1.html": "3280813d6bf5f4f4e6e50d5c983f15b2539e56d3fb2cb691f6a1c6cd02e30766",
+        "chapters/D50/D50_pop2.html": "4122c0ad363deb4661c183a8ce018780af85e116ecf5181e79830a5f676c0e06",
+        "glossary/d50.py": "13c1e24b3c148a299cd9a6c112bcd5a7e839a50a7edc9427ebf51a8835fd80e2"
+      },
+      "source_ledger": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/registre_affirmations_sources.json",
+        "sha256": "cd0cb5953d610855726f0ff0820a80ad71814c928207c17d75f513a3ab42bee1",
+        "explanation": "Registre complet des surfaces actuelles sur leurs sept empreintes."
+      },
+      "ledger_units": 546,
+      "evidence_files_hash_verified": 16,
+      "entry": {
+        "checked_at": "2026-10-11T20:11:08.684060+00:00",
+        "verdict": "conforme"
+      },
+      "exit": {
+        "checked_at": "2026-10-11T20:32:59.246302+00:00",
+        "verdict": "conforme"
+      },
+      "blocking_reserves": [],
+      "structural_guard_result": "structure auteur recevable pour revue indépendante",
+      "clinical_source_sufficiency": "à examiner par les auditeurs indépendants"
+    }
+  ],
+  "limits": [
+    "Une empreinte et un schéma valides ne prouvent pas la suffisance médicale du passage primaire.",
+    "Les écarts initiaux restent historiques ; une reprise datée ne les efface pas.",
+    "Toute réserve clinique bloquante encore ouverte interdit un verdict favorable et bloque la première injection du cycle."
+  ]
+}

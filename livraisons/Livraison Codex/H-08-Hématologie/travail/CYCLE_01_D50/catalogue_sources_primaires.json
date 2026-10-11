@@ -411,9 +411,9 @@
       "kind": "information professionnelle Swissmedic",
       "organisation": "Swissmedic : information professionnelle AIPS obtenue avec tools/swissmedic_fi.py et API Amiko.",
       "accessed_on": "2026-10-11",
-      "download_file": "/workspace/work/cycle1-sources-D50/fi_ferro_sanol.txt",
-      "download_sha256": "6366f247af89d88ab5e267285f814c5793d6a4342c21f40d26d8616553d21227",
-      "text_file": "/workspace/work/cycle1-sources-D50/fi_ferro_sanol.txt",
+      "download_file": "/workspace/work/cycle1-sources-D50/fi_ferro_sanol_P1.txt",
+      "download_sha256": "a890cc0b045a8c8e52ba26554f11a6cc40beb54d715299527e875cb8d0dc692b",
+      "text_file": "/workspace/work/cycle1-sources-D50/fi_ferro_sanol_P1.txt",
       "read_sections": [
         "Indications",
         "Posologie/Mode d’emploi",
@@ -472,14 +472,14 @@
     {
       "id": "MALTOFER",
       "title": "Information professionnelle suisse Maltofer",
-      "url": "https://amiko.oddb.org/fr/fi?gtin=7680301240218",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680465370844",
       "version_date": "2021-08",
       "kind": "information professionnelle Swissmedic",
       "organisation": "Swissmedic : information professionnelle AIPS obtenue avec tools/swissmedic_fi.py et API Amiko.",
       "accessed_on": "2026-10-11",
-      "download_file": "/workspace/work/cycle1-sources-D50/fi_Maltofer.txt",
-      "download_sha256": "4cfca7f41254bc23c93a7c5421ebe6da6d44787092e961650d04bee2b9037c2b",
-      "text_file": "/workspace/work/cycle1-sources-D50/fi_Maltofer.txt",
+      "download_file": "/workspace/work/cycle1-sources-D50/fi_Maltofer_croquer_P1.txt",
+      "download_sha256": "0422090b1b8c48dcf7d0e19765937a1afa78d6b0a5cbad215299c1fae1395ec8",
+      "text_file": "/workspace/work/cycle1-sources-D50/fi_Maltofer_croquer_P1.txt",
       "read_sections": [
         "Indications",
         "Posologie/Mode d’emploi",
@@ -495,12 +495,31 @@
       "passage_summary": "Les indications, doses, voies, intervalles, durée, interactions, fonctions rénale et hépatique, grossesse, lait et essais propres au produit ont été lus. Le détail fidèle figure dans notes_passages_primaires.json et dans chaque ligne correspondante du registre.",
       "swissmedic_product": {
         "product_name": "Maltofer",
-        "authorization_number": "30124",
-        "gtin": "7680301240218",
-        "url": "https://amiko.oddb.org/fr/fi?gtin=7680301240218",
-        "accessed_on": "2026-10-11"
+        "authorization_number": "46537",
+        "gtin": "7680465370844",
+        "url": "https://amiko.oddb.org/fr/fi?gtin=7680465370844",
+        "accessed_on": "2026-10-11",
+        "pharmaceutical_form": "comprimé à croquer, 100 mg de fer"
       },
-      "search_file": "/workspace/work/cycle1-sources-D50/fi_search_Maltofer.json"
+      "search_file": "/workspace/work/cycle1-sources-D50/fi_search_Maltofer.json",
+      "common_fi_other_forms": [
+        {
+          "form": "comprimé filmé, 100 mg",
+          "authorization_number": "55363",
+          "gtin": "7680553630041",
+          "url": "https://amiko.oddb.org/fr/fi?gtin=7680553630041",
+          "download_file": "/workspace/work/cycle1-sources-D50/fi_Maltofer_filme_P1.txt",
+          "download_sha256": "0422090b1b8c48dcf7d0e19765937a1afa78d6b0a5cbad215299c1fae1395ec8",
+          "reading": "Texte de la FI commune identique octet par octet à la consultation du comprimé à croquer, intégralement lue lors de cette reprise."
+        },
+        {
+          "form": "sirop, 10 mg/mL",
+          "authorization_number": "30124",
+          "gtin": "7680301240218",
+          "url": "https://amiko.oddb.org/fr/fi?gtin=7680301240218",
+          "reading": "Forme et concentration revérifiées dans la FI commune ; ancien identifiant conservé uniquement pour le sirop."
+        }
+      ]
     },
     {
       "id": "FERACCRU",

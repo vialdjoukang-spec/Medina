@@ -2,16 +2,16 @@
   "code": "D50",
   "actor": "C01-R-HEM",
   "runtime_agent_id": "/root/c01_r_hem",
-  "checked_at": "2026-10-11T19:19:01.037238+00:00",
   "medical_human_validation": false,
+  "checked_at": "2026-10-11T20:31:31.071615+00:00",
   "final_files": {
-    "chapters/D50/D50_a.html": "e33873f46edcd07d6ed09ef4f2c99a84d997c60d10fe7b1322eea40f29129723",
-    "chapters/D50/D50_b.html": "56fc81081526d12807fb23078ca4b3afc2ea181f0606a0dae37c9ad2b1e2ebd0",
-    "chapters/D50/D50_c.html": "6b91ff9129f21df9a55486b88786de0898baf09d4cb75ff034ed2c6fe73893b1",
-    "chapters/D50/D50_d.html": "4da171fd0916bb5bceb6a3aea525559a99acbf41db3a0be5a92244b0c2cb3664",
-    "chapters/D50/D50_pop1.html": "7750306d3772144c2a27c839adf3f4ec3fd07f68839f60c8b896336b9a7e3ea1",
-    "chapters/D50/D50_pop2.html": "4d949acc39d0e7e8e622b9b71f5f6c5f6bb85ac007e1f5e9a623fa470acef2bb",
-    "glossary/d50.py": "eb855036ca82b9887b0f55a32b69e6346ac8be4b955225cdb44c42bf48c0daca"
+    "chapters/D50/D50_a.html": "ec7a387ddbe40fa741272a4f6c730e54e55048349539e1faa99fc8c7151a2a0d",
+    "chapters/D50/D50_b.html": "5563a482609e0d4c8673f60e7d69a1432d013d7e0ca94b2a2b609e71de24e61a",
+    "chapters/D50/D50_c.html": "75e2d88608c0ec6dbe8c69ed922268cc97f8229b03af38d6fc88cef305b2e1b2",
+    "chapters/D50/D50_d.html": "1769f7e808eb632c6cdc4948898d6d8c2be2851b45a8f0a5d53462dd3f9cac2f",
+    "chapters/D50/D50_pop1.html": "3280813d6bf5f4f4e6e50d5c983f15b2539e56d3fb2cb691f6a1c6cd02e30766",
+    "chapters/D50/D50_pop2.html": "4122c0ad363deb4661c183a8ce018780af85e116ecf5181e79830a5f676c0e06",
+    "glossary/d50.py": "13c1e24b3c148a299cd9a6c112bcd5a7e839a50a7edc9427ebf51a8835fd80e2"
   },
   "result": "passed",
   "desktop": true,
@@ -24,145 +24,115 @@
     {
       "kind": "opening",
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-1-ouverture.png",
-      "sha256": "ba3ee91076bbafa1a1861d6d2c4a83a943697d9e42338d587d26f7ee0b912c29",
-      "visually_inspected": true
+      "sha256": "25340c83aeb4e6d4c81f94f2951d0bb73c1e64da0436ddd5ab3678569bb235b2",
+      "actually_viewed": true
     },
     {
       "kind": "explanation",
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-2-explication.png",
       "sha256": "df70c5a562e95d5e68b6170f8f3ebc663db154914c4696361bbe723bcbbf3af9",
-      "visually_inspected": true
+      "actually_viewed": true
     }
   ],
-  "commands": [
-    {
-      "command": [
-        "python3",
-        "build_front.py",
-        "--fragment",
-        "S06"
-      ],
-      "cwd": "/workspace/work/d50-render",
-      "environment": {
-        "MEDINA_OUT": "/workspace/work/d50-render-out",
-        "MEDINA_CHROMIUM": "/usr/bin/chromium"
-      },
-      "started_at": "2026-10-11T19:15:29.380741+00:00",
-      "finished_at": "2026-10-11T19:15:31.912456+00:00",
-      "exit_code": 0,
-      "log_path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/logs/construction_S06_finale.log",
-      "log_sha256": "9f62b5550aa97b8b908e2ee9360df712f84c4722c7e4d3d683e7262edd008b6b"
-    },
-    {
-      "command": [
-        "python3",
-        "build_medina.py",
-        "D50"
-      ],
-      "cwd": "/workspace/work/d50-render",
-      "environment": {
-        "MEDINA_OUT": "/workspace/work/d50-render-out",
-        "MEDINA_CHROMIUM": "/usr/bin/chromium"
-      },
-      "started_at": "2026-10-11T19:15:31.912624+00:00",
-      "finished_at": "2026-10-11T19:16:00.878142+00:00",
-      "exit_code": 0,
-      "log_path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/logs/construction_D50_finale.log",
-      "log_sha256": "2daef4b93a76f530ac063c10ce47c3e288f69d871496430cad6d96539e512555"
-    },
-    {
-      "command": [
-        "python3",
-        "test_v7.py",
-        "--url",
-        "http://127.0.0.1:8794/fragments/MEDINA_S06_hematopoietique-lymphatique.html",
-        "D50"
-      ],
-      "cwd": "/workspace/work/d50-render",
-      "environment": {
-        "MEDINA_OUT": "/workspace/work/d50-render-out",
-        "MEDINA_CHROMIUM": "/usr/bin/chromium"
-      },
-      "started_at": "2026-10-11T19:16:00.878276+00:00",
-      "finished_at": "2026-10-11T19:16:23.602398+00:00",
-      "exit_code": 0,
-      "log_path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/logs/test_v7_D50_final.log",
-      "log_sha256": "59bef210c9de2480ea1069ed663768a2744d176f5ad4e1e5e605c25d018c698d"
-    }
-  ],
+  "commands": {
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/commandes_techniques_finales.json",
+    "sha256": "db87239512dc035a3fc63e760d6669add78e9c85101fac067d3eb6647b4ac484",
+    "explanation": "Commandes réellement exécutées, codes de retour et sorties après les dernières modifications."
+  },
   "browser_proof": {
-    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controles_navigateur.json",
-    "sha256": "ecb44cb11e2b0a69153cb27238fa235066343384ecda89a90dd7a2a5d3411b53"
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controles_navigateur_apres_P1.json",
+    "sha256": "2afd99e231017c9d52dab0746415d1fc0f57432925c6375f7e655e1cee7a81a2",
+    "explanation": "Parcours réel complet ordinateur/mobile ; 71 fenêtres, 17 définitions, cinq quiz, cinq SVG, quatre onglets et quatre sciences."
   },
   "render_binding": {
     "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/liaison_sources_rendu.json",
-    "sha256": "72ae89c7fb1ecdc9309f32750f1e80b9823693c622d9012621910ac5916e6f1e"
+    "sha256": "c586a005b271c99166ef58d9acdcc2c387e52d7eac7b4d999bb9a5fbbb55c212",
+    "explanation": "Sept fichiers scratch identiques aux sept SHA livrés ; payload décompressé complet identique et SHA du fichier réellement servi par HTTP."
   },
   "capture_metadata": {
     "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/captures.json",
-    "sha256": "eeaf3666da8f54f2119a68bc571351c751cca2065aa32ac61b8544ef06b3e928"
+    "sha256": "b636f62cc5b6122526ca246d811dddabe1923b4f1d0e1c6419e188348617884b",
+    "explanation": "Deux PNG officiels sur cette même URL réelle, ensuite inspectés."
   },
   "structure_proof": {
     "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controle_structure_auteur.json",
-    "sha256": "eb628169350cae066635955c38a3758176eea2cf54d0e61e2f4bd0e686d987bb"
+    "sha256": "39c8c1ccb95c82456faf43b64f609a290cf1efbeb483849c3f7decc3eb669b66",
+    "explanation": "Structure monographique, fin alert/key, trois quiz Examens et dix Pareto."
   },
-  "gauges": {
-    "pathologies_frequentes": "Contour et rail blancs, appearance:none ; vérification réelle et capture inspectée.",
-    "examen_federal": "Contour et rail blancs, appearance:none ; vérification réelle et capture inspectée.",
-    "proof": {
-      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-jauges-blanches.png",
-      "sha256": "058cd7c06f8811dbb6e18ba7802ff485c42decfaaac4f2a85bfcd8db4b22e692"
+  "gauges": [
+    {
+      "filter": "frequent",
+      "appearance": "none",
+      "border": "rgb(255, 255, 255)",
+      "background": "rgb(255, 255, 255)",
+      "width": 201
     },
-    "numerators": "La copie de contrôle ne constitue aucune injection ; les jauges canoniques ne sont pas incrémentées."
-  },
+    {
+      "filter": "federal_exam",
+      "appearance": "none",
+      "border": "rgb(255, 255, 255)",
+      "background": "rgb(255, 255, 255)",
+      "width": 201
+    }
+  ],
   "additional_captures": [
     {
-      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-frottis-mobile.png",
-      "sha256": "54170096eed7860d68bb6c9b3481f9ede7800ba58542b142ee8ea74938d8bc5b"
-    },
-    {
-      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-jauges-blanches.png",
-      "sha256": "058cd7c06f8811dbb6e18ba7802ff485c42decfaaac4f2a85bfcd8db4b22e692"
-    },
-    {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-1440-cours.png",
-      "sha256": "7212af50d09761cc1ea34dbc20687420623ae9a77a1b09fc2eb7a57104745161"
+      "sha256": "63a1d1023efefdb95a900c0357ffea3185b6a2c1a0c5104312c931ef05b8df64",
+      "actually_viewed": true
     },
     {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-390-cours.png",
-      "sha256": "4a114575263a415aec11c68087adb0078d6131c37469c8d248a3fb8f1f4a2506"
+      "sha256": "00ebfa11ac1221abbbe9104cdcafe1c32eb6fda61defad5ec9d0c3938efd5998",
+      "actually_viewed": true
+    },
+    {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-d-sels-apres-P1.png",
+      "sha256": "e3c83a2d940369dc059b03be663e1fa6d6a10ed76d41bc175f423511b0589de9",
+      "actually_viewed": true
+    },
+    {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-d-polymaltose-apres-P1.png",
+      "sha256": "5d2d1334513d0fb990aeefd5062f267c028fc7e0718e32f696d7bbe051f41921",
+      "actually_viewed": true
+    },
+    {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-anti-inflammatoires-apres-P1.png",
+      "sha256": "0a983c3086a7c8c2258bead8729c892b5d8582cad52b1fdf4f8caae9cd3a161f",
+      "actually_viewed": true
+    },
+    {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-proteine-c-reactive-apres-P1.png",
+      "sha256": "380432b651bf89b0501390a1fead3811fd629eb86e71586de77fc820db574f8d",
+      "actually_viewed": true
+    },
+    {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-voie-hepatique-hepcidine-apres-P1.png",
+      "sha256": "8f2a603e535edb65204383f6e2be6def009b723abb0bfd2ce8f924aac53d06e7",
+      "actually_viewed": true
+    },
+    {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures/d50-ferritine-apres-P1.png",
+      "sha256": "912d399aa94dc85905bdb73d94d931cade9b7dda9f62a82d8c05d645c76661d2",
+      "actually_viewed": true
     }
   ],
-  "capture_command": {
-    "command": [
-      "python3",
-      "tools/capture_lecon.py",
-      "--html",
-      "/workspace/work/d50-render-out/fragments/MEDINA_S06_hematopoietique-lymphatique.html",
-      "--url",
-      "http://127.0.0.1:8794/fragments/MEDINA_S06_hematopoietique-lymphatique.html",
-      "--browser-executable",
-      "/usr/bin/chromium",
-      "--output",
-      "/workspace/work/medina-cycle1/livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/captures",
-      "D50"
-    ],
-    "cwd": "/workspace/work/d50-render",
-    "exit_code": 0,
-    "observed_stdout": "D50 : 2 captures",
-    "captured_at_utc": "2026-10-11T19:16:23.461956+00:00"
-  },
   "lesson_statistics": {
-    "words_official_test": 24616,
-    "windows": 68,
+    "words": 25462,
+    "windows": 71,
     "quiz": 5,
+    "exams_quiz": 3,
     "pareto": 10,
-    "science_svg": 4,
-    "all_svg": 5
+    "figures": 5,
+    "loaded_glossary": 17
+  },
+  "cycle_css": {
+    "path": "engine/tetrade_cycle.css",
+    "sha256": "d5f4f5745b4a58e00f5bc0de318211441d9e1926e5660dea01d940c7d31e0ca2",
+    "explanation": "CSS actuelle d5f4f574..., réellement utilisée par ce rendu ; h3 de six fenêtres ciblées rouge rgb(179,38,30)."
   },
   "limitations": [
-    "Les erreurs d’abréviations antérieures J44:ZZ, J96:spO₂ et I51:NEJMoa1406761 ont été affichées par la construction globale ; D50 compte zéro abréviation non couverte. Elles ne sont pas déclarées corrigées.",
-    "Le contrôle technique est réalisé sur une copie HTTP isolée, pas sur le site public ; publication et relecture publiques appartiennent aux étapes ultérieures.",
-    "Ces contrôles techniques et la revue auteur IA ne constituent ni audit indépendant ni validation médicale humaine."
+    "Les captures historiques d50-frottis-mobile.png et d50-jauges-blanches.png antérieures à P1 ne fondent pas ce contrôle final.",
+    "Tests techniques et relecture auteur IA ; aucune validation médicale humaine ni seconde passe indépendante."
   ]
 }
