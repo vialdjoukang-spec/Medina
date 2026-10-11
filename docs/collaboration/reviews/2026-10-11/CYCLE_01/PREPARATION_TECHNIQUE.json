@@ -23,11 +23,10 @@
     {
       "command": "python3 -m unittest discover -s tests",
       "result": "passed",
-      "count": 274,
-      "limitation": "Exécution précédente à 16 tests du nouveau cycle ; dix tests de contrat supplémentaires ont ensuite passé dans la suite ciblée à 26 tests."
+      "count": 284
     },
     {
-      "command": "python3 build_fragments.py",
+      "command": "MEDINA_OUT=/workspace/work/cycle1-preparation-dist python3 build_front.py --all-fragments",
       "result": "passed",
       "fragments": 23
     },
