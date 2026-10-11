@@ -189,7 +189,7 @@ def ready_fragment(tree, fragment):
     return files
 
 
-def swiss_context_proof(tree, audit, ident, final):
+def swiss_context_proof(tree, audit, ident, final, scope="fragment_complet", chapter_code=None):
     """Require a reviewed, source-bound Swiss decision matrix before final audit.
 
     This checks the evidence contract, not the medical truth of quotations or
@@ -202,10 +202,15 @@ def swiss_context_proof(tree, audit, ident, final):
                          f"{ident} matrice du contexte suisse")
     matrix = json_data(raw, f"{ident} matrice du contexte suisse")
     if (not isinstance(matrix, dict) or matrix.get("schema_version") != 1 or
-            matrix.get("fragment_id") != ident or matrix.get("scope") != "fragment_complet" or
+            matrix.get("fragment_id") != ident or matrix.get("scope") != scope or
             matrix.get("source_files") != final or matrix.get("unresolved_divergences") != []):
         raise FragmentError(f"{ident} : matrice suisse incomplète, non liée aux sources finales ou divergence ouverte.")
     decisions = matrix.get("decisions")
+    if scope == "chapter" and matrix.get("chapter_code") != chapter_code:
+        raise FragmentError(f"{ident} : matrice suisse du chapitre incorrecte.")
+    origins = {"swiss", "european", "american"}
+    if scope == "chapter":
+        origins.add("international")
     if not isinstance(decisions, list) or not decisions:
         raise FragmentError(f"{ident} : aucune décision clinique dans la matrice suisse.")
     chapters = {m.group(1) for path in final
@@ -223,10 +228,12 @@ def swiss_context_proof(tree, audit, ident, final):
                 not isinstance(row.get("claim"), str) or not row["claim"].strip() or
                 row.get("auditor_verdict") != "conforme" or
                 row.get("divergence_status") not in {"none", "resolved"} or
-                row.get("initial_primary_origin") not in {"swiss", "european", "american"} or
-                row.get("final_primary_origin") not in {"swiss", "european", "american"}):
+                row.get("initial_primary_origin") not in origins or
+                row.get("final_primary_origin") not in origins):
             raise FragmentError(f"{ident} : décision suisse non documentée ou non conforme : {key!r}.")
         identifiers.add(key)
+        if scope == "chapter" and row["final_primary_origin"] == "american":
+            raise FragmentError(f"{ident} : recommandation américaine interdite comme fondement du cycle.")
         documented.add(code)
         swiss = row.get("swiss_guideline")
         required = ("organization", "title", "url", "version_date", "section", "passage")
@@ -245,7 +252,7 @@ def swiss_context_proof(tree, audit, ident, final):
             raise FragmentError(f"{ident} : sources étrangères non documentées : {key!r}.")
         foreign_origins = set()
         for source in foreign:
-            if (not isinstance(source, dict) or source.get("origin") not in {"european", "american"} or
+            if (not isinstance(source, dict) or source.get("origin") not in origins - {"swiss"} or
                     any(not isinstance(source.get(field), str) or not source[field].strip()
                         for field in required) or not source["url"].startswith("https://")):
                 raise FragmentError(f"{ident} : source étrangère imprécise : {key!r}.")
@@ -313,7 +320,15 @@ def validate_fragment_guard(before, after):
                 any(fragment[key] is not None for key in ("internal_review", "cross_audit", "injection"))):
             raise FragmentError(f"{ident} : un fragment ajouté doit être à l'état initial.")
     new = {ident: fragment for ident, fragment in new.items() if ident not in added}
-    authorized = {}
+    try:
+        from tetrade_cycle import validate_cycle_guard, CycleError
+    except ModuleNotFoundError:
+        from tools.tetrade_cycle import validate_cycle_guard, CycleError
+    try:
+        cycle_authorized, cycle_codes = validate_cycle_guard(before, after)
+    except CycleError as error:
+        raise FragmentError(str(error)) from error
+    authorized = dict(cycle_authorized)
     locked = {}
     errors = []
     for ident, fragment in new.items():
@@ -386,7 +401,8 @@ def validate_fragment_guard(before, after):
         return json.loads(raw.decode("utf-8")) if raw else None
     try:
         for path, digest in claude_guard(registry(before), registry(after), changed_medical, after.read).items():
-            if path not in locked:
+            cycle_path = any(path.startswith(f"chapters/{code}/") or path == f"glossary/{code.lower()}.py" for code in cycle_codes)
+            if path not in locked and not cycle_path:
                 authorized.setdefault(path, digest)
     except ValueError as error:
         raise FragmentError(str(error)) from error

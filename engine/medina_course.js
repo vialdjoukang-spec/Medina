@@ -49,7 +49,7 @@ function MC_navigoMount(m){
  return refresh;
 }
 function MEDINA_mount(){MC_badges();MC_navigoDestroy();if(MC_SIZE_CLEANUP){MC_SIZE_CLEANUP();MC_SIZE_CLEANUP=null}
- const m=document.querySelector('.mc');if(!m)return;const code=m.dataset.code;
+ const m=document.querySelector('.mc');document.documentElement.dataset.medinaActiveCycle=(window.MEDINA_CYCLE_COURSES||[]).includes(m?.dataset.code)?'1':'';if(!m)return;const code=m.dataset.code;
  let navRefresh=()=>{};
  const applyFont=()=>{const f=MC.store.get('font.'+code,MC.store.get('font.default',"'Atkinson Hyperlegible Next','Atkinson Hyperlegible',system-ui,sans-serif"));const s=Math.min(24,Math.max(14,Number(MC.store.get('fs.'+code,17))||17));m.style.setProperty('--mc-font',f);m.style.setProperty('--mc-fs',s+'px');m.style.setProperty('--mc-scale',(s/17).toFixed(3));m.querySelector('.mc-font').value=f;m.querySelector('.mc-size-range').value=s;m.querySelector('.mc-size-value').textContent=s+' px';document.documentElement.style.setProperty('--mc-font',f);document.documentElement.style.setProperty('--mc-scale',(s/17).toFixed(3));navRefresh()};
  m.querySelector('.mc-font').onchange=ev=>{MC.store.set('font.'+code,ev.target.value);MC.store.set('font.default',ev.target.value);applyFont()};
@@ -79,7 +79,7 @@ function MEDINA_mount(){MC_badges();MC_navigoDestroy();if(MC_SIZE_CLEANUP){MC_SI
 }
 function MC_quiz(root){root.querySelectorAll('.mc-quiz').forEach(q=>q.querySelectorAll('.mc-opt').forEach(o=>o.onclick=ev=>{if(ev.target.closest('[data-ab]'))return;q.querySelectorAll('.mc-opt').forEach(x=>x.classList.toggle('ok',x.dataset.ok==='1'));if(o.dataset.ok!=='1')o.classList.add('ko');const fb=q.querySelector('.mc-fb');if(fb)fb.hidden=false}))}
 /* fenêtres */
-const MC_DLG=(()=>{const d=document.createElement('dialog');d.className='mc-dlg';d.setAttribute('aria-labelledby','mc-dlg-t');
+const MC_DLG=(()=>{const d=document.createElement('dialog');d.id='mc-dialog';d.className='mc-dlg';d.setAttribute('aria-labelledby','mc-dlg-t');
  d.innerHTML='<div class="mc-dlg-h"><h3 id="mc-dlg-t"></h3><button class="mc-back" hidden>← Retour</button><button class="mc-x" aria-label="Fermer">Fermer ✕</button></div><div class="mc-dlg-b"></div>';document.body.appendChild(d);return d})();
 let MC_stack=[],MC_trigger=null;
 const MC_KEYS=Object.keys(MC_GLOSS).sort((a,b)=>b.length-a.length).map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));

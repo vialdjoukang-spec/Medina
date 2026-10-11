@@ -10,6 +10,15 @@ STAGES = {"writing", "review", "checks", "integration", "blocked"}
 
 
 def validate_plan(plan, registry, category_owners=None, courses=None, titles=None):
+    scoped = plan.get("scoped_protocols", [])
+    if scoped:
+        expected = [{"protocol": "tetrade-chapitres-2026-10-11", "fragment_ids": ["S08", "S05", "S04", "S06"],
+                     "authorized_cycles": [1], "status_registry": "organisation/tetrade_cycle_status.json",
+                     "instruction_file": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+                     "delivery_unit": "chapter", "cross_audit_passes": 2, "counter_audit_passes": 2,
+                     "max_parallel_workers": 4, "sequential_injection": True}]
+        if scoped != expected:
+            raise ValueError("Protocole ciblé : seule la tétrade et le cycle 1 explicites sont autorisés.")
     if plan.get("assignment_unit") != "fragment":
         raise ValueError("La répartition attribue des fragments entiers à leurs responsables.")
     names = {fragment["id"]: fragment for fragment in registry}
@@ -88,4 +97,6 @@ def load_plan(root, category_owners=None):
 
 if __name__ == "__main__":
     plan, assignments = load_plan(Path(__file__).resolve().parents[1])
-    print(f"OK : {len(assignments)} attributions ; Claude 11 / Codex 10 ; remise par fragment entier, un audit croisé, HTML clair.")
+    print(f"OK : {len(assignments)} attributions historiques ; Claude 12 / Codex 10 ; HTML clair.")
+    if plan.get("scoped_protocols"):
+        print("Tétrade active : cycle 1 seulement, quatre chapitres, deux passes croisés puis deux contre-audits différés ; injections successives contrôlées.")

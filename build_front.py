@@ -139,6 +139,8 @@ try:
         # Insigne « 100 % rédigé » : seuls les chapitres de DONE_COURSES (audités), distincts des chapitres intégrés.
         assert '<script>window.MEDINA_ALIAS=' in s
         s=s.replace('<script>window.MEDINA_ALIAS=','<script>window.MEDINA_COMPLETE='+json.dumps(completed)+';</script><script>window.MEDINA_ALIAS=',1)
+        cycle_courses=[c['code'] for c in chap if c.get('production_cycle')==1]
+        s=s.replace('</head>','<script>window.MEDINA_CYCLE_COURSES='+json.dumps(cycle_courses)+'</script></head>',1)
         s=s.replace('</head>','<style id="medina-polish">'+open(ROOT+'/shell/polish.css').read()+'</style></head>',1)
         ecg=open(ROOT+'/modules/ecg.json').read() if not selected or fragment['id']=='S01' else '[]'
         polish=open(ROOT+'/shell/polish.js').read()
@@ -155,6 +157,8 @@ try:
             with open(ROOT+'/'+font_path,'rb') as font:
                 typography=typography.replace('../'+font_path,'data:font/woff2;base64,'+base64.b64encode(font.read()).decode())
         s=s.replace('</head>','<style id="medina-typography">'+typography+'</style></head>',1)
+        cycle_style=open(ROOT+'/engine/tetrade_cycle.css',encoding='utf-8').read()
+        s=s.replace('</head>','<style id="medina-tetrade-cycle">'+cycle_style+'</style></head>',1)
         if selected:
             present={c['code'] for c in chap}
             absent={c['code'] for c in cfg}-present

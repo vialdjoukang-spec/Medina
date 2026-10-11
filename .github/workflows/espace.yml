@@ -23,6 +23,8 @@ jobs:
           python-version: '3.x'
       - name: Vérifier les refus et les verrous des fragments
         run: python3 -m unittest discover -s tests -p test_espace_fragments.py
+      - name: Vérifier les gardes du cycle autorisé
+        run: python3 -m unittest discover -s tests -p test_tetrade_cycle.py
       - name: Refuser une injection prématurée ou une réouverture
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
