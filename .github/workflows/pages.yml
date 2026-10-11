@@ -60,6 +60,10 @@ jobs:
           # Plan demandé par Vial : PDF, HTML autonome et données de planification.
           mkdir -p _site/progression
           cp organisation/progression/plan-tetrade-30-cycles.* _site/progression/
+          # Dossier photographique demandé par Vial, distinct des injections médicales.
+          if test -d organisation/progression/cycle-1-captures; then
+            cp -R organisation/progression/cycle-1-captures _site/progression/
+          fi
       - name: Installer Chromium pour contrôler les cours en rédaction
         run: |
           python -m pip install playwright==1.55.0 Pillow==11.3.0

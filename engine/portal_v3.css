@@ -116,3 +116,6 @@ html body .overview{background:linear-gradient(120deg,#1e88e5,#1fbf8f 60%,#ffc93
 /* Jauges : valeur absolue et relative entre parenthèses (09.10.2026). */
 .gauge{grid-template-columns:minmax(64px,auto) minmax(60px,1fr) auto!important}
 html body .gauge-value{white-space:nowrap;font-size:11.5px}
+/* Vial : contours blancs pour les jauges de fréquence et d'examen fédéral. */
+html body .specialty-card .gauges > .gauge:nth-child(-n+2) .gauge-track{border-color:#fff!important}
+html body .specialty-card .gauges > .gauge:nth-child(-n+2) .gauge-fluid{border-right-color:#fff!important}
