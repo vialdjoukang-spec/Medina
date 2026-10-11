@@ -1,3 +1,7 @@
+## Nouvelle planification de Vial — tétrade, 11 octobre 2026
+
+[Plan de 30 cycles, PDF et HTML interactif](instructions/TETRADE_30_CYCLES_VIAL_2026-10-11.md) pour Neurologie, Endocrinologie et métabolisme, Néphrologie et Hématologie, confirmées par sa pièce jointe. La nouvelle chaîne par chapitre s’applique à cette tétrade ; les exigences médicales du Prompt sont conservées. Cette livraison est un plan ; aucune mission médicale n’est démarrée.
+
 ## INSTRUCTION PRINCIPALE — Claude Leader, 8 octobre 2026
 
 **Audit interne Claude (section 13)** : quatre dimensions obligatoires — esthétique et rédaction, exactitude médicale, exactitude des sources, frontend local agréable — et **deux audits successifs pour valider chaque catégorie** avant injection et scellement.

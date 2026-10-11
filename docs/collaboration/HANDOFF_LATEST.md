@@ -1,3 +1,9 @@
+## Plan de progression lente de la tétrade — 11 octobre 2026
+
+La pièce jointe de Vial confirme **Neurologie, Endocrinologie et métabolisme, Néphrologie, Hématologie**. Le plan comprend **30 cycles, 120 missions et l’inventaire des 270 catégories**, avec reprise des brouillons E11 et D50. Les auteurs, binômes croisés et contre-auditeurs différés sont nommés par cycle ; Codex contrôle puis prévoit quatre injections successives. Les missions ne sont pas lancées. [Instruction](instructions/TETRADE_30_CYCLES_VIAL_2026-10-11.md) · [reçu et contrôles](receipts/PLAN_TETRADE_30_CYCLES_2026-10-11.json).
+
+Livrables : `organisation/progression/plan-tetrade-30-cycles.html`, `.pdf` et `.json` ; PDF paginé de 51 pages, un cycle par page, annexe exhaustive, police Atkinson embarquée, aucun bleu, barrières rouges de cinq millimètres. Les cases du HTML restent locales, avec export/import et verrous de dépendances. Contrôles : **258 tests Python OK**, ordinateur/mobile sans bleu ni débordement, progression des 120 missions et des 30 clôtures, refus d’un import qui saute les étapes, réouverture des dépendances, 30 barrières PDF mesurées exactement à 5 mm. Aucune source médicale modifiée, aucun audit médical ni injection de cours. Les anciennes gardes devront être adaptées et testées avant le premier cycle médical. Le workflow Pages assemble les trois fichiers sous `progression/` ; le lien figure sur l’accueil.
+
 ## Contours blancs des jauges — 11 octobre 2026
 
 À la demande de Vial, les barres « Pathologies fréquentes » et « Examen fédéral » portent un contour blanc de 1 px, avec suppression de leur ombre. Les 254 tests Python, la construction des 23 fragments et 64 vérifications navigateur passent : quatre spécialités, ordinateur/mobile, états normal, survol, focus et sélection. Les filtres restent opérationnels et les fractions inchangées. [Reçu](receipts/JAUGES_CONTOURS_BLANCS_2026-10-11.json). Publication à vérifier après fusion.
