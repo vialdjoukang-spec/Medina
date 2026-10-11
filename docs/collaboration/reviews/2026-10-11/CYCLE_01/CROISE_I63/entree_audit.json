@@ -1,0 +1,129 @@
+{
+  "code": "I63",
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "medical_human_validation": false,
+  "verdict": "conforme",
+  "checked_at": "2026-10-11T19:38:06.106392+00:00",
+  "prompt_files": {
+    "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
+    "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+    "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+    "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+  },
+  "checks": [
+    {
+      "id": "autorisation",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_I63/preparation_mission.json",
+          "sha256": "03f8a4e4ff97082a7829bc44ef7e4dea9d34bafa1efcf5421b2023babd570ce3",
+          "explanation": "Le lancement explicite du cycle 1 et le binôme désignent C01-R-HEM comme auditeur I63. Aucun droit de modification des sources ne découle de cette mission."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Autorité du cycle et attribution du binôme."
+        }
+      ]
+    },
+    {
+      "id": "perimetre_provenance",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_I63/preparation_mission.json",
+          "sha256": "03f8a4e4ff97082a7829bc44ef7e4dea9d34bafa1efcf5421b2023babd570ce3",
+          "explanation": "Remise identifiée au commit d63d84cb, SHA du rapport auteur confirmé et sept sources hashées. L’audit porte sur cette remise, sans production d’un doublon."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Autorité du cycle et attribution du binôme."
+        }
+      ]
+    },
+    {
+      "id": "sources_lues",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_I63/preparation_mission.json",
+          "sha256": "03f8a4e4ff97082a7829bc44ef7e4dea9d34bafa1efcf5421b2023babd570ce3",
+          "explanation": "Les 21 fichiers du registre primaire existent et leur SHA concorde. Aucun jugement médical n’est produit avant lecture de son passage ; les consultations restent à faire dans la passe. Ceci vérifie la méthode d’entrée, pas le contenu clinique."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Autorité du cycle et attribution du binôme."
+        }
+      ]
+    },
+    {
+      "id": "contexte_suisse",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_I63/preparation_mission.json",
+          "sha256": "03f8a4e4ff97082a7829bc44ef7e4dea9d34bafa1efcf5421b2023babd570ce3",
+          "explanation": "Contrat suisse réellement relu : recommandations spécialisées d’abord, FI du produit exact, passages/populations/versions et arbitrages indépendants obligatoires."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Autorité du cycle et attribution du binôme."
+        }
+      ]
+    },
+    {
+      "id": "independance",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_I63/preparation_mission.json",
+          "sha256": "03f8a4e4ff97082a7829bc44ef7e4dea9d34bafa1efcf5421b2023babd570ce3",
+          "explanation": "C01-R-HEM /root/c01_r_hem est distinct de C01-R-NEUR /root/c01_r_neur ; aucun raisonnement privé de l’auteur n’est consulté. L’auteur seul corrige son texte."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Autorité du cycle et attribution du binôme."
+        }
+      ]
+    },
+    {
+      "id": "contrat_cours",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_I63/preparation_mission.json",
+          "sha256": "03f8a4e4ff97082a7829bc44ef7e4dea9d34bafa1efcf5421b2023babd570ce3",
+          "explanation": "Les obligations de relecture intégrale des sept sources et surfaces, quatre dimensions, deux passes et tests ciblés sur rendu actuel sont explicitement appliquées à I63."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Autorité du cycle et attribution du binôme."
+        }
+      ]
+    },
+    {
+      "id": "honnetete",
+      "status": "conforme",
+      "evidence": [
+        {
+          "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_I63/preparation_mission.json",
+          "sha256": "03f8a4e4ff97082a7829bc44ef7e4dea9d34bafa1efcf5421b2023babd570ce3",
+          "explanation": "L’entrée autorise une enquête indépendante, sans score ni verdict sur le chapitre. Les passages non vérifiés resteront réserves ; revue IA distincte de validation médicale humaine."
+        },
+        {
+          "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+          "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+          "explanation": "Autorité du cycle et attribution du binôme."
+        }
+      ]
+    }
+  ],
+  "scope_note": "Application vérifiée de la méthode avant première action d’audit ; aucun résultat clinique anticipé."
+}
