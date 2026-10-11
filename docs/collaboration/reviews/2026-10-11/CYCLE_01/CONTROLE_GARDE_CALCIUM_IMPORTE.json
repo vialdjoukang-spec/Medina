@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "cycle": 1,
+  "actor": "Codex — coordinateur du fil",
+  "runtime_agent_id": "/root",
+  "checked_at": "2026-10-11T19:11:29.356446+00:00",
+  "scope": "Adaptation documentaire explicitement demandée ; contrôle de garde informatique, pas audit clinique",
+  "authority": {
+    "path": "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md",
+    "sha256": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706"
+  },
+  "allowed_import": {
+    "chapter_code": "N17",
+    "fragment_id": "S04",
+    "product_name": "Calciumgluconat B. Braun 10 % Injektionslösung",
+    "origin": "DE",
+    "status": "import_hospitalier",
+    "swiss_authorization_number": null
+  },
+  "tested_guards": [
+    "refus autre chapitre ou fragment entier",
+    "refus autre spécialité ou présentation",
+    "refus autorisation suisse fictive",
+    "refus source hospitalière ou document lu non attesté",
+    "refus FI d’un autre produit",
+    "refus absence d’arbitrage ou statut d’indication",
+    "refus instruction modifiée/supprimée",
+    "lecture du complément exigée aux deux portes N17",
+    "divergence non résolue toujours bloquante",
+    "FI suisses normales toujours obligatoires pour les autres produits"
+  ],
+  "code_sha256": {
+    "tools/n17_calcium_import.py": "c06662344e2e8fdc689e93e0c0dcf74343b99d11a62bb1ab7e18eb49fef6b77e",
+    "tools/espace.py": "fdc94dca0561d95cb5dfaa8d25961373e43f19c488f88bc1d8d7772826f01e8c",
+    "tools/tetrade_cycle.py": "35207e55b4d97759811c2a0a24a5823cdbdb85bb4edfd225a1ec66949dd69f4a",
+    "tests/test_n17_calcium_import.py": "034ab044c43c29c1af10360b186b09e8a2324fe250c83f02e088c0b8493a2772",
+    "test_v7.py": "81279818877b99e7558c462f0db39871e884e4db1f605817fc30e806f11ae632"
+  },
+  "tests": {
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "count": 295,
+    "duration_seconds": 79.988,
+    "exit_code": 0,
+    "result": "OK",
+    "log": {
+      "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/tests-garde-calcium-import.log",
+      "sha256": "269a08a6d8d008f658bb717e68a5556bcd045de783fcc9355819b361b3e6b322"
+    }
+  },
+  "canonical_medical_sources_modified": false,
+  "medical_human_validation": false,
+  "calcium_regimen_validated_by_this_check": false,
+  "cycle_control_completed": false,
+  "chapters_injected": 0,
+  "cycle_2_authorized": false,
+  "public_photography": {
+    "report_path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/PHOTOGRAPHIES_PUBLIQUES/verification_publication.json",
+    "sha256": "84d81a1d22720ee7b0d162a973167c2bbb8ed054eb9ca592ef47e8d116713d39",
+    "note": "28 captures et PDF de30 pages vérifiés sur le déploiement973389 ; favicon automatique404 consigné, sans échec de galerie."
+  }
+}
