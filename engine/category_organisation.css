@@ -187,7 +187,8 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medi
    hover and selected states. The progress track keeps its existing fill. */
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter],
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter] :is(span,b){color:#075ab5!important;text-decoration:none!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;text-shadow:0 1px 0 #fff,0 1px 1px #0b254524}
-.nosology-progress[data-mcg-filter] progress{border:0;border-radius:3px;box-shadow:inset 0 1px 2px #0b254530,0 1px 0 #ffffffb3}
+/* White outlines on the two curriculum filter bars, in every interaction state. */
+.nosology-progress[data-mcg-filter] progress{border:1px solid #fff;border-radius:3px;box-shadow:none}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter]:hover,
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nosology-progress[data-mcg-filter]:hover :is(span,b){text-shadow:0 1px 0 #fff,0 2px 2px #0b254530}
 .nosology-progress[data-mcg-filter]:focus-visible{outline:3px solid #1e88e5;outline-offset:3px}

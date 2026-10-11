@@ -1,3 +1,7 @@
+## Contours blancs des jauges — 11 octobre 2026
+
+À la demande de Vial, les barres « Pathologies fréquentes » et « Examen fédéral » portent un contour blanc de 1 px, avec suppression de leur ombre. Les 254 tests Python, la construction des 23 fragments et 64 vérifications navigateur passent : quatre spécialités, ordinateur/mobile, états normal, survol, focus et sélection. Les filtres restent opérationnels et les fractions inchangées. [Reçu](receipts/JAUGES_CONTOURS_BLANCS_2026-10-11.json). Publication à vérifier après fusion.
+
 ## Jauges de catégories et filtres bleus — 11 octobre 2026
 
 Les trois tâches de Vial sont réalisées dans l’ordre, avec sept agents au total : deux filtres bleus sans cadre ni soulignement et relief discret, symbole Filtre réduit exactement dix fois ; progression fédérale/globale A/B et pourcentage dans chaque catégorie ; étoiles dorées en exposant après les titres et catégories plus compactes. Les dénominateurs originaux restent stables sous filtrage. Les cartes de la modale utilisent la même présentation. L’aperçu conserve ses regroupements propres grâce à un inventaire temporaire isolé.
