@@ -82,6 +82,25 @@ def gauges(lessons, frequent_codes):
     return {key: progress(selected) for key, selected in category_selections(lessons, frequent_codes).items()}
 
 
+def category_progress(block, inventory_by_code):
+    """Count the original displayed category, including shared canonical courses.
+
+    A course spanning several CIM blocks counts once in each applicable block.
+    Detailed entities remain children, as in the fragment gauges. Filtering the
+    display must not change these original category denominators.
+    """
+    codes = {lesson['code'] for lesson in block['lessons'] if '.' not in lesson['code']}
+    missing = codes - inventory_by_code.keys()
+    if missing:
+        raise ValueError('Leçons canoniques absentes de l’inventaire pour la catégorie '
+                         + str(block['code']) + ' : ' + ', '.join(sorted(missing)))
+    lessons = [inventory_by_code[code] for code in sorted(codes)]
+    return {
+        'federal_exam': progress([lesson for lesson in lessons if lesson['gold_star']['enabled']]),
+        'global': progress(lessons),
+    }
+
+
 def global_gauge(root):
     """Avancement de tout MEDINA, sur les catégories à trois caractères des 22 fragments."""
     lessons = []
@@ -228,6 +247,7 @@ def attach_surface(organisation, root):
         target = fragments[link['fragment']]
         link['url'] = 'MEDINA_' + target['id'] + '_' + target['slug'] + '.html#/entry/' + link['code']
     for block in organisation['blocks']:
+        block['progress'] = category_progress(block, by_code)
         for lesson in block['lessons']:
             shell = by_code.get(lesson['code'])
             if shell:
