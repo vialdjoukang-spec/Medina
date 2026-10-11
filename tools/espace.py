@@ -263,11 +263,21 @@ def swiss_context_proof(tree, audit, ident, final, scope="fragment_complet", cha
             raise FragmentError(f"{ident} : origine étrangère sans passage vérifiable : {key!r}.")
         if kind == "medication":
             documented_drugs.add(code)
-            fi = row.get("swissmedic_product")
-            fields = ("product_name", "authorization_number", "url", "accessed_on", "section", "passage")
-            if (not isinstance(fi, dict) or any(not isinstance(fi.get(field), str) or
-                    not fi[field].strip() for field in fields) or not fi["url"].startswith("https://")):
-                raise FragmentError(f"{ident} : FI Swissmedic du produit exact absente : {key!r}.")
+            if row.get("imported_product") is not None:
+                try:
+                    try:
+                        from n17_calcium_import import validate_product
+                    except ModuleNotFoundError:
+                        from tools.n17_calcium_import import validate_product
+                    validate_product(tree, row, ident, scope, chapter_code)
+                except (ValueError, OSError) as error:
+                    raise FragmentError(str(error)) from error
+            else:
+                fi = row.get("swissmedic_product")
+                fields = ("product_name", "authorization_number", "url", "accessed_on", "section", "passage")
+                if (not isinstance(fi, dict) or any(not isinstance(fi.get(field), str) or
+                        not fi[field].strip() for field in fields) or not fi["url"].startswith("https://")):
+                    raise FragmentError(f"{ident} : FI Swissmedic du produit exact absente : {key!r}.")
         if row["divergence_status"] == "resolved" and not str(row.get("resolution", "")).strip():
             raise FragmentError(f"{ident} : divergence sans arbitrage clinique : {key!r}.")
         if row["final_primary_origin"] != "swiss" and not str(row.get("resolution", "")).strip():

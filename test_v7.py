@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
-"""Contrôles bloquants d'un ou plusieurs chapitres. Usage : python3 test_v7.py [--static] J45 [J44 ...]
+"""Contrôles bloquants d'un ou plusieurs chapitres. Usage : python3 test_v7.py [--static] [--url URL] J45 [J44 ...]
 --static : contrôles du source seulement (sans navigateur).
+--url : frontend construit servi par HTTP(S), lorsque file:// n'est pas accessible.
 Vérifie : abréviations non couvertes, clés de fenêtres, Pareto, rendu, mots verts, onglets, erreurs JavaScript, rendu mobile."""
-import sys,os,re,glob
+import argparse,sys,os,re,glob
 ROOT=os.path.dirname(os.path.abspath(__file__));sys.path.insert(0,ROOT)
 import build_medina as B
 OUT=os.environ.get('MEDINA_OUT','/mnt/user-data/outputs' if os.path.isdir('/mnt/user-data') else ROOT+'/dist')
-STATIC='--static' in sys.argv;CODES=[c for c in sys.argv[1:] if not c.startswith('--')]
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--static',action='store_true')
+parser.add_argument('--url',help='URL HTTP(S) du frontend construit ; les sources sont contrôlées dans ce même dossier de travail.')
+parser.add_argument('codes',nargs='+')
+args=parser.parse_args()
+if args.url and not args.url.startswith(('http://','https://')): parser.error('--url attend une URL HTTP(S)')
+STATIC=args.static;CODES=args.codes
 # I50 est le chapitre modèle, rédigé avant la règle des préfixes : ses clés historiques sont tolérées.
 LEGACY_KEYS={'I50'}
 CLASSES=set('alert card chap chap-body chap-head code fb ilot k key lab maj n next pager panel pareto-btn prev quiz ratio sci sci-bar sci-body src ssp status t tabs toc trap two ui w small'.split())
@@ -31,7 +38,8 @@ for code in CODES:
 if STATIC:
     print('OK' if not fails else 'ECHEC :\n- '+'\n- '.join(fails));sys.exit(1 if fails else 0)
 from playwright.sync_api import sync_playwright
-F='file://'+OUT+'/MEDINA.html'
+F=args.url.split('#',1)[0] if args.url else 'file://'+OUT+'/MEDINA.html'
+print('Frontend réellement contrôlé :',F)
 with sync_playwright() as p:
     exe=os.environ.get('MEDINA_CHROMIUM') or next((x for x in ['/opt/pw-browsers/chromium'] if os.path.exists(x)),None)
     b=p.chromium.launch(**({'executable_path':exe} if exe else {}));er=[]

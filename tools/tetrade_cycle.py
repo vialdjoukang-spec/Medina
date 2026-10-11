@@ -130,6 +130,16 @@ def review(tree, row, key, actor, files):
             f"{row['code']} : identité de {key} ou qualification incorrecte")
     prompt_gate(tree, data.get("entry"), actor, f"{row['code']} {key} entrée")
     prompt_gate(tree, data.get("exit"), actor, f"{row['code']} {key} sortie")
+    if row["code"] == "N17":
+        try:
+            from n17_calcium_import import AUTHORITY as supplement, authority as import_authority
+        except ModuleNotFoundError:
+            from tools.n17_calcium_import import AUTHORITY as supplement, authority as import_authority
+        if tree.read(supplement, required=False) is not None:
+            expected = import_authority(tree)
+            for name in ("entry", "exit"):
+                require(data[name].get("supplemental_prompt_files") == {expected["path"]: expected["sha256"]},
+                        f"N17 {key} : instruction ciblée du calcium non lue à {name}")
     require(dated(data["entry"]["checked_at"]) <= dated(data["exit"]["checked_at"]), "Sortie antérieure à l'entrée")
     require(data.get("final_files") == files and data.get("blocking_reserves") == [], f"{row['code']} {key} : réserves ou empreintes différentes")
     require(isinstance(data.get("runtime_agent_id"), str) and data["runtime_agent_id"], f"{row['code']} : agent réel non identifié")
@@ -228,6 +238,16 @@ def validate_cycle_guard(before, after):
     for key in ("schema_version", "protocol", "cycle", "authorized_cycles", "authority", "coordinator"):
         require(old[key] == new[key], "Autorisation ou identité du cycle modifiée")
     require(before.read(AUTHORITY) == after.read(AUTHORITY), "Autorité du cycle modifiée pendant son exécution")
+    try:
+        from n17_calcium_import import AUTHORITY as supplement, authority as import_authority
+    except ModuleNotFoundError:
+        from tools.n17_calcium_import import AUTHORITY as supplement, authority as import_authority
+    previous_supplement = before.read(supplement, required=False)
+    next_supplement = after.read(supplement, required=False)
+    if previous_supplement is not None:
+        require(previous_supplement == next_supplement, "Instruction ciblée du calcium modifiée ou supprimée")
+    if next_supplement is not None:
+        import_authority(after)
     require(old["state"] != "CLOTURE" or old == new, "Cycle clôturé immuable")
     injected = []
     authorized = {}
