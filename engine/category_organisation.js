@@ -21,15 +21,52 @@
  });
  const own = lesson => lesson.integrated && lesson.source_fragment_id === F.id;
  const available = [...new Map(O.blocks.flatMap(block => block.lessons.filter(own).map(lesson => [lesson.code, {block, lesson}]))).values()];
+ const filterNames = {frequent:'Pathologies fréquentes', federal_exam:'Pathologies Examen Fédéral'};
+ const filterCodes = new Map(Object.entries(O.nosology?.filters || {}).map(([key, codes]) => [key, new Set(codes)]));
+ const activeFilter = () => filterCodes.has(route?.q.get('filter')) ? route.q.get('filter') : '';
+ const included = lesson => !activeFilter() || filterCodes.get(activeFilter()).has(lesson.code);
+ // Project the display only. Canonical lessons, variants and course bodies remain intact.
+ const visibleBlocks = () => activeFilter() ? O.blocks.map(block => ({...block, lessons:block.lessons.filter(included)})).filter(block => block.lessons.length) : O.blocks;
+ const visibleAvailable = () => available.filter(item => included(item.lesson));
+ const filteredUrl = value => {
+  const [path, query = ''] = value.split('?'), params = new URLSearchParams(query);
+  if (activeFilter()) params.set('filter', activeFilter());
+  return path + (params.size ? '?' + params.toString() : '');
+ };
+ const filterNotice = () => activeFilter() ? '<div class="mcg-filter-notice" role="status"><strong>Filtre : ' + h(filterNames[activeFilter()]) + '</strong><a class="mcg-back" href="#/home">← Toutes les leçons</a></div>' : '';
  const pad = value => String(value).padStart(2, '0');
  const name = lesson => lesson.code + ' — ' + lesson.title;
  const gold = lesson => lesson.gold_star?.enabled ? '<span class="nosology-gold" role="img" aria-label="Étoile d’Or permanente · PROFILES SSP ' + h(lesson.gold_star.ssp.join(', ')) + '" title="Lien pédagogique PROFILES 2017 · SSP ' + h(lesson.gold_star.ssp.join(', ')) + '">★</span>' : '';
  const pct = v => (v.total ? Math.round(1000*v.filled/v.total)/10 : 0).toLocaleString('fr-CH') + ' %';
- const gauge = (label, value, note='') => value ? '<div class="nosology-progress" title="'+h(note)+'"><span>' + h(label) + ' <b class="gauge-abs">(' + value.filled + ' / ' + value.total + ')</b>' + (value.total ? '' : ' · non applicable') + '</span><progress max="' + Math.max(1,value.total) + '" value="' + value.filled + '" aria-label="' + h(label) + '"></progress><b>(' + pct(value) + ')</b></div>' : '';
- const fragmentGauges = () => O.nosology ? '<div class="nosology-gauges">'+gauge('Pathologies fréquentes',O.nosology.gauges.frequent,'Sélection éditoriale documentée, distincte de PROFILES.')+gauge('Examen fédéral',O.nosology.gauges.federal_exam,'Liens pédagogiques aux SSP PROFILES 2017 ; les cas sans lien établi restent à arbitrer.')+gauge('Avancement global du fragment',O.nosology.gauges.global)+'</div>' : '';
- const categoryUrl = block => '#/home?category=' + encodeURIComponent(block.code);
+ const gauge = (label, value, note='', filter='') => {
+  if (!value) return '';
+  const linked = filterCodes.has(filter), tag = linked ? 'a' : 'div';
+  return '<' + tag + ' class="nosology-progress" title="' + h(note) + '"' + (linked ? ' href="#/home?filter=' + filter + '" data-mcg-filter="' + filter + '" aria-label="Filtrer les leçons : ' + h(filterNames[filter]) + '"' + (activeFilter() === filter ? ' aria-current="page"' : '') : '') + '><span>' + h(label) + ' <b class="gauge-abs">(' + value.filled + ' / ' + value.total + ')</b>' + (value.total ? '' : ' · non applicable') + '</span><progress max="' + Math.max(1,value.total) + '" value="' + value.filled + '" aria-label="' + h(label) + '"></progress><b>(' + pct(value) + ')</b></' + tag + '>';
+ };
+ let filterIconIndex = 0;
+ const filterHeading = () => {
+  const id = 'mcg-funnel-' + (++filterIconIndex);
+  return '<div class="mcg-filter-heading"><svg class="mcg-filter-symbol" viewBox="0 0 80 80" aria-hidden="true" focusable="false"><defs>'
+   + '<linearGradient id="'+id+'-metal" x1="0" x2="1"><stop offset="0" stop-color="#476476"/><stop offset=".18" stop-color="#aecbd8"/><stop offset=".35" stop-color="#f6fdff"/><stop offset=".48" stop-color="#98b6c8"/><stop offset=".69" stop-color="#d9eef7"/><stop offset="1" stop-color="#3b5d76"/></linearGradient>'
+   + '<linearGradient id="'+id+'-inside" x1=".15" y1="0" x2=".8" y2="1"><stop stop-color="#24445c"/><stop offset=".46" stop-color="#698da3"/><stop offset="1" stop-color="#d9eff7"/></linearGradient>'
+   + '<linearGradient id="'+id+'-rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8feff"/><stop offset=".36" stop-color="#bdd8e5"/><stop offset=".65" stop-color="#456a82"/><stop offset="1" stop-color="#e5f5fa"/></linearGradient>'
+   + '<radialGradient id="'+id+'-shadow"><stop stop-color="#163b55" stop-opacity=".3"/><stop offset="1" stop-color="#163b55" stop-opacity="0"/></radialGradient></defs>'
+   + '<ellipse cx="42" cy="72" rx="25" ry="5" fill="url(#'+id+'-shadow)"/>'
+   + '<path d="M10 21Q40 37 70 21L47 48V65Q44 70 36 71V49Z" fill="url(#'+id+'-metal)" stroke="#496c81" stroke-width=".8"/>'
+   + '<path d="M36 49V69Q42 69 47 65V48" fill="url(#'+id+'-metal)" stroke="#476c83" stroke-width=".7"/>'
+   + '<path d="M14 25L38 49V66" fill="none" stroke="#f3fcff" stroke-opacity=".85" stroke-width="1.5"/>'
+   + '<path d="M65 26L45 49V63" fill="none" stroke="#1b405d" stroke-opacity=".38" stroke-width="1.4"/>'
+   + '<ellipse cx="40" cy="20" rx="30" ry="11" fill="url(#'+id+'-rim)" stroke="#52748a" stroke-width=".8"/>'
+   + '<ellipse cx="40" cy="20" rx="26" ry="7.5" fill="url(#'+id+'-inside)" stroke="#e4f6fc" stroke-width="1"/>'
+   + '<path d="M17 18Q40 9 63 18" fill="none" stroke="#f9feff" stroke-opacity=".9" stroke-width="1.3"/>'
+   + '<path d="M19 23Q40 29 61 23" fill="none" stroke="#1c405c" stroke-opacity=".5" stroke-width="1"/>'
+   + '<path d="M38 70Q42 70 47 66" fill="none" stroke="#eefaff" stroke-width="1"/>'
+   + '</svg><span class="mcg-filter-label">Filtre</span></div>';
+ };
+ const fragmentGauges = () => O.nosology ? filterHeading()+'<div class="nosology-gauges">'+gauge('Pathologies fréquentes',O.nosology.gauges.frequent,'Afficher les leçons sélectionnées dans leurs catégories.','frequent')+gauge('Examen fédéral',O.nosology.gauges.federal_exam,'Afficher les leçons liées aux SSP PROFILES 2017 dans leurs catégories.','federal_exam')+gauge('Avancement global du fragment',O.nosology.gauges.global)+'</div>' : '';
+ const categoryUrl = block => filteredUrl('#/home?category=' + encodeURIComponent(block.code));
  const status = lesson => own(lesson) ? (lesson.work_in_progress ? 'Lire la version de travail' : 'Lire le cours') : 'En préparation';
- const lessonUrl = (block, lesson) => own(lesson) ? lesson.url : lesson.code.includes('.') ? '#/entry/' + encodeURIComponent(lesson.code) : categoryUrl(block) + '&lesson=' + encodeURIComponent(lesson.code);
+ const lessonUrl = (block, lesson) => own(lesson) ? filteredUrl(lesson.url) : lesson.code.includes('.') ? filteredUrl('#/entry/' + encodeURIComponent(lesson.code)) : categoryUrl(block) + '&lesson=' + encodeURIComponent(lesson.code);
  const arrow = '<span class="mcg-arrow" aria-hidden="true">↗</span>';
  const book = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1m0-15c3-2 6-2 9-1v15c-3-1-6-1-9 1V5Z"/></svg>';
  const rule = () => '<details class="mcg-rule"><summary>Un mot souligné ? Explorez son explication.</summary><p>Dans les cours, les mots interactifs ouvrent les mécanismes, les précisions et leurs sources. Les quatre onglets vous accompagnent du raisonnement à la prise en charge.</p></details>';
@@ -40,7 +77,7 @@
  function variants(lesson) {
   const listed = lesson.searchVariants || lesson.variants;
   const entities = lesson.entities || [];
-  const nested = entities.length ? '<details class="mcg-variants"><summary>Entités détaillées · ' + entities.length + '</summary><ul>' + entities.map(entity => '<li><a href="#/entry/' + h(entity.code) + '">' + gold(entity) + h(entity.code + ' — ' + entity.title) + '</a></li>').join('') + '</ul></details>' : '';
+  const nested = entities.length ? '<details class="mcg-variants"><summary>Entités détaillées · ' + entities.length + '</summary><ul>' + entities.map(entity => '<li><a href="' + h(filteredUrl('#/entry/' + encodeURIComponent(entity.code))) + '">' + gold(entity) + h(entity.code + ' — ' + entity.title) + '</a></li>').join('') + '</ul></details>' : '';
   if (listed.length === 1 && listed[0].code === lesson.code && listed[0].title === lesson.title) return nested;
   return '<details class="mcg-variants"><summary>Voir les catégories regroupées</summary><ul>' + listed.map(variant => '<li data-mcg-variant="' + h(variant.code) + '"><b>' + h(variant.code) + '</b> — ' + h(variant.title) + '</li>').join('') + '</ul></details>' + nested;
  }
@@ -51,10 +88,11 @@
   return '<section class="mcg-block" data-mcg-block="' + h(block.code) + '"><header class="mcg-block-heading"><div><span class="mcg-eyebrow">Catégorie ' + pad(block.order) + ' · ' + h(block.code) + '</span><h2>' + h(block.title) + '</h2></div><span class="mcg-section-count">' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + '</span></header><div class="mcg-lessons">' + block.lessons.map(lesson => lessonCard(block, lesson)).join('') + '</div></section>';
  }
  function cover(compact = false) {
-  return '<header class="mcg-cover' + (compact ? ' is-compact' : '') + '"><div class="mcg-cover-copy"><span class="mcg-eyebrow">MEDINA · Votre bibliothèque médicale</span><h1>' + h(title) + '</h1><p>' + h(F.description || 'Retrouvez les cours de votre spécialité, organisés par catégories.') + '</p><div class="mcg-cover-actions">' + (available.length ? '<a class="mcg-primary-action" href="#/search?available=1">Lire les cours <span aria-hidden="true">→</span></a>' : '') + '<button class="mcg-explore-action" type="button" data-mcg-explore>Les catégories <span aria-hidden="true">↓</span></button></div></div><div class="mcg-counts" aria-label="Contenu de la bibliothèque"><span><b>' + available.length + '</b> cours disponible' + (available.length > 1 ? 's' : '') + '</span><span><b>' + O.blocks.length + '</b> catégorie' + (O.blocks.length > 1 ? 's' : '') + '</span></div></header>';
+  const count = visibleAvailable().length, categories = visibleBlocks().length;
+  return '<header class="mcg-cover' + (compact ? ' is-compact' : '') + '"><div class="mcg-cover-copy"><span class="mcg-eyebrow">MEDINA · Votre bibliothèque médicale</span><h1>' + h(title) + '</h1><p>' + h(F.description || 'Retrouvez les cours de votre spécialité, organisés par catégories.') + '</p><div class="mcg-cover-actions">' + (count ? '<a class="mcg-primary-action" href="' + h(filteredUrl('#/search?available=1')) + '">Lire les cours <span aria-hidden="true">→</span></a>' : '') + '<button class="mcg-explore-action" type="button" data-mcg-explore>Les catégories <span aria-hidden="true">↓</span></button></div></div><div class="mcg-counts" aria-label="Contenu de la bibliothèque"><span><b>' + count + '</b> cours disponible' + (count > 1 ? 's' : '') + '</span><span><b>' + categories + '</b> catégorie' + (categories > 1 ? 's' : '') + '</span></div></header>';
  }
  function trail(block, lesson) {
-  return '<nav class="mcg-breadcrumbs" aria-label="Fil d’Ariane"><a href="#/home">' + h(title) + '</a>' + (block ? '<span aria-hidden="true">/</span><a href="' + h(categoryUrl(block)) + '">' + h(block.title) + '</a>' : '') + (lesson ? '<span aria-hidden="true">/</span><span>' + h(name(lesson)) + '</span>' : '') + '</nav>';
+  return '<nav class="mcg-breadcrumbs" aria-label="Fil d’Ariane"><a href="' + h(filteredUrl('#/home')) + '">' + h(title) + '</a>' + (block ? '<span aria-hidden="true">/</span><a href="' + h(categoryUrl(block)) + '">' + h(block.title) + '</a>' : '') + (lesson ? '<span aria-hidden="true">/</span><span>' + h(name(lesson)) + '</span>' : '') + '</nav>';
  }
  function planned(block, lesson) {
   if (lesson.plan?.length) return '<section class="mcg-planned-panel" aria-labelledby="mcg-planned-title"><span class="mcg-eyebrow">' + h(lesson.code) + ' · En préparation · plan prévu</span><h2 id="mcg-planned-title" tabindex="-1">' + gold(lesson) + h(lesson.title) + '</h2>' + (lesson.gold_star?.enabled ? '<p>PROFILES 2017 · SSP ' + h(lesson.gold_star.ssp.join(', ')) + ' · correspondance pédagogique</p>' : '') + '<div class="nosology-plan">' + lesson.plan.map(section => '<section><h3>' + h(section.title) + '</h3>' + (section.content ? '<p>' + h(section.content) + '</p>' : '') + '</section>').join('') + '</div>' + variants(lesson) + '</section>';
@@ -63,11 +101,14 @@
  readRoute = function() {
   const raw = location.hash.slice(2) || 'home', [head, query = ''] = raw.split('?'), parts = head.split('/').map(decodeURIComponent);
   const result = {type:parts[0] || 'home', id:parts[1] || '', extra:parts[2] || '', q:new URLSearchParams(query)};
+  if (!filterCodes.has(result.q.get('filter'))) result.q.delete('filter');
   if (result.type === 'category') {result.q.set('category', result.id); result.type = 'home'; result.id = '';}
   if (result.type === 'pathology') result.type = 'entry';
   if (result.type === 'entry') {
    result.id = result.id.toUpperCase(); const item = aliases.get(result.id);
    if (!item) return {type:'home', id:'', q:new URLSearchParams()};
+   const selectedCodes = filterCodes.get(result.q.get('filter'));
+   if (selectedCodes && !selectedCodes.has(item.lesson.code) && !O.blocks.some(block => block.lessons.some(lesson => selectedCodes.has(lesson.code) && lesson.entities?.some(entity => entity.code === result.id)))) return {type:'home', id:'', q:new URLSearchParams({filter:result.q.get('filter')})};
    if (own(item.lesson)) result.id = item.lesson.code;
    result.q.delete('specialty'); result.q.delete('view');
   }
@@ -77,20 +118,21 @@
   return result;
  };
  homePage = function() {
-  const block = blocks.get(route.q.get('category')), selected = block?.lessons.find(lesson => lesson.code === route.q.get('lesson'));
-  pageTitle(block ? block.title + ' · ' + title : title);
-  if (block) return '<div class="mcg-home">' + trail(block, selected) + '<a class="mcg-back" href="#/home">← Toutes les catégories</a>' + (selected ? planned(block, selected) : '') + blockSection(block) + rule() + '</div>';
-  const filtered = route.q.get('available') === '1', shown = filtered ? O.blocks.filter(b => b.lessons.some(own)) : O.blocks;
-  const last = available.find(item => item.lesson.code === (typeof state !== 'undefined' ? state.last : null));
-  const resume = last ? '<a class="mcg-resume" href="' + h(last.lesson.url) + '"><span><small>Votre dernière lecture</small><strong>' + h(name(last.lesson)) + '</strong></span><span>Reprendre <span aria-hidden="true">→</span></span></a>' : '';
-  const courses = available.length ? '<section class="mcg-start" aria-labelledby="mcg-start-title"><div class="mcg-page-actions"><div><span class="mcg-eyebrow">Pour commencer</span><h2 id="mcg-start-title">Les cours à explorer</h2></div><a class="mcg-text-link" href="#/search?available=1">Voir les ' + available.length + ' cours <span aria-hidden="true">→</span></a></div><div class="mcg-featured-grid">' + available.slice(0,3).map(item => lessonCard(item.block, item.lesson, true)).join('') + '</div></section>' : '<section class="mcg-empty"><h2>Les cours se préparent.</h2><p>Explorez les catégories de cette spécialité pour retrouver les chapitres prévus.</p></section>';
+  const viewBlocks = visibleBlocks(), viewAvailable = visibleAvailable();
+  const block = viewBlocks.find(item => item.code === route.q.get('category')), selected = block?.lessons.find(lesson => lesson.code === route.q.get('lesson'));
+  pageTitle((block ? block.title + ' · ' : '') + (activeFilter() ? filterNames[activeFilter()] + ' · ' : '') + title);
+  if (block) return '<div class="mcg-home">' + trail(block, selected) + filterNotice() + '<a class="mcg-back" href="' + h(filteredUrl('#/home')) + '">← Toutes les catégories</a>' + (selected ? planned(block, selected) : '') + blockSection(block) + rule() + '</div>';
+  const filtered = route.q.get('available') === '1', shown = filtered ? viewBlocks.filter(b => b.lessons.some(own)) : viewBlocks;
+  const last = viewAvailable.find(item => item.lesson.code === (typeof state !== 'undefined' ? state.last : null));
+  const resume = last ? '<a class="mcg-resume" href="' + h(lessonUrl(last.block,last.lesson)) + '"><span><small>Votre dernière lecture</small><strong>' + h(name(last.lesson)) + '</strong></span><span>Reprendre <span aria-hidden="true">→</span></span></a>' : '';
+  const courses = viewAvailable.length ? '<section class="mcg-start" aria-labelledby="mcg-start-title"><div class="mcg-page-actions"><div><span class="mcg-eyebrow">Pour commencer</span><h2 id="mcg-start-title">Les cours à explorer</h2></div><a class="mcg-text-link" href="' + h(filteredUrl('#/search?available=1')) + '">Voir les ' + viewAvailable.length + ' cours <span aria-hidden="true">→</span></a></div><div class="mcg-featured-grid">' + viewAvailable.slice(0,3).map(item => lessonCard(item.block, item.lesson, true)).join('') + '</div></section>' : '<section class="mcg-empty"><h2>' + (activeFilter() ? 'Aucun cours disponible dans ce filtre.' : 'Les cours se préparent.') + '</h2><p>Explorez les catégories de cette spécialité pour retrouver les chapitres prévus.</p></section>';
   const searchForm = '<form class="mcg-home-search" role="search" aria-label="Recherche dans cette spécialité"><label for="mcg-home-query">Trouver un chapitre</label><div><input id="mcg-home-query" name="q" type="search" placeholder="Un intitulé, une maladie ou un code CIM…" autocomplete="off"><button type="submit">Rechercher <span aria-hidden="true">→</span></button></div></form>';
-  return '<div class="mcg-home">' + cover() + fragmentGauges() + resume + searchForm + courses + (F.id === 'T1' ? '<a class="mcg-draft-access" href="../apercus/infectiologie.html#/entry/A41"><span><span class="mcg-eyebrow">Version de travail</span><strong>A41 — Sepsis et choc septique de l’adulte</strong></span><span class="mcg-text-link">Consulter l’aperçu ↗</span></a>' : '') + (F.id === 'S01' ? '<a class="s01-cs-gateway" href="#/clinical-skills"><span><span class="mcg-eyebrow">Pratique clinique</span><strong>Sémiologie · Examen cardiovasculaire</strong></span><span class="mcg-text-link">Explorer le parcours →</span></a>' : '') + '<section aria-labelledby="mcg-categories-title"><div class="mcg-page-actions mcg-categories-heading"><div><span class="mcg-eyebrow">Toute la spécialité</span><h2 id="mcg-categories-title" tabindex="-1">Les catégories</h2></div>' + (O.blocks.length ? '<div class="mcg-filters" aria-label="Filtrer les catégories"><a href="#/home"' + (!filtered ? ' aria-current="true"' : '') + '>Toutes <span>' + O.blocks.length + '</span></a><a href="#/home?available=1"' + (filtered ? ' aria-current="true"' : '') + '>Avec un cours</a></div>' : '') + '</div><div class="mcg-category-grid">' + (shown.map(categoryCard).join('') || '<p class="mcg-empty">Les catégories de cette spécialité seront ajoutées au fil de la rédaction.</p>') + '</div></section>' + rule() + '</div>';
+  return '<div class="mcg-home">' + cover() + fragmentGauges() + filterNotice() + resume + searchForm + courses + (!activeFilter() && F.id === 'T1' ? '<a class="mcg-draft-access" href="../apercus/infectiologie.html#/entry/A41"><span><span class="mcg-eyebrow">Version de travail</span><strong>A41 — Sepsis et choc septique de l’adulte</strong></span><span class="mcg-text-link">Consulter l’aperçu ↗</span></a>' : '') + (!activeFilter() && F.id === 'S01' ? '<a class="s01-cs-gateway" href="#/clinical-skills"><span><span class="mcg-eyebrow">Pratique clinique</span><strong>Sémiologie · Examen cardiovasculaire</strong></span><span class="mcg-text-link">Explorer le parcours →</span></a>' : '') + '<section aria-labelledby="mcg-categories-title"><div class="mcg-page-actions mcg-categories-heading"><div><span class="mcg-eyebrow">Toute la spécialité</span><h2 id="mcg-categories-title" tabindex="-1">Les catégories</h2></div>' + (viewBlocks.length ? '<div class="mcg-filters" aria-label="Filtrer les catégories"><a href="' + h(filteredUrl('#/home')) + '"' + (!filtered ? ' aria-current="true"' : '') + '>Toutes <span>' + viewBlocks.length + '</span></a><a href="' + h(filteredUrl('#/home?available=1')) + '"' + (filtered ? ' aria-current="true"' : '') + '>Avec un cours</a></div>' : '') + '</div><div class="mcg-category-grid">' + (shown.map(categoryCard).join('') || '<p class="mcg-empty">' + (activeFilter() ? 'Aucune leçon ne correspond à ce filtre dans cette spécialité.' : 'Les catégories de cette spécialité seront ajoutées au fil de la rédaction.') + '</p>') + '</div></section>' + rule() + '</div>';
  };
  specialtyPage = homePage;
  searchPageView = function() {
   const query = route.q.get('q') || '', needle = norm(query), onlyAvailable = route.q.get('available') === '1', matches = new Map();
-  O.blocks.forEach(block => block.lessons.forEach(lesson => {
+  visibleBlocks().forEach(block => block.lessons.forEach(lesson => {
    if (onlyAvailable && !own(lesson)) return;
    const text = [block.code, block.title, lesson.code, lesson.title, ...lesson.variants.flatMap(v => [v.code, v.title, ...v.subcodes.flatMap(s => [s.code, s.title])])].join(' ');
    if (!needle || norm(text).includes(needle)) {
@@ -100,17 +142,25 @@
     matches.set(lesson.code, {block:preferred.block, lesson:{...preferred.lesson, searchVariants:[...merged.values()]}});
    }
   }));
-  if(needle && !onlyAvailable) aliases.forEach(item=>{
+  if(needle && !onlyAvailable && !activeFilter()) aliases.forEach(item=>{
    if(item.lesson.code.includes('.') && norm(item.lesson.code+' '+item.lesson.title).includes(needle)) matches.set(item.lesson.code,item);
   });
   pageTitle('Recherche · ' + title);
-  return '<div class="mcg-home">' + trail() + '<div class="mcg-search-heading"><span class="mcg-eyebrow">' + h(title) + '</span><h1>' + (query ? '« ' + h(query) + ' »' : onlyAvailable ? 'Les cours disponibles.' : 'Tous les chapitres.') + '</h1><p>' + matches.size + ' résultat' + (matches.size > 1 ? 's' : '') + '</p></div><div class="mcg-filters"><a href="#/search?q=' + encodeURIComponent(query) + '"' + (!onlyAvailable ? ' aria-current="true"' : '') + '>Tous les chapitres</a><a href="#/search?available=1&q=' + encodeURIComponent(query) + '"' + (onlyAvailable ? ' aria-current="true"' : '') + '>Cours disponibles</a></div><div class="mcg-lessons">' + ([...matches.values()].map(item => lessonCard(item.block, item.lesson)).join('') || '<p class="mcg-empty">Aucun chapitre ne correspond à cette recherche. Essayez un intitulé ou un code CIM.</p>') + '</div></div>';
+  return '<div class="mcg-home">' + trail() + filterNotice() + '<div class="mcg-search-heading"><span class="mcg-eyebrow">' + h(title) + '</span><h1>' + (query ? '« ' + h(query) + ' »' : onlyAvailable ? 'Les cours disponibles.' : 'Tous les chapitres.') + '</h1><p>' + matches.size + ' résultat' + (matches.size > 1 ? 's' : '') + '</p></div><div class="mcg-filters"><a href="' + h(filteredUrl('#/search?q=' + encodeURIComponent(query))) + '"' + (!onlyAvailable ? ' aria-current="true"' : '') + '>Tous les chapitres</a><a href="' + h(filteredUrl('#/search?available=1&q=' + encodeURIComponent(query))) + '"' + (onlyAvailable ? ' aria-current="true"' : '') + '>Cours disponibles</a></div><div class="mcg-lessons">' + ([...matches.values()].map(item => lessonCard(item.block, item.lesson)).join('') || '<p class="mcg-empty">Aucun chapitre ne correspond à cette recherche. Essayez un intitulé ou un code CIM.</p>') + '</div></div>';
  };
  methodPage = function() {
   pageTitle('Lecture et sources · ' + title);
   return '<div class="mcg-home">' + trail() + '<div class="mcg-search-heading"><span class="mcg-eyebrow">' + h(title) + '</span><h1>Lire, comprendre, explorer.</h1><p>Quelques repères pour parcourir votre espace d’étude.</p></div><section class="mcg-planned-panel"><h2>Votre bibliothèque</h2><p>Retrouvez les cours de ' + h(title) + ' dans leurs catégories. Les chapitres annoncés « En préparation » ne contiennent pas encore de cours disponible.</p><h2>Les quatre onglets du cours</h2><p>Passez de la pathologie et de la prise en charge aux examens, aux sciences fondamentales et à la pharmacologie. Cliquez sur les mots soulignés pour ouvrir leurs explications et leurs références.</p><h2>Votre confort de lecture</h2><p>La barre du cours permet de régler la police, la taille et le mode livre. Navigo donne accès aux parties du cours. Le carnet conserve vos notes dans cet espace.</p><h2>Les sources</h2><p>Les références sont citées dans les cours et leurs fenêtres. L’organisation actuelle utilise ' + h(O.version) + ' ; une catégorie de nomenclature ne constitue pas une recommandation clinique.</p><a class="mcg-back" href="#/home">← Retrouver les catégories de ' + h(title) + '</a></section></div>';
  };
  const originalEntry = entryPage;
+ const originalCoursePage = MEDINA_coursePage;
+ MEDINA_coursePage = function(entry) {
+  const html = originalCoursePage(entry);
+  if (!activeFilter()) return html;
+  const item = aliases.get(entry.code);
+  // Change only the reader's navigation control; embedded course content is untouched.
+  return html.replace(/(<div class="mc-toolbar mc-ui">)<a class="btn tiny"[^>]*>(?:Plan de révision détaillé|← Tous les cours)<\/a>/, '$1<a class="btn tiny" href="' + h(item ? categoryUrl(item.block) : filteredUrl('#/home')) + '">← Les chapitres</a>');
+ };
  entryPage = function() {
   const item = aliases.get(route.id);
   if (item && !own(item.lesson)) {pageTitle(name(item.lesson) + ' · ' + title); return '<div class="mcg-home">' + trail(item.block, item.lesson) + planned(item.block, item.lesson) + '<a class="mcg-back" href="' + h(categoryUrl(item.block)) + '">← Les chapitres de cette catégorie</a></div>';}
@@ -120,14 +170,19 @@
  };
  crumbs = function() {const item = aliases.get(route?.id) || aliases.get(typeof MC_code === 'function' ? MC_code(route?.id) : route?.id); return item ? trail(item.block, item.lesson) : trail();};
  nextPrevious = function(entry) {
-  const item = aliases.get(entry.code), lessons = item?.block.lessons.filter(own) || [], index = lessons.findIndex(l => l.code === item?.lesson.code), previous = lessons[index-1], next = lessons[index+1];
-  return '<nav class="bottomnav mcg-bottomnav" aria-label="Navigation entre les chapitres">' + (previous ? '<a class="btn" href="' + h(previous.url) + '">← ' + h(name(previous)) + '</a>' : '<span></span>') + '<a class="btn tiny" href="' + h(item ? categoryUrl(item.block) : '#/home') + '">Les chapitres</a>' + (next ? '<a class="btn" href="' + h(next.url) + '">' + h(name(next)) + ' →</a>' : '<span></span>') + '</nav>';
+  const item = aliases.get(entry.code), lessons = item?.block.lessons.filter(lesson => own(lesson) && included(lesson)) || [], index = lessons.findIndex(l => l.code === item?.lesson.code), previous = lessons[index-1], next = lessons[index+1];
+  return '<nav class="bottomnav mcg-bottomnav" aria-label="Navigation entre les chapitres">' + (previous ? '<a class="btn" href="' + h(lessonUrl(item.block,previous)) + '">← ' + h(name(previous)) + '</a>' : '<span></span>') + '<a class="btn tiny" href="' + h(item ? categoryUrl(item.block) : '#/home') + '">Les chapitres</a>' + (next ? '<a class="btn" href="' + h(lessonUrl(item.block,next)) + '">' + h(name(next)) + ' →</a>' : '<span></span>') + '</nav>';
  };
- footer = () => (O.nosology?.secondary_references?.length ? '<details class="mcg-variants"><summary>Renvois associés à cette spécialité · ' + O.nosology.secondary_references.length + '</summary><ul>' + O.nosology.secondary_references.map(link=>'<li><a href="'+h(link.url)+'">'+h(link.code)+' · '+h(link.fragment)+'</a></li>').join('')+'</ul></details>' : '') + '<footer class="mcg-footer"><span>MEDINA <span aria-hidden="true">/</span> ' + h(title) + '</span><span>' + h(O.version) + ' <span aria-hidden="true">·</span> <a href="../index.html">Toutes les spécialités ↗</a></span></footer>';
+ footer = () => (!activeFilter() && O.nosology?.secondary_references?.length ? '<details class="mcg-variants"><summary>Renvois associés à cette spécialité · ' + O.nosology.secondary_references.length + '</summary><ul>' + O.nosology.secondary_references.map(link=>'<li><a href="'+h(link.url)+'">'+h(link.code)+' · '+h(link.fragment)+'</a></li>').join('')+'</ul></details>' : '') + '<footer class="mcg-footer"><span>MEDINA <span aria-hidden="true">/</span> ' + h(title) + '</span><span>' + h(O.version) + ' <span aria-hidden="true">·</span> <a href="../index.html">Toutes les spécialités ↗</a></span></footer>';
  drawSidebar = function() {
   const active = aliases.get(route?.id), category = route?.q.get('category') || active?.block.code;
-  document.getElementById('spec-nav').innerHTML = O.blocks.map(block => '<details class="mcg-sidebar-block" ' + (category === block.code ? 'open' : '') + ' data-mcg-sidebar-category="' + h(block.code) + '"><summary><span>' + pad(block.order) + '</span><b>' + h(block.title) + '</b></summary><a class="mcg-sidebar-all" href="' + h(categoryUrl(block)) + '">Tous les chapitres <span aria-hidden="true">→</span></a>' + block.lessons.map(lesson => '<a class="mcg-sidebar-lesson ' + (active?.lesson.code === lesson.code ? 'active' : '') + '" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + '" data-fragment-chapter="' + (own(lesson) ? h(lesson.code) : '') + '" data-mcg-sidebar-lesson="' + h(lesson.code) + '"><span>' + h(lesson.title) + '<small>' + h(lesson.code) + ' · ' + (own(lesson) ? 'Disponible' : 'En préparation') + '</small></span></a>').join('') + '</details>').join('') || '<p class="mcg-sidebar-empty">Les catégories arrivent bientôt.</p>';
-  document.querySelectorAll('.nav-main a').forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#/' + route?.type));
+  document.getElementById('spec-nav').innerHTML = visibleBlocks().map(block => '<details class="mcg-sidebar-block" ' + (category === block.code ? 'open' : '') + ' data-mcg-sidebar-category="' + h(block.code) + '"><summary><span>' + pad(block.order) + '</span><b>' + h(block.title) + '</b></summary><a class="mcg-sidebar-all" href="' + h(categoryUrl(block)) + '">Tous les chapitres <span aria-hidden="true">→</span></a>' + block.lessons.map(lesson => '<a class="mcg-sidebar-lesson ' + (active?.lesson.code === lesson.code ? 'active' : '') + '" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + '" data-fragment-chapter="' + (own(lesson) ? h(lesson.code) : '') + '" data-mcg-sidebar-lesson="' + h(lesson.code) + '"><span>' + h(lesson.title) + '<small>' + h(lesson.code) + ' · ' + (own(lesson) ? 'Disponible' : 'En préparation') + '</small></span></a>').join('') + '</details>').join('') || '<p class="mcg-sidebar-empty">Aucune catégorie à afficher.</p>';
+  document.querySelectorAll('.nav-main a').forEach(link => {
+   const base = link.dataset.mcgBaseHref || link.getAttribute('href');
+   link.dataset.mcgBaseHref = base;
+   if (base === '#/search') link.setAttribute('href', filteredUrl(base));
+   link.classList.toggle('active', base === '#/' + route?.type);
+  });
   if(O.nosology){
    const note=document.querySelector('.sidebar-note');
    if(note)note.innerHTML=fragmentGauges()+gauge('MEDINA · avancement global',O.nosology.global_progress);
@@ -137,7 +192,8 @@
    });
   }
  };
- showCommandPalette = function() {openModal(title, '<div class="command-links"><a data-close-modal class="command-link" href="#/home">L’accueil et les catégories</a><a data-close-modal class="command-link" href="#/search?available=1">Les cours disponibles</a><a data-close-modal class="command-link" href="#/search">Rechercher un chapitre</a></div><div class="mcg-category-grid">' + O.blocks.map(block => categoryCard(block).replace('<a ', '<a data-close-modal ')).join('') + '</div>');};
+ showCommandPalette = function() {openModal(title, '<div class="command-links"><a data-close-modal class="command-link" href="' + h(filteredUrl('#/home')) + '">L’accueil et les catégories</a><a data-close-modal class="command-link" href="' + h(filteredUrl('#/search?available=1')) + '">Les cours disponibles</a><a data-close-modal class="command-link" href="' + h(filteredUrl('#/search')) + '">Rechercher un chapitre</a></div><div class="mcg-category-grid">' + visibleBlocks().map(block => categoryCard(block).replace('<a ', '<a data-close-modal ')).join('') + '</div>');};
+ document.getElementById('global-search-form').onsubmit = event => {event.preventDefault();location.hash=filteredUrl('#/search?q='+encodeURIComponent(document.getElementById('global-search').value.trim()));};
  document.getElementById('command-btn').onclick = showCommandPalette;
  const previousBind = bindPage;
  bindPage = function() {
@@ -150,7 +206,7 @@
    details.append(summary,list);toc.replaceWith(details);
   });
   const form=document.querySelector('.mcg-home-search');
-  if(form)form.onsubmit=event=>{event.preventDefault();const query=form.elements.q.value.trim();location.hash='#/search?q='+encodeURIComponent(query);};
+  if(form)form.onsubmit=event=>{event.preventDefault();const query=form.elements.q.value.trim();location.hash=filteredUrl('#/search?q='+encodeURIComponent(query));};
   document.querySelector('[data-mcg-explore]')?.addEventListener('click',()=>{const heading=document.getElementById('mcg-categories-title');heading?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});heading?.focus({preventScroll:true});});
  };
  document.getElementById('medora-intelligence-link')?.remove();

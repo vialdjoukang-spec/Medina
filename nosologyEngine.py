@@ -67,14 +67,19 @@ def progress(lessons):
             'percent': round(100 * filled / total, 2) if total else 0}
 
 
-def gauges(lessons, frequent_codes):
+def category_selections(lessons, frequent_codes):
+    """Read-only selections shared by gauge counts and frontend filters."""
     # Les cours sont rédigés par catégorie à trois caractères : les sous-codes
     # (J45.0…) ne sont jamais remplis isolément et fausseraient le dénominateur.
     frequent_codes = set(frequent_codes)
     categories = [lesson for lesson in lessons if '.' not in lesson['code']]
     frequent = [lesson for lesson in categories if frequent_codes.intersection(lesson['icd10gm']['codes'])]
     federal = [lesson for lesson in categories if lesson['gold_star']['enabled']]
-    return {'frequent': progress(frequent), 'federal_exam': progress(federal), 'global': progress(categories)}
+    return {'frequent': frequent, 'federal_exam': federal, 'global': categories}
+
+
+def gauges(lessons, frequent_codes):
+    return {key: progress(selected) for key, selected in category_selections(lessons, frequent_codes).items()}
 
 
 def global_gauge(root):
@@ -213,6 +218,11 @@ def attach_surface(organisation, root):
     organisation['nosology']['global_progress'] = global_gauge(root)
     frequency = read_json(Path(root) / 'nosology/frequency.json')
     organisation['nosology']['gauges'] = gauges(inventory['lessons'], frequency['codes'])
+    organisation['nosology']['filters'] = {
+        key: list(dict.fromkeys(lesson['code'] for lesson in selected))
+        for key, selected in category_selections(inventory['lessons'], frequency['codes']).items()
+        if key != 'global'
+    }
     fragments = {item['id']: item for item in read_json(Path(root) / 'fragments.json')}
     for link in inventory.get('secondary_references', []):
         target = fragments[link['fragment']]
