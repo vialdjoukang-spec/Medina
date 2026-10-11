@@ -1,0 +1,574 @@
+{
+  "code": "E11",
+  "runtime_agent_id": "/root/c01_r_endo_resume",
+  "final_files": {
+    "chapters/E11/E11_a.html": "d0526e17c7797bdbf820e400e7052caf75658545b9666a4c34ad5248e1b01ad2",
+    "chapters/E11/E11_b.html": "c1299fef89891d4a2d1c8fd8de531a831b534f11f1a456d6450291617689dcb9",
+    "chapters/E11/E11_c.html": "65e1d87462394296800437f5ce65ff7fba43544a9cbe45b246df5564ad2664ce",
+    "chapters/E11/E11_d.html": "fabc0f21c0d07909f887df2c6fafe77ea5fc7c993ab07bde98a50c8eec5a64e8",
+    "chapters/E11/E11_pop1.html": "4e5b30dd3d5925c088a7475a302b2feed2dbb68dafd4c990fd7b62281074ed0e",
+    "chapters/E11/E11_pop2.html": "587fea2b2a44e5ed7df5047dc3763ef5d3e7373f49478bd6cf8ac07258d33e2f",
+    "glossary/e11.py": "0cc606e6fd993a8647c1671017b58783cb0b4a97e6f30601ae89acc7abcd26bd"
+  },
+  "normality": {
+    "served_popup": "e11-normalite",
+    "sources": [
+      "V-glucose",
+      "V-Na",
+      "V-K",
+      "V-bicarbonate",
+      "V-osmolalite",
+      "V-lactate",
+      "V-cpeptide",
+      "V-uree",
+      "V-creatinine",
+      "V-albuminurie",
+      "LaSource-pH"
+    ],
+    "distinction": "Référence laboratoire, seuil diagnostique et cible thérapeutique séparés ; aucun intervalle universel inventé."
+  },
+  "calculations": [
+    "e11-score2-methode",
+    "e11-osmolalite",
+    "e11-calcul-dose",
+    "e11-calcul-acr",
+    "e11-calcul-hba1c",
+    "e11-calcul-tir",
+    "e11-calcul-risque",
+    "e11-calcul-poids",
+    "e11-calcul-ips",
+    "e11-ratios-physio",
+    "e11-calcul-qualite",
+    "e11-unite-mgdl"
+  ],
+  "gradations": [
+    "e11-score2d",
+    "e11-prediabete",
+    "e11-hypo",
+    "e11-pied",
+    "e11-mrc",
+    "e11-ldl",
+    "e11-ta",
+    "e11-conduite",
+    "e11-ic-depistage",
+    "e11-technologies"
+  ],
+  "local_glossary": [
+    {
+      "term": "ADP",
+      "popup": "e11-gl-1",
+      "letters": [
+        [
+          "A",
+          "Adénosine"
+        ],
+        [
+          "D",
+          "Di-"
+        ],
+        [
+          "P",
+          "Phosphate"
+        ]
+      ],
+      "full": "Adénosine diphosphate",
+      "definition": "Molécule énergétique de la cellule ; elle est ici le dénominateur du rapport ATP/ADP, dans le couplage glucose–sécrétion de la cellule β.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503727/"
+    },
+    {
+      "term": "ATP",
+      "popup": "e11-gl-2",
+      "letters": [
+        [
+          "A",
+          "Adénosine"
+        ],
+        [
+          "T",
+          "Tri-"
+        ],
+        [
+          "P",
+          "Phosphate"
+        ]
+      ],
+      "full": "Adénosine triphosphate",
+      "definition": "Molécule énergétique ; la hausse du rapport ATP/ADP ferme les canaux potassiques sensibles à l’ATP dans la cellule β. Ce contexte est distinct des définitions du muscle cardiaque.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503727/"
+    },
+    {
+      "term": "AMPc",
+      "popup": "e11-gl-3",
+      "letters": [
+        [
+          "A",
+          "Adénosine"
+        ],
+        [
+          "M",
+          "Mono-"
+        ],
+        [
+          "P",
+          "Phosphate"
+        ],
+        [
+          "c",
+          "cyclique"
+        ]
+      ],
+      "full": "Adénosine monophosphate cyclique",
+      "definition": "Second messager : le récepteur du GLP-1 augmente ce signal et amplifie la sécrétion d’insuline dépendante du glucose. Ce n’est pas une valeur sanguine de surveillance.",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680652360016"
+    },
+    {
+      "term": "Ca²⁺",
+      "popup": "e11-gl-4",
+      "letters": [
+        [
+          "Ca",
+          "Symbole chimique du calcium"
+        ],
+        [
+          "²⁺",
+          "Charge positive de deux unités"
+        ]
+      ],
+      "full": "Ion calcium",
+      "definition": "L’entrée de calcium dans la cellule β après dépolarisation déclenche l’exocytose. Il s’agit d’un mécanisme intracellulaire, pas d’une cible de calcémie.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503727/"
+    },
+    {
+      "term": "K⁺",
+      "popup": "e11-gl-5",
+      "letters": [
+        [
+          "K",
+          "Symbole chimique du potassium"
+        ],
+        [
+          "⁺",
+          "Charge positive"
+        ]
+      ],
+      "full": "Ion potassium",
+      "definition": "Les canaux potassiques participent à la sécrétion d’insuline ; le potassium sérique surveillé en crise est un autre compartiment. Référence Viollier 3,5–5,1 mmol/L ; l’insuline peut abaisser la concentration sérique.",
+      "url": "https://www.viollier.ch/fr/analysis/7100"
+    },
+    {
+      "term": "Na⁺",
+      "popup": "e11-gl-6",
+      "letters": [
+        [
+          "Na",
+          "Symbole chimique du sodium"
+        ],
+        [
+          "⁺",
+          "Charge positive"
+        ]
+      ],
+      "full": "Ion sodium",
+      "definition": "Soluté dominant de l’approximation de l’osmolalité avec ses anions ; référence sérique Viollier 136–145 mmol/L. Le contexte d’hyperglycémie impose de raisonner avec les déplacements d’eau.",
+      "url": "https://www.viollier.ch/fr/analysis/7090"
+    },
+    {
+      "term": "pH",
+      "popup": "e11-gl-7",
+      "letters": [
+        [
+          "pH",
+          "Notation de l’acidité, pas un sigle clinique développé lettre par lettre"
+        ]
+      ],
+      "full": "Mesure logarithmique de l’acidité",
+      "definition": "Sans unité ; une baisse traduit une augmentation de l’acidité. En crise, le consensus utilise le pH veineux : acidose si < 7,3. Le repère gazométrique adulte La Source est 7,35–7,45, sans voie explicitée dans la fiche ; respecter le prélèvement.",
+      "url": "https://www.lasource.ch/espace-medecins/laboratoires/catalogue-danalyses/gazometrie"
+    },
+    {
+      "term": "TNF",
+      "popup": "e11-gl-8",
+      "letters": [
+        [
+          "T",
+          "Tumor (tumeur)"
+        ],
+        [
+          "N",
+          "Necrosis (nécrose)"
+        ],
+        [
+          "F",
+          "Factor (facteur)"
+        ]
+      ],
+      "full": "Facteur de nécrose tumorale",
+      "definition": "Dans ce cours, cytokine inflammatoire du tissu adipeux, notamment TNF-α ; l’inflammation contribue à affaiblir le signal insulinique. Aucun dosage ni cible n’est enseigné.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503727/"
+    },
+    {
+      "term": "IL-6",
+      "popup": "e11-gl-9",
+      "letters": [
+        [
+          "IL",
+          "Interleukine"
+        ],
+        [
+          "6",
+          "numéro de l’interleukine"
+        ]
+      ],
+      "full": "Interleukine 6",
+      "definition": "Cytokine de l’inflammation métabolique, décrite avec TNF-α et IL-1 dans la physiopathologie de l’insulinorésistance ; ce n’est pas une indication de dosage de routine.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503727/"
+    },
+    {
+      "term": "CYP3A4",
+      "popup": "e11-gl-10",
+      "letters": [
+        [
+          "CYP",
+          "Cytochrome P450"
+        ],
+        [
+          "3",
+          "famille 3"
+        ],
+        [
+          "A",
+          "sous-famille A"
+        ],
+        [
+          "4",
+          "membre 4"
+        ]
+      ],
+      "full": "Enzyme CYP3A4 du métabolisme médicamenteux",
+      "definition": "La finérénone est métabolisée principalement par cette enzyme. Les inhibiteurs puissants sont contre-indiqués avec Kerendia® ; les inhibiteurs modérés/faibles motivent une surveillance accrue du potassium.",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680681300014"
+    },
+    {
+      "term": "Child-Pugh",
+      "popup": "e11-gl-11",
+      "letters": [
+        [
+          "Child-Pugh",
+          "Noms propres ; aucun développement en lettres"
+        ]
+      ],
+      "full": "Classification de sévérité de l’atteinte hépatique",
+      "definition": "La FI de finérénone distingue A légère, B modérée et C sévère : pas d’adaptation initiale A/B, surveillance potassique supplémentaire en B, traitement à éviter en C. Le cours ne calcule pas ce score ni ne transforme ces catégories en norme biologique.",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680681300014"
+    },
+    {
+      "term": "IPS",
+      "popup": "e11-gl-12",
+      "letters": [
+        [
+          "I",
+          "Indice"
+        ],
+        [
+          "P",
+          "de Pression"
+        ],
+        [
+          "S",
+          "Systolique"
+        ]
+      ],
+      "full": "Indice de pression systolique cheville/bras",
+      "definition": "Rapport des pressions systoliques de cheville et de bras, sans unité ; il explore la perfusion artérielle du membre, dans le contexte de pied diabétique. La calcification peut fausser son interprétation.",
+      "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf"
+    },
+    {
+      "term": "GLP-1",
+      "popup": "e11-gl-13",
+      "letters": [
+        [
+          "GL",
+          "GLucagon-like (semblable au glucagon)"
+        ],
+        [
+          "P",
+          "Peptide"
+        ],
+        [
+          "1",
+          "type 1"
+        ]
+      ],
+      "full": "Peptide de type glucagon 1",
+      "definition": "Incrétine qui amplifie la sécrétion d’insuline selon la glycémie et freine le glucagon. Ses agonistes ont des indications propres aux produits ; aucune classe ESC 2026 non sourcée n’est ajoutée ici.",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680652360016"
+    },
+    {
+      "term": "ESC",
+      "popup": "e11-gl-14",
+      "letters": [
+        [
+          "E",
+          "European (européenne)"
+        ],
+        [
+          "S",
+          "Society (société)"
+        ],
+        [
+          "C",
+          "of Cardiology (de cardiologie)"
+        ]
+      ],
+      "full": "Société européenne de cardiologie",
+      "definition": "Le cours utilise sa recommandation diabète–maladies cardiovasculaires 2023, notamment SCORE2-Diabetes et les objectifs de prévention, complément explicite aux recommandations suisses.",
+      "url": "https://www.giornaledicardiologia.it/articoli.php?archivio=yes&amp;vol_id=4162&amp;id=41558"
+    },
+    {
+      "term": "AINS",
+      "popup": "e11-gl-15",
+      "letters": [
+        [
+          "A",
+          "Anti-"
+        ],
+        [
+          "I",
+          "Inflammatoires"
+        ],
+        [
+          "N",
+          "Non"
+        ],
+        [
+          "S",
+          "Stéroïdiens"
+        ]
+      ],
+      "full": "Anti-inflammatoires non stéroïdiens",
+      "definition": "Ils peuvent dégrader la fonction rénale et augmenter indirectement le risque d’acidose lactique sous metformine ; le contexte est rénal et métabolique.",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680260610169"
+    },
+    {
+      "term": "DFG",
+      "popup": "e11-gl-16",
+      "letters": [
+        [
+          "D",
+          "Débit"
+        ],
+        [
+          "F",
+          "de Filtration"
+        ],
+        [
+          "G",
+          "Glomérulaire"
+        ]
+      ],
+      "full": "Débit de filtration glomérulaire",
+      "definition": "Paramètre de fonction rénale exprimé ici en mL/min/1,73 m², généralement estimé à partir de la créatinine. Une baisse persistante au moins trois mois contribue à définir la maladie chronique. G1 ≥ 90 n’exclut pas une maladie rénale si autre marqueur.",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/2023_Broschuere_Diabetic_Kidney_Disease_D.pdf"
+    },
+    {
+      "term": "IA2",
+      "popup": "e11-gl-17",
+      "letters": [
+        [
+          "IA",
+          "Insulinoma-associated (associé à l’insulinome)"
+        ],
+        [
+          "2",
+          "antigène de type 2"
+        ]
+      ],
+      "full": "Antigène associé à l’insulinome 2",
+      "definition": "Ici, cible d’auto-anticorps du diabète auto-immun, associée à anti-GAD et anti-ZnT8 ; ce n’est pas un stade de cancer pulmonaire.",
+      "url": "https://www.giornaledicardiologia.it/articoli.php?archivio=yes&amp;vol_id=4162&amp;id=41558"
+    },
+    {
+      "term": "C1",
+      "popup": "e11-gl-18",
+      "letters": [
+        [
+          "C1",
+          "Code de sous-catégorie de permis, pas un sigle anatomique"
+        ]
+      ],
+      "full": "Permis C1 dans la directive diabète et conduite",
+      "definition": "La directive suisse distingue C1 pour usage privé dans le groupe médical 1 et C1 professionnel dans le groupe 2 ; l’examen du permis exact est indispensable.",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf"
+    },
+    {
+      "term": "D1",
+      "popup": "e11-gl-19",
+      "letters": [
+        [
+          "D1",
+          "Code de sous-catégorie de permis, pas un sigle cardiologique"
+        ]
+      ],
+      "full": "Permis D1 dans la directive diabète et conduite",
+      "definition": "Catégorie de transport de personnes du groupe médical 2. Sous traitement exposant à l’hypoglycémie, l’aptitude est en principe exclue ; éventuelle dérogation par médecin de niveau 4 selon conditions strictes.",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf"
+    },
+    {
+      "term": "A1",
+      "popup": "e11-gl-20",
+      "letters": [
+        [
+          "A",
+          "Albuminurie"
+        ],
+        [
+          "1",
+          "catégorie 1"
+        ]
+      ],
+      "full": "Albuminurie A1",
+      "definition": "Rapport albumine/créatinine urinaire < 3 mg/mmol dans la grille CKD suisse ; ce contexte concerne le rein, pas le permis moto A1.",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/2023_Broschuere_Diabetic_Kidney_Disease_D.pdf"
+    },
+    {
+      "term": "A2",
+      "popup": "e11-gl-21",
+      "letters": [
+        [
+          "A",
+          "Albuminurie"
+        ],
+        [
+          "2",
+          "catégorie 2"
+        ]
+      ],
+      "full": "Albuminurie A2",
+      "definition": "Rapport albumine/créatinine urinaire ≥ 3 et < 30 mg/mmol ; exactement 30 relève de A3. La chronicité exige confirmation dans le temps.",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/2023_Broschuere_Diabetic_Kidney_Disease_D.pdf"
+    },
+    {
+      "term": "A3",
+      "popup": "e11-gl-22",
+      "letters": [
+        [
+          "A",
+          "Albuminurie"
+        ],
+        [
+          "3",
+          "catégorie 3"
+        ]
+      ],
+      "full": "Albuminurie A3",
+      "definition": "Rapport albumine/créatinine urinaire ≥ 30 mg/mmol ; exactement 30 appartient ici, et non à A2.",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/2023_Broschuere_Diabetic_Kidney_Disease_D.pdf"
+    },
+    {
+      "term": "FI",
+      "popup": "e11-gl-23",
+      "letters": [
+        [
+          "F",
+          "Fach (professionnel)"
+        ],
+        [
+          "I",
+          "Information (information)"
+        ]
+      ],
+      "full": "Information professionnelle suisse du produit",
+      "definition": "Texte AIPS de référence pour indication, dose, voies et sécurité du produit exact ; l’outil Swissmedic/AmiKo sert à le consulter. Autorisation, disponibilité et remboursement sont trois questions distinctes.",
+      "url": "https://www.swissmedicinfo.ch/"
+    },
+    {
+      "term": "GAD",
+      "popup": "e11-gl-24",
+      "letters": [
+        [
+          "GA",
+          "Glutamic Acid (acide glutamique)"
+        ],
+        [
+          "D",
+          "Decarboxylase (décarboxylase)"
+        ]
+      ],
+      "full": "Décarboxylase de l’acide glutamique",
+      "definition": "Les auto-anticorps anti-GAD étayent un diabète auto-immun ; leur demande dépend du contexte clinique et ne doit pas retarder le traitement d’une carence insulinique.",
+      "url": "https://www.giornaledicardiologia.it/articoli.php?archivio=yes&amp;vol_id=4162&amp;id=41558"
+    },
+    {
+      "term": "HGPO",
+      "popup": "e11-gl-25",
+      "letters": [
+        [
+          "HG",
+          "Hyperglycémie"
+        ],
+        [
+          "P",
+          "Provoquée"
+        ],
+        [
+          "O",
+          "par voie Orale"
+        ]
+      ],
+      "full": "Hyperglycémie provoquée par voie orale",
+      "definition": "Test standardisé avec charge orale de 75 g après au moins huit heures de jeûne et glycémie plasmatique à deux heures ; diagnostic si ≥ 11,1 mmol/L sous les conditions de confirmation.",
+      "url": "https://www.giornaledicardiologia.it/articoli.php?archivio=yes&amp;vol_id=4162&amp;id=41558"
+    },
+    {
+      "term": "SGRM",
+      "popup": "e11-gl-26",
+      "letters": [
+        [
+          "S",
+          "Schweizerische (suisse)"
+        ],
+        [
+          "G",
+          "Gesellschaft (société)"
+        ],
+        [
+          "RM",
+          "für Rechtsmedizin (de médecine légale)"
+        ]
+      ],
+      "full": "Société suisse de médecine légale",
+      "definition": "Sa section de médecine du trafic a cosigné la directive suisse diabète–conduite 2025 avec la SSED.",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf"
+    },
+    {
+      "term": "ACCORD",
+      "popup": "e11-gl-27",
+      "letters": [
+        [
+          "A",
+          "Action to"
+        ],
+        [
+          "C",
+          "Control"
+        ],
+        [
+          "COR",
+          "Cardiovascular Risk"
+        ],
+        [
+          "D",
+          "in Diabetes"
+        ]
+      ],
+      "full": "Essai Action to Control Cardiovascular Risk in Diabetes",
+      "definition": "Essai primaire de 2008 chez 10 251 patients de type 2 à haut risque ; la stratégie ciblant HbA1c < 6,0 % a augmenté la mortalité. Ce constat n’est pas généralisé à toute cible basse dans toute population.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18539917/"
+    }
+  ],
+  "metrology_glossary": [
+    "e11-gl-ngsp",
+    "e11-gl-ifcc"
+  ],
+  "figures": "Cinq schémas mécanistiques de 360px verticaux ; HGPO360px ; aucun sigle interactif en SVG ; légendes avec sources, mécanisme/données distincts."
+}

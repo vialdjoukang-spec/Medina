@@ -1,0 +1,86 @@
+{
+  "code": "N17",
+  "actor": "C01-R-NEPH",
+  "runtime_agent_id": "/root/c01_r_neph",
+  "phase": "recherche_primaire_sous_avenant_lu",
+  "checked_at": "2026-10-11T19:02:14.207352+00:00",
+  "prospective": true,
+  "medical_human_validation": false,
+  "prompt_files": {
+    "PROMPT_TRANSITION.md": "18bd070b6ed9fceb31c3d015b068b62106bb201d91faaaf3c4d59f8c2de03c86",
+    "PROMPT_MEDINA.md": "d739821e6704bf9c325d77d54ae6929f52ecd13e867112d99a91178505731550",
+    "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+    "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e"
+  },
+  "truth_prompts_read_in_full_now": true,
+  "authority": {
+    "kind": "instruction_expresse_Vial_transmise_par_coordinateur",
+    "scope": "N17 et Calciumgluconat B. Braun 10 % / Mini-Plasco 10 mL seulement",
+    "accepted_documents": "Fachinformation allemande correspondante ou monographie hospitalière locale, statut import hospitalier explicite",
+    "avenant_path": "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md",
+    "no_swiss_authorization_to_invent": true,
+    "avenant_sha256": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706",
+    "read_in_full_now": true
+  },
+  "baseline_final_files": {
+    "chapters/N17/N17_a.html": "e5e757aec79227cc63bf941385e4586a2aa199c053401ac6bc8c995948d64c26",
+    "chapters/N17/N17_b.html": "6d6b5524252d91c2279740fa63d230c01053cd4a6cacd1ed3678eabb209bee80",
+    "chapters/N17/N17_c.html": "b4130147b320ad1653ea6299b8d4824b84b2a58da142139846483c81223c0485",
+    "chapters/N17/N17_d.html": "aff4fe6d427b5d0fdfc239702a9aa7efc08f38b11af477753a9ab5d6753558b7",
+    "chapters/N17/N17_pop1.html": "e67165aa7c2be7aa7f414085da86505b76d972684c1707748d8213eee62dd171",
+    "chapters/N17/N17_pop2.html": "83328f026bbac7ea89e36fac12f7063a4aba4057d8675ebf8efb335d184fdaa1",
+    "glossary/n17.py": "3022b783db2e275d887026303f2da3f605ae0bd11592ea9f3628c210baee9c6e"
+  },
+  "baseline_review_sha256": "dd13f3c7dc74356f519e512065be4f19d3308121c55d8d505e20ca5d1d889c3d",
+  "checks": [
+    {
+      "id": "autorisation",
+      "status": "conforme",
+      "observation": "Reprise ciblée explicitement demandée par Vial via coordinateur ; aucun audit E11 ni injection."
+    },
+    {
+      "id": "perimetre_provenance",
+      "status": "conforme",
+      "observation": "Auteur unique N17 ; reprise de son brouillon connu, aucune nouvelle monographie doublon, historiques NON_CONFORME et sources initiales conservés."
+    },
+    {
+      "id": "sources_lues",
+      "status": "non_verifie",
+      "observation": "FI allemande actuelle du produit exact encore à chercher et lire ; monographies PHEL/HUG déjà téléchargées à relire. Aucune dose ajoutée avant passages primaires."
+    },
+    {
+      "id": "contexte_suisse",
+      "status": "non_verifie",
+      "observation": "Exception limitée reçue ; divergence osmolarité/pH/actualité doit encore être examinée, pas levée par une approximation."
+    },
+    {
+      "id": "independance",
+      "status": "conforme",
+      "observation": "Contrôle auteur uniquement ; audit N17 indépendant C01-R-ENDO et contre-audit distinct ; aucun audit E11 lancé."
+    },
+    {
+      "id": "contrat_cours",
+      "status": "conforme",
+      "observation": "Gabarit I50 intégralement lu lors reprise antérieure ; sept surfaces relues. Toute modification après lecture primaire exigera nouveau ledger, SHA et rendu/captures/tests."
+    },
+    {
+      "id": "honnetete",
+      "status": "conforme",
+      "observation": "Aucune rétrocertification de l’entrée initiale ; réserve calcium actuelle non levée à ce stade ; autorisation politique distinguée de vérification scientifique."
+    }
+  ],
+  "verdict": "NON_CONFORME",
+  "research_authorized": true,
+  "medical_rewriting_authorized_only_after_read_primary": true,
+  "blocking_reserves": [
+    "Actualité de la FI allemande exacte et arbitrage pH/osmolarité/concentration à établir ; monographies locales et usages hors FI à documenter."
+  ],
+  "canonical_sources_changed": false,
+  "supplemental_prompt_files": {
+    "docs/collaboration/instructions/N17_CALCIUM_IMPORTE_VIAL_2026-10-11.md": "e1d8a17773db93924e2e014c7750295ff1ae80bd00247d534794de98b0645706"
+  },
+  "historical_research_entry": {
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_01_N17/preuves/entree_prospective_calcium_import.json",
+    "sha256": "94feb997ff4d16c58513746830b8d1afbafc63f7223517fd0fd014654e3b5d45"
+  }
+}

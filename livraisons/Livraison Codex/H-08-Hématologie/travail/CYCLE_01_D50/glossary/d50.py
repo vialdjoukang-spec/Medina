@@ -1,7 +1,7 @@
 from cardio_1 import a, G
 # D50 — Anémie par carence en fer (H-08-Hématologie). Entrées conditionnelles : aucun terme existant dans G n’est écrasé.
 if 'TCMH' not in G:
-    a('TCMH', [('T', 'Teneur'), ('C', 'Corpusculaire'), ('M', 'Moyenne'), ('H', 'en Hémoglobine')], 'Teneur corpusculaire moyenne en hémoglobine', '<p>La TCMH mesure la quantité moyenne d’hémoglobine par hématie, exprimée en picogrammes. Une valeur inférieure à 28 pg définit l’hypochromie ; le seuil exact dépend du laboratoire. Elle est plus fiable que le volume globulaire moyen pour repérer une carence martiale, car elle dépend moins du délai d’analyse et de l’automate (BSG 2021).</p>', 'd50-stades')
+    a('TCMH', [('T', 'Teneur'), ('C', 'Corpusculaire'), ('M', 'Moyenne'), ('H', 'en Hémoglobine')], 'Teneur corpusculaire moyenne en hémoglobine', '<p>La TCMH mesure la quantité moyenne d’hémoglobine par hématie, exprimée en picogrammes. Viollier donne 26–34 pg dès 19 ans ; Onkopedia 2025 utilise un seuil d’hypochromie de 28 pg dans ses méthodes. Référence et seuil ne sont pas interchangeables. Elle est plus fiable que le volume globulaire moyen pour repérer une carence martiale, car elle dépend moins du délai d’analyse et de l’automate (BSG 2021).</p>', 'd50-teneur-globulaire')
 if 'TSAT' not in G:
     a('TSAT', [('T', 'Transferrine'), ('SAT', 'SATuration')], 'Saturation de la transferrine', '<p>La TSAT rapporte le fer sérique à la capacité totale de fixation de la transferrine, en pour cent. Une valeur inférieure à 20 % soutient une disponibilité insuffisante du fer, pour l’érythropoïèse selon le contexte, que les réserves soient vides ou séquestrées par l’inflammation. L’abréviation vient de l’anglais transferrin saturation.</p>', 'd50-tsat')
 if 'MICI' not in G:

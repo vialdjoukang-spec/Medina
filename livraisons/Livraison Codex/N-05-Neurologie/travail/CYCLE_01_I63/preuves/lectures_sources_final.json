@@ -1,0 +1,320 @@
+{
+  "code": "I63",
+  "actor": "C01-R-NEUR",
+  "runtime_agent_id": "/root/c01_r_neur_resume",
+  "completed_at": "2026-10-11T21:21:28.644670+00:00",
+  "medical_human_validation": false,
+  "sources": [
+    {
+      "source_id": "CH21",
+      "url": "https://www.neurovasc.ch/fileadmin/files/publikationen/en/Thrombolysis_Thrombectomy_Swiss_guidelines_EN_Michel_ClinTranslNeurosci2021.pdf",
+      "access_url": "https://www.neurovasc.ch/fileadmin/files/publikationen/en/Thrombolysis_Thrombectomy_Swiss_guidelines_EN_Michel_ClinTranslNeurosci2021.pdf",
+      "download_sha256": "bd17958ce7a40497d0a7da09bfa9126513c629ee4321ac2246f7da5003c824df",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/swiss_revascularisation_2021.pdf",
+      "actual_scope": "Texte de recommandation et tableaux 1–9 : indications, imagerie, exceptions, anesthésie, surveillance, neurochirurgie et consentement. Tables 7–9 relues explicitement à cette reprise."
+    },
+    {
+      "source_id": "PRE21",
+      "url": "https://www.neurovasc.ch/fileadmin/files/publikationen/fr/Prehospital_Swiss_Guidelines_FR_Kaegi_SwissMedForum2021_suppl.pdf",
+      "access_url": "https://www.neurovasc.ch/fileadmin/files/publikationen/fr/Prehospital_Swiss_Guidelines_FR_Kaegi_SwissMedForum2021_suppl.pdf",
+      "download_sha256": "293588f3e95d2571d0dff0caade0a3fcdcf34c33d1e885443a4febbcdf6a0fec",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/swiss_prehospital_2021.pdf",
+      "actual_scope": "Corps p.322–328, tableaux 1–4 : reconnaissance, diagnostic initial, triage, délais, transfert, régions isolées et équipes."
+    },
+    {
+      "source_id": "BE26",
+      "url": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "access_url": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "download_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/bern_stroke_2026.pdf",
+      "actual_scope": "Périmètre imprimé aigu 4–19, étiologie 20–25 et thrombose veineuse32, prévention34–43, maladies monogéniques50, anatomie53–57 et NIHSS62–63. Les figures53–57 vues sur trois doubles pages originales. Source institutionnelle complémentaire ; pas lecture intégrale de chaque fiche spécialisée non utilisée."
+    },
+    {
+      "source_id": "EPI25",
+      "url": "https://doi.org/10.1093/ije/dyaf087",
+      "access_url": "https://doi.org/10.1093/ije/dyaf087",
+      "download_sha256": "1c4b9a81ab2a273cec85aa561aa26f509c06decce9efa9ef9d31ad83eab8327f",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/EPI25_redownload.xml",
+      "actual_scope": "Méthodes, résultats, tableau national et limites des données de sorties et décès, tous accidents vasculaires cérébraux."
+    },
+    {
+      "source_id": "IVT21",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7995316/",
+      "access_url": "https://www.stroke-manual.com/wp-content/uploads/2024/03/2021-ESO-guidelines-on-IVT-for-acute-ischemic-stroke.pdf",
+      "download_sha256": "cdbb0b49d0f9137dfc6d39096353315ce47e2452d730bc9e1acce3c484edb57a",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/IVT21_article.pdf",
+      "actual_scope": "PICO3.1,3.2 sélection tardive/perfusion/diffusion ; PICO9.1 handicap avec déficit peu coté ; tableaux de recommandations pertinents. PDF original, DOI confirmé."
+    },
+    {
+      "source_id": "TNK23",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10069183/",
+      "access_url": "https://www.stroke-manual.com/wp-content/uploads/2024/06/2023-ESO-recommendation-on-tenecteplase-for-acute-ischaemic.pdf",
+      "download_sha256": "1ed0a98c82f14ec2e0b872ef37d623759964e7233304163bdd8debe49e2f7ecd",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/TNK23_article.pdf",
+      "actual_scope": "Tableau6 synoptique, texte dose0.25/0.40, grandes artères, réveil/début inconnu et sélection par imagerie ; pages48–50. PDF original DOI confirmé."
+    },
+    {
+      "source_id": "BP26",
+      "url": "https://doi.org/10.1093/esj/aakag004",
+      "access_url": "https://doi.org/10.1093/esj/aakag004",
+      "download_sha256": "36588307601d6d5b0c5b47db0ecb72f23b1570f3bdf54b4af177606f794584d2",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/BP26_redownload.xml",
+      "actual_scope": "Physiopathologie, PICO3–4, discussion et tableau11 visuellement lu sur les trois fichiers primaires : PICO1–6 enseignés ; hémorragie7–8 hors infarctus."
+    },
+    {
+      "source_id": "DAPT21",
+      "url": "https://doi.org/10.1177/23969873211000877",
+      "access_url": "https://doi.org/10.1177/23969873211000877",
+      "download_sha256": "233b34da80ec152a9941a59771f54dccd49c2aa5613f649f818d3a52e0790823",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/DAPT21_redownload.xml",
+      "actual_scope": "Corps complet, populations, résultats absolus, recommandation1, 21jours puis monothérapie, exclusions et doses."
+    },
+    {
+      "source_id": "SEC22",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9446324/",
+      "access_url": "https://eprints.gla.ac.uk/269787/1/269787.pdf",
+      "download_sha256": "c1716264b43f2ef48b09a62decfecdfe7d02c67ec8e1847eea422c7f23f590e1",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/SEC22-Glasgow.pdf",
+      "actual_scope": "Résumé, PICO3 traitement tensionnel et exceptions ; PICO6 lipides, recommandation après l’interprétation des preuves et limite de la cible1.8. Manuscrit auteur original téléchargé, DOI confirmé."
+    },
+    {
+      "source_id": "BA24",
+      "url": "https://doi.org/10.1177/23969873241257223",
+      "access_url": "https://doi.org/10.1177/23969873241257223",
+      "download_sha256": "3fc7681bc8010cf6eb927ed2ce7abb1e437919d9beb3a60ae3288c507ca81e3f",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/BA24_redownload.xml",
+      "actual_scope": "Discussion et tableau7 synoptique, PICO2–7 et données de gravité : score≥10 et <10, délai6–24, sélection et limites."
+    },
+    {
+      "source_id": "CVT24",
+      "url": "https://doi.org/10.1186/s42466-024-00320-9",
+      "access_url": "https://doi.org/10.1186/s42466-024-00320-9",
+      "download_sha256": "6e4770b9a1615b0e05bcde933d0cbd77b9315b331a3e2958164e3d194478836a",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/CVT24_redownload.xml",
+      "actual_scope": "Définition/diagnostic, phase aiguë et entretien, durée3–12mois, grossesse/allaitement et contraception."
+    },
+    {
+      "source_id": "ENER18",
+      "url": "https://doi.org/10.1002/ana.25147",
+      "access_url": "https://doi.org/10.1002/ana.25147",
+      "download_sha256": "db60babe9a711b493b41ddeadc52575332d524bf44546d9dcc7ad0d7f75f01a0",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/ENER18_redownload.xml",
+      "actual_scope": "Introduction, bases énergétiques/ioniques et discussion ; événements observés terminalement non transposés en délais thérapeutiques."
+    },
+    {
+      "source_id": "BIBAPI",
+      "url": "https://europepmc.org/article/MED/21870978",
+      "access_url": "https://europepmc.org/article/MED/21870978",
+      "download_sha256": "23cbcb32dc0f1f7aa6fa4c264876a58314960323a96c24158ddd8e907256b6c9",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/BIBAPI_bibliography.json",
+      "actual_scope": "Notice bibliographique originale indexée seulement, titre, auteurs et année ; chiffres et interprétation thérapeutique proviennent de la FI effectivement lue, pas d’une lecture prétendue du texte intégral de l’essai."
+    },
+    {
+      "source_id": "BIBCLO",
+      "url": "https://europepmc.org/article/MED/8918275",
+      "access_url": "https://europepmc.org/article/MED/8918275",
+      "download_sha256": "dd6b63296c3b0edd10453ac759ba4db04977c939b0e23107f785e3a6fc049bd5",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/BIBCLO_bibliography.json",
+      "actual_scope": "Notice bibliographique originale indexée seulement, titre, auteurs et année ; chiffres et interprétation thérapeutique proviennent de la FI effectivement lue, pas d’une lecture prétendue du texte intégral de l’essai."
+    },
+    {
+      "source_id": "ACT",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680483130277",
+      "access_url": "https://amiko.oddb.org/fr/fi?gtin=7680483130277",
+      "download_sha256": "ebc83b4fd817b4bb2e6c18f243043c521c416f769212010926f70e1eb3adbd9c",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/fi_actilyse.txt",
+      "actual_scope": "Information professionnelle exacte : produit/indication, posologie et sous-populations pertinentes, contre-indications, précautions, interactions, grossesse/allaitement, effets graves, mécanisme, pharmacocinétique et études utilisées. Lecture des sections pertinentes ; aucune extrapolation d’une autre présentation."
+    },
+    {
+      "source_id": "MET",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "access_url": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "download_sha256": "16baac442a8ae2d6d2c990fb158d57d7016797b6d537ee8836f2a9c5a410f0b8",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/fi_metalyse_5000.txt",
+      "actual_scope": "Information professionnelle exacte : produit/indication, posologie et sous-populations pertinentes, contre-indications, précautions, interactions, grossesse/allaitement, effets graves, mécanisme, pharmacocinétique et études utilisées. Lecture des sections pertinentes ; aucune extrapolation d’une autre présentation."
+    },
+    {
+      "source_id": "ASA",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680517950406",
+      "access_url": "https://amiko.oddb.org/fr/fi?gtin=7680517950406",
+      "download_sha256": "7bbba30ac181ca2750211eff6932ed3cece3e7a6f10f44c99c5bc186d6c4511f",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/fi_aspirine_cardio.txt",
+      "actual_scope": "Information professionnelle exacte : produit/indication, posologie et sous-populations pertinentes, contre-indications, précautions, interactions, grossesse/allaitement, effets graves, mécanisme, pharmacocinétique et études utilisées. Lecture des sections pertinentes ; aucune extrapolation d’une autre présentation."
+    },
+    {
+      "source_id": "CLO",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680545090143",
+      "access_url": "https://amiko.oddb.org/fr/fi?gtin=7680545090143",
+      "download_sha256": "5e02a072e93a92a8f5de1ac1fa9140d6336437f0b8121d59bc73d6e3e35f3001",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/fi_plavix.txt",
+      "actual_scope": "Information professionnelle exacte : produit/indication, posologie et sous-populations pertinentes, contre-indications, précautions, interactions, grossesse/allaitement, effets graves, mécanisme, pharmacocinétique et études utilisées. Lecture des sections pertinentes ; aucune extrapolation d’une autre présentation."
+    },
+    {
+      "source_id": "API",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+      "access_url": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+      "download_sha256": "b0edb25be3339466e8613f3642aee01158aa936547e38269af4042ab9128c621",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/fi_eliquis.txt",
+      "actual_scope": "Information professionnelle exacte : produit/indication, posologie et sous-populations pertinentes, contre-indications, précautions, interactions, grossesse/allaitement, effets graves, mécanisme, pharmacocinétique et études utilisées. Lecture des sections pertinentes ; aucune extrapolation d’une autre présentation."
+    },
+    {
+      "source_id": "CLE",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680494563699",
+      "access_url": "https://amiko.oddb.org/fr/fi?gtin=7680494563699",
+      "download_sha256": "cd9b6335f6bfa44770a4830d374e1af8b73443ad4d1b3dd3012004d7ea203a48",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/fi_clexane.txt",
+      "actual_scope": "Information professionnelle exacte : produit/indication, posologie et sous-populations pertinentes, contre-indications, précautions, interactions, grossesse/allaitement, effets graves, mécanisme, pharmacocinétique et études utilisées. Lecture des sections pertinentes ; aucune extrapolation d’une autre présentation."
+    },
+    {
+      "source_id": "ATO",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680540850285",
+      "access_url": "https://amiko.oddb.org/fr/fi?gtin=7680540850285",
+      "download_sha256": "e728c5d5515127a74d552429ce4cb603baffed2d4ff8821fa961079166e76224",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/fi_sortis.txt",
+      "actual_scope": "Information professionnelle exacte : produit/indication, posologie et sous-populations pertinentes, contre-indications, précautions, interactions, grossesse/allaitement, effets graves, mécanisme, pharmacocinétique et études utilisées. Lecture des sections pertinentes ; aucune extrapolation d’une autre présentation."
+    },
+    {
+      "source_id": "NOTCH24",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11014667/",
+      "access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11014667/",
+      "download_sha256": "e6e5de9dcdf8b078b7678cbf582b160d2555233cc2656b6ca373258a849e7bb8",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/PMC11014667.xml",
+      "actual_scope": "Introduction mécanisme normal, résultats et discussion sur agrégation sauvage/mutante et limites du modèle et trois tissus humains."
+    },
+    {
+      "source_id": "FABRY12",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3340376/",
+      "access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3340376/",
+      "download_sha256": "ac1794f512133b9cb48427867bc6971e7b96b2881cf0e7a22b2322ebcb7ddf8d",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/PMC3340376.xml",
+      "actual_scope": "Texte expérimental : méthode, résultats endothéliaux et discussion ; relu avec le corrigendum réel."
+    },
+    {
+      "source_id": "FABRYCORR",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3464302/",
+      "access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3464302/",
+      "download_sha256": "affc6caa286ebd9bf5bcb2176e9f374513a4b10f2ef71053f84842132de45c44",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/FABRYCORR.xml",
+      "actual_scope": "Corps entier du corrigendum, identité de globotriaosylcéramide et correction titre/résumé/introduction."
+    },
+    {
+      "source_id": "HISTO18",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6334527/",
+      "access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6334527/",
+      "download_sha256": "634bdd55249d29527b9cc40f5271eaba7362dbba68a6e28de0e3679cd58b360a",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/PMC6334527.xml",
+      "actual_scope": "Introduction, méthodes de stadification, légende figure1, résultats et discussion sur lésions aiguës/résorption/cicatrice et glie."
+    },
+    {
+      "source_id": "SGED14",
+      "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/Diabetes_Risk-Assessment_Grundversorgung_FR_2014_1_.pdf",
+      "access_url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/Diabetes_Risk-Assessment_Grundversorgung_FR_2014_1_.pdf",
+      "download_sha256": "695366ad6de8fb68f91ef6f252945d97c4f2cce2edab4a9c560191b50ff349aa",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/SGED.pdf",
+      "actual_scope": "Page3, classification glucose veineux à jeun, confirmation et hémoglobine glyquée, limites."
+    },
+    {
+      "source_id": "CSCQ17",
+      "url": "https://www.cscq.ch/SiteCSCQ/FichierPDF_FR/FT-Temps-thromboplastine.pdf",
+      "access_url": "https://www.cscq.ch/SiteCSCQ/FichierPDF_FR/FT-Temps-thromboplastine.pdf",
+      "download_sha256": "47b685ac79a0f2a6da0c416923f9e13962222324cf1954c207c9ee96045362ba",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/CSCQ_article.pdf",
+      "actual_scope": "Note entière deux pages : définition, méthode, indice de sensibilité, calcul et conditions préanalytiques ; aspects juridiques datés non enseignés."
+    },
+    {
+      "source_id": "LABGLU",
+      "url": "https://lvz.analytica.ch/analysis/Glucose-Toleranztest_oraler_(oGTT)_mit_Insulin",
+      "access_url": "https://lvz.analytica.ch/analysis/Glucose-Toleranztest_oraler_(oGTT)_mit_Insulin",
+      "download_sha256": "5588f3be9c6d0679d566134fd270bf20f8a56406b85a185947913227ab6ab94d",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABGLU.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    },
+    {
+      "source_id": "LABPLT",
+      "url": "https://lvz.analytica.ch/Thrombozyten",
+      "access_url": "https://lvz.analytica.ch/Thrombozyten",
+      "download_sha256": "5fa911d34f633342e3487d2a5ada3607cc86969e9a80392870a377b25a23d528",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABPLT.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    },
+    {
+      "source_id": "LABCRE",
+      "url": "https://lvz.analytica.ch/analysis/Kreatinin",
+      "access_url": "https://lvz.analytica.ch/analysis/Kreatinin",
+      "download_sha256": "d903e4346fae55b8eaf1520712bda56a5cb013541cf43155ad0cdbb9549ba879",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABCRE.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    },
+    {
+      "source_id": "LABINR",
+      "url": "https://lvz.analytica.ch/analysis/QuickINR",
+      "access_url": "https://lvz.analytica.ch/analysis/QuickINR",
+      "download_sha256": "2ae1fb216e19004dbbe26f6e25452dabfea29b473c6faef9d706ae44b7ed3271",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABINR.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    },
+    {
+      "source_id": "LABCK",
+      "url": "https://lvz.analytica.ch/analysis/CK_Creatin-Kinase_gesamt",
+      "access_url": "https://lvz.analytica.ch/analysis/CK_Creatin-Kinase_gesamt",
+      "download_sha256": "fa76982b3a86aaaa73c93897bdd956e9dab465540451ed19108e9cc84488ddd3",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABCK.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    },
+    {
+      "source_id": "LABALAT",
+      "url": "https://lvz.analytica.ch/analysis/Alanin-Amino-Transferase_(ALAT)",
+      "access_url": "https://lvz.analytica.ch/analysis/Alanin-Amino-Transferase_(ALAT)",
+      "download_sha256": "5d2ce4e52b4f1ed3452e2b47c1e853b4bc1519b5a7df246bc70f66d5011c5baf",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABALAT.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    },
+    {
+      "source_id": "LABCL",
+      "url": "https://lvz.analytica.ch/analysis/Kreatinin-Clearance",
+      "access_url": "https://lvz.analytica.ch/analysis/Kreatinin-Clearance",
+      "download_sha256": "fb52ae8a55aedc89ee4b8616adfc2c0f9f252b3b1eef4a4531c7583ff8d393af",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABCL.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    },
+    {
+      "source_id": "LABHB",
+      "url": "https://lvz.analytica.ch/analysis/Haemoglobin",
+      "access_url": "https://lvz.analytica.ch/analysis/Haemoglobin",
+      "download_sha256": "e54c29e96de2ff81b565e4c10dd3d5b8c3cd2458dcd5f72920d8b8936b1157f6",
+      "scratch_path": "/workspace/Medina/work/c01_r_neur_resume/sources/LABHB.html",
+      "actual_scope": "Texte original de fiche : prélèvement, méthode, unités et intervalle/borne publié ; âge et sexe seulement quand précisés."
+    }
+  ],
+  "images_table_11": [
+    {
+      "path": "/workspace/Medina/work/c01_r_neur_resume/sources/aakag004fx26-1.jpg",
+      "sha256": "7b48f260ee41eed0ad0ad45ea56540509fdd3e6875b3146f1f1cb4d6cacc1721",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/97ab/13151662/d149946a3cf3/aakag004fx26-1.jpg",
+      "read_mode": "Image primaire effectivement vue, reprise distincte ; pas capture du cours."
+    },
+    {
+      "path": "/workspace/Medina/work/c01_r_neur_resume/sources/aakag004fx26-2.jpg",
+      "sha256": "374f5b6105b990d39c3c9a9a6235f4cf41e65c5929718467f7725bbd61873663",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/97ab/13151662/d0de90e88665/aakag004fx26-2.jpg",
+      "read_mode": "Image primaire effectivement vue, reprise distincte ; pas capture du cours."
+    },
+    {
+      "path": "/workspace/Medina/work/c01_r_neur_resume/sources/aakag004fx26-3.jpg",
+      "sha256": "c15061d0c6d518a9cd5832db5044e4b650a74f9e7eabd591b5207cb260d9fa44",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/97ab/13151662/f00243da05f0/aakag004fx26-3.jpg",
+      "read_mode": "Image primaire effectivement vue, reprise distincte ; pas capture du cours."
+    }
+  ],
+  "failed_sources_not_used": [
+    "Pages PMC de thrombolyse/ténectéplase/prévention chargées en CAPTCHA lors du téléchargement HTTP ; remplacées par PDF originaux.",
+    "PMC528893 retour HTML de challenge non utilisé.",
+    "Pages HUG sans référence exploitable non utilisées."
+  ],
+  "source_anomalies": [
+    "CH21 tableau7 écrit Praxbind5mg, incohérent avec une dose d’antidote ; aucune dose d’antidote déduite ou enseignée.",
+    "CH21 tableau9 anti-IIa écrit mg/mL tandis que tableau7 ng/mL ; seuils calibrés signalés par leur tableau exact, aucune normalisation de mémoire."
+  ],
+  "historical_readings_kept": "avant_reprise_runtime_20261011 : les lectures de l’ancien runtime demeurent distinctes et ne sont pas imputées à celui-ci.",
+  "metadata_correction": "URLs miroir exactes rétablies à partir du message propre précompaction ; aucun retéléchargement ou nouvelle lecture fictive attribué."
+}

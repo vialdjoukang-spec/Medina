@@ -1,0 +1,134 @@
+{
+  "code": "D50",
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "checked_at": "2026-10-11T19:07:33.134483+00:00",
+  "medical_human_validation": false,
+  "actual_loaded_definitions": {
+    "Hb": {
+      "lit": [
+        [
+          "H",
+          "Hémo-"
+        ],
+        [
+          "b",
+          "-globine"
+        ]
+      ],
+      "full": "Hémoglobine",
+      "def": "<p>Anémie si Hb &lt; 130 g/L (homme) ou &lt; 120 g/L (femme) selon l’OMS.</p>",
+      "ref": null
+    },
+    "VGM": {
+      "lit": [
+        [
+          "V",
+          "Volume"
+        ],
+        [
+          "G",
+          "Globulaire"
+        ],
+        [
+          "M",
+          "Moyen"
+        ]
+      ],
+      "full": "Volume globulaire moyen",
+      "def": "<p>Taille moyenne des globules rouges ; sa hausse est un marqueur indirect de consommation chronique d’alcool.</p>",
+      "ref": null
+    },
+    "MICI": {
+      "lit": [
+        [
+          "M",
+          "Maladies"
+        ],
+        [
+          "I",
+          "Inflammatoires"
+        ],
+        [
+          "C",
+          "Chroniques de l’"
+        ],
+        [
+          "I",
+          "Intestin"
+        ]
+      ],
+      "full": "Maladies inflammatoires chroniques de l’intestin",
+      "def": "<p>Maladie de Crohn et rectocolite hémorragique.</p>",
+      "ref": null
+    }
+  },
+  "source_paths": [
+    {
+      "key": "Hb",
+      "path": "glossary/cardio_1.py",
+      "sha256": "c687b9000eb735b0306261ed28fee05b74ae9f2bcd456d26faeb54fefc594c84"
+    },
+    {
+      "key": "VGM",
+      "path": "glossary/g04_gastro.py",
+      "sha256": "d46e8ed5a19b2f36c3b49150ce31eb9abb6176bafe3d6fd3dff3d182507a4d5d"
+    },
+    {
+      "key": "MICI",
+      "path": "glossary/g04_gastro.py",
+      "sha256": "d46e8ed5a19b2f36c3b49150ce31eb9abb6176bafe3d6fd3dff3d182507a4d5d"
+    }
+  ],
+  "observation": "Le glossaire partagé Hb ne précise ni la population adulte non enceinte ni les seuils gestationnels. Les définitions VGM et MICI restent nominales et les ajouts conditionnels D50 ne les écrasent pas. La portée clinique du seuil Hb est correctement explicitée dans D50, mais sa définition commune rend une déclaration exhaustive de conformité trop large. Aucun glossaire partagé n’est modifié par l’auteur.",
+  "status": "corrected_in_D50_without_shared_glossary_mutation",
+  "observed_pre_correction_final_files": [
+    {
+      "path": "chapters/D50/D50_a.html",
+      "sha256": "c0f4beecdc975b6910b9c81f2e096948013a93bd06b896a092af0c087e846ef5"
+    },
+    {
+      "path": "chapters/D50/D50_b.html",
+      "sha256": "c3d15c21a5aa019abafdf43a510644fd8a439096604bbe372409f10aa7ed45f2"
+    },
+    {
+      "path": "chapters/D50/D50_c.html",
+      "sha256": "c09634f200c4256e7d90c7767d9103fd50bb946ea4b2e61cc5c6177a5d7d62da"
+    },
+    {
+      "path": "chapters/D50/D50_d.html",
+      "sha256": "3d2db56d07b89df1ec8e6d61cf58d6c5aceca0ff58141abc353ce5cc1107e3d2"
+    },
+    {
+      "path": "chapters/D50/D50_pop1.html",
+      "sha256": "ad5b0f4efd02dbecd55a41094153ae459accb293447d64bc93f10b02cd67a6bc"
+    },
+    {
+      "path": "chapters/D50/D50_pop2.html",
+      "sha256": "e639512d2a02fcf9014f678482a5897e70c6292982878afa779fd53d67cf0f2f"
+    },
+    {
+      "path": "glossary/d50.py",
+      "sha256": "d3f999480d5ac4dccd2c8d597a6921a4b5789d826d8445dac13430ccda7217ae"
+    }
+  ],
+  "final_files": {
+    "chapters/D50/D50_a.html": "e33873f46edcd07d6ed09ef4f2c99a84d997c60d10fe7b1322eea40f29129723",
+    "chapters/D50/D50_b.html": "56fc81081526d12807fb23078ca4b3afc2ea181f0606a0dae37c9ad2b1e2ebd0",
+    "chapters/D50/D50_c.html": "6b91ff9129f21df9a55486b88786de0898baf09d4cb75ff034ed2c6fe73893b1",
+    "chapters/D50/D50_d.html": "4da171fd0916bb5bceb6a3aea525559a99acbf41db3a0be5a92244b0c2cb3664",
+    "chapters/D50/D50_pop1.html": "7750306d3772144c2a27c839adf3f4ec3fd07f68839f60c8b896336b9a7e3ea1",
+    "chapters/D50/D50_pop2.html": "4d949acc39d0e7e8e622b9b71f5f6c5f6bb85ac007e1f5e9a623fa470acef2bb",
+    "glossary/d50.py": "eb855036ca82b9887b0f55a32b69e6346ac8be4b955225cdb44c42bf48c0daca"
+  },
+  "corrected_at": "2026-10-11T19:19:01.037238+00:00",
+  "resolution": "L’auteur développe les trois termes dans les six HTML et ses propres définitions. Les notions ouvrent d50-anemie-def, d50-volume-globulaire et d50-mici. Les sources historiques du glossaire partagé restent inchangées ; toutes les surfaces visibles du cours et les 68 fenêtres ont été contrôlées sur ordinateur et mobile : aucun déclencheur data-ab Hb, VGM ou MICI.",
+  "browser_proof": {
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/controles_navigateur.json",
+    "sha256": "ecb44cb11e2b0a69153cb27238fa235066343384ecda89a90dd7a2a5d3411b53"
+  },
+  "change_journal": {
+    "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_01_D50/corrections_termes_contextualises.json",
+    "sha256": "d2f1d789207a86f2f8bbd5d98a89415485686cb162d5ab3f564333a5a65c305e"
+  }
+}

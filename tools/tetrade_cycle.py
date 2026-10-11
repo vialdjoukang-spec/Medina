@@ -11,7 +11,8 @@ from datetime import datetime
 REGISTRY = "organisation/tetrade_cycle_status.json"
 AUTHORITY = "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md"
 PROTOCOL = "tetrade-chapitres-2026-10-11"
-PROMPTS = ("PROMPT_MEDINA.md", "PROMPT_TRANSITION.md", "docs/STYLE_REDACTION.md", AUTHORITY)
+CLARITY_AUTHORITY = "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md"
+PROMPTS = ("PROMPT_MEDINA.md", "PROMPT_TRANSITION.md", "docs/STYLE_REDACTION.md", AUTHORITY, CLARITY_AUTHORITY)
 MISSIONS = (
     ("I63", "S08", "NEUR", "HEM"), ("E11", "S05", "ENDO", "NEPH"),
     ("N17", "S04", "NEPH", "ENDO"), ("D50", "S06", "HEM", "NEUR"),
@@ -165,8 +166,8 @@ def review(tree, row, key, actor, files):
             if passage["number"] == 2:
                 require(report.get("verdict") == "favorable" and report.get("blocking_reserves") == [] and report.get("final_files") == files,
                         "Seconde passe : verdict ou fichiers finaux non conformes")
-                require(19 <= report.get("score", 0) <= 20 and (report["score"] == 20 or report.get("minor_reserve_justification")),
-                        "Seconde passe : note ou justification insuffisante")
+                require(report.get("score") == 20,
+                        "Seconde passe : 20/20 requis par l'instruction de clarté")
         first = proof(tree, passes[0]["report"], "Passe1")
         second = proof(tree, passes[1]["report"], "Passe2")
         require(dated(first["finished_at"]) <= dated(second["started_at"]), "Les deux passes se chevauchent")
