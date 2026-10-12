@@ -140,6 +140,10 @@ try:
         assert '<script>window.MEDINA_ALIAS=' in s
         s=s.replace('<script>window.MEDINA_ALIAS=','<script>window.MEDINA_COMPLETE='+json.dumps(completed)+';</script><script>window.MEDINA_ALIAS=',1)
         cycle_courses=[c['code'] for c in chap if c.get('production_cycle')==1]
+        provisional_courses=[c['code'] for c in chap if c.get('provisional_injection')]
+        if provisional_courses:
+            notice='''<script>(()=>{const codes=new Set(__CODES__);function mark(){document.querySelectorAll('.mc[data-code]').forEach(el=>{if(!codes.has(el.dataset.code)||el.dataset.provisionalNotice)return;const status=el.querySelector('.mc-status');if(status){el.dataset.provisionalNotice='1';status.append(document.createTextNode(' · Publication provisoire : contre-audit restant.'));}});}new MutationObserver(mark).observe(document.body,{childList:true,subtree:true});mark();})();</script>'''.replace('__CODES__',json.dumps(provisional_courses))
+            s=s.replace('</body>',notice+'</body>',1)
         s=s.replace('</head>','<script>window.MEDINA_CYCLE_COURSES='+json.dumps(cycle_courses)+'</script></head>',1)
         s=s.replace('</head>','<style id="medina-polish">'+open(ROOT+'/shell/polish.css').read()+'</style></head>',1)
         ecg=open(ROOT+'/modules/ecg.json').read() if not selected or fragment['id']=='S01' else '[]'

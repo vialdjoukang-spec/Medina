@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "code": "I63",
+  "pass": 1,
+  "started_at": "2026-10-11T23:20:20.265037+00:00",
+  "finished_at": "2026-10-11T23:27:17.078902+00:00",
+  "medical_human_validation": false,
+  "dimensions": {
+    "redaction": "Lecture complète des six HTML et glossaire. Plan et mécanismes cohérents. Expansions grammaticales fautives et deux gradations linéaires contraires à instructionclarté.",
+    "medecine": "Doses et seuils contrôlés; omissions de sécurité et de populations/exceptions pertinentes identifiées; aucune prescription américaine silencieuse.",
+    "sources": "Sources nationales CH21/PRE21 et protocoleBern2026 effectivement téléchargés; informations professionnelles exactes et passages analytiques lus. ContenuCH21tables1–6 incomplet malgré matrice auteur; couverture ne peut être déclarée complète.",
+    "frontend": "Quatre onglets/cinq sciences,47fenêtres et8entrées glossaire récursives réellement ouverts à1360et390px. Pas JS/débordement, clavier/palette/police corrects. Mesure détaillée de toutesfigures poursuivieP2."
+  },
+  "numerical_checks": [
+    {
+      "claim": "Altéplase cérébrale 0,9mg/kg, maximum90mg, bolus10%, reste60min",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680483130277",
+      "section": "Posologie AVC",
+      "passage": "La dose totale recommandée est de 0,9 mg/kg (maximum90mg), 10% en bolus, reste en perfusion60min.",
+      "finding": "Dose et exemple70kg=63mg,6,3+56,7 cohérents."
+    },
+    {
+      "claim": "Actilyse dès16ans et fenêtre4,5h",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680483130277",
+      "section": "Posologie AVC",
+      "passage": "Le traitement doit être instauré chez les adultes et enfants âgés≥16 ans au maximum4,5heures après dernier état asymptomatique.",
+      "finding": "Donnée correctement attribuée au produit exact."
+    },
+    {
+      "claim": "Metalyse palier60–<70kg17,5mg=3,5mL",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "section": "Posologie tableau1",
+      "passage": "≥60 à<70kg :3500U,17.5mg,3.5mL.",
+      "finding": "Le cours corrige explicitement l’incohérence17mg du tableau bernois."
+    },
+    {
+      "claim": "Metalyse palier70–<80kg20mg=4mL",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "section": "Posologie tableau1",
+      "passage": "≥70 à<80kg :4000U,20mg,4.0mL.",
+      "finding": "Palier produit distingué du calcul nominal0,25mg/kg."
+    },
+    {
+      "claim": "Metalyse dose maximale25mg et bolus5–10s",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "section": "Posologie et mode administration",
+      "passage": "Dose unique maximale5000U(25mg), bolus unique5à10secondes.",
+      "finding": "Concordance cours et monographie."
+    },
+    {
+      "claim": "Seuil glycémie Metalyse<2,8/>22,2mmol/L",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "section": "Mises en garde AVC",
+      "passage": "Glycémie<50mg/dL ou>400mg/dL(<2,8ou>22,2mmol/L), correction avant traitement.",
+      "finding": "Cours distingue ces seuils de normalité."
+    },
+    {
+      "claim": "Anticoagulation efficace INR>1,3 dans FI",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "section": "Contre-indications",
+      "passage": "Anticoagulant oral efficace, par exemple antivitamineK avec INR>1,3.",
+      "finding": "Divergence1,7 de Bern correctement explicitée."
+    },
+    {
+      "claim": "Pas antiagrégant/héparineIV pendant24h",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680699580019",
+      "section": "Traitement associé",
+      "passage": "HéparineIV ou antiagrégants évités24h; autre indication héparineSC≤10000UI/jour.",
+      "finding": "Restriction et exception qualitative correctement séparées."
+    },
+    {
+      "claim": "Apixaban5mg2fois/j ou2,5mg avec2critères",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+      "section": "Posologie FANV",
+      "passage": "5mgdeuxfois/jour ; au moins2critères âge≥80ans, poids≤60kg, créatinine≥133µmol/L→2,5mgdeuxfois/jour.",
+      "finding": "Données exactes et clairance15–29 seule non réduite conformément FI suisse."
+    },
+    {
+      "claim": "Plavix75mg/j, AVC7jours–6mois",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680545090143",
+      "section": "Indications/Posologie/AVC récent",
+      "passage": "AVC récent7joursàenviron6mois;1comprimé75mg/j;nonrecommandé7premiersjours.",
+      "finding": "Divergence usage aigu explicitée."
+    },
+    {
+      "claim": "Aspirine CardioAIT300mg/j",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680517950406",
+      "section": "Posologie AIT",
+      "passage": "100mgtroisfois/jour ou300mgunefois/jour.",
+      "finding": "Dose bernoise100mg/j distincte."
+    },
+    {
+      "claim": "Sortis initial10mg,max80mg,intervalle≥4semaines",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680540850285",
+      "section": "Posologie usuelle",
+      "passage": "Doseinitiale10mg1fois/jour ; ajustements4semainesouplus ; maximum80mg/j.",
+      "finding": "Cohérence source/cours."
+    },
+    {
+      "claim": "Pression IVT<185/110avant et<180/105pendant24h",
+      "source": "https://doi.org/10.1093/esj/aakag004",
+      "section": "Tableau11PICO3",
+      "passage": "Maintenir sous185/110avant bolus,sous180/105après bolus24h.",
+      "finding": "Donnée confirmée visuellement dans tableau original."
+    },
+    {
+      "claim": "Après thrombectomie réussie nepasabaisseractivement<140mmHg24h",
+      "source": "https://doi.org/10.1093/esj/aakag004",
+      "section": "Tableau11PICO4",
+      "passage": "Strong against actively reducing systolicBP<140mmHg for first24h following successful mechanicalthrombectomy.",
+      "finding": "Quiz et cours concordants."
+    },
+    {
+      "claim": "Pas reperfusion BP<220/110,pour>220/120baisse<15%24h",
+      "source": "https://doi.org/10.1093/esj/aakag004",
+      "section": "Tableau11PICO2",
+      "passage": "Pas baisse routinière<220/110 ; consensusbaisseprudente<15%systolique24h si>220/120.",
+      "finding": "Le cours emploie≤15%; différence de borne signalée dans réserves, à aligner sur <15% source."
+    },
+    {
+      "claim": "SortiesAVCsuisses26032en2017et létalité10,5%",
+      "source": "https://doi.org/10.1093/ije/dyaf087",
+      "section": "Résultats et méthodes",
+      "passage": "26032stroke discharges ;overallCF10.5%,multipleshospitalisationsmêmepatientpossibles.",
+      "finding": "Attribution tousAVC2017 et limites conforme."
+    },
+    {
+      "claim": "Pré-dépistage glycémie≥5,6/<7,0mmol/L",
+      "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/Diabetes_Risk-Assessment_Grundversorgung_FR_2014_1_.pdf",
+      "section": "Page3tableau3",
+      "passage": "Glycémieàjeunanormale≥5.6et<7.0;diabète≥7.0mmol/L.",
+      "finding": "Table glucose correcte; gradationHbA1c manque."
+    },
+    {
+      "claim": "PlaquettesAnalytica18–64ans150–370×10^9/L",
+      "source": "https://lvz.analytica.ch/Thrombozyten",
+      "section": "Référence et méthode",
+      "passage": "18–64Jahre150–370G/L ;≥65Jahre160–370G/L.",
+      "finding": "Unités et âge conformes."
+    },
+    {
+      "claim": "Référencescréatininefemmes44–80/hommes62–106µmol/L",
+      "source": "https://lvz.analytica.ch/analysis/Kreatinin",
+      "section": "Referenzbereich",
+      "passage": "F44–80µmol/L ; M62–106µmol/L.",
+      "finding": "Contexte laboratoire explicitement qualifié."
+    },
+    {
+      "claim": "INR=(tempspatient/tempsnormal)^ISI",
+      "source": "https://www.cscq.ch/SiteCSCQ/FichierPDF_FR/FT-Temps-thromboplastine.pdf",
+      "section": "Page2formule",
+      "passage": "Tempspatientdivisétempsplasma normalélevéàpuissanceISI,coupleappareilréactif.",
+      "finding": "Exemple24/12^1=2 et limites cohérents."
+    }
+  ],
+  "final_files": {
+    "chapters/I63/I63_a.html": "c44c3c87f83ebf680162a9dcf397bbbcd28bf714c91cce48bf76b6d41499db45",
+    "chapters/I63/I63_b.html": "7024e567758cc5100d7ddee0ca636a049726995669844cf55f00e8aea346ebc3",
+    "chapters/I63/I63_c.html": "8cd1ad8523b672f0d02ae6366f6c0a8308f37527acfa8091355f074722fa6918",
+    "chapters/I63/I63_d.html": "070a6bb55c246170f19a01b75c302051b1f43c658f995c90c5d74f8fa99ef90c",
+    "chapters/I63/I63_pop1.html": "e411d8deec6756264e4b8352cc4abebc356a82867264c7fa4fd6406663e10e5d",
+    "chapters/I63/I63_pop2.html": "09ab83673ed6e822c9553729a2dd227418b1c6113818017da59a59ac4a48ba46",
+    "glossary/i63.py": "007b3cd86a71ba3fea01f055362810386454cdbe1cba57fdabef43b6220498de"
+  },
+  "blocking_reserves": [
+    {
+      "id": "I63-P1-R1",
+      "severity": "blocking",
+      "finding": "Gradations mRS0–6 et HbA1c encore linéaires; tableau requis, prédiabète HbA1c non défini."
+    },
+    {
+      "id": "I63-P1-R2",
+      "severity": "blocking",
+      "finding": "CouvertureCH21tableaux1–6 partielle : sélections et mismatch manquants; calculvolumea×b×c/2 non enseigné."
+    },
+    {
+      "id": "I63-P1-R3",
+      "severity": "blocking",
+      "finding": "SécuritéFI : arrêtActilyse TP>15s/TCA prolongé et plusieurs contre-indications Aspirine/Plavix/Metalyse non restitués."
+    },
+    {
+      "id": "I63-P1-R4",
+      "severity": "blocking",
+      "finding": "PopulationAIT haut risque DAPT non définie ; CVT grossesse durée et prévention contraceptive omises."
+    },
+    {
+      "id": "I63-P1-R5",
+      "severity": "blocking",
+      "finding": "Expansions de sigles entraînent formulations fautives et ambiguës."
+    },
+    {
+      "id": "I63-P1-R6",
+      "severity": "blocking",
+      "finding": "BP26Table11PICO2 emploie baisse systolique<15%, cours≤15% ; aligner borne et exemple sur prudence sans cible automatique."
+    }
+  ],
+  "score": 14,
+  "score_reason": "Ommission de contre-indications pertinentes : tolérancezéro du Prompt impose<15/20 jusqu’à correction.",
+  "verdict": "defavorable_corrections_requises",
+  "browser_proof": {
+    "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_I63/browser_pass1.json",
+    "sha256": "4351013faa517880f2832371298411ad0d791fcbe762101bebe8ccb6f6fb3846"
+  },
+  "author_requests_delivered": true,
+  "scope": "P1 réelle actuelle; ni historique réécrit ni validation humaine."
+}

@@ -1,0 +1,39 @@
+{
+  "code": "E11",
+  "actor": "C01-R-NEPH",
+  "created_at": "2026-10-11T23:29:16.762978+00:00",
+  "findings": [
+    {
+      "id": "E11-P1-01",
+      "dimension": "frontend",
+      "blocking": true,
+      "location": "E11_pop2 nouveauxdéveloppementslexicaux",
+      "finding": "Huitabréviationsnoncouvertes :IL,CYP,GA,HG,COR,ESC2023,EPI,EPIdemiology.",
+      "requested_fix": "Remplacerblocsnus pardéveloppementslexicaux corrects,espacer ESC2023,réécrire EPIdemiology ;aucunemodificationglobale."
+    },
+    {
+      "id": "E11-P1-02",
+      "dimension": "frontend",
+      "blocking": true,
+      "location": "e11-proxy-ckdepi/eas/fevg",
+      "finding": "Trois fenêtresinaccessiblespar tous parcours bureau/mobile.",
+      "requested_fix": "Relierdéclencheurscontextuels réels ou supprimer doublonsinutiles."
+    },
+    {
+      "id": "E11-P1-03",
+      "dimension": "medecine",
+      "blocking": true,
+      "location": "e11-pied",
+      "finding": "CouvertureQualiCCareincomplète :1A/1B,nonplantaire/durée/infectionlocale,<10 %/semaine etredflags tcPO2<25,dialyse,neuropathieaiguëdouloureuse,nécrosenoire,déformation sévère.",
+      "requested_fix": "Tableaucompact1A/1B etredflags,populations/limites,calcul%sourced ;sansparaphraserhorscontexte."
+    },
+    {
+      "id": "E11-P1-04",
+      "dimension": "redaction",
+      "blocking": true,
+      "location": "e11-s-histo",
+      "finding": "Cascade βrobuste maisorganisation endocrine normale ettissus ciblesnonposés explicitement avant physiopathologie.",
+      "requested_fix": "Courte présentation normale îlotα/βcommunication/foie/muscle/graisse/rein/intestin,schématableauetlecture,fondéGalicia-Garcia2020§§2/4.1/5.1/5.3."
+    }
+  ]
+}

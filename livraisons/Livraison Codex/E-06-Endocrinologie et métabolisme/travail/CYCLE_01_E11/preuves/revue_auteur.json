@@ -4,14 +4,15 @@
   "chapter_title": "Diabète sucré de type2",
   "fragment_id": "S05",
   "actor": "C01-R-ENDO",
-  "runtime_agent_id": "/root/c01_r_endo_resume",
-  "role": "author",
+  "runtime_agent_id": "/root/c01_r_endo",
+  "recorded_at": "2026-10-11T23:46:37.613595+00:00",
   "medical_human_validation": false,
   "entry": {
     "actor": "C01-R-ENDO",
-    "runtime_agent_id": "/root/c01_r_endo_resume",
-    "checked_at": "2026-10-11T21:58:49.990360+00:00",
+    "runtime_agent_id": "/root/c01_r_endo",
+    "checked_at": "2026-10-11T23:44:35.795868+00:00",
     "verdict": "conforme",
+    "application_scope": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée.",
     "prompt_files": {
       "PROMPT_MEDINA.md": "b01cd3421cee0e2b0f0d953c66e2ba97521ffa64656f0ef4bc0b4ce478d95fe2",
       "PROMPT_TRANSITION.md": "573db933ab4da4c79b1138d5ea2b123f3e7a2bcdd956d223a45a589e0f25ed7b",
@@ -19,31 +20,15 @@
       "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
       "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
     },
-    "phase": "Entrée corrective de collision structurelle mg/dL, après remise auteur préservée, avant modification",
-    "prior_review": {
-      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-      "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-      "explanation": "Remise précédente figée conservée sans effacement ni modification rétrospective."
-    },
     "checks": [
       {
         "id": "autorisation",
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-            "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-            "explanation": "Cadre auteur et sept fichiers contrôlés avant la correction locale ; aucune nouvelle mission ni auditN17."
-          },
-          {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/mgdl_before_runtime.json",
-            "sha256": "867edffe5a825608c2cff9cc4e654869239e93ebab07c4774e78f71a086306c4",
-            "explanation": "Définition G réellement ouverte et trois déclencheurs data-ab constatés ; correction localisée autorisée par coordinateur."
-          },
-          {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Calcul et conversion cliquables, portée et sources spécifiques ; aucun seuil hors contexte à reprendre."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/constat_entree.json",
+            "sha256": "76a68d0ff37f62a9eef955cebb19470b2b1ba905445e33c46522bb4fc48ce5b0",
+            "explanation": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée."
           }
         ]
       },
@@ -52,19 +37,9 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-            "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-            "explanation": "Cadre auteur et sept fichiers contrôlés avant la correction locale ; aucune nouvelle mission ni auditN17."
-          },
-          {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/mgdl_before_runtime.json",
-            "sha256": "867edffe5a825608c2cff9cc4e654869239e93ebab07c4774e78f71a086306c4",
-            "explanation": "Définition G réellement ouverte et trois déclencheurs data-ab constatés ; correction localisée autorisée par coordinateur."
-          },
-          {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Calcul et conversion cliquables, portée et sources spécifiques ; aucun seuil hors contexte à reprendre."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/constat_entree.json",
+            "sha256": "76a68d0ff37f62a9eef955cebb19470b2b1ba905445e33c46522bb4fc48ce5b0",
+            "explanation": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée."
           }
         ]
       },
@@ -73,19 +48,9 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-            "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-            "explanation": "Cadre auteur et sept fichiers contrôlés avant la correction locale ; aucune nouvelle mission ni auditN17."
-          },
-          {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/mgdl_before_runtime.json",
-            "sha256": "867edffe5a825608c2cff9cc4e654869239e93ebab07c4774e78f71a086306c4",
-            "explanation": "Définition G réellement ouverte et trois déclencheurs data-ab constatés ; correction localisée autorisée par coordinateur."
-          },
-          {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Calcul et conversion cliquables, portée et sources spécifiques ; aucun seuil hors contexte à reprendre."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/constat_entree.json",
+            "sha256": "76a68d0ff37f62a9eef955cebb19470b2b1ba905445e33c46522bb4fc48ce5b0",
+            "explanation": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée."
           }
         ]
       },
@@ -94,19 +59,9 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-            "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-            "explanation": "Cadre auteur et sept fichiers contrôlés avant la correction locale ; aucune nouvelle mission ni auditN17."
-          },
-          {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/mgdl_before_runtime.json",
-            "sha256": "867edffe5a825608c2cff9cc4e654869239e93ebab07c4774e78f71a086306c4",
-            "explanation": "Définition G réellement ouverte et trois déclencheurs data-ab constatés ; correction localisée autorisée par coordinateur."
-          },
-          {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Calcul et conversion cliquables, portée et sources spécifiques ; aucun seuil hors contexte à reprendre."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/constat_entree.json",
+            "sha256": "76a68d0ff37f62a9eef955cebb19470b2b1ba905445e33c46522bb4fc48ce5b0",
+            "explanation": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée."
           }
         ]
       },
@@ -115,19 +70,9 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-            "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-            "explanation": "Cadre auteur et sept fichiers contrôlés avant la correction locale ; aucune nouvelle mission ni auditN17."
-          },
-          {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/mgdl_before_runtime.json",
-            "sha256": "867edffe5a825608c2cff9cc4e654869239e93ebab07c4774e78f71a086306c4",
-            "explanation": "Définition G réellement ouverte et trois déclencheurs data-ab constatés ; correction localisée autorisée par coordinateur."
-          },
-          {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Calcul et conversion cliquables, portée et sources spécifiques ; aucun seuil hors contexte à reprendre."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/constat_entree.json",
+            "sha256": "76a68d0ff37f62a9eef955cebb19470b2b1ba905445e33c46522bb4fc48ce5b0",
+            "explanation": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée."
           }
         ]
       },
@@ -136,19 +81,9 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-            "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-            "explanation": "Cadre auteur et sept fichiers contrôlés avant la correction locale ; aucune nouvelle mission ni auditN17."
-          },
-          {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/mgdl_before_runtime.json",
-            "sha256": "867edffe5a825608c2cff9cc4e654869239e93ebab07c4774e78f71a086306c4",
-            "explanation": "Définition G réellement ouverte et trois déclencheurs data-ab constatés ; correction localisée autorisée par coordinateur."
-          },
-          {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Calcul et conversion cliquables, portée et sources spécifiques ; aucun seuil hors contexte à reprendre."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/constat_entree.json",
+            "sha256": "76a68d0ff37f62a9eef955cebb19470b2b1ba905445e33c46522bb4fc48ce5b0",
+            "explanation": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée."
           }
         ]
       },
@@ -157,19 +92,9 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-            "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47",
-            "explanation": "Cadre auteur et sept fichiers contrôlés avant la correction locale ; aucune nouvelle mission ni auditN17."
-          },
-          {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/mgdl_before_runtime.json",
-            "sha256": "867edffe5a825608c2cff9cc4e654869239e93ebab07c4774e78f71a086306c4",
-            "explanation": "Définition G réellement ouverte et trois déclencheurs data-ab constatés ; correction localisée autorisée par coordinateur."
-          },
-          {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Calcul et conversion cliquables, portée et sources spécifiques ; aucun seuil hors contexte à reprendre."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/constat_entree.json",
+            "sha256": "76a68d0ff37f62a9eef955cebb19470b2b1ba905445e33c46522bb4fc48ce5b0",
+            "explanation": "Complément exact Huminsulin Basal NPH demandé par C01-R-NEPH pendant sa seconde passe ; une phrase de posologie, aucune modification de dose individualisée."
           }
         ]
       }
@@ -177,8 +102,10 @@
   },
   "exit": {
     "actor": "C01-R-ENDO",
-    "checked_at": "2026-10-11T22:26:59.675085+00:00",
+    "runtime_agent_id": "/root/c01_r_endo",
+    "checked_at": "2026-10-11T23:46:37.613595+00:00",
     "verdict": "conforme",
+    "application_scope": "Sortie réelle du complément NPH exact, après lecture et rendu bureau/mobile.",
     "prompt_files": {
       "PROMPT_MEDINA.md": "b01cd3421cee0e2b0f0d953c66e2ba97521ffa64656f0ef4bc0b4ce478d95fe2",
       "PROMPT_TRANSITION.md": "573db933ab4da4c79b1138d5ea2b123f3e7a2bcdd956d223a45a589e0f25ed7b",
@@ -192,14 +119,14 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
-            "sha256": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e",
-            "explanation": "Cycle1E11 authorisé ; instruction de clarté appliquée, aucune extension de cycle."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+            "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5",
+            "explanation": "Demande C01-R-NEPH pendant P2 : modalités exactes Huminsulin Basal NPH de la FI suisse, sans généralisation aux autres basales."
           },
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-            "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046",
-            "explanation": "Décisions séparées, extraits téléchargés, populations et limites, surfaces sept fichiers avec empreintes finales."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+            "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9",
+            "explanation": "Passage primaire réel et nouvelle assertion liés aux sept empreintes finales."
           }
         ]
       },
@@ -208,14 +135,14 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/lecture_surfaces_runtime.json",
-            "sha256": "f06530e1bcd1f54d0db402d2f2cc6bee5e44f3830fb65a4a3c4e85797942f1a4",
-            "explanation": "Sept sources delivery uniquement ; huit originaux Claude et état avant reprise préservés ; aucun fichier canonique modifié."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+            "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5",
+            "explanation": "Demande C01-R-NEPH pendant P2 : modalités exactes Huminsulin Basal NPH de la FI suisse, sans généralisation aux autres basales."
           },
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-            "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046",
-            "explanation": "Décisions séparées, extraits téléchargés, populations et limites, surfaces sept fichiers avec empreintes finales."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+            "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9",
+            "explanation": "Passage primaire réel et nouvelle assertion liés aux sept empreintes finales."
           }
         ]
       },
@@ -224,14 +151,14 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/numerical_checks_runtime.json",
-            "sha256": "17837f136bc24774796aa59a397b1fef7517c895c253682f855582f0aa35145c",
-            "explanation": "Passages primaires réellement lus et vérifications auteur23 ; sources/P1retrouvés ; pas références de mémoire."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+            "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5",
+            "explanation": "Demande C01-R-NEPH pendant P2 : modalités exactes Huminsulin Basal NPH de la FI suisse, sans généralisation aux autres basales."
           },
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-            "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046",
-            "explanation": "Décisions séparées, extraits téléchargés, populations et limites, surfaces sept fichiers avec empreintes finales."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+            "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9",
+            "explanation": "Passage primaire réel et nouvelle assertion liés aux sept empreintes finales."
           }
         ]
       },
@@ -240,14 +167,14 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/matrice_contexte_suisse.json",
-            "sha256": "fd551c5036a5db43d0a9f39934a9cc526c6a631ac2f94315f86e0f8fe35edcf4",
-            "explanation": "Couverture18domaines pertinents des recommandations suisses ; exceptions et périmètres nonE11explicités ; FIet laboratoire propres contextualisés."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+            "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5",
+            "explanation": "Demande C01-R-NEPH pendant P2 : modalités exactes Huminsulin Basal NPH de la FI suisse, sans généralisation aux autres basales."
           },
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-            "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046",
-            "explanation": "Décisions séparées, extraits téléchargés, populations et limites, surfaces sept fichiers avec empreintes finales."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+            "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9",
+            "explanation": "Passage primaire réel et nouvelle assertion liés aux sept empreintes finales."
           }
         ]
       },
@@ -256,14 +183,14 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/corrections_P1_runtime.json",
-            "sha256": "efcf32e8f9fce5fff9e29c29a5197e32146e24e8ac8d3f3cfa35e3aa46e800cb",
-            "explanation": "Corrections auteur deP1historique ; anciennes passes préservées ; deux nouvelles passes indépendantes attendues, pas auto-audit."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+            "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5",
+            "explanation": "Demande C01-R-NEPH pendant P2 : modalités exactes Huminsulin Basal NPH de la FI suisse, sans généralisation aux autres basales."
           },
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-            "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046",
-            "explanation": "Décisions séparées, extraits téléchargés, populations et limites, surfaces sept fichiers avec empreintes finales."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+            "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9",
+            "explanation": "Passage primaire réel et nouvelle assertion liés aux sept empreintes finales."
           }
         ]
       },
@@ -272,14 +199,14 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/technical_checks_runtime.json",
-            "sha256": "101ec30bd68f8b8507a828c809198203a7a6bcf3b679b5d487142a15acfdd02c",
-            "explanation": "Quatre panneaux et quatre sous-onglets montés, fenêtres ouvertes, calculs/gradations/figures accessibles, desktop/mobile sans captures."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+            "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5",
+            "explanation": "Demande C01-R-NEPH pendant P2 : modalités exactes Huminsulin Basal NPH de la FI suisse, sans généralisation aux autres basales."
           },
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-            "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046",
-            "explanation": "Décisions séparées, extraits téléchargés, populations et limites, surfaces sept fichiers avec empreintes finales."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+            "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9",
+            "explanation": "Passage primaire réel et nouvelle assertion liés aux sept empreintes finales."
           }
         ]
       },
@@ -288,72 +215,54 @@
         "status": "conforme",
         "evidence": [
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/lecture_surfaces_runtime.json",
-            "sha256": "f06530e1bcd1f54d0db402d2f2cc6bee5e44f3830fb65a4a3c4e85797942f1a4",
-            "explanation": "Runtime actuel, dates sincères, limites des résumés et du registre explicites ; aucune note ni validation médicale humaine."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+            "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5",
+            "explanation": "Demande C01-R-NEPH pendant P2 : modalités exactes Huminsulin Basal NPH de la FI suisse, sans généralisation aux autres basales."
           },
           {
-            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-            "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046",
-            "explanation": "Décisions séparées, extraits téléchargés, populations et limites, surfaces sept fichiers avec empreintes finales."
+            "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+            "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9",
+            "explanation": "Passage primaire réel et nouvelle assertion liés aux sept empreintes finales."
           }
         ]
       }
-    ],
-    "runtime_agent_id": "/root/c01_r_endo_resume",
-    "phase": "sortie auteur après corrections et vérifications réelles ; nouvelle revue indépendante requise"
+    ]
   },
   "final_files": {
     "chapters/E11/E11_a.html": "d0526e17c7797bdbf820e400e7052caf75658545b9666a4c34ad5248e1b01ad2",
     "chapters/E11/E11_b.html": "c1299fef89891d4a2d1c8fd8de531a831b534f11f1a456d6450291617689dcb9",
-    "chapters/E11/E11_c.html": "65e1d87462394296800437f5ce65ff7fba43544a9cbe45b246df5564ad2664ce",
+    "chapters/E11/E11_c.html": "d8afa30046fedff79226e191fab9cba4fc063103c5df830a8da1fe4b34be8a47",
     "chapters/E11/E11_d.html": "fabc0f21c0d07909f887df2c6fafe77ea5fc7c993ab07bde98a50c8eec5a64e8",
-    "chapters/E11/E11_pop1.html": "4e5b30dd3d5925c088a7475a302b2feed2dbb68dafd4c990fd7b62281074ed0e",
-    "chapters/E11/E11_pop2.html": "587fea2b2a44e5ed7df5047dc3763ef5d3e7373f49478bd6cf8ac07258d33e2f",
+    "chapters/E11/E11_pop1.html": "e477d35397c22600810a794d39b0d1bdb450094d2cba45f2df3242ee7e47ec6d",
+    "chapters/E11/E11_pop2.html": "5dc7b8a4d09ca3ee136bf960eb79fa0ad5cc61c957c9fecb13b51e23afa72bcc",
     "glossary/e11.py": "0cc606e6fd993a8647c1671017b58783cb0b4a97e6f30601ae89acc7abcd26bd"
   },
   "blocking_reserves": [],
   "source_ledger": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/source_ledger.json",
-    "sha256": "52b45bf1fd8349f85972c07d96cdc56b94631f40f2119ac93906e403df0fb046"
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/source_ledger.json",
+    "sha256": "5752f64dd630d382ce6bd0453993524f71217f2df301e3eb96619988caba74b9"
   },
   "swiss_context": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/matrice_contexte_suisse.json",
-    "sha256": "fd551c5036a5db43d0a9f39934a9cc526c6a631ac2f94315f86e0f8fe35edcf4"
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/matrice_contexte_suisse.json",
+    "sha256": "bc374da6829bb21ffea4ac62680e1d66c95c5266a899d75687ba6920b706f205"
   },
   "technical_checks": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/technical_checks_runtime.json",
-    "sha256": "101ec30bd68f8b8507a828c809198203a7a6bcf3b679b5d487142a15acfdd02c"
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/correction.json",
+    "sha256": "08e4badb7274be7d0ff29ad921ca88659454ab24506b3ba4752228c15d9f6df5"
   },
   "corrections": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/corrections_P1_runtime.json",
-    "sha256": "efcf32e8f9fce5fff9e29c29a5197e32146e24e8ac8d3f3cfa35e3aa46e800cb"
-  },
-  "clarity_inventory": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/inventaire_clarte_calculs_normalite.json",
-    "sha256": "5d7a3397e20da9b1739e20f78dc3fe526fc9d2b33570a24c9583945ef4285a75"
-  },
-  "manual_primary_checks": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/numerical_checks_runtime.json",
-    "sha256": "17837f136bc24774796aa59a397b1fef7517c895c253682f855582f0aa35145c"
-  },
-  "historical_review": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/provenance/remise_avant_correction_unite_mgdl_2026-10-11/preuves/revue_auteur.json",
-    "sha256": "c8f9262ab507cd2d500c827783aed5b41d45077120c4ae423d0cb9de86cdea47"
-  },
-  "unit_collision_correction": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/correction_unite_mgdl_runtime.json",
-    "sha256": "8f928db9cb4dcf58c5bd2130a42517cb660cda58cecd6736bf00bdbaa865ac14"
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/correction_audit_croise_20261012/corrections.json",
+    "sha256": "dfa6aa6d1e9adc747de3e18bea34f0b111fe9354607550abf294798dcc673b7b"
   },
   "recursive_browser_check": {
-    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/recursive_browser_runtime.json",
-    "sha256": "62bb9a466e37408eb9056f0526c96f2139b724ee838adeb8d721e755effc7df3"
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/rendu.json",
+    "sha256": "36d8cdb15d843514390200a39138e08615213028385614f298191f32aac2f5e0"
+  },
+  "historical_review": {
+    "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_01_E11/preuves/ajustement_NPH_P2/avant_revue_auteur.json",
+    "sha256": "92f63a8e7fae3651c5bb50a922702118bcb0f12e6a5cb381f3e718fff7eb3bc2"
   },
   "nonblocking_limits": [
-    "Remise auteur pour audit ; 20/20 non attribué. Deux nouvellespasses indépendantes actualisées et contre-audit requis.",
-    "Captures finales et comparaisons réservées au coordinateur ; aucune capture nouvelle auteur.",
-    "Documents financiers historiques2023/2025 ne sont pas présentés comme prise encharge OFSP actuelle.",
-    "Primaires par passages pertinents, essais par résumé si cité ainsi ; pas lecture exhaustive de bibliographie.",
-    "Les extraits localisés et le nombre de lignes ne prouvent pas seuls la conformité ; sources et décision restent relisibles indépendamment."
+    "Revue auteur corrective ettestsne remplacentni lasecondepasse croisée,ni contre-audit,ni médecin."
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "code": "D50",
+  "actor": "C01-R-HEM",
+  "runtime_agent_id": "/root/c01_r_hem",
+  "checked_at": "2026-10-11T23:30:38.559097+00:00",
+  "medical_human_validation": false,
+  "scope": "Corrections ciblées des demandes P1 de C01-R-NEUR; aucune réécriture globale, aucune auto-note.",
+  "original_file_sha256": "780c31951360f27c210510f77a8ac796fd7e6c5102f11e86fb0d3a7bd73b9ede",
+  "requests": [
+    "Arrondi Ferinject depuis bases",
+    "Comparaison mediX/sociétés spécialisées",
+    "Préconception cibleOnkopedia>50 distincte du seuilgrossesse30"
+  ],
+  "sources_read_now": [
+    {
+      "id": "FERINJECT",
+      "artifact": "/workspace/work/medina-resume/neur/sources/FERINJECT.txt",
+      "sha256": "c7374bab3a4dbfc9293b15bf014cd25cc6a6cd6ba2664fd66bb646f124f8d165",
+      "section": "Posologie,arrondi≤66/>66kg,formuleGanzoni"
+    },
+    {
+      "id": "MEDIX",
+      "artifact": "/workspace/work/medina-resume/neur/sources/MEDIX_WEB.json",
+      "sha256": "60b4704ee02ecb53a014c00ae6932d80b9ae3899479d9a3ae9365d9e5101df2f",
+      "section": "Texte primaireguideactualisé08/2025,3.2et4.2"
+    },
+    {
+      "id": "SGGG2022",
+      "artifact": "/workspace/work/medina-resume/neur/sources/SGGG2022.txt",
+      "sha256": "b45a509f99d34b2ccfc70f0f00ed397b48db9927629933098c2ac91ec0a31d6f",
+      "section": "Diagnostic,dépistage,traitementgrossesse"
+    },
+    {
+      "id": "DELPHI2019",
+      "artifact": "/workspace/work/medina-resume/neur/sources/DELPHI2019FULL.txt",
+      "sha256": "8145b7da5beed224a8eda503fcad027ec6ddf39239bd81f6312f61abdec46205",
+      "section": "Sectiongastroentérologie,restrictioninflammatoire"
+    },
+    {
+      "id": "ONK2025",
+      "artifact": "/workspace/work/medina-resume/neur/sources/ONK2025.txt",
+      "sha256": "946e6e87d454d1710a2bc22909215f60484262e96ce4ebbfda94a50797179c30",
+      "section": "4.2.1,ciblepréconception"
+    },
+    {
+      "id": "BSG2021",
+      "artifact": "/workspace/work/medina-resume/neur/sources/BSG2021.txt",
+      "sha256": "403cd67f5f2a96a83f35452859aae8339b8716d6eed2ac1adc71e62a28c593ad",
+      "section": "Recommandations7–11,populationsendoscopie"
+    },
+    {
+      "id": "ESC2026",
+      "artifact": "/workspace/work/medina-resume/neur/sources/ESC_SLIDES2026.pdf",
+      "sha256": "432de58295936cd6418cbd6e7152c56775017ab07080fb8b83e96e07c9a2e639",
+      "section": "Page91,deuxrecommandationsfer"
+    }
+  ],
+  "contextual_render_correction": {
+    "requested_by": "C01-R-NEUR",
+    "checked_at": "2026-10-11T23:38:44.397399+00:00",
+    "change": "BSG/ESC/mediX vers fenêtre locale; titre sans appel involontaire au glossaire partagé; aucune donnée médicale modifiée."
+  }
+}

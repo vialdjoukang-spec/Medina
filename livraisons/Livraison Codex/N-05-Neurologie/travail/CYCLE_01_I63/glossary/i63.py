@@ -14,3 +14,21 @@ _a('NOTCH3',[('NOTCH', 'nom de la famille de récepteurs Notch, non acronyme let
 _a('AcT',[('A', 'Alteplase'), ('c', 'Compared to'), ('T', 'Tenecteplase')],'Alteplase Compared to Tenecteplase','<p>Nom de l’essai décrit par l’information professionnelle suisse de Metalyse ; population éligible à la thrombolyse dans les 4,5 heures.</p>','i63-metalyse')
 _a('ECASS-III',[('E', 'European'), ('C', 'Cooperative'), ('A', 'Acute'), ('S', 'Stroke'), ('S', 'Study'), ('III', 'troisième étude')],'European Cooperative Acute Stroke Study III','<p>Essai européen décrit dans l’information professionnelle Actilyse ; sélection et résultats figurent dans la fenêtre.</p>','i63-actilyse')
 _a('SPARCL',[('S', 'Stroke'), ('P', 'Prevention by'), ('A', 'Aggressive'), ('R', 'Reduction in'), ('C', 'Cholesterol'), ('L', 'Levels')],'Stroke Prevention by Aggressive Reduction in Cholesterol Levels','<p>Essai décrit dans l’information professionnelle Sortis ; bénéfice préventif et analyses hémorragiques sont distingués.</p>','i63-sortis')
+
+if 'ABCD2' not in G:
+    a('ABCD2', [('A','Age (âge)'),('B','Blood pressure (pression artérielle)'),('C','Clinical features (signes cliniques)'),('D','Duration (durée) et Diabetes (diabète)'),('2','deux composantes commençant par D')], 'Score clinique de risque après accident ischémique transitoire', '<p>Le score additionne âge, pression, signes, durée et diabète. Son seuil de sélection thérapeutique ne diagnostique pas l’accident transitoire et ne remplace pas l’urgence ni l’imagerie.</p>', 'i63-calcul-risque-ait')
+
+if 'CHANCE' not in G:
+    a('CHANCE', [('CHANCE', 'nom d’un essai clinique, conservé sans développement littéral inventé')], 'Essai clinique de bithérapie après accident cérébral mineur ou transitoire', '<p>La recommandation européenne 2021 précise la population, le critère de risque et les limites de cet essai ; les sélections des trois essais ne sont pas interchangeables.</p>', 'i63-bitherapie')
+
+if 'POINT' not in G:
+    a('POINT', [('POINT', 'nom d’un essai clinique, conservé sans développement littéral inventé')], 'Essai clinique de bithérapie après accident cérébral mineur ou transitoire', '<p>La recommandation européenne 2021 précise la population, le critère de risque et les limites de cet essai ; les sélections des trois essais ne sont pas interchangeables.</p>', 'i63-bitherapie')
+
+if 'FASTER' not in G:
+    a('FASTER', [('FASTER', 'nom d’un essai clinique, conservé sans développement littéral inventé')], 'Essai clinique de bithérapie après accident cérébral mineur ou transitoire', '<p>La recommandation européenne 2021 précise la population, le critère de risque et les limites de cet essai ; les sélections des trois essais ne sont pas interchangeables.</p>', 'i63-bitherapie')
+
+if 'SSED' not in G:
+    a('SSED',[('S','Société'),('S','Suisse'),('E','d’Endocrinologie'),('D','et de Diabétologie')],'Société suisse d’endocrinologie et de diabétologie','<p>Le document suisse de septembre 2014 définit les catégories de dépistage et leurs limites chez l’adulte asymptomatique. Ces seuils ne gouvernent pas la correction urgente du glucose pendant un accident vasculaire cérébral.</p>','i63-glucose')
+
+if 'ASPECTS' not in G:
+    a('ASPECTS',[('A','Alberta'),('S','Stroke'),('P','Program'),('E','Early'),('C','Computed'),('T','Tomography'),('S','Score')],'Score tomographique précoce du programme AVC de l’Alberta','<p>Ce décompte décrit les anomalies précoces dans dix régions du territoire cérébral moyen. Il ne mesure pas un volume et ne décide pas seul d’un traitement.</p>','i63-calcul-aspects')
