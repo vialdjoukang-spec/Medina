@@ -44,11 +44,23 @@ class FrontendFilterMetadataTests(unittest.TestCase):
             actual = attach_surface(organisation, ROOT)['nosology']
             with self.subTest(fragment=path.stem):
                 self.assertEqual(actual['filters'], expected)
-                self.assertEqual(actual['gauges'], gauges(inventory['lessons'], frequency))
+                self.assertEqual(actual['gauges'], gauges(actual['lessons'], frequency))
                 for key, codes in actual['filters'].items():
                     self.assertEqual(len(codes), actual['gauges'][key]['total'])
                     self.assertEqual(len(codes), len(set(codes)))
-                self.assertEqual(actual['lessons'], inventory['lessons'])
+                self.assertEqual([item['code'] for item in actual['lessons']],
+                                 [item['code'] for item in inventory['lessons']])
+                # Only these two indicators follow live canonical injections;
+                # the authored plans, stars and all other saved data stay intact.
+                derived = {'state', 'existing_course'}
+                for displayed, saved in zip(actual['lessons'], inventory['lessons']):
+                    self.assertEqual({k: v for k, v in displayed.items() if k not in derived},
+                                     {k: v for k, v in saved.items() if k not in derived})
+                injected = {'S04': 'N17', 'S05': 'E11', 'S06': 'D50', 'S08': 'I63'}.get(path.stem)
+                if injected:
+                    course = next(item for item in actual['lessons'] if item['code'] == injected)
+                    self.assertEqual(course['state'], 'filled')
+                    self.assertEqual(course['existing_course'], injected)
                 self.assertEqual(path.read_bytes(), original_bytes)
 
 
