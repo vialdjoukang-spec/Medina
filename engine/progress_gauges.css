@@ -18,6 +18,15 @@ html body .gauge-fluid{height:100%;background:linear-gradient(180deg,#f5cf69,#d6
 html body .specialty-card :is(h3,.card-count,.card-description){color:#344352!important;text-shadow:none!important}
 html body .specialty-card h3{font-weight:600!important}
 html body .specialty-card .card-count{font-weight:500!important}
+/* Each card stays still; its four destinations are independent native links. */
+html body .specialty-card,html body .specialty-card:hover{transform:none!important}
+html body .specialty-card .card-symbol{
+ flex-shrink:0;transform:none!important;animation:none!important;
+ box-shadow:inset 0 1px 2px #ffffff50,0 0 0 3px #fff,0 0 0 5px color-mix(in srgb,var(--v) 35%,#fff),0 4px 7px #34435224!important;
+}
+html body .specialty-card .card-arrow,html body .specialty-card:hover .card-arrow{transform:none!important;min-width:44px;min-height:44px;text-decoration:none!important}
+html body .gauge[href]{text-decoration:none!important;cursor:pointer}
+html body :is(.gauge[href],.card-arrow):focus-visible{outline:3px solid #315f74;outline-offset:3px}
 /* Enough room for complete labels in both the rail and the mobile drawer. */
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .app{grid-template-columns:320px minmax(0,1fr)}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar{width:320px}
