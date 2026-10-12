@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "code": "N17",
+  "actor": "C01-R-ENDO",
+  "runtime_agent_id": "/root/c01_r_endo",
+  "checked_at": "2026-10-11T23:50:39.572973+00:00",
+  "medical_human_validation": false,
+  "final_files": {
+    "chapters/N17/N17_a.html": "419443a04e2d02d0187c15fea4132908e7d4f0794a34b2b37943a563e4cad75e",
+    "chapters/N17/N17_b.html": "cc1bba4fb07c7264025a92070c9a8526ae9b8c98d5c6674048d24d3ddc825566",
+    "chapters/N17/N17_c.html": "5f280e8ad8c94d81e316fab45a7c7a2e9d3458d73bf53850d61fe57fa1b1c331",
+    "chapters/N17/N17_d.html": "bb79dc5f5cb4dfb481ae3cd5edd00e60eb862909fc4e56adc34cb41f8df62ee7",
+    "chapters/N17/N17_pop1.html": "02aca72d60e0686656aa7058b78498895b73190de9ed524c7529b02188058262",
+    "chapters/N17/N17_pop2.html": "66b7b88a3e46535aa685c56e0980bd33d88a6ab64e65289d4197008d30a2fc7e",
+    "glossary/n17.py": "6b96fe0bfdec7f9c552e48458e2e629d386c145def203370a7e1cdde1ad7c6e7"
+  },
+  "verdict": "conforme",
+  "unresolved_divergences": [],
+  "decisions": [
+    {
+      "id": "N17-SW-01",
+      "claim": "Au moins un des trois critères KDIGO 2012 définit l’IRA ; les critères portent des fenêtres temporelles.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KDEF",
+        "ERDEF",
+        "HUG"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-02",
+      "claim": "Le stade est le plus élevé établi par la créatinine ou par la diurèse ; le stade 3 ne découle pas d’une créatinine élevée isolée sans temporalité.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KDEF",
+        "ERDEF",
+        "HUG"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-03",
+      "claim": "La référence stable antérieure connue et sa date sont recherchées ; une créatinine d’admission déjà anormale ne devient pas automatiquement normale.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KDEF",
+        "ERDEF",
+        "HUG"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-04",
+      "claim": "Le débit estimé calculé à partir de créatinine est limité lorsque la concentration change ; la production, la sécrétion et la dilution sont prises en compte.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "RCREAT"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-05",
+      "claim": "L’évaluation retrouve volume, poids, hémodynamique, médicaments, fonction de référence et diurèse.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "HUG",
+        "KEVAL"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-06",
+      "claim": "La bandelette, le sédiment et la quantification de protéines/albumine orientent les causes ; leurs résultats ne remplacent pas le contexte.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "HUG",
+        "NURINE",
+        "RSED",
+        "REXTRA"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-07",
+      "claim": "L’échographie est urgente en cas de pyonéphrose suspectée ; les délais NICE sont attribués et distingués du bundle institutionnel HUG.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "HUG",
+        "NUS",
+        "UOBS"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-08",
+      "claim": "Une suspicion de pyonéphrose impose une échographie dans les six heures selon la recommandation britannique 148. Une obstruction infectée, bilatérale ou concernant un rein unique nécessite l’avis urologique immédiat. Si une néphrostomie ou un stent est indiqué pour une obstruction haute associée à l’IRA, il doit être réalisé aussi vite que possible et dans les douze heures suivant le diagnostic, et pas seulement organisé.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "NURO",
+        "UOBS",
+        "UPOST"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-09",
+      "claim": "La fraction excrétée du sodium n’est pas un test isolé fiable de séparation fonctionnelle/structurelle, surtout sous diurétiques, sepsis ou congestion.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "RFEN"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-10",
+      "claim": "La rhabdomyolyse est recherchée à partir du contexte, de la créatine kinase et de la discordance pigment/hématies ; la chronologie limite le dosage.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "REXTRA",
+        "PRHAB"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-11",
+      "claim": "Une microangiopathie, une glomérulopathie ou une atteinte de myélome demandent des examens ciblés et un avis spécialisé.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "REXTRA",
+        "RNEPH",
+        "PMYE",
+        "PTMA"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-12",
+      "claim": "La biopsie rénale est conditionnelle, en particulier si une atteinte parenchymateuse spécifique est suspectée ; elle ne sert pas à poser toutes les IRA.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "RNEPH",
+        "NNEPH",
+        "PHIST"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-13",
+      "claim": "La créatinine et la diurèse sont suivies selon l’évolution ; NICE décrit une créatinine quotidienne typique à l’hôpital.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "NMON",
+        "HUG"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-14",
+      "claim": "Le volume est corrigé par cristalloïde isotonique lorsque cela convient ; NaCl 0,9 % Sintetica n’est pas donné indistinctement en cas de surcharge.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KFLUID",
+        "ERFLUID",
+        "FINACL",
+        "HUG"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-15",
+      "claim": "Noradrenalin Sintetica est titré en choc vasomoteur après/avec une correction appropriée du volume ; le concentré est dilué et surveillé.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KFLUID",
+        "ERFLUID",
+        "FINOR"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-16",
+      "claim": "Lasix injectable traite une surcharge compatible avec la FI ; il ne prévient ni ne guérit indifféremment l’IRA et il est contre-indiqué en insuffisance rénale anurique.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KDIUR",
+        "NDIUR",
+        "FILASIX"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-17",
+      "claim": "La dopamine à faible dose n’est pas employée pour prévenir ou traiter l’IRA.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KDOP",
+        "NDIUR"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-18",
+      "claim": "Les médicaments sont revus, les doses réévaluées et les suspensions hémodynamiques temporaires sont assorties d’un plan de reprise.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "HUG",
+        "RMED",
+        "NMED"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-19",
+      "claim": "La forme sévère d’hyperkaliémie et les signes électriques imposent un ECG et un monitorage ; un ECG normal ne suffit pas à exclure le risque.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "UKECG",
+        "RHPOT"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-20",
+      "claim": "Calciumgluconat B.Braun10% Mini-Plasco connect10mL import hospitalier : identité et FI exactes, usage hyperkaliémique hors indication, dose/débit européens expliqués et limites HUG explicites.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "HUGCAL",
+        "PHELCUR",
+        "PHELIMPORT",
+        "CALCURRENT",
+        "BBCATALOG",
+        "UKCALRATE"
+      ],
+      "finding": "Le produit importé fournit 2,25 mmol/10 mL, donc 30 mL=6,75 mmol, soit 0,675 mmol/min en 10 min. Repère européen UKKA2023/ERC2025 explicitement attribué à l’antagonisme urgent hyperkaliémique. Le maximum HUG0,45 mmol/min reste exposé, et le protocole hospitalier applicable est confronté à la pharmacie/spécialistes ; aucune conformité des deux débits ni compromis inventé. UKKA p78–79 justifie le choix européen par la distinction antagonisme/réplétion. Cette explication satisfait le contrat suisse sans fabriquer une recommandation nationale. La propriété théorique de la FI exacte660 mOsm/L est retenue pour la préparation ; HUG280 reste une différence physique inexpliquée, explicitement exclue du choix de voie et de dilution. Les modalités et compatibilités viennent des passages de la FI et du contexte exact de la perfusion continue, et non de ce chiffre inexpliqué."
+    },
+    {
+      "id": "N17-SW-21",
+      "claim": "Actrapid HM, solution soluble et non Insulatard suspension, peut être administré par voie intraveineuse ; le schéma insuline/glucose UKKA est signalé hors indication diabète.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "FIINS",
+        "UKINS",
+        "UKMON"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-22",
+      "claim": "Glucose 10 % Fresenius est le produit exact retenu ; 25 g représentent 250 mL et la charge hydrique ainsi que les contre-indications sont contrôlées.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "FIGLU",
+        "UKINS",
+        "UKMON"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-23",
+      "claim": "Après insuline/glucose, les glycémies sont contrôlées jusqu’à six heures, et les kaliémies à 1, 2, 4, 6 et 24 heures au minimum selon UKKA.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "UKMON",
+        "FIINS"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-24",
+      "claim": "Bicarbonate de sodium Bichsel 8,4 % n’est pas un traitement automatique de toute hyperkaliémie ; sa dose d’acidose, ses limites et incompatibilités sont vérifiées.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "FIBIC",
+        "UKBIC"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-25",
+      "claim": "La suppléance rénale urgente dépend d’un trouble menaçant ou réfractaire et du contexte global, non d’un seuil isolé de créatinine/urée ou d’un pH inventé.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KRRT",
+        "NRRT"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-26",
+      "claim": "Une technique continue est suggérée par KDIGO chez un patient hémodynamiquement instable ; le choix appartient à l’équipe spécialisée.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KMOD"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-27",
+      "claim": "Le néphrologue est contacté selon la gravité et la cause ; les déclencheurs HUG et les délais NICE sont attribués distinctement.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "HUG",
+        "NNEPH"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-28",
+      "claim": "La récupération et le suivi à distance (échéances et risque chronique) restent nécessaires après la sortie. KDIGO demande une évaluation trois mois après l’IRA. La position European Renal Best Practice prévoit, chez les patients à haut risque, un contrôle au plus tard deux mois après la sortie. Aucune de ces échéances ne justifie d’attendre devant une nouvelle aggravation.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KFOLLOW",
+        "ERFOLLOW",
+        "NMON",
+        "NEDUC"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-29",
+      "claim": "Une restriction protéique n’est pas prescrite pour le seul objectif de différer une suppléance ; les cibles quantitatives ne sont pas universalisées.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "ERNUT"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-30",
+      "claim": "Un examen urgent avec contraste cliniquement important n’est pas retardé automatiquement ; le risque et les mesures de prévention sont individualisés.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "NCON",
+        "RMED"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-31",
+      "claim": "Le critère pédiatrique de stade 3 est séparé des critères adultes ; une grossesse et une suspicion de microangiopathie imposent une expertise appropriée.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "KDEF",
+        "PTMA",
+        "NNEPH"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    },
+    {
+      "id": "N17-SW-32",
+      "claim": "Les situations de grossesse, allaitement, insuffisance hépatique/rénale et enfant sont distinguées dans les six monographies suisses retenues.",
+      "auditor_verdict": "conforme",
+      "source_passage_ids": [
+        "FIINS",
+        "FIGLU",
+        "FILASIX",
+        "FINOR",
+        "FINACL",
+        "FIBIC"
+      ],
+      "finding": "Passages primaires et application clinique relus ; population, limites et provenance respectées dans le cours final."
+    }
+  ],
+  "historical_reserve_status": "Constat historique conservé ; décision de cette nouvelle P2 distincte, soumise au contre-audit différé.",
+  "clinical_arbitration": {
+    "calcium_dose_rate": "Le produit importé fournit 2,25 mmol/10 mL, donc 30 mL=6,75 mmol, soit 0,675 mmol/min en 10 min. Repère européen UKKA2023/ERC2025 explicitement attribué à l’antagonisme urgent hyperkaliémique. Le maximum HUG0,45 mmol/min reste exposé, et le protocole hospitalier applicable est confronté à la pharmacie/spécialistes ; aucune conformité des deux débits ni compromis inventé. UKKA p78–79 justifie le choix européen par la distinction antagonisme/réplétion. Cette explication satisfait le contrat suisse sans fabriquer une recommandation nationale.",
+    "calcium_osmolarity": "La propriété théorique de la FI exacte660 mOsm/L est retenue pour la préparation ; HUG280 reste une différence physique inexpliquée, explicitement exclue du choix de voie et de dilution. Les modalités et compatibilités viennent des passages de la FI et du contexte exact de la perfusion continue, et non de ce chiffre inexpliqué.",
+    "indication": "Hypocalcémie aiguë symptomatique seule indication de la FI allemande ; cardioprotection hyperkaliémique hospitalière HUG/PHEL hors indication explicitement enseignée, aucun numéro Swissmedic fictif.",
+    "counter_audit": "Cet avis IA indépendant ne remplace pas les quatre contre-audits ni une validation médicale humaine."
+  },
+  "coverage": "Bundle HUG neuf mesures et critères de recours, sources néphrologie suisse datées, normalités Viollier, suivi et situations particulières confrontés aux compléments ERBP/KDIGO/NICE/UKKA. Aucune omission pertinente nouvelle identifiée après corrections."
+}

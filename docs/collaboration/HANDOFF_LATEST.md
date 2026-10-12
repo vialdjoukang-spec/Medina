@@ -1,3 +1,7 @@
+# Cycle 1 publié sur ordre immédiat puis STOP — 12 octobre 2026
+
+I63, E11, N17 et D50 sont injectés dans les sources canoniques. Les quatre audits croisés ont terminé deux passes à 20/20 sur les empreintes finales. Les contre-audits et le contrôle final complet ne sont pas effectués ; publication provisoire, aucune validation médicale humaine. Le reçu `organisation/CYCLE_01_INJECTION_STOP_2026-10-12.json` lie les 28 sources exactes. Vial ordonne la publication immédiate puis STOP : aucun nouvel agent, aucune production, aucun cycle suivant.
+
 # Cycle 1 lancé — 11 octobre 2026
 
 Sur ordre explicite de Vial, quatre auteurs C01-R-NEUR/ENDO/NEPH/HEM sont engagés sur I63/E11/N17/D50. [Consigne](instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md). Vérification du Prompt en entrée et sortie de chaque mission ; production fondée sur sources réellement lues, puis deux passes croisées, deux contre-audits différés neufs, contrôle final et injections successives. Les brouillons Claude E11/D50 sont préservés et repris dans des dossiers Codex distincts. Aucune injection à cette étape ; cycle 2 non autorisé. Gardes ciblées et contrôles préparés dans cette reprise, sans certifier les fragments complets.

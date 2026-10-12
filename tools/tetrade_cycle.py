@@ -224,6 +224,15 @@ def ready(tree, row):
 
 
 def validate_cycle_guard(before, after):
+    # Latest explicit owner order: publish the four reviewed chapters now, then
+    # STOP. Keep this bounded exception distinct from the completed audit chain.
+    try:
+        from cycle_stop import validate as validate_stop
+    except ModuleNotFoundError:
+        from tools.cycle_stop import validate as validate_stop
+    stopped = validate_stop(before, after)
+    if stopped is not None:
+        return stopped
     old, new = records(before), records(after)
     if old is None and new is None:
         return {}, set()

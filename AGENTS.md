@@ -1,3 +1,7 @@
+## Injection immédiate puis STOP — 12 octobre 2026
+
+Vial ordonne « injecte puis STOP », « MAINTENANT ». Les quatre cours I63/E11/N17/D50 sont injectés sur leurs empreintes finales après les deux passes croisées ; publication provisoire, contre-audits et contrôle final complet non effectués. Lire [l’ordre direct](docs/collaboration/instructions/INJECTION_IMMEDIATE_STOP_VIAL_2026-10-12.md). Toute production, correction, nouvelle mission, veille ou relance est arrêtée après la publication. Le cycle 2 reste fermé.
+
 ## Prompt de vérité mis à jour — clarté, bases et calculs, 11 octobre 2026
 
 Lire et appliquer [la nouvelle instruction directe de Vial](docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md), intégrée dans PROMPT_TRANSITION.md et PROMPT_MEDINA.md : clarté immédiate de toutes les phrases et fenêtres, normalité suisse contextualisée des paramètres, calculs importants cliquables depuis les bases, gradations en tableaux, couverture suisse complète, anatomie/physiologie/biochimie robustes, corrections appliquées et relues, cible 20/20. Elle s'applique dès cette reprise au Cycle 1 ; les preuves antérieures sont conservées et les vérifications d'entrée/sortie sont renouvelées honnêtement sur cette version.

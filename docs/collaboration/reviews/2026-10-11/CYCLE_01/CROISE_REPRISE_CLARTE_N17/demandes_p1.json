@@ -1,0 +1,55 @@
+{
+  "code": "N17",
+  "actor": "C01-R-ENDO",
+  "created_at": "2026-10-11T23:27:15.079032+00:00",
+  "findings": [
+    {
+      "id": "N17-P1-01",
+      "dimension": "sources",
+      "blocking": true,
+      "location": "preuves/source_ledger.json PHYS/HISTO",
+      "finding": "SHA de deux pagesNCBI identique au PDFKDIGO ; provenance incorrecte.",
+      "requested_fix": "Rétablir URL/titre/hash réels de lectureWeb ou document consulté ; conserver constat historique."
+    },
+    {
+      "id": "N17-P1-02",
+      "dimension": "medecine",
+      "blocking": true,
+      "location": "n17-rapports etglossairesréels",
+      "finding": "ACR ouvre AmericanCollegeofRheumatology ; Na⁺/K⁺ ouvrent références/ciblecardio sans contexte rénal. QRS importé expose raccourciresynchronisation hors contexte.",
+      "requested_fix": "Éviter collisionACR en touteslettres ; termesboutons et fenêtrescontextuellesNa⁺K⁺QRS ; nepas éditerglossaireshared."
+    },
+    {
+      "id": "N17-P1-03",
+      "dimension": "sources",
+      "blocking": true,
+      "location": "n17-criteres dernièrecitation",
+      "finding": "UKKA2023 attribuée seule aux critèresKDIGO/arbitrageERBP/HUG.",
+      "requested_fix": "Citer primaires réellementlusKDIGO/ERBP/HUG."
+    },
+    {
+      "id": "N17-P1-04",
+      "dimension": "redaction",
+      "blocking": true,
+      "location": "a§6,c§e2,pop1C0523,C0530,C0623,C0625,C0627,figECG etgradehyperK",
+      "finding": "Infinitifs injonctifs etphrases nominales persistent ; majusculeLa manquante auxparagraphesNICE.",
+      "requested_fix": "Phrasescomplètes, courtes etsujetexplicite ; adapterlesgestes etcalculs."
+    },
+    {
+      "id": "N17-P1-05",
+      "dimension": "frontend",
+      "blocking": true,
+      "location": "Figures1/2 ; numérotation4/5",
+      "finding": "PoliceSVG réellement10,126px à390px ; Figures4et5 apparaissentdeuxfois.",
+      "requested_fix": "Fonttaille lisible≥10,5px, séquencenumérotéeunique+aria cohérent ; sanscapturessupplémentaires."
+    },
+    {
+      "id": "N17-P1-06",
+      "dimension": "redaction",
+      "blocking": true,
+      "location": "glossary/n17.py StatPearls.ref",
+      "finding": "ApprofondissementStatPearls renvoieauxcritèresIRA etnonauxbases scientifiques.",
+      "requested_fix": "Retirer fauxrenvoi ou dirigerversfenêtrescientifiqueutile."
+    }
+  ]
+}

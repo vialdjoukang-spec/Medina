@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "code": "E11",
+  "actor": "C01-R-NEPH",
+  "runtime_agent_id": "/root/c01_r_neph",
+  "role": "cross_audit",
+  "medical_human_validation": false,
+  "entry": {
+    "actor": "C01-R-NEPH",
+    "checked_at": "2026-10-11T23:38:44.284512+00:00",
+    "verdict": "conforme",
+    "prompt_files": {
+      "PROMPT_MEDINA.md": "b01cd3421cee0e2b0f0d953c66e2ba97521ffa64656f0ef4bc0b4ce478d95fe2",
+      "PROMPT_TRANSITION.md": "573db933ab4da4c79b1138d5ea2b123f3e7a2bcdd956d223a45a589e0f25ed7b",
+      "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+      "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+    },
+    "phase": "Entrée renouvelée avant la seconde relecture complète ; entrée P1 prospective conservée séparément.",
+    "checks": [
+      {
+        "id": "autorisation",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md",
+            "sha256": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+            "explanation": "Le cycle1 seul autorise cet audit croisé, après remise auteur distincte."
+          }
+        ]
+      },
+      {
+        "id": "perimetre_provenance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/entree_passe_2.json",
+            "sha256": "f5440572479f7528b6dd7c4b81691cb5299cb114ca895466fc40f6f4f96315af",
+            "explanation": "Entrée effective après P1 et corrections, sept empreintes reçues et vérifiées."
+          }
+        ]
+      },
+      {
+        "id": "sources_lues",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_1.json",
+            "sha256": "abf8a641cc40e9e3a4aa461a4f376ded055b20ac2fc1255e0b6f0f72fd40698b",
+            "explanation": "Passages primaires déjà lus avant la relecture complète distincte ; anciennes preuves conservées."
+          }
+        ]
+      },
+      {
+        "id": "contexte_suisse",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
+            "sha256": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
+            "explanation": "Décisions suisses en premier, FI exactes et divergences non effacées."
+          }
+        ]
+      },
+      {
+        "id": "independance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/entree_prospective.json",
+            "sha256": "3240e0669cb6a5766e9b039d5f5b58ec949f623df3b43c77752b3f2aec7afd8a",
+            "explanation": "Auteur E11=C01-R-ENDO ; cet auditeur C01-R-NEPH n’a modifié aucune source E11."
+          }
+        ]
+      },
+      {
+        "id": "contrat_cours",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_1.json",
+            "sha256": "abf8a641cc40e9e3a4aa461a4f376ded055b20ac2fc1255e0b6f0f72fd40698b",
+            "explanation": "Les sept surfaces et le parcours ont identifié quatre demandes factuelles, à faire corriger par auteur unique."
+          }
+        ]
+      },
+      {
+        "id": "honnetete",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/entree_prospective.json",
+            "sha256": "3240e0669cb6a5766e9b039d5f5b58ec949f623df3b43c77752b3f2aec7afd8a",
+            "explanation": "Aucun score favorable préétabli, aucune validation médicale humaine ni rétrodatation."
+          }
+        ]
+      }
+    ]
+  },
+  "exit": {
+    "actor": "C01-R-NEPH",
+    "checked_at": "2026-10-11T23:59:10.629334+00:00",
+    "verdict": "conforme",
+    "prompt_files": {
+      "PROMPT_MEDINA.md": "b01cd3421cee0e2b0f0d953c66e2ba97521ffa64656f0ef4bc0b4ce478d95fe2",
+      "PROMPT_TRANSITION.md": "573db933ab4da4c79b1138d5ea2b123f3e7a2bcdd956d223a45a589e0f25ed7b",
+      "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "docs/collaboration/instructions/CYCLE_01_EXECUTION_VIAL_2026-10-11.md": "6521aaa1d330cf6be09f3dafb86864037445f3470f84079346ab657d7830397e",
+      "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+    },
+    "phase": "Sortie après seconde passe, ajout NPH corrigé et relu, contenu du Prompt réexaminé.",
+    "checks": [
+      {
+        "id": "autorisation",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+            "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee",
+            "explanation": "Exigence vérifiée dans la seconde passe réelle et les empreintes finales ; limites qualifiées dans ce rapport."
+          }
+        ]
+      },
+      {
+        "id": "perimetre_provenance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+            "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee",
+            "explanation": "Exigence vérifiée dans la seconde passe réelle et les empreintes finales ; limites qualifiées dans ce rapport."
+          }
+        ]
+      },
+      {
+        "id": "sources_lues",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+            "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee",
+            "explanation": "Exigence vérifiée dans la seconde passe réelle et les empreintes finales ; limites qualifiées dans ce rapport."
+          }
+        ]
+      },
+      {
+        "id": "contexte_suisse",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+            "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee",
+            "explanation": "Exigence vérifiée dans la seconde passe réelle et les empreintes finales ; limites qualifiées dans ce rapport."
+          }
+        ]
+      },
+      {
+        "id": "independance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+            "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee",
+            "explanation": "Exigence vérifiée dans la seconde passe réelle et les empreintes finales ; limites qualifiées dans ce rapport."
+          }
+        ]
+      },
+      {
+        "id": "contrat_cours",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+            "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee",
+            "explanation": "Exigence vérifiée dans la seconde passe réelle et les empreintes finales ; limites qualifiées dans ce rapport."
+          }
+        ]
+      },
+      {
+        "id": "honnetete",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+            "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee",
+            "explanation": "Exigence vérifiée dans la seconde passe réelle et les empreintes finales ; limites qualifiées dans ce rapport."
+          }
+        ]
+      }
+    ]
+  },
+  "final_files": {
+    "chapters/E11/E11_a.html": "d0526e17c7797bdbf820e400e7052caf75658545b9666a4c34ad5248e1b01ad2",
+    "chapters/E11/E11_b.html": "c1299fef89891d4a2d1c8fd8de531a831b534f11f1a456d6450291617689dcb9",
+    "chapters/E11/E11_c.html": "d8afa30046fedff79226e191fab9cba4fc063103c5df830a8da1fe4b34be8a47",
+    "chapters/E11/E11_d.html": "fabc0f21c0d07909f887df2c6fafe77ea5fc7c993ab07bde98a50c8eec5a64e8",
+    "chapters/E11/E11_pop1.html": "e477d35397c22600810a794d39b0d1bdb450094d2cba45f2df3242ee7e47ec6d",
+    "chapters/E11/E11_pop2.html": "5dc7b8a4d09ca3ee136bf960eb79fa0ad5cc61c957c9fecb13b51e23afa72bcc",
+    "glossary/e11.py": "0cc606e6fd993a8647c1671017b58783cb0b4a97e6f30601ae89acc7abcd26bd"
+  },
+  "blocking_reserves": [],
+  "passes": [
+    {
+      "number": 1,
+      "report": {
+        "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_1.json",
+        "sha256": "abf8a641cc40e9e3a4aa461a4f376ded055b20ac2fc1255e0b6f0f72fd40698b"
+      }
+    },
+    {
+      "number": 2,
+      "report": {
+        "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/passe_2.json",
+        "sha256": "f057d7cfe1da3b4df7cdfc7ee8e2e980347586c88c8adaa3b0fca962685250ee"
+      }
+    }
+  ],
+  "score": 20,
+  "verdict": "favorable",
+  "browser_proof": {
+    "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/navigateur_p2.json",
+    "sha256": "222f9c5ee2848ea649d56d3af7979f6a638f3ea4e30fc0d4be537e3e091716aa"
+  },
+  "historical_entrance": {
+    "path": "docs/collaboration/reviews/2026-10-11/CYCLE_01/CROISE_REPRISE_CLARTE_E11/entree_prospective.json",
+    "sha256": "3240e0669cb6a5766e9b039d5f5b58ec949f623df3b43c77752b3f2aec7afd8a"
+  }
+}

@@ -34,10 +34,17 @@ def measure(panel):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--out', type=Path)
+    parser.add_argument('--codes', nargs='+', help='Limiter le contrôle aux cours indiqués')
     args = parser.parse_args()
     report = {"base": BASE, "scope": "sciences fondamentales des cours intégrés",
               "courses": {}, "errors": [], "result": "passed"}
     chapters = json.loads((ROOT / 'chapters.json').read_text())
+    if args.codes:
+        selected = set(args.codes)
+        available = {chapter['code'] for chapter in chapters if chapter.get('integrated')}
+        if selected - available:
+            parser.error('Cours non intégrés : ' + ', '.join(sorted(selected - available)))
+        chapters = [chapter for chapter in chapters if chapter['code'] in selected]
     for chapter in chapters:
         if not chapter.get('integrated'):
             continue
@@ -47,7 +54,7 @@ def main():
         previous = subprocess.run(['git', 'show', f'{BASE}:{relative}'], cwd=ROOT,
                                   text=True, capture_output=True)
         baseline_present = previous.returncode == 0
-        if not baseline_present and code not in ('R04', 'J40', 'J96', 'J84', 'J93', 'I27', 'J47', 'J80', 'J81', 'J12', 'J21', 'A53', 'A54', 'B24', 'J69', 'R06', 'C34', 'C45'):
+        if not baseline_present and code not in ('R04', 'J40', 'J96', 'J84', 'J93', 'I27', 'J47', 'J80', 'J81', 'J12', 'J21', 'A53', 'A54', 'B24', 'J69', 'R06', 'C34', 'C45', 'I63', 'E11', 'N17', 'D50'):
             raise RuntimeError(f'{code}: source de comparaison indisponible : {previous.stderr.strip()}')
         # J40 et J96 sont de nouvelles productions : leur absence à la base n'est ni une
         # erreur ni une raison d'abaisser les exigences de la version actuelle.
