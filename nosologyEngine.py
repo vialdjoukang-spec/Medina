@@ -101,11 +101,49 @@ def category_progress(block, inventory_by_code):
     }
 
 
-def global_gauge(root):
+def integrated_course_aliases(root):
+    """Only count catalogue entries with four nonempty canonical course tabs."""
+    root = Path(root)
+    courses = {}
+    for course in read_json(root / 'chapters.json'):
+        if not course.get('integrated'):
+            continue
+        directory = root / 'chapters' / course['code']
+        # A catalogue flag alone is insufficient: the four actual course tabs
+        # must exist and contain text. Popup-only and empty deliveries do not count.
+        if not all((directory / (course['code'] + '_' + tab + '.html')).is_file()
+                   and (directory / (course['code'] + '_' + tab + '.html')).read_text().strip()
+                   for tab in 'abcd'):
+            continue
+        for code in set(course.get('covers', [])) | {course['code']}:
+            courses[code] = course['code']
+    return courses
+
+
+def runtime_inventory(root, fragment, courses=None):
+    """Project current integrated courses onto the saved inventory, without writing it."""
+    root = Path(root)
+    inventory = read_json(root / 'nosology/fragments' / (fragment + '.json'))
+    if courses is None:
+        courses = integrated_course_aliases(root)
+    for lesson in inventory['lessons']:
+        if '.' in lesson['code']:
+            continue
+        course = courses.get(lesson['existing_course']) or courses.get(lesson['code'])
+        lesson['state'] = 'filled' if course else 'empty'
+        if course:
+            lesson['existing_course'] = course
+    inventory['progress'] = progress(inventory['lessons'])
+    return inventory
+
+
+def global_gauge(root, courses=None):
     """Avancement de tout MEDINA, sur les catégories à trois caractères des 22 fragments."""
     lessons = []
+    if courses is None:
+        courses = integrated_course_aliases(root)
     for path in sorted((Path(root) / 'nosology/fragments').glob('*.json')):
-        lessons += [lesson for lesson in read_json(path)['lessons'] if '.' not in lesson['code']]
+        lessons += [lesson for lesson in runtime_inventory(root, path.stem, courses)['lessons'] if '.' not in lesson['code']]
     return progress(lessons)
 
 
@@ -231,10 +269,11 @@ def attach_surface(organisation, root):
     path = Path(root) / 'nosology/fragments' / (organisation['fragment']['id'] + '.json')
     if not path.exists():
         return organisation
-    inventory = read_json(path)
+    courses = integrated_course_aliases(root)
+    inventory = runtime_inventory(root, organisation['fragment']['id'], courses)
     by_code = {item['code']: item for item in inventory['lessons']}
     organisation['nosology'] = inventory
-    organisation['nosology']['global_progress'] = global_gauge(root)
+    organisation['nosology']['global_progress'] = global_gauge(root, courses)
     frequency = read_json(Path(root) / 'nosology/frequency.json')
     organisation['nosology']['gauges'] = gauges(inventory['lessons'], frequency['codes'])
     organisation['nosology']['filters'] = {

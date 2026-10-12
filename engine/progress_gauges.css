@@ -1,0 +1,50 @@
+/* Shared by the portal, every specialty, and the work previews. */
+html body .gauge{
+ display:grid;grid-template-columns:minmax(0,1fr);gap:7px;padding:12px;
+ min-width:0;border:1px solid #a8cddf;border-radius:10px;background:#e7f4fc;
+ box-shadow:inset 0 1px 0 #fff,0 2px 3px #315f7415,0 5px 10px -8px #315f7450;
+ font-size:13px;line-height:1.4;color:#000!important;
+}
+html body .gauge :is(.gauge-label,.gauge-value){color:#000!important;text-shadow:none!important}
+html body .gauge .gauge-label{white-space:nowrap;font-size:13px!important}
+html body .gauge .gauge-value{text-align:left;white-space:nowrap;font-size:13px!important}
+html body .gauge-track{
+ height:12px;border:2px solid #fff;background:#fff;border-radius:5px;
+ box-shadow:0 0 0 1px #87acbf;overflow:hidden;
+}
+html body .gauge-fluid{height:100%;background:linear-gradient(180deg,#f5cf69,#d6a12c);border:0}
+/* Enough room for complete labels in both the rail and the mobile drawer. */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .app{grid-template-columns:320px minmax(0,1fr)}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar{width:320px}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge){
+ display:grid;gap:7px;min-width:0;margin:8px 0;padding:12px!important;
+ border:1px solid #a8cddf!important;border-radius:10px!important;background:#e7f4fc!important;
+ box-shadow:inset 0 1px 0 #fff,0 2px 3px #315f7415,0 5px 10px -8px #315f7450!important;
+ font-size:13px!important;line-height:1.4!important;color:#000!important;text-shadow:none!important;text-decoration:none!important;
+}
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) :is(span,b){
+ color:#000!important;text-shadow:none!important;font-size:13px!important;line-height:1.4!important;
+}
+.nosology-progress .gauge-copy{display:flex;align-items:baseline;flex-wrap:wrap;gap:3px 8px}
+.nosology-progress .gauge-label,.nosology-progress .gauge-abs{white-space:nowrap;font-variant-numeric:tabular-nums}
+.nosology-progress .gauge-label{letter-spacing:0!important}
+html[data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) progress{
+ display:block;width:100%;height:12px;appearance:none;-webkit-appearance:none;
+ accent-color:#d6a12c;border:2px solid #fff!important;border-radius:5px;
+ background:#fff;box-shadow:0 0 0 1px #87acbf!important;
+}
+html[data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) progress::-webkit-progress-bar{background:#fff;border-radius:3px}
+html[data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) progress::-webkit-progress-value{background:linear-gradient(180deg,#f5cf69,#d6a12c);border-radius:3px}
+html[data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) progress::-moz-progress-bar{background:linear-gradient(180deg,#f5cf69,#d6a12c);border-radius:3px}
+.nosology-progress:is([data-mcg-filter],[data-mcg-global]){cursor:pointer;min-height:44px}
+.nosology-progress:is([data-mcg-filter],[data-mcg-global]):focus-visible{outline:3px solid #315f74;outline-offset:3px}
+.mcg-home>.nosology-gauges{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px;border:0}
+@media(max-width:1100px){
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar{width:min(360px,calc(100vw - 16px))}
+}
+@media(max-width:700px){
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar{grid-template-columns:auto 44px minmax(0,1fr)}
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar .searchwrap{min-width:0;width:100%}
+}
+
+.mcg-filter-label{color:#000!important}

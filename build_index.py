@@ -112,7 +112,8 @@ def portal_v2():
                     % (style, weight, base64.b64encode((ROOT / 'shell/fonts' / name).read_bytes()).decode('ascii'))
                     for name, style, weight in (('ahn-400.woff2', 'normal', '400'), ('ahn-400i.woff2', 'italic', '400'),
                                                 ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700')))
-    return faces + (ROOT / 'engine/portal_v2.css').read_text(encoding='utf-8') + (ROOT / 'engine/portal_v3.css').read_text(encoding='utf-8')
+    return faces + ''.join((ROOT / 'engine' / name).read_text(encoding='utf-8')
+                          for name in ('portal_v2.css', 'portal_v3.css', 'progress_gauges.css'))
 
 
 def progress(catalogue):
@@ -188,7 +189,7 @@ def main():
             for key in nosology_totals:
                 nosology_totals[key][0] += stats[key]['filled']; nosology_totals[key][1] += stats[key]['total']
             gauges = '<span class="gauges">' + ''.join(gauge(label, stats[key]['filled'], stats[key]['total'])
-                     for label, key in [('Pathologies fréquentes', 'frequent'), ('Examen fédéral', 'federal_exam'),
+                     for label, key in [('Pathologies fréquentes', 'frequent'), ('Examen Fédéral', 'federal_exam'),
                                         ('Avancement global', 'global')]) + '</span>'
         cards.append(f'''<li class="specialty" data-specialty-item data-search="{html.escape(search_text, quote=True)}">
  <a class="specialty-card" href="fragments/{filename}" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" style="--card-accent:{accent};--card-tint:color-mix(in srgb,{accent} 7%,#fffefa)" title="{html.escape(names[ident]['label'], quote=True)}">
@@ -202,7 +203,7 @@ def main():
     overview = (f'<div class="overview" data-testid="portal-overview" aria-label="Progression de l’atlas">'
                 + ''.join(f'<div class="overview-item"><b>{nosology_totals[key][0]}<small> / {nosology_totals[key][1]}</small></b><span>{text}</span>{gauge(label, *nosology_totals[key])}</div>'
                           for key, label, text in (('frequent', 'Pathologies fréquentes', 'pathologies fréquentes rédigées'),
-                                                   ('federal_exam', 'Examen fédéral', 'catégories de l’examen fédéral rédigées'),
+                                                   ('federal_exam', 'Examen Fédéral', 'catégories de l’examen fédéral rédigées'),
                                                    ('global', 'Avancement global', 'catégories CIM rédigées sur les 23 spécialités')))
                 + f'<ul class="motifs" aria-label="Principes de l’atlas">{motifs}</ul></div>'
                 '<p class="legend-note">Jauges calculées sur les catégories CIM-10-GM à trois caractères (les sous-codes sont traités dans le cours de leur catégorie) : (nombre rédigé / total) puis (pourcentage).</p>')

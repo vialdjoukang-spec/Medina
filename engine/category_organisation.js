@@ -21,7 +21,7 @@
  });
  const own = lesson => lesson.integrated && lesson.source_fragment_id === F.id;
  const available = [...new Map(O.blocks.flatMap(block => block.lessons.filter(own).map(lesson => [lesson.code, {block, lesson}]))).values()];
- const filterNames = {frequent:'Pathologies fréquentes', federal_exam:'Pathologies Examen Fédéral'};
+ const filterNames = {frequent:'Pathologies fréquentes', federal_exam:'Examen Fédéral'};
  const filterCodes = new Map(Object.entries(O.nosology?.filters || {}).map(([key, codes]) => [key, new Set(codes)]));
  const activeFilter = () => filterCodes.has(route?.q.get('filter')) ? route.q.get('filter') : '';
  const included = lesson => !activeFilter() || filterCodes.get(activeFilter()).has(lesson.code);
@@ -68,8 +68,9 @@
  };
  const gauge = (label, value, note='', filter='') => {
   if (!value) return '';
-  const linked = filterCodes.has(filter), tag = linked ? 'a' : 'div';
-  return '<' + tag + ' class="nosology-progress" title="' + h(note) + '"' + (linked ? ' href="#/home?filter=' + filter + '" data-mcg-filter="' + filter + '" aria-label="Filtrer les leçons : ' + h(filterNames[filter]) + '"' + (activeFilter() === filter ? ' aria-current="page"' : '') : '') + '><span>' + h(label) + ' <b class="gauge-abs">(' + value.filled + ' / ' + value.total + ')</b>' + (value.total ? '' : ' · non applicable') + '</span><progress max="' + Math.max(1,value.total) + '" value="' + value.filled + '" aria-label="' + h(label) + '"></progress><b>(' + pct(value) + ')</b></' + tag + '>';
+  const global = filter === 'global', linked = global || filterCodes.has(filter), tag = linked ? 'a' : 'div';
+  const navigation = global ? ' href="#/home" data-mcg-global aria-label="Afficher toutes les catégories et tous les chapitres du fragment"' : linked ? ' href="#/home?filter=' + filter + '" data-mcg-filter="' + filter + '" aria-label="Filtrer les leçons : ' + h(filterNames[filter]) + '"' + (activeFilter() === filter ? ' aria-current="page"' : '') : '';
+  return '<' + tag + ' class="nosology-progress" title="' + h(note) + '"' + navigation + '><span class="gauge-copy"><span class="gauge-label">' + h(label) + '</span> <b class="gauge-abs">(' + value.filled + ' / ' + value.total + ')</b>' + (value.total ? '' : ' · non applicable') + '</span><progress max="' + Math.max(1,value.total) + '" value="' + value.filled + '" aria-label="' + h(label + ' : ' + value.filled + ' sur ' + value.total) + '"></progress><b>(' + pct(value) + ')</b></' + tag + '>';
  };
  let filterIconIndex = 0;
  const filterHeading = () => {
@@ -91,7 +92,7 @@
    + '<path d="M38 70Q42 70 47 66" fill="none" stroke="#eefaff" stroke-width="1"/>'
    + '</svg><span class="mcg-filter-label">Filtre</span></div>';
  };
- const fragmentGauges = () => O.nosology ? filterHeading()+'<div class="nosology-gauges">'+gauge('Pathologies fréquentes',O.nosology.gauges.frequent,'Afficher les leçons sélectionnées dans leurs catégories.','frequent')+gauge('Examen fédéral',O.nosology.gauges.federal_exam,'Afficher les leçons liées aux SSP PROFILES 2017 dans leurs catégories.','federal_exam')+gauge('Avancement global du fragment',O.nosology.gauges.global)+'</div>' : '';
+ const fragmentGauges = () => O.nosology ? filterHeading()+'<div class="nosology-gauges">'+gauge('Pathologies fréquentes',O.nosology.gauges.frequent,'Afficher les leçons sélectionnées dans leurs catégories.','frequent')+gauge('Examen Fédéral',O.nosology.gauges.federal_exam,'Afficher les leçons liées aux SSP PROFILES 2017 dans leurs catégories.','federal_exam')+gauge('Avancement global du fragment',O.nosology.gauges.global,'Afficher toutes les catégories et tous les chapitres du fragment.','global')+'</div>' : '';
  const categoryUrl = block => filteredUrl('#/home?category=' + encodeURIComponent(block.code));
  const status = lesson => own(lesson) ? (lesson.work_in_progress ? 'Lire la version de travail' : 'Lire le cours') : 'En préparation';
  const lessonUrl = (block, lesson) => own(lesson) ? filteredUrl(lesson.url) : lesson.code.includes('.') ? filteredUrl('#/entry/' + encodeURIComponent(lesson.code)) : categoryUrl(block) + '&lesson=' + encodeURIComponent(lesson.code);
