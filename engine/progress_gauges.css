@@ -1,30 +1,36 @@
 /* Shared by the portal, every specialty, and the work previews. */
 html body .gauge{
- display:grid;grid-template-columns:minmax(0,1fr);gap:7px;padding:12px;
+ display:grid;grid-template-columns:minmax(0,1fr)!important;align-items:stretch;gap:10px;padding:12px;
  min-width:0;border:1px solid #a8cddf;border-radius:10px;background:#e7f4fc;
  box-shadow:inset 0 1px 0 #fff,0 2px 3px #315f7415,0 5px 10px -8px #315f7450;
- font-size:13px;line-height:1.4;color:#000!important;
+ font-size:13px;line-height:1.5;color:#344352!important;
 }
-html body .gauge :is(.gauge-label,.gauge-value){color:#000!important;text-shadow:none!important}
-html body .gauge .gauge-label{white-space:nowrap;font-size:13px!important}
-html body .gauge .gauge-value{text-align:left;white-space:nowrap;font-size:13px!important}
+html body .gauge :is(.gauge-label,.gauge-value){color:#344352!important;text-shadow:none!important}
+html body .gauge .gauge-label{white-space:nowrap;font-size:13px!important;font-weight:400!important}
+html body .gauge .gauge-value{display:block;max-width:100%;text-align:left;white-space:normal;overflow-wrap:anywhere;font-size:11.5px!important;font-weight:500!important;line-height:1.5;font-variant-numeric:tabular-nums}
+html body .gauge[data-empty] .gauge-value{color:#344352!important}
 html body .gauge-track{
- height:12px;border:2px solid #fff;background:#fff;border-radius:5px;
- box-shadow:0 0 0 1px #87acbf;overflow:hidden;
+ display:block;width:100%;min-width:0;height:12px;margin:2px 0;
+ border:2px solid #fff;border-color:#fff!important;background:#fff;border-radius:5px;
+ box-shadow:0 0 0 1px #87acbf!important;overflow:hidden;
 }
-html body .gauge-fluid{height:100%;background:linear-gradient(180deg,#f5cf69,#d6a12c);border:0}
+html body .gauge-fluid{height:100%;background:linear-gradient(180deg,#f5cf69,#d6a12c)!important;border:0!important}
+html body .specialty-card :is(h3,.card-count,.card-description){color:#344352!important;text-shadow:none!important}
+html body .specialty-card h3{font-weight:600!important}
+html body .specialty-card .card-count{font-weight:500!important}
 /* Enough room for complete labels in both the rail and the mobile drawer. */
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .app{grid-template-columns:320px minmax(0,1fr)}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .sidebar{width:320px}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge){
- display:grid;gap:7px;min-width:0;margin:8px 0;padding:12px!important;
+ display:grid;gap:10px;min-width:0;margin:8px 0;padding:12px!important;
  border:1px solid #a8cddf!important;border-radius:10px!important;background:#e7f4fc!important;
  box-shadow:inset 0 1px 0 #fff,0 2px 3px #315f7415,0 5px 10px -8px #315f7450!important;
- font-size:13px!important;line-height:1.4!important;color:#000!important;text-shadow:none!important;text-decoration:none!important;
+ font-size:13px!important;line-height:1.5!important;color:#344352!important;text-shadow:none!important;text-decoration:none!important;
 }
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) :is(span,b){
- color:#000!important;text-shadow:none!important;font-size:13px!important;line-height:1.4!important;
+ color:#344352!important;text-shadow:none!important;font-size:13px!important;line-height:1.5!important;
 }
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) b{font-size:12px!important;font-weight:500!important}
 .nosology-progress .gauge-copy{display:flex;align-items:baseline;flex-wrap:wrap;gap:3px 8px}
 .nosology-progress .gauge-label,.nosology-progress .gauge-abs{white-space:nowrap;font-variant-numeric:tabular-nums}
 .nosology-progress .gauge-label{letter-spacing:0!important}
@@ -47,4 +53,4 @@ html[data-medina-fragment] body :is(.nosology-progress,.mcg-category-gauge) prog
  html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body .topbar .searchwrap{min-width:0;width:100%}
 }
 
-.mcg-filter-label{color:#000!important}
+.mcg-filter-label{color:#344352!important;font-weight:600;text-shadow:none}
