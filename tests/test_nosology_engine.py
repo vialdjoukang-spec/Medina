@@ -12,7 +12,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from nosologyEngine import BASE_PLAN, gauges, generate, progress, read_json, reference, sha256
+from nosologyEngine import BASE_PLAN, gauges, generate, progress, read_json, reference, sha256, runtime_inventory, global_gauge
 
 
 class NosologyTests(unittest.TestCase):
@@ -141,6 +141,32 @@ assert len(owners) == 1715
         self.assertEqual(stats['federal_exam'], {'filled': 1, 'total': 1, 'percent': 100.0})
         self.assertEqual(stats['global'], {'filled': 1, 'total': 2, 'percent': 50.0})
         self.assertEqual(gauges([], [])['frequent'], {'filled': 0, 'total': 0, 'percent': 0})
+
+    def test_runtime_progress_tracks_real_injections_not_stale_flags(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'nosology/fragments').mkdir(parents=True)
+            lessons = [dict(id=code, code=code, existing_course=None, state='empty',
+                            plan=[{'title': 'Définition', 'content': ''}])
+                       for code in ('I63', 'E11', 'N17', 'D50', 'D50.0')]
+            # An old filled flag cannot compensate for an absent canonical course.
+            lessons[1]['state'] = 'filled'
+            (root / 'nosology/fragments/S08.json').write_text(json.dumps({'lessons': lessons}))
+            courses = [dict(code=code, covers=[code], integrated=code != 'N17')
+                       for code in ('I63', 'E11', 'N17', 'D50')]
+            (root / 'chapters.json').write_text(json.dumps(courses))
+            for code in ('I63', 'N17', 'D50'):
+                (root / 'chapters' / code).mkdir(parents=True)
+                for tab in 'abcd':
+                    (root / 'chapters' / code / (code + '_' + tab + '.html')).write_text('<p>Cours réel</p>')
+            # Empty tab: a catalogue entry and three tabs are insufficient.
+            (root / 'chapters/D50/D50_d.html').write_text(' ')
+            before = (root / 'nosology/fragments/S08.json').read_bytes()
+            result = runtime_inventory(root, 'S08')
+            self.assertEqual([x['code'] for x in result['lessons'] if x['state'] == 'filled'], ['I63'])
+            self.assertEqual(global_gauge(root), {'filled': 1, 'total': 4, 'percent': 25.0})
+            self.assertEqual((root / 'nosology/fragments/S08.json').read_bytes(), before)
+            self.assertEqual(result['lessons'][0]['plan'], lessons[0]['plan'])
 
 
 if __name__ == '__main__': unittest.main()
