@@ -128,15 +128,18 @@ def progress(catalogue):
     return covered, categories, len(done), len(lessons)
 
 
-def gauge(label, part, whole):
+def gauge(label, part, whole, href=None, kind=None):
+    tag = 'a' if href else 'span'
+    attrs = (f' href="{html.escape(href, quote=True)}" data-portal-gauge="{kind}"'
+             if href else ' role="img"')
     if not whole:
-        return (f'<span class="gauge" data-empty><span class="gauge-label">{label}</span><span class="gauge-track" aria-hidden="true">'
-                '<span class="gauge-fluid" style="width:0%"></span></span><span class="gauge-value" title="Non applicable">(0 / 0) (non applicable)</span></span>')
+        return (f'<{tag} class="gauge" data-empty{attrs} aria-label="{label} : non applicable"><span class="gauge-label">{label}</span><span class="gauge-track" aria-hidden="true">'
+                f'<span class="gauge-fluid" style="width:0%"></span></span><span class="gauge-value" title="Non applicable">(0 / 0) (non applicable)</span></{tag}>')
     exact = round(100 * part / whole, 1)
     pct = f'{exact:.1f}'.replace('.', ',').removesuffix(',0')
-    return (f'<span class="gauge" role="img" aria-label="{label} : {part} sur {whole}, {pct} %"><span class="gauge-label">{label}</span>'
+    return (f'<{tag} class="gauge"{attrs} aria-label="{label} : {part} sur {whole}, {pct} %"><span class="gauge-label">{label}</span>'
             f'<span class="gauge-track" aria-hidden="true"><span class="gauge-fluid" style="width:{exact}%"></span></span>'
-            f'<span class="gauge-value">({part} / {whole}) ({pct} %)</span></span>')
+            f'<span class="gauge-value">({part} / {whole}) ({pct} %)</span></{tag}>')
 
 
 MOTIFS = (('M4 12h4l2-5 4 10 2-5h4', 'Quatre onglets par cours'),
@@ -188,16 +191,17 @@ def main():
             stats = catalogue['nosology']['gauges']
             for key in nosology_totals:
                 nosology_totals[key][0] += stats[key]['filled']; nosology_totals[key][1] += stats[key]['total']
-            gauges = '<span class="gauges">' + ''.join(gauge(label, stats[key]['filled'], stats[key]['total'])
-                     for label, key in [('Pathologies fréquentes', 'frequent'), ('Examen Fédéral', 'federal_exam'),
+            gauges = '<span class="gauges">' + ''.join(gauge(label, stats[key]['filled'], stats[key]['total'],
+                     href=f'fragments/{filename}#/home' + (f'?filter={key}' if key != 'global' else ''), kind=key)
+                     for label, key in [('Pathologies fréquentes', 'frequent'), ('Pathologies Examen Fédéral', 'federal_exam'),
                                         ('Avancement global', 'global')]) + '</span>'
         cards.append(f'''<li class="specialty" data-specialty-item data-search="{html.escape(search_text, quote=True)}">
- <a class="specialty-card" href="fragments/{filename}" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" style="--card-accent:{accent};--card-tint:color-mix(in srgb,{accent} 7%,#fffefa)" title="{html.escape(names[ident]['label'], quote=True)}">
-  <div class="card-top"><span class="card-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">{symbol}</svg></span><span class="card-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 12 12 4M4 4h8v8"/></svg></span></div>
-  <h3>{html.escape(specialty)}</h3><p class="card-description">{html.escape(description)}</p>
+ <article class="specialty-card" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" aria-labelledby="specialty-title-{ident}" style="--card-accent:{accent};--card-tint:color-mix(in srgb,{accent} 7%,#fffefa)" title="{html.escape(names[ident]['label'], quote=True)}">
+  <div class="card-top"><span class="card-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">{symbol}</svg></span><a class="card-arrow" href="fragments/{filename}#/home" aria-label="Accueil de {html.escape(specialty, quote=True)}" title="Accueil du fragment"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a></div>
+  <h3 id="specialty-title-{ident}">{html.escape(specialty)}</h3><p class="card-description">{html.escape(description)}</p>
   <span class="card-count"><i class="count-dot" aria-hidden="true"></i><span>{count} {label}</span></span>
   {gauges}
- </a></li>''')
+ </article></li>''')
     covered, categories, done, lessons = totals
     motifs = ''.join(f'<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="{path}"/></svg>{text}</li>' for path, text in MOTIFS)
     overview = (f'<div class="overview" data-testid="portal-overview" aria-label="Progression de l’atlas">'
