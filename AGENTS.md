@@ -1,3 +1,7 @@
+## Chaîne bornée du 14 octobre 2026 — instruction directe de Vial
+
+Lire [l’exécuteur autorisé](docs/collaboration/instructions/CHAINE_CYCLES_2026-10-14_EXECUTEUR.md). Codex produit le Cycle 2 G45/E10/N18/D64, puis les suivants uniquement après clôture effective du précédent et si la durée prudente tient avant 07 h 30 Europe/Zurich. Fin absolue : 14 octobre 2026 à 08 h 00 (06 h 00 UTC). Cycle 1 reste confié à Claude. Quatre auteurs au maximum, deux passes croisées, puis quatre nouveaux contre-auditeurs et deux passes, contrôle et injections successives vérifiées. Les gardes sont adaptées et testées ; aucune preuve n’est inventée. Cette autorisation remplace les STOP incompatibles dans ce seul périmètre et ne crée aucun automate persistant.
+
 ## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
 
 Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](docs/collaboration/instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).
