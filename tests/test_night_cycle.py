@@ -142,3 +142,18 @@ class NightInjectionTests(NightGuardTests):
     def test_extra_image_change_rejected(self):
         self.prepared();self.inject(0);self.files['assets/img/cycle2/e10/unreviewed.png']=b'Fixture'
         with self.assertRaisesRegex(C.CycleError,'supplémentaires'):self.validate_mocked_clinical_proofs()
+
+
+class RuntimeIdentityTests(unittest.TestCase):
+    def test_real_author_cross_counter_mapping(self):
+        rows=[]; reports={}
+        for tag in ('NEUR','ENDO','NEPH','HEM'):
+            rows.append(dict(writer='C02-R-'+tag,cross_reviewer='C02-R-'+N.CROSS[tag],author={'id':'A'+tag},cross_audit={'id':'A'+N.CROSS[tag]},counter_audit={'id':'CA'+tag}))
+        def read(tree, ref, description): return {'runtime_agent_id':ref['id']}
+        with patch.object(C,'proof',side_effect=read):
+            N.review_identities(None,rows)
+            rows[0]['counter_audit']={'id':'AENDO'}
+            with self.assertRaisesRegex(C.CycleError,'nouveaux'):N.review_identities(None,rows)
+            rows[0]['counter_audit']={'id':'CANEUR'}
+            rows[0]['cross_audit']={'id':'AENDO'}
+            with self.assertRaisesRegex(C.CycleError,'binômes'):N.review_identities(None,rows)

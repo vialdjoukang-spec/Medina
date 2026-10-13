@@ -124,8 +124,7 @@ def image_proof(tree, row):
     return paths
 
 
-def ready(tree, row, rows):
-    files = C.ready(tree, row, rows=rows, prompts=PROMPTS)
+def review_identities(tree, rows):
     author_ids = [C.proof(tree, r['author'], 'Auteur réel')['runtime_agent_id'] for r in rows]
     counter_ids = [C.proof(tree, r['counter_audit'], 'Contre-auditeur réel')['runtime_agent_id'] for r in rows]
     C.require(len(set(author_ids)) == 4 and len(set(counter_ids)) == 4 and not set(author_ids) & set(counter_ids),
@@ -133,6 +132,11 @@ def ready(tree, row, rows):
     by_actor = {r['writer']: author_ids[i] for i, r in enumerate(rows)}
     C.require(all(C.proof(tree, r['cross_audit'], 'Binôme réel')['runtime_agent_id'] == by_actor[r['cross_reviewer']] for r in rows),
               'Chaîne : identité réelle des binômes croisés différente')
+
+
+def ready(tree, row, rows):
+    files = C.ready(tree, row, rows=rows, prompts=PROMPTS)
+    review_identities(tree, rows)
     images = image_proof(tree, row)
     for key in ('author', 'cross_audit', 'counter_audit', 'control'):
         report = C.proof(tree, row[key], row['code'] + ' ' + key)

@@ -55,6 +55,12 @@ jobs:
           mkdir -p _site/images _site/fragments/images
           cp -R assets/images/. _site/images/
           cp -R assets/images/. _site/fragments/images/
+          # Figures publiées sous licence ouverte des cours du Cycle 2 et suivants.
+          if test -d assets/img; then
+            mkdir -p _site/assets/img _site/fragments/assets/img
+            cp -R assets/img/. _site/assets/img/
+            cp -R assets/img/. _site/fragments/assets/img/
+          fi
           python build_index.py --fragments-dir _site/fragments --output _site/index.html
           python tools/build_organisation.py --output _site/organisation.html
           # Plan demandé par Vial : PDF, HTML autonome et données de planification.
