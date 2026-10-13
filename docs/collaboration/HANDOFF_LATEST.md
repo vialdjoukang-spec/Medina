@@ -1,3 +1,13 @@
+## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
+
+Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).
+
+[Remise Claude : cours, sources et procédure de correction](CYCLE_01_REPRISE_CLAUDE.md).
+
+Contrôles de cette reprise : 305 tests Python réussis ; 23 fragments construits ; 8 surfaces navigateur (4 cours sur ordinateur/mobile), 678 ouvertures de fenêtres, aucune erreur JavaScript ni fenêtre manquante. Les corrections D50 déjà publiées sont préservées. Aucun contre-audit médical n’a été réalisé.
+
+La règle de progression est **un seul cycle actif par IA responsable, sous-agents inclus**. Claude et Codex peuvent travailler sur des cycles différents. La clôture globale du cycle précédent n'est plus un préalable ; chaque cycle garde ses propres contrôles et réserves. Le Cycle 2 G45/E10/N18/D64 est autorisé ; son démarrage doit respecter cette attribution exclusive par IA.
+
 # Cycle 1 publié sur ordre immédiat puis STOP — 12 octobre 2026
 
 I63, E11, N17 et D50 sont injectés dans les sources canoniques. Les quatre audits croisés ont terminé deux passes à 20/20 sur les empreintes finales. Les contre-audits et le contrôle final complet ne sont pas effectués ; publication provisoire, aucune validation médicale humaine. Le reçu `organisation/CYCLE_01_INJECTION_STOP_2026-10-12.json` lie les 28 sources exactes. Vial ordonne la publication immédiate puis STOP : aucun nouvel agent, aucune production, aucun cycle suivant.

@@ -224,6 +224,15 @@ def ready(tree, row):
 
 
 def validate_cycle_guard(before, after):
+    # Explicit bounded exception: keep the STOP receipt as history, publish
+    # current sources and allow traced Claude corrections without a prior CA.
+    if __package__ == "tools":
+        from tools.cycle1_claude import validate as validate_claude_exception
+    else:
+        from cycle1_claude import validate as validate_claude_exception
+    deferred = validate_claude_exception(before, after)
+    if deferred is not None:
+        return deferred
     # Latest explicit owner order: publish the four reviewed chapters now, then
     # STOP. Keep this bounded exception distinct from the completed audit chain.
     try:

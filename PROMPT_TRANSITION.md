@@ -1,3 +1,9 @@
+## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
+
+Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](docs/collaboration/instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).
+
+La règle de progression est **un seul cycle actif par IA responsable, sous-agents inclus**. Claude et Codex peuvent travailler sur des cycles différents. La clôture globale du cycle précédent n'est plus un préalable ; chaque cycle garde ses propres contrôles et réserves. Le Cycle 2 G45/E10/N18/D64 est autorisé ; son démarrage doit respecter cette attribution exclusive par IA.
+
 # MEDINA — Prompt de transition (unité de vérité)
 
 ## Mise à jour prioritaire — clarté, bases et calculs, 11 octobre 2026
