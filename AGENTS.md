@@ -1,4 +1,66 @@
-## Correction globale des jauges — 12 octobre 2026
+# Instruction prioritaire de Vial — 13 octobre 2026
+
+## 1. Reprise et finalisation du Cycle 1
+
+Je lève le STOP du 12 octobre 2026 pour finaliser le Cycle 1 :
+I63 — Infarctus cérébral ;
+E11 — Diabète sucré de type 2 ;
+N17 — Insuffisance rénale aiguë ;
+D50 — Anémie par carence en fer.
+
+J’autorise Codex à reprendre les travaux nécessaires :
+contre-audits indépendants, corrections, contrôle final,
+injection définitive, reconstruction et publication.
+
+Préserver les corrections D50 du 13 octobre, les comparer aux
+versions auditées et renouveler les preuves affectées.
+
+Le Cycle 1 sera déclaré validé et clôturé uniquement après
+réalisation effective des contrôles requis, résolution des réserves
+bloquantes et vérification du déploiement public.
+Cette validation de projet ne constitue pas une validation médicale humaine.
+
+## 2. Nouvelle règle de progression entre cycles
+
+Je remplace la règle globale « finir un cycle avant d’entamer
+un autre » par :
+
+Une même IA responsable ne peut travailler sur deux cycles
+simultanément. Claude et Codex peuvent travailler en parallèle
+sur des cycles différents.
+
+Les sous-agents relèvent de leur IA responsable : leur création
+ne permet pas de contourner cette limite.
+
+Cette limite couvre rédaction, audit, contre-audit, correction,
+contrôle et injection. Les affectations et transferts sont explicites,
+tracés et sans double responsabilité simultanée.
+
+Chaque cycle conserve ses propres exigences de sources,
+d’indépendance des audits, de contrôle et de publication.
+
+## 3. Autorisation explicite du Cycle 2 et adaptation des verrous
+
+J’autorise le Cycle 2 :
+G45 — Accidents ischémiques cérébraux transitoires et syndromes apparentés ;
+E10 — Diabète sucré de type 1 ;
+N18 — Maladie rénale chronique ;
+D64 — Autres anémies.
+
+Codex peut commencer ce cycle dès qu’il n’a plus de travail actif
+sur le Cycle 1, après clôture ou transfert explicite à Claude.
+La clôture globale du Cycle 1 n’est plus un préalable au démarrage
+par une autre IA disponible.
+
+J’autorise l’adaptation et les tests des gardes, registres,
+prompts et interfaces pour appliquer ces nouvelles instructions.
+
+Conserver les anciens ordres et reçus comme historique.
+Ne pas désactiver les gardes, inventer des preuves ni déclarer
+rétroactivement des audits non effectués.
+
+Cette instruction remplace les dispositions antérieures incompatibles
+dans le périmètre des Cycles 1 et 2. Elle ne lance pas les cycles suivants.## Correction globale des jauges — 12 octobre 2026
 
 Vial autorise la correction et la publication des jauges sur toutes les interfaces : libellés sur une ligne, avancement global du fragment cliquable, rectangles bleu ciel pâle, texte noir, remplissage or et contour blanc visible. Les nombres doivent suivre les cours effectivement intégrés. Cette reprise est limitée au frontend et au calcul des compteurs ; le STOP de production médicale et la fermeture du cycle 2 restent en vigueur.
 
