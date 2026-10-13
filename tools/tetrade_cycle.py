@@ -174,7 +174,7 @@ def review(tree, row, key, actor, files, prompts=PROMPTS):
     return data
 
 
-def ready(tree, row, rows=None, prompts=PROMPTS):
+def ready(tree, row, rows=None, prompts=PROMPTS, cross_completed_at=None):
     files = source_files(tree, row)
     author = review(tree, row, "author", row["writer"], files, prompts)
     ledger = proof(tree, author.get("source_ledger"), f"{row['code']} sources réellement lues")
@@ -192,7 +192,7 @@ def ready(tree, row, rows=None, prompts=PROMPTS):
     counter = review(tree, row, "counter_audit", row["counter_reviewer"], files, prompts)
     control = review(tree, row, "control", "Codex — coordinateur du fil", files, prompts)
     all_rows = rows if rows is not None else records(tree)["chapters"]
-    last_crossed_exit = max(dated(proof(tree, r["cross_audit"], "Audit croisé du cycle")["exit"]["checked_at"]) for r in all_rows)
+    last_crossed_exit = cross_completed_at or max(dated(proof(tree, r["cross_audit"], "Audit croisé du cycle")["exit"]["checked_at"]) for r in all_rows)
     last_counter_exit = max(dated(proof(tree, r["counter_audit"], "Contre-audit du cycle")["exit"]["checked_at"]) for r in all_rows)
     require(dated(counter["entry"]["checked_at"]) >= last_crossed_exit, "Contre-audit engagé avant clôture de tous les binômes")
     require(dated(control["entry"]["checked_at"]) >= last_counter_exit, "Contrôle engagé avant clôture des quatre contre-audits")
@@ -210,7 +210,7 @@ def ready(tree, row, rows=None, prompts=PROMPTS):
         require(raw.startswith(b"\x89PNG\r\n\x1a\n") and len(raw) > 5000 and digest(raw) == capture.get("sha256"),
                 "Capture PNG absente, invalide ou différente")
     require(len({x["runtime_agent_id"] for x in (author, crossed, counter, control)}) == 4, "Auteur, auditeurs et coordinateur doivent être distincts")
-    require(counter.get("fresh_context") is True and dated(crossed["exit"]["checked_at"]) <= dated(counter["entry"]["checked_at"]),
+    require(counter.get("fresh_context") is True and (cross_completed_at or dated(crossed["exit"]["checked_at"])) <= dated(counter["entry"]["checked_at"]),
             "Contre-audit : contexte neuf et démarrage différé requis")
     require(dated(counter["exit"]["checked_at"]) <= dated(control["entry"]["checked_at"]), "Contrôle final prématuré")
     # Reuse the existing Swiss gate without weakening its historical scope.

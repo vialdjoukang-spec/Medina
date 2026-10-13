@@ -13,12 +13,30 @@
     "checked_at_reported": "2026-10-14T01:34:15+02:00"
   },
   "guard_files": {
-    "tools/night_cycle.py": "3139f73a9cd4d9a24a30d45d956fc4a258a8887ac12c28c01f96d5527be4d296",
-    "tools/tetrade_cycle.py": "10e0a37b1474335fcc2dafd5770db8dc6e16319677be4570f0f89d689eceb2a1",
+    "tools/night_cycle.py": "80a691abaec644e1ee93ad1e36eaa80e7fd20554e215538d57b4ff70c5f1021f",
+    "tools/tetrade_cycle.py": "df2f0b1dc2c5888d0fa8040fd54306da9a080fecccc314cb4aae5cfa6ec57682",
     "tools/cycle1_claude.py": "1f9581685fadc5d2b15c3cd9567d8c7c92777e861db27067c668bf66be7e5135",
     "tools/espace.py": "f4aeab49a17372b8255996485edd801da791c349cb20aed076de15707c191ac3"
   },
   "general_suite": {
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "result": "passed",
+    "tests_executed": 346,
+    "duration_seconds": 100.471,
+    "log_sha256": "8c0f33896b7668082c940bd09c92d8ebde96aa3ea549567504e756354285178b",
+    "observed_at": "2026-10-13T23:47:12.111652+00:00",
+    "scope": "Inclut archives de phase initiale et relectures après corrections CA, ainsi que fixtures déterministes. L’exigence additionnelle production_cycle du catalogue est couverte par les 76 tests ciblés après cette suite."
+  },
+  "current_targeted_suite": {
+    "command": "python3 -m unittest tests.test_night_cycle tests.test_tetrade_cycle tests.test_cycle1_claude -q",
+    "tests_executed": 76,
+    "result": "passed",
+    "checked_at": "2026-10-13T23:47:12.111827+00:00",
+    "includes_runtime_identity_regression": true,
+    "includes_archived_cross_phase_and_post_counter_corrections": true,
+    "deterministic_fixtures": true
+  },
+  "previous_general_suite": {
     "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
     "result": "passed",
     "tests_executed": 342,
@@ -26,12 +44,5 @@
     "log_sha256": "4a15bee3a9a249c6713666258e3a7ede9cd1c2ae3b32b2150ee0586c007a446d",
     "observed_at": "2026-10-13T23:36:31+00:00",
     "limit": "Suite démarrée avant dernier renforcement des identités runtime ; contrôles ciblés supplémentaires requis sur ce renforcement."
-  },
-  "current_targeted_suite": {
-    "command": "python3 -m unittest tests.test_night_cycle tests.test_tetrade_cycle tests.test_cycle1_claude -q",
-    "tests_executed": 73,
-    "result": "passed",
-    "checked_at": "2026-10-13T23:39:22.192655+00:00",
-    "includes_runtime_identity_regression": true
   }
 }

@@ -14,8 +14,17 @@ NOW = datetime.fromisoformat('2026-10-14T02:00:00+02:00')
 class NightGuardTests(unittest.TestCase):
     def setUp(self):
         root = Path(__file__).resolve().parents[1]
-        self.state = json.loads((root/N.REGISTRY).read_text())
-        self.files = {p: (root/p).read_bytes() for p in [N.AUTHORITY,N.PLAN,N.CAHIER,N.JOURNAL]}
+        self.files = {p: (root/p).read_bytes() for p in [N.AUTHORITY,N.PLAN,N.CAHIER]}
+        start = '2026-10-14T01:00:00+02:00'
+        rows = [dict(code=code,fragment_id=fragment,production_cycle=2,
+                     writer='C02-R-'+tag,cross_reviewer='C02-R-'+N.CROSS[tag],counter_reviewer='C02-CA-'+tag,
+                     status='EN_PRODUCTION',source_dir=None,files={},images=None,**{k:None for k in N.PROOFS})
+                for code,fragment,tag in N.missions(Tree(self.files),2)]
+        self.state = dict(schema_version=1,authority=N.AUTHORITY,authority_sha256=C.digest(self.files[N.AUTHORITY]),
+                          plan_sha256=C.digest(self.files[N.PLAN]),deadline=N.DEADLINE,latest_start=N.LAST_START,
+                          assignments=[dict(cycle=1,owner='Claude',active=True),dict(cycle=2,owner='Codex',active=True)],
+                          cycles=[dict(cycle=2,owner='Codex',state='ACTIF',started_at=start,budget=None,chapters=rows,closure=None)])
+        self.files[N.JOURNAL] = encode(dict(event='cycle_started',cycle=2,at=start,coordinator_runtime='fixture-technique-sans-valeur-clinique'))
         self.files['chapters.json'] = b'[]'
         self.save(); self.before = Tree(copy.deepcopy(self.files))
 
@@ -114,10 +123,10 @@ class NightInjectionTests(NightGuardTests):
         self.files[p]=encode(dict(code=row['code'],files=row['files'],injector='Codex — coordinateur du fil'))
         row['injection']={'path':p,'sha256':C.digest(self.files[p])}
         for f in row['files']:self.files[f]=b'Fixture'
-        catalog=json.loads(self.files['chapters.json']);catalog.append(dict(code=row['code'],covers=[row['code']],integrated=True));self.files['chapters.json']=encode(catalog)
+        catalog=json.loads(self.files['chapters.json']);catalog.append(dict(code=row['code'],covers=[row['code']],integrated=True,production_cycle=2));self.files['chapters.json']=encode(catalog)
 
     def validate_mocked_clinical_proofs(self):
-        with patch.object(N,'ready',side_effect=lambda tree,row,rows:row['files']),patch.object(N,'temporal_proofs'),patch.object(N,'journal_proof'):
+        with patch.object(N,'ready',side_effect=lambda tree,row,rows,**kwargs:row['files']),patch.object(N,'temporal_proofs'),patch.object(N,'journal_proof'),patch.object(N,'cross_boundary',return_value=NOW):
             return self.guard()
 
     def test_exact_single_injection(self):
@@ -157,3 +166,44 @@ class RuntimeIdentityTests(unittest.TestCase):
             rows[0]['counter_audit']={'id':'CANEUR'}
             rows[0]['cross_audit']={'id':'AENDO'}
             with self.assertRaisesRegex(C.CycleError,'binômes'):N.review_identities(None,rows)
+
+class CrossPhaseArchiveTests(unittest.TestCase):
+    def setUp(self):
+        self.files={};self.rows=[];items=[]
+        def ref(path,data):
+            self.files[path]=encode(data)
+            return {'path':path,'sha256':C.digest(self.files[path])}
+        self.ref=ref
+        for code,tag in [('G45','NEUR'),('E10','ENDO'),('N18','NEPH'),('D64','HEM')]:
+            actor='C02-R-'+N.CROSS[tag];path=f'chapters/{code}/{code}_a.html';files={path:C.digest(b'Fixture initiale')}
+            first=ref(code+'/p1.json',{'finished_at':'2026-10-14T01:10:00+02:00'})
+            second=ref(code+'/p2.json',{'verdict':'favorable','score':20,'blocking_reserves':[], 'final_files':files,'started_at':'2026-10-14T01:11:00+02:00','finished_at':'2026-10-14T01:14:00+02:00'})
+            report={'code':code,'actor':actor,'runtime_agent_id':actor,'blocking_reserves':[], 'medical_human_validation':False,'final_files':files,'image_files':{},'passes':[{'number':1,'report':first},{'number':2,'report':second}], 'exit':{'checked_at':'2026-10-14T01:15:00+02:00'}}
+            initial=ref(code+'/initial.json',report)
+            directory='docs/collaboration/reviews/fixtures/'+code
+            self.files[directory+'/'+path]=b'Fixture initiale'
+            items.append({'code':code,'review':initial,'source_snapshot':{'directory':directory,'files':files}})
+            self.rows.append({'code':code,'cross_reviewer':actor,'cross_audit':initial})
+        self.phase={'cycle':2,'completed_at':'2026-10-14T01:15:00+02:00','reviews':items}
+        self.cycle={'cycle':2,'chapters':self.rows,'cross_phase':ref('phase.json',self.phase)}
+
+    def test_final_recheck_can_follow_counter_entry_without_rewriting_initial_passes(self):
+        item=self.phase['reviews'][0];row=self.rows[0];initial=json.loads(self.files[item['review']['path']]);current=copy.deepcopy(initial)
+        path=next(iter(initial['final_files']));current['final_files']={path:C.digest(b'Fixture corrigee apres CA1')};current['exit']['checked_at']='2026-10-14T01:40:00+02:00'
+        current['corrections_recheck']=self.ref('recheck.json',{'initial_review':item['review'],'final_files':current['final_files'],'changed_files':[path],'blocking_reserves':[],'runtime_agent_id':current['runtime_agent_id'],'checked_at':'2026-10-14T01:39:00+02:00','observations':[{'path':path,'change':'Fixture correction CA1','verification':'Relecture technique fictive','source':'Fixture sans valeur clinique'}]})
+        row['cross_audit']=self.ref('final-cross.json',current)
+        boundary=N.cross_boundary(Tree(self.files),self.cycle,NOW)
+        counter_entry=datetime.fromisoformat('2026-10-14T01:20:00+02:00')
+        self.assertLessEqual(boundary,counter_entry)
+        self.assertLess(counter_entry,C.dated(current['exit']['checked_at']))
+        self.assertEqual(json.loads(self.files[item['review']['path']]),initial)
+
+    def test_modified_archive_is_rejected(self):
+        item=self.phase['reviews'][0];path=next(iter(item['source_snapshot']['files']))
+        self.files[item['source_snapshot']['directory']+'/'+path]=b'Fixture altered'
+        with self.assertRaisesRegex(C.CycleError,'non conservées'):N.cross_boundary(Tree(self.files),self.cycle,NOW)
+
+    def test_correction_without_recheck_is_rejected(self):
+        row=self.rows[0];current=json.loads(self.files[row['cross_audit']['path']]);current['final_files']={'changed':C.digest(b'Fixture')}
+        row['cross_audit']=self.ref('final-cross.json',current)
+        with self.assertRaisesRegex(C.CycleError,'preuve absente'):N.cross_boundary(Tree(self.files),self.cycle,NOW)

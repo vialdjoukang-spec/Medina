@@ -21,7 +21,7 @@ def build(root, code, output):
     if not required.issubset({p.name for p in paths}) or not all(p.is_file() for p in paths):
         raise ValueError('La livraison ne contient pas encore les six HTML et le glossaire.')
     files = {p.relative_to(source).as_posix():p.read_bytes() for p in paths}
-    manifest = {'chapter_codes':[code], 'chapters':[{'code':code,'covers':[code],'title':lesson['title']}],
+    manifest = {'chapter_codes':[code], 'chapters':[{'code':code,'covers':[code],'title':lesson['title'],'production_cycle':2}],
                 'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()}
     output.mkdir(parents=True,exist_ok=True)
     overlay = output/'overlay'

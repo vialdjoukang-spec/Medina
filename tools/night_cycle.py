@@ -134,14 +134,64 @@ def review_identities(tree, rows):
               'Chaîne : identité réelle des binômes croisés différente')
 
 
-def ready(tree, row, rows):
-    files = C.ready(tree, row, rows=rows, prompts=PROMPTS)
+def ready(tree, row, rows, cross_completed_at=None):
+    files = C.ready(tree, row, rows=rows, prompts=PROMPTS, cross_completed_at=cross_completed_at)
     review_identities(tree, rows)
     images = image_proof(tree, row)
     for key in ('author', 'cross_audit', 'counter_audit', 'control'):
         report = C.proof(tree, row[key], row['code'] + ' ' + key)
         C.require(report.get('image_files') == images, 'Images : revue non liée aux images finales')
     return dict(files, **images)
+
+
+def cross_boundary(tree, cycle, now):
+    """Archive the real initial cross phase; later corrections need final rechecks."""
+    phase = C.proof(tree, cycle.get('cross_phase'), 'Clôture initiale des audits croisés')
+    C.require(phase.get('cycle') == cycle['cycle'], 'Chaîne : phase croisée étrangère')
+    items = phase.get('reviews')
+    C.require(isinstance(items, list) and [x.get('code') for x in items] == [r['code'] for r in cycle['chapters']],
+              'Chaîne : quatre revues initiales archivées requises')
+    dates=[]
+    for item,row in zip(items,cycle['chapters']):
+        original = C.proof(tree,item.get('review'),'Revue croisée initiale archivée')
+        C.require(original.get('code') == row['code'] and original.get('actor') == row['cross_reviewer'] and
+                  original.get('blocking_reserves') == [] and original.get('medical_human_validation') is False,
+                  'Chaîne : identité ou réserves de la revue initiale')
+        current = C.proof(tree,row['cross_audit'],'Revue croisée finale')
+        C.require(original.get('runtime_agent_id') == current.get('runtime_agent_id'), 'Chaîne : relecteur initial remplacé')
+        passes=original.get('passes')
+        C.require(isinstance(passes,list) and [p.get('number') for p in passes] == [1,2], 'Chaîne : deux passes initiales requises')
+        first=C.proof(tree,passes[0]['report'],'Première passe initiale')
+        second=C.proof(tree,passes[1]['report'],'Seconde passe initiale')
+        C.require(second.get('verdict') == 'favorable' and second.get('score') == 20 and second.get('blocking_reserves') == [] and
+                  second.get('final_files') == original.get('final_files') and
+                  C.dated(first.get('finished_at')) <= C.dated(second.get('started_at')) <= C.dated(second.get('finished_at')) <= C.dated(original['exit']['checked_at']),
+                  'Chaîne : seconde passe initiale non achevée')
+        snapshot = item.get('source_snapshot')
+        C.require(isinstance(snapshot, dict) and isinstance(snapshot.get('directory'), str) and
+                  snapshot['directory'].startswith('docs/collaboration/reviews/') and
+                  '..' not in snapshot['directory'].split('/'), 'Chaîne : archive source initiale absente')
+        initial_files = dict(original.get('final_files', {}), **original.get('image_files', {}))
+        C.require(initial_files and snapshot.get('files') == initial_files, 'Chaîne : archive initiale sans empreintes exactes')
+        C.require(all(C.digest(tree.read(snapshot['directory']+'/'+p)) == sha for p,sha in initial_files.items()),
+                  'Chaîne : sources initiales non conservées')
+        current_files = dict(current.get('final_files', {}), **current.get('image_files', {}))
+        if current_files != initial_files:
+            recheck = C.proof(tree, current.get('corrections_recheck'), 'Relecture des corrections ultérieures')
+            changed = sorted(p for p in set(initial_files) | set(current_files) if initial_files.get(p) != current_files.get(p))
+            C.require(recheck.get('initial_review') == item['review'] and recheck.get('final_files') == current_files and
+                      recheck.get('changed_files') == changed and recheck.get('blocking_reserves') == [] and
+                      recheck.get('runtime_agent_id') == current['runtime_agent_id'], 'Chaîne : corrections non relues sur empreintes finales')
+            observations = recheck.get('observations')
+            C.require(isinstance(observations,list) and set(x.get('path') for x in observations) == set(changed) and
+                      all(all(isinstance(x.get(k),str) and x[k].strip() for k in ('change','verification','source')) for x in observations),
+                      'Chaîne : relecture des modifications insuffisante')
+            C.require(C.dated(original['exit']['checked_at']) <= C.dated(recheck.get('checked_at')) <= C.dated(current['exit']['checked_at']) <= now,
+                      'Chaîne : relecture finale antidatée ou future')
+        dates.append(C.dated(original['exit']['checked_at']))
+    completed=C.dated(phase.get('completed_at'))
+    C.require(max(dates) == completed <= now and completed < C.dated(DEADLINE), 'Chaîne : date de clôture initiale fausse')
+    return completed
 
 
 def temporal_proofs(tree, cycle, now):
@@ -229,6 +279,10 @@ def validate(before, after, now=None):
         if previous_cycle['state'] in {'CLOTURE', 'ARRETE'}:
             C.require(cycle == previous_cycle, 'Chaîne : cycle clos ou arrêté immuable')
         rows = cycle['chapters']
+        if previous_cycle.get('cross_phase') is not None:
+            C.require(cycle.get('cross_phase') == previous_cycle['cross_phase'], 'Chaîne : clôture initiale croisée réécrite')
+            C.proof(after, cycle['cross_phase'], 'Clôture initiale conservée')
+        boundary = cross_boundary(after, cycle, now) if any(C.STATES.index(r['status']) >= 2 for r in rows) else None
         for previous, row in zip(previous_cycle['chapters'], rows):
             stage = C.STATES.index(row['status'])
             C.require(stage >= C.STATES.index(previous['status']), 'Chaîne : régression non tracée')
@@ -251,7 +305,7 @@ def validate(before, after, now=None):
                 C.require(all(before.read(p) == after.read(p) and C.digest(after.read(p)) == sha for p, sha in locked.items()),
                           'Chaîne : source injectée modifiée')
             if stage >= 4:
-                files = ready(after, row, rows)
+                files = ready(after, row, rows, cross_completed_at=boundary)
                 if C.STATES.index(previous['status']) < 5 and stage >= 5:
                     C.require(previous['status'] == 'PRET_A_INJECTER' and row['status'] == 'INJECTE' and row['publication'] is None,
                               'Chaîne : contrôle préexistant et publication distincte requis')
@@ -280,7 +334,7 @@ def validate(before, after, now=None):
         additions = [r for r in catalog if r not in original]
         C.require(len(catalog) == len(original)+1 and all(r in catalog for r in original) and len(additions) == 1 and
                   additions[0].get('code') == row['code'] and additions[0].get('covers') == [row['code']] and
-                  additions[0].get('integrated') is True, 'Chaîne : catalogue ajout unique requis')
+                  additions[0].get('integrated') is True and additions[0].get('production_cycle') == row['production_cycle'], 'Chaîne : catalogue ajout unique requis')
         authorized['chapters.json'] = C.digest(after.read('chapters.json'))
     else:
         C.require(not course_changes, 'Chaîne : source sans injection contrôlée')
