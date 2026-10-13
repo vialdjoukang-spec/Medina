@@ -98,7 +98,7 @@ def source_files(tree, row):
     minimum = {f"chapters/{code}/{code}_{suffix}.html" for suffix in ("a", "b", "c", "d", "pop1", "pop2")} | {f"glossary/{code.lower()}.py"}
     require(minimum.issubset(files) and all(managed(path, [code]) for path in files), f"{code} : chapitre incomplet ou source étrangère")
     directory = row.get("source_dir")
-    require(isinstance(directory, str) and directory.startswith("livraisons/Livraison Codex/") and f"/CYCLE_01_{code}" in directory,
+    require(isinstance(directory, str) and directory.startswith("livraisons/Livraison Codex/") and f"/CYCLE_{row.get('production_cycle', 1):02d}_{code}" in directory,
             f"{code} : dossier de livraison isolé requis")
     for path, sha in files.items():
         require(isinstance(sha, str) and re.fullmatch(r"[0-9a-f]{64}", sha), f"{code} : SHA-256 invalide")
@@ -106,10 +106,10 @@ def source_files(tree, row):
     return files
 
 
-def prompt_gate(tree, gate, actor, description):
+def prompt_gate(tree, gate, actor, description, prompts=PROMPTS):
     require(isinstance(gate, dict) and gate.get("actor") == actor and gate.get("verdict") == "conforme",
             f"{description} : application du Prompt non conforme")
-    require(gate.get("prompt_files") == {path: digest(tree.read(path)) for path in PROMPTS},
+    require(gate.get("prompt_files") == {path: digest(tree.read(path)) for path in prompts},
             f"{description} : Prompt non relu dans sa version finale")
     dated(gate.get("checked_at"))
     checks = gate.get("checks")
@@ -125,12 +125,12 @@ def prompt_gate(tree, gate, actor, description):
             require(digest(tree.read(item.get("path"))) == item.get("sha256"), f"{description} : preuve d'application invalide")
 
 
-def review(tree, row, key, actor, files):
+def review(tree, row, key, actor, files, prompts=PROMPTS):
     data = proof(tree, row[key], f"{row['code']} {key}")
     require(data.get("code") == row["code"] and data.get("actor") == actor and data.get("medical_human_validation") is False,
             f"{row['code']} : identité de {key} ou qualification incorrecte")
-    prompt_gate(tree, data.get("entry"), actor, f"{row['code']} {key} entrée")
-    prompt_gate(tree, data.get("exit"), actor, f"{row['code']} {key} sortie")
+    prompt_gate(tree, data.get("entry"), actor, f"{row['code']} {key} entrée", prompts)
+    prompt_gate(tree, data.get("exit"), actor, f"{row['code']} {key} sortie", prompts)
     if row["code"] == "N17":
         try:
             from n17_calcium_import import AUTHORITY as supplement, authority as import_authority
@@ -174,9 +174,9 @@ def review(tree, row, key, actor, files):
     return data
 
 
-def ready(tree, row):
+def ready(tree, row, rows=None, prompts=PROMPTS, cross_completed_at=None):
     files = source_files(tree, row)
-    author = review(tree, row, "author", row["writer"], files)
+    author = review(tree, row, "author", row["writer"], files, prompts)
     ledger = proof(tree, author.get("source_ledger"), f"{row['code']} sources réellement lues")
     require(ledger.get("code") == row["code"] and ledger.get("final_files") == files and ledger.get("unverified_claims") == [],
             "Registre des sources : affirmations non vérifiées ou sources finales différentes")
@@ -188,11 +188,11 @@ def ready(tree, row):
                 "Registre des sources : passage, population ou limites absents")
         require(claim["source_url"].startswith("https://") and re.fullmatch(r"[0-9a-f]{64}", claim.get("download_sha256", "")),
                 "Registre des sources : URL ou empreinte du texte lu absente")
-    crossed = review(tree, row, "cross_audit", row["cross_reviewer"], files)
-    counter = review(tree, row, "counter_audit", row["counter_reviewer"], files)
-    control = review(tree, row, "control", "Codex — coordinateur du fil", files)
-    all_rows = records(tree)["chapters"]
-    last_crossed_exit = max(dated(proof(tree, r["cross_audit"], "Audit croisé du cycle")["exit"]["checked_at"]) for r in all_rows)
+    crossed = review(tree, row, "cross_audit", row["cross_reviewer"], files, prompts)
+    counter = review(tree, row, "counter_audit", row["counter_reviewer"], files, prompts)
+    control = review(tree, row, "control", "Codex — coordinateur du fil", files, prompts)
+    all_rows = rows if rows is not None else records(tree)["chapters"]
+    last_crossed_exit = cross_completed_at or max(dated(proof(tree, r["cross_audit"], "Audit croisé du cycle")["exit"]["checked_at"]) for r in all_rows)
     last_counter_exit = max(dated(proof(tree, r["counter_audit"], "Contre-audit du cycle")["exit"]["checked_at"]) for r in all_rows)
     require(dated(counter["entry"]["checked_at"]) >= last_crossed_exit, "Contre-audit engagé avant clôture de tous les binômes")
     require(dated(control["entry"]["checked_at"]) >= last_counter_exit, "Contrôle engagé avant clôture des quatre contre-audits")
@@ -210,7 +210,7 @@ def ready(tree, row):
         require(raw.startswith(b"\x89PNG\r\n\x1a\n") and len(raw) > 5000 and digest(raw) == capture.get("sha256"),
                 "Capture PNG absente, invalide ou différente")
     require(len({x["runtime_agent_id"] for x in (author, crossed, counter, control)}) == 4, "Auteur, auditeurs et coordinateur doivent être distincts")
-    require(counter.get("fresh_context") is True and dated(crossed["exit"]["checked_at"]) <= dated(counter["entry"]["checked_at"]),
+    require(counter.get("fresh_context") is True and (cross_completed_at or dated(crossed["exit"]["checked_at"])) <= dated(counter["entry"]["checked_at"]),
             "Contre-audit : contexte neuf et démarrage différé requis")
     require(dated(counter["exit"]["checked_at"]) <= dated(control["entry"]["checked_at"]), "Contrôle final prématuré")
     # Reuse the existing Swiss gate without weakening its historical scope.
@@ -223,14 +223,14 @@ def ready(tree, row):
     return files
 
 
-def validate_cycle_guard(before, after):
+def validate_cycle_guard(before, after, authorized_catalog_codes=()):
     # Explicit bounded exception: keep the STOP receipt as history, publish
     # current sources and allow traced Claude corrections without a prior CA.
     if __package__ == "tools":
         from tools.cycle1_claude import validate as validate_claude_exception
     else:
         from cycle1_claude import validate as validate_claude_exception
-    deferred = validate_claude_exception(before, after)
+    deferred = validate_claude_exception(before, after, authorized_catalog_codes=authorized_catalog_codes)
     if deferred is not None:
         return deferred
     # Latest explicit owner order: publish the four reviewed chapters now, then

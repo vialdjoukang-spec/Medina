@@ -12,7 +12,7 @@ STOP_RECEIPT = "organisation/CYCLE_01_INJECTION_STOP_2026-10-12.json"
 CODES = ("I63", "E11", "N17", "D50")
 
 
-def validate(before, after):
+def validate(before, after, authorized_catalog_codes=()):
     if __package__ == "tools":
         from tools.tetrade_cycle import CycleError, digest, proof, read_json, require, records
     else:
@@ -88,8 +88,8 @@ def validate(before, after):
             technical.get("javascript_errors") == [] and technical.get("missing_windows") == [],
             "Exception Claude : contrôle technique incomplet ou périmé")
     old_catalog, catalog = read_json(before, "chapters.json"), read_json(after, "chapters.json")
-    require([r for r in old_catalog if r.get("code") not in CODES] ==
-            [r for r in catalog if r.get("code") not in CODES], "Exception Claude : catalogue hors périmètre modifié")
+    require([r for r in old_catalog if r.get("code") not in set(CODES) | set(authorized_catalog_codes)] ==
+            [r for r in catalog if r.get("code") not in set(CODES) | set(authorized_catalog_codes)], "Exception Claude : catalogue hors périmètre modifié")
     current_rows = [r for r in catalog if r.get("code") in CODES]
     require(len(current_rows) == 4 and {r["code"] for r in current_rows} == set(CODES),
             "Exception Claude : quatre cours enregistrés requis")

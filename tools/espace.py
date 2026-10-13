@@ -335,7 +335,14 @@ def validate_fragment_guard(before, after):
     except ModuleNotFoundError:
         from tools.tetrade_cycle import validate_cycle_guard, CycleError
     try:
-        cycle_authorized, cycle_codes = validate_cycle_guard(before, after)
+        try:
+            from tools.night_cycle import validate as validate_night
+        except ModuleNotFoundError:
+            from night_cycle import validate as validate_night
+        night_authorized, night_codes, catalog_codes = validate_night(before, after)
+        cycle_authorized, cycle_codes = validate_cycle_guard(before, after, authorized_catalog_codes=catalog_codes)
+        cycle_authorized.update(night_authorized)
+        cycle_codes.update(night_codes)
     except CycleError as error:
         raise FragmentError(str(error)) from error
     authorized = dict(cycle_authorized)

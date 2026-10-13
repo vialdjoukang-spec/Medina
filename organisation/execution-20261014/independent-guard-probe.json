@@ -1,0 +1,69 @@
+{
+  "scope": "Tests techniques de garde uniquement, fixtures fictives",
+  "checked_at": "2026-10-13T23:37:55.165130+00:00",
+  "results": [
+    {
+      "case": "Activation sans injection",
+      "expected_rejection": false,
+      "rejected": false,
+      "passed": true,
+      "message": "accepted"
+    },
+    {
+      "case": "Date de départ future",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Chaîne : départ sans événement réel dans le journal"
+    },
+    {
+      "case": "Échéance exacte à 08 h 00",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Chaîne : autorisation expirée à 08 h 00"
+    },
+    {
+      "case": "Trois leçons au lieu de quatre",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Chaîne : exactement quatre leçons requises"
+    },
+    {
+      "case": "Deux cycles actifs pour Codex",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Chaîne : une IA ne peut avoir deux cycles actifs"
+    },
+    {
+      "case": "Mauvaise identité de leçon",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Chaîne : identité ou ordre des quatre leçons incorrect"
+    },
+    {
+      "case": "Injection à activation",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Chaîne : activation sans injection requise"
+    },
+    {
+      "case": "Audit inventé à activation",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Absent inexistant"
+    },
+    {
+      "case": "Auto-audit",
+      "expected_rejection": true,
+      "rejected": true,
+      "passed": true,
+      "message": "Chaîne : indépendance des missions incorrecte"
+    }
+  ]
+}
