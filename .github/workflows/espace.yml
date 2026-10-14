@@ -25,6 +25,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p test_espace_fragments.py
       - name: Vérifier les gardes du cycle autorisé
         run: python3 -m unittest discover -s tests -p test_tetrade_cycle.py
+      - name: Vérifier la chaîne nocturne et son échéance de publication
+        run: python3 -m unittest tests.test_night_cycle tests.test_publication_manifest
       - name: Refuser une injection prématurée ou une réouverture
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}

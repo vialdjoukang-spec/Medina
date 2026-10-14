@@ -19,8 +19,9 @@
     "tools/espace.py": "f4aeab49a17372b8255996485edd801da791c349cb20aed076de15707c191ac3",
     "tools/publication_manifest.py": "20e3579a67129d6c6d801b65f122384ab1151adbedeceaf05fb3f678d9aac551",
     "tools/night_preview.py": "11fa70fc0b93aa19901e6d87f5e81064f459c757de5747d76bf028d846e71df5",
-    ".github/workflows/pages.yml": "7935097ebb0581b021550c4033ae48aa98ce2877c4cc374f54ee057822d8cd6d",
-    "tests/test_publication_manifest.py": "ebafc03dc9adb26b4fee7f16327f7464fd33b91dbe3fac2d9d223d2c3da60709"
+    ".github/workflows/pages.yml": "3748cd66a9f2d1b21bd6e49af0e49487bcafd727a71a80d389aafe379f148ca0",
+    "tests/test_publication_manifest.py": "ebafc03dc9adb26b4fee7f16327f7464fd33b91dbe3fac2d9d223d2c3da60709",
+    ".github/workflows/espace.yml": "0ec3f2006ea9c284292da9ff5622b4ca80218410cf0d1535589cdaa4093876d5"
   },
   "general_suite": {
     "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
@@ -81,5 +82,19 @@
     "builds_passed": true,
     "initial_ui_reports_by": "/root",
     "scope": "Versions initiales avant corrections auteur ; ne valent pas contrôle final."
+  },
+  "receipt_only_workflow_check": {
+    "checked_at": "2026-10-14T00:14:34.883575+00:00",
+    "night_publication_tests": 47,
+    "result": "passed",
+    "guard_runs_for_every_push_and_pr": true,
+    "pages_skips_only": [
+      "organisation/execution-20261014/cycles.json",
+      "organisation/execution-20261014/journal.jsonl",
+      "organisation/execution-20261014/status.json",
+      "organisation/execution-20261014/infrastructure-publication.json",
+      "organisation/execution-20261014/publications/**"
+    ],
+    "source_image_config_triggers_checked": 6
   }
 }

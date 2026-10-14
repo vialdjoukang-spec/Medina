@@ -3,6 +3,14 @@ name: Publier MEDINA sur GitHub Pages
 on:
   push:
     branches: [main]
+    # Ces seuls reçus ne modifient aucun fichier du site. La garde espace.yml
+    # s'exécute toujours ; toute source, image ou configuration déclenche tout Pages.
+    paths-ignore:
+      - 'organisation/execution-20261014/cycles.json'
+      - 'organisation/execution-20261014/journal.jsonl'
+      - 'organisation/execution-20261014/status.json'
+      - 'organisation/execution-20261014/infrastructure-publication.json'
+      - 'organisation/execution-20261014/publications/**'
   workflow_dispatch:
 
 permissions:
