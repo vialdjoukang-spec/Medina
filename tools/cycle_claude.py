@@ -208,7 +208,9 @@ def mode_change(after, previous_cycle, cycle, now):
 
 def temporal_proofs(tree, cycle, now):
     start = C.dated(cycle['started_at'])
-    floor = max(start, C.dated(NOT_BEFORE))
+    # Un cycle repris (Cycle 2) a commencé à la remise, avant son inscription au registre :
+    # ses preuves datent au plus tôt de l'autorisation, jamais de la chaîne nocturne expirée.
+    floor = C.dated(NOT_BEFORE) if cycle.get('transferred_from') else max(start, C.dated(NOT_BEFORE))
     C.require(start <= now, 'Cycles Claude : démarrage futur')
 
     def within(value):

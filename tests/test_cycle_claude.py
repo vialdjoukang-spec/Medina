@@ -165,7 +165,7 @@ class ClaudeTemporalTests(ClaudeFixture, unittest.TestCase):
 
     def test_proof_before_cycle_start_rejected(self):
         with self.assertRaisesRegex(C.CycleError, 'antidatée'):
-            self.author_dates('2026-10-14T20:45:00+00:00', '2026-10-14T21:30:00+00:00')
+            self.author_dates('2026-10-14T20:00:00+00:00', '2026-10-14T21:30:00+00:00')
 
     def test_future_proof_rejected(self):
         with self.assertRaisesRegex(C.CycleError, 'future'):
