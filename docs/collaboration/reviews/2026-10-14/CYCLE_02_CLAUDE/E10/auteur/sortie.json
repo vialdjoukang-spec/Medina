@@ -1,7 +1,7 @@
 {
  "actor": "C02-R-ENDO",
  "verdict": "conforme",
- "checked_at": "2026-10-14T21:58:52.663719+00:00",
+ "checked_at": "2026-10-14T22:15:20.200739+00:00",
  "prompt_files": {
   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -17,7 +17,7 @@
     {
      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-     "explanation": "Correction d'auteur E10 de la réserve Z01 demandée par le coordinateur après la passe 2 intermédiaire croisée ; ni commit ni push."
+     "explanation": "Autorité de reprise du Cycle 2 lue : C02-R-ENDO corrige E10 comme auteur ; la correction Z01 a été demandée par le coordinateur après la passe 2 intermédiaire croisée ; ni commit ni push."
     }
    ]
   },
@@ -28,7 +28,7 @@
     {
      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
      "sha256": "39fce2427c745e0a5d22d351e69d482b576d7fbb45e045a4be0a1a51ed9f7833",
-     "explanation": "Écritures limitées à E10_pop1.html, au registre _claude et au dossier auteur ; images inchangées."
+     "explanation": "Écritures limitées aux sept sources E10, aux preuves _claude et au dossier auteur. Les neuf images ont leurs licences vérifiées le 14.10.2026 et sont inchangées depuis."
     }
    ]
   },
@@ -39,7 +39,7 @@
     {
      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
      "sha256": "9429f6494a488c9dbf42253ab6c14b2050c93647cf43bd34e6c14ed8ca5a9cb6",
-     "explanation": "Registre renouvelé : 53 assertions, dont le tableau 3 complet (cinq catégories) et la branche type 2 de l'exception D/D1 du texte SGED/SGRM du 1.8.2025, relus le 14.10.2026 (p. 12–13)."
+     "explanation": "Le registre contient 53 assertions, relues en ligne le 14.10.2026 avec l'empreinte du texte lu. Il inclut le tableau 3 complet (cinq catégories) et le §10 de la directive SGED/SGRM du 1.8.2025, p. 12–13."
     }
    ]
   },
@@ -50,7 +50,7 @@
     {
      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
      "sha256": "9429f6494a488c9dbf42253ab6c14b2050c93647cf43bd34e6c14ed8ca5a9cb6",
-     "explanation": "Directive suisse SGED/SGRM 2025 transcrite sans ajout ni seuil étranger ; exception au sens de l'art. 7 al. 3 de l'ordonnance réglant l'admission à la circulation routière."
+     "explanation": "Les sources suisses passent d'abord : SSED technologie 2025, SGED/SGRM conduite 2025, QualiCCare pied, HUG, RMS, FI Swissmedic NovoRapid, Tresiba et Baqsimi. JBDS et NICE sont signalés comme britanniques et ne servent qu'aux compléments motivés."
     }
    ]
   },
@@ -61,7 +61,7 @@
     {
      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass2_intermediaire_defavorable.json",
      "sha256": "b6b5799a34e17698781f6854c1f58e6e1e239d9af9495c2605ef965dfa73f1f8",
-     "explanation": "Auteur corrigeant ; le verdict final reste au relecteur croisé C02-R-NEPH."
+     "explanation": "La passe intermédiaire de C02-R-NEPH, relecteur distinct, est lue ; l'auteur corrige Z01 sans se déclarer approuvé."
     }
    ]
   },
@@ -72,7 +72,7 @@
     {
      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
      "sha256": "0808fac0f272931d82dcfa690575c2fd03a9e4a3b74ef76fc868fa0ef9f8164d",
-     "explanation": "test_v7.py --static E10 : OK (32 199 mots, 106 fenêtres, 3 quiz, 21 Pareto) ; aperçu sans erreur."
+     "explanation": "test_v7.py --static E10 : OK (32 199 mots, 106 fenêtres, 3 quiz, 21 Pareto) dans un worktree jetable supprimé ; aperçu sans erreur JavaScript ni débordement."
     }
    ]
   },
@@ -83,7 +83,7 @@
     {
      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree.json",
      "sha256": "72a02a0b42043ab4cb92a042b69bd275d8f9a977542e7e27f85daa84306b44a5",
-     "explanation": "Relevé d'entrée conservé ; Z01 corrigée mais non déclarée levée par l'auteur seul ; aucune validation médicale humaine."
+     "explanation": "Le relevé d'entrée est conservé. Aucune réserve n'est déclarée levée par l'auteur seul. Les sources non relues aujourd'hui restent attribuées au registre Codex. medical_human_validation reste false."
     }
    ]
   }
