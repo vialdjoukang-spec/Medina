@@ -95,15 +95,17 @@ def importer(title, dest, legende, alt, emplacement):
         path = dest / (stem + ".jpg"); im.convert("RGB").save(path, quality=84, optimize=True, progressive=True)
     sha = hashlib.sha256(path.read_bytes()).hexdigest()
     man_path = dest / "ATTRIBUTIONS.json"
-    man = json.loads(man_path.read_text()) if man_path.exists() else []
-    man = [m for m in man if m.get("fichier") != path.name]
+    # Format lu par tools/night_cycle.py : {"code": …, "images": [...]} ; une liste nue reste acceptée.
+    doc = json.loads(man_path.read_text()) if man_path.exists() else {"code": dest.name.upper(), "images": []}
+    man = doc["images"] if isinstance(doc, dict) else doc
+    man[:] = [m for m in man if m.get("fichier") != path.name]
     man.append({"fichier": path.name, "page_source": i["page"], "url_fichier": i["file"], "auteur": i["author"],
                 "credit": i["credit"], "licence": i["licence"], "licence_url": i["licence_url"],
                 "attribution": f"{i['author']}, {i['licence']}, via Wikimedia Commons",
                 "consulte_le": datetime.now(timezone.utc).date().isoformat(), "sha256": sha,
                 "octets": path.stat().st_size, "legende": legende, "alt": alt, "emplacement": emplacement,
                 "verification_visuelle": "à faire par l'auteur : ouvrir l'image et confirmer la légende"})
-    man_path.write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n")
+    man_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
     src = path.as_posix()
     src = src[src.index("assets/img/"):] if "assets/img/" in src else src
     print(f'<figure><img src="{src}" alt="{html.escape(alt)}" loading="lazy"><figcaption>{legende} '
