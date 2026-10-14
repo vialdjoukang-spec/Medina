@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      night_deadline: ${{ steps.publication_manifest.outputs.night_deadline }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -149,6 +151,11 @@ jobs:
         env:
           MEDINA_FRAGMENTS: ${{ github.workspace }}/_site/fragments
         run: python tests/audit_fragments.py
+      - name: Lier la publication aux sources et fichiers construits
+        id: publication_manifest
+        env:
+          BASE_SHA: ${{ github.event.before }}
+        run: python tools/publication_manifest.py --site _site
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
@@ -160,6 +167,20 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Vérifier l’échéance réelle avant publication nocturne
+        if: needs.build.outputs.night_deadline != ''
+        env:
+          PUBLICATION_DEADLINE: ${{ needs.build.outputs.night_deadline }}
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime, timezone
+          import os
+          now = datetime.now(timezone.utc)
+          deadline = datetime.fromisoformat(os.environ['PUBLICATION_DEADLINE'])
+          if now >= deadline:
+              raise SystemExit('Publication nocturne refusée : autorisation expirée à 08 h 00 Europe/Zurich.')
+          print('Heure effective avant déploiement :', now.isoformat())
+          PY
       - name: Déployer sur GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
