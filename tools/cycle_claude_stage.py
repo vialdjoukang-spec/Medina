@@ -2,13 +2,16 @@
 """Tenue du registre des cycles Claude par le coordinateur (aucune preuve fabriquée).
 
   python3 tools/cycle_claude_stage.py start 2 --runtime ID [--transferred-from Codex --handover CHEMIN]
+  python3 tools/cycle_claude_stage.py start 3 --runtime ID --direct   # cycles 3 à 30, publication directe
   python3 tools/cycle_claude_stage.py stage G45 EN_AUDIT_CROISE --runtime ID [--source-dir DOSSIER]
         [--images CHEMIN] [--proof author=CHEMIN ...]
   python3 tools/cycle_claude_stage.py cross-phase 2 CHEMIN          # clôture initiale des audits croisés
   python3 tools/cycle_claude_stage.py close 2 CHEMIN --runtime ID    # reçu de clôture sans réserve
 
 L'outil met à jour organisation/CYCLES_CLAUDE.json (références {path, sha256} calculées sur les
-fichiers existants) et ajoute l'événement au journal append-only. Il ne rédige ni ne juge aucune
+fichiers existants) et ajoute l'événement au journal append-only. En publication directe
+(--direct), les missions croisées restent nulles et seuls EN_CONTROLE, PRET_A_INJECTER, INJECTE,
+PUBLIE_VERIFIE suivent EN_PRODUCTION ; aucune preuve cross_audit ou counter_audit n'est acceptée. Il ne rédige ni ne juge aucune
 revue : la garde tools/cycle_claude.py vérifie ensuite toutes les preuves.
 """
 import argparse
@@ -68,16 +71,21 @@ def start(a):
     data = load()
     if any(c['state'] == 'ACTIF' for c in data['cycles']):
         sys.exit('Un cycle Claude est déjà actif')
+    if a.direct and (a.cycle not in G.DIRECT_CYCLES or a.transferred_from):
+        sys.exit('Publication directe réservée aux cycles 3 à 30 produits par Claude')
     at = now()
     rows = [dict(code=code, fragment_id=fragment, production_cycle=a.cycle, writer=f'C{a.cycle:02d}-R-{tag}',
-                 cross_reviewer=f'C{a.cycle:02d}-R-{N.CROSS[tag]}', counter_reviewer=f'C{a.cycle:02d}-CA-{tag}',
+                 cross_reviewer=None if a.direct else f'C{a.cycle:02d}-R-{N.CROSS[tag]}',
+                 counter_reviewer=None if a.direct else f'C{a.cycle:02d}-CA-{tag}',
                  status='EN_PRODUCTION', source_dir=None, files={}, images=None, **{k: None for k in G.PROOFS})
             for code, fragment, tag in N.missions(Disk(), a.cycle)]
-    data['cycles'].append({'cycle': a.cycle, 'owner': 'Claude', 'state': 'ACTIF', 'started_at': at,
+    mode = {'mode': G.DIRECT_MODE, 'authority': G.DIRECT_AUTHORITY, 'authority_sha256': sha(G.DIRECT_AUTHORITY)} if a.direct else {}
+    data['cycles'].append({'cycle': a.cycle, 'owner': 'Claude', 'state': 'ACTIF', 'started_at': at, **mode,
                            'transferred_from': a.transferred_from,
                            'handover': ref(a.handover) if a.handover else None,
                            'cross_phase': None, 'closed_at': None, 'closure': None, 'budget': None, 'chapters': rows})
-    save(data, {'at': at, 'event': 'cycle_started', 'cycle': a.cycle, 'coordinator_runtime': a.runtime})
+    save(data, {'at': at, 'event': 'cycle_started', 'cycle': a.cycle, 'coordinator_runtime': a.runtime,
+                **({'mode': G.DIRECT_MODE} if a.direct else {})})
 
 
 def active(data):
@@ -95,11 +103,16 @@ def stage(a):
         sys.exit(f'{a.code} absent du cycle actif')
     if a.status not in C.STATES or C.STATES.index(a.status) < C.STATES.index(row['status']):
         sys.exit('Statut inconnu ou régression')
+    straight = G.direct(cycle)
+    if straight and a.status in G.DIRECT_FORBIDDEN:
+        sys.exit('Publication directe : aucun audit croisé ni contre-audit')
     locked = C.STATES.index(row['status']) >= C.STATES.index('INJECTE')
     for item in a.proof or []:
         key, _, path = item.partition('=')
         if key not in G.PROOFS or not path:
             sys.exit(f'Preuve invalide : {item}')
+        if straight and key in {'cross_audit', 'counter_audit'}:
+            sys.exit('Publication directe : audit croisé ou contre-audit fictif refusé')
         if locked and key != 'publication':
             sys.exit('Cours injecté : seules les preuves de publication peuvent être ajoutées')
         row[key] = ref(path)
@@ -148,6 +161,7 @@ def main():
     sub = p.add_subparsers(dest='action', required=True)
     s = sub.add_parser('start'); s.add_argument('cycle', type=int); s.add_argument('--runtime', required=True)
     s.add_argument('--transferred-from', choices=['Codex']); s.add_argument('--handover')
+    s.add_argument('--direct', action='store_true', help='publication directe (cycles 3 à 30)')
     s.set_defaults(run=start)
     s = sub.add_parser('stage'); s.add_argument('code'); s.add_argument('status'); s.add_argument('--runtime', required=True)
     s.add_argument('--source-dir'); s.add_argument('--images'); s.add_argument('--proof', action='append')

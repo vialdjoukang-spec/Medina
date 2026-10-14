@@ -5,6 +5,15 @@ Reprend la chaîne de preuves de tools/night_cycle.py sans échéance horaire, a
 coordinateur Claude et quatre captures réelles par leçon. Elle contrôle la cohérence
 des reçus, pas leur vérité médicale ; une revue IA n'est pas une validation humaine.
 Registre absent : garde inactive.
+
+Publication directe (cycles 3 à 30, autorité DIRECT_AUTHORITY du 14 octobre 2026) : exception bornée
+sur le modèle du Cycle 1. Un cycle la déclare par ``mode: "publication_directe"`` avec ``authority`` et
+``authority_sha256`` figés ; le Cycle 2 et tout cycle sans ce mode gardent la chaîne complète. Les
+revues auteur et contrôle relisent PROMPTS_DIRECT : PROMPTS où l'autorité de reprise du Cycle 2 (qui
+décrit audits croisés et contre-audits) est remplacée par l'autorité de publication directe, afin
+qu'aucune revue n'atteste un Prompt contradictoire. États : EN_PRODUCTION, EN_CONTROLE,
+PRET_A_INJECTER, INJECTE, PUBLIE_VERIFIE ; cross_audit et counter_audit restent null (aucun audit
+fictif) ; le catalogue porte provisional_injection, audit_deferred="apres_cycle_30" et production_cycle.
 """
 from datetime import datetime, timezone
 
@@ -25,6 +34,12 @@ NOT_BEFORE = '2026-10-14T20:29:00+00:00'
 PROMPTS = ('PROMPT_MEDINA.md', 'PROMPT_TRANSITION.md', 'docs/STYLE_REDACTION.md', AUTHORITY, C.CLARITY_AUTHORITY)
 PROOFS = N.PROOFS
 CAPTURES = 4
+DIRECT_MODE = 'publication_directe'
+DIRECT_AUTHORITY = 'docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md'
+DIRECT_CYCLES = range(3, 31)
+DIRECT_DEFERRED = 'apres_cycle_30'
+PROMPTS_DIRECT = tuple(DIRECT_AUTHORITY if p == AUTHORITY else p for p in PROMPTS)
+DIRECT_FORBIDDEN = ('EN_AUDIT_CROISE', 'EN_CONTRE_AUDIT')
 SOURCE_ROOTS = ('livraisons/Livraison Codex/', 'livraisons/Livraison Claude/')
 ROW_FIELDS = ('code', 'fragment_id', 'production_cycle', 'writer', 'cross_reviewer', 'counter_reviewer',
               'status', 'source_dir', 'files', 'images') + PROOFS
@@ -40,6 +55,10 @@ def transferred_cycles(tree):
         return set()
     return {c['cycle'] for c in data['cycles'] if isinstance(c, dict) and isinstance(c.get('cycle'), int)
             and c.get('owner') == 'Claude' and c.get('transferred_from') == 'Codex'}
+
+
+def direct(cycle):
+    return cycle.get('mode') == DIRECT_MODE
 
 
 def records(tree):
@@ -73,16 +92,31 @@ def records(tree):
             C.require(cycle.get('transferred_from') is None and cycle.get('handover') is None,
                       'Cycles Claude : reprise non déclarée correctement')
             C.require(n not in codex_cycles, 'Cycles Claude : cycle déjà attribué à Codex')
+        if cycle.get('mode') is None:
+            C.require(cycle.get('authority') is None and cycle.get('authority_sha256') is None,
+                      'Cycles Claude : autorité propre sans mode déclaré')
+        else:
+            C.require(direct(cycle) and n in DIRECT_CYCLES and cycle.get('transferred_from') is None,
+                      'Cycles Claude : publication directe réservée aux cycles 3 à 30')
+            C.require(cycle.get('authority') == DIRECT_AUTHORITY and
+                      cycle.get('authority_sha256') == C.digest(tree.read(DIRECT_AUTHORITY)),
+                      'Cycles Claude : autorité de publication directe absente ou différente')
+            C.require(index > 0, 'Cycles Claude : publication directe après un cycle Claude clôturé seulement')
+            C.require(cycle.get('cross_phase') is None, 'Cycles Claude : phase croisée fictive en publication directe')
         rows = cycle.get('chapters')
         C.require(isinstance(rows, list) and len(rows) == 4, 'Cycles Claude : exactement quatre leçons requises')
         for row, (code, fragment, tag) in zip(rows, N.missions(tree, n)):
             C.require(isinstance(row, dict) and all(k in row for k in ROW_FIELDS), 'Cycles Claude : champs de leçon absents')
             C.require((row['code'], row['fragment_id'], row['production_cycle']) == (code, fragment, n),
                       'Cycles Claude : identité ou ordre des quatre leçons incorrect')
-            C.require(row['writer'] == f'C{n:02d}-R-{tag}' and row['cross_reviewer'] == f'C{n:02d}-R-{N.CROSS[tag]}' and
-                      row['counter_reviewer'] == f'C{n:02d}-CA-{tag}', 'Cycles Claude : indépendance des missions incorrecte')
+            reviewers = (None, None) if direct(cycle) else (f'C{n:02d}-R-{N.CROSS[tag]}', f'C{n:02d}-CA-{tag}')
+            C.require(row['writer'] == f'C{n:02d}-R-{tag}' and (row['cross_reviewer'], row['counter_reviewer']) == reviewers,
+                      'Cycles Claude : indépendance des missions incorrecte')
             C.require(row['status'] in C.STATES and all(row[k] is None or isinstance(row[k], dict) for k in PROOFS),
                       'Cycles Claude : statut ou preuve invalide')
+            if direct(cycle):
+                C.require(row['status'] not in DIRECT_FORBIDDEN and row['cross_audit'] is None and row['counter_audit'] is None,
+                          'Cycles Claude : audit croisé ou contre-audit fictif en publication directe')
         if cycle['state'] == 'CLOTURE':
             C.require(all(r['status'] == 'PUBLIE_VERIFIE' for r in rows), 'Cycles Claude : clôture prématurée')
             C.dated(cycle.get('closed_at'))
@@ -109,6 +143,30 @@ def ready(tree, row, rows, cross_completed_at=None):
     images = N.image_proof(tree, row)
     for key in ('author', 'cross_audit', 'counter_audit', 'control'):
         report = C.proof(tree, row[key], row['code'] + ' ' + key)
+        C.require(report.get('image_files') == images, 'Images : revue non liée aux images finales')
+    return dict(files, **images)
+
+
+def direct_ready(tree, row):
+    """Preuves d'une leçon en publication directe : auteur, sources, images, contrôle, quatre captures."""
+    files = C.source_files(tree, row, SOURCE_ROOTS)
+    C.require(row['cross_audit'] is None and row['counter_audit'] is None,
+              'Cycles Claude : audit croisé ou contre-audit fictif en publication directe')
+    author = C.review(tree, row, 'author', row['writer'], files, PROMPTS_DIRECT)
+    C.source_ledger_proof(tree, row, author, files)
+    control = C.review(tree, row, 'control', COORDINATOR, files, PROMPTS_DIRECT)
+    C.require(C.dated(author['exit']['checked_at']) <= C.dated(control['entry']['checked_at']),
+              'Cycles Claude : contrôle engagé avant la sortie de l’auteur')
+    C.require(author['runtime_agent_id'] != control['runtime_agent_id'], 'Cycles Claude : auteur et coordinateur distincts requis')
+    C.technical_proof(tree, row, control, files, CAPTURES)
+    if __package__ == 'tools':
+        from tools.espace import swiss_context_proof
+    else:
+        from espace import swiss_context_proof
+    swiss_context_proof(tree, {'swiss_context': control.get('swiss_context')}, row['fragment_id'], files,
+                        scope='chapter', chapter_code=row['code'])
+    images = N.image_proof(tree, row)
+    for report in (author, control):
         C.require(report.get('image_files') == images, 'Images : revue non liée aux images finales')
     return dict(files, **images)
 
@@ -192,24 +250,30 @@ def validate(before, after, now=None):
             C.require(not course_changes, 'Cycles Claude : nouveau cycle avec injection simultanée')
             continue
         previous_cycle = old['cycles'][index]
-        for field in ('cycle', 'owner', 'started_at', 'budget', 'transferred_from', 'handover'):
+        for field in ('cycle', 'owner', 'started_at', 'budget', 'transferred_from', 'handover', 'mode', 'authority', 'authority_sha256'):
             C.require(cycle.get(field) == previous_cycle.get(field), 'Cycles Claude : identité ou départ du cycle modifié')
         if previous_cycle['state'] == 'CLOTURE':
             C.require(cycle == previous_cycle, 'Cycles Claude : cycle clos immuable')
         rows = cycle['chapters']
         if previous_cycle.get('cross_phase') is not None:
             C.require(cycle.get('cross_phase') == previous_cycle['cross_phase'], 'Cycles Claude : clôture initiale croisée réécrite')
-        boundary = cross_boundary(after, cycle, now) if any(C.STATES.index(r['status']) >= 2 for r in rows) else None
+        straight = direct(cycle)
+        boundary = None if straight else (cross_boundary(after, cycle, now) if any(C.STATES.index(r['status']) >= 2 for r in rows) else None)
         for previous, row in zip(previous_cycle['chapters'], rows):
             stage = C.STATES.index(row['status'])
             C.require(stage >= C.STATES.index(previous['status']), 'Cycles Claude : régression non tracée')
-            if stage >= 1:
-                C.require(all(r['author'] for r in rows), 'Cycles Claude : quatre auteurs avant audit croisé')
-            if stage >= 2:
-                C.require(all(r['cross_audit'] for r in rows), 'Cycles Claude : quatre audits croisés avant contre-audit')
-            if stage >= 3:
-                C.require(all(r['counter_audit'] for r in rows), 'Cycles Claude : quatre contre-audits avant contrôle')
-            if 1 <= stage < 4:
+            if straight:
+                # Publication directe : la revue auteur précède le contrôle ; aucun audit croisé n'est attendu.
+                if stage == 3:
+                    C.review(after, row, 'author', row['writer'], C.source_files(after, row, SOURCE_ROOTS), PROMPTS_DIRECT)
+            else:
+                if stage >= 1:
+                    C.require(all(r['author'] for r in rows), 'Cycles Claude : quatre auteurs avant audit croisé')
+                if stage >= 2:
+                    C.require(all(r['cross_audit'] for r in rows), 'Cycles Claude : quatre audits croisés avant contre-audit')
+                if stage >= 3:
+                    C.require(all(r['counter_audit'] for r in rows), 'Cycles Claude : quatre contre-audits avant contrôle')
+            if not straight and 1 <= stage < 4:
                 files = C.source_files(after, row, SOURCE_ROOTS)
                 C.review(after, row, 'author', row['writer'], files, PROMPTS)
                 if stage >= 2:
@@ -223,7 +287,7 @@ def validate(before, after, now=None):
                 C.require(all(before.read(p) == after.read(p) and C.digest(after.read(p)) == sha for p, sha in locked.items()),
                           'Cycles Claude : source injectée modifiée')
             if stage >= 4:
-                files = ready(after, row, rows, cross_completed_at=boundary)
+                files = direct_ready(after, row) if straight else ready(after, row, rows, cross_completed_at=boundary)
                 if C.STATES.index(previous['status']) < 5 and stage >= 5:
                     C.require(previous['status'] == 'PRET_A_INJECTER' and row['status'] == 'INJECTE' and row['publication'] is None,
                               'Cycles Claude : contrôle préexistant et publication distincte requis')
@@ -247,6 +311,7 @@ def validate(before, after, now=None):
     C.require(len(injections) <= 1, 'Cycles Claude : une seule injection à la fois')
     if injections:
         prior, row = injections[0]
+        deferred = direct(prior)
         idx = [r['code'] for r in prior['chapters']].index(row['code'])
         C.require(all(r['status'] == 'PUBLIE_VERIFIE' for r in prior['chapters'][:idx]) and
                   all(r['status'] == 'PRET_A_INJECTER' for r in prior['chapters'][idx:]),
@@ -258,6 +323,9 @@ def validate(before, after, now=None):
                   additions[0].get('code') == row['code'] and additions[0].get('covers') == [row['code']] and
                   additions[0].get('integrated') is True and additions[0].get('production_cycle') == row['production_cycle'],
                   'Cycles Claude : catalogue ajout unique requis')
+        if deferred:
+            C.require(additions[0].get('provisional_injection') is True and additions[0].get('audit_deferred') == DIRECT_DEFERRED,
+                      'Cycles Claude : publication directe sans mention d’audit différé')
         authorized['chapters.json'] = C.digest(after.read('chapters.json'))
     else:
         C.require(not course_changes, 'Cycles Claude : source sans injection contrôlée')

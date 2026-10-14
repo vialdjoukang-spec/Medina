@@ -346,3 +346,289 @@ class ClaudeReadyParametersTests(unittest.TestCase):
                          (G.COORDINATOR, 4, G.PROMPTS, G.SOURCE_ROOTS))
         self.assertIn(G.AUTHORITY, G.PROMPTS)
         self.assertNotIn(N.AUTHORITY, G.PROMPTS)
+
+
+# ---------------------------------------------------------------------------
+# Publication directe des cycles 3 à 30 (autorité du 14 octobre 2026).
+# Preuves techniques simulées : aucune revue réelle ni validation clinique.
+# ---------------------------------------------------------------------------
+T = '2026-10-14T{}:00+00:00'.format
+START3 = T('21:40')
+CHECKS = ('autorisation', 'perimetre_provenance', 'sources_lues', 'contexte_suisse', 'independance', 'contrat_cours', 'honnetete')
+_IMAGE_PROOF = N.image_proof
+
+
+def _image_proof(tree, row):
+    # Le Cycle 2 clos de la fixture n'a pas d'images : seules ses preuves de publication sont simulées.
+    return {} if row['production_cycle'] == 2 else _IMAGE_PROOF(tree, row)
+
+
+class DirectFixture:
+    def setUp(self):
+        root = Path(__file__).resolve().parents[1]
+        paths = {G.AUTHORITY, G.PLAN, G.CAHIER, G.DIRECT_AUTHORITY, *G.PROMPTS, *G.PROMPTS_DIRECT}
+        self.files = {p: (root / p).read_bytes() for p in paths}
+        self.files[N.REGISTRY] = encode({'cycles': []})
+        self.files['chapters.json'] = b'[]\n'
+        self.files['preuves/evidence.txt'] = b'Fixture technique non clinique'
+        self.events = [dict(event='cycle_started', cycle=2, at=START, coordinator_runtime='fixture')]
+        rows2 = rows_for(Tree(self.files), 2)
+        for row in rows2:
+            p = f"preuves/c2-{row['code']}.json"
+            self.files[p] = encode(dict(code=row['code'], entry={'checked_at': T('21:10')}, exit={'checked_at': T('21:15')},
+                                        checked_at=T('21:20'), deployment_status='success', readback=True, gauges=True,
+                                        main_sha='a' * 40, public_url='https://vialdjoukang-spec.github.io/Medina/fragments/x.html'))
+            row.update(status='PUBLIE_VERIFIE', **{k: self.ref(p) for k in G.PROOFS})
+            self.events.append(self.event(2, row))
+        self.files['preuves/c2-cloture.json'] = encode(dict(cycle=2, blocking_reserves=[]))
+        cycle2 = dict(cycle=2, owner='Claude', state='CLOTURE', started_at=START, transferred_from=None, handover=None,
+                      cross_phase=None, closed_at=T('21:30'), closure=self.ref('preuves/c2-cloture.json'), budget=None, chapters=rows2)
+        rows3 = rows_for(Tree(self.files), 3)
+        for row in rows3:
+            row.update(cross_reviewer=None, counter_reviewer=None)
+        self.cycle3 = dict(cycle=3, owner='Claude', state='ACTIF', started_at=START3, mode=G.DIRECT_MODE,
+                           authority=G.DIRECT_AUTHORITY, authority_sha256=C.digest(self.files[G.DIRECT_AUTHORITY]),
+                           transferred_from=None, handover=None, cross_phase=None, closed_at=None, closure=None,
+                           budget=None, chapters=rows3)
+        self.events.append(dict(event='cycle_started', cycle=3, at=START3, coordinator_runtime='fixture', mode=G.DIRECT_MODE))
+        self.state = dict(schema_version=1, authority=G.AUTHORITY, authority_sha256=C.digest(self.files[G.AUTHORITY]),
+                          plan_sha256=C.digest(self.files[G.PLAN]), coordinator=G.COORDINATOR, not_before=G.NOT_BEFORE,
+                          cycles=[cycle2, self.cycle3])
+        self.snapshot()
+
+    rows = property(lambda self: self.cycle3['chapters'])
+
+    def ref(self, path):
+        return {'path': path, 'sha256': C.digest(self.files[path])}
+
+    def event(self, n, row, at=T('22:30')):
+        return dict(event='stage_recorded', cycle=n, code=row['code'], status=row['status'],
+                    proofs={k: row[k] for k in G.PROOFS}, runtime_agent_id='fixture', at=at)
+
+    def save(self):
+        self.files[G.REGISTRY] = encode(self.state)
+        self.files[G.JOURNAL] = b''.join(encode(e) for e in self.events)
+
+    def snapshot(self):
+        self.save(); self.before = Tree(copy.deepcopy(self.files))
+
+    def write(self, path, data):
+        self.files[path] = encode(data) if not isinstance(data, bytes) else data
+        return self.ref(path)
+
+    def gate(self, actor, at):
+        return dict(actor=actor, verdict='conforme', checked_at=at,
+                    prompt_files={p: C.digest(self.files[p]) for p in G.PROMPTS_DIRECT},
+                    checks=[dict(id=c, status='conforme', evidence=[dict(path='preuves/evidence.txt', explanation='Fixture',
+                                                                          sha256=C.digest(self.files['preuves/evidence.txt']))])
+                            for c in CHECKS])
+
+    def produce(self, i, captures=4, prompts=None, technical_extra=None, ledger_extra=None):
+        """Leçon i prête : sources livrées, registre des sources, images, auteur, contrôle et captures simulés."""
+        row = self.rows[i]; code = row['code']; lc = code.lower()
+        src = f'livraisons/Livraison Claude/C-03/CYCLE_03_{code}'
+        image = f'assets/img/cycle3/{lc}/figure.png'
+        sources = {f'chapters/{code}/{code}_{s}.html': f'<p id="{lc}-{s}">Fixture</p>'.encode() for s in ('b', 'c', 'd', 'pop1', 'pop2')}
+        sources[f'chapters/{code}/{code}_a.html'] = f'<img src="../../{image}" alt="Figure {code}">'.encode()
+        sources[f'glossary/{lc}.py'] = b'# Fixture\n'
+        for p, raw in sources.items():
+            self.files[src + '/' + p] = raw
+        self.files[src + '/' + image] = PNG + bytes([i]) * 300
+        files = {p: C.digest(raw) for p, raw in sources.items()}
+        images = {image: C.digest(self.files[src + '/' + image])}
+        manifest = self.write(f'preuves/{lc}-images.json', {'images': [dict(
+            id='fig1', source_page_url='https://commons.wikimedia.org/x', file_url='https://upload.wikimedia.org/x.png',
+            author='Fixture', license='CC BY 4.0', attribution='Fixture', caption='Fixture', alt=f'Figure {code}',
+            location='a', path=image, sha256=images[image], accessed_at=T('21:45'), generated=False,
+            open_license_verified=True, visual_reviewed=True)]})
+        ledger = self.write(f'preuves/{lc}-sources.json', dict(code=code, final_files=files, unverified_claims=[],
+                            covered_files=list(files), claims=[dict(
+                                claim='Fixture', location='a', source_url='https://www.swissmedicinfo.ch/', source_title='Fixture',
+                                version_date='2026-01-01', section='1', source_passage_summary='Fixture', population='Adultes',
+                                limits='Fixture', accessed_on='2026-10-14', download_sha256='b' * 64)]) | (ledger_extra or {}))
+        common = dict(code=code, medical_human_validation=False, final_files=files, blocking_reserves=[], image_files=images)
+        prompts = prompts or G.PROMPTS_DIRECT
+        author_gate = lambda at: dict(self.gate(row['writer'], at), prompt_files={p: C.digest(self.files[p]) for p in prompts})
+        author = self.write(f'preuves/{lc}-auteur.json', dict(common, actor=row['writer'], runtime_agent_id=f'auteur-{lc}',
+                            entry=author_gate(T('21:50')), exit=author_gate(T('22:00')), source_ledger=ledger))
+        shots = []
+        for k, kind in enumerate(('ouverture', 'fenetre', 'figure', 'mobile')[:captures]):
+            p = f'preuves/{lc}-capture-{k}.png'
+            shots.append(dict(kind=kind, **self.write(p, PNG + bytes([i * 10 + k]) * 6000)))
+        technical = self.write(f'preuves/{lc}-technique.json', dict(final_files=files, result='passed', desktop=True, mobile=True,
+                               missing_windows=[], javascript_errors=[], uncovered_abbreviations=[], horizontal_overflow=False,
+                               captures=shots) | (technical_extra or {}))
+        control = self.write(f'preuves/{lc}-controle.json', dict(common, actor=G.COORDINATOR, runtime_agent_id='coordinateur',
+                             entry=self.gate(G.COORDINATOR, T('22:05')), exit=self.gate(G.COORDINATOR, T('22:10')),
+                             technical_checks=technical, swiss_context={'verdict': 'conforme'}))
+        row.update(source_dir=src, files=files, images=manifest, author=author, control=control, status='PRET_A_INJECTER')
+        self.events.append(self.event(3, row))
+
+    def inject(self, i, catalog_extra=None):
+        row = self.rows[i]
+        row['status'] = 'INJECTE'
+        locked = dict(row['files'], **{im['path']: im['sha256'] for im in json.loads(self.files[row['images']['path']])['images']})
+        for p in locked:
+            self.files[p] = self.files[row['source_dir'] + '/' + p]
+        row['injection'] = self.write(f"preuves/{row['code'].lower()}-injection.json",
+                                      dict(code=row['code'], files=locked, injector=G.COORDINATOR, checked_at=T('22:20')))
+        entry = dict(code=row['code'], covers=[row['code']], integrated=True, production_cycle=3,
+                     provisional_injection=True, audit_deferred=G.DIRECT_DEFERRED)
+        entry.update(catalog_extra or {})
+        self.files['chapters.json'] = encode(json.loads(self.files['chapters.json']) + [entry])
+        self.events.append(self.event(3, row))
+
+    def publish(self, i):
+        row = self.rows[i]; row['status'] = 'PUBLIE_VERIFIE'
+        row['publication'] = self.write(f"preuves/{row['code'].lower()}-publication.json", dict(
+            code=row['code'], checked_at=T('22:25'), deployment_status='success', readback=True, gauges=True,
+            main_sha='c' * 40, public_url='https://vialdjoukang-spec.github.io/Medina/fragments/x.html'))
+        self.events.append(self.event(3, row))
+
+    def guard(self, now=NOW):
+        self.save()
+        with patch.object(G, 'ready', side_effect=lambda tree, row, rows, **kw: row['files']), \
+                patch.object(G, 'cross_boundary', return_value=NOW), \
+                patch.object(N, 'image_proof', side_effect=_image_proof), \
+                patch('tools.espace.swiss_context_proof') as swiss:
+            result = G.validate(self.before, Tree(self.files), now=now)
+        self.swiss_calls = swiss.call_count
+        return result
+
+    def ready_cycle(self):
+        for i in range(4):
+            self.produce(i)
+        self.snapshot()
+
+
+class DirectPublicationTests(DirectFixture, unittest.TestCase):
+    def test_prompts_direct_replace_cycle2_authority(self):
+        self.assertIn(G.DIRECT_AUTHORITY, G.PROMPTS_DIRECT)
+        self.assertNotIn(G.AUTHORITY, G.PROMPTS_DIRECT)
+        self.assertEqual(len(G.PROMPTS_DIRECT), len(G.PROMPTS))
+
+    def test_ready_transition_accepted_without_cross_audit(self):
+        for i in range(4):
+            self.produce(i)
+        self.assertEqual(self.guard()[0], {})
+        self.assertEqual(self.swiss_calls, 4)
+
+    def test_direct_injection_accepted(self):
+        self.ready_cycle(); self.inject(0)
+        authorized, codes, catalog = self.guard()
+        row = self.rows[0]
+        self.assertEqual(set(authorized), set(row['files']) | {'assets/img/cycle3/i61/figure.png', 'chapters.json'})
+        self.assertEqual(catalog, {'I61'})
+        self.assertIn('I61', codes)
+
+    def test_full_cycle_and_next_start(self):
+        self.ready_cycle()
+        for i in range(4):
+            self.inject(i); self.guard(); self.snapshot()
+            self.publish(i); self.guard(); self.snapshot()
+        self.files['preuves/c3-cloture.json'] = encode(dict(cycle=3, blocking_reserves=[]))
+        self.cycle3.update(state='CLOTURE', closed_at=T('22:40'), closure=self.ref('preuves/c3-cloture.json'))
+        self.guard(); self.snapshot()
+        rows4 = [dict(r, cross_reviewer=None, counter_reviewer=None) for r in rows_for(Tree(self.files), 4)]
+        self.state['cycles'].append(dict(self.cycle3, cycle=4, state='ACTIF', started_at=T('22:45'), closed_at=None,
+                                         closure=None, chapters=rows4))
+        self.events.append(dict(event='cycle_started', cycle=4, at=T('22:45'), coordinator_runtime='fixture'))
+        self.guard()
+
+    def test_without_control_rejected(self):
+        self.produce(0); self.rows[0]['control'] = None; self.events.append(self.event(3, self.rows[0]))
+        with self.assertRaisesRegex(C.CycleError, 'control : preuve absente'):
+            self.guard()
+
+    def test_without_four_captures_rejected(self):
+        self.produce(0, captures=3)
+        with self.assertRaisesRegex(C.CycleError, '4 captures'):
+            self.guard()
+
+    def test_technical_failure_rejected(self):
+        for extra in ({'javascript_errors': ['x']}, {'missing_windows': ['w']}, {'mobile': False},
+                      {'uncovered_abbreviations': ['ABC']}, {'horizontal_overflow': True}, {'result': 'failed'}):
+            self.setUp(); self.produce(0, technical_extra=extra)
+            with self.subTest(extra=extra), self.assertRaisesRegex(C.CycleError, 'Contrôle final'):
+                self.guard()
+
+    def test_unverified_claim_rejected(self):
+        for extra in ({'unverified_claims': ['x']}, {'covered_files': ['chapters/I61/I61_a.html']}, {'claims': []}):
+            self.setUp(); self.produce(0, ledger_extra=extra)
+            with self.subTest(extra=extra), self.assertRaisesRegex(C.CycleError, 'Registre des sources'):
+                self.guard()
+
+    def test_cycle2_prompts_rejected_in_direct_mode(self):
+        self.produce(0, prompts=G.PROMPTS)
+        with self.assertRaisesRegex(C.CycleError, 'Prompt'):
+            self.guard()
+
+    def test_fictitious_audit_rejected(self):
+        for action in ('cross', 'counter', 'state', 'reviewer'):
+            files, state, events = copy.deepcopy(self.files), copy.deepcopy(self.state), copy.deepcopy(self.events)
+            self.cycle3 = self.state['cycles'][1]
+            self.produce(0)
+            row = self.rows[0]
+            if action == 'cross': row['cross_audit'] = row['author']
+            elif action == 'counter': row['counter_audit'] = row['control']
+            elif action == 'state': row['status'] = 'EN_CONTRE_AUDIT'
+            else: row['cross_reviewer'] = 'C03-R-HEM'
+            self.events.append(self.event(3, row))
+            with self.subTest(action=action), self.assertRaisesRegex(C.CycleError, 'fictif|indépendance'):
+                self.guard()
+            self.files, self.state, self.events = files, state, events
+            self.cycle3 = self.state['cycles'][1]
+
+    def test_order_and_double_injection_rejected(self):
+        self.ready_cycle(); self.inject(1)
+        with self.assertRaisesRegex(C.CycleError, 'ordre de publication'):
+            self.guard()
+        self.setUp(); self.ready_cycle(); self.inject(0); self.inject(1)
+        with self.assertRaisesRegex(C.CycleError, 'une seule injection'):
+            self.guard()
+
+    def test_catalogue_without_deferred_audit_rejected(self):
+        for extra in ({'audit_deferred': None}, {'provisional_injection': False}, {'production_cycle': 2}):
+            self.setUp(); self.ready_cycle(); self.inject(0, catalog_extra=extra)
+            with self.subTest(extra=extra), self.assertRaisesRegex(C.CycleError, 'catalogue|audit différé'):
+                self.guard()
+
+    def test_injected_course_immutable(self):
+        self.ready_cycle(); self.inject(0); self.guard(); self.snapshot()
+        self.files['chapters/I61/I61_b.html'] = b'Correction sans exception'
+        with self.assertRaisesRegex(C.CycleError, 'source injectée modifiée'):
+            self.guard()
+
+    def test_proof_before_cycle_start_rejected(self):
+        self.produce(0)
+        author = json.loads(self.files['preuves/i61-auteur.json']); author['entry']['checked_at'] = T('21:35')
+        self.rows[0]['author'] = self.write('preuves/i61-auteur.json', author)
+        self.events.append(self.event(3, self.rows[0]))
+        with self.assertRaisesRegex(C.CycleError, 'antidatée'):
+            self.guard()
+
+    def test_mode_cannot_be_added_or_removed(self):
+        self.cycle3.pop('mode')
+        with self.assertRaisesRegex(C.CycleError, 'autorité propre'):
+            self.guard()
+
+    def test_direct_start_requires_closed_previous_cycle(self):
+        self.state['cycles'][0].update(state='ACTIF', closed_at=None, closure=None)
+        with self.assertRaisesRegex(C.CycleError, 'non clôturé'):
+            self.guard()
+
+    def test_cycle2_keeps_full_chain(self):
+        cycle2 = self.state['cycles'][0]
+        cycle2.update(mode=G.DIRECT_MODE, authority=G.DIRECT_AUTHORITY, authority_sha256=self.cycle3['authority_sha256'])
+        with self.assertRaisesRegex(C.CycleError, 'cycles 3 à 30'):
+            self.guard()
+        self.assertFalse(G.direct({'cycle': 2}))
+
+
+class DirectChainCycle2Tests(ClaudeFixture, unittest.TestCase):
+    def test_cycle2_control_without_cross_audits_rejected(self):
+        row = self.state['cycles'][0]['chapters'][0]
+        row.update(status='EN_CONTROLE', author={'path': 'x'})
+        with patch.object(G, 'temporal_proofs'), patch.object(N, 'journal_proof'), \
+                self.assertRaisesRegex(C.CycleError, 'quatre auteurs|audits croisés'):
+            self.guard()
