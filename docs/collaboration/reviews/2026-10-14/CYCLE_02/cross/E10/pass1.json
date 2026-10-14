@@ -1,0 +1,451 @@
+{
+  "code": "E10",
+  "actor": "C02-R-NEPH",
+  "runtime_agent_id": "/root/executeur_cycles_nuit/auteur_n18",
+  "pass": 1,
+  "started_at": "2026-10-14T00:24:59.961362+00:00",
+  "finished_at": "2026-10-14T00:40:11.252085+00:00",
+  "medical_human_validation": false,
+  "dimensions": {
+    "redaction": "Lecture des 21 parties, 126 sous-parties, 42 fenêtres prescrites, Pareto et glossaire. Explications causales et distinction norme/cible/fictif généralement claires, calculs reproductibles. Écart R08 : infinitifs injonctifs fréquents et accès contextuel aux notions importantes insuffisant ; encadrés sciences trop souvent méthodologiques. Les chiffres ne doivent pas rester dans un paragraphe quand une gradation appelle un tableau.",
+    "medecine": "Seuils diagnostiques, HUG et trois produits exacts revérifiés ; aucune dose principale fausse relevée dans ces contrôles. La résolution DKA ne se confond pas avec la baisse du glucose, et l’allaitement Tresiba reste distinct de NovoRapid. Réserves substantielles : métriques et sécurité SSED, règles de conduite selon risque, interactions Baqsimi, branches potassium/réponse DKA et suivi du pied. Le cours ne peut donc pas être déclaré complet ni prêt à publier.",
+    "sources": "Passages primaires locaux effectivement lus, hashes archivés, 27 contrôles numériques primaires distincts et 12 calculs dérivés refaits. Priorité suisse visible, NICE/JBDS britanniques identifiés, figures étrangères utilisées pour mécanismes et non recommandations. Licence primaire de huit images vérifiée ; la neuvième est liée à une provenance antérieure de hash identique mais l’archive Commons lisible manque. Le registre de 227 assertions distingue le cas fictif ; les locateurs NICE/FI sont parfois généraux et la couverture des recommandations suisses est incomplète.",
+    "frontend": "Parcours personnel Playwright sur l’aperçu gelé : bureau 1440 et mobile 390, quatre onglets, quatre sous-onglets sciences, neuf images chargées, 93 cibles uniques de fenêtres/Pareto testées, aucune fiche absente ni erreur JS ou débordement. Les images disposent de liens vers leur taille originale. Captures personnelles bureau/mobile inspectées. Le rapport UI root est un complément distinct, non attribué à ce relecteur. Les écarts d’images R04/R06/R07 sont pédagogiques ou descriptifs, pas un échec de chargement. Vérification complémentaire personnelle : trois quiz à 1440 et 390 px, réponses correcte et incorrecte, soit douze interactions avec explication affichée."
+  },
+  "numerical_checks": [
+    {
+      "claim": "Diagnostic plasmatique à jeun ≥ 7,0 mmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/HbA1c-FR.txt",
+      "section": "p. 1 ; page1.png inspectée",
+      "passage": "Glucose plasmatique à jeun ≥ 7 mmol/l ; le signe a été vérifié sur image.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "e404d9283817dfbd85d2e78ec32f4d787bc284c1b935eb3cb2893cf1174ff7a3"
+    },
+    {
+      "claim": "Diagnostic à 2 heures après 75 g : ≥ 11,1 mmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/HbA1c-FR.txt",
+      "section": "p. 1",
+      "passage": "Deux heures après 75 g : ≥ 11,1 mmol/l.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "e404d9283817dfbd85d2e78ec32f4d787bc284c1b935eb3cb2893cf1174ff7a3"
+    },
+    {
+      "claim": "MonAM 2022 : 6,2 % des personnes de 15 ans et plus, tous diabètes",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/MonAM.txt",
+      "section": "Indicateur et définition",
+      "passage": "En 2022, 6,2 % ; population de 15 ans et plus vivant dans un ménage privé.",
+      "finding": "Concorde ; le cours interdit correctement d’en tirer une prévalence du type 1.",
+      "source_sha256": "965d792400fc2ff999dbc5da97e7644d4018da9def90048b50d25e0c1e603ffd"
+    },
+    {
+      "claim": "HUG : < 4 mmol/L → 15 g et < 2,5 mmol/L → 30 g",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/HUG-HYPO-PDF.txt",
+      "section": "p. 1, patient conscient",
+      "passage": "Resucrage oral 15 g ou 30 g selon glycémie.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "202dd51ac7e904ae41cc4d9475bc7c945bedb0cc36782acbf049d5e21c6f64c4"
+    },
+    {
+      "claim": "HUG : contrôle 20–30 minutes après resucrage",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/HUG-HYPO-PDF.txt",
+      "section": "p. 1",
+      "passage": "Contrôler la glycémie capillaire après 20–30 minutes.",
+      "finding": "Concorde avec ce protocole hospitalier nommé ; ne pas remplacer de mémoire par 15 min.",
+      "source_sha256": "202dd51ac7e904ae41cc4d9475bc7c945bedb0cc36782acbf049d5e21c6f64c4"
+    },
+    {
+      "claim": "Acidocétose adulte JBDS : cétones > 3, pH < 7,3 et/ou bicarbonates < 15",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/JBDS-DKA.txt",
+      "section": "Critères diagnostiques",
+      "passage": "blood ketones over 3.0 mmol/L ; venous pH less than 7.3 and/or bicarbonate less than 15 mmol/L.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "4bbcc28fa9cbc77d3741daadc2009a04a9197e7d9cff9f2e280aad412c71c431"
+    },
+    {
+      "claim": "Résolution DKA : cétones < 0,6 mmol/L ET pH > 7,3",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/JBDS-DKA.txt",
+      "section": "Algorithme / Resolution",
+      "passage": "ketones <0.6 mmol/L AND venous pH >7.3",
+      "finding": "Concorde ; les bicarbonates ne sont pas utilisés seuls pour la résolution.",
+      "source_sha256": "4bbcc28fa9cbc77d3741daadc2009a04a9197e7d9cff9f2e280aad412c71c431"
+    },
+    {
+      "claim": "Insuline IV JBDS 0,1 U/kg/h, réduction possible 0,05 après glucose < 14",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/JBDS-DKA.txt",
+      "section": "Action 4 et algorithme",
+      "passage": "0.1 unit/kg/hr ; consider reducing to 0.05 lorsque glucose <14.",
+      "finding": "Valeurs correctes, protocole britannique identifié ; réserve R04 sur les branches de sécurité et le produit exact.",
+      "source_sha256": "4bbcc28fa9cbc77d3741daadc2009a04a9197e7d9cff9f2e280aad412c71c431"
+    },
+    {
+      "claim": "Marqueur de gravité JBDS : trou anionique > 16, formule avec K",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/JBDS-DKA.txt",
+      "section": "Severity markers, ligne 1122 du texte extrait",
+      "passage": "Anion gap above 16 [Anion Gap = (Na+ + K+) – (Cl- + HCO3-)]",
+      "finding": "Concorde ; 30,5 dans l’exemple, et 26 sans K, sont des calculs dérivés distincts.",
+      "source_sha256": "4bbcc28fa9cbc77d3741daadc2009a04a9197e7d9cff9f2e280aad412c71c431"
+    },
+    {
+      "claim": "HHS : glucose ≥ 30 mmol/L et osmolalité ≥ 320 mOsm/kg",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/PMC10107355.txt",
+      "section": "Résumé / définition HHS",
+      "passage": "osmolality ≥320 ; marked hyperglycaemia ≥30 mmol/L",
+      "finding": "Concorde avec la formulation prudente du cours ; la crise ne se réduit pas à ces deux valeurs.",
+      "source_sha256": "b3247dbd6b0fde1995d43d790d6eb659cfc12e862f8028d2caff835f9e27d173"
+    },
+    {
+      "claim": "NovoRapid : effet 10–20 min, maximum 1–3 h, durée 3–5 h",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-NOVORAPID.txt",
+      "section": "Pharmacodynamique et posologie",
+      "passage": "Début 10–20 minutes ; effet maximal 1–3 heures ; durée 3–5 heures.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "cb56488cb82ebae2e951d23670a9fa7e108abe80e814da7ef862d32cc2d878ea"
+    },
+    {
+      "claim": "NovoRapid : besoins totaux usuels 0,5–1 U/kg/j et part rapide 50–70 %",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-NOVORAPID.txt",
+      "section": "Posologie dès 2 ans",
+      "passage": "Besoin total 0,5–1,0 U/kg/j ; NovoRapid couvre 50–70 %.",
+      "finding": "Concorde ; bien présenté comme repère FI et non prescription initiale universelle.",
+      "source_sha256": "cb56488cb82ebae2e951d23670a9fa7e108abe80e814da7ef862d32cc2d878ea"
+    },
+    {
+      "claim": "Tresiba : durée > 42 h et équilibre après 2–3 jours",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-TRESIBA.txt",
+      "section": "Pharmacodynamique",
+      "passage": "supérieure à 42 heures ; état d’équilibre atteint 2 à 3 jours.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "1ba5f12f56bc47a3ecf10df65f27b4bf28ce9cc37f177f121bae1ecc15cefd75"
+    },
+    {
+      "claim": "Tresiba adulte : intervalle minimal 8 h en cas de flexibilité",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-TRESIBA.txt",
+      "section": "Flexibilité des horaires",
+      "passage": "Intervalle minimal de 8 heures entre les injections.",
+      "finding": "Concorde ; limite pédiatrique mentionnée.",
+      "source_sha256": "1ba5f12f56bc47a3ecf10df65f27b4bf28ce9cc37f177f121bae1ecc15cefd75"
+    },
+    {
+      "claim": "Tresiba 200 : pas de 2 U, contre pas de 1 U pour 100",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-TRESIBA.txt",
+      "section": "Dispositifs / manipulation",
+      "passage": "100 : 1 à 80 par paliers de 1 ; 200 : 2 à 160 par paliers de 2.",
+      "finding": "Concorde pour les pas enseignés ; affichage en unités sans conversion.",
+      "source_sha256": "1ba5f12f56bc47a3ecf10df65f27b4bf28ce9cc37f177f121bae1ecc15cefd75"
+    },
+    {
+      "claim": "Conservation Tresiba après ouverture : 8 semaines ≤ 30 °C",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-TRESIBA.txt",
+      "section": "Stabilité après ouverture",
+      "passage": "8 semaines ; ne pas conserver au-dessus de 30 °C.",
+      "finding": "Concorde ; Penfill hors réfrigérateur, FlexTouch réfrigération permise distingués.",
+      "source_sha256": "1ba5f12f56bc47a3ecf10df65f27b4bf28ce9cc37f177f121bae1ecc15cefd75"
+    },
+    {
+      "claim": "NovoRapid FlexPen/Penfill : 4 semaines sous 30 °C en utilisation/réserve",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-NOVORAPID.txt",
+      "section": "Conservation",
+      "passage": "au-dessous de 30 °C et utiliser dans les 4 semaines.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "cb56488cb82ebae2e951d23670a9fa7e108abe80e814da7ef862d32cc2d878ea"
+    },
+    {
+      "claim": "Baqsimi : dose nasale 3 mg dès 1 an",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-BAQSIMI.txt",
+      "section": "Indication / posologie",
+      "passage": "Dose recommandée 3 mg ; adultes, adolescents et enfants à partir de 1 an.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "cd63329583ebb6713ce1b92bcead5bd51f26a27d2cd2beae6cb028457c24822b"
+    },
+    {
+      "claim": "Glucose Viollier 16–99 ans : 3,3–5,5 mmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/V-glucose.txt",
+      "section": "Valeurs de référence",
+      "passage": "3.3 - 5.5 mmol/L ; 16 - 99 Y ; f+m.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "0f3698a2557ff3a0d3ca1809b0fc92ba55c452b0c39d059b82e24b73d6db9a45"
+    },
+    {
+      "claim": "Peptide C Viollier : 0,27–1,27 nmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/V-cpeptide.txt",
+      "section": "Valeurs de référence",
+      "passage": "0.27 - 1.27 nmol/L.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "f38b751047111ceadf42b9a2bef7b92e06e7b4a610eb17fe2fbe8841cfe382af"
+    },
+    {
+      "claim": "Sodium Viollier : 136–145 mmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/V-Na.txt",
+      "section": "Valeurs de référence",
+      "passage": "136 - 145 mmol/L.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "ea323454bb59d554c0912e551832d969091ea52b864459bef1576cdc1513dd85"
+    },
+    {
+      "claim": "Potassium Viollier : 3,5–5,1 mmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/V-K.txt",
+      "section": "Valeurs de référence",
+      "passage": "3.5 - 5.1 mmol/L.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "c4b434742d552ca5bba39be2ce5be8eaa3e275d3d14f5cad245f7acec2b5930f"
+    },
+    {
+      "claim": "Bicarbonate sérique Viollier : 20–31 mmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/V-bicarbonate.txt",
+      "section": "Valeurs de référence",
+      "passage": "20.0 - 31.0 mmol/L.",
+      "finding": "Concorde ; pas confondu avec 22–26 en gazométrie.",
+      "source_sha256": "088050f763ae7a852f35706fbef10399e8de53cd1fbc49552bfd0398db39317c"
+    },
+    {
+      "claim": "Gazométrie La Source : pH 7,35–7,45 et bicarbonate 22–26",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/LaSource-pH.txt",
+      "section": "Référence adulte",
+      "passage": "pH: 7.35 - 7.45 ; Bicarbonate: 22 - 26.",
+      "finding": "Concorde avec le cours dans la population et la portée indiquées.",
+      "source_sha256": "a97ee664b5ff9bbf9eca3f3ee7b93c94eaa1ae64eaeb973f73732be76be41a79"
+    },
+    {
+      "claim": "SSED adulte : TIR > 70 % dans 3,9–10 et TBR < 4 %",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/SSED-TECH.txt",
+      "section": "pp. 19–20",
+      "passage": "TIR 3.9–10.0 ; above 70% ; total TBR under 4%.",
+      "finding": "Correct mais incomplet : voir R01 pour TAR, TITR, sous-plage et populations.",
+      "source_sha256": "64e352549f0f3fcea4318e0b9eb2c54e61780bfe37bef94a65b584ac3dfd8cf2"
+    },
+    {
+      "claim": "Grossesse : TIR > 70 % dans 3,5–7,8 mmol/L",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/SSED-TECH.txt",
+      "section": "pp. 22–24",
+      "passage": "Target range 3.5–7.8 mmol/l ; TIR goal >70%.",
+      "finding": "Correct mais les trois autres objectifs grossesse manquent : R01.",
+      "source_sha256": "64e352549f0f3fcea4318e0b9eb2c54e61780bfe37bef94a65b584ac3dfd8cf2"
+    },
+    {
+      "claim": "Conduite suisse : attente au moins 45 min après hypo",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/SSED-DRIVE.txt",
+      "section": "p. 10",
+      "passage": "Wartezeit von mindestens 45 Minuten",
+      "finding": "Correct mais ne suffit pas aux règles selon risque/CGM : R02.",
+      "source_sha256": "2393f0661cd03ddb6f08cfc5246e74bf52099f16df896dce628fd598a4cb6da6"
+    }
+  ],
+  "derived_calculations": [
+    {
+      "claim": "Repas 60 g / 10 g/U + (12−6) mmol/L / 2 mmol/L/U",
+      "computed": 9.0,
+      "expected": 9,
+      "units": "U, exemple fictif ; non prescription"
+    },
+    {
+      "claim": "45 g / 10 g/U",
+      "computed": 4.5,
+      "expected": 4.5,
+      "units": "U fictives"
+    },
+    {
+      "claim": "Trou anionique avec K",
+      "computed": 30.5,
+      "expected": 30.5,
+      "units": "mmol/L"
+    },
+    {
+      "claim": "Trou anionique sans K",
+      "computed": 26,
+      "expected": 26,
+      "units": "mmol/L"
+    },
+    {
+      "claim": "Osmolalité calculée totale",
+      "computed": 330,
+      "expected": 330,
+      "units": "mOsm/kg approximatifs"
+    },
+    {
+      "claim": "Osmolalité efficace",
+      "computed": 320,
+      "expected": 320,
+      "units": "mOsm/kg approximatifs"
+    },
+    {
+      "claim": "TIR 210/280",
+      "computed": 75.0,
+      "expected": 75,
+      "units": "%"
+    },
+    {
+      "claim": "Couverture 280/(14*24)",
+      "computed": 83.3,
+      "expected": 83.3,
+      "units": "%"
+    },
+    {
+      "claim": "Heures manquantes",
+      "computed": 56,
+      "expected": 56,
+      "units": "h"
+    },
+    {
+      "claim": "12 U à 200 U/mL",
+      "computed": 0.06,
+      "expected": 0.06,
+      "units": "mL ; ne pas régler un stylo en mL"
+    },
+    {
+      "claim": "12 U à 100 U/mL",
+      "computed": 0.12,
+      "expected": 0.12,
+      "units": "mL"
+    },
+    {
+      "claim": "Rapport ATP/ADP fictif 4/1",
+      "computed": 4.0,
+      "expected": 4,
+      "units": "sans dimension"
+    }
+  ],
+  "blocking_reserves": [
+    {
+      "id": "R01",
+      "severity": "majeure",
+      "location": "E10_b.html#e10-a08-partie-4 ; #e10-a11-partie-3/4 ; E10_c.html#e10-e03-partie-3/4 et fenêtres associées",
+      "problem": "La synthèse SSED 2025 omet des métriques et mesures de sécurité pertinentes. TIR/TBR seuls ne remplissent pas la demande de vérifier TIR, TITR, TBR et TAR. Manquent aussi les interférences de capteur, les objectifs grossesse complets et le suivi au moins mensuel ; grand âge/pédiatrie restent très généraux.",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/SSED-TECH.txt pp. 7, 19–24, 25–30, 34–38",
+      "expected_correction": "Ajouter des tableaux commentés par population : TAR >10 (<25 %) et >13,9 (au plus 5 %), sous-plage <3,0 (la source adulte dit 1–2 % ou moins), TITR avec statut non universel ; grossesse TBR <3,5 (<4 %), <3,0 (<1 %), TAR >7,8 (<25 %) et suivi au moins mensuel. Expliquer interférences dépendantes du modèle et contrôle capillaire discordant ; objectifs des sujets fragiles/enfants, statut des AID non réglementés, limites du suivi distant et consentement. Documenter dans une matrice toute exclusion motivée d’une recommandation suisse pertinente, sans fabriquer une indication ni un remboursement actuels."
+    },
+    {
+      "id": "R02",
+      "severity": "majeure",
+      "location": "E10_b.html#e10-a11-partie-6 ; E10_pop1.html fenêtre conduite",
+      "problem": "La règle des 45 minutes est exacte mais isolée. Le lecteur ne peut pas déterminer la conduite avant/durant un trajet ni après une hypoglycémie sévère selon son risque et son équipement.",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/SSED-DRIVE.txt pp. 9–11, §9 et tableau 2",
+      "expected_correction": "Présenter le groupe médical 1 et les catégories de risque dans un tableau sourcé : basal-bolus sans CGM / pompe non HCL, mesure avant trajet et au moins toutes les 2 h, correction 4–5 avec 10–20 g, interdiction/correction si <4 et récupération ; traiter séparément CGM/HCL et flèches descendantes. Ajouter la réévaluation spécialisée après hypo grade III et exigences CGM ou 6–8 mesures/j pendant au moins un an. Signaler les différences/discordances texte-tableau pour risque très élevé et séparer les permis professionnels ; ne pas inventer une règle uniforme de 5 mmol/L."
+    },
+    {
+      "id": "R03",
+      "severity": "majeure",
+      "location": "E10_d.html#e10-p02-partie-2/3 ; fenêtre Baqsimi",
+      "problem": "Les interactions sont décrites pour l’insuline mais les trois interactions nommées dans la FI du produit de secours sont absentes.",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/FI-BAQSIMI.txt rubrique Interactions",
+      "expected_correction": "Ajouter indométacine (perte de réponse glycémiante, voire hypoglycémie), warfarine (effet anticoagulant augmenté), bêtabloquants (élévation transitoire pouls/PA) et la conséquence clinique/contextuelle ; ne pas transformer ces interactions en contre-indications ni retarder un secours nécessaire. Synchroniser cours, fenêtre et registre."
+    },
+    {
+      "id": "R04",
+      "severity": "majeure",
+      "location": "E10_a.html#e10-a06-partie-4/5 ; E10_c.html#e10-e02-partie-6 ; IMG-E10-A06-1",
+      "problem": "Le débit IV est enseigné, mais les branches potassium et les critères quantifiés de réponse/échec ne sont pas expliqués. La figure de mécanismes ne couvre aucune branche de traitement/surveillance prescrite par le cahier A06 ; le texte adjacent ne compense que partiellement.",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/JBDS-DKA.txt pp. 22, 27–29 ; cahier e10-a06 image et étape 5",
+      "expected_correction": "Compléter la conduite par un tableau/cheminement textuel original sourcé : potassium >5,5 / 3,5–5,5 / <3,5, diurèse et prudence rénale, avis senior, objectifs de baisse des cétones ≥0,5 mmol/L/h et recours si réponse insuffisante ; séquence et adaptation hydrique selon population, relais après résolution. Conserver distinction Royaume-Uni/Suisse et FI du produit exact : aucune importation aveugle d’Actrapid/Humulin ou potassium. Pour la figure, trouver un vrai algorithme publié libre adéquat ou justifier l’adaptation en assurant réellement toutes les branches dans le texte adjacent. Pas de faux diagramme-image."
+    },
+    {
+      "id": "R05",
+      "severity": "modérée",
+      "location": "E10_b.html#e10-a10-partie-3 ; fenêtre pied diabétique",
+      "problem": "Les trois catégories du guide suisse sont nommées mais les grades de profondeur et le suivi/escalade ne sont pas enseignés. Une orientation urgente est correctement décrite, sans permettre de suivre une plaie initialement simple.",
+      "source": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/sources/SSED-FOOT.txt pp. 2–4",
+      "expected_correction": "Ajouter la gradation 1 dermique / 2 structures sous-cutanées / 3 os-articulation et le suivi au moins hebdomadaire, les critères d’escalade et l’absence d’amélioration : réduction <10 %/semaine, <50 % à 4 semaines selon la filière. Expliquer décharge et coordination. Garder les limites des seuils vasculaires et ne pas inventer une ordonnance antibiotique."
+    },
+    {
+      "id": "R06",
+      "severity": "modérée",
+      "location": "E10_b.html figure E10-04 ; E10_c.html figure E10-07 ; preuves/images.json",
+      "problem": "Deux descriptions dépassent ou déforment l’image : « premier et quatrième » traduit mal « 1st to 4th » ; la cascade E10-07 ne dessine pas GLUT4 bien que légende/alt annoncent sa translocation. La preuve Commons est une référence de session non consultable dans les archives E10.",
+      "source": "Inspection personnelle des 9 fichiers ; assets/images/cardiologie/PROVENANCE.json entrée hash 2126f531… ; MG-INSULIN.html figure 2",
+      "expected_correction": "Corriger en « du premier au quatrième orteil » et préciser que GLUT4 est expliqué par le texte adjacent, absent de la figure. Synchroniser alt/manifeste. Joindre une preuve consultable de la licence du fichier Commons exact (ou preuve primaire préexistante), sans supposer que le manifeste secondaire suffit ; conserver attribution et CC BY-SA du dérivé."
+    },
+    {
+      "id": "R07",
+      "severity": "modérée",
+      "location": "E10_c.html#e10-e03-partie-3 ; IMG-E10-E03-1 ; preuves/couverture.json",
+      "problem": "La courbe publiée ne montre ni période d’un rapport complet, ni dénominateurs, ni statistiques TIR/TBR/TAR, ni couverture. L’exercice fictif permet de refaire 75 % et 83,3 %, mais ne permet pas encore une lecture guidée de ces champs sur un rapport réel. La légende honnête sur le caractère non-AGP ne remplit pas à elle seule l’objectif du cahier.",
+      "source": "Cahier e10-e03 image/étape 3 ; PMC10888350.xml figures 5–6 ; inspection e10-05-report.png",
+      "expected_correction": "Utiliser un vrai rapport publié libre comportant les champs attendus, ou compléter une adaptation explicitement justifiée par une lecture guidée structurée de ce qui est visible/absent et de chaque donnée indispensable à demander. Séparer nettement les statistiques fictives des observations publiées, et achever les métriques manquantes de R01."
+    },
+    {
+      "id": "R08",
+      "severity": "modérée",
+      "location": "E10_a.html#e10-a01-partie-2/3, #e10-a04 ; tous encadrés/Pareto ; E10_c.html sciences ; boutons contextuels",
+      "problem": "Le français est généralement clair, mais de nombreuses consignes sont à l’infinitif (« Séparer », « Rechercher », « Décrire », « Expliquer »), y compris les Pareto. Les notions cliniques importantes sont souvent du texte simple ; deux boutons de fin de partie et les sigles ne remplacent pas les liens contextuels exigés. Les encadrés sciences restent souvent des conseils au rédacteur plutôt que des corrélations explicites.",
+      "source": "docs/STYLE_REDACTION.md §§2,5,6 ; contrat clarté actuel",
+      "expected_correction": "Réécrire les injonctions en phrases complètes et les objectifs en explications utiles ; relier dès leur contexte acidocétose, déshydratation, autoanticorps, peptide C, produits exacts et critères/mesures aux fenêtres pertinentes existantes ou approfondies. Les corrélations de science doivent dire explicitement quel mécanisme explique quel symptôme/examen/traitement. Préserver les 21 parties et les 42 fenêtres prescrites, sans répétition artificielle."
+    }
+  ],
+  "nonblocking_observations": [
+    {
+      "location": "preuves/source_ledger.json",
+      "finding": "Affiner les locateurs en paragraphes/pages pour les blocs génériques NICE et FI ; conserver les fictions séparées."
+    },
+    {
+      "location": "SSED-WITHDRAW 2025 et P01",
+      "finding": "La source suisse conserve Actrapid IV comme choix hospitalier et discute les retraits ; toute extension au cours doit vérifier disponibilité et FI suisse exactes. La FI prime pour la restriction allaitement Tresiba même si cette synthèse est plus générale."
+    }
+  ],
+  "verdict": "defavorable",
+  "score": 16,
+  "score_justification": "Architecture et traçabilité solides, calculs et produits principaux corrects. Huit réserves concrètes empêchent la complétude, la sécurité pédagogique et la fidélité de deux descriptions ; le rendu technique passe.",
+  "final_files": {
+    "chapters/E10/E10_a.html": "82721342afcdab6f9e7aea26f9506f1c727054a6f5c359a60f487bca39c8628a",
+    "chapters/E10/E10_b.html": "b8aab07798d1f6b333c262575fade29ae26c2356eeee2a90d0d54bc1141c2f94",
+    "chapters/E10/E10_c.html": "ed5e84ed2d0adcf7db6ef306cf866cafbc7580c61c2ad05a27ecfd97c34d6c28",
+    "chapters/E10/E10_d.html": "ffaab51e92f7ca5f6d79d20bac6b3d790d1920c94c2eae0d8e1a1311ae47906e",
+    "chapters/E10/E10_pop1.html": "a5c8f70d31544613e41f320218e9437fadd4892826af5c86bfeaebb8bbd99d0a",
+    "chapters/E10/E10_pop2.html": "2abd358e0799b40e7d11ed015c891692f49b534b6c30d832eeaee6f225ad8904",
+    "glossary/e10.py": "d8999d0ea93b91f974ad009fb1340c2669a950529a432542d27af298c11ccb51"
+  },
+  "image_files": {
+    "assets/img/cycle2/e10/e10-01-glucose.jpg": "726e0098e2e08533d5f9b832de5a9a256a3b150431f5b335c3ff45f972f7cf57",
+    "assets/img/cycle2/e10/e10-02-emergency.jpg": "425185376643c925c400981325a12943521d03d5308eec268569d77fa24c539f",
+    "assets/img/cycle2/e10/e10-03-profile.png": "a5820659ea2e2fc42edcb8449f1bdece01fe046db7c3dbb5845f614bfadc7b60",
+    "assets/img/cycle2/e10/e10-04-foot.gif": "2126f5316552167a4fe101fad2291cd78140131e354e2185c844c70ec3536289",
+    "assets/img/cycle2/e10/e10-05-report.png": "97473f1e957bbcbc0a291b81799c05d16df4875d18d446a2e12ecacee0f30496",
+    "assets/img/cycle2/e10/e10-06-pancreas.jpg": "ca07f5459d746b58ef9779c2cfaf5e5018a28ae3b0dcf128dbdea86ed6ccf5e1",
+    "assets/img/cycle2/e10/e10-07-insulin.png": "c81b426668bde406597fce49268a8f923d21bb55c5213e37e05c5a6360a3aa36",
+    "assets/img/cycle2/e10/e10-08-ketogenesis.png": "8ae010800223e75c3411c6f45cfd89e2cb4ab24b828f151ed5162416c861187d",
+    "assets/img/cycle2/e10/e10-09-immunology.png": "2a39d5d9af2c012bc0ab7a6576bdc414769eeca22d89af97cb57a9c99483e1e0"
+  },
+  "entry_proof": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/entree_pass1.json",
+    "sha256": "55a6227f6fc753f90bc0b3bfcac81c70cc0c3a42c3502b7d370c396e148f2acb",
+    "immutable": true
+  },
+  "read_inventory": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/passages_lus_pass1.json",
+    "sha256": "6716bd4b7cfb10a0ec89b33a75d0c173411689bc591ec4ba3ce8a73578a999ff"
+  },
+  "coverage_review": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/couverture_relue_pass1.json",
+    "sha256": "9f3739877e7d587f75d785ecaa0c54c33df48fa88b5c598295b6592bc6587d36"
+  },
+  "image_review": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/images_relues_pass1.json",
+    "sha256": "d21ac8bc5dba3835e6715a04760848f06921d64f3cf1243f36a9f1beb1b6eabd"
+  },
+  "preview": {
+    "manifest_path": "/workspace/work/medina-previews/E10-author-frozen/preview.json",
+    "manifest_sha256": "6c9e6b8261d8fc0c3c0dc74f2821104b320c6db2d79a407ddf7a6ebf4d881138",
+    "html": "/workspace/work/medina-previews/E10-author-frozen/built/fragments/MEDINA_S05_endocrinien-metabolique.html",
+    "html_sha256": "e766b211c0d45a87e547a34a3b4076e04e4b6633fd005184f1157f424a94f424",
+    "canonical_injection": false
+  },
+  "personal_ui": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/ui-personnelle/E10/E10-author-frozen/report.json",
+    "sha256": "5eb610be1039156b91208c5152c67fb879a4092668ef68e2004ce5ccf73ee340",
+    "harness_origin": "/workspace/work/medina-cycle2/check_course_ui.py exécuté personnellement avec sortie limitée au dossier cross/E10"
+  },
+  "supervisor_ui_used_as_complement": {
+    "path": "/workspace/work/medina-cycle2/ui-night/E10/E10-author-frozen/report.json",
+    "attribution": "root, observations non attribuées à C02-R-NEPH"
+  },
+  "publication_policy": "Rapport original, locateurs, hashes, liens et courts extraits ; archives intégrales restent locales.",
+  "next_phase": "Attente du coordinateur après corrections auteur ; aucune passe 2 lancée dans cette phase.",
+  "quiz_interactions": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/quiz_interactions_pass1.json",
+    "sha256": "6174805a0d66b7a5b89a4ff93394300329f36d3aca77f360f945dcc0e94827d1"
+  },
+  "dimension_scores": {
+    "redaction": 3.5,
+    "medecine": 3.5,
+    "sources": 4.5,
+    "frontend": 4.5
+  }
+}
