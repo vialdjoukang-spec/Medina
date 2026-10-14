@@ -42,3 +42,22 @@ for key,lit,full in [
  ('EVT',[('EV','EndoVascular'),('T','Treatment')],'Endovascular treatment : traitement endovasculaire'),
  ('DIDO',[('D','Door'),('I','In'),('D','Door'),('O','Out')],'Door-in-door-out : délai entre entrée et sortie de l’hôpital')]:
  add(key,lit,full,'Abréviation conservée dans la figure suisse originale de 2021. La légende traduit le terme ; la portée concerne le tri préhospitalier, pas une règle de sortie après AIT.','g45-parcours')
+# Ajouts C02-R-NEUR (14.10.2026) : symboles de la figure plaquettaire PharmGKB, vérifiés auprès du HGNC et de ChEBI.
+for key,lit,full,definition in [
+ ('TBXA2',[('TBX','ThromBoXane'),('A2','A2')],'Thromboxane A2 (molécule)','Eicosanoïde plaquettaire, entrée ChEBI 15627. C’est la molécule produite par la voie que l’aspirine interrompt ; elle n’est ni l’enzyme qui la fabrique ni son récepteur.'),
+ ('TBXAS1',[('TBX','ThromBoXane'),('A','A'),('S','Synthase'),('1','membre 1')],'Thromboxane A synthase 1 (enzyme)','Symbole officiel HGNC 11609. Cette enzyme transforme la prostaglandine H2 en thromboxane A2.'),
+ ('TBXA2R',[('TBX','ThromBoXane'),('A2','A2'),('R','Récepteur')],'Récepteur du thromboxane A2','Symbole officiel HGNC 11608. Récepteur plaquettaire qui reçoit le thromboxane A2 et amplifie l’activation ; l’aspirine ne le bloque pas.'),
+ ('P2RY12',[('P2','Purinergique de type 2'),('R','Récepteur'),('Y','famille Y, couplée aux protéines G'),('12','sous-type 12')],'Récepteur purinergique P2Y12','Symbole officiel HGNC 18124 du récepteur noté P2Y12 dans le cours. Le métabolite actif du clopidogrel le bloque.'),
+ ('P2RY1',[('P2','Purinergique de type 2'),('R','Récepteur'),('Y','famille Y, couplée aux protéines G'),('1','sous-type 1')],'Récepteur purinergique P2Y1','Symbole officiel HGNC 8539. Second récepteur plaquettaire de l’adénosine diphosphate, que le clopidogrel ne vise pas.'),
+ ('P2RX1',[('P2','Purinergique de type 2'),('R','Récepteur'),('X','famille X, canal ionique'),('1','sous-type 1')],'Récepteur purinergique P2X1','Symbole officiel HGNC 8533 ; ancien nom : canal ionique activé par ligand. Il laisse entrer le calcium sous l’effet de l’adénosine triphosphate.'),
+ ('F2R',[('F2','Facteur II de la coagulation, thrombine'),('R','Récepteur')],'Récepteur de la thrombine','Symbole officiel HGNC 3537, appelé aussi récepteur activé par les protéases 1. Il relie la coagulation à l’activation plaquettaire.'),
+ ('ADCY3',[('AD','ADénylate'),('CY','CYclase'),('3','membre 3')],'Adénylate cyclase 3','Symbole officiel HGNC 234. Enzyme qui produit l’adénosine monophosphate cyclique à partir de l’adénosine triphosphate.'),
+ ('GNAS',[('G','protéine G'),('N','Nucléotide guanine, liaison'),('A','sous-unité Alpha'),('S','Stimulatrice')],'Locus complexe GNAS','Symbole officiel HGNC 4392 ; l’ancien nom HGNC développe les lettres : guanine nucleotide binding protein, alpha stimulating. Il code la sous-unité alpha stimulatrice d’une protéine G.'),
+ ('IP3',[('I','Inositol'),('P','Phosphate'),('3','trois groupements, positions 1, 4 et 5')],'Inositol 1,4,5-trisphosphate','Messager intracellulaire, entrée ChEBI 16595 ; sur la figure plaquettaire, il conduit à l’élévation du calcium.'),
+ ('PGG2',[('PG','ProstaGlandine'),('G','série G'),('2','indice 2')],'Prostaglandine G2','Entrée ChEBI 27647. Intermédiaire formé par la cyclo-oxygénase à partir de l’acide arachidonique.'),
+ ('PGH2',[('PG','ProstaGlandine'),('H','série H'),('2','indice 2')],'Prostaglandine H2','Entrée ChEBI 15554. Précurseur que la thromboxane synthase transforme en thromboxane A2.'),
+ ('PGD2',[('PG','ProstaGlandine'),('D','série D'),('2','indice 2')],'Prostaglandine D2','Entrée ChEBI 15555 ; elle agit sur les récepteurs des prostaglandines de la figure.'),
+ ('PGI2',[('PG','ProstaGlandine'),('I','série I'),('2','indice 2')],'Prostaglandine I2 ou prostacycline','Entrée ChEBI 15552 ; sur la figure, elle participe à la rétroaction négative de l’activation plaquettaire.'),
+ ('PGE2',[('PG','ProstaGlandine'),('E','série E'),('2','indice 2')],'Prostaglandine E2','Entrée ChEBI 15551 ; elle agit sur les récepteurs des prostaglandines de la figure.'),
+ ('VWF',[('V','von'),('W','Willebrand'),('F','Facteur')],'Facteur von Willebrand','Symbole officiel HGNC 12726, écrit vWF dans d’autres textes. Protéine d’adhésion qui fixe la plaquette au sous-endothélium.')]:
+ add(key,lit,full,definition,'g45-plaquette')

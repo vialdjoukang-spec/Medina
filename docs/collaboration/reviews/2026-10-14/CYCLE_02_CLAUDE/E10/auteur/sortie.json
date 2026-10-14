@@ -1,0 +1,91 @@
+{
+ "actor": "C02-R-ENDO",
+ "verdict": "conforme",
+ "checked_at": "2026-10-14T21:05:32.959101+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+     "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+     "explanation": "Travail limité au rôle d'auteur correcteur E10 confié par l'autorité ; ni commit, ni push, ni injection."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
+     "sha256": "39fce2427c745e0a5d22d351e69d482b576d7fbb45e045a4be0a1a51ed9f7833",
+     "explanation": "Écritures limitées aux sept sources du dossier de livraison E10, aux nouveaux fichiers preuves suffixés _claude et au dossier auteur ; preuves Codex intactes ; neuf images inchangées, empreintes et licences recontrôlées."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
+     "sha256": "e517b971a485b257bc3bcab1c1e1dadbeb9ee0d67a7cda436da1c18051fab532",
+     "explanation": "Registre de 48 assertions relues le 14.10.2026 avec empreinte du texte téléchargé : SSED technologie 2025, SGED/SGRM conduite 2025, QualiCCare 2023, JBDS DKA 2023 et HHS 2023, RMS 2019, HUG 2022, SSED HbA1c 2011, SGED 2017, NICE NG17, MonAM, FI NovoRapid, Tresiba et Baqsimi, Commons."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
+     "sha256": "e517b971a485b257bc3bcab1c1e1dadbeb9ee0d67a7cda436da1c18051fab532",
+     "explanation": "Sources suisses lues en premier (SSED, SGRM, QualiCCare, HUG, RMS, OFSP, FI Swissmedic des produits exacts) ; JBDS et NICE britanniques nommés comme tels pour les lacunes ; aucune recommandation américaine décisionnelle."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/pass1.json",
+     "sha256": "f5feee2f3958bff6dadeadbff4c59ca35b05e1d6e8e378ae16c66e1f4130ad0c",
+     "explanation": "Corrections faites par l'auteur sur les huit réserves du relecteur C02-R-NEPH ; la passe 2 reste à faire par ce relecteur distinct ; aucune réserve déclarée levée par auto-approbation."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
+     "sha256": "fcdec51ce2ec40d5d7390813b471a5095f82a940012daaa554684463faa2dc9c",
+     "explanation": "test_v7.py --static E10 : OK sur les fichiers finaux (31 572 mots, 106 fenêtres, 3 quiz, 21 Pareto) ; 21 parties et 42 fenêtres prescrites conservées, quatre fenêtres ajoutées ; dernier îlot alert puis key."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree.json",
+     "sha256": "72a02a0b42043ab4cb92a042b69bd275d8f9a977542e7e27f85daa84306b44a5",
+     "explanation": "Relevé d'entrée immuable conservé ; sources inaccessibles (page MDPI, PMC par navigateur) non déclarées lues ; medical_human_validation false ; discordance du texte de conduite signalée sans règle inventée."
+    }
+   ]
+  }
+ ]
+}
