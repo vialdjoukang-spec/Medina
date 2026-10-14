@@ -23,7 +23,7 @@ Cycle 2 : **G45 (AIT), E10 (diabète de type 1), N18 (maladie rénale chronique)
 - **Contrat de relecture** : `organisation/execution-20261014/CONTRAT_REVUES.md`
 - **Ancien script des corrections préparatoires** : `tools/cycle2_reprise_01_safety.py`
 - **Workflow de cet ancien script** : `.github/workflows/cycle2-reprise-corrections.yml`
-- **Proposal G45-R1/R3, conservée ici distincte des autres corrections** : `docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/G45_R1_R3_PROPOSITION.json`
+- **Proposition G45-R1/R3 complète** : `docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/correctif/corrections_G45.json` ; générateur non destructif `docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/correctif/preparer_correctif.py` et 21 tests disponibles dans `docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/tests/test_preparer.py`.
 - **Inventaire localisé des 25 réserves** : `docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/01_RESERVES_A_RESORBER.md`
 - **Méthode opérationnelle confiée à Claude** : `docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/02_MISSION_CLAUDE_AUDIT_INJECTION_PR.md`
 - **Traçabilité et limites de preuve** : `docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/03_PREUVES_ET_INCIDENT_TECHNIQUE.md`

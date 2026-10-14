@@ -1,0 +1,57 @@
+name: Cycle 2 - preuves de transmission G45 à Claude
+
+on:
+  push:
+    branches: [codex/cycle2-remise-claude-20261014]
+    paths:
+      - '.github/workflows/cycle2-transmission-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  g45-proposition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Exécuter les 21 tests mécaniques sans publication
+        run: |
+          python -m unittest discover \
+            -s docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/tests \
+            -p 'test_preparer.py' -v 2>&1 | tee /tmp/cycle2-g45-tests.log
+      - name: Générer la proposition depuis les sources réelles sans les modifier
+        run: |
+          set -euo pipefail
+          python docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/correctif/preparer_correctif.py \
+            --repo "$GITHUB_WORKSPACE" --out /tmp/CYCLE2_G45_PROPOSITION_CLAUDE
+          git diff --exit-code
+          git apply --check /tmp/CYCLE2_G45_PROPOSITION_CLAUDE/cycle2-g45-partiel.patch
+          python - <<'PY'
+          import json, pathlib, hashlib
+          folder=pathlib.Path('/tmp/CYCLE2_G45_PROPOSITION_CLAUDE')
+          rec=json.loads((folder/'recu_proposition.json').read_text())
+          assert len(rec['files'])==2 and rec['reserves_lifted']==[]
+          assert rec['repository_modified'] is False
+          assert rec['source_ledger_updated'] is False
+          assert rec['publication_performed'] is False
+          for item in rec['files']:
+              assert hashlib.sha256((folder/'proposition'/item['path']).read_bytes()).hexdigest()==item['after_sha256']
+          print('Proposition reproductible ; aucun audit ni aucune injection effectué')
+          PY
+      - name: Archiver le diff, les deux HTML proposés, les empreintes et les tests
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: medina-cycle2-g45-proposition
+          path: |
+            /tmp/CYCLE2_G45_PROPOSITION_CLAUDE/
+            /tmp/cycle2-g45-tests.log
+          retention-days: 30
+          if-no-files-found: warn
