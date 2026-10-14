@@ -322,13 +322,21 @@ class NightDelegationTests(unittest.TestCase):
                 self.guard()
             self.files = files
 
-    def test_codex_registry_of_transferred_cycle_stays_immutable(self):
-        self.files[G.REGISTRY] = self.claude_registry(2)
+    def test_codex_registry_of_transferred_cycle_frozen_after_transfer(self):
+        # Une fois le transfert inscrit (présent avant), toute écriture Codex ultérieure est refusée.
+        self.files[G.REGISTRY] = self.before.files[G.REGISTRY] = self.claude_registry(2)
+        self.before = Tree(self.before.files)
         self.state['cycles'][0]['chapters'][0]['status'] = 'EN_AUDIT_CROISE'
-        with self.assertRaises(C.CycleError):
-            self.guard(datetime.fromisoformat('2026-10-14T23:00:00+00:00'))
         with patch.object(N, 'journal_proof'), patch.object(N, 'temporal_proofs'), self.assertRaisesRegex(C.CycleError, 'immuable'):
             self.guard()
+
+    def test_transfer_may_carry_last_codex_state(self):
+        # Le commit qui inscrit le transfert peut porter le dernier état Codex du cycle transféré.
+        self.files[G.REGISTRY] = self.claude_registry(2)
+        self.state['cycles'][0]['chapters'][0]['status'] = 'EN_AUDIT_CROISE'
+        self.save()
+        with patch.object(N, 'journal_proof'), patch.object(N, 'temporal_proofs'):
+            self.guard(datetime.fromisoformat('2026-10-14T23:00:00+00:00'))
 
 
 if __name__ == '__main__':
