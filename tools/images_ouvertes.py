@@ -23,15 +23,17 @@ REFUSED = re.compile(r"\b(nc|nd)\b|non[- ]?commercial|no[- ]?deriv", re.I)
 def get(url, params=None, raw=False):
     if params:
         url += "?" + urllib.parse.urlencode(params)
-    for attempt in range(4):
+    for attempt in range(6):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=60) as r:
                 data = r.read()
             return data if raw else json.loads(data)
         except urllib.error.HTTPError as e:
-            if e.code != 429 or attempt == 3:
+            if e.code != 429 or attempt == 5:
                 raise
-            time.sleep(2 ** (attempt + 1))  # Commons limite les IP partagées.
+            # Commons limite les IP partagées : respecter Retry-After, sinon attente croissante.
+            wait = e.headers.get("Retry-After", "")
+            time.sleep(min(int(wait), 60) if wait.isdigit() else 3 * 2 ** attempt)
 
 
 def text(v):
@@ -116,7 +118,14 @@ def main():
     i.add_argument("--legende", required=True); i.add_argument("--alt", required=True); i.add_argument("--emplacement", required=True)
     a = p.parse_args()
     if a.cmd == "chercher":
-        print(json.dumps(chercher(a.q, a.source, a.n), ensure_ascii=False, indent=1))
+        try:
+            res = chercher(a.q, a.source, a.n)
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or a.source != "commons":
+                raise
+            print("Commons saturé (429) : repli sur Openverse.", file=sys.stderr)
+            res = chercher(a.q, "openverse", a.n)
+        print(json.dumps(res, ensure_ascii=False, indent=1))
     else:
         importer(a.title, a.dest, a.legende, a.alt, a.emplacement)
 
