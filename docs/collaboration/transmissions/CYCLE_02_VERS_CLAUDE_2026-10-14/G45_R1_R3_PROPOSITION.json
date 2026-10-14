@@ -1,0 +1,73 @@
+{
+  "format": "MEDINA-C02-correctif-partiel-v1",
+  "statut": "PROPOSITION NON APPLIQUÉE — AUDIT PAR CLAUDE REQUIS",
+  "repository": "vialdjoukang-spec/Medina",
+  "reference_branch": "codex/cycles-20261014-0800",
+  "reference_commit": "59e7914673692c926b7563706d09f6996bf9d85a",
+  "reserves": [
+    "G45-R1",
+    "G45-R3"
+  ],
+  "reserves_levees": [],
+  "information_professionnelle_suisse": [
+    {
+      "produit": "Aspirine Cardio",
+      "autorisation": "51795",
+      "url": "https://www.swissmedicinfo-pro.ch/showText.aspx?authNr=51795&lang=FR&supportMultipleResults=1&textType=FI",
+      "rubrique": "Contre-indications",
+      "consultation_historique": "2026-10-14"
+    },
+    {
+      "produit": "Eliquis",
+      "autorisation": "61549",
+      "url": "https://www.swissmedicinfo-pro.ch/showText.aspx?authNr=61549&lang=FR&supportMultipleResults=1&textType=FI",
+      "rubrique": "Risque hémorragique ; patients atteints du syndrome des antiphospholipides",
+      "consultation_historique": "2026-10-14"
+    }
+  ],
+  "insertions_a_reconcilier": [
+    {
+      "file": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45/chapters/G45/G45_pop2.html",
+      "original_sha256": "24270e022b649d72d4008e735bddf5d3ce072f55d2922cb35e95d5b7b074de51",
+      "proposed_sha256": "88d0c1113d23a39df09832fe9b1d6a769a306f050b37a42745686923fe2947b1",
+      "changes": [
+        {
+          "scope": "template[data-pop=\"g45-aspirine\"]",
+          "before": "<h3>Interactions et surveillance</h3>",
+          "marker": "G45-R1-pop",
+          "text": "La FI suisse d’Aspirine Cardio mentionne également les maladies inflammatoires intestinales (maladie de Crohn et colite ulcéreuse) et l’insuffisance cardiaque sévère NYHA III–IV comme contre-indications. Il s'agit d'une information relative au produit exact, non à toutes les formes/doses d'aspirine."
+        },
+        {
+          "scope": "template[data-pop=\"g45-eliquis\"]",
+          "before": "<p class=\"src\">Sources :",
+          "marker": "G45-R3-pop",
+          "text": "Antécédent thrombotique et syndrome des antiphospholipides, surtout triple positivité : apixaban non recommandé, situation distincte des contre-indications formelles. En cas d’hémorragie majeure : arrêt du produit et prise en charge urgente selon FI, sans déduire un protocole de réversion."
+        }
+      ]
+    },
+    {
+      "file": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45/chapters/G45/G45_d.html",
+      "original_sha256": "f51094b4b82d6ba11730f0ebbf962f69e63e6936f56e5f48974be25990b4c356",
+      "proposed_sha256": "15e5b18c4ab28d28e8233253bb2c27b3c3fa817d13336454a6ca63ead4360ba3",
+      "changes": [
+        {
+          "scope": "#g45-p02",
+          "before": "<h3 id=\"g45-p02-partie-3\">",
+          "marker": "G45-R1-corps",
+          "text": "Complément dans le corps sur les maladies inflammatoires intestinales et l’insuffisance cardiaque NYHA III–IV pour Aspirine Cardio ; non-recommandation de l’apixaban dans SAPL avec antécédent thrombotique."
+        },
+        {
+          "scope": "#g45-p02",
+          "before": "<h3 id=\"g45-p02-partie-4\">",
+          "marker": "G45-R3-corps-hemorragie",
+          "text": "Ajout d’un encadré sur l’hémorragie majeure sous Eliquis : arrêt et prise en charge immédiate, avec FI suisse."
+        }
+      ]
+    }
+  ],
+  "action": "Comparer les textes avec le script de 16 corrections avant toute application ; ouvrir les archives sources pertinentes ; reconstruire une version unique et renouveler les tests.",
+  "source_ledger_updated": false,
+  "independent_review": false,
+  "canonical_injection": false,
+  "pr_created": false
+}
