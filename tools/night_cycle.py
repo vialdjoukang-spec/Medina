@@ -264,7 +264,11 @@ def validate(before, after, now=None):
     own = [c for c in new['cycles'] if c['cycle'] not in transferred]
     codes = {r['code'] for cycle in own for r in cycle['chapters']}
     course_changes = {p for p in changed if C.managed(p, codes) or any(p.startswith(f"assets/img/cycle{c['cycle']}/") for c in own)}
-    touched = REGISTRY in changed or bool(course_changes)
+    # Les dernières écritures Codex d'un cycle transféré ne relèvent plus de l'échéance nocturne.
+    strip = lambda d: [c for c in d['cycles'] if c['cycle'] not in transferred] if d else None
+    registry_touched = REGISTRY in changed and (old is None or strip(old) != strip(new) or
+                                                {k: v for k, v in old.items() if k != 'cycles'} != {k: v for k, v in new.items() if k != 'cycles'})
+    touched = registry_touched or bool(course_changes)
     if touched:
         journal_proof(before, after, new, now)
         for cycle in new['cycles']: temporal_proofs(after, cycle, now)
@@ -287,7 +291,9 @@ def validate(before, after, now=None):
             C.require(not course_changes, 'Chaîne : nouveau cycle avec injection simultanée')
             continue
         if cycle['cycle'] in transferred:
-            C.require(cycle == old['cycles'][index], 'Chaîne : cycle transféré à Claude immuable dans le registre Codex')
+            # Gel à partir du transfert : la remise peut porter le dernier état Codex, jamais une écriture ultérieure.
+            if claude_transfers(before):
+                C.require(cycle == old['cycles'][index], 'Chaîne : cycle transféré à Claude immuable dans le registre Codex')
             continue
         previous_cycle = old['cycles'][index]
         for field in ('cycle', 'owner', 'started_at', 'budget'):
