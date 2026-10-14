@@ -1,0 +1,282 @@
+{
+  "code": "G45",
+  "actor": "C02-R-NEUR",
+  "runtime_agent_id": "/root/executeur_cycles_nuit/auteur_g45",
+  "started_at": "2026-10-13T23:50:05+00:00",
+  "finished_at": "2026-10-14T00:18:45.935595+00:00",
+  "medical_human_validation": false,
+  "dimensions": {
+    "redaction": "Relecture des126 paragraphes,48 fenêtres et21 quiz/Pareto ; options de quiz rendues en phrases complètes, références et limites visibles. Les termes/mesures importants possèdent une fenêtre, dont laboratoire et calculs.",
+    "medecine": "Distingue définition clinique/tissulaire, amnésie typique/atypique, score/diagnostic, branche de bithérapie, cause cardiaque, insuffisances et prescriptions suisses. Les23 contrôles ci-dessous ont été confrontés aux archives.",
+    "sources": "Sources suisses prioritaires, puis ESO et recommandation conjointe TGA ; aucune recommandation américaine utilisée. Registre270 entrées sélectionnées par emplacement, sources téléchargées et limites explicites.",
+    "frontend": "Contrôle statique local PASS. Une première QA navigateur indépendante a été rapportée par le coordinateur. La QA indépendante des sources gelées est coordonnée séparément ; elle n’est pas revendiquée comme effectuée par l’auteur et sera jointe au contrôle final."
+  },
+  "numerical_checks": [
+    {
+      "claim": "Urgence après déficit résolu",
+      "source": "https://www.neurovasc.ch/fileadmin/files/publikationen/fr/Prehospital_Swiss_Guidelines_FR_Kaegi_SwissMedForum2021_suppl.pdf",
+      "source_id": "PRE21",
+      "section": "p. 322–324",
+      "passage": "Le déficit transitoire conserve le caractère urgent et le réseau 144.",
+      "finding": "L’appel et l’évaluation urgente figurent dans A01/A09/A11.",
+      "archive": "sources/PRE21.pdf",
+      "archive_sha256": "293588f3e95d2571d0dff0caade0a3fcdcf34c33d1e885443a4febbcdf6a0fec"
+    },
+    {
+      "claim": "Fenêtres du tri bernois",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p. 19",
+      "passage": "0–48 h ou fluctuation : urgences immédiates ; 2–7 j : <12 h ; >7 j : médecin dans les 24 h.",
+      "finding": "Les branches sont attribuées à Berne ; un nouveau signe d’alarme les dépasse.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "ABCD2 : âge et pression",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p. 19",
+      "passage": "Âge≥60 =1 ; systolique≥140 ou diastolique≥90 =1.",
+      "finding": "La disjonction ou est conservée, sans additionner deux points de pression.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "ABCD2 : clinique et durée",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p. 19",
+      "passage": "Faiblesse2 ou parole sans faiblesse1 ; ≥60 min2 ou10–59 min1 ; diabète1.",
+      "finding": "Le cas 68 ans/152–86/20 min/faiblesse/sans diabète totalise exactement5.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "Admission versus sélection thérapeutique",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p. 19 et34",
+      "passage": "ABCD2>5 est une branche d’admission ; >3 sélectionne une stratégie précoce.",
+      "finding": "Les deux seuils ne sont pas confondus ; sténose/lésion/arythmie restent autonomes.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "Surveillance et suivi",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p.19–20",
+      "passage": "Monitoring≥24 h dans la branche d’admission ; Holter3×7j ; bilan standard≥72 h ; suivi10–14j/3mois/12mois.",
+      "finding": "Les modalités ne sont pas additionnées automatiquement ni annoncées nationales.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "Détection hippocampique",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10116751/",
+      "source_id": "TGA23",
+      "section": "IRM et diagnostic",
+      "passage": "La détection des foyers augmente à24–72 h ; présentation atypique : diagnostic urgent.",
+      "finding": "Le délai optimal ne devient pas un délai d’attente devant déficit atypique.",
+      "archive": "sources/TGA23.xml",
+      "archive_sha256": "2e9abdcb20d5ad227f58195bd3cdf7138704ce34c43c2f06ebf21655e831d0c3"
+    },
+    {
+      "claim": "Récidive de l’amnésie globale",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10116751/",
+      "source_id": "TGA23",
+      "section": "Pronostic",
+      "passage": "Les études rapportent12–27 %, sans horizon annuel uniforme.",
+      "finding": "Le cours précise l’hétérogénéité et n’en déduit pas une prophylaxie.",
+      "archive": "sources/TGA23.xml",
+      "archive_sha256": "2e9abdcb20d5ad227f58195bd3cdf7138704ce34c43c2f06ebf21655e831d0c3"
+    },
+    {
+      "claim": "Validité formelle TGA",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10116751/",
+      "source_id": "TGA23",
+      "section": "Version et validité",
+      "passage": "Mise à jour10/2022, publication2023, validité annoncée jusqu’au31/12/2025.",
+      "finding": "La limite figure dans le corps, les références et les fenêtres ; aucune version2026 prétendue.",
+      "archive": "sources/TGA23.xml",
+      "archive_sha256": "2e9abdcb20d5ad227f58195bd3cdf7138704ce34c43c2f06ebf21655e831d0c3"
+    },
+    {
+      "claim": "EXPRESS : arithmétique absolue",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370080/",
+      "source_id": "ESO21",
+      "section": "PICO1",
+      "passage": "32/310=10,32 % ;6/281=2,14 % ;différence8,18points.",
+      "finding": "Calculs refaits ; proportions arrondies10,3/2,1 donnent8,2points dans le corps.",
+      "archive": "sources/ESO21.pdf",
+      "archive_sha256": "41aa481444948d23e998e03099fb52d04bed8e30800a7ff1b073e39f3672a3e4"
+    },
+    {
+      "claim": "EXPRESS : arithmétique relative",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370080/",
+      "source_id": "ESO21",
+      "section": "PICO1",
+      "passage": "Réduction brute≈79,3 % ; estimation ajustée0,20 avec intervalle0,08–0,49.",
+      "finding": "Le calcul brut n’est pas assimilé au modèle ajusté et ne devient pas une probabilité individuelle.",
+      "archive": "sources/ESO21.pdf",
+      "archive_sha256": "41aa481444948d23e998e03099fb52d04bed8e30800a7ff1b073e39f3672a3e4"
+    },
+    {
+      "claim": "Diffusion positive",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370080/",
+      "source_id": "ESO21",
+      "section": "PICO5",
+      "passage": "34,3 %, intervalle30,5–38,4 %, parmi des cas cliniques dans des études hétérogènes.",
+      "finding": "Le taux de positivité n’est pas appelé sensibilité universelle.",
+      "archive": "sources/ESO21.pdf",
+      "archive_sha256": "41aa481444948d23e998e03099fb52d04bed8e30800a7ff1b073e39f3672a3e4"
+    },
+    {
+      "claim": "Bithérapie bernoise",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p.34",
+      "passage": "AIT haut risque>3, dans24 h, sans source cardiaque ni sténose symptomatique : aspirine100 +clopidogrel75, trois semaines ; charge clopidogrel600.",
+      "finding": "La branche exacte et l’écart avec FI sont exposés ; aucune charge injectable fictive d’Aspirine Cardio.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "Aspirine Cardio post-AIT",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680517950406",
+      "source_id": "FI_ASPIRINE",
+      "section": "Posologie",
+      "passage": "FI :300 mg/jour ou100 mg trois fois/jour ; comprimés gastro-résistants100/300.",
+      "finding": "La doseFI est distinguée du protocole100 mg/jour ; comprimé entier et délai avant repas.",
+      "archive": "sources/FI_ASPIRINE.txt",
+      "archive_sha256": "2f1b8ced09079edcafbd72621d98c675af955adbc51ff74f4aa7f11e656be027"
+    },
+    {
+      "claim": "Plavix forme et autorisation",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680545090143",
+      "source_id": "FI_PLAVIX",
+      "section": "Forme/Indication/Posologie",
+      "passage": "Comprimés75/300 mg ;75 mg/jour ; cadre AVC7j–6mois ; début précoce AIT non spécifiquement autorisé.",
+      "finding": "Présentation300 ajoutée après relecture ; cadre précoce hors indication spécifique documenté.",
+      "archive": "sources/FI_PLAVIX.txt",
+      "archive_sha256": "57dd548dd8e3a07a3d2243539b87883626c653cbc8434859bff9d10af285b073"
+    },
+    {
+      "claim": "Eliquis dose et réduction",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+      "source_id": "FI_ELIQUIS",
+      "section": "Posologie FANV",
+      "passage": "5 mg2×/jour ;2,5 mg2×/jour si≥2 critères :≥80ans,≤60kg,créatinine≥133µmol/L.",
+      "finding": "Le cas82ans/58kg donne deux critères ; la créatinine élevée n’est pas obligatoirement le troisième.",
+      "archive": "sources/FI_ELIQUIS.txt",
+      "archive_sha256": "2952f304032beccd390c93ba67993d80d8b607c4b1d51d4339da7156d32af3d2"
+    },
+    {
+      "claim": "Eliquis insuffisance rénale suisse",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+      "source_id": "FI_ELIQUIS",
+      "section": "Fonction rénale",
+      "passage": "La fonction rénale seule ne remplace pas les deux critères ;<15mL/min/dialyse non recommandé.",
+      "finding": "Aucune règle européenne automatique15–29 importée ; exclusion hépatique Child-PughC conservée.",
+      "archive": "sources/FI_ELIQUIS.txt",
+      "archive_sha256": "2952f304032beccd390c93ba67993d80d8b607c4b1d51d4339da7156d32af3d2"
+    },
+    {
+      "claim": "Sortis dose et contrôle",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680540850285",
+      "source_id": "FI_SORTIS",
+      "section": "Posologie et précautions",
+      "passage": "Dose usuelle initiale10 ;maximum80 mg/jour ;ajustements≥4semaines ;transaminases persistantes>3×limite.",
+      "finding": "Les seuils et leur contexte sont conservés, avec calcul du multiple et priorité au rapport individuel.",
+      "archive": "sources/FI_SORTIS.txt",
+      "archive_sha256": "b4bd6f74ec15c1bd59df03f2d6661c5e00f8a48998060a71dccce0b97b2f3099"
+    },
+    {
+      "claim": "Références CHUV glucose/créatinine",
+      "source": "https://www.chuv.ch/fileadmin/sites/dl/documents/DMLP-CCL-LCC-RE-33-0069-V3.pdf",
+      "source_id": "LAB_CHUV",
+      "section": "p.3–4",
+      "passage": "Glucose veineux plasma>12ans3,7–5,6mmol/L ;créatinine>15ansF44–80/M62–106µmol/L.",
+      "finding": "Matériel, population et limite du jeûne non spécifié explicités ; pas de seuil de diabète inventé.",
+      "archive": "sources/LAB_CHUV.pdf",
+      "archive_sha256": "429781c2c7ef352de11d17760a09e4f9a3bde188e6191e70c18a148414780fc9"
+    },
+    {
+      "claim": "Référence hépatique et calcul",
+      "source": "https://www.chuv.ch/fileadmin/sites/dl/documents/DMLP-CCL-LCC-RE-33-0069-V3.pdf",
+      "source_id": "LAB_CHUV",
+      "section": "p.1",
+      "passage": "Alanine aminotransférase>21ansF9–36/M11–60U/L.",
+      "finding": "Avec une limite36,3×36=108 et120/36=3,33 ; avec60,120/60=2. Les conditions restent fictives et liées à laFI.",
+      "archive": "sources/LAB_CHUV.pdf",
+      "archive_sha256": "429781c2c7ef352de11d17760a09e4f9a3bde188e6191e70c18a148414780fc9"
+    },
+    {
+      "claim": "Cibles lipidiques",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p.40–41",
+      "passage": "Athérosclérose symptomatique :<1,4mmol/L et baisse≥50 %.",
+      "finding": "Exemple3,0→1,3 :1,7/3,0=56,7 % ; cible et normalité distinguées.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "Cible tensionnelle",
+      "source": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+      "source_id": "BE26",
+      "section": "p.38–39",
+      "passage": "Habituellement<130/80, avec individualisation notamment sténose/occlusion/fragilité.",
+      "finding": "Aucun plateau physiologique n’est converti en cible aiguë uniforme.",
+      "archive": "sources/BE26.pdf",
+      "archive_sha256": "3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0"
+    },
+    {
+      "claim": "Grades ESO",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370080/",
+      "source_id": "ESO21",
+      "section": "Tableau1",
+      "passage": "Spécialiste24h forte/faible ;score seul déconseillé faible/très faible ;DAPT sélectionnée forte/élevée.",
+      "finding": "Les forces et certitudes sont présentées séparément en tableau introduit et commenté.",
+      "archive": "sources/ESO21.pdf",
+      "archive_sha256": "41aa481444948d23e998e03099fb52d04bed8e30800a7ff1b073e39f3672a3e4"
+    }
+  ],
+  "corrections_applied": [
+    "Composition des images transparentes sur blanc puis inspection réelle des9GIF finaux.",
+    "Rejet du candidat diagnostique2016 erroné ; figure suisse2021 CC BY4 extraite, portée préhospitalière explicite.",
+    "Crédits/URLs de statut public nettoyés ; montage à deux provenances et traductions lisibles.",
+    "Plavix75/300 mg ; restriction de la branche bernoise de trois semaines sans sténose symptomatique.",
+    "DivergencesFI/protocole maintenues pour aspirine et clopidogrel ; règle rénale suisse apixaban relue.",
+    "Tableau CHUV, calculs de risque/score/lipides/limite, critèresA12enalert, tableaux classés, préfixesPareto et répartitiona/b/c/d.",
+    "Mapping des126sous-parties corrigé après confrontation à leur ordre réel, sans références multipliées mécaniquement."
+  ],
+  "nonblocking_limits": [
+    "Recommandation TGA publiée2023, validité formelle annoncée fin2025 : attribution explicite, pas de mise à jour2026 prétendue.",
+    "Pas d’incidence suisse représentative des seulsAIT fournie par les sources retenues ; lacune nommée.",
+    "Figures publiées adaptées au plan avec limites pédagogiques explicites, sans génération."
+  ],
+  "blocking_reserves": [],
+  "final_files": {
+    "chapters/G45/G45_a.html": "4a4e4172ffdef60ecc03d3bae481d40fe4855a1983a16cf0b3633255db819553",
+    "chapters/G45/G45_b.html": "bb108fe60f6f5606ab21e526d46f1f6e1f3b389037a0afd03829f1a6b3d2cdb6",
+    "chapters/G45/G45_c.html": "fb9a0365dc9ec856b3b078150037b693bee0bfb9d5cf833061b8ab75f79fc3f9",
+    "chapters/G45/G45_d.html": "f51094b4b82d6ba11730f0ebbf962f69e63e6936f56e5f48974be25990b4c356",
+    "chapters/G45/G45_pop1.html": "c62dd5facec04b886b3e55079cee7386c26cf79bec21073a161a147659652b5f",
+    "chapters/G45/G45_pop2.html": "24270e022b649d72d4008e735bddf5d3ce072f55d2922cb35e95d5b7b074de51",
+    "glossary/g45.py": "7357469762ada36ab3bfb94cd1617c23a8f06ac9c619db435d89712ae3ab8c50"
+  },
+  "image_files": {
+    "assets/img/cycle2/g45/g45-01.gif": "dd61168ada880ca5c2c4f493ffb41e034c075a28a9e659d0bf4af8e9d772a69d",
+    "assets/img/cycle2/g45/g45-02.gif": "157be7de8c367e172924b0f35cf4211e85c69980dbb399829c6ac50c68f8154d",
+    "assets/img/cycle2/g45/g45-03.gif": "25b56df1bcd66ee24db80fbb2cf198f15f9acf016e84d605d1b91fe808d3c3fa",
+    "assets/img/cycle2/g45/g45-04.gif": "eb76a3518c3880c79006d5b6a8cc6b355ad34e45ad8d038cbabaf6a3db96e1e3",
+    "assets/img/cycle2/g45/g45-05.gif": "f3c2d2c6f937a6e496cc41eaf3191218f3aff1d9b5987c032b7a612afad387bd",
+    "assets/img/cycle2/g45/g45-06.gif": "aa957ad23ac9a9d8bf25863ca73b7c8ed8978dff2c703cd7324995729ec36261",
+    "assets/img/cycle2/g45/g45-07.gif": "b52cd0d12f5b54723993b99a2565deead83c7a264b209e653021ba60eaa4eda6",
+    "assets/img/cycle2/g45/g45-08.gif": "b0d7758c77bdd8c934e3e70c9b28142c70deb15250498e60202096a516a0ef51",
+    "assets/img/cycle2/g45/g45-09.gif": "87b9d1758ecfae03b6bb1875324ad39e9d68fe7c7c9e3e9b54eda2eb2e192728"
+  },
+  "conclusion": "Auto-revue de rédaction achevée ; sources gelées et prêtes pour audit croisé. Le recontrôle UI indépendant appartient au contrôle final coordonné. Aucune clôture du cycle ni validation humaine revendiquée."
+}

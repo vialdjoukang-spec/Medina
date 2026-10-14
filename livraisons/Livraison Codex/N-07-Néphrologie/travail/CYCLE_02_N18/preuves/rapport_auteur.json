@@ -1,0 +1,313 @@
+{
+  "code": "N18",
+  "actor": "C02-R-NEPH",
+  "runtime_agent_id": "/root/executeur_cycles_nuit/auteur_n18",
+  "medical_human_validation": false,
+  "production_started_at": "2026-10-13T23:27:45Z",
+  "initial_production_entry": {
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/entree.json",
+    "sha256": "bf29cec0691b534526523ba8180e16f9ac9a73f4b4f53ba0188ad6c35c93699d"
+  },
+  "entry": {
+    "actor": "C02-R-NEPH",
+    "verdict": "conforme",
+    "phase": "entrée de revue finale auteur, distincte du démarrage de production",
+    "checked_at": "2026-10-14T00:21:44.769259+00:00",
+    "prompt_files": {
+      "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+      "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+      "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "docs/collaboration/instructions/CHAINE_CYCLES_2026-10-14_EXECUTEUR.md": "007eb09b22aae65ee5110c593f1ede6895bcf434b948b9c98703c0315dfbf1af",
+      "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+    },
+    "checks": [
+      {
+        "id": "autorisation",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/instructions/CHAINE_CYCLES_2026-10-14_EXECUTEUR.md",
+            "sha256": "007eb09b22aae65ee5110c593f1ede6895bcf434b948b9c98703c0315dfbf1af",
+            "explanation": "Instruction directe du cycle2 ; rédaction N18 uniquement, sans publication par cet auteur."
+          }
+        ]
+      },
+      {
+        "id": "perimetre_provenance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/cahier_N18.json",
+            "sha256": "f658fed4492071c2632f44f2fa2d1af6243bc8dc9870f793d1eb19ca4ffb6668",
+            "explanation": "Cahier N18 figé ; 21 parties, 126 sous-parties, huit images et dix codes historiques."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/entree.json",
+            "sha256": "bf29cec0691b534526523ba8180e16f9ac9a73f4b4f53ba0188ad6c35c93699d",
+            "explanation": "Entrée de production réelle conservée, datée du13octobre23:27:45Z ; statut initial de recherche non remplacé."
+          }
+        ]
+      },
+      {
+        "id": "sources_lues",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger.json",
+            "sha256": "10185fc91b7f4e206333c732e515f925dddf0ccb686b9c48c0f2e2d46767af3e",
+            "explanation": "Paragraphes indexés, provenance et contexte distincts des cas fictifs."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/matrice_decisions_auteur.json",
+            "sha256": "e69b32788986cd1535b50677b8be14ba9552e1ff00ed3457f7b78436671a2d31",
+            "explanation": "Trente décisions sensibles reliées à leurs passages et produits exacts."
+          }
+        ]
+      },
+      {
+        "id": "contexte_suisse",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse.json",
+            "sha256": "034faf6f450453838a47cbacef1030b24a9751fa34f619ac16dbe6f9c89cdd08",
+            "explanation": "Fiche SSN2025 couverte et différences avec consensus ciblé, KDIGO et FI expliquées."
+          }
+        ]
+      },
+      {
+        "id": "independance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/limites_recherche.json",
+            "sha256": "4424eaa330bd98ad4c6265586c430fef865b1b96d949c71b360a5664c6c6f428",
+            "explanation": "L’auteur ne signe aucun audit indépendant ; contrôles croisés et contre-audits restent au coordinateur."
+          }
+        ]
+      },
+      {
+        "id": "contrat_cours",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture.json",
+            "sha256": "33d02016055f71d25cb952b498f9694f7e4c54a1357b00eecdb9f263caf21423",
+            "explanation": "Les ancrages du cahier et les fenêtres demandées sont reliés aux passages."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/verification_statique_auteur.json",
+            "sha256": "d681c83a8f73eb3ae13b4bc5a6c53974b93462e86feff0684b06c7e2ea2ebd62",
+            "explanation": "Contrôles de structure exécutés ; UI finale distincte à renouveler."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images.json",
+            "sha256": "4f586b2622affebd8de7bae0bff28570c2282849cc043bfc3a3569e084fc0dcc",
+            "explanation": "Huit fichiers publiés, licences propres aux fichiers, attribution, légendes, examen visuel et empreintes."
+          }
+        ]
+      },
+      {
+        "id": "honnetete",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/limites_recherche.json",
+            "sha256": "4424eaa330bd98ad4c6265586c430fef865b1b96d949c71b360a5664c6c6f428",
+            "explanation": "Échecs documentaires, correction de licence et limites de transposition déclarés ; aucune validation médicale humaine."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/verifications_numeriques_auteur.json",
+            "sha256": "321b8da03b2e8c3956dd4f32cbb863d494d094d3de31a21b6d902e1c5dc20e6d",
+            "explanation": "Treize calculs refaits sur exemples fictifs, sans revendiquer des observations réelles."
+          }
+        ]
+      }
+    ]
+  },
+  "exit": {
+    "actor": "C02-R-NEPH",
+    "verdict": "conforme",
+    "phase": "sortie de revue finale auteur",
+    "checked_at": "2026-10-14T00:22:14.344879+00:00",
+    "prompt_files": {
+      "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+      "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+      "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "docs/collaboration/instructions/CHAINE_CYCLES_2026-10-14_EXECUTEUR.md": "007eb09b22aae65ee5110c593f1ede6895bcf434b948b9c98703c0315dfbf1af",
+      "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+    },
+    "checks": [
+      {
+        "id": "autorisation",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "docs/collaboration/instructions/CHAINE_CYCLES_2026-10-14_EXECUTEUR.md",
+            "sha256": "007eb09b22aae65ee5110c593f1ede6895bcf434b948b9c98703c0315dfbf1af",
+            "explanation": "Instruction directe du cycle2 ; rédaction N18 uniquement, sans publication par cet auteur."
+          }
+        ]
+      },
+      {
+        "id": "perimetre_provenance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/cahier_N18.json",
+            "sha256": "f658fed4492071c2632f44f2fa2d1af6243bc8dc9870f793d1eb19ca4ffb6668",
+            "explanation": "Cahier N18 figé ; 21 parties, 126 sous-parties, huit images et dix codes historiques."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/entree.json",
+            "sha256": "bf29cec0691b534526523ba8180e16f9ac9a73f4b4f53ba0188ad6c35c93699d",
+            "explanation": "Entrée de production réelle conservée, datée du13octobre23:27:45Z ; statut initial de recherche non remplacé."
+          }
+        ]
+      },
+      {
+        "id": "sources_lues",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger.json",
+            "sha256": "10185fc91b7f4e206333c732e515f925dddf0ccb686b9c48c0f2e2d46767af3e",
+            "explanation": "Paragraphes indexés, provenance et contexte distincts des cas fictifs."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/matrice_decisions_auteur.json",
+            "sha256": "e69b32788986cd1535b50677b8be14ba9552e1ff00ed3457f7b78436671a2d31",
+            "explanation": "Trente décisions sensibles reliées à leurs passages et produits exacts."
+          }
+        ]
+      },
+      {
+        "id": "contexte_suisse",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse.json",
+            "sha256": "034faf6f450453838a47cbacef1030b24a9751fa34f619ac16dbe6f9c89cdd08",
+            "explanation": "Fiche SSN2025 couverte et différences avec consensus ciblé, KDIGO et FI expliquées."
+          }
+        ]
+      },
+      {
+        "id": "independance",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/limites_recherche.json",
+            "sha256": "4424eaa330bd98ad4c6265586c430fef865b1b96d949c71b360a5664c6c6f428",
+            "explanation": "L’auteur ne signe aucun audit indépendant ; contrôles croisés et contre-audits restent au coordinateur."
+          }
+        ]
+      },
+      {
+        "id": "contrat_cours",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture.json",
+            "sha256": "33d02016055f71d25cb952b498f9694f7e4c54a1357b00eecdb9f263caf21423",
+            "explanation": "Les ancrages du cahier et les fenêtres demandées sont reliés aux passages."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/verification_statique_auteur.json",
+            "sha256": "d681c83a8f73eb3ae13b4bc5a6c53974b93462e86feff0684b06c7e2ea2ebd62",
+            "explanation": "Contrôles de structure exécutés ; UI finale distincte à renouveler."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images.json",
+            "sha256": "4f586b2622affebd8de7bae0bff28570c2282849cc043bfc3a3569e084fc0dcc",
+            "explanation": "Huit fichiers publiés, licences propres aux fichiers, attribution, légendes, examen visuel et empreintes."
+          }
+        ]
+      },
+      {
+        "id": "honnetete",
+        "status": "conforme",
+        "evidence": [
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/limites_recherche.json",
+            "sha256": "4424eaa330bd98ad4c6265586c430fef865b1b96d949c71b360a5664c6c6f428",
+            "explanation": "Échecs documentaires, correction de licence et limites de transposition déclarés ; aucune validation médicale humaine."
+          },
+          {
+            "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/verifications_numeriques_auteur.json",
+            "sha256": "321b8da03b2e8c3956dd4f32cbb863d494d094d3de31a21b6d902e1c5dc20e6d",
+            "explanation": "Treize calculs refaits sur exemples fictifs, sans revendiquer des observations réelles."
+          }
+        ]
+      }
+    ]
+  },
+  "verdict": "favorable",
+  "qualification": "Rédaction et auto-revue auteur achevées, remise pour audit indépendant ; aucune clôture de cycle ni publication revendiquée.",
+  "score": null,
+  "final_files": {
+    "chapters/N18/N18_pop1.html": "48b8e93f07fa02f03e1030282f93fe5dcf709ac54a0b47869539cc42367f2b5c",
+    "chapters/N18/N18_b.html": "15b0b0a2447f77980ceb99c92792d1914e2bde84221b5babf2c2d798570dd670",
+    "chapters/N18/N18_a.html": "d07715dc2d0ec0df8bf274ae47b5b4fcccd2fc31a57431b52f84fee201ed93ff",
+    "chapters/N18/N18_d.html": "4cdf06a6748da176a4b82a2facae9687d6953809ece4f3a74543ce9259d4e9a5",
+    "chapters/N18/N18_pop2.html": "ba7b8f5030a224404aa14da12ca2c1f1873d05858e4f5de7d490c8c79c02983c",
+    "chapters/N18/N18_c.html": "b40b362fc3ed070a5f9319195a730eef1c6069ab0759913661ab33a31b944b2b",
+    "glossary/n18.py": "9bcc44de42dddf94ae1c52e0b7aaf5c0fd19abcd7e08c72ab165d90550cf2969"
+  },
+  "image_files": {
+    "assets/img/cycle2/n18/n18_01.gif": "b17da3f01daadcc230cc265283d3c92a83155bf3a69a86a9ac390e8d825f9431",
+    "assets/img/cycle2/n18/n18_02.gif": "b645908a6e9852b57ae8f6c16dbe98a626ec53a9492334db1baf36b135d2c7b8",
+    "assets/img/cycle2/n18/n18_03.gif": "bf55722e40c924a2b09361f88a8b6a8f2a5812e54d7f93bc1ed8c59de1545450",
+    "assets/img/cycle2/n18/n18_04.gif": "19a6864b336f5b64c8805fc1a60045ad517f75db2f9705d1d44c7d78d6be8a24",
+    "assets/img/cycle2/n18/n18_05.gif": "b644e0c1ac2ba23ec279085dfab2f5f9e92509ef3b64fc00032c24b014bfcb0c",
+    "assets/img/cycle2/n18/n18_06.gif": "f5568dfc807350cac1a6910db5fbf941e7cf62e300f1e22d6cd300cabe9cb05f",
+    "assets/img/cycle2/n18/n18_07.gif": "b9b52f4417bd6a48ca5789225354e861018b92030b94757121e61d1d4f7aeaa6",
+    "assets/img/cycle2/n18/n18_08.gif": "3d6d5f6a248b1f56b474dcafd62cce7cf78ef882f36452ed63cbc59df1c9e181"
+  },
+  "blocking_reserves": [],
+  "source_ledger": {
+    "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger.json",
+    "sha256": "10185fc91b7f4e206333c732e515f925dddf0ccb686b9c48c0f2e2d46767af3e"
+  },
+  "dimensions": {
+    "redaction": "Plan du cahier suivi avec fil clinique fictif, 21 parties et 126 sous-parties; gradations en tableaux, fenêtres de calcul, mécanismes expliqués et sources dédupliquées. Auto-revue ciblée des infinitifs et des unités effectuée.",
+    "medecine": "SSN2025 entière confrontée au consensus diabète suisse mai2024, à KDIGO international2024/2026 et à16 FI de produits exacts. Treize opérations recalculées. Populations, seuils, cibles, clairances et limites de transposition distingués.",
+    "sources": "Archives réelles et30 décisions avec extraits précis; l’index de858 paragraphes/cellules est distinct de cette matrice. Données fictives marquées comme telles. Origine australienne de la figure A06 et emploi pédagogique des textes OpenStax explicites.",
+    "frontend": "Contrôles statiques exécutés:106 fenêtres sans cible absente, huit images et huit liens taille originale, trois quiz natifs, aucun doublon d’identifiant ni bouton imbriqué. UI V1 contrôlée par root; nouvelle UI finale à confirmer après reconstruction indépendante."
+  },
+  "proofs": {
+    "matrice_decisions_auteur.json": {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/matrice_decisions_auteur.json",
+      "sha256": "e69b32788986cd1535b50677b8be14ba9552e1ff00ed3457f7b78436671a2d31"
+    },
+    "couverture_suisse.json": {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse.json",
+      "sha256": "034faf6f450453838a47cbacef1030b24a9751fa34f619ac16dbe6f9c89cdd08"
+    },
+    "couverture.json": {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture.json",
+      "sha256": "33d02016055f71d25cb952b498f9694f7e4c54a1357b00eecdb9f263caf21423"
+    },
+    "images.json": {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images.json",
+      "sha256": "4f586b2622affebd8de7bae0bff28570c2282849cc043bfc3a3569e084fc0dcc"
+    },
+    "verification_statique_auteur.json": {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/verification_statique_auteur.json",
+      "sha256": "d681c83a8f73eb3ae13b4bc5a6c53974b93462e86feff0684b06c7e2ea2ebd62"
+    },
+    "verifications_numeriques_auteur.json": {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/verifications_numeriques_auteur.json",
+      "sha256": "321b8da03b2e8c3956dd4f32cbb863d494d094d3de31a21b6d902e1c5dc20e6d"
+    },
+    "limites_recherche.json": {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/limites_recherche.json",
+      "sha256": "4424eaa330bd98ad4c6265586c430fef865b1b96d949c71b360a5664c6c6f428"
+    }
+  },
+  "next_steps": [
+    "Audit croisé C02-R-ENDO, deux passes avec corrections éventuelles.",
+    "Contre-audit distinct après clôture de tous les audits croisés.",
+    "Contrôle final et publication coordonnés; ne pas injecter sur la seule auto-revue."
+  ]
+}
