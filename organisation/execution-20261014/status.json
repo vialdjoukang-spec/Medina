@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-14T00:14:34.883575+00:00",
+  "at": "2026-10-14T00:23:38.935898+00:00",
   "event": "coordination_checkpoint",
   "coordinator_runtime": "/root/executeur_cycles_nuit",
   "cycle": 2,
@@ -17,18 +17,18 @@
   },
   "model": "gpt-6-astra",
   "reasoning_effort": "high",
-  "phase": "rendus_et_auto_revues",
+  "phase": "audit_croise_passe1",
   "images_reviewed": 32,
   "courses_ready": 0,
   "cross_audits_completed": 0,
   "counter_audits_completed": 0,
   "injections_verified": 0,
   "deadline": "2026-10-14T08:00:00+02:00",
-  "note": "32 images présentes avec manifestes auteur, licences/inspection déclarées et SHA/liaison HTML vérifiés localement. Audits indépendants non engagés. D64 gel auteur ; autres auto-revues en finition.",
-  "branch_head_verified": "918a9c1bb0e1550f146b333739778267ecd4257c",
+  "note": "Quatre remises auteur vérifiées ; première passe croisée ouverte, aucune note indépendante attribuée.",
+  "branch_head_verified": "691ee8318b594d4208c97a767d4a80d1601082d9",
   "general_tests": 346,
   "current_guard_tests": 76,
-  "main_sha": "9983c08b5fca380aa7e31a749c5e7fe0b91fea4a",
+  "main_sha": "691ee8318b594d4208c97a767d4a80d1601082d9",
   "infrastructure_pr": 92,
   "images_by_course": {
     "G45": 9,
@@ -38,12 +38,17 @@
   },
   "initial_ui_previews_passed": [
     "G45",
+    "E10",
     "N18",
     "D64"
   ],
   "author_remises_frozen": [
+    "G45",
+    "E10",
+    "N18",
     "D64"
   ],
   "infrastructure_publication_verified": true,
-  "observed_publication_minutes": 20.505
+  "observed_publication_minutes": 20.505,
+  "publication_infrastructure_pr": 93
 }
