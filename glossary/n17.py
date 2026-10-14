@@ -44,3 +44,17 @@ add_if_absent('mOsm', [('m', 'milli'), ('Osm', 'osmole')], 'Milliosmole',
 add_if_absent('FENa', [('F','Fraction'),('E','Excrétée'),('Na','Sodium')], 'Fraction excrétée du sodium', 'Ce calcul compare sodium et créatinine dans le sang et l’urine. Les unités, les conditions et les limites sous diurétiques sont détaillées dans la fenêtre N17.', 'n17-fen')
 add_if_absent('pCO₂', [('p','pression partielle'),('C','carbone'),('O','oxygène'),('₂','deux atomes d’oxygène')], 'Pression partielle du dioxyde de carbone', 'La valeur dépend du prélèvement artériel ou veineux et de la ventilation. Les références suisses et la compensation d’une acidose métabolique sont expliquées dans la fenêtre N17.', 'n17-acidobase')
 add_if_absent('StatPearls', [('StatPearls','nom propre de collection pédagogique, non une abréviation')], 'StatPearls, collection de synthèses médicales', 'Les chapitres Physiology, Renal et Histology, Nephron complètent les bases anatomiques ; ils ne constituent pas une recommandation suisse de traitement.', 'n17-pompe')
+
+# Ajouts Claude, audit Cycle 1 du 14 octobre 2026 : noms propres signalés par l'audit des abréviations.
+add_if_absent('PROFILES', [('PROFILES', 'nom propre du référentiel suisse, acronyme anglais non développé dans ce cours')],
+              'PROFILES, référentiel des objectifs de formation médicale en Suisse',
+              'Ce référentiel définit les situations cliniques de départ de l’examen fédéral suisse de médecine humaine. Le cours relie ici l’insuffisance rénale aiguë à ses situations 63, 161, 164 et 173.', 'n17-criteres')
+add_if_absent('Tamm-Horsfall', [('Tamm-Horsfall', 'noms propres des auteurs qui ont décrit la protéine, non une abréviation')],
+              'Protéine de Tamm-Horsfall, ou uromoduline',
+              'Cette protéine tubulaire précipite dans la lumière et forme la matrice des cylindres urinaires. Sa précipitation dépend du pH et de la densité de l’urine.', 'n17-sediment')
+add_if_absent('Michael-Joseph', [('Michael-Joseph', 'prénom composé d’un auteur, non une abréviation')],
+              'Michael-Joseph F. Agbayani, auteur d’une image',
+              'Ce médecin est coauteur de l’électrocardiogramme d’hyperkaliémie publié sous licence CC BY 4.0 sur Wikimedia Commons.', 'n17-hyperk')
+add_if_absent('Chávez-Iñiguez', [('Chávez-Iñiguez', 'nom de famille composé d’un auteur, non une abréviation')],
+              'Chávez-Iñiguez, premier auteur d’un cas publié',
+              'Ce néphrologue est le premier auteur du cas publié en 2018 dans BMC Nephrology, dont la figure histologique est reproduite sous licence CC BY 4.0.', 'n17-tubule')

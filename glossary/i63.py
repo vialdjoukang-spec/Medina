@@ -32,3 +32,9 @@ if 'SSED' not in G:
 
 if 'ASPECTS' not in G:
     a('ASPECTS',[('A','Alberta'),('S','Stroke'),('P','Program'),('E','Early'),('C','Computed'),('T','Tomography'),('S','Score')],'Score tomographique précoce du programme AVC de l’Alberta','<p>Ce décompte décrit les anomalies précoces dans dix régions du territoire cérébral moyen. Il ne mesure pas un volume et ne décide pas seul d’un traitement.</p>','i63-calcul-aspects')
+
+# Ajouts de l'audit Claude du 14.10.2026 (conditionnels ; aucune clé partagée remplacée).
+if 'HINTS' not in G:
+    a('HINTS',[('H','Head impulse (impulsion céphalique)'),('IN','Nystagmus (nystagmus)'),('TS','Test of Skew (recherche d’une déviation verticale)')],'Head Impulse, Nystagmus, Test of Skew','<p>Triade d’examen oculomoteur du syndrome vestibulaire aigu avec nystagmus : un seul aspect central (impulsion céphalique sans saccade, nystagmus changeant de sens ou évoqué par le regard, déviation verticale) oriente vers un infarctus du tronc ou du cervelet.</p>','i63-hints')
+if 'RACE' not in G:
+    a('RACE',[('R','Rapid (rapide)'),('A','Arterial (artérielle)'),('C','oCclusion (occlusion)'),('E','Evaluation (évaluation)')],'Rapid Arterial oCclusion Evaluation','<p>Score préhospitalier de 0 à 9 points qui estime la probabilité d’une occlusion d’un gros vaisseau ; le protocole bernois oriente vers le centre à partir de 5 points selon le délai et la distance.</p>','i63-race')
