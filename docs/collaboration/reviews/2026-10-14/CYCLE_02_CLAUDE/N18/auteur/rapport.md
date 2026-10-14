@@ -78,3 +78,8 @@ Ce rapport date du 14 octobre 2026. Il couvre la reprise, par Claude et sur inst
 - Observations : KDIGO PP 2.2.2 ajouté ; infinitifs « Exercice : … » reformulés ; coquilles corrigées.
 - Contrôles : `test_v7.py --static N18` OK (45 295 mots, 111 fenêtres, 4 quiz, 21 Pareto) ; aperçu Playwright 1440/390 px sans erreur ni débordement.
 - Réserves ouvertes : image A06 australienne ; registre Codex non revu entrée par entrée (276 identifiants d’anciennes fenêtres retirés) ; aucune validation médicale humaine.
+
+## Réserve Y01 (passe 2 intermédiaire)
+
+- Fenêtres n18-calcul-egfr, n18-calcul-kfre, n18-calcul-clairance, n18-calcul-acr et n18-dfg réécrites : méthode, unités, exemples fictifs distincts du corps, pièges et limites ; 0 phrase reprise du corps.
+- test_v7 --static N18 OK (45 427 mots, 111 fenêtres) ; registre 89 décisions ; sortie.json conforme.
