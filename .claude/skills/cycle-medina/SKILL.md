@@ -4,6 +4,8 @@ description: Produire, auditer, injecter et publier un cycle MEDINA (4 leçons d
 ---
 # Cycle MEDINA n — chaîne économe (décision de Vial, 14.10.2026)
 
+**Cycles 3 à 30 : recherche Opus effort élevé → rédaction Sonnet effort moyen → contrôle technique + 4 captures → publication directe. Étapes 3 et 4 (audits) différées après le Cycle 30** (`docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md`). Interdit de rédiger faux.
+
 Règle de Vial (14.10.2026) : Opus moyen→élevé → Sonnet moyen → Opus faible ; mécanique Sonnet moyen.
 Principe : **recherche initiale exhaustive** (coûteuse une fois) → rédaction et audits **bon marché** fondés sur le dossier de sources.
 Rapports au propriétaire : uniquement « captures + FIN PUBLIÉ + lien ». Aucun compte rendu intermédiaire.
