@@ -1,0 +1,406 @@
+{
+ "code": "N17",
+ "actor": "Claude — sous-agent d'audit N17",
+ "date": "2026-10-14",
+ "branch": "claude/great-cerf-uizsml",
+ "files_before": {
+  "chapters/N17/N17_a.html": "2d81fb6566fa41ef737a69442865c527e6ea44972ee326bf8727e5df63d57c2c",
+  "chapters/N17/N17_b.html": "3bd87d5eedbe8528a88f07793ddf46e695654c5fbf44bf7221553b741dae2712",
+  "chapters/N17/N17_c.html": "c4d9774d0a1fb531a2f35ea3d6a43a0cc59c4f17317383f31dbc257dffd8e4d6",
+  "chapters/N17/N17_d.html": "fc3b614bf64f9d6376f54dde7275897291659435c7a6a3b8563758c8dd49b526",
+  "chapters/N17/N17_pop1.html": "ef7116c06076a124cc6e8b1277b778b88672aebbab3bd774c0ab27b187206456",
+  "chapters/N17/N17_pop2.html": "e659450059b26385a84266d7cca5c12af634ad1ccb6ad8105fdf34db566e9835",
+  "glossary/n17.py": "cbe994687229aa1f553fc83c44fd049beeaedc6d3e8724348acf003872095619"
+ },
+ "files_after": {
+  "chapters/N17/N17_a.html": "1f26a24b63b816197fb5dfe3a7957038840a044ccd85defb5fdc23c20170e7a8",
+  "chapters/N17/N17_b.html": "4106a14bbacdba9102de4311d5d46ae61d33311082e5dd4b9372ddf0072ab6ac",
+  "chapters/N17/N17_c.html": "4734c410e9622634bf6c0a80db003bc6525927ef2764a8084583679857ce8040",
+  "chapters/N17/N17_d.html": "dec95c20b5d66baa36eaa0d00a37dc35f764f2fcf394326f854291c32175b852",
+  "chapters/N17/N17_pop1.html": "d44b6865cd541c11631165b1dfd500ce0962ef12f9bfee72db6a31bd2d291f03",
+  "chapters/N17/N17_pop2.html": "ae05a0f71bb818df22c43dc23f4d5c33d014fbc671634aefcb53d7fe69190d9e",
+  "glossary/n17.py": "c2b68c0b457648544a90749fbb1d2e7d412a9facc63aff4bbf72280468cea589"
+ },
+ "key_figures_verified": [
+  "KDIGO 26,5 µmol/L/48 h",
+  "KDIGO 1,5× en 7 jours",
+  "KDIGO <0,5 mL/kg/h 6 h",
+  "Stades 1,5–1,9 / 2,0–2,9 / ≥3",
+  "353,6 µmol/L",
+  "<0,3 mL/kg/h 24 h, anurie 12 h",
+  "Enfant eGFR <35",
+  "Évaluation à 3 mois",
+  "UKKA 5,5–5,9 / 6,0–6,4 / ≥6,5",
+  "Électrocardiogramme dès 6,0",
+  "10 unités + 25 g",
+  "Glucose 10 % 50 mL/h 5 h si <7,0",
+  "Glycémie 0–360 min",
+  "Kaliémie 1, 2, 4, 6, 24 h",
+  "Gluconate 30 mL/10 min, 6,8 mmol",
+  "NICE échographie 6 h / 24 h",
+  "Dérivation 12 h",
+  "Lasix 20–40 mg, 4 et 2,5 mg/min, 1500 mg/j",
+  "Noradrénaline 8–12, 0,5–1, 2–4, 30 µg/min",
+  "Bicarbonate 0,3, 100–200 mmol, 1,5 mmol/kg/h",
+  "Revue suisse 7 %",
+  "HUG stade 2 / pas d’amélioration",
+  "Lokelma 10 g ×3, 48 h +24 h"
+ ],
+ "sources_consulted": [
+  {
+   "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf",
+   "title": "KDIGO Clinical Practice Guideline for Acute Kidney Injury",
+   "publisher": "KDIGO / Kidney International Supplements 2(1)",
+   "published": "2012-03",
+   "consulted_at": "2026-10-14",
+   "passage": "2.1.1–2.1.2 (≥0.3 mg/dl [≥26.5 µmol/l] in 48 h; ≥1.5× in 7 d; <0.5 ml/kg/h 6 h; stage 3 ≥4.0 mg/dl [≥353.6 µmol/l], <0.3 ml/kg/h ≥24 h, anuria ≥12 h, <18 y eGFR <35); 2.3.4 evaluate at 3 months; 3.1.1 isotonic crystalloids rather than colloids (2B); 3.3.2–3.3.5 20–30 kcal/kg/d, protein 0.8–1.0 / 1.0–1.5 / up to 1.7 g/kg/d, enteral; 3.4.1–3.4.2 diuretics; 3.5.1 low-dose dopamine (1A); 5.1.1–5.1.2 RRT; 5.6.2 CRRT if unstable; Tables 5, 11, 13, 14 (AKD <3 months, small kidneys = CKD, CKD rarely oliguric before dialysis)",
+   "used_for": "Vérification des critères, stades, suivi, diurétiques, dopamine, suppléance ; enrichissement cristalloïdes, nutrition, fenêtre n17-aigu-chronique"
+  },
+  {
+   "url": "https://kdigo.org/guidelines/acute-kidney-injury/",
+   "title": "Acute Kidney Injury (AKI) and Acute Kidney Disease (AKD) Guideline Update",
+   "publisher": "KDIGO",
+   "published": "page courante",
+   "consulted_at": "2026-10-14",
+   "passage": "The draft of the KDIGO 2026 Clinical Practice Guideline … was recently made available for public review. The Guideline Work Group is preparing the guideline for publication",
+   "used_for": "Confirmation que la version 2012 reste la recommandation finale en vigueur"
+  },
+  {
+   "url": "https://www.nice.org.uk/guidance/ng148/chapter/Recommendations",
+   "title": "Acute kidney injury: prevention, detection and management (NG148)",
+   "publisher": "NICE (Royaume-Uni)",
+   "published": "2019-12-18, mise à jour 2024-10-16",
+   "consulted_at": "2026-10-14",
+   "passage": "1.1.6 eGFR <30 small risk contrast; 1.1.7; 1.1.13 age ≥65; 1.2.8; 1.3.2 daily creatinine typical; 1.4.5 ultrasound within 6 h if pyonephrosis; 1.4.6 within 24 h; 1.5.2 nephrostomy/stenting within 12 h; 1.5.3–1.5.4 loop diuretics only for overload; 1.5.5 no low-dose dopamine; 1.5.15 nephrologist within 24 h",
+   "used_for": "Vérification des délais d’échographie et de dérivation, facteurs de risque, diurétiques ; enrichissement fenêtre Lasix"
+  },
+  {
+   "url": "https://ukkidney.org/sites/renal.org/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223_0.pdf",
+   "title": "Clinical Practice Guideline – Management of Hyperkalaemia in Adults",
+   "publisher": "UK Kidney Association",
+   "published": "2023-10 (version finale 19.12.2023)",
+   "consulted_at": "2026-10-14",
+   "passage": "Grades 5.5–5.9 / 6.0–6.4 / ≥6.5 mmol/l; 14.1 ECG ≥6.0; 14.2 monitoring; 16.2a 6.8 mmol, 30 ml 10% gluconate over 10 min or 10 ml chloride over 5 min; 16.3.1–16.3.3 10 units + 25 g, 10% glucose 50 ml/h 5 h if <7.0 mmol/l; 16.4 salbutamol 10–20 mg, not monotherapy; 16.5 bicarbonate not routine; 16.6 SZC, calcium resonium no longer routine; 17.1.2 K at 1,2,4,6,24 h; 17.2 glucose 0–360 min; rationale: calcium effective within 3 min, duration 30–60 min; insulin K falls within 15 min, peak 0.65–1.0 mmol/l at 30–60 min, sustained up to 2 h; peaked T in ~30–36%",
+   "used_for": "Vérification de tous les repères d’hyperkaliémie ; enrichissement délais d’action, étape d’élimination, commentaire de l’électrocardiogramme réel"
+  },
+  {
+   "url": "https://www.erc.edu/media/wwufbysp/gl2025-06-spec-circ-e.pdf",
+   "title": "European Resuscitation Council Guidelines 2025 Special Circumstances in Resuscitation",
+   "publisher": "ERC / Resuscitation 215 (2025) 110753",
+   "published": "2025",
+   "consulted_at": "2026-10-14",
+   "passage": "Fig. 2: IV calcium (6.8 mmol) 30 ml 10% calcium gluconate IV over 10 min OR 10 ml 10% calcium chloride over 5 min (cardiac arrest or peri-arrest); insulin-glucose + salbutamol effective 4–6 h; dialysis indications incl. oliguric AKI <400 mL/day, marked tissue breakdown; SZC 10 g",
+   "used_for": "Vérification du schéma calcique (figure lue visuellement), enrichissement élimination et dialyse"
+  },
+  {
+   "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/special-circumstances-guidelines",
+   "title": "Special circumstances guidelines 2025",
+   "publisher": "Resuscitation Council UK",
+   "published": "2025",
+   "consulted_at": "2026-10-14",
+   "passage": "severe hyperkalaemia with ECG changes: administer 10 mL of 10% calcium chloride IV over 5 min; if this is not available, give 30 mL of 10% calcium gluconate over 10 min",
+   "used_for": "Confirmation de l’attribution « recommandation britannique de réanimation 2025 » déjà présente (aucune erreur)"
+  },
+  {
+   "url": "https://www.hug.ch/vdoc/HUG_000000849.pdf",
+   "title": "Recommandation clinique : bundle insuffisance rénale aigüe (IRA)",
+   "publisher": "Hôpitaux universitaires de Genève",
+   "published": "2022-11-18, version 1.0",
+   "consulted_at": "2026-10-14",
+   "passage": "Stade 1 >26 µmol/L en 48 h, >1,5 à 1,9 fois en 7 jours, <0,5 ml/kg/h 6 h ; neuf actions ; contacts : si pas d’amélioration ou stade 2, appeler la néphrologie (lu sur l’image de la page 1)",
+   "used_for": "Vérification du parcours suisse et des neuf actions"
+  },
+  {
+   "url": "https://www.revmed.ch/revue-medicale-suisse/2017/revue-medicale-suisse-573/insuffisance-renale-aigue-en-2017-prise-en-charge-dans-un-hopital-non-universitaire-un-exemple-de-collaboration-interprofessionnelle",
+   "title": "Insuffisance rénale aiguë en 2017 : prise en charge dans un hôpital non universitaire",
+   "publisher": "Revue médicale suisse 573",
+   "published": "2017",
+   "consulted_at": "2026-10-14",
+   "passage": "Jusqu’à 7 % des patients hospitalisés ; NTA retenue en cas de persistance au-delà de 48 à 72 heures ; formule sanguine (anémie : myélome, MAT ; neutrophilie : sepsis, pyélonéphrite ; éosinophilie : NIA ; thrombopénie : MAT) ; érythrocytes dysmorphiques sensibilité 88 %, spécificité 95 % ; cylindres érythrocytaires pathognomoniques d’une glomérulonéphrite ; IRA obstructive 2 à 5 % des IRA hospitalières ; créatinine toutes les 24–48 heures",
+   "used_for": "Vérification épidémiologie ; enrichissement différentiels, sédiment, surveillance"
+  },
+  {
+   "url": "https://www.urofrance.org/wp-content/uploads/2021/11/item-348-Insuffisance-renale-aigue.pdf",
+   "title": "Item 348 Insuffisance rénale aiguë – Anurie",
+   "publisher": "Collège français d’urologie / AFU",
+   "published": "2021",
+   "consulted_at": "2026-10-14",
+   "passage": "globe vésical, diagnostic différentiel de l’anurie ; cause obstructive 10 % ; anémie, hypocalcémie, atrophie en cas d’IRC ; échographie normale possible (obstacle récent, déshydratation, fibrose rétropéritonéale) ; scanner sans injection ; dérivation selon le siège ; syndrome de levée d’obstacle : polyurie osmotique, hypokaliémie, déshydratation extracellulaire, compensation volume à volume puis décroissante",
+   "used_for": "Enrichissement SSP 63, fenêtres n17-levee et n17-aigu-chronique, commentaire de l’échographie"
+  },
+  {
+   "url": "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf",
+   "title": "Recommandations pour le dépistage et l’identification de l’IRC",
+   "publisher": "Société suisse de néphrologie",
+   "published": "2025-03-17",
+   "consulted_at": "2026-10-14",
+   "passage": "Antécédents d’insuffisance rénale aiguë parmi les conditions à risque ; orientation : IRA ou chute brutale et persistante du DFGe",
+   "used_for": "Vérification du paragraphe de suivi N17-C0679"
+  },
+  {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680306300177",
+   "title": "Information professionnelle Lasix (injectable)",
+   "publisher": "Swissmedic / sanofi-aventis (suisse) sa, autorisation 30630",
+   "published": "2025-03",
+   "consulted_at": "2026-10-14",
+   "passage": "20 à 40 mg i.v.; +20 mg toutes les 2 heures; max 1500 mg/j; ≤4 mg/min; ≤2,5 mg/min si créatinine >5 mg/dl; CI anurie, coma/précoma hépatique, hypokaliémie/hyponatrémie sévères, hypovolémie, hypersensibilité furosémide/sulfamides/excipients, allaitement; précaution : gêne à l’écoulement de l’urine, l’écoulement doit être garanti",
+   "used_for": "Vérification des doses et contre-indications ; enrichissement obstacle"
+  },
+  {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680609550040",
+   "title": "Information professionnelle Noradrenalin Sintetica",
+   "publisher": "Swissmedic, autorisation 60955",
+   "published": "2020-10",
+   "consulted_at": "2026-10-14",
+   "passage": "8 à 12 mcg/min; alternative 0,5 à 1 mcg/min; entretien 2 à 4; jusqu’à 30; pression toutes les 2 minutes puis toutes les 5 minutes; cyclopropane/halogénés; grossesse nécessité absolue (urgence)",
+   "used_for": "Vérification des doses ; enrichissement surveillance tensionnelle"
+  },
+  {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680367971262",
+   "title": "Information professionnelle Bicarbonate de sodium Bichsel 8,4 %",
+   "publisher": "Swissmedic, autorisation 36797",
+   "published": "2025-11",
+   "consulted_at": "2026-10-14",
+   "passage": "Déficit basique × 0.3 × kg; moitié; 100 à 200 mmol/24 h; env. 1.5 mmol/kg/h; gros vaisseaux; CI dont hypocalcémie, convulsions, décompensation cardiaque, hypernatrémie",
+   "used_for": "Vérification des doses et contre-indications"
+  },
+  {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680424234323",
+   "title": "Information professionnelle Glucose 5 %/10 % Fresenius",
+   "publisher": "Swissmedic, autorisation 42423",
+   "published": "2019-10",
+   "consulted_at": "2026-10-14",
+   "passage": "Posologie maximale 1,5–6,0 g/kg/jour",
+   "used_for": "Vérification"
+  },
+  {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680446100354",
+   "title": "Information professionnelle Insulines humaines monocomposées Novo Nordisk (Actrapid HM)",
+   "publisher": "Swissmedic, autorisation 44610",
+   "published": "2026-04",
+   "consulted_at": "2026-10-14",
+   "passage": "100 UI/ml, voie sous-cutanée ou intraveineuse; seul Actrapid HM peut être administré par voie intraveineuse; Insulatard jamais IV",
+   "used_for": "Vérification"
+  },
+  {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680678510013",
+   "title": "Information professionnelle LOKELMA",
+   "publisher": "Swissmedic, autorisation 67851, AstraZeneca AG",
+   "published": "2026-01",
+   "consulted_at": "2026-10-14",
+   "passage": "Hyperkaliémie de l’adulte; ne doit pas être utilisé comme médicament d’urgence en cas d’hyperkaliémie menaçant le pronostic vital; 10 g trois fois par jour si K >5,0 mmol/l, 48 h, +24 h; autre approche si pas de normokaliémie après 3 jours; entretien ≤10 g/j; CI hypersensibilité; arrêt si K <3,0; ~400 mg sodium par sachet de 5 g; début d’action 1 heure; éviter pendant la grossesse",
+   "used_for": "Nouvelle fenêtre n17-lokelma et lignes pharmacologiques"
+  },
+  {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6236899/fullTextXML",
+   "title": "Oral acyclovir induced hypokalemia and acute tubular necrosis a case report (BMC Nephrol 2018;19:324)",
+   "publisher": "BioMed Central, CC BY 4.0",
+   "published": "2018",
+   "consulted_at": "2026-10-14",
+   "passage": "Fig. 1 a and b Mesangium without proliferation and open capillaries, tubules with brush edge loss and cytoplasmic vacuolization, with diffuse inflammatory infiltrate. d Acute tubular necrosis, (c) tubulointerstitial nephritis … (e) immunofluorescence negative for immune complexes",
+   "used_for": "Légende exacte de la figure 5 bis"
+  }
+ ],
+ "corrections": [
+  {
+   "file": "chapters/N17/N17_b.html",
+   "before": "KDIGO exclut les diurétiques comme prévention ou traitement de récupération de l’IRA.",
+   "after": "KDIGO recommande de ne pas employer les diurétiques pour prévenir l’IRA et suggère de ne pas les utiliser pour la traiter, sauf en cas de surcharge.",
+   "reason": "Précision du niveau de recommandation (3.4.1 « recommend », 3.4.2 « suggest … except volume overload ») ; « exclut » surestimait la force.",
+   "source": "KDIGO 2012, 3.4.1–3.4.2",
+   "type": "médicale (précision)"
+  },
+  {
+   "file": "chapters/N17/N17_a.html",
+   "before": "Ce cours conserve la recommandation finale 2012 ; il ne présente pas les nouveautés du projet comme adoptées.",
+   "after": "La recommandation finale de 2012 reste donc la référence en vigueur ; les nouveautés du projet ne sont pas encore adoptées.",
+   "reason": "Phrase décrivant la fabrication du cours ; statut 2026 revérifié.",
+   "source": "Page KDIGO AKI consultée le 14.10.2026",
+   "type": "linguistique"
+  },
+  {
+   "file": "chapters/N17/N17_a.html",
+   "before": "Le schéma distingue les décisions causales sans attribuer un médicament identique…",
+   "after": "La figure 1 en montre la convergence ; elle rappelle aussi qu’aucun médicament unique ne convient…",
+   "reason": "Formule de fabrication remplacée par une phrase explicative.",
+   "source": "—",
+   "type": "linguistique"
+  },
+  {
+   "file": "chapters/N17/N17_d.html",
+   "before": "Le cours attribue 30 mL en 10 minutes à UKKA 2023, avec confirmation … et conserve la limite HUG de débit différente.",
+   "after": "Le repère de 30 mL en 10 minutes provient d’UKKA 2023 et du Conseil européen de réanimation 2025 ; le Resuscitation Council du Royaume-Uni 2025 le retient comme alternative au chlorure. La fiche HUG fixe pourtant un débit maximal plus lent…",
+   "reason": "Formule de fabrication ; attribution complétée (ERC figure 2 vérifiée).",
+   "source": "UKKA 16.2a ; ERC 2025 fig. 2 ; RCUK 2025",
+   "type": "linguistique et sources"
+  },
+  {
+   "file": "chapters/N17/N17_pop1.html",
+   "before": "Ce cours utilise une valeur stable antérieure connue… ; Ce cours traite l’adulte. ; ce chapitre ne propose pas une substitution…",
+   "after": "Phrases directes équivalentes, sans référence à la fabrication du cours",
+   "reason": "STYLE_REDACTION §3",
+   "source": "—",
+   "type": "linguistique"
+  },
+  {
+   "file": "chapters/N17/N17_pop2.html",
+   "before": "Le cours retient le repère britannique … ; le cours retient la propriété théorique … ; la monographie attribue le schéma …",
+   "after": "Phrases directes attribuant les repères à UKKA, à l’ERC et aux HUG",
+   "reason": "STYLE_REDACTION §3",
+   "source": "UKKA ; ERC 2025 ; HUG calcium",
+   "type": "linguistique"
+  },
+  {
+   "file": "chapters/N17/*.html",
+   "before": "Légendes « Schéma pédagogique original », « Dessin original », « Comparaison schématique », figures 1, 2, 6, 8 sans mention",
+   "after": "Toutes les figures SVG portent « Schéma didactique »",
+   "reason": "Cahier : aucune ambiguïté entre schéma et image clinique réelle",
+   "source": "—",
+   "type": "présentation"
+  },
+  {
+   "file": "chapters/N17/N17_b.html",
+   "before": "tel le Chlorure de sodium 0,9 % Sintetica",
+   "after": "le chlorure de sodium 0,9 % Sintetica … en est un exemple",
+   "reason": "Majuscule fautive et phrase reconstruite",
+   "source": "—",
+   "type": "linguistique"
+  }
+ ],
+ "enrichments": [
+  "Îlot 7.1 : tableau de raisonnement par situations de départ PROFILES 63, 161, 164, 173 (hypothèses, élément discriminant, examen décisif) ; tableau de dix diagnostics différentiels hiérarchisés par gravité ; numération sanguine d’orientation ; nouveau quiz (anurie sur globe vésical).",
+  "Îlot 4 : part obstructive 2–5 % (revue suisse) et environ 10 % (Collège français d’urologie), populations distinguées.",
+  "Îlot 8.1 et fenêtre n17-hyperk : délais d’action du calcium et de l’insuline, étape d’élimination (urines, chélateur, dialyse), salbutamol adjuvant, indications de dialyse ERC.",
+  "Îlot 9 : cristalloïdes isotoniques plutôt que colloïdes (KDIGO 3.1.1), modes de dérivation selon le siège, repères nutritionnels KDIGO, contrôle de créatinine toutes les 24–48 h (revue suisse).",
+  "Nouvelles fenêtres : n17-lokelma (information professionnelle suisse exacte, tension avec UKKA/ERC expliquée), n17-levee (syndrome de levée d’obstacle), n17-aigu-chronique (IRA, maladie rénale aiguë, maladie chronique ; reins petits ; fausse hausse).",
+  "Fenêtre Lasix : précaution d’obstacle à l’écoulement (FI) et place NICE 1.5.3–1.5.4 ; fenêtre noradrénaline : rythme de mesure tensionnelle (FI).",
+  "Pharmacologie : ligne Lokelma dans les tableaux p-1 et p-2.",
+  "Paretos diagnostic, urgences et pharmacologie complétés.",
+  "Quatre images réelles commentées avec physiopathologie (électrocardiogramme, sédiment, échographie, biopsie)."
+ ],
+ "images": [
+  {
+   "fichier": "n17_ecg_hyperkaliemie.jpg",
+   "page_source": "https://commons.wikimedia.org/wiki/File:Hyperkalemia_ECG.jpg",
+   "url_fichier": "https://upload.wikimedia.org/wikipedia/commons/6/67/Hyperkalemia_ECG.jpg",
+   "auteur": "Dr. Michael-Joseph F. Agbayani and Dr. Eddieson Gonzales (Manila, Philippines)",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "attribution": "Dr. Michael-Joseph F. Agbayani and Dr. Eddieson Gonzales (Manila, Philippines), CC BY 4.0, via Wikimedia Commons",
+   "consulte_le": "2026-10-14",
+   "sha256": "f7cbb2078b95b1a9f05e21c2d858824ed7ba5e2961a19a10fe25e421105a0bd2",
+   "octets": 219133,
+   "legende": "Figure 3 bis — Électrocardiogramme réel d’un patient atteint de maladie rénale, kaliémie 8,2 mmol/L ; ondes T amples et pointues, surtout de V2 à V5.",
+   "alt": "Électrocardiogramme à douze dérivations, 25 mm/s, d’un patient atteint de maladie rénale avec une kaliémie à 8,2 mmol/L : ondes T amples, pointues et symétriques, surtout de V2 à V5, fréquence 81 par minute",
+   "emplacement": "chapters/N17/N17_c.html#n17-e-2",
+   "traitement": "Original 1158×893 téléchargé (SHA-1 identique à Commons f0c4f154…), réencodé JPEG qualité 72 ; zones d’identification déjà masquées dans l’original.",
+   "verification_visuelle": "Image ouverte et vue le 14.10.2026 par le sous-agent Claude d’audit N17 : le contenu correspond à la légende."
+  },
+  {
+   "fichier": "n17_sediment_cylindres.jpg",
+   "page_source": "https://commons.wikimedia.org/wiki/File:RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg",
+   "url_fichier": "https://upload.wikimedia.org/wikipedia/commons/8/87/RTE_cast%2C_muddy_granular_cast%2C_WBC_cast_and_RBC_cast_in_urine.jpg",
+   "auteur": "Mohsenin V. — Practical approach to detection and management of acute kidney injury in critically ill patient. J Intensive Care 2017;5:57. doi:10.1186/s40560-017-0251-y (PMC5603084)",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "attribution": "Mohsenin V. — Practical approach to detection and management of acute kidney injury in critically ill patient. J Intensive Care 2017;5:57. doi:10.1186/s40560-017-0251-y (PMC5603084), CC BY 4.0, via Wikimedia Commons",
+   "consulte_le": "2026-10-14",
+   "sha256": "cddedab7a44c463f5165d69166bfbcfeb329ab91f789b8f6a3369428676c908b",
+   "octets": 41219,
+   "legende": "Figure 9 — Cylindres urinaires réels : (a) cellules épithéliales tubulaires, (b) granuleux brun « boueux », (c) leucocytaire, (d) érythrocytaire.",
+   "alt": "Quatre microphotographies de sédiment urinaire : a, cylindre de cellules épithéliales tubulaires ; b, cylindre granuleux brun ; c, cylindre leucocytaire ; d, cylindre érythrocytaire rouge",
+   "emplacement": "chapters/N17/N17_c.html#n17-e-3",
+   "traitement": "Original 567×337 (SHA-1 identique à Commons 58fc375d…), réencodé JPEG qualité 84.",
+   "verification_visuelle": "Image ouverte et vue le 14.10.2026 par le sous-agent Claude d’audit N17 : le contenu correspond à la légende."
+  },
+  {
+   "fichier": "n17_echographie_hydronephrose.jpg",
+   "page_source": "https://commons.wikimedia.org/wiki/File:Ultrasound_of_right_kidney_moderate_hydronephrosis.jpg",
+   "url_fichier": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Ultrasound_of_right_kidney_moderate_hydronephrosis.jpg",
+   "auteur": "Cerevisae (travail personnel)",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution": "Cerevisae (travail personnel), CC BY-SA 4.0, via Wikimedia Commons",
+   "consulte_le": "2026-10-14",
+   "sha256": "006de5ba782d2b515ebc72213a4905c86f6f4ed8db16614aa085719d03de6415",
+   "octets": 159773,
+   "legende": "Figure 10 — Échographie réelle du rein droit en coupe sagittale : hydronéphrose modérée avec calices dilatés anéchogènes.",
+   "alt": "Échographie du rein droit en coupe sagittale montrant des calices dilatés, anéchogènes, au centre du rein : hydronéphrose modérée",
+   "emplacement": "chapters/N17/N17_c.html#n17-e-4",
+   "traitement": "Vignette Wikimedia 960 px (original 3521×2538, limitation de débit 429 sur l’original), réencodée JPEG qualité 84 ; aucune autre modification.",
+   "verification_visuelle": "Image ouverte et vue le 14.10.2026 par le sous-agent Claude d’audit N17 : le contenu correspond à la légende."
+  },
+  {
+   "fichier": "n17_histologie_atteinte_tubulaire.jpg",
+   "page_source": "https://commons.wikimedia.org/wiki/File:Histopathological_features_of_acute_tubular_injury_and_tubulointerstitial_nephritis.webp",
+   "url_fichier": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Histopathological_features_of_acute_tubular_injury_and_tubulointerstitial_nephritis.webp",
+   "auteur": "Chávez-Iñiguez J.S., Medina-Gonzalez R., Aguilar-Parra L. et al. Oral acyclovir induced hypokalemia and acute tubular necrosis a case report. BMC Nephrol 2018;19:324. doi:10.1186/s12882-018-1121-0 (PMC6236899, figure 1)",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "attribution": "Chávez-Iñiguez J.S., Medina-Gonzalez R., Aguilar-Parra L. et al. Oral acyclovir induced hypokalemia and acute tubular necrosis a case report. BMC Nephrol 2018;19:324. doi:10.1186/s12882-018-1121-0 (PMC6236899, figure 1), CC BY 4.0, via Wikimedia Commons",
+   "consulte_le": "2026-10-14",
+   "sha256": "4ab1a826eba25c0955f2f93cd4213c86984a3fae80b585230e2373f98cb3e238",
+   "octets": 89146,
+   "legende": "Figure 5 bis — Biopsie rénale réelle d’une insuffisance rénale aiguë après aciclovir oral : glomérule normal, atteinte tubulaire aiguë, néphrite tubulo-interstitielle, nécrose tubulaire, immunofluorescence négative.",
+   "alt": "Planche de cinq microphotographies de biopsie rénale : glomérule sans prolifération, tubules avec perte de bordure en brosse et vacuolisation, infiltrat inflammatoire interstitiel, et immunofluorescence négative",
+   "emplacement": "chapters/N17/N17_c.html#n17-s-histo",
+   "traitement": "Vignette Wikimedia 500 px (original 685×769, limitation 429), convertie de WebP en JPEG qualité 84. Légende des panneaux vérifiée sur le texte intégral Europe PMC (figure 1).",
+   "verification_visuelle": "Image ouverte et vue le 14.10.2026 par le sous-agent Claude d’audit N17 : le contenu correspond à la légende."
+  }
+ ],
+ "reserves": [
+  "Validation médicale humaine non réalisée ; revue par intelligence artificielle uniquement.",
+  "Divergence calcium persistante et assumée : débit 30 mL/10 min (UKKA, ERC) contre limite HUG 0,45 mmol/min ; arbitrage local requis.",
+  "Lokelma : la FI suisse exclut l’usage comme médicament d’urgence d’une hyperkaliémie menaçante, alors qu’UKKA et l’ERC l’intègrent à la prise en charge aiguë ; le cours expose la tension sans trancher au-delà.",
+  "Salbutamol nébulisé 10–20 mg cité comme adjuvant selon UKKA et ERC ; aucune posologie suisse de nébulisation n’a été vérifiée dans une FI, donc aucune dose n’est enseignée comme prescription suisse.",
+  "Matrices de couverture et de contexte suisse (contrat CONTEXTE_SUISSE) non régénérées pour les nouvelles empreintes ; à refaire par le coordinateur si l’injection l’exige.",
+  "Contrôle navigateur réel (ordinateur et mobile, rendu des images, fenêtres nouvelles) non exécuté par ce sous-agent ; seul test_v7.py --static a été lancé.",
+  "Les sources ne chiffrent pas la fréquence relative de chaque cause d’IRA ; le tableau des différentiels est ordonné par gravité, avec cette limite explicitée.",
+  "Relecture linguistique : passages nouveaux et formules de fabrication corrigés ; le reste du texte (≈ 22 000 mots) n’a pas été intégralement réécrit.",
+  "Images histologique et échographique : vignettes officielles Wikimedia (960 px et 500 px) faute d’accès à l’original (HTTP 429)."
+ ],
+ "score_pass1": {
+  "exactitude_actualite": 3.5,
+  "completude": 2.0,
+  "pedagogie": 2.5,
+  "correlations_vertes": 2.0,
+  "sciences_schemas": 1.5,
+  "examens": 1.5,
+  "pharmacologie": 0.5,
+  "pareto": 1.0,
+  "langue": 0.5,
+  "interface": 1.0,
+  "total": 16.0
+ },
+ "score_pass2": {
+  "exactitude_actualite": 3.5,
+  "completude": 2.5,
+  "pedagogie": 3.0,
+  "correlations_vertes": 2.0,
+  "sciences_schemas": 2.0,
+  "examens": 2.0,
+  "pharmacologie": 1.0,
+  "pareto": 1.0,
+  "langue": 0.5,
+  "interface": 1.0,
+  "total": 18.5
+ },
+ "score_justification_pass2": {
+  "exactitude_actualite": "23 chiffres revérifiés sans erreur prescriptive ; une précision KDIGO corrigée ; −0,5 pour divergences calcium et Lokelma non résolues localement et absence de validation humaine.",
+  "completude": "SSP 63/161/164/173, différentiels, élimination du potassium, levée d’obstacle ajoutés ; −0,5 car la matrice de couverture suisse n’est pas régénérée et grossesse/enfant restent brefs.",
+  "pedagogie": "Raisonnement situation → hypothèse → discriminant → examen, quiz supplémentaire, commentaires physiopathologiques sous chaque image.",
+  "correlations_vertes": "Nouvelles notions reliées à des fenêtres ; test statique sans fenêtre manquante.",
+  "sciences_schemas": "Biopsie réelle commentée ajoutée ; schémas étiquetés didactiques.",
+  "examens": "Trois images réelles interprétées (électrocardiogramme, sédiment, échographie).",
+  "pharmacologie": "Étape d’élimination couverte par une FI suisse exacte.",
+  "pareto": "Paretos complétés.",
+  "langue": "Formules de fabrication supprimées ; −0,5 car la totalité du texte antérieur n’a pas été réécrite.",
+  "interface": "test_v7 --static OK ; contrôle navigateur non effectué."
+ },
+ "checks": {
+  "test_v7_static": "OK",
+  "test_v7_static_output": "N17 mots 25353 fenêtres 81 quiz 5 pareto 14 / OK",
+  "browser_check": "non exécuté par ce sous-agent"
+ },
+ "medical_human_validation": false
+}
