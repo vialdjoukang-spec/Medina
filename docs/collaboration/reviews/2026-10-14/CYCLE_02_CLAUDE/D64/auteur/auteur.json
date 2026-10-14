@@ -6,7 +6,7 @@
  "entry": {
   "actor": "C02-R-HEM",
   "verdict": "conforme",
-  "checked_at": "2026-10-14T20:43:36.535270+00:00",
+  "checked_at": "2026-10-14T22:23:13.980649+00:00",
   "prompt_files": {
    "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
    "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -22,12 +22,12 @@
      {
       "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
       "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-      "explanation": "Instruction de Vial du 14.10.2026 lue en entier : reprise du Cycle 2 par Claude, un auteur correcteur par leçon (C02-R-HEM pour D64) chargé de lever les réserves de la passe 1, sans injection ni commit à ce stade."
+      "explanation": "Instruction de Vial du 14.10.2026 : reprise du Cycle 2 par Claude, C02-R-HEM auteur correcteur de D64."
      },
      {
       "path": "docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/01_RESERVES_A_RESORBER.md",
       "sha256": "3a6856b24defe4b952f850071939d98584388eeea4c9c009b7fdf1713bbd7747",
-      "explanation": "Remise Codex lue (00 à 03) : 8 réserves D64 R01–R08 ouvertes ; le script cycle2_reprise_01_safety.py n'a rien enregistré et ses 3 retouches D64 restent à vérifier contre la FI avant usage."
+      "explanation": "Index des 8 réserves D64 de la remise Codex."
      }
     ]
    },
@@ -36,9 +36,9 @@
     "status": "conforme",
     "evidence": [
      {
-      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/chapters/D64/D64_a.html",
-      "sha256": "673f0bee06646584da3703e5950b7f94c23b33dda275302a00750a67a93489bd",
-      "explanation": "Relevé d'entrée avant toute modification : les 7 sources du dossier CYCLE_02_D64 ont les SHA-256 identiques à final_files de pass1.json (673f0bee…, 851210b0…, daebcf64…, ad08497f…, 4505e24c…, 143a5f80…, 49a07b19…) ; écriture limitée au dossier de livraison et au dossier auteur Claude."
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/pass1.json",
+      "sha256": "9c836bcca0756743da5eb8dd50003b082c30e4d577926b76d2c1a0f2084c1399",
+      "explanation": "Passe 1 Codex D64 : final_files d'entrée (673f0bee…, 851210b0…, daebcf64…, ad08497f…, 4505e24c…, 143a5f80…, 49a07b19…) constatés identiques au premier relevé du 14.10 à 20:43 UTC ; écriture limitée au dossier CYCLE_02_D64 et au dossier auteur."
      }
     ]
    },
@@ -49,12 +49,7 @@
      {
       "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/pass1.json",
       "sha256": "9c836bcca0756743da5eb8dd50003b082c30e4d577926b76d2c1a0f2084c1399",
-      "explanation": "Passe 1 C02-R-NEUR lue intégralement : 8 réserves bloquantes, 28 contrôles numériques, observations N01–N02 ; les archives locales citées (preuves/*.txt|html) sont absentes du dépôt, donc chaque source sera relue en ligne par l'auteur et non acceptée sur parole."
-     },
-     {
-      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/sources_catalogue.json",
-      "sha256": "2a0a4876b8b42c1c10ea114c2e2367e9435515a2841283b411b90f77b95d8bcf",
-      "explanation": "Catalogue Codex des 25 sources lu (URL, date, limites) ; utilisé comme index à revérifier, non comme preuve de lecture."
+      "explanation": "Les 8 réserves et 28 contrôles numériques de la passe 1 ont été lus ; les sources ont été relues en ligne par l'auteur, sans accepter les archives Codex absentes du dépôt."
      }
     ]
    },
@@ -65,7 +60,7 @@
      {
       "path": "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
       "sha256": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
-      "explanation": "Contrat suisse lu : FI Swissmedic du produit exact (Benadon 25635, Exjade dispersible 57466, Pegasys 55585, Zyvoxid), sources suisses (HUG, LUKS, CSCQ, SSH smarter medicine, MQZH) puis européennes motivées (EHA/BSH, consensus splénectomie), aucune recommandation américaine décisionnelle."
+      "explanation": "FI suisse du produit exact et sources suisses puis européennes motivées."
      }
     ]
    },
@@ -76,7 +71,7 @@
      {
       "path": "organisation/execution-20261014/CONTRAT_REVUES.md",
       "sha256": "37149122d0cdde390ee62032a4f0120571830668c505dab3eb9a77fe17957930",
-      "explanation": "Contrat des revues lu : C02-R-HEM est l'auteur correcteur de D64 ; l'auditeur croisé désigné est C02-R-NEUR et le contre-auditeur C02-CA-HEM ; l'auteur ne rédige ni passe 2 ni reçu d'audit pour sa propre leçon."
+      "explanation": "C02-R-HEM auteur de D64 ; audit croisé par C02-R-NEUR, contre-audit par un agent distinct."
      }
     ]
    },
@@ -87,7 +82,7 @@
      {
       "path": "organisation/execution-20261014/cahier-cycle2.json",
       "sha256": "06d0bbda24cbdc7423beb23b17bc5edd9049948dc99cd950d94cfb96b1020d9e",
-      "explanation": "Cahier D64 lu : 21 parties (A01–A12, E01–E03, S01–S04, P01–P02), 126 sous-parties, 6 emplacements d'images (IMG-D64-A09-1, E02-1, S01-1, S02-1, S03-1, S04-1) avec ancres, couverture D64.0–D64.4, D64.8, D64.9 ; CHAPTER_SPEC et STYLE_REDACTION relus."
+      "explanation": "Cahier D64 : 21 parties, 126 sous-parties, 6 emplacements d'images, sous-codes D64.0–D64.4, D64.8, D64.9."
      }
     ]
    },
@@ -98,7 +93,7 @@
      {
       "path": "PROMPT_TRANSITION.md",
       "sha256": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
-      "explanation": "Règles d'honnêteté relues : aucune affirmation de mémoire, aucune source déclarée lue sans lecture effective ce jour, revue IA distincte d'une validation médicale humaine (medical_human_validation false), aucun audit présenté comme réalisé."
+      "explanation": "Aucune affirmation de mémoire ; revue IA distincte d'une validation médicale humaine ; relevé régénéré le 14.10.2026, non antidaté."
      }
     ]
    }
@@ -107,7 +102,7 @@
  "exit": {
   "actor": "C02-R-HEM",
   "verdict": "conforme",
-  "checked_at": "2026-10-14T21:30:51.373925+00:00",
+  "checked_at": "2026-10-14T22:23:14.027517+00:00",
   "prompt_files": {
    "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
    "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -123,7 +118,7 @@
      {
       "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
       "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-      "explanation": "Corrections auteur après la passe 1 croisée de C02-R-NEUR (X1–X5, O1–O2), dans le seul dossier CYCLE_02_D64 et le dossier auteur ; ni commit ni push."
+      "explanation": "Corrections auteur limitées au mandat ; ni commit ni push."
      }
     ]
    },
@@ -132,9 +127,9 @@
     "status": "conforme",
     "evidence": [
      {
-      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/croise/pass1.json",
-      "sha256": "6f8cb7b738c470566c45c3657113bc9a4eb84cc30d60fea29ebc63e2cd3e7343",
-      "explanation": "Passe 1 croisée lue : 5 réserves X1–X5 et 2 observations ; chaque correction est localisée dans auteur.json et les nouvelles empreintes sont dans le registre."
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
+      "sha256": "88460b53c1f69c4b858b25fda119da632ba02cc7ba34d7f94079d3e3e6c0882e",
+      "explanation": "Registre : final_files égales aux empreintes actuelles des 7 sources."
      }
     ]
    },
@@ -145,7 +140,7 @@
      {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
       "sha256": "88460b53c1f69c4b858b25fda119da632ba02cc7ba34d7f94079d3e3e6c0882e",
-      "explanation": "Registre renouvelé (44 affirmations) : FI Benadon relue (Mises en garde ≥ 5 mg/j ET Interactions > plusieurs fois 2 mg), consensus Iolascon 2017 (aucune recommandation pour CDA I), Onkopedia mars 2026 (critères SF3B1), ChEBI 15430/15435 vérifiés via OLS."
+      "explanation": "44 affirmations rattachées à 25 sources relues le 14.10.2026, avec SHA-256 des textes téléchargés."
      }
     ]
    },
@@ -156,7 +151,7 @@
      {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/contexte_suisse_claude.json",
       "sha256": "9fed6bfa79ff9dc4c4ddb044f3d2def7246efe1e7898d0bbf1cf59e387c730be",
-      "explanation": "Matrice auteur mise à jour sur les empreintes finales ; produits exacts Benadon 25635, Exjade 57466, Pegasys 55585, Zyvoxid 55558."
+      "explanation": "Matrice auteur de 13 décisions sur les empreintes finales ; FI Benadon 25635, Exjade 57466, Pegasys 55585, Zyvoxid 55558."
      }
     ]
    },
@@ -165,9 +160,9 @@
     "status": "conforme",
     "evidence": [
      {
-      "path": "organisation/execution-20261014/CONTRAT_REVUES.md",
-      "sha256": "37149122d0cdde390ee62032a4f0120571830668c505dab3eb9a77fe17957930",
-      "explanation": "L'auteur corrige ; la passe 2 reste à C02-R-NEUR sur les nouvelles empreintes."
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/croise/pass1.json",
+      "sha256": "6f8cb7b738c470566c45c3657113bc9a4eb84cc30d60fea29ebc63e2cd3e7343",
+      "explanation": "Corrections X1–X5, O1–O2 demandées par l'auditeur croisé C02-R-NEUR ; la passe 2 lui revient."
      }
     ]
    },
@@ -178,7 +173,7 @@
      {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/couverture_claude.json",
       "sha256": "df4c72ad9aaaee7f58e270fbc36c5209f20e17a6e52a73665a434cbf654a1cc4",
-      "explanation": "test_v7.py --static D64 = OK (64 fenêtres, 22 quiz, 21 Pareto) ; « IX » n'est plus enveloppé par la clé Facteur IX (0 occurrence après wrap_html)."
+      "explanation": "21 parties, 126 sous-parties, 8 sous-codes, 6 images ; test_v7 --static D64 OK."
      }
     ]
    },
@@ -189,7 +184,7 @@
      {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/images_claude.json",
       "sha256": "9692717ff52eebc71f337c6799c4af867daf8de356635674aca01a953c4ca24c",
-      "explanation": "Images inchangées ; revue IA sans validation médicale humaine ; aucune réserve déclarée levée par l'auteur à la place de l'auditeur."
+      "explanation": "Images authentiques CC BY 4.0 inchangées ; revue IA sans validation médicale humaine."
      }
     ]
    }
@@ -408,5 +403,9 @@
     "chapters/D64/D64_c.html"
    ]
   }
- ]
+ ],
+ "entry_regenerated": {
+  "date": "2026-10-14T22:23:13.980649+00:00",
+  "raison": "Le premier relevé d'entrée (entree.json, 14.10.2026 20:43 UTC) citait comme preuve D64_a.html, que l'auteur a ensuite corrigé : son empreinte ne correspondait plus et la vérification « preuve d'application invalide » échouait. Le relevé a été refait le 14.10.2026 à la date réelle indiquée, en ne citant que des fichiers stables (instructions, passe 1 Codex, cahier, contrats) ; il n'est pas antidaté. Le relevé initial reste conservé tel quel pour l'historique, et les empreintes d'entrée des sources figurent dans entry_files."
+ }
 }
