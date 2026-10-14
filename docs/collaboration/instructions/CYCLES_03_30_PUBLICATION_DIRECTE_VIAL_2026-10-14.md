@@ -10,3 +10,9 @@ Chaque publication porte la mention « audit différé après le Cycle 30 ; revu
 registre des sources lues, manifeste des images, contrôles techniques (test_v7, navigateur bureau et mobile), **quatre captures par
 leçon**, empreintes. Aucun audit non réalisé n'est présenté comme fait. Un seul cycle actif à la fois ; les gardes ne sont pas
 désactivées : une exception bornée et testée (sur le modèle du Cycle 1) autorise ces publications.
+
+## Cycle 2 — contre-audits différés (Vial, 14 octobre 2026)
+
+« Si tout PASS il est temps d'injecter publier et continuer » : le Cycle 2 est publié après la clôture favorable de ses quatre
+audits croisés (deux passes, 20/20, réserves vides) et du contrôle du coordinateur ; ses quatre contre-audits rejoignent l'audit
+général différé après le Cycle 30. Aucun contre-audit n'est déclaré réalisé.
