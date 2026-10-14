@@ -1,0 +1,91 @@
+{
+ "actor": "C02-R-NEPH",
+ "verdict": "conforme",
+ "checked_at": "2026-10-14T21:02:03.158158+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+     "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+     "explanation": "Travail conduit comme auteur correcteur C02-R-NEPH sous l'instruction de Vial du 14.10.2026 ; ni commit, ni push, ni injection par l'auteur."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images_claude.json",
+     "sha256": "e24ee9309492827adb465d06ec6eb2d84f6a54aaf1bddff6cbcb93778fab7ab7",
+     "explanation": "Écritures limitées aux 7 sources N18, aux images n18_03 (montage normal/MRC Hansen fig. 1 et 22) et n18_05 (allégée), aux preuves suffixées _claude et au dossier auteur ; preuves Codex non réécrites."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
+     "sha256": "4d6a69e500878863ae3d470656bfa54022dd23438f8bd699aa812325124492fb",
+     "explanation": "45 décisions appariées au passage pertinent, téléchargé et relu le 14.10.2026 : SSN 2025, KDIGO 2024 et 2026, SSED/SSN 2024, HUG 2017, Hansen 2016, Schulz 2022, DEKS 2025 et 11 FI suisses (empreintes de téléchargement incluses)."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
+     "sha256": "4d6a69e500878863ae3d470656bfa54022dd23438f8bd699aa812325124492fb",
+     "explanation": "Sources suisses d'abord (SSN 2025, consensus SSED/SSN, HUG, FI Swissmedic du produit exact) ; divergence suisse sur le bicarbonate (18 contre 22 mmol/L) exposée et résolue en fenêtre ; aucune directive américaine décisionnelle."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/N18/pass1.json",
+     "sha256": "6292d0a4f6e489537ea9e78f434a091d6666c16abf9e99d04e35ac3e84ac5c89",
+     "explanation": "Corrections répondant au pass1 de C02-R-ENDO sans le modifier ; la passe 2 reste à l'auditeur croisé distinct."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/chapters/N18/N18_b.html",
+     "sha256": "99ba6854d036cd2723261400390fde8fbd0fd055629f1644d9b2a3c802dfe062",
+     "explanation": "test_v7 --static N18 : OK (44 581 mots, 108 fenêtres, 4 quiz, 21 Pareto) ; dernier îlot alert (critères KDIGO complets) puis key (paramètres chiffrés) ; aperçu isolé vérifié au navigateur 1440 et 390 px sans erreur JavaScript ni débordement."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images_claude.json",
+     "sha256": "e24ee9309492827adb465d06ec6eb2d84f6a54aaf1bddff6cbcb93778fab7ab7",
+     "explanation": "Aucune validation médicale humaine ; image A06 australienne conservée faute d'alternative ouverte trouvée, limite déclarée ; les 858 entrées Codex ne sont pas déclarées conformes individuellement."
+    }
+   ]
+  }
+ ]
+}
