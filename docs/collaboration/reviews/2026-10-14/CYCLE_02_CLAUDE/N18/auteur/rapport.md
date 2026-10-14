@@ -69,3 +69,12 @@ Ce rapport date du 14 octobre 2026. Il couvre la reprise, par Claude et sur inst
 
 - `docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/auteur/{entree.json, sortie.json, auteur.json, rapport.md}`
 - `livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/{source_ledger_claude.json, images_claude.json}`
+
+## Passe 2 — réponse au pass1 croisé de C02-R-ENDO (14.10.2026)
+
+- **X01 (fenêtres recopiées)** : les 42 fenêtres prescrites sont réécrites avec un approfondissement propre (tableaux de preuves, mécanismes, calculs nouveaux, limites) ; 0 % de phrases reprises du corps. Nouvelles fenêtres **n18-creatinine** et **n18-cystatine** ; 64 mots verts repointés.
+- **X02 (consensus SSED/SSN 2024)** : potassium sous bloqueur (> 5,5 réduire, > 6 arrêter, chélateur), cibles tensionnelles (> 130/80, > 140/90 chez l’âgé fragile, MAPA, paliers de 8 semaines), hypolipémiants et objectifs LDL (< 1,8 et −50 %, < 1,4), fer et érythropoïétine, bandelette puis sédiment ; tableaux commentés et comparés à SSN 2025 et KDIGO ; matrice `preuves/couverture_suisse_claude.json`.
+- **X03 (borne A2/A3)** : fenêtre de contentieux **n18-a3-borne**, piège Pareto A03 reformulé, tableaux A03-3, E02-4 et n18-acr harmonisés.
+- Observations : KDIGO PP 2.2.2 ajouté ; infinitifs « Exercice : … » reformulés ; coquilles corrigées.
+- Contrôles : `test_v7.py --static N18` OK (45 295 mots, 111 fenêtres, 4 quiz, 21 Pareto) ; aperçu Playwright 1440/390 px sans erreur ni débordement.
+- Réserves ouvertes : image A06 australienne ; registre Codex non revu entrée par entrée (276 identifiants d’anciennes fenêtres retirés) ; aucune validation médicale humaine.
