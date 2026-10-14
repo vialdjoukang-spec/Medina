@@ -5,6 +5,7 @@
   python3 tools/cycle_claude_stage.py start 3 --runtime ID --direct   # cycles 3 à 30, publication directe
   python3 tools/cycle_claude_stage.py stage G45 EN_AUDIT_CROISE --runtime ID [--source-dir DOSSIER]
         [--images CHEMIN] [--proof author=CHEMIN ...]
+  python3 tools/cycle_claude_stage.py mode 2 publication_directe --runtime ID   # Cycle 2, changement unique
   python3 tools/cycle_claude_stage.py cross-phase 2 CHEMIN          # clôture initiale des audits croisés
   python3 tools/cycle_claude_stage.py close 2 CHEMIN --runtime ID    # reçu de clôture sans réserve
 
@@ -136,6 +137,20 @@ def stage(a):
                 'status': row['status'], 'proofs': {k: row[k] for k in G.PROOFS}, 'runtime_agent_id': a.runtime})
 
 
+def mode(a):
+    data = load()
+    cycle = active(data)
+    if (cycle['cycle'] != a.cycle or a.mode != G.DIRECT_MODE or a.cycle not in G.SWITCH_CYCLES or cycle.get('mode')
+            or any(r['status'] != 'EN_PRODUCTION' or any(r[k] for k in G.PROOFS) for r in cycle['chapters'])):
+        sys.exit('Changement de mode refusé (Cycle 2 actif, mode complet, aucune leçon engagée)')
+    digest = sha(G.DIRECT_AUTHORITY)
+    cycle.update(mode=G.DIRECT_MODE, authority=G.DIRECT_AUTHORITY, authority_sha256=digest)
+    for row in cycle['chapters']:
+        row['cross_reviewer'] = row['counter_reviewer'] = None
+    save(data, {'at': now(), 'event': 'mode_changed', 'cycle': a.cycle, 'mode': G.DIRECT_MODE,
+                'authority': G.DIRECT_AUTHORITY, 'authority_sha256': digest, 'coordinator_runtime': a.runtime})
+
+
 def cross_phase(a):
     data = load()
     cycle = active(data)
@@ -166,6 +181,8 @@ def main():
     s = sub.add_parser('stage'); s.add_argument('code'); s.add_argument('status'); s.add_argument('--runtime', required=True)
     s.add_argument('--source-dir'); s.add_argument('--images'); s.add_argument('--proof', action='append')
     s.set_defaults(run=stage)
+    s = sub.add_parser('mode'); s.add_argument('cycle', type=int); s.add_argument('mode', choices=[G.DIRECT_MODE])
+    s.add_argument('--runtime', required=True); s.set_defaults(run=mode)
     s = sub.add_parser('cross-phase'); s.add_argument('cycle', type=int); s.add_argument('path'); s.set_defaults(run=cross_phase)
     s = sub.add_parser('close'); s.add_argument('cycle', type=int); s.add_argument('path'); s.add_argument('--runtime', required=True)
     s.set_defaults(run=close)

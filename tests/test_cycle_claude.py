@@ -360,10 +360,13 @@ _IMAGE_PROOF = N.image_proof
 
 def _image_proof(tree, row):
     # Le Cycle 2 clos de la fixture n'a pas d'images : seules ses preuves de publication sont simulées.
-    return {} if row['production_cycle'] == 2 else _IMAGE_PROOF(tree, row)
+    return {} if row.get('images') is None else _IMAGE_PROOF(tree, row)
 
 
 class DirectFixture:
+    prompts = G.PROMPTS_DIRECT
+    boundary = NOW
+
     def setUp(self):
         root = Path(__file__).resolve().parents[1]
         paths = {G.AUTHORITY, G.PLAN, G.CAHIER, G.DIRECT_AUTHORITY, *G.PROMPTS, *G.PROMPTS_DIRECT}
@@ -418,39 +421,50 @@ class DirectFixture:
 
     def gate(self, actor, at):
         return dict(actor=actor, verdict='conforme', checked_at=at,
-                    prompt_files={p: C.digest(self.files[p]) for p in G.PROMPTS_DIRECT},
+                    prompt_files={p: C.digest(self.files[p]) for p in self.prompts},
                     checks=[dict(id=c, status='conforme', evidence=[dict(path='preuves/evidence.txt', explanation='Fixture',
                                                                           sha256=C.digest(self.files['preuves/evidence.txt']))])
                             for c in CHECKS])
 
     def produce(self, i, captures=4, prompts=None, technical_extra=None, ledger_extra=None):
         """Leçon i prête : sources livrées, registre des sources, images, auteur, contrôle et captures simulés."""
-        row = self.rows[i]; code = row['code']; lc = code.lower()
-        src = f'livraisons/Livraison Claude/C-03/CYCLE_03_{code}'
-        image = f'assets/img/cycle3/{lc}/figure.png'
+        row = self.rows[i]; code = row['code']; lc = code.lower(); n = row['production_cycle']
+        src = f'livraisons/Livraison Claude/C-{n:02d}/CYCLE_{n:02d}_{code}'
+        if n == 2:
+            lesson = next(x for x in json.loads(self.files[G.CAHIER])['lessons'] if x['code'] == code)
+            slots = [(im['id'], im['anchor']) for part in lesson['parts'] for im in part['images']]
+        else:
+            slots = [('fig1', f'{lc}-figure')]
+        figures, manifest_rows, images = [], [], {}
+        for k, (ident, anchor) in enumerate(slots):
+            image = f'assets/img/cycle{n}/{lc}/figure-{k}.png'
+            self.files[src + '/' + image] = PNG + bytes([i, k]) * 300
+            images[image] = C.digest(self.files[src + '/' + image])
+            figures.append(f'<div id="{anchor}"><img src="../../{image}" alt="Figure {code} {k}"></div>')
+            manifest_rows.append(dict(
+                id=ident, anchor=anchor, source_page_url='https://commons.wikimedia.org/x', file_url='https://upload.wikimedia.org/x.png',
+                author='Fixture', license='CC BY 4.0', attribution='Fixture', caption='Fixture', alt=f'Figure {code} {k}',
+                location='a', path=image, sha256=images[image], accessed_at=T('21:45'), generated=False,
+                open_license_verified=True, visual_reviewed=True))
         sources = {f'chapters/{code}/{code}_{s}.html': f'<p id="{lc}-{s}">Fixture</p>'.encode() for s in ('b', 'c', 'd', 'pop1', 'pop2')}
-        sources[f'chapters/{code}/{code}_a.html'] = f'<img src="../../{image}" alt="Figure {code}">'.encode()
+        sources[f'chapters/{code}/{code}_a.html'] = ''.join(figures).encode()
         sources[f'glossary/{lc}.py'] = b'# Fixture\n'
         for p, raw in sources.items():
             self.files[src + '/' + p] = raw
-        self.files[src + '/' + image] = PNG + bytes([i]) * 300
         files = {p: C.digest(raw) for p, raw in sources.items()}
-        images = {image: C.digest(self.files[src + '/' + image])}
-        manifest = self.write(f'preuves/{lc}-images.json', {'images': [dict(
-            id='fig1', source_page_url='https://commons.wikimedia.org/x', file_url='https://upload.wikimedia.org/x.png',
-            author='Fixture', license='CC BY 4.0', attribution='Fixture', caption='Fixture', alt=f'Figure {code}',
-            location='a', path=image, sha256=images[image], accessed_at=T('21:45'), generated=False,
-            open_license_verified=True, visual_reviewed=True)]})
+        manifest = self.write(f'preuves/{lc}-images.json', {'images': manifest_rows})
         ledger = self.write(f'preuves/{lc}-sources.json', dict(code=code, final_files=files, unverified_claims=[],
                             covered_files=list(files), claims=[dict(
                                 claim='Fixture', location='a', source_url='https://www.swissmedicinfo.ch/', source_title='Fixture',
                                 version_date='2026-01-01', section='1', source_passage_summary='Fixture', population='Adultes',
                                 limits='Fixture', accessed_on='2026-10-14', download_sha256='b' * 64)]) | (ledger_extra or {}))
         common = dict(code=code, medical_human_validation=False, final_files=files, blocking_reserves=[], image_files=images)
-        prompts = prompts or G.PROMPTS_DIRECT
+        prompts = prompts or self.prompts
         author_gate = lambda at: dict(self.gate(row['writer'], at), prompt_files={p: C.digest(self.files[p]) for p in prompts})
-        author = self.write(f'preuves/{lc}-auteur.json', dict(common, actor=row['writer'], runtime_agent_id=f'auteur-{lc}',
+        author = self.write(f'preuves/{lc}-auteur.json', dict(common, actor=row['writer'], runtime_agent_id='agent-' + row['writer'],
                             entry=author_gate(T('21:50')), exit=author_gate(T('22:00')), source_ledger=ledger))
+        if row['cross_reviewer']:
+            row['cross_audit'] = self.cross_review(row, common, files)
         shots = []
         for k, kind in enumerate(('ouverture', 'fenetre', 'figure', 'mobile')[:captures]):
             p = f'preuves/{lc}-capture-{k}.png'
@@ -462,7 +476,20 @@ class DirectFixture:
                              entry=self.gate(G.COORDINATOR, T('22:05')), exit=self.gate(G.COORDINATOR, T('22:10')),
                              technical_checks=technical, swiss_context={'verdict': 'conforme'}))
         row.update(source_dir=src, files=files, images=manifest, author=author, control=control, status='PRET_A_INJECTER')
-        self.events.append(self.event(3, row))
+        self.events.append(self.event(n, row))
+
+    def cross_review(self, row, common, files):
+        actor, lc = row['cross_reviewer'], row['code'].lower()
+        passes = []
+        for number, (start, end) in enumerate(((T('22:01'), T('22:02')), (T('22:03'), T('22:04'))), 1):
+            report = dict(actor=actor, code=row['code'], **{'pass': number}, started_at=start, finished_at=end,
+                          dimensions={d: 'Fixture' for d in C.DIMENSIONS},
+                          numerical_checks=[dict(claim=f'Donnée {k}', source='Fixture', section='1', passage='Fixture', finding='Conforme')
+                                            for k in range(10)],
+                          verdict='favorable', blocking_reserves=[], final_files=files, score=20)
+            passes.append(dict(number=number, report=self.write(f'preuves/{lc}-croise-{number}.json', report)))
+        return self.write(f'preuves/{lc}-croise.json', dict(common, actor=actor, runtime_agent_id='agent-' + actor,
+                          entry=self.gate(actor, T('22:01')), exit=self.gate(actor, T('22:05')), passes=passes))
 
     def inject(self, i, catalog_extra=None):
         row = self.rows[i]
@@ -472,23 +499,23 @@ class DirectFixture:
             self.files[p] = self.files[row['source_dir'] + '/' + p]
         row['injection'] = self.write(f"preuves/{row['code'].lower()}-injection.json",
                                       dict(code=row['code'], files=locked, injector=G.COORDINATOR, checked_at=T('22:20')))
-        entry = dict(code=row['code'], covers=[row['code']], integrated=True, production_cycle=3,
+        entry = dict(code=row['code'], covers=[row['code']], integrated=True, production_cycle=row['production_cycle'],
                      provisional_injection=True, audit_deferred=G.DIRECT_DEFERRED)
         entry.update(catalog_extra or {})
         self.files['chapters.json'] = encode(json.loads(self.files['chapters.json']) + [entry])
-        self.events.append(self.event(3, row))
+        self.events.append(self.event(row['production_cycle'], row))
 
     def publish(self, i):
         row = self.rows[i]; row['status'] = 'PUBLIE_VERIFIE'
         row['publication'] = self.write(f"preuves/{row['code'].lower()}-publication.json", dict(
             code=row['code'], checked_at=T('22:25'), deployment_status='success', readback=True, gauges=True,
             main_sha='c' * 40, public_url='https://vialdjoukang-spec.github.io/Medina/fragments/x.html'))
-        self.events.append(self.event(3, row))
+        self.events.append(self.event(row['production_cycle'], row))
 
     def guard(self, now=NOW):
         self.save()
         with patch.object(G, 'ready', side_effect=lambda tree, row, rows, **kw: row['files']), \
-                patch.object(G, 'cross_boundary', return_value=NOW), \
+                patch.object(G, 'cross_boundary', return_value=self.boundary), \
                 patch.object(N, 'image_proof', side_effect=_image_proof), \
                 patch('tools.espace.swiss_context_proof') as swiss:
             result = G.validate(self.before, Tree(self.files), now=now)
@@ -517,7 +544,7 @@ class DirectPublicationTests(DirectFixture, unittest.TestCase):
         self.ready_cycle(); self.inject(0)
         authorized, codes, catalog = self.guard()
         row = self.rows[0]
-        self.assertEqual(set(authorized), set(row['files']) | {'assets/img/cycle3/i61/figure.png', 'chapters.json'})
+        self.assertEqual(set(authorized), set(row['files']) | {'assets/img/cycle3/i61/figure-0.png', 'chapters.json'})
         self.assertEqual(catalog, {'I61'})
         self.assertIn('I61', codes)
 
@@ -573,7 +600,7 @@ class DirectPublicationTests(DirectFixture, unittest.TestCase):
             elif action == 'counter': row['counter_audit'] = row['control']
             elif action == 'state': row['status'] = 'EN_CONTRE_AUDIT'
             else: row['cross_reviewer'] = 'C03-R-HEM'
-            self.events.append(self.event(3, row))
+            self.events.append(self.event(row['production_cycle'], row))
             with self.subTest(action=action), self.assertRaisesRegex(C.CycleError, 'fictif|indépendance'):
                 self.guard()
             self.files, self.state, self.events = files, state, events
@@ -617,10 +644,10 @@ class DirectPublicationTests(DirectFixture, unittest.TestCase):
         with self.assertRaisesRegex(C.CycleError, 'non clôturé'):
             self.guard()
 
-    def test_cycle2_keeps_full_chain(self):
+    def test_cycle2_mode_cannot_be_rewritten_after_closure(self):
         cycle2 = self.state['cycles'][0]
         cycle2.update(mode=G.DIRECT_MODE, authority=G.DIRECT_AUTHORITY, authority_sha256=self.cycle3['authority_sha256'])
-        with self.assertRaisesRegex(C.CycleError, 'cycles 3 à 30'):
+        with self.assertRaisesRegex(C.CycleError, 'indépendance|mode'):
             self.guard()
         self.assertFalse(G.direct({'cycle': 2}))
 
@@ -632,3 +659,136 @@ class DirectChainCycle2Tests(ClaudeFixture, unittest.TestCase):
         with patch.object(G, 'temporal_proofs'), patch.object(N, 'journal_proof'), \
                 self.assertRaisesRegex(C.CycleError, 'quatre auteurs|audits croisés'):
             self.guard()
+
+
+class Cycle2DirectFixture(DirectFixture):
+    """Cycle 2 repris, passé une seule fois en publication directe (clôture immédiate demandée par Vial)."""
+
+    def setUp(self):
+        root = Path(__file__).resolve().parents[1]
+        self.files = {p: (root / p).read_bytes() for p in {G.AUTHORITY, G.PLAN, G.CAHIER, *G.PROMPTS, *G.PROMPTS_DIRECT}}
+        self.files[N.REGISTRY] = encode({'cycles': [{'cycle': 2, 'owner': 'Codex', 'state': 'ACTIF'}]})
+        self.files['transmission/manifeste.json'] = encode({'cycle': 2, 'fixture': 'technique'})
+        self.files['chapters.json'] = b'[]\n'
+        self.files['preuves/evidence.txt'] = b'Fixture technique non clinique'
+        self.events = [dict(event='cycle_started', cycle=2, at=START, coordinator_runtime='fixture')]
+        self.cycle3 = dict(cycle=2, owner='Claude', state='ACTIF', started_at=START, transferred_from='Codex',
+                           handover=self.ref('transmission/manifeste.json'), cross_phase=None, closed_at=None,
+                           closure=None, budget=None, chapters=rows_for(Tree(self.files), 2))
+        self.state = dict(schema_version=1, authority=G.AUTHORITY, authority_sha256=C.digest(self.files[G.AUTHORITY]),
+                          plan_sha256=C.digest(self.files[G.PLAN]), coordinator=G.COORDINATOR, not_before=G.NOT_BEFORE,
+                          cycles=[self.cycle3])
+        self.snapshot()
+        self.complete = self.before
+        self.switch()
+        self.snapshot()
+
+    def switch(self, event=True):
+        sha = C.digest(self.files[G.DIRECT_AUTHORITY])
+        self.cycle3.update(mode=G.DIRECT_MODE, authority=G.DIRECT_AUTHORITY, authority_sha256=sha)
+        for row in self.rows:
+            row['cross_reviewer'] = row['counter_reviewer'] = None
+        if event:
+            self.events.append(dict(event='mode_changed', cycle=2, mode=G.DIRECT_MODE, authority=G.DIRECT_AUTHORITY,
+                                    authority_sha256=sha, coordinator_runtime='fixture', at=T('21:30')))
+
+
+class Cycle2DirectTests(Cycle2DirectFixture, unittest.TestCase):
+    def test_mode_change_accepted_once_with_journal(self):
+        self.before = self.complete
+        self.assertEqual(self.guard()[0], {})
+
+    def test_mode_change_without_journal_rejected(self):
+        self.before = self.complete
+        self.events = [e for e in self.events if e['event'] != 'mode_changed']
+        with self.assertRaisesRegex(C.CycleError, 'journal'):
+            self.guard()
+
+    def test_mode_change_with_other_transition_rejected(self):
+        self.before = self.complete
+        self.produce(0)
+        with self.assertRaisesRegex(C.CycleError, 'simultané'):
+            self.guard()
+
+    def test_mode_change_after_reviews_started_rejected(self):
+        state = json.loads(self.complete.files[G.REGISTRY])
+        state['cycles'][0]['chapters'][0].update(status='EN_AUDIT_CROISE', author={'path': 'preuves/evidence.txt', 'sha256': 'x'})
+        files = dict(self.complete.files); files[G.REGISTRY] = encode(state)
+        self.before = Tree(files)
+        with self.assertRaisesRegex(C.CycleError, 'début des revues'):
+            self.guard()
+
+    def test_mode_cannot_be_reverted_or_keep_reviewers(self):
+        for action in ('revert', 'cross', 'counter'):
+            self.setUp()
+            if action == 'revert':
+                for k in ('mode', 'authority', 'authority_sha256'):
+                    self.cycle3.pop(k)
+            else:
+                self.rows[0][action + '_reviewer'] = 'C02-R-HEM'
+            with self.subTest(action=action), self.assertRaises(C.CycleError):
+                self.guard()
+
+    def test_activation_with_mode_rejected(self):
+        old = copy.deepcopy(self.files); old.pop(G.REGISTRY); old.pop(G.JOURNAL)
+        self.save()
+        with self.assertRaisesRegex(C.CycleError, 'activation'):
+            G.validate(Tree(old), Tree(self.files), now=NOW)
+
+    def test_direct_injection_with_cahier_images_accepted(self):
+        self.ready_cycle(); self.inject(0)
+        authorized, codes, catalog = self.guard()
+        self.assertEqual(catalog, {'G45'})
+        self.assertEqual(sum(p.startswith('assets/img/cycle2/g45/') for p in authorized), 9)
+        entry = json.loads(self.files['chapters.json'])[0]
+        self.assertEqual((entry['audit_deferred'], entry['production_cycle']), (G.DIRECT_DEFERRED, 2))
+
+    def test_missing_cahier_image_rejected(self):
+        self.produce(0)
+        manifest = json.loads(self.files['preuves/g45-images.json']); manifest['images'].pop()
+        self.rows[0]['images'] = self.write('preuves/g45-images.json', manifest)
+        self.events.append(self.event(2, self.rows[0]))
+        with self.assertRaisesRegex(C.CycleError, 'cahier'):
+            self.guard()
+
+    def test_fictitious_cross_or_counter_audit_rejected(self):
+        for key, status in (('cross_audit', None), ('counter_audit', None), (None, 'EN_AUDIT_CROISE')):
+            self.setUp(); self.produce(0)
+            row = self.rows[0]
+            if key: row[key] = row['author']
+            else: row['status'] = status
+            self.events.append(self.event(2, row))
+            with self.subTest(key=key, status=status), self.assertRaisesRegex(C.CycleError, 'fictif'):
+                self.guard()
+
+    def test_three_captures_rejected(self):
+        self.produce(0, captures=3)
+        with self.assertRaisesRegex(C.CycleError, '4 captures'):
+            self.guard()
+
+    def test_catalogue_without_deferred_audit_rejected(self):
+        self.ready_cycle(); self.inject(0, catalog_extra={'audit_deferred': None})
+        with self.assertRaisesRegex(C.CycleError, 'audit différé'):
+            self.guard()
+
+    def test_only_cycle2_can_switch(self):
+        self.assertEqual(G.SWITCH_CYCLES, (2,))
+        self.assertNotIn(2, G.DIRECT_CYCLES)
+
+
+class GateAndControlToolTests(unittest.TestCase):
+    def test_gate_prompt_sets_match_guard(self):
+        from tools import claude_cycle_gate as gate
+        self.assertEqual(gate.PROMPT_SETS['direct'], G.PROMPTS_DIRECT)
+        self.assertEqual(gate.PROMPT_SETS['reprise'], G.PROMPTS)
+        entries = [(c, 'PROMPT_MEDINA.md', 'Fixture') for c in gate.CHECKS]
+        made = gate.make_gate(G.COORDINATOR, entries, 'direct')
+        self.assertEqual(set(made['prompt_files']), set(G.PROMPTS_DIRECT))
+        with self.assertRaises(ValueError):
+            gate.make_gate(G.COORDINATOR, entries[:-1], 'direct')
+
+    def test_control_tool_requires_four_capture_kinds(self):
+        from tools import cycle_claude_control as tool
+        self.assertEqual(len(tool.CAPTURE_KINDS), G.CAPTURES)
+        self.assertEqual(tool.VIEWPORTS['desktop']['width'], 1440)
+        self.assertEqual(tool.VIEWPORTS['mobile']['width'], 390)

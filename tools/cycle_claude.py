@@ -14,6 +14,11 @@ décrit audits croisés et contre-audits) est remplacée par l'autorité de publ
 qu'aucune revue n'atteste un Prompt contradictoire. États : EN_PRODUCTION, EN_CONTROLE,
 PRET_A_INJECTER, INJECTE, PUBLIE_VERIFIE ; cross_audit et counter_audit restent null (aucun audit
 fictif) ; le catalogue porte provisional_injection, audit_deferred="apres_cycle_30" et production_cycle.
+
+Cycle 2 (section « Clôture immédiate du Cycle 2 et suite sans lecture croisée » de la même autorité) :
+passage unique du Cycle 2 actif en publication directe, tracé au journal (événement mode_changed), tant
+qu'aucune leçon n'a quitté EN_PRODUCTION ni reçu de preuve. Mêmes exigences que les cycles 3 à 30, images
+selon le cahier du Cycle 2 ; les revues croisées partielles restent un historique non référencé.
 """
 from datetime import datetime, timezone
 
@@ -38,6 +43,7 @@ DIRECT_MODE = 'publication_directe'
 DIRECT_AUTHORITY = 'docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md'
 DIRECT_CYCLES = range(3, 31)
 DIRECT_DEFERRED = 'apres_cycle_30'
+SWITCH_CYCLES = (2,)
 PROMPTS_DIRECT = tuple(DIRECT_AUTHORITY if p == AUTHORITY else p for p in PROMPTS)
 DIRECT_FORBIDDEN = ('EN_AUDIT_CROISE', 'EN_CONTRE_AUDIT')
 SOURCE_ROOTS = ('livraisons/Livraison Codex/', 'livraisons/Livraison Claude/')
@@ -96,12 +102,16 @@ def records(tree):
             C.require(cycle.get('authority') is None and cycle.get('authority_sha256') is None,
                       'Cycles Claude : autorité propre sans mode déclaré')
         else:
-            C.require(direct(cycle) and n in DIRECT_CYCLES and cycle.get('transferred_from') is None,
-                      'Cycles Claude : publication directe réservée aux cycles 3 à 30')
             C.require(cycle.get('authority') == DIRECT_AUTHORITY and
                       cycle.get('authority_sha256') == C.digest(tree.read(DIRECT_AUTHORITY)),
                       'Cycles Claude : autorité de publication directe absente ou différente')
-            C.require(index > 0, 'Cycles Claude : publication directe après un cycle Claude clôturé seulement')
+            C.require(direct(cycle), 'Cycles Claude : mode inconnu')
+            if n in SWITCH_CYCLES:
+                C.require(index == 0, 'Cycles Claude : Cycle 2 en publication directe par changement de mode seulement')
+            else:
+                C.require(n in DIRECT_CYCLES and cycle.get('transferred_from') is None,
+                          'Cycles Claude : publication directe réservée aux cycles 2 à 30')
+                C.require(index > 0, 'Cycles Claude : publication directe après un cycle Claude clôturé seulement')
             C.require(cycle.get('cross_phase') is None, 'Cycles Claude : phase croisée fictive en publication directe')
         rows = cycle.get('chapters')
         C.require(isinstance(rows, list) and len(rows) == 4, 'Cycles Claude : exactement quatre leçons requises')
@@ -171,6 +181,25 @@ def direct_ready(tree, row):
     return dict(files, **images)
 
 
+def mode_change(after, previous_cycle, cycle, now):
+    """Unique passage du Cycle 2 actif en publication directe, tracé au journal, sans autre changement."""
+    C.require(previous_cycle.get('mode') is None and direct(cycle) and cycle['cycle'] in SWITCH_CYCLES and
+              previous_cycle['state'] == 'ACTIF' and cycle['state'] == 'ACTIF', 'Cycles Claude : changement de mode non autorisé')
+    for previous, row in zip(previous_cycle['chapters'], cycle['chapters']):
+        C.require(previous['status'] == 'EN_PRODUCTION' and all(previous[k] is None for k in PROOFS),
+                  'Cycles Claude : changement de mode après le début des revues')
+        C.require(dict(row, cross_reviewer=previous['cross_reviewer'], counter_reviewer=previous['counter_reviewer']) == previous,
+                  'Cycles Claude : changement de mode simultané à une autre transition')
+    C.require({k: v for k, v in cycle.items() if k not in {'mode', 'authority', 'authority_sha256', 'chapters'}} ==
+              {k: v for k, v in previous_cycle.items() if k not in {'mode', 'authority', 'authority_sha256', 'chapters'}},
+              'Cycles Claude : changement de mode simultané à une autre transition')
+    events = [C.json.loads(line) for line in after.read(JOURNAL).splitlines() if line.strip()]
+    C.require(any(e.get('event') == 'mode_changed' and e.get('cycle') == cycle['cycle'] and e.get('mode') == DIRECT_MODE and
+                  e.get('authority_sha256') == cycle['authority_sha256'] and e.get('coordinator_runtime') and
+                  C.dated(cycle['started_at']) <= C.dated(e.get('at')) <= now for e in events),
+              'Cycles Claude : changement de mode absent du journal')
+
+
 def temporal_proofs(tree, cycle, now):
     start = C.dated(cycle['started_at'])
     floor = max(start, C.dated(NOT_BEFORE))
@@ -229,6 +258,7 @@ def validate(before, after, now=None):
         C.require(not course_changes and 'chapters.json' not in changed, 'Cycles Claude : activation sans injection requise')
         cycle = new['cycles'][0]
         C.require(len(new['cycles']) == 1 and cycle['state'] == 'ACTIF' and cycle.get('cross_phase') is None and
+                  cycle.get('mode') is None and
                   all(r['status'] == 'EN_PRODUCTION' and all(r[k] is None for k in PROOFS) for r in cycle['chapters']),
                   'Cycles Claude : activation sans revue préétablie requise')
         return {}, codes, set()
@@ -250,8 +280,12 @@ def validate(before, after, now=None):
             C.require(not course_changes, 'Cycles Claude : nouveau cycle avec injection simultanée')
             continue
         previous_cycle = old['cycles'][index]
-        for field in ('cycle', 'owner', 'started_at', 'budget', 'transferred_from', 'handover', 'mode', 'authority', 'authority_sha256'):
+        for field in ('cycle', 'owner', 'started_at', 'budget', 'transferred_from', 'handover'):
             C.require(cycle.get(field) == previous_cycle.get(field), 'Cycles Claude : identité ou départ du cycle modifié')
+        if any(cycle.get(f) != previous_cycle.get(f) for f in ('mode', 'authority', 'authority_sha256')):
+            mode_change(after, previous_cycle, cycle, now)
+            C.require(not course_changes, 'Cycles Claude : changement de mode avec injection simultanée')
+            continue
         if previous_cycle['state'] == 'CLOTURE':
             C.require(cycle == previous_cycle, 'Cycles Claude : cycle clos immuable')
         rows = cycle['chapters']

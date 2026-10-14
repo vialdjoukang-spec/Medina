@@ -142,7 +142,7 @@ try:
         cycle_one_courses=[c['code'] for c in chap if c.get('production_cycle')==1]
         cycle_courses=[c['code'] for c in chap if type(c.get('production_cycle')) is int and 1 <= c['production_cycle'] <= 30]
         provisional_courses=[c['code'] for c in chap if c.get('provisional_injection')]
-        # Cycles 3 à 30 publiés directement (tools/cycle_claude.py, mode publication_directe).
+        # Cycles 2 à 30 publiés directement (tools/cycle_claude.py, mode publication_directe).
         direct_courses=[c['code'] for c in chap if c.get('provisional_injection') and c.get('audit_deferred')=='apres_cycle_30']
         if provisional_courses:
             notice='''<script>(()=>{const codes=new Set(__CODES__),cycleOne=new Set(__CYCLE1__),direct=new Set(__DIRECT__);function mark(){document.querySelectorAll('.mc[data-code]').forEach(el=>{if(!codes.has(el.dataset.code)||el.dataset.provisionalNotice)return;const status=el.querySelector('.mc-status');if(status){el.dataset.provisionalNotice='1';status.append(document.createTextNode(cycleOne.has(el.dataset.code)?' · Publication autorisée ; audit et corrections Claude du 14.10.2026, contre-audit indépendant non réalisé.':direct.has(el.dataset.code)?' · Publication directe : audit différé après le Cycle 30.':' · Publication provisoire : contre-audit restant.'));}});}new MutationObserver(mark).observe(document.body,{childList:true,subtree:true});mark();})();</script>'''.replace('__CODES__',json.dumps(provisional_courses)).replace('__CYCLE1__',json.dumps(cycle_one_courses)).replace('__DIRECT__',json.dumps(direct_courses))
