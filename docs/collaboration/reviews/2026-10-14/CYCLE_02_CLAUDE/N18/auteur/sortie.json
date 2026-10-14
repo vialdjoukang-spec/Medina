@@ -1,7 +1,7 @@
 {
  "actor": "C02-R-NEPH",
  "verdict": "conforme",
- "checked_at": "2026-10-14T21:02:03.158158+00:00",
+ "checked_at": "2026-10-14T21:44:03.315505+00:00",
  "prompt_files": {
   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -17,7 +17,7 @@
     {
      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-     "explanation": "Travail conduit comme auteur correcteur C02-R-NEPH sous l'instruction de Vial du 14.10.2026 ; ni commit, ni push, ni injection par l'auteur."
+     "explanation": "Passe 2 conduite comme auteur correcteur C02-R-NEPH sur demande du coordinateur, en réponse au pass1 croisé ; ni commit, ni push, ni injection par l'auteur."
     }
    ]
   },
@@ -26,9 +26,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images_claude.json",
-     "sha256": "e24ee9309492827adb465d06ec6eb2d84f6a54aaf1bddff6cbcb93778fab7ab7",
-     "explanation": "Écritures limitées aux 7 sources N18, aux images n18_03 (montage normal/MRC Hansen fig. 1 et 22) et n18_05 (allégée), aux preuves suffixées _claude et au dossier auteur ; preuves Codex non réécrites."
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse_claude.json",
+     "sha256": "1862623f01c3d0dd35431c41cb5f0284c08a3ab87ec450a777eb960364bb2219",
+     "explanation": "Écritures limitées aux 6 sources HTML N18, aux preuves suffixées _claude (registre, manifeste images inchangées, nouvelle matrice de couverture SSED/SSN) et au dossier auteur ; glossaire et images inchangés ; dossier croise/ non touché."
     }
    ]
   },
@@ -38,8 +38,8 @@
    "evidence": [
     {
      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
-     "sha256": "4d6a69e500878863ae3d470656bfa54022dd23438f8bd699aa812325124492fb",
-     "explanation": "45 décisions appariées au passage pertinent, téléchargé et relu le 14.10.2026 : SSN 2025, KDIGO 2024 et 2026, SSED/SSN 2024, HUG 2017, Hansen 2016, Schulz 2022, DEKS 2025 et 11 FI suisses (empreintes de téléchargement incluses)."
+     "sha256": "66a155331deadf11a8031a77d3845fb65a4b6a0d8e8efdae327a57a5bf62517f",
+     "explanation": "87 décisions appariées (45 de la passe 1 + 42 de la passe 2) : KDIGO 2024 (PP 1.1.3, 1.2.2–1.2.3, 2.1–2.3, 3.3–3.15, 4.2–4.4, 5.1–5.5, tables 1, 6, 8, 11, 12, 25, 26, 28, 32), consensus SSED/SSN 2024 lu en entier, HUG 2017, OpenStax 25.3–25.10, 26.4, 6.7, Hansen 2016, FI Kerendia, Forxiga, Lasix, Crestor, Eliquis, Ramipril, Veltassa, Aranesp relues le 14.10.2026."
     }
    ]
   },
@@ -48,9 +48,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
-     "sha256": "4d6a69e500878863ae3d470656bfa54022dd23438f8bd699aa812325124492fb",
-     "explanation": "Sources suisses d'abord (SSN 2025, consensus SSED/SSN, HUG, FI Swissmedic du produit exact) ; divergence suisse sur le bicarbonate (18 contre 22 mmol/L) exposée et résolue en fenêtre ; aucune directive américaine décisionnelle."
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse_claude.json",
+     "sha256": "1862623f01c3d0dd35431c41cb5f0284c08a3ab87ec450a777eb960364bb2219",
+     "explanation": "Consensus SSED/SSN 2024 intégré en 12 points (potassium sous bloqueur, cibles tensionnelles, hypolipémiants et LDL, fer/érythropoïétine, bandelette puis sédiment) ; divergences exposées et arbitrées : A2/A3 à 30 mg/mmol (KDIGO repris par la SSN 2025), fer hors dialyse (KDIGO 2026 plus récent), pression (SSN 2025 plus récente)."
     }
    ]
   },
@@ -59,9 +59,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/N18/pass1.json",
-     "sha256": "6292d0a4f6e489537ea9e78f434a091d6666c16abf9e99d04e35ac3e84ac5c89",
-     "explanation": "Corrections répondant au pass1 de C02-R-ENDO sans le modifier ; la passe 2 reste à l'auditeur croisé distinct."
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/croise/pass1.json",
+     "sha256": "23d95b3b4d862a1c8c5476506ca491a2b211bc3b1767fb248251c3eb886d85a2",
+     "explanation": "Corrections répondant aux réserves X01–X03 et aux trois observations non bloquantes du pass1 de C02-R-ENDO, sans modifier le dossier croise/ ; la passe 2 reste à l'auditeur croisé distinct."
     }
    ]
   },
@@ -70,9 +70,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/chapters/N18/N18_b.html",
-     "sha256": "99ba6854d036cd2723261400390fde8fbd0fd055629f1644d9b2a3c802dfe062",
-     "explanation": "test_v7 --static N18 : OK (44 581 mots, 108 fenêtres, 4 quiz, 21 Pareto) ; dernier îlot alert (critères KDIGO complets) puis key (paramètres chiffrés) ; aperçu isolé vérifié au navigateur 1440 et 390 px sans erreur JavaScript ni débordement."
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/chapters/N18/N18_pop1.html",
+     "sha256": "4ef26888dbff9bf9e51673c6eb84970451d7cc8e803c8514b1b928e307461d6b",
+     "explanation": "test_v7 --static N18 : OK (45 295 mots, 111 fenêtres, 4 quiz, 21 Pareto) ; 42 fenêtres prescrites réécrites, 0 % de phrases reprises du corps (mesure automatique) ; fenêtres propres créatinine, cystatine C et frontière A2/A3 ; aperçu Playwright 1440 et 390 px sans erreur JavaScript ni débordement."
     }
    ]
   },
@@ -81,9 +81,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images_claude.json",
-     "sha256": "e24ee9309492827adb465d06ec6eb2d84f6a54aaf1bddff6cbcb93778fab7ab7",
-     "explanation": "Aucune validation médicale humaine ; image A06 australienne conservée faute d'alternative ouverte trouvée, limite déclarée ; les 858 entrées Codex ne sont pas déclarées conformes individuellement."
+     "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
+     "sha256": "66a155331deadf11a8031a77d3845fb65a4b6a0d8e8efdae327a57a5bf62517f",
+     "explanation": "Aucune validation médicale humaine ; les 858 entrées du registre Codex ne sont pas revues une à une et celles des anciennes fenêtres (276 identifiants retirés) sont caduques ; image A06 australienne conservée, limite déclarée."
     }
    ]
   }
