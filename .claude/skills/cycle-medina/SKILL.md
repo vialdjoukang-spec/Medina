@@ -4,16 +4,17 @@ description: Produire, auditer, injecter et publier un cycle MEDINA (4 leçons d
 ---
 # Cycle MEDINA n — chaîne économe (décision de Vial, 14.10.2026)
 
+Règle de Vial (14.10.2026) : Opus moyen→élevé → Sonnet moyen → Opus faible ; mécanique Sonnet moyen.
 Principe : **recherche initiale exhaustive** (coûteuse une fois) → rédaction et audits **bon marché** fondés sur le dossier de sources.
 Rapports au propriétaire : uniquement « captures + FIN PUBLIÉ + lien ». Aucun compte rendu intermédiaire.
 
 | Étape | Modèle (Agent `model`) | Effort | Sortie |
 |---|---|---|---|
-| 1 Recherche | opus | high | `livraisons/Livraison Claude/<FRAG>/travail/CYCLE_nn_<CODE>/preuves/dossier_sources.json` : chaque décision clé (doses FI Swissmedic du produit exact, seuils, critères, classifications, différentiels SSP par gravité, sous-codes CIM-10-GM, images Commons via `tools/images_ouvertes.py`) avec URL, date, section, passage, SHA du texte lu |
+| 1 Recherche | opus | medium (high seulement si insuffisant, jamais plus) | `livraisons/Livraison Claude/<FRAG>/travail/CYCLE_nn_<CODE>/preuves/dossier_sources.json` : chaque décision clé (doses FI Swissmedic du produit exact, seuils, critères, classifications, différentiels SSP par gravité, sous-codes CIM-10-GM, images Commons via `tools/images_ouvertes.py`) avec URL, date, section, passage, SHA du texte lu |
 | 2 Rédaction | sonnet | medium | 7 sources (4 onglets, pop1, pop2, glossaire) **uniquement** depuis le dossier ; `source_ledger_claude.json`, `images_claude.json`, preuve auteur |
-| 3 Audit croisé (binômes NEUR↔HEM, ENDO↔NEPH, mêmes agents que les auteurs) | sonnet | low | grille `audit_moteur` ci-dessous ; passe 1 → corrections auteur (SendMessage au même agent) → passe 2 |
-| 4 Contre-audit (4 agents neufs) | sonnet | low | même grille, contexte neuf, `fresh_context:true` |
-| 5 Mécanique (gates, manifestes, stage) | haiku | low | `tools/claude_cycle_gate.py`, `tools/cycle_claude_stage.py` |
+| 3 Audit croisé (binômes NEUR↔HEM, ENDO↔NEPH) | opus | low | grille `audit_moteur` ci-dessous ; passe 1 → corrections auteur (SendMessage au même agent) → passe 2 |
+| 4 Contre-audit (4 agents neufs) | opus | low | même grille, contexte neuf, `fresh_context:true` |
+| 5 Mécanique (gates, manifestes, stage, images) | sonnet | medium | `tools/claude_cycle_gate.py`, `tools/cycle_claude_stage.py` |
 | 6 Contrôle + injection + publication | coordinateur | — | contrôle navigateur, **4 captures/leçon** (ouverture, fenêtre, figure, tableau), injection G→E→N→D une à une, PR, fusion, relecture publique |
 
 ## Moteur d'audit (Prompt de vérité, adapté à la leçon)
