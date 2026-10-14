@@ -459,7 +459,7 @@ class DirectFixture:
                                 version_date='2026-01-01', section='1', source_passage_summary='Fixture', population='Adultes',
                                 limits='Fixture', accessed_on='2026-10-14', download_sha256='b' * 64)]) | (ledger_extra or {}))
         common = dict(code=code, medical_human_validation=False, final_files=files, blocking_reserves=[], image_files=images)
-        prompts = prompts or self.prompts
+        prompts = prompts or getattr(self, 'author_default', None) or self.prompts
         author_gate = lambda at: dict(self.gate(row['writer'], at), prompt_files={p: C.digest(self.files[p]) for p in prompts})
         author = self.write(f'preuves/{lc}-auteur.json', dict(common, actor=row['writer'], runtime_agent_id='agent-' + row['writer'],
                             entry=author_gate(T('21:50')), exit=author_gate(T('22:00')), source_ledger=ledger))
@@ -663,6 +663,7 @@ class DirectChainCycle2Tests(ClaudeFixture, unittest.TestCase):
 
 class Cycle2DirectFixture(DirectFixture):
     """Cycle 2 repris, passé une seule fois en publication directe (clôture immédiate demandée par Vial)."""
+    author_default = G.PROMPTS
 
     def setUp(self):
         root = Path(__file__).resolve().parents[1]
@@ -792,3 +793,38 @@ class GateAndControlToolTests(unittest.TestCase):
         self.assertEqual(len(tool.CAPTURE_KINDS), G.CAPTURES)
         self.assertEqual(tool.VIEWPORTS['desktop']['width'], 1440)
         self.assertEqual(tool.VIEWPORTS['mobile']['width'], 390)
+
+
+class NightPreviewRootsTests(unittest.TestCase):
+    def test_claude_delivery_allowed_from_cycle3_only(self):
+        from tools import night_preview as preview
+        root = Path(__file__).resolve().parents[1]
+        claude = root / 'livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61'
+        codex = root / 'livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45'
+        self.assertTrue(preview.allowed_source(root, claude, 3, 'I61'))
+        self.assertFalse(preview.allowed_source(root, claude.with_name('CYCLE_02_G45'), 2, 'G45'))
+        self.assertTrue(preview.allowed_source(root, codex, 2, 'G45'))
+        self.assertFalse(preview.allowed_source(root, root / 'docs/CYCLE_03_I61', 3, 'I61'))
+        self.assertFalse(preview.allowed_source(root, claude, 3, 'E05'))
+
+
+class Cycle2AuthorPromptsTests(Cycle2DirectFixture, unittest.TestCase):
+    def test_cycle2_author_uses_reprise_prompts_and_control_direct(self):
+        self.assertEqual(G.author_prompts({'production_cycle': 2}), G.PROMPTS)
+        self.assertEqual(G.author_prompts({'production_cycle': 3}), G.PROMPTS_DIRECT)
+        self.ready_cycle(); self.inject(0)
+        self.assertEqual(self.guard()[2], {'G45'})
+
+    def test_cycle2_author_with_direct_prompts_rejected(self):
+        self.produce(0, prompts=G.PROMPTS_DIRECT)
+        with self.assertRaisesRegex(C.CycleError, 'Prompt'):
+            self.guard()
+
+    def test_cycle2_control_with_reprise_prompts_rejected(self):
+        self.prompts = G.PROMPTS
+        self.produce(0, prompts=G.PROMPTS)
+        with self.assertRaisesRegex(C.CycleError, 'contrôle|control|Prompt'):
+            self.guard()
+
+    def test_cycle3_author_with_reprise_prompts_still_rejected(self):
+        self.assertNotEqual(G.author_prompts({'production_cycle': 3}), G.PROMPTS)

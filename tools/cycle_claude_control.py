@@ -271,7 +271,7 @@ def control(a):
     cycle, row = lesson(a.code)
     disk = Disk()
     files = C.source_files(disk, row, G.SOURCE_ROOTS)
-    author = C.review(disk, row, 'author', row['writer'], files, G.PROMPTS_DIRECT)
+    author = C.review(disk, row, 'author', row['writer'], files, G.author_prompts(row))
     C.source_ledger_proof(disk, row, author, files)
     images = N.image_proof(disk, row)
     entry = json.loads((ROOT / a.entry).read_text(encoding='utf-8'))

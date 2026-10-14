@@ -63,6 +63,12 @@ def transferred_cycles(tree):
             and c.get('owner') == 'Claude' and c.get('transferred_from') == 'Codex'}
 
 
+def author_prompts(row):
+    """Revue auteur : le Cycle 2 a été rédigé sous l'autorité de reprise (PROMPTS) avant son passage en
+    publication directe ; les cycles 3 à 30 sous PROMPTS_DIRECT. Le contrôle reste toujours en PROMPTS_DIRECT."""
+    return PROMPTS if row['production_cycle'] in SWITCH_CYCLES else PROMPTS_DIRECT
+
+
 def direct(cycle):
     return cycle.get('mode') == DIRECT_MODE
 
@@ -162,7 +168,7 @@ def direct_ready(tree, row):
     files = C.source_files(tree, row, SOURCE_ROOTS)
     C.require(row['cross_audit'] is None and row['counter_audit'] is None,
               'Cycles Claude : audit croisé ou contre-audit fictif en publication directe')
-    author = C.review(tree, row, 'author', row['writer'], files, PROMPTS_DIRECT)
+    author = C.review(tree, row, 'author', row['writer'], files, author_prompts(row))
     C.source_ledger_proof(tree, row, author, files)
     control = C.review(tree, row, 'control', COORDINATOR, files, PROMPTS_DIRECT)
     C.require(C.dated(author['exit']['checked_at']) <= C.dated(control['entry']['checked_at']),
@@ -299,7 +305,7 @@ def validate(before, after, now=None):
             if straight:
                 # Publication directe : la revue auteur précède le contrôle ; aucun audit croisé n'est attendu.
                 if stage == 3:
-                    C.review(after, row, 'author', row['writer'], C.source_files(after, row, SOURCE_ROOTS), PROMPTS_DIRECT)
+                    C.review(after, row, 'author', row['writer'], C.source_files(after, row, SOURCE_ROOTS), author_prompts(row))
             else:
                 if stage >= 1:
                     C.require(all(r['author'] for r in rows), 'Cycles Claude : quatre auteurs avant audit croisé')
