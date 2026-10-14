@@ -1,7 +1,7 @@
 {
  "actor": "C02-R-ENDO",
  "verdict": "conforme",
- "checked_at": "2026-10-14T21:46:58.902787+00:00",
+ "checked_at": "2026-10-14T21:58:52.663719+00:00",
  "prompt_files": {
   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -17,7 +17,7 @@
     {
      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-     "explanation": "Corrections d'auteur E10 demandées par le coordinateur après la passe 1 croisée ; ni commit ni push."
+     "explanation": "Correction d'auteur E10 de la réserve Z01 demandée par le coordinateur après la passe 2 intermédiaire croisée ; ni commit ni push."
     }
    ]
   },
@@ -28,7 +28,7 @@
     {
      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
      "sha256": "39fce2427c745e0a5d22d351e69d482b576d7fbb45e045a4be0a1a51ed9f7833",
-     "explanation": "Écritures limitées aux sept sources E10, aux preuves _claude et au dossier auteur ; images inchangées."
+     "explanation": "Écritures limitées à E10_pop1.html, au registre _claude et au dossier auteur ; images inchangées."
     }
    ]
   },
@@ -38,13 +38,8 @@
    "evidence": [
     {
      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
-     "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16",
-     "explanation": "Registre renouvelé : 51 assertions, dont le §10 et le tableau 3 du texte SGED/SGRM 2025 relus le 14.10.2026 pour B1 ; note sur l'empreinte de texte extrait."
-    },
-    {
-     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass1.json",
-     "sha256": "784abf5563b605bfe1cb72cf078b5a7ae1102440ba38c835d8312a4ab569007a",
-     "explanation": "Passe 1 croisée lue : B1 conduite du second groupe, B2 infinitifs ; observations O1 à O4."
+     "sha256": "9429f6494a488c9dbf42253ab6c14b2050c93647cf43bd34e6c14ed8ca5a9cb6",
+     "explanation": "Registre renouvelé : 53 assertions, dont le tableau 3 complet (cinq catégories) et la branche type 2 de l'exception D/D1 du texte SGED/SGRM du 1.8.2025, relus le 14.10.2026 (p. 12–13)."
     }
    ]
   },
@@ -54,8 +49,8 @@
    "evidence": [
     {
      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
-     "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16",
-     "explanation": "Règle suisse de conduite (SGED/SGRM 2025) appliquée telle quelle ; JBDS requalifié britannique (O1)."
+     "sha256": "9429f6494a488c9dbf42253ab6c14b2050c93647cf43bd34e6c14ed8ca5a9cb6",
+     "explanation": "Directive suisse SGED/SGRM 2025 transcrite sans ajout ni seuil étranger ; exception au sens de l'art. 7 al. 3 de l'ordonnance réglant l'admission à la circulation routière."
     }
    ]
   },
@@ -64,9 +59,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass1.json",
-     "sha256": "784abf5563b605bfe1cb72cf078b5a7ae1102440ba38c835d8312a4ab569007a",
-     "explanation": "Auteur corrigeant ; la passe 2 reste au relecteur croisé C02-R-NEPH."
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass2_intermediaire_defavorable.json",
+     "sha256": "b6b5799a34e17698781f6854c1f58e6e1e239d9af9495c2605ef965dfa73f1f8",
+     "explanation": "Auteur corrigeant ; le verdict final reste au relecteur croisé C02-R-NEPH."
     }
    ]
   },
@@ -76,8 +71,8 @@
    "evidence": [
     {
      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
-     "sha256": "b978822d2d4e6d0d12c83a517110d52c6044dbcee532b9ba14a11e0d1ae99c73",
-     "explanation": "test_v7.py --static E10 : OK après corrections (31 898 mots, 106 fenêtres, 3 quiz, 21 Pareto)."
+     "sha256": "0808fac0f272931d82dcfa690575c2fd03a9e4a3b74ef76fc868fa0ef9f8164d",
+     "explanation": "test_v7.py --static E10 : OK (32 199 mots, 106 fenêtres, 3 quiz, 21 Pareto) ; aperçu sans erreur."
     }
    ]
   },
@@ -88,7 +83,7 @@
     {
      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree.json",
      "sha256": "72a02a0b42043ab4cb92a042b69bd275d8f9a977542e7e27f85daa84306b44a5",
-     "explanation": "Relevé d'entrée conservé ; aucune réserve déclarée levée par l'auteur seul ; pas de validation médicale humaine."
+     "explanation": "Relevé d'entrée conservé ; Z01 corrigée mais non déclarée levée par l'auteur seul ; aucune validation médicale humaine."
     }
    ]
   }

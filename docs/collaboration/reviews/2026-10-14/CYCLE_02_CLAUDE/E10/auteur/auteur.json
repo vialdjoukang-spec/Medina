@@ -110,100 +110,8 @@
   ]
  },
  "exit": {
-  "actor": "C02-R-ENDO",
-  "verdict": "conforme",
-  "checked_at": "2026-10-14T21:46:58.902787+00:00",
-  "prompt_files": {
-   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
-   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
-   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
-   "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
-  },
-  "checks": [
-   {
-    "id": "autorisation",
-    "status": "conforme",
-    "evidence": [
-     {
-      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
-      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-      "explanation": "Corrections d'auteur E10 demandées par le coordinateur après la passe 1 croisée ; ni commit ni push."
-     }
-    ]
-   },
-   {
-    "id": "perimetre_provenance",
-    "status": "conforme",
-    "evidence": [
-     {
-      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
-      "sha256": "39fce2427c745e0a5d22d351e69d482b576d7fbb45e045a4be0a1a51ed9f7833",
-      "explanation": "Écritures limitées aux sept sources E10, aux preuves _claude et au dossier auteur ; images inchangées."
-     }
-    ]
-   },
-   {
-    "id": "sources_lues",
-    "status": "conforme",
-    "evidence": [
-     {
-      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
-      "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16",
-      "explanation": "Registre renouvelé : 51 assertions, dont le §10 et le tableau 3 du texte SGED/SGRM 2025 relus le 14.10.2026 pour B1 ; note sur l'empreinte de texte extrait."
-     },
-     {
-      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass1.json",
-      "sha256": "784abf5563b605bfe1cb72cf078b5a7ae1102440ba38c835d8312a4ab569007a",
-      "explanation": "Passe 1 croisée lue : B1 conduite du second groupe, B2 infinitifs ; observations O1 à O4."
-     }
-    ]
-   },
-   {
-    "id": "contexte_suisse",
-    "status": "conforme",
-    "evidence": [
-     {
-      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
-      "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16",
-      "explanation": "Règle suisse de conduite (SGED/SGRM 2025) appliquée telle quelle ; JBDS requalifié britannique (O1)."
-     }
-    ]
-   },
-   {
-    "id": "independance",
-    "status": "conforme",
-    "evidence": [
-     {
-      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass1.json",
-      "sha256": "784abf5563b605bfe1cb72cf078b5a7ae1102440ba38c835d8312a4ab569007a",
-      "explanation": "Auteur corrigeant ; la passe 2 reste au relecteur croisé C02-R-NEPH."
-     }
-    ]
-   },
-   {
-    "id": "contrat_cours",
-    "status": "conforme",
-    "evidence": [
-     {
-      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
-      "sha256": "b978822d2d4e6d0d12c83a517110d52c6044dbcee532b9ba14a11e0d1ae99c73",
-      "explanation": "test_v7.py --static E10 : OK après corrections (31 898 mots, 106 fenêtres, 3 quiz, 21 Pareto)."
-     }
-    ]
-   },
-   {
-    "id": "honnetete",
-    "status": "conforme",
-    "evidence": [
-     {
-      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree.json",
-      "sha256": "72a02a0b42043ab4cb92a042b69bd275d8f9a977542e7e27f85daa84306b44a5",
-      "explanation": "Relevé d'entrée conservé ; aucune réserve déclarée levée par l'auteur seul ; pas de validation médicale humaine."
-     }
-    ]
-   }
-  ]
+  "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/sortie.json",
+  "sha256": "1010cb67aa060f579bd22e1a1fbbcecff4d4f6614ce84bacc2aefacdeb867c2e"
  },
  "entry_fingerprints": {
   "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree_empreintes.json",
@@ -214,7 +122,7 @@
   "chapters/E10/E10_b.html": "f19a7c31f369bc628a06b15dacaf3a39f829cae5704c1ad919c6e7869716d46d",
   "chapters/E10/E10_c.html": "1106c5d4d9b0af8a8ad72183c6cb57a199893d0fe2b599ff2b44541875639ce0",
   "chapters/E10/E10_d.html": "a20ff5600f33a0724f91c4c80f64367b7c80e455912e5710ea7a7a903a56e4c8",
-  "chapters/E10/E10_pop1.html": "e2a3fb7bbea6c63ed20016cd71a2feda990b697fba88ec7f752094ffd834b4eb",
+  "chapters/E10/E10_pop1.html": "062d56893bb81f74793c715f46acb9b875642649bb836a42f325178a3c94ceee",
   "chapters/E10/E10_pop2.html": "e184641f07ae0f81d1c694687f18e934c2972d4bda0f7a5ede7b0a3d4f62f66f",
   "glossary/e10.py": "35bb81ceb673273265d2b01c02d9a7208cae2d14ced6ef1417c23c26292137b1"
  },
@@ -232,7 +140,7 @@
  "blocking_reserves": [],
  "source_ledger": {
   "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
-  "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16"
+  "sha256": "9429f6494a488c9dbf42253ab6c14b2050c93647cf43bd34e6c14ed8ca5a9cb6"
  },
  "images_manifest": {
   "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
@@ -240,9 +148,9 @@
  },
  "technical_check": {
   "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
-  "sha256": "b978822d2d4e6d0d12c83a517110d52c6044dbcee532b9ba14a11e0d1ae99c73",
+  "sha256": "0808fac0f272931d82dcfa690575c2fd03a9e4a3b74ef76fc868fa0ef9f8164d",
   "result": "OK",
-  "preview": "tools/night_preview.py dans un worktree jetable, build_exit 0 ; contrôle Playwright 1440 et 390 px : aucune erreur JavaScript, aucun débordement horizontal, nouvelles fenêtres ouvertes (capture ui_fenetre_potassium_bureau.png)"
+  "preview": "tools/night_preview.py dans un worktree jetable (supprimé), build 0 ; fenêtre e10-a11-conduite ouverte à 1440 et 390 px : aucune erreur JavaScript, aucun débordement (ui_conduite_second_groupe_mobile.png)"
  },
  "reserves_resolues": [
   {
@@ -390,6 +298,15 @@
    "fichiers": [
     "preuves/source_ledger_claude.json"
    ]
+  }
+ ],
+ "corrections_passe2_intermediaire_croisee": [
+  {
+   "id": "Z01",
+   "fichier": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/chapters/E10/E10_pop1.html",
+   "fenetre": "e10-a11-conduite",
+   "correction": "Tableau du second groupe porté aux cinq catégories du tableau 3 (aucun, faible, moyen, élevé, très élevé) avec la liste complète des traitements : aucun = metformine, agonistes GLP-1 et GLP-1/GIP, DPP-4, SGLT-2 ; faible = dégludec, glargine 300 U/mL, gliclazide, glinides (D/D1 exclus sauf exception niveau 4, 3–4 mesures par jour, pas avant chaque trajet, niveau 3) ; moyen = glargine 100 U/mL, détémir, Ryzodeg 1–2 fois par jour, basal–bolus avec capteur ou stylos connectés, boucle fermée hybride ; élevé = basal–bolus sans capteur, pompe sans boucle fermée, sulfonylurées à action prolongée. Exception D/D1 complétée par la branche type 2 (basale ultralongue + capteur ≥ 3 mois, formation confirmée). Phrase basal–bolus conservée.",
+   "source": "SGED/SGRM, Richtlinien Fahreignung bei Diabetes mellitus, 1.8.2025, §10 et Tabelle 3, p. 12–13, relue le 14.10.2026"
   }
  ]
 }
