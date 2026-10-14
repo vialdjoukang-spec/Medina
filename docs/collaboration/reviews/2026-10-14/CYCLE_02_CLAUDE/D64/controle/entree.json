@@ -1,0 +1,91 @@
+{
+ "actor": "Claude — coordinateur",
+ "verdict": "conforme",
+ "checked_at": "2026-10-14T22:22:30.282209+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Instruction de Vial : cycle 2 publié en mode direct, contrôle du coordinateur requis."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/auteur/auteur.json",
+     "sha256": "cab25b03a3ab6dab3353fba9e361e96ca13bc4c5ea5753d2e05b0ec62ec6e632",
+     "explanation": "Preuve auteur de D64 : sept sources et images du dossier de livraison, empreintes vérifiées par la garde."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
+     "sha256": "88460b53c1f69c4b858b25fda119da632ba02cc7ba34d7f94079d3e3e6c0882e",
+     "explanation": "Registre des sources réellement lues par l'auteur, sans affirmation non vérifiée."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/contexte_suisse_controle.json",
+     "sha256": "298d1f9146c83dff433818e50dfee449a0dd77afa9f4e987553be3aabeddff5b",
+     "explanation": "Matrice suisse liée au registre des sources, validée par swiss_context_proof."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/auteur/auteur.json",
+     "sha256": "cab25b03a3ab6dab3353fba9e361e96ca13bc4c5ea5753d2e05b0ec62ec6e632",
+     "explanation": "Le coordinateur n'a pas rédigé la leçon ; l'auteur est un agent distinct."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/images_claude.json",
+     "sha256": "9692717ff52eebc71f337c6799c4af867daf8de356635674aca01a953c4ca24c",
+     "explanation": "Manifeste des images ; quatre onglets, fenêtres, images et captures contrôlés par l'outil de contrôle."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Aucun audit non réalisé n'est déclaré ; revue IA, sans validation médicale humaine."
+    }
+   ]
+  }
+ ]
+}
