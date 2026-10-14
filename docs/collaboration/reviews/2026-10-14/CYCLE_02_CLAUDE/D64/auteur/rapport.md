@@ -29,3 +29,6 @@ Six images authentiques CC BY 4.0 conservées, ouvertes et vérifiées (licence 
 
 ## Réserves ouvertes
 Passe 2 et contre-audit indépendants ; validation médicale humaine ; vérification ligne par ligne de `contexte_suisse_claude.json` ; captures du contrôle coordinateur.
+
+## Corrections après la passe 1 croisée (C02-R-NEUR)
+X1 Benadon–lévodopa : les deux passages exacts de la FI sont cités (Mises en garde ≥ 5 mg/j ; Interactions > plusieurs fois le besoin de 2 mg). X2 splénectomie CDA I : aucune recommandation du consensus 2017. X3 critères SF3B1 cumulatifs puis alternatifs. X4 calcul CaO₂ refaisable dans la fenêtre. X5 « protoporphyrine IX » lié à ChEBI, n’ouvre plus Facteur IX. O1/O2 corrigées. `test_v7 --static D64` : OK.

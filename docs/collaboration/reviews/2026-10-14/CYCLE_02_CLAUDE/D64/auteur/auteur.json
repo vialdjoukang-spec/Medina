@@ -107,7 +107,7 @@
  "exit": {
   "actor": "C02-R-HEM",
   "verdict": "conforme",
-  "checked_at": "2026-10-14T21:08:11.757557+00:00",
+  "checked_at": "2026-10-14T21:30:51.373925+00:00",
   "prompt_files": {
    "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
    "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -123,7 +123,7 @@
      {
       "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
       "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
-      "explanation": "Travail limité au mandat d'auteur correcteur C02-R-HEM : corrections dans le dossier CYCLE_02_D64 et preuves suffixées _claude ; ni commit, ni push, ni injection, ni écriture dans chapters/ ou glossary/ à la racine."
+      "explanation": "Corrections auteur après la passe 1 croisée de C02-R-NEUR (X1–X5, O1–O2), dans le seul dossier CYCLE_02_D64 et le dossier auteur ; ni commit ni push."
      }
     ]
    },
@@ -132,9 +132,9 @@
     "status": "conforme",
     "evidence": [
      {
-      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
-      "sha256": "a7c31d4f922eff3dc6f3a9ea954f1156607778b85c3c81d9577752a6eddff738",
-      "explanation": "Le registre liste les empreintes finales des 7 sources (final_files) ; seules les 7 sources, 3 preuves _claude et les rapports auteur ont été écrits ; preuves Codex et images inchangées (empreintes identiques à l'entrée)."
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/croise/pass1.json",
+      "sha256": "6f8cb7b738c470566c45c3657113bc9a4eb84cc30d60fea29ebc63e2cd3e7343",
+      "explanation": "Passe 1 croisée lue : 5 réserves X1–X5 et 2 observations ; chaque correction est localisée dans auteur.json et les nouvelles empreintes sont dans le registre."
      }
     ]
    },
@@ -144,8 +144,8 @@
     "evidence": [
      {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
-      "sha256": "a7c31d4f922eff3dc6f3a9ea954f1156607778b85c3c81d9577752a6eddff738",
-      "explanation": "44 affirmations rattachées à 25 sources relues en ligne le 14.10.2026 (FI Benadon, Exjade, Pegasys, Zyvoxid via AmiKo ; HUG, LUKS ×6, CSCQ, MQZH, SSH, Onkopedia, BfArM ; Genes 2022, Roy-Babbs 2019, GFHC 2022, BSH/EHA 2022, Iolascon 2017, Cazzola 2011, Cells 2020, PAC6, Traxler 2013), chacune avec SHA-256 du texte téléchargé."
+      "sha256": "88460b53c1f69c4b858b25fda119da632ba02cc7ba34d7f94079d3e3e6c0882e",
+      "explanation": "Registre renouvelé (44 affirmations) : FI Benadon relue (Mises en garde ≥ 5 mg/j ET Interactions > plusieurs fois 2 mg), consensus Iolascon 2017 (aucune recommandation pour CDA I), Onkopedia mars 2026 (critères SF3B1), ChEBI 15430/15435 vérifiés via OLS."
      }
     ]
    },
@@ -154,9 +154,9 @@
     "status": "conforme",
     "evidence": [
      {
-      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
-      "sha256": "a7c31d4f922eff3dc6f3a9ea954f1156607778b85c3c81d9577752a6eddff738",
-      "explanation": "Décisions médicamenteuses rattachées à la FI suisse du produit exact (Benadon 25635, Exjade 57466, Pegasys 55585, Zyvoxid 55558) ; repères diagnostiques suisses (HUG, LUKS, CSCQ, MQZH, SSH, Onkopedia avec la SSH) ; recours européens motivés pour les formes rares ; aucune recommandation américaine décisionnelle."
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/contexte_suisse_claude.json",
+      "sha256": "9fed6bfa79ff9dc4c4ddb044f3d2def7246efe1e7898d0bbf1cf59e387c730be",
+      "explanation": "Matrice auteur mise à jour sur les empreintes finales ; produits exacts Benadon 25635, Exjade 57466, Pegasys 55585, Zyvoxid 55558."
      }
     ]
    },
@@ -167,7 +167,7 @@
      {
       "path": "organisation/execution-20261014/CONTRAT_REVUES.md",
       "sha256": "37149122d0cdde390ee62032a4f0120571830668c505dab3eb9a77fe17957930",
-      "explanation": "C02-R-HEM n'a rédigé aucune passe ni reçu d'audit pour D64 ; la passe 2 reste à C02-R-NEUR et le contre-audit à C02-CA-HEM, sur les nouvelles empreintes."
+      "explanation": "L'auteur corrige ; la passe 2 reste à C02-R-NEUR sur les nouvelles empreintes."
      }
     ]
    },
@@ -178,7 +178,7 @@
      {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/couverture_claude.json",
       "sha256": "df4c72ad9aaaee7f58e270fbc36c5209f20e17a6e52a73665a434cbf654a1cc4",
-      "explanation": "21 parties et 126 sous-parties présentes, 8 sous-codes couverts, 6 images aux ancres du cahier ; test_v7.py --static D64 = OK (64 fenêtres, 22 quiz, 21 Pareto) ; aperçu isolé : 317 mots verts ouverts sans fiche absente, 0 erreur JavaScript, 6 images chargées, aucun débordement mobile à 390 px."
+      "explanation": "test_v7.py --static D64 = OK (64 fenêtres, 22 quiz, 21 Pareto) ; « IX » n'est plus enveloppé par la clé Facteur IX (0 occurrence après wrap_html)."
      }
     ]
    },
@@ -189,7 +189,7 @@
      {
       "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/images_claude.json",
       "sha256": "9692717ff52eebc71f337c6799c4af867daf8de356635674aca01a953c4ca24c",
-      "explanation": "Images authentiques CC BY 4.0 revérifiées visuellement et par licence ; statut visible « revue par intelligence artificielle, sans validation médicale humaine » ; réserves levées par l'auteur mais non revalidées : la passe 2 indépendante reste à faire."
+      "explanation": "Images inchangées ; revue IA sans validation médicale humaine ; aucune réserve déclarée levée par l'auteur à la place de l'auditeur."
      }
     ]
    }
@@ -205,12 +205,12 @@
   "glossary/d64.py": "49a07b1941df4017d4a7fbb2144f6d2dbbbe16b62a425e44b29f0275b3a94b5a"
  },
  "final_files": {
-  "chapters/D64/D64_a.html": "c0d00b7ac23635064b3a6b4c9d3ec1f9b62e5dcf64601b826c6eb6d165ce6395",
-  "chapters/D64/D64_b.html": "c1647ee7f99779c5bdc34d25ce329681bac0441548678dfcf5a82be4fdbcb8c5",
-  "chapters/D64/D64_c.html": "e595e74319b281e63815a471711a10f31ffc0342d6bc148888df618a8ca37bc7",
-  "chapters/D64/D64_d.html": "18b1f33e877bc30058b6d18487e548dc57036cca78bc367aa85bc2059319cbaf",
-  "chapters/D64/D64_pop1.html": "7ff8d860898764a5b7913ea0def0685f77e00df0b28ef5d58963a38cc664f1dc",
-  "chapters/D64/D64_pop2.html": "a9aeebfc33cb14f181f8773e684ec0e0216ce5fb7d0878d4a9b5c676a0f922b2",
+  "chapters/D64/D64_a.html": "1e7bcf527fe27650e43c718551e5e322d30d3f2622e8e2f3680cac226440f30e",
+  "chapters/D64/D64_b.html": "629698cca358305be6b22d8c5d15774575e3484f637101271c11193d636d70b6",
+  "chapters/D64/D64_c.html": "17b07b8fbee4ef4260aeced15274d6a93cf973a850d97964ab24545559dcff21",
+  "chapters/D64/D64_d.html": "19fdc9572d5e465f5c5546ceb15631884bcee1c123ec61d7ffd5d53471f1e66d",
+  "chapters/D64/D64_pop1.html": "9db552ebdc604fd7e0a4141bdb1dc2fb625f0b0fd9b386300034d39ffaf7be6b",
+  "chapters/D64/D64_pop2.html": "9d3d797f0462d79a6525182e0ad1254256c28cdc7a83ee46d42e6e53b55e5063",
   "glossary/d64.py": "65fc806c9d033ddffd436aae2aef0c705ecd9918196e04c237a8049177c1357b"
  },
  "image_files": {
@@ -224,7 +224,7 @@
  "blocking_reserves": [],
  "source_ledger": {
   "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
-  "sha256": "a7c31d4f922eff3dc6f3a9ea954f1156607778b85c3c81d9577752a6eddff738"
+  "sha256": "88460b53c1f69c4b858b25fda119da632ba02cc7ba34d7f94079d3e3e6c0882e"
  },
  "images_manifest": {
   "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/images_claude.json",
@@ -339,7 +339,7 @@
   "Quiz 4 (vignette, calcul de saturation) ; 22 quiz au total."
  ],
  "tests": {
-  "test_v7_static": "OK (D64 mots 32689, fenêtres 64, quiz 22, pareto 21)",
+  "test_v7_static": "OK après corrections croisées (D64 mots 32869, fenêtres 64, quiz 22, pareto 21)",
   "apercu_isole": "tools/night_preview.py dans le scratchpad : 317 mots verts ouverts, 0 fiche absente, 0 erreur JavaScript, 6 images chargées, largeur mobile 390 px ; la fenêtre d64-p01-w1 a ensuite reçu une retouche purement rédactionnelle, contrôlée par test_v7 --static."
  },
  "reserves_ouvertes": [
@@ -350,7 +350,63 @@
  ],
  "swiss_matrix": {
   "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/contexte_suisse_claude.json",
-  "sha256": "61d575fff330a61527b5827b6463fd20cbee96af070d9d5388ed1b2a6a749ec4",
+  "sha256": "9fed6bfa79ff9dc4c4ddb044f3d2def7246efe1e7898d0bbf1cf59e387c730be",
   "auditor_verdict": "pending_independent_review"
- }
+ },
+ "corrections_croise_pass1": [
+  {
+   "id": "X1",
+   "resolution": "Alert P02 et monographie Benadon : les deux formulations exactes de la FI sont citées (Mises en garde : doses quotidiennes de 5 mg ou plus ; Interactions : pas de doses plusieurs fois supérieures au besoin de 2 mg ; 300 mg les dépasse toujours ; pas d’interaction avec inhibiteur de la décarboxylase). Le seuil de 5 mg figure bien dans la rubrique Mises en garde de la FI relue ; le registre distingue désormais les deux passages.",
+   "fichiers": [
+    "chapters/D64/D64_d.html",
+    "chapters/D64/D64_pop2.html",
+    "preuves/source_ledger_claude.json"
+   ]
+  },
+  {
+   "id": "X2",
+   "resolution": "A06.5 : recommandation formelle du type II (grade 2, C) distinguée de l’absence de recommandation pour le type I (réserve seulement suggérée ; 3 décès sur 6).",
+   "fichiers": [
+    "chapters/D64/D64_a.html"
+   ]
+  },
+  {
+   "id": "X3",
+   "resolution": "Arbre A09.5 : conditions cumulatives (blastes < 5 % moelle et < 2 % sang, sans del(5q), monosomie 7 ni caryotype complexe) et alternative (SF3B1 ou couronnes ≥ 15 %), cohérent avec le critère formel 5.",
+   "fichiers": [
+    "chapters/D64/D64_b.html"
+   ]
+  },
+  {
+   "id": "X4",
+   "resolution": "Fenêtre d64-s02-w1 : PaO₂ 100 mmHg donnée et calcul en deux étapes 13,132 + 0,310 = 13,442 mL/dL.",
+   "fichiers": [
+    "chapters/D64/D64_pop2.html"
+   ]
+  },
+  {
+   "id": "X5",
+   "resolution": "Cinq occurrences de protoporphyrine IX / protoporphyrinogène IX liées à ChEBI 15430/15435 (lien data-reference-source, non enveloppé par le glossaire) ; vérification wrap_html : 0 clé IX.",
+   "fichiers": [
+    "chapters/D64/D64_c.html",
+    "chapters/D64/D64_pop2.html"
+   ]
+  },
+  {
+   "id": "O1",
+   "resolution": "Quatre phrases sur « le cours » réécrites (P01.5, fenêtre plomb, A11.4, P01.1).",
+   "fichiers": [
+    "chapters/D64/D64_d.html",
+    "chapters/D64/D64_pop1.html",
+    "chapters/D64/D64_b.html"
+   ]
+  },
+  {
+   "id": "O2",
+   "resolution": "Rétroaction du quiz 3 : « Les dosages de cuivre et de zinc confirment ou écartent cette hypothèse. »",
+   "fichiers": [
+    "chapters/D64/D64_c.html"
+   ]
+  }
+ ]
 }
