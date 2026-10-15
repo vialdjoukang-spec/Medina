@@ -1,3 +1,7 @@
+## Travail en conversations parallèles — 15 octobre 2026
+
+Pour S08/S05/S04/S06, lire [le protocole par conversation](docs/collaboration/instructions/CONVERSATIONS_PARALLELES_2026-10-15.txt) et [son PDF](docs/collaboration/Medina-protocole-collaboration.pdf). Une tâche, un cours, un rôle, un worktree et des chemins propres ; intégration séquentielle des fichiers partagés. Plusieurs conversations d’une même IA sont possibles sur des chemins distincts. La politique commune de parité et de publication reste applicable.
+
 # REPRISE DE SESSION — règle absolue (Vial, 15.10.2026, actualisée le 15.10.2026 après-midi)
 
 Toute nouvelle session Claude lit **ce fichier seul** et reprend sans relire l'historique.

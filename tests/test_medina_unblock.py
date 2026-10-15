@@ -1,5 +1,8 @@
 import datetime as dt
+import contextlib
+import copy
 import importlib.util
+import io
 from pathlib import Path
 import unittest
 
@@ -41,13 +44,85 @@ class TestUnblock(unittest.TestCase):
         self.pr["base"]["sha"] = "new"
         self.assertEqual(m.decide(self.pr, [], [], [n], self.cfg, self.now)["stage"], "notice")
 
-    def test_codex_ignored(self):
+    def test_codex_treated_equally(self):
+        claude = m.decide(self.pr, [], [], [], self.cfg, self.now)
         self.pr["head"]["ref"] = "codex/test"
+        self.assertEqual(m.decide(self.pr, [], [], [], self.cfg, self.now), claude)
+
+    def test_other_prefix_ignored(self):
+        self.pr["head"]["ref"] = "other/test"
         self.assertIsNone(m.decide(self.pr, [], [], [], self.cfg, self.now))
 
     def test_fork_ignored(self):
-        self.pr["head"]["repo"]["full_name"] = "stranger/Medina"
+        for prefix in ("claude", "codex"):
+            with self.subTest(prefix=prefix):
+                self.pr["head"]["ref"] = prefix + "/test"
+                self.pr["head"]["repo"]["full_name"] = "stranger/Medina"
+                self.assertIsNone(m.decide(self.pr, [], [], [], self.cfg, self.now))
+
+    def test_deleted_repository_ignored(self):
+        self.pr["head"]["repo"] = None
         self.assertIsNone(m.decide(self.pr, [], [], [], self.cfg, self.now))
+
+    def test_delay_and_owner_veto_are_symmetric(self):
+        for prefix in ("claude", "codex"):
+            with self.subTest(prefix=prefix):
+                self.pr["head"]["ref"] = prefix + "/test"
+                notice = self.notice()
+                self.assertIsNone(m.decide(self.pr, [], [], [notice], self.cfg,
+                                          self.now + dt.timedelta(seconds=299)))
+                self.assertEqual(m.decide(self.pr, [], [], [notice], self.cfg,
+                                         self.now + dt.timedelta(seconds=300))["stage"], "delegated")
+                reply = {"user": {"login": self.cfg["owner"]},
+                         "created_at": "2026-10-15T12:01:00Z"}
+                self.assertIsNone(m.decide(self.pr, [], [], [notice, reply], self.cfg,
+                                          self.now + dt.timedelta(seconds=600)))
+
+    def test_messages_use_common_policy_without_inferring_identity(self):
+        for prefix in ("claude", "codex"):
+            with self.subTest(prefix=prefix):
+                self.pr["head"]["ref"] = prefix + "/test"
+                notice = self.notice()
+                action = m.decide(self.pr, [], [], [notice], self.cfg,
+                                  self.now + dt.timedelta(seconds=300))
+                body = m.message(action, self.pr)
+                self.assertIn("l'auteur responsable", body)
+                self.assertIn(m.POLICY, body)
+                self.assertIn("ne prouvent aucune identite ni permission", body)
+                self.assertIn("ne vaut pas accord du proprietaire", body)
+
+    def test_scan_includes_both_queues_and_skips_forks_without_writes(self):
+        cfg = {**self.cfg, "control_issue": 97}
+        prs = []
+        for number, (prefix, repo) in enumerate([
+            ("claude", cfg["repository"]), ("codex", cfg["repository"]),
+            ("other", cfg["repository"]), ("codex", "stranger/Medina"),
+            ("claude", "stranger/Medina"),
+        ], 1):
+            pr = copy.deepcopy(self.pr)
+            pr.update(number=number, state="open")
+            pr["head"]["ref"] = prefix + "/test"
+            pr["head"]["repo"]["full_name"] = repo
+            prs.append(pr)
+
+        class FakeAPI:
+            def __init__(self):
+                self.requests = []
+
+            def pages(self, path, key=None):
+                return prs if path == "pulls?state=open" else []
+
+            def request(self, path, data=None):
+                if data is not None:
+                    raise AssertionError("A dry scan must not write")
+                self.requests.append(path)
+                return copy.deepcopy(prs[int(path.split("/")[1]) - 1])
+
+        api = FakeAPI()
+        with contextlib.redirect_stdout(io.StringIO()):
+            actions = m.run(cfg, api, self.now, dry_run=True)
+        self.assertEqual([action["pr"] for action in actions], [1, 2])
+        self.assertEqual(set(api.requests), {"pulls/1", "pulls/2"})
 
     def test_unknown_mergeable_not_conflict(self):
         self.pr["mergeable"] = None

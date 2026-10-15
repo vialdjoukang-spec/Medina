@@ -11,6 +11,15 @@ import urllib.request
 
 PREFIX = "<!-- medina-unblock:v1 "
 UTC = dt.timezone.utc
+POLICY = "docs/collaboration/instructions/PUBLICATION_EN_ETAT_PARITE_2026-10-15.md"
+
+
+def in_scope(pr, config):
+    # Prefixes select work queues only; they prove no identity or permission.
+    head = pr.get("head", {})
+    repository = head.get("repo") or {}
+    return (head.get("ref", "").startswith(("claude/", "codex/"))
+            and repository.get("full_name", "").lower() == config["repository"].lower())
 
 
 def stamp(value):
@@ -35,7 +44,7 @@ def findings(pr, checks, statuses):
     if pr.get("draft"):
         out.append("brouillon: aucune publication automatique")
     if pr.get("mergeable") is False:
-        out.append("conflit de fusion: reconciliation par Claude dans son propre checkout")
+        out.append("conflit de fusion: reconciliation par l'auteur responsable dans son propre checkout")
     elif pr.get("mergeable") is None:
         out.append("fusionnabilite encore inconnue: ne pas deduire un conflit")
     failed = [c["name"] for c in checks if c.get("conclusion") in {"failure", "timed_out", "cancelled", "action_required"}]
@@ -58,8 +67,7 @@ def marker(comment):
 
 
 def decide(pr, checks, statuses, comments, config, now):
-    # Claude ownership is a branch hint, not an identity inferred from shared login.
-    if not pr["head"]["ref"].startswith("claude/") or pr["head"]["repo"]["full_name"].lower() != config["repository"].lower():
+    if not in_scope(pr, config):
         return None
     problems = findings(pr, checks, statuses)
     if not problems:
@@ -72,7 +80,7 @@ def decide(pr, checks, statuses, comments, config, now):
     if not notices:
         return {"key": key, "stage": "notice", "problems": problems}
     first = min((c for c, _ in notices), key=lambda c: c["created_at"])
-    # Every human owner response is conservative veto, including Claude on shared account.
+    # Every human owner response is conservative veto, including either AI on a shared account.
     if any(c.get("user", {}).get("login") == config["owner"] and c.get("user", {}).get("type") != "Bot" and stamp(c["created_at"]) >= stamp(first["created_at"]) for c in comments):
         return None
     if (now - stamp(first["created_at"])).total_seconds() < config["grace_seconds"]:
@@ -107,15 +115,16 @@ class GitHub:
 
 def message(action, pr):
     meta = {k: action[k] for k in ("key", "stage")}
-    title = "Alerte preventive" if action["stage"] == "notice" else "Delegation operationnelle disponible pour Claude"
+    title = "Alerte preventive" if action["stage"] == "notice" else "Delegation operationnelle disponible pour l'auteur responsable"
     detail = ("Delai minimal de cinq minutes ouvert a Vial; aucune action sur les sources ni branches."
               if action["stage"] == "notice" else
-              "Au moins cinq minutes ecoulees sans reponse du compte proprietaire dans ce fil. Claude peut choisir et appliquer un correctif operationnel reversible, sur son propre travail, selon la delegation versionnee. Ceci n'est ni une fusion ni une validation medicale.")
+              "Au moins cinq minutes ecoulees sans reponse du compte proprietaire dans ce fil. L'auteur responsable peut choisir et appliquer un correctif operationnel reversible, sur son propre travail, selon la politique commune. Le delai ne vaut pas accord du proprietaire et ne cree aucun droit GitHub. Ceci n'est ni une fusion ni une validation medicale.")
     return (PREFIX + json.dumps(meta) + " -->\n" + "### " + title + "\n\n"
             + f"Branche `{pr['head']['ref']}`, tete `{pr['head']['sha']}`.\n\n"
             + "\n".join("- " + x for x in action["problems"]) + "\n\n" + detail
-            + "\n\nInstruction: `docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md`. "
-            + "Arret global: `/medina off` dans l'issue de controle. Aucun lancement automatique de session Claude.")
+            + f"\n\nInstruction: `{POLICY}`. "
+            + "Les prefixes de branche ne prouvent aucune identite ni permission. "
+            + "Arret global: `/medina off` dans l'issue de controle. Aucun lancement automatique de session Codex ou Claude.")
 
 
 def run(config, api, now, dry_run=False):
@@ -129,7 +138,7 @@ def run(config, api, now, dry_run=False):
     print(json.dumps({"branches": len(branches), "open_prs": len(prs)}))
     actions = []
     for item in prs:
-        if not item["head"]["ref"].startswith("claude/"):
+        if not in_scope(item, config):
             continue
         number = item["number"]
         pr = api.request(f"pulls/{number}")

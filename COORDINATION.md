@@ -1,3 +1,7 @@
+## Travail en conversations parallèles — 15 octobre 2026
+
+Pour S08/S05/S04/S06, lire [le protocole par conversation](docs/collaboration/instructions/CONVERSATIONS_PARALLELES_2026-10-15.txt) et [son PDF](docs/collaboration/Medina-protocole-collaboration.pdf). Une tâche, un cours, un rôle, un worktree et des chemins propres ; intégration séquentielle des fichiers partagés. Plusieurs conversations d’une même IA sont possibles sur des chemins distincts. La politique commune de parité et de publication reste applicable.
+
 ## Instruction active — parité et publication en l’état, 15 octobre 2026
 
 Lire d’abord [la politique commune](docs/collaboration/instructions/PUBLICATION_EN_ETAT_PARITE_2026-10-15.md). Codex et Claude ont les mêmes pouvoirs administratifs locaux et le même droit de veto dans tout MEDINA ; les anciens leaderships, STOP et privilèges d’injection incompatibles sont historiques. L’opération actuelle publie les cours existants, y compris incomplets, de Neurologie, Endocrinologie et métabolisme, Néphrologie et Hématologie, sans modifier les contenus médicaux. Utiliser le reçu de provenance et la garde de publication en l’état ; conserver les statuts provisoires et toutes les preuves historiques. Les droits GitHub dépendent des connexions réellement accordées. Les veto sont tracés dans `organisation/governance_events.jsonl` ; Vial reste l’autorité prioritaire.
