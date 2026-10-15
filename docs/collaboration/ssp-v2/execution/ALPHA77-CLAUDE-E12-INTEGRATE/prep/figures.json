@@ -1,0 +1,94 @@
+{
+ "mission": "ALPHA77-CLAUDE-E12-INTEGRATE",
+ "agent": "P",
+ "date": "2026-10-15",
+ "publication_ready": false,
+ "medical_human_validation": false,
+ "inventaire": "python3 tools/image_clo_finder.py inventory E12 : 1 figure SVG dans E12_a (figure 1, SCHEMA_NON_ANATOMIQUE, C25 traité par W), figures SVG et icônes décoratives dans E12_c ; croisé avec rapport MED clé figures : seules les figures 2 et 3 sont ANATOMIQUE_IA.",
+ "recherches": [
+  {
+   "outil": "image_clo_finder candidates --direct (commons)",
+   "requete": "chronic calcific pancreatitis CT calcifications",
+   "resultat": "erreur HTTP 429, cooldown partagé enregistré, aucun nouvel essai"
+  },
+  {
+   "outil": "image_clo_finder candidates --direct --provider europepmc",
+   "requete": "fibrocalculous pancreatic diabetes imaging",
+   "resultat": "6 articles (découverte seulement) ; aucune figure retenue : licences de figure non établies ou articles sans imagerie pertinente"
+  },
+  {
+   "outil": "image_clo_finder candidates --direct (commons)",
+   "requete": "pancreatic islet of Langerhans histology micrograph",
+   "resultat": "0 résultat"
+  },
+  {
+   "outil": "API Commons imageinfo (un appel, titres nommés par le rapport MED)",
+   "resultat": "HTTP 429 ; aucun nouvel essai"
+  },
+  {
+   "outil": "lecture directe des pages Commons nommées par le rapport MED (WebFetch, 3 pages)",
+   "resultat": "auteur, licence, URL originale et description obtenus ; 2 originaux téléchargés une seule fois depuis upload.wikimedia.org"
+  }
+ ],
+ "figures": [
+  {
+   "figure_remplacee": "Figure 2 — Pancréas normal et pancréas de FCPD (SVG dessiné, ANATOMIQUE_IA)",
+   "constat_med": "C23 (MAJEUR)",
+   "emplacement": "chapters/E12/E12_c.html, #e12-s-anat-cours",
+   "fichier": "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Chronische_Pankreatitis_mit_Verkalkungen_-_CT_axial.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Chronische_Pankreatitis_mit_Verkalkungen_-_CT_axial.jpg",
+   "auteur": "Hellerhoff (œuvre personnelle, 25.06.2012) ; flèche ajoutée par Doc James (révision de février 2021)",
+   "licence": "CC BY-SA 3.0 Unported",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "attribution": "Image : Hellerhoff (flèche ajoutée par Doc James), Wikimedia Commons, licence CC BY-SA 3.0",
+   "description_source": "« Chronische Pankreatitis mit multiplen Verkalkungen in der Computertomographie. »",
+   "dimensions": "1158 × 956 px, JPEG, 210 312 octets",
+   "sha256": "40468ceb7da16eda0b28722aa4c78a9930578fc4074a139261b8bb977c30a11d",
+   "controle_visuel": "Fait (outil Read, 15.10.2026) : coupe axiale réelle de tomodensitométrie abdominale au niveau des reins ; multiples calcifications hyperdenses alignées le long du corps et de la queue du pancréas, en avant de la veine splénique ; flèche rouge pointée sur elles. Concordance avec la légende proposée. Aucun marqueur de génération sur la page.",
+   "provenance_humaine": "Déclarée « own work » par un utilisateur radiologue de Commons ; image d’examen réel, non dessinée.",
+   "reserves": [
+    "Cause de la pancréatite non précisée par la source : la légende ne prétend pas montrer une FCPD.",
+    "Partage dans les mêmes conditions (SA) : attribution et mention de licence obligatoires.",
+    "Métadonnées obtenues par lecture de la page Commons (WebFetch) : l’API Commons et le moteur Image_Clo_finder ont renvoyé HTTP 429 (cooldown partagé enregistré, aucun nouvel essai en boucle).",
+    "Revue IA, distincte d’une validation médicale humaine."
+   ]
+  },
+  {
+   "figure_remplacee": "Figure 3 — Îlot normal et îlot fibrosé (SVG dessiné, ANATOMIQUE_IA)",
+   "constat_med": "C24 (MAJEUR)",
+   "emplacement": "chapters/E12/E12_c.html, #e12-s-histo-cours",
+   "fichier": "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Langerhanssche_Insel.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Langerhanssche_Insel.jpg",
+   "auteur": "Polarlys (œuvre personnelle, 08.08.2006)",
+   "licence": "CC BY 2.5 Generic (choisie parmi GFDL 1.2+, CC BY-SA 3.0 et CC BY 2.5, au choix du réutilisateur selon la page)",
+   "licence_url": "https://creativecommons.org/licenses/by/2.5",
+   "attribution": "Image : Polarlys, Wikimedia Commons, licence CC BY 2.5",
+   "description_source": "EN « islet of Langerhans, haemalum-eosin stain » ; DE : îlot de Langerhans du pancréas, coloration HE ; les cellules plus petites et plus claires produisent l’insuline et le glucagon. Catégorie : histologie du pancréas humain.",
+   "dimensions": "596 × 518 px, JPEG, 129 058 octets",
+   "sha256": "640b682437363580e6942f074846bac0632a8dca29def8add1671960ec1b384c",
+   "controle_visuel": "Fait (outil Read, 15.10.2026) : micrographie réelle hémalun-éosine ; zone centrale de cellules pâles à noyaux ronds (îlot) entourée d’acinus à cytoplasme plus basophile. Concordance avec la légende. Aucun marqueur de génération sur la page.",
+   "provenance_humaine": "Photographie de microscopie déclarée « own work » ; non dessinée.",
+   "reserves": [
+    "Îlot normal : aucune micrographie libre d’îlot fibrosé de FCPD n’a été trouvée ; la légende le dit et ne simule pas la comparaison de l’ancien schéma.",
+    "Grossissement non indiqué par la source.",
+    "Candidat Servier Medical Art (CC BY-SA 3.0) écarté : illustration dessinée, la micrographie réelle est préférée.",
+    "Revue IA, distincte d’une validation médicale humaine."
+   ]
+  }
+ ],
+ "figures_non_remplacees": [
+  {
+   "figure": "Figure 1 (E12_a), 4, 5, 6 (E12_c)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "decision": "conservées ; C25 (proportions de la figure 1) relève de W"
+  },
+  {
+   "figure": "Icônes de la barre des sciences",
+   "classe": "décoratives non anatomiques",
+   "decision": "conservées"
+  }
+ ],
+ "figure_semiologie": "Le sous-onglet sémiologie contient un schéma SVG NON anatomique (chaînes causales), chaque flèche sourcée dans sa légende ; aucune image anatomique supplémentaire n’était nécessaire."
+}

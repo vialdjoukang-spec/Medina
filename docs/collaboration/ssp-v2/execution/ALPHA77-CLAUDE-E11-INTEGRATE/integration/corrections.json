@@ -1,0 +1,883 @@
+{
+ "mission": "ALPHA77-CLAUDE-E11-INTEGRATE",
+ "phase": 1,
+ "agent": "W (rédacteur et intégrateur)",
+ "code": "E11 — Diabète sucré de type 2 (S05)",
+ "branche": "claude/alpha77/e11-integrate-g1",
+ "base": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "date": "2026-10-15",
+ "audits_sources": [
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-E11-MED/",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-E11-LANG/"
+ ],
+ "bilan": {
+  "MED": {
+   "MAJEUR": "1/1 corrigé",
+   "MINEUR": "6/6 corrigés",
+   "ENRICHISSEMENT": "3/3 intégrés"
+  },
+  "LANG_propositions": {
+   "total": 302,
+   "appliquees": 243,
+   "groupe_LIENS_differe": 54,
+   "superposees_non_appliquees": 5
+  },
+  "LANG_renvois": {
+   "corriges": 15,
+   "justifies_non_appliques": [
+    "R-13",
+    "R-17"
+   ],
+   "differes": [
+    "R-14",
+    "R-16"
+   ]
+  }
+ },
+ "corrections": [
+  {
+   "id": "E11-MED-01",
+   "gravite": "MAJEUR",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Calendrier de dépistage (35 ans ; surpoids ou obésité avec facteur de risque) présenté comme proposition européenne co-signée alors qu’il provient des Standards of Care 2025 de l’American Diabetes Association, cités par le consensus ADA/EASD 2026.",
+   "action": "Corrigé : repère requalifié d’américain et comparatif dans l’îlot 4 (texte, en-tête et cellule du tableau), dans la fenêtre e11-depistage (paragraphe et encadré « Contexte suisse », lacune déclarée) et dans le Pareto pareto-e11-clin ; ESC 2023 conservée comme fondement européen ; références de l’îlot 4 complétées (SSED 2023, ADA/EASD 2026 référence 23, ESC 2023 section 3).",
+   "source": "S22 (section « The rationale… », référence 23) ; S20 section 3 ; S13",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_a.html",
+     "ancre_avant": "Le consensus conjoint ADA/EASD 2026 propose le dépistage dès 35 ans, et à tout âge en cas de surpoids ou d’obésité avec un facteur de risque ; l’<button class=\"w\" data-k=\"e11-gl-14\">ESC</button> demande de rechercher un ",
+     "apres": "Aucun calendrier suisse ou européen de dépistage de population n’a été retrouvé. Le consensus ADA/EASD 2026 reprend, en citant les standards américains de 2025, un dépistage dès 35 ans et à tout âge en cas de surpoids ou"
+    },
+    {
+     "fichier": "chapters/E11/E11_a.html",
+     "ancre_avant": "<th>Orientation du dépistage (consensus conjoint ADA/EASD 2026)</th>",
+     "apres": "<th>Orientation du dépistage (repère comparatif)</th>"
+    },
+    {
+     "fichier": "chapters/E11/E11_a.html",
+     "ancre_avant": "<td>Toute personne dès 35 ans ; surpoids ou obésité avec facteur de risque à tout âge</td>",
+     "apres": "<td>Âge de 35 ans ou plus, ou surpoids et obésité avec facteur de risque (standards américains cités par le consensus ADA/EASD 2026, repère comparatif)</td>"
+    },
+    {
+     "fichier": "chapters/E11/E11_a.html",
+     "ancre_avant": "<p class=\"src\">Références : <a href=\"https://link.springer.com/article/10.1007/s00125-026-06855-7\" target=\"_blank\" rel=\"noopener\">Davies et al., consensus ADA/EASD 2026</a>.</p></section>\n<section class=\"ilot\" id=\"e11-5\"",
+     "apres": "<p class=\"src\">Références : <a href=\"https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/SGED-SSED_long_Recommendations_2023_en.pdf\" target=\"_blank\" rel=\"noopener\">SSED 2023, gestion du poi"
+    },
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "<p>Le dépistage recherche une maladie encore silencieuse par glycémie plasmatique à jeun ou HbA1c standardisée. Le consensus conjoint ADA/EASD 2026 propose un dépistage dès 35 ans, et à tout âge en cas de surpoids ou d’o",
+     "apres": "<p>Le dépistage recherche une maladie encore silencieuse par glycémie plasmatique à jeun ou HbA1c standardisée. Le consensus ADA/EASD 2026 cite les standards américains de 2025 : dépistage dès 35 ans, et à tout âge en ca"
+    },
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "Les recommandations suisses de traitement 2023 ne fixent pas à elles seules un calendrier national exhaustif : le calendrier européen co-signé complète ce point.",
+     "apres": "Les recommandations suisses de traitement 2023 ne fixent pas de calendrier national de dépistage, et aucun calendrier européen spécifique n’a été retrouvé : cette lacune est assumée."
+    },
+    {
+     "fichier": "chapters/E11/E11_pop2.html",
+     "ancre_avant": "<li><button class=\"w\" data-justification=\"1\" data-k=\"e11-depistage\">Le dépistage</button> est proposé dès 35 ans dans le consensus conjoint 2026, plus tôt en cas de surpoids/obésité avec facteur de risque ; l’<button cla",
+     "apres": "<li><button class=\"w\" data-justification=\"1\" data-k=\"e11-depistage\">Le dépistage</button> n’a pas de calendrier suisse ou européen ; le consensus conjoint 2026 cite le repère américain de 35 ans, ou plus tôt en cas de su"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-02",
+   "gravite": "MINEUR",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Sulfonylurées dites « plus recommandées par la SSED », alors que la SSED 2023 garde le gliclazide dans des cas choisis.",
+   "action": "Corrigé selon propositions/E11_b_1.html (îlot 10).",
+   "source": "S13",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "Les <button class=\"w\" data-justification=\"1\" data-k=\"e11-su\">sulfonylurées (position suisse et contentieux)</button> ne sont plus recommandées par la SSED.",
+     "apres": "La SSED n’admet plus, parmi les <button class=\"w\" data-justification=\"1\" data-k=\"e11-su\">sulfonylurées (position suisse et contentieux)</button>, que le gliclazide, dans des cas choisis, parce que sa demi-vie courte et l"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-03",
+   "gravite": "MINEUR",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Même inexactitude dans la cellule du gliclazide (tableau des classes, onglet Pharmacologie).",
+   "action": "Corrigé selon propositions/E11_d_1.html.",
+   "source": "S13",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_d.html",
+     "ancre_avant": "<td>N’est plus recommandé par la SSED ; exceptions</td>",
+     "apres": "<td>Seule sulfonylurée encore admise par la SSED, dans des cas choisis (par exemple MODY 1 et 3) ; insuline basale préférée après échec de la trithérapie</td>"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-04",
+   "gravite": "MINEUR",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "« Éviter une HbA1c trop élevée » trop vague ; la SSED fixe le plafond de 8,0 %.",
+   "action": "Corrigé selon propositions/E11_b_2.html, fusionné avec le découpage de phrase L-018.",
+   "source": "S13",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "sans hypoglycémie significative et répétée, et 7 à 8 % chez le sujet âgé, fragile ou à espérance de vie limitée ; la SSED conseille d’éviter une HbA1c trop élevée ; le consensus 2026 souligne",
+     "apres": "sans hypoglycémie significative et répétée, et 7 à 8 % chez le sujet âgé, fragile ou à espérance de vie limitée. La SSED précise qu’une HbA1c supérieure à 8,0 % doit être évitée dans tous les cas, car les complications a"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-05",
+   "gravite": "MINEUR",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Contentieux SSED 2023 / ESC 2023 sur l’aspirine en prévention primaire non exposé.",
+   "action": "Corrigé selon propositions/E11_b_3.html (deux positions et arbitrage suisse) ; l’ESC 2023 figure déjà dans les références de l’îlot 10.",
+   "source": "S13 ; S20 5.6.1",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "L’aspirine relève de la prévention secondaire ; elle n’est généralement pas recommandée en prévention primaire (SSED 2023).",
+     "apres": "L’aspirine est admise en prévention secondaire. En prévention primaire, la SSED 2023 ne la recommande généralement pas, alors que l’<button class=\"w\" data-k=\"e11-gl-14\">ESC</button> 2023 indique que l’aspirine à 75–100 m"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-06",
+   "gravite": "MINEUR",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Glossaire NPH : non-recommandation SSED non sourcée.",
+   "action": "Corrigé selon propositions/glossary_e11_1.txt.",
+   "source": "S18 ; S13",
+   "modifications": [
+    {
+     "fichier": "glossary/e11.py",
+     "ancre_avant": "la SSED ne la recommande plus comme insuline basale du diabète de type 2 en raison de son risque d’hypoglycémie",
+     "apres": "la SSED la cite encore comme option basale, administrée deux fois par jour, mais préfère les analogues lents et ultralents, dont le risque d’hypoglycémie est plus faible"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-07",
+   "gravite": "ENRICHISSEMENT",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Vaccinations OFSP du diabétique absentes.",
+   "action": "Intégré : paragraphe « Vaccinations » dans l’îlot 11, encadré « À retenir » complété, Plan de vaccination suisse 2026 ajouté aux références de l’îlot.",
+   "source": "S24",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "<div class=\"key\"><b>À retenir.</b> Le suivi annuel couvre la glycémie, la pression artérielle, les lipides, le rein, l’œil et le pied. Les règles des jours de maladie s’enseignent dès la première prescription.</div>",
+     "apres": "<p><b>Vaccinations.</b> Le diabète expose à des complications infectieuses plus graves ; le Plan de vaccination suisse 2026 en tire trois conséquences. La vaccination annuelle contre la grippe saisonnière est recommandée"
+    },
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "(fin de la liste de références de l’îlot 11)",
+     "apres": "+ Plan de vaccination suisse 2026"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-08",
+   "gravite": "ENRICHISSEMENT",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Diabète de type 2 à début précoce sans conduite propre.",
+   "action": "Intégré : paragraphe dans l’îlot 12 avant « Femme en âge de procréer » ; référence ADA/EASD 2026 ajoutée à l’îlot.",
+   "source": "S22",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "<p><b>Femme en âge de procréer.</b>",
+     "apres": "<p><b>Diabète de type 2 à début précoce.</b> Un diagnostic avant 40 ans définit un diabète de type 2 à début précoce. La glycémie s’y détériore plus vite, la réponse aux médicaments est atténuée et les complications surv"
+    },
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "(fin de la liste de références de l’îlot 12)",
+     "apres": "+ ADA/EASD 2026, début précoce"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-09",
+   "gravite": "ENRICHISSEMENT",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Sous-codes CIM-10-GM non cités (rubriques 2 et 19).",
+   "action": "Intégré : fenêtre en prose e11-codage (sans îlot ni tableau) dans E11_pop2.html, reliée par un mot vert dans l’îlot 1 ; douze sous-codes ajoutés au glossaire (précédent A84/C70) pour que l’audit des abréviations reste {}.",
+   "source": "S25",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_a.html",
+     "ancre_avant": "<p>Le clinicien distingue le type 2 des autres formes, car chacune appelle un traitement propre.",
+     "apres": "<p>Le clinicien distingue le type 2 des autres formes, car chacune appelle un traitement propre. La CIM-10-GM range le type 2 sous E11 et précise la complication et la décompensation par des sous-codes, détaillés dans le"
+    },
+    {
+     "fichier": "chapters/E11/E11_pop2.html",
+     "ancre_avant": "(fin de fichier)",
+     "apres": "fenêtre e11-codage"
+    }
+   ]
+  },
+  {
+   "id": "E11-MED-10",
+   "gravite": "MINEUR (ANATOMIQUE_IA soumis à arbitrage)",
+   "origine": "ALPHA1-CLAUDE-E11-MED",
+   "constat": "Pictogramme d’onglet « Physiologie rénale » dessinant une silhouette de rein sans source.",
+   "action": "Corrigé : silhouette remplacée par le pictogramme non anatomique déjà employé pour l’onglet « Physiologie » (aucun nouveau dessin) ; traité comme MAJEUR au sens de la règle, sans attendre l’arbitrage.",
+   "source": "Règle des figures Vial du 15.10.2026",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_c.html",
+     "ancre_avant": "<path d=\"M9 3C2 3 2 21 9 21c5 0 3-7 0-9 3-2 5-9 0-9Zm6 9h6\"></path></svg>Physiologie rénale",
+     "apres": "<path d=\"M2 12h4l3-7 4 14 3-7h6\"></path></svg>Physiologie rénale"
+    }
+   ]
+  },
+  {
+   "id": "R-01",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Affirmation sans valeur : « forte fréquence » et « variable selon les populations » ne disent aucun chiffre ; la phrase ne peut pas être contrôlée.",
+   "statut": "corrigé",
+   "action": "Chiffre de la SSED 2023 rétabli : 60 à 90 % des personnes atteintes d’un diabète de type 2 sont obèses ; SSED 2023 ajoutée aux références de l’îlot 4.",
+   "source": "S13, « Weight management in Type 2 Diabetes and Obesity »",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_a.html",
+     "ancre_avant": "<p class=\"src\">Références : <a href=\"https://link.springer.com/article/10.1007/s00125-026-06855-7\" target=\"_blank\" rel=\"noopener\">Davies et al., consensus ADA/EASD 2026</a>.</p></section>\n<section class=\"ilot\" id=\"e11-5\"",
+     "apres": "<p class=\"src\">Références : <a href=\"https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/SGED-SSED_long_Recommendations_2023_en.pdf\" target=\"_blank\" rel=\"noopener\">SSED 2023, gestion du poi"
+    },
+    {
+     "fichier": "chapters/E11/E11_a.html",
+     "ancre_avant": "la SSED 2023 cite une forte fréquence d’obésité, variable selon les populations.",
+     "apres": "selon la SSED 2023, 60 à 90 % des personnes atteintes d’un diabète de type 2 sont obèses."
+    }
+   ]
+  },
+  {
+   "id": "R-02",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Le cas de l’îlot 0 est chiffré à 6 mg/mmol et l’îlot 9 annonce « un rapport de 6 mg/mmol confirmé à trois mois » ; l’îlot 12 donne 5 mg/mmol (même catégorie A2, mais le chiffre change).",
+   "statut": "corrigé",
+   "action": "Cas fictif harmonisé à 6 mg/mmol (îlots 0, 9 et 12).",
+   "source": "Cohérence interne du cas",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_b.html",
+     "ancre_avant": "Trois mois plus tard, le patient de l’îlot 0 a un rapport albumine/créatinine de 5 mg/mmol",
+     "apres": "Trois mois plus tard, le patient de l’îlot 0 a toujours un rapport albumine/créatinine de 6 mg/mmol"
+    }
+   ]
+  },
+  {
+   "id": "R-03",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "La liste « DFG 45–59 avec A2, A3, ou atteinte… » ne dit pas si A3 s’associe à un DFG 45–59 ou vaut seul ; l’énumération est syntaxiquement ambiguë.",
+   "statut": "corrigé",
+   "action": "Liste réécrite : DFG < 45 quelle que soit l’albuminurie ; DFG 45–59 avec A2 ; A3 seule ; atteinte microvasculaire d’au moins trois territoires.",
+   "source": "ESC 2023, traduction italienne officielle (Giornale italiano di cardiologia), note « TOD severo » du tableau SCORE2-Diabetes",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "L’atteinte sévère comprend <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> &lt; 45 mL/min/1,73 m², <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> 45–59 avec <button class=\"w\" data-k=\"e11-gl-21\">A2</button>, <button ",
+     "apres": "L’atteinte sévère d’organe cible correspond à un <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> &lt; 45 mL/min/1,73 m² quelle que soit l’albuminurie, à un <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> de 45 à 59 m"
+    }
+   ]
+  },
+  {
+   "id": "R-04",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "« Cette discussion » n’a pas d’antécédent dans la fenêtre (le paragraphe précédent parle d’« orientation urgente »).",
+   "statut": "corrigé",
+   "action": "« Cette discussion » remplacée par l’action du guide : un ulcère de grade 3 (os ou articulation) fait envisager le niveau 3 ; plaie noire = suspicion de nécrose.",
+   "source": "S19 QualiCCare 2023, red flags et annexe niveau 2",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "Une plaie noire évoque une nécrose ; une atteinte osseuse ou articulaire de grade 3 impose également cette discussion.",
+     "apres": "Une plaie noire fait suspecter une nécrose. Un ulcère de grade 3, qui atteint l’os ou l’articulation, fait aussi envisager le niveau 3."
+    }
+   ]
+  },
+  {
+   "id": "R-05",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "L’indice cheville/bras et les pressions d’orteil ne sont pas des paramètres « du sang » ; la précision visée (« valeurs de perfusion, non valeurs biologiques normales ») n’est pas dite.",
+   "statut": "corrigé",
+   "action": "Seuils requalifiés : seuils d’alarme de perfusion d’une urgence ischémique critique, non intervalles de référence.",
+   "source": "S19 QualiCCare 2023",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "Le guide les retient comme signaux d’une urgence ischémique ; ces seuils ne sont pas des intervalles normaux du sang.",
+     "apres": "Le guide les retient comme signaux d’une urgence ischémique critique ; ce sont des seuils d’alarme de perfusion, non des intervalles de référence."
+    }
+   ]
+  },
+  {
+   "id": "R-06",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "« Le risque de ce parcours » est énigmatique (risque de quoi ? d’amputation, de complication ?).",
+   "statut": "corrigé",
+   "action": "Signal reformulé : maladie rénale au stade terminal traitée par dialyse, critère du niveau 3.",
+   "source": "S19 QualiCCare 2023",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "Une insuffisance rénale terminale ou une dialyse augmente le risque de ce parcours.",
+     "apres": "Le patient a une maladie rénale au stade terminal, traitée par dialyse."
+    }
+   ]
+  },
+  {
+   "id": "R-07",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Sigle « Swiss C » non défini et inconnu du glossaire ; phrase difficile à comprendre.",
+   "statut": "corrigé",
+   "action": "« Swiss C » expliqué : énoncé fondé sur le consensus du groupe d’experts suisses ; frontière d’âge reformulée en phrases complètes.",
+   "source": "S15 Swiss Med Wkly 2024;154:4000, méthode",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "Les seuils de dépistage asymptomatique sont un consensus « Swiss C », avec une frontière d’âge exprimée &gt; 60 dans le texte et 60 dans l’algorithme ; l’âge ne remplace pas le jugement clinique.",
+     "apres": "Les seuils de dépistage asymptomatique reposent sur le consensus du groupe d’experts suisses, que la recommandation signale par la mention « Swiss C ». La frontière d’âge s’écrit « plus de 60 ans » dans le texte et « 60 "
+    }
+   ]
+  },
+  {
+   "id": "R-08",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Une HbA1c s’exprime en %, donc un écart de « 0,4 % » est ambigu (points de pourcentage ou valeur relative).",
+   "statut": "corrigé",
+   "action": "« 0,4 % » précisé en « 0,4 point de pourcentage ».",
+   "source": "S14 SSED 2011 : « über 70 Jahre HbA1c +0.4% »",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "après 70 ans, elle s’élève d’environ 0,4 %",
+     "apres": "après 70 ans, elle s’élève d’environ 0,4 point de pourcentage"
+    }
+   ]
+  },
+  {
+   "id": "R-09",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Lu littéralement, le médecin « évite » une maladie ; le sens voulu (éviter de prescrire en cas de gastroparésie sévère ?) n’est pas certain, et la tirzépatide est traitée par « prudence particulière » dans la fenêtre voisine.",
+   "statut": "corrigé",
+   "action": "Phrase réécrite d’après la FI : prudence d’Ozempic® en cas de gastroparésie, conduite exacte selon la FI de chaque produit.",
+   "source": "S7 FI Ozempic® juillet 2026 ; FI Mounjaro® (gastroparésie sévère non étudiée) lue en appui",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop2.html",
+     "ancre_avant": "Le médecin évite les formes sévères de gastroparésie selon le produit et informe l’anesthésiste",
+     "apres": "En cas de gastroparésie, la <button class=\"w\" data-k=\"e11-gl-23\">FI</button> d’Ozempic® demande la prudence, car les effets digestifs peuvent y être plus graves ; la conduite exacte suit la <button class=\"w\" data-k=\"e11-"
+    }
+   ]
+  },
+  {
+   "id": "R-10",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "« Sous DFG 45 » ne dit pas si 45 est inclus (< 45 ou ≤ 45).",
+   "statut": "corrigé",
+   "action": "Borne précisée : DFG inférieur à 45 mL/min/1,73 m² → 2,5 mg une fois par jour (absorbe L-218).",
+   "source": "FI Onglyza® septembre 2023, AmiKo GTIN 7680593900012, lue le 15.10.2026",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop2.html",
+     "ancre_avant": "sous <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> 45 mL/min/1,73 m², la dose est 2,5 mg",
+     "apres": "si le <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> est inférieur à 45 mL/min/1,73 m², la dose est de 2,5 mg une fois par jour"
+    }
+   ]
+  },
+  {
+   "id": "R-11",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "« ESC 2026 » alors que le cours cite partout l’ESC 2023 pour le diabète (le glossaire de ce fichier contient la même mention, ligne 68 de glossary/e11.py).",
+   "statut": "corrigé",
+   "action": "Mention « aucune classe ESC 2026 non sourcée n’est ajoutée ici » supprimée dans la fenêtre e11-gl-13 et dans le glossaire (mention de fabrication sans contenu, aucune ESC 2026 citée).",
+   "source": "—",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop2.html",
+     "ancre_avant": "Ses agonistes ont des indications propres aux produits ; aucune classe <button class=\"w\" data-k=\"e11-gl-14\">ESC</button> 2026 non sourcée n’est ajoutée ici.",
+     "apres": "Ses agonistes ont des indications propres à chaque produit."
+    },
+    {
+     "fichier": "glossary/e11.py",
+     "ancre_avant": "Ses agonistes ont des indications propres aux produits ; aucune classe ESC 2026 non sourcée n’est ajoutée ici.",
+     "apres": "Ses agonistes ont des indications propres à chaque produit."
+    }
+   ]
+  },
+  {
+   "id": "R-12",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Le membre de phrase « 1000 mg par jour, indépendamment de la présence de nausées » ne se comprend pas dans le contexte de l’insuffisance rénale.",
+   "statut": "corrigé",
+   "action": "« Indépendamment de la présence de nausées » remplacé par la règle de la FI : deux prises, seulement en l’absence d’autre facteur de risque d’acidose lactique.",
+   "source": "S1 FI Glucophage® octobre 2025, insuffisance rénale modérée",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop2.html",
+     "ancre_avant": "impose au plus 1000 mg par jour, indépendamment de la présence de nausées.",
+     "apres": "impose au plus 1000 mg par jour, en deux prises, et seulement en l’absence d’autre facteur de risque d’acidose lactique."
+    }
+   ]
+  },
+  {
+   "id": "R-13",
+   "gravite": "renvoi_integration",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Le même encadré (« Metformine et croissance fœtale » / « Restriction de grossesse ») figure à l’identique dans les fenêtres e11-grossesse et e11-d-metformine : répétition d’un bloc entier.",
+   "statut": "non appliqué, justifié",
+   "action": "Encadré conservé dans les deux fenêtres : la restriction de grossesse est une mention de la FI propre à la metformine ; chaque fenêtre s’ouvre isolément et le lecteur de la fenêtre Metformine ne doit pas devoir en ouvrir une autre pour une restriction de prescription.",
+   "source": "S1",
+   "modifications": []
+  },
+  {
+   "id": "R-14",
+   "gravite": "renvoi_integration",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Phrase passe-partout répétée à l’identique dans dix fenêtres (ZnT8, DPP-4, GIP, LDL, FLOW, SOUL, KDIGO, CKD-EPI, EAS, FEVG) : l’extrait n’est pas unique et ne peut donc pas être corrigé localement ; elle ne dit rien de propre à chaque notion.",
+   "statut": "différé",
+   "action": "Dix phrases passe-partout de fenêtres de sigles : leur remplacement exige une définition propre et sourcée par terme et touche la formule de renvoi du groupe LIENS (choix éditorial en attente). À traiter avec le groupe LIENS.",
+   "source": "—",
+   "modifications": []
+  },
+  {
+   "id": "R-15",
+   "gravite": "renvoi_integration",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Cellules identiques répétées (six occurrences de « traiter/adresser » dans le tableau de risque) : « ancien » non unique ; barre oblique à remplacer par « traiter ou adresser ».",
+   "statut": "corrigé",
+   "action": "« traiter/adresser » → « traiter ou adresser » dans toute la fenêtre e11-mrc.",
+   "source": "forme",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_pop1.html",
+     "ancre_avant": "traiter/adresser (10 occurrences, fenêtre e11-mrc)",
+     "apres": "traiter ou adresser"
+    }
+   ]
+  },
+  {
+   "id": "R-16",
+   "gravite": "renvoi_integration",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Numérotation des figures non croissante dans l’ordre de lecture : 1 (îlot 3), 7 (îlot 6), 8 (îlot 9), 6 (Examens), 2 à 5 (Sciences), puis 9 et 10 (fenêtres). Le renvoi « figure 8 de l’îlot 9 » est exact, mais la suite 1-7-8-6-2-5 déroute.",
+   "statut": "différé à la phase 2",
+   "action": "La renumérotation des figures se fera d’un bloc après l’intégration des figures validées par l’Agent P (sémiologie et remplacements éventuels), pour éviter une double renumérotation.",
+   "source": "—",
+   "modifications": []
+  },
+  {
+   "id": "R-17",
+   "gravite": "renvoi_integration",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Les étiquettes de mise en garde alternent entre « Piège » (span.k, îlots 8, E-2, fenêtre acanthosis) et « Erreur fréquente » (îlots 5 et 10) pour des encadrés de même fonction.",
+   "statut": "non appliqué, justifié",
+   "action": "Les deux étiquettes gardent un sens distinct : « Erreur fréquente » désigne une erreur de raisonnement du clinicien ; « Piège » désigne un résultat ou un signe trompeur.",
+   "source": "—",
+   "modifications": []
+  },
+  {
+   "id": "R-18",
+   "gravite": "renvoi_integration",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "Dans les chaînes HTML du glossaire, le signe « < » n’est pas écrit « &lt; » (lignes 62, 75, 76, 82) alors que les fenêtres emploient « &lt; » : risque d’affichage tronqué si le texte est inséré tel quel.",
+   "statut": "corrigé",
+   "action": "« < » isolé remplacé par « &lt; » dans les chaînes HTML du glossaire.",
+   "source": "encodage",
+   "modifications": [
+    {
+     "fichier": "glossary/e11.py",
+     "ancre_avant": "« < » isolé dans les chaînes HTML",
+     "apres": "&lt;"
+    }
+   ]
+  },
+  {
+   "id": "R-19",
+   "gravite": "renvoi_medical",
+   "origine": "ALPHA1-CLAUDE-E11-LANG/renvois.json",
+   "constat": "La pente de DFG est donnée en « mL/min par an » alors que le DFG est partout en mL/min/1,73 m² ; la fenêtre néphrologie dit « > 5 mL/min/an ».",
+   "statut": "corrigé",
+   "action": "Ajout « rapide et persistante » ; unité mL/min par an conservée, car c’est celle de la brochure suisse.",
+   "source": "S17 : « rasche und anhaltende Abnahme der eGFR (>5ml/min/Jahr) »",
+   "modifications": [
+    {
+     "fichier": "chapters/E11/E11_c.html",
+     "ancre_avant": "une baisse du <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> de plus de 5 mL/min par an",
+     "apres": "une baisse rapide et persistante du <button class=\"w\" data-k=\"e11-gl-16\">DFG</button> de plus de 5 mL/min par an"
+    }
+   ]
+  }
+ ],
+ "lang": {
+  "appliquees": [
+   "L-001",
+   "L-002",
+   "L-003",
+   "L-004",
+   "L-005",
+   "L-006",
+   "L-007",
+   "L-008",
+   "L-009",
+   "L-011",
+   "L-012",
+   "L-013",
+   "L-014",
+   "L-015",
+   "L-016",
+   "L-017",
+   "L-019",
+   "L-020",
+   "L-021",
+   "L-022",
+   "L-024",
+   "L-025",
+   "L-027",
+   "L-028",
+   "L-029",
+   "L-030",
+   "L-031",
+   "L-032",
+   "L-033",
+   "L-034",
+   "L-036",
+   "L-037",
+   "L-042",
+   "L-043",
+   "L-044",
+   "L-045",
+   "L-046",
+   "L-047",
+   "L-048",
+   "L-050",
+   "L-052",
+   "L-053",
+   "L-054",
+   "L-055",
+   "L-056",
+   "L-057",
+   "L-058",
+   "L-059",
+   "L-061",
+   "L-062",
+   "L-063",
+   "L-064",
+   "L-065",
+   "L-067",
+   "L-068",
+   "L-069",
+   "L-070",
+   "L-071",
+   "L-073",
+   "L-074",
+   "L-076",
+   "L-077",
+   "L-078",
+   "L-079",
+   "L-081",
+   "L-082",
+   "L-083",
+   "L-084",
+   "L-085",
+   "L-086",
+   "L-088",
+   "L-089",
+   "L-090",
+   "L-092",
+   "L-093",
+   "L-094",
+   "L-095",
+   "L-096",
+   "L-097",
+   "L-098",
+   "L-099",
+   "L-100",
+   "L-101",
+   "L-103",
+   "L-104",
+   "L-105",
+   "L-107",
+   "L-108",
+   "L-109",
+   "L-110",
+   "L-111",
+   "L-114",
+   "L-116",
+   "L-117",
+   "L-118",
+   "L-119",
+   "L-120",
+   "L-121",
+   "L-124",
+   "L-125",
+   "L-127",
+   "L-128",
+   "L-129",
+   "L-130",
+   "L-131",
+   "L-132",
+   "L-133",
+   "L-136",
+   "L-137",
+   "L-138",
+   "L-141",
+   "L-142",
+   "L-143",
+   "L-144",
+   "L-146",
+   "L-148",
+   "L-149",
+   "L-150",
+   "L-151",
+   "L-153",
+   "L-154",
+   "L-155",
+   "L-156",
+   "L-157",
+   "L-158",
+   "L-159",
+   "L-160",
+   "L-161",
+   "L-162",
+   "L-163",
+   "L-165",
+   "L-166",
+   "L-167",
+   "L-168",
+   "L-169",
+   "L-170",
+   "L-171",
+   "L-172",
+   "L-173",
+   "L-175",
+   "L-176",
+   "L-177",
+   "L-178",
+   "L-179",
+   "L-180",
+   "L-181",
+   "L-182",
+   "L-183",
+   "L-184",
+   "L-185",
+   "L-186",
+   "L-187",
+   "L-188",
+   "L-189",
+   "L-190",
+   "L-191",
+   "L-192",
+   "L-193",
+   "L-194",
+   "L-195",
+   "L-196",
+   "L-197",
+   "L-198",
+   "L-199",
+   "L-200",
+   "L-201",
+   "L-202",
+   "L-203",
+   "L-204",
+   "L-205",
+   "L-207",
+   "L-208",
+   "L-209",
+   "L-210",
+   "L-211",
+   "L-212",
+   "L-213",
+   "L-214",
+   "L-215",
+   "L-216",
+   "L-217",
+   "L-219",
+   "L-220",
+   "L-221",
+   "L-222",
+   "L-223",
+   "L-224",
+   "L-225",
+   "L-226",
+   "L-227",
+   "L-228",
+   "L-229",
+   "L-230",
+   "L-231",
+   "L-232",
+   "L-233",
+   "L-234",
+   "L-235",
+   "L-236",
+   "L-237",
+   "L-238",
+   "L-239",
+   "L-240",
+   "L-241",
+   "L-246",
+   "L-247",
+   "L-248",
+   "L-249",
+   "L-250",
+   "L-251",
+   "L-253",
+   "L-254",
+   "L-255",
+   "L-261",
+   "L-262",
+   "L-263",
+   "L-264",
+   "L-265",
+   "L-266",
+   "L-267",
+   "L-268",
+   "L-269",
+   "L-270",
+   "L-271",
+   "L-273",
+   "L-275",
+   "L-276",
+   "L-277",
+   "L-278",
+   "L-279",
+   "L-280",
+   "L-283",
+   "L-285",
+   "L-293",
+   "L-294",
+   "L-295",
+   "L-296",
+   "L-297",
+   "L-298",
+   "L-299",
+   "L-300",
+   "L-301",
+   "L-302"
+  ],
+  "differees_groupe_LIENS": [
+   "L-023",
+   "L-026",
+   "L-035",
+   "L-038",
+   "L-039",
+   "L-040",
+   "L-041",
+   "L-049",
+   "L-051",
+   "L-060",
+   "L-066",
+   "L-072",
+   "L-080",
+   "L-087",
+   "L-091",
+   "L-102",
+   "L-106",
+   "L-112",
+   "L-113",
+   "L-115",
+   "L-122",
+   "L-123",
+   "L-126",
+   "L-134",
+   "L-135",
+   "L-139",
+   "L-140",
+   "L-145",
+   "L-147",
+   "L-152",
+   "L-164",
+   "L-174",
+   "L-242",
+   "L-243",
+   "L-244",
+   "L-245",
+   "L-252",
+   "L-256",
+   "L-257",
+   "L-258",
+   "L-259",
+   "L-260",
+   "L-272",
+   "L-274",
+   "L-281",
+   "L-282",
+   "L-284",
+   "L-286",
+   "L-287",
+   "L-288",
+   "L-289",
+   "L-290",
+   "L-291",
+   "L-292"
+  ],
+  "non_appliquees": [
+   {
+    "id": "L-010",
+    "occurrences": 0,
+    "ancien": "<p class=\"src\">Références : <a href=\"https://link.springer.com/article/10.1007/s00125-026-06855-7\" target=\"_blank\" rel=\"noopener\">Davies et al., consensus ADA/E",
+    "raison": "remplacée par E11-MED-01 (la ligne de références porte désormais trois sources : pluriel correct)"
+   },
+   {
+    "id": "L-018",
+    "occurrences": 0,
+    "ancien": "sans hypoglycémie significative et répétée, et 7 à 8 % chez le sujet âgé, fragile ou à espérance de vie limitée ; la SSED conseille d’éviter une HbA1c trop élev",
+    "raison": "fusionnée avec E11-MED-04"
+   },
+   {
+    "id": "L-075",
+    "occurrences": 0,
+    "ancien": "le calendrier européen co-signé complète ce point",
+    "raison": "passage remplacé par E11-MED-01"
+   },
+   {
+    "id": "L-206",
+    "occurrences": 0,
+    "ancien": "plus tôt en cas de surpoids/obésité avec facteur de risque",
+    "raison": "passage remplacé par E11-MED-01 (barre oblique supprimée dans la nouvelle rédaction)"
+   },
+   {
+    "id": "L-218",
+    "occurrences": 0,
+    "ancien": "la dose est 2,5 mg.",
+    "raison": "absorbée par R-10 (« la dose est de 2,5 mg une fois par jour »)"
+   }
+  ],
+  "methode": "Application après les corrections MED et les renvois, extrait « ancien » vérifié unique au moment d’appliquer ; propositions sans groupe et groupe REFERENCES_SINGULIER appliqués."
+ },
+ "choix_differes": [
+  "Espaces insécables globales (LANG C-03) : traitement global en attente d’un choix éditorial.",
+  "« fibrillation atriale / auriculaire » : terminologie inchangée (L-079 reformule la phrase sans toucher au terme).",
+  "Groupe LIENS d’E11 (54 propositions) : non appliqué ; R-14 lui est rattaché.",
+  "R-16 renumérotation des figures : phase 2, après intégration des figures de l’Agent P."
+ ],
+ "controles": {
+  "build_medina.audit_E11": "{} (via python3 test_v7.py --static E11)",
+  "test_v7_static": "OK — 129 fenêtres, 5 quiz, 7 Pareto",
+  "audit_sciences": "errors [] (tests/audit_sciences.py --codes E11)",
+  "structure_html": "équilibre des balises identique à l’état de base pour les six fichiers",
+  "glossaire_compile": true
+ },
+ "empreintes_sha256_apres": {
+  "chapters/E11/E11_a.html": "b03bceba11216a08643886e4af7161a8e8581f77b3f4cf5855a3862f8325f7f9",
+  "chapters/E11/E11_b.html": "a45043a08eba5261a39a679acf3208d4c9706fb7d231b2e6966cd9041bb82cae",
+  "chapters/E11/E11_c.html": "9392852dfd54f26fffd5d65c6144b5faaa9c424faaf411bdc40b8d6de50532c9",
+  "chapters/E11/E11_d.html": "616eb9a737b586749f345bcf70e3a77eb7661ade7d218fac8698b4f365a46854",
+  "chapters/E11/E11_pop1.html": "b30d6d3a2a8e280a6a35a74319eb50781d63b05b948d1de67e4bcbbda50737e6",
+  "chapters/E11/E11_pop2.html": "d77fbb1541a075a4a39fdeecaaf26a0a37dc93afac38a7e1424f50580108ec08",
+  "glossary/e11.py": "c3e44c925dfd03ff69865932b61b52f1c36c81749e849932b6a0dc8298c33baa"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

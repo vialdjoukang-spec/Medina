@@ -1,0 +1,16 @@
+{
+  "description": "Audit gauge Stop gate; requires host support and user hook trust review",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"$(git rev-parse --show-toplevel)/tools/audit_response_gate.py\" --stop-hook --root \"$(git rev-parse --show-toplevel)\"",
+            "timeout": 90
+          }
+        ]
+      }
+    ]
+  }
+}

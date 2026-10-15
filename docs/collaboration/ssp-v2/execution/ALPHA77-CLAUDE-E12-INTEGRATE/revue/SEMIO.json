@@ -1,0 +1,220 @@
+{
+ "actor": "Claude",
+ "code": "E12",
+ "status": "closed",
+ "medical_human_validation": false,
+ "mission": "ALPHA77-CLAUDE-E12-INTEGRATE",
+ "reviewer": "Agent P (revue finale indépendante de l’intégration de l’Agent W)",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "de30916580e2c4542bd4f525e7bddc94a4edebce",
+ "source_files_sha256": {
+  "chapters/E12/E12_a.html": "33c6a06d843eeb764bfa65befe279495c39490a9f2bb5ddd9e119fc13dcf0d15",
+  "chapters/E12/E12_b.html": "6cb8173a3d40fb18dd2ddcbbb0adef8ad7af7473a9d406e2cf8c50585ddd19d2",
+  "chapters/E12/E12_c.html": "da11e727dba78de2298425b35beb471f40918c4562fc484e633da6b7d3345eb4",
+  "chapters/E12/E12_d.html": "dc2cd373cbf0bfde947c02bd3e344c9d12bd227969006690c20afa260a6707b9",
+  "chapters/E12/E12_pop1.html": "3174165af210c6fd0358f4db925929e0c5c990a231c2795bf77d8cfb2948415b",
+  "chapters/E12/E12_pop2.html": "1e6f94e0a1af6571e2d1b3dcdf1a2f95b5130d7e10af4569414db86992d70429",
+  "glossary/e12.py": "e6a7903d60933e99dcf1abc26367b49da5975ab210bebc0acd0c08028d455916"
+ },
+ "reviewed_files_sha256": {
+  "chapters/E12/E12_a.html": "bb4b7f60b49c30357010a9dfdb3cb6dbfaf8c572c076ac782654cd7f0bf3df28",
+  "chapters/E12/E12_b.html": "d16de5cf8c508324725af9db88df70a5eff75fa1195c4463ce444c323a30f749",
+  "chapters/E12/E12_c.html": "1f5f89b7c2f32f687ad79500cd1e119e6fc6ac451194577023efcaf1e61d56d8",
+  "chapters/E12/E12_d.html": "0fd4f0ca7ce95d803f7036049f0627cad08b35f5e2c2f4041bb63e119a49cb33",
+  "chapters/E12/E12_pop1.html": "60e0f8c6976fef5337c5d110edeb7c5a9db2ea3460f4260317db965d14e63641",
+  "chapters/E12/E12_pop2.html": "9e99acc4ecfff824663bb60aa78abd7508a40db64d932ac81e34eca5e00e1fe7",
+  "glossary/e12.py": "43b1da499f4e69981ec039877f77ae5acfa5e6e4a841de4162f3fc0f7a7240bd",
+  "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg": "40468ceb7da16eda0b28722aa4c78a9930578fc4074a139261b8bb977c30a11d",
+  "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg": "640b682437363580e6942f074846bac0632a8dca29def8add1671960ec1b384c"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "kind": "SEMIO",
+ "requirement": "fundamental_analytical_semiology",
+ "scope": "Contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE 2026-10-15 et grille SEM-01 à SEM-24 sur les fichiers finaux.",
+ "grid": [
+  {
+   "id": "SEM-01",
+   "result": "oui",
+   "evidence": "e12-tab-semio premier bouton de .sci-bar ; div.sci#e12-s-semio"
+  },
+  {
+   "id": "SEM-02",
+   "result": "oui",
+   "evidence": "h2 de #e12-sm-1 = titre exact"
+  },
+  {
+   "id": "SEM-03",
+   "result": "réserve",
+   "evidence": "audit_sciences non exécutable pour E12 ; simulation conforme pour e12-s-semio (4 454 mots, figure svg[role=img][aria-label]+figcaption, 4 libellés)"
+  },
+  {
+   "id": "SEM-04",
+   "result": "oui",
+   "evidence": "test_v7.py --static E12 OK ; glossaire {}"
+  },
+  {
+   "id": "SEM-05",
+   "result": "oui",
+   "evidence": "#e12-sm-2 tableau Symptôme/Mécanisme/Fréquence ou valeur/Piège, introduit et lu"
+  },
+  {
+   "id": "SEM-06",
+   "result": "oui",
+   "evidence": "#e12-sm-4 et fenêtres e12-sm-anthropo, e12-sm-douleur : technique"
+  },
+  {
+   "id": "SEM-07",
+   "result": "oui",
+   "evidence": "#e12-sm-2, #e12-sm-3 : mécanisme causal sourcé"
+  },
+  {
+   "id": "SEM-08",
+   "result": "oui",
+   "evidence": "prep/sources_semiologie.json (36 assertions) ; valeurs absentes déclarées « non chiffrées »"
+  },
+  {
+   "id": "SEM-09",
+   "result": "oui",
+   "evidence": "#e12-sm-1 « Le normal d’abord »"
+  },
+  {
+   "id": "SEM-10",
+   "result": "oui",
+   "evidence": "colonne Piège, div.trap #e12-sm-3, fenêtres"
+  },
+  {
+   "id": "SEM-11",
+   "result": "oui",
+   "evidence": "#e12-sm-6 tableau des syndromes"
+  },
+  {
+   "id": "SEM-12",
+   "result": "oui",
+   "evidence": "#e12-sm-6 <ol> cinq étapes ordonnées"
+  },
+  {
+   "id": "SEM-13",
+   "result": "oui",
+   "evidence": "alert #e12-sm-1 cohérente avec #e12-8 et l’alerte renutrition de #e12-9 (> 10 jours / > 15 %, P, K, Mg, thiamine, 72 h)"
+  },
+  {
+   "id": "SEM-14",
+   "result": "oui",
+   "evidence": "#e12-sm-6 cartes « Oriente ailleurs » avec discriminants sourcés"
+  },
+  {
+   "id": "SEM-15",
+   "result": "oui",
+   "evidence": "#e12-sm-4 huit temps numérotés"
+  },
+  {
+   "id": "SEM-16",
+   "result": "oui",
+   "evidence": "#e12-sm-4 div.card « Exemple de présentation »"
+  },
+  {
+   "id": "SEM-17",
+   "result": "oui",
+   "evidence": "3 quiz : valeur d’un signe (cas 1), urgence (cas 2), formulation d’une limite (cas 3)"
+  },
+  {
+   "id": "SEM-18",
+   "result": "oui",
+   "evidence": "12 data-k e12-sm-* résolus ; fenêtre renutrition ouverte au navigateur et fenêtre depuis pA (integration/controles.json)"
+  },
+  {
+   "id": "SEM-19",
+   "result": "oui",
+   "evidence": "sources suisses puis européennes ; physiologie américaine signalée comme telle"
+  },
+  {
+   "id": "SEM-20",
+   "result": "oui",
+   "evidence": "seuils identiques sémiologie/onglet 1/fenêtres ; anti-GAD à harmoniser ; anti-GAD65 harmonisé au commit de30916580e2c4542bd4f525e7bddc94a4edebce"
+  },
+  {
+   "id": "SEM-21",
+   "result": "oui",
+   "evidence": "îlots 5–6 conservés ; bloc pA de liaison et renvoi textuel"
+  },
+  {
+   "id": "SEM-22",
+   "result": "réserve",
+   "evidence": "390 px vérifié sans débordement (scrollW 390) ; police 24 px non testée"
+  },
+  {
+   "id": "SEM-23",
+   "result": "oui",
+   "evidence": "captures 03 (sémiologie ouverte) et 04 (fenêtre ouverte)"
+  },
+  {
+   "id": "SEM-24",
+   "result": "oui",
+   "evidence": "mention revue IA, aucune validation humaine"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-01",
+   "severity": "Contrat",
+   "status": "resolved",
+   "finding": "Sous-onglet présent, premier, ouvert par défaut, neuf sections data-semiology substantielles, bloc clinique pA data-semiology-clinical=\"E12\".",
+   "location": "E12_c #pS ; E12_b #e12-6",
+   "evidence": [
+    "integration/controles.json rendu_chromium : firstSel true, othersSel false ×5, othersHidden true ×5, sections normal…sources, labelledby e12-tab-semio, desktop et 390 px, errors_js []."
+   ]
+  },
+  {
+   "id": "SEMIO-02",
+   "severity": "Réserve",
+   "status": "non_blocking",
+   "finding": "SEM-03 : outil non exécutable pour E12 ; simulation conforme pour la discipline sémiologique.",
+   "location": "E12_c",
+   "evidence": [
+    "integration/controles.json audit_sciences.simulation."
+   ]
+  },
+  {
+   "id": "SEMIO-03",
+   "severity": "Réserve",
+   "status": "non_blocking",
+   "finding": "SEM-22 : police 24 px non testée à 390 px.",
+   "location": "rendu S05",
+   "evidence": [
+    "Capture 07_semiologie_mobile390.png : libellé lisible, sans débordement."
+   ]
+  },
+  {
+   "id": "SEMIO-04",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "finding": "Cas 3 : « anti-GAD » au lieu de « anti-GAD65 » (LANG-01).",
+   "location": "#e12-sm-8",
+   "evidence": [
+    "Recherche plein texte.",
+    "Relecture au commit de30916580e2c4542bd4f525e7bddc94a4edebce : Corrigé (LANG-01)."
+   ]
+  },
+  {
+   "id": "SEMIO-05",
+   "severity": "Lacune déclarée",
+   "status": "non_blocking",
+   "finding": "Aucune fréquence de symptôme ni valeur diagnostique de signe dans les sources lues ; écrite dans la leçon (#e12-sm-5, #e12-sm-8).",
+   "location": "E12_c",
+   "evidence": [
+    "prep/sources_semiologie.json, lacunes."
+   ]
+  }
+ ],
+ "evidence": [
+  "Lecture intégrale de e12-s-semio, du bloc pA et des 12 fenêtres e12-sm-* au commit 79edab1724a313b71dfc5d926e5f391f8c3a0c4f ; comparaison avec la préparation : seules les retouches MED-20 diffèrent.",
+  "Passages consultés : prep/sources_semiologie.json (36 assertions) ; vérifications complémentaires de cette revue : HaPanEU (sections 2–7), SGED/SGRM 2025 (tableau 2), Krutkyte 2022, Jones 2013, Endotext 2024.",
+  "Captures 03, 04, 07 examinées ; integration/controles.json (rendu Chromium, aucune erreur JavaScript).",
+  "Mise à jour après les corrections de W (commit de30916580e2c4542bd4f525e7bddc94a4edebce) : passages modifiés relus contre Endotext 2024, HaPanEU 2017 et Diabetes Care 2022 ; test_v7 --static E12 OK ; build_medina.audit {}."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

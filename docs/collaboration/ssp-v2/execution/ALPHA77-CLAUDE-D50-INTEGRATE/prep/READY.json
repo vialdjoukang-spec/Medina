@@ -1,0 +1,104 @@
+{
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "code": "D50",
+ "lecon": "D50 — Anémie par carence en fer (S06)",
+ "agent": "Agent P (préparateur et contrôleur)",
+ "phase": 1,
+ "date": "2026-10-15",
+ "branche": "claude/alpha77/d50-integrate-g1",
+ "livrables": {
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-D50-INTEGRATE/prep/semiologie_sciences.html": "3d9d383bfd6abfe1d09920cbf48afdd66cdaacde4b633cf98ac6f468adfbb9ed",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-D50-INTEGRATE/prep/semiologie_pop.html": "58416375dabc73257525b43cdecd2c197201b0c244639d85e609b0d21442b95a",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-D50-INTEGRATE/prep/semiologie_clinique.html": "42757d74e9404c41064cc75662bfe0f0463b0230bab545668b00693a795176a0",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-D50-INTEGRATE/prep/figures.html": "f0c47e83c4c468f72e7200ba2a086c25cc429aef4dd995f255068a91c567f77e",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-D50-INTEGRATE/prep/figures.json": "577b50bb2f413eacb2ed35fcc0d1697d400216281ee4e7ad780e27b699748c74",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-D50-INTEGRATE/prep/sources_semiologie.json": "c4968b452ea65b66bd9580f24c0bf2958d0544160fef359fa6f807fb62018446",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-D50-INTEGRATE/prep/glossaire_ajouts.json": "8cd2829931692eb17af4e5dd0629611f284a72f67433450d1a4062d15061af60",
+  "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
+ },
+ "integration_par_W": [
+  "D50_c.html, #pS : insérer le bouton d50-tab-semio en première position de div.sci-bar ; passer le bouton « Physiologie » à aria-selected=\"false\" ; insérer le div.sci d50-s-semio (role=\"tabpanel\", aria-labelledby=\"d50-tab-semio\", sans attribut hidden) en tête de div.chap-body.sci-body.",
+  "Créer chapters/D50/D50_pop3.html avec le contenu de prep/semiologie_pop.html (six fenêtres d50-sm-*).",
+  "D50_a.html, îlot d50-6 : insérer le div.card data-semiology-clinical=\"D50\" de prep/semiologie_clinique.html avant l’encadré « À retenir. » final.",
+  "D50_c.html, d50-s-histo-body : remplacer le paragraphe « Le frottis réel ci-dessous… » et la figure « Micrographie 1 » par le bloc HISTO de prep/figures.html ; adapter la mention « Micrographie 1 » éventuelle du paragraphe suivant.",
+  "Ne pas ajouter de bouton Pareto au sous-onglet sémiologie : build_medina.pareto_ratios ne reconnaît que <section class=\"ilot\" id=\"…\"> sans autre attribut ; data-semiology le rendrait introuvable.",
+  "Vérifier au navigateur que le moteur masque les autres disciplines à l’ouverture de pS et que le sous-onglet sémiologie est visible par défaut (aria-selected et hidden), sur ordinateur et à 390 px."
+ ],
+ "controles_P_sur_simulation": {
+  "methode": "Copie en mémoire des fichiers D50 au commit bf169616 + insertion des blocs prep (script hors dépôt) ; aucun fichier de chapters/ modifié par P.",
+  "build_medina.audit": "{}",
+  "fenetres_manquantes": "aucune",
+  "classes_hors_liste": "aucune",
+  "style_en_ligne": 0,
+  "identifiants_dupliques": "aucun",
+  "audit_sciences_equivalent": {
+   "d50-s-semio": "3836 mots, 1 figure accessible, 4 encadrés : conforme",
+   "d50-s-histo": "705 mots, figure accessible : conforme (échouait sur la base pour la Micrographie 1 sans SVG)",
+   "d50-s-physio": "conforme",
+   "d50-s-bioc": "conforme",
+   "d50-s-gen": "conforme"
+  },
+  "contrat_semio": {
+   "premier_bouton": "d50-tab-semio, aria-selected=true, libellé exact",
+   "titre_premier_h3": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+   "sections": {
+    "normal": 310,
+    "signs": 413,
+    "mechanisms": 476,
+    "examination": 462,
+    "interpretation": 482,
+    "differentials": 534,
+    "urgency": 329,
+    "limits": 453,
+    "sources": 377
+   },
+   "cas_corriges": 3,
+   "tableaux": 4,
+   "listes_ordonnees": 2,
+   "alerte": 1
+  },
+  "rendu_svg": "Chromium 1194 : deux SVG rendus sans troncature."
+ },
+ "grille_SEM_auto_evaluation": {
+  "SEM-01": "oui (après intégration)",
+  "SEM-02": "oui (h3, conformément au contrat et à tools/starter_codex.py)",
+  "SEM-03": "oui sur simulation",
+  "SEM-04": "à confirmer par W (test_v7 --static)",
+  "SEM-05": "oui",
+  "SEM-06": "oui pour la pâleur, les phanères et la région anale ; aucun seuil chiffré de geste n’existe dans les sources lues",
+  "SEM-07": "oui ; mécanisme déclaré non établi pour pica, pagophagie et koilonychie",
+  "SEM-08": "oui ; lacunes consignées",
+  "SEM-09": "oui",
+  "SEM-10": "oui",
+  "SEM-11": "oui",
+  "SEM-12": "oui",
+  "SEM-13": "oui, cohérent avec l’alerte de d50-8",
+  "SEM-14": "oui",
+  "SEM-15": "oui",
+  "SEM-16": "oui",
+  "SEM-17": "oui (cas 1 valeur d’un signe, cas 3 formulation d’une limite)",
+  "SEM-18": "à vérifier au navigateur par W",
+  "SEM-19": "oui",
+  "SEM-20": "à vérifier en revue phase 2 (seuils OMS, ferritine 15/45, VGM)",
+  "SEM-21": "oui",
+  "SEM-22": "à vérifier par W (390 px)",
+  "SEM-23": "à faire par W",
+  "SEM-24": "oui"
+ },
+ "lacunes": [
+  "Fréquences des symptômes et des signes non chiffrées dans les sources suisses et européennes lues ; la seule valeur chiffrée (pâleur) vient d’une étude indienne, citée avec ses limites.",
+  "Mécanismes de compensation de l’anémie non détaillés dans les sources lues : non rédigés.",
+  "Mécanismes de la koilonychie, du pica et de la pagophagie non établis dans les sources lues.",
+  "Recommandation AWMF S2k RLS 2025-07 inaccessible (protection anti-robot) ; version abrégée 2024 lue.",
+  "Sémiologie pédiatrique suisse non lue.",
+  "Frottis normal à faible grossissement : seule image normale de qualité trouvée en une requête ; le second candidat a été écarté après contrôle visuel. Le choix humain demandé par le rapport MED n’a pas eu lieu.",
+  "Captures d’écran réelles (SEM-23) et vérification des fenêtres au navigateur (SEM-18) relèvent de l’intégration par W."
+ ],
+ "choix_editoriaux_differes": [
+  "Espaces insécables globales",
+  "« fibrillation atriale/auriculaire »",
+  "Groupe LIENS d’E11"
+ ],
+ "fichiers_hors_perimetre_P": "aucun ; chapters/ et glossary/ non touchés",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
