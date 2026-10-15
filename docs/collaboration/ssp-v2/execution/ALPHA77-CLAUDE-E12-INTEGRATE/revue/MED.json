@@ -1,0 +1,263 @@
+{
+ "actor": "Claude",
+ "code": "E12",
+ "status": "closed",
+ "medical_human_validation": false,
+ "mission": "ALPHA77-CLAUDE-E12-INTEGRATE",
+ "reviewer": "Agent P (revue finale indépendante de l’intégration de l’Agent W)",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "79edab1724a313b71dfc5d926e5f391f8c3a0c4f",
+ "source_files_sha256": {
+  "chapters/E12/E12_a.html": "33c6a06d843eeb764bfa65befe279495c39490a9f2bb5ddd9e119fc13dcf0d15",
+  "chapters/E12/E12_b.html": "6cb8173a3d40fb18dd2ddcbbb0adef8ad7af7473a9d406e2cf8c50585ddd19d2",
+  "chapters/E12/E12_c.html": "da11e727dba78de2298425b35beb471f40918c4562fc484e633da6b7d3345eb4",
+  "chapters/E12/E12_d.html": "dc2cd373cbf0bfde947c02bd3e344c9d12bd227969006690c20afa260a6707b9",
+  "chapters/E12/E12_pop1.html": "3174165af210c6fd0358f4db925929e0c5c990a231c2795bf77d8cfb2948415b",
+  "chapters/E12/E12_pop2.html": "1e6f94e0a1af6571e2d1b3dcdf1a2f95b5130d7e10af4569414db86992d70429",
+  "glossary/e12.py": "e6a7903d60933e99dcf1abc26367b49da5975ab210bebc0acd0c08028d455916"
+ },
+ "reviewed_files_sha256": {
+  "chapters/E12/E12_a.html": "30a977fe8648a656a820f43a7dca506f851b0a6425b0730eb68f9f089e5fbc14",
+  "chapters/E12/E12_b.html": "4dea8a189bfef8fb981ad1aab1bc1b274013045bea0ee25a57ebccd85198489d",
+  "chapters/E12/E12_c.html": "70c104565ee74dbecba609b56311260a9e06453948a5e45305da3561c801cb6a",
+  "chapters/E12/E12_d.html": "0fd4f0ca7ce95d803f7036049f0627cad08b35f5e2c2f4041bb63e119a49cb33",
+  "chapters/E12/E12_pop1.html": "ad94097bf50a11dcbf2dd65993bafdd8e48c0930c76121a1e4504b39d76b2c11",
+  "chapters/E12/E12_pop2.html": "bab70f3727d8af58573ac59edcb6e49e18addafa4bb8aaf5ec4e35d1b84b41a7",
+  "glossary/e12.py": "43b1da499f4e69981ec039877f77ae5acfa5e6e4a841de4162f3fc0f7a7240bd",
+  "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg": "40468ceb7da16eda0b28722aa4c78a9930578fc4074a139261b8bb977c30a11d",
+  "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg": "640b682437363580e6942f074846bac0632a8dca29def8add1671960ec1b384c"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "kind": "MED",
+ "scope": "Exactitude médicale et sources des 7 fichiers finaux et des 2 images ; priorité : ajouts de W pour audit_sciences, retouches de la préparation, renvois RM-05/08/11/12, corrections fondées sur HaPanEU.",
+ "findings": [
+  {
+   "id": "MED-01",
+   "severity": "MAJEUR (C01)",
+   "status": "resolved",
+   "finding": "Restriction des graisses dans la FCPD remplacée par la position HaPanEU.",
+   "location": "E12_b #e12-9 ; E12_pop2",
+   "evidence": [
+    "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P : énoncé 6-3.2 (1C) « Dietary fat restriction and very high fibre diets should be avoided » ; commentaires Q6-3 « only recommended as a last resort for controlling symptomatic steatorrhoea » ; 4-2.7 (1B) IPP."
+   ]
+  },
+  {
+   "id": "MED-02",
+   "severity": "MAJEUR (C02)",
+   "status": "resolved",
+   "finding": "CPRE retirée des examens diagnostiques ; échoendoscopie, CT, échographie hiérarchisés.",
+   "location": "E12_pop2 ; E12_c #e12-e-*",
+   "evidence": [
+    "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P : commentaires Q2-1 « ERCP is no longer considered to be a diagnostic test for CP » ; 2-2 (2C), 2-6 (1A), 2-9 (1B)."
+   ]
+  },
+  {
+   "id": "MED-03",
+   "severity": "MAJEUR (C03)",
+   "status": "resolved",
+   "finding": "Sulfonylurée : gliclazide 30 mg chez le dénutri, apports réguliers, contre-indications.",
+   "location": "E12_b #e12-9 ; E12_d ; E12_pop2",
+   "evidence": [
+    "FI Diamicron MR (février 2025) relue par W (integration/corrections.json) ; texte concordant avec le passage du registre MED S14. Non relue directement par l’Agent P."
+   ]
+  },
+  {
+   "id": "MED-04",
+   "severity": "MAJEUR (C04)",
+   "status": "resolved",
+   "finding": "Syndrome de renutrition ajouté (risque, mécanisme, thiamine j1 et j3–5, multivitamines j1–10, seuils Mg/P/K, fer différé 7 jours, poids j1–3).",
+   "location": "E12_b alerte de #e12-9 ; e12-sm-*",
+   "evidence": [
+    "Krutkyte et coll. 2022 (PMC9324596, texte intégral Europe PMC) relu par l’Agent P : « Mg < 0.70–0.75 mmol/L, PO4 < 0.80 mmol/L, K < 3.5 mmol/L » ; « thiamine on days 1 and 3–5, multivitamins during days 1–10 » ; « iron should not be given during the first 7 days » ; « increase of 0.3–0.5 kg/day ». Rôle aggravant de l’insuline écrit comme déduction."
+   ]
+  },
+  {
+   "id": "MED-05",
+   "severity": "MAJEUR (C05)",
+   "status": "resolved",
+   "finding": "Règle de la glycémie aléatoire rétablie (≥ 11,1 mmol/L = hyperglycémie non équivoque).",
+   "location": "E12_b #e12-7, #e12-12",
+   "evidence": [
+    "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P : 7-3.3 (1A) « random plasma glucose ≥200 mg/dl (11.1 mmol/l) »."
+   ]
+  },
+  {
+   "id": "MED-06",
+   "severity": "MAJEUR (C06)",
+   "status": "resolved",
+   "finding": "Seuil de 0,5 ng/mL présenté comme critère d’inclusion, non seuil diagnostique.",
+   "location": "E12_b #e12-7 ; E12_pop1",
+   "evidence": [
+    "Diabetes Care 2022 (texte intégral Europe PMC) : critères de sélection des groupes (C-peptide au repas test, acidocétose, anticorps)."
+   ]
+  },
+  {
+   "id": "MED-07",
+   "severity": "MAJEUR (C23, C24)",
+   "status": "resolved",
+   "finding": "Figures 2 et 3 SVG anatomiques générées supprimées ; originaux réels sourcés insérés.",
+   "location": "E12_c #e12-s-anat-cours, #e12-s-histo-cours",
+   "evidence": [
+    "Rendu vérifié sur captures 05 et 06 : attribution « Image : Hellerhoff (flèche ajoutée par Doc James), Wikimedia Commons, licence CC BY-SA 3.0 » et « Image : Polarlys, Wikimedia Commons, licence CC BY 2.5 » visibles sous chaque image ; sha256 identiques à prep/figures.json ; voir revue/VISUEL_fig2.json et VISUEL_fig3.json."
+   ]
+  },
+  {
+   "id": "MED-08",
+   "severity": "MINEUR (C07)",
+   "status": "resolved",
+   "finding": "Conversion du C-peptide : 1 nmol/L = 3 ng/mL ; 1,2 ng/mL ≈ 400 pmol/L.",
+   "location": "E12_c Biochimie ; E12_pop1",
+   "evidence": [
+    "Jones et Hattersley 2013 (PMC3748788, texte intégral Europe PMC) relu par l’Agent P : « 1 nmol/l = 1000 pmol/l = 3 ng/ml » ; « falsely elevated where there is renal impairment » ; « measure concurrent glucose to exclude hypoglycaemia (which will suppress insulin and C-peptide) »."
+   ]
+  },
+  {
+   "id": "MED-09",
+   "severity": "ENRICHISSEMENT (C14)",
+   "status": "resolved",
+   "finding": "Dose minimale de lipase 40 000–50 000 U au repas principal ; évaluation de l’efficacité ; IPP.",
+   "location": "E12_d",
+   "evidence": [
+    "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P : 4-2.4 (1A) « A minimum lipase dose of 40,000–50,000 PhU » ; 4-2.5 (1B) soulagement des symptômes de maldigestion et normalisation nutritionnelle ; 4-2.6 (2B) ; 4-2.7 (1B)."
+   ]
+  },
+  {
+   "id": "MED-10",
+   "severity": "ENRICHISSEMENT (C16)",
+   "status": "resolved",
+   "finding": "Risque de diabète 50 % à 10 ans, 83 % à 25 ans ; RR 2,4 après pancréatectomie distale ; OR 9,2 après 40 ans.",
+   "location": "E12_a #e12-4",
+   "evidence": [
+    "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P : commentaires 7-1/7-2 « risk ratio of 2.4 » ; « OR of 9.2 » ; « 50% after 10 years, increasing to 83% after 25 years »."
+   ]
+  },
+  {
+   "id": "MED-11",
+   "severity": "Renvoi RM-05",
+   "status": "resolved",
+   "finding": "« Un pays tropical » : libellé exact de la source ; nuance géographique ajoutée.",
+   "location": "E12_b #e12-7",
+   "evidence": [
+    "Endotext 2024 (PDF lu par l’Agent P), tableau 2 « Occurrence in a tropical country » ; texte « there is no evidence to link any geographical factor with the etiology »."
+   ]
+  },
+  {
+   "id": "MED-12",
+   "severity": "Renvoi RM-08",
+   "status": "resolved",
+   "finding": "Grade 1C attaché à l’absence d’essai : exact.",
+   "location": "E12_b #e12-9",
+   "evidence": [
+    "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P : 7-6.1 (1C) « No evidence-based study relating to treatment practice in T3cDM has been reported to date »."
+   ]
+  },
+  {
+   "id": "MED-13",
+   "severity": "Renvoi RM-11",
+   "status": "non_blocking",
+   "finding": "Fond exact, formulation ambiguë : « atteinte rénale précoce de type 1 » doit se lire « signes rénaux précoces (microalbuminurie, hyperfiltration) comparables au diabète de type 1 ; macroalbuminurie rare ». À reformuler lors d’un prochain tour.",
+   "location": "E12_b #e12-10",
+   "evidence": [
+    "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P : 7-5.2b (1B) « Early signs of renal dysfunction, such as microalbuminuria or glomerular hyperfiltration » semblables au type 1 ; « macroalbuminuria and overt renal disease are unusual » ; 7-5.2a, c, d vérifiés."
+   ]
+  },
+  {
+   "id": "MED-14",
+   "severity": "Renvoi RM-12",
+   "status": "resolved",
+   "finding": "Risque de décès par cancer « disproportionné » : exact.",
+   "location": "E12_b #e12-10 ; E12_pop2 e12-cancer",
+   "evidence": [
+    "Endotext 2024 : « The risk of death from pancreatic cancer is disproportionately high, particularly for women »."
+   ]
+  },
+  {
+   "id": "MED-15",
+   "severity": "MINEUR (nouveau)",
+   "status": "non_blocking",
+   "finding": "Mécanisme « enzymes → glycémie par la sécrétion endogène de GLP-1 » attribué à Endotext (Physiologie) et à HaPanEU 1C (E12_b) : ni Endotext ni HaPanEU lus ne le formulent ; Endotext dit seulement que les enzymes « help improve glucose control » et rapporte un GLP-1 doublé dans la FCPD, ce qui nuance « la maldigestion diminue les incrétines » (Revue médicale suisse 2022, non relue). Attribution à corriger ou à rattacher à la RMS.",
+   "location": "E12_c #e12-s-physio ; E12_b #e12-9",
+   "evidence": [
+    "Endotext 2024 : « Steatorrhea responds to pancreatic enzyme supplements, which also helps improve glucose control » ; « GLP-1 increases two-fold in people with FCPD compared to people with type 2 diabetes and controls ». HaPanEU (sections 4 et 7 lues) : aucune phrase PERT → GLP-1 ; « Impaired incretin secretion » seulement critère mineur 7-4."
+   ]
+  },
+  {
+   "id": "MED-16",
+   "severity": "MINEUR (nouveau, ajout W)",
+   "status": "non_blocking",
+   "finding": "Histologie : « masse bêta réduite sans fibrose » du « type 5 » énoncée comme fait dans l’encadré À retenir et la Figure 3 bis, alors que le paragraphe précédent dit justement « données indirectes », « aucune biopsie humaine ». « Glucagon conservé » n’est pas une donnée de source (Vellore : glucagon post-prandial supprimé). Conditionnel à rétablir.",
+   "location": "E12_c #e12-s-histo-cours",
+   "evidence": [
+    "Diabetes Care 2022 : « It has been speculated that this defect in insulin secretory capacity may be due to decreased β-cell mass » ; consensus 2025 : hypothèse."
+   ]
+  },
+  {
+   "id": "MED-17",
+   "severity": "MINEUR (nouveau, ajout W)",
+   "status": "non_blocking",
+   "finding": "Génétique, Science → examen : « une recherche monogénique bêta se demande seulement devant… » ; l’adverbe restrictif n’est pas sourcé (le consensus liste seulement une recherche monogénique négative parmi les caractéristiques occasionnelles).",
+   "location": "E12_c #e12-s-gen",
+   "evidence": [
+    "Lancet Global Health 2025, encadré : « Negative monogenic β-cell studies for genetic variants » (caractéristique occasionnelle)."
+   ]
+  },
+  {
+   "id": "MED-18",
+   "severity": "Observation",
+   "status": "non_blocking",
+   "finding": "Fenêtre imagerie : « L’échographie est l’examen de première intention » rangé sous HaPanEU ; HaPanEU ne le dit pas, Endotext parle de « standard modalities such as x ray or ultrasound ». Attribution à préciser.",
+   "location": "E12_pop2",
+   "evidence": [
+    "Endotext 2024 : « if typical calculi are absent on standard modalities such as x ray or ultrasound »."
+   ]
+  },
+  {
+   "id": "MED-19",
+   "severity": "Vérification des ajouts W pour audit_sciences",
+   "status": "resolved",
+   "finding": "Les encadrés Science → clinique/examen/traitement et À retenir des 5 disciplines et les Figures 2 bis et 3 bis sont sourcés, utiles et non anatomiques (cases de raisonnement, aucune structure dessinée). Seuls MED-15, MED-16 et MED-17 sont à nuancer ; pas de remplissage constaté.",
+   "location": "E12_c, 5 disciplines",
+   "evidence": [
+    "Contrôles : CT préféré à l’échographie (consensus « ultrasonography or preferably CT ») ; arrêt de la metformine 48 h avant produit de contraste si DFGe < 60 (FI Glucophage relue par W) ; 7-2.7 « Genetic mutations do not appear to influence » (HaPanEU) ; textes SVG : « Imagerie du pancréas / Pancréas normal / Calculs, dilatation canalaire » et « Dénutrition fœtale / Masse bêta réduite / Fibrose, perte des îlots »."
+   ]
+  },
+  {
+   "id": "MED-20",
+   "severity": "Retouches de W sur la préparation",
+   "status": "resolved",
+   "finding": "Nuance alpha (C17), seuil de conduite 5 mmol/L en risque très élevé, anti-GAD65, renutrition progressive : exacts.",
+   "location": "E12_c e12-s-semio ; E12_pop2 e12-sm-* ; E12_b bloc pA",
+   "evidence": [
+    "SGED/SGRM août 2025 (PDF lu par l’Agent P) : « Sehr hohes Risiko … Kein Fahren bei BZ < 5 mmol/l » ; « 6 – 8 kapilläre Glukose Messungen täglich während mindestens einem Jahr » ; Endotext « The role of glucagon and thereby preservation or otherwise of alpha cells is debatable »."
+   ]
+  },
+  {
+   "id": "MED-21",
+   "severity": "Réserve d’outil",
+   "status": "non_blocking",
+   "finding": "tests/audit_sciences.py non exécutable pour E12 (absent de la base c50a28a2, hors liste d’exceptions ; fichier partagé hors mission). La simulation signale les deux figures à image réelle (img alt + figcaption) faute de svg : faux positif connu, aucun SVG factice ajouté — décision correcte au regard de la règle des figures anatomiques.",
+   "location": "E12_c",
+   "evidence": [
+    "integration/controles.json, audit_sciences.simulation."
+   ]
+  }
+ ],
+ "lacunes": [
+  "Revue médicale suisse 2022 non relue (signes d’alerte du cancer, critères d’Ewald et Bretzel, mécanismes incrétines/PERT, 1–9 %).",
+  "FI Creon, Lantus, Glucophage, Diamicron MR et Januvia non relues directement par l’Agent P (relues par W ou par l’audit MED).",
+  "HaPanEU lue par sections via WebFetch ; le texte intégral n’a pas pu être téléchargé (reCAPTCHA PMC, Europe PMC HTTP 500).",
+  "Friedli 2018 au résumé ; rapport OMS 2011 HbA1c inaccessible ; libellé CIM-10-GM de O24.2 non vérifié."
+ ],
+ "evidence": [
+  "Fichiers finaux lus au commit 79edab1724a313b71dfc5d926e5f391f8c3a0c4f (E12_a, b, c, d, pop1, pop2, glossary/e12.py, 2 images).",
+  "python3 -c 'import build_medina as B …audit…' → {} ; python3 test_v7.py --static E12 → OK (mots 21420, fenêtres 52, quiz 10, pareto 10), exécutés par l’Agent P.",
+  "HaPanEU 2017, PMC5349368, lu par sections (WebFetch, citations ≤ 125 caractères) le 15.10.2026 par l’Agent P (sections 2, 3, 4, 6, 7).",
+  "Endotext 2024 PDF texte intégral ; Krutkyte 2022, Jones 2013, Diabetes Care 2022 en texte intégral Europe PMC ; SGED/SGRM 2025 PDF.",
+  "Captures d’intégration 01–08 examinées (05, 06 : attribution et licence visibles)."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

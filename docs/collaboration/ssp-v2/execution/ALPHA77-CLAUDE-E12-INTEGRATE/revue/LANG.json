@@ -1,0 +1,123 @@
+{
+ "actor": "Claude",
+ "code": "E12",
+ "status": "closed",
+ "medical_human_validation": false,
+ "mission": "ALPHA77-CLAUDE-E12-INTEGRATE",
+ "reviewer": "Agent P (revue finale indépendante de l’intégration de l’Agent W)",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "79edab1724a313b71dfc5d926e5f391f8c3a0c4f",
+ "source_files_sha256": {
+  "chapters/E12/E12_a.html": "33c6a06d843eeb764bfa65befe279495c39490a9f2bb5ddd9e119fc13dcf0d15",
+  "chapters/E12/E12_b.html": "6cb8173a3d40fb18dd2ddcbbb0adef8ad7af7473a9d406e2cf8c50585ddd19d2",
+  "chapters/E12/E12_c.html": "da11e727dba78de2298425b35beb471f40918c4562fc484e633da6b7d3345eb4",
+  "chapters/E12/E12_d.html": "dc2cd373cbf0bfde947c02bd3e344c9d12bd227969006690c20afa260a6707b9",
+  "chapters/E12/E12_pop1.html": "3174165af210c6fd0358f4db925929e0c5c990a231c2795bf77d8cfb2948415b",
+  "chapters/E12/E12_pop2.html": "1e6f94e0a1af6571e2d1b3dcdf1a2f95b5130d7e10af4569414db86992d70429",
+  "glossary/e12.py": "e6a7903d60933e99dcf1abc26367b49da5975ab210bebc0acd0c08028d455916"
+ },
+ "reviewed_files_sha256": {
+  "chapters/E12/E12_a.html": "30a977fe8648a656a820f43a7dca506f851b0a6425b0730eb68f9f089e5fbc14",
+  "chapters/E12/E12_b.html": "4dea8a189bfef8fb981ad1aab1bc1b274013045bea0ee25a57ebccd85198489d",
+  "chapters/E12/E12_c.html": "70c104565ee74dbecba609b56311260a9e06453948a5e45305da3561c801cb6a",
+  "chapters/E12/E12_d.html": "0fd4f0ca7ce95d803f7036049f0627cad08b35f5e2c2f4041bb63e119a49cb33",
+  "chapters/E12/E12_pop1.html": "ad94097bf50a11dcbf2dd65993bafdd8e48c0930c76121a1e4504b39d76b2c11",
+  "chapters/E12/E12_pop2.html": "bab70f3727d8af58573ac59edcb6e49e18addafa4bb8aaf5ec4e35d1b84b41a7",
+  "glossary/e12.py": "43b1da499f4e69981ec039877f77ae5acfa5e6e4a841de4162f3fc0f7a7240bd",
+  "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg": "40468ceb7da16eda0b28722aa4c78a9930578fc4074a139261b8bb977c30a11d",
+  "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg": "640b682437363580e6942f074846bac0632a8dca29def8add1671960ec1b384c"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "kind": "LANG",
+ "scope": "Langue, terminologie, cohérence et lisibilité des fichiers finaux ; propositions LANG fond_inchange et renvois.",
+ "findings": [
+  {
+   "id": "LANG-01",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "finding": "Une occurrence résiduelle « anti-GAD négatifs » (cas corrigé 3 de la sémiologie) contredit l’harmonisation RM-01 en « anti-GAD65 ».",
+   "location": "E12_c #e12-sm-8, quiz",
+   "evidence": [
+    "Recherche plein texte : 1 occurrence de « anti-GAD » non suivi de « 65 »."
+   ]
+  },
+  {
+   "id": "LANG-02",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "finding": "Une occurrence de « scanner » subsiste alors que la leçon emploie « CT » partout ailleurs.",
+   "location": "E12_c (onglet Examens)",
+   "evidence": [
+    "Recherche plein texte : 1 occurrence de « scanner »."
+   ]
+  },
+  {
+   "id": "LANG-03",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "finding": "Formulation ambiguë « atteinte rénale précoce de type 1 » (voir MED-13).",
+   "location": "E12_b #e12-10",
+   "evidence": [
+    "HaPanEU 7-5.2b."
+   ]
+  },
+  {
+   "id": "LANG-04",
+   "severity": "Observation",
+   "status": "non_blocking",
+   "finding": "« gold standard » apparaît une fois entre guillemets après son équivalent français « examen de référence » : usage acceptable.",
+   "location": "E12_c onglet Examens",
+   "evidence": [
+    "Recherche plein texte."
+   ]
+  },
+  {
+   "id": "LANG-05",
+   "severity": "Propositions LANG appliquées",
+   "status": "resolved",
+   "finding": "Renvois RM-01 à RM-21 tranchés et propositions fond_inchange appliquées (phrases complètes, suppression des formes nominales, mg/dL harmonisé, « postprandiale », « prédiabétique »).",
+   "location": "E12_a, b, c, d, pop1, pop2, glossary",
+   "evidence": [
+    "integration/corrections.json ; recherche plein texte : 0 « mg/dl », 0 « post-prandi », 0 « U/kg/j »."
+   ]
+  },
+  {
+   "id": "LANG-06",
+   "severity": "Choix différés",
+   "status": "non_blocking",
+   "finding": "Espaces insécables globales non appliquées, conformément à la consigne ; « fibrillation atriale/auriculaire » et groupe LIENS d’E11 sans objet.",
+   "location": "—",
+   "evidence": [
+    "integration/corrections.json, choix_differes."
+   ]
+  },
+  {
+   "id": "LANG-07",
+   "severity": "Ajouts W",
+   "status": "resolved",
+   "finding": "Les encadrés ajoutés et les légendes des Figures 2 bis, 3 bis, 2 et 3 sont rédigés en phrases complètes, annoncés et lus ; pas de remplissage.",
+   "location": "E12_c",
+   "evidence": [
+    "Lecture intégrale des 5 disciplines au commit 79edab1724a313b71dfc5d926e5f391f8c3a0c4f."
+   ]
+  },
+  {
+   "id": "LANG-08",
+   "severity": "Observation frontend",
+   "status": "non_blocking",
+   "finding": "Sur les captures 05 et 06, le bouton flottant « Plan du cours » masque quelques mots de la fin de légende ; composant partagé, hors leçon.",
+   "location": "rendu S05",
+   "evidence": [
+    "Captures 05_figure2_ct_desktop.png, 06_figure3_ilot_desktop.png."
+   ]
+  }
+ ],
+ "evidence": [
+  "Lecture intégrale des fichiers finaux ; recherches plein texte reproductibles (anti-GAD, scanner, mg/dl, post-prandi, gold standard) ; build_medina.audit = {} ; test_v7 --static OK."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
