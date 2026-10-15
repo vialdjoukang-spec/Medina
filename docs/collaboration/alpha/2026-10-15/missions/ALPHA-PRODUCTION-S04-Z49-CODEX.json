@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "Z49",
+  "title": "Surveillance d’une dialyse",
+  "fragment": "S04",
+  "system": "Néphrologie",
+  "chapter": "XXI",
+  "chapter_title": "Facteurs influant sur l’état de santé et motifs de recours aux services de santé",
+  "block": "Z40-Z54",
+  "block_title": "Sujets ayant recours aux services de santé pour des actes médicaux et des soins spécifiques",
+  "ssp": [
+    255
+  ],
+  "subcodes": [
+    "Z49.0",
+    "Z49.1",
+    "Z49.2"
+  ],
+  "gold_subcode_count": 3,
+  "historical_tetrade_cycles": [
+    23
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 26,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S04-Z49-CODEX",
+  "branch_template": "codex/alpha/production/s04-z49-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S04-Z49-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S04/Z49/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S04/Z49/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/Z49/",
+    "glossary/z49.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S04-CODEX-04"
+}

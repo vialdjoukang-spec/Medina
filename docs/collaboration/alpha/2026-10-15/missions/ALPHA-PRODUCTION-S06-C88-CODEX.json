@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "C88",
+  "title": "Maladies immunoprolifératives malignes",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "II",
+  "chapter_title": "Tumeurs",
+  "block": "C81-C96",
+  "block_title": "Tumeurs malignes primitives ou présumées primitives des tissus lymphoïde, hématopoïétique et apparentés",
+  "ssp": [
+    159,
+    227
+  ],
+  "subcodes": [
+    "C88.0",
+    "C88.00",
+    "C88.01",
+    "C88.2",
+    "C88.20",
+    "C88.21",
+    "C88.3",
+    "C88.30",
+    "C88.31",
+    "C88.4",
+    "C88.40",
+    "C88.41",
+    "C88.7",
+    "C88.70",
+    "C88.71",
+    "C88.9",
+    "C88.90",
+    "C88.91"
+  ],
+  "gold_subcode_count": 18,
+  "historical_tetrade_cycles": [
+    26
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 44,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S06-C88-CODEX",
+  "branch_template": "codex/alpha/production/s06-c88-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S06-C88-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S06/C88/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S06/C88/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/C88/",
+    "glossary/c88.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S06-CODEX-02"
+}

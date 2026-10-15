@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "R48",
+  "title": "Dyslexie et autres troubles de la fonction symbolique, non classés ailleurs",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "XVIII",
+  "chapter_title": "Symptômes, signes et résultats anormaux d’examens cliniques et de laboratoire, non classés ailleurs",
+  "block": "R47-R49",
+  "block_title": "Symptômes et signes relatifs au langage et à la voix",
+  "ssp": [
+    19,
+    99
+  ],
+  "subcodes": [
+    "R48.0",
+    "R48.1",
+    "R48.2",
+    "R48.8"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [
+    43
+  ],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 30,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": true,
+  "owner": "Claude",
+  "assignment_id": "ALPHA-PRODUCTION-S08-R48-CLAUDE",
+  "branch_template": "claude/alpha/production/s08-r48-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S08-R48-CLAUDE/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Claude/S08/R48/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Claude/S08/R48/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/R48/",
+    "glossary/r48.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S08-CLAUDE-05"
+}

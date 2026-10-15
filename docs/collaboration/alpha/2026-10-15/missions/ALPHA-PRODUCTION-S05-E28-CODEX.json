@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "E28",
+  "title": "Dysfonction ovarienne",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "IV",
+  "chapter_title": "Maladies endocriniennes, nutritionnelles et métaboliques",
+  "block": "E20-E35",
+  "block_title": "Maladies des autres glandes endocrines",
+  "ssp": [
+    156,
+    184
+  ],
+  "subcodes": [
+    "E28.0",
+    "E28.1",
+    "E28.2",
+    "E28.3",
+    "E28.8",
+    "E28.9"
+  ],
+  "gold_subcode_count": 6,
+  "historical_tetrade_cycles": [
+    26
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 32,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S05-E28-CODEX",
+  "branch_template": "codex/alpha/production/s05-e28-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S05-E28-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S05/E28/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S05/E28/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/E28/",
+    "glossary/e28.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S05-CODEX-03"
+}

@@ -1,0 +1,58 @@
+version: AUDIT_ALPHA_PRODUCTION_2026-10-15_v1
+portee: 'Mandat commun Codex/Claude, audit des 104 leçons Alpha et production restante, après lancement
+  explicite. Ici : planification seule. Répartition 50/50 par système, leçons complètes ; aucun audit
+  croisé ni chaîne de renvois.'
+priorite: La consigne humaine actuelle remplace, pour S08/S05/S04/S06 seulement, les anciens audits
+  croisés et limites administratives incompatibles. Tous les autres systèmes restent intacts ; historique
+  conservé, parité Codex/Claude.
+socle:
+- 'docs/collaboration/betta/PROMPT_VERITE.md : cinq lois et matrice exacte des 20 rubriques.'
+- 'PROMPT_MEDINA.md : contrat HTML, quatre onglets, complétude, sciences, figures, quiz, Pareto.'
+- 'PROMPT_TRANSITION.md et docs/STYLE_REDACTION.md : exigences compatibles de fond et de langue.'
+- 'docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md : normalité, calculs,
+  gradations.'
+mission: 'Auditer : inventorier toutes les surfaces de la version figée, relever les écarts, corriger
+  dans les chemins attribués puis relire le résultat. Produire : vérifier les doublons, rechercher,
+  rédiger une leçon entière puis l''auto-relire. Ne jamais nommer cette auto-relecture « audit indépendant
+  ».'
+preuves: 'Chaque fait rejoint un passage réellement lu : identifiant source, URL, éditeur, version,
+  consultation, section/page, niveau de lecture, population et limites. Rien de mémoire. Sources
+  suisses puis européennes applicables ; aucune recommandation américaine ne fonde une conduite.
+  Seuils et traitements exigent le passage pertinent, jamais un résumé seul lorsque le texte est
+  accessible.'
+securite: 'Vérifier toutes les décisions critiques : diagnostic, urgence et délais, traitements,
+  contre-indications, suivi. Médicament : FI Swissmedic datée du produit exact ; forme, dose, voie,
+  fréquence, durée, maximum, interactions, adaptations rénale/hépatique, grossesse/allaitement, usage
+  hors indication. Distinguer normalité, seuil diagnostique et cible ; unités et contexte obligatoires.
+  Arbitrer les contradictions selon actualité et applicabilité, sans consensus inventé.'
+langue: Français médical précis, élégant et engageant ; phrases complètes, progression normal → mécanisme
+  → conséquence → décision. Toute reformulation conserve chiffres, négations, conditions et degré
+  de certitude. Expliquer tableaux, figures et calculs ; approfondissements cliquables, sans remplissage.
+economie: 'Charger une fois le socle par empreinte ; dossier de preuves lié, sans recopies. Cache
+  : SHA-256 du contenu réellement lu, provenance, lecteur et passage. Réutiliser une preuve traçable
+  applicable ; ne pas prétendre l''avoir relue. Invalider après changement de source, version, contexte
+  ou dépendance. Une modification déclenche la relecture du paragraphe et de ses dépendances dans
+  onglets, fenêtres, tableaux, figures, quiz et résumés, sans tout recharger.'
+acceptation: Matrice 20 rubriques et couverture suisse reliées aux sources et identifiants HTML ;
+  omissions, contradictions et lacunes explicites. Contrôles techniques requis sur fichiers finaux,
+  preuves renouvelées après correction. Zéro réserve clinique bloquante pour un verdict favorable
+  ; état incomplet sinon. Aucun score inventé.
+livraison: 'SHA de départ/final, fichiers et empreintes, constats concis : gravité, emplacement,
+  preuve, correction, vérification ; contrôles réussis/échoués et résidus avec action. Une passe
+  complète, corrections puis vérification ciblée ; au blocage persistant, arrêter la leçon concernée
+  avec réserves, sans boucle automatique.'
+limites: Une porte structurelle réussie ne prouve ni vérité médicale ni lecture réelle. Le cache
+  réduit les relectures, jamais les preuves. Aucun prompt ne garantit un audit ultérieur quasi négligeable,
+  zéro omission ou validation médicale humaine.
+etat: PLANIFIE_NON_LANCE
+systemes:
+- S08
+- S05
+- S04
+- S06
+attribution: 'Une leçon complète, une IA et une conversation responsables ; quotas par système selon
+  plan.json. Aucun audit croisé à ce stade : une seule IA audite chaque leçon. Sous-codes dans leur
+  leçon mère, fichiers partagés réservés à l’intégrateur.'
+lecture: 'Charger ce contrat et le dossier attribué ; vérifier empreintes du socle. Ne pas relire
+  les anciens prompts en entier à chaque mission : ouvrir uniquement les sections nécessaires ou
+  changées. Cache et extrait consulté ne valent pas nouvelle lecture indépendante.'

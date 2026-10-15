@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "D56",
+  "title": "Thalassémie",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "III",
+  "chapter_title": "Maladies du sang et des organes hématopoïétiques et certains troubles du système immunitaire",
+  "block": "D55-D59",
+  "block_title": "Anémies hémolytiques",
+  "ssp": [
+    147,
+    165
+  ],
+  "subcodes": [
+    "D56.0",
+    "D56.1",
+    "D56.2",
+    "D56.3",
+    "D56.4",
+    "D56.8",
+    "D56.9"
+  ],
+  "gold_subcode_count": 7,
+  "historical_tetrade_cycles": [
+    14
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 33,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S06-D56-CODEX",
+  "branch_template": "codex/alpha/production/s06-d56-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S06-D56-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S06/D56/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S06/D56/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/D56/",
+    "glossary/d56.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S06-CODEX-03"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "R26",
+  "title": "Anomalies de la démarche et de la motilité",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "XVIII",
+  "chapter_title": "Symptômes, signes et résultats anormaux d’examens cliniques et de laboratoire, non classés ailleurs",
+  "block": "R25-R29",
+  "block_title": "Symptômes et signes relatifs aux systèmes nerveux et ostéo-musculaire",
+  "ssp": [
+    96,
+    97,
+    98,
+    103
+  ],
+  "subcodes": [
+    "R26.0",
+    "R26.1",
+    "R26.2",
+    "R26.3",
+    "R26.8"
+  ],
+  "gold_subcode_count": 5,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [
+    42
+  ],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/R26/R26_a.html": "d240eec54da6c4e3d008bc583dfcf1625d1becb92bf42ddf9bd6a5a7bdf216dd",
+    "chapters/R26/R26_b.html": "1079514c30e21bb519eb66f84b40c57395897fef1e87f10ada42fed2be1bfdf9",
+    "chapters/R26/R26_c.html": "ab814cdaaf2d54e93eb1d4e80e43c6cff8083003c9bf899031f42b372b63e094",
+    "chapters/R26/R26_d.html": "827ce10dd2fd697f081439a9ca9d2b7e5b44a5dca00187c65230e357f1160f2d",
+    "chapters/R26/R26_pop1.html": "6294db8b79ca62f028cd4d936c83e7c9a40cfa048edb4f81791ae54457763423",
+    "chapters/R26/R26_pop2.html": "1a9da6738daf983b392f75073b5550fb3f3a2461857211d2a132953012a5ffb7",
+    "glossary/r26.py": "396324755717939f386e902e9f2404e05f4f282967f4ddd5963b658f8193c231"
+  },
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 149809,
+  "effort_proxy": 146,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Claude",
+  "assignment_id": "ALPHA-AUDIT-S08-R26-CLAUDE",
+  "branch_template": "claude/alpha/audit/s08-r26-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S08-R26-CLAUDE/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/claude/R26/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/claude/R26/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/R26/",
+    "glossary/r26.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S08-R26-CLAUDE-CORRECTION",
+  "correction_paths": [
+    "chapters/R26/",
+    "glossary/r26.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S08-CLAUDE-07"
+}

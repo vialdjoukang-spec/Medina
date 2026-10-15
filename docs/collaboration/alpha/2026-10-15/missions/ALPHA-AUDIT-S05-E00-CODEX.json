@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "E00",
+  "title": "Syndrome d’insuffisance thyroïdienne congénitale",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "IV",
+  "chapter_title": "Maladies endocriniennes, nutritionnelles et métaboliques",
+  "block": "E00-E07",
+  "block_title": "Affections de la glande thyroïde",
+  "ssp": [
+    37,
+    163
+  ],
+  "subcodes": [
+    "E00.0",
+    "E00.1",
+    "E00.2",
+    "E00.9"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/E00/E00_a.html": "a1578999952d863eb417ec5d253203144e874a11789029744c42cd2b5b12a65e",
+    "chapters/E00/E00_b.html": "15f8baa9ab3720346850a68096f2367e721eb43294097779aa07ca3ba3d62ab7",
+    "chapters/E00/E00_c.html": "095c47f987d7d999b3bef563c01b611ae22cc36cec0394eee28ba8c049346b19",
+    "chapters/E00/E00_d.html": "f846532363972b73106f3e239640741b4e6f79c31e4609e9d458aa4d177ee752",
+    "chapters/E00/E00_pop1.html": "7ba793acd5105211fcc9589857a6b8a66f5f648a7f06a4825efd0dc278d8deb8",
+    "chapters/E00/E00_pop2.html": "7a6f823da252a99a6021d13f744c94aa758013f55553f025d843025ecbbce9da",
+    "glossary/e00.py": "87a27ba51b4527a7504a16e35957558ef660ebd5e1b0d3ba8be5f11e0d2c1f03"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+    "https://doi.org/10.1016/0303-7207(94)90297-6",
+    "https://doi.org/10.1016/S2213-8587(17)30332-7",
+    "https://doi.org/10.1016/j.beem.2009.08.014",
+    "https://doi.org/10.1089/105072502761016520",
+    "https://doi.org/10.1089/thy.2022.0454",
+    "https://doi.org/10.1093/ajcn.82.2.388",
+    "https://doi.org/10.1093/brain/114.2.825",
+    "https://doi.org/10.1093/jn/138.11.2060",
+    "https://doi.org/10.1210/endrev/bnab029",
+    "https://doi.org/10.1210/er.2012-1036",
+    "https://doi.org/10.1530/eje.0.1370349",
+    "https://iris.who.int/server/api/core/bitstreams/82b512a6-57b8-45f3-8539-30b2f7f63564/content",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10899291/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8001676/",
+    "https://www.neoscreening.ch/de/krankheiten/"
+  ],
+  "html_bytes": 113525,
+  "effort_proxy": 111,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S05-E00-CODEX",
+  "branch_template": "codex/alpha/audit/s05-e00-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S05-E00-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/E00/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/E00/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/E00/",
+    "glossary/e00.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S05-E00-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/E00/",
+    "glossary/e00.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S05-CODEX-01"
+}

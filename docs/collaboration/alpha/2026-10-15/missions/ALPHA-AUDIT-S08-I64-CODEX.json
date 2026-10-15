@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "I64",
+  "title": "Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "IX",
+  "chapter_title": "Maladies de l’appareil circulatoire",
+  "block": "I60-I69",
+  "block_title": "Maladies cérébrovasculaires",
+  "ssp": [
+    103,
+    205
+  ],
+  "subcodes": [],
+  "gold_subcode_count": 0,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P0",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/I64/I64_a.html": "d223cc7983b140b004d724f5b49028fae7fc7a77408e6c1baef406ef5dc592f3",
+    "chapters/I64/I64_b.html": "2a8bbf2ba074ad639d0d0db9b077c1c99c9cc66f7866fa004f1a7bf68970c384",
+    "chapters/I64/I64_c.html": "31daa9da72015b8fad15a64ea63ec11fd6c3d3a3ac26025c26aa4e366ae86bdc",
+    "chapters/I64/I64_d.html": "bfef3a8670b3040281b7dae193553f9f56e1fcc7cabbd9b9f3236bbd927ab384",
+    "chapters/I64/I64_pop1.html": "5fd2fe8c8ff54a6609d6b9d6deee4c275e220e2839a295efce9084ded15a7464",
+    "chapters/I64/I64_pop2.html": "3b99ef5baf2a5ebf23e423473a8ee5e7073d6df62f1944a8c1a6e10d1e56bc4c",
+    "glossary/i64.py": "33065ed454225be441aeca65ca2b7916285b98b8d676dbd88110d3fc418368f7"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-i60-i69.htm",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10672280/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11347260/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12098356/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12161988/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12915583/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13151662/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3808045/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6533858/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7939567/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7995316/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8921783/",
+    "https://pubmed.ncbi.nlm.nih.gov/15523162/",
+    "https://pubmed.ncbi.nlm.nih.gov/16339467/",
+    "https://pubmed.ncbi.nlm.nih.gov/25791717/",
+    "https://pubmed.ncbi.nlm.nih.gov/7934437/",
+    "https://www.swissmedic.ch/",
+    "https://www.usz.ch/app/uploads/2026/03/SFCNS_Certificate_StrokeCenter_USZ_2023_2028.pdf"
+  ],
+  "html_bytes": 97104,
+  "effort_proxy": 95,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S08-I64-CODEX",
+  "branch_template": "codex/alpha/audit/s08-i64-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S08-I64-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/I64/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/I64/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/I64/",
+    "glossary/i64.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S08-I64-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/I64/",
+    "glossary/i64.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S08-CODEX-02"
+}

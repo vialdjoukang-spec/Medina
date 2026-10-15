@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "D65",
+  "title": "Coagulation intravasculaire disséminée [syndrome de défibrination]",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "III",
+  "chapter_title": "Maladies du sang et des organes hématopoïétiques et certains troubles du système immunitaire",
+  "block": "D65-D69",
+  "block_title": "Anomalies de la coagulation, purpura et autres affections hémorragiques",
+  "ssp": [
+    88,
+    152,
+    174
+  ],
+  "subcodes": [
+    "D65.0",
+    "D65.1",
+    "D65.2",
+    "D65.9"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [
+    6
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P0",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 53,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S06-D65-CODEX",
+  "branch_template": "codex/alpha/production/s06-d65-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S06-D65-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S06/D65/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S06/D65/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/D65/",
+    "glossary/d65.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S06-CODEX-01"
+}

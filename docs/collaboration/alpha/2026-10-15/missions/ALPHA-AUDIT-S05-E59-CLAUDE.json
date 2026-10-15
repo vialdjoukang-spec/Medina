@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "E59",
+  "title": "Carence alimentaire en sélénium",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "IV",
+  "chapter_title": "Maladies endocriniennes, nutritionnelles et métaboliques",
+  "block": "E50-E64",
+  "block_title": "Autres carences nutritionnelles",
+  "ssp": [
+    16,
+    138,
+    170
+  ],
+  "subcodes": [],
+  "gold_subcode_count": 0,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [
+    42
+  ],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/E59/E59_a.html": "0f28e00028a8b7f78ead84a5686d47499fc923c5cbd999b1e44a533ea78c7b10",
+    "chapters/E59/E59_b.html": "93213163a6325e88cfe027a973157c210278cd5857f481413f225ad6e1de6970",
+    "chapters/E59/E59_c.html": "c0f463975ae87c23f7b0444f98dad6919d516d706355319a8744d4aaa9a97a30",
+    "chapters/E59/E59_d.html": "738c11732550a2511f9929fd358d49cc19a0e1c5fdc266234a7c7688939c7c46",
+    "chapters/E59/E59_pop1.html": "22c9dc866fb64125d94d05970e4cfc8300fcdbfc2aaad855e4f7e3168bf1d7be",
+    "chapters/E59/E59_pop2.html": "bf1a21233a4808191f1d6a9e179748c0f5f46a9ae7309a92403d0bc12d0916fa",
+    "glossary/e59.py": "f14a5b5bc7b15e0a858daabca5b73bed5c251c0fc7bb62785218644ac14ba233"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+    "https://doi.org/10.1016/j.jtemb.2007.11.002",
+    "https://doi.org/10.1016/j.jtemb.2015.07.005",
+    "https://doi.org/10.1017/S0029665122002646",
+    "https://doi.org/10.1038/s41574-019-0311-6",
+    "https://doi.org/10.1080/19440049.2010.506603",
+    "https://doi.org/10.1136/pgmj.70.821.235",
+    "https://doi.org/10.1210/endocr/bqaa228",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10770655/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11096467/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12687763/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13098164/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13482155/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13536237/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7540257/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8509311/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9854220/",
+    "https://rosenfluh.ch/ernaehrungsmedizin-2024-04/mikronaehrstoffe-gewichtszunahme-postoperative-komplikationen-lebenslange-kontrollen-nach-bariatrie",
+    "https://www.blv.admin.ch/dam/de/sd-web/FLClcT03o4I6/nutrient-requirements-ch-2022.xlsx",
+    "https://www.blv.admin.ch/dam/de/sd-web/XvX1PJ6YdCF0/selenstatus-vegetarisch-veganen-ernaehrung-de.pdf",
+    "https://www.espen.org/files/ESPEN-Guidelines/ESPEN_micronutrient_guideline.pdf",
+    "https://www.rosenfluh.ch/media/ernaehrungsmedizin/2022/05/Neue-ESPEN-Guidelines-fuer-Mikronaehrstoffe.pdf",
+    "https://www.siwf.ch/files/pdf24/profiles_2017-broschuere.pdf"
+  ],
+  "html_bytes": 236891,
+  "effort_proxy": 231,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Claude",
+  "assignment_id": "ALPHA-AUDIT-S05-E59-CLAUDE",
+  "branch_template": "claude/alpha/audit/s05-e59-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S05-E59-CLAUDE/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/claude/E59/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/claude/E59/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/E59/",
+    "glossary/e59.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S05-E59-CLAUDE-CORRECTION",
+  "correction_paths": [
+    "chapters/E59/",
+    "glossary/e59.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S05-CLAUDE-04"
+}
