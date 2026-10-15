@@ -36,3 +36,9 @@ _add('EMPA-KIDNEY', [('EMPA-KIDNEY', 'Nom propre de l’essai rénal de l’empa
 # donc déclarés comme dépendances partagées et vérifiés par build_medina.audit() == {}.
 SIGLES_PARTAGES = ('SSED', 'HUG', 'MAPA', 'LDL', 'IMC', 'ECG', 'ESH', 'ESC', 'FLOW', 'IRM',
                    'FIDELIO-DKD', 'FGF23', 'ATP', 'CRP', 'CYP2C8')
+
+# Phase 2 (prep/glossaire_ajouts.json, Agent P) : sigle anglais du titre original de la figure 2 (Robson 2024).
+_add('CKD', [('CKD', 'Chronic kidney disease ; maladie rénale chronique')],
+     'Chronic kidney disease ; maladie rénale chronique',
+     'Sigle anglais de la maladie rénale chronique, conservé seulement dans le titre original d’une figure publiée citée entre guillemets.',
+     'n18-chronologie')
