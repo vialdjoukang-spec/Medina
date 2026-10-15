@@ -300,5 +300,1130 @@
   "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
   "glossary/e11.py": "5e8c36fd6a77b9234d6a7bf9d7862f8a1447c99432ff10cb799efed8280d4e3c"
  },
- "mention": "Revue IA, distincte d’une validation médicale humaine."
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "generation_2": {
+  "date": "2026-10-15",
+  "base": "131536dcea744fd0571cf6ef787c3d5f63fd9871",
+  "branche": "claude/alpha77/e11-integrate-g2",
+  "integration": "Sixième sous-onglet e11-s-gen inséré (point_insertion), figures 12→13 et 11→12 dans E11_pop1, pager du mode Livre corrigé (L1) et ajouté (L2, L3), cinq clés de glossaire ; puis corrections de revue G2-MED-01 à 04, G2-LANG-01 et, après les constats Codex de la PR #175, G2-MED-07 (GCK et grossesse) et G2-LANG-04 (HNF) (integration/corrections_g2.json).",
+  "controles": {
+   "test_v7_static": "OK — 46 815 mots, 141 fenêtres, 8 quiz, 7 Pareto",
+   "build_medina_audit": "{} (six fichiers HTML E11 transformés)",
+   "audit_sciences": {
+    "resultat": "passed",
+    "erreurs": [],
+    "avant": {
+     "words": 6782,
+     "figures": 6,
+     "disciplines": 5
+    },
+    "apres": {
+     "words": 8824,
+     "figures": 7,
+     "disciplines": 6
+    },
+    "unites": [
+     {
+      "id": "e11-s-semio",
+      "words": 4580,
+      "figures": 2
+     },
+     {
+      "id": "e11-s-histo",
+      "words": 804,
+      "figures": 1
+     },
+     {
+      "id": "e11-s-phys",
+      "words": 476,
+      "figures": 1
+     },
+     {
+      "id": "e11-s-bioc",
+      "words": 440,
+      "figures": 1
+     },
+     {
+      "id": "e11-s-rein",
+      "words": 467,
+      "figures": 1
+     },
+     {
+      "id": "e11-s-gen",
+      "words": 2039,
+      "figures": 1
+     }
+    ]
+   },
+   "construction": "MEDINA_OUT=<scratchpad> python3 build_front.py → MEDINA.html (rc 0) ; --fragment S05 → MEDINA_S05_endocrinien-metabolique.html (après fusion de origin/main : 8 292 486 octets, compressé 4 626 059) ; rien n’est écrit dans le dépôt",
+   "test_v7_navigateur": "OK — python3 test_v7.py --url http://127.0.0.1:28791/MEDINA_S05_endocrinien-metabolique.html E11",
+   "chromium": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "mode_livre_et_police": {
+    "viewports": {
+     "ordinateur": "1280×900",
+     "mobile": "390×844 (isMobile, tactile)"
+    },
+    "configurations": {
+     "ordinateur_17px_livre": {
+      "police": "17px",
+      "livre": true,
+      "erreurs_js": [],
+      "onglets": {
+       "pA": {
+        "pages": 14,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "14 / 14",
+        "fin_atteinte": true
+       },
+       "pE": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       },
+       "pS": {
+        "pages": 1,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pP": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       }
+      },
+      "sous_onglets_sciences": [
+       {
+        "s": "e11-s-semio",
+        "libelle": "Sémiologie fondamentale et analytique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-histo",
+        "libelle": "Biologie cellulaire",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-phys",
+        "libelle": "Physiologie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-bioc",
+        "libelle": "Biochimie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-rein",
+        "libelle": "Physiologie rénale",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-gen",
+        "libelle": "Génétique et épigénétique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       }
+      ],
+      "fenetres": [
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       }
+      ],
+      "navigo": {
+       "focus": "H2",
+       "text": "9Complications chroniques",
+       "pageAligned": true,
+       "headingInViewport": true,
+       "pagerLabel": "10 / 14",
+       "item": "9 Complications chroniques",
+       "items": 18
+      }
+     },
+     "ordinateur_24px_livre": {
+      "police": "24px",
+      "livre": true,
+      "erreurs_js": [],
+      "onglets": {
+       "pA": {
+        "pages": 14,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "14 / 14",
+        "fin_atteinte": true
+       },
+       "pE": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       },
+       "pS": {
+        "pages": 1,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pP": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       }
+      },
+      "sous_onglets_sciences": [
+       {
+        "s": "e11-s-semio",
+        "libelle": "Sémiologie fondamentale et analytique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-histo",
+        "libelle": "Biologie cellulaire",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-phys",
+        "libelle": "Physiologie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-bioc",
+        "libelle": "Biochimie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-rein",
+        "libelle": "Physiologie rénale",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-gen",
+        "libelle": "Génétique et épigénétique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       }
+      ],
+      "fenetres": [
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       }
+      ],
+      "navigo": {
+       "focus": "H2",
+       "text": "9Complications chroniques",
+       "pageAligned": true,
+       "headingInViewport": true,
+       "pagerLabel": "10 / 14",
+       "item": "9 Complications chroniques",
+       "items": 18
+      }
+     },
+     "ordinateur_24px_defilement": {
+      "police": "24px",
+      "livre": false,
+      "erreurs_js": [],
+      "onglets": {
+       "pA": {
+        "pages": 14,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pE": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pS": {
+        "pages": 1,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pP": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       }
+      },
+      "sous_onglets_sciences": [
+       {
+        "s": "e11-s-semio",
+        "libelle": "Sémiologie fondamentale et analytique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-histo",
+        "libelle": "Biologie cellulaire",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-phys",
+        "libelle": "Physiologie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-bioc",
+        "libelle": "Biochimie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-rein",
+        "libelle": "Physiologie rénale",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-gen",
+        "libelle": "Génétique et épigénétique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       }
+      ],
+      "fenetres": [
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       }
+      ],
+      "navigo": null
+     },
+     "mobile390_17px_livre": {
+      "police": "17px",
+      "livre": true,
+      "erreurs_js": [],
+      "onglets": {
+       "pA": {
+        "pages": 14,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "14 / 14",
+        "fin_atteinte": true
+       },
+       "pE": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       },
+       "pS": {
+        "pages": 1,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pP": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       }
+      },
+      "sous_onglets_sciences": [
+       {
+        "s": "e11-s-semio",
+        "libelle": "Sémiologie fondamentale et analytique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-histo",
+        "libelle": "Biologie cellulaire",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-phys",
+        "libelle": "Physiologie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-bioc",
+        "libelle": "Biochimie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-rein",
+        "libelle": "Physiologie rénale",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-gen",
+        "libelle": "Génétique et épigénétique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       }
+      ],
+      "fenetres": [
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "17px"
+       }
+      ],
+      "navigo": {
+       "focus": "H2",
+       "text": "9Complications chroniques",
+       "pageAligned": true,
+       "headingInViewport": true,
+       "pagerLabel": "10 / 14",
+       "item": "9 Complications chroniques",
+       "items": 18
+      }
+     },
+     "mobile390_24px_livre": {
+      "police": "24px",
+      "livre": true,
+      "erreurs_js": [],
+      "onglets": {
+       "pA": {
+        "pages": 14,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "14 / 14",
+        "fin_atteinte": true
+       },
+       "pE": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       },
+       "pS": {
+        "pages": 1,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pP": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": false,
+        "parcours_pager": "4 / 4",
+        "fin_atteinte": true
+       }
+      },
+      "sous_onglets_sciences": [
+       {
+        "s": "e11-s-semio",
+        "libelle": "Sémiologie fondamentale et analytique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-histo",
+        "libelle": "Biologie cellulaire",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-phys",
+        "libelle": "Physiologie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-bioc",
+        "libelle": "Biochimie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-rein",
+        "libelle": "Physiologie rénale",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-gen",
+        "libelle": "Génétique et épigénétique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       }
+      ],
+      "fenetres": [
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       }
+      ],
+      "navigo": {
+       "focus": "H2",
+       "text": "9Complications chroniques",
+       "pageAligned": true,
+       "headingInViewport": true,
+       "pagerLabel": "10 / 14",
+       "item": "9 Complications chroniques",
+       "items": 18
+      }
+     },
+     "mobile390_24px_defilement": {
+      "police": "24px",
+      "livre": false,
+      "erreurs_js": [],
+      "onglets": {
+       "pA": {
+        "pages": 14,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pE": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pS": {
+        "pages": 1,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       },
+       "pP": {
+        "pages": 4,
+        "debordement_x": 0,
+        "elements_trop_larges": 0,
+        "contenus_rognes": 0,
+        "pager_dans_corps": null,
+        "parcours_pager": null,
+        "fin_atteinte": null
+       }
+      },
+      "sous_onglets_sciences": [
+       {
+        "s": "e11-s-semio",
+        "libelle": "Sémiologie fondamentale et analytique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-histo",
+        "libelle": "Biologie cellulaire",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-phys",
+        "libelle": "Physiologie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-bioc",
+        "libelle": "Biochimie",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-rein",
+        "libelle": "Physiologie rénale",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       },
+       {
+        "s": "e11-s-gen",
+        "libelle": "Génétique et épigénétique",
+        "aria_selected": "true",
+        "visible": true,
+        "autres_masques": true,
+        "debordement_x": 0
+       }
+      ],
+      "fenetres": [
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pA",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pE",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "13.5px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pS",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       },
+       {
+        "onglet": "pP",
+        "ouverte": true,
+        "fiche_absente": false,
+        "fermer_visible": true,
+        "police": "24.004px"
+       }
+      ],
+      "navigo": null
+     }
+    },
+    "pager_fin_de_parcours": {
+     "mobile390_24px_pA": {
+      "label": "14 / 14",
+      "visible": true,
+      "nextDisabled": false
+     },
+     "mobile390_24px_pE": {
+      "label": "4 / 4",
+      "visible": true,
+      "nextDisabled": false
+     },
+     "mobile390_24px_pP": {
+      "label": "4 / 4",
+      "visible": true,
+      "nextDisabled": false
+     },
+     "ordinateur1280_24px_pA": {
+      "label": "14 / 14",
+      "visible": true,
+      "nextDisabled": false
+     },
+     "ordinateur1280_24px_pE": {
+      "label": "4 / 4",
+      "visible": true,
+      "nextDisabled": false
+     },
+     "ordinateur1280_24px_pP": {
+      "label": "4 / 4",
+      "visible": true,
+      "nextDisabled": false
+     }
+    },
+    "figure_11": {
+     "mobile390_24px_livre": {
+      "largeur_svg": 296,
+      "plus_petit_texte_px": 17.0
+     },
+     "ordinateur1280_17px": {
+      "largeur_svg": 717,
+      "plus_petit_texte_px": 42.0
+     }
+    },
+    "images": {
+     "erreurs_404": 0,
+     "note": "assets servis depuis le worktree"
+    }
+   }
+  },
+  "captures": [
+   "e11_g2_mobile390_17px_livre_2_e11-s-semio.png",
+   "e11_g2_mobile390_24px_livre_1_pA.png",
+   "e11_g2_mobile390_24px_livre_2_e11-s-gen.png",
+   "e11_g2_mobile390_24px_livre_3_fenetre_pS.png",
+   "e11_g2_mobile390_24px_livre_4_navigo.png",
+   "e11_g2_mobile390_24px_livre_5_barre_sciences.png",
+   "e11_g2_mobile390_24px_livre_6_figure11.png",
+   "e11_g2_mobile390_24px_livre_7_tableau.png",
+   "e11_g2_mobile390_24px_livre_8_pager_fin_pA.png",
+   "e11_g2_ordinateur1280_17px_5_barre_sciences.png",
+   "e11_g2_ordinateur1280_17px_6_figure11.png",
+   "e11_g2_ordinateur1280_17px_7_tableau.png",
+   "e11_g2_ordinateur1280_24px_livre_8_pager_fin_pA.png",
+   "e11_g2_ordinateur_17px_livre_2_e11-s-semio.png",
+   "e11_g2_ordinateur_24px_defilement_2_e11-s-gen.png",
+   "e11_g2_ordinateur_24px_livre_1_pA.png",
+   "e11_g2_ordinateur_24px_livre_2_e11-s-gen.png",
+   "e11_g2_ordinateur_24px_livre_3_fenetre_pS.png",
+   "e11_g2_ordinateur_24px_livre_4_navigo.png"
+  ],
+  "non_teste": [
+   "Clavier Entrée/Espace sur chaque mot vert (8 fenêtres ouvertes par configuration)",
+   "Geste tactile réel",
+   "Mode sombre combiné au mode Livre"
+  ],
+  "defauts_releves_non_corriges": [
+   {
+    "id": "D1",
+    "gravite": "MINEUR (moteur partagé, hors mandat)",
+    "constat": "Les en-têtes de tableau (th) restent à 10 px quand la police passe à 24 px ; les liens de source des fenêtres restent à 12 px."
+   },
+   {
+    "id": "D2",
+    "gravite": "MINEUR (moteur partagé)",
+    "constat": "En mode Livre, chaque îlot est une boîte à défilement vertical interne (max-height calc(100vh − 240px)) qui commence sous l’en-tête (~1 000 px à l’ordinateur à 24 px, ~1 420 px sur mobile) : double défilement fenêtre + page ; aucun contenu n’est coupé (scrollWidth = clientWidth, 0 élément plus large que la page)."
+   },
+   {
+    "id": "D3",
+    "gravite": "MINEUR",
+    "constat": "Sur mobile 390 px à 24 px, la barre des sous-onglets Sciences mesure 196 px (5 boutons) et 254 px avec le sixième ; elle n’est pas collante et ne masque rien, mais repousse le contenu."
+   },
+   {
+    "id": "D4",
+    "gravite": "MINEUR",
+    "constat": "Les tableaux à trois colonnes deviennent très étroits à 390 px et 24 px (césure fréquente) ; lisibles, sans débordement."
+   },
+   {
+    "id": "D5",
+    "gravite": "INFORMATION",
+    "constat": "Le reçu « completed » d’E11 précédait tout essai du mode Livre et de la police agrandie (controles.json, non_teste) ; L1 était donc présent à la publication."
+   },
+   {
+    "id": "D6",
+    "gravite": "MINEUR (moteur partagé)",
+    "constat": "En fin de parcours (14 / 14), le bouton « Îlot suivant » reste actif (disabled=false) ; il ne fait rien de visible."
+   }
+  ],
+  "empreintes_sha256": {
+   "chapters/E11/E11_a.html": "a5a271938495d18bac91930e30d40b9f95303bd8260a8b131797e31ab42dcacb",
+   "chapters/E11/E11_b.html": "1d243dc4af4408b9d9da80d20927d45a4f774145a7b008e3bc47249e83cb33ac",
+   "chapters/E11/E11_c.html": "2a39796ea17236b837f96c804a1db14fa6cf7ebfa030e1fe5dc21b48adc48fe6",
+   "chapters/E11/E11_d.html": "c90bd4731f250c6dec4db0e13a2d98438130de7022924785e06fdedd5c7be299",
+   "chapters/E11/E11_pop1.html": "832627d982919e5bcb97df0ef04dd4295ee262fa003aaef521d9312be5c556ab",
+   "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
+   "glossary/e11.py": "a2eb6f8a9e2d68ac497809e9fd930796c16e24b53a50197bcab7d13ab43becd6"
+  },
+  "mention": "Revue IA, distincte d’une validation médicale humaine."
+ }
 }
