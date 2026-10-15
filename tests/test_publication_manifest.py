@@ -22,6 +22,11 @@ class PublicationDeadlineTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'expirée'):
                 check_deadline(self.registry['deadline'],now)
 
+    def test_lessons_transferred_to_claude_leave_night_scope_only_for_them(self):
+        paths = ['chapters/G45/G45_a.html', 'glossary/g45.py', 'assets/img/cycle2/g45/figure.gif']
+        self.assertIsNone(bounded_deadline(self.registry, paths, transferred={'G45'}))
+        self.assertEqual(bounded_deadline(self.registry, paths, transferred={'E10'}), self.registry['deadline'])
+
     def test_absent_registry_has_no_night_scope(self):
         self.assertIsNone(bounded_deadline(None,['chapters/G45/G45_a.html']))
 

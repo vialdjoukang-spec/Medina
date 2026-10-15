@@ -9,7 +9,7 @@
   {
    "cycle": 2,
    "owner": "Claude",
-   "state": "ACTIF",
+   "state": "CLOTURE",
    "started_at": "2026-10-14T21:51:49.021363+00:00",
    "transferred_from": "Codex",
    "handover": {
@@ -17,8 +17,11 @@
     "sha256": "0509c5975a77b07a6d1645ff375fbcda34600548c2196b85d9aeca0b80459d7f"
    },
    "cross_phase": null,
-   "closed_at": null,
-   "closure": null,
+   "closed_at": "2026-10-15T11:30:48.263285+00:00",
+   "closure": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/cloture.json",
+    "sha256": "2218d285ad8d709d69223a0d76dc5bd642a8eb5a9443344147d88ddc841ab6e2"
+   },
    "budget": null,
    "chapters": [
     {
@@ -69,7 +72,7 @@
      "writer": "C02-R-ENDO",
      "cross_reviewer": null,
      "counter_reviewer": null,
-     "status": "INJECTE",
+     "status": "PUBLIE_VERIFIE",
      "source_dir": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10",
      "files": {
       "chapters/E10/E10_a.html": "e8a5d481d7bed026e5a757f84c6df001fd996c19415f0e01dd40f8b50cf1e356",
@@ -98,7 +101,10 @@
       "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/injection/injection.json",
       "sha256": "8105cf00969c428ce4a6ae212f26d0cc7d3a4023b8b20d6ead44a4c83e54e09a"
      },
-     "publication": null
+     "publication": {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/publication/publication.json",
+      "sha256": "64210af2fe32eb8fbd2ea8d6b6496f513719d17c58c9a9a85d9ff4a8914229a7"
+     }
     },
     {
      "code": "N18",
@@ -107,7 +113,7 @@
      "writer": "C02-R-NEPH",
      "cross_reviewer": null,
      "counter_reviewer": null,
-     "status": "PRET_A_INJECTER",
+     "status": "PUBLIE_VERIFIE",
      "source_dir": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18",
      "files": {
       "chapters/N18/N18_a.html": "95f05b1b1210f21856e9205e60e4108de6ac19bee6c78367e119fdfc706e1676",
@@ -132,8 +138,14 @@
       "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/controle/control.json",
       "sha256": "c68d9bd1c27df9f3a88f3d57ad4079eac7caba1152499d5f50a4bc8a20b6f70f"
      },
-     "injection": null,
-     "publication": null
+     "injection": {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/injection/injection.json",
+      "sha256": "60b8c5b95f89e05a4355f895b4e1e382836e8f846e291d83214ba7088c5515aa"
+     },
+     "publication": {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/publication/publication.json",
+      "sha256": "be4d7c2ea263ba48785560483d161840866c38794e97688d95e9c0401af7ef69"
+     }
     },
     {
      "code": "D64",
@@ -142,7 +154,7 @@
      "writer": "C02-R-HEM",
      "cross_reviewer": null,
      "counter_reviewer": null,
-     "status": "PRET_A_INJECTER",
+     "status": "PUBLIE_VERIFIE",
      "source_dir": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64",
      "files": {
       "chapters/D64/D64_a.html": "1e7bcf527fe27650e43c718551e5e322d30d3f2622e8e2f3680cac226440f30e",
@@ -167,13 +179,108 @@
       "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/controle/control.json",
       "sha256": "7a7939685c2c4b69df145e3785e7f8cfaf861f37c8596263b1e4813cc3134f22"
      },
-     "injection": null,
-     "publication": null
+     "injection": {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/injection/injection.json",
+      "sha256": "7701396b014b5722b0c2e44bd2ea89eb697dbc7193e94474256136e93c7b46d1"
+     },
+     "publication": {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/publication/publication.json",
+      "sha256": "a20ae7a16aa59c2a25911a1dc8b742ff765dc58ffffc2898f70fd5a0fc4568f9"
+     }
     }
    ],
    "mode": "publication_directe",
    "authority": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
    "authority_sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59"
+  },
+  {
+   "cycle": 3,
+   "owner": "Claude",
+   "state": "ACTIF",
+   "started_at": "2026-10-15T11:30:52.586988+00:00",
+   "mode": "publication_directe",
+   "authority": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+   "authority_sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+   "transferred_from": null,
+   "handover": null,
+   "cross_phase": null,
+   "closed_at": null,
+   "closure": null,
+   "budget": null,
+   "chapters": [
+    {
+     "code": "I61",
+     "fragment_id": "S08",
+     "production_cycle": 3,
+     "writer": "C03-R-NEUR",
+     "cross_reviewer": null,
+     "counter_reviewer": null,
+     "status": "EN_PRODUCTION",
+     "source_dir": null,
+     "files": {},
+     "images": null,
+     "author": null,
+     "cross_audit": null,
+     "counter_audit": null,
+     "control": null,
+     "injection": null,
+     "publication": null
+    },
+    {
+     "code": "E05",
+     "fragment_id": "S05",
+     "production_cycle": 3,
+     "writer": "C03-R-ENDO",
+     "cross_reviewer": null,
+     "counter_reviewer": null,
+     "status": "EN_PRODUCTION",
+     "source_dir": null,
+     "files": {},
+     "images": null,
+     "author": null,
+     "cross_audit": null,
+     "counter_audit": null,
+     "control": null,
+     "injection": null,
+     "publication": null
+    },
+    {
+     "code": "N04",
+     "fragment_id": "S04",
+     "production_cycle": 3,
+     "writer": "C03-R-NEPH",
+     "cross_reviewer": null,
+     "counter_reviewer": null,
+     "status": "EN_PRODUCTION",
+     "source_dir": null,
+     "files": {},
+     "images": null,
+     "author": null,
+     "cross_audit": null,
+     "counter_audit": null,
+     "control": null,
+     "injection": null,
+     "publication": null
+    },
+    {
+     "code": "D69",
+     "fragment_id": "S06",
+     "production_cycle": 3,
+     "writer": "C03-R-HEM",
+     "cross_reviewer": null,
+     "counter_reviewer": null,
+     "status": "EN_PRODUCTION",
+     "source_dir": null,
+     "files": {},
+     "images": null,
+     "author": null,
+     "cross_audit": null,
+     "counter_audit": null,
+     "control": null,
+     "injection": null,
+     "publication": null
+    }
+   ]
   }
  ]
 }

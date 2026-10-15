@@ -22,6 +22,7 @@ import functools
 import hashlib
 import http.server
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -38,7 +39,7 @@ import night_cycle as N  # noqa: E402
 import tetrade_cycle as C  # noqa: E402
 import claude_cycle_gate as GATE  # noqa: E402
 
-RUNTIME = 'claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/coordinateur'
+RUNTIME = os.environ.get('MEDINA_RUNTIME', 'claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/coordinateur')
 TABS = ('pA', 'pE', 'pS', 'pP')
 VIEWPORTS = {'desktop': {'width': 1440, 'height': 1000}, 'mobile': {'width': 390, 'height': 844}}
 CAPTURE_KINDS = ('ouverture', 'fenetre', 'figure', 'tableau')
