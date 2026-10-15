@@ -3,19 +3,18 @@
   "id": "ALPHA77-CODEX-OUTIL-PUBLICATION-02",
   "state": "active",
   "actor": "Codex",
-  "conversation": "alpha77-codex-ci-api-g2",
+  "conversation": "alpha77-codex-bootstrap-server-g3",
   "owner": "Codex",
   "assigned_by": "Vial — assainissement et publication Alpha autorisés, 15 octobre 2026",
-  "branch": "codex/alpha77/ci-api-g2",
+  "branch": "codex/alpha77/bootstrap-server-g3",
   "role": "integrator",
   "codes": [
     "I63"
   ],
-  "base_sha": "8666fcebf035751a947478be520af2c3a123abfb",
-  "generation": 2,
+  "base_sha": "6959d25eb780d41780ad8e7cc07741f670396e60",
+  "generation": 3,
   "paths": [
-    ".github/workflows/collaboration.yml",
-    "docs/collaboration/instructions/PUBLICATION_ALPHA_RUNTIME.md"
+    "tests/verify_fragment_bootstrap.cjs"
   ],
-  "purpose": "Réduire les appels API du diagnostic répétitif de livraisons : réserver son inventaire réseau à workflow_dispatch explicite, conserver les tests scanner sur push/PR, les artefacts disponibles, toutes gardes/tests/Pages et les sources. Aucune modification des permissions, secrets, proxys, missions Claude ni du contrôleur. Successeur de génération1 libérée, preuves et historique conservés."
+  "purpose": "Corriger uniquement le serveur du test statique de bootstrap Pages : assertion du runtime HTML et délai maintenus pour les seuls documents fragments attendus dérivés du registre ; assets, templates et autres ressources servis avec MIME approprié et octets intacts. Preuve réelle S06/SVG C77 et régression négative HTML sans marqueur obligatoires. Aucune source Claude ou médicale, workflow, moteur partagé ou autre test modifié."
 }
