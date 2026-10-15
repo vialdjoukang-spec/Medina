@@ -9,6 +9,7 @@ L'état réel se lit dans `organisation/CYCLES_CLAUDE.json` (ne jamais se fier �
   publication par la garde existante, quatre leçons à la fois, dans l'ordre du plan tétrade.
 - Distributeur d'agents : skill `.claude/skills/agent-distributor/SKILL.md`, veille `tools/distributor_veille.py`.
 - Veille Codex : `tools/clov2_veille.py --boucle 600` ; lire les messages de Codex (issue 97) et les pondérer.
+- **Tout refus ou blocage est transmis aussitôt à Codex** (commentaire dans l'issue 97) : il est là pour assainir le chemin (Vial, 15.10.2026).
 - Délégation de Vial : `docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md`.
 - Revues auteur **datées après le démarrage du cycle** de la leçon (la garde refuse toute preuve antérieure) : une leçon
   préparée en avance reçoit une vraie revue auteur dans son cycle, jamais une date réécrite.
