@@ -6,7 +6,7 @@
  "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "a7ad398690e1e9461aead80c742c858a9a17da96",
+ "reviewed_commit": "f5736930c3015700e4f834e1308062ad1f6dae34",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -19,10 +19,10 @@
   "glossary/g45.py": "0aa1ffa254b6b769b6192bb4345ceed9488b6d668bfc966ff03fa4f346a3670c"
  },
  "reviewed_files_sha256": {
-  "chapters/G45/G45_a.html": "80448073667f7a8e74bc8a92e6c55b57cbe5732a225a59ed276f7b0287044c08",
-  "chapters/G45/G45_b.html": "d39d92cdb81992795023e9a3587fc9b66186c8f45ffa77046420837601f8d1a0",
-  "chapters/G45/G45_c.html": "c76b140d822327b00a269029f385230a646d208b321dea6f634a6c563a0f70c2",
-  "chapters/G45/G45_d.html": "a18f0eee2a84c9f4274d7e35779df9a75952c280b6292f221e0e5117a2e5ca7e",
+  "chapters/G45/G45_a.html": "42e67732527dd846aa3d5b19156e4108e2d496a79df774dfc034af3d29f4b920",
+  "chapters/G45/G45_b.html": "c6c0149849768fed843e8a2653299138d02e1a4fcbbbaf79fafc21822a844234",
+  "chapters/G45/G45_c.html": "62aa08051b4e5c480036eeeb178187562d9126e109b827e5e1e1a66b7bf58735",
+  "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
   "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
   "chapters/G45/G45_pop2.html": "bb5ab7ee533e69973a16f8996faf376233c3b40991ac77508cb3c9b4a25a0405",
   "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
@@ -66,15 +66,16 @@
   {
    "id": "P-LANG-01",
    "severite": "MINEUR",
-   "status": "non_blocking",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_a.html",
    "ancre": "Sources consultées les 13–14 octobre 2026",
    "constat": "La ligne d’état ne reflète plus les sources relues et ajoutées le 15.10.2026 (sémiologie, corrections MED).",
    "correction_proposee": "« Sources consultées du 13 au 15 octobre 2026 »",
    "evidence": [
-    "Lecture du rendu S08 construit hors dépôt (capture p_mobile_24px) et de G45_a.html."
+    "Lecture du rendu S08 construit hors dépôt (capture p_mobile_24px) et de G45_a.html.",
+    "Différence 97ba87d2 → f5736930c3015700e4f834e1308062ad1f6dae34 relue phrase par phrase et confrontée aux sources citées, 15.10.2026."
    ],
-   "justification_non_bloquant": "Information de datation, sans incidence médicale."
+   "verification_correction": "Corrigé à f5736930 (G45_a) : « Sources consultées du 13 au 15 octobre 2026 »."
   }
  ],
  "choix_differes": [
@@ -86,8 +87,9 @@
  "evidence": [
   "integration/corrections.json (147 entrées) relu.",
   "Différence textuelle base → final.",
-  "python3 test_v7.py --static G45 : OK (abréviations couvertes, classes fermées, aucun style en ligne)."
+  "python3 test_v7.py --static G45 : OK (abréviations couvertes, classes fermées, aucun style en ligne).",
+  "Revue complémentaire des corrections de f5736930 ; test_v7.py --static G45 : OK ; empreintes des sept fichiers recalculées."
  ],
- "conclusion": "Aucun constat bloquant ; un constat MINEUR non bloquant (P-LANG-01).",
+ "conclusion": "Aucun constat bloquant ; P-LANG-01 corrigé à f5736930.",
  "mention": "Revue IA, distincte d’une validation médicale humaine."
 }
