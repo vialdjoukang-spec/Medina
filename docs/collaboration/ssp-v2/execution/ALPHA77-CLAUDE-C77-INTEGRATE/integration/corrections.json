@@ -1341,5 +1341,37 @@
   "equilibre_balises": "onglets a+b+c+d équilibrés ; fenêtres équilibrées",
   "glossaire": "compilable ; aucune clé ajoutée (abréviations nouvelles déjà couvertes : PSA, IRM, HPV, LDH, CYP2C8, CYP3A4, R1, ADN, ORL, TEP)"
  },
- "mention": "Revue IA, distincte d’une validation médicale humaine."
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "phase3_corrections_revue_P": [
+  {
+   "constat": "P-MED-01",
+   "fichier": "chapters/C77/C77_c.html",
+   "ancre": "c77-s-bioch-cours",
+   "action": "« médicament autorisé » retiré (« accessibles à une thérapie ciblée ») ; liste des altérations rares alignée sur la source (EGFR, MET, KRAS p.G12C, ALK, « notamment ») ; BRAF V600 et fusion FGFR2 présentés comme les situations où le bénéfice de la thérapie ciblée était particulièrement favorable dans l’essai",
+   "source": "Onkopedia CUP-Syndrom 09.2025, § 5.1.3.1.2 (« angehbare Veränderungen bei ca. 25-35 % » ; « Besonders günstig war der Effekt bei Alterationen von BRAF V600 Mutationen und FGFR2-Fusionen » ; « EGFR, MET, KRAS p.G12C, ROS1, NTRK und ALK »)"
+  },
+  {
+   "constat": "P-MED-02",
+   "fichier": "chapters/C77/C77_b.html",
+   "ancre": "c77-9, formes défavorables",
+   "action": "gain 4,7 → 8,1 mois rattaché aux patients porteurs d’une altération ciblable ; réserve de puissance limitée à la comparaison des sous-groupes BRAF V600 et FGFR2",
+   "source": "Onkopedia 09.2025, § 5.1.3.1.2 (« Für einen statistischen Vergleich dieser Kollektive war die Studie nicht gepowert »)"
+  },
+  {
+   "constat": "Lacune coordinateur",
+   "fichier": "chapters/C77/C77_pop1.html (c77-sources) ; chapters/C77/C77_pop2.html (c77-tep)",
+   "action": "lacune « remboursement du TEP-CT selon l’OPAS non vérifié » rendue visible dans la leçon",
+   "source": "Rapport MED ALPHA1, section Lacunes"
+  },
+  {
+   "constat": "Glossaire",
+   "fichier": "glossary/c77.py",
+   "action": "clés FGFR2 et p.G12C ajoutées (B.audit = {})",
+   "source": "Onkopedia 09.2025"
+  }
+ ],
+ "phase3_controles": {
+  "build_medina_audit": "{} (test_v7 --static)",
+  "test_v7_static": "OK"
+ }
 }
