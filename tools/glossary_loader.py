@@ -57,6 +57,11 @@ _TEMPLATES = [
      "        sys.path.insert(0, str(_gdir))\n" + _indent(_path_loop('_gdir')), '_existing'),
     ("if _g is not None:\n"
      "    sys.path.insert(0, str(_g))\n" + _indent(_path_loop('_g')), '_existing'),
+    ("if _root is not None:\n"
+     "    _gdir = str(_root / 'glossary')\n"
+     "    if _gdir not in sys.path:\n"
+     "        sys.path.insert(0, _gdir)\n" +
+     _indent(_path_loop("(_root / 'glossary')")), '_existing'),
     ("""for _dir in (Path(__file__).resolve().parent, Path(__file__).resolve().parents[8] / 'glossary' if len(Path(__file__).resolve().parents) > 8 else None):
     if _dir is None or not _dir.is_dir():
         continue

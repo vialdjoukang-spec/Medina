@@ -105,6 +105,31 @@ ac('SHARED_NEW', 'shared addition')
                 m.load_glossary(directory)
             self.assertEqual(builtins._medina_test_count, 0)
 
+    def test_ancestor_root_discovery_preserves_conditional_keys_without_importing(self):
+        discovery = next(source for source, _ in m._TEMPLATES
+                         if source.startswith('if _root is not None:'))
+        source = ("from pathlib import Path\nimport importlib\nimport sys\n"
+                  "_here = Path(__file__).resolve()\n"
+                  "_root = next((p for p in _here.parents if (p / 'glossary' / 'cardio_1.py').exists()), None)\n"
+                  "_existing = {}\n" + discovery.replace('__MEDINA_SELF__', 'item') +
+                  "\nG = {}\ndef add(key, value):\n"
+                  "    if key not in _existing:\n        G[key] = {'full': value}\n"
+                  "add('SHARED', 'must not replace')\nadd('NEW', 'root discovery addition')\n")
+        directory = self.directory({'cardio_1.py': BASE, 'item.py': source})
+        before = sys.path[:]
+        with patch.object(importlib, 'import_module', side_effect=AssertionError('Discovery must not run')):
+            self.assertEqual(m.load_glossary(directory), {
+                'SHARED': {'full': 'base'}, 'NEW': {'full': 'root discovery addition'}})
+        self.assertEqual(sys.path, before)
+
+    def test_ancestor_root_discovery_with_extra_effect_is_rejected_before_execution(self):
+        discovery = next(source for source, _ in m._TEMPLATES
+                         if source.startswith('if _root is not None:'))
+        discovery = discovery.replace('    _gdir =', "    print('unexpected side effect')\n    _gdir =")
+        directory = self.directory({'item.py': discovery + '\nG = {}\n'})
+        with self.assertRaisesRegex(m.GlossaryLoadError, 'non reconnue'):
+            m.load_glossary(directory)
+
     def test_loop_with_extra_effect_is_not_silently_stripped(self):
         source = conditional('item', "a('NEW', 'value')\n")
         source = source.replace('    except Exception:', "        print('unexpected extra operation')\n    except Exception:")
