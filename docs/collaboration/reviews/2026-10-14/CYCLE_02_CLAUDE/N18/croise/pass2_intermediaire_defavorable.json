@@ -1,0 +1,216 @@
+{
+  "code": "N18",
+  "actor": "C02-R-ENDO",
+  "runtime_agent_id": "claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/C02-R-ENDO",
+  "pass": 2,
+  "started_at": "2026-10-14T22:20:00+00:00",
+  "finished_at": "2026-10-14T21:50:28.149270+00:00",
+  "medical_human_validation": false,
+  "dimensions": {
+    "redaction": "Relecture des six fichiers modifiés par C02-R-NEPH. Les 42 fenêtres prescrites sont désormais originales (0 % de phrases copiées, mesure refaite). Les mots verts « créatinine » et « cystatine » ouvrent des fenêtres propres. Il reste cinq fenêtres de calcul et de définition qui recopient le corps (Y01).",
+    "medecine": "Aucune erreur médicale relevée dans les ajouts : seuils potassium SRA, cibles tensionnelles, statines, fer et EPO, borne A3 et conversion, interprétation de la fraction d'albumine, effet du repas carné. Les doses Swissmedic de la passe 1 sont inchangées.",
+    "sources": "Chaque ajout X02 est apparié au consensus SSED/SSN 2024, à la stratégie HUG ou à KDIGO 2024, avec des passages relus aujourd'hui (empreintes ci-dessous). L'ordre suisse puis international est respecté.",
+    "frontend": "Structure, onglets et images inchangés ; empreintes des images identiques à la passe 1."
+  },
+  "numerical_checks": [
+    {
+      "claim": "Bloqueur SRA : réduire si K+ > 5,5 mmol/L, arrêter si K+ > 6 mmol/L",
+      "source": "Consensus SSED/SSN maladie rénale diabétique 2024 (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "a0e8af5feecbd38affccedd36530029bf875fe31ba5d7f8b480e49c480ebc526",
+      "section": "ligne 535",
+      "passage": "réduire le bloqueur SRA si K+ > 5,5 mmol/l, arrêter si K+ > 6 mmol/l",
+      "course_location": "N18_b.html (X02) et N18_pop1.html",
+      "result": "conforme"
+    },
+    {
+      "claim": "Cible tensionnelle 130/80 mmHg dans la MRD",
+      "source": "Consensus SSED/SSN maladie rénale diabétique 2024 (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "a0e8af5feecbd38affccedd36530029bf875fe31ba5d7f8b480e49c480ebc526",
+      "section": "ligne 397",
+      "passage": "TA>130/80mmHg",
+      "course_location": "N18_b.html",
+      "result": "conforme"
+    },
+    {
+      "claim": "Hypertension résistante > 140/90 mmHg sous trithérapie comme motif d'avis",
+      "source": "Consensus SSED/SSN maladie rénale diabétique 2024 (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "a0e8af5feecbd38affccedd36530029bf875fe31ba5d7f8b480e49c480ebc526",
+      "section": "lignes 214-215",
+      "passage": "pression artérielle >140/90 mmHg avec une triple thérapie",
+      "course_location": "N18_b.html, N18_pop1.html",
+      "result": "conforme"
+    },
+    {
+      "claim": "Baisse rapide du DFGe > 5 mL/min/an",
+      "source": "Consensus SSED/SSN maladie rénale diabétique 2024 (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "a0e8af5feecbd38affccedd36530029bf875fe31ba5d7f8b480e49c480ebc526",
+      "section": "ligne 193",
+      "passage": "Baisse rapide et soutenue de la DFGe (>5ml/min/an)",
+      "course_location": "fenêtres d'orientation N18_pop1.html",
+      "result": "conforme"
+    },
+    {
+      "claim": "Fer IV si saturation de la transferrine ≤ 30 %",
+      "source": "Consensus SSED/SSN maladie rénale diabétique 2024 (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "a0e8af5feecbd38affccedd36530029bf875fe31ba5d7f8b480e49c480ebc526",
+      "section": "ligne 556",
+      "passage": "≤ 30 % ; pas chez les patients souffrant d'une infection systémique active",
+      "course_location": "N18_pop1.html (X02)",
+      "result": "conforme"
+    },
+    {
+      "claim": "Ferritine < 500 µg/L comme condition de supplémentation martiale",
+      "source": "HUG, stratégie MRC (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "ad00f57e371281ed7fb24c5ac31d8b299275d2a468bb0c01939f55b955d2ba8c",
+      "section": "lignes 547-553",
+      "passage": "Ferritine <500 µg/l",
+      "course_location": "N18_b.html A08 (X02)",
+      "result": "conforme"
+    },
+    {
+      "claim": "Érythropoïétine initiée par le néphrologue",
+      "source": "Consensus SSED/SSN maladie rénale diabétique 2024 (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "a0e8af5feecbd38affccedd36530029bf875fe31ba5d7f8b480e49c480ebc526",
+      "section": "ligne 560",
+      "passage": "Le traitement par l'érythropoïétine recombinante humaine doit être initié par",
+      "course_location": "N18_b.html A08 (X02)",
+      "result": "conforme"
+    },
+    {
+      "claim": "Protéinurie > 60 % d'albumine = glomérulaire ; < 50 % = tubulaire ou de surcharge",
+      "source": "HUG, stratégie MRC (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "ad00f57e371281ed7fb24c5ac31d8b299275d2a468bb0c01939f55b955d2ba8c",
+      "section": "lignes 66-68",
+      "passage": "composée à >60% d'albumine ... moins de 50% d'albumine ... tubulaire ou de surcharge",
+      "course_location": "N18_pop1.html (nouvelle fenêtre)",
+      "result": "conforme"
+    },
+    {
+      "claim": "Statine si âge ≥ 50 ans et DFGe < 60 sans dialyse (1A)",
+      "source": "KDIGO 2024 CKD Guideline (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "21ec63538046bde3bbffbfbb20c3c6104671bd297a6006c590fa0e503d99bde8",
+      "section": "Recommendation 3.15.1.1, ligne 5706",
+      "passage": "In adults aged ≥50 years with eGFR <60 ml/min per 1.73 m2 but not treated with",
+      "course_location": "N18_b.html, N18_pop1.html",
+      "result": "conforme"
+    },
+    {
+      "claim": "Repas de viande cuite : hausse de la créatinine d'environ 20 µmol/L",
+      "source": "KDIGO 2024 CKD Guideline (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "21ec63538046bde3bbffbfbb20c3c6104671bd297a6006c590fa0e503d99bde8",
+      "section": "lignes 7869-7871",
+      "passage": "impact of a cooked meat or fish meal ... increase in SCr of approximately 20 mmol/l (0.23 mg/dl)",
+      "course_location": "N18_pop1.html n18-creatinine (X01)",
+      "result": "conforme"
+    },
+    {
+      "claim": "Statine haute intensité si DFGe > 30 dans la MRD",
+      "source": "Consensus SSED/SSN maladie rénale diabétique 2024 (texte extrait), relu le 14.10.2026",
+      "source_text_sha256": "a0e8af5feecbd38affccedd36530029bf875fe31ba5d7f8b480e49c480ebc526",
+      "section": "ligne 491",
+      "passage": "Statine d'intensité élevée (recommandée, niveau de preuve élevé) si DFGe>30",
+      "course_location": "N18_b.html (X02)",
+      "result": "conforme"
+    },
+    {
+      "claim": "Kerendia : 20 mg si DFGe ≥ 60, 10 mg si 25–<60, non initié < 25 (inchangé depuis la passe 1)",
+      "source": "FI suisse Kerendia, AmiKo GTIN 7680681300014, relue le 14.10.2026",
+      "source_text_sha256": "926bb2688e91a1f106d5d3989f12cf4e161c3a86962582623b629add55c99e2a",
+      "section": "Posologie",
+      "passage": "20 mg ≥60 ; 10 mg ≥25 à <60",
+      "course_location": "N18_d.html",
+      "result": "conforme"
+    }
+  ],
+  "derived_calculations": [
+    {
+      "claim": "Borne A3 : 30 mg/mmol en mg/g",
+      "computed": 265.2,
+      "expected": 265,
+      "units": "mg/g",
+      "note": "créatinine 113,12 g/mol ; exposé X03 conforme"
+    },
+    {
+      "claim": "20 µmol/L en mg/dL",
+      "computed": 0.226,
+      "expected": 0.23,
+      "units": "mg/dL"
+    }
+  ],
+  "pass1_reserves_check": [
+    {
+      "id": "X01",
+      "status": "levee",
+      "evidence": "42/42 fenêtres prescrites réécrites, 0 phrase de plus de 40 caractères copiée du corps ; fenêtres n18-creatinine et n18-cystatine créées ; 64 mots verts redirigés."
+    },
+    {
+      "id": "X02",
+      "status": "levee",
+      "evidence": "Tableaux A07-5/6, A08-1/4/5 et E02-4 : K+ > 5,5 / > 6, 130/80 et 140/90, statines, ferritine < 500 et TSAT ≤ 30 %, EPO initiée par le néphrologue, sédiment ; passages relus."
+    },
+    {
+      "id": "X03",
+      "status": "levee",
+      "evidence": "Fenêtre n18-a3-borne : divergence exposée, conversion exacte 30 mg/mmol ≈ 265 mg/g (recalculée), piège reformulé."
+    }
+  ],
+  "blocking_reserves": [
+    {
+      "id": "Y01",
+      "localisation": "chapters/N18/N18_pop1.html et N18_pop2.html : fenêtres de calcul et de définition n18-calcul-egfr, n18-calcul-kfre, n18-calcul-clairance, n18-calcul-acr, n18-dfg (ouvertes par les mots verts des calculs CKD-EPI, KFRE, Cockcroft–Gault, RAC et DFG)",
+      "probleme": "Même classe que X01, hors des 42 fenêtres prescrites corrigées : la mesure des phrases de plus de 40 caractères montre que n18-calcul-egfr reprend 18/18 phrases du corps, n18-calcul-kfre 13/16, n18-calcul-clairance 12/14, n18-calcul-acr 7/10, n18-dfg 10/18. Ces fenêtres de calcul ne donnent ni la démarche détaillée distincte, ni les pièges de saisie, ni l'interprétation propre attendues ; le lecteur relit le paragraphe qu'il vient de quitter.",
+      "source": "Contrat de clarté (fenêtre de calcul : explication distincte et détaillée), docs/STYLE_REDACTION.md (pas de répétition), consignes d'interaction et densité ; X01 de la passe 1",
+      "correction_attendue": "Réécrire ces cinq fenêtres (et toute autre fenêtre > 50 % de phrases du corps) : formule complète avec unités, calcul pas à pas sur un second exemple chiffré distinct du corps, domaine de validité et pièges (créatinine instable, masse musculaire, unités mg/mmol vs mg/g, KFRE hors population de validation), sources inchangées ; remesurer la duplication (< 30 % par fenêtre) et relancer test_v7 --static N18.",
+      "gravite": "bloquante (pédagogique, pas d'erreur médicale)"
+    }
+  ],
+  "nonblocking_observations": [],
+  "verdict": "defavorable",
+  "score": 19,
+  "score_justification": "X01, X02 et X03 sont levées et l'exactitude médicale est intacte. Une réserve bloquante subsiste (Y01) : cinq fenêtres de calcul et de définition dupliquent le corps, défaut de la même classe que X01. Le score de 20/20 sans réserve n'est donc pas atteint.",
+  "final_files": {
+    "chapters/N18/N18_a.html": "95f05b1b1210f21856e9205e60e4108de6ac19bee6c78367e119fdfc706e1676",
+    "chapters/N18/N18_b.html": "16a5e5fa164eba823b322f94548957bce3a92131542220ecdd9f9ce302773db0",
+    "chapters/N18/N18_c.html": "cc90129b56c00a29277f083cac3ae6fae801b41cbe48040e1c67385eb7bb43ee",
+    "chapters/N18/N18_d.html": "f317270b1d3f6bdfe0b2b768699fed890bc25624e096b935fda7ae102aaf88c6",
+    "chapters/N18/N18_pop1.html": "4ef26888dbff9bf9e51673c6eb84970451d7cc8e803c8514b1b928e307461d6b",
+    "chapters/N18/N18_pop2.html": "06b0ae573ba1fc9bcc7ae20cad63903e999ffbecd7f948ee77512ebaf3e7e218",
+    "glossary/n18.py": "bbc7be298bc54c4474ef226ea7dda4d09623c6c458e905318e7411a09d3a6a73"
+  },
+  "image_files": {
+    "assets/img/cycle2/n18/n18_01.gif": "b17da3f01daadcc230cc265283d3c92a83155bf3a69a86a9ac390e8d825f9431",
+    "assets/img/cycle2/n18/n18_02.gif": "b645908a6e9852b57ae8f6c16dbe98a626ec53a9492334db1baf36b135d2c7b8",
+    "assets/img/cycle2/n18/n18_03.gif": "e28e47510ec9079cd12940f82bf509b5e87c97e02df036ea09ff464b3a61f9fc",
+    "assets/img/cycle2/n18/n18_04.gif": "19a6864b336f5b64c8805fc1a60045ad517f75db2f9705d1d44c7d78d6be8a24",
+    "assets/img/cycle2/n18/n18_05.gif": "2e7ac232f3847b696c55317aced3ccda7e61f7082cf00cd37f9497f9dc227864",
+    "assets/img/cycle2/n18/n18_06.gif": "f5568dfc807350cac1a6910db5fbf941e7cf62e300f1e22d6cd300cabe9cb05f",
+    "assets/img/cycle2/n18/n18_07.gif": "b9b52f4417bd6a48ca5789225354e861018b92030b94757121e61d1d4f7aeaa6",
+    "assets/img/cycle2/n18/n18_08.gif": "3d6d5f6a248b1f56b474dcafd62cce7cf78ef882f36452ed63cbc59df1c9e181"
+  },
+  "pass1_proof": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/croise/pass1.json",
+    "sha256": "23d95b3b4d862a1c8c5476506ca491a2b211bc3b1767fb248251c3eb886d85a2"
+  },
+  "entry_proof": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/croise/entree.json",
+    "sha256": "51e1c06b780e57e1231cffae0d3b67eb7cf5dfc212e2ccfe9979a97c4702d282"
+  },
+  "author_final_files_match": true,
+  "read_inventory": {
+    "fichiers_cours": [
+      "chapters/N18/N18_a.html",
+      "chapters/N18/N18_b.html",
+      "chapters/N18/N18_c.html",
+      "chapters/N18/N18_d.html",
+      "chapters/N18/N18_pop1.html",
+      "chapters/N18/N18_pop2.html",
+      "glossary/n18.py"
+    ],
+    "sources": [
+      "DKD.txt",
+      "HUGS.txt",
+      "KDIGO24.txt",
+      "FI-KERENDIA.txt"
+    ]
+  }
+}

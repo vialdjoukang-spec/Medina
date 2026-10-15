@@ -1,0 +1,91 @@
+{
+ "actor": "C03-R-NEPH",
+ "verdict": "conforme",
+ "checked_at": "2026-10-14T23:33:08.327668+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Sortie : leçon N04 rédigée sous l'autorisation de publication directe des Cycles 3 à 30 ; aucune injection ni publication par l'auteur."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/dossier_sources.json",
+     "sha256": "8f9af3fb7280d6d6c77af362e82a443ec32d6a287bed1c5f1c0264b544a69ae8",
+     "explanation": "Sortie : sept fichiers N04 uniquement (4 onglets, 2 fichiers de fenêtres, glossaire), rédigés depuis le dossier de sources du Cycle 3 ; écriture limitée au dossier CYCLE_03_N04."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/source_ledger_claude.json",
+     "sha256": "0099ac754f97260a733fba7250bf60c8c702d55c6c6a09bc67a55d9c1c342929",
+     "explanation": "Sortie : 136 entrées rattachées à un passage lu avec empreinte (113 affirmations du dossier, cas fictif, 9 calculs, 13 intervalles Viollier) ; 0 affirmation non vérifiée ; 10 lacunes et 12 divergences tracées."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/contexte_suisse_claude.json",
+     "sha256": "a97b9a656005b9185121d07cb3e4f70991351929360bd8d7a64dcdca047a0cec",
+     "explanation": "Sortie : matrice de 83 décisions ; sources suisses d'abord (SSN, OFS, OFSP/CFV, FI Swissmedic du produit exact, Viollier, CHUV), puis ÖGN et KDIGO ; aucune recommandation américaine décisionnelle ; verdicts en attente de revue différée."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Sortie : auteur C03-R-NEPH seul ; aucun audit croisé ni contre-audit simulé ; revue IA sans validation médicale humaine."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/chapters/N04/N04_a.html",
+     "sha256": "1e2a622ed7469badb11654ee56df66948f8f84a7e91c80e1c7f65d27830290f0",
+     "explanation": "Sortie : quatre onglets, 53 fenêtres préfixées n04-, glossaire n04.py, 6 quiz, 8 Pareto, dernier îlot de la Pathologie en alert puis key, 5 images ouvertes, 3 schémas didactiques, test_v7 --static OK et test_v7 navigateur OK sur copie jetable."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/images_claude.json",
+     "sha256": "fb9a012e22abc08e176a33d7445cce1eed273fc7770c7e3aa9c215d4551e7421",
+     "explanation": "Sortie : aucune affirmation hors dossier ; cas fictifs et calculs distingués ; images réelles à licence ouverte inspectées ; lacunes (échographie, microscopie électronique) signalées et remplacées par un schéma didactique."
+    }
+   ]
+  }
+ ]
+}

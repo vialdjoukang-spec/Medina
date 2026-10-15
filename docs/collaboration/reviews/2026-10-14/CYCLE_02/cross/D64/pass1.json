@@ -1,0 +1,686 @@
+{
+  "code": "D64",
+  "actor": "C02-R-NEUR",
+  "runtime_agent_id": "/root/executeur_cycles_nuit/auteur_g45",
+  "pass": 1,
+  "started_at": "2026-10-14T00:24:12.245818+00:00",
+  "finished_at": "2026-10-14T00:39:57.984635+00:00",
+  "medical_human_validation": false,
+  "entry_inventory": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/entry-inventory.json",
+    "sha256": "f5d62a0d021342d2a0a4c08e95824c57031ab711872a17a3a3795f41d7c86dc2"
+  },
+  "entry_prompt_receipt": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/prompt-entry.json",
+    "sha256": "3ab7acedd4c673d484d6934359df4419b5ed3b74bc8c0f0677192fefc984ce33"
+  },
+  "dimensions": {
+    "redaction": "Les 21 parties/126 sous-parties, 42 fenêtres, 21 Pareto et 60 entrées de glossaire ont été examinés. La progression normal→pathologique est généralement claire, les cas fictifs identifiés et les variantes rares conservées. Cependant 21 annonces de plan, 34 mots coupés par insertion de bouton, des infinitifs et réponses nominales empêchent une conformité rédactionnelle. Les acronymes et réactions de la figure hème doivent être approfondis. R01/R07.",
+    "medecine": "Les calculs vérifiés sont corrects et l’auteur distingue morphologie cellulaire, maladie clonale et preuve génétique. Les FI correspondent aux produits exacts, et l’interféron est honnêtement hors indication. La ligne Benadon iatrogène élargit toutefois l’indication, les monographies/sécurités Exjade/Pegasys sont incomplètes, les critères CDA I et deux pièges suisses manquent. Le parcours A09 reste partiel pour le périmètre D64. R02/R03/R06/R08 empêchent une remise finale.",
+    "sources": "Lecture directe des passages archivés, pas acceptation du registre sur parole. Les sources suisses encadrent références, transfusion et médicaments ; les recours européens dédiés aux maladies rares sont justifiés, aucune recommandation américaine ajoutée par cette revue. Les 48 décisions ont une annotation indépendante. Six appariements au moins sont à corriger et l’hypothermie est faussement attribuée à Swissmedic. Les six figures publiées ont été inspectées avec licence originale ; objectif A09 partiellement rempli. R04 et complément N01.",
+    "frontend": "Aperçu source D64-author-frozen-v2 ouvert par mon exécution Playwright personnelle. Empreintes identiques aux sept sources reçues. Quatre onglets examinés en 1440×1000 et 390×844, six images chargées, 63 fenêtres/Pareto ouverts sur bureau, exemples de fenêtres/quiz sur mobile ; aucune erreur JS ni débordement détectés. Captures desktop-pP et mobile-window effectivement inspectées. La conformité technique ne remplace pas les encadrés alert et statut IA manquants (R05). Aucun rapport root ne m’est attribué."
+  },
+  "numerical_checks": [
+    {
+      "claim": "Définition HUG : Hb <130 g/L chez homme, <120 g/L chez femme adulte",
+      "source": "https://www.hug.ch/sites/interhug/files/structures/medecine_de_premier_recours/documents/infos_soignants/anemie_arce.pdf",
+      "source_id": "hug_anemia",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/hug_anemia.html",
+        "sha256": "cba8ae29d3968a78c98717d1c761115e96836ae26f469c955df939efff135f60"
+      },
+      "section": "Définition, p. 3",
+      "passage": "Le document de 2013 distingue les deux seuils adultes.",
+      "finding": "Conforme en A02 ; seuils diagnostiques séparés des intervalles du laboratoire ; attribution 2013 honnête.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Intervalle Hb LUKS adulte : 118–152 g/L femme, 134–170 g/L homme",
+      "source": "https://analysenverzeichnis.luks.ch/analysis/Haematogramm_1_%28HG_1%29.html",
+      "source_id": "luks_hg",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/luks_hg.html",
+        "sha256": "5a2e704e870275a2c9156ca930018d4d557a298f136c871552284e28ab3b80d9"
+      },
+      "section": "Referenzbereich, Hämoglobin",
+      "passage": "Deux intervalles par sexe dans le tableau original.",
+      "finding": "Conforme A02/E01 ; aucune fausse universalisation à grossesse/enfant.",
+      "kind": "primary"
+    },
+    {
+      "claim": "VGM LUKS : 82–97 fL",
+      "source": "https://analysenverzeichnis.luks.ch/analysis/Haematogramm_1_%28HG_1%29.html",
+      "source_id": "luks_hg",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/luks_hg.html",
+        "sha256": "5a2e704e870275a2c9156ca930018d4d557a298f136c871552284e28ab3b80d9"
+      },
+      "section": "Referenzbereich, MCV",
+      "passage": "MCV 82–97 fL chez l’adulte.",
+      "finding": "Conforme ; différence avec repère CSCQ 80–100 expliquée.",
+      "kind": "primary"
+    },
+    {
+      "claim": "TCMH LUKS : 27–33 pg",
+      "source": "https://analysenverzeichnis.luks.ch/analysis/Haematogramm_1_%28HG_1%29.html",
+      "source_id": "luks_hg",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/luks_hg.html",
+        "sha256": "5a2e704e870275a2c9156ca930018d4d557a298f136c871552284e28ab3b80d9"
+      },
+      "section": "Referenzbereich, MCH",
+      "passage": "MCH 27–33 pg.",
+      "finding": "Conforme dans le tableau des indices.",
+      "kind": "primary"
+    },
+    {
+      "claim": "CCMH LUKS : 311–364 g/L femme, 317–364 g/L homme",
+      "source": "https://analysenverzeichnis.luks.ch/analysis/Haematogramm_1_%28HG_1%29.html",
+      "source_id": "luks_hg",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/luks_hg.html",
+        "sha256": "5a2e704e870275a2c9156ca930018d4d557a298f136c871552284e28ab3b80d9"
+      },
+      "section": "Referenzbereich, MCHC",
+      "passage": "MCHC distingue les deux intervalles.",
+      "finding": "Conforme ; le calcul fictif à 333 g/L est compatible avec les deux.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Réticulocytes adultes LUKS : 0,4–1,6 % et 33–98 G/L",
+      "source": "https://analysenverzeichnis.luks.ch/analysis/Retikulozyten",
+      "source_id": "swiss_retic",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/swiss_retic.html",
+        "sha256": "8f33099815adf011e20137f6cfdf0e6091643ed025e47fa099ce730688b88a5c"
+      },
+      "section": "Referenzbereich",
+      "passage": "Le catalogue donne les intervalles relatif et absolu.",
+      "finding": "Conforme et population indiquée ; un nombre dans l’intervalle peut rester inadapté à l’anémie.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Couronne sidéroblastique : ≥5 granules couvrant ≥1/3 de la circonférence nucléaire",
+      "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9318570/fullTextXML",
+      "source_id": "gf_hc_perls",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/gf_hc_perls.html",
+        "sha256": "64e33eec6947e091333ae7ae745cad5144d2679059da9eb14d7a7569d4208d31"
+      },
+      "section": "Interpretation",
+      "passage": "Définition du sidéroblaste de type 3, distinct des granules non périnucléaires.",
+      "finding": "Conforme A03/E02 et légende image02 ; ce critère cellulaire ne suffit pas à diagnostiquer une néoplasie.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Quantification Perls : 200 érythroblastes recommandés, 100 si cellularité faible",
+      "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9318570/fullTextXML",
+      "source_id": "gf_hc_perls",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/gf_hc_perls.html",
+        "sha256": "64e33eec6947e091333ae7ae745cad5144d2679059da9eb14d7a7569d4208d31"
+      },
+      "section": "Interpretation, dénombrement",
+      "passage": "Le groupe recommande 200, tolère 100 en faible cellularité.",
+      "finding": "Conforme E02-partie-6 ; ne pas confondre dénominateur et seuil de maladie.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Benadon anémie pyridoxino-dépendante : 150–300 mg/j dès 15 ans",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680256350192",
+      "source_id": "FI_Benadon",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Benadon.txt",
+        "sha256": "b2ec042d1d9162656e7185582c0766281efa34278ba39d605f43f956104e852a"
+      },
+      "section": "Posologie/mode d’emploi",
+      "passage": "Dose orale 150–300 mg par jour, parfois davantage selon décision médicale.",
+      "finding": "Conforme P01 tableau ligne1 ; pas de plafond universel inventé.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Benadon : absence de prise continue au-delà de cinq mois sans interruption",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680256350192",
+      "source_id": "FI_Benadon",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Benadon.txt",
+        "sha256": "b2ec042d1d9162656e7185582c0766281efa34278ba39d605f43f956104e852a"
+      },
+      "section": "Posologie/mode d’emploi",
+      "passage": "La durée continue est limitée à cinq mois.",
+      "finding": "Conforme, limite conservée dans le cours.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Benadon : neuropathie décrite lors de prises prolongées dès 50 mg/j",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680256350192",
+      "source_id": "FI_Benadon",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Benadon.txt",
+        "sha256": "b2ec042d1d9162656e7185582c0766281efa34278ba39d605f43f956104e852a"
+      },
+      "section": "Mises en garde/précautions",
+      "passage": "La FI signale la neuropathie sensitive à doses ≥50 mg/j en prise prolongée.",
+      "finding": "Conforme ; le risque n’est pas limité aux très fortes doses.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Benadon : 150 mg/j pour carences iatrogènes sous antagonistes de pyridoxine",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680256350192",
+      "source_id": "FI_Benadon",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Benadon.txt",
+        "sha256": "b2ec042d1d9162656e7185582c0766281efa34278ba39d605f43f956104e852a"
+      },
+      "section": "Indications et Posologie",
+      "passage": "La dose appartient à la prophylaxie/au traitement de la carence provoquée par les antagonistes.",
+      "finding": "NON CONFORME : le tableau P01 élargit en « anémie iatrogène » ; réserve R02.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade dispersible : dose initiale post-transfusionnelle habituelle 20 mg/kg/j",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Posologie/mode d’emploi",
+      "passage": "Dose initiale habituelle de 20 mg/kg, une prise quotidienne.",
+      "finding": "Conforme ; produit dispersible exact identifié.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : 30 mg/kg/j si apport >14 mL/kg/mois, 10 si <7 mL/kg/mois selon objectif",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Posologie, apport transfusionnel",
+      "passage": "Les deux adaptations initiales sont conditionnées par apport et objectif de charge en fer.",
+      "finding": "Conforme P01 tableau, sans confondre mg/kg et volume transfusé.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : titration 5–10 mg/kg tous les 3–6 mois ; >40 mg/kg/j non recommandé",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Ajustement de la dose",
+      "passage": "Paliers et limite de dose dans la population post-transfusionnelle.",
+      "finding": "Conforme ; aucune transposition automatique à la thalassémie non transfusée.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : clairance de créatinine <60 mL/min contre-indiquée",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Contre-indications",
+      "passage": "Seuil explicite de clairance.",
+      "finding": "Conforme P02 ; les critères de réduction après introduction restent incomplets (R03).",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : Child-Pugh B réduction initiale ≈50 %, Child-Pugh C ne pas administrer",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Patients avec troubles hépatiques",
+      "passage": "La FI distingue insuffisance modérée et sévère.",
+      "finding": "Conforme A11/P02.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : créatinine deux fois avant traitement, hebdomadaire premier mois/après modification puis mensuelle",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Fonction rénale et tableau de surveillance",
+      "passage": "Mesures initiales et rythme ultérieur sont distincts.",
+      "finding": "Conforme P02 ; contrôle protéinurie mensuel également exact.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : bilan hépatique toutes les deux semaines premier mois puis mensuel",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Tableau de surveillance",
+      "passage": "Transaminases, bilirubine et phosphatase alcaline : contrôle initial puis périodique.",
+      "finding": "Conforme P02.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : audition/ophtalmologie et croissance pédiatrique annuelles",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Tableau de surveillance",
+      "passage": "Poids, taille et développement sexuel figurent réellement dans la FI.",
+      "finding": "Conforme ; aucun ajout non sourcé de développement sexuel.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : traitement après ≈20 unités/100 mL/kg et surcharge ; transfusions régulières >8 unités/an",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Posologie, introduction post-transfusionnelle",
+      "passage": "La FI associe l’exposition à ferritine >1000 µg/L ou fer hépatique >2 mg/g sec.",
+      "finding": "Données absentes du cours malgré la promesse de critères d’introduction ; R03. Ne pas les généraliser aux anémies rares non transfusées.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Exjade : hausse de créatinine >33 % lors de deux visites consécutives, réduction adulte de 10 mg/kg sous conditions",
+      "source": "https://amiko.oddb.org/fr/fi?gtin=7680574660010",
+      "source_id": "FI_Exjade",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/FI_Exjade.txt",
+        "sha256": "8a146f55b3db932142bbcbf3bacbcba34951108c89045ea45f0bbd664efca003"
+      },
+      "section": "Fonction rénale",
+      "passage": "La FI distingue hausse non progressive sans autre cause, progression et persistance.",
+      "finding": "Critères d’action non enseignés ; R03. Le seuil ne doit pas être isolé de ses conditions.",
+      "kind": "primary"
+    },
+    {
+      "claim": "CDA I : ≥20 % d’érythroblastes anormaux en microscopie optique dans critères spécialisés",
+      "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6519365/fullTextXML",
+      "source_id": "cda_2019",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/cda_2019.html",
+        "sha256": "e7ee6798e57c2a19dd8a8ca9627c5db8162671c9d5db4703e69eaf31a9d9d864"
+      },
+      "section": "Bone marrow examination",
+      "passage": "Le texte précise la proportion et les ponts internucléaires, puis les limites de reproductibilité.",
+      "finding": "A12 omet ce critère propre au type I ; R06. Il ne s’agit pas d’un seuil universel pour toutes les CDA.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Microscopie électronique image06 : grossissement publié 4000×",
+      "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6519365/fullTextXML",
+      "source_id": "cda_2019",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/cda_2019.html",
+        "sha256": "e7ee6798e57c2a19dd8a8ca9627c5db8162671c9d5db4703e69eaf31a9d9d864"
+      },
+      "section": "Figure 3 et légende originale",
+      "passage": "Comparaison témoin/cellule CDA I cultivée, grossissement publié.",
+      "finding": "Conforme ; image décrite comme microscopie électronique et pas comme génétique, aucune échelle métrique inventée.",
+      "kind": "primary"
+    },
+    {
+      "claim": "Réticulocytes : 2 % de 3,0 T/L = 60 G/L",
+      "source": "https://www.cscq.ch/SiteCSCQ/FichierPDF_FR/FT-MCV-MCH-MCHC-fr.pdf",
+      "source_id": "swiss_cscq",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/swiss_cscq.html",
+        "sha256": "1d8e4abfab2bcaf971055b73d021ec8c6c48bae55657ed3799a8b10ea3650d23"
+      },
+      "section": "Grandeurs érythrocytaires ; calcul sur jeu fictif du cours",
+      "passage": "0,02 × 3,0 × 10^12/L = 60 × 10^9/L.",
+      "finding": "Calcul exact ; donnée fictive, pas mesure publiée.",
+      "kind": "derived"
+    },
+    {
+      "claim": "VGM : Hct 0,30 / hématies 3,0 T/L = 100 fL",
+      "source": "https://www.cscq.ch/SiteCSCQ/FichierPDF_FR/FT-MCV-MCH-MCHC-fr.pdf",
+      "source_id": "swiss_cscq",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/swiss_cscq.html",
+        "sha256": "1d8e4abfab2bcaf971055b73d021ec8c6c48bae55657ed3799a8b10ea3650d23"
+      },
+      "section": "Formule VGM/Ht/GR",
+      "passage": "0,30/(3×10^12/L) = 100×10^-15 L.",
+      "finding": "Calcul exact et unités cohérentes.",
+      "kind": "derived"
+    },
+    {
+      "claim": "TCMH : Hb 100 g/L / 3,0 T/L = 33,3 pg",
+      "source": "https://www.cscq.ch/SiteCSCQ/FichierPDF_FR/FT-MCV-MCH-MCHC-fr.pdf",
+      "source_id": "swiss_cscq",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/swiss_cscq.html",
+        "sha256": "1d8e4abfab2bcaf971055b73d021ec8c6c48bae55657ed3799a8b10ea3650d23"
+      },
+      "section": "Formule TCMH",
+      "passage": "100/(3×10^12) g = 33,3 pg.",
+      "finding": "Calcul exact ; différence entre valeur moyenne et intervalle expliquée.",
+      "kind": "derived"
+    },
+    {
+      "claim": "CCMH : 100 g/L / Hct 0,30 = 333 g/L",
+      "source": "https://www.cscq.ch/SiteCSCQ/FichierPDF_FR/FT-MCV-MCH-MCHC-fr.pdf",
+      "source_id": "swiss_cscq",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/swiss_cscq.html",
+        "sha256": "1d8e4abfab2bcaf971055b73d021ec8c6c48bae55657ed3799a8b10ea3650d23"
+      },
+      "section": "Formule CCMH",
+      "passage": "Le dénominateur est une fraction, pas 30 %.",
+      "finding": "Calcul exact à l’arrondi retenu.",
+      "kind": "derived"
+    },
+    {
+      "claim": "Réticulocytes corrigés : 2 % ×0,30/0,45 = 1,33 %",
+      "source": "https://www.hug.ch/sites/interhug/files/structures/medecine_de_premier_recours/documents/infos_soignants/anemie_arce.pdf",
+      "source_id": "hug_anemia",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/hug_anemia.html",
+        "sha256": "cba8ae29d3968a78c98717d1c761115e96836ae26f469c955df939efff135f60"
+      },
+      "section": "Correction réticulocytaire selon hématocrite",
+      "passage": "La correction selon hématocrite ne contient pas de facteur de maturation.",
+      "finding": "Calcul exact ; le cours précise qu’il ne s’agit pas d’un indice de production complet.",
+      "kind": "derived"
+    },
+    {
+      "claim": "CaO2 : 1,34×10×0,98 +0,0031×100 = 13,442 mL/dL",
+      "source": "https://pac6.ch/fr/chapitres/06-le-monitorage-en-anesthesie-cardiaque/6-5-catheter-pulmonaire-arteriel-de-swan-ganz/6-5-9-transport-doxygene-et-rapport-do2-vo2",
+      "source_id": "pac_transport",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/pac_transport.html",
+        "sha256": "ae829851a64570db0b6d2d7757e4e3d78aa3f971dd98ba7fe473ea1e5d6ecec8"
+      },
+      "section": "Transport d’oxygène, contenu artériel",
+      "passage": "Composante liée à Hb + composante dissoute, Hb en g/dL et saturation en fraction.",
+      "finding": "Calcul refait, exact.",
+      "kind": "derived"
+    },
+    {
+      "claim": "DO2 : 13,442 mL/dL ×5 L/min×10 dL/L = 672,1 mL/min",
+      "source": "https://pac6.ch/fr/chapitres/06-le-monitorage-en-anesthesie-cardiaque/6-5-catheter-pulmonaire-arteriel-de-swan-ganz/6-5-9-transport-doxygene-et-rapport-do2-vo2",
+      "source_id": "pac_transport",
+      "archive": {
+        "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/pac_transport.html",
+        "sha256": "ae829851a64570db0b6d2d7757e4e3d78aa3f971dd98ba7fe473ea1e5d6ecec8"
+      },
+      "section": "Transport d’oxygène, débit de transport",
+      "passage": "Le débit cardiaque nécessite la conversion L vers dL.",
+      "finding": "Calcul exact ; ce débit ne constitue pas un seuil transfusionnel.",
+      "kind": "derived"
+    }
+  ],
+  "blocking_reserves": [
+    {
+      "id": "R01",
+      "severity": "modérée",
+      "locations": [
+        "chapters/D64/D64_a.html à D64_d.html : préambules des 21 parties",
+        "chapters/D64/*.html : 34 séquences bouton suivi de suffixe",
+        "quiz, aides de lecture et glossary/d64.py"
+      ],
+      "problem": "Les 21 annonces « Cette partie permet de… » reprennent un plan de production, avec plusieurs élisions fautives. Le remplacement lexical coupe 34 mots (« transfusion (…)nels », « dysérythropoïèse (…)s »). Des consignes et réponses restent à l’infinitif ou nominales.",
+      "source": [
+        "docs/STYLE_REDACTION.md",
+        "PROMPT_MEDINA.md, style rédactionnel"
+      ],
+      "expected_correction": "Remplacer les annonces par une entrée clinique utile, corriger les 34 mots en liant le mot complet et relire toutes les surfaces, y compris réponses et aides de lecture, en phrases françaises complètes. Ne pas changer seulement les fichiers générés si le générateur réintroduit les erreurs."
+    },
+    {
+      "id": "R02",
+      "severity": "majeure",
+      "locations": [
+        "chapters/D64/D64_d.html#d64-p01-partie-4 : ligne Benadon « anémie iatrogène »",
+        "preuves/contexte_suisse_auteur.json::D64-DEC-d64-p01-table-4-2"
+      ],
+      "problem": "La dose 150 mg/j est présentée pour une anémie iatrogène quelconque. La FI la réserve à la prophylaxie/au traitement des carences iatrogènes pendant administration d’antagonistes de la pyridoxine. Cette généralisation peut suggérer à tort le même traitement pour une myélotoxicité médicamenteuse sans ce mécanisme.",
+      "source": [
+        "FI_Benadon, Indications et Posologie (produit 300 mg, autorisation 25635)"
+      ],
+      "expected_correction": "Nommer exactement la population et le mécanisme visés ; distinguer cette ligne de l’anémie pyridoxino-dépendante et des autres toxicités médicamenteuses. Corriger tableau, fenêtre/Pareto si concernés, ledger et matrice."
+    },
+    {
+      "id": "R03",
+      "severity": "majeure",
+      "locations": [
+        "chapters/D64/D64_d.html#d64-p02-partie-2",
+        "#d64-p02-partie-3",
+        "chapters/D64/D64_pop2.html::template[data-pop=\"d64-p01-w1\"]",
+        "chapters/D64/D64_pop2.html::template[data-pop=\"d64-p02-w1\"]"
+      ],
+      "problem": "Les doses retenues sont généralement exactes, mais la pharmacologie ne comporte pas les monographies complètes exigées. Exjade ne donne pas ses critères d’introduction ni les critères opérationnels de réduction/interruption rénale. Les contre-indications d’hypersensibilité Benadon/Exjade manquent ; Pegasys réduit les antécédents psychiatriques graves à un risque et omet plusieurs contre-indications majeures applicables. Des interactions dangereuses et les limites pédiatriques restent peu explicites.",
+      "source": [
+        "FI_Exjade, indications/posologie, fonction rénale, contre-indications/interactions",
+        "FI_Benadon, contre-indications/interactions",
+        "FI_Pegasys, contre-indications",
+        "CHAPTER_SPEC.md, Pharmacologie"
+      ],
+      "expected_correction": "Créer ou compléter les fenêtres propres à chaque produit retenu, avec mécanisme, place, dose pertinente, preuves/limites, contre-indications, interactions prioritaires et conduite de surveillance. Pour Exjade dispersible, expliciter >8 unités/an, ≈20 unités/100 mL/kg plus surcharge documentée, critères >33 % et conditions d’action, limites âge et formulation, sans extrapoler aux non-transfusés. Pour Pegasys hors indication, conserver l’absence de schéma routinier mais préciser les contre-indications psychiatriques présentes/passées, hépatiques/auto-immunes, cardiaques et grossesse/allaitement pertinentes. Vérifier les autres interactions de la FI avant sélection pédagogique ; pas besoin de recopier intégralement la fiche."
+    },
+    {
+      "id": "R04",
+      "severity": "majeure",
+      "locations": [
+        "preuves/source_ledger.json::d64-a05-claim-5 et -6",
+        "preuves/source_ledger.json::d64-a06-claim-2",
+        "preuves/source_ledger.json::d64-a11-claim-3 et -5",
+        "preuves/source_ledger.json::d64-a12-claim-5",
+        "preuves/contexte_suisse_auteur.json::D64-DEC-a05-5",
+        "preuves/sources_catalogue.json::swiss_cscq"
+      ],
+      "problem": "Plusieurs appariements affirmation/source sont erronés : hypothermie rattachée à FI Zyvoxid/Benadon, surveillance hebdomadaire linézolide privée de sa FI, KIF23 rattaché au texte CDA 2012 où il est absent, risques Exjade chez sujet âgé rattachés à HUG/PAC, statut non-transfusé et formulation Exjade sans sa FI. La matrice classe l’hypothermie comme décision suisse Swissmedic. Le PDF CSCQ porte octobre 2011, non une simple date de consultation.",
+      "source": [
+        "sidero_2022 §7.6",
+        "FI_Zyvoxid, Myélosuppression",
+        "cda_2019, introduction KIF23",
+        "FI_Exjade, indications, précautions, posologie",
+        "swiss_cscq, pied du PDF"
+      ],
+      "expected_correction": "Corriger ces couples précisément : hypothermie vers Genes 2022 et recours européen motivé ; surveillance linézolide vers FI exacte ; KIF23 vers CDA 2019 ; trois assertions Exjade vers les passages FI correspondants ; dater CSCQ octobre 2011. Réexaminer les couples voisins et renouveler les empreintes après correction. Une archive présente ne prouve pas qu’elle soutient chaque phrase."
+    },
+    {
+      "id": "R05",
+      "severity": "modérée",
+      "locations": [
+        "chapters/D64/D64_b.html#d64-a08 et #d64-a12",
+        "chapters/D64/D64_d.html, interactions dangereuses",
+        "chapters/D64/D64_a.html, statut de revue"
+      ],
+      "problem": "Aucun encadré de classe alert n’est présent. Les urgences, critères formels et interactions dangereuses restent dans des paragraphes/tableaux ordinaires. Le statut visible n’explicite pas la revue IA et l’absence de validation médicale humaine requises par le contrat actif.",
+      "source": [
+        "CHAPTER_SPEC.md §§3–4",
+        "PROMPT_MEDINA.md, critères formels, pharmacologie et statut de validation",
+        "CHAINE_CYCLES_2026-10-14_EXECUTEUR.md"
+      ],
+      "expected_correction": "Employer les encadrés alert prévus pour gravité, critères officiels avant paramètres clés et interactions dangereuses ; conserver ensuite les synthèses key. Ajouter un statut exact « revue IA » sans revendiquer une validation médicale humaine ni anticiper les audits non terminés."
+    },
+    {
+      "id": "R06",
+      "severity": "modérée",
+      "locations": [
+        "chapters/D64/D64_b.html#d64-a12-partie-1",
+        "chapters/D64/D64_a.html#d64-a06",
+        "chapters/D64/D64_c.html#d64-e01 et #d64-e02",
+        "preuves/couverture.json"
+      ],
+      "problem": "La distinction morphologie/génétique est bonne mais les critères spécifiques restent trop généraux : A12 ne présente pas le repère spécialisé ≥20 % d’érythroblastes anormaux pour CDA I et ses limites. Deux pièges pertinents de la source suisse déjà archivée ne sont pas enseignés : crise aplasique par parvovirus B19 et fausse thrombocytose de certains automates liée aux petites hématies anormales.",
+      "source": [
+        "cda_2019, Bone marrow examination",
+        "swiss_cda_mqzh, Point de vue hématologie 2015, deux pages",
+        "cahier_D64.json, A12/E01/E02"
+      ],
+      "expected_correction": "Ajouter le critère propre au type I avec source, morphologie associée et limites de reproductibilité, sans en faire un seuil universel. Expliquer brièvement la crise aplasique/réticulocytopénie et le piège analytique avec démarche de vérification. Réviser la couverture déclarée sans lacunes une fois ces éléments intégrés."
+    },
+    {
+      "id": "R07",
+      "severity": "modérée",
+      "locations": [
+        "chapters/D64/D64_pop2.html::template[data-pop=\"d64-e03-w1\"]",
+        "chapters/D64/D64_pop2.html::template[data-pop=\"d64-s03-w1\"]",
+        "chapters/D64/D64_c.html#d64-s03-partie-3",
+        "glossary/d64.py",
+        "chapters/D64/D64_b.html#d64-a09-partie-5"
+      ],
+      "problem": "La saturation de la transferrine est décrite comme un rapport, mais sans formule, unités ni exemple ; les références martiales demeurent abstraites. La figure de synthèse de l’hème comporte PBGS/HMBS/UROS/UROD/CPOX/PPOX sans explication française suffisante des enzymes et réactions. Des développements du glossaire sont un seul bloc plutôt que lettre/groupe par lettre ; NGS/WES/WGS donnent directement une traduction et plusieurs sigles de la figure diagnostique restent inexpliqués.",
+      "source": [
+        "CLARTE_BASES_CALCULS_VIAL_2026-10-11.md",
+        "CHAPTER_SPEC.md §5",
+        "heme_2020, figure 2 et biosynthèse",
+        "cda_2019, figure 1"
+      ],
+      "expected_correction": "Enseigner le calcul de saturation avec chaque grandeur/unité, exemple fictif calculé et références de laboratoire suisse réellement lues, sans inventer de seuil universel. Développer la chaîne enzymatique de la figure hème en français avec compartiments et réactions. Corriger les vrais acronymes lettre/groupe par lettre, garder les symboles génétiques honnêtement qualifiés, et traduire les abréviations visibles utiles (notamment HPLC/eADA/EMA/LDH)."
+    },
+    {
+      "id": "R08",
+      "severity": "modérée",
+      "locations": [
+        "chapters/D64/D64_b.html#d64-a09-partie-4 et #d64-a09-partie-5",
+        "assets/img/cycle2/d64/01-algorithme.jpg",
+        "preuves/couverture.json, IMG-D64-A09-1"
+      ],
+      "problem": "La figure publiée réelle compare deux démarches vers les anémies héréditaires dans une revue CDA I. Sa légende limite honnêtement son champ, mais l’objectif du cahier demande des bifurcations vers toutes les formes concernées. Le tableau adjacent organise des questions/examens sans fournir une démarche discriminante complète entre sidéroblastiques héréditaires, acquises réversibles, maladie clonale, CDA et autres causes. L’honnêteté de la légende ne suffit donc pas à remplir l’objectif.",
+      "source": [
+        "cahier_D64.json, IMG-D64-A09-1 : bifurcations/questions et branches vers formes couvertes",
+        "cda_2019, figure 1",
+        "sidero_2022, causes acquises/héréditaires",
+        "bsh_eha_ngs, indications phénotypiques"
+      ],
+      "expected_correction": "Conserver la figure authentique comme illustration spécialisée si utile, mais compléter concrètement la démarche adjacente par des branches conditionnelles sourcées : constat, hypothèse, examen indiqué/conditionnel, résultat discriminant et étape suivante. Justifier dans la couverture la complémentarité réelle, ou retenir une autre figure publiée libre adéquate si disponible. Ne pas présenter un schéma fabriqué comme image publiée ni ajouter du texte générique."
+    }
+  ],
+  "nonblocking_observations": [
+    {
+      "id": "N01",
+      "finding": "Six licences CC BY 4.0 vérifiées, mais lien de licence standard absent du manifeste ; ajouter le lien cliquable sans changer de licence."
+    },
+    {
+      "id": "N02",
+      "finding": "Sources HUG 2013 et CSCQ 2011 utiles pour définitions/calculs ; elles ne doivent pas être présentées comme recommandations thérapeutiques actualisées. Le cours respecte globalement cette limite."
+    }
+  ],
+  "verdict": "defavorable",
+  "score": 14,
+  "score_scale": 20,
+  "score_breakdown": [
+    {
+      "criterion": "Exactitude et actualité",
+      "points": 3,
+      "maximum": 4
+    },
+    {
+      "criterion": "Complétude",
+      "points": 2,
+      "maximum": 3
+    },
+    {
+      "criterion": "Pédagogie",
+      "points": 2.5,
+      "maximum": 3
+    },
+    {
+      "criterion": "Corrélations vertes",
+      "points": 1.5,
+      "maximum": 2
+    },
+    {
+      "criterion": "Sciences fondamentales et schémas",
+      "points": 1.5,
+      "maximum": 2
+    },
+    {
+      "criterion": "Examens",
+      "points": 1.5,
+      "maximum": 2
+    },
+    {
+      "criterion": "Pharmacologie spécifique",
+      "points": 0.25,
+      "maximum": 1
+    },
+    {
+      "criterion": "Pareto",
+      "points": 0.75,
+      "maximum": 1
+    },
+    {
+      "criterion": "Langue et anti-clonage",
+      "points": 0,
+      "maximum": 1
+    },
+    {
+      "criterion": "Interface",
+      "points": 1,
+      "maximum": 1
+    }
+  ],
+  "score_justification": "14/20 : architecture substantielle, chiffres contrôlés exacts, images authentiques et interface opérationnelle ; pénalités pour indication trop large et sécurité incomplète, lacunes diagnostiques/pédagogiques, sources mal appariées et défauts rédactionnels systématiques. Une omission de contre-indications et un champ d’indication erroné interdisent une note ≥15 selon le Prompt. Le score n’anticipe pas les corrections ni une validation humaine.",
+  "final_files": {
+    "chapters/D64/D64_a.html": "673f0bee06646584da3703e5950b7f94c23b33dda275302a00750a67a93489bd",
+    "chapters/D64/D64_b.html": "851210b097928d8a655131f1b3f6d509f44116ee43da1ab09b36368e6fd78670",
+    "chapters/D64/D64_c.html": "daebcf6465f006c3996218b2e78ba6b5b560e7763def1e0e71540bb623f9a61f",
+    "chapters/D64/D64_d.html": "ad08497ff8fe988cc8e0060b2d7c23114ce53e5892a0da5c0c60b1392fd6c038",
+    "chapters/D64/D64_pop1.html": "4505e24cb2c4888b226b7f43d034cfa141c6b7fdaddbeed756221e54a489cc77",
+    "chapters/D64/D64_pop2.html": "143a5f8047447a2df3980a7d617e9da16d306296636b5a16515e5868b417a45a",
+    "glossary/d64.py": "49a07b1941df4017d4a7fbb2144f6d2dbbbe16b62a425e44b29f0275b3a94b5a"
+  },
+  "image_files": {
+    "assets/img/cycle2/d64/01-algorithme.jpg": "9b3cecdb60c2173e7863e66ae845513656a9c2be7af660b3b03aa63d3748685e",
+    "assets/img/cycle2/d64/02-perls-normal-couronnes.png": "4d013838de3275b508a3aa3c95c192a5d5ccfbbbb9deff0354b4b9ae1d902499",
+    "assets/img/cycle2/d64/03-maturation.png": "950011558e6b9e89d5a28612d5b81fcb46a07e9f2518c04a06b5b641b776362a",
+    "assets/img/cycle2/d64/04-regulation-oxygene.png": "aba362bce5a4390235322ba65204a013da5bc438e27caf82ac5af7df1d1d536b",
+    "assets/img/cycle2/d64/05-heme-2020.png": "27e08687ec0d7c0de4dbcac16e0623a6513de7f6af14162aacbd596afbb9d88d",
+    "assets/img/cycle2/d64/06-maturation-cda.jpg": "23eef52d36903a83986783918de3de5cbfc975d50451b771d59ae1001bcf1ee7"
+  },
+  "consulted_passages_inventory": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/sources-consultees-pass1.json",
+    "sha256": "faec7ce417f1b03679a501f7fb3760aa6a471c15a7a8ff9744470d6e1e046f2d"
+  },
+  "image_review": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/images-pass1.json",
+    "sha256": "4c5ad1e8878484fa40edbfc8085a4d9b7b3b9d74d4aa509e45fc68bb3ba831bf"
+  },
+  "swiss_matrix_review": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/contexte-suisse-pass1.json",
+    "sha256": "3792aa3a1fa17e8aa29aa50bef43356e442dd57ecbf6f6c2ab19fa2fa719fc88"
+  },
+  "coverage_review": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/coverage-pass1.json",
+    "sha256": "34bce3b39ab3859d537f72e9badc5cbba8f7667ac8b31c7f26e4efdafe017abd"
+  },
+  "ledger_integrity": {
+    "claims": 355,
+    "unique_archives_hashed": 25,
+    "mismatches": [],
+    "limitation": "Intégrité vérifiée pour toutes les archives indexées ; adéquation scientifique contrôlée par lecture du cours et passages ciblés, réserves localisées ci-dessus. Les résumés du ledger ne sont pas assimilés aux originaux."
+  },
+  "preview": {
+    "path": "/workspace/work/medina-previews/D64-author-frozen-v2/preview.json",
+    "html_sha256": "3141b2c735bdf46cd4f3cf458a226d66c2e682c33c6c5f86440d20885f52218e",
+    "own_ui_report": {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/D64/ui/D64/D64-author-frozen-v2/report.json",
+      "sha256": "374e38214bae0300461a2d4428a4fa1c898517dcdc51ad88779ef54386b9ab54"
+    },
+    "personally_viewed_screenshots": [
+      "desktop-pP.png",
+      "mobile-window.png"
+    ],
+    "root_ui_reports_used_as_own": false
+  },
+  "phase_boundary": "Passe 1 terminée ; attente du signal du coordinateur après corrections auteur. Aucun cross_audit final ni passe 2 produits dans cette phase.",
+  "source_publication": "Aucune archive médicale intégrale recopiée dans les livrables de revue ; synthèses originales, liens, locateurs et empreintes seulement."
+}

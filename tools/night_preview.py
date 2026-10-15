@@ -10,6 +10,14 @@ import subprocess
 import sys
 
 
+def allowed_source(root, source, cycle, code):
+    """Cycle 2 : livraison Codex reprise ; cycles 3 à 30 : livraison Codex ou Claude (tools/cycle_claude.py)."""
+    roots = ['livraisons/Livraison Codex'] + (['livraisons/Livraison Claude'] if cycle >= 3 else [])
+    resolved = Path(source).resolve()
+    return (any(resolved.is_relative_to(Path(root).resolve()/r) for r in roots) and
+            f'/CYCLE_{cycle:02d}_{code}' in str(source) and '..' not in Path(source).parts)
+
+
 def build(root, code, output, cycle=2, cahier=None):
     sys.path.insert(0, str(root))
     from tools import build_fragment_work_preview as preview
@@ -26,7 +34,7 @@ def build(root, code, output, cycle=2, cahier=None):
         raise ValueError('Le cahier ne correspond pas aux quatre leçons du cycle.')
     lesson = next(x for x in lessons if x['code'] == code)
     source = root/lesson['directory']
-    if not source.resolve().is_relative_to(root.resolve()/'livraisons/Livraison Codex') or f'/CYCLE_{cycle:02d}_{code}' not in str(source):
+    if not allowed_source(root, source, cycle, code):
         raise ValueError('Dossier de livraison étranger au cycle.')
     paths = sorted((source/'chapters'/code).glob('*.html')) + [source/'glossary'/f'{code.lower()}.py']
     required = {f'{code}_{s}.html' for s in ('a','b','c','d','pop1','pop2')}

@@ -340,9 +340,31 @@ def validate_fragment_guard(before, after):
         except ModuleNotFoundError:
             from night_cycle import validate as validate_night
         night_authorized, night_codes, catalog_codes = validate_night(before, after)
+        try:
+            from tools.betta_cycle import validate as validate_betta, BettaError
+        except ModuleNotFoundError:
+            from betta_cycle import validate as validate_betta, BettaError
+        try:
+            betta_authorized, betta_codes = validate_betta(before, after)
+        except BettaError as error:
+            raise CycleError(str(error)) from error
+        night_authorized.update(betta_authorized)
+        catalog_codes = set(catalog_codes) | betta_codes
+        # Cycles repris ou produits par Claude (instruction de Vial du 14 octobre 2026).
+        try:
+            from tools.cycle_claude import validate as validate_claude_cycles
+        except ModuleNotFoundError:
+            from cycle_claude import validate as validate_claude_cycles
+        claude_authorized, claude_codes, claude_catalog_codes = validate_claude_cycles(before, after)
+        for path, digest in claude_authorized.items():
+            if path in night_authorized and night_authorized[path] != digest:
+                raise CycleError(f"Autorisations de cycles contradictoires : {path}")
+        catalog_codes = set(catalog_codes) | set(claude_catalog_codes)
         cycle_authorized, cycle_codes = validate_cycle_guard(before, after, authorized_catalog_codes=catalog_codes)
         cycle_authorized.update(night_authorized)
+        cycle_authorized.update(claude_authorized)
         cycle_codes.update(night_codes)
+        cycle_codes.update(claude_codes)
     except CycleError as error:
         raise FragmentError(str(error)) from error
     authorized = dict(cycle_authorized)

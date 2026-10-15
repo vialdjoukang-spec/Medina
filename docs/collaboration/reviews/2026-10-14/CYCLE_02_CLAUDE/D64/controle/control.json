@@ -1,0 +1,216 @@
+{
+ "code": "D64",
+ "actor": "Claude — coordinateur",
+ "runtime_agent_id": "claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/coordinateur",
+ "medical_human_validation": false,
+ "entry": {
+  "actor": "Claude — coordinateur",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T23:06:57.627341+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Instruction de Vial : cycle 2 publié en mode direct, contrôle du coordinateur requis."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/auteur/auteur.json",
+      "sha256": "7e772b191951436e1f04fff9c9e1c3246290fb2f346412f17ac626cba5bfa4bd",
+      "explanation": "Preuve auteur de D64 : sept sources et images du dossier de livraison, empreintes vérifiées par la garde."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
+      "sha256": "88460b53c1f69c4b858b25fda119da632ba02cc7ba34d7f94079d3e3e6c0882e",
+      "explanation": "Registre des sources réellement lues par l'auteur, sans affirmation non vérifiée."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/contexte_suisse_controle.json",
+      "sha256": "298d1f9146c83dff433818e50dfee449a0dd77afa9f4e987553be3aabeddff5b",
+      "explanation": "Matrice suisse liée au registre des sources, validée par swiss_context_proof."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/auteur/auteur.json",
+      "sha256": "7e772b191951436e1f04fff9c9e1c3246290fb2f346412f17ac626cba5bfa4bd",
+      "explanation": "Le coordinateur n'a pas rédigé la leçon ; l'auteur est un agent distinct."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/images_claude.json",
+      "sha256": "9692717ff52eebc71f337c6799c4af867daf8de356635674aca01a953c4ca24c",
+      "explanation": "Manifeste des images ; quatre onglets, fenêtres, images et captures contrôlés par l'outil de contrôle."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Aucun audit non réalisé n'est déclaré ; revue IA, sans validation médicale humaine."
+     }
+    ]
+   }
+  ]
+ },
+ "exit": {
+  "actor": "Claude — coordinateur",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T23:07:52.436200+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Instruction de Vial : cycle 2 publié en mode direct, contrôle du coordinateur requis."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/auteur/auteur.json",
+      "sha256": "7e772b191951436e1f04fff9c9e1c3246290fb2f346412f17ac626cba5bfa4bd",
+      "explanation": "Preuve auteur de D64 : sept sources et images du dossier de livraison, empreintes vérifiées par la garde."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/source_ledger_claude.json",
+      "sha256": "88460b53c1f69c4b858b25fda119da632ba02cc7ba34d7f94079d3e3e6c0882e",
+      "explanation": "Registre des sources réellement lues par l'auteur, sans affirmation non vérifiée."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/contexte_suisse_controle.json",
+      "sha256": "298d1f9146c83dff433818e50dfee449a0dd77afa9f4e987553be3aabeddff5b",
+      "explanation": "Matrice suisse liée au registre des sources, validée par swiss_context_proof."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/auteur/auteur.json",
+      "sha256": "7e772b191951436e1f04fff9c9e1c3246290fb2f346412f17ac626cba5bfa4bd",
+      "explanation": "Le coordinateur n'a pas rédigé la leçon ; l'auteur est un agent distinct."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/images_claude.json",
+      "sha256": "9692717ff52eebc71f337c6799c4af867daf8de356635674aca01a953c4ca24c",
+      "explanation": "Manifeste des images ; quatre onglets, fenêtres, images et captures contrôlés par l'outil de contrôle."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Aucun audit non réalisé n'est déclaré ; revue IA, sans validation médicale humaine."
+     }
+    ]
+   }
+  ]
+ },
+ "final_files": {
+  "chapters/D64/D64_a.html": "1e7bcf527fe27650e43c718551e5e322d30d3f2622e8e2f3680cac226440f30e",
+  "chapters/D64/D64_b.html": "629698cca358305be6b22d8c5d15774575e3484f637101271c11193d636d70b6",
+  "chapters/D64/D64_c.html": "17b07b8fbee4ef4260aeced15274d6a93cf973a850d97964ab24545559dcff21",
+  "chapters/D64/D64_d.html": "19fdc9572d5e465f5c5546ceb15631884bcee1c123ec61d7ffd5d53471f1e66d",
+  "chapters/D64/D64_pop1.html": "9db552ebdc604fd7e0a4141bdb1dc2fb625f0b0fd9b386300034d39ffaf7be6b",
+  "chapters/D64/D64_pop2.html": "9d3d797f0462d79a6525182e0ad1254256c28cdc7a83ee46d42e6e53b55e5063",
+  "glossary/d64.py": "65fc806c9d033ddffd436aae2aef0c705ecd9918196e04c237a8049177c1357b"
+ },
+ "image_files": {
+  "assets/img/cycle2/d64/01-algorithme.jpg": "9b3cecdb60c2173e7863e66ae845513656a9c2be7af660b3b03aa63d3748685e",
+  "assets/img/cycle2/d64/02-perls-normal-couronnes.png": "4d013838de3275b508a3aa3c95c192a5d5ccfbbbb9deff0354b4b9ae1d902499",
+  "assets/img/cycle2/d64/03-maturation.png": "950011558e6b9e89d5a28612d5b81fcb46a07e9f2518c04a06b5b641b776362a",
+  "assets/img/cycle2/d64/04-regulation-oxygene.png": "aba362bce5a4390235322ba65204a013da5bc438e27caf82ac5af7df1d1d536b",
+  "assets/img/cycle2/d64/05-heme-2020.png": "27e08687ec0d7c0de4dbcac16e0623a6513de7f6af14162aacbd596afbb9d88d",
+  "assets/img/cycle2/d64/06-maturation-cda.jpg": "23eef52d36903a83986783918de3de5cbfc975d50451b771d59ae1001bcf1ee7"
+ },
+ "blocking_reserves": [],
+ "technical_checks": {
+  "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/D64/controle/technique.json",
+  "sha256": "64e051841d625deb91ec9bb41c5694e66b26149aaf2eab56387f7e88fa269bb2"
+ },
+ "swiss_context": {
+  "verdict": "conforme",
+  "matrix_path": "livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/preuves/contexte_suisse_controle.json",
+  "matrix_sha256": "298d1f9146c83dff433818e50dfee449a0dd77afa9f4e987553be3aabeddff5b"
+ },
+ "note": "Contrôle technique du coordinateur ; publication directe, audit différé après le Cycle 30. Revue IA, sans validation médicale humaine."
+}

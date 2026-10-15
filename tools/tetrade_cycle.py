@@ -91,14 +91,14 @@ def records(tree):
     return data
 
 
-def source_files(tree, row):
+def source_files(tree, row, roots=("livraisons/Livraison Codex/",)):
     files = row.get("files")
     code = row["code"]
     require(isinstance(files, dict) and files, f"{code} : fichiers finaux absents")
     minimum = {f"chapters/{code}/{code}_{suffix}.html" for suffix in ("a", "b", "c", "d", "pop1", "pop2")} | {f"glossary/{code.lower()}.py"}
     require(minimum.issubset(files) and all(managed(path, [code]) for path in files), f"{code} : chapitre incomplet ou source étrangère")
     directory = row.get("source_dir")
-    require(isinstance(directory, str) and directory.startswith("livraisons/Livraison Codex/") and f"/CYCLE_{row.get('production_cycle', 1):02d}_{code}" in directory,
+    require(isinstance(directory, str) and directory.startswith(tuple(roots)) and ".." not in directory.split("/") and f"/CYCLE_{row.get('production_cycle', 1):02d}_{code}" in directory,
             f"{code} : dossier de livraison isolé requis")
     for path, sha in files.items():
         require(isinstance(sha, str) and re.fullmatch(r"[0-9a-f]{64}", sha), f"{code} : SHA-256 invalide")
@@ -174,41 +174,66 @@ def review(tree, row, key, actor, files, prompts=PROMPTS):
     return data
 
 
-def ready(tree, row, rows=None, prompts=PROMPTS, cross_completed_at=None):
-    files = source_files(tree, row)
-    author = review(tree, row, "author", row["writer"], files, prompts)
+def capture_proof(tree, captures, minimum=None):
+    """Default: exactly opening + explanation. With ``minimum``: that many distinct real captures."""
+    if minimum is None:
+        require(isinstance(captures, list) and [c.get("kind") for c in captures] == ["opening", "explanation"],
+                "Deux captures réelles, ouverture et fenêtre, requises")
+    else:
+        require(isinstance(captures, list) and len(captures) >= minimum and all(isinstance(c, dict) for c in captures),
+                f"{minimum} captures réelles à des endroits distincts requises")
+        kinds = [c.get("kind") for c in captures]
+        require(all(isinstance(k, str) and k.strip() for k in kinds) and len(set(kinds)) == len(kinds) and
+                len({c.get("path") for c in captures}) == len(captures) and len({c.get("sha256") for c in captures}) == len(captures),
+                f"{minimum} captures réelles à des endroits distincts requises")
+    for capture in captures:
+        raw = tree.read(capture.get("path"))
+        require(raw.startswith(b"\x89PNG\r\n\x1a\n") and len(raw) > 5000 and digest(raw) == capture.get("sha256"),
+                "Capture PNG absente, invalide ou différente")
+
+
+def source_ledger_proof(tree, row, author, files):
+    """Registre des sources réellement lues, attaché à la revue auteur."""
     ledger = proof(tree, author.get("source_ledger"), f"{row['code']} sources réellement lues")
     require(ledger.get("code") == row["code"] and ledger.get("final_files") == files and ledger.get("unverified_claims") == [],
             "Registre des sources : affirmations non vérifiées ou sources finales différentes")
     require(set(ledger.get("covered_files", [])) == set(files), "Registre des sources : toutes les surfaces du cours sont requises")
     require(isinstance(ledger.get("claims"), list) and ledger["claims"], "Registre des sources : aucune affirmation documentée")
     for claim in ledger["claims"]:
-        require(all(isinstance(claim.get(field), str) and claim[field].strip() for field in
+        require(isinstance(claim, dict) and all(isinstance(claim.get(field), str) and claim[field].strip() for field in
                     ("claim", "location", "source_url", "source_title", "version_date", "section", "source_passage_summary", "population", "limits", "accessed_on")),
                 "Registre des sources : passage, population ou limites absents")
         require(claim["source_url"].startswith("https://") and re.fullmatch(r"[0-9a-f]{64}", claim.get("download_sha256", "")),
                 "Registre des sources : URL ou empreinte du texte lu absente")
-    crossed = review(tree, row, "cross_audit", row["cross_reviewer"], files, prompts)
-    counter = review(tree, row, "counter_audit", row["counter_reviewer"], files, prompts)
-    control = review(tree, row, "control", "Codex — coordinateur du fil", files, prompts)
-    all_rows = rows if rows is not None else records(tree)["chapters"]
-    last_crossed_exit = cross_completed_at or max(dated(proof(tree, r["cross_audit"], "Audit croisé du cycle")["exit"]["checked_at"]) for r in all_rows)
-    last_counter_exit = max(dated(proof(tree, r["counter_audit"], "Contre-audit du cycle")["exit"]["checked_at"]) for r in all_rows)
-    require(dated(counter["entry"]["checked_at"]) >= last_crossed_exit, "Contre-audit engagé avant clôture de tous les binômes")
-    require(dated(control["entry"]["checked_at"]) >= last_counter_exit, "Contrôle engagé avant clôture des quatre contre-audits")
+    return ledger
+
+
+def technical_proof(tree, row, control, files, captures=None):
+    """Contrôles techniques réels du coordinateur (bureau, mobile, fenêtres, JS, abréviations, captures)."""
     technical = proof(tree, control.get("technical_checks"), f"{row['code']} contrôles techniques")
     require(technical.get("final_files") == files and technical.get("result") == "passed" and
             technical.get("desktop") is True and technical.get("mobile") is True and
             technical.get("missing_windows") == [] and technical.get("javascript_errors") == [] and
             technical.get("uncovered_abbreviations") == [] and technical.get("horizontal_overflow") is False,
             "Contrôle final : tests ou rendu réels incomplets")
-    captures = technical.get("captures")
-    require(isinstance(captures, list) and [c.get("kind") for c in captures] == ["opening", "explanation"],
-            "Deux captures réelles, ouverture et fenêtre, requises")
-    for capture in captures:
-        raw = tree.read(capture.get("path"))
-        require(raw.startswith(b"\x89PNG\r\n\x1a\n") and len(raw) > 5000 and digest(raw) == capture.get("sha256"),
-                "Capture PNG absente, invalide ou différente")
+    capture_proof(tree, technical.get("captures"), captures)
+    return technical
+
+
+def ready(tree, row, rows=None, prompts=PROMPTS, cross_completed_at=None,
+          control_actor="Codex — coordinateur du fil", captures=None, source_roots=None):
+    files = source_files(tree, row) if source_roots is None else source_files(tree, row, source_roots)
+    author = review(tree, row, "author", row["writer"], files, prompts)
+    source_ledger_proof(tree, row, author, files)
+    crossed = review(tree, row, "cross_audit", row["cross_reviewer"], files, prompts)
+    counter = review(tree, row, "counter_audit", row["counter_reviewer"], files, prompts)
+    control = review(tree, row, "control", control_actor, files, prompts)
+    all_rows = rows if rows is not None else records(tree)["chapters"]
+    last_crossed_exit = cross_completed_at or max(dated(proof(tree, r["cross_audit"], "Audit croisé du cycle")["exit"]["checked_at"]) for r in all_rows)
+    last_counter_exit = max(dated(proof(tree, r["counter_audit"], "Contre-audit du cycle")["exit"]["checked_at"]) for r in all_rows)
+    require(dated(counter["entry"]["checked_at"]) >= last_crossed_exit, "Contre-audit engagé avant clôture de tous les binômes")
+    require(dated(control["entry"]["checked_at"]) >= last_counter_exit, "Contrôle engagé avant clôture des quatre contre-audits")
+    technical_proof(tree, row, control, files, captures)
     require(len({x["runtime_agent_id"] for x in (author, crossed, counter, control)}) == 4, "Auteur, auditeurs et coordinateur doivent être distincts")
     require(counter.get("fresh_context") is True and (cross_completed_at or dated(crossed["exit"]["checked_at"])) <= dated(counter["entry"]["checked_at"]),
             "Contre-audit : contexte neuf et démarrage différé requis")
