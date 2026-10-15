@@ -1,0 +1,101 @@
+schema_version: 1
+id: SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE
+mandatory: true
+authority: "Ordre direct Vial, 15 octobre 2026, Europe/Zurich"
+scope: [S08, S05, S04, S06]
+legacy_systems: read_only
+applies_to: [production, audit_medical, audit_linguistique, integration, cloture]
+severity_if_missing_or_inadequate: MAJEUR
+first_batch_included: true
+cross_audit_required: false
+
+reference_read_only:
+  courses: [I50, I21, I48, I10]
+  frontend: [engine/medina_course.js, engine/medina_course.css, engine/reading_v3.css]
+  actual_structure: "pA clinique, pE examens, pS sciences, pP pharmacologie ; cinq sous-onglets scientifiques existants"
+  observed_gap: "Pas de sous-onglet sémiologie dédié dans les quatre références inspectées"
+  cs_module: "Sémiologie cardiovasculaire distincte, route #/clinical-skills réservée à S01 ; ne remplace pas la sémiologie de chaque leçon"
+  reuse: "Architecture, classes et interactions ; aucun transfert automatique de faits médicaux ni d’images anatomiques"
+
+clinical_requirement:
+  panel: pA
+  files: ["chapters/<CODE>/<CODE>_a.html", "chapters/<CODE>/<CODE>_b.html"]
+  marker: 'data-semiology-clinical="<CODE>"'
+  content: "Symptômes, anamnèse analytique, signes, examen, discrimination clinique, situations urgentes ; articulés au raisonnement de la leçon"
+
+fundamental_analytical_requirement:
+  parent_panel: pS
+  file: "chapters/<CODE>/<CODE>_c.html"
+  placement: "Sixième sous-onglet local dans .sci-bar ; contenu dans .chap-body.sci-body"
+  label: "Sémiologie fondamentale et analytique"
+  tab:
+    type: button
+    id: "<code>-tab-semio"
+    role: tab
+    data-s: "<code>-s-semio"
+    aria-controls: "<code>-s-semio"
+    aria-selected: false
+  target:
+    id: "<code>-s-semio"
+    class: sci
+    role: tabpanel
+    aria-labelledby: "<code>-tab-semio"
+    hidden_initially: true
+  preserve_initial_selection: "Premier sous-onglet scientifique existant"
+  shared_frontend_change_required: false
+  sections:
+    - marker: normal
+      expected: "Normalité anatomique et fonctionnelle utile ; paramètres contextualisés si applicables"
+    - marker: signs
+      expected: "Symptômes et signes de la leçon ; vocabulaire précis, temporalité, circonstances, analyse sémiologique"
+    - marker: mechanisms
+      expected: "Science fondamentale → perturbation physiopathologique → signe/symptôme → implication clinique ; chaîne expliquée et sourcée"
+    - marker: examination
+      expected: "Technique d’observation ou d’examen, normal/pathologique, conditions de mesure, limites"
+    - marker: interpretation
+      expected: "Valeur diagnostique, contexte de probabilité, seuils/unités/performance seulement si démontrés ; sens de l’absence d’un signe"
+    - marker: differentials
+      expected: "Diagnostics différentiels pertinents et éléments réellement discriminants"
+    - marker: urgency
+      expected: "Drapeaux rouges, urgence et conduite temporelle quand établies ; limites de la recommandation"
+    - marker: limits
+      expected: "Applicabilité suisse, populations particulières, méthodes, limites, incertitudes et divergences attribuées"
+    - marker: sources
+      expected: "Correspondance assertions ↔ passages de sources réellement consultés, pas seulement une bibliographie générale"
+  section_markup: '<section class="ilot" data-semiology="<marker>"><h3>Intitulé adapté</h3>…</section>'
+  not_applicable: "Justification contextualisée et sourcée ; jamais une rubrique vide ou du remplissage générique"
+  writing: "Français précis et élégant ; expliquer avant de condenser ; tableaux courts quand ils clarifient, fenêtres approfondies selon le frontend existant"
+
+source_contract:
+  no_clinical_claim_from_model_memory: true
+  priority: "Sources suisses applicables puis européennes ; médicaments : FI Swissmedic/Compendium du produit exact"
+  each_claim: [source_id, url, publisher, version, consulted_at, page_or_section, actual_passage, population, limitations]
+  inherited_course_is_primary_source: false
+  scientific_figures: "Aucune structure anatomique générée/dessinée par IA ; originaux, droits, attribution et contrôle visuel documentés"
+
+frontend_verification:
+  - "Cliquer pS puis le sous-onglet ; libellé complet accessible et contenu visible exclusivement"
+  - "aria-selected et hidden suivent la sélection ; IDs uniques, aria-controls/labelledby concordants"
+  - "Présence des neuf sections avec contenu substantiel ; aucun simple titre ou texte générique non relié à la leçon"
+  - "Titres Navigo utiles, fenêtres/pop-ups fonctionnels, aucun renvoi orphelin"
+  - "Ordinateur et mobile390px ; police agrandie et mode Livre ; aucun contenu essentiel coupé"
+  - "Clavier natif Entrée/Espace ; ne pas prétendre une gestion flèches/Home/End absente du moteur actuel"
+  - "Une ancre vers un panneau masqué ne l’ouvre pas automatiquement : tester le parcours réel"
+
+closure_evidence:
+  alpha_receipt: "phase completed exige audits.SEMIO ; figures_only/provisional ne clôturent jamais la leçon"
+  report:
+    actor: Codex_or_Claude
+    code: "<CODE>"
+    kind: SEMIO
+    requirement: fundamental_analytical_semiology
+    status: closed
+    medical_human_validation: false
+    source_files_sha256: "empreintes de la base réelle"
+    reviewed_files_sha256: "tous fichiers finaux du reçu Alpha"
+    unresolved_blockers: []
+    findings: "constats avec statut et preuves"
+    evidence: "passages consultés, couverture des sections et contrôles du frontend réellement effectués"
+  final_med_and_lang: "requirements_reviewed.fundamental_analytical_semiology: true ; ne pas promouvoir les rapports antérieurs sans reprise effective"
+  starter_reference: "closure.requirement_evidence.semiology = {path,sha256}, identique à Alpha.audits.SEMIO"
+  machine_gate_limit: "La présence des balises, empreintes et déclarations ne certifie ni exactitude médicale ni validation par un médecin"

@@ -369,7 +369,7 @@ class Repository:
 
 
 def prompt_for(batch, config, index, coordinator):
-    return '''Execute only the following preapproved Codex batch. Read AGENTS.md and current SSP V2 guards.
+    return '''Execute only the following preapproved Codex batch. Read AGENTS.md, docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml and current SSP V2 guards from the exact approved main base of this worktree. Cardiologie is a frontend reference in read-only mode; do not edit its content or shared engine without a separate mission.
 You are the bounded coordinator, not governance: never approve missions or overwrite main.
 Acquire every mission with ai_session_guard.py, create its exclusive worktree at exact base, and start it before writes.
 Source corrections MUST use the matching per-code INTEGRATE mission, never coordinator paths or audit paths.

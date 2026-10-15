@@ -1,3 +1,11 @@
+## Sémiologie obligatoire par leçon — nouvel ordre Vial du 15 octobre 2026
+
+Pour S08/S05/S04/S06, ajouter cette exigence aux audits et productions : chaque leçon expose sa sémiologie clinique et possède, dans Sciences fondamentales, un sous-onglet visible «Sémiologie fondamentale et analytique». Lire [le contrat détaillé](docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml). Cardiologie sert de modèle de frontend et de structuration, en lecture seule ; son module CS séparé ne remplace pas un onglet dans chaque leçon. L’ajout doit être local au chapitre : pas de modification des anciens systèmes ni du moteur partagé sans mandat distinct.
+
+Le sixième sous-onglet scientifique relie science normale, perturbation physiopathologique, signe/symptôme, examen et interprétation clinique avec sources réellement lues. Un titre vide ou une liste sans mécanismes ne satisfait pas l’exigence. L’absence ou l’insuffisance de cette couverture est MAJEURE et bloque la clôture du cours/lot ; les sept cours du premier lot sont aussi concernés. Contrôler le rendu ordinateur/mobile et la navigation réelle. Les rapports finaux MED/LANG et SEMIO doivent être liés aux sources finales, sans inventer de validation humaine.
+
+---
+
 ## Moteurs indépendants et 7_Starter — nouvel ordre Vial du 15 octobre 2026
 
 Lire [l’ordre et la politique d’autonomie](docs/collaboration/instructions/MOTEURS_INDEPENDANTS_7_STARTER_2026-10-15.md). Claude et Codex activent leurs propres moteurs et publient leurs cours/images dans leurs attributions sans nouvelle confirmation de l’autre IA. Réserver les sources avec les missions Alpha préapprouvées ; ne pas employer le reçu historique en l’état pour une correction. L’autorisation de publication n’est ni une suppression des contrôles réels, ni une validation médicale humaine.
