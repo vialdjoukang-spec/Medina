@@ -6,7 +6,7 @@
 
 La leçon N18 est solide. Aucune erreur médicale dangereuse n’a été démontrée. Les points à risque (posologies, seuils, interactions, calculs) ont été confrontés aux informations professionnelles suisses en vigueur et aux textes KDIGO, SSN et SSED/SSN. Ils sont conformes. Les seize calculs chiffrés de la leçon ont été refaits : tous sont exacts.
 
-Deux points décisionnels restent incomplets (MAJEUR). Un point d’attribution est imprécis (MINEUR). Cinq rubriques méritent un enrichissement.
+Deux points décisionnels restent incomplets (MAJEUR). Trois imprécisions mineures concernent une attribution et deux figures (MINEUR). Cinq rubriques méritent un enrichissement.
 
 Les sept fichiers ont été lus en entier : onglets, tableaux, figures, quiz, 111 fenêtres, Pareto, `div.alert`, `div.key` et glossaire. Leurs empreintes SHA-256 sont **conformes au manifeste** (7/7).
 
@@ -25,6 +25,10 @@ Le cours oppose le seuil de classe (20) à la seule FI de Forxiga (25). Il ne si
 **MED-03 — Fer et anémie (N18-C0126).** La fiche SSN 2025 présente ferritine 300–500, saturation de la transferrine > 30 % et hémoglobine 10–11,5 g/dL comme des « objectifs ». Le cours les appelle « repères ». La résolution par KDIGO 2026 reste juste, mais la source suisse doit être citée telle qu’elle est rédigée.
 → Proposition : `propositions/N18_b_6.html`.
 
+**MED-09 — Figure 1, fréquence de contrôle (N18-C0080).** La matrice publiée (Farrell et Vassalotti 2024) indique 2 contrôles par an pour G1–G2 A3. La figure 13 de KDIGO 2024 et la fenêtre N18-C1048 en indiquent 3. Il faut signaler l’écart dans la légende.
+
+**MED-10 — Figure 2, légende inexacte (N18-C0104, N18-C0106).** L’image est « Tips for improving the detection and management of CKD in primary care » (Robson et al. 2024). C’est une liste de conseils et de ressources australiennes, sans étape de confirmation ni de retour au suivi. Il faut la décrire exactement ou la retirer au profit de la figure 4 de la fiche SSN 2025.
+
 ## Enrichissements proposés (prêts à intégrer et sourcés)
 
 | ID | Rubrique | Contenu | Fichier |
@@ -42,6 +46,23 @@ Le cours oppose le seuil de classe (20) à la seule FI de Forxiga (25). Il ne si
 - **Textes suisses et européens** : KDIGO 2026 pour l’anémie ; SSN 2025 ; SSED/SSN 2024 (drapeaux rouges, seuils d’âge, potassium, bicarbonate) ; valeurs de référence HUG.
 - **Calculs refaits** : CKD-EPI 2021, KFRE, ACR, Cockcroft–Gault, clairance, Ganzoni et désindexation.
 
+## Figures (règle Vial du 15.10.2026)
+
+Les 7 fichiers ont été inventoriés. Ils contiennent **8 `<figure>`/`<img>`**, aucun `<svg>`, aucun `canvas` et aucun dessin CSS. Chaque image a été ouverte et relue.
+
+| Ancre | Image | Classe | Source et licence | Résultat |
+|---|---|---|---|---|
+| N18-C0080 | n18_01 matrice G/A | SCHEMA_NON_ANATOMIQUE | Farrell et Vassalotti 2024, CC BY 4.0 (vérifiée sur PMC) | MED-09 : G1–G2 A3 = 2/an contre 3 selon KDIGO 2024 |
+| N18-C0106 | n18_02 rôle du médecin généraliste (Australie) | SCHEMA_NON_ANATOMIQUE | Robson et al. 2024, CC BY 4.0 (vérifiée sur PMC) | MED-10 : légende inexacte |
+| N18-C0211 | n18_03 deux échographies réelles | IMAGE_SOURCEE | Hansen et al. 2016, CC BY 4.0 (vérifiée sur PubMed/PMC) | Conforme |
+| N18-C0229 | n18_04 néphron et capillaires (OpenStax) | IMAGE_SOURCEE | Commons, CC BY 3.0 déclarée | Conforme ; licence non revérifiée par l’API |
+| N18-C0233 | n18_05 histologie PAS réelle (Nephron) | IMAGE_SOURCEE | Commons, CC BY-SA 3.0 déclarée | Conforme ; partage identique respecté dans la légende |
+| N18-C0244 | n18_06 réabsorption et sécrétion (OpenStax) | IMAGE_SOURCEE | Commons, CC BY 3.0 déclarée | Flèches conformes à N18-C0242 |
+| N18-C0258 | n18_07 homéostasie calcique (OpenStax) | SCHEMA_NON_ANATOMIQUE | Commons, CC BY 3.0 déclarée | Flèches conformes ; ambiguïté « ±10 mg/dL » expliquée par le cours |
+| N18-C0270 | n18_08 système rénine–angiotensine–aldostérone (OpenStax) | IMAGE_SOURCEE | Commons, CC BY 3.0 déclarée | Conforme |
+
+**Aucune figure anatomique générée par IA (ANATOMIQUE_IA = 0).** Aucune recherche de remplacement n’était donc requise. Pour les quatre fichiers OpenStax et l’image du contributeur Nephron, la licence Commons n’a pas pu être revérifiée : l’API a renvoyé une erreur 429, puis le moteur commun Image_Clo_finder a suspendu l’hôte. Cette vérification est déclarée en lacune. Le détail se trouve dans `rapport.json`, aux clés `figures` et `figures_inventaire`.
+
 ## Matrice des 20 rubriques
 
 **Couvertes (10)** : 1, 3, 5, 6, 9, 10, 11, 17, 18, 19.
@@ -57,16 +78,18 @@ Le détail figure dans `rapport.json`, champ `matrice_20`.
 - Les FI de Norvasc, Ezetrol et Repatha n’ont pas été relues ligne à ligne.
 - Le traitement d’urgence de l’hyperkaliémie est absent du cours. Son renvoi vers un autre chapitre n’a pas été vérifié.
 - Les objectifs PROFILES/SSP n’ont pas été consultés.
+- Les licences Commons des figures 4 à 8 n’ont pas été revérifiées par l’API (erreur 429, puis disjoncteur du moteur commun).
 
 ## Tableau de bord
 
 | Élément | Valeur |
 |---|---|
 | Fichiers lus / empreintes conformes | 7 / 7 |
-| Sources lues | 25 (dont 16 FI suisses datées) |
-| BLOQUANT / MAJEUR / MINEUR / ENRICHISSEMENT | 0 / 2 / 1 / 5 |
+| Sources lues | 27 (dont 16 FI suisses datées) |
+| BLOQUANT / MAJEUR / MINEUR / ENRICHISSEMENT | 0 / 2 / 3 / 5 |
+| Figures inventoriées / ANATOMIQUE_IA | 8 / 0 |
 | Propositions HTML | 8 |
-| Ancres vérifiées mécaniquement | 8 / 8 |
+| Ancres vérifiées mécaniquement | 10 constats + 8 figures, toutes présentes |
 | Fichiers canoniques modifiés | 0 |
 
 *Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.*

@@ -11,7 +11,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-15T18:22:52Z",
- "date_fin": "2026-10-15T18:36:29Z",
+ "date_fin": "2026-10-15T18:40:00Z",
  "lecture": {
   "fichiers": [
    "chapters/N18/N18_a.html",
@@ -70,7 +70,7 @@
  "synthese": {
   "BLOQUANT": 0,
   "MAJEUR": 2,
-  "MINEUR": 1,
+  "MINEUR": 3,
   "ENRICHISSEMENT": 5
  },
  "constats": [
@@ -292,6 +292,47 @@
    "proposition": "propositions/N18_pop1_1.html",
    "justification": "Mécanisme : hausse rapide de l’hémoglobine et cibles hautes liées à l’hypertension et aux événements vasculaires. Conséquence : instauration trop précoce ou titration trop rapide. Décision : seuils KDIGO 2026 en plus de la FI.",
    "ancre_verifiee": true
+  },
+  {
+   "id": "MED-09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/N18/N18_a.html",
+   "ancre": "N18-C0080 — « 1, 2, 3 et 4+ indiquent des contrôles par an »",
+   "constat": "La figure 1 (Farrell et Vassalotti 2024) indique 2 contrôles par an pour G1–G2 A3 (« Refer* 2 »), alors que la figure 13 de KDIGO 2024 et le tableau de la fenêtre n18-a03-fenetre-2 (N18-C1048) en donnent 3. Le lecteur rencontre deux fréquences différentes pour la même case.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Figure 13 (Frequency of monitoring)",
+     "citation_courte": "G1 … Treat 3 ; G2 … Treat 3 (colonne ≥ 30 mg/mmol)"
+    },
+    {
+     "source_id": "S26",
+     "section": "Figure 1",
+     "citation_courte": "G1 et G2, A3 : Refer* 2"
+    }
+   ],
+   "proposition": "Ajouter à la légende N18-C0080 : « Dans cette figure, G1–G2 A3 porte 2 contrôles par an ; la figure 13 de KDIGO 2024, retenue par ce cours, en recommande 3. »",
+   "justification": "Mécanisme : A3 est un marqueur de risque élevé de progression. Conséquence : une fréquence sous-estimée retarde la détection de la progression. Décision : enseigner la valeur KDIGO 2024 et signaler l’écart de la figure.",
+   "ancre_verifiee": true,
+   "extrait_present": true
+  },
+  {
+   "id": "MED-10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/N18/N18_a.html",
+   "ancre": "N18-C0104 — « son dépistage, sa confirmation et son retour vers le suivi illustrent une organisation »",
+   "constat": "La figure 2 est en réalité « Tips for improving the detection and management of CKD in primary care » (Robson et al. 2024) : conseils et ressources australiennes (URL, ligne téléphonique), sans étape de confirmation ni de retour au suivi. La légende et N18-C0104 la décrivent comme un algorithme de parcours, ce qu’elle n’est pas ; sa valeur pour un lecteur suisse est faible.",
+   "preuve": [
+    {
+     "source_id": "S27",
+     "section": "Figure 1, légende",
+     "citation_courte": "Tips for improving the detection and management of CKD in primary care."
+    }
+   ],
+   "proposition": "Reformuler N18-C0104 et N18-C0106 : « Conseils publiés pour le médecin de premier recours en Australie (surveillance, diagnostic, prise en charge) ; les ressources citées ne s’appliquent pas en Suisse. » — ou retirer la figure, la figure 4 de la fiche SSN 2025 (orientation vers le néphrologue) étant la référence suisse.",
+   "justification": "Une légende doit décrire exactement l’image ; un algorithme supposé induit une lecture que la figure ne permet pas.",
+   "ancre_verifiee": true,
+   "extrait_present": true
   }
  ],
  "verifications_conformes": [
@@ -441,7 +482,117 @@
   "Fenêtres Norvasc, Ezetrol, Repatha et Eliquis (hors renal) : FI non relues ligne à ligne (échantillonnage limité aux points rénaux).",
   "Traitement d’urgence de l’hyperkaliémie (gluconate de calcium, insuline–glucose) non traité par le cours ; renvoi probable vers un chapitre E87, non vérifié.",
   "Microangiopathie thrombotique : la ligne du tableau A06 ne cite ni schizocytes ni haptoglobine ; aucune source lue dans cette mission ne les mentionne, donc aucune proposition.",
-  "Objectifs PROFILES/SSP pour N18 non consultés."
+  "Objectifs PROFILES/SSP pour N18 non consultés.",
+  "Licences Commons des figures 4 à 8 : métadonnées non obtenues (API Commons en erreur 429, puis hôte suspendu par le disjoncteur du moteur commun Image_Clo_finder) ; licences déclarées dans les légendes (CC BY 3.0, CC BY-SA 3.0) non revérifiées par l’API."
  ],
- "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "figures": [
+  {
+   "ancre": "N18-C0080",
+   "fichier": "chapters/N18/N18_a.html",
+   "image": "assets/img/cycle2/n18/n18_01.gif",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Matrice G/A (heat map) avec Treat/Refer et fréquences de contrôle, Figure 1 de Farrell et Vassalotti, BMC Nephrology 2024;25:34, adaptée de KDIGO.",
+   "source_declaree": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10809507/ — CC BY 4.0",
+   "verification": "Licence CC BY 4.0 confirmée sur la page PMC (« licensed under a Creative Commons Attribution 4.0 International License »). Valeurs relues : G1 et G2 A3 portent « Refer* 2 », alors que la figure 13 de KDIGO 2024 et le tableau de la fenêtre n18-a03-fenetre-2 (N18-C1048) indiquent 3 contrôles par an. Les autres cases concordent.",
+   "constat_id": "MED-09",
+   "candidats": [],
+   "ancre_verifiee": true
+  },
+  {
+   "ancre": "N18-C0106",
+   "fichier": "chapters/N18/N18_a.html",
+   "image": "assets/img/cycle2/n18/n18_02.gif",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Figure 1 de Robson, Deed et Phoon, J Patient Exp 2024;11 : « Tips for improving the detection and management of CKD in primary care » (rôle du médecin généraliste : surveillance, diagnostic, prise en charge ; ressources australiennes).",
+   "source_declaree": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11179444/ — CC BY 4.0",
+   "verification": "Licence CC BY 4.0 confirmée sur la page PMC. La légende du cours (« Parcours publié de détection et de coordination des soins rénaux ») et N18-C0104 (« algorithme … dépistage, confirmation, retour vers le suivi ») ne reprennent pas le titre réel ; la figure est une liste de conseils et de ressources australiennes (URL, numéro de téléphone), sans branche de confirmation ni de retour au suivi.",
+   "constat_id": "MED-10",
+   "candidats": [],
+   "ancre_verifiee": true
+  },
+  {
+   "ancre": "N18-C0211",
+   "fichier": "chapters/N18/N18_c.html",
+   "image": "assets/img/cycle2/n18/n18_03.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Montage de deux échographies réelles (Hansen, Nielsen et Ewertsen, Diagnostics 2016, figures 1 et 22) : rein normal 13,36 cm et rein de maladie rénale chronique 9,09 cm.",
+   "source_declaree": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/ — CC BY 4.0",
+   "verification": "Licence CC BY 4.0 confirmée par PubMed/PMC (© 2015 les auteurs, MDPI). Longueurs affichées conformes au texte ; modification (montage, étiquettes A/B) déclarée dans la légende.",
+   "constat_id": null,
+   "candidats": [],
+   "ancre_verifiee": true
+  },
+  {
+   "ancre": "N18-C0229",
+   "fichier": "chapters/N18/N18_c.html",
+   "image": "assets/img/cycle2/n18/n18_04.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Illustration anatomique OpenStax « Blood Flow in the Nephron » (artérioles afférente et efférente, capillaires péritubulaires) ; illustration éditoriale publiée, non générée par IA.",
+   "source_declaree": "https://commons.wikimedia.org/wiki/File:2611_Blood_Flow_in_the_Nephron.jpg — CC BY 3.0 (déclarée ; métadonnées Commons non obtenues, erreur 429)",
+   "verification": "Image relue : légendes anglaises cohérentes avec N18-C0227. Attribution « OpenStax College » présente.",
+   "constat_id": null,
+   "candidats": [],
+   "ancre_verifiee": true
+  },
+  {
+   "ancre": "N18-C0233",
+   "fichier": "chapters/N18/N18_c.html",
+   "image": "assets/img/cycle2/n18/n18_05.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Microphotographie réelle PAS d’une glomérulosclérose segmentaire et focale (auteur Nephron, Wikimedia Commons).",
+   "source_declaree": "https://commons.wikimedia.org/wiki/File:Focal_segmental_glomerulosclerosis_-_very_high_mag.jpg — CC BY-SA 3.0 (déclarée ; métadonnées Commons non obtenues, erreur 429)",
+   "verification": "Image relue : histologie réelle. Licence à partage identique : la conversion GIF doit rester diffusée sous CC BY-SA 3.0, ce que la légende indique.",
+   "constat_id": null,
+   "candidats": [],
+   "ancre_verifiee": true
+  },
+  {
+   "ancre": "N18-C0244",
+   "fichier": "chapters/N18/N18_c.html",
+   "image": "assets/img/cycle2/n18/n18_06.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Illustration OpenStax « Nephron Secretion Reabsorption » (sites de réabsorption et de sécrétion).",
+   "source_declaree": "https://commons.wikimedia.org/wiki/File:2618_Nephron_Secretion_Reabsorption.jpg — CC BY 3.0 (déclarée ; métadonnées Commons non obtenues, erreur 429)",
+   "verification": "Flèches relues : réabsorption proximale (glucose, acides aminés, protéines, ions, eau), sécrétion proximale (urée, acide urique, créatinine, médicaments, H⁺, NH₄⁺), sécrétion distale (H⁺, K⁺, NH₄⁺) ; lecture du cours N18-C0242 conforme.",
+   "constat_id": null,
+   "candidats": [],
+   "ancre_verifiee": true
+  },
+  {
+   "ancre": "N18-C0258",
+   "fichier": "chapters/N18/N18_c.html",
+   "image": "assets/img/cycle2/n18/n18_07.gif",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Boucle de régulation du calcium OpenStax « Calcium Homeostasis » (calcitonine, PTH, os, rein, intestin).",
+   "source_declaree": "https://commons.wikimedia.org/wiki/File:625_Calcium_Homeostasis.jpg — CC BY 3.0 (déclarée ; métadonnées Commons non obtenues, erreur 429)",
+   "verification": "Flèches relues et conformes à N18-C0255 ; les étiquettes « +10 mg/dL / −10 mg/dL » de l’original sont ambiguës, et le cours les explicite correctement comme au-dessus/au-dessous du repère (2,5 mmol/L).",
+   "constat_id": null,
+   "candidats": [],
+   "ancre_verifiee": true
+  },
+  {
+   "ancre": "N18-C0270",
+   "fichier": "chapters/N18/N18_c.html",
+   "image": "assets/img/cycle2/n18/n18_08.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Illustration OpenStax « Renin Aldosterone Angiotensin » (foie, rein, poumons, surrénale, collecteur, voie ADH).",
+   "source_declaree": "https://commons.wikimedia.org/wiki/File:2626_Renin_Aldosterone_Angiotensin.jpg — CC BY 3.0 (déclarée ; métadonnées Commons non obtenues, erreur 429)",
+   "verification": "Flèches relues : séquence rénine → angiotensine I → ECA pulmonaire → angiotensine II → aldostérone, et voie ADH séparée ; conforme à N18-C0268/C0270.",
+   "constat_id": null,
+   "candidats": [],
+   "ancre_verifiee": true
+  }
+ ],
+ "figures_inventaire": {
+  "svg": 0,
+  "canvas": 0,
+  "img": 8,
+  "figure": 8,
+  "dessins_css": 0,
+  "ANATOMIQUE_IA": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 5,
+  "regle": "Règle Vial du 15.10.2026 — figures anatomiques générées par IA non recevables"
+ }
 }
