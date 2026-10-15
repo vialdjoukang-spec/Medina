@@ -434,5 +434,51 @@
   "chapters/E12/E12_pop2.html": "21d66389cc17ebf63151fe3a7760eea02cf8d741211c762c97a382cb4470358b",
   "glossary/e12.py": "43b1da499f4e69981ec039877f77ae5acfa5e6e4a841de4162f3fc0f7a7240bd"
  },
- "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation médicale humaine n’est revendiquée."
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation médicale humaine n’est revendiquée.",
+ "corrections_apres_revue_P": {
+  "revue": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/revue/ (commit 6d6eb8de)",
+  "corrections": [
+   {
+    "constat": "MED-15",
+    "action": "Mécanisme « enzymes → GLP-1 » retiré (E12_b #e12-9, E12_c physiologie, E12_pop2 e12-creon) ; effet glycémique attribué à Endotext sans mécanisme ; GLP-1 doublé dans la FCPD ajouté (E12_a #e12-3, E12_c physiologie) ; encadré Science → traitement de physiologie reformulé",
+    "source": "Endotext 2024, passages cités dans revue/MED.json (« helps improve glucose control » ; « GLP-1 increases two-fold »)"
+   },
+   {
+    "constat": "MED-16",
+    "action": "« Masse bêta réduite sans fibrose » au conditionnel ou marquée « hypothèse » (paragraphe, Figure 3 bis : texte et aria-label, Science → traitement, À retenir, Pareto) ; « glucagon conservé » retiré",
+    "source": "Diabetes Care 2022 (« It has been speculated… decreased β-cell mass »)"
+   },
+   {
+    "constat": "MED-17",
+    "action": "« seulement » retiré : recherche monogénique qualifiée de conditionnelle (statut du tableau #e12-e-1)",
+    "source": "Lancet Global Health 2025, encadré ; tableau e-1 de la leçon"
+   },
+   {
+    "constat": "MED-13 / LANG-03 (RM-11)",
+    "action": "Reformulé : signes rénaux précoces, microalbuminurie ou hyperfiltration glomérulaire, comparables au diabète de type 1 ; macroalbuminurie rare",
+    "source": "HaPanEU 7-5.2b, passage cité dans revue/MED.json"
+   },
+   {
+    "constat": "MED-18 (observation)",
+    "action": "Fenêtre imagerie : modalités standard attribuées à Endotext ; limite de l’échographie à HaPanEU",
+    "source": "Endotext 2024 ; HaPanEU 2-6"
+   },
+   {
+    "constat": "LANG-01 / SEMIO-04",
+    "action": "anti-GAD → anti-GAD65 (cas 3, #e12-sm-8)",
+    "source": "cohérence RM-01"
+   },
+   {
+    "constat": "LANG-02",
+    "action": "« scanner » → « CT » (quiz #e12-e-5)",
+    "source": "cohérence OG-04"
+   }
+  ],
+  "controles": {
+   "build_medina.audit(E12)": "{}",
+   "test_v7.py --static E12": "OK (mots 21529, fenêtres 52, quiz 10, pareto 10)",
+   "audit_sciences (simulation)": "seuls les 2 faux positifs img[alt] connus"
+  },
+  "note": "Les fichiers revue/ (Agent P) portent les empreintes du commit 79edab17 ; les fichiers corrigés ensuite ont d’autres empreintes."
+ }
 }
