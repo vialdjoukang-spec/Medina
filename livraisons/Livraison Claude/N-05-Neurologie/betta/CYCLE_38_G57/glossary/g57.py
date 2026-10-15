@@ -1,8 +1,0 @@
-from cardio_1 import a, G
-# G57 — Mononévrite du membre inférieur (N-05-Neurologie). Entrées conditionnelles : aucun terme existant dans G n’est écrasé.
-if 'CIM-10-GM' not in G:
-    a('CIM-10-GM', [('CIM', 'Classification Internationale des Maladies'), ('10', 'dixième révision'), ('GM', 'German Modification (modification allemande)')], 'Classification internationale des maladies, dixième révision, modification allemande', '<p>Version allemande de la dixième révision de la classification de l’Organisation mondiale de la santé, publiée par le BfArM. L’Office fédéral de la statistique suisse en publie une édition française. Ce cours s’appuie sur l’édition 2024.</p>', 'g57-sciatique')
-if 'G57' not in G:
-    a('G57', [('G', 'chapitre G de la classification : maladies du système nerveux'), ('57', 'catégorie numéro 57 : mononeuropathies du membre inférieur')], 'Code de la catégorie des mononeuropathies du membre inférieur', '<p>Code de la CIM-10-GM 2024 regroupant les atteintes d’un seul nerf de la jambe. Ses sous-codes distinguent le nerf sciatique, le nerf cutané latéral de la cuisse, le nerf fémoral, le nerf fibulaire, le nerf tibial, le tunnel tarsien et les nerfs plantaires.</p>')
-if 'L5' not in G:
-    a('L5', [('L', 'Lombaire (racine lombaire)'), ('5', 'cinquième')], 'Cinquième racine lombaire', '<p>Racine nerveuse qui sort entre la cinquième vertèbre lombaire et le sacrum. Son atteinte donne une faiblesse de la flexion dorsale du pied et de l’inversion ; elle se distingue d’une atteinte du nerf fibulaire par la faiblesse du tibial postérieur et du moyen fessier.</p>', 'g57-inversion')
