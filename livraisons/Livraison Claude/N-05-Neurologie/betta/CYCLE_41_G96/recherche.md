@@ -110,11 +110,76 @@ ICHD-3 7.2 [S3] : A. toute céphalée remplissant C ; B. pression LCR < 60 mm LC
 ## 17. Paramètres clés (pour `div.key`)
 Pression < 60 mm LCR [S3] · Berne ≤ 2 / 3–4 / ≥ 5 [S4] · suprasellaire ≤ 4 mm, prépontique ≤ 5 mm, mamillo-pontique ≤ 6,5 mm [S4] · conservateur ≤ 2 semaines, EBP ≥ 20 mL (≤ 40 mL) [S2] · POTS FC +30/min [S2] · rebond ~20 % [S6] · bêta-2-transferrine / bêta-trace [S12].
 
+## 18. Compléments (passe 2, 15.10.2026)
+**18.1 ICHD-3 7.2.1 et 7.2.2 (lacune 4 levée)** — extraits repris du dossier G97 du même cycle.
+- 7.2.1 céphalée post-ponction durale : A. critères de 7.2 et C ; B. ponction durale réalisée ; C. céphalée apparue dans les 5 jours ; D. non mieux expliquée ; rémission spontanée en 2 semaines ou après obturation par blood patch épidural [S18]. Ce cas relève de G97.0/G97.1 et non de G96.0 [S1].
+- 7.2.2 céphalée par fistule de LCR : céphalée orthostatique après un acte ou un traumatisme connu pour causer une fuite persistante, relation temporelle, critères de 7.2 ; disparaît après obturation [S19].
+- Conséquence de codage : 7.2.3 (HIS, sans geste causal) [S3] et la liquorrhée spontanée ou traumatique relèvent de G96.0 ; l'écoulement après ponction lombaire relève de G97.0 [S1].
+
+**18.2 HIS sans fuite démontrable (équipe de Berne)** [S24]
+- Concept d'« HIS interne » : symptômes et imagerie typiques, aucune fuite retrouvée malgré un bilan répété, bénéfice d'un patch ; hypothèse d'un transfert pathologique du LCR du crâne vers un compartiment spinal trop compliant (diverticules méningés multiples). Proportion estimée « jusqu'à 10–15 % » selon l'expérience des auteurs, non mesurée [S24].
+- Pression d'ouverture en décubitus : typiquement < 6 cmH2O, ou le plus souvent normale, mais non négative [S24] — concordant avec [S5][S15].
+- Hypothèse non démontrée ; pas de seuil diagnostique ; cible thérapeutique proposée = compliance spinale [S24]. Converge avec l'hypothèse ICHD-3 d'un faible volume de LCR sans fuite active [S3].
+
+**18.3 G96.1 — affections des méninges NCA : adhérences (arachnoïdite adhésive)** (lacune 3 partiellement levée)
+- Arachnoïdite = inflammation chronique de l'arachnoïde et de l'espace sous-arachnoïdien ; trois grandes étiologies : chimique, mécanique, post-infectieuse [S26].
+- Mécanisme : adhérences qui perturbent l'écoulement du LCR, complication majeure : syringomyélie [S26].
+- Facteurs : antécédent de chirurgie rachidienne, anesthésie épidurale, myélographie, tumeur spinale [S25].
+- Clinique : paraparésie progressive, potentiellement invalidante (fauteuil roulant) [S25].
+- Diagnostic : IRM rachidienne = examen le plus sensible et spécifique [S25].
+- Traitement : pas de consensus ; chirurgie bénéfique dans des cas sélectionnés [S26] ; dans la série de 3 cas, aucun patient n'a retrouvé une marche autonome malgré traitement conservateur et rééducation [S25].
+- Niveau de preuve faible (résumés, série de cas, revue non européenne) : à présenter comme un encadré bref.
+
+**18.4 Prévention vaccinale suisse de la méningite en cas de fistule de LCR** [S22][S23]
+- Plan de vaccination suisse 2026 : groupes à risque pour les pneumocoques, rubrique « ORL, Crâne (atteintes de la barrière hémato-encéphalique) » : implant cochléaire (dès l'indication) ; **fracture ou malformation de la base du crâne, fistule cérébro-spinale : dès que l'indication est posée** [S22, p. 27].
+- Schéma PCV pour les personnes à risque : nourrissons 2–6 mois 3 doses à 4–8 semaines puis 4e dose à 12 mois ; 7–11 mois 2 doses puis 3e à 12 mois ; 12–23 mois 2 doses à ≥ 8 semaines ; toute personne ≥ 2 ans : 1 dose [S22]. Choix du PCV selon l'âge, PCV autorisé et remboursé ; le PPV23 n'est plus recommandé en Suisse depuis 2014 [S22].
+- Justification (OFSP/CFV 2014) : risque accru de maladie invasive à pneumocoques chez les immunocompétents porteurs d'une fistule de LCR ou d'un implant cochléaire ; 1 dose sitôt le diagnostic posé [S23].
+- **Contentieux** : la revue britannique [S12] propose en plus Hib et méningocoques ; le texte suisse en vigueur ne mentionne, pour la fistule de LCR, que les pneumocoques (lecture de la colonne méningocoques du tableau ambiguë) → la règle suisse [S22] prime pour la pratique en Suisse ; la position de [S12] est présentée en fenêtre comparative.
+
+**18.5 Antalgie de base — FI suisses** (lacune 5 partiellement levée) — extraits repris du dossier G97.
+- Paracétamol (Paracétamol Stada®) : adulte > 40 kg 500–1000 mg par prise, max 4000 mg/j ; ClCr 10–50 mL/min → intervalle 6 h, max 3000 mg/j ; ClCr < 10 → 8 h, max 2000 mg/j ; CI insuffisance hépatique grave, hépatite aiguë, maladie de Gilbert ; grossesse : dose efficace la plus faible, durée la plus courte ; enfant 9–12 ans max 2000 mg/j [S20].
+- Ibuprofène (Ibuprofen-Mepha Teva®) : céphalées 400 mg, jusqu'à 800 mg par prise, max 2400 mg/j ; CI 3e trimestre, ulcère/hémorragie digestive, MICI actives, ClCr < 30, insuffisance hépatique ou cardiaque grave ; allaitement déconseillé [S21].
+- Caféine : aucune FI suisse de caféine seule trouvée (recherche « coffein », « caffeine » dans le dossier G97) → les doses de [S5] restent hors FI.
+
+**18.6 Situations particulières (compléments)**
+- Enfant : rhinorrhée de LCR et fracture de la base du crâne → vaccination antipneumococcique selon l'âge (schéma ci-dessus) [S22] ; paracétamol 9–12 ans max 2000 mg/j [S20]. HIS pédiatrique : non traitée par les sources lues (lacune).
+- Grossesse : ibuprofène contre-indiqué au 3e trimestre [S21] ; acétazolamide à éviter, surtout au 1er trimestre [S16] ; défériprone contre-indiquée [S17]. Prise en charge de l'HIS pendant la grossesse : lacune.
+- Insuffisance rénale : paracétamol adapté selon ClCr [S20] ; ibuprofène CI si ClCr < 30 [S21] ; acétazolamide CI en atteinte rénale grave [S16].
+- Insuffisance hépatique : paracétamol CI si grave [S20] ; acétazolamide CI (dont cirrhose) [S16].
+- Sujet âgé : hématome sous-dural inexpliqué → rechercher une fuite spinale [S2][S5].
+
+## Matrice de complétude
+| rubrique | statut | sources |
+|---|---|---|
+| 1. Question clinique et enjeu pour l'examen fédéral | ✔ céphalée orthostatique, rhinorrhée claire unilatérale ; diagnostic tardif (§1) | S2, S5, S10, S12 |
+| 2. Définition et périmètre CIM-10-GM | ✔ G96.0/.1/.8/.9, exclusion G97.0 (§0, §2, §18.1) | S1, S2, S3, S13 |
+| 3. Classifications et stades | ✔ types 1–3 de fuite, ICHD-3 7.2.1/7.2.2/7.2.3, score de Berne, rhinorrhée traumatique/spontanée (§3, §18.1) | S3, S4, S5, S6, S12, S18, S19 |
+| 4. Épidémiologie suisse puis européenne | ✔ incidence 3,7–5/100 000/an, F:H 2:1, cohorte bernoise 220 patients (§4) ; pas de registre national suisse | S2, S5, S8, S12 |
+| 5. Normal → pathologique | ✔ Monro-Kellie, affaissement cérébral, preuve volumétrique bernoise, HIS sans fuite (§5, §18.2) | S3, S5, S7, S8, S24 |
+| 6. Étiologies et facteurs de risque | ✔ éperon discal, tissu conjonctif, FLV, HII/obésité, arachnoïdite (§6, §18.3) | S2, S3, S5, S6, S12, S25, S26 |
+| 7. Anamnèse et symptômes (fréquences) | ✔ tableau des fréquences, définition opérationnelle (§7) | S2, S3, S5, S12 |
+| 8. Examen clinique | ✔ FC/TA couché-debout, nerfs crâniens, signe du halo (§8) ; sensibilité/spécificité non disponibles | S2, S5, S12 |
+| 9. Drapeaux rouges et urgences | ✔ HSD, TVC, coma, méningite ; délais d'orientation 48 h / urgence (§11) | S2, S5, S12, S13 |
+| 10. Examens complémentaires | ✔ IRM cérébro-spinale, SLEC, PL non systématique, myélographie dynamique, bêta-2-transferrine (§9) | S2, S5, S6, S12, S13, S14, S15 |
+| 11. Diagnostic différentiel | ✔ POTS, migraine, HII, Chiari, céphalée post-traumatique, HSA (§10) | S2, S5, S11 |
+| 12. Prise en charge suisse | ✔ conservateur ≤ 2 sem, EBP, traitement ciblé, chirurgie bernoise, rhinorrhée endoscopique, FI datées (§12, §13, §18.5) ; pas de recommandation suisse dédiée | S2, S5, S6, S9, S12, S16, S17, S20, S21 |
+| 13. Complications et pronostic | ✔ HSD, sidérose, rebond ~20 %, arrêt de travail > 3 mois 54,8 % (§11, §12, §14) | S2, S5, S6, S10 |
+| 14. Suivi, prévention, dépistage | ✔ calendrier de suivi, vaccination antipneumococcique suisse (§14, §18.4) | S2, S5, S22, S23 |
+| 15. Situations particulières | ✔ enfant, grossesse (médicaments), IR/IH, âgé (§15, §18.6) ; HIS gravide et pédiatrique = lacune | S2, S5, S12, S16, S17, S20, S21, S22 |
+| 16. Spécificités suisses | ✔ partiel : plan de vaccination OFSP, FI Swissmedic hors indication, centre de Berne (§12, §13, §18.4) ; aptitude à la conduite : seule consigne post-patch (ne pas conduire) ; Suva/LAA, AI, LS non trouvés | S2, S9, S16, S17, S22 |
+| 17. Critères formels du diagnostic | ✔ ICHD-3 7.2, 7.2.1, 7.2.2, 7.2.3 (§16, §18.1) | S3, S18, S19 |
+| 18. Paramètres clés chiffrés | ✔ pression < 60 mm LCR, Berne, distances IRM, EBP ≥ 20 mL, POTS +30/min, rebond ~20 % (§17) | S2, S3, S4, S6 |
+| 19. Sous-codes CIM-10-GM couverts | ✔ G96.0 (développé), G96.1 (encadré arachnoïdite), G96.8 et G96.9 (catégories résiduelles, définition seule) | S1, S25, S26 |
+| 20. Points d'examen fédéral | ✔ pièges : orthostatisme perdu avec le temps, IRM normale n'exclut pas, PL non nécessaire, HSD inexpliqué, G96.0 vs G97.0, vaccination PCV (§7, §9, §15, §18) ; objectifs PROFILES non consultés | S1, S2, S3, S5, S22 |
+
 ## Lacunes explicites
-1. Aucune source suisse de type recommandation (SSN, Swiss Medical Forum) lue : budget WebSearch épuisé ; la Suisse est représentée par les études de l'Inselspital Berne (résumés).
-2. Pas de recommandation EAN dédiée trouvée ; base européenne = consensus britannique [S2] et revues de Fribourg [S5][S6].
-3. G96.1 (adhérences méningées), G96.8, G96.9 : aucune source clinique spécifique lue.
-4. Critères ICHD-3 7.2.1 et 7.2.2 non récupérés.
-5. FI Swissmedic caféine, paracétamol, AINS non lues ; aucune dose de caféine issue d'une FI.
-6. Grossesse et pédiatrie non couvertes.
-7. Risque chiffré de méningite dans la rhinorrhée issu d'un seul résumé (revue russe, 10–37 %) [S13].
+1. Aucune recommandation suisse dédiée (SSN, Swiss Medical Forum, Revue Médicale Suisse) : WebSearch « hypotension intracrânienne spontanée Revue Médicale Suisse OR Swiss Medical Forum » sans résultat suisse ; la Suisse est représentée par l'Inselspital Berne [S4][S7][S8][S9][S10][S11][S24], l'OFSP [S22][S23] et Swissmedic.
+2. Pas de recommandation EAN dédiée ; base européenne = consensus britannique [S2], revues de Fribourg [S5][S6] et d'Oxford [S12].
+3. G96.8 et G96.9 : aucune source clinique spécifique (catégories résiduelles). G96.1 : résumés seulement [S25][S26].
+4. ~~ICHD-3 7.2.1/7.2.2~~ levée (§18.1).
+5. Caféine : aucune FI suisse ; doses hors FI d'après [S5].
+6. HIS pendant la grossesse et chez l'enfant : non traitée par les sources lues.
+7. Risque chiffré de méningite dans la rhinorrhée issu d'un seul résumé (10–37 %) [S13].
+8. Spécificités assurantielles (Suva/LAA pour liquorrhée post-traumatique, AI, liste des spécialités) et aptitude à la conduite : non trouvées.
+9. Objectifs PROFILES/SSP non consultés pour G96.
+10. Colonne méningocoques du tableau des risques [S22] illisible sans ambiguïté pour la fistule de LCR.

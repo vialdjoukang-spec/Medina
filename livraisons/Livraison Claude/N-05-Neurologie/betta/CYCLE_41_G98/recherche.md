@@ -1,6 +1,6 @@
 # Dossier de recherche — G98 — Autres affections du système nerveux, non classées ailleurs (N-05-Neurologie)
 
-Cycle Betta 41, leçon 1 · agent C41-A3-NEUR (recherche) · 15.10.2026 · références [S1–S9] = `sources.json`.
+Cycle Betta 41, leçon 1 · agent C41-A3-NEUR (recherche) · 15.10.2026 · références [S1–S15] = `sources.json` (complément suisse S10–S15 ajouté le 15.10.2026).
 Statut : dossier de recherche ; audit différé — revue IA, distincte d'une validation médicale humaine.
 
 ## 0. Question clinique et choix de l'axe de la leçon
@@ -109,13 +109,78 @@ Statut : dossier de recherche ; audit différé — revue IA, distincte d'une va
 - Mortalité à 5 ans ≈ 29 % ; amputation × 6–12 si ulcère sur déformation [S3].
 - Codage : Charcot SAI/non syphilitique G98† + M14.6-* ; diabétique E1x.6† + M14.6-* ; tabétique A52.1† + M14.6-* [S2].
 
-## 16. Lacunes explicites
-0. État normal (rôle protecteur de la sensibilité) non documenté par une source lue : ne pas le rédiger de mémoire.
-1. Aucune recommandation suisse (SSED/SGED, Swiss Medical Forum) lue : budget de recherche web épuisé durant la session ; seules des publications du Balgrist (Zurich) via PubMed. Sources européennes nationales (DDG/AWMF, NICE) non lues.
-2. « Affection du système nerveux SAI » : aucune source clinique ; règle de codage seulement.
-3. Libellé français officiel OFS de l'inclusion « Arthropathie de Charcot » non vérifié (lecture de la version allemande BfArM).
-4. Définitions des stades d'Eichenholtz I–IV et des 5 zones de Sanders-Frykberg non disponibles en texte.
-5. Causes neurologiques non diabétiques du Charcot (hors tabès, alcool, malnutrition) non sourcées.
-6. Posologies vitamine D/calcium : renvoyées aux recommandations nationales, non lues ; aucune FI Swissmedic consultée (aucun médicament recommandé spécifiquement).
+## 16. Compléments suisses (ajout du 15.10.2026)
+
+### 16.1 Libellés officiels OFS (français) [S14]
+- G98 « Autres affections du système nerveux, non classées ailleurs » ; inclusions : « Arthropathie de Charcot† (M14.6-*) » et « Affection du système nerveux SAI » ; **pas de sous-code** (catégorie sans subdivision) [S14].
+- M14.6 « Arthropathie neuropathique » : Charcot non syphilitique → G98 ; Charcot SAI → G98 ; Charcot syphilitique (tabétique) → A52.1 ; arthropathie neuropathique diabétique → E10–E14 avec 4e chiffre .6 ; arthropathie tabétique → A52.1 [S14].
+- A52.1 « Syphilis nerveuse symptomatique » inclut « Arthropathie syphilitique (tabétique)† (M14.6-*) » et exclut « Arthropathie de Charcot (G98†, M14.6-*) » [S14].
+- G99 comporte les sous-codes G99.0, G99.1, G99.2, G99.8 (leçon suivante, pour contraste) [S14].
+- Lacune 3 antérieure (libellé OFS) levée : concordance BfArM [S1, S2] / OFS [S14].
+
+### 16.2 Document suisse de référence : QualiCCare/SSED 2020 [S10]
+- **Définition** : destruction non infectieuse des os et des articulations associée à la neuropathie, avec signes d'inflammation en phase aiguë (stades 0–1) [S10].
+- **Algorithme** : pied avec érythème léger, plus chaud que l'autre, tuméfié, indolore ou peu douloureux, sans plaie au départ, **neuropathie impérative** → « pied de Charcot aigu jusqu'à preuve du contraire » → **urgence médicale**, orientation vers niveau 2 ou 3 fortement recommandée ; la présence d'une plaie **n'exclut pas** un Charcot aigu (différentiel : ulcère avec infection profonde, cellulite) [S10].
+- **Examen clinique** : signes de neuropathie (monofilament 10 g, diapason, réflexe achilléen) ; érythème unilatéral, tuméfaction après traumatisme mineur souvent non remarqué ; hyperthermie **> 2 °C** par rapport au pied sain ; souvent indolore ; signes subtils surtout à l'avant-pied [S10].
+- **Diagnostic différentiel** : dermo-hypodermite, traumatisme, crise de goutte, thrombose veineuse profonde, ostéomyélite, arthrose dégénérative activée [S10].
+- **Laboratoire** : CRP/paramètres inflammatoires souvent normaux ou élevés de façon non spécifique [S10].
+- **Imagerie** : radiographie conventionnelle pour confirmer et évaluer la déformation (attention : négative au stade 0) ; IRM en deuxième ligne si radiographie négative et clinique évocatrice ; scintigraphie, PET : aucun avantage supplémentaire [S10].
+- **Classifications** : Eichenholtz 3 stades — développement (I), coalescence (II), reconstruction/consolidation (III) — plus stade prodromique 0 (radiographie négative, IRM positive : microfractures, œdème médullaire, contusions osseuses) ; **Chantelau** : actif (A)/inactif (B) × sans (0)/avec (1) déformation → A0 = « stade 0 », meilleure chance de guérison sans déformation ; B0 = résultat souhaitable ; A1 = Eichenholtz I/II ; B1 = stade final stable à risque d'ulcère (Eichenholtz III) ; **Sanders-Frykberg** : zone I métatarso-/interphalangiennes, II tarso-métatarsiennes (Lisfranc), III médio-tarsiennes (Chopart), IV cheville et subtalaire, V calcanéum [S10]. → Lacune 4 antérieure (zones) levée.
+- **Traitement du pied de Charcot aigu** : urgence ; décharge complète et rapide avec immobilisation aux stades 0–1 = mesure la plus importante ; hospitalisation d'urgence avec alitement temporaire parfois nécessaire ; béquilles ; **botte plâtrée inamovible (total contact cast)**, alternative botte/orthèse rendue non amovible (niveaux 2 + 3) ; conditions : plâtriers formés, contrôles rapprochés et adaptation du dispositif à la fonte de l'œdème (risque de frottements, escarres), éducation du patient [S10].
+- **Durée** : jusqu'à résolution de l'inflammation, de l'œdème et coalescence (stade 2) ; souvent **3 à 6 mois**, parfois **jusqu'à 18 mois** (tarse, cheville) [S10].
+- **Pharmacologie** : **prophylaxie antithrombotique recommandée** pendant le dispositif inamovible ; traitement de la carence en vitamine D (fréquente) ; antirésorptifs (bisphosphonates, calcitonine, denosumab) et anabolisants (tériparatide) : données insuffisantes [S10] (concordant avec IWGDF R21–R22 [S3]).
+- **Prévention primaire** : aucune mesure spécifique hors prévention générale du pied diabétique [S10].
+- **Pied de Charcot chronique** : diagnostic évident sur déformation (« rocker-bottom », pied en tampon buvard) ; déformations multiplanaires de cheville/tarse, raccourcissement du membre ; ΔT < 2 °C, sans œdème (stade 3) ; dépistage des ulcères, **bilan vasculaire**, inspection des chaussures ; laboratoire sans rôle hors infection d'ulcère [S10].
+- **Chaussage** : zones I–II, déformation mineure → chaussures orthopédiques de série ou modifiées (lit plantaire, barre de déroulement) ; zones II–V, déformation majeure → chaussures orthopédiques sur mesure, portées en permanence dedans et dehors [S10].
+- **Chirurgie** : déformation et instabilité importantes sans possibilité de plâtre/appareillage/chaussage ; ulcères récurrents malgré décharge optimale, ulcère non cicatrisant, ostéomyélite, douleur importante ; ostéotomie de réalignement, arthrodèse ; pas de fixation interne en cas d'infection ou d'ulcère ; pas de chirurgie sans ulcération ni instabilité (niveau 3) [S10].
+- **Suivi** : risque d'ulcère et observance du chaussage ; niveau 1 au moins tous les 3 mois, niveau 3 au moins 1×/an [S10].
+- **Organisation suisse des soins** : niveaux 1 (médecine de famille), 2 et 3 (équipes spécialisées du pied diabétique) ; document porté par SSED, Médecins de famille et de l'enfance Suisse, Swiss orthopaedics, SSI, SSA, SSCV, Podologie Suisse, pharmaSuisse, SAfW, GICID, Swica [S10]. Lacune : définition exacte des niveaux 1/2/3 non explicitée dans le document lu.
+
+### 16.3 Revues suisses (Swiss Med Wkly, Rev Med Suisse)
+- Rev Med Suisse 2013 (CHUV) : processus destructeur os/articulations du diabétique résultant de la neuropathie, menaçant le membre, morbi-mortalité sévère ; diagnostic surtout sur les signes inflammatoires ; imagerie utile mais peu spécifique ; objectif : stabilité structurelle du pied et de la cheville ; preuves insuffisantes pour bisphosphonates ou chirurgie aiguë ; prévalence 0,1 à 13 % selon les études [S11].
+- Swiss Med Wkly 2013 : 71 cas ; radiographies normales non complétées par IRM → adressage retardé à 5 mois avec fractures corticales dans 12/13 cas ; médio-pied guéri sans déformation 69 % si stade 0 contre 7 % si stade 1 ; plâtre 4–6 mois → **l'IRM précoce est indispensable** devant un pied tuméfié de neuropathe à radiographie normale [S13].
+- Swiss Med Wkly 2014 : Eichenholtz (1966, 68 patients, radiographies) ignore le stade inflammatoire précoce visible seulement à l'IRM ; proposition IRM : grade 0/1 (sans/avec fracture corticale) × actif/inactif [S12].
+
+### 16.4 Médicament : thromboprophylaxie (FI suisse) [S15]
+- Clexane® (énoxaparine), FI mise à jour février 2026 : prophylaxie chirurgicale 20 mg SC 1×/j (risque modéré) ou 40 mg SC 1×/j (haut risque, chirurgie orthopédique) ; médecine : 40 mg SC 1×/j, 6 jours au minimum, jusqu'à mobilisation complète, maximum 14 jours ; insuffisance rénale sévère (ClCr < 30 ml/min) : 20 mg SC 1×/j ; surveillance si ClCr 30–80 ml/min et chez le sujet > 70 ans [S15].
+- Limite : l'immobilisation plâtrée d'un pied de Charcot n'est pas une indication nommée de la FI ; S10 ne précise ni molécule, ni dose, ni durée → le rédacteur cite la recommandation suisse [S10] et renvoie aux posologies FI sans les présenter comme protocole Charcot validé [S15].
+
+## 17. Lacunes explicites (mise à jour)
+0. État normal (rôle protecteur de la sensibilité douloureuse et proprioceptive) : seule la condition de base (neuropathie, perte de la sensibilité douloureuse et de la proprioception) est documentée [S4] ; pas de source physiologique dédiée.
+1. Recommandations nationales européennes (DDG/AWMF, NICE) non lues ; Swiss Medical Forum spécifique non trouvé (requête « revmed.ch Charcot pied diabétique » ; RMS 2013 lue au résumé, texte intégral en échec de délai).
+2. « Affection du système nerveux SAI » : aucune source clinique ; règle de codage seulement [S14].
+3. Levée (libellé OFS lu [S14]).
+4. Levée pour Sanders-Frykberg et Eichenholtz I–III [S10] ; définition détaillée du stade IV d'Eichenholtz « modifié » de [S4] non lue.
+5. Causes neurologiques non diabétiques (syringomyélie, lèpre, etc.) non sourcées → ne pas citer.
+6. Vitamine D/calcium : posologies non documentées (aucune FI lue pour la vitamine D) ; thromboprophylaxie : molécule et durée non précisées par S10.
 7. Correspondance CIM-11 non établie.
-8. S5–S9 lus au niveau du résumé PubMed seulement.
+8. S5–S9, S11–S13 lus au niveau du résumé.
+9. Épidémiologie suisse populationnelle : aucune (requête PubMed Charcot + Rev Med Suisse/Swiss Med Wkly : 3 articles pertinents, aucun populationnel).
+10. Enfant, grossesse : aucune source ; Charcot non diabétique : seulement inclus dans la cohorte Balgrist [S5].
+11. Spécificités administratives suisses (remboursement des chaussures orthopédiques par AI/AVS/LAMal, aptitude à la conduite avec plâtre jusqu'au genou, Suva/LAA) : non lues (aucune requête aboutie) ; S10 cite seulement Swica parmi les organisations porteuses.
+12. Objectifs PROFILES/SSP spécifiques à G98 non vérifiés dans `nosology/sources/profiles2017.pdf`.
+
+## Matrice de complétude
+
+| rubrique | statut | sources |
+|---|---|---|
+| 1. Question clinique et enjeu pour l'examen fédéral | ✔ pied rouge, chaud, tuméfié peu douloureux chez un neuropathe = Charcot aigu jusqu'à preuve du contraire, urgence (§0, §16.2) | S3, S10, S13 |
+| 2. Définition et périmètre CIM-10-GM (libellés OFS, inclusions, exclusions, notes BfArM) | ✔ G98 sans sous-code, 2 inclusions, double codage croix-étoile (§1, §16.1) | S1, S2, S14 |
+| 3. Classifications et stades | ✔ Eichenholtz 0–III, Chantelau A/B × 0/1, Sanders-Frykberg I–V, 4 stades évolutifs (§3, §16.2) | S4, S10, S12 |
+| 4. Épidémiologie suisse puis européenne | ✔ partielle : revue et cohorte Balgrist, RMS ; aucune donnée populationnelle suisse (lacune 9) (§4) | S3, S4, S5, S11 |
+| 5. Normal → pathologique | ✔ neuropathie → traumatisme méconnu → RANKL/NF-κB → ostéolyse → déformation ; normal physiologique non sourcé (lacune 0) (§5) | S3, S4 |
+| 6. Étiologies et facteurs de risque | ✔ diabète, alcool, malnutrition, tabès ; diabète et tabac (pronostic) (§6) | S4, S5, S14 |
+| 7. Anamnèse et symptômes | ✔ douleur absente ou modérée, traumatisme non remarqué (§7, §16.2) | S3, S10 |
+| 8. Examen clinique | ✔ ΔT > 2 °C sensible non spécifique, monofilament 10 g, diapason, réflexe achilléen (§7, §16.2) | S3, S10 |
+| 9. Drapeaux rouges et urgences | ✔ urgence médicale, décharge immédiate jusqu'au genou, orientation niveau 2–3 (§10, §16.2) | S3, S10 |
+| 10. Examens complémentaires | ✔ radiographies en charge, IRM si normales, biologie non diagnostique, TDM/SPECT (§8, §16.2-3) | S3, S4, S10, S13 |
+| 11. Diagnostic différentiel | ✔ dermo-hypodermite, goutte, TVP, ostéomyélite, arthrose activée, traumatisme (§9, §16.2) | S3, S4, S7, S10 |
+| 12. Prise en charge suisse | ✔ plâtre à contact total inamovible, 3–6 à 18 mois, thromboprophylaxie, vitamine D, pas d'antirésorptif, chirurgie (§11, §16.2, §16.4) | S3, S4, S6, S8, S10, S15 |
+| 13. Complications et pronostic | ✔ survie sans amputation 92,9 %, ulcères 72,3 %, mortalité 5 ans 29 % (§12) | S3, S5, S7, S13 |
+| 14. Suivi, prévention, dépistage | ✔ thermométrie sériée, chaussage, niveau 1 tous les 3 mois, niveau 3 1×/an (§12, §16.2) | S3, S10 |
+| 15. Situations particulières | ✔ partielle : bilatéralité, IRM contre-indiquée, insuffisance rénale (gadolinium, énoxaparine) ; enfant/grossesse : lacune 10 (§13, §16.4) | S3, S4, S15 |
+| 16. Spécificités suisses | ✔ partielle : réseau QualiCCare/SSED et niveaux de soins, libellés OFS ; AI/LAMal/aptitude à conduire : lacune 11 (§16.1-2) | S10, S14 |
+| 17. Critères formels du diagnostic | ✔ inflammation clinique + anomalies imagerie, neuropathie, exclusion infection/goutte/TVP (§14, §16.2) | S3, S10 |
+| 18. Paramètres clés chiffrés | ✔ ΔT 2 °C, 3–6 à 18 mois, 4–6 semaines après rémission, 69 % vs 7 % (§15, §16.2-3) | S3, S10, S13 |
+| 19. Sous-codes CIM-10-GM couverts | ✔ G98 sans subdivision (pas de sous-code G98.x) ; liens M14.6-*, A52.1, E1x.6 (§1, §16.1) | S1, S2, S14 |
+| 20. Points d'examen fédéral | ✔ partielle : pièges = radiographie normale au stade 0, confusion avec cellulite/TVP, Charcot diabétique codé E1x.6 et non G98 ; objectifs PROFILES non vérifiés (lacune 12) | S2, S10, S13, S14 |

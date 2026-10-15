@@ -99,3 +99,19 @@ add_if_absent('E64.8', [('E64.8', 'code CIM-10-GM : séquelles d’autres avitam
 add_if_absent('D68.4', [('D68.4', 'code CIM-10-GM : carence acquise en facteurs de la coagulation')],
               'Code D68.4',
               'Code exclu de E56.1.', 'e56-codes')
+add_if_absent('SpiGes', [('SpiGes', 'sigle officiel du relevé suisse des séjours hospitaliers stationnaires, non développé lettre à lettre dans la source')],
+              'SpiGes (relevé suisse des séjours hospitaliers stationnaires)',
+              'Relevé des séjours stationnaires, codé en CIM-10-GM 2024 en français depuis le 1er janvier 2025.', 'e56-spiges')
+add_if_absent('SL', [('S', 'Spécialités'), ('L', 'Liste')],
+              'Liste des spécialités (SL) de l’assurance de base',
+              'Liste fédérale des médicaments pris en charge par l’assurance obligatoire des soins.', 'e56-sl')
+add_if_absent('SSP', [('S', 'Situations'), ('S', 'as'), ('P', 'Starting Points')],
+              'Situations as Starting Points (situations de départ de la liste PROFILES)',
+              'Motif de consultation que le futur médecin doit savoir aborder ; ce chapitre se rattache pédagogiquement aux situations 16, 138 et 170.', 'e56-profiles')
+add_if_absent('PROFILES', [('PROFILES', 'nom du catalogue suisse d’objectifs de formation médicale, non développé lettre à lettre dans la source')],
+              'PROFILES (catalogue suisse d’objectifs de la formation médicale)',
+              'Catalogue d’objectifs d’apprentissage de la formation médicale suisse.', 'e56-profiles')
+add_if_absent('U69.11', [('U69.11', 'code supplémentaire CIM-10-GM : trouble durablement acquis')],
+              'Code U69.11!', 'Code supplémentaire de D68.4 pour un trouble durablement acquis.', 'e56-codes')
+add_if_absent('U69.12', [('U69.12', 'code supplémentaire CIM-10-GM : trouble provisoire')],
+              'Code U69.12!', 'Code supplémentaire de D68.4 pour un trouble provisoire.', 'e56-codes')

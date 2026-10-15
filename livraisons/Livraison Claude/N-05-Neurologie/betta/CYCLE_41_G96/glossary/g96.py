@@ -45,3 +45,14 @@ add_if_absent('mSv', [('m','milli'),('Sv','sievert, unité de dose efficace d’
 add_if_absent('Monro-Kellie', [('Monro-Kellie', 'noms propres des deux auteurs de la doctrine, non une abréviation')],
               'Doctrine de Monro-Kellie',
               'Principe selon lequel le cerveau, le sang et le liquide partagent un volume intracrânien fixe : la baisse de l’un est compensée par la hausse d’un autre.', 'g96-monro')
+
+# Codes CIM-10-GM 2024 cités dans le cours (libellés de l’Office fédéral de la statistique, inclusions et exclusions du BfArM).
+for _code, _lib, _def in [
+    ('G96.0', 'Écoulement de liquide céphalorachidien', 'Inclut la liquorrhée ; exclut l’écoulement après ponction lombaire (G97.0). Code qui porte l’essentiel du contenu clinique de ce cours.'),
+    ('G96.1', 'Affection des méninges, non classée ailleurs', 'Inclut les adhérences méningées cérébrales et spinales.'),
+    ('G96.8', 'Autres affections précisées du système nerveux central', 'Catégorie résiduelle ; aucune source clinique spécifique n’a été lue pour ce cours.'),
+    ('G96.9', 'Affection du système nerveux central, sans précision', 'Catégorie résiduelle ; aucune source clinique spécifique n’a été lue pour ce cours.'),
+    ('G97.0', 'Écoulement de liquide céphalorachidien après ponction lombaire', 'Code de la complication d’une ponction lombaire ; il est exclu de G96.0.'),
+    ('G97.1', 'Autre réaction à une ponction spinale et lombaire', 'Code voisin de G97.0 ; la céphalée post-ponction durale relève de G97.0 ou G97.1 et non de G96.0.'),
+]:
+    add_if_absent(_code, [(_code, 'code de la CIM-10-GM 2024 : ' + _lib)], _lib, _def)

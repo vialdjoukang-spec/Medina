@@ -52,3 +52,19 @@ a('AIPS', [('AIPS','sigle de la base suisse des informations professionnelles ; 
   'Source des informations professionnelles suisses du paracétamol et de l’ibuprofène, lues le 15 octobre 2026.', 'g97-paracetamol')
 a('Ibuprofen-Mepha', [('Ibuprofen-Mepha','nom commercial d’une spécialité suisse, non une abréviation')], 'Ibuprofen-Mepha Teva®, spécialité suisse',
   'Comprimés pelliculés dont l’information professionnelle suisse a été lue pour l’ibuprofène.', 'g97-ibuprofene')
+
+a('EPiMAP', [('EPiMAP','nom d’une étude européenne sur l’échec du blood patch épidural après brèche durale obstétricale ; son développement lettre à lettre n’est pas établi dans les sources lues')], 'EPiMAP, étude européenne de cohorte',
+  'Cohorte prospective multicentrique de 643 parturientes traitées par blood patch, qui identifie les facteurs associés à l’échec.', 'g97-bpe-echec')
+for _code, _full, _w in (
+    ('G97.0', 'Écoulement de liquide céphalorachidien après rachicentèse', 'g97-cim'),
+    ('G97.1', 'Autre réaction secondaire à une rachicentèse', 'g97-cim'),
+    ('G97.2', 'Hypotension intracrânienne suite à un pontage ventriculaire', 'g97-cim'),
+    ('G97.80', 'Fistule de liquide céphalorachidien postopératoire', 'g97-cim'),
+    ('G97.81', 'Mutisme (cérébelleux) postopératoire', 'g97-cim'),
+    ('G97.82', 'Hémorragie rachidienne épidurale postopératoire', 'g97-cim'),
+    ('G97.83', 'Hémorragie rachidienne sous-durale postopératoire', 'g97-cim'),
+    ('G97.84', 'Hémorragie rachidienne sous-arachnoïdienne postopératoire', 'g97-cim'),
+    ('G97.88', 'Autres maladies du système nerveux après des actes médicaux', 'g97-cim'),
+    ('G97.9', 'Affection du système nerveux après un acte à visée diagnostique et thérapeutique, sans précision', 'g97-cim')):
+    a(_code, [('G97', 'catégorie G97 de la CIM-10-GM 2024'), (_code[3:], 'subdivision de la catégorie')], _full,
+      'Code de la CIM-10-GM 2024, libellé français de l’Office fédéral de la statistique.', _w)

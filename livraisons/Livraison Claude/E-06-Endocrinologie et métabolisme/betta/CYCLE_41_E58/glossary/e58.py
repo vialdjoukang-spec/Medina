@@ -24,3 +24,11 @@ if 'Calcimagon-D3' not in G:
     a('Calcimagon-D3', [('Calcimagon-D3', 'nom commercial suisse d’une association de calcium et de vitamine D3, non développable lettre à lettre')], 'Calcimagon-D3®', '<p>Préparation suisse (Swissmedic n° 53929) : 500 mg de calcium élément et 400 UI de vitamine D3 par comprimé, avec les formes Forte (1000 mg et 800 UI) et 500/800. Voir la monographie dans l’onglet Pharmacologie.</p>', 'e58-d-calcimagon')
 if 'menuCH' not in G:
     a('menuCH', [('menu', 'enquête alimentaire (menu)'), ('CH', 'Confoederatio Helvetica (Suisse)')], 'Enquête nationale suisse sur l’alimentation', '<p>Enquête nationale menuCH (2014-2015, 2086 adultes de 18 à 75 ans) ; les aliments fermentés y fournissent plus de 30 % du calcium quotidien.</p>', 'e58-menuch')
+if 'SVGO' not in G:
+    a('SVGO', [('S', 'Schweizerische'), ('V', 'Vereinigung gegen'), ('G', 'die Osteoporose'), ('O', '(association suisse contre l’ostéoporose)')], 'Association suisse contre l’ostéoporose', '<p>Association qui a publié en 2020 les recommandations suisses de traitement de l’ostéoporose selon le risque de fracture (Swiss Medical Weekly 150:w20352) ; elle conditionne le calcium d’appoint à la nécessité.</p>', 'e58-svgo')
+if 'SSP' not in G:
+    a('SSP', [('S', 'Situation'), ('S', 'de départ'), ('P', 'PROFILES')], 'Situation de départ (PROFILES)', '<p>Entrée clinique du catalogue PROFILES pour l’examen fédéral : un symptôme ou une présentation à partir duquel l’étudiant raisonne. Les situations 16, 138 et 170 concernent la malnutrition et les carences.</p>', 'e58-profiles')
+if 'PROFILES' not in G:
+    a('PROFILES', [('PR', 'Principal'), ('O', 'Objectives and'), ('F', 'Framework for'), ('I', 'Integrated'), ('L', 'Learning and'), ('E', 'Education in'), ('S', 'Switzerland')], 'Objectifs principaux et cadre pour l’enseignement intégré en Suisse', '<p>Catalogue d’objectifs de la commission des facultés de médecine suisses, base de l’examen fédéral.</p>', 'e58-profiles')
+if 'DXA' not in G:
+    a('DXA', [('D', 'Dual-energy'), ('X', 'X-ray'), ('A', 'Absorptiometry (absorptiométrie)')], 'Absorptiométrie biphotonique à rayons X', '<p>Examen qui mesure la densité minérale osseuse (ostéodensitométrie). La recommandation SVGO 2020 la répète après 5 à 10 ans chez la personne à faible risque fracturaire, ou plus tôt si le risque clinique augmente.</p>', 'e58-svgo')

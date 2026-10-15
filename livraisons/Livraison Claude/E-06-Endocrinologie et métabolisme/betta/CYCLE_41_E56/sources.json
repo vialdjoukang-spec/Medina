@@ -5,7 +5,7 @@
  "cycle": 41,
  "agent": "C41-A2-ENDO (Opus 5.5)",
  "date": "2026-10-15",
- "remarque": "Recherche web générale indisponible (quota WebSearch épuisé) : accès par PubMed/PMC, PDF ESPEN 2022 et ESPEN-ESPGHAN-ECFS 2016, pages BfArM et DGE (WebFetch), PDF SMOB 2023 et tools/swissmedic_fi.py (AIPS via AmiKo). GeneReviews AVED inaccessible. Audit différé — revue IA, distincte d'une validation médicale humaine.",
+ "remarque": "Recherche web générale indisponible (quota WebSearch épuisé) : accès par PubMed/PMC, PDF ESPEN 2022 et ESPEN-ESPGHAN-ECFS 2016, pages BfArM et DGE (WebFetch), PDF SMOB 2023 et tools/swissmedic_fi.py (AIPS via AmiKo). GeneReviews AVED inaccessible. Audit différé — revue IA, distincte d'une validation médicale humaine. Complément 15.10.2026 (même agent) : WebSearch/WebFetch de nouveau disponibles ; ClaML OFS relu (S28), PROFILES (S29), statut SL/catégorie de remise (S30), DGE vitamine E revérifiée. IP Konakion MM 10 mg/ml toujours non distincte dans AmiKo (même n° 48112) ; ch.oddb.org bloqué (anti-robot).",
  "sources": [
   {
    "id": "S1",
@@ -16,7 +16,7 @@
    "date_consultation": "2026-10-15",
    "section_page": "bloc E50-E64, catégorie E56",
    "population": "classification",
-   "limites": "PDF OFS non relu ; inclusions/exclusions prises dans S10"
+   "limites": "Libellés, inclusions et exclusions relus dans le ClaML OFS (S28) le 15.10.2026"
   },
   {
    "id": "S2",
@@ -91,9 +91,9 @@
    "editeur": "Deutsche Gesellschaft für Ernährung (DGE/ÖGE)",
    "version_annee": "dérivation 2024 ; 3e éd. 2025, erratum mai 2026",
    "date_consultation": "2026-10-15",
-   "section_page": "tableau des valeurs estimées",
+   "section_page": "tableau « Schätzwerte für eine angemessene Vitamin E-Zufuhr » (19–65 ans : 8 mg RRR-α-tocophérol/j, Stand Ableitung 2024) ; phrase « Ein Vitamin-E-Mangel ist sehr selten »",
    "population": "population générale",
-   "limites": "lecture par extraction automatisée (WebFetch) ; SGE suisse non mentionnée ; valeur 8 mg/j à revérifier"
+   "limites": "lecture par extraction automatisée (WebFetch) ; SGE suisse non mentionnée ; valeur 8 mg/j à revérifier ; valeur 8 mg/j revérifiée par second WebFetch le 15.10.2026"
   },
   {
    "id": "S9",
@@ -303,6 +303,42 @@
    "section_page": "résumé PubMed",
    "population": "nouveau-nés",
    "limites": "résumé seul ; concerne P53"
+  },
+  {
+   "id": "S28",
+   "url": "nosology/sources/ofs-cim10gm2024-fr-claml.zip — CIM10GM2024_ClaML_S_FR_20241031.xml (https://www.bfs.admin.ch/bfs/fr/home/statistiques/sante/nomenclatures/medkk/instruments-codage-medical.html)",
+   "titre": "CIM-10-GM 2024, index systématique, version française ClaML du 31.10.2024",
+   "editeur": "Office fédéral de la statistique (OFS), Département fédéral de l'intérieur",
+   "version_annee": "2024 (en vigueur en Suisse au 01.01.2025)",
+   "date_consultation": "2026-10-15",
+   "section_page": "Classes E50-E64, E50, E51, E52, E53, E53.8, E54, E55, E56, E56.0, E56.1, E56.8, E56.9, E64.8, D68.4, P53 (rubriques preferred/inclusion/exclusion/coding-hint)",
+   "population": "classification",
+   "limites": "Aucune note d'inclusion sous E56.8 ni E56.9 dans le texte officiel",
+   "niveau": "texte_integral"
+  },
+  {
+   "id": "S29",
+   "url": "nosology/ssp_profiles2017.json ; nosology/sources/profiles2017.pdf (https://www.siwf.ch/files/pdf24/profiles_2017-broschuere.pdf)",
+   "titre": "PROFILES — Principal Objectives and Framework for Integrated Learning and Education in Switzerland, liste des Situations as Starting Points (SSP)",
+   "editeur": "Joint Commission of the Swiss Medical Schools / SIWF-ISFM",
+   "version_annee": "2017",
+   "date_consultation": "2026-10-15",
+   "section_page": "SSP 16 « weight loss, malnutrition, loss of appetite » ; SSP 138 « cachexia and malnutrition » ; SSP 170 « nutritional deficiencies » (rattachement E56 dans nosology/fragments/S05.json, gold_star)",
+   "population": "étudiants en médecine, examen fédéral",
+   "limites": "Texte du PDF non extractible (pdftotext vide) : libellés lus dans la table JSON du dépôt dérivée du PDF ; rattachement pédagogique, non officiel (official_icd_crosswalk=false)",
+   "niveau": "section"
+  },
+  {
+   "id": "S30",
+   "url": "https://amiko.oddb.org/name?lang=fr&name=konakion ; …name=ephynal ; …name=burgerstein (champ packinfos)",
+   "titre": "AmiKo / oddb — emballages, catégorie de remise et statut Spécialités (SL) de Konakion MM, Ephynal, Burgerstein Vitamine E",
+   "editeur": "ywesee GmbH (republication des données Swissmedic et de la Liste des spécialités de l'OFSP)",
+   "version_annee": "données consultées 2026",
+   "date_consultation": "2026-10-15",
+   "section_page": "packinfos : Konakion MM 5 ampoules [B, SL, SB 10 %], EFP 5.26, PP 14.95 ; Konakion MM paediatric [B, SL, SB 10 %], PP 26.85 ; Ephynal 100 capsules [D] ; Burgerstein Vitamine E 100 UI et 400 UI [D]",
+   "population": "Suisse, médicaments",
+   "limites": "Source secondaire ; site SL de l'OFSP (sl.bag.admin.ch) non lisible par outil (application JavaScript). À confirmer sur la Liste des spécialités officielle",
+   "niveau": "section"
   }
  ]
 }
