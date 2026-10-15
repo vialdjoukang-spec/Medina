@@ -57,9 +57,12 @@ médicale, pas de validation clinique ni de déploiement de ces correctifs annon
 - Compilation Python et vérification des espaces effectuées.
 - Comparaison avec main : aucun changement de `chapters/`, `glossary/`,
   `chapters.json`, intégrité nosologique, registres médicaux ou attributions.
-- Suite complète tentée :584 tests,2 échecs et4 erreurs, liés aux fichiers
-  non matérialisés dans le clone partiel (inventaires/archives/aperçu). Ce n'est
-  pas une réussite de la suite complète ; exiger son contrôle sur clone complet.
+- Suite complète initialement tentée :584 tests,2 échecs et4 erreurs. Plusieurs
+  concernent les fichiers non matérialisés du clone partiel ; l'erreur d'aperçu
+  n'était pas seulement environnementale : le chargeur refusait le wrapper
+  `exec(compile(...))` généré par `create_overlay`. Claude a confirmé cette même
+  erreur comme seul échec de sa suite sur clone complet. Aucun succès global
+  ne peut être déduit de ces premières exécutions.
 
 ## Réserves et suite
 
@@ -70,15 +73,28 @@ N04. Correction : ce fichier retrouve exactement son SHA-256 historique
 `3706186994503073a18d67ef52f11f63a4e05f7917813cb72e0523ef6a136ee6` ; l'extension
 est déplacée dans `tools/novo_cycle_gate.py`. Aucune preuve auteur ni date n'est
 réécrite. Deux tests supplémentaires vérifient cette préservation et la séparation
-des jeux de Prompt. La CI de la version corrigée doit être vérifiée séparément.
+des jeux de Prompt. La version distante corrigée
+`966fc8c17354f6f651542654ee23980e86a877bc` a réussi la garde et le scanner :
+[garde](https://github.com/vialdjoukang-spec/Medina/actions/runs/38744350662),
+[inventaire](https://github.com/vialdjoukang-spec/Medina/actions/runs/38744350640).
+Ces résultats concernent ce SHA, pas automatiquement la version suivante.
+
+Le [signalement Claude](https://github.com/vialdjoukang-spec/Medina/pull/100#issuecomment-6193528466)
+évaluait la précédente tête `b4f2d641`. Il confirme que le chargeur supprime le
+timeout de publication. Son second défaut reproductible concerne l'aperçu :
+la reprise prioritaire des glossaires internes doit passer par un manifeste
+JSON de chemins locaux et d'empreintes, et non par un wrapper Python dynamique.
+Le correctif et sa régression sont séparés dans une petite proposition technique,
+afin que Claude puisse les vérifier sans attendre tout le raccord Novo.
 
 Chromium est absent ; son téléchargement a retourné des archives tronquées.
-Aucun contrôle navigateur ordinateur/mobile n'a été exécuté ici. La garde Git
-globale et le scanner exhaustif ont été lancés, mais leur résultat final n'est
-pas acquis à cette coupure : ne pas les déclarer réussis. Le connecteur a permis
-le relevé paginé des têtes et PR consigné séparément.
+Aucun contrôle navigateur ordinateur/mobile n'a été exécuté ici. Les premières
+commandes locales de garde et d'inventaire n'ont pas fourni de résultat final
+exploitable à la coupure initiale ; la CI distante de `966fc8c` a ensuite réussi
+les deux contrôles ci-dessus. Le connecteur a permis le relevé paginé des têtes
+et PR consigné séparément.
 
-La CI distante et le déploiement de la branche réparée restent à vérifier.
+La CI de toute nouvelle tête et son éventuel déploiement restent à vérifier.
 Ne pas annoncer de mise en production ni forcer une fusion sur cette base.
 Les écarts du JSON Novo Betta à la promesse «4×3 partout» sont laissés à Claude :
 dix cycles ont cinq agents, des fragments répétés en fin de plan, dernier lot125

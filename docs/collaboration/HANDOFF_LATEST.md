@@ -3,8 +3,9 @@
 [Correctifs, provenance, tests et réserves](receipts/MEDINA_SOUTIEN_TECHNIQUE_2026-10-15.md).
 Reprise dynamique, veille paginée, inventaire explicite, deux plans Novo distincts,
 préflight transactionnel et chargeur sans récursion préparés en branche Codex.
-357 tests ciblés et reconstruction globale/23 fragments exécutés ; navigateur,
-suite complète sur clone complet et CI distante restent à vérifier. Aucun cours,
+357 tests ciblés et reconstruction globale/23 fragments exécutés ; garde et scanner
+distants réussis sur `966fc8c`. Le défaut d'aperçu signalé par Claude est traité
+séparément ; navigateur, suite complète et CI de la prochaine tête restent à vérifier. Aucun cours,
 registre actif ni attribution modifié ; ne pas annoncer ces correctifs déployés.
 Les audits médicaux indépendants restent suspendus et le Prompt de vérité obligatoire.
 Signaler les blocages reproductibles dans la PR courante avec

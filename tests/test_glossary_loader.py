@@ -2,6 +2,7 @@
 import builtins
 import hashlib
 import importlib.util
+import json
 from pathlib import Path
 import sys
 import tempfile
@@ -40,6 +41,13 @@ class TestGlossaryLoader(unittest.TestCase):
             # Sources synthétiques exclusivement dans le répertoire de fixture.
             (directory / name).write_text(source, encoding='utf-8')
         return directory
+
+    def priority(self, directory, names):
+        manifest = {'schema_version': 1, 'kind': 'internal_glossary_overlay', 'files': [
+            {'path': name, 'sha256': hashlib.sha256((directory / name).read_bytes()).hexdigest()}
+            for name in names]}
+        (directory / m.OVERLAY_PRIORITY_FILE).write_text(json.dumps(manifest), encoding='utf-8')
+        return manifest
 
     def test_ordinary_order_and_final_fusion_are_preserved(self):
         directory = self.directory({
@@ -157,6 +165,76 @@ ac('SHARED_NEW', 'shared addition')
             m.load_glossary(self.directory({'item.py': 'G = []\n'}))
         with self.assertRaisesRegex(m.GlossaryLoadError, 'syntaxe invalide'):
             m.load_glossary(self.directory({'item.py': 'G = {\n'}))
+
+    def test_verified_overlay_replays_shared_source_after_late_overwrite(self):
+        directory = self.directory({
+            'cardio_1.py': BASE,
+            'a41.py': "from cardio_1 import a, G\na('SHARED', 'internal draft')\n",
+            'zz_fusion.py': "from cardio_1 import a, G\na('SHARED', 'canonical late value')\n",
+            'zz_fusion_internal_work.py': 'G = {}\n',
+        })
+        self.assertEqual(m.load_glossary(directory)['SHARED'], {'full': 'canonical late value'})
+        self.priority(directory, ['a41.py'])
+        self.assertEqual(m.load_glossary(directory)['SHARED'], {'full': 'internal draft'})
+
+    def test_overlay_replay_order_is_explicit_not_filename_order(self):
+        directory = self.directory({'a41.py': "G = {'SHARED': {'full': 'A41 internal'}}\n",
+                                    'b24.py': "G = {'SHARED': {'full': 'B24 internal'}}\n"})
+        self.priority(directory, ['b24.py', 'a41.py'])
+        self.assertEqual(m.load_glossary(directory)['SHARED'], {'full': 'A41 internal'})
+
+    def test_overlay_checksum_failure_precedes_all_module_execution(self):
+        directory = self.directory({'a41.py': "import builtins\nbuiltins._medina_test_count += 1\nG = {}\n"})
+        manifest = self.priority(directory, ['a41.py'])
+        manifest['files'][0]['sha256'] = '0' * 64
+        (directory / m.OVERLAY_PRIORITY_FILE).write_text(json.dumps(manifest))
+        with patch.object(builtins, '_medina_test_count', 0, create=True):
+            with self.assertRaisesRegex(m.GlossaryLoadError, 'Empreinte'):
+                m.load_glossary(directory)
+            self.assertEqual(builtins._medina_test_count, 0)
+
+    def test_overlay_manifest_rejects_paths_duplicates_and_unknown_schema(self):
+        directory = self.directory({'a41.py': 'G = {}\n'})
+        original = self.priority(directory, ['a41.py'])
+        cases = [
+            {**original, 'schema_version': True},
+            {**original, 'extra': 'not allowed'},
+            {**original, 'files': []},
+            {**original, 'files': original['files'] * 2},
+            {**original, 'files': [{**original['files'][0], 'path': '../a41.py'}]},
+            {**original, 'files': [{**original['files'][0], 'path': 'cardio_1.py'}]},
+            {**original, 'files': [{**original['files'][0], 'path': 'b24.py'}]},
+        ]
+        for manifest in cases:
+            with self.subTest(manifest=manifest):
+                (directory / m.OVERLAY_PRIORITY_FILE).write_text(json.dumps(manifest))
+                with self.assertRaises(m.GlossaryLoadError):
+                    m.load_glossary(directory)
+
+    def test_overlay_rejects_symlink_manifest_and_symlink_priority_source(self):
+        directory = self.directory({'a41.py': 'G = {}\n'})
+        self.priority(directory, ['a41.py'])
+        sidecar = directory / m.OVERLAY_PRIORITY_FILE
+        saved = directory / 'saved-manifest.json'
+        sidecar.rename(saved)
+        sidecar.symlink_to(saved)
+        with self.assertRaisesRegex(m.GlossaryLoadError, 'fichier local réel'):
+            m.load_glossary(directory)
+        sidecar.unlink()
+        saved.rename(sidecar)
+        source = directory / 'a41.py'
+        real_source = directory / 'real-source.data'
+        source.rename(real_source)
+        source.symlink_to(real_source)
+        with self.assertRaisesRegex(m.GlossaryLoadError, 'non locale'):
+            m.load_glossary(directory)
+
+    def test_internal_work_filename_never_authorizes_arbitrary_exec(self):
+        directory = self.directory({'a41.py': 'G = {}\n',
+                                    'zz_fusion_internal_work.py': "G = {}\nexec(compile('G = {}', 'arbitrary', 'exec'))\n"})
+        self.priority(directory, ['a41.py'])
+        with self.assertRaisesRegex(m.GlossaryLoadError, 'non reconnue'):
+            m.load_glossary(directory)
 
     def test_repository_glossary_sources_are_never_rewritten(self):
         directory = ROOT / 'glossary'

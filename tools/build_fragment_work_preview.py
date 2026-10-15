@@ -149,19 +149,16 @@ def create_overlay(root, verified_files, manifest, overlay):
         if item.name != "__pycache__" and not target.exists():
             target.symlink_to(item, target_is_directory=item.is_dir())
     # Historical modules share cardio_1.G and can overwrite a draft definition
-    # long after a41/b24 were loaded. Replay the verified internal sources last;
-    # plain imports would return already-mutated dictionaries from sys.modules.
+    # long after a41/b24 were loaded. Request replay of these exact verified bytes
+    # through the central loader, without a generated exec(compile(...)) wrapper.
     final_name = max(item.name for item in (overlay / "glossary").glob("*.py"))[:-3] + "_internal_work.py"
-    glossary_sources = [(f"glossary/{code.lower()}.py", verified_files[f"glossary/{code.lower()}.py"].decode("utf-8"))
-                        for code in manifest["chapter_codes"]]
-    replay = ("# Generated only in the consultation overlay.\n"
-              "_internal_glossary = {}\n"
-              "for _path, _source in " + repr(glossary_sources) + ":\n"
-              "    _scope = {'__name__': __name__, '__file__': _path, '__package__': None}\n"
-              "    exec(compile(_source, _path, 'exec'), _scope)\n"
-              "    _internal_glossary.update(_scope.get('G', {}))\n"
-              "G = _internal_glossary\n")
-    (overlay / "glossary" / final_name).write_text(replay, encoding="utf-8")
+    # Keep a data-only marker for callers inventorying the consultation's final
+    # glossary module. Its name does not grant execution or override privileges.
+    (overlay / "glossary" / final_name).write_text("# Consultation overlay marker; priority is manifest-verified.\nG = {}\n", encoding="utf-8")
+    priority = {"schema_version": 1, "kind": "internal_glossary_overlay", "files": [
+        {"path": f"{code.lower()}.py", "sha256": hashlib.sha256(verified_files[f"glossary/{code.lower()}.py"]).hexdigest()}
+        for code in manifest["chapter_codes"]]}
+    (overlay / "glossary" / ".medina-glossary-priority.json").write_text(json_text(priority) + "\n", encoding="utf-8")
     chapters = json.loads((root / "chapters.json").read_text(encoding="utf-8"))
     work = {chapter["code"]: chapter for chapter in manifest["chapters"]}
     existing = {chapter["code"] for chapter in chapters}

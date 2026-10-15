@@ -9,17 +9,25 @@ Seules les boucles de découverte dont l'AST correspond exactement aux schémas
 historiques ci-dessous sont remplacées EN MÉMOIRE par un jeu figé de clés. Les
 définitions, appels d'enregistrement et fichiers d'origine restent intacts. Un
 schéma dynamique inconnu ou un cycle ordinaire provoque une erreur explicite.
+Une consultation peut demander une priorité finale via un manifeste JSON local
+dont chaque source de chapitre est contrôlée par SHA-256 avant rejeu explicite.
 Ce chargeur n'évalue ni l'exactitude clinique ni la complétude des définitions.
 """
 import ast
 import builtins
+import hashlib
+import json
 from pathlib import Path
+import re
 import sys
 import types
 
 
 class GlossaryLoadError(RuntimeError):
     pass
+
+
+OVERLAY_PRIORITY_FILE = '.medina-glossary-priority.json'
 
 
 _UPDATE = "_existing.update(getattr(importlib.import_module(_path.stem), 'G', {}))"
@@ -92,10 +100,11 @@ def _has_dynamic_call(node):
                for child in ast.walk(node))
 
 
-def _prepare(path):
+def _prepare(path, source=None):
     try:
-        tree = ast.parse(path.read_text(encoding='utf-8'), filename=str(path))
-    except (OSError, SyntaxError) as exc:
+        text = path.read_text(encoding='utf-8') if source is None else source.decode('utf-8')
+        tree = ast.parse(text, filename=str(path))
+    except (OSError, SyntaxError, UnicodeError) as exc:
         raise GlossaryLoadError(f'Glossaire illisible ou syntaxe invalide : {path.name}') from exc
     conditional = None
     for index, node in enumerate(tree.body):
@@ -118,12 +127,55 @@ def _prepare(path):
     return compile(ast.fix_missing_locations(tree), str(path), 'exec'), conditional
 
 
+def _overlay_priorities(directory, sources):
+    """Replay explicite d'octets vérifiés, jamais une permission liée à un nom .py.
+
+    create_overlay produit ce manifeste JSON après validation du paquet. Le
+    chargeur en vérifie à nouveau les empreintes sur les octets qu'il compile.
+    Seuls des glossaires de chapitre locaux et non symlinkés sont admissibles.
+    Leur code passe le même contrôle AST strict que tous les autres glossaires.
+    """
+    path = directory / OVERLAY_PRIORITY_FILE
+    if not path.exists() and not path.is_symlink():
+        return []
+    if path.is_symlink() or not path.is_file():
+        raise GlossaryLoadError('Le manifeste de priorité doit être un fichier local réel')
+    try:
+        manifest = json.loads(path.read_text(encoding='utf-8'))
+    except (OSError, ValueError) as exc:
+        raise GlossaryLoadError('Manifeste de priorité de glossaire illisible') from exc
+    if (not isinstance(manifest, dict) or set(manifest) != {'schema_version', 'kind', 'files'} or
+            type(manifest['schema_version']) is not int or manifest['schema_version'] != 1 or
+            manifest['kind'] != 'internal_glossary_overlay' or
+            not isinstance(manifest['files'], list) or not manifest['files']):
+        raise GlossaryLoadError('Schéma de priorité de glossaire inconnu')
+    names = []
+    for row in manifest['files']:
+        if (not isinstance(row, dict) or set(row) != {'path', 'sha256'} or
+                not isinstance(row['path'], str) or not re.fullmatch(r'[a-z][0-9]{2}\.py', row['path']) or
+                not isinstance(row['sha256'], str) or not re.fullmatch(r'[0-9a-f]{64}', row['sha256'])):
+            raise GlossaryLoadError('Fichier de priorité de glossaire invalide')
+        stem = Path(row['path']).stem
+        source_path = directory / row['path']
+        if stem in names or stem not in sources or source_path.is_symlink() or not source_path.is_file():
+            raise GlossaryLoadError('Priorité de glossaire dupliquée, absente ou non locale')
+        if hashlib.sha256(sources[stem]).hexdigest() != row['sha256']:
+            raise GlossaryLoadError(f'Empreinte du glossaire prioritaire incorrecte : {row["path"]}')
+        names.append(stem)
+    return names
+
+
 def load_glossary(directory):
     directory = Path(directory).resolve()
     paths = sorted(path for path in directory.glob('*.py') if path.stem != '__init__')
     if not paths:
         raise GlossaryLoadError(f'Aucun glossaire Python dans {directory}')
-    prepared = {path.stem: _prepare(path) for path in paths}
+    try:
+        sources = {path.stem: path.read_bytes() for path in paths}
+    except OSError as exc:
+        raise GlossaryLoadError('Lecture des octets des glossaires impossible') from exc
+    priorities = _overlay_priorities(directory, sources)
+    prepared = {path.stem: _prepare(path, sources[path.stem]) for path in paths}
     files = {path.stem: path for path in paths}
     modules, loading, result = {}, [], {}
     phase = 'ordinary'
@@ -133,10 +185,10 @@ def load_glossary(directory):
             return load(name)
         return builtins.__import__(name, globals, locals, fromlist, level)
 
-    def load(name):
+    def load(name, replay=False):
         if name in loading:
             raise GlossaryLoadError('Cycle d’import de glossaires : ' + ' → '.join(loading + [name]))
-        if name in modules:
+        if name in modules and not replay:
             return modules[name]
         code, conditional = prepared[name]
         if conditional and phase == 'ordinary':
@@ -175,6 +227,12 @@ def load_glossary(directory):
                 module = load(name)
                 for key, value in module.G.items():
                     result.setdefault(key, value)
+        # Une consultation interne possède une priorité explicite attestée par
+        # son manifeste. Rejouer ces sources (imports locaux toujours cachés)
+        # conserve l'ancien contrat A41/B24 sans wrapper exec(compile(...)).
+        phase = 'replay'
+        for name in priorities:
+            result.update(load(name, replay=True).G)
         return result
     finally:
         sys.path[:] = previous_path
