@@ -1,0 +1,396 @@
+{
+ "mission": "ALPHA1-CLAUDE-I61-LANG",
+ "code": "I61",
+ "type_audit": "linguistique",
+ "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+ "base_sha_note": "Identique à HEAD du worktree au démarrage ; le manifeste mentionne aussi source_snapshot_sha bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996 ; les empreintes des 7 fichiers sont identiques aux empreintes figées du manifeste.",
+ "generation": 1,
+ "branche": "claude/alpha1/i61-lang-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-I61-LANG-g1",
+ "conversation": "alpha1-claude-i61-lang",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-15T18:20:00Z",
+ "date_fin": "2026-10-15T18:40:19Z",
+ "lecture": {
+  "fichiers": [
+   {
+    "chemin": "chapters/I61/I61_a.html",
+    "sha256": "821f4d4b9ebc96b28613638b471f9b2d425610ab4638a4d06efccc3af4331c83",
+    "conforme_manifeste": true,
+    "octets": 41154
+   },
+   {
+    "chemin": "chapters/I61/I61_b.html",
+    "sha256": "e775a18fa119a2e43f92189094586c1730ec1f286da9a133267dada6ac290f8c",
+    "conforme_manifeste": true,
+    "octets": 57345
+   },
+   {
+    "chemin": "chapters/I61/I61_c.html",
+    "sha256": "e9d1f44823a91de585ec4f607954a310c2b3870e54dfa0e34c8167e7bbf0db4e",
+    "conforme_manifeste": true,
+    "octets": 48839
+   },
+   {
+    "chemin": "chapters/I61/I61_d.html",
+    "sha256": "973cce34a40b6ef6c62b7e295e9b4e40e0cafb48e8b5b2d1526c47e1b2cc3b19",
+    "conforme_manifeste": true,
+    "octets": 20539
+   },
+   {
+    "chemin": "chapters/I61/I61_pop1.html",
+    "sha256": "4523ffca24a40006b90e3932814cb0a42cbfd163166587ed59d6a4858e83792f",
+    "conforme_manifeste": true,
+    "octets": 60847
+   },
+   {
+    "chemin": "chapters/I61/I61_pop2.html",
+    "sha256": "6e08f9dd51216feb7c277c0b83178ef09244f5418cc7aecc8de08ff53a27442f",
+    "conforme_manifeste": true,
+    "octets": 77107
+   },
+   {
+    "chemin": "glossary/i61.py",
+    "sha256": "66c11a9eb760c5e336493f080ef5ec35631e70ed74426062cade9c6cd8401d19",
+    "conforme_manifeste": true,
+    "octets": 8557
+   }
+  ],
+  "empreintes_conformes": true,
+  "lecture_integrale": "Les six fichiers HTML et le glossaire ont été lus intégralement (texte, tableaux, légendes, quiz, fenêtres, encadrés Pareto, critères div.alert, paramètres div.key, glossaire). Le texte des figures SVG a été relu à travers sa transcription, non dans un navigateur."
+ },
+ "premiere_verification": {
+  "nature": "Recalcul SHA-256 des 7 fichiers sources et comparaison aux empreintes du manifeste .medina/missions/ALPHA1-CLAUDE-I61-LANG.json",
+  "resultat": "7 conformes sur 7"
+ },
+ "synthese": {
+  "nombre_propositions": 188,
+  "renvois_medicaux": 18
+ },
+ "synthese_par_fichier": {
+  "chapters/I61/I61_a.html": {
+   "propositions": 45,
+   "renvois_medicaux": 5
+  },
+  "chapters/I61/I61_b.html": {
+   "propositions": 56,
+   "renvois_medicaux": 2
+  },
+  "chapters/I61/I61_c.html": {
+   "propositions": 22,
+   "renvois_medicaux": 3
+  },
+  "chapters/I61/I61_d.html": {
+   "propositions": 12,
+   "renvois_medicaux": 0
+  },
+  "chapters/I61/I61_pop1.html": {
+   "propositions": 25,
+   "renvois_medicaux": 5
+  },
+  "chapters/I61/I61_pop2.html": {
+   "propositions": 26,
+   "renvois_medicaux": 3
+  },
+  "glossary/i61.py": {
+   "propositions": 2,
+   "renvois_medicaux": 0
+  }
+ },
+ "synthese_par_categorie": {
+  "typographie": 2,
+  "lourdeur": 7,
+  "syntaxe": 15,
+  "style_annonce": 5,
+  "intitulé": 1,
+  "ponctuation_registre": 3,
+  "registre": 6,
+  "ambiguïté": 27,
+  "ponctuation": 4,
+  "répétition": 14,
+  "renvoi_medical": 18,
+  "anglicisme": 7,
+  "grammaire": 22,
+  "précision_lexicale": 23,
+  "phrase_nominale": 40,
+  "terminologie": 6,
+  "cohérence": 2,
+  "métaphore": 2,
+  "unités": 1,
+  "orthographe": 1
+ },
+ "verifications_mecaniques": {
+  "unicite_ancien": "Pour chacune des 206 entrées de propositions.json, la chaîne « ancien » apparaît exactement une fois dans le fichier source (comptage par script Python str.count == 1), balises HTML comprises quand l'extrait en contient.",
+  "chevauchements_entre_propositions": 0,
+  "application_simulee": "Application simulée hors dépôt (copies en mémoire) : le nombre et la nature des balises HTML sont identiques avant et après pour les six fichiers HTML ; le glossaire Python compile après application.",
+  "audit_abreviations_build_medina": "build_medina.audit() exécuté en lecture seule sur les six fichiers HTML : {} (aucune abréviation non couverte).",
+  "chiffres": "Contrôle automatique : les nombres de « ancien » et de « nouveau » sont identiques pour toutes les propositions, sans exception (une proposition ajoutant la mention « intervalle de confiance » ne change aucun nombre).",
+  "aucune_ecriture_hors_dossier": true
+ },
+ "constats": [
+  {
+   "id": "GLOB-01",
+   "categorie": "typographie",
+   "priorite": "haute",
+   "titre": "Espaces insécables absentes",
+   "constat": "Aucune espace insécable (U+00A0 ou U+202F) dans les six fichiers de leçon. Les espaces avant « ; : ? ! », à l'intérieur de « » , entre un nombre et son unité (5 mg, 38 °C, 30 %) et dans les groupes de milliers (100 000, 11 349) sont des espaces ordinaires : les coupures de ligne peuvent séparer le signe de son mot ou le nombre de son unité.",
+   "traitement": "Opération mécanique globale, non appliquée ici (volume ≈ 1 500 occurrences, non « locale »). Les champs « nouveau » de propositions.json conservent volontairement les espaces ordinaires pour rester comparables à l'ancien. Recette proposée à l'intégrateur : appliquer sur le texte hors balises, attributs, identifiants et URL : (1) ' ;', ' :', ' ?', ' !' → U+202F + signe ; (2) '« ' et ' »' → U+00AB/U+00BB avec U+00A0 intérieure ; (3) '(\\d) (mg|µg|g|kg|ml|µl|cm|mm|mmHg|mmol|UI|%|°C|h|min)' → U+00A0 ; (4) groupes de milliers '(\\d) (\\d{3})' → U+202F ; exclure les identifiants et les attributs. Contrôler ensuite que build_medina.audit() renvoie toujours {}.",
+   "comptes": {
+    "chapters/I61/I61_a.html": {
+     "espace_avant_point_virgule": 59,
+     "espace_avant_deux_points": 43,
+     "espace_avant_point_interrogation": 2,
+     "guillemets_francais": 8,
+     "nombre_espace_unite": 17,
+     "groupes_milliers_espace": 6,
+     "espaces_insecables_presentes": 0
+    },
+    "chapters/I61/I61_b.html": {
+     "espace_avant_point_virgule": 107,
+     "espace_avant_deux_points": 76,
+     "espace_avant_point_interrogation": 3,
+     "guillemets_francais": 5,
+     "nombre_espace_unite": 88,
+     "groupes_milliers_espace": 4,
+     "espaces_insecables_presentes": 0
+    },
+    "chapters/I61/I61_c.html": {
+     "espace_avant_point_virgule": 63,
+     "espace_avant_deux_points": 66,
+     "espace_avant_point_interrogation": 10,
+     "guillemets_francais": 3,
+     "nombre_espace_unite": 29,
+     "groupes_milliers_espace": 1,
+     "espaces_insecables_presentes": 0
+    },
+    "chapters/I61/I61_d.html": {
+     "espace_avant_point_virgule": 80,
+     "espace_avant_deux_points": 25,
+     "espace_avant_point_interrogation": 0,
+     "guillemets_francais": 1,
+     "nombre_espace_unite": 56,
+     "groupes_milliers_espace": 0,
+     "espaces_insecables_presentes": 0
+    },
+    "chapters/I61/I61_pop1.html": {
+     "espace_avant_point_virgule": 96,
+     "espace_avant_deux_points": 100,
+     "espace_avant_point_interrogation": 0,
+     "guillemets_francais": 3,
+     "nombre_espace_unite": 114,
+     "groupes_milliers_espace": 1,
+     "espaces_insecables_presentes": 0
+    },
+    "chapters/I61/I61_pop2.html": {
+     "espace_avant_point_virgule": 205,
+     "espace_avant_deux_points": 101,
+     "espace_avant_point_interrogation": 0,
+     "guillemets_francais": 8,
+     "nombre_espace_unite": 122,
+     "groupes_milliers_espace": 1,
+     "espaces_insecables_presentes": 0
+    }
+   },
+   "total": {
+    "espace_avant_point_virgule": 610,
+    "espace_avant_deux_points": 411,
+    "espace_avant_point_interrogation": 15,
+    "guillemets_francais": 28,
+    "nombre_espace_unite": 426,
+    "groupes_milliers_espace": 13,
+    "espaces_insecables_presentes": 0
+   }
+  },
+  {
+   "id": "GLOB-02",
+   "categorie": "cohérence_numérique",
+   "priorite": "moyenne",
+   "titre": "Nombres en lettres et en chiffres",
+   "constat": "« trois mois » (8 occurrences) et « 3 mois » (20) ; « trois premières heures » (4) et « 3 premières heures » (2). Règle conseillée : chiffres devant une unité de temps (3 mois, 3 premières heures), avec « trois » réservé aux emplois non mesurés.",
+   "traitement": "Non appliqué : 14 occurrences sont dispersées dans des phrases déjà proposées à la correction ; harmonisation à faire dans l'étape d'intégration.",
+   "comptes": null,
+   "total": null
+  },
+  {
+   "id": "GLOB-03",
+   "categorie": "terminologie",
+   "priorite": "moyenne",
+   "titre": "Synonymes concurrents",
+   "constat": "« antiagrégant » (3) / « antiplaquettaire » (5) ; « Stroke Unit » (5) / « unité AVC » (1) ; « Stroke Center » (1) / « centre AVC » (1) ; « aPTT » (6, sigle anglais) alors que le glossaire le développe en « Temps de céphaline activée » (TCA, 0 occurrence) ; « c-statistique » (2) / « surface sous la courbe » (2).",
+   "traitement": "Un terme par notion à choisir ; propositions ponctuelles LANG pour c-statistique et Stroke Units ; reste à trancher pour antiagrégant/antiplaquettaire et aPTT/TCA.",
+   "comptes": null,
+   "total": null
+  },
+  {
+   "id": "GLOB-04",
+   "categorie": "précision_lexicale",
+   "priorite": "moyenne",
+   "titre": "Intervalles de confiance non étiquetés",
+   "constat": "Huit intervalles sont écrits « (rapport de cotes x ; a à b) » ou « (x ; a à b) » sans la mention « intervalle de confiance » (onglet Pathologie, 6 ; fenêtres Tranexamic, 2). Le niveau (95 %) n'est jamais précisé dans ces passages.",
+   "traitement": "Une seule proposition (LANG sur 9.3) pour ne pas ajouter de fait ; convention à généraliser et niveau de confiance à vérifier aux sources (renvoi médical implicite).",
+   "comptes": null,
+   "total": null
+  },
+  {
+   "id": "GLOB-05",
+   "categorie": "style",
+   "priorite": "haute",
+   "titre": "Phrases nominales dans les fenêtres de monographie",
+   "constat": "Les fenêtres « monographie suisse » (Ondexxya, Praxbind, Prothromplex, Beriplex, Konakion, Ebrantil, Trandate, Cleviprex, Catapresan, acide tranexamique, Clexane, Keppra) s'écrivent presque entièrement en rubriques nominales (« Protéinurie transitoire fréquente », « Surveillance. Hémostase, reprise du saignement… », « Posologie. 5 g… »). Le guide de rédaction (§ 2) proscrit la phrase nominale partout, fenêtres comprises.",
+   "traitement": "Seuls les cas les plus lourds sont proposés (une douzaine de propositions) ; une réécriture complète des rubriques des douze monographies dépasse une correction « locale » et relève d'une mission de rédaction.",
+   "comptes": null,
+   "total": null
+  },
+  {
+   "id": "GLOB-06",
+   "categorie": "sources",
+   "priorite": "moyenne",
+   "titre": "Titres de références traduits",
+   "constat": "La plupart des références sont données avec un titre français pour des articles publiés en anglais (par exemple « Étude genevoise de l'AVC : incidence et létalité selon la CIM-11 (Neurology 2025;104:e213353) ») alors que d'autres gardent le titre anglais (« Acute intracerebral haemorrhage: diagnosis and management »). Un titre traduit sans mention « [trad.] » peut passer pour le titre officiel ; trois références n'ont pas d'auteur (« Hémorragie intracérébrale sous anticoagulants oraux, registres suisse et norvégien »).",
+   "traitement": "Renvoi à l'audit des sources ; non modifié.",
+   "comptes": null,
+   "total": null
+  },
+  {
+   "id": "GLOB-07",
+   "categorie": "glossaire",
+   "priorite": "basse",
+   "titre": "Glossaire i61.py",
+   "constat": "Clé « DPA » définie mais jamais employée dans les six fichiers ; cinq définitions identiques « Nom propre, non une abréviation. » (LEO, CSL, CPS, UCB-Pharma, AstraZeneca), elliptiques ; définition de « APOE » parlant de « gène » alors que la forme développée est « Apolipoprotéine E » (protéine). build_medina.audit() exécuté en lecture seule sur les six fichiers : {} (aucune abréviation non couverte).",
+   "traitement": "Observations ; deux propositions LANG sur les définitions GCS et HIC.",
+   "comptes": null,
+   "total": null
+  },
+  {
+   "id": "GLOB-08",
+   "categorie": "structure_hors_perimetre",
+   "priorite": "moyenne",
+   "titre": "Observations de structure (non modifiées)",
+   "constat": "(1) La sous-section 2.3 « Règles de codage » et la fenêtre « Sous-codes CIM-10-GM » traitent le code CIM, ce que l'instruction de style de la section 11 déconseille (« sans îlot ni tableau consacré au code CIM »). (2) Le tableau de 3.4 (onglet Pathologie) et celui de 2.3 (onglet Examens) ne sont précédés d'aucun paragraphe d'introduction (guide § 4). (3) En 8.1, le mot cliquable « transformation et critères du scanner » est placé après « effet de masse et l'hypertension intracrânienne », loin de la notion qu'il ouvre. (4) Le titre « 1.3 Prérequis cliquables » décrit l'interface. (5) Le tableau 1.1 de l'onglet Examens annonce trois statuts (indiqué, conditionnel, non systématique) alors qu'il contient aussi « Indiqué à Berne chez tous » et « Piège ».",
+   "traitement": "Hors du périmètre d'une correction de formulation locale ; transmis pour décision.",
+   "comptes": null,
+   "total": null
+  }
+ ],
+ "propositions_ref": "propositions.json (206 entrées : 188 propositions locales, 18 renvois médicaux)",
+ "renvois_medicaux": [
+  {
+   "id": "LANG-019",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "anévrisme ou fistule artério-veineuse acquis I67.1",
+   "explication": "Accord ambigu : « acquis » (masculin) suit « fistule artério-veineuse » (féminin). Selon le libellé OFS, I67.1 désigne l’anévrisme cérébral sans rupture ; la formule « anévrisme ou fistule … acquis » doit être comparée au texte de la CIM-10-GM avant correction. Formulation non modifiée pour ne pas altérer le sens de codage."
+  },
+  {
+   "id": "LANG-023",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "et 25,1 % étaient décédés",
+   "explication": "Dénominateur ambigu : la phrase donne 39,1 % des 2250 patients évalués puis 33,2 % de la cohorte entière, et « 25,1 % étaient décédés » sans préciser la base. La fenêtre « Registre suisse des AVC » écrit « 25,1 % de la cohorte décédés ». Choix de la formulation laissé à l’audit médical."
+  },
+  {
+   "id": "LANG-037",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "Chaque étape ouvre une possibilité thérapeutique distincte (pression, hémostase, chirurgie).",
+   "explication": "Incohérence interne : la légende affirme que chaque étape ouvre une possibilité thérapeutique, alors que le paragraphe de lecture et l’encadré final indiquent que la lésion secondaire (dernière étape) n’a pas de traitement validé. Reformulation médicale à décider."
+  },
+  {
+   "id": "LANG-042",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "résultent plus souvent d’une artériopathie des perforantes",
+   "explication": "Comparatif sans second terme : « plus souvent » que quoi (que les hémorragies lobaires ? « le plus souvent » ?). Le choix change la portée de l’affirmation ; à trancher à l’audit médical."
+  },
+  {
+   "id": "LANG-047",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "Il faut lire ce tableau avec ses limites : les causes ne s’excluent pas",
+   "explication": "Tension entre le texte (« les causes ne s’excluent pas ») et le tableau dont les six fréquences totalisent 100 % (46,7 + 21,4 + 10,3 + 8,6 + 8,2 + 4,8). Une répartition exclusive et une attribution non exclusive ne se concilient pas ; clarification médicale requise. De plus, « Dans le registre, l’atteinte mixte … représente 63,6 % » ne précise pas si ces pourcentages (CADMUS) viennent du registre suisse ou de la cohorte CADMUS."
+  },
+  {
+   "id": "LANG-059",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "(les critères de Boston ne s’appliquent qu’en présence de l’un de ces éléments)",
+   "explication": "Incohérence : la parenthèse suit « déclin cognitif ou hémorragie cérébrale antérieure » et vise « l’un de ces éléments », alors que la section 11.1 et la fenêtre sur les critères de Boston citent trois éléments (déclin cognitif, hémorragie cérébrale, épisodes focaux transitoires). Ajout éventuel des épisodes focaux transitoires à décider par l’audit médical."
+  },
+  {
+   "id": "LANG-092",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "les malformations vasculaires sont la première cause chez le jeune adulte, et l’andexanet et l’idarucizumab n’ont pas été étudiés chez l’enfant",
+   "explication": "Dans le paragraphe sur l’enfant, l’argument « les malformations vasculaires sont la première cause chez le jeune adulte » ne concerne pas l’enfant : non-séquitur à lever par l’audit médical (soit retirer, soit remplacer par une donnée pédiatrique sourcée)."
+  },
+  {
+   "id": "LANG-111",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Un niveau liquide-sang dans l’hématome est très spécifique",
+   "explication": "Terminologie à vérifier : « niveau liquide-sang » n’est pas la désignation usuelle (on parle de niveau liquide-liquide ou de niveau sédimentation/sérum dans un hématome). Aucun remplacement proposé sans contrôle de la source."
+  },
+  {
+   "id": "LANG-115",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Un angio-scanner négatif ne suffit pas chez un patient jeune sans hypertension : la probabilité résiduelle reste de 22,1 %",
+   "explication": "Omission : 22,1 % correspond à l’absence simultanée de microangiopathie et d’hypertension (arbre DIAGRAM du même onglet ; 7,3 % si microangiopathie absente mais hypertension présente). Proposition : « … sans hypertension ni microangiopathie : … ». Même omission dans l’encadré de synthèse Pareto « Imagerie »."
+  },
+  {
+   "id": "LANG-119",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "CHUV (état au 16 octobre 2024)",
+   "explication": "Incohérence de datation des intervalles de référence du CHUV : « état au 16 octobre 2024 » dans le tableau, « version du 9 juin 2026 » dans les sources de la même partie et de la fenêtre INTERACT3. Vérification de la source requise."
+  },
+  {
+   "id": "LANG-159",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "car la correction apportée par le concentré apparaît environ 30 minutes après l’injection, alors que l’effet de la vitamine K débute en 4 à 6 heures",
+   "explication": "Lien causal non convaincant : le « car » justifie l’ajout de vitamine K par deux délais (30 minutes ; 4 à 6 heures), sans mentionner le caractère transitoire de la correction par le concentré, qui est la vraie raison. Reformulation médicale à décider."
+  },
+  {
+   "id": "LANG-165",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "Le protocole bernois juge la version 2.0 plus sensible mais moins spécifique (surdiagnostic possible).",
+   "explication": "Incohérence interne : les spécificités chiffrées dans la phrase précédente sont identiques pour les deux versions (95,0 % contre 95,0 %), alors que la phrase conclut à une spécificité moindre. À clarifier (source = jugement de Berne vs chiffres de l’article)."
+  },
+  {
+   "id": "LANG-167",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "L’attribution des pourcentages aux branches a été reconstruite à partir de la mise en page de l’arbre original.",
+   "explication": "Avertissement important sur la fiabilité des pourcentages de l’arbre DIAGRAM ; il contraste avec la légende de la figure de l’onglet Examens (« Les pourcentages de l’arbre sont donnés sans arrondi ») qui ne mentionne pas cette limite. À harmoniser par l’audit médical."
+  },
+  {
+   "id": "LANG-168",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "anévrisme ou fistule artério-veineuse acquis",
+   "explication": "Même accord ambigu que dans l’onglet Pathologie (« acquis » masculin après « fistule » féminin) ; libellé OFS à vérifier."
+  },
+  {
+   "id": "LANG-171",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "sidérose superficielle</td><td>Pas de conduite</td><td>Pas de conduite",
+   "explication": "Libellé ambigu, calque de l’allemand : interdiction, déconseil ou délai non défini ? La force de la recommandation est à préciser à partir du protocole bernois."
+  },
+  {
+   "id": "LANG-179",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "mRS préalable inférieur à 3",
+   "explication": "Incohérence de seuil : ici « mRS préalable inférieur à 3 », alors que le tableau de réversion de l’onglet Pathologie exclut les patients avec « mRS supérieur à 3 » (soit un mRS de 3 autorisé). Le seuil réel doit être vérifié dans le protocole bernois."
+  },
+  {
+   "id": "LANG-182",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "Voir la fiche.</p><h3>Contre-indications et précautions</h3><p>Hypersensibilité à la phytoménadione",
+   "explication": "Rubrique « Effets indésirables » vide (« Voir la fiche. ») dans cinq fenêtres (Konakion MM, Trandate, Cleviprex, acide tranexamique, Keppra) : renvoi sans contenu, contraire au principe « le lecteur comprend, il ne devine pas » ; contenu à rédiger à partir de l’information professionnelle (non réalisé dans cette mission linguistique)."
+  },
+  {
+   "id": "LANG-200",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "Un angio-scanner négatif ne suffit pas chez un patient jeune sans hypertension",
+   "explication": "Même omission que dans l’onglet Examens : 22,1 % suppose l’absence d’hypertension et de microangiopathie."
+  }
+ ],
+ "lacunes": [
+  "Aucune vérification médicale ni de source n'a été faite (périmètre linguistique). Les 18 renvois médicaux ne sont pas résolus ; aucune des affirmations chiffrées n'a été confrontée à une source.",
+  "Les propositions n'ont pas été appliquées aux fichiers ; aucune compilation (build_front.py), aucun test navigateur (test_v7.py) et aucun rendu visuel n'ont été réalisés. Le moteur (shell/polish.js) n'a pas été examiné pour savoir s'il insère des espaces insécables au rendu.",
+  "Le texte des figures SVG (schémas) n'a été lu que dans sa transcription textuelle ; leurs titres et descriptions internes (balises title/desc) ne sont pas audités.",
+  "Le glossaire commun (glossary/cardio_1.py et autres modules) n'a pas été relu : seules les clés ajoutées par glossary/i61.py l'ont été. L'audit d'abréviations de build_medina repose sur l'heuristique du moteur (au moins deux majuscules) ; des sigles à une seule majuscule ou des mots composés n'ont été vérifiés que par lecture.",
+  "L'hypothèse selon laquelle « avant 6 h » et « avant 15 h » désignent des délais (et non des heures d'horloge) s'appuie sur les passages internes de la leçon (encadré Paramètres clés ; fenêtre Ondexxya) et non sur une relecture du protocole bernois.",
+  "Les titres de références et les intitulés de sources n'ont pas été comparés aux publications originales."
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
