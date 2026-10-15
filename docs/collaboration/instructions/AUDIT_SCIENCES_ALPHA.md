@@ -2,6 +2,8 @@
 
 Mission `ALPHA77-CODEX-OUTIL-SCIENCES`, génération 1. Aucun contenu médical ni ancien système n’est modifié par ce correctif.
 
+Le contrôle et ses tests utilisent uniquement la bibliothèque standard Python, notamment `HTMLParser` ; aucune installation de `lxml` n’est nécessaire. L’arbre local conserve l’ordre du texte, les attributs, les classes exactes, les balises vides HTML et les SVG. Les contenus `script`, `style` et `template` ne peuvent fournir des disciplines, figures ou encadrés. Cette lecture structurelle des sources ne remplace pas le contrôle du rendu dans un navigateur.
+
 Exécuter dans le worktree source réservé, avec le **SHA40 exact approuvé de comparaison**, transmis par Starter dans son prompt :
 
 ```sh
