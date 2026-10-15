@@ -64,6 +64,14 @@ def build(root, site, base=None):
     claude_path = root/'organisation/CYCLES_CLAUDE.json'
     claude = json.loads(claude_path.read_text()) if claude_path.exists() else {'cycles': []}
     transferred = {r['code'] for c in claude['cycles'] if c.get('transferred_from') == 'Codex' for r in c['chapters']}
+    try:
+        from tools.alpha_publication import verify
+        from tools.espace import GitTree
+    except ModuleNotFoundError:
+        from alpha_publication import verify
+        from espace import GitTree
+    _, alpha = verify(GitTree(root, commit), trusted_before=GitTree(root, base))
+    transferred |= set(alpha)
     deadline = bounded_deadline(registry, changed, previous('organisation/execution-20261014/cycles.json'),
                                 catalog, previous('chapters.json'), transferred)
     check_deadline(deadline)
@@ -80,7 +88,8 @@ def build(root, site, base=None):
     manifest = {'schema_version':1, 'git_commit':commit,
                 'built_at':datetime.now(timezone.utc).isoformat(),
                 'scope':'construction technique ; déploiement à vérifier séparément',
-                'night_publication_deadline':deadline, 'courses':courses, 'site_files':files}
+                'night_publication_deadline':deadline, 'courses':courses, 'site_files':files,
+                'alpha_publications': alpha}
     output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as stream:

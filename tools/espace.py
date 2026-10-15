@@ -311,6 +311,14 @@ def validate_fragment_guard(before, after):
             from project_governance import check as governance_check, GovernanceError
             from publication_en_etat import validate as publication_in_state, adopted_codes, PublicationError
         governance_check(before, after)
+        try:
+            from tools.alpha_publication import views, AlphaError
+        except ModuleNotFoundError:
+            from alpha_publication import views, AlphaError
+        try:
+            before, after, _ = views(before, after)
+        except ValueError as error:
+            raise FragmentError(str(error)) from error
         changed = {p for p in before.entries.keys() | after.entries.keys()
                    if before.entries.get(p) != after.entries.get(p)}
         if publication_in_state(before, after, changed):

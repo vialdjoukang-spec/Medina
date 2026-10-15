@@ -126,6 +126,12 @@ def adopted_codes(tree):
     """Revérifie les blobs adoptés, sans promouvoir les anciens états de cycle."""
     if tree.read(RECEIPT, required=False) is None:
         return set()
+    try:
+        from tools.alpha_publication import verify, HistoricalView
+    except ModuleNotFoundError:
+        from alpha_publication import verify, HistoricalView
+    if not isinstance(tree, HistoricalView):
+        tree, _ = verify(tree)
     validate(tree, tree, {RECEIPT}, adopted=True)
     return {row['code'] for row in load(tree, RECEIPT)['courses']}
 
