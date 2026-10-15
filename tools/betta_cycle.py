@@ -24,7 +24,7 @@ def managed(path, codes):
     return any(path.startswith(f"chapters/{c}/") or path == f"glossary/{c.lower()}.py" for c in codes)
 
 
-def validate(before, after):
+def validate(before, after, publication_in_state_codes=()):
     plan, status = _json(after, PLAN), _json(after, STATUS)
     if plan is None or status is None:
         return {}, set()
@@ -34,6 +34,7 @@ def validate(before, after):
         _req(not set(codes) & {ch[0] for s in tetrade["systems"] for ch in s["chapters"]}, "code commun aux 30 cycles")
     changed = {p for p in before.entries.keys() | after.entries.keys() if before.entries.get(p) != after.entries.get(p)}
     authorized, injected = {}, set()
+    adopted = set(publication_in_state_codes)
     for n, cyc in status["cycles"].items():
         for code, st in cyc["lessons"].items():
             _req(codes.get(code) == int(n), f"{code} hors plan")
@@ -48,7 +49,12 @@ def validate(before, after):
             _req(data is not None and authorized.get(p) == hashlib.sha256(data).hexdigest(), f"fichier non enregistré : {p}")
     for row in json.loads(after.read("chapters.json").decode("utf-8")):
         if row.get("code") in codes:
+            if row['code'] in adopted:
+                _req(row.get('integrated') is True and row.get('covers') == [row['code']] and
+                     row.get('provisional_injection') is True and row.get('publication_mode') == 'en_etat',
+                     f"publication en l'état invalide : {row['code']}")
+                continue
             _req(row["code"] in injected and row.get("integrated") is True and row.get("covers") == [row["code"]] and
                  row.get("production_cycle") == codes[row["code"]] and row.get("betta") is True and
                  row.get("audit_status") == "audit_differe_non_effectue", f"ligne invalide : {row['code']}")
-    return authorized, injected
+    return authorized, injected | adopted

@@ -9,6 +9,7 @@ from unittest.mock import patch
 
 from tools import espace as E
 from tools import publication_en_etat as P
+from tools import betta_cycle as B
 
 
 class PublicationTests(unittest.TestCase):
@@ -21,6 +22,8 @@ class PublicationTests(unittest.TestCase):
         self.write(P.AUTHORITY, (Path(__file__).resolve().parents[1] / P.AUTHORITY).read_bytes())
         self.json('chapters.json', [])
         self.json('nosology/fragments/S08.json', {'lessons': [{'code': 'R25'}]})
+        self.json(B.PLAN, {'cycles': [{'number': 42, 'agents': [{'lessons': [{'code': 'R25'}]}]}]})
+        self.json(B.STATUS, {'cycles': {'42': {'lessons': {'R25': {'state': 'EN_CONTROLE'}}}}})
         self.source_dir = 'livraisons/Livraison Claude/N-05-Neurologie/TEST'
         self.source = self.source_dir + '/chapters/R25/R25_a.html'
         self.content = b'<p>Brouillon de fixture incomplet, sans validation.</p>'
@@ -64,6 +67,48 @@ class PublicationTests(unittest.TestCase):
     def test_same_permission_for_claude(self):
         self.receipt['actor'] = 'Claude'
         self.assertEqual(self.validate(), [])
+
+    def test_adopted_publication_survives_later_documentation_without_promoting_betta(self):
+        self.validate()
+        before = E.GitTree(self.root, 'HEAD')
+        self.write('docs/compte-rendu.md', b'Compte rendu technique subsequent')
+        after = E.GitTree(self.root, self.commit())
+        with self.assertRaisesRegex(B.BettaError, 'ligne invalide'):
+            B.validate(before, after)
+        codes = P.adopted_codes(after)
+        self.assertEqual(codes, {'R25'})
+        self.assertEqual(B.validate(before, after, publication_in_state_codes=codes), ({}, {'R25'}))
+        self.assertEqual(json.loads(after.read(B.STATUS))['cycles']['42']['lessons']['R25']['state'], 'EN_CONTROLE')
+
+    def test_adopted_publication_rechecks_provenance_on_later_commits(self):
+        self.validate()
+        self.write(self.path, b'Changement ulterieur non autorise')
+        after = E.GitTree(self.root, self.commit())
+        with self.assertRaisesRegex(P.PublicationError, 'différente du reçu'):
+            P.adopted_codes(after)
+
+    def test_adopted_exception_keeps_checks_for_later_unpublished_betta_course(self):
+        self.receipt['catalog_entries'] = json.loads((self.root / 'chapters.json').read_bytes())
+        self.validate()
+        before = E.GitTree(self.root, 'HEAD')
+        self.json(B.PLAN, {'cycles': [{'number': 42, 'agents': [{'lessons': [{'code': 'R25'}, {'code': 'R26'}]}]}]})
+        catalog = json.loads((self.root / 'chapters.json').read_bytes())
+        catalog.append(dict(code='R26', integrated=True, covers=['R26']))
+        self.json('chapters.json', catalog)
+        after = E.GitTree(self.root, self.commit())
+        self.assertEqual(P.adopted_codes(after), {'R25'})
+        with self.assertRaisesRegex(B.BettaError, 'ligne invalide : R26'):
+            B.validate(before, after, publication_in_state_codes=P.adopted_codes(after))
+
+    def test_adopted_catalogue_title_remains_unchanged(self):
+        self.receipt['catalog_entries'] = json.loads((self.root / 'chapters.json').read_bytes())
+        self.validate()
+        catalog = json.loads((self.root / 'chapters.json').read_bytes())
+        catalog[0]['title'] = 'Titre ulterieur non autorise'
+        self.json('chapters.json', catalog)
+        after = E.GitTree(self.root, self.commit())
+        with self.assertRaisesRegex(P.PublicationError, 'lignes publiées du catalogue'):
+            P.adopted_codes(after)
 
     def test_cli_includes_images_copied_from_delivery(self):
         self.write(self.asset, self.asset_content)

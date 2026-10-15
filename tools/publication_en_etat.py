@@ -12,7 +12,8 @@ FRAGMENTS = {'S08', 'S05', 'S04', 'S06'}
 HISTORY = ('organisation/fragment_status.json', 'organisation/tetrade_cycle_status.json',
            'organisation/CYCLES_CLAUDE.json', 'organisation/CYCLES_CLAUDE_journal.jsonl',
            'organisation/SCELLES.json', 'organisation/CYCLE_01_INJECTION_STOP_2026-10-12.json',
-           'organisation/execution-20261014/cycles.json')
+           'organisation/execution-20261014/cycles.json',
+           'organisation/betta_status.json', 'organisation/progression/plan-betta-cycles.json')
 
 
 class PublicationError(ValueError):
@@ -48,7 +49,7 @@ def provenance(tree, revision, path):
     return result.stdout
 
 
-def validate(before, after, changed):
+def validate(before, after, changed, adopted=False):
     """True seulement pour une remise bornée, identique aux sources de provenance.
 
     La garde générale conserve ses contrôles ordinaires pour les autres commits.
@@ -94,9 +95,18 @@ def validate(before, after, changed):
             declared.add(path)
     medical = {p for p in changed if p == 'chapters.json' or p.startswith(('chapters/', 'glossary/', 'assets/img/'))}
     require(medical - {'chapters.json'} <= declared, 'modification sans provenance : ' + str(sorted(medical - declared - {'chapters.json'})))
-    require(receipt.get('catalog_sha256') == digest(after.read('chapters.json')), 'catalogue différent du reçu')
+    if not adopted:
+        require(receipt.get('catalog_sha256') == digest(after.read('chapters.json')), 'catalogue différent du reçu')
     original, current = load(before, 'chapters.json'), load(after, 'chapters.json')
     require(isinstance(original, list) and isinstance(current, list), 'catalogue invalide')
+    if receipt.get('catalog_entries') is not None:
+        require(receipt['catalog_entries'] == [r for r in current if r.get('code') in codes],
+                'lignes publiées du catalogue différentes du reçu')
+    elif adopted:
+        # Compatibilité d'un reçu initial déjà publié : la capture globale
+        # suffit tant que le catalogue n'a pas changé. Le CLI actuel enregistre
+        # les seules lignes adoptées pour permettre les ajouts ultérieurs.
+        require(receipt.get('catalog_sha256') == digest(after.read('chapters.json')), 'catalogue différent du reçu historique')
     require([r for r in original if r.get('code') not in codes] ==
             [r for r in current if r.get('code') not in codes], 'cours extérieur ajouté, retiré ou modifié')
     metadata = {'integrated', 'provisional_injection', 'audit_deferred', 'publication_mode', 'publication_receipt'}
@@ -110,6 +120,14 @@ def validate(before, after, changed):
             require(len(previous) == 1 and {k: v for k, v in previous[0].items() if k not in metadata} ==
                     {k: v for k, v in rows[0].items() if k not in metadata}, 'contenu du catalogue modifié : ' + code)
     return True
+
+
+def adopted_codes(tree):
+    """Revérifie les blobs adoptés, sans promouvoir les anciens états de cycle."""
+    if tree.read(RECEIPT, required=False) is None:
+        return set()
+    validate(tree, tree, {RECEIPT}, adopted=True)
+    return {row['code'] for row in load(tree, RECEIPT)['courses']}
 
 
 def main():
@@ -154,6 +172,7 @@ def main():
     receipt = dict(schema_version=1, actor=args.actor, authority=AUTHORITY,
                    authority_sha256=digest((root / AUTHORITY).read_bytes()), medical_human_validation=False,
                    catalog_sha256=digest((root / 'chapters.json').read_bytes()), courses=courses)
+    receipt['catalog_entries'] = [row for row in catalog if row.get('code') in set(args.courses)]
     destination = root / RECEIPT
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + '\n')

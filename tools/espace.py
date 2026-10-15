@@ -306,15 +306,16 @@ def validate_fragment_guard(before, after):
     try:
         try:
             from tools.project_governance import check as governance_check, GovernanceError
-            from tools.publication_en_etat import validate as publication_in_state, PublicationError
+            from tools.publication_en_etat import validate as publication_in_state, adopted_codes, PublicationError
         except ModuleNotFoundError:
             from project_governance import check as governance_check, GovernanceError
-            from publication_en_etat import validate as publication_in_state, PublicationError
+            from publication_en_etat import validate as publication_in_state, adopted_codes, PublicationError
         governance_check(before, after)
         changed = {p for p in before.entries.keys() | after.entries.keys()
                    if before.entries.get(p) != after.entries.get(p)}
         if publication_in_state(before, after, changed):
             return []
+        publication_codes = adopted_codes(after)
     except (GovernanceError, PublicationError) as error:
         raise FragmentError(str(error)) from error
     old, new = fragment_records(before), fragment_records(after)
@@ -359,7 +360,7 @@ def validate_fragment_guard(before, after):
         except ModuleNotFoundError:
             from betta_cycle import validate as validate_betta, BettaError
         try:
-            betta_authorized, betta_codes = validate_betta(before, after)
+            betta_authorized, betta_codes = validate_betta(before, after, publication_in_state_codes=publication_codes)
         except BettaError as error:
             raise CycleError(str(error)) from error
         night_authorized.update(betta_authorized)
