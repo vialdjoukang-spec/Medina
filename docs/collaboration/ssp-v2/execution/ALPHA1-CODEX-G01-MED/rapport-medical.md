@@ -1,6 +1,6 @@
 # G01* — Audit médical Alpha
 
-Verdict : **réserves bloquantes, aucune validation finale**. Sept constats P1 et trois P2 ; aucun P0 démontré. Les sept empreintes du manifeste sont conservées. Les corrections et enrichissements sont appliqués dans six copies HTML seulement.
+Verdict : **réserves bloquantes, aucune validation finale**. Huit constats P1 et trois P2 ; aucun P0 démontré. Les sept empreintes du manifeste sont conservées. Les corrections et enrichissements sont appliqués dans six copies HTML seulement.
 
 ## G01-M01 — P1
 
@@ -63,3 +63,7 @@ Les valeurs normales du liquide ne sont pas étayées par une source suisse lue.
 Aucun intervalle normal ni délai légal inventé. La fiche cantonale de Fribourg a été lue intégralement ; les points non établis restent ouverts. Sources : CH-MENINGO, EU-LYME2025.
 
 La matrice des vingt rubriques reste conservatoire : la présence du contenu et sa lecture ne suffisent pas à prouver chaque affirmation. Les FI manquantes, la référence suisse de tuberculose, les règles OFSP et le contrôle navigateur restent ouverts. Aucun audit croisé ni validation médicale humaine revendiqué.
+
+## Complément — figures
+
+Réserve majeure supplémentaire : la figure 3 des enveloppes méningées est un dessin anatomique issu de la livraison IA. Remplacement requis par un original externe sourcé, sans nouveau dessin IA. Les six figures ont été réellement vues dans une capture isolée ; voir [inventaire](figures.md). Aucun cours canonique modifié.

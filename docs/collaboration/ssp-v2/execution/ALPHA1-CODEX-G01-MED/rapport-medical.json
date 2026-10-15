@@ -29,7 +29,7 @@
     "couverture": "Lecture textuelle des quatre onglets, fenêtres, résumés, tableaux, six quiz, glossaire et six figures SVG ; inventaire des composants dans surfaces.json.",
     "fenetres": 63,
     "figures": 6,
-    "limites": "Aucun nouveau rendu navigateur ni capture. Toutes les affirmations ne sont pas confirmées individuellement par une source ouverte. Une rubrique reste LACUNE lorsqu’une composante importante n’est pas prouvée."
+    "limites": "Complément : six figures SVG réellement vues en rendu isolé. Aucun contrôle de navigation du cours complet. Toutes les affirmations médicales ne sont pas confirmées individuellement ; les réserves antérieures restent ouvertes."
   },
   "verdict": "AUDIT_REALISE_AVEC_RESERVES_BLOQUANTES — NON_VALIDE",
   "validation_medicale_humaine": false,
@@ -153,11 +153,19 @@
       ],
       "correction_ou_action": "Aucun intervalle normal ni délai légal inventé. La fiche cantonale de Fribourg a été lue intégralement ; les points non établis restent ouverts.",
       "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-FIG-P1",
+      "gravite": "P1",
+      "surface": "chapters/G01/G01_c.html#g01-s-anat-cours",
+      "constat": "La figure 3 est un dessin anatomique SVG issu de la livraison IA, désormais non recevable selon la nouvelle règle de Vial. Identité avec le SVG de livraison et preuve d’auteur documentées dans figures.json.",
+      "correction_ou_action": "Remplacement requis par un original anatomique externe sourcé et licencié ; aucun dessin IA de remplacement et aucune correction canonique dans cette mission.",
+      "statut": "Réserve majeure ouverte ; sources canoniques conservées."
     }
   ],
   "gravites": {
     "P0": 0,
-    "P1": 7,
+    "P1": 8,
     "P2": 3
   },
   "enrichissements": "Six copies HTML dans drafts et un patch ; aucune source canonique modifiée.",
@@ -167,5 +175,12 @@
     "Vérifier OFS/BfArM, PROFILES et délais OFSP dans les textes primaires applicables.",
     "Réévaluation spécialisée : corticothérapie dans la listériose, stratégie chez l’immunodéprimé et pédiatrie.",
     "Contrôler les copies au navigateur ; intégration canonique par une mission distincte avec empreintes renouvelées."
-  ]
+  ],
+  "complement_figures": {
+    "dateUTC": "2026-10-15T18:53:00.733032+00:00",
+    "inventaire": "figures.json",
+    "vue_isolee": true,
+    "rendu_cours_complet": false,
+    "anatomie_IA": "Réserve majeure ouverte"
+  }
 }
