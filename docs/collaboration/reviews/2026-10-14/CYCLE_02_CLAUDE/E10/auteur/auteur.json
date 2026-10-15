@@ -1,0 +1,395 @@
+{
+ "code": "E10",
+ "actor": "C02-R-ENDO",
+ "runtime_agent_id": "claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/C02-R-ENDO",
+ "medical_human_validation": false,
+ "entry": {
+  "actor": "C02-R-ENDO",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T20:43:45.849038+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+      "explanation": "Autorité lue le 14.10.2026 : Vial confie à Claude la reprise du Cycle 2 ; un agent auteur correcteur par leçon, C02-R-ENDO pour E10, chargé de lever les réserves de la passe 1 Codex, sans injection ni commit."
+     },
+     {
+      "path": "docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/00_CLAUDE_LIRE_ICI.md",
+      "sha256": "4d27094b15bb10881c732182e1a17fba619b9eaa4817ab70c936fa59083deb31",
+      "explanation": "Remise Codex lue : E10 est dans CYCLE_02_E10, aucun cours injecté, huit réserves E10 ouvertes."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree_empreintes.json",
+      "sha256": "1986acea65d238ec3610b822184cb6fd0c4cb7ca922651fa476557a53e538e5e",
+      "explanation": "Empreintes SHA-256 des sept sources et des neuf images relevées avant toute modification ; elles sont identiques à celles de pass1.json (comparaison automatique vraie pour sources et images). Écriture limitée au dossier de livraison E10 et au dossier auteur."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/E10/pass1.json",
+      "sha256": "f5feee2f3958bff6dadeadbff4c59ca35b05e1d6e8e378ae16c66e1f4130ad0c",
+      "explanation": "Passe 1 C02-R-NEPH lue intégralement : 8 réserves bloquantes R01 à R08 (SSED technologie, conduite, Baqsimi, potassium/acidocétose, pied, figures, rapport capteur, rédaction), 27 contrôles numériques et 12 calculs dérivés."
+     },
+     {
+      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger.json",
+      "sha256": "911c8c3f80201740057191e4b365704fed7fa903c3de843d2e89eb6a810b35f5",
+      "explanation": "Registre Codex lu : 227 assertions, archives intégrales locales absentes du dépôt ; les sources nécessaires aux réserves seront relues en ligne aujourd'hui et non présumées lues."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
+      "sha256": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
+      "explanation": "Contrat lu : SSED et FI Swissmedic du produit exact en premier, JBDS/NICE britanniques seulement pour lacunes motivées, aucune origine américaine décisionnelle."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "organisation/execution-20261014/CONTRAT_REVUES.md",
+      "sha256": "37149122d0cdde390ee62032a4f0120571830668c505dab3eb9a77fe17957930",
+      "explanation": "Contrat lu : C02-R-ENDO corrige sa remise ; la passe 2 de E10 sera faite par le relecteur croisé C02-R-NEPH, distinct ; aucune auto-approbation."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "CHAPTER_SPEC.md",
+      "sha256": "d43b97e59597334c3adcc194c341fa7abcf6d8d9da50d41bb351d349e04fbc1c",
+      "explanation": "Contrat HTML lu : quatre onglets, classes de la liste fermée, mots verts reliés à des fenêtres, Pareto, quiz, dernier îlot alert puis key ; 21 parties et 42 fenêtres du cahier à préserver."
+     },
+     {
+      "path": "organisation/execution-20261014/cahier-cycle2.json",
+      "sha256": "06d0bbda24cbdc7423beb23b17bc5edd9049948dc99cd950d94cfb96b1020d9e",
+      "explanation": "Leçon E10 du cahier lue : 21 parties (A01-A12, E01-E03, S01-S04, P01-P02), emplacements d'images id/anchor, sous-codes E10.0 à E10.9."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/03_PREUVES_ET_INCIDENT_TECHNIQUE.md",
+      "sha256": "aacf5570ce23f542e023494d5c40422e3cc98c87ed2945cf7750a7daa3c2e5a6",
+      "explanation": "Limites de preuve lues : le script préparatoire n'a rien enregistré ; une source inaccessible ne sera pas déclarée lue ; une revue IA n'est pas une validation médicale humaine (medical_human_validation false)."
+     }
+    ]
+   }
+  ]
+ },
+ "exit": {
+  "actor": "C02-R-ENDO",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T21:46:58.902787+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+      "explanation": "Corrections d'auteur E10 demandées par le coordinateur après la passe 1 croisée ; ni commit ni push."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
+      "sha256": "39fce2427c745e0a5d22d351e69d482b576d7fbb45e045a4be0a1a51ed9f7833",
+      "explanation": "Écritures limitées aux sept sources E10, aux preuves _claude et au dossier auteur ; images inchangées."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
+      "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16",
+      "explanation": "Registre renouvelé : 51 assertions, dont le §10 et le tableau 3 du texte SGED/SGRM 2025 relus le 14.10.2026 pour B1 ; note sur l'empreinte de texte extrait."
+     },
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass1.json",
+      "sha256": "784abf5563b605bfe1cb72cf078b5a7ae1102440ba38c835d8312a4ab569007a",
+      "explanation": "Passe 1 croisée lue : B1 conduite du second groupe, B2 infinitifs ; observations O1 à O4."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
+      "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16",
+      "explanation": "Règle suisse de conduite (SGED/SGRM 2025) appliquée telle quelle ; JBDS requalifié britannique (O1)."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass1.json",
+      "sha256": "784abf5563b605bfe1cb72cf078b5a7ae1102440ba38c835d8312a4ab569007a",
+      "explanation": "Auteur corrigeant ; la passe 2 reste au relecteur croisé C02-R-NEPH."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
+      "sha256": "b978822d2d4e6d0d12c83a517110d52c6044dbcee532b9ba14a11e0d1ae99c73",
+      "explanation": "test_v7.py --static E10 : OK après corrections (31 898 mots, 106 fenêtres, 3 quiz, 21 Pareto)."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree.json",
+      "sha256": "72a02a0b42043ab4cb92a042b69bd275d8f9a977542e7e27f85daa84306b44a5",
+      "explanation": "Relevé d'entrée conservé ; aucune réserve déclarée levée par l'auteur seul ; pas de validation médicale humaine."
+     }
+    ]
+   }
+  ]
+ },
+ "entry_fingerprints": {
+  "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree_empreintes.json",
+  "sha256": "1986acea65d238ec3610b822184cb6fd0c4cb7ca922651fa476557a53e538e5e"
+ },
+ "final_files": {
+  "chapters/E10/E10_a.html": "e8a5d481d7bed026e5a757f84c6df001fd996c19415f0e01dd40f8b50cf1e356",
+  "chapters/E10/E10_b.html": "f19a7c31f369bc628a06b15dacaf3a39f829cae5704c1ad919c6e7869716d46d",
+  "chapters/E10/E10_c.html": "1106c5d4d9b0af8a8ad72183c6cb57a199893d0fe2b599ff2b44541875639ce0",
+  "chapters/E10/E10_d.html": "a20ff5600f33a0724f91c4c80f64367b7c80e455912e5710ea7a7a903a56e4c8",
+  "chapters/E10/E10_pop1.html": "e2a3fb7bbea6c63ed20016cd71a2feda990b697fba88ec7f752094ffd834b4eb",
+  "chapters/E10/E10_pop2.html": "e184641f07ae0f81d1c694687f18e934c2972d4bda0f7a5ede7b0a3d4f62f66f",
+  "glossary/e10.py": "35bb81ceb673273265d2b01c02d9a7208cae2d14ced6ef1417c23c26292137b1"
+ },
+ "image_files": {
+  "assets/img/cycle2/e10/e10-01-glucose.jpg": "726e0098e2e08533d5f9b832de5a9a256a3b150431f5b335c3ff45f972f7cf57",
+  "assets/img/cycle2/e10/e10-02-emergency.jpg": "425185376643c925c400981325a12943521d03d5308eec268569d77fa24c539f",
+  "assets/img/cycle2/e10/e10-03-profile.png": "a5820659ea2e2fc42edcb8449f1bdece01fe046db7c3dbb5845f614bfadc7b60",
+  "assets/img/cycle2/e10/e10-04-foot.gif": "2126f5316552167a4fe101fad2291cd78140131e354e2185c844c70ec3536289",
+  "assets/img/cycle2/e10/e10-05-report.png": "97473f1e957bbcbc0a291b81799c05d16df4875d18d446a2e12ecacee0f30496",
+  "assets/img/cycle2/e10/e10-06-pancreas.jpg": "ca07f5459d746b58ef9779c2cfaf5e5018a28ae3b0dcf128dbdea86ed6ccf5e1",
+  "assets/img/cycle2/e10/e10-07-insulin.png": "c81b426668bde406597fce49268a8f923d21bb55c5213e37e05c5a6360a3aa36",
+  "assets/img/cycle2/e10/e10-08-ketogenesis.png": "8ae010800223e75c3411c6f45cfd89e2cb4ab24b828f151ed5162416c861187d",
+  "assets/img/cycle2/e10/e10-09-immunology.png": "2a39d5d9af2c012bc0ab7a6576bdc414769eeca22d89af97cb57a9c99483e1e0"
+ },
+ "blocking_reserves": [],
+ "source_ledger": {
+  "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
+  "sha256": "177f7343602f72b0ef2c06015bcf04d693b61747957b449a1c9e946f0759da16"
+ },
+ "images_manifest": {
+  "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
+  "sha256": "39fce2427c745e0a5d22d351e69d482b576d7fbb45e045a4be0a1a51ed9f7833"
+ },
+ "technical_check": {
+  "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
+  "sha256": "b978822d2d4e6d0d12c83a517110d52c6044dbcee532b9ba14a11e0d1ae99c73",
+  "result": "OK",
+  "preview": "tools/night_preview.py dans un worktree jetable, build_exit 0 ; contrôle Playwright 1440 et 390 px : aucune erreur JavaScript, aucun débordement horizontal, nouvelles fenêtres ouvertes (capture ui_fenetre_potassium_bureau.png)"
+ },
+ "reserves_resolues": [
+  {
+   "id": "R01",
+   "resolution": "Tableau des quatre métriques adultes (TIR, plage étroite non universelle, TBR dont < 3,0, TAR dont > 13,9) avec lecture ; interférences de capteur par modèle ; standard de soins, systèmes communautaires, remboursement LiMA, télémédecine et consentement ; tableau des objectifs enfant/personne âgée fragile ; tableau grossesse (TBR < 3,5 < 4 %, < 3,0 < 1 %, TAR > 7,8 < 25 %), cibles capillaires, suivi au moins mensuel, adaptations d’insuline ; matrice d’exclusions motivées dans le registre.",
+   "source": "SSED Swiss Diabetes and Technology Recommendations, Stand 25.02.2025, pp. 7, 9, 11–12, 19–30, 34–37",
+   "fichiers": [
+    "chapters/E10/E10_b.html",
+    "chapters/E10/E10_c.html",
+    "chapters/E10/E10_pop1.html",
+    "chapters/E10/E10_pop2.html"
+   ]
+  },
+  {
+   "id": "R02",
+   "resolution": "Tableau du premier groupe médical par catégorie de risque (moyen, élevé, très élevé) : mesures avant et pendant le trajet, 10–20 g entre 4 et 5 mmol/L, pas de conduite < 4,0, 45 minutes, CGM et tendance ; grade III, évaluation spécialisée, capteur ou 6–8 mesures par jour pendant au moins un an ; HbA1c > 10 % ; discordance texte/tableau signalée sans règle inventée ; second groupe et exemple fictif dans la nouvelle fenêtre e10-a11-conduite.",
+   "source": "SGED/SGRM, Richtlinien Fahreignung bei Diabetes mellitus, Version 1 août 2025, §9, tableaux 1–3, pp. 8–11",
+   "fichiers": [
+    "chapters/E10/E10_b.html",
+    "chapters/E10/E10_pop1.html"
+   ]
+  },
+  {
+   "id": "R03",
+   "resolution": "Encadré alert des trois interactions (indométacine, warfarine, bêtabloquants) avec conséquence clinique, sans contre-indication ni retard du secours ; synchronisé dans les fenêtres e10-p02-fenetre-1 et e10-a07-fenetre-2, la Pareto P02 et le registre.",
+   "source": "FI suisse Baqsimi 3 mg (Swissmedic 67465), mars 2026, rubrique Interactions",
+   "fichiers": [
+    "chapters/E10/E10_d.html",
+    "chapters/E10/E10_pop1.html",
+    "chapters/E10/E10_pop2.html"
+   ]
+  },
+  {
+   "id": "R04",
+   "resolution": "Sous-partie A06-5 réécrite : remplissage (500 mL si PAS < 90, schéma 70 kg, groupes prudents, diurèse), insuline (0,1 U/kg/h britannique, FI NovoRapid IV et stabilité, basale poursuivie, 0,25 U/kg au diagnostic), tableau potassium > 5,5 / 3,5–5,5 / < 3,5 avec raisons, tableau des critères horaires de réponse (cétones −0,5, bicarbonates +3,0, glucose −3,0, +1 U/h après vérification de la pompe), relais 30–60 min ; légende de la figure 2 précisant l’absence de branches de traitement et leur place dans les tableaux ; fenêtre e10-a06-potassium avec calcul fictif.",
+   "source": "JBDS DKA adultes, révisé mars 2023, Actions 2–4, 60 min–24 h ; FI NovoRapid avril 2026 ; RMS 2019",
+   "fichiers": [
+    "chapters/E10/E10_a.html",
+    "chapters/E10/E10_c.html",
+    "chapters/E10/E10_pop1.html"
+   ]
+  },
+  {
+   "id": "R05",
+   "resolution": "Tableaux des trois niveaux (simple, complexe, urgence) avec prise en charge, et des grades 1/2/3 de profondeur ; suivi au moins hebdomadaire ; escalade < 10 %/semaine et < 50 % en 4 semaines ; drapeaux rouges chiffrés ; décharge expliquée ; aucun schéma antibiotique inventé ; fenêtre e10-a10-pied-grades avec calcul fictif ; critères monofilament, pallesthésie, pouls et index cheville-bras en A09.",
+   "source": "QualiCCare/SGED, Praxisleitfaden diabetisches Fusssyndrom, version 2023, pp. 1–4",
+   "fichiers": [
+    "chapters/E10/E10_b.html",
+    "chapters/E10/E10_pop1.html"
+   ]
+  },
+  {
+   "id": "R06",
+   "resolution": "Figure 4 : « du premier au quatrième orteil du pied droit » dans légende et alt ; figure 7 : GLUT4 déclaré absent de l’image et expliqué par le texte, alt corrigé ; figure 6 : mention erronée « tête, corps, queue » remplacée ; preuve Commons lue et archivée (API et wikitext : James Heilman, self cc-by-sa-3.0|GFDL) ; licences des huit autres images recontrôlées (Europe PMC, Frontiers, LibreTexts) ; manifeste images_claude.json.",
+   "source": "Commons File:GangreneFoot.JPG lue le 14.10.2026 ; inspection visuelle des neuf fichiers",
+   "fichiers": [
+    "chapters/E10/E10_b.html",
+    "chapters/E10/E10_c.html",
+    "preuves/images_claude.json",
+    "preuves/commons_GangreneFoot_api_claude.json",
+    "preuves/commons_GangreneFoot_wikitext_claude.txt"
+   ]
+  },
+  {
+   "id": "R07",
+   "resolution": "Adaptation justifiée : aucun rapport complet sous licence ouverte retenu ; lecture guidée en tableau des champs d’un rapport complet, visibles ou absents sur les figures 5 et 3 (période, couverture avec lacune 07:27–07:48, unité et conversion, plateau 39 mg/dL de 03:31 à 06:36, valeurs > 180 mg/dL de 09:33 à 14:28, ligne rouge non définie), données à obtenir ; statistiques fictives séparées ; métriques de R01 complétées en E03-4.",
+   "source": "Satuluri et Ponnusamy 2024 (PMC10888350, CC BY), figures 5 et 6 inspectées ; SSED 2025",
+   "fichiers": [
+    "chapters/E10/E10_c.html",
+    "chapters/E10/E10_pop2.html"
+   ]
+  },
+  {
+   "id": "R08",
+   "resolution": "Infinitifs injonctifs réécrits en phrases complètes dans le corps, les encadrés, les Pareto (21 listes réécrites) et les fenêtres ; phrases sur la fabrication du cours supprimées ; liens contextuels ajoutés (acidocétose, autoanticorps, peptide C, produits exacts, Baqsimi, calculs) ; encadrés des sciences réécrits en corrélations science → clinique / examen / traitement explicites ; 21 parties et 42 fenêtres prescrites conservées.",
+   "source": "docs/STYLE_REDACTION.md §§2, 5, 6 ; CLARTE_BASES_CALCULS 2026-10-11",
+   "fichiers": [
+    "chapters/E10/E10_a.html",
+    "chapters/E10/E10_b.html",
+    "chapters/E10/E10_c.html",
+    "chapters/E10/E10_d.html",
+    "chapters/E10/E10_pop1.html",
+    "chapters/E10/E10_pop2.html",
+    "glossary/e10.py"
+   ]
+  }
+ ],
+ "corrections": [
+  "Glossaire e10.py : clés réelles des abréviations (les clés « X — E10 » ne couvraient rien ; test_v7 échouait déjà sur la remise d’entrée), noms commerciaux déclarés honnêtement ; libellés « Figure E10-0n » renommés « Figure n ».",
+  "A04-4 : la confirmation d’un résultat isolé n’était pas dans la prise de position SSED 2011 ; reformulée comme lacune de la source.",
+  "A02-3 : « plus de 60 ans » corrigé en « 60 ans ou plus » (NICE 1.1.9).",
+  "A06 : causes déclenchantes et mortalité adulte (pneumonie, infarctus, sepsis) ajoutées ; critère suisse de suspicion > 11 mmol/L avec symptômes systémiques ; prise en charge ambulatoire RMS.",
+  "A06-3 : critères HHS complétés (cétones ≤ 3,0, pH > 7,3, bicarbonates ≥ 15) et forme mixte définie.",
+  "E01-5 : interférences HbA1c complétées (vitamines C et E, âge > 70 ans +0,4).",
+  "A07 : AID 4 g/8 g ; inefficacité du glucagon (insuffisance surrénalienne, hypoglycémie chronique) ; glucose IV si absence de réponse à 10–15 min (FI NovoRapid et Tresiba) ; équivalences HUG 15 g.",
+  "P02-2 : interactions de l’insuline nommées d’après la FI NovoRapid."
+ ],
+ "enrichments": [
+  "Deux tableaux SSP de l’examen fédéral hiérarchisés par gravité puis fréquence, avec élément discriminant et examen décisif : hyperglycémie avec soif/polyurie (A04-5) et trouble de conscience chez le diabétique (A06-3).",
+  "Quatre fenêtres nouvelles avec calculs refaisables : potassium et vitesse de réponse, métriques du capteur et coefficient de variation, réduction de surface d’une plaie, conduite (second groupe et exemple).",
+  "Grossesse : acidocétose urgence obstétricale (mortalité fœtale 16 % dans les données britanniques)."
+ ],
+ "reserves_ouvertes": [
+  "Sources non relues ce jour, couvertes seulement par le registre Codex : catalogues Viollier et La Source, revues mécanistiques (Kolb, Mari, Kandinov, B cells, Tran), OpenStax, carte Sick Day Rules, note SSED de retraits 2026.",
+  "Disponibilité et FI suisse d’une insuline soluble humaine intraveineuse (Actrapid) non vérifiées : la recherche AmiKo n’a rien renvoyé ; le cours ne la nomme donc pas comme produit suisse.",
+  "Page MDPI de Kostov 2019 inaccessible (accès refusé) ; licence vérifiée par Europe PMC seulement.",
+  "Discordance interne du texte SGED/SGRM 2025 (risque élevé, seuil de départ) signalée, non tranchée.",
+  "Aucune validation médicale humaine ; passe 2 du relecteur croisé C02-R-NEPH à réaliser.",
+  "O2 non traitée : poids des images e10-09 (5,6 Mo), e10-05, e10-03 inchangé."
+ ],
+ "note": "« reserves_resolues » décrit les corrections de l’auteur ; leur levée formelle appartient à la passe 2 du relecteur croisé.",
+ "corrections_passe1_croisee": [
+  {
+   "id": "B1",
+   "resolution": "Fenêtre e10-a11-conduite réécrite : exclusion D/D1 et exception (art. 7 al. 3, médecin de niveau 4 ; type 1 : boucle fermée hybride + CGM ≥ 3 mois, aucune hypoglycémie sévère sur 12 mois, Clarke < 4, suivi et confirmation du spécialiste) ; HbA1c > 8,5 % exclut le second groupe ; tableau du second groupe par risque (élevé : délai de 3 mois ; très élevé : ≥ 3 mois sans hypoglycémie sévère, CGM obligatoire, pas de conduite < 5 mmol/L, expertise de niveau 4) ; rappel en A11-6.",
+   "source": "SGED/SGRM août 2025, §10 et tableau 3, pp. 12–13",
+   "fichiers": [
+    "chapters/E10/E10_pop1.html",
+    "chapters/E10/E10_b.html",
+    "preuves/source_ledger_claude.json"
+   ]
+  },
+  {
+   "id": "B2",
+   "resolution": "Quatre passages réécrits au présent avec sujet (E02-1, e10-a08-fenetre-1, e10-a12-fenetre-1, e10-gl-37 dans pop2 et glossaire) ; liste de compétences de e10-a12-fenetre-2 réécrite ; recherche systématique refaite sur les six fichiers.",
+   "source": "STYLE_REDACTION §2",
+   "fichiers": [
+    "chapters/E10/E10_c.html",
+    "chapters/E10/E10_pop1.html",
+    "chapters/E10/E10_pop2.html",
+    "glossary/e10.py"
+   ]
+  },
+  {
+   "id": "O1",
+   "resolution": "JBDS qualifié de britannique en A06-2, A12-5 et A12-6.",
+   "fichiers": [
+    "chapters/E10/E10_a.html",
+    "chapters/E10/E10_b.html"
+   ]
+  },
+  {
+   "id": "O3",
+   "resolution": "Note ajoutée au registre : download_sha256 = texte extrait lu ; PDF SSED 955bc000… identique.",
+   "fichiers": [
+    "preuves/source_ledger_claude.json"
+   ]
+  }
+ ]
+}

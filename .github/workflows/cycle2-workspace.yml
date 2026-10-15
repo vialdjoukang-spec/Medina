@@ -1,0 +1,56 @@
+name: Cycle 2 - instantané de contrôle
+
+on:
+  push:
+    branches: [codex/cycles-20261014-0800]
+    paths: [.github/workflows/cycle2-workspace.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Archiver les seuls fichiers suivis utiles au contrôle
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, subprocess, zipfile
+          root = pathlib.Path('.')
+          prefixes = ('docs/', 'tools/', 'tests/', 'organisation/', 'chapters/', 'glossary/', 'assets/',
+            'livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45/',
+            'livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/',
+            'livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/',
+            'livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/')
+          selected = []
+          for name in subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0'):
+              if not name:
+                  continue
+              p = pathlib.PurePosixPath(name)
+              if any(part.startswith('.') for part in p.parts):
+                  continue
+              if name.startswith(prefixes) or (len(p.parts) == 1 and p.suffix in ('.py', '.md', '.json', '.css', '.js', '.html')):
+                  if root.joinpath(name).is_file() and not root.joinpath(name).is_symlink():
+                      selected.append(name)
+          manifest = {'commit': subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode().strip(),
+                      'purpose': 'Lecture et tests locaux du Cycle 2. Aucune injection, aucun déploiement.',
+                      'files': {}}
+          with zipfile.ZipFile('cycle2-workspace.zip', 'w', zipfile.ZIP_DEFLATED) as z:
+              for name in selected:
+                  data = root.joinpath(name).read_bytes()
+                  manifest['files'][name] = hashlib.sha256(data).hexdigest()
+                  z.writestr(name, data)
+              z.writestr('WORKSPACE_MANIFEST.json', json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+          print('Tracked files archived:', len(selected))
+          print('Archive SHA256:', hashlib.sha256(pathlib.Path('cycle2-workspace.zip').read_bytes()).hexdigest())
+          PY
+      - uses: actions/upload-artifact@v6
+        with:
+          name: medina-cycle2-workspace-${{ github.sha }}
+          path: cycle2-workspace.zip
+          retention-days: 3
+          if-no-files-found: error

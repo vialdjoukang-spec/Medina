@@ -1,0 +1,373 @@
+{
+ "code": "N18",
+ "actor": "C02-R-NEPH",
+ "runtime_agent_id": "claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/C02-R-NEPH",
+ "medical_human_validation": false,
+ "entry": {
+  "actor": "C02-R-NEPH",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T20:49:07.687719+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+      "explanation": "Instruction de Vial du 14.10.2026 lue : Claude reprend seul le Cycle 2 ; un auteur correcteur par leçon, C02-R-NEPH pour N18 (cahier : author C02-R-NEPH)."
+     },
+     {
+      "path": "docs/collaboration/transmissions/CYCLE_02_VERS_CLAUDE_2026-10-14/01_RESERVES_A_RESORBER.md",
+      "sha256": "3a6856b24defe4b952f850071939d98584388eeea4c9c009b7fdf1713bbd7747",
+      "explanation": "Index des 25 réserves lu ; N18 en compte 3 (R01 Kerendia/CYP3A4, R02 appariements, R03 échographie normale)."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "organisation/execution-20261014/cahier-cycle2.json",
+      "sha256": "06d0bbda24cbdc7423beb23b17bc5edd9049948dc99cd950d94cfb96b1020d9e",
+      "explanation": "Cahier N18 lu : dossier de livraison CYCLE_02_N18, 21 parties, 8 emplacements d'images avec id et anchor ; écriture limitée à ce dossier et au dossier auteur CYCLE_02_CLAUDE/N18."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/N18/pass1.json",
+      "sha256": "6292d0a4f6e489537ea9e78f434a091d6666c16abf9e99d04e35ac3e84ac5c89",
+      "explanation": "Passe 1 de C02-R-ENDO lue intégralement : 3 réserves bloquantes et 4 non bloquantes (R04 à R07), sources archivées citées (SHA SSN 2025 et KDIGO 2024 identiques à mes téléchargements du jour)."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
+      "sha256": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
+      "explanation": "Contrat suisse lu : SSN 2025 puis KDIGO/ERA, FI Swissmedic du produit exact (16 FI téléchargées via AmiKo ce jour), aucune recommandation américaine décisionnelle."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "organisation/execution-20261014/CONTRAT_REVUES.md",
+      "sha256": "37149122d0cdde390ee62032a4f0120571830668c505dab3eb9a77fe17957930",
+      "explanation": "Contrat de revue lu : l'auteur corrige sa remise sans réécrire les preuves Codex ni le pass1 ; l'auditeur croisé C02-R-ENDO reste distinct."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "CHAPTER_SPEC.md",
+      "sha256": "d43b97e59597334c3adcc194c341fa7abcf6d8d9da50d41bb351d349e04fbc1c",
+      "explanation": "Contrat HTML relu : quatre onglets, classes fermées, fenêtres préfixées n18-, dernier îlot alert puis key, Pareto par partie."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/STYLE_REDACTION.md",
+      "sha256": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "explanation": "Guide de rédaction relu ; aucune validation médicale humaine revendiquée ; empreintes d'entrée des 7 sources et 8 images relevées avant toute modification (copie scratchpad sha_entree.txt, reprise dans auteur.json)."
+     }
+    ]
+   }
+  ]
+ },
+ "exit": {
+  "actor": "C02-R-NEPH",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T21:44:03.315505+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+      "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+      "explanation": "Passe 2 conduite comme auteur correcteur C02-R-NEPH sur demande du coordinateur, en réponse au pass1 croisé ; ni commit, ni push, ni injection par l'auteur."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse_claude.json",
+      "sha256": "1862623f01c3d0dd35431c41cb5f0284c08a3ab87ec450a777eb960364bb2219",
+      "explanation": "Écritures limitées aux 6 sources HTML N18, aux preuves suffixées _claude (registre, manifeste images inchangées, nouvelle matrice de couverture SSED/SSN) et au dossier auteur ; glossaire et images inchangés ; dossier croise/ non touché."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
+      "sha256": "66a155331deadf11a8031a77d3845fb65a4b6a0d8e8efdae327a57a5bf62517f",
+      "explanation": "87 décisions appariées (45 de la passe 1 + 42 de la passe 2) : KDIGO 2024 (PP 1.1.3, 1.2.2–1.2.3, 2.1–2.3, 3.3–3.15, 4.2–4.4, 5.1–5.5, tables 1, 6, 8, 11, 12, 25, 26, 28, 32), consensus SSED/SSN 2024 lu en entier, HUG 2017, OpenStax 25.3–25.10, 26.4, 6.7, Hansen 2016, FI Kerendia, Forxiga, Lasix, Crestor, Eliquis, Ramipril, Veltassa, Aranesp relues le 14.10.2026."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse_claude.json",
+      "sha256": "1862623f01c3d0dd35431c41cb5f0284c08a3ab87ec450a777eb960364bb2219",
+      "explanation": "Consensus SSED/SSN 2024 intégré en 12 points (potassium sous bloqueur, cibles tensionnelles, hypolipémiants et LDL, fer/érythropoïétine, bandelette puis sédiment) ; divergences exposées et arbitrées : A2/A3 à 30 mg/mmol (KDIGO repris par la SSN 2025), fer hors dialyse (KDIGO 2026 plus récent), pression (SSN 2025 plus récente)."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/croise/pass1.json",
+      "sha256": "23d95b3b4d862a1c8c5476506ca491a2b211bc3b1767fb248251c3eb886d85a2",
+      "explanation": "Corrections répondant aux réserves X01–X03 et aux trois observations non bloquantes du pass1 de C02-R-ENDO, sans modifier le dossier croise/ ; la passe 2 reste à l'auditeur croisé distinct."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/chapters/N18/N18_pop1.html",
+      "sha256": "4ef26888dbff9bf9e51673c6eb84970451d7cc8e803c8514b1b928e307461d6b",
+      "explanation": "test_v7 --static N18 : OK (45 295 mots, 111 fenêtres, 4 quiz, 21 Pareto) ; 42 fenêtres prescrites réécrites, 0 % de phrases reprises du corps (mesure automatique) ; fenêtres propres créatinine, cystatine C et frontière A2/A3 ; aperçu Playwright 1440 et 390 px sans erreur JavaScript ni débordement."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
+      "sha256": "66a155331deadf11a8031a77d3845fb65a4b6a0d8e8efdae327a57a5bf62517f",
+      "explanation": "Aucune validation médicale humaine ; les 858 entrées du registre Codex ne sont pas revues une à une et celles des anciennes fenêtres (276 identifiants retirés) sont caduques ; image A06 australienne conservée, limite déclarée."
+     }
+    ]
+   }
+  ]
+ },
+ "entry_file_sha256_before_changes": {
+  "chapters/N18/N18_a.html": "d07715dc2d0ec0df8bf274ae47b5b4fcccd2fc31a57431b52f84fee201ed93ff",
+  "chapters/N18/N18_b.html": "15b0b0a2447f77980ceb99c92792d1914e2bde84221b5babf2c2d798570dd670",
+  "chapters/N18/N18_c.html": "b40b362fc3ed070a5f9319195a730eef1c6069ab0759913661ab33a31b944b2b",
+  "chapters/N18/N18_d.html": "4cdf06a6748da176a4b82a2facae9687d6953809ece4f3a74543ce9259d4e9a5",
+  "chapters/N18/N18_pop1.html": "48b8e93f07fa02f03e1030282f93fe5dcf709ac54a0b47869539cc42367f2b5c",
+  "chapters/N18/N18_pop2.html": "ba7b8f5030a224404aa14da12ca2c1f1873d05858e4f5de7d490c8c79c02983c",
+  "glossary/n18.py": "9bcc44de42dddf94ae1c52e0b7aaf5c0fd19abcd7e08c72ab165d90550cf2969",
+  "assets/img/cycle2/n18/n18_01.gif": "b17da3f01daadcc230cc265283d3c92a83155bf3a69a86a9ac390e8d825f9431",
+  "assets/img/cycle2/n18/n18_02.gif": "b645908a6e9852b57ae8f6c16dbe98a626ec53a9492334db1baf36b135d2c7b8",
+  "assets/img/cycle2/n18/n18_03.gif": "bf55722e40c924a2b09361f88a8b6a8f2a5812e54d7f93bc1ed8c59de1545450",
+  "assets/img/cycle2/n18/n18_04.gif": "19a6864b336f5b64c8805fc1a60045ad517f75db2f9705d1d44c7d78d6be8a24",
+  "assets/img/cycle2/n18/n18_05.gif": "b644e0c1ac2ba23ec279085dfab2f5f9e92509ef3b64fc00032c24b014bfcb0c",
+  "assets/img/cycle2/n18/n18_06.gif": "f5568dfc807350cac1a6910db5fbf941e7cf62e300f1e22d6cd300cabe9cb05f",
+  "assets/img/cycle2/n18/n18_07.gif": "b9b52f4417bd6a48ca5789225354e861018b92030b94757121e61d1d4f7aeaa6",
+  "assets/img/cycle2/n18/n18_08.gif": "3d6d5f6a248b1f56b474dcafd62cce7cf78ef882f36452ed63cbc59df1c9e181"
+ },
+ "final_files": {
+  "chapters/N18/N18_a.html": "95f05b1b1210f21856e9205e60e4108de6ac19bee6c78367e119fdfc706e1676",
+  "chapters/N18/N18_b.html": "16a5e5fa164eba823b322f94548957bce3a92131542220ecdd9f9ce302773db0",
+  "chapters/N18/N18_c.html": "cc90129b56c00a29277f083cac3ae6fae801b41cbe48040e1c67385eb7bb43ee",
+  "chapters/N18/N18_d.html": "f317270b1d3f6bdfe0b2b768699fed890bc25624e096b935fda7ae102aaf88c6",
+  "chapters/N18/N18_pop1.html": "4ef26888dbff9bf9e51673c6eb84970451d7cc8e803c8514b1b928e307461d6b",
+  "chapters/N18/N18_pop2.html": "06b0ae573ba1fc9bcc7ae20cad63903e999ffbecd7f948ee77512ebaf3e7e218",
+  "glossary/n18.py": "bbc7be298bc54c4474ef226ea7dda4d09623c6c458e905318e7411a09d3a6a73"
+ },
+ "image_files": {
+  "assets/img/cycle2/n18/n18_01.gif": "b17da3f01daadcc230cc265283d3c92a83155bf3a69a86a9ac390e8d825f9431",
+  "assets/img/cycle2/n18/n18_02.gif": "b645908a6e9852b57ae8f6c16dbe98a626ec53a9492334db1baf36b135d2c7b8",
+  "assets/img/cycle2/n18/n18_03.gif": "e28e47510ec9079cd12940f82bf509b5e87c97e02df036ea09ff464b3a61f9fc",
+  "assets/img/cycle2/n18/n18_04.gif": "19a6864b336f5b64c8805fc1a60045ad517f75db2f9705d1d44c7d78d6be8a24",
+  "assets/img/cycle2/n18/n18_05.gif": "2e7ac232f3847b696c55317aced3ccda7e61f7082cf00cd37f9497f9dc227864",
+  "assets/img/cycle2/n18/n18_06.gif": "f5568dfc807350cac1a6910db5fbf941e7cf62e300f1e22d6cd300cabe9cb05f",
+  "assets/img/cycle2/n18/n18_07.gif": "b9b52f4417bd6a48ca5789225354e861018b92030b94757121e61d1d4f7aeaa6",
+  "assets/img/cycle2/n18/n18_08.gif": "3d6d5f6a248b1f56b474dcafd62cce7cf78ef882f36452ed63cbc59df1c9e181"
+ },
+ "blocking_reserves": [],
+ "source_ledger": {
+  "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger_claude.json",
+  "sha256": "66a155331deadf11a8031a77d3845fb65a4b6a0d8e8efdae327a57a5bf62517f"
+ },
+ "image_manifest": {
+  "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/images_claude.json",
+  "sha256": "e24ee9309492827adb465d06ec6eb2d84f6a54aaf1bddff6cbcb93778fab7ab7"
+ },
+ "reserves_resolues": [
+  {
+   "id": "R01",
+   "resolution": "Fenêtre n18-kerendia : ligne « Traitement associé » (inhibiteur modéré du CYP3A4 déjà prescrit → 10 mg quel que soit le DFGe), cellule 20 mg nuancée, paragraphe mécanistique (CYP3A4 90 %, ASC ×3,48 érythromycine, ×2,70 vérapamil, ×1,57 fluvoxamine), surveillance du potassium à l'instauration et à chaque changement de dose, exemple fictif chiffré ; algorithme d'entretien aligné mot à mot sur le tableau 1 ; contre-indications complétées (exemples, inducteurs, pamplemousse, allaitement) ; concordance en P01-4, P02-1, tableau de surveillance P02-3, Pareto P01/P02 et critères SSN de la finérénone en A07-3.",
+   "source": "FI suisse Kerendia (GTIN 7680681300014, autorisation 68130, mise à jour novembre 2025), rubriques Posologie > Traitement associé, Mises en garde > Inhibiteurs faibles et modérés du CYP3A4, Interactions ; SSN 2025 figure 3",
+   "fichiers": [
+    "chapters/N18/N18_pop2.html",
+    "chapters/N18/N18_d.html",
+    "chapters/N18/N18_pop1.html",
+    "chapters/N18/N18_b.html"
+   ]
+  },
+  {
+   "id": "R02",
+   "resolution": "Nouveau registre source_ledger_claude.json (45 décisions) apparié au passage pertinent : chronicité → KDIGO PP 1.1.3.1–1.1.3.2 (S149) ; catégories → tables 2 et 3 (S137) ; conversions → S127 (D30) ; surveillance de l'Hb sous Aranesp → FI Aranesp, phase correctrice et entretien ; KFRE et limites → KDIGO 2.2 (S156) et Schulz 2022 tableau 1 ; chaque entrée porte section, résumé, population, limites et SHA-256 du téléchargement du 14.10.2026. Le registre Codex de 858 entrées n'est pas réécrit ; ses appariements fautifs sont remplacés par les entrées marquées.",
+   "source": "Documents téléchargés le 14.10.2026 (SSN 2025 d48d83e8…, KDIGO 2024 b18db280…, KDIGO 2026 08829c8b…, FI AmiKo)",
+   "fichiers": [
+    "preuves/source_ledger_claude.json"
+   ]
+  },
+  {
+   "id": "R03",
+   "resolution": "Image IMG-N18-E02-1 remplacée par un montage réel de deux figures CC BY 4.0 du même article : A rein adulte normal (fig. 1), B maladie rénale chronique sur glomérulonéphrite (fig. 22). Texte E02-5 réécrit : orientation, capsule, sinus hyperéchogène, cortex et pyramides, colonnes de Bertin, longueur 10–12 cm, cortex 7–10 mm, parenchyme 15–20 mm, échogénicité corticale versus foie/rate, exception du nourrisson ; lecture A/B ; tableau normal/MRC introduit et commenté ; fenêtre n18-e02-fenetre-2 réécrite (normal, signes de chronicité, hydronéphrose, kystes, calculs, limites) ; fenêtre n18-echographie corrigée.",
+   "source": "Hansen, Nielsen, Ewertsen, Diagnostics 2016;6:2, sections 3, 4, 6, 7, 8, figures 1, 3, 22, 24, 25",
+   "fichiers": [
+    "chapters/N18/N18_c.html",
+    "chapters/N18/N18_pop1.html",
+    "assets/img/cycle2/n18/n18_03.gif"
+   ]
+  }
+ ],
+ "corrections": [
+  "R04 : « ces huit produits » corrigé (P01-2 et fenêtre).",
+  "R05 : ligne Ramipril du tableau de surveillance P02-3 : contrôle à une semaine (consensus SSED/SSN) chez le diabétique G3+ ou après hyperkaliémie, sinon 2–4 semaines (KDIGO PP 3.6.2).",
+  "R06 : 21 pièges génériques des Pareto remplacés par un piège concret et sourcé propre à chaque partie.",
+  "R07 : manifeste images_claude.json avec largeur/hauteur réelles des fichiers finaux.",
+  "21 encadrés « À retenir » (et leurs copies dans les Pareto) réécrits en phrases complètes, sans infinitif injonctif.",
+  "Dernier îlot : div.alert avec les critères KDIGO complets (DFG < 60 ou marqueurs listés, durée et moyens de preuve) puis div.key chiffré (bornes G/A, variations 20/30 %, doublement ACR, potassium Kerendia, bicarbonate 18, Hb < 115 g/L, critères de recours).",
+  "Fenêtres E03 : titres échangés pour correspondre à leur contenu (complications ; risque pronostique).",
+  "G5 : libellé KDIGO « kidney failure » rétabli.",
+  "Glossaire : sous-codes N18.1 à N18.9 et présentations DualDose/FixDose déclarés ; numéros de figure et espaces d'unités corrigés : l'audit d'abréviations échouait sur la remise d'entrée et passe désormais.",
+  "Microphotographie n18_05 allégée de 8,6 Mo à 1,2 Mo (1400×933), attributs HTML mis à jour."
+ ],
+ "enrichments": [
+  "A06-6 : tableau des diagnostics différentiels hiérarchisés par gravité (GNRP, microangiopathie thrombotique, néphropathie à cylindres myélomateux, syndrome urémique/néphrotique, atteinte aiguë sur chronique) puis causes chroniques, avec élément discriminant et examen décisif (HUG 2017, SSED/SSN), lecture commentée et quiz SSP corrigé.",
+  "Nouvelle fenêtre n18-drapeaux : drapeaux rouges du consensus suisse diabète et rein, tableau des DFGe trop bas pour l'âge, exemple fictif.",
+  "Nouvelle fenêtre n18-acidose-seuils : divergence suisse 18 contre 22 mmol/L et cible 22–26, résolution par la source la plus récente, texte de chaque source accessible.",
+  "A07-3 : critères SSN de la finérénone (DT2, iSRA maximal toléré, DFGe ≥ 25, K ≤ 5, ACR ≥ 3 mg/mmol).",
+  "Kerendia : mécanisme pharmacocinétique de l'interaction CYP3A4 et exemple chiffré."
+ ],
+ "numerical_checks": [
+  "KDIGO G1–G5 et A1–A3 (S137)",
+  "durée ≥ 3 mois (S149)",
+  "variations 20 %/30 %, doublement ACR (S155)",
+  "KFRE 3–5 %/5 ans, >10 % et >40 %/2 ans (S156)",
+  "dialyse souvent DFG 5–10, préparation <15–20 (S168)",
+  "bicarbonate <18 (S160)",
+  "Hb <115 g/L sous ASE et seuils de fer KDIGO 2026 (rec. 2.1, 2.3, 3.3.1, PP 2.2)",
+  "Kerendia 20/10 mg, K 4,8/5,0/5,5, CYP3A4 modéré 10 mg, ASC 3,48/2,70/1,57",
+  "Forxiga 10 mg, <25 non instauré, DAPA-CKD 4304, 28,5 mois",
+  "Ramipril 1,25 → 5 mg, clairance 20–50",
+  "Aranesp 0,45/0,75/1,5 µg/kg, Hb 10–12 g/dL, >2 g/dL/4 sem −25 %",
+  "Venofer Ganzoni 70×5×2,4+500 = 1340 mg",
+  "Néphrotrans 137 mg Na/capsule, 4–9 capsules",
+  "Crestor CI <30, 40 mg CI <60",
+  "Eliquis 2,5 mg×2 si 2 critères (80 ans, 60 kg, 133 µmol/L)",
+  "Veltassa 8,4–25,2 g",
+  "CKD-EPI exemple 45,98 refait",
+  "KFRE exemple 7,396 % refait",
+  "ACR 15 mg/mmol ≈ 133 mg/g ; 35 mg/mmol ≈ 310 mg/g",
+  "Hansen : 10–12 cm, cortex 7–10 mm, parenchyme 15–20 mm",
+  "SSED : 40 % des DT2, seuils d'âge 75/60/45, >5 mL/min/an"
+ ],
+ "controls": {
+  "test_v7_static": "python3 test_v7.py --static N18 → OK (45 295 mots, 111 fenêtres, 4 quiz, 21 Pareto) sur worktree jetable.",
+  "preview": "tools/night_preview.py N18 sur worktree jetable, build_exit 0 ; Playwright/Chromium 1440×900 et 390×844 : 0 erreur JavaScript, 0 débordement horizontal ; fenêtres n18-creatinine, n18-cystatine, n18-a3-borne, n18-a06-fenetre-1, n18-a07-fenetre-1, n18-e01-fenetre-1, n18-s01-fenetre-1, n18-p01-fenetre-2 ouvertes et inspectées ; tableaux A08 inspectés.",
+  "duplication": "0 % de phrases > 40 caractères des 45 fenêtres réécrites ou créées présentes dans le corps.",
+  "worktree": "supprimé après contrôle, aucun fichier temporaire dans le dépôt"
+ },
+ "reserves_ouvertes": [
+  "Non bloquante : l'image A06 reste un parcours australien de soins primaires (portée annoncée) ; aucune figure ouverte d'algorithme étiologique suisse ou européen trouvée.",
+  "Le registre Codex de 858 entrées n'a pas été revu entrée par entrée ; ses entrées liées aux 276 identifiants retirés des anciennes fenêtres sont caduques ; le registre Claude couvre 87 décisions.",
+  "Aucune validation médicale humaine ; passe 2 de l'auditeur croisé à venir."
+ ],
+ "swiss_coverage": {
+  "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/couverture_suisse_claude.json",
+  "sha256": "1862623f01c3d0dd35431c41cb5f0284c08a3ab87ec450a777eb960364bb2219"
+ },
+ "passe_2": {
+  "requested_by": "coordinateur, après pass1 croisé de C02-R-ENDO (docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/N18/croise/pass1.json, sha256 23d95b3b4d862a1c8c5476506ca491a2b211bc3b1767fb248251c3eb886d85a2)",
+  "finished_at": "2026-10-14T21:44:32.220578+00:00",
+  "file_sha256_before_pass2": {
+   "chapters/N18/N18_a.html": "ab2ed3f23cc7e0070186e005ecbb683fd2f6f7df7304ad22cca1419b823d37ea",
+   "chapters/N18/N18_b.html": "99ba6854d036cd2723261400390fde8fbd0fd055629f1644d9b2a3c802dfe062",
+   "chapters/N18/N18_c.html": "ee50de86647b697562b750ba718991598987fd9168058cad12b37d8185222a7c",
+   "chapters/N18/N18_d.html": "d40f0e50b7efcf099b9d8d67e07b45a6d1e31e9cefd73c7b8208c877a052b759",
+   "chapters/N18/N18_pop1.html": "22f4336c53ed2df85e67cbff35f5ebb462e016ae768eb4ad0eb1bab74c2b4b4e",
+   "chapters/N18/N18_pop2.html": "259649af5c9abce933ec7520a5076eda800a774642f293c54335e511676c8b75",
+   "glossary/n18.py": "bbc7be298bc54c4474ef226ea7dda4d09623c6c458e905318e7411a09d3a6a73"
+  },
+  "previous_author_files_sha256": {
+   "sortie.json": "973ba350153d47dfe88485efa8aeb232aa5465d3bfa0edf22b19b3fe32ab63a7",
+   "auteur.json": "e7bbbff5cbe89805f4a9e565ad8a787ecda2e91f9bd3cfe9b454e314c55f8758",
+   "rapport.md": "3761ebbeccefd8fc91ee37a5965146c8074b805bfb1a2e48e68561913b785186"
+  },
+  "reserves_croisees_resolues": [
+   {
+    "id": "X01",
+    "resolution": "Les 42 fenêtres prescrites n18-a01-fenetre-1 à n18-p02-fenetre-2 réécrites intégralement (titres conservés) avec un approfondissement absent du corps : tableaux de preuves, mécanismes, seuils datés, calculs nouveaux (CKD-EPI féminin, désindexation, Cockcroft–Gault contre CKD-EPI chez une femme âgée, ACR et créatininurie, pression nette de filtration, protéines/kg), limites et sources ; mesure automatique : 0 % de phrases (> 40 caractères) reprises du corps pour les 45 fenêtres concernées. Nouvelles fenêtres n18-creatinine (origine, déterminants non liés au DFG, Jaffe/enzymatique, unités, intervalle, FI Eliquis) et n18-cystatine (déterminants, indications du tableau 8, discordance, rendu) ; 64 mots verts « créatinine »/« cystatine » repointés depuis n18-e01-fenetre-1. Tableau dupliqué de n18-acr et de E02-4 remplacé par des tableaux comparatifs."
+   },
+   {
+    "id": "X02",
+    "resolution": "Consensus SSED/SSN 2024 intégré dans le corps : A07-5 (moments du dosage du potassium, dose minimale si DFGe < 60), A07-6 (tableau des objectifs tensionnels SSED/SSN, SSN 2025, KDIGO ; progression bithérapie puis trithérapie toutes les 8 semaines ; hypertension résistante ; arbitrage pour M. L.), A08-1 (tableau potassium sous bloqueur : > 5,5 réduire, > 6 arrêter, chélateur, comparé à KDIGO), A08-4 (Hb 10–11,5 g/dL, fer si ferritine < 500 et/ou saturation ≤ 30 %, pas en infection active, érythropoïétine par le néphrologue), A08-5 (tableau des hypolipémiants selon DFGe et dialyse, tableau des objectifs LDL, comparaison SSN 2025 et KDIGO), E02-4 (bandelette puis sédiment si DFGe < 60 ou ACR > 3). Fenêtres complétées sans copie : n18-hyperkal (pseudohyperkaliémie, tableau 28, trois lignes de la figure 32), n18-lipides (Crestor et intensité), n18-orthostase (désintensification), n18-fer-criteres (ligne SSED et arbitrage chiffré au profit de KDIGO 2026). Matrice preuves/couverture_suisse_claude.json (12 points)."
+   },
+   {
+    "id": "X03",
+    "resolution": "Nouvelle fenêtre de contentieux n18-a3-borne (KDIGO tableau 3 et figure 48, SSED/SSN deux tableaux, SSN 2025, HUG 2017 ; règle retenue : KDIGO repris par la SSN 2025 ; conséquence pratique). Piège Pareto A03 reformulé (G3b/G4 non ambigu ; borne ACR selon le référentiel nommé). Phrase de divergence ajoutée en A03-3, tableau comparatif en E02-4 et dans n18-acr."
+   }
+  ],
+  "observations_non_bloquantes": [
+   "KDIGO PP 2.2.2 (> 10 % à 2 ans) ajouté dans n18-calcul-kfre, n18-a09-fenetre-1, n18-e03-fenetre-2 et n18-a12-fenetre-2.",
+   "Infinitifs « Exercice : comparer/préparer/expliquer/rédiger » reformulés en A04-6, A05-6, A09-5, P02-6 ; « L’exercice consiste à formuler » (E02-6) reformulé.",
+   "Image A06 inchangée (aucune alternative ouverte trouvée en passe 1)."
+  ],
+  "autres_corrections": [
+   "« consensus initial2023 » corrigé (6 occurrences).",
+   "Espaces manquantes de la fenêtre n18-calcul-cockcroft corrigées."
+  ],
+  "evidence_ids": {
+   "new_first": "N18-C0963",
+   "new_last": "N18-C1810",
+   "removed_count": 276
+  },
+  "scripts_scratchpad": "n18/scripts/edits3.py, wins_a.py, wins_b.py, proofs3.py (hors dépôt)"
+ }
+}

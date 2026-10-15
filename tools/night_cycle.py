@@ -144,7 +144,7 @@ def ready(tree, row, rows, cross_completed_at=None):
     return dict(files, **images)
 
 
-def cross_boundary(tree, cycle, now):
+def cross_boundary(tree, cycle, now, deadline=DEADLINE):
     """Archive the real initial cross phase; later corrections need final rechecks."""
     phase = C.proof(tree, cycle.get('cross_phase'), 'Clôture initiale des audits croisés')
     C.require(phase.get('cycle') == cycle['cycle'], 'Chaîne : phase croisée étrangère')
@@ -190,7 +190,7 @@ def cross_boundary(tree, cycle, now):
                       'Chaîne : relecture finale antidatée ou future')
         dates.append(C.dated(original['exit']['checked_at']))
     completed=C.dated(phase.get('completed_at'))
-    C.require(max(dates) == completed <= now and completed < C.dated(DEADLINE), 'Chaîne : date de clôture initiale fausse')
+    C.require(max(dates) == completed <= now and (deadline is None or completed < C.dated(deadline)), 'Chaîne : date de clôture initiale fausse')
     return completed
 
 
@@ -219,9 +219,9 @@ def temporal_proofs(tree, cycle, now):
                   'Chaîne : clôture antérieure aux publications ou future')
 
 
-def journal_proof(before, after, data, now):
-    raw = after.read(JOURNAL)
-    previous = before.read(JOURNAL, required=False)
+def journal_proof(before, after, data, now, journal=JOURNAL):
+    raw = after.read(journal)
+    previous = before.read(journal, required=False)
     C.require(previous is None or raw.startswith(previous), 'Chaîne : journal historique réécrit')
     try:
         events = [C.json.loads(line) for line in raw.splitlines() if line.strip()]
@@ -242,6 +242,15 @@ def journal_proof(before, after, data, now):
                       'Chaîne : transition sans preuves dans le journal')
 
 
+def claude_transfers(tree):
+    """Cycles Codex repris par Claude (organisation/CYCLES_CLAUDE.json) : délégués à tools/cycle_claude.py."""
+    try:
+        from tools.cycle_claude import transferred_cycles
+    except ModuleNotFoundError:
+        from cycle_claude import transferred_cycles
+    return transferred_cycles(tree)
+
+
 def validate(before, after, now=None):
     now = now or datetime.now(timezone.utc)
     old, new = records(before), records(after)
@@ -249,9 +258,17 @@ def validate(before, after, now=None):
         return {}, set(), set()
     C.require(new is not None, 'Chaîne : suppression du registre interdite')
     changed = {p for p in before.entries.keys() | after.entries.keys() if before.entries.get(p) != after.entries.get(p)}
-    codes = {r['code'] for cycle in new['cycles'] for r in cycle['chapters']}
-    course_changes = {p for p in changed if C.managed(p, codes) or any(p.startswith(f"assets/img/cycle{c['cycle']}/") for c in new['cycles'])}
-    touched = REGISTRY in changed or bool(course_changes)
+    # Seule délégation : un cycle déclaré repris par Claude est contrôlé par cycle_claude ;
+    # le registre et le journal Codex restent soumis à toutes les règles ci-dessous.
+    transferred = claude_transfers(after)
+    own = [c for c in new['cycles'] if c['cycle'] not in transferred]
+    codes = {r['code'] for cycle in own for r in cycle['chapters']}
+    course_changes = {p for p in changed if C.managed(p, codes) or any(p.startswith(f"assets/img/cycle{c['cycle']}/") for c in own)}
+    # Les dernières écritures Codex d'un cycle transféré ne relèvent plus de l'échéance nocturne.
+    strip = lambda d: [c for c in d['cycles'] if c['cycle'] not in transferred] if d else None
+    registry_touched = REGISTRY in changed and (old is None or strip(old) != strip(new) or
+                                                {k: v for k, v in old.items() if k != 'cycles'} != {k: v for k, v in new.items() if k != 'cycles'})
+    touched = registry_touched or bool(course_changes)
     if touched:
         journal_proof(before, after, new, now)
         for cycle in new['cycles']: temporal_proofs(after, cycle, now)
@@ -272,6 +289,11 @@ def validate(before, after, now=None):
             C.require(all(r['status'] == 'EN_PRODUCTION' and all(r[k] is None for k in PROOFS) for r in cycle['chapters']),
                       'Chaîne : nouveau cycle avec preuves préétablies')
             C.require(not course_changes, 'Chaîne : nouveau cycle avec injection simultanée')
+            continue
+        if cycle['cycle'] in transferred:
+            # Gel à partir du transfert : la remise peut porter le dernier état Codex, jamais une écriture ultérieure.
+            if claude_transfers(before):
+                C.require(cycle == old['cycles'][index], 'Chaîne : cycle transféré à Claude immuable dans le registre Codex')
             continue
         previous_cycle = old['cycles'][index]
         for field in ('cycle', 'owner', 'started_at', 'budget'):
