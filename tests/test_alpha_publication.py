@@ -121,6 +121,34 @@ class AlphaTests(unittest.TestCase):
         self.assertEqual(metadata, {})
         self.assertTrue(P.validate(projected, projected, {P.RECEIPT}, adopted=True))
 
+    def historical_memory_tree(self):
+        from tools import betta_injecter as injector
+        files = {path: (self.root / path).read_bytes()
+                 for path in E.GitTree(self.root, 'HEAD').entries}
+        with patch.object(injector, 'ROOT', self.root):
+            return injector._Tree(files)
+
+    def test_historical_memory_transaction_needs_no_alpha_projection(self):
+        tree = self.historical_memory_tree()
+        self.assertFalse(hasattr(tree, 'revision'))
+        projected, receipts = A.verify(tree)
+        self.assertIs(projected, tree)
+        self.assertEqual(receipts, {})
+        self.assertEqual(P.adopted_codes(tree), {'E11'})
+
+    def test_historical_memory_transaction_still_rechecks_real_provenance(self):
+        tree = self.historical_memory_tree()
+        path = 'chapters/E11/E11_a.html'
+        tree.files[path] = b'Unreviewed mutation'
+        with self.assertRaisesRegex(P.PublicationError, 'différente du reçu'):
+            P.adopted_codes(tree)
+
+    def test_alpha_receipts_cannot_be_verified_as_memory_only_transactions(self):
+        self.publish()
+        tree = self.historical_memory_tree()
+        with self.assertRaisesRegex(A.AlphaError, 'arbre Git immuable'):
+            P.adopted_codes(tree)
+
     def test_forged_new_hash_rejected(self):
         self.new[next(iter(self.new))] = b'Unreviewed alteration'
         with self.assertRaisesRegex(A.AlphaError, 'source finale'):

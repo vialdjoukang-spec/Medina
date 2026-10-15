@@ -177,7 +177,11 @@ def verify(tree, trusted_before=None):
     if not paths:
         if trusted_before is not None:
             require(not any(p.startswith(PREFIX) for p in trusted_before.entries), 'suppression de reçu')
-        return HistoricalView(tree, {}), {}
+        # Historical callers also validate in-memory proposed transactions.
+        # Without Alpha receipts they need neither projection nor a revision.
+        return tree, {}
+    require(isinstance(getattr(tree, 'revision', None), str),
+            'arbre Git immuable requis pour vérifier les reçus Alpha')
     ancestor(tree.root, HISTORICAL_ANCHOR, tree.revision)
     anchor = GitTree(tree.root, HISTORICAL_ANCHOR)
     require(tree.read(HISTORICAL_RECEIPT) == anchor.read(HISTORICAL_RECEIPT), 'reçu historique modifié')
@@ -357,7 +361,8 @@ def views(before, after):
     """For garde: preserve all historical controls on all non-Alpha changes."""
     historical_before, _ = verify(before)
     historical_after, metadata = verify(after, trusted_before=before)
-    if 'chapters.json' in historical_before.originals or 'chapters.json' in historical_after.originals:
+    if ('chapters.json' in getattr(historical_before, 'originals', {}) or
+            'chapters.json' in getattr(historical_after, 'originals', {})):
         def normalized(view):
             raw = json.dumps(json.loads(view.read('chapters.json')), ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
             return HistoricalView(view, {'chapters.json': (view, raw)})
