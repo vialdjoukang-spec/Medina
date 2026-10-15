@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "G22",
+  "title": "Syndrome parkinsonien au cours de maladies classées ailleurs",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "VI",
+  "chapter_title": "Maladies du système nerveux",
+  "block": "G20-G26",
+  "block_title": "Syndromes extrapyramidaux et troubles de la motricité",
+  "ssp": [
+    98
+  ],
+  "subcodes": [],
+  "gold_subcode_count": 0,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/G22/G22_a.html": "1b8181dc324ebcd76be60d5d06601539ae09f8ef7ec9cc41ab6c9391ce736b87",
+    "chapters/G22/G22_b.html": "8dd072018caad320adb4e02ad4ddee4f954d6a904559525fa864a13b213acc32",
+    "chapters/G22/G22_c.html": "a69815ccdd82278fa2b96cd28171dbe95c1578cfaf8ec95892c772e8d09d243c",
+    "chapters/G22/G22_d.html": "20518198e3d01d9e56dd0ed1bc4a508d6733b750859cfd832134ee7b60a27a89",
+    "chapters/G22/G22_pop1.html": "897b77f3cf418bab6f1827b8f271eda706e74e0ca2a9cdc070f3ecbcfd10a775",
+    "chapters/G22/G22_pop2.html": "ec3c545f8809cc189dbd9c1f0fa5b516bd06f001b4a83072aa48edd3e8f0908e",
+    "glossary/g22.py": "38a8544502041918da6dbf7de0b7351c2930fff770bfa8f79b4971aec525a9b9"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://amiko.oddb.org",
+    "https://archive-ouverte.unige.ch/unige:45348",
+    "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g20-g26.htm",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11408197/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6531649/",
+    "https://pubmed.ncbi.nlm.nih.gov/26474316/",
+    "https://pubmed.ncbi.nlm.nih.gov/29661694/",
+    "https://pubmed.ncbi.nlm.nih.gov/37842984/",
+    "https://pubmed.ncbi.nlm.nih.gov/40089450/",
+    "https://register.awmf.org/assets/guidelines/030-101l_S1_Neurosyphilis_2026-05.pdf",
+    "https://www.bag.admin.ch/fr/maladie-de-creutzfeldt-jakob-mcj",
+    "https://www.bfarm.de/EN/Code-systems/Classifications/ICD/ICD-10-GM/Tabular-list/codestructure.html",
+    "https://www.fmcgastro.org/texte-postu/postu-2023/maladie-de-wilson/",
+    "https://www.hug.ch/sites/interhug/files/structures/medecine_de_premier_recours/parkinsonism_smpr_180418.pdf",
+    "https://www.revmed.ch/view/429217/3704145/RMS_604_870.pdf"
+  ],
+  "html_bytes": 146911,
+  "effort_proxy": 143,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S08-G22-CODEX",
+  "branch_template": "codex/alpha/audit/s08-g22-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S08-G22-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/G22/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/G22/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/G22/",
+    "glossary/g22.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S08-G22-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/G22/",
+    "glossary/g22.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S08-CODEX-04"
+}

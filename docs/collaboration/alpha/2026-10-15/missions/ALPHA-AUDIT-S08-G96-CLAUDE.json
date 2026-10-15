@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "G96",
+  "title": "Autres affections de système nerveux central",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "VI",
+  "chapter_title": "Maladies du système nerveux",
+  "block": "G90-G99",
+  "block_title": "Autres affections du système nerveux",
+  "ssp": [
+    103,
+    104
+  ],
+  "subcodes": [
+    "G96.0",
+    "G96.1",
+    "G96.8",
+    "G96.9"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/G96/G96_a.html": "113ef031198da128e77014cdebe14197de703252c52685dd3c81f352553f9f3e",
+    "chapters/G96/G96_b.html": "20bf46cc58410587c37db6dd4441a48ad20bf6a94b81a6a1b8268c1dd69aba90",
+    "chapters/G96/G96_c.html": "9c5f0454223cbe99bc6bc317c01cb4b309d084b057caed85bc366830253d37e8",
+    "chapters/G96/G96_d.html": "1890ce09d37565650d36101c65d97bb02303329a78fdba2137a990d1d9bb83c7",
+    "chapters/G96/G96_pop1.html": "06ba448da9a432338c8c5c0bf5b103883d8a0f75357ea385d841f6b0b5deb536",
+    "chapters/G96/G96_pop2.html": "7dbda920f55e5ba9b809f3a7d7ae1797418849e64f9eaa44e08d088e161cb7eb",
+    "glossary/g96.py": "6ce7baf084ee783ccd14aa421c746258cdf114221f82923a5db9393775fcae52"
+  },
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 105063,
+  "effort_proxy": 103,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Claude",
+  "assignment_id": "ALPHA-AUDIT-S08-G96-CLAUDE",
+  "branch_template": "claude/alpha/audit/s08-g96-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S08-G96-CLAUDE/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/claude/G96/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/claude/G96/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/G96/",
+    "glossary/g96.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S08-G96-CLAUDE-CORRECTION",
+  "correction_paths": [
+    "chapters/G96/",
+    "glossary/g96.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S08-CLAUDE-06"
+}

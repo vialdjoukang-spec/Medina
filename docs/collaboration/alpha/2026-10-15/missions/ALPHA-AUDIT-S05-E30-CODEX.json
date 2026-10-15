@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "E30",
+  "title": "Anomalies de la puberté, non classées ailleurs",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "IV",
+  "chapter_title": "Maladies endocriniennes, nutritionnelles et métaboliques",
+  "block": "E20-E35",
+  "block_title": "Maladies des autres glandes endocrines",
+  "ssp": [
+    156,
+    184
+  ],
+  "subcodes": [
+    "E30.0",
+    "E30.1",
+    "E30.8",
+    "E30.9"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/E30/E30_a.html": "0ab63a094c6b9c401c1bfca431f0356599562d62c3cbe0dfbb8c22c359e63dca",
+    "chapters/E30/E30_b.html": "99d18c48dd865323713e7717307d8671d7b2729ba1fe00f56954a344345b0251",
+    "chapters/E30/E30_c.html": "2c78947b630c49759fb9a9b806614cda32ac9bee26f02f5dd7f0c4e2a80161d8",
+    "chapters/E30/E30_d.html": "776d72bbbfc9d0e33fd3a08c3a49383478825d5a07317f0682df23ec314c47d3",
+    "chapters/E30/E30_pop1.html": "3175f2b48e6fc224b8480ce86451184a97a9f01168242a5ea62aa44f84f57438",
+    "chapters/E30/E30_pop2.html": "d6fc5e1998fcde0474c6e2b016d462a2afb75f4b0f65e0950582d111e37729ed",
+    "glossary/e30.py": "5449da9414d7ab59b01968b98550a6132c2c7831e36f9cc876c78dc48b46b9f6"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://paediatri.dk/images/dokumenter/Vejl_i_hoering_2024/Pubertas_pr%C3%A6cox_DPS.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11729124/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9066594/",
+    "https://register.awmf.org/assets/guidelines/174-022l_S1_Pubertas-tarda-und-Hypogonadismus_2021-12.pdf"
+  ],
+  "html_bytes": 123241,
+  "effort_proxy": 120,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S05-E30-CODEX",
+  "branch_template": "codex/alpha/audit/s05-e30-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S05-E30-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/E30/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/E30/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/E30/",
+    "glossary/e30.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S05-E30-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/E30/",
+    "glossary/e30.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S05-CODEX-03"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "E44",
+  "title": "Malnutrition protéino-énergétique légère ou modérée",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "IV",
+  "chapter_title": "Maladies endocriniennes, nutritionnelles et métaboliques",
+  "block": "E40-E46",
+  "block_title": "Malnutrition",
+  "ssp": [
+    16,
+    138,
+    170
+  ],
+  "subcodes": [
+    "E44.0",
+    "E44.1"
+  ],
+  "gold_subcode_count": 2,
+  "historical_tetrade_cycles": [
+    22
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 31,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S05-E44-CODEX",
+  "branch_template": "codex/alpha/production/s05-e44-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S05-E44-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S05/E44/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S05/E44/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/E44/",
+    "glossary/e44.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S05-CODEX-04"
+}

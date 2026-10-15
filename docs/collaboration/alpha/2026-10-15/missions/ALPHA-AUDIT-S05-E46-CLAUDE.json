@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "E46",
+  "title": "Malnutrition protéino-énergétique, sans précision",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "IV",
+  "chapter_title": "Maladies endocriniennes, nutritionnelles et métaboliques",
+  "block": "E40-E46",
+  "block_title": "Malnutrition",
+  "ssp": [
+    16,
+    138,
+    170
+  ],
+  "subcodes": [],
+  "gold_subcode_count": 0,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/E46/E46_a.html": "80b17395edb290363f35a2396d5f38bb36ab356eb7470c371843bc3da55754f5",
+    "chapters/E46/E46_b.html": "cd8c6f6f1506e4e528b2a955ea0346c1d8f7d5693cc6bf9659647709cfe5bb4f",
+    "chapters/E46/E46_c.html": "f3c0b9fb29f435534e1a0fa639173c9eb3ba765f9922aeac674fe531f7ea1dfa",
+    "chapters/E46/E46_d.html": "b28e876d27d40dff896a6353063dcdde5f127982555b9c20a54f399c4fc73c10",
+    "chapters/E46/E46_pop1.html": "d3384d30af7975db2aaa0ca093a5901face2a6263b4740d5a51ecaed1e0bca89",
+    "chapters/E46/E46_pop2.html": "c6f24b5178aaeea32c83c0162108297f02ce7ef2985132721c53b41971148cf9",
+    "glossary/e46.py": "cbba60381e98ed53107753681c18cc57783bde89a36afc4df5442f186d8703e7"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://doi.org/10.1002/jcsm.12383",
+    "https://doi.org/10.1016/S0140-6736(18)32776-4",
+    "https://doi.org/10.1016/j.clnu.2009.06.005",
+    "https://doi.org/10.1016/j.clnu.2016.09.004",
+    "https://doi.org/10.1016/j.clnu.2022.02.001",
+    "https://doi.org/10.1016/j.clnu.2022.02.009",
+    "https://doi.org/10.1016/j.clnu.2022.09.011",
+    "https://doi.org/10.1016/j.clnu.2023.11.026",
+    "https://doi.org/10.1016/j.clnu.2025.03.018",
+    "https://doi.org/10.1016/j.clnu.2026.106643",
+    "https://doi.org/10.1016/j.nut.2017.09.007",
+    "https://doi.org/10.1016/j.nut.2026.113269",
+    "https://doi.org/10.1016/s0261-5614(02)00214-5",
+    "https://doi.org/10.3390/jcm8122202",
+    "https://doi.org/10.4414/smw.2020.20204",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-e40-e46.htm",
+    "https://www.espen.org/files/ESPEN-Guidelines/ESPEN_guidelines_on_nutritional_support_for_polymorbid_internal_medicine_patients.pdf"
+  ],
+  "html_bytes": 129580,
+  "effort_proxy": 127,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Claude",
+  "assignment_id": "ALPHA-AUDIT-S05-E46-CLAUDE",
+  "branch_template": "claude/alpha/audit/s05-e46-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S05-E46-CLAUDE/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/claude/E46/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/claude/E46/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/E46/",
+    "glossary/e46.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S05-E46-CLAUDE-CORRECTION",
+  "correction_paths": [
+    "chapters/E46/",
+    "glossary/e46.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S05-CLAUDE-02"
+}

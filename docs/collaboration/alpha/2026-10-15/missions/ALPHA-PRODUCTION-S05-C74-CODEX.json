@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "C74",
+  "title": "Tumeur maligne de la surrénale",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "II",
+  "chapter_title": "Tumeurs",
+  "block": "C73-C75",
+  "block_title": "Tumeurs malignes de la thyroïde et d’autres glandes endocrines",
+  "ssp": [
+    159,
+    227
+  ],
+  "subcodes": [
+    "C74.0",
+    "C74.1",
+    "C74.9"
+  ],
+  "gold_subcode_count": 3,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [
+    47
+  ],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 29,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S05-C74-CODEX",
+  "branch_template": "codex/alpha/production/s05-c74-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S05-C74-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S05/C74/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S05/C74/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/C74/",
+    "glossary/c74.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S05-CODEX-01"
+}

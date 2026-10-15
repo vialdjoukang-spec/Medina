@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "G02",
+  "title": "Méningite au cours d’autres maladies infectieuses et parasitaires classées ailleurs",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "VI",
+  "chapter_title": "Maladies du système nerveux",
+  "block": "G00-G09",
+  "block_title": "Maladies inflammatoires du système nerveux central",
+  "ssp": [
+    6,
+    101,
+    207
+  ],
+  "subcodes": [
+    "G02.0",
+    "G02.1",
+    "G02.8"
+  ],
+  "gold_subcode_count": 3,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P0",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/G02/G02_a.html": "018184ce4aba5607c81c40ca01397d6012664362b513618efdebef4cbef49bc3",
+    "chapters/G02/G02_b.html": "752ad64631558afa344b57ab42b5783beaa5890f7ce0ee8b630af30d85abade0",
+    "chapters/G02/G02_c.html": "7cbc26d878765d64244881b6e27829e0732e28442ce9450369fa266823ec8205",
+    "chapters/G02/G02_d.html": "ec32bb6c8fb28aec32b67c9555ee0a384701634c8bc4852d1e02c295a67e949b",
+    "chapters/G02/G02_pop1.html": "8fd587b944bbe77602dab9c67716fb029790a6a23002bdd70f361e1c9ffe8236",
+    "chapters/G02/G02_pop2.html": "a969c01e360cea7ae57f19f8199704f82bcc8b6255069450e6cb99f43030f156",
+    "glossary/g02.py": "84d045f80e65deea899463c46b1d511cca125435fc19080a8dd99e22ef49f738"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://amiko.oddb.org/fr/fi?gtin=7680533420198",
+    "https://amiko.oddb.org/fr/fi?gtin=7680562350145",
+    "https://amiko.oddb.org/fr/fi?gtin=7680589210088",
+    "https://amiko.oddb.org/fr/fi?gtin=7680603250014",
+    "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+    "https://doi.org/10.1007/s15010-023-02113-9",
+    "https://doi.org/10.1016/j.jcv.2014.11.001",
+    "https://doi.org/10.1016/j.jcv.2017.01.008",
+    "https://doi.org/10.1093/brain/awad089",
+    "https://doi.org/10.1093/cid/cis031",
+    "https://doi.org/10.1111/1469-0691.12039",
+    "https://doi.org/10.1111/ene.16081",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g00-g09.htm",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11526416/",
+    "https://register.awmf.org/assets/guidelines/030-100l_S1_Virale_Meningoenzephalitis_2025-02.pdf",
+    "https://www.bag.admin.ch/de/zeckenuebertragene-krankheiten",
+    "https://www.bag.admin.ch/fr/oreillons",
+    "https://www.who.int/publications/i/item/9789240096035"
+  ],
+  "html_bytes": 157870,
+  "effort_proxy": 154,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S08-G02-CODEX",
+  "branch_template": "codex/alpha/audit/s08-g02-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S08-G02-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/G02/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/G02/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/G02/",
+    "glossary/g02.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S08-G02-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/G02/",
+    "glossary/g02.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S08-CODEX-01"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "E71",
+  "title": "Anomalies du métabolisme des acides aminés à chaîne ramifiée et du métabolisme des acides gras",
+  "fragment": "S05",
+  "system": "Endocrinologie et métabolisme",
+  "chapter": "IV",
+  "chapter_title": "Maladies endocriniennes, nutritionnelles et métaboliques",
+  "block": "E70-E90",
+  "block_title": "Anomalies du métabolisme",
+  "ssp": [
+    264
+  ],
+  "subcodes": [
+    "E71.0",
+    "E71.1",
+    "E71.2",
+    "E71.3"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [
+    44
+  ],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 27,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Claude",
+  "assignment_id": "ALPHA-PRODUCTION-S05-E71-CLAUDE",
+  "branch_template": "claude/alpha/production/s05-e71-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S05-E71-CLAUDE/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Claude/S05/E71/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Claude/S05/E71/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/E71/",
+    "glossary/e71.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S05-CLAUDE-03"
+}

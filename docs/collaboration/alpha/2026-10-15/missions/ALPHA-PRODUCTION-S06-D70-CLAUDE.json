@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "D70",
+  "title": "Agranulocytose et neutropénie",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "III",
+  "chapter_title": "Maladies du sang et des organes hématopoïétiques et certains troubles du système immunitaire",
+  "block": "D70-D77",
+  "block_title": "Autres maladies du sang et des organes hématopoïétiques",
+  "ssp": [
+    154,
+    171
+  ],
+  "subcodes": [
+    "D70.0",
+    "D70.1",
+    "D70.10",
+    "D70.11",
+    "D70.12",
+    "D70.13",
+    "D70.14",
+    "D70.18",
+    "D70.19",
+    "D70.3",
+    "D70.5",
+    "D70.6",
+    "D70.7"
+  ],
+  "gold_subcode_count": 13,
+  "historical_tetrade_cycles": [
+    7
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P0",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 59,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Claude",
+  "assignment_id": "ALPHA-PRODUCTION-S06-D70-CLAUDE",
+  "branch_template": "claude/alpha/production/s06-d70-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S06-D70-CLAUDE/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Claude/S06/D70/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Claude/S06/D70/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/D70/",
+    "glossary/d70.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S06-CLAUDE-01"
+}

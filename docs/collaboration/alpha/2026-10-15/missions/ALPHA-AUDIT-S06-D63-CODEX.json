@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "D63",
+  "title": "Anémie au cours de maladies chroniques classées ailleurs",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "III",
+  "chapter_title": "Maladies du sang et des organes hématopoïétiques et certains troubles du système immunitaire",
+  "block": "D60-D64",
+  "block_title": "Aplasies médullaires [anémie aplastique] et autres anémies",
+  "ssp": [
+    147,
+    165
+  ],
+  "subcodes": [
+    "D63.0",
+    "D63.8"
+  ],
+  "gold_subcode_count": 2,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/D63/D63_a.html": "6621c708ca6ac35401b93c4ed761c40b1a7b321b49bd0ac2d0da3ee35e7a33e5",
+    "chapters/D63/D63_b.html": "2ec4782fd99497778afed3b3188566b2fa4ab47cd109f0f529e4e19988c53468",
+    "chapters/D63/D63_c.html": "a2f4937acfc6158fa3c61f10b119f71358fe4b0c5ccc6079312655a5517a24f3",
+    "chapters/D63/D63_d.html": "18d9bb3346a6382d20d62cdf73946610b9f92ed9ab99cc3a29e32066d4035a1b",
+    "chapters/D63/D63_pop1.html": "f2c739ce3c270df6f54e62f7816ce90405f14b2437088d05b4d0028b62c038da",
+    "chapters/D63/D63_pop2.html": "5111df60e9ada85187cc1aa3c60a0c9aafd596344ca9045a9819e5fac934c5ab",
+    "glossary/d63.py": "f4f0e6211b6e49a24eb0a042ca12e0e0f58234cd1f9dec6eb8a9080167f26b49"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://academic.oup.com/eurheartj/article/44/37/3627/7246292",
+    "https://amiko.oddb.org/fr/fi?gtin=7680490788041",
+    "https://amiko.oddb.org/fr/fi?gtin=7680578510014",
+    "https://doi.org/10.1093/annonc/mdx758",
+    "https://doi.org/10.4414/smw.2019.20097",
+    "https://kdigo.org/wp-content/uploads/2026/03/KDIGO-2026-Anemia-Guideline-Central-Illustration-2-No-Dialysis.pdf",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-d60-d64.htm",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6536698/",
+    "https://revmed.ch/view/514249/4206039/RMS_idPAS_D_ISBN_pu2011-37s_sa03_art03.pdf",
+    "https://www.hug.ch/sites/interhug/files/structures/medecine_de_premier_recours/documents/updates_MSD/200611_msd_fer_epo.pdf"
+  ],
+  "html_bytes": 133600,
+  "effort_proxy": 130,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S06-D63-CODEX",
+  "branch_template": "codex/alpha/audit/s06-d63-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S06-D63-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/D63/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/D63/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/D63/",
+    "glossary/d63.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S06-D63-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/D63/",
+    "glossary/d63.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S06-CODEX-02"
+}

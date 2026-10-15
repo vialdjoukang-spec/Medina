@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "C84",
+  "title": "Lymphomes à cellules T/NK matures",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "II",
+  "chapter_title": "Tumeurs",
+  "block": "C81-C96",
+  "block_title": "Tumeurs malignes primitives ou présumées primitives des tissus lymphoïde, hématopoïétique et apparentés",
+  "ssp": [
+    159,
+    227
+  ],
+  "subcodes": [
+    "C84.0",
+    "C84.1",
+    "C84.4",
+    "C84.5",
+    "C84.6",
+    "C84.7",
+    "C84.8",
+    "C84.9"
+  ],
+  "gold_subcode_count": 8,
+  "historical_tetrade_cycles": [
+    27
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 34,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Claude",
+  "assignment_id": "ALPHA-PRODUCTION-S06-C84-CLAUDE",
+  "branch_template": "claude/alpha/production/s06-c84-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S06-C84-CLAUDE/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Claude/S06/C84/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Claude/S06/C84/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/C84/",
+    "glossary/c84.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S06-CLAUDE-02"
+}

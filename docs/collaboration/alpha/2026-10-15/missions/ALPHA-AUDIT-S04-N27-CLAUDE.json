@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "N27",
+  "title": "Petit rein de cause inconnue",
+  "fragment": "S04",
+  "system": "Néphrologie",
+  "chapter": "XIV",
+  "chapter_title": "Maladies de l’appareil génito-urinaire",
+  "block": "N25-N29",
+  "block_title": "Autres affections du rein et de l’uretère",
+  "ssp": [
+    64,
+    76,
+    77
+  ],
+  "subcodes": [
+    "N27.0",
+    "N27.1",
+    "N27.9"
+  ],
+  "gold_subcode_count": 3,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/N27/N27_a.html": "b5d270e4f7c30d52e9e3c3c056e47444efbe105182e9535e0b4ddf73ac134630",
+    "chapters/N27/N27_b.html": "294477f5f79d41d8bb378277f2b1b46a8618444cfa3a36f90830f3e846d997ee",
+    "chapters/N27/N27_c.html": "093fa53fe48c0959538243080f5eee965778c4d2ce2ea13e4b35e8054cd60d00",
+    "chapters/N27/N27_d.html": "43178866386fe5bc6bd668278ee02ae05fc1e649bea81597556cac340d6cae67",
+    "chapters/N27/N27_pop1.html": "de025200857731bccc71c91df3be6b3be62509efa361bb4e76ae4b1dfa895e9a",
+    "chapters/N27/N27_pop2.html": "43820346226de002071b441d738b64add9bd7204cebf8c29657ddc47bd4e71f4",
+    "glossary/n27.py": "3e55bf3ca8029de0ffffedb7086c15b6b605304c343c294a617ff7cfee5a6308"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://amiko.oddb.org",
+    "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+    "https://doi.org/10.1007/s00330-013-2900-4",
+    "https://doi.org/10.1016/j.nefroe.2026.501450",
+    "https://doi.org/10.1093/ndt/gfr655",
+    "https://doi.org/10.1097/PAP.0000000000000269",
+    "https://doi.org/10.3238/arztebl.m2024.0120",
+    "https://doi.org/10.3390/cells12020307",
+    "https://doi.org/10.59556/japi.74.1535",
+    "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-n25-n29.htm",
+    "https://register.awmf.org/assets/guidelines/004-008l_S2k_Arteriosklerotische_Erkrankungen-der-Nierenarterie_2025-06.pdf",
+    "https://uroweb.org/guidelines/paediatric-urology/chapter/vesicoureteric-reflux",
+    "https://www.chuv.ch/fr/offre-en-soins/portail-des-medecins-installes/medchuv/adresser-un-e-patient-e/consultation/medchuv_prest_81/consultation-en-vue-de-la-realisation-dune-ponction-biopsie-renale",
+    "https://www.chuv.ch/fr/offre-en-soins/portail-des-medecins-installes/medchuv/adresser-un-e-patient-e/consultation/medchuv_prest_85/consultation-en-ultrasonographie-specialisee-des-reins"
+  ],
+  "html_bytes": 87675,
+  "effort_proxy": 86,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Claude",
+  "assignment_id": "ALPHA-AUDIT-S04-N27-CLAUDE",
+  "branch_template": "claude/alpha/audit/s04-n27-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S04-N27-CLAUDE/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/claude/N27/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/claude/N27/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/N27/",
+    "glossary/n27.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S04-N27-CLAUDE-CORRECTION",
+  "correction_paths": [
+    "chapters/N27/",
+    "glossary/n27.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S04-CLAUDE-01"
+}

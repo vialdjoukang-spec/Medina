@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "N06",
+  "title": "Protéinurie isolée avec lésions morphologiques précisées",
+  "fragment": "S04",
+  "system": "Néphrologie",
+  "chapter": "XIV",
+  "chapter_title": "Maladies de l’appareil génito-urinaire",
+  "block": "N00-N08",
+  "block_title": "Glomérulopathies",
+  "ssp": [
+    63,
+    161,
+    164,
+    173
+  ],
+  "subcodes": [
+    "N06.0",
+    "N06.1",
+    "N06.2",
+    "N06.3",
+    "N06.4",
+    "N06.5",
+    "N06.6",
+    "N06.7",
+    "N06.8",
+    "N06.9"
+  ],
+  "gold_subcode_count": 10,
+  "historical_tetrade_cycles": [
+    15
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 42,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Codex",
+  "assignment_id": "ALPHA-PRODUCTION-S04-N06-CODEX",
+  "branch_template": "codex/alpha/production/s04-n06-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S04-N06-CODEX/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Codex/S04/N06/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Codex/S04/N06/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/N06/",
+    "glossary/n06.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S04-CODEX-02"
+}

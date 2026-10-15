@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "C70",
+  "title": "Tumeur maligne des méninges",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "II",
+  "chapter_title": "Tumeurs",
+  "block": "C69-C72",
+  "block_title": "Tumeurs malignes de l’œil, de l’encéphale et d’autres parties du système nerveux central",
+  "ssp": [
+    159,
+    227
+  ],
+  "subcodes": [
+    "C70.0",
+    "C70.1",
+    "C70.9"
+  ],
+  "gold_subcode_count": 3,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/C70/C70_a.html": "46477d9176131c8f5a8d7b0054159b54f990dacee4135a12a6ee9db6fc37087b",
+    "chapters/C70/C70_b.html": "572b164dd7310b4f7c56ae2c72569fc119bf55759b8066fcd4061c25e929550e",
+    "chapters/C70/C70_c.html": "7a54cc62d1c59f8c434b8f0358178e85e65ea4c7d4045087399d8b95a63ff3a6",
+    "chapters/C70/C70_d.html": "37f9d3583e5b6a37b7b9fbe9848ac4223dd020f1a4deda613b556531e097b27b",
+    "chapters/C70/C70_pop1.html": "31f4d77151a2cbc36f25884182667b1f81ada34e6c0835c6f873c5f1e39bca98",
+    "chapters/C70/C70_pop2.html": "00f8a130b7a18dce2a475e96222411bf419103ce94fed8ea348d5f5384af91fd",
+    "glossary/c70.py": "d0fb06f5da3f7ffef70ad11a1de5954818b18a57a84e90715406a58ea33baf51"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://epi.ch/wp-content/uploads/2026/01/Fahreignung-mit-Referenzen-D.pdf",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-c69-c72.htm",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-c76-c80.htm",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10619142/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11812049/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12277868/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6365311/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8328013/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8563316/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9562197/",
+    "https://pubmed.ncbi.nlm.nih.gov/27078728/",
+    "https://pubmed.ncbi.nlm.nih.gov/34669295/",
+    "https://www.usz.ch/app/uploads/2023/06/2023-01-01-hilfsunterlage-meldepflichtige-erkrankungen-nkrs.pdf"
+  ],
+  "html_bytes": 122846,
+  "effort_proxy": 120,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S08-C70-CODEX",
+  "branch_template": "codex/alpha/audit/s08-c70-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S08-C70-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/C70/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/C70/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/C70/",
+    "glossary/c70.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S08-C70-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/C70/",
+    "glossary/c70.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S08-CODEX-02"
+}

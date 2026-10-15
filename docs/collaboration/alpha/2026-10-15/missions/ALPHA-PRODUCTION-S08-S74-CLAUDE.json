@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "S74",
+  "title": "Lésion traumatique de nerfs au niveau de la hanche et de la cuisse",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "XIX",
+  "chapter_title": "Lésions traumatiques, empoisonnements et certaines autres conséquences de causes externes",
+  "block": "S70-S79",
+  "block_title": "Lésions traumatiques de la hanche et de la cuisse",
+  "ssp": [
+    113,
+    220
+  ],
+  "subcodes": [
+    "S74.0",
+    "S74.1",
+    "S74.2",
+    "S74.7",
+    "S74.8",
+    "S74.9"
+  ],
+  "gold_subcode_count": 6,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [
+    49
+  ],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 32,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Claude",
+  "assignment_id": "ALPHA-PRODUCTION-S08-S74-CLAUDE",
+  "branch_template": "claude/alpha/production/s08-s74-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S08-S74-CLAUDE/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Claude/S08/S74/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Claude/S08/S74/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/S74/",
+    "glossary/s74.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S08-CLAUDE-06"
+}

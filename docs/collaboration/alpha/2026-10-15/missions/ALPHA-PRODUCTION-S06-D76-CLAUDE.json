@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "D76",
+  "title": "Autres maladies précisées avec participation des tissus lymphoréticulaires et du système réticulohistiocytaire",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "III",
+  "chapter_title": "Maladies du sang et des organes hématopoïétiques et certains troubles du système immunitaire",
+  "block": "D70-D77",
+  "block_title": "Autres maladies du sang et des organes hématopoïétiques",
+  "ssp": [
+    154,
+    171
+  ],
+  "subcodes": [
+    "D76.1",
+    "D76.2",
+    "D76.3",
+    "D76.4"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [
+    30
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 30,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Claude",
+  "assignment_id": "ALPHA-PRODUCTION-S06-D76-CLAUDE",
+  "branch_template": "claude/alpha/production/s06-d76-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S06-D76-CLAUDE/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Claude/S06/D76/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Claude/S06/D76/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/D76/",
+    "glossary/d76.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S06-CLAUDE-04"
+}

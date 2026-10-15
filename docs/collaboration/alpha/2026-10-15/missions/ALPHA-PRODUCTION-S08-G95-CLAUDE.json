@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "G95",
+  "title": "Autres affections de la moelle épinière",
+  "fragment": "S08",
+  "system": "Neurologie",
+  "chapter": "VI",
+  "chapter_title": "Maladies du système nerveux",
+  "block": "G90-G99",
+  "block_title": "Autres affections du système nerveux",
+  "ssp": [
+    103,
+    104
+  ],
+  "subcodes": [
+    "G95.0",
+    "G95.1",
+    "G95.10",
+    "G95.18",
+    "G95.2",
+    "G95.8",
+    "G95.80",
+    "G95.81",
+    "G95.82",
+    "G95.83",
+    "G95.84",
+    "G95.85",
+    "G95.88",
+    "G95.9"
+  ],
+  "gold_subcode_count": 14,
+  "historical_tetrade_cycles": [
+    25
+  ],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "production",
+  "source_files": {},
+  "asset_dependencies": {},
+  "external_resources": [],
+  "html_bytes": 0,
+  "effort_proxy": 40,
+  "effort_basis": "Indice heuristique : 20 + sous-codes (max30) + 3×SSP + priorité(20/8/0) ; à recalibrer au pilote.",
+  "preparation_existing": false,
+  "owner": "Claude",
+  "assignment_id": "ALPHA-PRODUCTION-S08-G95-CLAUDE",
+  "branch_template": "claude/alpha/production/s08-g95-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-PRODUCTION-S08-G95-CLAUDE/SESSION-GENERATION",
+  "report_path": "livraisons/Alpha_Production/Claude/S08/G95/GENERATION/rapport.json",
+  "write_paths": [
+    "livraisons/Alpha_Production/Claude/S08/G95/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/G95/",
+    "glossary/g95.py"
+  ],
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "PA-S08-CLAUDE-03"
+}

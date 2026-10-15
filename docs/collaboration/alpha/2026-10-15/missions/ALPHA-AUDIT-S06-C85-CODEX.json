@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "prompt": "../prompt-verite-compact.yaml",
+  "plan": "../plan.json",
+  "code": "C85",
+  "title": "Lymphome non hodgkinien, de types autres et non précisés",
+  "fragment": "S06",
+  "system": "Hématologie",
+  "chapter": "II",
+  "chapter_title": "Tumeurs",
+  "block": "C81-C96",
+  "block_title": "Tumeurs malignes primitives ou présumées primitives des tissus lymphoïde, hématopoïétique et apparentés",
+  "ssp": [
+    159,
+    227
+  ],
+  "subcodes": [
+    "C85.1",
+    "C85.2",
+    "C85.7",
+    "C85.9"
+  ],
+  "gold_subcode_count": 4,
+  "historical_tetrade_cycles": [],
+  "historical_novo_cycles": [],
+  "priority": "P2",
+  "priority_basis": "Proposition éditoriale de planification, non mesure validée de risque ou fréquence d’examen.",
+  "frequent_editorial": false,
+  "federal_mapping": "PEDAGOGIQUE_NON_OFFICIEL",
+  "status": "PLANIFIE_NON_LANCE",
+  "mode": "audit",
+  "source_files": {
+    "chapters/C85/C85_a.html": "60a5622b725c1df8e06ceaa5514b695ee9773ff04209d26194e0b2383c96efad",
+    "chapters/C85/C85_b.html": "dac6af5d89e0d1fa6cb886dc4b845ebecdd8b66fa5dfa0512c1d6771c70268c4",
+    "chapters/C85/C85_c.html": "4cd71ff6b730c6ae83806c90f4cfbe7d7717e50cc79fbd48eae08111a09a0793",
+    "chapters/C85/C85_d.html": "4f2294c8f6e348a9a0832c4209242f81371e6b4f5eaaa9bec843a5715194a5b6",
+    "chapters/C85/C85_pop1.html": "ef66531cf0bc7931d7bd6b21587af680bcc84383dd45d1e48ec4490aff646d6d",
+    "chapters/C85/C85_pop2.html": "4a2d9225c8b8378c70d64c4b452edf00c9e5699dee7b06a08f15373a699daae3",
+    "glossary/c85.py": "3bb0553c98e7629414c7caca7616127703948a438d76b37b373d6011237458c5"
+  },
+  "asset_dependencies": {},
+  "external_resources": [
+    "https://amiko.oddb.org",
+    "https://amiko.oddb.org/fr/fi?gtin=7680543780176",
+    "https://amiko.oddb.org/fr/fi?gtin=7680662310025",
+    "https://amiko.oddb.org/fr/fi?gtin=7680669860011",
+    "https://amiko.oddb.org/fr/fi?gtin=7680674690016",
+    "https://dam-api.bfs.admin.ch/hub/api/dam/assets/19305697/master",
+    "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+    "https://doi.org/10.1002/jha2.151",
+    "https://doi.org/10.1016/j.ejca.2025.115369",
+    "https://doi.org/10.1038/s41375-022-01620-2",
+    "https://doi.org/10.1111/bjh.70432",
+    "https://doi.org/10.1182/blood.2022015851",
+    "https://doi.org/10.1186/s12884-026-09432-3",
+    "https://doi.org/10.1200/JCO-24-01373",
+    "https://doi.org/10.3324/haematol.2023.283446",
+    "https://doi.org/10.3324/haematol.2026.300531",
+    "https://iris.unito.it/bitstream/2318/1612150/1/Ann%20Oncol-2016-Vitolo-v91-v102.pdf",
+    "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-c81-c96.htm",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12101282/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3579993/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4979083/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8044947/",
+    "https://www.onkopedia.com/de/onkopedia/guidelines/diffuses-grosszelliges-b-zell-lymphom/@@guideline/html/index.html"
+  ],
+  "html_bytes": 182017,
+  "effort_proxy": 178,
+  "effort_basis": "Kio des sources HTML ; proxy de volume, pas une mesure de difficulté médicale.",
+  "owner": "Codex",
+  "assignment_id": "ALPHA-AUDIT-S06-C85-CODEX",
+  "branch_template": "codex/alpha/audit/s06-c85-SESSION-GENERATION",
+  "worktree_template": "../medina-alpha/ALPHA-AUDIT-S06-C85-CODEX/SESSION-GENERATION",
+  "report_path": "docs/collaboration/alpha/execution/audit/codex/C85/GENERATION/rapport.json",
+  "write_paths": [
+    "docs/collaboration/alpha/execution/audit/codex/C85/GENERATION/"
+  ],
+  "integration_targets": [
+    "chapters/C85/",
+    "glossary/c85.py"
+  ],
+  "correction_mission_id": "ALPHA-AUDIT-S06-C85-CODEX-CORRECTION",
+  "correction_paths": [
+    "chapters/C85/",
+    "glossary/c85.py"
+  ],
+  "correction_gate": "Même IA responsable, branche propre après clôture de la lecture et adaptation G2/G3 ; snapshot original conservé, aucune écriture canonique autorisée par le présent plan.",
+  "base_commit": "7adf385a5182a8dcf25584dbb53207c620440ad3",
+  "generation": 0,
+  "lot": "AA-S06-CODEX-01"
+}
