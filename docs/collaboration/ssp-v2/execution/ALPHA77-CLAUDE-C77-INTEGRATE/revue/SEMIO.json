@@ -42,7 +42,7 @@
  "grille_SEM": {
   "SEM-01": "oui — premier bouton de .sci-bar #c77-tab-semio, data-s=\"c77-s-semio\", div.sci#c77-s-semio",
   "SEM-02": "oui — premier h2 « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »",
-  "SEM-03": "oui par simulation — c77-s-semio : 4 982 mots, 1 figure SVG non anatomique légendée, 4 encadrés ; exécution officielle impossible (C77 hors base c50a28a2 et hors exemption, fichier partagé tests/)",
+  "SEM-03": "oui — c77-s-semio : 4 982 mots, 1 figure SVG non anatomique légendée, 4 encadrés (simulation par les fonctions de tests/audit_sciences.py ; exécution officielle impossible, C77 hors base c50a28a2 et hors exemption). Figure 1 de c77-s-anat : image réelle seule, avec alt et figcaption attribuée, donc accessible ; l’erreur « figure sans légende ou nom accessible » qu’elle seule déclenche est un faux positif connu, consigné dans integration/controles.json (clé faux_positif_connu), non bloquant selon la précision du coordinateur ; vérifié : aucun SVG dans cette figure.",
   "SEM-04": "oui — test_v7.py --static C77 OK",
   "SEM-05": "oui — tableau symptômes (mécanisme, fréquence ou valeur, piège), introduit et commenté (c77-sm-2)",
   "SEM-06": "oui — techniques axillaire, épitrochléenne, splénique ; geste cervical déclaré non décrit en texte (lacune)",
@@ -77,8 +77,8 @@
    "id": "P-SEMIO-02",
    "severity": "LIMITE_OUTIL",
    "status": "non_blocking",
-   "finding": "tests/audit_sciences.py ne s’exécute pas officiellement pour C77 et refuse une figure <img> dans pS (c77-s-anat, Figure 1 SEER) ; précédent D50 d50-s-histo. Toutes les autres exigences de l’outil passent pour les cinq disciplines ; aucun contournement par emballage SVG.",
-   "evidence": "Simulation par les fonctions de tests/audit_sciences.py sur le fichier final : c77-s-semio, -histo, -physio, -bioch sans erreur ; c77-s-anat : seule l’image originale est signalée."
+   "finding": "Faux positif connu de tests/audit_sciences.py : la Figure 1 de c77-s-anat, faite uniquement de l’image réelle SEER avec alt et figcaption attribuée, est accessible mais déclenche « figure sans légende ou nom accessible » ; l’outil ne s’exécute pas non plus officiellement pour C77. Non bloquant selon la précision du coordinateur ; tout SVG ajouté pour satisfaire le test serait un constat, et aucun n’est présent.",
+   "evidence": "Simulation par les fonctions de tests/audit_sciences.py sur le fichier final : c77-s-semio, -histo, -physio, -bioch sans erreur ; c77-s-anat : seule l’image originale est signalée ; integration/controles.json, clé faux_positif_connu ; contrôle de P : 0 balise <svg> dans le bloc <figure> de l’image."
   },
   {
    "id": "P-SEMIO-03",
