@@ -11,7 +11,7 @@
   "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
   "modele_effort": "conforme au manifeste",
   "date_debut": "2026-10-15T18:22:54Z",
-  "date_fin": "2026-10-15T18:35:43Z",
+  "date_fin": "2026-10-15T18:41:23Z",
   "lecture": {
     "fichiers": [
       {
@@ -74,7 +74,7 @@
   "synthese": {
     "BLOQUANT": 0,
     "MAJEUR": 1,
-    "MINEUR": 5,
+    "MINEUR": 6,
     "ENRICHISSEMENT": 3
   },
   "constats": [
@@ -284,6 +284,24 @@
       "proposition_fichier": "propositions/E11_pop2_1.html",
       "proposition": "Ajouter la fenêtre e11-codage (prose, sans tableau) dans E11_pop2.html et la relier par un mot vert depuis la mention « CIM-10-GM 2024 » de l’en-tête.",
       "justification": "Mécanisme : le code précise la complication et la décompensation. Conséquence : les sous-codes correspondent aux complications enseignées. Décision : fenêtre de codage concise, sans îlot."
+    },
+    {
+      "id": "E11-MED-10",
+      "gravite": "MINEUR",
+      "fichier": "E11_c.html",
+      "ancre": "<path d=\"M9 3C2 3 2 21 9 21c5 0 3-7 0-9 3-2 5-9 0-9Zm6 9h6\"></path>",
+      "ancre_occurrences": 1,
+      "constat": "Le pictogramme de l’onglet « Physiologie rénale » (SVG 24 px, aria-hidden) dessine une silhouette de rein sans source iconographique. Au sens littéral de la règle Vial du 15.10.2026, c’est une forme d’organe générée. Ce n’est toutefois pas une figure pédagogique : il ne porte ni légende ni structure anatomique détaillée. Je le classe donc ANATOMIQUE_IA mais en gravité MINEUR et non MAJEUR, et cet écart à la règle automatique est soumis à l’arbitrage du coordinateur.",
+      "preuve": [
+        {
+          "source_id": "LECON",
+          "section": "E11_c.html, barre d’onglets #pS",
+          "citation_courte": "<path d=\"M9 3C2 3 2 21 9 21c5 0 3-7 0-9 3-2 5-9 0-9Zm6 9h6\"></path> … Physiologie rénale"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_c_1.html",
+      "proposition": "Réutiliser un pictogramme non anatomique déjà présent dans le fichier, ou supprimer l’icône. Aucun redessin n’est proposé.",
+      "justification": "Mécanisme : une silhouette d’organe stylisée imite une représentation anatomique sans source. Conséquence : elle contrevient à la règle des figures, sans enjeu médical. Décision : la retirer à faible coût."
     }
   ],
   "verifications_conformes": [
@@ -442,5 +460,118 @@
     "Non relus dans cette mission (repris du dossier auteur, non contredits) : FI Trulicity®, Trajenta®, Ryzodeg®, NovoRapid®, Lantus®, Huminsulin®, Ezetrol®, Actos®, Onglyza® ; IWGDF 2023 ; JBDS 2023 ; recommandation technologique SSED 2025 ; guide SSN 2025 ; essais (UKPDS, ACCORD, Steno-2, EMPA-REG, FLOW, SOUL, FIDELIO, DiRECT, Ahlqvist) au-delà des chiffres cités par S13 et S22 ; Atila 2026 (copeptine) ; catalogues Viollier et La Source.",
     "Épidémiologie européenne : non recherchée dans cette mission."
   ],
-  "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+  "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+  "figures": [
+    {
+      "ancre": "E11_a.html#e11-3 — <svg aria-label=\"Figure 1 : étapes du mécanisme\">",
+      "fichier": "E11_a.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 1. Organigramme à cinq cadres reliés par des flèches : équilibre normal, puis excès adipeux et sédentarité, résistance du muscle et du foie, compensation puis défaillance β, hyperglycémie, complications et glucotoxicité. Aucun dessin d’organe.",
+      "source_declaree": "Schéma didactique d’après Galicia-Garcia 2020",
+      "verification": "Chaque étape et chaque flèche concordent avec S26 (insulinorésistance, défaillance β, glucolipotoxicité) et S13 (obésité viscérale et inactivité, déficit relatif). Recevable.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_c.html#e11-e-2 — <svg aria-label=\"HGPO : prélèvement à jeun, charge orale 75 g, puis glycémie à deux heures\">",
+      "fichier": "E11_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 6. Frise temporelle de l’HGPO : temps 0 et 120 minutes, 75 g de glucose, seuils ≥ 7,0 et ≥ 11,1 mmol/L.",
+      "source_declaree": "D’après ESC 2023",
+      "verification": "Les valeurs 75 g, ≥ 7,0 et ≥ 11,1 mmol/L sont conformes à S14 et S20. Recevable.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_c.html#e11-s-histo-body — <svg aria-label=\"Figure 2 : étapes du mécanisme\">",
+      "fichier": "E11_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 2. Organigramme du couplage stimulus-sécrétion de la cellule β : entrée du glucose, rapport ATP/ADP, fermeture des canaux potassiques, dépolarisation, entrée de calcium, exocytose, insuline et peptide C, amplification par les incrétines. Aucun dessin de cellule.",
+      "source_declaree": "D’après Galicia-Garcia 2020",
+      "verification": "La séquence est conforme à S26 (ATP/ADP, canaux potassiques ATP-dépendants, dépolarisation, clivage en peptide C) ; l’amplification par l’AMPc est conforme à S12. Recevable.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_c.html#e11-s-phys-body — <svg aria-label=\"Figure 3 : étapes du mécanisme\">",
+      "fichier": "E11_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 3. Organigramme de l’axe incrétine : repas, GIP et GLP-1, amplification de l’insuline, frein du glucagon, dégradation par la DPP-4, effet diminué dans le diabète, agonistes.",
+      "source_declaree": "D’après Nauck et Meier 2018 et la FI de la linagliptine",
+      "verification": "Libération intestinale, amplification glucose-dépendante, frein du glucagon et dégradation par la DPP-4 : conformes à S12. L’effet incrétine diminué dans le type 2 repose sur Nauck et Meier, non relu dans cette mission. Recevable, avec vérification partielle.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_c.html#e11-s-bioc-body — <svg aria-label=\"Figure 4 : étapes du mécanisme\">",
+      "fichier": "E11_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 4. Organigramme de la signalisation de l’insuline : récepteur et tyrosine kinase, substrats IRS, PI3K, AKT, translocation de GLUT4, frein de FOXO1 dans le foie, affaiblissement par l’inflammation.",
+      "source_declaree": "D’après Galicia-Garcia 2020",
+      "verification": "Conforme à S26, qui énonce explicitement l’inhibition de FOXO1 (« through inhibition of FOXO1 ») ; une phrase isolée de la même revue dit « by activating FOXO1 », coquille de la source que la figure ne reprend pas. Recevable.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_c.html#e11-s-rein-body — <svg aria-label=\"Figure 5 : étapes du mécanisme\">",
+      "fichier": "E11_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 5. Organigramme textuel : glomérule et filtration, réabsorption tubulaire proximale du glucose avec le sodium, inhibition et glycosurie, sodium vers la macula densa, rétrocontrôle, effet glycémique selon le DFG. Ce sont des cadres de texte, sans dessin de néphron.",
+      "source_declaree": "D’après la FI de la dapagliflozine",
+      "verification": "Conforme à S2 : réduction de la réabsorption du glucose et du sodium, afflux distal de sodium, rétrocontrôle tubulo-glomérulaire « probablement » amplifié, baisse de la pression intraglomérulaire, effet dépendant de la glycémie et du DFG. Recevable.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_c.html#pS — 4 pictogrammes d’onglets (svg 24 px, aria-hidden)",
+      "fichier": "E11_c.html",
+      "classe": "ANATOMIQUE_IA",
+      "description": "Quatre icônes d’interface : cercles concentriques (Biologie cellulaire), tracé en ondes (Physiologie), nœuds reliés (Biochimie) et silhouette de rein (Physiologie rénale). Seule la dernière représente un organe.",
+      "source_declaree": "aucune",
+      "verification": "Les trois premiers pictogrammes sont non anatomiques et décoratifs. La silhouette de rein relève de la règle (constat MINEUR E11-MED-10, écart de gravité motivé). Aucun candidat iconographique n’est proposé, car une image réelle n’est pas adaptée à une icône de 24 px.",
+      "constat_id": "E11-MED-10",
+      "candidats": []
+    },
+    {
+      "ancre": "E11_a.html#e11-6 — Figure 7",
+      "fichier": "E11_a.html",
+      "classe": "IMAGE_SOURCEE",
+      "description": "Photographie clinique d’une acanthosis nigricans axillaire.",
+      "source_declaree": "Mark F. Brady et Prashanth Rawla, CC BY-SA 4.0, Wikimedia Commons",
+      "verification": "S27 : File:Acanthosis_nigricans.jpg, auteur « Mark F. Brady; Prashanth Rawla. », licence CC BY-SA 4.0, crédit NBK431057 ; l’empreinte du fichier local correspond à ATTRIBUTIONS.json. Attribution conforme ; la licence BY-SA impose de partager à l’identique un éventuel dérivé.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_b.html#e11-9 — Figure 8",
+      "fichier": "E11_b.html",
+      "classe": "IMAGE_SOURCEE",
+      "description": "Photographie du fond d’œil d’une rétinopathie diabétique.",
+      "source_declaree": "Hao et al., PLoS One 2022, figure 1A, CC BY 4.0, Wikimedia Commons",
+      "verification": "S27 : File:Fundus_-_diabetic_retinopathy.png, auteurs Hao et al., CC BY 4.0, PLoS One e0275983, figure 1 A. Le fichier local est un JPEG converti depuis le PNG : la mention « modifié (format) » est recommandée par la licence CC BY.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_pop1.html e11-mrc — Figure 9",
+      "fichier": "E11_pop1.html",
+      "classe": "IMAGE_SOURCEE",
+      "description": "Photographie histologique d’une glomérulosclérose diabétique (coloration PAS, nodule de Kimmelstiel-Wilson).",
+      "source_declaree": "KGH, CC BY-SA 3.0, Wikimedia Commons",
+      "verification": "S27 : licence CC BY-SA 3.0, mais auteur « No machine-readable author provided. KGH assumed », source « Own work assumed ». La paternité est présumée par Commons, non établie : à signaler dans la légende ou à remplacer si une image d’auteur certain est disponible.",
+      "constat_id": null,
+      "candidats": []
+    },
+    {
+      "ancre": "E11_pop1.html e11-pied — Figure 10",
+      "fichier": "E11_pop1.html",
+      "classe": "IMAGE_SOURCEE",
+      "description": "Photographie d’un ulcère neuropathique plantaire du talon.",
+      "source_declaree": "Jonathan Moore, The Foot and Ankle Online Journal 2008, CC BY 3.0, Wikimedia Commons",
+      "verification": "S27 : auteur Jonathan Moore, CC BY 3.0, crédit Foot and Ankle Online Journal 1(9):2. Attribution conforme.",
+      "constat_id": null,
+      "candidats": []
+    }
+  ],
+  "figures_methode": "Inventaire scripté de tous les <svg>, <img>, <figure> et <canvas> des 7 fichiers ; aucun dessin CSS (background-image, gradient, clip-path) trouvé. Les métadonnées Commons ont été lues en une seule requête groupée sur l’API officielle, avec l’en-tête User-Agent prescrit ; elle a reçu deux réponses 429 puis a abouti après une attente croissante (20, 30 puis 60 s). La consigne d’utiliser exclusivement Image_Clo_finder est arrivée après cette requête. Aucune recherche de candidats n’a été nécessaire, faute de figure ANATOMIQUE_IA pédagogique. Aucune image n’a été générée ni redessinée."
 }
