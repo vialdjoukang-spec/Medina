@@ -1,0 +1,256 @@
+{
+  "kind": "targeted_readonly_OFS_pregnancy_classification_delta",
+  "at": "2026-10-15T23:23:19.037158+00:00",
+  "candidate_commit": "721b86af6bde93f751d8e785e1506b1836841b32",
+  "source_files_sha256": {
+    "chapters/E05/E05_b.html": "f09bb0eccaee764e37cd6189166d5c10511ac17ec904c856bc618ca26caf738b",
+    "chapters/E05/E05_d.html": "916ddcea2b580a449c573e3582c506dfc66913ddab1a9530b5dc95da6fca3282",
+    "chapters/E05/E05_pop1.html": "d4224a64a7e1b704ff523ed3340ad45da7758e254fdf7ddbb72b35e597e92368",
+    "chapters/E05/E05_pop2.html": "d173e3d018b4842ccf90bd3a15f6c51152ace51f5734933366a7fbd4a5e7d1b4",
+    "chapters/E05/E05_a.html": "304a7f0fd04ff984f76a2816c59abf1c7d26e9b04b73314649857a135ac4e7e3",
+    "chapters/E05/E05_c.html": "d00744c96b3568486abdb1900647dff4da389a2e75b7ffdcb952777ab65f2422",
+    "glossary/e05.py": "93e4fe10dea23d069d8a0bc2e98f60f7563d415101c45ab8dfea4e069fc4a0d4"
+  },
+  "reservation_read": {
+    "id": "REMAINING-PROOF",
+    "status": "open",
+    "severity": "MAJEUR",
+    "finding": "Réserves : prescriptions crise dépassantFI etpréparationiodée sans protocole suisse localvalidé; FI exactes desoptions immunomodulatrices secondaires nonexhaustives; OFS applicable/pregnancycodes, remboursementactuel etbiochimie détaillée héritée noncertifiés. Revues defigures IA, pas expertisejuridique ouvalidationmédicale humaine.",
+    "evidence": [
+      "rapport.md#réserves-exactes-à-transmettre-aux-audits-finaux",
+      "figures.json",
+      "final-claim-mapping.json"
+    ]
+  },
+  "existing_S11_read": {
+    "id": "S11",
+    "titre": "CIM-10-GM2024, E05–E07",
+    "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-e00-e07.htm",
+    "editeur": "BfArM",
+    "version_annee": "2024, stand15.09.2023",
+    "date_consultation": "2026-10-15T18:35:20.199979+00:00",
+    "section_page": "E05.0,.1,.2,.3,.4,.5,.8,.9; inclusions/exclusions E05 et E06",
+    "population": "Classification, pas recommandation clinique",
+    "limites": "Édition OFS suisse effectivement applicable en2026 non vérifiée. La grossesse/post-partum exige ses codes propres et les renvois de la classification.",
+    "faits_retenus": [
+      "E05 couvre8sous-codes à quatre caractères; E06.2 et P72.1 exclus; O90.5 exclu d’E06."
+    ],
+    "niveau_lecture": "section",
+    "lecture_reelle": true,
+    "lecteur": "Codex / alpha1_medical_endo",
+    "sha256": "3ccf5f6f8e14877b0438002fad62c6c7cb91238f11f3a9359d631b0a03c8c43c",
+    "adopted_from": "ALPHA1-CODEX-E05-MED/sources.json"
+  },
+  "readings": [
+    {
+      "id": "OFS-VALIDITY",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36518419/master",
+      "publisher": "Office fédéral de la statistique",
+      "title": "Aperçu des versions de la CIM-10-GM et de leur validité en Suisse",
+      "published_at": "2026-03-31T12:01:00Z",
+      "consulted_at": "2026-10-15T23:22:02.456279+00:00",
+      "version": "Tableau OFS publié31.03.2026",
+      "reading_level": "section",
+      "local_file": "ofs-validity.xlsx",
+      "sha256": "b122a82c797a627557affc1a30ccd764860d46694f3a5fb4d9621af7193169e4",
+      "location": "Onglet FR, A12:D15 ; DE A12:D15 corroborant",
+      "actual_passage": {
+        "A12": "Version",
+        "C12": "Valable en Suisse en [année]",
+        "A15": "CIM-10-GM 2024",
+        "B15": "2024",
+        "C15": "2025-2026",
+        "D15": "2",
+        "A14": "CIM-10-GM 2026",
+        "C14": "Dès 2027"
+      },
+      "conclusion": "Le millésime2024 est bien celui valable en Suisse en2026 ; le millésime2026 ne prend effet que dès2027.",
+      "limit": "Portée classificatoire et de codage suisse ; pas validation des indications ou traitements."
+    },
+    {
+      "id": "OFS-2024-CSV",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+      "publisher": "Office fédéral de la statistique",
+      "version": "CIM-10-GM2024, version française31.10.2024",
+      "consulted_at": "2026-10-15T23:19:21.767494+00:00",
+      "reading_level": "section",
+      "local_file": "ofs2024.asset",
+      "sha256": "b3fb59de1891b4198f5a2b09a24a2e251cff542e5c5e35b7744486e4828d9724",
+      "location": "CIM10GM2024_SI_CSV_FR_Lisezmoi.txt",
+      "actual_passage": "Département fédéral de l’intérieur DFI\nOffice fédéral de la statistique OFS\nDivision Santé et affaires sociales\nClassifications médicales\nClassification statistique internationale des maladies et des problèmes de santé connexes - 10ème révision - German Modification (CIM-10-GM) - Index systématique - Version 2024 du 31.10.2024\nBase et validité: La CIM-10-GM 2024 (Classification statistique internationale des maladies et des problèmes de santé connexes – 10ème révision – German Modification) est l’adaptation de la version CIM-10-GM 2022.\nLa traduction se base sur l’ICD-10-GM 2024 éditée par le Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM) en Allemagne (Etat au 15 septembre 2023).\nLa version 2024 de la CIM-10-GM entrera en vigueur le 1er janvier 2025 en Suisse.\nA cette date, son application sera obligatoire pour le codage des diagnostics dans le cadre du relevé Séjours stationnaires en hôpitaux (SpiGes).\n",
+      "conclusion": "Entréeenvigueur1.1.2025 et application obligatoire SpiGes explicitement indiquées ; version française suisse fondée sur BfArM état15.09.2023.",
+      "limit": "Le CSV fournit les libellés ; notes et exclusions vérifiées séparément dans le ClaML. Obligation limitée à SpiGes/séjours stationnaires ; aucun remboursement ni application universelle ambulatoire attestés."
+    },
+    {
+      "id": "OFS-2024-CLAML",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686264/master",
+      "publisher": "Office fédéral de la statistique",
+      "version": "CIM-10-GM2024, ClaML français31.10.2024",
+      "consulted_at": "2026-10-15T23:21:07.817459+00:00",
+      "reading_level": "section",
+      "local_file": "ofs2024-claml.zip",
+      "sha256": "04c9e9e5c95b2cbe2b8244872e6a6cbd5a7fc2358805e908b11d0e15784653be",
+      "inner_file": "CIM10GM2024_ClaML_S_FR_20241031.xml",
+      "inner_sha256": "fd3d271570d585e493f301b5f7dfbf8600e22069092c4f5c611f63580f90cba9",
+      "actual_passages": {
+        "IV": [
+          {
+            "kind": "exclusion",
+            "text": "complications de la grossesse, de l’accouchement et de la puerpéralité O00-O99",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">complications de la grossesse, de l’accouchement et de la puerpéralité<Reference class=\"in brackets\" code=\"O00\">O00-O99</Reference></Label>\n    </Rubric>\n    "
+          }
+        ],
+        "E05": [
+          {
+            "kind": "preferred",
+            "text": "Thyréotoxicose [hyperthyroïdie]",
+            "xml": "<Rubric kind=\"preferred\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Thyréotoxicose [hyperthyroïdie]</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "inclusion",
+            "text": "Hyperthyroïdie [thyréotoxique]: affection oculaire H58.8",
+            "xml": "<Rubric kind=\"inclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">\n        <Fragment type=\"list\">Hyperthyroïdie [thyréotoxique]:</Fragment>\n        <Fragment type=\"list\" usage=\"dagger\">affection oculaire<Reference class=\"in brackets\" usage=\"aster\">H58.8</Reference></Fragment>\n      </Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "inclusion",
+            "text": "Hyperthyroïdie [thyréotoxique]: affection cardiaque I43.8",
+            "xml": "<Rubric kind=\"inclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">\n        <Fragment type=\"list\">Hyperthyroïdie [thyréotoxique]:</Fragment>\n        <Fragment type=\"list\" usage=\"dagger\">affection cardiaque<Reference class=\"in brackets\" usage=\"aster\">I43.8</Reference></Fragment>\n      </Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "thyroïdite chronique avec thyréotoxicose transitoire E06.2",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">thyroïdite chronique avec thyréotoxicose transitoire<Reference class=\"in brackets\">E06.2</Reference></Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "thyréotoxicose néonatale P72.1",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">thyréotoxicose néonatale<Reference class=\"in brackets\">P72.1</Reference></Label>\n    </Rubric>\n  "
+          }
+        ],
+        "E06": [
+          {
+            "kind": "preferred",
+            "text": "Thyroïdite",
+            "xml": "<Rubric kind=\"preferred\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Thyroïdite</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "thyroïdite du post-partum O90.5",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">thyroïdite du post-partum<Reference class=\"in brackets\">O90.5</Reference></Label>\n    </Rubric>\n  "
+          }
+        ],
+        "E06.2": [
+          {
+            "kind": "preferred",
+            "text": "Thyroïdite chronique avec thyréotoxicose transitoire",
+            "xml": "<Rubric kind=\"preferred\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Thyroïdite chronique avec thyréotoxicose transitoire</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "thyroïdite auto-immune E06.3",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">thyroïdite auto-immune<Reference class=\"in brackets\">E06.3</Reference></Label>\n    </Rubric>\n  "
+          }
+        ],
+        "O99": [
+          {
+            "kind": "preferred",
+            "text": "Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l’accouchement et la puerpéralité",
+            "xml": "<Rubric kind=\"preferred\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l’accouchement et la puerpéralité</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "note",
+            "text": "Cette catégorie comprend des états compliquant la grossesse ou aggravés par elle, ou lorsqu’il s’agit de la raison principale de soins obstétricaux pour lesquels l’Index alphabétique n’indique pas une rubrique spécifique au chapitre XV.",
+            "xml": "<Rubric kind=\"note\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">\n        <Para>Cette catégorie comprend des états compliquant la grossesse ou aggravés par elle, ou lorsqu’il s’agit de la raison principale de soins obstétricaux pour lesquels l’Index alphabétique n’indique pas une rubrique spécifique au chapitre XV.</Para>\n      </Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "coding-hint",
+            "text": "Utiliser, au besoin, un code supplémentaire pour identifier une affection spécifique.",
+            "xml": "<Rubric kind=\"coding-hint\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Utiliser, au besoin, un code supplémentaire pour identifier une affection spécifique.</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "maladies infectieuses et parasitaires O98.-",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">maladies infectieuses et parasitaires<Reference class=\"in brackets\" code=\"O98\">O98.-</Reference></Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "lésions traumatiques, empoisonnements et certaines autres conséquences de causes externes S00-T98",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">lésions traumatiques, empoisonnements et certaines autres conséquences de causes externes<Reference class=\"in brackets\" code=\"S00\">S00-T98</Reference></Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "quand la raison des soins maternels est que l’affection est considérée comme ayant affecté le fœtus ou présumée l’avoir fait O35-O36",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">quand la raison des soins maternels est que l’affection est considérée comme ayant affecté le fœtus ou présumée l’avoir fait<Reference class=\"in brackets\" code=\"O35\">O35-O36</Reference></Label>\n    </Rubric>\n  "
+          }
+        ],
+        "O99.2": [
+          {
+            "kind": "preferred",
+            "text": "Maladies endocriniennes, nutritionnelles et métaboliques compliquant la grossesse, l’accouchement et la puerpéralité",
+            "xml": "<Rubric kind=\"preferred\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Maladies endocriniennes, nutritionnelles et métaboliques compliquant la grossesse, l’accouchement et la puerpéralité</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "inclusion",
+            "text": "États en E00-E90",
+            "xml": "<Rubric kind=\"inclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">États en E00-E90</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "diabète sucré O24.-",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">diabète sucré<Reference class=\"in brackets\" code=\"O24\">O24.-</Reference></Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "malnutrition O25",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">malnutrition<Reference class=\"in brackets\">O25</Reference></Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "exclusion",
+            "text": "thyroïdite du post-partum O90.5",
+            "xml": "<Rubric kind=\"exclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">thyroïdite du post-partum<Reference class=\"in brackets\">O90.5</Reference></Label>\n    </Rubric>\n  "
+          }
+        ],
+        "O90.5": [
+          {
+            "kind": "preferred",
+            "text": "Thyroïdite du post-partum",
+            "xml": "<Rubric kind=\"preferred\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Thyroïdite du post-partum</Label>\n    </Rubric>\n  "
+          }
+        ],
+        "P72.1": [
+          {
+            "kind": "preferred",
+            "text": "Hyperthyroïdie transitoire néonatale",
+            "xml": "<Rubric kind=\"preferred\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Hyperthyroïdie transitoire néonatale</Label>\n    </Rubric>\n    "
+          },
+          {
+            "kind": "inclusion",
+            "text": "Thyréotoxicose néonatale",
+            "xml": "<Rubric kind=\"inclusion\">\n      <Label xml:lang=\"fr\" xml:space=\"default\">Thyréotoxicose néonatale</Label>\n    </Rubric>\n  "
+          }
+        ]
+      },
+      "limit": "Lecture des rubriques indiquées uniquement, pas du manuel suisse de codage2026 ni de sa règle de séquençage détaillée."
+    },
+    {
+      "id": "OFS-PAGE-2026",
+      "url": "https://www.bfs.admin.ch/bfs/fr/home/statistiques/sante/nomenclatures/medkk/instruments-codage-medical.html",
+      "publisher": "Office fédéral de la statistique",
+      "consulted_at": "2026-10-15T23:19:21.766800+00:00",
+      "observed_page_modified": "2026-09-28T13:33:35Z",
+      "reading_level": "section",
+      "sha256": "ccf6477415c21d33e2ff7382dac5553bab0bf551c3d586cd2790e4d5d5657502",
+      "actual_passage": "Actualisation de la CIM-10-GM. Valable à partir du01.01.2026 : Aucune mise à jour / modification. Valable à partir du01.07.2026 : Aucune mise à jour / modification.",
+      "html_location": "wgl-paragraph sous titre2026/CIM-10-GM ; attributtext public HTML décodé",
+      "public_asset_model": "cim2026-model.json",
+      "model_sha256": "3363814bc26967fb9ef4c2831e8f28c9730b72524d9448da3c93d60ed3136968",
+      "model_context": "Bloc2026/CIM-10-GM de la page ; titres retournés CIM-10-GM2024, systématiquePDF/ClaML/CSV et alphabétique",
+      "limit": "Composants publics Vue et modèle public réellement obtenus ; aucun accès restreint, authentification ou contournement."
+    }
+  ],
+  "medical_human_validation": false,
+  "status_changes_performed": false,
+  "source_changes_performed": false,
+  "receipt_changes_performed": false,
+  "network_access_failures": []
+}

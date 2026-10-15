@@ -26,6 +26,7 @@
 | Déploiement corrigé | Run38820592355 ; construction en cours, succès non encore revendiqué. |
 | Site public observé | Ancien commit4b8a088d ; les sept nouveaux reçus Codex n'y sont pas encore vérifiés. |
 | Claude dans main | Sept reçus présents (E11,N18,I61,G45,E12,D50,C77), phase déclarée completed. Inventaire en lecture seule ; aucune clôture Claude revalidée par Codex. |
+| Preuve ciblée E05 supplémentaire | OFS primaire : CIM-10-GM2024 applicable2025–2026 et exclusions confirmées ; aucun changement source/reçu/statut. |
 | Réserves et sémiologie finale | Rapports maintenus ; succès technique des onglets distinct de la clôture médicale. |
 | Lot suivant | Interdit avant sept clôtures réelles ; plafond77, premiers7 inclus. |
 

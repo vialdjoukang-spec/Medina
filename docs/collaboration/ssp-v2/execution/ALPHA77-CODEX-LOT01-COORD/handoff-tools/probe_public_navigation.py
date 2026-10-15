@@ -1,6 +1,7 @@
 """Rendu public réel : réserves visibles, six sciences et neuf sections sémiologiques."""
 from datetime import datetime, timezone
 import json
+import hashlib
 import os
 import shutil
 from pathlib import Path
@@ -13,6 +14,7 @@ assert proof['passed'], 'Vérifier les octets publics avant le rendu'
 expected = json.loads((work / 'pages-probe-expectations.json').read_text())
 captures = work / 'public-captures'
 captures.mkdir(exist_ok=True)
+verified_html = {urlsplit(row['url']).path: row['sha256'] for row in proof['files'] if row.get('kind') == 'built_html' and row['passed']}
 results = []
 network_blocked = False
 options = dict(headless=True, args=['--no-sandbox'])
@@ -41,6 +43,9 @@ with sync_playwright() as p:
             try:
                 response = page.goto(url, wait_until='domcontentloaded', timeout=60000)
                 assert response and response.status == 200, 'HTML public non disponible'
+                document_sha256 = hashlib.sha256(response.body()).hexdigest()
+                assert document_sha256 == verified_html[urlsplit(url).path], 'HTML du navigateur différent des octets HTTP vérifiés'
+                row['http_document_sha256'] = document_sha256
                 page.wait_for_selector('.mc', timeout=45000)
                 assert page.locator('.mc').get_attribute('data-code') == code, 'Mauvais cours rendu'
                 page.locator('.mc-tabs [data-p="pA"]').click()

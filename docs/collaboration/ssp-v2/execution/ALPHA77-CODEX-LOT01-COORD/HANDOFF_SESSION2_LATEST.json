@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-15T23:05:39.020589+00:00",
+  "recorded_at": "2026-10-15T23:25:43.683785+00:00",
   "status": "waiting_for_corrected_pages_deployment",
   "authoritative_files": {
     "sources": "final-source-publications-progress.json",
@@ -16,7 +16,7 @@
     "source-publication-plan-session2.json"
   ],
   "main_seen": "b0a55282ed9944c2474bfc9aefcd618d16fe2c9f",
-  "coordinator_previous_checkpoint": "7d15f10ba8877dede0680119a2449e73bcf65902",
+  "coordinator_previous_checkpoint": "30c69f375b66c2e02b7432f15ea0620f6baf8b2b",
   "equality": {
     "effective": true,
     "codex_decision_primacy": false,
@@ -27,7 +27,8 @@
     "medical_reserves_preserved": true,
     "merge_pr": 169,
     "claude_notification": "https://github.com/vialdjoukang-spec/Medina/issues/107#issuecomment-6204062502",
-    "read_acknowledged": false
+    "read_acknowledged": false,
+    "no_codex_reservation_conflicts_with_claude_three_autonomous_missions_proof": "CLAUDE_AUTONOMIE_SANS_VERROU_CODEX.json"
   },
   "codex": {
     "codes": [
@@ -108,6 +109,13 @@
         "source_commit": "6b664512c16afb8ffdeee9221a033253be9f8260",
         "branch": "codex/alpha77/d64-integrate-g1"
       }
+    },
+    "additional_E05_primary_research": {
+      "proof": "e05-ofs-pregnancy-delta/source-readings.json",
+      "summary": "CIM-10-GM2024 applicable2025–2026 et exclusions thyroïdiennes documentées auprès OFS, avec portée SpiGes ; séquençage individuel et remboursement non certifiés.",
+      "course_sources_unchanged": true,
+      "reports_receipts_statuses_unchanged": true,
+      "closures_added": 0
     }
   },
   "tools": {
@@ -129,16 +137,19 @@
     "last_http_manifest_commit": "4b8a088d8741f287645cf1808ca23144e86837d7",
     "last_probe_passed": false,
     "corrected_workflow_status": "build_in_progress",
-    "build_job_id": 116718155026
+    "build_job_id": 116718155026,
+    "browser_https_transport_preflight_passed": true,
+    "remote_bootstrap_step": "success"
   },
   "controller": {
     "same_request_id": "26cdef051e2a44999ec5276ee5a632f7",
     "batch": 0,
-    "last_fresh_remote_state_commit": "8b87da9f54a32d99dec6a90c49cee02d4f53e1d5",
+    "last_fresh_remote_state_commit": "977b57f86256ee8afa4ef52ee050146df8a7b062",
     "phase": "NATIVE_RUNNING",
     "executor": "/root active turn, same native request, no persistent background service",
     "duplicate_worker_spawned": false,
-    "closed": []
+    "closed": [],
+    "progress_checkpoint": "CONTROLEUR_SESSION2_LIVE.json"
   },
   "claude_receipts_read_only_inventory": [
     {
