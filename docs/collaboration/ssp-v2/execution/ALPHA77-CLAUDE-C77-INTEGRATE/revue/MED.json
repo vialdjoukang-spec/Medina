@@ -1,0 +1,156 @@
+{
+ "schema_version": 1,
+ "actor": "Claude",
+ "code": "C77",
+ "fragment": "S06",
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "417d5ec0b82e3c3ca51d8e62f50ee7ea525820a9",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C77/C77_a.html": "28be3bfe9033c4279ef76b601c5d4b2f61ef6936dce17c81a8554e838b28a226",
+  "chapters/C77/C77_b.html": "7c604795374d707c47e0665ab70256b871c175bd0464de4a569b11c92992fa04",
+  "chapters/C77/C77_c.html": "dd8d9412582389ba6c4ec0baca2abbf8615398e9c1b190c4d040711b36aa29cd",
+  "chapters/C77/C77_d.html": "806002164ad6cea93602c33e54c5e6c5a15f8dcd8d46aec90735cb2834665d41",
+  "chapters/C77/C77_pop1.html": "aa8da4c5231974634749f92948352d97e351ade75f0f33e30e1f93d9de4c9632",
+  "chapters/C77/C77_pop2.html": "f02978e21aefdc1455f7b1901b40610e02e4a78474d7224292dc97c1d9970bea",
+  "glossary/c77.py": "ff5469886b085dc76da976e8a32bc240b6ae808b5bc65aead672d7cccdac5f88"
+ },
+ "reviewed_files_sha256": {
+  "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
+  "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
+  "chapters/C77/C77_b.html": "c6e9bbe6f8f43e1a1006c4238022c7dedbc6cd53c2fd0979d99e15225d291f39",
+  "chapters/C77/C77_c.html": "aa8bc3990b2f48a8b9cc997e5a9795fd0159ed7d3d88039f561ec3e2bad3e6c8",
+  "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
+  "chapters/C77/C77_pop1.html": "eccb2992db3cf755af500fd40db0e6b1ea4e5f8402568b90a2e5009e0ea96738",
+  "chapters/C77/C77_pop2.html": "3a4c2252d76dff23f858b1b7e88c1097da139277fc2cacd0bd86c7613405a224",
+  "glossary/c77.py": "1c253f84aba39238d8af976956eeea01c891cfb30a39409cf694ef841f471d86"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true,
+  "figures_anatomiques_ia": true,
+  "sources_suisses_puis_europeennes": true
+ },
+ "kind": "MED",
+ "scope": "Exactitude médicale et sources des sept fichiers finaux (onglets a–d, fenêtres pop1–pop2, glossaire), y compris les compléments de W en Sciences et la Figure 2 de synthèse",
+ "unresolved_blockers": [],
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "anchor": "chapters/C77/C77_c.html#c77-s-bioch-cours",
+   "finding": "« 25 à 35 % touchent une cible accessible à un médicament autorisé, par exemple une mutation BRAF V600, plus rarement EGFR, KRAS ou ALK » : Onkopedia dit « angehbare Veränderungen bei ca. 25–35 % » sans préciser « autorisé » ; BRAF V600 y est cité comme altération où l’effet de CUPISCO était « besonders günstig », et la liste des altérations plus rares est « EGFR, MET, KRAS p.G12C, ROS1, NTRK und ALK ».",
+   "evidence": "Onkopedia CUP-Syndrom, Stand September 2025, § molekulare Diagnostik, lu par P le 15.10.2026 ; ordre de grandeur juste, formulation à resserrer (supprimer « autorisé », écrire KRAS p.G12C)."
+  },
+  {
+   "id": "P-MED-02",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "anchor": "chapters/C77/C77_b.html#c77-9 (formes défavorables)",
+   "finding": "« l’étude n’avait pas la puissance d’une comparaison statistique formelle » généralise la réserve de la source, qui porte sur les sous-groupes (collectifs BRAF V600 et FGFR2) ; les chiffres 4,7 → 8,1 mois concernent les patients porteurs d’altérations ciblables.",
+   "evidence": "Onkopedia 2025, § 5.1.3.1.2 (CUPISCO), lu par P le 15.10.2026 ; le sens clinique n’est pas inversé."
+  },
+  {
+   "id": "P-MED-03",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_b.html#c77-8",
+   "finding": "Urgence : la compression médullaire est désormais l’urgence documentée ; chirurgie ou radiothérapie immédiate, pronostic plus sombre avec métastases viscérales ou perte de la marche ; cohérent avec l’alerte c77-sm-7 et le bloc clinique pA.",
+   "evidence": "Onkopedia 2025 § 5.3.1 : « onkologischer Notfall! … Eine umgehende Operation oder Radiatio kann ein Transversalsyndrom häufig verhindern »."
+  },
+  {
+   "id": "P-MED-04",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_pop1.html#c77-ccl21 ; C77_c.html Figure 4",
+   "finding": "Attribution CCL21 exacte : Liu 2023 nomme CCL21 dans la légende de sa figure 3 ; la fenêtre le précise. Le signalement de P en phase 1 (fondé sur le texte sans figures) est levé.",
+   "evidence": "Europe PMC fullTextXML PMC10559534 (sha256 9567abdcd7b1aec68c3e1da80c89de40c7c66bec41639458edb45cd74735866a), légende Fig. 3 : « CCL21 expressed by LECs can induce CCR7-dependent cancer cells into lymphatic vessels »."
+  },
+  {
+   "id": "P-MED-05",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html#c77-s-anat-cours, #c77-s-histo-cours, #c77-s-physio-cours, #c77-s-bioch-cours",
+   "finding": "Compléments de W en Sciences vérifiés et utiles, sans remplissage : sein 30 % sus-claviculaire ; bilan inguinal (dermatologique, gynécologique, urologique, proctoscopie, cystoscopie, HPV) ; histologie exigée avec matériel pour immunohistochimie et biologie moléculaire ; 50 % épidermoïdes et 35 % indifférenciés rattachés par p40/p63 (la source cite aussi CK5/6) ; filaments d’ancrage, tri antigénique, lymphatique efférent devenant afférent ; cinq mécanismes de tolérance et PD-L1 induit par l’interféron gamma ; PD-L1 « untergeordnete Rolle » sans seuil ; > 85 % d’altérations ; tests d’expression 85–90 % sans gain de survie randomisé. Chaque mécanisme expérimental est signalé comme tel.",
+   "evidence": "Onkopedia 2025 (relu par P, deux extractions) ; Liu 2023 texte intégral et légendes (Europe PMC XML) ; Swiss Medical Weekly 2024 (PDF sha256 cebeae45…8d4f6)."
+  },
+  {
+   "id": "P-MED-06",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html Figure 2 « De la région ganglionnaire atteinte au bilan ciblé »",
+   "finding": "Schéma non anatomique (boîtes et flèches), chaque case sourcée : cervical → ORL, thyroïde, salivaires / examen ORL, TEP-CT, panendoscopie ; sus-claviculaire → poumon, sein, œsophage, abdomen et pelvis à gauche / scanner thoraco-abdomino-pelvien, PSA ; axillaire → sein, lymphome, poumon, mélanome / mammographie, échographie, IRM mammaire ; inguinal → vulve, col, pénis, anus, peau / examens gynécologique et urologique, proctoscopie. Utile comme synthèse, légende prudente.",
+   "evidence": "Swiss Medical Weekly 2024 (régions sus-claviculaire, axillaire, inguinale) ; Onkopedia 2025 (Tabelle 5, § 5.1.1.2, § 5.1.1.4)."
+  },
+  {
+   "id": "P-MED-07",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html Figure 1",
+   "finding": "MAJ-09 levé : la Figure 1 dessinée est remplacée par l’original SEER/NCI (domaine public) ; attribution et réserve « régions de la classification d’Ann Arbor, sans les voies de drainage, pas à l’échelle » visibles dans le rendu.",
+   "evidence": "revue/FIGURE_c77-img-1.json ; revue/droits/c77-img-1_rights.json ; rendu Chromium 1300 et 390 px."
+  },
+  {
+   "id": "P-MED-08",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_d.html, C77_pop2.html (carboplatine, paclitaxel), C77_b.html c77-8",
+   "finding": "MAJ-01 à MAJ-04 et ENR-08 vérifiés contre les FI suisses : contre-indications complètes du carboplatine ; seuils de reprise 2000/mm³ et 100 000/mm³ (carboplatine), 1500/mm³ et 100 000/mm³ (paclitaxel) ; réduction de 20 % si neutrophiles < 500/mm³ ou neuropathie sévère ; insuffisance hépatique sévère : non recommandé ; CYP2C8/3A4 (kétoconazole, érythromycine, gemfibrozil, clopidogrel, ritonavir ; rifampicine, carbamazépine, phénytoïne) ; paclitaxel avant cisplatine (clairance −20 %) ; nadir 21 j/15 j ; aminosides, diurétiques de l’anse, vaccins vivants ; indications (ORL monothérapie avec radiothérapie, vessie en association) ; schéma carboplatine AUC 2 + paclitaxel 50 mg/m² hebdomadaire rattaché au CUP épidermoïde (§ 5.1.3.2).",
+   "evidence": "tools/swissmedic_fi.py texte 7680548290014 (Carboplatine Sandoz, mise à jour février 2026) et 7680668530014 (Paclitaxel Accord, novembre 2023), lus par P le 15.10.2026 ; Onkopedia § 5.1.3.2."
+  },
+  {
+   "id": "P-MED-09",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_pop2.html (c77-cervical-trt), C77_b.html c77-10",
+   "finding": "CUP cervical : N1, N2, N3 (> 6 cm) et facteurs de risque (≥ 2 ganglions, extension extracapsulaire, R1, marge < 5 mm) ; radiochimiothérapie néoadjuvante alternative ; survie à 5 ans 57 % avec contre 82 % sans extension extracapsulaire ; TMB ≥ 10 mutations/Mb, hors indication.",
+   "evidence": "Onkopedia 2025 § 5.1.1.1.1 et § 5.1.3.1.1, lus par P le 15.10.2026."
+  },
+  {
+   "id": "P-MED-10",
+   "severity": "LACUNE",
+   "status": "non_blocking",
+   "anchor": "chapters/C77/C77_pop1.html (c77-sources), C77_pop2.html, C77_d.html, C77_b.html (références)",
+   "finding": "Lacunes restantes déclarées dans la leçon elle-même : texte intégral ESMO 2023 et EHNS-ESMO-ESTRO 2020 non lus ; FI du cisplatine, de la gemcitabine, de l’atézolizumab et du pembrolizumab non lues (aucune dose donnée) ; double codage C77/C80.0 non vérifié ; aucune donnée épidémiologique suisse ; remboursement du TEP-CT (OPAS) non vérifié (consigné dans corrections.json).",
+   "evidence": "Passages relevés dans les fichiers finaux : « Le texte intégral de la ligne directrice ESMO 2023 n’a pas pu être lu (accès refusé) » ; « Les informations professionnelles du cisplatine, de la gemcitabine, de l’atézolizumab et du pembrolizumab n’ont pas été lues » ; « information professionnelle non lue » (C77_d)."
+  }
+ ],
+ "evidence": [
+  {
+   "ref": "sources_relues_par_P",
+   "items": [
+    "Onkopedia CUP-Syndrom, Stand September 2025 (deux extractions de la page, 15.10.2026)",
+    "Swiss Medical Weekly 2024;154:3549 (PDF, sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6)",
+    "Swiss Medical Weekly 2010;140:98–104 (PDF, sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f)",
+    "Liu et coll. Eur J Med Res 2023, texte intégral PMC et XML Europe PMC avec légendes",
+    "FI suisses Carboplatine Sandoz (02.2026) et Paclitaxel Accord (11.2023) via tools/swissmedic_fi.py",
+    "BfArM CIM-10-GM 2024, bloc C76–C80 (sous-codes C77)",
+    "Supports UMVF : sémiologie hématologique 2013 et item 291"
+   ]
+  },
+  {
+   "ref": "traitement_constats_alpha1",
+   "items": [
+    "MAJ-01 à MAJ-09 : appliqués et vérifiés (MAJ-09 en phase 2)",
+    "MIN-01 à MIN-12 : appliqués selon corrections.json ; échantillon vérifié (MIN-01, MIN-02, MIN-04, MIN-06, MIN-10, MIN-12)",
+    "ENR-01 à ENR-11 : intégrés ; ENR-04 (compression médullaire), ENR-05 (LEMO), ENR-07 (TMB), ENR-08 (FI) vérifiés"
+   ]
+  },
+  {
+   "ref": "frontend",
+   "controls": [
+    "test_v7.py --static C77 : OK ; build_medina.audit = {} sur les six fichiers HTML",
+    "build_front.py --fragment S06 reconstruit par P dans son dossier temporaire : 5 957 934 octets, identique à la taille rapportée par W",
+    "Chromium 1194 (servi en HTTP local, assets liés) : 1300 px et 390 px ; onglet pS → sous-onglet sémiologie visible par défaut, aria-selected=\"true\", 9 sections, premier h2 exact ; mot vert ouvre sa fenêtre (« Normal… ») ; débordement horizontal 0 ; aucune erreur JavaScript",
+    "390 px et police 24 px : libellé « Sémiologie fondamentale et analytique » sur deux lignes dans un bouton de 366 px, sans débordement (scrollWidth = clientWidth = 364) ; clavier Entrée et Espace activent les sous-onglets",
+    "Figure 1 SEER : image chargée (complete), légende visible contenant « domaine public », « Wikimedia Commons », « Ann Arbor » et « sans représenter les voies de drainage »",
+    "Captures P : scratchpad p_desktop_semio.png, p_mobile_semio.png, p_desktop_pop.png, p_mobile_pop.png, p_desktop_fig1.png, p_mobile_f24.png (hors dépôt) ; captures W versionnées dans integration/captures/"
+   ]
+  }
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine. Les empreintes et contrôles techniques ne certifient pas l’exactitude médicale."
+}

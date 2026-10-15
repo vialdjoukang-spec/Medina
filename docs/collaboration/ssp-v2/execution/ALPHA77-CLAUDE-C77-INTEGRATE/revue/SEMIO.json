@@ -1,0 +1,127 @@
+{
+ "schema_version": 1,
+ "actor": "Claude",
+ "code": "C77",
+ "fragment": "S06",
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "417d5ec0b82e3c3ca51d8e62f50ee7ea525820a9",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C77/C77_a.html": "28be3bfe9033c4279ef76b601c5d4b2f61ef6936dce17c81a8554e838b28a226",
+  "chapters/C77/C77_b.html": "7c604795374d707c47e0665ab70256b871c175bd0464de4a569b11c92992fa04",
+  "chapters/C77/C77_c.html": "dd8d9412582389ba6c4ec0baca2abbf8615398e9c1b190c4d040711b36aa29cd",
+  "chapters/C77/C77_d.html": "806002164ad6cea93602c33e54c5e6c5a15f8dcd8d46aec90735cb2834665d41",
+  "chapters/C77/C77_pop1.html": "aa8da4c5231974634749f92948352d97e351ade75f0f33e30e1f93d9de4c9632",
+  "chapters/C77/C77_pop2.html": "f02978e21aefdc1455f7b1901b40610e02e4a78474d7224292dc97c1d9970bea",
+  "glossary/c77.py": "ff5469886b085dc76da976e8a32bc240b6ae808b5bc65aead672d7cccdac5f88"
+ },
+ "reviewed_files_sha256": {
+  "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
+  "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
+  "chapters/C77/C77_b.html": "c6e9bbe6f8f43e1a1006c4238022c7dedbc6cd53c2fd0979d99e15225d291f39",
+  "chapters/C77/C77_c.html": "aa8bc3990b2f48a8b9cc997e5a9795fd0159ed7d3d88039f561ec3e2bad3e6c8",
+  "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
+  "chapters/C77/C77_pop1.html": "eccb2992db3cf755af500fd40db0e6b1ea4e5f8402568b90a2e5009e0ea96738",
+  "chapters/C77/C77_pop2.html": "3a4c2252d76dff23f858b1b7e88c1097da139277fc2cacd0bd86c7613405a224",
+  "glossary/c77.py": "1c253f84aba39238d8af976956eeea01c891cfb30a39409cf694ef841f471d86"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true,
+  "figures_anatomiques_ia": true,
+  "sources_suisses_puis_europeennes": true
+ },
+ "kind": "SEMIO",
+ "requirement": "fundamental_analytical_semiology",
+ "scope": "Contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15 : sous-onglet c77-s-semio (C77_c.html), bloc clinique data-semiology-clinical=\"C77\" (C77_a.html, îlot c77-6), fenêtres c77-sm-* (C77_pop2.html)",
+ "independence_note": "Le contenu sémiologique a été préparé par l’Agent P (prep/, commit b417e5c8) et intégré tel quel par W (identité vérifiée octet par octet du panneau, du bouton, du bloc clinique, des fenêtres et de la figure). Cette revue vérifie l’intégration, le rendu et la correspondance aux sources ; elle n’est pas une relecture par un auteur tiers.",
+ "unresolved_blockers": [],
+ "grille_SEM": {
+  "SEM-01": "oui — premier bouton de .sci-bar #c77-tab-semio, data-s=\"c77-s-semio\", div.sci#c77-s-semio",
+  "SEM-02": "oui — premier h2 « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »",
+  "SEM-03": "oui par simulation — c77-s-semio : 4 982 mots, 1 figure SVG non anatomique légendée, 4 encadrés ; exécution officielle impossible (C77 hors base c50a28a2 et hors exemption, fichier partagé tests/)",
+  "SEM-04": "oui — test_v7.py --static C77 OK",
+  "SEM-05": "oui — tableau symptômes (mécanisme, fréquence ou valeur, piège), introduit et commenté (c77-sm-2)",
+  "SEM-06": "oui — techniques axillaire, épitrochléenne, splénique ; geste cervical déclaré non décrit en texte (lacune)",
+  "SEM-07": "oui — chaînes causales c77-sm-3 ; mécanismes non sourcés déclarés (fixité, douleur à l’alcool)",
+  "SEM-08": "oui — valeurs avec population et source (prep/sources_semiologie.json, 48 passages) ; absences écrites « non chiffrées dans les sources lues »",
+  "SEM-09": "oui — normal en c77-sm-1 avant le pathologique",
+  "SEM-10": "oui — pièges par signe (tableau, div.trap, fenêtres)",
+  "SEM-11": "oui — tableau des syndromes (c77-sm-5)",
+  "SEM-12": "oui — <ol> en cinq étapes ordonnées",
+  "SEM-13": "oui — div.alert c77-sm-7 (compression médullaire, seuil de 2 semaines, sus-claviculaire, séquence cervicale), cohérente avec c77-8 et le bloc pA",
+  "SEM-14": "oui — discriminants sourcés (c77-sm-6)",
+  "SEM-15": "oui — examen en 12 étapes numérotées",
+  "SEM-16": "oui — div.card constatations / interprétation / limites / examens",
+  "SEM-17": "oui — 3 cas (valeur d’un signe, gravité, formulation d’une limite)",
+  "SEM-18": "oui — 10 mots verts ouvrent une fenêtre réelle (contrôle navigateur sur le premier, test_v7 sur tous)",
+  "SEM-19": "oui — sources suisses puis européennes ; figure 1 de la revue suisse fondée sur des sources nord-américaines signalée, sans fixer de conduite",
+  "SEM-20": "oui — 2 semaines, 1 cm, 5 mm, 34–86 % identiques entre sémiologie, onglet 1, fenêtres et Pareto",
+  "SEM-21": "oui — approfondissement des îlots 5–6, renvoi par texte",
+  "SEM-22": "oui — 390 px, police 24 px, sans débordement",
+  "SEM-23": "oui — captures W (integration/captures) et P (hors dépôt)",
+  "SEM-24": "oui — statut « revue IA, aucune validation médicale humaine »"
+ },
+ "findings": [
+  {
+   "id": "P-SEMIO-01",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "finding": "Structure conforme : 9 sections data-semiology dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources ; aria-selected et hidden suivent la sélection ; identifiants uniques.",
+   "evidence": "Chromium 1300/390 px ; lxml ; identité avec prep/semiologie_sciences.html."
+  },
+  {
+   "id": "P-SEMIO-02",
+   "severity": "LIMITE_OUTIL",
+   "status": "non_blocking",
+   "finding": "tests/audit_sciences.py ne s’exécute pas officiellement pour C77 et refuse une figure <img> dans pS (c77-s-anat, Figure 1 SEER) ; précédent D50 d50-s-histo. Toutes les autres exigences de l’outil passent pour les cinq disciplines ; aucun contournement par emballage SVG.",
+   "evidence": "Simulation par les fonctions de tests/audit_sciences.py sur le fichier final : c77-s-semio, -histo, -physio, -bioch sans erreur ; c77-s-anat : seule l’image originale est signalée."
+  },
+  {
+   "id": "P-SEMIO-03",
+   "severity": "LACUNE",
+   "status": "non_blocking",
+   "finding": "Lacunes de contenu déclarées dans le texte : aucune valeur chiffrée pour consistance, sensibilité, mobilité, peau ; mécanisme de la fixité et de la douleur à l’alcool non décrits ; aucune valeur suisse propre ; grossesse non couverte ; photographie des aires cervicales (CRUK) non obtenue (HTTP 429).",
+   "evidence": "c77-sm-2, c77-sm-3, c77-sm-5, c77-sm-8 ; prep/READY.json ; prep/figures.json."
+  }
+ ],
+ "evidence": [
+  {
+   "ref": "sources_semiologie",
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/sources_semiologie.json",
+   "sha256": "2fb6d29242afd3baba0b2708c238dcfc23ee405493e2723e17dff6b400fc5ee6",
+   "items": [
+    "48 passages au format each_claim ; vérification automatique contre les PDF extraits (SMW 2024, SMW 2010, UMVF) ; écarts résiduels d’extraction relus"
+   ]
+  },
+  {
+   "ref": "couverture_sections",
+   "items": [
+    "normal 541 mots",
+    "signs 763",
+    "mechanisms 706",
+    "examination 723",
+    "interpretation 808",
+    "differentials 381",
+    "urgency 325",
+    "limits 511",
+    "sources 364"
+   ]
+  },
+  {
+   "ref": "frontend",
+   "controls": [
+    "test_v7.py --static C77 : OK ; build_medina.audit = {} sur les six fichiers HTML",
+    "build_front.py --fragment S06 reconstruit par P dans son dossier temporaire : 5 957 934 octets, identique à la taille rapportée par W",
+    "Chromium 1194 (servi en HTTP local, assets liés) : 1300 px et 390 px ; onglet pS → sous-onglet sémiologie visible par défaut, aria-selected=\"true\", 9 sections, premier h2 exact ; mot vert ouvre sa fenêtre (« Normal… ») ; débordement horizontal 0 ; aucune erreur JavaScript",
+    "390 px et police 24 px : libellé « Sémiologie fondamentale et analytique » sur deux lignes dans un bouton de 366 px, sans débordement (scrollWidth = clientWidth = 364) ; clavier Entrée et Espace activent les sous-onglets",
+    "Figure 1 SEER : image chargée (complete), légende visible contenant « domaine public », « Wikimedia Commons », « Ann Arbor » et « sans représenter les voies de drainage »",
+    "Captures P : scratchpad p_desktop_semio.png, p_mobile_semio.png, p_desktop_pop.png, p_mobile_pop.png, p_desktop_fig1.png, p_mobile_f24.png (hors dépôt) ; captures W versionnées dans integration/captures/"
+   ]
+  }
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine. La présence des balises, empreintes et déclarations ne certifie ni exactitude médicale ni validation par un médecin."
+}

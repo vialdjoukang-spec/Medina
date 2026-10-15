@@ -1,0 +1,91 @@
+{
+ "schema_version": 1,
+ "actor": "Claude",
+ "code": "C77",
+ "fragment": "S06",
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "417d5ec0b82e3c3ca51d8e62f50ee7ea525820a9",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C77/C77_a.html": "28be3bfe9033c4279ef76b601c5d4b2f61ef6936dce17c81a8554e838b28a226",
+  "chapters/C77/C77_b.html": "7c604795374d707c47e0665ab70256b871c175bd0464de4a569b11c92992fa04",
+  "chapters/C77/C77_c.html": "dd8d9412582389ba6c4ec0baca2abbf8615398e9c1b190c4d040711b36aa29cd",
+  "chapters/C77/C77_d.html": "806002164ad6cea93602c33e54c5e6c5a15f8dcd8d46aec90735cb2834665d41",
+  "chapters/C77/C77_pop1.html": "aa8da4c5231974634749f92948352d97e351ade75f0f33e30e1f93d9de4c9632",
+  "chapters/C77/C77_pop2.html": "f02978e21aefdc1455f7b1901b40610e02e4a78474d7224292dc97c1d9970bea",
+  "glossary/c77.py": "ff5469886b085dc76da976e8a32bc240b6ae808b5bc65aead672d7cccdac5f88"
+ },
+ "reviewed_files_sha256": {
+  "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
+  "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
+  "chapters/C77/C77_b.html": "c6e9bbe6f8f43e1a1006c4238022c7dedbc6cd53c2fd0979d99e15225d291f39",
+  "chapters/C77/C77_c.html": "aa8bc3990b2f48a8b9cc997e5a9795fd0159ed7d3d88039f561ec3e2bad3e6c8",
+  "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
+  "chapters/C77/C77_pop1.html": "eccb2992db3cf755af500fd40db0e6b1ea4e5f8402568b90a2e5009e0ea96738",
+  "chapters/C77/C77_pop2.html": "3a4c2252d76dff23f858b1b7e88c1097da139277fc2cacd0bd86c7613405a224",
+  "glossary/c77.py": "1c253f84aba39238d8af976956eeea01c891cfb30a39409cf694ef841f471d86"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true,
+  "figures_anatomiques_ia": true,
+  "sources_suisses_puis_europeennes": true
+ },
+ "kind": "LANG",
+ "scope": "Langue, style (docs/STYLE_REDACTION.md) et application des propositions de l’audit ALPHA1-CLAUDE-C77-LANG sur les fichiers finaux",
+ "unresolved_blockers": [],
+ "findings": [
+  {
+   "id": "P-LANG-01",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "finding": "133 propositions non typographiques (toutes fond_inchange) appliquées par W ; 106 se retrouvent littéralement dans les fichiers finaux, 27 ont ensuite été réécrites par les corrections médicales (MAJ-04, MAJ-07, MAJ-08, MIN-05, etc.), leur intention stylistique étant conservée.",
+   "evidence": "Contrôle mécanique de P : recherche de chaque « nouveau » dans chapters/C77/*.html ; échantillon lu des 27 passages réécrits (ex. C77-LANG-0056, -0068, -0436, -0437)."
+  },
+  {
+   "id": "P-LANG-02",
+   "severity": "DIFFERE",
+   "status": "non_blocking",
+   "finding": "390 propositions typographiques (espaces insécables) non appliquées : choix éditorial global en attente selon le protocole Alpha77 ; « fibrillation atriale/auriculaire » et groupe LIENS d’E11 sans objet pour C77.",
+   "evidence": "integration/corrections.json, clé lang.differees ; protocole Alpha77, section Interdits."
+  },
+  {
+   "id": "P-LANG-03",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "finding": "Textes ajoutés par W et par P relus : phrases complètes, tableaux et figures introduits puis commentés, aucune annonce de fabrication du cours ; aucune répétition de mot adjacente ni ponctuation collée détectée mécaniquement ; abréviations toutes couvertes (B.audit = {}).",
+   "evidence": "Lecture des îlots c77-8, c77-s-anat à c77-s-bioch, fenêtres c77-ccl21 et c77-cervical-trt ; contrôle regex de P ; test_v7 --static OK."
+  },
+  {
+   "id": "P-LANG-04",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "finding": "Renvois médicaux R1 à R3 du rapport LANG tranchés avec les sources (5/100 000 habitants par an, indicateur de l’OMS cité en référence 15 de la revue suisse ; fourchette > 10–15 mm restituée ; masses non ganglionnaires distinguées des adénopathies bénignes).",
+   "evidence": "Swiss Medical Weekly 2024, références 15 (World Health Organization GTR) et sections médiastinale et axillaire, vérifiées par P."
+  }
+ ],
+ "evidence": [
+  {
+   "ref": "audit_lang_alpha1",
+   "items": [
+    "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-C77-LANG/propositions.json : 523 propositions (390 typographie, 84 phrase nominale, 8 registre, 6 répétition, 6 ambiguïté, autres)",
+    "integration/corrections.json : 133 appliquées, 390 différées"
+   ]
+  },
+  {
+   "ref": "frontend",
+   "controls": [
+    "test_v7.py --static C77 : OK ; build_medina.audit = {} sur les six fichiers HTML",
+    "build_front.py --fragment S06 reconstruit par P dans son dossier temporaire : 5 957 934 octets, identique à la taille rapportée par W",
+    "Chromium 1194 (servi en HTTP local, assets liés) : 1300 px et 390 px ; onglet pS → sous-onglet sémiologie visible par défaut, aria-selected=\"true\", 9 sections, premier h2 exact ; mot vert ouvre sa fenêtre (« Normal… ») ; débordement horizontal 0 ; aucune erreur JavaScript",
+    "390 px et police 24 px : libellé « Sémiologie fondamentale et analytique » sur deux lignes dans un bouton de 366 px, sans débordement (scrollWidth = clientWidth = 364) ; clavier Entrée et Espace activent les sous-onglets",
+    "Figure 1 SEER : image chargée (complete), légende visible contenant « domaine public », « Wikimedia Commons », « Ann Arbor » et « sans représenter les voies de drainage »",
+    "Captures P : scratchpad p_desktop_semio.png, p_mobile_semio.png, p_desktop_pop.png, p_mobile_pop.png, p_desktop_fig1.png, p_mobile_f24.png (hors dépôt) ; captures W versionnées dans integration/captures/"
+   ]
+  }
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
