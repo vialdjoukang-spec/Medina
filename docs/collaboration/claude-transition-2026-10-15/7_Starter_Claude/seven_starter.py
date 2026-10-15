@@ -78,8 +78,18 @@ def published(code):
             except json.JSONDecodeError:
                 continue
             if r.get('phase') == 'completed' and 'SEMIO' in (r.get('audits') or {}):
-                return True
+                return six_subtabs(code)
     return False
+
+
+def six_subtabs(code):
+    # AGENTS.md : la Sémiologie est le 6e sous-onglet, après cinq disciplines ; absence = MAJEUR bloquant la clôture.
+    try:
+        src = git('show', f'origin/main:chapters/{code}/{code}_c.html')
+    except Exception:
+        return False
+    tabs = set(re.findall(r'data-s="([^"]+)"', src))
+    return len(tabs) >= 6 and f'{code.lower()}-s-semio' in tabs
 
 
 def lesson_state(code, mans, res):

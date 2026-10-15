@@ -43,7 +43,7 @@ Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche
 ## 4 ter. Leçon apprise sur la CI
 Une branche en retard sur `main` échoue à « MEDINA / mission et périmètre » : les fichiers modifiés depuis dans `main` y apparaissent comme des changements hors périmètre. Avant toute PR, fusionner `origin/main` dans la branche (commit de fusion, sans rebase ni force), puis revérifier `ai_session_guard.py check` et `alpha_publication.py`.
 
-**Mise à jour 22 h 20 UTC — LOT 1 CLOS (7/77).** Les sept reçus Alpha sont dans `main` : E11 #147, N18 #148, I61 #150, E12 #156, D50 #157, G45 #159, C77 #158. Toutes les réservations de génération 1 sont libérées.
+**Mise à jour 22 h 25 UTC (correction) — LOT 1 : 7 reçus publiés, mais 4/7 CLOS seulement.** E11, N18 et I61 n'ont que 5 sous-onglets ; leurs générations 2 sont intégrées par medina-bc, à qui il ne faut pas les reprendre. Le lot 2 s'approuve avec ALPHA77-CLAUDE-GOUVERNANCE-01 (Vial, `d0a6286`), et seulement après 7 clôtures réelles, comme l'exige `next_batch_requires_seven_real_closures`. 7_Starter exige désormais 6 `data-s`. Les sept reçus Alpha sont dans `main` : E11 #147, N18 #148, I61 #150, E12 #156, D50 #157, G45 #159, C77 #158. Toutes les réservations de génération 1 sont libérées.
 
 - **Règle appliquée (AGENTS.md)** : cinq disciplines, plus la Sémiologie en sixième position.
   - D50 : Anatomie.
