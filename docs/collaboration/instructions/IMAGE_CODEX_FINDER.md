@@ -35,4 +35,19 @@ Politiques de référence : [MediaWiki API etiquette](https://www.mediawiki.org/
 
 Le 15 octobre 2026 : **11 tests automatisés réussis**, dont quatre processus demandant la même recherche, sérialisation de recherches différentes, arrêt SIGKILL pendant HTTP, budget persistant, erreurs429/503/maxlag et refus d’un appel navigateur sans header. Test réel borné : **1 appel Commons et 1 appel Europe PMC**, trois résultats par source ; répétition de chaque recherche depuis le cache, **zéro appel supplémentaire**. [Reçu du test](IMAGE_CODEX_FINDER_SMOKE_2026-10-15.json). Les deux appels réussis ne garantissent pas la disponibilité future des fournisseurs. Les candidats renvoyés n’ont pas été validés visuellement pour publication.
 
-Le courtier et son client sont implémentés et testés localement. **Aucun courtier commun aux machines Codex et Claude n’est actuellement hébergé** : leurs recherches ne doivent pas être parallélisées indépendamment en attendant ce point commun. La mission d’adaptation Claude est approuvée dans `main` sous `ALPHA1-CLAUDE-OUTIL-IMAGECLO` ; son exécution et son hébergement restent distincts de cette livraison Codex.
+Instruction Vial du 15 octobre 2026 : les moteurs Codex et Claude sont indépendants ; aucun courtier commun entre eux n’est requis. Les copies locales du moteur Codex partagent sa base, ses verrous et ses limites. Cette indépendance ne crée aucun partage implicite de quotas entre machines ; cache, cooldowns et budgets restent conservés dans chaque installation. Un broker local peut coordonner plusieurs clients ; sa panne ne déclenche jamais de repli direct caché.
+
+
+## Arrêt de campagne 7_Starter_Codex
+
+Chaque appel de la campagne transmet le fichier de contrôle local commun :
+
+```sh
+python3 tools/image_codex_finder.py --campaign-state /workspace/scratch/7-starter-codex-runtime/control.json search "renal histology" --direct
+```
+
+`MEDINA_IMAGE_CAMPAIGN_STATE` fournit aussi ce chemin par défaut. `Finder.search` relit le JSON avant tout résultat de cache ; une seconde vérification précède HTTP. Lorsque ce fichier est configuré, son absence, un JSON invalide, un schéma différent ou `image_execution_enabled` autre que `true` refuse la recherche, sans appel réseau. Le client broker vérifie également son contrôle local avant l'appel ; le serveur peut être configuré avec le même fichier. Le mode sans fichier conserve le fonctionnement autonome existant pour les recherches hors campagne.
+
+Le Starter écrit atomiquement `control.json` après ses transitions CAS distantes, notamment `image_execution_enabled: false` après les 77 clôtures et leurs preuves figures complètes. Toutes les copies **locales de cette campagne** doivent employer ce même fichier. Ce fichier local ne garantit aucun arrêt intermachines ; une autre machine doit lire son état de campagne et actualiser son propre contrôle avant de chercher. Aucun historique, image, cache, verrou ni code outil n'est supprimé.
+
+Tests ajoutés : arrêt malgré un cache déjà rempli ; fichier absent, malformé ou désactivé avec zéro appel HTTP. Les 13 tests du finder réussissent localement ; aucun appel réel aux fournisseurs n'a été ajouté pour cette évolution.

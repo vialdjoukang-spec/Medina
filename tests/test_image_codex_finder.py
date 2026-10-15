@@ -219,3 +219,33 @@ class FinderTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class CampaignStopTests(unittest.TestCase):
+    def test_disabled_missing_or_malformed_control_never_calls_http(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            control = Path(tmp) / 'control.json'
+            calls = []
+            instance = Finder(Path(tmp) / 'cache.sqlite3', http=lambda url: calls.append(url), campaign_state=control)
+            for raw in (None, b'{broken', b'[]', b'{"schema_version":1,"image_execution_enabled":false}'):
+                if raw is not None:
+                    control.write_bytes(raw)
+                with self.assertRaises(FinderError):
+                    instance.search('renal anatomy')
+            self.assertEqual(calls, [])
+
+    def test_stop_switch_blocks_even_already_cached_results(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            control = Path(tmp) / 'control.json'
+            control.write_text('{"schema_version":1,"image_execution_enabled":true}')
+            calls = []
+            def http(url):
+                calls.append(url)
+                return good()
+            instance = Finder(Path(tmp) / 'cache.sqlite3', http=http, campaign_state=control)
+            instance.search('renal anatomy')
+            self.assertEqual(len(calls), 1)
+            control.write_text('{"schema_version":1,"image_execution_enabled":false}')
+            with self.assertRaises(FinderError):
+                instance.search('renal anatomy')
+            self.assertEqual(len(calls), 1)
