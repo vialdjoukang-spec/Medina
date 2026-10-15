@@ -1,3 +1,13 @@
+## Instruction et livraison actives — publication en l’état, 15 octobre 2026
+
+La dernière demande de Vial remplace les restrictions administratives incompatibles : parité Codex/Claude sur tout MEDINA et publication des sources existantes des quatre systèmes, sans réécriture médicale. Lire [la politique commune](instructions/PUBLICATION_EN_ETAT_PARITE_2026-10-15.md) avant l’historique ci-dessous.
+
+Le lot prépare 104 cours : Neurologie 57, Endocrinologie et métabolisme 26, Néphrologie 6, Hématologie 15. R25/R26/R27/R47/E59/D69 sont des copies identiques aux livraisons ; R29/R48/E60 restent des préparations sans cours. Les 686 fichiers de cours préexistants sont inchangés. [Rapport et inventaires](reviews/2026-10-15/PUBLICATION_ET_ASSAINISSEMENT/README.md), [capacités administratives réelles](ADMIN_CAPACITIES_2026-10-15.md). Le résultat du déploiement et la vérification des empreintes publiques sont consignés séparément dans `receipts/PUBLICATION_ET_ASSAINISSEMENT_2026-10-15.json` après leur réalisation ; ce seul texte ne les atteste pas.
+
+Aucun audit médical nouveau, clôture historique de cycle ni pouvoir administrateur d’une application GitHub indépendante n’est revendiqué. Les 79 branches sont inventoriées ; les divergences historiques ne doivent pas écraser les contenus actuels. Ne pas rejouer d’ancien script de reconstruction de branche.
+
+---
+
 ## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
 
 Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).
