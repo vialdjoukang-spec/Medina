@@ -340,6 +340,16 @@ def validate_fragment_guard(before, after):
         except ModuleNotFoundError:
             from night_cycle import validate as validate_night
         night_authorized, night_codes, catalog_codes = validate_night(before, after)
+        try:
+            from tools.betta_cycle import validate as validate_betta, BettaError
+        except ModuleNotFoundError:
+            from betta_cycle import validate as validate_betta, BettaError
+        try:
+            betta_authorized, betta_codes = validate_betta(before, after)
+        except BettaError as error:
+            raise CycleError(str(error)) from error
+        night_authorized.update(betta_authorized)
+        catalog_codes = set(catalog_codes) | betta_codes
         # Cycles repris ou produits par Claude (instruction de Vial du 14 octobre 2026).
         try:
             from tools.cycle_claude import validate as validate_claude_cycles
