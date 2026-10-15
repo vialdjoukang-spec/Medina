@@ -1,0 +1,108 @@
+{
+ "mission": "ALPHA77-CLAUDE-N18-INTEGRATE",
+ "code": "N18",
+ "fragment": "S04",
+ "role": "Agent P (préparateur et contrôleur)",
+ "phase": 1,
+ "statut": "READY",
+ "date": "2026-10-15",
+ "branche": "claude/alpha77/n18-integrate-g1",
+ "base_sha": "abd681e5",
+ "livrables": [
+  {
+   "fichier": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/semiologie_sciences.html",
+   "sha256": "4e7d574a0316d0591f82f8720171237805ee6e58cb28cf2cf240e43b977b8fd7",
+   "role": "Sous-onglet complet pour chapters/N18/N18_c.html : bouton n18-tab-semio (1er de .sci-bar, aria-selected=true) et panneau n18-s-semio (role=tabpanel, aria-labelledby, visible) ; 9 sections data-semiology ; 1er h3 exact ; figure SVG non anatomique ; 4 encadrés audit_sciences ; 3 cas corrigés ; sources liées."
+  },
+  {
+   "fichier": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/semiologie_pop.html",
+   "sha256": "f4d386106aaade9c753472fb73bae44d48977b17ac92da08b4cb3242191b2bc1",
+   "role": "13 fenêtres n18-sm-*, à ajouter à la fin de chapters/N18/N18_pop2.html (template data-pop, clés uniques, absentes de N18_pop1/pop2)."
+  },
+  {
+   "fichier": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/semiologie_clinique.html",
+   "sha256": "e6b1d183f7c6b5634904ea72ff57ebfa140ade1acfe00aab0de48177b24358c6",
+   "role": "Bloc pA data-semiology-clinical=\"N18\" à insérer en fin d’îlot n18-a05 (partie 7), avant son div.key."
+  },
+  {
+   "fichier": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/sources_semiologie.json",
+   "sha256": "170ea45429a66e4d5248502290b459f620224261dd42ea762f15714b259696f5",
+   "role": "33 affirmations au format source_contract.each_claim, 14 sources datées, lacunes."
+  },
+  {
+   "fichier": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/glossaire_ajouts.json",
+   "sha256": "cfc3027e0e664c61d6b313db5c8225541e0dd906f203b4c34392872c650b9f76",
+   "role": "1 clé de glossaire proposée (CKD)."
+  },
+  {
+   "fichier": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/figures.json",
+   "sha256": "fdfbd553c3d862c8b6ce872840bbacb9ce54e704bf2d75209532539ca99bef61",
+   "role": "Preuves des 8 figures : licences Commons des figures 4 à 8 revérifiées (API), figure 2 Robson revérifiée (Europe PMC), écart MED-09 confirmé."
+  },
+  {
+   "fichier": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/figures.html",
+   "sha256": "cbdbfe4651da54974d369325d088dd6989d3b12232e8db1a208f679b82b52d81",
+   "role": "Légendes prêtes : figures 1, 2 (et texte N18-C0104, alt), 4, 5, 6, 7 ; figure 8 inchangée."
+  }
+ ],
+ "controles_P": {
+  "classes_liste_fermee": "OK (aucune classe hors liste, aucun style en ligne) sur les 3 fragments HTML",
+  "logique_audit_sciences_reproduite": "OK sur n18-s-semio : 5 092 mots (≥ 280), 1 figure avec figcaption et svg[role=img][aria-label], libellés Science → clinique./examen./traitement. et À retenir. présents. tests/audit_sciences.py ne peut pas tourner tel quel sur N18 (N18_c.html absent de la base c50a28a2 et N18 hors liste d’exceptions) : modification d’un fichier partagé hors mission, signalée à W.",
+  "contrat_starter": "9 marqueurs data-semiology avec h3 et prose ; 1er h3 du 1er îlot exact ; liens https dans la section sources ; bouton id n18-tab-semio, role=tab, aria-controls ; panneau aria-labelledby.",
+  "cles_fenetres": "toutes définies (n18-sm-* dans semiologie_pop.html ; n18-dfg, n18-acr, n18-oedeme, n18-hyperkal existantes dans N18_pop1/pop2) ; aucune fenêtre orpheline",
+  "ids": "uniques, préfixés n18-, sans collision avec chapters/N18",
+  "glossaire": "build_medina.audit() {} pour les fichiers de sémiologie ; CKD à ajouter pour figures.html",
+  "rendu_svg": "Chromium 760 px : texte contenu dans les cadres (contrôle visuel P)"
+ },
+ "consignes_integration_W": [
+  "Dans N18_c.html : insérer le bouton en tête de .sci-bar et passer n18-s01-sci à aria-selected=\"false\" ; insérer le panneau en tête de .chap-body de #pS et ajouter hidden à <div class=\"sci\" id=\"n18-s01-sci\">.",
+  "Ajouter les 13 <template data-pop=\"n18-sm-*\"> de semiologie_pop.html à la fin de chapters/N18/N18_pop2.html (sans le commentaire d’en-tête). Aucun fichier N18_pop3.html : tools/alpha_publication.py n’admet aucun _pop3 (règle du coordinateur, 15.10.2026).",
+  "Insérer semiologie_clinique.html dans n18-a05 après la partie 6, avant le div.key final.",
+  "Appliquer figures.html (MED-09, MED-10 et harmonisation des numéros) en conservant les data-evidence existants.",
+  "Ajouter la clé CKD de glossaire_ajouts.json si la légende de la figure 2 est reprise.",
+  "Le Pareto des sciences reste en fin de dernière discipline ; son data-cover peut inclure n18-sm-1 à n18-sm-9.",
+  "Vérifier au navigateur : libellé du bouton à 390 px et police agrandie (SEM-22), fenêtres n18-sm-* (SEM-18), captures (SEM-23)."
+ ],
+ "lacunes": [
+  "Aucune sensibilité/spécificité des signes dans les sources lues (déclaré dans le texte, SM5 et SM8).",
+  "Technique des loges rénales, mécanisme des crampes et mécanisme complet du prurit non documentés.",
+  "ESC 2024 lu par extraction HTML (PDF 403) ; à relire en revue finale.",
+  "assets/img/n18/alpha/claude/ reste vide : aucune figure ANATOMIQUE_IA ni ORIGINE_INCONNUE, aucun remplacement requis.",
+  "tools/starter_codex.py exige ≥ 6 boutons data-s dans pS (N18 en aura 5) et actor == Codex : contrôle propre à la file Codex, non applicable tel quel à ce reçu Claude ; à signaler, non modifié."
+ ],
+ "differes_non_appliques": [
+  "Espaces insécables globales",
+  "Choix « fibrillation atriale/auriculaire »",
+  "Groupe LIENS d’E11"
+ ],
+ "chemins_ecrits": [
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-N18-INTEGRATE/prep/",
+  "(aucun fichier dans assets/img/n18/alpha/claude/)"
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "placement_fenetres": {
+  "fichier_cible": "chapters/N18/N18_pop2.html",
+  "raison": "tools/alpha_publication.py n’admet aucun _pop3 (règle du coordinateur)",
+  "cles": [
+   "n18-sm-appetit",
+   "n18-sm-bandelette",
+   "n18-sm-crampes",
+   "n18-sm-dyspnee",
+   "n18-sm-fatigue",
+   "n18-sm-godet",
+   "n18-sm-hyperk",
+   "n18-sm-nycturie",
+   "n18-sm-oligurie",
+   "n18-sm-orthostatisme",
+   "n18-sm-pa",
+   "n18-sm-paleur",
+   "n18-sm-prurit"
+  ]
+ },
+ "reseau": {
+  "regle_coordinateur": "User-Agent unique MEDINA-ImageCloFinder/0.1 (+https://github.com/vialdjoukang-spec/Medina), sans identifiant ni adresse personnelle",
+  "conformite_phase_1": "NON CONFORME pour les requêtes antérieures à la règle : les deux requêtes à l’API Commons ont porté l’User-Agent « MEDINA-license-check/1.0 (vial.djoukang educational; contact via github vialdjoukang-spec) », qui contient un fragment d’identifiant personnel ; les téléchargements de sources (HUG, SSN, SSED, KDIGO, Europe PMC, CHUV, OpenStax, revmed.ch, OQLF, UMVF, certifico, medix) ont porté des User-Agent génériques de navigateur ; WebFetch et WebSearch utilisent l’agent de l’outil. Aucune autre requête n’a été faite après réception de la règle ; toute requête future de P utilisera l’User-Agent imposé.",
+  "requetes_commons": 2,
+  "donnees_personnelles_transmises": "fragment d’identifiant « vial.djoukang » dans l’en-tête User-Agent de 2 requêtes Commons ; aucune adresse électronique complète, aucun jeton"
+ }
+}
