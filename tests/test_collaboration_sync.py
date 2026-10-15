@@ -6,6 +6,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from unittest import mock
 
 SPEC = importlib.util.spec_from_file_location("collaboration_sync", Path(__file__).resolve().parents[1] / "tools/collaboration_sync.py")
 SYNC = importlib.util.module_from_spec(SPEC)
@@ -38,6 +39,76 @@ def grouped_catalog():
 
 
 class CollaborationSyncTests(unittest.TestCase):
+    def test_default_integration_target_is_main(self):
+        self.assertEqual(SYNC.DEFAULT_TARGET, "main")
+
+    def test_forbidden_branch_inventory_writes_explicit_partial_reports(self):
+        calls = []
+        def request(path, params=None):
+            calls.append(path)
+            raise SYNC.GitHubRequestError(path, 403)
+        client = SYNC.GitHubClient("test/repo", request=request)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with mock.patch.object(SYNC, "GitHubClient", return_value=client):
+                result = SYNC.main(["--repo", "test/repo", "--root", str(root),
+                                    "--out", str(root / "out")])
+            self.assertEqual(result, 1)
+            report = json.loads((root / "out/DELIVERIES_LATEST.json").read_text())
+            raw = json.loads((root / "out/COLLABORATION_SNAPSHOT.json").read_text())
+            text = (root / "out/DELIVERIES_LATEST.md").read_text()
+            self.assertEqual(report["integration_branch"], "main")
+            self.assertFalse(report["scan_complete"])
+            self.assertIsNone(report["integration_commit"])
+            self.assertEqual(report["scan_errors"][0]["status"], 403)
+            self.assertEqual(report["scan_errors"][0]["path"], "/branches")
+            self.assertEqual(raw["branches"], [])
+            self.assertIn("aucune conclusion d'absence", text)
+            self.assertIn("GitHub HTTP 403 sur /branches", text)
+            self.assertNotIn("Scan : complet", text)
+            self.assertEqual(calls, ["/branches"])
+
+    def test_partial_branch_pages_are_preserved_on_failure(self):
+        batch = [{"name": "main", "commit": {"sha": "t" * 40}}]
+        batch.extend({"name": f"review/{i}", "commit": {"sha": "c" * 40}} for i in range(99))
+        def request(path, params=None):
+            if params["page"] == 1:
+                return batch
+            raise SYNC.GitHubRequestError(path, 403)
+        client = SYNC.GitHubClient("test/repo", request=request)
+        with self.assertRaises(SYNC.CollectionError) as caught:
+            client.collect("main")
+        data = caught.exception.snapshot
+        self.assertEqual(data["branches"], batch)
+        self.assertEqual(data["integration_commit"], "t" * 40)
+        self.assertEqual(data["scan_errors"][0]["page"], 2)
+        self.assertFalse(data["scan_complete"])
+
+    def test_pull_request_failure_preserves_acquired_branches(self):
+        branch = {"name": "main", "commit": {"sha": "t" * 40}}
+        def request(path, params=None):
+            if path == "/branches":
+                return [branch]
+            raise SYNC.GitHubRequestError(path, 403)
+        client = SYNC.GitHubClient("test/repo", request=request)
+        with self.assertRaises(SYNC.CollectionError) as caught:
+            client.collect("main")
+        data = caught.exception.snapshot
+        self.assertEqual(data["branches"], [branch])
+        self.assertEqual(data["integration_commit"], "t" * 40)
+        self.assertEqual(data["scan_errors"][0]["stage"], "pull_requests")
+        self.assertFalse(data["scan_complete"])
+
+    def test_unstructured_collector_failure_also_writes_report(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with mock.patch.object(SYNC.GitHubClient, "collect", side_effect=RuntimeError("GitHub indisponible")):
+                self.assertEqual(SYNC.main(["--root", str(root), "--out", str(root / "out")]), 1)
+            report = json.loads((root / "out/DELIVERIES_LATEST.json").read_text())
+            self.assertEqual(report["scan_errors"][0]["stage"], "collector")
+            self.assertFalse(report["scan_complete"])
+            self.assertTrue((root / "out/DELIVERIES_LATEST.md").exists())
+
     def test_pagination_has_no_first_page_limit(self):
         calls = []
         def request(path, params):
@@ -244,6 +315,20 @@ class CollaborationSyncTests(unittest.TestCase):
             self.assertTrue((root / "out/DELIVERIES_LATEST.md").exists())
             self.assertEqual(json.loads((root / "out/DELIVERIES_LATEST.json").read_text())["integration_branch"], "integration")
             self.assertEqual(set(p.name for p in root.iterdir()), {"chapters.json", "fragments.json", "snapshot.json", "out"})
+
+    def test_partial_snapshot_never_returns_complete_inventory_success(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = snapshot()
+            data["scan_complete"] = False
+            data["notes"] = ["Liste des branches incomplète."]
+            data["catalog"] = catalog()
+            data["receipts"] = []
+            source = root / "snapshot.json"
+            source.write_text(json.dumps(data))
+            self.assertEqual(SYNC.main(["--snapshot", str(source), "--root", str(root),
+                                        "--out", str(root / "out")]), 1)
+            self.assertIn("aucune conclusion d'absence", (root / "out/DELIVERIES_LATEST.md").read_text())
 
     def test_local_catalog_uses_target_commit_not_current_branch(self):
         with tempfile.TemporaryDirectory() as tmp:
