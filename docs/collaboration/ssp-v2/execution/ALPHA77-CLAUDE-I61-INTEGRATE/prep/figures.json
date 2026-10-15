@@ -1,0 +1,123 @@
+{
+ "mission": "ALPHA77-CLAUDE-I61-INTEGRATE",
+ "code": "I61",
+ "date": "2026-10-15",
+ "inventaire": {
+  "commande": "python3 tools/image_clo_finder.py inventory I61",
+  "figures": 10,
+  "croisement_rapport_MED": "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/rapport.json#figures",
+  "bilan": "ANATOMIQUE_IA 0 ; ORIGINE_INCONNUE 0 ; SCHEMA_NON_ANATOMIQUE 3 (recevables ; MED-20 : renommer « arbre DIAGRAM » en arbre de Wilson 2017, à la charge de W) ; IMAGE_SOURCEE 7 (conformes)",
+  "remplacements_requis": []
+ },
+ "figures_semiologie_nouvelles_svg": [
+  {
+   "fichier": "prep/semiologie_sciences.html",
+   "ancre": "aria-label=\"Schéma non anatomique : de l’effet de masse aux signes cliniques de l’hémorragie intracérébrale\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "contenu": "Boîtes de texte et flèches, aucune structure anatomique dessinée",
+   "sources_des_fleches": [
+    "SM2 (volume fixe, engagement)",
+    "SM4 (céphalée, vomissements, vigilance)",
+    "SM6 (mydriase aréactive unilatérale, nerf III)",
+    "SM1 p. 16-17 (respiration, rythme)"
+   ]
+  },
+  {
+   "fichier": "prep/semiologie_sciences.html",
+   "ancre": "aria-label=\"Graphique des rapports de vraisemblance des signes cliniques pour l’hémorragie par rapport à l’infarctus, en échelle logarithmique de 0,1 à 10\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "contenu": "Diagramme en barres, échelle logarithmique ; positions calculées x = 170 + 230 × (log10(RV) + 1)",
+   "sources_des_valeurs": [
+    "SM3 résumé : 6,2 ; 5,0 ; 4,7 ; 4,3 ; 3,0 ; 2,9 ; 0,34 ; 0,12"
+   ]
+  }
+ ],
+ "recherches": [
+  {
+   "besoin": "Photographie réelle d’une mydriase unilatérale (anisocorie) pour le bloc clinique pA",
+   "fournisseur": "commons",
+   "requete": "anisocoria dilated pupil photograph",
+   "resultat": "0 résultat"
+  },
+  {
+   "besoin": "idem (reformulation unique après résultat vide)",
+   "fournisseur": "commons",
+   "requete": "anisocoria",
+   "resultat": "HTTP 429 (cooldown partagé), puis 8 résultats au créneau suivant"
+  },
+  {
+   "besoin": "Photographie d’une paralysie du nerf III",
+   "fournisseur": "europepmc",
+   "requete": "anisocoria photograph case report",
+   "resultat": "8 articles ; PMC13078097 refusé (CC BY-NC-ND 4.0) ; PMC13561960 (Cureus, CC BY 4.0) retenu sur le papier mais figure non téléchargeable (HTTP 403 Europe PMC, PMC, Cureus)"
+  },
+  {
+   "besoin": "Schéma des engagements cérébraux",
+   "fournisseur": "commons",
+   "requete": "brain herniation types",
+   "resultat": "HTTP 429, aucun nouvel essai (règle de sobriété) ; lacune déclarée"
+  }
+ ],
+ "candidats": [
+  {
+   "statut": "RETENU_NON_TELECHARGE",
+   "figure_remplacee": null,
+   "usage_prevu": "Bloc clinique pA (prep/semiologie_clinique.html, emplacement FIGURES) : illustrer une mydriase unilatérale et le piège pharmacologique",
+   "fichier_prevu": "assets/img/i61/alpha/claude/anisocoria_tropicamide_thomasbonini.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Anisocoroa.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Anisocoroa.jpg",
+   "auteur": "ThomasBonini",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution": "ThomasBonini, « Anisocoroa.jpg », Wikimedia Commons, CC BY-SA 4.0",
+   "provenance_humaine": "Page Commons lue le 15.10.2026 : « Own work », 12.02.2019, EXIF Canon PowerShot G7 X Mark II, aucun modèle IA ni retouche signalés",
+   "description_source": "Anisocorie provoquée par deux gouttes de tropicamide 1 % dans l’œil droit seulement",
+   "dimensions": "2613 × 3262 px, 1,73 Mo",
+   "sha256": null,
+   "controle_visuel": "NON RÉALISÉ : téléchargement refusé par upload.wikimedia.org (HTTP 429, « robot policy », Retry-After 10 s) lors de quatre tentatives distinctes, sans boucle ; la dernière avec l’agent prescrit MEDINA-ImageCloFinder/0.1 (+https://github.com/vialdjoukang-spec/Medina).",
+   "reserves": [
+    "Figure non insérable tant que le fichier, son empreinte et le contrôle visuel manquent",
+    "Mydriase pharmacologique, non engagement : la légende doit le dire (piège)",
+    "CC BY-SA 4.0 : partage à l’identique de l’image et de ses dérivés ; indiquer toute modification (recadrage, redimensionnement)"
+   ]
+  },
+  {
+   "statut": "RETENU_NON_TELECHARGE",
+   "figure_remplacee": null,
+   "usage_prevu": "Fenêtre i61-sm-mydriase ou bloc clinique : paralysie complète du nerf III (ptosis, exotropie, pupille aréactive)",
+   "fichier_prevu": null,
+   "page": "https://europepmc.org/article/MED/42729349",
+   "original_url": "PMC13561960, fichier cureus-0018-00000114376-i01.webp (Figure 1, photographie neuf positions du regard)",
+   "auteur": "Cheng D, Mehta T, Deshmukh S, Silverstein E (Cureus 2026;18:e114376)",
+   "licence": "CC BY 4.0 (texte de licence de l’article, Europe PMC XML ; aucune mention de droits tiers sur la figure 1)",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "Cheng et coll., Cureus 2026;18(8):e114376, figure 1, CC BY 4.0",
+   "provenance_humaine": "Photographie clinique d’une patiente, consentement à la publication déclaré dans l’article",
+   "sha256": null,
+   "controle_visuel": "NON RÉALISÉ : figure inaccessible (HTTP 403 sur Europe PMC, PMC et Cureus)",
+   "reserves": [
+    "Cause anévrismale, non hémorragie intracérébrale : n’illustre que la sémiologie du nerf III",
+    "Ne pas insérer sans fichier, empreinte et contrôle visuel"
+   ]
+  }
+ ],
+ "refuses": [
+  {
+   "page": "https://europepmc.org/article/MED/41814233",
+   "raison": "CC BY-NC-ND 4.0 (licences NC/ND refusées)"
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Figure65Unequal.svg",
+   "raison": "Dessin vectoriel d’un œil (illustration), inutile alors qu’une photographie existe"
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Anisocoria_in_human_eyes.jpg",
+   "raison": "Téléversement récent (08/2026) sans métadonnée d’appareil vérifiée ; provenance humaine non démontrée"
+  }
+ ],
+ "figures_inserables_maintenant": 0,
+ "conclusion": "Aucune anatomie IA à remplacer. Les deux figures exigées par le contrat dans la sémiologie sont des schémas non anatomiques sourcés (SVG). Les photographies cliniques sont une amélioration différée, faute de téléchargement possible depuis cet environnement.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine. publication_ready reste false pour tout candidat.",
+ "agent_reseau_prescrit": "MEDINA-ImageCloFinder/0.1 (+https://github.com/vialdjoukang-spec/Medina)",
+ "ecart_agent_reseau": "Avant la consigne du coordinateur, une requête de téléchargement vers upload.wikimedia.org a porté l’agent « MEDINA-ImageClo/1.0 (vial.djoukang course atlas; contact via repository) », qui contenait un fragment d’identifiant personnel ; aucune adresse électronique complète n’a été transmise. Les autres requêtes ont porté des agents génériques ou celui du moteur."
+}

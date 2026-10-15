@@ -1,0 +1,194 @@
+{
+ "mission": "ALPHA77-CLAUDE-I61-INTEGRATE",
+ "phase": 2,
+ "role": "Agent W",
+ "code": "I61",
+ "fragment": "S08",
+ "date": "2026-10-15",
+ "base": "abd681e5",
+ "integration": {
+  "sous_onglet_semiologie": "chapters/I61/I61_c.html : bouton i61-tab-semio en tête de .sci-bar (role=tab, aria-selected=true, aria-controls/data-s=i61-s-semio) ; quatre boutons existants role=tab aria-selected=false ; div.sci#i61-s-semio (role=tabpanel, aria-labelledby=i61-tab-semio) en tête de .chap-body.sci-body ; #i61-s01-science hidden ; 9 sections data-semiology ; aucun Pareto dans le sous-onglet.",
+  "bloc_clinique": "chapters/I61/I61_b.html : div[data-semiology-clinical=I61], sous-partie h3#i61-a08-partie-4 « 8.4 Sémiologie clinique », après 8.3 et avant le div.trap de l’îlot i61-a08.",
+  "fenetres": "13 fenêtres i61-sm-* ajoutées à la fin de chapters/I61/I61_pop2.html ; aucun _pop3.",
+  "figures": "Aucune image ajoutée : le bloc photographique de prep/figures.html reste exclu (fichier non téléchargé ni contrôlé). Inventaire P : 0 anatomie IA, aucun remplacement requis.",
+  "renommage_wilson": "Aucune occurrence « arbre DIAGRAM » restante ; aria-label, <title> et texte d’introduction de la figure SVG de _c désignent « l’arbre de Wilson et coll. (2017) » ; fenêtre i61-diagram titrée « Arbre de Wilson » ; DIAGRAM ne désigne plus que le score de Hilkens 2018.",
+  "glossaire": "Aucun ajout requis par prep/glossaire_ajouts.json.",
+  "prep_sha256": {
+   "semiologie_sciences.html": "c22bbd70b8a132166df40d813394ebc08b9be8c3c52bdd66f0c1ecde7a95e759",
+   "semiologie_clinique.html": "6559a51203816096597ecfd83806e25795ea48571a24bcd242f4602d9039477b",
+   "semiologie_pop.html": "ea6f4fbeaf5714b6bc64653bdb6b09083ae0ce206355cc72ada8e1d41e93bde0",
+   "READY.json": "9a0294abccb07180483bc19c135b4bf980f2f421dbab7f5809bdaa269979f80e"
+  }
+ },
+ "controles": {
+  "build_medina.audit_I61": {},
+  "test_v7_static_I61": "OK (mots 38653, fenêtres 76, quiz 10, pareto 21)",
+  "liens_orphelins_data_k": [],
+  "identifiants_dupliques": [],
+  "unittest_glossaire": "tests.test_glossary_loader + tests.test_audit_glossary_boundaries : 26 tests OK",
+  "tests/audit_sciences.py": "non exécutable pour I61 : I61 absent du commit de comparaison c50a28a2 de l’outil (RuntimeError) ; critères reproduits par l’Agent P sur #i61-s-semio (4242 mots, 2 figures SVG non anatomiques avec figcaption, quatre encadrés). Faux positif connu « figure sans légende ou nom accessible » des images réelles : sans objet, l’outil ne démarre pas.",
+  "construction": "MEDINA_OUT=<scratchpad>/build_s08 python3 build_front.py --fragment S08 : MEDINA_S08_nerveux.html, 13 653 904 octets (7 063 719 compressés), hors dépôt.",
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "url": "MEDINA_S08_nerveux.html#/entry/I61",
+   "resultats": {
+    "desktop": {
+     "titre": "Hémorragie intracérébrale",
+     "clinique_present": true,
+     "etat_pS": {
+      "boutons": [
+       [
+        "i61-tab-semio",
+        "true",
+        "Sémiologie fondamentale et analytique"
+       ],
+       [
+        "i61-s01-science",
+        "false",
+        "◉ Anatomie"
+       ],
+       [
+        "i61-s02-science",
+        "false",
+        "◈ Histologie"
+       ],
+       [
+        "i61-s03-science",
+        "false",
+        "↝ Physiologie et biochimie"
+       ],
+       [
+        "i61-s04-science",
+        "false",
+        "⚛ Génétique"
+       ]
+      ],
+      "semio_hidden": false,
+      "s01_hidden": true,
+      "semio_visible": true,
+      "sections": [
+       "normal",
+       "signs",
+       "mechanisms",
+       "examination",
+       "interpretation",
+       "differentials",
+       "urgency",
+       "limits",
+       "sources"
+      ],
+      "h2": "1 Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+     },
+     "fenetre": [
+      "Vigilance abaissée et coma : mécanisme et valeur← RetourFermer ✕L’éveil dé­pend "
+     ],
+     "apres_anatomie": [
+      true,
+      false,
+      "false"
+     ],
+     "retour_semio": [
+      false,
+      true
+     ],
+     "scrollWidth": [
+      1360,
+      1360
+     ],
+     "erreurs_js": []
+    },
+    "mobile": {
+     "titre": "Hémorragie intracérébrale",
+     "clinique_present": true,
+     "etat_pS": {
+      "boutons": [
+       [
+        "i61-tab-semio",
+        "true",
+        "Sémiologie fondamentale et analytique"
+       ],
+       [
+        "i61-s01-science",
+        "false",
+        "◉ Anatomie"
+       ],
+       [
+        "i61-s02-science",
+        "false",
+        "◈ Histologie"
+       ],
+       [
+        "i61-s03-science",
+        "false",
+        "↝ Physiologie et biochimie"
+       ],
+       [
+        "i61-s04-science",
+        "false",
+        "⚛ Génétique"
+       ]
+      ],
+      "semio_hidden": false,
+      "s01_hidden": true,
+      "semio_visible": true,
+      "sections": [
+       "normal",
+       "signs",
+       "mechanisms",
+       "examination",
+       "interpretation",
+       "differentials",
+       "urgency",
+       "limits",
+       "sources"
+      ],
+      "h2": "1 Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+     },
+     "fenetre": [
+      "Vigilance abaissée et coma : mécanisme et valeur← RetourFermer ✕L’éveil dé­pend "
+     ],
+     "apres_anatomie": [
+      true,
+      false,
+      "false"
+     ],
+     "retour_semio": [
+      false,
+      true
+     ],
+     "scrollWidth": [
+      390,
+      390
+     ],
+     "erreurs_js": []
+    }
+   },
+   "note": "Premier passage sans le dossier assets à côté de la construction : une erreur console ERR_FILE_NOT_FOUND (image du cours absente du scratchpad). Passage retenu avec lien symbolique vers assets/ : aucune erreur JavaScript ni requête échouée."
+  },
+  "captures": [
+   "i61_desktop_1_ouverture.png",
+   "i61_desktop_2_bloc_clinique.png",
+   "i61_desktop_3_sous_onglet_semiologie.png",
+   "i61_desktop_3b_barre_sous_onglets.png",
+   "i61_desktop_4_fenetre.png",
+   "i61_mobile_1_ouverture.png",
+   "i61_mobile_2_bloc_clinique.png",
+   "i61_mobile_3_sous_onglet_semiologie.png",
+   "i61_mobile_3b_barre_sous_onglets.png",
+   "i61_mobile_4_fenetre.png"
+  ]
+ },
+ "non_fait": [
+  "Phase 3 (reçu Alpha) non réalisée, conformément à la consigne."
+ ],
+ "empreintes_sha256": {
+  "chapters/I61/I61_a.html": "c9593294231eb02eadd9d8bb3fff273b6ef1e2d5a7ba306f6e80856935ac5a6c",
+  "chapters/I61/I61_b.html": "4195da4da0a061224f6529d0bfb58f0e5f6de246454110cd84721ea1460469b6",
+  "chapters/I61/I61_c.html": "f5a21a7e4d9b4f1d026a6b713f8645a967b34e766dae0b83d66b1d4bc112df04",
+  "chapters/I61/I61_d.html": "6ab44f584c5b49410c114d557e84eb74eb820a712b6838b48be0ac991922502c",
+  "chapters/I61/I61_pop1.html": "9a511c82147375a07156d46e11748b3963018b010c1fc32b4f4c2729803b0107",
+  "chapters/I61/I61_pop2.html": "1fe1a4cc8f5373afb5a2cf52312fdc433d6987944065bb780fe16fedbab4fc73",
+  "glossary/i61.py": "afbc9a86b24351cf53a10da06ce1f56a1d1065b7c7ee7fe364df1758f6cf5aeb"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

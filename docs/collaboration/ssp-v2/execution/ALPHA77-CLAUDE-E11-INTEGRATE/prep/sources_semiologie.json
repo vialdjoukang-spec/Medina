@@ -1,0 +1,583 @@
+{
+ "mission": "ALPHA77-CLAUDE-E11-INTEGRATE",
+ "code": "E11",
+ "format": "source_contract.each_claim (SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml)",
+ "no_clinical_claim_from_model_memory": true,
+ "inherited_course_is_primary_source": false,
+ "priorite": "Suisse (SSED 2023, Paul 2024, QualiCCare 2023, SSED-SGRM 2025, FI Swissmedic) puis européenne et internationale acceptée en Suisse (Diabetologia/EASD, IWGDF-ESVS) ; aucune recommandation américaine utilisée comme conduite",
+ "lacunes": [
+  "Aucune source universitaire suisse de sémiologie propre au diabète lue (enseignement facultaire non retrouvé dans le temps imparti).",
+  "Fréquence de la polyurie, de la polydipsie et de la vision floue au diagnostic du type 2 : non chiffrée dans les sources lues.",
+  "Seuil rénal du glucose : non chiffré dans les sources lues (Ghezzi 2018 décrit le principe, figure 1 non lue en texte).",
+  "Valeur diagnostique de l’hypotension orthostatique isolée : non chiffrée.",
+  "Mécanisme de la vision floue fluctuante : non décrit dans les sources lues ; la sémiologie ne l’explique pas.",
+  "Rétinopathie : aucune source suisse ou européenne de sémiologie ophtalmologique lue ; le fond d’œil reste confié à l’ophtalmologue (SSED-SGRM 2025).",
+  "Sites d’injection et lipohypertrophie : non traités, aucune source lue."
+ ],
+ "sources": {
+  "P-GHEZZI": {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6133168/fullTextXML",
+   "publisher": "Diabetologia (Springer), Ghezzi C, Loo DDF, Wright EM",
+   "version": "2018;61(10):2087–2097, doi:10.1007/s00125-018-4656-5, CC BY"
+  },
+  "P-FORXIGA": {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680651760015",
+   "publisher": "Swissmedic, information professionnelle Forxiga® (AstraZeneca AG), via AmiKo",
+   "version": "Mise à jour de l’information : août 2026"
+  },
+  "P-GLUCOPHAGE": {
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680260610169",
+   "publisher": "Swissmedic, information professionnelle Glucophage®, via AmiKo",
+   "version": "Version en ligne consultée le 15.10.2026"
+  },
+  "P-UMPIERREZ": {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8"
+  },
+  "P-SSED2023": {
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/SGED-SSED_long_Recommendations_2023_en.pdf",
+   "publisher": "SSED/SGED, Gastaldi G et al.",
+   "version": "Recommandations 2023 (version longue anglaise)"
+  },
+  "P-PAUL2024": {
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/smw-2024-4000.pdf",
+   "publisher": "Swiss Medical Weekly ; SSED et Société suisse de cardiologie",
+   "version": "Swiss Med Wkly 2024;154:4000"
+  },
+  "P-CAN2024": {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11604676/fullTextXML",
+   "publisher": "Diabetologia (Springer), Eleftheriadou A, Spallone V, Tahrani AA, Alam U",
+   "version": "2024;67(12):2611–2625, doi:10.1007/s00125-024-06242-0, CC BY 4.0"
+  },
+  "P-IWGDF": {
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "International Working Group on the Diabetic Foot",
+   "version": "IWGDF Guidelines 2023 (recueil PDF, recommandations pratiques)"
+  },
+  "P-IWGDF-PAD": {
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "IWGDF, ESVS, SVS (Fitridge R et al.)",
+   "version": "Intersocietal PAD guideline 2023 (aussi Eur J Vasc Endovasc Surg 2023;66:454–483)"
+  },
+  "P-WANG2017": {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5651135/fullTextXML",
+   "publisher": "Journal of Diabetes Research (Hindawi), Wang F et al.",
+   "version": "2017:8787261, doi:10.1155/2017/8787261"
+  },
+  "P-ZHAO2021": {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34607858/",
+   "publisher": "BMJ Open, Zhao N et al.",
+   "version": "2021;11(10):e046966, doi:10.1136/bmjopen-2020-046966 (résumé lu)"
+  },
+  "P-QUALICCARE": {
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/65_Fussversorgung/230802_QCARE_Praxisleitfaden_A5_DE.pdf",
+   "publisher": "QualiCCare, groupe de travail pied diabétique (SGED et sociétés suisses)",
+   "version": "Praxisleitfaden, version 2023"
+  },
+  "P-SGRM2025": {
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf",
+   "publisher": "SSED/SGED et SGRM",
+   "version": "Richtlinien Diabetes und Fahreignung, version 1, août 2025"
+  },
+  "P-ATILA2026": {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13017940/fullTextXML",
+   "publisher": "J Clin Endocrinol Metab (Endocrine Society), Atila C, Refardt J, Christ-Crain M (Bâle)",
+   "version": "2026;111(4):922–937, doi:10.1210/clinem/dgaf651"
+  },
+  "P-RADU2022": {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9600076/fullTextXML",
+   "publisher": "Diagnostics (MDPI), Radu AM et al.",
+   "version": "2022;12(10):2519, doi:10.3390/diagnostics12102519"
+  },
+  "P-HAO2022": {
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9560484/fullTextXML",
+   "publisher": "PLoS One, Hao S et al.",
+   "version": "2022;17(10):e0275983 (vérification des figures)"
+  }
+ },
+ "claims": [
+  {
+   "claim_id": "E11-SEM-01",
+   "where": "e11-sm-1",
+   "source_id": "P-GHEZZI",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6133168/fullTextXML",
+   "publisher": "Diabetologia (Springer), Ghezzi C, Loo DDF, Wright EM",
+   "version": "2018;61(10):2087–2097, doi:10.1007/s00125-018-4656-5, CC BY",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Résumé ; Introduction",
+   "actual_passage": "The concentration of glucose in plasma is held within narrow limits (4–10 mmol/l), primarily to ensure fuel supply to the brain. … Although the kidneys freely filter plasma glucose, none appears in the urine.",
+   "population": "Physiologie humaine générale",
+   "limitations": "Revue de physiologie américaine (UCLA) : science fondamentale, aucune conduite clinique"
+  },
+  {
+   "claim_id": "E11-SEM-02",
+   "where": "e11-sm-1",
+   "source_id": "P-GHEZZI",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6133168/fullTextXML",
+   "publisher": "Diabetologia (Springer), Ghezzi C, Loo DDF, Wright EM",
+   "version": "2018;61(10):2087–2097, doi:10.1007/s00125-018-4656-5, CC BY",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Fig. 2 légende ; transporteurs",
+   "actual_passage": "SGLT2 and GLUT2 are responsible for glucose reabsorption in the S1 and S2 segments, and SGLT1 and GLUT2 are responsible for glucose reabsorption in the S3 segment.",
+   "population": "Physiologie",
+   "limitations": "Données en partie animales (microponction)"
+  },
+  {
+   "claim_id": "E11-SEM-03",
+   "where": "e11-sm-3 ; figure 11",
+   "source_id": "P-GHEZZI",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6133168/fullTextXML",
+   "publisher": "Diabetologia (Springer), Ghezzi C, Loo DDF, Wright EM",
+   "version": "2018;61(10):2087–2097, doi:10.1007/s00125-018-4656-5, CC BY",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Introduction",
+   "actual_passage": "in diabetes, glucose may appear in the urine, specifically when the plasma glucose concentration is so high that the filtered load exceeds the maximum capacity for sugar reabsorption.",
+   "population": "Diabète",
+   "limitations": "Aucun seuil rénal chiffré retenu : LACUNE"
+  },
+  {
+   "claim_id": "E11-SEM-04",
+   "where": "e11-sm-3 ; e11-sm-polyurie",
+   "source_id": "P-FORXIGA",
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680651760015",
+   "publisher": "Swissmedic, information professionnelle Forxiga® (AstraZeneca AG), via AmiKo",
+   "version": "Mise à jour de l’information : août 2026",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Propriétés/Effets (pharmacodynamie)",
+   "actual_passage": "L'excrétion urinaire de glucose à 24 heures à l'état d'équilibre dépendait fortement de la fonction rénale. … ont ainsi respectivement éliminé 85, 52, 18 et 11 g de glucose/jour. Cette glycosurie induite par la dapagliflozine entraîne également une diurèse osmotique ainsi qu'une augmentation du volume urinaire",
+   "population": "Diabète de type 2 sous dapagliflozine 10 mg",
+   "limitations": "Glycosurie pharmacologique ; transposée seulement au principe charge filtrée/filtration"
+  },
+  {
+   "claim_id": "E11-SEM-05",
+   "where": "e11-sm-7 alerte ; cas 2 ; e11-sm-digestif",
+   "source_id": "P-FORXIGA",
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680651760015",
+   "publisher": "Swissmedic, information professionnelle Forxiga® (AstraZeneca AG), via AmiKo",
+   "version": "Mise à jour de l’information : août 2026",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Mises en garde et précautions — Acidocétose",
+   "actual_passage": "Chez les patients présentant sous Forxiga des symptômes tels que nausées, vomissements, anorexie, douleurs abdominales, soif intense, difficultés respiratoires, épuisement et confusion, il faut immédiatement rechercher une acidocétose au moyen d'un test de corps cétonique, même si la glycémie est inférieure à 14 mmol/l (250 mg/dl). Lorsqu'une acidocétose est suspectée, le traitement doit être arrêté",
+   "population": "Patients sous dapagliflozine",
+   "limitations": "Produit exact ; transposition aux autres gliflozines non revendiquée"
+  },
+  {
+   "claim_id": "E11-SEM-06",
+   "where": "e11-sm-6 piège",
+   "source_id": "P-GLUCOPHAGE",
+   "url": "https://amiko.oddb.org/fr/fi?gtin=7680260610169",
+   "publisher": "Swissmedic, information professionnelle Glucophage®, via AmiKo",
+   "version": "Version en ligne consultée le 15.10.2026",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Mises en garde et précautions",
+   "actual_passage": "Il est recommandé de contrôler le taux sérique de vitamine B12 à intervalles réguliers (par ex. chaque année), en particulier chez les patients souffrant d'anémie ou de neuropathie périphérique.",
+   "population": "Patients sous metformine au long cours",
+   "limitations": "Fréquence : « fréquent » (≥ 1 %, < 10 %) selon la rubrique Effets indésirables"
+  },
+  {
+   "claim_id": "E11-SEM-07",
+   "where": "e11-sm-3 ; figure 11 ; e11-sm-polyurie",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Pathophysiology",
+   "actual_passage": "Hyperglycaemia leads to an osmotic diuresis, leading to volume depletion and haemoconcentration. If fluid intake is not maintained, then this can lead to a hyperosmolar state, renal impairment and, ultimately, a decline in cognitive function",
+   "population": "Adultes en crise hyperglycémique",
+   "limitations": "Consensus international incluant l’EASD et les sociétés britanniques ; présidence ADA"
+  },
+  {
+   "claim_id": "E11-SEM-08",
+   "where": "e11-sm-3 ; e11-sm-amaigrissement",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Pathophysiology",
+   "actual_passage": "The combination of insulin deficiency and increased counterregulatory hormones results in the release of NEFAs from adipose tissues (lipolysis), leading to unrestrained hepatic fatty acid oxidation and the production of excess ketone bodies with resulting ketonaemia and metabolic acidosis",
+   "population": "Acidocétose",
+   "limitations": "Mécanisme ; l’amaigrissement du type 2 n’y est pas chiffré"
+  },
+  {
+   "claim_id": "E11-SEM-09",
+   "where": "e11-sm-2 ; e11-sm-7 ; e11-sm-kussmaul ; e11-sm-digestif",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Clinical presentation of DKA and HHS",
+   "actual_passage": "In DKA, the time between initial symptoms and acute presentation may be hours to a few days, whereas with HHS, it may take days or weeks to develop. Both conditions may present with polyuria, polydipsia, weight loss, vomiting, dehydration and change in cognitive state. … Kussmaul breathing, which consists of deep breaths with a fruity odour … Nausea, vomiting and abdominal pain are common in DKA (>50%) but are uncommon in HHS",
+   "population": "Adultes en crise hyperglycémique",
+   "limitations": "Fréquences de la littérature citée [118], non recalculées"
+  },
+  {
+   "claim_id": "E11-SEM-10",
+   "where": "e11-sm-7 ; e11-sm-volemie",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Clinical presentation (évaluation)",
+   "actual_passage": "Tachycardia and hypotension correlate with severe hypovolaemia. However, some patients can maintain haemodynamic stability and intravascular volume because of the hypertonicity associated with hyperglycaemia",
+   "population": "Adultes en crise hyperglycémique",
+   "limitations": "Aucun seuil hémodynamique chiffré"
+  },
+  {
+   "claim_id": "E11-SEM-11",
+   "where": "e11-sm-7",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Diagnostic criteria",
+   "actual_passage": "Approximately 10% of patients with DKA present with euglycaemic DKA, which is defined as plasma glucose levels <11.1 mmol/l (200 mg/dl)",
+   "population": "Acidocétose de l’adulte",
+   "limitations": "Proportion globale, toutes causes"
+  },
+  {
+   "claim_id": "E11-SEM-12",
+   "where": "e11-sm-5",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Ketones",
+   "actual_passage": "Blood concentrations of β-hydroxybutyrate ≥3.0 mmol/l correlate well with acid–base changes, with >90% sensitivity and specificity for the diagnosis of DKA",
+   "population": "Crise hyperglycémique",
+   "limitations": "Valeur reprise des recommandations citées"
+  },
+  {
+   "claim_id": "E11-SEM-13",
+   "where": "e11-sm-6",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Differential diagnosis",
+   "actual_passage": "It is important to consider the differential diagnosis of elevated ketones, including starvation ketosis, alcoholic ketoacidosis, and ketosis of pregnancy and hyperemesis … dietary intake of <2090 kJ/day (500 kcal/day)",
+   "population": "Adultes",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-14",
+   "where": "e11-sm-7 alerte",
+   "source_id": "P-UMPIERREZ",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11343900/fullTextXML",
+   "publisher": "Diabetologia (Springer) ; ADA, EASD, JBDS, AACE, DTS",
+   "version": "2024;67(8):1455–1479, doi:10.1007/s00125-024-06183-8",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Clinical presentation",
+   "actual_passage": "If DKA or HHS is suspected, initial samples should be taken for glucose, serum electrolytes, venous blood gases, complete blood count, and blood or urine ketone levels.",
+   "population": "Adultes",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-15",
+   "where": "e11-sm-2 ; e11-sm-5 ; e11-sm-amaigrissement",
+   "source_id": "P-SSED2023",
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/SGED-SSED_long_Recommendations_2023_en.pdf",
+   "publisher": "SSED/SGED, Gastaldi G et al.",
+   "version": "Recommandations 2023 (version longue anglaise)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Differential Diagnosis of Different Diabetes Subtypes and Insulin Deficiency",
+   "actual_passage": "insulin may be the preferred agent … in the setting of severe hyperglycemia (HbA1c >10%]), particularly when associated with the typical signs of insulin deficiency like weight loss or ketonuria/ketosis … in normal or underweight people … giving insulin is never wrong and after euglycemia is restored, it might be possible to stop insulin treatment",
+   "population": "Diabète de type 2, Suisse",
+   "limitations": "Recommandation d’experts"
+  },
+  {
+   "claim_id": "E11-SEM-16",
+   "where": "e11-sm-6 ; e11-sm-amaigrissement",
+   "source_id": "P-SSED2023",
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/SGED-SSED_long_Recommendations_2023_en.pdf",
+   "publisher": "SSED/SGED, Gastaldi G et al.",
+   "version": "Recommandations 2023 (version longue anglaise)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Même section",
+   "actual_passage": "25% of patients have an insulin deficiency and sometimes are wrongly diagnosed as type 2 diabetes … If C-peptide is >200 and <600 pmol/l, specific antibodies are negative and a strong family history of diabetes is missing, insulin deficiency can be diagnosed.",
+   "population": "Diabète étiqueté type 2",
+   "limitations": "Algorithme dérivé de l’ADA/EASD, cité par la SSED"
+  },
+  {
+   "claim_id": "E11-SEM-17",
+   "where": "e11-sm-2 ; e11-sm-4",
+   "source_id": "P-PAUL2024",
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/smw-2024-4000.pdf",
+   "publisher": "Swiss Medical Weekly ; SSED et Société suisse de cardiologie",
+   "version": "Swiss Med Wkly 2024;154:4000",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Introduction ; recommandations",
+   "actual_passage": "patients should be proactively questioned at every encounter regarding typical heart failure symptoms such as breathlessness, orthopnoea, paroxysmal nocturnal dyspnoea, reduced exercise tolerance, fatigue, tiredness, prolonged time to recover after exercise and swollen ankles … physical signs (e.g. elevated jugular venous pressure, pulmonary crackles and peripheral oedema) … elevated intracardiac pressures",
+   "population": "Diabétiques, Suisse",
+   "limitations": "Consensus d’experts (Swiss C pour le dépistage)"
+  },
+  {
+   "claim_id": "E11-SEM-18",
+   "where": "e11-sm-1 ; e11-sm-3 ; figure 12 ; e11-sm-orthostatisme",
+   "source_id": "P-CAN2024",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11604676/fullTextXML",
+   "publisher": "Diabetologia (Springer), Eleftheriadou A, Spallone V, Tahrani AA, Alam U",
+   "version": "2024;67(12):2611–2625, doi:10.1007/s00125-024-06242-0, CC BY 4.0",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Clinical presentation",
+   "actual_passage": "Clinically, this presents with resting tachycardia (up to 130 beats/min). Advanced CAN leads to a fixed heart rate … exercise intolerance … Orthostatic hypotension is defined as a sustained reduction in systolic BP of ≥20 mmHg (≥30 mmHg in the presence of supine hypertension) or in diastolic BP of ≥10 mmHg … Baroreflex impairment and sympathetic denervation result in failure of an increase in sympathetic outflow",
+   "population": "Diabète de types 1 et 2",
+   "limitations": "Revue narrative européenne"
+  },
+  {
+   "claim_id": "E11-SEM-19",
+   "where": "figure 12",
+   "source_id": "P-CAN2024",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11604676/fullTextXML",
+   "publisher": "Diabetologia (Springer), Eleftheriadou A, Spallone V, Tahrani AA, Alam U",
+   "version": "2024;67(12):2611–2625, doi:10.1007/s00125-024-06242-0, CC BY 4.0",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Clinical presentation",
+   "actual_passage": "damage to the nervous system follows an inverse relationship with nerve length, with the longest autonomic nerve, namely the vagus nerve, affected first … The parasympathetic system is affected first, leading to sympathetic predominance",
+   "population": "Diabète",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-20",
+   "where": "e11-sm-8 ; e11-sm-orthostatisme",
+   "source_id": "P-CAN2024",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11604676/fullTextXML",
+   "publisher": "Diabetologia (Springer), Eleftheriadou A, Spallone V, Tahrani AA, Alam U",
+   "version": "2024;67(12):2611–2625, doi:10.1007/s00125-024-06242-0, CC BY 4.0",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Prevalence ; ACCORD",
+   "actual_passage": "between 12% and 73% for type 2 diabetes … possible CAN is 33.7%, while the prevalence of definite CAN is 15.3% … orthostatic hypotension was independently correlated with an increased risk of total mortality (HR 1.61, 95% CI 1.11, 2.36)",
+   "population": "Diabète de type 2 ; ACCORD",
+   "limitations": "Hétérogénéité méthodologique ; association non causale"
+  },
+  {
+   "claim_id": "E11-SEM-21",
+   "where": "e11-sm-2 ; e11-sm-hypo-silence",
+   "source_id": "P-CAN2024",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11604676/fullTextXML",
+   "publisher": "Diabetologia (Springer), Eleftheriadou A, Spallone V, Tahrani AA, Alam U",
+   "version": "2024;67(12):2611–2625, doi:10.1007/s00125-024-06242-0, CC BY 4.0",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Hypoglycaemia",
+   "actual_passage": "Although impaired counterregulatory responses to hypoglycaemia in both type 1 and type 2 diabetes can lead to hypoglycaemia unawareness, there is no direct link to autonomic neuropathy",
+   "population": "Diabète",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-22",
+   "where": "e11-sm-1 ; e11-sm-4 ; e11-sm-monofilament-valeur",
+   "source_id": "P-IWGDF",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "International Working Group on the Diabetic Foot",
+   "version": "IWGDF Guidelines 2023 (recueil PDF, recommandations pratiques)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Practical Guidelines, Appendix 1",
+   "actual_passage": "Repeat this application twice at the same site, but alternate this with at least one 'mock' application … Protective sensation is: present at each site if the patient correctly answers on two out of three applications … we suggest not using the monofilament for the next 24 hours after assessing 10-15 patients and replacing it after using it on 70-90 patients.",
+   "population": "Diabétiques",
+   "limitations": "Technique internationale ; la grille suisse compte autrement (4/4)"
+  },
+  {
+   "claim_id": "E11-SEM-23",
+   "where": "e11-sm-4",
+   "source_id": "P-IWGDF",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "International Working Group on the Diabetic Foot",
+   "version": "IWGDF Guidelines 2023 (recueil PDF, recommandations pratiques)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Practical Guidelines, Appendix 1 — tuning fork ; Light touch test",
+   "actual_passage": "Apply the tuning fork to a bony part on the dorsal side of the distal phalanx of the first toe … The examiner lightly sequentially touches … the tips of the first, third, and fifth toes of both feet for 1–2 s … LOPS is likely when light touch is not sensed in ≥ 2 sites",
+   "population": "Diabétiques",
+   "limitations": "Test d’Ipswich : précision prédictive d’ulcère non établie"
+  },
+  {
+   "claim_id": "E11-SEM-24",
+   "where": "e11-sm-4",
+   "source_id": "P-IWGDF",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "International Working Group on the Diabetic Foot",
+   "version": "IWGDF Guidelines 2023 (recueil PDF, recommandations pratiques)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Practical Guidelines, 3.2 ; Table 1",
+   "actual_passage": "Skin: assess skin colour, temperature, presence of callus or oedema, fungal infection, pre-ulcerative signs such as haemorrhage or fissures; Bone/joint: check for deformities (e.g., claw or hammer toes) … Examine the feet with the patient both lying down and standing up … Table 1 … Screening frequency is based on expert opinion",
+   "population": "Diabétiques",
+   "limitations": "Intervalles fondés sur un avis d’experts"
+  },
+  {
+   "claim_id": "E11-SEM-25",
+   "where": "e11-sm-5",
+   "source_id": "P-IWGDF",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "International Working Group on the Diabetic Foot",
+   "version": "IWGDF Guidelines 2023 (recueil PDF, recommandations pratiques)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Practical Guidelines, 3.1",
+   "actual_passage": "The absence of symptoms in a person with diabetes does not exclude foot disease; they may have asymptomatic neuropathy, PAD, pre-ulcerative signs, or even an ulcer.",
+   "population": "Diabétiques",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-26",
+   "where": "e11-sm-ips",
+   "source_id": "P-IWGDF",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "International Working Group on the Diabetic Foot",
+   "version": "IWGDF Guidelines 2023 (recueil PDF, recommandations pratiques)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Practical Guidelines, Appendix 2",
+   "actual_passage": "Patient in supine horizontal position, for 10 minutes … Alcohol, exercise and caffeine should be avoided for 2 hours … calculate the ankle-brachial index (ABI) for each limb by dividing the lower value of the dorsalis pedis or posterior tibial pressures of that foot by the highest of the left or right brachial pressures … An ABI above 1.3 or below 0.9 is abnormal",
+   "population": "Diabétiques",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-27",
+   "where": "e11-sm-charcot ; e11-sm-6",
+   "source_id": "P-IWGDF",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "International Working Group on the Diabetic Foot",
+   "version": "IWGDF Guidelines 2023 (recueil PDF, recommandations pratiques)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Practical Guidelines, section 5",
+   "actual_passage": "In any person with diabetes mellitus and with a red, hot, swollen foot, the diagnosis of active CNO should be considered … a sterile inflammatory process in persons with neuropathy … The diagnosis is based on the aforementioned clinical findings of inflammation after exclusion of other causes and abnormalities on imaging.",
+   "population": "Diabétiques neuropathes",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-28",
+   "where": "e11-sm-1 ; e11-sm-5 ; cas 1",
+   "source_id": "P-IWGDF-PAD",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "IWGDF, ESVS, SVS (Fitridge R et al.)",
+   "version": "Intersocietal PAD guideline 2023 (aussi Eur J Vasc Endovasc Surg 2023;66:454–483)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Recommendation 2 ; Rationale",
+   "actual_passage": "there is no value above which PAD can be excluded. However, PAD is less likely in the presence of ABI 0.9-1.3; TBI ≥ 0.70; and triphasic or biphasic pedal Doppler waveforms … although presence of pulses does not exclude disease, there is a small increase in ability to rule disease in where a foot pulse is absent or weak (positive likelihood ratio [PLR]1.84 to 2.46)",
+   "population": "Diabétiques sans ulcère ; deux études de faible qualité",
+   "limitations": "Niveau de preuve faible"
+  },
+  {
+   "claim_id": "E11-SEM-29",
+   "where": "e11-sm-5",
+   "source_id": "P-IWGDF-PAD",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "IWGDF, ESVS, SVS (Fitridge R et al.)",
+   "version": "Intersocietal PAD guideline 2023 (aussi Eur J Vasc Endovasc Surg 2023;66:454–483)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Rationale (DFU)",
+   "actual_passage": "Pulse palpation had a PLR of 1.38 and a NLR 0.75 for PAD in people presenting with a foot ulcer",
+   "population": "Diabétiques avec ulcère ; une étude de faible qualité",
+   "limitations": "Niveau de preuve faible"
+  },
+  {
+   "claim_id": "E11-SEM-30",
+   "where": "e11-sm-3 ; e11-sm-4 ; cas 3",
+   "source_id": "P-IWGDF-PAD",
+   "url": "https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-Guidelines-2023.pdf",
+   "publisher": "IWGDF, ESVS, SVS (Fitridge R et al.)",
+   "version": "Intersocietal PAD guideline 2023 (aussi Eur J Vasc Endovasc Surg 2023;66:454–483)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Introduction",
+   "actual_passage": "Co-existent medial artery calcification (MAC), which is also associated with peripheral neuropathy, is common and can affect the accuracy of non-invasive tests such as the ankle-brachial index (ABI) by causing elevation of ankle and, to a lesser extent, digital pressures … absence of classical symptoms of PAD … due to … loss of pain sensation",
+   "population": "Diabétiques",
+   "limitations": "—"
+  },
+  {
+   "claim_id": "E11-SEM-31",
+   "where": "e11-sm-5 ; e11-sm-monofilament-valeur",
+   "source_id": "P-WANG2017",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5651135/fullTextXML",
+   "publisher": "Journal of Diabetes Research (Hindawi), Wang F et al.",
+   "version": "2017:8787261, doi:10.1155/2017/8787261",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Résumé ; Discussion",
+   "actual_passage": "The pooled sensitivity and specificity of monofilament tests for detecting diabetic peripheral neuropathy were 0.53 (95% CI 0.32 to 0.74) and 0.88 (95% CI 0.78 to 0.94) … positive likelihood ratio and negative likelihood ratio were 4.56 … and 0.53 … heterogeneity exists among studies",
+   "population": "Diabétiques ; 8 études, conduction nerveuse comme référence",
+   "limitations": "Hétérogénéité des protocoles ; publications en anglais seulement"
+  },
+  {
+   "claim_id": "E11-SEM-32",
+   "where": "e11-sm-5",
+   "source_id": "P-ZHAO2021",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34607858/",
+   "publisher": "BMJ Open, Zhao N et al.",
+   "version": "2021;11(10):e046966, doi:10.1136/bmjopen-2020-046966 (résumé lu)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Résumé",
+   "actual_passage": "Five studies with 10g-MF as the reference standard … pooled sensitivity and specificity were 0.77 (95% CI 0.69-0.84) and 0.96 (95% CI 0.93-0.98)",
+   "population": "Diabétiques ; 5 études",
+   "limitations": "Référence = monofilament, non la conduction nerveuse ; résumé seulement lu"
+  },
+  {
+   "claim_id": "E11-SEM-33",
+   "where": "e11-sm-7 ; e11-sm-ips ; e11-sm-8 ; e11-sm-charcot",
+   "source_id": "P-QUALICCARE",
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/65_Fussversorgung/230802_QCARE_Praxisleitfaden_A5_DE.pdf",
+   "publisher": "QualiCCare, groupe de travail pied diabétique (SGED et sociétés suisses)",
+   "version": "Praxisleitfaden, version 2023",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Pages 2–3 (niveaux 1A, 1B, 2, 3 ; red flags)",
+   "actual_passage": "Keine Neuropathie (Monofilament = 4/4, Pallästhesie > 4/8) … Keine signifikante pAVk (= 2 Fusspulse tastbar, ABI ≥ 0.9) … Stufe 3: Cellulitis, Gangrän, Systemische Infektion, Akute Ischämie, Akuter Charcot Fuss … ABI < 0.5, tcPO2 < 25 mmHg, Zehendruck < 30 mmHg … Wundverkleinerung < 50% innert 4 Wochen",
+   "population": "Suisse, pied diabétique",
+   "limitations": "Guide d’organisation des soins ; non une étude de précision"
+  },
+  {
+   "claim_id": "E11-SEM-34",
+   "where": "e11-sm-2 ; e11-sm-hypo-silence ; e11-sm-4 ; e11-sm-8",
+   "source_id": "P-SGRM2025",
+   "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf",
+   "publisher": "SSED/SGED et SGRM",
+   "version": "Richtlinien Diabetes und Fahreignung, version 1, août 2025",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Hypoglykämie ; Kontrollen ; Gruppe 1",
+   "actual_passage": "nach schweren Hypoglykämien gefragt wird, da diese spontan in einem sehr hohen Prozentsatz nicht von Patient:innen erwähnt werden … Clarke Score ≥ 4 … einmal pro Jahr Bestimmung der peripheren Neuropathie mit Reflexhammer, Vibrationsmessung am Grosszehengrundgelenk (1. Metatarsalgelenk) und mit Monofilament. Einmal jährlich bis zweijährlich Bericht beim Augenarzt … mit Angabe Visus und Gesichtsfeld sowie Retinopathie-Grad … schwere Hypoglykämien (Grad 3; Fremdhilfe notwendig, oder Bewusstlosigkeit)",
+   "population": "Conducteurs diabétiques, Suisse",
+   "limitations": "Contexte d’aptitude à la conduite ; aucune proportion chiffrée"
+  },
+  {
+   "claim_id": "E11-SEM-35",
+   "where": "e11-sm-6 ; e11-sm-polyurie",
+   "source_id": "P-ATILA2026",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13017940/fullTextXML",
+   "publisher": "J Clin Endocrinol Metab (Endocrine Society), Atila C, Refardt J, Christ-Crain M (Bâle)",
+   "version": "2026;111(4):922–937, doi:10.1210/clinem/dgaf651",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Arginine vasopressin deficiency ; Figure 2",
+   "actual_passage": "hypotonic polyuria defined as >40 mL/kg body weight/24 hours with urine osmolality <800 mOsm/kg … polydipsia defined as excessive fluid intake of >3 L/day … Other causes of polyuria must be excluded, for example, osmotic diuresis in uncontrolled diabetes mellitus",
+   "population": "Adultes avec polyurie-polydipsie",
+   "limitations": "Revue d’une équipe suisse (Bâle)"
+  },
+  {
+   "claim_id": "E11-SEM-36",
+   "where": "e11-sm-3 ; e11-sm-acanthosis ; e11-sm-5",
+   "source_id": "P-RADU2022",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9600076/fullTextXML",
+   "publisher": "Diagnostics (MDPI), Radu AM et al.",
+   "version": "2022;12(10):2519, doi:10.3390/diagnostics12102519",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Introduction ; résultats",
+   "actual_passage": "Insulin-like growth factor (IGF), fibroblast growth factor receptor (FGFR), and epidermal growth factor receptor (EGFR) have been recognized as promoters of epidermal keratinocyte and dermal fibroblast proliferation … The currently increasing prevalence of AN varies from 4.5 to 74% … typically involves areas such as the neck, axilla, and knuckles … malignant AN (MAN) may be caused by excessive TGF-α levels",
+   "population": "Populations obèses, diabétiques ou avec syndrome métabolique",
+   "limitations": "Revue narrative ; prévalences très hétérogènes"
+  },
+  {
+   "claim_id": "E11-SEM-37",
+   "where": "figures.json E11-FIG-8",
+   "source_id": "P-HAO2022",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9560484/fullTextXML",
+   "publisher": "PLoS One, Hao S et al.",
+   "version": "2022;17(10):e0275983 (vérification des figures)",
+   "consulted_at": "2026-10-15",
+   "page_or_section": "Figures 1 à 3 (légendes)",
+   "actual_passage": "Fig 1 Flow chart of the current study … Fig 3 Working interface and lesion labeling of the Zhiyuan Huitu image AI analysis software (EyeWisdom). (A) … interface; (B) In the fundus image, the green range indicates hard exudate, the purple range indicates retinal hemorrhage, the pink range indicates a microaneurysm",
+   "population": "Dépistage rural, Chine",
+   "limitations": "Vérification d’attribution, non source clinique de la leçon"
+  }
+ ],
+ "statut": "Revue IA, distincte d’une validation médicale humaine"
+}
