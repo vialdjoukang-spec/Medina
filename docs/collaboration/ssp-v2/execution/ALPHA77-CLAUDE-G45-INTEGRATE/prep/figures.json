@@ -1,0 +1,205 @@
+{
+ "schema_version": 1,
+ "mission": "ALPHA77-CLAUDE-G45-INTEGRATE",
+ "code": "G45",
+ "role": "Agent P (préparateur)",
+ "date": "2026-10-15",
+ "inventaire": "python3 tools/image_clo_finder.py inventory G45 : 9 figures, toutes en <img> raster ; aucun SVG anatomique, aucun canvas ; croisé avec la clé figures du rapport ALPHA1-CLAUDE-G45-MED.",
+ "synthese": {
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "IMAGE_SOURCEE": 6,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "remplacements": 0,
+  "nouveaux_actifs": 0,
+  "corrections_attribution": [
+   "g45-09 (C21)",
+   "g45-01 (nouvelle réserve)"
+  ]
+ },
+ "recherche_candidats": [
+  {
+   "besoin": "vérification de licence du panneau droit de g45-09",
+   "requete": "Hippocampus connections Rainald62",
+   "commande": "python3 tools/image_clo_finder.py candidates \"Hippocampus connections Rainald62\" --direct --limit 3",
+   "resultat": "commons: HTTP 429 ; cooldown enregistré ; aucun nouvel essai",
+   "repli": "lecture directe de la page de description Commons"
+  },
+  {
+   "besoin": "photographie réelle d’une occlusion artérielle rétinienne pour la sémiologie (fond d’œil)",
+   "requete": "central retinal artery occlusion fundus cherry red spot",
+   "commande": "python3 tools/image_clo_finder.py candidates \"central retinal artery occlusion fundus cherry red spot\" --direct --limit 4",
+   "resultat": "commons: HTTP 429 ; cooldown enregistré ; aucun nouvel essai",
+   "repli": "LACUNE déclarée : aucune photographie ajoutée ; la figure de la sémiologie est un schéma temporel non anatomique (SVG) conforme à tests/audit_sciences.py"
+  }
+ ],
+ "figure_semiologie": {
+  "emplacement": "prep/semiologie_sciences.html, îlot g45-sm-4",
+  "type": "SCHEMA_NON_ANATOMIQUE (svg role=\"img\" aria-label, figcaption)",
+  "contenu": "trois profils temporels : ischémie transitoire, aura migraineuse, amnésie globale transitoire",
+  "valeurs_et_sources": [
+   "installation en moins d’une minute, symptômes simultanés, céphalée dans l’heure : Eren 2021, tableau 2",
+   "aura 5 à 60 minutes : Eren 2021, aura migraineuse",
+   "moins de 24 heures : ESO 2021, définition",
+   "1 à 24 heures, moyenne 6 à 8 heures : Sander 2023, résumé"
+  ],
+  "structure_anatomique": false
+ },
+ "figures": [
+  {
+   "figure": "g45-01",
+   "fichier_cours": "chapters/G45/G45_a.html",
+   "image": "assets/img/cycle2/g45/g45-01.gif",
+   "sha256": "dd61168ada880ca5c2c4f493ffb41e034c075a28a9e659d0bf4af8e9d772a69d",
+   "classe": "IMAGE_SOURCEE",
+   "page": "https://commons.wikimedia.org/wiki/File:Cerebral_vascular_territories.jpg",
+   "original_url": null,
+   "auteur": "Frank Gaillard (œuvre dérivée), d’après Patrick J. Lynch, illustrateur médical",
+   "licence": "CC BY-SA 3.0 Unported ; GFDL 1.3 ou ultérieure ; original de Lynch sous CC BY 2.5",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée). Auteur : « derivative work: Frank Gaillard » ; « Patrick J. Lynch, medical illustrator » ; source « Brain_stem_normal_human.svg ».",
+   "action": "Correction d’attribution proposée (prep/figures.html, bloc B) : la légende n’annonce que CC BY 2.5.",
+   "figure_remplacee": null,
+   "reserves": [
+    "MINEUR licence, sans incidence médicale : licence du fichier dérivé (CC BY-SA 3.0, GFDL) absente de la légende."
+   ],
+   "controle_visuel": "Non repris dans cette mission ; contrôle visuel du rapport MED (conforme) conservé."
+  },
+  {
+   "figure": "g45-02",
+   "fichier_cours": "chapters/G45/G45_a.html",
+   "image": "assets/img/cycle2/g45/g45-02.gif",
+   "sha256": "157be7de8c367e172924b0f35cf4211e85c69980dbb399829c6ac50c68f8154d",
+   "classe": "IMAGE_SOURCEE",
+   "page": "https://commons.wikimedia.org/wiki/File:Human_visual_pathway.svg",
+   "original_url": null,
+   "auteur": "Miquel Perello Nieto (Perellonieto)",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée). « Own work » ; titulaire déclarant publier sous CC BY-SA 4.0 ; version actuelle du 22.09.2022.",
+   "action": "Aucune ; attribution conforme.",
+   "figure_remplacee": null,
+   "reserves": [],
+   "controle_visuel": "Rendu Commons de l’original comparé le 15.10.2026 : schéma simplifié conforme (fibres nasales croisant au chiasma, corps géniculé latéral, noyau prétectal, cortex visuel primaire). Libellé source « Optical lens » imprécis, sans erreur de trajet."
+  },
+  {
+   "figure": "g45-03",
+   "fichier_cours": "chapters/G45/G45_b.html",
+   "image": "assets/img/cycle2/g45/g45-03.gif",
+   "sha256": "25b56df1bcd66ee24db80fbb2cf198f15f9acf016e84d605d1b91fe808d3c3fa",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "page": "https://doi.org/10.1177/2514183X21999230",
+   "original_url": null,
+   "auteur": "Kägi et coll.",
+   "licence": "CC BY 4.0 (confirmée par Crossref dans l’audit MED)",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+   "verification_licence": "Non reprise ; vérification de l’audit MED conservée.",
+   "action": "Aucune.",
+   "figure_remplacee": null,
+   "reserves": []
+  },
+  {
+   "figure": "g45-04",
+   "fichier_cours": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-04.gif",
+   "sha256": "eb76a3518c3880c79006d5b6a8cc6b355ad34e45ad8d038cbabaf6a3db96e1e3",
+   "classe": "IMAGE_SOURCEE",
+   "page": "https://commons.wikimedia.org/wiki/File:DWE_MRI_of_cerebral_infarction.png",
+   "original_url": null,
+   "auteur": "Shazia Mirza et Sankalp Gokhale",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée). Source : « Neuroimaging in Acute Stroke » (2016-07-25).",
+   "action": "Aucune ; attribution conforme.",
+   "figure_remplacee": null,
+   "reserves": []
+  },
+  {
+   "figure": "g45-05",
+   "fichier_cours": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-05.gif",
+   "sha256": "f3c2d2c6f937a6e496cc41eaf3191218f3aff1d9b5987c032b7a612afad387bd",
+   "classe": "IMAGE_SOURCEE",
+   "page": "https://commons.wikimedia.org/wiki/File:Circle_of_Willis_fr.svg",
+   "original_url": null,
+   "auteur": "Rhcastilhos ; traduction française Petit B",
+   "licence": "Domaine public (dédicace du titulaire)",
+   "licence_url": null,
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée).",
+   "action": "Aucune ; attribution conforme.",
+   "figure_remplacee": null,
+   "reserves": [
+    "Deux libellés latins hérités de la source (réserve MED conservée)."
+   ]
+  },
+  {
+   "figure": "g45-06",
+   "fichier_cours": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-06.gif",
+   "sha256": "aa957ad23ac9a9d8bf25863ca73b7c8ed8978dff2c703cd7324995729ec36261",
+   "classe": "IMAGE_SOURCEE",
+   "page": "https://commons.wikimedia.org/wiki/File:Atherosclerosis_diagram.png",
+   "original_url": null,
+   "auteur": "National Heart, Lung, and Blood Institute",
+   "licence": "Domaine public (œuvre du gouvernement fédéral des États-Unis)",
+   "licence_url": null,
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée).",
+   "action": "Aucune ; attribution conforme. Illustration institutionnelle, sans valeur de recommandation clinique.",
+   "figure_remplacee": null,
+   "reserves": []
+  },
+  {
+   "figure": "g45-07",
+   "fichier_cours": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-07.gif",
+   "sha256": "b52cd0d12f5b54723993b99a2565deead83c7a264b209e653021ba60eaa4eda6",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "page": "https://commons.wikimedia.org/wiki/File:Cerebrovascular_autoregulation.svg",
+   "original_url": null,
+   "auteur": "Daniel FR",
+   "licence": "Domaine public (géométrie simple, non protégeable)",
+   "licence_url": null,
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée).",
+   "action": "Aucune ; réserve MED conservée (bornes non confrontées à une source physiologique récente).",
+   "figure_remplacee": null,
+   "reserves": []
+  },
+  {
+   "figure": "g45-08",
+   "fichier_cours": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-08.gif",
+   "sha256": "b0d7758c77bdd8c934e3e70c9b28142c70deb15250498e60202096a516a0ef51",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "page": "https://commons.wikimedia.org/wiki/File:Platelet_aggregation_pathway.png",
+   "original_url": null,
+   "auteur": "PharmGKB",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée). Source : https://www.pharmgkb.org/pathway/PA154444041.",
+   "action": "Aucune ; attribution conforme.",
+   "figure_remplacee": null,
+   "reserves": []
+  },
+  {
+   "figure": "g45-09",
+   "fichier_cours": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-09.gif",
+   "sha256": "87b9d1758ecfae03b6bb1875324ad39e9d68fe7c7c9e3e9b54eda2eb2e192728",
+   "classe": "IMAGE_SOURCEE (montage, œuvre dérivée)",
+   "page": "https://commons.wikimedia.org/wiki/File:Human_visual_pathway.svg ; https://commons.wikimedia.org/wiki/File:Hippocampus_connections.svg",
+   "original_url": null,
+   "auteur": "Miquel Perello Nieto (panneau gauche) ; Rainald62 (panneau droit) ; montage MEDINA",
+   "licence": "CC BY-SA 4.0 pour chaque panneau (le panneau droit est proposé par son auteur sous GFDL 1.2+, CC BY-SA 4.0, 3.0, 2.5, 2.0 et 1.0 « au choix ») ; montage sous CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "verification_licence": "Page de description Wikimedia Commons ouverte le 15.10.2026 (lecture de la page HTML ; l’API Commons a renvoyé HTTP 429 et n’a pas été relancée). Panneau droit : « Own work », Rainald62, 18.12.2016, « You may select the license of your choice ». Panneau gauche : « Own work », CC BY-SA 4.0, attribution, lien de licence et indication des modifications exigés ; œuvres dérivées sous licence identique ou compatible.",
+   "action": "Constat MED C21 régularisé : légende remplacée par prep/figures.html, bloc A (titres, auteurs, dates, licence de chaque panneau, licence du montage, description exacte des modifications).",
+   "figure_remplacee": null,
+   "reserves": [
+    "Le rendu matriciel du panneau droit a perdu les pointes de flèche et la police d’origine (comparaison avec le rendu Commons du 15.10.2026) ; la légende proposée le déclare. Recommandation hors présente mission : refaire le panneau droit depuis un rendu fidèle, dans une mission de figures."
+   ],
+   "controle_visuel": "Image du dépôt ouverte et comparée aux rendus Commons des deux originaux : panneau gauche identique à la version 2022 ; panneau droit identique en blocs et libellés allemands, mais sans pointes de flèche (artefacts de rendu en bordure gauche des étiquettes)."
+  }
+ ],
+ "publication_ready": false,
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; les licences relevées ne constituent pas une garantie juridique."
+}
