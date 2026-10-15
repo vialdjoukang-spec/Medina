@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "actor": "Codex",
+  "code": "G01",
+  "kind": "LANG",
+  "mission": "ALPHA77-CODEX-G01-INTEGRATE",
+  "model": "GPT6.1",
+  "reasoning_effort": "medium",
+  "status": "provisional",
+  "linguistic_review_status": "closed",
+  "medical_human_validation": false,
+  "reviewed_at": "2026-10-15T21:28:22.039984+00:00",
+  "reviewed_commit": "c07fb97199627b5a35be6305250048cbe4908456",
+  "reviewed_commit_scope": "Candidat sauvegardé plus unique correction LANG tracée ; empreintes finales font foi.",
+  "source_files_sha256": {
+    "chapters/G01/G01_a.html": "7c5960c8f4c9a71d2e13c4a7eaf8547236565f9e15d28ae2611109852ebb86c6",
+    "chapters/G01/G01_b.html": "1903837d5d4bac4dd61acb0f2785faa2110a8dd33dd2223918beaaf1c933c6de",
+    "chapters/G01/G01_c.html": "a9e13e412be4eafcbb766b6549e6d100dcaa4e61ddd8fa42fd5242c4c7bab385",
+    "chapters/G01/G01_d.html": "317e7ac2ab43992ff60ab4facab8a3a1b3bb6df609c223ef3c1f075b2747739c",
+    "chapters/G01/G01_pop1.html": "eb976ebb44a3e95b87f551afdb6dc10447af8655b4b548ca4b2ffba30a5a0f00",
+    "chapters/G01/G01_pop2.html": "7b4aadad576148c44e9cd6ab749382c147b469be4b1c7c3bbc938650ac4cb0d9",
+    "glossary/g01.py": "ceacc9ea5cb2446340061c0dc3bc02967664e46b529444be0db4c2412ad9ccde"
+  },
+  "reviewed_files_sha256": {
+    "assets/img/g01/alpha/codex/Gray1196.png": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
+    "chapters/G01/G01_a.html": "dfe7132ca14e5c7c2db0338e612f96f27440e61494c8807dde4e75ee300cf84e",
+    "chapters/G01/G01_b.html": "8803e9e652870857729e11de407e5e2c6056fb6f97a66071a9568860aaf849d7",
+    "chapters/G01/G01_c.html": "11af512f130dc8dfa7a0e6cc3125ea0612e8e3fe96cecd0fcf19c019dfd6c126",
+    "chapters/G01/G01_d.html": "bba0fc0ce43d596fc2ba6757acbf49efecf056767bb27018feed19d24664288b",
+    "chapters/G01/G01_pop1.html": "506347c83535eb986689ce662d2889f46133b6e289abf2da99d9b58e8e5608aa",
+    "chapters/G01/G01_pop2.html": "c4e93c4771fe847df1bcc5eee62c9f778197b6e7acdfa713bc800f4212f5050a",
+    "glossary/g01.py": "ceacc9ea5cb2446340061c0dc3bc02967664e46b529444be0db4c2412ad9ccde"
+  },
+  "requirements_reviewed": {
+    "fundamental_analytical_semiology": true
+  },
+  "unresolved_blockers": [],
+  "findings": [
+    {
+      "id": "G01-LF-01",
+      "status": "resolved",
+      "evidence": {
+        "id": "G01-LF-01",
+        "path": "chapters/G01/G01_c.html",
+        "old": "La suspicion de complication ne doit donc pas créer un délai d’antibiotique.",
+        "new": "La suspicion de complication ne doit donc pas retarder l’antibiothérapie.",
+        "reason": "Remplacer une construction nominale maladroite par le verbe précis, en conservant la même urgence.",
+        "occurrences": 1
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G01-INTEGRATE/lang-final-review.md",
+      "detail": "Lecture complète de toutes les surfaces textuelles finales ; adoption historique distincte ; revalidation réelle du seul delta."
+    },
+    {
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G01-INTEGRATE/lang-final-proposals.json",
+      "detail": "Une substitution exacte ; chiffres, négation et obligation inchangés."
+    }
+  ],
+  "publication_reserves": [
+    "Révision Alpha en cours : certaines réserves thérapeutiques et sources héritées restent à vérifier ; les audits finaux de cette version ne sont pas clos."
+  ],
+  "scope_limit": "Revue linguistique locale achevée ; aucune nouvelle validation du fond médical hérité."
+}

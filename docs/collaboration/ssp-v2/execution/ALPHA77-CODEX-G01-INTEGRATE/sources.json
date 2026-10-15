@@ -1,0 +1,789 @@
+{
+  "scope": "G01 intégration ; entrées historiques attribuées, consultations nouvelles séparées dans retrieval.json et claim-mapping.json",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g00-g09.htm",
+      "titre": "ICD-10-GM 2024, bloc G00–G09 (G00, G01*, G02*)",
+      "editeur": "BfArM",
+      "version_annee": "2024",
+      "date_consultation": "14.10.2026",
+      "section_page": "G01* inclusions et exclusions",
+      "population": "classification",
+      "limites": "version allemande ; version française OFS non lue"
+    },
+    {
+      "id": "S2",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+      "titre": "CIM-10-GM 2024 (fr), entrée G01 dans nosology/fragments/S08.json",
+      "editeur": "OFS (via registre du dépôt)",
+      "version_annee": "2024",
+      "date_consultation": "14.10.2026",
+      "section_page": "G01, marqueur *",
+      "population": "classification",
+      "limites": "seule l'entrée du registre local a été lue"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10470134/fullTextXML",
+      "titre": "Klein et collaborateurs, German guidelines on community-acquired acute bacterial meningitis in adults",
+      "editeur": "DGN / Neurological Research and Practice",
+      "version_annee": "2023, S2k AWMF030/089",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:02:02.513077+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Adults, méningite communautaire ; lignes spécifiques immunosuppression au tableau3",
+      "limites": "Recommandation allemande ; ne pas transformer ses règles de santé publique allemandes en règles suisses",
+      "raw_sha256": "a5666d14957e5fb51458371a62a8421059347ed0782e58c390fb06d9d0f51d14",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "The cardinal symptoms",
+          "actual_passage": "cherichia coli and Listeria monocytogenes . Recommendation 1 (strong consensus) The cardinal symptoms of bacterial meningitis are: headache, meningism, fever, and impaired consciousness. We recommend that acute bacterial meningitis is considered if a combination of the before-mentioned symptoms is present. The absence of individual cardinal symptoms does not rule out bacterial meningitis. Recommendation 2 (strong consensus) In community-acquired acute bacterial meningitis in adults in Europe, the pathogens Streptococcus pneumoniae followed by Neisseria meningitidis and Listeria monocytogenes should be considered. Diagnosis In untreated, immunocompetent patients with acute bacterial meningitis, the CSF is usually purulent-cloudy. It typically shows granulocytic pleocytosis with more than 1000 cells/µl, severe blood-CSF "
+        },
+        {
+          "location_or_search_term": "Other contraindications",
+          "actual_passage": "tered immediately after LP. Fig. 1 Workup in suspected bacterial meningitis (1) Other contraindications for lumbar puncture (such as manifest coagulation disorders, oral anticoagulation) need to be considered. (2) The beginning of antibiotic therapy plus dexamethasone is to be started within 1 h after arrival of the patient at the emergency department. A delay of more than 3 h should be strictly avoided. In case of any delay of the lumbar puncture, antibiotic therapy and adjunctive dexamethasone should be started before CSF is obtained. (3) Imaging signs that can hint at increased intracranial pressure are e.g. generalized brain oedema, hydrocephalus or space occupying brain abscess In patients with severely impaired consciousness, new onset focal neurological deficits and in patients with recent epileptic seizures, we"
+        },
+        {
+          "location_or_search_term": "We recommend starting antibiotic therapy",
+          "actual_passage": "e should be performed as soon as possible. Recommendation 14 (strong consensus) We recommend starting antibiotic therapy as early as possible (if possible within 1 h after the patient arrives at the hospital). Delaying antibiotic therapy for more than 3 h after hospital admission should be avoided. Recommendation 15 (strong consensus) In adult patients without impaired consciousness, without a focal neurological deficit and without current epileptic seizures, we recommend to obtain 2 blood culture sets (aerobic and anaerobic) immediately after the clinical examination, followed by LP (Fig. 1 ). We recommend that dexamethasone (10 mg) and antibiotics are administered immediately after LP. Fig. 1 Workup in suspected bacterial meningitis (1) Other contraindications for lumbar puncture (such as manifest coagulation disorde"
+        },
+        {
+          "location_or_search_term": "total protein (mg/dL)",
+          "actual_passage": "-index decreased normal moderately decreased lactate (mmol/l) > 3,5 < 3,5 > 3,5 total protein (mg/dL) > 100 < 100 > 100 blood-CSF-barrier (CSF-serum albumin ratio) severely disrupted normal severely disrupted intrathecal Ig-synthesis IgA, IgG IgG IgA 1 The actual CSF constellations can differ, especiall in early stages of the disease. E.g., one third of the patients with acute bacterial meningitis present with a CSF cell count of < 1000/µl [ 13 ]. 2 Granulocytes can dominate in early stages of a viral infections (especially in adults) [ 38 ] In clinical trials, testing serum procalcitonin has been helpful in distinguishing between bacterial and viral meningitis in children and adults [ 14 – 17 ]: A sensitivity of almost 99% with a specificity of over 80% or a sensitivity of 95% with a specificity of 100% was found. How"
+        },
+        {
+          "location_or_search_term": "granulocytes",
+          "actual_passage": "3 ] viral [ 38 ] tuberculous [ 39 ] cell count/µl > 1000 < 1000 < 1000 cytology granulocytes lymphocytes 2 mixed CSF-serum-glucose-index decreased normal moderately decreased lactate (mmol/l) > 3,5 < 3,5 > 3,5 total protein (mg/dL) > 100 < 100 > 100 blood-CSF-barrier (CSF-serum albumin ratio) severely disrupted normal severely disrupted intrathecal Ig-synthesis IgA, IgG IgG IgA 1 The actual CSF constellations can differ, especiall in early stages of the disease. E.g., one third of the patients with acute bacterial meningitis present with a CSF cell count of < 1000/µl [ 13 ]. 2 Granulocytes can dominate in early stages of a viral infections (especially in adults) [ 38 ] In clinical trials, testing serum procalcitonin has been helpful in distinguishing between bacterial and viral meningitis in children and adults [ 14 – "
+        },
+        {
+          "location_or_search_term": "In adult patients without",
+          "actual_passage": "fter hospital admission should be avoided. Recommendation 15 (strong consensus) In adult patients without impaired consciousness, without a focal neurological deficit and without current epileptic seizures, we recommend to obtain 2 blood culture sets (aerobic and anaerobic) immediately after the clinical examination, followed by LP (Fig. 1 ). We recommend that dexamethasone (10 mg) and antibiotics are administered immediately after LP. Fig. 1 Workup in suspected bacterial meningitis (1) Other contraindications for lumbar puncture (such as manifest coagulation disorders, oral anticoagulation) need to be considered. (2) The beginning of antibiotic therapy plus dexamethasone is to be started within 1 h after arrival of the patient at the emergency department. A delay of more than 3 h should be strictly avoided. In case of"
+        },
+        {
+          "location_or_search_term": "The main clinical symptoms",
+          "actual_passage": "iseases. Guidelines in detail Definition, clinic presentation, and epidemiology The main clinical symptoms of bacterial (purulent) meningoencephalitis are headache (83–87%), meningism (75–83%), impaired consciousness (69%), and fever (77%). Typical clinical symptoms of meningitis may be absent or only mild - a combination of three of the four cardinal symptoms is present in only half of the patients [ 1 , 2 ]. Furthermore, nausea, vomiting, photophobia, confusion, and epileptic seizures can initially occur [ 2 – 4 ]. The incidence of acute bacterial meningitis has been declining in Europe over the past 30 years. A recent publication from the Netherlands showed that the incidence fell from 6.37 to 100,000 population (1989 to 1993) to 1.58 per 100,000 population per year (2014 to 2019). The background discussed above all"
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://doi.org/10.1002/14651858.CD004405.pub5",
+      "titre": "Corticosteroids for acute bacterial meningitis (Brouwer, McIntyre, Prasad, van de Beek)",
+      "editeur": "Cochrane Database Syst Rev, CD004405",
+      "version_annee": "2015",
+      "date_consultation": "14.10.2026",
+      "section_page": "résumé",
+      "population": "25 ECR, 4121 participants",
+      "limites": "résumé seulement"
+    },
+    {
+      "id": "S6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3131058/",
+      "titre": "Pathogenesis and pathophysiology of pneumococcal meningitis (Mook-Kanamori, Geldhoff, van der Poll, van de Beek)",
+      "editeur": "Clin Microbiol Rev 24(3):557-591, doi 10.1128/CMR.00008-11",
+      "version_annee": "2011",
+      "date_consultation": "14.10.2026",
+      "section_page": "premiers 100 000 caractères (colonisation à MMP) + résumé",
+      "population": "revue, modèles expérimentaux et cohortes",
+      "limites": "lecture partielle ; modèle pneumocoque"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.bag.admin.ch/fr/maladies-invasives-a-meningocoques",
+      "titre": "Maladies invasives à méningocoques",
+      "editeur": "Office fédéral de la santé publique",
+      "version_annee": "Page consultée15.10.2026, sans date de mise à jour visible",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:02:05.160042+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Population suisse générale",
+      "limites": "Information générale, ni protocole de réanimation ni calendrier vaccinal produit par produit",
+      "raw_sha256": "40b1c2f05a3f9d747d7b3b42c52638738bb9ae516714f99572a87796078d3be9",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Tableau clinique",
+          "actual_passage": "nt par gouttelettes (p. ex. exposition directe à une toux, baisers). Maladie et tableau clinique Fondamentalement bénigne, la colonisation de la région nasopharyngée par des méningocoques n’entraîne pas de symptômes. Toutefois, si les bactéries traversent les muqueuses et se retrouvent dans le sang ou dans d’autres organes, elles peuvent provoquer des maladies graves telles qu’une infection du sang (septicémie) ou une méningite. La septicémie se caractérise par une brusque apparition de fièvre, de frissons, de douleurs articulaires, d’abattement, souvent accompagnés d’une éruption cutanée. Dans sa forme la plus dangereuse, elle peut entraîner en quelques heures un choc, un coma ou le décès. En cas de méningite, des symptômes d’allure grippale ainsi que des troubles de la conscience, des convulsions et une raideur de la"
+        },
+        {
+          "location_or_search_term": "Dans sa forme la plus dangereuse",
+          "actual_passage": "ouleurs articulaires, d’abattement, souvent accompagnés d’une éruption cutanée. Dans sa forme la plus dangereuse, elle peut entraîner en quelques heures un choc, un coma ou le décès. En cas de méningite, des symptômes d’allure grippale ainsi que des troubles de la conscience, des convulsions et une raideur de la nuque se manifestent. Même avec un traitement précoce aux antibiotiques, des séquelles tardives telles que perte de l’audition, épilepsie ou amputation de parties du corps peuvent apparaître. La mortalité en cas de complications graves est d’environ 7 %. En cas d’apparition soudaine des symptômes mentionnés, il est très important de consulter immédiatement un médecin ou de se rendre à l’hôpital. Répartition géographique et fréquence Les maladies invasives à méningocoques sévissent dans le monde entier, en parti"
+        },
+        {
+          "location_or_search_term": "Pour éviter la maladie",
+          "actual_passage": "eillent la situation et adaptent les recommandations vaccinales le cas échéant. Pour éviter la maladie aux personnes qui ont été en contact étroit avec un malade, des antibiotiques peuvent être prescrits et/ou une vaccination effectuée ultérieurement par un médecin (antibioprophylaxie). Vous obtiendrez de plus amples informations sur la propagation de la maladie dans le monde ainsi que sur les moyens de s'en protéger auprès de votre médecin ou d'un spécialiste en médecine des voyages (voir l'onglet « Liens »). Informations complémentaires Documents Formulaires de déclaration Vaccination contre les méningocoques pour les personnes présentant un risque accru de contracter une maladie invasive ou un risque élevé d’exposition (Addendum à la recommandation de vaccination complémentaire contre les méningocoques) PDF 151.32 k"
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.infovac.ch/docs/public/fs/fs-vaccination-m--ningocoques-2024.pdf",
+      "titre": "Fiche d'information Méningocoques (vaccination)",
+      "editeur": "OFSP / Commission fédérale pour les vaccinations",
+      "version_annee": "état janvier 2024",
+      "date_consultation": "14.10.2026",
+      "section_page": "texte complet",
+      "population": "Suisse",
+      "limites": "calendrier ACWY (12–18 mois) antérieur à la page OFSP actuelle (3–18 mois)"
+    },
+    {
+      "id": "S9",
+      "url": "https://fr.ch/document/347621",
+      "titre": "Maladies invasives à méningocoques, informations aux professionnels",
+      "editeur": "Service du médecin cantonal de Fribourg",
+      "version_annee": "2025 ; cite OFSP Bulletin4/25",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:02:05.633846+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Contacts d’un cas invasif en Suisse",
+      "limites": "Fiche cantonale ; la note bébé/médicament ne vaut pas extension FI ; PDF OFSP lié503",
+      "raw_sha256": "e74b9e52628ec8e34f6076c424edef37c69214d52c61fbc47912f0bf9514263a",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Période de contagiosité",
+          "actual_passage": "e la notion de contact étroit avec un cas de maladie invasive à méningocoques : Période de contagiosité = 7 jours avant les premiers signes cliniques et jusqu’à 24 heures après l’initiation du traitement Contact étroit :  Personnes faisant ménage commun (par ex. famille, communauté d’habitation) ou vivant dans une situation comparable (par ex. pensionnat, foyer, caserne, prison, camp de vacances)  Contact direct avec des sécrétions nasopharyngées, comme des baiser intenses, des mesures de réanimation sans protection appropriée (bouche-à-bouche, contrôle/dégagement des voies respiratoires, intubation), contact avec des vomissements  Partenaires directs de sport avec un contact étroit en face à face (par ex. sports de combat)  Personnel d’encadrement et d’enfants du même groupe d’une crèche, d’une structure d’accueil"
+        },
+        {
+          "location_or_search_term": "La prophylaxie doit",
+          "actual_passage": "onnel et de l’Unité de prévention et contrôle de l’infection. Chimioprophylaxie La prophylaxie doit être administrée le plus tôt possible, idéalement dans les 24 heures qui suivent le diagnostic du cas index. Elle doit être proposée aux personnes qui ont été en contact étroit avec le cas index entre les 7 jours précédant l’apparition de la maladie et les 24 heures suivant le début du traitement. Elle est indiquée jusqu’au 10e jour après le dernier contact avec la personne malade. La vaccination préalable contre le méningocoque ne dispense pas de la prophylaxie par antibiotique. — Direction de la santé et des affaires sociales DSAS Direktion für Gesundheit und Soziales GSD Service du médecin cantonal SMC Page 2 de 3 Tableau 1 : Antibiotiques et posologie pour le traitement prophylactique Premier choix Âge < 1 mois Cipro"
+        },
+        {
+          "location_or_search_term": "Premier choix",
+          "actual_passage": "2 de 3 Tableau 1 : Antibiotiques et posologie pour le traitement prophylactique Premier choix Âge < 1 mois Ciprofloxacine 1 20 mg/kg, p.o. Dose unique Âge ≥ 1 mois (enfants et adultes)2 Ciprofloxacine 20 mg/kg p.o. max. 500 mg Dose unique Alternatives 2 Âge < 1 mois Rifampicine 5 mg/kg Toutes les p.o./dose 12 heures pendant 2 jours (total 4 doses) Âge ≥ 1 mois (enfants et adultes) 2 Rifampicine 10 mg/kg Toutes les p.o./dose 12 heures pendant 2 (max 600 jours mg/dose) (total 4 doses) Âge ≤ 12 ans Ceftriaxone 125 mg 1 dose i.m. Femmes enceintes3 Ceftriaxone 250 mg 1 dose i.m. (et alternative pour personnes > 12 ans La Ciprofloxacine suspension se conserve à température ambiante. Elle ne doit pas être mise au frigo ! La suspension prête à l’emploi se conserve 14 jours. Agiter vigoureusement la préparation pendant 15 secon"
+        },
+        {
+          "location_or_search_term": "Vaccination post-exposition",
+          "actual_passage": "és pendant la période d’allaitement Service du médecin cantonal SMC Page 3 de 3 Vaccination post-exposition :  Fenêtre d’administration : le plus rapidement possible (idéalement simultanément à la PPE, sans attendre le sérotypage)  Restrictions : o Âge < 2 mois o Dernière vaccination MCV-ACWY (Menveo) < 12 mois o En cas de sérotypage du patient index, recommandé uniquement pour les sérogroupes A, C, W ou Y  Schéma de vaccination : De 2 à 6 mois : Total de 4 doses : 3 doses à deux mois d’intervalle au moins; 4e dose entre 12 et 16 mois, au minimum six mois après la 3e dose. De 7 à 11 mois : 2 doses à au moins 2 mois d’intervalle (2e dose idéalement à l’âge de ≥ 12mois) ≥ 12 mois : 1 ou 2 doses selon l’autorisation du vaccin utilisé. Veuillez établir la liste des contacts traités (entourage, famille et personnel) ains"
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://doi.org/10.1016/S1473-3099(16)30521-7",
+      "titre": "Clinical features and prognostic factors of listeriosis: the MONALISA national prospective cohort study (Charlier et al.)",
+      "editeur": "Lancet Infect Dis 17(5):510-519",
+      "version_annee": "2017",
+      "date_consultation": "14.10.2026",
+      "section_page": "résumé",
+      "population": "818 cas, France 2009–2013, dont 252 neurolistérioses",
+      "limites": "résumé seulement ; observationnel (association dexaméthasone-mortalité non causale prouvée)"
+    },
+    {
+      "id": "S11",
+      "url": "https://doi.org/10.1016/j.medj.2025.100933",
+      "titre": "Specificities of pediatric listeriosis beyond the neonatal period: a national prospective study (Charlier et al.)",
+      "editeur": "Med (N Y) 7(2):100933",
+      "version_annee": "2026",
+      "date_consultation": "14.10.2026",
+      "section_page": "résumé",
+      "population": "48 enfants 1 mois–18 ans, France",
+      "limites": "résumé seulement ; petit effectif"
+    },
+    {
+      "id": "S12",
+      "url": "https://www.bag.admin.ch/fr/listeriose-2",
+      "titre": "Listériose",
+      "editeur": "OFSP",
+      "version_annee": "page sans date",
+      "date_consultation": "14.10.2026",
+      "section_page": "page entière",
+      "population": "Suisse",
+      "limites": "pas de chiffres annuels ni de part des méningites"
+    },
+    {
+      "id": "S13",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7669305/",
+      "titre": "German guidelines on the diagnosis and treatment of neurosyphilis (DGN S1, approuvée par la Société suisse de neurologie)",
+      "editeur": "Neurological Research and Practice 2:33, doi 10.1186/s42466-020-00081-1",
+      "version_annee": "2020 (validité indiquée jusqu'au 30.04.2025)",
+      "date_consultation": "14.10.2026",
+      "section_page": "texte intégral",
+      "population": "adultes, DACH",
+      "limites": "validité échue ; données épidémiologiques allemandes ; mises à jour IUSTI 2026 en projet non lues"
+    },
+    {
+      "id": "S14",
+      "url": "https://www.newsd.admin.ch/newsd/message/attachments/87224.pdf",
+      "titre": "Communiqué OFSP sur les infections sexuellement transmissibles (VIH, hépatites, gonorrhée, chlamydiose, syphilis)",
+      "editeur": "OFSP",
+      "version_annee": "24.04.2024 (données 2022)",
+      "date_consultation": "14.10.2026",
+      "section_page": "texte complet",
+      "population": "Suisse",
+      "limites": "pas de données sur la neurosyphilis"
+    },
+    {
+      "id": "S15",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12584707/fullTextXML",
+      "titre": "Guidelines for diagnosis and treatment in neurology – Lyme neuroborreliosis",
+      "editeur": "DGN / German Medical Science ; Société suisse de neurologie participante",
+      "version_annee": "2025, DOI10.3205/000349",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:02:03.007170+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Adultes et enfants, Europe centrale",
+      "limites": "Recommandation clinique distincte des restrictions du produit suisse ; index positif persistant",
+      "raw_sha256": "b6b51f4e2eba30446f5c3f4ce83029402b70ad8f545c3465448952a43498090a",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "radicular pain",
+          "actual_passage": "s; in some cases, however, symptoms or patient history (e.g. erythema migrans, radicular pain) can help diagnose Lyme neuroborreliosis. CSF testing can provide clarity here. Total recovery is observed in most cases within 1–2 months regardless of the severity of the facial nerve paresis. Residual symptoms or partial recovery with facial synkinesis (pathological, unintentional movements) occur in around 5–10% of patients [ 78 ], [ 79 ], [ 80 ]. Lyme neuroborreliosis can also affect the abducens nerve and very rarely the vestibulocochlear nerve, the optic nerve (optic neuritis, papilloedema), the cranial nerves (III and IV), the trigeminal nerve and the lower cranial nerves (IX–XII) [ 15 ], [ 24 ], [ 76 ], [ 81 ]. It is uncertain whether isolated damage to the vestibulocochlear nerve occurs in the context of an acute Bor"
+        },
+        {
+          "location_or_search_term": "Probable Lyme neuroborreliosis",
+          "actual_passage": "ses *The serology can [still] be negative in very early stages of the disease. Probable Lyme neuroborreliosis As with “possible Lyme neuroborreliosis”, however also Inflammatory cerebrospinal fluid syndrome with lymphocytic pleocytosis, blood-CSF barrier dysfunction and intrathecal immunoglobulin synthesis Confirmed Lyme borreliosis As with “probable Lyme neuroborreliosis”, also Intrathecal synthesis of Borrelia-specific antibodies (positive IgG and/or IgM antibody index) in CSF or Positive culture or nucleic acid detection (PCR) in cerebrospinal fluid Level of evidence: EC Level of consensus: 100% (17/17) 3.11 Testing methods not suitable for diagnosing Lyme neuroborreliosis There are no prospective controlled studies for the methods listed below that would prove useful in diagnosing Lyme neuroborreliosis. The followi"
+        },
+        {
+          "location_or_search_term": "Confirmed Lyme borreliosis",
+          "actual_passage": "ytosis, blood-CSF barrier dysfunction and intrathecal immunoglobulin synthesis Confirmed Lyme borreliosis As with “probable Lyme neuroborreliosis”, also Intrathecal synthesis of Borrelia-specific antibodies (positive IgG and/or IgM antibody index) in CSF or Positive culture or nucleic acid detection (PCR) in cerebrospinal fluid Level of evidence: EC Level of consensus: 100% (17/17) 3.11 Testing methods not suitable for diagnosing Lyme neuroborreliosis There are no prospective controlled studies for the methods listed below that would prove useful in diagnosing Lyme neuroborreliosis. The following negative recommendations have been taken from the Microbiological Guideline for the Diagnosis of Lyme Borreliosis [ 12 ]. 9. Recommendation (reviewed in 2023) Antigen detection in bodily fluids (Grade of recommendation ↓↓) PCR"
+        },
+        {
+          "location_or_search_term": "may remain positive for years",
+          "actual_passage": "ks. A Borrelia-specific AI without accompanying inflamma t o ry changes in CSF may remain positive for years after the Lyme neuroborreliosis has resolved and is therefore not suitable as a control parameter for antibiotic treatment and should not be interpreted as an indication of a current case of Lyme neuroborreliosis. [ 12 ], [ 24 ], [ 121 ], [ 122 ], [ 123 ], [ 124 ], [ 125 ] Level of evidence: EC Level of consensus: 100% (15/15) 4. Recommendation (reviewed in 2023) The Borrelia-specific AI should be determined (in conjunction with CSF-n) if Lyme neuroborreliosis is suspe c t ed. The Borrelia-specific AI should not be used to monitor treatment success. [ 12 ], [ 24 ], [ 121 ], [ 122 ], [ 123 ], [ 124 ], [ 125 ] Grade of recommendation ↑↑ Level of evidence: EC Level of consensus: 100% (16/16) 3.5 Chemokine CXCL13 Re"
+        },
+        {
+          "location_or_search_term": "Reiber method",
+          "actual_passage": "ion, as this could otherwise produce false negative results [ 12 ]. The proven Reiber method should be used to determine the antibody index [ 12 ], [ 121 ], [ 126 ], [ 127 ]. The Borrelia-specific AI can be calculated using the following formula (here based on IgG, however it can also be used to calculate IgM and IgA): If the Reiber diagram shows intrathecal immunoglobulin synthesis, i.e. the total IgG ratio relative to the albumin ratio is above the limit (norm), the total IgG ratio must be replaced by the Q-Lim ratio (empirical limit value for the maximum IgG fraction derived from the serum as a function of the albumin ratio). In this case: A value ≥1.5 is recommended as the cut off for a positive AI, unless assessed otherwise [ 12 ], [ 106 ], [ 126 ], [ 128 ]; the previously recommended higher limit value of 2.0 [ 1"
+        }
+      ]
+    },
+    {
+      "id": "S16",
+      "url": "https://doi.org/10.1111/ene.16034",
+      "titre": "Efficacy and safety of pharmacological treatments for Lyme neuroborreliosis: an updated systematic review (Dersch, Rauer)",
+      "editeur": "Eur J Neurol 30(12):3780-3788",
+      "version_annee": "2023",
+      "date_consultation": "14.10.2026",
+      "section_page": "résumé",
+      "population": "ECR et études non randomisées",
+      "limites": "résumé seulement"
+    },
+    {
+      "id": "S17",
+      "url": "https://doi.org/10.3238/arztebl.2018.0751",
+      "titre": "Lyme neuroborreliosis (Rauer et al.)",
+      "editeur": "Dtsch Arztebl Int 115(45):751-756",
+      "version_annee": "2018",
+      "date_consultation": "14.10.2026",
+      "section_page": "résumé",
+      "population": "revue systématique (guideline S3 2018)",
+      "limites": "résumé ; version antérieure à S15"
+    },
+    {
+      "id": "S18",
+      "url": "https://www.bag.admin.ch/dam/fr/sd-web/fPW7HAdyOiZ0/tuberkulose-handbuch.pdf",
+      "titre": "Tuberculose en Suisse, guide à l’usage des professionnels de la santé",
+      "editeur": "OFSP / Ligue pulmonaire suisse",
+      "version_annee": "V1.2024 du17.10.2024",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:02:05.891142+00:00",
+      "section_page": "Passages ciblés ci-dessous ; guide pp9,36–40",
+      "population": "Tuberculose en Suisse",
+      "limites": "Méningite: schéma général ; doses de corticoïde non établies par le passage lu ; produits individuels à choisir",
+      "raw_sha256": "8fb42302a5347cb132853a1a979b203250c82cb878b62b3e7a48e1dc55be4cee",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "En 2022, cette tendance",
+          "actual_passage": "âge des cas selon l’origine (étranger vs Suisse/Liech- depuis au moins 150 ans. En 2022, cette tendance à tenstein). Au cours de la période quinquennale allant de la baisse s’est confirmée avec 365 cas signalés et une 2018 à 2022, 53 cas concernaient des enfants de moins incidence de 4,16 cas pour 100 000 habitants. Parmi de cinq ans et la majorité des cas touchant les per- les personnes touchées, 73% n’étaient pas d’origine sonnes nées en Suisse ou au Liechtenstein concernaient suisse, c’est-à-dire qu’elles étaient nées à l’étranger ou, les groupes d’âge de plus de 50 ans. Dans le groupe des faute d’information en ce sens, étaient de nationalité enfants de moins de 5 ans, 8 d’entre eux étaient d’orig- étrangère (figure 2-1). Les données les plus récentes ine non suisse (nés à l’étranger ou, faute d’information concern"
+        },
+        {
+          "location_or_search_term": "Phase initiale ou intensive",
+          "actual_passage": "rifampicine (le principal médi- cament pour déterminer la possibilité de guérir Phase initiale ou intensive (mois 1–2): la maladie avec des médicaments de première 4 médicaments: isoniazide (H), rifampicine (R), intention; il constitue un indicateur de la résistance pyrazinamide (Z) et éthambutol (E) par jour pen- combinée à la rifampicine et à l’isoniazide, c’est- dant deux mois* à-dire de la multirésistance aux médicaments [TB-MR]) (voir 7.2. risque de résistance médica- Phase de continuation (mois 3–6): menteuse). 2 médicaments: isoniazide (H) et rifampicine (R), par jour pendant quatre mois • Évaluer l’état immunitaire du patient (test VIH). Notation abrégée: 2 HRZE / 4 HR • Évaluer la fonction hépatique et rénale. • Disposer d‘une liste complète des médicaments Bien que la plupart des lignes directrices préconisen"
+        },
+        {
+          "location_or_search_term": "Méningite tuberculeuse:",
+          "actual_passage": "lairement reproduit dans les études cliniques. Par exemple, l’augmentation de • Méningite tuberculeuse: la phase de continuation la dose à plus de 20 mg/kg entraîne une conversion est étendue à 10 mois (12 mois au total), avec plus rapide des cultures, mais sans effet sur la mortalité ajout de corticostéroïdes pendant les premières toutes causes confondues. En résumé, le traitement semaines. par rifampicine à forte dose n’est donc recommandé que dans des situations cliniques spécifiques telles que • Péricardite tuberculeuse et grave tuberculose la méningite tuberculeuse ou la présence de grandes (septique): un traitement concomitant par corti- cavités, et doit faire l’objet de discussions avec des costéroïdes pendant les premières semaines est spécialistes de la tuberculose. recommandé. • La tuberculose due à M. bovis "
+        },
+        {
+          "location_or_search_term": "rifampicine à forte dose",
+          "actual_passage": " les premières toutes causes confondues. En résumé, le traitement semaines. par rifampicine à forte dose n’est donc recommandé que dans des situations cliniques spécifiques telles que • Péricardite tuberculeuse et grave tuberculose la méningite tuberculeuse ou la présence de grandes (septique): un traitement concomitant par corti- cavités, et doit faire l’objet de discussions avec des costéroïdes pendant les premières semaines est spécialistes de la tuberculose. recommandé. • La tuberculose due à M. bovis est naturellement résistante au pyrazinamide et nécessite par consé- 7.2 \u0007Traitement de la tuberculose quent un traitement d’une durée de 9 mois (avec résistante aux médicaments prolongation de la phase de continuation à 7 mois, c’est-à-dire 2 HRE / 7 HR). Le traitement inadapté de patients porteurs de M. tuberculosis"
+        },
+        {
+          "location_or_search_term": "Insuffisance rénale:",
+          "actual_passage": "up plus élevées de ri- fampicine et un essai en cours de 6 mois de rifampicine/ Insuffisance rénale: l’utilisation de l’éthambutol et du lévofloxacine/pyrazinamide. L’OMS propose également pyrazinamide doit être espacée à une posologie de un régime intensif de 6 mois avec l’ajout d’éthionamide trois fois par semaine si la clairance de la créatinine est (6HRZEto) comme alternative possible au protocole de < 30 ml/min. L’éthambutol peut être complètement 12 mois (2HRZE/10HR) pour les enfants sans co-infec- omis du protocole s’il n’y a pas de résistance à d’au- tion par le VIH [2]. Le traitement des maladies extrapul- tres médicaments de première intention. Le traite- monaires et des maladies pulmonaires compliquées chez ment peut également être complété par l’ajout d’une l’enfant doit être supervisé par un pédiatre. fluo"
+        }
+      ]
+    },
+    {
+      "id": "S19",
+      "url": "https://doi.org/10.1016/j.jinf.2009.06.011",
+      "titre": "British Infection Society guidelines for the diagnosis and treatment of tuberculosis of the central nervous system in adults and children (Thwaites et al.)",
+      "editeur": "J Infect 59(3):167-187",
+      "version_annee": "2009",
+      "date_consultation": "14.10.2026",
+      "section_page": "résumé et recommandations clés",
+      "population": "adultes et enfants",
+      "limites": "résumé seulement ; ancienne"
+    },
+    {
+      "id": "S20",
+      "url": "https://www.bag.admin.ch/fr/tuberculose",
+      "titre": "Tuberculose",
+      "editeur": "OFSP",
+      "version_annee": "page sans date (bulletin lié 21.09.2026)",
+      "date_consultation": "14.10.2026",
+      "section_page": "page entière",
+      "population": "Suisse",
+      "limites": "« près de 550 cas chaque année » diverge de S18 (365 en 2022)"
+    },
+    {
+      "id": "S21",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680598760031",
+      "titre": "Information professionnelle suisse Ceftriaxon Labatec® i.v./i.m.",
+      "editeur": "Swissmedic (AIPS via AmiKo, tools/swissmedic_fi.py)",
+      "version_annee": "mise à jour juin 2025",
+      "date_consultation": "15.10.2026",
+      "section_page": "Passages ciblés : Les concentrations maximales moyennes, 100 mg/kg, calcium",
+      "population": "adultes et enfants",
+      "limites": "aucune",
+      "consulted_at": "2026-10-15T20:03:27.463400+00:00",
+      "raw_sha256": "9c25be901b1b5745f582bd12836f313a23f797a4afcfa74ba5bf8763742ccc13",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Les concentrations maximales moyennes",
+          "actual_passage": "s l'administration intraveineuse d'un bolus de 500 mg et de 1 g de ceftriaxone, les concentrations maximales moyennes de ceftriaxone dans le plasma s'élèvent à env. 120 et 200 mg/l, respectivement. Après une perfusion intraveineuse de 500 mg, 1 g et 2 g de ceftriaxone, la concentration plasmatique de ceftriaxone s'élève à env. 80, 150 et 250 mg/l, respectivement. Après une injection intramusculaire, la concentration maximale moyenne de ceftriaxone dans le plasma correspond à environ la moitié d'une dose équivalente administrée par voie intraveineuse. Distribution Le volume de distribution se situe entre 7 et 12 l. Lors d'une administration intraveineuse, la ceftriaxone diffuse rapidement dans le liquide interstitiel, o&ugrave; des concentrations bactéricides à l'égard des germes sensibles persistent pendant plus de 24 heures. Après administration d'une dose de 1 à 2 g, la ceftriaxone témoigne d'une bonne pénétration "
+        },
+        {
+          "location_or_search_term": "100 mg/kg",
+          "actual_passage": "ne chez l'enfant en bas âge et l'enfant, le traitement est instauré à raison de 100 mg/kg (pas plus de 4 g) une fois par jour. Dès que le germe a été identifié et que sa sensibilité a été déterminée, la posologie peut être réduite en conséquence. Les meilleurs résultats ont été obtenus avec les durées de traitement suivantes: Neisseria meningitidis 4 jours Haemophilus influenzae 6 jours Streptococcus pneumoniae 7 jours Maladie de Lyme La posologie en cas de maladie de Lyme est de 50 mg par kg, 2 g au maximum, chez l'enfant et l'adulte, administrés une fois par jour pendant 14 jours. Blennorragie Dans le traitement de la blennorragie (souches produisant ou non des pénicillinases), il est recommandé de procéder à l'administration unique de 0,25 g de Ceftriaxon Labatec par voie i.m. Prophylaxie périopératoire Pour éviter des infections postopératoires lors de chirurgie contaminée ou susceptible de l'être, il est recomma"
+        },
+        {
+          "location_or_search_term": "calcium",
+          "actual_passage": "bablement besoin) d'un traitement par des solutions intraveineuses contenant du calcium, y compris les perfusions continues de solutions contentant du calcium, par ex. pour la nutrition parentérale, en raison du risque de formation de précipités de calcium-ceftriaxone (voir «Contre-indications»). Nourrissons, enfants en bas âge et enfants (de 15 jours à 12 ans) Une dose quotidienne de 20 - 80 mg/kg. Chez les enfants d'un poids corporel de 50 kg ou plus, il faut avoir recours à la posologie usuelle pour adultes. L'administration intraveineuse de doses égales ou supérieures à 50 mg par kg de poids corporel chez les nourrissons et les enfants jusqu'à 12 ans doit avoir lieu par perfusion d'une durée minimale de 30 minutes. Chez les nouveau-nés, les doses intraveineuses doivent être administrées sur une durée de 60 minutes afin de diminuer le risque potentiel d'encéphalopathie bilirubinique. Patients âgés Aucun ajustement"
+        }
+      ]
+    },
+    {
+      "id": "S22",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680667100010",
+      "titre": "Information professionnelle suisse Dexaméthasone Galepharm Amp",
+      "editeur": "Swissmedic (AIPS via AmiKo)",
+      "version_annee": "mise à jour juin 2022",
+      "date_consultation": "15.10.2026",
+      "section_page": "Passages ciblés : Enfants et adolescents, 0,15 mg/kg, 0,4 mg/kg",
+      "population": "enfants (posologie mg/kg) ; adultes œdème cérébral",
+      "limites": "pas de schéma adulte spécifique méningite",
+      "consulted_at": "2026-10-15T20:03:27.578353+00:00",
+      "raw_sha256": "c27066eaebab369dd9a62aaf78cb3a309d7cf8de7f0249658d53faa304538ba9",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Enfants et adolescents",
+          "actual_passage": "Eviter les injections dans les tendons. Instructions posologiques particulières Enfants et adolescents La posologie doit être ajustée en fonction de la gravité de la maladie et de la réponse au traitement plutôt qu'en fonction de l'âge, du poids ou de la taille de l'enfant. Chez les enfants en bas âge et les enfants âgés de 0 à 11 ans, des doses plus faibles que celles administrées aux adultes sont généralement suffisantes. En cas de réponse suffisante du patient, la dose de dexaméthasone doit être réduite par petits paliers à la dose la plus faible possible et le traitement interrompu aussitôt que possible. Administration i.v. ·Œdème cérébral déclenché p.ex. par: ·tumeur cérébrale: administrer une dose initiale de 0.5 à 1 mg/kg, puis 0.25 à 0.5 mg/kg par jour en 4 fois ·intervention neurochirurgicale: administrer 1 mg/kg en phase préopératoire, puis 0.2 mg/kg toutes les 4 heures pendant 24 heures ·encéphalite/méning"
+        },
+        {
+          "location_or_search_term": "encéphalite/méningite: administrer 0.15",
+          "actual_passage": " mg/kg, puis 0.25 à 0.5 mg/kg par jour en 4 fois ·intervention neurochirurgicale: administrer 1 mg/kg en phase préopératoire, puis 0.2 mg/kg toutes les 4 heures pendant 24 heures ·encéphalite/méningite: administrer 0.15 mg/kg toutes les 6 heures durant 4 jours, ou 0.4 mg/kg toutes les 12 heures durant 2 jours, en commençant avant la première antibiothérapie ·choc anaphylactique (après injection initiale d'adrénaline):dose initiale: 7.5 à 15 mg chez les nourrissons, 4.5 mg/kg chez les enfants plus âgés; 2e jour: réduire la dose à la moitié de la dose initiale; 3e jour: réduire la dose à un quart de la dose initiale ·choc polytraumatique (prophylaxie du poumon de choc et de"
+        }
+      ]
+    },
+    {
+      "id": "S23",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680688150018",
+      "titre": "Information professionnelle suisse Amoxicillin OrPha (poudre i.v./i.m.)",
+      "editeur": "Swissmedic (AIPS via AmiKo)",
+      "version_annee": "mise à jour février 2026",
+      "date_consultation": "15.10.2026",
+      "section_page": "Passages ciblés : Insuffisance rénale, méningite",
+      "population": "adultes et enfants",
+      "limites": "ampicilline absente des FI suisses trouvées",
+      "consulted_at": "2026-10-15T20:03:27.824991+00:00",
+      "raw_sha256": "3cfbab36e74bd6d3e404b5cd3bd19e1b2381a18424ae032c7fea6e1c1f299094",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Insuffisance rénale",
+          "actual_passage": "l'urine dans la sonde. Patients présentant des troubles de la fonction rénale L'insuffisance rénale entraîne un ralentissement de l'élimination de l'amoxicilline. Amoxicillin OrPha peut être dosé en fonction de la clairance de la créatinine (ClCr) selon le schéma suivant: Adultes et enfants de plus de 40 kg: Clairance de la créatinine (ClCr) ( ml /min) Dose dose initiale dose d'entretien 10-30 1000 mg 500-1000 mg toutes les 12 h <10 1000 mg 500 mg toutes les 24 h Lors d'une clairance de la créatinine supérieure à 30 ml/min, aucun ajustement posologique n'est requis. La dose unique de 3 g n'exige toutefois aucun ajustement. Enfants jusqu'à 40 kg inclus: Clairance de la créatinine (ClCr) ( ml /min) Dose 10-30 15 mg/kg/12 h <10 15 mg/kg/24 h Lors d'une clairance de la créatinine supérieure à 30 ml/min, aucun ajustement posologique n'est requis. Dialyse péritonéale: La dialyse péritonéale n'entraîne pas d'élimination de "
+        },
+        {
+          "location_or_search_term": "méningite",
+          "actual_passage": "que: septicémie, avortement septique, fièvre puerpérale, endocardite, phlegmon, méningite, de même que maladie de Lyme (stade I, érythème chronique migrateur ou érythème chronique migrateur associé à des symptômes articulaires fugaces et à des manifestations neurologiques fugaces limitées). Les recommandations officielles pour un emploi adéquat des antibiotiques devraient être respectées, notamment les recommandations d'utilisation, afin d'éviter une augmentation des résistances aux antibiotiques. Posologie/Mode d’emploi La posologie dépend du mode d'emploi, de l'âge, du poids corporel et de la fonction rénale du patient, ainsi que du degré de gravité de l'infection et de la sensibilité du germe en cause. Après l'obtention d'un effet clinique, il convient de poursuivre le traitement pendant une période de 48 à 72 h. Lors d'une infection provoquée par des streptocoques β-hémolytiques, il est recommandé de poursuivre l"
+        }
+      ]
+    },
+    {
+      "id": "S24",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680562710024",
+      "titre": "Information professionnelle suisse Pénicilline «Grünenthal»",
+      "editeur": "Swissmedic (AIPS via AmiKo)",
+      "version_annee": "mise à jour mai 2023",
+      "date_consultation": "15.10.2026",
+      "section_page": "Passages ciblés : insuffisance rénale, 20-60, convulsions",
+      "population": "adultes et enfants",
+      "limites": "pas de schéma spécifique neurosyphilis",
+      "consulted_at": "2026-10-15T20:03:27.970193+00:00",
+      "raw_sha256": "e0ed300c10dac22d1af7ca23966801451cc9983a225a8067d89279ad8f14fd50",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "insuffisance rénale",
+          "actual_passage": "éant. Patients présentant des troubles de la fonction rénale Chez un patient en insuffisance rénale, la dose initiale est la même que chez un patient dont les reins fonctionnent normalement. Mais la dose d'entretien doit être diminuée, ou l'intervalle entre les doses allongé. Les doses suivantes sont recommandées chez un patient en insuffisance rénale (rapportées à un poids corporel de 70 kg): Filtration glomérulaire (ml/min) Créatinine sériqu e (mg/100 ml) Dose mio U.I. de benzylpénicilline (mg de benzylpéni cilline sodique) Intervalle entre les doses (h) 120 0,8 5 (3000) 6 45 2,0 5 (3000) 8 18 3,5 4 (2400) 8 8 6,0 5 (3000) 12 2 15,5 3 (1800) 12 inférieure à 2 – 2 (1200) 12 Mode d'administration Pénicilline «Grünenthal» s'administre par injection ou perfusion intraveineuse ou en injection intramusculaire. Injection et perfusion intraveineuses Les solutions pour injection ou perfusion intraveineuse doivent être isoto"
+        },
+        {
+          "location_or_search_term": "convulsions",
+          "actual_passage": "ar jour en 3–4 doses unitaires. Attention: en cas de perfusion trop rapide, des convulsions cérébrales peuvent survenir. Nouveau-nés (jusqu'à 4 semaines de vie) 0,05–0,1 (–0,5) million d'U.I. de benzylpénicilline (correspondant à 30–60 [–300] mg de benzylpénicilline sodique)/kg PC et par jour en 2 doses unitaires. Chez le prématuré et le nouveau-né, en raison de l'immaturité hépatique et de l'excrétion plus faible de la benzylpénicilline, il convient de respecter un intervalle d'au moins 12 heures entre deux doses. Durée du traitement La durée du traitement dépend de la réponse du pathogène et du tableau clinique, mais il doit se poursuivre 3 jours au moins après la disparition de la fièvre. Si aucun effet thérapeutique ne s'est manifesté après 3–4 jours, il faut réexaminer la sensibilité et changer de médicament le cas échéant. Patients présentant des troubles de la fonction rénale Chez un patient en insuffisance ré"
+        }
+      ]
+    },
+    {
+      "id": "S25",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680659520017",
+      "titre": "Information professionnelle suisse Doxycyclin-Mepha comprimés",
+      "editeur": "Swissmedic (AIPS via AmiKo)",
+      "version_annee": "mise à jour février 2024",
+      "date_consultation": "15.10.2026",
+      "section_page": "Passages ciblés : 12 ans, situations graves, 10-60",
+      "population": "adultes",
+      "limites": "FI limite la neuroborréliose aux manifestations « passagères » faciales ; écart avec S15",
+      "consulted_at": "2026-10-15T20:03:28.238369+00:00",
+      "raw_sha256": "1ce00fe7a5fc2c7d9a1a7ed9a7d53ea9a45ed1b8ea656e78e6b2c670f392d999",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "12 ans",
+          "actual_passage": "stantes à la chloroquine: adultes: 100 mg une fois par jour. Enfants de plus de 12 ans: 2 mg/kg de poids corporel une fois par jour (sans dépasser la dose pour adultes). Commencer la prophylaxie 1-2 jours avant le départ pour la région paludéenne. Le traitement doit être poursuivi quotidiennement durant tout le séjour dans la région paludéenne et pendant 4 semaines après l'avoir quittée. La fièvre récurrente épidémique à poux et le typhus exanthématique ont été traités avec succès par une dose unique de 100 ou 200 mg par voie orale, selon le degré de l'infection. Comme alternative pour diminuer le risque d'une fièvre récurrente épidémique à poux persistante ou récidivante, l'administration de 100 mg de doxycycline toutes les 12 heures pendant 7 jours est recommandée. Prévention du typhus des broussailles («scrub typhus»): 200 mg par voie orale en une prise unique. Traitement et prévention sélective du choléra: adulte"
+        },
+        {
+          "location_or_search_term": "situations graves",
+          "actual_passage": "ques âgés de 12 ans ou moins, la doxycycline ne doit être utilisée que dans les situations graves et dangereuses pour le pronostic vital, lorsque le bénéfice attendu l'emporte sur le risque et uniquement lorsqu'aucun autre traitement n'est disponible. Généralités Des réactions cutanées sévères telles qu'une dermatite exfoliative, un érythème polymorphe, un syndrome de Stevens-Johnson, une nécrolyse épidermique toxique et un exanthème médicamenteux avec éosinophilie et symptômes systémiques (DRESS) ont été rapportées chez des patients traités par la doxycycline (voir «Effets indésirables»). En cas d'apparition de réactions cutanées sévères, la doxycycline doit être suspendue immédiatement et un traitement approprié doit être instauré. Une hypertension intracrânienne bénigne (pseudotumeur cérébrale) a été associée à l'utilisation de tétracyclines, y compris la doxycycline. Cette hypertension intracrânienne bénigne (pse"
+        },
+        {
+          "location_or_search_term": "10-60",
+          "actual_passage": " stades 1 et 2: 100 mg de doxycycline par voie orale deux fois par jour pendant 10-60 jours, en fonction des symptômes cliniques et de la réponse thérapeutique. Paludisme (souches de Plasmodium falciparum résistantes à la chloroquine): 200 mg par jour pendant au moins 7 jours. En raison de la gravité potentielle de l'infection, un schizonticide à action rapide tel que la quinine doit toujours être administré en association à Doxycyclin-Mepha. Les recommandations thérapeutiques relatives à la quinine varient selon la région. Prophylaxie du paludisme dans les régions o&ugrave; les souches de Plasmodium falciparum sont résistantes à la chloroquine: adultes: 100 mg une fois par jour. Enfants de plus de 12 ans: 2 mg/kg de poids corporel une fois par jour (sans dépasser la dose pour adultes). Commencer la prophylaxie 1-2 jours avant le départ pour la région paludéenne. Le traitement doit être poursuivi quotidiennement dura"
+        }
+      ]
+    },
+    {
+      "id": "S26",
+      "url": "https://doi.org/10.1111/ene.15631",
+      "titre": "Lyme neuroborreliosis with antibodies in cerebrospinal fluid but not in serum (Zomer et al.)",
+      "editeur": "Eur J Neurol 30(3):741-744",
+      "version_annee": "2022",
+      "date_consultation": "14.10.2026",
+      "section_page": "résumé",
+      "population": "127 neuroborrélioses, Pays-Bas 2007–2020",
+      "limites": "résumé ; rétrospectif monocentrique"
+    },
+    {
+      "id": "S27",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11069119/fullTextXML",
+      "titre": "Adjunctive treatments for pneumococcal meningitis: a systematic review of experimental animal models",
+      "editeur": "Koning et collaborateurs / Brain Communications / Oxford University Press",
+      "version_annee": "2024, DOI10.1093/braincomms/fcae131",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:05:19.609459+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Modèles animaux de méningite pneumococcique ; introduction clinique",
+      "limites": "Résultats expérimentaux non transposés en prescription ; figures de cet article non importées",
+      "raw_sha256": "1430cd64b317e01751d59618cf8307bcfd5de22bc796cdbc6aff0bdd175fec75",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Pneumococcal infection typically starts",
+          "actual_passage": " hearing loss and cognitive impairment, occur in up to half of survivors. 4 , 5 Pneumococcal infection typically starts by nasopharyngeal colonization followed by spread to the bloodstream and eventual invasion of the subarachnoid space by passing the blood–brain barrier. 6 , 7 Once in the subarachnoid space, the bacteria can multiply rapidly and trigger the activation of the immune system resulting in a massive influx of leucocytes. 6 , 8 , 9 Although necessary to fight the infection, excessive inflammation and the release of toxic substances can also cause damage to the host, leading to brain oedema, hydrocephalus and vascular damage resulting in thrombosis or cerebral infarction. 10-12 Urgent treatment with antibiotics results in effective bacterial killing in meningitis patients but also aggravates hyperinflammatio"
+        },
+        {
+          "location_or_search_term": "Once in the subarachnoid space",
+          "actual_passage": "al invasion of the subarachnoid space by passing the blood–brain barrier. 6 , 7 Once in the subarachnoid space, the bacteria can multiply rapidly and trigger the activation of the immune system resulting in a massive influx of leucocytes. 6 , 8 , 9 Although necessary to fight the infection, excessive inflammation and the release of toxic substances can also cause damage to the host, leading to brain oedema, hydrocephalus and vascular damage resulting in thrombosis or cerebral infarction. 10-12 Urgent treatment with antibiotics results in effective bacterial killing in meningitis patients but also aggravates hyperinflammation caused by a dysregulated immune response. 13-15 Dexamethasone, a corticosteroid with strong anti-inflammatory properties, is the only adjunctive therapy currently used in clinical practice, but has"
+        },
+        {
+          "location_or_search_term": "Although necessary to fight",
+          "actual_passage": "ion of the immune system resulting in a massive influx of leucocytes. 6 , 8 , 9 Although necessary to fight the infection, excessive inflammation and the release of toxic substances can also cause damage to the host, leading to brain oedema, hydrocephalus and vascular damage resulting in thrombosis or cerebral infarction. 10-12 Urgent treatment with antibiotics results in effective bacterial killing in meningitis patients but also aggravates hyperinflammation caused by a dysregulated immune response. 13-15 Dexamethasone, a corticosteroid with strong anti-inflammatory properties, is the only adjunctive therapy currently used in clinical practice, but has only proven efficacious in high-income countries. 16-18 Other adjunctive treatments that have been tested in randomized controlled trials in patients include glycerol, "
+        },
+        {
+          "location_or_search_term": "Mechanism of action of experimental",
+          "actual_passage": "drugs (11%) ( Fig. 2 ). Figure 2 Adjunctive therapies and their mode of action. Mechanism of action of experimental adjunctive therapies for the treatment of pneumococcal meningitis. During meningitis, pneumococci infiltrate the subarachnoid space. The immune system is activated through recognition of pneumococcal PAMPs by pattern recognition receptors (e.g. TLRs) on resident immune cells. The release of cytokines and chemokines leads to leucocyte migration into the CSF and the production of inflammatory mediators such as reactive oxygen species and MMPs. The inflammatory reaction is amplified by the complement system, the release of additional PAMPs during pneumococcal lysis caused by the host response or antibiotic treatment, and the release of DAMPs by damaged host cells. C1, complement component 1; C5, complement c"
+        },
+        {
+          "location_or_search_term": "2703 experimental animals",
+          "actual_passage": "f bias tool. A total of 58 of 2462 identified studies were included, which used 2703 experimental animals. Disease modelling was performed in rats (29 studies), rabbits (13 studies), mice (12 studies), gerbils (3 studies) or both rats and mice (1 study). Meningitis was induced by injection of Streptococcus pneumoniae into the subarachnoid space. Randomization of experimental groups was performed in 37 of 58 studies (64%) and 12 studies (12%) were investigator-blinded. Overall, 54 treatment regimens using 46 adjunctive drugs were evaluated: most commonly dexamethasone (16 studies), daptomycin (5 studies), complement component 5 (C5; 3 studies) antibody and Mn(III)tetrakis(4-benzoicacid)porphyrin chloride (MnTBAP; 3 studies). The most frequently evaluated outcome parameters were inflammation [32 studies (55%)] and brain "
+        }
+      ]
+    },
+    {
+      "id": "S28",
+      "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+      "titre": "Meningitis (bacterial) and meningococcal disease: recognition, diagnosis and management",
+      "editeur": "NICE, Royaume-Uni",
+      "version_annee": "NG240, 19.03.2024",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:02:04.625150+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Tableau2 adultes ; tableau1 pédiatrie distinct",
+      "limites": "Complément européen de sémiologie ; ne remplace pas droit suisse/PPE ; populations particulières à distinguer",
+      "raw_sha256": "a5e85354adf9f146e2d72dcfecf2591ba4472d00ab2f414041def2cf6e2c3c1a",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "ask family members or carers about recent changes",
+          "actual_passage": "ant. 1.1.3 For people with reduced consciousness or communication difficulties, ask family members or carers about recent changes in symptoms. For a short explanation of why the committee made these recommendations and how they might affect practice, see the rationale and impact section on recognising bacterial meningitis and meningococcal disease . Full details of the evidence and the committee's discussion are in evidence review A1: symptoms and signs associated with bacterial meningitis and evidence review A3: symptoms and signs associated with meningococcal disease . When to suspect bacterial meningitis 1.1.4 Strongly suspect bacterial meningitis in people with all the symptoms in the red flag combination: fever headache neck stiffness altered level of consciousness or cognition (including confusion or delirium). 1"
+        },
+        {
+          "location_or_search_term": "Table 2 Symptoms",
+          "actual_passage": "er – Unexplained body pain, including limb, back or abdominal pain – Vomiting – Table 2 Symptoms and signs that may indicate bacterial meningitis in adults Symptoms and signs in adults Notes Red flag combination – Fever, headache, neck stiffness, and altered level of consciousness or cognition (including confusion or delirium) Fever is less common in older adults . Headache and neck stiffness are harder to identify in adults with cognitive impairment. Neck stiffness is harder to identify in adults with dementia or arthritis. Altered level of consciousness or cognition may be missed in young adults and older adults. See recommendations 1.1.4 to 1.1.6 on when to strongly suspect or suspect bacterial meningitis. Appearance – Fever Fever, headache, neck stiffness and altered level of consciousness or cognition are the red "
+        },
+        {
+          "location_or_search_term": "Neck stiffness, including",
+          "actual_passage": "ve impairment or communication difficulties may not be able to report headache. Neck stiffness, including more subtle discomfort or reluctance to move the neck Fever, headache, neck stiffness and altered level of consciousness or cognition are the red flag combination for bacterial meningitis. Neck stiffness is less likely and harder to identify in babies. Neck stiffness is harder to identify in children and young people with cognitive impairment or communication difficulties. Photophobia Harder to identify in babies. Seizures – Respiratory – Tachypnoea, apnoea, and grunting Non-specific signs of illness, including sepsis and meningitis in babies. Other – Unexplained body pain, including limb, back or abdominal pain – Vomiting – Table 2 Symptoms and signs that may indicate bacterial meningitis in adults Symptoms and si"
+        },
+        {
+          "location_or_search_term": "Check all over the body",
+          "actual_passage": "s). See table 3 on symptoms and signs that may indicate meningococcal disease . Check all over the body and look for petechiae in the conjunctivae. May be difficult to see on brown, black or tanned skin. Pale, mottled skin or cyanosis May be difficult to see on brown, black or tanned skin. Behaviour – Irritability Common in babies and young children. Lethargy Common in babies and young children. Reduced feeding In babies. Unusual behaviour For example, the person may be agitated, aggressive or subdued. Ask family members or carers about changes in the child or young person's behaviour. For more guidance on identifying changes in babies, children and young people who do not communicate verbally, see recommendation 1.2.14 in the NICE guideline on babies, children and young people's experience of care . Weak, high-pitched"
+        },
+        {
+          "location_or_search_term": "rapidly progressive",
+          "actual_passage": "ptoms: haemorrhagic, non-blanching rash with lesions larger than 2 mm (purpura) rapidly progressive and/or spreading non-blanching petechial or purpuric rash any symptoms and signs of bacterial meningitis (see tables 1 and 2 ), when combined with a non-blanching petechial or purpuric rash. 1.1.10 Do not rule out meningococcal disease just because a person does not have a rash. 1.1.11 Suspect meningococcal disease based on assessment of the symptoms and signs in table 3, and the section on risk factors . Take into account that meningococcal disease can present with any combination of the non-specific symptoms and signs of severe illness in table 3. 1.1.12 When looking for a rash: check all over the body (including nappy areas), and check for petechiae in the conjunctivae note that rashes can be hard to detect on brown, "
+        },
+        {
+          "location_or_search_term": "Fever is less common in older",
+          "actual_passage": "d altered level of consciousness or cognition (including confusion or delirium) Fever is less common in older adults . Headache and neck stiffness are harder to identify in adults with cognitive impairment. Neck stiffness is harder to identify in adults with dementia or arthritis. Altered level of consciousness or cognition may be missed in young adults and older adults. See recommendations 1.1.4 to 1.1.6 on when to strongly suspect or suspect bacterial meningitis. Appearance – Fever Fever, headache, neck stiffness and altered level of consciousness or cognition are the red flag combination for bacterial meningitis. Ask the person (or their family members or carers) if they have taken antipyretics, because this may make fever harder to identify. Fever is less common in older adults. Ill appearance Ask the person (or th"
+        }
+      ]
+    },
+    {
+      "id": "S29",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680572360035",
+      "titre": "Information professionnelle suisse Vancomycine Sandoz injectable",
+      "editeur": "Sandoz / Swissmedic AIPS via AmiKo",
+      "version_annee": "Version actuellement servie15.10.2026 ; autorisation57236, GTIN7680572360035",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:03:26.743186+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "À partir de12ans pour schéma adulte rapporté ; insuffisance rénale individualisée",
+      "limites": "Surveillance sérique et fonction rénale ; pas de schéma universel",
+      "raw_sha256": "357ddc2f4dc3dc27a50eaa24c913638af66c591adb7c57beb464ae95ce79aa76",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Patients à partir de 12 ans",
+          "actual_passage": "posologie suivante et l'intervalle posologique dépendent de la fonction rénale. Patients à partir de 12 ans La dose recommandée est de 15 à 20 mg/kg de poids corporel toutes les 8 à 12 heures (la dose individuelle maximale est de 2 g). Chez les patients gravement malades, on peut administrer une dose de charge de 25 à 30 mg/kg afin d'atteindre rapidement les valeurs cibles du creux sérique de vancomycine. Nourrissons, enfants en bas âge et enfants de 1 mois à moins de 12 ans La dose recommandée est de 10 à 15 mg/kg de poids corporel toutes les 6 heures (voir «Mises en garde et précautions»). Nouveau-nés matures (de la naissance à 27 jours) Un médecin spécialiste expérimenté dans le traitement des nouveau-nés doit être consulté pour définir la posologie appropriée pour le nouveau-né. Un schéma posologique possible est d"
+        },
+        {
+          "location_or_search_term": "La dose recommandée est de 15",
+          "actual_passage": "rvalle posologique dépendent de la fonction rénale. Patients à partir de 12 ans La dose recommandée est de 15 à 20 mg/kg de poids corporel toutes les 8 à 12 heures (la dose individuelle maximale est de 2 g). Chez les patients gravement malades, on peut administrer une dose de charge de 25 à 30 mg/kg afin d'atteindre rapidement les valeurs cibles du creux sérique de vancomycine. Nourrissons, enfants en bas âge et enfants de 1 mois à moins de 12 ans La dose recommandée est de 10 à 15 mg/kg de poids corporel toutes les 6 heures (voir «Mises en garde et précautions»). Nouveau-nés matures (de la naissance à 27 jours) Un médecin spécialiste expérimenté dans le traitement des nouveau-nés doit être consulté pour définir la posologie appropriée pour le nouveau-né. Un schéma posologique possible est de 15 mg/kg toutes les 8 heur"
+        },
+        {
+          "location_or_search_term": "La vancomycine doit être administrée uniquement",
+          "actual_passage": "ur l'administration intraveineuse se rapportent à cette forme d'administration. La vancomycine doit être administrée uniquement sous forme de perfusion intraveineuse lente sur une durée d'au moins une heure ou avec un débit de perfusion maximal de 10 mg/min (selon la durée la plus longue) en veillant à une dilution suffisante (au moins 100 ml pour 500 mg ou au moins 200 ml pour 1000 mg) (voir «Mises en garde et précautions»). Les patients dont l'apport liquidien doit être limité peuvent aussi recevoir une solution de 500 mg/50 ml ou de 1000 mg/100 ml, mais le risque d'effets indésirables liés à la perfusion peut être accru lors de l'utilisation de ces concentrations plus élevées. La concentration finale ne doit pas dépasser 10 mg/ml. Pour la marche à suivre pour la reconstitution de la solution, voir «Remarques particu"
+        },
+        {
+          "location_or_search_term": "néphrotox",
+          "actual_passage": "biothérapie standard dans le cas individuel. La vancomycine est potentiellement néphrotoxique et ototoxique, notamment chez les patients avec lésions rénales préexistantes et les patients dont la fonction rénale est normale, mais qui sont traités par des doses élevées ou sur une longue durée ou qui reçoivent en même temps d'autres médicaments néphrotoxiques et/ou ototoxiques. Ototoxicité Une ototoxicité passagère ou durable (voir «Effets indésirables») a été rapportée chez des patients présentant une surdité préexistante, recevant des doses extrêmement élevées par voie intraveineuse ou traités simultanément par d'autres agents ototoxiques (p.ex. aminosides). L'utilisation de vancomycine doit également être évitée chez les patients ayant des antécédents de perte auditive. Un acouphène peut précéder une surdité. Les expé"
+        },
+        {
+          "location_or_search_term": "ototox",
+          "actual_passage": "ard dans le cas individuel. La vancomycine est potentiellement néphrotoxique et ototoxique, notamment chez les patients avec lésions rénales préexistantes et les patients dont la fonction rénale est normale, mais qui sont traités par des doses élevées ou sur une longue durée ou qui reçoivent en même temps d'autres médicaments néphrotoxiques et/ou ototoxiques. Ototoxicité Une ototoxicité passagère ou durable (voir «Effets indésirables») a été rapportée chez des patients présentant une surdité préexistante, recevant des doses extrêmement élevées par voie intraveineuse ou traités simultanément par d'autres agents ototoxiques (p.ex. aminosides). L'utilisation de vancomycine doit également être évitée chez les patients ayant des antécédents de perte auditive. Un acouphène peut précéder une surdité. Les expériences faites av"
+        }
+      ]
+    },
+    {
+      "id": "S30",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680531050250",
+      "titre": "Information professionnelle suisse Meronem injectable",
+      "editeur": "Pfizer / Swissmedic AIPS via AmiKo",
+      "version_annee": "Février2026, autorisation53105, GTIN7680531050250",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:03:26.290489+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Adulte ; méningite enfant distincte",
+      "limites": "FI souligne expérience adulte très limitée, pas médicament de choix ; tableau rénal",
+      "raw_sha256": "48ee7fbc8230c3f59a5bdeefcdf2cde2f7db2987caa1aed16dc1d65308ae9ae0",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Exceptions: Lors des épisodes fébriles chez des patients neutropéniques",
+          "actual_passage": " de la sensibilité connue ou attendue du germe et de l'état général du patient. Exceptions: Lors des épisodes fébriles chez des patients neutropéniques, la dose devra être de 1 g de Meronem i.v. toutes les 8 heures. La dose recommandée dans les méningites est de 2 g de Meronem i.v. toutes les 8 heures (l'expérience chez les adultes est très limitée et il ne s'agit pas du médicament de choix en cas de méningite). Chez les patients présentant une fibrose kystique, la dose recommandée est de 2 g de Meronem i.v. toutes les 8 heures, pour les patients <50 kg: 40 mg/kg de poids corporel. Dans le traitement d'infections à Pseudomonas aeruginosa, la posologie recommandée est d'au moins 1 g toutes les 8 heures chez les adultes (la dose journalière maximale autorisée étant de 6 g en 3 doses partielles) et peut aller jusqu'à 40 m"
+        },
+        {
+          "location_or_search_term": "Si la clairance de la créatinine",
+          "actual_passage": "sologiques particulières Patients présentant des troubles de la fonction rénale Si la clairance de la créatinine est inférieure à 51 ml/min, il convient de procéder à une réduction posologique en conformité avec le tableau suivant: Clairance de la créatinine (ml/min) Posologie (basée sur une dose unitaire de 500 mg à 2 g toutes les 8 heures) Intervalle (heures) 26-50 1 unité Toutes les 12 heures 10-25 0.5 unité Toutes les 12 heures <10 0.5 unité Toutes les 24 heures Le méropénème est épuré par hémodialyse et hémofiltration. En vue d'un traitement efficace lors de la poursuite d'un traitement, il convient d'administrer la dose unitaire indiquée en fonction de la sévérité et du type de l'infection après la fin de la dialyse. On ne dispose d'aucune donnée sur la dialyse péritonéale. Patients présentant des troubles de la "
+        },
+        {
+          "location_or_search_term": "26-50",
+          "actual_passage": " sur une dose unitaire de 500 mg à 2 g toutes les 8 heures) Intervalle (heures) 26-50 1 unité Toutes les 12 heures 10-25 0.5 unité Toutes les 12 heures <10 0.5 unité Toutes les 24 heures Le méropénème est épuré par hémodialyse et hémofiltration. En vue d'un traitement efficace lors de la poursuite d'un traitement, il convient d'administrer la dose unitaire indiquée en fonction de la sévérité et du type de l'infection après la fin de la dialyse. On ne dispose d'aucune donnée sur la dialyse péritonéale. Patients présentant des troubles de la fonction hépatique Aucune réduction posologique n'est nécessaire. Patients âgés Aucune adaptation posologique n'est nécessaire chez les patients âgés qui présentent une clairance de la créatinine >50 ml/min. Population pédiatrique L'efficacité et la sécurité n'ont pas été étudiées ch"
+        },
+        {
+          "location_or_search_term": "valproate",
+          "actual_passage": "enfants de moins de 3 mois. L'administration concomitante d'acide valproïque/de valproate sodique et de Meronem i.v. n'est pas recommandée. Meronem i.v. peut éventuellement faire baisser le taux sérique d'acide valproïque, ce qui peut conduire à des taux sériques sous-thérapeutiques chez certains patients (voir «Interactions»). Excipients revêtant un intérêt particulier Meronem i.v. contient du sodium. Meronem i.v. 500 mg: ce médicament contient 45.1 mg de sodium par flacon de 500 mg, ce qui équivaut à 2.25% de l'apport alimentaire quotidien maximal recommandé par l'OMS de 2 g de sodium par adulte. Meronem i.v. 1 g: ce médicament contient 90.2 mg de sodium par flacon de 1 g, ce qui équivaut à 4.5% de l'apport alimentaire quotidien maximal recommandé par l'OMS de 2 g de sodium par adulte. La dose quotidienne maximale du"
+        }
+      ]
+    },
+    {
+      "id": "S31",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680477950447",
+      "titre": "Information professionnelle suisse Ciproxine orale",
+      "editeur": "Bayer / Swissmedic AIPS via AmiKo",
+      "version_annee": "Août2025 ; autorisation47795, GTIN7680477950447",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:03:26.429812+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Adultes et enfants selon indications précises deFI",
+      "limites": "Prophylaxie méningocoque non retrouvée dansFI ; schéma cantonal à distinguer",
+      "raw_sha256": "5ec02563fd8020816c9576af3984d23ae02ca2d70302d959081a1c6aa5cd02a1",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Indications/Possibilités d’emploi",
+          "actual_passage": "ine 10 g/100 ml solution prête à l'emploi contiennent 500 mg de ciprofloxacine. Indications/Possibilités d’emploi La ciprofloxacine est indiquée dans le traitement des infections suivantes. Il convient de tenir compte des recommandations officielles concernant l'utilisation appropriée des antibiotiques. Avant le début du traitement, il faut tenir compte en particulier des informations disponibles relatives aux résistances, en particulier des recommandations d'utilisation visant à éviter l'augmentation de la résistance aux antibiotiques. Dans le cas des infections non compliquées, Ciproxine ne sera utilisé que lorsque d'autres antibiotiques qui sont habituellement recommandés pour le traitement initial des infections en question sont considérés comme inappropriés ou ont échoué (voir «Mises en garde et précautions» et «E"
+        },
+        {
+          "location_or_search_term": "Enfants et adolescents",
+          "actual_passage": "ièvre si l'on soupçonne que la fièvre est causée par une infection bactérienne. Enfants et adolescents ·Infections bronchopulmonaires provoquées par Pseudomonas aeruginosa chez les patients atteints de mucoviscidose ·Chez les enfants dès 1 an comme médicament de troisième choix dans le traitement des infections urinaires compliquées et en cas de pyélonéphrite provoquée par E. coli. L'indication du traitement ne sera posée qu'en accord avec le spécialiste, soit un pédiatre infectiologue ou un infectiologue. Chez les enfants et les adolescents, la ciprofloxacine peut également être utilisée en cas d'infections graves si ce traitement est jugé nécessaire. Le traitement ne doit être initié que par un médecin expérimenté dans le traitement de la mucoviscidose et/ou d'infections graves chez les enfants et les adolescents (cf"
+        },
+        {
+          "location_or_search_term": "tizanidine",
+          "actual_passage": "rubrique «Mises en garde et précautions». L'association de ciprofloxacine et de tizanidine est contre-indiquée car la ciprofloxacine peut augmenter le taux sérique de tizanidine à tel point que des effets indésirables cliniquement pertinents de la tizanidine (hypotension, somnolence, obnubilation, nausées, vomissements, troubles de la fonction hépatique, myosis, dépression respiratoire, coma, agitation) peuvent survenir. L'association de ciprofloxacine et d'agomélatine est contre-indiquée, étant donné que la ciprofloxacine augmente fortement le taux sérique d'agomélatine et que ceci pourrait entraîner des effets indésirables cliniquement pertinents (voir chapitre «Interactions»). Mises en garde et précautions L'utilisation de la ciprofloxacine doit être évitée chez les patients chez lesquels des effets indésirables gra"
+        },
+        {
+          "location_or_search_term": "graves potentiellement irréversibles",
+          "actual_passage": "luoroquinolones, y compris Ciproxine, peuvent provoquer des effets indésirables graves potentiellement irréversibles touchant différents systèmes d'organes, qui sont susceptibles de se manifester simultanément chez le même patient. Ces effets indésirables comprennent tendinites et ruptures tendineuses, arthralgies et effets sur le système nerveux central et périphérique. Ces effets indésirables peuvent survenir quelques heures, voire quelques semaines après la prise de Ciproxine et peuvent affecter des patients de toute classe d'âge, de même que des patients sans facteurs de risque préexistants. Dès l'apparition des premiers signes ou symptômes d'un effet indésirable grave, la prise de Ciproxine doit être arrêtée immédiatement. Il convient d'éviter l'utilisation de Ciproxine chez les patients ayant déjà eu des effets i"
+        }
+      ]
+    },
+    {
+      "id": "S32",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680342790123",
+      "titre": "Information professionnelle suisse Rimactan",
+      "editeur": "Sandoz / Swissmedic AIPS via AmiKo",
+      "version_annee": "Version actuellement servie15.10.2026 ; autorisation34279, GTIN7680342790123",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:03:26.772319+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Contacts méningococciques, adulte et enfant",
+      "limites": "PPE ; pas traitement méningococcie manifeste ; interactions à vérifier",
+      "raw_sha256": "29fe4b9fe2b0edbffa7752064e57f458f193fe94c46e724fe1e965df5fc858b9",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Prévention de la méningite à méningocoques",
+          "actual_passage": "pre. Brucellose: En association à une tétracycline, par exemple la doxycycline. Prévention de la méningite à méningocoques: Utilisation prophylactique chez les personnes qui ont été en contact étroit (par exemple au domicile, dans les crèches, les écoles, les logements collectifs) avec un patient atteint de méningite méningococcique. La réduction/éradication des germes (Neisseria meningitidis) du nasopharynx permet de diminuer le risque d'infection qui est très élevé chez les personnes en contact avec des malades. Etant donné la possibilité de développement rapide d'une résistance des germes, les éventuels premiers signes d'une infection manifeste feront l'objet d'une attention particulière. Rimactan ne doit pas être utilisé pour traiter une méningite méningococcique manifeste (voir «Mises en garde et précautions»). Po"
+        },
+        {
+          "location_or_search_term": "Adultes et adolescents de plus de 12 ans",
+          "actual_passage": "es. Durée du traitement: 6 semaines. Prévention de la méningite à méningocoques Adultes et adolescents de plus de 12 ans avec un poids supérieur à 60 kg: 600 mg 2 fois par jour, à 12 heures d'intervalle pendant 2 jours. Enfants en bas âge dès 1 mois, enfants jusqu'à 12 ans et adolescents de plus de 12 ans, mais avec un poids inférieur à 60 kg: 10 mg/kg PC: deux fois par jour à intervalles de 12 h pendant 2 jours sans dépassement de la dose adulte. Nourrissons de moins d'un mois: 5 mg/kg, 2 fois par jour, à 12 heures d'intervalle respectivement pendant 2 jours. Après un contact avec une personne infectée, le traitement prophylactique doit être commencé aussi rapidement que possible. Instructions posologiques particulières Insuffisance rénale: Un ajustement posologique n'est généralement pas nécessaire, du moment que la "
+        },
+        {
+          "location_or_search_term": "Rimactan ne doit pas être utilisé",
+          "actual_passage": "s signes d'une infection manifeste feront l'objet d'une attention particulière. Rimactan ne doit pas être utilisé pour traiter une méningite méningococcique manifeste (voir «Mises en garde et précautions»). Posologie/Mode d’emploi Pour garantir une résorption optimale, prendre Rimactan de préférence à jeun, au moins ½ heure avant un repas. Infections mycobactériennes Tuberculose Adultes et adolescents plus de 12 ans: 10 (8−12) mg/kg par jour en une seule dose, dose journalière maximale de 600 mg, ou 10 (8−12) mg/kg trois fois par semaine, dose journalière maximale de 600 mg. Enfants et nourrissons: 15 (10−20) mg/kg par jour, dose journalière maximale de 600 mg. Le traitement des enfants âgés de 0 à 3 mois requiert un ajustement individuel de la dose. Dose journalière maximale autorisée: 600 mg. Rimactan doit toujours ê"
+        }
+      ]
+    },
+    {
+      "id": "S33",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680470630353",
+      "titre": "Information professionnelle suisse Rifater",
+      "editeur": "Sanofi-Aventis Suisse / Swissmedic AIPS via AmiKo",
+      "version_annee": "Version actuellement servie15.10.2026 ; autorisation47063, GTIN7680470630353",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:03:26.729788+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Combinaison fixe tuberculose ; CNS hors doses standards décrites",
+      "limites": "FI consultée pour restrictions et sécurité, pas validation dose fixe méningée",
+      "raw_sha256": "875be6891cc53dd38f9e61310d19a3fc29418bef7da43c005dd21677422f8677",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Seuls les dosages standards",
+          "actual_passage": "e traitement initial intensif de 2 mois sont les suivantes: Posologies usuelles Seuls les dosages standards pour les cas non compliqués seront indiqués ci-dessous; en présence de facteurs de complication (entre autres participation du système nerveux central, tuberculose disséminée, traitement répété, insuffisance hépatique et/ou rénale), il faut toujours tenir compte des informations les plus circonstanciées des dernières directives. Rifampicine: 8–12 mg/kg jusqu'à un maximum de 600 mg. Isoniazide: 4–10 mg/kg jusqu'à un maximum de 300 mg*. Pyrazinamide: 15–30 mg/kg jusqu'à un maximum de 2 g. * À l'exception des individus métabolisant rapidement, qui peuvent recevoir jusqu'à 400 mg. Aucune de ces trois substances ne devrait être utilisée seule dans le traitement de la tuberculose pulmonaire. Les patients doivent recevo"
+        },
+        {
+          "location_or_search_term": "Chacun des trois principes actifs",
+          "actual_passage": " d'insuffisance rénale chronique (voir « Effets indésirables »). Hépatotoxicité Chacun des trois principes actifs de Rifater peut provoquer une dysfonction, une inflammation ou des lésions hépatiques graves, dans des cas isolés avec issue fatale. En cas de prise concomitante des trois principes actifs (avec Rifater) ces événements peuvent apparaître plus fréquemment. Les patients ne doivent recevoir du Rifater qu'en cas de stricte nécessité, de manière extrêmement prudente et sous contrôle médical strict. Chez ces patients, il convient de contrôler avec soin la fonction hépatique et de mesurer les taux de l'alanine aminotransférase (ALAT ou SGPT) et de l'aspartate aminotransférase (ASAT ou SGOT) avant le début du traitement, puis toutes les 2 à 4 semaines. Si des signes de lésion hépatocellulaire apparaissent, la prise"
+        },
+        {
+          "location_or_search_term": "système cytochrome",
+          "actual_passage": "lle issue fatale. Interactions La rifampicine est un inducteur très puissant du système cytochrome P450 et peut élever le métabolisme de médicaments administrés simultanément, ce qui peut entraîner des concentrations plasmatiques sous-thérapeutiques, altérer l'efficacité et la sécurité de certains médicaments administrés en co-médication et/ou entraîner des effets indésirables. Les médicaments éliminés par cette voie métabolique ne peuvent être administrés avec Rifater que si leur concentration plasmatique ou leurs réactions cliniques/effets indésirables peuvent être contrôlés et la posologie adaptée en conséquence (voir «Interactions»). Les médicaments dont l'association avec la rifampicine est contre-indiquée ou dont l'utilisation n'est pas recommandée ou l'est seulement avec précaution sont énumérés dans les rubriqu"
+        }
+      ]
+    },
+    {
+      "id": "S34",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680331530013",
+      "titre": "Information professionnelle suisse Myambutol",
+      "editeur": "Labatec / Swissmedic AIPS via AmiKo",
+      "version_annee": "Août2024 ; autorisation33153, GTIN7680331530013",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:03:27.381383+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Éthambutol ; prudence pédiatrie et rein",
+      "limites": "FI consultée pour sécurité visuelle/rénale ; doses individuelles spécialisées",
+      "raw_sha256": "bd51c966d58ee38efcbe90c5b61d0e9544be8a6766a52a2f3d7f152a65e2670f",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Le médicament est contre-indiqué",
+          "actual_passage": "voir «Mises en garde et précautions, altération de la vue»). Contre-indications Le médicament est contre-indiqué en cas de lésion du nerf optique et de maladies de l'œil préexistantes, ainsi qu'en cas d'allergie connue au principe actif ou à un des autres composants. Mises en garde et précautions Parce que Myambutol peut provoquer des effets indésirables au niveau de l'œil, des contrôles oculaires doivent être régulièrement effectués. Myambutol peut provoquer une diminution de l'acuité visuelle qui peut se manifester sous forme de névrite oculaire rétrobulbaire. Cet effet peut dépendre de la dose et de la durée du traitement. Il est généralement réversible si le traitement est immédiatement interrompu dès l'apparition du trouble. Toutefois, des cas de cécité irréversible ont été rapportés. Un examen approfondi doit inc"
+        },
+        {
+          "location_or_search_term": "contrôles oculaires",
+          "actual_passage": "ce que Myambutol peut provoquer des effets indésirables au niveau de l'œil, des contrôles oculaires doivent être régulièrement effectués. Myambutol peut provoquer une diminution de l'acuité visuelle qui peut se manifester sous forme de névrite oculaire rétrobulbaire. Cet effet peut dépendre de la dose et de la durée du traitement. Il est généralement réversible si le traitement est immédiatement interrompu dès l'apparition du trouble. Toutefois, des cas de cécité irréversible ont été rapportés. Un examen approfondi doit inclure une ophtalmoscopie, une périmétrie et un examen de la perception des couleurs, car l'effet de l'éthambutol est souvent détecté en premier lieu par un déficit des couleurs de l'axe rouge-vert. Chez les patients ayant une maladie oculaire sous-jacente comme par ex. une cataracte, des récidives d'i"
+        },
+        {
+          "location_or_search_term": "acuité visuelle",
+          "actual_passage": "vent être régulièrement effectués. Myambutol peut provoquer une diminution de l'acuité visuelle qui peut se manifester sous forme de névrite oculaire rétrobulbaire. Cet effet peut dépendre de la dose et de la durée du traitement. Il est généralement réversible si le traitement est immédiatement interrompu dès l'apparition du trouble. Toutefois, des cas de cécité irréversible ont été rapportés. Un examen approfondi doit inclure une ophtalmoscopie, une périmétrie et un examen de la perception des couleurs, car l'effet de l'éthambutol est souvent détecté en premier lieu par un déficit des couleurs de l'axe rouge-vert. Chez les patients ayant une maladie oculaire sous-jacente comme par ex. une cataracte, des récidives d'infection oculaire, une inflammation du nerf optique et une rétinopathie diabétique, la cause des change"
+        },
+        {
+          "location_or_search_term": "névrite optique rétrobulbaire",
+          "actual_passage": "lures ou de faiblesse dans les mains et les pieds). Affections oculaires Rares: névrite optique rétrobulbaire dose-dépendante (vue floue, douleurs oculaires, cécité au rouge-vert, perte visuelle), perte du champ visuel, scotome, anomalie oculaire congénitale, cécité. Affections gastro-intestinales Occasionnels: douleurs abdominales, inappétence, nausées et vomissements. Affections hépatobiliaires Occasionnels: augmentation de l'aspartate aminotransférase et de l'alaline aminotransférase, hépatotoxicité y compris d'évolution fatale dans de très rares cas. Affections de la peau et du tissu sous-cutané Occasionnel: prurit. Très rares: Syndrome de Stevens-Johnson, nécrolyse épidermique toxique. Fréquence inconnue: Syndrome d'hypersensibilité médicamenteuse avec éosinophilie et symptômes systémiques (DRESS) (voir rubrique «"
+        }
+      ]
+    },
+    {
+      "id": "S35",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680603250014",
+      "titre": "Information professionnelle suisse Aciclovir Labatec injectable",
+      "editeur": "Labatec / Swissmedic AIPS via AmiKo",
+      "version_annee": "Version actuellement servie15.10.2026 ; GTIN7680603250014",
+      "date_consultation": "15.10.2026",
+      "consulted_at": "2026-10-15T20:04:54.303283+00:00",
+      "section_page": "Passages ciblés ci-dessous ; titre ou terme exact localisant le passage",
+      "population": "Encéphalite herpétique adulte et plus12ans ; enfants distincts",
+      "limites": "DuréeFI ne remplace pas décision infectiologique ; adaptation rénale",
+      "raw_sha256": "9c897426d1723c7ed377d0939dddaf064eb857254493c541289c0fffec0868d0",
+      "passages_actually_read": [
+        {
+          "location_or_search_term": "Perfuser la dose nécessaire",
+          "actual_passage": " le CMV (par exemple le ganciclovir). Posologie/Mode d’emploi Posologie usuelle Perfuser la dose nécessaire par voie intraveineuse, lentement, en l'espace d'une heure. Le traitement dure habituellement 5 jours, mais sa durée dépend essentiellement de l'état du patient et du résultat du traitement. Le traitement de l'encéphalite herpétique chez les patients de 3 mois et plus dure habituellement 10 jours et le traitement des infections à Herpes simplex chez le nouveau-né dure habituellement 14 à 21 jours (voir ci-après). Adultes et enfants de plus de 12 ans Herpes simplex 5 mg/kg toutes les 8 heures. Zona 5 mg/kg toutes les 8 heures. Zona chez les patients immunodéprimés à fonction rénale normale 10 mg/kg toutes les 8 heures pendant 5 jours et plus. Encéphalite herpétique 10 mg/kg toutes les 8 heures pendant 10 jours. Pr"
+        },
+        {
+          "location_or_search_term": "Adultes et enfants de plus de 12 ans",
+          "actual_passage": "s simplex chez le nouveau-né dure habituellement 14 à 21 jours (voir ci-après). Adultes et enfants de plus de 12 ans Herpes simplex 5 mg/kg toutes les 8 heures. Zona 5 mg/kg toutes les 8 heures. Zona chez les patients immunodéprimés à fonction rénale normale 10 mg/kg toutes les 8 heures pendant 5 jours et plus. Encéphalite herpétique 10 mg/kg toutes les 8 heures pendant 10 jours. Prévention d'une infection à CMV en cas de transplantation de moelle allogénique 500 mg/m² toutes les 8 heures. Durée: commencer le traitement 5 jours avant la transplantation et le poursuivre pendant 30 jours après. Nourrissons, enfants en bas âge et enfants âgés de 3 mois à 12 ans Herpes simplex 250 mg/m² toutes les 8 heures. Infection à virus varicelle-zona 250 mg/m² toutes les 8 heures. Varicelle chez les patients immunodéprimés à fonction"
+        },
+        {
+          "location_or_search_term": "10 mg/kg toutes les 8 heures pendant 10 jours",
+          "actual_passage": "le 10 mg/kg toutes les 8 heures pendant 5 jours et plus. Encéphalite herpétique 10 mg/kg toutes les 8 heures pendant 10 jours. Prévention d'une infection à CMV en cas de transplantation de moelle allogénique 500 mg/m² toutes les 8 heures. Durée: commencer le traitement 5 jours avant la transplantation et le poursuivre pendant 30 jours après. Nourrissons, enfants en bas âge et enfants âgés de 3 mois à 12 ans Herpes simplex 250 mg/m² toutes les 8 heures. Infection à virus varicelle-zona 250 mg/m² toutes les 8 heures. Varicelle chez les patients immunodéprimés à fonction rénale normale 500 mg/m² toutes les 8 heures. Encéphalite herpétique 500 mg/m² toutes les 8 heures pendant 10 jours. Transplantation de moelle allogénique (enfants >2 ans) 500 mg/m² toutes les 8 heures, en commençant 5 jours avant la transplantation et en"
+        },
+        {
+          "location_or_search_term": "il faut surveiller la fonction rénale",
+          "actual_passage": "fortes d'Aciclovir Labatec, par exemple en raison d'une encéphalite herpétique, il faut surveiller la fonction rénale, surtout chez les patients déshydratés. Le pH de la solution d'Aciclovir Labatec pour perfusion est d'environ 11; il ne faut donc pas l'ingérer. Etant donné que l'herpès génital est une maladie sexuellement transmissible, il faut dire aux patientes et patients d'éviter tout contact sexuel tant que des lésions visibles persistent. En raison du risque potentiel de neutropénie, on envisagera des contrôles de l'hémogramme deux fois par semaine chez les nouveau-nés traités par Aciclovir Labatec. Ce médicament contient 25,8 mg de sodium par flacon, ce qui équivaut à 1,3% de l'apport alimentaire quotidien maximal recommandé par l'OMS de 2 g de sodium par adulte. Interactions L'aciclovir est essentiellement éli"
+        }
+      ]
+    }
+  ],
+  "newly_consulted_source_ids": [
+    "S3",
+    "S7",
+    "S9",
+    "S18",
+    "S15",
+    "S27",
+    "S28",
+    "S29",
+    "S30",
+    "S31",
+    "S32",
+    "S33",
+    "S34",
+    "S35",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S25"
+  ],
+  "historical_only_ids": [
+    "S1",
+    "S2",
+    "S5",
+    "S6",
+    "S8",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S16",
+    "S17",
+    "S19",
+    "S20",
+    "S26"
+  ]
+}
