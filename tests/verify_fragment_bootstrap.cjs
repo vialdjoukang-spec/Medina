@@ -9,6 +9,16 @@ const root = path.resolve(__dirname, '..');
 const directory = path.resolve(process.env.MEDINA_OUT || path.join(root, 'dist'));
 const out = path.resolve(process.env.MEDINA_QA_OUT || path.join(root, 'work/frontend-bootstrap-audit'));
 const registry = JSON.parse(fs.readFileSync(path.join(root, 'fragments.json'))).filter(fragment => !process.env.MEDINA_QA_FRAGMENTS || process.env.MEDINA_QA_FRAGMENTS.split(',').includes(fragment.id));
+const fragmentDocuments = new Set(registry.map(fragment => path.join(directory, 'fragments', 'MEDINA_' + fragment.id + '_' + fragment.slug + '.html')));
+const mediaTypes = {
+ '.html':'text/html;charset=utf-8', '.htm':'text/html;charset=utf-8',
+ '.svg':'image/svg+xml', '.png':'image/png', '.jpg':'image/jpeg', '.jpeg':'image/jpeg',
+ '.gif':'image/gif', '.webp':'image/webp', '.avif':'image/avif', '.ico':'image/x-icon',
+ '.css':'text/css;charset=utf-8', '.js':'text/javascript;charset=utf-8', '.mjs':'text/javascript;charset=utf-8',
+ '.json':'application/json', '.map':'application/json', '.txt':'text/plain;charset=utf-8',
+ '.woff':'font/woff', '.woff2':'font/woff2', '.ttf':'font/ttf', '.otf':'font/otf',
+ '.wasm':'application/wasm', '.pdf':'application/pdf', '.xml':'application/xml', '.gz':'application/gzip'
+};
 const results = [], cache = new Map();
 fs.mkdirSync(out, {recursive:true});
 function source(file) {
@@ -18,9 +28,13 @@ function source(file) {
 const server = http.createServer((req, res) => {
  const file = path.resolve(directory, '.' + decodeURIComponent(new URL(req.url, 'http://local').pathname));
  if (!file.startsWith(directory + path.sep) || !fs.existsSync(file)) {res.writeHead(404);res.end();return;}
- const bytes = source(file), marker = bytes.indexOf('<script id="medina-fragment-runtime">');
+ const bytes = source(file);
+ res.setHeader('Content-Type', mediaTypes[path.extname(file).toLowerCase()] || 'application/octet-stream');
+ // Only registered fragment documents exercise the deliberately split bootstrap.
+ // Images, fetched templates and other assets retain their complete original bytes.
+ if (!fragmentDocuments.has(file)) {res.end(bytes);return;}
+ const marker = bytes.indexOf('<script id="medina-fragment-runtime">');
  assert.ok(marker >= 0, 'Missing local runtime marker in ' + file);
- res.setHeader('Content-Type', 'text/html;charset=utf-8');
  // Deliberately pause after the historical atlas has executed and before the local
  // fragment overrides arrive. A check that only waits for DOMContentLoaded misses this bug.
  res.write(bytes.subarray(0, marker));
