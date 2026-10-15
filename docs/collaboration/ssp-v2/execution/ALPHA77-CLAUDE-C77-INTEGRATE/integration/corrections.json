@@ -1373,5 +1373,104 @@
  "phase3_controles": {
   "build_medina_audit": "{} (test_v7 --static)",
   "test_v7_static": "OK"
+ },
+ "cinquieme_discipline": {
+  "date": "2026-10-15",
+  "agent": "W",
+  "constat": "AGENTS.md (Sémiologie obligatoire) : la sémiologie doit être le sixième sous-onglet de Sciences, après cinq disciplines réelles ; C77 n’en comptait que quatre (anatomie, histologie, physiologie, biochimie). MAJEUR bloquant de clôture.",
+  "choix": "Immunologie",
+  "justification": "« Génétique et biologie moléculaire » aurait doublonné deux sous-onglets existants : « Biochimie et biologie moléculaire » traite déjà l’immunohistochimie, le NGS, MSI/dMMR et les profils d’expression ; « Physiologie » traite déjà VEGF-C/VEGFR-3, CCL21/CCR7 et la transition vers le ganglion sentinelle. L’immunologie apporte une matière propre et utile : le ganglion comme organe lymphoïde secondaire (compartiments B/T, veinules à endothélium haut, cellules réticulaires), le mécanisme de l’adénopathie réactionnelle qui fonde la sémiologie différentielle, la niche prémétastatique et l’échappement (CMH I, PD-L1, lymphocytes T régulateurs), le rôle des ganglions non envahis dans la réponse aux inhibiteurs de points de contrôle et les marqueurs d’immunosensibilité du CUP.",
+  "sources_lues": [
+   {
+    "id": "S5",
+    "titre": "Ji H et coll. Lymph node metastasis in cancer progression: molecular mechanisms, clinical significance and therapeutic interventions. Signal Transduct Target Ther 2023;8:367",
+    "acces": "PubMed Central PMC10522642, doi:10.1038/s41392-023-01576-4",
+    "date_consultation": "2026-10-15",
+    "sections": [
+     "Anatomy and physiology of lymph nodes",
+     "Formation of premetastatic niche in lymph nodes",
+     "Immune evasion in metastatic lymph nodes",
+     "Antitumor immunity and LND"
+    ]
+   },
+   {
+    "id": "S6",
+    "titre": "Richner S, Laifer G. Peripheral lymphadenopathy in immunocompetent adults. Swiss Med Wkly 2010;140:98-104",
+    "acces": "https://smw.ch/index.php/smw/article/download/1079/1076",
+    "date_consultation": "2026-10-15",
+    "sections": [
+     "Summary",
+     "Introduction",
+     "Clinical algorithm"
+    ]
+   },
+   {
+    "id": "S7",
+    "titre": "Arasa J, Collado-Diaz V, Halin C (ETH Zurich). Structure and immune function of afferent lymphatics. Cells 2021;10:1269",
+    "acces": "PMID 34065513, doi:10.3390/cells10051269 — résumé seul",
+    "date_consultation": "2026-10-15",
+    "sections": [
+     "Abstract"
+    ]
+   },
+   {
+    "id": "S4",
+    "titre": "Onkopedia CUP-Syndrom, Stand September 2025 (relu)",
+    "acces": "https://www.onkopedia.com/de/onkopedia/guidelines/cup-syndrom-krebserkrankungen-mit-unbekanntem-primaertumor/@@guideline/html/index.html",
+    "date_consultation": "2026-10-15",
+    "sections": [
+     "2.5 (marqueurs d’immunosensibilité)",
+     "5.3.1.1 Immunogene Tumorbiologie",
+     "CUPISCO"
+    ]
+   }
+  ],
+  "entrees": [
+   {
+    "constat": "Quatre disciplines seulement",
+    "action": "bouton « Immunologie » ajouté en sixième position de .sci-bar (aria-selected=\"false\") ; sémiologie reste premier bouton, sélectionné par défaut",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": ".sci-bar, data-s=\"c77-s-immuno\"",
+    "source": "AGENTS.md ; SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml"
+   },
+   {
+    "constat": "Discipline à créer",
+    "action": "panneau c77-s-immuno / îlot c77-s-immuno-cours (≈1100 mots) : compartiments normaux, adénopathie réactionnelle, niche prémétastatique, échappement, ganglion et immunothérapie, marqueurs MSI/dMMR/TMB ; encadrés Science → clinique/examen/traitement et À retenir ; bloc de sources",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "#c77-s-immuno-cours",
+    "source": "S4, S5, S6, S7"
+   },
+   {
+    "constat": "Figure exigée",
+    "action": "Figure 6, schéma causal non anatomique en SVG role=img + aria-label + figcaption (deux chaînes de boîtes, aucune structure anatomique dessinée)",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "#c77-s-immuno-cours figure",
+    "source": "S5, S6"
+   },
+   {
+    "constat": "Fenêtre et Pareto",
+    "action": "templates c77-imm-msi (MSI/dMMR, TMB ≥ 10 mut/Mb, CUPISCO 16 mut/Mb, phase II anti-PD-1) et pareto-c77-immuno (data-cover sur c77-s-immuno-cours, section non sémiologique)",
+    "fichier": "chapters/C77/C77_pop2.html",
+    "ancre": "fin de fichier",
+    "source": "S4"
+   },
+   {
+    "constat": "Abréviation non couverte",
+    "action": "clé CUPISCO ajoutée (add_if_absent)",
+    "fichier": "glossary/c77.py",
+    "ancre": "CUPISCO",
+    "source": "S4"
+   }
+  ],
+  "controles": {
+   "test_v7_static": "OK (C77 mots 24012, fenêtres 67, quiz 9, pareto 21 ; audit d’abréviations vide)",
+   "audit_sciences": "Le script complet s’interrompt pour C77 (chapitre absent de sa base c50a28a2 et non listé dans ses exemptions ; fichier partagé non modifiable dans cette mission). Ses contrôles par discipline, rejoués localement via ses propres fonctions : navigation complète (6 disciplines) ; c77-s-immuno 1111 mots, 1 figure conforme, 4 encadrés ; seule erreur restante : faux positif connu de c77-s-anat (image réelle SEER en img alt), consigné dans controles.json.",
+   "session_guard": "voir commit"
+  },
+  "reserves": [
+   "Les données d’échappement et de niche prémétastatique proviennent de tumeurs primitives connues (surtout sein) et de modèles animaux, signalé dans le texte.",
+   "S7 lu en résumé seulement.",
+   "Revue IA, distincte d’une validation médicale humaine."
+  ]
  }
 }
