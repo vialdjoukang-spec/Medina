@@ -1,0 +1,60 @@
+{
+ "actor": "Claude",
+ "code": "E11",
+ "mission": "ALPHA77-CLAUDE-E11-INTEGRATE",
+ "generation": 2,
+ "reviewer_role": "Claude, agent intégrateur de la génération 2 : relecture séparée, après intégration, des passages modifiés, confrontée aux textes sources téléchargés (aucun sous-agent distinct disponible dans cette session ; revue IA, non indépendante au sens humain)",
+ "status": "closed",
+ "medical_human_validation": false,
+ "base_commit": "131536dcea744fd0571cf6ef787c3d5f63fd9871",
+ "source_files_sha256": {
+  "chapters/E11/E11_a.html": "a5a271938495d18bac91930e30d40b9f95303bd8260a8b131797e31ab42dcacb",
+  "chapters/E11/E11_b.html": "204e5844d40aaafe7ff08c6329fc3da7ffde0fa76bb41fee9ff33879ecc9fc80",
+  "chapters/E11/E11_c.html": "c111268e0485530d29041199f7f69b50f366ce426f74db0ab315f7d9c4c5fd60",
+  "chapters/E11/E11_d.html": "616eb9a737b586749f345bcf70e3a77eb7661ade7d218fac8698b4f365a46854",
+  "chapters/E11/E11_pop1.html": "f2f97a4e0a8c3b33aac719bc91fb9519982b2e240ccd1497334b730a6f4f8bbf",
+  "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
+  "glossary/e11.py": "5e8c36fd6a77b9234d6a7bf9d7862f8a1447c99432ff10cb799efed8280d4e3c"
+ },
+ "reviewed_files_sha256": {
+  "chapters/E11/E11_a.html": "a5a271938495d18bac91930e30d40b9f95303bd8260a8b131797e31ab42dcacb",
+  "chapters/E11/E11_b.html": "1d243dc4af4408b9d9da80d20927d45a4f774145a7b008e3bc47249e83cb33ac",
+  "chapters/E11/E11_c.html": "38eed4f4f7d0a64427ca6d82de54f8c5256bc0945b089d0025dc8f0e6f6c01d7",
+  "chapters/E11/E11_d.html": "c90bd4731f250c6dec4db0e13a2d98438130de7022924785e06fdedd5c7be299",
+  "chapters/E11/E11_pop1.html": "832627d982919e5bcb97df0ef04dd4295ee262fa003aaef521d9312be5c556ab",
+  "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
+  "glossary/e11.py": "d58eff5669b4974d3adbd43adb7211c1298aecee917411f776310c2438cbe0cc"
+ },
+ "date": "2026-10-15",
+ "scope": "Passages modifiés en génération 2 : sixième sous-onglet Sciences « Génétique et épigénétique » (#e11-s-gen, E11_c), figure 11 et renumérotation des figures 12–13 (E11_pop1), pager du mode Livre (E11_b pA, E11_c pE, E11_d pP), cinq clés de glossaire (GCK, HNF1A, HNF4A, HNF1B, TCF7L2). Le reste du cours est couvert par les revues de la génération 1 (revue/*.json, source 3e6e9ca6), non refaites.",
+ "sources": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/sources_g2.json",
+ "unresolved_blockers": [],
+ "kind": "LANG",
+ "findings": [
+  {
+   "id": "G2-LANG-01",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "evidence": "« Les scores polygéniques propres à chaque groupe » → « Les scores polygéniques partitionnés par groupe » (terme de la source, « cluster-specific partitioned polygenic scores »)."
+  },
+  {
+   "id": "G2-LANG-02",
+   "severity": "INFORMATION",
+   "status": "non_blocking",
+   "evidence": "Discipline relue intégralement : phrases complètes, annonce par une question, tableau introduit puis commenté, quatre encadrés key, aucune métaphore ni plaisanterie ; abréviations toutes couvertes (audit {}). Longueur 1 961 mots, supérieure aux disciplines voisines (440–804) : justifiée par trois sujets distincts, sans répétition relevée."
+  },
+  {
+   "id": "G2-LANG-03",
+   "severity": "INFORMATION",
+   "status": "non_blocking",
+   "evidence": "Figure 11 : plus petit texte rendu 17 px à 390 px (viewBox 360, police 20–21) ; légende complète et attribuée ; renumérotation 12→13 puis 11→12 vérifiée (Figures 1 à 13 uniques et ordonnées)."
+  }
+ ],
+ "evidence": [
+  "python3 test_v7.py --static E11 → OK (46 772 mots, 141 fenêtres, 8 quiz, 7 Pareto)",
+  "build_medina.audit() sur les six fichiers HTML E11 transformés → {}",
+  "tests/audit_sciences.py --base 131536dcea744fd0571cf6ef787c3d5f63fd9871 --codes E11 → passed, 6 disciplines (e11-s-gen : 1 961 mots, 1 figure)",
+  "python3 test_v7.py --url <S05 construit hors dépôt> E11 → OK (Chromium réel)",
+  "Rendu Chromium 390 et 1280 px, mode Livre et police 24 px : integration/controles.json → generation_2, captures integration/captures/e11_g2_*.png"
+ ]
+}
