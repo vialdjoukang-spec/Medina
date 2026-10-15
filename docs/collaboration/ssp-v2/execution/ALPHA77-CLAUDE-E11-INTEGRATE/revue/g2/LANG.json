@@ -19,11 +19,11 @@
  "reviewed_files_sha256": {
   "chapters/E11/E11_a.html": "a5a271938495d18bac91930e30d40b9f95303bd8260a8b131797e31ab42dcacb",
   "chapters/E11/E11_b.html": "1d243dc4af4408b9d9da80d20927d45a4f774145a7b008e3bc47249e83cb33ac",
-  "chapters/E11/E11_c.html": "38eed4f4f7d0a64427ca6d82de54f8c5256bc0945b089d0025dc8f0e6f6c01d7",
+  "chapters/E11/E11_c.html": "2a39796ea17236b837f96c804a1db14fa6cf7ebfa030e1fe5dc21b48adc48fe6",
   "chapters/E11/E11_d.html": "c90bd4731f250c6dec4db0e13a2d98438130de7022924785e06fdedd5c7be299",
   "chapters/E11/E11_pop1.html": "832627d982919e5bcb97df0ef04dd4295ee262fa003aaef521d9312be5c556ab",
   "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
-  "glossary/e11.py": "d58eff5669b4974d3adbd43adb7211c1298aecee917411f776310c2438cbe0cc"
+  "glossary/e11.py": "a2eb6f8a9e2d68ac497809e9fd930796c16e24b53a50197bcab7d13ab43becd6"
  },
  "date": "2026-10-15",
  "scope": "Passages modifiés en génération 2 : sixième sous-onglet Sciences « Génétique et épigénétique » (#e11-s-gen, E11_c), figure 11 et renumérotation des figures 12–13 (E11_pop1), pager du mode Livre (E11_b pA, E11_c pE, E11_d pP), cinq clés de glossaire (GCK, HNF1A, HNF4A, HNF1B, TCF7L2). Le reste du cours est couvert par les revues de la génération 1 (revue/*.json, source 3e6e9ca6), non refaites.",
@@ -38,10 +38,16 @@
    "evidence": "« Les scores polygéniques propres à chaque groupe » → « Les scores polygéniques partitionnés par groupe » (terme de la source, « cluster-specific partitioned polygenic scores »)."
   },
   {
+   "id": "G2-LANG-04",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "evidence": "Constat Codex P2 (PR #175) : HNF = Hepatocyte Nuclear Factor. Clés HNF1A, HNF4A et HNF1B du glossaire : décomposition lettre à lettre corrigée (H = Hepatocyte (hépatocyte)) et intitulés « facteur nucléaire des hépatocytes »."
+  },
+  {
    "id": "G2-LANG-02",
    "severity": "INFORMATION",
    "status": "non_blocking",
-   "evidence": "Discipline relue intégralement : phrases complètes, annonce par une question, tableau introduit puis commenté, quatre encadrés key, aucune métaphore ni plaisanterie ; abréviations toutes couvertes (audit {}). Longueur 1 961 mots, supérieure aux disciplines voisines (440–804) : justifiée par trois sujets distincts, sans répétition relevée."
+   "evidence": "Discipline relue intégralement : phrases complètes, annonce par une question, tableau introduit puis commenté, quatre encadrés key, aucune métaphore ni plaisanterie ; abréviations toutes couvertes (audit {}). Longueur 2 039 mots, supérieure aux disciplines voisines (440–804) : justifiée par trois sujets distincts, sans répétition relevée."
   },
   {
    "id": "G2-LANG-03",
@@ -51,9 +57,9 @@
   }
  ],
  "evidence": [
-  "python3 test_v7.py --static E11 → OK (46 772 mots, 141 fenêtres, 8 quiz, 7 Pareto)",
+  "python3 test_v7.py --static E11 → OK (46 815 mots, 141 fenêtres, 8 quiz, 7 Pareto)",
   "build_medina.audit() sur les six fichiers HTML E11 transformés → {}",
-  "tests/audit_sciences.py --base 131536dcea744fd0571cf6ef787c3d5f63fd9871 --codes E11 → passed, 6 disciplines (e11-s-gen : 1 961 mots, 1 figure)",
+  "tests/audit_sciences.py --base bddf206bd78ecdbd69140bf773f14656a7205ba2 (origin/main après fusion) --codes E11 → passed, 6 disciplines (e11-s-gen : 2 039 mots, 1 figure)",
   "python3 test_v7.py --url <S05 construit hors dépôt> E11 → OK (Chromium réel)",
   "Rendu Chromium 390 et 1280 px, mode Livre et police 24 px : integration/controles.json → generation_2, captures integration/captures/e11_g2_*.png"
  ]

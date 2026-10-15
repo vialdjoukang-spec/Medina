@@ -305,9 +305,9 @@
   "date": "2026-10-15",
   "base": "131536dcea744fd0571cf6ef787c3d5f63fd9871",
   "branche": "claude/alpha77/e11-integrate-g2",
-  "integration": "Sixième sous-onglet e11-s-gen inséré (point_insertion), figures 12→13 et 11→12 dans E11_pop1, pager du mode Livre corrigé (L1) et ajouté (L2, L3), cinq clés de glossaire ; puis corrections de revue G2-MED-01 à 04 et G2-LANG-01 (integration/corrections_g2.json).",
+  "integration": "Sixième sous-onglet e11-s-gen inséré (point_insertion), figures 12→13 et 11→12 dans E11_pop1, pager du mode Livre corrigé (L1) et ajouté (L2, L3), cinq clés de glossaire ; puis corrections de revue G2-MED-01 à 04, G2-LANG-01 et, après les constats Codex de la PR #175, G2-MED-07 (GCK et grossesse) et G2-LANG-04 (HNF) (integration/corrections_g2.json).",
   "controles": {
-   "test_v7_static": "OK — 46 772 mots, 141 fenêtres, 8 quiz, 7 Pareto",
+   "test_v7_static": "OK — 46 815 mots, 141 fenêtres, 8 quiz, 7 Pareto",
    "build_medina_audit": "{} (six fichiers HTML E11 transformés)",
    "audit_sciences": {
     "resultat": "passed",
@@ -318,7 +318,7 @@
      "disciplines": 5
     },
     "apres": {
-     "words": 8781,
+     "words": 8824,
      "figures": 7,
      "disciplines": 6
     },
@@ -350,12 +350,12 @@
      },
      {
       "id": "e11-s-gen",
-      "words": 1996,
+      "words": 2039,
       "figures": 1
      }
     ]
    },
-   "construction": "MEDINA_OUT=<scratchpad> python3 build_front.py → MEDINA.html (rc 0) ; --fragment S05 → MEDINA_S05_endocrinien-metabolique.html (8 250 816 octets, compressé 4 611 910) ; rien n’est écrit dans le dépôt",
+   "construction": "MEDINA_OUT=<scratchpad> python3 build_front.py → MEDINA.html (rc 0) ; --fragment S05 → MEDINA_S05_endocrinien-metabolique.html (après fusion de origin/main : 8 292 486 octets, compressé 4 626 059) ; rien n’est écrit dans le dépôt",
    "test_v7_navigateur": "OK — python3 test_v7.py --url http://127.0.0.1:28791/MEDINA_S05_endocrinien-metabolique.html E11",
    "chromium": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
    "mode_livre_et_police": {
@@ -1418,11 +1418,11 @@
   "empreintes_sha256": {
    "chapters/E11/E11_a.html": "a5a271938495d18bac91930e30d40b9f95303bd8260a8b131797e31ab42dcacb",
    "chapters/E11/E11_b.html": "1d243dc4af4408b9d9da80d20927d45a4f774145a7b008e3bc47249e83cb33ac",
-   "chapters/E11/E11_c.html": "38eed4f4f7d0a64427ca6d82de54f8c5256bc0945b089d0025dc8f0e6f6c01d7",
+   "chapters/E11/E11_c.html": "2a39796ea17236b837f96c804a1db14fa6cf7ebfa030e1fe5dc21b48adc48fe6",
    "chapters/E11/E11_d.html": "c90bd4731f250c6dec4db0e13a2d98438130de7022924785e06fdedd5c7be299",
    "chapters/E11/E11_pop1.html": "832627d982919e5bcb97df0ef04dd4295ee262fa003aaef521d9312be5c556ab",
    "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
-   "glossary/e11.py": "d58eff5669b4974d3adbd43adb7211c1298aecee917411f776310c2438cbe0cc"
+   "glossary/e11.py": "a2eb6f8a9e2d68ac497809e9fd930796c16e24b53a50197bcab7d13ab43becd6"
   },
   "mention": "Revue IA, distincte d’une validation médicale humaine."
  }
