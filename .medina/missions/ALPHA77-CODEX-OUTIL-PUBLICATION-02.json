@@ -3,20 +3,19 @@
   "id": "ALPHA77-CODEX-OUTIL-PUBLICATION-02",
   "state": "active",
   "actor": "Codex",
-  "conversation": "alpha77-codex-outil-publication-02",
+  "conversation": "alpha77-codex-ci-api-g2",
   "owner": "Codex",
   "assigned_by": "Vial — assainissement et publication Alpha autorisés, 15 octobre 2026",
-  "branch": "codex/alpha77/outil-publication-g2",
+  "branch": "codex/alpha77/ci-api-g2",
   "role": "integrator",
   "codes": [
     "I63"
   ],
-  "base_sha": "4b8a088d8741f287645cf1808ca23144e86837d7",
-  "generation": 1,
+  "base_sha": "8666fcebf035751a947478be520af2c3a123abfb",
+  "generation": 2,
   "paths": [
-    "tools/alpha_publication.py",
-    "tests/test_alpha_publication.py",
+    ".github/workflows/collaboration.yml",
     "docs/collaboration/instructions/PUBLICATION_ALPHA_RUNTIME.md"
   ],
-  "purpose": "Corriger strictement extraction du texte rendu depuis le template de cours direct et les seuls panneaux atteignables par onglets sûrs. Conserver refus des scripts/styles, templates arbitraires, réserves et attributions réellement invisibles. Tests de régression obligatoires ; aucune modification médicale, source cours ou validation humaine inventée."
+  "purpose": "Réduire les appels API du diagnostic répétitif de livraisons : réserver son inventaire réseau à workflow_dispatch explicite, conserver les tests scanner sur push/PR, les artefacts disponibles, toutes gardes/tests/Pages et les sources. Aucune modification des permissions, secrets, proxys, missions Claude ni du contrôleur. Successeur de génération1 libérée, preuves et historique conservés."
 }
