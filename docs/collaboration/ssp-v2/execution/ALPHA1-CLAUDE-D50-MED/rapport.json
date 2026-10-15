@@ -10,7 +10,7 @@
   "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
   "modele_effort": "conforme au manifeste",
   "date_debut": "2026-10-15T18:20:00Z",
-  "date_fin": "2026-10-15T18:45:00Z",
+  "date_fin": "2026-10-15T19:05:00Z",
   "lecture": {
     "fichiers": [
       "chapters/D50/D50_a.html",
@@ -31,7 +31,7 @@
   },
   "synthese": {
     "BLOQUANT": 0,
-    "MAJEUR": 3,
+    "MAJEUR": 4,
     "MINEUR": 5,
     "ENRICHISSEMENT": 5
   },
@@ -109,6 +109,22 @@
       ],
       "proposition": "propositions/D50_pop1_3.html",
       "justification": "Mécanisme : la ferritine, protéine de phase aiguë, s’élève avec l’inflammation et peut masquer des réserves vides. Conséquence : un seuil de 30 µg/L manque des carences absolues chez l’inflammatoire. Décision : sous 45 µg/L chez un patient anémique, surtout inflammatoire, discuter l’exploration digestive."
+    },
+    {
+      "id": "MED-M4",
+      "gravite": "MAJEUR",
+      "fichier": "chapters/D50/D50_c.html",
+      "ancre": "aria-label=\"Frottis schématique normal puis microcytaire et hypochrome\"",
+      "constat": "Figure 3 (Sciences, hématologie cellulaire) : dessin SVG d’hématies normales puis microcytaires et hypochromes, produit pour MEDINA sans source iconographique. Il représente une structure cytologique (frottis sanguin) : figure anatomique générée, non recevable selon la règle de Vial du 15.10.2026.",
+      "preuve": [
+        {
+          "source_id": "REGLE_FIGURES_VIAL",
+          "section": "Classe ANATOMIQUE_IA",
+          "citation_courte": "Les schémas de structures anatomiques dessinés par une IA ... sont non recevables"
+        }
+      ],
+      "proposition": "Supprimer la figure SVG 3 et sa légende. Garder la Micrographie 1 (frottis ferriprive réel, Ed Uthman, CC BY 2.0) comme illustration de la microcytose et de l’hypochromie, et la faire précéder d’une micrographie réelle de frottis normal, sous licence ouverte vérifiée, à choisir par un humain. Reprendre dans le texte, sans dessin, les trois traits décrits par Onkopedia : microcytose, clarté centrale accrue, formes allongées.",
+      "justification": "Mécanisme : un dessin approximatif ne restitue ni les proportions réelles ni la coloration. Conséquence : il peut fausser la reconnaissance au microscope. Décision : n’employer que des micrographies réelles sourcées."
     },
     {
       "id": "MED-m1",
@@ -394,12 +410,95 @@
     "Liste des spécialités (OFSP) : limitations de remboursement du fer intraveineux non consultées.",
     "Référentiel pédiatrique suisse (Pédiatrie Suisse) sur la carence martiale de l’enfant : non recherché.",
     "Non relus dans cette passe : OFSP 2020 (évaluation de technologie), Hoving 2025, Viollier, Hôpital cantonal de Lucerne, consensus de médecine du sport 2015, Karczewski 2024, Simic 2023, Pereira Portela 2024, OMS 2020 ferritine ; leurs chiffres restent ceux des audits antérieurs.",
-    "Performance chiffrée de la pâleur conjonctivale : absente des sources suisses et européennes lues (réserve déjà déclarée le 14.10)."
+    "Performance chiffrée de la pâleur conjonctivale : absente des sources suisses et européennes lues (réserve déjà déclarée le 14.10).",
+    "Recherche de candidats d’images : 3 requêtes directes à l’API Commons (métadonnées des 3 images existantes, puis une recherche) avant la consigne du moteur commun ; la recherche a échoué sur des erreurs 429. L’exécution du moteur commun Image_Clo_finder a été refusée par le contrôle de permissions de la session. Aucun candidat réel vérifié pour un frottis normal ; à rechercher par le moteur commun ou par un humain."
   ],
   "controles": {
     "ancres_uniques": "chaque ancre vérifiée par script : présente exactement une fois dans son fichier",
     "json_valide": true,
     "abreviations_propositions": "ESC, TSAT, BSG, OMS reliés aux clés existantes ; CIM-10-GM et OMS figurent dans le glossaire global ; build_medina.audit() à exécuter à l’intégration"
   },
-  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+  "figures": [
+    {
+      "ancre": "src=\"assets/img/cycle1/d50/koilonychia_iron_deficiency_anemia.jpg\"",
+      "fichier": "chapters/D50/D50_a.html",
+      "classe": "IMAGE_SOURCEE",
+      "description": "Photographie 1 : koilonychie (îlot 6)",
+      "constat_id": null,
+      "verification": "Commons API 15.10.2026 : auteur CHeitz, CC BY 2.0 ; attribution du cours conforme",
+      "candidats": []
+    },
+    {
+      "ancre": "aria-label=\"Démarche de diagnostic et de recherche de la cause\"",
+      "fichier": "chapters/D50/D50_b.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 5 : algorithme diagnostique et étiologique (îlot 7)",
+      "constat_id": null,
+      "verification": "Cinq étapes et quatre flèches confrontées à la BSG 2021 (recommandations 4–16, 17) et à la clarification 2025 : conformes",
+      "candidats": []
+    },
+    {
+      "ancre": "aria-label=\"Circuit normal du fer et frein hépatique séparé\"",
+      "fichier": "chapters/D50/D50_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 1 : circuit fonctionnel du fer en blocs de texte (duodénum, plasma, moelle, macrophages) et frein de l’hepcidine ; aucun organe dessiné",
+      "constat_id": null,
+      "verification": "Sens des flèches et effet de l’hepcidine (ferroportine diminuée, export diminué) conformes à Onkopedia 2025 § 2.3 et à la BSG 2021",
+      "candidats": []
+    },
+    {
+      "ancre": "aria-label=\"Transport, réserve et incorporation du fer\"",
+      "fichier": "chapters/D50/D50_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 2 : quatre blocs biochimiques (transferrine, ferritine, hème, inflammation)",
+      "constat_id": null,
+      "verification": "Contenu conforme à Onkopedia 2025 § 3.5 ; aucune flèche",
+      "candidats": []
+    },
+    {
+      "ancre": "aria-label=\"Frottis schématique normal puis microcytaire et hypochrome\"",
+      "fichier": "chapters/D50/D50_c.html",
+      "classe": "ANATOMIQUE_IA",
+      "description": "Figure 3 : frottis schématique dessiné (hématies normales puis microcytaires, hypochromes, allongées)",
+      "constat_id": "MED-M4",
+      "candidats": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Iron-deficiency_Anemia,_Peripheral_Blood_Smear_(4422704616).jpg",
+          "fichier_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Iron-deficiency_Anemia%2C_Peripheral_Blood_Smear_%284422704616%29.jpg",
+          "auteur": "Ed Uthman from Houston, TX, USA",
+          "licence": "CC BY 2.0",
+          "attribution": "Ed Uthman from Houston, TX, USA, CC BY 2.0, via Wikimedia Commons",
+          "note": "Déjà présente dans le cours (Micrographie 1) ; licence et auteur vérifiés par l’API Commons le 15.10.2026 ; remplace le panneau ferriprive. Aucun candidat réel pour le panneau normal : recherche bloquée (lacune)."
+        }
+      ]
+    },
+    {
+      "ancre": "src=\"assets/img/cycle1/d50/iron_deficiency_anemia_peripheral_blood_smear_4422704616.jpg\"",
+      "fichier": "chapters/D50/D50_c.html",
+      "classe": "IMAGE_SOURCEE",
+      "description": "Micrographie 1 : frottis ferriprive réel, VGM 55 fl",
+      "constat_id": null,
+      "verification": "Commons API 15.10.2026 : Ed Uthman, CC BY 2.0 ; attribution conforme",
+      "candidats": []
+    },
+    {
+      "ancre": "aria-label=\"Régulation génétique du fer\"",
+      "fichier": "chapters/D50/D50_c.html",
+      "classe": "SCHEMA_NON_ANATOMIQUE",
+      "description": "Figure 4 : chaîne TMPRSS6 → hepcidine → ferroportine → TSAT basse",
+      "constat_id": null,
+      "verification": "Enchaînement conforme à la fenêtre d50-irida et au glossaire ; Hoving 2025 non relu dans cette passe (lacune existante)",
+      "candidats": []
+    },
+    {
+      "ancre": "src=\"assets/img/cycle1/d50/angular_cheilitis1.jpg\"",
+      "fichier": "chapters/D50/D50_pop1.html",
+      "classe": "IMAGE_SOURCEE",
+      "description": "Photographie 2 : chéilite angulaire (fenêtre d50-phaneres)",
+      "constat_id": null,
+      "verification": "Commons API 15.10.2026 : Matthew Ferguson 57, CC BY-SA 3.0 ; attribution conforme (le partage à l’identique impose la même licence pour une image modifiée)",
+      "candidats": []
+    }
+  ]
 }

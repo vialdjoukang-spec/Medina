@@ -41,7 +41,7 @@ Les constats portent sur des points de décision incomplets, sur la présentatio
 | Gravité | Nombre |
 |---|---|
 | Bloquant | 0 |
-| Majeur | 3 |
+| Majeur | 4 |
 | Mineur | 5 |
 | Enrichissement | 5 |
 
@@ -58,6 +58,10 @@ La position de mediX, opposée à un dépistage général, n’est pas confront�
 **MED-M3 — Le seuil de ferritine de 45 µg/L de la BSG manque** (fenêtre `d50-ferritine`). Selon la BSG, ce seuil offre le meilleur compromis, avec une spécificité de 0,92. Sous 45 µg/L, l’exploration digestive peut être envisagée, surtout chez un patient anémique atteint d’inflammation chronique.
 
 Sans ce repère, un patient dont la ferritine se situe entre 30 et 45 µg/L, sous inflammation, risque de ne pas être exploré. Le complément figure dans `propositions/D50_pop1_3.html`.
+
+**MED-M4 — Figure 3 : frottis dessiné, non recevable** (`D50_c`, Sciences, hématologie cellulaire). Ce SVG dessine des hématies normales puis ferriprives, sans source iconographique. Selon la règle de Vial du 15 octobre 2026, une figure anatomique ou cytologique générée n’est pas recevable.
+
+La proposition consiste à supprimer ce dessin. La Micrographie 1, frottis ferriprive réel d’Ed Uthman sous licence CC BY 2.0, illustre déjà la microcytose et l’hypochromie. Il faut la faire précéder d’une micrographie réelle de frottis normal, sous licence ouverte vérifiée, à choisir par un humain.
 
 ## Constats mineurs
 
@@ -76,6 +80,23 @@ Sans ce repère, un patient dont la ferritine se situe entre 30 et 45 µg/L, sou
 | MED-E3 | `propositions/D50_pop1_5.html` | 7 : hyperménorrhée chiffrée (règles normales de 50 mL, soit environ 25 mg de fer ; hyperménorrhée au-delà de 80 mL, chez environ 15 % des femmes) |
 | MED-E4 | `propositions/D50_a_2.html` | 6 : un don de 500 mL retire environ 250 mg de fer |
 | MED-E5 | `propositions/D50_b_1.html` | 4 et 15 : épidémiologie européenne, nourrisson de 6 à 24 mois, lait de vache, seuils de l’OMS chez l’enfant |
+
+## Figures
+
+Les sept fichiers contiennent huit figures. Une seule n’est pas recevable.
+
+| Figure | Fichier | Classe | Résultat |
+|---|---|---|---|
+| Photographie 1, koilonychie | `D50_a` | image sourcée | CHeitz, CC BY 2.0 ; licence vérifiée sur Commons, attribution conforme |
+| Figure 5, algorithme | `D50_b` | schéma non anatomique | étapes et flèches conformes à la BSG 2021 et à sa clarification 2025 |
+| Figure 1, circuit du fer | `D50_c` | schéma non anatomique | blocs de texte, sans organe dessiné ; flèches conformes à Onkopedia et à la BSG |
+| Figure 2, marqueurs biochimiques | `D50_c` | schéma non anatomique | conforme à Onkopedia § 3.5 |
+| Figure 3, frottis dessiné | `D50_c` | **figure anatomique générée** | **non recevable : MED-M4** |
+| Micrographie 1, frottis ferriprive | `D50_c` | image sourcée | Ed Uthman, CC BY 2.0 ; licence vérifiée, attribution conforme |
+| Figure 4, régulation par TMPRSS6 | `D50_c` | schéma non anatomique | enchaînement conforme au cours ; Hoving 2025 non relu |
+| Photographie 2, chéilite angulaire | `pop1` | image sourcée | Matthew Ferguson 57, CC BY-SA 3.0 ; licence vérifiée, attribution conforme |
+
+La Micrographie 1 est le seul candidat vérifié pour remplacer la figure 3. La recherche d’un frottis normal n’a pas abouti, car l’API Commons a renvoyé des erreurs 429. L’exécution du moteur commun Image_Clo_finder a ensuite été refusée par le contrôle de permissions de la session. Ce point est déclaré en lacune.
 
 ## Matrice des 20 rubriques
 
@@ -107,6 +128,7 @@ Les localisations précises figurent dans `rapport.json`.
 ## Lacunes
 
 - **Maastricht VI/Florence 2022.** Le texte intégral a été refusé (erreur HTTP 403). La position européenne sur Helicobacter pylori n’a donc pas été lue ni citée.
+- **Candidats d’images.** Aucune micrographie réelle de frottis normal n’a pu être vérifiée : l’API Commons a renvoyé des erreurs 429, puis l’exécution du moteur commun a été refusée.
 - **Donneurs de sang.** Les règles suisses de Transfusion CRS Suisse n’ont pas été trouvées.
 - **Remboursement.** Les limitations de la liste des spécialités pour le fer intraveineux n’ont pas été consultées.
 - **Pédiatrie.** Aucun référentiel pédiatrique suisse n’a été recherché.
@@ -119,9 +141,10 @@ Les localisations précises figurent dans `rapport.json`.
 | Leçon | D50 — Anémie par carence en fer (S06, Hématologie) |
 | Fichiers lus | 7 sur 7, empreintes conformes |
 | Sources consignées | 21, dont 4 lues en texte intégral et 8 informations professionnelles suisses |
-| Constats | 0 bloquant, 3 majeurs, 5 mineurs, 5 enrichissements |
+| Constats | 0 bloquant, 4 majeurs, 5 mineurs, 5 enrichissements |
+| Figures | 8 inventoriées : 3 images sourcées, 4 schémas non anatomiques, 1 figure anatomique générée non recevable |
 | Propositions rédigées | 8 fichiers HTML et 5 remplacements en ligne dans `rapport.json` |
-| Ancres | 13 sur 13 vérifiées par script, chacune unique dans son fichier |
+| Ancres | 14 constats et 8 figures vérifiés par script, chaque ancre unique dans son fichier |
 | Matrice des 20 rubriques | 14 couvertes, 5 partielles, 1 absente |
 | Fichiers canoniques modifiés | aucun |
 
