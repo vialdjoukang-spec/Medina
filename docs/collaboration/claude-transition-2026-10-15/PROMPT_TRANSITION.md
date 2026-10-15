@@ -20,13 +20,13 @@ Mission approuvée dans `main` (`.medina/missions/`), puis `python3 tools/ai_ses
 
 | Leçon | État au moment de la transition | Action restante |
 |---|---|---|
-| **E11** | reçu Alpha `completed` VALIDE (c73f307f) ; **PR #147 ouverte** | vérifier la CI, fusionner, libérer la réservation `ALPHA77-CLAUDE-E11-INTEGRATE` → 1ʳᵉ leçon close |
+| **E11** | reçu valide ; **PR #147** ; `main` fusionné dans la branche (fbed8e6a) pour corriger l'échec de « mission et périmètre » | fusionner dès la CI verte, libérer la réservation |
 | E12 | corrections de309165 ; revue mise à jour 6e287b46 (close) ; droits dans `droits/` | reçu bloqué par le défaut de l'outil (§ 4 bis) ; générateur `integration/generer_recu.py` |
 | D50 | droits conservés (1b236155) ; note `integration/phase3_blocage.json` | reçu bloqué par le défaut de l'outil (§ 4 bis) ; générateur à refaire (l'ancien est dans le scratchpad perdu) |
 | C77 | corrections 64257cb8 ; revue mise à jour 6ef663d6 (close) | régénérer le reçu avec les nouvelles empreintes de revue/ ; reçu bloqué (§ 4 bis) |
-| I61 | revue mise à jour 63beb7ff (close) ; W régénère le reçu (aucune figure nouvelle, non concerné par § 4 bis) | si le reçu est valide → PR, fusion, libération |
-| G45 | revue close 97ba87d2 (sans bloquant) ; W applique 5 mineurs (ticagrélor hors indication FI Brilique, aspirine + dipyridamole sans FI, clopidogrel faible métaboliseur, OAC annexe 1, dates des sources) | ensuite P met à jour revue/, puis reçu (bloqué par § 4 bis : figures attribuées) |
-| **N18** | reçu Alpha `completed` VALIDE (7f848123) ; **PR #148 ouverte** | vérifier la CI, fusionner, libérer `ALPHA77-CLAUDE-N18-INTEGRATE` ; retouche « 5 mg oral » différée |
+| **I61** | reçu valide (00f436e4) ; **PR #150** ; `main` fusionné (380a6e18) | fusionner dès la CI verte, libérer la réservation |
+| G45 | 5 mineurs corrigés (f5736930) ; P met à jour revue/ | puis reçu (bloqué par § 4 bis : figures attribuées) |
+| **N18** | reçu valide ; **PR #148** ; `main` fusionné (e3876858) | fusionner dès la CI verte, libérer la réservation ; « 5 mg oral » différé |
 
 Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche ; ne pas supposer que les agents de l'ancienne session ont fini.
 
@@ -37,6 +37,9 @@ Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche
 - N18 : 15 sigles gardent leur clé commune (ne pas redéfinir dans `n18.py`).
 - Dans un worktree partagé par P et W : jamais `git stash`, `reset`, `checkout -- .`, `clean`. User-Agent neutre seulement : `MEDINA-ImageCloFinder/0.1 (+https://github.com/vialdjoukang-spec/Medina)`. Trois requêtes antérieures ont porté « vial.djoukang » ; Vial est informé.
 - Le catalogue d'audit Claude compte 52 leçons (lots 7,7,7,7,7,7,10). Le plafond de 77 se complète, comme côté Codex, par 25 productions nouvelles prises dans la file de production Claude ; les missions du lot 2 (C72, G23, G58, G63, G64, G71, G72) ont été demandées à Codex et ne sont pas encore dans main.
+
+## 4 ter. Leçon apprise sur la CI
+Une branche en retard sur `main` échoue à « MEDINA / mission et périmètre » : les fichiers modifiés depuis dans `main` y apparaissent comme des changements hors périmètre. Avant toute PR, fusionner `origin/main` dans la branche (commit de fusion, sans rebase ni force), puis revérifier `ai_session_guard.py check` et `alpha_publication.py`.
 
 ## 4 bis. BLOQUANT OUTIL — `tools/alpha_publication.py` (fichier Codex, partagé)
 Le contrôle « attribution invisible dans le cours » échoue toujours. Le cours est dans `<template id="ch-<CODE>">` (de `_a` à `_d`), les Sciences sont `hidden`, et l'ordre de concaténation vient d'un `set` (aléatoire). Tout reçu d'une leçon contenant une figure attribuée est donc refusé. Signalé à Codex (issue 107) avec une proposition de correction. Ne jamais contourner. C77 : reçu `0001.json` prêt mais NON poussé (commit local `ec1e645e`, qui sera perdu avec l'ancien conteneur : régénérer depuis `64257cb8`), corrections poussées en `64257cb8`, empreintes de revue/ à mettre à jour par P.
