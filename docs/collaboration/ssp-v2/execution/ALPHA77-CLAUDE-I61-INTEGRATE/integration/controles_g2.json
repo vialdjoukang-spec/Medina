@@ -1,0 +1,359 @@
+{
+ "mission": "ALPHA77-CLAUDE-I61-INTEGRATE",
+ "generation": 2,
+ "code": "I61",
+ "fragment": "S08",
+ "date": "2026-10-15",
+ "base": "3969903cc87329bc471bf8ab7bce77f25544b76e",
+ "precedent": {
+  "recu": "organisation/alpha-publications/Claude/I61/0001.json",
+  "source_commit": "63beb7ff2222740316e7e09f602d355802eca079",
+  "note": "Reçu, livraison final/ et revues revue/*.json de la génération 1 conservés sans modification."
+ },
+ "integration": {
+  "corrections": "integration/corrections_g2.json : 20 remplacements du paquet préparé (old unique vérifié) puis 4 corrections de l’intégrateur, ajout de la clé NT et 12 corrections après le constat Codex P1 de la PR 171 (NT réservé à la composante réellement non testable).",
+  "discipline_s05": "chapters/I61/I61_c.html : bouton data-s=i61-s05-science après Génétique et div.sci#i61-s05-science « Biophysique de l’imagerie du sang » ; fenêtre pareto-i61-s05 dans I61_pop2. Six sous-onglets data-s au total, dont la sémiologie fondamentale et analytique en tête.",
+  "glossaire": "glossary/i61.py : clé NT (Non Testable)."
+ },
+ "controles": {
+  "build_medina.audit_I61": {},
+  "test_v7_static_I61": "OK (mots 40973, fenêtres 77, quiz 10, pareto 22)",
+  "unittest_glossaire": "tests.test_glossary_loader + tests.test_audit_glossary_boundaries : OK",
+  "construction": "MEDINA_OUT=<scratchpad>/build_g2 python3 build_front.py --fragment S08 : MEDINA_S08_nerveux.html, 14 251 216 octets (7 536 821 compressés, après fusion de origin/main), hors dépôt.",
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome (Playwright Node /opt/node-tools, le module Python playwright étant absent ; aucune installation)",
+   "url": "MEDINA_S08_nerveux.html#/entry/I61",
+   "parcours": "ouverture ; onglet Sciences ; clic successif sur les six sous-onglets (visibilité, aria-selected, un seul panneau visible) ; mesure de la figure S05 ; fenêtre Pareto S05 ; quiz Cas 3 (réponse juste, rétroaction visible) ; mode Livre + police 22 px ; défilement horizontal de page.",
+   "resultats": {
+    "mobile": {
+     "titre": "I61 — Hémorragie intracérébrale · Neurologie · Medina",
+     "tabs": [
+      [
+       "pA",
+       "⚕ Pathologie et prise en charge"
+      ],
+      [
+       "pE",
+       "🔬 Examens complémentaires"
+      ],
+      [
+       "pS",
+       "⚛ Sciences fondamentales"
+      ],
+      [
+       "pP",
+       "💊 Pharmacologie"
+      ]
+     ],
+     "boutons": [
+      [
+       "i61-s-semio",
+       "true",
+       "Sémiologie fondamentale et analytique"
+      ],
+      [
+       "i61-s01-science",
+       "false",
+       "◉ Anatomie"
+      ],
+      [
+       "i61-s02-science",
+       "false",
+       "◈ Histologie"
+      ],
+      [
+       "i61-s03-science",
+       "false",
+       "↝ Physiologie et biochimie"
+      ],
+      [
+       "i61-s04-science",
+       "false",
+       "⚛ Génétique"
+      ],
+      [
+       "i61-s05-science",
+       "false",
+       "◐ Biophysique de l’imagerie"
+      ]
+     ],
+     "sous_onglets": [
+      [
+       "i61-s-semio",
+       true,
+       "true",
+       [
+        "i61-s-semio"
+       ]
+      ],
+      [
+       "i61-s01-science",
+       true,
+       "true",
+       [
+        "i61-s01-science"
+       ]
+      ],
+      [
+       "i61-s02-science",
+       true,
+       "true",
+       [
+        "i61-s02-science"
+       ]
+      ],
+      [
+       "i61-s03-science",
+       true,
+       "true",
+       [
+        "i61-s03-science"
+       ]
+      ],
+      [
+       "i61-s04-science",
+       true,
+       "true",
+       [
+        "i61-s04-science"
+       ]
+      ],
+      [
+       "i61-s05-science",
+       true,
+       "true",
+       [
+        "i61-s05-science"
+       ]
+      ]
+     ],
+     "sci_bar": {
+      "w": 366,
+      "h": 192,
+      "scrollW": 366,
+      "clientW": 366,
+      "boutons_hors_vue": 0
+     },
+     "figure": {
+      "chevauchements": [],
+      "w": 296,
+      "scale": 0.896969696969697,
+      "font_px": 13.454545454545455,
+      "font_attr": 15
+     },
+     "pareto_s05": "Loi de Pareto — Biophysique de l’imagerie\nFermer ✕\n\nFrac­tion contrac­tée : 121 mots sur 1397, soit 9 % du texte, pour 100 % des no­tions ut",
+     "page_scroll": [
+      390,
+      390
+     ],
+     "quiz_loc": {
+      "panel": "pS",
+      "sci": "i61-s-semio"
+     },
+     "cas3_html": "<p data-t=\"cas3\">Cas 3 — Un pa­tient a une apha­sie d’ex­pres­sion sé­vère. Il ouvre les yeux spon­ta­né­ment, com­prend et obéit aux consignes de la main droit | <div class=\"mc-opt\" role=\"button\" tabindex=\"0\" data-ok=\"0\">« Glas­gow 11 (yeux 4, pa­role 1, mo­tri­cité 6) : trouble de vi­gi­lance mo­déré. »</div> | <div class=\"mc-opt\" role=\"button\" tabindex=\"0\" data-ok=\"1\">« Yeux 4, pa­role <span class=\"mc-ab\" role=\"button\" tabindex=\"0\" data-ab=\"NT\">NT</span> (apha­sie d’e | <p class=\"mc-fb\" hidden=\"\">Pour les au­teurs de l’échelle, la co­ta­tion 1 si­gni­fie l’ab­sence de ré­ponse sans fac­teur gê­nant. Ici, l’apha­sie est un fac­t | ",
+     "quiz_cas3": {
+      "fb_visible": true,
+      "fb": "Pour les au­teurs de l’échelle, la co­ta­tion 1 si­gni­fie l’ab­sence de ré­pons",
+      "boutons": [
+       "P:",
+       "DIV:mc-opt",
+       "DIV:mc-opt ok"
+      ]
+     },
+     "livre": {
+      "book": true,
+      "fs": "22px",
+      "s05_visible": true,
+      "scrollW": 390
+     },
+     "figure_livre_22": {
+      "chevauchements": [],
+      "w": 296,
+      "scale": 0.896969696969697,
+      "font_px": 13.454545454545455,
+      "font_attr": 15
+     },
+     "erreurs": []
+    },
+    "desktop": {
+     "titre": "I61 — Hémorragie intracérébrale · Neurologie · Medina",
+     "tabs": [
+      [
+       "pA",
+       "⚕ Pathologie et prise en charge"
+      ],
+      [
+       "pE",
+       "🔬 Examens complémentaires"
+      ],
+      [
+       "pS",
+       "⚛ Sciences fondamentales"
+      ],
+      [
+       "pP",
+       "💊 Pharmacologie"
+      ]
+     ],
+     "boutons": [
+      [
+       "i61-s-semio",
+       "true",
+       "Sémiologie fondamentale et analytique"
+      ],
+      [
+       "i61-s01-science",
+       "false",
+       "◉ Anatomie"
+      ],
+      [
+       "i61-s02-science",
+       "false",
+       "◈ Histologie"
+      ],
+      [
+       "i61-s03-science",
+       "false",
+       "↝ Physiologie et biochimie"
+      ],
+      [
+       "i61-s04-science",
+       "false",
+       "⚛ Génétique"
+      ],
+      [
+       "i61-s05-science",
+       "false",
+       "◐ Biophysique de l’imagerie"
+      ]
+     ],
+     "sous_onglets": [
+      [
+       "i61-s-semio",
+       true,
+       "true",
+       [
+        "i61-s-semio"
+       ]
+      ],
+      [
+       "i61-s01-science",
+       true,
+       "true",
+       [
+        "i61-s01-science"
+       ]
+      ],
+      [
+       "i61-s02-science",
+       true,
+       "true",
+       [
+        "i61-s02-science"
+       ]
+      ],
+      [
+       "i61-s03-science",
+       true,
+       "true",
+       [
+        "i61-s03-science"
+       ]
+      ],
+      [
+       "i61-s04-science",
+       true,
+       "true",
+       [
+        "i61-s04-science"
+       ]
+      ],
+      [
+       "i61-s05-science",
+       true,
+       "true",
+       [
+        "i61-s05-science"
+       ]
+      ]
+     ],
+     "sci_bar": {
+      "w": 817.078125,
+      "h": 92,
+      "scrollW": 817,
+      "clientW": 817,
+      "boutons_hors_vue": 0
+     },
+     "figure": {
+      "chevauchements": [],
+      "w": 420,
+      "scale": 1.2727272727272727,
+      "font_px": 19.09090909090909,
+      "font_attr": 15
+     },
+     "pareto_s05": "Loi de Pareto — Biophysique de l’imagerie\nFermer ✕\n\nFrac­tion contrac­tée : 121 mots sur 1397, soit 9 % du texte, pour 100 % des no­tions ut",
+     "page_scroll": [
+      1280,
+      1280
+     ],
+     "quiz_loc": {
+      "panel": "pS",
+      "sci": "i61-s-semio"
+     },
+     "cas3_html": "<p data-t=\"cas3\">Cas 3 — Un pa­tient a une apha­sie d’ex­pres­sion sé­vère. Il ouvre les yeux spon­ta­né­ment, com­prend et obéit aux consignes de la main droit | <div class=\"mc-opt\" role=\"button\" tabindex=\"0\" data-ok=\"0\">« Glas­gow 11 (yeux 4, pa­role 1, mo­tri­cité 6) : trouble de vi­gi­lance mo­déré. »</div> | <div class=\"mc-opt\" role=\"button\" tabindex=\"0\" data-ok=\"1\">« Yeux 4, pa­role <span class=\"mc-ab\" role=\"button\" tabindex=\"0\" data-ab=\"NT\">NT</span> (apha­sie d’e | <p class=\"mc-fb\" hidden=\"\">Pour les au­teurs de l’échelle, la co­ta­tion 1 si­gni­fie l’ab­sence de ré­ponse sans fac­teur gê­nant. Ici, l’apha­sie est un fac­t | ",
+     "quiz_cas3": {
+      "fb_visible": true,
+      "fb": "Pour les au­teurs de l’échelle, la co­ta­tion 1 si­gni­fie l’ab­sence de ré­pons",
+      "boutons": [
+       "P:",
+       "DIV:mc-opt",
+       "DIV:mc-opt ok"
+      ]
+     },
+     "livre": {
+      "book": true,
+      "fs": "22px",
+      "s05_visible": true,
+      "scrollW": 1280
+     },
+     "figure_livre_22": {
+      "chevauchements": [],
+      "w": 420,
+      "scale": 1.2727272727272727,
+      "font_px": 19.09090909090909,
+      "font_attr": 15
+     },
+     "erreurs": []
+    }
+   }
+  },
+  "captures": [
+   "i61_g2_desktop_1_ouverture.png",
+   "i61_g2_desktop_2_barre_sciences.png",
+   "i61_g2_desktop_3_figure_s05.png",
+   "i61_g2_desktop_4_pareto_s05.png",
+   "i61_g2_desktop_5_quiz_cas3.png",
+   "i61_g2_desktop_6_livre_police22.png",
+   "i61_g2_mobile_1_ouverture.png",
+   "i61_g2_mobile_2_barre_sciences.png",
+   "i61_g2_mobile_3_figure_s05.png",
+   "i61_g2_mobile_4_pareto_s05.png",
+   "i61_g2_mobile_5_quiz_cas3.png",
+   "i61_g2_mobile_6_livre_police22.png"
+  ]
+ },
+ "empreintes_sha256": {
+  "chapters/I61/I61_a.html": "ebac5d308a79daba692c6fd86e869259da02dc6b27fa9343254c1fbdee182ca4",
+  "chapters/I61/I61_b.html": "8dbe28366388b183eba47e627c09406f429bfbfff4d427275d5eba801d097f47",
+  "chapters/I61/I61_c.html": "23be92d0b29beae15ebb5496ed05e92ca10ab85600ddff00abc103753dc2f7e5",
+  "chapters/I61/I61_d.html": "6ab44f584c5b49410c114d557e84eb74eb820a712b6838b48be0ac991922502c",
+  "chapters/I61/I61_pop1.html": "9fafd57fb76b8590b41e642756dee3b4280707f9e8ad87aa6097fa95aa1f0bfd",
+  "chapters/I61/I61_pop2.html": "bda2c9b5d8dd23fea0bc2b844a75303562c450c8ef53e8ee882efcc407f02f02",
+  "glossary/i61.py": "81d4e2a84e26cf73cceb6368192a0b033330bd7b9c41979886b041855366a5fd"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "ci_pr171": {
+  "tete_306274b4": "Contrôles PR (pull_request) au vert ; garde-espace de l’événement push 09ac5c1c→306274b4 en échec : la vérification commit par commit traverse le commit intermédiaire 35faebca (sources corrigées, reçu 0002 encore à l’ancienne empreinte), régénéré dès le commit suivant 1e1a1975. Vérification locale : espace.py garde merge-base→HEAD et fusion simulée à deux parents avec main réussies ; alpha_publication --before origin/main --after HEAD réussi.",
+  "constat_codex_p1": "Fil PRRT_kwDOUsu1E86s_o6i : réponse discussion_r4289152865, fil résolu."
+ }
+}

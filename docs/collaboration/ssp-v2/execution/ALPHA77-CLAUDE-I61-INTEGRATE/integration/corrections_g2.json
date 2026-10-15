@@ -1,0 +1,590 @@
+{
+ "base": "origin/main 958474d2a88e0eed0f9f607090adc4473c721cec",
+ "note": "Chaque old est copié de main et apparaît exactement une fois dans le fichier, contrôlé par tools/build.py ; appliquer dans l’ordre.",
+ "corrections": [
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-4 (div.card « Exemple de présentation »)",
+   "old": "Glasgow 14 (yeux 4, parole 4, motricité 6), pupilles égales et réactives, pression 198/104 mmHg. Interprétation : déficit hémisphérique droit, sans signe clinique d’engagement ; le tableau ne distingue pas l’hémorragie de l’infarctus. Limites : la dysarthrie peut abaisser le score verbal, et l’absence de coma ou de vomissement n’exclut pas une hémorragie.",
+   "new": "Glasgow 15 (yeux 4, parole 5, motricité 6), pupilles égales et réactives, pression 198/104 mmHg. Interprétation : déficit hémisphérique droit, sans signe clinique d’engagement ; le tableau ne distingue pas l’hémorragie de l’infarctus. Limites : la dysarthrie altère l’articulation sans modifier le contenu du discours ; la patiente donne correctement son nom, le lieu et la date, et sa réponse verbale reste cotée 5. Si la parole devenait inintelligible, la dysarthrie gênerait la communication : la composante verbale serait notée NT (non testable) et aucun total ne serait rapporté. L’absence de coma ou de vomissement n’exclut pas une hémorragie.",
+   "motif": "Erreur de cotation : V4 correspond à « confus » (non orienté, mais communication cohérente). Une dysarthrie chez une patiente orientée donne V5 ; un facteur gênant la communication se note NT. Total recalculé 4+5+6 = 15 ; score ICH inchangé (tranche 13–15 : 0 point) ; critère bernois Glasgow > 6 inchangé.",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "i61-a01-partie-1 (cas fil rouge)",
+   "old": "indique 14 sur 15. La dernière prise",
+   "new": "indique 15 sur 15 (yeux 4, parole 5, motricité 6) : malgré sa parole pâteuse, elle donne correctement son nom, le lieu et la date. La dernière prise",
+   "motif": "Cohérence du cas fil rouge avec la cotation corrigée (dysarthrie isolée, patiente orientée = V5). Précision ajoutée au cas fictif pour rendre la cotation vérifiable.",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "i61-a11-partie-7 (cas récapitulatif chiffré)",
+   "old": "Le score ICH vaut 0 (Glasgow 14 : 0 ;",
+   "new": "Le score ICH vaut 0 (Glasgow 15 : 0 ;",
+   "motif": "Recalcul du total de Glasgow du cas fil rouge ; la tranche 13–15 donne toujours 0 point : score ICH 0 et décision andexanet inchangés.",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-score-ich (Exemple)",
+   "old": "Notre patiente de 78 ans (Glasgow 14, 25 ml,",
+   "new": "Notre patiente de 78 ans (Glasgow 15, 25 ml,",
+   "motif": "Recalcul du Glasgow du cas fil rouge ; score ICH inchangé (0).",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-gcs (tableau)",
+   "old": "<tbody><tr><td>Ouverture des yeux</td><td>4 / 3 / 2 / 1</td><td>Spontanée / à la voix / à la douleur / aucune</td></tr><tr><td>Réponse verbale</td><td>5 / 4 / 3 / 2 / 1</td><td>Orientée / confuse / mots inappropriés / sons incompréhensibles / aucune</td></tr><tr><td>Réponse motrice</td><td>6 / 5 / 4 / 3 / 2 / 1</td><td>Obéit aux ordres / localise la douleur / retrait / flexion anormale / extension anormale / aucune</td></tr></tbody></table>",
+   "new": "<tbody><tr><td>Ouverture des yeux</td><td>4 / 3 / 2 / 1 / NT</td><td>Spontanée, avant toute stimulation / au son (demande parlée ou criée) / à la pression (bout du doigt) / aucune, sans facteur gênant / non testable : yeux fermés par un facteur local</td></tr><tr><td>Réponse verbale</td><td>5 / 4 / 3 / 2 / 1 / NT</td><td>Orientée : donne correctement nom, lieu et date / confuse : désorientée, mais communication cohérente / mots isolés intelligibles / sons : gémissements seulement / aucune, sans facteur gênant / non testable : facteur gênant la communication</td></tr><tr><td>Réponse motrice</td><td>6 / 5 / 4 / 3 / 2 / 1 / NT</td><td>Obéit à une consigne en deux temps / localise : porte la main au-dessus de la clavicule vers un stimulus de la tête ou du cou / flexion normale, rapide / flexion anormale, lente et stéréotypée / extension / aucune, sans facteur gênant / non testable : paralysie ou autre facteur limitant</td></tr></tbody></table><p>Le médecin vérifie d’abord ce qui pourrait gêner la communication ou la réponse, observe, stimule par la voix puis par une pression, et cote la meilleure réponse observée ; pour la motricité, il compare les côtés droit et gauche et retient le meilleur.</p>",
+   "motif": "Alignement sur les critères et libellés de l’aide officielle (2017) : « à la pression », « flexion normale », « mots », « sons », critère « sans facteur gênant » pour la cotation 1, ligne NT pour chaque domaine.",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-gcs (Limites)",
+   "old": "<p>Limites : une aphasie abaisse artificiellement le score verbal, et une sédation ou une intubation en empêche la cotation. Chez notre patiente, le Glasgow de 14 (verbal confus) vaut 0 point au score ICH.</p>",
+   "new": "<p>Limites : les auteurs de l’échelle rangent parmi les facteurs gênants une barrière de langue, une surdité ou un trouble préexistant de la parole, une intubation, une sédation, une dysphasie et une hémiplégie. La composante concernée se note alors NT, jamais 1, et le total n’est pas rapporté : un total artificiellement bas ferait paraître le patient plus grave qu’il n’est. Une revue britannique rappelle qu’une aphasie cotée en chiffres abaisse le score verbal et sous-estime le Glasgow. Une dysarthrie qui laisse le discours intelligible ne change pas la cotation : une patiente orientée reste cotée 5. Chez notre patiente, dysarthrique mais orientée, le Glasgow vaut 15 (yeux 4, parole 5, motricité 6), soit 0 point au score ICH.</p>",
+   "motif": "Même erreur (cas fil rouge présenté « verbal confus » alors que seul un trouble articulatoire est décrit) ; ajout de la règle NT des auteurs de l’échelle.",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S3",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-gcs (Sources)",
+   "old": "data-reference-source=\"1\">Glasgow Coma Scale — présentation de l’échelle (Teasdale et Jennett, Lancet 1974)</a> ;",
+   "new": "data-reference-source=\"1\">Glasgow Coma Scale — présentation de l’échelle (Teasdale et Jennett, Lancet 1974)</a> ; <a href=\"https://www.glasgowcomascale.org/downloads/GCS-Assessment-Aid.pdf\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Institute of Neurological Sciences, NHS Greater Glasgow and Clyde — GCS Assessment Aid (version janvier 2017)</a> ; <a href=\"https://www.glasgowcomascale.org/faq/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Glasgow Coma Scale — FAQ 1 : facteurs gênant l’évaluation et information manquante</a> ;",
+   "motif": "Traçabilité des deux sources ajoutées.",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-4 (liste de l’examen, item Glasgow)",
+   "old": "Il note chaque composante, et pas seulement le total, car une aphasie abaisse le seul score verbal.",
+   "new": "Il note chaque composante, et pas seulement le total. Une aphasie, une intubation ou une sédation gênent la cotation verbale : celle-ci se note alors NT (non testable), jamais 1, et le total n’est pas rapporté.",
+   "motif": "Même famille d’erreur : un facteur gênant la communication se note NT et non par un chiffre abaissé.",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-5 (situations qui faussent l’examen)",
+   "old": "Une aphasie abaisse le score verbal du Glasgow et le sous-estime. Une sédation ou une intubation empêchent la cotation verbale.",
+   "new": "Une aphasie cotée en chiffres abaisse le score verbal et sous-estime le Glasgow ; les auteurs de l’échelle demandent donc de noter NT la composante gênée et de ne pas rapporter de total. La même règle s’applique après une sédation ou une intubation. Une dysarthrie qui laisse le discours intelligible ne modifie pas la cotation : un patient orienté reste coté 5.",
+   "motif": "Même famille d’erreur ; ajout explicite de la règle de la dysarthrie.",
+   "sources": [
+    {
+     "id": "S3",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-5 (quiz Cas 3)",
+   "old": "<p>Cas 3 — Un patient aphasique obtient un Glasgow de 11 (yeux 4, parole 1, motricité 6). Quelle formulation est honnête ?</p><button data-ok=\"0\">« Glasgow 11 : trouble de vigilance modéré. »</button><button data-ok=\"1\">« Glasgow 11, dont parole 1 sous-estimée par l’aphasie ; yeux et motricité normaux. »</button><p class=\"fb\" hidden>L’aphasie abaisse le score verbal sans traduire une baisse d’éveil. Noter les trois composantes séparément et nommer la limite évite de classer à tort ce patient comme grave, par exemple dans le score ICH ou dans un critère d’éligibilité.</p>",
+   "new": "<p>Cas 3 — Un patient aphasique ouvre les yeux spontanément et obéit aux consignes de la main droite, mais ne produit aucun mot. Quelle notation est correcte ?</p><button data-ok=\"0\">« Glasgow 11 (yeux 4, parole 1, motricité 6) : trouble de vigilance modéré. »</button><button data-ok=\"1\">« Yeux 4, parole NT (aphasie), motricité 6 ; total non rapporté. »</button><p class=\"fb\" hidden>Pour les auteurs de l’échelle, la cotation 1 signifie l’absence de réponse sans facteur gênant ; une dysphasie est un facteur gênant, d’où la mention NT. Un total de 11 ferait paraître ce patient plus grave qu’il n’est, par exemple dans le score ICH. Le critère bernois d’un Glasgow supérieur à 6 reste rempli : même la cotation verbale la plus basse porterait le total à 11.</p>",
+   "motif": "Le quiz validait « parole 1 » pour une aphasie, contraire à l’aide officielle (1 = aucune réponse sans facteur gênant ; facteur gênant = NT) et à la FAQ (« ne pas utiliser 1 », « ne pas rapporter de total »).",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-5 (À retenir)",
+   "old": "L’aphasie, la sédation et le trouble cognitif préalable faussent les échelles. Une formulation honnête nomme toujours la composante et sa limite.",
+   "new": "L’aphasie, la sédation et le trouble cognitif préalable faussent les échelles ; une composante du Glasgow gênée par l’un de ces facteurs se note NT, sans total. Une formulation honnête nomme toujours la composante et sa limite.",
+   "motif": "Cohérence avec la règle NT.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "i61-a08 (Signes et examen)",
+   "old": ") est limité par les troubles de conscience, et une aphasie abaisse artificiellement le score verbal du Glasgow.</p>",
+   "new": ") est limité par les troubles de conscience. Une aphasie abaisse le score verbal du Glasgow lorsqu’on la cote en chiffres ; les auteurs de l’échelle demandent de noter NT (non testable) la composante gênée et de ne pas rapporter de total.</p>",
+   "motif": "Même famille d’erreur ; le constat de McGurgan est conservé et complété par la règle NT.",
+   "sources": [
+    {
+     "id": "S3",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "pareto/À retenir i61-a08",
+   "old": "Le Glasgow est l’évaluation initiale la plus utile ; une aphasie abaisse le score verbal.",
+   "new": "Le Glasgow est l’évaluation initiale la plus utile ; une composante gênée par une aphasie se note NT, sans total.",
+   "motif": "Cohérence avec la règle NT.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "pareto/À retenir i61-a08",
+   "old": "Le Glasgow est l’évaluation initiale la plus utile ; une aphasie abaisse le score verbal.",
+   "new": "Le Glasgow est l’évaluation initiale la plus utile ; une composante gênée par une aphasie se note NT, sans total.",
+   "motif": "Cohérence avec la règle NT.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-e01-partie-4 (IRM de susceptibilité)",
+   "old": "Les sources consultées ne décrivent pas l’évolution du signal IRM du sang par stades ; seul l’aspect tardif (hémosidérine) est abordé.",
+   "new": "L’évolution du signal IRM du sang par stades, de l’oxyhémoglobine à l’hémosidérine, est expliquée dans la discipline « Biophysique de l’imagerie du sang » des sciences fondamentales ; l’hémosidérine tardive, superparamagnétique, reste visible des mois en séquence de susceptibilité.",
+   "motif": "La lacune déclarée est comblée par la nouvelle discipline S05, lue en texte intégral (Kidwell et Wintermark 2008).",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-susceptibilite",
+   "old": "Les sources consultées ne décrivent pas l’évolution du signal du sang par stades : seule l’hémosidérine résiduelle, qui persiste des mois, est établie.",
+   "new": "L’écho de gradient reste hypointense à tous les stades de l’hématome, parce que la désoxyhémoglobine, la méthémoglobine et l’hémosidérine perturbent localement le champ magnétique ; l’hémosidérine résiduelle persiste des mois. La discipline « Biophysique de l’imagerie du sang » détaille ces stades.",
+   "motif": "Lacune comblée (même source).",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-susceptibilite (Sources)",
+   "old": "métastases, vascularites).</p><p class=\"src\">Sources : ",
+   "new": "métastases, vascularites).</p><p class=\"src\">Sources : <a href=\"https://doi.org/10.1016/S1474-4422(08)70041-3\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Kidwell et Wintermark — Imaging of intracranial haemorrhage (Lancet Neurol 2008;7:256–267)</a> ; ",
+   "motif": "Traçabilité.",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "div.sci-bar (après le bouton Génétique)",
+   "old": "<button role=\"tab\" aria-selected=\"false\" data-s=\"i61-s04-science\">⚛ Génétique</button></div>",
+   "new": "<button role=\"tab\" aria-selected=\"false\" data-s=\"i61-s04-science\">⚛ Génétique</button><button role=\"tab\" aria-selected=\"false\" data-s=\"i61-s05-science\">◐ Biophysique de l’imagerie</button></div>",
+   "motif": "Cinquième discipline exigée (sémiologie + 5).",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "fin du panneau i61-s04-science (avant </div><div class=\"pager ui\">)",
+   "old": "<button class=\"pareto-btn ui\" data-k=\"pareto-i61-s04\">▲ Loi de Pareto — Génétique</button></section></div>",
+   "new": "<button class=\"pareto-btn ui\" data-k=\"pareto-i61-s04\">▲ Loi de Pareto — Génétique</button></section></div><div class=\"sci\" id=\"i61-s05-science\" hidden><section class=\"ilot\" id=\"i61-s05\"><h2><span class=\"n\">5</span> Biophysique de l’imagerie du sang</h2><p>Le scanner et l’IRM ne voient pas « du sang » : ils mesurent une propriété physique de l’hémoglobine et de ses produits de dégradation. Cette propriété change avec le temps, de l’hématie intacte à l’hémosidérine des macrophages. Elle explique pourquoi un hématome récent est blanc au scanner, pourquoi il peut devenir invisible au bout de quelques jours et pourquoi une IRM de susceptibilité retrouve un saignement ancien des mois plus tard.</p><h3 id=\"i61-s05-partie-1\">5.1 Cinq stades biochimiques de l’hématome</h3><p>Au stade hyperaigu, l’hématome est un liquide fait à 99 % d’hémoglobine oxygénée contenue dans les hématies. En quelques heures se forme un caillot hétérogène de cellules, de plaquettes et de sérum riche en protéines. Le caillot se rétracte ; le sérum expulsé et l’œdème vasogénique du parenchyme voisin l’entourent. Au stade aigu, l’hémoglobine intracellulaire perd progressivement son oxygène et devient de la désoxyhémoglobine. Au stade subaigu précoce, une dénaturation oxydative la transforme peu à peu en méthémoglobine, encore enfermée dans les hématies.</p><p>Au stade subaigu tardif, la lyse des hématies libère la méthémoglobine dans l’espace extracellulaire, et l’œdème vasogénique régresse lentement. Au stade chronique, les macrophages et les astrocytes entourent l’hématome et le phagocytent ; ils stockent le fer sous forme d’hémosidérine et de ferritine. L’hématome finit par disparaître et laisse une cavité liquidienne ou un défect cicatriciel. La revue de référence précise que l’hématocrite local, le pH et la pression partielle d’oxygène modulent cette chronologie.</p><p>La figure suivante relie chaque stade à la forme dominante de l’hémoglobine et à l’aspect au scanner. Elle se lit de haut en bas, comme le temps qui passe.</p><figure id=\"i61-fig-s05-stades\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 452\" width=\"100%\" role=\"img\" aria-label=\"Schéma non anatomique : cinq stades de l’hématome, forme de l’hémoglobine et densité au scanner\"><title>Stades de l’hématome, hémoglobine et scanner</title><desc>Hyperaigu, moins de 12 heures : oxyhémoglobine intracellulaire, hyperdense. Aigu, 12 heures à 2 jours : désoxyhémoglobine intracellulaire, hyperdense. Subaigu précoce, 2 à 7 jours : méthémoglobine intracellulaire, hyperdense. Subaigu tardif, 8 jours à 1 mois : méthémoglobine extracellulaire, isodense. Chronique, plus d’un mois : hémosidérine et ferritine, hypodense.</desc><g fill=\"currentColor\" font-size=\"16\"><text x=\"8\" y=\"24\" font-weight=\"bold\">Stade et délai</text><text x=\"170\" y=\"24\" font-weight=\"bold\">Hémoglobine</text><text x=\"350\" y=\"24\" font-weight=\"bold\">Scanner</text></g><line x1=\"4\" y1=\"36\" x2=\"476\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"2\"/><g fill=\"currentColor\" font-size=\"16\"><text x=\"8\" y=\"66\" font-weight=\"bold\">Hyperaigu</text><text x=\"8\" y=\"88\">moins de 12 h</text><text x=\"170\" y=\"66\">Oxyhémoglobine</text><text x=\"170\" y=\"88\">intracellulaire</text><text x=\"350\" y=\"77\" font-weight=\"bold\">Hyperdense</text><text x=\"8\" y=\"146\" font-weight=\"bold\">Aigu</text><text x=\"8\" y=\"168\">12 h à 2 jours</text><text x=\"170\" y=\"146\">Désoxy-</text><text x=\"170\" y=\"168\">hémoglobine</text><text x=\"350\" y=\"157\" font-weight=\"bold\">Hyperdense</text><text x=\"8\" y=\"226\" font-weight=\"bold\">Subaigu précoce</text><text x=\"8\" y=\"248\">2 à 7 jours</text><text x=\"170\" y=\"226\">Méthémoglobine</text><text x=\"170\" y=\"248\">intracellulaire</text><text x=\"350\" y=\"237\" font-weight=\"bold\">Hyperdense</text><text x=\"8\" y=\"306\" font-weight=\"bold\">Subaigu tardif</text><text x=\"8\" y=\"328\">8 jours à 1 mois</text><text x=\"170\" y=\"306\">Méthémoglobine</text><text x=\"170\" y=\"328\">extracellulaire</text><text x=\"350\" y=\"317\" font-weight=\"bold\">Isodense</text><text x=\"8\" y=\"386\" font-weight=\"bold\">Chronique</text><text x=\"8\" y=\"408\">plus d’un mois</text><text x=\"170\" y=\"386\">Hémosidérine,</text><text x=\"170\" y=\"408\">ferritine</text><text x=\"350\" y=\"397\" font-weight=\"bold\">Hypodense</text></g><g stroke=\"currentColor\" stroke-width=\"1.5\"><line x1=\"4\" y1=\"116\" x2=\"476\" y2=\"116\"/><line x1=\"4\" y1=\"196\" x2=\"476\" y2=\"196\"/><line x1=\"4\" y1=\"276\" x2=\"476\" y2=\"276\"/><line x1=\"4\" y1=\"356\" x2=\"476\" y2=\"356\"/><line x1=\"4\" y1=\"436\" x2=\"476\" y2=\"436\"/></g><g stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"><line x1=\"160\" y1=\"44\" x2=\"160\" y2=\"430\"/><path d=\"M152 418 L160 432 L168 418\"/></g></svg><figcaption><p>Schéma didactique non anatomique, établi d’après le tableau de Kidwell et Wintermark (Lancet Neurol 2008) : stade, délai, forme dominante de l’hémoglobine et densité au scanner par rapport au parenchyme sain. La flèche verticale figure le temps.</p></figcaption></figure><p>Pour lire la figure, on part du délai écoulé depuis le début des symptômes, puis on lit la forme de l’hémoglobine et enfin la densité attendue. Chez la patiente du cas fil rouge, le scanner est réalisé 45 minutes après le début : l’hématome est au stade hyperaigu et il apparaît hyperdense. Si le même hématome n’était imagé qu’au dixième jour, il serait au stade subaigu tardif et pourrait être isodense, donc difficile à voir.</p><h3 id=\"i61-s05-partie-2\">5.2 Scanner : l’atténuation des rayons X suit la concentration d’hémoglobine</h3><p>Le scanner mesure l’atténuation des rayons X par les tissus. La densité d’un hématome dépend de l’hématocrite, du degré de rétraction du caillot et de la teneur en hémoglobine. Aux stades hyperaigu et aigu, le caillot est hyperdense par rapport au parenchyme sain. Pendant les premières heures, la rétraction du caillot expulse le sérum et concentre l’hémoglobine : la densité augmente encore.</p><p>Deux situations font mentir cette règle. Chez un patient très anémique, la concentration d’hémoglobine est basse et l’hématome aigu paraît moins hyperdense qu’attendu. Au stade subaigu tardif, la lyse des hématies et la protéolyse de l’hémoglobine abaissent la densité jusqu’à l’isodensité ; au stade chronique, l’hématome devient hypodense, se résorbe et laisse un petit défect hypodense. La chronologie diffère selon les sources : la revue de Kidwell et Wintermark place l’isodensité entre 8 jours et 1 mois, tandis qu’une revue britannique de 2021 signale qu’un hématome peut être isodense dès le cinquième jour.</p><div class=\"trap\"><span class=\"k\">Piège</span>Un scanner tardif normal n’exclut pas une hémorragie récente, et un hématome peu dense chez un patient anémique n’est pas forcément ancien. La densité se lit toujours avec le délai depuis le début des symptômes et le taux d’hémoglobine.</div><h3 id=\"i61-s05-partie-3\">5.3 IRM : le magnétisme du fer change avec son état d’oxydation</h3><p>Le signal IRM d’un hématome dépend des propriétés magnétiques des produits de dégradation de l’hémoglobine, de l’intensité du champ magnétique et de la séquence employée. Ces produits diffèrent par l’état d’oxydation du fer et par le nombre de ses électrons non appariés. L’oxyhémoglobine n’a pas d’électron non apparié : elle est diamagnétique et perturbe peu le signal. La désoxyhémoglobine et la méthémoglobine sont paramagnétiques. L’hémosidérine, riche en électrons non appariés, est superparamagnétique.</p><p>La compartimentation compte autant que la molécule. Au stade subaigu précoce, la méthémoglobine est enfermée dans les hématies et crée un gradient magnétique entre l’intérieur et l’extérieur des cellules. La lyse des hématies, au stade subaigu tardif, annule ce gradient ; le signal pondéré en T2 devient alors hyperintense. Le tableau ci-dessous répond à une question pratique : que doit-on voir en IRM, à chaque âge de l’hématome, en T1, en T2 et en écho de gradient pondéré en T2* ?</p><table class=\"t\"><thead><tr><th>Stade</th><th>T1</th><th>T2</th><th>Écho de gradient T2*</th></tr></thead><tbody><tr><td>Hyperaigu (moins de 12 h)</td><td>Iso- ou discrètement hyperintense</td><td>Hyperintense</td><td>Liseré hypointense autour d’un centre isointense</td></tr><tr><td>Aigu (12 h à 2 jours)</td><td>Iso- ou hypointense</td><td>Hypointense</td><td>Liseré hypointense qui gagne le centre</td></tr><tr><td>Subaigu précoce (2 à 7 jours)</td><td>Hyperintense</td><td>Hypointense</td><td>Hypointense</td></tr><tr><td>Subaigu tardif (8 jours à 1 mois)</td><td>Hyperintense</td><td>Hyperintense</td><td>Hypointense</td></tr><tr><td>Chronique (plus d’un mois)</td><td>Iso- ou hypointense</td><td>Hypointense</td><td>Fente iso- ou hyperintense cernée d’un liseré hypointense</td></tr></tbody></table><p>On lit d’abord la colonne de l’écho de gradient : elle reste hypointense, au moins en périphérie, à tous les stades, parce que ces séquences sont très sensibles aux effets de susceptibilité des produits paramagnétiques et superparamagnétiques. C’est la raison pour laquelle l’IRM avec écho de gradient est aussi exacte que le scanner pour détecter une hémorragie parenchymateuse aiguë et bien supérieure à lui pour un saignement chronique. L’erreur fréquente consiste à dater un hématome sur une seule séquence : la revue souligne qu’un petit hématome se désoxygène vite, devient d’emblée hypointense et ne peut alors pas être daté en écho de gradient.</p><p>La même physique explique les microsaignements. Ce sont de petites lésions hypointenses, rondes et homogènes, de moins de 5 à 10 mm ; les études anatomopathologiques les relient à des macrophages chargés d’hémosidérine au contact de petits vaisseaux. Le scanner ne les voit pas. Jusqu’à 20 % des patients ayant un AVC aigu ne peuvent toutefois pas passer d’IRM, en raison d’un stimulateur cardiaque, d’un implant métallique ou d’une incapacité à rester allongés immobiles ; pour eux, seul le scanner est réalisable.</p><div class=\"key\"><p><b>Corrélations.</b> Science vers clinique : la forte concentration d’hémoglobine du caillot rétracté explique qu’un saignement de quelques heures soit franchement hyperdense au scanner. L’oxyhémoglobine, diamagnétique, perturbe au contraire peu le signal : les séquences IRM classiques pondérées en T1 et en T2 ne sont pas sensibles au sang hyperaigu, d’où l’intérêt de l’écho de gradient. Science vers examen : l’hémosidérine superparamagnétique persiste dans les macrophages et signe, en séquence de susceptibilité (<button class=\"w\" data-k=\"i61-susceptibilite\">T2* et SWI</button>), un saignement ancien ou un microsaignement. Science vers traitement : la datation de l’hématome par l’imagerie aide à vérifier que l’aspect concorde avec l’heure de début, donnée dont dépend l’éligibilité aux antidotes, réservée par le protocole bernois à un début des symptômes datant de moins de 6 heures.</p></div><div class=\"key\"><p><b>À retenir.</b> L’hématome passe par cinq stades : oxyhémoglobine, désoxyhémoglobine, méthémoglobine intracellulaire puis extracellulaire, hémosidérine et ferritine. Au scanner, il reste hyperdense jusqu’à environ une semaine, parfois moins, puis devient isodense et enfin hypodense ; une anémie sévère le rend moins dense. En IRM, l’écho de gradient reste hypointense à tous les stades et révèle des saignements anciens invisibles au scanner. La datation par l’imagerie reste approximative, car l’hématocrite, le pH, l’oxygène, le champ magnétique et la taille de l’hématome la modifient.</p></div><p class=\"src\">Sources : <a href=\"https://doi.org/10.1016/S1474-4422(08)70041-3\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Kidwell et Wintermark — Imaging of intracranial haemorrhage (Lancet Neurol 2008;7:256–267), sections « Physical principles », « Intraparenchymal haemorrhage », « Microbleeds » et tableau</a> ; <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7982923/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">McGurgan et coll. — Acute intracerebral haemorrhage: diagnosis and management (Pract Neurol 2021;21:128–136)</a> ; <a href=\"https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Réseau AVC bernois — Stroke Guidelines (version 08/2026), critères des antidotes</a>.</p><button class=\"pareto-btn ui\" data-k=\"pareto-i61-s05\">▲ Loi de Pareto — Biophysique de l’imagerie</button></section></div>",
+   "motif": "Insertion du panneau S05 (contenu complet dans s05_discipline.html).",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S3",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S5",
+     "lecture": "repris_du_cours_non_relu"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "après template pareto-i61-s04",
+   "old": "<template data-pop=\"pareto-i61-s04\" data-title=\"Loi de Pareto — Génétique\"><p class=\"ratio\" data-cover=\"i61-s04\"></p><ul><li>La règle d’Édimbourg (hémorragie sous-arachnoïdienne plus APOE ε4 ou prolongements digitiformes) a une spécificité de 96 % et demande une validation externe.</li><li>COL4A1/COL4A2, CADASIL et Ehlers-Danlos vasculaire sont les principales maladies monogéniques à évoquer.</li><li>Le test génétique exige une indication clinique, un consentement signé et l’accord préalable de l’assureur.</li></ul><p class=\"src\">Sources : <a href=\"https://pubmed.ncbi.nlm.nih.gov/29331631/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Rodrigues et coll. — Critères d’Édimbourg (scanner et génétique) de l’hémorragie lobaire liée à l’angiopathie amyloïde (Lancet Neurol 2018;17:232–240)</a> ; <a href=\"https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Réseau AVC bernois — Stroke Guidelines (version 08/2026), chapitres sur l’hémorragie intracérébrale, la surveillance, les antihypertenseurs et le saignement après thrombolyse</a>.</p></template>",
+   "new": "<template data-pop=\"pareto-i61-s04\" data-title=\"Loi de Pareto — Génétique\"><p class=\"ratio\" data-cover=\"i61-s04\"></p><ul><li>La règle d’Édimbourg (hémorragie sous-arachnoïdienne plus APOE ε4 ou prolongements digitiformes) a une spécificité de 96 % et demande une validation externe.</li><li>COL4A1/COL4A2, CADASIL et Ehlers-Danlos vasculaire sont les principales maladies monogéniques à évoquer.</li><li>Le test génétique exige une indication clinique, un consentement signé et l’accord préalable de l’assureur.</li></ul><p class=\"src\">Sources : <a href=\"https://pubmed.ncbi.nlm.nih.gov/29331631/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Rodrigues et coll. — Critères d’Édimbourg (scanner et génétique) de l’hémorragie lobaire liée à l’angiopathie amyloïde (Lancet Neurol 2018;17:232–240)</a> ; <a href=\"https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Réseau AVC bernois — Stroke Guidelines (version 08/2026), chapitres sur l’hémorragie intracérébrale, la surveillance, les antihypertenseurs et le saignement après thrombolyse</a>.</p></template><template data-pop=\"pareto-i61-s05\" data-title=\"Loi de Pareto — Biophysique de l’imagerie\"><p class=\"ratio\" data-cover=\"i61-s05\"></p><ul><li>L’hématome passe de l’oxyhémoglobine à la désoxyhémoglobine, puis à la méthémoglobine intracellulaire et extracellulaire, enfin à l’hémosidérine et à la ferritine.</li><li>Au scanner, sa densité suit la concentration d’hémoglobine : hyperdense d’abord, isodense entre 8 jours et 1 mois selon Kidwell et Wintermark, parfois dès le cinquième jour selon une revue britannique de 2021, puis hypodense ; une anémie sévère le rend moins dense.</li><li>En IRM, l’écho de gradient reste hypointense à tous les stades et révèle les microsaignements invisibles au scanner ; la datation de l’hématome reste approximative.</li></ul><p class=\"src\">Sources : <a href=\"https://doi.org/10.1016/S1474-4422(08)70041-3\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Kidwell et Wintermark — Imaging of intracranial haemorrhage (Lancet Neurol 2008;7:256–267)</a> ; <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7982923/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">McGurgan et coll. — Acute intracerebral haemorrhage: diagnosis and management (Pract Neurol 2021;21:128–136)</a>.</p></template>",
+   "motif": "Fenêtre Pareto appelée par le bouton pareto-i61-s05.",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S3",
+     "lecture": "integrale"
+    }
+   ]
+  }
+ ],
+ "generation": 2,
+ "base_integration": "3969903cc87329bc471bf8ab7bce77f25544b76e",
+ "corrections_integrateur": [
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "figure i61-fig-s05-stades",
+   "motif": "Lisibilité mobile : à 390 px le texte rendu de la figure valait 9,9 px (viewBox 480, police 16, largeur 100 %). Figure recomposée sans changer son contenu (viewBox 330 × 436, police 15, largeur 420, max-width 100 %) : 13,5 px à 390 px, 19,1 px à 1280 px, aucun chevauchement mesuré.",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-s05-science (À retenir)",
+   "old": "En IRM, l’écho de gradient reste hypointense à tous les stades",
+   "new": "En IRM, l’écho de gradient reste hypointense, au moins en périphérie, à tous les stades",
+   "motif": "Précision fidèle au tableau de Kidwell et Wintermark : au stade chronique, centre en fente iso- ou hyperintense cerné d’un liseré hypointense.",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "pareto-i61-s05",
+   "old": "En IRM, l’écho de gradient reste hypointense à tous les stades",
+   "new": "En IRM, l’écho de gradient reste hypointense, au moins en périphérie, à tous les stades",
+   "motif": "Même précision.",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-susceptibilite",
+   "old": "L’écho de gradient reste hypointense à tous les stades de l’hématome,",
+   "new": "L’écho de gradient reste hypointense, au moins en périphérie, à tous les stades de l’hématome,",
+   "motif": "Même précision.",
+   "sources": [
+    {
+     "id": "S4",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "glossary/i61.py",
+   "ancre": "fin de fichier",
+   "new": "add('NT',[('N', 'Non'), ('T', 'Testable')],'Non testable','Mention qui remplace le chiffre d’une composante du Glasgow lorsqu’un facteur identifié empêche son évaluation (intubation, sédation, dysphasie, paralysie, yeux fermés par un facteur local) ; le total n’est alors pas rapporté.','i61-gcs')",
+   "motif": "Clé NT requise par la règle de cotation NT (définition ensuite resserrée, voir corrections_constat_codex_p1).",
+   "sources": [
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    }
+   ]
+  }
+ ],
+ "corrections_constat_codex_p1": [
+  {
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "i61-a08 (Signes et examen)",
+   "old": " Une aphasie abaisse le score verbal du Glasgow lorsqu’on la cote en chiffres ; les auteurs de l’échelle demandent de noter NT (non testable) la composante gênée et de ne pas rapporter de total.</p>",
+   "new": " Une aphasie abaisse le score verbal du Glasgow lorsqu’on la cote sans en tenir compte. Les auteurs de l’échelle demandent d’adapter la communication, de coter la meilleure réponse observée et de documenter le facteur gênant ; seule une composante réellement non testable, comme la réponse verbale d’un patient intubé, se note NT (non testable), sans total.</p>",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "À retenir i61-a08",
+   "old": "une composante gênée par une aphasie se note NT, sans total.",
+   "new": "devant une aphasie, on adapte la communication et on documente le facteur gênant ; seule une composante réellement non testable se note NT, sans total.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "Pareto i61-a08",
+   "old": "une composante gênée par une aphasie se note NT, sans total.",
+   "new": "devant une aphasie, on adapte la communication et on documente le facteur gênant ; seule une composante réellement non testable se note NT, sans total.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-4 (liste, item Glasgow)",
+   "old": "Une aphasie, une intubation ou une sédation gênent la cotation verbale : celle-ci se note alors NT (non testable), jamais 1, et le total n’est pas rapporté.",
+   "new": "Devant une aphasie, il adapte la communication, cote la meilleure réponse observée et note le facteur gênant. Seule une composante réellement non testable se note NT (non testable), jamais 1, et le total n’est alors pas rapporté : c’est le cas de la réponse verbale d’un patient intubé. Une sédation peut modifier les trois composantes ; on la lève temporairement quand c’est possible.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-4 (Exemple de présentation)",
+   "old": "Si la parole devenait inintelligible, la dysarthrie gênerait la communication : la composante verbale serait notée NT (non testable) et aucun total ne serait rapporté.",
+   "new": "Si la parole devenait inintelligible, le médecin adapterait d’abord la communication, par exemple par l’écrit, et documenterait la dysarthrie ; la composante verbale ne serait notée NT (non testable), sans total, que si aucune réponse verbale ne restait évaluable.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-5 (situations qui faussent l’examen)",
+   "old": "Une aphasie cotée en chiffres abaisse le score verbal et sous-estime le Glasgow ; les auteurs de l’échelle demandent donc de noter NT la composante gênée et de ne pas rapporter de total. La même règle s’applique après une sédation ou une intubation.",
+   "new": "Une aphasie cotée sans en tenir compte abaisse le score verbal et sous-estime le Glasgow. Les auteurs de l’échelle demandent donc d’adapter la communication, de coter la meilleure réponse observée et de documenter le facteur gênant. La mention NT, sans total, est réservée à la composante réellement non testable : réponse verbale sous intubation ou trachéotomie, yeux fermés par un facteur local, membre paralysé. Sous sédation, on lève temporairement celle-ci quand c’est possible (test de réveil), car elle peut modifier les yeux et la motricité autant que la parole.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-5 (quiz Cas 3)",
+   "old": "<p>Cas 3 — Un patient aphasique ouvre les yeux spontanément et obéit aux consignes de la main droite, mais ne produit aucun mot. Quelle notation est correcte ?</p><button data-ok=\"0\">« Glasgow 11 (yeux 4, parole 1, motricité 6) : trouble de vigilance modéré. »</button><button data-ok=\"1\">« Yeux 4, parole NT (aphasie), motricité 6 ; total non rapporté. »</button><p class=\"fb\" hidden>Pour les auteurs de l’échelle, la cotation 1 signifie l’absence de réponse sans facteur gênant ; une dysphasie est un facteur gênant, d’où la mention NT.",
+   "new": "<p>Cas 3 — Un patient a une aphasie d’expression sévère. Il ouvre les yeux spontanément, comprend et obéit aux consignes de la main droite, mais ne produit aucun mot, ni à l’oral ni par écrit, malgré une communication adaptée. Quelle notation est correcte ?</p><button data-ok=\"0\">« Glasgow 11 (yeux 4, parole 1, motricité 6) : trouble de vigilance modéré. »</button><button data-ok=\"1\">« Yeux 4, parole NT (aphasie d’expression documentée), motricité 6 ; total non rapporté. »</button><p class=\"fb\" hidden>Pour les auteurs de l’échelle, la cotation 1 signifie l’absence de réponse sans facteur gênant. Ici, l’aphasie est un facteur gênant et la réponse verbale reste indisponible malgré l’adaptation de la communication : elle se note NT. Si le patient avait produit quelques mots intelligibles, on aurait coté la meilleure réponse observée en documentant l’aphasie.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "i61-sm-5 (À retenir)",
+   "old": "; une composante du Glasgow gênée par l’un de ces facteurs se note NT, sans total.",
+   "new": "; devant l’un de ces facteurs, on adapte l’examen, on cote la meilleure réponse observée et on documente le facteur, la mention NT, sans total, étant réservée à une composante réellement non testable.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-gcs (tableau, ligne verbale)",
+   "old": "non testable : facteur gênant la communication</td>",
+   "new": "non testable : facteur gênant qui rend la réponse réellement indisponible malgré l’adaptation, par exemple intubation ou trachéotomie</td>",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-gcs (méthode)",
+   "old": "<p>Le médecin vérifie d’abord ce qui pourrait gêner la communication ou la réponse, observe, stimule par la voix puis par une pression, et cote la meilleure réponse observée ;",
+   "new": "<p>Le médecin recherche d’abord ce qui pourrait gêner la communication ou la réponse et adapte l’interaction (langue, interlocuteur, écrit). Il observe, stimule par la voix puis par une pression, cote la meilleure réponse observée et documente le facteur gênant ;",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "template i61-gcs (Limites)",
+   "old": "La composante concernée se note alors NT, jamais 1, et le total n’est pas rapporté : un total artificiellement bas ferait paraître le patient plus grave qu’il n’est.",
+   "new": "Ils demandent d’abord d’adapter l’interaction et, sous sédation, de la lever temporairement quand c’est possible (test de réveil), car elle peut modifier les trois composantes. Seule une composante réellement non testable, comme la réponse verbale d’un patient intubé ou trachéotomisé, se note NT, jamais 1 ; le total n’est alors pas rapporté, car un total artificiellement bas ferait paraître le patient plus grave qu’il n’est.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  },
+  {
+   "fichier": "glossary/i61.py",
+   "ancre": "clé NT",
+   "old": "lorsqu’un facteur identifié empêche son évaluation (intubation, sédation, dysphasie, paralysie, yeux fermés par un facteur local) ; le total n’est alors pas rapporté.",
+   "new": "lorsqu’un facteur identifié la rend réellement impossible à évaluer malgré l’adaptation de l’examen (intubation ou trachéotomie pour la réponse verbale, yeux fermés par un facteur local, paralysie) ; le total n’est alors pas rapporté.",
+   "motif": "Constat Codex P1 (PR 171) : NT réservé à la composante réellement non testable ; adapter la communication, coter la meilleure réponse observée et documenter le facteur ; NT verbal explicite pour intubation/trachéotomie ; sédation levée temporairement (test de réveil), elle peut modifier yeux et motricité.",
+   "sources": [
+    {
+     "id": "S2",
+     "lecture": "integrale"
+    },
+    {
+     "id": "S1",
+     "lecture": "integrale"
+    }
+   ]
+  }
+ ]
+}

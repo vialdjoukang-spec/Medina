@@ -1,0 +1,185 @@
+{
+ "mission": "ALPHA77-CLAUDE-N18-INTEGRATE",
+ "generation": 2,
+ "code": "N18",
+ "fragment": "S04",
+ "date": "2026-10-15",
+ "branche": "claude/alpha77/n18-integrate-g2",
+ "base": "3969903cc87329bc471bf8ab7bce77f25544b76e",
+ "source_commit": "e5f8d171130b0d3a90669c40f6c887ad3d6600d7",
+ "controles": {
+  "build_medina_audit": {
+   "commande": "build_medina.audit(src, nom) sur chapters/N18/*.html",
+   "resultat": "{} pour les six fichiers"
+  },
+  "identifiants": "aucun id dupliqué ; toutes les clés data-k des six HTML ont un gabarit data-pop",
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static N18",
+   "resultat": "OK",
+   "mesures": "mots 59137, fenêtres 127, quiz 7, pareto 22"
+  },
+  "test_v7_navigateur": {
+   "commande": "MEDINA_OUT=<scratchpad>/out/t (fragment S04 renommé MEDINA.html) MEDINA_CHROMIUM=/opt/pw-browsers/chromium-1194/chrome-linux/chrome python3 test_v7.py N18",
+   "resultat": "OK (1300 et 390 px)",
+   "note": "paquet Python playwright installé par pip ; aucun navigateur téléchargé"
+  },
+  "construction_fragment": {
+   "commande": "MEDINA_OUT=<scratchpad>/out python3 build_front.py --fragment S04",
+   "fichier": "MEDINA_S04_renal-voies-urinaires.html",
+   "octets_non_compresses": 5470347,
+   "octets_compresses": 4014299,
+   "gabarits": 404
+  },
+  "construction_complete": {
+   "commande": "MEDINA_OUT=<scratchpad>/out python3 build_front.py",
+   "resultat": "exit 0",
+   "octets_non_compresses": 93785768,
+   "octets_compresses": 67046303,
+   "gabarits": 10717,
+   "note": "alertes de couverture J96 et I51 étrangères à N18"
+  },
+  "rendu_chromium": {
+   "1280": {
+    "sous_onglets": [
+     {
+      "s": "n18-s-semio",
+      "selected": "true",
+      "visibles": [
+       "n18-s-semio"
+      ]
+     },
+     {
+      "s": "n18-s01-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s01-sci"
+      ]
+     },
+     {
+      "s": "n18-s02-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s02-sci"
+      ]
+     },
+     {
+      "s": "n18-s03-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s03-sci"
+      ]
+     },
+     {
+      "s": "n18-s04-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s04-sci"
+      ]
+     },
+     {
+      "s": "n18-s05-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s05-sci"
+      ]
+     }
+    ],
+    "figure": {
+     "largeur": 717,
+     "hauteur": 974,
+     "police_min_rendue_px": 26.9,
+     "deborde": false,
+     "scrollX": false
+    },
+    "fenetre": {
+     "open": true,
+     "titre": null,
+     "long": 2579
+    },
+    "pareto": {
+     "open": true,
+     "long": 1109,
+     "ratio": null
+    },
+    "taille_affichee": "20 px",
+    "police": "20px",
+    "livre": {
+     "pressed": "true",
+     "scrollX": false
+    },
+    "erreurs_js": []
+   },
+   "390": {
+    "sous_onglets": [
+     {
+      "s": "n18-s-semio",
+      "selected": "true",
+      "visibles": [
+       "n18-s-semio"
+      ]
+     },
+     {
+      "s": "n18-s01-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s01-sci"
+      ]
+     },
+     {
+      "s": "n18-s02-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s02-sci"
+      ]
+     },
+     {
+      "s": "n18-s03-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s03-sci"
+      ]
+     },
+     {
+      "s": "n18-s04-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s04-sci"
+      ]
+     },
+     {
+      "s": "n18-s05-sci",
+      "selected": "true",
+      "visibles": [
+       "n18-s05-sci"
+      ]
+     }
+    ],
+    "figure": {
+     "largeur": 296,
+     "hauteur": 402,
+     "police_min_rendue_px": 11.1,
+     "deborde": false,
+     "scrollX": false
+    },
+    "fenetre": {
+     "open": true,
+     "titre": null,
+     "long": 2579
+    },
+    "pareto": {
+     "open": true,
+     "long": 1109,
+     "ratio": null
+    },
+    "erreurs_js": []
+   }
+  },
+  "ai_session_guard_check": "passed (base 3969903 ; vérifié sur le commit final, voir PR)"
+ },
+ "captures": "integration/captures/g2/ : ouverture 1280, figure 9 à 390 et 1280, S05 à 390 et 1280, fenêtre S05 à 390, mode Livre + police 20 px à 1280",
+ "mention": "Contrôles techniques et revue IA ; aucune validation médicale humaine.",
+ "correctif_codex_p1": {
+  "constat": "PR 172 discussion_r4289027767 : non-récidive NPHS1 Fin-major",
+  "controles": "build_medina.audit() == {} ; test_v7.py --static N18 OK ; build_front.py --fragment S04 OK (5471283 → 4014771 octets) ; test_v7.py N18 Chromium OK"
+ }
+}
