@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Read-only remote audit gauge. Cache and optional receipts are local files only."""
-import argparse,hashlib,importlib.util,json,os,re,subprocess,sys,time
+import argparse,hashlib,importlib.util,json,os,re,subprocess,sys,time,urllib.error,urllib.request
 from pathlib import Path
 FIRST=['I63','G01','E10','E05','N17','D69','D64']
 TTL=30
@@ -11,12 +11,31 @@ def digest(value):
  return hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def read_json(root,sha,path):
  return json.loads(git(root,'show',sha+':'+path))
+class NoPublicRedirect(urllib.request.HTTPRedirectHandler):
+ def redirect_request(self,request,fp,code,msg,headers,newurl):
+  raise urllib.error.HTTPError(request.full_url,code,'Public run redirects refused',headers,fp)
+def public_run_command(original):
+ """Transport-only override for one public, read-only GitHub endpoint."""
+ def command(args,*pos,**kwargs):
+  if not (isinstance(args,(list,tuple)) and len(args)==3 and args[:2]==['gh','api'] and
+          isinstance(args[2],str) and re.fullmatch(r'repos/vialdjoukang-spec/Medina/actions/runs/[1-9][0-9]*',args[2])):
+   return original(args,*pos,**kwargs)
+  url='https://api.github.com/'+args[2]
+  request=urllib.request.Request(url,headers={'Accept':'application/vnd.github+json','User-Agent':'Medina-audit-gauge'})
+  opener=urllib.request.build_opener(NoPublicRedirect())
+  with opener.open(request,timeout=15) as response:
+   if response.status!=200 or response.geturl()!=url:raise ValueError('Public run endpoint mismatch')
+   body=response.read(2*1024*1024+1)
+   if len(body)>2*1024*1024:raise ValueError('Public run response too large')
+   return body
+ return command
 def verify_closures(root,main,q,candidates):
  closed=[];errors=[]
  try:
   engine_path=Path(root)/'tools/starter_codex.py'
   if git(root,'show',main+':tools/starter_codex.py')!=engine_path.read_text().strip():raise ValueError('local engine differs from remote main')
   spec=importlib.util.spec_from_file_location('audit_starter_engine',engine_path);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+  module.command=public_run_command(module.command)
   repo=module.Repository(root);repo.main=main
   checker=getattr(repo,'closure_proof',None) or repo.closure
   for item in q:

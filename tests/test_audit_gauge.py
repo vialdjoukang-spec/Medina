@@ -2,11 +2,11 @@ import json,tempfile,time,unittest
 from unittest.mock import patch
 from pathlib import Path
 try:
- from tools.audit_gauge import snapshot,digest,collect,FIRST
+ from tools.audit_gauge import snapshot,digest,collect,FIRST,public_run_command
  from tools.audit_response_gate import validate,stop_decision
  MODULE='tools.audit_gauge'
 except ModuleNotFoundError:
- from audit_gauge import snapshot,digest,collect,FIRST
+ from audit_gauge import snapshot,digest,collect,FIRST,public_run_command
  from audit_response_gate import validate,stop_decision
  MODULE='audit_gauge'
 class GaugeTests(unittest.TestCase):
@@ -76,6 +76,29 @@ class GaugeTests(unittest.TestCase):
   import subprocess,sys
   r=subprocess.run([sys.executable,str(Path(__file__).resolve().parents[1]/'tools/audit_response_gate.py'),'--stop-hook'],input='{',capture_output=True,text=True)
   self.assertEqual(r.returncode,0);self.assertEqual(json.loads(r.stdout)['decision'],'block')
+ def test_public_run_transport_exact_endpoint_only(self):
+  from unittest.mock import Mock
+  original=Mock(return_value=b'original');wrapped=public_run_command(original)
+  for endpoint in ['repos/other/Medina/actions/runs/1','repos/vialdjoukang-spec/Medina/actions/runs/0','repos/vialdjoukang-spec/Medina/actions/runs/1?x=2','repos/vialdjoukang-spec/Medina/actions/runs/1/../2']:
+   self.assertEqual(wrapped(['gh','api',endpoint],'/repo'),b'original')
+  self.assertEqual(original.call_count,4)
+  response=Mock();response.status=200;response.geturl.return_value='https://api.github.com/repos/vialdjoukang-spec/Medina/actions/runs/123';response.read.return_value=b'{"conclusion":"failure"}'
+  response.__enter__=Mock(return_value=response);response.__exit__=Mock(return_value=False)
+  opener=Mock();opener.open.return_value=response
+  with patch(MODULE+'.urllib.request.build_opener',return_value=opener):
+   self.assertEqual(wrapped(['gh','api','repos/vialdjoukang-spec/Medina/actions/runs/123'],'/repo'),b'{"conclusion":"failure"}')
+  req=opener.open.call_args.args[0];self.assertEqual(req.full_url,response.geturl.return_value);self.assertNotIn('Authorization',req.headers);self.assertEqual(opener.open.call_args.kwargs['timeout'],15)
+ def test_public_transport_auth_failure_propagates(self):
+  import urllib.error
+  from unittest.mock import Mock
+  opener=Mock();opener.open.side_effect=urllib.error.HTTPError('https://api.github.com/',401,'Unauthorized',{},None)
+  with patch(MODULE+'.urllib.request.build_opener',return_value=opener):
+   with self.assertRaises(urllib.error.HTTPError):public_run_command(Mock())(['gh','api','repos/vialdjoukang-spec/Medina/actions/runs/123'],'/repo')
+ def test_original_pages_run_rejects_workflow_failure(self):
+  from tools import starter_codex as engine
+  value={'workflow_id':engine.PAGES_WORKFLOW,'path':'.github/workflows/pages.yml','repository':{'full_name':engine.PAGES_REPOSITORY},'head_repository':{'full_name':engine.PAGES_REPOSITORY},'head_sha':'a'*40,'head_branch':'main','status':'completed','conclusion':'failure'}
+  with patch.object(engine,'command',return_value=json.dumps(value).encode()):
+   with self.assertRaises(engine.Blocked):engine.Repository('/unused').pages_run({'run_id':123,'main_sha':'a'*40})
  def test_stop_adapter(self):
   s=self.fixture({'reports':{}})
   for active in [False,True]:
