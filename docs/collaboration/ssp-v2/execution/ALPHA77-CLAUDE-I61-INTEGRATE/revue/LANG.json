@@ -1,0 +1,64 @@
+{
+ "actor": "Claude",
+ "code": "I61",
+ "mission": "ALPHA77-CLAUDE-I61-INTEGRATE",
+ "reviewer_role": "Agent P (préparateur et contrôleur), revue finale Phase 2",
+ "status": "closed",
+ "medical_human_validation": false,
+ "base_commit": "abd681e5",
+ "reviewed_commit": "7bde3423",
+ "source_files_sha256": {
+  "chapters/I61/I61_a.html": "821f4d4b9ebc96b28613638b471f9b2d425610ab4638a4d06efccc3af4331c83",
+  "chapters/I61/I61_b.html": "e775a18fa119a2e43f92189094586c1730ec1f286da9a133267dada6ac290f8c",
+  "chapters/I61/I61_c.html": "e9d1f44823a91de585ec4f607954a310c2b3870e54dfa0e34c8167e7bbf0db4e",
+  "chapters/I61/I61_d.html": "973cce34a40b6ef6c62b7e295e9b4e40e0cafb48e8b5b2d1526c47e1b2cc3b19",
+  "chapters/I61/I61_pop1.html": "4523ffca24a40006b90e3932814cb0a42cbfd163166587ed59d6a4858e83792f",
+  "chapters/I61/I61_pop2.html": "6e08f9dd51216feb7c277c0b83178ef09244f5418cc7aecc8de08ff53a27442f",
+  "glossary/i61.py": "66c11a9eb760c5e336493f080ef5ec35631e70ed74426062cade9c6cd8401d19"
+ },
+ "reviewed_files_sha256": {
+  "chapters/I61/I61_a.html": "c9593294231eb02eadd9d8bb3fff273b6ef1e2d5a7ba306f6e80856935ac5a6c",
+  "chapters/I61/I61_b.html": "4195da4da0a061224f6529d0bfb58f0e5f6de246454110cd84721ea1460469b6",
+  "chapters/I61/I61_c.html": "f5a21a7e4d9b4f1d026a6b713f8645a967b34e766dae0b83d66b1d4bc112df04",
+  "chapters/I61/I61_d.html": "6ab44f584c5b49410c114d557e84eb74eb820a712b6838b48be0ac991922502c",
+  "chapters/I61/I61_pop1.html": "9a511c82147375a07156d46e11748b3963018b010c1fc32b4f4c2729803b0107",
+  "chapters/I61/I61_pop2.html": "1fe1a4cc8f5373afb5a2cf52312fdc433d6987944065bb780fe16fedbab4fc73",
+  "glossary/i61.py": "afbc9a86b24351cf53a10da06ce1f56a1d1065b7c7ee7fe364df1758f6cf5aeb"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "date": "2026-10-15",
+ "kind": "LANG",
+ "scope": "Application des 206 entrées de docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-LANG/propositions.json et qualité rédactionnelle de la sémiologie ajoutée.",
+ "unresolved_blockers": [],
+ "findings": [
+  {
+   "id": "LANG-APPLICATION",
+   "status": "resolved",
+   "evidence": "Contrôle mécanique sur les fichiers finaux : 184 propositions ont leur texte « nouveau » présent, 0 texte « ancien » résiduel ; 4 n’ont ni l’un ni l’autre (LANG-112, 127, 201 remplacées par les réécritures MED-09, MED-02, MED-03 ; LANG-133 fondue dans MED-18), conformément au journal de W."
+  },
+  {
+   "id": "LANG-RENVOIS",
+   "status": "resolved",
+   "evidence": "18 renvois médicaux tranchés par W avec les sources du MED (journal corrections.json, ex. LANG-019 libellés OFS I67.10/I67.11, LANG-023 dénominateur 664 décès)."
+  },
+  {
+   "id": "DIFFERES",
+   "status": "non_blocking",
+   "evidence": "Choix éditoriaux en attente non appliqués, comme prescrit : espaces insécables globales (GLOB-01), « fibrillation atriale/auriculaire », groupe LIENS d’E11 ; GLOB-02 à GLOB-08 non locaux."
+  },
+  {
+   "id": "SEMIO-REDACTION",
+   "status": "resolved",
+   "evidence": "Sémiologie : phrases complètes, tableaux introduits et lus, encadrés « À retenir » en fin de section, aucune formule de chantier ni « cet îlot » ; classes de la liste fermée ; abréviations couvertes (audit {})."
+  }
+ ],
+ "evidence": [
+  "python3 test_v7.py --static I61 → OK (38653 mots, 76 fenêtres, 10 quiz, 21 Pareto)",
+  "build_medina.audit() sur l’ensemble des fichiers I61 → {}",
+  "build_front.py --fragment S08 depuis git archive 7bde3423 (scratchpad) puis rendu Chromium 1194 à 1360 et 390 px : premier sous-onglet « Sémiologie fondamentale et analytique » sélectionné et visible, Anatomie masquée, changement de sous-onglet correct, 16 mots verts de la sémiologie et 11 du bloc clinique ouvrent une fiche réelle, aucune erreur JavaScript, aucun débordement horizontal (390/390).",
+  "Limite d’indépendance : l’Agent P a rédigé la préparation sémiologique (prep/) que W a intégrée ; la revue de cette partie est une relecture par son auteur, contrôlée par diff (différences d’espaces uniquement) et par rendu réel.",
+  "Revue IA, distincte d’une validation médicale humaine."
+ ]
+}

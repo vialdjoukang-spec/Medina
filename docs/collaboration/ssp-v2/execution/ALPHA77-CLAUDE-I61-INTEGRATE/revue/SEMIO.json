@@ -1,0 +1,107 @@
+{
+ "actor": "Claude",
+ "code": "I61",
+ "mission": "ALPHA77-CLAUDE-I61-INTEGRATE",
+ "reviewer_role": "Agent P (préparateur et contrôleur), revue finale Phase 2",
+ "status": "closed",
+ "medical_human_validation": false,
+ "base_commit": "abd681e5",
+ "reviewed_commit": "7bde3423",
+ "source_files_sha256": {
+  "chapters/I61/I61_a.html": "821f4d4b9ebc96b28613638b471f9b2d425610ab4638a4d06efccc3af4331c83",
+  "chapters/I61/I61_b.html": "e775a18fa119a2e43f92189094586c1730ec1f286da9a133267dada6ac290f8c",
+  "chapters/I61/I61_c.html": "e9d1f44823a91de585ec4f607954a310c2b3870e54dfa0e34c8167e7bbf0db4e",
+  "chapters/I61/I61_d.html": "973cce34a40b6ef6c62b7e295e9b4e40e0cafb48e8b5b2d1526c47e1b2cc3b19",
+  "chapters/I61/I61_pop1.html": "4523ffca24a40006b90e3932814cb0a42cbfd163166587ed59d6a4858e83792f",
+  "chapters/I61/I61_pop2.html": "6e08f9dd51216feb7c277c0b83178ef09244f5418cc7aecc8de08ff53a27442f",
+  "glossary/i61.py": "66c11a9eb760c5e336493f080ef5ec35631e70ed74426062cade9c6cd8401d19"
+ },
+ "reviewed_files_sha256": {
+  "chapters/I61/I61_a.html": "c9593294231eb02eadd9d8bb3fff273b6ef1e2d5a7ba306f6e80856935ac5a6c",
+  "chapters/I61/I61_b.html": "4195da4da0a061224f6529d0bfb58f0e5f6de246454110cd84721ea1460469b6",
+  "chapters/I61/I61_c.html": "f5a21a7e4d9b4f1d026a6b713f8645a967b34e766dae0b83d66b1d4bc112df04",
+  "chapters/I61/I61_d.html": "6ab44f584c5b49410c114d557e84eb74eb820a712b6838b48be0ac991922502c",
+  "chapters/I61/I61_pop1.html": "9a511c82147375a07156d46e11748b3963018b010c1fc32b4f4c2729803b0107",
+  "chapters/I61/I61_pop2.html": "1fe1a4cc8f5373afb5a2cf52312fdc433d6987944065bb780fe16fedbab4fc73",
+  "glossary/i61.py": "afbc9a86b24351cf53a10da06ce1f56a1d1065b7c7ee7fe364df1758f6cf5aeb"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "date": "2026-10-15",
+ "kind": "SEMIO",
+ "requirement": "fundamental_analytical_semiology",
+ "contract": "docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml",
+ "unresolved_blockers": [],
+ "findings": [
+  {
+   "id": "SEM-01/02",
+   "status": "resolved",
+   "evidence": "I61_c : <button id=\"i61-tab-semio\" role=\"tab\" aria-selected=\"true\" aria-controls=\"i61-s-semio\" data-s=\"i61-s-semio\"> en première position de .sci-bar ; <div class=\"sci\" id=\"i61-s-semio\" role=\"tabpanel\" aria-labelledby=\"i61-tab-semio\"> en tête de .sci-body, sans hidden ; quatre autres boutons aria-selected=\"false\", disciplines hidden ; premier h2 « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »."
+  },
+  {
+   "id": "SEM-03",
+   "status": "resolved",
+   "evidence": "Critères d’audit_sciences reproduits sur i61-s-semio : 4235 mots, 2 figures avec figcaption et svg[role=img][aria-label] non anatomiques, quatre libellés présents. Les figures photographiques des disciplines historiques (Anatomie, Histologie) n’ont pas de SVG : faux positif connu de l’outil, non bloquant, et aucun SVG n’y a été ajouté (vérifié)."
+  },
+  {
+   "id": "SEM-04",
+   "status": "resolved",
+   "evidence": "test_v7.py --static I61 → OK ; audit {}."
+  },
+  {
+   "id": "SECTIONS",
+   "status": "resolved",
+   "evidence": "Neuf sections data-semiology dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources (i61-sm-1 à 9), chacune entre 314 et 621 mots de contenu propre à la leçon."
+  },
+  {
+   "id": "SEM-05 à SEM-17",
+   "status": "resolved",
+   "evidence": "Tableau des symptômes (mécanisme, valeur, piège) ; technique et seuils (Barré 10 s, Mingazzini 5 s, cotation 0 à 5, item regard du NIHSS) ; mécanismes rattachés à l’anatomie et à la physique du crâne ; normal avant pathologique ; tableau des syndromes ; raisonnement en cinq étapes (<ol>) ; div.alert (seuils 160/90 mmHg, délai 15 minutes, scanner et neurochirurgie) cohérente avec l’alert de I61_b ; discriminants sourcés ; examen numéroté en 11 étapes ; synthèse div.card ; trois cas corrigés (valeur, discrimination, limite)."
+  },
+  {
+   "id": "SEM-18",
+   "status": "resolved",
+   "evidence": "Rendu Chromium : 16 mots verts de la sémiologie et 11 du bloc clinique ouvrent une fiche réelle (aucune « Fiche absente ») ; 13 fenêtres i61-sm-* dans I61_pop2."
+  },
+  {
+   "id": "SEM-19/20",
+   "status": "resolved",
+   "evidence": "29 affirmations sourcées (prep/sources_semiologie.json) : protocole bernois et Kägi (suisses), McGurgan, Murphy et Werring, UCLouvain, ESO–EANS (européens) ; Runchey et McGee signalée comme revue américaine sans valeur de recommandation ; seuils identiques à l’onglet 1 (15 ml, 160/90, 15 minutes, Glasgow > 6, NIHSS < 36)."
+  },
+  {
+   "id": "CLINIQUE-pA",
+   "status": "resolved",
+   "evidence": "I61_b, îlot i61-a08, sous-partie 8.4 avec data-semiology-clinical=\"I61\" : symptômes, anamnèse analytique, signes et examen, discrimination clinique, situations urgentes ; renvoi textuel au sous-onglet."
+  },
+  {
+   "id": "SEM-22",
+   "status": "resolved",
+   "evidence": "390 px : barre de sous-onglets 366/366 px, aucun débordement de page (scrollWidth 390). Police agrandie à 24 px non testée par P ; captures de W dans integration/captures."
+  },
+  {
+   "id": "PARETO",
+   "status": "non_blocking",
+   "evidence": "Pas de Pareto pour la sémiologie : build_medina.pareto_ratios exige <section class=\"mc-ilot\" id=\"…\"> sans autre attribut, incompatible avec data-semiology ; moteur partagé non modifié."
+  },
+  {
+   "id": "FIGURES-PHOTO",
+   "status": "non_blocking",
+   "evidence": "Aucune image ajoutée : photographies candidates (Commons CC BY-SA 4.0 ; Cureus CC BY 4.0) non téléchargeables (HTTP 429/403), déclarées dans prep/figures.json ; aucune anatomie IA dans les dix figures existantes."
+  },
+  {
+   "id": "LACUNES-SEMIO",
+   "status": "non_blocking",
+   "evidence": "Déclarées dans le cours (i61-sm-8, i61-sm-9, fenêtre i61-sm-raideur) et dans prep/sources_semiologie.json : fréquences par siège non chiffrées, technique de la raideur de nuque, mécanisme de la parésie homolatérale, côté de la mydriase, textes intégraux inaccessibles, absence de valeurs européennes récentes."
+  }
+ ],
+ "evidence": [
+  "python3 test_v7.py --static I61 → OK (38653 mots, 76 fenêtres, 10 quiz, 21 Pareto)",
+  "build_medina.audit() sur l’ensemble des fichiers I61 → {}",
+  "build_front.py --fragment S08 depuis git archive 7bde3423 (scratchpad) puis rendu Chromium 1194 à 1360 et 390 px : premier sous-onglet « Sémiologie fondamentale et analytique » sélectionné et visible, Anatomie masquée, changement de sous-onglet correct, 16 mots verts de la sémiologie et 11 du bloc clinique ouvrent une fiche réelle, aucune erreur JavaScript, aucun débordement horizontal (390/390).",
+  "Correspondance des affirmations : prep/sources_semiologie.json (sha256 6d3dcc3996217f3db2cb2c997e878cf38b34aca81fde13aebbb59d4f20557930).",
+  "Diff préparation/intégration : différences d’espaces uniquement.",
+  "Limite d’indépendance : l’Agent P a rédigé la préparation sémiologique (prep/) que W a intégrée ; la revue de cette partie est une relecture par son auteur, contrôlée par diff (différences d’espaces uniquement) et par rendu réel.",
+  "Revue IA, distincte d’une validation médicale humaine."
+ ]
+}
