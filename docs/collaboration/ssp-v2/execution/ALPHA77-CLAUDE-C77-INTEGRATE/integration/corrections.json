@@ -1558,5 +1558,38 @@
    "test_v7_static": "OK (C77 mots 24315, fenêtres 67, pareto 21)",
    "B.audit": "{}"
   }
+ },
+ "revue_codex_pr158": {
+  "date": "2026-10-15",
+  "agent": "W",
+  "entrees": [
+   {
+    "constat": "Codex-1 (L75) : « presque toujours une masse que l’on palpe » faux pour les ganglions profonds (C77.1, C77.2, C77.5)",
+    "action": "Phrase nuancée : découverte d’une adénopathie superficielle par le patient, par un examen ou plus rarement par des signes de compression ; ganglions profonds non palpables, adénopathies abdominales et pelviennes souvent fortuites ou découvertes au bilan d’une autre affection, adénopathies médiastinales révélées au scanner et explorées par ponction transbronchique échoguidée ; scanner et IRM dans le bilan d’une polyadénopathie ; À retenir complété",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "#c77-sm-1, 1er paragraphe ; #c77-sm-3 div.key À retenir",
+    "source": "Item 291 UMVF 2010-2011, I.1 Circonstances de découverte ; Hanzalová et Matter, Swiss Medical Weekly 2024, « Mediastinal and abdominal lymphadenopathy » ; Richner et Laifer, Swiss Medical Weekly 2010, Imaging studies"
+   },
+   {
+    "constat": "Codex-2 (L117) : connecteurs de la figure « Du mécanisme au signe » sans pointe de flèche",
+    "action": "Marker propre c77-sm-fl (modèle c77-imm-fl), six chemins séparés avec marker-end ; texte porté de 12 à 14 pour la lisibilité ; rendu Chromium vérifié à 390 px (libellés dans leurs boîtes, pointes visibles) ; autres SVG inchangés",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "#c77-sm-3 figure",
+    "source": "—"
+   },
+   {
+    "constat": "Codex-3 (L118) : causalité « dur et indolore parce qu’il n’est pas le siège d’une réaction inflammatoire » non établie par les sources",
+    "action": "Remplacée par l’association sourcée (ganglion envahi décrit ferme ou dur, indolore, non inflammatoire puis fixé ; aucun signe palpatoire fiable) dans le paragraphe de lecture, l’introduction de #c77-sm-3, l’encadré À retenir, la boîte et l’aria-label de la figure (« Souvent dur, indolore, puis fixé ; non fiable ») et la fenêtre c77-sm-consistance (rubrique Mécanisme) ; « celle de C77 » remplacé par « celle de la métastase ganglionnaire »",
+    "fichier": "chapters/C77/C77_c.html ; chapters/C77/C77_pop2.html",
+    "ancre": "#c77-sm-3 ; template c77-sm-consistance",
+    "source": "Collège de médecine interne 2013 ; Richner et Laifer, Swiss Medical Weekly 2010 (« all these signs do not reliably differentiate between benign and malignant causes »)"
+   }
+  ],
+  "controles": {
+   "test_v7_static": "OK (C77 mots 24538, fenêtres 67, pareto 21)",
+   "B.audit": "{}",
+   "rendu_390px": "figure #c77-sm-3 vérifiée dans Chromium"
+  },
+  "recu": "non régénéré (relecture P attendue)"
  }
 }
