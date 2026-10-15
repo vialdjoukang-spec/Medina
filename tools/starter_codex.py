@@ -374,13 +374,14 @@ class Repository:
                  '--remote', self.remote, '--worktree', str(directory)], self.root)
 
 
-def prompt_for(batch, config, index, coordinator):
+def prompt_for(batch, config, index, coordinator, base):
+    need(re.fullmatch(r'[0-9a-f]{40}', base) is not None, 'Exact SHA40 comparison base required')
     return '''Execute only the following preapproved Codex batch. Read AGENTS.md, docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml and current SSP V2 guards from the exact approved main base of this worktree. Cardiologie is a frontend reference in read-only mode; do not edit its content or shared engine without a separate mission.
 You are the bounded coordinator, not governance: never approve missions or overwrite main.
 Acquire every mission with ai_session_guard.py, create its exclusive worktree at exact base, and start it before writes.
 Source corrections MUST use the matching per-code INTEGRATE mission, never coordinator paths or audit paths.
 For this adopted first batch, existing MED/LANG work is already delivered: adopt and inspect it, do not redispatch the same unchanged audits.
-New semiology requirement applies to all seven now: put its local data-s tab FIRST in pS, aria-selected=true, panel initially visible; first ilot h3 EXACTLY "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?". Run existing tests/audit_sciences.py for changed courses; preserve its existing >=280 words, accessible sourced figure and four science-to-clinic/exam/treatment/key-point callouts, without inventing new word thresholds or medical claims.
+New semiology requirement applies to all seven now: put its local data-s tab FIRST in pS, aria-selected=true, panel initially visible; first ilot h3 EXACTLY "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?". Run python3 tests/audit_sciences.py --base %s --codes CHANGED_CODES for changed courses, replacing CHANGED_CODES with their actual codes. This exact approved comparison commit must remain in the report; never substitute a branch, HEAD or the historical c50 base. A missing source at that base fails unless an approved new-production receipt matches the current files. Preserve existing >=280 words, accessible sourced SVG or img with src/alt and caption, navigation and four science-to-clinic/exam/treatment/key-point callouts, without inventing new word thresholds or medical claims.
 Then integrate the substantive sourced fundamental/analytical panel and clinical pathology signs, then obtain actual updated final audit attestations for that changed content.
 For subsequent batches, only launch missing work: new lessons require PRODUCE complete before MED/LANG;
 MED uses GPT6.1 high, LANG GPT6.1 medium and preserves medical content. Own at most these seven assignments.
@@ -396,7 +397,7 @@ Coordinator manifest: %s
 Batch index: %s (first batch is adoption only)
 Assignments: %s
 Config contract: %s
-''' % (json.dumps(coordinator), index, json.dumps(batch), json.dumps({'schema_version': 1, 'closure_contract': '7_STARTER_CODEX.md'}))
+''' % (base, json.dumps(coordinator), index, json.dumps(batch), json.dumps({'schema_version': 1, 'closure_contract': '7_STARTER_CODEX.md'}))
 
 
 class Engine:
@@ -486,7 +487,7 @@ class Engine:
         try:
             self.repo.prepare(coordinator, directory)
             revision = self.transition(revision, state, phase='RUNNING', worktree=str(directory))
-            prompt = prompt_for(batch, self.cfg, index, coordinator)
+            prompt = prompt_for(batch, self.cfg, index, coordinator, self.repo.main)
             prompt += '\nEvery Image_Codex_Finder call MUST pass --campaign-state ' + str(self.runtime / 'control.json') + '. All local copies share this control file; independent machines are not globally stopped by this local file.\n'
             if self.cfg.get('worker_backend', 'codex_cli') == 'native_handoff':
                 request_id = uuid.uuid4().hex
