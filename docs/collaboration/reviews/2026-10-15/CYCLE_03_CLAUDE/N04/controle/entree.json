@@ -1,0 +1,91 @@
+{
+ "actor": "Claude — coordinateur",
+ "verdict": "conforme",
+ "checked_at": "2026-10-15T11:39:55.711823+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Instruction de Vial : cycle 3 en publication directe, contrôle du coordinateur requis avant injection."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/auteur.json",
+     "sha256": "19eb8edef593542eb673d778ee0c5c40edd151649d91befb826886d1a106e9ec",
+     "explanation": "Preuve auteur de N04 : sept sources et images du dossier de livraison, empreintes vérifiées par la garde."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/source_ledger_claude.json",
+     "sha256": "0099ac754f97260a733fba7250bf60c8c702d55c6c6a09bc67a55d9c1c342929",
+     "explanation": "Registre des sources réellement lues par l'auteur, lié aux empreintes finales."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/contexte_suisse_claude.json",
+     "sha256": "87b2e5bdfc36d9dcbffb807d5d1b4720af34a63f7e20104baa2a19b887cf5ce0",
+     "explanation": "Matrice suisse de l'auteur, validée par swiss_context_proof lors du contrôle."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/auteur.json",
+     "sha256": "19eb8edef593542eb673d778ee0c5c40edd151649d91befb826886d1a106e9ec",
+     "explanation": "Le coordinateur n'a pas rédigé la leçon ; l'auteur est un agent distinct."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/images_claude.json",
+     "sha256": "fb9a012e22abc08e176a33d7445cce1eed273fc7770c7e3aa9c215d4551e7421",
+     "explanation": "Manifeste des images ; quatre onglets, fenêtres, images et quatre captures contrôlés par l'outil."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Aucun audit non réalisé n'est déclaré ; revue IA, sans validation médicale humaine ; audit différé après le Cycle 30."
+    }
+   ]
+  }
+ ]
+}

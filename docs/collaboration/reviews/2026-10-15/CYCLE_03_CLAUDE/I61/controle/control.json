@@ -1,0 +1,217 @@
+{
+ "code": "I61",
+ "actor": "Claude — coordinateur",
+ "runtime_agent_id": "claude-code/session_018toCfLY3F4d6361mEXeZ8d/coordinateur",
+ "medical_human_validation": false,
+ "entry": {
+  "actor": "Claude — coordinateur",
+  "verdict": "conforme",
+  "checked_at": "2026-10-15T11:33:16.545560+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Instruction de Vial : cycle 3 en publication directe, contrôle du coordinateur requis avant injection."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/auteur.json",
+      "sha256": "8c3a8f66c2826b837a7112dededc4f46f508de6885e146f2f4148c20cab8fa67",
+      "explanation": "Preuve auteur de I61 : sept sources et images du dossier de livraison, empreintes vérifiées par la garde."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/source_ledger_claude.json",
+      "sha256": "dbbe235e952cb94f7fd65c5f340d577f2b86ed04494b8c6365a3bce37cb20d64",
+      "explanation": "Registre des sources réellement lues par l'auteur, lié aux empreintes finales."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/contexte_suisse_claude.json",
+      "sha256": "4d86a0e927a48e10477a8972b827c6ff992214308d5587cae728bac88f48fa28",
+      "explanation": "Matrice suisse de l'auteur, validée par swiss_context_proof lors du contrôle."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/auteur.json",
+      "sha256": "8c3a8f66c2826b837a7112dededc4f46f508de6885e146f2f4148c20cab8fa67",
+      "explanation": "Le coordinateur n'a pas rédigé la leçon ; l'auteur est un agent distinct."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/images_claude.json",
+      "sha256": "f23040925c8929c7a3c29f685a8de189cae1d3c8972582ef7805ce8688d943c3",
+      "explanation": "Manifeste des images ; quatre onglets, fenêtres, images et quatre captures contrôlés par l'outil."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Aucun audit non réalisé n'est déclaré ; revue IA, sans validation médicale humaine ; audit différé après le Cycle 30."
+     }
+    ]
+   }
+  ]
+ },
+ "exit": {
+  "actor": "Claude — coordinateur",
+  "verdict": "conforme",
+  "checked_at": "2026-10-15T11:33:37.684999+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Instruction de Vial : cycle 3 en publication directe, contrôle du coordinateur requis avant injection."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/auteur.json",
+      "sha256": "8c3a8f66c2826b837a7112dededc4f46f508de6885e146f2f4148c20cab8fa67",
+      "explanation": "Preuve auteur de I61 : sept sources et images du dossier de livraison, empreintes vérifiées par la garde."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/source_ledger_claude.json",
+      "sha256": "dbbe235e952cb94f7fd65c5f340d577f2b86ed04494b8c6365a3bce37cb20d64",
+      "explanation": "Registre des sources réellement lues par l'auteur, lié aux empreintes finales."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/contexte_suisse_claude.json",
+      "sha256": "4d86a0e927a48e10477a8972b827c6ff992214308d5587cae728bac88f48fa28",
+      "explanation": "Matrice suisse de l'auteur, validée par swiss_context_proof lors du contrôle."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/auteur.json",
+      "sha256": "8c3a8f66c2826b837a7112dededc4f46f508de6885e146f2f4148c20cab8fa67",
+      "explanation": "Le coordinateur n'a pas rédigé la leçon ; l'auteur est un agent distinct."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/images_claude.json",
+      "sha256": "f23040925c8929c7a3c29f685a8de189cae1d3c8972582ef7805ce8688d943c3",
+      "explanation": "Manifeste des images ; quatre onglets, fenêtres, images et quatre captures contrôlés par l'outil."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Aucun audit non réalisé n'est déclaré ; revue IA, sans validation médicale humaine ; audit différé après le Cycle 30."
+     }
+    ]
+   }
+  ]
+ },
+ "final_files": {
+  "chapters/I61/I61_a.html": "821f4d4b9ebc96b28613638b471f9b2d425610ab4638a4d06efccc3af4331c83",
+  "chapters/I61/I61_b.html": "e775a18fa119a2e43f92189094586c1730ec1f286da9a133267dada6ac290f8c",
+  "chapters/I61/I61_c.html": "e9d1f44823a91de585ec4f607954a310c2b3870e54dfa0e34c8167e7bbf0db4e",
+  "chapters/I61/I61_d.html": "973cce34a40b6ef6c62b7e295e9b4e40e0cafb48e8b5b2d1526c47e1b2cc3b19",
+  "chapters/I61/I61_pop1.html": "4523ffca24a40006b90e3932814cb0a42cbfd163166587ed59d6a4858e83792f",
+  "chapters/I61/I61_pop2.html": "6e08f9dd51216feb7c277c0b83178ef09244f5418cc7aecc8de08ff53a27442f",
+  "glossary/i61.py": "66c11a9eb760c5e336493f080ef5ec35631e70ed74426062cade9c6cd8401d19"
+ },
+ "image_files": {
+  "assets/img/cycle3/i61/ct_of_basal_ganglionic_hemorrhage.png": "8954212e836910c633b6b8d326e166a6cff8c18c1a3081a0b79f3bfa229cbe8c",
+  "assets/img/cycle3/i61/posterior_fossa_hemorrhage.jpg": "15552eedfa59ec30a348b2300bbc93c73ed30c83fb45fe55a67c728a8d8731d2",
+  "assets/img/cycle3/i61/intracerebral_hemorrage_ct_scan.jpg": "94212741678d13fd271b34676c03070db0c29773b895214b4cdf2301afbac7d0",
+  "assets/img/cycle3/i61/ct_angiography_of_a_vascular_malformation_with_intraventricu.jpg": "e1fcbc4903d6367e0bba0f7ca63d71864a01d4fc607def63784fd51497c13318",
+  "assets/img/cycle3/i61/ct_and_mri_of_cerebral_hemorrhages_and_effective_t2_mri_of_s.jpg": "74b39672d9c4c1e8eff988e7052de18552c72d8a04474ad0abfeb883201cca18",
+  "assets/img/cycle3/i61/cerebral_amyloid_angiopathy_intermed_mag.jpg": "fbe1f416bf7497fd3c61e598d290110d5210f012a55acd92ce76e57ff7be7aa2",
+  "assets/img/cycle3/i61/human_brain_central_arteries_anterior_midsagittal_view_descr.jpg": "c8b364f71eb82b8cf0fce742f80c2ed120b5b5ee68e254fd2e3e16bd4abcc7a9"
+ },
+ "blocking_reserves": [],
+ "technical_checks": {
+  "path": "docs/collaboration/reviews/2026-10-15/CYCLE_03_CLAUDE/I61/controle/technique.json",
+  "sha256": "91c1154969574a83272e00116e81a7b7c5b5c7ceafef611715006bc18547e067"
+ },
+ "swiss_context": {
+  "verdict": "conforme",
+  "matrix_path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/contexte_suisse_claude.json",
+  "matrix_sha256": "4d86a0e927a48e10477a8972b827c6ff992214308d5587cae728bac88f48fa28"
+ },
+ "note": "Contrôle technique du coordinateur ; publication directe, audit différé après le Cycle 30. Revue IA, sans validation médicale humaine."
+}

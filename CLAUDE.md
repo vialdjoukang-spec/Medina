@@ -1,3 +1,7 @@
+## Délégation opérationnelle prioritaire — Vial, 15 octobre 2026
+
+Lire [la délégation actuelle](docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md). Claude décide prioritairement de son travail MEDINA et peut adapter les blocages administratifs historiques sans nouvelle permission, sans écraser le travail concurrent. Les sources, contrôles réels et protections GitHub restent obligatoires. Moteur contrôlable dans [l’issue 97](https://github.com/vialdjoukang-spec/Medina/issues/97) : `/medina off` ou `/medina on`. Cette délégation ne constitue pas un compte administrateur ni une validation médicale.
+
 ## ⚠️ REPRISE : lire d'abord [REPRISE_SESSION.md](REPRISE_SESSION.md) — règle absolue de Vial.
 
 ## PROMPT DE VÉRITÉ — entrée obligatoire de chaque leçon (Vial, 15 octobre 2026)
