@@ -1,0 +1,175 @@
+{
+ "mission": "ALPHA77-CLAUDE-E11-INTEGRATE",
+ "code": "E11",
+ "role": "Agent P (préparateur et contrôleur)",
+ "date": "2026-10-15",
+ "statut": "revue IA, distincte d’une validation médicale humaine ; publication_ready reste false jusqu’à intégration et revue finale",
+ "methode": "Inventaire hors ligne (tools/image_clo_finder.py inventory E11) croisé avec la clé figures de ALPHA1-CLAUDE-E11-MED/rapport.json ; recherches par le moteur commun (cache partagé, mode direct) ; ouverture des pages sources et des originaux ; contrôle visuel par lecture d’image.",
+ "journal_recherches": [
+  {
+   "heure_utc": "20:21",
+   "fournisseur": "commons",
+   "requete": "nodular diabetic glomerulosclerosis Kimmelstiel-Wilson",
+   "resultat": "refus : cooldown persistant partagé (autres agents) ; aucun nouvel essai immédiat"
+  },
+  {
+   "heure_utc": "20:23",
+   "fournisseur": "commons",
+   "requete": "nodular diabetic glomerulosclerosis Kimmelstiel-Wilson",
+   "resultat": "HTTP 429, cooldown enregistré, aucun nouvel essai"
+  },
+  {
+   "heure_utc": "20:27",
+   "fournisseur": "europepmc",
+   "requete": "nodular diabetic glomerulosclerosis Kimmelstiel-Wilson renal biopsy case report",
+   "resultat": "6 articles ; PMC12464701 (Gripp et Chan 2025) refusé : licence CC BY-NC-ND ; PMC12571060 (Qasim et al. 2025) : aucune figure"
+  },
+  {
+   "heure_utc": "20:35",
+   "fournisseur": "commons",
+   "requete": "Kimmelstiel-Wilson nodule diabetic glomerulosclerosis PAS",
+   "resultat": "0 résultat"
+  },
+  {
+   "heure_utc": "20:35",
+   "fournisseur": "commons",
+   "requete": "nodular glomerulosclerosis",
+   "resultat": "HTTP 429, cooldown enregistré ; recherche close pour cette figure (consigne : aucun essai en boucle)"
+  },
+  {
+   "heure_utc": "20:35",
+   "fournisseur": "europepmc",
+   "requete": "Semmes-Weinstein monofilament foot sensory examination technique",
+   "resultat": "10 articles ; PMC12583224 (Lefaucheur 2025, CC BY 4.0) examiné puis refusé ; autres sans figure de geste utilisable ou sous licence NC"
+  }
+ ],
+ "figures": [
+  {
+   "id": "E11-FIG-ICONE-REIN",
+   "figure_remplacee": "Pictogramme d’onglet « Physiologie rénale » (silhouette de rein, svg 24 px aria-hidden) — E11_c.html, bouton data-s=\"e11-s-rein\"",
+   "constat": "E11-MED-10 (MINEUR) ; règle Vial : icône décorative en forme d’organe = MINEUR, remplacement par une icône non anatomique",
+   "action": "Remplacer le <svg> du bouton par le pictogramme géométrique d’entonnoir (filtration) de figures.html, bloc 1 ; aucune image raster",
+   "fichier": null,
+   "page": null,
+   "original_url": null,
+   "auteur": "Pictogramme géométrique non anatomique écrit par l’agent P (deux segments et un trapèze) ; il ne représente aucune structure anatomique",
+   "licence": "sans objet (forme géométrique élémentaire)",
+   "licence_url": null,
+   "attribution": null,
+   "sha256": null,
+   "controle_visuel": "Tracé vérifié au code : un trapèze prolongé d’une tige, sans contour d’organe.",
+   "reserves": []
+  },
+  {
+   "id": "E11-FIG-ICONE-SEMIO",
+   "figure_remplacee": "Aucune (nouveau bouton e11-tab-semio)",
+   "action": "Pictogramme de loupe (cercle et segment) du bouton du sous-onglet sémiologie, fourni dans semiologie_sciences.html",
+   "fichier": null,
+   "auteur": "Pictogramme géométrique non anatomique écrit par l’agent P",
+   "licence": "sans objet",
+   "sha256": null,
+   "controle_visuel": "Cercle et segment ; aucune structure anatomique.",
+   "reserves": []
+  },
+  {
+   "id": "E11-FIG-8",
+   "figure_remplacee": "Aucune : conservation, attribution corrigée — E11_b.html#e11-9, Figure 8 (fond d’œil)",
+   "fichier": "assets/img/cycle1/e11/fundus_diabetic_retinopathy.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fundus_-_diabetic_retinopathy.png",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Fundus_-_diabetic_retinopathy.png",
+   "article_source": "Hao S et al., PLoS One 2022;17(10):e0275983, doi:10.1371/journal.pone.0275983, PMC9560484 — figure 3, panneau A",
+   "auteur": "Shaofeng Hao, Changyan Liu, Na Li, Yanrong Wu, Dongdong Li, Qingyue Gao, Ziyou Yuan, Guanyan Li, Huilin Li, Jianzhou Yang, Shengfu Fan",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "Hao et al., PLoS One 2022, figure 3A, CC BY 4.0, via Wikimedia Commons ; modifié : panneau A seul, converti en JPEG",
+   "sha256": "dd765914d618f510811d6f77a654c25a288646299b35ee043004065fa9c1106c",
+   "controle_visuel": "Image locale ouverte le 15.10.2026 (1009 × 857 px) : rétinographie couleur, papille à gauche, macula au centre, exsudats jaunes ponctués au-dessus et en dehors de la macula, lettre « A » en bas à droite. Comparaison avec les figures originales de l’article (téléchargées dans le scratchpad pour contrôle, non publiées) : identique à la moitié gauche de la figure 3 (2008 × 857 px), dont le panneau B porte les annotations du logiciel ; la figure 1 de l’article est un organigramme et la figure 2 montre d’autres fonds d’œil.",
+   "reserves": [
+    "La description Commons indique « Figure 1, panel A » ; l’article publié place ce panneau en figure 3A : la légende doit citer la figure 3A.",
+    "Le panneau A est une photographie réelle affichée dans l’interface du logiciel d’analyse ; les annotations de lésions générées par le logiciel (panneau B) ne sont pas reprises.",
+    "Mention « modifié » requise par CC BY : extraction du panneau A et conversion de format."
+   ]
+  },
+  {
+   "id": "E11-FIG-9",
+   "figure_remplacee": "Aucune : remplacement recherché sans succès — E11_pop1.html, fenêtre e11-mrc, Figure 9 (glomérulosclérose PAS)",
+   "fichier": "assets/img/cycle1/e11/diabetic_glomerulosclerosis_4_pas.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Diabetic_glomerulosclerosis_(4)_PAS.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Diabetic_glomerulosclerosis_%284%29_PAS.jpg",
+   "auteur": "Non établi : « No machine-readable author provided. KGH assumed (based on copyright claims) » selon Commons",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "attribution": "Auteur présumé « KGH » selon Wikimedia Commons (paternité non établie), CC BY-SA 3.0",
+   "sha256": "1336f15aebe7ca0dc68148b3ebb4241af22f9252fba9d40c7c77b45c662033b7",
+   "controle_visuel": "Image ouverte le 15.10.2026 : glomérule coloré à l’acide périodique de Schiff, nodule mésangial homogène acellulaire à gauche, capsule et membranes épaissies ; conforme à la légende.",
+   "reserves": [
+    "ORIGINE (auteur) présumée par Commons, non démontrée : réserve maintenue, jamais un label recevable.",
+    "Aucun remplacement d’auteur certain trouvé : Commons a renvoyé HTTP 429 à deux reprises et 0 résultat une fois ; le seul article candidat avec figure était sous CC BY-NC-ND (refusé).",
+    "À reprendre dans une recherche ultérieure : requête Commons « nodular glomerulosclerosis » (fichiers de l’utilisateur Nephron, à vérifier)."
+   ]
+  },
+  {
+   "id": "E11-FIG-7",
+   "figure_remplacee": "Aucune — E11_a.html#e11-6, Figure 7 (acanthosis nigricans)",
+   "fichier": "assets/img/cycle1/e11/acanthosis_nigricans.jpg",
+   "sha256": "1397eaa16fd17e43c4bcb9f447fe12cb7dbd37af2dd27132246bbe3781d66eee",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Mark F. Brady; Prashanth Rawla",
+   "controle_visuel": "Conforme selon l’audit MED et ATTRIBUTIONS.json du 14.10.2026 ; empreinte locale identique.",
+   "reserves": []
+  },
+  {
+   "id": "E11-FIG-10",
+   "figure_remplacee": "Aucune — E11_pop1.html, fenêtre e11-pied, Figure 10 (ulcère du talon)",
+   "fichier": "assets/img/cycle1/e11/neuropathic_heel_ulcer_diabetic.jpg",
+   "sha256": "2d9c06d984aeffec399f27a4566a759d5f2bcc14407a57937429b954e609071c",
+   "licence": "CC BY 3.0",
+   "auteur": "Jonathan Moore",
+   "controle_visuel": "Conforme selon l’audit MED et ATTRIBUTIONS.json ; empreinte locale identique.",
+   "reserves": []
+  },
+  {
+   "id": "E11-FIG-SVG-1-6",
+   "figure_remplacee": "Aucune — Figures 1 à 6 (organigrammes et frise HGPO)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "controle_visuel": "Cadres textuels et flèches, sans dessin d’organe ; valeurs vérifiées par l’audit MED.",
+   "reserves": [
+    "Figure 3 : « effet incrétine diminué dans le type 2 » non relu (Nauck et Meier), réserve de l’audit MED maintenue."
+   ]
+  },
+  {
+   "id": "E11-FIG-11-12",
+   "figure_remplacee": "Aucune (nouvelles figures du sous-onglet sémiologie)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "fichier": "prep/semiologie_sciences.html (svg en ligne)",
+   "auteur": "Organigrammes textuels écrits par l’agent P, sans structure anatomique",
+   "sources_valeurs": {
+    "Figure 11": [
+     "Ghezzi, Loo et Wright 2018 (4–10 mmol/L ; réabsorption totale ; charge filtrée > capacité maximale)",
+     "FI Forxiga® août 2026 (glycosurie → diurèse osmotique)",
+     "Umpierrez et al. 2024 (diurèse osmotique, natriurèse, contraction du volume, hémoconcentration, état hyperosmolaire si les apports manquent)",
+     "Atila et al. 2026 (polydipsie compensatrice)"
+    ],
+    "Figure 12": [
+     "Eleftheriadou et al. 2024 (atteinte liée à la longueur des fibres, vague en premier, tachycardie de repos, atteinte sympathique, hypotension orthostatique ≥ 20/10 mmHg, intolérance à l’effort, malaise et syncope au lever)"
+    ]
+   },
+   "controle_visuel": "Cinq cadres reliés par des flèches verticales dans chaque figure ; texte lisible à 360 px de large.",
+   "reserves": []
+  },
+  {
+   "id": "E11-FIG-LACUNE-MONOFILAMENT",
+   "figure_remplacee": "Aucune (figure utile à la sémiologie : geste du monofilament)",
+   "fichier": null,
+   "candidat_refuse": {
+    "article": "Lefaucheur JP, Frontiers in Neurology 2025;16:1679277, doi:10.3389/fneur.2025.1679277, figure 1",
+    "licence_article": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "sha256_telecharge": "1a09d19bdef506a7f012a75f497dadf3a0ed8561fd06d92fec790bc4206de5d6",
+    "motif": "Planche composite de photographies d’appareils commerciaux (marques visibles) sans crédit propre à chaque photographie : la licence de l’article ne démontre pas les droits de chaque sous-image ; fichier retiré du dossier d’images et non publié."
+   },
+   "reserves": [
+    "Lacune déclarée : aucune photographie du geste au monofilament avec licence propre vérifiée n’a été retenue ; le sous-onglet utilise un tableau et des fenêtres à la place."
+   ]
+  }
+ ]
+}
