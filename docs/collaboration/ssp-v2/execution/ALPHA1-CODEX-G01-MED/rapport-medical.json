@@ -1,0 +1,171 @@
+{
+  "mission": "ALPHA1-CODEX-G01-MED",
+  "code": "G01* — Méningite au cours d’affections bactériennes classées ailleurs",
+  "modele": "gpt-6.1-sol",
+  "effort": "high",
+  "generation": 1,
+  "base": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "head_audit": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "heureUTC": "2026-10-15T18:32:16.389285+00:00",
+  "source_files_sha256": {
+    "chapters/G01/G01_a.html": "7c5960c8f4c9a71d2e13c4a7eaf8547236565f9e15d28ae2611109852ebb86c6",
+    "chapters/G01/G01_b.html": "1903837d5d4bac4dd61acb0f2785faa2110a8dd33dd2223918beaaf1c933c6de",
+    "chapters/G01/G01_c.html": "a9e13e412be4eafcbb766b6549e6d100dcaa4e61ddd8fa42fd5242c4c7bab385",
+    "chapters/G01/G01_d.html": "317e7ac2ab43992ff60ab4facab8a3a1b3bb6df609c223ef3c1f075b2747739c",
+    "chapters/G01/G01_pop1.html": "eb976ebb44a3e95b87f551afdb6dc10447af8655b4b548ca4b2ffba30a5a0f00",
+    "chapters/G01/G01_pop2.html": "7b4aadad576148c44e9cd6ab749382c147b469be4b1c7c3bbc938650ac4cb0d9",
+    "glossary/g01.py": "ceacc9ea5cb2446340061c0dc3bc02967664e46b529444be0db4c2412ad9ccde"
+  },
+  "lecture": {
+    "fichiers": [
+      "chapters/G01/G01_a.html",
+      "chapters/G01/G01_b.html",
+      "chapters/G01/G01_c.html",
+      "chapters/G01/G01_d.html",
+      "chapters/G01/G01_pop1.html",
+      "chapters/G01/G01_pop2.html",
+      "glossary/g01.py"
+    ],
+    "couverture": "Lecture textuelle des quatre onglets, fenêtres, résumés, tableaux, six quiz, glossaire et six figures SVG ; inventaire des composants dans surfaces.json.",
+    "fenetres": 63,
+    "figures": 6,
+    "limites": "Aucun nouveau rendu navigateur ni capture. Toutes les affirmations ne sont pas confirmées individuellement par une source ouverte. Une rubrique reste LACUNE lorsqu’une composante importante n’est pas prouvée."
+  },
+  "verdict": "AUDIT_REALISE_AVEC_RESERVES_BLOQUANTES — NON_VALIDE",
+  "validation_medicale_humaine": false,
+  "audit_croise": false,
+  "constats": [
+    {
+      "id": "G01-M01",
+      "gravite": "P1",
+      "surface": "G01_b#g01-7, G01_pop2 fenêtreponction",
+      "constat": "La formule « la ponction n’est différée que pour trois raisons » confond les indications de scanner préalable avec l’ensemble des contre-indications à la ponction. La figure 1 du référentiel demande aussi d’évaluer une coagulopathie manifeste et une anticoagulation orale.",
+      "sources": [
+        "EU-MENINGITIS"
+      ],
+      "correction_ou_action": "Distinguer ces deux décisions ; mention ajoutée dans la synthèse et la fenêtre de ponction, sans retarder les antibiotiques.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M02",
+      "gravite": "P1",
+      "surface": "G01_a mécanismes ; G01_b§9.2 ; G01_d ; fenêtresdexaméthasoneetrésumés",
+      "constat": "L’association défavorable de MONALISA est transformée en « contre-indication en pratique » et en arrêt automatique. Une cohorte prospective néerlandaise de 2023 rapporte une association opposée chez 162 adultes : odds ratio ajusté de pronostic défavorable 0,40 (IC 95 % : 0,19–0,81).",
+      "sources": [
+        "CH-FI-DEX",
+        "EU-LISTERIA2023",
+        "EU-MENINGITIS"
+      ],
+      "correction_ou_action": "Les copies exposent les données contradictoires, leurs populations et leurs limites. Réévaluation spécialisée ; aucune règle causale ni contre-indication suisse déduite d’une seule cohorte.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M03",
+      "gravite": "P1",
+      "surface": "G01_a§1.1 ; G01_b§12 ; G01_c§e-5 ; fenêtresindexetcritères",
+      "constat": "Les critères de neuroborréliose probable utilisent « ou » à la place d’une conjonction. La synthèse intrathécale isolée est présentée comme une confirmation, alors que la S3 exige le contexte clinique, le liquide inflammatoire et les critères du niveau probable. Un index peut rester positif pendant des années.",
+      "sources": [
+        "EU-LYME2025"
+      ],
+      "correction_ou_action": "Conjonction et prérequis rétablis ; enrichissement sur la méthode de Reiber, la barrière sang–liquide et la positivité persistante.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M04",
+      "gravite": "P1",
+      "surface": "G01_b§9.3 ; G01_pop2doxycycline",
+      "constat": "« Autorisée quel que soit l’âge de l’enfant » confond la recommandation S3, qui retire la limite de huit ans, avec la FI du produit suisse. Doxycyclin-Mepha réserve l’usage à 12 ans ou moins aux situations graves menaçant le pronostic vital, sans autre traitement disponible et avec un bénéfice attendu supérieur au risque.",
+      "sources": [
+        "CH-FI-DOXY",
+        "EU-LYME2025"
+      ],
+      "correction_ou_action": "Distinguer recommandation clinique et restrictions de la FI ; décision pédiatrique spécialisée, sans posologie inventée.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M05",
+      "gravite": "P1",
+      "surface": "G01_b§9.2 ; G01_dtableaudoses ; G01_pop2dexaméthasone",
+      "constat": "Les doses de FI de 0,15 mg/kg toutes les six heures ou 0,4 mg/kg toutes les douze heures sont rapportées sans leur population : elles figurent dans « Enfants et adolescents », distinctement du schéma adulte de la recommandation.",
+      "sources": [
+        "CH-FI-DEX",
+        "EU-MENINGITIS"
+      ],
+      "correction_ou_action": "Population pédiatrique précisée dans le paragraphe, le tableau des doses et la fenêtre du produit.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M06",
+      "gravite": "P1",
+      "surface": "G01_b§11.1casrécapitulatif",
+      "constat": "Le cas de lymphome sous corticoïdes est qualifié d’immunodéprimé, mais sa solution reprend le régime communautaire sans immunosuppression. Le tableau 3 du référentiel distingue l’immunosuppression et propose vancomycine plus méropénème.",
+      "sources": [
+        "EU-MENINGITIS-T3"
+      ],
+      "correction_ou_action": "La copie distingue les stratégies et renvoie au protocole suisse local, à l’infectiologue et à la pharmacie ; les FI et doses de ces deux produits restent à vérifier.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M07",
+      "gravite": "P1",
+      "surface": "Pharmacologiecomplèteet§situationsparticulières",
+      "constat": "Les monographies reconnaissent des effets indésirables, contre-indications et adaptations non lus. Les cinq FI rouvertes par cette mission ne suffisent pas à valider tous les produits cités. Le manuel suisse de tuberculose reste inaccessible ; la validité indiquée de la recommandation neurosyphilis 2020 est échue.",
+      "sources": [
+        "CH-FI-AMOX",
+        "CH-FI-PEN",
+        "EU-NEUROSYPH"
+      ],
+      "correction_ou_action": "Réserves conservées ; adaptation rénale de l’amoxicilline et de la pénicilline enrichie à partir des FI effectivement lues. Verdict favorable bloqué.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M08",
+      "gravite": "P2",
+      "surface": "G01_btableau9.3 ; G01_d§p-4",
+      "constat": "Le seuil de concentration minimale inhibitrice ≤0,125 ne porte pas d’unité. Le tableau 4 du référentiel indique mg/L.",
+      "sources": [
+        "EU-MENINGITIS-T4"
+      ],
+      "correction_ou_action": "Unité mg/L ajoutée dans le tableau ciblé et les critères de modification.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M09",
+      "gravite": "P2",
+      "surface": "Citationsrépétéesrecommandationméningite2023",
+      "constat": "Le texte de méningite 2023 est présenté comme allemand, autrichien et suisse. Le texte ouvert se présente comme une recommandation allemande ; l’approbation suisse est explicitement mentionnée dans les autres textes de neuroborréliose et neurosyphilis, mais n’est pas établie ici pour cette S2k.",
+      "sources": [
+        "EU-MENINGITIS",
+        "EU-LYME2025",
+        "EU-NEUROSYPH"
+      ],
+      "correction_ou_action": "Attribution corrigée en « recommandation allemande S2k ». Cette correction ne prétend pas prouver l’absence d’une approbation non retrouvée.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    },
+    {
+      "id": "G01-M10",
+      "gravite": "P2",
+      "surface": "G01_cLCR ; fenêtresvaleurs etspécificitésSuisses",
+      "constat": "Les valeurs normales du liquide ne sont pas étayées par une source suisse lue. Les délais de déclaration et la vaccination post-exposition contre B restent à contrôler directement auprès de l’OFSP.",
+      "sources": [
+        "CH-MENINGO",
+        "EU-LYME2025"
+      ],
+      "correction_ou_action": "Aucun intervalle normal ni délai légal inventé. La fiche cantonale de Fribourg a été lue intégralement ; les points non établis restent ouverts.",
+      "statut": "Proposition appliquée dans les copies ; validation et intégration canoniques non réalisées."
+    }
+  ],
+  "gravites": {
+    "P0": 0,
+    "P1": 7,
+    "P2": 3
+  },
+  "enrichissements": "Six copies HTML dans drafts et un patch ; aucune source canonique modifiée.",
+  "canoniques_modifies": false,
+  "reprise_requise": [
+    "Compléter les FI des médicaments non lus, les références actuelles de tuberculose/VIH et les adaptations rénales/hépatiques.",
+    "Vérifier OFS/BfArM, PROFILES et délais OFSP dans les textes primaires applicables.",
+    "Réévaluation spécialisée : corticothérapie dans la listériose, stratégie chez l’immunodéprimé et pédiatrie.",
+    "Contrôler les copies au navigateur ; intégration canonique par une mission distincte avec empreintes renouvelées."
+  ]
+}
