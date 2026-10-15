@@ -38,5 +38,17 @@
     "type": "command",
     "command": "python3 \"$CLAUDE_PROJECT_DIR/tools/betta_jauge.py\"",
     "padding": 0
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/tools/clov1.py\" 2>/dev/null | head -c 4000"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -31,7 +31,21 @@ def donnees():
                 if st == "A_FAIRE" and f"CYCLE_{n}_{l['code']}" in livr:
                     st = "EN_COURS"
                 lecons.append({"code": l["code"], "titre": l["title"], "frag": a["label"], "etat": st})
-        cycles.append({"n": n, "nom": c["name"], "lecons": lecons})
+        if status[str(n)].get("state") != "TRANSFERE_NOVO12":
+            cycles.append({"n": n, "nom": c["name"], "lecons": lecons})
+    novo_p, novo_s = ROOT / "organisation/progression/plan-novo12.json", ROOT / "organisation/novo12_status.json"
+    if novo_p.exists() and novo_s.exists():
+        plan, st = json.loads(novo_p.read_text()), json.loads(novo_s.read_text())["cycles"]
+        livr = {p.name for p in ROOT.glob("livraisons/Livraison Claude/*/novo12/CYCLE_*")}
+        for c in plan["cycles"]:
+            n, lecons = c["number"], []
+            for a in c["agents"]:
+                for l in a["lessons"]:
+                    e = etat(st[str(n)]["lessons"].get(l["code"], "A_FAIRE"))
+                    if e == "A_FAIRE" and f"CYCLE_{n}_{l['code']}" in livr:
+                        e = "EN_COURS"
+                    lecons.append({"code": l["code"], "titre": l["title"], "frag": a["label"], "etat": e})
+            cycles.append({"n": n, "nom": "Novo_12 · " + c["name"], "lecons": lecons})
     return cycles
 
 
