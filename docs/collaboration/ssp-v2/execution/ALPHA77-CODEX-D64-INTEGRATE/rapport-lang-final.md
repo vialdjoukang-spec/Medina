@@ -1,0 +1,3 @@
+D64 — LANG finale relue, statut provisional.
+
+Les sept fichiers core et les textes de figures sont relus. Les25 propositions LANG historiques sont déjà adoptées ; aucune retouche supplémentaire. Les11 empreintes finales correspondent exactement à MED/SEMIO et au candidat aeb4c017 ; aucune source ou image modifiée. Premier sous-onglet pS, ses neuf sections et sémiologie clinique pA contrôlés statiquement. Les contrôles navigateur antérieurs restent attribués à leur exécution ; aucune nouvelle preuve visuelle déclarée. MED et SEMIO restent provisoires, avec réserves visibles ; aucune validation médicale humaine ni clôture.

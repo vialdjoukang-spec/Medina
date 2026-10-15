@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "actor": "Codex",
+  "code": "I63",
+  "reviewer": "Codex — mission indépendante ALPHA1-CODEX-I63-MED, auteur source ALPHA77-CODEX-I63-INTEGRATE distinct",
+  "mission": "ALPHA1-CODEX-I63-MED",
+  "generation": 1,
+  "reviewed_at": "2026-10-15T20:38:48.620856+00:00",
+  "base_sha": "3131a5cbf6cc003ead358e25152073959c53c4d9",
+  "reviewed_commit": "34838433bd52571ee1c674d97ff28d6f27debbac",
+  "medical_human_validation": false,
+  "source_files_sha256": {
+    "chapters/I63/I63_a.html": "c9084d56fbe96e791d65262cc1504bb5b8729bf85bc5af5958f477e3e2219840",
+    "chapters/I63/I63_b.html": "685d40ca25eec502b3dbbbf616135e86b4167c26f2a3ddc8921435cfa5f48a7d",
+    "chapters/I63/I63_c.html": "9b2d0cde407ffc3fd9b9330fdca2b8fca77a82ec6235282711a7721e00c9a9cb",
+    "chapters/I63/I63_d.html": "2bb8921d034d582f57d736da181689d5e4eb67c56c61b4338b5f3bf721b7ddf9",
+    "chapters/I63/I63_pop1.html": "1f28081b1718c3c76e2329781376b981c54e6fbdb12679427006f6f93e124ace",
+    "chapters/I63/I63_pop2.html": "510b77118a28e766d737173266ad71a9fd87374946abf28005dda01481b562c1",
+    "glossary/i63.py": "3084280be3d900f5df2a4e1f62f32480fd7c4e010b17e9e4e502fd7b67503a12"
+  },
+  "reviewed_files_sha256": {
+    "chapters/I63/I63_a.html": "0959d340bcf0c33a278536fbf6108b9e77d9a035c07252d3f5f7655fc65f3897",
+    "chapters/I63/I63_b.html": "f5d902ac506372cc3666a79e0f610dfe13593efb26c43e110bbfec64b0c956ad",
+    "chapters/I63/I63_c.html": "049821d24e12f853282afe69fe1977e74f4d934f6c33b16902924f6ebd83e5ae",
+    "chapters/I63/I63_d.html": "ff1ce1c9c89fd3e5017ac1b50d798b97473c1f8ae4f4f08d46ec74f976b8bf40",
+    "chapters/I63/I63_pop1.html": "900045a55faa1b1abf10d4a6f478f53abb4af30b5548fb0a21f62b329d3c50c9",
+    "chapters/I63/I63_pop2.html": "d79cbad81469c44ce51abbd8227187945bf7fe288d89f9986420333f830af602",
+    "glossary/i63.py": "fbb19c66e1ae2912d3ee0f655fc2072b31828360a87a41dc65819f603c0272ad",
+    "assets/img/i63/alpha/codex/Gray516.png": "2db08331119d6817654aa3b3f507835f675e8e10e7f700cf1cf208dd815a61cf"
+  },
+  "requirements_reviewed": {
+    "fundamental_analytical_semiology": true
+  },
+  "evidence": [
+    {
+      "id": "INPUT-EXACT",
+      "path": "final-review-34838433/verified-inputs.json",
+      "detail": "8/8 empreintes gitshow34838433=sourceactuelle=candidat ;7hashesBASE3131a calculées indépendamment. SHA manifestcandidat décrit anciencommit mais bytes correspondent exactement au SHA gelé."
+    },
+    {
+      "id": "READ-ALL",
+      "detail": "Sept fichiers lus intégralement : HTML entier parsé et texte clinique/scientifique, tableaux, toutes fenêtres et retours QCM lus en extraction ; glossary/i63.py lu intégralement. Figuresbase64 traitées comme octets et inventaire, pas comme prose. Citations répétées regroupées dans reference-inventory; aucune lecture externe intégrale déduite de leur présence."
+    },
+    {
+      "id": "SOURCES",
+      "path": "final-review-34838433/sources-read.json",
+      "detail": "Passages effectivement relus indépendamment, provenancecache et empreintes exactes ; nouvellesource supplémentHINTS téléchargée parreviewer."
+    },
+    {
+      "id": "FRONTEND",
+      "path": "final-review-34838433/frontend-checks.json",
+      "detail": "Build neuf du SHA gelé en scratch, Chromium réel1440/390,9sections, premièreactive, clavierEnter/Space, fenêtreHINTS,24pxlivre, IDsuniques,0pageerror, largeur1440/390 sans débordement."
+    },
+    {
+      "id": "BOOK-END",
+      "path": "final-review-34838433/book-scrollcheck.json",
+      "detail": "Mobile390/24px : scrollTop17426+clientHeight760=scrollHeight18186 ; dernières sources atteignables."
+    },
+    {
+      "id": "VISUAL",
+      "detail": "Inspection indépendante Gray original, droits Commons et capturesdesktopsemio/mobilelivre24 ; aucune validation humaine. Captures jointes."
+    }
+  ],
+  "kind": "MED",
+  "status": "provisional",
+  "unresolved_blockers": [
+    "Révision Alpha en cours : certaines réserves thérapeutiques et sources héritées restent à vérifier ; les audits finaux de cette version ne sont pas clos."
+  ],
+  "findings": [
+    {
+      "id": "I63-M01",
+      "status": "resolved",
+      "evidence": [
+        "EU-DIZZY + supplémenttableS1 ; A#i63-6,C#i63-s-semio,pop1#i63-hints et glossaire réservent HINTS au syndrome aigu avec nystagmus et examinateur formé ; saccade ne garantit pas absenceAICA. Fenêtrecontextuelle testée."
+      ]
+    },
+    {
+      "id": "I63-M02",
+      "status": "resolved",
+      "evidence": [
+        "EU-DIZZY sections+tableau2 :84,0→95,7% explicitement AICA, intervalles et limites de transfert présents danspopup ; mêmes chiffres lus source."
+      ]
+    },
+    {
+      "id": "I63-M03",
+      "status": "open",
+      "evidence": [
+        "EU-BP2026 tableau11 etEU-DAPT2021Recommendation1 ciblés maintenant vérifiés,7FIexactes relues parpassages ; cela ne couvre pas toutes décisions héritées. ESC2024AF nonlu intégralement, seuilimplantable>6min bernois ne vaut pas anticoagulation automatique ; autresfenêtres tardives/longueprévention non totalement confrontées auxprimaires. Réserve de couverture, pas erreur médicale démontrée."
+      ]
+    },
+    {
+      "id": "I63-M04",
+      "status": "resolved",
+      "evidence": [
+        "EU-CVT2024 passageModerateRecommendationNew2023 : préférenceDOAC saufSAPLtriplepositif→AVK ; popupveineux rappelleexception et extrapolationpreuveshorsCNS."
+      ]
+    },
+    {
+      "id": "I63-M05",
+      "status": "resolved",
+      "evidence": [
+        "BERN.pdf physique31 imprimée61 contientmRS0–6 ; physique32 imprimées62–63 contientNIHSSdétaillé. Le constat antérieur fondé sursommaire66/68 était trop restrictif : ces pages sont versionssynthétiques supplémentaires. Pas de remplacementaveugle."
+      ]
+    },
+    {
+      "id": "I63-M06",
+      "status": "resolved",
+      "evidence": [
+        "HOYER Anatomypassage40/40/20isolatedcardioembolicposterior ; Aexamenrestreint cardioembolieisolée et explique limitepopulation/causalitéindividuelle."
+      ]
+    },
+    {
+      "id": "I63-FIG-P1",
+      "status": "resolved",
+      "evidence": [
+        "Gray516.png exact116061B SHA2db08331119d6817654aa3b3f507835f675e8e10e7f700cf1cf208dd815a61cf remplaceancienSVGanatomiqueIA ; primaireCommonsSummary/Book/Licensing réellementlue et PNG inspecté. HenryVandykeCarter/Gray1918plate516, domainepublicreproductionmécanique."
+      ]
+    },
+    {
+      "id": "I63-MATRIX-PARTIAL",
+      "status": "open",
+      "evidence": [
+        "Couverture20rubriques ci-dessous : sources administrativesOFS/BfArM,épidémiologie,normeslaboratoire,PROFILES,spécificités suisses et physiopathologieexpérimentale non toutes relues ; matriceauteur héritée explicitementLACUNE. Ne pas convertir lecture intégrale du cours en validationexhaustive de toutes ses sources."
+      ]
+    },
+    {
+      "id": "I63-LANG-DELTA",
+      "status": "non_blocking",
+      "evidence": [
+        "RapportLANGantérieur25propositions repris ; exclusivité installationbrutale supprimée, négationActilysecorrigée ; FLAIRlibellé reste lourd mais définitioncontextuelleprésente. SourceFabryprimaire nonrelue, aucune validation nouvelle de cette assertion revendiquée. Pas auditLANGfinal danscemission."
+      ]
+    },
+    {
+      "id": "I63-SEMIO-CITATION",
+      "status": "non_blocking",
+      "evidence": [
+        "Tarnutzer : le tableau détaillé des erreurs esttableau2 et non1 mentionnéplusieursfois ; sectionsHINTS/audition/imagerie et passagescitablesidentifiables, assertionsconcordantes. Rectificationbibliographique à prévoir sans effet surles limitescliniques."
+      ]
+    }
+  ],
+  "scope_limit": "Relecture finale réelle des fichiers changés ; fermeture individuelle des corrections prouvées, maintien de M03 et lacunes de couverture20rubriques. Aucune déclaration toutconforme ni validation médicale humaine."
+}
