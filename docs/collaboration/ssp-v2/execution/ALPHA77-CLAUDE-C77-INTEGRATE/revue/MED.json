@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "56febc0836e92751b51122ed968a6b2d7abe799a",
+ "reviewed_commit": "05417b91cd027d0be3b506820c327f33407b9623",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -23,7 +23,7 @@
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
   "chapters/C77/C77_b.html": "c9341938a55536c082a2880848fc31258c7709231ea978fa5da8035db3240e71",
-  "chapters/C77/C77_c.html": "41e1ec0d1a99b7dfe15efa24fc9e9e144e1cb47df18e8737131930d5fe04359e",
+  "chapters/C77/C77_c.html": "0123c658af265989b702ddedf4dba656fb3a5ed0348d05c19a75e7c23d4597a2",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
   "chapters/C77/C77_pop2.html": "9b96b68e6c65071bdeeec782431570976885590dccc9a2334d17d15b7f98763e",
@@ -233,35 +233,38 @@
   {
    "id": "P-PR158-01",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html #c77-sm-1 : « les adénopathies médiastinales se révèlent au scanner et s’explorent par ponction transbronchique guidée par échographie endobronchique (Swiss Medical Weekly 2024) »",
    "finding": "Cette phrase va au-delà de la source. SMW 2024 réserve l’EBUS-TBNA aux adénopathies médiastinales volumineuses (> 10–15 mm) et groupées. En dessous de ce seuil, la revue précise qu’il n’existe pas de recommandation et mentionne la surveillance par scanner répété, le TEP-CT et l’EBUS-TBNA. Elle ne dit pas que ces adénopathies « se révèlent au scanner ».",
    "correction_proposee": "« … les adénopathies médiastinales volumineuses (plus de 10 à 15 mm) et groupées s’explorent au mieux par ponction transbronchique guidée par échographie endobronchique ; en dessous de ce seuil, aucune recommandation n’existe (Swiss Medical Weekly 2024). »",
    "source": "SMW 2024, « Mediastinal and abdominal lymphadenopathy »",
-   "evidence": "« For large (>10–15 mm) grouped mediastinal lymphadenopathies, the best investigation is an endobronchial ultrasound-guided transbronchial needle aspiration (EBUS-TBNA) […] There are no guidelines for isolated mediastinal lymphadenopathy of unclear aetiology below 10–15 mm (repeated CT scan to determine the evolution, PET/CT and EBUS-TBNA to monitor progression). »"
+   "evidence": "« For large (>10–15 mm) grouped mediastinal lymphadenopathies, the best investigation is an endobronchial ultrasound-guided transbronchial needle aspiration (EBUS-TBNA) […] There are no guidelines for isolated mediastinal lymphadenopathy of unclear aetiology below 10–15 mm (repeated CT scan to determine the evolution, PET/CT and EBUS-TBNA to monitor progression). »",
+   "resolution": "Corrigé à 05417b91 : « Pour des adénopathies médiastinales volumineuses (plus de 10 à 15 mm) et groupées, la meilleure exploration est la ponction transbronchique guidée par échographie endobronchique (Swiss Medical Weekly 2024) » ; « se révèlent au scanner » supprimé. Conforme à SMW 2024 (« For large (>10–15 mm) grouped mediastinal lymphadenopathies, the best investigation is an EBUS-TBNA »). L’absence de recommandation sous 10–15 mm n’est pas reprise : c’est une omission, pas une inexactitude."
   },
   {
    "id": "P-PR158-02",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html #c77-sm-1 : « Les ganglions profonds, intrathoraciques, intra-abdominaux et intrapelviens, échappent en revanche à la palpation. »",
    "finding": "Phrase exacte sur le fond, mais sans source dans la phrase ni dans le paragraphe. Les sources lues ne l’énoncent qu’implicitement : l’item 291 et le Collège 2013 limitent la palpation aux aires superficielles, et SMW 2024 oppose les ganglions inguinaux superficiels aux ganglions iliaques profonds.",
    "correction_proposee": "Rattacher la phrase aux sources : « La palpation n’explore que les aires superficielles (cours universitaire francophone 2011 ; Collège de médecine interne 2013) ; les ganglions profonds lui échappent. »",
    "source": "Item 291 § I.2 ; Collège 2013 § 1.1",
-   "evidence": "Item 291 : « territoires ganglionnaires superficiels : jugulocarotidien, sous-mandibulaire, occipital, sus-claviculaire… » ; Collège 2013 : « La palpation permet de reconnaître une ou des adénopathie(s) dans les principales aires où sont situés les ganglions physiologiques »."
+   "evidence": "Item 291 : « territoires ganglionnaires superficiels : jugulocarotidien, sous-mandibulaire, occipital, sus-claviculaire… » ; Collège 2013 : « La palpation permet de reconnaître une ou des adénopathie(s) dans les principales aires où sont situés les ganglions physiologiques ».",
+   "resolution": "Corrigé à 05417b91 : la phrase sans source est remplacée par « Le diagnostic clinique d’adénopathie porte sur les territoires ganglionnaires superficiels (cours universitaire francophone 2011) ». Conforme à l’item 291 § I.2 : « Il est clinique en présence d’une tuméfaction acquise (> 1 cm) dans l’un des territoires ganglionnaires superficiels ». Dans « À retenir », la phrase sur le ganglion profond est remplacée par la découverte fortuite des adénopathies abdominales et pelviennes (SMW 2024)."
   },
   {
    "id": "P-PR158-03",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html #c77-sm-3 : « le ganglion envahi est le plus souvent décrit ferme ou dur, indolore et non inflammatoire, puis peu mobile ou fixé (Collège de médecine interne 2013) » ; même formule « puis peu mobile » dans #c77-sm-3 ; figure « Souvent dur, indolore, puis fixé » ; À retenir « plus souvent dur et indolore »",
    "finding": "Ces formulations vont au-delà de la source. Le Collège 2013 range ces caractères parmi ceux « en faveur d’une affection maligne », lymphomes compris. Il ne donne aucune fréquence (« le plus souvent », « plus souvent ») et aucune séquence (« puis fixé »). Le texte ne retient plus de causalité, ce qui répond au constat Codex.",
    "correction_proposee": "« Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés sont en faveur d’une affection maligne, métastase comprise (Collège de médecine interne 2013). » Dans la figure, remplacer par « Dur, indolore, peu mobile ou fixé : en faveur ; non fiable ». Dans À retenir, écrire « Un ganglion dur et indolore est en faveur d’une affection maligne ».",
    "source": "Collège 2013 § 1.2 ; item 291 (« dure, ligneuse, rocailleuse (en faveur d’un cancer) »)",
-   "evidence": "Collège 2013 : « Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés par rapport à la peau sont en faveur d’une affection maligne. »"
+   "evidence": "Collège 2013 : « Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés par rapport à la peau sont en faveur d’une affection maligne. »",
+   "resolution": "Corrigé à 05417b91 dans #c77-sm-3 (deux passages), la figure (« Dur, indolore, peu mobile : en faveur, non fiable » ; aria-label), et « À retenir » : « en faveur d’une affection maligne, lymphome compris », sans fréquence ni chronologie ; aucune occurrence restante de « puis fixé », « puis peu mobile », « plus souvent dur » ou « le plus souvent décrit » dans chapters/C77. Conforme au Collège 2013 § 1.2 (« Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés par rapport à la peau sont en faveur d’une affection maligne »)."
   }
  ],
  "evidence": [
@@ -349,7 +352,8 @@
     "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
     "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
     "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
-    "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png"
+    "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png",
+    "Mise à jour 05417b91 : P-PR158-01 à 03 relus contre SMW 2024, l’item 291 et le Collège 2013 ; Chromium 1300 et 390 px, figure « Du mécanisme au signe » : 6 flèches, aucun texte hors cadre, aucun débordement, aucune erreur JavaScript ni console ; test_v7.py --static C77 OK ; build_medina.audit = {} sur les six fichiers HTML ; empreintes recalculées."
    ]
   }
  ],
@@ -384,15 +388,13 @@
    "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
    "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
    "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
-   "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png"
+   "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png",
+   "Mise à jour 05417b91 : P-PR158-01 à 03 relus contre SMW 2024, l’item 291 et le Collège 2013 ; Chromium 1300 et 390 px, figure « Du mécanisme au signe » : 6 flèches, aucun texte hors cadre, aucun débordement, aucune erreur JavaScript ni console ; test_v7.py --static C77 OK ; build_medina.audit = {} sur les six fichiers HTML ; empreintes recalculées."
   ],
   "bloquants": 0,
-  "constats_ouverts_non_bloquants": [
-   "P-PR158-01",
-   "P-PR158-02",
-   "P-PR158-03"
-  ],
+  "constats_ouverts_non_bloquants": [],
   "note_recu": "Les empreintes des fichiers revue/ et des sources changent : le reçu Alpha f577d649 doit être régénéré par W.",
-  "mention": "Revue IA, distincte d’une validation médicale humaine."
+  "mention": "Revue IA, distincte d’une validation médicale humaine.",
+  "commit_cloture": "05417b91cd027d0be3b506820c327f33407b9623"
  }
 }
