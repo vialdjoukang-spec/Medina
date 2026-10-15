@@ -36,10 +36,78 @@ class VetoTests(unittest.TestCase):
         with self.assertRaisesRegex(G.GovernanceError, 'Veto v1'):
             G.check(tree, tree, 'publish')
 
-    def test_other_ai_cannot_release(self):
-        release = dict(id='r1', event='release', actor='Claude', at=self.veto['at'], reason='Désaccord', veto_id='v1')
+    def release(self, **changes):
+        row = dict(id='r1', event='release', actor='Claude', at=self.veto['at'],
+                   reason='Le veto Codex ralentit la livraison indépendante Claude', veto_id='v1',
+                   authority=copy.deepcopy(G.CLAUDE_RELEASE_AUTHORITY))
+        row.update(changes)
+        return row
+
+    def order_files(self):
+        path = G.CLAUDE_RELEASE_AUTHORITY['path']
+        return {path: (G.ROOT / path).read_bytes()}
+
+    def test_claude_releases_codex_veto_under_own_name(self):
+        raw = encode(self.veto)
+        release = self.release()
+        before = Tree({**self.order_files(), G.JOURNAL: raw})
+        after = Tree({**self.order_files(), G.JOURNAL: raw + encode(release)})
+        G.check(before, after)
+        data, active = G.events(after.read(G.JOURNAL))
+        self.assertEqual(active, {})
+        self.assertEqual(data[-1]['actor'], 'Claude')
+
+    def test_claude_release_requires_exact_human_delegation(self):
+        wrong_hash = dict(G.CLAUDE_RELEASE_AUTHORITY, sha256='0' * 64)
+        wrong_path = dict(G.CLAUDE_RELEASE_AUTHORITY, path='README.md')
+        for authority in (None, {}, wrong_hash, wrong_path):
+            with self.subTest(authority=authority), self.assertRaisesRegex(G.GovernanceError, 'délégation Vial exacte'):
+                G.events(encode(self.veto) + encode(self.release(authority=authority)))
+
+    def test_changed_order_bytes_cannot_authorize_release(self):
+        raw = encode(self.veto)
+        before = Tree({**self.order_files(), G.JOURNAL: raw})
+        after = Tree({G.CLAUDE_RELEASE_AUTHORITY['path']: b'instruction altered',
+                      G.JOURNAL: raw + encode(self.release())})
+        with self.assertRaisesRegex(G.GovernanceError, 'Instruction humaine différente'):
+            G.check(before, after)
+
+    def test_claude_release_does_not_authorize_combined_operation(self):
+        raw = encode(self.veto)
+        before = Tree({**self.order_files(), G.JOURNAL: raw, 'chapters/I63/a.html': b'avant'})
+        released = Tree({**before.files, G.JOURNAL: raw + encode(self.release())})
+        operated = Tree({**released.files, 'chapters/I63/a.html': b'after'})
+        G.check(before, released)
+        with self.assertRaisesRegex(G.GovernanceError, 'commit distinct'):
+            G.check(before, operated)
+        G.check(released, operated)
+
+    def test_order_does_not_grant_codex_a_new_right_over_claude(self):
+        veto = dict(self.veto, actor='Claude')
         with self.assertRaisesRegex(G.GovernanceError, 'ne peut lever'):
-            G.events(encode(self.veto) + encode(release))
+            G.events(encode(veto) + encode(self.release(actor='Codex')))
+
+    def test_cli_claude_attaches_order_and_preserves_history(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            for path, data in self.order_files().items():
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(data)
+            journal = root / G.JOURNAL
+            journal.parent.mkdir(parents=True)
+            raw = encode(self.veto)
+            journal.write_bytes(raw)
+            args = ['project_governance.py', 'release', '--actor', 'Claude', '--veto-id', 'v1',
+                    '--reason', 'Ce blocage Codex ralentit mon travail']
+            with patch.object(G, 'ROOT', root), patch('sys.argv', args):
+                self.assertEqual(G.main(), 0)
+            result = journal.read_bytes()
+            self.assertTrue(result.startswith(raw))
+            data, active = G.events(result)
+            self.assertEqual(active, {})
+            self.assertEqual(data[-1]['actor'], 'Claude')
+            self.assertEqual(data[-1]['authority'], G.CLAUDE_RELEASE_AUTHORITY)
 
     def test_owner_release_requires_distinct_commit(self):
         raw = encode(self.veto)

@@ -1,3 +1,9 @@
+## Ordre prioritaire de Vial — égalité et levée des blocages, 15 octobre 2026
+
+**Codex et Claude sont ÉGAUX : aucune primauté décisionnelle ni actionnelle de Codex.** Claude décide, approuve ses missions et agit sans validation préalable de Codex. Par [ordre humain direct](docs/collaboration/instructions/PARITE_LEVEE_BLOCAGES_2026-10-15.txt), Claude peut lever un blocage administratif ou un veto de Codex qui le gêne ou le ralentit, y compris ultérieur, sans accord Codex ; il conserve une trace et un motif. La commande sous son propre nom et la politique prioritaire sont décrites dans cet ordre. La clause historique interdisant cette levée est remplacée ; l’ancienne politique reste conservée comme preuve des reçus historiques. Les réserves, preuves et travaux concurrents restent conservés ; publication provisoire et clôture restent distinctes. Les anciens rôles de coordination incompatibles ne confèrent plus de primauté.
+
+---
+
 ## Instruction actuelle — SSP V2 et prévention des conflits, 15 octobre 2026
 
 Pour le chantier **S08/S05/S04/S06 uniquement**, lire le [contrat V2](docs/collaboration/ssp-v2/2026-10-15/README-V2.txt), le [prompt commun IA](docs/collaboration/ssp-v2/2026-10-15/prompt-commun-ia.yaml) et les [attributions](docs/collaboration/ssp-v2/2026-10-15/plan-v2.json). Le plan révisé compte 258 cibles pédagogiques conservatoires (104 cours existants et 154 à produire), avec audit 52/52 et production 77/77 Codex/Claude ; ce n'est pas une liste fédérale officielle ni une revalidation clinique exhaustive. Alpha ne comporte pas d'audit croisé systématique. Les autres systèmes restent en lecture seule dans ce chantier. Aucune production médicale n'est lancée par ces documents.
