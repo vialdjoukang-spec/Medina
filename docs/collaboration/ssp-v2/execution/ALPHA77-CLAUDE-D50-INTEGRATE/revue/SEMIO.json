@@ -32,7 +32,7 @@
  },
  "kind": "SEMIO",
  "requirement": "fundamental_analytical_semiology",
- "status": "open",
+ "status": "closed",
  "tab_id": "d50-s-semio",
  "source_path": "chapters/D50/D50_c.html",
  "findings": [
@@ -54,11 +54,13 @@
   },
   {
    "id": "SEM-03",
-   "status": "open",
-   "constat": "python3 tests/audit_sciences.py --codes D50 échoue : « D50/d50-s-histo: figure sans légende ou nom accessible ». La figure « Micrographies 1 et 2 » ne contient que des <img> ; le test exige un svg[role=img][aria-label] dans chaque figure de pS. Le sous-onglet sémiologie lui-même passe (3836 mots, figure accessible, 4 encadrés). Le défaut existait déjà sur la base pour la Micrographie 1.",
+   "status": "resolved",
+   "constat": "Critères de tests/audit_sciences.py satisfaits au sens de la grille précisée : le sous-onglet d50-s-semio passe (3836 mots, figure SVG accessible et légendée, quatre libellés) et chaque autre discipline aussi. La seule erreur du test, « D50/d50-s-histo: figure sans légende ou nom accessible », vient de la figure « Micrographies 1 et 2 », faite uniquement d’images réelles avec alt et figcaption attribuée : faux positif connu, non bloquant.",
    "evidence": [
-    "Exécution par P au commit 24757d7e : result failed, errors = [\"D50/d50-s-histo: figure sans légende ou nom accessible\"].",
-    "Remèdes possibles : (a) placer dans la même figure une échelle SVG non anatomique sourcée (bloc HISTO de prep/figures.html, ou y déplacer l’échelle VGM/TCMH de la figure 5) ; (b) mission d’intégration sur tests/audit_sciences.py acceptant une figure <img alt> légendée. Le choix revient au coordinateur."
+    "Décision du coordinateur du 15.10.2026, transcrite dans EXIGENCE_SEMIOLOGIE.md, ligne SEM-03 : une figure faite uniquement d’images réelles avec alt + figcaption attribuée est accessible ; l’erreur qu’elle seule déclenche est un faux positif connu ; tout SVG ajouté dans cette figure pour satisfaire le test est interdit ; correction du test demandée à Codex en mission partagée.",
+    "Faux positif consigné dans integration/controles.json, controles.audit_sciences.faux_positif_connu.",
+    "Exécution par P au commit 24757d7e : une seule erreur, celle-ci ; les deux <img> de la figure ont un alt descriptif et la figcaption porte auteurs, licences et redimensionnement (rendu 390 px, captures/P_frottis_legende_390px.png).",
+    "Le bloc HISTO de prep/figures.html, qui ajoutait une échelle SVG dans cette figure, est retiré par la présente décision et n’a pas été intégré."
    ]
   },
   {
@@ -186,13 +188,14 @@
   "Neuf sections data-semiology présentes et substantielles (310 à 534 mots chacune).",
   "Passages consultés : voir prep/sources_semiologie.json (10 sources, 25 affirmations).",
   "Rendu Chromium 1194 (P) à 390 px et police 24 px ; rendu W à 1300 et 390 px ; aucune erreur JavaScript.",
-  "tests/audit_sciences.py exécuté : échec SEM-03 décrit ci-dessus."
+  "tests/audit_sciences.py exécuté : seule erreur = faux positif connu de la figure des micrographies (SEM-03, décision du coordinateur)."
  ],
- "unresolved_blockers": [
-  "SEM-03 : tests/audit_sciences.py --codes D50 échoue sur la figure « Micrographies 1 et 2 » de d50-s-histo (aucun svg[role=img][aria-label] dans la figure)."
- ],
+ "unresolved_blockers": [],
  "limits": [
   "Revue IA, distincte d’une validation médicale humaine.",
-  "La présence des balises et des empreintes ne certifie pas l’exactitude médicale."
- ]
+  "La présence des balises et des empreintes ne certifie pas l’exactitude médicale.",
+  "Indépendance limitée : l’Agent P a rédigé la préparation sémiologique relue ici (constat SEM-INDEP).",
+  "Le frottis normal a été choisi par une IA, sans choix humain (réserve MED-NOTE-3 de revue/MED.json)."
+ ],
+ "decision_coordinateur": "SEM-03 réévalué selon la précision du coordinateur (15.10.2026, EXIGENCE_SEMIOLOGIE.md ligne SEM-03) ; faux positif de tests/audit_sciences.py consigné dans integration/controles.json."
 }
