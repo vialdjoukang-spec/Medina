@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/medina-alpha77/G01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G01-INTEGRATE/check-browser.py", line 38, in <module>
+    page.locator('.mc-tabs [data-p="pA"]').click();button=page.locator('.mc-w[data-k="g01-meningisme"]').first;button.click();page.wait_for_timeout(150);assert page.locator('.mc-dlg-b').is_visible();assert 'symptôme' in page.locator('.mc-dlg-b').inner_text();shot('popup');page.keyboard.press('Escape');record['popup_open_and_escape']=True
+                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

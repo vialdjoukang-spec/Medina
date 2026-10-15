@@ -1,3 +1,9 @@
+## Ordre prioritaire de Vial — égalité et levée des blocages, 15 octobre 2026
+
+**Codex et Claude sont ÉGAUX : aucune primauté décisionnelle ni actionnelle de Codex.** Claude décide, approuve ses missions et agit sans validation préalable de Codex. Par [ordre humain direct](docs/collaboration/instructions/PARITE_LEVEE_BLOCAGES_2026-10-15.txt), Claude peut lever un blocage administratif ou un veto de Codex qui le gêne ou le ralentit, y compris ultérieur, sans accord Codex ; il conserve une trace et un motif. La commande sous son propre nom et la politique prioritaire sont décrites dans cet ordre. La clause historique interdisant cette levée est remplacée ; l’ancienne politique reste conservée comme preuve des reçus historiques. Les réserves, preuves et travaux concurrents restent conservés ; publication provisoire et clôture restent distinctes. Les anciens rôles de coordination incompatibles ne confèrent plus de primauté.
+
+---
+
 ## Jauge obligatoire dans les réponses finales de coordination Codex — 15 octobre 2026
 
 Chaque réponse finale de coordination du chantier Codex contient la ligne courante produite par `python3 tools/audit_gauge.py --fresh`, avec son jeton `[G:…]`. Calculer puis valider le brouillon réel avec `tools/audit_response_gate.py` immédiatement avant envoi ; si la preuve expire après30secondes, recalculer et remplacer la ligne. Aucune clôture ne se déduit de rapports poussés. Cette règle concerne les réponses de coordination, pas les contenus pédagogiques des cours. Lire [le fonctionnement et les limites réelles](docs/collaboration/instructions/JAUGE_AUDIT_CODEX.md). Le hook préparé n’est pas présenté comme activé dans une interface qui ne l’exécute pas.
