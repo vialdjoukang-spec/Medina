@@ -5,16 +5,8 @@ import os
 ROOT = os.environ.get('MEDINA_ROOT', os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT + '/tools')
 from insert_justifications import load_course_justifications
-sys.path.insert(0, ROOT + '/glossary')
-import importlib
-G = {}
-for mod in sorted(glob.glob(ROOT + '/glossary/*.py')):
-    name = mod.split('/')[-1][:-3]
-    try:
-        m = importlib.import_module(name)
-        G.update(m.G)
-    except Exception as ex:
-        print('AVERTISSEMENT glossaire', name, ex)
+from glossary_loader import load_glossary
+G = load_glossary(ROOT + '/glossary')
 
 CLASSMAP = {'tabs':'mc-tabs','panel':'mc-panel','chap-body':'mc-body','sci-body':'mc-sci-body','ilot':'mc-ilot','toc':'mc-toc','sci-bar':'mc-sci-bar',
  'sci':'mc-sci','key':'mc-key','trap':'mc-trap','k':'mc-k','alert':'mc-alert','two':'mc-two','card':'mc-card','t':'mc-t','pareto-btn':'mc-pareto-btn',

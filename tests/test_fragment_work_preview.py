@@ -249,6 +249,42 @@ class FragmentWorkPreviewTests(unittest.TestCase):
         codes = [code for lesson in inventory["lessons"] for code in lesson["icd10gm"]["codes"]]
         self.assertEqual(len(codes), len(set(codes)))
 
+    def test_overlay_priority_is_a_verified_manifest_not_executable_replay(self):
+        manifest, files = self.read()
+        overlay = self.base / 'priority-overlay'
+        PREVIEW.create_overlay(ROOT, files, manifest, overlay)
+        priority_path = overlay / 'glossary/.medina-glossary-priority.json'
+        self.assertFalse(priority_path.is_symlink())
+        priority = json.loads(priority_path.read_text())
+        self.assertEqual(priority['kind'], 'internal_glossary_overlay')
+        self.assertEqual(priority['schema_version'], 1)
+        self.assertEqual(priority['files'], [
+            {'path': code.lower() + '.py',
+             'sha256': hashlib.sha256(files['glossary/' + code.lower() + '.py']).hexdigest()}
+            for code in manifest['chapter_codes']])
+        marker = sorted((overlay / 'glossary').glob('*_internal_work.py'))[-1].read_text()
+        self.assertNotIn('exec(', marker)
+        self.assertNotIn('compile(', marker)
+        self.assertIn('G = {}', marker)
+
+    def test_night_preview_overlay_uses_the_same_glossary_priority_contract(self):
+        # night_preview calls this helper with a single chapter and the cycle's
+        # actual system, rather than the infectious multi-chapter manifest.
+        from tools.glossary_loader import load_glossary
+        code = 'I61'
+        files = {'glossary/i61.py': b"G = {'DRAFT_FIXTURE': {'full': 'Night consultation fixture'}}\n"}
+        manifest = {'chapter_codes': [code], 'source_commit': 'fixture',
+                    'chapters': [{'code': code, 'covers': [code], 'title': 'Fixture technique'}]}
+        previous_fragment = PREVIEW.FRAGMENT
+        try:
+            PREVIEW.FRAGMENT = PREVIEW.frontend_owners(ROOT)[code]
+            overlay = self.base / 'night-overlay'
+            PREVIEW.create_overlay(ROOT, files, manifest, overlay)
+            self.assertEqual(load_glossary(overlay / 'glossary')['DRAFT_FIXTURE']['full'],
+                             'Night consultation fixture')
+        finally:
+            PREVIEW.FRAGMENT = previous_fragment
+
     def test_compiled_courses_need_four_panels_each(self):
         self.assertEqual(PREVIEW.verify_output(pack_html(course_html("A41") + course_html("B24")), self.manifest), 0)
         for courses in (course_html("A41") + course_html("B24", ("pA", "pE", "pS")),

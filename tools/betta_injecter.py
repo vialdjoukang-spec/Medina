@@ -6,7 +6,7 @@ vers la racine, état INJECTE + empreintes « canonical » dans organisation/bet
 ligne chapters.json (audit différé non effectué), empreinte de chapters.json dans
 nosology/integrity.json. La garde tools/betta_cycle.py vérifie ensuite chaque empreinte.
 Ne touche aucun fichier de la chaîne des cycles 1–30 (CYCLES_CLAUDE.json, travail/, cycle_claude).
-Usage : python3 tools/betta_injecter.py [CODE ...]
+Usage : python3 tools/betta_injecter.py [--novo] [CODE ...]   (--novo : Projet Novo_12)
 """
 import hashlib, json, shutil, sys
 from datetime import date
@@ -29,12 +29,33 @@ def ecrire(rel, data, compact=False, nl=True):
     (ROOT / rel).write_text(texte + ("\n" if nl else ""), encoding="utf-8")
 
 
-def main(cibles):
-    plan = charger("organisation/progression/plan-betta-cycles.json")
-    status = charger("organisation/betta_status.json")
+def main(cibles, novo=False):
+    plan_rel, status_rel, flag = (("organisation/progression/plan-novo12.json", "organisation/novo12_status.json", "novo12") if novo
+                                  else ("organisation/progression/plan-betta-cycles.json", "organisation/betta_status.json", "betta"))
+    plan = charger(plan_rel)
+    status = charger(status_rel)
     rows = charger("chapters.json")
     lecons = {l["code"]: (c["number"], l) for c in plan["cycles"] for a in c["agents"] for l in a["lessons"]}
     existants, faits = {r["code"] for r in rows}, []
+    # Contrôle préalable (constats Codex PR 96) : tous les fichiers présents et, pour Novo_12,
+    # porte de vérité VÉRITÉ OK, avant toute copie canonique.
+    sys.path.insert(0, str(ROOT / "tools"))
+    from betta_verite import controler
+    erreurs = []
+    for n, cyc in status["cycles"].items():
+        for code, st in cyc["lessons"].items():
+            if not isinstance(st, dict) or st.get("state") != "LIVRE" or (cibles and code not in cibles):
+                continue
+            src = ROOT / st["dir"]
+            for f in [src / "chapters" / code / f"{code}_{x}.html" for x in "abcd"] + [src / "glossary" / f"{code.lower()}.py", src / "rapport.md"]:
+                if not f.is_file():
+                    erreurs.append(f"{code} : fichier manquant {f.relative_to(ROOT)}")
+            if code in existants or (ROOT / "chapters" / code).exists():
+                erreurs.append(f"{code} : déjà présent dans chapters/ ou chapters.json")
+            if novo:
+                erreurs += [f"{code} : vérité — {e}" for e in controler(src)]
+    if erreurs:
+        sys.exit("Injection refusée, rien n'a été copié :\n" + "\n".join(erreurs))
     for n, cyc in status["cycles"].items():
         for code, st in cyc["lessons"].items():
             if not isinstance(st, dict) or st.get("state") != "LIVRE" or (cibles and code not in cibles):
@@ -51,13 +72,13 @@ def main(cibles):
             cycle, l = lecons[code]
             assert cycle == int(n), f"{code} : cycle incohérent"
             rows.append({"code": code, "covers": [code], "title": l["title"], "integrated": True,
-                         "owner": l["fragment"], "wave": WAVE[l["fragment"]], "production_cycle": cycle,
-                         "betta": True, "provisional_injection": True,
+                         "owner": l["fragment"], "wave": WAVE.get(l["fragment"]), "production_cycle": cycle,
+                         flag: True, "provisional_injection": True,
                          "audit_status": "audit_differe_non_effectue", "added": date.today().isoformat()})
             faits.append(code)
         if all(isinstance(v, dict) and v.get("state") == "INJECTE" for v in cyc["lessons"].values()):
             cyc["state"] = "INJECTE"
-    ecrire("organisation/betta_status.json", status, nl=False)
+    ecrire(status_rel, status, nl=False)
     ecrire("chapters.json", rows)
     integ = charger("nosology/integrity.json")
     integ["chapters.json"] = sha(ROOT / "chapters.json")
@@ -66,4 +87,4 @@ def main(cibles):
 
 
 if __name__ == "__main__":
-    main(set(sys.argv[1:]))
+    main(set(a for a in sys.argv[1:] if a != "--novo"), novo="--novo" in sys.argv)
