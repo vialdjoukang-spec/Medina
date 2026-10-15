@@ -1,3 +1,7 @@
+## PROMPT DE VÉRITÉ — entrée obligatoire de chaque leçon (Vial, 15 octobre 2026)
+
+Tout agent qui ouvre une leçon (recherche ou rédaction, sous-agents et workflows inclus) lit **d'abord** [PROMPT_VERITE.md](docs/collaboration/betta/PROMPT_VERITE.md) : matrice de complétude à 20 rubriques, hiérarchie suisse → européenne, FI Swissmedic, économie de jetons. Porte avant rédaction : `python3 tools/betta_verite.py "<dossier>"` → `VÉRITÉ OK`.
+
 ## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
 
 Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](docs/collaboration/instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).
