@@ -1,0 +1,170 @@
+{
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "code": "D50",
+ "phase": "2 — intégration de la sémiologie, du bloc clinique et des figures",
+ "agent": "Agent W",
+ "date": "2026-10-15",
+ "base_commit": "80e2b27782802721df921aca7a60bb9d6f243326",
+ "integration": [
+  "D50_c.html : bouton d50-tab-semio en première position de .sci-bar (aria-selected=true), Physiologie passé à aria-selected=false ; div.sci d50-s-semio (role=tabpanel, aria-labelledby=d50-tab-semio, sans hidden) en tête de .chap-body.sci-body ; contenu repris de prep/semiologie_sciences.html sans modification de fond ; aucun bouton Pareto dans ce sous-onglet.",
+  "Fenêtres d50-sm-conjonctive, -fatigue, -jambes, -pica, -trophiques, -pertes ajoutées à la fin de D50_pop2.html (et non dans un D50_pop3.html, qui n’a jamais été créé, conformément aux core_paths de tools/alpha_publication.py).",
+  "D50_a.html, îlot d50-6 : div.card data-semiology-clinical=\"D50\" inséré avant l’encadré « À retenir. » ; références de l’îlot complétées (Onkopedia 2025 § 3.1, mediX 08/2025, Trenkwalder et al. 2024).",
+  "D50_c.html, d50-s-histo : figure « Micrographies 1 et 2 » en deux <img alt> + figcaption avec attribution (frottis normal CC BY 4.0, Степанюк Ярослав et Борис Максим ; frottis ferriprive CC BY 2.0, Ed Uthman). L’échelle SVG du volume globulaire moyen proposée par P n’a pas été insérée dans cette figure (valeurs issues de la page Commons).",
+  "D50_c.html, d50-s-histo : nouvelle figure séparée « Figure 5 », schéma de données non anatomique des intervalles de référence et seuils du volume globulaire moyen (80–96 fl ; microcytose < 80) et de la TCMH (28–33 pg ; hypochromie < 28), valeurs lues dans Onkopedia 2025, § 3.5.1 et tableau 4, citées en légende et en références. Elle garantit une figure SVG sourcée dans la discipline.",
+  "La valeur de 55 fl de la micrographie ferriprive reste dans la prose, attribuée explicitement à l’auteur de l’image ; elle n’est utilisée ni comme seuil ni dans un schéma.",
+  "Figures de pS renumérotées dans l’ordre de lecture : sémiologie 2, physiologie 3, biochimie 4, hématologie cellulaire 5 (plus Micrographies 1 et 2), génétique 6.",
+  "Glossaire : aucun ajout requis (prep/glossaire_ajouts.json vide ; audit des abréviations vide)."
+ ],
+ "controles": {
+  "test_v7_static": "python3 test_v7.py --static D50 → OK (43 865 mots, 95 fenêtres, 9 quiz, 10 Pareto ; abréviations couvertes, classes de la liste fermée, aucun style en ligne)",
+  "identifiants": "aucun identifiant dupliqué dans chapters/D50 ; toutes les clés data-k résolues (dont les six d50-sm-*)",
+  "construction": "MEDINA_OUT=<scratchpad> python3 build_front.py --fragment S06 → MEDINA_S06_hematopoietique-lymphatique.html, 5 919 950 octets avant compression ; aucune sortie dans le dépôt",
+  "test_v7_navigateur": "python3 test_v7.py --url http://127.0.0.1:8790/MEDINA_S06_hematopoietique-lymphatique.html D50 (Chromium 1194) → OK : 1300 px et 390 px, clic de chaque mot vert, quatre onglets, aucune erreur JavaScript",
+  "rendu_chromium": {
+   "url": "http://127.0.0.1:8790/MEDINA_S06_hematopoietique-lymphatique.html",
+   "viewports": {
+    "desktop": {
+     "cours_affiche": 1,
+     "premier_bouton": "Sémiologie fondamentale et analytique",
+     "premier_aria_selected": "true",
+     "autres_aria_selected": [
+      "false",
+      "false",
+      "false",
+      "false"
+     ],
+     "semio_visible": true,
+     "sci_hidden": {
+      "d50-s-semio": false,
+      "d50-s-physio": true,
+      "d50-s-bioc": true,
+      "d50-s-histo": true,
+      "d50-s-gen": true
+     },
+     "titre_semio": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "sections_semiology": [
+      "normal",
+      "signs",
+      "mechanisms",
+      "examination",
+      "interpretation",
+      "differentials",
+      "urgency",
+      "limits",
+      "sources"
+     ],
+     "largeur_doc": 1300,
+     "largeur_vue": 1300,
+     "fenetre_sm_ok": true,
+     "histo_images": [
+      {
+       "src": "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg",
+       "naturalWidth": 1280
+      },
+      {
+       "src": "assets/img/cycle1/d50/iron_deficiency_anemia_peripheral_blood_smear_4422704616.jpg",
+       "naturalWidth": 1200
+      }
+     ],
+     "figure5_bbox": {
+      "x": 451.953125,
+      "y": 362.15625,
+      "width": 717.0625,
+      "height": 347.328125
+     },
+     "bloc_clinique": 1,
+     "bloc_clinique_visible": true,
+     "erreurs_js": [],
+     "note_fenetre": "Le contrôle textuel automatique a échoué à cause de la césure du moteur ; la fenêtre d50-sm-conjonctive s’ouvre avec son titre et son contenu, vérifié sur la capture 03 ; test_v7 --url a aussi cliqué chaque mot vert sans « Fiche absente »."
+    },
+    "mobile390": {
+     "cours_affiche": 1,
+     "premier_bouton": "Sémiologie fondamentale et analytique",
+     "premier_aria_selected": "true",
+     "autres_aria_selected": [
+      "false",
+      "false",
+      "false",
+      "false"
+     ],
+     "semio_visible": true,
+     "sci_hidden": {
+      "d50-s-semio": false,
+      "d50-s-physio": true,
+      "d50-s-bioc": true,
+      "d50-s-histo": true,
+      "d50-s-gen": true
+     },
+     "titre_semio": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "sections_semiology": [
+      "normal",
+      "signs",
+      "mechanisms",
+      "examination",
+      "interpretation",
+      "differentials",
+      "urgency",
+      "limits",
+      "sources"
+     ],
+     "largeur_doc": 390,
+     "largeur_vue": 390,
+     "fenetre_sm_ok": true,
+     "histo_images": [
+      {
+       "src": "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg",
+       "naturalWidth": 1280
+      },
+      {
+       "src": "assets/img/cycle1/d50/iron_deficiency_anemia_peripheral_blood_smear_4422704616.jpg",
+       "naturalWidth": 1200
+      }
+     ],
+     "figure5_bbox": {
+      "x": 47,
+      "y": 394.578125,
+      "width": 296,
+      "height": 143.375
+     },
+     "bloc_clinique": 1,
+     "bloc_clinique_visible": true,
+     "erreurs_js": [],
+     "note_fenetre": "Le contrôle textuel automatique a échoué à cause de la césure du moteur ; la fenêtre d50-sm-conjonctive s’ouvre avec son titre et son contenu, vérifié sur la capture 03 ; test_v7 --url a aussi cliqué chaque mot vert sans « Fiche absente »."
+    }
+   }
+  },
+  "audit_sciences": {
+   "commande": "python3 tests/audit_sciences.py --codes D50",
+   "sortie": "{\n  \"result\": \"failed\",\n  \"courses\": 1,\n  \"totals\": {\n    \"before\": {\n      \"words\": 0,\n      \"figures\": 0,\n      \"disciplines\": 0\n    },\n    \"after\": {\n      \"words\": 6347,\n      \"figures\": 6,\n      \"disciplines\": 5\n    }\n  },\n  \"errors\": [\n    \"D50/d50-s-histo: figure sans légende ou nom accessible\"\n  ]\n}",
+   "faux_positif_connu": "La seule erreur, « D50/d50-s-histo: figure sans légende ou nom accessible », vient de la figure « Micrographies 1 et 2 » faite d’images réelles (<img alt> + figcaption avec attribution) : le test exige un svg[role=img] dans chaque figure. Décision du coordinateur : faux positif consigné, aucun SVG factice ajouté. Les autres exigences passent pour les cinq disciplines, dont d50-s-semio et la Figure 5 SVG sourcée de d50-s-histo."
+  }
+ },
+ "captures": [
+  "01_ouverture_D50.png",
+  "02_semiologie_desktop.png",
+  "02_semiologie_mobile390.png",
+  "03_fenetre_semiologie_desktop.png",
+  "03_fenetre_semiologie_mobile390.png",
+  "04_frottis_desktop.png",
+  "04_frottis_mobile390.png",
+  "05_indices_desktop.png",
+  "05_indices_mobile390.png",
+  "06_bloc_clinique_desktop.png",
+  "06_bloc_clinique_mobile390.png"
+ ],
+ "empreintes_sha256": {
+  "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
+  "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
+  "chapters/D50/D50_c.html": "4db32665a9cb8798635ddbefc4e69d179fb5c187cc85e2c5b9f4e82a46c30ec8",
+  "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
+  "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
+  "chapters/D50/D50_pop2.html": "c9c984d2dcb6d536386edd4f790ffc8a23397b293e25fc5f9d0d6be2400c72b7",
+  "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
+  "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
+ },
+ "reserves": [
+  "Le choix du frottis normal reste une revue IA (le rapport MED demandait un choix humain).",
+  "SEM-23 : captures réelles produites ici ; les revues finales MED, LANG et SEMIO relèvent de l’Agent P (phase 2)."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

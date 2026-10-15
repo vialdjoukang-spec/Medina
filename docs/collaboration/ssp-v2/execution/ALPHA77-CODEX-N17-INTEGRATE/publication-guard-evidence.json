@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "actor": "Codex",
+  "code": "N17",
+  "phase": "provisional",
+  "medical_human_validation": false,
+  "compared_main": "f6d379aa4861b147b3b4e21d5d902928795f0a47",
+  "receipt_bound_head": "5457c3a611ec61da35fee5fff7e583b0903369a0",
+  "controls": {
+    "mission": {
+      "result": "passed",
+      "output_sha256": "4ae921b16cea5d10846c9b75ada28aa8c523622707e0a88313c57ecd7887381d"
+    },
+    "alpha": {
+      "result": "passed",
+      "output_sha256": "b84a115b0430815061ca9281b4aac3c5617fd220e2ec007474a55e30ec108b44"
+    },
+    "historical": {
+      "result": "passed",
+      "output_sha256": "b4e7ca2a02d414cb8a0890d53843a6c473ac8d354663b5ea6b017d2b1013b9c8"
+    }
+  },
+  "ci_context_note": "Initial branch push compared preserved unpublished candidate 20c3dbb2 without an Alpha receipt and failed the historical N17 fingerprint guard. PR main comparison passed. This successor records actual local checks and tests a normal transition between receipt-bound trees; no guard changed or bypassed."
+}
