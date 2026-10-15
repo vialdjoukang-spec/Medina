@@ -1,8 +1,16 @@
+## Moteurs indépendants et 7_Starter — nouvel ordre Vial du 15 octobre 2026
+
+Lire [l’ordre et la politique d’autonomie](docs/collaboration/instructions/MOTEURS_INDEPENDANTS_7_STARTER_2026-10-15.md). Claude et Codex activent leurs propres moteurs et publient leurs cours/images dans leurs attributions sans nouvelle confirmation de l’autre IA. Réserver les sources avec les missions Alpha préapprouvées ; ne pas employer le reçu historique en l’état pour une correction. L’autorisation de publication n’est ni une suppression des contrôles réels, ni une validation médicale humaine.
+
+`7_Starter_Codex` traite sept leçons par lot, le lot suivant seulement après clôture effective des sept précédentes. Plafond confirmé :77leçons au total, premier lot inclus. Les rapports seuls ne clôturent pas une leçon. La file Codex conserve ses attributions ; aucun cours Claude et aucun ancien système ne peut y entrer. Les exécuteurs Starter et ImageFinder de la campagne s’éteignent après77clôtures et achèvement des figures ; les preuves et images publiées sont conservées.
+
+---
+
 ## Figures anatomiques — instruction Vial du 15 octobre 2026
 
 Pour le chantier S08/S05/S04/S06 uniquement, les schémas de structures anatomiques générés ou dessinés par IA, y compris les SVG écrits par une IA, sont non recevables. Appliquer [Image_Codex_Finder](docs/collaboration/instructions/IMAGE_CODEX_FINDER.md) : inventaire des figures, preuve de provenance, droits propres à la figure, attribution et contrôle visuel médical avant remplacement. Une anatomie IA démontrée entraîne un constat MAJEUR ; une origine inconnue reste une réserve. Un schéma causal non anatomique exige aussi des valeurs et flèches sourcées. Aucun remplacement automatique et aucune génération d’anatomie par IA.
 
-Toutes les copies locales de recherche doivent partager le même cache et ses verrous ; entre machines, utiliser un courtier commun via accès privé. Sans ce courtier commun, ne pas lancer de recherches parallèles indépendantes. Aucun repli direct après panne du courtier ; respecter les cooldowns et budgets. Le filtre automatique ne certifie ni l’origine humaine, ni la licence, ni l’exactitude anatomique. Les autres systèmes restent inchangés ; chaque modification conserve sa mission et ses chemins réservés.
+Chaque IA dispose désormais de moteurs indépendants (ordre Vial du15octobre2026). Ses copies locales partagent son propre cache et ses verrous ; aucun courtier commun Codex/Claude n’est exigé. Les modes directs indépendants sont autorisés avec débit prudent, quotas et respect des cooldowns/Retry-After ; ne pas revendiquer de limiteur global entre machines. Un client configuré sur un courtier conserve son absence de repli direct implicite. Le filtre automatique ne certifie ni l’origine humaine, ni la licence, ni l’exactitude anatomique. Les autres systèmes restent inchangés ; chaque modification conserve sa mission et ses chemins réservés.
 
 ---
 
