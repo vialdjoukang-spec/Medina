@@ -1,0 +1,1081 @@
+{
+ "mission": "ALPHA77-CLAUDE-N18-INTEGRATE",
+ "generation": 2,
+ "code": "N18",
+ "fragment": "S04",
+ "branche": "claude/alpha77/n18-integrate-g2",
+ "base": "3969903cc87329bc471bf8ab7bce77f25544b76e",
+ "date": "2026-10-15",
+ "paquet": "Paquet préparé hors dépôt (base 958474d, sources N18 identiques à la base 3969903) : corrections.json, s05_discipline.html, sources.json, glossaire_ajouts.json, fig9.svg",
+ "empreintes_avant": {
+  "chapters/N18/N18_a.html": "379119568de1595e409ca86cfba82cce2a2dce39a725016418035096df90c9b4",
+  "chapters/N18/N18_b.html": "7fe1bb8fc76803dd5c46131b82ee66b0e01340359c059627a139434123b14c58",
+  "chapters/N18/N18_c.html": "f89608d79db5a2bf8aef338500698b0755f8da835ade6840f2b92cd7a3152371",
+  "chapters/N18/N18_d.html": "576cf45799a506cca200ef43515568efe573d2343727ca676606aade80b68608",
+  "chapters/N18/N18_pop1.html": "b30835f4d60e5fdbb660de0063b6ec231996aeaefbf055b8ec9438d9b9a1e950",
+  "chapters/N18/N18_pop2.html": "594705bc239322de6df65571014289f9a692681affff36d1b2704e560a0beb54",
+  "glossary/n18.py": "4e59b152cad30c30746f363673be23e13dc207240e7a3ede2fecfcf88801cbdf"
+ },
+ "empreintes_apres": {
+  "chapters/N18/N18_a.html": "6f6f459a3a258c56c3a8370d7113fb3798e90c3b3e48c45e39a61c7e441c47e9",
+  "chapters/N18/N18_b.html": "7fe1bb8fc76803dd5c46131b82ee66b0e01340359c059627a139434123b14c58",
+  "chapters/N18/N18_c.html": "c0228fa4b239c169696035c3fcba70ec13b53bfe8220351918fc9a301835dae0",
+  "chapters/N18/N18_d.html": "576cf45799a506cca200ef43515568efe573d2343727ca676606aade80b68608",
+  "chapters/N18/N18_pop1.html": "f009e8b74443bd1bde06dfdebfee516d967f1b9292ab35e69f19ed13601411d7",
+  "chapters/N18/N18_pop2.html": "f05962b01fd95b07fa683c9aae8bd686bc6211d8eb39a2f3785f9e96dc43fc8c",
+  "glossary/n18.py": "d5ae070c286c909fc8a6b38d79d2426aee5835915900face2d8655af95505036"
+ },
+ "corrections_appliquees": [
+  {
+   "id": "COR-01",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-2 > div.key (dernier)",
+   "motif": "Le texte limitait le diagnostic à deux marqueurs. KDIGO 2024 (tableau 1, p. S136-S137) liste sept marqueurs de lésion et précise que la définition « n’est pas limitée » au DFG et à l’ACR, qui servent à la classification (p. S137 ; légende de la figure 3, p. S139). Cohérence avec N18-C0011 et N18-C0177.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Tableau 1 (p. S136-S137) ; p. S137, note sur la classification ; figure 3 et légende (p. S139)",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-01b",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-2 > p.src",
+   "motif": "Ajout de la référence du tableau 1 à la ligne de sources de l’îlot, pour la nouvelle phrase de COR-01.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Tableau 1 (p. S136-S137)",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-02",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "h3#n18-sm-3-partie-1 + p",
+   "motif": "« Le sodium s’accumule dans le sang » suggère une hypernatrémie. La rétention porte sur le sodium total et le volume extracellulaire ; la natrémie dépend du bilan hydrique et peut être normale ou basse (Rev Med Suisse 2010 : « L’état volémique reflète le volume extracellulaire, lui-même déterminé par la quantité de sodium extracellulaire » ; IRC dans la branche hypervolémique « gain H2O > gain Na » de la figure 1).",
+   "sources": [
+    {
+     "id": "RMS2010",
+     "section": "Régulation de la natrémie ; Hyponatrémie et volémie ; Examens de laboratoire ; figure 1 (p. 2074-2077)",
+     "lecture": "integrale"
+    },
+    {
+     "id": "OSX263",
+     "section": "26.3 Electrolyte balance, Sodium",
+     "lecture": "resume"
+    },
+    {
+     "id": "HUG2026",
+     "section": "Comment découvre-t-on l’insuffisance rénale ? (mise à jour 09.03.2026) : « favorisant la rétention d’eau. Celle-ci augmente la pression artérielle » ; la formule grand public « le sodium s’accumule dans le sang » n’est volontairement pas reprise",
+     "lecture": "resume"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-02b",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-3 > p.src",
+   "motif": "Sources de COR-02 ajoutées à l’îlot.",
+   "sources": [
+    {
+     "id": "RMS2010",
+     "section": "p. 2074-2077",
+     "lecture": "integrale"
+    },
+    {
+     "id": "OSX263",
+     "section": "Sodium",
+     "lecture": "resume"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-03",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-6 table.t, ligne « Fatigue »",
+   "motif": "Une hémoglobine normale écarte l’anémie comme mécanisme, non une fatigue liée à la maladie rénale : KDIGO 2024 classe la fatigue/léthargie parmi les symptômes urémiques (point de pratique 5.2.2.1) et relie fatigue, troubles du sommeil, prurit, douleur et dépression (tableau 38). L’inflammation, citée dans la demande, n’a pas été trouvée comme mécanisme de fatigue dans les sources lues : non ajoutée.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Point de pratique 5.2.2.1 (p. S257) ; tableau 38 (p. S259-S260)",
+     "lecture": "integrale"
+    },
+    {
+     "id": "HUG2017",
+     "section": "§ 3.1, « Dépister une dépression »",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-04",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-6 > p (après le tableau)",
+   "motif": "Le texte faisait de la preuve de chronicité un préalable à l’attribution rénale d’un symptôme, ce qui retarde la reconnaissance d’une atteinte aiguë. KDIGO 2024 demande d’exclure l’IRA/la maladie rénale aiguë (figure 3), de ne pas supposer la chronicité sur une valeur isolée (point de pratique 1.1.3.2) et permet de traiter dès la première présentation (point de pratique 1.1.3.3) ; HUG 2017 (§ 2.3) liste les urgences néphrologiques.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Figure 3 (p. S139) ; points de pratique 1.1.3.1 à 1.1.3.3 (p. S148 et S171-S172)",
+     "lecture": "integrale"
+    },
+    {
+     "id": "HUG2017",
+     "section": "§ 2.3 et tableau 4",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-05",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-6 div.two > div.card (1)",
+   "motif": "Aligne la carte sur les preuves de chronicité de KDIGO 2024 (point de pratique 1.1.3.1) et sur les marqueurs du tableau 1.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Point de pratique 1.1.3.1 ; tableau 1",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-06",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-6 div.two > div.card (2)",
+   "motif": "Même erreur que COR-03 (hémoglobine normale = « ailleurs ») ; ajout de l’atteinte aiguë (COR-04).",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Tableau 38 ; figure 3",
+     "lecture": "integrale"
+    },
+    {
+     "id": "HUG2017",
+     "section": "§ 2.3",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-07",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-6 > div.key",
+   "motif": "Même idée erronée que COR-04, répétée dans l’épilogue local.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Points de pratique 1.1.3.2 et 1.1.3.3 ; figure 3",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-07b",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-6 > p.src",
+   "motif": "Sources de COR-03 à COR-07.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "Figure 3 ; PP 1.1.3.1-1.1.3.3 ; tableau 38",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "COR-08",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "section#n18-sm-9 table.t (ajout de lignes)",
+   "motif": "Le tableau de correspondance « qui affirme quoi » doit couvrir les affirmations nouvelles de COR-01 à COR-07.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "idem",
+     "lecture": "integrale"
+    },
+    {
+     "id": "RMS2010",
+     "section": "idem",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "SIG-01",
+   "fichier": "chapters/N18/N18_a.html",
+   "ancre": "h3#n18-a05-partie-7, tableau des plaintes, ligne « Fatigue »",
+   "motif": "Même erreur que COR-03 dans l’onglet Pathologie.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "PP 5.2.2.1 ; tableau 38",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "SIG-02",
+   "fichier": "chapters/N18/N18_a.html",
+   "ancre": "h3#n18-a05-partie-7, div.two > div.card (2)",
+   "motif": "Même erreur que COR-06.",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "tableau 38",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "SIG-03",
+   "fichier": "chapters/N18/N18_pop2.html",
+   "ancre": "template[data-pop=\"n18-sm-fatigue\"], 3e paragraphe",
+   "motif": "Même erreur dans la fenêtre ouverte depuis N18_c (bouton n18-sm-fatigue).",
+   "sources": [
+    {
+     "id": "K24",
+     "section": "PP 5.2.2.1 ; tableau 38",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "SIG-04",
+   "fichier": "chapters/N18/N18_pop2.html",
+   "ancre": "template[data-pop=\"n18-sm-pa\"], 1er paragraphe",
+   "motif": "Formulation voisine de COR-02 dans la fenêtre appelée par N18_c (bouton n18-sm-pa) ; moins fausse (pas « dans le sang ») mais ambiguë.",
+   "sources": [
+    {
+     "id": "RMS2010",
+     "section": "Hyponatrémie et volémie",
+     "lecture": "integrale"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "ADD-S05-tab",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "barre .sci-bar",
+   "motif": "AGENTS.md : Sémiologie + 5 disciplines ; N18_c n’en avait que 4. Discipline ajoutée : Génétique des maladies rénales chroniques (voir s05_discipline.html, fenêtres et Pareto à insérer dans N18_pop1/pop2).",
+   "sources": [
+    {
+     "id": "K24",
+     "lecture": "integrale"
+    },
+    {
+     "id": "KDIGOGEN22",
+     "lecture": "integrale"
+    },
+    {
+     "id": "KNOERS22",
+     "lecture": "integrale"
+    },
+    {
+     "id": "FI-JINARC",
+     "lecture": "integrale"
+    },
+    {
+     "id": "OFSP-LAGH",
+     "lecture": "resume"
+    }
+   ],
+   "statut": "applique"
+  },
+  {
+   "id": "ADD-S05-panel",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "fin de #n18-s04-sci",
+   "motif": "AGENTS.md : Sémiologie + 5 disciplines ; N18_c n’en avait que 4. Discipline ajoutée : Génétique des maladies rénales chroniques (voir s05_discipline.html, fenêtres et Pareto à insérer dans N18_pop1/pop2).",
+   "sources": [
+    {
+     "id": "K24",
+     "lecture": "integrale"
+    },
+    {
+     "id": "KDIGOGEN22",
+     "lecture": "integrale"
+    },
+    {
+     "id": "KNOERS22",
+     "lecture": "integrale"
+    },
+    {
+     "id": "FI-JINARC",
+     "lecture": "integrale"
+    },
+    {
+     "id": "OFSP-LAGH",
+     "lecture": "resume"
+    }
+   ],
+   "statut": "applique"
+  }
+ ],
+ "insertions_fenetres": [
+  {
+   "id": "ADD-S05-pop1",
+   "fichier": "chapters/N18/N18_pop1.html",
+   "apres": "template n18-s04-fenetre-2",
+   "gabarits": [
+    "n18-s05-fenetre-1",
+    "n18-s05-fenetre-2"
+   ]
+  },
+  {
+   "id": "ADD-S05-pop2",
+   "fichier": "chapters/N18/N18_pop2.html",
+   "apres": "template pareto-n18-s04",
+   "gabarits": [
+    "pareto-n18-s05"
+   ]
+  }
+ ],
+ "glossaire": {
+  "cle": "NPHS2",
+  "fichier": "glossary/n18.py",
+  "via": "_add(...)",
+  "source": "glossaire_ajouts.json"
+ },
+ "signalements_integres": "SIG-01 à SIG-04 (N18_a, fenêtres n18-sm-fatigue et n18-sm-pa de N18_pop2), même logique sourcée que COR-02 et COR-03",
+ "corrections_revue": [
+  {
+   "id": "REV-01",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "N18-C2019, ligne GLA",
+   "statut": "resolved",
+   "constat": "La colonne « Phénotype évocateur » de la ligne Fabry contenait une remarque technique, pas un phénotype.",
+   "correction": "« Atteinte rénale d’une maladie multisystémique liée à un seul gène » ; la remarque sur l’analyse ciblée passe dans « Ce que change le diagnostic ».",
+   "sources": [
+    "KNOERS22 tableau 1",
+    "K24 PP 1.1.4.2 (atteinte syndromique ou multisystémique)"
+   ]
+  },
+  {
+   "id": "REV-02",
+   "fichier": "chapters/N18/N18_c.html",
+   "ancre": "n18-s05 partie 6, Science → traitement",
+   "statut": "resolved",
+   "constat": "« ne répond pas à l’immunosuppression » : formulation absolue.",
+   "correction": "« répond généralement mal à l’immunosuppression ».",
+   "sources": [
+    "KNOERS22 « Glomerulopathies »"
+   ]
+  },
+  {
+   "id": "REV-03",
+   "fichier": "chapters/N18/N18_pop2.html",
+   "ancre": "N18-C2045",
+   "statut": "resolved",
+   "constat": "« un résultat négatif n’exclut rien » : surgénéralisation, contredite par l’exemple du SHU atypique (partie 5).",
+   "correction": "« n’exclut pas une cause héréditaire ».",
+   "sources": [
+    "KDIGOGEN22",
+    "KNOERS22 tableau 2"
+   ]
+  },
+  {
+   "id": "REV-04",
+   "fichier": "chapters/N18/N18_pop2.html",
+   "ancre": "N18-C2047",
+   "statut": "resolved",
+   "constat": "« qui ne répondra pas » : formulation absolue.",
+   "correction": "« qui répond généralement mal à ce traitement ».",
+   "sources": [
+    "KNOERS22"
+   ]
+  },
+  {
+   "id": "REV-05",
+   "fichier": "chapters/N18/N18_pop1.html",
+   "ancre": "N18-C2039",
+   "statut": "resolved",
+   "constat": "« ne récidivent pas sur le greffon » : absolu.",
+   "correction": "« ne récidivent en principe pas ».",
+   "sources": [
+    "KNOERS22 « Predicted clinical benefit »"
+   ]
+  },
+  {
+   "id": "REV-06",
+   "fichier": "chapters/N18/N18_pop2.html",
+   "ancre": "template n18-sm-pa",
+   "statut": "resolved",
+   "constat": "SIG-04 appliqué sans source de la natrémie dans la ligne de sources ; phrase à trois points-virgules.",
+   "correction": "Phrase scindée, attribution (Rev Med Suisse 2010) et lien ajoutés à la ligne de sources de la fenêtre.",
+   "sources": [
+    "RMS2010"
+   ]
+  },
+  {
+   "id": "REV-07",
+   "fichier": "chapters/N18/N18_pop2.html",
+   "ancre": "template n18-sm-fatigue, ligne de sources",
+   "statut": "resolved",
+   "constat": "SIG-03 cite le point de pratique 5.2.2.1, absent de la ligne de sources.",
+   "correction": "« KDIGO 2024, figure 49, point de pratique 5.2.2.1 et tableau 38 ».",
+   "sources": [
+    "K24"
+   ]
+  },
+  {
+   "id": "REV-08",
+   "fichier": "chapters/N18/N18_c.html ; chapters/N18/N18_pop1.html",
+   "ancre": "N18-C2019 ligne NPHS1/NPHS2/WT1 ; N18-C2039",
+   "statut": "resolved",
+   "constat": "Constat Codex P1 (PR 172) : « pas de récidive sur le greffon » est faux pour NPHS1 Fin-major homozygote (récidive dans 13 greffons sur 51, 25 %, par anticorps anti-néphrine).",
+   "correction": "Récidive rare en général, exception NPHS1 Fin-major explicite (tableau S05 et fenêtre n18-s05-fenetre-1) ; Patrakka 2002 ajouté aux lignes de sources. Pareto pareto-n18-s05 et partie 6 vérifiés : aucune affirmation de non-récidive.",
+   "sources": [
+    "PATRAKKA2002 (résumé PubMed lu, PMID 11884936, doi 10.1097/00007890-200202150-00013)"
+   ]
+  }
+ ],
+ "registre_preuves": {
+  "portee": "Nouveaux identifiants data-evidence N18-C2016 à N18-C2047 (32). Le registre historique du cours (livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger.json) est hors des chemins de la mission : ce registre en est le complément génération 2, comme integration/corrections.json en génération 1 pour N18-C2008 à C2015.",
+  "entrees": [
+   {
+    "id": "N18-C2016",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "La maladie rénale chronique se concentre dans certaines familles. Les analyses de grands dossiers médicaux électroniques estiment son héritabilité observationnelle entre 25 et 44 %, avec des valeurs plus élevées chez les personnes d’ascendance africaine. Cette part héréditaire passe par deux mécanismes distincts. Une maladie monogénique, dite mendélienne, résulte d’un variant rare et pathogène d’un seul gène : le génotype prédit fortement le phénotype, et l’environnement pèse peu. Une maladie polygénique, dite complexe, résulte de l’effet cumulé de nombreux variants communs de faible effet et de facteurs d’environnement ; elle ne suit aucun mode de transmission simple.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence de controverses KDIGO, Genetics in chronic kidney disease, Kidney Int 2022;101:1126-41, « Definitions and epidemiology »"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, point de pratique 1.1.4.2"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll., groupe de travail européen sur les maladies rénales héréditaires, Nephrol Dial Transplant 2022;37:239-54, introduction"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2017",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Les causes monogéniques expliquent environ 30 à 50 % des maladies rénales chroniques de catégorie G3b à G5 chez l’enfant, et 10 à 30 % chez l’adulte. KDIGO 2024 ajoute que, dans certaines études, plus de 10 % des personnes atteintes portent un variant pathogène plausible, qu’une histoire familiale existe ou non. Plus de 400 gènes sont liés à des maladies rénales héréditaires. L’absence d’histoire familiale n’écarte donc pas une cause génétique : un variant peut être survenu de novo, ou s’exprimer de façon variable d’une génération à l’autre.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence de controverses KDIGO, Genetics in chronic kidney disease, Kidney Int 2022;101:1126-41, « Definitions and epidemiology »"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, point de pratique 1.1.4.2"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll., groupe de travail européen sur les maladies rénales héréditaires, Nephrol Dial Transplant 2022;37:239-54, introduction"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2018",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Le tableau répond à une question de consultation : quel phénotype rénal évoque quel gène, et que change le diagnostic moléculaire pour le patient ? Il ne retient que les entités et les conséquences décrites dans les sources lues.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Predicted clinical benefit », « Glomerulopathies », « Renal ciliopathies », tableau 1"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, figure 9"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Defining actionable genes »"
+     },
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc (août 2025)"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2019",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Gènes Maladie Phénotype évocateur Ce que change le diagnostic PKD1, PKD2 Polykystose rénale autosomique dominante Gros reins kystiques chez l’adulte ; variant parfois de novo, sans histoire familiale Dépistage ciblé des anévrismes intracrâniens ; tolvaptan dans une indication restreinte COL4A3, COL4A4, COL4A5 Collagénopathies de type IV, dont le syndrome d’Alport Hématurie initiale, puis protéinurie et insuffisance rénale ; surdité possible Blocage précoce du système rénine–angiotensine ; le type de variant renseigne sur la surdité et sur le risque de glomérulonéphrite anti-membrane basale après greffe UMOD, MUC1 Néphropathie tubulo-interstitielle autosomique dominante Insuffisance rénale sans gros reins, avec peu ou pas de kystes Le variant habituel de MUC1 échappe au séquençage de l’exome HNF1B Maladie rénale liée à HNF1B Anomalie rénale avec diabète, atteinte hépatique ou pancréatique Recherche d’un diabète ; délétions dans la moitié des cas NPHS1, NPHS2, WT1 Syndrome néphrotique congénital ou corticorésistant héréditaire Protéinurie précoce, absence de réponse aux corticoïdes Pas d’immunosuppression inefficace ; récidive sur le greffon rare en général, sauf NPHS1 de génotype Fin-major homozygote, où des anticorps anti-néphrine peuvent la provoquer GLA Maladie de Fabry Atteinte rénale d’une maladie multisystémique liée à un seul gène Analyse ciblée de ce seul gène possible ; traitement enzymatique spécifique",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Predicted clinical benefit », « Glomerulopathies », « Renal ciliopathies », tableau 1"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, figure 9"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Defining actionable genes »"
+     },
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc (août 2025)"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2020",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Le tableau se lit de gauche à droite à partir du phénotype, jamais à partir du gène : c’est l’examen clinique, l’analyse urinaire et l’imagerie qui orientent l’analyse. L’erreur fréquente consiste à conclure à une glomérulonéphrite acquise devant une hématurie avec protéinurie ; des patients porteurs d’un variant du collagène IV ont ainsi reçu un diagnostic erroné de glomérulonéphrite membranoproliférative. Dans de grandes cohortes, le test génétique reclasse le diagnostic initial dans 10 à 22 % des cas. Prenons une femme fictive de 32 ans : elle a une hématurie microscopique persistante, son père est dialysé et son oncle porte un appareil auditif. Le tableau oriente vers une collagénopathie de type IV, et donc vers un panel de gènes glomérulaires plutôt que vers une immunosuppression d’emblée.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Predicted clinical benefit », « Glomerulopathies », « Renal ciliopathies », tableau 1"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, figure 9"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Defining actionable genes »"
+     },
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc (août 2025)"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2021",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Les variants à risque d’APOL1, le gène de l’apolipoprotéine L1, échappent aux deux catégories précédentes. Ils sont communs dans certaines populations d’ascendance africaine, mais ils ne confèrent un risque élevé que selon un mode récessif : il faut deux allèles à risque. Ils ne sont pas considérés comme monogéniques, car l’ampleur du risque dépend fortement du contexte. Deux allèles à risque multiplient par plus de 80 le risque de néphropathie associée au VIH non traité chez des personnes noires d’Afrique du Sud, mais seulement par 1,2 à 2 le risque de maladie rénale chronique ou d’insuffisance rénale non diabétique.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Definitions and epidemiology », « Defining actionable genes », figure 3"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, tableau 5"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2022",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Seule une minorité des porteurs développe une néphropathie, et aucune donnée ne soutient une intervention précoce chez la personne asymptomatique. Le dépistage expose à l’anxiété, à la stigmatisation et à un biais racial perçu ou réel ; chez un donneur vivant apparenté, il peut au contraire prévenir un préjudice. KDIGO 2024 retient les régions de forte prévalence des variants d’APOL1 parmi les situations à risque de maladie rénale chronique : la conséquence pratique est de mesurer le DFGe et l’ACR, non de génotyper systématiquement.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Definitions and epidemiology », « Defining actionable genes », figure 3"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, tableau 5"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2023",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Le test génétique ne s’ajoute pas à toute maladie rénale chronique : il répond à une probabilité préalable. KDIGO 2024 reprend six situations où il est particulièrement informatif. Il s’agit d’une catégorie clinique riche en formes monogéniques, d’un début précoce, d’une atteinte syndromique ou multisystémique, d’une consanguinité, d’une maladie accessible à un traitement ciblé, et d’une maladie de cause inconnue lorsque la biopsie ne serait plus informative en raison du stade avancé. Les atteintes glomérulaires et tubulo-interstitielles ont un rendement diagnostique plus élevé que la maladie rénale diabétique. Chez l’enfant et le jeune en insuffisance rénale, une cause génétique est plus probable que chez l’adulte ; dans certains systèmes de santé, le test génétique précède alors la biopsie et en évite les risques.",
+    "sources": [
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, point de pratique 1.1.4.2, considérations pédiatriques, tableau 5"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Considerations for genetic testing »"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Genetic counselling »"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2024",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Une histoire familiale d’insuffisance rénale, quelle qu’en soit la cause, ou une maladie rénale héréditaire connue chez un apparenté justifient de rechercher la maladie rénale chronique par le DFGe et l’ACR. Chez l’enfant ou l’adulte en bonne santé, aucune donnée ne soutient en revanche un test génétique prédictif, même avec une histoire familiale. Le test des apparentés, dit en cascade, devient la règle seulement après l’identification d’un variant pathogène chez le cas index. Le séquençage parallèle, par panel de gènes orienté par le phénotype ou par exome, est plus efficace que l’analyse successive de gènes isolés.",
+    "sources": [
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, point de pratique 1.1.4.2, considérations pédiatriques, tableau 5"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Considerations for genetic testing »"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Genetic counselling »"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2025",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "La figure suivante répond à une question : à quel moment le test intervient-il, et que vaut chacun de ses résultats ?",
+    "sources": [
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, point de pratique 1.1.4.2, considérations pédiatriques, tableau 5"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Considerations for genetic testing »"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Genetic counselling »"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2026",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Figure 9 — Place du test génétique dans la maladie rénale chronique. Lecture : chaque cadre est une étape ; le trait épais signale le seul résultat qui fonde à lui seul une décision familiale, les traits discontinus signalent les résultats à interpréter avec prudence. Les étapes reprennent KDIGO 2024 (point de pratique 1.1.4.2), la conférence KDIGO 2022 (« Considerations for genetic testing ») et Knoers et coll. 2022 (« Genetic counselling », tableau 2). Schéma pédagogique non anatomique, non à l’échelle, élaboré pour cette leçon.",
+    "sources": [
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, point de pratique 1.1.4.2, considérations pédiatriques, tableau 5"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Considerations for genetic testing »"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Genetic counselling »"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2027",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "La figure montre que le test arrive tard dans le raisonnement : le phénotype le précède et le choisit. Elle montre aussi que deux résultats sur trois ne concluent pas. Pour la patiente fictive de la partie 2, un variant pathogène de COL4A5 permettrait de proposer un test à ses apparentés ; un résultat négatif ne lèverait pas la suspicion clinique.",
+    "sources": [
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, point de pratique 1.1.4.2, considérations pédiatriques, tableau 5"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Considerations for genetic testing »"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Genetic counselling »"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2028",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Un compte rendu génétique classe chaque variant. Un variant pathogène ou probablement pathogène fournit une explication moléculaire plausible : il précise le diagnostic, le pronostic et le risque de récurrence, et il ouvre le test des apparentés. Un variant de signification incertaine ne fonde pas, à lui seul, une décision clinique ; sa portée se précise par d’autres données, comme sa ségrégation dans la famille. Un résultat négatif n’exclut pas une cause héréditaire, car chaque technique a ses angles morts.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Different genetic testing modalities », « Predicted clinical benefit », « Genetic counselling », « Renal ciliopathies »"
+     },
+     {
+      "url": "https://www.bag.admin.ch/fr/revision-de-la-loi-federale-sur-lanalyse-genetique-humaine",
+      "libelle": "Office fédéral de la santé publique, révision de la loi fédérale sur l’analyse génétique humaine (consulté le 15.10.2026)"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2029",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Trois exemples rendent ces angles morts concrets. Le variant habituel de MUC1, une insertion d’une seule base, échappe aux techniques conventionnelles, exome compris. Les délétions, qui représentent la moitié des anomalies de HNF1B, exigent une méthode capable de détecter les variations du nombre de copies. La région de PKD1 est génomiquement complexe et doit être couverte de façon spécifique. Un résultat négatif garde pourtant parfois une valeur : dans le syndrome hémolytique et urémique atypique, l’absence d’anomalie des gènes du complément a été associée à un moindre risque de rechute après l’arrêt de l’éculizumab.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Different genetic testing modalities », « Predicted clinical benefit », « Genetic counselling », « Renal ciliopathies »"
+     },
+     {
+      "url": "https://www.bag.admin.ch/fr/revision-de-la-loi-federale-sur-lanalyse-genetique-humaine",
+      "libelle": "Office fédéral de la santé publique, révision de la loi fédérale sur l’analyse génétique humaine (consulté le 15.10.2026)"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2030",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Le conseil génétique encadre ces étapes. Avant le test, il expose les possibilités, les limites, la probabilité de variants incertains et de découvertes fortuites. Après le test, il traduit le résultat, le risque de récurrence et ses conséquences pour la famille, la procréation et l’assurabilité. En Suisse, la loi fédérale sur l’analyse génétique humaine révisée, en vigueur depuis le 1er décembre 2022, réglemente la réalisation de ces analyses afin de protéger la personnalité, de prévenir les abus et de garantir leur qualité.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Different genetic testing modalities », « Predicted clinical benefit », « Genetic counselling », « Renal ciliopathies »"
+     },
+     {
+      "url": "https://www.bag.admin.ch/fr/revision-de-la-loi-federale-sur-lanalyse-genetique-humaine",
+      "libelle": "Office fédéral de la santé publique, révision de la loi fédérale sur l’analyse génétique humaine (consulté le 15.10.2026)"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2031",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "La génétique éclaire trois décisions de la leçon. Elle explique pourquoi une même catégorie G et A peut recouvrir des maladies au pronostic et au traitement différents. Elle explique aussi pourquoi le choix d’un examen dépend du phénotype. Elle explique enfin pourquoi certains traitements sont utiles chez un patient et inutiles, voire nocifs, chez un autre.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Glomerulopathies — Clinical benefit », « Renal ciliopathies »"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Defining actionable genes »"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, figure 9"
+     },
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc (août 2025)"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2032",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Science → clinique. Une hématurie persistante dans une famille atteinte d’insuffisance rénale ou de surdité évoque une collagénopathie de type IV. De gros reins kystiques évoquent PKD1 ou PKD2 ; une insuffisance rénale sans gros reins et avec peu de kystes évoque plutôt une néphropathie tubulo-interstitielle autosomique dominante.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Glomerulopathies — Clinical benefit », « Renal ciliopathies »"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Defining actionable genes »"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, figure 9"
+     },
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc (août 2025)"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2033",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Science → examen. Le phénotype choisit le panel de gènes. Le compte rendu se lit selon la classe du variant et selon les limites connues de la technique utilisée.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Glomerulopathies — Clinical benefit », « Renal ciliopathies »"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Defining actionable genes »"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, figure 9"
+     },
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc (août 2025)"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2034",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "Science → traitement. Une podocytopathie génétique répond généralement mal à l’immunosuppression ; le blocage du système rénine–angiotensine abaisse alors la protéinurie. La maladie de Fabry relève d’un traitement enzymatique. Une polykystose à évolution rapide peut relever du tolvaptan , dans le cadre strict de l’information professionnelle suisse.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022, « Glomerulopathies — Clinical benefit », « Renal ciliopathies »"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022, « Defining actionable genes »"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024, figure 9"
+     },
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc (août 2025)"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2035",
+    "fichier": "chapters/N18/N18_c.html",
+    "fenetre": null,
+    "texte": "À retenir. Une part importante des maladies rénales chroniques a une cause monogénique, même sans histoire familiale. Le test se propose sur des indices précis, après conseil génétique, avec une technique choisie selon le phénotype. Seul un variant pathogène fonde une décision familiale ; un variant incertain ou un résultat négatif se lisent avec prudence. Le diagnostic moléculaire change le traitement, le dépistage extrarénal et le choix d’un donneur vivant.",
+    "sources": [],
+    "sources_note": "Encadré « À retenir » : synthèse des parties 1 à 6, appuyée sur leurs lignes de sources (KDIGO 2024, conférence KDIGO 2022, Knoers 2022, FI Jinarc, OFSP)."
+   },
+   {
+    "id": "N18-C2036",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-1",
+    "texte": "Un compte rendu génétique ne répond pas par oui ou non. Il classe les variants trouvés, et chaque classe autorise une conduite différente. Le tableau résume ce que chaque résultat permet et ce qu’il ne permet pas.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll., Nephrol Dial Transplant 2022;37:239-54, « Predicted clinical benefit », « Glomerulopathies », « CAKUT », « Renal ciliopathies », tableau 2"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence de controverses KDIGO, Kidney Int 2022;101:1126-41"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2037",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-1",
+    "texte": "Résultat Ce qu’il permet Ce qu’il ne permet pas Variant pathogène ou probablement pathogène Diagnostic, pronostic, risque de récurrence, test des apparentés Prédire seul la sévérité lorsque l’expression varie Variant de signification incertaine Recherches complémentaires, dont l’étude de la famille Fonder une décision clinique Aucun variant retenu Parfois une information utile, selon la maladie Exclure une cause héréditaire",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll., Nephrol Dial Transplant 2022;37:239-54, « Predicted clinical benefit », « Glomerulopathies », « CAKUT », « Renal ciliopathies », tableau 2"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence de controverses KDIGO, Kidney Int 2022;101:1126-41"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2038",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-1",
+    "texte": "L’erreur fréquente consiste à lire un résultat négatif comme une exclusion. Il faut d’abord vérifier que la technique couvrait le gène suspecté : le variant habituel de MUC1, les délétions de HNF1B et la région complexe de PKD1 exigent des méthodes adaptées. L’interprétation est meilleure lorsque les parents sont analysés en même temps que le patient, surtout lorsque les variants de novo sont fréquents.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll., Nephrol Dial Transplant 2022;37:239-54, « Predicted clinical benefit », « Glomerulopathies », « CAKUT », « Renal ciliopathies », tableau 2"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence de controverses KDIGO, Kidney Int 2022;101:1126-41"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2039",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-1",
+    "texte": "Chez un candidat à la greffe, connaître la cause génétique évalue le risque pour un donneur vivant apparenté. Cette précaution compte surtout dans les maladies à expression dépendante de l’âge, comme la néphropathie tubulo-interstitielle liée à UMOD, ou à pénétrance réduite, comme la maladie liée à HNF1B. Le dépistage du donneur est obligatoire dans les maladies à transmission dominante. À l’inverse des glomérulopathies immunologiques, les maladies génétiques podocytaires récidivent rarement sur le greffon. L’exception est le syndrome néphrotique congénital de type finlandais (NPHS1) de génotype Fin-major homozygote : le rein natif ne contient pas de néphrine, et le receveur peut produire des anticorps anti-néphrine contre celle du greffon. Dans une série finlandaise, le syndrome néphrotique a récidivé dans 13 greffons sur 51, soit 25 %, et six greffons ont été perdus.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll., Nephrol Dial Transplant 2022;37:239-54, « Predicted clinical benefit », « Glomerulopathies », « CAKUT », « Renal ciliopathies », tableau 2"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence de controverses KDIGO, Kidney Int 2022;101:1126-41"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2040",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-1",
+    "texte": "Le sigle VIH désigne le virus de l’immunodéficience humaine. Chez des personnes noires d’Afrique du Sud atteintes d’une infection non traitée, deux allèles à risque d’APOL1 multiplient par plus de 80 le risque de néphropathie associée au virus. Cet exemple montre qu’un variant commun peut avoir un effet fort dans un contexte précis, et faible dans la maladie rénale chronique en général.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll., Nephrol Dial Transplant 2022;37:239-54, « Predicted clinical benefit », « Glomerulopathies », « CAKUT », « Renal ciliopathies », tableau 2"
+     },
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence de controverses KDIGO, Kidney Int 2022;101:1126-41"
+     },
+     {
+      "url": "https://doi.org/10.1097/00007890-200202150-00013",
+      "libelle": "Patrakka et coll., Transplantation 2002;73:394-403, résumé"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2041",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-2",
+    "texte": "Le tolvaptan est un antagoniste de la vasopressine. Il bloque spécifiquement la liaison de la vasopressine à ses récepteurs V2 des parties distales du néphron. Il augmente ainsi la clairance de l’eau libre et le volume urinaire, avec des effets plus faibles aux stades avancés, faute de néphrons pleinement fonctionnels.",
+    "sources": [
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc, Otsuka Pharmaceutical (Switzerland) GmbH, mise à jour août 2025 (AIPS via AmiKo, consultée le 15.10.2026) : Indications, Posologie, Contre-indications, Mises en garde, Mécanisme d’action"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2042",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-2",
+    "texte": "L’information professionnelle suisse indique Jinarc pour ralentir la progression des kystes et de l’insuffisance rénale dans la polykystose rénale autosomique dominante. L’indication vise l’adulte atteint d’une maladie rénale chronique de stade 1 à 4 à l’initiation, avec des signes d’évolution rapide. Seuls des médecins expérimentés dans cette maladie, et informés de son hépatotoxicité, instaurent et surveillent le traitement. Il est interrompu si la maladie atteint le stade 5.",
+    "sources": [
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc, Otsuka Pharmaceutical (Switzerland) GmbH, mise à jour août 2025 (AIPS via AmiKo, consultée le 15.10.2026) : Indications, Posologie, Contre-indications, Mises en garde, Mécanisme d’action"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2043",
+    "fichier": "chapters/N18/N18_pop1.html",
+    "fenetre": "n18-s05-fenetre-2",
+    "texte": "Le médicament peut provoquer une atteinte hépatique grave ; des insuffisances hépatiques aiguës ayant exigé une greffe du foie ont été rapportées. Les transaminases et la bilirubine se dosent donc avant le début, puis chaque mois pendant 18 mois, puis tous les 3 mois. L’aquarèse abondante expose à la déshydratation et à l’hypernatrémie. Les contre-indications comprennent notamment la déplétion volémique, l’hypernatrémie, l’anurie, l’impossibilité de ressentir ou de satisfaire la soif, la grossesse et l’allaitement. Une baisse réversible du DFG est observée à l’initiation.",
+    "sources": [
+     {
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680656760027",
+      "libelle": "Information professionnelle suisse Jinarc, Otsuka Pharmaceutical (Switzerland) GmbH, mise à jour août 2025 (AIPS via AmiKo, consultée le 15.10.2026) : Indications, Posologie, Contre-indications, Mises en garde, Mécanisme d’action"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2044",
+    "fichier": "chapters/N18/N18_pop2.html",
+    "fenetre": "pareto-n18-s05",
+    "texte": "Une cause monogénique explique 10 à 30 % des maladies rénales chroniques de l’adulte, même sans histoire familiale. Le phénotype oriente le gène : gros reins kystiques pour PKD1 et PKD2, hématurie familiale pour le collagène IV, reins non augmentés avec peu de kystes pour UMOD et MUC1.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2045",
+    "fichier": "chapters/N18/N18_pop2.html",
+    "fenetre": "pareto-n18-s05",
+    "texte": "Le test se propose sur des indices précis, après conseil génétique. Seul un variant pathogène fonde une décision familiale ; un variant incertain ne décide rien, et un résultat négatif n’exclut pas une cause héréditaire.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2046",
+    "fichier": "chapters/N18/N18_pop2.html",
+    "fenetre": "pareto-n18-s05",
+    "texte": "Les variants d’APOL1 sont communs et récessifs ; ils augmentent modestement le risque de maladie rénale chronique, et aucune intervention n’est validée chez le porteur asymptomatique.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024"
+     }
+    ]
+   },
+   {
+    "id": "N18-C2047",
+    "fichier": "chapters/N18/N18_pop2.html",
+    "fenetre": "pareto-n18-s05",
+    "texte": "Piège à éviter. Traiter par immunosuppression un syndrome néphrotique corticorésistant sans rechercher une podocytopathie génétique, qui répond généralement mal à ce traitement.",
+    "sources": [
+     {
+      "url": "https://doi.org/10.1016/j.kint.2022.03.019",
+      "libelle": "Conférence KDIGO 2022"
+     },
+     {
+      "url": "https://doi.org/10.1093/ndt/gfab218",
+      "libelle": "Knoers et coll. 2022"
+     },
+     {
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "libelle": "KDIGO 2024"
+     }
+    ]
+   }
+  ]
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation par un médecin n’est revendiquée."
+}
