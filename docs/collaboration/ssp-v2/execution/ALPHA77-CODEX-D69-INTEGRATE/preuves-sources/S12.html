@@ -1,0 +1,330 @@
+<!-- (logo: String="DESITIN")(show_interaction: Boolean=true) -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AmiKoWeb</title>
+        <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/color-scheme.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/typeahead_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/amiko_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/interactions_css.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/fulltext_style.css" />
+        <script type="text/javascript" src="/assets/javascripts/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="/assets/javascripts/jquery-ui.js"></script>
+        <script type="text/javascript" src="/javascriptRoutes"></script>
+        <meta name="apple-itunes-app" content="app-id=687642725"/>
+        <meta charset="UTF-8"/>
+    </head>
+    <body onload="move_to_highlight()">
+        
+    <script type="text/javascript" src="/assets/javascripts/typeahead.bundle.corejs.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.favourites.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.searchdb.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.helpers.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/interaction_callbacks.js"></script>
+
+    <script type="text/javascript" src="/assets/javascripts/system.min.js"></script>
+    <script type="systemjs-module" src="/assets/javascripts/amiko.prescriptions.js"></script>
+
+    <script>setInitialLanguage("http://amiko.oddb.org")</script>
+
+    <header>
+        <!-- COMPENDIUM BUTTON -->
+        <div class="nav-button" id="compendium-button">
+            <div class="center-image">
+                <button class="state-button">
+                    <img border="0" alt="Compendium" src="/assets/images/aips32x32_dark.png" height="28"/>
+                </button>
+                <span style="display: block;">Kompendium</span>
+            </div>
+        </div>
+        <div class="nav-button" id="favourites-button">
+            <div class="center-image">
+                <button class="state-button">
+                    <img border="0" alt="Favourites" src="/assets/images/favorites@2x.png" height="28"/>
+                </button>
+                <span style="display: block;">Favoriten</span>
+            </div>
+        </div>
+        <!-- INTERACTIONS BUTTON -->
+        
+            <div class="nav-button" id="interactions-button">
+                <div class="center-image">
+                    <button class="state-button">
+                        <img border="0" alt="Interactions" src="/assets/images/interactions32x32_dark.png" height="28"/>
+                    </button>
+                    <span style="display: block;">Interaktionen</span>
+                </div>
+            </div>
+        
+        
+            <div class="nav-button" id="prescriptions-button">
+                <div class="center-image">
+                    <button class="state-button --prescription">
+                        <img border="0" alt="Prescriptions" src="/assets/images/prescription.png" height="28"/>
+                    </button>
+                    <span style="display: block;">Rezepte</span>
+                </div>
+            </div>
+        
+        <!-- DOWNLOAD BUTTON -->
+        <div class="nav-button" id="download-button">
+            <div class="center-image">
+                <button id="download-button" onclick="download_links()">
+                    <img border="0" alt="Download" src="/assets/images/download_icon.svg" height="40">
+                </button>
+            </div>
+        </div>
+        <!-- SWIYU LOGIN STATUS -->
+        <div class="nav-button" id="swiyu-status" style="float: right; margin-right: 12px; line-height: 48px;">
+            
+                <a href="/swiyu" style="font-size: 13px; color: blue;">swiyu Login</a>
+            
+        </div>
+        <!-- SPONSORS BUTTONS -->
+        <div class="nav-button" id="sponsor-button">
+            <div class="center-image">
+                
+                    <a id="sponsor-button" href="http://www.desitin.ch" target="_blank">
+                        <img border="0" alt="Desitin" src="/assets/images/desitin_logo.png" height="40">
+                    </a>
+                
+            </div>
+        </div>
+    </header>
+
+    <div id="flex-container">
+        <aside id="flex-aside-one">
+            <div>
+                <button id="language-button" onclick="setLanguage()">DE</button>
+            </div>
+            <form>
+                <div id="input-form">
+                    <div id="num-results" for="input-form" class="badge"></div>
+                    <input id="search-field" class="twitter-typeahead" type="text" value="" placeholder="Suche Präparat..." autofocus/>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button id="price-comparison-button" class="rounded-button">Preisvergleich</button>
+                <button id="article-button" class="rounded-button">Titel</button>
+                <button id="owner-button" class="rounded-button">Inhaberin</button>
+                <button id="substance-button" class="rounded-button">Wirkstoff/ATC</button>
+                <button id="regnr-button" class="rounded-button">Zulassungsnummer</button>
+                <button id="therapy-button" class="rounded-button">Therapie</button>
+                <button id="fulltext-button" class="rounded-button">Volltextsuche</button>
+            </div>
+            <div id="special-dropdown" class="twitter-typeahead"></div>
+        </aside>
+
+        <div id="flex-main-content">
+            <article id="fachinfo-id"><div id="monographie" name="51809"><div class="MonTitle" id="section1">Orgaran®</div><div class="ownerCompany"><div style="text-align: right">Viatris Pharma GmbH</div></div><div class="paragraph" id="section2"><div class="absTitle">Composition</div><p class="spacing1" style="font-style: italic">Principes actifs</p><p class="spacing1">Danaparoidum natricum.</p><p class="spacing1" style="font-style: italic">Excipients</p><p class="spacing1">Natrii sulfis (E221) 0.9 mg/ 0.6 ml, natrii chloridum, acidum hydrochloridum, aqua ad iniectabile.</p><p class="spacing1">Teneur totale en sodium: 9.75 mg/0.6 ml.</p></div><div class="paragraph" id="section3"><div class="absTitle">Forme pharmaceutique et quantité de principe actif par unité</div><p class="spacing1">Solution pour administration par voie intraveineuse ou sous-cutanée.</p><p class="spacing1">Une ampoule de 0.6 ml contient 750 unités d&apos;antifacteur Xa (1250 unités d&apos;antifacteur Xa par ml).</p><p class="spacing1">Solution claire, incolore à légèrement jaunâtre.</p></div><div class="paragraph" id="section4"><div class="absTitle">Indications/Possibilités d’emploi</div><p class="spacing1">Prévention et traitement des troubles thromboemboliques chez des patients atteints d&apos;une thrombopénie induite par l&apos;héparine (TIH) ou ayant des antécédents de TIH nécessitant d&apos;urgence l&apos;administration parentérale d&apos;anticoagulants.</p><p class="spacing1">Prévention des thromboses veineuses profondes (TVP) et de leurs séquelles, surtout en cas d&apos;interventions orthopédiques, ainsi qu&apos;en cas d&apos;interventions importantes de chirurgie abdominales ou thoraciques.</p></div><div class="paragraph" id="section5"><div class="absTitle">Posologie/Mode d’emploi</div><p class="spacing1">Orgaran doit être administré uniquement par voie intraveineuse ou sous-cutanée, et non par voie intramusculaire.</p><p class="spacing1" style="font-style: italic">Recommandations posologiques pour les patients présentant une TIH</p><p class="spacing1">Prévention des thromboembolies en cas de TIH aiguë (&lt;3 mois, c.-à-d. avec des anticorps circulants induits par l&apos;héparine).</p><p class="spacing1">Il faut tenir compte du poids corporel et du risque hémorragique pour de la détermination de la dose. Chez les patients sans risque hémorragique élevé, l&apos;administration concomitante d&apos;un bolus i.v. de 750 unités anti-Xa (poids corporel &gt;90 kg: 1250 unités anti-Xa) avec la première injection s.c. est conseillée.</p><table class="s15"><colgroup><col style="width:0.97153in;"/><col style="width:4.62708in;"/></colgroup><tbody><tr><td class="s14"><p class="s12"><span class="s10">Poids ≤90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">750 unités anti-Xa 3 fois par jour par voie s.c. pendant 7 à 10 jours.</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Poids &gt;90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">1250 unités anti-Xa 3 fois par jour en s.c. pendant 7 à 10 jours.</span></p><div class="s13"/></td></tr></tbody></table><p class="spacing1">&#32;</p><p class="spacing1">En l&apos;absence d&apos;autre possibilité adéquate de traitement antithrombotique, la durée du traitement peut être prolongée si nécessaire. Les concentrations plasmatiques à l&apos;état d&apos;équilibre ne devront pas dépasser 0.8 unités anti-Xa. Chez les patients présentant un risque hémorragique, les concentrations plasmatiques anti-Xa à l&apos;état d&apos;équilibre ne devront pas dépasser 0.4 unités/ml. Pour les patients sans risque hémorragique élevé, il est possible également d&apos;employer le schéma posologique intraveineux.</p><p class="spacing1" style="font-style: italic">Prévention aiguë des thromboembolies en cas d&apos;antécédents de TIH (&gt;3 mois, c.-à-d. sans anticorps circulants induits par l&apos;héparine)</p><table class="s15"><colgroup><col style="width:0.97153in;"/><col style="width:5.41181in;"/></colgroup><tbody><tr><td class="s14"><p class="s12"><span class="s10">Poids ≤90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">750 unités anti-Xa 2 fois par jour par voie s.c. pendant 7 à 10 jours.</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Poids &gt;90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">1250 unités anti-Xa 2 fois par jour ou 750 unités anti-Xa 3 fois par jour par voie s.c. pendant 7 à 10 jours.</span></p><div class="s13"/></td></tr></tbody></table><p class="spacing1">&#32;</p><p class="spacing1">En l&apos;absence d&apos;autre possibilité adéquate de traitement antithrombotique, la durée du traitement peut être prolongée si nécessaire.</p><p class="spacing1" style="font-style: italic">Traitement des thromboembolies ou prévention des thromboses pendant une hémodialyse/hémofiltration continue</p><table class="s15"><colgroup><col style="width:1.01250in;"/><col style="width:5.37083in;"/></colgroup><tbody><tr><td class="s14"><p class="s12"><span class="s10">Poids 55-90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">2250 unités anti-Xa en bolus i.v., suivie d&apos;une perfusion i.v. de 400 unités/h pendant 4 heures, suivie de 300 unités/h pendant 4 heures, puis instauration d&apos;un traitement d&apos;entretien de 150-200 unités/h i.v. pendant 5 à 7 jours.</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Poids &lt;55 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Comme ci-dessus, mais avec 1500 unités anti-Xa en bolus i.v.</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Poids &gt;90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Comme ci-dessus, mais avec 3750 unités anti-Xa en bolus i.v.</span></p><div class="s13"/></td></tr></tbody></table><p class="spacing1">&#32;</p><p class="spacing1">Si la durée de vie de l&apos;hémofiltre est fortement réduite en raison de la formation de thrombus, la vitesse de perfusion peut être augmentée au cours des premières heures du traitement d&apos;entretien (jusqu&apos;à 600 unités par heure). Après plusieurs jours de traitement sous perfusion intraveineuse continue, on peut passer aux anticoagulants oraux ou à Orgaran par voie s.c. (750 unités anti-Xa 2 à 3 fois par jour). En l&apos;absence d&apos;autre possibilité adéquate de traitement antithrombotique, la durée du traitement peut être prolongée si nécessaire. Les concentrations plasmatiques attendues ne devront pas dépasser 1.0 unité anti-Xa/ml.</p><p class="spacing1" style="font-style: italic">Prévention et traitement de maladies thromboemboliques chez les patients atteints de TIH</p><p class="spacing1" style="font-style: italic">Surveillance</p><p class="spacing1">L&apos;activité anti-Xa plasmatique est corrélée de façon linéaire avec la dose de danaparoïde sodique administrée. Il n&apos;est généralement pas nécessaire de la surveiller, sauf chez les patients insuffisants rénaux, de poids corporel exceptionnellement faible (&lt;55 kg) ou élevé (&gt;90 kg), ainsi que chez les patients âgés (&gt;75 ans).</p><p class="spacing1" style="font-style: italic">Patients insuffisants rénaux ou de poids corporel &gt;90 kg</p><p class="spacing1">Chez les patients d&apos;un poids supérieur à 90 kg ou en insuffisance rénale légère à modérée, l&apos;activité anti-Xa plasmatique doit être contrôlée 3 à 5 jours après l&apos;instauration du traitement par Orgaran (test fonctionnel avec substrat peptidique chromogène). Si les valeurs ne se trouvent pas dans la plage visée, la dose d&apos;Orgaran doit être ajustée et l&apos;activité anti-Xa plasmatique contrôlée à nouveau 2 à 3 jours plus tard.</p><p class="spacing1" style="font-style: italic">Hémodialyse intermittente</p><p class="spacing1">En cas d&apos;insuffisance rénale, l&apos;effet anticoagulant d&apos;Orgaran peut être renforcé. La posologie d&apos;Orgaran doit donc être ajustée à l&apos;activité anti-Xa plasmatique déterminée lors de la dialyse précédente. La dose pré-dialyse se stabilise généralement après 3 à 5 dialyses.</p><p class="spacing1">Dialyse tous les deux jours ou moins fréquemment: 3750 unités anti-Xa (2250 unités pour un poids inférieur à 55 kg) en bolus i.v. peu de temps avant chacune des deux premières séances d&apos;hémodialyse. Pour les dialyses suivantes, 3000 unités anti-Xa (2000 unités pour un poids corporel inférieur à 55 kg) par voie i.v., si on n&apos;observe pas de filaments de fibrine dans le piège à bulles.</p><p class="spacing1">Dialyse quotidienne: 3750 unités anti-Xa (2250 unités pour un poids corporel inférieur à 55 kg) en bolus i.v. peu de temps avant la première séance de dialyse et 2250 unités anti-Xa (2000 unités pour un poids corporel inférieur à 55 kg) peu de temps avant la deuxième séance de dialyse.</p><p class="spacing1">Avant la deuxième séance et avant chaque séance consécutive, il convient de recueillir un prélèvement pour doser les concentrations d&apos;activité anti-Xa, afin de fixer la dose à administrer pour la troisième séance de dialyse et les séances suivantes. En fonction des concentrations plasmatiques d&apos;activité anti-Xa obtenues, on recommande les doses suivantes pour les dialyses ultérieures.</p><p class="spacing1">&lt;0.3 unité/ml: 3000 unités anti-Xa (2000 unités pour un poids corporel inférieur à 55 kg).</p><p class="spacing1">0.3 à 0.35 unité/ml: 2250 unités anti-Xa (1500 unités pour un poids corporel inférieur à 55 kg).</p><p class="spacing1">0.35 à 0.4 unité/ml: 2000 unités anti-Xa (1500 unités pour un poids corporel inférieur à 55 kg).</p><p class="spacing1">&gt;0.4 unité/ml: pas d&apos;administration d&apos;Orgaran avant la dialyse. Toutefois, si l&apos;on observe la formation de filaments de fibrine dans le piège à bulles, on peut administrer 1500 unités au patient, quel que soit son poids. Les concentrations plasmatiques d&apos;activité anti-Xa devront être comprises entre 0.5 et 0.8 unité/ml pendant la séance de dialyse.</p><p class="spacing1">Si, pour une dialyse donnée, il ne faut pas administrer Orgaran en raison d&apos;une activité anti-Xa plasmatique trop élevée avant la dialyse, la dose choisie pour la dialyse suivante sera la même que celle administrée pour la dialyse précédente.</p><p class="spacing1" style="font-style: italic">Doses pour le rinçage</p><p class="spacing1">Diluer une ampoule d&apos;Orgaran dans 50 ml de solution saline. Utiliser, en cas de besoin, 5 à 10 ml de cette solution pour le rinçage de cathéters intravasculaires.</p><p class="spacing1" style="font-style: italic">Opérations vasculaires ou interventions vasculaires invasives</p><table class="s15"><colgroup><col style="width:0.70417in;"/><col style="width:5.67917in;"/></colgroup><tbody><tr><td class="s14"><p class="s12"><span class="s10">Poids ≤90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">2250 unités anti-Xa en bolus i.v., suivies, au plus tôt 6 heures après l&apos;opération et si l&apos;hémostase est adéquate, d&apos;un traitement d&apos;entretien de 150 à 200 unités anti-Xa par heure en i.v. pendant 5 à 7 jours.</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Poids &gt;90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">3750 unités anti-Xa en bolus i.v., suivies, au plus tôt 6 heures après l&apos;opération et si l&apos;hémostase est adéquate, d&apos;un traitement d&apos;entretien de 150 à 200 unités anti-Xa par heure en i.v. pendant 5 à 7 jours.</span></p><div class="s13"/></td></tr></tbody></table><p class="spacing1">&#32;</p><p class="spacing1">Les interventions vasculaires incluent l&apos;ACPT (angioplastie coronaire transluminale percutanée) avec ou sans pose de stents, l&apos;insertion ou le retrait d&apos;un ballonnet intra-aortique ou d&apos;un filtre pour veine cave et le cathétérisme cardiaque.</p><p class="spacing1">Si une autre intervention est effectuée dans les 6 heures, par exemple une angioplastie, le bolus i.v. ne doit pas être répété.</p><p class="spacing1">Après plusieurs jours de traitement d&apos;entretien, les patients pourront recevoir soit un traitement anticoagulant par voie orale, soit Orgaran à un dosage de 750 unités anti-Xa par voie s.c. 2 à 3 fois par jour.</p><p class="spacing1" style="font-style: italic">Interventions de chirurgie cardiopulmonaire avec cœur-poumon artificiel</p><p class="spacing1">Orgaran ne doit être administré pour ce type d&apos;intervention que si l&apos;opération ne peut pas être repoussée jusqu&apos;à ce que les anticorps de la TIH ne soient plus détectables et si aucun autre antithrombotique n&apos;est disponible. Etant donné qu&apos;Orgaran ne peut pas être neutralisé par la protamine, on recommande essentiellement une prophylaxie postopératoire.</p><p class="spacing1">Si l&apos;administration d&apos;Orgaran est nécessaire dans le cadre de l&apos;intervention chirurgicale, Orgaran est administré au patient en bolus i.v. de 125 unités anti-Xa/kg immédiatement après la thoracotomie, avant de relier le patient au cœur-poumon artificiel. Orgaran est en outre ajouté au liquide de remplissage du cœur-poumon artificiel (rincer le cœur-poumon à l&apos;aide de liquide de remplissage additionné d&apos;Orgaran [3 unités anti-Xa/ml dans le liquide d&apos;amorçage] avant de relier le patient à l&apos;appareil). Après le raccordement au cœur-poumon artificiel, ajouter 7 unités anti-Xa/kg en perfusion i.v. jusqu&apos;à 45 minutes avant l&apos;arrêt prévu du cœur-poumon artificiel. En cas de formation de thrombus pendant la phase peropératoire, on peut administrer 1250 unités anti-Xa en bolus i.v. (750 unités pour un poids corporel inférieur à 55 kg).</p><p class="spacing1">Dans le cas o&amp;ugrave; Orgaran ou un autre antithrombotique est utilisé pendant l&apos;intervention de chirurgie cardiopulmonaire et o&amp;ugrave; une prophylaxie thrombotique postopératoire s&apos;avère nécessaire, on peut, dès qu&apos;une hémostase adéquate est atteinte (généralement 6 à 12 heures après l&apos;intervention), administrer Orgaran par voie sous-cutanée à une dose de 1500 à 2250 unités anti-Xa fractionnée en doses unitaires ou en perfusion intraveineuse de 150 à 200 unités anti-Xa/h.</p><p class="spacing1">Les concentrations plasmatiques d&apos;activité anti-Xa attendues sont de 1.5 à 2.0 unités/ml pendant la circulation extracorporelle.</p><p class="spacing1" style="font-style: italic">Substitution d&apos;anticoagulants oraux à Orgaran</p><p class="spacing1">Orgaran ne peut être remplacé par des anticoagulants oraux que lorsqu&apos;il a permis d&apos;obtenir un contrôle antithrombotique suffisant. La marche à suivre pour la substitution dépend du schéma posologique choisi:</p><p class="spacing1">Substitution à 750 unités anti-Xa d&apos;Orgaran 2 ou 3 fois par jour par voie s.c.: Les anticoagulants oraux peuvent être débutés 72 à 96 heures avant l&apos;arrêt d&apos;Orgaran afin d&apos;atteindre les concentrations thérapeutiques (INR).</p><p class="spacing1">Substitution à 1250 unités anti-Xa d&apos;Orgaran 2 à 3 fois par jour par voie s.c.: Réduction de la dose d&apos;Orgaran à 750 unités anti-Xa 2 fois par jour par voie s.c. au début de la prise des anticoagulants oraux, puis arrêt du traitement lorsque les concentrations thérapeutiques sont atteintes.</p><p class="spacing1">Substitution à la perfusion intraveineuse d&apos;Orgaran: Les anticoagulants oraux peuvent être administrés en même temps que la perfusion (débit maximal de perfusion: 300 unités/h). La perfusion peut être arrêtée lorsque l&apos;INR est ≥1.5. En cas de risque hémorragique élevé, il existe deux possibilités: soit arrêter la perfusion et débuter l&apos;administration d&apos;Orgaran à 750 unités anti-Xa 2 fois par jour par voie s.c. puis procéder, 24 heures plus tard, à la substitution par les anticoagulants oraux telle qu&apos;elle est décrite précédemment, soit arrêter la perfusion d&apos;Orgaran et débuter directement les anticoagulants oraux 12 heures plus tard.</p><p class="spacing1" style="font-style: italic">Utilisation en pédiatrie (patients avec TIH, jusqu&apos;à 18 ans ou poids corporel &lt;55 kg)</p><p class="spacing1">L&apos;expérience avec Orgaran se limite à son utilisation chez 36 enfants âgés de 2 semaines à 17 ans. La posologie doit être adaptée aux concentrations plasmatiques d&apos;activité anti-Xa et au risque hémorragique.</p><table class="s15"><colgroup><col style="width:1.37292in;"/><col style="width:0.96181in;"/><col style="width:1.98333in;"/><col style="width:2.06528in;"/></colgroup><tbody><tr><td class="s14"><p class="s4"><span class="s10">&#32;</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Groupe d&apos;âge</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Dosage en unités anti-Xa (U)</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Activité anti-Xa plasmatique</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Prophylaxie</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">≤2 ans</span></p><p class="s16"><span class="s10">9-17 ans</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">8-144 U/kg/jour</span></p><p class="s16"><span class="s10">20-25 U/kg/jour</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">0.1-0.4 U/ml</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Traitement</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">≤2 ans</span></p><p class="s16"><span class="s10">9-17 ans</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Pas de données</span></p><p class="s16"><span class="s10">Bolus i.v. 30 U/kg +</span></p><p class="s16"><span class="s10">29-130 U/kg/jour</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">0.4-0.7 U/ml après bolus i.v.</span></p><p class="s16"><span class="s10">0.4-0.8 U/ml à l&apos;état d&apos;équilibre</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Cathétérisme</span><span class="s10"><br/><span>cardiaque</span></span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">≤2 ans</span></p><p class="s16"><span class="s10">9-17 ans</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Bolus i.v. 48-120 U/kg</span></p><p class="s16"><span class="s10">Pas de données</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">0.5-0.7 U/ml après le bolus</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Hémodialyse</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">≤2 ans</span></p><p class="s16"><span class="s10">9-17 ans</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">Pas de données</span></p><p class="s16"><span class="s10">Bolus i.v. 27-86 U/kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">0.5-0.8 U/ml pendant la dialyse</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">DPCA</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">≤2 ans</span></p><p class="s16"><span class="s10">9-17 ans</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">5-43 U/kg/jour</span></p><p class="s16"><span class="s10">Pas de données</span></p><div class="s13"/></td><td class="s14"><p class="s4">&#32;</p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">Chirurgie cardiaque</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">≤2 ans</span></p><p class="s16"><span class="s10">9-17 ans</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">350 U/kg/opération</span></p><p class="s16"><span class="s10">&gt;150-311 U/kg/opération</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">0.8-2.0 U/ml en peropératoire</span></p><div class="s13"/></td></tr></tbody></table><p class="spacing1">&#32;</p><p class="spacing1" style="font-style: italic">Patients sans TIH (prévention de la thrombose veineuse profonde)</p><table class="s15"><colgroup><col style="width:0.72500in;"/><col style="width:5.65833in;"/></colgroup><tbody><tr><td class="s14"><p class="s12"><span class="s10">PC ≤90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">750 unités anti-Xa s.c. deux fois par jour pendant au maximum 14 jours.</span></p><div class="s13"/></td></tr><tr><td class="s14"><p class="s12"><span class="s10">PC &gt;90 kg</span></p><div class="s13"/></td><td class="s14"><p class="s12"><span class="s10">750 unités anti-Xa s.c. trois fois par jour ou 1250 unités anti-Xa deux fois par jour pendant au maximum 14 jours.</span></p><div class="s13"/></td></tr></tbody></table><p class="spacing1">&#32;</p><p class="spacing1">En l&apos;absence d&apos;autre possibilité adéquate de traitement antithrombotique, la durée du traitement peut être prolongée si nécessaire.</p><p class="spacing1">Globalement, aucune surveillance de l&apos;activité anti-Xa plasmatique n&apos;est nécessaire.</p><p class="spacing1">En cas d&apos;intervention chirurgicale, il est recommandé d&apos;instaurer la posologie indiquée avant l&apos;opération, en administrant la dernière dose préopératoire 1 à 4 heures avant l&apos;opération.</p><p class="spacing1" style="font-style: italic">Recommandations posologiques particulières (patients non TIH)</p><p class="spacing1">Chez les patients d&apos;un poids supérieur à 90 kg, l&apos;activité anti-Xa plasmatique doit être contrôlée une à deux fois par semaine.</p><p class="spacing1">Aucun ajustement posologique n&apos;est nécessaire pour les patients âgés.</p><p class="spacing1">Patients présentant une insuffisance rénale: en cas d&apos;insuffisance rénale légère, les recommandations posologiques usuelles s&apos;appliquent; en cas d&apos;insuffisance rénale sévère, le danaparoïde n&apos;est pas recommandé en dehors des cas de TIH (voir «Contre-indications»). Chez les patients présentant une insuffisance rénale, l&apos;activité anti-Xa plasmatique doit être contrôlée une à deux fois par semaine (test avec un substrat peptidique chromogène).</p><p class="spacing1">On ne dispose d&apos;aucune expérience chez les patients présentant une insuffisance hépatique (voir «Contre-indications»).</p><p class="spacing1">Chez l&apos;enfant et l&apos;adolescent, on ne dispose d&apos;aucune expérience relative à l&apos;efficacité et à la sécurité et l&apos;administration est déconseillée chez les patients pédiatriques en dehors des cas de TIH.</p></div><div class="paragraph" id="section6"><div class="absTitle">Contre-indications</div><p class="spacing1">·Hypersensibilité au principe actif ou à l&apos;un des excipients.</p><p class="spacing1">·Diathèse hémorragique sévère, par exemple hémophilie ou purpura thrombopénique idiopathique, sauf si le patient présente également une TIH et qu&apos;aucun autre traitement antithrombotique n&apos;est disponible.</p><p class="spacing1">·Hémorragie active non contrôlable, sauf si le patient présente également une TIH et qu&apos;aucun autre traitement antithrombotique n&apos;est disponible.</p><p class="spacing1">·Accident vasculaire cérébral hémorragique au cours des trois derniers mois.</p><p class="spacing1">·Chez les patients auxquels de l&apos;héparine est administrée non pas à titre prophylactique mais comme traitement antithrombotique, une anesthésie locale/régionale est contre-indiquée lors des interventions chirurgicales électives.</p><p class="spacing1">·Insuffisance rénale et hépatique sévère, sauf si le patient présente également une TIH et qu&apos;aucun autre traitement antithrombotique n&apos;est disponible.</p><p class="spacing1">·Hypertension artérielle sévère non contrôlée.</p><p class="spacing1">·Ulcère gastroduodénal actif, sauf si cet ulcère est la raison de l&apos;intervention chirurgicale.</p><p class="spacing1">·Rétinopathie diabétique.</p><p class="spacing1">·Endocardite bactérienne aiguë, sauf si le patient présente également une TIH et qu&apos;aucun autre traitement antithrombotique n&apos;est disponible.</p></div><div class="paragraph" id="section7"><div class="absTitle">Mises en garde et précautions</div><p class="spacing1">Orgaran contient du sulfite de sodium. Il existe un risque de bronchospasme et/ou de choc anaphylactique chez les patients asthmatiques qui présentent une hypersensibilité aux sulfites.</p><p class="spacing1">Lors de l&apos;administration d&apos;Orgaran, on a observé une thrombopénie médiée par des anticorps, comme celle susceptible d&apos;être induite par l&apos;héparine (de bas poids moléculaire), mais seulement chez des patients déjà sensibilisés à l&apos;héparine ou à l&apos;héparine de bas poids moléculaire.</p><p class="spacing1" style="font-style: italic">Orgaran ne doit pas être administré à des patients avec TIH présentant un test in vitro positif (réaction croisée) aux anticorps induits par l&apos;héparine après l&apos;administration d&apos;Orgaran, sauf s&apos;il n&apos;existe aucune autre possibilité adéquate de traitement antithrombotique. L&apos;incidence d&apos;une réaction croisée d&apos;Orgaran avec des anticorps induits par l&apos;héparine avant le début du traitement est d&apos;environ 5%. L&apos;incidence d&apos;une réaction croisée pendant le traitement par Orgaran est d&apos;environ 3%. Chez ces patients, le test de réaction croisée était souvent négatif avant le traitement. Malgré le risque très faible de thrombopénie médiée par des anticorps, la numération plaquettaire doit être très régulièrement contrôlée. En cas de survenue d&apos;une thrombopénie médiée par des anticorps, il convient d&apos;arrêter Orgaran et d&apos;envisager le recours à d&apos;autres méthodes.</p><p class="spacing1">La prudence est de rigueur chez les patients qui présentent une insuffisance rénale et/ou hépatique modérée, des anomalies de l&apos;hémostase, des lésions ulcéreuses du tractus gastro-intestinal ou d&apos;autres maladies associées à un risque élevé d&apos;hémorragie dans un organe vital.</p><p class="spacing1">En raison du risque hémorragique élevé après une intervention chirurgicale cardio-pulmonaire chez les patients TIH, l&apos;administration d&apos;Orgaran est déconseillée pendant l&apos;intervention, sauf si aucun autre traitement antithrombotique n&apos;est disponible.</p><p class="spacing1">Il convient de noter que les unités d&apos;activité anti-Xa d&apos;Orgaran présentent une relation avec l&apos;efficacité clinique différente de celle de l&apos;héparine et des héparines de bas poids moléculaire.</p><p class="spacing1">Des cas d&apos;hématomes intrarachidiens ont été rapportés lors de l&apos;administration prophylactique d&apos;héparines de bas poids moléculaire ou d&apos;héparines non fractionnées. C&apos;est pourquoi Orgaran doit être administré avec prudence et après évaluation approfondie du rapport bénéfice-risque individuel chez les patients devant subir une ponction lombaire ou une anesthésie rachidienne ou péridurale. En cas de bloc effectué à proximité de la moelle épinière, il convient de procéder à une surveillance régulière des patients à la recherche de signes et de symptômes d&apos;altérations neurologiques, notamment d&apos;éventuels déficits sensoriels ou moteurs durables. Si certains signes ou symptômes font suspecter un hématome dans le canal rachidien, il faut immédiatement établir le diagnostic et instaurer le traitement, y compris par décompression médullaire (voir aussi «Contre-indications»).</p><p class="spacing1">Orgaran contient du sulfite de sodium, qui peut dans de rares cas, provoquer des réactions d&apos;hypersensibilité sévères et des bronchospasmes.</p><p class="spacing1">Ce médicament contient moins de 1 mmol (23 mg) de sodium par 0.6 ml, c.-à-d. qu&apos;il est essentiellement «sans sodium».</p></div><div class="paragraph" id="section8"><div class="absTitle">Interactions</div><p class="spacing1">Orgaran peut être associé aux coumarines, aux thrombolytiques, à l&apos;acide acétylsalicylique ou à des médicaments potentiellement ulcérogènes tels que les corticoïdes, mais il convient alors de respecter les mesures de précaution nécessaires.</p><p class="spacing1">Il n&apos;existe aucune donnée relative à l&apos;administration concomitante d&apos;inhibiteurs du facteur Xa et de médicaments exerçant une influence sur la fonction plaquettaire, à l&apos;exception de l&apos;aspirine.</p><p class="spacing1">On ne dispose d&apos;aucune donnée relative à l&apos;influence d&apos;Orgaran sur les tests de la fonction thyroïdienne.</p><p class="spacing1">Les études d&apos;interactions n&apos;ont été conduites que chez l&apos;adulte.</p></div><div class="paragraph" id="section9"><div class="absTitle">Grossesse, allaitement</div><p class="spacing1">Les expérimentations animales n&apos;ont pas montré d&apos;effets tératogènes ou de passage à travers le placenta. Orgaran a été utilisé avec succès au cours de plusieurs grossesses. Dans les rares cas o&amp;ugrave; l&apos;on a recherché l&apos;activité anti-Xa dans le sang du cordon, aucune activité n&apos;a été décelée. Dans les quelques échantillons de lait maternel prélevés en vue de l&apos;étude du passage d&apos;Orgaran dans le lait maternel, on n&apos;a trouvé qu&apos;une faible activité anti-Xa. Comme les données disponibles sont limitées, Orgaran ne doit être utilisé pendant la grossesse et l&apos;allaitement que chez les patientes présentant une TIH et lorsqu&apos;aucune autre possibilité de traitement antithrombotique n&apos;est disponible.</p></div><div class="paragraph" id="section10"><div class="absTitle">Effet sur l’aptitude à la conduite et l’utilisation de machines</div><p class="spacing1">On ne sait pas si Orgaran a une influence sur l&apos;aptitude à la conduite et à l&apos;utilisation de machines.</p></div><div class="paragraph" id="section11"><div class="absTitle">Effets indésirables</div><p class="spacing1">Orgaran peut augmenter le risque hémorragique. Au sein de chaque groupe de fréquence, les effets secondaires sont présentés par ordre de gravité décroissant.</p><p class="spacing1">Les effets indésirables sont rangés par classe de système d&apos;organes de la classification MedDRA et par fréquence selon la convention suivante: «fréquents» (≥1/100 à &lt;1/10); «occasionnels» (≥1/1000 à &lt;1/100); «rares» (≥1/10 000 à &lt;1/1000); «très rares» (&lt;1/10&apos;000).</p><p class="spacing1" style="font-style: italic">Affections hématologiques et du système lymphatique</p><p class="spacing1" style="font-style: italic">Fréquents: Thrombopénie chez des patients ayant déjà été traités par héparine ou par héparine de bas poids moléculaire ou thrombopénie induite par héparine (TIH).</p><p class="spacing1" style="font-style: italic">Rares: Thrombopénie auto-immune.</p><p class="spacing1" style="font-style: italic">Affections du système immunitaire</p><p class="spacing1" style="font-style: italic">Occasionnels: Hypersensibilité, hypersensibilité au médicament.</p><p class="spacing1" style="font-style: italic">Affections de la peau et du tissu sous-cutané</p><p class="spacing1" style="font-style: italic">Fréquents: Eruption cutanée.</p><p class="spacing1" style="font-style: italic">Occasionnels: Purpura, éruption maculopapuleuse, éruption érythémateuse, prurit, urticaire.</p><p class="spacing1" style="font-style: italic">Rares: Eruption généralisée, éruption maculo-vésiculaire, éruption au site d&apos;injection ou de perfusion, éruption maculaire.</p><p class="spacing1" style="font-style: italic">Troubles généraux et anomalies au site d&apos;administration</p><p class="spacing1" style="font-style: italic">Occasionnels: Réaction au site d&apos;injection.</p><p class="spacing1" style="font-style: italic">Rares: Site d&apos;injection: Saignement, légère douleur, hypersensibilité, irritation, sensation de froid, prurit.</p><p class="spacing1">Site d&apos;injection/perfusion: Érythème, douleur, tuméfaction, sensation de chaleur.</p><p class="spacing1">Site de perfusion: Ecchymose, réaction.</p><p class="spacing1" style="font-style: italic">Très rares: Hématome épidural et rachidien associé à la prophylaxie par héparine lors d&apos;une anesthésie péridurale ou rachidienne et d&apos;une ponction lombaire.</p><p class="spacing1" style="font-style: italic">Lésions, intoxications et complications d&apos;interventions</p><p class="spacing1" style="font-style: italic">Fréquents: Saignement après intervention chirurgicale.</p><p class="spacing1" style="font-style: italic">Occasionnels: Hématome après intervention chirurgicale, hémorragie intra-opératoire.</p><p class="spacing1" style="font-style: italic">Rares: Saignement au site d&apos;incision, saignement au niveau d&apos;une anastomose.</p><p class="spacing1">Tous les saignements sont présentés comme des effets indésirables d&apos;Orgaran. Ceux-ci incluent également les signes et les symptômes qui sont clairement associés à un saignement (p.ex. anémie, baisse du taux d&apos;hémoglobine, des érythrocytes, de l&apos;hématocrite, asthénie, fatigue, tamponnade).</p><p class="spacing1">L&apos;annonce d&apos;effets secondaires présumés après l&apos;autorisation est d&apos;une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d&apos;effet secondaire nouveau ou grave via le portail d&apos;annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.</p></div><div class="paragraph" id="section12"><div class="absTitle">Surdosage</div><p class="spacing1">En cas d&apos;hémorragie sévère non imputable à une erreur chirurgicale, il convient d&apos;interrompre l&apos;administration d&apos;Orgaran et d&apos;envisager une transfusion sanguine ou, si l&apos;hémorragie est incontrôlable, une plasmaphérèse. Bien que la protamine neutralise partiellement l&apos;activité anticoagulante d&apos;Orgaran, il n&apos;est pas certain que son administration soit appropriée pour arrêter l&apos;hémorragie n&apos;est pas certain et elle ne peut donc pas être recommandée. Il n&apos;existe pas d&apos;antagoniste de l&apos;effet d&apos;Orgaran sur l&apos;activité anti-Xa.</p></div><div class="paragraph" id="section13"><div class="absTitle">Propriétés/Effets</div><p class="spacing1" style="font-style: italic">Code ATC</p><p class="spacing1">B01AB09</p><p class="spacing1" style="font-style: italic">Mécanisme d&apos;action/Pharmacodynamique</p><p class="spacing1">Orgaran contient du danaparoïde sodique, un mélange de glycosaminoglycanes sulfatés de bas poids moléculaire, extrait de muqueuses animales et composé de sulfate d&apos;héparane, de sulfate de dermatane et de petites quantités de sulfate de chondroïtine. L&apos;activité anti-Xa plasmatique est corrélée avec l&apos;inhibition de la formation de thrombine. L&apos;unité anti-Xa est dérivée de l&apos;étalon international d&apos;héparine dans un système tampon contenant de l&apos;antithrombine III.</p><p class="spacing1" style="font-style: italic">Le profil anticoagulant d&apos;Orgaran se caractérise par un quotient élevé de l&apos;activité antifacteur Xa/antithrombine, d&apos;o&amp;ugrave; une inhibition efficace de la formation de thrombine et de thrombus. La dernière étape de la coagulation sanguine, à savoir la transformation du fibrinogène en fibrine, dépend de façon décisive de la formation de thrombine, dans laquelle le facteur Xa et la thrombine elle-même jouent un rôle essentiel. L&apos;activité anti-Xa est médiée par l&apos;antithrombine III et n&apos;est pas inactivée par les facteurs endogènes neutralisant l&apos;héparine. La fraction de sulfate d&apos;héparane présente une faible affinité pour l&apos;antithrombine et n&apos;exerce aucun effet significatif sur les facteurs de coagulation Xa et IIa in vitro. D&apos;après les études sur l&apos;animal, elle contribue de manière essentielle à l&apos;activité antithrombotique, ce qui s&apos;explique en partie par son effet inhibiteur sur l&apos;activation induite par la thrombine du facteur de coagulation IX.</p><p class="spacing1">A des doses thérapeutiques, Orgaran ne présente aucun effet, ou seulement effet minime, sur la formation du clou hémostatique, sur la fonction plaquettaire et sur l&apos;agrégabilité plaquettaire. Aux doses recommandées, on n&apos;a mis en évidence aucun effet significatif sur le temps de saignement. On a parfois observé un allongement du temps de saignement après l&apos;administration intraveineuse ou sous-cutanée de doses élevées.</p><p class="spacing1">Les effets anticoagulants d&apos;Orgaran sur les tests de la coagulation, tels que le taux de prothrombine, le temps de céphaline activée, le temps de céphaline-kaolin et le temps de thrombine, sont minimes et caractérisés par une courbe effets-dose très plate jusqu&apos;à des doses relativement élevées.</p><p class="spacing1">Orgaran présente une réaction sérologique croisée faible (environ 5%) avec les anticorps induits par l&apos;héparine, car il ne contient pas d&apos;héparine et se caractérise par un faible degré de sulfatation et par une charge négative.</p><p class="spacing1" style="font-style: italic">Efficacité clinique</p><p class="spacing1">Aucune donnée disponible.</p></div><div class="paragraph" id="section14"><div class="absTitle">Pharmacocinétique</div><p class="spacing1" style="font-style: italic">Absorption</p><p class="spacing1">Après administration sous-cutanée, la biodisponibilité absolue, évaluée d&apos;après l&apos;effet sur l&apos;activité anti-Xa plasmatique, est pratiquement de 100%. Le pic des concentrations plasmatiques de l&apos;activité anti-Xa est atteint chez l&apos;homme après environ 4 à 5 heures.</p><p class="spacing1" style="font-style: italic">Distribution</p><p class="spacing1">Le volume de distribution n&apos;a pas été étudié.</p><p class="spacing1" style="font-style: italic">Métabolisme</p><p class="spacing1">Les études sur l&apos;animal ont montré que le foie ne prend pas part à la dégradation métabolique.</p><p class="spacing1" style="font-style: italic">Elimination</p><p class="spacing1">Le danaparoïde sodique est éliminé principalement par voie rénale.</p><p class="spacing1">La demi-vie d&apos;élimination du danaparoïde est de l&apos;ordre de 25 heures pour l&apos;activité anti-Xa et de l&apos;ordre de 7 heures pour l&apos;activité inhibitrice de la thrombinoformation. Ces demi-vies d&apos;élimination sont indépendantes des doses, de l&apos;âge et du sexe. La concentration à l&apos;état d&apos;équilibre de l&apos;activité anti-Xa dans le plasma est obtenue en général 4 à 5 jours après l&apos;administration. Si l&apos;on prend comme base l&apos;activité antithrombine, la concentration à l&apos;état d&apos;équilibre dans le plasma est atteinte plus tôt, c&apos;est-à-dire après 1 à 2 jours.</p><p class="spacing1" style="font-style: italic">Cinétique pour certains groupes de patients</p><p class="spacing1">Chez les patients présentant une insuffisance rénale sévère, la demi-vie d&apos;élimination de l&apos;activité anti-Xa plasmatique est susceptible d&apos;être allongée.</p><p class="spacing1">La pharmacocinétique n&apos;a pas été étudiée chez l&apos;enfant et l&apos;adolescent.</p></div><div class="paragraph" id="section15"><div class="absTitle">Données précliniques</div><p class="spacing1">Les expérimentations animales n&apos;ont pas montré d&apos;effets tératogènes. Chez le cochon d&apos;Inde, le passage à travers le placenta est insignifiant.</p></div><div class="paragraph" id="section16"><div class="absTitle">Remarques particulières</div><p class="spacing1" style="font-style: italic">Incompatibilités</p><p class="spacing1">Si Orgaran est administré en bolus intraveineux, il doit être injecté seul et non associé à d&apos;autres médicaments.</p><p class="spacing1">Orgaran est compatible avec les solutés de chlorure de sodium à 0.9%, de glucose à 5%, la solution de Ringer, la solution de Ringer-lactate et les solutions salines glucosées, qui peuvent donc être utilisés pour la préparation de la solution pour perfusion.</p><p class="spacing1">Orgaran ne doit pas être utilisé si on aspect est altéré (turbidité, décoloration) ou si le récipient est endommagé.</p><p class="spacing1" style="font-style: italic">Influence sur les méthodes de diagnostic</p><p class="spacing1">La surveillance de l&apos;activité anticoagulante des anticoagulants oraux à l&apos;aide du temps de prothrombine, du thrombotest et du temps de céphaline n&apos;est pas fiable pendant les 5 heures qui suivent l&apos;administration d&apos;Orgaran. Il n&apos;existe aucune donnée relative aux tests de la fonction thyroïdienne.</p><p class="spacing1" style="font-style: italic">Stabilité</p><p class="spacing1">Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l&apos;emballage.</p><p class="spacing1" style="font-style: italic">Stabilité après ouverture</p><p class="spacing1">Après dilution avec les solutés pour perfusion autorisés, la stabilité physicochimique a été démontrée pendant 48 heures à une température de 15-25 °C.</p><p class="spacing1">Pour des raisons microbiologiques, la solution diluée doit être utilisée immédiatement.</p><p class="spacing1" style="font-style: italic">Remarques particulières concernant le stockage</p><p class="spacing1">Conserver à 2-30 °C et dans le carton d&apos;emballage à l&apos;abri de la lumière.</p><p class="spacing1">Tenir hors de portée des enfants.</p></div><div class="paragraph" id="section17"><div class="absTitle">Numéro d’autorisation</div><p class="spacing1">51809 (Swissmedic).</p></div><div class="paragraph" id="section18"><div class="absTitle">Présentation</div><p class="spacing1">ORGARAN, injektionslösung 10 Ampulle(n), ev.ep.e.c. [B]</p><p class="barcode"><svg height="50" width="200">
+<rect height="100%" width="100%" fill="white"/>
+<g style="stroke:black; stroke-width:2">
+<line x1="10" y1="0" x2="10" y2="45"/>
+<line x1="14" y1="0" x2="14" y2="45"/>
+<line x1="18" y1="0" x2="18" y2="30"/>
+<line x1="22" y1="0" x2="22" y2="30"/>
+<line x1="24" y1="0" x2="24" y2="30"/>
+<line x1="26" y1="0" x2="26" y2="30"/>
+<line x1="28" y1="0" x2="28" y2="30"/>
+<line x1="36" y1="0" x2="36" y2="30"/>
+<line x1="42" y1="0" x2="42" y2="30"/>
+<line x1="50" y1="0" x2="50" y2="30"/>
+<line x1="52" y1="0" x2="52" y2="30"/>
+<line x1="56" y1="0" x2="56" y2="30"/>
+<line x1="60" y1="0" x2="60" y2="30"/>
+<line x1="62" y1="0" x2="62" y2="30"/>
+<line x1="64" y1="0" x2="64" y2="30"/>
+<line x1="70" y1="0" x2="70" y2="30"/>
+<line x1="76" y1="0" x2="76" y2="30"/>
+<line x1="78" y1="0" x2="78" y2="30"/>
+<line x1="84" y1="0" x2="84" y2="30"/>
+<line x1="92" y1="0" x2="92" y2="30"/>
+<line x1="98" y1="0" x2="98" y2="30"/>
+<line x1="102" y1="0" x2="102" y2="45"/>
+<line x1="106" y1="0" x2="106" y2="45"/>
+<line x1="110" y1="0" x2="110" y2="30"/>
+<line x1="112" y1="0" x2="112" y2="30"/>
+<line x1="114" y1="0" x2="114" y2="30"/>
+<line x1="120" y1="0" x2="120" y2="30"/>
+<line x1="124" y1="0" x2="124" y2="30"/>
+<line x1="126" y1="0" x2="126" y2="30"/>
+<line x1="128" y1="0" x2="128" y2="30"/>
+<line x1="132" y1="0" x2="132" y2="30"/>
+<line x1="138" y1="0" x2="138" y2="30"/>
+<line x1="140" y1="0" x2="140" y2="30"/>
+<line x1="142" y1="0" x2="142" y2="30"/>
+<line x1="148" y1="0" x2="148" y2="30"/>
+<line x1="152" y1="0" x2="152" y2="30"/>
+<line x1="154" y1="0" x2="154" y2="30"/>
+<line x1="160" y1="0" x2="160" y2="30"/>
+<line x1="162" y1="0" x2="162" y2="30"/>
+<line x1="166" y1="0" x2="166" y2="30"/>
+<line x1="174" y1="0" x2="174" y2="30"/>
+<line x1="180" y1="0" x2="180" y2="30"/>
+<line x1="182" y1="0" x2="182" y2="30"/>
+<line x1="184" y1="0" x2="184" y2="30"/>
+<line x1="190" y1="0" x2="190" y2="30"/>
+<line x1="194" y1="0" x2="194" y2="45"/>
+<line x1="198" y1="0" x2="198" y2="45"/>
+</g>
+<text x="0" y="44">7</text>
+<text x="21" y="44" letter-spacing="5">680518</text>
+<text x="113" y="44" letter-spacing="5">090170</text>
+</svg></p></div><div class="paragraph" id="section19"><div class="absTitle">Titulaire de l’autorisation</div><p class="spacing1">Viatris Pharma GmbH, 6312 Steinhausen.</p></div><div class="paragraph" id="section20"><div class="absTitle">Mise à jour de l’information</div><p class="spacing1">Janvier 2024.</p><p class="spacing1">[Version 103 F]</p><div class="s13"/></div><div class="paragraph" id="Section9054">
+<div class="absTitle">ASPP: F. allaitantes</div>
+<p class="spacing1">ATC-Code: B01AB01, B01AB05, B01AB04, B01AB06, B01AB09<br/>
+Substance active: <br/>
+</p>
+<table class="s14"><colgroup><col span="2" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Type d’application</th><th>DJM</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11"/><div class="s12"/></td><td class="s13"><p class="s11"/><div class="s12"/></td>
+</tr></tbody></table>&#32;  </div><div class="paragraph" id="Section9051"/><p class="footer">Auto-generated by <a href="https://github.com/zdavatz/cpp2sqlite">cpp2sqlite</a> on Thu Oct 15 05:08:36 2026
+</p></div></article>
+        </div>
+
+        <aside id="flex-aside-two" class="nav-down">
+            <div id="section-ids"><ul style="list-style-type:none;
+"><li><a onclick="move_to_anchor('section1')">Orgaran®</a></li><li><a onclick="move_to_anchor('section2')">Composition</a></li><li><a onclick="move_to_anchor('section3')">Forme pharmaceutique et quantité de principe actif par unité</a></li><li><a onclick="move_to_anchor('section4')">Indications</a></li><li><a onclick="move_to_anchor('section5')">Posologie</a></li><li><a onclick="move_to_anchor('section6')">Contre-indications</a></li><li><a onclick="move_to_anchor('section7')">Précautions</a></li><li><a onclick="move_to_anchor('section8')">Interactions</a></li><li><a onclick="move_to_anchor('section9')">Grossesse, allaitement</a></li><li><a onclick="move_to_anchor('section10')">Conduite</a></li><li><a onclick="move_to_anchor('section11')">Effets indésirables</a></li><li><a onclick="move_to_anchor('section12')">Surdosage</a></li><li><a onclick="move_to_anchor('section13')">Propriétés/Effets</a></li><li><a onclick="move_to_anchor('section14')">Cinétique</a></li><li><a onclick="move_to_anchor('section15')">Préclinique</a></li><li><a onclick="move_to_anchor('section16')">Remarques</a></li><li><a onclick="move_to_anchor('section17')">Numéro d’autorisation</a></li><li><a onclick="move_to_anchor('section18')">Présentation</a></li><li><a onclick="move_to_anchor('section19')">Titulaire</a></li><li><a onclick="move_to_anchor('section20')">Mise à jour</a></li><li><a onclick="move_to_anchor('Section9054')">ASPP: F. allaitantes</a></li></ul></div>
+            <div id="download-links">
+                <p><a href='https://www.microsoft.com/de-de/store/p/amiko-desitin/9wzdncrdffxc' target="_blank" class="links">Windows<img border="0" alt="Windows" src="/assets/images/windows_logo.svg" height="48"></a></p>
+                <p><a href='https://itunes.apple.com/ch/app/amiko-desitin/id708142753?mt=12' target="_blank" class="links">macOS<img border="0" alt="macOS" src="/assets/images/apple_icon_svg.png" height="48"></a></p>
+                <p><a href='https://itunes.apple.com/ch/app/amiko-desitin/id687642725?mt=8' target="_blank" class="links">iOS<img border="0" alt="iOS" src="/assets/images/apple_icon_svg.png" height="48"></a></p>
+                <p><a href='https://play.google.com/store/apps/details?id=com.ywesee.amiko.de&amp;hl=de' target="_blank" class="links">Android<img border="0" alt="Android" src="/assets/images/android_logo.svg" height="48"></a></p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <div>AmiKo Web</div>
+        <div><a href="https://github.com/zdavatz/amiko-web">Copyright © 2026 ywesee GmbH</a></div>
+    </footer>
+
+    <!-- Button related JS -->
+    <script>
+        function disableButtons() {
+            $('#article-button').removeClass('active');
+            $('#owner-button').removeClass('active');
+            $('#substance-button').removeClass('active');
+            $('#regnr-button').removeClass('active');
+            $('#therapy-button').removeClass('active');
+            $('#fulltext-button').removeClass('active');
+        }
+
+        function getURLParameter(theParameter) {
+            var params = window.location.search.substr(1).split('&');
+            for (var i = 0; i < params.length; i++) {
+                var p=params[i].split('=');
+                if (p[0] == theParameter) {
+                    return decodeURIComponent(p[1]);
+                }
+            }
+            if (window.location.href.contains('fulltext'))
+                return 'fulltext';
+            return false;
+        }
+
+        $('#article-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+            $(this).addClass('active');
+        });
+        $('#owner-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Inhaberin...');
+            $(this).addClass('active');
+        });
+        $('#substance-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Wirkstoff/ATC...');
+            $(this).addClass('active');
+        });
+        $('#regnr-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Zulassungsnummer...');
+            $(this).addClass('active');
+        });
+        $('#therapy-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Therapie...');
+            $(this).addClass('active');
+        });
+        $('#fulltext-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Volltext...');
+            $(this).addClass('active');
+        });
+        $('#price-comparison-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Präparat Preisvergleich...');
+            $(this).addClass('active');
+        });
+
+        var query_var = getURLParameter('type');
+        if (query_var) {
+            if (query_var == 'title') {
+                localStorage.setItem('search-type', 1);
+            } else if (query_var == 'author') {
+                localStorage.setItem('search-type', 2);
+            } else if (query_var == 'atc') {
+                localStorage.setItem('search-type', 3);
+            } else if (query_var == 'regnr') {
+                localStorage.setItem('search-type', 4);
+            } else if (query_var == 'therapy') {
+                localStorage.setItem('search-type', 5);
+            } else if (query_var == 'fulltext') {
+                localStorage.setItem('search-type', 6);
+            } else if (query_var === 'pricecomparison') {
+                localStorage.setItem('search-type', 9);
+            } else {
+                localStorage.setItem('search-type', 1);
+            }
+        }
+
+        if (localStorage.getItem('search-type')==1) {
+            $('#article-button').addClass('active');
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+        } else if (localStorage.getItem('search-type')==2) {
+            $('#owner-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Inhaberin...');
+        } else if (localStorage.getItem('search-type')==3) {
+            $('#substance-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Wirkstoff/ATC...');
+        } else if (localStorage.getItem('search-type')==4) {
+            $('#regnr-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Zulassungsnummer...');
+        } else if (localStorage.getItem('search-type')==5) {
+            $('#therapy-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Therapie...');
+        } else if (localStorage.getItem('search-type')==6) {
+            $('#fulltext-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Volltext...');
+        } else if (localStorage.getItem('search-type')==9) {
+            $('#price-comparison-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Präparat Preisvergleich...');
+        } else {
+            $('#article-button').addClass('active');
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+        }
+
+        
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+            (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-47115045-2', 'auto');
+            ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    </body>
+</html>
+
