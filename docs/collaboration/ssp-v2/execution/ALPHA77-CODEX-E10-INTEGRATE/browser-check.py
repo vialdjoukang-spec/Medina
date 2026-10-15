@@ -3,7 +3,7 @@ from datetime import datetime,timezone
 from playwright.sync_api import sync_playwright
 import json
 OUT=Path(__file__).parent
-BASE='http://127.0.0.1:8769/MEDINA_S05_endocrinien-metabolique.html'
+BASE='http://127.0.0.1:8779/MEDINA_S05_endocrinien-metabolique.html'
 result={'checked_at':datetime.now(timezone.utc).isoformat(),'url':BASE,'browser':'Chromium /usr/bin/chromium','viewports':[],'errors':[]}
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path='/usr/bin/chromium')
