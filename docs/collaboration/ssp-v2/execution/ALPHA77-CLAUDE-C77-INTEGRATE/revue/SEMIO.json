@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "edde180171b5aabc97f197c42ee61ed7d47e788f",
+ "reviewed_commit": "980a26f773cbbf488403b9f181e22750176eb1b8",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -22,11 +22,11 @@
  "reviewed_files_sha256": {
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
-  "chapters/C77/C77_b.html": "e28c9b0afe18ba077d378dac88af5ca360eb1afc896fc3c49ab58da6a5840c04",
-  "chapters/C77/C77_c.html": "004702f0909935b1d9af4bf97d51997703b1379038d08c58f3e9eda0b7215c92",
+  "chapters/C77/C77_b.html": "c9341938a55536c082a2880848fc31258c7709231ea978fa5da8035db3240e71",
+  "chapters/C77/C77_c.html": "d8d8a81df65f853a9e6a1bda3152c0166f3b3bde21efe573d097e4085e1c5c86",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
-  "chapters/C77/C77_pop2.html": "326a38d374993089b00b5861eaa904ec0e69b43c522c4c648feb817157ff3d9e",
+  "chapters/C77/C77_pop2.html": "243657a776931edee2b9f0b98c89530c75ccc96e061f3c5188b9b13aa2f738bd",
   "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
  },
  "requirements_reviewed": {
@@ -104,7 +104,8 @@
    "finding": "Accessibilité : comme les quatre autres disciplines, le panneau c77-s-immuno n’a ni role=\"tabpanel\" ni aria-labelledby, et son bouton n’a ni id ni type=\"button\" ; seul le couple sémiologie est complet. Cohérent avec l’existant, non bloquant.",
    "correction_proposee": "Ajouter id=\"c77-tab-immuno\" type=\"button\" au bouton et role=\"tabpanel\" aria-labelledby=\"c77-tab-immuno\" au panneau (et de même pour les autres disciplines).",
    "source": "Contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15 (navigation accessible) ; lecture du DOM rendu",
-   "evidence": "<div class=\"sci\" id=\"c77-s-immuno\" hidden> ; <button role=\"tab\" aria-selected=\"false\" aria-controls=\"c77-s-immuno\" data-s=\"c77-s-immuno\">"
+   "evidence": "<div class=\"sci\" id=\"c77-s-immuno\" hidden> ; <button role=\"tab\" aria-selected=\"false\" aria-controls=\"c77-s-immuno\" data-s=\"c77-s-immuno\">",
+   "decision": "Choix de cohérence du coordinateur : le panneau c77-s-immuno garde la même structure que les quatre autres disciplines (sans role=tabpanel ni aria-labelledby) ; constat maintenu ouvert et non bloquant pour une harmonisation ultérieure de toutes les disciplines."
   }
  ],
  "evidence": [
@@ -159,7 +160,8 @@
    "controls": [
     "Clôture sur edde1801 : build_front.py --fragment S06 hors dépôt (5 980 136 → 3 742 812 octets) ; Chromium 1194, 1300 et 390 px : sémiologie premier bouton sélectionné et visible, six sous-onglets ; Immunologie s’ouvre ; figure 6 lisible à 390 px (10,7 px), 6 flèches, aucun texte hors boîte ; c77-imm-msi contient la FI Keytruda® ; Pareto 52 mots sur 1 332 ; défilement horizontal 0 ; aucune erreur JavaScript ni console.",
     "test_v7.py --static C77 : OK (24 315 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML.",
-    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010."
+    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010.",
+    "Mise à jour 980a26f7 : correction P-IMM-08 relue contre Onkopedia 2025 § 5.1.3.1.1 ; test_v7.py --static C77 OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML ; empreintes recalculées."
    ]
   }
  ],
@@ -174,6 +176,6 @@
    "P-SEMIO-IMM-02"
   ],
   "note": "Revue IA, distincte d’une validation médicale humaine.",
-  "commit_cloture": "edde180171b5aabc97f197c42ee61ed7d47e788f"
+  "commit_cloture": "980a26f773cbbf488403b9f181e22750176eb1b8"
  }
 }

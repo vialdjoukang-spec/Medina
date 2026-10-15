@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "edde180171b5aabc97f197c42ee61ed7d47e788f",
+ "reviewed_commit": "980a26f773cbbf488403b9f181e22750176eb1b8",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -22,11 +22,11 @@
  "reviewed_files_sha256": {
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
-  "chapters/C77/C77_b.html": "e28c9b0afe18ba077d378dac88af5ca360eb1afc896fc3c49ab58da6a5840c04",
-  "chapters/C77/C77_c.html": "004702f0909935b1d9af4bf97d51997703b1379038d08c58f3e9eda0b7215c92",
+  "chapters/C77/C77_b.html": "c9341938a55536c082a2880848fc31258c7709231ea978fa5da8035db3240e71",
+  "chapters/C77/C77_c.html": "d8d8a81df65f853a9e6a1bda3152c0166f3b3bde21efe573d097e4085e1c5c86",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
-  "chapters/C77/C77_pop2.html": "326a38d374993089b00b5861eaa904ec0e69b43c522c4c648feb817157ff3d9e",
+  "chapters/C77/C77_pop2.html": "243657a776931edee2b9f0b98c89530c75ccc96e061f3c5188b9b13aa2f738bd",
   "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
  },
  "requirements_reviewed": {
@@ -213,13 +213,14 @@
   {
    "id": "P-IMM-08",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_b.html (c77-10), C77_c.html « Le pont vers le traitement du CUP », C77_pop2.html c77-imm-msi : « Onkopedia 2025 qualifie ces traitements d’« off-label » »",
    "finding": "Attribution légèrement trop large : Onkopedia 2025 marque « off-label » le traitement en cas de TMB élevée et de PD-L1, mais pas la ligne « Therapie bei MSI-H oder MMR-Defekt: Therapie mit Pembrolizumab oder Atezolizumab ». Le statut hors indication en Suisse pour l’ensemble reste exact, puisqu’il découle de la FI Keytruda® ; seule l’attribution à Onkopedia est imprécise. Non bloquant.",
    "correction_proposee": "Remplacer par « Onkopedia 2025 qualifie d’« off-label » le traitement fondé sur une charge mutationnelle élevée ou sur PD-L1 ».",
    "source": "Onkopedia 2025 § 5.1.3.1.1",
-   "evidence": "« Therapie bei MSI-H oder MMR-Defekt Therapie mit Pembrolizumab oder Atezolizumab bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) bei immunogener Tumorbiologie mit PDL1-Expression: PD1/PDL1-Checkpointinhibitor in der 2. Therapielinie erwägen (off-label). »"
+   "evidence": "« Therapie bei MSI-H oder MMR-Defekt Therapie mit Pembrolizumab oder Atezolizumab bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) bei immunogener Tumorbiologie mit PDL1-Expression: PD1/PDL1-Checkpointinhibitor in der 2. Therapielinie erwägen (off-label). »",
+   "resolution": "Corrigé à 980a26f7 dans C77_b, C77_c et c77-imm-msi : « Onkopedia 2025 qualifie d’« off-label » le traitement fondé sur une charge mutationnelle élevée ou sur PD-L1 ». Conforme à Onkopedia 2025 § 5.1.3.1.1 (mention « off-label » sur les seules lignes TMB-high et PD-L1, pas sur la ligne MSI-H/dMMR) ; plus aucune occurrence de l’ancienne formule dans chapters/C77. Le statut hors indication en Suisse reste fondé sur la FI Keytruda® (août 2026)."
   }
  ],
  "evidence": [
@@ -290,7 +291,8 @@
    "controls": [
     "Clôture sur edde1801 : build_front.py --fragment S06 hors dépôt (5 980 136 → 3 742 812 octets) ; Chromium 1194, 1300 et 390 px : sémiologie premier bouton sélectionné et visible, six sous-onglets ; Immunologie s’ouvre ; figure 6 lisible à 390 px (10,7 px), 6 flèches, aucun texte hors boîte ; c77-imm-msi contient la FI Keytruda® ; Pareto 52 mots sur 1 332 ; défilement horizontal 0 ; aucune erreur JavaScript ni console.",
     "test_v7.py --static C77 : OK (24 315 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML.",
-    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010."
+    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010.",
+    "Mise à jour 980a26f7 : correction P-IMM-08 relue contre Onkopedia 2025 § 5.1.3.1.1 ; test_v7.py --static C77 OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML ; empreintes recalculées."
    ]
   }
  ],
@@ -301,10 +303,8 @@
   "agent": "Agent P, relecteur indépendant de l’ajout de W (bd50fdc8)",
   "perimetre": "Sous-onglet Immunologie c77-s-immuno (C77_c.html), fenêtres c77-imm-msi et pareto-c77-immuno (C77_pop2.html), clé CUPISCO (glossary/c77.py)",
   "bloquants": 0,
-  "constats_ouverts_non_bloquants": [
-   "P-IMM-08"
-  ],
+  "constats_ouverts_non_bloquants": [],
   "note": "Revue IA, distincte d’une validation médicale humaine.",
-  "commit_cloture": "edde180171b5aabc97f197c42ee61ed7d47e788f"
+  "commit_cloture": "980a26f773cbbf488403b9f181e22750176eb1b8"
  }
 }
