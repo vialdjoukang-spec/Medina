@@ -10,9 +10,9 @@ La première source lue est l’information professionnelle suisse du **carbopla
 
 ## 2. Jugement d’ensemble
 
-La leçon est solide sur la nosologie, la démarche topographique, l’immunohistochimie et la séquence « tissu avant bistouri ». Les chiffres de la revue suisse et d’Onkopedia sont, pour la plupart, repris fidèlement. Je n’ai trouvé **aucune erreur bloquante**. Les faiblesses se concentrent sur trois terrains : la **pharmacologie**, où les contre-indications et les interactions sont tronquées alors que les FI suisses les donnent ; le **bilan du CUP**, où l’exigence d’une histologie et de l’IRM mammaire manque ; et plusieurs **attributions de sources** inexactes.
+La leçon est solide sur la nosologie, la démarche topographique, l’immunohistochimie et la séquence « tissu avant bistouri ». Les chiffres de la revue suisse et d’Onkopedia sont, pour la plupart, repris fidèlement. Je n’ai trouvé **aucune erreur bloquante**. En revanche, une figure anatomique générée pour le cours est non recevable. Les faiblesses se concentrent sur trois terrains : la **pharmacologie**, où les contre-indications et les interactions sont tronquées alors que les FI suisses les donnent ; le **bilan du CUP**, où l’exigence d’une histologie et de l’IRM mammaire manque ; et plusieurs **attributions de sources** inexactes.
 
-## 3. Constats majeurs (8)
+## 3. Constats majeurs (9)
 
 | Id | Fichier | Constat | Proposition |
 |---|---|---|---|
@@ -24,8 +24,9 @@ La leçon est solide sur la nosologie, la démarche topographique, l’immunohis
 | MAJ-06 | C77_b | Le cas récapitulatif retient un CUP axillaire « sein-like » **sans IRM mammaire**, que la ligne directrice prévoit (avec une scintigraphie osseuse). | `propositions/C77_b_2.html` |
 | MAJ-07 | C77_b, C77_a | Critère post-vaccinal incomplet : la bénignité ne vaut que pour une adénopathie **unilatérale** non suspecte. Une adénopathie controlatérale ou persistante au-delà de 12 semaines relève du bilan standard. Le cours écrit aussi « environ 1 %, axillaire », ce qui déforme la source. | `propositions/C77_b_3.html` |
 | MAJ-08 | C77_a | La ligne sus-claviculaire omet le **sein** (environ 30 % selon Onkopedia), ainsi que le PSA et le toucher rectal chez l’homme. | `propositions/C77_a_1.html` |
+| MAJ-09 | C77_c | La Figure 1 est un schéma anatomique dessiné pour le cours (silhouette et régions ganglionnaires), sans source iconographique. Elle est **non recevable** selon la règle de Vial du 15.10.2026 (voir section Figures). | `propositions/C77_c_figure1.html` |
 
-## 4. Constats mineurs (11)
+## 4. Constats mineurs (12)
 
 - **MIN-01** — Contresens : « 15 à 25 % des CUP localisés sont favorables ». La source dit que 15 à 25 % des CUP sont **localisés** et que 70 à 85 % n’appartiennent à aucun sous-groupe favorable.
 - **MIN-02** — Le seuil de soins palliatifs seuls (espérance de vie inférieure à 4 mois) est attribué à Onkopedia. Il provient de la revue suisse, qui cite l’ESMO 2015.
@@ -37,6 +38,7 @@ La leçon est solide sur la nosologie, la démarche topographique, l’immunohis
 - **MIN-08** — La liste des médicaments responsables d’adénopathie omet les sels d’or.
 - **MIN-09** — L’essaimage de 7 % est présenté sans la nuance de la même source : la survie n’est pas aggravée dans deux séries ORL.
 - **MIN-10** — La tolérance immunitaire du ganglion colonisé, observée dans un modèle murin, est présentée comme une explication clinique établie.
+- **MIN-12** — La Figure 4 et le tableau CK7/CK20 omettent le tractus digestif haut et pancréatobiliaire, ainsi que les glandes salivaires.
 - **MIN-11** — Les indications suisses du carboplatine sont résumées de façon imprécise : tumeurs ORL en monothérapie avec radiothérapie ou en association ; vessie en association.
 
 ## 5. Enrichissements proposés (11)
@@ -53,7 +55,25 @@ Les propositions sont prêtes à intégrer et sourcées `[Sx]` dans `proposition
 - **Doses et seuils** issus des FI : paclitaxel 175 mg/m² toutes les 3 semaines, plaquettes, foie ; carboplatine : rein, mécanisme, ototoxicité (ENR-08).
 - **Bilan inguinal** (ENR-09), **bilan biologique de base** (ENR-10) et inutilité de l’**antibiothérapie empirique** (ENR-11).
 
-## 6. Matrice des 20 rubriques (leçon telle qu’elle est)
+## 6. Figures
+
+L’inventaire porte sur les sept fichiers. Il ne trouve aucune balise `img` ni `canvas` et aucun dessin CSS. On compte 4 figures SVG et 4 icônes d’interface, toutes dans `C77_c.html`.
+
+| Figure | Ancre | Classe | Vérification | Constat |
+|---|---|---|---|---|
+| Figure 1 — Drainage ganglionnaire par région | `aria-label="Schéma du drainage ganglionnaire par région"` | **ANATOMIQUE_IA** | Silhouette et territoires dessinés pour le cours ; la légende cite la source du texte, pas une source iconographique. Le sein manque à la région sus-claviculaire. | MAJ-09 : non recevable, à remplacer |
+| Figure 2 — Trajet de la lymphe | `aria-label="Trajet de la lymphe"` | SCHEMA_NON_ANATOMIQUE | Boîtes et flèches, sans forme anatomique dessinée. Les quatre étapes concordent avec Liu 2023. | Recevable |
+| Figure 3 — Chaîne de la dissémination | `aria-label="Chaîne de la dissémination lymphatique"` | SCHEMA_NON_ANATOMIQUE | Conforme à Liu 2023 ; la tolérance immunitaire provient d’un modèle murin. | Recevable, voir MIN-10 |
+| Figure 4 — Quadrants CK7/CK20 | `aria-label="Quadrants CK7 et CK20"` | SCHEMA_NON_ANATOMIQUE | Placement des quadrants exact (Onkopedia, Tabelle 2) ; contenu incomplet. | Recevable, voir MIN-12 |
+| Icônes de la barre des sciences (×4) | `svg viewBox="0 0 24 24"` | SCHEMA_NON_ANATOMIQUE (interface) | Il s’agit d’icônes de boutons, sans contenu médical. | Hors périmètre |
+
+**Candidats réels pour remplacer la Figure 1.** Leurs métadonnées ont été lues par l’API officielle de Wikimedia Commons. Aucune image n’a été téléchargée, générée ni redessinée.
+
+1. **« Lymph node regions.svg »** — programme SEER du National Cancer Institute, œuvre dérivée de Fred the Oyster, **domaine public**. Page : https://commons.wikimedia.org/wiki/File:Lymph_node_regions.svg ; fichier : https://upload.wikimedia.org/wikipedia/commons/c/cb/Lymph_node_regions.svg. C’est le candidat principal, intégré dans `propositions/C77_c_figure1.html`.
+2. **« Blausen 0623 LymphaticSystem Female.png »** — BruceBlaus (Blausen Medical), **CC BY 3.0**. Attribution : Blausen.com staff (2014), WikiJournal of Medicine, DOI 10.15347/wjm/2014.010. Page : https://commons.wikimedia.org/wiki/File:Blausen_0623_LymphaticSystem_Female.png.
+3. **« Diagram showing the areas of lymph nodes in the head and neck CRUK 292.svg »** — Cancer Research UK, **CC BY-SA 4.0**. Ce candidat couvre la région cervicale seulement. Page : https://commons.wikimedia.org/wiki/File:Diagram_showing_the_areas_of_lymph_nodes_in_the_head_and_neck_CRUK_292.svg.
+
+## 7. Matrice des 20 rubriques (leçon telle qu’elle est)
 
 | Rubrique | Statut | Localisation ou manque |
 |---|---|---|
@@ -78,7 +98,7 @@ Les propositions sont prêtes à intégrer et sourcées `[Sx]` dans `proposition
 | 19 Sous-codes | couvert | c77-codage, glossaire |
 | 20 Points d’examen fédéral | partiel | quiz présents ; PROFILES non vérifié |
 
-## 7. Lacunes de l’audit
+## 8. Lacunes de l’audit
 
 - Le texte intégral de l’ESMO 2023 est inaccessible : HTTP 403 et aucun texte PMC.
 - Aucune incidence suisse du CUP ni de C77 n’a été trouvée.
@@ -87,19 +107,20 @@ Les propositions sont prêtes à intégrer et sourcées `[Sx]` dans `proposition
 - La règle suisse de codage C77.x avec C80.0 n’a pas été vérifiée. La fenêtre c77-codage laisse entendre que C80.0 remplace C77.
 - La ligne directrice EHNS-ESMO-ESTRO 2020 et les objectifs PROFILES n’ont pas été lus.
 
-## 8. Tableau de bord
+## 9. Tableau de bord
 
 | Élément | Valeur |
 |---|---|
 | Leçon | C77 — Tumeur maligne des ganglions lymphatiques, secondaire et non précisée (S06-Hématologie) |
 | Fichiers audités | 7, empreintes conformes |
-| Sources lues | 10 (4 en texte intégral, 4 par section, 2 par résumé) |
+| Sources lues | 11 (4 en texte intégral, 5 par section, 2 par résumé) |
 | BLOQUANT | 0 |
-| MAJEUR | 8 |
-| MINEUR | 11 |
+| MAJEUR | 9 |
+| MINEUR | 12 |
 | ENRICHISSEMENT | 11 |
-| Propositions rédigées | 14 fichiers HTML |
+| Propositions rédigées | 15 fichiers HTML |
+| Figures inventoriées | 4 figures et 4 icônes : 1 ANATOMIQUE_IA (non recevable), 3 schémas recevables, 0 image sourcée |
 | Rubriques couvertes, partielles, absentes | 8 / 11 / 1 |
-| Ancres vérifiées mécaniquement | 30 sur 30 présentes dans les fichiers |
+| Ancres vérifiées mécaniquement | 32 constats et 5 figures, toutes présentes dans les fichiers |
 
 *Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.*

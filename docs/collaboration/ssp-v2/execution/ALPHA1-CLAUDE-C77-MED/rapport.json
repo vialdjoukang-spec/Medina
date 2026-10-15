@@ -11,7 +11,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-15T18:21:00Z",
- "date_fin": "2026-10-15T18:33:16Z",
+ "date_fin": "2026-10-15T18:39:44Z",
  "lecture": {
   "fichiers": [
    "chapters/C77/C77_a.html",
@@ -69,8 +69,8 @@
  },
  "synthese": {
   "BLOQUANT": 0,
-  "MAJEUR": 8,
-  "MINEUR": 11,
+  "MAJEUR": 9,
+  "MINEUR": 12,
   "ENRICHISSEMENT": 11
  },
  "constats": [
@@ -648,8 +648,112 @@
    "proposition": "Ajouter : « Une antibiothérapie empirique n’est pas indiquée sans signe d’infection bactérienne. »",
    "justification": "Piège d’examen classique.",
    "ancre_occurrences": 1
+  },
+  {
+   "id": "MAJ-09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/C77/C77_c.html",
+   "ancre": "aria-label=\"Schéma du drainage ganglionnaire par région\"",
+   "constat": "Figure 1 (îlot c77-s-anat-cours) : silhouette humaine et territoires ganglionnaires dessinés en SVG pour le cours, sans source iconographique réelle. Figure anatomique générée, non recevable selon la règle de Vial du 15.10.2026. Son contenu est en outre incomplet : le sein manque à la région sus-claviculaire (voir MAJ-08).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "§ 5.1.1.1.2",
+     "citation_courte": "Lungenkarzinom als Primärtumor 50%, Mamma 30%"
+    },
+    {
+     "source_id": "S11",
+     "section": "API Commons, métadonnées",
+     "citation_courte": "Lymph node regions.svg — LicenseShortName : Public domain — Ann Arbor Hodgkin's Lymphoma; Lymph Node Regions"
+    }
+   ],
+   "proposition": "propositions/C77_c_figure1.html",
+   "justification": "Un schéma anatomique approximatif enseigne une topographie fausse ; une planche réelle, sourcée et sous licence libre, la remplace sans perte d’information.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C77/C77_c.html",
+   "ancre": "aria-label=\"Quadrants CK7 et CK20\"",
+   "constat": "Figure 4 et tableau de c77-e-4 (schéma non anatomique, recevable) : les quadrants omettent le tractus digestif haut et pancréatobiliaire (CK7 positive, CK20 négative ou positive) et les glandes salivaires (CK7 positive, CK20 négative), que la source cite.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Tabelle 2",
+     "citation_courte": "CK 7+, CK 20- | [...] Oberer GI-Trakt/pankreatobiliär (CDX2, CK19, BAP1, ARID1a) [...] Speicheldrüse ; CK 7+, CK 20+ | Blase (GATA3, p63), Oberer GI-Trakt/pankreatobiliär"
+    }
+   ],
+   "proposition": "Ajouter « tractus digestif haut et pancréatobiliaire, glandes salivaires » au quadrant CK7+/CK20− et « tractus digestif haut et pancréatobiliaire » au quadrant CK7+/CK20+, dans la figure 4, le tableau de c77-e-4 et la fenêtre c77-ihc.",
+   "justification": "Le carcinome pancréatobiliaire est un primitif fréquent des formes défavorables ; l’omettre biaise l’orientation.",
+   "ancre_occurrences": 1
   }
  ],
+ "figures": [
+  {
+   "ancre": "aria-label=\"Schéma du drainage ganglionnaire par région\"",
+   "fichier": "chapters/C77/C77_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "description": "Figure 1 — silhouette humaine en traits et régions ganglionnaires avec sous-codes et primitifs ; légende « d’après Swiss Medical Weekly 2024 et Onkopedia 2025 » (source du texte, aucune source iconographique).",
+   "constat_id": "MAJ-09",
+   "candidats": [
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:Lymph_node_regions.svg",
+     "fichier_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Lymph_node_regions.svg",
+     "auteur": "National Cancer Institute, programme SEER (training.seer.cancer.gov) ; œuvre dérivée : Fred the Oyster",
+     "licence": "Domaine public",
+     "attribution": "« Lymph node regions », d’après NCI SEER, œuvre dérivée de Fred the Oyster, domaine public, via Wikimedia Commons"
+    },
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:Blausen_0623_LymphaticSystem_Female.png",
+     "fichier_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Blausen_0623_LymphaticSystem_Female.png",
+     "auteur": "BruceBlaus (Blausen Medical)",
+     "licence": "CC BY 3.0",
+     "attribution": "Blausen.com staff (2014). « Medical gallery of Blausen Medical 2014 ». WikiJournal of Medicine 1 (2). DOI 10.15347/wjm/2014.010. CC BY 3.0, via Wikimedia Commons"
+    },
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:Diagram_showing_the_areas_of_lymph_nodes_in_the_head_and_neck_CRUK_292.svg",
+     "fichier_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Diagram_showing_the_areas_of_lymph_nodes_in_the_head_and_neck_CRUK_292.svg",
+     "auteur": "Cancer Research UK",
+     "licence": "CC BY-SA 4.0",
+     "attribution": "Cancer Research UK, « Diagram showing the areas of lymph nodes in the head and neck », CC BY-SA 4.0, via Wikimedia Commons (région cervicale seulement)"
+    }
+   ]
+  },
+  {
+   "ancre": "aria-label=\"Trajet de la lymphe\"",
+   "fichier": "chapters/C77/C77_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Figure 2 — quatre boîtes reliées par des flèches : lymphatique initial → collecteur avec valves → ganglion (sinus sous-capsulaire, cortical, médullaire) → canal thoracique puis sang. Aucune forme anatomique dessinée ; chaque étiquette et chaque flèche concordent avec Liu 2023 (S8).",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "aria-label=\"Chaîne de la dissémination lymphatique\"",
+   "fichier": "chapters/C77/C77_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Figure 3 — chaîne en boîtes : VEGF-C/D → VEGFR-3 et lymphangiogenèse → CCL21 attire les cellules CCR7 → ganglion sentinelle puis tolérance. Valeurs et flèches conformes à S8 ; la dernière étape repose sur un modèle murin (voir MIN-10).",
+   "constat_id": "MIN-10",
+   "candidats": []
+  },
+  {
+   "ancre": "aria-label=\"Quadrants CK7 et CK20\"",
+   "fichier": "chapters/C77/C77_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Figure 4 — tableau graphique 2 × 2 CK7/CK20 et organes évoqués. Placement des quadrants exact selon S4 (Tabelle 2) ; contenu incomplet (MIN-12).",
+   "constat_id": "MIN-12",
+   "candidats": []
+  },
+  {
+   "ancre": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\">",
+   "fichier": "chapters/C77/C77_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Quatre icônes d’interface identiques (cercle et croix) des boutons de la barre des sciences ; ni figure médicale ni structure anatomique, hors périmètre de la règle.",
+   "constat_id": null,
+   "candidats": []
+  }
+ ],
+ "figures_note": "Inventaire des 7 fichiers : aucune balise img, canvas ni dessin CSS ; 4 balises figure et 8 svg, tous dans C77_c.html. Métadonnées Commons lues par l’API officielle (api.php), sans téléchargement d’image ; l’accès direct par curl a été refusé (HTTP 429) et les requêtes ont été refaites par lecture unitaire espacée.",
  "matrice_20": [
   {
    "rubrique": "1. Question clinique et enjeu pour l’examen fédéral",
