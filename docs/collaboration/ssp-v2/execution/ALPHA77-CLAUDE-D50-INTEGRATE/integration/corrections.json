@@ -1151,5 +1151,84 @@
  "empreintes_sha256_apres_cinquieme_discipline": {
   "chapters/D50/D50_c.html": "04d5b9fc232a2421e4c5ce090f55a1960f7c96181da1dd7e61a912fb1bac9406",
   "chapters/D50/D50_pop2.html": "2ff1e769baaea5ef88e7c2dc1c3b27d26b2e0d5721d282c05d8757da3396d160"
+ },
+ "phase2_revue_P_anatomie": {
+  "revue": "commit d1cab654, revue/MED.json et revue/LANG.json (relu b07684fb)",
+  "corrections": [
+   {
+    "id": "MED-ANAT-M1",
+    "constat": "« chaque étape n’est franchie que si la précédente n’a pas trouvé de cause suffisante » contredit la recommandation 7 de la BSG",
+    "action": "Paragraphe réécrit : étapes 1 à 3 = un seul bilan initial ; hématurie ou sérologie positive ne dispensent pas des endoscopies ; double endoscopie avec biopsies duodénales jugée plus appropriée chez le sujet âgé ; seule l’étape 4 dépend des précédentes. Figure 7 refaite : étapes 1 à 3 dans un cadre pointillé « Bilan initial, réalisé en entier », flèche « si bilan négatif » vers l’étape 4 ; légende et aria-label ajustés.",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, paragraphe sous la figure 7 ; figure 7",
+    "sources": [
+     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral lu le 15.10.2026) : recommandation 7, dual pathology 1–10 %, sérologie moins sensible et bidirectional endoscopy with duodenal biopsy chez le sujet âgé, small bowel"
+    ]
+   },
+   {
+    "id": "MED-ANAT-m1",
+    "action": "Ligne Duodénum et intestin grêle : « maladie cœliaque, par malabsorption plutôt que par perte »",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, tableau",
+    "sources": [
+     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral lu le 15.10.2026) : tableau 1",
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : tableau 2"
+    ]
+   },
+   {
+    "id": "MED-ANAT-m2",
+    "action": "Maladie de Rendu-Osler ajoutée à la ligne « Tout le tube digestif »",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, tableau",
+    "sources": [
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : tableau 2 (M. Osler)"
+    ]
+   },
+   {
+    "id": "MED-ANAT-m3",
+    "action": "Phrase remplacée : gastrite atrophique, achlorhydrie, résection gastrique réduisent l’acidité ; après chirurgie bariatrique, la BSG retient surtout un apport réduit et une malabsorption (sans mécanisme de passage duodénal ni généralisation à la gastrectomie longitudinale)",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, Les portes d’entrée, second paragraphe",
+    "sources": [
+     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral lu le 15.10.2026) : GI surgery",
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : § 2.3"
+    ]
+   },
+   {
+    "id": "LANG-ANAT-1",
+    "action": "« des règles physiologiques font perdre environ 50 mL de sang, soit 25 mg de fer, par cycle » ; Pareto : « des règles physiologiques font perdre environ 25 mg de fer par cycle »",
+    "fichier": "chapters/D50/D50_c.html ; chapters/D50/D50_pop2.html",
+    "ancre": "#d50-s-anat-body ; template pareto-d50-s-anat",
+    "sources": [
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : § 2.4"
+    ]
+   },
+   {
+    "id": "LANG-ANAT-2",
+    "action": "« donc » supprimé du premier paragraphe",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, premier paragraphe",
+    "sources": [
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : § 2.4"
+    ]
+   },
+   {
+    "id": "LANG-ANAT-3",
+    "action": "Figure 7 : viewBox 520 → 440 de large, font-size 18 → 20 ; rendu vérifié à 390 px",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat figure svg",
+    "sources": []
+   }
+  ],
+  "controles": {
+   "test_v7 --static D50": "OK",
+   "build_medina.audit (6 fichiers)": "{}",
+   "audit_sciences --codes D50": "6 disciplines ; seule erreur le faux positif connu d50-s-histo",
+   "rendu Chromium S06 1280/390 px": "aucune erreur JavaScript, pas de défilement horizontal, Pareto 104 mots sur 1219"
+  },
+  "empreintes_sha256": {
+   "chapters/D50/D50_c.html": "13843b795549b77340ef4522f9c4c7a466bb614df0f8484b39d7eda3f3a44563",
+   "chapters/D50/D50_pop2.html": "5d1bd35709cf0a28080c9b655ec78c3c95d0dfadf60069e2555c2f1ac819df38"
+  }
  }
 }
