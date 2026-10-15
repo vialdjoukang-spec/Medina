@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 from pathlib import Path
 import json,hashlib,datetime
-D=Path(__file__).parent;url='http://127.0.0.1:8876/MEDINA_S05_endocrinien-metabolique.html#/entry/E05';results=[]
+D=Path(__file__).parent;url='http://127.0.0.1:8785/MEDINA_S05_endocrinien-metabolique.html#/entry/E05';results=[]
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
  for width,height in [(1365,950),(390,844)]:
@@ -9,6 +9,10 @@ with sync_playwright() as p:
   sem=page.locator('.mc #e05-s-semio');assert sem.is_visible();assert page.locator('.mc-sci-bar button').count()==6
   assert page.locator('.mc-sci-bar button').first.get_attribute('id')=='e05-tab-semio';assert page.locator('.mc .mc-sci:not([hidden])').count()==1
   assert page.locator('.mc [data-semiology]').count()==9
+  visited=[]
+  for button in page.locator('.mc-sci-bar button').all():
+   target=button.get_attribute('data-s');button.click();assert page.locator('.mc .mc-sci:not([hidden])').count()==1;assert page.locator('.mc .mc-sci:not([hidden])').get_attribute('id')==target;assert button.get_attribute('aria-selected')=='true';visited.append(target)
+  page.locator('.mc #e05-tab-semio').click()
   page.screenshot(path=str(D/'captures'/f'e05-{width}-semio.png'),full_page=False);page.locator('.mc #e05-semio-normal').evaluate("e=>e.scrollIntoView({block:'start'})");page.screenshot(path=str(D/'captures'/f'e05-{width}-semio-contenu.png'))
   page.locator('.mc #e05-tab-s01').click();assert page.locator('.mc #e05-s01-pane').is_visible();assert not sem.is_visible()
   tab=page.locator('.mc #e05-tab-semio');tab.focus();page.keyboard.press('Enter');assert sem.is_visible();assert tab.get_attribute('aria-selected')=='true'
@@ -22,6 +26,8 @@ with sync_playwright() as p:
   sem.evaluate('e=>e.scrollTop=e.scrollHeight');assert sem.evaluate('e=>e.scrollTop>0');page.screenshot(path=str(D/'captures'/f'e05-{width}-livre-fin.png'));
   page.locator('.mc-navigo-trigger').click();assert page.locator('.mc-navigo-panel').is_visible();page.locator('.mc-navigo-search').fill('mécanisme');assert page.locator('.mc-navigo-list button:visible').count()>0;page.locator('.mc-navigo-close').click()
   overflow=page.evaluate('({viewport:innerWidth,document:document.documentElement.scrollWidth})')
-  results.append({'viewport':[width,height],'initial_semiology':True,'nine_sections':True,'six_tabs':True,'native_keyboard_Enter_Space':True,'popup':True,'font_px':24,'book':True,'navigo':True,'images':image_results,'pageerrors':errors,'overflow':overflow});page.close()
+  assert not errors,errors
+  assert overflow['document']<=width+2,overflow
+  results.append({'visited_six_tabs':visited,'viewport':[width,height],'initial_semiology':True,'nine_sections':True,'six_tabs':True,'native_keyboard_Enter_Space':True,'popup':True,'font_px':24,'book':True,'navigo':True,'images':image_results,'pageerrors':errors,'overflow':overflow});page.close()
  b.close()
-report={'at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':url,'build_sha256':hashlib.sha256(Path('/workspace/scratch/e05-integrate/build/fragments/MEDINA_S05_endocrinien-metabolique.html').read_bytes()).hexdigest(),'results':results};(D/'navigateur.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False,indent=2))
+report={'at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':url,'build_sha256':hashlib.sha256(Path('/workspace/scratch/e05-final-render/fragments/MEDINA_S05_endocrinien-metabolique.html').read_bytes()).hexdigest(),'results':results};(D/'navigateur.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False,indent=2))
