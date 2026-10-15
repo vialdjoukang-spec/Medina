@@ -1109,5 +1109,47 @@
   "chapters/D50/D50_pop2.html": "6d1ed4732ec5117574cfe2cead35b0111172310754c44a28e77c72493021b093",
   "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f"
  },
- "mention": "Revue IA, distincte d’une validation médicale humaine. Aucune validation médicale humaine n’est revendiquée."
+ "mention": "Revue IA, distincte d’une validation médicale humaine. Aucune validation médicale humaine n’est revendiquée.",
+ "phase2_cinquieme_discipline": [
+  {
+   "constat": "MAJEUR bloquant de clôture (AGENTS.md, « Sémiologie obligatoire ») : la Sémiologie doit être le sixième sous-onglet de Sciences après cinq disciplines réelles ; D50 n’en comptait que quatre (Physiologie, Biochimie, Hématologie cellulaire, Génétique).",
+   "action": "Ajout d’une cinquième discipline « Anatomie » (portes d’entrée, réserves, lieux de perte du fer ; tableau des appareils et examens ; figure 7, schéma de décision non anatomique en SVG role=img avec aria-label et figcaption ; encadrés Science → clinique, examen, traitement, À retenir ; références). Bouton ajouté en dernière position de .sci-bar, aria-selected=false ; Sémiologie reste le premier bouton, sélectionné par défaut. Placée en dernier pour ne pas renuméroter les figures 3 à 6.",
+   "justification_choix": "L’anatomie fonctionnelle (duodénum et entérocyte, foie, rate, moelle) et la topographie des pertes digestives, utérines, urinaires et respiratoires ordonnent directement l’enquête étiologique, centrale dans D50. L’immunologie de l’hepcidine a été écartée : l’effet de l’inflammation sur l’hepcidine est déjà traité en Physiologie, Biochimie et Génétique, et une discipline supplémentaire aurait été redondante.",
+   "fichier": "chapters/D50/D50_c.html",
+   "ancre": "#d50-s-anat, #d50-s-anat-body, bouton data-s=\"d50-s-anat\"",
+   "sources": [
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025, avec SGH/SSH et SGMO (texte intégral lu le 15.10.2026) : § 2.3 (absorption duodénale et jéjunale, DCYTB, DMT-1 pH-dépendant, ferroportine, héphæstine cuivrée, transferrine hépatique, hémosidérine des macrophages de la moelle, du foie et de la rate, 1 µg/L de ferritine ≈ 10 mg de fer de réserve), § 2.4 et tableau 2 (causes par perte, besoin, absorption ; 50 mL et 25 mg par règle, > 60 mL, hyperménorrhée > 80 mL chez environ 15 %), § 3.6.2 et tableau 7 (ordre d’exploration, sang occulte négatif dans environ la moitié des cancers du côlon), § 4.1 (traitement de la cause), § 4.2.3 (captation des complexes intraveineux par le système réticulo-endothélial du foie et de la rate)",
+    "BSG 2021, Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119 (lu le 15.10.2026) : tableau 1, recommandations 6 à 8, sections Who to investigate (cancer 8–10 %), coeliac disease (3–5 %), dual pathology (1–10 %), renal tract, premenopausal women, GI surgery (environ un quart deux ans après court-circuit gastrique en Y), small bowel",
+    "Clénin, Swiss Med Wkly 2017;147:w14434, figure 1 et texte (blocage macrophagique par l’hepcidine), lu le 15.10.2026"
+   ],
+   "figure": "Figure 7 — schéma de décision original, non anatomique, aucune structure anatomique dessinée ; valeurs tirées de la BSG 2021 et d’Onkopedia 2025."
+  },
+  {
+   "constat": "La nouvelle discipline porte un bouton Pareto, comme les quatre autres.",
+   "action": "Gabarit pareto-d50-s-anat ajouté (data-cover=\"d50-s-anat-body\", section hors data-semiology) ; fraction calculée par le moteur : 104 mots sur 1107, 9 %.",
+   "fichier": "chapters/D50/D50_pop2.html",
+   "ancre": "template pareto-d50-s-anat",
+   "sources": [
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025, avec SGH/SSH et SGMO (texte intégral lu le 15.10.2026) : § 2.3 (absorption duodénale et jéjunale, DCYTB, DMT-1 pH-dépendant, ferroportine, héphæstine cuivrée, transferrine hépatique, hémosidérine des macrophages de la moelle, du foie et de la rate, 1 µg/L de ferritine ≈ 10 mg de fer de réserve), § 2.4 et tableau 2 (causes par perte, besoin, absorption ; 50 mL et 25 mg par règle, > 60 mL, hyperménorrhée > 80 mL chez environ 15 %), § 3.6.2 et tableau 7 (ordre d’exploration, sang occulte négatif dans environ la moitié des cancers du côlon), § 4.1 (traitement de la cause), § 4.2.3 (captation des complexes intraveineux par le système réticulo-endothélial du foie et de la rate)",
+    "BSG 2021, Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119 (lu le 15.10.2026) : tableau 1, recommandations 6 à 8, sections Who to investigate (cancer 8–10 %), coeliac disease (3–5 %), dual pathology (1–10 %), renal tract, premenopausal women, GI surgery (environ un quart deux ans après court-circuit gastrique en Y), small bowel"
+   ]
+  },
+  {
+   "constat": "Glossaire",
+   "action": "Aucune nouvelle abréviation : termes écrits en toutes lettres (anti-inflammatoires non stéroïdiens, inhibiteur de la pompe à protons) ; sigles de références déjà couverts. glossary/d50.py inchangé ; audit d’abréviations {} pour les six fichiers D50.",
+   "fichier": "glossary/d50.py",
+   "ancre": "—",
+   "sources": []
+  }
+ ],
+ "controles_phase2_cinquieme_discipline": {
+  "build_medina.audit (6 fichiers D50)": "{} pour chacun",
+  "python3 test_v7.py --static D50": "OK (mots 45077, fenêtres 96, quiz 9, pareto 11)",
+  "python3 tests/audit_sciences.py --codes D50": "6 disciplines ; d50-s-anat 1066 mots, 1 figure, quatre encadrés ; seule erreur : d50-s-histo « figure sans légende ou nom accessible », faux positif connu de la figure à micrographies réelles (aucun SVG d’enrobage ajouté)",
+  "rendu Chromium S06 (1280 px et 390 px)": "Sémiologie sélectionnée à l’ouverture ; Anatomie s’ouvre au clic ; figure lisible ; Pareto affiché ; aucune erreur JavaScript ; pas de défilement horizontal"
+ },
+ "empreintes_sha256_apres_cinquieme_discipline": {
+  "chapters/D50/D50_c.html": "04d5b9fc232a2421e4c5ce090f55a1960f7c96181da1dd7e61a912fb1bac9406",
+  "chapters/D50/D50_pop2.html": "2ff1e769baaea5ef88e7c2dc1c3b27d26b2e0d5721d282c05d8757da3396d160"
+ }
 }
