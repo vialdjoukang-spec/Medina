@@ -10,6 +10,11 @@ from uuid import uuid4
 ROOT = Path(__file__).resolve().parents[1]
 JOURNAL = 'organisation/governance_events.jsonl'
 ACTORS = {'Codex', 'Claude', 'Vial'}
+# Ordre humain précis : Claude agit sous son propre nom, sans accord Codex.
+CLAUDE_RELEASE_AUTHORITY = {
+    'path': 'docs/collaboration/instructions/PARITE_LEVEE_BLOCAGES_2026-10-15.txt',
+    'sha256': '9e0a763a71778478a806f8b726f354d45047ee0dfe545eba95b3d5a184e7cfa1',
+}
 
 
 class GovernanceError(ValueError):
@@ -46,7 +51,13 @@ def events(raw):
         elif row.get('event') == 'release':
             target = row.get('veto_id')
             require(target in active, 'Veto absent ou déjà levé')
-            require(actor == active[target]['actor'] or actor == 'Vial', 'Une IA ne peut lever le veto de l’autre')
+            owner = active[target]['actor']
+            delegated = actor == 'Claude' and owner == 'Codex'
+            require(actor == owner or actor == 'Vial' or delegated,
+                    'Une IA ne peut lever ce veto sans ordre humain applicable')
+            if delegated:
+                require(row.get('authority') == CLAUDE_RELEASE_AUTHORITY,
+                        'Levée Claude du veto Codex : délégation Vial exacte requise')
             if actor == 'Vial':
                 require(isinstance(row.get('authority'), dict) and row['authority'].get('path') and
                         isinstance(row['authority'].get('sha256'), str) and len(row['authority']['sha256']) == 64,
@@ -67,7 +78,8 @@ def check(before, after, operation='change'):
     _, old_active = events(old_raw)
     data, active = events(new_raw)
     for row in data:
-        if row.get('event') == 'release' and row['actor'] == 'Vial':
+        if row.get('event') == 'release' and (row['actor'] == 'Vial' or
+                row.get('authority') == CLAUDE_RELEASE_AUTHORITY):
             ref = row['authority']
             require(hashlib.sha256(after.read(ref['path'])).hexdigest() == ref['sha256'], 'Instruction humaine différente de son empreinte')
     changed = {p for p in before.entries.keys() | after.entries.keys() if before.entries.get(p) != after.entries.get(p)}
@@ -118,9 +130,12 @@ def main():
             row.update(scope=args.scope, operations=sorted(set(args.operations), key=('change', 'publish').index))
         else:
             row['veto_id'] = args.veto_id
-            if args.actor == 'Vial':
-                require(args.authority is not None, '--authority requis pour une instruction humaine')
-                ref = Path(args.authority)
+            _, active = events(raw)
+            delegated = args.actor == 'Claude' and active.get(args.veto_id, {}).get('actor') == 'Codex'
+            if args.actor == 'Vial' or delegated:
+                authority = args.authority or (CLAUDE_RELEASE_AUTHORITY['path'] if delegated else None)
+                require(authority is not None, '--authority requis pour une instruction humaine')
+                ref = Path(authority)
                 require(not ref.is_absolute() and '..' not in ref.parts, 'Instruction dans le dépôt requise')
                 row['authority'] = {'path': ref.as_posix(), 'sha256': hashlib.sha256((ROOT / ref).read_bytes()).hexdigest()}
         candidate = raw + (json.dumps(row, ensure_ascii=False) + '\n').encode()
