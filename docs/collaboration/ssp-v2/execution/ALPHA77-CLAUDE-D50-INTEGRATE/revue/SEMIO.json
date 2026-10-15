@@ -4,7 +4,7 @@
  "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
  "reviewer": "Agent P (préparateur et contrôleur), session distincte de l’Agent W",
  "date": "2026-10-15",
- "reviewed_commit": "24757d7e2fa06c0891078307ca673629c54af768",
+ "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -19,14 +19,14 @@
  "reviewed_files_sha256": {
   "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
   "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
-  "chapters/D50/D50_c.html": "4db32665a9cb8798635ddbefc4e69d179fb5c187cc85e2c5b9f4e82a46c30ec8",
+  "chapters/D50/D50_c.html": "04d5b9fc232a2421e4c5ce090f55a1960f7c96181da1dd7e61a912fb1bac9406",
   "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
   "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
-  "chapters/D50/D50_pop2.html": "c9c984d2dcb6d536386edd4f790ffc8a23397b293e25fc5f9d0d6be2400c72b7",
+  "chapters/D50/D50_pop2.html": "2ff1e769baaea5ef88e7c2dc1c3b27d26b2e0d5721d282c05d8757da3396d160",
   "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
   "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
  },
- "reviewed_files_note": "Empreintes des sept fichiers de cœur et de l’image ajoutée au commit relu ; le reçu Alpha doit déclarer exactement ces fichiers (files) pour que les empreintes concordent. Base : abd681e5 (identique à 8712c3fe pour ces fichiers).",
+ "reviewed_files_note": "Empreintes recalculées par P au commit b07684fb (sept fichiers de cœur et image du frottis normal, inchangée) ; le reçu Alpha doit déclarer exactement ces fichiers pour que les empreintes concordent.",
  "requirements_reviewed": {
   "fundamental_analytical_semiology": true
  },
@@ -182,20 +182,40 @@
    "evidence": [
     "Comparaison prep → final : différences d’espaces uniquement."
    ]
+  },
+  {
+   "id": "SEM-STRUCT-6",
+   "status": "resolved",
+   "constat": "Six sous-onglets dans Sciences : la Sémiologie fondamentale et analytique, puis cinq disciplines (Physiologie, Biochimie, Hématologie cellulaire, Génétique, Anatomie). La Sémiologie est le premier bouton, avec aria-selected true ; les cinq autres ont aria-selected false. À l’ouverture de pS, seul d50-s-semio est visible ; un clic sur Anatomie l’affiche et masque la Sémiologie. Les neuf sections data-semiology sont présentes, et aucun Pareto (data-cover) ne porte sur une section data-semiology.",
+   "evidence": [
+    "Rendu Chromium 1194 par P (fragment S06 construit dans le scratchpad) à 1280 et 390 px : 6 boutons, ordre et état ci-dessus, débordement horizontal 0, aucune erreur JavaScript ; Pareto Anatomie : « 104 mots sur 1107, soit 9 % ».",
+    "tests/audit_sciences.py --codes D50 : 6 disciplines, 7 figures, d50-s-anat 1066 mots et 1 figure ; seule erreur restante, le faux positif connu de d50-s-histo (micrographies réelles, décision du coordinateur)."
+   ]
   }
  ],
  "evidence": [
   "Neuf sections data-semiology présentes et substantielles (310 à 534 mots chacune).",
   "Passages consultés : voir prep/sources_semiologie.json (10 sources, 25 affirmations).",
   "Rendu Chromium 1194 (P) à 390 px et police 24 px ; rendu W à 1300 et 390 px ; aucune erreur JavaScript.",
-  "tests/audit_sciences.py exécuté : seule erreur = faux positif connu de la figure des micrographies (SEM-03, décision du coordinateur)."
+  "tests/audit_sciences.py exécuté : seule erreur = faux positif connu de la figure des micrographies (SEM-03, décision du coordinateur).",
+  "Revue de la cinquième discipline (Anatomie) au commit b07684fb : python3 test_v7.py --static D50 → OK (45 077 mots, 96 fenêtres, 9 quiz, 11 Pareto) ; build_medina.audit(src, name) → {} pour les six fichiers HTML D50 et pour #d50-s-anat ; empreintes recalculées."
  ],
  "unresolved_blockers": [],
  "limits": [
   "Revue IA, distincte d’une validation médicale humaine.",
   "La présence des balises et des empreintes ne certifie pas l’exactitude médicale.",
   "Indépendance limitée : l’Agent P a rédigé la préparation sémiologique relue ici (constat SEM-INDEP).",
-  "Le frottis normal a été choisi par une IA, sans choix humain (réserve MED-NOTE-3 de revue/MED.json)."
+  "Le frottis normal a été choisi par une IA, sans choix humain (réserve MED-NOTE-3 de revue/MED.json).",
+  "Limite d’indépendance : la revue de la cinquième discipline est conduite par une IA (Agent P), distincte de l’Agent W auteur, mais ce n’est pas une validation médicale humaine."
  ],
- "decision_coordinateur": "SEM-03 réévalué selon la précision du coordinateur (15.10.2026, EXIGENCE_SEMIOLOGIE.md ligne SEM-03) ; faux positif de tests/audit_sciences.py consigné dans integration/controles.json."
+ "decision_coordinateur": "SEM-03 réévalué selon la précision du coordinateur (15.10.2026, EXIGENCE_SEMIOLOGIE.md ligne SEM-03) ; faux positif de tests/audit_sciences.py consigné dans integration/controles.json.",
+ "reviews": [
+  {
+   "id": "REVUE-5e-DISCIPLINE-ANAT",
+   "date": "2026-10-15",
+   "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
+   "objet": "Cinquième discipline « Anatomie » (#d50-s-anat, environ 1066 mots, figure 7) et Pareto pareto-d50-s-anat (D50_pop2.html), ajoutés par W au commit b07684fb",
+   "independance": "Revue IA par l’Agent P, distincte de l’Agent W auteur ; ce n’est pas une validation médicale humaine."
+  }
+ ]
 }

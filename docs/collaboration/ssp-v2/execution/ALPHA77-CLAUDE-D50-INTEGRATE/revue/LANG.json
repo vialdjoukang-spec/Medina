@@ -4,7 +4,7 @@
  "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
  "reviewer": "Agent P (préparateur et contrôleur), session distincte de l’Agent W",
  "date": "2026-10-15",
- "reviewed_commit": "24757d7e2fa06c0891078307ca673629c54af768",
+ "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -19,14 +19,14 @@
  "reviewed_files_sha256": {
   "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
   "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
-  "chapters/D50/D50_c.html": "4db32665a9cb8798635ddbefc4e69d179fb5c187cc85e2c5b9f4e82a46c30ec8",
+  "chapters/D50/D50_c.html": "04d5b9fc232a2421e4c5ce090f55a1960f7c96181da1dd7e61a912fb1bac9406",
   "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
   "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
-  "chapters/D50/D50_pop2.html": "c9c984d2dcb6d536386edd4f790ffc8a23397b293e25fc5f9d0d6be2400c72b7",
+  "chapters/D50/D50_pop2.html": "2ff1e769baaea5ef88e7c2dc1c3b27d26b2e0d5721d282c05d8757da3396d160",
   "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
   "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
  },
- "reviewed_files_note": "Empreintes des sept fichiers de cœur et de l’image ajoutée au commit relu ; le reçu Alpha doit déclarer exactement ces fichiers (files) pour que les empreintes concordent. Base : abd681e5 (identique à 8712c3fe pour ces fichiers).",
+ "reviewed_files_note": "Empreintes recalculées par P au commit b07684fb (sept fichiers de cœur et image du frottis normal, inchangée) ; le reçu Alpha doit déclarer exactement ces fichiers pour que les empreintes concordent.",
  "requirements_reviewed": {
   "fundamental_analytical_semiology": true
  },
@@ -72,15 +72,72 @@
    "evidence": [
     "integration/corrections.json, différés."
    ]
+  },
+  {
+   "id": "LANG-ANAT-1",
+   "status": "open",
+   "gravite": "MINEUR",
+   "bloquant": false,
+   "constat": "« une règle physiologique fait perdre environ 50 mL de sang » : au sens menstruel, « règles » s’emploie au pluriel ; le singulier se lit comme « une norme physiologique ». La même tournure figure dans le Pareto.",
+   "ancre": "chapters/D50/D50_c.html, #d50-s-anat-body, paragraphe sous le tableau des lieux de perte ; chapters/D50/D50_pop2.html, pareto-d50-s-anat, quatrième puce",
+   "correction_proposee": "« des règles physiologiques font perdre environ 50 mL de sang, soit 25 mg de fer, par cycle » ; Pareto : « des règles physiologiques font perdre environ 25 mg de fer par cycle ».",
+   "sources": [
+    "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : § 2.4 (« Bei einer physiologischen Regelblutung gehen etwa 50 ml Blut und somit 25 mg Eisen monatlich verloren »)"
+   ],
+   "fond_inchange": true
+  },
+  {
+   "id": "LANG-ANAT-2",
+   "status": "open",
+   "gravite": "MINEUR",
+   "bloquant": false,
+   "constat": "« Le corps humain ne dispose d’aucun moyen d’excréter activement le fer. Selon Onkopedia 2025, la carence naît donc surtout d’une perte… » : le connecteur « donc » crée une déduction que la source n’énonce pas. L’absence d’excrétion active n’implique pas, à elle seule, que la carence vienne des pertes.",
+   "ancre": "chapters/D50/D50_c.html, #d50-s-anat-body, premier paragraphe",
+   "correction_proposee": "Supprimer « donc » : « Selon Onkopedia 2025, la carence naît surtout d’une perte ou d’une consommation accrue, et plus rarement d’un trouble de l’absorption. »",
+   "sources": [
+    "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : § 2.4 (« Ganz überwiegend entsteht ein Eisenmangel durch einen vermehrten Verlust oder Verbrauch, nur selten durch Resorptionsstörungen. Der menschliche Körper hat keine Möglichkeit, Eisen aktiv auszuscheiden. »)"
+   ],
+   "fond_inchange": true
+  },
+  {
+   "id": "LANG-ANAT-3",
+   "status": "open",
+   "gravite": "MINEUR",
+   "bloquant": false,
+   "constat": "Figure 7 à 390 px : le texte du SVG (font-size 18 dans un viewBox de 520 de large) s’affiche à environ 10 px, petit mais lisible ; aucun débordement horizontal.",
+   "ancre": "chapters/D50/D50_c.html, #d50-s-anat figure svg",
+   "correction_proposee": "Facultatif : porter font-size à 20–21 en réduisant les libellés, ou réduire la largeur du viewBox.",
+   "sources": [],
+   "fond_inchange": true
+  },
+  {
+   "id": "LANG-ANAT-OK",
+   "status": "resolved",
+   "gravite": "—",
+   "constat": "Discipline Anatomie relue en entier : français professionnel ; phrases complètes et non nominales, à l’exception des cellules du tableau ; annonce par une question, développement en trois rubriques, épilogue « À retenir » ; tableau introduit puis commenté ; figure lue dans le texte ; encadrés conformes à docs/STYLE_REDACTION.md. Aucune métaphore ni plaisanterie. Seuls restent les constats LANG-ANAT-1 à 3, non bloquants.",
+   "evidence": [
+    "D50_c.html et D50_pop2.html au commit b07684fb."
+   ]
   }
  ],
  "evidence": [
   "Fichiers finaux lus au commit 24757d7e.",
   "Vérification mécanique des 175 entrées de propositions.json.",
-  "Rendu 390 px avec police 24 px : libellé « Sémiologie fondamentale et analytique » sur une ligne, largeur du document 390 px (captures/P_semiologie_390px_police24.png)."
+  "Rendu 390 px avec police 24 px : libellé « Sémiologie fondamentale et analytique » sur une ligne, largeur du document 390 px (captures/P_semiologie_390px_police24.png).",
+  "Revue de la cinquième discipline (Anatomie) au commit b07684fb : python3 test_v7.py --static D50 → OK (45 077 mots, 96 fenêtres, 9 quiz, 11 Pareto) ; build_medina.audit(src, name) → {} pour les six fichiers HTML D50 et pour #d50-s-anat ; empreintes recalculées."
  ],
  "unresolved_blockers": [],
  "limits": [
-  "Revue IA, distincte d’une validation médicale humaine."
+  "Revue IA, distincte d’une validation médicale humaine.",
+  "Limite d’indépendance : la revue de la cinquième discipline est conduite par une IA (Agent P), distincte de l’Agent W auteur, mais ce n’est pas une validation médicale humaine."
+ ],
+ "reviews": [
+  {
+   "id": "REVUE-5e-DISCIPLINE-ANAT",
+   "date": "2026-10-15",
+   "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
+   "objet": "Cinquième discipline « Anatomie » (#d50-s-anat, environ 1066 mots, figure 7) et Pareto pareto-d50-s-anat (D50_pop2.html), ajoutés par W au commit b07684fb",
+   "independance": "Revue IA par l’Agent P, distincte de l’Agent W auteur ; ce n’est pas une validation médicale humaine."
+  }
  ]
 }
