@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "actor": "Codex",
+  "code": "E10",
+  "phase": "provisional",
+  "medical_human_validation": false,
+  "compared_main": "c405d715e170d82209eab18e908e5dfcd7697c46",
+  "receipt_bound_head": "45af4da6dc21d749cf6e95bd563827830fe9dcd8",
+  "controls": {
+    "mission": {
+      "result": "passed",
+      "output_sha256": "11dc6cacb4043ea81ee67f06ca50ceec7b61fc63d4357189e72813b4973cdd31"
+    },
+    "alpha": {
+      "result": "passed",
+      "output_sha256": "5320cf35faf7346d912aac168f528a7b05ec54fdcdd6940d99e858f27c16421f"
+    },
+    "historical": {
+      "result": "passed",
+      "output_sha256": "b4e7ca2a02d414cb8a0890d53843a6c473ac8d354663b5ea6b017d2b1013b9c8"
+    }
+  },
+  "ci_context_note": "First push from a saved unpublished candidate can have a historical before-tree without its Alpha receipt. PR comparison remains trusted main. This evidence successor keeps every source and receipt unchanged and exercises a normal transition between two receipt-bound trees; no guard bypass."
+}
