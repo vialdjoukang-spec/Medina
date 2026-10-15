@@ -1,0 +1,205 @@
+{
+ "mission": "ALPHA77-CLAUDE-E12-INTEGRATE",
+ "code": "E12",
+ "phase": 2,
+ "role": "Agent W",
+ "date": "2026-10-15",
+ "base_phase2": "2de9d778",
+ "prep_utilise": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/ (READY.json, commit 2de9d778)",
+ "integration": {
+  "semiologie": "Bouton e12-tab-semio en tête de .sci-bar (aria-selected=true), panneau e12-s-semio en tête de .sci-body, non masqué ; e12-s-anat passe à aria-selected=false et hidden. 9 sections data-semiology ; titre exact du contrat.",
+  "bloc_clinique": "div.card[data-semiology-clinical=\"E12\"] en fin de #e12-6 (E12_b.html, panneau pA).",
+  "fenetres": "12 fenêtres e12-sm-* ajoutées à la fin de E12_pop2.html (correctif coordinateur : pas de E12_pop3.html, non admis par core_paths) ; fichier pop3 jamais committé, supprimé.",
+  "figures": "Figures 2 et 3 SVG anatomiques générées (C23, C24) supprimées et remplacées par les originaux de prep/figures.json en variante <img alt> + figcaption avec attribution et licence ; variante <svg><image> non utilisée.",
+  "conformite_disciplines": "Décision coordinateur : chaque discipline garde une figure SVG non anatomique sourcée (ajout des schémas de décision « Figure 2 bis » et « Figure 3 bis », sans structure anatomique) et reçoit les encadrés Science → clinique / examen / traitement et À retenir, rédigés à partir d’énoncés déjà sourcés dans la leçon.",
+  "corrections_W_sur_prep": [
+   "Phrase non sourcée « En Suisse, le tableau se présente d’abord comme un diagnostic d’exclusion… » remplacée (même décision que RM-03)",
+   "Destruction des cellules alpha nuancée (C17) dans e12-sm-3, e12-sm-cetose et la légende de la figure 3",
+   "Seuil de conduite complété : pas de conduite sous 5 mmol/L en risque très élevé (SGED/SGRM 2025, Tabelle 2, relue par W)",
+   "anti-GAD → anti-GAD65 (RM-01)",
+   "Bloc clinique : « impose phosphate… avant de renourrir » reformulé (dosage, thiamine, renutrition progressive, 72 h ; Krutkyte 2022)",
+   "Indicateur de risque > 10 jours / > 15 % ajouté au paragraphe renutrition de #e12-9 pour la cohérence avec e12-sm-1"
+  ]
+ },
+ "controles": {
+  "build_medina.audit(E12)": "{}",
+  "test_v7.py --static E12": "OK (mots 21420, fenêtres 52, quiz 10, pareto 10)",
+  "test_v7.py --url (fragment S05 servi en local, Chromium 1194, 1300 px et 390 px)": "OK",
+  "cles_fenetres": "52 clés data-k, toutes résolues, aucun doublon de data-pop",
+  "construction": "MEDINA_OUT=<scratchpad>/out python3 build_front.py --fragment S05 → fragments/MEDINA_S05_endocrinien-metabolique.html (8 108 469 octets ; compressé 4 558 761) ; rien d’écrit dans le dépôt",
+  "rendu_chromium": {
+   "url": "http://127.0.0.1:18431/MEDINA_S05_endocrinien-metabolique.html#/entry/E12",
+   "checks": {
+    "desktop.cours_affiche": true,
+    "desktop.bloc_clinique_pA": true,
+    "desktop.semio_etat_initial": {
+     "first": "e12-s-semio",
+     "firstId": "e12-tab-semio",
+     "firstSel": "true",
+     "othersSel": [
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+     ],
+     "label": "Sémiologie fondamentale et analytique",
+     "semioVisible": true,
+     "othersHidden": [
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "sections": [
+      "normal",
+      "signs",
+      "mechanisms",
+      "examination",
+      "interpretation",
+      "differentials",
+      "urgency",
+      "limits",
+      "sources"
+     ],
+     "title": "1Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "labelledby": "e12-tab-semio",
+     "scrollW": 1300
+    },
+    "desktop.fenetre_renutrition_visible": true,
+    "desktop.anatomie_figure2": {
+     "semioHidden": true,
+     "anatVisible": true,
+     "imgLoaded": true,
+     "alt": "Tomodensitométrie abdominale en coupe axiale : multiples calcifications blanches alignées le long du corps et de la queue du pancréas, désignées par une flèche rouge.",
+     "svgFig": 1
+    },
+    "desktop.histologie_figure3": {
+     "visible": true,
+     "imgLoaded": true,
+     "alt": "Coupe histologique de pancréas colorée à l’hémalun-éosine : au centre, un îlot de cellules endocrines plus pâles ; autour, des acinus exocrines plus sombres."
+    },
+    "desktop.retour_semio_clavier": true,
+    "desktop.fenetre_depuis_pA": true,
+    "mobile390.cours_affiche": true,
+    "mobile390.bloc_clinique_pA": true,
+    "mobile390.semio_etat_initial": {
+     "first": "e12-s-semio",
+     "firstId": "e12-tab-semio",
+     "firstSel": "true",
+     "othersSel": [
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+     ],
+     "label": "Sémiologie fondamentale et analytique",
+     "semioVisible": true,
+     "othersHidden": [
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "sections": [
+      "normal",
+      "signs",
+      "mechanisms",
+      "examination",
+      "interpretation",
+      "differentials",
+      "urgency",
+      "limits",
+      "sources"
+     ],
+     "title": "1Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "labelledby": "e12-tab-semio",
+     "scrollW": 390
+    },
+    "mobile390.figure2_largeur": {
+     "w": 296,
+     "right": 343,
+     "scrollW": 390
+    }
+   },
+   "errors_js": []
+  },
+  "audit_sciences": {
+   "execution_reelle": "non exécutable pour E12 (absent de la base c50a28a2 et de la liste d’exceptions du script, fichier hors périmètre)",
+   "simulation": "mêmes contrôles par discipline que tests/audit_sciences.py, appliqués au fichier courant",
+   "unites": [
+    {
+     "id": "e12-s-semio",
+     "words": 4454,
+     "figures": 1,
+     "svg_non_anatomiques": 1
+    },
+    {
+     "id": "e12-s-anat",
+     "words": 455,
+     "figures": 2,
+     "svg_non_anatomiques": 1
+    },
+    {
+     "id": "e12-s-histo",
+     "words": 462,
+     "figures": 2,
+     "svg_non_anatomiques": 1
+    },
+    {
+     "id": "e12-s-physio",
+     "words": 313,
+     "figures": 1,
+     "svg_non_anatomiques": 1
+    },
+    {
+     "id": "e12-s-bioch",
+     "words": 341,
+     "figures": 1,
+     "svg_non_anatomiques": 1
+    },
+    {
+     "id": "e12-s-gen",
+     "words": 299,
+     "figures": 1,
+     "svg_non_anatomiques": 1
+    }
+   ],
+   "erreurs": [
+    "e12-s-anat: figure sans légende ou nom accessible (img[alt])",
+    "e12-s-histo: figure sans légende ou nom accessible (img[alt])"
+   ],
+   "faux_positifs_connus": [
+    "e12-s-anat: figure sans légende ou nom accessible (img[alt])",
+    "e12-s-histo: figure sans légende ou nom accessible (img[alt])"
+   ],
+   "decision": "Seules restent les erreurs « figure sans légende ou nom accessible » des deux figures à image réelle (img alt + figcaption) : faux positif connu selon la décision du coordinateur ; aucun SVG factice ajouté. Une mission partagée est demandée pour accepter img[alt]."
+  }
+ },
+ "captures": [
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/01_ouverture_lecon_desktop.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/02_bloc_clinique_pA.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/03_sous_onglet_semiologie_desktop.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/04_fenetre_renutrition_desktop.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/05_figure2_ct_desktop.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/06_figure3_ilot_desktop.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/07_semiologie_mobile390.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/integration/captures/08_figure2_mobile390.png"
+ ],
+ "empreintes": {
+  "chapters/E12/E12_a.html": "30a977fe8648a656a820f43a7dca506f851b0a6425b0730eb68f9f089e5fbc14",
+  "chapters/E12/E12_b.html": "4dea8a189bfef8fb981ad1aab1bc1b274013045bea0ee25a57ebccd85198489d",
+  "chapters/E12/E12_c.html": "70c104565ee74dbecba609b56311260a9e06453948a5e45305da3561c801cb6a",
+  "chapters/E12/E12_d.html": "0fd4f0ca7ce95d803f7036049f0627cad08b35f5e2c2f4041bb63e119a49cb33",
+  "chapters/E12/E12_pop1.html": "ad94097bf50a11dcbf2dd65993bafdd8e48c0930c76121a1e4504b39d76b2c11",
+  "chapters/E12/E12_pop2.html": "bab70f3727d8af58573ac59edcb6e49e18addafa4bb8aaf5ec4e35d1b84b41a7",
+  "glossary/e12.py": "43b1da499f4e69981ec039877f77ae5acfa5e6e4a841de4162f3fc0f7a7240bd",
+  "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg": "40468ceb7da16eda0b28722aa4c78a9930578fc4074a139261b8bb977c30a11d",
+  "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg": "640b682437363580e6942f074846bac0632a8dca29def8add1671960ec1b384c"
+ },
+ "reste": "Phase 3 (reçu Alpha) non commencée, sur instruction du coordinateur.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation médicale humaine n’est revendiquée."
+}
