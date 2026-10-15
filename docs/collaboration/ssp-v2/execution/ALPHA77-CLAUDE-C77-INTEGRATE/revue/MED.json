@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
+ "reviewed_commit": "edde180171b5aabc97f197c42ee61ed7d47e788f",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -22,11 +22,11 @@
  "reviewed_files_sha256": {
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
-  "chapters/C77/C77_b.html": "7654cdad34a41e4af9dd7953db554b40a3ea490ea45523e6025541df34b4b2d6",
-  "chapters/C77/C77_c.html": "ac93f1c5b4d4659367ceaff8e42d4f5e3f91e98bb785f5467b413d1e9ac9c651",
+  "chapters/C77/C77_b.html": "e28c9b0afe18ba077d378dac88af5ca360eb1afc896fc3c49ab58da6a5840c04",
+  "chapters/C77/C77_c.html": "004702f0909935b1d9af4bf97d51997703b1379038d08c58f3e9eda0b7215c92",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
-  "chapters/C77/C77_pop2.html": "618f0d42ee589b925e6927dcd3263f267e12f6f2b4633cc6d1d61f874061abbb",
+  "chapters/C77/C77_pop2.html": "326a38d374993089b00b5861eaa904ec0e69b43c522c4c648feb817157ff3d9e",
   "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
  },
  "requirements_reviewed": {
@@ -129,79 +129,97 @@
   {
    "id": "P-IMM-01",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html #c77-s-immuno-cours, « Le pont vers le traitement du CUP » et encadré « Science → traitement. » ; C77_pop2.html c77-imm-msi",
    "finding": "Statut réglementaire absent du nouvel ajout : l’emploi d’un inhibiteur de point de contrôle dans le CUP (MSI/dMMR ou TMB élevée) y est présenté sans préciser qu’il est hors indication enregistrée. Onkopedia 2025 marque « off-label » le traitement en cas de TMB élevée et de PD-L1 ; l’information professionnelle suisse de Keytruda® (août 2026) limite l’indication MSI-H/dMMR au cancer colorectal, à l’endomètre, à l’estomac, à l’intestin grêle et aux voies biliaires, sans CUP ni indication TMB. Non bloquant : aucune molécule ni dose n’est donnée dans l’ajout, la formulation est « se discute », et l’onglet Pharmacologie déclare déjà l’usage hors indication.",
    "correction_proposee": "Ajouter après « … charge mutationnelle élevée (Onkopedia 2025). » : « Cet emploi est hors indication enregistrée : l’information professionnelle suisse du pembrolizumab réserve l’indication MSI-H/dMMR à certains primitifs connus (côlon-rectum, endomètre, estomac, intestin grêle, voies biliaires). » Mention analogue en fin de fenêtre c77-imm-msi.",
    "source": "Onkopedia 2025 § 5.1.3.1.1 ; FI suisse Keytruda® (AmiKo, août 2026), rubrique Indications",
-   "evidence": "Onkopedia : « bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) » ; FI Keytruda : « Keytruda est indiqué en monothérapie dans le traitement des tumeurs présentant une forte instabilité microsatellitaire (MSI-H) ou une déficience du système de réparation des mésappariements […] dans les cas suivants » (CC ; endomètre, estomac, intestin grêle, voies biliaires)."
+   "evidence": "Onkopedia : « bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) » ; FI Keytruda : « Keytruda est indiqué en monothérapie dans le traitement des tumeurs présentant une forte instabilité microsatellitaire (MSI-H) ou une déficience du système de réparation des mésappariements […] dans les cas suivants » (CC ; endomètre, estomac, intestin grêle, voies biliaires).",
+   "resolution": "Corrigé à edde1801 (C77_c « Le pont vers le traitement », encadré « Science → traitement. », c77-imm-msi, Pareto) : hors indication en Suisse, FI Keytruda® (août 2026) limitée MSI-H/dMMR au CC, à l’endomètre, à l’estomac, à l’intestin grêle et aux voies biliaires, sans indication TMB — vérifié par P dans la FI relue via tools/swissmedic_fi.py (GTIN 7680662310025, « Mise à jour de l’information : août 2026 »). Nuance d’attribution résiduelle à Onkopedia consignée en P-IMM-08."
   },
   {
    "id": "P-IMM-02",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html #c77-s-immuno-cours, 2e paragraphe de « Le normal », phrase « Les cellules dendritiques et les lymphocytes T déjà exposés… »",
    "finding": "Seule affirmation reposant uniquement sur Arasa 2021, lue en résumé seul (signalé). Le résumé attribue la double fonction tolérance/immunité protectrice à la migration des cellules dendritiques seulement ; la migration des lymphocytes T y « contribue à la surveillance immunitaire ». Le texte attribue les deux fonctions aux deux populations. Le texte intégral (PMC8161367) est en accès libre et n’a pas été lu.",
    "correction_proposee": "Remplacer par : « Les cellules dendritiques présentatrices d’antigène et les lymphocytes T déjà exposés à l’antigène rejoignent le ganglion par les lymphatiques afférents. La migration des cellules dendritiques sert à maintenir la tolérance comme à induire une immunité protectrice ; celle des lymphocytes T contribue à la surveillance immunitaire (Arasa et coll. 2021, résumé). » ; ou lire le texte intégral.",
    "source": "Arasa 2021, résumé (PMID 34065513)",
-   "evidence": "Résumé : « The main cell types migrating via this route are antigen-presenting dendritic cells (DCs) and antigen-experienced T cells. While DC migration is important for maintenance of tolerance and for induction of protective immunity, T cell migration through afferent LVs contributes to immune surveillance. »"
+   "evidence": "Résumé : « The main cell types migrating via this route are antigen-presenting dendritic cells (DCs) and antigen-experienced T cells. While DC migration is important for maintenance of tolerance and for induction of protective immunity, T cell migration through afferent LVs contributes to immune surveillance. »",
+   "resolution": "Corrigé à edde1801 : la tolérance/immunité protectrice est attribuée aux cellules dendritiques qui mûrissent après reconnaissance de l’antigène, la surveillance immunitaire aux lymphocytes T ; mention « (résumé) » retirée. Vérifié par P dans le texte intégral PMC8161367 (Europe PMC, sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) : « Upon antigen recognition, DCs mature and migrate through afferent lymphatics to dLNs to induce adaptive immune responses that will lead to protective immunity or maintenance of tolerance » ; « T cells trafficking through afferent LVs contribute to immune surveillance and control of immune responses in peripheral tissues »."
   },
   {
    "id": "P-IMM-03",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html #c77-s-immuno-cours, 3e paragraphe de « La perturbation » ; Figure 6, boîte « Moins de CMH I, plus de PD-L1 »",
    "finding": "Nuance de la source omise : Ji 2023 rapporte aussi, dans un modèle murin de mélanome, une forte surexpression des gènes du CMH I permettant d’échapper aux cellules NK, et conclut que le rôle du CMH dans la métastase ganglionnaire « warrants further research ». Le texte et la figure présentent la baisse du CMH I comme une étape générale.",
    "correction_proposee": "Ajouter : « Le rôle du CMH reste discuté : dans un modèle murin de mélanome, ses gènes de classe I sont au contraire surexprimés, ce qui protège la tumeur des cellules NK (Ji et coll. 2023). » Dans la figure, garder la boîte avec la légende déjà prudente, ou écrire « CMH I souvent réduit ».",
    "source": "Ji 2023, section « Immune evasion in metastatic lymph nodes »",
-   "evidence": "« In a murine melanoma LNM model system, however, strong upregulation of MHC-I-encoding genes was observed […] Therefore, the precise role that MHC proteins play in shaping the process of LNM thus warrants further research. »"
+   "evidence": "« In a murine melanoma LNM model system, however, strong upregulation of MHC-I-encoding genes was observed […] Therefore, the precise role that MHC proteins play in shaping the process of LNM thus warrants further research. »",
+   "resolution": "Corrigé à edde1801 : phrase sur la surexpression du CMH I dans le modèle murin de mélanome (protection contre les cellules NK, rôle à préciser) ajoutée au texte et à la légende ; boîte « CMH I souvent réduit ». Conforme à Ji 2023, section « Immune evasion in metastatic lymph nodes »."
   },
   {
    "id": "P-IMM-04",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_pop2.html c77-imm-msi, 1er paragraphe « quel que soit le primitif »",
    "finding": "Généralisation : Onkopedia écrit « in verschiedensten Primärtumoren » (dans les primitifs les plus divers), non « quel que soit le primitif ».",
    "correction_proposee": "Remplacer « quel que soit le primitif » par « dans des tumeurs primitives très diverses ».",
    "source": "Onkopedia 2025 § 5.1.3.1.1",
-   "evidence": "« Diese Defekte führen zu einer sehr hohen somatischen Mutationslast in verschiedensten Primärtumoren mit sehr guten Ansprechchancen auf eine Therapie mit Immuncheckpointinhibitoren. »"
+   "evidence": "« Diese Defekte führen zu einer sehr hohen somatischen Mutationslast in verschiedensten Primärtumoren mit sehr guten Ansprechchancen auf eine Therapie mit Immuncheckpointinhibitoren. »",
+   "resolution": "Corrigé à edde1801 : « dans des primitifs très variés », conforme à « in verschiedensten Primärtumoren » (Onkopedia 2025 § 5.1.3.1.1)."
   },
   {
    "id": "P-IMM-05",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html encadré « Science → clinique. » et Figure 6, boîte « Ganglion réactionnel, souvent souple et sensible »",
    "finding": "Glissement « infectieux » → « réactionnel » : SMW 2010 écrit que les ganglions souples et sensibles orientent vers une cause infectieuse ; il ne dit pas qu’un ganglion réactionnel (catégorie plus large, incluant les causes non infectieuses) est souvent souple et sensible. Le premier paragraphe de « La perturbation » est exact ; l’encadré et la figure élargissent. Par ailleurs, la conduite de l’encadré « Science → traitement. » (« ne pas étendre un curage sans indication ») s’appuie sur une revue chinoise et des données murines ; elle ne contredit pas Onkopedia (traitement local radical si une seule région ganglionnaire) mais gagnerait à le dire.",
    "correction_proposee": "Écrire « … en réponse à un antigène du territoire drainé ; souple et sensible, il oriente vers une infection » ; boîte : « souple et sensible si infectieux ». Ajouter à « Science → traitement. » : « sans modifier le traitement local radical du CUP limité à une seule région ganglionnaire (Onkopedia 2025) ».",
    "source": "SMW 2010, algorithme clinique ; Onkopedia 2025 § 5.1.1 ; Ji 2023 § Antitumor immunity and LND",
-   "evidence": "SMW 2010 : « Soft and tender nodes favour an infectious cause whereas a hard consistency and fixation to the underlying tissue is suspicious for malignancy. » Onkopedia : « Befall nur einer Lymphknotenregion erfolgt eine lokale radikale Therapie in kurativer Intention »."
+   "evidence": "SMW 2010 : « Soft and tender nodes favour an infectious cause whereas a hard consistency and fixation to the underlying tissue is suspicious for malignancy. » Onkopedia : « Befall nur einer Lymphknotenregion erfolgt eine lokale radikale Therapie in kurativer Intention ».",
+   "resolution": "Corrigé à edde1801 : « Un ganglion souple et sensible oriente vers une infection » (SMW 2010) ; boîte « souple et sensible si infection » ; ajout « Le traitement local radical, à visée curative, d’une atteinte limitée à une seule région ganglionnaire reste inchangé (Onkopedia 2025) », conforme à « Befall nur einer Lymphknotenregion erfolgt eine lokale radikale Therapie in kurativer Intention »."
   },
   {
    "id": "P-IMM-06",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html #c77-s-immuno-cours figure (Figure 6)",
    "finding": "Rendu : à 390 px, le SVG (viewBox 640 × 210) est réduit à 296 px et son texte rendu à 5,5 px, illisible sans zoom par pincement (autorisé par la balise viewport) ; à 1300 px, le libellé « souvent souple et sensible » touche le bord gauche de sa boîte ; les liaisons sont des segments sans pointe de flèche, ce qui n’indique pas le sens causal. Limite partagée par les figures SVG existantes des autres disciplines C77 (même viewBox, même 5,5 px), donc non bloquante pour cet ajout.",
    "correction_proposee": "Disposition verticale (une colonne de quatre boîtes par chaîne, viewBox ≈ 320 de large) ou deux lignes de deux boîtes ; raccourcir la 4e boîte ; ajouter des marqueurs de flèche (marker-end).",
    "source": "Contrôle Chromium P, 15.10.2026",
-   "evidence": "Mesures : svg_box mobile 296 × 97 px, police rendue 5,5 px ; ordinateur 717 × 235 px, police 13,4 px ; fig_overflow 0 ; captures p_mobile_immuno_fig.png, p_desktop_immuno_fig.png (hors dépôt)."
+   "evidence": "Mesures : svg_box mobile 296 × 97 px, police rendue 5,5 px ; ordinateur 717 × 235 px, police 13,4 px ; fig_overflow 0 ; captures p_mobile_immuno_fig.png, p_desktop_immuno_fig.png (hors dépôt).",
+   "resolution": "Corrigé à edde1801 : figure 6 redessinée en deux colonnes verticales (viewBox 360 × 356), 6 flèches marker-end (id c77-imm-fl unique dans chapters/), police 13. Chromium P : 390 px → SVG 296 × 293 px, texte rendu 10,7 px lisible, aucun texte hors de sa boîte (contrôle getBBox), débordement de la figure 0 ; 1300 px → 25,9 px. Schéma de boîtes de texte, non anatomique. Capture p2_mobile_immuno_fig.png (hors dépôt)."
   },
   {
    "id": "P-IMM-07",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "chapters/C77/C77_b.html (« certaines de ces immunothérapies sont hors indication enregistrée ») — hors périmètre de l’ajout",
    "finding": "Observation connexe : d’après la FI suisse de Keytruda® (août 2026), aucune indication ne couvre le CUP ; « certaines » sous-estime le statut hors indication en Suisse. Le constat P-MED-10 (FI du pembrolizumab non lue) est en partie levé par cette lecture.",
    "correction_proposee": "Écrire « ces immunothérapies sont hors indication enregistrée en Suisse dans le CUP (FI Keytruda®, août 2026 ; Onkopedia 2025) ».",
    "source": "FI suisse Keytruda® (AmiKo, août 2026)",
-   "evidence": "Rubrique Indications/Possibilités d’emploi lue ; indications MSI-H/dMMR limitées au CC et aux cancers de l’endomètre, de l’estomac, de l’intestin grêle et des voies biliaires."
+   "evidence": "Rubrique Indications/Possibilités d’emploi lue ; indications MSI-H/dMMR limitées au CC et aux cancers de l’endomètre, de l’estomac, de l’intestin grêle et des voies biliaires.",
+   "resolution": "Corrigé à edde1801 (C77_b) : « cet emploi est hors indication en Suisse : l’information professionnelle de Keytruda® (août 2026) n’inclut pas le CUP … », conforme à la FI relue par P."
+  },
+  {
+   "id": "P-IMM-08",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "etat": "ouvert",
+   "anchor": "C77_b.html (c77-10), C77_c.html « Le pont vers le traitement du CUP », C77_pop2.html c77-imm-msi : « Onkopedia 2025 qualifie ces traitements d’« off-label » »",
+   "finding": "Attribution légèrement trop large : Onkopedia 2025 marque « off-label » le traitement en cas de TMB élevée et de PD-L1, mais pas la ligne « Therapie bei MSI-H oder MMR-Defekt: Therapie mit Pembrolizumab oder Atezolizumab ». Le statut hors indication en Suisse pour l’ensemble reste exact, puisqu’il découle de la FI Keytruda® ; seule l’attribution à Onkopedia est imprécise. Non bloquant.",
+   "correction_proposee": "Remplacer par « Onkopedia 2025 qualifie d’« off-label » le traitement fondé sur une charge mutationnelle élevée ou sur PD-L1 ».",
+   "source": "Onkopedia 2025 § 5.1.3.1.1",
+   "evidence": "« Therapie bei MSI-H oder MMR-Defekt Therapie mit Pembrolizumab oder Atezolizumab bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) bei immunogener Tumorbiologie mit PDL1-Expression: PD1/PDL1-Checkpointinhibitor in der 2. Therapielinie erwägen (off-label). »"
   }
  ],
  "evidence": [
@@ -266,6 +284,14 @@
     "test_v7.py --static C77 : OK (24 012 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
     "Captures P hors dépôt : scratchpad/p_desktop_immuno_fig.png, p_mobile_immuno_fig.png, p_desktop_immuno_pop.png, p_mobile_immuno_pop.png"
    ]
+  },
+  {
+   "ref": "cloture_cinquieme_discipline",
+   "controls": [
+    "Clôture sur edde1801 : build_front.py --fragment S06 hors dépôt (5 980 136 → 3 742 812 octets) ; Chromium 1194, 1300 et 390 px : sémiologie premier bouton sélectionné et visible, six sous-onglets ; Immunologie s’ouvre ; figure 6 lisible à 390 px (10,7 px), 6 flèches, aucun texte hors boîte ; c77-imm-msi contient la FI Keytruda® ; Pareto 52 mots sur 1 332 ; défilement horizontal 0 ; aucune erreur JavaScript ni console.",
+    "test_v7.py --static C77 : OK (24 315 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML.",
+    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010."
+   ]
   }
  ],
  "mention": "Revue IA, distincte d’une validation médicale humaine. Les empreintes et contrôles techniques ne certifient pas l’exactitude médicale.",
@@ -276,14 +302,9 @@
   "perimetre": "Sous-onglet Immunologie c77-s-immuno (C77_c.html), fenêtres c77-imm-msi et pareto-c77-immuno (C77_pop2.html), clé CUPISCO (glossary/c77.py)",
   "bloquants": 0,
   "constats_ouverts_non_bloquants": [
-   "P-IMM-01",
-   "P-IMM-02",
-   "P-IMM-03",
-   "P-IMM-04",
-   "P-IMM-05",
-   "P-IMM-06",
-   "P-IMM-07"
+   "P-IMM-08"
   ],
-  "note": "Revue IA, distincte d’une validation médicale humaine."
+  "note": "Revue IA, distincte d’une validation médicale humaine.",
+  "commit_cloture": "edde180171b5aabc97f197c42ee61ed7d47e788f"
  }
 }

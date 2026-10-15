@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
+ "reviewed_commit": "edde180171b5aabc97f197c42ee61ed7d47e788f",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -22,11 +22,11 @@
  "reviewed_files_sha256": {
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
-  "chapters/C77/C77_b.html": "7654cdad34a41e4af9dd7953db554b40a3ea490ea45523e6025541df34b4b2d6",
-  "chapters/C77/C77_c.html": "ac93f1c5b4d4659367ceaff8e42d4f5e3f91e98bb785f5467b413d1e9ac9c651",
+  "chapters/C77/C77_b.html": "e28c9b0afe18ba077d378dac88af5ca360eb1afc896fc3c49ab58da6a5840c04",
+  "chapters/C77/C77_c.html": "004702f0909935b1d9af4bf97d51997703b1379038d08c58f3e9eda0b7215c92",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
-  "chapters/C77/C77_pop2.html": "618f0d42ee589b925e6927dcd3263f267e12f6f2b4633cc6d1d61f874061abbb",
+  "chapters/C77/C77_pop2.html": "326a38d374993089b00b5861eaa904ec0e69b43c522c4c648feb817157ff3d9e",
   "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
  },
  "requirements_reviewed": {
@@ -77,24 +77,26 @@
   {
    "id": "P-LANG-IMM-01",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html « Le pont vers le traitement du CUP », 2e phrase après le mot vert",
    "finding": "Coordination ambiguë « l’instabilité microsatellitaire ou le déficit MMR et une charge mutationnelle élevée » : le lecteur peut croire que les deux marqueurs doivent coexister.",
    "correction_proposee": "« Dans le CUP, deux marqueurs de sensibilité sont bien établis : l’instabilité microsatellitaire, ou le déficit MMR qui la cause, et une charge mutationnelle élevée, d’au moins 10 mutations par mégabase. »",
    "source": "docs/STYLE_REDACTION.md (le lecteur comprend, il ne devine pas) ; Onkopedia 2025",
-   "evidence": "Onkopedia : « Mikrosatelliteninstabilität bzw. Defizienz der Mismatch-Repair-Enzyme und TMB-high (≥10 Mutationen/Megabase) bei CUP gut belegt » (deux marqueurs distincts)."
+   "evidence": "Onkopedia : « Mikrosatelliteninstabilität bzw. Defizienz der Mismatch-Repair-Enzyme und TMB-high (≥10 Mutationen/Megabase) bei CUP gut belegt » (deux marqueurs distincts).",
+   "resolution": "Corrigé à edde1801 : « une instabilité microsatellitaire (ou un déficit MMR), ou bien une charge mutationnelle élevée » — deux marqueurs distincts, sans ambiguïté ; aussi dans c77-imm-msi et le Pareto."
   },
   {
    "id": "P-LANG-IMM-02",
    "severity": "MINEUR",
-   "status": "non_blocking",
-   "etat": "ouvert",
+   "status": "resolved",
+   "etat": "corrigé",
    "anchor": "C77_c.html, 1er paragraphe « trois faits utiles pour C77 »",
    "finding": "Le code « C77 » sert de désignation dans une phrase de cours ; le reste de la leçon dit « les métastases ganglionnaires » ou « le CUP ».",
    "correction_proposee": "« … trois faits utiles pour comprendre la métastase ganglionnaire : … »",
    "source": "docs/STYLE_REDACTION.md",
-   "evidence": "Phrase relevée telle quelle à bd50fdc8."
+   "evidence": "Phrase relevée telle quelle à bd50fdc8.",
+   "resolution": "Corrigé à edde1801 : « trois faits utiles devant une métastase ganglionnaire »."
   }
  ],
  "evidence": [
@@ -134,6 +136,14 @@
    "items": [
     "Choix éditoriaux différés, non appliqués et non comptés comme constats : espaces insécables globales (ex. coupure « 65 / % » dans c77-imm-msi à 390 px), « fibrillation atriale/auriculaire », groupe LIENS d’E11."
    ]
+  },
+  {
+   "ref": "cloture_cinquieme_discipline",
+   "controls": [
+    "Clôture sur edde1801 : build_front.py --fragment S06 hors dépôt (5 980 136 → 3 742 812 octets) ; Chromium 1194, 1300 et 390 px : sémiologie premier bouton sélectionné et visible, six sous-onglets ; Immunologie s’ouvre ; figure 6 lisible à 390 px (10,7 px), 6 flèches, aucun texte hors boîte ; c77-imm-msi contient la FI Keytruda® ; Pareto 52 mots sur 1 332 ; défilement horizontal 0 ; aucune erreur JavaScript ni console.",
+    "test_v7.py --static C77 : OK (24 315 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML.",
+    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010."
+   ]
   }
  ],
  "mention": "Revue IA, distincte d’une validation médicale humaine.",
@@ -143,10 +153,8 @@
   "agent": "Agent P, relecteur indépendant de l’ajout de W (bd50fdc8)",
   "perimetre": "Sous-onglet Immunologie c77-s-immuno (C77_c.html), fenêtres c77-imm-msi et pareto-c77-immuno (C77_pop2.html), clé CUPISCO (glossary/c77.py)",
   "bloquants": 0,
-  "constats_ouverts_non_bloquants": [
-   "P-LANG-IMM-01",
-   "P-LANG-IMM-02"
-  ],
-  "note": "Revue IA, distincte d’une validation médicale humaine."
+  "constats_ouverts_non_bloquants": [],
+  "note": "Revue IA, distincte d’une validation médicale humaine.",
+  "commit_cloture": "edde180171b5aabc97f197c42ee61ed7d47e788f"
  }
 }
