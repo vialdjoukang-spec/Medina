@@ -1,0 +1,83 @@
+{
+  "snapshot_main": "bc3a56fa8ef7abdc048e9bb0b4e94dd850b1c373",
+  "medical_audit_performed": false,
+  "canonical_static": {
+    "command": "python3 test_v7.py --static E00 E01 E02 E05 E07 E10 E11 E12 E14 E25 E30 E32 E34 E35 E40 E41 E42 E45 E46 E50 E51 E52 E54 E56 E58",
+    "exit_code": 0,
+    "courses": 25
+  },
+  "E59_static": {
+    "command": "python3 test_v7.py --static E59",
+    "exit_code": 0,
+    "words": 24072,
+    "popups": 59,
+    "quizzes": 5,
+    "pareto": 9
+  },
+  "S05_build": {
+    "command": "MEDINA_OUT=/workspace/medina-endocrinologie/dist-qa python3 build_front.py --fragment S05",
+    "exit_code": 0,
+    "bytes": 4447596
+  },
+  "E59_raw_build": {
+    "command": "build_medina.build([(\"E59\", sorted_html_paths)], output)",
+    "audit": {
+      "E59": {}
+    },
+    "bytes": 6745930
+  },
+  "missing_local_images": [],
+  "E59_source_bytes_equal": true,
+  "E59_content_commit": "802543fc99b0f022ca33aa9d815681af2c41822b",
+  "S05_with_E59_overlay_build": {
+    "command": "MEDINA_ROOT=/workspace/medina-endocrinologie-qa/overlay MEDINA_OUT=/workspace/medina-endocrinologie/dist-qa/e59-fragment python3 build_front.py --fragment S05",
+    "exit_code": 0,
+    "bytes": 4521443,
+    "courses": 26,
+    "shared_registers_changed": false
+  },
+  "raw_browser_attempt": {
+    "exit_code": 1,
+    "reason": "Le build brut build_medina.build sans habillage de build_front laisse la navigation latérale intercepter le bouton Navigo. Ce fichier brut ne constitue pas le frontend livré ; la vérification d’E59 porte ensuite sur le frontend S05 complet construit avec métadonnées de test isolées."
+  },
+  "screenshots": [
+    "E59-ouverture-bureau.png",
+    "E59-fenetre-bureau.png"
+  ],
+  "fragment_popup_integrity": {
+    "keys": 1429,
+    "popups": 1429,
+    "missing": 0,
+    "duplicates": 0
+  },
+  "E59_browser": {
+    "command": "MEDINA_CHROMIUM=/usr/bin/chromium python3 test_v7.py --url http://127.0.0.1:8767/e59-fragment/fragments/MEDINA_S05_endocrinien-metabolique.html E59",
+    "exit_code": 0,
+    "result": "OK",
+    "viewports": [
+      [
+        1300,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "scope": "Mots interactifs visibles, quatre onglets, Navigo, police et taille, mode livre, débordement mobile, erreurs JavaScript contrôlées par le test existant."
+  },
+  "canonical_browser_exhaustive_attempt": {
+    "command": "MEDINA_CHROMIUM=/usr/bin/chromium python3 test_v7.py --url http://127.0.0.1:8767/fragments/MEDINA_S05_endocrinien-metabolique.html E00 E01 E02 E05 E07 E10 E11 E12 E14 E25 E30 E32 E34 E35 E40 E41 E42 E45 E46 E50 E51 E52 E54 E56 E58",
+    "exit_code": 143,
+    "result": "Interrompu volontairement après plusieurs minutes de parcours des occurrences répétées ; aucun résultat complet revendiqué. Remplacé par browser-smoke.py sur chaque route, les quatre onglets et une fenêtre par onglet ; intégrité des 1 429 clés vérifiée séparément."
+  },
+  "canonical_browser_bounded": {
+    "ok": true,
+    "route_count": 50,
+    "tab_count": 200,
+    "popup_count": 168,
+    "errors": [],
+    "command": "python3 docs/collaboration/reviews/2026-10-15/ENDOCRINOLOGIE_INVENTAIRE/browser-smoke.py http://127.0.0.1:8767/fragments/MEDINA_S05_endocrinien-metabolique.html",
+    "exit_code": 0
+  }
+}
