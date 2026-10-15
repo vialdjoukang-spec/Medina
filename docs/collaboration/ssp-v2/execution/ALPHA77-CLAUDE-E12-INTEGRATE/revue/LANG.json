@@ -7,7 +7,7 @@
  "reviewer": "Agent P (revue finale indépendante de l’intégration de l’Agent W)",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "79edab1724a313b71dfc5d926e5f391f8c3a0c4f",
+ "reviewed_commit": "de30916580e2c4542bd4f525e7bddc94a4edebce",
  "source_files_sha256": {
   "chapters/E12/E12_a.html": "33c6a06d843eeb764bfa65befe279495c39490a9f2bb5ddd9e119fc13dcf0d15",
   "chapters/E12/E12_b.html": "6cb8173a3d40fb18dd2ddcbbb0adef8ad7af7473a9d406e2cf8c50585ddd19d2",
@@ -18,12 +18,12 @@
   "glossary/e12.py": "e6a7903d60933e99dcf1abc26367b49da5975ab210bebc0acd0c08028d455916"
  },
  "reviewed_files_sha256": {
-  "chapters/E12/E12_a.html": "30a977fe8648a656a820f43a7dca506f851b0a6425b0730eb68f9f089e5fbc14",
-  "chapters/E12/E12_b.html": "4dea8a189bfef8fb981ad1aab1bc1b274013045bea0ee25a57ebccd85198489d",
-  "chapters/E12/E12_c.html": "70c104565ee74dbecba609b56311260a9e06453948a5e45305da3561c801cb6a",
+  "chapters/E12/E12_a.html": "bb4b7f60b49c30357010a9dfdb3cb6dbfaf8c572c076ac782654cd7f0bf3df28",
+  "chapters/E12/E12_b.html": "d16de5cf8c508324725af9db88df70a5eff75fa1195c4463ce444c323a30f749",
+  "chapters/E12/E12_c.html": "1f5f89b7c2f32f687ad79500cd1e119e6fc6ac451194577023efcaf1e61d56d8",
   "chapters/E12/E12_d.html": "0fd4f0ca7ce95d803f7036049f0627cad08b35f5e2c2f4041bb63e119a49cb33",
-  "chapters/E12/E12_pop1.html": "ad94097bf50a11dcbf2dd65993bafdd8e48c0930c76121a1e4504b39d76b2c11",
-  "chapters/E12/E12_pop2.html": "bab70f3727d8af58573ac59edcb6e49e18addafa4bb8aaf5ec4e35d1b84b41a7",
+  "chapters/E12/E12_pop1.html": "60e0f8c6976fef5337c5d110edeb7c5a9db2ea3460f4260317db965d14e63641",
+  "chapters/E12/E12_pop2.html": "9e99acc4ecfff824663bb60aa78abd7508a40db64d932ac81e34eca5e00e1fe7",
   "glossary/e12.py": "43b1da499f4e69981ec039877f77ae5acfa5e6e4a841de4162f3fc0f7a7240bd",
   "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg": "40468ceb7da16eda0b28722aa4c78a9930578fc4074a139261b8bb977c30a11d",
   "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg": "640b682437363580e6942f074846bac0632a8dca29def8add1671960ec1b384c"
@@ -38,31 +38,34 @@
   {
    "id": "LANG-01",
    "severity": "MINEUR",
-   "status": "non_blocking",
+   "status": "resolved",
    "finding": "Une occurrence résiduelle « anti-GAD négatifs » (cas corrigé 3 de la sémiologie) contredit l’harmonisation RM-01 en « anti-GAD65 ».",
    "location": "E12_c #e12-sm-8, quiz",
    "evidence": [
-    "Recherche plein texte : 1 occurrence de « anti-GAD » non suivi de « 65 »."
+    "Recherche plein texte : 1 occurrence de « anti-GAD » non suivi de « 65 ».",
+    "Relecture au commit de30916580e2c4542bd4f525e7bddc94a4edebce : Corrigé : « anti-GAD65 négatifs » dans le cas 3 ; plus aucune occurrence de « anti-GAD » sans 65."
    ]
   },
   {
    "id": "LANG-02",
    "severity": "MINEUR",
-   "status": "non_blocking",
+   "status": "resolved",
    "finding": "Une occurrence de « scanner » subsiste alors que la leçon emploie « CT » partout ailleurs.",
    "location": "E12_c (onglet Examens)",
    "evidence": [
-    "Recherche plein texte : 1 occurrence de « scanner »."
+    "Recherche plein texte : 1 occurrence de « scanner ».",
+    "Relecture au commit de30916580e2c4542bd4f525e7bddc94a4edebce : Corrigé : « scanner » remplacé par « CT » ; 0 occurrence."
    ]
   },
   {
    "id": "LANG-03",
    "severity": "MINEUR",
-   "status": "non_blocking",
+   "status": "resolved",
    "finding": "Formulation ambiguë « atteinte rénale précoce de type 1 » (voir MED-13).",
    "location": "E12_b #e12-10",
    "evidence": [
-    "HaPanEU 7-5.2b."
+    "HaPanEU 7-5.2b.",
+    "Relecture au commit de30916580e2c4542bd4f525e7bddc94a4edebce : Corrigé avec MED-13."
    ]
   },
   {
@@ -117,7 +120,8 @@
   }
  ],
  "evidence": [
-  "Lecture intégrale des fichiers finaux ; recherches plein texte reproductibles (anti-GAD, scanner, mg/dl, post-prandi, gold standard) ; build_medina.audit = {} ; test_v7 --static OK."
+  "Lecture intégrale des fichiers finaux ; recherches plein texte reproductibles (anti-GAD, scanner, mg/dl, post-prandi, gold standard) ; build_medina.audit = {} ; test_v7 --static OK.",
+  "Mise à jour après les corrections de W (commit de30916580e2c4542bd4f525e7bddc94a4edebce) : passages modifiés relus contre Endotext 2024, HaPanEU 2017 et Diabetes Care 2022 ; test_v7 --static E12 OK ; build_medina.audit {}."
  ],
  "mention": "Revue IA, distincte d’une validation médicale humaine."
 }
