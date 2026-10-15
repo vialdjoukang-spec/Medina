@@ -79,5 +79,5 @@ add_if_absent('SafeZone', [('SafeZone', 'nom propre d’un service suisse de con
               'Service de consultation sur les substances, cité pour la prévention.', 'g32-droit')
 add_if_absent('AmiKo', [('AmiKo', 'nom propre d’une application de consultation des notices, non une abréviation')], 'AmiKo',
               'Base de consultation de l’information professionnelle suisse.', 'g32-hydroxo')
-if 'RöFo' not in G:
-    a('RöFo', [('Rö', 'Röntgen-'), ('Fo', 'Fortschritte')], 'Fortschritte auf dem Gebiet der Röntgenstrahlen und der bildgebenden Verfahren', '<p>Revue allemande de radiologie où paraît l’article d’imagerie cité en référence.</p>')
+add_if_absent('RöFo', [('Rö', 'Röntgen-'), ('Fo', 'Fortschritte')], 'Fortschritte auf dem Gebiet der Röntgenstrahlen und der bildgebenden Verfahren',
+              'Revue allemande de radiologie où paraît l’article d’imagerie cité en référence.', 'g32-irm')
