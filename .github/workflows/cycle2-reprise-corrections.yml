@@ -1,0 +1,78 @@
+name: Cycle 2 - corrections bornees des remises
+
+on:
+  push:
+    branches: [codex/cycles-20261014-0800]
+    paths: ['tools/cycle2_reprise_*.py']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cycle2-reprise-corrections
+  cancel-in-progress: false
+
+jobs:
+  corrections:
+    if: github.ref == 'refs/heads/codex/cycles-20261014-0800'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Appliquer seulement les migrations des quatre remises
+        run: |
+          set -euo pipefail
+          for script in tools/cycle2_reprise_*.py; do python "$script"; done
+          python - <<'PY'
+          import subprocess
+          allowed = (
+            'livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45/',
+            'livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/',
+            'livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/',
+            'livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64/',
+            'docs/collaboration/reprises/2026-10-14/')
+          changed = subprocess.check_output(['git','status','--porcelain','-z'],text=True).split('\0')
+          for line in changed:
+              if line and not line[3:].startswith(allowed):
+                  raise SystemExit('Chemin hors périmètre: '+line)
+          PY
+      - name: Executer les tests existants sans modifier leurs seuils
+        run: |
+          set -o pipefail
+          python -m unittest discover -s tests -p 'test_*.py' 2>&1 | tee /tmp/cycle2-tests.log
+      - name: Enregistrer sans injection et sans force-push
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          base=$(git rev-parse HEAD)
+          git add -- 'livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45' 'livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10' 'livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18' 'livraisons/Livraison Codex/H-08-Hématologie/travail/CYCLE_02_D64' 'docs/collaboration/reprises/2026-10-14'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'fix(cycle2): corrections tracees des remises, audits toujours ouverts'
+          python tools/espace.py garde "$base" HEAD
+          git push origin HEAD:refs/heads/codex/cycles-20261014-0800
+          python - "$base" <<'PY'
+          import hashlib,json,pathlib,subprocess,sys,zipfile
+          base=sys.argv[1]
+          paths=subprocess.check_output(['git','diff','--name-only','-z',base,'HEAD']).decode().split('\0')
+          manifest={'commit':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'files':{},'canonical_injection':False,'audit_completed':False}
+          with zipfile.ZipFile('/tmp/cycle2-corrections.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for name in paths:
+                  if name and pathlib.Path(name).is_file():
+                      data=pathlib.Path(name).read_bytes();z.writestr(name,data);manifest['files'][name]=hashlib.sha256(data).hexdigest()
+              z.writestr('CORRECTIONS_MANIFEST.json',json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: medina-cycle2-corrections-${{ github.run_id }}
+          path: |
+            /tmp/cycle2-tests.log
+            /tmp/cycle2-corrections.zip
+          retention-days: 7
+          if-no-files-found: warn

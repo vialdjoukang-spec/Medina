@@ -1,3 +1,5 @@
+## ⚠️ REPRISE : lire d'abord [REPRISE_SESSION.md](REPRISE_SESSION.md) — règle absolue de Vial.
+
 ## PROMPT DE VÉRITÉ — entrée obligatoire de chaque leçon (Vial, 15 octobre 2026)
 
 Tout agent qui ouvre une leçon (recherche ou rédaction, sous-agents et workflows inclus) lit **d'abord** [PROMPT_VERITE.md](docs/collaboration/betta/PROMPT_VERITE.md) : matrice de complétude à 20 rubriques, hiérarchie suisse → européenne, FI Swissmedic, économie de jetons. Porte avant rédaction : `python3 tools/betta_verite.py "<dossier>"` → `VÉRITÉ OK`.

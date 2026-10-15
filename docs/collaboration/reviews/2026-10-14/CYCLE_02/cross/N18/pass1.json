@@ -1,0 +1,1245 @@
+{
+  "code": "N18",
+  "actor": "C02-R-ENDO",
+  "runtime_agent_id": "/root/executeur_cycles_nuit/auteur_e10",
+  "pass": 1,
+  "started_at": "2026-10-14T00:24:38.277345+00:00",
+  "finished_at": "2026-10-14T00:40:42.492724+00:00",
+  "medical_human_validation": false,
+  "entry": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/N18/entree_pass1.json",
+    "sha256": "22fd7f8ac14a0e7e3c99b0d503dcf2e1bbaafae2c32ab41bda9e5a4cef8875f2"
+  },
+  "dimensions": {
+    "redaction": "Les 21 parties, 126 sous-parties, fenêtres et glossaire ont été lus. Le raisonnement suit le cas, précise les unités, distingue données fictives et publiées et expose les limites. Le comparatif échographique normal manque (R03). Le compte de produits et les pièges répétitifs des fiches Pareto demandent une correction (R04/R06).",
+    "medecine": "Les seuils diagnostiques, les conditions de surveillance, la suppléance, l’anémie 2026 et les 16 FI ont été confrontés aux archives. Les calculs sont reproductibles. L’exception de dose de Kerendia avec inhibiteur modéré du CYP3A4 est une omission cliniquement pertinente (R01).",
+    "sources": "Priorité suisse démontrée par SSN 2025, consensus SSED/SSN et 16 FI. KDIGO est distingué d’une directive américaine et les limites des figures étrangères sont annoncées. Les 858 ancres et empreintes ont été vérifiées ; les 30 décisions et les appariements signalés ont été confrontés aux passages archivés. Certains appariements sont inadéquats (R02). Les huit licences exactes sont confirmées. Les 858 entrées ne sont pas déclarées individuellement conformes par héritage de l’auteur.",
+    "frontend": "Exécution Chromium indépendante sur le gel v2 : quatre onglets à 1440 et 390 px, huit images chargées, 105 cibles de fenêtre/Pareto, trois quiz ouvrables avec réponses et quatre sous-onglets de sciences. Aucune erreur JavaScript et aucun débordement du document. Deux captures ont été inspectées. Le rapport local est la preuve de cette exécution, distincte du rapport antérieur du superviseur."
+  },
+  "numerical_checks": [
+    {
+      "id": "NUM-01",
+      "claim": "Chronicité ≥3 mois ; DFGe <60 ou ACR ≥3 mg/mmol",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn2025.pdf — SHA-256 d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf",
+      "section": "Figure 1 et définition",
+      "passage": "Durée, filtration et albuminurie ; la morphologie peut établir la chronicité.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; cas à quatre mois correctement interprété.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn2025.pdf",
+        "sha256": "d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf"
+      }
+    },
+    {
+      "id": "NUM-02",
+      "claim": "G3a 45–59, G3b 30–44, G4 15–29, G5 <15",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Table 2, S137",
+      "passage": "Catégories G1 à G5 ; G1/G2 seuls ne suffisent pas.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; exemple à 43 puis 40 classé G3b.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-03",
+      "claim": "A1 <3, A2 3–30, A3 >30 mg/mmol",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Table 3, S137",
+      "passage": "Bornes conventionnelles, correspondance approximative en mg/g.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; 30 exact reste A2 dans cette table.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-04",
+      "claim": "Variation du DFGe >20 %, baisse sous médicament hémodynamique >30 %",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Practice Points 2.1.3–2.1.4, S196",
+      "passage": "Ces variations excèdent la variabilité attendue et demandent une évaluation.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; aucune interruption automatique déduite.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-05",
+      "claim": "KFRE à cinq ans : 3–5 % ; à deux ans : >40 %",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Practice Points 2.2.1–2.2.4",
+      "passage": "Recours versus préparation à la suppléance ; G3–G5, limites en G1/G2.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; horizons non interchangeables.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-06",
+      "claim": "Anticipation de suppléance : DFGe <15–20 ; dialyse souvent entre 5 et 10",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Practice Points 5.4.1–5.4.3, table 41",
+      "passage": "Décision composite ; préparation distincte du début.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; pas de dialyse automatique à G5.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-07",
+      "claim": "Activité 150 min/semaine, protéines 0,8 g/kg/j, sel <5 g/j",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn2025.pdf — SHA-256 d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf",
+      "section": "Figure 3",
+      "passage": "Mode de vie ; exceptions nutritionnelles complétées par KDIGO.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; 70×0,8 = 56 g/j recalculé.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn2025.pdf",
+        "sha256": "d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf"
+      }
+    },
+    {
+      "id": "NUM-08",
+      "claim": "Ramipril, néphropathie : 1,25 à 5 mg/j, paliers de 2–3 semaines",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ramipril.txt — SHA-256 c0791c917b14e715958886748e22153f0e966c5f4c771f94862629910f3a2c6e",
+      "section": "Posologie, Néphropathie",
+      "passage": "Dose propre à cette indication ; maximum HTA de 10 mg distinct.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ramipril.txt",
+        "sha256": "c0791c917b14e715958886748e22153f0e966c5f4c771f94862629910f3a2c6e"
+      }
+    },
+    {
+      "id": "NUM-09",
+      "claim": "Ramipril, clairance 20–50 : 1,25 à 5 mg/j ; foie : maximum 2,5 mg/j",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ramipril.txt — SHA-256 c0791c917b14e715958886748e22153f0e966c5f4c771f94862629910f3a2c6e",
+      "section": "Instructions posologiques particulières",
+      "passage": "Clairance indexée dans la FI, formule de Cockcroft non indexée.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; discordance d’indexation signalée.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ramipril.txt",
+        "sha256": "c0791c917b14e715958886748e22153f0e966c5f4c771f94862629910f3a2c6e"
+      }
+    },
+    {
+      "id": "NUM-10",
+      "claim": "Contrôle suisse à une semaine après SRA, versus général à 2–4 semaines",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn_diabete2023.pdf — SHA-256 59fcc4145af59a4185f59e9752d827ee7406d77e32d1c27ab2079aa34a94b75b",
+      "section": "Version courte, mai 2024, pages 5 et 7",
+      "passage": "Diabète G3+ ou antécédent d’hyperkaliémie ; potassium après début ou augmentation.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Correct dans A07 et la monographie ; tableau P02 à harmoniser (R05).",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn_diabete2023.pdf",
+        "sha256": "59fcc4145af59a4185f59e9752d827ee7406d77e32d1c27ab2079aa34a94b75b"
+      }
+    },
+    {
+      "id": "NUM-11",
+      "claim": "Forxiga rénal : 10 mg/j ; début à DFGe ≥25",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_forxiga.txt — SHA-256 6329f5d6edab63aef4e901b0d95deb8455b9ad885d1b2f524407f0dbce305418",
+      "section": "Posologie, tableau 1",
+      "passage": "Seuil du produit distinct du seuil de classe SSN de 20 ; arrêt avant dialyse/transplantation.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_forxiga.txt",
+        "sha256": "6329f5d6edab63aef4e901b0d95deb8455b9ad885d1b2f524407f0dbce305418"
+      }
+    },
+    {
+      "id": "NUM-12",
+      "claim": "Forxiga : arrêt au moins trois jours avant chirurgie majeure ou jeûne prolongé",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_forxiga.txt — SHA-256 6329f5d6edab63aef4e901b0d95deb8455b9ad885d1b2f524407f0dbce305418",
+      "section": "Interruption temporaire en cas d’interventions chirurgicales",
+      "passage": "Reprise après stabilité clinique et alimentation orale.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_forxiga.txt",
+        "sha256": "6329f5d6edab63aef4e901b0d95deb8455b9ad885d1b2f524407f0dbce305418"
+      }
+    },
+    {
+      "id": "NUM-13",
+      "claim": "DAPA-CKD : 4304 patients ; HR 0,61 [0,51–0,72] ; NNT 19 à 27 mois",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_forxiga.txt — SHA-256 6329f5d6edab63aef4e901b0d95deb8455b9ad885d1b2f524407f0dbce305418",
+      "section": "Efficacité clinique, Néphropathie chronique, figures 7–10",
+      "passage": "Suivi médian 28,5 mois ; 67,5 % de diabétiques ; 97 % sous SRA.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; résultats d’essai distincts des exemples fictifs.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_forxiga.txt",
+        "sha256": "6329f5d6edab63aef4e901b0d95deb8455b9ad885d1b2f524407f0dbce305418"
+      }
+    },
+    {
+      "id": "NUM-14",
+      "claim": "Kerendia rénal : maximum 20 mg/j ; départ selon DFGe",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_kerendia.txt — SHA-256 e18fb277d88ea3c46606c9e1c5df05ff03ea6fa44e50c01ee10385b75e26d56d",
+      "section": "Posologie, Dose initiale et Traitement associé",
+      "passage": "Un inhibiteur modéré du CYP3A4 déjà reçu impose un départ à 10 mg/j.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Incomplet dans le cours : exception omise (R01).",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_kerendia.txt",
+        "sha256": "e18fb277d88ea3c46606c9e1c5df05ff03ea6fa44e50c01ee10385b75e26d56d"
+      }
+    },
+    {
+      "id": "NUM-15",
+      "claim": "Kerendia : arrêt si K >5,5 ; reprise à 10 mg si K ≤5,0",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_kerendia.txt — SHA-256 e18fb277d88ea3c46606c9e1c5df05ff03ea6fa44e50c01ee10385b75e26d56d",
+      "section": "Tableau 1, néphropathie chronique",
+      "passage": "Contrôle à quatre semaines ; titration si K ≤4,8 et absence de baisse du DFGe >30 %.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme pour l’entretien rénal.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_kerendia.txt",
+        "sha256": "e18fb277d88ea3c46606c9e1c5df05ff03ea6fa44e50c01ee10385b75e26d56d"
+      }
+    },
+    {
+      "id": "NUM-16",
+      "claim": "Lasix comprimé 40 mg : début 20–80 mg/j, entretien 20–40 mg/j",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_lasix.txt — SHA-256 7d32a154c5e4cd6f8db628a9a91c2778be7a1619aeeea0275dd2e32a19987a54",
+      "section": "Posologie, Administration orale",
+      "passage": "Doses exprimées en fractions de comprimé ; plafond de 1500 mg très spécialisé.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; plafond distinct du traitement usuel.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_lasix.txt",
+        "sha256": "7d32a154c5e4cd6f8db628a9a91c2778be7a1619aeeea0275dd2e32a19987a54"
+      }
+    },
+    {
+      "id": "NUM-17",
+      "claim": "Crestor : 5 mg initial ; 40 mg interdit si Cl <60, produit interdit si Cl <30",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_crestor.txt — SHA-256 dc5a1ce1dc0ac6c34972342441d0012e494cfbd39cbf69aa4e4f6cefd295ff5a",
+      "section": "Posologie rénale et Contre-indications",
+      "passage": "Restriction de dose distincte de la contre-indication du produit.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_crestor.txt",
+        "sha256": "dc5a1ce1dc0ac6c34972342441d0012e494cfbd39cbf69aa4e4f6cefd295ff5a"
+      }
+    },
+    {
+      "id": "NUM-18",
+      "claim": "Néphrotrans : 500 mg de bicarbonate et 137 mg de sodium par capsule",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_nephrotrans.txt — SHA-256 7dd79d0476deb131bd8a8ae7cb1e963b0f1b899a554b70df0fac66b9262971c9",
+      "section": "Composition, Posologie, Précautions",
+      "passage": "Quatre capsules : 2000 mg de bicarbonate et 548 mg de sodium ; huit : 4000 et 1096 mg.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Calculs conformes ; contre-indication du régime pauvre en sel conservée.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_nephrotrans.txt",
+        "sha256": "7dd79d0476deb131bd8a8ae7cb1e963b0f1b899a554b70df0fac66b9262971c9"
+      }
+    },
+    {
+      "id": "NUM-19",
+      "claim": "Néphrotrans : contrôle initial toutes les 1–2 semaines",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_nephrotrans.txt — SHA-256 7dd79d0476deb131bd8a8ae7cb1e963b0f1b899a554b70df0fac66b9262971c9",
+      "section": "Mises en garde et précautions",
+      "passage": "pH, bicarbonates et électrolytes, surtout sous fortes doses.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_nephrotrans.txt",
+        "sha256": "7dd79d0476deb131bd8a8ae7cb1e963b0f1b899a554b70df0fac66b9262971c9"
+      }
+    },
+    {
+      "id": "NUM-20",
+      "claim": "Venofer : 20 mg/mL ; 100 mg en ≥15 min, 200 mg en ≥30 min",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_venofer.txt — SHA-256 12c12bc7cee4c310a5f9ac7d8dafd51efbb41adcfdaaf8edcfe9c3e09b634093",
+      "section": "Posologie, Perfusion intraveineuse",
+      "passage": "Dilutions maximales de 100/200 mL de NaCl à 0,9 % ; voie IV stricte.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; maximum de volume et minimum de durée distingués.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_venofer.txt",
+        "sha256": "12c12bc7cee4c310a5f9ac7d8dafd51efbb41adcfdaaf8edcfe9c3e09b634093"
+      }
+    },
+    {
+      "id": "NUM-21",
+      "claim": "Venofer : maximum 500 mg si >70 kg, sinon 7 mg/kg, en ≥3,5 h",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_venofer.txt — SHA-256 12c12bc7cee4c310a5f9ac7d8dafd51efbb41adcfdaaf8edcfe9c3e09b634093",
+      "section": "Dose unique et hebdomadaire maximale tolérée",
+      "passage": "Maximum de perfusion hebdomadaire ; différent de l’injection de 200 mg.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_venofer.txt",
+        "sha256": "12c12bc7cee4c310a5f9ac7d8dafd51efbb41adcfdaaf8edcfe9c3e09b634093"
+      }
+    },
+    {
+      "id": "NUM-22",
+      "claim": "Ganzoni : 70 kg, Hb 10 g/dL, déficit de 1340 mg",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_venofer.txt — SHA-256 12c12bc7cee4c310a5f9ac7d8dafd51efbb41adcfdaaf8edcfe9c3e09b634093",
+      "section": "Calcul de la dose",
+      "passage": "Poids×(15−Hb)×2,4+500 pour poids ≥35 kg.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "70×5×2,4+500 = 1340 ; cible de formule distincte de la cible sous ESA.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_venofer.txt",
+        "sha256": "12c12bc7cee4c310a5f9ac7d8dafd51efbb41adcfdaaf8edcfe9c3e09b634093"
+      }
+    },
+    {
+      "id": "NUM-23",
+      "claim": "Aranesp : 0,45 µg/kg/semaine ; non-HD : 0,75 toutes les deux semaines ou 1,5 mensuel",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_aranesp.txt — SHA-256 94b560cc8d0bd615d0506f70232cf6c252a29d145539941127ca07dbaec27c27",
+      "section": "Adultes insuffisants rénaux, phase correctrice",
+      "passage": "Schémas alternatifs ; contrôle de l’Hb chaque semaine ou toutes les deux semaines.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; unité µg conservée.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_aranesp.txt",
+        "sha256": "94b560cc8d0bd615d0506f70232cf6c252a29d145539941127ca07dbaec27c27"
+      }
+    },
+    {
+      "id": "NUM-24",
+      "claim": "Cible d’Hb sous ESA chez l’adulte : <115 g/L",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo_anemia2026.pdf — SHA-256 08829c8b41d6964ab849a973dadfa69cd778e45e8550c5f2b8a7765302039a14",
+      "section": "Recommendation 3.3.1, S24",
+      "passage": "Cible individualisée sous 11,5 g/dL.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; distinction du plafond FI de 120 g/L explicite.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo_anemia2026.pdf",
+        "sha256": "08829c8b41d6964ab849a973dadfa69cd778e45e8550c5f2b8a7765302039a14"
+      }
+    },
+    {
+      "id": "NUM-25",
+      "claim": "Fer non-HD : ferritine <100 et TSAT <40, ou ferritine 100–<300 et TSAT <25",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo_anemia2026.pdf — SHA-256 08829c8b41d6964ab849a973dadfa69cd778e45e8550c5f2b8a7765302039a14",
+      "section": "Recommendations 2.1–2.4, Practice Point 2.2, S20",
+      "passage": "En HD : ferritine ≤500 et TSAT ≤30 ; suspension habituelle si >700 ou TSAT ≥40.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Tableau n18-fer-criteres conforme ; populations distinguées.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo_anemia2026.pdf",
+        "sha256": "08829c8b41d6964ab849a973dadfa69cd778e45e8550c5f2b8a7765302039a14"
+      }
+    },
+    {
+      "id": "NUM-26",
+      "claim": "Ozempic rénal : 0,25 puis 0,5 puis 1 mg/semaine, paliers d’au moins quatre semaines",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ozempic.txt — SHA-256 95eda191b29eaa0a82b6b866c846dbbffabdc20e0ce1eddaa4207a81820fb29f",
+      "section": "Posologie, maladie rénale chronique avec diabète de type 2",
+      "passage": "Dose d’entretien FLOW de 1 mg ; 2 mg pour la titration glycémique.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; voie SC, absence d’ajustement rénal et arrêt deux mois avant grossesse confirmés.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ozempic.txt",
+        "sha256": "95eda191b29eaa0a82b6b866c846dbbffabdc20e0ce1eddaa4207a81820fb29f"
+      }
+    },
+    {
+      "id": "NUM-27",
+      "claim": "Aldactone : HTA résistante, G ≥45 ; ≤25 mg avec SRA dans le diabète",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn2025.pdf — SHA-256 d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf",
+      "section": "SSN figure 3 ; consensus de mai 2024, page 7",
+      "passage": "Choix suisse distinct des 50–100 mg de la FI pour HTA essentielle.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; contre-indication FI si Cl <30 présente.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn2025.pdf",
+        "sha256": "d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf"
+      }
+    },
+    {
+      "id": "NUM-28",
+      "claim": "Norvasc : 5 puis 10 mg/j, sans ajustement rénal",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_norvasc.txt — SHA-256 0069e8d1ce4b8478cadba402455f4d2b91a2db0fdf831c955fda71f9c50c261d",
+      "section": "Posologie usuelle et fonction rénale",
+      "passage": "Prudence hépatique ; produit non dialysable.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_norvasc.txt",
+        "sha256": "0069e8d1ce4b8478cadba402455f4d2b91a2db0fdf831c955fda71f9c50c261d"
+      }
+    },
+    {
+      "id": "NUM-29",
+      "claim": "Eliquis FANV : 5 mg×2 ; 2,5 mg×2 si deux critères parmi âge ≥80, poids ≤60 et créatinine ≥133",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_eliquis.txt — SHA-256 2952f304032beccd390c93ba67993d80d8b607c4b1d51d4339da7156d32af3d2",
+      "section": "Posologie FANV et fonction rénale",
+      "passage": "Algorithme suisse ; aucune règle étrangère de dose pour Cl 15–29 importée.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; non recommandé si Cl <15 ou dialyse.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_eliquis.txt",
+        "sha256": "2952f304032beccd390c93ba67993d80d8b607c4b1d51d4339da7156d32af3d2"
+      }
+    },
+    {
+      "id": "NUM-30",
+      "claim": "Aspirine Cardio : 100 mg/j ; Cl <30 contre-indiquée",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_aspirin_cardio.txt — SHA-256 2f1b8ced09079edcafbd72621d98c675af955adbc51ff74f4aa7f11e656be027",
+      "section": "Indications cardiovasculaires sans pontage/ACTP ; Contre-indications",
+      "passage": "Dose spécifique ; restriction rénale conservée malgré recommandation de prévention secondaire.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_aspirin_cardio.txt",
+        "sha256": "2f1b8ced09079edcafbd72621d98c675af955adbc51ff74f4aa7f11e656be027"
+      }
+    },
+    {
+      "id": "NUM-31",
+      "claim": "Ezetrol : 10 mg/j ; Repatha : 140 mg toutes les deux semaines ou 420 mg mensuel",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ezetrol.txt — SHA-256 2d8e51f42a90f5dc51e1fdda3ba497a622160ef2f29af73665b37f9fff4a80f5",
+      "section": "FI Ezetrol et FI Repatha, Posologie cardiovasculaire",
+      "passage": "Absence d’ajustement rénal ; restrictions hépatiques et indications conservées.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme ; les deux FI ont été relues.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ezetrol.txt",
+        "sha256": "2d8e51f42a90f5dc51e1fdda3ba497a622160ef2f29af73665b37f9fff4a80f5"
+      }
+    },
+    {
+      "id": "NUM-32",
+      "claim": "Veltassa : au moins 8,4 g/j initial, paliers hebdomadaires de 8,4 g, maximum 25,2 g/j",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_veltassa.txt — SHA-256 42cff616ba7c62a0c1fc0abf0088be4c04f3fa6604cc37e0d3222965f284f08e",
+      "section": "Instauration, Ajustement, Mode d’emploi",
+      "passage": "Espacement de trois heures ; 40+40 mL d’eau ; action retardée.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Conforme à la formulation suisse ; ne remplace pas le traitement urgent.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_veltassa.txt",
+        "sha256": "42cff616ba7c62a0c1fc0abf0088be4c04f3fa6604cc37e0d3222965f284f08e"
+      }
+    },
+    {
+      "id": "NUM-33",
+      "claim": "CKD-EPI 2021 DEKS : homme de 60 ans, créatinine 150 µmol/L",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/deks_egfr.pdf — SHA-256 a9a557c56a9ca430b8059e2d5865f368e734c99a30de7c063442a2f0e912ed6e",
+      "section": "Page 3, équation créatinine 2021",
+      "passage": "142×(150/80)^−1,2×0,9938^60.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Recalcul : 45,9861 ≈46 mL/min/1,73 m² ; constantes SI 62/80 confirmées.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/deks_egfr.pdf",
+        "sha256": "a9a557c56a9ca430b8059e2d5865f368e734c99a30de7c063442a2f0e912ed6e"
+      }
+    },
+    {
+      "id": "NUM-34",
+      "claim": "Désindexation : 46×2/1,73",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Medication management, débit non indexé selon le besoin",
+      "passage": "DFG absolu = DFG indexé×surface/1,73.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "53,179 ≈53,2 mL/min ; distinct de Cockcroft.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-35",
+      "claim": "ACR : 120/8 =15 mg/mmol ; 15/0,113 ≈133 mg/g",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Conversion factors, S127 ; évaluation de l’albuminurie, 1.3",
+      "passage": "Unités cohérentes ; frontières conventionnelles conservées.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Recalcul : 15 et 132,743 ; données fictives, calcul dérivé.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-36",
+      "claim": "KFRE à cinq ans : homme de 60 ans, DFG 40, ACR 300 mg/g",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kfre_europe.pdf — SHA-256 81df50016d29a33b0cca74246cbb818439f52377a33f218ec8f832f5a5d8f5dc",
+      "section": "Table 1, formule pour population non nord-américaine",
+      "passage": "1−0,9365^exp(z) ; coefficients −0,2201, +0,2467, −0,5567 et +0,4510.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "z =0,158041756 ; exp(z) =1,171215 ; risque =7,3961 % ≈7,4 %.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kfre_europe.pdf",
+        "sha256": "81df50016d29a33b0cca74246cbb818439f52377a33f218ec8f832f5a5d8f5dc"
+      }
+    },
+    {
+      "id": "NUM-37",
+      "claim": "Calcium : 10 mg/dL×0,2495",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf — SHA-256 b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+      "section": "Conversion factors, S127",
+      "passage": "Conversion vers mmol/L ; distincte d’une norme individuelle.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "2,495 ≈2,5 ; repère graphique contextualisé.",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      }
+    },
+    {
+      "id": "NUM-38",
+      "claim": "Clairance U×V/P : 10×1/0,1",
+      "source": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/openstax_physio.html — SHA-256 51da23b752bce42074e4d2110b4751517818fd3dc0aeec31cfd223a2e3f583d6",
+      "section": "Exercice n18-s02 ; vérification arithmétique indépendante",
+      "passage": "La source décrit la filtration et les unités de débit. Cette ligne ne prétend pas retrouver la formule U×V/P dans le passage OpenStax consulté.",
+      "passage_type": "Résumé original du passage effectivement consulté, non citation longue",
+      "finding": "Résultat 100 mL/min correct ; preuve primaire de la formule à préciser dans le registre.",
+      "evidence_type": "calcul_derive",
+      "source_proof": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/openstax_physio.html",
+        "sha256": "51da23b752bce42074e4d2110b4751517818fd3dc0aeec31cfd223a2e3f583d6"
+      }
+    }
+  ],
+  "blocking_reserves": [
+    {
+      "id": "R01",
+      "dimension": "medecine",
+      "severity": "majeure",
+      "location": "chapters/N18/N18_pop2.html#n18-kerendia (N18-C0318 à C0324 et C0345) ; répercussion dans N18_d.html#n18-p01-partie-3",
+      "problem": "Le tableau initial prévoit 20 mg/j si DFGe ≥60, mais omet le départ à 10 mg/j chez tout patient recevant déjà un inhibiteur modéré du CYP3A4. Les interactions énumérées ne couvrent pas cette exception de dose.",
+      "source": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_kerendia.txt",
+        "sha256": "e18fb277d88ea3c46606c9e1c5df05ff03ea6fa44e50c01ee10385b75e26d56d"
+      },
+      "section": "FI Kerendia : Posologie > Traitement associé ; Précautions > inhibiteurs modérés/faibles du CYP3A4",
+      "expected_correction": "Ajouter cette exception de dose, des exemples de la FI (érythromycine, vérapamil) et la surveillance du potassium au début ou lors des changements des médicaments concernés. Harmoniser les tableaux, les renvois et la preuve D14.",
+      "blocking": true
+    },
+    {
+      "id": "R02",
+      "dimension": "sources",
+      "severity": "majeure",
+      "location": "preuves/source_ledger.json: N18-C0003, C0201/C0401, C0301, C0701 et duplications concernées",
+      "problem": "Les sources primaires ne conduisent pas toujours au passage pertinent : chronicité vers KDIGO 1.2–1.3 ; bornes A vers les marqueurs ; surveillance de l’Hb sous Aranesp vers KDIGO 3.2–3.9 ; limites de la KFRE vers les marqueurs. Les références complémentaires regroupées ne remplacent pas un appariement pertinent.",
+      "source": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/source_ledger.json",
+        "sha256": "10185fc91b7f4e206333c732e515f925dddf0ccb686b9c48c0f2e2d46767af3e"
+      },
+      "section": "Claims et source_passage_summary; comparer sources originales",
+      "expected_correction": "Réapparier les familles et leurs duplications : chronicité vers KDIGO 1.1.3 ; catégories vers table 3, S137 ; Hb vers FI Aranesp, phase correctrice ; KFRE vers KDIGO 2.2. Revoir le sélecteur sur les 858 entrées, retirer les références sans rôle utile et donner un locateur et un résumé propres. Corriger aussi D30 vers S127.",
+      "blocking": true
+    },
+    {
+      "id": "R03",
+      "dimension": "redaction",
+      "severity": "significative",
+      "location": "chapters/N18/N18_c.html#n18-e02-partie-5; N18_pop1.html#n18-e02-fenetre-2; IMG-N18-E02-1",
+      "problem": "Le cahier demande une morphologie normale et des anomalies, avec orientation et repères. Le visuel pathologique seul est honnêtement légendé, mais le texte adjacent et la fenêtre ne décrivent ni les repères échographiques normaux ni leur comparaison. L’anatomie histologique S01 ne remplace pas cette lecture échographique.",
+      "source": {
+        "path": "organisation/execution-20261014/cahier-cycle2.json",
+        "sha256": "06d0bbda24cbdc7423beb23b17bc5edd9049948dc99cd950d94cfb96b1020d9e"
+      },
+      "section": "Cahier IMG-N18-E02-1 ; Hansen 2016, section 3 « Findings in the Normal Kidney », figure 1, et section 8 « Chronic Kidney Disease », figure 22",
+      "expected_correction": "Enseigner une comparaison échographique sourcée : orientation, cortex, pyramides médullaires, sinus échogène, différenciation, épaisseur et échogénicité selon le contexte. Si le visuel reste pathologique seul, documenter l’adaptation au cahier et enseigner réellement le normal dans le texte adjacent, sans prétendre montrer un panneau normal inexistant.",
+      "blocking": true
+    }
+  ],
+  "nonblocking_reserves": [
+    {
+      "id": "R04",
+      "dimension": "redaction",
+      "severity": "mineure",
+      "location": "N18_d.html#N18-C0281; N18_pop1.html#N18-C0748",
+      "problem": "« Ces huit produits » alors que seize produits sont enseignés.",
+      "expected_correction": "Écrire « ces produits » ou harmoniser le compte."
+    },
+    {
+      "id": "R05",
+      "dimension": "medecine",
+      "severity": "mineure",
+      "location": "N18_d.html#n18-p02-partie-3, ligneRamipril",
+      "problem": "Le tableau autonome indique généralement 2–4 semaines ; le contrôle suisse à une semaine est correctement enseigné ailleurs.",
+      "expected_correction": "Rappeler le contrôle à une semaine en cas de diabète G3+ ou antécédent d’hyperkaliémie, ou faire un renvoi explicite à cette exception."
+    },
+    {
+      "id": "R06",
+      "dimension": "redaction",
+      "severity": "mineure",
+      "location": "N18_pop2.html#pareto-n18-a01 à pareto-n18-p02",
+      "problem": "Vingt-et-un pièges répètent « relire les données et les limites avant de transformer une description en décision », conseil peu spécifique.",
+      "expected_correction": "Remplacer par un piège concret propre à chaque partie ou supprimer la phrase générique."
+    },
+    {
+      "id": "R07",
+      "dimension": "sources",
+      "severity": "mineure",
+      "location": "preuves/images.json IMG-N18-S01-1,S01-2,S04-1",
+      "problem": "Le champ dimensions contient d’anciennes valeurs différentes des dimensions finales width/height : 1379×1946, 4272×2848 et 2258×1425. Les empreintes finales correspondent aux fichiers.",
+      "expected_correction": "Harmoniser dimensions avec les fichiers finaux ou identifier explicitement ces valeurs comme anciennes."
+    }
+  ],
+  "verdict": "corrections_required",
+  "score": 18,
+  "score_scale": 20,
+  "score_justification": "Cours étendu et globalement cohérent. Trois réserves bloquent la clôture : une adaptation de dose, des appariements de sources et un objectif échographique incomplet. La note de 18/20 reflète ces écarts ; elle n’autorise ni publication ni deuxième passe automatique.",
+  "final_files": {
+    "chapters/N18/N18_pop1.html": "48b8e93f07fa02f03e1030282f93fe5dcf709ac54a0b47869539cc42367f2b5c",
+    "chapters/N18/N18_b.html": "15b0b0a2447f77980ceb99c92792d1914e2bde84221b5babf2c2d798570dd670",
+    "chapters/N18/N18_a.html": "d07715dc2d0ec0df8bf274ae47b5b4fcccd2fc31a57431b52f84fee201ed93ff",
+    "chapters/N18/N18_d.html": "4cdf06a6748da176a4b82a2facae9687d6953809ece4f3a74543ce9259d4e9a5",
+    "chapters/N18/N18_pop2.html": "ba7b8f5030a224404aa14da12ca2c1f1873d05858e4f5de7d490c8c79c02983c",
+    "chapters/N18/N18_c.html": "b40b362fc3ed070a5f9319195a730eef1c6069ab0759913661ab33a31b944b2b",
+    "glossary/n18.py": "9bcc44de42dddf94ae1c52e0b7aaf5c0fd19abcd7e08c72ab165d90550cf2969"
+  },
+  "image_files": {
+    "assets/img/cycle2/n18/n18_01.gif": "b17da3f01daadcc230cc265283d3c92a83155bf3a69a86a9ac390e8d825f9431",
+    "assets/img/cycle2/n18/n18_02.gif": "b645908a6e9852b57ae8f6c16dbe98a626ec53a9492334db1baf36b135d2c7b8",
+    "assets/img/cycle2/n18/n18_03.gif": "bf55722e40c924a2b09361f88a8b6a8f2a5812e54d7f93bc1ed8c59de1545450",
+    "assets/img/cycle2/n18/n18_04.gif": "19a6864b336f5b64c8805fc1a60045ad517f75db2f9705d1d44c7d78d6be8a24",
+    "assets/img/cycle2/n18/n18_05.gif": "b644e0c1ac2ba23ec279085dfab2f5f9e92509ef3b64fc00032c24b014bfcb0c",
+    "assets/img/cycle2/n18/n18_06.gif": "f5568dfc807350cac1a6910db5fbf941e7cf62e300f1e22d6cd300cabe9cb05f",
+    "assets/img/cycle2/n18/n18_07.gif": "b9b52f4417bd6a48ca5789225354e861018b92030b94757121e61d1d4f7aeaa6",
+    "assets/img/cycle2/n18/n18_08.gif": "3d6d5f6a248b1f56b474dcafd62cce7cf78ef882f36452ed63cbc59df1c9e181"
+  },
+  "coverage_review": [
+    {
+      "id": "n18-a01",
+      "subparts_read": [
+        "n18-a01-partie-1",
+        "n18-a01-partie-2",
+        "n18-a01-partie-3",
+        "n18-a01-partie-4",
+        "n18-a01-partie-5",
+        "n18-a01-partie-6"
+      ],
+      "windows_read": [
+        "n18-a01-fenetre-1",
+        "n18-a01-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a01",
+      "observation": "Cas fictif, durée de quatre mois et conclusions G3bA3 cohérentes."
+    },
+    {
+      "id": "n18-a02",
+      "subparts_read": [
+        "n18-a02-partie-1",
+        "n18-a02-partie-2",
+        "n18-a02-partie-3",
+        "n18-a02-partie-4",
+        "n18-a02-partie-5",
+        "n18-a02-partie-6"
+      ],
+      "windows_read": [
+        "n18-a02-fenetre-1",
+        "n18-a02-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a02",
+      "observation": "Chronicité, atteinte aiguë sur chronique et preuve morphologique distinguées ; aucune attente imposée en urgence."
+    },
+    {
+      "id": "n18-a03",
+      "subparts_read": [
+        "n18-a03-partie-1",
+        "n18-a03-partie-2",
+        "n18-a03-partie-3",
+        "n18-a03-partie-4",
+        "n18-a03-partie-5",
+        "n18-a03-partie-6"
+      ],
+      "windows_read": [
+        "n18-a03-fenetre-1",
+        "n18-a03-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a03",
+      "observation": "Catégories G/A et codes CIM distincts ; frontière 30 en A2 et limites G1/G2 conservées."
+    },
+    {
+      "id": "n18-a04",
+      "subparts_read": [
+        "n18-a04-partie-1",
+        "n18-a04-partie-2",
+        "n18-a04-partie-3",
+        "n18-a04-partie-4",
+        "n18-a04-partie-5",
+        "n18-a04-partie-6"
+      ],
+      "windows_read": [
+        "n18-a04-fenetre-1",
+        "n18-a04-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a04",
+      "observation": "Prévalence suisse présentée comme ordre de grandeur ; cause, association et trajectoire distinguées."
+    },
+    {
+      "id": "n18-a05",
+      "subparts_read": [
+        "n18-a05-partie-1",
+        "n18-a05-partie-2",
+        "n18-a05-partie-3",
+        "n18-a05-partie-4",
+        "n18-a05-partie-5",
+        "n18-a05-partie-6"
+      ],
+      "windows_read": [
+        "n18-a05-fenetre-1",
+        "n18-a05-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a05",
+      "observation": "Facteurs de risque suisses, médicaments, symptômes et critères de gravité couverts."
+    },
+    {
+      "id": "n18-a06",
+      "subparts_read": [
+        "n18-a06-partie-1",
+        "n18-a06-partie-2",
+        "n18-a06-partie-3",
+        "n18-a06-partie-4",
+        "n18-a06-partie-5",
+        "n18-a06-partie-6"
+      ],
+      "windows_read": [
+        "n18-a06-fenetre-1",
+        "n18-a06-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a06",
+      "observation": "Bilan causal, sédiment, morphologie, biopsie/génétique et dix critères suisses de recours présents ; portée australienne de la figure explicite."
+    },
+    {
+      "id": "n18-a07",
+      "subparts_read": [
+        "n18-a07-partie-1",
+        "n18-a07-partie-2",
+        "n18-a07-partie-3",
+        "n18-a07-partie-4",
+        "n18-a07-partie-5",
+        "n18-a07-partie-6"
+      ],
+      "windows_read": [
+        "n18-a07-fenetre-1",
+        "n18-a07-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a07",
+      "observation": "Nutrition et traitements contextualisés ; classe SGLT2 distincte de FI Forxiga ; contrôle suisse précoce expliqué."
+    },
+    {
+      "id": "n18-a08",
+      "subparts_read": [
+        "n18-a08-partie-1",
+        "n18-a08-partie-2",
+        "n18-a08-partie-3",
+        "n18-a08-partie-4",
+        "n18-a08-partie-5",
+        "n18-a08-partie-6"
+      ],
+      "windows_read": [
+        "n18-a08-fenetre-1",
+        "n18-a08-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a08",
+      "observation": "Complications hydrosodées, potassium, acidose, os, anémie et risque cardiovasculaire couverts ; divergence anémie 2025/2026 expliquée."
+    },
+    {
+      "id": "n18-a09",
+      "subparts_read": [
+        "n18-a09-partie-1",
+        "n18-a09-partie-2",
+        "n18-a09-partie-3",
+        "n18-a09-partie-4",
+        "n18-a09-partie-5",
+        "n18-a09-partie-6"
+      ],
+      "windows_read": [
+        "n18-a09-fenetre-1",
+        "n18-a09-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a09",
+      "observation": "G5 ne déclenche pas automatiquement la dialyse ; préparation, début et traitement conservateur actif distingués."
+    },
+    {
+      "id": "n18-a10",
+      "subparts_read": [
+        "n18-a10-partie-1",
+        "n18-a10-partie-2",
+        "n18-a10-partie-3",
+        "n18-a10-partie-4",
+        "n18-a10-partie-5",
+        "n18-a10-partie-6"
+      ],
+      "windows_read": [
+        "n18-a10-fenetre-1",
+        "n18-a10-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a10",
+      "observation": "Atteinte unilatérale, fonction globale et sous-codes N18.80/.89/.9 traités sans inventer un stade."
+    },
+    {
+      "id": "n18-a11",
+      "subparts_read": [
+        "n18-a11-partie-1",
+        "n18-a11-partie-2",
+        "n18-a11-partie-3",
+        "n18-a11-partie-4",
+        "n18-a11-partie-5",
+        "n18-a11-partie-6"
+      ],
+      "windows_read": [
+        "n18-a11-fenetre-1",
+        "n18-a11-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a11",
+      "observation": "Suivi, particularités de population, médicaments, désindexation et contraste contextualisés."
+    },
+    {
+      "id": "n18-a12",
+      "subparts_read": [
+        "n18-a12-partie-1",
+        "n18-a12-partie-2",
+        "n18-a12-partie-3",
+        "n18-a12-partie-4",
+        "n18-a12-partie-5",
+        "n18-a12-partie-6"
+      ],
+      "windows_read": [
+        "n18-a12-fenetre-1",
+        "n18-a12-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-a12",
+      "observation": "Synthèse du cas appuyée sur les données ; variations du DFG et doublement de l’ACR distingués."
+    },
+    {
+      "id": "n18-e01",
+      "subparts_read": [
+        "n18-e01-partie-1",
+        "n18-e01-partie-2",
+        "n18-e01-partie-3",
+        "n18-e01-partie-4",
+        "n18-e01-partie-5",
+        "n18-e01-partie-6"
+      ],
+      "windows_read": [
+        "n18-e01-fenetre-1",
+        "n18-e01-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-e01",
+      "observation": "CKD-EPI 2021 avec constantes SI, limites des marqueurs et mesure par iohexol ; calcul 46 confirmé."
+    },
+    {
+      "id": "n18-e02",
+      "subparts_read": [
+        "n18-e02-partie-1",
+        "n18-e02-partie-2",
+        "n18-e02-partie-3",
+        "n18-e02-partie-4",
+        "n18-e02-partie-5",
+        "n18-e02-partie-6"
+      ],
+      "windows_read": [
+        "n18-e02-fenetre-1",
+        "n18-e02-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-e02",
+      "observation": "Calcul de l’ACR et confirmation corrects ; comparaison échographique normale insuffisante (R03)."
+    },
+    {
+      "id": "n18-e03",
+      "subparts_read": [
+        "n18-e03-partie-1",
+        "n18-e03-partie-2",
+        "n18-e03-partie-3",
+        "n18-e03-partie-4",
+        "n18-e03-partie-5",
+        "n18-e03-partie-6"
+      ],
+      "windows_read": [
+        "n18-e03-fenetre-1",
+        "n18-e03-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-e03",
+      "observation": "Normes HUG qualifiées d’illustratives ; KFRE 7,4 % et trois quiz corrects, horizons distingués."
+    },
+    {
+      "id": "n18-s01",
+      "subparts_read": [
+        "n18-s01-partie-1",
+        "n18-s01-partie-2",
+        "n18-s01-partie-3",
+        "n18-s01-partie-4",
+        "n18-s01-partie-5",
+        "n18-s01-partie-6"
+      ],
+      "windows_read": [
+        "n18-s01-fenetre-1",
+        "n18-s01-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-s01",
+      "observation": "Anatomie et barrière normale expliquées avant l’histologie PAS ; lésion segmentaire sans causalité inventée."
+    },
+    {
+      "id": "n18-s02",
+      "subparts_read": [
+        "n18-s02-partie-1",
+        "n18-s02-partie-2",
+        "n18-s02-partie-3",
+        "n18-s02-partie-4",
+        "n18-s02-partie-5",
+        "n18-s02-partie-6"
+      ],
+      "windows_read": [
+        "n18-s02-fenetre-1",
+        "n18-s02-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-s02",
+      "observation": "Filtration, réabsorption, sécrétion, clairance et diurèse distinguées ; calcul arithmétique 100 mL/min correct."
+    },
+    {
+      "id": "n18-s03",
+      "subparts_read": [
+        "n18-s03-partie-1",
+        "n18-s03-partie-2",
+        "n18-s03-partie-3",
+        "n18-s03-partie-4",
+        "n18-s03-partie-5",
+        "n18-s03-partie-6"
+      ],
+      "windows_read": [
+        "n18-s03-fenetre-1",
+        "n18-s03-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-s03",
+      "observation": "Tampon bicarbonate, excrétion acide, régulation minérale et apport sodé explicités ; portée de la figure calcique limitée."
+    },
+    {
+      "id": "n18-s04",
+      "subparts_read": [
+        "n18-s04-partie-1",
+        "n18-s04-partie-2",
+        "n18-s04-partie-3",
+        "n18-s04-partie-4",
+        "n18-s04-partie-5",
+        "n18-s04-partie-6"
+      ],
+      "windows_read": [
+        "n18-s04-fenetre-1",
+        "n18-s04-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-s04",
+      "observation": "EPO, vitamine D, SRAA et ADH distingués ; fibrose et TGF-β retrouvés dans HUG."
+    },
+    {
+      "id": "n18-p01",
+      "subparts_read": [
+        "n18-p01-partie-1",
+        "n18-p01-partie-2",
+        "n18-p01-partie-3",
+        "n18-p01-partie-4",
+        "n18-p01-partie-5",
+        "n18-p01-partie-6"
+      ],
+      "windows_read": [
+        "n18-p01-fenetre-1",
+        "n18-p01-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-p01",
+      "observation": "Seize FI de produits exacts, avec indications et doses ; exception Kerendia omise (R01) et ancien compte huit (R04)."
+    },
+    {
+      "id": "n18-p02",
+      "subparts_read": [
+        "n18-p02-partie-1",
+        "n18-p02-partie-2",
+        "n18-p02-partie-3",
+        "n18-p02-partie-4",
+        "n18-p02-partie-5",
+        "n18-p02-partie-6"
+      ],
+      "windows_read": [
+        "n18-p02-fenetre-1",
+        "n18-p02-fenetre-2"
+      ],
+      "pareto_read": "pareto-n18-p02",
+      "observation": "Interactions et surveillance organisées ; tableau Ramipril à harmoniser (R05) et appariement Hb à corriger (R02)."
+    }
+  ],
+  "consulted_inventory": {
+    "course": [
+      "Six fichiers HTML intégraux",
+      "Glossaire de 23 entrées",
+      "Tableaux, chiffres, fenêtres, fiches Pareto et quiz"
+    ],
+    "primary_documents": [
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/deks_egfr.pdf",
+        "sha256": "a9a557c56a9ca430b8059e2d5865f368e734c99a30de7c063442a2f0e912ed6e"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_aldactone.txt",
+        "sha256": "78638188974ab912b695e42bc5772ef9f9ab3b7ac4e0c818d2d195b7e6c489aa"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_aranesp.txt",
+        "sha256": "94b560cc8d0bd615d0506f70232cf6c252a29d145539941127ca07dbaec27c27"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_aspirin_cardio.txt",
+        "sha256": "2f1b8ced09079edcafbd72621d98c675af955adbc51ff74f4aa7f11e656be027"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_crestor.txt",
+        "sha256": "dc5a1ce1dc0ac6c34972342441d0012e494cfbd39cbf69aa4e4f6cefd295ff5a"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_eliquis.txt",
+        "sha256": "2952f304032beccd390c93ba67993d80d8b607c4b1d51d4339da7156d32af3d2"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ezetrol.txt",
+        "sha256": "2d8e51f42a90f5dc51e1fdda3ba497a622160ef2f29af73665b37f9fff4a80f5"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_forxiga.txt",
+        "sha256": "6329f5d6edab63aef4e901b0d95deb8455b9ad885d1b2f524407f0dbce305418"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_kerendia.txt",
+        "sha256": "e18fb277d88ea3c46606c9e1c5df05ff03ea6fa44e50c01ee10385b75e26d56d"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_lasix.txt",
+        "sha256": "7d32a154c5e4cd6f8db628a9a91c2778be7a1619aeeea0275dd2e32a19987a54"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_nephrotrans.txt",
+        "sha256": "7dd79d0476deb131bd8a8ae7cb1e963b0f1b899a554b70df0fac66b9262971c9"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_norvasc.txt",
+        "sha256": "0069e8d1ce4b8478cadba402455f4d2b91a2db0fdf831c955fda71f9c50c261d"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ozempic.txt",
+        "sha256": "95eda191b29eaa0a82b6b866c846dbbffabdc20e0ce1eddaa4207a81820fb29f"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_ramipril.txt",
+        "sha256": "c0791c917b14e715958886748e22153f0e966c5f4c771f94862629910f3a2c6e"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_repatha.txt",
+        "sha256": "af7655eca14a69b717b751f558628f58c384d59d701345d06c0f5873645d0a78"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_veltassa.txt",
+        "sha256": "42cff616ba7c62a0c1fc0abf0088be4c04f3fa6604cc37e0d3222965f284f08e"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/fi_venofer.txt",
+        "sha256": "12c12bc7cee4c310a5f9ac7d8dafd51efbb41adcfdaaf8edcfe9c3e09b634093"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/hug_mrc.pdf",
+        "sha256": "02284c48423a45c8d5d70040d1da14997ca80d28d373c14b885f32fefe611c96"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/hug_normes.html",
+        "sha256": "0dd8e12dff6062ca149f2f972e7396f90147c676295ffba1b9605ebe2679c6c1"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo2024.pdf",
+        "sha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kdigo_anemia2026.pdf",
+        "sha256": "08829c8b41d6964ab849a973dadfa69cd778e45e8550c5f2b8a7765302039a14"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/kfre_europe.pdf",
+        "sha256": "81df50016d29a33b0cca74246cbb818439f52377a33f218ec8f832f5a5d8f5dc"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/openstax_acid.html",
+        "sha256": "ae8bcaaf33ed077ca5823da97563c977d8ba8a3cb669211786bf32feeaab7c38"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/openstax_endocrine.html",
+        "sha256": "5be3d8d9026f6efcaf541f05bc03cf04249d67bdda9e66ce68eb6383b8eca41d"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/openstax_nephron.html",
+        "sha256": "7969ccf7589702209fc2442e4fdd5e2ba85ccf893d8bece266dce3902f6481f8"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/openstax_physio.html",
+        "sha256": "51da23b752bce42074e4d2110b4751517818fd3dc0aeec31cfd223a2e3f583d6"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/openstax_transport.html",
+        "sha256": "c6a9c64d6fda59166d83450f1d0a09a6391b0a74dbd6a632300403afa0110fa6"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/renal_ultrasound.html",
+        "sha256": "2ea763149ace2f9c941e32c38ab349f15bce16131bf5136c6d65da22e129792b"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn2025.pdf",
+        "sha256": "d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf"
+      },
+      {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/ssn_diabete2023.pdf",
+        "sha256": "59fcc4145af59a4185f59e9752d827ee7406d77e32d1c27ab2079aa34a94b75b"
+      }
+    ],
+    "method": "Cours entier lu. Les répétitions des fenêtres ont été comparées au corps ; les passages distincts ont été lus dans pop1_unique_a_lire.txt. Posologies et contre-indications des 16 FI lues ; mises en garde, grossesse et interactions examinées selon les assertions du cours. Aucune revendication de lecture intégrale de toutes les rubriques pharmacocinétiques. Registre : contrôle des 858 ancres/empreintes, matrice de 30 décisions et contrôles sémantiques explicités, sans attestation globale héritée de l’auteur."
+  },
+  "images_review": [
+    {
+      "id": "IMG-N18-A03-1",
+      "path": "assets/img/cycle2/n18/n18_01.gif",
+      "sha256": "b17da3f01daadcc230cc265283d3c92a83155bf3a69a86a9ac390e8d825f9431",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/screen_figure.html",
+        "sha256": "e5fdec64587c50b7422272dce85505f2298cfc21082d37e7467814c002824dbf"
+      },
+      "license": "CC BY 4.0",
+      "finding": "Provenance, attribution, licence, légende et portée contrôlées ; aucune image générée."
+    },
+    {
+      "id": "IMG-N18-A06-1",
+      "path": "assets/img/cycle2/n18/n18_02.gif",
+      "sha256": "b645908a6e9852b57ae8f6c16dbe98a626ec53a9492334db1baf36b135d2c7b8",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/europe_primarycare.xml",
+        "sha256": "f52e6a228a15b6bf066b0feff49bb389914d7b942eac0ee8a288dd873d44b09b"
+      },
+      "license": "CC BY 4.0",
+      "finding": "Provenance, attribution, licence, légende et portée contrôlées ; aucune image générée."
+    },
+    {
+      "id": "IMG-N18-E02-1",
+      "path": "assets/img/cycle2/n18/n18_03.gif",
+      "sha256": "bf55722e40c924a2b09361f88a8b6a8f2a5812e54d7f93bc1ed8c59de1545450",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/renal_ultrasound.html",
+        "sha256": "2ea763149ace2f9c941e32c38ab349f15bce16131bf5136c6d65da22e129792b"
+      },
+      "license": "CC BY 4.0",
+      "finding": "Comparaison normale pédagogique insuffisante : R03."
+    },
+    {
+      "id": "IMG-N18-S01-1",
+      "path": "assets/img/cycle2/n18/n18_04.gif",
+      "sha256": "19a6864b336f5b64c8805fc1a60045ad517f75db2f9705d1d44c7d78d6be8a24",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/commons_04.html",
+        "sha256": "221692061df6288668d423a01f76528539850cee4d87d63709a62001999c5282"
+      },
+      "license": "CC BY 3.0",
+      "finding": "Provenance, attribution, licence, légende et portée contrôlées ; aucune image générée."
+    },
+    {
+      "id": "IMG-N18-S01-2",
+      "path": "assets/img/cycle2/n18/n18_05.gif",
+      "sha256": "b644e0c1ac2ba23ec279085dfab2f5f9e92509ef3b64fc00032c24b014bfcb0c",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/commons_05.html",
+        "sha256": "a818ce302d93cc05696c0c23e5719fbf089bd3d558ea80435c116e77b7c91731"
+      },
+      "license": "CC BY-SA 3.0",
+      "finding": "Provenance, attribution, licence, légende et portée contrôlées ; aucune image générée."
+    },
+    {
+      "id": "IMG-N18-S02-1",
+      "path": "assets/img/cycle2/n18/n18_06.gif",
+      "sha256": "f5568dfc807350cac1a6910db5fbf941e7cf62e300f1e22d6cd300cabe9cb05f",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/commons_06.html",
+        "sha256": "4b8ec92b1c8eb62dc47d7e9310eb1e1c7cfcc683fc35db5bbdb32cc232b68e3d"
+      },
+      "license": "CC BY 3.0",
+      "finding": "Provenance, attribution, licence, légende et portée contrôlées ; aucune image générée."
+    },
+    {
+      "id": "IMG-N18-S03-1",
+      "path": "assets/img/cycle2/n18/n18_07.gif",
+      "sha256": "b9b52f4417bd6a48ca5789225354e861018b92030b94757121e61d1d4f7aeaa6",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/commons_07.html",
+        "sha256": "a28aa578f73f0dc22a7995028ac3c4f79d064b3d2b84b602db978bfdf94051f9"
+      },
+      "license": "CC BY 3.0",
+      "finding": "Provenance, attribution, licence, légende et portée contrôlées ; aucune image générée."
+    },
+    {
+      "id": "IMG-N18-S04-1",
+      "path": "assets/img/cycle2/n18/n18_08.gif",
+      "sha256": "3d6d5f6a248b1f56b474dcafd62cce7cf78ef882f36452ed63cbc59df1c9e181",
+      "visually_inspected": true,
+      "license_verified_against": {
+        "path": "livraisons/Livraison Codex/N-07-Néphrologie/travail/CYCLE_02_N18/preuves/commons_08.html",
+        "sha256": "cf86308e46c42bc93c7591fb9e0f046539d43ba05374f683061ef15c9466b65b"
+      },
+      "license": "CC BY 3.0",
+      "finding": "Provenance, attribution, licence, légende et portée contrôlées ; aucune image générée."
+    }
+  ],
+  "preview": {
+    "path": "/workspace/work/medina-previews/N18-author-frozen-v2/preview.json",
+    "html_sha256": "fa84e6548ec1817fc8727ba2547c02452f166bf0a962bb081824d522c18bfa46",
+    "source_files_match": true,
+    "independent_ui_report": {
+      "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/N18/ui-pass1/N18/N18-author-frozen-v2/report.json",
+      "sha256": "ecd6383b090b96ba1460f1aa3c2b3f71e0776784ca34fcdbacf7bf5d4b3d4ef7"
+    }
+  },
+  "controls": {
+    "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02/cross/N18/controle_independant.json",
+    "sha256": "dc8d26953f40b7b4388b966cb7a740d5059f7308491aec27437ac1f05dde74ff"
+  },
+  "next_step": "Attendre les corrections de l’auteur et le signal du coordinateur avant la passe 2. Aucun fichier auteur modifié.",
+  "prompt_truth_exit": {
+    "actor": "C02-R-ENDO",
+    "at": "2026-10-14T00:40:42.492724+00:00",
+    "prompt_files": {
+      "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+      "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+      "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+      "docs/collaboration/instructions/CHAINE_CYCLES_2026-10-14_EXECUTEUR.md": "007eb09b22aae65ee5110c593f1ede6895bcf434b948b9c98703c0315dfbf1af",
+      "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+    },
+    "verdict": "Revue sincère terminée avec réserves ; aucune validation médicale humaine.",
+    "checks": {
+      "autorisation": "Mission croisée N18 donnée par le coordinateur, après gel des quatre auteurs.",
+      "perimetre_provenance": "Écriture limitée au dossier de revue N18 ; les sept sources et huit images conservent les empreintes d’entrée.",
+      "sources_lues": "Passages originaux listés dans numerical_checks et consulted_inventory ; lacunes du registre déclarées.",
+      "contexte_suisse": "SSN/SSED et FI des produits exacts prioritaires ; extensions internationales contextualisées.",
+      "independance": "Auditeur E10 distinct de l’auteur N18 ; aucune modification de ses sources.",
+      "contrat_cours": "21 parties, 126 sous-parties et huit zones inspectées ; objectif échographique insuffisant signalé.",
+      "honnetete": "Trois réserves bloquantes, note motivée 18/20 ; pas de deuxième passe, pas de validation humaine revendiquée."
+    }
+  },
+  "dimension_scores": {
+    "redaction": 18,
+    "medecine": 18,
+    "sources": 17,
+    "frontend": 20
+  }
+}

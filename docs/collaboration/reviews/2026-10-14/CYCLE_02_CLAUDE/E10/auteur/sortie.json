@@ -1,0 +1,91 @@
+{
+ "actor": "C02-R-ENDO",
+ "verdict": "conforme",
+ "checked_at": "2026-10-14T22:15:20.200739+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+     "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+     "explanation": "Autorité de reprise du Cycle 2 lue : C02-R-ENDO corrige E10 comme auteur ; la correction Z01 a été demandée par le coordinateur après la passe 2 intermédiaire croisée ; ni commit ni push."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/images_claude.json",
+     "sha256": "39fce2427c745e0a5d22d351e69d482b576d7fbb45e045a4be0a1a51ed9f7833",
+     "explanation": "Écritures limitées aux sept sources E10, aux preuves _claude et au dossier auteur. Les neuf images ont leurs licences vérifiées le 14.10.2026 et sont inchangées depuis."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
+     "sha256": "9429f6494a488c9dbf42253ab6c14b2050c93647cf43bd34e6c14ed8ca5a9cb6",
+     "explanation": "Le registre contient 53 assertions, relues en ligne le 14.10.2026 avec l'empreinte du texte lu. Il inclut le tableau 3 complet (cinq catégories) et le §10 de la directive SGED/SGRM du 1.8.2025, p. 12–13."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/E-06-Endocrinologie et métabolisme/travail/CYCLE_02_E10/preuves/source_ledger_claude.json",
+     "sha256": "9429f6494a488c9dbf42253ab6c14b2050c93647cf43bd34e6c14ed8ca5a9cb6",
+     "explanation": "Les sources suisses passent d'abord : SSED technologie 2025, SGED/SGRM conduite 2025, QualiCCare pied, HUG, RMS, FI Swissmedic NovoRapid, Tresiba et Baqsimi. JBDS et NICE sont signalés comme britanniques et ne servent qu'aux compléments motivés."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/pass2_intermediaire_defavorable.json",
+     "sha256": "b6b5799a34e17698781f6854c1f58e6e1e239d9af9495c2605ef965dfa73f1f8",
+     "explanation": "La passe intermédiaire de C02-R-NEPH, relecteur distinct, est lue ; l'auteur corrige Z01 sans se déclarer approuvé."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/test_v7_static.txt",
+     "sha256": "0808fac0f272931d82dcfa690575c2fd03a9e4a3b74ef76fc868fa0ef9f8164d",
+     "explanation": "test_v7.py --static E10 : OK (32 199 mots, 106 fenêtres, 3 quiz, 21 Pareto) dans un worktree jetable supprimé ; aperçu sans erreur JavaScript ni débordement."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/auteur/entree.json",
+     "sha256": "72a02a0b42043ab4cb92a042b69bd275d8f9a977542e7e27f85daa84306b44a5",
+     "explanation": "Le relevé d'entrée est conservé. Aucune réserve n'est déclarée levée par l'auteur seul. Les sources non relues aujourd'hui restent attribuées au registre Codex. medical_human_validation reste false."
+    }
+   ]
+  }
+ ]
+}
