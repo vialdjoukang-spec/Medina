@@ -1,0 +1,163 @@
+{
+ "mission": "ALPHA77-CLAUDE-N18-INTEGRATE",
+ "code": "N18",
+ "fragment": "S04",
+ "role": "Agent W",
+ "phase": 2,
+ "date": "2026-10-15",
+ "branche": "claude/alpha77/n18-integrate-g1",
+ "base": "abd681e5",
+ "entrees_prep": {
+  "READY.json": "d63e76952c1f486316e86092a26580f01ff3050daad3d25ec6e9b95705d8a562",
+  "semiologie_sciences.html": "4e7d574a0316d0591f82f8720171237805ee6e58cb28cf2cf240e43b977b8fd7",
+  "semiologie_pop.html": "f4d386106aaade9c753472fb73bae44d48977b17ac92da08b4cb3242191b2bc1",
+  "semiologie_clinique.html": "e6b1d183f7c6b5634904ea72ff57ebfa140ade1acfe00aab0de48177b24358c6",
+  "figures.html": "cbdbfe4651da54974d369325d088dd6989d3b12232e8db1a208f679b82b52d81",
+  "glossaire_ajouts.json": "cfc3027e0e664c61d6b313db5c8225541e0dd906f203b4c34392872c650b9f76",
+  "sources_semiologie.json": "170ea45429a66e4d5248502290b459f620224261dd42ea762f15714b259696f5"
+ },
+ "integration": {
+  "sous_onglet": "chapters/N18/N18_c.html : bouton n18-tab-semio en tête de .sci-bar (aria-selected=\"true\") ; quatre boutons existants aria-selected=\"false\" ; panneau n18-s-semio en tête de .chap-body de #pS ; n18-s01-sci passé en hidden. Aucun Pareto ni data-cover sur les sections data-semiology ; le Pareto des sciences est inchangé.",
+  "bloc_clinique": "chapters/N18/N18_a.html : <div data-semiology-clinical=\"N18\"> (h3 n18-a05-partie-7) inséré en fin d’îlot n18-a05, avant le div.key N18-C0098.",
+  "fenetres": "13 gabarits n18-sm-* ajoutés en fin de chapters/N18/N18_pop2.html (aucun N18_pop3) ; clés absentes auparavant de pop1/pop2 ; toutes appelées et toutes définies (contrôle navigateur).",
+  "figures": "Légendes de figures.html appliquées, data-evidence conservés : figure 1 (N18-C0080, écart 2 contre 3 contrôles par an, numérotation), figure 2 (N18-C0104, alt et N18-C0106 : vrai titre Robson 2024 « Tips for improving the detection and management of CKD in primary care »), figures 4, 6, 7 (numérotation « Figure N — »), figure 5 (N18-C0233, variante hilaire selon la description Commons de l’auteur). Figures 3 et 8 déjà numérotées, inchangées. Aucune image nouvelle ni remplacée : aucune figure ANATOMIQUE_IA ni ORIGINE_INCONNUE (figures.json).",
+  "glossaire": "Clé CKD ajoutée (prep/glossaire_ajouts.json) ; glossaire fusionné différent de la base uniquement par CKD et EMPA-KIDNEY."
+ },
+ "controles": {
+  "build_medina_audit": {
+   "commande": "build_medina.audit() sur chapters/N18/*.html",
+   "resultat": "{}"
+  },
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static N18",
+   "resultat": "OK",
+   "mesures": "mots 55892, fenêtres 124, quiz 7, pareto 21"
+  },
+  "test_v7_navigateur": {
+   "commande": "MEDINA_OUT=<scratchpad>/out/fragments (MEDINA.html → fragment S04) MEDINA_CHROMIUM=/opt/pw-browsers/chromium-1194/chrome-linux/chrome python3 test_v7.py N18",
+   "resultat": "OK (1300 px et 390 px)",
+   "note": "Le mode --url avec un serveur HTTP local a échoué (« cours non affiché », puis attente MDN_READY dépassée) ; le même fragment passe en file://. Échec attribué au service HTTP local de l’environnement, non au cours."
+  },
+  "construction": {
+   "commande": "MEDINA_OUT=<scratchpad>/out python3 build_front.py --fragment S04",
+   "sortie": "scratchpad, hors dépôt",
+   "fichier": "MEDINA_S04_renal-voies-urinaires.html",
+   "octets_non_compresses": 3749242,
+   "octets_compresses": 2548665,
+   "gabarits": 400
+  },
+  "rendu_chromium": {
+   "bloc_clinique": true,
+   "sciences_desktop": {
+    "premier": "n18-s-semio",
+    "selected": [
+     "true",
+     "false",
+     "false",
+     "false",
+     "false"
+    ],
+    "label": "Sémiologie fondamentale et analytique",
+    "semio_visible": true,
+    "s01_visible": false,
+    "titre": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+    "sections": [
+     "normal",
+     "signs",
+     "mechanisms",
+     "examination",
+     "interpretation",
+     "differentials",
+     "urgency",
+     "limits",
+     "sources"
+    ],
+    "pareto_dans_semio": 0
+   },
+   "fenetre_semio": {
+    "cle": "n18-sm-fatigue",
+    "open": true,
+    "titre": "Fatigue dans la maladie rénale chronique — mécanisme et valeur",
+    "longueur": 1341
+   },
+   "cles_sm_appelees": [
+    "n18-sm-appetit",
+    "n18-sm-bandelette",
+    "n18-sm-crampes",
+    "n18-sm-dyspnee",
+    "n18-sm-fatigue",
+    "n18-sm-godet",
+    "n18-sm-hyperk",
+    "n18-sm-nycturie",
+    "n18-sm-oligurie",
+    "n18-sm-orthostatisme",
+    "n18-sm-pa",
+    "n18-sm-paleur",
+    "n18-sm-prurit"
+   ],
+   "gabarits_sm": [
+    "n18-sm-appetit",
+    "n18-sm-bandelette",
+    "n18-sm-crampes",
+    "n18-sm-dyspnee",
+    "n18-sm-fatigue",
+    "n18-sm-godet",
+    "n18-sm-hyperk",
+    "n18-sm-nycturie",
+    "n18-sm-oligurie",
+    "n18-sm-orthostatisme",
+    "n18-sm-pa",
+    "n18-sm-paleur",
+    "n18-sm-prurit"
+   ],
+   "erreurs_js_desktop": [],
+   "console_erreurs_desktop": [],
+   "mobile_390": {
+    "fs": "24px",
+    "font_bouton": "18.356px",
+    "bouton_gauche": 12,
+    "bouton_droite": 373.28125,
+    "largeur_vue": 390,
+    "scroll_horizontal": false,
+    "bouton_deborde": false,
+    "semio_visible": true
+   },
+   "erreurs_js_mobile": []
+  },
+  "audit_sciences": {
+   "commande": "copie hors dépôt de tests/audit_sciences.py (ROOT = worktree ; N18 ajouté à la liste des cours sans référence de base) ; le fichier partagé n’est pas modifié",
+   "raison": "tests/audit_sciences.py lève « source de comparaison indisponible » : chapters/N18/N18_c.html est absent du commit de référence c50a28a2 et N18 n’est pas dans la liste d’exceptions.",
+   "resultat": "failed",
+   "erreurs": [
+    "N18/n18-s01-sci: figure sans légende ou nom accessible",
+    "N18/n18-s01-sci: figure sans légende ou nom accessible",
+    "N18/n18-s02-sci: figure sans légende ou nom accessible",
+    "N18/n18-s03-sci: figure sans légende ou nom accessible",
+    "N18/n18-s04-sci: figure sans légende ou nom accessible"
+   ],
+   "interpretation": "Les 5 erreurs « figure sans légende ou nom accessible » visent exclusivement les figures à image réelle (figures 4 à 8) : chacune porte <img alt=\"…\"> et <figcaption> avec attribution. Faux positif connu (décision coordinateur). Aucun SVG factice ajouté. Le sous-onglet n18-s-semio passe tous les critères (≥ 280 mots, figure SVG non anatomique avec figcaption et svg[role=img][aria-label], quatre libellés).",
+   "reserve": "Les disciplines n18-s01-sci à n18-s04-sci ne contiennent aucune figure SVG non anatomique (état antérieur, 0 SVG selon l’audit MED) ; la règle (1) du coordinateur n’est donc pas remplie pour elles. Un schéma de données sourcé par discipline reste à produire dans une mission ultérieure."
+  },
+  "sem22": "Mobile 390 px, police du cours 24 px : bouton « Sémiologie fondamentale et analytique » sur une ligne, sans débordement ni défilement horizontal (capture n18-4).",
+  "captures": {
+   "n18-1-ouverture.png": "61e98415d666ae122cf4381c3ff0b38aea38473b752c7aaa1f314bcb8f1e2c8f",
+   "n18-2-semiologie-ouverte.png": "80796b7980f8db0e67ace0f98b8757b43c9e181aa31141dad69c93b7cb33a04e",
+   "n18-3-fenetre-signe.png": "ccb0e388b1b2a94795f60065026fb6116a67129cae4baf0985d3774454d1444b",
+   "n18-4-mobile-390-semiologie.png": "917bae71945f63faca7add1c2568c4b625e8501c208e417fe2ad609c0bf5ed02"
+  }
+ },
+ "empreintes_finales": {
+  "chapters/N18/N18_a.html": "379119568de1595e409ca86cfba82cce2a2dce39a725016418035096df90c9b4",
+  "chapters/N18/N18_b.html": "7fe1bb8fc76803dd5c46131b82ee66b0e01340359c059627a139434123b14c58",
+  "chapters/N18/N18_c.html": "f89608d79db5a2bf8aef338500698b0755f8da835ade6840f2b92cd7a3152371",
+  "chapters/N18/N18_d.html": "576cf45799a506cca200ef43515568efe573d2343727ca676606aade80b68608",
+  "chapters/N18/N18_pop1.html": "b30835f4d60e5fdbb660de0063b6ec231996aeaefbf055b8ec9438d9b9a1e950",
+  "chapters/N18/N18_pop2.html": "594705bc239322de6df65571014289f9a692681affff36d1b2704e560a0beb54",
+  "glossary/n18.py": "4e59b152cad30c30746f363673be23e13dc207240e7a3ede2fecfcf88801cbdf"
+ },
+ "reseau": "Requêtes de W en phase 1 : tools/swissmedic_fi.py (User-Agent « MEDINA ») et curl (User-Agent par défaut de curl) vers KDIGO, HUG, PMC, SSED, OFSP ; aucun identifiant personnel transmis. Phase 2 : aucune requête externe.",
+ "non_fait": [
+  "Phase 3 (reçu Alpha) non commencée, conformément à la consigne."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine. Aucune validation médicale humaine n’est revendiquée."
+}

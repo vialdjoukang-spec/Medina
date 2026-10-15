@@ -21,8 +21,8 @@ add_if_absent('FCPD', [('F', 'Fibro'), ('C', 'Calculous (calculeux)'), ('P', 'Pa
 add_if_absent('IDF', [('I', 'International'), ('D', 'Diabetes (du diabète)'), ('F', 'Federation (fédération)')],
               'Fédération internationale du diabète',
               'Cette fédération a reconnu le terme de diabète de type 5 en avril 2025 et a créé un groupe de travail chargé d’en établir les critères diagnostiques.', 'e12-type5')
-add_if_absent('HaPanEU', [('HaPanEU', 'nom du projet de recommandations européennes sur la pancréatite chronique ; développement littéral non fourni par la source lue')],
-              'Recommandations européennes HaPanEU sur la pancréatite chronique (2017)',
+add_if_absent('HaPanEU', [('Ha', 'Harmonizing (harmonisation du diagnostic et du traitement)'), ('Pan', 'chronic Pancreatitis (de la pancréatite chronique)'), ('EU', 'across Europe (en Europe)')],
+              'Harmonisation du diagnostic et du traitement de la pancréatite chronique en Europe (recommandations HaPanEU, 2017)',
               'Ces recommandations de la United European Gastroenterology portent sur le diagnostic et le traitement de la pancréatite chronique. Elles fournissent les seuils de diabète et les positions sur les médicaments dans le diabète pancréatoprive.', 'e12-type3c')
 add_if_absent('SIDD', [('S', 'Severe (sévère)'), ('I', 'Insulin- (insulino-)'), ('D', 'Deficient (déficient)'), ('D', 'Diabetes (diabète)')],
               'Diabète sévère insulinodéficient',
@@ -53,7 +53,7 @@ add_if_absent('CA 19-9', [('CA', 'Carbohydrate Antigen (antigène glucidique)'),
               'Ce marqueur sérique est utilisé pour la vigilance oncologique dans la pancréatopathie fibrocalculeuse.', 'e12-cancer')
 add_if_absent('DFGe', [('D', 'Débit'), ('F', 'de Filtration'), ('G', 'Glomérulaire'), ('e', 'estimé')],
               'Débit de filtration glomérulaire estimé',
-              'La metformine est contre-indiquée en dessous de 30 mL/min et limitée à 1 000 mg par jour entre 30 et 59 mL/min.', 'e12-metformine')
+              'Ce paramètre estime la filtration rénale. Dans cette leçon, il règle la posologie : la metformine est contre-indiquée en dessous de 30 mL/min et limitée à 1 000 mg par jour entre 30 et 59 mL/min.', 'e12-metformine')
 add_if_absent('CT', [('C', 'Computed (assistée par ordinateur)'), ('T', 'Tomography (tomographie)')],
               'Tomodensitométrie',
               'Cet examen d’imagerie est préféré pour confirmer un pancréas normal dans le diabète de malnutrition.', 'e12-imagerie')
@@ -66,3 +66,21 @@ add_if_absent('SANS', [('S', 'Sécrétion basse mais mesurable'), ('A', 'Anticor
 add_if_absent('Hugh-Jones', [('Hugh-Jones', 'nom d’un auteur, non une abréviation')],
               'Hugh-Jones, auteur de la description de 1955',
               'Il a décrit en Jamaïque, en 1955, le diabète « de type J » des sujets jeunes et maigres.', 'e12-histoire')
+add_if_absent('E12.74', [('E12.74', 'code de la CIM-10-GM 2024 : diabète sucré de malnutrition avec complications multiples, avec syndrome du pied diabétique, non désigné comme décompensé')],
+              'Diabète sucré de malnutrition avec syndrome du pied diabétique, non désigné comme décompensé (CIM-10-GM 2024)',
+              'Ce sous-code range le syndrome du pied diabétique parmi les complications multiples du diabète de malnutrition.', 'e12-type5')
+add_if_absent('E12.75', [('E12.75', 'code de la CIM-10-GM 2024 : diabète sucré de malnutrition avec complications multiples, avec syndrome du pied diabétique, désigné comme décompensé')],
+              'Diabète sucré de malnutrition avec syndrome du pied diabétique, désigné comme décompensé (CIM-10-GM 2024)',
+              'Ce sous-code correspond au même tableau que E12.74 lorsque le diabète est désigné comme décompensé.', 'e12-type5')
+add_if_absent('O24.2', [('O24.2', 'code de la CIM-10 (OMS 2019) : diabète sucré de malnutrition préexistant, pendant la grossesse')],
+              'Diabète sucré de malnutrition préexistant au cours de la grossesse (CIM-10 OMS 2019)',
+              'Ce code obstétrical remplace E12 chez la femme enceinte dont le diabète de malnutrition précède la grossesse ; le libellé CIM-10-GM n’a pas été vérifié.', 'e12-type5')
+add_if_absent('O24.4', [('O24.4', 'code de la CIM-10 (OMS 2019) : diabète sucré survenant au cours de la grossesse')],
+              'Diabète sucré survenant au cours de la grossesse (CIM-10 OMS 2019)',
+              'Ce code obstétrical désigne le diabète apparu pendant la grossesse ; il ne relève pas de E12.', 'e12-type5')
+add_if_absent('U100', [('U', 'Unités d’insuline'), ('100', 'par millilitre (100 U/mL)')],
+              'Concentration de 100 unités d’insuline par millilitre',
+              'La glargine U100 (Lantus®) est classée à risque moyen d’hypoglycémie au volant par les directives SGED/SGRM 2025.', 'e12-glargine')
+add_if_absent('U300', [('U', 'Unités d’insuline'), ('300', 'par millilitre (300 U/mL)')],
+              'Concentration de 300 unités d’insuline par millilitre',
+              'La glargine U300 est une basale ultralente, classée à risque faible d’hypoglycémie au volant par les directives SGED/SGRM 2025.', 'e12-glargine')
