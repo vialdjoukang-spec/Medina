@@ -1,0 +1,400 @@
+{
+ "schema_version": 1,
+ "actor": "Claude",
+ "code": "C77",
+ "fragment": "S06",
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "05417b91cd027d0be3b506820c327f33407b9623",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C77/C77_a.html": "28be3bfe9033c4279ef76b601c5d4b2f61ef6936dce17c81a8554e838b28a226",
+  "chapters/C77/C77_b.html": "7c604795374d707c47e0665ab70256b871c175bd0464de4a569b11c92992fa04",
+  "chapters/C77/C77_c.html": "dd8d9412582389ba6c4ec0baca2abbf8615398e9c1b190c4d040711b36aa29cd",
+  "chapters/C77/C77_d.html": "806002164ad6cea93602c33e54c5e6c5a15f8dcd8d46aec90735cb2834665d41",
+  "chapters/C77/C77_pop1.html": "aa8da4c5231974634749f92948352d97e351ade75f0f33e30e1f93d9de4c9632",
+  "chapters/C77/C77_pop2.html": "f02978e21aefdc1455f7b1901b40610e02e4a78474d7224292dc97c1d9970bea",
+  "glossary/c77.py": "ff5469886b085dc76da976e8a32bc240b6ae808b5bc65aead672d7cccdac5f88"
+ },
+ "reviewed_files_sha256": {
+  "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
+  "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
+  "chapters/C77/C77_b.html": "c9341938a55536c082a2880848fc31258c7709231ea978fa5da8035db3240e71",
+  "chapters/C77/C77_c.html": "0123c658af265989b702ddedf4dba656fb3a5ed0348d05c19a75e7c23d4597a2",
+  "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
+  "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
+  "chapters/C77/C77_pop2.html": "9b96b68e6c65071bdeeec782431570976885590dccc9a2334d17d15b7f98763e",
+  "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true,
+  "figures_anatomiques_ia": true,
+  "sources_suisses_puis_europeennes": true
+ },
+ "kind": "MED",
+ "scope": "Exactitude médicale et sources des sept fichiers finaux (onglets a–d, fenêtres pop1–pop2, glossaire), y compris les compléments de W en Sciences et la Figure 2 de synthèse",
+ "unresolved_blockers": [],
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html#c77-s-bioch-cours",
+   "finding": "« 25 à 35 % touchent une cible accessible à un médicament autorisé, par exemple une mutation BRAF V600, plus rarement EGFR, KRAS ou ALK » : Onkopedia dit « angehbare Veränderungen bei ca. 25–35 % » sans préciser « autorisé » ; BRAF V600 y est cité comme altération où l’effet de CUPISCO était « besonders günstig », et la liste des altérations plus rares est « EGFR, MET, KRAS p.G12C, ROS1, NTRK und ALK ».",
+   "evidence": "Onkopedia CUP-Syndrom, Stand September 2025, § molekulare Diagnostik, lu par P le 15.10.2026 ; ordre de grandeur juste, formulation à resserrer (supprimer « autorisé », écrire KRAS p.G12C). — Corrigé au commit 64257cb8 : « 25 à 35 % sont accessibles à une thérapie ciblée ; des altérations plus rares touchent notamment EGFR, MET, KRAS p.G12C et ALK » ; BRAF V600 et fusions FGFR2 placés comme sous-groupes à bénéfice particulièrement favorable dans CUPISCO ; « autorisé » supprimé ; clés de glossaire FGFR2 et p.G12C ajoutées. Concorde avec Onkopedia 2025 (« angehbare Veränderungen bei ca. 25–35 % », « seltener … EGFR, MET, KRAS p.G12C, ROS1, NTRK und ALK », « Besonders günstig … BRAF V600 Mutationen und FGFR2-Fusionen »)."
+  },
+  {
+   "id": "P-MED-02",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_b.html#c77-9 (formes défavorables)",
+   "finding": "« l’étude n’avait pas la puissance d’une comparaison statistique formelle » généralise la réserve de la source, qui porte sur les sous-groupes (collectifs BRAF V600 et FGFR2) ; les chiffres 4,7 → 8,1 mois concernent les patients porteurs d’altérations ciblables.",
+   "evidence": "Onkopedia 2025, § 5.1.3.1.2 (CUPISCO), lu par P le 15.10.2026 ; le sens clinique n’est pas inversé. — Corrigé au commit 64257cb8 (c77-9) : survie sans progression 4,7 → 8,1 mois « chez les patients porteurs d’une altération ciblable » ; réserve de puissance limitée aux sous-groupes BRAF V600 et FGFR2, conforme à Onkopedia § 5.1.3.1.2."
+  },
+  {
+   "id": "P-MED-03",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_b.html#c77-8",
+   "finding": "Urgence : la compression médullaire est désormais l’urgence documentée ; chirurgie ou radiothérapie immédiate, pronostic plus sombre avec métastases viscérales ou perte de la marche ; cohérent avec l’alerte c77-sm-7 et le bloc clinique pA.",
+   "evidence": "Onkopedia 2025 § 5.3.1 : « onkologischer Notfall! … Eine umgehende Operation oder Radiatio kann ein Transversalsyndrom häufig verhindern »."
+  },
+  {
+   "id": "P-MED-04",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_pop1.html#c77-ccl21 ; C77_c.html Figure 4",
+   "finding": "Attribution CCL21 exacte : Liu 2023 nomme CCL21 dans la légende de sa figure 3 ; la fenêtre le précise. Le signalement de P en phase 1 (fondé sur le texte sans figures) est levé.",
+   "evidence": "Europe PMC fullTextXML PMC10559534 (sha256 9567abdcd7b1aec68c3e1da80c89de40c7c66bec41639458edb45cd74735866a), légende Fig. 3 : « CCL21 expressed by LECs can induce CCR7-dependent cancer cells into lymphatic vessels »."
+  },
+  {
+   "id": "P-MED-05",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html#c77-s-anat-cours, #c77-s-histo-cours, #c77-s-physio-cours, #c77-s-bioch-cours",
+   "finding": "Compléments de W en Sciences vérifiés et utiles, sans remplissage : sein 30 % sus-claviculaire ; bilan inguinal (dermatologique, gynécologique, urologique, proctoscopie, cystoscopie, HPV) ; histologie exigée avec matériel pour immunohistochimie et biologie moléculaire ; 50 % épidermoïdes et 35 % indifférenciés rattachés par p40/p63 (la source cite aussi CK5/6) ; filaments d’ancrage, tri antigénique, lymphatique efférent devenant afférent ; cinq mécanismes de tolérance et PD-L1 induit par l’interféron gamma ; PD-L1 « untergeordnete Rolle » sans seuil ; > 85 % d’altérations ; tests d’expression 85–90 % sans gain de survie randomisé. Chaque mécanisme expérimental est signalé comme tel.",
+   "evidence": "Onkopedia 2025 (relu par P, deux extractions) ; Liu 2023 texte intégral et légendes (Europe PMC XML) ; Swiss Medical Weekly 2024 (PDF sha256 cebeae45…8d4f6)."
+  },
+  {
+   "id": "P-MED-06",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html Figure 2 « De la région ganglionnaire atteinte au bilan ciblé »",
+   "finding": "Schéma non anatomique (boîtes et flèches), chaque case sourcée : cervical → ORL, thyroïde, salivaires / examen ORL, TEP-CT, panendoscopie ; sus-claviculaire → poumon, sein, œsophage, abdomen et pelvis à gauche / scanner thoraco-abdomino-pelvien, PSA ; axillaire → sein, lymphome, poumon, mélanome / mammographie, échographie, IRM mammaire ; inguinal → vulve, col, pénis, anus, peau / examens gynécologique et urologique, proctoscopie. Utile comme synthèse, légende prudente.",
+   "evidence": "Swiss Medical Weekly 2024 (régions sus-claviculaire, axillaire, inguinale) ; Onkopedia 2025 (Tabelle 5, § 5.1.1.2, § 5.1.1.4)."
+  },
+  {
+   "id": "P-MED-07",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html Figure 1",
+   "finding": "MAJ-09 levé : la Figure 1 dessinée est remplacée par l’original SEER/NCI (domaine public) ; attribution et réserve « régions de la classification d’Ann Arbor, sans les voies de drainage, pas à l’échelle » visibles dans le rendu.",
+   "evidence": "revue/FIGURE_c77-img-1.json ; revue/droits/c77-img-1_rights.json ; rendu Chromium 1300 et 390 px."
+  },
+  {
+   "id": "P-MED-08",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_d.html, C77_pop2.html (carboplatine, paclitaxel), C77_b.html c77-8",
+   "finding": "MAJ-01 à MAJ-04 et ENR-08 vérifiés contre les FI suisses : contre-indications complètes du carboplatine ; seuils de reprise 2000/mm³ et 100 000/mm³ (carboplatine), 1500/mm³ et 100 000/mm³ (paclitaxel) ; réduction de 20 % si neutrophiles < 500/mm³ ou neuropathie sévère ; insuffisance hépatique sévère : non recommandé ; CYP2C8/3A4 (kétoconazole, érythromycine, gemfibrozil, clopidogrel, ritonavir ; rifampicine, carbamazépine, phénytoïne) ; paclitaxel avant cisplatine (clairance −20 %) ; nadir 21 j/15 j ; aminosides, diurétiques de l’anse, vaccins vivants ; indications (ORL monothérapie avec radiothérapie, vessie en association) ; schéma carboplatine AUC 2 + paclitaxel 50 mg/m² hebdomadaire rattaché au CUP épidermoïde (§ 5.1.3.2).",
+   "evidence": "tools/swissmedic_fi.py texte 7680548290014 (Carboplatine Sandoz, mise à jour février 2026) et 7680668530014 (Paclitaxel Accord, novembre 2023), lus par P le 15.10.2026 ; Onkopedia § 5.1.3.2."
+  },
+  {
+   "id": "P-MED-09",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_pop2.html (c77-cervical-trt), C77_b.html c77-10",
+   "finding": "CUP cervical : N1, N2, N3 (> 6 cm) et facteurs de risque (≥ 2 ganglions, extension extracapsulaire, R1, marge < 5 mm) ; radiochimiothérapie néoadjuvante alternative ; survie à 5 ans 57 % avec contre 82 % sans extension extracapsulaire ; TMB ≥ 10 mutations/Mb, hors indication.",
+   "evidence": "Onkopedia 2025 § 5.1.1.1.1 et § 5.1.3.1.1, lus par P le 15.10.2026."
+  },
+  {
+   "id": "P-MED-10",
+   "severity": "LACUNE",
+   "status": "non_blocking",
+   "anchor": "chapters/C77/C77_pop1.html (c77-sources), C77_pop2.html, C77_d.html, C77_b.html (références)",
+   "finding": "Lacunes restantes déclarées dans la leçon elle-même : texte intégral ESMO 2023 et EHNS-ESMO-ESTRO 2020 non lus ; FI du cisplatine, de la gemcitabine, de l’atézolizumab et du pembrolizumab non lues (aucune dose donnée) ; double codage C77/C80.0 non vérifié ; aucune donnée épidémiologique suisse ; remboursement du TEP-CT selon l’OPAS non vérifié, désormais déclaré dans les fenêtres c77-sources et c77-tep (commit 64257cb8).",
+   "evidence": "Passages relevés dans les fichiers finaux : « Le texte intégral de la ligne directrice ESMO 2023 n’a pas pu être lu (accès refusé) » ; « Les informations professionnelles du cisplatine, de la gemcitabine, de l’atézolizumab et du pembrolizumab n’ont pas été lues » ; « information professionnelle non lue » (C77_d). ; « pas plus que le remboursement du TEP-CT selon l’OPAS » (c77-sources) ; « Le remboursement du TEP-CT selon l’OPAS n’a pas été vérifié pour ce cours. » (c77-tep)."
+  },
+  {
+   "id": "P-IMM-00",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "chapters/C77/C77_c.html #c77-s-immuno-cours ; C77_pop2.html c77-imm-msi, pareto-c77-immuno ; glossary/c77.py CUPISCO",
+   "finding": "Contrôle phrase par phrase contre les sources ouvertes par P. Conformes : compartiments (capsule, sinus sous-capsulaire, trabéculaires, médullaires, efférent ; DC folliculaires et lymphocytes B, paracortex T, cordons médullaires), veinules à endothélium haut et cellules réticulaires (Ji 2023) ; organe lymphoïde secondaire à prolifération antigène-dépendante, 75 % localisées en soins primaires, souple et sensible → infection, dur et fixé → malignité, aucun signe fiable, biopsie-exérèse (SMW 2010) ; Treg/MDSC et anergie avant envahissement dans des ganglions sentinelles de cancer du sein, aplatissement et élargissement des HEV, perte du CMH I, PD-L1 accru, ganglions non envahis riches en Tpex CD8 (CETC tête et cou), exérèse des ganglions de drainage chez la souris (Ji 2023) ; MSI/dMMR, TMB ≥ 10 mut/Mb « gut belegt », PD-L1 secondaire sans seuil, PD1/PDL1 et MMR au bilan, CUPISCO seuil 16 mut/Mb, PFS 2 ans ≈ 30 %, OS 2 ans 65 % sous atézolizumab, phase II non sélectionnées ORR ≈ 20 %, PFS 4 mois, OS 11–14 mois, CUPISCO phase II (636 patients selon Onkopedia ; nombre non cité dans le cours, aucune erreur) (Onkopedia 2025). Distinction réactive/métastatique correctement présentée comme non fiable à la palpation. L’extrapolation depuis le cancer du sein, d’autres tumeurs primitives connues et des modèles animaux est signalée dans le texte et la légende. Aucune recommandation américaine utilisée comme conduite (les citations NCCN et FDA de Ji 2023 ne sont pas reprises).",
+   "evidence": "Ji H et coll., Signal Transduct Target Ther 2023;8:367, texte intégral JATS Europe PMC PMC10522642 (sha256 7eaa0a07adc34d17f48e41f9e88b620bea93391f4aa1150018f46fb3cc8784e0), sections anatomie et physiologie, niche prémétastatique, échappement immunitaire, immunité antitumorale et curage; Richner S, Laifer G, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), résumé, introduction, algorithme clinique; Onkopedia CUP-Syndrom, Stand September 2025, page HTML (sha256 e81003aabdf8a20a3ca79394393839799bbbe58ad8ff703dc3a16d05350f90a5), § 4.2 (marqueurs de diagnostic), § 2.5/5.1.3.1 (CUPISCO, marqueurs d’immunosensibilité), § 5.1.3.1.1 (biologie immunogène, off-label)"
+  },
+  {
+   "id": "P-IMM-01",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html #c77-s-immuno-cours, « Le pont vers le traitement du CUP » et encadré « Science → traitement. » ; C77_pop2.html c77-imm-msi",
+   "finding": "Statut réglementaire absent du nouvel ajout : l’emploi d’un inhibiteur de point de contrôle dans le CUP (MSI/dMMR ou TMB élevée) y est présenté sans préciser qu’il est hors indication enregistrée. Onkopedia 2025 marque « off-label » le traitement en cas de TMB élevée et de PD-L1 ; l’information professionnelle suisse de Keytruda® (août 2026) limite l’indication MSI-H/dMMR au cancer colorectal, à l’endomètre, à l’estomac, à l’intestin grêle et aux voies biliaires, sans CUP ni indication TMB. Non bloquant : aucune molécule ni dose n’est donnée dans l’ajout, la formulation est « se discute », et l’onglet Pharmacologie déclare déjà l’usage hors indication.",
+   "correction_proposee": "Ajouter après « … charge mutationnelle élevée (Onkopedia 2025). » : « Cet emploi est hors indication enregistrée : l’information professionnelle suisse du pembrolizumab réserve l’indication MSI-H/dMMR à certains primitifs connus (côlon-rectum, endomètre, estomac, intestin grêle, voies biliaires). » Mention analogue en fin de fenêtre c77-imm-msi.",
+   "source": "Onkopedia 2025 § 5.1.3.1.1 ; FI suisse Keytruda® (AmiKo, août 2026), rubrique Indications",
+   "evidence": "Onkopedia : « bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) » ; FI Keytruda : « Keytruda est indiqué en monothérapie dans le traitement des tumeurs présentant une forte instabilité microsatellitaire (MSI-H) ou une déficience du système de réparation des mésappariements […] dans les cas suivants » (CC ; endomètre, estomac, intestin grêle, voies biliaires).",
+   "resolution": "Corrigé à edde1801 (C77_c « Le pont vers le traitement », encadré « Science → traitement. », c77-imm-msi, Pareto) : hors indication en Suisse, FI Keytruda® (août 2026) limitée MSI-H/dMMR au CC, à l’endomètre, à l’estomac, à l’intestin grêle et aux voies biliaires, sans indication TMB — vérifié par P dans la FI relue via tools/swissmedic_fi.py (GTIN 7680662310025, « Mise à jour de l’information : août 2026 »). Nuance d’attribution résiduelle à Onkopedia consignée en P-IMM-08."
+  },
+  {
+   "id": "P-IMM-02",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html #c77-s-immuno-cours, 2e paragraphe de « Le normal », phrase « Les cellules dendritiques et les lymphocytes T déjà exposés… »",
+   "finding": "Seule affirmation reposant uniquement sur Arasa 2021, lue en résumé seul (signalé). Le résumé attribue la double fonction tolérance/immunité protectrice à la migration des cellules dendritiques seulement ; la migration des lymphocytes T y « contribue à la surveillance immunitaire ». Le texte attribue les deux fonctions aux deux populations. Le texte intégral (PMC8161367) est en accès libre et n’a pas été lu.",
+   "correction_proposee": "Remplacer par : « Les cellules dendritiques présentatrices d’antigène et les lymphocytes T déjà exposés à l’antigène rejoignent le ganglion par les lymphatiques afférents. La migration des cellules dendritiques sert à maintenir la tolérance comme à induire une immunité protectrice ; celle des lymphocytes T contribue à la surveillance immunitaire (Arasa et coll. 2021, résumé). » ; ou lire le texte intégral.",
+   "source": "Arasa 2021, résumé (PMID 34065513)",
+   "evidence": "Résumé : « The main cell types migrating via this route are antigen-presenting dendritic cells (DCs) and antigen-experienced T cells. While DC migration is important for maintenance of tolerance and for induction of protective immunity, T cell migration through afferent LVs contributes to immune surveillance. »",
+   "resolution": "Corrigé à edde1801 : la tolérance/immunité protectrice est attribuée aux cellules dendritiques qui mûrissent après reconnaissance de l’antigène, la surveillance immunitaire aux lymphocytes T ; mention « (résumé) » retirée. Vérifié par P dans le texte intégral PMC8161367 (Europe PMC, sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) : « Upon antigen recognition, DCs mature and migrate through afferent lymphatics to dLNs to induce adaptive immune responses that will lead to protective immunity or maintenance of tolerance » ; « T cells trafficking through afferent LVs contribute to immune surveillance and control of immune responses in peripheral tissues »."
+  },
+  {
+   "id": "P-IMM-03",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html #c77-s-immuno-cours, 3e paragraphe de « La perturbation » ; Figure 6, boîte « Moins de CMH I, plus de PD-L1 »",
+   "finding": "Nuance de la source omise : Ji 2023 rapporte aussi, dans un modèle murin de mélanome, une forte surexpression des gènes du CMH I permettant d’échapper aux cellules NK, et conclut que le rôle du CMH dans la métastase ganglionnaire « warrants further research ». Le texte et la figure présentent la baisse du CMH I comme une étape générale.",
+   "correction_proposee": "Ajouter : « Le rôle du CMH reste discuté : dans un modèle murin de mélanome, ses gènes de classe I sont au contraire surexprimés, ce qui protège la tumeur des cellules NK (Ji et coll. 2023). » Dans la figure, garder la boîte avec la légende déjà prudente, ou écrire « CMH I souvent réduit ».",
+   "source": "Ji 2023, section « Immune evasion in metastatic lymph nodes »",
+   "evidence": "« In a murine melanoma LNM model system, however, strong upregulation of MHC-I-encoding genes was observed […] Therefore, the precise role that MHC proteins play in shaping the process of LNM thus warrants further research. »",
+   "resolution": "Corrigé à edde1801 : phrase sur la surexpression du CMH I dans le modèle murin de mélanome (protection contre les cellules NK, rôle à préciser) ajoutée au texte et à la légende ; boîte « CMH I souvent réduit ». Conforme à Ji 2023, section « Immune evasion in metastatic lymph nodes »."
+  },
+  {
+   "id": "P-IMM-04",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_pop2.html c77-imm-msi, 1er paragraphe « quel que soit le primitif »",
+   "finding": "Généralisation : Onkopedia écrit « in verschiedensten Primärtumoren » (dans les primitifs les plus divers), non « quel que soit le primitif ».",
+   "correction_proposee": "Remplacer « quel que soit le primitif » par « dans des tumeurs primitives très diverses ».",
+   "source": "Onkopedia 2025 § 5.1.3.1.1",
+   "evidence": "« Diese Defekte führen zu einer sehr hohen somatischen Mutationslast in verschiedensten Primärtumoren mit sehr guten Ansprechchancen auf eine Therapie mit Immuncheckpointinhibitoren. »",
+   "resolution": "Corrigé à edde1801 : « dans des primitifs très variés », conforme à « in verschiedensten Primärtumoren » (Onkopedia 2025 § 5.1.3.1.1)."
+  },
+  {
+   "id": "P-IMM-05",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html encadré « Science → clinique. » et Figure 6, boîte « Ganglion réactionnel, souvent souple et sensible »",
+   "finding": "Glissement « infectieux » → « réactionnel » : SMW 2010 écrit que les ganglions souples et sensibles orientent vers une cause infectieuse ; il ne dit pas qu’un ganglion réactionnel (catégorie plus large, incluant les causes non infectieuses) est souvent souple et sensible. Le premier paragraphe de « La perturbation » est exact ; l’encadré et la figure élargissent. Par ailleurs, la conduite de l’encadré « Science → traitement. » (« ne pas étendre un curage sans indication ») s’appuie sur une revue chinoise et des données murines ; elle ne contredit pas Onkopedia (traitement local radical si une seule région ganglionnaire) mais gagnerait à le dire.",
+   "correction_proposee": "Écrire « … en réponse à un antigène du territoire drainé ; souple et sensible, il oriente vers une infection » ; boîte : « souple et sensible si infectieux ». Ajouter à « Science → traitement. » : « sans modifier le traitement local radical du CUP limité à une seule région ganglionnaire (Onkopedia 2025) ».",
+   "source": "SMW 2010, algorithme clinique ; Onkopedia 2025 § 5.1.1 ; Ji 2023 § Antitumor immunity and LND",
+   "evidence": "SMW 2010 : « Soft and tender nodes favour an infectious cause whereas a hard consistency and fixation to the underlying tissue is suspicious for malignancy. » Onkopedia : « Befall nur einer Lymphknotenregion erfolgt eine lokale radikale Therapie in kurativer Intention ».",
+   "resolution": "Corrigé à edde1801 : « Un ganglion souple et sensible oriente vers une infection » (SMW 2010) ; boîte « souple et sensible si infection » ; ajout « Le traitement local radical, à visée curative, d’une atteinte limitée à une seule région ganglionnaire reste inchangé (Onkopedia 2025) », conforme à « Befall nur einer Lymphknotenregion erfolgt eine lokale radikale Therapie in kurativer Intention »."
+  },
+  {
+   "id": "P-IMM-06",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html #c77-s-immuno-cours figure (Figure 6)",
+   "finding": "Rendu : à 390 px, le SVG (viewBox 640 × 210) est réduit à 296 px et son texte rendu à 5,5 px, illisible sans zoom par pincement (autorisé par la balise viewport) ; à 1300 px, le libellé « souvent souple et sensible » touche le bord gauche de sa boîte ; les liaisons sont des segments sans pointe de flèche, ce qui n’indique pas le sens causal. Limite partagée par les figures SVG existantes des autres disciplines C77 (même viewBox, même 5,5 px), donc non bloquante pour cet ajout.",
+   "correction_proposee": "Disposition verticale (une colonne de quatre boîtes par chaîne, viewBox ≈ 320 de large) ou deux lignes de deux boîtes ; raccourcir la 4e boîte ; ajouter des marqueurs de flèche (marker-end).",
+   "source": "Contrôle Chromium P, 15.10.2026",
+   "evidence": "Mesures : svg_box mobile 296 × 97 px, police rendue 5,5 px ; ordinateur 717 × 235 px, police 13,4 px ; fig_overflow 0 ; captures p_mobile_immuno_fig.png, p_desktop_immuno_fig.png (hors dépôt).",
+   "resolution": "Corrigé à edde1801 : figure 6 redessinée en deux colonnes verticales (viewBox 360 × 356), 6 flèches marker-end (id c77-imm-fl unique dans chapters/), police 13. Chromium P : 390 px → SVG 296 × 293 px, texte rendu 10,7 px lisible, aucun texte hors de sa boîte (contrôle getBBox), débordement de la figure 0 ; 1300 px → 25,9 px. Schéma de boîtes de texte, non anatomique. Capture p2_mobile_immuno_fig.png (hors dépôt)."
+  },
+  {
+   "id": "P-IMM-07",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "chapters/C77/C77_b.html (« certaines de ces immunothérapies sont hors indication enregistrée ») — hors périmètre de l’ajout",
+   "finding": "Observation connexe : d’après la FI suisse de Keytruda® (août 2026), aucune indication ne couvre le CUP ; « certaines » sous-estime le statut hors indication en Suisse. Le constat P-MED-10 (FI du pembrolizumab non lue) est en partie levé par cette lecture.",
+   "correction_proposee": "Écrire « ces immunothérapies sont hors indication enregistrée en Suisse dans le CUP (FI Keytruda®, août 2026 ; Onkopedia 2025) ».",
+   "source": "FI suisse Keytruda® (AmiKo, août 2026)",
+   "evidence": "Rubrique Indications/Possibilités d’emploi lue ; indications MSI-H/dMMR limitées au CC et aux cancers de l’endomètre, de l’estomac, de l’intestin grêle et des voies biliaires.",
+   "resolution": "Corrigé à edde1801 (C77_b) : « cet emploi est hors indication en Suisse : l’information professionnelle de Keytruda® (août 2026) n’inclut pas le CUP … », conforme à la FI relue par P."
+  },
+  {
+   "id": "P-IMM-08",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_b.html (c77-10), C77_c.html « Le pont vers le traitement du CUP », C77_pop2.html c77-imm-msi : « Onkopedia 2025 qualifie ces traitements d’« off-label » »",
+   "finding": "Attribution légèrement trop large : Onkopedia 2025 marque « off-label » le traitement en cas de TMB élevée et de PD-L1, mais pas la ligne « Therapie bei MSI-H oder MMR-Defekt: Therapie mit Pembrolizumab oder Atezolizumab ». Le statut hors indication en Suisse pour l’ensemble reste exact, puisqu’il découle de la FI Keytruda® ; seule l’attribution à Onkopedia est imprécise. Non bloquant.",
+   "correction_proposee": "Remplacer par « Onkopedia 2025 qualifie d’« off-label » le traitement fondé sur une charge mutationnelle élevée ou sur PD-L1 ».",
+   "source": "Onkopedia 2025 § 5.1.3.1.1",
+   "evidence": "« Therapie bei MSI-H oder MMR-Defekt Therapie mit Pembrolizumab oder Atezolizumab bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) bei immunogener Tumorbiologie mit PDL1-Expression: PD1/PDL1-Checkpointinhibitor in der 2. Therapielinie erwägen (off-label). »",
+   "resolution": "Corrigé à 980a26f7 dans C77_b, C77_c et c77-imm-msi : « Onkopedia 2025 qualifie d’« off-label » le traitement fondé sur une charge mutationnelle élevée ou sur PD-L1 ». Conforme à Onkopedia 2025 § 5.1.3.1.1 (mention « off-label » sur les seules lignes TMB-high et PD-L1, pas sur la ligne MSI-H/dMMR) ; plus aucune occurrence de l’ancienne formule dans chapters/C77. Le statut hors indication en Suisse reste fondé sur la FI Keytruda® (août 2026)."
+  },
+  {
+   "id": "P-PR158-00",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "C77_c.html #c77-sm-1, #c77-sm-3 et figure « Du mécanisme au signe » ; C77_pop2.html c77-sm-consistance",
+   "finding": "Les trois constats Codex de la PR #158 sont traités (7671b5cb, 56febc08). (1) Ganglions profonds : circonstances de découverte d’une adénopathie superficielle conformes à l’item 291 (« découverte par le patient lui-même. Sinon […] examen médical systématique ou orienté (par exemple par une douleur locale ou plus rarement des signes de compression) ») ; adénopathies abdominales et pelviennes « often discovered incidentally or during investigation related to a condition or disease » (SMW 2024) ; scanner et IRM apportant « a mediastinal or abdominal lymphadenopathy » lors d’une polyadénopathie (SMW 2010). (2) Figure : flèches ajoutées, lecture à 390 px correcte. (3) La causalité « dur parce que non inflammatoire » a disparu de #c77-sm-3, de la figure et de c77-sm-consistance ; elle est remplacée par une association, avec la réserve de SMW 2010 (« all these signs do not reliably differentiate between benign and malignant causes »). Les nuances résiduelles sont P-PR158-01 à 03.",
+   "evidence": "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »; Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique; Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2; Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+  },
+  {
+   "id": "P-PR158-01",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html #c77-sm-1 : « les adénopathies médiastinales se révèlent au scanner et s’explorent par ponction transbronchique guidée par échographie endobronchique (Swiss Medical Weekly 2024) »",
+   "finding": "Cette phrase va au-delà de la source. SMW 2024 réserve l’EBUS-TBNA aux adénopathies médiastinales volumineuses (> 10–15 mm) et groupées. En dessous de ce seuil, la revue précise qu’il n’existe pas de recommandation et mentionne la surveillance par scanner répété, le TEP-CT et l’EBUS-TBNA. Elle ne dit pas que ces adénopathies « se révèlent au scanner ».",
+   "correction_proposee": "« … les adénopathies médiastinales volumineuses (plus de 10 à 15 mm) et groupées s’explorent au mieux par ponction transbronchique guidée par échographie endobronchique ; en dessous de ce seuil, aucune recommandation n’existe (Swiss Medical Weekly 2024). »",
+   "source": "SMW 2024, « Mediastinal and abdominal lymphadenopathy »",
+   "evidence": "« For large (>10–15 mm) grouped mediastinal lymphadenopathies, the best investigation is an endobronchial ultrasound-guided transbronchial needle aspiration (EBUS-TBNA) […] There are no guidelines for isolated mediastinal lymphadenopathy of unclear aetiology below 10–15 mm (repeated CT scan to determine the evolution, PET/CT and EBUS-TBNA to monitor progression). »",
+   "resolution": "Corrigé à 05417b91 : « Pour des adénopathies médiastinales volumineuses (plus de 10 à 15 mm) et groupées, la meilleure exploration est la ponction transbronchique guidée par échographie endobronchique (Swiss Medical Weekly 2024) » ; « se révèlent au scanner » supprimé. Conforme à SMW 2024 (« For large (>10–15 mm) grouped mediastinal lymphadenopathies, the best investigation is an EBUS-TBNA »). L’absence de recommandation sous 10–15 mm n’est pas reprise : c’est une omission, pas une inexactitude."
+  },
+  {
+   "id": "P-PR158-02",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html #c77-sm-1 : « Les ganglions profonds, intrathoraciques, intra-abdominaux et intrapelviens, échappent en revanche à la palpation. »",
+   "finding": "Phrase exacte sur le fond, mais sans source dans la phrase ni dans le paragraphe. Les sources lues ne l’énoncent qu’implicitement : l’item 291 et le Collège 2013 limitent la palpation aux aires superficielles, et SMW 2024 oppose les ganglions inguinaux superficiels aux ganglions iliaques profonds.",
+   "correction_proposee": "Rattacher la phrase aux sources : « La palpation n’explore que les aires superficielles (cours universitaire francophone 2011 ; Collège de médecine interne 2013) ; les ganglions profonds lui échappent. »",
+   "source": "Item 291 § I.2 ; Collège 2013 § 1.1",
+   "evidence": "Item 291 : « territoires ganglionnaires superficiels : jugulocarotidien, sous-mandibulaire, occipital, sus-claviculaire… » ; Collège 2013 : « La palpation permet de reconnaître une ou des adénopathie(s) dans les principales aires où sont situés les ganglions physiologiques ».",
+   "resolution": "Corrigé à 05417b91 : la phrase sans source est remplacée par « Le diagnostic clinique d’adénopathie porte sur les territoires ganglionnaires superficiels (cours universitaire francophone 2011) ». Conforme à l’item 291 § I.2 : « Il est clinique en présence d’une tuméfaction acquise (> 1 cm) dans l’un des territoires ganglionnaires superficiels ». Dans « À retenir », la phrase sur le ganglion profond est remplacée par la découverte fortuite des adénopathies abdominales et pelviennes (SMW 2024)."
+  },
+  {
+   "id": "P-PR158-03",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html #c77-sm-3 : « le ganglion envahi est le plus souvent décrit ferme ou dur, indolore et non inflammatoire, puis peu mobile ou fixé (Collège de médecine interne 2013) » ; même formule « puis peu mobile » dans #c77-sm-3 ; figure « Souvent dur, indolore, puis fixé » ; À retenir « plus souvent dur et indolore »",
+   "finding": "Ces formulations vont au-delà de la source. Le Collège 2013 range ces caractères parmi ceux « en faveur d’une affection maligne », lymphomes compris. Il ne donne aucune fréquence (« le plus souvent », « plus souvent ») et aucune séquence (« puis fixé »). Le texte ne retient plus de causalité, ce qui répond au constat Codex.",
+   "correction_proposee": "« Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés sont en faveur d’une affection maligne, métastase comprise (Collège de médecine interne 2013). » Dans la figure, remplacer par « Dur, indolore, peu mobile ou fixé : en faveur ; non fiable ». Dans À retenir, écrire « Un ganglion dur et indolore est en faveur d’une affection maligne ».",
+   "source": "Collège 2013 § 1.2 ; item 291 (« dure, ligneuse, rocailleuse (en faveur d’un cancer) »)",
+   "evidence": "Collège 2013 : « Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés par rapport à la peau sont en faveur d’une affection maligne. »",
+   "resolution": "Corrigé à 05417b91 dans #c77-sm-3 (deux passages), la figure (« Dur, indolore, peu mobile : en faveur, non fiable » ; aria-label), et « À retenir » : « en faveur d’une affection maligne, lymphome compris », sans fréquence ni chronologie ; aucune occurrence restante de « puis fixé », « puis peu mobile », « plus souvent dur » ou « le plus souvent décrit » dans chapters/C77. Conforme au Collège 2013 § 1.2 (« Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés par rapport à la peau sont en faveur d’une affection maligne »)."
+  }
+ ],
+ "evidence": [
+  {
+   "ref": "sources_relues_par_P",
+   "items": [
+    "Onkopedia CUP-Syndrom, Stand September 2025 (deux extractions de la page, 15.10.2026)",
+    "Swiss Medical Weekly 2024;154:3549 (PDF, sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6)",
+    "Swiss Medical Weekly 2010;140:98–104 (PDF, sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f)",
+    "Liu et coll. Eur J Med Res 2023, texte intégral PMC et XML Europe PMC avec légendes",
+    "FI suisses Carboplatine Sandoz (02.2026) et Paclitaxel Accord (11.2023) via tools/swissmedic_fi.py",
+    "BfArM CIM-10-GM 2024, bloc C76–C80 (sous-codes C77)",
+    "Supports UMVF : sémiologie hématologique 2013 et item 291"
+   ]
+  },
+  {
+   "ref": "traitement_constats_alpha1",
+   "items": [
+    "MAJ-01 à MAJ-09 : appliqués et vérifiés (MAJ-09 en phase 2)",
+    "MIN-01 à MIN-12 : appliqués selon corrections.json ; échantillon vérifié (MIN-01, MIN-02, MIN-04, MIN-06, MIN-10, MIN-12)",
+    "ENR-01 à ENR-11 : intégrés ; ENR-04 (compression médullaire), ENR-05 (LEMO), ENR-07 (TMB), ENR-08 (FI) vérifiés"
+   ]
+  },
+  {
+   "ref": "frontend",
+   "controls": [
+    "test_v7.py --static C77 : OK ; build_medina.audit = {} sur les six fichiers HTML",
+    "build_front.py --fragment S06 reconstruit par P dans son dossier temporaire : 5 957 934 octets, identique à la taille rapportée par W",
+    "Chromium 1194 (servi en HTTP local, assets liés) : 1300 px et 390 px ; onglet pS → sous-onglet sémiologie visible par défaut, aria-selected=\"true\", 9 sections, premier h2 exact ; mot vert ouvre sa fenêtre (« Normal… ») ; débordement horizontal 0 ; aucune erreur JavaScript",
+    "390 px et police 24 px : libellé « Sémiologie fondamentale et analytique » sur deux lignes dans un bouton de 366 px, sans débordement (scrollWidth = clientWidth = 364) ; clavier Entrée et Espace activent les sous-onglets",
+    "Figure 1 SEER : image chargée (complete), légende visible contenant « domaine public », « Wikimedia Commons », « Ann Arbor » et « sans représenter les voies de drainage »",
+    "Captures P : scratchpad p_desktop_semio.png, p_mobile_semio.png, p_desktop_pop.png, p_mobile_pop.png, p_desktop_fig1.png, p_mobile_f24.png (hors dépôt) ; captures W versionnées dans integration/captures/"
+   ]
+  },
+  {
+   "ref": "verification_64257cb8",
+   "items": [
+    "Passages relus : c77-s-bioch-cours, c77-9, fenêtres c77-sources et c77-tep, clés FGFR2 et p.G12C de glossary/c77.py",
+    "test_v7.py --static C77 : OK au commit 64257cb8",
+    "Image SEER inchangée (sha256 bf7147bd…423f)"
+   ]
+  },
+  {
+   "ref": "cinquieme_discipline_sources",
+   "items": [
+    "Ji H et coll., Signal Transduct Target Ther 2023;8:367, texte intégral JATS Europe PMC PMC10522642 (sha256 7eaa0a07adc34d17f48e41f9e88b620bea93391f4aa1150018f46fb3cc8784e0), sections anatomie et physiologie, niche prémétastatique, échappement immunitaire, immunité antitumorale et curage",
+    "Richner S, Laifer G, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), résumé, introduction, algorithme clinique",
+    "Onkopedia CUP-Syndrom, Stand September 2025, page HTML (sha256 e81003aabdf8a20a3ca79394393839799bbbe58ad8ff703dc3a16d05350f90a5), § 4.2 (marqueurs de diagnostic), § 2.5/5.1.3.1 (CUPISCO, marqueurs d’immunosensibilité), § 5.1.3.1.1 (biologie immunogène, off-label)",
+    "Arasa J, Collado-Diaz V, Halin C, Cells 2021;10:1269 : résumé Europe PMC (PMID 34065513) et affiliations ; texte intégral PMC8161367 disponible mais non lu par W ni par P",
+    "Information professionnelle suisse Keytruda®, Swissmedic (AIPS via AmiKo, tools/swissmedic_fi.py), mise à jour août 2026, rubrique Indications (sha256 de l’extraction ab673e7ad8e9ba6dd0a508a6f9041f71730709d4e86e9ca99f5a34e12de8cf5f), consultée le 15.10.2026"
+   ]
+  },
+  {
+   "ref": "cinquieme_discipline_rendu",
+   "controls": [
+    "build_front.py --fragment S06, sortie hors dépôt (scratchpad/c77rev) : 5 976 660 → 3 741 440 octets, 654 gabarits",
+    "Chromium 1194 servi en HTTP local (port distinct d’un serveur tiers détecté sur 8793), 1300 px et 390 px : .sci-bar = Sémiologie fondamentale et analytique, Anatomie, Histologie, Physiologie, Biochimie et biologie moléculaire, Immunologie (5 disciplines + sémiologie) ; #c77-tab-semio aria-selected=true et c77-s-semio visible à l’ouverture ; c77-s-immuno caché avant clic",
+    "Clic sur Immunologie : c77-s-immuno visible, c77-s-semio caché, aria-selected basculé (immuno true, sémiologie false) ; h2 « Immunologie du ganglion : de la réponse normale à l’échappement tumoral » ; 1 138 mots rendus",
+    "Figure 6 : SVG role=img + aria-label + figcaption, aucune structure anatomique dessinée (8 boîtes de texte reliées par des segments) ; police rendue 13,4 px à 1300 px mais 5,5 px à 390 px (constat P-IMM-06) ; aucun débordement de la figure",
+    "Mot vert « instabilité microsatellitaire » ouvre la fenêtre c77-imm-msi (titre, texte CUPISCO et source lisibles à 390 px) ; Pareto pareto-c77-immuno : 42 mots sur 1 139, ratio calculé par le moteur",
+    "Défilement horizontal 0 (ordinateur et mobile) ; aucune erreur JavaScript (pageerror) ni erreur console",
+    "test_v7.py --static C77 : OK (24 012 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+    "Captures P hors dépôt : scratchpad/p_desktop_immuno_fig.png, p_mobile_immuno_fig.png, p_desktop_immuno_pop.png, p_mobile_immuno_pop.png"
+   ]
+  },
+  {
+   "ref": "cloture_cinquieme_discipline",
+   "controls": [
+    "Clôture sur edde1801 : build_front.py --fragment S06 hors dépôt (5 980 136 → 3 742 812 octets) ; Chromium 1194, 1300 et 390 px : sémiologie premier bouton sélectionné et visible, six sous-onglets ; Immunologie s’ouvre ; figure 6 lisible à 390 px (10,7 px), 6 flèches, aucun texte hors boîte ; c77-imm-msi contient la FI Keytruda® ; Pareto 52 mots sur 1 332 ; défilement horizontal 0 ; aucune erreur JavaScript ni console.",
+    "test_v7.py --static C77 : OK (24 315 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML.",
+    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010.",
+    "Mise à jour 980a26f7 : correction P-IMM-08 relue contre Onkopedia 2025 § 5.1.3.1.1 ; test_v7.py --static C77 OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML ; empreintes recalculées."
+   ]
+  },
+  {
+   "ref": "revue_codex_pr158",
+   "items": [
+    "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »",
+    "Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique",
+    "Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2",
+    "Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+   ],
+   "controls": [
+    "build_front.py --fragment S06 hors dépôt (5 982 422 → 3 743 552 octets) ; Chromium 1194 servi en HTTP local",
+    "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
+    "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
+    "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+    "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png",
+    "Mise à jour 05417b91 : P-PR158-01 à 03 relus contre SMW 2024, l’item 291 et le Collège 2013 ; Chromium 1300 et 390 px, figure « Du mécanisme au signe » : 6 flèches, aucun texte hors cadre, aucun débordement, aucune erreur JavaScript ni console ; test_v7.py --static C77 OK ; build_medina.audit = {} sur les six fichiers HTML ; empreintes recalculées."
+   ]
+  }
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine. Les empreintes et contrôles techniques ne certifient pas l’exactitude médicale.",
+ "revue_cinquieme_discipline": {
+  "date": "2026-10-15",
+  "commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
+  "agent": "Agent P, relecteur indépendant de l’ajout de W (bd50fdc8)",
+  "perimetre": "Sous-onglet Immunologie c77-s-immuno (C77_c.html), fenêtres c77-imm-msi et pareto-c77-immuno (C77_pop2.html), clé CUPISCO (glossary/c77.py)",
+  "bloquants": 0,
+  "constats_ouverts_non_bloquants": [],
+  "note": "Revue IA, distincte d’une validation médicale humaine.",
+  "commit_cloture": "980a26f773cbbf488403b9f181e22750176eb1b8"
+ },
+ "revue_codex_pr158": {
+  "date": "2026-10-15",
+  "commit": "56febc0836e92751b51122ed968a6b2d7abe799a",
+  "commits_revus": [
+   "7671b5cb",
+   "56febc08"
+  ],
+  "agent": "Agent P, relecteur indépendant",
+  "perimetre": "Corrections de W après la revue Codex de la PR #158 : #c77-sm-1 (ganglions profonds), figure « Du mécanisme au signe », causalité de la consistance (#c77-sm-3, figure, c77-sm-consistance)",
+  "sources_ouvertes_par_P": [
+   "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »",
+   "Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique",
+   "Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2",
+   "Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+  ],
+  "rendu": [
+   "build_front.py --fragment S06 hors dépôt (5 982 422 → 3 743 552 octets) ; Chromium 1194 servi en HTTP local",
+   "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
+   "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
+   "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+   "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png",
+   "Mise à jour 05417b91 : P-PR158-01 à 03 relus contre SMW 2024, l’item 291 et le Collège 2013 ; Chromium 1300 et 390 px, figure « Du mécanisme au signe » : 6 flèches, aucun texte hors cadre, aucun débordement, aucune erreur JavaScript ni console ; test_v7.py --static C77 OK ; build_medina.audit = {} sur les six fichiers HTML ; empreintes recalculées."
+  ],
+  "bloquants": 0,
+  "constats_ouverts_non_bloquants": [],
+  "note_recu": "Les empreintes des fichiers revue/ et des sources changent : le reçu Alpha f577d649 doit être régénéré par W.",
+  "mention": "Revue IA, distincte d’une validation médicale humaine.",
+  "commit_cloture": "05417b91cd027d0be3b506820c327f33407b9623"
+ }
+}

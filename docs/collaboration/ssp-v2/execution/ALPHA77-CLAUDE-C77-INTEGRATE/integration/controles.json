@@ -1,0 +1,185 @@
+{
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "code": "C77",
+ "fragment": "S06",
+ "phase": 2,
+ "agent": "W",
+ "date": "2026-10-15",
+ "branche": "claude/alpha77/c77-integrate-g1",
+ "prep_utilise": "prep/READY.json (commit b417e5c8)",
+ "integration": [
+  {
+   "element": "sous-onglet sémiologie",
+   "fichier": "chapters/C77/C77_c.html",
+   "action": "bouton c77-tab-semio en tête de .sci-bar (aria-selected=\"true\"), ancien premier bouton c77-s-anat à \"false\" ; panneau c77-s-semio en tête de .sci-body ; c77-s-anat masqué (hidden)",
+   "source": "prep/semiologie_sciences.html"
+  },
+  {
+   "element": "bloc clinique pA",
+   "fichier": "chapters/C77/C77_a.html",
+   "ancre": "îlot c77-6, avant le bouton Pareto « Anamnèse et examen clinique »",
+   "source": "prep/semiologie_clinique.html"
+  },
+  {
+   "element": "10 fenêtres c77-sm-*",
+   "fichier": "chapters/C77/C77_pop2.html",
+   "action": "ajoutées en fin de C77_pop2.html (correctif coordinateur : C77_pop3.html non admis par tools/alpha_publication.py ; fichier jamais suivi par Git, supprimé avant commit)",
+   "source": "prep/pop_semiologie.html"
+  },
+  {
+   "element": "Figure 1 (MAJ-09)",
+   "fichier": "chapters/C77/C77_c.html",
+   "action": "schéma anatomique dessiné remplacé par l’original SEER/NCI (domaine public) en <img alt> + <figcaption> avec attribution, sans enrobage SVG",
+   "source": "prep/figures.html, prep/figures.json",
+   "asset": {
+    "path": "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg",
+    "sha256": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f"
+   }
+  },
+  {
+   "element": "clé de glossaire NCI",
+   "fichier": "glossary/c77.py",
+   "source": "prep/glossaire_ajouts.json"
+  },
+  {
+   "element": "signalement P — urgence c77-8",
+   "fichier": "chapters/C77/C77_b.html",
+   "action": "formulation « aucune urgence » supprimée ; l’alerte ouvre sur la compression médullaire, urgence oncologique du CUP métastatique, avec le pronostic défavorable si métastases viscérales ou perte de la marche",
+   "source": "Onkopedia CUP-Syndrom 09.2025, § 5.3.1 (texte relu le 15.10.2026)"
+  },
+  {
+   "element": "signalement P — attribution CCL21",
+   "fichier": "chapters/C77/C77_pop1.html (c77-ccl21)",
+   "action": "attribution VÉRIFIÉE : Liu et coll. 2023 nomment CCL21 dans la légende de la figure 3 (« CCL21 expressed by LECs can induce CCR7-dependent cancer cells into lymphatic vessels ») ; le corps du texte décrit l’attraction des cellules CCR7 par l’endothélium lymphatique. La fenêtre précise désormais ce point ; c77-3 et la Figure 4 (chaîne de la dissémination) restent exacts.",
+   "source": "Liu et coll., Eur J Med Res 2023;28:405, texte intégral Europe PMC (PMC10559534, fullTextXML), Fig. 3, consulté le 15.10.2026"
+  },
+  {
+   "element": "disciplines scientifiques existantes",
+   "fichier": "chapters/C77/C77_c.html",
+   "action": "Anatomie, Histologie, Physiologie et Biochimie portées au-delà de 280 mots avec contenu sourcé (Liu 2023 texte intégral ; Onkopedia 2025) et encadrés Science → clinique / examen / traitement / À retenir complétés ; nouvelle Figure 2 non anatomique (de la région atteinte au bilan ciblé, schéma de synthèse sourcé) pour que l’Anatomie garde une figure SVG non anatomique ; figures suivantes renumérotées 3 à 5",
+   "source": "Liu 2023 ; Onkopedia 2025 ; Swiss Medical Weekly 2024"
+  }
+ ],
+ "controles": {
+  "test_v7_static": "OK",
+  "test_v7_navigateur": "OK (--url du fragment S06 servi en HTTP local, Chromium 1194)",
+  "build_medina_audit": "{} (via test_v7)",
+  "construction": "MEDINA_OUT dans le scratchpad : python3 build_front.py --fragment S06 → fragments/MEDINA_S06_hematopoietique-lymphatique.html (5 957 934 octets ; aucun fichier produit dans le dépôt)",
+  "audit_sciences": {
+   "execution_officielle": "impossible : C77_c.html absent du commit de base c50a28a2 et C77 hors liste d’exemption (fichier partagé tests/)",
+   "simulation": "mêmes contrôles appliqués au fichier actuel par les fonctions de tests/audit_sciences.py",
+   "unites": [
+    {
+     "id": "c77-s-semio",
+     "words": 4982,
+     "figures": 1,
+     "svg": 1
+    },
+    {
+     "id": "c77-s-anat",
+     "words": 649,
+     "figures": 2,
+     "svg": 1
+    },
+    {
+     "id": "c77-s-histo",
+     "words": 401,
+     "figures": 1,
+     "svg": 1
+    },
+    {
+     "id": "c77-s-physio",
+     "words": 390,
+     "figures": 1,
+     "svg": 1
+    },
+    {
+     "id": "c77-s-bioch",
+     "words": 343,
+     "figures": 1,
+     "svg": 1
+    }
+   ],
+   "erreurs": [
+    "c77-s-anat: figure sans légende ou nom accessible (img)"
+   ],
+   "faux_positif_connu": "c77-s-anat : « figure sans légende ou nom accessible » déclenché par la seule Figure 1 en <img alt> + <figcaption> (image réelle) ; décision coordinateur : consigné, aucun SVG factice ajouté."
+  },
+  "rendu_chromium": {
+   "url": "http://127.0.0.1:8777/MEDINA_S06_hematopoietique-lymphatique.html",
+   "checks": {
+    "desktop": {
+     "cours_affiche": true,
+     "bloc_clinique_pA": true,
+     "onglet_semio_premier": true,
+     "onglet_semio_aria_selected": "true",
+     "panneau_semio_visible": true,
+     "autres_panneaux_masques": true,
+     "sections_semiology": 9,
+     "titre_exact": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "debordement_horizontal": false,
+     "fenetre_ouverte": true,
+     "semio_masque_apres_bascule": true,
+     "figure1_image_chargee": true,
+     "figure1_dans_svg": false,
+     "cles_sans_fenetre": []
+    },
+    "mobile": {
+     "cours_affiche": true,
+     "bloc_clinique_pA": true,
+     "onglet_semio_premier": true,
+     "onglet_semio_aria_selected": "true",
+     "panneau_semio_visible": true,
+     "autres_panneaux_masques": true,
+     "sections_semiology": 9,
+     "titre_exact": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "debordement_horizontal": false,
+     "fenetre_ouverte": true,
+     "semio_masque_apres_bascule": true,
+     "figure1_image_chargee": true,
+     "figure1_dans_svg": false
+    }
+   },
+   "js_errors": [],
+   "console_errors": [],
+   "captures": [
+    "c77_desktop_ouverture.png",
+    "c77_desktop_semiologie.png",
+    "c77_desktop_fenetre.png",
+    "c77_desktop_figure1.png",
+    "c77_mobile_ouverture.png",
+    "c77_mobile_semiologie.png",
+    "c77_mobile_fenetre.png",
+    "c77_mobile_figure1.png"
+   ],
+   "result": "passed"
+  }
+ },
+ "empreintes": {
+  "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
+  "chapters/C77/C77_b.html": "c6e9bbe6f8f43e1a1006c4238022c7dedbc6cd53c2fd0979d99e15225d291f39",
+  "chapters/C77/C77_c.html": "aa8bc3990b2f48a8b9cc997e5a9795fd0159ed7d3d88039f561ec3e2bad3e6c8",
+  "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
+  "chapters/C77/C77_pop1.html": "eccb2992db3cf755af500fd40db0e6b1ea4e5f8402568b90a2e5009e0ea96738",
+  "chapters/C77/C77_pop2.html": "3a4c2252d76dff23f858b1b7e88c1097da139277fc2cacd0bd86c7613405a224",
+  "glossary/c77.py": "1c253f84aba39238d8af976956eeea01c891cfb30a39409cf694ef841f471d86"
+ },
+ "captures": [
+  "c77_desktop_fenetre.png",
+  "c77_desktop_figure1.png",
+  "c77_desktop_figure2_schema.png",
+  "c77_desktop_ouverture.png",
+  "c77_desktop_semiologie.png",
+  "c77_mobile_fenetre.png",
+  "c77_mobile_figure1.png",
+  "c77_mobile_figure2_schema.png",
+  "c77_mobile_ouverture.png",
+  "c77_mobile_semiologie.png"
+ ],
+ "differes": [
+  "espaces insécables globales",
+  "phase 3 (reçu Alpha) non réalisée"
+ ],
+ "medical_human_validation": false,
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
