@@ -303,6 +303,20 @@ def audit_fragment(tree, fragment, original):
 
 
 def validate_fragment_guard(before, after):
+    try:
+        try:
+            from tools.project_governance import check as governance_check, GovernanceError
+            from tools.publication_en_etat import validate as publication_in_state, PublicationError
+        except ModuleNotFoundError:
+            from project_governance import check as governance_check, GovernanceError
+            from publication_en_etat import validate as publication_in_state, PublicationError
+        governance_check(before, after)
+        changed = {p for p in before.entries.keys() | after.entries.keys()
+                   if before.entries.get(p) != after.entries.get(p)}
+        if publication_in_state(before, after, changed):
+            return []
+    except (GovernanceError, PublicationError) as error:
+        raise FragmentError(str(error)) from error
     old, new = fragment_records(before), fragment_records(after)
     if old is not None and new is None:
         raise FragmentError("Suppression du registre ou abandon du protocole interdit.")
@@ -563,8 +577,63 @@ def injecter(code):
     pousser(f"Injecter {code} ({auteur}) après audit croisé de {a['auditeur']}", *f, str(d.relative_to(W)))
     print(f"Injecté : {code}")
 
+def guard_transitions(root, av, ap):
+    """Rejoue les commits d'un push linéaire, en conservant les gardes unitaires.
+
+    Une comparaison entre branches ou hors chaîne premier parent reste agrégée.
+    Aucun fetch, checkout ou déplacement de référence n'est effectué.
+    """
+    def resolve(revision):
+        result = subprocess.run(['git', 'rev-parse', '--verify', revision + '^{commit}'],
+                                cwd=root, capture_output=True, text=True)
+        if result.returncode:
+            raise FragmentError('Révision Git illisible : ' + revision)
+        return result.stdout.strip()
+    first, last = resolve(av), resolve(ap)
+    result = subprocess.run(['git', 'rev-list', '--first-parent', '--reverse', first + '..' + last],
+                            cwd=root, capture_output=True, text=True)
+    if result.returncode:
+        raise FragmentError('Chaîne Git illisible')
+    commits = result.stdout.splitlines()
+    if commits:
+        parent = subprocess.run(['git', 'rev-parse', commits[0] + '^1'], cwd=root,
+                                capture_output=True, text=True)
+        if parent.returncode == 0 and parent.stdout.strip() == first:
+            return list(zip([first] + commits[:-1], commits))
+    return [(first, last)]
+
+
 def garde(av, ap):
     try:
+        transitions = guard_transitions(R, av, ap)
+        # Une préparation peut déposer les copies puis le catalogue/reçu dans
+        # plusieurs commits. L'autorisation porte sur le résultat en l'état du
+        # lot entier, avec provenance exacte et historiques inchangés.
+        try:
+            try:
+                from tools.project_governance import check as governance_check, GovernanceError
+                from tools.publication_en_etat import validate as publication_in_state, PublicationError
+            except ModuleNotFoundError:
+                from project_governance import check as governance_check, GovernanceError
+                from publication_en_etat import validate as publication_in_state, PublicationError
+            before, after = GitTree(R, av), GitTree(R, ap)
+            governance_check(before, after)
+            changed = {p for p in before.entries.keys() | after.entries.keys()
+                       if before.entries.get(p) != after.entries.get(p)}
+            if publication_in_state(before, after, changed):
+                for start, finish in transitions:
+                    governance_check(GitTree(R, start), GitTree(R, finish))
+                print('Publication en l’état : provenance exacte, périmètre et veto vérifiés ; aucun audit médical nouveau déclaré.')
+                return 0
+        except (GovernanceError, PublicationError) as error:
+            raise FragmentError(str(error)) from error
+        if len(transitions) > 1:
+            for start, finish in transitions:
+                result = garde(start, finish)
+                if result:
+                    return result
+            print(f'Garde : {len(transitions)} transitions Git successives vérifiées.')
+            return 0
         before, after = GitTree(R, av), GitTree(R, ap)
         errors = validate_fragment_guard(before, after)
         if errors is not None:

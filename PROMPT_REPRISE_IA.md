@@ -1,3 +1,11 @@
+## Instruction active — parité et publication en l’état, 15 octobre 2026
+
+Lire d’abord [la politique commune](docs/collaboration/instructions/PUBLICATION_EN_ETAT_PARITE_2026-10-15.md). Codex et Claude ont les mêmes pouvoirs administratifs locaux et le même droit de veto dans tout MEDINA ; les anciens leaderships, STOP et privilèges d’injection incompatibles sont historiques. L’opération actuelle publie les cours existants, y compris incomplets, de Neurologie, Endocrinologie et métabolisme, Néphrologie et Hématologie, sans modifier les contenus médicaux. Utiliser le reçu de provenance et la garde de publication en l’état ; conserver les statuts provisoires et toutes les preuves historiques. Les droits GitHub dépendent des connexions réellement accordées. Les veto sont tracés dans `organisation/governance_events.jsonl` ; Vial reste l’autorité prioritaire.
+
+---
+
+Les instructions antérieures ci-dessous sont conservées pour leur historique. La politique du 15 octobre prime sur leurs dispositions incompatibles.
+
 # Prompt de reprise MEDINA, à donner tel quel à l’IA suivante
 
 Tu reprends le projet **MEDINA**, un atlas de cours de médecine en français. Il prépare le Dr Vial Tato Djoukang à l’examen fédéral suisse de médecine humaine. Le dépôt GitHub est `vialdjoukang-spec/medina`. Tu travailles sur la branche `claude/medina-alpha-integration-7dul4i`. Tu fais un commit et un push à chaque étape validée. Tu ne crées aucune demande de fusion sans accord explicite.

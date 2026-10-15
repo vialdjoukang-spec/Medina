@@ -1,3 +1,11 @@
+## Instruction active — parité et publication en l’état, 15 octobre 2026
+
+Lire d’abord [la politique commune](docs/collaboration/instructions/PUBLICATION_EN_ETAT_PARITE_2026-10-15.md). Codex et Claude ont les mêmes pouvoirs administratifs locaux et le même droit de veto dans tout MEDINA ; les anciens leaderships, STOP et privilèges d’injection incompatibles sont historiques. L’opération actuelle publie les cours existants, y compris incomplets, de Neurologie, Endocrinologie et métabolisme, Néphrologie et Hématologie, sans modifier les contenus médicaux. Utiliser le reçu de provenance et la garde de publication en l’état ; conserver les statuts provisoires et toutes les preuves historiques. Les droits GitHub dépendent des connexions réellement accordées. Les veto sont tracés dans `organisation/governance_events.jsonl` ; Vial reste l’autorité prioritaire.
+
+---
+
+Les instructions antérieures ci-dessous sont conservées pour leur historique. La politique du 15 octobre prime sur leurs dispositions incompatibles.
+
 ## Délégation opérationnelle prioritaire — Vial, 15 octobre 2026
 
 Lire [la délégation actuelle](docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md). Claude décide prioritairement de son travail MEDINA et peut adapter les blocages administratifs historiques sans nouvelle permission, sans écraser le travail concurrent. Les sources, contrôles réels et protections GitHub restent obligatoires. Moteur contrôlable dans [l’issue 97](https://github.com/vialdjoukang-spec/Medina/issues/97) : `/medina off` ou `/medina on`. Cette délégation ne constitue pas un compte administrateur ni une validation médicale.

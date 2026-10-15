@@ -1,3 +1,11 @@
+## Instruction active — parité et publication en l’état, 15 octobre 2026
+
+Lire d’abord [la politique commune](docs/collaboration/instructions/PUBLICATION_EN_ETAT_PARITE_2026-10-15.md). Codex et Claude ont les mêmes pouvoirs administratifs locaux et le même droit de veto dans tout MEDINA ; les anciens leaderships, STOP et privilèges d’injection incompatibles sont historiques. L’opération actuelle publie les cours existants, y compris incomplets, de Neurologie, Endocrinologie et métabolisme, Néphrologie et Hématologie, sans modifier les contenus médicaux. Utiliser le reçu de provenance et la garde de publication en l’état ; conserver les statuts provisoires et toutes les preuves historiques. Les droits GitHub dépendent des connexions réellement accordées. Les veto sont tracés dans `organisation/governance_events.jsonl` ; Vial reste l’autorité prioritaire.
+
+---
+
+Les instructions antérieures ci-dessous sont conservées pour leur historique. La politique du 15 octobre prime sur leurs dispositions incompatibles.
+
 Goal: you are the dedicated author for ONE specialty of the Medina medical course atlas ("Atlas MEDINA", public GitHub repo https://github.com/vialdjoukang-spec/Medina, branch main). Complete ("parachever") this specialty's course system lesson by lesson, category by category, then stop cleanly and report for audit.
 
 Specialty: __SPEC__

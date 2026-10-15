@@ -1,3 +1,11 @@
+## Instruction active — parité et publication en l’état, 15 octobre 2026
+
+Lire d’abord [la politique commune](docs/collaboration/instructions/PUBLICATION_EN_ETAT_PARITE_2026-10-15.md). Codex et Claude ont les mêmes pouvoirs administratifs locaux et le même droit de veto dans tout MEDINA ; les anciens leaderships, STOP et privilèges d’injection incompatibles sont historiques. L’opération actuelle publie les cours existants, y compris incomplets, de Neurologie, Endocrinologie et métabolisme, Néphrologie et Hématologie, sans modifier les contenus médicaux. Utiliser le reçu de provenance et la garde de publication en l’état ; conserver les statuts provisoires et toutes les preuves historiques. Les droits GitHub dépendent des connexions réellement accordées. Les veto sont tracés dans `organisation/governance_events.jsonl` ; Vial reste l’autorité prioritaire.
+
+---
+
+Les instructions antérieures ci-dessous sont conservées pour leur historique. La politique du 15 octobre prime sur leurs dispositions incompatibles.
+
 ## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
 
 Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](docs/collaboration/instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).
