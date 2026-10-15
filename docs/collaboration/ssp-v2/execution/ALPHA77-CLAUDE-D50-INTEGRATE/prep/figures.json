@@ -1,0 +1,105 @@
+{
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "code": "D50",
+ "agent": "Agent P",
+ "date": "2026-10-15",
+ "inventaire": "python3 tools/image_clo_finder.py inventory D50 croisé avec la clé figures de ALPHA1-CLAUDE-D50-MED/rapport.json : 8 figures ; 1 ANATOMIQUE_IA (Figure 3, frottis dessiné, MED-M4), 0 ORIGINE_INCONNUE, 4 schémas non anatomiques, 3 images sourcées.",
+ "recherche": {
+  "outil": "python3 tools/image_clo_finder.py candidates \"normal peripheral blood smear red blood cells\" --direct",
+  "date_utc": "2026-10-15T20:22:02Z",
+  "fournisseur": "commons",
+  "resultats": 3,
+  "incidents": [
+   "Premier appel refusé : cooldown partagé Commons en cours (respecté, un seul nouvel essai après expiration).",
+   "Téléchargement : HTTP 400 sur une largeur non standard (1200 px), puis HTTP 429 ; un seul essai espacé a réussi en 1280 px."
+  ],
+  "candidats": [
+   {
+    "titre": "File:Кров людини.jpg",
+    "statut_outil": "NEEDS_REVIEW",
+    "decision": "RETENU",
+    "motif": "Frottis humain normal déclaré, coloration de Romanowsky et Giemsa, microscope Zeiss Axio Imager M1 et caméra AxioCam HR (EXIF), concours Wiki Science Competition Ukraine 2021, CC BY 4.0 compatible avec la micrographie ferriprive CC BY 2.0."
+   },
+   {
+    "titre": "File:WBC (neutrophil) at centre, numerous erythrocytes and platelets (dot like bodies) in Wright's stained peripheral blood smear (PBS) microscopy.jpg",
+    "statut_outil": "NEEDS_REVIEW",
+    "decision": "ÉCARTÉ",
+    "motif": "Photographie au téléphone (Samsung GT-I9300) à travers l’oculaire : dominante colorée, hématies superposées et formes ambiguës à l’examen visuel ; mauvais modèle de normalité. CC BY-SA 4.0."
+   },
+   {
+    "titre": "File:Tear Drop Cells in PBS Microscopy.jpg",
+    "statut_outil": "NEEDS_REVIEW",
+    "decision": "ÉCARTÉ",
+    "motif": "Dacrocytes : frottis pathologique, non normal."
+   }
+  ]
+ },
+ "figures": [
+  {
+   "figure_remplacee": "Figure 3 — frottis schématique dessiné (svg aria-label « Frottis schématique normal puis microcytaire et hypochrome »), classe ANATOMIQUE_IA, constat MED-M4 (MAJEUR) ; déjà supprimée par l’Agent W au commit bf169616",
+   "fichier": "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg",
+   "emplacement_cible": "chapters/D50/D50_c.html#d50-s-histo-body, avant la micrographie ferriprive (bloc HISTO de prep/figures.html)",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D1%80%D0%BE%D0%B2_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B8.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/%D0%9A%D1%80%D0%BE%D0%B2_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B8.jpg",
+   "fichier_telecharge_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/%D0%9A%D1%80%D0%BE%D0%B2_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B8.jpg/1280px-%D0%9A%D1%80%D0%BE%D0%B2_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B8.jpg",
+   "note_fichier": "Rendu 1280 × 959 px produit par Wikimedia Commons à partir de l’original 3000 × 2248 px (9,96 Mo) ; aucune autre modification.",
+   "auteur": "Степанюк Ярослав | Борис Максим (photo) ; compte téléverseur SlavaSSG ; images prises à l’Institut de zoologie Schmalhausen, Académie nationale des sciences d’Ukraine",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "Степанюк Ярослав et Борис Максим, « Кров людини », CC BY 4.0, via Wikimedia Commons",
+   "provenance_humaine": "Déclaration « Own work » du détenteur des droits ; métadonnées EXIF AxioCam HR, Lightroom Classic 8.3.1, 21.11.2019 ; concours scientifique Wikimedia 2021. Aucun marqueur de génération par IA. L’absence de marqueur ne prouve pas à elle seule l’origine humaine.",
+   "sha256": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9",
+   "octets": 874697,
+   "dimensions": [
+    1280,
+    959
+   ],
+   "controle_visuel": "Image ouverte avec l’outil Read le 15.10.2026, en entier puis en recadrage agrandi : nappe dense d’hématies rondes, de taille et de teinte homogènes, sans cellule anormale visible à ce grossissement ; barre d’échelle « 100 µm » en haut à gauche ; rares cellules nucléées. Contenu conforme à la légende proposée.",
+   "reserves": [
+    "Faible grossissement : la clarté centrale est peu visible ; la taille apparente ne se compare pas à celle de la micrographie ferriprive, prise à fort grossissement (précisé dans la légende).",
+    "Le rapport MED demandait un choix humain du frottis normal : la sélection reste une revue IA, sans validation médicale humaine.",
+    "Fichier de 875 Ko, plus lourd que les autres images de la leçon (90–190 Ko) ; une recompression éventuelle par W devrait être mentionnée comme modification au titre de la licence CC BY 4.0."
+   ]
+  },
+  {
+   "figure_remplacee": "Aucune — Micrographie 1 (frottis ferriprive) conservée et intégrée au même bloc",
+   "fichier": "assets/img/cycle1/d50/iron_deficiency_anemia_peripheral_blood_smear_4422704616.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Iron-deficiency_Anemia,_Peripheral_Blood_Smear_(4422704616).jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Iron-deficiency_Anemia%2C_Peripheral_Blood_Smear_%284422704616%29.jpg",
+   "auteur": "Ed Uthman from Houston, TX, USA (Flickr 4422704616)",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+   "attribution": "Ed Uthman from Houston, TX, USA, CC BY 2.0, via Wikimedia Commons",
+   "sha256": "492afe5c15e7622c82fde598dd951ded7ba71daff1b4287d8f3d011790983e2e",
+   "controle_visuel": "Image ouverte avec l’outil Read le 15.10.2026 : hématies petites et pâles à large clarté centrale, quelques formes allongées, une cellule ronde à noyau dense et cytoplasme réduit au centre, compatible avec un petit lymphocyte.",
+   "verification_page": "Page Commons relue le 15.10.2026 : licence CC BY 2.0, revue de licence par bot le 11.12.2013 ; description : anémie microcytaire hypochrome très avancée, VGM 55 fL pour une référence de 80–94 fL.",
+   "reserves": [
+    "La description Commons ne mentionne pas le lymphocyte : l’identification repose sur l’examen visuel.",
+    "Référence 80–94 fL propre au laboratoire d’origine ; l’échelle SVG le précise."
+   ]
+  },
+  {
+   "figure_remplacee": "Aucune — échelle SVG non anatomique ajoutée dans la même figure pour satisfaire tests/audit_sciences.py (svg[role=img][aria-label] requis dans chaque figure de pS)",
+   "fichier": "prep/figures.html (bloc HISTO)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "valeurs": "55 fL et 80–94 fL, page Commons de la micrographie ferriprive",
+   "controle_visuel": "Rendu Chromium 1194 du SVG vérifié le 15.10.2026 (graduations 40–110, rectangle 80–94, repère 55).",
+   "reserves": []
+  },
+  {
+   "figure_remplacee": "Aucune — figure nouvelle du sous-onglet sémiologie",
+   "fichier": "prep/semiologie_sciences.html (îlot d50-sm-3)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "contenu": "Chaîne causale en blocs de texte : compartiment du fer → perturbation → signes ; aucun organe, cellule ou structure dessinés.",
+   "sources_des_fleches": [
+    "Hème et transport de l’oxygène ; enzymes mitochondriales et capacité oxydative : Clénin 2017",
+    "Signes de l’anémie et troubles trophiques : Onkopedia 2025 § 3.1",
+    "Fer du système nerveux central et dopamine : Trenkwalder et al. 2024"
+   ],
+   "controle_visuel": "Rendu Chromium 1194 vérifié le 15.10.2026 : aucun texte tronqué, flèches orientées de gauche à droite.",
+   "reserves": []
+  }
+ ],
+ "autres_figures": "Photographie 1 (koilonychie, CHeitz, CC BY 2.0), Photographie 2 (chéilite, Matthew Ferguson 57, CC BY-SA 3.0), Figures 1, 2, 4 et 5 (schémas non anatomiques) : conservées selon le rapport MED ; non retraitées ici.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; publication_ready reste false au sens d’Image_Codex_Finder."
+}
