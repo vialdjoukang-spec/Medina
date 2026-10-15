@@ -1,7 +1,7 @@
 {
  "actor": "C03-R-ENDO",
  "verdict": "conforme",
- "checked_at": "2026-10-14T22:53:02.684569+00:00",
+ "checked_at": "2026-10-15T11:32:58.983239+00:00",
  "prompt_files": {
   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -17,7 +17,7 @@
     {
      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
-     "explanation": "Autorité lue le 14.10.2026 : cycles 3 à 30 recherchés, rédigés puis publiés directement, audit différé après le Cycle 30 ; mention « revue IA, sans validation médicale humaine » obligatoire ; E05 est la mission E-06 du Cycle 3 (plan_tetrade_30_cycles.json)."
+     "explanation": "Relu le 15.10.2026 à l'ouverture du Cycle 3 : publication directe des cycles 3 à 30, audit différé après le Cycle 30, mention revue IA sans validation médicale humaine ; E05 relève de la mission E-06."
     }
    ]
   },
@@ -28,7 +28,7 @@
     {
      "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/dossier_sources.json",
      "sha256": "a064e7ad27188eed11ed6b6cc5c7d4d37f82ada0d500e07d81fc8e3cfff289af",
-     "explanation": "Écritures limitées au dossier CYCLE_03_E05 (preuves, assets/img/cycle3/e05) ; textes sources téléchargés hors dépôt (scratchpad) avec empreinte SHA-256 de chaque fichier lu ; aucun commit ni push."
+     "explanation": "Revue limitée au dossier CYCLE_03_E05 (chapters, glossary, preuves) ; aucune écriture hors dossier, aucun git ; provenance consignée dans dossier_sources.json."
     }
    ]
   },
@@ -39,7 +39,7 @@
     {
      "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/dossier_sources.json",
      "sha256": "a064e7ad27188eed11ed6b6cc5c7d4d37f82ada0d500e07d81fc8e3cfff289af",
-     "explanation": "42 sources réellement lues le 14.10.2026 (ETA 2018 Basedow en entier, EANM 2023, EUGOGO 2021 via page éditeur, JTA 2016, SSCC 2025, BAG 2025, OSAV, ARS MEDICI 2023, 11 FI Swissmedic du produit exact, catalogue Risch) ; 129 affirmations avec passage, section, date et empreinte ; sources non lues listées (HAS 2022)."
+     "explanation": "Dossier de 42 sources et 129 affirmations relu avant la revue ; chaque passage porte section, date et empreinte ; sources non lues listées."
     }
    ]
   },
@@ -48,9 +48,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
-     "sha256": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
-     "explanation": "Contrat lu : la SSED n'a pas de recommandation propre sur l'hyperthyroïdie (lacune documentée, page SSED Schilddrüse) ; décisions européennes ETA/EANM/EUGOGO, JTA pour la crise faute de source européenne détaillée, aucune origine américaine décisionnelle ; doses selon les FI suisses ; tensions FI–ETA listées (T1–T12)."
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/contexte_suisse_claude.json",
+     "sha256": "dd0798169efca770b01f721f6660c5046ae7748b954ead5981635de154d04d30",
+     "explanation": "Contexte suisse relu : FI Swissmedic pour les doses, ETA/EANM/EUGOGO pour l'Europe, lacune SSED déclarée, aucune source américaine décisionnelle."
     }
    ]
   },
@@ -61,7 +61,7 @@
     {
      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
-     "explanation": "Mode direct : aucune lecture croisée ni contre-audit au Cycle 3 ; aucun audit n'est déclaré réalisé ; l'audit général a lieu après le Cycle 30."
+     "explanation": "Mode direct : cette revue auteur n'est ni un contre-audit ni une validation médicale ; aucun audit n'est déclaré réalisé."
     }
    ]
   },
@@ -72,7 +72,7 @@
     {
      "path": "CHAPTER_SPEC.md",
      "sha256": "d43b97e59597334c3adcc194c341fa7abcf6d8d9da50d41bb351d349e04fbc1c",
-     "explanation": "Contrat lu : 4 onglets, classes de la liste fermée, mots verts → fenêtres préfixées e05-, Pareto par grande partie, ≥ 3 quiz, dernier îlot alert puis key ; plan détaillé e05-a01…a12, e05-e01…e03, e05-s01…s04, e05-p01…p02 calqué sur E10 (Cycle 2) ; codes CIM non affichés (PROMPT_TRANSITION §2.4)."
+     "explanation": "Contrat HTML lu : quatre onglets, classes fermées, dernier îlot formel puis paramètres clés, glossaire à clés littérales."
     }
    ]
   },
@@ -81,9 +81,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/dossier_sources.json",
-     "sha256": "a064e7ad27188eed11ed6b6cc5c7d4d37f82ada0d500e07d81fc8e3cfff289af",
-     "explanation": "Lacunes nommées (pas de donnée suisse d'incidence, pas de FI suisse du méthimazole, de l'iodure de crise ni du perchlorate ; intervalles propres au laboratoire ; erreur de demi-vie d'une revue signalée) ; images réelles Commons sous licence ouverte, ouvertes avec Read ; revue IA ≠ validation médicale humaine."
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json",
+     "sha256": "fa1e96c96c1f7a4ac36d339a1fb2c20d565b5ff19f07afb316cbee04ae75e2c6",
+     "explanation": "Registre des sources relu ; lacunes et limites déclarées restent à maintenir sans rien inventer."
     }
    ]
   }

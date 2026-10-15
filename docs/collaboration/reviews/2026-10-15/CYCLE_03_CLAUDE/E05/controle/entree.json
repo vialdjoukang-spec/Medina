@@ -1,0 +1,91 @@
+{
+ "actor": "Claude — coordinateur",
+ "verdict": "conforme",
+ "checked_at": "2026-10-15T11:33:42.096215+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Instruction de Vial : cycle 3 en publication directe, contrôle du coordinateur requis avant injection."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/auteur.json",
+     "sha256": "c7247fb74d2cf4dabc75d660420f1f4c49c6ca563033383260e1a3fdeba49b37",
+     "explanation": "Preuve auteur de E05 : sept sources et images du dossier de livraison, empreintes vérifiées par la garde."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json",
+     "sha256": "fa1e96c96c1f7a4ac36d339a1fb2c20d565b5ff19f07afb316cbee04ae75e2c6",
+     "explanation": "Registre des sources réellement lues par l'auteur, lié aux empreintes finales."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/contexte_suisse_claude.json",
+     "sha256": "dd0798169efca770b01f721f6660c5046ae7748b954ead5981635de154d04d30",
+     "explanation": "Matrice suisse de l'auteur, validée par swiss_context_proof lors du contrôle."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/auteur.json",
+     "sha256": "c7247fb74d2cf4dabc75d660420f1f4c49c6ca563033383260e1a3fdeba49b37",
+     "explanation": "Le coordinateur n'a pas rédigé la leçon ; l'auteur est un agent distinct."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/images_claude.json",
+     "sha256": "8f8d53e309386adf264bc616b14f0fdb9483868b7d80e34a74c385ddafb29b18",
+     "explanation": "Manifeste des images ; quatre onglets, fenêtres, images et quatre captures contrôlés par l'outil."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Aucun audit non réalisé n'est déclaré ; revue IA, sans validation médicale humaine ; audit différé après le Cycle 30."
+    }
+   ]
+  }
+ ]
+}

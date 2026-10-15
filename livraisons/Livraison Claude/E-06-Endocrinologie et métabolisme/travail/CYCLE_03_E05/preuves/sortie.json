@@ -1,7 +1,7 @@
 {
  "actor": "C03-R-ENDO",
  "verdict": "conforme",
- "checked_at": "2026-10-14T23:17:37.039157+00:00",
+ "checked_at": "2026-10-15T11:33:15.282996+00:00",
  "prompt_files": {
   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
@@ -17,7 +17,7 @@
     {
      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
-     "explanation": "Sortie : leçon E05 rédigée sous l’autorisation de publication directe des Cycles 3 à 30 ; aucune injection ni publication par l’auteur."
+     "explanation": "Revue auteur du 15.10.2026 achevée dans le cadre de l'autorisation de publication directe ; aucun audit croisé déclaré."
     }
    ]
   },
@@ -28,7 +28,7 @@
     {
      "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/dossier_sources.json",
      "sha256": "a064e7ad27188eed11ed6b6cc5c7d4d37f82ada0d500e07d81fc8e3cfff289af",
-     "explanation": "Sortie : sept fichiers E05 uniquement (4 onglets, 2 fichiers de fenêtres, glossaire), rédigés depuis le dossier de sources du Cycle 3 ; écritures limitées au dossier CYCLE_03_E05 ; aucun commit ni push."
+     "explanation": "Aucun fichier modifié par la revue ; empreintes des sept sources inchangées et recontrôlées ; écritures limitées au dossier."
     }
    ]
   },
@@ -37,9 +37,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json",
-     "sha256": "fa1e96c96c1f7a4ac36d339a1fb2c20d565b5ff19f07afb316cbee04ae75e2c6",
-     "explanation": "Sortie : 129 affirmations rattachées à un passage lu avec empreinte ; 0 affirmation non vérifiée ; lacunes L01 à L07 et divergences DV1 à DV12 tracées."
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/dossier_sources.json",
+     "sha256": "a064e7ad27188eed11ed6b6cc5c7d4d37f82ada0d500e07d81fc8e3cfff289af",
+     "explanation": "Passages du dossier relus contre le texte final : plus de vingt chiffres concordent (Néo-Mercazole 20–60 mg et paliers 5–15 mg, Propycil 75–100 mg et 300–600 mg, agranulocytose 0,1–1,0 % et 0,28 %, rechute 52,7 %/15 %/10 %, Gy EANM, calcul 8×35/0,65 environ 430 MBq, contraste 6–8 semaines, enfant ≤ 5 ans, bolus 4,5 g/8 g, alemtuzumab 20–30 %, hydrocortisone 300 mg/j)."
     }
    ]
   },
@@ -50,7 +50,7 @@
     {
      "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/contexte_suisse_claude.json",
      "sha256": "dd0798169efca770b01f721f6660c5046ae7748b954ead5981635de154d04d30",
-     "explanation": "Sortie : matrice de 46 décisions ; la SSED n’a pas de recommandation propre sur l’hyperthyroïdie (lacune documentée) ; sources suisses d’abord (SSCC, BAG, ARS MEDICI, laboratoire Risch, 11 FI Swissmedic), européennes ensuite (ETA, EANM, EUGOGO), JTA pour la crise, aucune recommandation américaine décisionnelle ; verdicts en attente de revue différée."
+     "explanation": "FI suisses présentes dans le texte : contre-indications du propranolol, du propylthiouracile, du carbimazole et de l'iode 131 (grossesse, allaitement, asthme, vascularite) ; écarts FI–ETA signalés ; limites SSED et FI absentes conservées."
     }
    ]
   },
@@ -61,7 +61,7 @@
     {
      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
-     "explanation": "Sortie : auteur C03-R-ENDO seul ; aucun audit croisé ni contre-audit simulé ; revue IA sans validation médicale humaine."
+     "explanation": "Pas de lecture croisée ni de validation médicale humaine ; verdict limité à la revue auteur."
     }
    ]
   },
@@ -70,9 +70,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/chapters/E05/E05_a.html",
-     "sha256": "1590cd0ff87ec8586942d8c5bfbea2da759e1066a36c715913aaf289d1a00d46",
-     "explanation": "Sortie : quatre onglets, 90 fenêtres préfixées e05-, glossaire e05.py, 4 quiz, 4 Pareto (un par onglet), dernier îlot de la Pathologie en alert puis key, 8 images ouvertes, test_v7 --static OK sur copie jetable."
+     "path": "CHAPTER_SPEC.md",
+     "sha256": "d43b97e59597334c3adcc194c341fa7abcf6d8d9da50d41bb351d349e04fbc1c",
+     "explanation": "Glossaire syntaxiquement valide ; langue relue ; contrat HTML inchangé, aucun fichier modifié."
     }
    ]
   },
@@ -81,9 +81,9 @@
    "status": "conforme",
    "evidence": [
     {
-     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/images_claude.json",
-     "sha256": "8f8d53e309386adf264bc616b14f0fdb9483868b7d80e34a74c385ddafb29b18",
-     "explanation": "Sortie : aucune affirmation hors dossier (nombres du texte vérifiés contre le dossier ; deux constructions assumées : TRAK fictif de 0,9 UI/l et seuil calculé 3,66 UI/l) ; cas fictifs et calculs distingués ; images réelles à licence ouverte inspectées."
+     "path": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json",
+     "sha256": "fa1e96c96c1f7a4ac36d339a1fb2c20d565b5ff19f07afb316cbee04ae75e2c6",
+     "explanation": "Aucune erreur démontrée donc aucune correction ; limites inchangées, aucune réserve bloquante ouverte."
     }
    ]
   }
