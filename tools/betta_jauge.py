@@ -18,5 +18,9 @@ tot = sum(len(v["lessons"]) for v in c.values())
 items = list(c.items())
 k = next((i for i, (n, _) in enumerate(items) if n == cur), len(items))
 bar = ("…" if k > 3 else "") + "".join("✅" if v["state"] in ("LIVRE", "INJECTE") else ("🟩" if n == cur else "⬜") for n, v in items[max(0, k - 3):k + 10])
+try:
+    nl = len(json.loads((root / ".claude/clov1_cache.json").read_text())["non_lus"])
+except Exception:
+    nl = 0
 G, R = "\033[1;32m", "\033[0m"
-print(f"{G}MEDINA Betta+Novo12 {len(done)}/{len(c)} cycles · {les}/{tot} leçons{R} {bar}" + (f" {G}▶ C{cur}{R}" if cur else f" {G}TERMINÉ{R}"))
+print(f"{G}MEDINA Betta+Novo12 {len(done)}/{len(c)} cycles · {les}/{tot} leçons{R} {bar}" + (f" {G}▶ C{cur}{R}" if cur else f" {G}TERMINÉ{R}") + (f" ✉ Codex {nl}" if nl else ""))

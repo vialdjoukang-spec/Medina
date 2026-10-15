@@ -37,6 +37,25 @@ def main(cibles, novo=False):
     rows = charger("chapters.json")
     lecons = {l["code"]: (c["number"], l) for c in plan["cycles"] for a in c["agents"] for l in a["lessons"]}
     existants, faits = {r["code"] for r in rows}, []
+    # Contrôle préalable (constats Codex PR 96) : tous les fichiers présents et, pour Novo_12,
+    # porte de vérité VÉRITÉ OK, avant toute copie canonique.
+    sys.path.insert(0, str(ROOT / "tools"))
+    from betta_verite import controler
+    erreurs = []
+    for n, cyc in status["cycles"].items():
+        for code, st in cyc["lessons"].items():
+            if not isinstance(st, dict) or st.get("state") != "LIVRE" or (cibles and code not in cibles):
+                continue
+            src = ROOT / st["dir"]
+            for f in [src / "chapters" / code / f"{code}_{x}.html" for x in "abcd"] + [src / "glossary" / f"{code.lower()}.py", src / "rapport.md"]:
+                if not f.is_file():
+                    erreurs.append(f"{code} : fichier manquant {f.relative_to(ROOT)}")
+            if code in existants or (ROOT / "chapters" / code).exists():
+                erreurs.append(f"{code} : déjà présent dans chapters/ ou chapters.json")
+            if novo:
+                erreurs += [f"{code} : vérité — {e}" for e in controler(src)]
+    if erreurs:
+        sys.exit("Injection refusée, rien n'a été copié :\n" + "\n".join(erreurs))
     for n, cyc in status["cycles"].items():
         for code, st in cyc["lessons"].items():
             if not isinstance(st, dict) or st.get("state") != "LIVRE" or (cibles and code not in cibles):
