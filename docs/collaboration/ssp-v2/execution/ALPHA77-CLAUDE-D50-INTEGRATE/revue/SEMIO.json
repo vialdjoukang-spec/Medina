@@ -1,0 +1,198 @@
+{
+ "actor": "Claude",
+ "code": "D50",
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), session distincte de l’Agent W",
+ "date": "2026-10-15",
+ "reviewed_commit": "24757d7e2fa06c0891078307ca673629c54af768",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/D50/D50_a.html": "1a058bb254073015fe073982f64f44ab7e7be11c60eb7dca0a43e4e1628b90e5",
+  "chapters/D50/D50_b.html": "5a3fae3aae7c36ebf7d6b4e768e64cb73ea20e6fe0b80d1fc2211b13f8baf201",
+  "chapters/D50/D50_c.html": "d1eb41bc154a1397bf893d7e0a9a6b3d1b21699fa36a5f095537df32f1215f0d",
+  "chapters/D50/D50_d.html": "691c8d10a80d500b93d9260a755ef04dffc725d752006d342241a7f9efea9010",
+  "chapters/D50/D50_pop1.html": "a1aa8e6c92f2dd2e4bf8ed4aafd02897d2d615a88e2710f19963d1ff5f7e0232",
+  "chapters/D50/D50_pop2.html": "9efa110815647ac78fd0ab501d6ed61975e6e80bad34d38cd72f702d6a9badf6",
+  "glossary/d50.py": "c424cff1adf1ee7eafb5aba4089424a1ae4bf43c41e0fdc29b92dbba57622920"
+ },
+ "reviewed_files_sha256": {
+  "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
+  "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
+  "chapters/D50/D50_c.html": "4db32665a9cb8798635ddbefc4e69d179fb5c187cc85e2c5b9f4e82a46c30ec8",
+  "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
+  "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
+  "chapters/D50/D50_pop2.html": "c9c984d2dcb6d536386edd4f790ffc8a23397b293e25fc5f9d0d6be2400c72b7",
+  "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
+  "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
+ },
+ "reviewed_files_note": "Empreintes des sept fichiers de cœur et de l’image ajoutée au commit relu ; le reçu Alpha doit déclarer exactement ces fichiers (files) pour que les empreintes concordent. Base : abd681e5 (identique à 8712c3fe pour ces fichiers).",
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "kind": "SEMIO",
+ "requirement": "fundamental_analytical_semiology",
+ "status": "open",
+ "tab_id": "d50-s-semio",
+ "source_path": "chapters/D50/D50_c.html",
+ "findings": [
+  {
+   "id": "SEM-01",
+   "status": "resolved",
+   "constat": "Premier bouton de .sci-bar : d50-tab-semio, role tab, aria-selected true, libellé exact ; div.sci d50-s-semio role tabpanel, aria-labelledby, sans hidden.",
+   "evidence": [
+    "D50_c.html ; rendu W et P : seul d50-s-semio visible à l’ouverture de pS, autres aria-selected false."
+   ]
+  },
+  {
+   "id": "SEM-02",
+   "status": "resolved",
+   "constat": "Premier h3 exact : « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? ».",
+   "evidence": [
+    "D50_c.html, section d50-sm-1."
+   ]
+  },
+  {
+   "id": "SEM-03",
+   "status": "open",
+   "constat": "python3 tests/audit_sciences.py --codes D50 échoue : « D50/d50-s-histo: figure sans légende ou nom accessible ». La figure « Micrographies 1 et 2 » ne contient que des <img> ; le test exige un svg[role=img][aria-label] dans chaque figure de pS. Le sous-onglet sémiologie lui-même passe (3836 mots, figure accessible, 4 encadrés). Le défaut existait déjà sur la base pour la Micrographie 1.",
+   "evidence": [
+    "Exécution par P au commit 24757d7e : result failed, errors = [\"D50/d50-s-histo: figure sans légende ou nom accessible\"].",
+    "Remèdes possibles : (a) placer dans la même figure une échelle SVG non anatomique sourcée (bloc HISTO de prep/figures.html, ou y déplacer l’échelle VGM/TCMH de la figure 5) ; (b) mission d’intégration sur tests/audit_sciences.py acceptant une figure <img alt> légendée. Le choix revient au coordinateur."
+   ]
+  },
+  {
+   "id": "SEM-04",
+   "status": "resolved",
+   "constat": "test_v7.py --static D50 → OK.",
+   "evidence": [
+    "Exécution P au commit 24757d7e."
+   ]
+  },
+  {
+   "id": "SEM-05-07",
+   "status": "resolved",
+   "constat": "Tableau des symptômes avec mécanisme, valeur et piège ; techniques des gestes ; mécanismes en phrases complètes, absence de mécanisme déclarée pour pica, pagophagie et koilonychie.",
+   "evidence": [
+    "d50-sm-2, d50-sm-3, d50-sm-4, fenêtres d50-sm-*."
+   ]
+  },
+  {
+   "id": "SEM-08",
+   "status": "resolved",
+   "constat": "Chaque valeur chiffrée a sa population et sa source datée ; valeurs absentes écrites « non chiffrées dans les sources lues ».",
+   "evidence": [
+    "prep/sources_semiologie.json (format each_claim) ; d50-sm-2, d50-sm-5, d50-sm-8."
+   ]
+  },
+  {
+   "id": "SEM-09-12",
+   "status": "resolved",
+   "constat": "Normal avant pathologique ; pièges par signe ; tableau des syndromes ; raisonnement en cinq étapes ordonnées.",
+   "evidence": [
+    "d50-sm-1 à d50-sm-6."
+   ]
+  },
+  {
+   "id": "SEM-13",
+   "status": "resolved",
+   "constat": "div.alert avec signes, délai et action, cohérente avec l’alerte de d50-8.",
+   "evidence": [
+    "d50-sm-7 et D50_b.html îlot d50-8 : mêmes quatre signes de gravité."
+   ]
+  },
+  {
+   "id": "SEM-14-17",
+   "status": "resolved",
+   "constat": "Différentiels avec discriminants sourcés ; examen numéroté ; synthèse présentée ; trois cas corrigés (valeur d’un signe, différentiel, formulation d’une limite).",
+   "evidence": [
+    "d50-sm-4 à d50-sm-8."
+   ]
+  },
+  {
+   "id": "SEM-18",
+   "status": "resolved",
+   "constat": "Chaque mot vert ouvre une fenêtre réelle.",
+   "evidence": [
+    "test_v7 --url (W) : clic de chaque mot vert sans « Fiche absente » ; six fenêtres d50-sm-* présentes dans D50_pop2.html."
+   ]
+  },
+  {
+   "id": "SEM-19",
+   "status": "resolved",
+   "constat": "Sources suisses puis européennes ; aucune recommandation américaine ; étude indienne citée seulement pour une valeur chiffrée, avec ses limites.",
+   "evidence": [
+    "d50-sm-9 ; prep/sources_semiologie.json."
+   ]
+  },
+  {
+   "id": "SEM-20",
+   "status": "resolved",
+   "constat": "Chiffres concordants entre sémiologie, onglet 1, fenêtres et figure 5 (seuils OMS 120/130 et 80/70 g/L ; ferritine 15 et 45 µg/L ; VGM < 80 fl, TCMH < 28 pg).",
+   "evidence": [
+    "Relecture croisée D50_a/_b/_c/_pop1."
+   ]
+  },
+  {
+   "id": "SEM-21",
+   "status": "resolved",
+   "constat": "Pas de redite de l’onglet 1 : le sous-onglet approfondit mécanismes, valeur et raisonnement ; le bloc clinique d50-6 synthétise et renvoie par le texte.",
+   "evidence": [
+    "D50_a.html îlot d50-6 ; d50-s-semio."
+   ]
+  },
+  {
+   "id": "SEM-22",
+   "status": "resolved",
+   "constat": "Libellé lisible à 390 px avec police 24 px, sans débordement horizontal.",
+   "evidence": [
+    "Rendu P : --mc-fs 24px, scrollWidth 390, bouton 361 px de large (captures/P_semiologie_390px_police24.png)."
+   ]
+  },
+  {
+   "id": "SEM-23",
+   "status": "resolved",
+   "constat": "Captures réelles : sémiologie ouverte et fenêtre d’un signe.",
+   "evidence": [
+    "integration/captures/02_* et 03_*."
+   ]
+  },
+  {
+   "id": "SEM-24",
+   "status": "resolved",
+   "constat": "Statut « Revue IA, distincte d’une validation médicale humaine » affiché ; aucune certification revendiquée.",
+   "evidence": [
+    "d50-sm-9, encadré final."
+   ]
+  },
+  {
+   "id": "SEM-LACUNES",
+   "status": "resolved",
+   "constat": "Lacunes déclarées dans la leçon : fréquences des signes non chiffrées, mécanismes de compensation non détaillés, pédiatrie suisse non lue, valeur de la pâleur issue d’une population indienne.",
+   "evidence": [
+    "D50_c.html, section d50-sm-8 (limits) et d50-sm-2."
+   ]
+  },
+  {
+   "id": "SEM-INDEP",
+   "status": "non_blocking",
+   "constat": "Indépendance limitée : l’Agent P a rédigé la préparation sémiologique qu’il relit ici ; l’Agent W l’a intégrée sans modification de fond. Alpha n’exige pas d’audit croisé.",
+   "evidence": [
+    "Comparaison prep → final : différences d’espaces uniquement."
+   ]
+  }
+ ],
+ "evidence": [
+  "Neuf sections data-semiology présentes et substantielles (310 à 534 mots chacune).",
+  "Passages consultés : voir prep/sources_semiologie.json (10 sources, 25 affirmations).",
+  "Rendu Chromium 1194 (P) à 390 px et police 24 px ; rendu W à 1300 et 390 px ; aucune erreur JavaScript.",
+  "tests/audit_sciences.py exécuté : échec SEM-03 décrit ci-dessus."
+ ],
+ "unresolved_blockers": [
+  "SEM-03 : tests/audit_sciences.py --codes D50 échoue sur la figure « Micrographies 1 et 2 » de d50-s-histo (aucun svg[role=img][aria-label] dans la figure)."
+ ],
+ "limits": [
+  "Revue IA, distincte d’une validation médicale humaine.",
+  "La présence des balises et des empreintes ne certifie pas l’exactitude médicale."
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "actor": "Claude",
+ "code": "D50",
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), session distincte de l’Agent W",
+ "date": "2026-10-15",
+ "reviewed_commit": "24757d7e2fa06c0891078307ca673629c54af768",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/D50/D50_a.html": "1a058bb254073015fe073982f64f44ab7e7be11c60eb7dca0a43e4e1628b90e5",
+  "chapters/D50/D50_b.html": "5a3fae3aae7c36ebf7d6b4e768e64cb73ea20e6fe0b80d1fc2211b13f8baf201",
+  "chapters/D50/D50_c.html": "d1eb41bc154a1397bf893d7e0a9a6b3d1b21699fa36a5f095537df32f1215f0d",
+  "chapters/D50/D50_d.html": "691c8d10a80d500b93d9260a755ef04dffc725d752006d342241a7f9efea9010",
+  "chapters/D50/D50_pop1.html": "a1aa8e6c92f2dd2e4bf8ed4aafd02897d2d615a88e2710f19963d1ff5f7e0232",
+  "chapters/D50/D50_pop2.html": "9efa110815647ac78fd0ab501d6ed61975e6e80bad34d38cd72f702d6a9badf6",
+  "glossary/d50.py": "c424cff1adf1ee7eafb5aba4089424a1ae4bf43c41e0fdc29b92dbba57622920"
+ },
+ "reviewed_files_sha256": {
+  "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
+  "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
+  "chapters/D50/D50_c.html": "4db32665a9cb8798635ddbefc4e69d179fb5c187cc85e2c5b9f4e82a46c30ec8",
+  "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
+  "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
+  "chapters/D50/D50_pop2.html": "c9c984d2dcb6d536386edd4f790ffc8a23397b293e25fc5f9d0d6be2400c72b7",
+  "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
+  "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
+ },
+ "reviewed_files_note": "Empreintes des sept fichiers de cœur et de l’image ajoutée au commit relu ; le reçu Alpha doit déclarer exactement ces fichiers (files) pour que les empreintes concordent. Base : abd681e5 (identique à 8712c3fe pour ces fichiers).",
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "kind": "LANG",
+ "status": "closed",
+ "findings": [
+  {
+   "id": "LANG-APPLI",
+   "status": "resolved",
+   "constat": "159 propositions locales retrouvées appliquées dans les fichiers finaux par contrôle automatique (« nouveau » présent, « ancien » absent) ; 5 non retrouvées, toutes justifiées.",
+   "evidence": [
+    "Script de vérification sur ALPHA1-CLAUDE-D50-LANG/propositions.json : LANG-020 remplacée par la réécriture MED-m2 (« par kilogramme » présent) ; LANG-048, -049, -051, -052 rendues caduques par la suppression de la figure 3 et la renumérotation 1 à 6 des figures."
+   ]
+  },
+  {
+   "id": "LANG-074",
+   "status": "resolved",
+   "constat": "Adaptation de ponctuation justifiée.",
+   "evidence": [
+    "integration/corrections.json, lang.adaptations."
+   ]
+  },
+  {
+   "id": "LANG-NUM",
+   "status": "resolved",
+   "constat": "Numérotation des figures cohérente : Figure 1 (D50_b), Figures 2 à 6 dans pS, Micrographies 1 et 2.",
+   "evidence": [
+    "Comptage « Figure n — » dans D50_a/_b/_c : une occurrence par numéro."
+   ]
+  },
+  {
+   "id": "LANG-SEMIO",
+   "status": "resolved",
+   "constat": "Sous-onglet sémiologie et fenêtres d50-sm-* : phrases complètes, tableaux introduits et lus, aucune phrase nominale ni infinitif injonctif relevés à la relecture.",
+   "evidence": [
+    "Comparaison phrase à phrase prep → final : seules des différences d’espaces ; six fenêtres identiques octet pour octet."
+   ]
+  },
+  {
+   "id": "LANG-DIFF",
+   "status": "non_blocking",
+   "constat": "Choix éditoriaux différés, non appliqués : espaces insécables globales, « fibrillation atriale/auriculaire », groupe LIENS d’E11, graphie « héphæstine », STRUCT-01 à STRUCT-04.",
+   "evidence": [
+    "integration/corrections.json, différés."
+   ]
+  }
+ ],
+ "evidence": [
+  "Fichiers finaux lus au commit 24757d7e.",
+  "Vérification mécanique des 175 entrées de propositions.json.",
+  "Rendu 390 px avec police 24 px : libellé « Sémiologie fondamentale et analytique » sur une ligne, largeur du document 390 px (captures/P_semiologie_390px_police24.png)."
+ ],
+ "unresolved_blockers": [],
+ "limits": [
+  "Revue IA, distincte d’une validation médicale humaine."
+ ]
+}

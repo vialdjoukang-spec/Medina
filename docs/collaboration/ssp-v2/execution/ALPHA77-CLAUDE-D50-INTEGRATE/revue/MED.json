@@ -1,0 +1,169 @@
+{
+ "actor": "Claude",
+ "code": "D50",
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), session distincte de l’Agent W",
+ "date": "2026-10-15",
+ "reviewed_commit": "24757d7e2fa06c0891078307ca673629c54af768",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/D50/D50_a.html": "1a058bb254073015fe073982f64f44ab7e7be11c60eb7dca0a43e4e1628b90e5",
+  "chapters/D50/D50_b.html": "5a3fae3aae7c36ebf7d6b4e768e64cb73ea20e6fe0b80d1fc2211b13f8baf201",
+  "chapters/D50/D50_c.html": "d1eb41bc154a1397bf893d7e0a9a6b3d1b21699fa36a5f095537df32f1215f0d",
+  "chapters/D50/D50_d.html": "691c8d10a80d500b93d9260a755ef04dffc725d752006d342241a7f9efea9010",
+  "chapters/D50/D50_pop1.html": "a1aa8e6c92f2dd2e4bf8ed4aafd02897d2d615a88e2710f19963d1ff5f7e0232",
+  "chapters/D50/D50_pop2.html": "9efa110815647ac78fd0ab501d6ed61975e6e80bad34d38cd72f702d6a9badf6",
+  "glossary/d50.py": "c424cff1adf1ee7eafb5aba4089424a1ae4bf43c41e0fdc29b92dbba57622920"
+ },
+ "reviewed_files_sha256": {
+  "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
+  "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
+  "chapters/D50/D50_c.html": "4db32665a9cb8798635ddbefc4e69d179fb5c187cc85e2c5b9f4e82a46c30ec8",
+  "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
+  "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
+  "chapters/D50/D50_pop2.html": "c9c984d2dcb6d536386edd4f790ffc8a23397b293e25fc5f9d0d6be2400c72b7",
+  "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
+  "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
+ },
+ "reviewed_files_note": "Empreintes des sept fichiers de cœur et de l’image ajoutée au commit relu ; le reçu Alpha doit déclarer exactement ces fichiers (files) pour que les empreintes concordent. Base : abd681e5 (identique à 8712c3fe pour ces fichiers).",
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "kind": "MED",
+ "status": "closed",
+ "findings": [
+  {
+   "id": "MED-M1",
+   "status": "resolved",
+   "constat": "Divergence BSG/Onkopedia sur Helicobacter pylori exposée et arbitrée (d50-gastrite).",
+   "evidence": [
+    "D50_pop1.html, template d50-gastrite : paragraphe « Divergence et décision » ; Onkopedia avril 2025 § 4.1 relu le 15.10.2026 : « bei Nachweis einer Helicobacter pylori positiven Gastritis durch Eradikation » ; BSG 2021 relue (méta-analyse, biopsies)."
+   ]
+  },
+  {
+   "id": "MED-M2",
+   "status": "resolved",
+   "constat": "Dépistage ESC 2026 (I, C) et classes I B / IIa B du fer intraveineux ajoutés (d50-ic).",
+   "evidence": [
+    "D50_pop1.html, template d50-ic, tableau « Classe et niveau » et paragraphe « Rechercher la carence chez tout patient suspect » ; limite déclarée (pas de seuil numérique 2026 sur la diapositive)."
+   ]
+  },
+  {
+   "id": "MED-M3",
+   "status": "resolved",
+   "constat": "Seuil de ferritine de 45 µg/L (spécificité 0,92) ajouté avec sa portée (exploration digestive), distinct de la définition de la carence.",
+   "evidence": [
+    "D50_pop1.html, template d50-ferritine, ligne « Adulte anémique, décision d’exploration digestive » ; BSG 2021 relue : « A cut-off of 45 µg/L provides a respectable specificity of 0.92 »."
+   ]
+  },
+  {
+   "id": "MED-M4",
+   "status": "resolved",
+   "constat": "Frottis dessiné (figure 3) supprimé ; deux micrographies réelles (normal CC BY 4.0, ferriprive CC BY 2.0) avec attribution visible.",
+   "evidence": [
+    "D50_c.html : aucune occurrence de « Frottis schématique » ni du SVG 420×550 ; figure « Micrographies 1 et 2 » avec figcaption ; rendu Chromium 1194 à 390 px : légende visible avec auteurs, licences et mention du redimensionnement (captures/P_frottis_legende_390px.png)."
+   ]
+  },
+  {
+   "id": "MED-m1",
+   "status": "resolved",
+   "constat": "Indication obstétricale du fer IV sortie de l’alerte (d50-8).",
+   "evidence": [
+    "D50_b.html, îlot d50-8 : phrase « ne signe pas à elle seule une urgence » hors de l’encadré."
+   ]
+  },
+  {
+   "id": "MED-m2",
+   "status": "resolved",
+   "constat": "Toxicité du fer complétée.",
+   "evidence": [
+    "D50_b.html : 20 mg/kg, 60 mg/kg, 400 mg de Fe2+ ; FI suisse Tardyferon® relue via tools/swissmedic_fi.py le 15.10.2026 (lignes « 20 mg/kg … 60 mg/kg ou plus » et « 400 mg de Fe2+ ») ; 5 × 80 mg = 400 mg exact."
+   ]
+  },
+  {
+   "id": "MED-m3",
+   "status": "resolved",
+   "constat": "Hausse d’hémoglobine en une semaine nuancée.",
+   "evidence": [
+    "D50_pop1.html, d50-transfusion : « hausse cliniquement significative … qui n’est pas encore une correction »."
+   ]
+  },
+  {
+   "id": "MED-m4",
+   "status": "resolved",
+   "constat": "Coloscopie située par rapport au fer oral dans le cas récapitulatif.",
+   "evidence": [
+    "D50_b.html, îlot d50-13 : coloscopie à trois semaines, fer suspendu avant la préparation colique (BSG, selon le journal de W)."
+   ]
+  },
+  {
+   "id": "MED-m5",
+   "status": "resolved",
+   "constat": "Prévalences 2–5 % et 5–12 % attribuées à la BSG.",
+   "evidence": [
+    "D50_a.html, îlot d50-2."
+   ]
+  },
+  {
+   "id": "MED-FIG5",
+   "status": "resolved",
+   "constat": "Figure 5 (VGM et TCMH) : valeurs exactement conformes à Onkopedia 2025.",
+   "evidence": [
+    "Onkopedia relu le 15.10.2026 : § 3.5.1 « hypochrom (MCH <28 pg) und mikrozytär (MCV <80 fl) » ; tableau 4 « MCV 80–96 fl », « MCH 28–33 pg ». Géométrie SVG contrôlée : 80→x264, 96→x443 ; 28→x264, 33→x404, échelles linéaires."
+   ]
+  },
+  {
+   "id": "MED-BLOC-d50-6",
+   "status": "resolved",
+   "constat": "Bloc clinique data-semiology-clinical=\"D50\" présent dans pA (îlot d50-6), cohérent avec l’alerte d50-8 et avec le sous-onglet.",
+   "evidence": [
+    "D50_a.html ; rendu Chromium W (bloc_clinique_visible true, 1300 et 390 px) ; contenu identique à prep/semiologie_clinique.html."
+   ]
+  },
+  {
+   "id": "MED-NOTE-1",
+   "status": "non_blocking",
+   "constat": "Légende de la figure 5 : « chaque laboratoire publie ses propres références » n’est pas tiré d’Onkopedia (qui ne le dit pas pour VGM et TCMH) ; la phrase reste exacte et cohérente avec les références Viollier citées ailleurs.",
+   "evidence": [
+    "Onkopedia § 3.5.1 et tableau 4 relus ; D50_c.html, figcaption Figure 5."
+   ]
+  },
+  {
+   "id": "MED-NOTE-2",
+   "status": "non_blocking",
+   "constat": "Fenêtre d50-ferritine : la ligne « 15 à < 30 : réserves insuffisantes, Onkopedia » interprète la proposition d’Onkopedia (< 30 µg/L comme limite inférieure adulte) ; formulation préexistante, non modifiée par cette mission.",
+   "evidence": [
+    "Onkopedia § 3.5.6 relu : « den Ferritinwert <30 µg/l als untere Grenze zu verwenden »."
+   ]
+  },
+  {
+   "id": "MED-NOTE-3",
+   "status": "non_blocking",
+   "constat": "Le choix du frottis normal reste une revue IA, sans choix humain (demande du rapport MED) ; l’image a été contrôlée visuellement et sa légende décrit le faible grossissement.",
+   "evidence": [
+    "revue/VISUEL_frottis_normal.json ; prep/figures.json."
+   ]
+  },
+  {
+   "id": "MED-NOTE-4",
+   "status": "non_blocking",
+   "constat": "Le frottis ferriprive : la description Commons ne mentionne pas le lymphocyte ; son identification dans la légende repose sur l’examen visuel.",
+   "evidence": [
+    "Page Commons relue le 15.10.2026 ; image ouverte avec l’outil Read."
+   ]
+  }
+ ],
+ "evidence": [
+  "Fichiers finaux lus au commit 24757d7e ; empreintes recalculées.",
+  "python3 test_v7.py --static D50 → OK (43 865 mots, 95 fenêtres, 9 quiz, 10 Pareto).",
+  "Sources relues par P le 15.10.2026 : Onkopedia avril 2025 (§ 3.1, 3.5.1, 3.5.6, tableau 4, 3.6.2, 4.1), BSG 2021, mediX 08/2025, Delphi 2019, Clénin 2017, OMS 2024 tableau 3, FI Tardyferon® (AmiKo), Trenkwalder 2024, Kalantri 2010, Gattermann 2021.",
+  "Rendu Chromium 1194 du fragment S06 construit dans le scratchpad : aucune erreur JavaScript.",
+  "Enrichissements MED-E1 à E5 présents (journal integration/corrections.json, vérification par sondage)."
+ ],
+ "unresolved_blockers": [],
+ "limits": [
+  "Revue IA, distincte d’une validation médicale humaine.",
+  "Maastricht VI/Florence 2022 et règles suisses des donneurs de sang non lus (lacunes héritées, déclarées)."
+ ]
+}
