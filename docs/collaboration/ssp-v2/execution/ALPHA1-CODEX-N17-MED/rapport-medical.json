@@ -1,0 +1,154 @@
+{
+  "schema": "medina.alpha1.audit-medical.v1",
+  "mission": "ALPHA1-CODEX-N17-MED",
+  "modele_demande": "gpt-6.1-sol",
+  "effort_demande": "high",
+  "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "source_snapshot_sha": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "generation": 1,
+  "date_utc": "2026-10-15T18:31:06.680169+00:00",
+  "verdict": "Réserves médicales ;copies corrigées/enrichies proposées ;aucunevalidation humaine ouindépendante ;aucuneinjection",
+  "P0": 0,
+  "P1": 5,
+  "P2": 4,
+  "constats": [
+    {
+      "id": "N17-M01",
+      "priorite": "P1",
+      "localisation": "N17_b.html,n17-7,CL1014-025à065",
+      "extrait": "Rang4 :Choc septique ou hémorragique",
+      "constat": "La numérotation par gravité place le choc après trois autres urgences et peut être lue comme ordre d’attente,malgré la stabilisation immédiate correctement rappelée ailleurs.",
+      "sources_lues": [
+        "CH-HUG-bundle",
+        "CH-RMS-2017",
+        "INT-KDIGO-2012:tableau5,p22"
+      ],
+      "proposition": "Retirer le classementordinal ;mettre le choc en première ligne ;énoncer prise en charge parallèle des menaces.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M02",
+      "priorite": "P1",
+      "localisation": "N17_b.html,CL1014-032/054/056",
+      "extrait": "Calcul sur rein unique :Échographie dans les24heures",
+      "constat": "La ligne reinunique perd l’avis urologique immédiat présent ailleurs ;la ligneGN perd «dès que possible» en ne conservant que24h.",
+      "sources_lues": [
+        "EU-NICE-NG148:1.5.1,1.5.2,1.5.15"
+      ],
+      "proposition": "Restaurer avis immédiat reinunique/bilatéral/complications ;discussionGN dès quepossible≤24h,immédiate si menace.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M03",
+      "priorite": "P1",
+      "localisation": "N17_b.html,CL1014-060/065",
+      "extrait": "Correction du volume,suspension motivée,réévaluation à48–72heures",
+      "constat": "Le tableau autorise une lecture tardive de la réévaluation ;la persistance48–72h est une convention arbitraire et ne démontre pas la lésion.",
+      "sources_lues": [
+        "CH-RMS-2017:classificationétiologique,priseencharge,surveillance",
+        "CH-HUG-bundle"
+      ],
+      "proposition": "Réévaluation clinique après intervention,surveillance adaptée ;séparer le délai descriptif de la preuve de nécrose.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M04",
+      "priorite": "P1",
+      "localisation": "N17_b.html,CL1014-022/048",
+      "extrait": "Électrophorèse des protéines,avis spécialisé rapide",
+      "constat": "La recherche proposée du myélome à chaîneslégères est incomplète :elle omet chaîneslégèreslibres et absence de pouvoir d’exclusion d’un test isolé. LaRMS2017 soutient l’électrophorèse,la guidelineNICE précise la combinaison.",
+      "sources_lues": [
+        "CH-RMS-2017",
+        "EU-NICE-myelome:1.2.1–1.2.3"
+      ],
+      "proposition": "Ajouter chaîneslégèreslibres sériques ;immunofixation si électrophorèseanormale ;ne pas exclure sur testisolé.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M05",
+      "priorite": "P1",
+      "localisation": "N17_c.html,CL1014-076/077,figure5bis",
+      "extrait": "Le glomérule est normal…l’immunofluorescence négative le confirme",
+      "constat": "La généralisation dépasse le cas :3des9glomérules sont scléreux ;IF négative concerne les marqueurs listés ;les auteurs ne démontrent pas la causalité aciclovir.",
+      "sources_lues": [
+        "INT-histo-case:Kidneybiopsy,Discussionlimitations"
+      ],
+      "proposition": "Restituer effectif et3scléreux ;attribuer lésion à l’ensemblebiopsie ;limiter conclusionIF et temporalitécausale.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M06",
+      "priorite": "P2",
+      "localisation": "N17_pop2.html,n17-lokelma,CL1014-087à090",
+      "extrait": "MonographieLokelma sans rubriqueinteractions",
+      "constat": "Interactiontacrolimus pertinente cheztransplanté IRA absente ;chargesodée décrite parsachet sans total phasecorrection.",
+      "sources_lues": [
+        "FI-Lokelma:Interactions,Posologie,Précautions"
+      ],
+      "proposition": "Ajouter espacement≥2h tacrolimus et médicamentspH-dépendants ;calculer contenu2400mgNa/j pour10g×3 ;bornerrénal/hépatique/dialyse.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M07",
+      "priorite": "P2",
+      "localisation": "N17_b.html,CL1014-069",
+      "extrait": "salbutamol nébulisé à l’insuline",
+      "constat": "Recommandation prescriptive sans produit suisse exact ni statut horsindication ;monographieabsente.",
+      "sources_lues": [
+        "EU-UKKA-2023:16.4.1–3",
+        "FI-Ventolin"
+      ],
+      "proposition": "Fenêtre exactesolutionVentolin5mg/mL,usagehyperK horsindication,adjuvant10–20mgeuropéen,CI/prudences ;pas substitutionDiskus.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M08",
+      "priorite": "P2",
+      "localisation": "N17_pop2.html,CL1014-084",
+      "extrait": "nouvelle dose…si kaliémie reste incontrôlée",
+      "constat": "Phrase conforme au rationalUKKA mais incomplète pourl’action :redose àrelier àréévaluationECG et durée cardioprotection.",
+      "sources_lues": [
+        "EU-UKKA-2023:p73,p80"
+      ],
+      "proposition": "Préciser persistance/récidive anomaliesECG ;nepas présenter calciumcomme baisseK.",
+      "statut": "corrigé dans copies réservées ;non appliqué aux sources canoniques"
+    },
+    {
+      "id": "N17-M09",
+      "priorite": "P2",
+      "localisation": "N17_a.html,C0178 ;référencesN17_b ;pop2CL1014-085",
+      "constat": "ActualitéKDIGO2026 et formulation propreERC400mL/j non renouvelées :pagesprimaires refus403. Aucune erreur médicale démontrée sur ces seuls échecs.",
+      "sources_lues": [
+        "INT-KDIGO-2012",
+        "EU-UKKA-2023"
+      ],
+      "statut": "LACUNE ouverte,aucune correction factuelle inventée"
+    }
+  ],
+  "surfaces": "7/7fichiers texteintégral ;4onglets ;toutesfenêtres/Pareto/quiz/tableaux ;4imagesréellesinspectées ;SVGtexteslus",
+  "enrichissements_propres": [
+    "Bilanmyélomecombiné",
+    "InteractionLokelma–tacrolimus",
+    "Chargesodéephasecorrection",
+    "Monographiesalbutamolproduitexact/horsindication",
+    "Limitesréellesbiopsieillustrative",
+    "Priorités/Délaissansattente",
+    "ComplémentSSP12/64/155/156"
+  ],
+  "livrables": [
+    "sources.json",
+    "matrice-20.json",
+    "surfaces-lues.json",
+    "modifications.json",
+    "propositions.patch",
+    "drafts/",
+    "enrichissements-complementaires.html"
+  ],
+  "limites": [
+    "Lescorrectionsrestentdansdossierréservé.",
+    "Aucuncontrôlenavigateurinteractifdanscetterevuemédicale.",
+    "FIcalciumétrangèreetdivergencedébit :protocolelocalàarbitrer,nonvalidéicipourusageCH.",
+    "Lecturetexteexhaustive≠validationexhaustivedetouteslesassertions ;zonesnonrecoupéesrestentLACUNE.",
+    "Aucunecontre-expertiseindépendanteni score20/20revendiqué."
+  ]
+}
