@@ -41,7 +41,7 @@ add_if_absent('PHELinfos', [('PHEL', 'Pharmacie des Hôpitaux de l’Est Lémani
 add_if_absent('mOsm', [('m', 'milli'), ('Osm', 'osmole')], 'Milliosmole',
               'La monographie HUG exprime l’osmolarité en milliosmoles par litre. Une osmolarité compte les particules par litre de solution ; une osmolalité les rapporte à un kilogramme d’eau. Les valeurs d’une préparation ne se confondent pas avec la référence sanguine.', 'n17-calcium')
 
-add_if_absent('FENa', [('F','Fraction'),('E','Excrétée'),('Na','Sodium')], 'Fraction excrétée du sodium', 'Ce calcul compare sodium et créatinine dans le sang et l’urine. Les unités, les conditions et les limites sous diurétiques sont détaillées dans la fenêtre N17.', 'n17-fen')
+add_if_absent('FENa', [('F','Fraction'),('E','Excrétée'),('Na','Sodium')], 'Fraction excrétée du sodium', 'Ce calcul compare le sodium et la créatinine dans le sang et l’urine. Les unités, les conditions et les limites sous diurétiques sont détaillées dans la fenêtre N17.', 'n17-fen')
 add_if_absent('pCO₂', [('p','pression partielle'),('C','carbone'),('O','oxygène'),('₂','deux atomes d’oxygène')], 'Pression partielle du dioxyde de carbone', 'La valeur dépend du prélèvement artériel ou veineux et de la ventilation. Les références suisses et la compensation d’une acidose métabolique sont expliquées dans la fenêtre N17.', 'n17-acidobase')
 add_if_absent('StatPearls', [('StatPearls','nom propre de collection pédagogique, non une abréviation')], 'StatPearls, collection de synthèses médicales', 'Les chapitres Physiology, Renal et Histology, Nephron complètent les bases anatomiques ; ils ne constituent pas une recommandation suisse de traitement.', 'n17-pompe')
 
