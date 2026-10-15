@@ -12,7 +12,7 @@ Quatre autres cours possèdent six HTML et un glossaire : **R25 — Mouvements i
 
 ## Versions et conflits
 
-L’inventaire lit les arbres des 79 références `origin/*` présentes après le fetch global du coordinateur, hors références de PR. Les 78 têtes distinctes se regroupent en huit états de sources neurologiques. Tous les chemins de sources neurologiques présents sur ces références existent déjà dans main ; aucune livraison supplémentaire exclusive à une branche n’a été identifiée. Les anciennes versions et preuves sont inventoriées par leur identifiant de blob Git, sans fusion ni réinjection.
+L’inventaire lit les arbres des 79 références `origin/*` présentes après le fetch global du coordinateur, hors références de PR. L’API GitHub confirme ces mêmes 79 noms et empreintes ; sa deuxième page est vide (`github_branches_observed.json`). Les 78 têtes distinctes se regroupent en huit états de sources neurologiques. Tous les chemins de sources neurologiques présents sur ces références existent déjà dans main ; aucune livraison supplémentaire exclusive à une branche n’a été identifiée. Les anciennes versions et preuves sont inventoriées par leur identifiant de blob Git, sans fusion ni réinjection.
 
 Le paquet de travail Codex I63 diffère des six HTML canoniques actuels. Les HTML canoniques sont conservés : republier la copie de travail écraserait une révision ultérieure. G45 et I61 correspondent à leurs livraisons vivantes ; les 50 dossiers Betta déjà intégrés correspondent à leurs six HTML canoniques. Le JSON `packages.json` détaille chaque dossier.
 
@@ -23,6 +23,13 @@ Les quatre nouveaux cours sont encore `A_FAIRE` dans les anciens registres, bien
 - Égalité octet par octet des 28 copies et empreintes SHA-256 : réussite ; `copies_sha256.json`.
 - Analyse syntaxique des quatre modules de glossaire : réussite.
 - Structure des quatre cours : un template principal chacun, panneaux pA/pE/pS/pP, aucune clé de fenêtre manquante, aucun identifiant ou clé de fenêtre en double, aucun asset local absent. Nombre de fenêtres : R25 42, R26 59, R27 50, R47 44. Détails : `structural_checks.json`.
-- `python3 test_v7.py --static R25 R26 R27 R47` : échec avant les contrôles de cours. Le chargeur refuse le schéma de découverte dynamique de `r27.py` (`GlossaryLoadError`). Correctif moteur confié au domaine infrastructure ; aucun glossaire n’a été modifié pour contourner ce refus.
+- `python3 test_v7.py --static R25 R26 R27 R47` : échec initial avant les contrôles de cours, car le chargeur refuse le schéma de découverte dynamique de `r27.py` (`GlossaryLoadError`). Le chargeur corrigé au commit infrastructure `0fbd5d1d`, importé en mémoire sans modifier les glossaires, permet de réussir ce contrôle sur les quatre cours : audits d’abréviations vides, fenêtres et Pareto cohérents.
+- Construction officielle `build_front.py --fragment S08` dans un overlay temporaire limité aux quatre ajouts, avec ce même chargeur : réussite, 199 gabarits et 3 963 350 octets après compression. Aucun registre du worktree n’a été modifié par cet overlay.
+- Contrôle statique existant sur les 57 cours Neurologie (53 canoniques de la base et quatre copies), avec ce chargeur : **OK**, code de sortie 0 ; journal `static_57.log`.
+- Contrôle navigateur existant `test_v7.py` sur l’artefact officiel des quatre copies, avec Chromium `/usr/bin/chromium`, bureau 1300 × 900 et mobile 390 × 844 : **OK**, code de sortie 0. Le test vérifie notamment l’affichage, les fenêtres visibles, les quatre onglets, Navigo, la police, le mode livre et le débordement mobile. La configuration et les limites de ce dispositif local sont consignées dans `validation.json`.
+
+## État public initial
+
+Le manifeste public `https://vialdjoukang-spec.github.io/Medina/publication.json`, téléchargé pendant cette mission, annonce 53 cours Neurologie, au commit de construction `fab6d25376247328b7d050702aae768098b10b86` du 15 octobre 2026 à 14:21:35 UTC. Toutes leurs empreintes de sources sont égales à celles de la base locale examinée. R25/R26/R27/R47 n’y figurent pas. Le fichier `public_manifest_before.json` conserve cette comparaison ; ce relevé ne remplace pas le contrôle après publication du coordinateur.
 
 Aucun audit médical nouveau, déploiement, push ou fusion n’a été réalisé par cet agent. Les réserves existantes restent présentes dans les sources copiées. La disponibilité publique sera vérifiée par le coordinateur après son intégration.
