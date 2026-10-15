@@ -1,0 +1,217 @@
+{
+ "code": "D69",
+ "actor": "C03-R-HEM",
+ "runtime_agent_id": "claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/C03-R-HEM",
+ "medical_human_validation": false,
+ "entry": {
+  "actor": "C03-R-HEM",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T22:41:48.929567+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Autorisation de publication directe des Cycles 3 à 30 (Vial, 14.10.2026) ; leçon D69, aucune injection par cet auteur."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/dossier_sources.json",
+      "sha256": "258fbc17e2457401e1f7b627d35bb8507d784e36c4a32a0d4eab3f6405b47111",
+      "explanation": "Périmètre D69 seul (H-08-Hématologie) ; rédaction uniquement depuis le dossier de sources du Cycle 3."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/dossier_sources.json",
+      "sha256": "258fbc17e2457401e1f7b627d35bb8507d784e36c4a32a0d4eab3f6405b47111",
+      "explanation": "Décisions D69-01 à D69-90 avec URL, section, passage, empreinte du texte lu ; lacunes L01 à L06 et divergences DV1 à DV10 documentées."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/CONTRAT_AUDIT_CONTEXTE_SUISSE_2026-10-08.md",
+      "sha256": "e988dac355a5976f3756a64821ba4188b279f2e31335e2abfc72eb9e87fe46b7",
+      "explanation": "Sources suisses d'abord (Onkopedia SGH-SSH, WPH, FI Swissmedic, SRK), puis européennes ; aucune recommandation américaine décisionnelle."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Auteur C03-R-HEM identifié ; audits différés après le Cycle 30 ; aucune usurpation d'audit, ni de validation médicale humaine."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "CHAPTER_SPEC.md",
+      "sha256": "d43b97e59597334c3adcc194c341fa7abcf6d8d9da50d41bb351d349e04fbc1c",
+      "explanation": "Quatre onglets, fenêtres préfixées d69-, glossaire, quiz, Pareto, dernier îlot alert puis key, images ouvertes."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "PROMPT_MEDINA.md",
+      "sha256": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+      "explanation": "Aucune affirmation hors dossier ; lacunes nommées ; revue IA, sans validation médicale humaine."
+     }
+    ]
+   }
+  ]
+ },
+ "exit": {
+  "actor": "C03-R-HEM",
+  "verdict": "conforme",
+  "checked_at": "2026-10-14T23:07:52.172009+00:00",
+  "prompt_files": {
+   "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+   "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+   "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+   "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+  },
+  "checks": [
+   {
+    "id": "autorisation",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Sortie : leçon D69 rédigée sous l'autorisation de publication directe des Cycles 3 à 30 ; aucune injection ni publication par l'auteur."
+     }
+    ]
+   },
+   {
+    "id": "perimetre_provenance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/dossier_sources.json",
+      "sha256": "258fbc17e2457401e1f7b627d35bb8507d784e36c4a32a0d4eab3f6405b47111",
+      "explanation": "Sortie : sept fichiers D69 uniquement (4 onglets, 2 fichiers de fenêtres, glossaire), rédigés depuis le dossier de sources du Cycle 3."
+     }
+    ]
+   },
+   {
+    "id": "sources_lues",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/source_ledger_claude.json",
+      "sha256": "f46f600705b6d27a96746d2a3803321160648605ba2780fbb6a6c295afccab63",
+      "explanation": "Sortie : 108 affirmations rattachées à un passage lu avec empreinte ; 0 affirmation non vérifiée ; lacunes L01 à L06 et divergences DV1 à DV10 tracées."
+     }
+    ]
+   },
+   {
+    "id": "contexte_suisse",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/contexte_suisse_claude.json",
+      "sha256": "23e85aae87f2ddd4cdd431c7e0b004594abfd8ae71ab80c9e91dbac47d5c72e9",
+      "explanation": "Sortie : matrice de 100 décisions ; sources suisses d'abord (Onkopedia SGH-SSH, WPH, FI Swissmedic, SRK), européennes ensuite, aucune recommandation américaine ; verdicts en attente de revue différée."
+     }
+    ]
+   },
+   {
+    "id": "independance",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+      "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+      "explanation": "Sortie : auteur C03-R-HEM seul ; aucun audit croisé ni contre-audit simulé ; revue IA sans validation médicale humaine."
+     }
+    ]
+   },
+   {
+    "id": "contrat_cours",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/chapters/D69/D69_a.html",
+      "sha256": "14075c039e3600746e9a845188cb15a0c555ec5777d04fc7bfa8a8481874026b",
+      "explanation": "Sortie : quatre onglets, 78 fenêtres préfixées d69-, glossaire d69.py, 20 quiz, 20 Pareto, dernier îlot de la Pathologie en alert puis key, 7 images ouvertes, test_v7 --static OK sur copie jetable."
+     }
+    ]
+   },
+   {
+    "id": "honnetete",
+    "status": "conforme",
+    "evidence": [
+     {
+      "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/images_claude.json",
+      "sha256": "733fd9965dca340c2dde9638b18f5a399ed88789040570997fda6bbce922ca38",
+      "explanation": "Sortie : aucune affirmation hors dossier ; extraits du plan signalés dans le registre ; cas fictifs et calculs distingués ; images réelles à licence ouverte inspectées."
+     }
+    ]
+   }
+  ]
+ },
+ "final_files": {
+  "chapters/D69/D69_a.html": "14075c039e3600746e9a845188cb15a0c555ec5777d04fc7bfa8a8481874026b",
+  "chapters/D69/D69_b.html": "25f50abd097b374ca8c51354b45f1136613d25ca4e729b2550c40efbbbe6d046",
+  "chapters/D69/D69_c.html": "6d3d2efd7759a71dd8a27c8526c1f866ccd02e7d8cf3cffd6862aa39f231b876",
+  "chapters/D69/D69_d.html": "ed9bcdddb22006604b3b568609a4b7fa982dedecd947109fa27ef7f698ab160b",
+  "chapters/D69/D69_pop1.html": "78740d600e6d02be8759391331cb1d9d20e786c7993810dfa2aba3c10b30d387",
+  "chapters/D69/D69_pop2.html": "7eb68b65856bb297277dfef510dd729191ad38205ff5b8b7481fe7d6b8961c72",
+  "glossary/d69.py": "7ec1b7ba188dca3058dc465bd15cc761a5cdf37a481cab330b7de4816f6c1043"
+ },
+ "image_files": {
+  "assets/img/cycle3/d69/purpura.jpg": "8107c4cf0cb21767e3dbde8030a0fda9423bb341c90aa1857b7194d7e1468cc5",
+  "assets/img/cycle3/d69/oral_petechiae.jpg": "6561de7c315be9382a4ac82b1b1563de2d7b0b453cc9bdf4bc12d1f535225499",
+  "assets/img/cycle3/d69/hsp_vasculitis.jpg": "79e260c53bf298424c617b563871d180ff8216b27b09b553ec263d9a0887179c",
+  "assets/img/cycle3/d69/p_rpura_senil_300413_refon_1_wp.jpg": "27de6b986a6ff348d9f872999b6f151e5ddb8b08db016e7628cf546d4219d204",
+  "assets/img/cycle3/d69/platelets.jpg": "07c65df7724fe5b74b6c2f7c861bc544c22d70c6b572f35f163673a8207486c3",
+  "assets/img/cycle3/d69/giant_platelet_peripheral_blood_smear_6032662354.jpg": "ea83e51eaaf93006ced19a435dcea33a1def2af939b7b06606105a57250608da",
+  "assets/img/cycle3/d69/megakaryocyte_in_bone_marrow.jpg": "183332e3e450d8d5ad216d6a59700fb36fe113d132899554545c702782500982"
+ },
+ "blocking_reserves": [],
+ "source_ledger": {
+  "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/source_ledger_claude.json",
+  "sha256": "f46f600705b6d27a96746d2a3803321160648605ba2780fbb6a6c295afccab63"
+ },
+ "swiss_context_author": {
+  "path": "livraisons/Livraison Claude/H-08-Hématologie/travail/CYCLE_03_D69/preuves/contexte_suisse_claude.json",
+  "sha256": "23e85aae87f2ddd4cdd431c7e0b004594abfd8ae71ab80c9e91dbac47d5c72e9"
+ },
+ "verdict": "publication_directe_audit_differe",
+ "limits": "Publication directe ; audits différés après le Cycle 30 ; revue IA, sans validation médicale humaine. Trois affirmations du PNDS (moelle 2.5, durée de vie plaquettaire 2.7, rubrique Suivi) et une liste d'imitations du purpura viennent du plan du dossier sans ligne dédiée ; elles sont signalées dans le registre. Le score des 4T provient d'un outil français d'enseignement."
+}

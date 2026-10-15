@@ -1,0 +1,290 @@
+{
+ "code": "E10",
+ "actor": "C02-R-NEPH",
+ "runtime_agent_id": "claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/C02-R-NEPH",
+ "pass": 1,
+ "started_at": "2026-10-14T21:07:53+00:00",
+ "finished_at": "2026-10-14T21:15:08.552588+00:00",
+ "medical_human_validation": false,
+ "entry": {
+  "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/E10/croise/entree.json",
+  "sha256": "c35d9e6cce95cd25c307bfa8ea0d277249b4d28ebfec79ed6676d38b95be2085"
+ },
+ "dimensions": {
+  "redaction": "Lecture intégrale des 21 parties, 126 sous-parties, 42 fenêtres prescrites, glossaire (38 entrées), Pareto et 3 quiz. Le français est clair, causal et dense ; les tableaux sont introduits et lus ; les deux tableaux de raisonnement SSP (hyperglycémie symptomatique, trouble de conscience) hiérarchisent par gravité puis fréquence avec élément discriminant et examen décisif. R08 n’est pas entièrement levée : quatre infinitifs injonctifs subsistent (B2). JBDS est tantôt « européen », tantôt « britannique » (O1).",
+  "medecine": "Critères et conduite de l’acidocétose (remplissage, insuline, potassium, réponse horaire, résolution, relais), HHS, hypoglycémie (HUG, SSED AID), Baqsimi, NovoRapid, Tresiba, métriques CGM par population, grossesse, pied diabétique et conduite du 1er groupe ont été confrontés aux sources primaires téléchargées ce jour : conformes. Une règle de conduite professionnelle (2e groupe, exception D/D1) est inexacte et incomplète (B1).",
+  "sources": "Sources suisses prioritaires (SSED 2025, SGED/SGRM 2025, QualiCCare 2023, HUG 2022, RMS 2019, SSED 2011/2017, FI Swissmedic exactes), compléments britanniques (NICE NG17, JBDS DKA/HHS 2023) explicitement non fusionnés avec la Suisse. 21 contrôles numériques en source primaire relue aujourd’hui. Divergence d’empreinte du PDF SSED 2025 à expliquer (O3).",
+  "frontend": "test_v7.py --static E10 sur clone jetable : OK (31 572 mots, 106 fenêtres, 3 quiz, 21 Pareto). Neuf images ouvertes et confrontées à leur légende : correction « du premier au quatrième orteil », GLUT4 déclaré absent de la figure 7 et mention anatomique de la figure 6 conformes (R06 levée) ; lecture guidée visible/absent de la figure 5 exacte (lacune 07:27–07:48, plateau 39 mg/dL 03:31–06:36, valeurs >180 mg/dL 09:33–14:28, pic 321 à 10:58), R07 levée. Poids d’images élevé (O2)."
+ },
+ "numerical_checks": [
+  {
+   "id": "NUM-01",
+   "claim": "Acidocétose JBDS : glucose >11 mmol/L ou diabète connu ; cétones >3 mmol/L ou cétonurie ≥2+ ; pH <7,3 et/ou bicarbonates <15",
+   "source": "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf (SHA-256 568323c1…)",
+   "section": "Diagnosis, D-K-A",
+   "passage": "Trois composantes ; cétonurie 2+ ou plus.",
+   "finding": "Conforme (A06-2, A12 alert, fenêtre a06-1)."
+  },
+  {
+   "id": "NUM-02",
+   "claim": "Marqueurs de gravité : cétones >6, bicarbonates <5, pH <7,0, K <3,5, GCS <12, PAS <90, saturation <92 %, trou anionique >16",
+   "source": "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf (SHA-256 568323c1…)",
+   "section": "Assessment of severity",
+   "passage": "Liste des signes de DKA sévère, dont pouls >100 ou <60.",
+   "finding": "Conforme ; le pouls n’est pas cité mais la liste est présentée comme non exhaustive (« dont »)."
+  },
+  {
+   "id": "NUM-03",
+   "claim": "Remplissage : 500 mL en 10–15 min si PAS <90 ; 1 L/1 h puis 1 L/2 h ×2, 1 L/4 h ×2, 1 L/6 h ; réévaluation à 12 h ; prudence 18–25 ans, âgés, grossesse, insuffisance cardiaque ou rénale",
+   "source": "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf (SHA-256 568323c1…)",
+   "section": "Action 1, tableau p. 26",
+   "passage": "Schéma illustratif pour 70 kg.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-04",
+   "claim": "Potassium : >5,5 nul ; 3,5–5,5 : 40 mmol/L si diurèse ; <3,5 avis senior ; 67,1 % <4,0 à 24 h ; maintien 4,0–5,5",
+   "source": "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf (SHA-256 568323c1…)",
+   "section": "Action 3 ; Box 3 ; données UK",
+   "passage": "Tableau de remplacement et cible.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-05",
+   "claim": "Réponse : cétones −0,5 mmol/L/h, bicarbonates +3, glucose −3 ; +1 U/h ; glucose 10 % 125 mL/h si <14 ; 0,05 U/kg/h ; basale 0,25 U/kg au diagnostic ; résolution cétones <0,6 et pH >7,3 ; relais 30–60 min",
+   "source": "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf (SHA-256 568323c1…)",
+   "section": "Actions 4–5, Box 3, Box 6, Recommendations",
+   "passage": "Objectifs horaires et relais.",
+   "finding": "Conforme ; calcul fictif 5,2→4,8 = 0,4 mmol/L/h refait."
+  },
+  {
+   "id": "NUM-06",
+   "claim": "HHS : hypovolémie, osmolalité ≥320 mOsm/kg, glucose ≥30, cétones ≤3,0, pH >7,3, bicarbonates ≥15 ; forme mixte pH <7,3, HCO3 <15, cétones >3",
+   "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10107355/fullTextXML (SHA-256 e4e4767c…)",
+   "section": "Résumé et définition",
+   "passage": "Critères et forme mixte.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-07",
+   "claim": "Métriques adultes : TIR 3,9–10 >70 % ; TITR 3,9–7,8 50–60 % voire >70 % ; TBR <4 %, <3,0 : 1–2 % ou moins ; TAR <25 %, >13,9 ≤5 %",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/2025_Swiss_Diabetes_and_Technology_Recommendations_inkl_Table_E.pdf (SHA-256 955bc000…)",
+   "section": "Therapy goals, p. 19",
+   "passage": "Quatre métriques.",
+   "finding": "Conforme (R01 levée)."
+  },
+  {
+   "id": "NUM-08",
+   "claim": "Grossesse : 3,5–7,8 >70 %, <3,5 <4 %, <3,0 <1 %, >7,8 <25 % ; capillaire 3,9–5,3 à jeun, 6,1–7,8 à 1 h, 5,6–6,7 à 2 h ; −15–20 % au 1er trimestre, +5 %/semaine dès 16 SA ; suivi au moins mensuel ; GMI non utilisé",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/2025_Swiss_Diabetes_and_Technology_Recommendations_inkl_Table_E.pdf (SHA-256 955bc000…)",
+   "section": "Diabetes technology in pregnancy",
+   "passage": "Objectifs et adaptations.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-09",
+   "claim": "Capteurs précis 4–16 mmol/L, MARD <10 % ; interférences paracétamol (anciens Dexcom/Medtronic), vitamine C (Dexcom G6, Libre, faussement élevé), tétracycline (Eversense) ; scan FGM toutes les 8 h",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/2025_Swiss_Diabetes_and_Technology_Recommendations_inkl_Table_E.pdf (SHA-256 955bc000…)",
+   "section": "CGM limitations",
+   "passage": "Précision et interférences.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-10",
+   "claim": "Enfant : HbA1c 6,5 % (<48 mmol/mol) si technologie sans fardeau, sinon <7,0 % ; TIR >70 % sur 14 jours ; TITR >50 % sous AID à valider ; âgé fragile TIR >50 %, TBR <1 % ; capteurs dès 2 ou 4 ans, AID dès 2, 6 ou 7 ans",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/2025_Swiss_Diabetes_and_Technology_Recommendations_inkl_Table_E.pdf (SHA-256 955bc000…)",
+   "section": "Pediatrics ; Elderly",
+   "passage": "Objectifs par population.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-11",
+   "claim": "Conduite 1er groupe : risque moyen/élevé/très élevé, 4–5 mmol/L → 10–20 g, pas de conduite <4,0 (<5 si très élevé), 45 min, capteur ou 6–8 mesures pendant au moins un an après grade III, HbA1c >10 % exclut",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf (SHA-256 e303de97…)",
+   "section": "§9 et tableau 2, pp. 9–11",
+   "passage": "Mesures par catégorie.",
+   "finding": "Conforme (R02 levée pour le 1er groupe)."
+  },
+  {
+   "id": "NUM-12",
+   "claim": "Conduite 2e groupe : basal–bolus avec ou sans capteur exclut D/D1 sauf autorisation exceptionnelle de niveau 4 ; délai de 3 mois en risque élevé",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf (SHA-256 e303de97…)",
+   "section": "§10 et tableau 3, pp. 12–13",
+   "passage": "L’exception D/D1 (art. 7 al. 3 OAC) exige notamment, pour le type 1, pompe en boucle fermée hybride et CGM depuis au moins 3 mois, aucune hypoglycémie sévère sur 12 mois, Clarke <4, suivi et confirmation du spécialiste ; HbA1c >8,5 % exclut le 2e groupe ; risque très élevé : ≥3 mois sans hypoglycémie sévère, CGM obligatoire, expertise niveau 4.",
+   "finding": "Non conforme : réserve B1."
+  },
+  {
+   "id": "NUM-13",
+   "claim": "Pied : grade 1 derme, 2 sous-cutané, 3 os/articulation ; suivi au moins hebdomadaire ; <10 %/semaine → niveau 2 ; <50 % en 4 semaines → niveau 3 ; ischémie critique IPS <0,5, tcPO2 <25, pression d’orteil <30 ; neuropathie absente si monofilament 4/4 et pallesthésie >4/8 ; IPS ≥0,9",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/65_Fussversorgung/230802_QCARE_Praxisleitfaden_A5_DE.pdf (SHA-256 19240cea…)",
+   "section": "pp. 1–4, annexe",
+   "passage": "Niveaux, grades et escalade.",
+   "finding": "Conforme (R05 levée) ; calcul 4,0→3,7 cm² = 7,5 % refait."
+  },
+  {
+   "id": "NUM-14",
+   "claim": "Baqsimi 3 mg dès 1 an ; interactions indométacine, warfarine, bêtabloquants ; CI phéochromocytome ; glucides après réponse ; inefficace sans glycogène",
+   "source": "https://amiko.oddb.org/fr/fi?gtin=7680674650010, FI Baqsimi mars 2026 (texte SHA-256 70e0724d…)",
+   "section": "Indications, Contre-indications, Mises en garde, Interactions",
+   "passage": "Trois interactions nommées.",
+   "finding": "Conforme (R03 levée)."
+  },
+  {
+   "id": "NUM-15",
+   "claim": "NovoRapid : début 10–20 min, max 1–3 h, durée 3–5 h ; 0,5–1,0 U/kg/j dès 2 ans, 50–70 % en basal–bolus ; IV par un professionnel, stabilité 0,05–1,0 U/mL avec 40 mmol/L KCl 24 h ; <30 °C 4 semaines ; insuline alternative en cas de panne de pompe",
+   "source": "https://amiko.oddb.org/fr/fi?gtin=7680550450024, FI NovoRapid avril 2026 (texte SHA-256 ab0f1daf…)",
+   "section": "Posologie, Remarques, Pharmacocinétique",
+   "passage": "Données produit.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-16",
+   "claim": "Tresiba : >42 h, équilibre 2–3 jours, ≥8 h entre injections, type 1 dès 1 an, −20 % au passage, 10 U initiales réservées au type 2, ni pompe ni IV/IM, FlexTouch 200 paliers de 2 U, 8 semaines après ouverture, allaitement déconseillé, grossesse envisageable",
+   "source": "https://amiko.oddb.org/fr/fi?gtin=7680625620017, FI Tresiba décembre 2024 (texte SHA-256 121a4316…)",
+   "section": "Posologie, Grossesse/allaitement, Remarques",
+   "passage": "Données produit.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-17",
+   "claim": "HUG : 15 g si <4 mmol/L (30 g si <2,5), contrôle à 20–30 min, +1,5–2,0 mmol/L par 15 g ; Tresiba 42 h : ne pas faire l’injection suivante après hypoglycémie sévère",
+   "source": "https://www.hug.ch/vdoc/HUG_000000812.pdf (SHA-256 5ca00c9a…)",
+   "section": "Points 2–3",
+   "passage": "Protocole hospitalier.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-18",
+   "claim": "Diagnostic SSED 2011 : jeûne ≥7,0, HGPO 2 h ≥11,1, aléatoire ≥11,1 avec symptômes ; HbA1c inadaptée au type 1 ; fer, vitamines C/E, +0,4 après 70 ans",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/Position-SGED_Diagnose-mit-HbA1c_2011_FR_1_.pdf (SHA-256 9bfbe72a…)",
+   "section": "Points 1 et limites",
+   "passage": "Seuils et limites.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-19",
+   "claim": "Viollier glucose 3,3–5,5 mmol/L 16–99 ans ; MonAM 6,2 % en 2022",
+   "source": "https://www.viollier.ch/fr/analysis/7380 (page SHA-256 58050507…)",
+   "section": "Valeurs de référence",
+   "passage": "Intervalle par âge.",
+   "finding": "Conforme ; OBS : « En 2022, 6,2 % … diagnostic de diabète ou médicaments » relu."
+  },
+  {
+   "id": "NUM-20",
+   "claim": "NICE : deux autoanticorps, peptide C non systématique, non à jeun avec glycémie si doute, ≥60 ans + amaigrissement → filière cancer pancréatique, éducation 6–12 mois, HbA1c ≤48 mmol/mol, HbA1c tous les 3–6 mois, TSH annuelle, perception à la revue annuelle",
+   "source": "https://www.nice.org.uk/guidance/ng17/chapter/Recommendations (page SHA-256 546c0f4a…)",
+   "section": "1.1.3–1.1.9, 1.3.2, 1.6.1, 1.6.6, 1.9.1, 1.14.39",
+   "passage": "Recommandations relues.",
+   "finding": "Conforme."
+  },
+  {
+   "id": "NUM-21",
+   "claim": "Critères suisses de qualité : HbA1c ≥2/an, néphropathie et pieds ≥1/an, œil au moins tous les 2 ans",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/64_Ressourcen_Hausarzt/Diabetes_Kriterien_2017_SGED_def.pdf (SHA-256 69426326…)",
+   "section": "Tableau des critères 2017",
+   "passage": "Fréquences.",
+   "finding": "Conforme."
+  }
+ ],
+ "blocking_reserves": [
+  {
+   "id": "B1",
+   "localisation": "E10_pop1.html#e10-a11-conduite (paragraphe « Second groupe médical ») ; écho dans E10_b.html#e10-a11-partie-6",
+   "probleme": "Le cours écrit qu’une insulinothérapie basal–bolus, « avec ou sans capteur », exclut D/D1 « sauf autorisation exceptionnelle après expertise de niveau 4 ». La directive suisse 2025 ne prévoit cette exception, pour le type 1, que sous pompe en boucle fermée hybride avec CGM depuis au moins trois mois, sans hypoglycémie sévère depuis douze mois, avec perception conservée (Clarke < 4), suivi et confirmation de formation par un endocrinologue-diabétologue. Le cours omet aussi l’exclusion du 2e groupe si HbA1c > 8,5 % et, pour le risque très élevé, l’attente d’au moins trois mois sans hypoglycémie sévère, le CGM obligatoire et l’expertise de niveau 4. Une règle d’aptitude professionnelle inexacte peut induire une attestation erronée.",
+   "source": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf (SHA-256 e303de97…), §10 (Kategorie D und D1 ; Bedingungen 2. medizinische Gruppe) et tableau 3, pp. 12–13",
+   "correction_attendue": "Réécrire le paragraphe « Second groupe » avec les conditions exactes de l’exception D/D1 (type 1 : HCL + CGM ≥ 3 mois, aucune hypoglycémie sévère sur 12 mois, Clarke < 4, suivi et confirmation spécialisés, art. 7 al. 3 OAC, médecin de niveau 4), l’exclusion si HbA1c > 8,5 %, le délai de 3 mois en risque élevé et, en risque très élevé, ≥ 3 mois sans hypoglycémie sévère + CGM obligatoire + niveau 4 ; synchroniser registre et Pareto si concernés.",
+   "gravite": "majeure"
+  },
+  {
+   "id": "B2",
+   "localisation": "E10_c.html#e10-e02-partie-1 (« Selon les symptômes, ajouter les examens… ») ; E10_pop1.html fenêtres e10-a08-fenetre-1 (« Toujours rapporter aussi… ») et e10-a12-fenetre-1 (« utiliser les trois composantes… ; … interpréter les anticorps… ») ; E10_pop2.html e10-gl-37 (« associer glucose ou diabète connu… »)",
+   "probleme": "La réserve R08 (infinitifs injonctifs) est déclarée levée mais quatre consignes à l’infinitif subsistent, en contradiction avec STYLE_REDACTION §2.",
+   "source": "docs/STYLE_REDACTION.md §2 ; pass1 Codex R08",
+   "correction_attendue": "Réécrire ces quatre passages en phrases complètes au présent de l’indicatif avec sujet explicite (« le médecin ajoute… », « le rapport mentionne aussi… », etc.), puis relancer une recherche systématique des infinitifs injonctifs sur les six fichiers.",
+   "gravite": "modérée"
+  }
+ ],
+ "nonblocking_observations": [
+  {
+   "id": "O1",
+   "observation": "JBDS est qualifié de « référentiel européen » (A06-2) et de « protocole européen » (A12-5, A12-6) alors que le glossaire et A06-5 le disent britannique ; harmoniser en « britannique » (recours européen motivé)."
+  },
+  {
+   "id": "O2",
+   "observation": "Poids d’images élevé : e10-09-immunology.png 5,6 Mo (5105×3185), e10-05-report.png 1,5 Mo, e10-03-profile.png 1,2 Mo ; un allègement proportionnel améliorerait le défilement sans changer le contenu."
+  },
+  {
+   "id": "O3",
+   "observation": "Le SHA-256 de téléchargement de la recommandation SSED 2025 dans source_ledger_claude.json (64e35254…) diffère de mon téléchargement du jour (955bc000…) ; préciser s’il porte sur le PDF, une extraction texte ou une version antérieure."
+  },
+  {
+   "id": "O4",
+   "observation": "Les catalogues Viollier (hors glucose), La Source et les revues mécanistiques ne sont pas relus par l’auteur ce jour (déclaré honnêtement) ; j’ai relu le catalogue glucose Viollier et MonAM."
+  }
+ ],
+ "reserves_codex_verifiees": {
+  "R01": "levée",
+  "R02": "levée pour le 1er groupe ; règle du 2e groupe erronée (B1)",
+  "R03": "levée",
+  "R04": "levée",
+  "R05": "levée",
+  "R06": "levée",
+  "R07": "levée",
+  "R08": "partiellement levée (B2)"
+ },
+ "verdict": "corrections_required",
+ "score": 18,
+ "score_scale": 20,
+ "score_justification": "Cours exact et très complet sur le fond des réserves Codex ; une règle réglementaire de conduite professionnelle inexacte (B1, tolérance zéro sur une règle décisionnelle) et des injonctions résiduelles (B2) empêchent la clôture. 18/20 sans autorisation de passe 2 avant correction.",
+ "final_files": {
+  "chapters/E10/E10_a.html": "5e64da1f8d82bcb48db56c19d82feb65a1348d471fd3ec5e88a2e181ab58a4ef",
+  "chapters/E10/E10_b.html": "b3992037627994d132b4ead7b8ea2b6dbd5e23b83d04ab0133ff8cab8d1c7483",
+  "chapters/E10/E10_c.html": "9ead8ab1c5580d5c91ba5bdb1cb2a3170148ed7ed04ff9c8258014b1049bdc7a",
+  "chapters/E10/E10_d.html": "a20ff5600f33a0724f91c4c80f64367b7c80e455912e5710ea7a7a903a56e4c8",
+  "chapters/E10/E10_pop1.html": "dda6b9d072f3008736dac1153a152e1eca00523083f5eef70a743e7b91b29ca1",
+  "chapters/E10/E10_pop2.html": "0e98c7c35674ed02f70ffbbcb6922b83449ed81dbcf23dcf3982e8e6d9831706",
+  "glossary/e10.py": "e2e5119010e067945602e81f5343920171535d7110e2853336620b2503a74909"
+ },
+ "image_files": {
+  "assets/img/cycle2/e10/e10-01-glucose.jpg": "726e0098e2e08533d5f9b832de5a9a256a3b150431f5b335c3ff45f972f7cf57",
+  "assets/img/cycle2/e10/e10-02-emergency.jpg": "425185376643c925c400981325a12943521d03d5308eec268569d77fa24c539f",
+  "assets/img/cycle2/e10/e10-03-profile.png": "a5820659ea2e2fc42edcb8449f1bdece01fe046db7c3dbb5845f614bfadc7b60",
+  "assets/img/cycle2/e10/e10-04-foot.gif": "2126f5316552167a4fe101fad2291cd78140131e354e2185c844c70ec3536289",
+  "assets/img/cycle2/e10/e10-05-report.png": "97473f1e957bbcbc0a291b81799c05d16df4875d18d446a2e12ecacee0f30496",
+  "assets/img/cycle2/e10/e10-06-pancreas.jpg": "ca07f5459d746b58ef9779c2cfaf5e5018a28ae3b0dcf128dbdea86ed6ccf5e1",
+  "assets/img/cycle2/e10/e10-07-insulin.png": "c81b426668bde406597fce49268a8f923d21bb55c5213e37e05c5a6360a3aa36",
+  "assets/img/cycle2/e10/e10-08-ketogenesis.png": "8ae010800223e75c3411c6f45cfd89e2cb4ab24b828f151ed5162416c861187d",
+  "assets/img/cycle2/e10/e10-09-immunology.png": "2a39d5d9af2c012bc0ab7a6576bdc414769eeca22d89af97cb57a9c99483e1e0"
+ },
+ "inventory": {
+  "images_read": [
+   "assets/img/cycle2/e10/e10-01-glucose.jpg",
+   "assets/img/cycle2/e10/e10-02-emergency.jpg",
+   "assets/img/cycle2/e10/e10-03-profile.png",
+   "assets/img/cycle2/e10/e10-04-foot.gif",
+   "assets/img/cycle2/e10/e10-05-report.png",
+   "assets/img/cycle2/e10/e10-06-pancreas.jpg",
+   "assets/img/cycle2/e10/e10-07-insulin.png",
+   "assets/img/cycle2/e10/e10-08-ketogenesis.png",
+   "assets/img/cycle2/e10/e10-09-immunology.png"
+  ],
+  "sources_downloaded_today": [
+   "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/2025_Swiss_Diabetes_and_Technology_Recommendations_inkl_Table_E.pdf (SHA-256 955bc000…)",
+   "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/Handout_Richtlinien_Diabetes_DE_Version_1_August_2025.pdf (SHA-256 e303de97…)",
+   "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf (SHA-256 568323c1…)",
+   "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10107355/fullTextXML (SHA-256 e4e4767c…)",
+   "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/65_Fussversorgung/230802_QCARE_Praxisleitfaden_A5_DE.pdf (SHA-256 19240cea…)",
+   "https://www.hug.ch/vdoc/HUG_000000812.pdf (SHA-256 5ca00c9a…)",
+   "https://amiko.oddb.org/fr/fi?gtin=7680674650010, FI Baqsimi mars 2026 (texte SHA-256 70e0724d…)",
+   "https://amiko.oddb.org/fr/fi?gtin=7680550450024, FI NovoRapid avril 2026 (texte SHA-256 ab0f1daf…)",
+   "https://amiko.oddb.org/fr/fi?gtin=7680625620017, FI Tresiba décembre 2024 (texte SHA-256 121a4316…)",
+   "https://www.nice.org.uk/guidance/ng17/chapter/Recommendations (page SHA-256 546c0f4a…)",
+   "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/Position-SGED_Diagnose-mit-HbA1c_2011_FR_1_.pdf (SHA-256 9bfbe72a…)",
+   "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/64_Ressourcen_Hausarzt/Diabetes_Kriterien_2017_SGED_def.pdf (SHA-256 69426326…)",
+   "https://www.viollier.ch/fr/analysis/7380 (page SHA-256 58050507…)",
+   "https://ind.obsan.admin.ch/fr/indicator/monam/diabete-age-15 (page SHA-256 6ace323d…)"
+  ],
+  "preview": "Aucun aperçu navigateur personnel dans cette passe ; contrôle statique seulement."
+ },
+ "next_step": "Attendre les corrections de C02-R-ENDO et le signal du coordinateur pour la passe 2."
+}

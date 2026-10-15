@@ -1,0 +1,1374 @@
+{
+ "schema_version": 1,
+ "fragment_id": "E-06-Endocrinologie et métabolisme",
+ "chapter_code": "E05",
+ "scope": "lecon_E05_auteur",
+ "actor": "C03-R-ENDO",
+ "note": "Matrice auteur du Cycle 3 (publication directe) ; verdicts en attente de revue indépendante différée. Ne remplace pas un contrôle du coordinateur. La SSED ne publie pas de recommandation propre sur l’hyperthyroïdie (renvoi à l’ETA et à l’ATA) : lacune documentée. Aucune recommandation américaine n’est décisionnelle.",
+ "source_files": {
+  "chapters/E05/E05_a.html": "1590cd0ff87ec8586942d8c5bfbea2da759e1066a36c715913aaf289d1a00d46",
+  "chapters/E05/E05_b.html": "08f96041029aa5922e9d9c2b91e45c8656adc3ad49ae49a402008a5a7b0839a9",
+  "chapters/E05/E05_c.html": "793d6bcc5ab447e63939e36c366a9bcb2b702a03ffe3532aad23d63df3d8bae5",
+  "chapters/E05/E05_d.html": "c7d50fbcdbda851f5cfb649e1ddbc051a6231ecc435becfa2cef591e55b8e2d1",
+  "chapters/E05/E05_pop1.html": "464c6ecfda481fba5a6f2d026250e307802fc2725ecc10612af1178cd1404d67",
+  "chapters/E05/E05_pop2.html": "2d5d529b2eaf556409e4bf0e90ba570fd56fbdfda2dbc26ef389c14b18870d9e",
+  "glossary/e05.py": "c002151553f051d2c315262212369ad5266e0724446d4ef7dc058d449ac136cf"
+ },
+ "unresolved_divergences": [],
+ "decisions": [
+  {
+   "id": "E05-01",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Test réflexe suisse : TSH seule, puis T4 libre et T3 si TSH supprimée ; TSH normale excluant la plupart des dysthyroïdies ; dépistage de l’asymptomatique non recommandé.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Société suisse de chimie clinique (SSCC), approuvé par la SSED",
+    "title": "Recommandations : Analyses de laboratoire du bilan thyroïdien initial — introduction du test réflexe (GT post-analytique SSCC)",
+    "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/7_Endokrinologie/72_Empfehlungen_SGED/recommandations_postanalytique_bilan_thyroidien_20251010.pdf",
+    "version_date": "octobre 2025",
+    "section": "Recommandations ; Explications",
+    "passage": "« un dosage de la TSH seule est effectué en première intention. En cas de résultat anormal de TSH, l'analyse… de T4 libre et T3 (libre ou totale) en cas de TSH supprimée peut être automatiquement ajoutée… Le dépistage systématique d'une dysthyroïdie chez un patient asymptomatique et hors des situations ciblées (grossesse, bilan d'infertilité, trouble du rythme cardiaque…, nouveau-nés) n'est pas recommandé. »",
+    "status": "applicable"
+   },
+   "foreign_sources": []
+  },
+  {
+   "id": "E05-02",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Intervalles de référence TSH, T4 libre, T3 libre, TRAK : propres au laboratoire et à la méthode (exemple Risch, adulte, enfant, grossesse) ; aucun intervalle suisse universel.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Laboratoire Dr Risch (Suisse) — catalogue Ribook",
+    "title": "Ribook : TSH, FT4, FT3, TRAK (ECLIA Roche), intervalles de référence par âge et grossesse",
+    "url": "https://ribook.risch.ch/de/analysen/tsh",
+    "version_date": "lastModified 30.07.2026",
+    "section": "referenceValues (tsh, ft4, ft3, trak)",
+    "passage": "TSH « 0.27 - 4.2 mU/l, age ≥ 20 Y » ; FT4 « 12 - 24.1 pmol/l, age ≥ 20 Y » ; FT3 « 3.1 - 6.8 pmol/l, age ≥ 20 Y » ; TRAK « < 1.22 IU/l »",
+    "status": "applicable"
+   },
+   "foreign_sources": []
+  },
+  {
+   "id": "E05-03",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Définitions biologiques de l’hyperthyroïdie manifeste et infraclinique (TSH < 0,1 mU/l ; 0,1–0,4 mU/l) ; grades ETA 1 et 2.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "ARS MEDICI (Rosenfluh, Suisse) — conférence de la Prof. M. Christ-Crain, Hôpital universitaire de Bâle",
+    "title": "Hyper- und Hypothyreose: Wann sollte man danach suchen, wie abklären und wie behandeln? ARS MEDICI 17/2023:435-437",
+    "url": "https://www.rosenfluh.ch/media/arsmedici/2023/17/Hyper-und-Hypothyreose-Wann-sollte-man-danach-suchen-wie-abklaeren-und-wie-behandeln.pdf",
+    "version_date": "25.08.2023",
+    "section": "Überfunktion der Schilddrüse",
+    "passage": "« Wenn der TSH-Spiegel < 0,1 mU/l liegt oder nicht nachweisbar ist und das freie Thyroxin (fT4) erhöht, handelt es sich um eine manifeste Hyperthyreose. Bei einer subklinischen Hyperthyreose ist der fT4-Wert normal bei einem TSH-Wert von < 0,1 bis 0,4 mU/l. »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "The 2015 European Thyroid Association Guidelines on Diagnosis and Treatment of Endogenous Subclinical Hyperthyroidism (Biondi B et al., Eur Thyroid J 2015;4:149-163)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26558232/",
+     "version_date": "26.08.2015",
+     "section": "Résumé",
+     "passage": "« persistently subnormal serum TSH level with free thyroid hormone levels within their respective reference intervals… TSH levels <0.1 mIU/l (grade 2 SHyper)… TSH levels 0.1-0.39 mIU/l (grade 1 SHyper) »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Définition suisse (ARS MEDICI) retenue pour la manifeste et l’infraclinique ; gradation ETA présentée en complément avec ses bornes (0,39 contre 0,4 mU/l)."
+  },
+  {
+   "id": "E05-04",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Un TRAK positif signe la maladie de Basedow ; un TRAK négatif ne l’exclut pas ; scintigraphie pour séparer Basedow sans anticorps, autonomie et thyroïdite.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "ARS MEDICI (Rosenfluh, Suisse) — conférence de la Prof. M. Christ-Crain, Hôpital universitaire de Bâle",
+    "title": "Hyper- und Hypothyreose: Wann sollte man danach suchen, wie abklären und wie behandeln? ARS MEDICI 17/2023:435-437",
+    "url": "https://www.rosenfluh.ch/media/arsmedici/2023/17/Hyper-und-Hypothyreose-Wann-sollte-man-danach-suchen-wie-abklaeren-und-wie-behandeln.pdf",
+    "version_date": "25.08.2023",
+    "section": "Ursache der Hyperthyreose abklären",
+    "passage": "« Wenn die TRAK positiv sind, handelt es sich um Morbus Basedow; ein negativer TRAK-Befund schliesst Morbus Basedow aber nicht aus. Die Szintigrafie erlaubt, zwischen einem TRAK-negativen Morbus Basedow (homogen erhöhte Aktivität), dem Vorliegen von aktiven Schilddrüsenknoten (Autonomie) oder einer Thyreoiditis (keine oder tiefe Aktivität) zu unterscheiden. »",
+    "status": "applicable"
+   },
+   "foreign_sources": []
+  },
+  {
+   "id": "E05-05",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Smarter Medicine : échographie utile dans l’hyperthyroïdie pour distinguer Basedow, autonomie et thyroïdite.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "SSED / SGED (Smarter Medicine)",
+    "title": "Top-5-Liste SGED, Version für Fachpublikum (Choosing Wisely)",
+    "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/69_Choosing_Wisely/Top.5.list.SGED.Fachpublikum_formatted.pdf",
+    "version_date": "non datée (consultée le 14.10.2026)",
+    "section": "Point 4",
+    "passage": "« Bei Vorliegen einer Hyperthyreose kann hingegen der Sonographiebefund zur Klärung der Ätiologie (z.B. Morbus Basedow versus knotige Autonomie versus Thyreoiditis) beitragen und die therapeutischen Schritte beeinflussen. »",
+    "status": "applicable"
+   },
+   "foreign_sources": []
+  },
+  {
+   "id": "E05-06",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Échographie Doppler + TRAK suffisant à confirmer le Basedow ; scintigraphie avant iode 131 ou en présence de nodules ; TRAK : sensibilité 97 %, spécificité 98 %.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Imaging ; Recommendation 3",
+     "passage": "« “thyroid inferno”… The PSV can differentiate between thyrotoxicosis owing to GD from subacute thyroiditis or amiodarone-induced thyrotoxicosis type 2, where the blood flow is reduced. Typical US patterns combined with positive TSH-R-Ab obviate the need for scintigraphy in the vast majority of cases. »",
+     "origin": "european"
+    },
+    {
+     "organization": "European Thyroid Association",
+     "title": "2023 European Thyroid Association Clinical Practice Guidelines for thyroid nodule management (Durante C et al., Eur Thyroid J 2023;12:e230067)",
+     "url": "https://doi.org/10.1530/ETJ-23-0067",
+     "version_date": "01.10.2023",
+     "section": "Recommendation (scintigraphy) ; Autonomous nodules",
+     "passage": "« Thyroid scintigraphy should be performed when serum TSH is subnormal in order to diagnose functioning nodules and/or multinodularity, avoid FNA and determine eligibility for RAI… Approximately 5–10% of solitary/dominant thyroid nodules are functioning… with extremely rare exceptions, benign, should not be biopsied »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "La SSED ne publie pas de recommandation propre ; ETA 2018 et 2023 retenues ; chiffres de sensibilité (97 %) et de positivité du laboratoire suisse (90 %) tous deux présentés, avec leur dépendance à la méthode."
+  },
+  {
+   "id": "E05-07",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Crise thyrotoxique : score de Burch-Wartofsky ≥ 45 et critères JTA TS1/TS2 avec thyrotoxicose obligatoire.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "Japan Thyroid Association / Japan Endocrine Society",
+     "title": "2016 Guidelines for the management of thyroid storm (Satoh T et al., Endocr J 2016;63:1025-1064)",
+     "url": "https://www.jstage.jst.go.jp/article/endocrj/63/12/63_EJ16-0336/_pdf",
+     "version_date": "2016 (1re édition)",
+     "section": "Table 2 (Burch-Wartofsky Point Scale)",
+     "passage": "Barème complet du tableau 2 : température 37,2–37,7 (5), 37,8–38,3 (10), 38,4–38,8 (15), 38,9–39,3 (20), 39,4–39,9 (25), ≥ 40,0 (30) ; FC 90–109 (5), 110–119 (10), 120–129 (15), 130–139 (20), ≥ 140 (25) ; FA (10) ; IC légère (5), modérée (10), sévère (15) ; digestif modéré (10), ictère (20) ; SNC léger (10), modéré (20), sévère (30) ; déclencheur (10) ; « ≥ 45 Thyroid storm, 25–44 Impending storm, < 25 Storm unlikely »",
+     "origin": "international"
+    },
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Thyroid Storm",
+     "passage": "« With a mortality rate estimated at 10%… decompensation of multiple organs with impaired consciousness, high fever, heart failure, diarrhea, and jaundice… The most common cause of death… multiple organ failure, followed by heart and respiratory failure, arrhythmia, disseminated intravascular coagulation, gastrointestinal perforation, hypoxic brain syndrome, and sepsis »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Aucune recommandation européenne ou suisse détaillée sur la crise (ETA 2018 bref) : JTA 2016 retenue, étiquetée source non européenne ; aucune recommandation américaine décisionnelle."
+  },
+  {
+   "id": "E05-08",
+   "chapter_code": "E05",
+   "kind": "diagnostic",
+   "claim": "Différentiels SSP : hormones thyroïdiennes anormales, goitre, exophtalmie (maladie associée aux IgG4 incluse), classés par gravité puis fréquence.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Praxis (Berne) — Hösli P, Brändle M et al. (Samedan, Saint-Gall, Coire)",
+    "title": "Orbitopathie, nicht immer endokrin bedingt. Praxis 2026;115:111-114",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42021675/",
+    "version_date": "avril 2026",
+    "section": "Résumé",
+    "passage": "« Ein Exophthalmus ist nicht immer durch einen Morbus Basedow bedingt. Bei normalen Schilddrüsenhormonwerten sollte die Differenzialdiagnose erweitert werden. IgG4-assoziierte Erkrankungen (IgG4-RD) imitieren zahlreiche entzündliche, infektiöse oder neoplastische Krankheitsbilder. »",
+    "status": "applicable"
+   },
+   "foreign_sources": []
+  },
+  {
+   "id": "E05-09",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Basedow nouvellement diagnostiqué : antithyroïdien de synthèse en première intention ; 12–18 mois ; arrêt si TSH et TRAK normaux ; TRAK dosé avant l’arrêt.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Recommendations 5 à 8",
+     "passage": "« 5 Patients with newly diagnosed Graves' hyperthyroidism should be treated with ATD… 6 MMI (CBZ) should be used in every non-pregnant patient… 7 MMI is administered for 12–18 months then discontinued if the TSH and TSH-R-Ab levels are normal. 8 Measurement of TSH-R-Ab levels prior to stopping ATD therapy is recommended »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "La SSED renvoie à l’ETA ; ETA 2018 retenue ; la FI suisse indique 6 à 18 mois, présentée à côté."
+  },
+  {
+   "id": "E05-10",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Posologie du carbimazole : 20–60 mg/j en 2–3 prises (FI suisse) contre 15–40 mg/j en une prise (ETA).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Néo-Mercazole® 5 mg (carbimazole)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680210370280",
+    "version_date": "Mise à jour de l'information : août 2020",
+    "section": "Posologie/Mode d'emploi",
+    "passage": "« Dose initiale (15–30 jours) 20–60 mg par jour, selon l'ampleur de l'hyperthyroïdie, répartis en deux à trois prises… par paliers de 5-15 mg/jour tous les 10 jours, jusqu'à obtenir une dose journalière de 5–20 mg/jour… Le traitement dure en général 6 à 18 mois… Adolescents dès 12 ans… 0,7 à 0,8 mg… ne pas dépasser… 60 mg/jour… enfants, une dose maximale de 30 mg »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Medical Treatment",
+     "passage": "« The initial dose of MMI is usually 10–30 mg once daily depending on the severity of hyperthyroidism (CBZ 15–40 mg/day). PTU is given at a dose of 100 mg every 8 h… Thyroid function tests are reviewed 3–4 weeks after starting treatment… TSH levels often remain suppressed for several months… usual daily maintenance doses… 2.5–10 mg of MMI and 50–100 mg of PTU… The titration regimen is often preferred »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Prescription selon la FI suisse ; prise unique de l’ETA expliquée par la longue rétention intrathyroïdienne (≈ 20 h, FI)."
+  },
+  {
+   "id": "E05-11",
+   "chapter_code": "E05",
+   "kind": "follow_up",
+   "claim": "Surveillance de la formule sanguine : FI (avant puis hebdomadaire 6 semaines si > 40 ans) contre ETA (formule sur fièvre ou angine).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Néo-Mercazole® 5 mg (carbimazole)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680210370280",
+    "version_date": "Mise à jour de l'information : août 2020",
+    "section": "Mises en garde — Toxicité hématologique ; Effets indésirables",
+    "passage": "« en particulier au cours des deux premiers mois de traitement et à des doses supérieures à 40 mg/jour, la formule sanguine doit être contrôlée avant le traitement et une fois par semaine au cours des six premières semaines du traitement chez les patients âgés de plus de 40 ans… Occasionnel: agranulocytose. »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Adverse Events ; Recommendations 10 et 11",
+     "passage": "« agranulocytosis (neutrophil count <500/mL), which occurs in 0.1–1.0% of cases… within 3 months… 0.28 and 0.29%… The use of routine hematological and liver function tests is not useful, as the onset of agranulocytosis is abrupt »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "FI appliquée sur l’ordonnance suisse ; éducation de tous les patients (arrêt et consultation en cas de fièvre ou d’angine)."
+  },
+  {
+   "id": "E05-12",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Bêtabloquant dans le Basedow : propranolol 10–40 mg 3–4 fois/j (FI) ; ETA 20–40 mg toutes les 6 h.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Inderal® 10 mg / 40 mg (propranolol)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680317060015",
+    "version_date": "Mise à jour de l'information : janvier 2023",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde",
+    "passage": "« Hyperthyroïdie et crises thyréotoxiques… Normalement, la dose quotidienne est de 10-40 mg 3-4 fois par jour… thyréotoxicose: 0,25-0,5 mg/kg 3-4 fois par jour… Ne pas utiliser Inderal chez des patients souffrant ou ayant souffert d'asthme bronchique ou de bronchospasme… Une thyréotoxicose peut être masquée. »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Beta-Adrenergic Blockade ; Recommendation 12",
+     "passage": "« Propranolol (20–40 mg every 6 h) or longer acting beta-blockers… High doses of propranolol (40 mg 4 times daily) inhibit peripheral conversion of T4 to T3… Anticoagulation with warfarin or direct oral anticoagulants should be considered in all patients with atrial fibrillation. If digoxin is used, increased doses are often needed »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Posologie de la FI suisse enseignée ; contre-indications de la FI impératives."
+  },
+  {
+   "id": "E05-13",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Crise thyrotoxique : traitement multimodal ordonné (antithyroïdien, iodure, glucocorticoïde, bêtabloquant, paracétamol et refroidissement, infection, soins intensifs, plasmaphérèse).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "Japan Thyroid Association / Japan Endocrine Society",
+     "title": "2016 Guidelines for the management of thyroid storm (Satoh T et al., Endocr J 2016;63:1025-1064)",
+     "url": "https://www.jstage.jst.go.jp/article/endocrj/63/12/63_EJ16-0336/_pdf",
+     "version_date": "2016 (1re édition)",
+     "section": "Recommendations 3, 4, 5, 6, 11",
+     "passage": "« Inorganic iodide should be administered simultaneously with ATDs… recommended dose is approximately 200 mg/day… The recommended dose of hydrocortisone is 300 mg/day (100 mg administered intravenously every 8 hours)… dexamethasone (8 mg/day)… acetaminophen… NSAIDs as well as aspirin are not recommended because these drugs may increase free thyroid hormone levels… Infection… (28%)… TPE… within 24–48 hours… ICU admission should be recommended for all thyroid storm patients »",
+     "origin": "international"
+    },
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Thyroid Storm ; Recommendation 16",
+     "passage": "« intravenous MMI or PTU (40 or 400 mg every 8 h), glucocorticoids (methylprednisolone 50 mg i.v.), beta-blockers (propranolol 40 mg every 6 h), and monitoring in an intensive care unit… including ATD therapy, glucocorticoid administration, beta-adrenergic blockade, cooling blankets, volume resuscitation, nutritional support, respiratory care »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "ETA 2018 (principe, doses) et JTA 2016 (détail) ; méthimazole intraveineux et iodure sans FI suisse ; doses supérieures à la FI présentées comme recommandation hospitalière."
+  },
+  {
+   "id": "E05-14",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Ordre iodure/antithyroïdien dans la crise : JTA simultané, ATA ≥ 1 h après.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "Japan Thyroid Association / Japan Endocrine Society",
+     "title": "2016 Guidelines for the management of thyroid storm (Satoh T et al., Endocr J 2016;63:1025-1064)",
+     "url": "https://www.jstage.jst.go.jp/article/endocrj/63/12/63_EJ16-0336/_pdf",
+     "version_date": "2016 (1re édition)",
+     "section": "Recommendations 3, 4, 5, 6, 11",
+     "passage": "« Inorganic iodide should be administered simultaneously with ATDs… recommended dose is approximately 200 mg/day… The recommended dose of hydrocortisone is 300 mg/day (100 mg administered intravenously every 8 hours)… dexamethasone (8 mg/day)… acetaminophen… NSAIDs as well as aspirin are not recommended because these drugs may increase free thyroid hormone levels… Infection… (28%)… TPE… within 24–48 hours… ICU admission should be recommended for all thyroid storm patients »",
+     "origin": "international"
+    }
+   ],
+   "resolution": "Divergence exposée en fenêtre ; antithyroïdien d’abord puis iodure sans retard ; aucune source américaine décisionnelle."
+  },
+  {
+   "id": "E05-15",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Bêtabloquant de la crise : propranolol (ETA, FI Inderal) ou β1-sélectif (JTA) ; esmolol selon la FI Brevibloc.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Brevibloc® (esmolol)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680495760219",
+    "version_date": "Mise à jour de l'information : septembre 2013",
+    "section": "Indications ; Posologie",
+    "passage": "« 500 µg/kg/min comme dose de saturation, en une minute, suivie d'une dose d'entretien de 50 µg/kg/min pendant 4 minutes… La dose d'entretien habituelle est de 100 µg/kg/min. Des doses d'entretien supérieures à 200 µg/kg/min n'apportent pas d'avantages… ne devrait pas dépasser 24 h »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "Japan Thyroid Association / Japan Endocrine Society",
+     "title": "2016 Guidelines for the management of thyroid storm (Satoh T et al., Endocr J 2016;63:1025-1064)",
+     "url": "https://www.jstage.jst.go.jp/article/endocrj/63/12/63_EJ16-0336/_pdf",
+     "version_date": "2016 (1re édition)",
+     "section": "Recommendation 8",
+     "passage": "« Beta1-selective AAs (landiolol, esmolol (intravenous), or bisoprolol (oral)) should be selected as the first choice… propranolol is not contraindicated, it is not recommended… Bisoprolol… 2.5–5 mg/day… Heart rate should be controlled to ≤130 bpm… Discontinuation… when heart rate is <80 bpm, systolic blood pressure is <80 mmHg, or the cardiac index is ≤2.2 L/min/m2 »",
+     "origin": "international"
+    }
+   ],
+   "resolution": "Propranolol oral sans insuffisance cardiaque ni asthme ; esmolol intraveineux en soins intensifs avec la posologie suisse."
+  },
+  {
+   "id": "E05-16",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Iode 131 : indications, préparation (délais après surcharge iodée), contre-indications absolues et relatives, activités et doses absorbées.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Association of Nuclear Medicine",
+     "title": "The EANM guideline on radioiodine therapy of benign thyroid disease (Campennì A et al., Eur J Nucl Med Mol Imaging 2023;50:3324-3348)",
+     "url": "https://doi.org/10.1007/s00259-023-06274-5",
+     "version_date": "2023 (publié en ligne juin 2023)",
+     "section": "GD — Indication and contraindications",
+     "passage": "« Absolute contraindications: Pregnant or breastfeeding patients… suspected or confirmed thyroid cancer… patients ≤ 5 years old. Relative contraindications: Patients with very large goiters (≥ 80 g)… active moderate-severe GO and high TRAb levels (mainly if smokers)… delayed as much as possible in children between 5 and 10 years »",
+     "origin": "european"
+    },
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "RAI Treatment ; Recommendations 17–20",
+     "passage": "« fixed activities of, for example, 185, 370, or 555 MBq… normalized within 3–12 months after RAI therapy in 50–90%… hypothyroidism is 5–50% after the first year… followed by a yearly hypothyroidism rate of 3–5%… ATD should be temporarily paused for a week before and after RAI… if thyrotoxicosis has not improved after 3 months, treatment failure is likely »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "EANM 2023 et ETA 2018 retenues ; la FI suisse de la capsule complète préparation et contre-indications."
+  },
+  {
+   "id": "E05-17",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Radioprotection suisse : hospitalisation dès 200 mégabecquerels, ≥ 48 h, sortie < 10 µSv/h ; ambulatoire sur demande au BAG.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Office fédéral de la santé publique (BAG/OFSP), division radioprotection",
+    "title": "Wegleitung Radionuklidtherapie V2",
+    "url": "https://www.bag.admin.ch/dam/de/sd-web/vsVYUlb8caju/V2_250624_Strahlenschutz_Wegleitung_Radionuklidtherapie_DE.pdf",
+    "version_date": "24.06.2025",
+    "section": "1.2 à 1.5, Tabelle 1",
+    "passage": "« I-131 200 MBq 48 h DL < 10 µSv /h in 1 m Abstand… Restaktivität von ~200 MBq… Wiederholte Applikationen kleinerer Aktivitäten zur Vermeidung einer Stationierung sind bei Therapien mit I-131 nicht zulässig… ambulante Therapien mit I-131 bis 400 MBq… Die Zustimmung… muss spätestens drei Tage vor dem geplanten Applikationsdatum per E-Mail beim BAG beantragt werden »",
+    "status": "applicable"
+   },
+   "foreign_sources": []
+  },
+  {
+   "id": "E05-18",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Délais de conception et d’allaitement après iode 131 : ETA ≥ 6 mois, EANM ≈ 4 mois, FI suisse 6–12 mois et sevrage ≥ 8 semaines.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Sodium iodide (I-131) capsule T Curium",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680527280012",
+    "version_date": "Mise à jour de l'information : juillet 2022",
+    "section": "Contre-indications ; Mises en garde ; Grossesse, Allaitement",
+    "passage": "« Grossesse et allaitement (le sevrage doit avoir lieu au moins 8 semaines avant le traitement par 131I)… aggravation d'une hyperthyroïdie préexistante 2 à 10 jours après le traitement, voire même à une crise thyréotoxique… jusqu'à 6 mois après traitement d'une affection bégnine… éviter les contacts rapprochés entre mère et jeune enfant pendant au moins 1 semaine »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Association of Nuclear Medicine",
+     "title": "The EANM guideline on radioiodine therapy of benign thyroid disease (Campennì A et al., Eur J Nucl Med Mol Imaging 2023;50:3324-3348)",
+     "url": "https://doi.org/10.1007/s00259-023-06274-5",
+     "version_date": "2023 (publié en ligne juin 2023)",
+     "section": "GD — Indication and contraindications",
+     "passage": "« Absolute contraindications: Pregnant or breastfeeding patients… suspected or confirmed thyroid cancer… patients ≤ 5 years old. Relative contraindications: Patients with very large goiters (≥ 80 g)… active moderate-severe GO and high TRAb levels (mainly if smokers)… delayed as much as possible in children between 5 and 10 years »",
+     "origin": "european"
+    },
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Women Planning Pregnancy ; Recommendations 33–35",
+     "passage": "« euthyroidism is reached and confirmed on two occasions over 2 months… (2) the possibility of stopping ATD during gestational weeks 6–10; (3) the preference for PTU… (4) the advice to switch from PTU to MMI after 16 weeks… (5) not to use block-replacement therapy. Pregnancy should be delayed for 6 months post-RAI »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "FI suisse enseignée comme référence de prescription."
+  },
+  {
+   "id": "E05-19",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Thyroïdectomie totale, préparation et indications (ETA) ; chirurgie de première intention (EANM) ; divergence en cas d’orbitopathie active modérée à sévère.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Surgery ; Recommendations 24–27 ; Table 4",
+     "passage": "« total thyroidectomy is the procedure of choice… skilled surgeon with high annual volumes… Euthyroidism should be restored by ATD prior to surgery… Vitamin D deficiency should be corrected… A solution containing potassium iodide can be given for 10 days prior to surgery » ; Table 4 : « Risk of postoperative hypoparathyroidism, Risk of recurrent nerve palsy, Permanent hypothyroidism »",
+     "origin": "european"
+    },
+    {
+     "organization": "European Association of Nuclear Medicine",
+     "title": "The EANM guideline on radioiodine therapy of benign thyroid disease (Campennì A et al., Eur J Nucl Med Mol Imaging 2023;50:3324-3348)",
+     "url": "https://doi.org/10.1007/s00259-023-06274-5",
+     "version_date": "2023 (publié en ligne juin 2023)",
+     "section": "Diagnosis — surgery",
+     "passage": "« surgery… could be the first choice in (i) women planning a pregnancy in < 6 months, (ii) patients with symptomatic compression or large goiters (≥ 80 g), (iii) patients with low RAIU, (iv)… suspected thyroid malignancy… or large (≥ 4 cm) non-functioning thyroid nodule, and (v) patients with moderate to severe active GO »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Divergence exposée en fenêtre ; priorité à l’orbitopathie et à l’euthyroïdie stable sous antithyroïdien."
+  },
+  {
+   "id": "E05-20",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Nodules toxiques : antithyroïdiens comme pont ; iode 131 en première ligne (succès 81–94 %).",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "ARS MEDICI (Rosenfluh, Suisse) — conférence de la Prof. M. Christ-Crain, Hôpital universitaire de Bâle",
+    "title": "Hyper- und Hypothyreose: Wann sollte man danach suchen, wie abklären und wie behandeln? ARS MEDICI 17/2023:435-437",
+    "url": "https://www.rosenfluh.ch/media/arsmedici/2023/17/Hyper-und-Hypothyreose-Wann-sollte-man-danach-suchen-wie-abklaeren-und-wie-behandeln.pdf",
+    "version_date": "25.08.2023",
+    "section": "Therapie bei Hyperthyreose",
+    "passage": "« Bei einem Patienten mit autonomen Schilddrüsenknoten kommen Thyreostatika allenfalls als Überbrückung bis zur definitiven Entfernung der Knoten (Radiojod, Thyreoidektomie) zum Einsatz. »",
+    "status": "applicable"
+   },
+   "foreign_sources": []
+  },
+  {
+   "id": "E05-21",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Orbitopathie active modérée à sévère : méthylprednisolone intraveineuse (EUGOGO 2021) ou téprotumumab (consensus ATA/ETA 2022, FI suisse de mars 2026).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse TEPEZZA® (téprotumumab)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680697950012",
+    "version_date": "Mise à jour de l'information : mars 2026",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde ; Efficacité clinique",
+    "passage": "« 10 mg/kg… Par la suite, 20 mg/kg… pour 7 doses supplémentaires, une fois toutes les trois semaines… Grossesse… hyperglycémie est survenue chez 13,2 %… troubles auditifs sévères… permanents… aggravation d'une MICI… environ 4 %… Taux de réponse pour l'exophtalmie 82,9 / 9,5… 10 (29,4 %) ont présenté une rechute »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Group on Graves' Orbitopathy (EUGOGO)",
+     "title": "The 2021 EUGOGO clinical practice guidelines for the medical management of Graves' orbitopathy (Bartalena L et al., Eur J Endocrinol 2021;185:G43-G67)",
+     "url": "https://academic.oup.com/ejendo/article/185/4/G43/6680998",
+     "version_date": "27.08.2021",
+     "section": "Recommendations 10–12, 22",
+     "passage": "« a starting dose of 0.5 g i.v. methylprednisolone once weekly for 6 weeks… 0.25 g once weekly for 6 weeks, cumulative dose 4.5 g… should not exceed 8.0 g for each cycle… mycophenolate sodium 0.72 g per day for 24 weeks »",
+     "origin": "european"
+    },
+    {
+     "organization": "European Thyroid Journal (auteurs EUGOGO)",
+     "title": "Comparison of the 2021 EUGOGO guidelines and the 2022 ATA/ETA consensus statement for the management of Graves' orbitopathy (Bartalena L et al., Eur Thyroid J 2025;14:e250318)",
+     "url": "https://doi.org/10.1530/ETJ-25-0318",
+     "version_date": "08.12.2025",
+     "section": "Abstract ; Moderate-to-severe and active GO ; Conclusions",
+     "passage": "« EUGOGO… indicate intravenous glucocorticoids (IVGC) (with/without mycophenolate) as the first-line treatment, whereas the ATA/ETA consensus statement indicates teprotumumab as the first-line treatment… marketing authorization in the European Union was issued in June 2025… Availability is not synonymous with accessibility »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Décision en centre thyroïde-œil ; coût, audition, glycémie et durabilité exposés ; recommandation américaine non décisionnelle."
+  },
+  {
+   "id": "E05-22",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Orbitopathie légère : arrêt du tabac, euthyroïdie, larmes artificielles, sélénium 6 mois si active et récente ; statut suisse en sélénium non caractérisé.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Group on Graves' Orbitopathy (EUGOGO)",
+     "title": "The 2021 EUGOGO clinical practice guidelines for the medical management of Graves' orbitopathy (Bartalena L et al., Eur J Endocrinol 2021;185:G43-G67)",
+     "url": "https://academic.oup.com/ejendo/article/185/4/G43/6680998",
+     "version_date": "27.08.2021",
+     "section": "Recommendations 3 et 7",
+     "passage": "« Physicians should urge all patients with Graves' hyperthyroidism… to refrain from smoking… a 6-month selenium supplementation should be given to patients with mild and active GO of recent onset » ; « 200 µg (91.2 µg selenium) daily for 6 months »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "EUGOGO 2021 retenue ; absence de donnée suisse sur le sélénium nommée."
+  },
+  {
+   "id": "E05-23",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Orbitopathie menaçant la vue : urgence, méthylprednisolone intraveineuse, décompression si réponse insuffisante en 1–2 semaines (EUGOGO) ou 2–4 semaines (ETA).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Group on Graves' Orbitopathy (EUGOGO)",
+     "title": "The 2021 EUGOGO clinical practice guidelines for the medical management of Graves' orbitopathy (Bartalena L et al., Eur J Endocrinol 2021;185:G43-G67)",
+     "url": "https://academic.oup.com/ejendo/article/185/4/G43/6680998",
+     "version_date": "27.08.2021",
+     "section": "Recommendation 26 ; Sight-threatening",
+     "passage": "« 0.5–1 g of methylprednisolone daily for either three consecutive days or… on every second day… Urgent orbital decompression… if response is absent or poor within 1–2 weeks »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Source la plus récente retenue : EUGOGO 2021."
+  },
+  {
+   "id": "E05-24",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Corticoprophylaxie après iode 131 : prednisone selon le risque (EUGOGO, EANM).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Prednisone Streuli® 5/20/50 mg",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "version_date": "Mise à jour de l'information : juin 2026",
+    "section": "Recommendation 5",
+    "passage": "« 0.3–0.5 mg/kg/bodyweight as starting dose, tapered, and withdrawn after 3 months… 0.1–0.2 mg/kg/bodyweight, tapered, and withdrawn after 6 weeks »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Group on Graves' Orbitopathy (EUGOGO)",
+     "title": "The 2021 EUGOGO clinical practice guidelines for the medical management of Graves' orbitopathy (Bartalena L et al., Eur J Endocrinol 2021;185:G43-G67)",
+     "url": "https://academic.oup.com/ejendo/article/185/4/G43/6680998",
+     "version_date": "27.08.2021",
+     "section": "Recommendation 5",
+     "passage": "« 0.3–0.5 mg/kg/bodyweight as starting dose, tapered, and withdrawn after 3 months… 0.1–0.2 mg/kg/bodyweight, tapered, and withdrawn after 6 weeks »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Aucune recommandation suisse de dose : EUGOGO 2021 et EANM 2023 retenues ; la FI suisse de la prednisone fournit les présentations (5, 20 et 50 mg)."
+  },
+  {
+   "id": "E05-25",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Grossesse : propylthiouracile au premier trimestre puis carbimazole après l’organogenèse (FI) ou 16 semaines (ETA) ; doses initiales ; surveillance T4 libre/TSH.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Néo-Mercazole® 5 mg (carbimazole)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680210370280",
+    "version_date": "Mise à jour de l'information : août 2020",
+    "section": "Grossesse/Allaitement",
+    "passage": "« le traitement doit, dans la mesure du possible, se faire par le propylthiouracile au cours du premier trimestre… Après la fin de l'organogenèse, le propylthiouracile doit être cependant suspendu… remplacé par le carbimazole… la TSH doit être encore légèrement supprimée et la T3 et la T4 légèrement augmentées… L'association… carbimazole et… hormones thyroïdiennes est contre-indiquée pendant la grossesse »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Pregnant Women and GD",
+     "passage": "« MMI 5–15 mg, CBZ 10–30 mg, PTU 50–200 mg… affects 2–4% of children who have been exposed to MMI, especially during gestational weeks 6–10… The prevalence of birth defects is the same with PTU, but the spectrum of defects is less severe… Propranolol 10–40 mg, 3–4 times daily… intrauterine growth restriction, fetal bradycardia, and neonatal hypoglycemia… second trimester »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "FI suisse enseignée ; limite temporelle de l’ETA (16 semaines) indiquée."
+  },
+  {
+   "id": "E05-26",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "TRAK à la première consultation et à 18–22 semaines ; surveillance fœtale si > 3 fois le seuil.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Recommendations 36–37",
+     "passage": "« TSH-R-Ab serum levels measured at the first presentation of pregnancy… and, if they are elevated, again at 18–22 weeks… If the maternal TSH-R-Ab concentration remains high (>3 times the cut-off), monitoring of the fetus for thyroid dysfunction »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "ETA 2018 retenue ; seuil du laboratoire de mesure."
+  },
+  {
+   "id": "E05-27",
+   "chapter_code": "E05",
+   "kind": "follow_up",
+   "claim": "Allaitement sous carbimazole : FI (renoncer de préférence, sinon ≤ 20 mg/j après la tétée) contre ETA (faibles doses sûres).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Néo-Mercazole® 5 mg (carbimazole)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680210370280",
+    "version_date": "Mise à jour de l'information : août 2020",
+    "section": "Postpartum Phase ; Recommendations 42–43",
+    "passage": "« highest 7–9 months postpartum (RR 3.8)… low doses of PTU (<250 mg) and MMI (<20 mg) are considered safe… ATD should be taken after having breastfed the child and in divided doses… 43 MMI is recommended during lactation »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Postpartum Phase ; Recommendations 42–43",
+     "passage": "« highest 7–9 months postpartum (RR 3.8)… low doses of PTU (<250 mg) and MMI (<20 mg) are considered safe… ATD should be taken after having breastfed the child and in divided doses… 43 MMI is recommended during lactation »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Information partagée, ≤ 20 mg/j, surveillance du nourrisson."
+  },
+  {
+   "id": "E05-28",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Propranolol pendant la grossesse : FI (nécessité absolue) contre ETA (court terme).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Inderal® 10 mg / 40 mg (propranolol)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680317060015",
+    "version_date": "Mise à jour de l'information : janvier 2023",
+    "section": "Grossesse, allaitement",
+    "passage": "« Il ne faut pas administrer ce médicament pendant la grossesse, sauf nécessité absolue. Les bêtabloquants réduisent la perfusion placentaire… Il ne faut donc pas allaiter »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Pregnant Women and GD",
+     "passage": "« MMI 5–15 mg, CBZ 10–30 mg, PTU 50–200 mg… affects 2–4% of children who have been exposed to MMI, especially during gestational weeks 6–10… The prevalence of birth defects is the same with PTU, but the spectrum of defects is less severe… Propranolol 10–40 mg, 3–4 times daily… intrauterine growth restriction, fetal bradycardia, and neonatal hypoglycemia… second trimester »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Durée la plus courte, surveillance fœtale ; FI prioritaire."
+  },
+  {
+   "id": "E05-29",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Enfant : carbimazole ou méthimazole jamais propylthiouracile ; doses en mg/kg (ETA 2022) contre FI Néo-Mercazole ; durée ≥ 3 ans ; thyroïdectomie ; iode 131 après la puberté.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Néo-Mercazole® 5 mg (carbimazole)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680210370280",
+    "version_date": "Mise à jour de l'information : août 2020",
+    "section": "Posologie/Mode d'emploi",
+    "passage": "« Dose initiale (15–30 jours) 20–60 mg par jour, selon l'ampleur de l'hyperthyroïdie, répartis en deux à trois prises… par paliers de 5-15 mg/jour tous les 10 jours, jusqu'à obtenir une dose journalière de 5–20 mg/jour… Le traitement dure en général 6 à 18 mois… Adolescents dès 12 ans… 0,7 à 0,8 mg… ne pas dépasser… 60 mg/jour… enfants, une dose maximale de 30 mg »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2022 European Thyroid Association Guideline for the management of pediatric Graves' disease (Mooij CF, Cheetham TD et al., Eur Thyroid J 2022;11:e210073)",
+     "url": "https://doi.org/10.1530/ETJ-21-0073",
+     "version_date": "janvier 2022",
+     "section": "Summary ; ATD dosing ; Remission",
+     "passage": "« Either carbimazole (CBZ) or… methimazole (MMI) should be used… Propylthiouracil should not be used… between 0.15 and 0.5 mg/kg of MMI or between 0.25 and 0.75 mg/kg of CBZ daily… once daily… MMZ of 0.6 mg is approximately equivalent to 1.0 mg CBZ… (e.g. FT4 ≤ 35 pmol/L or FT3 ≤ 12 pmol/L)… at least 3 years… 20–30%… 24.1, 31.0 and 43.7% »",
+     "origin": "european"
+    },
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Recommendations 23, 46–48",
+     "passage": "« 48 Thyroidectomy is the primary definitive therapy in childhood, but in postpubertal children RAI can be considered… 23 If used in children, ablative doses aiming at rapid hypothyroidism should be administered »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Divergence de dose et de fractionnement exposée par un calcul ; prescription pédiatrique spécialisée."
+  },
+  {
+   "id": "E05-30",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Sujet âgé : traitement définitif après fibrillation auriculaire, insuffisance cardiaque ou ischémie ; carbimazole au long cours à faible dose pour un Basedow léger.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Elderly ; Recommendations 44–45",
+     "passage": "« 44 Older patients who have had atrial fibrillation, cardiac failure, or cardiac ischemic symptoms precipitated by hyperthyroidism should undergo definitive therapy, usually RAI… long-term low-dose MMI (CBZ) 2.5–5 mg daily… providing written information to family or caregivers »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "ETA 2018 retenue."
+  },
+  {
+   "id": "E05-31",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Thyrotoxicose induite par l’amiodarone : traitement selon le type ; FI : arrêt impératif ; ETA : décision individualisée ; pratique bâloise.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Cordarone® comprimés (amiodarone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680333930163",
+    "version_date": "Mise à jour de l'information : avril 2024",
+    "section": "Mises en garde — Hyperthyroïdie ; Troubles thyroïdiens",
+    "passage": "« Une hyperthyroïdie peut apparaître durant le traitement par l'amiodarone, et jusqu'à quelques mois après l'arrêt… perte de poids, apparition d'arythmie, angor, insuffisance cardiaque… monitoring… plusieurs mois après son arrêt »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 ETA Guidelines for the Management of Amiodarone-Associated Thyroid Dysfunction (Bartalena L et al., Eur Thyroid J 2018;7:55-66)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29594056/",
+     "version_date": "mars 2018",
+     "section": "Résumé",
+     "passage": "« AIT 1 is best treated with thionamides that may be combined for a few weeks with sodium perchlorate… AIT 2 is treated with oral glucocorticoids… Mixed/indefinite forms of AIT are treated with thionamides. Oral glucocorticoids can be added… The decision to continue or to stop amiodarone… individualized… emergency thyroidectomy may be required »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Décision conjointe cardiologue–endocrinologue ; ne jamais arrêter seul une amiodarone vitale."
+  },
+  {
+   "id": "E05-32",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Produit de contraste iodé : prévention par carbimazole 10–20 mg si TSH < 0,4 mU/l (pratique suisse) ; ETA : débattu ; FI : pas une indication.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "ARS MEDICI (Rosenfluh, Suisse) — conférence de la Prof. M. Christ-Crain, Hôpital universitaire de Bâle",
+    "title": "Hyper- und Hypothyreose: Wann sollte man danach suchen, wie abklären und wie behandeln? ARS MEDICI 17/2023:435-437",
+    "url": "https://www.rosenfluh.ch/media/arsmedici/2023/17/Hyper-und-Hypothyreose-Wann-sollte-man-danach-suchen-wie-abklaeren-und-wie-behandeln.pdf",
+    "version_date": "25.08.2023",
+    "section": "Therapie bei Hyperthyreose",
+    "passage": "« Liegt er < 0,4 mU/l, müssen 10 bis 20 mg Carbimazol (Néo-Mercazole®) mindestens 2 Stunden vor dem Kontrastmittel und anschliessend für weitere 7 bis 14 Tage gegeben werden. »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "resolution": "Pratique suisse présentée comme avis d’experte, FI comme cadre légal, ETA comme incertitude."
+  },
+  {
+   "id": "E05-33",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Hyperthyroïdie infraclinique : traitement selon âge et grade (ETA 2015) ; position suisse (TSH < 0,1 mU/l).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "ARS MEDICI (Rosenfluh, Suisse) — conférence de la Prof. M. Christ-Crain, Hôpital universitaire de Bâle",
+    "title": "Hyper- und Hypothyreose: Wann sollte man danach suchen, wie abklären und wie behandeln? ARS MEDICI 17/2023:435-437",
+    "url": "https://www.rosenfluh.ch/media/arsmedici/2023/17/Hyper-und-Hypothyreose-Wann-sollte-man-danach-suchen-wie-abklaeren-und-wie-behandeln.pdf",
+    "version_date": "25.08.2023",
+    "section": "Résumé",
+    "passage": "« treatment is indicated in patients older than 65 years with grade 2 SHyper… could be considered in patients older than 65 years with TSH levels 0.1-0.39 mIU/l… reasonable in younger (<65 years) symptomatic patients with grade 2 SHyper… no data to support treating SHyper in younger asymptomatic patients with grade 1 SHyper »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "The 2015 European Thyroid Association Guidelines on Diagnosis and Treatment of Endogenous Subclinical Hyperthyroidism (Biondi B et al., Eur Thyroid J 2015;4:149-163)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26558232/",
+     "version_date": "26.08.2015",
+     "section": "Résumé",
+     "passage": "« treatment is indicated in patients older than 65 years with grade 2 SHyper… could be considered in patients older than 65 years with TSH levels 0.1-0.39 mIU/l… reasonable in younger (<65 years) symptomatic patients with grade 2 SHyper… no data to support treating SHyper in younger asymptomatic patients with grade 1 SHyper »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Gradation et seuils d’âge de l’ETA 2015 retenus ; la position suisse (traitement causal dès TSH < 0,1 mU/l) concorde."
+  },
+  {
+   "id": "E05-34",
+   "chapter_code": "E05",
+   "kind": "follow_up",
+   "claim": "Suivi : contrôles à 3–4 semaines, surveillance rapprochée la première année puis annuelle ; lévothyroxine après iode 131 ou chirurgie ; TSH sous amiodarone.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "SSED/SGED (pages Schilddrüse, Empfehlungen, Top-5), SSCC, BAG/OFSP, OSAV, Swissmedic/AmiKo, PubMed (Rev Med Suisse, Praxis, Swiss Med Wkly, Ther Umsch 2016-2026), ARS MEDICI",
+    "searched_sources": "SSEDTHY; SSEDTOP5; SSCC2025; BAGRNT; BLVJOD; ARSMED2023; PRAXIS2018; PRAXIS2024; PRAXIS2026ORB; REVMED2025PED",
+    "gap_reason": "La SSED ne publie pas de recommandation propre sur l'hyperthyroïdie ; elle renvoie à l'ETA et à l'ATA. Éléments suisses applicables : test réflexe (SSCC 2025, approuvé SSED), radioprotection (BAG 2025), iodation (OSAV), FI Swissmedic, avis d'experte (ARS MEDICI 2023). Décisions cliniques : ETA/EANM/EUGOGO (européennes) ; JTA pour la crise (lacune européenne)."
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Medical Treatment ; Surgery",
+     "passage": "« Thyroid function tests are reviewed 3–4 weeks after starting treatment… TSH levels often remain suppressed for several months… All patients should be followed closely for relapse during the first year after treatment and at least annually thereafter… Similar to RAI, long-term L-T4 replacement therapy is required »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "ETA 2018 retenue ; amiodarone : FI Cordarone."
+  },
+  {
+   "id": "E05-35",
+   "chapter_code": "E05",
+   "kind": "follow_up",
+   "claim": "Immunothérapies et Basedow induit : pas d’arrêt obligatoire de l’immunothérapie ; contrôle thyroïdien toutes les 3–6 semaines sous inhibiteurs de points de contrôle.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "ARS MEDICI (Rosenfluh, Suisse) — conférence de la Prof. M. Christ-Crain, Hôpital universitaire de Bâle",
+    "title": "Hyper- und Hypothyreose: Wann sollte man danach suchen, wie abklären und wie behandeln? ARS MEDICI 17/2023:435-437",
+    "url": "https://www.rosenfluh.ch/media/arsmedici/2023/17/Hyper-und-Hypothyreose-Wann-sollte-man-danach-suchen-wie-abklaeren-und-wie-behandeln.pdf",
+    "version_date": "25.08.2023",
+    "section": "Ursache der Hyperthyreose abklären",
+    "passage": "« Unter Checkpoint-Inhibitoren manifestiert sich diese Nebenwirkung typischerweise 4 bis 6 Wochen nach Therapiebeginn… zu Beginn der Behandlung sowie alle 3 bis 6 Wochen die Schilddrüsenwerte (TSH, fT4) zu kontrollieren »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al., Eur Thyroid J 2018;7:167-186, doi:10.1159/000490384)",
+     "url": "https://doi.org/10.1159/000490384",
+     "version_date": "publié le 25.07.2018 (en vigueur ; aucune mise à jour ETA de la ligne directrice adulte trouvée au 14.10.2026)",
+     "section": "Recommendations 49–50",
+     "passage": "« 49 Graves' hyperthyroidism precipitated by an immunomodulatory therapy is not a mandatory indication to stop that precipitating treatment, nor… for definitive therapy… 50 Sequential monitoring of serum TSH-R-Ab levels can be used to guide the duration »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Position suisse de surveillance retenue ; ETA pour le Basedow induit."
+  },
+  {
+   "id": "E05-36",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Carbimazole (Néo-Mercazole 5 mg) : 20–60 mg/j en 2–3 prises, réduction par paliers, entretien 5–20 mg/j ; contre-indications ; formule sanguine.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Néo-Mercazole® 5 mg (carbimazole)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680210370280",
+    "version_date": "Mise à jour de l'information : août 2020",
+    "section": "Posologie/Mode d'emploi",
+    "passage": "« Dose initiale (15–30 jours) 20–60 mg par jour, selon l'ampleur de l'hyperthyroïdie, répartis en deux à trois prises… par paliers de 5-15 mg/jour tous les 10 jours, jusqu'à obtenir une dose journalière de 5–20 mg/jour… Le traitement dure en général 6 à 18 mois… Adolescents dès 12 ans… 0,7 à 0,8 mg… ne pas dépasser… 60 mg/jour… enfants, une dose maximale de 30 mg »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Néo-Mercazole® 5 mg (carbimazole)",
+    "authorization_number": "21037",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680210370280",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie/Mode d'emploi",
+    "passage": "« Dose initiale (15–30 jours) 20–60 mg par jour, selon l'ampleur de l'hyperthyroïdie, répartis en deux à trois prises… par paliers de 5-15 mg/jour tous les 10 jours, jusqu'à obtenir une dose journalière de 5–20 mg/jour… Le traitement dure en général 6 à 18 mois… Adolescents dès 12 ans… 0,7 à 0,8 mg… ne pas dépasser… 60 mg/jour… enfants, une dose maximale de 30 mg »"
+   }
+  },
+  {
+   "id": "E05-37",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Propylthiouracile (Propycil 50) : 75–100 mg × 3/j ; hépatotoxicité ; contre-indications.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Propycil® 50 (propylthiouracile)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680563000131",
+    "version_date": "Mise à jour de l'information : septembre 2024",
+    "section": "Posologie ; Contre-indications ; Efficacité clinique",
+    "passage": "« 3 fois par jour 75 - 100 mg… Dans des cas graves ainsi qu'après contamination à l'iode, des doses initiales plus fortes de 300 - 600 mg par jour… Traitement d'entretien 25 - 150 mg… plein effet après 2–3 semaines »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Propycil® 50 (propylthiouracile)",
+    "authorization_number": "56300",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680563000131",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie ; Contre-indications ; Efficacité clinique",
+    "passage": "« 3 fois par jour 75 - 100 mg… Dans des cas graves ainsi qu'après contamination à l'iode, des doses initiales plus fortes de 300 - 600 mg par jour… Traitement d'entretien 25 - 150 mg… plein effet après 2–3 semaines »"
+   }
+  },
+  {
+   "id": "E05-38",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Propranolol (Inderal 10/40) : hyperthyroïdie et crises, 10–40 mg × 3–4/j ; contre-indications.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Inderal® 10 mg / 40 mg (propranolol)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680317060015",
+    "version_date": "Mise à jour de l'information : janvier 2023",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde",
+    "passage": "« Hyperthyroïdie et crises thyréotoxiques… Normalement, la dose quotidienne est de 10-40 mg 3-4 fois par jour… thyréotoxicose: 0,25-0,5 mg/kg 3-4 fois par jour… Ne pas utiliser Inderal chez des patients souffrant ou ayant souffert d'asthme bronchique ou de bronchospasme… Une thyréotoxicose peut être masquée. »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Inderal® 10 mg / 40 mg (propranolol)",
+    "authorization_number": "31706",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680317060015",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde",
+    "passage": "« Hyperthyroïdie et crises thyréotoxiques… Normalement, la dose quotidienne est de 10-40 mg 3-4 fois par jour… thyréotoxicose: 0,25-0,5 mg/kg 3-4 fois par jour… Ne pas utiliser Inderal chez des patients souffrant ou ayant souffert d'asthme bronchique ou de bronchospasme… Une thyréotoxicose peut être masquée. »"
+   }
+  },
+  {
+   "id": "E05-39",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Esmolol (Brevibloc) : charge 500 µg/kg/min puis 50 µg/kg/min ; entretien 100 µg/kg/min ; ≤ 24 h.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Brevibloc® (esmolol)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680495760219",
+    "version_date": "Mise à jour de l'information : septembre 2013",
+    "section": "Indications ; Posologie",
+    "passage": "« 500 µg/kg/min comme dose de saturation, en une minute, suivie d'une dose d'entretien de 50 µg/kg/min pendant 4 minutes… La dose d'entretien habituelle est de 100 µg/kg/min. Des doses d'entretien supérieures à 200 µg/kg/min n'apportent pas d'avantages… ne devrait pas dépasser 24 h »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Brevibloc® (esmolol)",
+    "authorization_number": "49'576",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680495760219",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie",
+    "passage": "« 500 µg/kg/min comme dose de saturation, en une minute, suivie d'une dose d'entretien de 50 µg/kg/min pendant 4 minutes… La dose d'entretien habituelle est de 100 µg/kg/min. Des doses d'entretien supérieures à 200 µg/kg/min n'apportent pas d'avantages… ne devrait pas dépasser 24 h »"
+   }
+  },
+  {
+   "id": "E05-40",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Hydrocortisone (Solu-Cortef) : flacons 100/250 mg ; doses initiales jusqu’à 100 mg i.v.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Solu-CORTEF® (hydrocortisone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680235330016",
+    "version_date": "Mise à jour de l'information : octobre 2025",
+    "section": "Composition ; Indications ; Mode d'emploi",
+    "passage": "« Act-O-Vial… 100 mg… 250 mg… Thyroïdite non suppurative… Des doses initiales allant jusqu'à 100 mg doivent être administrées par voie intraveineuse en 30 secondes au minimum »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Solu-CORTEF® (hydrocortisone)",
+    "authorization_number": "23533",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680235330016",
+    "accessed_on": "2026-10-14",
+    "section": "Composition ; Indications ; Mode d'emploi",
+    "passage": "« Act-O-Vial… 100 mg… 250 mg… Thyroïdite non suppurative… Des doses initiales allant jusqu'à 100 mg doivent être administrées par voie intraveineuse en 30 secondes au minimum »"
+   }
+  },
+  {
+   "id": "E05-41",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Méthylprednisolone (Solu-Medrol) : hépatite aiguë à fortes doses ; posologie de l’orbitopathie issue de l’EUGOGO.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Solu-MEDROL® (méthylprednisolone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680351120812",
+    "version_date": "Mise à jour de l'information : août 2025",
+    "section": "Mises en garde — Effets hépatobiliaires",
+    "passage": "« Lorsque la méthylprednisolone était utilisée à des doses élevées (généralement à partir d'1 g par jour), des lésions hépatiques, par ex. une hépatite aiguë, ont été signalées, parfois avec une issue fatale… quelques semaines ou plus »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Solu-MEDROL® (méthylprednisolone)",
+    "authorization_number": "35112",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680351120812",
+    "accessed_on": "2026-10-14",
+    "section": "Mises en garde — Effets hépatobiliaires",
+    "passage": "« Lorsque la méthylprednisolone était utilisée à des doses élevées (généralement à partir d'1 g par jour), des lésions hépatiques, par ex. une hépatite aiguë, ont été signalées, parfois avec une issue fatale… quelques semaines ou plus »"
+   }
+  },
+  {
+   "id": "E05-42",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Prednisone (Prednisone Streuli 5/20/50 mg) : corticoprophylaxie ; paralysie périodique thyrotoxique par hypokaliémie.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Prednisone Streuli® 5/20/50 mg",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "version_date": "Mise à jour de l'information : juin 2026",
+    "section": "Recommendation 5",
+    "passage": "« 0.3–0.5 mg/kg/bodyweight as starting dose, tapered, and withdrawn after 3 months… 0.1–0.2 mg/kg/bodyweight, tapered, and withdrawn after 6 weeks »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Prednisone Streuli® 5/20/50 mg",
+    "authorization_number": "29349",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "accessed_on": "2026-10-14",
+    "section": "Recommendation 5",
+    "passage": "« 0.3–0.5 mg/kg/bodyweight as starting dose, tapered, and withdrawn after 3 months… 0.1–0.2 mg/kg/bodyweight, tapered, and withdrawn after 6 weeks »"
+   }
+  },
+  {
+   "id": "E05-43",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Iodure de sodium iode 131 (capsule T Curium) : contre-indications, préparation, dosimétrie.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Sodium iodide (I-131) capsule T Curium",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680527280012",
+    "version_date": "Mise à jour de l'information : juillet 2022",
+    "section": "Contre-indications ; Mises en garde ; Grossesse, Allaitement",
+    "passage": "« Grossesse et allaitement (le sevrage doit avoir lieu au moins 8 semaines avant le traitement par 131I)… aggravation d'une hyperthyroïdie préexistante 2 à 10 jours après le traitement, voire même à une crise thyréotoxique… jusqu'à 6 mois après traitement d'une affection bégnine… éviter les contacts rapprochés entre mère et jeune enfant pendant au moins 1 semaine »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Sodium iodide (I-131) capsule T Curium",
+    "authorization_number": "52728",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680527280012",
+    "accessed_on": "2026-10-14",
+    "section": "Contre-indications ; Mises en garde ; Grossesse, Allaitement",
+    "passage": "« Grossesse et allaitement (le sevrage doit avoir lieu au moins 8 semaines avant le traitement par 131I)… aggravation d'une hyperthyroïdie préexistante 2 à 10 jours après le traitement, voire même à une crise thyréotoxique… jusqu'à 6 mois après traitement d'une affection bégnine… éviter les contacts rapprochés entre mère et jeune enfant pendant au moins 1 semaine »"
+   }
+  },
+  {
+   "id": "E05-44",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Téprotumumab (Tepezza) : 10 puis 20 mg/kg toutes les 3 semaines, 8 perfusions ; effets indésirables.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse TEPEZZA® (téprotumumab)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680697950012",
+    "version_date": "Mise à jour de l'information : mars 2026",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde ; Efficacité clinique",
+    "passage": "« 10 mg/kg… Par la suite, 20 mg/kg… pour 7 doses supplémentaires, une fois toutes les trois semaines… Grossesse… hyperglycémie est survenue chez 13,2 %… troubles auditifs sévères… permanents… aggravation d'une MICI… environ 4 %… Taux de réponse pour l'exophtalmie 82,9 / 9,5… 10 (29,4 %) ont présenté une rechute »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "TEPEZZA® (téprotumumab)",
+    "authorization_number": "69795",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680697950012",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde ; Efficacité clinique",
+    "passage": "« 10 mg/kg… Par la suite, 20 mg/kg… pour 7 doses supplémentaires, une fois toutes les trois semaines… Grossesse… hyperglycémie est survenue chez 13,2 %… troubles auditifs sévères… permanents… aggravation d'une MICI… environ 4 %… Taux de réponse pour l'exophtalmie 82,9 / 9,5… 10 (29,4 %) ont présenté une rechute »"
+   }
+  },
+  {
+   "id": "E05-45",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Lévothyroxine (Euthyrox) : contre-indication en hyperthyroïdie hors bloquer-remplacer ; surdosage.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Euthyrox® (lévothyroxine)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680549490017",
+    "version_date": "Mise à jour de l'information : février 2023",
+    "section": "Contre-indications ; Surdosage",
+    "passage": "« hyperthyroïdie de toute origine (exception: comme traitement associé au traitement thyréostatique…) ·pendant la grossesse, comme traitement associé… Les substances thyréostatiques ne sont pas indiquées, car la thyroïde est déjà totalement au repos. Une plasmaphérèse peut s'avérer utile »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Euthyrox® (lévothyroxine)",
+    "authorization_number": "54949",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680549490017",
+    "accessed_on": "2026-10-14",
+    "section": "Contre-indications ; Surdosage",
+    "passage": "« hyperthyroïdie de toute origine (exception: comme traitement associé au traitement thyréostatique…) ·pendant la grossesse, comme traitement associé… Les substances thyréostatiques ne sont pas indiquées, car la thyroïde est déjà totalement au repos. Une plasmaphérèse peut s'avérer utile »"
+   }
+  },
+  {
+   "id": "E05-46",
+   "chapter_code": "E05",
+   "kind": "medication",
+   "claim": "Amiodarone (Cordarone) : monitoring de la TSH ; hyperthyroïdie jusqu’à quelques mois après l’arrêt.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "pending_independent_review",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Cordarone® comprimés (amiodarone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680333930163",
+    "version_date": "Mise à jour de l'information : avril 2024",
+    "section": "Mises en garde — Hyperthyroïdie ; Troubles thyroïdiens",
+    "passage": "« Une hyperthyroïdie peut apparaître durant le traitement par l'amiodarone, et jusqu'à quelques mois après l'arrêt… perte de poids, apparition d'arythmie, angor, insuffisance cardiaque… monitoring… plusieurs mois après son arrêt »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Cordarone® comprimés (amiodarone)",
+    "authorization_number": "33393",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680333930163",
+    "accessed_on": "2026-10-14",
+    "section": "Mises en garde — Hyperthyroïdie ; Troubles thyroïdiens",
+    "passage": "« Une hyperthyroïdie peut apparaître durant le traitement par l'amiodarone, et jusqu'à quelques mois après l'arrêt… perte de poids, apparition d'arythmie, angor, insuffisance cardiaque… monitoring… plusieurs mois après son arrêt »"
+   }
+  }
+ ]
+}

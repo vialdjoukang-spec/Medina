@@ -1,0 +1,91 @@
+{
+ "actor": "C02-R-NEUR",
+ "verdict": "conforme",
+ "checked_at": "2026-10-14T21:34:02.959604+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLE_02_REPRISE_CLAUDE_VIAL_2026-10-14.md",
+     "sha256": "15fce27728aff2a9c0448813b9b40dfeed929f551daeb63f579697d77f355b7a",
+     "explanation": "Même autorité que l'entrée ; travail limité à l'étape « auteurs correcteurs » de la chaîne (aucun audit croisé, aucune injection, ni commit ni push par C02-R-NEUR)."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45/preuves/images_claude.json",
+     "sha256": "834ec64fba0362e1bdca9970efbba2d237cbc944be0875d43f904a3f5d081731",
+     "explanation": "Manifeste final des neuf images : aucune image remplacée ; mêmes fichiers et empreintes que la remise Codex ; licences relues dans les métadonnées Commons le 14.10.2026 ; crédit Petit B ajouté (M1). Écritures limitées aux six HTML, au glossaire g45.py, aux preuves suffixées _claude et au dossier auteur."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45/preuves/source_ledger_claude.json",
+     "sha256": "ea668dbf209789aa2863b7ca58aa4ea6fdfa2473f01e7f1744f20ec840679288",
+     "explanation": "275 affirmations : 33 nouvelles relues le 14.10.2026 (FI Aspirine Cardio, Plavix, Eliquis, Sortis via AmiKo ; Berne PDF 3ff2eeaa… pages 3–27 ; TGA 2023 ; Kägi 2021 ; résumé ESO ; Maier 2026 ; Kho 2025 ; HGNC ; ChEBI ; CHUV) et 242 reprises Codex dont la provenance (relue ou non par C02-R-NEUR) est indiquée ligne par ligne. Après la passe 1 croisée : affirmation Kägi 2021 étendue à la fenêtre g45-parcours (transport possible sans signaux prioritaires après régression complète, X1) ; titre complet de Maier 2026 (O1)."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Codex/N-05-Neurologie/travail/CYCLE_02_G45/chapters/G45/G45_d.html",
+     "sha256": "35fceb068dac8a3866c8e364c9d483c5ab3be5b7de35f2f044822f2db2adfb6d",
+     "explanation": "Contre-indications, non-recommandations, interactions et seuils d'arrêt pris dans la FI suisse du produit exact ; conduite carotidienne, bithérapie et anticoagulation attribuées au protocole bernois 2026 ; ESO 2021 seulement en appui européen ; aucune recommandation américaine décisionnelle."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/G45/auteur/empreintes_entree.json",
+     "sha256": "b0d2beb2a9fcde487b3a2e64f023b4ae6fa2a05500575a3de3fa6e07d9a2945e",
+     "explanation": "Relevé d'entrée immuable antérieur aux corrections ; la seconde passe reste confiée au relecteur croisé C02-R-HEM sur les nouvelles empreintes ; aucune observation de la passe 1 n'est réécrite ni revendiquée."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/G45/auteur/controle_technique.json",
+     "sha256": "86a17ac6e1566ca5935e2d5da23d6729081c78daa068aead974c23eabdc6fbad",
+     "explanation": "test_v7.py --static G45 : OK (0 abréviation non couverte, 69 fenêtres, 23 quiz, 21 Pareto) ; aperçu isolé : 133 mots interactifs cliqués sans fiche absente, 0 erreur JavaScript, aucun débordement à 390 px ; ancres du cahier conservées."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/reviews/2026-10-14/CYCLE_02_CLAUDE/G45/auteur/controle_technique.json",
+     "sha256": "86a17ac6e1566ca5935e2d5da23d6729081c78daa068aead974c23eabdc6fbad",
+     "explanation": "Les réserves R1–R6 et M1–M3 sont déclarées corrigées par l'auteur, non levées : seule la passe 2 croisée peut les lever. Textes intégraux ESO 2021, Claassen 2021 et Eren 2021 inaccessibles aujourd'hui : non revendiqués comme relus. Revue par IA, aucune validation médicale humaine. Correction X1 de la passe 1 croisée C02-R-HEM appliquée ; aucune validation médicale humaine revendiquée."
+    }
+   ]
+  }
+ ]
+}

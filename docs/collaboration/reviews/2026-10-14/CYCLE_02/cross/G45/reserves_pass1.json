@@ -1,0 +1,77 @@
+{
+  "code": "G45",
+  "created_at": "2026-10-14T00:44:57.034961+00:00",
+  "blocking_reserves": [
+    {
+      "id": "R1",
+      "severity": "majeure_medicale",
+      "location": "chapters/G45/G45_pop2.html::template[data-pop=\"g45-aspirine\"]; chapters/G45/G45_d.html#g45-p02-partie-2",
+      "problem": "Les exclusions d’Aspirine Cardio omettent les maladies inflammatoires intestinales et l’insuffisance cardiaque sévère. Elles restent absentes de toutes les surfaces, malgré une monographie censée guider la sécurité du produit.",
+      "source": "FI_ASPIRINE, Contre-indications : maladies inflammatoires de l’intestin (Crohn,colite ulcéreuse) ; insuffisance cardiaque sévère NYHA III–IV.",
+      "expected_correction": "Enseigner ces contre-indications du produit exact avec définitions/liens utiles, vérifier cohérence monographie/corps/tableau et renouveler ledger. Ne pas les transformer en contre-indication universelle de toute forme/dose d’aspirine."
+    },
+    {
+      "id": "R2",
+      "severity": "majeure_medicale",
+      "location": "chapters/G45/G45_pop2.html::template[data-pop=\"g45-sortis\"]; chapters/G45/G45_d.html#g45-p02-partie-2; #g45-p02-partie-3",
+      "problem": "Sortis : cholestase et association glécaprévir/pibrentasvir sont absentes des exclusions. Les douleurs/faiblesses musculaires appellent une évaluation dans le texte, mais l’arrêt immédiat en cas de myopathie suspectée/diagnostiquée ou d’élévation significative des CPK n’est pas enseigné.",
+      "source": "FI_SORTIS, Contre-indications et Mises en garde/Effets sur musculature, lignes71–89 de l’archive texte.",
+      "expected_correction": "Ajouter les exclusions pertinentes exactes et la conduite d’arrêt immédiat dans les conditions de la FI ; distinguer simple myalgie à évaluer de myopathie suspectée. Définir cholestase/CPK et documenter l’association contre-indiquée, sans nouveau seuil arbitraire."
+    },
+    {
+      "id": "R3",
+      "severity": "majeure_medicale",
+      "location": "chapters/G45/G45_pop2.html::template[data-pop=\"g45-eliquis\"]; chapters/G45/G45_d.html#g45-p02-partie-3",
+      "problem": "La monographie ne traite pas le syndrome des antiphospholipides avec antécédent thrombotique, pour lequel la FI déconseille les anticoagulants oraux directs, surtout en triple positivité. La conduite devant hémorragie majeure reste une décision générique d’interruption, sans indiquer l’arrêt prévu par la FI.",
+      "source": "FI_ELIQUIS, Mises en garde/Risque hémorragique et Patients souffrant du syndrome des antiphospholipides ; BE26p37 exclut aussi APS de son emploi DOAC.",
+      "expected_correction": "Ajouter la non-recommandation dans cette population et l’arrêt en cas d’hémorragie majeure, avec évaluation urgente et renvoi aux mesures spécialisées sans improviser une réversion. Garder distinctes contre-indication formelle et emploi non recommandé."
+    },
+    {
+      "id": "R4",
+      "severity": "moderee_scientifique",
+      "location": "chapters/G45/G45_pop2.html::template[data-pop=\"g45-plaquette\"]; chapters/G45/G45_c.html#g45-s03-partie-3; glossary/g45.py",
+      "problem": "La fenêtre dit « TXA2 le thromboxane A2 et ses récepteurs », confondant ligand et récepteur. Le dessin porte TBXA2 et TBXA2R distincts, ainsi que TBXAS1,F2/F2R,ADCY3,GNAS,IP3,P2RY1/P2RX1 non expliqués ; la légende promet pourtant les abréviations explicitées.",
+      "source": "GIF g45-08 réellement ouvert ; FI_ASPIRINE mécanisme TXA2 ; métadonnées figure PharmGKB.",
+      "expected_correction": "Distinguer explicitement molécule, récepteur et enzyme ; compléter une lecture guidée sourcée des symboles utiles et les correspondances exactes du dessin, ou choisir une figure publiée moins complexe. Ne pas développer les symboles de mémoire ; garder l’image publiée intacte."
+    },
+    {
+      "id": "R5",
+      "severity": "moderee_pedagogique",
+      "location": "chapters/G45/G45_pop1.html::template[data-pop=\"g45-perfusion\"]; chapters/G45/G45_c.html#g45-s02-partie-1",
+      "problem": "La relation débit=gradient/résistance est donnée sans unité de résistance ni exemple chiffré refaisable. L’explication des limites est bonne mais le calcul demandé depuis les bases reste incomplet.",
+      "source": "Instruction CLARTE_BASES_CALCULS §3 ; PHYS21 régulation pression/débit/résistance.",
+      "expected_correction": "Ajouter variables et unités cohérentes, un exemple explicitement fictif ou adimensionnel, étapes et effet d’un changement de résistance, sans valeur prétendue normale ni cible de soin. Fournir le passage exact qui étaye la relation."
+    },
+    {
+      "id": "R6",
+      "severity": "moderee_completude",
+      "location": "chapters/G45/G45_b.html#g45-a10-partie-3; chapters/G45/G45_pop1.html::template[data-pop=\"g45-carotide\"]",
+      "problem": "La discussion des sténoses reste générale : le seuil≥50% de la fenêtre concerne surtout l’imputabilité, sans enseigner la branche d’intervention >50% du tableau bernois ni le délai « within a few days ». Le cahier demande critères,bénéfices et risques, pas seulement renvoi spécialisé.",
+      "source": "BE26p24 : CEA/stenting usually within a few days ; p34 : symptomatic extracranial carotid stenosis >50% CEA/CAS, <50% plaque rupture individual ; cahierA10.3.",
+      "expected_correction": "Compléter la conduite attribuée à Berne, différence imputabilité/indication, temporalité et principaux éléments arbitrant chirurgie/stenting. Conserver décision multidisciplinaire et exceptions ; ne pas importer un seuil ou délai d’une autre recommandation sans lecture."
+    }
+  ],
+  "nonblocking_observations": [
+    {
+      "id": "M1",
+      "severity": "mineure_provenance",
+      "location": "preuves/images.json IMG-G45-S01-1 et légende g45-05",
+      "problem": "La version française est attribuée à Rhcastilhos mais son traducteur Petit B est nommé dans les métadonnées et omis de la légende/manifest.",
+      "expected_correction": "Ajouter « traduction française : Petit B » ; fichier en domaine public, pas de changement de licence."
+    },
+    {
+      "id": "M2",
+      "severity": "mineure_redaction",
+      "location": "chapters/G45/G45_a.html#g45-a02-partie-3",
+      "problem": "Le mot « reperfusion » ouvre g45-perfusion, qui explique débit/pression/résistance et non la restauration thérapeutique du flux.",
+      "expected_correction": "Adapter le libellé au contenu réel ou fournir une fenêtre définissant la reperfusion selon source lue."
+    },
+    {
+      "id": "M3",
+      "severity": "mineure_arithmetique",
+      "location": "chapters/G45/G45_pop1.html::template[data-pop=\"g45-risque\"]",
+      "problem": "La différence8,18points provient des deux proportions déjà arrondies ; le calcul avec fractions exactes donne8,1873points,arrondi8,19.",
+      "expected_correction": "Préciser l’arrondi intermédiaire ou conserver les fractions jusqu’au résultat final ; impact clinique nul."
+    }
+  ]
+}
