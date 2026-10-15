@@ -1,0 +1,438 @@
+{
+ "mission": "ALPHA77-CLAUDE-E12-INTEGRATE",
+ "code": "E12",
+ "phase": 1,
+ "role": "Agent W (rédacteur et intégrateur)",
+ "branche": "claude/alpha77/e12-integrate-g1",
+ "base": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "date": "2026-10-15",
+ "audits_sources": [
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-E12-MED/rapport.json",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-E12-LANG/rapport.json",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-E12-LANG/propositions.json"
+ ],
+ "sources_relues_par_W": [
+  "Information professionnelle suisse Diamicron MR 60 mg, février 2025 (AIPS via AmiKo, GTIN 7680552340064) — relue par W le 15.10.2026",
+  "Information professionnelle suisse Glucophage, octobre 2025 (AIPS via AmiKo, GTIN 7680260610169) — relue par W le 15.10.2026",
+  "Information professionnelle suisse Januvia, avril 2024 (AIPS via AmiKo, GTIN 7680578630019) — relue par W le 15.10.2026",
+  "Krutkyte et coll., Nutrients 2022;14:2859, PMC9324596 — texte intégral relu par W le 15.10.2026",
+  "Richtlinien Fahreignung SGED/SGRM, août 2025, Tabelle 1 et 2 — PDF relu par W le 15.10.2026",
+  "CIM-10-GM 2024, libellés OFS E12.7x (nosology/fragments/S05.json)"
+ ],
+ "sources_non_relues_par_W": [
+  "HaPanEU 2017 (PMC5349368 : reCAPTCHA ; Europe PMC indisponible) — énoncés repris des citations courtes de l’audit MED",
+  "Endotext 2024, SGED 2023, Diabetes Care 2022, Jones 2013, Cavagnolli 2015, Friedli 2018, FI Creon et Lantus — repris de l’audit MED"
+ ],
+ "constats_med": [
+  {
+   "constat": "C01",
+   "gravite": "MAJEUR",
+   "probleme": "Régime pauvre en graisses contre la stéatorrhée de la FCPD (Endotext) contredit par HaPanEU 6-3.2",
+   "action": "Remplacé : pas de restriction des graisses ; stéatorrhée corrigée par la dose d’enzymes puis un IPP ; justification énergétique",
+   "emplacement": "E12_b #e12-9 « Moyens : nutrition » ; E12_pop2 e12-nutrition",
+   "source": "HaPanEU 2017 (S8) — lue par l’audit MED (citations courtes du rapport) ; non relue par W (PMC protégé par reCAPTCHA) ; Endotext 2024 (S7)"
+  },
+  {
+   "constat": "C02",
+   "gravite": "MAJEUR",
+   "probleme": "CPRE proposée comme examen diagnostique",
+   "action": "Séquence HaPanEU : échographie (stades avancés), CT (calcifications), IRM avec cholangio-IRM, échoendoscopie ; CPRE retirée comme test diagnostique",
+   "emplacement": "E12_c tableau #e12-e-1, #e12-e-4, #e12-s-anat-cours ; E12_pop2 e12-imagerie",
+   "source": "HaPanEU 2017 (S8) — lue par l’audit MED (citations courtes du rapport) ; non relue par W (PMC protégé par reCAPTCHA) ; Lancet Global Health 2025 (S4)"
+  },
+  {
+   "constat": "C03",
+   "gravite": "MAJEUR",
+   "probleme": "Sulfonylurées présentées comme option privilégiée sans FI",
+   "action": "Gliclazide seulement si apports réguliers, 30 mg/j chez le dénutri ; encadré FI (contre-indications, hypoglycémie prolongée, G6PD, hors indication) ; doses Diamicron dans p-2 ; fenêtre e12-sulfo complétée ; restriction ajoutée dans le tableau du consensus et en situations particulières",
+   "emplacement": "E12_d #e12-p-1, #e12-p-2, #e12-p-3, #e12-p-4 ; E12_b #e12-9, #e12-11 ; E12_pop2 e12-sulfo",
+   "source": "Information professionnelle suisse Diamicron MR 60 mg, février 2025 (AIPS via AmiKo, GTIN 7680552340064) — relue par W le 15.10.2026 ; Lancet Global Health 2025 (S4)"
+  },
+  {
+   "constat": "C04",
+   "gravite": "MAJEUR",
+   "probleme": "Syndrome de renutrition absent",
+   "action": "Encadré div.alert (mécanisme), paragraphe de dépistage et de conduite (énergie progressive 5–10 j, thiamine, électrolytes 72 h avec seuils, fer différé 7 j, poids), lien avec l’insuline exogène signalé comme déduction ; cas récapitulatif, fenêtre nutrition et Pareto mis à jour",
+   "emplacement": "E12_b #e12-9, #e12-11 ; E12_pop2 e12-nutrition ; E12_pop1 pareto-e12-prise",
+   "source": "Krutkyte et coll., Nutrients 2022;14:2859, PMC9324596 — texte intégral relu par W le 15.10.2026 ; Friedli et coll., Nutrition 2018 (résumé, S17, lu par l’audit MED)"
+  },
+  {
+   "constat": "C05",
+   "gravite": "MAJEUR",
+   "probleme": "Règle de la glycémie aléatoire inversée",
+   "action": "Reformulée selon HaPanEU 7-3 (1A) : glycémie aléatoire ≥ 11,1 mmol/L = hyperglycémie non équivoque ; confirmation en son absence ou en cas de doute",
+   "emplacement": "E12_b #e12-7 et div.alert #e12-12 ; E12_c #e12-e-2 ; E12_pop1 e12-seuils",
+   "source": "HaPanEU 2017 (S8) — lue par l’audit MED (citations courtes du rapport) ; non relue par W (PMC protégé par reCAPTCHA)"
+  },
+  {
+   "constat": "C06",
+   "gravite": "MAJEUR",
+   "probleme": "Seuil de C-peptide 0,5 ng/mL présenté comme repère (raisonnement circulaire)",
+   "action": "Requalifié en critère d’inclusion des groupes, non validé",
+   "emplacement": "E12_b #e12-7 ; E12_c tableau #e12-e-3 ; E12_pop1 e12-cpept",
+   "source": "Diabetes Care 2022 (S5), Methods — lu par l’audit MED"
+  },
+  {
+   "constat": "C23",
+   "gravite": "MAJEUR",
+   "probleme": "Figure 2 « Pancréas normal / FCPD » : SVG anatomique généré",
+   "action": "DIFFÉRÉ en phase 2 : remplacement par l’image réelle sourcée préparée par l’Agent P (prep/figures.json) ; figure inchangée en phase 1",
+   "emplacement": "E12_c #e12-s-anat-cours",
+   "source": "Règle Vial 15.10.2026 (FIGURES_ANATOMIQUES_IA)"
+  },
+  {
+   "constat": "C24",
+   "gravite": "MAJEUR",
+   "probleme": "Figure 3 « Îlot normal / fibrosé » : SVG histologique généré",
+   "action": "DIFFÉRÉ en phase 2, comme C23",
+   "emplacement": "E12_c #e12-s-histo-cours",
+   "source": "Règle Vial 15.10.2026"
+  },
+  {
+   "constat": "C07",
+   "gravite": "MINEUR",
+   "probleme": "« Aucun facteur de conversion » du C-peptide",
+   "action": "Conversion 1 nmol/L = 3 ng/mL et lecture dans la grille SGED, avec limites (à jeun/stimulé, glycémie simultanée, rein)",
+   "emplacement": "E12_c #e12-e-3 ; E12_pop1 e12-cpept",
+   "source": "Jones et Hattersley 2013 (S18) ; SGED 2023 (S9) — lus par l’audit MED"
+  },
+  {
+   "constat": "C08",
+   "gravite": "MINEUR",
+   "probleme": "Exclusions de E12 incomplètes",
+   "action": "Liste complétée (O24.-, R81, E74.8, R73.0, P70.2, E89.1)",
+   "emplacement": "E12_a #e12-1",
+   "source": "CIM-10 OMS 2019 (S1)"
+  },
+  {
+   "constat": "C17",
+   "gravite": "MINEUR",
+   "probleme": "Destruction des cellules alpha affirmée sans nuance",
+   "action": "Nuancée (rôle discuté selon Endotext) dans l’encadré d’histologie, la physiopathologie, l’encadré Science → clinique et la fenêtre e12-cetose ; RM-14 traité ensemble",
+   "emplacement": "E12_c #e12-s-histo-cours ; E12_a #e12-3 ; E12_pop1 e12-cetose",
+   "source": "Endotext 2024 (S7)"
+  },
+  {
+   "constat": "C18",
+   "gravite": "MINEUR",
+   "probleme": "Palier du clamp non précisé",
+   "action": "Légende de la figure 1 complétée (palier « insuline basse »)",
+   "emplacement": "E12_a #e12-3 figure 1",
+   "source": "Diabetes Care 2022 (S5)"
+  },
+  {
+   "constat": "C22",
+   "gravite": "MINEUR",
+   "probleme": "Développement de HaPanEU déclaré inconnu",
+   "action": "Entrée de glossaire complétée lettre à lettre",
+   "emplacement": "glossary/e12.py HaPanEU",
+   "source": "HaPanEU 2017 (S8) — lue par l’audit MED (citations courtes du rapport) ; non relue par W (PMC protégé par reCAPTCHA)"
+  },
+  {
+   "constat": "C25",
+   "gravite": "MINEUR",
+   "probleme": "Barres de la figure 1 non proportionnelles",
+   "action": "Coordonnées recalculées (120 px et 13 px par mg/kg·min), axe gradué distinct par panneau, légende mise à jour ; graphique de données non anatomique, valeurs inchangées",
+   "emplacement": "E12_a #e12-3 figure 1",
+   "source": "Diabetes Care 2022 (S5)"
+  },
+  {
+   "constat": "C09",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Grossesse limitée à l’exclusion",
+   "action": "Codes O24.2 et O24.4, contre-indication du gliclazide, absence de conduite propre ; RM-13 résolu",
+   "emplacement": "E12_b #e12-11",
+   "source": "CIM-10 OMS 2019 (S2) ; Information professionnelle suisse Diamicron MR 60 mg, février 2025 (AIPS via AmiKo, GTIN 7680552340064) — relue par W le 15.10.2026"
+  },
+  {
+   "constat": "C10",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Mises en garde Glucophage propres au dénutri",
+   "action": "Jeûne et dénutrition (acidose lactique), produit de contraste iodé 48 h si DFGe < 60, régime hypocalorique non applicable",
+   "emplacement": "E12_d #e12-p-3, #e12-p-4",
+   "source": "Information professionnelle suisse Glucophage, octobre 2025 (AIPS via AmiKo, GTIN 7680260610169) — relue par W le 15.10.2026"
+  },
+  {
+   "constat": "C11",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Forme d’insuline SGED",
+   "action": "Paragraphe sur l’insuline co-formulée au repas principal, sans étude dans l’entité",
+   "emplacement": "E12_b #e12-9",
+   "source": "SGED 2023 (S9) — lue par l’audit MED"
+  },
+  {
+   "constat": "C12",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Aptitude à la conduite réduite à un renvoi",
+   "action": "Tableau commenté du 1er groupe médical (cinq niveaux, mesures), cas Lantus U100, règle après hypoglycémie sévère ; ligne « faible » et « très élevé » complétées depuis la Tabelle 2",
+   "emplacement": "E12_b #e12-10",
+   "source": "Richtlinien Fahreignung SGED/SGRM, août 2025, Tabelle 1 et 2 — PDF relu par W le 15.10.2026"
+  },
+  {
+   "constat": "C13",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Fenêtre DPP-4 sans FI",
+   "action": "Dose, adaptation rénale, pancréatite aiguë, hypoglycémie ; conséquence pour la FCPD ; doses Januvia dans p-2",
+   "emplacement": "E12_pop2 e12-dpp4 ; E12_d #e12-p-2",
+   "source": "Information professionnelle suisse Januvia, avril 2024 (AIPS via AmiKo, GTIN 7680578630019) — relue par W le 15.10.2026"
+  },
+  {
+   "constat": "C14",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Dose minimale européenne d’enzymes",
+   "action": "Paragraphe HaPanEU 4-2.4 à 4-2.7 et remboursement (liste des spécialités)",
+   "emplacement": "E12_d #e12-p-2",
+   "source": "HaPanEU 2017 (S8) — lue par l’audit MED (citations courtes du rapport) ; non relue par W (PMC protégé par reCAPTCHA) ; FI Creon janvier 2025 (S12, lue par l’audit MED)"
+  },
+  {
+   "constat": "C15",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Élastase fécale incomplète",
+   "action": "Seuil 200 µg/g, sensibilité 54–75 %, faux positif des selles diarrhéiques",
+   "emplacement": "E12_c #e12-e-4 ; E12_pop2 e12-elastase",
+   "source": "HaPanEU 2017 (S8) — lue par l’audit MED (citations courtes du rapport) ; non relue par W (PMC protégé par reCAPTCHA)"
+  },
+  {
+   "constat": "C16",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Facteurs de risque de diabète non chiffrés",
+   "action": "Risque relatif 2,4, rapport de cotes 9,2, 50 % à 10 ans et 83 % à 25 ans",
+   "emplacement": "E12_a #e12-4",
+   "source": "HaPanEU 2017 (S8) — lue par l’audit MED (citations courtes du rapport) ; non relue par W (PMC protégé par reCAPTCHA)"
+  },
+  {
+   "constat": "C19",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Piège HbA1c",
+   "action": "HbA1c basse sous insuline, carence martiale non tranchée ; « exigent » remplacé par « recommande » (RM-18)",
+   "emplacement": "E12_c #e12-e-2",
+   "source": "HaPanEU 7-3 ; FI Lantus (S13) ; Cavagnolli 2015 (résumé, S19) — lus par l’audit MED"
+  },
+  {
+   "constat": "C20",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Critères de la FCPD sans nuance",
+   "action": "Nuance d’Endotext (facteur géographique non prouvé, phénotype élargi, triglycérides > 500 mg/dL) ; la mention du fibrate proposée par l’audit n’est pas reprise, faute de citation dans le rapport",
+   "emplacement": "E12_b #e12-7",
+   "source": "Endotext 2024 (S7)"
+  },
+  {
+   "constat": "C21",
+   "gravite": "ENRICHISSEMENT",
+   "probleme": "Revue critique : chevauchement auto-immun omis",
+   "action": "Phrase ajoutée",
+   "emplacement": "E12_pop1 e12-critique",
+   "source": "Misra et coll. 2025, résumé (S6)"
+  }
+ ],
+ "renvois_medicaux_lang": [
+  {
+   "renvoi": "RM-01",
+   "probleme": "anti-GAD dans la vignette",
+   "decision": "Corrigé en anti-GAD65 (clé de glossaire, cohérence avec le consensus)",
+   "emplacement": "E12_a #e12-0"
+  },
+  {
+   "renvoi": "RM-02",
+   "probleme": "Référent de « la proportion »",
+   "decision": "Précisé : « la part de cette forme parmi les diabétiques » (sujet du paragraphe, données historiques Diabetes Care 2022)",
+   "emplacement": "E12_a #e12-2"
+  },
+  {
+   "renvoi": "RM-03",
+   "probleme": "Prédiction non sourcée sur la Suisse",
+   "decision": "Supprimée ; renvoi au raisonnement par typage (section 11)",
+   "emplacement": "E12_a #e12-2"
+  },
+  {
+   "renvoi": "RM-04",
+   "probleme": "Intertitre promettant un mécanisme absent",
+   "decision": "Intertitre remplacé par un constat (« Des besoins en insuline surestimés ») ; aucun mécanisme inventé",
+   "emplacement": "E12_a #e12-3"
+  },
+  {
+   "renvoi": "RM-05",
+   "probleme": "« un pays tropical »",
+   "decision": "Non reformulé : libellé exact d’Endotext non relu par W ; la nuance de C20 (aucun facteur géographique prouvé) est ajoutée",
+   "emplacement": "E12_b #e12-7"
+  },
+  {
+   "renvoi": "RM-06",
+   "probleme": "SANS présenté comme ordre de la démarche",
+   "decision": "Séparé : ordre de la démarche énoncé, SANS rattaché au profil",
+   "emplacement": "E12_b #e12-7"
+  },
+  {
+   "renvoi": "RM-07",
+   "probleme": "Pancréas normal « fréquent » dans l’alerte",
+   "decision": "Rangé parmi les caractéristiques occasionnelles, comme en section 7 et dans e12-type5 (consensus 2025)",
+   "emplacement": "E12_b #e12-12"
+  },
+  {
+   "renvoi": "RM-08",
+   "probleme": "Grade 1C attaché à l’absence d’essai",
+   "decision": "Non modifié : énoncé HaPanEU non relu par W ; à vérifier en revue",
+   "emplacement": "E12_b #e12-9"
+  },
+  {
+   "renvoi": "RM-09",
+   "probleme": "Parenthèse « (ostéodystrophie) »",
+   "decision": "Non modifiée : formulation identique dans la proposition MED C01",
+   "emplacement": "E12_b #e12-9"
+  },
+  {
+   "renvoi": "RM-10",
+   "probleme": "Pied diabétique et complications multiples",
+   "decision": "Structure vérifiée dans la CIM-10-GM 2024 (nosology/fragments/S05.json : E12.74/E12.75 sous E12.7) ; phrase reformulée",
+   "emplacement": "E12_b #e12-10"
+  },
+  {
+   "renvoi": "RM-11",
+   "probleme": "« atteinte rénale précoce de type 1 »",
+   "decision": "Non modifié : HaPanEU non relu par W ; à vérifier en revue",
+   "emplacement": "E12_b #e12-10"
+  },
+  {
+   "renvoi": "RM-12",
+   "probleme": "Risque de décès « disproportionné »",
+   "decision": "Non modifié : Endotext non relu par W sur ce point ; à vérifier en revue",
+   "emplacement": "E12_b #e12-10 ; E12_pop2 e12-cancer"
+  },
+  {
+   "renvoi": "RM-13",
+   "probleme": "Confusion classification / soins (grossesse)",
+   "decision": "Résolu par C09",
+   "emplacement": "E12_b #e12-11"
+  },
+  {
+   "renvoi": "RM-14",
+   "probleme": "« Cette histologie fonde »",
+   "decision": "Affaibli en « ces données indirectes suggèrent » et conditionnel",
+   "emplacement": "E12_c #e12-s-histo-cours"
+  },
+  {
+   "renvoi": "RM-15",
+   "probleme": "Vellore « étude indienne » contre Corée/Thaïlande",
+   "decision": "Section 2 : « l’article de Vellore cite en outre la Corée et la Thaïlande » ; fenêtre : « étude menée en Inde »",
+   "emplacement": "E12_a #e12-2 ; E12_pop1 e12-vellore"
+  },
+  {
+   "renvoi": "RM-16",
+   "probleme": "Définition de DFGe hors sujet",
+   "decision": "Définition reformulée (estimation de la filtration rénale), règle posologique conservée",
+   "emplacement": "glossary/e12.py DFGe"
+  },
+  {
+   "renvoi": "RM-17",
+   "probleme": "Fréquence rangée sous « Facteurs aggravants »",
+   "decision": "Déplacée sous une rubrique « Fréquence »",
+   "emplacement": "E12_pop2 e12-hypo"
+  },
+  {
+   "renvoi": "RM-18",
+   "probleme": "« exigent »",
+   "decision": "Remplacé par « recommande » (C19)",
+   "emplacement": "E12_c #e12-e-2"
+  },
+  {
+   "renvoi": "RM-19",
+   "probleme": "Facteur de conversion",
+   "decision": "Résolu par C07",
+   "emplacement": "E12_c #e12-e-3"
+  },
+  {
+   "renvoi": "RM-20",
+   "probleme": "Attribution CIM-10-GM / OFS",
+   "decision": "Reformulée : version allemande utilisée en Suisse dans la traduction française de l’OFS",
+   "emplacement": "E12_a #e12-1"
+  },
+  {
+   "renvoi": "RM-21",
+   "probleme": "Figure 1 non proportionnelle",
+   "decision": "Résolu par C25",
+   "emplacement": "E12_a #e12-3"
+  }
+ ],
+ "propositions_lang": {
+  "total": 102,
+  "appliquees": 96,
+  "absorbees_par_corrections_med": [
+   {
+    "id": "E12-LANG-b-05",
+    "par": "C05 (mg/dL intégré)"
+   },
+   {
+    "id": "E12-LANG-b-10",
+    "par": "RM-06"
+   },
+   {
+    "id": "E12-LANG-c-08",
+    "par": "C05"
+   },
+   {
+    "id": "E12-LANG-c-17",
+    "par": "RM-14 (« diminue »)"
+   },
+   {
+    "id": "E12-LANG-a-26",
+    "par": "C25 (légende recalibrée)"
+   },
+   {
+    "id": "E12-LANG-d-06",
+    "par": "C03 (phrase verbale reprise)"
+   }
+  ],
+  "methode": "Application séquentielle après les corrections MED ; chaque « ancien » vérifié unique (str.count == 1) au moment de l’application ; toutes fond_inchange = true"
+ },
+ "observations_globales_lang": [
+  {
+   "id": "OG-01",
+   "decision": "DIFFÉRÉ (choix éditorial en attente : espaces insécables globales)"
+  },
+  {
+   "id": "OG-02",
+   "decision": "Non traité globalement ; les nouveaux textes du tableau C-peptide utilisent &gt;/&lt; ; aucun défaut de rendu constaté (test statique OK)"
+  },
+  {
+   "id": "OG-03",
+   "decision": "Traité ponctuellement par les propositions LANG appliquées ; Pareto laissés à l’arbitrage éditorial"
+  },
+  {
+   "id": "OG-04",
+   "decision": "« scanner » remplacé par « CT » (b-22, b-23) ; mg/dl harmonisé en mg/dL dans toute la leçon (unité, aucun chiffre modifié)"
+  }
+ ],
+ "choix_differes": [
+  "Espaces insécables globales (OG-01)",
+  "« fibrillation atriale/auriculaire » : sans objet dans E12",
+  "Groupe LIENS d’E11 : sans objet dans E12"
+ ],
+ "glossaire_ajouts": [
+  "E12.74",
+  "E12.75",
+  "O24.2",
+  "O24.4",
+  "U100",
+  "U300"
+ ],
+ "controles": {
+  "build_medina.audit (E12)": "{}",
+  "test_v7.py --static E12": "OK (mots 14151, fenêtres 40, quiz 7, pareto 10)",
+  "tests/audit_sciences.py --codes E12": "non applicable en phase 1 : E12 absent de la base de comparaison du script et de sa liste d’exceptions (fichier hors périmètre de la mission) ; à reprendre en phase 2 avec la sémiologie"
+ },
+ "phase_2_restant": [
+  "Remplacement des figures 2 et 3 (C23, C24) par les images réelles validées de prep/figures.json",
+  "Sous-onglet sémiologie et bloc clinique pA",
+  "Construction du fragment S05 et rendu Chromium"
+ ],
+ "empreintes_apres": {
+  "chapters/E12/E12_a.html": "30a977fe8648a656a820f43a7dca506f851b0a6425b0730eb68f9f089e5fbc14",
+  "chapters/E12/E12_b.html": "6787e30fc65c8f28898fc59d5720beec6b2e5f3a6e73e8b9a007b4c9e0b46ab3",
+  "chapters/E12/E12_c.html": "c9ad44c609d8bdb264e880ef908f44efffd806d3226caaa38090decf0bfcee4d",
+  "chapters/E12/E12_d.html": "0fd4f0ca7ce95d803f7036049f0627cad08b35f5e2c2f4041bb63e119a49cb33",
+  "chapters/E12/E12_pop1.html": "ad94097bf50a11dcbf2dd65993bafdd8e48c0930c76121a1e4504b39d76b2c11",
+  "chapters/E12/E12_pop2.html": "21d66389cc17ebf63151fe3a7760eea02cf8d741211c762c97a382cb4470358b",
+  "glossary/e12.py": "43b1da499f4e69981ec039877f77ae5acfa5e6e4a841de4162f3fc0f7a7240bd"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation médicale humaine n’est revendiquée."
+}
