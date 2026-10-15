@@ -1,0 +1,22 @@
+{
+  "code": "D69",
+  "reviewed_at": "2026-10-15T21:29:16.234327+00:00",
+  "candidate_commit": "2d23b7729def480496b5aa760eba6b387db6921c",
+  "corrections": [
+    {
+      "path": "glossary/d69.py",
+      "before": "répétitivement inférieures à 100 G/L",
+      "after": "inférieures à 100 G/L à plusieurs reprises",
+      "count": 1,
+      "reason": "Étendre au glossaire la proposition historique LANG-01 déjà adoptée dans les HTML ; même seuil répété, même unité, même exclusion.",
+      "medical_delta_review": "Comparaison exacte avant/après relue : seul l’adverbe est développé, aucun chiffre, unité, condition, négation ni degré de certitude modifié. Aucun changement de la sémiologie pA/pS ou des décisions médicales."
+    }
+  ],
+  "checks": {
+    "exact_single_replacement": true,
+    "numeric_sequence_identical": true,
+    "python_ast_parses": true,
+    "html_unchanged": true,
+    "assets_unchanged": true
+  }
+}

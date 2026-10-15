@@ -1,0 +1,3 @@
+D69 — LANG finale relue, statut provisional.
+
+Sept fichiers core lus, propositions historiques examinées, premier sous-onglet pS et sémiologie pA inclus. Une correction locale dans la définition PTI du glossaire reprend LANG-01. Le seuil répété de100 G/L et l’exclusion des autres causes restent identiques. Empreintes MED/LANG/SEMIO et livraison existante actualisées ; aucune promotion ni nouvelle validation médicale humaine. Les preuves navigateur historiques concernent les HTML inchangés ; aucun nouveau contrôle visuel déclaré. Les réserves médicales et des figures héritées restent celles de MED.json.

@@ -1,0 +1,416 @@
+<!-- (logo: String="DESITIN")(show_interaction: Boolean=true) -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AmiKoWeb</title>
+        <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/color-scheme.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/typeahead_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/amiko_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/interactions_css.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/fulltext_style.css" />
+        <script type="text/javascript" src="/assets/javascripts/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="/assets/javascripts/jquery-ui.js"></script>
+        <script type="text/javascript" src="/javascriptRoutes"></script>
+        <meta name="apple-itunes-app" content="app-id=687642725"/>
+        <meta charset="UTF-8"/>
+    </head>
+    <body onload="move_to_highlight()">
+        
+    <script type="text/javascript" src="/assets/javascripts/typeahead.bundle.corejs.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.favourites.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.searchdb.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.helpers.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/interaction_callbacks.js"></script>
+
+    <script type="text/javascript" src="/assets/javascripts/system.min.js"></script>
+    <script type="systemjs-module" src="/assets/javascripts/amiko.prescriptions.js"></script>
+
+    <script>setInitialLanguage("http://amiko.oddb.org")</script>
+
+    <header>
+        <!-- COMPENDIUM BUTTON -->
+        <div class="nav-button" id="compendium-button">
+            <div class="center-image">
+                <button class="state-button">
+                    <img border="0" alt="Compendium" src="/assets/images/aips32x32_dark.png" height="28"/>
+                </button>
+                <span style="display: block;">Kompendium</span>
+            </div>
+        </div>
+        <div class="nav-button" id="favourites-button">
+            <div class="center-image">
+                <button class="state-button">
+                    <img border="0" alt="Favourites" src="/assets/images/favorites@2x.png" height="28"/>
+                </button>
+                <span style="display: block;">Favoriten</span>
+            </div>
+        </div>
+        <!-- INTERACTIONS BUTTON -->
+        
+            <div class="nav-button" id="interactions-button">
+                <div class="center-image">
+                    <button class="state-button">
+                        <img border="0" alt="Interactions" src="/assets/images/interactions32x32_dark.png" height="28"/>
+                    </button>
+                    <span style="display: block;">Interaktionen</span>
+                </div>
+            </div>
+        
+        
+            <div class="nav-button" id="prescriptions-button">
+                <div class="center-image">
+                    <button class="state-button --prescription">
+                        <img border="0" alt="Prescriptions" src="/assets/images/prescription.png" height="28"/>
+                    </button>
+                    <span style="display: block;">Rezepte</span>
+                </div>
+            </div>
+        
+        <!-- DOWNLOAD BUTTON -->
+        <div class="nav-button" id="download-button">
+            <div class="center-image">
+                <button id="download-button" onclick="download_links()">
+                    <img border="0" alt="Download" src="/assets/images/download_icon.svg" height="40">
+                </button>
+            </div>
+        </div>
+        <!-- SWIYU LOGIN STATUS -->
+        <div class="nav-button" id="swiyu-status" style="float: right; margin-right: 12px; line-height: 48px;">
+            
+                <a href="/swiyu" style="font-size: 13px; color: blue;">swiyu Login</a>
+            
+        </div>
+        <!-- SPONSORS BUTTONS -->
+        <div class="nav-button" id="sponsor-button">
+            <div class="center-image">
+                
+                    <a id="sponsor-button" href="http://www.desitin.ch" target="_blank">
+                        <img border="0" alt="Desitin" src="/assets/images/desitin_logo.png" height="40">
+                    </a>
+                
+            </div>
+        </div>
+    </header>
+
+    <div id="flex-container">
+        <aside id="flex-aside-one">
+            <div>
+                <button id="language-button" onclick="setLanguage()">DE</button>
+            </div>
+            <form>
+                <div id="input-form">
+                    <div id="num-results" for="input-form" class="badge"></div>
+                    <input id="search-field" class="twitter-typeahead" type="text" value="" placeholder="Suche Präparat..." autofocus/>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button id="price-comparison-button" class="rounded-button">Preisvergleich</button>
+                <button id="article-button" class="rounded-button">Titel</button>
+                <button id="owner-button" class="rounded-button">Inhaberin</button>
+                <button id="substance-button" class="rounded-button">Wirkstoff/ATC</button>
+                <button id="regnr-button" class="rounded-button">Zulassungsnummer</button>
+                <button id="therapy-button" class="rounded-button">Therapie</button>
+                <button id="fulltext-button" class="rounded-button">Volltextsuche</button>
+            </div>
+            <div id="special-dropdown" class="twitter-typeahead"></div>
+        </aside>
+
+        <div id="flex-main-content">
+            <article id="fachinfo-id"><div id="monographie" name="33741, 52660"><div class="MonTitle" id="section1">Cyklokapron®</div><div class="ownerCompany"><div style="text-align: right">Viatris Pharma GmbH</div></div><div class="paragraph" id="section2"><div class="absTitle">Composition</div><p class="spacing1" style="font-style: italic">Principes actifs</p><p class="spacing1">Acidum tranexamicum.</p><p class="spacing1" style="font-style: italic">Excipients</p><p class="spacing1" style="font-style: italic">Comprimés pelliculés</p><p class="spacing1">Noyau du comprimé: cellulosum microcristallinum, hydroxypropylcellulosum substitutum humile, talcum, magnesii stearas, povidonum K25, silica colloidalis anhydrica.</p><p class="spacing1">Enrobage: copolymerum methacrylatis butylati basicum, titanii dioxidum, talcum, magnesii stearas, macrogolum 8000, vanillinum.</p><p class="spacing1" style="font-style: italic">Comprimés effervescents</p><p class="spacing1">Acidum citricum, natrii hydrogenocarbonas, natrii carbonas, natrii citras dihydricus, arôme d&apos;orange. Contient 194,27 mg de sodium par comprimé effervescent.</p></div><div class="paragraph" id="section3"><div class="absTitle">Forme pharmaceutique et quantité de principe actif par unité</div><p class="spacing1">Comprimé pelliculé à 500 mg.</p><p class="spacing1">Comprimé effervescent à 1000 mg.</p></div><div class="paragraph" id="section4"><div class="absTitle">Indications/Possibilités d’emploi</div><p class="spacing1">Traitement et prévention d&apos;hémorragies consécutives à une fibrinolyse/fibrinogénolyse locale accrue susceptible de se manifester, par exemple, à la suite d&apos;une prostatectomie et de toutes sortes d&apos;interventions chirurgicales au niveau des voies urinaires, en cas d&apos;hématurie, d&apos;hémorragies récidivantes au niveau de l&apos;appareil gastro-intestinal, de colite ulcéreuse, d&apos;hyperménorrhée essentielle ou causée par un dispositif intra-utérin, de conisation cervicale.</p><p class="spacing1">D&apos;épistaxis ainsi qu&apos;après des extractions dentaires chez les patients manifestant une coagulopathie.</p><p class="spacing1">Œdème angioneurotique héréditaire.</p></div><div class="paragraph" id="section5"><div class="absTitle">Posologie/Mode d’emploi</div><p class="spacing1" style="font-style: italic">Posologie usuelle</p><p class="spacing1" style="font-style: italic">Adultes</p><p class="spacing1" style="font-style: italic">Fibrinolyse locale accrue</p><p class="spacing1" style="font-style: italic">Posologie standard</p><p class="spacing1">2-3 fois par jour 2-3 comprimés pelliculés ou 2-4 fois par jour 1 comprimé effervescent.</p><p class="spacing1" style="font-style: italic">Les posologies suivantes sont recommandées pour les indications citées</p><p class="spacing1" style="font-style: italic">Opération au niveau des voies urinaires, prostatectomie</p><p class="spacing1">Le traitement par Cyklokapron n&apos;est pas suffisant pendant les trois premiers jours après l&apos;intervention chirurgicale. Durant cette phase, d&apos;autres mesures doivent être utilisées pour le traitement et la prévention des hémorragies. Après 3 jours, administrer 2-3 fois par jour 2-3 comprimés pelliculés ou 2-4 fois par jour 1 comprimé effervescent jusqu&apos;à disparition de toute hématurie macroscopique.</p><p class="spacing1" style="font-style: italic">Hématurie</p><p class="spacing1">2-3 fois par jour 2-3 comprimés pelliculés ou 2-4 fois par jour 1 comprimé effervescent jusqu&apos;à disparition de toute hématurie macroscopique.</p><p class="spacing1" style="font-style: italic">Hémorragies au niveau de l&apos;appareil gastro-intestinal</p><p class="spacing1">Administration orale de 1,5 g (3 comprimés pelliculés, 1-2 comprimés effervescents) 3 fois par jour pendant 7 jours.</p><p class="spacing1" style="font-style: italic">Hyperménorrhée essentielle ou induite par un dispositif intra-utérin</p><p class="spacing1">Dès le début d&apos;hémorragies profuses, le 1er jour 2 comprimés pelliculés/1 comprimé effervescent 4 fois par jour, les 2ème et 3ème jours 2 comprimés pelliculés/1 comprimé effervescent 3 fois par jour.</p><p class="spacing1" style="font-style: italic">Conisation cervicale</p><p class="spacing1">Après l&apos;intervention: 3 comprimés pelliculés 3 fois par jour ou 1 comprimé effervescent 3-4 fois par jour pendant 12-14 jours.</p><p class="spacing1" style="font-style: italic">Epistaxis</p><p class="spacing1">En cas de saignements prolongés ou récidivants, 2 comprimés pelliculés ou 1 comprimé effervescent 3 fois par jour pendant 7 jours.</p><p class="spacing1" style="font-style: italic">Extraction dentaire chez des patients présentant une coagulopathie</p><p class="spacing1">Après l&apos;intervention: administration orale de 25 mg/kg de poids corporel 3-4 fois par jour pendant 6-8 jours.</p><p class="spacing1" style="font-style: italic">Œdème angioneurotique héréditaire</p><p class="spacing1">2-3 comprimés pelliculés 2-3 fois par jour ou 1 comprimé effervescent 2-4 fois par jour en traitement intermittent (dans le cas de symptômes prodromiques) ou traitement d&apos;entretien.</p><p class="spacing1" style="font-style: italic">Instructions posologiques particulières</p><p class="spacing1" style="font-style: italic">Patients présentant des troubles de la fonction rénale</p><p class="spacing1">En raison du risque d&apos;accumulation, la posologie de l&apos;insuffisant rénal doit être réduite selon le schéma suivant.</p><p class="spacing1" style="font-style: italic">Posologie de Cyklokapron</p><table style="width:100%" class="s16"><colgroup><col style="width:50.0000%;"/><col style="width:50.0000%;"/></colgroup><tbody><tr><td class="s15"><p class="s13"><span class="s10">Créatinine sérique</span></p><div class="s14"/></td><td class="s15"><p class="s13"><span class="s10">Dosage</span></p><div class="s14"/></td></tr><tr><td class="s15"><p class="s13"><span class="s10">120–250 µmol/l</span></p><div class="s14"/></td><td class="s15"><p class="s13"><span class="s10">15 mg/kg toutes les 12 heures</span></p><div class="s14"/></td></tr><tr><td class="s15"><p class="s13"><span class="s10">250–500 µmol/l</span></p><div class="s14"/></td><td class="s15"><p class="s13"><span class="s10">15 mg/kg toutes les 24 heures</span></p><div class="s14"/></td></tr></tbody></table><p class="spacing1">&#32;</p><p class="spacing1" style="font-style: italic">Patients âgés</p><p class="spacing1">Aussi longtemps qu&apos;ils ne présentent pas de signes d&apos;une limitation de la fonction rénale, le traitement des patients âgés ne nécessite aucune mesure de précaution particulière.</p><p class="spacing1" style="font-style: italic">Enfants et adolescents</p><p class="spacing1">Chez l&apos;enfant, la posologie sera déterminée en fonction du poids corporel, à raison de 25 mg/kg par dose.</p><p class="spacing1" style="font-style: italic">Mode d&apos;administration</p><p class="spacing1">Par voie orale.</p><p class="spacing1" style="font-style: italic">Comprimés effervescents: dissoudre un comprimé effervescent dans un demi-verre d&apos;eau.</p></div><div class="paragraph" id="section6"><div class="absTitle">Contre-indications</div><p class="spacing1">·Hypersensibilité au principe actif ou à l&apos;un des excipients selon la composition.</p><p class="spacing1">·Hypercoagulabilité manifeste, des caillots déjà formés étant susceptibles d&apos;être stabilisés de façon indésirable par l&apos;inhibition médicamenteuse de la fibrinolyse.</p><p class="spacing1">·Coagulopathie de consommation (CIVD) (syndrome de défibrination; confirmation du diagnostic par des tests de coagulation, voir également les recommandations décrites sous «Mises en garde et précautions»).</p><p class="spacing1">·Hémorragie sous-arachnoïdienne.</p><p class="spacing1">·Insuffisance rénale sévère (risque d&apos;accumulation).</p><p class="spacing1">·Maladie thromboembolique aiguë.</p><p class="spacing1">·Antécédents connus de thrombose veineuse ou artérielle.</p><p class="spacing1">·Antécédents de convulsions.</p></div><div class="paragraph" id="section7"><div class="absTitle">Mises en garde et précautions</div><p class="spacing1">Dans le traitement d&apos;une coagulopathie de consommation, l&apos;administration de Cyklokapron doit être associée impérativement à celle d&apos;héparine (sous contrôle permanent des paramètres de coagulation) et, si nécessaire, à une substitution de fibrinogène (sous le contrôle d&apos;un médecin expérimenté).</p><p class="spacing1">L&apos;utilisation de Cyklokapron n&apos;est pas recommandée en cas de fibrinolyse accrue liée à une coagulation intravasculaire disséminée (CIVD).</p><p class="spacing1">Lors de règles irrégulières, la cause de ces irrégularités doit être déterminée avant le début du traitement par Cyklokapron.</p><p class="spacing1">Envisager un autre traitement lorsque l&apos;effet s&apos;avère insuffisant en cas d&apos;hyperménorrhée.</p><p class="spacing1">Il n&apos;existe pas d&apos;expérience clinique relative au traitement de l&apos;hyperménorrhée et de la ménorragie chez des patientes de moins de 15 ans.</p><p class="spacing1">Dans le cas d&apos;une hématurie provenant des voies urinaires supérieures (en particulier en cas d&apos;hémophilie) il existe un risque d&apos;obstruction des voies urinaires.</p><p class="spacing1">Si elle n&apos;est pas traitée, l&apos;obstruction des voies urinaires peut avoir des conséquences graves telles que l&apos;insuffisance rénale, l&apos;infection des voies urinaires, l&apos;hydronéphrose et l&apos;anurie. Une surveillance étroite est donc recommandée chez les patients présentant une hématurie ou un risque d&apos;hématurie dans le tractus urinaire supérieur.</p><p class="spacing1">Les patients présentant une tendance aux thromboses ou un risque accru de thrombose doivent faire l&apos;objet d&apos;une surveillance lorsqu&apos;ils sont traités par Cyklokapron. Les patients ayant des antécédents connus d&apos;événement thromboembolique et une prédisposition familiale connue à une affection thromboembolique (patients atteints de thrombophilie) ne doivent utiliser Cyklokapron que sur indication médicale stricte et sous contrôle médical étroit.</p><p class="spacing1">La prudence est de mise lors de l&apos;utilisation de Cyklokapron chez des patientes prenant des contraceptifs oraux, en raison du risque accru de thrombose.</p><p class="spacing1">La fonction hépatique doit faire l&apos;objet de contrôles réguliers lors d&apos;angioœdème héréditaire et d&apos;un emploi à long terme. Procéder à des contrôles spécifiques lors d&apos;indices cliniques faisant supposer une vision altérée des couleurs. Les patients chez qui des troubles visuels apparaissent doivent arrêter le traitement.</p><p class="spacing1" style="font-style: italic">La concentration sanguine est augmentée chez les patients insuffisants rénaux. Une réduction de la dose en fonction de la clairance de la créatinine est donc recommandée (voir Instructions posologiques particulières).</p><p class="spacing1">Des convulsions sont survenues au cours du traitement par l&apos;acide tranexamique. Lors d&apos;opérations cardiaques, la plupart de ces cas ont été observés après une injection intraveineuse (iv) de fortes doses d&apos;acide tranexamique.</p><p class="spacing1" style="font-style: italic">Comprimés effervescents</p><p class="spacing1" style="font-style: italic">Ce médicament contient 194,27 mg de sodium par comprimé effervescent, ce qui équivaut à 10% de l&apos;apport alimentaire quotidien maximal de sodium recommandé par l&apos;OMS. La dose quotidienne maximale du médicament correspond à 40% de l&apos;apport quotidien maximal recommandé par l&apos;OMS. Cyklokapron comprimés effervescents sont considérés comme riches en sodium. Ceci devrait être considéré en particulier chez les patients avec un régime pauvre en sodium.</p></div><div class="paragraph" id="section8"><div class="absTitle">Interactions</div><p class="spacing1">L&apos;administration simultanée d&apos;héparine, de dérivés coumariniques et salicylés ou d&apos;inhibiteurs de l&apos;agrégation plaquettaire peut diminuer l&apos;activité de Cyklokapron tout comme celle d&apos;autres antifibrinolytiques.</p></div><div class="paragraph" id="section9"><div class="absTitle">Grossesse, allaitement</div><p class="spacing1" style="font-style: italic">Grossesse</p><p class="spacing1">Les études de reproduction chez l&apos;animal n&apos;ont montré aucun risque pour le fœtus mais il n&apos;existe aucune étude contrôlée chez la femme enceinte. La prudence est de mise en cas d&apos;emploi pendant la grossesse.</p><p class="spacing1" style="font-style: italic">Allaitement</p><p class="spacing1">L&apos;acide tranexamique passe dans le lait maternel mais n&apos;y atteint que 1% environ de la concentration sérique de la mère. Il est improbable qu&apos;une posologie thérapeutique provoque des effets indésirables chez l&apos;enfant.</p></div><div class="paragraph" id="section10"><div class="absTitle">Effet sur l’aptitude à la conduite et l’utilisation de machines</div><p class="spacing1">Cyklokapron a une légère influence sur l&apos;aptitude à la conduite ou l&apos;utilisation de machines. Après la prise de Cyklokapron, des troubles de la vision peuvent survenir.</p></div><div class="paragraph" id="section11"><div class="absTitle">Effets indésirables</div><p class="spacing1">Les effets indésirables les plus fréquemment rapportés après la prise orale sont des troubles gastro-intestinaux dépendants de la dose tels que nausée, vomissements et diarrhée (plus de 5% des cas), qui disparaissent toutefois après réduction de la dose.</p><p class="spacing1">Fréquence: très fréquents (≥1/10), fréquents (≥1/100 à &lt;1/10), occasionnels (≥1/1000 à &lt;1/100), rares (≥1/10&apos;000 à &lt;1/1000), très rares (&lt;1/10&apos;000), fréquence inconnue (la fréquence ne peut pas être estimée sur la base des données disponibles).</p><p class="spacing1" style="font-style: italic">Affections hématologiques et du système lymphatique</p><p class="spacing1" style="font-style: italic">Très rares: thrombocytopénie, développement d&apos;un temps de saignement pathologique.</p><p class="spacing1" style="font-style: italic">Affections du système immunitaire</p><p class="spacing1" style="font-style: italic">Très rares: réactions d&apos;hypersensibilité, y compris anaphylaxie.</p><p class="spacing1" style="font-style: italic">Affections du système nerveux</p><p class="spacing1" style="font-style: italic">Fréquents: céphalées, vertiges.</p><p class="spacing1" style="font-style: italic">Fréquence inconnue: convulsions, notamment en cas d&apos;utilisation erronée (voir «Contre-indications» et «Mises en garde et précautions»).</p><p class="spacing1" style="font-style: italic">Affections oculaires</p><p class="spacing1" style="font-style: italic">Rares: troubles visuels y compris troubles de la vision des couleurs.</p><p class="spacing1" style="font-style: italic">Affections vasculaires</p><p class="spacing1" style="font-style: italic">Rares: complications thrombotiques/thromboemboliques telles qu&apos;embolie pulmonaire ou accident vasculaire cérébral.</p><p class="spacing1" style="font-style: italic">Affections gastro-intestinales</p><p class="spacing1" style="font-style: italic">Fréquents: nausées, vomissements, diarrhée, douleurs abdominales.</p><p class="spacing1" style="font-style: italic">Affections de la peau et du tissu sous-cutané</p><p class="spacing1" style="font-style: italic">Occasionnels: réaction allergique cutanée.</p><p class="spacing1" style="font-style: italic">Fréquence inconnue: exanthème médicamenteux fixe.</p><p class="spacing1" style="font-style: italic">Affections rénales et des voies urinaires</p><p class="spacing1" style="font-style: italic">Fréquence inconnue: nécrose aiguë du cortex rénal.</p><p class="spacing1">L&apos;annonce d&apos;effets secondaires présumés après l&apos;autorisation est d&apos;une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d&apos;effet secondaire nouveau ou grave via le portail d&apos;annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.</p></div><div class="paragraph" id="section12"><div class="absTitle">Surdosage</div><p class="spacing1">Les signes et les symptômes d&apos;un surdosage peuvent être les suivants: vertiges, céphalées, hypotension, nausée, vomissements, diarrhée, symptômes orthostatiques, baisse de la pression artérielle et convulsions. Les convulsions sont plutôt survenues en cas de prise fréquente et de doses élevées d&apos;acide tranexamique. On ne dispose d&apos;aucune expérience d&apos;un surdosage, hormis chez un patient de 17 ans chez qui l&apos;administration orale de 37 g a provoqué une légère intoxication après un lavage gastrique.</p><p class="spacing1">En tant que traitement, il est recommandé, si nécessaire, de provoquer le vomissement, de procéder à un lavage gastrique, d&apos;administrer du charbon activé ainsi qu&apos;un traitement symptomatique. Veiller à une diurèse suffisante; éventuellement traitement anticoagulant.</p><p class="spacing1">Chez les patients prédisposés présentant un risque de thrombose, un traitement anticoagulant doit être envisagé.</p></div><div class="paragraph" id="section13"><div class="absTitle">Propriétés/Effets</div><p class="spacing1" style="font-style: italic">Code ATC</p><p class="spacing1">B02AA02</p><p class="spacing1" style="font-style: italic">Mécanisme d&apos;action</p><p class="spacing1">L&apos;inhibition de la transformation de plasminogène en plasmine empêche la scission de la fibrine.</p><p class="spacing1" style="font-style: italic">Pharmacodynamique</p><p class="spacing1">L&apos;acide tranexamique inhibe l&apos;activation du plasminogène, c.-à-d. la transformation du plasminogène en plasmine. Il empêche ainsi la dissolution de la fibrine et réduit les pertes sanguines dues à une activité fibrinolytique accrue au niveau général ou local.</p><p class="spacing1">L&apos;activité antifibrinolytique de l&apos;acide tranexamique est environ 10 fois plus prononcée que celle de l&apos;acide aminocapronique.</p><p class="spacing1" style="font-style: italic">Efficacité clinique</p><p class="spacing1">Aucune donnée disponible.</p></div><div class="paragraph" id="section14"><div class="absTitle">Pharmacocinétique</div><p class="spacing1" style="font-style: italic">Absorption</p><p class="spacing1">Après administration orale, l&apos;acide tranexamique est rapidement résorbé au niveau du tube gastro-intestinal. La biodisponibilité s&apos;élève à env. 40%. L&apos;absorption n&apos;est pas influencée par l&apos;absorption simultanée d&apos;aliments. Des taux sériques maximaux sont atteints 2 à 3 heures après la prise du médicament.</p><p class="spacing1" style="font-style: italic">Distribution</p><p class="spacing1">La fixation de l&apos;acide tranexamique aux protéines sériques n&apos;est que d&apos;environ 3% et semble être due uniquement à sa liaison au plasminogène.</p><p class="spacing1">Des doses orales de 20 mg/kg produisent un taux sérique de 10-20 µg/ml. Après l&apos;administration répétée de 10-20 mg/kg, des taux d&apos;acide tranexamique manifestant une activité antifibrinolytique sont maintenus 7-8 heures dans le sérum, jusqu&apos;à 17 heures dans les tissus et jusqu&apos;à 48 heures dans les urines.</p><p class="spacing1">L&apos;acide tranexamique est distribué dans l&apos;espace extracellulaire et traverse la barrière placentaire. Il passe également dans le lait maternel (1% de la concentration sérique), dans le liquide séminal et la synovie et traverse la barrière hémato-encéphalique.</p><p class="spacing1" style="font-style: italic">Métabolisme</p><p class="spacing1">Aucune donnée disponible.</p><p class="spacing1" style="font-style: italic">Élimination</p><p class="spacing1">L&apos;acide tranexamique est excrété par voie rénale sous forme pratiquement inchangée. La demi-vie biologique s&apos;élève à 2 heures.</p><p class="spacing1" style="font-style: italic">Cinétique pour certains groupes de patients</p><p class="spacing1" style="font-style: italic">Troubles de la fonction rénale</p><p class="spacing1">Une accumulation du principe actif est possible lors d&apos;une limitation de la fonction rénale.</p></div><div class="paragraph" id="section15"><div class="absTitle">Données précliniques</div><p class="spacing1">Les données précliniques n&apos;ont révélé aucun autre risque spécial pour l&apos;être humain que ceux cités dans les autres chapitres de cette information pour professionnels. Ces résultats se basent sur des études conventionnelles menées dans le cadre de la sécurité pharmacologique, sur des études sur la toxicité chronique, la toxicité de reproduction, la génotoxicité et la cancérogénité.</p><p class="spacing1" style="font-style: italic">Toxicité à long terme (ou toxicité en cas d&apos;administration répétée)</p><p class="spacing1">Lors d&apos;études à long terme chez le chien et le chat, les anomalies suivantes ont été observées au niveau de la rétine: réflexion accrue, atrophie du segment de photorécepteur, atrophie périphérique de la rétine ainsi qu&apos;atrophie des bâtonnets et des cônes de la rétine. Ces changements oculaires étaient dépendants de la dose et sont apparus aux dosages élevés.</p></div><div class="paragraph" id="section16"><div class="absTitle">Remarques particulières</div><p class="spacing1" style="font-style: italic">Stabilité</p><p class="spacing1">Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l&apos;emballage.</p><p class="spacing1" style="font-style: italic">Remarques particulières concernant le stockage</p><p class="spacing1">Conserver à température ambiante (15-25 °C) et hors de portée des enfants.</p></div><div class="paragraph" id="section17"><div class="absTitle">Numéro d’autorisation</div><p class="spacing1">33741, 52660 (Swissmedic).</p></div><div class="paragraph" id="section18"><div class="absTitle">Présentation</div><p class="spacing1">CYKLOKAPRON, filmtabletten 30 Tablette(n), EFP 12.02, PP 29.35, ev.ep.e.c. [B, SL, SB 10%, O]</p><p class="barcode"><svg height="50" width="200">
+<rect height="100%" width="100%" fill="white"/>
+<g style="stroke:black; stroke-width:2">
+<line x1="10" y1="0" x2="10" y2="45"/>
+<line x1="14" y1="0" x2="14" y2="45"/>
+<line x1="18" y1="0" x2="18" y2="30"/>
+<line x1="22" y1="0" x2="22" y2="30"/>
+<line x1="24" y1="0" x2="24" y2="30"/>
+<line x1="26" y1="0" x2="26" y2="30"/>
+<line x1="28" y1="0" x2="28" y2="30"/>
+<line x1="36" y1="0" x2="36" y2="30"/>
+<line x1="42" y1="0" x2="42" y2="30"/>
+<line x1="50" y1="0" x2="50" y2="30"/>
+<line x1="52" y1="0" x2="52" y2="30"/>
+<line x1="56" y1="0" x2="56" y2="30"/>
+<line x1="60" y1="0" x2="60" y2="30"/>
+<line x1="70" y1="0" x2="70" y2="30"/>
+<line x1="74" y1="0" x2="74" y2="30"/>
+<line x1="76" y1="0" x2="76" y2="30"/>
+<line x1="78" y1="0" x2="78" y2="30"/>
+<line x1="80" y1="0" x2="80" y2="30"/>
+<line x1="84" y1="0" x2="84" y2="30"/>
+<line x1="90" y1="0" x2="90" y2="30"/>
+<line x1="98" y1="0" x2="98" y2="30"/>
+<line x1="102" y1="0" x2="102" y2="45"/>
+<line x1="106" y1="0" x2="106" y2="45"/>
+<line x1="110" y1="0" x2="110" y2="30"/>
+<line x1="114" y1="0" x2="114" y2="30"/>
+<line x1="116" y1="0" x2="116" y2="30"/>
+<line x1="118" y1="0" x2="118" y2="30"/>
+<line x1="124" y1="0" x2="124" y2="30"/>
+<line x1="126" y1="0" x2="126" y2="30"/>
+<line x1="132" y1="0" x2="132" y2="30"/>
+<line x1="134" y1="0" x2="134" y2="30"/>
+<line x1="138" y1="0" x2="138" y2="30"/>
+<line x1="140" y1="0" x2="140" y2="30"/>
+<line x1="142" y1="0" x2="142" y2="30"/>
+<line x1="148" y1="0" x2="148" y2="30"/>
+<line x1="152" y1="0" x2="152" y2="30"/>
+<line x1="156" y1="0" x2="156" y2="30"/>
+<line x1="158" y1="0" x2="158" y2="30"/>
+<line x1="160" y1="0" x2="160" y2="30"/>
+<line x1="166" y1="0" x2="166" y2="30"/>
+<line x1="168" y1="0" x2="168" y2="30"/>
+<line x1="170" y1="0" x2="170" y2="30"/>
+<line x1="174" y1="0" x2="174" y2="30"/>
+<line x1="180" y1="0" x2="180" y2="30"/>
+<line x1="184" y1="0" x2="184" y2="30"/>
+<line x1="186" y1="0" x2="186" y2="30"/>
+<line x1="188" y1="0" x2="188" y2="30"/>
+<line x1="194" y1="0" x2="194" y2="45"/>
+<line x1="198" y1="0" x2="198" y2="45"/>
+</g>
+<text x="0" y="44">7</text>
+<text x="21" y="44" letter-spacing="5">680337</text>
+<text x="113" y="44" letter-spacing="5">410494</text>
+</svg></p><p class="spacing1">CYKLOKAPRON, brausetabletten 1 x 16 Tablette(n), ev.ep.e.c. [B]</p><p class="barcode"><svg height="50" width="200">
+<rect height="100%" width="100%" fill="white"/>
+<g style="stroke:black; stroke-width:2">
+<line x1="10" y1="0" x2="10" y2="45"/>
+<line x1="14" y1="0" x2="14" y2="45"/>
+<line x1="18" y1="0" x2="18" y2="30"/>
+<line x1="22" y1="0" x2="22" y2="30"/>
+<line x1="24" y1="0" x2="24" y2="30"/>
+<line x1="26" y1="0" x2="26" y2="30"/>
+<line x1="28" y1="0" x2="28" y2="30"/>
+<line x1="36" y1="0" x2="36" y2="30"/>
+<line x1="42" y1="0" x2="42" y2="30"/>
+<line x1="50" y1="0" x2="50" y2="30"/>
+<line x1="52" y1="0" x2="52" y2="30"/>
+<line x1="56" y1="0" x2="56" y2="30"/>
+<line x1="60" y1="0" x2="60" y2="30"/>
+<line x1="62" y1="0" x2="62" y2="30"/>
+<line x1="64" y1="0" x2="64" y2="30"/>
+<line x1="70" y1="0" x2="70" y2="30"/>
+<line x1="76" y1="0" x2="76" y2="30"/>
+<line x1="82" y1="0" x2="82" y2="30"/>
+<line x1="84" y1="0" x2="84" y2="30"/>
+<line x1="94" y1="0" x2="94" y2="30"/>
+<line x1="98" y1="0" x2="98" y2="30"/>
+<line x1="102" y1="0" x2="102" y2="45"/>
+<line x1="106" y1="0" x2="106" y2="45"/>
+<line x1="110" y1="0" x2="110" y2="30"/>
+<line x1="114" y1="0" x2="114" y2="30"/>
+<line x1="124" y1="0" x2="124" y2="30"/>
+<line x1="126" y1="0" x2="126" y2="30"/>
+<line x1="128" y1="0" x2="128" y2="30"/>
+<line x1="134" y1="0" x2="134" y2="30"/>
+<line x1="138" y1="0" x2="138" y2="30"/>
+<line x1="140" y1="0" x2="140" y2="30"/>
+<line x1="142" y1="0" x2="142" y2="30"/>
+<line x1="148" y1="0" x2="148" y2="30"/>
+<line x1="152" y1="0" x2="152" y2="30"/>
+<line x1="154" y1="0" x2="154" y2="30"/>
+<line x1="160" y1="0" x2="160" y2="30"/>
+<line x1="162" y1="0" x2="162" y2="30"/>
+<line x1="166" y1="0" x2="166" y2="30"/>
+<line x1="174" y1="0" x2="174" y2="30"/>
+<line x1="180" y1="0" x2="180" y2="30"/>
+<line x1="182" y1="0" x2="182" y2="30"/>
+<line x1="184" y1="0" x2="184" y2="30"/>
+<line x1="190" y1="0" x2="190" y2="30"/>
+<line x1="194" y1="0" x2="194" y2="45"/>
+<line x1="198" y1="0" x2="198" y2="45"/>
+</g>
+<text x="0" y="44">7</text>
+<text x="21" y="44" letter-spacing="5">680526</text>
+<text x="113" y="44" letter-spacing="5">600170</text>
+</svg></p></div><div class="paragraph" id="section19"><div class="absTitle">Titulaire de l’autorisation</div><p class="spacing1">Viatris Pharma GmbH, 6312 Steinhausen.</p></div><div class="paragraph" id="section20"><div class="absTitle">Mise à jour de l’information</div><p class="spacing1">Juin 2026.</p><p class="spacing1">[Version 104 F]</p><div class="s14"/></div><div class="paragraph" id="Section9050">
+<div class="absTitle">Swisspeddose</div>
+<p class="spacing1">Acide tranéxamique (IV) intraveineuse (perfusion)<br/>
+ATC-Code: B02AA02<br/>
+Indication: Prévention de l&apos;hémorragie excessifs lors d&apos;une intervention chirurgicale majeure ou d&apos;un traumatisme<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">1 mois - 1 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">20 - 30 mg/kg/dose</p><div class="s12"/></td><td class="s13"><p class="s11"/><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11"/><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">10 - 20 mg/kg/dose</p><div class="s12"/></td><td class="s13"><p class="s11"/><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11"/><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 mois - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">5 - 10 mg/kg/h</p><div class="s12"/></td><td class="s13"><p class="s11"/><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Perfusion continue.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 mois - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">10 - 15 mg/kg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1 - 3</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Schéma alternatif.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Acide tranéxamique (IV) intraveineuse (perfusion)<br/>
+ATC-Code: B02AA02<br/>
+Indication: Hémorragie mineure (prophylaxie et traitement)<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>ROA</th><th>Dose quotidienne maximale</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">1 mois - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">10 - 15 mg/kg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1 - 3</p><div class="s12"/></td><td class="s13"><p class="s11">IVINJ</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Acide tranéxamique (PO) per os<br/>
+ATC-Code: B02AA02<br/>
+Indication: Hémorragie mineure (prophylaxie et traitement)<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="5" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">1 mois - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">15 - 25 mg/kg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1 - 4</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td>
+</tr></tbody></table>&#32;  </div><div class="paragraph" id="Section9053">
+<div class="absTitle">ASPP: F. enceintes</div>
+<p class="spacing1">ATC-Code: B02AA02<br/>
+Substance active: <br/>
+</p>
+<table class="s14"><colgroup><col span="2" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Type d’application</th><th>Posologie péripartale</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11"/><div class="s12"/></td><td class="s13"><p class="s11">2000mg</p><div class="s12"/></td>
+</tr></tbody></table>&#32;  </div><div class="paragraph" id="Section9054">
+<div class="absTitle">ASPP: F. allaitantes</div>
+<p class="spacing1">ATC-Code: B02AA02<br/>
+Substance active: <br/>
+</p>
+<table class="s14"><colgroup><col span="2" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Type d’application</th><th>DJM</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11"/><div class="s12"/></td><td class="s13"><p class="s11">2000mg</p><div class="s12"/></td>
+</tr></tbody></table>&#32;  </div><div class="paragraph" id="Section9051"/><p class="footer">Auto-generated by <a href="https://github.com/zdavatz/cpp2sqlite">cpp2sqlite</a> on Thu Oct 15 05:06:44 2026
+</p></div></article>
+        </div>
+
+        <aside id="flex-aside-two" class="nav-down">
+            <div id="section-ids"><ul style="list-style-type:none;
+"><li><a onclick="move_to_anchor('section1')">Cyklokapron®</a></li><li><a onclick="move_to_anchor('section2')">Composition</a></li><li><a onclick="move_to_anchor('section3')">Forme pharmaceutique et quantité de principe actif par unité</a></li><li><a onclick="move_to_anchor('section4')">Indications</a></li><li><a onclick="move_to_anchor('section5')">Posologie</a></li><li><a onclick="move_to_anchor('section6')">Contre-indications</a></li><li><a onclick="move_to_anchor('section7')">Précautions</a></li><li><a onclick="move_to_anchor('section8')">Interactions</a></li><li><a onclick="move_to_anchor('section9')">Grossesse, allaitement</a></li><li><a onclick="move_to_anchor('section10')">Conduite</a></li><li><a onclick="move_to_anchor('section11')">Effets indésirables</a></li><li><a onclick="move_to_anchor('section12')">Surdosage</a></li><li><a onclick="move_to_anchor('section13')">Propriétés/Effets</a></li><li><a onclick="move_to_anchor('section14')">Cinétique</a></li><li><a onclick="move_to_anchor('section15')">Préclinique</a></li><li><a onclick="move_to_anchor('section16')">Remarques</a></li><li><a onclick="move_to_anchor('section17')">Numéro d’autorisation</a></li><li><a onclick="move_to_anchor('section18')">Présentation</a></li><li><a onclick="move_to_anchor('section19')">Titulaire</a></li><li><a onclick="move_to_anchor('section20')">Mise à jour</a></li><li><a onclick="move_to_anchor('Section9050')">Swisspeddose</a></li><li><a onclick="move_to_anchor('Section9053')">ASPP: F. enceintes</a></li><li><a onclick="move_to_anchor('Section9054')">ASPP: F. allaitantes</a></li></ul></div>
+            <div id="download-links">
+                <p><a href='https://www.microsoft.com/de-de/store/p/amiko-desitin/9wzdncrdffxc' target="_blank" class="links">Windows<img border="0" alt="Windows" src="/assets/images/windows_logo.svg" height="48"></a></p>
+                <p><a href='https://itunes.apple.com/ch/app/amiko-desitin/id708142753?mt=12' target="_blank" class="links">macOS<img border="0" alt="macOS" src="/assets/images/apple_icon_svg.png" height="48"></a></p>
+                <p><a href='https://itunes.apple.com/ch/app/amiko-desitin/id687642725?mt=8' target="_blank" class="links">iOS<img border="0" alt="iOS" src="/assets/images/apple_icon_svg.png" height="48"></a></p>
+                <p><a href='https://play.google.com/store/apps/details?id=com.ywesee.amiko.de&amp;hl=de' target="_blank" class="links">Android<img border="0" alt="Android" src="/assets/images/android_logo.svg" height="48"></a></p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <div>AmiKo Web</div>
+        <div><a href="https://github.com/zdavatz/amiko-web">Copyright © 2026 ywesee GmbH</a></div>
+    </footer>
+
+    <!-- Button related JS -->
+    <script>
+        function disableButtons() {
+            $('#article-button').removeClass('active');
+            $('#owner-button').removeClass('active');
+            $('#substance-button').removeClass('active');
+            $('#regnr-button').removeClass('active');
+            $('#therapy-button').removeClass('active');
+            $('#fulltext-button').removeClass('active');
+        }
+
+        function getURLParameter(theParameter) {
+            var params = window.location.search.substr(1).split('&');
+            for (var i = 0; i < params.length; i++) {
+                var p=params[i].split('=');
+                if (p[0] == theParameter) {
+                    return decodeURIComponent(p[1]);
+                }
+            }
+            if (window.location.href.contains('fulltext'))
+                return 'fulltext';
+            return false;
+        }
+
+        $('#article-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+            $(this).addClass('active');
+        });
+        $('#owner-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Inhaberin...');
+            $(this).addClass('active');
+        });
+        $('#substance-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Wirkstoff/ATC...');
+            $(this).addClass('active');
+        });
+        $('#regnr-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Zulassungsnummer...');
+            $(this).addClass('active');
+        });
+        $('#therapy-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Therapie...');
+            $(this).addClass('active');
+        });
+        $('#fulltext-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Volltext...');
+            $(this).addClass('active');
+        });
+        $('#price-comparison-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Präparat Preisvergleich...');
+            $(this).addClass('active');
+        });
+
+        var query_var = getURLParameter('type');
+        if (query_var) {
+            if (query_var == 'title') {
+                localStorage.setItem('search-type', 1);
+            } else if (query_var == 'author') {
+                localStorage.setItem('search-type', 2);
+            } else if (query_var == 'atc') {
+                localStorage.setItem('search-type', 3);
+            } else if (query_var == 'regnr') {
+                localStorage.setItem('search-type', 4);
+            } else if (query_var == 'therapy') {
+                localStorage.setItem('search-type', 5);
+            } else if (query_var == 'fulltext') {
+                localStorage.setItem('search-type', 6);
+            } else if (query_var === 'pricecomparison') {
+                localStorage.setItem('search-type', 9);
+            } else {
+                localStorage.setItem('search-type', 1);
+            }
+        }
+
+        if (localStorage.getItem('search-type')==1) {
+            $('#article-button').addClass('active');
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+        } else if (localStorage.getItem('search-type')==2) {
+            $('#owner-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Inhaberin...');
+        } else if (localStorage.getItem('search-type')==3) {
+            $('#substance-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Wirkstoff/ATC...');
+        } else if (localStorage.getItem('search-type')==4) {
+            $('#regnr-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Zulassungsnummer...');
+        } else if (localStorage.getItem('search-type')==5) {
+            $('#therapy-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Therapie...');
+        } else if (localStorage.getItem('search-type')==6) {
+            $('#fulltext-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Volltext...');
+        } else if (localStorage.getItem('search-type')==9) {
+            $('#price-comparison-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Präparat Preisvergleich...');
+        } else {
+            $('#article-button').addClass('active');
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+        }
+
+        
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+            (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-47115045-2', 'auto');
+            ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    </body>
+</html>
+
