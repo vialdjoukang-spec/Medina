@@ -24,9 +24,9 @@ Mission approuvée dans `main` (`.medina/missions/`), puis `python3 tools/ai_ses
 | E12 | corrections de309165 ; revue mise à jour 6e287b46 (close) ; droits dans `droits/` | reçu bloqué par le défaut de l'outil (§ 4 bis) ; générateur `integration/generer_recu.py` |
 | D50 | droits conservés (1b236155) ; note `integration/phase3_blocage.json` | reçu bloqué par le défaut de l'outil (§ 4 bis) ; générateur à refaire (l'ancien est dans le scratchpad perdu) |
 | C77 | corrections 64257cb8 ; revue mise à jour 6ef663d6 (close) | régénérer le reçu avec les nouvelles empreintes de revue/ ; reçu bloqué (§ 4 bis) |
-| I61 | revue close e0365fcc | W phase 3 en cours : ajout « ou taux > 100 ng/ml » dans _c et _pop1, puis mise à jour de revue/ par P, puis reçu (aucune figure nouvelle : pas concerné par § 4 bis) |
+| I61 | revue mise à jour 63beb7ff (close) ; W régénère le reçu (aucune figure nouvelle, non concerné par § 4 bis) | si le reçu est valide → PR, fusion, libération |
 | G45 | revue close 97ba87d2 (sans bloquant) ; W applique 5 mineurs (ticagrélor hors indication FI Brilique, aspirine + dipyridamole sans FI, clopidogrel faible métaboliseur, OAC annexe 1, dates des sources) | ensuite P met à jour revue/, puis reçu (bloqué par § 4 bis : figures attribuées) |
-| N18 | revue close 5bf53a9c (sans bloquant ; aucune figure Alpha nouvelle) | W phase 3 lancée : reçu sans modifier la leçon ; si valide → PR, fusion, libération. Retouche différée : « 5 mg oral » → « par voie orale » (pop1, fenêtre Eliquis) |
+| **N18** | reçu Alpha `completed` VALIDE (7f848123) ; **PR #148 ouverte** | vérifier la CI, fusionner, libérer `ALPHA77-CLAUDE-N18-INTEGRATE` ; retouche « 5 mg oral » différée |
 
 Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche ; ne pas supposer que les agents de l'ancienne session ont fini.
 
