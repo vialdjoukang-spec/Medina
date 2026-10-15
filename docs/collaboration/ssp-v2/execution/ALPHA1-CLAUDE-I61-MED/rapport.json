@@ -1,0 +1,757 @@
+{
+ "mission": "ALPHA1-CLAUDE-I61-MED",
+ "code": "I61",
+ "type_audit": "medical",
+ "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+ "base_sha_manifeste_sources": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+ "generation": 1,
+ "branche": "claude/alpha1/i61-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-I61-MED-g1",
+ "conversation": "alpha1-claude-i61-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-15T18:05:00Z",
+ "date_fin": "2026-10-15T18:45:00Z",
+ "lecture": {
+  "fichiers": [
+   {
+    "fichier": "chapters/I61/I61_a.html",
+    "sha256_manifeste": "821f4d4b9ebc96b28613638b471f9b2d425610ab4638a4d06efccc3af4331c83",
+    "sha256_recalcule": "821f4d4b9ebc96b28613638b471f9b2d425610ab4638a4d06efccc3af4331c83",
+    "conforme": true
+   },
+   {
+    "fichier": "chapters/I61/I61_b.html",
+    "sha256_manifeste": "e775a18fa119a2e43f92189094586c1730ec1f286da9a133267dada6ac290f8c",
+    "sha256_recalcule": "e775a18fa119a2e43f92189094586c1730ec1f286da9a133267dada6ac290f8c",
+    "conforme": true
+   },
+   {
+    "fichier": "chapters/I61/I61_c.html",
+    "sha256_manifeste": "e9d1f44823a91de585ec4f607954a310c2b3870e54dfa0e34c8167e7bbf0db4e",
+    "sha256_recalcule": "e9d1f44823a91de585ec4f607954a310c2b3870e54dfa0e34c8167e7bbf0db4e",
+    "conforme": true
+   },
+   {
+    "fichier": "chapters/I61/I61_d.html",
+    "sha256_manifeste": "973cce34a40b6ef6c62b7e295e9b4e40e0cafb48e8b5b2d1526c47e1b2cc3b19",
+    "sha256_recalcule": "973cce34a40b6ef6c62b7e295e9b4e40e0cafb48e8b5b2d1526c47e1b2cc3b19",
+    "conforme": true
+   },
+   {
+    "fichier": "chapters/I61/I61_pop1.html",
+    "sha256_manifeste": "4523ffca24a40006b90e3932814cb0a42cbfd163166587ed59d6a4858e83792f",
+    "sha256_recalcule": "4523ffca24a40006b90e3932814cb0a42cbfd163166587ed59d6a4858e83792f",
+    "conforme": true
+   },
+   {
+    "fichier": "chapters/I61/I61_pop2.html",
+    "sha256_manifeste": "6e08f9dd51216feb7c277c0b83178ef09244f5418cc7aecc8de08ff53a27442f",
+    "sha256_recalcule": "6e08f9dd51216feb7c277c0b83178ef09244f5418cc7aecc8de08ff53a27442f",
+    "conforme": true
+   },
+   {
+    "fichier": "glossary/i61.py",
+    "sha256_manifeste": "66c11a9eb760c5e336493f080ef5ec35631e70ed74426062cade9c6cd8401d19",
+    "sha256_recalcule": "66c11a9eb760c5e336493f080ef5ec35631e70ed74426062cade9c6cd8401d19",
+    "conforme": true
+   }
+  ],
+  "empreintes_conformes": true,
+  "note": "Les 7 fichiers lus en entier (texte, tableaux, figures, quiz, fenêtres, Pareto, div.alert, div.key, glossaire). Répartition réelle : _a = Pathologie § 1–6 ; _b = Pathologie § 7–12 et références ; _c = Examens complémentaires puis Sciences fondamentales ; _d = Pharmacologie."
+ },
+ "premiere_source_lue": {
+  "source_id": "S1",
+  "url": "https://neurologie.insel.ch/fileadmin/Neurologie/Dokumente/ANZ/Bern_Stroke_Guidelines_Englisch.pdf",
+  "section": "PDF p. 23 (doc. p. 44–45) : « Non-traumatic intracerebral hemorrhage (ICH) », schéma A-B-C-D et schéma de réversion"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 5,
+  "MINEUR": 10,
+  "ENRICHISSEMENT": 5
+ },
+ "constats": [
+  {
+   "id": "MED-01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "qui est inefficace dans ces saignements",
+   "constat": "Le cours présente comme un fait établi que le concentré de complexe prothrombinique (PCC) est « inefficace » dans l’hémorragie sous anticoagulant oral direct, et conclut qu’aucun PCC ne se donne hors critères de l’andexanet. Il s’agit d’une position institutionnelle bernoise (« no efficacy in DOAC bleeding »). La recommandation européenne 2025, que le cours cite par ailleurs, retient au contraire que le PCC « may be considered » dans l’hémorragie sous inhibiteur du facteur Xa, après pesée du risque thromboembolique. La divergence suisse–européenne n’est pas signalée sur un point décisionnel de l’urgence.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "doc. p. 44–45, schéma de réversion, lignes Xa-Inhibitors et IIa-Inhibitor",
+     "citation_courte": "If the criteria are not met, do not administer Andexanet and also no PCC (no efficacy in DOAC bleeding)"
+    },
+    {
+     "source_id": "S2",
+     "section": "tableau 2, PICO 3.3.2.1, consensus d’experts 15/15",
+     "citation_courte": "PCC may be considered for FXaI-ICH, but clinicians should carefully consider the balance"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_b_1.html : attribuer le jugement au protocole bernois et ajouter un encadré div.trap « Divergence suisse–européenne ».",
+   "justification": "Mécanisme : le PCC apporte des facteurs II, VII, IX et X mais ne neutralise pas directement l’inhibiteur du facteur Xa ; son effet sur la croissance de l’hématome n’est pas prouvé et il expose à la thrombose. Conséquence : deux textes acceptés en Suisse divergent ; l’affirmation d’inefficacité n’est démontrée par aucun essai. Décision : enseigner la conduite bernoise comme pratique d’un centre, signaler l’option européenne et la décision avec l’hématologie hors critères."
+  },
+  {
+   "id": "MED-02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Si un critère manque, ni andexanet ni concentré de complexe prothrombinique ne sont administrés.",
+   "constat": "Le feedback du quiz transforme la règle bernoise en règle absolue, sans attribution ni mention de la position européenne. Le même message figure dans l’encadré « À retenir » de l’îlot 3 (« Un antidote exige le respect de critères : s’ils ne sont pas remplis, ni antidote ni concentré de complexe prothrombinique. »).",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "doc. p. 44–45",
+     "citation_courte": "If the criteria are not met, do not administer Andexanet and also no PCC"
+    },
+    {
+     "source_id": "S2",
+     "section": "PICO 3.3.2.1, 15/15",
+     "citation_courte": "PCC may be considered for FXaI-ICH"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_c_1.html ; dans l’encadré « À retenir » de l’îlot 3, écrire : « Un antidote exige le respect de critères. Hors critères, le protocole bernois s’abstient de tout antidote et de tout concentré ; la recommandation européenne admet le concentré après pesée du risque thrombotique. »",
+   "justification": "Mécanisme et conséquence identiques à MED-01 ; un quiz fixe la règle en mémoire de l’étudiant, d’où la nécessité d’une formulation attribuée. Décision : nuancer la phrase et l’encadré."
+  },
+  {
+   "id": "MED-03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "s’ils ne sont pas remplis, ni antidote ni concentré de complexe prothrombinique",
+   "constat": "La fenêtre Pareto « Scores et synthèse » reprend la règle sans attribution ; elle doit suivre la correction de MED-02 pour rester cohérente.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "doc. p. 44–45",
+     "citation_courte": "do not administer Andexanet and also no PCC"
+    },
+    {
+     "source_id": "S2",
+     "section": "PICO 3.3.2.1",
+     "citation_courte": "PCC may be considered for FXaI-ICH"
+    }
+   ],
+   "proposition": "Remplacer par : « hors critères, Berne s’abstient de tout antidote et de tout concentré ; l’ESO admet le concentré après pesée du risque thrombotique ».",
+   "justification": "Cohérence des surfaces : Pareto, encadré et quiz doivent porter le même message attribué."
+  },
+  {
+   "id": "MED-04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "l’écart est signalé et la décision relève du protocole local",
+   "constat": "Pour le rivaroxaban de plus de 10 mg pris moins de 8 heures auparavant, l’information professionnelle suisse prescrit la dose élevée d’andexanet. Le cours renvoie la décision au protocole local (faible dose à Berne) sans rappeler que la FI est la référence légale ni que la faible dose n’a jamais été évaluée avec le rivaroxaban. La règle MEDINA « médicament = FI suisse » s’applique à cette dose.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Posologie, tableau 2",
+     "citation_courte": "Rivaroxaban > 10 mg : < 8 heures → Dose élevée"
+    },
+    {
+     "source_id": "S4",
+     "section": "Pharmacodynamique, études chez le sujet sain",
+     "citation_courte": "aucune évaluation n’a été effectuée chez les sujets traités par rivaroxaban et andexanet alfa à faible dose"
+    },
+    {
+     "source_id": "S1",
+     "section": "doc. p. 44",
+     "citation_courte": "use rather the low dose: 400 mg bolus"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_pop1_1.html.",
+   "justification": "Mécanisme : la faible dose neutralise une quantité d’inhibiteur proportionnelle à la dose reçue ; après une forte dose récente de rivaroxaban, la neutralisation peut être incomplète. Conséquence : risque de réversion insuffisante hors des données de la FI. Décision : enseigner la FI comme norme et la préférence bernoise comme écart institutionnel documenté."
+  },
+  {
+   "id": "MED-05",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "faible dose préférée par Berne",
+   "constat": "Dans le tableau de réversion, la mention « faible dose préférée par Berne » ne rappelle pas les situations où la FI impose la dose élevée. Pour la patiente du cas fil rouge (apixaban 5 mg), la faible dose est conforme ; la cellule reste incomplète pour les autres cas.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Posologie, tableau 2",
+     "citation_courte": "Apixaban > 5 mg, < 8 heures : Dose élevée ; Rivaroxaban > 10 mg, < 8 heures : Dose élevée"
+    },
+    {
+     "source_id": "S1",
+     "section": "doc. p. 44",
+     "citation_courte": "use rather the low dose"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_b_2.html.",
+   "justification": "Mécanisme → conséquence → décision : cf. MED-04 ; un tableau de décision doit contenir la règle légale complète."
+  },
+  {
+   "id": "MED-06",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "les causes ne s’excluent pas (un patient hypertendu peut aussi être sous anticoagulant), et la classification ne suit pas de hiérarchie stricte",
+   "constat": "Le registre suisse classe chaque patient dans six catégories « mutuellement exclusives » ; la phrase du cours laisse croire le contraire. L’idée juste (cumul clinique de causes et absence de hiérarchie) doit être distinguée de la règle de classement.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Méthodes, Etiology of ICH",
+     "citation_courte": "six prespecified, mutually exclusive categories based on an adapted version of the mechanistic SMASH-U classification"
+    },
+    {
+     "source_id": "S14",
+     "section": "Méthodes",
+     "citation_courte": "we did not mandate a strict hierarchy as in the original SMASH-U classification"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_a_1.html.",
+   "justification": "Mécanisme : un classement à catégorie unique impose un choix de la cause la plus probable. Conséquence : les pourcentages sous-estiment les causes associées. Décision : décrire exactement la méthode pour que l’étudiant lise correctement le tableau."
+  },
+  {
+   "id": "MED-07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "la récidive hémorragique prédomine seulement en cas d’angiopathie amyloïde",
+   "constat": "La source indique que la récidive hémorragique dépasse l’infarctus en cas d’angiopathie amyloïde et de cause inconnue ; le cours omet la seconde catégorie et emploie « seulement ».",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Résultats, récidives",
+     "citation_courte": "In patients with CAA and unknown ICH etiology, the rate of recurrent ICH was higher than the risk of ischemic stroke"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_a_2.html.",
+   "justification": "Conséquence pratique : une hémorragie sans cause retrouvée garde un risque hémorragique prédominant, ce qui pèse sur la reprise des antithrombotiques."
+  },
+  {
+   "id": "MED-08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "on estime 3,41 millions de cas et 2,89 millions de décès par an (données 2021)",
+   "constat": "Les chiffres mondiaux ne sont rattachés à aucune source de la ligne « Sources » de l’îlot 3. La recommandation européenne lue donne des valeurs arrondies voisines (environ 3,4 millions et 2,8 millions).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Résumé",
+     "citation_courte": "affects ~3.4 million people worldwide each year, causing ~2.8 million deaths"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_a_3.html ; ajouter S2 à la ligne « Sources » de l’îlot.",
+   "justification": "Loi 1 du prompt de vérité : chaque chiffre porte une source lue ; la valeur 2,89 millions n’a pas été retrouvée dans les sources citées."
+  },
+  {
+   "id": "MED-09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "la surface sous la courbe de 0,83 à la dérivation tombe à 0,66 en validation externe",
+   "constat": "Le cours appelle « arbre DIAGRAM » l’arbre de Wilson et coll. (2017) repris par Berne, puis lui attribue les performances du score DIAGRAM (Hilkens et coll., 2018), qui est un autre outil. Il omet que DIAGRAM avec angio-scanner garde une c-statistique de 0,88 en validation externe, et que l’arbre de Wilson provient d’une cohorte sélectionnée (âge médian 49 ans, 45 % de causes macrovasculaires). Même confusion dans I61_c.html (« dont la performance chute à 0,66 en validation externe (c-statistique de 0,83 à la dérivation) ») et dans le titre de la fenêtre i61-diagram.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "doc. p. 46, pied de l’arbre",
+     "citation_courte": "Wilson et al, European Stroke Journal 2017"
+    },
+    {
+     "source_id": "S8",
+     "section": "Résumé",
+     "citation_courte": "173 patients (46% female, median age 49) of whom 78 had a macrovascular cause on IADSA"
+    },
+    {
+     "source_id": "S9",
+     "section": "Résumé",
+     "citation_courte": "c-statistic 0.83 … moderate performance in external validation (c-statistic 0.66) … When CTA results were added … good after external validation (0.88)"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_pop1_2.html ; renommer « arbre DIAGRAM » en « arbre de Wilson » dans I61_c.html et I61_pop1.html.",
+   "justification": "Mécanisme : une probabilité prédictive dépend de la prévalence de la population de dérivation. Conséquence : appliquer 22,1 % hors d’une population comparable surestime ou sous-estime le risque. Décision : nommer correctement l’outil et borner son domaine de validité."
+  },
+  {
+   "id": "MED-10",
+   "gravite": "MINEUR",
+   "fichier": "glossary/i61.py",
+   "ancre": "Score de Wilson et coll. (2017), repris par le protocole bernois.",
+   "constat": "La définition du glossaire attribue le score DIAGRAM à Wilson et coll. ; DIAGRAM est le score de Hilkens et coll. (2018), issu de l’étude « DIagnostic AngioGRAphy to find vascular Malformations ». Le sigle n’est pas développé lettre à lettre.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "Titre et résumé",
+     "citation_courte": "The DIagnostic AngioGRAphy to find vascular Malformations (DIAGRAM) study"
+    },
+    {
+     "source_id": "S8",
+     "section": "Titre",
+     "citation_courte": "Developing an algorithm to identify patients with intracerebral haemorrhage secondary to a macrovascular cause"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_glossary_1.html.",
+   "justification": "Règle n° 3 de CLAUDE.md : définition littérale lettre à lettre ; exactitude de l’attribution des sources."
+  },
+  {
+   "id": "MED-11",
+   "gravite": "MINEUR",
+   "fichier": "glossary/i61.py",
+   "ancre": "Le sigle n’est pas développé lettre à lettre dans la source lue.",
+   "constat": "Le sigle CADMUS est explicitement formé des initiales des quatre phénotypes dans la source (Cerebral Amyloid angiopathy, Deep perforator arteriopathy, Mixed, Undetermined Small vessel disease).",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "Résumé, méthodes",
+     "citation_courte": "classified as Cerebral Amyloid angiopathy (CAA), Deep perforator arteriopathy (DPA), Mixed CAA-DPA, or Undetermined SVD … (CADMUS classification)"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_glossary_1.html.",
+   "justification": "Le glossaire doit développer chaque abréviation lettre à lettre ; la source le permet."
+  },
+  {
+   "id": "MED-12",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "Pour la fibrillation atriale, le bénéfice net de l’anticoagulation reste incertain",
+   "constat": "La prévention secondaire de la fibrillation atriale après HIC ne présente pas l’essai européen randomisé PRESTIGE-AF (2025), qui chiffre le dilemme (infarctus fortement réduit, récidive hémorragique accrue), ni les marqueurs IRM de récidive. Rubrique 14 de la matrice et point classique d’examen.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Résumé",
+     "citation_courte": "0·83 … per 100 patient-years in the DOAC group versus 8·60 … ; all intracerebral haemorrhage was 5·00 … versus 0·82"
+    },
+    {
+     "source_id": "S11",
+     "section": "Résumé",
+     "citation_courte": "cortical superficial siderosis (HR 7.7 …) and chronic intracerebral macrohemorrhages on MRI (HR 9.1 …)"
+    },
+    {
+     "source_id": "S2",
+     "section": "PICO 6.2, 14/15",
+     "citation_courte": "DOAC may be considered after careful evaluation of the individual risk-benefit profile"
+    },
+    {
+     "source_id": "S1",
+     "section": "doc. p. 47",
+     "citation_courte": "consider atrial appendage closure in case of atrial fibrillation"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_b_3.html.",
+   "justification": "Mécanisme : l’anticoagulation supprime l’embolie atriale mais majore le saignement d’artères déjà fragiles. Conséquence : bénéfice ischémique et risque hémorragique quantifiés. Décision : décision individuelle guidée par l’IRM (sidérose, macrohémorragies, angiopathie amyloïde)."
+  },
+  {
+   "id": "MED-13",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "Cette information fait partie du consentement et justifie la surveillance au troisième jour.",
+   "constat": "Le cours ne précise pas que, selon la FI, l’excès d’événements thrombotiques sous andexanet se concentre chez les patients sans anticoagulation prophylactique, ni que l’héparine de bas poids moléculaire redevient pleinement efficace 4 heures après la fin de la perfusion. Cette information change la conduite après l’antidote.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Effets indésirables, ANNEXA-I",
+     "citation_courte": "un taux similaire d’événements thrombotiques (4,9 % et 4,8 %) … 18 patients (22,8 %) … comparé à 6 patients sur 78 (7,7 %)"
+    },
+    {
+     "source_id": "S4",
+     "section": "Pharmacodynamique",
+     "citation_courte": "l’effet anti-FXa de l’énoxaparine n’était plus altéré par l’andexanet alfa au-delà de 4 heures après la fin de la perfusion"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_b_4.html.",
+   "justification": "Mécanisme : l’andexanet lève l’inhibition du facteur Xa et peut neutraliser l’héparine pendant quelques heures. Conséquence : fenêtre thrombotique précoce. Décision : reprise précoce et datée d’une thromboprophylaxie."
+  },
+  {
+   "id": "MED-14",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "Les données européennes ne montrent pas d’amélioration significative",
+   "constat": "Le cours cite la méta-analyse neutre (OR 1,12) sans l’analyse poolée INTERACT (11 312 patients) que la mise à jour ESO 2026 met en avant pour justifier la rapidité : bénéfice fonctionnel (OR 0,85), dépendant du délai, nul vers 3 heures.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "PICO 7, Additional information",
+     "citation_courte": "intensive BP lowering (target SBP < 140 mmHg within 1 h) significantly decreased the odds of poor functional outcome (mRS 3–6) at follow-up (OR 0.85; 95%CI, 0.78–0.91)"
+    },
+    {
+     "source_id": "S3",
+     "section": "PICO 7, Additional information",
+     "citation_courte": "the effect crossing unity at approximately 3 h from symptom onset"
+    },
+    {
+     "source_id": "S3",
+     "section": "Résumé",
+     "citation_courte": "We advise against routine pre-hospital BP lowering in suspected stroke"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_b_5.html.",
+   "justification": "Mécanisme : la croissance de l’hématome survient surtout dans les 3 premières heures. Conséquence : l’effet du geste B dépend du délai. Décision : commencer B dès le diagnostic, jamais avant l’imagerie."
+  },
+  {
+   "id": "MED-15",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "Les deux classes sont associées à une moins bonne évolution fonctionnelle (rapport de cotes ajusté 0,64 pour chacune).",
+   "constat": "Les registres suisse et norvégien chiffrent aussi la surmortalité à trois mois (VKA 1,71 ; anticoagulants directs 1,28), absente du cours.",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Résumé",
+     "citation_courte": "Prior VKA therapy … aOR, 1.71 … and prior DOAC therapy … aOR, 1.28 … higher odds of mortality"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_a_4.html.",
+   "justification": "Ces chiffres justifient l’urgence de la réversion pour les deux classes."
+  },
+  {
+   "id": "MED-16",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "La transfusion de plaquettes est potentiellement nuisible (non suggérée en Europe)",
+   "constat": "Le caractère nuisible de la transfusion plaquettaire sous antiagrégant n’est pas chiffré ; la recommandation européenne donne l’effet poolé.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "PICO 3.2.1",
+     "citation_courte": "Platelet transfusion increased the likelihood of death or dependence by day 90 (OR 2.04, 95% CI 1.12–3.74)"
+    },
+    {
+     "source_id": "S1",
+     "section": "doc. p. 45",
+     "citation_courte": "thrombocyte infusion potentially harmful"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_b_6.html.",
+   "justification": "Mécanisme non établi par les sources lues ; conséquence mesurée (décès ou dépendance) ; décision : pas de transfusion hors thrombopénie sévère."
+  },
+  {
+   "id": "MED-17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Le seuil de 30 ml concerne la pression artérielle.",
+   "constat": "Le feedback est inexact : 30 ml est un seuil du score ICH et la limite des données de l’abaissement intensif ; ce n’est pas un seuil propre à la pression artérielle.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Résumé",
+     "citation_courte": "ICH volume >/=30 cm(3) (=1)"
+    },
+    {
+     "source_id": "S3",
+     "section": "PICO 7",
+     "citation_courte": "the safety and efficacy of intensive BP lowering in those with larger haematomas (>30 mL) remains inadequately established"
+    }
+   ],
+   "proposition": "Remplacer par : « Le seuil de 30 ml appartient au score ICH et marque la limite des données de l’abaissement tensionnel intensif. Pour le cervelet, l’évacuation est suggérée dès 15 ml. »",
+   "justification": "Une explication de quiz fausse fixe une erreur de mémorisation."
+  },
+  {
+   "id": "MED-18",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "aucune variable ne donne seule une sensibilité de 100 % pour l’exclusion",
+   "constat": "Contresens sur la source : la phrase « neither subarachnoid haemorrhage nor APOE ε4 possession had 100% sensitivity » désigne la règle d’exclusion (absence des deux éléments), dont la sensibilité est de 100 %. Le cours affirme l’inverse et prive l’étudiant de la moitié utile des critères d’Édimbourg. La fenêtre i61-boston (I61_pop1.html) ne présente aussi que la règle d’inclusion.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Résumé",
+     "citation_courte": "For the rule-out criteria, neither subarachnoid haemorrhage nor APOE ɛ4 possession had 100% sensitivity (95% CI 88-100)"
+    }
+   ],
+   "proposition": "Voir docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/propositions/I61_c_2.html ; compléter la fenêtre i61-boston par la même règle d’exclusion.",
+   "justification": "Mécanisme : une règle très sensible écarte le diagnostic lorsqu’elle est négative. Conséquence : identification d’un hématome lobaire non lié à l’AAC, au risque de récidive plus faible. Décision : enseigner les deux règles."
+  },
+  {
+   "id": "MED-19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "sur 341 patients avec neuropathologie",
+   "constat": "Les performances 74,5 % / 95,0 % sont celles du sous-ensemble à diagnostic autopsique « across all samples », non de l’ensemble des 341 participants (dérivation, validation temporelle et géographique).",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Résumé",
+     "citation_courte": "74.5% … /95.0% … in cases across all samples with autopsy as the diagnostic standard"
+    },
+    {
+     "source_id": "S16",
+     "section": "Résultats",
+     "citation_courte": "The remaining total of 341 participants with available MRI and neuropathology data were split"
+    }
+   ],
+   "proposition": "Remplacer par : « chez les participants dont le diagnostic de référence était autopsique, issus des trois échantillons (341 participants au total avec IRM et neuropathologie) ».",
+   "justification": "Précision méthodologique sans conséquence décisionnelle."
+  },
+  {
+   "id": "MED-20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "aria-label=\"Schéma didactique de l’arbre DIAGRAM\"",
+   "constat": "Figure SVG de l’îlot 1.3 (Examens) : le titre accessible, le titre visible et le texte d’introduction nomment « arbre DIAGRAM » un arbre qui est celui de Wilson et coll. (2017), comme l’indique d’ailleurs sa légende. Les cinq valeurs (> 50 %, 1,8 %, 6,1 %, 7,3 %, 22,1 %) et l’ordre des branches ont été vérifiés : ils sont conformes au protocole bernois.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "doc. p. 46, arbre « Spontaneous ICH »",
+     "citation_courte": "Predictive value for macrovascular source 1.8% 6.1% 7.3% 22.1% >50% … Wilson et al, European Stroke Journal 2017"
+    },
+    {
+     "source_id": "S8",
+     "section": "Résumé",
+     "citation_courte": "Patients with negative CTA, SVD and pre-ICH hypertension have a low likelihood of an underlying macrovascular cause (1.8%)"
+    }
+   ],
+   "proposition": "Remplacer « arbre DIAGRAM » par « arbre de Wilson » dans aria-label, <title> et le titre visible de la figure ; voir aussi MED-09.",
+   "justification": "Exactitude de l’attribution de la figure ; aucune valeur numérique à corriger."
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "I61_a.html #i61-a01-partie-1 (cas fil rouge, SSP 103/205 correspondance non officielle)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "I61_a.html § 2 ; I61_pop1.html fenêtre i61-sous-codes"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "I61_a.html § 2.2, § 6.1 (SMASH-U adapté, CADMUS) ; I61_pop1.html i61-boston"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "couvert",
+   "ancre": "I61_a.html § 3 (Genève, registre suisse, registres suisse-norvégien, van Asch) — chiffres mondiaux non sourcés (MED-08)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "couvert",
+   "ancre": "I61_a.html § 4 ; I61_c.html Sciences § 1–3"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "partiel",
+   "ancre": "I61_a.html § 6 : hypertension, antithrombotiques, AAC, causes rares ; facteurs modifiables autres (alcool, tabac, sympathomimétiques) absents — non vérifiés par cet audit (lacune L-04)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "I61_b.html § 8.1 ; fréquences des symptômes absentes, lacune déclarée par le cours"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique",
+   "statut": "partiel",
+   "ancre": "I61_b.html § 8.2 ; sans sensibilité/spécificité, sémiologie par siège déduite de l’anatomie"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "couvert",
+   "ancre": "I61_b.html § 8.2, § 9 (15 minutes, check-list de détérioration) ; I61_pop1.html i61-htic"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "I61_c.html Examens § 1–3"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "I61_b.html § 7"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "couvert",
+   "ancre": "I61_b.html § 9 ; I61_d.html — divergence PCC/anti-Xa à expliciter (MED-01 à MED-03) ; dose d’andexanet sous rivaroxaban (MED-04)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "I61_b.html § 10.3–10.4 ; mortalité par point du score ICH non chiffrée (lacune L-01)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "I61_b.html § 10.5–10.6 ; PRESTIGE-AF absent (MED-12)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "couvert",
+   "ancre": "I61_b.html § 11 (âgé, AAC, jeune, grossesse et enfant déclarés en lacune, IR/IH, post-thrombolyse)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "Protocole bernois, FI Swissmedic, registres suisses ; conduite automobile fondée sur une prise de position allemande citée par Berne ; assurances (AI, LAA) et cadre légal suisse de la conduite absents"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "couvert",
+   "ancre": "I61_b.html § 12.1"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "couvert",
+   "ancre": "I61_b.html § 12.2"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "I61_pop1.html i61-sous-codes (I61.0–I61.9)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "Quiz présents ; correspondance PROFILES déclarée non officielle"
+  }
+ ],
+ "lacunes": [
+  {
+   "id": "L-01",
+   "sujet": "Mortalité à 30 jours par point du score ICH (1 à 4)",
+   "requete": "PubMed 11283388 (résumé seul : 0 → tous survivants, 5 → tous décédés) ; texte intégral non libre",
+   "statut": "non vérifié ; aucune valeur proposée"
+  },
+  {
+   "id": "L-02",
+   "sujet": "Libellé exact des consensus ESO–EANS 2025 sur la dose de PCC pour INR 1,3–1,9 (10 UI/kg), la fermeture de l’auricule (PICO 6.3), les statines et la reprise des antiplaquettaires",
+   "requete": "PMC12098356 : XML E-utilities limité au résumé ; page HTML lue par WebFetch tronquée au milieu du tableau 2 ; accès direct bloqué par captcha",
+   "statut": "non vérifié ; aucun constat émis sur ces points"
+  },
+  {
+   "id": "L-03",
+   "sujet": "Plancher européen « pas de baisse active sous 110 mmHg » et limite de 70 mmHg comme recommandation formelle",
+   "requete": "PMC13151662 texte intégral : la baisse > 70 mmHg y figure comme association défavorable ; l’encadré de consensus (image) n’a pas été lu",
+   "statut": "partiellement vérifié"
+  },
+  {
+   "id": "L-04",
+   "sujet": "Facteurs de risque modifiables autres que l’hypertension (alcool, tabac, sympathomimétiques) et données suisses",
+   "requete": "non recherché dans le temps de l’audit",
+   "statut": "rubrique 6 classée partielle sans proposition"
+  },
+  {
+   "id": "L-05",
+   "sujet": "Cadre suisse de l’aptitude à la conduite après HIC (OAC, médecin-conseil) et assurances",
+   "requete": "non recherché",
+   "statut": "rubrique 16 classée partielle"
+  },
+  {
+   "id": "L-06",
+   "sujet": "FI non relues pendant cet audit : Beriplex, Prothromplex, Konakion, Trandate, Ebrantil, Cleviprex, Catapresan, Tranexamic OrPha, Clexane, Keppra, protamine LEO",
+   "requete": "swissmedic_fi.py chercher (recherches réussies pour Beriplex, Konakion, Trandate, Ebrantil) ; textes non relus faute de temps",
+   "statut": "doses non contre-vérifiées par cet audit ; contrôle par échantillonnage limité à Ondexxya et Praxbind"
+  }
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "regle_figures": {
+  "reference": "Règle Vial du 15.10.2026 : figures anatomiques générées par IA non recevables",
+  "inventaire": 10,
+  "ANATOMIQUE_IA": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 7,
+  "recherche_candidats": "Sans objet : aucune figure ANATOMIQUE_IA, donc aucune requête de candidats (moteur Image_Clo_finder non sollicité)."
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Schéma didactique de la chaîne physiopathologique\"",
+   "fichier": "chapters/I61/I61_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "SVG § 4.4 : cinq boîtes de texte reliées par des flèches (paroi malade → rupture → croissance → effet de masse → lésion secondaire). Aucun dessin anatomique.",
+   "constat_id": null,
+   "verification": "« surtout dans les 3 premières heures » conforme à S3 (PICO 7, Additional information) ; enchaînement conforme à S1/S2 et aux sources de l’îlot. Recevable.",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-profond\"",
+   "fichier": "chapters/I61/I61_a.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM axiale : hématome des noyaux gris centraux droits.",
+   "constat_id": null,
+   "verification": "Commons « CT of basal ganglionic hemorrhage.png », CC BY 4.0, Shazia Mirza et Sankalp Gokhale (2016) — auteur, licence et lien conformes (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-fosse\"",
+   "fichier": "chapters/I61/I61_a.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM, 4 coupes : hémorragie de la fosse postérieure, sang intraventriculaire, hydrocéphalie.",
+   "constat_id": null,
+   "verification": "Commons « Posterior fossa hemorrhage.jpg », CC BY 2.0, Yadav et coll., BMC Neurol 2007 — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "aria-label=\"Schéma didactique de l’algorithme A B C D\"",
+   "fichier": "chapters/I61/I61_b.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "SVG § 9.1 : algorithme A-B-C-D en boîtes de texte.",
+   "constat_id": null,
+   "verification": "Délai < 15 min, seuil > 160/90, cible ≤ 140/90 conformes à S1 (doc. p. 44). La mention « hématome cérébelleux » dans la boîte C vient de l’ESO (S2), non du schéma bernois : acceptable. Recevable.",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-ivh\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM axiale : inondation intraventriculaire chez une jeune femme en post-partum.",
+   "constat_id": null,
+   "verification": "Commons « Intracerebral hemorrage (CT scan).jpg », domaine public, Glitzy queen00 (Wikipédia anglophone) — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "aria-label=\"Schéma didactique de l’arbre DIAGRAM\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "SVG § 1.3 : arbre décisionnel probabiliste (angio-scanner, microangiopathie, hypertension).",
+   "constat_id": "MED-20",
+   "verification": "Valeurs et branches conformes à S1 (doc. p. 46) et à S8 (1,8 %) ; nom « DIAGRAM » erroné (MED-09, MED-20).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-angio\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Angio-TDM sagittale : malformation vasculaire avec hémorragie intraventriculaire.",
+   "constat_id": null,
+   "verification": "Commons, CC BY 4.0, Shazia Mirza et Sankalp Gokhale (2016) — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-siderose\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM et IRM T2* : hémorragie traumatique puis sidérose superficielle.",
+   "constat_id": null,
+   "verification": "Commons, CC BY 4.0, Zhao et coll., PLoS One 2015;10:e0116632 — conforme (S19) ; la légende signale correctement l’origine traumatique.",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-perforantes\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Photographie de dissection réelle (vue sagittale médiane) : artères centrales injectées en rouge. Structure anatomique, mais image réelle sourcée : non concernée par la règle.",
+   "constat_id": null,
+   "verification": "Commons « Human brain central arteries anterior midsagittal view description.JPG », CC BY 2.5, John A. Beal, LSU Health Sciences Center Shreveport — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-aac\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Microphotographie histologique réelle, rouge Congo : angiopathie amyloïde cérébrale.",
+   "constat_id": null,
+   "verification": "Commons « Cerebral amyloid angiopathy - intermed mag.jpg », CC BY-SA 3.0, Nephron (travail personnel) — conforme (S19) ; image non modifiée, partage à l’identique sans objet.",
+   "candidats": []
+  }
+ ]
+}
