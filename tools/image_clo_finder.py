@@ -53,7 +53,8 @@ class _Figures(HTMLParser):
             if self.stack and self.stack[-1]['svg'] is None:
                 self.stack[-1]['svg'] = svg
             else:
-                self.items.append({'balise': 'svg', **svg})
+                svg['balise'] = 'svg'  # même objet : les compteurs suivants restent visibles dans l'inventaire
+                self.items.append(svg)
             self._svg = svg
         elif tag in DRAWING_TAGS and getattr(self, '_svg', None) is not None:
             self._svg['formes'] += 1
@@ -160,10 +161,13 @@ def selftest():
         lesson.mkdir(parents=True)
         (lesson / 'T00_c.html').write_text('<figure id="f1"><svg>' + '<path d="M0 0"/>' * 9 +
                                           '</svg><figcaption>Rein dessiné</figcaption></figure>'
+                                          '<svg id="s2"><circle/><circle/><text>x</text></svg>'
                                           '<figure><img src="a.jpg" alt="IRM"><figcaption>IRM réelle</figcaption></figure>',
                                           encoding='utf-8')
         inv = inventory('T00', d)
-        assert [i['indice'] for i in inv] == ['vectoriel_a_examiner_visuellement', 'image_raster_provenance_a_verifier'], inv
+        assert [i['indice'] for i in inv] == ['vectoriel_a_examiner_visuellement', 'vectoriel_a_examiner_visuellement',
+                                              'image_raster_provenance_a_verifier'], inv
+        assert (inv[0]['svg']['formes'], inv[1]['formes'], inv[1]['textes']) == (9, 2, 1), inv
     return 'selftest OK : rejet IA, cache sans second appel, budget partagé, inventaire hors ligne'
 
 

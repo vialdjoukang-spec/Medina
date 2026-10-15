@@ -3,12 +3,13 @@
 Périmètre : chantier SSP V2 (S08/S05/S04/S06). Les autres systèmes restent inchangés.
 
 ## Règle
-Les schémas de structures anatomiques (organe, vaisseau, nerf, os, coupe, territoire, histologie, frottis) générés ou dessinés par une IA, y compris un SVG écrit par un modèle de langage, **ne sont pas recevables** : imprécis, ils trahissent la médecine. Une telle figure démontrée constitue un constat **MAJEUR** et doit être remplacée par un **original existant**, sourcé et licencié. Une origine non démontrée reste une réserve, jamais un label « recevable ».
+Les schémas de structures anatomiques (organe, vaisseau, nerf, os, coupe, territoire, histologie, frottis) générés ou dessinés par une IA, y compris un SVG écrit par un modèle de langage, **ne sont pas recevables** : imprécis, ils trahissent la médecine. Une telle figure démontrée constitue un constat **MAJEUR** et doit être remplacée par un **original existant**, sourcé et licencié. Une origine non démontrée reste une réserve (`ORIGINE_INCONNUE`), jamais un label « recevable » ni un MAJEUR présumé.
 
 ## Classement en audit
 | Classe | Définition | Exigence |
 |---|---|---|
-| `ANATOMIQUE_IA` | structure anatomique dessinée sans source iconographique | MAJEUR ; au plus 3 candidats réels avec page, original, auteur, licence, attribution |
+| `ANATOMIQUE_IA` | structure anatomique dont l'origine IA est **démontrée** : dessin ou SVG créé par un agent IA dans l'historique du dépôt, marqueur de génération dans les métadonnées, ou déclaration de l'auteur | MAJEUR ; au plus 3 candidats réels avec page, original, auteur, licence, attribution |
+| `ORIGINE_INCONNUE` | structure anatomique sans source iconographique, origine IA non démontrée | réserve (jamais « recevable ») ; preuve d'origine à établir, ou remplacement par un original sourcé |
 | `SCHEMA_NON_ANATOMIQUE` | algorithme, frise, courbe, chaîne causale | recevable si chaque valeur et chaque flèche est sourcée |
 | `IMAGE_SOURCEE` | photographie, imagerie, micrographie, planche réelle | source, licence propre à la figure et attribution vérifiées |
 

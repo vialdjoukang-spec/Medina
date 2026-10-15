@@ -7,7 +7,7 @@ description: Chercher des images médicales réelles, sourcées et licenciées (
 
 Règle de Vial (15.10.2026) : un schéma de structure anatomique dessiné par IA, SVG compris, n'est **pas recevable** (constat MAJEUR) ; on le remplace par un **original existant** sourcé. Jamais de génération, de redessin ni d'import automatique. Lire `docs/collaboration/instructions/FIGURES_ANATOMIQUES_IA_2026-10-15.md`.
 
-1. **Inventaire hors ligne** : `python3 tools/image_clo_finder.py inventory <CODE>`. Ouvrir chaque figure ; classer `ANATOMIQUE_IA`, `SCHEMA_NON_ANATOMIQUE` ou `IMAGE_SOURCEE`. Une origine inconnue reste une réserve.
+1. **Inventaire hors ligne** : `python3 tools/image_clo_finder.py inventory <CODE>`. Ouvrir chaque figure ; classer `ANATOMIQUE_IA` (origine IA démontrée, MAJEUR), `ORIGINE_INCONNUE` (réserve), `SCHEMA_NON_ANATOMIQUE` ou `IMAGE_SOURCEE`.
 2. **Recherche sobre** : toujours par le courtier unique de la machine.
    - Le coordinateur lance une seule fois : `python3 tools/image_codex_finder.py --daily-budget 60 serve` (127.0.0.1:8765).
    - Chaque agent : `python3 tools/image_clo_finder.py candidates "<anatomie en anglais> Gray" --broker http://127.0.0.1:8765`, puis `--provider europepmc` pour découvrir des articles.
