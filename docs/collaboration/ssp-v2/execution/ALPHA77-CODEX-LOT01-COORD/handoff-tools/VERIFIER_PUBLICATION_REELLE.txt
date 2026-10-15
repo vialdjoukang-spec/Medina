@@ -1,0 +1,37 @@
+VERIFICATION REPRODUCTIBLE — aucune validation médicale déduite
+
+Ces outils lisent les sept reçus finaux attendus conservés dans
+pages-probe-expectations.json, puis le site public réel. Ils ne publient rien,
+ne modifient aucune source et ne recommencent aucun audit médical.
+
+Prérequis : Python3 ; Git et un clone à jour du dépôt ; Python Playwright et
+Chromium pour le rendu. Respecter le proxy configuré ; ne pas désactiver TLS.
+
+Depuis un checkout contenant ce dossier, définir :
+  MEDINA_PROBE_WORK=/chemin/absolu/vers/un/dossier-de-preuves
+  MEDINA_PROBE_REPO=/chemin/absolu/vers/le/clone/Medina
+Copier pages-probe-expectations.json dans MEDINA_PROBE_WORK. Exporter ces deux
+variables ; les chemins doivent exister. Récupérer main via git fetch origin main.
+
+Exécuter dans cet ordre :
+  python3 /chemin/vers/handoff-tools/probe_publication.py
+  python3 /chemin/vers/handoff-tools/probe_public_navigation.py
+
+Le premier exige les sept reçus et sources exacts dans publication.json,
+leur ascendance dans le commit publié, puis les octets HTTP des cinq documents
+HTML et des figures aux deux emplacements réellement servis. Il conserve les
+octets publics dans public-site/ et produit public-site-probe.json.
+Le second refuse de démarrer sans succès du premier. Il contrôle les réserves
+visibles, les six sous-onglets scientifiques et les neuf sections de sémiologie,
+sur ordinateur et mobile, avec captures. Il produit public-navigation-probe.json.
+Un échec ou un ancien manifeste reste un échec, jamais une clôture.
+MEDINA_CHROMIUM_PATH permet de préciser le binaire Chromium installé.
+
+Les valeurs attendues sont celles des sept intégrations provisoires de cette
+session, pas une attente implicite pour une future version corrigée. Adapter
+une attente exige une nouvelle preuve issue du reçu réellement publié ; ne pas
+changer les empreintes simplement pour faire passer un contrôle.
+
+Codex et Claude peuvent exécuter ces outils indépendamment. Aucun accord Codex
+ni service local propre à Codex n'est nécessaire. Les preuves médicales et les
+réserves restent distinctes de cette vérification technique.

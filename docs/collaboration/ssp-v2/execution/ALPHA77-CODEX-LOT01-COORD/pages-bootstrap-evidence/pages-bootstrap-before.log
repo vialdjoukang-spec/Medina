@@ -1,0 +1,18 @@
+node:internal/assert/utils:77
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: Missing local runtime marker in /workspace/work/pages-bootstrap-site/fragments/assets/img/c77/alpha/claude/lymph_node_regions_seer.svg
+    at Server.<anonymous> (/workspace/work/pages-bootstrap-source/tests/verify_fragment_bootstrap.cjs:22:9)
+    at Server.emit (node:events:509:28)
+    at parserOnIncoming (node:_http_server:1282:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:125:17) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

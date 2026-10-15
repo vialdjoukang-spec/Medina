@@ -1,0 +1,73 @@
+{
+  "scope": "Correctif du serveur du test Pages ; aucun contenu Claude modifié",
+  "pull_request": 174,
+  "merge_commit": "b0a55282ed9944c2474bfc9aefcd618d16fe2c9f",
+  "head_commit": "3fa63dbebdfd35c6be070a43211984fd24eb6f3d",
+  "changed_path": "tests/verify_fragment_bootstrap.cjs",
+  "ci_checks_passed": 7,
+  "deployment_verified": false,
+  "local_browser_routes_passed": 7,
+  "http_probes": {
+    "result": "passed",
+    "source_commit": "50de4ee524bada80bad6766fd4da62df6dca5091",
+    "results": [
+      {
+        "path": "fragments/MEDINA_S06_hematopoietique-lymphatique.html",
+        "status": 200,
+        "mime": "text/html;charset=utf-8",
+        "bytes": 3790969,
+        "sha256": "ce481ab2b13d164f1567c0bd2a175c5dbaa804608dc9daed2c766599cb58907c",
+        "elapsed_ms": 327
+      },
+      {
+        "path": "fragments/assets/img/c77/alpha/claude/lymph_node_regions_seer.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "bytes": 88405,
+        "sha256": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
+        "elapsed_ms": 5
+      },
+      {
+        "path": "templates/fixture.html",
+        "status": 200,
+        "mime": "text/html;charset=utf-8",
+        "bytes": 48,
+        "sha256": "8a2d8f1f4f4e0dddfde271a718ac97cc3c695e26ae58b896bb1c65d1e3156486",
+        "elapsed_ms": 2
+      },
+      {
+        "path": "assets/fixture.js",
+        "status": 200,
+        "mime": "text/javascript;charset=utf-8",
+        "bytes": 54,
+        "sha256": "b60c9ab2d0423275d834492ff8575a895f51cf90b8d28821232546a2a5cee917",
+        "elapsed_ms": 1
+      },
+      {
+        "path": "assets/fixture.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 5,
+        "sha256": "37cb64eddc0e6cef28fbbe74718147b9958cb6c37acac7320d59975fd8396069",
+        "elapsed_ms": 3
+      },
+      {
+        "path": "assets/fixture.bin",
+        "status": 200,
+        "mime": "application/octet-stream",
+        "bytes": 4,
+        "sha256": "2f2e272d087efb57e3a8964f71e382d401c15c42b7a3daf3655a0861ef1754f9",
+        "elapsed_ms": 3
+      }
+    ]
+  },
+  "negative_test": {
+    "result": "passed",
+    "expected_failure_exit": 1,
+    "assertion": "Missing local runtime marker",
+    "document": "MEDINA_S06_hematopoietique-lymphatique.html",
+    "source_commit": "50de4ee524bada80bad6766fd4da62df6dca5091"
+  },
+  "medical_human_validation": false,
+  "closed_total": 0
+}
