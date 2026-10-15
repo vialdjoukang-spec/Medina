@@ -43,6 +43,24 @@ Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche
 ## 4 ter. Leçon apprise sur la CI
 Une branche en retard sur `main` échoue à « MEDINA / mission et périmètre » : les fichiers modifiés depuis dans `main` y apparaissent comme des changements hors périmètre. Avant toute PR, fusionner `origin/main` dans la branche (commit de fusion, sans rebase ni force), puis revérifier `ai_session_guard.py check` et `alpha_publication.py`.
 
+**Mise à jour 22 h 20 UTC — LOT 1 CLOS (7/77).** Les sept reçus Alpha sont dans `main` : E11 #147, N18 #148, I61 #150, E12 #156, D50 #157, G45 #159, C77 #158. Toutes les réservations de génération 1 sont libérées.
+
+- **Règle appliquée (AGENTS.md)** : cinq disciplines, plus la Sémiologie en sixième position.
+  - D50 : Anatomie.
+  - G45 : Anatomie et Histologie.
+  - C77 : Immunologie.
+  - E11, N18, I61 : à faire en génération 2 (paquets préparés par medina-bc, session_015LGaPX2dBVrn3BXcKhKmf8 ; ne pas rédiger ces leçons soi-même).
+- **Lot 2** : missions C72, G23, G58, G63, G64, G71, G72 demandées sur l'issue 107 (commentaire 6203455689).
+- **Méthode** :
+  - fusionner uniquement par commit de fusion (jamais squash), car le `source_commit` du reçu doit rester un ancêtre ;
+  - demander `@codex review` après toute correction de fond ;
+  - utiliser `git pull --no-rebase` ;
+  - figures lisibles à 390 px : viewBox ≤ 480, police ≥ 16.
+- **Artefacts connus, à ne pas prendre pour des erreurs** :
+  - « hors ascendance » dans la revue Codex : commit synthétique à un seul parent ;
+  - `garde-espace` sur push de branche : intervalle `event.before` qui traverse une fusion de main.
+  - Pour s'en assurer : rejouer `tools/espace.py garde` avec la version de main, sur l'intervalle de la PR et sur une fusion simulée à deux parents.
+
 **Leçon du 15.10, 21 h 10 :** la revue automatique de Codex arrive 1 à 3 minutes après la CI. Ne fusionner qu'**après** cette revue et après avoir traité ses constats. E11, N18 et I61 ont été fusionnées trop tôt : il en reste quatre erreurs médicales vérifiées (N18 L31, L38, L158 ; I61 Glasgow V4 attribué à une dysarthrie), un constat plausible (N18 L152) et le mode Livre non testé pour E11. Des missions `-CORR` ont été demandées sur l'issue 107 (commentaire 6202361830). La question du sixième sous-onglet (5 ou 6 sous-onglets) reste à trancher.
 
 ## 4 bis. BLOQUANT OUTIL — `tools/alpha_publication.py` (fichier Codex, partagé)
