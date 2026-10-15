@@ -1,0 +1,315 @@
+{
+  "mission": "ALPHA1-CLAUDE-E12-LANG",
+  "code": "E12",
+  "type_audit": "linguistique",
+  "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "generation": 1,
+  "branche": "claude/alpha1/e12-lang-g1",
+  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-E12-LANG-g1",
+  "conversation": "alpha1-claude-e12-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": "2026-10-15T18:20:00Z",
+  "date_fin": "2026-10-15T18:34:35Z",
+  "note_base": "Le manifeste indique un base_sha de source bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996 (ancêtre du commit de base f664dd9e, vérifié par git merge-base) ; les sept fichiers sont identiques au manifeste, empreintes SHA-256 à l’appui.",
+  "lecture": {
+    "fichiers": [
+      {
+        "fichier": "chapters/E12/E12_a.html",
+        "sha256": "33c6a06d843eeb764bfa65befe279495c39490a9f2bb5ddd9e119fc13dcf0d15",
+        "conforme_au_manifeste": true,
+        "octets": 23325
+      },
+      {
+        "fichier": "chapters/E12/E12_b.html",
+        "sha256": "6cb8173a3d40fb18dd2ddcbbb0adef8ad7af7473a9d406e2cf8c50585ddd19d2",
+        "conforme_au_manifeste": true,
+        "octets": 25323
+      },
+      {
+        "fichier": "chapters/E12/E12_c.html",
+        "sha256": "da11e727dba78de2298425b35beb471f40918c4562fc484e633da6b7d3345eb4",
+        "conforme_au_manifeste": true,
+        "octets": 23553
+      },
+      {
+        "fichier": "chapters/E12/E12_d.html",
+        "sha256": "dc2cd373cbf0bfde947c02bd3e344c9d12bd227969006690c20afa260a6707b9",
+        "conforme_au_manifeste": true,
+        "octets": 8916
+      },
+      {
+        "fichier": "chapters/E12/E12_pop1.html",
+        "sha256": "3174165af210c6fd0358f4db925929e0c5c990a231c2795bf77d8cfb2948415b",
+        "conforme_au_manifeste": true,
+        "octets": 13673
+      },
+      {
+        "fichier": "chapters/E12/E12_pop2.html",
+        "sha256": "1e6f94e0a1af6571e2d1b3dcdf1a2f95b5130d7e10af4569414db86992d70429",
+        "conforme_au_manifeste": true,
+        "octets": 10644
+      },
+      {
+        "fichier": "glossary/e12.py",
+        "sha256": "e6a7903d60933e99dcf1abc26367b49da5975ab210bebc0acd0c08028d455916",
+        "conforme_au_manifeste": true,
+        "octets": 6794
+      }
+    ],
+    "empreintes_conformes": true,
+    "lecture_integrale": "Les sept fichiers ont été lus en entier (onglets a, b, c, d, fenêtres pop1 et pop2, glossaire), ainsi que docs/STYLE_REDACTION.md, PROMPT_VERITE.md (sections 1 à 3 et 5) et le manifeste."
+  },
+  "premiere_verification": {
+    "description": "Recalcul des SHA-256 des sept fichiers de la leçon et comparaison avec .medina/missions/ALPHA1-CLAUDE-E12-LANG.json (source_files_sha256).",
+    "resultat": "sept empreintes conformes",
+    "date": "2026-10-15"
+  },
+  "synthese": {
+    "nombre_propositions": 102,
+    "renvois_medicaux": 21,
+    "observations_globales": 4,
+    "par_fichier": {
+      "a": 26,
+      "b": 24,
+      "c": 21,
+      "d": 10,
+      "pop1": 14,
+      "pop2": 7
+    },
+    "par_categorie": {
+      "phrase nominale": 21,
+      "syntaxe": 10,
+      "grammaire": 9,
+      "répétition": 9,
+      "ambiguïté": 9,
+      "unités": 8,
+      "lexique": 6,
+      "lourdeur": 4,
+      "typographie": 3,
+      "orthographe": 3,
+      "anglicisme": 3,
+      "cohérence": 3,
+      "méta-discours": 2,
+      "registre": 2,
+      "ponctuation": 2,
+      "cohérence terminologique": 2,
+      "calque": 2,
+      "abréviation": 2,
+      "précision": 1,
+      "contresens": 1
+    }
+  },
+  "verification_mecanique": {
+    "script": "verification_unicite.py",
+    "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible (comptage de sous-chaînes sur le texte brut) ; les propositions sont appliquées séquentiellement sans chevauchement ; les nombres du texte visible sont identiques avant et après ; les balises sont inchangées, à l’exception de l’ordre des deux boutons e12-type5 et e12-fcpd dans la proposition E12-LANG-a-02.",
+    "resultat": "102/102 propositions à ancien unique ; aucun chevauchement ; aucun nombre ajouté ni retiré"
+  },
+  "constats": [
+    {
+      "id": "E12-LANG-RM-01",
+      "fichier": "chapters/E12/E12_a.html",
+      "ancre": "les anticorps anti-GAD sont négatifs",
+      "type": "abréviation / précision",
+      "constat": "La vignette écrit « anti-GAD » alors que tout le reste de la leçon et la clé de glossaire utilisent « anti-GAD65 ». « anti-GAD » seul n’a pas de clé de glossaire. Corriger en « anti-GAD65 » précise l’isoforme testée : c’est une précision d’examen, donc à décider par l’audit médical.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-02",
+      "fichier": "chapters/E12/E12_a.html",
+      "ancre": "la proportion parmi les diabétiques varie de 6 à 21 %",
+      "type": "ambiguïté de référent",
+      "constat": "« La proportion » ne dit pas de quoi (cas de diabète de malnutrition ? FCPD ?). Le texte source n’ayant pas été relu pour cet audit linguistique, le référent n’est pas reformulé.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-03",
+      "fichier": "chapters/E12/E12_a.html",
+      "ancre": "en Suisse, l’entité se rencontrerait d’abord comme diagnostic d’exclusion",
+      "type": "assertion non sourcée",
+      "constat": "La phrase précédente déclare une lacune et affirme ne pas extrapoler ; la suite énonce pourtant, au conditionnel, une prédiction sur la Suisse sans source. Contradiction interne à trancher sur le fond (supprimer, ou sourcer).",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-04",
+      "fichier": "chapters/E12/E12_a.html",
+      "ancre": "Pourquoi les besoins en insuline paraissaient élevés.",
+      "type": "explication absente",
+      "constat": "L’intertitre promet une explication ; le paragraphe indique seulement que l’impression venait d’observations anciennes et que les études récentes la contredisent. Le « pourquoi » (mécanisme causal) manque : enrichissement médical à demander à l’audit médical.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-05",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "(1) un pays tropical",
+      "type": "libellé de critère elliptique",
+      "constat": "Le critère (1) de la FCPD est écrit « un pays tropical » : on ne sait pas s’il s’agit de la résidence, de l’origine ou de la survenue. Le libellé exact d’Endotext doit être vérifié avant toute reformulation.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-06",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "moyen mnémotechnique SANS, aide pédagogique",
+      "type": "incohérence interne",
+      "constat": "L’encadré « À retenir » présente SANS comme moyen de retenir l’ordre de la démarche (glycémie, anticorps et C-peptide, imagerie, contexte nutritionnel), alors que SANS (Sécrétion, Anticorps, Non-cétosique, Sensibilité) décrit le profil et non cet ordre. Le lien affirmé est faux ou à reformuler ; l’intention pédagogique relève du fond.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-07",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "pancréas normal en imagerie pour écarter la FCPD",
+      "type": "incohérence interne",
+      "constat": "Dans l’alerte « Critères formels », « pancréas normal en imagerie » figure parmi les caractéristiques « fréquentes » ; dans la démarche diagnostique (section 7) et la fenêtre e12-type5, il est classé parmi les « occasionnelles ». Une des deux listes doit être corrigée d’après le consensus.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-08",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "il n’existe pas non plus d’essai thérapeutique fondé sur les preuves (grade 1C)",
+      "type": "ambiguïté de portée",
+      "constat": "Un grade de recommandation (1C) est attaché à l’absence d’essai ; il s’agit probablement du niveau de recommandation de HaPanEU, non d’un grade de l’absence d’essai. À vérifier dans la source avant reformulation.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-09",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "des vitamines liposolubles et la vitamine D (ostéodystrophie)",
+      "type": "parenthèse elliptique",
+      "constat": "La parenthèse « (ostéodystrophie) » ne dit pas si la vitamine D la prévient ou la traite. Choisir le verbe suppose de relire Endotext.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-10",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "rénales, oculaires, neurologiques, vasculaires périphériques, multiples, avec le pied diabétique",
+      "type": "énumération ambiguë",
+      "constat": "On ne sait pas si le pied diabétique est une sous-rubrique à part ou un cas des complications multiples (« avec »). La structure de la rubrique CIM-10-GM doit être relue avant de choisir « et » ou « ainsi que ».",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-11",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "atteinte rénale précoce de type 1",
+      "type": "ambiguïté terminologique",
+      "constat": "« De type 1 » peut se lire comme « de type diabète de type 1 » ou comme un type de lésion rénale. La même phrase indique « une atteinte macrovasculaire généralement non associée » (à quoi ?). Les deux points demandent la source HaPanEU.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-12",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "le risque de décès est disproportionné, surtout chez la femme",
+      "type": "référent manquant",
+      "constat": "« Disproportionné » par rapport à quoi (le risque de cancer, la taille de la tumeur, la population générale) ? Le texte ne le dit pas ; la précision relève de la source (Endotext).",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-13",
+      "fichier": "chapters/E12/E12_b.html",
+      "ancre": "la prise en charge relève de la rubrique obstétricale",
+      "type": "confusion classification / soins",
+      "constat": "Une rubrique est un code de classification ; elle ne régit pas la prise en charge. La phrase confond codage (O24.-) et conduite. Reformuler en « se code sous O24.- » changerait l’énoncé, donc proposition réservée.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-14",
+      "fichier": "chapters/E12/E12_c.html",
+      "ancre": "Cette histologie fonde deux phénotypes différents",
+      "type": "affirmation contredite par le contexte",
+      "constat": "Le paragraphe précédent dit que les données histologiques sont indirectes, et la dernière phrase que l’on n’a aucune biopsie humaine du « type 5 ». Écrire que cette histologie « fonde » deux phénotypes est donc excessif ; le verbe (suggère ? est compatible avec ?) dépend de la force de la source.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-15",
+      "fichier": "chapters/E12/E12_pop1.html",
+      "ancre": "Petit effectif, hommes seulement, pas de suivi, étude indienne.",
+      "type": "incohérence interne",
+      "constat": "La fenêtre qualifie Vellore d’« étude indienne » alors que l’onglet 1 (section 2) dit que la Corée et la Thaïlande s’ajoutent dans l’étude de Vellore. Une des deux informations est inexacte ou à nuancer.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-16",
+      "fichier": "glossary/e12.py",
+      "ancre": "La metformine est contre-indiquée en dessous de 30 mL/min et limitée à 1 000 mg par jour entre 30 et 59 mL/min.",
+      "type": "définition de glossaire hors sujet",
+      "constat": "La définition de la clé DFGe ne définit pas le DFGe : elle énonce une règle posologique. Une définition correcte (« mesure estimée de la filtration rénale par le rein… ») introduirait un énoncé nouveau, que le protocole interdit d’ajouter dans un audit linguistique.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-17",
+      "fichier": "chapters/E12/E12_pop2.html",
+      "ancre": "Jusqu’à 25 % de diabètes instables.",
+      "type": "rubrique inadaptée",
+      "constat": "Cette donnée figure sous « Facteurs aggravants » alors qu’elle décrit une fréquence, non un facteur. Un déplacement dans une autre rubrique est un choix de structure à valider.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-18",
+      "fichier": "chapters/E12/E12_c.html",
+      "ancre": "Les sources européennes exigent de confirmer par la glycémie à jeun.",
+      "type": "force du verbe",
+      "constat": "« Exigent » dit plus qu’une recommandation graduée. Le verbe exact dépend de la formulation de HaPanEU, non lue ici.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-19",
+      "fichier": "chapters/E12/E12_c.html",
+      "ancre": "aucun facteur de conversion n’est fourni par les sources lues",
+      "type": "enrichissement médical",
+      "constat": "La leçon compare des ng/mL (Vellore) et des pmol/L (SGED) en disant qu’aucun facteur de conversion n’est fourni. Un facteur de conversion existe dans la littérature biochimique ; l’ajouter revient à ajouter un fait sourcé, donc à confier à l’audit médical (rubrique ENRICHISSEMENT).",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-20",
+      "fichier": "chapters/E12/E12_a.html",
+      "ancre": "La version allemande modifiée (CIM-10-GM 2024) de l’Office fédéral de la statistique reprend le libellé",
+      "type": "attribution ambiguë",
+      "constat": "« La version allemande modifiée … de l’Office fédéral de la statistique » : la CIM-10-GM est publiée en Allemagne ; l’OFS la reprend pour la Suisse. L’attribution précise relève des sources.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-RM-21",
+      "fichier": "chapters/E12/E12_a.html",
+      "ancre": "Figure 1 — Production hépatique de glucose et captation périphérique",
+      "type": "figure",
+      "constat": "Les hauteurs de barres de la figure 1 ne sont pas proportionnelles aux valeurs (0,50/0,84 → 57/84 px ; 10,1/4,2 → 140/47 px) et les deux paires n’ont pas d’échelle commune. La légende annonce « schéma non calibré » ; une échelle ou un axe gradué relève d’une correction de figure, non de formulation.",
+      "statut": "renvoi_medical"
+    },
+    {
+      "id": "E12-LANG-OG-01",
+      "type": "typographie — espaces insécables",
+      "portee": "tous les fichiers",
+      "constat": "Aucun espace insécable (U+00A0 ou U+202F) n’est employé : chaque « ; », « : », « ? », « ! » est précédé d’une espace simple et les guillemets « » sont suivis/précédés d’une espace simple (E12_a : 54 signes ponctués, 34 guillemets ; E12_b : 101, 42 ; E12_c : 70, 46 ; E12_d : 39, 10 ; E12_pop1 : 52, 26 ; E12_pop2 : 59, 12 ; glossaire : 4, 1). Le même constat est vrai de E10, E11, I63 et N17 (0 espace insécable) : il s’agit d’une convention de la chaîne de production, non d’un défaut propre à E12. Non traité ligne à ligne ; une correction mécanique globale (remplacement par U+202F avant ; ? ! et U+00A0 après « / avant ») relève d’une mission d’intégration sur fichier partagé.",
+      "action": "renvoi à la mission d’intégration"
+    },
+    {
+      "id": "E12-LANG-OG-02",
+      "type": "HTML — signe < non échappé",
+      "portee": "E12_b (7), E12_c (1), E12_d (2), E12_pop1 (9), E12_pop2 (2)",
+      "constat": "Le signe « < » apparaît brut dans le texte (« IMC < 18,5 kg/m² », « DFGe < 30 mL/min »). Le navigateur le tolère parce qu’il est suivi d’une espace, mais l’entité &lt; serait plus sûre. Non traité (21 occurrences, aucune erreur de rendu constatée sans test navigateur).",
+      "action": "hygiène technique, optionnelle"
+    },
+    {
+      "id": "E12-LANG-OG-03",
+      "type": "phrases nominales dans les fenêtres et les Pareto",
+      "portee": "E12_pop1 (Pareto et fenêtres), E12_pop2",
+      "constat": "Les puces de Pareto et de nombreux paragraphes de fenêtres sont des énumérations de groupes nominaux (« Pancréas normal en imagerie : « type 5 ». Calculs intracanalaires : FCPD. »). STYLE_REDACTION § 2 les proscrit, mais l’espace disponible dans les Pareto est volontairement réduit. Seuls les cas où la phrase est ambiguë ou sans verbe sur plusieurs lignes ont été proposés ; les autres sont laissés à l’arbitrage éditorial.",
+      "action": "arbitrage éditorial"
+    },
+    {
+      "id": "E12-LANG-OG-04",
+      "type": "cohérence terminologique",
+      "portee": "tous les fichiers",
+      "constat": "« CT » et « scanner » coexistent (deux occurrences de « scanner » dans E12_b, traitées par les propositions E12-LANG-b-22 et b-23) ; « déviations standard » est conservé (usage helvétique). « Vigilance oncologique » et « surveillance du cancer » alternent : non modifié, les deux termes étant compréhensibles.",
+      "action": "traité en partie"
+    }
+  ],
+  "lacunes": [
+    "Aucune source médicale n’a été relue : un audit linguistique ne vérifie pas les faits. Les citations (Lancet Global Health 2025, Diabetes Care 2022, Endotext 2024, HaPanEU 2017, RMS 2022, SGED 2023, informations professionnelles Creon, Glucophage, Lantus) ne sont ni confirmées ni infirmées ici.",
+    "Les formulations qui touchent à un sens médical possible sont renvoyées (21 renvois) et non reformulées.",
+    "Aucun test en navigateur : l’effet des propositions sur l’affichage (largeur des tableaux, justification) n’a pas été mesuré.",
+    "Le glossaire n’a fait l’objet d’aucune proposition : une seule anomalie (DFGe, E12-LANG-RM-16) a été renvoyée.",
+    "Les espaces insécables n’ont pas été traités fichier par fichier (convention de la chaîne de production, voir E12-LANG-OG-01).",
+    "Pas d’audit de l’orthographe par un correcteur externe (Antidote, LanguageTool) : la relecture a été faite par lecture intégrale, avec des contrôles mécaniques sur la ponctuation, les unités et les abréviations."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
