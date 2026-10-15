@@ -21,9 +21,13 @@ class PublicationTests(unittest.TestCase):
         self.write(P.AUTHORITY, (Path(__file__).resolve().parents[1] / P.AUTHORITY).read_bytes())
         self.json('chapters.json', [])
         self.json('nosology/fragments/S08.json', {'lessons': [{'code': 'R25'}]})
-        self.source = 'livraisons/Livraison Claude/N-05-Neurologie/R25_a.html'
+        self.source_dir = 'livraisons/Livraison Claude/N-05-Neurologie/TEST'
+        self.source = self.source_dir + '/chapters/R25/R25_a.html'
         self.content = b'<p>Brouillon de fixture incomplet, sans validation.</p>'
         self.write(self.source, self.content)
+        self.asset = 'assets/img/cycle42/r25/figure.png'
+        self.asset_content = b'\x89PNG\r\n\x1a\nFigure technique de fixture'
+        self.write(self.source_dir + '/' + self.asset, self.asset_content)
         self.base = self.commit()
         self.path = 'chapters/R25/R25_a.html'
         self.write(self.path, self.content)
@@ -60,6 +64,25 @@ class PublicationTests(unittest.TestCase):
     def test_same_permission_for_claude(self):
         self.receipt['actor'] = 'Claude'
         self.assertEqual(self.validate(), [])
+
+    def test_cli_includes_images_copied_from_delivery(self):
+        self.write(self.asset, self.asset_content)
+        catalog = json.loads((self.root / 'chapters.json').read_bytes())
+        catalog[0].update(owner='S08', source_dir=self.source_dir)
+        self.json('chapters.json', catalog)
+        script = Path(__file__).resolve().parents[1] / 'tools/publication_en_etat.py'
+        subprocess.run(['python3', str(script), '--root', str(self.root), '--actor', 'Codex',
+                        '--provenance-revision', self.base, '--courses', 'R25'], check=True, capture_output=True)
+        self.receipt = json.loads((self.root / P.RECEIPT).read_bytes())
+        self.assertEqual(self.receipt['courses'][0]['files'][self.asset]['sha256'], P.digest(self.asset_content))
+        self.assertEqual(self.validate(), [])
+
+    def test_copied_image_cannot_be_edited(self):
+        self.write(self.asset, b'Image modifiee')
+        self.receipt['courses'][0]['files'][self.asset] = dict(sha256=P.digest(b'Image modifiee'),
+            provenance_revision=self.base, provenance_path=self.source_dir + '/' + self.asset)
+        with self.assertRaisesRegex(E.FragmentError, 'différente de la provenance'):
+            self.validate()
 
     def test_preparatory_commits_validated_as_one_publication(self):
         # Les copies peuvent précéder le reçu final dans la branche de travail.

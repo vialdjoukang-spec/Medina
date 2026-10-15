@@ -131,6 +131,14 @@ def main():
         glossary = root / 'glossary' / (code.lower() + '.py')
         if glossary.is_file():
             files.append(glossary)
+        # Les figures sont conservées sous les mêmes chemins relatifs que dans
+        # la livraison. Inclure chaque copie publiée, pas seulement les HTML.
+        source_root = root / row['source_dir']
+        for source_asset in (source_root / 'assets' / 'img').rglob('*'):
+            if source_asset.is_file():
+                copied_asset = root / source_asset.relative_to(source_root)
+                if copied_asset.is_file():
+                    files.append(copied_asset)
         refs = {}
         for file in sorted(p for p in files if p.is_file()):
             path = file.relative_to(root).as_posix()
