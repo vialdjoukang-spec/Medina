@@ -1,0 +1,304 @@
+{
+ "mission": "ALPHA77-CLAUDE-E11-INTEGRATE",
+ "phase": 2,
+ "agent": "W (rédacteur et intégrateur)",
+ "code": "E11",
+ "fragment": "S05",
+ "date": "2026-10-15",
+ "base": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "prep_utilise": "prep/READY.json (commits 6e129e4e et d026bbe1)",
+ "integration": {
+  "semiologie_sciences": "Bouton e11-tab-semio en tête de .sci-bar (aria-selected=true), autres boutons aria-selected=false ; panneau div.sci#e11-s-semio (role=tabpanel, aria-labelledby) en tête de .sci-body, visible ; e11-s-histo passe en hidden. Neuf sections data-semiology.",
+  "bloc_clinique_pA": "div.card data-semiology-clinical=\"E11\" dans l’îlot e11-6 (E11_a.html), avant l’encadré « À retenir » ; îlots 5 et 6 conservés.",
+  "fenetres": "12 fenêtres e11-sm-* ajoutées à E11_pop2.html (aucun nouveau fichier de fenêtres, aucune collision).",
+  "figures": [
+   "Figure 3 (fond d’œil, ancienne 8) : légende du bloc 2 (Hao et al., PLoS One 2022, figure 3A, CC BY 4.0, mention « modifié ») ; les deux mentions « figure 1A » de E11_b.html deviennent « figure 3A ».",
+   "Figure 11 (glomérulosclérose, ancienne 9) : légende du bloc 3, paternité seulement présumée (« KGH »), réserve maintenue.",
+   "Pictogramme d’entonnoir non anatomique (bloc 1, facultatif) pour l’onglet « Physiologie rénale », afin de le distinguer de l’onglet « Physiologie ».",
+   "Images réelles conservées en <img alt> + <figcaption> avec attribution ; aucun SVG ajouté autour d’une image ; aucune image téléchargée par P n’était à insérer."
+  ],
+  "R-16_renumerotation": {
+   "correspondance_ancien_vers_nouveau": {
+    "1": 1,
+    "7": 2,
+    "8": 3,
+    "6": 4,
+    "11": 5,
+    "12": 6,
+    "2": 7,
+    "3": 8,
+    "4": 9,
+    "5": 10,
+    "9": 11,
+    "10": 12
+   },
+   "ordre": "pA (1–3), pE (4), pS sémiologie (5–6) puis disciplines (7–10), fenêtres (11–12)",
+   "renvoi_croise": "« La figure 8 de l’îlot 9 » → « La figure 3 de l’îlot 9 » (E11_pop1.html)",
+   "remplacements": 20,
+   "non_touchees": "références aux figures des sources (ESC 2023 figures 2, 3, 8, 10 ; consensus 2024 figure 2 ; Hao et al. figure 3A)"
+  },
+  "glossaire": "Clé JPEG ajoutée (légende de la figure 3) ; aucune autre clé requise (prep/glossaire_ajouts.json).",
+  "pareto": "Aucun îlot e11-sm-* placé dans un data-cover.",
+  "operations": [
+   {
+    "tag": "semio-bouton",
+    "fichier": "chapters/E11/E11_c.html",
+    "ancien": "<div class=\"sci-bar ui\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\" aria-controls=\"e11-s-histo\" data-s=\"e11-s-histo\">",
+    "nouveau": "<div class=\"sci-bar ui\" role=\"tablist\"><button role=\"tab\" id=\"e11-tab-semio\" aria-selected=\"true\" aria-controls=\"e11-s-semio\" data-s=\"e11-s-semio\"><svg viewbox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"non"
+   },
+   {
+    "tag": "semio-panneau",
+    "fichier": "chapters/E11/E11_c.html",
+    "ancien": "<div class=\"chap-body sci-body\"><div class=\"sci\" id=\"e11-s-histo\">",
+    "nouveau": "<div class=\"chap-body sci-body\"><div class=\"sci\" id=\"e11-s-semio\" role=\"tabpanel\" aria-labelledby=\"e11-tab-semio\">\n\n<section class=\"ilot\" id=\"e11-sm-1\" data-semiology=\"normal\"><h2><span class=\"n\">1</s"
+   },
+   {
+    "tag": "icone-entonnoir",
+    "fichier": "chapters/E11/E11_c.html",
+    "ancien": "<button role=\"tab\" aria-selected=\"false\" aria-controls=\"e11-s-rein\" data-s=\"e11-s-rein\"><svg viewbox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M2 12h",
+    "nouveau": "<button role=\"tab\" aria-selected=\"false\" aria-controls=\"e11-s-rein\" data-s=\"e11-s-rein\"><svg viewbox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M3 4h1"
+   },
+   {
+    "tag": "semio-clinique",
+    "fichier": "chapters/E11/E11_a.html",
+    "ancien": "îlot e11-6, avant div.key",
+    "nouveau": "div.card data-semiology-clinical=E11"
+   },
+   {
+    "tag": "semio-fenetres",
+    "fichier": "chapters/E11/E11_pop2.html",
+    "ancien": "(fin)",
+    "nouveau": "e11-sm-iwgdf e11-sm-polyurie e11-sm-amaigrissement e11-sm-digestif e11-sm-hypo-silence e11-sm-orthostatisme e11-sm-kussmaul e11-sm-volemie e11-sm-monofilament-valeur e11-sm-ips e11-sm-charcot e11-sm-acanthosis"
+   },
+   {
+    "tag": "fig8-legende",
+    "fichier": "chapters/E11/E11_b.html",
+    "ancien": "Figure 8 — Fond d’œil d’une rétinopathie diabétique : exsudats durs jaunâtres groupés au-dessus et en dehors de la macula, microanévrismes et petites hémorragies punctiformes. Photographie clinique ré",
+    "nouveau": "Figure 8 — Fond d’œil d’une rétinopathie diabétique : exsudats durs jaunâtres groupés au-dessus et en dehors de la macula, microanévrismes et petites hémorragies punctiformes. Photographie clinique ré"
+   },
+   {
+    "tag": "fig9-legende",
+    "fichier": "chapters/E11/E11_pop1.html",
+    "ancien": "Figure 9 — Glomérulosclérose diabétique, coloration à l’acide périodique de Schiff : nodule mésangial acellulaire (lésion de Kimmelstiel-Wilson) à gauche du flocculus, membranes basales épaissies. Pho",
+    "nouveau": "Figure 9 — Glomérulosclérose diabétique, coloration à l’acide périodique de Schiff : nodule mésangial acellulaire (lésion de Kimmelstiel-Wilson) à gauche du flocculus, membranes basales épaissies. Pho"
+   },
+   {
+    "tag": "fig8-reference",
+    "fichier": "chapters/E11/E11_b.html",
+    "ancien": "figure 1A (1 occurrences)",
+    "nouveau": "figure 3A"
+   }
+  ]
+ },
+ "controles": {
+  "test_v7_static": "OK — 44 681 mots, 141 fenêtres, 8 quiz, 7 Pareto ; audit des abréviations {} ; clés de fenêtres toutes définies ; classes de la liste fermée ; aucun style en ligne",
+  "test_v7_navigateur": "OK — python3 test_v7.py --url http://127.0.0.1:28761/MEDINA_S05_endocrinien-metabolique.html E11 (tous les mots verts cliqués, quatre onglets, 1300 px et 390 px, aucune erreur JavaScript)",
+  "audit_sciences": "passed, errors [] — 5 disciplines (dont e11-s-semio : 4 580 mots, 2 figures SVG non anatomiques) ; aucune figure à image réelle dans les Sciences, donc aucun faux positif « figure sans légende ou nom accessible » à consigner",
+  "construction": "MEDINA_OUT=<scratchpad> python3 build_front.py --fragment S05 → MEDINA_S05_endocrinien-metabolique.html (8 089 183 octets, compressé 4 555 019) ; rien n’est écrit dans le dépôt",
+  "images_chargees": "4/4 après défilement (acanthosis, fond d’œil ; glomérulosclérose dans e11-mrc ; ulcère du talon dans e11-pied)",
+  "rendu_chromium": {
+   "url": "http://127.0.0.1:28761/MEDINA_S05_endocrinien-metabolique.html",
+   "chromium": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "vues": {
+    "ordinateur": {
+     "cours_affiche": true,
+     "bloc_clinique_pA": 1,
+     "bloc_clinique_dans_pA": true,
+     "sci_bar": [
+      {
+       "id": "e11-tab-semio",
+       "s": "e11-s-semio",
+       "sel": "true",
+       "txt": "Sémiologie fondamentale et analytique"
+      },
+      {
+       "id": "",
+       "s": "e11-s-histo",
+       "sel": "false",
+       "txt": "Biologie cellulaire"
+      },
+      {
+       "id": "",
+       "s": "e11-s-phys",
+       "sel": "false",
+       "txt": "Physiologie"
+      },
+      {
+       "id": "",
+       "s": "e11-s-bioc",
+       "sel": "false",
+       "txt": "Biochimie"
+      },
+      {
+       "id": "",
+       "s": "e11-s-rein",
+       "sel": "false",
+       "txt": "Physiologie rénale"
+      }
+     ],
+     "semio_visible": true,
+     "autres_masques": true,
+     "sections_semiology": [
+      [
+       "normal",
+       346
+      ],
+      [
+       "signs",
+       396
+      ],
+      [
+       "mechanisms",
+       810
+      ],
+      [
+       "examination",
+       773
+      ],
+      [
+       "interpretation",
+       443
+      ],
+      [
+       "differentials",
+       482
+      ],
+      [
+       "urgency",
+       315
+      ],
+      [
+       "limits",
+       466
+      ],
+      [
+       "sources",
+       479
+      ]
+     ],
+     "titre_premier_ilot": "1Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "debordement_horizontal_px": 0,
+     "mots_verts_semio": 13,
+     "fenetres_absentes": [],
+     "bascule_histo": true,
+     "retour_semio": true,
+     "erreurs_js": [],
+     "erreurs_console": []
+    },
+    "mobile_390": {
+     "cours_affiche": true,
+     "bloc_clinique_pA": 1,
+     "bloc_clinique_dans_pA": true,
+     "sci_bar": [
+      {
+       "id": "e11-tab-semio",
+       "s": "e11-s-semio",
+       "sel": "true",
+       "txt": "Sémiologie fondamentale et analytique"
+      },
+      {
+       "id": "",
+       "s": "e11-s-histo",
+       "sel": "false",
+       "txt": "Biologie cellulaire"
+      },
+      {
+       "id": "",
+       "s": "e11-s-phys",
+       "sel": "false",
+       "txt": "Physiologie"
+      },
+      {
+       "id": "",
+       "s": "e11-s-bioc",
+       "sel": "false",
+       "txt": "Biochimie"
+      },
+      {
+       "id": "",
+       "s": "e11-s-rein",
+       "sel": "false",
+       "txt": "Physiologie rénale"
+      }
+     ],
+     "semio_visible": true,
+     "autres_masques": true,
+     "sections_semiology": [
+      [
+       "normal",
+       346
+      ],
+      [
+       "signs",
+       396
+      ],
+      [
+       "mechanisms",
+       810
+      ],
+      [
+       "examination",
+       773
+      ],
+      [
+       "interpretation",
+       443
+      ],
+      [
+       "differentials",
+       482
+      ],
+      [
+       "urgency",
+       315
+      ],
+      [
+       "limits",
+       466
+      ],
+      [
+       "sources",
+       479
+      ]
+     ],
+     "titre_premier_ilot": "1Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+     "debordement_horizontal_px": 0,
+     "mots_verts_semio": 13,
+     "fenetres_absentes": [],
+     "bascule_histo": true,
+     "retour_semio": true,
+     "erreurs_js": [],
+     "erreurs_console": []
+    }
+   }
+  },
+  "non_teste": [
+   "Police agrandie et mode Livre : non testés dans cette phase."
+  ]
+ },
+ "captures": [
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_mobile_390_1_ouverture.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_mobile_390_2_semiologie.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_mobile_390_3_fenetre.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_mobile_390_4_bloc_clinique.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_ordinateur_1_ouverture.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_ordinateur_2_semiologie.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_ordinateur_3_fenetre.png",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/integration/captures/E11_ordinateur_4_figure3_fond_oeil.png"
+ ],
+ "reserves": [
+  "Figure 11 : auteur seulement présumé, aucun remplacement d’auteur certain trouvé (P).",
+  "Lacunes déclarées par P dans prep/READY.json (fréquences des symptômes, seuil rénal du glucose, vision floue, sémiologie ophtalmologique, sites d’injection) : non comblées.",
+  "Choix différés inchangés : espaces insécables globales, « fibrillation atriale/auriculaire », groupe LIENS (et R-14)."
+ ],
+ "empreintes_sha256": {
+  "chapters/E11/E11_a.html": "a5a271938495d18bac91930e30d40b9f95303bd8260a8b131797e31ab42dcacb",
+  "chapters/E11/E11_b.html": "204e5844d40aaafe7ff08c6329fc3da7ffde0fa76bb41fee9ff33879ecc9fc80",
+  "chapters/E11/E11_c.html": "c111268e0485530d29041199f7f69b50f366ce426f74db0ab315f7d9c4c5fd60",
+  "chapters/E11/E11_d.html": "616eb9a737b586749f345bcf70e3a77eb7661ade7d218fac8698b4f365a46854",
+  "chapters/E11/E11_pop1.html": "f2f97a4e0a8c3b33aac719bc91fb9519982b2e240ccd1497334b730a6f4f8bbf",
+  "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
+  "glossary/e11.py": "5e8c36fd6a77b9234d6a7bf9d7862f8a1447c99432ff10cb799efed8280d4e3c"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
