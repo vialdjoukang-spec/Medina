@@ -1,0 +1,447 @@
+{
+ "mission": "ALPHA1-CLAUDE-N18-MED",
+ "code": "N18",
+ "type_audit": "medical",
+ "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+ "source_snapshot_sha": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+ "generation": 1,
+ "branche": "claude/alpha1/n18-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-N18-MED-g1",
+ "conversation": "alpha1-claude-n18-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-15T18:22:52Z",
+ "date_fin": "2026-10-15T18:36:29Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/N18/N18_a.html",
+   "chapters/N18/N18_b.html",
+   "chapters/N18/N18_c.html",
+   "chapters/N18/N18_d.html",
+   "chapters/N18/N18_pop1.html",
+   "chapters/N18/N18_pop2.html",
+   "glossary/n18.py"
+  ],
+  "empreintes_conformes": true,
+  "detail_empreintes": {
+   "chapters/N18/N18_a.html": {
+    "attendu": "95f05b1b1210f21856e9205e60e4108de6ac19bee6c78367e119fdfc706e1676",
+    "calcule": "95f05b1b1210f21856e9205e60e4108de6ac19bee6c78367e119fdfc706e1676",
+    "conforme": true
+   },
+   "chapters/N18/N18_b.html": {
+    "attendu": "16a5e5fa164eba823b322f94548957bce3a92131542220ecdd9f9ce302773db0",
+    "calcule": "16a5e5fa164eba823b322f94548957bce3a92131542220ecdd9f9ce302773db0",
+    "conforme": true
+   },
+   "chapters/N18/N18_c.html": {
+    "attendu": "cc90129b56c00a29277f083cac3ae6fae801b41cbe48040e1c67385eb7bb43ee",
+    "calcule": "cc90129b56c00a29277f083cac3ae6fae801b41cbe48040e1c67385eb7bb43ee",
+    "conforme": true
+   },
+   "chapters/N18/N18_d.html": {
+    "attendu": "f317270b1d3f6bdfe0b2b768699fed890bc25624e096b935fda7ae102aaf88c6",
+    "calcule": "f317270b1d3f6bdfe0b2b768699fed890bc25624e096b935fda7ae102aaf88c6",
+    "conforme": true
+   },
+   "chapters/N18/N18_pop1.html": {
+    "attendu": "a1b7fadb418ef3ff4db1e82dddc3d51ea20d553f0f0479702b1cc45c6fb7f6e9",
+    "calcule": "a1b7fadb418ef3ff4db1e82dddc3d51ea20d553f0f0479702b1cc45c6fb7f6e9",
+    "conforme": true
+   },
+   "chapters/N18/N18_pop2.html": {
+    "attendu": "06b0ae573ba1fc9bcc7ae20cad63903e999ffbecd7f948ee77512ebaf3e7e218",
+    "calcule": "06b0ae573ba1fc9bcc7ae20cad63903e999ffbecd7f948ee77512ebaf3e7e218",
+    "conforme": true
+   },
+   "glossary/n18.py": {
+    "attendu": "bbc7be298bc54c4474ef226ea7dda4d09623c6c458e905318e7411a09d3a6a73",
+    "calcule": "bbc7be298bc54c4474ef226ea7dda4d09623c6c458e905318e7411a09d3a6a73",
+    "conforme": true
+   }
+  },
+  "surfaces_lues": "texte, tableaux, figures et légendes, quiz, 111 fenêtres (dont Pareto), div.alert N18-C0177, div.key, glossaire n18.py"
+ },
+ "premiere_source_lue": {
+  "source_id": "S13",
+  "url": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+  "section": "Posologie/Mode d’emploi — Insuffisance rénale et réduction de dose FANV (FI Eliquis, août 2026)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 2,
+  "MINEUR": 1,
+  "ENRICHISSEMENT": 5
+ },
+ "constats": [
+  {
+   "id": "MED-01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/N18/N18_d.html",
+   "ancre": "N18-C0283 — « Pour la néphropathie selon la FI de Ramipril Zentiva, la dose initiale est 1,25 mg une fois par jour »",
+   "constat": "Le parcours protecteur prend Ramipril Zentiva comme bloqueur de référence et présente 5 mg/jour comme dose cible, sans dire que l’indication rénale de cette FI suisse est restreinte à la néphropathie glomérulaire avec protéinurie > 3 g/jour ; M. L. (diabète de type 2, hypertension, ACR 35 mg/mmol) n’entre pas dans cette indication. Le principe « dose maximale tolérée et autorisée » (SSN 2025) et « highest approved dose that is tolerated » (KDIGO PP 3.6.1) n’est jamais énoncé pour le bloqueur ; l’alternative suisse dont la FI couvre exactement la néphropathie du diabétique hypertendu (Aprovel 300 mg, sans adaptation rénale) est absente. La fenêtre n18-ramipril (N18-C0308) signale correctement la restriction, mais le corps P01 et le cas fil rouge ne l’exploitent pas.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Indications",
+     "citation_courte": "Néphropathie glomérulaire avec protéinurie supérieure à 3 g/jour."
+    },
+    {
+     "source_id": "S7",
+     "section": "Posologie — Néphropathie",
+     "citation_courte": "La dose journalière maximale autorisée s'élève à 5 mg de ramipril."
+    },
+    {
+     "source_id": "S2",
+     "section": "Figure 3",
+     "citation_courte": "Inhibiteurs du SRA à la dose maximale tolérée et autorisée (en cas d’HTA ou d’un ACR > 3 mg/mmol)"
+    },
+    {
+     "source_id": "S1",
+     "section": "Practice Point 3.6.1",
+     "citation_courte": "RASi … should be administered using the highest approved dose that is tolerated"
+    },
+    {
+     "source_id": "S8",
+     "section": "Indications / Posologie usuelle",
+     "citation_courte": "néphropathie … hypertension et diabète sucré de type II … 300 mg en une prise par jour"
+    }
+   ],
+   "proposition": "propositions/N18_d_1.html (paragraphes à insérer après N18-C0283 ; adapter l’exemple de M. L. en A07/A11).",
+   "justification": "Mécanisme : la protection antiprotéinurique et cardiovasculaire a été démontrée aux doses maximales tolérées. Conséquence : un plafond d’indication (5 mg) lu comme plafond de classe, ou un produit hors indication rénale, sous-dose ou expose à une prescription hors indication. Décision : choisir le produit dont l’indication couvre la situation et titrer jusqu’au maximum autorisé toléré, avec contrôle à chaque palier.",
+   "ancre_verifiee": true,
+   "extrait_present": true
+  },
+  {
+   "id": "MED-02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancre": "N18-C0113 — « ne doit pas être confondu avec la FI de Forxiga : ce produit ne recommande pas une initiation au-dessous de 25 »",
+   "constat": "Le cours oppose la recommandation de classe (instauration dès DFGe 20) à la seule FI de Forxiga (pas d’instauration < 25) et répète cette opposition dans l’encadré N18-C0120 et les Pareto, sans indiquer qu’une spécialité suisse, Jardiance (empagliflozine), peut être instaurée jusqu’à 20 mL/min/1,73 m² selon sa FI. Au point de décision DFGe 20–24, le lecteur ne dispose d’aucune option conforme.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Posologie/Mode d’emploi",
+     "citation_courte": "l'instauration d'un traitement par l'empagliflozine n'est pas recommandée chez les patients présentant un DFGe < 20"
+    },
+    {
+     "source_id": "S3",
+     "section": "Figure 2",
+     "citation_courte": "Jardiance … le traitement peut être initié jusqu'à un DFGe de 20 … Forxiga … jusqu'à un DFGe de 25"
+    },
+    {
+     "source_id": "S9",
+     "section": "Posologie",
+     "citation_courte": "L'instauration d'un traitement chez ces patients [DFGe < 25] n'est pas recommandée."
+    },
+    {
+     "source_id": "S2",
+     "section": "Figure 3",
+     "citation_courte": "iSGLT2 … Si DFGe entre 20 - 45 ml/min"
+    }
+   ],
+   "proposition": "propositions/N18_b_1.html (insertion après N18-C0113 ; reformuler N18-C0120, N18-C0785 et N18-C0821 : « … Forxiga ne s’instaure pas au-dessous de 25, Jardiance au-dessous de 20 mL/min/1,73 m² »).",
+   "justification": "Mécanisme : le bénéfice rénal des inhibiteurs SGLT2 persiste à DFGe bas (essais incluant 20–25). Conséquence : présenter Forxiga comme seule option fait renoncer à tort au traitement entre 20 et 24. Décision : choisir le produit dont la FI couvre le DFGe du patient.",
+   "ancre_verifiee": true,
+   "extrait_present": true
+  },
+  {
+   "id": "MED-03",
+   "gravite": "MINEUR",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancre": "N18-C0126 — « La fiche SSN 2025 présente ferritine 300–500 ng/mL, saturation de la transferrine &gt; 30 % et hémoglobine 100–115 g/L comme repères »",
+   "constat": "La fiche SSN 2025 intitule ces valeurs « Objectifs » ; le cours les rebaptise « repères ». La résolution par KDIGO 2026 (plus récente, spécifique) est correcte, mais la source suisse doit être citée fidèlement avant d’être départagée.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Figure 3, Anémie",
+     "citation_courte": "Objectifs : Ferritine:300–500 ng/ml ; TSAT > 30 % ; Hb : 10–11,5 g/dl"
+    },
+    {
+     "source_id": "S4",
+     "section": "Iron supplementation initiation thresholds",
+     "citation_courte": "initiation … ferritin <100 … and TSAT <40% or … 100 to 300 … TSAT <25%"
+    }
+   ],
+   "proposition": "propositions/N18_b_6.html (remplacement de la première phrase de N18-C0126).",
+   "justification": "Mécanisme : un objectif martial élevé pousse à des perfusions répétées. Conséquence : taire le statut d’« objectif » masque la divergence réelle entre textes. Décision : citer exactement, puis appliquer la règle de la source applicable la plus récente déjà retenue par le cours.",
+   "ancre_verifiee": true,
+   "extrait_present": true
+  },
+  {
+   "id": "MED-04",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancre": "N18-C0116",
+   "constat": "Rubrique 12/15 : l’adaptation de la metformine au DFGe (Glucophage : 30–59 → début 500–850 mg, maximum 1 000 mg/j ; < 30 contre-indiquée ; arrêt 48 h avant produit de contraste iodé si DFGe < 60) est absente alors que le cas fil rouge est un diabétique G3b ; le consensus SSED/SSN déconseille d’instaurer à 30–45.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Instructions posologiques particulières",
+     "citation_courte": "La dose journalière maximale est de 1000 mg, en deux doses individuelles."
+    },
+    {
+     "source_id": "S11",
+     "section": "Contre-indications",
+     "citation_courte": "insuffisance rénale grave (clairance de la créatinine < 30 ml/min ou TFGe < 30"
+    },
+    {
+     "source_id": "S3",
+     "section": "Figure 2",
+     "citation_courte": "Glucophage … 500-1000mg/j … ne pas initier"
+    }
+   ],
+   "proposition": "propositions/N18_b_2.html",
+   "justification": "Mécanisme : élimination rénale inchangée, accumulation et acidose lactique. Conséquence : dose non plafonnée chez un G3b. Décision : plafonner, surveiller, arrêter sous 30.",
+   "ancre_verifiee": true
+  },
+  {
+   "id": "MED-05",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancre": "N18-C0146",
+   "constat": "Rubrique 14/16 : aucune vaccination n’est mentionnée (grippe, COVID-19 si DFG < 60, pneumocoques dès le stade 4 ou syndrome néphrotique, hépatite B 40 µg chez le dialysé selon le plan suisse 2026).",
+   "preuve": [
+    {
+     "source_id": "S23",
+     "section": "Pneumocoques",
+     "citation_courte": "Insuffisance rénale à partir du stade 4 (DFG < 30 ml / min)"
+    },
+    {
+     "source_id": "S23",
+     "section": "Hépatite B",
+     "citation_courte": "Personnes dialysées : 3 doses aux temps 0, 1 et 6 mois (vaccin monovalent avec dosage pour dialyse 40 µg)"
+    },
+    {
+     "source_id": "S23",
+     "section": "COVID-19",
+     "citation_courte": "Insuffisance rénale chronique avec un débit de filtration glomérulaire (DFG) < 60 ml / min"
+    }
+   ],
+   "proposition": "propositions/N18_b_3.html",
+   "justification": "Mécanisme : risque accru de formes graves et exposition au circuit de dialyse. Conséquence : prévention manquée. Décision : intégrer les indications suisses au suivi.",
+   "ancre_verifiee": true
+  },
+  {
+   "id": "MED-06",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancre": "N18-C0127",
+   "constat": "Rubrique 13 : hyperuricémie et goutte absentes (KDIGO 2024 section 3.14 : traiter la goutte, ne pas traiter l’hyperuricémie asymptomatique pour ralentir la maladie rénale ; colchicine faible dose ou glucocorticoïdes plutôt qu’AINS).",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Recommendation 3.14.1",
+     "citation_courte": "people with CKD and symptomatic hyperuricemia should be offered uric acid–lowering intervention (1C)"
+    },
+    {
+     "source_id": "S1",
+     "section": "Recommendation 3.14.2",
+     "citation_courte": "We suggest not using agents to lower serum uric acid in people with CKD and asymptomatic hyperuricemia (2D)"
+    }
+   ],
+   "proposition": "propositions/N18_b_4.html",
+   "justification": "Mécanisme : excrétion urique réduite. Conséquence : traitement inutile de l’asymptomatique ou AINS néphrotoxique en crise. Décision : schéma KDIGO.",
+   "ancre_verifiee": true
+  },
+  {
+   "id": "MED-07",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancre": "N18-C0118",
+   "constat": "Rubrique 12 : la poursuite de l’IEC/sartan lorsque le DFGe passe sous 30 (KDIGO PP 3.6.7) et les seuls motifs de réduction (PP 3.6.5) ne sont pas énoncés ; piège d’examen fréquent.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Practice Point 3.6.7",
+     "citation_courte": "Continue ACEi or ARB in people with CKD even when the eGFR falls below 30"
+    },
+    {
+     "source_id": "S1",
+     "section": "Practice Point 3.6.5",
+     "citation_courte": "symptomatic hypotension or uncontrolled hyperkalemia … or to reduce uremic symptoms … eGFR <15"
+    }
+   ],
+   "proposition": "propositions/N18_b_5.html",
+   "justification": "Mécanisme : bénéfice cardiovasculaire et rénal maintenu. Conséquence : arrêt réflexe sous 30 = perte de protection. Décision : poursuivre sauf motif listé.",
+   "ancre_verifiee": true
+  },
+  {
+   "id": "MED-08",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/N18/N18_pop1.html",
+   "ancre": "N18-C0468",
+   "constat": "Rubrique 12/13 : la fenêtre fer et anémie reprend la cible KDIGO 2026 (< 115 g/L) mais omet le seuil d’instauration d’un agent stimulant chez le non-dialysé (85–100 g/L, individualisé), la vitesse de hausse tolérée (≈ 10 g/L/2 semaines, réduction 25–50 %) et le traitement martial de la carence profonde sans anémie.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Personalizing Hb targets",
+     "citation_courte": "target Hb ≤11.5 g/dl … typically between 10 and 11.5 g/dl"
+    },
+    {
+     "source_id": "S4",
+     "section": "ESA initiation",
+     "citation_courte": "the Hb threshold for initiation should be 8.5–10.0 g/dl"
+    },
+    {
+     "source_id": "S4",
+     "section": "Safety of ESA",
+     "citation_courte": "avoid rapid increases of more than about 1 g/dl … every 2 weeks … reduced by 25%–50%"
+    }
+   ],
+   "proposition": "propositions/N18_pop1_1.html",
+   "justification": "Mécanisme : hausse rapide de l’hémoglobine et cibles hautes liées à l’hypertension et aux événements vasculaires. Conséquence : instauration trop précoce ou titration trop rapide. Décision : seuils KDIGO 2026 en plus de la FI.",
+   "ancre_verifiee": true
+  }
+ ],
+ "verifications_conformes": [
+  "Eliquis : réduction 2,5 mg × 2 selon ≥ 2 critères indépendamment de la seule fonction rénale — conforme FI (août 2026)",
+  "Kerendia : 10 mg initial avec inhibiteur modéré du CYP3A4, seuils K+ 4,8/5,0/5,5 — conformes FI (nov. 2025)",
+  "Forxiga : pas d’instauration < 25, arrêt avant dialyse/transplantation, DAPA-CKD (4304, HR 0,61, NNT 19/27 mois) — conformes FI (août 2026)",
+  "Aspirine Cardio : contre-indication clairance < 30 — conforme FI (mars 2026)",
+  "Venofer : 500 mg > 70 kg / 7 mg/kg ≤ 70 kg sur ≥ 3,5 h, Ganzoni 15 g/dL + 500 mg — conformes FI (mai 2025)",
+  "Aranesp : cible 10–12 g/dL, réduction ≈ 25 % si hausse > 2 g/dL/4 sem., HTA mal contrôlée contre-indiquée — conformes FI (déc. 2022)",
+  "Crestor : 5 mg initial, 40 mg contre-indiqué < 60, contre-indiqué < 30 — conformes FI (juin 2026)",
+  "Néphrotrans : 137 mg Na/capsule, régime pauvre en sel contre-indiqué — conformes FI (août 2025)",
+  "Ozempic : indication rénale, 1 mg/sem. — conformes FI (juil. 2026)",
+  "Veltassa, Aldactone, Lasix : points échantillonnés conformes",
+  "KDIGO 2024 : seuils G/A, 20 %/30 %, doublement ACR, KFRE 3–5 %/10 %/40 %, protéines 0,8 g/kg, bicarbonate < 18, finérénone 2A, figure 48, dialyse 5–10 — conformes",
+  "KDIGO 2026 anémie : seuils martiaux et Hb ≤ 115 g/L — conformes",
+  "SSN 2025 et SSED/SSN 2024 : critères de recours, drapeaux rouges, seuils d’âge, K+ 5,5/6, bicarbonate 22–26, 40 % — conformes",
+  "HUG : valeurs de référence (page 09.03.2026) et stratégie 2017 — conformes",
+  "Calculs recalculés : CKD-EPI 2021 (46 ; 112 ; 29 ; 59,4 ; 126 ; 43), KFRE (7,4 % ; 22,0 % ; 8,9 %), ACR, Cockcroft (45,8 ; 28,6), clairance (83,3), Ganzoni (1 340), désindexations — exacts",
+  "Coefficients KFRE (Schulz 2022) et constantes CKD-EPI SI (DEKS 2025) — conformes"
+ ],
+ "matrice_20": [
+  {
+   "n": 1,
+   "rubrique": "Question clinique et enjeu pour l'examen fédéral",
+   "statut": "couvert",
+   "localisation": "A01 n18-a01 ; quiz A06"
+  },
+  {
+   "n": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "localisation": "Définition KDIGO A02/A12 couverte ; libellés OFS, inclusions/exclusions et notes BfArM absents"
+  },
+  {
+   "n": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "localisation": "A03 n18-a03, fenêtres n18-dfg, n18-a3-borne"
+  },
+  {
+   "n": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "localisation": "A04 N18-C0084 (1 adulte sur 10 en Suisse) ; aucune donnée européenne, d’incidence, d’âge ni de sexe ; épidémiologie de la suppléance absente"
+  },
+  {
+   "n": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "couvert",
+   "localisation": "S01–S04, n18-a01-fenetre-1, n18-s02-fenetre-1"
+  },
+  {
+   "n": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "localisation": "A04 partie 3, A05 N18-C0091/C0092, tableau A06"
+  },
+  {
+   "n": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "localisation": "A05 partie 3 : symptômes listés sans fréquences"
+  },
+  {
+   "n": 8,
+   "rubrique": "Examen clinique",
+   "statut": "partiel",
+   "localisation": "A05 partie 4, n18-a05-fenetre-1 ; sensibilité/spécificité absentes"
+  },
+  {
+   "n": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "couvert",
+   "localisation": "A05 partie 5, tableau A06 N18-C0929, n18-drapeaux, n18-hyperkal"
+  },
+  {
+   "n": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "localisation": "E01–E03 et fenêtres de calcul"
+  },
+  {
+   "n": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "localisation": "Tableau A06 N18-C0929–C0956"
+  },
+  {
+   "n": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "localisation": "A07, A08, P01–P02 ; réserves MED-01, MED-02, MED-04, MED-07"
+  },
+  {
+   "n": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "partiel",
+   "localisation": "A08, A09, E03 (KFRE) ; hyperuricémie absente (MED-06)"
+  },
+  {
+   "n": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "localisation": "A11, matrice n18-a03-fenetre-2 ; vaccinations absentes (MED-05)"
+  },
+  {
+   "n": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "localisation": "A11 partie 2 : enfant et grossesse brièvement ; âgé fragile couvert"
+  },
+  {
+   "n": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "localisation": "SSN, SSED/SSN, FI suisses, liste des spécialités (Kerendia) ; AI, aptitude à la conduite, Swisstransplant absents"
+  },
+  {
+   "n": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "couvert",
+   "localisation": "N18-C0177 (div.alert)"
+  },
+  {
+   "n": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "couvert",
+   "localisation": "N18-C0178 (div.key)"
+  },
+  {
+   "n": 19,
+   "rubrique": "Sous-codes CIM-10-GM",
+   "statut": "couvert",
+   "localisation": "A03 partie 5, A10, glossaire n18.py (libellés non revérifiés contre le catalogue OFS)"
+  },
+  {
+   "n": 20,
+   "rubrique": "Points d'examen fédéral",
+   "statut": "partiel",
+   "localisation": "Pareto « Piège à éviter » par partie ; aucun renvoi aux objectifs PROFILES/SSP"
+  }
+ ],
+ "lacunes": [
+  "Libellés CIM-10-GM 2024 (OFS/BfArM) de N18.1–N18.9, N18.80, N18.89 non revérifiés contre le catalogue officiel (aucune lecture du catalogue OFS dans cette mission).",
+  "Spécificités suisses non recherchées : assurance-invalidité, aptitude à la conduite, Swisstransplant, registre suisse de dialyse ; aucune proposition faute de source lue.",
+  "Épidémiologie européenne et incidence de la suppléance en Suisse non recherchées.",
+  "Fenêtres Norvasc, Ezetrol, Repatha et Eliquis (hors renal) : FI non relues ligne à ligne (échantillonnage limité aux points rénaux).",
+  "Traitement d’urgence de l’hyperkaliémie (gluconate de calcium, insuline–glucose) non traité par le cours ; renvoi probable vers un chapitre E87, non vérifié.",
+  "Microangiopathie thrombotique : la ligne du tableau A06 ne cite ni schizocytes ni haptoglobine ; aucune source lue dans cette mission ne les mentionne, donc aucune proposition.",
+  "Objectifs PROFILES/SSP pour N18 non consultés."
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
