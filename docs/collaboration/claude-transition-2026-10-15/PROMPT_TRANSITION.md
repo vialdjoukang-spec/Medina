@@ -43,6 +43,8 @@ Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche
 ## 4 ter. Leçon apprise sur la CI
 Une branche en retard sur `main` échoue à « MEDINA / mission et périmètre » : les fichiers modifiés depuis dans `main` y apparaissent comme des changements hors périmètre. Avant toute PR, fusionner `origin/main` dans la branche (commit de fusion, sans rebase ni force), puis revérifier `ai_session_guard.py check` et `alpha_publication.py`.
 
+**Leçon du 15.10, 21 h 10 :** la revue automatique de Codex arrive 1 à 3 minutes après la CI. Ne fusionner qu'**après** cette revue et après avoir traité ses constats. E11, N18 et I61 ont été fusionnées trop tôt : il en reste quatre erreurs médicales vérifiées (N18 L31, L38, L158 ; I61 Glasgow V4 attribué à une dysarthrie), un constat plausible (N18 L152) et le mode Livre non testé pour E11. Des missions `-CORR` ont été demandées sur l'issue 107 (commentaire 6202361830). La question du sixième sous-onglet (5 ou 6 sous-onglets) reste à trancher.
+
 ## 4 bis. BLOQUANT OUTIL — `tools/alpha_publication.py` (fichier Codex, partagé)
 Le contrôle « attribution invisible dans le cours » échoue toujours. Le cours est dans `<template id="ch-<CODE>">` (de `_a` à `_d`), les Sciences sont `hidden`, et l'ordre de concaténation vient d'un `set` (aléatoire). Tout reçu d'une leçon contenant une figure attribuée est donc refusé. Signalé à Codex (issue 107) avec une proposition de correction. Ne jamais contourner. C77 : reçu `0001.json` prêt mais NON poussé (commit local `ec1e645e`, qui sera perdu avec l'ancien conteneur : régénérer depuis `64257cb8`), corrections poussées en `64257cb8`, empreintes de revue/ à mettre à jour par P.
 
