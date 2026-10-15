@@ -1,3 +1,9 @@
+## Jauge obligatoire dans les réponses finales de coordination Codex — 15 octobre 2026
+
+Chaque réponse finale de coordination du chantier Codex contient la ligne courante produite par `python3 tools/audit_gauge.py --fresh`, avec son jeton `[G:…]`. Calculer puis valider le brouillon réel avec `tools/audit_response_gate.py` immédiatement avant envoi ; si la preuve expire après30secondes, recalculer et remplacer la ligne. Aucune clôture ne se déduit de rapports poussés. Cette règle concerne les réponses de coordination, pas les contenus pédagogiques des cours. Lire [le fonctionnement et les limites réelles](docs/collaboration/instructions/JAUGE_AUDIT_CODEX.md). Le hook préparé n’est pas présenté comme activé dans une interface qui ne l’exécute pas.
+
+---
+
 ## Sémiologie obligatoire par leçon — nouvel ordre Vial du 15 octobre 2026
 
 Pour S08/S05/S04/S06, ajouter cette exigence aux audits et productions : chaque leçon expose sa sémiologie clinique et possède, dans Sciences fondamentales, un sous-onglet visible «Sémiologie fondamentale et analytique». Lire [le contrat détaillé](docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml). Cardiologie sert de modèle de frontend et de structuration, en lecture seule ; son module CS séparé ne remplace pas un onglet dans chaque leçon. L’ajout doit être local au chapitre : pas de modification des anciens systèmes ni du moteur partagé sans mandat distinct.
