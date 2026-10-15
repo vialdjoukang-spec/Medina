@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "actor": "Codex",
+  "code": "E10",
+  "kind": "SEMIO",
+  "status": "provisional",
+  "medical_human_validation": false,
+  "reviewer_role": "auditeur médical final IA distinct de l’auteur/intégrateur",
+  "reviewed_at": "2026-10-15T21:08:10.506159+00:00",
+  "base_sha": "3131a5cbf6cc003ead358e25152073959c53c4d9",
+  "source_files_sha256": {
+    "chapters/E10/E10_a.html": "e8a5d481d7bed026e5a757f84c6df001fd996c19415f0e01dd40f8b50cf1e356",
+    "chapters/E10/E10_b.html": "f19a7c31f369bc628a06b15dacaf3a39f829cae5704c1ad919c6e7869716d46d",
+    "chapters/E10/E10_c.html": "1106c5d4d9b0af8a8ad72183c6cb57a199893d0fe2b599ff2b44541875639ce0",
+    "chapters/E10/E10_d.html": "a20ff5600f33a0724f91c4c80f64367b7c80e455912e5710ea7a7a903a56e4c8",
+    "chapters/E10/E10_pop1.html": "062d56893bb81f74793c715f46acb9b875642649bb836a42f325178a3c94ceee",
+    "chapters/E10/E10_pop2.html": "e184641f07ae0f81d1c694687f18e934c2972d4bda0f7a5ede7b0a3d4f62f66f",
+    "glossary/e10.py": "35bb81ceb673273265d2b01c02d9a7208cae2d14ced6ef1417c23c26292137b1"
+  },
+  "reviewed_files_sha256": {
+    "chapters/E10/E10_a.html": "745e6a4cede2a4302477d07f1c7faa6cfbd9f81bf2a95d8aa5fba7887bb35031",
+    "chapters/E10/E10_b.html": "0a607a45134fcbd02cd574d3b645d780af72ffc8779bbb7cbfe2127391844285",
+    "chapters/E10/E10_c.html": "2fb982d4eabf218949f065f047b596f81e3db319801f411e46048972fc84f9b0",
+    "chapters/E10/E10_d.html": "ba55f36620ecd494cb150b9494b844e231c54450107cdfa8e35f7d24459a383b",
+    "chapters/E10/E10_pop1.html": "da04d417483be78fc699fc52890c34c5381fe068dfbf0bf84887bd9c5bb048a4",
+    "chapters/E10/E10_pop2.html": "fe38de5380d470f73499110ab6514bc6ba404b90966f4bebe497cb3d0bcd1295",
+    "glossary/e10.py": "7250227b1352492e0b2d7f10c1fda6e372b82f1a778a2a44b40ccff954b35bd1",
+    "assets/img/e10/alpha/codex/e10-ketogenesis-original.jpg": "235b21fa80383b259e1b95a64827ca62a9eaac5f4dcf6a4859db5128c7185b5e"
+  },
+  "requirements_reviewed": {
+    "fundamental_analytical_semiology": true
+  },
+  "findings": [
+    {
+      "id": "FINAL-PREGNANCY",
+      "status": "resolved",
+      "severity": "MAJEUR",
+      "finding": "Les pourcentages génériques de modification insulinique pendant la grossesse ne reposaient pas sur une FI du produit exact. Retirés de A11; adaptation individuelle sourcée NovoRapid/Tresiba.",
+      "evidence": [
+        "final-claim-mapping.json#FINAL-PREG-ASPART",
+        "final-claim-mapping.json#FINAL-PREG-DEGLUDEC",
+        "chapters/E10/E10_b.html#e10-a11-partie-4"
+      ]
+    },
+    {
+      "id": "ALPHA1-M01-M05-L01",
+      "status": "resolved",
+      "finding": "Corrections vasculaire, urgence, digestif, cétogenèse et unités présentes. Les débits IV humains sans FI sont retirés; aucun débit aspart substitué.",
+      "evidence": [
+        "reprise-propositions.json",
+        "correction-insuline-iv.json",
+        "claim-mapping.json"
+      ]
+    },
+    {
+      "id": "FOLLOWUP2017",
+      "status": "non_blocking",
+      "finding": "Le document suisse2017 a été effectivement rouvert; HbA1c au moins2/an, rein/pieds au moins1/an, yeux au moins tous2ans confirmés comme critères populationnels2017.",
+      "evidence": [
+        "final-claim-mapping.json#FINAL-QUALITY"
+      ]
+    },
+    {
+      "id": "SEMIO-CONTRACT",
+      "status": "resolved",
+      "finding": "Premier onglet, neuf sections, clinique pA, chaînes mécanisme→signe→mesure→décision et limites présents. Vérification frontend réelle jointe.",
+      "evidence": [
+        "chapters/E10/E10_c.html#e10-s-semio",
+        "browser-check.json",
+        "source-verification.json"
+      ]
+    },
+    {
+      "id": "REMAINING-SOURCES",
+      "status": "open",
+      "severity": "MAJEUR",
+      "finding": "Restent : OFS applicable, stades présymptomatiques et épidémiologie type1, confirmation diagnostique asymptomatique suisse actuelle, échéancier individuel actuel, remboursement2026, revalidation exhaustive biochimie/immunologie héritées et figures historiques autres que6/8/9. Les sources relues ne ferment pas ces lacunes.",
+      "evidence": [
+        "rapport.md#matrice-de-complétude-et-réserves",
+        "figures-provenance.json",
+        "final-claim-mapping.json#failed_access"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "type": "source_passages",
+      "path": "/workspace/medina-alpha77/E10/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E10-INTEGRATE/final-claim-mapping.json",
+      "sha256": "387472ff320149e40af4be4167a9baeed1a2a9b8927ce12f9af285ed7eeca231",
+      "actual_passages": [
+        {
+          "id": "FINAL-PREG-ASPART",
+          "source_id": "S5",
+          "url": "https://amiko.oddb.org/fr/fi?gtin=7680550450024",
+          "publisher": "Swissmedic/AIPS via AmiKo",
+          "version": "avril 2026",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "Grossesse/allaitement",
+          "actual_passage": "Grossesse, allaitement\n Grossesse\n NovoRapid (insuline aspart) peut être utilisé durant la grossesse. Les données issues de deux études cliniques contrôlées randomisées (322 et 27 grossesses exposées, dont 157 et 14 avaient reçu NovoRapid) ne laissent pas supposer que l'insuline aspart provoque des effets secondaires sur la grossesse ou la santé du foetus/du nouveau-né par comparaison avec l'insuline humaine (voir sous «Propriétés/Effets»).\n Un contrôle intensif de la glycémie ainsi que des contrôles plus fréquents de la glycémie sont recommandés chez les femmes enceintes atteintes d'un diabète (diabète de type 1, diabète de type 2 ou diabète gestationnel) ainsi que chez les femmes diabétiques qui prévoient une grossesse.\n Aussi bien l'hypoglycémie que l'hyperglycémie susceptibles d'apparaître lors d'un traitement du diabète insuffisamment contrôlé augmentent le risque de malformation et de mort foetale in utéro. C'est pourquoi les femmes atteintes de diabète et qui planifient une grossesse ou qui sont déjà enceintes doivent faire l'objet d'une surveillance plus intense.\n Au cours du premier trimestre, le besoin d'insuline baisse habituellement, mais il augmente ensuite au cours du deuxième et du troisième trimestre.\n Après l'accouchement, le besoin d'insuline",
+          "text_sha256": "5596fe8262e37b33f58f748c6bb4820df12c108a6cc18bf88d647f12822de5d6",
+          "population": "Diabète et grossesse",
+          "limitations": "Pas de pourcentage universel de modification de dose",
+          "locations": [
+            "e10-a11-partie-4"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-PREG-DEGLUDEC",
+          "source_id": "S6",
+          "url": "https://amiko.oddb.org/fr/fi?gtin=7680625620017",
+          "publisher": "Swissmedic/AIPS via AmiKo",
+          "version": "décembre 2024",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "Grossesse/allaitement",
+          "actual_passage": "Grossesse, allaitement\n Grossesse\n L'emploi de Tresiba chez la femme enceinte diabétique de type 1 a été évalué dans une étude de phase 3b (92 patientes dans le bras Tresiba) et une étude prospective non interventionnelle (41 patientes) (voir sous «Propriétés/Effets»), dans lesquelles aucune malformation ou toxicité fœtale/néonatale n'a été observée sous Tresiba. Le traitement par Tresiba peut être envisagé pendant la grossesse en cas d'indication clinique.\n Les études sur la reproduction animale n'ont mis en évidence aucune différence entre l'insuline dégludec et l'insuline humaine en termes d'embryotoxicité ou d'effets tératogènes (voir sous «Données précliniques»).\n Chez la femme enceinte diabétique, il est généralement recommandé d'intensifier le contrôle glycémique et la surveillance tout au long de la grossesse ainsi qu'en cas de projet de grossesse. Les besoins en insuline diminuent habituellement au cours du premier trimestre puis augmentent au cours des deuxième et troisième trimestres. Après l'accouchement, les besoins en insuline reviennent généralement rapidement au niveau antérieur à la grossesse.\n Allaitement\n Il n'existe pas de données cliniques concernant l'emploi de Tresiba chez la femme qui allaite. Chez les rats, l'insuline dégludec a été détectée dans le lait maternel, toutefois à des concentrations inférieures à celles dans le plasma.\n On ignore si l'insuline dégludec passe également dans le lait maternel humain. C'est pourquoi Tresiba ne devrait pas être utilisé par des fem",
+          "text_sha256": "ecb8890d62b93ff02df1aa6270af709e5cb146410f1a19e1b7de855b82a5d3c3",
+          "population": "Type1 et grossesse",
+          "limitations": "Traitement envisagé sur indication clinique; allaitement déconseillé dans cette FI",
+          "locations": [
+            "e10-a11-partie-4"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-PREG-SSED",
+          "source_id": "S1",
+          "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/2025_Swiss_Diabetes_and_Technology_Recommendations_inkl_Table_E.pdf",
+          "publisher": "SSED",
+          "version": "25 février 2025",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "p24, conclusion pregnancy",
+          "actual_passage": "There is an increased hypoglycemia rate early in pregnancy due to a higher insulin sensitivity, followed\nby an increasing insulin resistance from mid pregnancy with delayed insulin action with advancing\ngestation. Therefore, in women treated with MDI or an insulin pump, a decrease of the insulin rate in\nthe first trimester by 15 20% is required and for the one using an AID system the glycemic target and\nthe carbohydrate ratio need to be adapted. From week 16 onwards, the total insulin dose needs to be\nincreased by about 5% every week except for women using AID systems.\nAID systems automatically adapt insulin delivery. Women should be supervised to adjust carbohydrate\nfactors and to anticipate bolus timing, which is typically done 15–30 minutes before",
+          "text_sha256": "64e352549f0f3fcea4318e0b9eb2c54e61780bfe37bef94a65b584ac3dfd8cf2",
+          "population": "Grossesse sous insuline",
+          "limitations": "La synthèse propose bien des pourcentages, retirés ici de la prescription générique au profit des FI exactes",
+          "locations": [
+            "e10-a11-partie-4"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-QUALITY",
+          "source_id": "QUALITY2017",
+          "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/64_Ressourcen_Hausarzt/Diabetes_Kriterien_2017_SGED_def.pdf",
+          "publisher": "SSED",
+          "version": "23 août 2017",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "Tableau de critères, page unique",
+          "actual_passage": "HbA1c                       min. 2      HbA1c (DCCT-traceable)           Jahresdurchschnitt:\n(25 Punkte)                                                              < 9,0% bei 85 %                 12\n                                                                         < 8,0% bei 60 %                 +8\n                                                                         < 7,0% bei 40 %                 +5\n\nBlutdruck                   min. 2      Blutdruck, sitzend nach 5        Jahresdurchschnitt:\n(15 Punkte)                             Minuten Ruhe                     < 140/90 mmHg bei                15\n                                                                         65%\nLDL-Cholesterin bei         min. 1      LDL-Cholesterin bei Patienten                                     10\nPatienten unter 75                      unter 75 Jahren                  < 2,60 mmol/l bei  63%\nJahren                                  (bei mehr als einer Jahres-\n(10 Punkte)                             messung: Jahresdurchschnitt)\nNephropathiesuche           min. 1      Bestimmung Serumkreatinin +      bei 80% der Patienten           10\n(10 Punkte)                             Mikroalbuminurie\n\nAugenuntersuchung         min. alle     letzte Augenuntersuchung         bei 80 % der Patienten          10\n(10 Punkte)               2 Jahre       beim Augenarzt vor weniger\n                                        als 2 Jahren\nFussuntersuchung            min. 1      Puls +Monofilament              bei 80 % der Patienten          10\n(10 Punkte)                             Puls + Vibrationssinn\n\n\n\nZiel: 70 von 100 möglichen Punkten\n\n\n\n\n1Die erste Version dieser Kriterien wurde von d",
+          "text_sha256": "fdbd92e912cbbc3fbda6bfa17a29ec465cfe38a684cc0c0dfd6134d65c8efa10",
+          "population": "Diabète en premier recours",
+          "limitations": "Critères de qualité populationnels anciens; ne prouve pas un échéancier individuel actuel type1",
+          "locations": [
+            "e10-a09",
+            "e10-a11"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-CLASSIFICATION",
+          "source_id": "S8",
+          "url": "https://www.nice.org.uk/guidance/ng17/chapter/Recommendations",
+          "publisher": "NICE",
+          "version": "NG17, amendements 2022",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "1.1.1–1.1.9",
+          "actual_passage": "1.1.1\nMake an initial diagnosis of type 1 diabetes on clinical grounds in adults presenting with hyperglycaemia. Bear in mind that people with type 1 diabetes typically (but not always) have 1 or more of:\nketosis\nrapid weight loss\nage of onset under 50 years\nbody mass index (BMI) below 25 kg/m\n2\npersonal and/or family history of autoimmune disease.\n[2015, amended 2022]\n1.1.2\nDo not use age or BMI alone to exclude or diagnose type 1 diabetes in adults.\n[2022]\n1.1.3\nTake into consideration the possibility of other diabetes subtypes and revisit the diagnosis at subsequent clinical reviews. Carry out further investigations if there is uncertainty (see\nrecommendations 1.1.7 and 1.1.8\n).\n[2022]\n1.1.4\nMeasure diabetes-specific autoantibodies in adults with an initial diagnosis of type 1 diabetes, taking into account that:\nthe false negative rate of diabetes-specific autoantibody tests is lowest at the time of diagnosis\nthe false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes-specific autoantibodies (with at least 1 being positive).\n[2022]\n1.1.5\nDo not routinely measure serum C‑peptide to confirm type 1 diabetes in adults.\n[2022]\n1.1.6\nIn people with a negative diabetes-specific autoantibody result, and if diabetes classification remains uncertain, consider measuring non-fasting serum C‑peptide (with a paired blood glucose).\n[2022]\nRevisiting initial diagnosis\n1.1.7\nAt subsequent clinical reviews, consider using serum C‑peptide to revisit the diabetes classification if there is doubt that type 1 diabetes is the correct diagnosis.\n[2022]\n1.1.8\nTake into account that the discriminative value of serum C‑peptide to diagnose type 1 diabetes increases the longer the test is done after initial diagnosis of diabetes.\n[2022]\n1.1.9\nFor people aged 60 and over presenting with weight loss and new-onset diabetes, follow recommendations on assessing for pancreatic cancer in the\nsection on pancreatic cancer in the NICE guideline on suspected cancer: recognition and referral\n.\n[2022]\nFor a short explanation of why the committee made these recommendations and how they might affect practice, see the\nrationale and impact section on diagnosis\n.\nFull details of the evidence and the committee's discussion are in\nevidence review C: diagnosis of diabetes\n.\nEarly care plan\n1.1.10\nAt diagnosis (or, if necessary, after managing critically decompensated metabolism), the diabetes professional team should work with adults with type 1 diabetes to develop a plan for their early care. This will",
+          "text_sha256": "94e818cdf0f7e59ebf2c9406e2a9be9647779ed8cee8dcdf190ee72c4cb2a3c3",
+          "population": "Adultes",
+          "limitations": "Complément européen; pas protocole pédiatrique ou organisation NHS importée",
+          "locations": [
+            "e10-semio-signs",
+            "e10-semio-interpretation",
+            "e10-semio-differentials"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-DKA",
+          "source_id": "S9",
+          "url": "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf",
+          "publisher": "JBDS",
+          "version": "mars 2023",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "p10, critères",
+          "actual_passage": "Diagnosis of DKA\n\n   All of these must be present to make the diagnosis\n   The ‘D’ – a blood glucose concentration of >11.0 mmol/L or known to have\n   diabetes mellitus\n   The ‘K’ – The ‘K’ – a capillary or blood ketone concentration of >3.0 mmol/L or\n   significant ketonuria (2+ or more on standard urine sticks)\n   The ‘A’ – a bicarbonate concentration of <15.0 mmol/L and/or venous pH <7.3\n\n\nThe ADA definition is slightly different, and it also uses the anion gap as part of the\ndiagnostic crite",
+          "text_sha256": "4bbcc28fa9cbc77d3741daadc2009a04a9197e7d9cff9f2e280aad412c71c431",
+          "population": "Adultes hospitalisés",
+          "limitations": "Trois composantes réunies; critères attribués, distincts de la fiche RMS",
+          "locations": [
+            "e10-semio-interpretation"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-EXAM",
+          "source_id": "S9",
+          "url": "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_02_DKA_Guideline_with_QR_code_March_2023.pdf",
+          "publisher": "JBDS",
+          "version": "mars 2023",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "p12, differentials et bedside monitoring",
+          "actual_passage": "Differential diagnosis\nIt is important to exclude other cause of ketoacidosis, such as alcoholic ketoacidosis and\nstarvation ketosis.\nIn alcoholic ketoacidosis, the normal glucose concentration glucose is the key difference\nwith DKA – however, a careful history needs to be taken to differentiate it from euglycaemic\nDKA. Ketoacidosis without a raised glucose in a person with alcoholism is virtually diagnostic\nof alcoholic ketoacidosis (12). If alcoholic ketoacidosis is suspected, then ß-hydroxybutyrate\nshould be measured and not urine ketones, because acetoacetate production can be\nsupressed in alcoholic ketoacidosis. In addition, acetoacetate is measured by urinary dipstick.\nStarvation ketosis occurs due to a lack of carbohydrate intake and usually develops over\nseveral days. The low carbohydrate intake will lead to low insulin secretion, subsequent\nlipolysis and ketosis. Ketone concentrations can rise to over 6 mmol/L (13). However,\nbecause this condition arises over a prolonged period, renal compensation for the acidosis\nmeans that (as long as other nutrients are eaten) acid base and electrolyte disturbances are\noften minimal (14).\n\n\nPoint of care testing (‘bedside monitoring’)\nThese guidelines recommend that management be based on point of care testing of those\nadmitted with DKA. Blood glucose is routinely checked using point of care testing, but\nportable ketone meters now also allow point of care testing of 3-beta-hydroxybutyrate, the\nmain blood ketone. Blood ketone measurement represents best practice in monitoring the\nresponse to treatment (15). There have been some concerns raised about their accuracy\n(16), but to date no harm has been reported from their use, and the data from these meters\nis just one of the measurements that helps to guide therapy and diagnose resolution.\nAccess to blood gas and blood electrolyte measurement is now relatively easy and available\nwithin a few minutes of blood being taken. Venous blood gas can be used safely (17-19).\nTherefore glucose, ketones and electrolytes, including bicarbonate and venous pH, should\nbe assessed at or near the bedside using point of care testing.\nThe data informing these recommendations raise important issues (4):\n   • Staff must be trained in the use of point of care blood glucose and ketone meters in\n     line with local point of care testing policy and demonstrate continuing competence in\n     their use\n   • The meters should be subject to rigorous quality assurance\n   • Laboratory measurement will be required in certain circumstances, such as when\n     blood glucose or ketone meters are ‘out of range’\n   • Staff should be made aware of the interferences affecting glucose meters and of the\n     pre-analytical effects such as peripheral shutdown and shock\nFurthermore, initial training with regular updates and/or revalidation should be implemented\nfor all healthcare staff using POCT equipment and managed in line with local laboratory\nguidance. Additionally, point of care testing meters",
+          "text_sha256": "4bbcc28fa9cbc77d3741daadc2009a04a9197e7d9cff9f2e280aad412c71c431",
+          "population": "Adultes hospitalisés",
+          "limitations": "Méthode et qualité analytique; pas nouvelle posologie",
+          "locations": [
+            "e10-semio-examination",
+            "e10-semio-differentials"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-HYPO",
+          "source_id": "S2",
+          "url": "https://www.hug.ch/vdoc/HUG_000000812.pdf",
+          "publisher": "HUG",
+          "version": "2 septembre 2022",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "p1 suspicion",
+          "actual_passage": "En cas de suspicion d’hypoglycémie, avec ou sans symptômes (sudations,\n            tremblements, maux de tête, sauts d’humeur, troubles de la vue, faim, etc),\n            mesurer la glycémie et traiter selon les directives ci-dessous. Si la mesure de la\n            glycémie ne peut pas être effectuée immédiatement, traiter l’hypoglycémie\n            sans attendre le résultat de la glycémie.\n\n\n       2.   Prise en charge d’une ",
+          "text_sha256": "202dd51ac7e904ae41cc4d9475bc7c945bedb0cc36782acbf049d5e21c6f64c4",
+          "population": "Adulte hospitalisé",
+          "limitations": "Protocole institutionnel; doses hospitalières historiques hors périmètre de cette relecture",
+          "locations": [
+            "e10-semio-signs",
+            "e10-semio-urgency"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-RMS",
+          "source_id": "RMS",
+          "url": "https://www.revmed.ch/view/415288/3626033/RMS_639_449.pdf",
+          "publisher": "Revue Médicale Suisse",
+          "version": "2019",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "p449, suspicion et prise en charge initiale",
+          "actual_passage": "Critères de suspicion clinique\n                                                  Prise en charge initiale                       DR ISABELLE HAGON-TRAUB\n    Toute hyperglycémie capillaire ou vei­\nneuse > 11 mmol/l accompagnée de symp­                Mise en place d’une voie veineuse si       Programme cantonal Diabète, Avenue de Provence 12,\ntômes systémiques doit être considérée            possible, initier la réhydratation (idéale­    1007 Lausanne\ncomme une urgence hyperglycémique                 ment par perfusion de NaCl), corriger la       chantal.arditi@chuv.ch | isabelle.hagon@ehc.vd.ch\n                                                                                                 bernard.burnand@chuv.ch\njusqu’à preuve du contraire.                      glycémie après l’hydratation si le médecin\n\n\n\n\n                               ",
+          "text_sha256": "a9532d2bf04f1ae96179111d756f79221eff869c8342afa9ac171fe7e10962ee",
+          "population": "Ambulatoire suisse",
+          "limitations": "Règle de triage; ne permet pas exclusion d’une forme euglycémique",
+          "locations": [
+            "e10-semio-urgency"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-PHYSIOLOGY",
+          "source_id": "FIG6",
+          "url": "https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Anatomy_and_Physiology_1e_%28OpenStax%29/Unit_3%3A_Regulation_Integration_and_Control/17%3A_The_Endocrine_System/17.09%3A_The_Endocrine_Pancreas",
+          "publisher": "OpenStax via LibreTexts",
+          "version": "13 mai 2022",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "Figure1 et endocrine pancreas",
+          "actual_passage": "The pancreatic exocrine function involves the acinar cells secreting digestive enzymes that are transported into the small intestine by the pancreatic duct. Its endocrine function involves the secretion of insulin (produced by beta cells) and glucagon (produced by alpha cells) within the pancreatic islets. These two hormones regulate the rate of glucose metabolism in the body. The micrograph reveals pancreatic islets. LM × 760. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)\nCel",
+          "text_sha256": "51bb93300e04c5711a2d9c1f547af0f46d399ff724ffe24ee5215c02d1c6e5c8",
+          "population": "Physiologie générale",
+          "limitations": "Source pédagogique pour mécanismes; aucune recommandation thérapeutique américaine",
+          "locations": [
+            "e10-semio-normal",
+            "e10-semio-mechanisms"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-KETOGENESIS",
+          "source_id": "PMC8656040",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8656040/fullTextXML",
+          "publisher": "Kolb et al., BMC Medicine",
+          "version": "2021",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "Ketogenesis, figure1",
+          "actual_passage": "The release of fatty acids from adipocytes requires low insulin activity because this anabolic hormone is a potent inhibitor of lipolysis [\n1\n]. Free fatty acids in the plasma are taken up by most cell types for energy production, but primarily, hepatocytes can use them to generate ketone bodies for distribution as an alternative fuel to other cell types of the body if there is a lack of diet-derived glucose (Fig. \n1\n).\n\nFig. 1\nOverview of the ketogenesis and ketolysis pathways. In cases of limited availability of oxaloacetate, beta oxidation of fatty acids in hepatocytes leads to the accumulation of acetyl-CoA which is channeled into the ketogenic pathway and converted to acetoacetate, the majority of which is reduced to βOHB, another part spontaneously decarboxylates to acetone. Secreted βOHB and acetoacetate are taken up by extrahepatic cells and converted back to acetyl-CoA. The latter can be entered into the TCA cycle after conjugation with oxaloacetate by citrate synthase because there is no gluconeogenesis that would drain local pools of pyruvate and oxaloacetate. FFA, free fatty acids; mThiolase, mitochondrial thiolase; HMGCS2, hydroxy methylglutaryl-CoA synthase; HMGCL, HMG-CoA lyase; BDH1, mitochondrial βOHB dehydrogenase; MCT1/2, monocarboxylate transporter 1 and 2; SCOT, succinyl-CoA:3-oxoacid-CoA transferase; CS, citrate synthase\nBreakdown of fatty acids occurs in ",
+          "text_sha256": "d89e43899291cebb18276b46ce4f93d12c22edadcfc47b25d79826efd0de6eab",
+          "population": "Physiologie",
+          "limitations": "Revue mécanistique; pas régime proposé type1",
+          "locations": [
+            "e10-semio-mechanisms"
+          ],
+          "reading_level": "section"
+        },
+        {
+          "id": "FINAL-GLUCAGON",
+          "source_id": "S7",
+          "url": "https://amiko.oddb.org/fr/fi?gtin=7680674650010",
+          "publisher": "Swissmedic/AIPS via AmiKo",
+          "version": "mars 2026",
+          "consulted_at": "2026-10-15T21:08:10.506159+00:00",
+          "reading_method": "Lecture ciblée indépendante du texte de source acquis localement; pas réattribution de la lecture auteur",
+          "section": "Indication et posologie",
+          "actual_passage": "Indications/Possibilités d’emploi\n Baqsimi est indiqué dans le traitement d’hypoglycémies sévères chez les adultes, les adolescents et les enfants âgés de 1 an et plus ayant un diabète.\n\n Posologie/Mode d’emploi\n Posologie usuelle\n Adultes, adolescents et enfants âgés de 1 an et plus\n L’utilisation de Baqsimi chez les adultes, les adolescents et les enfants se fait par voie intranasale sous forme d’une dose unique de 3 mg.\n Instructions posologiques particulières\n Patients présentant des troubles de la fonction hépatique\n Aucune adaptation posologique sur la base de la fonction hépatique n'est requise. Aucune étude formelle pour l’évaluation du médicament en cas d’insuffisance hépatique n’a été réalisée.\n Patients présentant des troubles de la fonction rénale\n Aucune adaptation posologique sur la base de la fonction rénale n'est requise. Aucune étude formelle pour l’évaluation du médicament en cas d’insuffisance rénale n’a été réalisée.\n Patients âgés\n Aucune adaptation posologique sur la base de l’âge n'est requise.\n Enfants et adolescents\n Baqsimi n’est pas recommandé chez les enfants âgés de 0 à < 1 an, car il n’a pas été étudié dans ce groupe d’âge.\n Mode d’utilisation\n Utilisation nasale. Baqsimi est appliqué dans l’une des d",
+          "text_sha256": "d5dc9cc694bbc8ac292abcebe2f4456558bad80e63eca2cf4cbc699c0a6a1544",
+          "population": "Diabète dès1an",
+          "limitations": "Produit nasal exact, pas transfert à glucagon injectable",
+          "locations": [
+            "e10-p02"
+          ],
+          "reading_level": "section"
+        }
+      ]
+    },
+    {
+      "type": "frontend",
+      "path": "/workspace/medina-alpha77/E10/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E10-INTEGRATE/browser-check.json",
+      "sha256": "142577fbc5322072efbbe132f6a4d7cd975d70361476db9bd029dc15802cf390",
+      "scope": "Chromium1360et390; premieronglet, sixsélections, neufsections, Entrée/Espace, popup,24px,Livre"
+    },
+    {
+      "type": "verification",
+      "paths": [
+        "final-build.log",
+        "final-static.log",
+        "source-verification.json"
+      ],
+      "limitation": "audit_sciences historique en échec conservé; aucune modification du test partagé"
+    }
+  ],
+  "unresolved_blockers": [
+    "Révision Alpha en cours : certaines réserves thérapeutiques et sources héritées restent à vérifier ; les audits finaux de cette version ne sont pas clos."
+  ],
+  "review_scope": "Relecture ciblée indépendante des corrections Alpha1, de la sémiologie nouvelle et de la pharmacologie; pas certification exhaustive de chaque assertion/figure historique.",
+  "requirement": "fundamental_analytical_semiology"
+}
