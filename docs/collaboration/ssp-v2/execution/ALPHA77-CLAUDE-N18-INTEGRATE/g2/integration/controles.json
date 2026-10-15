@@ -6,7 +6,7 @@
  "date": "2026-10-15",
  "branche": "claude/alpha77/n18-integrate-g2",
  "base": "3969903cc87329bc471bf8ab7bce77f25544b76e",
- "source_commit": "37720fd8397e795f20c7133db63d9d435912636f",
+ "source_commit": "e5f8d171130b0d3a90669c40f6c887ad3d6600d7",
  "controles": {
   "build_medina_audit": {
    "commande": "build_medina.audit(src, nom) sur chapters/N18/*.html",
@@ -177,5 +177,9 @@
   "ai_session_guard_check": "passed (base 3969903 ; vérifié sur le commit final, voir PR)"
  },
  "captures": "integration/captures/g2/ : ouverture 1280, figure 9 à 390 et 1280, S05 à 390 et 1280, fenêtre S05 à 390, mode Livre + police 20 px à 1280",
- "mention": "Contrôles techniques et revue IA ; aucune validation médicale humaine."
+ "mention": "Contrôles techniques et revue IA ; aucune validation médicale humaine.",
+ "correctif_codex_p1": {
+  "constat": "PR 172 discussion_r4289027767 : non-récidive NPHS1 Fin-major",
+  "controles": "build_medina.audit() == {} ; test_v7.py --static N18 OK ; build_front.py --fragment S04 OK (5471283 → 4014771 octets) ; test_v7.py N18 Chromium OK"
+ }
 }
