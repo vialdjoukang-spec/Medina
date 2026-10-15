@@ -1,0 +1,21 @@
+# Rapport de rédaction : G83 Autres syndromes paralytiques (cycle Betta 40, leçon 1)
+
+Agent C40-A1-NEUR (Sonnet 5.5), fragment N-05-Neurologie, 15.10.2026. Audit différé : revue IA, distincte d'une validation médicale humaine.
+
+## Fichiers (octets)
+chapters/G83/G83_a.html 21 333 ; G83_b.html 28 843 ; G83_c.html 19 507 ; G83_d.html 7 679 ; G83_pop1.html 46 304 ; G83_pop2.html 7 037 (total 130 703) ; glossary/g83.py (34 entrées conditionnelles) ; rapport.md.
+
+## Contenu
+Quatre onglets. Pathologie : 14 îlots (g83-0 à g83-13), dernier îlot = critères formels (div.alert) puis paramètres clés (div.key), références en fin de partie. Syndrome de la queue de cheval (anatomie, définition, classifications, causes, clinique, démarche, délai de décompression, séquelles), locked-in syndrome (définition, mécanisme, causes, différentiel, reperfusion, réadaptation), paralysie de Todd et simulateurs d'AVC, monoparésies et paralysie faciale centrale (codage seulement). Examens : 5 îlots (hiérarchie avec gold standard nommé, IRM/scanner, résidu post-mictionnel, bilan neuro-urologique et évaluation de la conscience, 4 cas en quiz). Sciences : neuroanatomie de la queue de cheval, tronc cérébral et regard, biostatistique diagnostique (avec corrélations Science → clinique/examen/traitement). Pharmacologie : 4 îlots (stratégie, baclofène intrathécal, reperfusion basilaire, gestes à éviter) et 1 quiz. 55 fenêtres (18 Pareto), 5 quiz, 5 schémas SVG légendés.
+
+## Sources utilisées
+Uniquement le dossier recherche.md / sources.json (S1 à S25) : CIM-10-GM 2024 (BfArM, OFS), Revue Médicale Suisse 2010, deux cas suisses d'injection, Kögl 2024, définitions et classifications du syndrome de la queue de cheval, fiabilité inter-observateurs, études du résidu post-mictionnel, méta-analyses du délai (Ahn 2000, DeLong 2008, 2026), Locked-in syndrome revisited 2023, ESO/ESMINT 2024, période postcritique 2019, Stroke Mimics Score 2025, information professionnelle Liorésal intrathécal (Swissmedic, avril 2024). Aucune donnée ajoutée de mémoire.
+
+## Lacunes reprises du dossier (signalées dans le texte)
+Aucune recommandation suisse ou européenne dédiée au syndrome de la queue de cheval, au locked-in syndrome ni à la paralysie de Todd ; quota de recherche en ligne épuisé, nombreuses sources lues en résumé ; sémiologie, causes et conduite de la paralysie faciale centrale, des monoparésies et de la diplégie brachiale non enseignées ; fréquence, durée et conduite de la paralysie de Todd non chiffrées ; correspondance CESI/CESR avec G83.40/G83.41 non documentée et non enseignée ; trois types de Tandon et Sankaran non détaillés ; neuro-urologie renvoyée à la leçon G82 ; information professionnelle du thrombolytique non lue (aucune dose) ; interactions et signes détaillés du sevrage du baclofène non extraits ; CIM-11 non vérifiée.
+Choix de présentation : les niveaux radiculaires sont écrits en toutes lettres (« 3e lombaire », « 2e racine sacrée ») car les clés L2, L3, L4, S1 et S3 existent déjà au glossaire avec un autre sens. L'intervalle de confiance incohérent de la spécificité de la méta-analyse du résidu n'est pas cité.
+Calculs pédagogiques déclarés : 350 − 200 = 150 mL au-dessus du seuil (vignette fictive) ; prévalence implicite d'environ 13 % déduite de la valeur prédictive positive de 29,9 % (déduction, non rapportée par l'étude, cohérente avec la valeur prédictive négative de 98,7 %) ; trois paliers de test du baclofène (25, 50, 75 µg) soit au moins 48 heures.
+Divergences signalées : Gleave et MacFarlane (délai sans effet au stade avec rétention) contre DeLong (moins bon résultat si chirurgie tardive) ; méta-analyse 2026 sans différence liée au délai dans le stade avec rétention.
+
+## Auto-contrôle (cahier W)
+HTML bien formé (pile vide sur a+b+c+d et sur les fenêtres) ; 0 identifiant dupliqué, tous préfixés g83- ; 0 clé de fenêtre sans template, 0 fenêtre orpheline, clés préfixées g83- ou pareto-g83- ; audit des abréviations (build_medina.audit avec le glossaire g83) : {} ; couvertures Pareto toutes résolues (pareto_ratios) ; classes toutes issues du modèle N17/D50 ; toutes les références de glossaire pointent vers une fenêtre existante. Aucun fichier hors du dossier de livraison n'a été modifié ; ni chapters.json, ni git.
