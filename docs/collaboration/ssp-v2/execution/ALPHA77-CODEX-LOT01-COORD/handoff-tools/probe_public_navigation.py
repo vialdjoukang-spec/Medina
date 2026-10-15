@@ -63,6 +63,8 @@ with sync_playwright() as p:
                 assert semio.locator('h3').first.inner_text() == 'Pour la leçon : quelle est la sémiologie fondamentale et analytique ?', 'Titre sémiologique incorrect'
                 assert semio.locator('[data-semiology]').count() == 9, 'Neuf sections sémiologiques attendues'
                 page.screenshot(path=str(captures / f'{code}-{width}-semio.png'))
+                semio.locator('h3').first.evaluate("el => el.scrollIntoView({block: 'center', inline: 'nearest', behavior: 'instant'})")
+                page.screenshot(path=str(captures / f'{code}-{width}-semio-content.png'))
                 navigation = []
                 for index in range(6):
                     tab = tabs.nth(index)

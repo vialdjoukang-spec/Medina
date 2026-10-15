@@ -1,22 +1,25 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-15T23:25:43.683785+00:00",
-  "status": "waiting_for_corrected_pages_deployment",
+  "recorded_at": "2026-10-15T23:42:29.376854+00:00",
+  "status": "seven_codex_provisional_publications_verified_medical_reserves_open",
   "authoritative_files": {
     "sources": "final-source-publications-progress.json",
     "expected_public_bytes": "final-pages-probe-expectations.json",
     "remaining_reserves": "RESERVES_REELLES_SESSION2.json",
     "parity": "PARITE_EFFECTIVE_2026-10-15.json",
     "pages_api_quota": "PAGES_QUOTA_2026-10-15.json",
-    "pages_bootstrap": "PAGES_BOOTSTRAP_2026-10-15.json"
+    "pages_bootstrap": "PAGES_BOOTSTRAP_2026-10-15.json",
+    "public_deployment": "PAGES_DEPLOYMENT_VERIFIED_SESSION2.json",
+    "controller": "CONTROLEUR_SESSION2_FINAL.json",
+    "remote_state": "FINAL_REMOTE_STATE_SESSION2.json"
   },
   "legacy_files_preserved_not_current": [
     "TRANSITION_2026-10-15.txt",
     "HANDOFF_2026-10-15.json",
     "source-publication-plan-session2.json"
   ],
-  "main_seen": "b0a55282ed9944c2474bfc9aefcd618d16fe2c9f",
-  "coordinator_previous_checkpoint": "30c69f375b66c2e02b7432f15ea0620f6baf8b2b",
+  "main_seen": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+  "coordinator_previous_checkpoint": "6879b0f6492d9ead25bb4645e2169dcf5bfda3eb",
   "equality": {
     "effective": true,
     "codex_decision_primacy": false,
@@ -115,7 +118,9 @@
       "summary": "CIM-10-GM2024 applicable2025–2026 et exclusions thyroïdiennes documentées auprès OFS, avec portée SpiGes ; séquençage individuel et remboursement non certifiés.",
       "course_sources_unchanged": true,
       "reports_receipts_statuses_unchanged": true,
-      "closures_added": 0
+      "closures_added": 0,
+      "manual2026_proof": "e05-manuel2026-delta/source-metadata.json",
+      "completed_targeted_readings": "OFS applicability2025–2026; thyroid exclusions; Manual2026 SD1503n/G52h and Jan/Jul updates. No course/report/receipt/status changes."
     }
   },
   "tools": {
@@ -132,26 +137,44 @@
   },
   "public": {
     "corrected_workflow_run": 38820592355,
-    "deployment_verified": false,
-    "last_http_observation_at": "2026-10-15T22:58:45.135729+00:00",
-    "last_http_manifest_commit": "4b8a088d8741f287645cf1808ca23144e86837d7",
-    "last_probe_passed": false,
-    "corrected_workflow_status": "build_in_progress",
+    "deployment_verified": true,
+    "last_http_observation_at": "2026-10-15T23:30:33.320305+00:00",
+    "last_http_manifest_commit": "b0a55282ed9944c2474bfc9aefcd618d16fe2c9f",
+    "last_probe_passed": true,
+    "corrected_workflow_status": "completed_success",
     "build_job_id": 116718155026,
     "browser_https_transport_preflight_passed": true,
-    "remote_bootstrap_step": "success"
+    "remote_bootstrap_step": "success",
+    "browser_probe_passed": true,
+    "HTTP_checks": 119,
+    "HTTP_files": 41,
+    "browser_cases": 14,
+    "proof": "PAGES_DEPLOYMENT_VERIFIED_SESSION2.json",
+    "Claude_g2_followup_run": 38822992400,
+    "Claude_g2_followup_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+    "Claude_g2_followup_scope": "Independent Claude corrections171/172/175, deployment monitor active; not yet included in verified public b0 snapshot"
   },
   "controller": {
     "same_request_id": "26cdef051e2a44999ec5276ee5a632f7",
     "batch": 0,
-    "last_fresh_remote_state_commit": "977b57f86256ee8afa4ef52ee050146df8a7b062",
-    "phase": "NATIVE_RUNNING",
-    "executor": "/root active turn, same native request, no persistent background service",
+    "last_fresh_remote_state_commit": "c2c35c089eb1f793510a30ea70bbba204c46f615",
+    "phase": "NEEDS_RECONCILIATION",
+    "executor": "Coordinator checkpointed; no persistent Starter service. Same batch/request retained; medical reserves prevent next batch.",
     "duplicate_worker_spawned": false,
     "closed": [],
-    "progress_checkpoint": "CONTROLEUR_SESSION2_LIVE.json"
+    "progress_checkpoint": "CONTROLEUR_SESSION2_FINAL.json",
+    "campaign_execution_enabled": false,
+    "terminal_stop": false
   },
-  "claude_receipts_read_only_inventory": [
+  "background_tasks": [
+    {
+      "agent": "/root/sciences",
+      "status": "active_readonly_monitor",
+      "scope": "Claude g2 Pages run38822992400 and actual served manifest; notification issue107 at end",
+      "no_source_or_mission_writes": true
+    }
+  ],
+  "claude_receipts_first_inventory_b0": [
     {
       "code": "E11",
       "path": "organisation/alpha-publications/Claude/E11/0001.json",
@@ -198,6 +221,64 @@
       "code": "C77",
       "path": "organisation/alpha-publications/Claude/C77/0001.json",
       "declared_phase": "completed",
+      "read_only_inventory": true,
+      "closure_revalidated_by_codex": false
+    }
+  ],
+  "claude_latest_receipts_read_only_inventory": [
+    {
+      "code": "E11",
+      "path": "organisation/alpha-publications/Claude/E11/0002.json",
+      "declared_phase": "completed",
+      "source_commit": "59cac08a3751cca0c8e56d28ff638950e6ae483f",
+      "read_only_inventory": true,
+      "closure_revalidated_by_codex": false
+    },
+    {
+      "code": "N18",
+      "path": "organisation/alpha-publications/Claude/N18/0002.json",
+      "declared_phase": "completed",
+      "source_commit": "e5f8d171130b0d3a90669c40f6c887ad3d6600d7",
+      "read_only_inventory": true,
+      "closure_revalidated_by_codex": false
+    },
+    {
+      "code": "I61",
+      "path": "organisation/alpha-publications/Claude/I61/0002.json",
+      "declared_phase": "completed",
+      "source_commit": "35faebca08b7d152d22e3dd550c03abcbeb1605e",
+      "read_only_inventory": true,
+      "closure_revalidated_by_codex": false
+    },
+    {
+      "code": "G45",
+      "path": "organisation/alpha-publications/Claude/G45/0001.json",
+      "declared_phase": "completed",
+      "source_commit": "01159c7c6ee2acce40926c38582e9649965bf835",
+      "read_only_inventory": true,
+      "closure_revalidated_by_codex": false
+    },
+    {
+      "code": "E12",
+      "path": "organisation/alpha-publications/Claude/E12/0001.json",
+      "declared_phase": "completed",
+      "source_commit": "f2ab6b0f8d1e2638509fb196338256b77ac4c671",
+      "read_only_inventory": true,
+      "closure_revalidated_by_codex": false
+    },
+    {
+      "code": "D50",
+      "path": "organisation/alpha-publications/Claude/D50/0001.json",
+      "declared_phase": "completed",
+      "source_commit": "ecb1c3228ca348d6f5a834e0efbba85e5a63961b",
+      "read_only_inventory": true,
+      "closure_revalidated_by_codex": false
+    },
+    {
+      "code": "C77",
+      "path": "organisation/alpha-publications/Claude/C77/0001.json",
+      "declared_phase": "completed",
+      "source_commit": "36660de5da2d59ea0c846fa8f5ae19c99d5c2d41",
       "read_only_inventory": true,
       "closure_revalidated_by_codex": false
     }
