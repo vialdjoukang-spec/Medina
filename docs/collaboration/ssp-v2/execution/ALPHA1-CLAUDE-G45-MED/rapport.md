@@ -19,7 +19,7 @@ L'audit ne relève **aucune erreur bloquante**. Le défaut principal est une **o
 |---|---|
 | BLOQUANT | 0 |
 | MAJEUR | 1 |
-| MINEUR | 7 |
+| MINEUR | 8 |
 | ENRICHISSEMENT | 12 |
 
 ### MAJEUR
@@ -31,6 +31,7 @@ L'audit ne relève **aucune erreur bloquante**. Le défaut principal est une **o
 - **C05** — Le tableau différentiel décrit l'amnésie globale comme « antérograde isolée ». La source et la partie 6.1 décrivent une amnésie antérograde **et** rétrograde, d'une durée moyenne de 6 à 8 heures.
 - **C06** — Pour l'AIT lié à une athérosclérose intracrânienne, le tableau de conduite écrit « Déconseillée » alors que le référentiel bernois indique « No ».
 - **C07** — La ligne Plavix omet deux mentions de la FI : l'association aux anticoagulants oraux n'est pas recommandée, et la triple thérapie avec le dipyridamole non plus (`propositions/G45_d_2.html`).
+- **C21** — Le montage g45-09 de deux fichiers sous CC BY-SA 4.0 n'indique ni la juxtaposition faite par MEDINA ni la licence du montage. Le défaut est de licence, sans incidence médicale (voir « Figures »).
 - **C08** — L'encadré « Examen fédéral » omet les situations 99 (troubles de la parole ou du langage) et 102 (troubles de la mémoire), rattachées à G45 dans le graphe SSP de MEDINA.
 
 ### ENRICHISSEMENTS (propositions prêtes à intégrer)
@@ -49,6 +50,23 @@ L'audit ne relève **aucune erreur bloquante**. Le défaut principal est une **o
 | C18 | G45_pop1 | Strates ABCD2 à deux jours : 1 %, 4 %, 8 % | G45_pop1_1.html |
 | C19 | G45_pop1 | ESO carotide 2021 : 70–99 % / 50–69 %, < 2 semaines, stent < 70 ans | G45_pop1_2.html |
 | C20 | G45_d | Alternatives : clopidogrel, aspirine-dipyridamole, ticagrélor, rivaroxaban à faible dose | G45_d_1.html |
+
+## Figures (règle de Vial du 15.10.2026)
+La recherche de `<svg>`, `<canvas>`, `<img>`, `<figure>` et de dessins CSS dans les sept fichiers ne trouve que **9 images**, toutes examinées visuellement. Elle ne trouve **aucune figure anatomique générée par IA** (`ANATOMIQUE_IA` : 0). Aucun remplacement n'est donc requis, et aucune image n'a été générée ni redessinée.
+
+| Figure | Fichier, légende | Classe | Vérification |
+|---|---|---|---|
+| g45-01 | G45_a, « Territoires corticaux schématiques » | IMAGE_SOURCEE | Gaillard d'après Lynch, CC BY 2.5 ; conforme |
+| g45-02 | G45_a, « Voies visuelles publiées » | IMAGE_SOURCEE | Perello Nieto, CC BY-SA 4.0 ; conforme |
+| g45-03 | G45_b, tri préhospitalier suisse | SCHEMA_NON_ANATOMIQUE | Kägi 2021 ; CC BY 4.0 confirmée par Crossref ; valeurs (24 h, RACE ≥ 5, 8 h, 20 min, DIDO ≤ 60 min) conformes au texte [S2] |
+| g45-04 | G45_c, IRM diffusion/ADC | IMAGE_SOURCEE | IRM réelle, CC BY 4.0 ; conforme |
+| g45-05 | G45_c, polygone de Willis | IMAGE_SOURCEE | Domaine public ; deux libellés de la source mêlent latin et français |
+| g45-06 | G45_c, plaque artérielle | IMAGE_SOURCEE | NHLBI, domaine public ; conforme |
+| g45-07 | G45_c, autorégulation | SCHEMA_NON_ANATOMIQUE | Modèle présenté comme historique ; bornes non confrontées à Claassen 2021 (non relu) |
+| g45-08 | G45_c, signalisation plaquettaire | SCHEMA_NON_ANATOMIQUE | PharmGKB, CC BY-SA 4.0 ; flèches aspirine ⊣ PTGS1 et clopidogrel ⊣ P2RY12 conformes aux FI |
+| g45-09 | G45_c, montage vision/hippocampe | IMAGE_SOURCEE | Juxtaposition de deux fichiers Commons ; attribution du montage à compléter (C21) |
+
+L'API Wikimedia Commons a refusé deux requêtes pour limitation de débit. Les auteurs et licences des huit fichiers Commons sont donc repris des légendes, sans nouvelle vérification ; c'est une lacune déclarée. Le détail figure dans `rapport.json`, clé `figures`.
 
 ## Matrice des 20 rubriques (leçon actuelle)
 
@@ -82,6 +100,7 @@ L'audit ne relève **aucune erreur bloquante**. Le défaut principal est une **o
 - Aucune recommandation suisse spécifique sur la conduite après AIT n'a été trouvée ; seule la base légale fédérale a été lue. PROFILES n'a pas été relu directement.
 - Le référentiel bernois a été lu aux pages PDF 10 à 14, 18 à 21, 26 et 27. Les figures, leurs licences et les fenêtres de physiologie (Maier 2026, Kho 2025) n'ont pas été contrôlées.
 - Avant d'intégrer C17, il faut ajouter une clé de glossaire RoPE.
+- Les licences Commons n'ont pas été revérifiées, l'API ayant opposé une limitation de débit.
 
 ## Tableau de bord
 
@@ -90,7 +109,8 @@ L'audit ne relève **aucune erreur bloquante**. Le défaut principal est une **o
 | Leçon | G45 — Accidents ischémiques cérébraux transitoires et syndromes apparentés (N-05-Neurologie) |
 | Fichiers lus / empreintes | 7 / conformes |
 | Sources lues | 15 (S1–S15), dont 4 FI suisses en texte intégral |
-| Constats | 0 BLOQUANT · 1 MAJEUR · 7 MINEUR · 12 ENRICHISSEMENT |
+| Constats | 0 BLOQUANT · 1 MAJEUR · 8 MINEUR · 12 ENRICHISSEMENT |
+| Figures | 9 : 0 anatomique IA · 3 schémas · 6 images sourcées |
 | Propositions rédigées | 14 fichiers sous `propositions/` |
 | Matrice | 10 couvert · 10 partiel · 0 absent |
 | Fichiers canoniques modifiés | aucun |

@@ -11,7 +11,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-15T18:22:57Z",
- "date_fin": "2026-10-15T18:35:58Z",
+ "date_fin": "2026-10-15T18:38:41Z",
  "lecture": {
   "fichiers": [
    "chapters/G45/G45_a.html",
@@ -70,7 +70,7 @@
  "synthese": {
   "BLOQUANT": 0,
   "MAJEUR": 1,
-  "MINEUR": 7,
+  "MINEUR": 8,
   "ENRICHISSEMENT": 12
  },
  "constats": [
@@ -443,6 +443,23 @@
    ],
    "proposition": "Ajouter le texte de propositions/G45_d_1.html.",
    "justification": "Les FI suisses de Brilique, Xarelto et de l’association aspirine-dipyridamole n’ont pas été lues : la proposition ne cite aucune dose de FI (lacune déclarée)."
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "Deux panneaux de sources publiées, réunis sans modification médicale",
+   "ancre_occurrences": 1,
+   "constat": "La figure g45-09 est un montage de deux fichiers sous CC BY-SA 4.0. La légende ne précise ni que MEDINA a réalisé le montage, ni la modification (juxtaposition), ni la licence du montage.",
+   "preuve": [
+    {
+     "source_id": "figures",
+     "section": "g45-09",
+     "citation_courte": "Deux panneaux de sources publiées, réunis sans modification médicale … CC BY-SA 4.0"
+    }
+   ],
+   "proposition": "Deux panneaux de sources publiées, juxtaposés par MEDINA sans autre modification ; le montage est diffusé sous la même licence CC BY-SA 4.0",
+   "justification": "La licence CC BY-SA impose d’indiquer les modifications et de partager l’œuvre dérivée sous la même licence. Une attribution incomplète expose le cours à un défaut de licence, sans incidence médicale."
   }
  ],
  "matrice_20": [
@@ -602,7 +619,8 @@
   "PROFILES 2017 non relu directement : rattachement SSP repris du graphe MEDINA (S15).",
   "Pages du référentiel bernois lues : PDF 10–14, 18–21, 26–27, non l’intégralité des 35 pages.",
   "Figures et licences Wikimedia non contrôlées (hors périmètre médical) ; fenêtres Maier 2026 et Kho 2025 (physiologie) non relues.",
-  "Glossaire : ajout requis d’une clé RoPE si la proposition C17 est intégrée ; aucune autre abréviation nouvelle dans les propositions."
+  "Glossaire : ajout requis d’une clé RoPE si la proposition C17 est intégrée ; aucune autre abréviation nouvelle dans les propositions.",
+  "API Wikimedia Commons refusée pour limitation de débit (2 tentatives avec l’en-tête User-Agent prescrit) : auteurs et licences des 8 fichiers Commons repris des légendes, non revérifiés ; le fichier Kägi a été confirmé par Crossref."
  ],
  "propositions": [
   "G45_a_1.html",
@@ -620,5 +638,115 @@
   "G45_pop1_1.html",
   "G45_pop1_2.html"
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "figures": [
+  {
+   "ancre": "Territoires corticaux schématiques",
+   "fichier": "chapters/G45/G45_a.html",
+   "image": "assets/img/cycle2/g45/g45-01.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Vue latérale du cerveau : territoires corticaux des artères cérébrales antérieure, moyenne et postérieure (illustration humaine publiée).",
+   "source_declaree": "Wikimedia Commons, File:Cerebral_vascular_territories.jpg ; Frank Gaillard d’après Patrick J. Lynch ; CC BY 2.5",
+   "verification": "Image examinée : identique au fichier Commons déclaré (légendes anglaises, trois couleurs conformes à la légende du cours). Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Voies visuelles publiées",
+   "fichier": "chapters/G45/G45_a.html",
+   "image": "assets/img/cycle2/g45/g45-02.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Voies visuelles, de la rétine au cortex visuel primaire, avec chiasma et corps géniculé latéral.",
+   "source_declaree": "Wikimedia Commons, File:Human_visual_pathway.svg ; Miquel Perello Nieto ; CC BY-SA 4.0",
+   "verification": "Image examinée : conforme au fichier déclaré ; termes anglais traduits dans la fenêtre g45-monoculaire. Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Tri préhospitalier suisse d’une suspicion d’AVC aigu",
+   "fichier": "chapters/G45/G45_b.html",
+   "image": "assets/img/cycle2/g45/g45-03.gif",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Arbre de tri préhospitalier suisse (figure 1 de Kägi et coll. 2021).",
+   "source_declaree": "Kägi et coll., Clinical and Translational Neuroscience 2021, doi:10.1177/2514183X21999230 ; CC BY 4.0",
+   "verification": "Licence CC BY 4.0 confirmée par l’API Crossref. Chaque valeur confrontée au texte français [S2] : début ou LPGH < 24 h, RACE ≥ 5, < 8 h, transport < 20 min vers le Stroke Center, DIDO ≤ 60 min ; branches et feux prioritaires cohérents. Recevable.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Exemple authentique publié d’infarctus cérébral",
+   "fichier": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-04.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "IRM réelle : hypersignal de diffusion et baisse du coefficient apparent de diffusion d’un infarctus hémisphérique.",
+   "source_declaree": "Wikimedia Commons, File:DWE_MRI_of_cerebral_infarction.png ; Shazia Mirza et Sankalp Gokhale ; CC BY 4.0",
+   "verification": "Image examinée : imagerie réelle, concordance diffusion/ADC conforme à la légende. Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Polygone de Willis, version française publiée",
+   "fichier": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-05.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Polygone artériel de Willis et branches, libellés français.",
+   "source_declaree": "Wikimedia Commons, File:Circle_of_Willis_fr.svg ; Rhcastilhos, traduction Petit B ; domaine public",
+   "verification": "Image examinée : conforme ; deux libellés du fichier source mêlent latin et français (« communicante anterior », « cérébelleuse superior »), sans erreur anatomique. Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Artère perméable et artère comportant une plaque, dessin publié",
+   "fichier": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-06.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Artère normale et artère rétrécie par une plaque, avec coupes transversales.",
+   "source_declaree": "Wikimedia Commons, File:Atherosclerosis_diagram.png ; National Heart, Lung, and Blood Institute ; domaine public",
+   "verification": "Image examinée : illustration institutionnelle, conforme à la légende. Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Modèle classique publié d’autorégulation",
+   "fichier": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-07.gif",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Courbe schématique débit cérébral (mL/100 g/min) – pression (mmHg), plateau grisé d’environ 50 à 170 mmHg.",
+   "source_declaree": "Wikimedia Commons, File:Cerebrovascular_autoregulation.svg ; Daniel FR ; domaine public",
+   "verification": "Courbe de modèle et non de données mesurées. La leçon la qualifie explicitement de modèle historique sans valeur de cible ; les bornes du plateau n’ont pas été confrontées à Claassen 2021, non relu (lacune). Recevable sous cette réserve. Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Signalisation plaquettaire publiée",
+   "fichier": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-08.gif",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Voie d’activation et d’agrégation plaquettaires (PharmGKB) avec cibles de l’aspirine, des thiénopyridines et des anti-GP IIb/IIIa.",
+   "source_declaree": "Wikimedia Commons, File:Platelet_aggregation_pathway.png ; PharmGKB ; CC BY-SA 4.0",
+   "verification": "Flèches vérifiées : aspirine ⊣ PTGS1 et clopidogrel (métabolite actif) ⊣ P2RY12, conformes aux FI [S7, S8] ; G-protéines ⊣ ADCY3, cAMP ⊣ Ca2+ et rétroactions conformes au tableau de la fenêtre g45-plaquette. Recevable. Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Deux panneaux de sources publiées, réunis sans modification médicale",
+   "fichier": "chapters/G45/G45_c.html",
+   "image": "assets/img/cycle2/g45/g45-09.gif",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Montage MEDINA de deux figures Commons : voies visuelles et connexions hippocampiques (libellés allemands).",
+   "source_declaree": "Wikimedia Commons, File:Human_visual_pathway.svg (Miquel Perello Nieto) et File:Hippocampus_connections.svg (Rainald62) ; CC BY-SA 4.0",
+   "verification": "Image examinée : juxtaposition des deux fichiers, sans dessin ajouté. Le montage est une œuvre dérivée : voir C21. Métadonnées Commons non revérifiées : API officielle refusée pour limitation de débit (2 tentatives, 15.10.2026) ; source et licence reprises de la légende.",
+   "constat_id": "C21",
+   "candidats": []
+  }
+ ],
+ "figures_synthese": {
+  "total": 9,
+  "ANATOMIQUE_IA": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 6,
+  "elements_svg_canvas_css": 0,
+  "regle": "Règle Vial du 15.10.2026 : figures anatomiques générées par IA non recevables",
+  "methode": "Inventaire par recherche de <svg>, <canvas>, <img>, <figure> et dessins CSS dans les 7 fichiers ; examen visuel des 9 images ; aucune image générée, dessinée ou redessinée."
+ }
 }
