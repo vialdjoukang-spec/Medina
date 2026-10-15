@@ -106,8 +106,20 @@ def classify(metadata):
                                 'attribution and any personality/privacy restrictions'],
             'ai_detection_limit': 'Metadata markers only; absence does not prove human origin.'}
 
+def check_campaign_state(path):
+    """Configured campaign switches fail closed before cache lookup or HTTP."""
+    if not path:
+        return
+    try:
+        value = json.loads(Path(path).read_bytes())
+    except (OSError, ValueError) as error:
+        raise FinderError('Campaign state missing or malformed; image search disabled') from error
+    if not isinstance(value, dict) or value.get('schema_version') != 1 or value.get('image_execution_enabled') is not True:
+        raise FinderError('Campaign image execution disabled')
+
 class Finder:
-    def __init__(self, database, http=transport, interval=1.0, daily_budget=100):
+    def __init__(self, database, http=transport, interval=1.0, daily_budget=100, campaign_state=None):
+        self.campaign_state = campaign_state if campaign_state is not None else os.environ.get('MEDINA_IMAGE_CAMPAIGN_STATE')
         if interval < 1 or daily_budget < 1:
             raise ValueError('interval >= 1 second and daily_budget >= 1 required')
         self.database, self.http = str(database), http
@@ -126,6 +138,7 @@ class Finder:
     def connect(self):
         return sqlite3.connect(self.database, timeout=15)
     def search(self, query, provider='commons', limit=8):
+        check_campaign_state(self.campaign_state)
         query = ' '.join(str(query).split())
         if provider not in ENDPOINTS or not query or len(query) > 300 or not 1 <= limit <= 20:
             raise FinderError('Invalid provider, query (1–300 characters) or limit (1–20)')
@@ -197,6 +210,7 @@ class Finder:
                 with self.connect() as db:
                     db.execute('UPDATE provider SET next=max(next,?) WHERE name=?', (time.time()+self.interval, provider))
     def _request(self, query, provider, limit):
+        check_campaign_state(self.campaign_state)
         if provider == 'commons':
             params = dict(action='query', format='json', generator='search', gsrsearch=query,
                           gsrnamespace=6, gsrlimit=limit, prop='imageinfo',
@@ -310,6 +324,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--cache', default=os.path.expanduser('~/.cache/image_codex_finder/shared.sqlite3'))
     parser.add_argument('--daily-budget', type=int, default=100)
+    parser.add_argument('--campaign-state', default=os.environ.get('MEDINA_IMAGE_CAMPAIGN_STATE'), help='Shared local Starter control.json; configured missing/invalid/disabled state blocks all search')
     commands = parser.add_subparsers(dest='command', required=True)
     search = commands.add_parser('search')
     search.add_argument('query')
@@ -323,10 +338,11 @@ def main():
     server.add_argument('--port', type=int, default=8765)
     args = parser.parse_args()
     try:
+        check_campaign_state(args.campaign_state)
         if args.command == 'search' and args.broker:
             result = broker_search(args.broker, args.query, args.provider, args.limit)
         else:
-            finder = Finder(args.cache, daily_budget=args.daily_budget)
+            finder = Finder(args.cache, daily_budget=args.daily_budget, campaign_state=args.campaign_state)
             if args.command == 'serve':
                 serve(finder, args.host, args.port).serve_forever()
                 return
