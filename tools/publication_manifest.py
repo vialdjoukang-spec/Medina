@@ -17,8 +17,12 @@ def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def bounded_deadline(registry, changed, previous_registry=None, catalog=None, previous_catalog=None):
-    """La borne concerne les sources injectées, pas les publications ultérieures étrangères."""
+def bounded_deadline(registry, changed, previous_registry=None, catalog=None, previous_catalog=None, transferred=()):
+    """La borne concerne les sources injectées, pas les publications ultérieures étrangères.
+
+    Les leçons d'un cycle nocturne transféré à Claude (organisation/CYCLES_CLAUDE.json, transferred_from
+    Codex) ne relèvent plus de l'autorisation nocturne : leur injection est contrôlée par la garde des
+    cycles Claude (tools/cycle_claude.py) avant publication (autorisation de Vial, 15.10.2026)."""
     if not registry:
         return None
     prior_rows = {r['code']:r for c in (previous_registry or {}).get('cycles', []) for r in c['chapters']}
@@ -27,6 +31,8 @@ def bounded_deadline(registry, changed, previous_registry=None, catalog=None, pr
     for cycle in registry.get('cycles', []):
         for row in cycle['chapters']:
             code = row['code']
+            if code in transferred:
+                continue
             if any(p.startswith(f'chapters/{code}/') or p == f'glossary/{code.lower()}.py' or
                    p.startswith(f"assets/img/cycle{cycle['cycle']}/{code.lower()}/") for p in changed):
                 return registry['deadline']
@@ -55,8 +61,11 @@ def build(root, site, base=None):
     def previous(path):
         result = subprocess.run(['git','show',base+':'+path],cwd=root,capture_output=True)
         return json.loads(result.stdout) if result.returncode == 0 else None
+    claude_path = root/'organisation/CYCLES_CLAUDE.json'
+    claude = json.loads(claude_path.read_text()) if claude_path.exists() else {'cycles': []}
+    transferred = {r['code'] for c in claude['cycles'] if c.get('transferred_from') == 'Codex' for r in c['chapters']}
     deadline = bounded_deadline(registry, changed, previous('organisation/execution-20261014/cycles.json'),
-                                catalog, previous('chapters.json'))
+                                catalog, previous('chapters.json'), transferred)
     check_deadline(deadline)
     courses = {}
     for row in catalog:

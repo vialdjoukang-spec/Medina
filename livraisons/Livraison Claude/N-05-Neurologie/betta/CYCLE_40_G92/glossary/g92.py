@@ -62,3 +62,9 @@ if 'ZUMA-5' not in G:
     a('ZUMA-5', [('ZUMA-5', 'nom d’essai, non développable lettre à lettre')], 'Essai ZUMA-5', '<p>Essai de l’axicabtagène ciloleucel dans le lymphome folliculaire, cité par l’information professionnelle de Yescarta.</p>')
 if 'ZUMA-7' not in G:
     a('ZUMA-7', [('ZUMA-7', 'nom d’essai, non développable lettre à lettre')], 'Essai ZUMA-7', '<p>Essai de l’axicabtagène ciloleucel cité par l’information professionnelle de Yescarta.</p>')
+if 'G92.0' not in G:
+    a('G92.0', [('G92.0', 'sous-code CIM-10-GM 2024')], 'Encéphalopathie toxique sous immunothérapie', '<p>Sous-code dont le texte d’inclusion cite l’ICANS ; il ne couvre pas les encéphalopathies dues aux antibiotiques, aux antiépileptiques ou aux chimiothérapies.</p>')
+if 'G92.9' not in G:
+    a('G92.9', [('G92.9', 'sous-code CIM-10-GM 2024')], 'Encéphalopathie toxique, autres et sans précision', '<p>Sous-code qui regroupe toutes les encéphalopathies toxiques non liées à l’immunothérapie.</p>')
+if 'G92.8' not in G:
+    a('G92.8', [('G92.8', 'code inexistant')], 'Code absent de la CIM-10-GM 2024', '<p>La version 2024 ne comporte ni cinquième position ni code G92.8 ; il est cité pour éviter un codage erroné.</p>')
