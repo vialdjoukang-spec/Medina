@@ -26,7 +26,7 @@ Mission approuvée dans `main` (`.medina/missions/`), puis `python3 tools/ai_ses
 | C77 | corrections 64257cb8 ; reçu prêt localement (non poussé) | P met à jour revue/ (en cours) ; reçu bloqué (§ 4 bis) |
 | I61 | revue close e0365fcc | W phase 3 en cours : ajout « ou taux > 100 ng/ml » dans _c et _pop1, puis mise à jour de revue/ par P, puis reçu (aucune figure nouvelle : pas concerné par § 4 bis) |
 | G45 | intégration a7ad3986 | revue P en cours, puis phase 3 (figures attribuées : concerné par § 4 bis) |
-| N18 | intégration 952f2108 | revue P en cours, puis phase 3 (concerné par § 4 bis si figures Alpha) |
+| N18 | revue close 5bf53a9c (sans bloquant ; aucune figure Alpha nouvelle) | W phase 3 lancée : reçu sans modifier la leçon ; si valide → PR, fusion, libération. Retouche différée : « 5 mg oral » → « par voie orale » (pop1, fenêtre Eliquis) |
 
 Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche ; ne pas supposer que les agents de l'ancienne session ont fini.
 
