@@ -43,7 +43,8 @@
   "E11_a.html : insérer le bloc data-semiology-clinical=\"E11\" de semiologie_clinique.html dans l’îlot e11-6, avant son div.key ; îlots 5 et 6 conservés.",
   "Figures : figures.html, bloc 1 (pictogramme non anatomique remplaçant la silhouette de rein, E11-MED-10), bloc 2 (légende corrigée de la figure 8 : figure 3A, mention de modification), bloc 3 (légende de la figure 9 avec paternité présumée).",
   "Pareto : ne pas citer e11-sm-* dans un data-cover (l’attribut data-semiology après l’identifiant ne correspond pas à l’expression régulière de build_medina.pareto_ratios).",
-  "Contrôles à refaire après intégration : B.audit, test_v7.py --static E11, tests/audit_sciences.py --codes E11, rendu Chromium ordinateur et 390 px, police agrandie."
+  "Contrôles à refaire après intégration : B.audit, test_v7.py --static E11, tests/audit_sciences.py --codes E11, rendu Chromium ordinateur et 390 px, police agrandie.",
+  "Constat après le commit W 5d6f7359 : la silhouette de rein est déjà retirée (bloc 1 de figures.html facultatif, à n’utiliser que si un pictogramme est souhaité) ; « figure 1A » figure encore deux fois dans E11_b.html (légende de la figure 8 et lien de référence) : les deux mentions doivent devenir « figure 3A »."
  ],
  "controles_prep": {
   "classes_hors_liste": [],
