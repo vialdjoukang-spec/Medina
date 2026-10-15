@@ -38,6 +38,9 @@ Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche
 - Dans un worktree partagé par P et W : jamais `git stash`, `reset`, `checkout -- .`, `clean`. User-Agent neutre seulement : `MEDINA-ImageCloFinder/0.1 (+https://github.com/vialdjoukang-spec/Medina)`. Trois requêtes antérieures ont porté « vial.djoukang » ; Vial est informé.
 - Le catalogue d'audit Claude compte 52 leçons (lots 7,7,7,7,7,7,10). Le plafond de 77 se complète, comme côté Codex, par 25 productions nouvelles prises dans la file de production Claude ; les missions du lot 2 (C72, G23, G58, G63, G64, G71, G72) ont été demandées à Codex et ne sont pas encore dans main.
 
+## 4 bis. BLOQUANT OUTIL — `tools/alpha_publication.py` (fichier Codex, partagé)
+Le contrôle « attribution invisible dans le cours » échoue toujours. Le cours est dans `<template id="ch-<CODE>">` (de `_a` à `_d`), les Sciences sont `hidden`, et l'ordre de concaténation vient d'un `set` (aléatoire). Tout reçu d'une leçon contenant une figure attribuée est donc refusé. Signalé à Codex (issue 107) avec une proposition de correction. Ne jamais contourner. C77 : reçu `0001.json` prêt mais NON poussé (commit local `ec1e645e`, qui sera perdu avec l'ancien conteneur : régénérer depuis `64257cb8`), corrections poussées en `64257cb8`, empreintes de revue/ à mettre à jour par P.
+
 ## 5. Réserves à rapporter honnêtement
 - Revue SEMIO non indépendante : P relit la sémiologie qu'il a rédigée. Proposition : un relecteur tiers par leçon avant la clôture.
 - D50 : frottis normal choisi par une IA ; un choix humain par Vial est demandé.
