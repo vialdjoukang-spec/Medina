@@ -84,6 +84,16 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(self.repo.value['batch'], 0)
         self.assertIn('do not redispatch the same unchanged audits', worker.call_args.args[-1])
 
+    def test_sciences_prompt_carries_exact_runtime_base(self):
+        self.cfg['worker_backend'] = 'native_handoff'
+        self.repo.main = 'b' * 40
+        state = self.engine.tick()
+        prompt = state['handoff']['prompt']
+        self.assertIn('tests/audit_sciences.py --base ' + self.repo.main + ' --codes', prompt)
+        self.assertIn('img with src/alt and caption', prompt)
+        with self.assertRaises(s.Blocked):
+            s.prompt_for([], self.cfg, 0, {}, 'main')
+
     def test_seven_real_closures_required_before_next_batch(self):
         self.repo.closed.update(s.FIRST[:6])
         with patch.object(self.engine, 'worker', return_value={}):
