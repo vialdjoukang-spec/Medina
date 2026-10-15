@@ -27,7 +27,7 @@
       "glossary/i63.py"
     ],
     "texte_clinique": "Quatre onglets,53fenêtres,tableaux,quiz,résumés etglossaire parcourus via extraction textuelle segmentée ; inventaire danssurfaces.json",
-    "figures": "13figures : textes,légendesetdescriptions lus ; aucun contrôlevisuel nouveau des4imagesraster et aucun navigateur rendun’est revendiqué.",
+    "figures": "Complément : les treize figures ont été réellement vues dans une capture isolée ; sources SVG et quatre images raster examinées. Cela remplace la limite de non-inspection visuelle de la première passe, sans revendiquer un contrôle du cours complet.",
     "limite": "Lecturetextuelle ne vaut pasvérification clinique individuelle dechaqueaffirmation. Références inventoriées mais non toutes rouvertes."
   },
   "verdict": "AUDIT_REALISE_AVEC_RESERVES_BLOQUANTES — NON_VALIDE",
@@ -102,11 +102,19 @@
       ],
       "correction": "Nuance «cardioembolique isolé» et absence d’attribution individuelle ajoutées en copie.",
       "statut": "enrichissement prudent, pas désaccord source inventé"
+    },
+    {
+      "id": "I63-FIG-P1",
+      "gravite": "P1",
+      "surface": "chapters/I63/I63_c.html#i63-s-anat-1",
+      "constat": "La figure 5 est un dessin anatomique SVG issu de la livraison IA, désormais non recevable selon la nouvelle règle de Vial. Identité avec le SVG de livraison et preuve d’auteur documentées dans figures.json.",
+      "correction_ou_action": "Remplacement requis par un original anatomique externe sourcé et licencié ; aucun dessin IA de remplacement et aucune correction canonique dans cette mission.",
+      "statut": "Réserve majeure ouverte ; sources canoniques conservées."
     }
   ],
   "gravites": {
     "P0": 0,
-    "P1": 3,
+    "P1": 4,
     "P2": 3
   },
   "enrichissements": "drafts et enrichissements-proposes.patch ; seules copiesdansdossierréservé",
@@ -117,5 +125,12 @@
     "ValiderpérimètreOFS/BfArM etPROFILESprimaire",
     "Contrôlevisuelnouveau desfiguresetglossaire réellementconsommé",
     "Intégrationcanonique contrôlée parmissiondistincte, avec renouvellementempreintes."
-  ]
+  ],
+  "complement_figures": {
+    "dateUTC": "2026-10-15T18:53:00.696613+00:00",
+    "inventaire": "figures.json",
+    "vue_isolee": true,
+    "rendu_cours_complet": false,
+    "anatomie_IA": "Réserve majeure ouverte"
+  }
 }
