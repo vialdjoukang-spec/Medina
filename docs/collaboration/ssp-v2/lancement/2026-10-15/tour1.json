@@ -1017,17 +1017,99 @@
     }
   ],
   "Codex": {
-    "execution_status": "A_DEMARRER_APRES_APPROBATION"
+    "execution_status": "DEMARRE",
+    "medical_workers": 4,
+    "linguistic_workers": 2,
+    "medical_model_actual": "gpt-6.1-sol",
+    "medical_effort_actual": "high",
+    "linguistic_model_actual": "gpt-6.1-sol",
+    "linguistic_effort_actual": "medium",
+    "first_courses_actually_read": [
+      "I63",
+      "E10",
+      "E05",
+      "N17",
+      "D69"
+    ],
+    "seven_course_tour_in_progress": true,
+    "clinical_audits_completed": 0,
+    "started_proofs": [
+      {
+        "mission": "ALPHA1-CODEX-I63-MED",
+        "proof_sha256": "f93841e1f145c370186a8486ae60bec2b785eb355e002841bd884357917c134b",
+        "file": "docs/collaboration/ssp-v2/lancement/2026-10-15/preuves-demarrage-codex/ALPHA1-CODEX-I63-MED.json",
+        "local_worker_proof_exists": true
+      },
+      {
+        "mission": "ALPHA1-CODEX-E10-MED",
+        "proof_sha256": "14afe38ae619fe743121b7bb2cf86104b63839759db4e0fef02ac9e94fa2ccb2",
+        "file": "docs/collaboration/ssp-v2/lancement/2026-10-15/preuves-demarrage-codex/ALPHA1-CODEX-E10-MED.json",
+        "local_worker_proof_exists": true
+      },
+      {
+        "mission": "ALPHA1-CODEX-N17-MED",
+        "proof_sha256": "ee359e3c7d765e5e0c8d9327c7c90e6db712b0c34b3267b34872f3d537eacecb",
+        "file": "docs/collaboration/ssp-v2/lancement/2026-10-15/preuves-demarrage-codex/ALPHA1-CODEX-N17-MED.json",
+        "local_worker_proof_exists": true
+      },
+      {
+        "mission": "ALPHA1-CODEX-D69-MED",
+        "proof_sha256": "b8ab5c644831bf55b55a89243b6a5b18796d2b4bf0a0b43a69a9bf91b5234ed7",
+        "file": "docs/collaboration/ssp-v2/lancement/2026-10-15/preuves-demarrage-codex/ALPHA1-CODEX-D69-MED.json",
+        "local_worker_proof_exists": true
+      },
+      {
+        "mission": "ALPHA1-CODEX-I63-LANG",
+        "proof_sha256": "7e604f9011669d55ac1cd19d00730da7dcd46b14cf3291ae9f7e653c43b844af",
+        "file": "docs/collaboration/ssp-v2/lancement/2026-10-15/preuves-demarrage-codex/ALPHA1-CODEX-I63-LANG.json",
+        "local_worker_proof_exists": true
+      },
+      {
+        "mission": "ALPHA1-CODEX-E10-LANG",
+        "proof_sha256": "fd7be4965e3b99d0b7438e661300e3eac36aca4cd938e6ce1fde7df1cccf526f",
+        "file": "docs/collaboration/ssp-v2/lancement/2026-10-15/preuves-demarrage-codex/ALPHA1-CODEX-E10-LANG.json",
+        "local_worker_proof_exists": true
+      },
+      {
+        "mission": "ALPHA1-CODEX-E05-MED",
+        "proof_sha256": "d6a6c41991453e337fb8782c82ef8630d7e498e3fb024a81a96ee09ffc0d133c",
+        "file": "docs/collaboration/ssp-v2/lancement/2026-10-15/preuves-demarrage-codex/ALPHA1-CODEX-E05-MED.json",
+        "local_worker_proof_exists": true
+      }
+    ],
+    "linguistic_courses_actually_read": [
+      "I63",
+      "E10"
+    ],
+    "language_subagents_assignments": {
+      "alpha1_linguistique": [
+        "I63",
+        "G01",
+        "D69",
+        "D64"
+      ],
+      "alpha1_linguistique_endo_nephro": [
+        "E10",
+        "E05",
+        "N17"
+      ]
+    }
   },
   "Claude": {
     "execution_status": "NON_CONFIRME",
     "reason": "Aucun canal exécutable Claude/Anthropic disponible ; ordre à transmettre, accusé réel nécessaire.",
-    "dispatch_status": "ORDRE_PUBLIE_GITHUB_SANS_ACCUSE_DE_DEMARRAGE"
+    "dispatch_status": "ORDRE_PUBLIE_GITHUB_SANS_ACCUSE_DE_DEMARRAGE",
+    "dispatch_comment": "https://github.com/vialdjoukang-spec/Medina/issues/107#issuecomment-6199100268",
+    "available_session_links": [
+      "https://claude.ai/code/session_01HCmATksibKKq29RAcEuKLh",
+      "https://claude.ai/code/session_018toCfLY3F4d6361mEXeZ8d"
+    ]
   },
   "cross_audit": false,
   "other_systems_modified": false,
   "medical_content_changed": false,
   "language_semantics": "Formulations locales sans modification du fond ; revalider les passages touchés par enrichissement médical avant intégration.",
   "dispatch_issue": "https://github.com/vialdjoukang-spec/Medina/issues/107",
-  "original_message_body_equal_github": true
+  "original_message_body_equal_github": true,
+  "checked_at_utc": "2026-10-15T18:22:28.884873+00:00"
 }
