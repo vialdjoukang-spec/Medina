@@ -1,26 +1,31 @@
-# REPRISE DE SESSION — règle absolue (Vial, 15.10.2026)
+# REPRISE DE SESSION — règle absolue (Vial, 15.10.2026, actualisée le 15.10.2026 après-midi)
 
 Toute nouvelle session Claude lit **ce fichier seul** et reprend sans relire l'historique.
+L'état réel se lit dans `organisation/CYCLES_CLAUDE.json` (ne jamais se fier à une jauge recopiée ici).
 
 ## Règles permanentes
-- Réponses au propriétaire : ultra-concises ; seulement « captures + FIN PUBLIÉ + lien » et la jauge `n/30`.
-- Modèles : recherche Opus (effort moyen→élevé), rédaction Sonnet 5.5 moyen, mécanique Sonnet moyen. Interdit de rédiger faux.
-- Cycles 3→30 : recherche + rédaction + contrôle coordinateur (4 captures) + publication directe ; **aucun audit avant le Cycle 30**.
-- Un seul cycle actif. Chaîne : skill `.claude/skills/cycle-medina/SKILL.md`. Garde : `tools/cycle_claude.py` (ne jamais l'affaiblir).
+- Réponses au propriétaire : ultra-concises ; « captures + FIN PUBLIÉ + lien » et jauge en leçons publiées / 120 et cycles Novo / 9.
+- **Projet Novo_12** (`organisation/novo_12/PLAN_NOVO_12.json`) : 12 leçons par cycle (3 par système), préparées ensemble ;
+  publication par la garde existante, quatre leçons à la fois, dans l'ordre du plan tétrade.
+- Distributeur d'agents : skill `.claude/skills/agent-distributor/SKILL.md`, veille `tools/distributor_veille.py`.
+- Veille Codex : `tools/clov2_veille.py --boucle 600` ; lire les messages de Codex (issue 97) et les pondérer.
+- Délégation de Vial : `docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md`.
+- Revues auteur **datées après le démarrage du cycle** de la leçon (la garde refuse toute preuve antérieure) : une leçon
+  préparée en avance reçoit une vraie revue auteur dans son cycle, jamais une date réécrite.
+- Matrice suisse : la matrice auteur reste « pending_independent_review » ; un agent contrôleur distinct produit
+  `preuves/contexte_suisse_controle.json` en vérifiant chaque décision.
+- Chaque injection met à jour l'empreinte de `chapters.json` dans `nosology/integrity.json` et lance `tools/refresh_gauges.py`.
+- Une étape par poussée sur main (contrôles, injection, publication séparés).
 
-## État au 15.10.2026
-- Cycle 1 : publié et audité (main). Jauge **1/30**.
-- Cycle 2 (G45, E10, N18, D64) : 4 leçons contrôlées, `PRET_A_INJECTER` dans `organisation/CYCLES_CLAUDE.json`.
-- Cycle 3 (I61, E05, N04, D69) : rédigé dans `livraisons/Livraison Claude/*/travail/CYCLE_03_*` ; reste contrôle + publication.
-- Branche de travail : `claude/great-cerf-uizsml`.
+## Historique accompli (NE PAS REJOUER)
+- `tools/claude_chaine_main.sh` : exécuté une fois le 15.10.2026 ; **ne plus jamais le relancer** (il reconstruit d'anciens arbres).
+- Cycles 1 et 2 publiés et clôturés ; Cycle 3 ouvert le 15.10.2026.
 
-## Prochaines actions, dans l'ordre
-1. `bash tools/claude_chaine_main.sh` puis pousser C1, C2, C3 vers `main` (avances rapides ; la garde exige des étapes séparées).
-2. Injection Cycle 2 une leçon à la fois G45→E10→N18→D64 : copie canonique (chapters/, glossary/, assets/img/cycle2/), ajout `chapters.json`,
-   `python3 tools/sceller.py enregistrer`, reçu d'injection, `tools/cycle_claude_stage.py stage CODE INJECTE`, garde, push main,
-   attente Pages, relecture publique, `stage CODE PUBLIE_VERIFIE`. Puis `close 2`.
-3. Cycle 3 : `start 3 --direct`, contrôle de chaque leçon (`/tmp`-libre : script type dans `tools/cycle_claude_control.py`), injection, publication.
-4. Cycles 4→30 : `/cycle-medina n`.
+## Prochaines actions
+1. Terminer le Cycle 3 : publier E05 (après un déploiement contenant ses sources), injecter et publier N04 puis D69, clôturer
+   (`tools/cycle_claude_stage.py close 3`), ouvrir le 4 (`start 4 --direct`).
+2. Novo N1 (cycles 4–6) : dossiers et rédactions dans `livraisons/Livraison Claude/*/travail/CYCLE_0[4-6]_*` ;
+   à l'ouverture de chaque cycle : revue auteur datée, matrice de contrôle, contrôle à 4 captures, injection, publication.
+3. Novo N2 à N9 selon le plan.
 
-## Permission requise
-`git push` vers main : règle `Bash(git push:*)` dans `.claude/settings.json` (déjà sur main) ou approbation manuelle.
+Branche de travail : `claude/vibrant-johnson-7k5okg`. Permissions : `.claude/settings.json` (JSON valide, un seul objet).
