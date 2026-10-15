@@ -1,0 +1,60 @@
+{
+ "mission": "ALPHA77-CLAUDE-E12-INTEGRATE",
+ "code": "E12",
+ "phase": "P1_preparation",
+ "agent": "P",
+ "date": "2026-10-15",
+ "status": "ready",
+ "livrables": {
+  "figures.json": "Remplacement des figures 2 (C23) et 3 (C24) : originaux Commons vérifiés (auteur, licence, URL, sha256, contrôle visuel, réserves)",
+  "figures.html": "Blocs <figure> prêts (variante <img> ; variante <svg><image> compatible tests/audit_sciences.py en commentaire)",
+  "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg": "CT axial, Hellerhoff, CC BY-SA 3.0",
+  "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg": "Îlot HE, Polarlys, CC BY 2.5",
+  "semiologie_sciences.html": "PARTIE 1 bouton e12-tab-semio (1er de .sci-bar, aria-selected=true ; passer e12-s-anat à false) ; PARTIE 2 div.sci#e12-s-semio (1re de .sci-body), 9 sections data-semiology, titre exact, alert, schéma SVG non anatomique, 4 encadrés Science →/À retenir, 3 cas corrigés, 4 430 mots",
+  "semiologie_pop3.html": "12 fenêtres e12-sm-* (technique, mécanisme, valeur, piège, source) à copier en chapters/E12/E12_pop3.html",
+  "semiologie_clinique.html": "Bloc pA div.card[data-semiology-clinical=E12], à placer en fin de #e12-6 (E12_b.html)",
+  "sources_semiologie.json": "36 assertions au format source_contract.each_claim, avec passages réels",
+  "glossaire_ajouts.json": "Aucune clé nouvelle requise (audit {} )"
+ },
+ "controles_prep": {
+  "classes": "liste fermée uniquement ; aucun style en ligne",
+  "identifiants": "préfixe e12- ; e12-tab-semio, e12-s-semio, e12-sm-1 à e12-sm-9",
+  "fenetres": "toutes les data-k e12-sm-* ont un data-pop ; aucune orpheline",
+  "glossaire": "build_medina.audit = {}",
+  "audit_sciences_simule": "discipline e12-s-semio : 4 430 mots, figure svg[role=img][aria-label]+figcaption, 4 libellés présents",
+  "audit_sciences_reel": "non exécutable pour E12 : tests/audit_sciences.py exige E12_c.html dans la base c50a28a2 ou une exemption (fichier partagé hors mission)"
+ },
+ "consignes_integration": [
+  "Insérer le bouton en tête de .sci-bar et le div.sci en tête de .sci-body ; l’ancien premier bouton passe à aria-selected=\"false\" et son panneau garde le comportement actuel du moteur.",
+  "Copier semiologie_pop3.html dans chapters/E12/E12_pop3.html sans modification des clés.",
+  "Remplacer intégralement les <figure> SVG des figures 2 et 3 ; supprimer le texte « schéma didactique non calibré » ; adapter la phrase d’annonce si elle décrit l’ancien schéma.",
+  "Vérifier la cohérence de l’alert de #e12-8 (onglet 1) avec l’alert de #e12-sm-1 après la correction C04 (syndrome de renutrition) : seuils >10 jours / >15 %, phosphate, potassium, magnésium, thiamine, 72 h.",
+  "Le sous-onglet ne porte pas de bouton Pareto ; le Pareto des sciences reste en fin des disciplines existantes."
+ ],
+ "lacunes": [
+  "Aucune fréquence de symptôme ni valeur diagnostique de signe clinique publiée pour cette entité dans les sources lues (écrit dans la leçon).",
+  "Aucune source suisse de sémiologie propre à E12 ; recommandations suisses lues : SGED 2023, SGED/SGRM 2025 ; sources bernoises sur la renutrition.",
+  "Symptômes adrénergiques et neuroglucopéniques de l’hypoglycémie non sourcés : non énumérés.",
+  "Signes d’alerte du cancer pancréatique : Revue médicale suisse 2022 non relue.",
+  "ESPEN 2020 (pancréatite) non lue (HTTP 403) ; HaPanEU lue par sections.",
+  "Image_Clo_finder : Commons en HTTP 429 (cooldown partagé), aucune boucle ; métadonnées des deux originaux lues sur les pages Commons.",
+  "Aucune micrographie libre d’îlot fibrosé de FCPD : la figure 3 montre un îlot normal, légende explicite."
+ ],
+ "choix_differes_non_appliques": [
+  "espaces insécables globales",
+  "« fibrillation atriale/auriculaire »",
+  "groupe LIENS d’E11"
+ ],
+ "sha256": {
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/figures.html": "0c86f69686a431c46df26f9740dfa89ad99d249620d2c135ab937a6beec03b48",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/figures.json": "2c32ec0f90602388c92923611efcf8426e7eb851e0e8197b21a056016dd6c5ae",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/glossaire_ajouts.json": "3e0946684f4c9d7795a8c78f9e36e71f99aad673e94f8bddd1c52c9300bb5303",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/semiologie_clinique.html": "0eedfd7bdf458f2c566ad7b5710f6780cb551ed094c8a4a65006f933ef1c5a11",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/semiologie_pop3.html": "ad624664680c15407bb07d1b3ec1457fce7a6f443b47b7cf9af9ac7884ed9797",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/semiologie_sciences.html": "2b6cb38efc12cbb9d049e74d4b2037be04bbf4961e9a69934ad076181051141d",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E12-INTEGRATE/prep/sources_semiologie.json": "65dfd8429c7e009db23724a795ceb69dd80ed9fea5abf1420cabb476736cc8c0",
+  "assets/img/e12/alpha/claude/e12-fig2-pancreatite-chronique-calcifiante-ct-hellerhoff.jpg": "40468ceb7da16eda0b28722aa4c78a9930578fc4074a139261b8bb977c30a11d",
+  "assets/img/e12/alpha/claude/e12-fig3-ilot-langerhans-he-polarlys.jpg": "640b682437363580e6942f074846bac0632a8dca29def8add1671960ec1b384c"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation médicale revendiquée."
+}
