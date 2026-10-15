@@ -1,0 +1,405 @@
+{
+  "mission": "ALPHA1-CLAUDE-D50-MED",
+  "code": "D50",
+  "type_audit": "medical",
+  "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "generation": 1,
+  "branche": "claude/alpha1/d50-med-g1",
+  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-D50-MED-g1",
+  "conversation": "alpha1-claude-d50-med",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": "2026-10-15T18:20:00Z",
+  "date_fin": "2026-10-15T18:45:00Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/D50/D50_a.html",
+      "chapters/D50/D50_b.html",
+      "chapters/D50/D50_c.html",
+      "chapters/D50/D50_d.html",
+      "chapters/D50/D50_pop1.html",
+      "chapters/D50/D50_pop2.html",
+      "glossary/d50.py"
+    ],
+    "empreintes_conformes": true,
+    "note": "Les 7 empreintes SHA-256 recalculées sont identiques au manifeste .medina/missions/ALPHA1-CLAUDE-D50-MED.json. Les 89 clés distinctes data-k ont une fenêtre ou une entrée de glossaire. Dans ce chapitre, les îlots 0–6 sont dans _a, 7–14 dans _b, Examens et Sciences dans _c, Pharmacologie dans _d."
+  },
+  "premiere_source_lue": {
+    "source_id": "S1",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8515119/fullTextXML",
+    "section": "Definitions — serum ferritin ; Treatment of IDA ; Follow-up and recurrent IDA"
+  },
+  "synthese": {
+    "BLOQUANT": 0,
+    "MAJEUR": 3,
+    "MINEUR": 5,
+    "ENRICHISSEMENT": 5
+  },
+  "verifications_conformes": [
+    "Seuils OMS 2024 : anémie, gravité, altitude et tabac (S4)",
+    "BSG 2021 : ferritine <15 (0,99) et >150, un tiers de lésions, cancer 8–10 %, double lésion 1–10 %, cœliaque 3–5 %, récidive 12–25 %, 2 ans, capsule 66,6 %, 60 mg/35–45 %, repas –75 %, thé 60 min, coloscopie à 2 semaines, transfusion 70–90/80–100 g/L, 200 mg par concentré, 0,5 %, arrêts jusqu’à 40 %, suivi 3 mois puis 6 mois (S1)",
+    "SGGG 2022 : 32 %, 10 %, mortalité doublée, <30 µg/L et 90 %, 80–200 mg, vitamine C, indications et contre-indications intraveineuses, post-partum, 10 % contre 2,5 % (S3)",
+    "Delphi 2019 : surtraitement, 8–12 semaines, jambes sans repos <50 µg/L ou TSAT <16 % (S5)",
+    "Onkopedia 2025 : TSAT ≤15 %, ferritine <30 µg/L, cible 50 µg/L, +1–2 g/dL à 4 semaines, antihistaminiques H1 (S2)",
+    "ESC 2026 : fer intraveineux I B et IIa B (S8)",
+    "KDIGO 2026 : recommandations 2.1–2.4 et points 2.2–2.8 (S9)",
+    "Schaefer 2021 : 47 % contre 4 %, persistance jusqu’à 45 % (S10)",
+    "FI suisses : Ferinject® non approuvé de 1 à 18 ans et contre-indiqué au 1er trimestre ; MonoFer® <18 ans non recommandé ; Venofer® <3 ans non recommandé ; Tardyferon® dès 10 ans, 6 mois au plus ; ferro sanol® dès 6 ans et 20 kg ; Ferrum Hausmann® contre-indiqué <6 ans ; Feraccru® <18 ans non établi, DFGe ≥15 ; dates de mise à jour conformes au cours (S13–S20)"
+  ],
+  "constats": [
+    {
+      "id": "MED-M1",
+      "gravite": "MAJEUR",
+      "fichier": "chapters/D50/D50_pop1.html",
+      "ancre": "dans une méta-analyse, l’éradication n’améliore pas la réponse au fer.",
+      "constat": "La fenêtre d50-gastrite ne présente que la position de la BSG 2021 (l’éradication d’Helicobacter pylori n’améliore pas la réponse au fer) et aucune conduite devant une infection démontrée. Le guide Onkopedia d’avril 2025, auquel participe la SGH/SSH, range l’éradication parmi les traitements de la cause lorsqu’une gastrite à Helicobacter pylori est démontrée. La divergence n’est pas exposée et le lecteur ne sait pas s’il doit traiter une infection documentée.",
+      "preuve": [
+        {
+          "source_id": "S1",
+          "section": "Who to investigate — Helicobacter / gastric biopsies",
+          "citation_courte": "The same meta-analysis suggested that Helicobacter eradication does not improve the Hb response to IRT."
+        },
+        {
+          "source_id": "S2",
+          "section": "4.1 Kausale Therapie",
+          "citation_courte": "Verbesserung der Eisenresorption, bei Nachweis einer Helicobacter pylori positiven Gastritis durch Eradikation"
+        }
+      ],
+      "proposition": "propositions/D50_pop1_1.html",
+      "justification": "Mécanisme : l’infection et l’atrophie qu’elle entraîne réduisent l’acidité gastrique, donc la réduction et l’absorption du fer non héminique. Conséquence : une infection démontrée laissée en place entretient la carence et ses récidives. Décision : pas de biopsies systématiques (BSG), mais éradication d’une infection documentée en plus du fer (Onkopedia), en gardant la recherche d’une autre perte."
+    },
+    {
+      "id": "MED-M2",
+      "gravite": "MAJEUR",
+      "fichier": "chapters/D50/D50_pop1.html",
+      "ancre": "Le bénéfice sur les symptômes et celui sur les hospitalisations sont donc des objectifs distincts.",
+      "constat": "La fenêtre d50-ic omet la recommandation ESC 2026 de mesurer le statut martial (TSAT et ferritine) chez tout patient suspect d’insuffisance cardiaque (classe I, niveau C, page 39), ainsi que les classes et niveaux des deux recommandations de fer intraveineux (I B ; IIa B, page 91). La fenêtre d50-divergences-suisses cite la position de mediX contre un dépistage général sans la confronter à cette recommandation européenne postérieure.",
+      "preuve": [
+        {
+          "source_id": "S8",
+          "section": "Page 39, Recommendations for diagnostic investigations",
+          "citation_courte": "full blood count, kidney function ... and iron status (TSAT and ferritin). I C"
+        },
+        {
+          "source_id": "S8",
+          "section": "Page 91, Recommendations for iron deficiency in patients with heart failure",
+          "citation_courte": "Intravenous iron supplementation is recommended ... I B1 ; should be considered ... to reduce the risk of HFH IIa B1"
+        },
+        {
+          "source_id": "S7",
+          "section": "Aktualisierung 08/2025",
+          "citation_courte": "Kein routinemässiges Screening"
+        }
+      ],
+      "proposition": "propositions/D50_pop1_2.html",
+      "justification": "Mécanisme : la carence martiale réduit la capacité oxydative musculaire et touche 40 à 70 % des insuffisants cardiaques, souvent sans anémie (BSG). Conséquence : sans dosage systématique, une carence traitable reste méconnue. Décision : TSAT et ferritine chez tout patient suspect d’insuffisance cardiaque ; fer intraveineux selon la fraction d’éjection et l’objectif visé."
+    },
+    {
+      "id": "MED-M3",
+      "gravite": "MAJEUR",
+      "fichier": "chapters/D50/D50_pop1.html",
+      "ancre": "Carence absolue peu probable dans ce cadre ; ne s’extrapole pas au cancer ou à une maladie hépatique",
+      "constat": "Le cours reprend de la BSG 2021 les seuils de ferritine 15 et 150 µg/L, mais omet le seuil de 45 µg/L, présenté par la BSG comme le meilleur compromis entre sensibilité et spécificité (0,92) et comme valeur sous laquelle l’exploration digestive peut être envisagée, surtout avec une inflammation chronique et une anémie. Un patient anémique avec ferritine 30–45 µg/L et inflammation risque de ne pas être exploré.",
+      "preuve": [
+        {
+          "source_id": "S1",
+          "section": "Definitions — serum ferritin",
+          "citation_courte": "A cut-off of 45 µg/L provides a respectable specificity of 0.92, and figures below this may warrant consideration of GI investigation"
+        }
+      ],
+      "proposition": "propositions/D50_pop1_3.html",
+      "justification": "Mécanisme : la ferritine, protéine de phase aiguë, s’élève avec l’inflammation et peut masquer des réserves vides. Conséquence : un seuil de 30 µg/L manque des carences absolues chez l’inflammatoire. Décision : sous 45 µg/L chez un patient anémique, surtout inflammatoire, discuter l’exploration digestive."
+    },
+    {
+      "id": "MED-m1",
+      "gravite": "MINEUR",
+      "fichier": "chapters/D50/D50_b.html",
+      "ancre": "indique le fer intraveineux dès le deuxième trimestre.",
+      "constat": "L’encadré « Signes d’une anémie grave » (îlot 8) mêle aux signes d’urgence une indication thérapeutique obstétricale (hémoglobine < 90 g/L : fer intraveineux dès le deuxième trimestre). L’avis suisse la classe parmi les indications du fer intraveineux, non parmi les urgences ; la juxtaposition peut faire croire qu’une hémoglobine de 88 g/L chez une femme enceinte stable est une urgence.",
+      "preuve": [
+        {
+          "source_id": "S3",
+          "section": "Therapie — indications intraveineuses ab dem 2. Trimester",
+          "citation_courte": "Schwere bzw. fortgeschrittene Anämie (Hb < 90 g/L)"
+        }
+      ],
+      "proposition": "Déplacer la phrase de l’encadré div.alert vers le paragraphe « Pendant la grossesse » de l’îlot 8, sous la forme : « Pendant la grossesse, une hémoglobine inférieure à 90 g/L ne signe pas à elle seule une urgence ; elle indique, après le premier trimestre, le fer intraveineux selon l’avis suisse [S3]. »",
+      "justification": "Mécanisme : l’anémie gestationnelle s’installe lentement et reste souvent compensée. Conséquence : confondre indication thérapeutique et urgence fausse le tri. Décision : l’urgence repose sur la tolérance et le saignement ; Hb < 90 g/L oriente vers le fer intraveineux programmé."
+    },
+    {
+      "id": "MED-m2",
+      "gravite": "MINEUR",
+      "fichier": "chapters/D50/D50_b.html",
+      "ancre": "devient potentiellement dangereux au-delà de 20 mg de fer par kilo.",
+      "constat": "Le seuil toxique est exact, mais incomplet : l’information professionnelle Tardyferon® de juillet 2025 précise que le risque augmente considérablement à partir de 60 mg/kg et qu’une dose de 400 mg de Fe2+ peut mettre en jeu la vie d’un jeune enfant.",
+      "preuve": [
+        {
+          "source_id": "S16",
+          "section": "Surdosage",
+          "citation_courte": "commence à partir d'une dose de 20 mg/kg ... augmente considérablement avec des doses de 60 mg/kg ou plus ... 400 mg de Fe2+ peut mettre leur vie en danger"
+        },
+        {
+          "source_id": "S18",
+          "section": "Surdosage",
+          "citation_courte": "Un surdosage aigu de plus >20 mg de fer/kg"
+        }
+      ],
+      "proposition": "devient potentiellement toxique dès 20 mg de fer élément par kilo, et le risque augmente fortement à partir de 60 mg/kg ; chez le jeune enfant, 400 mg de fer ferreux peuvent mettre la vie en danger, soit cinq comprimés de Tardyferon® à 80 mg [S16].",
+      "justification": "Mécanisme : le fer libre en excès sature la transferrine et lèse directement la muqueuse digestive puis les mitochondries. Conséquence : quelques comprimés suffisent chez un petit enfant. Décision : conservation hors de portée et prise en charge toxicologique dès 20 mg/kg."
+    },
+    {
+      "id": "MED-m3",
+      "gravite": "MINEUR",
+      "fichier": "chapters/D50/D50_pop1.html",
+      "ancre": "le fer intraveineux relève l’<button class=\"w\" data-k=\"d50-anemie-def\" title=\"Seuils d’anémie selon la population OMS 2024\">hémoglobine</button> en une semaine",
+      "constat": "La formulation laisse croire que l’hémoglobine est corrigée en une semaine. La BSG écrit que le fer parentéral produit en une semaine une réponse d’hémoglobine cliniquement significative, non une correction.",
+      "preuve": [
+        {
+          "source_id": "S1",
+          "section": "Treatment — blood transfusion",
+          "citation_courte": "parenteral iron reliably produces a clinically meaningful Hb response with[in] a week"
+        }
+      ],
+      "proposition": "le fer intraveineux produit en une semaine une hausse cliniquement significative de l’<button class=\"w\" data-k=\"d50-anemie-def\" title=\"Seuils d’anémie selon la population OMS 2024\">hémoglobine</button>, sans la corriger entièrement",
+      "justification": "Mécanisme : la moelle augmente sa production dès que le fer est disponible, mais la masse érythrocytaire se reconstitue en plusieurs semaines. Conséquence : attendre une normalisation à une semaine conduirait à un faux constat d’échec. Décision : juger la réponse au plus tôt à quatre semaines selon les FI Ferinject® et MonoFer®."
+    },
+    {
+      "id": "MED-m4",
+      "gravite": "MINEUR",
+      "fichier": "chapters/D50/D50_b.html",
+      "ancre": "La patiente de l’îlot 0 reçoit un comprimé de sulfate ferreux par jour, à jeun.",
+      "constat": "Le cas récapitulatif démarre le fer oral sans situer la coloscopie dans le temps, alors que l’îlot 9 enseigne, d’après la BSG, de différer le fer oral si la coloscopie est prévue dans les deux semaines. La cohérence pédagogique est incomplète.",
+      "preuve": [
+        {
+          "source_id": "S1",
+          "section": "Treatment of IDA",
+          "citation_courte": "if a patient is to be investigated for IDA within 2 weeks, it would be appropriate to delay treatment until after the colonoscopy"
+        }
+      ],
+      "proposition": "La coloscopie de la patiente de l’îlot 0 étant programmée dans trois semaines, elle reçoit dès le diagnostic un comprimé de sulfate ferreux par jour, à jeun ; le fer est suspendu avant la préparation colique.",
+      "justification": "Mécanisme : le fer oral noircit les selles et gêne la préparation colique. Conséquence : une coloscopie de mauvaise qualité peut manquer la lésion. Décision : différer le fer si la coloscopie a lieu dans les deux semaines, sinon le commencer et le suspendre avant la préparation."
+    },
+    {
+      "id": "MED-m5",
+      "gravite": "MINEUR",
+      "fichier": "chapters/D50/D50_a.html",
+      "ancre": "Chez l’homme adulte et la femme ménopausée, l’anémie ferriprive atteint 2 à 5 % de la population ; chez la femme non ménopausée en bonne santé, 5 à 12 %.",
+      "constat": "Le paragraphe attribue ses chiffres à la revue suisse de Clénin 2017, mais les prévalences 2–5 % et 5–12 % proviennent de la BSG 2021 (pays industrialisés). L’attribution est imprécise.",
+      "preuve": [
+        {
+          "source_id": "S1",
+          "section": "Introduction ; Special situations — young women",
+          "citation_courte": "point prevalence of 2%–5% among adult men and postmenopausal women ... prevalence of IDA in otherwise healthy premenopausal women is 5%–12%"
+        },
+        {
+          "source_id": "S6",
+          "section": "Épidémiologie",
+          "citation_courte": "range 9–22% ... 2.3–7%"
+        }
+      ],
+      "proposition": "Selon la <button class=\"w\" data-k=\"d50-sources-guides\">BSG</button> 2021, dans les pays industrialisés, l’anémie ferriprive atteint 2 à 5 % des hommes adultes et des femmes ménopausées, et 5 à 12 % des femmes non ménopausées en bonne santé.",
+      "justification": "Mécanisme : sans objet. Conséquence : une attribution fausse empêche l’auditeur de vérifier le chiffre. Décision : rattacher chaque prévalence à sa source."
+    },
+    {
+      "id": "MED-E1",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "chapters/D50/D50_a.html",
+      "ancre": "La <b>carence martiale</b> désigne des réserves de fer insuffisantes pour les besoins de l’organisme.",
+      "constat": "Rubriques 2 et 19 : le périmètre CIM-10-GM n’est pas énoncé. La carence sans anémie relève de E61.1 (exclusion de D50), l’anémie aiguë posthémorragique de D62 ; les sous-codes D50.0, D50.1, D50.8 et D50.9 ne sont nommés nulle part.",
+      "preuve": [
+        {
+          "source_id": "S11",
+          "section": "D50.-",
+          "citation_courte": "Exkl.: Eisenmangel (E61.1) ; D50.0 ... Exkl.: Akute Blutungsanämie (D62) ; D50.1 Sideropenische Dysphagie"
+        }
+      ],
+      "proposition": "propositions/D50_a_1.html",
+      "justification": "Mécanisme : la carence sans anémie et l’anémie ferriprive sont deux entités nosologiques distinctes. Conséquence : le lecteur relie le cours à la classification sans îlot dédié. Décision : une phrase de périmètre dans l’îlot 1."
+    },
+    {
+      "id": "MED-E2",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "chapters/D50/D50_pop1.html",
+      "ancre": "Le syndrome de Plummer et Vinson associe une dysphagie à la carence.",
+      "constat": "Le sous-code D50.1 (dysphagie sidéropénique, syndrome de Plummer et Vinson) n’est traité qu’en une phrase, sans membrane œsophagienne, diagnostic, traitement ni risque de carcinome épidermoïde, point classique d’examen.",
+      "preuve": [
+        {
+          "source_id": "S12",
+          "section": "Définition ; traitement et pronostic",
+          "citation_courte": "classic triad of dysphagia, iron-deficiency anemia and esophageal webs ... increased risk of squamous cell carcinoma of the pharynx and the esophagus"
+        }
+      ],
+      "proposition": "propositions/D50_pop1_4.html",
+      "justification": "Mécanisme : la carence prolongée favorise la formation de membranes de l’œsophage cervical. Conséquence : dysphagie et risque néoplasique. Décision : fer, dilatation si persistance, surveillance endoscopique."
+    },
+    {
+      "id": "MED-E3",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "chapters/D50/D50_pop1.html",
+      "ancre": "Le médecin quantifie les règles et recherche une cause gynécologique lorsque le saignement est anormal.",
+      "constat": "Rubrique 7 : le cours demande de quantifier les règles sans donner de repère chiffré (perte normale 50 mL ≈ 25 mg de fer ; hyperménorrhée > 80 mL, environ 15 % des femmes) ni la difficulté d’estimation décrite par Onkopedia.",
+      "preuve": [
+        {
+          "source_id": "S2",
+          "section": "2.4 Ursachen",
+          "citation_courte": "etwa 50 ml Blut und somit 25 mg Eisen monatlich ... Hypermenorrhoe, die durch einen Blutverlust von mehr als 80 ml Blut definiert ist"
+        }
+      ],
+      "proposition": "propositions/D50_pop1_5.html",
+      "justification": "Mécanisme : chaque millilitre de sang emporte environ 0,5 mg de fer. Conséquence : une hyperménorrhée dépasse la capacité d’absorption. Décision : quantifier la perte avant d’attribuer la carence aux règles."
+    },
+    {
+      "id": "MED-E4",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "chapters/D50/D50_a.html",
+      "ancre": "Hématurie (cancer du rein), épistaxis répétées, dons de sang",
+      "constat": "Les dons de sang sont cités sans quantification : un don de 500 mL retire environ 250 mg de fer selon Onkopedia. Les règles suisses des donneurs n’ont pas été lues (lacune).",
+      "preuve": [
+        {
+          "source_id": "S2",
+          "section": "2.4 Ursachen",
+          "citation_courte": "durch die Entnahme von einem halben Liter Blut dem Körper etwa 250 mg Eisen entzogen"
+        }
+      ],
+      "proposition": "propositions/D50_a_2.html",
+      "justification": "Mécanisme : 250 mg représentent plusieurs mois d’absorption. Conséquence : des dons rapprochés épuisent les réserves. Décision : compter les dons à l’anamnèse."
+    },
+    {
+      "id": "MED-E5",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "chapters/D50/D50_b.html",
+      "ancre": "Une prescription pédiatrique relève d’un référentiel dédié, sans extrapolation du tableau adulte.",
+      "constat": "Rubriques 4 et 15 : l’épidémiologie européenne (5–10 % ; femmes ~20 % ; adolescents 4–8 %) et la carence du nourrisson (6–24 mois, lait de vache, séquelles neurocognitives) manquent ; les seuils OMS 2024 de l’enfant ne sont pas donnés alors que D50 couvre tous les âges.",
+      "preuve": [
+        {
+          "source_id": "S2",
+          "section": "2.2 Epidemiologie ; 2.4 Ursachen ; 2.5",
+          "citation_courte": "Die Prävalenz in Europa beträgt 5-10%, bei Frauen im gebärfähigen Alter etwa 20% ... zwischen dem 6. und dem 24. Lebensmonat"
+        },
+        {
+          "source_id": "S4",
+          "section": "Tableau 3",
+          "citation_courte": "Children, 5–11 years ≥115 ; 12–14 years ≥120"
+        }
+      ],
+      "proposition": "propositions/D50_b_1.html",
+      "justification": "Mécanisme : la croissance rapide dépasse les apports, et le lait de vache est pauvre en fer biodisponible. Conséquence : carence aux séquelles parfois irréversibles. Décision : reconnaître l’âge à risque et appliquer les seuils pédiatriques."
+    }
+  ],
+  "matrice_20": [
+    {
+      "rubrique": "1. Question clinique et enjeu pour l’examen fédéral",
+      "statut": "couvert",
+      "localisation": "pA #d50-0 (cas de la femme ménopausée), quiz"
+    },
+    {
+      "rubrique": "2. Définition et périmètre CIM-10-GM",
+      "statut": "partiel",
+      "localisation": "pA #d50-1 ; exclusions E61.1/D62 absentes (MED-E1)"
+    },
+    {
+      "rubrique": "3. Classifications et stades",
+      "statut": "couvert",
+      "localisation": "pA #d50-1, fenêtres d50-stades, d50-anemie-def (gravité OMS)"
+    },
+    {
+      "rubrique": "4. Épidémiologie suisse puis européenne",
+      "statut": "partiel",
+      "localisation": "pA #d50-2 (données suisses) ; prévalence européenne absente (MED-E5)"
+    },
+    {
+      "rubrique": "5. Normal → pathologique",
+      "statut": "couvert",
+      "localisation": "pA #d50-3 ; pS physiologie, biochimie, hématologie cellulaire"
+    },
+    {
+      "rubrique": "6. Étiologies et facteurs de risque",
+      "statut": "couvert",
+      "localisation": "pA #d50-4 ; conduite Helicobacter incomplète (MED-M1), dons non quantifiés (MED-E4)"
+    },
+    {
+      "rubrique": "7. Anamnèse et symptômes",
+      "statut": "partiel",
+      "localisation": "pA #d50-5 ; peu de fréquences, hyperménorrhée non chiffrée (MED-E3)"
+    },
+    {
+      "rubrique": "8. Examen clinique",
+      "statut": "couvert",
+      "localisation": "pA #d50-6, fenêtres d50-paleur, d50-phaneres ; aucune sensibilité chiffrée dans les sources suisses (lacune déclarée)"
+    },
+    {
+      "rubrique": "9. Drapeaux rouges et urgences",
+      "statut": "couvert",
+      "localisation": "pA #d50-8 div.alert, tableau de l’îlot 7 (MED-m1 sur le classement)"
+    },
+    {
+      "rubrique": "10. Examens complémentaires",
+      "statut": "couvert",
+      "localisation": "pE #d50-e-1 à #d50-e-4 ; seuil BSG 45 µg/L absent (MED-M3)"
+    },
+    {
+      "rubrique": "11. Diagnostic différentiel",
+      "statut": "couvert",
+      "localisation": "pA #d50-7, pE #d50-e-3, fenêtre d50-ssp-microcytose"
+    },
+    {
+      "rubrique": "12. Prise en charge suisse",
+      "statut": "couvert",
+      "localisation": "pA #d50-9 à #d50-11, pP #d50-p-1 à #d50-p-5, FI suisses datées"
+    },
+    {
+      "rubrique": "13. Complications et pronostic",
+      "statut": "couvert",
+      "localisation": "pA #d50-2, #d50-8, fenêtre d50-hypophos"
+    },
+    {
+      "rubrique": "14. Suivi, prévention, dépistage",
+      "statut": "couvert",
+      "localisation": "pA #d50-12, fenêtre d50-recidive ; dépistage en insuffisance cardiaque incomplet (MED-M2)"
+    },
+    {
+      "rubrique": "15. Situations particulières",
+      "statut": "partiel",
+      "localisation": "pA #d50-13 ; pédiatrie volontairement exclue (MED-E5)"
+    },
+    {
+      "rubrique": "16. Spécificités suisses",
+      "statut": "partiel",
+      "localisation": "références suisses et FI Swissmedic ; remboursement (liste des spécialités) et règles des donneurs absents (lacunes)"
+    },
+    {
+      "rubrique": "17. Critères formels du diagnostic",
+      "statut": "couvert",
+      "localisation": "pA #d50-14 div.alert"
+    },
+    {
+      "rubrique": "18. Paramètres clés chiffrés",
+      "statut": "couvert",
+      "localisation": "pA #d50-14 div.key"
+    },
+    {
+      "rubrique": "19. Sous-codes CIM-10-GM",
+      "statut": "absent",
+      "localisation": "D50.0, D50.1, D50.8, D50.9 non nommés (MED-E1, MED-E2)"
+    },
+    {
+      "rubrique": "20. Points d’examen fédéral",
+      "statut": "couvert",
+      "localisation": "pâleur et anémie découverte (îlot 7), quiz, Pareto ; Plummer et Vinson à compléter (MED-E2)"
+    }
+  ],
+  "lacunes": [
+    "Maastricht VI/Florence 2022 (S21) : texte intégral refusé (HTTP 403 sur gut.bmj.com) ; position européenne sur Helicobacter pylori et anémie ferriprive inexpliquée non lue.",
+    "Règles suisses des donneurs de sang (Transfusion CRS Suisse) : non trouvées par recherche web ; non vérifiées.",
+    "Liste des spécialités (OFSP) : limitations de remboursement du fer intraveineux non consultées.",
+    "Référentiel pédiatrique suisse (Pédiatrie Suisse) sur la carence martiale de l’enfant : non recherché.",
+    "Non relus dans cette passe : OFSP 2020 (évaluation de technologie), Hoving 2025, Viollier, Hôpital cantonal de Lucerne, consensus de médecine du sport 2015, Karczewski 2024, Simic 2023, Pereira Portela 2024, OMS 2020 ferritine ; leurs chiffres restent ceux des audits antérieurs.",
+    "Performance chiffrée de la pâleur conjonctivale : absente des sources suisses et européennes lues (réserve déjà déclarée le 14.10)."
+  ],
+  "controles": {
+    "ancres_uniques": "chaque ancre vérifiée par script : présente exactement une fois dans son fichier",
+    "json_valide": true,
+    "abreviations_propositions": "ESC, TSAT, BSG, OMS reliés aux clés existantes ; CIM-10-GM et OMS figurent dans le glossaire global ; build_medina.audit() à exécuter à l’intégration"
+  },
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
