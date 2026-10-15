@@ -94,12 +94,14 @@
     {
       "id": "LANG-FINAL",
       "status": "resolved",
-      "detail": "Relecture finale achevée ; aucune correction linguistique supplémentaire nécessaire après adoption des25 propositions. Nombres, unités, négations, conditions, populations et incertitudes conservés intégralement."
+      "detail": "Relecture finale achevée ; aucune correction linguistique supplémentaire nécessaire après adoption des25 propositions. Nombres, unités, négations, conditions, populations et incertitudes conservés intégralement.",
+      "evidence": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D64-INTEGRATE/LANG.json#/evidence/0 à /evidence/6 attestent la lecture des sept fichiers core ; reprise-propositions.json contient les25 propositions LANG ; lang-final-validation.json#/historical_proposals constate pour chacune old_absent=true et replacement_present=true. Ce même fichier atteste source_unchanged=true, all_11_hashes_match_MED_SEMIO=true, la syntaxe du glossaire et la structure sémiologique. rapport-lang-final.md confirme l’absence de retouche source et les limites de la reprise."
     },
     {
       "id": "PROVISIONAL-MEDICAL",
       "status": "unresolved",
-      "detail": "MED et SEMIO restent provisoires ; les réserves thérapeutiques, historiques et techniques conservées ne sont pas levées par la relecture linguistique."
+      "detail": "MED et SEMIO restent provisoires ; les réserves thérapeutiques, historiques et techniques conservées ne sont pas levées par la relecture linguistique.",
+      "evidence": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D64-INTEGRATE/MED.json et SEMIO.json conservent status=provisional et leurs unresolved_blockers ; LANG.json#/unresolved_blockers reprend la même notice. lang-final-validation.json#/visible_provisional_notice atteste sa présence et #/source_unchanged l’absence de retouche source. rapport-lang-final.md précise que les réserves et l’absence de validation médicale humaine sont conservées, sans nouvelle preuve visuelle."
     }
   ]
 }
