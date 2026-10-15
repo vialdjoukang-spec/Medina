@@ -23,7 +23,7 @@ jobs:
       - name: Repérer toutes les branches et pull requests
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python tools/collaboration_sync.py --out "$RUNNER_TEMP/medina-collaboration"
+        run: python tools/collaboration_sync.py --integration-branch main --out "$RUNNER_TEMP/medina-collaboration"
       - name: Présenter le rapport
         if: always()
         run: |

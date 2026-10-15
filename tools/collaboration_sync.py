@@ -21,7 +21,7 @@ import urllib.parse
 import urllib.request
 
 DEFAULT_REPO = "vialdjoukang-spec/Medina"
-DEFAULT_TARGET = "codex/sciences-cs-fragments-20261007"
+DEFAULT_TARGET = "main"
 
 
 class GitHubClient:
