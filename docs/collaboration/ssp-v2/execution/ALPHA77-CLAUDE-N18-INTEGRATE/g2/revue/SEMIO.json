@@ -1,0 +1,87 @@
+{
+ "actor": "Claude",
+ "code": "N18",
+ "fragment": "S04",
+ "mission": "ALPHA77-CLAUDE-N18-INTEGRATE",
+ "generation": 2,
+ "reviewer_role": "Passe de revue finale séparée de l’intégration, exécutée dans la même session Claude (aucun outil de sous-agent disponible dans cet environnement) ; relecture du diff complet génération 2",
+ "status": "closed",
+ "medical_human_validation": false,
+ "base_commit": "3969903cc87329bc471bf8ab7bce77f25544b76e",
+ "source_files_sha256": {
+  "chapters/N18/N18_a.html": "379119568de1595e409ca86cfba82cce2a2dce39a725016418035096df90c9b4",
+  "chapters/N18/N18_b.html": "7fe1bb8fc76803dd5c46131b82ee66b0e01340359c059627a139434123b14c58",
+  "chapters/N18/N18_c.html": "f89608d79db5a2bf8aef338500698b0755f8da835ade6840f2b92cd7a3152371",
+  "chapters/N18/N18_d.html": "576cf45799a506cca200ef43515568efe573d2343727ca676606aade80b68608",
+  "chapters/N18/N18_pop1.html": "b30835f4d60e5fdbb660de0063b6ec231996aeaefbf055b8ec9438d9b9a1e950",
+  "chapters/N18/N18_pop2.html": "594705bc239322de6df65571014289f9a692681affff36d1b2704e560a0beb54",
+  "glossary/n18.py": "4e59b152cad30c30746f363673be23e13dc207240e7a3ede2fecfcf88801cbdf"
+ },
+ "reviewed_files_sha256": {
+  "chapters/N18/N18_a.html": "6f6f459a3a258c56c3a8370d7113fb3798e90c3b3e48c45e39a61c7e441c47e9",
+  "chapters/N18/N18_b.html": "7fe1bb8fc76803dd5c46131b82ee66b0e01340359c059627a139434123b14c58",
+  "chapters/N18/N18_c.html": "427f8f5860e299bc87363804524b242c6b9518158c3551f9d007ac45a897659f",
+  "chapters/N18/N18_d.html": "576cf45799a506cca200ef43515568efe573d2343727ca676606aade80b68608",
+  "chapters/N18/N18_pop1.html": "fb8fab9e26632257e5633e2001bd8bbe1f10b86cf7e52c68741d777862b91248",
+  "chapters/N18/N18_pop2.html": "f05962b01fd95b07fa683c9aae8bd686bc6211d8eb39a2f3785f9e96dc43fc8c",
+  "glossary/n18.py": "d5ae070c286c909fc8a6b38d79d2426aee5835915900face2d8655af95505036"
+ },
+ "reviewed_at": "2026-10-15",
+ "hash_note": "source_files_sha256 = 7 fichiers du cours à la base 3969903 (identiques aux sorties du reçu 0001) ; reviewed_files_sha256 = fichiers finaux génération 2, copiés sous g2/final.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation par un médecin n’est revendiquée.",
+ "unresolved_blockers": [],
+ "kind": "SEMIO",
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "n18-s-semio",
+ "source_path": "chapters/N18/N18_c.html",
+ "scope": "Sous-onglet Sémiologie fondamentale et analytique (inchangé hors corrections COR-01 à COR-08) et barre Sciences à six sous-onglets",
+ "requirements_reviewed": {
+  "contrat": "docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml ; AGENTS.md § Sémiologie obligatoire"
+ },
+ "findings": [
+  {
+   "id": "SEM-G2-01",
+   "status": "resolved",
+   "finding": "La barre .sci-bar compte six sous-onglets data-s : n18-s-semio (premier), n18-s01 à n18-s05 ; chacun sélectionné affiche son seul panneau (Chromium 1280 et 390 px).",
+   "evidence": [
+    "[\"n18-s-semio:true:n18-s-semio\", \"n18-s01-sci:true:n18-s01-sci\", \"n18-s02-sci:true:n18-s02-sci\", \"n18-s03-sci:true:n18-s03-sci\", \"n18-s04-sci:true:n18-s04-sci\", \"n18-s05-sci:true:n18-s05-sci\"]"
+   ]
+  },
+  {
+   "id": "SEM-G2-02",
+   "status": "resolved",
+   "finding": "Corrections sémiologiques de l’îlot : marqueurs de lésion (sm-2), sodium/natrémie et signe clinique d’hypervolémie (sm-3), fatigue sans anémie et atteinte aiguë (sm-6) ; science normale → perturbation → signe → examen → interprétation conservée.",
+   "evidence": [
+    "COR-01 à COR-08 appliqués ; sources ligne n18-sm-9 complétées (COR-08)"
+   ]
+  },
+  {
+   "id": "SEM-G2-03",
+   "status": "resolved",
+   "finding": "Bloc clinique de N18_a (n18-a05-partie-7) cohérent avec l’îlot pour la fatigue (SIG-01, SIG-02).",
+   "evidence": [
+    "N18_a.html"
+   ]
+  },
+  {
+   "id": "SEM-G2-04",
+   "status": "non_blocking",
+   "finding": "Figure 9 à 390 px : largeur 296 px, police minimale rendue ≈ 11.1 px, sans débordement ; à 1280 px : 717 px, ≈ 26.9 px.",
+   "evidence": [
+    "captures g2/n18-g2-2-figure9-390.png et -1280.png"
+   ]
+  },
+  {
+   "id": "SEM-G2-05",
+   "status": "non_blocking",
+   "finding": "Mode Livre activé (aria-pressed=true) et police portée à 20 px sans défilement horizontal ; aucune erreur JavaScript.",
+   "evidence": [
+    "capture g2/n18-g2-5-livre-police-1280.png"
+   ]
+  }
+ ],
+ "evidence": [
+  "Rendu Chromium 1194 du fragment S04 construit hors dépôt (build_front.py --fragment S04) ; test_v7.py N18 OK.",
+  "Captures integration/captures/g2/."
+ ]
+}
