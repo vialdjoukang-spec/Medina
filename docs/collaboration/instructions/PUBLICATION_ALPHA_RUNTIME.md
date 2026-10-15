@@ -2,6 +2,8 @@
 
 La garde reconnaît le template unique `ch-CODE` du cours demandé. Elle extrait son texte initial et celui des seuls panneaux locaux rendus accessibles par les boutons `data-p` de `.tabs`, puis `data-s` de `.sci-bar` dans `pS`. Une cible doit être unique, de classe `panel` ou `sci`, et `aria-controls`, si présent, doit correspondre. Le runtime de référence est `engine/medina_course.js` ; cette analyse statique ne remplace aucun contrôle réel du navigateur.
 
+Une feuille CSS embarquée ou liée active dans le contexte du cours rend la preuve statique indisponible : aucune visibilité calculée n’est inventée. Les dialogues fermés et les masquages inline explicites sont exclus. Les classes de navigation doivent utiliser la syntaxe effectivement transformée par le constructeur. Les cibles imbriquées dans un autre panneau de même type sont refusées, car le runtime masque leur parent.
+
 Les scripts, styles, templates étrangers ou imbriqués, contrôles masqués/désactivés et cibles inaccessibles restent exclus. Une racine de cours absente, dupliquée ou imbriquée ne permet pas de fournir une réserve extérieure. Les fixtures historiques sans template de cours conservent leur extraction générique ; aucun contenu de template arbitraire ne devient une preuve.
 
 Les réserves provisoires, blocages MED/LANG et attributions sont recherchés dans ce texte accessible. Les six parties HTML sont concaténées dans l’ordre déterministe `a`, `b`, `c`, `d`, `pop1`, `pop2`. Les droits, octets originaux, preuves visuelles, empreintes des rapports, reçus et gardes historiques restent requis. Une publication `provisional` ne clôture aucune leçon et ne vaut jamais validation médicale humaine.
