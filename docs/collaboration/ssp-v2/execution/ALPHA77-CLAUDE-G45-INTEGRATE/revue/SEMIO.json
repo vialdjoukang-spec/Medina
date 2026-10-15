@@ -6,7 +6,7 @@
  "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "f5736930c3015700e4f834e1308062ad1f6dae34",
+ "reviewed_commit": "70ecacf5b8a85c47752172d68c92afbdfabedbb0",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -21,10 +21,10 @@
  "reviewed_files_sha256": {
   "chapters/G45/G45_a.html": "42e67732527dd846aa3d5b19156e4108e2d496a79df774dfc034af3d29f4b920",
   "chapters/G45/G45_b.html": "c6c0149849768fed843e8a2653299138d02e1a4fcbbbaf79fafc21822a844234",
-  "chapters/G45/G45_c.html": "62aa08051b4e5c480036eeeb178187562d9126e109b827e5e1e1a66b7bf58735",
+  "chapters/G45/G45_c.html": "95b1cad460a787a21ac11f48623f7fcffb20535992fbe5148d87f19844eadccd",
   "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
   "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
-  "chapters/G45/G45_pop2.html": "bb5ab7ee533e69973a16f8996faf376233c3b40991ac77508cb3c9b4a25a0405",
+  "chapters/G45/G45_pop2.html": "b59a9f2acd36bed2e40255b34d4e8e99e5a1401415b099fe34a8153cfc45afa3",
   "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
  },
  "requirements_reviewed": {
@@ -215,6 +215,18 @@
     "prep/sources_semiologie.json, clé lacunes ; sections g45-sm-6 et g45-sm-9."
    ],
    "justification_non_bloquant": "Absence déclarée conformément au contrat ; aucun chiffre inventé."
+  },
+  {
+   "id": "P5-STRUCTURE-RENDU",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Structure de Sciences après l’ajout de la cinquième discipline et rendu réel.",
+   "verification": "Barre .sci-bar : Sémiologie fondamentale et analytique (premier bouton, aria-selected=\"true\"), Anatomie, Histologie, Physiologie, Biochimie, Réseaux et génétique (aria-selected=\"false\") ; cinq disciplines plus la Sémiologie ; navigation complète (identifiants des panneaux = data-s). Chromium, bureau et 390 px : G45 s’ouvre, l’onglet Sciences affiche la Sémiologie visible et sélectionnée, Anatomie et Histologie masquées au départ ; un clic sur chacune l’affiche, masque la Sémiologie et passe son bouton à aria-selected=\"true\" ; Pareto pareto-g45-s01 (105 mots sur 1 103) et pareto-g45-s05 (213 mots sur 1 569) s’ouvrent ; fenêtres g45-perfusion, g45-examen, g45-polygone et g45-paroi s’ouvrent ; aucune erreur JavaScript ; aucun défilement horizontal ; aucune ressource manquante une fois le dossier assets relié à la sortie hors dépôt. B.audit(src, 'G45') = {} pour les six fichiers HTML ; test_v7.py --static G45 : OK (46 019 mots, 85 fenêtres, 27 quiz, 22 Pareto). Règles de tests/audit_sciences.py reproduites hors dépôt (le test partagé s’arrête sur l’absence de G45 à sa base c50a28a2) : Sémiologie 4 879 mots, Anatomie 1 063, Histologie 1 525 ; chaque discipline possède sa figure SVG non anatomique, ses quatre encadrés ; seules erreurs : figures à image réelle (faux positif connu). Aucun Pareto sur une section data-semiology. Le défaut de lisibilité d’une figure d’Histologie est consigné dans MED.json (P5-FIG-01) ; il ne touche pas le sous-onglet de Sémiologie.",
+   "evidence": [
+    "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/",
+    "python3 test_v7.py --static G45 : OK ; build_medina.audit(src, 'G45') : {} ; reproduction hors dépôt des règles de tests/audit_sciences.py, 15.10.2026.",
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026."
+   ]
   }
  ],
  "evidence": [
@@ -222,8 +234,11 @@
   "Rendu Chromium : 15 fenêtres g45-sm-* ouvertes sans « Fiche absente » ; quiz : correction affichée au clic ; schéma SVG visible ; police du cours à 24 px à 390 px sans débordement.",
   "Lecture des légendes g45-09 (identique au bloc A) et g45-01 (double licence CC BY-SA 3.0 et GFDL 1.3, original CC BY 2.5) dans le rendu ; l’image g45-01 n’apparaît pas dans la construction de P faute de copie des actifs dans le dossier de sortie (artefact de chemin), alors que la capture G45_06 de W montre les images chargées.",
   "prep/sources_semiologie.json : correspondance affirmation ↔ passage.",
-  "Revue complémentaire des corrections de f5736930 ; test_v7.py --static G45 : OK ; empreintes des sept fichiers recalculées."
+  "Revue complémentaire des corrections de f5736930 ; test_v7.py --static G45 : OK ; empreintes des sept fichiers recalculées.",
+  "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/",
+  "Empreintes des sept fichiers recalculées sur 70ecacf5."
  ],
- "conclusion": "Exigence fundamental_analytical_semiology satisfaite ; aucun constat bloquant.",
- "mention": "Revue IA, distincte d’une validation médicale humaine."
+ "conclusion": "Aucun constat bloquant pour la sémiologie fondamentale et analytique : la Sémiologie reste le premier sous-onglet sélectionné, suivie de cinq disciplines réelles ; rendu réel contrôlé au bureau et à 390 px. La clôture de la leçon reste suspendue au constat bloquant P5-FIG-01 de MED.json.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "scope": " Complément du 15.10.2026 : Revue de la cinquième discipline (commit 70ecacf5) : Anatomie vasculaire cérébrale fonctionnelle (g45-s01-science) et Histologie (g45-s05-science) relues en totalité, Pareto pareto-g45-s01 et pareto-g45-s05, renumérotation des disciplines suivantes, rendu Chromium."
 }
