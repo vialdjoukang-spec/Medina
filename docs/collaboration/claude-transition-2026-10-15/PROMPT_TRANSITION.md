@@ -18,15 +18,15 @@ Mission approuvée dans `main` (`.medina/missions/`), puis `python3 tools/ai_ses
 - Missions **ALPHA77-CLAUDE-<CODE>-INTEGRATE** acquises et démarrées (base `abd681e5175db8c89e87dd7b83f96d0249d81cd7`), branches `claude/alpha77/<code>-integrate-g1`.
 - Étapes par leçon : prép P → corrections W → sémiologie intégrée → revue P (`revue/MED|LANG|SEMIO.json`) → reçu Alpha → PR → fusion → libération.
 
-| Leçon | Dernier commit poussé | Revue | Reçu | Action restante |
-|---|---|---|---|---|
-| E12 | 6d6eb8de | close | — | W phase 3 lancée : corriger MED-13/15/16/17 + 2 LANG, puis reçu. Si les fichiers changent, P met à jour les empreintes de revue/ |
-| D50 | 26ae2928 | close | — | W phase 3 lancée : reçu (droits du frottis normal, rendu Commons 1280 px) |
-| C77 | db3c8704 | close | — | W phase 3 lancée : corriger P-MED-01/02, lacune OPAS, reçu ; puis mise à jour des empreintes revue/ |
-| I61 | e0365fcc | close | — | W phase 3 lancée : ajouter « ou taux > 100 ng/ml » dans _c et _pop1, reçu ; puis mise à jour revue/ |
-| E11 | 1de782bf | close | — | W phase 3 lancée : reçu (aucune modification) |
-| G45 | a7ad3986 | en cours | — | revue P lancée |
-| N18 | 952f2108 | en cours | — | revue P lancée |
+| Leçon | État au moment de la transition | Action restante |
+|---|---|---|
+| **E11** | reçu Alpha `completed` VALIDE (c73f307f) ; **PR #147 ouverte** | vérifier la CI, fusionner, libérer la réservation `ALPHA77-CLAUDE-E11-INTEGRATE` → 1ʳᵉ leçon close |
+| E12 | corrections de309165 ; droits conservés dans `droits/` ; générateur `integration/generer_recu.py` | P met à jour les empreintes de revue/ (en cours) ; reçu bloqué par le défaut de l'outil (§ 4 bis) |
+| D50 | droits conservés (1b236155) ; note `integration/phase3_blocage.json` | reçu bloqué par le défaut de l'outil (§ 4 bis) ; générateur à refaire (l'ancien est dans le scratchpad perdu) |
+| C77 | corrections 64257cb8 ; reçu prêt localement (non poussé) | P met à jour revue/ (en cours) ; reçu bloqué (§ 4 bis) |
+| I61 | revue close e0365fcc | W phase 3 en cours : ajout « ou taux > 100 ng/ml » dans _c et _pop1, puis mise à jour de revue/ par P, puis reçu (aucune figure nouvelle : pas concerné par § 4 bis) |
+| G45 | intégration a7ad3986 | revue P en cours, puis phase 3 (figures attribuées : concerné par § 4 bis) |
+| N18 | intégration 952f2108 | revue P en cours, puis phase 3 (concerné par § 4 bis si figures Alpha) |
 
 Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche ; ne pas supposer que les agents de l'ancienne session ont fini.
 
