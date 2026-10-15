@@ -1,0 +1,1181 @@
+{
+ "mission": "ALPHA1-CLAUDE-E12-MED",
+ "code": "E12",
+ "type_audit": "medical",
+ "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+ "source_snapshot_sha": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+ "generation": 1,
+ "branche": "claude/alpha1/e12-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-E12-MED-g1",
+ "conversation": "alpha1-claude-e12-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-15T18:22:53Z",
+ "date_fin": "2026-10-15T18:42:48Z",
+ "lecture": {
+  "fichiers": {
+   "chapters/E12/E12_a.html": {
+    "sha256": "33c6a06d843eeb764bfa65befe279495c39490a9f2bb5ddd9e119fc13dcf0d15",
+    "conforme": true
+   },
+   "chapters/E12/E12_b.html": {
+    "sha256": "6cb8173a3d40fb18dd2ddcbbb0adef8ad7af7473a9d406e2cf8c50585ddd19d2",
+    "conforme": true
+   },
+   "chapters/E12/E12_c.html": {
+    "sha256": "da11e727dba78de2298425b35beb471f40918c4562fc484e633da6b7d3345eb4",
+    "conforme": true
+   },
+   "chapters/E12/E12_d.html": {
+    "sha256": "dc2cd373cbf0bfde947c02bd3e344c9d12bd227969006690c20afa260a6707b9",
+    "conforme": true
+   },
+   "chapters/E12/E12_pop1.html": {
+    "sha256": "3174165af210c6fd0358f4db925929e0c5c990a231c2795bf77d8cfb2948415b",
+    "conforme": true
+   },
+   "chapters/E12/E12_pop2.html": {
+    "sha256": "1e6f94e0a1af6571e2d1b3dcdf1a2f95b5130d7e10af4569414db86992d70429",
+    "conforme": true
+   },
+   "glossary/e12.py": {
+    "sha256": "e6a7903d60933e99dcf1abc26367b49da5975ab210bebc0acd0c08028d455916",
+    "conforme": true
+   }
+  },
+  "empreintes_conformes": true,
+  "surfaces_lues": [
+   "texte",
+   "tableaux",
+   "figures SVG et légendes",
+   "quiz",
+   "fenêtres (_pop1, _pop2)",
+   "Pareto",
+   "div.alert",
+   "div.key",
+   "glossaire"
+  ]
+ },
+ "premiere_source_lue": {
+  "source_id": "S11",
+  "url": "AIPS via AmiKo — python3 tools/swissmedic_fi.py texte 7680260610169 (Glucophage, mise à jour octobre 2025)",
+  "section": "Posologie/Mode d'emploi ; Contre-indications"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 8,
+  "MINEUR": 6,
+  "ENRICHISSEMENT": 11
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "Pour la FCPD, Endotext recommande une alimentation équilibrée, un régime pauvre en graisses si stéatorrhée",
+   "ancres_secondaires": [
+    {
+     "fichier": "chapters/E12/E12_pop2.html",
+     "ancre": "régime pauvre en graisses si stéatorrhée, restriction des sucres simples"
+    }
+   ],
+   "constat": "La leçon recommande un régime pauvre en graisses contre la stéatorrhée de la FCPD (source Endotext, revue indienne). La recommandation européenne HaPanEU demande au contraire d'éviter la restriction des graisses et ne l'admet qu'en dernier recours.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Q6-3.2",
+     "citation_courte": "Dietary fat restriction and very high fibre diets should be avoided (GRADE 1C)"
+    },
+    {
+     "source_id": "S8",
+     "section": "Q4-2.7",
+     "citation_courte": "addition of a PPI ... of help in patients with an unsatisfactory response to PERT (1B)"
+    },
+    {
+     "source_id": "S7",
+     "section": "Diabetes management",
+     "citation_courte": "In the presence of steatorrhea, a low-fat diet is important"
+    }
+   ],
+   "proposition": "propositions/E12_b_1.html",
+   "justification": "Mécanisme : les lipides sont la source d'énergie la plus dense ; les restreindre chez un patient dénutri aggrave le déficit calorique. Conséquence : la stéatorrhée doit être corrigée par la dose d'enzymes et un IPP, non par l'éviction des graisses. Décision : hiérarchie des sources (européenne > revue) ; remplacer la consigne."
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_c.html",
+   "ancre": "Échographie, de préférence CT ; IRM ou CPRE si doute",
+   "ancres_secondaires": [
+    {
+     "fichier": "chapters/E12/E12_c.html",
+     "ancre": "Le CT, l’IRM ou la CPRE sont utilisés si la radiographie et l’échographie sont négatives"
+    },
+    {
+     "fichier": "chapters/E12/E12_pop2.html",
+     "ancre": "CT, IRM ou CPRE si elles sont négatives"
+    },
+    {
+     "fichier": "chapters/E12/E12_c.html",
+     "ancre": "recherchés par radiographie, échographie, CT, IRM ou CPRE selon le cas"
+    }
+   ],
+   "constat": "La leçon propose la CPRE comme examen diagnostique du pancréas en cas de doute (tableau e-1, fiche e-4, fenêtre imagerie, îlot d'anatomie). HaPanEU indique que la CPRE n'est plus un test diagnostique de la pancréatite chronique ; l'échoendoscopie est la plus sensible, le CT le meilleur pour les calcifications, l'échographie n'est utile qu'aux stades avancés.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Q2-1 commentaire",
+     "citation_courte": "ERCP is no longer considered to be a diagnostic test for CP"
+    },
+    {
+     "source_id": "S8",
+     "section": "Q2-2",
+     "citation_courte": "CT examination is the most appropriate method for identifying pancreatic calcifications (2C)"
+    },
+    {
+     "source_id": "S8",
+     "section": "Q2-9",
+     "citation_courte": "EUS is the most sensitive imaging technique for the diagnosis of CP (1B)"
+    },
+    {
+     "source_id": "S8",
+     "section": "Q2-6",
+     "citation_courte": "Abdominal US can only be used to diagnose CP at an advanced stage (1A)"
+    }
+   ],
+   "proposition": "propositions/E12_c_1.html",
+   "justification": "Mécanisme : la CPRE est invasive (risque de pancréatite post-CPRE) et a été supplantée par l'IRM/cholangio-IRM et l'échoendoscopie. Conséquence : proposer une CPRE diagnostique est obsolète sur un point décisionnel. Décision : remplacer par la séquence européenne."
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_d.html",
+   "ancre": "Nutrition ; insuline à doses minimales si carence ou hyperglycémie sévère ; metformine empirique ; sulfonylurées avec prudence",
+   "ancres_secondaires": [
+    {
+     "fichier": "chapters/E12/E12_pop2.html",
+     "ancre": "Aucune information professionnelle suisse lue : ni dose, ni contre-indication ne sont donc fournies."
+    }
+   ],
+   "constat": "Les sulfonylurées figurent parmi les « options privilégiées » du « type 5 » sans information professionnelle lue (lacune déclarée). La FI suisse de Diamicron MR range les patients dénutris parmi les sujets à risque d'hypoglycémie (30 mg/j), réserve le traitement aux apports alimentaires réguliers et cite la malnutrition et l'omission de repas comme facteurs aggravants ; contre-indications : diabète de type 1, diabète juvénile, grossesse, allaitement, insuffisance hépatique ou rénale sévère.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Posologie — patients à risque",
+     "citation_courte": "Patients dénutris ou malnutris ... dose initiale quotidienne minimale de 30 mg"
+    },
+    {
+     "source_id": "S14",
+     "section": "Mises en garde",
+     "citation_courte": "ne doit être prescrit qu'aux patients ayant des apports alimentaires réguliers"
+    },
+    {
+     "source_id": "S14",
+     "section": "Mises en garde",
+     "citation_courte": "malnutrition, horaires de repas irréguliers, omission de repas, périodes de jeûne"
+    },
+    {
+     "source_id": "S14",
+     "section": "Contre-indications",
+     "citation_courte": "diabète de type 1 ... diabète juvénile ... allaitement, grossesse"
+    },
+    {
+     "source_id": "S4",
+     "section": "Management",
+     "citation_courte": "Sulfonylureas could be useful, but also need to be used cautiously to avoid hypoglycaemia"
+    }
+   ],
+   "proposition": "propositions/E12_d_1.html",
+   "justification": "Mécanisme : la sulfonylurée stimule la sécrétion indépendamment de la glycémie ; sans apport glucidique régulier, elle provoque une hypoglycémie sévère et prolongée. Conséquence : chez le patient en insécurité alimentaire, cible même du « type 5 », le risque est maximal. Décision : la FI suisse prime pour la conduite médicamenteuse ; n'envisager le gliclazide qu'à 30 mg/j une fois l'alimentation stabilisée."
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "Elle commence par la réhabilitation nutritionnelle, ajoute si nécessaire une insuline à doses minimales avec éducation à l’hypoglycémie",
+   "ancres_secondaires": [
+    {
+     "fichier": "chapters/E12/E12_b.html",
+     "ancre": "<div class=\"lab\">Moyens : nutrition, pilier du traitement</div>"
+    }
+   ],
+   "constat": "La leçon prescrit une réhabilitation nutritionnelle à des patients très maigres (vignette IMC 16,8 kg/m²) sans jamais mentionner le syndrome de renutrition, ni son dépistage, ni la thiamine, ni la surveillance du phosphate, du potassium et du magnésium.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Pathophysiology",
+     "citation_courte": "metabolic changes ... mainly due to insulin stimulation following the availability of glucose"
+    },
+    {
+     "source_id": "S16",
+     "section": "Management",
+     "citation_courte": "thiamine on days 1 and 3–5, multivitamins during days 1–10"
+    },
+    {
+     "source_id": "S16",
+     "section": "Management",
+     "citation_courte": "Mg < 0.70–0.75 mmol/L, PO4 < 0.80 mmol/L, K < 3.5 mmol/L"
+    },
+    {
+     "source_id": "S17",
+     "section": "Abstract",
+     "citation_courte": "low body mass index, large unintentional weight loss, little or no nutritional intake"
+    }
+   ],
+   "proposition": "propositions/E12_b_2.html",
+   "justification": "Mécanisme : après dénutrition, le retour du glucose et l'insuline (endogène ou exogène) font entrer phosphate, potassium et magnésium dans la cellule et retiennent le sodium. Conséquence : hypophosphatémie, arythmies, insuffisance cardiaque et encéphalopathie de Wernicke possibles dans les 72 premières heures. Décision : dépister le risque et encadrer la renutrition ; le lien avec l'insuline exogène est une déduction mécanistique à signaler comme telle."
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "En cas de doute, ou devant une glycémie aléatoire ≥ 11,1 mmol/L (200 mg/dl), on répète la mesure ou on réalise une HGPO de 75 g",
+   "ancres_secondaires": [
+    {
+     "fichier": "chapters/E12/E12_c.html",
+     "ancre": "En cas de doute ou de glycémie aléatoire supérieure au seuil, on répète le test ou on réalise l’HGPO."
+    },
+    {
+     "fichier": "chapters/E12/E12_b.html",
+     "ancre": "glycémie à 2 heures de l’HGPO ou glycémie aléatoire ≥ 11,1 mmol/L"
+    }
+   ],
+   "constat": "La leçon inverse la règle HaPanEU : une glycémie aléatoire ≥ 11,1 mmol/L y définit l'hyperglycémie non équivoque ; c'est en son absence, ou en cas de doute, qu'on confirme par un second test ou une HGPO. Le même contresens figure dans la fiche e-2 ; l'encadré des critères formels liste la glycémie aléatoire sans cette précision.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Q7-3 (GRADE 1A)",
+     "citation_courte": "In the absence of unequivocal hyperglycaemia (random plasma glucose ≥200 mg/dl (11.1 mmol/l)) or in cases of doubt, results should be confirmed"
+    }
+   ],
+   "proposition": "propositions/E12_b_3.html",
+   "justification": "Mécanisme : une glycémie aléatoire franchement élevée suffit à établir l'hyperglycémie ; la répétition vise les valeurs limites. Conséquence : la formulation actuelle retarde inutilement le diagnostic et enseigne une règle fausse. Décision : reformuler selon l'énoncé 7-3."
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "Dans l’étude de Vellore, le C-peptide au repas test dépasse 0,5 ng/mL chez les sujets à IMC bas et reste sous 0,5 ng/mL chez les diabétiques de type 1.",
+   "ancres_secondaires": [
+    {
+     "fichier": "chapters/E12/E12_c.html",
+     "ancre": "<tr><td>Repas test, IMC bas / type 1</td><td>> 0,5 ng/mL / < 0,5 ng/mL</td>"
+    },
+    {
+     "fichier": "chapters/E12/E12_pop1.html",
+     "ancre": "au repas test, > 0,5 ng/mL chez les sujets à IMC bas, < 0,5 chez les diabétiques de type 1"
+    }
+   ],
+   "constat": "Le seuil de 0,5 ng/mL est présenté comme un « repère » de typage issu de l'étude de Vellore. Il s'agit en réalité d'un critère d'inclusion des groupes (C-peptide stimulé > 0,5 ng/mL pour le groupe à IMC bas, < 0,5 ng/mL avec acidocétose et anticorps pour le type 1) : le raisonnement est circulaire.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Methods",
+     "citation_courte": "a preserved C-peptide response (>0.5 ng/mL) to standard MMTT"
+    },
+    {
+     "source_id": "S5",
+     "section": "Methods",
+     "citation_courte": "absence of C-peptide response (<0.5 ng/mL) to standard MMTT"
+    }
+   ],
+   "proposition": "propositions/E12_b_4.html",
+   "justification": "Mécanisme : un seuil qui sert à constituer les groupes sépare forcément ces groupes. Conséquence : le présenter comme repère diagnostique surestime sa valeur discriminante. Décision : le requalifier en critère de sélection, non validé."
+  },
+  {
+   "id": "C07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/E12/E12_c.html",
+   "ancre": "aucun facteur de conversion n’est fourni par les sources lues",
+   "ancres_secondaires": [
+    {
+     "fichier": "chapters/E12/E12_pop1.html",
+     "ancre": "Les unités diffèrent entre sources ; aucun facteur de conversion n’est fourni."
+    }
+   ],
+   "constat": "La leçon affirme qu'aucun facteur de conversion ne relie ng/mL et pmol/L de C-peptide. La conversion est publiée (1 nmol/L = 3 ng/mL) ; elle permet un enseignement utile : la médiane du « type 5 » (1,2 ng/mL ≈ 400 pmol/L) tombe dans la zone de carence insulinique SGED (200–600 pmol/L).",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Units",
+     "citation_courte": "1 nmol/l = 1000 pmol/l = 3 ng/ml"
+    },
+    {
+     "source_id": "S18",
+     "section": "Interpretation",
+     "citation_courte": "< 0.2 nmol/l ... confirms absolute insulin deficiency"
+    },
+    {
+     "source_id": "S9",
+     "section": "Differential Diagnosis",
+     "citation_courte": "If C-peptide is >200 and <600 pmol/l ... insulin deficiency can be diagnosed"
+    }
+   ],
+   "proposition": "propositions/E12_c_2.html",
+   "justification": "Mécanisme : une simple conversion d'unités rend comparables deux corpus. Conséquence : le lecteur peut situer le « type 5 » dans la grille suisse. Décision : remplacer le piège par la conversion et ses limites (valeur à jeun contre stimulée, rein, glycémie simultanée)."
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/E12/E12_a.html",
+   "ancre": "Elle en exclut le diabète de la grossesse (O24.-), la glycosurie isolée, l’intolérance au glucose et le diabète néonatal.",
+   "ancres_secondaires": [],
+   "constat": "La liste des exclusions de E12 omet l'hypo-insulinémie post-opératoire (E89.1) et ne donne pas les codes R81, E74.8, R73.0 et P70.2.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "E12 Excl.",
+     "citation_courte": "Excludes ... neonatal (P70.2) ... postsurgical hypoinsulinaemia (E89.1)"
+    }
+   ],
+   "proposition": "propositions/E12_a_1.html",
+   "justification": "Mécanisme : la CIM sépare l'hypo-insulinémie post-opératoire du diabète de malnutrition. Conséquence : codage erroné possible après chirurgie pancréatique. Décision : compléter la liste."
+  },
+  {
+   "id": "C09",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "<b>Grossesse.</b> E12 exclut le diabète de la grossesse (O24.-) : la prise en charge relève de la rubrique obstétricale (OMS 2019).",
+   "ancres_secondaires": [],
+   "constat": "La rubrique grossesse se limite à l'exclusion. Elle omet que le diabète de malnutrition préexistant chez la femme enceinte possède un code propre (O24.2) et que le gliclazide est contre-indiqué pendant la grossesse et l'allaitement.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "O24.2",
+     "citation_courte": "Pre-existing malnutrition-related diabetes mellitus"
+    },
+    {
+     "source_id": "S14",
+     "section": "Contre-indications",
+     "citation_courte": "allaitement, grossesse"
+    }
+   ],
+   "proposition": "propositions/E12_b_5.html",
+   "justification": "Mécanisme : l'exclusion porte sur le codage, non sur l'existence de la situation. Conséquence : le lecteur ignore le code et la contre-indication médicamenteuse. Décision : enrichir la rubrique « situations particulières »."
+  },
+  {
+   "id": "C10",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_d.html",
+   "ancre": "<b>Metformine et alcool</b> : l’alcoolisme est une contre-indication de Glucophage",
+   "ancres_secondaires": [],
+   "constat": "La FI Glucophage contient trois points propres au patient dénutri qui manquent : le jeûne prolongé est un facteur de risque d'acidose lactique ; l'alcool majore ce risque « en présence de dénutrition » ; la metformine est interrompue 48 h avant un produit de contraste iodé si le DFGe est < 60 mL/min/1,73 m² (CT pancréatique injecté). La consigne de régime hypocalorique de la FI ne s'applique pas ici.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Mises en garde",
+     "citation_courte": "le jeûne prolongé"
+    },
+    {
+     "source_id": "S11",
+     "section": "Interactions",
+     "citation_courte": "particulièrement en cas de jeûne antérieur ou en présence de dénutrition"
+    },
+    {
+     "source_id": "S11",
+     "section": "Contre-indications",
+     "citation_courte": "interrompu 48 h avant un tel examen si ... TFGe < 60"
+    },
+    {
+     "source_id": "S11",
+     "section": "Posologie",
+     "citation_courte": "ne dispense pas d'un régime hypocalorique"
+    }
+   ],
+   "proposition": "propositions/E12_d_2.html",
+   "justification": "Mécanisme : la dénutrition et le jeûne majorent la production de lactate et réduisent sa clairance. Conséquence : le profil de risque du patient E12 est plus défavorable que celui du diabétique de type 2. Décision : ajouter ces mises en garde datées."
+  },
+  {
+   "id": "C11",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "Les deux positions se concilient par la <b>dose</b>",
+   "ancres_secondaires": [],
+   "constat": "La SGED donne une forme d'insuline adaptée au profil le plus proche du « type 5 » (C-peptide 200–600 pmol/L, anticorps négatifs) : une insuline co-formulée au(x) repas principal(aux), préférable à la basale seule et plus simple que le basal-bolus, avec moins d'hypoglycémies. La leçon ne la mentionne pas.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "Differential Diagnosis",
+     "citation_courte": "a co-formulated insulin to the main meal or to the two main meals might be preferable to ultra-long acting insulin alone"
+    },
+    {
+     "source_id": "S9",
+     "section": "Differential Diagnosis",
+     "citation_courte": "same HbA1c levels but less hypoglycemia"
+    }
+   ],
+   "proposition": "propositions/E12_b_6.html",
+   "justification": "Mécanisme : l'hyperglycémie du « type 5 » est surtout postprandiale. Conséquence : une insuline prandiale simple répond au mécanisme en limitant l'hypoglycémie. Décision : ajouter la précision suisse, en signalant l'absence d'étude dans l'entité."
+  },
+  {
+   "id": "C12",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "<p>Pour la conduite automobile, les épisodes d’hypoglycémie relèvent des directives SGED/SGRM 2025.</p>",
+   "ancres_secondaires": [],
+   "constat": "La spécificité suisse de l'aptitude à la conduite est réduite à un renvoi. Les directives SGED/SGRM 2025 fournissent une grille par traitement directement applicable (glargine U100 = risque moyen, glycémie avant chaque trajet, pas de conduite sous 4,0 mmol/L).",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Tabelle 2",
+     "citation_courte": "Mittleres Risiko: Langwirksame Insuline (Glargin U100 ...) – Blutzuckermessung vor jeder Fahrt"
+    },
+    {
+     "source_id": "S10",
+     "section": "Tabelle 2",
+     "citation_courte": "Bei Blutzucker < 4.0 mmol/l kein Fahren ... 45 Minuten Wartezeit"
+    },
+    {
+     "source_id": "S10",
+     "section": "Kapitel 9",
+     "citation_courte": "Fahreignung nur ... CGMS oder 6 – 8 kapilläre Glukose Messungen täglich während mindestens einem Jahr"
+    }
+   ],
+   "proposition": "propositions/E12_b_7.html",
+   "justification": "Mécanisme : le risque routier dépend du médicament hypoglycémiant. Conséquence : point d'examen fédéral et de pratique suisse. Décision : intégrer le tableau commenté."
+  },
+  {
+   "id": "C13",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_pop2.html",
+   "ancre": "<template data-pop=\"e12-dpp4\" data-title=\"Inhibiteurs de la DPP-4\">",
+   "ancres_secondaires": [],
+   "constat": "La fenêtre DPP-4 déclare l'information professionnelle non lue. La FI Januvia (avril 2024) fournit dose, adaptation rénale et mise en garde de pancréatite aiguë, pertinente dans la FCPD.",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "Posologie",
+     "citation_courte": "100 mg une fois par jour ... DFGe ≥30 à <45 ... 50 mg ... <30 ... 25 mg"
+    },
+    {
+     "source_id": "S15",
+     "section": "Mises en garde",
+     "citation_courte": "Des cas de pancréatite aiguë, y compris ... nécrosante avec issue fatale"
+    },
+    {
+     "source_id": "S15",
+     "section": "Mises en garde",
+     "citation_courte": "En cas de suspicion de pancréatite, on arrêtera le traitement par Januvia"
+    }
+   ],
+   "proposition": "propositions/E12_pop2_1.html",
+   "justification": "Mécanisme : les incrétines sont associées à des pancréatites. Conséquence : la mise en garde suisse appuie la non-recommandation dans la FCPD. Décision : combler la lacune par la FI."
+  },
+  {
+   "id": "C14",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_d.html",
+   "ancre": "<td>25 000 à 80 000 U par repas principal ; collation : moitié</td>",
+   "ancres_secondaires": [],
+   "constat": "La dose d'enzymes suit la FI (25 000–80 000 U) mais omet le minimum européen de 40 000–50 000 U par repas principal (GRADE 1A), les critères d'efficacité et l'IPP en cas de réponse insuffisante ; le remboursement (LS) n'est pas mentionné.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Q4-2.4 (1A)",
+     "citation_courte": "A minimum lipase dose of 40,000–50,000 PhU is recommended with main meals"
+    },
+    {
+     "source_id": "S8",
+     "section": "Q4-2.5",
+     "citation_courte": "efficacy of PERT can be evaluated adequately by the relief of maldigestion-related symptoms"
+    },
+    {
+     "source_id": "S12",
+     "section": "Posologie",
+     "citation_courte": "La dose nécessaire pour un repas principal varie entre 25'000 et 80'000 U. Ph.Eur."
+    },
+    {
+     "source_id": "S12",
+     "section": "Présentation",
+     "citation_courte": "CREON 25'000 ... [D, SL, SB 10%]"
+    }
+   ],
+   "proposition": "propositions/E12_d_3.html",
+   "justification": "Mécanisme : une dose de départ basse laisse persister la maldigestion, qui entretient la dénutrition et l'instabilité glycémique. Décision : préciser la dose minimale européenne et le suivi."
+  },
+  {
+   "id": "C15",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_c.html",
+   "ancre": "<b>Fonction exocrine.</b> L’élastase fécale-1 est basse en cas d’insuffisance exocrine",
+   "ancres_secondaires": [],
+   "constat": "La fiche élastase omet le seuil usuel (200 µg/g), la faible sensibilité dans les formes légères à modérées (54–75 %) et le faux positif des selles diarrhéiques.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Q3-6 commentaire",
+     "citation_courte": "a threshold of 200 µg/g has been used most frequently"
+    },
+    {
+     "source_id": "S8",
+     "section": "Q3-9 commentaire",
+     "citation_courte": "only 54–75% sensitivity in mild to moderate PEI"
+    }
+   ],
+   "proposition": "propositions/E12_c_3.html",
+   "justification": "Mécanisme : la dilution fécale abaisse la concentration d'élastase. Conséquence : faux positifs et faux négatifs à connaître. Décision : compléter la fiche."
+  },
+  {
+   "id": "C16",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_a.html",
+   "ancre": "Dans toute pancréatite chronique, le risque de diabète augmente avec la chirurgie (surtout la pancréatectomie distale), l’âge",
+   "ancres_secondaires": [],
+   "constat": "Les facteurs de risque de diabète dans la pancréatite chronique sont listés sans chiffres ; HaPanEU fournit le risque relatif après pancréatectomie distale (2,4), le rapport de cotes au-delà de 40 ans (9,2) et le risque cumulé (50 % à 10 ans, 83 % à 25 ans).",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Q7-2 commentaires",
+     "citation_courte": "distal pancreatectomy had a risk ratio of 2.4"
+    },
+    {
+     "source_id": "S8",
+     "section": "Q7-2 commentaires",
+     "citation_courte": "The diabetes risk was 50% after 10 years, increasing to 83% after 25 years"
+    }
+   ],
+   "proposition": "propositions/E12_a_2.html",
+   "justification": "Mécanisme : la perte progressive de tissu insulaire s'accroît avec la durée et la résection. Conséquence : justifie le dépistage annuel. Décision : chiffrer."
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/E12/E12_c.html",
+   "ancre": "La destruction des cellules alpha explique la fragilité glycémique de la FCPD",
+   "ancres_secondaires": [],
+   "constat": "L'encadré affirme sans nuance la destruction des cellules alpha dans la FCPD ; Endotext juge le rôle du glucagon et la préservation des cellules alpha discutés.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Pathogenesis",
+     "citation_courte": "The role of glucagon and thereby preservation or otherwise of alpha cells is debatable"
+    }
+   ],
+   "proposition": "propositions/E12_c_4.html",
+   "justification": "Mécanisme proposé, non établi. Conséquence : présenter une hypothèse comme un fait. Décision : nuancer."
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/E12/E12_a.html",
+   "ancre": "Données de l’étude de Vellore (Diabetes Care 2022), en mg/kg·min, après correction de la glucotoxicité.",
+   "ancres_secondaires": [],
+   "constat": "Les valeurs de production hépatique et de captation du glucose ont été mesurées pendant le palier « insuline basse » du clamp ; la légende ne le précise pas.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Results",
+     "citation_courte": "glucose turnover data ... the \"low insulin\" step"
+    },
+    {
+     "source_id": "S5",
+     "section": "Results",
+     "citation_courte": "0.50 ± 0.1 vs. 0.84 ± 0.1 mg/kg · min"
+    }
+   ],
+   "proposition": "propositions/E12_a_3.html",
+   "justification": "Mécanisme : les flux de glucose dépendent de l'insulinémie du palier. Décision : préciser le contexte de mesure."
+  },
+  {
+   "id": "C19",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_c.html",
+   "ancre": "Rassurer un patient maigre parce que son HbA1c est inférieure à 6,5 %.",
+   "ancres_secondaires": [],
+   "constat": "Le piège HbA1c peut être enrichi : sous insuline, une HbA1c normale ou basse doit faire rechercher des hypoglycémies inaperçues ; l'effet de la carence martiale sur l'HbA1c n'est pas tranché, alors que le trait drépanocytaire et l'urémie n'ont pas d'effet cliniquement important.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Q7-3 (1B)",
+     "citation_courte": "An HbA1c < 6.5% does not rule out T3cDM due to the limitations of this test"
+    },
+    {
+     "source_id": "S13",
+     "section": "Mises en garde — Hypoglycémie",
+     "citation_courte": "Si le taux d'hémoglobine glycosylée est normal ou abaissé, la possibilité d'épisodes hypoglycémiques récidivants passés inaperçus"
+    },
+    {
+     "source_id": "S19",
+     "section": "Abstract",
+     "citation_courte": "the effects of IDA/ID remain inconclusive"
+    }
+   ],
+   "proposition": "propositions/E12_c_5.html",
+   "justification": "Mécanisme : l'HbA1c dépend de la durée de vie érythrocytaire et intègre aussi les hypoglycémies. Conséquence : chez le patient dénutri et carencé, la glycémie reste la référence. Décision : compléter le piège."
+  },
+  {
+   "id": "C20",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_b.html",
+   "ancre": "Les critères de la FCPD (Endotext 2024) sont : (1) un pays tropical ;",
+   "ancres_secondaires": [],
+   "constat": "Les critères de la FCPD sont donnés sans la nuance d'Endotext : aucun facteur géographique n'est prouvé, et le phénotype s'est élargi à des sujets plus âgés, de poids plus élevé, sans dénutrition ; l'hypertriglycéridémie > 500 mg/dl expose à la pancréatite.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Diagnosis and work up",
+     "citation_courte": "there is no evidence to link any geographical factor with the etiology"
+    },
+    {
+     "source_id": "S7",
+     "section": "Summary",
+     "citation_courte": "older people with higher BMI without malnutrition"
+    },
+    {
+     "source_id": "S7",
+     "section": "Diabetes management",
+     "citation_courte": "Very high triglyceride levels > 500 mg/dl put people with FCPD at risk of pancreatitis"
+    }
+   ],
+   "proposition": "propositions/E12_b_8.html",
+   "justification": "Mécanisme : le critère « pays tropical » est historique. Conséquence : risque d'écarter à tort une FCPD chez un patient non maigre. Décision : ajouter la nuance de la source elle-même."
+  },
+  {
+   "id": "C21",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/E12/E12_pop1.html",
+   "ancre": "Les types 3 et 4 invoqués n’ont pas de reconnaissance formelle.",
+   "ancres_secondaires": [],
+   "constat": "La fenêtre de la revue critique omet un argument central du résumé : le chevauchement avec d'autres types de diabète, notamment auto-immuns.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Abstract",
+     "citation_courte": "overlap with other diabetes types, especially autoimmune forms, has raised doubts about its distinct identity"
+    }
+   ],
+   "proposition": "propositions/E12_pop1_1.html",
+   "justification": "Conséquence : l'argument justifie la recherche systématique des anticorps. Décision : compléter."
+  },
+  {
+   "id": "C22",
+   "gravite": "MINEUR",
+   "fichier": "glossary/e12.py",
+   "ancre": "développement littéral non fourni par la source lue",
+   "ancres_secondaires": [],
+   "constat": "Le glossaire déclare inconnu le développement de HaPanEU ; la source le donne : « Harmonizing diagnosis and treatment of chronic Pancreatitis across Europe ».",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Introduction",
+     "citation_courte": "Harmonizing diagnosis and treatment of chronic Pancreatitis across Europe (HaPanEU)"
+    }
+   ],
+   "proposition": "propositions/glossary_e12_1.html",
+   "justification": "Règle des abréviations : définition littérale lettre à lettre. Décision : compléter l'entrée."
+  },
+  {
+   "id": "C23",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_c.html",
+   "ancre": "Figure 2 — Pancréas normal et pancréas de FCPD",
+   "ancres_secondaires": [],
+   "constat": "Figure anatomique générée, non recevable (règle Vial du 15.10.2026) : schéma SVG du pancréas normal et du pancréas de FCPD (canal, calculs) dessiné sans source iconographique réelle.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Diagnosis and work up",
+     "citation_courte": "The presence of large and discrete pancreatic stones is a classical feature"
+    }
+   ],
+   "proposition": "propositions/figures_E12_c.html",
+   "justification": "Une structure anatomique dessinée sans source est imprécise et non recevable. Décision : remplacer par une image réelle sourcée (CT de pancréatite chronique calcifiante), après validation humaine de la licence et de l'exactitude."
+  },
+  {
+   "id": "C24",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/E12/E12_c.html",
+   "ancre": "Figure 3 — Îlot normal et îlot fibrosé",
+   "ancres_secondaires": [],
+   "constat": "Figure anatomique (histologique) générée, non recevable : schéma SVG d'un îlot de Langerhans normal et d'un îlot détruit par la fibrose, sans source iconographique.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Pathogenesis",
+     "citation_courte": "role of glucagon and thereby preservation or otherwise of alpha cells is debatable"
+    }
+   ],
+   "proposition": "propositions/figures_E12_c.html",
+   "justification": "Une coupe histologique dessinée par IA ne représente pas une structure réelle. Décision : remplacer par une illustration ou une micrographie réelle sourcée et licenciée."
+  },
+  {
+   "id": "C25",
+   "gravite": "MINEUR",
+   "fichier": "chapters/E12/E12_a.html",
+   "ancre": "Figure 1 — Production hépatique de glucose et captation périphérique",
+   "ancres_secondaires": [],
+   "constat": "Graphique de données (non anatomique) : les quatre valeurs sont exactes (0,50 ; 0,84 ; 10,1 ; 4,2 mg/kg·min), mais les hauteurs des barres ne leur sont pas proportionnelles (57/84 px pour 0,50/0,84, soit 0,68 au lieu de 0,60 ; 140/47 px pour 10,1/4,2, soit 2,98 au lieu de 2,40) et les deux grandeurs partagent un axe unique sans graduation.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Results",
+     "citation_courte": "0.50 ± 0.1 vs. 0.84 ± 0.1 mg/kg · min ... 10.1 ± 0.7 vs. 4.2 ± 0.5"
+    }
+   ],
+   "proposition": "propositions/figures_E12_c.html",
+   "justification": "Un graphique quantitatif doit respecter les rapports des valeurs. Décision : recalculer les hauteurs proportionnellement, avec un axe gradué distinct par panneau (correction de coordonnées par l'intégrateur, sans nouveau dessin)."
+  }
+ ],
+ "verification_ancres": {
+  "methode": "comptage Python str.count sur les fichiers figés ; longueur ≤ 200 caractères",
+  "resultats": [
+   {
+    "constat": "C01",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 106
+   },
+   {
+    "constat": "C01",
+    "fichier": "chapters/E12/E12_pop2.html",
+    "occurrences": 1,
+    "longueur": 72
+   },
+   {
+    "constat": "C02",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 52
+   },
+   {
+    "constat": "C02",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 88
+   },
+   {
+    "constat": "C02",
+    "fichier": "chapters/E12/E12_pop2.html",
+    "occurrences": 1,
+    "longueur": 39
+   },
+   {
+    "constat": "C02",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 70
+   },
+   {
+    "constat": "C03",
+    "fichier": "chapters/E12/E12_d.html",
+    "occurrences": 1,
+    "longueur": 126
+   },
+   {
+    "constat": "C03",
+    "fichier": "chapters/E12/E12_pop2.html",
+    "occurrences": 1,
+    "longueur": 100
+   },
+   {
+    "constat": "C04",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 135
+   },
+   {
+    "constat": "C04",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 63
+   },
+   {
+    "constat": "C05",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 127
+   },
+   {
+    "constat": "C05",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 101
+   },
+   {
+    "constat": "C05",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 65
+   },
+   {
+    "constat": "C06",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 151
+   },
+   {
+    "constat": "C06",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 75
+   },
+   {
+    "constat": "C06",
+    "fichier": "chapters/E12/E12_pop1.html",
+    "occurrences": 1,
+    "longueur": 90
+   },
+   {
+    "constat": "C07",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 61
+   },
+   {
+    "constat": "C07",
+    "fichier": "chapters/E12/E12_pop1.html",
+    "occurrences": 1,
+    "longueur": 78
+   },
+   {
+    "constat": "C08",
+    "fichier": "chapters/E12/E12_a.html",
+    "occurrences": 1,
+    "longueur": 121
+   },
+   {
+    "constat": "C09",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 131
+   },
+   {
+    "constat": "C10",
+    "fichier": "chapters/E12/E12_d.html",
+    "occurrences": 1,
+    "longueur": 82
+   },
+   {
+    "constat": "C11",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 51
+   },
+   {
+    "constat": "C12",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 103
+   },
+   {
+    "constat": "C13",
+    "fichier": "chapters/E12/E12_pop2.html",
+    "occurrences": 1,
+    "longueur": 67
+   },
+   {
+    "constat": "C14",
+    "fichier": "chapters/E12/E12_d.html",
+    "occurrences": 1,
+    "longueur": 67
+   },
+   {
+    "constat": "C15",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 86
+   },
+   {
+    "constat": "C16",
+    "fichier": "chapters/E12/E12_a.html",
+    "occurrences": 1,
+    "longueur": 125
+   },
+   {
+    "constat": "C17",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 77
+   },
+   {
+    "constat": "C18",
+    "fichier": "chapters/E12/E12_a.html",
+    "occurrences": 1,
+    "longueur": 103
+   },
+   {
+    "constat": "C19",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 70
+   },
+   {
+    "constat": "C20",
+    "fichier": "chapters/E12/E12_b.html",
+    "occurrences": 1,
+    "longueur": 69
+   },
+   {
+    "constat": "C21",
+    "fichier": "chapters/E12/E12_pop1.html",
+    "occurrences": 1,
+    "longueur": 63
+   },
+   {
+    "constat": "C22",
+    "fichier": "glossary/e12.py",
+    "occurrences": 1,
+    "longueur": 51
+   },
+   {
+    "constat": "C23",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 46
+   },
+   {
+    "constat": "C24",
+    "fichier": "chapters/E12/E12_c.html",
+    "occurrences": 1,
+    "longueur": 38
+   },
+   {
+    "constat": "C25",
+    "fichier": "chapters/E12/E12_a.html",
+    "occurrences": 1,
+    "longueur": 68
+   }
+  ],
+  "toutes_presentes": true
+ },
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l'examen fédéral",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_a #e12-0"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_a #e12-1 — exclusion E89.1 et codes d'exclusion absents (C08)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_a #e12-1 (chronologie, type 5, type 3c)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_a #e12-2 — aucune donnée suisse ni européenne (lacune déclarée)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_a #e12-3 ; E12_c sciences"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_a #e12-4 (chiffres HaPanEU absents, C16)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_a #e12-5 — aucune fréquence de symptôme"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_b #e12-6 — aucune sensibilité/spécificité (sources muettes)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_b #e12-8 — conduite de l'hypoglycémie sévère non traitée ; syndrome de renutrition absent (C04)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_c pE — CPRE obsolète (C02), limites de l'élastase (C15), seuil 0,5 ng/mL circulaire (C06)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_b #e12-7 (tableau) ; E12_c #e12-e-5"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_b #e12-9 ; E12_d — régime pauvre en graisses (C01), sulfonylurées sans FI (C03), DPP-4 sans FI (C13), renutrition (C04)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_b #e12-10"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_b #e12-10"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_b #e12-11 — grossesse limitée au codage (C09), sujet âgé sans repère"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_b #e12-10 — conduite réduite à un renvoi (C12), LS de Creon non mentionnée (C14), AI absent"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_b #e12-12 div.alert — formulation de la glycémie aléatoire à corriger (C05)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "couvert",
+   "ancre_ou_onglet": "E12_b #e12-12 div.key"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "partiel",
+   "ancre_ou_onglet": "E12_a #e12-1 — 31 codes E12.0 à E12.91 (5e caractère « désigné comme décompensé ») non énumérés ; la règle maison proscrit un tableau consacré au code"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d'examen fédéral",
+   "statut": "partiel",
+   "ancre_ou_onglet": "pièges et quiz présents ; aucun rattachement explicite aux objectifs PROFILES"
+  }
+ ],
+ "figures": [
+  {
+   "ancre": "Figure 1 — Production hépatique de glucose et captation périphérique",
+   "fichier": "chapters/E12/E12_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Histogramme des flux de glucose (Vellore 2022) ; valeurs exactes, hauteurs non proportionnelles",
+   "source_declaree": "Diabetes Care 2022",
+   "constat_id": "C25",
+   "candidats": []
+  },
+  {
+   "ancre": "Figure 2 — Pancréas normal et pancréas de FCPD",
+   "fichier": "chapters/E12/E12_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "description": "Pancréas normal contre pancréas de FCPD (canal dilaté, calculs intracanalaires)",
+   "source_declaree": "aucune (schéma didactique non calibré)",
+   "constat_id": "C23",
+   "candidats": [
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:Chronische_Pankreatitis_mit_Verkalkungen_-_CT_axial.jpg",
+     "fichier_url": "non récupérée (hôte suspendu)",
+     "auteur": "non vérifié",
+     "licence": "non vérifiée",
+     "attribution": "à établir depuis la page Commons"
+    },
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:CalcifiedPanDucStoneandSomefluid.png",
+     "fichier_url": "non récupérée (hôte suspendu)",
+     "auteur": "non vérifié",
+     "licence": "non vérifiée",
+     "attribution": "à établir depuis la page Commons"
+    }
+   ]
+  },
+  {
+   "ancre": "Figure 3 — Îlot normal et îlot fibrosé",
+   "fichier": "chapters/E12/E12_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "description": "Îlot de Langerhans conservé contre îlot détruit par la fibrose (histologie)",
+   "source_declaree": "aucune (schéma didactique non calibré)",
+   "constat_id": "C24",
+   "candidats": [
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:Glands_-_Pancreas_-_Islet_of_Langerhans_1_--_Smart-Servier.png",
+     "fichier_url": "non récupérée (hôte suspendu)",
+     "auteur": "Servier Medical Art (à confirmer)",
+     "licence": "non vérifiée (Servier Medical Art usuellement CC BY 4.0, à confirmer sur la page)",
+     "attribution": "à établir depuis la page Commons"
+    },
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:Langerhanssche_Insel.jpg",
+     "fichier_url": "non récupérée (hôte suspendu)",
+     "auteur": "non vérifié",
+     "licence": "non vérifiée",
+     "attribution": "à établir depuis la page Commons"
+    }
+   ]
+  },
+  {
+   "ancre": "Figure 4 — Chaînes physiologiques comparées",
+   "fichier": "chapters/E12/E12_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Chaîne dénutrition → sécrétion ↓ → hyperglycémie ; sensibilité conservée (0,50 et 10,1 mg/kg·min) — valeurs et flèches conformes à S5",
+   "source_declaree": "Vellore",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Figure 5 — Hypothèse antioxydante",
+   "fichier": "chapters/E12/E12_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Chaîne carence en antioxydants → stress oxydatif → PDX-1/MafA ↓ → insuline ↓, étiquetée hypothèse — conforme à S4",
+   "source_declaree": "consensus 2025",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "Figure 6 — Modèle à deux coups",
+   "fichier": "chapters/E12/E12_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Variant génétique + facteur environnemental → pancréatite chronique — conforme à S7",
+   "source_declaree": "Endotext",
+   "constat_id": null,
+   "candidats": []
+  },
+  {
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "fichier": "chapters/E12/E12_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Cinq icônes SVG décoratives des onglets de sciences (cercle et croix), sans contenu médical",
+   "source_declaree": "—",
+   "constat_id": null,
+   "candidats": []
+  }
+ ],
+ "figures_methode": "Inventaire de toutes les balises <svg>, <figure>, <img> et canvas des 7 fichiers (aucune <img> ni canvas). Recherche de candidats : une recherche Commons (API officielle, User-Agent MEDINA-ImageCloFinder) faite avant la consigne du moteur commun ; ensuite moteur Image_Clo_finder : Commons suspendu par le disjoncteur jusqu’à 18:48:57, recherche Europe PMC refusée par le contrôle de permissions de la session. Licences, auteurs et URL de fichier non vérifiés : candidats à valider par un humain.",
+ "lacunes": [
+  "Figures : licences, auteurs et URL de fichier des candidats non vérifiés (Commons suspendu par le disjoncteur du moteur commun ; recherche Europe PMC refusée par les permissions de la session) ; aucun candidat Gray, BodyParts3D ou PMC examiné.",
+  "Revue médicale suisse 2022;18:1090–5 (Jarlborg et Jornayvaz) non relue : accès payant (revmed.ch) et dépôt UNIGE sans lien PDF exploitable ; les affirmations qui en dépendent (1 à 9 % des diabètes, répartition étiologique 79/8/7/4/2 %, critères d'Ewald et Bretzel, mécanisme des hypoglycémies, imagerie au diagnostic) n'ont pas été revérifiées par cet audit.",
+  "Rapport OMS 2011 sur l'HbA1c (WHO/NMH/CHP/CPM/11.1) inaccessible (vérification reCAPTCHA de NCBI Bookshelf, IRIS non servi) ; l'interférence des hémoglobinopathies et anémies repose sur une méta-analyse lue au résumé.",
+  "Code CIM-11 (5A12 selon sources secondaires) non vérifié auprès de l'OMS ; le consensus 2025 cite « E12.11 » pour la CIM-11, ce qui paraît erroné.",
+  "Libellé CIM-10-GM de O24.2 non vérifié (seule la CIM-10 OMS 2019 a été lue).",
+  "Documents OMS de 1985 et 1999 non lus directement.",
+  "Informations professionnelles non lues : répaglinide (NovoNorm absent d'AmiKo ; Répaglinide Rivopharm repéré, GTIN 7680612340164, non lu), agonistes du GLP-1, inhibiteurs du SGLT2.",
+  "Friedli et coll. 2018 lu au résumé seulement ; les seuils chiffrés de renutrition proviennent de la revue bernoise 2022 (texte intégral), sans tableau de stratification du risque (tableau non restitué par l'outil).",
+  "Aucune source lue sur la conduite de l'hypoglycémie sévère (glucose, glucagon) ni sur le diagnostic différentiel infectieux du migrant amaigri (tuberculose, VIH) : non proposés faute de lecture.",
+  "Aucune donnée de prévalence suisse ou européenne du diabète de malnutrition."
+ ],
+ "points_verifies_sans_constat": [
+  "Glucophage : dose initiale 500–1000 mg/j, +500 mg tous les 5–7 j, maximum 3000 mg/j ; 1000 mg/j si DFGe 30–59 ; contre-indications (DFGe < 30, insuffisance hépatique, alcoolisme) — conformes à S11.",
+  "Creon : 25 000–80 000 U par repas principal, moitié aux collations, maximum 10 000–12 000 U/kg/j ; enfant 1000 U/kg/repas avant 4 ans, 500 après ; colopathie fibrosante au-delà de 10 000 U/kg/j — conformes à S12.",
+  "Lantus : indication dès 2 ans, une injection par jour à heure fixe, formation aux repas omis — conformes à S13.",
+  "Consensus 2025 : critères fréquents et occasionnels, seuils d'IMC enfant, 25 millions, réunion de janvier 2025, 39 signataires, IDF avril 2025, position sur chaque classe — conformes à S4.",
+  "Vellore : critères historiques (âge < 30 ans, ~85 % d'hommes, glycémie à jeun > 200 mg/dl, > 60 UI/j ou 2,0 U/kg/j), 6–21 %, Éthiopie (IMC 16,7/16,5, 2:1), C-peptide médian 1,2/0,1/2,1 ng/mL, flux de glucose, SIDD ~28,9 kg/m², suppression postprandiale du glucagon — conformes à S5.",
+  "Endotext : critères de la FCPD, 3,8 % (enquête 2008), SPINK1 N34S 33 %, 80 % de survie au-delà de 35 ans, cancer surtout chez la femme, CA 19-9, élastase non modifiée par les enzymes, schéma basal-bolus, répaglinide envisageable, incrétines non recommandées — conformes à S7.",
+  "HaPanEU : seuils 7,0 mmol/L et 6,5 %, HbA1c < 6,5 % n'exclut pas, dépistage annuel (1C), 5 % à > 80 %, 25 % de diabètes instables, insuline en cas de dénutrition sévère, sulfonylurées à éviter, glinides à faible dose, alpha-glucosidases et thiazolidinediones à éviter, SGLT2 non prescrits, test génétique avant 20 ans (2C), rétinopathie comparable au type 1, macroalbuminurie rare — conformes à S8.",
+  "SGED 2023 : « giving insulin is never wrong », 18 % de carence sans anticorps, C-peptide 200–600 pmol/L, nouvelle mesure à 3 ans, HbA1c 7,0 % et 6,5 % chez le jeune — conformes à S9."
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
