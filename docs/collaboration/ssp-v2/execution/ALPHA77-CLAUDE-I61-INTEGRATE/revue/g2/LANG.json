@@ -18,15 +18,15 @@
  },
  "reviewed_files_sha256": {
   "chapters/I61/I61_a.html": "ebac5d308a79daba692c6fd86e869259da02dc6b27fa9343254c1fbdee182ca4",
-  "chapters/I61/I61_b.html": "d3ac00961deb6104e156a1a19aea8d72f7bbb4ce9420e8bd40bb8f42571734fa",
-  "chapters/I61/I61_c.html": "45756eabecab38b8e0ca24d5e1304eef4daf66998817848860556193720eb642",
+  "chapters/I61/I61_b.html": "8dbe28366388b183eba47e627c09406f429bfbfff4d427275d5eba801d097f47",
+  "chapters/I61/I61_c.html": "23be92d0b29beae15ebb5496ed05e92ca10ab85600ddff00abc103753dc2f7e5",
   "chapters/I61/I61_d.html": "6ab44f584c5b49410c114d557e84eb74eb820a712b6838b48be0ac991922502c",
-  "chapters/I61/I61_pop1.html": "1da62aea2a16797e6278fd0b1ffdd188e59abbeb406fdf94de73d8122a145f31",
-  "chapters/I61/I61_pop2.html": "24827c6bae73b1ce76ddc2d15935d9eeb24fdb73c4405b98b443ea42d85d6ddf",
-  "glossary/i61.py": "12b1ecbb1c803147cc04b573b74348c426102ab41abd5b046b12fcc52a5675ba"
+  "chapters/I61/I61_pop1.html": "9fafd57fb76b8590b41e642756dee3b4280707f9e8ad87aa6097fa95aa1f0bfd",
+  "chapters/I61/I61_pop2.html": "bda2c9b5d8dd23fea0bc2b844a75303562c450c8ef53e8ee882efcc407f02f02",
+  "glossary/i61.py": "81d4e2a84e26cf73cceb6368192a0b033330bd7b9c41979886b041855366a5fd"
  },
  "date": "2026-10-15",
- "scope": "Passages modifiés en génération 2 : cotation de Glasgow (I61_a cas fil rouge, I61_b § 8 et § 11.7, I61_c sm-4/sm-5/quiz Cas 3, I61_pop1 fenêtres i61-gcs, i61-score-ich, i61-susceptibilite, I61_pop2 Pareto a08), discipline S05 « Biophysique de l’imagerie du sang » et son Pareto, clé NT du glossaire. Le reste du cours est couvert par les revues de la génération 1 (revue/*.json, source 63beb7ff), non refaites.",
+ "scope": "Passages modifiés en génération 2, y compris la correction du constat Codex P1 de la PR 171 : cotation de Glasgow (I61_a cas fil rouge, I61_b § 8 et § 11.7, I61_c sm-4/sm-5/quiz Cas 3, I61_pop1 fenêtres i61-gcs, i61-score-ich, i61-susceptibilite, I61_pop2 Pareto a08), discipline S05 « Biophysique de l’imagerie du sang » et son Pareto, clé NT du glossaire. Le reste du cours est couvert par les revues de la génération 1 (revue/*.json, source 63beb7ff), non refaites.",
  "sources": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/integration/sources_g2.json",
  "unresolved_blockers": [],
  "kind": "LANG",
@@ -51,7 +51,7 @@
   }
  ],
  "evidence": [
-  "python3 test_v7.py --static I61 → OK (40692 mots, 77 fenêtres, 10 quiz, 22 Pareto)",
+  "python3 test_v7.py --static I61 → OK (40973 mots, 77 fenêtres, 10 quiz, 22 Pareto)",
   "build_medina.audit() sur les six fichiers HTML I61 → {}",
   "Rendu Chromium 390 px et 1280 px : integration/controles_g2.json, captures integration/captures/i61_g2_*.png"
  ]
