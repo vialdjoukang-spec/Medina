@@ -1,0 +1,169 @@
+{
+  "mission": "ALPHA1-CODEX-N17-MED",
+  "canevas": "20rubriquesopérationnelles couvrant contratV2/CHAPTER_SPEC ;aucunscoredeperfection",
+  "rubriques": [
+    {
+      "n": 1,
+      "rubrique": "Définition",
+      "statut": "couvert",
+      "surfaces": "n17-1,n17-12,n17-criteres",
+      "preuves": "INT-KDIGO-2012",
+      "limites": "Seuils/durées recoupés ;statutactualité2026 LACUNE"
+    },
+    {
+      "n": 2,
+      "rubrique": "Classifications et CIM10",
+      "statut": "couvert",
+      "surfaces": "n17-1,n17-stades,n17-corticale,n17-papillaire",
+      "preuves": "INT-KDIGO-2012;DE-CIM-N17-2024",
+      "limites": "N17.0/.1/.2/.8/.9 etexclusions vérifiées ;pasrèglesOFS2026"
+    },
+    {
+      "n": 3,
+      "rubrique": "Épidémiologie",
+      "statut": "couvert",
+      "surfaces": "n17-2",
+      "preuves": "CH-RMS-2017",
+      "limites": "7%hospitaliersancien,lacunenationaleexplicite"
+    },
+    {
+      "n": 4,
+      "rubrique": "Physiopathologie",
+      "statut": "couvert",
+      "surfaces": "n17-3,n17-perfusion/congestion/obstruction",
+      "preuves": "CH-RMS-2017;EU-URO-348",
+      "limites": "Mécanismescoexistants ;pasoligurie=remplissage"
+    },
+    {
+      "n": 5,
+      "rubrique": "Étiologies et facteurs de risque",
+      "statut": "couvert",
+      "surfaces": "n17-4,toutesfenêtresétiologiques",
+      "preuves": "CH-RMS-2017;EU-NICE-NG148;INT-KDIGO-2012",
+      "limites": "prérénal/tubulaire/glomérulaire/interstitiel/vasculaire/obstructiflus ;M01–M04"
+    },
+    {
+      "n": 6,
+      "rubrique": "Anamnèse",
+      "statut": "couvert",
+      "surfaces": "n17-5,n17-atcd/médicaments/symptômes",
+      "preuves": "CH-RMS-2017;EU-NICE-NG148",
+      "limites": "Chronologie,expositions,diurèse ;pasfréquencesinventées"
+    },
+    {
+      "n": 7,
+      "rubrique": "Examen clinique",
+      "statut": "LACUNE",
+      "surfaces": "n17-6,fenêtresjugulaire/poumon/godet/vessie",
+      "preuves": "CH-HUG-bundle;CH-RMS-2017",
+      "limites": "Cadrevolémiquevalidé ;techniqueStanford/MSD nonrecoupéeintégralement"
+    },
+    {
+      "n": 8,
+      "rubrique": "Diagnostic positif",
+      "statut": "couvert",
+      "surfaces": "n17-7,n17-calcul-creatinine/diurese",
+      "preuves": "INT-KDIGO-2012",
+      "limites": "Chronologiestadeplusélevé,recueilfiable"
+    },
+    {
+      "n": 9,
+      "rubrique": "Différentiels hiérarchisés",
+      "statut": "couvert",
+      "surfaces": "n17-7.1,tableauxSSP/différentiels",
+      "preuves": "EU-NICE-NG148;EU-NICE-myelome;CH-RMS-2017",
+      "limites": "RéservesM01–M04,copiesproposées"
+    },
+    {
+      "n": 10,
+      "rubrique": "Urgences et complications",
+      "statut": "couvert",
+      "surfaces": "n17-8,n17-hyperk/acidose/uremie/rrt",
+      "preuves": "EU-UKKA-2023;EU-NICE-NG148;INT-KDIGO-2012",
+      "limites": "HyperK/acidose/surcharge/urémie/obstacle ;ERC400mL/jLACUNE"
+    },
+    {
+      "n": 11,
+      "rubrique": "Traitement causal et soutien",
+      "statut": "couvert",
+      "surfaces": "n17-9",
+      "preuves": "CH-HUG-bundle;CH-RMS-2017;INT-KDIGO-2012;EU-URO-348",
+      "limites": "Soutien/perfusion,déplétion,drainage ;protocolecalcium nonarbitré"
+    },
+    {
+      "n": 12,
+      "rubrique": "Pharmacologie produits/doses",
+      "statut": "couvert",
+      "surfaces": "p-1àp-4,8fenêtresproduits",
+      "preuves": "FI-NaCl;FI-Lasix;FI-Noradrenalin;FI-Actrapid;FI-Glucose;FI-Bicarbonate;FI-Lokelma;FI-Ventolin;DE-calcium",
+      "limites": "7FIcanoniquesCH+lacomplémentaireVentolin ;importcalciumexceptionexplicite"
+    },
+    {
+      "n": 13,
+      "rubrique": "Interactions,contre-indications,surveillance",
+      "statut": "couvert",
+      "surfaces": "p-3,monographies",
+      "preuves": "FI-Lokelma;FI-Lasix;FI-Actrapid;FI-Glucose;FI-Bicarbonate;FI-Noradrenalin;EU-UKKA-2023",
+      "limites": "M06–M08enrichissenttacrolimus/salbutamol/redoseECG"
+    },
+    {
+      "n": 14,
+      "rubrique": "Suivi,pronostic,récupération",
+      "statut": "couvert",
+      "surfaces": "n17-10,n17-suivi",
+      "preuves": "INT-KDIGO-2012;EU-ERBP-2012;CH-SSN-2025",
+      "limites": "3moisKDIGO ;≤2moishautrisqueERBP ;sansattente encasaggravation"
+    },
+    {
+      "n": 15,
+      "rubrique": "Prévention et éducation",
+      "statut": "couvert",
+      "surfaces": "n17-10,p-4,n17-ains",
+      "preuves": "EU-NICE-NG148;CH-RMS-2017;CH-SSN-2025",
+      "limites": "Expositions,planmédicament/reprise ;pasarrêtdéfinitifautomatique"
+    },
+    {
+      "n": 16,
+      "rubrique": "Populations particulières",
+      "statut": "LACUNE",
+      "surfaces": "n17-11,monographiesgrossesse/IR/IH",
+      "preuves": "FI-*;EU-NICE-NG148",
+      "limites": "Adulteâgé/sarcopénie/transplantationetFI lus ;pasrevueobstétricale/pédiatriquedétaillée"
+    },
+    {
+      "n": 17,
+      "rubrique": "Anatomie spécialisée",
+      "statut": "LACUNE",
+      "surfaces": "n17-s-anat,figure4,n17-obstruction",
+      "preuves": "EU-URO-348;INT-KDIGO-2012",
+      "limites": "Rapportobstacle/reinunique ;détailsStatPearls noncertifiés",
+      "complement_figures": "MAJEUR : figure anatomique ou microstructure dessinée par auteur IA documenté ; remplacement par original publié sourcé requis, non effectué."
+    },
+    {
+      "n": 18,
+      "rubrique": "Histologie spécialisée",
+      "statut": "LACUNE",
+      "surfaces": "n17-s-histo,figures5/5bis",
+      "preuves": "INT-histo-case;CH-RMS-2017",
+      "limites": "M05,casborné ;revueGautLiapisnonrecoupéedanscettesession",
+      "complement_figures": "MAJEUR : figure anatomique ou microstructure dessinée par auteur IA documenté ; remplacement par original publié sourcé requis, non effectué."
+    },
+    {
+      "n": 19,
+      "rubrique": "Physiologie spécialisée",
+      "statut": "LACUNE",
+      "surfaces": "n17-s-physio,n17-fen",
+      "preuves": "CH-RMS-2017;EU-ERBP-2012",
+      "limites": "Créatininehorséquilibrecorroborée ;basephysiologiqueexhaustiveStatPearls nonrevalidée"
+    },
+    {
+      "n": 20,
+      "rubrique": "Biochimie,calculs,intervalles",
+      "statut": "couvert",
+      "surfaces": "n17-s-bioch,fenêtresnormalité/calculs",
+      "preuves": "CH-Viollier-*;CH-CHUV-osmo;FI-*;EU-UKKA-2023",
+      "limites": "24fichesCHlues ;arithmétiquevérifiée ;formuleWinter/correctionalbumineencoreLACUNE faute sourceEUouverte"
+    }
+  ],
+  "complement_figures": "Voir inventaire-figures.json et complement-figures.md : figures4/5 MAJEUR ; figure7 réservée. Les drafts médicaux restent non recevables comme version finale sur ces figures."
+}
