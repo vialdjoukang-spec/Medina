@@ -1,0 +1,121 @@
+{
+  "mission": "ALPHA1-CODEX-I63-MED",
+  "code": "I63 — Infarctus cérébral",
+  "modele": "gpt-6.1-sol",
+  "effort": "high",
+  "generation": 1,
+  "base": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "head_audit": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "heureUTC": "2026-10-15T18:23:37.065423+00:00",
+  "source_files_sha256": {
+    "chapters/I63/I63_a.html": "c9084d56fbe96e791d65262cc1504bb5b8729bf85bc5af5958f477e3e2219840",
+    "chapters/I63/I63_b.html": "685d40ca25eec502b3dbbbf616135e86b4167c26f2a3ddc8921435cfa5f48a7d",
+    "chapters/I63/I63_c.html": "9b2d0cde407ffc3fd9b9330fdca2b8fca77a82ec6235282711a7721e00c9a9cb",
+    "chapters/I63/I63_d.html": "2bb8921d034d582f57d736da181689d5e4eb67c56c61b4338b5f3bf721b7ddf9",
+    "chapters/I63/I63_pop1.html": "1f28081b1718c3c76e2329781376b981c54e6fbdb12679427006f6f93e124ace",
+    "chapters/I63/I63_pop2.html": "510b77118a28e766d737173266ad71a9fd87374946abf28005dda01481b562c1",
+    "glossary/i63.py": "3084280be3d900f5df2a4e1f62f32480fd7c4e010b17e9e4e502fd7b67503a12"
+  },
+  "lecture": {
+    "fichiers": [
+      "chapters/I63/I63_a.html",
+      "chapters/I63/I63_b.html",
+      "chapters/I63/I63_c.html",
+      "chapters/I63/I63_d.html",
+      "chapters/I63/I63_pop1.html",
+      "chapters/I63/I63_pop2.html",
+      "glossary/i63.py"
+    ],
+    "texte_clinique": "Quatre onglets,53fenêtres,tableaux,quiz,résumés etglossaire parcourus via extraction textuelle segmentée ; inventaire danssurfaces.json",
+    "figures": "13figures : textes,légendesetdescriptions lus ; aucun contrôlevisuel nouveau des4imagesraster et aucun navigateur rendun’est revendiqué.",
+    "limite": "Lecturetextuelle ne vaut pasvérification clinique individuelle dechaqueaffirmation. Références inventoriées mais non toutes rouvertes."
+  },
+  "verdict": "AUDIT_REALISE_AVEC_RESERVES_BLOQUANTES — NON_VALIDE",
+  "validation_medicale_humaine": false,
+  "audit_croise": false,
+  "constats": [
+    {
+      "id": "I63-M01",
+      "gravite": "P1",
+      "surface": "chapters/I63/I63_a.html#i63-6 ; I63_pop1.html[data-pop=i63-hints] ; glossary/i63.py HINTS",
+      "constat": "L’introduction invite à HINTS devant tout vertige persistant sans qualification opérateur. La fenêtre et le glossaire omettent la formation ; une règle absolue affirme que tout infarctus du tronc/cervelet laisse le réflexe intact, contredite par le sous-groupe AICA à HINTS périphérique.",
+      "sources": [
+        "EU-DIZZY"
+      ],
+      "correction": "Copie de travail : réserve au syndrome vestibulaire aigu avec nystagmus et examinateur formé, compléments audition/marche ; saccade ne suffit pas à exclure AICA.",
+      "statut": "proposition appliquée en drafts uniquement ; relecture textuelle ciblée effectuée"
+    },
+    {
+      "id": "I63-M02",
+      "gravite": "P1",
+      "surface": "I63_pop1.html[data-pop=i63-hints]",
+      "constat": "Sensibilité84,0->95,7% présentée pour «l’infarctus» sans préciser que le passage source concerne les infarctus du territoire AICA.",
+      "sources": [
+        "EU-DIZZY"
+      ],
+      "correction": "Sous-groupe, intervalles de confiance et limites de transfert ajoutés en copie.",
+      "statut": "corrigé en draft uniquement"
+    },
+    {
+      "id": "I63-M03",
+      "gravite": "P1",
+      "surface": "ensemble onglets/pharmacologie et fenêtres de produits",
+      "constat": "Toutes les décisions thérapeutiques ne sont pas étayées par nouvelle lecture indépendante de leur recommandation applicable et FI exacte dans cette mission. En particulier, seuil implantable>6min et cibles pression2026 nécessitent confrontation européenne complète. Ce constat est une limite de l’audit, pas preuve que le cours est erroné.",
+      "sources": [
+        "CH-BERN",
+        "CH-FI-TNK",
+        "CH-FI-APIX"
+      ],
+      "correction": "Aucune réécriture thérapeutique nonprouvée ; réserve explicite.",
+      "statut": "ouvert, bloque verdictfavorable"
+    },
+    {
+      "id": "I63-M04",
+      "gravite": "P2",
+      "surface": "I63_pop1.html[data-pop=i63-veineux]",
+      "constat": "Le relais oral CVT ne rappelle pas ici l’exception APS triplepositif décrite dans la recommandation S2k. Le lien générique à la fenêtre apixaban ne l’explique pas précisément.",
+      "sources": [
+        "CH-BERN",
+        "EU-DGN-CVT"
+      ],
+      "correction": "Enrichissement : préférenceAVK si APS confirmétriplepositif ; distinguer extrapolation VTE et preuves CVT.",
+      "statut": "ajout en draft uniquement"
+    },
+    {
+      "id": "I63-M05",
+      "gravite": "P2",
+      "surface": "citations Bern2026 vers Rankin/NIHSS (I63_a et fenêtres)",
+      "constat": "La table des matières du PDF effectivement téléchargé situe simplified mRS p.66 et NIHSS p.68 ; les renvois récurrents du cours versp.61/p.62–63 ne permettent pas une vérification exacte.",
+      "sources": [
+        "CH-BERN"
+      ],
+      "correction": "Recalculer les renvois dans chaque citation après contrôle du passage ; ne pas remplacer globalement tous les numéros61/62.",
+      "statut": "ouvert ; pas de correction globale aveugle"
+    },
+    {
+      "id": "I63-M06",
+      "gravite": "P2",
+      "surface": "I63_a.html#i63-6",
+      "constat": "La relation40/40/20% avec cardioembolie est présente explicitement chezHoyer2021 ; ce n’est donc pas une erreur démontrée. Le cours omet toutefois la restriction «isolated» du passage et présente l’ordre de grandeur comme explication individuelle trop directe.",
+      "sources": [
+        "EU-HOYER"
+      ],
+      "correction": "Nuance «cardioembolique isolé» et absence d’attribution individuelle ajoutées en copie.",
+      "statut": "enrichissement prudent, pas désaccord source inventé"
+    }
+  ],
+  "gravites": {
+    "P0": 0,
+    "P1": 3,
+    "P2": 3
+  },
+  "enrichissements": "drafts et enrichissements-proposes.patch ; seules copiesdansdossierréservé",
+  "canoniques_modifies": false,
+  "controles": "Empreintes7/7conformes ; remplacementsciblés assertés ; diff et parseJSON àvérifier avantcommit.",
+  "reprise_requise": [
+    "Rouvrir sourcesESO pertinentes etFI manquantes, particulièrement risque/contre-indications etinteractions",
+    "ValiderpérimètreOFS/BfArM etPROFILESprimaire",
+    "Contrôlevisuelnouveau desfiguresetglossaire réellementconsommé",
+    "Intégrationcanonique contrôlée parmissiondistincte, avec renouvellementempreintes."
+  ]
+}
