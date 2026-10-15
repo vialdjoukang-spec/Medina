@@ -1,0 +1,91 @@
+{
+ "actor": "C03-R-NEUR",
+ "verdict": "conforme",
+ "checked_at": "2026-10-14T23:38:37.481473+00:00",
+ "prompt_files": {
+  "PROMPT_MEDINA.md": "2cb48f7462770f3eebd0c5bf224ce52514378aeea63a8f79c74bc97450a33973",
+  "PROMPT_TRANSITION.md": "d492fd03ecb58d61352c4946e1c6d6f0c28e8077c1793288d4e578e32ed86367",
+  "docs/STYLE_REDACTION.md": "670b0aa6b681d4bfdd18b43e00364e3e0d02f6dbff00855bc7c24476cfd4d325",
+  "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+  "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md": "b440780fe4e9115bab7670425c139b9c8337cd5a386e701c96146b14745aaf7e"
+ },
+ "checks": [
+  {
+   "id": "autorisation",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md",
+     "sha256": "ac6e675277fc01d4056cdc22374b4edc29ec47482294339ce68f100a3d89bb59",
+     "explanation": "Publication directe sans audit des Cycles 3 à 30 : I61 est la leçon NEUR du Cycle 3 ; livraison limitée au dossier CYCLE_03_I61 et aucune commande git exécutée."
+    }
+   ]
+  },
+  {
+   "id": "perimetre_provenance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/source_ledger_claude.json",
+     "sha256": "dbbe235e952cb94f7fd65c5f340d577f2b86ed04494b8c6365a3bce37cb20d64",
+     "explanation": "Les sept sources finales (quatre onglets, deux fichiers de fenêtres, glossaire) sont empreintes dans le registre ; toutes les écritures sont restées dans le dossier CYCLE_03_I61 ; un worktree jetable hors dépôt a servi au contrôle statique puis sera supprimé."
+    }
+   ]
+  },
+  {
+   "id": "sources_lues",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/source_ledger_claude.json",
+     "sha256": "dbbe235e952cb94f7fd65c5f340d577f2b86ed04494b8c6365a3bce37cb20d64",
+     "explanation": "103 affirmations documentées avec URL, section, passage, population, limites et empreinte du texte lu ; les informations professionnelles suisses ont été relues le 14.10.2026 pour les mécanismes ; aucune affirmation non vérifiée déclarée."
+    }
+   ]
+  },
+  {
+   "id": "contexte_suisse",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/contexte_suisse_claude.json",
+     "sha256": "4d86a0e927a48e10477a8972b827c6ff992214308d5587cae728bac88f48fa28",
+     "explanation": "Matrice de 52 décisions conforme au contrôle swiss_context_proof ; décisions suisses d’abord (Berne, registre suisse, FI), sources européennes en complément avec arbitrage des huit divergences ; aucune recommandation américaine décisionnelle."
+    }
+   ]
+  },
+  {
+   "id": "independance",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/images_claude.json",
+     "sha256": "f23040925c8929c7a3c29f685a8de189cae1d3c8972582ef7805ce8688d943c3",
+     "explanation": "Auteur C03-R-NEUR distinct des futurs auditeurs ; sept images réelles sous licence ouverte, ouvertes et décrites, aucune image générée ; aucun audit n’est attribué à l’auteur."
+    }
+   ]
+  },
+  {
+   "id": "contrat_cours",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/chapters/I61/I61_d.html",
+     "sha256": "973cce34a40b6ef6c62b7e295e9b4e40e0cafb48e8b5b2d1526c47e1b2cc3b19",
+     "explanation": "Contrat HTML respecté (python3 test_v7.py --static I61 : OK dans un worktree jetable) : quatre onglets, 63 fenêtres préfixées i61-, 21 Pareto, 7 quiz, glossaire complet, classes de la liste fermée, dernier îlot de critères formels et paramètres clés dans l’onglet 1."
+    }
+   ]
+  },
+  {
+   "id": "honnetete",
+   "status": "conforme",
+   "evidence": [
+    {
+     "path": "livraisons/Livraison Claude/N-05-Neurologie/travail/CYCLE_03_I61/preuves/dossier_sources.json",
+     "sha256": "464beca4b1d551bd2fe6be6604f5574aa1647fce501f05970948d3e25dfdc3dc",
+     "explanation": "Les lacunes G-01 à G-06 du dossier sont déclarées dans le texte (sémiologie par siège sans fréquence, intervalles d’hémostase non publiés, grossesse et enfant, IRM par stades, mortalité par point du score ICH, unités Hounsfield) ; revue IA sans validation médicale humaine."
+    }
+   ]
+  }
+ ]
+}

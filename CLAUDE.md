@@ -1,3 +1,5 @@
+## ⚠️ REPRISE : lire d'abord [REPRISE_SESSION.md](REPRISE_SESSION.md) — règle absolue de Vial.
+
 ## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
 
 Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](docs/collaboration/instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).
