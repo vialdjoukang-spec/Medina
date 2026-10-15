@@ -25,8 +25,12 @@ for key,meaning,ref in [
  ('POINT','Essai de double antiagrégation après événement mineur ou transitoire à haut risque','g45-plavix'),
  ('CAPRIE','Essai comparant clopidogrel et aspirine en prévention vasculaire','g45-plavix'),
  ('ARISTOTLE','Essai comparant apixaban et warfarine dans la fibrillation auriculaire','g45-eliquis'),
- ('SPARCL','Essai comparant atorvastatine intensive et placebo après événement cérébrovasculaire','g45-sortis')]:
+ ('SPARCL','Essai comparant atorvastatine intensive et placebo après événement cérébrovasculaire','g45-sortis'),
+ ('THALES','Essai comparant ticagrélor associé à l’aspirine et aspirine seule après événement mineur ou transitoire','g45-antithrombotique')]:
  add(key,[(key,'Nom propre d’un essai ; aucun développement littéral non vérifié n’est inventé')],meaning,'La fenêtre décrit la population, la comparaison et les limites effectivement lues dans la source.',''+ref)
+add('ISRS',[('I','Inhibiteurs'),('S','Sélectifs'),('R','de la Recapture'),('S','de la Sérotonine')],'Inhibiteurs sélectifs de la recapture de la sérotonine','Classe d’antidépresseurs citée parmi les médicaments qui augmentent le risque de saignement sous clopidogrel ; la fiche du produit exact précise la conduite.','g45-plavix')
+add('CHUV',[('C','Centre'),('H','Hospitalier'),('U','Universitaire'),('V','Vaudois')],'Centre hospitalier universitaire vaudois','Source des intervalles de référence biologiques cités ; seul le compte rendu individuel du laboratoire fait foi.','g45-laboratoire')
+add('RoPE',[('R','Risk'),('o','of'),('P','Paradoxical'),('E','Embolism')],'Risk of Paradoxical Embolism : score de risque d’embolie paradoxale','Score qui estime la part d’un infarctus cryptogénique attribuable au foramen ovale perméable. Le protocole bernois ne l’utilise ni pour choisir l’échocardiographie ni, seul, pour décider la fermeture.','g45-incertaine')
 add('cAMP',[('c','Cyclique'),('A','Adénosine'),('M','Mono'),('P','Phosphate')],'Adénosine monophosphate cyclique','Nucléotide identifié dans la carte de signalisation ; nomenclature vérifiée dans ChEBI, entrée 17489.','g45-plaquette')
 add('vWF',[('v','von'),('W','Willebrand'),('F','Factor : facteur')],'Facteur von Willebrand','Nom de la protéine indiqué dans la figure plaquettaire ; nomenclature VWF vérifiée auprès du comité HGNC.','g45-plaquette')
 add('PTGS1',[('PTGS','Symbole officiel : prostaglandin-endoperoxide synthase'),('1','Membre 1')],'Prostaglandine-endoperoxyde synthase 1','Le comité HGNC donne cyclooxygenase-1 parmi les noms associés. Le symbole désigne une enzyme de la figure, pas une indication thérapeutique.','g45-plaquette')
@@ -34,11 +38,11 @@ add('PLA2',[('P','Phospho'),('L','Lipase'),('A2','Type A2')],'Phospholipase A2',
 add('TXA2',[('TX','Thromboxane'),('A2','Type A2')],'Thromboxane A2','La fiche Aspirine Cardio décrit la diminution de sa synthèse plaquettaire.','g45-aspirine')
 add('PG',[('P','Prosta'),('G','Glandine')],'Prostaglandines','Famille désignée par ces lettres dans la figure ; les suffixes distinguent les molécules représentées.','g45-plaquette')
 for key,lit,full in [
- ('LPGH',[('L','Last'),('P','Proof of'),('G','Good'),('H','Health')],'Last proof of good health : dernière preuve de bon état'),
+ ('LPGH',[('L','Last'),('P','Proof of'),('G','Good'),('H','Health')],'Last proof of good health : dernier moment où un état de santé normal est attesté (synonyme : last seen well)'),
  ('LVO',[('L','Large'),('V','Vessel'),('O','Occlusion')],'Large vessel occlusion : occlusion d’un gros vaisseau'),
  ('RACE',[('R','Rapid'),('A','Arterial'),('C','oCclusion'),('E','Evaluation')],'Rapid Arterial Occlusion Evaluation : score de tri préhospitalier'),
- ('SU',[('S','Stroke'),('U','Unit')],'Stroke unit : unité neurovasculaire'),
- ('SC',[('S','Stroke'),('C','Center')],'Stroke center : centre neurovasculaire'),
+ ('SU',[('S','Stroke'),('U','Unit')],'Stroke unit : unité AVC (unité neurovasculaire)'),
+ ('SC',[('S','Stroke'),('C','Center')],'Stroke center : centre AVC (centre neurovasculaire)'),
  ('EVT',[('EV','EndoVascular'),('T','Treatment')],'Endovascular treatment : traitement endovasculaire'),
  ('DIDO',[('D','Door'),('I','In'),('D','Door'),('O','Out')],'Door-in-door-out : délai entre entrée et sortie de l’hôpital')]:
  add(key,lit,full,'Abréviation conservée dans la figure suisse originale de 2021. La légende traduit le terme ; la portée concerne le tri préhospitalier, pas une règle de sortie après AIT.','g45-parcours')

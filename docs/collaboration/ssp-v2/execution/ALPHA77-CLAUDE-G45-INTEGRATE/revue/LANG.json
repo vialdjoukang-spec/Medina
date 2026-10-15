@@ -1,0 +1,169 @@
+{
+ "actor": "Claude",
+ "code": "G45",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-G45-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "05d2e0e754d6f13b0eef5dd8893e1db121201b77",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G45/G45_a.html": "ae8459b3bdf78fb06244f1b9592a0bfa6ad2e8cbf0bbfe15d1ab6bc2f61e5493",
+  "chapters/G45/G45_b.html": "67a5549b1906444d40e8c83dbe847c111cc86758212a2b001c98976a0f13a7c7",
+  "chapters/G45/G45_c.html": "0ef23619ff365382e26dbb3b3e2fedb8802b45ca2732620b5ab9f6394ff378dc",
+  "chapters/G45/G45_d.html": "35fceb068dac8a3866c8e364c9d483c5ab3be5b7de35f2f044822f2db2adfb6d",
+  "chapters/G45/G45_pop1.html": "76ab9eacc177686017d10f8e8904523abc633705bcf6ba3649a89465353e83ef",
+  "chapters/G45/G45_pop2.html": "b0cdf32db2460cbb24e910261c3983a595e0df81bc61a28103be9dc40429a5c1",
+  "glossary/g45.py": "0aa1ffa254b6b769b6192bb4345ceed9488b6d668bfc966ff03fa4f346a3670c"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G45/G45_a.html": "42e67732527dd846aa3d5b19156e4108e2d496a79df774dfc034af3d29f4b920",
+  "chapters/G45/G45_b.html": "c6c0149849768fed843e8a2653299138d02e1a4fcbbbaf79fafc21822a844234",
+  "chapters/G45/G45_c.html": "63004e671162d581623684c015de6dcb3325aa83523f4f8861f638beeeae889b",
+  "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
+  "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
+  "chapters/G45/G45_pop2.html": "0d31f01a968a773a19422dfc60b40d4a8d306a9a80a630c4cbeee276f422fbb2",
+  "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Propositions LANG appliquées, différées et non appliquées (corrections.json) ; nouvelles phrases intégrées ; sous-onglet et fenêtres de sémiologie après retouches de W. Complément du 15.10.2026 : Revue de la cinquième discipline (commit 70ecacf5) : Anatomie vasculaire cérébrale fonctionnelle (g45-s01-science) et Histologie (g45-s05-science) relues en totalité, Pareto pareto-g45-s01 et pareto-g45-s05, renumérotation des disciplines suivantes, rendu Chromium.",
+ "findings": [
+  {
+   "id": "LANG-propositions",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "86 propositions appliquées (2 adaptées), 9 différées, 1 non appliquée.",
+   "verification": "Vérification automatique : pour les 84 propositions marquées « applique », le texte « nouveau » de propositions.json est présent dans le fichier final (83 à l’identique ; LANG-G45-094 insérée sous forme de deux lignes séparées du glossaire, clés ISRS et CHUV présentes). Les 2 propositions « adapte » (004, 005) sont motivées dans corrections.json. Les 9 différées concernent toutes « fibrillation atriale/auriculaire », choix éditorial en attente ; LANG-022 non appliquée de façon motivée (chiffre devant unité).",
+   "evidence": [
+    "Script hors dépôt confrontant ALPHA1-CLAUDE-G45-LANG/propositions.json, integration/corrections.json (lang_statut) et les fichiers finaux."
+   ]
+  },
+  {
+   "id": "RETOUCHES-SEMIO",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Retouches de W sur le texte de sémiologie préparé.",
+   "verification": "Différence prep → final : annonce méta reformulée en phrase directe ; étapes 7.2 passées de la première personne à la troisième (« Le médecin reconnaît d’abord… ») ; deux phrases de chantier retirées. Aucune perte d’information médicale ; le fond est identique.",
+   "evidence": [
+    "Différence phrase à phrase entre prep/semiologie_sciences.html et le div#g45-s-semio de G45_c.html."
+   ]
+  },
+  {
+   "id": "EPILOGUES",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "21 épilogues « Corrélation clinique » renommés selon STYLE_REDACTION § 3.",
+   "verification": "Libellés présents ; texte inchangé.",
+   "evidence": [
+    "grep des libellés dans les fichiers finaux."
+   ]
+  },
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G45/G45_a.html",
+   "ancre": "Sources consultées les 13–14 octobre 2026",
+   "constat": "La ligne d’état ne reflète plus les sources relues et ajoutées le 15.10.2026 (sémiologie, corrections MED).",
+   "correction_proposee": "« Sources consultées du 13 au 15 octobre 2026 »",
+   "evidence": [
+    "Lecture du rendu S08 construit hors dépôt (capture p_mobile_24px) et de G45_a.html.",
+    "Différence 97ba87d2 → f5736930c3015700e4f834e1308062ad1f6dae34 relue phrase par phrase et confrontée aux sources citées, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à f5736930 (G45_a) : « Sources consultées du 13 au 15 octobre 2026 »."
+  },
+  {
+   "id": "P5-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "<b>À retenir.</b> Quatre grands territoires ; <b>À retenir.</b> Trois couches pariétales",
+   "constat": "Les deux épilogues sont des énumérations nominales sans verbe conjugué (STYLE_REDACTION § 2) et n’annoncent pas le lien avec la partie suivante (§ 3). Les Pareto pareto-g45-s01 et pareto-g45-s05 commencent aussi par des groupes nominaux (« Intima, média, adventice ; »).",
+   "correction_proposee": "Anatomie : « À retenir. L’atlas distingue quatre grands territoires, divisés en sous-territoires profonds et lobaires, et des zones frontières. Les suppléances varient d’un patient à l’autre ; un territoire d’atlas reste donc une probabilité. L’histologie montre ensuite ce que la paroi et le tissu subissent. » Histologie : « À retenir. La paroi compte trois couches ; au capillaire, les péricytes remplacent les cellules musculaires. La chape et le noyau décident de la stabilité de la plaque. La pénombre se définit par des seuils de débit et de consommation d’oxygène, que la physiologie relie ensuite à l’autorégulation. »",
+   "evidence": [
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : épilogues et Pareto pareto-g45-s01 et pareto-g45-s05 rédigés en phrases complètes ; les deux épilogues annoncent la partie suivante."
+  },
+  {
+   "id": "P5-LANG-02",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "<th>Élément histologique</th>",
+   "constat": "Le tableau de 2.4 n’est pas introduit par une phrase qui pose la question (§ 4) ; la lecture qui suit n’indique ni l’erreur fréquente ni un exemple.",
+   "correction_proposee": "Avant le tableau : « Quels caractères histologiques annoncent la rupture ? Une revue anatomopathologique en retient six. » Après la lecture existante : « L’erreur fréquente consiste à juger la plaque sur le seul degré de sténose : une sténose de 40 % à chape fine peut être plus menaçante qu’une sténose serrée et calcifiée. »",
+   "evidence": [
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : question d’introduction avant le tableau ; erreur fréquente ajoutée après la lecture."
+  },
+  {
+   "id": "P5-LANG-03",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "Lors d’un infarctus cérébral, l’ouverture précoce de la barrière passe d’abord par une augmentation de la transcytose ; En pratique, l’inadéquation entre perfusion et diffusion",
+   "constat": "Deux phrases dépassent nettement la vingtaine de mots (36 et 32 mots, § 2).",
+   "correction_proposee": "Couper chacune en deux phrases : la première selon P5-MED-04 ; la seconde : « En pratique, l’inadéquation entre perfusion et diffusion à l’IRM sert de substitut. Elle surestime cependant le cœur et la pénombre par rapport à la TEP. » (avec les termes développés déjà employés dans la leçon).",
+   "evidence": [
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : les deux phrases longues sont coupées."
+  },
+  {
+   "id": "P5-LANG-04",
+   "severite": "ENRICHISSEMENT",
+   "status": "non_blocking",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "g45-s01-science ; g45-s05-science",
+   "constat": "Les deux disciplines commencent sans annonce de la question clinique éclairée (§ 6) ; ce défaut est partagé par les trois autres disciplines historiques. L’Histologie ne compte qu’un mot vert (g45-paroi) ; pénombre, unité neurovasculaire et plaque vulnérable mériteraient une fenêtre.",
+   "correction_proposee": "Ajouter une phrase d’annonce en tête de chaque discipline (par exemple : « Pourquoi un déficit peut-il disparaître sans laisser de lésion, et pourquoi une plaque peu sténosante peut-elle emboliser ? »). Fenêtres facultatives dans G45_pop1 ou G45_pop2.",
+   "evidence": [
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Partiellement appliqué à 05d2e0e7 : une question clinique annonce désormais chaque nouvelle discipline (« Quel territoire artériel explique la fonction perdue… », « Pourquoi un déficit peut-il disparaître sans laisser de lésion… »). Aucun mot vert ajouté en Histologie ; enrichissement facultatif, non bloquant."
+  },
+  {
+   "id": "P5-LANG-CONFORME",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Qualité de langue de la cinquième discipline par ailleurs conforme.",
+   "verification": "Phrases complètes et précises ; termes définis à la première occurrence (territoire artériel, anastomose, unité neurovasculaire, pénombre) ; aucune formule de chantier ; figures annoncées et commentées ; encadrés « Science → clinique / examen / traitement » rédigés en phrases complètes ; renumérotation des titres des disciplines 3 à 5 cohérente (h2 et h3). La coupure « 65 / µm » à 390 px relève des espaces insécables globales, choix différé.",
+   "evidence": [
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/ : captures/p5_s05_tableau_390.png."
+   ]
+  }
+ ],
+ "choix_differes": [
+  "espaces insécables globales",
+  "« fibrillation atriale/auriculaire »",
+  "groupe LIENS d’E11 (sans objet pour G45)",
+  "normalisation des apostrophes (moteur partagé)"
+ ],
+ "evidence": [
+  "integration/corrections.json (147 entrées) relu.",
+  "Différence textuelle base → final.",
+  "python3 test_v7.py --static G45 : OK (abréviations couvertes, classes fermées, aucun style en ligne).",
+  "Revue complémentaire des corrections de f5736930 ; test_v7.py --static G45 : OK ; empreintes des sept fichiers recalculées.",
+  "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+  "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/",
+  "Empreintes des sept fichiers recalculées sur 70ecacf5.",
+  "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026.",
+  "Rendu Chromium de 05d2e0e7 (build_front.py --fragment S08 hors dépôt, assets relié ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 : aucune erreur JavaScript ni ressource manquante, aucun défilement horizontal ; captures revue/captures/p5b_*.png",
+  "python3 test_v7.py --static G45 : OK ; build_medina.audit(src, 'G45') = {} pour les six fichiers HTML (05d2e0e7).",
+  "Empreintes des sept fichiers recalculées sur 05d2e0e7."
+ ],
+ "conclusion": "Aucun constat bloquant : P5-LANG-01 à 03 sont corrigés à 05d2e0e7 ; P5-LANG-04 est partiellement appliqué (annonces ajoutées), le reste est facultatif et non bloquant. P-LANG-01 reste corrigé.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
