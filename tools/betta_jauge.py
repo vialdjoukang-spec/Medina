@@ -9,7 +9,7 @@ try:
 except Exception:
     print("MEDINA Betta · jauge indisponible"); sys.exit()
 done = [n for n, v in c.items() if v["state"] in ("LIVRE", "INJECTE")]
-cur = next((n for n, v in c.items() if v["state"] != "INJECTE"), None)
+cur = next((n for n, v in c.items() if v["state"] not in ("LIVRE", "INJECTE")), None)
 les = sum(s in ("LIVRE", "INJECTE") or isinstance(s, dict) for v in c.values() for s in v["lessons"].values())
 tot = sum(len(v["lessons"]) for v in c.values())
 bar = "".join("✅" if v["state"] in ("LIVRE", "INJECTE") else ("🟩" if n == cur else "⬜") for n, v in c.items())
