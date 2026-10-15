@@ -39,6 +39,6 @@ La neuropathie n’est pas exclue universellement par les seuls tests normaux du
 
 ## Contrôles et statut
 
-Les contrôles réels sont consignés dans `verification.json` : empreintes sources, périmètre des écritures, conservation des identifiants/templates/images, correspondance du patch aux drafts et calculs arithmétiques. La porte de traçabilité `betta_verite.py` est exécutée sur `recherche_E10` (liens vers les fichiers de recherche uniques); sa réussite ne valide pas la médecine. Aucun build ni déploiement n’est nécessaire à ce rôle de rapport. Les deux captures d’interface n’ont pas été réalisées; aucune preuve de rendu publié n’est revendiquée.
+Les contrôles réels sont consignés dans `verification.json` : empreintes sources, périmètre des écritures, conservation des identifiants/templates/images, correspondance du patch aux drafts et calculs arithmétiques. La porte de traçabilité `betta_verite.py` est exécutée sur `recherche_E10` (copies ordinaires identiques des fichiers de recherche, sans lien symbolique); sa réussite ne valide pas la médecine. Aucun build ni déploiement n’est nécessaire à ce rôle de rapport. Les deux captures d’interface n’ont pas été réalisées; aucune preuve de rendu publié n’est revendiquée.
 
 Audit différé — revue IA, distincte d’une validation médicale humaine. Rapport et propositions terminés avec réserves; cours canonique inchangé; intégration médicale par le chemin Alpha distinct requis.
