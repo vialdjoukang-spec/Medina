@@ -1,7 +1,7 @@
 # Dossier de recherche — C72 — Tumeur maligne de la moelle épinière, des nerfs crâniens et d'autres parties du système nerveux central (N-05-Neurologie)
 
 Cycle Betta 41 · leçon 2 · agent C41-A4-NEUR (recherche, Opus 5.5) · 15.10.2026
-Sources : `sources.json` (S1–S19). Chaque fait porte sa référence entre crochets. Aucune affirmation n'est écrite de mémoire ; ce qui n'a pas été trouvé figure dans « Lacunes ».
+Sources : `sources.json` (S1–S25). Chaque fait porte sa référence entre crochets. Aucune affirmation n'est écrite de mémoire ; ce qui n'a pas été trouvé figure dans « Lacunes ».
 Mention : Audit différé — revue IA, distincte d'une validation médicale humaine.
 
 ## 0. Question clinique
@@ -150,6 +150,47 @@ Une femme de 33 ans décrit depuis plusieurs mois des dysesthésies diffuses des
 - DMG spinal : SG médiane ≈ 24 mois [S9].
 - MPNST NF1 : risque vie entière 8–16 % [S12].
 
+## 15. Compléments suisses (complétion du 15.10.2026)
+### 15.1 Littérature suisse de synthèse (résumés seuls)
+- Les tumeurs spinales intradurales se divisent en extramédullaires et intramédullaires ; parmi les intramédullaires, épendymomes et astrocytomes sont les plus fréquents [S20].
+- Quelle que soit leur origine, elles se manifestent par une douleur locale ou radiculaire progressive et des déficits neurologiques [S20].
+- L'exérèse chirurgicale complète est le traitement de choix de la plupart de ces tumeurs ; en cas de croissance infiltrante intramédullaire, un reliquat marginal est laissé pour éviter un nouveau déficit [S20] (concordant avec S4 et S7).
+- Une intervention rapide est indiquée dès l'apparition d'un déficit neurologique, car le pronostic dépend de la durée et de la sévérité du déficit préopératoire [S20].
+- La compression médullaire maligne fait partie des trois complications neurologiques graves du patient oncologique (avec la polyneuropathie chimio-induite et l'épilepsie) et exige une approche interdisciplinaire [S21].
+- Le retard diagnostique d'une tumeur intradurale peut conduire à une paraplégie complète ; une réadaptation intensive spécialisée (Centre suisse des paraplégiques, Nottwil) a permis, dans un cas rapporté, la reprise de la marche et de la continence en six mois après exérèse [S24] (tumeur bénigne : illustration, pas fondement).
+
+### 15.2 Spécificités suisses (rubrique 16)
+- **Déclaration obligatoire au registre des tumeurs** (loi sur l'enregistrement des maladies oncologiques ; diagnostics dès le 1.1.2020) : toute néoplasie maligne (/3 en CIM-O 3.2) de toutes localisations, C00–C97, donc tout C72.0–C72.9 ; également les tumeurs de comportement incertain (/1 → D37–D48) et les tumeurs bénignes du SNC (/0 → D32–D33, D35.2) ; c'est le code de comportement CIM-O qui détermine la catégorie CIM-10 [S22]. Conséquence : un épendymome myxopapillaire (grade 2 OMS) ou un schwannome spinal déclenchent aussi la déclaration selon leur code CIM-O [S22] (attribution exacte du code CIM-O à chaque entité non vérifiée : lacune).
+- **Médicaments** : témozolomide autorisé en Suisse seulement pour le glioblastome et le gliome malin récidivant ; usage spinal ou épendymaire = hors indication [S17]. ONC201 (dordaviprone) : aucune information professionnelle trouvée dans l'AIPS au 15.10.2026 [S25].
+- **Réadaptation** : centre spécialisé pour la paraplégie (Nottwil) [S24].
+- **Aptitude à la conduite, AI, Suva/LAA, remboursement LS** : aucune source spécifique lue (lacune ; voir Lacunes 10).
+
+## 16. Points d'examen fédéral (rubrique 20)
+- **PROFILES 2017** : C72 est rattaché dans le registre du dépôt aux SSP **159** « abnormal histology, cytology and molecular genetic test » et **227** « shared assessment of risks and protective factors for frequent life-compromising [conditions] » (correspondance pédagogique, non officielle) [S23].
+- Situations d'entrée apparentées de la même liste (inférence pédagogique) : SSP 82 « back pain », 85 « pain, burning, cramp, numbness in the extremities », 97 « abnormal gait », 103 « paresis, paralysis », 104 « sensory loss, changes in various forms of sensation », 77 « urinary retention », 202 « urinary and faecal incontinence », 81 « abnormal posture and back deformities » (déformation post-laminectomie), 18 « loss of vision » (gliome des voies optiques), 28 « hearing impairment » (nerf VIII) [S23].
+- **Pièges** :
+  1. Le nerf crânien atteint code en C72.2–C72.5, jamais en C71 ; les méninges codent en C70, les nerfs périphériques en C47 [S1].
+  2. Épendymome myxopapillaire = grade 2 OMS depuis 2021 (et non plus grade 1) [S2].
+  3. « Gliome diffus de la ligne médiane, H3 K27-**altéré** » (et non « mutant ») ; grade 4 ; existe aussi dans la moelle [S2, S4].
+  4. Épendymome = adulte, central, bien limité, coiffe hémosidérinique, exérèse complète possible ; astrocytome = enfant, excentré, infiltrant, exérèse complète rare [S6, S7].
+  5. Bilan d'extension épendymaire (IRM cranio-spinale, LCR) pas avant 2–3 semaines après l'opération [S3].
+  6. Corticoïdes à éviter avant biopsie si un lymphome ou une lésion inflammatoire est possible [S4].
+  7. Le syndrome de la queue de cheval relève d'abord d'une hernie discale ; un déficit nouveau impose une imagerie rapide [S14, S20].
+  8. Témozolomide hors indication suisse dans C72 [S17].
+  9. NF1 : douleur nouvelle ou croissance rapide d'un neurofibrome = MPNST jusqu'à preuve du contraire, exérèse urgente [S12].
+
+## 17. Sous-codes CIM-10-GM couverts (rubrique 19)
+| Sous-code | Libellé OFS | Traitement dans le dossier |
+|---|---|---|
+| C72.0 | Moelle épinière | cœur de la leçon : épendymome, astrocytome, DMG H3 K27-altéré (§ 2–11) [S1–S11] |
+| C72.1 | Queue de cheval | épendymome myxopapillaire, syndrome cône/queue de cheval, différentiel (§ 2, 5, 6, 7, 9.3) [S1, S3, S6, S14] |
+| C72.2 | Nerf olfactif | classification seulement ; esthésioneuroblastome = lacune [S1] |
+| C72.3 | Nerf optique | gliome des voies optiques NF1 (§ 3, 5, 6, 10) [S1, S12] ; gliome malin de l'adulte = lacune |
+| C72.4 | Nerf auditif | classification seulement [S1, S2] |
+| C72.5 | Autres nerfs crâniens et non précisés | MPNST, tumeur maligne mélanotique des gaines (§ 2, 5, 6, 9.7) [S1, S2, S12, S13] |
+| C72.8 | Lésion à localisations contiguës | règle de codage [S1] |
+| C72.9 | SNC sans précision | règle de codage [S1] |
+
 ## Lacunes explicites
 1. **Aucune source suisse de prise en charge** (Swiss Medical Forum, société suisse de neuro-oncologie, Kinderkrebs Schweiz) n'a pu être lue : budget WebSearch de la session épuisé ; PubMed et pages BFS/NKRS (404) n'ont rien donné. Données suisses limitées à l'épidémiologie [S15, S16].
 2. Pas de recommandation EANO spécifique aux gliomes médullaires ni au gliome H3 K27-altéré spinal ; pas de guideline EANO/ESMO lue sur le MPNST (seul ERN GENTURIS NF1/schwannomatose) ; pas de recommandation européenne sur l'hémangioblastome/VHL (au demeurant D33.4, hors C72).
@@ -160,3 +201,31 @@ Une femme de 33 ans décrit depuis plusieurs mois des dysesthésies diffuses des
 7. Le résumé Yilmaz 2026 (Radiologie, Homburg) a été lu en résumé seulement ; non utilisé comme référence.
 8. Textes longs lus partiellement (100 000 premiers caractères) : S2, S3, S4, S12.
 9. S8 et S9 citent des données américaines (NCCN, auteurs USA) : non retenues comme fondement d'une conduite.
+10. Spécificités suisses non documentées : aptitude à la conduite (aucune directive spécifique aux tumeurs médullaires lue ; la directive épilepsie de la Ligue suisse ne concerne pas ce tableau), AI, Suva/LAA (aucune origine professionnelle documentée), remboursement LS/LiMA ; requêtes tentées : PubMed revues suisses (Praxis, Rev Med Suisse, Swiss Med Wkly, Ther Umsch) × tumeur intramédullaire.
+11. Textes suisses Praxis (S20, S21, S24) : accès Hogrefe refusé (HTTP 403), résumés seuls.
+12. Grossesse et tumeur médullaire, insuffisance rénale/hépatique : seules les contre-indications du témozolomide sont sourcées [S17].
+13. Fréquences chiffrées des symptômes et sensibilité/spécificité des signes cliniques : non disponibles dans les sources lues.
+
+## Matrice de complétude
+| rubrique | statut | sources |
+|---|---|---|
+| 1. Question clinique et enjeu pour l'examen fédéral | ✔ | S6, S7, S10, S23 (§ 0, § 16) |
+| 2. Définition et périmètre CIM-10-GM (libellés OFS, inclusions, exclusions, notes BfArM) | ✔ | S1 (§ 1, § 17) ; « Hinweis 5 » BfArM non lu |
+| 3. Classifications et stades | ✔ | S2, S3, S4, S6, S7, S11 (§ 2 : OMS 2021, méthylation épendymaire) |
+| 4. Épidémiologie suisse puis européenne | ✔ | S15, S16 (Suisse), S6, S7, S9, S10, S11 (§ 3) ; incidence suisse propre à C72 = lacune |
+| 5. Normal → pathologique (anatomie, physiologie, mécanisme causal) | ✔ | S3, S4, S6, S7, S11, S14 (§ 4) |
+| 6. Étiologies et facteurs de risque | ✔ | S2, S4, S6, S12, S13 (§ 3 contexte génétique) |
+| 7. Anamnèse et symptômes (fréquences) | ✔ | S4, S6, S7, S12, S14, S20 (§ 5) ; fréquences chiffrées = lacune |
+| 8. Examen clinique (signes, sensibilité/spécificité) | ✔ | S7, S12, S14 (§ 5) ; Se/Sp non disponibles |
+| 9. Drapeaux rouges et urgences (seuil, délai, action) | ✔ | S4, S12, S14, S18, S20 (§ 8, § 15.1) ; délai horaire chiffré = lacune |
+| 10. Examens complémentaires | ✔ | S3, S4, S6, S7, S12, S14 (§ 6) |
+| 11. Diagnostic différentiel | ✔ | S6, S7, S10, S11, S14 (§ 7) |
+| 12. Prise en charge suisse (niveaux de soins, conduite, médicaments FI datés) | ✔ | S3, S4, S5, S6, S7, S8, S17, S18, S19, S20 (§ 9) ; recommandation suisse dédiée = lacune |
+| 13. Complications et pronostic | ✔ | S3, S6, S7, S8, S9, S11, S16 (§ 9.6, § 10, § 11) |
+| 14. Suivi, prévention, dépistage | ✔ | S3, S4, S6, S7, S12 (§ 10) |
+| 15. Situations particulières | ✔ | S7, S8, S17 (§ 12) ; insuffisance rénale/hépatique = FI seulement |
+| 16. Spécificités suisses | ✔ | S22, S17, S25, S24 (§ 15.2) ; conduite, AI, Suva, LS = lacune |
+| 17. Critères formels du diagnostic | ✔ | S2, S4, S14 (§ 13) |
+| 18. Paramètres clés chiffrés | ✔ | S3, S4, S6, S7, S8, S9, S11, S12, S15 (§ 14) |
+| 19. Sous-codes CIM-10-GM couverts | ✔ | S1 (C72.0, C72.1, C72.2, C72.3, C72.4, C72.5, C72.8, C72.9 ; § 17) |
+| 20. Points d'examen fédéral (objectifs PROFILES/SSP, pièges classiques) | ✔ | S23 (SSP 159, 227 ; § 16) ; pièges : S1, S2, S3, S4, S6, S7, S12, S14, S17 |
