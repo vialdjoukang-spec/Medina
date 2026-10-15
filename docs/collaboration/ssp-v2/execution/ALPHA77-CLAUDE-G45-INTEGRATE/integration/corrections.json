@@ -1338,6 +1338,60 @@
    "source": "Sources relues ou ajoutées le 15.10.2026 (corrections MED, sémiologie)",
    "statut": "applique",
    "phase": "3a"
+  },
+  {
+   "constat": "MAJEUR AGENTS.md : la Sémiologie doit être le sixième sous-onglet de Sciences après cinq disciplines réelles ; G45 n'en comptait que quatre (Anatomie et histologie, Physiologie, Biochimie, Réseaux et génétique).",
+   "action": "Séparation en deux disciplines distinctes et enrichies : « Anatomie » (g45-s01-science) et « Histologie » (g45-s05-science, nouveau). Barre .sci-bar : Sémiologie (1er bouton, aria-selected=true), Anatomie, Histologie, Physiologie, Biochimie, Réseaux et génétique. Choix de l'histologie plutôt que de l'immunologie : la plaque, l'unité neurovasculaire et la pénombre ont un substrat tissulaire direct pour l'AIT ; l'inflammation de la plaque est traitée dans l'histologie (macrophages, métalloprotéinases).",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "g45-tab-semio ; data-s=g45-s05-science",
+   "source": "AGENTS.md § Sémiologie obligatoire ; SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml",
+   "statut": "applique",
+   "phase": "cinquieme_discipline"
+  },
+  {
+   "constat": "Anatomie réduite à six paragraphes généraux.",
+   "action": "Sous-onglet Anatomie vasculaire cérébrale fonctionnelle enrichi : 1.2 territoires et sous-territoires (atlas fondé sur 1 298 infarctus en diffusion, quatre grands territoires, sous-territoires lenticulostriés, thalamoperforants, cérébelleux, basilaire, zones frontières, ~20 % sous-tentoriels ou perforants profonds) ; 1.4 artères piales, artérioles pénétrantes, espace de Virchow-Robin, capillaires ; 1.6 limites de l'atlas. Figure SVG non anatomique hiérarchique (role=img, aria-label, figcaption). Figure réelle du polygone de Willis conservée.",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "g45-s01-partie-2 ; g45-s01-partie-4 ; g45-s01-partie-6",
+   "source": "Liu et coll., Sci Data 2023, PMC9899211 ; Iadecola, Neuron 2017, PMC5657612",
+   "statut": "applique",
+   "phase": "cinquieme_discipline"
+  },
+  {
+   "constat": "Histologie limitée à un paragraphe sur la paroi.",
+   "action": "Nouveau sous-onglet Histologie : 2.1 paroi (intima, limitante élastique interne, média, adventice ; artérioles piales et pénétrantes) ; 2.2 unité neurovasculaire (péricytes ~30 % de la surface, pieds astrocytaires, jonctions serrées, transcytose précoce puis rupture des jonctions) ; 2.3–2.4 plaque d'athérome (formation, stable/vulnérable, chape < 65 µm, métalloprotéinases, hémorragie intraplaque ; tableau t) ; 2.5 pénombre (seuils fonctionnel et d'infarctus ; TEP : < 8, 8–20, 20–50 mL/100 g/min ; consommation d'oxygène ≥ 1,4) ; 2.6 corrélation AIT (définitions bernoises tissulaire et temporelle ; rupture de plaque avec thrombus apposé). Figure réelle de la plaque déplacée depuis l'ancienne section 1.3 ; figure SVG non anatomique des seuils de débit. Quiz g45-s05 ; quatre encadrés obligatoires.",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "g45-s05 ; g45-s05-partie-1 à 6",
+   "source": "Martinez-Lemus 2011 (résumé, PMID 21989114) ; Iadecola 2017 ; Claassen 2021 ; Puig 2020 PMC7662861 ; Gerosa 2023 (résumé, PMID 37140327) ; Chalet 2022 PMC8959629 ; Heiss et Zaro Weber 2017 (résumé, PMID 27879370) ; Réseau AVC bernois 08/2026 PDF p. 10 et 13",
+   "statut": "applique",
+   "phase": "cinquieme_discipline"
+  },
+  {
+   "constat": "Numérotation des disciplines suivantes à décaler.",
+   "action": "Physiologie 2→3, Biochimie 3→4, Réseaux 4→5 (titres h2 et h3 seulement ; identifiants inchangés).",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "g45-s02, g45-s03, g45-s04",
+   "source": "Sans objet (structure)",
+   "statut": "applique",
+   "phase": "cinquieme_discipline"
+  },
+  {
+   "constat": "Pareto à aligner sur les deux disciplines.",
+   "action": "Template pareto-g45-s01 réécrit (Anatomie) ; nouveau template pareto-g45-s05 (Histologie), data-cover=g45-s05 ; aucune section data-semiology couverte.",
+   "fichier": "chapters/G45/G45_pop2.html",
+   "ancre": "pareto-g45-s01 ; pareto-g45-s05",
+   "source": "Sources des sous-onglets correspondants",
+   "statut": "applique",
+   "phase": "cinquieme_discipline"
+  },
+  {
+   "constat": "Source Leeds Histology Guide citée dans l'ancienne section : relecture impossible le 15.10.2026 (HTTP 403, protection anti-robot).",
+   "action": "Source retirée des nouveaux sous-onglets et remplacée par des sources réellement relues (Martinez-Lemus, Iadecola).",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "g45-s05 sources",
+   "source": "histology.leeds.ac.uk — 403 le 15.10.2026",
+   "statut": "applique",
+   "phase": "cinquieme_discipline"
   }
  ],
  "empreintes_sha256_apres": {
@@ -1372,7 +1426,10 @@
   "Fedlex (S11, S12) non relu directement par W (page dynamique) : C10 reprend la lecture MED, réduite aux passages cités dans la preuve MED.",
   "Exemples de déclencheurs de l’amnésie globale (effort, stress, activité sexuelle) repris de la lecture intégrale MED de S4, non recités par W.",
   "FI suisses de Brilique et de l’association aspirine-dipyridamole non lues : aucune dose affirmée pour ces produits.",
-  "Texte intégral de l’ESO 2021 relu par extraction outillée (premiers 100 000 caractères sur 167 641)."
+  "Texte intégral de l’ESO 2021 relu par extraction outillée (premiers 100 000 caractères sur 167 641).",
+  "Cinquième discipline : Martinez-Lemus 2011, Gerosa 2023 et Heiss 2017 lus au niveau du résumé PubMed seulement (texte intégral non accessible).",
+  "Physiologie, Biochimie et Réseaux et génétique n'ont qu'une figure à image réelle, sans SVG non anatomique propre (antérieur à cette mission, hors du périmètre de la tâche) ; faux positif connu de tests/audit_sciences.py pour les images réelles.",
+  "tests/audit_sciences.py ne s'exécute pas pour G45 (absence de G45 à la base c50a28a2 et dans la liste d'exceptions du test partagé) ; contrôle reproduit hors dépôt avec les mêmes fonctions."
  ],
  "mention": "Revue IA, distincte d’une validation médicale humaine.",
  "phase_3a": {
@@ -1398,6 +1455,15 @@
   "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
   "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
   "chapters/G45/G45_pop2.html": "bb5ab7ee533e69973a16f8996faf376233c3b40991ac77508cb3c9b4a25a0405",
+  "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
+ },
+ "empreintes_sha256_cinquieme_discipline": {
+  "chapters/G45/G45_a.html": "42e67732527dd846aa3d5b19156e4108e2d496a79df774dfc034af3d29f4b920",
+  "chapters/G45/G45_b.html": "c6c0149849768fed843e8a2653299138d02e1a4fcbbbaf79fafc21822a844234",
+  "chapters/G45/G45_c.html": "95b1cad460a787a21ac11f48623f7fcffb20535992fbe5148d87f19844eadccd",
+  "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
+  "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
+  "chapters/G45/G45_pop2.html": "b59a9f2acd36bed2e40255b34d4e8e99e5a1401415b099fe34a8153cfc45afa3",
   "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
  }
 }
