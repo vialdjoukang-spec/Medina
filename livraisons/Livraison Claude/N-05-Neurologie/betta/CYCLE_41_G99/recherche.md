@@ -180,6 +180,50 @@ Logique pédagogique : G99 rassemble trois grands tableaux d'examen — (1) la *
 - Midodrine : dernière dose ≥ 4 h avant le coucher [S20] ; métoclopramide ≤ 5 j [S23] ; dompéridone ≤ 1 semaine [S22].
 - HO : eau 2–3 L/j, NaCl 10 g/j, tête du lit > 10° [S4].
 
+## 15. Compléments du 15.10.2026 (relecture de complétude)
+
+### 15.1 Gastroparésie diabétique — source suisse
+- La RMS 2024 décrit la gastroparésie comme une complication microvasculaire **rare et tardive mais significative** du diabète, définie par un **ralentissement de la vidange gastrique**, aux symptômes non spécifiques (nausées, vomissements, douleur abdominale, plénitude postprandiale, satiété précoce), d'où un diagnostic souvent difficile [S27]. Résumé seul lu : ni seuil, ni conduite détaillée n'en sont tirés.
+
+### 15.2 Spécificités suisses — aptitude à la conduite
+- Base légale : tout conducteur doit posséder l'aptitude à la conduite (art. 14 al. 2 LCR) ; les exigences médicales minimales de l'annexe 1 de l'OAC (art. 7 al. 1) s'appliquent toujours ; en cas de doute, recours à un spécialiste de médecine du trafic [S26].
+- Tableau 1 SSC/SSML 2024 (syncopes) [S26] :
+  - syncope **avec facteur déclenchant modifiable** (douleur, anémie, fièvre, déshydratation) : apte dès que le facteur est éliminé (1er et 2e groupe) ;
+  - syncope **d'origine indéterminée sans prodrome** : 1er groupe apte après **3 mois** sans événement ; 2e groupe inapte tant que diagnostic et traitement ne sont pas établis, sinon délai d'au moins **12 mois** ;
+  - syncope vasovagale au volant ou récidivante : 1er groupe délai **1 mois** ; 2e groupe au moins **3 mois**, cas par cas.
+- Aucune ligne n'est propre à l'hypotension orthostatique neurogène ; son rattachement à ces lignes est une interprétation à signaler comme telle [S26].
+- Pas de déclaration obligatoire OFSP (affections non transmissibles) : ∅ ; Suva/LAA : ∅ sauf myélopathie post-traumatique (hors G99) ; AI et remboursement LS des traitements : non documentés (Lacunes).
+
+### 15.3 Points d'examen fédéral (PROFILES)
+- Rattachement du registre : G99 → **SSP 103 (parésie, paralysie)** et **SSP 104 (perte sensitive)** [S28].
+- Situations de départ pertinentes par les symptômes du dossier : SSP 61 (nausées, vomissements → gastroparésie), SSP 100 (vertiges), SSP 149 et 217 (syncope → HO neurogène), SSP 214 (hypotension sévère), SSP 96 et 97 (chutes, marche anormale → MCD), SSP 202 (incontinence urinaire et fécale) [S28] ; rattachement pédagogique, non officiel.
+- Pièges tirés des sources : MCD étiquetée canal carpien (43 % des présentations) et examen normal n'excluant pas la MCD [S8] ; manipulation cervicale contre-indiquée [S8] ; MSCC = IRM de **tout** le rachis [S13] ; fludrocortisone hors indication suisse pour l'HO [S21] ; métoclopramide ≤ 5 jours et dompéridone ≤ 1 semaine [S23][S22] ; midodrine contre-indiquée en cas de rétinopathie diabétique proliférante [S20] ; G99 est un code astérisque qui exige le code † de la maladie causale [S1].
+
+## Matrice de complétude
+
+| rubrique | statut | sources |
+|---|---|---|
+| 1. Question clinique et enjeu pour l'examen fédéral | ✔ (§1, §15.3) | S5, S8, S10, S13, S7, S28 |
+| 2. Définition et périmètre CIM-10-GM (libellés OFS, inclusions, exclusions, notes BfArM) | ✔ (§0 ; catégorie astérisque, aucune exclusion listée) | S1, S2 |
+| 3. Classifications et stades | ✔ (§2 : HO, Toronto, mJOA, stades ATTR) | S4, S5, S11, S7 |
+| 4. Épidémiologie suisse puis européenne | ✔ (§3) — aucune donnée suisse de prévalence (voir Lacunes 1) | S5, S15, S16, S3, S8, S10, S13, S7 |
+| 5. Normal → pathologique (mécanisme causal) | ✔ (§4) | S5, S4, S3, S9, S17, S18, S7 |
+| 6. Étiologies et facteurs de risque | ✔ (§5, §3) | S1, S4, S3, S8 |
+| 7. Anamnèse et symptômes (fréquences) | ✔ (§6) | S5, S3, S7, S8, S9, S13, S27 |
+| 8. Examen clinique | ✔ (§7) | S4, S8, S13 |
+| 9. Drapeaux rouges et urgences | ✔ (§9) | S13, S9, S8, S5 |
+| 10. Examens complémentaires | ✔ (§8) — seuils scintigraphiques incomplets (Lacunes 2) | S5, S4, S3, S8, S9, S7, S6 |
+| 11. Diagnostic différentiel | ✔ (§8.3, §8.4) | S8, S9, S7 |
+| 12. Prise en charge suisse (médicaments FI datés) | ✔ (§10) | S4, S5, S3, S12, S9, S8, S10, S11, S13, S18, S20, S21, S22, S23, S24 |
+| 13. Complications et pronostic | ✔ (§9, §10.3, §10.4) | S5, S3, S8 |
+| 14. Suivi, prévention, dépistage | ✔ (§10.1, §11) — délai de dépistage de la NAC non trouvé (Lacunes 2) | S5, S7, S12, S20, S21 |
+| 15. Situations particulières | ✔ (§12 ; métoclopramide en insuffisance rénale, dompéridone en insuffisance hépatique, grossesse pour midodrine) | S25, S8, S7, S5, S20, S22, S23 |
+| 16. Spécificités suisses (OFSP, Suva/LAA, conduite, AI, LS) | ✔ (§15.2 ; OFSP/Suva sans objet ; AI et LS en lacune) | S26, S21 |
+| 17. Critères formels du diagnostic | ✔ (§13) | S4, S5, S3, S8, S11, S7 |
+| 18. Paramètres clés chiffrés | ✔ (§14) | S5, S3, S8, S13, S20, S22, S23, S4 |
+| 19. Sous-codes CIM-10-GM couverts | ✔ (§0 : G99.0, G99.00, G99.08, G99.1, G99.2, G99.8) | S1, S2 |
+| 20. Points d'examen fédéral (PROFILES/SSP, pièges) | ✔ (§15.3) | S28, S8, S13, S20, S21, S22, S23, S1 |
+
 ## Lacunes
 
 1. **Aucune source suisse spécifique lue** sur la neuropathie autonome diabétique, la gastroparésie diabétique ou la neuropathie urémique (pas de recommandation SSED/SGED ni Swiss Medical Forum trouvée ; quota WebSearch épuisé). L'article RMS 2025 sur l'HO du sujet âgé [S25] n'a été lu qu'au résumé (accès payant).
@@ -191,3 +235,8 @@ Logique pédagogique : G99 rassemble trois grands tableaux d'examen — (1) la *
 7. Myélopathies tumorales intramédullaires, myélopathie par compression de l'artère spinale antérieure (M47.0) : aucune source spécifique lue.
 8. Dates de mise à jour des FI non extractibles par l'outil (champ vide) ; consultation datée du 15.10.2026.
 9. Guideline AO Spine 2017 [S12] : groupe international (AO Foundation, Davos) à forte participation nord-américaine ; utilisé comme référence internationale de chirurgie rachidienne, corroboré par l'équipe suisse du Balgrist [S10] et la RMS [S9].
+10. Recommandation suisse de dépistage de la NAC (SSED/SGED) : requête « SGED SSED recommandations diabète type 2 dépistage neuropathie autonome Suisse » — seules les recommandations thérapeutiques SSED 2023 du DT2 trouvées, sans volet neuropathie autonome ; non utilisées.
+11. RMS 2024 gastroparésie diabétique [S27] : texte intégral payant (revmed.ch) et PDF de l'archive UNIGE non accessible ; résumé seul.
+12. AI et remboursement (LS/LiMA) des traitements de l'HO et de la gastroparésie : non recherchés faute de source lue ; à vérifier sur la Liste des spécialités OFSP.
+13. Aptitude à la conduite propre à l'HO neurogène et à la MCD : aucune ligne dédiée dans [S26].
+

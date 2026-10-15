@@ -154,8 +154,46 @@ ICHD-3 7.2.2 (fistule) : acte ou traumatisme connu pour causer une fuite persist
 - Hématome épidural rachidien postopératoire : 0,52 % (0,10–0,69 %) ; 24–48 h [S10][S11].
 - Mutisme cérébelleux : POSI 30 %, mutisme 14 % ; 50 % d'amélioration vers J16 [S16].
 
+## 18. Compléments — sources suisses et européennes (lecture du 15.10.2026)
+### 18.1 Libellés officiels suisses [S30]
+Les libellés français du tableau §0 sont ceux de la CIM-10-GM 2024 publiée par l'OFS [S30] ; G97.8 « Autres affections du système nerveux après des actes médicaux » est la sous-catégorie mère de G97.80 à G97.88 [S30]. L'inclusion « syndrome de la fosse postérieure » sous G97.81 provient de la version BfArM [S1].
+### 18.2 Blood patch : échec et facteurs prédictifs
+- Cohorte genevoise (HUG) : 47 920 procédures neuraxiales obstétricales (2001–2018) ; 212 blood patchs ; échec (absence de soulagement complet, traitement supplémentaire nécessaire) 25,9 % (55/212) [S24]. Facteurs indépendants : espace épidural > 5,5 cm de profondeur (OR 3,08 ; IC 95 % 1,26–7,49) ; intervalle ponction–patch > 48 h protecteur (OR 0,20 ; 0,05–0,83) [S24]. Dans la littérature citée par les auteurs, la CPPD complique 0,38–6,3 % des actes neuraxiaux obstétricaux et le patch échoue dans 4–29 % des cas [S24].
+- Cohorte européenne prospective EPiMAP (643 parturientes) : échec 28,3 %, succès complet 33,0 %, succès partiel 38,7 % ; second patch chez 19,8 % [S27]. Facteurs associés à l'échec : antécédent de migraine, brèche haute (L1–L3 vs L3–L5), patch < 48 h après la brèche ; trois hémorragies intracrâniennes diagnostiquées chez les patientes imagées [S27].
+- Conséquence pratique convergente : un patch précoce (< 48 h) échoue plus souvent — cohérent avec la consigne d'informer le patient d'une répétition plus probable [S5][S24][S27].
+### 18.3 CPPD chronique et pronostic à long terme
+- Le format ICHD-3 ne prévoit pas la céphalée persistante > 14 jours ou après patch [S26][S29]. Cohorte Fribourg/Berne : 30 patients avec CPPD chronique ; séjour hospitalier médian 31 jours ; arrêt de travail médian 381 jours ; 5 médecins consultés en médiane [S26].
+- IRM : chez 86 patients avec CPPD chronique, score de Berne médian 2,0 (faible) ; liquide épidural lombaire chez 11 % ; une IRM peu évocatrice ne doit ni faire rejeter le diagnostic ni refuser le traitement [S29].
+- Suivi à 5 ans après brèche obstétricale : céphalée chronique 20,4 % (avec patch) et 21,4 % (sans patch) contre 5,3 % (péridurale simple) et 0,9 % (sans péridurale) ; lombalgie chronique 20,8 % et 16,1 % contre 5,3 % et 0,9 % [S28].
+### 18.4 Diagnostic différentiel en post-partum (CHUV)
+Une céphalée post-partum initialement attribuée à une CPPD et soulagée par patch peut précéder une thrombose veineuse cérébrale avec infarctus veineux et un syndrome de vasoconstriction cérébrale réversible ; les trois entités partagent céphalée et chevauchement sémiologique ; tout nouveau déficit ou changement de céphalée impose une réévaluation [S25] (cohérent avec [S5]).
+
+## Matrice de complétude
+| rubrique | statut | sources |
+|---|---|---|
+| 1. Question clinique et enjeu pour l'examen fédéral | ✔ céphalée orthostatique ≤ 5 j après PL/péridurale ; hématome rachidien postopératoire ; mutisme post-fosse postérieure (§1) | S3, S5, S11, S15, S16 |
+| 2. Définition et périmètre CIM-10-GM | ✔ libellés OFS G97.0–G97.9, inclusion G97.81, aucune exclusion au bloc, G96.0 pour fuite spontanée (§0, §2, §18.1) | S1, S2, S3, S4, S13, S30 |
+| 3. Classifications et stades | ✔ ICHD-3 7.2/7.2.1/7.2.2 ; parole postopératoire ; hématome précoce/retardé (§3) | S2, S3, S4, S10, S16 |
+| 4. Épidémiologie suisse puis européenne | ✔ partiel : CPPD < 2–40 %, 11,0 vs 4,2 % selon l'aiguille ; cohorte genevoise 47 920 actes ; hématome 0,52 % ; POSI 30 % (cohorte européenne) (§4, §18.2) ; pas de registre suisse | S5, S7, S10, S11, S16, S24 |
+| 5. Normal → pathologique | ✔ fuite de LCR → basse pression → céphalée orthostatique ; rôle de l'aiguille ; surdrainage ; voie dentato-thalamo-corticale (§5) | S2, S3, S7, S13, S19 |
+| 6. Étiologies et facteurs de risque | ✔ facteurs patient/acte de CPPD ; hématome (âge, coagulopathie, HTA) ; mutisme (âge, 4e ventricule, histologie) (§6) | S3, S5, S9, S11, S12, S16, S17, S18 |
+| 7. Anamnèse et symptômes (fréquences) | ✔ délai, orthostatisme (134/142), signes associés ; séquence douleur → radiculalgie → déficit → sphincters ; début du mutisme J0–J1 (§7) | S2, S3, S5, S11, S16 |
+| 8. Examen clinique | ✔ raideur de nuque, signes focaux, examen neurologique répété (§8) ; sensibilité/spécificité non disponibles | S5, S11, S16, S18 |
+| 9. Drapeaux rouges et urgences | ✔ déficit focal, trouble visuel, convulsion, changement de céphalée → imagerie urgente ; hématome compressif → IRM et évacuation (§11, §18.4) | S5, S11, S25 |
+| 10. Examens complémentaires | ✔ diagnostic clinique, indications d'imagerie, pression < 60 mm LCR, signes IRM, score de Berne peu sensible en CPPD chronique (§9, §18.3) | S2, S3, S5, S11, S13, S29 |
+| 11. Diagnostic différentiel | ✔ HSD, TVC, SVCR, hypotension intracrânienne spontanée (§10, §18.4) | S2, S5, S25 |
+| 12. Prise en charge suisse | ✔ partiel : prévention (aiguille atraumatique), traitement conservateur, blood patch (volume, niveau, délais, échec 25,9 % à Genève), hématome, fistule, surdrainage, mutisme ; FI suisses datées paracétamol/ibuprofène (§12, §13, §18.2) ; aucune recommandation suisse dédiée ; caféine sans FI | S5, S7, S8, S9, S11, S19, S20, S21, S22, S23, S24, S27 |
+| 13. Complications et pronostic | ✔ céphalée et lombalgie chroniques (5 ans), CPPD chronique, HSD/TVC, pronostic de l'hématome et du mutisme (§11, §14, §18.3) | S3, S5, S11, S16, S26, S28 |
+| 14. Suivi, prévention, dépistage | ✔ information écrite, suivi jusqu'à résolution, relais au médecin de famille ; prévention par l'aiguille (§12.1, §14) | S5, S7, S16 |
+| 15. Situations particulières | ✔ obstétrique (caféine, AINS et allaitement), enfant, antithrombotiques, insuffisance rénale/hépatique (paracétamol) (§13, §15) ; sujet âgé = lacune | S5, S9, S21, S22, S24, S27 |
+| 16. Spécificités suisses | ✔ partiel : codage OFS, FI Swissmedic (contentieux ibuprofène–allaitement), données genevoises et bernoises (§13, §18) ; déclaration OFSP, Suva/LAA, AI, aptitude à la conduite, LS non trouvés (lacune) | S21, S22, S24, S26, S30 |
+| 17. Critères formels du diagnostic | ✔ ICHD-3 7.2, 7.2.1, 7.2.2 (§16) | S2, S3, S4 |
+| 18. Paramètres clés chiffrés | ✔ ≤ 5 j, ≤ 2 sem, < 60 mm LCR, 11,0/4,2 %, 15–20 mL, plaquettes ≥ 70 × 10⁹/L, profondeur > 5,5 cm, > 48 h, 0,52 %, POSI 30 % (§17, §18.2) | S2, S3, S5, S7, S10, S16, S24 |
+| 19. Sous-codes CIM-10-GM couverts | ✔ G97.0, G97.1 (partiel), G97.2, G97.80, G97.81, G97.82 développés ; G97.83, G97.84, G97.88, G97.9 : définition seule (§0, lacunes 5–7) | S1, S7, S10, S11, S13, S16, S30 |
+| 20. Points d'examen fédéral | ✔ pièges : CPPD ≠ HTIC spontanée, imagerie si céphalée non orthostatique ou > 5 j, alitement inutile, aiguille atraumatique, patch < 48 h plus souvent répété, TVC post-partum masquée (§9, §12, §18) ; objectifs PROFILES non consultés | S3, S5, S7, S24, S25 |
+
 ## Lacunes explicites
-1. **Aucune source suisse** (SMF, Société suisse de neurologie, SSAR) lue : quota de recherche web épuisé dans la session ; à compléter (ex. recommandations SSAR/Swiss Medical Forum sur la CPPD).
+1. **Aucune recommandation suisse** (SMF, Société suisse de neurologie, SSAR) trouvée : requêtes WebSearch « Revue Médicale Suisse céphalée post-ponction durale blood patch » et « postpunktioneller Kopfschmerz Swiss Medical Forum » sans résultat suisse ; article RMS Chevallier et al. 2008 (PMID 19055147, « La ponction lombaire ») identifié mais texte inaccessible (redirection revmed.ch). Données suisses limitées à des cohortes (Genève [S24], Berne [S26][S29], CHUV [S25]).
 2. ESAIC/ESRA 2022 [S9] : seul le résumé lu ; les intervalles chiffrés par anticoagulant (HBPM, AOD, etc.) ne sont pas disponibles dans ce dossier.
 3. Consensus Delphi d'Islande [S15] : texte exact de la définition du mutisme cérébelleux non lu.
 4. Surdrainage (G97.2) : aucune recommandation européenne ; seulement les résumés [S13][S14][S23] ; signes cliniques détaillés, réglage des valves et traitement non documentés.
@@ -163,4 +201,6 @@ ICHD-3 7.2.2 (fistule) : acte ou traumatisme connu pour causer une fuite persist
 6. G97.83/G97.84 (hémorragies sous-durale et sous-arachnoïdienne rachidiennes postopératoires) : aucune source spécifique lue.
 7. G97.88 et G97.9 : catégories résiduelles sans source clinique spécifique.
 8. Caféine : pas de FI suisse trouvée.
+10. Statut OFSP/Suva/AI/aptitude à la conduite après CPPD ou hématome rachidien : non recherché avec succès ; objectifs PROFILES non consultés.
+11. Sources [S24]–[S29] : résumés PubMed seuls.
 9. Le consensus CPPD [S5] est dirigé par des sociétés majoritairement américaines (cosigné ESRA, OAA) ; gradation USPSTF — à présenter comme consensus international cosigné par des sociétés européennes, non comme recommandation suisse.

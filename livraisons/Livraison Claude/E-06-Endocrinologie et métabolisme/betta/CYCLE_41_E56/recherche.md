@@ -1,7 +1,7 @@
 # Dossier de recherche — E56 Autres avitaminoses (E-06-Endocrinologie et métabolisme)
 
 Cycle Betta 41, leçon 1. Agent de recherche C41-A2-ENDO (Opus 5.5). Date : 15.10.2026.
-Chaque fait renvoie à une source de `sources.json` (Sx), lue pendant cette session : texte intégral, résumé PubMed, page web ou information professionnelle (IP) AmiKo. Rien n'est ajouté de mémoire ; ce qui manque figure en « Lacunes ». La recherche web générale était indisponible (quota épuisé). L'accès s'est fait par PubMed et PMC, le PDF ESPEN 2022, le PDF ESPEN-ESPGHAN-ECFS 2016, les pages BfArM et DGE (WebFetch), le PDF SMOB 2023 et `tools/swissmedic_fi.py`.
+Chaque fait renvoie à une source de `sources.json` (Sx), lue pendant cette session : texte intégral, résumé PubMed, page web ou information professionnelle (IP) AmiKo. Rien n'est ajouté de mémoire ; ce qui manque figure en « Lacunes ». Lors du premier passage, la recherche web générale était indisponible (quota épuisé) ; l'accès s'est fait par PubMed et PMC, le PDF ESPEN 2022, le PDF ESPEN-ESPGHAN-ECFS 2016, les pages BfArM et DGE (WebFetch), le PDF SMOB 2023 et `tools/swissmedic_fi.py`. Un complément du même jour (WebSearch/WebFetch rétablis) a relu le ClaML OFS [S28], la liste PROFILES [S29], le statut SL et la catégorie de remise [S30], et revérifié la page DGE vitamine E [S8].
 
 **Convention d'unités (à reprendre dans le cours).** L'extraction du PDF ESPEN remplace le symbole « µ » par « m ». Le contexte fixe la bonne lecture :
 - vitamine E : le PDF écrit « 1 mg/dL = 23.22 mmol/L » et « normal 20–30 mmol/L ». Il s'agit de **µmol/L** (2 325 « mmol » correspondent à 1 000 mg ; 1 000 mg / 430 g/mol ≈ 2,3 mmol = 2 325 µmol) [S2, §24.2.1, §24.4] ;
@@ -13,7 +13,9 @@ Chaque fait renvoie à une source de `sources.json` (Sx), lue pendant cette sess
 - Exclusion de la catégorie E56 : séquelles d'autres avitaminoses (E64.8) [S10].
 - Exclusions de **E56.1** : déficit en facteurs de coagulation dû à une carence en vitamine K (**D68.4**) et carence en vitamine K du nouveau-né (**P53**) [S10]. Le cours doit donc dire clairement ce point : la carence en vitamine K se code E56.1 ; la coagulopathie qui en découle se code D68.4 ; la maladie hémorragique néonatale se code P53. Le contenu néonatal reste utile au raisonnement (physiopathologie, prophylaxie suisse), mais il relève d'un autre code.
 - Exclusion du bloc E50–E64 : anémies nutritionnelles (D50–D53) [S10].
-- E56.8 et E56.9 ne portent ni inclusion ni exclusion sur la page BfArM [S10]. Aucune source lue ne précise quelles vitamines E56.8 regroupe (voir Lacunes).
+- Le texte officiel français de l'OFS (ClaML 2024, en vigueur en Suisse depuis le 01.01.2025) confirme mot pour mot ces libellés et ces exclusions : E56 « Autres avitaminoses », exclusion « séquelles d'autres avitaminoses E64.8 » ; E56.1 exclut « carence en facteur de coagulation due à l'avitaminose K D68.4 » et « carence en vitamine K chez le nouveau-né P53 » ; le bloc E50–E64 « Autres carences nutritionnelles » exclut les « anémies nutritionnelles D50–D53 » [S28].
+- D68.4 « Carence acquise en facteur de coagulation » inclut la carence en facteur de coagulation due à une avitaminose K ou à une affection du foie, avec un code supplémentaire U69.11! (trouble « durablement acquis ») ou U69.12! (« provisoire ») [S28]. P53 « Maladie hémorragique du fœtus et du nouveau-né » inclut la carence du nouveau-né en vitamine K [S28].
+- E56.8 et E56.9 ne portent ni inclusion ni exclusion, ni dans le ClaML OFS [S28] ni sur la page BfArM [S10]. Le périmètre de E56.8 se déduit donc par exclusion des catégories voisines, qui ont leur propre code [S28] : vitamine A (E50), thiamine/B1 (E51), acide nicotinique/pellagre (E52), riboflavine, pyridoxine et autres vitamines B précisées — biotine, cobalamine/B12, folate, acide pantothénique (E53), vitamine C/scorbut (E54), vitamine D (E55). Aucune vitamine n'est nommée sous E56.8 : le cours ne doit pas en inventer la liste.
 
 ## 1. Question clinique
 - La carence en vitamine E est rare. Elle apparaît dans la malnutrition sévère, la malabsorption des graisses (maladies inflammatoires, mucoviscidose) et dans des maladies génétiques : abêtalipoprotéinémie, déficit en protéine de transfert de l'α-tocophérol (α-TTP) [S2, §24.3].
@@ -156,6 +158,25 @@ Chaque fait renvoie à une source de `sources.json` (Sx), lue pendant cette sess
 - **Soins intensifs** : carence fréquente, PIVKA-II élevée. La supplémentation améliore le statut sans le normaliser complètement [S17].
 - **Maladie rénale chronique / dialyse** : association entre bas statut en vitamine K et déclin rénal ; aucun effet démontré de la supplémentation sur la fonction rénale [S25]. Chez le dialysé, la ménaquinone-7 (MK-7, 360 µg/j pendant un an) a abaissé la PIVKA-II sans activer la coagulation [S26].
 
+## 12 bis. Spécificités suisses
+- **Codage hospitalier** : la CIM-10-GM 2024 en français est obligatoire en Suisse depuis le 01.01.2025 pour le relevé des séjours stationnaires (SpiGes) [S28].
+- **Statut des médicaments (données AmiKo, republication Swissmedic/OFSP)** [S30] :
+  - Konakion® MM (5 ampoules) et Konakion® MM paediatric : catégorie de remise **B** (ordonnance), **sur la Liste des spécialités (SL)**, quote-part 10 % ; prix public 14.95 CHF (MM) et 26.85 CHF (paediatric).
+  - Ephynal® 300 mg (100 capsules) et Burgerstein Vitamine E® 100 UI / 400 UI : catégorie de remise **D** (conseil spécialisé, pharmacie ou droguerie) ; aucune mention SL dans la fiche, donc non remboursés par l'assurance de base selon cette source (à confirmer sur la SL officielle).
+- **Prophylaxie néonatale** : schéma suisse oral 3 × 2 mg (voir §10) [S11, S12].
+- **Chirurgie bariatrique** : suivi selon les directives suisses SMOB 2023 (multivitamines, INR et statut vitaminique annuels) [S23].
+- Déclaration OFSP, Suva/LAA, aptitude à la conduite, AI : aucune source lue ne traite de E56 sous ces angles ; aucun élément propre à E56 n'a été trouvé (voir Lacunes).
+
+## 12 ter. Points d'examen fédéral
+- **Objectifs PROFILES** rattachés à E56 : SSP 16 « weight loss, malnutrition, loss of appetite » ; SSP 138 « cachexia and malnutrition » ; SSP 170 « nutritional deficiencies » [S29].
+- Pièges documentés par les sources du dossier :
+  1. Carence en vitamine K = E56.1, mais la coagulopathie qui en résulte = D68.4 et la forme néonatale = P53 [S28].
+  2. Un TP allongé ne suffit pas : il ne s'allonge qu'en carence sévère ; la correction du TP après vitamine K confirme le diagnostic [S2, §25.3 ; S3, §3.5.4].
+  3. Une α-tocophérolémie « normale » chez un malnutri peut masquer une carence, car les lipoprotéines de transport manquent aussi ; il faut raisonner en rapport aux lipides [S2, §24.2].
+  4. AVED : tableau proche de l'ataxie de Friedreich, mais traitable ; doser la vitamine E devant toute ataxie récessive [S6, S13].
+  5. Vitamine E à forte dose + AVK = risque hémorragique [S2, §24.4 ; S19].
+  6. Voie orale de vitamine K inadaptée en cas de cholestase ou de malabsorption [S18].
+
 ## 13. Critères formels (pour l'îlot `div.alert`)
 Aucun critère diagnostique formel publié n'a été trouvé pour E56. Le cours doit présenter des **critères opérationnels sourcés**, pas une définition officielle :
 - **Carence en vitamine E** : α-tocophérol plasmatique < 12 µmol/L chez l'adulte (ESPEN), avec correction lipidique (α-tocophérol/lipides totaux < 0,8 mg/g en cas de malabsorption) [S2]. Dans la mucoviscidose, α-tocophérol/cholestérol < 5,4 mg/g [S3]. Dans l'AVED, effondrement < 1–2 µmol/L et mutation *TTPA* [S5, S6].
@@ -170,12 +191,39 @@ Aucun critère diagnostique formel publié n'a été trouvé pour E56. Le cours 
 - Prophylaxie suisse : 3 × 2 mg PO (H4, J4, S4) [S11].
 
 ## Lacunes explicites
-1. **E56.8** : aucune source lue ne précise quelles vitamines relèvent de ce code ; les notes d'inclusion n'existent pas sur la page BfArM. Le cours ne doit pas en inventer la liste.
-2. **IP Konakion MM adulte (10 mg/ml)** : texte non accessible par AmiKo, qui renvoie au texte pédiatrique. La posologie adulte de la carence, la vitesse de perfusion IV et la dilution ne sont pas sourcées.
-3. Aucune recommandation suisse spécifique (SSED, Swiss Medical Forum, SSN) sur la carence en vitamine E ou en vitamine K de l'adulte n'a été trouvée (recherche web indisponible).
+1. **E56.8** : ni le ClaML OFS [S28] ni la page BfArM [S10] ne nomment de vitamine sous ce code ; seul le raisonnement par exclusion des catégories E50–E55 est sourcé. Le cours ne doit pas en inventer la liste.
+2. **IP Konakion MM adulte (10 mg/ml)** : texte non accessible par AmiKo (même autorisation 48112, renvoi au texte pédiatrique) ; ch.oddb.org bloqué par un anti-robot ; requête WebSearch « Konakion MM 10 mg/ml Fachinformation Erwachsene Dosierung » sans texte suisse. La posologie adulte de la carence, la vitesse de perfusion IV et la dilution ne sont pas sourcées.
+3. Aucune recommandation suisse spécifique (SSED, Swiss Medical Forum, SSN) sur la carence en vitamine E ou en vitamine K de l'adulte n'a été trouvée (WebSearch « Swiss Medical Forum Vitamin-K-Mangel Erwachsene … » : aucun résultat SMF).
 4. Texte intégral de la mise à jour ESPEN-ESPGHAN-ECFS 2024 sur la mucoviscidose non lu ; les doses viennent de la version 2016.
 5. GeneReviews AVED inaccessible (vérification de navigateur). Les doses en mg/kg et les seuils pédiatriques de l'AVED ne sont pas sourcés au-delà de S5 et S6.
-6. Les valeurs DGE ont été lues par extraction automatisée de la page (WebFetch). La valeur de 8 mg/j pour la vitamine E (dérivation 2024) est à revérifier sur l'original avant citation chiffrée.
+6. Valeur DGE vitamine E (8 mg/j RRR-α-tocophérol, adultes 19–65 ans, dérivation 2024) revérifiée par un second WebFetch le 15.10.2026 [S8] ; extraction automatisée, sans PDF original.
 7. Lecture des unités du PDF ESPEN (« m » mis pour « µ ») déduite du contexte ; voir la convention en tête.
 8. Prévalence de la carence en vitamine E et de l'AVED en Suisse : non trouvée.
 9. Aucun critère diagnostique officiel ; les critères du §13 sont opérationnels.
+10. **Statut SL** : lu dans AmiKo [S30] ; le site officiel sl.bag.admin.ch n'a pas pu être lu (application JavaScript). WebSearch « Spezialitätenliste BAG Konakion MM Ephynal » sans résultat OFSP.
+11. **Déclaration OFSP, Suva/LAA, aptitude à la conduite, AI** pour E56 : aucune source trouvée ; aucune requête dédiée n'a donné de texte applicable.
+12. **Classification en stades** : aucune classification officielle de gravité de la carence en vitamine E ou K n'a été trouvée ; seuls des seuils biologiques et des formes étiologiques sont sourcés.
+
+## Matrice de complétude
+| rubrique | statut | sources |
+|---|---|---|
+| 1. Question clinique et enjeu pour l'examen fédéral | ✔ §1, §12 ter | S2, S5, S6, S13, S29 |
+| 2. Définition et périmètre CIM-10-GM (libellés OFS, inclusions, exclusions, notes BfArM) | ✔ §0, §2 | S1, S10, S28, S2, S5 |
+| 3. Classifications et stades | ✔ partiel §0, §5 (formes étiologiques : carentielle, malabsorptive, génétique AVED/abêtalipoprotéinémie) ; LACUNE stades (lacune 12) | S2, S5, S28 |
+| 4. Épidémiologie suisse puis européenne | ✔ §3 (Suisse : P53 seulement ; carence E/K adulte suisse = lacune 8) | S2, S3, S8, S11, S12, S14, S16, S17 |
+| 5. Normal → pathologique | ✔ §4 | S2, S5, S7, S9, S15, S18, S19, S20 |
+| 6. Étiologies et facteurs de risque | ✔ §5 | S2, S3, S5, S6, S7, S11, S12, S19, S21, S22 |
+| 7. Anamnèse et symptômes (fréquences) | ✔ §6 (fréquences non chiffrées dans les sources) | S2, S3, S5, S6, S14 |
+| 8. Examen clinique | ✔ §6 (sensibilité/spécificité non disponibles) | S5, S6, S14, S21, S22 |
+| 9. Drapeaux rouges et urgences | ✔ §9 | S2, S18, S24 |
+| 10. Examens complémentaires | ✔ §7 | S2, S3, S5, S6, S13, S15, S16, S23 |
+| 11. Diagnostic différentiel | ✔ §8 | S2, S5, S6, S13, S16 |
+| 12. Prise en charge suisse (FI datées) | ✔ §10 ; posologie adulte Konakion 10 mg = LACUNE 2 | S2, S3, S5, S18, S19, S20, S11, S27 |
+| 13. Complications et pronostic | ✔ §1, §6, §9 | S2, S5, S14, S22 |
+| 14. Suivi, prévention, dépistage | ✔ §10, §11 | S2, S3, S5, S11, S23 |
+| 15. Situations particulières | ✔ §12 | S2, S5, S17, S18, S19, S20, S25, S26 |
+| 16. Spécificités suisses | ✔ §12 bis (SL, codage, prophylaxie, SMOB) ; déclaration/Suva/conduite/AI = LACUNE 11 | S11, S23, S28, S30 |
+| 17. Critères formels du diagnostic | ✔ §13 (critères opérationnels, aucun critère officiel : lacune 9) | S2, S3, S5, S6 |
+| 18. Paramètres clés chiffrés | ✔ §14 | S2, S8, S9, S11, S18 |
+| 19. Sous-codes CIM-10-GM couverts (E56.0, E56.1, E56.8, E56.9) | ✔ §0 | S1, S10, S28 |
+| 20. Points d'examen fédéral | ✔ §12 ter | S29, S2, S3, S6, S13, S18, S28 |
