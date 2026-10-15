@@ -34,33 +34,143 @@ def digest(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
-def visible_text(raw):
+def visible_text(raw, course_code=None):
+    """Read text, optionally including course content reachable through its tabs.
+
+    Without course context, templates and hidden nodes remain excluded. A known
+    course template is cloned by engine/medina_course.js. Only its real .tabs /
+    .sci-bar buttons may make their unique local .panel / .sci targets reachable.
+    This models available navigation, never initial DOM visibility or a browser
+    validation; explicit CSS/ARIA hiding and unrelated templates stay excluded.
+    """
+    class Node:
+        def __init__(self, tag, attrs=(), parent=None):
+            self.tag, self.attrs, self.parent = tag, dict(attrs), parent
+            self.children = []
+
+        def classes(self):
+            return set(self.attrs.get('class', '').split())
+
+        def ancestors(self):
+            node = self.parent
+            while node is not None:
+                yield node
+                node = node.parent
+
     class Text(HTMLParser):
+        VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+                'link', 'meta', 'param', 'source', 'track', 'wbr'}
+
         def __init__(self):
             super().__init__(convert_charrefs=True)
-            self.hidden, self.stack, self.parts = False, [], []
+            self.document = Node('#document')
+            self.stack, self.nodes = [self.document], []
 
         def handle_starttag(self, tag, attrs):
-            attrs = dict(attrs)
-            style = re.sub(r'\s+', '', attrs.get('style', '')).lower()
-            hidden = self.hidden or tag in {'script', 'style', 'template'} or 'hidden' in attrs or attrs.get('aria-hidden') == 'true' or 'display:none' in style or 'visibility:hidden' in style
-            if tag not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}:
-                self.stack.append((tag, self.hidden))
-                self.hidden = hidden
+            node = Node(tag, attrs, self.stack[-1])
+            self.stack[-1].children.append(node)
+            self.nodes.append(node)
+            if tag not in self.VOID:
+                self.stack.append(node)
+
+        def handle_startendtag(self, tag, attrs):
+            self.handle_starttag(tag, attrs)
+            if tag not in self.VOID:
+                self.stack.pop()
 
         def handle_endtag(self, tag):
-            for index in range(len(self.stack) - 1, -1, -1):
-                if self.stack[index][0] == tag:
-                    self.hidden = self.stack[index][1]
+            for index in range(len(self.stack) - 1, 0, -1):
+                if self.stack[index].tag == tag:
                     del self.stack[index:]
                     break
 
         def handle_data(self, data):
-            if not self.hidden:
-                self.parts.append(data)
+            self.stack[-1].children.append(data)
+
+        @staticmethod
+        def explicitly_hidden(node):
+            style = re.sub(r'\s+', '', node.attrs.get('style', '')).lower()
+            return (node.attrs.get('aria-hidden', '').lower() == 'true' or
+                    'display:none' in style or 'visibility:hidden' in style)
+
+        def read(self):
+            roots = [node for node in self.nodes if course_code is not None and
+                     node.tag == 'template' and node.attrs.get('id') == 'ch-' + course_code]
+            # Plain historical fixtures remain supported. Once course templates exist,
+            # evidence must come from exactly one known, non-nested course root.
+            if course_code is not None and any(n.tag == 'template' and
+                                               n.attrs.get('id', '').startswith('ch-') for n in self.nodes):
+                if len(roots) != 1 or any(n.tag == 'template' for n in roots[0].ancestors()):
+                    return ''
+            course = roots[0] if len(roots) == 1 else None
+            local = [node for node in self.nodes if course is not None and
+                     course in node.ancestors()]
+            ids = {}
+            for node in local:
+                ids.setdefault(node.attrs.get('id'), []).append(node)
+            active = {course} if course is not None else set()
+
+            def walk(node, reached, parts):
+                if (self.explicitly_hidden(node) or node.tag in {'script', 'style'} or
+                        (node.tag == 'template' and node is not course) or
+                        ('hidden' in node.attrs and node not in active)):
+                    return
+                reached.add(node)
+                for child in node.children:
+                    if isinstance(child, str):
+                        if course is None or node is course or course in node.ancestors():
+                            parts.append(child)
+                    else:
+                        walk(child, reached, parts)
+
+            while True:
+                reached, parts = set(), []
+                walk(self.document, reached, parts)
+                additions = set()
+                for button in reached:
+                    ancestors = list(button.ancestors())
+                    if (course is None or course not in ancestors or button.tag != 'button' or
+                            'disabled' in button.attrs or button.attrs.get('aria-disabled') == 'true' or
+                            any('inert' in n.attrs or (n.tag == 'fieldset' and 'disabled' in n.attrs)
+                                for n in [button] + ancestors)):
+                        continue
+                    for key, target_class, bar_class in (('data-p', 'panel', 'tabs'),
+                                                         ('data-s', 'sci', 'sci-bar')):
+                        target_id = button.attrs.get(key, '')
+                        matches = ids.get(target_id, [])
+                        if (not target_id or len(matches) != 1 or
+                                ('aria-controls' in button.attrs and
+                                 button.attrs['aria-controls'] != target_id) or
+                                not any(bar_class in n.classes() for n in ancestors)):
+                            continue
+                        target = matches[0]
+                        if target_class not in target.classes():
+                            continue
+                        if key == 'data-p':
+                            if target_id not in {'pA', 'pE', 'pS', 'pP'}:
+                                continue
+                        else:
+                            # Scientific tabs operate inside this course's science panel.
+                            panels = [n for n in ancestors if 'panel' in n.classes()]
+                            if (not panels or panels[0].attrs.get('id') != 'pS' or
+                                    panels[0] not in target.ancestors()):
+                                continue
+                        additions.add(target)
+                if additions <= active:
+                    return ''.join(parts)
+                active.update(additions)
+
+    if course_code is not None:
+        require(isinstance(course_code, str) and re.fullmatch(r'[A-Z][0-9]{2}', course_code),
+                'code de cours requis pour analyser la navigation')
     parser = Text()
     parser.feed(raw.decode('utf-8'))
-    return ''.join(parser.parts)
+    return parser.read()
+
+
+def reachable_course_text(raw, code):
+    """Course text reachable after opening its real runtime navigation controls."""
+    return visible_text(raw, course_code=code)
 
 
 def load(tree, path):
@@ -307,18 +417,18 @@ def verify(tree, trusted_before=None):
                         'revue visuelle médicale incomplète')
                 require(owned(figure['visual_review_report'], mission['paths']) and
                         figure.get('visual_review_sha256') == digest(review), 'contrôle visuel absent')
-                html_content = b''.join(source.read(files[p]['source_path']) for p in core_paths(code) if p.endswith('.html'))
+                html_content = b''.join(source.read(files[p]['source_path']) for p in sorted(core_paths(code)) if p.endswith('.html'))
                 captions = re.findall(rb'<figcaption\b[^>]*>(.*?)</figcaption>', html_content, re.I | re.S)
                 require(any(figure['attribution'] in visible_text(caption) for caption in captions) and
-                        figure['attribution'] in visible_text(html_content),
+                        figure['attribution'] in reachable_course_text(html_content, code),
                         'attribution invisible dans le cours')
         if phase != 'completed':
             reserves = receipt.get('visible_reservations')
             require(isinstance(reserves, list) and reserves and all(isinstance(r, str) and r.strip() for r in reserves),
                     'réserves provisoires requises')
             # Reserve text must already exist and remain visible in the course.
-            html_content = b''.join(source.read(files[p]['source_path']) for p in core_paths(code) if p.endswith('.html'))
-            require(all(r in visible_text(html_content) for r in reserves), 'réserves absentes du cours')
+            html_content = b''.join(source.read(files[p]['source_path']) for p in sorted(core_paths(code)) if p.endswith('.html'))
+            require(all(r in reachable_course_text(html_content, code) for r in reserves), 'réserves absentes du cours')
         audit_kinds = () if phase == 'figures_only' else (('MED', 'LANG', 'SEMIO') if phase == 'completed' else ('MED', 'LANG'))
         for kind in audit_kinds:
             proof = receipt.get('audits', {}).get(kind, {})
@@ -341,7 +451,7 @@ def verify(tree, trusted_before=None):
                 require((phase != 'completed' or finding.get('status') in {'resolved', 'non_blocking'}) and
                         bool(finding.get('evidence')), 'constat non résolu sans preuve')
             if phase == 'provisional':
-                require(all(isinstance(item, str) and item in visible_text(html_content)
+                require(all(isinstance(item, str) and item in reachable_course_text(html_content, code)
                             for item in report['unresolved_blockers']), 'blocage provisoire absent du cours')
         chains[code] = dict(sequence=int(sequence), sha256=digest(tree.read(path)), path=path, raw=tree.read(path))
         metadata[code] = dict(receipt=path, receipt_sha256=digest(tree.read(path)), actor=actor,
