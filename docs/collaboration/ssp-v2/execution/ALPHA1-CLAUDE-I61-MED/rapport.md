@@ -42,7 +42,7 @@ Les doses de réversion du protocole bernois, les critères d’éligibilité de
 
 Commencez par MED-01 : ce choix se pose dès qu’un critère de l’andexanet manque, par exemple au-delà de 6 h. Un étudiant qui retient « jamais de PCC » se trompe dans un centre qui suit l’ESO.
 
-### MINEUR (9)
+### MINEUR (10)
 
 | Id | Fichier | Constat |
 |---|---|---|
@@ -55,6 +55,7 @@ Commencez par MED-01 : ce choix se pose dès qu’un critère de l’andexanet m
 | MED-11 | glossaire | CADMUS est déclaré « non développé », alors que la source en donne les initiales [S15]. |
 | MED-17 | `_c` quiz | « Le seuil de 30 ml concerne la pression artérielle » est inexact : c’est le seuil du score ICH. |
 | MED-19 | `_pop1` i61-boston | Les valeurs 74,5 % / 95,0 % concernent le sous-ensemble autopsique, pas les 341 participants. |
+| MED-20 | `_c` figure SVG § 1.3 | La figure s’intitule « arbre DIAGRAM », alors que c’est l’arbre de Wilson 2017. Ses valeurs et ses branches sont exactes [S1, S8]. |
 
 ### ENRICHISSEMENT (5), propositions rédigées et sourcées
 
@@ -91,7 +92,26 @@ Commencez par MED-01 : ce choix se pose dès qu’un critère de l’andexanet m
 | 19 | Sous-codes | couvert | i61-sous-codes |
 | 20 | Points d’examen fédéral | partiel | quiz ; PROFILES non officiel |
 
-## 5. Lacunes de l’audit (déclarées, non comblées)
+## 5. Figures (règle Vial du 15 octobre 2026)
+
+Cet inventaire porte sur les dix figures des sept fichiers. Il ne contient **aucune figure anatomique générée par IA**. Aucun remplacement n’est donc requis et aucune recherche de candidats n’a été lancée : le moteur commun Image_Clo_finder n’a pas été sollicité. Les licences des sept images ont été contrôlées par une requête groupée à l’API officielle de Commons [S19].
+
+| Fichier | Ancre | Classe | Contenu | Vérification |
+|---|---|---|---|---|
+| `_a` | SVG « chaîne physiopathologique » | SCHEMA_NON_ANATOMIQUE | Cinq boîtes fléchées, de la paroi malade à la lésion secondaire | Le délai de « 3 premières heures » est conforme [S3]. Recevable. |
+| `_a` | `#i61-fig-profond` | IMAGE_SOURCEE | TDM, hématome des noyaux gris | CC BY 4.0, Mirza et Gokhale 2016, conforme |
+| `_a` | `#i61-fig-fosse` | IMAGE_SOURCEE | TDM, fosse postérieure et hydrocéphalie | CC BY 2.0, Yadav et coll. 2007, conforme |
+| `_b` | SVG « algorithme A B C D » | SCHEMA_NON_ANATOMIQUE | Algorithme bernois | Délai de 15 min, seuil 160/90 et cible 140/90 conformes [S1]. Recevable. |
+| `_c` | `#i61-fig-ivh` | IMAGE_SOURCEE | TDM, inondation ventriculaire | Domaine public, Glitzy queen00, conforme |
+| `_c` | SVG « arbre DIAGRAM » | SCHEMA_NON_ANATOMIQUE | Arbre probabiliste de cause macrovasculaire | Valeurs exactes ; nom à corriger (MED-09, MED-20) |
+| `_c` | `#i61-fig-angio` | IMAGE_SOURCEE | Angio-TDM, malformation | CC BY 4.0, Mirza et Gokhale 2016, conforme |
+| `_c` | `#i61-fig-siderose` | IMAGE_SOURCEE | TDM et IRM T2*, sidérose | CC BY 4.0, Zhao et coll. 2015, conforme |
+| `_c` | `#i61-fig-perforantes` | IMAGE_SOURCEE | Photographie de dissection réelle, artères centrales | CC BY 2.5, J. A. Beal (LSUHSC), conforme ; image anatomique réelle, donc non visée par la règle |
+| `_c` | `#i61-fig-aac` | IMAGE_SOURCEE | Histologie réelle, rouge Congo | CC BY-SA 3.0, Nephron, conforme |
+
+**Bilan** : ANATOMIQUE_IA 0 · SCHEMA_NON_ANATOMIQUE 3 (tous recevables, un nom à corriger) · IMAGE_SOURCEE 7 (sources, licences et attributions conformes).
+
+## 6. Lacunes de l’audit (déclarées, non comblées)
 
 - **L-01** : la mortalité par point du score ICH. Seul le résumé de Hemphill 2001 est accessible.
 - **L-02** : plusieurs consensus ESO 2025 n’ont pas été vérifiés. Ce sont le PCC à 10 UI/kg pour un INR de 1,3 à 1,9, la fermeture de l’auricule (PICO 6.3), les statines et la reprise des antiplaquettaires. La page PMC était tronquée et protégée par un captcha ; aucun constat n’est émis sur ces points.
@@ -99,16 +119,17 @@ Commencez par MED-01 : ce choix se pose dès qu’un critère de l’andexanet m
 - **L-04 et L-05** : les facteurs de risque modifiables et le cadre suisse de la conduite et des assurances n’ont pas été recherchés.
 - **L-06** : seules les FI d’Ondexxya et de Praxbind ont été relues. Les doses des autres produits n’ont pas été contre-vérifiées par cet audit.
 
-## 6. Tableau de bord
+## 7. Tableau de bord
 
 | Élément | Valeur |
 |---|---|
 | Leçon | I61, hémorragie intracérébrale (S08 Neurologie) |
 | Fichiers audités | 7, empreintes conformes |
-| BLOQUANT / MAJEUR / MINEUR / ENRICHISSEMENT | 0 / 5 / 9 / 5 |
-| Sources lues | 18 : 7 suisses (Berne, deux FI Swissmedic, registre suisse, registres suisse-norvégien, Genève, Kägi), 3 européennes (ESO–EANS 2025, ESO pression artérielle 2026, PRESTIGE-AF), puis revues et études |
+| BLOQUANT / MAJEUR / MINEUR / ENRICHISSEMENT | 0 / 5 / 10 / 5 |
+| Figures | 10 : 0 anatomique IA, 3 schémas recevables, 7 images sourcées conformes |
+| Sources lues | 19 (dont l’API Commons) : 7 suisses (Berne, deux FI Swissmedic, registre suisse, registres suisse-norvégien, Genève, Kägi), 3 européennes (ESO–EANS 2025, ESO pression artérielle 2026, PRESTIGE-AF), puis revues et études |
 | Propositions rédigées | 15 fichiers dans `propositions/` |
-| Ancres vérifiées mécaniquement | 19 sur 19, chacune présente une seule fois |
+| Ancres vérifiées mécaniquement | 20 constats et 10 figures, chacune présente une seule fois |
 | Alerte principale | La divergence entre Berne et l’ESO sur le PCC dans l’hémorragie sous anti-Xa doit être enseignée explicitement (MED-01 à 03) |
 
 *Audit IA. Cette revue est distincte d’une validation médicale humaine. Aucune source canonique n’a été modifiée.*

@@ -68,7 +68,7 @@
  "synthese": {
   "BLOQUANT": 0,
   "MAJEUR": 5,
-  "MINEUR": 9,
+  "MINEUR": 10,
   "ENRICHISSEMENT": 5
  },
  "constats": [
@@ -470,6 +470,27 @@
    ],
    "proposition": "Remplacer par : « chez les participants dont le diagnostic de référence était autopsique, issus des trois échantillons (341 participants au total avec IRM et neuropathologie) ».",
    "justification": "Précision méthodologique sans conséquence décisionnelle."
+  },
+  {
+   "id": "MED-20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "aria-label=\"Schéma didactique de l’arbre DIAGRAM\"",
+   "constat": "Figure SVG de l’îlot 1.3 (Examens) : le titre accessible, le titre visible et le texte d’introduction nomment « arbre DIAGRAM » un arbre qui est celui de Wilson et coll. (2017), comme l’indique d’ailleurs sa légende. Les cinq valeurs (> 50 %, 1,8 %, 6,1 %, 7,3 %, 22,1 %) et l’ordre des branches ont été vérifiés : ils sont conformes au protocole bernois.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "doc. p. 46, arbre « Spontaneous ICH »",
+     "citation_courte": "Predictive value for macrovascular source 1.8% 6.1% 7.3% 22.1% >50% … Wilson et al, European Stroke Journal 2017"
+    },
+    {
+     "source_id": "S8",
+     "section": "Résumé",
+     "citation_courte": "Patients with negative CTA, SVD and pre-ICH hypertension have a low likelihood of an underlying macrovascular cause (1.8%)"
+    }
+   ],
+   "proposition": "Remplacer « arbre DIAGRAM » par « arbre de Wilson » dans aria-label, <title> et le titre visible de la figure ; voir aussi MED-09.",
+   "justification": "Exactitude de l’attribution de la figure ; aucune valeur numérique à corriger."
   }
  ],
  "matrice_20": [
@@ -632,5 +653,105 @@
    "statut": "doses non contre-vérifiées par cet audit ; contrôle par échantillonnage limité à Ondexxya et Praxbind"
   }
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "regle_figures": {
+  "reference": "Règle Vial du 15.10.2026 : figures anatomiques générées par IA non recevables",
+  "inventaire": 10,
+  "ANATOMIQUE_IA": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 7,
+  "recherche_candidats": "Sans objet : aucune figure ANATOMIQUE_IA, donc aucune requête de candidats (moteur Image_Clo_finder non sollicité)."
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Schéma didactique de la chaîne physiopathologique\"",
+   "fichier": "chapters/I61/I61_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "SVG § 4.4 : cinq boîtes de texte reliées par des flèches (paroi malade → rupture → croissance → effet de masse → lésion secondaire). Aucun dessin anatomique.",
+   "constat_id": null,
+   "verification": "« surtout dans les 3 premières heures » conforme à S3 (PICO 7, Additional information) ; enchaînement conforme à S1/S2 et aux sources de l’îlot. Recevable.",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-profond\"",
+   "fichier": "chapters/I61/I61_a.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM axiale : hématome des noyaux gris centraux droits.",
+   "constat_id": null,
+   "verification": "Commons « CT of basal ganglionic hemorrhage.png », CC BY 4.0, Shazia Mirza et Sankalp Gokhale (2016) — auteur, licence et lien conformes (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-fosse\"",
+   "fichier": "chapters/I61/I61_a.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM, 4 coupes : hémorragie de la fosse postérieure, sang intraventriculaire, hydrocéphalie.",
+   "constat_id": null,
+   "verification": "Commons « Posterior fossa hemorrhage.jpg », CC BY 2.0, Yadav et coll., BMC Neurol 2007 — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "aria-label=\"Schéma didactique de l’algorithme A B C D\"",
+   "fichier": "chapters/I61/I61_b.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "SVG § 9.1 : algorithme A-B-C-D en boîtes de texte.",
+   "constat_id": null,
+   "verification": "Délai < 15 min, seuil > 160/90, cible ≤ 140/90 conformes à S1 (doc. p. 44). La mention « hématome cérébelleux » dans la boîte C vient de l’ESO (S2), non du schéma bernois : acceptable. Recevable.",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-ivh\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM axiale : inondation intraventriculaire chez une jeune femme en post-partum.",
+   "constat_id": null,
+   "verification": "Commons « Intracerebral hemorrage (CT scan).jpg », domaine public, Glitzy queen00 (Wikipédia anglophone) — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "aria-label=\"Schéma didactique de l’arbre DIAGRAM\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "SVG § 1.3 : arbre décisionnel probabiliste (angio-scanner, microangiopathie, hypertension).",
+   "constat_id": "MED-20",
+   "verification": "Valeurs et branches conformes à S1 (doc. p. 46) et à S8 (1,8 %) ; nom « DIAGRAM » erroné (MED-09, MED-20).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-angio\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Angio-TDM sagittale : malformation vasculaire avec hémorragie intraventriculaire.",
+   "constat_id": null,
+   "verification": "Commons, CC BY 4.0, Shazia Mirza et Sankalp Gokhale (2016) — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-siderose\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "TDM et IRM T2* : hémorragie traumatique puis sidérose superficielle.",
+   "constat_id": null,
+   "verification": "Commons, CC BY 4.0, Zhao et coll., PLoS One 2015;10:e0116632 — conforme (S19) ; la légende signale correctement l’origine traumatique.",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-perforantes\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Photographie de dissection réelle (vue sagittale médiane) : artères centrales injectées en rouge. Structure anatomique, mais image réelle sourcée : non concernée par la règle.",
+   "constat_id": null,
+   "verification": "Commons « Human brain central arteries anterior midsagittal view description.JPG », CC BY 2.5, John A. Beal, LSU Health Sciences Center Shreveport — conforme (S19).",
+   "candidats": []
+  },
+  {
+   "ancre": "id=\"i61-fig-aac\"",
+   "fichier": "chapters/I61/I61_c.html",
+   "classe": "IMAGE_SOURCEE",
+   "description": "Microphotographie histologique réelle, rouge Congo : angiopathie amyloïde cérébrale.",
+   "constat_id": null,
+   "verification": "Commons « Cerebral amyloid angiopathy - intermed mag.jpg », CC BY-SA 3.0, Nephron (travail personnel) — conforme (S19) ; image non modifiée, partage à l’identique sans objet.",
+   "candidats": []
+  }
+ ]
 }
