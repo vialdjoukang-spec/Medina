@@ -6,8 +6,8 @@
  "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "70ecacf5b8a85c47752172d68c92afbdfabedbb0",
- "status": "open",
+ "reviewed_commit": "05d2e0e754d6f13b0eef5dd8893e1db121201b77",
+ "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
   "chapters/G45/G45_a.html": "ae8459b3bdf78fb06244f1b9592a0bfa6ad2e8cbf0bbfe15d1ab6bc2f61e5493",
@@ -21,18 +21,16 @@
  "reviewed_files_sha256": {
   "chapters/G45/G45_a.html": "42e67732527dd846aa3d5b19156e4108e2d496a79df774dfc034af3d29f4b920",
   "chapters/G45/G45_b.html": "c6c0149849768fed843e8a2653299138d02e1a4fcbbbaf79fafc21822a844234",
-  "chapters/G45/G45_c.html": "95b1cad460a787a21ac11f48623f7fcffb20535992fbe5148d87f19844eadccd",
+  "chapters/G45/G45_c.html": "63004e671162d581623684c015de6dcb3325aa83523f4f8861f638beeeae889b",
   "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
   "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
-  "chapters/G45/G45_pop2.html": "b59a9f2acd36bed2e40255b34d4e8e99e5a1401415b099fe34a8153cfc45afa3",
+  "chapters/G45/G45_pop2.html": "0d31f01a968a773a19422dfc60b40d4a8d306a9a80a630c4cbeee276f422fbb2",
   "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
  },
  "requirements_reviewed": {
   "fundamental_analytical_semiology": true
  },
- "unresolved_blockers": [
-  "P5-FIG-01 : figure SVG des seuils de pénombre (G45_c.html, section 2.5) illisible, étiquettes « consommation < 1,4 » et « extraction d’oxygène ↑ ; consommation ≥ 1,4 » superposées au rendu."
- ],
+ "unresolved_blockers": [],
  "scope": "Revue des corrections et enrichissements intégrés depuis la base (235 phrases nouvelles ou modifiées, extraites par différence de texte), avec contre-lecture des sources primaires pour chaque fait médical nouveau ; les passages inchangés depuis l’audit ALPHA1-CLAUDE-G45-MED n’ont pas été relus en totalité. Complément du 15.10.2026 : Revue de la cinquième discipline (commit 70ecacf5) : Anatomie vasculaire cérébrale fonctionnelle (g45-s01-science) et Histologie (g45-s05-science) relues en totalité, Pareto pareto-g45-s01 et pareto-g45-s05, renumérotation des disciplines suivantes, rendu Chromium.",
  "findings": [
   {
@@ -140,90 +138,107 @@
   {
    "id": "P5-FIG-01",
    "severite": "MAJEUR",
-   "status": "open",
-   "bloquant": true,
+   "status": "resolved",
+   "bloquant": false,
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "<text x=\"78\" y=\"40\">consommation &lt; 1,4</text> et <text x=\"198\" y=\"40\">extraction d’oxygène ↑ ; consommation ≥ 1,4</text> (figure SVG de la section 2.5)",
    "constat": "Figure des seuils de pénombre illisible : les deux étiquettes du haut se chevauchent à l’écran (bureau et 390 px). Le seuil de consommation d’oxygène, seule grandeur métabolique de la figure, ne peut pas être lu. À 390 px, le texte de la figure (font-size 12 dans un viewBox de 640) est rendu à environ 5,5 px.",
    "correction_proposee": "Placer les deux mentions sur deux lignes distinctes, chacune centrée au-dessus de son segment (par exemple y=28 pour le cœur et y=46 pour la pénombre), ou les déplacer sous l’échelle. Formulation : « consommation d’O₂ < 1,4 (tissu infarci) » au-dessus du cœur et « extraction d’O₂ ↑ ; consommation ≥ 1,4 » au-dessus de la pénombre, avec la clé de glossaire existante. Pour le mobile, augmenter la taille du texte (au moins 16 dans le viewBox) ou disposer l’échelle verticalement. Contrôler ensuite le rendu à 390 px.",
    "evidence": [
-    "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/ : captures/p5_s05_svg_bureau.png et captures/p5_s05_svg_390.png."
-   ]
+    "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/ : captures/p5_s05_svg_bureau.png et captures/p5_s05_svg_390.png.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026.",
+    "Rendu Chromium de 05d2e0e7 (build_front.py --fragment S08 hors dépôt, assets relié ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 : aucune erreur JavaScript ni ressource manquante, aucun défilement horizontal ; captures revue/captures/p5b_*.png"
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : figure refaite (viewBox 480 × 400, texte à 16). Échelle seule en haut, légende sur trois lignes distinctes en dessous ; « consommation d’oxygène < 1,4 » et « consommation ≥ 1,4 » lisibles, sans chevauchement ni débordement, au bureau (figure de 717 px) et à 390 px (296 px, texte d’environ 10 px) ; captures p5b_s05_svg_bureau.png et p5b_s05_svg_390.png. La figure de l’Anatomie, refaite en lignes, est également lisible (p5b_s01_svg_390.png)."
   },
   {
    "id": "P5-FIG-02",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "hypoperfusion sans perte fonctionnelle durable ; échelle linéaire (figure SVG de la section 2.5)",
    "constat": "(a) Chalet 2022 définit l’oligémie comme une zone « mildly hypoperfused » avec « preserved neuronal function » ; « sans perte fonctionnelle durable » suggère à tort une perte transitoire. (b) La mention « échelle linéaire » est inexacte : 12 px par unité de 0 à 20, 11,3 px par unité de 20 à 50. (c) « consommation < 1,4 » est placée au-dessus du cœur défini par le débit < 8 ; la source attribue ce seuil aux régions infarcies, pas à la définition par le débit.",
    "correction_proposee": "(a) « oligémie : hypoperfusion légère, fonction neuronale préservée ». (b) Rendre l’échelle réellement linéaire (rectangle 20–50 de 360 px) ou écrire « échelle approximative ». (c) Écrire « régions infarcies : consommation < 1,4 ».",
    "evidence": [
     "Chalet et coll., Front Cardiovasc Med 2022 (PMC8959629), texte intégral Europe PMC lu le 15.10.2026, section 2 : « the oligemia, a mildly hypoperfused area with preserved neuronal function » ; « Infarcted regions had a significant drop of CMRO2 below the threshold of 1.4 mL/100g/min ».",
-    "Lecture des coordonnées du SVG dans G45_c.html."
-   ]
+    "Lecture des coordonnées du SVG dans G45_c.html.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : « hypoperfusion légère, fonction neuronale préservée » (Chalet) ; échelle réellement linéaire, 8 px par unité de 0 à 50 (bornes à x = 40, 104, 200, 440), mention « à l’échelle de 0 à 50 » ; « régions infarcies : consommation d’oxygène < 1,4 » ; unité de la consommation dans la légende."
   },
   {
    "id": "P5-MED-01",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "des lésions récentes dans plusieurs territoires renforcent une hypothèse embolique",
    "constat": "Le protocole bernois fixe un seuil et une liste plus larges : plus de deux territoires vasculaires atteints orientent vers une cause cardio-embolique, aorto-embolique, une coagulopathie, une embolie paradoxale ou une vasculite ; plusieurs ischémies dans un seul territoire orientent vers une embolie artério-artérielle (IRM de plaque). « Plusieurs » et « récentes » ne figurent pas dans la source, et la coagulopathie et la vasculite sont omises.",
    "correction_proposee": "« Le réseau bernois oriente la recherche de cause selon la distribution des lésions. Plus de deux territoires vasculaires atteints font évoquer une cause cardio-embolique ou aorto-embolique, une embolie paradoxale, une coagulopathie ou une vasculite. Plusieurs ischémies dans un seul territoire font évoquer une embolie artério-artérielle et une imagerie de plaque. »",
    "evidence": [
-    "Bern Stroke Guidelines, PDF du 10.08.2026 (SHA-256 3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0), relu par pdftotext le 15.10.2026, page PDF 11 (pages imprimées 20–21) : « > 2 vessel territories affected: cardio-embolic, aorto-embolic, coagulopathy (D-Dimer? Fibrinogen?), paradoxical embolism, vasculitis » ; « 1 vessel territory with multipe ischemia (be aware of circle of Wills variants): arterio-arterial (Plaque-MRI?) »."
-   ]
+    "Bern Stroke Guidelines, PDF du 10.08.2026 (SHA-256 3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0), relu par pdftotext le 15.10.2026, page PDF 11 (pages imprimées 20–21) : « > 2 vessel territories affected: cardio-embolic, aorto-embolic, coagulopathy (D-Dimer? Fibrinogen?), paradoxical embolism, vasculitis » ; « 1 vessel territory with multipe ischemia (be aware of circle of Wills variants): arterio-arterial (Plaque-MRI?) ».",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026.",
+    "Bern PDF p. 11, pdftotext, relu le 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 (encadré Science → traitement et Pareto pareto-g45-s01) : plus de deux territoires → cause cardio-embolique ou aorto-embolique, embolie paradoxale, coagulopathie ou vasculite ; plusieurs ischémies dans un seul territoire → embolie d’artère à artère et imagerie de plaque ; source citée Bern PDF p. 11 ; conforme."
   },
   {
    "id": "P5-MED-02",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "Plus profondément, les artérioles pénétrantes n’ont plus qu’une couche musculaire unique ou discontinue, perdent ces nerfs périvasculaires et sont enveloppées par les pieds astrocytaires.",
    "constat": "Iadecola distingue deux segments. Les artérioles pénétrantes, encore entourées de l’espace de Virchow-Robin, ont une couche musculaire plus mince qui devient unique ; leurs nerfs périvasculaires se raréfient et la limitante élastique s’atténue. Ce sont les artérioles intraparenchymateuses, après la disparition de l’espace périvasculaire, qui ont une couche unique ou discontinue, n’ont plus de nerfs périvasculaires et sont enveloppées par les pieds astrocytaires. La phrase attribue ces caractères aux artérioles pénétrantes.",
    "correction_proposee": "« Les artérioles pénétrantes ont une couche musculaire plus mince, qui devient unique ; leurs nerfs se raréfient et la limitante élastique s’atténue. Plus profondément, les artérioles intraparenchymateuses n’ont qu’une couche musculaire unique ou discontinue, n’ont plus de nerfs périvasculaires et sont enveloppées par les pieds astrocytaires. »",
    "evidence": [
-    "Iadecola, Neuron 2017 (PMC5657612), texte intégral NCBI efetch lu le 15.10.2026 : « Penetrating arterioles are endowed with a thinner smooth muscle cell layer, which eventually becomes a single layer […] perivascular nerves are more sparse and the elastic lamina becomes less prominent » ; « As arterioles penetrate deeper into the brain (intraparenchymal arterioles), the glial membrane and the vascular basement membrane fuse together […] arterioles have a single or discontinuous layer of SMC, lack perivascular nerves and are encased in astrocytic end-feet »."
-   ]
+    "Iadecola, Neuron 2017 (PMC5657612), texte intégral NCBI efetch lu le 15.10.2026 : « Penetrating arterioles are endowed with a thinner smooth muscle cell layer, which eventually becomes a single layer […] perivascular nerves are more sparse and the elastic lamina becomes less prominent » ; « As arterioles penetrate deeper into the brain (intraparenchymal arterioles), the glial membrane and the vascular basement membrane fuse together […] arterioles have a single or discontinuous layer of SMC, lack perivascular nerves and are encased in astrocytic end-feet ».",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : artérioles pénétrantes (couche plus mince devenant unique, nerfs raréfiés, limitante atténuée) distinguées des artérioles intraparenchymateuses (couche unique ou discontinue, sans nerfs, pieds astrocytaires) ; conforme à Iadecola."
   },
   {
    "id": "P5-MED-03",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "Un déficit qui régresse sans lésion en diffusion correspond à un tissu passé sous le seuil fonctionnel, mais resté au-dessus du seuil d’infarctus assez longtemps pour récupérer.",
    "constat": "La logique est inexacte : un tissu « resté au-dessus du seuil d’infarctus » ne court pas de risque d’infarctus, et la durée n’a pas à être « assez longue pour récupérer ». Selon Heiss, l’irréversibilité dépend de l’interaction entre l’intensité et la durée de la baisse de débit ; le déficit régresse si le débit revient au-dessus du seuil fonctionnel avant ce point. De plus, aucune source lue n’applique explicitement ce modèle à l’AIT : il s’agit d’une explication par analogie, à présenter comme telle.",
    "correction_proposee": "« Un déficit qui régresse sans lésion en diffusion s’explique, selon ce modèle expérimental, par un débit tombé sous le seuil fonctionnel puis rétabli avant que l’intensité et la durée de l’ischémie ne rendent la lésion irréversible. »",
    "evidence": [
     "Heiss et Zaro Weber, J Nucl Med 2017 (PMID 27879370), résumé PubMed lu le 15.10.2026 : « restitution of flow above the functional threshold was able to reverse the deficits without permanent damage » ; « the dependency of the development of irreversible lesions on the interaction of the severity and the duration of critically reduced blood flow ».",
-    "Bern Stroke Guidelines, PDF du 10.08.2026 (SHA-256 3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0), relu par pdftotext le 15.10.2026, page PDF 10 : définitions de l’AIT sans mécanisme de seuil."
-   ]
+    "Bern Stroke Guidelines, PDF du 10.08.2026 (SHA-256 3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0), relu par pdftotext le 15.10.2026, page PDF 10 : définitions de l’AIT sans mécanisme de seuil.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026.",
+    "Heiss et Zaro Weber 2017, résumé PubMed 27879370, relu le 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : encadré reformulé selon l’interaction intensité-durée (Heiss), présenté comme modèle expérimental appliqué par analogie, absence d’application directe à l’AIT déclarée ; même nuance en 2.6 et dans le Pareto pareto-g45-s05 ; conforme."
   },
   {
    "id": "P5-MED-04",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "Lors d’un infarctus cérébral, l’ouverture précoce de la barrière passe d’abord par une augmentation de la transcytose",
    "constat": "La séquence transcytose puis rupture des jonctions serrées provient d’une étude citée par Iadecola (Knowland 2014), menée chez la souris (modèle d’occlusion transitoire de l’artère cérébrale moyenne) : défaut de barrière dès 6 heures, jonctions serrées altérées après 2 jours. La leçon la présente comme un fait humain général.",
    "correction_proposee": "« Dans un modèle murin d’infarctus cérébral, l’ouverture précoce de la barrière passe d’abord par une augmentation de la transcytose, dès 6 heures. Les jonctions serrées ne se rompent qu’après environ 2 jours, une fois la lésion tissulaire installée. »",
    "evidence": [
     "Iadecola, Neuron 2017 (PMC5657612), texte intégral NCBI efetch lu le 15.10.2026 : « in ischemic stroke […] the early opening of the BBB […] is mediated by an increases in transcytosis and followed by tight junction disruption days later after tissue damage sets in (Knowland et al., 2014) ».",
-    "Knowland et coll., Neuron 2014 (PMID 24746419), résumé PubMed lu le 15.10.2026 : souris transgénique, modèle t-MCAO ; « barrier function is impaired as early as 6 hr after stroke, TJs display profound structural defects only after 2 days »."
-   ]
+    "Knowland et coll., Neuron 2014 (PMID 24746419), résumé PubMed lu le 15.10.2026 : souris transgénique, modèle t-MCAO ; « barrier function is impaired as early as 6 hr after stroke, TJs display profound structural defects only after 2 days ».",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : « Dans un modèle murin […] dès 6 heures. Les jonctions serrées ne se rompent qu’après environ 2 jours » ; Knowland 2014 cité ; conforme au résumé PubMed 24746419."
   },
   {
    "id": "P5-MED-05",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "La lésion débute par l’entrée de lipoprotéines de basse densité dans l’espace sous-endothélial.",
    "constat": "Puig et coll. placent la dysfonction endothéliale en premier : elle favorise l’entrée des lipoprotéines de basse densité. Le texte omet ce premier temps, qui relie pourtant la plaque à l’endothélium décrit en 2.1.",
    "correction_proposee": "« Le premier signe est une dysfonction endothéliale ; elle favorise l’entrée de lipoprotéines de basse densité dans l’espace sous-endothélial. »",
    "evidence": [
-    "Puig et coll., IJMS 2020 (PMC7662861), texte intégral Europe PMC lu le 15.10.2026, section 2 : « The first sign of atherosclerosis is endothelial dysfunction which favors low-density lipoprotein (LDL) entry into the subendothelial space »."
-   ]
+    "Puig et coll., IJMS 2020 (PMC7662861), texte intégral Europe PMC lu le 15.10.2026, section 2 : « The first sign of atherosclerosis is endothelial dysfunction which favors low-density lipoprotein (LDL) entry into the subendothelial space ».",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : « Le premier signe est une dysfonction endothéliale ; elle favorise l’entrée de lipoprotéines de basse densité » ; conforme à Puig, section 2."
   },
   {
    "id": "P5-CONFORMES",
@@ -247,8 +262,11 @@
    "constat": "Affirmations reposant sur un résumé seulement ou sur une source non relue.",
    "verification": "(1) Martinez-Lemus 2011 : 2.1, premier paragraphe (trois couches, composition, couches dynamiques) ; conforme au résumé mot pour mot ; le texte intégral existe pourtant en libre accès (PMC4435689) et pourrait lever la réserve. (2) Gerosa 2023 : tableau de 2.4 et immunohistochimie ; conformes au résumé (section Results et Conclusions). (3) Heiss et Zaro Weber 2017 : 2.5, premier paragraphe, et surestimation du cœur par l’IRM ; conformes au résumé. (4) Claassen 2021, cité dans les sources de l’Histologie, n’a été relu ni par W ni par P pour cette mission ; la phrase « L’endothélium participe au contrôle du tonus » n’est qu’en partie soutenue par Martinez-Lemus (résumé : les composants pariétaux contrôlent le diamètre et le débit). Ces quatre points ne sont pas bloquants mais restent déclarés.",
    "evidence": [
-    "Résumés PubMed 21989114, 37140327, 27879370 lus le 15.10.2026 ; integration/corrections.json, lacunes déclarées par W."
-   ]
+    "Résumés PubMed 21989114, 37140327, 27879370 lus le 15.10.2026 ; integration/corrections.json, lacunes déclarées par W.",
+    "Martinez-Lemus, Basic Clin Pharmacol Toxicol 2012 (PMC4435689), texte intégral : « endothelial cells participate in controlling vessel tone via the production and release of vasoactive factors that exert their action on neighboring smooth muscle cells » ; « Fenestrae also allow for direct contact between endothelial and vascular smooth muscle cells » ; « arranged perpendicular to the longitudinal axis of the vessel in a circumferential fashion » ; « an additional external elastic lamina that is absent in non-expandable tissues such as the brain ».",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Mise à jour à 05d2e0e7 : Martinez-Lemus relu en texte intégral par l’Agent P (PMC4435689, NCBI efetch, 15.10.2026) ; les ajouts de 2.1 sont conformes : facteurs vasoactifs endothéliaux agissant sur les cellules musculaires voisines, fenestrations de la limitante élastique interne permettant le contact direct endothélium-muscle, cellules musculaires circulaires contrôlant le diamètre, absence de limitante élastique externe dans les tissus non expansibles comme le cerveau. Claassen 2021 est retiré des sources de l’Histologie. Restent au niveau du résumé, sans écart : Gerosa 2023 (tableau 2.4) et Heiss 2017 (2.5) ; réserve non bloquante maintenue."
   },
   {
    "id": "P5-ANATOMIE-IA",
@@ -306,8 +324,12 @@
   "Bern Stroke Guidelines, PDF du 10.08.2026 (SHA-256 3ff2eeaa21b88155393bfa72599a171e23b02be053d7d042d56c73760f56b0d0), relu par pdftotext le 15.10.2026, pages PDF 10, 11 et 13.",
   "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/",
   "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
-  "Empreintes des sept fichiers recalculées sur 70ecacf5."
+  "Empreintes des sept fichiers recalculées sur 70ecacf5.",
+  "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026.",
+  "Rendu Chromium de 05d2e0e7 (build_front.py --fragment S08 hors dépôt, assets relié ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 : aucune erreur JavaScript ni ressource manquante, aucun défilement horizontal ; captures revue/captures/p5b_*.png",
+  "python3 test_v7.py --static G45 : OK ; build_medina.audit(src, 'G45') = {} pour les six fichiers HTML (05d2e0e7).",
+  "Empreintes des sept fichiers recalculées sur 05d2e0e7."
  ],
- "conclusion": "Un constat bloquant ouvert (P5-FIG-01, figure illisible) et sept constats MINEUR ouverts (P5-FIG-02, P5-MED-01 à 05) sur la cinquième discipline ; les seuils de pénombre, la chape < 65 µm, les définitions de l’AIT et l’atlas des 1 298 infarctus sont conformes à leurs sources. Les constats antérieurs P-MED-01 à 04 restent corrigés.",
+ "conclusion": "Aucun constat bloquant : P5-FIG-01 est résolu à 05d2e0e7 (figure des seuils de pénombre lisible au bureau et à 390 px, valeur 1,4 visible) ; P5-FIG-02 et P5-MED-01 à 05 sont corrigés et vérifiés contre Bern p. 11, Iadecola, Chalet, Puig, Knowland, Heiss et Martinez-Lemus (texte intégral). Réserve non bloquante : Gerosa et Heiss au niveau du résumé. Les constats antérieurs P-MED-01 à 04 restent corrigés.",
  "mention": "Revue IA, distincte d’une validation médicale humaine."
 }

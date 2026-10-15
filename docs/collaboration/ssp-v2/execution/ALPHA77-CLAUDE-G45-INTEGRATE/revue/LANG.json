@@ -6,8 +6,8 @@
  "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "70ecacf5b8a85c47752172d68c92afbdfabedbb0",
- "status": "open",
+ "reviewed_commit": "05d2e0e754d6f13b0eef5dd8893e1db121201b77",
+ "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
   "chapters/G45/G45_a.html": "ae8459b3bdf78fb06244f1b9592a0bfa6ad2e8cbf0bbfe15d1ab6bc2f61e5493",
@@ -21,10 +21,10 @@
  "reviewed_files_sha256": {
   "chapters/G45/G45_a.html": "42e67732527dd846aa3d5b19156e4108e2d496a79df774dfc034af3d29f4b920",
   "chapters/G45/G45_b.html": "c6c0149849768fed843e8a2653299138d02e1a4fcbbbaf79fafc21822a844234",
-  "chapters/G45/G45_c.html": "95b1cad460a787a21ac11f48623f7fcffb20535992fbe5148d87f19844eadccd",
+  "chapters/G45/G45_c.html": "63004e671162d581623684c015de6dcb3325aa83523f4f8861f638beeeae889b",
   "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
   "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
-  "chapters/G45/G45_pop2.html": "b59a9f2acd36bed2e40255b34d4e8e99e5a1401415b099fe34a8153cfc45afa3",
+  "chapters/G45/G45_pop2.html": "0d31f01a968a773a19422dfc60b40d4a8d306a9a80a630c4cbeee276f422fbb2",
   "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
  },
  "requirements_reviewed": {
@@ -80,38 +80,44 @@
   {
    "id": "P5-LANG-01",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "<b>À retenir.</b> Quatre grands territoires ; <b>À retenir.</b> Trois couches pariétales",
    "constat": "Les deux épilogues sont des énumérations nominales sans verbe conjugué (STYLE_REDACTION § 2) et n’annoncent pas le lien avec la partie suivante (§ 3). Les Pareto pareto-g45-s01 et pareto-g45-s05 commencent aussi par des groupes nominaux (« Intima, média, adventice ; »).",
    "correction_proposee": "Anatomie : « À retenir. L’atlas distingue quatre grands territoires, divisés en sous-territoires profonds et lobaires, et des zones frontières. Les suppléances varient d’un patient à l’autre ; un territoire d’atlas reste donc une probabilité. L’histologie montre ensuite ce que la paroi et le tissu subissent. » Histologie : « À retenir. La paroi compte trois couches ; au capillaire, les péricytes remplacent les cellules musculaires. La chape et le noyau décident de la stabilité de la plaque. La pénombre se définit par des seuils de débit et de consommation d’oxygène, que la physiologie relie ensuite à l’autorégulation. »",
    "evidence": [
-    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026."
-   ]
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : épilogues et Pareto pareto-g45-s01 et pareto-g45-s05 rédigés en phrases complètes ; les deux épilogues annoncent la partie suivante."
   },
   {
    "id": "P5-LANG-02",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "<th>Élément histologique</th>",
    "constat": "Le tableau de 2.4 n’est pas introduit par une phrase qui pose la question (§ 4) ; la lecture qui suit n’indique ni l’erreur fréquente ni un exemple.",
    "correction_proposee": "Avant le tableau : « Quels caractères histologiques annoncent la rupture ? Une revue anatomopathologique en retient six. » Après la lecture existante : « L’erreur fréquente consiste à juger la plaque sur le seul degré de sténose : une sténose de 40 % à chape fine peut être plus menaçante qu’une sténose serrée et calcifiée. »",
    "evidence": [
-    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026."
-   ]
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : question d’introduction avant le tableau ; erreur fréquente ajoutée après la lecture."
   },
   {
    "id": "P5-LANG-03",
    "severite": "MINEUR",
-   "status": "open",
+   "status": "resolved",
    "fichier": "chapters/G45/G45_c.html",
    "ancre": "Lors d’un infarctus cérébral, l’ouverture précoce de la barrière passe d’abord par une augmentation de la transcytose ; En pratique, l’inadéquation entre perfusion et diffusion",
    "constat": "Deux phrases dépassent nettement la vingtaine de mots (36 et 32 mots, § 2).",
    "correction_proposee": "Couper chacune en deux phrases : la première selon P5-MED-04 ; la seconde : « En pratique, l’inadéquation entre perfusion et diffusion à l’IRM sert de substitut. Elle surestime cependant le cœur et la pénombre par rapport à la TEP. » (avec les termes développés déjà employés dans la leçon).",
    "evidence": [
-    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026."
-   ]
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Corrigé à 05d2e0e7 : les deux phrases longues sont coupées."
   },
   {
    "id": "P5-LANG-04",
@@ -122,8 +128,10 @@
    "constat": "Les deux disciplines commencent sans annonce de la question clinique éclairée (§ 6) ; ce défaut est partagé par les trois autres disciplines historiques. L’Histologie ne compte qu’un mot vert (g45-paroi) ; pénombre, unité neurovasculaire et plaque vulnérable mériteraient une fenêtre.",
    "correction_proposee": "Ajouter une phrase d’annonce en tête de chaque discipline (par exemple : « Pourquoi un déficit peut-il disparaître sans laisser de lésion, et pourquoi une plaque peu sténosante peut-elle emboliser ? »). Fenêtres facultatives dans G45_pop1 ou G45_pop2.",
    "evidence": [
-    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026."
-   ]
+    "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
+    "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026."
+   ],
+   "verification_correction": "Partiellement appliqué à 05d2e0e7 : une question clinique annonce désormais chaque nouvelle discipline (« Quel territoire artériel explique la fonction perdue… », « Pourquoi un déficit peut-il disparaître sans laisser de lésion… »). Aucun mot vert ajouté en Histologie ; enrichissement facultatif, non bloquant."
   },
   {
    "id": "P5-LANG-CONFORME",
@@ -150,8 +158,12 @@
   "Revue complémentaire des corrections de f5736930 ; test_v7.py --static G45 : OK ; empreintes des sept fichiers recalculées.",
   "Différence f5736930 → 70ecacf5 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P et confrontée aux sources, 15.10.2026.",
   "Rendu Chromium (build_front.py --fragment S08, sortie hors dépôt ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 ; captures revue/captures/",
-  "Empreintes des sept fichiers recalculées sur 70ecacf5."
+  "Empreintes des sept fichiers recalculées sur 70ecacf5.",
+  "Différence 70ecacf5 → 05d2e0e7 (G45_c.html, G45_pop2.html) relue phrase par phrase par l’Agent P, 15.10.2026.",
+  "Rendu Chromium de 05d2e0e7 (build_front.py --fragment S08 hors dépôt, assets relié ; Playwright, Chromium 1194) à 1300 × 900 et 390 × 844, 15.10.2026 : aucune erreur JavaScript ni ressource manquante, aucun défilement horizontal ; captures revue/captures/p5b_*.png",
+  "python3 test_v7.py --static G45 : OK ; build_medina.audit(src, 'G45') = {} pour les six fichiers HTML (05d2e0e7).",
+  "Empreintes des sept fichiers recalculées sur 05d2e0e7."
  ],
- "conclusion": "Aucun constat bloquant ; trois constats MINEUR ouverts (P5-LANG-01 à 03) et un enrichissement non bloquant (P5-LANG-04) sur la cinquième discipline. P-LANG-01 reste corrigé.",
+ "conclusion": "Aucun constat bloquant : P5-LANG-01 à 03 sont corrigés à 05d2e0e7 ; P5-LANG-04 est partiellement appliqué (annonces ajoutées), le reste est facultatif et non bloquant. P-LANG-01 reste corrigé.",
  "mention": "Revue IA, distincte d’une validation médicale humaine."
 }
