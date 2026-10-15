@@ -21,7 +21,37 @@ import urllib.parse
 import urllib.request
 
 DEFAULT_REPO = "vialdjoukang-spec/Medina"
-DEFAULT_TARGET = "codex/sciences-cs-fragments-20261007"
+DEFAULT_TARGET = "main"
+
+
+class GitHubRequestError(RuntimeError):
+    """Diagnostic public sans jeton, en-têtes ni corps de réponse."""
+    def __init__(self, path, status=None):
+        self.path = path
+        self.status = status
+        super().__init__(f"GitHub HTTP {status} sur {path}" if status else f"GitHub inaccessible sur {path}")
+
+
+class PaginationError(RuntimeError):
+    """Conserve les pages réellement acquises avant l'échec."""
+    def __init__(self, path, page, items, error):
+        self.path, self.page, self.items = path, page, items
+        self.status = getattr(error, "status", None)
+        super().__init__(str(error))
+
+
+class CollectionError(RuntimeError):
+    def __init__(self, snapshot, stage, error):
+        self.snapshot = snapshot
+        snapshot["scan_complete"] = False
+        diagnostic = {"stage": stage, "message": str(error)}
+        for field in ("path", "page", "status"):
+            value = getattr(error, field, None)
+            if value is not None:
+                diagnostic[field] = value
+        snapshot.setdefault("scan_errors", []).append(diagnostic)
+        snapshot.setdefault("notes", []).append(f"Collecte interrompue ({stage}) : {error}")
+        super().__init__(str(error))
 
 
 class GitHubClient:
@@ -44,17 +74,20 @@ class GitHubClient:
                 return json.load(response)
         except urllib.error.HTTPError as error:
             # Les en-têtes et le jeton ne sont jamais inclus dans les diagnostics.
-            raise RuntimeError(f"GitHub HTTP {error.code} sur {path}") from None
+            raise GitHubRequestError(path, error.code) from None
         except urllib.error.URLError:
-            raise RuntimeError(f"GitHub inaccessible sur {path}") from None
+            raise GitHubRequestError(path) from None
 
     def pages(self, path, **params):
         result = []
         page = 1
         while True:
-            batch = self.request(path, dict(params, per_page=100, page=page))
-            if not isinstance(batch, list):
-                raise ValueError(f"Liste attendue pour {path}")
+            try:
+                batch = self.request(path, dict(params, per_page=100, page=page))
+                if not isinstance(batch, list):
+                    raise ValueError(f"Liste attendue pour {path}")
+            except (RuntimeError, ValueError) as error:
+                raise PaginationError(path, page, result, error) from None
             result.extend(batch)
             if len(batch) < 100:
                 return result
@@ -107,12 +140,29 @@ class GitHubClient:
         return receipts, notes, complete
 
     def collect(self, integration_branch):
-        branches = self.pages("/branches")
-        pull_requests = self.pages("/pulls", state="all")
+        snapshot = {"repository": self.repository, "integration_branch": integration_branch,
+                    "integration_commit": None, "branches": [], "pull_requests": [],
+                    "comparisons": {}, "scan_complete": False, "notes": [], "scan_errors": []}
+        try:
+            branches = self.pages("/branches")
+        except PaginationError as error:
+            snapshot["branches"] = error.items
+            target = next((b for b in error.items if b.get("name") == integration_branch), None)
+            if target:
+                snapshot["integration_commit"] = target.get("commit", {}).get("sha")
+            raise CollectionError(snapshot, "branches", error) from None
+        snapshot["branches"] = branches
         target = next((b for b in branches if b["name"] == integration_branch), None)
         if target is None:
-            raise ValueError("La branche d'intégration n'est pas présente dans les branches distantes.")
+            raise CollectionError(snapshot, "integration_target", ValueError(
+                "La branche d'intégration n'est pas présente dans les branches distantes."))
         target_sha = target["commit"]["sha"]
+        snapshot["integration_commit"] = target_sha
+        try:
+            pull_requests = self.pages("/pulls", state="all")
+        except PaginationError as error:
+            snapshot["pull_requests"] = error.items
+            raise CollectionError(snapshot, "pull_requests", error) from None
         comparisons = {}
         notes = []
         complete = True
@@ -124,6 +174,8 @@ class GitHubClient:
                     notes.append(f"PR #{pr['number']} : " + pr["files_error"])
                     complete = False
             except (RuntimeError, ValueError) as error:
+                if isinstance(error, PaginationError):
+                    pr["files"] = error.items
                 pr["files_error"] = str(error)
                 notes.append(str(error))
                 complete = False
@@ -168,7 +220,8 @@ class GitHubClient:
         return {"repository": self.repository, "integration_branch": integration_branch,
                 "integration_commit": target_sha, "branches": branches,
                 "pull_requests": pull_requests, "comparisons": comparisons,
-                "scan_complete": complete, "notes": notes, "catalog": catalog, "receipts": receipts}
+                "scan_complete": complete, "notes": notes, "scan_errors": [],
+                "catalog": catalog, "receipts": receipts}
 
 
 def systems_from_shell(source):
@@ -473,7 +526,10 @@ def build_report(snapshot, catalog):
     return {"schema_version": 1, "scanned_at": dt.datetime.now(dt.timezone.utc).isoformat(),
             "repository": snapshot.get("repository", DEFAULT_REPO), "integration_branch": target,
             "integration_commit": target_sha, "scan_complete": snapshot.get("scan_complete", False),
-            "notes": snapshot.get("notes", []), "catalog_basis": catalog.get("basis", "provided"),
+            "notes": snapshot.get("notes", []), "scan_errors": snapshot.get("scan_errors", []),
+            "inventory_counts": {"branches": len(branches),
+                                 "pull_requests": len(snapshot.get("pull_requests", []))},
+            "catalog_basis": catalog.get("basis", "provided"),
             "limits": ["Les rapports et les tests déclarés ne constituent pas une vérification médicale indépendante.",
                        "Le routage est contrôlé contre les sources locales de la cible, avant les changements proposés.",
                        "Aucune branche n'est fusionnée, aucun reçu créé et aucun commit publié par ce scanner."],
@@ -488,6 +544,10 @@ def markdown(report):
              "Scan : " + ("complet selon les données fournies" if report["scan_complete"] else "partiel ; réserves ci-dessous") + ".",
              "Une livraison repérée ou reçue n'est pas présumée intégrée. Une intégration ne prouve pas une vérification.", "",
              "| Branche / PR | Tête | Reçu | Intégré dans la cible | Vérifié | Routage |", "| --- | --- | --- | --- | --- | --- |"]
+    if not report["scan_complete"]:
+        lines[8:8] = ["**Inventaire incomplet : aucune conclusion d'absence de nouvelle livraison n'est possible.**", ""]
+    for error in report.get("scan_errors", []):
+        lines[8:8] = ["Échec de collecte — " + safe(error["stage"]) + " : " + safe(error["message"]) + ".", ""]
     for d in report["deliveries"]:
         prs = ", ".join("#" + str(p["number"]) for p in d["pull_requests"])
         name = ", ".join(d["branches"]) + (" · " + prs if prs else "")
@@ -518,8 +578,16 @@ def main(argv=None):
     if args.snapshot:
         snapshot = json.loads(args.snapshot.read_text(encoding="utf-8"))
     else:
-        client = GitHubClient(args.repo, os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN"))
-        snapshot = client.collect(args.integration_branch)
+        try:
+            client = GitHubClient(args.repo, os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN"))
+            snapshot = client.collect(args.integration_branch)
+        except CollectionError as error:
+            snapshot = error.snapshot
+        except (RuntimeError, ValueError, OSError, KeyError) as error:
+            snapshot = {"repository": args.repo, "integration_branch": args.integration_branch,
+                        "integration_commit": None, "branches": [], "pull_requests": [],
+                        "comparisons": {}, "notes": []}
+            snapshot = CollectionError(snapshot, "collector", error).snapshot
     target_sha = snapshot.get("integration_commit") or next((b.get("commit", {}).get("sha") for b in snapshot.get("branches", []) if b["name"] == snapshot.get("integration_branch", DEFAULT_TARGET)), None)
     if "receipts" not in snapshot:
         snapshot["receipts"], receipt_notes = load_receipts(args.root, target_sha)
@@ -532,14 +600,23 @@ def main(argv=None):
                                     raw_catalog.get("systems", {}), raw_catalog.get("basis", "snapshot_catalog"),
                                     raw_catalog.get("course_groups", []))
     else:
-        catalog = load_catalog(args.root, target_sha)
+        try:
+            catalog = load_catalog(args.root, target_sha)
+        except (RuntimeError, ValueError, OSError, KeyError) as error:
+            snapshot = CollectionError(snapshot, "local_catalog", error).snapshot
+            catalog = normalize_catalog([], [], {}, "unavailable")
         if catalog["basis"] == "local_files_fallback":
             snapshot.setdefault("notes", []).append("Catalogue lu dans les fichiers locaux : le SHA cible n'est pas disponible localement. Vérifier leurs empreintes ou fournir catalog dans le snapshot.")
     report = build_report(snapshot, catalog)
     args.out.mkdir(parents=True, exist_ok=True)
+    (args.out / "COLLABORATION_SNAPSHOT.json").write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (args.out / "DELIVERIES_LATEST.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (args.out / "DELIVERIES_LATEST.md").write_text(markdown(report), encoding="utf-8")
-    print(f"{len(report['deliveries'])} têtes repérées ; rapports : {args.out}")
+    scope = "têtes repérées" if report["scan_complete"] else "têtes connues (inventaire partiel)"
+    print(f"{len(report['deliveries'])} {scope} ; rapports : {args.out}")
+    if not report["scan_complete"]:
+        print("Inventaire incomplet : consulter les réserves ; l'absence de livraison ne peut pas être établie.", file=sys.stderr)
+        return 1
     return 0
 
 

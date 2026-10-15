@@ -1,3 +1,15 @@
+## Soutien technique de Claude — 15 octobre 2026
+
+[Correctifs, provenance, tests et réserves](receipts/MEDINA_SOUTIEN_TECHNIQUE_2026-10-15.md).
+Reprise dynamique, veille paginée, inventaire explicite, deux plans Novo distincts,
+préflight transactionnel et chargeur sans récursion préparés en branche Codex.
+357 tests ciblés et reconstruction globale/23 fragments exécutés ; navigateur,
+suite complète sur clone complet et CI distante restent à vérifier. Aucun cours,
+registre actif ni attribution modifié ; ne pas annoncer ces correctifs déployés.
+Les audits médicaux indépendants restent suspendus et le Prompt de vérité obligatoire.
+Signaler les blocages reproductibles dans la PR courante avec
+`[CLAUDE->CODEX][BLOCAGE]`, branche, SHA et reproduction.
+
 ## Cycle 1 ouvert à Claude — exception directe du 13 octobre 2026
 
 Vial dispense exceptionnellement le Cycle 1 du contre-audit préalable : publication immédiate de I63/E11/N17/D50, puis audit différé à Claude le 14 octobre (Europe/Zurich). Lecture et corrections Claude autorisées sans verrou STOP ni nouvelle permission. Les empreintes et contrôles techniques de chaque version restent tracés ; aucun audit manquant n'est présenté comme réalisé. Lire [l'instruction prioritaire](instructions/CYCLE_01_EXCEPTION_CLAUDE_VIAL_2026-10-13.md).

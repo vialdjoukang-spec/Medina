@@ -22,6 +22,9 @@ PROMPTS = ("PROMPT_MEDINA.md", "PROMPT_TRANSITION.md", "docs/STYLE_REDACTION.md"
            "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md")
 DIRECT_AUTHORITY = "docs/collaboration/instructions/CYCLES_03_30_PUBLICATION_DIRECTE_VIAL_2026-10-14.md"
 PROMPT_SETS = {"reprise": PROMPTS, "direct": tuple(DIRECT_AUTHORITY if p == AUTHORITY else p for p in PROMPTS)}
+PROMPT_SETS['novo'] = PROMPT_SETS['direct'] + (
+    'docs/collaboration/betta/PROMPT_VERITE.md',
+    'docs/collaboration/instructions/NOVO12_EXECUTION_VIAL_2026-10-15.md')
 CHECKS = ("autorisation", "perimetre_provenance", "sources_lues", "contexte_suisse", "independance",
           "contrat_cours", "honnetete")
 

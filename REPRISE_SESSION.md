@@ -1,26 +1,70 @@
-# REPRISE DE SESSION — règle absolue (Vial, 15.10.2026)
+# Reprise MEDINA — état dynamique, 15 octobre 2026
 
-Toute nouvelle session Claude lit **ce fichier seul** et reprend sans relire l'historique.
+Ce fichier est un point d'entrée, pas une photographie figée de l'avancement.
+Claude et chaque agent lisent **d'abord**
+`docs/collaboration/betta/PROMPT_VERITE.md` avant d'ouvrir une leçon ; appliquer
+sa porte documentaire avant rédaction. Lire aussi les instructions actuelles
+de `CLAUDE.md` et `AGENTS.md`. Aucun résultat ou contrôle non réalisé n'est réputé acquis.
 
-## Règles permanentes
-- Réponses au propriétaire : ultra-concises ; seulement « captures + FIN PUBLIÉ + lien » et la jauge `n/30`.
-- Modèles : recherche Opus (effort moyen→élevé), rédaction Sonnet 5.5 moyen, mécanique Sonnet moyen. Interdit de rédiger faux.
-- Cycles 3→30 : recherche + rédaction + contrôle coordinateur (4 captures) + publication directe ; **aucun audit avant le Cycle 30**.
-- Un seul cycle actif. Chaîne : skill `.claude/skills/cycle-medina/SKILL.md`. Garde : `tools/cycle_claude.py` (ne jamais l'affaiblir).
+## État réel avant toute action
 
-## État au 15.10.2026
-- Cycle 1 : publié et audité (main). Jauge **1/30**.
-- Cycle 2 (G45, E10, N18, D64) : 4 leçons contrôlées, `PRET_A_INJECTER` dans `organisation/CYCLES_CLAUDE.json`.
-- Cycle 3 (I61, E05, N04, D69) : rédigé dans `livraisons/Livraison Claude/*/travail/CYCLE_03_*` ; reste contrôle + publication.
-- Branche de travail : `claude/great-cerf-uizsml`.
+Exécuter `python3 tools/medina_resume.py`. Ce relevé local en lecture seule distingue :
 
-## Prochaines actions, dans l'ordre
-1. `bash tools/claude_chaine_main.sh` puis pousser C1, C2, C3 vers `main` (avances rapides ; la garde exige des étapes séparées).
-2. Injection Cycle 2 une leçon à la fois G45→E10→N18→D64 : copie canonique (chapters/, glossary/, assets/img/cycle2/), ajout `chapters.json`,
-   `python3 tools/sceller.py enregistrer`, reçu d'injection, `tools/cycle_claude_stage.py stage CODE INJECTE`, garde, push main,
-   attente Pages, relecture publique, `stage CODE PUBLIE_VERIFIE`. Puis `close 2`.
-3. Cycle 3 : `start 3 --direct`, contrôle de chaque leçon (`/tmp`-libre : script type dans `tools/cycle_claude_control.py`), injection, publication.
-4. Cycles 4→30 : `/cycle-medina n`.
+- la séquence Tétrade 1–30 : 120 leçons prévues, entrées canoniques déclarées dans
+  `chapters.json`, états du registre `organisation/CYCLES_CLAUDE.json` ;
+- Novo **Tétrade** : `organisation/novo_12/PLAN_NOVO_12.json`, neuf lots de douze
+  couvrant les anciens cycles 4–30, sans modifier leurs attributions ;
+- Betta **31+** : `organisation/betta_status.json`, production distincte. Son propre
+  Novo **42–125** a son propre `organisation/novo12_status.json` ; les 43 transferts
+  ne se comptent pas deux fois. Ce n'est ni Novo Tétrade ni la jauge des 120 leçons.
 
-## Permission requise
-`git push` vers main : règle `Bash(git push:*)` dans `.claude/settings.json` (déjà sur main) ou approbation manuelle.
+Une entrée au catalogue n'est pas une preuve de publication. `PUBLIE_VERIFIE`
+est un état enregistré, pas une nouvelle vérification publique par cet outil.
+Les fichiers manquants ou invalides sont signalés « indisponibles », jamais assimilés
+à zéro progression. Comparer ensuite les têtes distantes de main et de la branche
+de travail actuelle, les reçus et le déploiement réellement réussi.
+
+## Reprendre sans écraser
+
+Terminer la publication du Cycle 3 **selon ses états courants dans le registre** :
+ne pas recommencer une injection ou un contrôle déjà enregistré sur la même version.
+Préserver les cours, reçus, empreintes et contributions concurrentes ; ne pas modifier
+le cycle actif pour le convertir en lot Novo. Les audits médicaux indépendants restent
+suspendus jusqu'à nouvel ordre ; sources et contrôles techniques réels restent tracés.
+Un seul cycle/lot actif par IA responsable ; un auteur par fichier. La chaîne
+`.claude/skills/cycle-medina/SKILL.md` et les gardes actuelles restent applicables.
+Les choix de modèles existants de Claude sont conservés.
+Le distributeur `.claude/skills/agent-distributor/SKILL.md` et
+`tools/distributor_veille.py` restent disponibles. Les revues auteur sont réellement
+datées après le démarrage de leur lot ; ne jamais réécrire une date. Chaque injection
+actualise l'intégrité du catalogue et ses jauges avec les outils prévus.
+
+Transmettre aussitôt tout refus reproductible à Codex dans la **PR courante** avec
+`[CLAUDE->CODEX][BLOCAGE]`, SHA et reproduction. Une copie dans l'issue 97 reste utile,
+mais ne déclenche pas à elle seule le soutien. Lire
+`docs/collaboration/instructions/SOUTIEN_TECHNIQUE_CLAUDE_2026-10-15.md`.
+
+Après Cycle 3 réellement `CLOTURE`, l'option autorisée est :
+
+```bash
+python3 tools/cycle_claude_stage.py novo 1 --runtime ID_REEL
+```
+
+Lire `docs/collaboration/instructions/NOVO12_EXECUTION_VIAL_2026-10-15.md`
+avant exécution. Novo Tétrade 1 est une seule entrée active d'ancre 4, représentant
+les anciens cycles 4, 5 et 6 et douze leçons ; le lot suivant a l'ancre 7.
+Employer l'identifiant réel de session, sans inventer de preuve ou de lecture.
+
+L'ancien `tools/claude_chaine_main.sh` est désactivé : il reconstruisait main depuis
+des arbres historiques et pouvait écraser des contributions nouvelles. Utiliser
+la branche réelle et une réconciliation Git préservant l'historique ; aucun
+force-push ni ancien arbre substitué à main. Les protections et permissions
+effectives GitHub restent applicables.
+
+## Jauge et compte rendu
+
+La ligne d'état `medina_resume.py --status-line` présente séparément les 120 leçons
+de la Tétrade, Betta historique et Novo Betta. Ne pas afficher une jauge
+historique fixe comme état actuel ni confondre « canonique », « livré », « injecté »
+et « publié ». Un compte rendu reste concis, avec les faits nouveaux, les liens
+vérifiés et les réserves réelles.

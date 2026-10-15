@@ -21,14 +21,28 @@ jobs:
       - name: Vérifier le scanner
         run: python -m unittest discover -s tests -p test_collaboration_sync.py
       - name: Repérer toutes les branches et pull requests
+        id: scan
+        # L'inventaire est informatif : une panne réseau ne bloque pas la
+        # production. Son échec reste visible et n'est jamais dit « complet ».
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python tools/collaboration_sync.py --out "$RUNNER_TEMP/medina-collaboration"
+        run: python tools/collaboration_sync.py --integration-branch main --out "$RUNNER_TEMP/medina-collaboration"
       - name: Présenter le rapport
         if: always()
+        env:
+          SCAN_OUTCOME: ${{ steps.scan.outcome }}
         run: |
+          if test "$SCAN_OUTCOME" = failure; then
+            echo "::warning::Inventaire MEDINA incomplet ou impossible ; consulter le rapport et les réserves. Aucune absence de livraison n'est établie."
+            echo "## Inventaire incomplet — collecte en échec (non bloquante)" >> "$GITHUB_STEP_SUMMARY"
+          elif test "$SCAN_OUTCOME" != success; then
+            echo "## Inventaire non exécuté — aucun résultat disponible" >> "$GITHUB_STEP_SUMMARY"
+          fi
           if test -f "$RUNNER_TEMP/medina-collaboration/DELIVERIES_LATEST.md"; then
             cat "$RUNNER_TEMP/medina-collaboration/DELIVERIES_LATEST.md" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Aucun rapport produit. L'inventaire n'est pas complet ; aucune conclusion d'absence de livraison n'est possible." >> "$GITHUB_STEP_SUMMARY"
           fi
       - uses: actions/upload-artifact@v5
         if: always()
