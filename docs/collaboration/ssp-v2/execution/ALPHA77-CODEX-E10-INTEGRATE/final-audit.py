@@ -50,5 +50,5 @@ for name in ['source-verification.json','build-evidence.json']:
  dump(OUT/name,f)
 dump(OUT/'final-hashset.json',dict(base_sha=BASE,source_files_sha256=base,reviewed_files_sha256=final,hashset_sha256=sha(json.dumps(final,sort_keys=True,separators=(',',':')).encode())))
 # Evidence manifest excludes itself, no circular hashes.
-dump(OUT/'evidence-files.json',dict(schema_version=1,generated_at=now,source_files_sha256=final,evidence_files=[dict(path=str(p),sha256=sha(p.read_bytes())) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name!='evidence-files.json']))
+dump(OUT/'evidence-files.json',dict(schema_version=1,generated_at=now,source_files_sha256=final,evidence_files=[dict(path=str(p),sha256=sha(p.read_bytes())) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name not in ['evidence-files.json','LANG.json','lang-final-proposals.json'] and 'publication-evidence' not in p.parts]))
 print('final reports provisional; final hashset',json.loads((OUT/'final-hashset.json').read_text())['hashset_sha256'])
