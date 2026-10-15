@@ -485,5 +485,39 @@ class ReachableCourseTests(unittest.TestCase):
             self.assertNotIn('Secret', self.read(raw))
 
 
+    def test_embedded_styles_cannot_supply_computed_hidden_evidence(self):
+        for raw in [self.wrap('<style>.secret{display:none}</style><p class="secret">Secret</p>'),
+                    '<style>.secret{visibility:hidden}</style>'+self.wrap('<p class="secret">Secret</p>')]:
+            self.assertNotIn('Secret', self.read(raw))
+
+    def test_nested_peer_target_cannot_become_reachable(self):
+        raw = self.wrap('<div class="tabs"><button data-p="pS">Science</button></div>'
+                        '<div class="panel" id="pA"><div class="panel" id="pS" hidden>Secret</div></div>')
+        self.assertNotIn('Secret', self.read(raw))
+        raw = self.science('<div class="sci-bar"><button data-s="nested">Next</button></div>'
+                           '<div class="sci" id="nested" hidden>Secret</div>')
+        self.assertNotIn('Secret', self.read(raw))
+
+
+    def test_untransformed_class_syntax_cannot_activate_hidden_target(self):
+        raw = self.science('<p>Secret</p>')
+        for old, new in [('class="tabs"', "class='tabs'"),
+                         ('class="panel"', "class='panel'"),
+                         ('class="sci-bar"', "class='sci-bar'"),
+                         ('class="sci"', "class='sci'")]:
+            self.assertNotIn('Secret', self.read(raw.replace(old, new)))
+
+    def test_closed_dialog_and_explicit_invisible_styles_excluded(self):
+        self.assertNotIn('Secret', self.read(self.wrap('<dialog>Secret</dialog>')))
+        self.assertIn('Visible', self.read(self.wrap('<dialog open>Visible</dialog>')))
+        for style in ['visibility:collapse', 'content-visibility:hidden', 'opacity:0',
+                      'font-size:0px', 'color:transparent', 'display:/* hidden */none']:
+            self.assertNotIn('Secret', self.read(self.science('<p>Secret</p>',
+                                  target_attrs='hidden style="'+style+'"')))
+
+    def test_active_stylesheet_link_cannot_prove_static_visibility(self):
+        self.assertNotIn('Secret', self.read('<link rel="stylesheet" href="hide.css">'+self.wrap('Secret')))
+
+
 if __name__ == "__main__":
     unittest.main()

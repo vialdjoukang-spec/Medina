@@ -44,12 +44,15 @@ def visible_text(raw, course_code=None):
     validation; explicit CSS/ARIA hiding and unrelated templates stay excluded.
     """
     class Node:
-        def __init__(self, tag, attrs=(), parent=None):
+        def __init__(self, tag, attrs=(), parent=None, raw_tag=None):
             self.tag, self.attrs, self.parent = tag, dict(attrs), parent
             self.children = []
+            self.raw_tag = raw_tag
 
         def classes(self):
-            return set(self.attrs.get('class', '').split())
+            # build_medina.transform only prefixes this exact class syntax.
+            match = re.search(r'\sclass="([^"]*)"', self.raw_tag or '')
+            return set(match.group(1).split()) if match and match.group(1) == self.attrs.get('class') else set()
 
         def ancestors(self):
             node = self.parent
@@ -67,7 +70,7 @@ def visible_text(raw, course_code=None):
             self.stack, self.nodes = [self.document], []
 
         def handle_starttag(self, tag, attrs):
-            node = Node(tag, attrs, self.stack[-1])
+            node = Node(tag, attrs, self.stack[-1], self.get_starttag_text())
             self.stack[-1].children.append(node)
             self.nodes.append(node)
             if tag not in self.VOID:
@@ -89,9 +92,14 @@ def visible_text(raw, course_code=None):
 
         @staticmethod
         def explicitly_hidden(node):
-            style = re.sub(r'\s+', '', node.attrs.get('style', '')).lower()
+            style = re.sub(r'/\*.*?\*/', '', node.attrs.get('style', ''), flags=re.S)
+            style = re.sub(r'\s+', '', style).lower()
             return (node.attrs.get('aria-hidden', '').lower() == 'true' or
-                    'display:none' in style or 'visibility:hidden' in style)
+                    'display:none' in style or 'visibility:hidden' in style or
+                    'visibility:collapse' in style or 'content-visibility:hidden' in style or
+                    re.search(r'(?:^|;)opacity:0(?:\.0*)?(?:!important)?(?:;|$)', style) is not None or
+                    re.search(r'(?:^|;)font-size:0(?:\.0*)?(?:px|em|rem|pt|%)?(?:!important)?(?:;|$)', style) is not None or
+                    re.search(r'(?:^|;)color:transparent(?:!important)?(?:;|$)', style) is not None)
 
         def read(self):
             roots = [node for node in self.nodes if course_code is not None and
@@ -103,6 +111,16 @@ def visible_text(raw, course_code=None):
                 if len(roots) != 1 or any(n.tag == 'template' for n in roots[0].ancestors()):
                     return ''
             course = roots[0] if len(roots) == 1 else None
+            # Embedded styles can mask descendants through arbitrary selectors.
+            # A static text guard cannot prove their computed visibility.
+            if course is not None:
+                for node in self.nodes:
+                    templates = [n for n in node.ancestors() if n.tag == 'template']
+                    if not templates or templates == [course]:
+                        if node.tag == 'style' and any(isinstance(c, str) and c.strip() for c in node.children):
+                            return ''
+                        if node.tag == 'link' and 'stylesheet' in node.attrs.get('rel', '').lower().split():
+                            return ''
             local = [node for node in self.nodes if course is not None and
                      course in node.ancestors()]
             ids = {}
@@ -112,6 +130,7 @@ def visible_text(raw, course_code=None):
 
             def walk(node, reached, parts):
                 if (self.explicitly_hidden(node) or node.tag in {'script', 'style'} or
+                        (node.tag == 'dialog' and 'open' not in node.attrs) or
                         (node.tag == 'template' and node is not course) or
                         ('hidden' in node.attrs and node not in active)):
                     return
@@ -145,6 +164,10 @@ def visible_text(raw, course_code=None):
                             continue
                         target = matches[0]
                         if target_class not in target.classes():
+                            continue
+                        # The runtime hides every other peer of the same class;
+                        # a nested target would remain inside a hidden peer.
+                        if any(target_class in n.classes() for n in target.ancestors()):
                             continue
                         if key == 'data-p':
                             if target_id not in {'pA', 'pE', 'pS', 'pP'}:
