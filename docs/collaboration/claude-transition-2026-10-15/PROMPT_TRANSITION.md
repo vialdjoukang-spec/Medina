@@ -28,6 +28,8 @@ Mission approuvée dans `main` (`.medina/missions/`), puis `python3 tools/ai_ses
 | G45 | 5 mineurs corrigés (f5736930) ; P met à jour revue/ | puis reçu (bloqué par § 4 bis : figures attribuées) |
 | **N18** | reçu valide ; **PR #148** ; `main` fusionné (e3876858) | fusionner dès la CI verte, libérer la réservation ; « 5 mg oral » différé |
 
+**Mise à jour 21 h 10 UTC :** E11 (PR #147, fusion `7eeb7206`), N18 (PR #148, fusion `729cd651`) et I61 (PR #150, fusion `958474d2`) sont fusionnées et leurs réservations libérées : **3/77 leçons closes**. La revue de G45 est à jour (`69d50aeb`, close). E12, D50, C77 et G45 restent bloquées par le défaut de l'outil décrit au § 4 bis, qui n'est toujours pas corrigé dans `main` à 21 h 10.
+
 Vérifier l'état réel avant tout : `git fetch origin` puis lire chaque branche ; ne pas supposer que les agents de l'ancienne session ont fini.
 
 ## 4. Décisions du coordinateur (à maintenir)
