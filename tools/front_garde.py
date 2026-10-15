@@ -202,9 +202,15 @@ window.__fg = window.__fg || (() => {
   const cx = cv.getContext('2d', {willReadFrequently: true});
   const rgba = (c) => { // toute couleur CSS -> [r,g,b,a]
     if (!c || c === 'transparent') return [0,0,0,0];
-    cx.clearRect(0,0,1,1); cx.fillStyle = '#000'; cx.fillStyle = c; cx.fillRect(0,0,1,1);
-    const d = cx.getImageData(0,0,1,1).data; const a = d[3]/255;
-    return a ? [d[0]/a, d[1]/a, d[2]/a, a].map((x,i)=> i<3 ? Math.min(255, Math.round(x)) : x) : [0,0,0,0];
+    // Peindre la couleur sur du noir puis sur du blanc opaques : l'écart donne l'alpha
+    // sans dépendre du stockage prémultiplié du canvas (b = c·a ; w = c·a + 255·(1−a)).
+    const peint = (fond) => { cx.globalCompositeOperation = 'copy'; cx.fillStyle = fond; cx.fillRect(0,0,1,1);
+      cx.globalCompositeOperation = 'source-over'; cx.fillStyle = '#000'; cx.fillStyle = c; cx.fillRect(0,0,1,1);
+      return cx.getImageData(0,0,1,1).data; };
+    const n = peint('#000'), b = peint('#fff');
+    const a = 1 - ((b[0]-n[0]) + (b[1]-n[1]) + (b[2]-n[2])) / (3*255);
+    if (a <= 0.004) return [0,0,0,0];
+    return [0,1,2].map(i => Math.max(0, Math.min(255, Math.round(n[i] / a)))).concat([Math.round(a*1000)/1000]);
   };
   const visible = (el) => {
     const r = el.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return false;
@@ -222,7 +228,10 @@ window.__fg = window.__fg || (() => {
     } return p.join(' > ');
   };
   const stops = (img) => (img.match(/(rgba?|hsla?|oklch|oklab|lab|lch|color)\([^()]*\)|#[0-9a-f]{3,8}\b/gi) || []).map(rgba);
-  return {rgba, visible, chemin, stops};
+  // n indices répartis sur toute la liste (premier et dernier compris), pas un préfixe.
+  const repartir = (liste, n) => liste.length <= n ? liste
+    : [...new Set(Array.from({length: n}, (_, i) => Math.round(i * (liste.length - 1) / (n - 1))))].map(i => liste[i]);
+  return {rgba, visible, chemin, stops, repartir};
 })();
 """
 
@@ -234,8 +243,7 @@ JS_POLICE = r"""
                charge: document.fonts.check('16px "Atkinson Hyperlegible Next"'), echantillon: []};
   const els = [...root.querySelectorAll('p, li, h1, h2, h3, a, button, span, td, summary')]
     .filter(e => [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim().length > 2) && __fg.visible(e));
-  const pas = Math.max(1, Math.floor(els.length / 40));
-  els.filter((_, i) => i % pas === 0).slice(0, 40).forEach((e, i) => {
+  __fg.repartir(els, 40).forEach((e, i) => {
     e.setAttribute('data-fg-police', String(i));
     out.echantillon.push({chemin: __fg.chemin(e), famille: getComputedStyle(e).fontFamily});
   });
@@ -249,8 +257,7 @@ JS_CONTRASTE = r"""
   const els = [...root.querySelectorAll('*')].filter(e =>
     !['SCRIPT','STYLE','TEMPLATE','NOSCRIPT','SVG','PATH','OPTION'].includes(e.tagName.toUpperCase()) &&
     [...e.childNodes].some(t => t.nodeType === 3 && t.textContent.trim().length > 1) && __fg.visible(e));
-  const pas = Math.max(1, Math.floor(els.length / n));
-  return els.filter((_, i) => i % pas === 0).slice(0, n).map(e => {
+  return __fg.repartir(els, n).map(e => {
     const cs = getComputedStyle(e); const couches = []; let indetermine = false;
     let op = 1;
     for (let a = e; a && a.nodeType === 1; a = a.parentElement) {
@@ -487,8 +494,9 @@ class Garde:
             raise RuntimeError(f"aucun index.html ni MEDINA.html dans {self.dossier}")
         frags = sorted(self.dossier.glob("fragments/MEDINA_*.html"))
         voulu = [f for f in frags if f.name.startswith(f"MEDINA_{self.args.fragment}_")]
-        frag = (voulu or frags or [self.dossier / "MEDINA.html"])[0]
-        return accueil, frag.relative_to(self.dossier).as_posix()
+        if not voulu:  # ne jamais certifier une autre spécialité à la place de celle demandée
+            raise RuntimeError(f"fragment {self.args.fragment} absent de {self.dossier / 'fragments'}")
+        return accueil, voulu[0].relative_to(self.dossier).as_posix()
 
     def choisir_lecon(self, page, base, fragment):
         if self.args.lecon:
@@ -606,7 +614,9 @@ class Garde:
             try:
                 self.axe(page, nom, largeur, scope, self.chemin_axe)
             except Exception as e:
-                self.ajouter(nom, largeur, "axe", True, {"erreur": str(e)[:200]}, info=True)
+                # En mode strict, un axe non exécuté est un échec, jamais un succès silencieux.
+                self.ajouter(nom, largeur, "axe", False if self.args.axe_strict else True,
+                             {"erreur": str(e)[:200]}, info=not self.args.axe_strict)
 
     def executer(self):
         if not self.dossier.is_dir():
@@ -618,6 +628,8 @@ class Garde:
             self.chemin_axe = trouver_axe(self.args.axe)
             if not self.chemin_axe and self.args.installer_axe:
                 self.chemin_axe = installer_axe()
+        if self.args.axe_strict and not self.chemin_axe:
+            raise RuntimeError("--axe-strict demandé, mais axe.min.js est introuvable (--axe, AXE_CORE_JS ou --installer-axe)")
         srv, base = servir(self.dossier)
         debut = time.time()
         try:

@@ -116,6 +116,20 @@ class CliTest(unittest.TestCase):
             self.assertEqual(fg.main(["--out", str(Path(d) / "absent")]), 2)
             self.assertEqual(fg.main(["--out", d]), 2)  # ni index.html ni MEDINA.html
 
+    def test_fragment_demande_absent_code_2(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "index.html").write_text("<!doctype html>", encoding="utf-8")
+            (Path(d) / "fragments").mkdir()
+            (Path(d) / "fragments" / "MEDINA_S01_cardiovasculaire.html").write_text("<!doctype html>", encoding="utf-8")
+            self.assertEqual(fg.main(["--out", d, "--fragment", "S08"]), 2)
+
+    def test_axe_strict_sans_axe_code_2(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "index.html").write_text("<!doctype html>", encoding="utf-8")
+            (Path(d) / "fragments").mkdir()
+            (Path(d) / "fragments" / "MEDINA_S08_nerveux.html").write_text("<!doctype html>", encoding="utf-8")
+            self.assertEqual(fg.main(["--out", d, "--axe-strict", "--axe", str(Path(d) / "absent.js")]), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

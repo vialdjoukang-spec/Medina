@@ -45,17 +45,17 @@ Ces outils mesurent la technique et l’accessibilité. Ils ne valident ni la m�
 
 ## Référence « avant » — construction de `main` `d1a488ad`, 15 octobre 2026
 
-Commande : `python3 tools/front_garde.py --out <dossier> --axe <axe.min.js>`, sur le fragment S08 et la leçon C70, avec Chromium 141, en 40 s. Résultat : **ÉCHEC, 18 contrôles en échec**, code retour 1.
+Commande : `python3 tools/front_garde.py --out <dossier> --axe <axe.min.js>`, sur le fragment S08 et la leçon C70, avec Chromium 141, en 34 s. Résultat : **ÉCHEC, 15 contrôles en échec**, code retour 1.
 
 | Contrôle | Résultat | Constats principaux |
 |---|---|---|
 | police | ok | Atkinson Hyperlegible Next calculée et rendue sur les quatre pages (≥ 99,9 % des glyphes) |
 | erreurs | ok | Aucune erreur JS ni ressource manquante, hors favicon implicite |
 | debordement | ok | Aucun défilement horizontal à 390 px |
-| contraste | **échec** (6/8) | Accueil : texte blanc sur jaune `#ffc93c` dans `.overview .motifs li` (1,45:1). Surtitres `.eyebrow` et `.section-kicker` orange `#e0613f` sur `#e9f7ff` (3,23:1). Fragment : `.mcg-category-foot span` à 35 % d’opacité (2,08:1) ; « Neurologie » blanc sur jaune (1,54:1). Leçon : onglets `.mc-tabs button` blanc sur `#00b4c6` (2,52:1). axe confirme : 2 nœuds sur l’Accueil, 160 sur le fragment. |
-| saturation | **échec** (6/8) | Accueil : bandeau `.overview` `#ffc93c` (HSL 43/100/62). Fragment : couverture `.mcg-cover` `#0869b4` (206/91/37), lien actif de la barre latérale `#00b4c6`, lien `.medina-home` jaune. Leçon : onglets `#00b4c6` (185/100/39). |
+| contraste | **échec** (4/8 : Accueil et fragment) | Accueil : texte blanc sur jaune `#ffc93c` dans `.overview .motifs li` (1,45:1) ; `h1 em` `#0a8fb8` sur `#e9f7ff` (3,41:1). Fragment : `.mcg-category-foot span` à 35 % d’opacité (2,08:1, toutes les cartes). axe confirme : 2 nœuds sur l’Accueil, 160 sur le fragment. |
+| saturation | **échec** (6/8) | Accueil : bandeau `.overview` `#ffc93c` (HSL 43/100/62). Fragment : couverture `.mcg-cover` `#0869b4` (206/91/37), lien actif de la barre latérale `#00b4c6`, lien `.medina-home` jaune. Leçon : onglets `.mc-tabs button` `#00b4c6` (185/100/39), texte blanc à 2,52:1. |
 | cartes | ok | Ratio des hauteurs 1,05 (Accueil) à 1,13 (fragment à 1280 px) ; largeurs 1,00 |
-| transitions | **échec** (6/8) | `.mdn-toast` : `transition: all 0.4s` (400 ms) sur le fragment, la Leçon et Navigo |
+| transitions | **échec** (5/8) | `.mdn-toast` : `transition: all 0.4s` (400 ms) sur le fragment, la Leçon et Navigo |
 | mouvement-reduit | ok | `prefers-reduced-motion` respecté partout |
 | focus | ok | 17 à 19 éléments focalisés par page, tous avec un indicateur visible |
 | axe | info | Seule violation : `color-contrast` (serious) ; aucune sur la Leçon ni sur Navigo |
