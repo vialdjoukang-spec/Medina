@@ -1,3 +1,11 @@
+## Figures anatomiques — instruction Vial du 15 octobre 2026
+
+Pour le chantier S08/S05/S04/S06 uniquement, les schémas de structures anatomiques générés ou dessinés par IA, y compris les SVG écrits par une IA, sont non recevables. Appliquer [Image_Codex_Finder](docs/collaboration/instructions/IMAGE_CODEX_FINDER.md) : inventaire des figures, preuve de provenance, droits propres à la figure, attribution et contrôle visuel médical avant remplacement. Une anatomie IA démontrée entraîne un constat MAJEUR ; une origine inconnue reste une réserve. Un schéma causal non anatomique exige aussi des valeurs et flèches sourcées. Aucun remplacement automatique et aucune génération d’anatomie par IA.
+
+Toutes les copies locales de recherche doivent partager le même cache et ses verrous ; entre machines, utiliser un courtier commun via accès privé. Sans ce courtier commun, ne pas lancer de recherches parallèles indépendantes. Aucun repli direct après panne du courtier ; respecter les cooldowns et budgets. Le filtre automatique ne certifie ni l’origine humaine, ni la licence, ni l’exactitude anatomique. Les autres systèmes restent inchangés ; chaque modification conserve sa mission et ses chemins réservés.
+
+---
+
 ## Lancement Audit Alpha — ordre Vial du 15 octobre 2026
 
 Lire [l’ordre exact](docs/collaboration/ssp-v2/lancement/2026-10-15/message-vial.txt) et [les attributions du tour1](docs/collaboration/ssp-v2/lancement/2026-10-15/tour1.json). Vial lance les audits des104cours selon la répartition52/52. Un tour comprend7à10leçons par responsable ; le premier en contient7chacun. Audit médical avec enrichissements : GPT6.1 high / Opus5.5 high. Audit linguistique local préservant le fond : GPT6.1 medium / Sonnet5.5 high. Aucun audit croisé Alpha. Les nouvelles missions actives doivent être acquises dans le registre et démarrées dans leur worktree propre ; rapports et propositions restent dans leur dossier réservé. Les sources publiées et reçus historiques sont conservés jusqu’au chemin contrôlé de correction. Ne pas confondre ordre transmis àClaude et démarrage confirmé. Cette instruction remplace « planifié non lancé » pour les missions effectivement activées, sans modifier les anciens systèmes.
