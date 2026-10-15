@@ -1,0 +1,44 @@
+# E10 — Diabète sucré de type 1 : audit médical Alpha1
+
+Audit réalisé par Codex, mandat gpt-6.1-sol / effort high, génération 1. Base de travail `f664dd9e8da71f647dd3dc4da18f509f8517959c`; snapshot médical du manifeste `bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996`. Les sept empreintes du manifeste correspondent aux fichiers lus. Les propositions restent dans ce dossier : aucune source canonique, aucun glossaire global, aucun catalogue ni asset n’a été modifié.
+
+**Conclusion : corrections proposées avec réserves. Aucun avis final favorable sur l’ensemble des faits.** Aucun P0 démontré sur les passages vérifiés. Une simplification diagnostique vasculaire et une chronologie de l’urgence appellent correction P1. La lecture de toutes les surfaces ne signifie pas que toutes les références externes et tous les faits ont été revalidés.
+
+## Étendue réelle
+
+Lecture du texte intégral des quatre onglets A01–A12, E01–E03, S01–S04 et P01–P02, des deux fichiers de fenêtres, des trois quiz corrigés, des tableaux et de `glossary/e10.py`. Les 106 templates des fichiers pop comprennent fenêtres, synthèses et définitions. Les neuf images ont été ouvertes et inspectées visuellement; leurs légendes et leurs limites ont été comparées au dessin ou au tracé. Les figures 3 et 5 sont des extraits en mg/dL et ne donnent pas les dénominateurs d’un rapport AGP complet : le cours le dit correctement. L’inspection n’est pas une réinstruction des licences ni une nouvelle validation des études iconographiques.
+
+Le dossier `sources.json` indique les passages externes réellement lus, les populations et les limites. La priorité suisse a été appliquée : SSED, HUG, QualiCCare et FI, puis NICE/JBDS et complément diagnostique ESVS. Les FI de NovoRapid (avril 2026), Tresiba (décembre 2024) et Baqsimi (mars 2026) ont été rouvertes. L’échec initial HTTP503 de Baqsimi a été résolu : la FI effectivement consultée confirme l’indication dès un an et la dose unique intranasale de 3 mg.
+
+## Constats et propositions
+
+| ID | Gravité | Localisation | Constat, conséquence et correction proposée | Preuve |
+|---|---|---|---|---|
+| E10-M01 | P1 | B, A09 artères périphériques; pop1 `e10-a10-fenetre-1` | Deux pouls palpables et un ABI ≥0,9 sont présentés comme absence d’artériopathie significative ou faible probabilité sans limite supérieure. Il s’agit des critères simplifiés d’orientation de la plaie du guide suisse, pas d’un test universel d’exclusion. Ajouter l’évaluation combinée Doppler, ABI et TBI et la limite «aucun seuil isolé n’exclut». | S3, guide suisse, niveaux1A/1B; S4, recommandations2 et4 : ABI0,9–1,3, TBI≥0,70, courbes bi/triphasiques rendent l’atteinte moins probable. |
+| E10-M02 | P1 | pop1 `pareto-e10-a12` | «Le diagnostic de diabète précède […] celui de la crise» suggère une séquence qui peut différer la recherche d’acidocétose. Remplacer par les trois questions distinctes et la recherche immédiate de l’urgence. Le corps A01/A04 avait déjà la bonne priorité. | S8,1.1.10 : soins aigus avant plan détaillé si décompensation critique; S9,p24 : diagnostic rapide et traitement intensif. |
+| E10-M03 | P2 | C, S01; pop2 `pareto-e10-s01` | «Hyperglycémie sans trouble digestif» transforme la distinction endocrine/exocrine en absence de symptômes. Reformuler; mentionner les complications digestives possibles sans attribuer chaque symptôme à la neuropathie. | S8,1.14.18 et1.14.23–28 : diarrhée inexpliquée, gastroparésie et exploration propre. |
+| E10-M04 | P2 | C, S03 encadré Science→traitement | «La cétogenèse ne s’arrête que sous insuline» est trop absolu et laisse entendre l’arrêt de toute production physiologique. Préciser le contexte : dans l’acidocétose, l’insuline reste nécessaire pour faire régresser la cétose malgré la baisse du glucose. Les débits et objectifs déjà cités restent attribués au JBDS. | S9, parcours adulte : perfusion poursuivie jusqu’à résolution, cétones<0,6 et pH>7,3. |
+| E10-M05 | P2 | pop2 `pareto-e10-p02` | «Une erreur de concentration change le volume» brouille la règle correcte : à unités prescrites identiques, un changement de concentration change le volume; une conversion erronée des unités produit un surdosage. Clarifier le réglage du compteur. | S6, Tresiba100/200 : unités affichées indépendamment de la concentration, pas de conversion. |
+| E10-M06 | P2 | Périmètre administratif du cours | Aucune liste E10.x n’est présente dans les fichiers; les thèmes cliniques ne prouvent pas la couverture des modificateurs GM. Une annexe de travail liste20 codes vérifiés dans l’édition2024, avec exclusion du coma hypoglycémique de .01. L’édition OFS suisse applicable reste à confirmer. | S10; `annexe-cim.md`. |
+| E10-L01 | P1, lacune de preuve | A06 et encadrés de perfusion | Le débit0,1U/kg/h est bien attribué à l’insuline soluble humaine JBDS, et le cours avertit de ne pas le transférer à l’aspart. La FI suisse exacte de cette insuline humaine n’a pas été relue; l’autorisation IV de NovoRapid ne valide pas cette posologie. Pas de nouvelle dose proposée. | S5,S9; recherche ciblée dans FI aspart et protocole britannique. |
+| E10-L02 | P2 | Épidémiologie, stades, normes, suivi, conditions suisses | Voir matrice : les chiffres MonAM tous types ne mesurent pas le type1; stades présymptomatiques, normes analytiques et échéanciers non revalidés intégralement; remboursement2026 et tableaux complets de conduite restent ouverts. Ces lacunes ne sont pas des erreurs cliniques démontrées. | Sources et limites détaillées S1,S8,S10–S13. |
+
+Les cinq corrections M01–M05 sont effectivement préparées dans les copies de quatre fichiers sous `drafts/` et dans `enrichissements.patch`. L’annexe M06 reste dans le dossier d’audit. Aucune dose nouvelle, aucun traitement d’un autre chapitre ni aucun code partagé n’a été injecté.
+
+## Raisonnement clinique et SSP
+
+Le graphe local V2 propose E10 pour SSP3 (polydipsie),16 (amaigrissement),63 (polyurie),158 (glycémie anormale), et comme différentiel de SSP4 (fatigue) et162 (lipides anormaux). Ces arêtes ont été lues comme éléments de planification attribués, pas comme une correspondance fédérale officielle. Le cours couvre nettement la constellation soif–polyurie–amaigrissement et son urgence; la fatigue doit garder ses autres causes. La dyslipidémie secondaire n’est pas suffisamment développée comme situation de départ : S8,1.12.2 justifie une évaluation annuelle du profil lipidique dans le contexte du risque cardiovasculaire, sans ajouter ici de dose de statine non vérifiée.
+
+Les discriminants de type sont cohérents avec NICE1.1 : pas d’exclusion par âge ou IMC, deux autoanticorps au diagnostic, peptideC conditionnel avec glycémie si l’incertitude persiste. Le risque de coma est traité avant l’étiologie; le diagnostic de diabète, de type1 et de crise demeure distinct. La chaîne normal→déficit insulinique→diurèse/cétose→mesure/décision est présente dans tous les onglets. Les exceptions grossesse/allaitement et fonctions d’organe sont reliées aux FI exactes.
+
+## Réserves qui empêchent un avis global favorable
+
+La matrice complète de20 rubriques est dans `recherche.md`. Aucun «sans objet» n’a été utilisé pour masquer une absence. Les réserves importantes sont la FI de l’insuline humaine IV, les normes de laboratoires non rouvertes, les signes≥ du vieux PDF diagnostique non revus visuellement, la confirmation diagnostique asymptomatique, l’épidémiologie spécifique du type1 et les stades présymptomatiques, la nomenclature OFS applicable et le détail des règles professionnelles de conduite. La source mediXCH diagnostique a été tentée mais a donné une boucle de redirection301; sa lecture n’est pas revendiquée.
+
+La neuropathie n’est pas exclue universellement par les seuls tests normaux du protocole de plaie. La formulation de dépistage du monofilament/pallesthésie appelle également une nuance; faute de nouvelle source spécifique lue sur la performance de ces tests, aucune sensibilité, aucun seuil de petites fibres ni règle d’exclusion n’a été ajouté de mémoire.
+
+## Contrôles et statut
+
+Les contrôles réels sont consignés dans `verification.json` : empreintes sources, périmètre des écritures, conservation des identifiants/templates/images, correspondance du patch aux drafts et calculs arithmétiques. La porte de traçabilité `betta_verite.py` est exécutée sur `recherche_E10` (liens vers les fichiers de recherche uniques); sa réussite ne valide pas la médecine. Aucun build ni déploiement n’est nécessaire à ce rôle de rapport. Les deux captures d’interface n’ont pas été réalisées; aucune preuve de rendu publié n’est revendiquée.
+
+Audit différé — revue IA, distincte d’une validation médicale humaine. Rapport et propositions terminés avec réserves; cours canonique inchangé; intégration médicale par le chemin Alpha distinct requis.
