@@ -1,0 +1,85 @@
+Relecture de la garde MEDINA — 15 octobre 2026
+
+Fichiers modifiés exclusivement :
+- tools/ai_session_guard.py
+- tests/test_ai_session_guard.py
+- .github/workflows/ai-session-guard.yml
+
+Vérifications :
+- 18 tests PASSENT en 14,367 s ; log /tmp/medina-ai-session-guard-tests.log.
+- Concurrence réelle : 2 processus / 2 clones / bare local, même parent registre,
+  barrière avant push : un seul commit accepté, aucun écrasement.
+- Config réelle et bootstrap : validation réussie dans un objet commit local,
+  SHA b6b4704785dbb2ddee9530a9e11c99a07b015bd6, 270 codes des quatre systèmes.
+- Aucun push Medina, aucune ref ni index réel modifié par validation.
+- Script de validation réutilisable :
+  cd /workspace/Medina-ssp-v2
+  python3 /tmp/medina-validate-ai-session-config.py
+  (Lance read-tree/add/write-tree/commit-tree sous GIT_INDEX_FILE temporaire,
+   puis config()/approved() sur cet objet ; ne crée aucune branche.)
+
+Corrections de relecture :
+- Validation des ancêtres symlink/submodule déjà présents dans la BASE avant
+  attribution/acquire/start, en plus du contrôle du diff.
+- Remplacement d'un parent glossary/chapters/assets et racine/parents du dossier
+  docs/collaboration/ssp-v2/execution active la garde, même sans enfant protégé
+  suivi précédemment. Aucun bypass par symlink parent.
+- Toute collision de chemins est refusée, y compris audit/audit et audit/auteur.
+- Les missions ne réservant que gouvernance/rapports ne verrouillent plus un
+  cours mentionné pour comptage et ne consomment pas sa génération source.
+- start vérifie branche, HEAD exactement base, propreté et appartenance au
+  dépôt ; un --actor/--conversation correct sans bon worktree est insuffisant.
+- Tests réels bootstrap→approbation relais→libération explicite→acquisition
+  relais→renouvellement auteur génération2 sans écraser l'historique.
+
+Séquence correcte d'un démarrage (après approbation de la mission sur main et
+initialisation/protection serveur de la branche registre par le coordinateur) :
+
+BASE=$(git rev-parse origin/main)
+python3 tools/ai_session_guard.py acquire MISSION --base "$BASE"
+git worktree add -b BRANCHE_EXACTE_DU_MANIFESTE /tmp/medina-MISSION "$BASE"
+python3 tools/ai_session_guard.py start MISSION --base "$BASE" \
+  --actor IA_DECLAREE --conversation CONVERSATION_EXACTE \
+  --worktree /tmp/medina-MISSION
+
+Ce sont des modèles non exécutés. origin/main doit être rafraîchi avant BASE.
+Le CLI conversation_workspace.py existant génère son propre nom de branche ;
+ce nom ne correspond pas automatiquement à une mission centrale. Ne pas combiner
+les deux gestionnaires comme si leurs identifiants ou réservations étaient liés.
+Un audit peut créer sa branche isolée pour écrire son rapport réservé ; les
+sources demeurent un contrat de lecture contrôlé par le diff, sans sandbox OS.
+
+Relais sans deadlock :
+1. La mission bootstrap approuvée est acquise ; elle n'écrit que gouvernance.
+2. Elle propose, dans une PR séparée, le manifeste d'un coordinateur relais
+   avec ID/branche/conversation distincts. Ce manifeste est validé dans le diff,
+   mais ne devient attribution fiable qu'après intégration sur main.
+3. Conserver worktree/SHA/diffs puis libérer explicitement le bootstrap.
+4. Acquérir le relais sur le nouveau main. Le relais peut fermer le manifeste
+   bootstrap ; il ne peut modifier sa propre approbation.
+5. Pour renouveler une mission auteur, libérer son ancienne réservation après
+   conservation ; le relais approuve génération strictement supérieure dans
+   une PR distincte, puis l'auteur acquiert cette génération depuis main.
+6. Toujours préapprouver le relais suivant avant de fermer le dernier mandat
+   de gouvernance. Sinon aucune mission ne peut s'auto-approuver : récupération
+   exceptionnelle humaine/administrateur, séparée et tracée, indispensable.
+
+Limites restantes :
+- Registre initial absent : acquire échoue volontairement ; pas d'auto-init/push.
+- --base / --registry-sha sont entrées de confiance pour les contrôleurs. Le CI
+  les prend de GitHub/base et d'un fetch registre ; un appel local arbitraire
+  n'authentifie pas un commit, un acteur ou un coordinateur.
+- Identités et répartition owner Codex/Claude déclaratives ; la garde n'assure
+  pas qu'au moins deux processus travaillent réellement ni une équité mesurée.
+- Documentation de planning ordinaire hors préfixe execution reste exemptée.
+  La sémantique d'un texte copié ailleurs n'est pas détectable par chemin.
+- Préservation structurée précise : lignes chapters.json hors mission. Les
+  quatre fichiers nosology exacts doivent être les seuls nosology partagés ;
+  pas de garantie sémantique globale pour fichiers techniques partagés.
+- Contrôle post-push main diagnostique, continue-on-error, pas prévention.
+- PR target n'exécute aucun code du candidat : checkout base, fetch objets,
+  lecture Git. La protection serveur doit rendre le contrôle requis, imposer
+  PR/actualisation et restreindre les contournements ; droits actuels limités.
+- Un autre workflow portant le même nom de check peut usurper un contexte
+  Actions : un simple nom requis ne constitue pas une garantie d'identité
+  externe de la garde. Source de check et workflows doivent être protégés.

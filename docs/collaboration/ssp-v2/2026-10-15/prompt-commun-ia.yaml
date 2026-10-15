@@ -1,0 +1,76 @@
+schema: MEDINA_SSP_V2
+destinataires: [Codex, Claude, toute_IA_deleguee]
+autorite: instruction_Vial_15_octobre_2026
+portee:
+  modifier: [S08_Neurologie, S05_Endocrinologie, S04_Nephrologie, S06_Hematologie]
+  autres_systemes: lecture_seule_dans_ce_chantier
+  reference_unique: origin/main
+  production_et_audit: planifies_non_lances_par_ce_document
+  audit_croise_alpha: false
+  droits: parite_Codex_Claude_sous_permissions_GitHub_reelles
+chiffres:
+  SSP_PROFILES_2017: 265
+  etoiles_historiques: 247
+  ajouts_avec_liens_documentes: 11
+  cible_editoriale_conservatoire: 258
+  cours_existants_a_auditer: 104
+  audit: {Codex: 52, Claude: 52}
+  cours_manquants_cible: 154
+  production: {Codex: 77, Claude: 77}
+  reserves_non_exclues: 12
+  limite: ni_liste_officielle_ni_revalidation_medicale_exhaustive
+entree_obligatoire:
+  - Lire AGENTS.md, CLAUDE.md, README-V2.txt et le manifeste de sa mission.
+  - Actualiser origin/main et inventorier toutes les branches et PR, pages suivantes incluses.
+  - Fixer SHA40 de main; ne pas commencer depuis une ancienne livraison ou branche d'une autre conversation.
+  - Obtenir du coordinateur un manifeste actif deja present dans la base approuvee; les missions-planifiees ne sont pas des approbations.
+  - Acquerir la reservation distante avec ai_session_guard.py acquire; exiger le recu de generation courante.
+  - Creer un worktree propre et une branche uniques au SHA approuve; ai_session_guard.py start doit reussir.
+  - Aucun code, chemin, rapport, index Git, sortie de build ou capture mutable partage entre missions.
+reservation:
+  cle: [mission, responsable, acteur, conversation, code_mere, role, chemins, base_sha, generation]
+  transaction: commit_enfant_du_SHA_lu_puis_push_normal_avance_rapide
+  course: relire_et_recalculer_la_demande_sans_force_ni_reessai_aveugle
+  expiration: aucune_liberation_automatique
+  transfert: sauvegarder_travail_liberer_explicitement_approuver_nouvelle_generation
+  identites: declaratives_ne_pas_confondre_avec_authentification_GitHub
+travail:
+  - Un cours entier par responsable; ses sous-codes restent avec la lecon mere.
+  - Les sous-agents et nouvelles conversations respectent les memes reservations.
+  - Un auditeur lit une version fixee et ecrit seulement son rapport reserve.
+  - Les fichiers partages et catalogues sont modifies par une mission integrateur distincte.
+  - Un veto est motive, trace, cible sur version et operation; parite des deux IA; instruction humaine applicable prioritaire.
+deduction_clinique:
+  ordre: SSP_presentation_vers_diagnostics_et_differentiels_vers_concept_precis_vers_CIM10_vers_fragment_proprietaire
+  relations: [diagnostic, differentiel, contexte, candidat_non_confirme]
+  preuve: [URL, editeur, version, date_lecture, section_ou_page, passage_paraphrase, population, limites]
+  exclusions: [inference_par_plage_CIM, couverture_gloutonne_comme_validation, code_symptome_comme_etiologie, source_non_lue_comme_preuve]
+  hors_fragment: renvoi_lecture_seule_vers_proprietaire_sans_dupliquer_lecon
+  absence_de_preuve: lacune_explicite_jamais_exclusion_automatique
+  audit: toutes_surfaces_onglets_fenetres_figures_tableaux_quiz_glossaire
+qualite:
+  medical: sources_suisses_applicables_puis_europeennes_passages_reellement_consultes
+  medicaments: information_professionnelle_suisse_produit_exact_version_dose_voie_frequence_duree_maximum_adaptations
+  francais: precis_elegant_progressif_attrayant_sans_perdre_chiffres_negations_conditions_ni_incertitude
+  fond: expliquer_normal_puis_mecanisme_puis_consequence_puis_decision
+  token: lire_socle_empreinte_une_fois_puis_deltas_et_passages_utiles_cache_de_preuves_attribue_et_invalide_si_changement
+sortie:
+  - Livrer diff cible, SHA base et final, empreintes, sources lues, controles reels, captures et reserves.
+  - Rafraichir main, conserver les commits concurrents, controler mission et generation sur le candidat final.
+  - Ouvrir une PR; ne jamais pousser directement les sources sur main; aucune fusion globale d'un ancien arbre.
+  - Integrer sequentiellement les mutations partagees; push normal uniquement; si main avance reconstruire un candidat frais.
+  - Verifier controles sur SHA final, puis preuve de construction et routes publiques apres deploiement.
+  - Distinguer redige, relu, corrige, teste, publie et valide medicalement; aucun audit absent declare fait.
+incident:
+  - Geler uniquement la mutation concernee; sauvegarder branches SHA diff preuves.
+  - Comparer base ancienne, livraison, main actuel; rejouer le petit diff dans une nouvelle branche depuis main frais.
+  - Resoudre cliniquement avec source applicable; regenerer catalogues depuis les sources courantes; renouveler preuves affectees.
+  - Si conflit de reservation, aucune ecriture partagee; lectures et autres missions non concernees continuent.
+  - Interdire force sur main, reset destructeur, suppression de branche tierce, choix aveugle ours/theirs et effacement des anciens recus.
+application:
+  local: tools/ai_session_guard.py
+  CI: .github/workflows/ai-session-guard.yml
+  registre: medina/session-registry
+  controle_requis: MEDINA / mission et périmètre
+  serveur: PR_obligatoire_controle_strict_sans_bypass_force_ni_suppression_a_activer_sur_GitHub
+  limite: un_prompt_ne_peut_garantir_zero_conflit_ni_contraindre_un_administrateur_autorise_a_contourner

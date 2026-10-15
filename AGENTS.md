@@ -1,3 +1,13 @@
+## Instruction actuelle — SSP V2 et prévention des conflits, 15 octobre 2026
+
+Pour le chantier **S08/S05/S04/S06 uniquement**, lire le [contrat V2](docs/collaboration/ssp-v2/2026-10-15/README-V2.txt), le [prompt commun IA](docs/collaboration/ssp-v2/2026-10-15/prompt-commun-ia.yaml) et les [attributions](docs/collaboration/ssp-v2/2026-10-15/plan-v2.json). Le plan révisé compte 258 cibles pédagogiques conservatoires (104 cours existants et 154 à produire), avec audit 52/52 et production 77/77 Codex/Claude ; ce n'est pas une liste fédérale officielle ni une revalidation clinique exhaustive. Alpha ne comporte pas d'audit croisé systématique. Les autres systèmes restent en lecture seule dans ce chantier. Aucune production médicale n'est lancée par ces documents.
+
+Toute IA et toute nouvelle conversation doit obtenir une mission préapprouvée dans `main`, acquérir sa réservation distante avec `tools/ai_session_guard.py acquire`, créer son worktree et sa branche exclusifs depuis la base SHA exacte, puis réussir `start`. Une fiche de `missions-planifiees` n'est pas une mission active. Les sources et rapports réservés passent par PR et contrôle de génération/périmètre ; les fichiers partagés exigent une mission d'intégration. Ne jamais forcer `main`, écraser une branche tierce ou employer le reçu historique « en l'état » pour publier une correction médicale. Lire la procédure de relais de gouvernance avant de libérer le dernier mandat.
+
+Cette consigne remplace les anciennes modalités administratives incompatibles dans ce chantier, dont l'obligation d'audit croisé ; leurs preuves et les règles médicales restent conservées. Les permissions et protections GitHub réelles, les droits de contournement et les identités déclaratives sont explicités dans le contrat : aucun prompt ne garantit à lui seul zéro conflit.
+
+---
+
 ## Travail en conversations parallèles — 15 octobre 2026
 
 Pour S08/S05/S04/S06, lire [le protocole par conversation](docs/collaboration/instructions/CONVERSATIONS_PARALLELES_2026-10-15.txt) et [son PDF](docs/collaboration/Medina-protocole-collaboration.pdf). Une tâche, un cours, un rôle, un worktree et des chemins propres ; intégration séquentielle des fichiers partagés. Plusieurs conversations d’une même IA sont possibles sur des chemins distincts. La politique commune de parité et de publication reste applicable.
