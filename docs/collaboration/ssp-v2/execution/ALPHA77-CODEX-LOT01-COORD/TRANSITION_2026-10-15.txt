@@ -1,0 +1,58 @@
+MISSION: Reprendre le chantier Medina exactement au checkpoint ci-dessous. Continuer, sans recommencer les audits déjà livrés et sans demander une nouvelle autorisation pour le travail déjà autorisé.
+REPO: vialdjoukang-spec/Medina
+DATE: 15 octobre 2026, Europe/Zurich
+RELAIS_BRANCH: codex/alpha77/lot01-coord-g1
+RELAIS_DIR: docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-LOT01-COORD/
+LIRE_D_ABORD: AGENTS.md du main actuel ; HANDOFF_2026-10-15.json et handoff-tools/ dans RELAIS_DIR ; contrats 7_STARTER_CODEX.md, SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml et SSP V2.
+
+AUTORISATIONS_ET_LIMITES:
+- Seulement S08 neurologie, S05 endocrinologie, S04 néphrologie, S06 hématologie. Les systèmes antérieurs restent en lecture seule. Cardiologie sert uniquement de modèle de structure/frontend.
+- Codex et Claude sont autonomes, chacun garde ses attributions 50 % par système. Préserver intégralement les contributions Claude et les autres conversations. Pas d'audit croisé Alpha systématique.
+- Audit médical GPT6.1 high ; langue GPT6.1 medium, corrections locales sans changement du fond. Jusqu'à six sous-agents plus le coordinateur, avec chemins distincts et un seul rédacteur de source par cours.
+- Sources réellement lues : Suisse puis Europe ; médicaments selon la FI Swissmedic du produit exact. Aucun fait, droit, audit, contrôle visuel ou statut de validation inventé.
+- Structures anatomiques générées/dessinées par IA interdites, SVG anatomiques compris. Originaux vérifiés, licence propre à la figure, attribution visible, inspection médicale, cache/quotas/Retry-After.
+- Chaque cours doit contenir sa sémiologie clinique pA et le PREMIER sous-onglet de pS « Sémiologie fondamentale et analytique », avec ses neuf sections contractuelles. Premier h3 exact : « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? ».
+- Mission préapprouvée dans main, réservation distante, branche/worktree exclusifs et START avant toute écriture. Reprendre les baux actifs ; jamais réacquérir aveuglément la génération1. PR+contrôles, pas de force-push, pas de second main, pas de suppression de l'historique.
+
+ETAT_VERIFIE:
+- Lot Codex01/11 : I63,G01,E10,E05,N17,D69,D64. 14/14 rapports initiaux poussés ; 7 candidats source corrigés, committés ET poussés sur leurs branches ; 0/7 clôture effective ; 0/77 au total. Les77 comprennent les7 premiers.
+- MED provisoire sur les7 ; LANG finalisé et lié aux empreintes pour I63/E10/N17 ; LANG à terminer pour G01/E05/D69/D64. SEMIO seul closed pour I63/G01 ; provisoire pour les5 autres. Ces statuts ne constituent pas une validation médicale humaine.
+- Aucune PR source Codex Alpha77 ni reçu Codex Alpha n'a encore été créé. N17 et I63 ont déjà leurs publication-snapshot et preuves normalisées. Droits originaux préparés et contrôlés pour les7 candidats ; détails dans les dossiers INTEGRATE et le checkpoint.
+- Dernier main observé : 958474d2a88e0eed0f9f607090adc4473c721cec, incluant les publications Claude E11/N18/I61. Relire main : il peut continuer à avancer.
+- Contrôleur suspendu volontairement pour changement de chat, branche medina/7-starter-codex, état 1eddaa273b8d8586d7160158b20121cffa74a562 : NEEDS_RECONCILIATION, lot0, nonce26cdef051e2a44999ec5276ee5a632f7, campaign_execution_enabled=false, image_execution_enabled=true. Aucun arrêt terminal du Finder. Tous les agents de ce chat ont arrêté leur travail après sauvegarde.
+- Sept baux INTEGRATE, coordination, GOV05 et SCIENCES restent acquis. Les anciens baux OUTIL-PUBLICATION/STARTER/JAUGE et GOV04 sont libérés. Vérifier le registre distant réel, pas une mémoire locale.
+
+BRANCHES_SOURCE_SAUVEGARDEES:
+I63 codex/alpha77/i63-integrate-g1 fea029d7c68f5a7e267c3e8a81f968e441cf633b
+G01 codex/alpha77/g01-integrate-g1 c07fb97199627b5a35be6305250048cbe4908456
+E10 codex/alpha77/e10-integrate-g1 759cc3905c1624f250c6bb585231d02e875e88e2
+E05 codex/alpha77/e05-integrate-g1 97ad7150c0d61d94fd5b8d99a61d0ecb43c692da
+N17 codex/alpha77/n17-integrate-g1 20c3dbb2d60e335b5e86cc8129cdb42813a06217
+D69 codex/alpha77/d69-integrate-g1 2d23b7729def480496b5aa760eba6b387db6921c
+D64 codex/alpha77/d64-integrate-g1 aeb4c0172b01a4a13af96c115120957171a41fff
+Chaque worktree local /workspace/medina-alpha77/CODE était propre au checkpoint. Les rapports sont dans docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-CODE-INTEGRATE/. Source médicale de comparaison des7 : 3131a5cbf6cc003ead358e25152073959c53c4d9 ; ancre historique8712c3fe758f0c7e1f9fb85378def47b554edb53.
+
+DEUX_BLOCAGES_TECHNIQUES_REELS_A_CORRIGER:
+1) SCIENCES : PR149 fusionnée4b8a088d8741f287645cf1808ca23144e86837d7. Mission ALPHA77-CODEX-OUTIL-SCIENCES acquise ET START_OK ; branche codex/alpha77/outil-sciences-g1, worktree /workspace/Medina-sciences-alpha, base exacte4b8a088d..., propre. AUCUNE implémentation commencée.
+   tests/audit_sciences.py utilise une ancienne base c50a... où plusieurs cours n'existent pas et accepte seulement SVG, rejetant les originaux img accessibles. Ajouter --base SHA40 exact, comparaison réelle et échec explicite si fichier manque sans preuve de nouvelle production approuvée ; accepter SVG accessible ou img avec source/alt et légende. Conserver280mots, figures, navigation et4callouts. Historique hors périmètre inchangé. Prompt Starter doit transmettre la base exacte. Chemins autorisés : tests/audit_sciences.py, tests/test_audit_sciences.py, tools/starter_codex.py, tests/test_starter_codex.py, docs/collaboration/instructions/AUDIT_SCIENCES_ALPHA.md. Tests significatifs à créer ; aucun résultat à prétendre avant exécution.
+2) PUBLICATION-02 : PR151 https://github.com/vialdjoukang-spec/Medina/pull/151, tête b4ad0e1bd00396ac4822e8913ac81dfd6486020f, ajoute la mission ALPHA77-CODEX-OUTIL-PUBLICATION-02. Pas encore fusionnée/acquise/démarrée. Deux échecs CI dus au décalage de main après les publications Claude : fusionner main dans la branche GOV05, préserver Claude, vérifier et pousser normalement ; ne pas affaiblir les gardes.
+   Bug tools/alpha_publication.py : visible_text masque les vrais template#ch-CODE et les panneaux cachés mais accessibles par les onglets ; il rejette ainsi des réserves/attributions effectivement accessibles dans le cours. Concaténation des HTML depuis un set également non déterministe.
+   Patch candidat et13 tests réussis uniquement en scratch : handoff-tools/alpha_publication_pub02.patch, alpha_publication_pub02.py, test_alpha_reachable_pub02.py. Après approbation/acquire/start de PUB02 dans son propre worktree, appliquer et revoir. Reconnaître uniquement le template du cours connu, les cibles locales uniques réellement pilotées par data-p/data-s ; aria-controls cohérent s'il existe. Continuer de rejeter script/style/templates étrangers, contenus explicitement masqués et cibles inaccessibles ; trier a,b,c,d,pop1,pop2. L'outil du dépôt n'a PAS été modifié, aucune garde contournée.
+
+ORDRE_DE_REPRISE:
+1. Lire et vérifier main, registre, branches, états, baux et absence d'anciens workers. Réconcilier explicitement le MÊME lot/nonce avec le nouveau contrôleur ; pas de lancement doublon.
+2. Corriger SCIENCES dans sa mission déjà démarrée. Réparer/fusionner l'approbation PR151 puis implémenter PUB02 dans une nouvelle branche/worktree acquise. Tester et fusionner les outils après CI.
+3. Terminer LANG G01/E05/D69/D64. Pour G01 une proposition locale exacte attend dans lang-final-proposals.json, NON appliquée : « La suspicion de complication ne doit donc pas créer un délai d’antibiotique. » vers « La suspicion de complication ne doit donc pas retarder l’antibiothérapie. ». Après toute retouche, vérifier le fond puis actualiser empreintes, rapports et snapshots ; ne pas refaire les audits inchangés.
+4. Reprendre les publications Codex, N17 et I63 prêts en premier. Helper handoff-tools/prepare_publication.py ; adapter son appel au parser corrigé. Merger main normalement dans chaque branche pour préserver les reçus Claude et les autres cours. Commit preuves/snapshots, puis reçu Alpha numéroté lié au source_commit immuable et aux7 fichiers core+assets exacts.
+5. Les MED restant provisoires, publier seulement provisional avec réserves visibles et MED/LANG provisional cohérents. Résoudre ensuite les réserves médicales réellement. Ne jamais compter une publication provisoire comme une clôture.
+6. PR sources, CI et contrôles historiques/mission/Alpha, fusion séquentielle, vérifier le déploiement GitHub Pages et les empreintes publiques réelles. Garder les preuves de publication et clôturer seulement quand tous les critères réels sont satisfaits.
+7. 7_Starter_Codex ne lance le lot suivant qu'après7 clôtures réelles. Arrêt final à77 au total et fin des images, conservation des sources/historique.
+
+COMMUNICATION_ET_ENVIRONNEMENT:
+- Français, très peu de texte. Une jauge dans chaque réponse de coordination, calculée depuis tools/audit_gauge.py --fresh. Avant réponse finale, passer le brouillon réel dans tools/audit_response_gate.py avec le même cache ; preuve valable30secondes. Script/Stopgate17tests, PR145 fusionnée. Hook local activable via /hooks sur hôte compatible ; ce chat ne fournit ni hook imposé ni bandeau fixe. Aucun faux suivi entre sessions.
+- git fetch ET git push normaux fonctionnent. La CLI gh a renvoyé401 ; GitHub App MCP fonctionne pour lecture/PR/merge/CAS. Ne pas changer les secrets, l'authentification ou les proxys ; pas de force.
+- Environ1,1Go libre sur32Go : éviter nouveaux checkouts complets, employer sparse pour les worktrees techniques, conserver sources et preuves. GOV05 local /workspace/Medina-alpha77-gov05 est déjà sparse .medina.
+- Conversation Claude autorisée via issue107, dernier message6202149454 : Codex prend le correctif scientifique commun, Claude continue ses cours sans éditer le test partagé. Ne pas créer une seconde implémentation concurrente.
+- Les PDF antérieurs restent dans docs/collaboration/ssp-v2/2026-10-15/. Ne pas les recréer pour ce relais.
+- Le fichier HANDOFF_2026-10-15.json est plus récent que certains checkpoints d'agents copiés : il fait foi pour les SHA sauvegardés et les dossiers désormais committés, sous réserve d'une vérification distante au démarrage.
+ACTION_ATTENDUE: reprendre concrètement ce plan, sans nouveau questionnaire de confirmation et sans annonce de clôture non démontrée.

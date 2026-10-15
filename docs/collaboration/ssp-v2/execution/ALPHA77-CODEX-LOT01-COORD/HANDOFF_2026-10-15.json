@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-15T21:13:18.179201+00:00",
+  "user_order": "transition_to_another_chat_pause_after_checkpoint",
+  "main_seen": "958474d2a88e0eed0f9f607090adc4473c721cec",
+  "controller": {
+    "main_sha": "958474d2a88e0eed0f9f607090adc4473c721cec",
+    "state_sha": "1eddaa273b8d8586d7160158b20121cffa74a562",
+    "parent_state_sha": "98f665adec6e1dbafe07311dc25603368410bd83",
+    "phase": "NEEDS_RECONCILIATION",
+    "request_id": "26cdef051e2a44999ec5276ee5a632f7",
+    "native_agent_id": "/root/reprise_controleur",
+    "batch": 0,
+    "closed": [],
+    "config_sha256": "b9859746b4f88251f54effe996ed634309c496b3986f6db9e7bea4e2c386941e",
+    "campaign_execution_enabled": false,
+    "image_execution_enabled": true,
+    "control_path": "/workspace/scratch/starter-native-runtime/control.json",
+    "terminal_stop": false
+  },
+  "codex": {
+    "batch": 0,
+    "closed_total": 0,
+    "closed_cycle": 0,
+    "initial_reports": 14,
+    "published_source_PRs": 0,
+    "courses": [
+      {
+        "code": "I63",
+        "branch": "codex/alpha77/i63-integrate-g1",
+        "sha": "fea029d7c68f5a7e267c3e8a81f968e441cf633b",
+        "clean": true,
+        "reports": {
+          "MED": "provisional",
+          "LANG": "provisional",
+          "SEMIO": "closed"
+        }
+      },
+      {
+        "code": "G01",
+        "branch": "codex/alpha77/g01-integrate-g1",
+        "sha": "c07fb97199627b5a35be6305250048cbe4908456",
+        "clean": true,
+        "reports": {
+          "MED": "provisional",
+          "LANG": "not_done",
+          "SEMIO": "closed"
+        }
+      },
+      {
+        "code": "E10",
+        "branch": "codex/alpha77/e10-integrate-g1",
+        "sha": "759cc3905c1624f250c6bb585231d02e875e88e2",
+        "clean": true,
+        "reports": {
+          "MED": "provisional",
+          "LANG": "provisional",
+          "SEMIO": "provisional"
+        }
+      },
+      {
+        "code": "E05",
+        "branch": "codex/alpha77/e05-integrate-g1",
+        "sha": "97ad7150c0d61d94fd5b8d99a61d0ecb43c692da",
+        "clean": true,
+        "reports": {
+          "MED": "provisional",
+          "LANG": "not_done",
+          "SEMIO": "provisional"
+        }
+      },
+      {
+        "code": "N17",
+        "branch": "codex/alpha77/n17-integrate-g1",
+        "sha": "20c3dbb2d60e335b5e86cc8129cdb42813a06217",
+        "clean": true,
+        "reports": {
+          "MED": "provisional",
+          "LANG": "provisional",
+          "SEMIO": "provisional"
+        }
+      },
+      {
+        "code": "D69",
+        "branch": "codex/alpha77/d69-integrate-g1",
+        "sha": "2d23b7729def480496b5aa760eba6b387db6921c",
+        "clean": true,
+        "reports": {
+          "MED": "provisional",
+          "LANG": "not_done",
+          "SEMIO": "provisional"
+        }
+      },
+      {
+        "code": "D64",
+        "branch": "codex/alpha77/d64-integrate-g1",
+        "sha": "aeb4c0172b01a4a13af96c115120957171a41fff",
+        "clean": true,
+        "reports": {
+          "MED": "provisional",
+          "LANG": "not_done",
+          "SEMIO": "provisional"
+        }
+      }
+    ]
+  },
+  "tooling": {
+    "SCIENCES": {
+      "approved": true,
+      "started": true,
+      "branch": "codex/alpha77/outil-sciences-g1",
+      "worktree": "/workspace/Medina-sciences-alpha",
+      "base": "4b8a088d8741f287645cf1808ca23144e86837d7",
+      "implementation": "not_started"
+    },
+    "PUBLICATION_02": {
+      "approval_pr": 151,
+      "approval_pr_head": "b4ad0e1bd00396ac4822e8913ac81dfd6486020f",
+      "approved": false,
+      "reason_ci_failed": "main advanced with Claude publications; merge actual main into governance branch, preserve Claude, then normal push and recheck",
+      "implementation": "scratch_only",
+      "scratch_tests_passed": 13
+    }
+  },
+  "copied_artifacts": {
+    "alpha_publication_pub02.py": "308562982d060fec2d298cc461993e99e39b471856897e280022df32475322ea",
+    "CONTROLEUR_HANDOFF_2026-10-15.json": "73e15adb38c470df246bcff4fd968d43e1f09773d97e28e3ea8205c5cad62954",
+    "alpha_publication_pub02.patch": "9bdac305d026f37d923d1862184f36865e6a34ae30cd9f093205b26f92e565ee",
+    "prepare_publication.py": "79736e5bdda3a476469a8db3f47551d7e80bde3c2e8ecf45d75bfd76a8b7b0e8",
+    "test_alpha_reachable_pub02.py": "7e91b28195215fd8c1650d18bb0ecd6185744acdac8119535b03bb79e2bc451c",
+    "reprise_starter_service.js": "bc4d8eaa495455522949bec0856da1b0185d7138eb9382bcc769e4fd502fc413",
+    "TRANSITION_CHECKPOINT.json": "13689c779e9998c3857131d7c7e438601a39024838c71a0f73ee08901796ba84",
+    "visible_text_pub02.txt": "2ef8de65602f28c9739a17f064fa5ae88235ebae9b5cfd5c42e6c9e8d9065d8a",
+    "reprise_starter_transport.py": "04e8956520027f8ba052f421e31e986f5bd7fc8f5831aaf68813a6acd6233bcb"
+  },
+  "notes": [
+    "Older publication checkpoint copied unchanged; this handoff JSON supersedes its then-uncommitted-directory flags.",
+    "All seven code branches pushed and clean at checkpoint; verify actual remote refs before continuing.",
+    "No course closed: medical provisional reserves remain; no claim of human medical validation.",
+    "About1.1GB disk free; use sparse isolated tooling worktrees and preserve source/history."
+  ]
+}
