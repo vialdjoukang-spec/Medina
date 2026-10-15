@@ -1,0 +1,1672 @@
+{
+ "mission": "ALPHA77-CLAUDE-I61-INTEGRATE",
+ "phase": 1,
+ "role": "Agent W (rédacteur et intégrateur)",
+ "code": "I61",
+ "base": "abd681e5",
+ "date": "2026-10-15",
+ "rapports_sources": [
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-MED/",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-I61-LANG/"
+ ],
+ "bilan": {
+  "MED": {
+   "MAJEUR": 5,
+   "MINEUR": 10,
+   "ENRICHISSEMENT": 5,
+   "traites": 20,
+   "statuts": {
+    "MED-01": "corrigé",
+    "MED-02": "corrigé",
+    "MED-03": "corrigé",
+    "MED-04": "corrigé",
+    "MED-05": "corrigé",
+    "MED-06": "corrigé",
+    "MED-07": "corrigé",
+    "MED-08": "corrigé",
+    "MED-09": "corrigé",
+    "MED-10": "corrigé",
+    "MED-11": "corrigé",
+    "MED-12": "intégré",
+    "MED-13": "intégré",
+    "MED-14": "intégré (justification causale non sourcée retirée)",
+    "MED-15": "intégré (phrase sur l’indisponibilité des antidotes non reprise : absente du résumé lu)",
+    "MED-16": "intégré",
+    "MED-17": "corrigé",
+    "MED-18": "corrigé (texte Sciences et fenêtre i61-boston)",
+    "MED-19": "corrigé",
+    "MED-20": "corrigé"
+   }
+  },
+  "LANG": {
+   "propositions": 188,
+   "appliquees": 185,
+   "non_appliquees": [
+    {
+     "id": "LANG-112",
+     "statut": "non appliquée",
+     "motif": "remplacée par la réécriture MED-09 (arbre de Wilson distinct du score DIAGRAM)"
+    },
+    {
+     "id": "LANG-127",
+     "statut": "non appliquée",
+     "motif": "remplacée par la correction MED-02 (formulation attribuée Berne/ESO)"
+    },
+    {
+     "id": "LANG-201",
+     "statut": "non appliquée",
+     "motif": "remplacée par la correction MED-03 (formulation attribuée Berne/ESO)"
+    }
+   ],
+   "renvois_medicaux": 18,
+   "renvois_tranches": {
+    "LANG-019": "tranché : libellé OFS (I67.10 acquis, I67.11 acquise)",
+    "LANG-023": "tranché : 664 décès sur la cohorte entière",
+    "LANG-037": "tranché : légende alignée",
+    "LANG-042": "tranché : « résultent surtout »",
+    "LANG-047": "tranché avec MED-06 ; population CADMUS précisée",
+    "LANG-059": "tranché : épisodes focaux transitoires ajoutés (Berne)",
+    "LANG-092": "tranché : non-séquitur retiré",
+    "LANG-111": "tranché : niveau liquide-liquide (McGurgan « blood-fluid level »)",
+    "LANG-115": "tranché : « ni microangiopathie » ajouté",
+    "LANG-119": "tranché : deux dates du document CHUV distinguées",
+    "LANG-159": "tranché : correction transitoire du concentré (FI Beriplex)",
+    "LANG-165": "tranché : jugement bernois et chiffres du sous-ensemble autopsique explicités",
+    "LANG-167": "tranché : légende et fenêtre harmonisées",
+    "LANG-168": "tranché : libellé OFS",
+    "LANG-171": "tranché : « Déconseillée, sans délai indiqué » (Berne, recommandations non contraignantes)",
+    "LANG-179": "vérifié conforme à Berne (dabigatran : mRS préalable < 3 ; anti-Xa : exclusion mRS > 3) ; « mêmes critères » corrigé",
+    "LANG-182": "tranché : cinq rubriques rédigées d’après les FI suisses lues le 15.10.2026",
+    "LANG-200": "tranché : « ni microangiopathie » ajouté"
+   }
+  }
+ },
+ "sources_relues_par_W": [
+  "Bern Stroke Guidelines 08/2026, PDF SHA-256 3ff2eeaa…b0d0 (schéma de réversion, critères Boston, tableau conduite)",
+  "Goeldlin et coll., J Stroke 2022 (PMC9194537, texte intégral via E-utilities)",
+  "McGurgan et coll., Pract Neurol 2021 (PMC7982923)",
+  "Résumés PubMed 40023176, 41197104, 38336370, 29348301, 29331631, 31008329, 38165372",
+  "CHUV CCL_LCC8_DR_001 v2 du 09.06.2026",
+  "OFS CIM-10-GM 2024 ClaML FR (nosology/sources)",
+  "FI suisses (tools/swissmedic_fi.py, AmiKo) : Konakion MM (janv. 2022), Trandate (mars 2026), Cleviprex (juin 2020), Tranexamic OrPha (févr. 2024), Keppra perfusion (mai 2025)"
+ ],
+ "journal_lang": [
+  {
+   "id": "LANG-001",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-002",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-003",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-004",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-005",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-006",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-007",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-008",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-009",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-010",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-011",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-012",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-013",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-014",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-015",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-016",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-017",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-018",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-020",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-021",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-022",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-024",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-025",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-026",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-027",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-028",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-029",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-030",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-031",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-032",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-033",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-034",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-035",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-036",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-038",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-039",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-040",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-041",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-043",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-044",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-045",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-046",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-048",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-049",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-050",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_a.html"
+  },
+  {
+   "id": "LANG-051",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-052",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-053",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-054",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-055",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-056",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-057",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-058",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-060",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-061",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-062",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-063",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-064",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-065",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-066",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-067",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-068",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-069",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-070",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-071",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-072",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-073",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-074",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-075",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-076",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-077",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-078",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-079",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-080",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-081",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-082",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-083",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-084",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-085",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-086",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-087",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-088",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-089",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-090",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-091",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-093",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-094",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-095",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-096",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-097",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-098",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-099",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-100",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-101",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-102",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-103",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-104",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-105",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-106",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-107",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-108",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_b.html"
+  },
+  {
+   "id": "LANG-109",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-110",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-112",
+   "statut": "non appliquée",
+   "motif": "remplacée par la réécriture MED-09 (arbre de Wilson distinct du score DIAGRAM)"
+  },
+  {
+   "id": "LANG-113",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-114",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-116",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-117",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-118",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-120",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-121",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-122",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-123",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-124",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-125",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-126",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-127",
+   "statut": "non appliquée",
+   "motif": "remplacée par la correction MED-02 (formulation attribuée Berne/ESO)"
+  },
+  {
+   "id": "LANG-128",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-129",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-130",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-131",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-132",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-133",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_c.html"
+  },
+  {
+   "id": "LANG-134",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-135",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-136",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-137",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-138",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-139",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-140",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-141",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-142",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-143",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-144",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-145",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_d.html"
+  },
+  {
+   "id": "LANG-146",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-147",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-148",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-149",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-150",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-151",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-152",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-153",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-154",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-155",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-156",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-157",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-158",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-160",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-161",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-162",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-163",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-164",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-166",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-169",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-170",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-172",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-173",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-174",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-175",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop1.html"
+  },
+  {
+   "id": "LANG-176",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-177",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-178",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-180",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-181",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-183",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-184",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-185",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-186",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-187",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-188",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-189",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-190",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-191",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-192",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-193",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-194",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-195",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-196",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-197",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-198",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-199",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-201",
+   "statut": "non appliquée",
+   "motif": "remplacée par la correction MED-03 (formulation attribuée Berne/ESO)"
+  },
+  {
+   "id": "LANG-202",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-203",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-204",
+   "statut": "appliquée",
+   "fichier": "chapters/I61/I61_pop2.html"
+  },
+  {
+   "id": "LANG-205",
+   "statut": "appliquée",
+   "fichier": "glossary/i61.py"
+  },
+  {
+   "id": "LANG-206",
+   "statut": "appliquée",
+   "fichier": "glossary/i61.py"
+  }
+ ],
+ "journal_med_et_renvois": [
+  {
+   "ids": [
+    "MED-07"
+   ],
+   "constat": "La source cite aussi la cause inconnue.",
+   "action": "ajout de la cause inconnue",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "la récidive hémorragique prédomine seulement en cas d’angiopathie amyloïde (rapport de cot",
+   "source": "Goeldlin et coll., J Stroke 2022 (registre suisse), résultats"
+  },
+  {
+   "ids": [
+    "MED-15"
+   ],
+   "constat": "Surmortalité sous anticoagulant non chiffrée.",
+   "action": "enrichissement inséré (phrase sur les antidotes non reprise : absente du résumé lu)",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "Les deux classes sont associées à une moins bonne évolution fonctionnelle (rapport de cote",
+   "source": "Siepen et coll., Stroke Vasc Neurol 2024, résumé (aOR 1,71 ; 1,28)"
+  },
+  {
+   "ids": [
+    "MED-08"
+   ],
+   "constat": "Chiffres mondiaux non rattachés à une source lue.",
+   "action": "remplacement par les valeurs de la recommandation européenne",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "on estime 3,41 millions de cas et 2,89 millions de décès par an (données 2021)",
+   "source": "ESO–EANS 2025 (Steiner et coll., Eur Stroke J 2025), résumé"
+  },
+  {
+   "ids": [
+    "MED-08"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "<section class=\"ilot\" id=\"i61-a03\">",
+   "source": "Steiner et coll. — Recommandation ESO–EANS sur l’AVC dû à une hémorragie intracérébrale spontanée (Eur Stroke J 2025;10:1007–1086)"
+  },
+  {
+   "ids": [
+    "LANG-023"
+   ],
+   "constat": "Dénominateur du taux de décès ambigu.",
+   "action": "dénominateur précisé (664 décès sur 2650 patients)",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "et 25,1 % étaient décédés",
+   "source": "Goeldlin et coll., J Stroke 2022, résumé (« 664 had died (25.1%) »)"
+  },
+  {
+   "ids": [
+    "LANG-037"
+   ],
+   "constat": "Légende contredite par le paragraphe et l’encadré final.",
+   "action": "légende alignée sur le texte de l’îlot",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "Chaque étape ouvre une possibilité thérapeutique distincte (pression, hémostase, chirurgie",
+   "source": "Texte de l’îlot 4 (sources de l’îlot inchangées)"
+  },
+  {
+   "ids": [
+    "LANG-042"
+   ],
+   "constat": "Comparatif sans second terme.",
+   "action": "formulation sans comparatif ouvert",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "résultent plus souvent d’une artériopathie des perforantes",
+   "source": "McGurgan et coll., Pract Neurol 2021 (« more likely result from deep perforator arteriopathy »)"
+  },
+  {
+   "ids": [
+    "MED-06",
+    "LANG-047"
+   ],
+   "constat": "Le registre classe en catégories mutuellement exclusives.",
+   "action": "méthode de classement décrite exactement",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "Il faut lire ce tableau avec ses limites : les causes ne s’excluent pas (un patient hypert",
+   "source": "Goeldlin et coll., J Stroke 2022, méthodes (« mutually exclusive categories » ; « did not mandate a strict hierarchy »)"
+  },
+  {
+   "ids": [
+    "LANG-047"
+   ],
+   "constat": "Origine des pourcentages CADMUS imprécise.",
+   "action": "population précisée",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "Dans le registre, l’atteinte mixte",
+   "source": "Goeldlin et coll., Neurology 2024 (CADMUS), résumé"
+  },
+  {
+   "ids": [
+    "LANG-019"
+   ],
+   "constat": "Accord ambigu ; le libellé OFS qualifie les deux entités d’acquises.",
+   "action": "libellé aligné sur la CIM-10-GM 2024 française",
+   "fichier": "chapters/I61/I61_a.html",
+   "ancre": "anévrisme ou fistule artério-veineuse acquis I67.1",
+   "source": "OFS, CIM-10-GM 2024 ClaML FR : I67.10 « Anévrisme cérébral (acquis) », I67.11 « Fistule artério-veineuse cérébrale (acquise) »"
+  },
+  {
+   "ids": [
+    "MED-01"
+   ],
+   "constat": "Le PCC présenté comme « inefficace » sous anticoagulant direct : position bernoise, l’ESO l’admet après pesée.",
+   "action": "jugement attribué au protocole bernois ; encadré de divergence",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "Un critère non rempli n’autorise pas de produit de remplacement : pour les anti-Xa et le d",
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44–45 (« no efficacy in DOAC bleeding ») ; ESO–EANS 2025, PICO 3.3.2.1 (« PCC may be considered for FXaI-ICH », 15/15)"
+  },
+  {
+   "ids": [
+    "MED-05"
+   ],
+   "constat": "Cellule incomplète : cas de dose élevée imposée par la FI.",
+   "action": "règle légale complétée",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "faible dose préférée par Berne (",
+   "source": "Information professionnelle suisse Ondexxya, avril 2025 (AmiKo, GTIN 7680677590016), Posologie, tableau 2"
+  },
+  {
+   "ids": [
+    "MED-16"
+   ],
+   "constat": "Nocivité non chiffrée.",
+   "action": "effet poolé ajouté",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "La transfusion de plaquettes est potentiellement nuisible (non suggérée en Europe)",
+   "source": "ESO–EANS 2025 (Steiner et coll., Eur Stroke J 2025), PICO 3.2.1"
+  },
+  {
+   "ids": [
+    "MED-13"
+   ],
+   "constat": "Concentration du risque thrombotique sans prophylaxie non signalée.",
+   "action": "enrichissement inséré",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "Cette information fait partie du consentement et justifie la surveillance au troisième jou",
+   "source": "Information professionnelle suisse Ondexxya, avril 2025 (AmiKo, GTIN 7680677590016), Effets indésirables (ANNEXA-I) et Pharmacodynamique"
+  },
+  {
+   "ids": [
+    "MED-14"
+   ],
+   "constat": "Analyse poolée INTERACT absente.",
+   "action": "enrichissement inséré (justification causale non sourcée retirée)",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "à plus de détérioration neurologique.</p>",
+   "source": "ESO, mise à jour 2025 sur la pression artérielle (Eur Stroke J 2026, PMC13151662), PICO 7 « Additional information » et résumé"
+  },
+  {
+   "ids": [
+    "MED-12"
+   ],
+   "constat": "PRESTIGE-AF absent de la prévention secondaire.",
+   "action": "enrichissement inséré",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "(consensus 15 sur 15). Pour une valve mécanique",
+   "source": "Veltkamp et coll., Lancet 2025 (résumé) ; Fandler-Höfler et coll., Neurology 2025 (résumé) ; Bern Stroke Guidelines 08/2026, doc. p. 44–47"
+  },
+  {
+   "ids": [
+    "MED-12"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "<section class=\"ilot\" id=\"i61-a10\">",
+   "source": "Veltkamp et coll. — Direct oral anticoagulants versus no anticoagulation for the prevention of stroke in survivors of intracerebral haemorrhage with atrial fibrillation (PRESTIGE-AF) (Lancet 2025;405:927–936)"
+  },
+  {
+   "ids": [
+    "MED-12"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "<section class=\"ilot\" id=\"i61-a10\">",
+   "source": "Fandler-Höfler et coll. — Neuroimaging markers associated with recurrent stroke in intracerebral hemorrhage and atrial fibrillation: secondary analysis of PRESTIGE-AF (Neurology 2025;105:e214386)"
+  },
+  {
+   "ids": [
+    "MED-09"
+   ],
+   "constat": "Arbre de Wilson appelé « arbre DIAGRAM ».",
+   "action": "renommage",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "(<button class=\"w\" data-k=\"i61-diagram\">arbre DIAGRAM</button>)",
+   "source": "Wilson et coll., Eur Stroke J 2017 ; Bern Stroke Guidelines 08/2026, doc. p. 44–47 (pied de l’arbre)"
+  },
+  {
+   "ids": [
+    "LANG-059"
+   ],
+   "constat": "Liste incomplète par rapport au § 11.1.",
+   "action": "ajout des épisodes focaux transitoires",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "déclin cognitif ou hémorragie cérébrale antérieure (les critères de Boston ne s’appliquent",
+   "source": "Bern Stroke Guidelines 08/2026, encadré CAA (« cognitive decline, cerebral hemorrhage, “spells” »)"
+  },
+  {
+   "ids": [
+    "LANG-092"
+   ],
+   "constat": "Argument sur le jeune adulte sans rapport avec l’enfant.",
+   "action": "non-séquitur retiré (donnée conservée au § 5 et 6)",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "Chez l’enfant, aucune recommandation spécifique n’a été trouvée : les malformations vascul",
+   "source": "Texte existant ; FI Ondexxya et Praxbind (absence d’étude pédiatrique déjà citée)"
+  },
+  {
+   "ids": [
+    "MED-02"
+   ],
+   "constat": "Règle bernoise transformée en règle absolue dans le quiz.",
+   "action": "formulation attribuée",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Si un critère manque, ni andexanet ni concentré de complexe prothrombinique ne sont admini",
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44–47 ; ESO–EANS 2025 (Steiner et coll., Eur Stroke J 2025), PICO 3.3.2.1"
+  },
+  {
+   "ids": [
+    "MED-02",
+    "LANG-127"
+   ],
+   "constat": "Même règle absolue dans l’encadré « À retenir ».",
+   "action": "formulation attribuée",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Un antidote exige le respect de critères : s’ils ne sont pas remplis, ni antidote ni conce",
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44–47 ; ESO–EANS 2025 (Steiner et coll., Eur Stroke J 2025)"
+  },
+  {
+   "ids": [
+    "MED-02"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "<section class=\"ilot\" id=\"i61-e03\">",
+   "source": "Information professionnelle suisse Ondexxya (andexanet alfa), AstraZeneca, autorisation 67759, mise à jour avril 2025"
+  },
+  {
+   "ids": [
+    "MED-17"
+   ],
+   "constat": "Explication de quiz inexacte.",
+   "action": "explication corrigée",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Le seuil de 30 ml concerne la pression artérielle. Pour le cervelet, au-delà de 15 ml, l’é",
+   "source": "Hemphill et coll., Stroke 2001 ; ESO 2026 pression artérielle, PICO 7"
+  },
+  {
+   "ids": [
+    "MED-18",
+    "LANG-132",
+    "LANG-133"
+   ],
+   "constat": "Contresens : la règle d’exclusion a bien une sensibilité de 100 %.",
+   "action": "règle d’exclusion décrite",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "a une spécificité de 96 % ; aucune variable ne donne seule une sensibilité de 100 % pour l",
+   "source": "Rodrigues et coll., Lancet Neurol 2018;17:232–240, résumé (PubMed 29331631)"
+  },
+  {
+   "ids": [
+    "MED-09",
+    "LANG-112"
+   ],
+   "constat": "Performances du score DIAGRAM attribuées à l’arbre de Wilson.",
+   "action": "outils distingués, domaine de validité borné",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "La recommandation européenne suggère des scores comme DIAGRAM (recommandation faible), don",
+   "source": "Hilkens et coll., JNNP 2018 (résumé) ; Wilson et coll., Eur Stroke J 2017 (résumé)"
+  },
+  {
+   "ids": [
+    "MED-20"
+   ],
+   "constat": "Figure et renvoi nommés « arbre DIAGRAM ».",
+   "action": "renommage",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "aria-label=\"Schéma didactique de l’arbre DIAGRAM\"",
+   "source": "Wilson et coll., 2017 ; Bern Stroke Guidelines 08/2026, doc. p. 44–47"
+  },
+  {
+   "ids": [
+    "MED-20"
+   ],
+   "constat": "Figure et renvoi nommés « arbre DIAGRAM ».",
+   "action": "renommage",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "<title>Schéma didactique de l’arbre DIAGRAM</title>",
+   "source": "Wilson et coll., 2017 ; Bern Stroke Guidelines 08/2026, doc. p. 44–47"
+  },
+  {
+   "ids": [
+    "MED-20"
+   ],
+   "constat": "Figure et renvoi nommés « arbre DIAGRAM ».",
+   "action": "renommage",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "(<button class=\"w\" data-k=\"i61-diagram\">arbre DIAGRAM</button>)",
+   "source": "Wilson et coll., 2017 ; Bern Stroke Guidelines 08/2026, doc. p. 44–47"
+  },
+  {
+   "ids": [
+    "LANG-167"
+   ],
+   "constat": "Légende muette sur la reconstruction des branches.",
+   "action": "légende harmonisée avec la fenêtre",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Les pourcentages de l’arbre sont donnés sans arrondi.",
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44–47 ; Wilson et coll., 2017, résumé"
+  },
+  {
+   "ids": [
+    "MED-09"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "<section class=\"ilot\" id=\"i61-e01\">",
+   "source": "Wilson et coll. — Developing an algorithm to identify patients with intracerebral haemorrhage secondary to a macrovascular cause (Eur Stroke J 2017;2:369–376)"
+  },
+  {
+   "ids": [
+    "MED-09"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "<section class=\"ilot\" id=\"i61-e01\">",
+   "source": "Hilkens et coll. — Predicting the presence of macrovascular causes in non-traumatic intracerebral haemorrhage: the DIAGRAM prediction score (J Neurol Neurosurg Psychiatry 2018;89:674–679)"
+  },
+  {
+   "ids": [
+    "LANG-115"
+   ],
+   "constat": "Condition « sans microangiopathie » omise.",
+   "action": "condition complétée",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Un angio-scanner négatif ne suffit pas chez un patient jeune sans hypertension : la probab",
+   "source": "Arbre de Wilson repris par Berne (figure de l’îlot)"
+  },
+  {
+   "ids": [
+    "LANG-111"
+   ],
+   "constat": "Terme inusuel.",
+   "action": "terminologie corrigée",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "Un niveau liquide-sang dans l’hématome est très spécifique",
+   "source": "McGurgan et coll., Pract Neurol 2021 (« A blood-fluid level is highly specific for coagulopathy »)"
+  },
+  {
+   "ids": [
+    "LANG-119"
+   ],
+   "constat": "Deux dates apparemment contradictoires.",
+   "action": "les deux dates du document distinguées",
+   "fichier": "chapters/I61/I61_c.html",
+   "ancre": "CHUV (état au 16 octobre 2024)",
+   "source": "CHUV, CCL_LCC8_DR_001 version 2 du 09.06.2026 (« Etat au 16.10.2024 »), téléchargé le 15.10.2026"
+  },
+  {
+   "ids": [
+    "MED-04"
+   ],
+   "constat": "Dose élevée imposée par la FI renvoyée au protocole local.",
+   "action": "FI enseignée comme norme, écart bernois documenté",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "Rivaroxaban 20 mg il y a 4 heures : dose élevée selon la FI, alors que Berne préfère la fa",
+   "source": "Information professionnelle suisse Ondexxya, avril 2025 (AmiKo, GTIN 7680677590016), Posologie (tableau 2) et Pharmacodynamique"
+  },
+  {
+   "ids": [
+    "MED-09"
+   ],
+   "constat": "Titre de fenêtre erroné.",
+   "action": "renommage",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "data-title=\"Arbre DIAGRAM : probabilité d’une cause macrovasculaire\"",
+   "source": "Wilson et coll., 2017"
+  },
+  {
+   "ids": [
+    "MED-09",
+    "LANG-167"
+   ],
+   "constat": "Confusion arbre de Wilson / score DIAGRAM.",
+   "action": "outils distingués",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "L’attribution des pourcentages aux branches a été reconstruite à partir de la mise en page",
+   "source": "Wilson et coll., 2017 et Hilkens et coll., 2018 (résumés)"
+  },
+  {
+   "ids": [
+    "MED-09"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "<template data-pop=\"i61-diagram\"",
+   "source": "Wilson et coll. — Developing an algorithm to identify patients with intracerebral haemorrhage secondary to a macrovascular cause (Eur Stroke J 2017;2:369–376)"
+  },
+  {
+   "ids": [
+    "MED-09"
+   ],
+   "constat": "source ajoutée à la ligne « Sources »",
+   "action": "ajout de la référence lue",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "<template data-pop=\"i61-diagram\"",
+   "source": "Hilkens et coll. — Predicting the presence of macrovascular causes in non-traumatic intracerebral haemorrhage: the DIAGRAM prediction score (J Neurol Neurosurg Psychiatry 2018;89:674–679)"
+  },
+  {
+   "ids": [
+    "MED-19",
+    "LANG-165"
+   ],
+   "constat": "Population des performances imprécise ; jugement bernois en tension avec les chiffres.",
+   "action": "population précisée, tension explicitée",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "sur 341 patients avec neuropathologie. Le protocole bernois juge la version 2.0 plus sensi",
+   "source": "Charidimou et coll., Lancet Neurol 2022, résumé et résultats ; Bern 08/2026 (« more sensitive, but less specific »)"
+  },
+  {
+   "ids": [
+    "MED-18"
+   ],
+   "constat": "Fenêtre limitée à la règle d’inclusion.",
+   "action": "règle d’exclusion ajoutée",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "spécificité de 96 %, validation externe requise.",
+   "source": "Rodrigues et coll., Lancet Neurol 2018, résumé"
+  },
+  {
+   "ids": [
+    "LANG-159"
+   ],
+   "constat": "Lien causal incomplet (caractère transitoire omis).",
+   "action": "raison réelle explicitée",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "car la correction apportée par le concentré apparaît environ 30 minutes après l’injection,",
+   "source": "Information professionnelle suisse Beriplex P/N, octobre 2022 (« corrige de façon transitoire ») ; Bern Stroke Guidelines 08/2026, doc. p. 44–47"
+  },
+  {
+   "ids": [
+    "LANG-171"
+   ],
+   "constat": "Libellé calqué (« No »).",
+   "action": "force de la recommandation précisée (non contraignante, aucun délai)",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "<td>Pas de conduite</td><td>Pas de conduite</td>",
+   "source": "Bern Stroke Guidelines 08/2026, tableau « Driving capacity » (« Non-binding recommendations … No »)"
+  },
+  {
+   "ids": [
+    "LANG-168"
+   ],
+   "constat": "Accord ambigu.",
+   "action": "libellé OFS",
+   "fichier": "chapters/I61/I61_pop1.html",
+   "ancre": "anévrisme ou fistule artério-veineuse acquis",
+   "source": "OFS, CIM-10-GM 2024 ClaML FR, I67.10 et I67.11"
+  },
+  {
+   "ids": [
+    "MED-03",
+    "LANG-201"
+   ],
+   "constat": "Pareto sans attribution.",
+   "action": "formulation attribuée",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "Un antidote exige le respect de critères : s’ils ne sont pas remplis, ni antidote ni conce",
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44–47 ; ESO–EANS 2025 (Steiner et coll., Eur Stroke J 2025)"
+  },
+  {
+   "ids": [
+    "LANG-200"
+   ],
+   "constat": "Condition omise.",
+   "action": "condition complétée",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "Un angio-scanner négatif ne suffit pas chez un patient jeune sans hypertension :",
+   "source": "Arbre de Wilson repris par Berne"
+  },
+  {
+   "ids": [
+    "LANG-179"
+   ],
+   "constat": "Seuil de mRS : « inférieur à 3 » pour l’idarucizumab, « supérieur à 3 » exclu pour l’andexanet.",
+   "action": "vérifié conforme à Berne ; mot « mêmes » corrigé",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "Berne applique les mêmes critères cliniques que l’andexanet (",
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44–47 (Xa : « Exclusions … mRS >3 » ; dabigatran : « prestroke mRS <3 »)"
+  },
+  {
+   "ids": [
+    "LANG-179"
+   ],
+   "constat": "idem",
+   "action": "précision ajoutée",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "mRS préalable inférieur à 3).",
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44–47"
+  },
+  {
+   "ids": [
+    "LANG-182"
+   ],
+   "constat": "Rubrique « Effets indésirables » vide (« Voir la fiche. »).",
+   "action": "rubrique rédigée d’après la FI suisse",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "i61-konakion",
+   "source": "Information professionnelle suisse Konakion MM, janvier 2022 (AmiKo, GTIN 7680481120218), rubrique Effets indésirables, consultée le 15.10.2026"
+  },
+  {
+   "ids": [
+    "LANG-182"
+   ],
+   "constat": "Rubrique « Effets indésirables » vide (« Voir la fiche. »).",
+   "action": "rubrique rédigée d’après la FI suisse",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "i61-trandate",
+   "source": "Information professionnelle suisse Trandate, mars 2026 (GTIN 7680415300013), Effets indésirables (solution injectable), consultée le 15.10.2026"
+  },
+  {
+   "ids": [
+    "LANG-182"
+   ],
+   "constat": "Rubrique « Effets indésirables » vide (« Voir la fiche. »).",
+   "action": "rubrique rédigée d’après la FI suisse",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "i61-cleviprex",
+   "source": "Information professionnelle suisse Cleviprex, juin 2020 (GTIN 7680601170031), Effets indésirables, consultée le 15.10.2026"
+  },
+  {
+   "ids": [
+    "LANG-182"
+   ],
+   "constat": "Rubrique « Effets indésirables » vide (« Voir la fiche. »).",
+   "action": "rubrique rédigée d’après la FI suisse",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "i61-txa",
+   "source": "Information professionnelle suisse Tranexamic OrPha, février 2024 (GTIN 7680690070014), Effets indésirables, consultée le 15.10.2026"
+  },
+  {
+   "ids": [
+    "LANG-182"
+   ],
+   "constat": "Rubrique « Effets indésirables » vide (« Voir la fiche. »).",
+   "action": "rubrique rédigée d’après la FI suisse",
+   "fichier": "chapters/I61/I61_pop2.html",
+   "ancre": "i61-keppra",
+   "source": "Information professionnelle suisse Keppra perfusion, mai 2025 (GTIN 7680575190028), Effets indésirables, consultée le 15.10.2026"
+  },
+  {
+   "ids": [
+    "MED-14"
+   ],
+   "constat": "Formulation « disparaît vers 3 heures » précisée.",
+   "action": "« s’annule vers 3 heures » (« the effect crossing unity at approximately 3 h »)",
+   "fichier": "chapters/I61/I61_b.html",
+   "ancre": "i61-a09, § 9.3",
+   "source": "ESO 2026 pression artérielle, PICO 7"
+  },
+  {
+   "ids": [
+    "MED-10",
+    "MED-11"
+   ],
+   "constat": "DIAGRAM attribué à Wilson, sigles DIAGRAM et CADMUS non développés.",
+   "action": "définitions corrigées et sigles développés lettre à lettre",
+   "fichier": "glossary/i61.py",
+   "ancre": "add('DIAGRAM' / add('CADMUS'",
+   "source": "Hilkens et coll., JNNP 2018 (titre DIAGRAM) ; Goeldlin et coll., Neurology 2024 (CADMUS), résumé lu le 15.10.2026"
+  },
+  {
+   "ids": [
+    "AUDIT-ABREV"
+   ],
+   "constat": "build_medina.audit() signalait INTERACT et PRESTIGE-AF après les enrichissements MED-12 et MED-14.",
+   "action": "deux clés ajoutées au glossaire (sigle non développé par la source déclaré comme tel)",
+   "fichier": "glossary/i61.py",
+   "ancre": "add('INTERACT' / add('PRESTIGE-AF'",
+   "source": "Veltkamp et coll., Lancet 2025, titre ; ESO 2026 pression artérielle"
+  }
+ ],
+ "differes": [
+  "GLOB-01 espaces insécables globales (choix éditorial en attente)",
+  "« fibrillation atriale/auriculaire » (choix éditorial en attente ; « fibrillation auriculaire » conservé dans la seule citation de la FI Cleviprex)",
+  "groupe LIENS d’E11 (hors leçon)",
+  "GLOB-02 à GLOB-08 (harmonisations globales, titres de références traduits, structure du code CIM) : non locaux, transmis",
+  "MED lacunes L-01 à L-06 : non comblées par cette phase"
+ ],
+ "controles": {
+  "build_medina.audit_I61": "{}",
+  "test_v7_static_I61": "OK (mots 32015, fenêtres 63, quiz 7, pareto 21)",
+  "tests/audit_sciences.py": "non applicable : I61 absent de la base de comparaison c50a28a2 de l’outil (erreur de l’outil, non de la leçon) ; sous-onglet sémiologie prévu en phase 2"
+ },
+ "empreintes_sha256": {
+  "chapters/I61/I61_a.html": "c9593294231eb02eadd9d8bb3fff273b6ef1e2d5a7ba306f6e80856935ac5a6c",
+  "chapters/I61/I61_b.html": "e1451dd662ee52b0a01f06cab9019da3da295747a928da868a53bb91118209ef",
+  "chapters/I61/I61_c.html": "850a1f23421680b75fd52bd116b60c9f8c5ee680f32f61dfb3eca95b3c93bc99",
+  "chapters/I61/I61_d.html": "6ab44f584c5b49410c114d557e84eb74eb820a712b6838b48be0ac991922502c",
+  "chapters/I61/I61_pop1.html": "9a511c82147375a07156d46e11748b3963018b010c1fc32b4f4c2729803b0107",
+  "chapters/I61/I61_pop2.html": "677a9e061f4011407ab71a0c0c4d24944e3344066d0fd6466afcfee93f439990",
+  "glossary/i61.py": "afbc9a86b24351cf53a10da06ce1f56a1d1065b7c7ee7fe364df1758f6cf5aeb"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "corrections_phase3": [
+  {
+   "ids": [
+    "REVUE-P-I61"
+   ],
+   "constat": "Critère d’indication de l’antidote incomplet dans le quiz i61-e03a (_c) et la fenêtre i61-andexanet (_pop1) : alternative « ou taux supérieur à 100 ng/ml » omise.",
+   "action": "alternative ajoutée, formulation identique aux quatre autres occurrences",
+   "fichiers": [
+    "chapters/I61/I61_c.html",
+    "chapters/I61/I61_pop1.html"
+   ],
+   "source": "Bern Stroke Guidelines 08/2026, doc. p. 44 (« last DOAC dose <15 hours or if unknown, plasma level >100 ng/mL ») ; FI Ondexxya avril 2025",
+   "date": "2026-10-15"
+  }
+ ],
+ "empreintes_sha256_apres_phase3": {
+  "chapters/I61/I61_a.html": "c9593294231eb02eadd9d8bb3fff273b6ef1e2d5a7ba306f6e80856935ac5a6c",
+  "chapters/I61/I61_b.html": "4195da4da0a061224f6529d0bfb58f0e5f6de246454110cd84721ea1460469b6",
+  "chapters/I61/I61_c.html": "12d632ae7188b9acd8f61ab2d535fe00c4cf4348e064cbd873dd62e2dd027dc6",
+  "chapters/I61/I61_d.html": "6ab44f584c5b49410c114d557e84eb74eb820a712b6838b48be0ac991922502c",
+  "chapters/I61/I61_pop1.html": "ffd35391c95521ea567e41455c3ecffbb7dff9afe1c3aad10a5744e0a80ec5fb",
+  "chapters/I61/I61_pop2.html": "1fe1a4cc8f5373afb5a2cf52312fdc433d6987944065bb780fe16fedbab4fc73",
+  "glossary/i61.py": "afbc9a86b24351cf53a10da06ce1f56a1d1065b7c7ee7fe364df1758f6cf5aeb"
+ }
+}

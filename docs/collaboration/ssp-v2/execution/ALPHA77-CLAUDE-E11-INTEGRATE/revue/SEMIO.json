@@ -1,0 +1,99 @@
+{
+ "actor": "Claude",
+ "code": "E11",
+ "status": "closed",
+ "medical_human_validation": false,
+ "mission": "ALPHA77-CLAUDE-E11-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), revue finale phase 2",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "34490d72cd76956944223210b67db0d73dface6c",
+ "source_files_sha256": {
+  "chapters/E11/E11_a.html": "5843cda1df375eb294f81d334a850188e9fd628b7662fb17c883e85dc77c7e0f",
+  "chapters/E11/E11_b.html": "1374a8f7972c6b6eb990e806e31873e1ae5f054c71832295d90850a608126c73",
+  "chapters/E11/E11_c.html": "ec6a858abbb817524d928aa44c9c4e4d566417d6c5733e1460edc94e48f853c3",
+  "chapters/E11/E11_d.html": "fabc0f21c0d07909f887df2c6fafe77ea5fc7c993ab07bde98a50c8eec5a64e8",
+  "chapters/E11/E11_pop1.html": "7382788566d2ab1081a0e3d4939d059a49a29e72a847266695cdd6439588af0f",
+  "chapters/E11/E11_pop2.html": "e40ea5ad5ebbfec50b2dc57db951f440eb8239d961392c7089774e84089f3157",
+  "glossary/e11.py": "8833b2f3380516d3081d311e35bc53e32a14a2ec2be99af6f099b450dc41de82"
+ },
+ "reviewed_files_sha256": {
+  "chapters/E11/E11_a.html": "a5a271938495d18bac91930e30d40b9f95303bd8260a8b131797e31ab42dcacb",
+  "chapters/E11/E11_b.html": "204e5844d40aaafe7ff08c6329fc3da7ffde0fa76bb41fee9ff33879ecc9fc80",
+  "chapters/E11/E11_c.html": "c111268e0485530d29041199f7f69b50f366ce426f74db0ab315f7d9c4c5fd60",
+  "chapters/E11/E11_d.html": "616eb9a737b586749f345bcf70e3a77eb7661ade7d218fac8698b4f365a46854",
+  "chapters/E11/E11_pop1.html": "f2f97a4e0a8c3b33aac719bc91fb9519982b2e240ccd1497334b730a6f4f8bbf",
+  "chapters/E11/E11_pop2.html": "798ec9302bca21a2d241d852d99d53cc2cfea662049eea1bc6320390ef46ca7b",
+  "glossary/e11.py": "5e8c36fd6a77b9234d6a7bf9d7862f8a1447c99432ff10cb799efed8280d4e3c"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "limits": "Revue IA, distincte d’une validation médicale humaine. Les empreintes et balises ne certifient ni l’exactitude médicale ni une validation par un médecin. Si un fichier change après 34490d72, ce rapport doit être refait.",
+ "kind": "SEMIO",
+ "requirement": "fundamental_analytical_semiology",
+ "scope": "Contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml et grille SEM-01 à SEM-24 (EXIGENCE_SEMIOLOGIE.md § 4 c), sur les fichiers finaux.",
+ "independence": "Limite déclarée : le contenu sémiologique a été préparé par le même agent P ; cette revue vérifie l’intégration, la conformité au contrat et la traçabilité des sources, sans valeur de relecture indépendante par un tiers.",
+ "unresolved_blockers": [],
+ "grid": {
+  "SEM-01": "oui — bouton e11-tab-semio en première position, data-s=e11-s-semio, libellé exact ; div.sci#e11-s-semio role=tabpanel aria-labelledby=e11-tab-semio",
+  "SEM-02": "oui — premier h2 : « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »",
+  "SEM-03": "oui — audit_sciences errors [] ; 2 figures svg role=img aria-label + figcaption, non anatomiques ; 4 libellés",
+  "SEM-04": "oui — test_v7 --static OK ; glossaire {}",
+  "SEM-05": "oui — tableau Symptôme/Mécanisme/Fréquence ou valeur/Piège, introduit et commenté (e11-sm-2)",
+  "SEM-06": "oui — technique des gestes (monofilament, diapason, Ipswich, pression couchée-debout, indice cheville/bras) dans e11-sm-4 et les fenêtres",
+  "SEM-07": "oui — chaînes causales e11-sm-3 rattachées aux sciences de la leçon (physiologie rénale, biochimie, système nerveux autonome)",
+  "SEM-08": "oui — valeurs avec population et source (sources_semiologie.json) ; valeurs absentes écrites « non chiffrées dans les sources lues » et consignées en lacunes",
+  "SEM-09": "oui — îlot normal en tête (e11-sm-1)",
+  "SEM-10": "oui — pièges par signe majeur (tableau, div.trap, fenêtres)",
+  "SEM-11": "oui — tableau des cinq syndromes (e11-sm-6)",
+  "SEM-12": "oui — ol en cinq étapes dans l’ordre exigé",
+  "SEM-13": "oui — div.alert avec seuil (< 14 mmol/L sous gliflozine), délai (immédiat) et action ; cohérente avec l’alerte et le piège de l’îlot e11-8",
+  "SEM-14": "oui — discriminants sourcés (vasopressine, cétoses non diabétiques, Charcot ou infection, peptide C)",
+  "SEM-15": "oui — dix étapes numérotées de la préparation à la synthèse",
+  "SEM-16": "oui — div.card « Exemple de présentation » (constatations, interprétation, limites, examens)",
+  "SEM-17": "oui — trois cas : valeur des pouls, conduite sous gliflozine, formulation de la limite d’un indice > 1,3",
+  "SEM-18": "oui — 19 déclencheurs e11-sm-* rendus ; fenêtres ouvertes au navigateur (P : monofilament ; W : tous les mots verts via test_v7 navigateur)",
+  "SEM-19": "oui — sources suisses puis européennes et internationales ; textes américains non utilisés comme conduite (SVS citée comme cosignataire)",
+  "SEM-20": "oui — seuils identiques (11,1 mmol/L, 0,9–1,3, 4/4, > 4/8, < 0,5/25/30) entre sémiologie, onglet 1 et fenêtres",
+  "SEM-21": "oui — îlots e11-5 et e11-6 conservés ; renvoi textuel au sous-onglet",
+  "SEM-22": "oui — 390 px, --mc-fs 24px : aucun débordement (scrollWidth 390 ; bouton à droite 298 px) ; capture W E11_mobile_390_2_semiologie.png",
+  "SEM-23": "oui — captures W E11_ordinateur_2_semiologie.png et E11_ordinateur_3_fenetre.png (et mobiles)",
+  "SEM-24": "oui — statut revue IA, medical_human_validation false"
+ },
+ "findings": [
+  {
+   "id": "E11-SEMIO-STRUCT",
+   "severity": "INFO",
+   "status": "resolved",
+   "evidence": "Neuf sections data-semiology (normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources) au rendu, contenu propre à E11 ; repère clinique data-semiology-clinical=\"E11\" dans pA (îlot e11-6), visible."
+  },
+  {
+   "id": "E11-SEMIO-LACUNES",
+   "severity": "RESERVE",
+   "status": "non_blocking",
+   "evidence": "Lacunes déclarées dans le cours (e11-sm-8) et dans prep/sources_semiologie.json : aucune sémiologie universitaire suisse propre au diabète lue ; fréquences de la polyurie, de la polydipsie et de la vision floue non chiffrées ; valeur de l’hypotension orthostatique isolée non chiffrée ; seuil rénal du glucose non chiffré ; mécanisme de la vision floue non sourcé ; sémiologie ophtalmologique confiée à l’ophtalmologue ; sites d’injection non traités."
+  },
+  {
+   "id": "E11-SEMIO-IMAGE",
+   "severity": "RESERVE",
+   "status": "non_blocking",
+   "evidence": "Aucune photographie du geste au monofilament retenue (candidat Lefaucheur 2025 refusé : planche composite d’appareils commerciaux sans crédit par photographie) ; remplacée par tableau et fenêtres."
+  },
+  {
+   "id": "E11-SEMIO-PARETO",
+   "severity": "INFO",
+   "status": "non_blocking",
+   "evidence": "Îlots e11-sm-* hors data-cover de Pareto (incompatibilité de l’expression régulière de build_medina.pareto_ratios avec l’attribut data-semiology) ; Pareto des Sciences inchangé."
+  }
+ ],
+ "evidence": [
+  "Registre des affirmations : docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-E11-INTEGRATE/prep/sources_semiologie.json (37 passages, 16 sources lues le 15.10.2026).",
+  "Correspondance dans le cours : section e11-sm-9 (tableau affirmation → source).",
+  "python3 test_v7.py --static E11 : OK (44 681 mots, 141 fenêtres, 8 quiz, 7 Pareto)",
+  "python3 tests/audit_sciences.py --codes E11 : errors [] (5 disciplines ; aucune figure à image réelle dans les Sciences, donc aucun faux positif à consigner ; aucun SVG ajouté dans une figure à image)",
+  "build_medina.audit : {} pour les sept fichiers",
+  "MEDINA_OUT=<scratchpad> python3 build_front.py --fragment S05 : construit hors dépôt (8 089 183 octets)",
+  "Chromium /opt/pw-browsers/chromium-1194 (script de l’agent P) à 1360 px et 390 px : aucune erreur JavaScript ; sous-onglet sémiologie sélectionné et seul visible à l’ouverture de pS ; 9 sections ; fenêtre e11-sm-monofilament-valeur ouverte ; bascule vers e11-s-rein (aria-selected suit) ; bloc clinique visible dans pA ; légendes des figures 3, 11 et 12 lues dans le DOM ; JPEG rendu comme abréviation mc-ab ; 390 px avec --mc-fs 24px : aucun débordement horizontal (scrollWidth 390)"
+ ]
+}
