@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "workflow_fix_pr": 166,
+  "workflow_fix_main": "4a43cca00c80af3b3d2cab7af281ba73ac36fdd6",
+  "fix": "Full network inventory runs only on workflow_dispatch; scanner tests and integrity checks remain on push and PR.",
+  "verification": {
+    "scanner_tests": 28,
+    "yaml_valid": true,
+    "pr_remote_checks": 7,
+    "actual_push_and_pr_network_step": "skipped",
+    "scanner_steps": "success"
+  },
+  "deploy_failures": [
+    {
+      "run": 38810149213,
+      "commit": "2ed7cf32f396f3a8f8a17dcdd13c4f277e39bdf8",
+      "job": 116693067119,
+      "http_status": 403,
+      "reason": "API rate limit exceeded for installation"
+    },
+    {
+      "run": 38813363589,
+      "commit": "9017556cea798a600c1e9ce377cdfd18e8c50d69",
+      "job": 116703145758,
+      "at": "2026-10-15T22:23:30Z",
+      "build": "success",
+      "deploy": "failure",
+      "http_status": 403,
+      "reason": "API rate limit exceeded for installation"
+    }
+  ],
+  "no_quota_bypass": true,
+  "deploy_success_claimed": false
+}
