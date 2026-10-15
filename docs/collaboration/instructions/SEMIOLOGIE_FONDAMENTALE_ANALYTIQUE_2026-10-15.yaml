@@ -26,7 +26,8 @@ clinical_requirement:
 fundamental_analytical_requirement:
   parent_panel: pS
   file: "chapters/<CODE>/<CODE>_c.html"
-  placement: "Sixième sous-onglet local dans .sci-bar ; contenu dans .chap-body.sci-body"
+  placement: "Nouveau sous-onglet local en tête de .sci-bar (premier bouton data-s) ; contenu dans .chap-body.sci-body"
+  first_ilot_title: "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
   label: "Sémiologie fondamentale et analytique"
   tab:
     type: button
@@ -34,14 +35,14 @@ fundamental_analytical_requirement:
     role: tab
     data-s: "<code>-s-semio"
     aria-controls: "<code>-s-semio"
-    aria-selected: false
+    aria-selected: true
   target:
     id: "<code>-s-semio"
     class: sci
     role: tabpanel
     aria-labelledby: "<code>-tab-semio"
-    hidden_initially: true
-  preserve_initial_selection: "Premier sous-onglet scientifique existant"
+    hidden_initially: false
+  preserve_initial_selection: "Premier sous-onglet : Sémiologie fondamentale et analytique, visible dès l’ouverture de pS"
   shared_frontend_change_required: false
   sections:
     - marker: normal

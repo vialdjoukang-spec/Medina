@@ -239,15 +239,21 @@ class Repository:
         tree = HTMLTree(self.read(self.main, source_path))
         in_ps = lambda node: any(p['attrs'].get('id') == 'pS' for p in node['parents'])
         buttons = [node for node in tree.nodes if node['tag'] == 'button' and in_ps(node) and 'data-s' in node['attrs']]
-        need(len(buttons) >= 6 and any(node['attrs'].get('data-s') == tab and
-             tree.text(node) == 'Sémiologie fondamentale et analytique' and
-             node['attrs'].get('role') == 'tab' and node['attrs'].get('aria-controls') == tab and
-             node['attrs'].get('id') == code.lower() + '-tab-semio' for node in buttons), 'Sixth real local semiology tab absent')
+        need(len(buttons) >= 6 and buttons[0]['attrs'].get('data-s') == tab and
+             tree.text(buttons[0]) == 'Sémiologie fondamentale et analytique' and
+             buttons[0]['attrs'].get('role') == 'tab' and buttons[0]['attrs'].get('aria-controls') == tab and
+             buttons[0]['attrs'].get('aria-selected') == 'true' and
+             buttons[0]['attrs'].get('id') == code.lower() + '-tab-semio', 'Semiology must be the first selected local science tab')
         panels = [node for node in tree.nodes if node['tag'] == 'div' and node['attrs'].get('id') == tab and
                   'sci' in node['attrs'].get('class', '').split() and in_ps(node) and
                   node['attrs'].get('aria-labelledby') == code.lower() + '-tab-semio']
         need(len(panels) == 1, 'Semiology panel must be inside fundamental pS')
         panel = panels[0]
+        need('hidden' not in panel['attrs'] and panel['attrs'].get('aria-hidden') != 'true', 'Initial semiology panel must be visible')
+        all_units = [node for node in tree.nodes if panel in node['parents'] and 'ilot' in node['attrs'].get('class', '').split()]
+        need(all_units, 'Semiology first science unit absent')
+        first_titles = [node for node in tree.nodes if node['tag'] == 'h3' and all_units[0] in node['parents']]
+        need(first_titles and tree.text(first_titles[0]) == 'Pour la leçon : quelle est la sémiologie fondamentale et analytique ?', 'Incorrect first semiology unit title')
         required = {'normal','signs','mechanisms','examination','interpretation','differentials','urgency','limits','sources'}
         sections = [node for node in tree.nodes if panel in node['parents'] and node['attrs'].get('data-semiology') in required and
                     'ilot' in node['attrs'].get('class', '').split() and
@@ -374,7 +380,8 @@ You are the bounded coordinator, not governance: never approve missions or overw
 Acquire every mission with ai_session_guard.py, create its exclusive worktree at exact base, and start it before writes.
 Source corrections MUST use the matching per-code INTEGRATE mission, never coordinator paths or audit paths.
 For this adopted first batch, existing MED/LANG work is already delivered: adopt and inspect it, do not redispatch the same unchanged audits.
-New semiology requirement applies to all seven now: integrate the substantive sourced fundamental/analytical panel and clinical pathology signs, then obtain actual updated final audit attestations for that changed content.
+New semiology requirement applies to all seven now: put its local data-s tab FIRST in pS, aria-selected=true, panel initially visible; first ilot h3 EXACTLY "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?". Run existing tests/audit_sciences.py for changed courses; preserve its existing >=280 words, accessible sourced figure and four science-to-clinic/exam/treatment/key-point callouts, without inventing new word thresholds or medical claims.
+Then integrate the substantive sourced fundamental/analytical panel and clinical pathology signs, then obtain actual updated final audit attestations for that changed content.
 For subsequent batches, only launch missing work: new lessons require PRODUCE complete before MED/LANG;
 MED uses GPT6.1 high, LANG GPT6.1 medium and preserves medical content. Own at most these seven assignments.
 Reuse existing reports, branches and sessions; uncertain state means stop for reconciliation, never duplicate an AI launch.

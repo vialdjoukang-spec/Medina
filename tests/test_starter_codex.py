@@ -308,16 +308,24 @@ class ClosureProofTests(unittest.TestCase):
         audit={'kind':'SEMIO','requirement':'fundamental_analytical_semiology','actor':'Codex','code':'I63','status':'closed','unresolved_blockers':[],
                'reviewed_files_sha256':files,'tab_id':'i63-s-semio','source_path':'chapters/I63/I63_c.html',
                'evidence':['examined cited sources'],'findings':[],'source_files_sha256':{},'medical_human_validation':False}
-        sections=''.join('<section class="ilot" data-semiology="'+name+'"><h3>Section</h3>Clinical causal discussion</section>' for name in
+        sections=''.join('<section class="ilot" data-semiology="'+name+'"><h3>'+('Pour la leçon : quelle est la sémiologie fondamentale et analytique ?' if name == 'normal' else 'Section')+'</h3>Clinical causal discussion</section>' for name in
                          ('normal','signs','mechanisms','examination','interpretation','differentials','urgency','limits'))
-        c=('<div id="pS">'+''.join('<button data-s="old%d">Existing</button>'%i for i in range(5))+
-           '<button role="tab" id="i63-tab-semio" aria-controls="i63-s-semio" data-s="i63-s-semio">Sémiologie fondamentale et analytique</button><div class="sci" id="i63-s-semio" aria-labelledby="i63-tab-semio">'+
+        c=('<div id="pS">'+'<button role="tab" id="i63-tab-semio" aria-selected="true" aria-controls="i63-s-semio" data-s="i63-s-semio">Sémiologie fondamentale et analytique</button>'+''.join('<button data-s="old%d">Existing</button>'%i for i in range(5))+'<div class="sci" id="i63-s-semio" aria-labelledby="i63-tab-semio">'+
            sections+'<section class="ilot" data-semiology="sources"><h3>Sources</h3><a href="https://source.example/guideline">Guideline evidence</a></section></div></div>')
         a='<div id="pA"><section data-semiology-clinical="I63">Actual clinical signs and examination</section></div>'
         with patch.object(repo,'checked_blob',return_value=s.canonical(audit)), \
              patch.object(repo,'read',side_effect=lambda rev,p:c.encode() if p.endswith('_c.html') else a.encode()):
             repo.semiology(item,proof,files,prefix)
-            c=c.replace('data-semiology="mechanisms"','data-semiology="wrong"')
+            valid=c
+            c=c.replace('<div id="pS">','<div id="pS"><button data-s="old-first">Old first</button>')
+            with self.assertRaises(s.Blocked):repo.semiology(item,proof,files,prefix)
+            c=valid.replace('aria-selected="true"','aria-selected="false"')
+            with self.assertRaises(s.Blocked):repo.semiology(item,proof,files,prefix)
+            c=valid.replace('Pour la leçon : quelle est la sémiologie fondamentale et analytique ?','Wrong title')
+            with self.assertRaises(s.Blocked):repo.semiology(item,proof,files,prefix)
+            c=valid.replace('id="i63-s-semio"','id="i63-s-semio" hidden')
+            with self.assertRaises(s.Blocked):repo.semiology(item,proof,files,prefix)
+            c=valid.replace('data-semiology="mechanisms"','data-semiology="wrong"')
             with self.assertRaises(s.Blocked):repo.semiology(item,proof,files,prefix)
 
     def test_pages_run_requires_trusted_workflow_exact_sha_and_success(self):
