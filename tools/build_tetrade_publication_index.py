@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Publie l'inventaire des sources des quatre systèmes, sans réécrire les cours."""
 import argparse
+import base64
 import hashlib
 import html
 import json
@@ -63,7 +64,10 @@ def build(output):
     for row in preparations.values():
         links = ['<a href="https://github.com/vialdjoukang-spec/Medina/blob/' + revision + '/' + quote(name, safe='/') + '">' + esc(Path(name).name) + '</a>' for name in row["source_files"]]
         research.append('<li>' + esc(row["code"]) + ' — préparation disponible ; cours non rédigé : ' + ' · '.join(links) + '</li>')
-    page = '<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MEDINA — quatre systèmes</title><style>body{font:18px/1.6 system-ui,sans-serif;color:#193126;background:#fafbf8;max-width:72rem;margin:auto;padding:2rem}a{color:#17553b}section{background:white;border:1px solid #dce4dc;border-radius:12px;padding:1rem 1.5rem;margin:1.5rem 0}li{margin:.4rem 0}code{overflow-wrap:anywhere}small{color:#48594d}</style><main><a href="../">Accueil MEDINA</a><h1>Les quatre systèmes</h1><p>Publication en l’état des cours disponibles. Les travaux en cours restent des travaux en cours ; cet inventaire ne constitue pas un audit médical.</p>' + ''.join(sections)
+    faces = ''.join("@font-face{font-family:Atkinson;font-style:normal;font-weight:%s;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}" %
+                    (weight, base64.b64encode((ROOT / 'shell/fonts' / name).read_bytes()).decode('ascii'))
+                    for name, weight in [('ahn-400.woff2', '400'), ('ahn-700.woff2', '700')])
+    page = '<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MEDINA — quatre systèmes</title><style>' + faces + 'body{font:18px/1.6 Atkinson,system-ui,sans-serif;color:#193126;background:#fafbf8;max-width:72rem;margin:auto;padding:2rem}a{color:#17553b}section{background:white;border:1px solid #dce4dc;border-radius:12px;padding:1rem 1.5rem;margin:1.5rem 0}li{margin:.4rem 0}code{overflow-wrap:anywhere}small{color:#48594d}</style><main><a href="../">Accueil MEDINA</a><h1>Les quatre systèmes</h1><p>Publication en l’état des cours disponibles. Les travaux en cours restent des travaux en cours ; cet inventaire ne constitue pas un audit médical.</p>' + ''.join(sections)
     if research:
         page += '<section><h2>Préparations disponibles</h2><ul>' + ''.join(research) + '</ul></section>'
     page += '<p><a href="sources.json">Inventaire et empreintes pour l’audit futur</a> · <a href="../publication.json">Manifeste de construction</a></p><small>Référence des sources : <code>' + revision + '</code></small></main></html>\n'
