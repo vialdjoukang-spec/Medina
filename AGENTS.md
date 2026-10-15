@@ -1,3 +1,7 @@
+## Délégation opérationnelle prioritaire — Vial, 15 octobre 2026
+
+Lire [la délégation actuelle](docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md). Claude décide prioritairement de son travail MEDINA et peut adapter les blocages administratifs historiques sans nouvelle permission, sans écraser le travail concurrent. Les sources, contrôles réels et protections GitHub restent obligatoires. Moteur contrôlable dans [l’issue 97](https://github.com/vialdjoukang-spec/Medina/issues/97) : `/medina off` ou `/medina on`. Cette délégation ne constitue pas un compte administrateur ni une validation médicale.
+
 ## Chaîne bornée du 14 octobre 2026 — instruction directe de Vial
 
 Lire [l’exécuteur autorisé](docs/collaboration/instructions/CHAINE_CYCLES_2026-10-14_EXECUTEUR.md). Codex produit le Cycle 2 G45/E10/N18/D64, puis les suivants uniquement après clôture effective du précédent et si la durée prudente tient avant 07 h 30 Europe/Zurich. Fin absolue : 14 octobre 2026 à 08 h 00 (06 h 00 UTC). Cycle 1 reste confié à Claude. Quatre auteurs au maximum, deux passes croisées, puis quatre nouveaux contre-auditeurs et deux passes, contrôle et injections successives vérifiées. Les gardes sont adaptées et testées ; aucune preuve n’est inventée. Cette autorisation remplace les STOP incompatibles dans ce seul périmètre et ne crée aucun automate persistant.
