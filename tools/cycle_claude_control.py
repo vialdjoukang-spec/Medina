@@ -38,8 +38,9 @@ import cycle_claude as G  # noqa: E402
 import night_cycle as N  # noqa: E402
 import tetrade_cycle as C  # noqa: E402
 import claude_cycle_gate as GATE  # noqa: E402
+import novo_cycle_gate as NOVO_GATE  # noqa: E402
 
-RUNTIME = os.environ.get('MEDINA_RUNTIME', 'claude-code/session_01NNsXRGeno3p5fi2QvuhRCM/coordinateur')
+RUNTIME = os.environ.get('MEDINA_RUNTIME')
 TABS = ('pA', 'pE', 'pS', 'pP')
 VIEWPORTS = {'desktop': {'width': 1440, 'height': 1000}, 'mobile': {'width': 390, 'height': 844}}
 CAPTURE_KINDS = ('ouverture', 'fenetre', 'figure', 'tableau')
@@ -270,29 +271,35 @@ def swiss_context(row, author, files, explicit):
 
 def control(a):
     cycle, row = lesson(a.code)
+    runtime = a.runtime or RUNTIME
+    if not runtime:
+        raise ControlError('Identifiant réel requis : --runtime ou MEDINA_RUNTIME (aucune ancienne session réutilisée)')
     disk = Disk()
     files = C.source_files(disk, row, G.SOURCE_ROOTS)
     author = C.review(disk, row, 'author', row['writer'], files, G.author_prompts(row))
     C.source_ledger_proof(disk, row, author, files)
+    if row.get('novo'):
+        G.V.research_proof(disk, row, author)
     images = N.image_proof(disk, row)
     entry = json.loads((ROOT / a.entry).read_text(encoding='utf-8'))
-    C.prompt_gate(disk, entry, G.COORDINATOR, f'{a.code} contrôle entrée', G.PROMPTS_DIRECT)
+    C.prompt_gate(disk, entry, G.COORDINATOR, f'{a.code} contrôle entrée', G.control_prompts(row))
     if C.dated(entry['checked_at']) < C.dated(author['exit']['checked_at']):
         raise ControlError('Relevé d’entrée antérieur à la sortie de l’auteur')
     day = C.dated(cycle['started_at']).date().isoformat()
     out = ROOT / (a.out or f"docs/collaboration/reviews/{day}/CYCLE_{cycle['cycle']:02d}_CLAUDE/{a.code}/controle")
     cahier = a.cahier.resolve() if a.cahier else None
-    technical = technical_checks(a.code, cycle['cycle'], cahier, files, out / 'captures')
+    technical = technical_checks(a.code, row['production_cycle'], cahier, files, out / 'captures')
     technical_path = out / 'technique.json'
     technical_path.write_text(json.dumps(technical, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     if technical['result'] != 'passed':
         raise ControlError(f'Contrôle technique en échec ; détail : {rel(technical_path)}')
     swiss = swiss_context(row, author, files, a.swiss_matrix)
     try:
-        exit_gate = GATE.make_gate(G.COORDINATOR, a.check, 'direct')
+        exit_gate = (NOVO_GATE.make_gate(G.COORDINATOR, a.check) if row.get('novo') else
+                     GATE.make_gate(G.COORDINATOR, a.check, 'direct'))
     except ValueError as error:
         raise ControlError(str(error)) from None
-    receipt = {'code': a.code, 'actor': G.COORDINATOR, 'runtime_agent_id': RUNTIME, 'medical_human_validation': False,
+    receipt = {'code': a.code, 'actor': G.COORDINATOR, 'runtime_agent_id': runtime, 'medical_human_validation': False,
                'entry': entry, 'exit': exit_gate, 'final_files': files, 'image_files': images, 'blocking_reserves': [],
                'technical_checks': {'path': rel(technical_path), 'sha256': sha(technical_path)},
                'swiss_context': swiss,
@@ -302,7 +309,7 @@ def control(a):
     path.write_text(json.dumps(receipt, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     try:
         checked = dict(row, control={'path': rel(path), 'sha256': sha(path)})
-        report = C.review(disk, checked, 'control', G.COORDINATOR, files, G.PROMPTS_DIRECT)
+        report = C.review(disk, checked, 'control', G.COORDINATOR, files, G.control_prompts(row))
         C.technical_proof(disk, checked, report, files, G.CAPTURES)
         if C.dated(author['exit']['checked_at']) > C.dated(report['entry']['checked_at']) or \
                 author['runtime_agent_id'] == report['runtime_agent_id']:
@@ -311,7 +318,7 @@ def control(a):
         path.unlink()
         raise
     print(rel(path))
-    print(f"Suite : python3 tools/cycle_claude_stage.py stage {a.code} PRET_A_INJECTER --runtime {RUNTIME} --proof control={rel(path)}")
+    print(f"Suite : python3 tools/cycle_claude_stage.py stage {a.code} PRET_A_INJECTER --runtime {runtime} --proof control={rel(path)}")
 
 
 def trial(a):
@@ -334,6 +341,7 @@ def trial(a):
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument('code')
+    p.add_argument('--runtime', help='Identifiant réel de cette session (ou MEDINA_RUNTIME)')
     p.add_argument('--entry', help='Relevé d’entrée (claude_cycle_gate.py --prompts direct)')
     p.add_argument('--check', nargs=3, action='append', metavar=('ID', 'CHEMIN', 'EXPLICATION'), default=[])
     p.add_argument('--swiss-matrix')

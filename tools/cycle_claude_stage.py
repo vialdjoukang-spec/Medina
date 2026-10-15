@@ -72,16 +72,29 @@ def start(a):
     data = load()
     if any(c['state'] == 'ACTIF' for c in data['cycles']):
         sys.exit('Un cycle Claude est déjà actif')
+    novo = getattr(a, 'novo', None)
+    metadata = {}
+    if novo:
+        cycles, missions = G.V.specification(Disk(), novo)
+        a.cycle = cycles[0]
+        metadata = dict(novo=novo, tetrad_cycles=cycles, novo_plan_sha256=sha(G.V.PLAN),
+                        novo_authority=G.V.AUTHORITY, novo_authority_sha256=sha(G.V.AUTHORITY))
+    else:
+        missions = [(code, fragment, tag, a.cycle) for code, fragment, tag in N.missions(Disk(), a.cycle)]
+    if data['cycles']:
+        last = data['cycles'][-1]
+        if last['state'] != 'CLOTURE' or a.cycle != G.cycle_numbers(last)[-1] + 1:
+            sys.exit('Le cycle précédent doit être réellement clôturé, sans saut de numéro')
     if a.direct and (a.cycle not in G.DIRECT_CYCLES or a.transferred_from):
         sys.exit('Publication directe réservée aux cycles 3 à 30 produits par Claude')
     at = now()
-    rows = [dict(code=code, fragment_id=fragment, production_cycle=a.cycle, writer=f'C{a.cycle:02d}-R-{tag}',
+    rows = [dict(code=code, fragment_id=fragment, production_cycle=n, writer=f'C{n:02d}-R-{tag}',
                  cross_reviewer=None if a.direct else f'C{a.cycle:02d}-R-{N.CROSS[tag]}',
                  counter_reviewer=None if a.direct else f'C{a.cycle:02d}-CA-{tag}',
-                 status='EN_PRODUCTION', source_dir=None, files={}, images=None, **{k: None for k in G.PROOFS})
-            for code, fragment, tag in N.missions(Disk(), a.cycle)]
+                 status='EN_PRODUCTION', source_dir=None, files={}, images=None, **({'novo': novo} if novo else {}),
+                 **{k: None for k in G.PROOFS}) for code, fragment, tag, n in missions]
     mode = {'mode': G.DIRECT_MODE, 'authority': G.DIRECT_AUTHORITY, 'authority_sha256': sha(G.DIRECT_AUTHORITY)} if a.direct else {}
-    data['cycles'].append({'cycle': a.cycle, 'owner': 'Claude', 'state': 'ACTIF', 'started_at': at, **mode,
+    data['cycles'].append({'cycle': a.cycle, 'owner': 'Claude', 'state': 'ACTIF', 'started_at': at, **mode, **metadata,
                            'transferred_from': a.transferred_from,
                            'handover': ref(a.handover) if a.handover else None,
                            'cross_phase': None, 'closed_at': None, 'closure': None, 'budget': None, 'chapters': rows})
@@ -178,6 +191,9 @@ def main():
     s.add_argument('--transferred-from', choices=['Codex']); s.add_argument('--handover')
     s.add_argument('--direct', action='store_true', help='publication directe (cycles 3 à 30)')
     s.set_defaults(run=start)
+    s = sub.add_parser('novo', help='Ouvrir un lot de douze leçons après clôture réelle du précédent')
+    s.add_argument('novo', type=int); s.add_argument('--runtime', required=True)
+    s.set_defaults(run=start, direct=True, transferred_from=None, handover=None, cycle=None)
     s = sub.add_parser('stage'); s.add_argument('code'); s.add_argument('status'); s.add_argument('--runtime', required=True)
     s.add_argument('--source-dir'); s.add_argument('--images'); s.add_argument('--proof', action='append')
     s.set_defaults(run=stage)

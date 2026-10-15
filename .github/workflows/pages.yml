@@ -3,14 +3,6 @@ name: Publier MEDINA sur GitHub Pages
 on:
   push:
     branches: [main]
-    # Ces seuls reçus ne modifient aucun fichier du site. La garde espace.yml
-    # s'exécute toujours ; toute source, image ou configuration déclenche tout Pages.
-    paths-ignore:
-      - 'organisation/execution-20261014/cycles.json'
-      - 'organisation/execution-20261014/journal.jsonl'
-      - 'organisation/execution-20261014/status.json'
-      - 'organisation/execution-20261014/infrastructure-publication.json'
-      - 'organisation/execution-20261014/publications/**'
   workflow_dispatch:
 
 permissions:
@@ -23,7 +15,32 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  scope:
+    runs-on: ubuntu-latest
+    outputs:
+      build: ${{ steps.scope.outputs.build }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Déterminer les sources du site réellement modifiées
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if test "$EVENT_NAME" = workflow_dispatch; then
+            python3 tools/pages_scope.py --force
+          else
+            python3 tools/pages_scope.py
+          fi
+
   build:
+    needs: scope
+    if: needs.scope.outputs.build == 'true'
     runs-on: ubuntu-latest
     outputs:
       night_deadline: ${{ steps.publication_manifest.outputs.night_deadline }}
@@ -37,6 +54,16 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: "22"
+      # Cache uniquement les téléchargements ; chaque contrôle reste exécuté.
+      # Clé exacte pour les versions épinglées ci-dessous, sans restore-keys large.
+      - name: Réutiliser les dépendances Python, npm et Chromium
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/ms-playwright
+            ~/.npm
+          key: medina-pages-deps-${{ runner.os }}-${{ runner.arch }}-py312-node22-playwright1550-pillow1130
       - name: Vérifier les preuves et verrous des fragments avant publication
         env:
           BASE_SHA: ${{ github.event.before }}

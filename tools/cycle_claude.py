@@ -25,9 +25,11 @@ from datetime import datetime, timezone
 try:
     from tools import tetrade_cycle as C
     from tools import night_cycle as N
+    from tools import novo_cycle as V
 except ModuleNotFoundError:
     import tetrade_cycle as C
     import night_cycle as N
+    import novo_cycle as V
 
 REGISTRY = 'organisation/CYCLES_CLAUDE.json'
 JOURNAL = 'organisation/CYCLES_CLAUDE_journal.jsonl'
@@ -45,6 +47,7 @@ DIRECT_CYCLES = range(3, 31)
 DIRECT_DEFERRED = 'apres_cycle_30'
 SWITCH_CYCLES = (2,)
 PROMPTS_DIRECT = tuple(DIRECT_AUTHORITY if p == AUTHORITY else p for p in PROMPTS)
+PROMPTS_NOVO = PROMPTS_DIRECT + (V.TRUTH, V.AUTHORITY)
 DIRECT_FORBIDDEN = ('EN_AUDIT_CROISE', 'EN_CONTRE_AUDIT')
 SOURCE_ROOTS = ('livraisons/Livraison Codex/', 'livraisons/Livraison Claude/')
 ROW_FIELDS = ('code', 'fragment_id', 'production_cycle', 'writer', 'cross_reviewer', 'counter_reviewer',
@@ -66,7 +69,15 @@ def transferred_cycles(tree):
 def author_prompts(row):
     """Revue auteur : le Cycle 2 a été rédigé sous l'autorité de reprise (PROMPTS) avant son passage en
     publication directe ; les cycles 3 à 30 sous PROMPTS_DIRECT. Le contrôle reste toujours en PROMPTS_DIRECT."""
-    return PROMPTS if row['production_cycle'] in SWITCH_CYCLES else PROMPTS_DIRECT
+    return PROMPTS_NOVO if row.get('novo') else (PROMPTS if row['production_cycle'] in SWITCH_CYCLES else PROMPTS_DIRECT)
+
+
+def control_prompts(row):
+    return PROMPTS_NOVO if row.get('novo') else PROMPTS_DIRECT
+
+
+def cycle_numbers(cycle):
+    return cycle['tetrad_cycles'] if cycle.get('novo') else [cycle['cycle']]
 
 
 def direct(cycle):
@@ -86,12 +97,17 @@ def records(tree):
     cycles = data.get('cycles')
     C.require(isinstance(cycles, list) and cycles and all(isinstance(c, dict) for c in cycles), 'Cycles Claude : cycles absents')
     first = cycles[0].get('cycle')
-    C.require(isinstance(first, int) and first >= 2 and [c.get('cycle') for c in cycles] == list(range(first, first + len(cycles))),
+    C.require(type(first) is int and first >= 2 and all(type(c.get('cycle')) is int for c in cycles),
               'Cycles Claude : cycles consécutifs requis')
     codex = C.read_json(tree, N.REGISTRY, False) or {}
     codex_cycles = {c.get('cycle'): c for c in codex.get('cycles', []) if isinstance(c, dict)}
     for index, cycle in enumerate(cycles):
         n = cycle['cycle']
+        missions = (V.validate_cycle(tree, cycle) if cycle.get('novo') is not None else
+                    [(code, fragment, tag, n) for code, fragment, tag in N.missions(tree, n)])
+        if index:
+            C.require(n == cycle_numbers(cycles[index - 1])[-1] + 1,
+                      'Cycles Claude : cycles consécutifs requis')
         C.require(cycle.get('owner') == 'Claude' and cycle.get('state') in {'ACTIF', 'CLOTURE'} and cycle.get('budget') is None,
                   'Cycles Claude : responsable, état ou budget invalide')
         C.require(C.dated(cycle.get('started_at')) >= C.dated(NOT_BEFORE), 'Cycles Claude : départ antérieur à l’autorisation')
@@ -103,7 +119,8 @@ def records(tree):
         else:
             C.require(cycle.get('transferred_from') is None and cycle.get('handover') is None,
                       'Cycles Claude : reprise non déclarée correctement')
-            C.require(n not in codex_cycles, 'Cycles Claude : cycle déjà attribué à Codex')
+            C.require(all(number not in codex_cycles for number in cycle_numbers(cycle)),
+                      'Cycles Claude : cycle déjà attribué à Codex')
         if cycle.get('mode') is None:
             C.require(cycle.get('authority') is None and cycle.get('authority_sha256') is None,
                       'Cycles Claude : autorité propre sans mode déclaré')
@@ -120,13 +137,16 @@ def records(tree):
                 C.require(index > 0, 'Cycles Claude : publication directe après un cycle Claude clôturé seulement')
             C.require(cycle.get('cross_phase') is None, 'Cycles Claude : phase croisée fictive en publication directe')
         rows = cycle.get('chapters')
-        C.require(isinstance(rows, list) and len(rows) == 4, 'Cycles Claude : exactement quatre leçons requises')
-        for row, (code, fragment, tag) in zip(rows, N.missions(tree, n)):
+        C.require(isinstance(rows, list) and len(rows) == len(missions),
+                  'Cycles Claude : exactement douze leçons Novo requises' if cycle.get('novo') else
+                  'Cycles Claude : exactement quatre leçons requises')
+        for row, (code, fragment, tag, production_cycle) in zip(rows, missions):
             C.require(isinstance(row, dict) and all(k in row for k in ROW_FIELDS), 'Cycles Claude : champs de leçon absents')
-            C.require((row['code'], row['fragment_id'], row['production_cycle']) == (code, fragment, n),
+            C.require((row['code'], row['fragment_id'], row['production_cycle']) == (code, fragment, production_cycle)
+                      and row.get('novo') == cycle.get('novo'),
                       'Cycles Claude : identité ou ordre des quatre leçons incorrect')
             reviewers = (None, None) if direct(cycle) else (f'C{n:02d}-R-{N.CROSS[tag]}', f'C{n:02d}-CA-{tag}')
-            C.require(row['writer'] == f'C{n:02d}-R-{tag}' and (row['cross_reviewer'], row['counter_reviewer']) == reviewers,
+            C.require(row['writer'] == f'C{production_cycle:02d}-R-{tag}' and (row['cross_reviewer'], row['counter_reviewer']) == reviewers,
                       'Cycles Claude : indépendance des missions incorrecte')
             C.require(row['status'] in C.STATES and all(row[k] is None or isinstance(row[k], dict) for k in PROOFS),
                       'Cycles Claude : statut ou preuve invalide')
@@ -170,7 +190,9 @@ def direct_ready(tree, row):
               'Cycles Claude : audit croisé ou contre-audit fictif en publication directe')
     author = C.review(tree, row, 'author', row['writer'], files, author_prompts(row))
     C.source_ledger_proof(tree, row, author, files)
-    control = C.review(tree, row, 'control', COORDINATOR, files, PROMPTS_DIRECT)
+    if row.get('novo'):
+        V.research_proof(tree, row, author)
+    control = C.review(tree, row, 'control', COORDINATOR, files, control_prompts(row))
     C.require(C.dated(author['exit']['checked_at']) <= C.dated(control['entry']['checked_at']),
               'Cycles Claude : contrôle engagé avant la sortie de l’auteur')
     C.require(author['runtime_agent_id'] != control['runtime_agent_id'], 'Cycles Claude : auteur et coordinateur distincts requis')
@@ -244,7 +266,7 @@ def temporal_proofs(tree, cycle, now):
             review_dates(C.proof(tree, item.get('review'), 'Revue croisée initiale archivée'))
     if cycle['state'] == 'CLOTURE':
         closed = C.dated(cycle['closed_at'])
-        C.require(len(publications) == 4 and max(publications) <= closed <= now,
+        C.require(len(publications) == len(cycle['chapters']) and max(publications) <= closed <= now,
                   'Cycles Claude : clôture antérieure aux publications ou future')
 
 
@@ -257,7 +279,7 @@ def validate(before, after, now=None):
     changed = {p for p in before.entries.keys() | after.entries.keys() if before.entries.get(p) != after.entries.get(p)}
     codes = {r['code'] for cycle in new['cycles'] for r in cycle['chapters']}
     course_changes = {p for p in changed if C.managed(p, codes) or
-                      any(p.startswith(f"assets/img/cycle{c['cycle']}/") for c in new['cycles'])}
+                      any(p.startswith(f"assets/img/cycle{n}/") for c in new['cycles'] for n in cycle_numbers(c))}
     if REGISTRY in changed or JOURNAL in changed or course_changes:
         N.journal_proof(before, after, new, now, journal=JOURNAL)
         for cycle in new['cycles']:
@@ -276,6 +298,9 @@ def validate(before, after, now=None):
     if any(c['state'] == 'ACTIF' for c in old['cycles'] + new['cycles']):
         for p in (AUTHORITY, PLAN):
             C.require(before.read(p) == after.read(p), 'Cycles Claude : instruction ou plan modifié pendant un cycle actif')
+    if any(c.get('novo') for c in old['cycles']):
+        for p in (V.PLAN, V.AUTHORITY):
+            C.require(before.read(p) == after.read(p), 'Novo : instruction ou plan modifié après ouverture')
     C.require(len(new['cycles']) in {len(old['cycles']), len(old['cycles']) + 1} and
               new['cycles'][0]['cycle'] == old['cycles'][0]['cycle'], 'Cycles Claude : ajout ou retrait de cycles incorrect')
     authorized, catalog_codes, injections = {}, set(), []
@@ -288,7 +313,8 @@ def validate(before, after, now=None):
             C.require(not course_changes, 'Cycles Claude : nouveau cycle avec injection simultanée')
             continue
         previous_cycle = old['cycles'][index]
-        for field in ('cycle', 'owner', 'started_at', 'budget', 'transferred_from', 'handover'):
+        for field in ('cycle', 'owner', 'started_at', 'budget', 'transferred_from', 'handover',
+                      'novo', 'tetrad_cycles', 'novo_plan_sha256', 'novo_authority', 'novo_authority_sha256'):
             C.require(cycle.get(field) == previous_cycle.get(field), 'Cycles Claude : identité ou départ du cycle modifié')
         if any(cycle.get(f) != previous_cycle.get(f) for f in ('mode', 'authority', 'authority_sha256')):
             mode_change(after, previous_cycle, cycle, now)
@@ -346,27 +372,40 @@ def validate(before, after, now=None):
                           C.re.fullmatch(r'[0-9a-f]{40}', pub.get('main_sha', '')) and
                           pub.get('public_url', '').startswith('https://vialdjoukang-spec.github.io/Medina/fragments/'),
                           'Cycles Claude : publication non vérifiée')
+                if row.get('novo'):
+                    V.publication_proof(after, row, pub, files)
         if cycle['state'] == 'CLOTURE':
             closure = C.proof(after, cycle.get('closure'), 'Clôture')
             C.require(closure.get('blocking_reserves') == [] and closure.get('cycle') == cycle['cycle'],
                       'Cycles Claude : clôture avec réserves')
-    C.require(len(injections) <= 1, 'Cycles Claude : une seule injection à la fois')
+    batch = bool(injections and injections[0][0].get('novo'))
+    C.require(len(injections) <= 1 or (batch and len(injections) <= 12 and
+              all(c is injections[0][0] for c, r in injections)), 'Cycles Claude : une seule injection à la fois')
     if injections:
         prior, row = injections[0]
         deferred = direct(prior)
         idx = [r['code'] for r in prior['chapters']].index(row['code'])
-        C.require(all(r['status'] == 'PUBLIE_VERIFIE' for r in prior['chapters'][:idx]) and
+        C.require(all(r['status'] in ({'INJECTE', 'PUBLIE_VERIFIE'} if batch else {'PUBLIE_VERIFIE'})
+                      for r in prior['chapters'][:idx]) and
                   all(r['status'] == 'PRET_A_INJECTER' for r in prior['chapters'][idx:]),
                   'Cycles Claude : ordre de publication ou quatre cours prêts non respecté')
+        expected_codes = [r['code'] for r in prior['chapters'][idx:idx + len(injections)]]
+        C.require([r['code'] for c, r in injections] == expected_codes, 'Novo : injections non consécutives')
         C.require(course_changes == set(authorized), 'Cycles Claude : fichiers injectés manquants ou supplémentaires')
         original, catalog = C.read_json(before, 'chapters.json'), C.read_json(after, 'chapters.json')
         additions = [r for r in catalog if r not in original]
-        C.require(len(catalog) == len(original) + 1 and all(r in catalog for r in original) and len(additions) == 1 and
-                  additions[0].get('code') == row['code'] and additions[0].get('covers') == [row['code']] and
-                  additions[0].get('integrated') is True and additions[0].get('production_cycle') == row['production_cycle'],
+        expected = {r['code']: r for c, r in injections}
+        if batch:
+            C.require(len({a.get('code') for a in catalog}) == len(catalog) and
+                      not set(expected).intersection(a.get('code') for a in original),
+                      'Novo : code déjà présent ou catalogue dupliqué')
+        C.require(len(catalog) == len(original) + len(injections) and all(r in catalog for r in original) and
+                  len(additions) == len(injections) and [a.get('code') for a in additions] == expected_codes and
+                  all(a.get('covers') == [a['code']] and a.get('integrated') is True and
+                      a.get('production_cycle') == expected[a['code']]['production_cycle'] for a in additions),
                   'Cycles Claude : catalogue ajout unique requis')
         if deferred:
-            C.require(additions[0].get('provisional_injection') is True and additions[0].get('audit_deferred') == DIRECT_DEFERRED,
+            C.require(all(a.get('provisional_injection') is True and a.get('audit_deferred') == DIRECT_DEFERRED for a in additions),
                       'Cycles Claude : publication directe sans mention d’audit différé')
         authorized['chapters.json'] = C.digest(after.read('chapters.json'))
     else:

@@ -57,3 +57,29 @@ des nouvelles executions ; annuler un run deja en cours si necessaire.
 Cadence demandee : cinq minutes ; GitHub peut retarder ses executions.
 Les cinq minutes sont un minimum, pas une garantie de reaction a la seconde.
 Les problemes inconnus exigent le diagnostic de Claude, pas une levee fictive.
+
+## Mise a jour — progression souple et triage neutre (Vial, 15 octobre 2026)
+
+Les audits médicaux indépendants et contre-audits sont suspendus jusqu'à nouvel
+ordre. Leur absence, leur report ou un résultat non encore obtenu ne bloque pas
+la préparation, la correction ou la proposition d'une livraison. Ils ne sont
+jamais présentés comme réussis. Les échecs techniques détectés restent visibles
+comme faits à examiner, sans veto automatique du moteur.
+
+Le moteur ne bloque pas une PR sur un commentaire dans son fil. Après l'alerte
+et 300 secondes minimales, il publie une délégation unique pour la tête/base
+concernée. Claude peut accepter ou rejeter le rapport et choisir la correction.
+Les signaux de contenu se limitent aux marqueurs manifestement provisoires
+(TODO/TBD/FIXME, texte de remplissage, fichier de cours ajouté vide) ; ce sont
+des suggestions, jamais une correction ni un jugement médical automatique.
+
+Le seul contrôle d'arrêt du moteur reste `/medina off` dans l'issue de contrôle
+97, réactivable par `/medina on`. Il ne s'agit pas d'un veto sur une livraison.
+Le compte GitHub étant partagé, le moteur ne peut pas authentifier séparément
+Vial et Claude : Claude n'utilise pas ces commandes sans instruction de Vial.
+
+La lecture préalable du [Prompt de vérité](../betta/PROMPT_VERITE.md) reste
+obligatoire pour Claude et chaque agent qui ouvre une leçon. La suspension des
+audits ne suspend ni cette lecture ni la porte documentaire avant rédaction.
+Le moteur rappelle la règle, mais ne prétend pas pouvoir prouver qu'une lecture
+a eu lieu.

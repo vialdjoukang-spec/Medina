@@ -17,13 +17,21 @@ USA = re.compile(r"acc\.org|heart\.org|idsociety|uspreventiveservices|aafp\.org|
 
 
 def controler(dossier):
-    d, err = Path(dossier), []
+    d = Path(dossier)
     code = d.name.split("_")[-1]
     try:
         texte = (d / "recherche.md").read_text(encoding="utf-8")
         sources = json.loads((d / "sources.json").read_text(encoding="utf-8"))["sources"]
     except (OSError, ValueError, KeyError) as e:
         return [f"dossier illisible : {e}"]
+    return controler_contenu(texte, sources, code)
+
+
+def controler_contenu(texte, sources, code):
+    """Contrôle pur réutilisable par les gardes Git, sans attestation de lecture."""
+    err = []
+    if not isinstance(sources, list) or not all(isinstance(s, dict) for s in sources):
+        return ["sources : liste d'objets requise"]
     bloc = re.search(r"^## Matrice de complétude\s*$(.*?)(?=^## |\Z)", texte, re.M | re.S)
     if not bloc:
         err.append("section « ## Matrice de complétude » absente")
