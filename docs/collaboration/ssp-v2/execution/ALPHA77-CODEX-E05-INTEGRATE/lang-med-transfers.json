@@ -1,0 +1,42 @@
+{
+  "actor": "Codex",
+  "code": "E05",
+  "kind": "surface_consistency_observations_not_new_medical_audit",
+  "medical_human_validation": false,
+  "at": "2026-10-15T21:30:46.993078+00:00",
+  "findings": [
+    {
+      "id": "E05-LANG-TRANSFER-BWPS",
+      "status": "open",
+      "severity": "MAJEUR",
+      "finding": "Discordance interne : glossary/e05.py, entrée BWPS, «45 ou plus signe la crise», alors que pS sémiologie et A12 indiquent que le score ne constitue pas un test définitif. Assertion catégorique non corrigée sous mandat LANG ; revue MED ciblée requise.",
+      "evidence": [
+        "glossary/e05.py#BWPS",
+        "chapters/E05/E05_c.html#e05-semio-urgency",
+        "chapters/E05/E05_b.html#e05-a12"
+      ]
+    },
+    {
+      "id": "E05-LANG-TRANSFER-HYDROCORTISONE",
+      "status": "open",
+      "severity": "MAJEUR",
+      "finding": "Discordance interne : monographie Solu-Cortef de pop2 décrit JTA300mg/j (100mg toutes8h) et renvoie A07, lequel adopte consensus2026 charge100mg puis50mg quatrefois/j. Attribution historique distincte insuffisamment reliée ; harmonisation MED ciblée requise, aucune dose changée ici.",
+      "evidence": [
+        "chapters/E05/E05_pop2.html#e05-m-solucortef",
+        "chapters/E05/E05_b.html#e05-a07",
+        "chapters/E05/E05_pop1.html#e05-hydrocortisone-crise"
+      ]
+    },
+    {
+      "id": "E05-LANG-TRANSFER-MYCOPHENOLATE",
+      "status": "open",
+      "severity": "MAJEUR",
+      "finding": "Discordance interne : fenêtre de méthylprednisolone pop2 dit «Le schéma peut s’associer au mycophénolate» tandis que A10 hiérarchise association en premièreligne pourlaplupart et monothérapie alternative sélectionnée. Vérification MED ciblée de cette formulation requise ; aucune indication modifiée sous LANG.",
+      "evidence": [
+        "chapters/E05/E05_pop2.html#e05-methylprednisolone-iv",
+        "chapters/E05/E05_b.html#e05-a10"
+      ]
+    }
+  ],
+  "recommendation": "Retenir E05 avant publication même provisoire pour revue MED ciblée de ces trois discordances ; aucun risque de dose ni erreur primaire nouvellement démontré par LANG."
+}
