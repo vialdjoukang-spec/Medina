@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "64257cb82c4ae41ae692f947a6fbd0cfa8a86800",
+ "reviewed_commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -23,11 +23,11 @@
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
   "chapters/C77/C77_b.html": "7654cdad34a41e4af9dd7953db554b40a3ea490ea45523e6025541df34b4b2d6",
-  "chapters/C77/C77_c.html": "1b4ab794216aed9057e4f4f3fc664710f8caa7cd23f84cceba027310934d0dd7",
+  "chapters/C77/C77_c.html": "ac93f1c5b4d4659367ceaff8e42d4f5e3f91e98bb785f5467b413d1e9ac9c651",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
-  "chapters/C77/C77_pop2.html": "e3408f4ec6d686d4637312fa49880868b03d5c6297485f18fd6cbc892283bf7f",
-  "glossary/c77.py": "35d710ff2012ea394b3a24dce586e0fc96a36437faaed5f1b625f19f32384042"
+  "chapters/C77/C77_pop2.html": "618f0d42ee589b925e6927dcd3263f267e12f6f2b4633cc6d1d61f874061abbb",
+  "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
  },
  "requirements_reviewed": {
   "fundamental_analytical_semiology": true,
@@ -86,6 +86,25 @@
    "status": "non_blocking",
    "finding": "Lacunes de contenu déclarées dans le texte : aucune valeur chiffrée pour consistance, sensibilité, mobilité, peau ; mécanisme de la fixité et de la douleur à l’alcool non décrits ; aucune valeur suisse propre ; grossesse non couverte ; photographie des aires cervicales (CRUK) non obtenue (HTTP 429).",
    "evidence": "c77-sm-2, c77-sm-3, c77-sm-5, c77-sm-8 ; prep/READY.json ; prep/figures.json."
+  },
+  {
+   "id": "P-SEMIO-IMM-01",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "C77_c.html .sci-bar et #c77-s-immuno",
+   "finding": "Structure après ajout : la sémiologie reste le premier bouton, sélectionnée et visible par défaut ; cinq disciplines la suivent (Anatomie, Histologie, Physiologie, Biochimie et biologie moléculaire, Immunologie), soit six sous-onglets conformes à AGENTS.md. Le panneau c77-s-immuno n’est pas une section data-semiology et porte seul le Pareto (data-cover sur c77-s-immuno-cours). Aucune anatomie dessinée : la Figure 6 n’est qu’un schéma causal de boîtes de texte. La grille SEM-01…SEM-24 reste valable ; SEM-22 vérifié à nouveau à 390 px (défilement horizontal 0).",
+   "evidence": "Chromium 1194 servi en HTTP local (port distinct d’un serveur tiers détecté sur 8793), 1300 px et 390 px : .sci-bar = Sémiologie fondamentale et analytique, Anatomie, Histologie, Physiologie, Biochimie et biologie moléculaire, Immunologie (5 disciplines + sémiologie) ; #c77-tab-semio aria-selected=true et c77-s-semio visible à l’ouverture ; c77-s-immuno caché avant clic; Clic sur Immunologie : c77-s-immuno visible, c77-s-semio caché, aria-selected basculé (immuno true, sémiologie false) ; h2 « Immunologie du ganglion : de la réponse normale à l’échappement tumoral » ; 1 138 mots rendus; Défilement horizontal 0 (ordinateur et mobile) ; aucune erreur JavaScript (pageerror) ni erreur console; test_v7.py --static C77 : OK (24 012 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML"
+  },
+  {
+   "id": "P-SEMIO-IMM-02",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "etat": "ouvert",
+   "anchor": "C77_c.html : div.sci#c77-s-immuno",
+   "finding": "Accessibilité : comme les quatre autres disciplines, le panneau c77-s-immuno n’a ni role=\"tabpanel\" ni aria-labelledby, et son bouton n’a ni id ni type=\"button\" ; seul le couple sémiologie est complet. Cohérent avec l’existant, non bloquant.",
+   "correction_proposee": "Ajouter id=\"c77-tab-immuno\" type=\"button\" au bouton et role=\"tabpanel\" aria-labelledby=\"c77-tab-immuno\" au panneau (et de même pour les autres disciplines).",
+   "source": "Contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15 (navigation accessible) ; lecture du DOM rendu",
+   "evidence": "<div class=\"sci\" id=\"c77-s-immuno\" hidden> ; <button role=\"tab\" aria-selected=\"false\" aria-controls=\"c77-s-immuno\" data-s=\"c77-s-immuno\">"
   }
  ],
  "evidence": [
@@ -121,7 +140,31 @@
     "Figure 1 SEER : image chargée (complete), légende visible contenant « domaine public », « Wikimedia Commons », « Ann Arbor » et « sans représenter les voies de drainage »",
     "Captures P : scratchpad p_desktop_semio.png, p_mobile_semio.png, p_desktop_pop.png, p_mobile_pop.png, p_desktop_fig1.png, p_mobile_f24.png (hors dépôt) ; captures W versionnées dans integration/captures/"
    ]
+  },
+  {
+   "ref": "cinquieme_discipline_rendu",
+   "controls": [
+    "build_front.py --fragment S06, sortie hors dépôt (scratchpad/c77rev) : 5 976 660 → 3 741 440 octets, 654 gabarits",
+    "Chromium 1194 servi en HTTP local (port distinct d’un serveur tiers détecté sur 8793), 1300 px et 390 px : .sci-bar = Sémiologie fondamentale et analytique, Anatomie, Histologie, Physiologie, Biochimie et biologie moléculaire, Immunologie (5 disciplines + sémiologie) ; #c77-tab-semio aria-selected=true et c77-s-semio visible à l’ouverture ; c77-s-immuno caché avant clic",
+    "Clic sur Immunologie : c77-s-immuno visible, c77-s-semio caché, aria-selected basculé (immuno true, sémiologie false) ; h2 « Immunologie du ganglion : de la réponse normale à l’échappement tumoral » ; 1 138 mots rendus",
+    "Figure 6 : SVG role=img + aria-label + figcaption, aucune structure anatomique dessinée (8 boîtes de texte reliées par des segments) ; police rendue 13,4 px à 1300 px mais 5,5 px à 390 px (constat P-IMM-06) ; aucun débordement de la figure",
+    "Mot vert « instabilité microsatellitaire » ouvre la fenêtre c77-imm-msi (titre, texte CUPISCO et source lisibles à 390 px) ; Pareto pareto-c77-immuno : 42 mots sur 1 139, ratio calculé par le moteur",
+    "Défilement horizontal 0 (ordinateur et mobile) ; aucune erreur JavaScript (pageerror) ni erreur console",
+    "test_v7.py --static C77 : OK (24 012 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+    "Captures P hors dépôt : scratchpad/p_desktop_immuno_fig.png, p_mobile_immuno_fig.png, p_desktop_immuno_pop.png, p_mobile_immuno_pop.png"
+   ]
   }
  ],
- "mention": "Revue IA, distincte d’une validation médicale humaine. La présence des balises, empreintes et déclarations ne certifie ni exactitude médicale ni validation par un médecin."
+ "mention": "Revue IA, distincte d’une validation médicale humaine. La présence des balises, empreintes et déclarations ne certifie ni exactitude médicale ni validation par un médecin.",
+ "revue_cinquieme_discipline": {
+  "date": "2026-10-15",
+  "commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
+  "agent": "Agent P, relecteur indépendant de l’ajout de W (bd50fdc8)",
+  "perimetre": "Sous-onglet Immunologie c77-s-immuno (C77_c.html), fenêtres c77-imm-msi et pareto-c77-immuno (C77_pop2.html), clé CUPISCO (glossary/c77.py)",
+  "bloquants": 0,
+  "constats_ouverts_non_bloquants": [
+   "P-SEMIO-IMM-02"
+  ],
+  "note": "Revue IA, distincte d’une validation médicale humaine."
+ }
 }

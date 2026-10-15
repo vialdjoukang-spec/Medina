@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "64257cb82c4ae41ae692f947a6fbd0cfa8a86800",
+ "reviewed_commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -23,11 +23,11 @@
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
   "chapters/C77/C77_b.html": "7654cdad34a41e4af9dd7953db554b40a3ea490ea45523e6025541df34b4b2d6",
-  "chapters/C77/C77_c.html": "1b4ab794216aed9057e4f4f3fc664710f8caa7cd23f84cceba027310934d0dd7",
+  "chapters/C77/C77_c.html": "ac93f1c5b4d4659367ceaff8e42d4f5e3f91e98bb785f5467b413d1e9ac9c651",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
-  "chapters/C77/C77_pop2.html": "e3408f4ec6d686d4637312fa49880868b03d5c6297485f18fd6cbc892283bf7f",
-  "glossary/c77.py": "35d710ff2012ea394b3a24dce586e0fc96a36437faaed5f1b625f19f32384042"
+  "chapters/C77/C77_pop2.html": "618f0d42ee589b925e6927dcd3263f267e12f6f2b4633cc6d1d61f874061abbb",
+  "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
  },
  "requirements_reviewed": {
   "fundamental_analytical_semiology": true,
@@ -65,6 +65,36 @@
    "status": "resolved",
    "finding": "Renvois médicaux R1 à R3 du rapport LANG tranchés avec les sources (5/100 000 habitants par an, indicateur de l’OMS cité en référence 15 de la revue suisse ; fourchette > 10–15 mm restituée ; masses non ganglionnaires distinguées des adénopathies bénignes).",
    "evidence": "Swiss Medical Weekly 2024, références 15 (World Health Organization GTR) et sections médiastinale et axillaire, vérifiées par P."
+  },
+  {
+   "id": "P-LANG-IMM-00",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "C77_c.html #c77-s-immuno-cours ; C77_pop2.html c77-imm-msi, pareto-c77-immuno",
+   "finding": "Français professionnel conforme à docs/STYLE_REDACTION.md : phrases courtes et complètes, annonce (« trois faits utiles »), progression normal → perturbation → clinique → traitement, épilogue « À retenir », aucune métaphore ni plaisanterie, termes dédiés (anergiques, veinules à endothélium haut, cellules réticulaires fibroblastiques). Sigles tous couverts (build_medina.audit = {}).",
+   "evidence": "Lecture intégrale par P du rendu Chromium et des sources HTML à bd50fdc8."
+  },
+  {
+   "id": "P-LANG-IMM-01",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "etat": "ouvert",
+   "anchor": "C77_c.html « Le pont vers le traitement du CUP », 2e phrase après le mot vert",
+   "finding": "Coordination ambiguë « l’instabilité microsatellitaire ou le déficit MMR et une charge mutationnelle élevée » : le lecteur peut croire que les deux marqueurs doivent coexister.",
+   "correction_proposee": "« Dans le CUP, deux marqueurs de sensibilité sont bien établis : l’instabilité microsatellitaire, ou le déficit MMR qui la cause, et une charge mutationnelle élevée, d’au moins 10 mutations par mégabase. »",
+   "source": "docs/STYLE_REDACTION.md (le lecteur comprend, il ne devine pas) ; Onkopedia 2025",
+   "evidence": "Onkopedia : « Mikrosatelliteninstabilität bzw. Defizienz der Mismatch-Repair-Enzyme und TMB-high (≥10 Mutationen/Megabase) bei CUP gut belegt » (deux marqueurs distincts)."
+  },
+  {
+   "id": "P-LANG-IMM-02",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "etat": "ouvert",
+   "anchor": "C77_c.html, 1er paragraphe « trois faits utiles pour C77 »",
+   "finding": "Le code « C77 » sert de désignation dans une phrase de cours ; le reste de la leçon dit « les métastases ganglionnaires » ou « le CUP ».",
+   "correction_proposee": "« … trois faits utiles pour comprendre la métastase ganglionnaire : … »",
+   "source": "docs/STYLE_REDACTION.md",
+   "evidence": "Phrase relevée telle quelle à bd50fdc8."
   }
  ],
  "evidence": [
@@ -85,7 +115,38 @@
     "Figure 1 SEER : image chargée (complete), légende visible contenant « domaine public », « Wikimedia Commons », « Ann Arbor » et « sans représenter les voies de drainage »",
     "Captures P : scratchpad p_desktop_semio.png, p_mobile_semio.png, p_desktop_pop.png, p_mobile_pop.png, p_desktop_fig1.png, p_mobile_f24.png (hors dépôt) ; captures W versionnées dans integration/captures/"
    ]
+  },
+  {
+   "ref": "cinquieme_discipline_rendu",
+   "controls": [
+    "build_front.py --fragment S06, sortie hors dépôt (scratchpad/c77rev) : 5 976 660 → 3 741 440 octets, 654 gabarits",
+    "Chromium 1194 servi en HTTP local (port distinct d’un serveur tiers détecté sur 8793), 1300 px et 390 px : .sci-bar = Sémiologie fondamentale et analytique, Anatomie, Histologie, Physiologie, Biochimie et biologie moléculaire, Immunologie (5 disciplines + sémiologie) ; #c77-tab-semio aria-selected=true et c77-s-semio visible à l’ouverture ; c77-s-immuno caché avant clic",
+    "Clic sur Immunologie : c77-s-immuno visible, c77-s-semio caché, aria-selected basculé (immuno true, sémiologie false) ; h2 « Immunologie du ganglion : de la réponse normale à l’échappement tumoral » ; 1 138 mots rendus",
+    "Figure 6 : SVG role=img + aria-label + figcaption, aucune structure anatomique dessinée (8 boîtes de texte reliées par des segments) ; police rendue 13,4 px à 1300 px mais 5,5 px à 390 px (constat P-IMM-06) ; aucun débordement de la figure",
+    "Mot vert « instabilité microsatellitaire » ouvre la fenêtre c77-imm-msi (titre, texte CUPISCO et source lisibles à 390 px) ; Pareto pareto-c77-immuno : 42 mots sur 1 139, ratio calculé par le moteur",
+    "Défilement horizontal 0 (ordinateur et mobile) ; aucune erreur JavaScript (pageerror) ni erreur console",
+    "test_v7.py --static C77 : OK (24 012 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+    "Captures P hors dépôt : scratchpad/p_desktop_immuno_fig.png, p_mobile_immuno_fig.png, p_desktop_immuno_pop.png, p_mobile_immuno_pop.png"
+   ]
+  },
+  {
+   "ref": "choix_differes",
+   "items": [
+    "Choix éditoriaux différés, non appliqués et non comptés comme constats : espaces insécables globales (ex. coupure « 65 / % » dans c77-imm-msi à 390 px), « fibrillation atriale/auriculaire », groupe LIENS d’E11."
+   ]
   }
  ],
- "mention": "Revue IA, distincte d’une validation médicale humaine."
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "revue_cinquieme_discipline": {
+  "date": "2026-10-15",
+  "commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
+  "agent": "Agent P, relecteur indépendant de l’ajout de W (bd50fdc8)",
+  "perimetre": "Sous-onglet Immunologie c77-s-immuno (C77_c.html), fenêtres c77-imm-msi et pareto-c77-immuno (C77_pop2.html), clé CUPISCO (glossary/c77.py)",
+  "bloquants": 0,
+  "constats_ouverts_non_bloquants": [
+   "P-LANG-IMM-01",
+   "P-LANG-IMM-02"
+  ],
+  "note": "Revue IA, distincte d’une validation médicale humaine."
+ }
 }
