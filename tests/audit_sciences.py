@@ -6,22 +6,84 @@ absents. Il ne constitue pas une validation de l'exactitude médicale.
 """
 import argparse
 import hashlib
+from html.parser import HTMLParser
 import json
 import re
 import subprocess
 from pathlib import Path
-from lxml import etree, html
 
 ROOT = Path(__file__).resolve().parents[1]
-CLASS = "contains(concat(' ',normalize-space(@class),' '),' {} ')"
+VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link',
+        'meta', 'param', 'source', 'track', 'wbr'}
+INERT = {'script', 'style', 'template'}
+
+
+class Node:
+    """Small source tree: ordered text, parents and explicit descendant searches."""
+    def __init__(self, tag, attrs=(), parent=None):
+        self.tag, self.attrib, self.parent = tag, {key: value or '' for key, value in attrs}, parent
+        self.content = []
+
+    def get(self, name, default=None):
+        return self.attrib.get(name, default)
+
+    def getparent(self):
+        return self.parent
+
+    def itertext(self):
+        if self.tag in INERT:
+            return
+        for child in self.content:
+            if isinstance(child, str):
+                yield child
+            else:
+                yield from child.itertext()
+
+    def find_all(self, tag=None, attrs=None, class_name=None, direct=False):
+        found = []
+        for child in self.content:
+            if isinstance(child, str) or child.tag in INERT:
+                continue
+            if ((tag is None or child.tag == tag) and
+                    all(key in child.attrib and (value is None or child.get(key) == value)
+                        for key, value in (attrs or {}).items()) and
+                    (class_name is None or class_name in child.get('class', '').split())):
+                found.append(child)
+            if not direct:
+                found.extend(child.find_all(tag, attrs, class_name))
+        return found
+
+
+class ScienceParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.root = Node('document')
+        self.stack = [self.root]
+
+    def handle_starttag(self, tag, attrs):
+        node = Node(tag, attrs, self.stack[-1])
+        self.stack[-1].content.append(node)
+        if tag not in VOID:
+            self.stack.append(node)
+
+    def handle_startendtag(self, tag, attrs):
+        self.stack[-1].content.append(Node(tag, attrs, self.stack[-1]))
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, 0, -1):
+            if self.stack[index].tag == tag:
+                del self.stack[index:]
+                break
+
+    def handle_data(self, data):
+        self.stack[-1].content.append(data)
 
 
 def science(source):
-    try:
-        tree = html.fragment_fromstring(source, create_parent=True)
-    except etree.ParserError as error:
-        raise ValueError('HTML scientifique illisible') from error
-    panels = tree.xpath('.//*[@id="pS"]')
+    parser = ScienceParser()
+    parser.feed(source)
+    parser.close()
+    panels = parser.root.find_all(attrs={'id': 'pS'})
     if len(panels) != 1:
         raise ValueError('un unique panneau pS est requis')
     return panels[0]
@@ -80,20 +142,20 @@ def accessible_figure(figure):
             node = node.getparent()
         return False
 
-    if not any(exposed(c) and ' '.join(c.itertext()).strip() for c in figure.xpath('./figcaption')):
+    if not any(exposed(c) and ' '.join(c.itertext()).strip() for c in figure.find_all('figcaption', direct=True)):
         return False
-    for node in figure.xpath('.//svg[@role="img"]'):
+    for node in figure.find_all('svg', attrs={'role': 'img'}):
         if not exposed(node):
             continue
         if node.get('aria-label', '').strip():
             return True
         labels = node.get('aria-labelledby', '').split()
-        if labels and all(len(figure.xpath('.//*[@id=$ident]', ident=label)) == 1 and
-                          ' '.join(figure.xpath('.//*[@id=$ident]', ident=label)[0].itertext()).strip()
+        if labels and all(len(figure.find_all(attrs={'id': label})) == 1 and
+                          ' '.join(figure.find_all(attrs={'id': label})[0].itertext()).strip()
                           for label in labels):
             return True
     return any(exposed(node) and node.get('src', '').strip() and node.get('alt', '').strip()
-               for node in figure.xpath('.//img'))
+               for node in figure.find_all('img'))
 
 
 def words(node):
@@ -102,8 +164,8 @@ def words(node):
 
 
 def measure(panel):
-    return {"words": words(panel), "figures": len(panel.xpath('.//figure')),
-            "disciplines": len(panel.xpath('.//*[' + CLASS.format('sci') + ']'))}
+    return {"words": words(panel), "figures": len(panel.find_all('figure')),
+            "disciplines": len(panel.find_all(class_name='sci'))}
 
 
 def main(argv=None):
@@ -155,8 +217,8 @@ def main(argv=None):
             except ValueError as error:
                 report['errors'].append(f'{code}: source de comparaison invalide : {error}')
         details = []
-        tabs = current.xpath('.//button[@data-s]')
-        units = current.xpath('.//*[' + CLASS.format('sci') + ']')
+        tabs = current.find_all('button', attrs={'data-s': None})
+        units = current.find_all(class_name='sci')
         if (not units or len({u.get('id') for u in units}) != len(units) or
                 len(tabs) != len(units) or not all(u.get('id') for u in units) or
                 {u.get('id') for u in units} != {t.get('data-s') for t in tabs}):
@@ -164,7 +226,7 @@ def main(argv=None):
         for unit in units:
             uid = unit.get('id')
             text = ' '.join(unit.itertext())
-            figures = unit.xpath('.//figure')
+            figures = unit.find_all('figure')
             if words(unit) < 280:
                 report['errors'].append(f'{code}/{uid}: discipline trop brève pour ce contrôle')
             if not figures:

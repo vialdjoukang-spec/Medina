@@ -121,15 +121,15 @@ class ScienceAuditTests(unittest.TestCase):
     def test_accessible_svg_or_original_img_and_meaningful_caption(self):
         title_svg = '<svg role="img" aria-labelledby="caption"><title id="caption">Schéma causal</title></svg>'
         for media in [SVG, IMG, title_svg]:
-            self.assertTrue(audit.accessible_figure(audit.science(source(media)).xpath('.//figure')[0]))
+            self.assertTrue(audit.accessible_figure(audit.science(source(media)).find_all('figure')[0]))
         for media in ['<img src="figure.png" alt=" ">', '<img alt="Figure">', '<svg role="img" aria-label=" "></svg>',
                       '<svg role="img" aria-labelledby="missing"></svg>',
                       IMG.replace('<img ', '<img hidden '), IMG.replace('<img ', '<img aria-hidden="true" '),
                       SVG.replace('<svg ', '<svg style="display: none" ')]:
-            self.assertFalse(audit.accessible_figure(audit.science(source(media)).xpath('.//figure')[0]))
-        figure = audit.science(source(IMG).replace('Légende et attribution.', ' ')).xpath('.//figure')[0]
+            self.assertFalse(audit.accessible_figure(audit.science(source(media)).find_all('figure')[0]))
+        figure = audit.science(source(IMG).replace('Légende et attribution.', ' ')).find_all('figure')[0]
         self.assertFalse(audit.accessible_figure(figure))
-        figure = audit.science(source(IMG).replace('<figcaption>', '<figcaption hidden>')).xpath('.//figure')[0]
+        figure = audit.science(source(IMG).replace('<figcaption>', '<figcaption hidden>')).find_all('figure')[0]
         self.assertFalse(audit.accessible_figure(figure))
 
     def test_density_navigation_figures_and_each_callout_still_block(self):
@@ -165,6 +165,39 @@ class ScienceAuditTests(unittest.TestCase):
         status, report = self.run_audit(base)
         self.assertTrue(status)
         self.assertIn('source actuelle invalide', report['errors'][0])
+
+    def test_stdlib_tree_preserves_order_entities_void_and_self_closing_tags(self):
+        panel = audit.science('<section id="pS"><div class="other sci selected" id="normal">'
+                              '<p>normal<span>mécanisme</span>conséquence &amp; décision</p>'
+                              '<figure><img src="a.png" alt="A &amp; B"><br><source src="a.webp">'
+                              '<figcaption>Original &amp; attribution</figcaption></figure>'
+                              '<figure><svg role="img" aria-labelledby="title"><title id="title">'
+                              'Relation</title><path d="M 0 0"/></svg><figcaption>Relation causale</figcaption>'
+                              '</figure></div></section>')
+        self.assertEqual(audit.measure(panel)['disciplines'], 1)
+        self.assertEqual(audit.measure(panel)['figures'], 2)
+        self.assertIn('normal mécanisme conséquence & décision', ' '.join(panel.itertext()))
+        figures = panel.find_all('figure')
+        self.assertEqual(figures[0].find_all('img')[0].get('alt'), 'A & B')
+        self.assertTrue(all(audit.accessible_figure(figure) for figure in figures))
+
+    def test_inert_markup_cannot_supply_panel_words_figures_or_callouts(self):
+        for tag in ['script', 'style', 'template']:
+            with self.subTest(tag=tag):
+                with self.assertRaises(ValueError):
+                    audit.science('<' + tag + '>' + source() + '</' + tag + '>')
+                panel = audit.science(source(media='', count=1, callouts=[]).replace(
+                    '</div>', '<' + tag + '>' + source() + '</' + tag + '></div>'))
+                self.assertEqual(audit.measure(panel)['disciplines'], 1)
+                self.assertLess(audit.words(panel), 280)
+                self.assertNotIn('Science → clinique.', ' '.join(panel.itertext()))
+                self.assertFalse(audit.accessible_figure(panel.find_all('figure')[0]))
+
+    def test_unique_panel_and_exact_class_tokens_required(self):
+        with self.assertRaises(ValueError):
+            audit.science(source() + source())
+        panel = audit.science(source().replace('class="sci"', 'class="scientific sci-extra"'))
+        self.assertEqual(audit.measure(panel)['disciplines'], 0)
 
 
 if __name__ == '__main__':
