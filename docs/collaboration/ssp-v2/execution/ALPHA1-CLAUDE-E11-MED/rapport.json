@@ -1,0 +1,446 @@
+{
+  "mission": "ALPHA1-CLAUDE-E11-MED",
+  "code": "E11",
+  "type_audit": "medical",
+  "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "source_snapshot_sha_manifeste": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "generation": 1,
+  "branche": "claude/alpha1/e11-med-g1",
+  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-E11-MED-g1",
+  "conversation": "alpha1-claude-e11-med",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": "2026-10-15T18:22:54Z",
+  "date_fin": "2026-10-15T18:35:43Z",
+  "lecture": {
+    "fichiers": [
+      {
+        "fichier": "chapters/E11/E11_a.html",
+        "sha256_manifeste": "5843cda1df375eb294f81d334a850188e9fd628b7662fb17c883e85dc77c7e0f",
+        "sha256_recalcule": "5843cda1df375eb294f81d334a850188e9fd628b7662fb17c883e85dc77c7e0f",
+        "conforme": true
+      },
+      {
+        "fichier": "chapters/E11/E11_b.html",
+        "sha256_manifeste": "1374a8f7972c6b6eb990e806e31873e1ae5f054c71832295d90850a608126c73",
+        "sha256_recalcule": "1374a8f7972c6b6eb990e806e31873e1ae5f054c71832295d90850a608126c73",
+        "conforme": true
+      },
+      {
+        "fichier": "chapters/E11/E11_c.html",
+        "sha256_manifeste": "ec6a858abbb817524d928aa44c9c4e4d566417d6c5733e1460edc94e48f853c3",
+        "sha256_recalcule": "ec6a858abbb817524d928aa44c9c4e4d566417d6c5733e1460edc94e48f853c3",
+        "conforme": true
+      },
+      {
+        "fichier": "chapters/E11/E11_d.html",
+        "sha256_manifeste": "fabc0f21c0d07909f887df2c6fafe77ea5fc7c993ab07bde98a50c8eec5a64e8",
+        "sha256_recalcule": "fabc0f21c0d07909f887df2c6fafe77ea5fc7c993ab07bde98a50c8eec5a64e8",
+        "conforme": true
+      },
+      {
+        "fichier": "chapters/E11/E11_pop1.html",
+        "sha256_manifeste": "7382788566d2ab1081a0e3d4939d059a49a29e72a847266695cdd6439588af0f",
+        "sha256_recalcule": "7382788566d2ab1081a0e3d4939d059a49a29e72a847266695cdd6439588af0f",
+        "conforme": true
+      },
+      {
+        "fichier": "chapters/E11/E11_pop2.html",
+        "sha256_manifeste": "e40ea5ad5ebbfec50b2dc57db951f440eb8239d961392c7089774e84089f3157",
+        "sha256_recalcule": "e40ea5ad5ebbfec50b2dc57db951f440eb8239d961392c7089774e84089f3157",
+        "conforme": true
+      },
+      {
+        "fichier": "glossary/e11.py",
+        "sha256_manifeste": "8833b2f3380516d3081d311e35bc53e32a14a2ec2be99af6f099b450dc41de82",
+        "sha256_recalcule": "8833b2f3380516d3081d311e35bc53e32a14a2ec2be99af6f099b450dc41de82",
+        "conforme": true
+      }
+    ],
+    "empreintes_conformes": true,
+    "lectures_obligatoires": [
+      ".medina/missions/ALPHA1-CLAUDE-E11-MED.json",
+      "docs/collaboration/betta/PROMPT_VERITE.md",
+      "docs/STYLE_REDACTION.md",
+      "7 fichiers de la leçon, en entier (texte, tableaux, figures, quiz, fenêtres, Pareto, div.alert, div.key, glossaire)"
+    ]
+  },
+  "premiere_source_lue": {
+    "source_id": "S1",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680260610169",
+    "section": "Posologie/Mode d’emploi — insuffisance rénale modérée (30–59 mL/min/1,73 m²) ; Mises en garde — produits de contraste iodés",
+    "date": "2026-10-15T18:22:54Z"
+  },
+  "synthese": {
+    "BLOQUANT": 0,
+    "MAJEUR": 1,
+    "MINEUR": 5,
+    "ENRICHISSEMENT": 3
+  },
+  "constats": [
+    {
+      "id": "E11-MED-01",
+      "gravite": "MAJEUR",
+      "fichier": "E11_a.html",
+      "ancre": "Le consensus conjoint ADA/EASD 2026 propose le dépistage dès 35 ans, et à tout âge en cas de surpoids ou d’obésité avec un facteur de risque",
+      "ancre_occurrences": 1,
+      "constat": "Le calendrier de dépistage (dès 35 ans ; à tout âge si surpoids/obésité avec facteur de risque) est présenté comme une proposition propre du consensus ADA/EASD 2026 et, dans la fenêtre e11-depistage, comme un « calendrier européen co-signé ». Le consensus ne formule pas lui-même cette règle : il la rapporte (« Recent recommendations suggest screening… ») en citant sa référence 23, les Standards of Care 2025 de l’American Diabetes Association. Une conduite de dépistage repose donc sur une recommandation américaine, contrairement à la loi 2 du prompt de vérité ; le même glissement se retrouve dans le tableau de l’îlot 4, la fenêtre e11-depistage et le Pareto pareto-e11-clin.",
+      "preuve": [
+        {
+          "source_id": "S22",
+          "section": "The rationale, importance and context of type 2 diabetes treatment",
+          "citation_courte": "Recent recommendations suggest screening for type 2 diabetes in all adults aged ≥35 years … [23]"
+        },
+        {
+          "source_id": "S22",
+          "section": "References, n° 23",
+          "citation_courte": "American Diabetes Association Professional Practice Committee (2025) 2. Diagnosis and classification of diabetes: standards of care in diabetes-2025"
+        },
+        {
+          "source_id": "S20",
+          "section": "3 (diagnostic)",
+          "citation_courte": "dépistage du diabète chez les patients atteints de maladie cardiovasculaire"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_a_1.html ; propositions/E11_pop1_1.html ; propositions/E11_pop2_1.html (Pareto)",
+      "proposition": "Requalifier le seuil de 35 ans comme repère américain comparatif cité par le consensus, déclarer l’absence de calendrier suisse ou européen retrouvé, et conserver la règle ESC 2023 (dépistage chez tout patient cardiovasculaire) comme fondement européen.",
+      "justification": "Mécanisme : l’attribution erronée transforme un standard américain en recommandation européenne co-signée. Conséquence : l’étudiant croit appliquer un calendrier européen alors qu’aucun n’existe dans les sources lues. Décision : expliciter la provenance et la lacune, sans retirer le repère utile."
+    },
+    {
+      "id": "E11-MED-02",
+      "gravite": "MINEUR",
+      "fichier": "E11_b.html",
+      "ancre": "ne sont plus recommandées par la SSED",
+      "ancre_occurrences": 1,
+      "constat": "L’îlot 10 affirme que les sulfonylurées « ne sont plus recommandées par la SSED », et le tableau des classes de l’onglet Pharmacologie écrit pour le gliclazide « N’est plus recommandé par la SSED ; exceptions ». La SSED 2023 recommande au contraire le gliclazide seul parmi les sulfonylurées, dans des cas choisis, et le préfère chez le sujet âgé parmi les sécrétagogues. La fenêtre e11-su est, elle, correcte : la formulation résumée la contredit.",
+      "preuve": [
+        {
+          "source_id": "S13",
+          "section": "Glucose target range… (sulfonylurées)",
+          "citation_courte": "At the present time we recommend only gliclazide as the risk of hypoglycemia with this specific molecule is very low"
+        },
+        {
+          "source_id": "S13",
+          "section": "Special Considerations in the Elderly",
+          "citation_courte": "short-acting sulfonylureas, as gliclazide, or the glinide, repaglinide, is preferred"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_b_1.html ; propositions/E11_d_1.html",
+      "proposition": "Écrire que la SSED n’admet plus que le gliclazide, dans des cas choisis, et préfère une insuline basale après échec de la trithérapie.",
+      "justification": "Mécanisme : la demi-vie courte sans métabolite actif réduit l’hypoglycémie. Conséquence : une interdiction générale est inexacte et contredit la fenêtre. Décision : aligner le résumé sur le texte suisse."
+    },
+    {
+      "id": "E11-MED-03",
+      "gravite": "MINEUR",
+      "fichier": "E11_d.html",
+      "ancre": "N’est plus recommandé par la SSED ; exceptions",
+      "ancre_occurrences": 1,
+      "constat": "Même inexactitude dans la cellule « Place en Suisse » du gliclazide (onglet Pharmacologie) : la SSED 2023 maintient le gliclazide comme seule sulfonylurée recommandée dans des cas choisis.",
+      "preuve": [
+        {
+          "source_id": "S13",
+          "section": "Glucose target range… (sulfonylurées)",
+          "citation_courte": "they are still used in selected cases (e.g. … MODY 1 and 3) … we recommend only gliclazide"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_d_1.html",
+      "proposition": "Remplacer la cellule par : « Seule sulfonylurée encore admise par la SSED, dans des cas choisis (par exemple MODY 1 et 3) ; insuline basale préférée après échec de la trithérapie ».",
+      "justification": "Mécanisme : identique au constat E11-MED-02. Conséquence : le tableau de choix est cohérent avec la fenêtre e11-su. Décision : correction locale."
+    },
+    {
+      "id": "E11-MED-04",
+      "gravite": "MINEUR",
+      "fichier": "E11_b.html",
+      "ancre": "la SSED conseille d’éviter une HbA1c trop élevée",
+      "ancre_occurrences": 1,
+      "constat": "Le texte reste vague là où la SSED donne un seuil décisionnel explicite : une HbA1c supérieure à 8,0 % est à éviter dans tous les cas, y compris chez le sujet âgé ou fragile dont la cible est assouplie.",
+      "preuve": [
+        {
+          "source_id": "S13",
+          "section": "Glucose target range, HbA1c goal…",
+          "citation_courte": "In all instances a HbA1c level >8.0% should be avoided because the associated complications outweigh the possible benefits"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_b_2.html",
+      "proposition": "Remplacer par : « la SSED précise qu’une HbA1c supérieure à 8,0 % doit être évitée dans tous les cas, car les complications associées l’emportent alors sur les bénéfices d’une cible plus souple ».",
+      "justification": "Mécanisme : une cible souple sans plafond expose à l’hyperglycémie symptomatique et aux complications. Conséquence : le plafond de 8 % borne l’individualisation. Décision : citer le seuil suisse exact."
+    },
+    {
+      "id": "E11-MED-05",
+      "gravite": "MINEUR",
+      "fichier": "E11_b.html",
+      "ancre": "L’aspirine relève de la prévention secondaire ; elle n’est généralement pas recommandée en prévention primaire (SSED 2023).",
+      "ancre_occurrences": 1,
+      "constat": "La position SSED est exacte, mais le contentieux avec l’ESC 2023, source européenne citée ailleurs dans le cours, n’est pas exposé : l’ESC indique que l’aspirine à 75–100 mg/j peut être envisagée en prévention primaire chez le diabétique sans maladie athéroscléreuse symptomatique, en l’absence de contre-indication. Le CLAUDE.md demande de présenter tout contentieux clinique et l’arbitrage.",
+      "preuve": [
+        {
+          "source_id": "S13",
+          "section": "Lipid and blood pressure management",
+          "citation_courte": "generally not recommended in primary prevention"
+        },
+        {
+          "source_id": "S20",
+          "section": "5.6.1",
+          "citation_courte": "ASA (75–100 mg o.d.) may be considered to prevent the first severe vascular event"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_b_3.html",
+      "proposition": "Présenter les deux positions et l’arbitrage : texte suisse en vigueur, décision individuelle selon le risque ischémique et hémorragique.",
+      "justification": "Mécanisme : l’hyperréactivité plaquettaire du diabétique augmente le risque ischémique, mais l’aspirine augmente le risque hémorragique. Conséquence : les sociétés divergent en prévention primaire. Décision : afficher le contentieux et l’arbitrage suisse."
+    },
+    {
+      "id": "E11-MED-06",
+      "gravite": "MINEUR",
+      "fichier": "glossary/e11.py",
+      "ancre": "la SSED ne la recommande plus comme insuline basale du diabète de type 2 en raison de son risque d’hypoglycémie",
+      "ancre_occurrences": 1,
+      "constat": "La définition de glossaire « NPH » attribue à la SSED une non-recommandation que les textes SSED lus ne contiennent pas : le document SSED d’août 2025 cite Huminsulin® Basal comme « also an option », administrée deux fois par jour. La fenêtre e11-d-insulines dit d’ailleurs que la NPH « reste une option dans des situations particulières ».",
+      "preuve": [
+        {
+          "source_id": "S18",
+          "section": "A (options de basale)",
+          "citation_courte": "Huminsulin® Basal is also an option, but less widespread and it has to be administered twice daily"
+        },
+        {
+          "source_id": "S13",
+          "section": "Glucose target range… (insulines)",
+          "citation_courte": "ultra-long-acting basal insulin … has quite a low rate of hypoglycemia"
+        }
+      ],
+      "proposition_fichier": "propositions/glossary_e11_1.txt",
+      "proposition": "Remplacer par : « la SSED la cite encore comme option basale, administrée deux fois par jour, mais préfère les analogues lents et ultralents, dont le risque d’hypoglycémie est plus faible ».",
+      "justification": "Mécanisme : l’absorption de la suspension NPH est plus variable. Conséquence : la SSED la place derrière les analogues sans l’exclure. Décision : supprimer l’affirmation non sourcée."
+    },
+    {
+      "id": "E11-MED-07",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "E11_b.html",
+      "ancre": "<div class=\"key\"><b>À retenir.</b> Le suivi annuel couvre la glycémie, la pression artérielle, les lipides, le rein, l’œil et le pied.",
+      "ancre_occurrences": 1,
+      "constat": "Rubriques 14 et 16 : les vaccinations recommandées par l’OFSP au diabétique (grippe, pneumocoques, COVID-19) sont absentes du cours (aucune occurrence de « vaccin »).",
+      "preuve": [
+        {
+          "source_id": "S24",
+          "section": "e) Influenza ou grippe saisonnière, personnes à risque",
+          "citation_courte": "des troubles métaboliques avec répercussions sur la fonction cardiaque, pulmonaire ou rénale (par exemple diabète …)"
+        },
+        {
+          "source_id": "S24",
+          "section": "Pneumocoques, personnes à risque",
+          "citation_courte": "Diabète sucré ayant un impact sur la fonction cardiaque, pulmonaire ou rénale, dès le diagnostic"
+        },
+        {
+          "source_id": "S24",
+          "section": "COVID-19, facteurs de risque",
+          "citation_courte": "Diabète sucré, avec complications tardives ou HbA1c de 8 % ou plus"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_b_4.html",
+      "proposition": "Insérer un paragraphe « Vaccinations » dans l’îlot 11 et compléter l’encadré « À retenir ».",
+      "justification": "Mécanisme : l’hyperglycémie et les atteintes d’organe aggravent les infections. Conséquence : le diabétique relève de recommandations vaccinales spécifiques. Décision : contrôle du statut vaccinal au bilan annuel."
+    },
+    {
+      "id": "E11-MED-08",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "E11_b.html",
+      "ancre": "<p><b>Femme en âge de procréer.</b>",
+      "ancre_occurrences": 1,
+      "constat": "Rubrique 15 : le diabète de type 2 à début précoce (< 40 ans) et de l’adolescent n’a pas de conduite propre. L’îlot 2 mentionne son pronostic, mais pas la conséquence thérapeutique (réduction pondérale, emploi précoce des inhibiteurs du SGLT2 et des thérapies GLP-1, cible ≤ 6,5 %).",
+      "preuve": [
+        {
+          "source_id": "S22",
+          "section": "Age: younger people with diabetes",
+          "citation_courte": "early deployment of SGLT2 inhibitors and GLP-1-based therapies, either alone or in combination, should be prioritised"
+        },
+        {
+          "source_id": "S22",
+          "section": "The rationale… (cibles)",
+          "citation_courte": "A target of 48 mmol/mol (6.5%) or lower may be more appropriate … for people with early-onset type 2 diabetes"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_b_5.html",
+      "proposition": "Insérer un paragraphe « Diabète de type 2 à début précoce » dans l’îlot 12.",
+      "justification": "Mécanisme : déclin plus rapide de la fonction β et exposition plus longue. Conséquence : complications plus précoces. Décision : intensification précoce et protection d’organe, avec conseil contraceptif."
+    },
+    {
+      "id": "E11-MED-09",
+      "gravite": "ENRICHISSEMENT",
+      "fichier": "E11_a.html",
+      "ancre": "· CIM-10-GM 2024 · Endocrinologie et métabolisme",
+      "ancre_occurrences": 1,
+      "constat": "Rubriques 2 et 19 : aucun sous-code CIM-10-GM n’est cité (E11.0 à E11.9, cinquième caractère, exclusions). Le contrat interdit un îlot ou un tableau consacré au code CIM ; une fenêtre en prose répond à la matrice sans enfreindre cette règle.",
+      "preuve": [
+        {
+          "source_id": "S25",
+          "section": "Bloc E10–E14, quatrièmes et cinquièmes caractères",
+          "citation_courte": "E11.0 Mit Koma … E11.9 Ohne Komplikationen ; x0 nicht als entgleist bezeichnet ; x1 als entgleist bezeichnet"
+        },
+        {
+          "source_id": "S25",
+          "section": "Exkl. E11.-",
+          "citation_courte": "während der Schwangerschaft, der Geburt oder des Wochenbettes (O24.-) ; pankreopriv (E13.-)"
+        }
+      ],
+      "proposition_fichier": "propositions/E11_pop2_1.html",
+      "proposition": "Ajouter la fenêtre e11-codage (prose, sans tableau) dans E11_pop2.html et la relier par un mot vert depuis la mention « CIM-10-GM 2024 » de l’en-tête.",
+      "justification": "Mécanisme : le code précise la complication et la décompensation. Conséquence : les sous-codes correspondent aux complications enseignées. Décision : fenêtre de codage concise, sans îlot."
+    }
+  ],
+  "verifications_conformes": [
+    "Metformine : 30–59 mL/min/1,73 m², début 500 ou 850 mg, au plus 1000 mg/j en deux prises ; arrêt < 30 ; contrôles rénaux ; contraste iodé 48 h avant si DFG < 60 ; chirurgie 48 h ; B12 annuelle ; acidose lactique 3–5/100 000 années-patients, pH < 7,35, lactate > 5 mmol/L (S1, conforme à la FI suisse même si l’UE autorise 2000 mg entre 45 et 59).",
+    "Dapagliflozine : 5 mg puis 10 mg (DFG ≥ 60), 10 mg d’emblée 45–< 60, non recommandée < 45 pour la glycémie, pas d’initiation < 25, arrêt avant dialyse, ≥ 3 jours avant chirurgie lourde, glycosurie 85/52/18/11 g/j (S2).",
+    "Empagliflozine : 10 mg, 25 mg pour la glycémie, initiation non recommandée < 20, effet glycémique probablement absent < 30, ≥ 3 jours avant chirurgie majeure (S3).",
+    "Rybelsus® N 1,5 → 4 → 9 mg ; correspondance 3/7/14 mg (S4). Kerendia® 20/10 mg selon DFG 60, potassium 4,8/5,0/5,5, contrôle à 4 semaines, CYP3A4 (S5). Baqsimi® 3 mg dès 1 an, contre-indication phéochromocytome, grossesse et allaitement permis (S6).",
+    "Ozempic® paliers, 1 mg néphropathie, pas d’adaptation rénale, rétinopathie 3,0 % contre 1,8 % (> 80 % rétinopathie initiale), NOIAN, arrêt ≥ 2 mois avant grossesse (S7). Mounjaro® 2,5 → 15 mg, 72 h, oubli 4 jours, rein terminal sans adaptation, contraceptifs oraux (S8).",
+    "Tresiba® 10 unités ; Toujeo® 0,2 unité/kg, titration tous les 3–4 jours ; Diamicron® MR 30 → 120 mg, paliers ≥ 2 semaines, miconazole contre-indiqué ; Januvia® 50 mg (30–< 45), 25 mg (< 30) (S9–S12).",
+    "SSED 2023 : bithérapie initiale metformine + iSGLT2 ou AR GLP-1 puis trithérapie ; cibles 7,0/6,5/7–8 % ; PA 130/70–79, 130–139 après 65 ans ; IEC + antagoniste calcique ; chirurgie HbA1c > 8 % et IMC > 30 ; peptide C 200–600 pmol/L ; sous-groupes 6/18/15/20/40 % ; 25 % de déficits insuliniques ; linagliptine chez l’âgé ; règles des jours de maladie (S13).",
+    "SSED 2011 : HbA1c ≥ 6,5 % ; prédiabète 5,7–6,4 % et 5,6–6,9 mmol/L ; variabilité 2 % contre 12–15 % ; pièges (fer, vitamines C/E, + 0,4 % après 70 ans) (S14).",
+    "SSED/SSC 2024 : prévalence de l’insuffisance cardiaque > 30 % après 60 ans contre 1,5–2 % ; NT-proBNP 125/300 ng/L, BNP 35/90 ng/L (S15). Conduite 2025 : HbA1c > 10 % / > 8,5 %, 45 minutes, 4–5 mmol/L, grossesse < 5,3 et 8,0 mmol/L (S16). Néphropathie 2024 : 40 %, red flags DFG selon l’âge, > 130/80, LDL < 1,8 et − 50 %, statine non initiée en dialyse (S17). Insulines 2025 : 75–80 %, 2–4 jours, cibles hospitalières, tableau prednisone 0,1–0,4 U/kg/j (S18). QualiCCare : 4/4, > 4/8, IPS ≥ 0,9, red flags (S19).",
+    "ESC 2023 : HbA1c + glycémie à jeun concordantes sans second test ; type 1 5–10 %, suspicion < 35 ans ; type 2 90 % ; HGPO après la sortie ; SCORE2-Diabetes 40–69 ans ; atteinte sévère d’organe (DFG < 45, trois territoires) ; chirurgie IMC ≥ 35 ; HbA1c < 7 % ; PA 130, pas < 120, DBP < 80 pas < 70 (S20).",
+    "Crises 2024 : critères de l’acidocétose (≥ 11,1 mmol/L ou diabète connu ; β-hydroxybutyrate ≥ 3,0 ou cétonurie ≥ 2+ ; pH < 7,3 et/ou bicarbonates < 18) ; 10 % euglycémiques ; > 90 % de sensibilité/spécificité ; gravité ; 0,05 et 0,1 U/kg/h avec seuil 18 mmol/L ; potassium < 3,5 ; 3–8 mOsm/kg/h (S21).",
+    "ADA/EASD 2026 : cibles 6,5–7 %, ≤ 6,5 % ; TIR > 70 % ; MASLD > 70 %, plus de la moitié en MASH ; hypercortisolisme environ un quart ; DiRECT 13 % (7 %) à 5 ans ; ARMSS-T2D 37,5 % contre 2,6 % et 18 % contre 6 % ; IMC 30/35 ; SURPASS-CVOT HR 0,92 ; indépendance vis-à-vis de la metformine fondée sur des sous-groupes (S22).",
+    "Obsan 2022 : 6,2 % (4,8 % en 2017) ; 6,9 % hommes, 5,6 % femmes ; 12,7 % sans formation postobligatoire, 4,8 % tertiaire ; un cinquième sous insuline, un tiers sans médicament ; mise à jour 17.03.2025 (S23)."
+  ],
+  "matrice_20": [
+    {
+      "n": 1,
+      "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+      "statut": "couvert",
+      "ancre": "E11_a.html#e11-0"
+    },
+    {
+      "n": 2,
+      "rubrique": "Définition et périmètre CIM-10-GM",
+      "statut": "partiel",
+      "ancre": "E11_a.html#e11-1",
+      "note": "Définition présente ; libellés, inclusions et exclusions CIM-10-GM absents (E11-MED-09)."
+    },
+    {
+      "n": 3,
+      "rubrique": "Classifications et stades",
+      "statut": "partiel",
+      "ancre": "E11_a.html#e11-1 ; E11_pop1.html e11-mrc, e11-cetones, e11-pied",
+      "note": "Types, G/A, gravité de l’acidocétose et niveaux du pied présents ; stades de rétinopathie et formes de neuropathie (autonome) non classés."
+    },
+    {
+      "n": 4,
+      "rubrique": "Épidémiologie suisse puis européenne",
+      "statut": "partiel",
+      "ancre": "E11_a.html#e11-2",
+      "note": "Données suisses Obsan 2022 vérifiées ; aucune donnée européenne."
+    },
+    {
+      "n": 5,
+      "rubrique": "Normal → pathologique",
+      "statut": "couvert",
+      "ancre": "E11_a.html#e11-3 ; E11_c.html#pS"
+    },
+    {
+      "n": 6,
+      "rubrique": "Étiologies et facteurs de risque",
+      "statut": "couvert",
+      "ancre": "E11_a.html#e11-4"
+    },
+    {
+      "n": 7,
+      "rubrique": "Anamnèse et symptômes (fréquences)",
+      "statut": "partiel",
+      "ancre": "E11_a.html#e11-5",
+      "note": "Symptômes et formes trompeuses présents, sans fréquences chiffrées."
+    },
+    {
+      "n": 8,
+      "rubrique": "Examen clinique",
+      "statut": "couvert",
+      "ancre": "E11_a.html#e11-6",
+      "note": "Sans sensibilité/spécificité chiffrées."
+    },
+    {
+      "n": 9,
+      "rubrique": "Drapeaux rouges et urgences",
+      "statut": "couvert",
+      "ancre": "E11_b.html#e11-8"
+    },
+    {
+      "n": 10,
+      "rubrique": "Examens complémentaires",
+      "statut": "couvert",
+      "ancre": "E11_c.html#e11-e-1 à #e11-e-3"
+    },
+    {
+      "n": 11,
+      "rubrique": "Diagnostic différentiel",
+      "statut": "couvert",
+      "ancre": "E11_b.html#e11-7 (tableau à 8 rangs) ; E11_c.html#e11-e-3"
+    },
+    {
+      "n": 12,
+      "rubrique": "Prise en charge suisse",
+      "statut": "couvert",
+      "ancre": "E11_b.html#e11-10 ; E11_d.html#pP",
+      "note": "Doses conformes aux FI suisses vérifiées (S1–S12) ; nuance sulfonylurées (E11-MED-02/03)."
+    },
+    {
+      "n": 13,
+      "rubrique": "Complications et pronostic",
+      "statut": "partiel",
+      "ancre": "E11_b.html#e11-9 ; E11_a.html#e11-2",
+      "note": "Traitement de la rétinopathie et neuropathie autonome (dysfonction érectile, gastroparésie, hypotension orthostatique) absents."
+    },
+    {
+      "n": 14,
+      "rubrique": "Suivi, prévention, dépistage",
+      "statut": "partiel",
+      "ancre": "E11_b.html#e11-11 ; E11_a.html#e11-4",
+      "note": "Vaccinations absentes (E11-MED-07) ; provenance du calendrier de dépistage (E11-MED-01)."
+    },
+    {
+      "n": 15,
+      "rubrique": "Situations particulières",
+      "statut": "partiel",
+      "ancre": "E11_b.html#e11-12",
+      "note": "Âgé, rein, grossesse, périopératoire, corticoïdes présents ; début précoce/adolescent absent (E11-MED-08)."
+    },
+    {
+      "n": 16,
+      "rubrique": "Spécificités suisses",
+      "statut": "partiel",
+      "ancre": "E11_pop2.html e11-conduite, e11-cout",
+      "note": "Conduite et LS présents ; vaccinations OFSP absentes ; AI non traité."
+    },
+    {
+      "n": 17,
+      "rubrique": "Critères formels du diagnostic (div.alert)",
+      "statut": "couvert",
+      "ancre": "E11_b.html#e11-13"
+    },
+    {
+      "n": 18,
+      "rubrique": "Paramètres clés chiffrés (div.key)",
+      "statut": "couvert",
+      "ancre": "E11_b.html#e11-13"
+    },
+    {
+      "n": 19,
+      "rubrique": "Sous-codes CIM-10-GM couverts",
+      "statut": "absent",
+      "ancre": "—",
+      "note": "Proposition E11-MED-09."
+    },
+    {
+      "n": 20,
+      "rubrique": "Points d’examen fédéral",
+      "statut": "couvert",
+      "ancre": "E11_b.html#e11-7 ; E11_pop2.html e11-ssp-polydipsie, e11-ssp-hyperglycemie"
+    }
+  ],
+  "lacunes": [
+    "Critères de l’état hyperosmolaire (glycémie ≥ 33,3 mmol/L ; osmolalité efficace > 300 ou totale > 320 ; bicarbonates ≥ 15 mmol/L) : la figure 2b du consensus 2024 (S21) est une image non extractible en texte ; le texte confirme seulement « four criteria presented in Fig. 2b ». Valeurs non contredites, mais non vérifiées mot à mot.",
+    "Catégories SCORE2-Diabetes (< 5 ; 5–< 10 ; 10–< 20 ; ≥ 20 %) et cibles LDL ESC (1,4/1,8/2,6 mmol/L) : tableau 7 et figure 10 de l’ESC 2023 (S20) en image, non lus en texte. Les cibles LDL suisses de la brochure néphrologique (S17) ont été vérifiées.",
+    "Calendrier suisse ou européen de dépistage de population : non retrouvé (requête WebSearch « EviPrev dépistage diabète type 2 recommandation Suisse âge glycémie HbA1c », sans résultat suisse officiel).",
+    "Rétinopathie (stades, traitement anti-VEGF ou laser) et neuropathie autonome : aucune source suisse ou européenne lue dans cette mission ; enrichissement à rédiger après lecture d’une source ophtalmologique suisse ou européenne.",
+    "Non relus dans cette mission (repris du dossier auteur, non contredits) : FI Trulicity®, Trajenta®, Ryzodeg®, NovoRapid®, Lantus®, Huminsulin®, Ezetrol®, Actos®, Onglyza® ; IWGDF 2023 ; JBDS 2023 ; recommandation technologique SSED 2025 ; guide SSN 2025 ; essais (UKPDS, ACCORD, Steno-2, EMPA-REG, FLOW, SOUL, FIDELIO, DiRECT, Ahlqvist) au-delà des chiffres cités par S13 et S22 ; Atila 2026 (copeptine) ; catalogues Viollier et La Source.",
+    "Épidémiologie européenne : non recherchée dans cette mission."
+  ],
+  "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
