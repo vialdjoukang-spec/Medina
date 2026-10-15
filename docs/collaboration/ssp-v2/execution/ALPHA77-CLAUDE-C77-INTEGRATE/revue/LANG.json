@@ -1,0 +1,215 @@
+{
+ "schema_version": 1,
+ "actor": "Claude",
+ "code": "C77",
+ "fragment": "S06",
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-15",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "05417b91cd027d0be3b506820c327f33407b9623",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C77/C77_a.html": "28be3bfe9033c4279ef76b601c5d4b2f61ef6936dce17c81a8554e838b28a226",
+  "chapters/C77/C77_b.html": "7c604795374d707c47e0665ab70256b871c175bd0464de4a569b11c92992fa04",
+  "chapters/C77/C77_c.html": "dd8d9412582389ba6c4ec0baca2abbf8615398e9c1b190c4d040711b36aa29cd",
+  "chapters/C77/C77_d.html": "806002164ad6cea93602c33e54c5e6c5a15f8dcd8d46aec90735cb2834665d41",
+  "chapters/C77/C77_pop1.html": "aa8da4c5231974634749f92948352d97e351ade75f0f33e30e1f93d9de4c9632",
+  "chapters/C77/C77_pop2.html": "f02978e21aefdc1455f7b1901b40610e02e4a78474d7224292dc97c1d9970bea",
+  "glossary/c77.py": "ff5469886b085dc76da976e8a32bc240b6ae808b5bc65aead672d7cccdac5f88"
+ },
+ "reviewed_files_sha256": {
+  "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
+  "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
+  "chapters/C77/C77_b.html": "c9341938a55536c082a2880848fc31258c7709231ea978fa5da8035db3240e71",
+  "chapters/C77/C77_c.html": "0123c658af265989b702ddedf4dba656fb3a5ed0348d05c19a75e7c23d4597a2",
+  "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
+  "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
+  "chapters/C77/C77_pop2.html": "9b96b68e6c65071bdeeec782431570976885590dccc9a2334d17d15b7f98763e",
+  "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true,
+  "figures_anatomiques_ia": true,
+  "sources_suisses_puis_europeennes": true
+ },
+ "kind": "LANG",
+ "scope": "Langue, style (docs/STYLE_REDACTION.md) et application des propositions de l’audit ALPHA1-CLAUDE-C77-LANG sur les fichiers finaux",
+ "unresolved_blockers": [],
+ "findings": [
+  {
+   "id": "P-LANG-01",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "finding": "133 propositions non typographiques (toutes fond_inchange) appliquées par W ; 106 se retrouvent littéralement dans les fichiers finaux, 27 ont ensuite été réécrites par les corrections médicales (MAJ-04, MAJ-07, MAJ-08, MIN-05, etc.), leur intention stylistique étant conservée.",
+   "evidence": "Contrôle mécanique de P : recherche de chaque « nouveau » dans chapters/C77/*.html ; échantillon lu des 27 passages réécrits (ex. C77-LANG-0056, -0068, -0436, -0437)."
+  },
+  {
+   "id": "P-LANG-02",
+   "severity": "DIFFERE",
+   "status": "non_blocking",
+   "finding": "390 propositions typographiques (espaces insécables) non appliquées : choix éditorial global en attente selon le protocole Alpha77 ; « fibrillation atriale/auriculaire » et groupe LIENS d’E11 sans objet pour C77.",
+   "evidence": "integration/corrections.json, clé lang.differees ; protocole Alpha77, section Interdits."
+  },
+  {
+   "id": "P-LANG-03",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "finding": "Textes ajoutés par W et par P relus : phrases complètes, tableaux et figures introduits puis commentés, aucune annonce de fabrication du cours ; aucune répétition de mot adjacente ni ponctuation collée détectée mécaniquement ; abréviations toutes couvertes (B.audit = {}).",
+   "evidence": "Lecture des îlots c77-8, c77-s-anat à c77-s-bioch, fenêtres c77-ccl21 et c77-cervical-trt ; contrôle regex de P ; test_v7 --static OK."
+  },
+  {
+   "id": "P-LANG-04",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "finding": "Renvois médicaux R1 à R3 du rapport LANG tranchés avec les sources (5/100 000 habitants par an, indicateur de l’OMS cité en référence 15 de la revue suisse ; fourchette > 10–15 mm restituée ; masses non ganglionnaires distinguées des adénopathies bénignes).",
+   "evidence": "Swiss Medical Weekly 2024, références 15 (World Health Organization GTR) et sections médiastinale et axillaire, vérifiées par P."
+  },
+  {
+   "id": "P-LANG-IMM-00",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "C77_c.html #c77-s-immuno-cours ; C77_pop2.html c77-imm-msi, pareto-c77-immuno",
+   "finding": "Français professionnel conforme à docs/STYLE_REDACTION.md : phrases courtes et complètes, annonce (« trois faits utiles »), progression normal → perturbation → clinique → traitement, épilogue « À retenir », aucune métaphore ni plaisanterie, termes dédiés (anergiques, veinules à endothélium haut, cellules réticulaires fibroblastiques). Sigles tous couverts (build_medina.audit = {}).",
+   "evidence": "Lecture intégrale par P du rendu Chromium et des sources HTML à bd50fdc8."
+  },
+  {
+   "id": "P-LANG-IMM-01",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html « Le pont vers le traitement du CUP », 2e phrase après le mot vert",
+   "finding": "Coordination ambiguë « l’instabilité microsatellitaire ou le déficit MMR et une charge mutationnelle élevée » : le lecteur peut croire que les deux marqueurs doivent coexister.",
+   "correction_proposee": "« Dans le CUP, deux marqueurs de sensibilité sont bien établis : l’instabilité microsatellitaire, ou le déficit MMR qui la cause, et une charge mutationnelle élevée, d’au moins 10 mutations par mégabase. »",
+   "source": "docs/STYLE_REDACTION.md (le lecteur comprend, il ne devine pas) ; Onkopedia 2025",
+   "evidence": "Onkopedia : « Mikrosatelliteninstabilität bzw. Defizienz der Mismatch-Repair-Enzyme und TMB-high (≥10 Mutationen/Megabase) bei CUP gut belegt » (deux marqueurs distincts).",
+   "resolution": "Corrigé à edde1801 : « une instabilité microsatellitaire (ou un déficit MMR), ou bien une charge mutationnelle élevée » — deux marqueurs distincts, sans ambiguïté ; aussi dans c77-imm-msi et le Pareto."
+  },
+  {
+   "id": "P-LANG-IMM-02",
+   "severity": "MINEUR",
+   "status": "resolved",
+   "etat": "corrigé",
+   "anchor": "C77_c.html, 1er paragraphe « trois faits utiles pour C77 »",
+   "finding": "Le code « C77 » sert de désignation dans une phrase de cours ; le reste de la leçon dit « les métastases ganglionnaires » ou « le CUP ».",
+   "correction_proposee": "« … trois faits utiles pour comprendre la métastase ganglionnaire : … »",
+   "source": "docs/STYLE_REDACTION.md",
+   "evidence": "Phrase relevée telle quelle à bd50fdc8.",
+   "resolution": "Corrigé à edde1801 : « trois faits utiles devant une métastase ganglionnaire »."
+  },
+  {
+   "id": "P-PR158-LANG",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "#c77-sm-1, #c77-sm-3, c77-sm-consistance",
+   "finding": "Les passages réécrits sont en français professionnel conforme à docs/STYLE_REDACTION.md : phrases complètes, réserve explicite (« association palpatoire et non un mécanisme démontré »), aucune métaphore. Seule remarque de forme, liée à P-PR158-03 : « puis » suggère une chronologie que la source ne décrit pas.",
+   "evidence": "Lecture de 7671b5cb et 56febc08 dans le rendu Chromium et le source HTML."
+  }
+ ],
+ "evidence": [
+  {
+   "ref": "audit_lang_alpha1",
+   "items": [
+    "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-C77-LANG/propositions.json : 523 propositions (390 typographie, 84 phrase nominale, 8 registre, 6 répétition, 6 ambiguïté, autres)",
+    "integration/corrections.json : 133 appliquées, 390 différées"
+   ]
+  },
+  {
+   "ref": "frontend",
+   "controls": [
+    "test_v7.py --static C77 : OK ; build_medina.audit = {} sur les six fichiers HTML",
+    "build_front.py --fragment S06 reconstruit par P dans son dossier temporaire : 5 957 934 octets, identique à la taille rapportée par W",
+    "Chromium 1194 (servi en HTTP local, assets liés) : 1300 px et 390 px ; onglet pS → sous-onglet sémiologie visible par défaut, aria-selected=\"true\", 9 sections, premier h2 exact ; mot vert ouvre sa fenêtre (« Normal… ») ; débordement horizontal 0 ; aucune erreur JavaScript",
+    "390 px et police 24 px : libellé « Sémiologie fondamentale et analytique » sur deux lignes dans un bouton de 366 px, sans débordement (scrollWidth = clientWidth = 364) ; clavier Entrée et Espace activent les sous-onglets",
+    "Figure 1 SEER : image chargée (complete), légende visible contenant « domaine public », « Wikimedia Commons », « Ann Arbor » et « sans représenter les voies de drainage »",
+    "Captures P : scratchpad p_desktop_semio.png, p_mobile_semio.png, p_desktop_pop.png, p_mobile_pop.png, p_desktop_fig1.png, p_mobile_f24.png (hors dépôt) ; captures W versionnées dans integration/captures/"
+   ]
+  },
+  {
+   "ref": "cinquieme_discipline_rendu",
+   "controls": [
+    "build_front.py --fragment S06, sortie hors dépôt (scratchpad/c77rev) : 5 976 660 → 3 741 440 octets, 654 gabarits",
+    "Chromium 1194 servi en HTTP local (port distinct d’un serveur tiers détecté sur 8793), 1300 px et 390 px : .sci-bar = Sémiologie fondamentale et analytique, Anatomie, Histologie, Physiologie, Biochimie et biologie moléculaire, Immunologie (5 disciplines + sémiologie) ; #c77-tab-semio aria-selected=true et c77-s-semio visible à l’ouverture ; c77-s-immuno caché avant clic",
+    "Clic sur Immunologie : c77-s-immuno visible, c77-s-semio caché, aria-selected basculé (immuno true, sémiologie false) ; h2 « Immunologie du ganglion : de la réponse normale à l’échappement tumoral » ; 1 138 mots rendus",
+    "Figure 6 : SVG role=img + aria-label + figcaption, aucune structure anatomique dessinée (8 boîtes de texte reliées par des segments) ; police rendue 13,4 px à 1300 px mais 5,5 px à 390 px (constat P-IMM-06) ; aucun débordement de la figure",
+    "Mot vert « instabilité microsatellitaire » ouvre la fenêtre c77-imm-msi (titre, texte CUPISCO et source lisibles à 390 px) ; Pareto pareto-c77-immuno : 42 mots sur 1 139, ratio calculé par le moteur",
+    "Défilement horizontal 0 (ordinateur et mobile) ; aucune erreur JavaScript (pageerror) ni erreur console",
+    "test_v7.py --static C77 : OK (24 012 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+    "Captures P hors dépôt : scratchpad/p_desktop_immuno_fig.png, p_mobile_immuno_fig.png, p_desktop_immuno_pop.png, p_mobile_immuno_pop.png"
+   ]
+  },
+  {
+   "ref": "choix_differes",
+   "items": [
+    "Choix éditoriaux différés, non appliqués et non comptés comme constats : espaces insécables globales (ex. coupure « 65 / % » dans c77-imm-msi à 390 px), « fibrillation atriale/auriculaire », groupe LIENS d’E11."
+   ]
+  },
+  {
+   "ref": "cloture_cinquieme_discipline",
+   "controls": [
+    "Clôture sur edde1801 : build_front.py --fragment S06 hors dépôt (5 980 136 → 3 742 812 octets) ; Chromium 1194, 1300 et 390 px : sémiologie premier bouton sélectionné et visible, six sous-onglets ; Immunologie s’ouvre ; figure 6 lisible à 390 px (10,7 px), 6 flèches, aucun texte hors boîte ; c77-imm-msi contient la FI Keytruda® ; Pareto 52 mots sur 1 332 ; défilement horizontal 0 ; aucune erreur JavaScript ni console.",
+    "test_v7.py --static C77 : OK (24 315 mots, 67 fenêtres, 9 quiz, 21 Pareto) ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML.",
+    "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010.",
+    "Mise à jour 980a26f7 : correction P-IMM-08 relue contre Onkopedia 2025 § 5.1.3.1.1 ; test_v7.py --static C77 OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML ; empreintes recalculées."
+   ]
+  },
+  {
+   "ref": "revue_codex_pr158",
+   "items": [
+    "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »",
+    "Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique",
+    "Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2",
+    "Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+   ],
+   "controls": [
+    "build_front.py --fragment S06 hors dépôt (5 982 422 → 3 743 552 octets) ; Chromium 1194 servi en HTTP local",
+    "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
+    "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
+    "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+    "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png",
+    "Mise à jour 05417b91 : P-PR158-01 à 03 relus contre SMW 2024, l’item 291 et le Collège 2013 ; Chromium 1300 et 390 px, figure « Du mécanisme au signe » : 6 flèches, aucun texte hors cadre, aucun débordement, aucune erreur JavaScript ni console ; test_v7.py --static C77 OK ; build_medina.audit = {} sur les six fichiers HTML ; empreintes recalculées."
+   ]
+  }
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "revue_cinquieme_discipline": {
+  "date": "2026-10-15",
+  "commit": "bd50fdc8e1b79e09040de8f3433fbcea5c1bdfec",
+  "agent": "Agent P, relecteur indépendant de l’ajout de W (bd50fdc8)",
+  "perimetre": "Sous-onglet Immunologie c77-s-immuno (C77_c.html), fenêtres c77-imm-msi et pareto-c77-immuno (C77_pop2.html), clé CUPISCO (glossary/c77.py)",
+  "bloquants": 0,
+  "constats_ouverts_non_bloquants": [],
+  "note": "Revue IA, distincte d’une validation médicale humaine.",
+  "commit_cloture": "980a26f773cbbf488403b9f181e22750176eb1b8"
+ },
+ "revue_codex_pr158": {
+  "date": "2026-10-15",
+  "commit": "56febc0836e92751b51122ed968a6b2d7abe799a",
+  "commits_revus": [
+   "7671b5cb",
+   "56febc08"
+  ],
+  "agent": "Agent P, relecteur indépendant",
+  "perimetre": "Corrections de W après la revue Codex de la PR #158 : #c77-sm-1 (ganglions profonds), figure « Du mécanisme au signe », causalité de la consistance (#c77-sm-3, figure, c77-sm-consistance)",
+  "sources_ouvertes_par_P": [
+   "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »",
+   "Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique",
+   "Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2",
+   "Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+  ],
+  "rendu": [
+   "build_front.py --fragment S06 hors dépôt (5 982 422 → 3 743 552 octets) ; Chromium 1194 servi en HTTP local",
+   "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
+   "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
+   "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+   "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png",
+   "Mise à jour 05417b91 : P-PR158-01 à 03 relus contre SMW 2024, l’item 291 et le Collège 2013 ; Chromium 1300 et 390 px, figure « Du mécanisme au signe » : 6 flèches, aucun texte hors cadre, aucun débordement, aucune erreur JavaScript ni console ; test_v7.py --static C77 OK ; build_medina.audit = {} sur les six fichiers HTML ; empreintes recalculées."
+  ],
+  "bloquants": 0,
+  "constats_ouverts_non_bloquants": [],
+  "note_recu": "Les empreintes des fichiers revue/ et des sources changent : le reçu Alpha f577d649 doit être régénéré par W.",
+  "mention": "Revue IA, distincte d’une validation médicale humaine.",
+  "commit_cloture": "05417b91cd027d0be3b506820c327f33407b9623"
+ }
+}
