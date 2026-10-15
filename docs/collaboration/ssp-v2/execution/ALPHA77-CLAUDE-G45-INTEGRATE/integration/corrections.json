@@ -1284,6 +1284,60 @@
    "ancre": "add('cAMP',[('c','Cyclique')",
    "source": "S1 page PDF 12 « RoPE Score (Risk of paradoxical embolism) »",
    "statut": "applique"
+  },
+  {
+   "constat": "P-MED-01",
+   "action": "Restriction ESO (THALES : ABCD2 ≥ 6 ou sténose symptomatique ≥ 50 %, patients ne pouvant recevoir aspirine + clopidogrel) et statut hors indication selon la FI Brilique.",
+   "fichier": "chapters/G45/G45_d.html",
+   "ancre": "La recommandation européenne considère enfin le ticagrélor associé à l'aspirine comme une bithérapie de remplacement possible.",
+   "source": "ESO 2021 PMC8370080, PICO 8 / THALES (relu par WebFetch le 15.10.2026) ; FI Brilique, AstraZeneca, autorisation 61389, mise à jour novembre 2025, GTIN 7680613890019, Indications (lue via tools/swissmedic_fi.py le 15.10.2026)",
+   "statut": "applique",
+   "phase": "3a"
+  },
+  {
+   "constat": "P-MED-02 (G45_d)",
+   "action": "Absence de FI suisse aspirine + dipyridamole signalée.",
+   "fichier": "chapters/G45/G45_d.html",
+   "ancre": "La dose du ticagrélor et celle de l'association aspirine et dipyridamole exigent la lecture de leur information professionnelle suisse avant la prescription.",
+   "source": "tools/swissmedic_fi.py chercher dipyridamol, asasantin, aggrenox, persantin : aucun résultat (15.10.2026)",
+   "statut": "applique",
+   "phase": "3a"
+  },
+  {
+   "constat": "P-MED-02 (G45_b)",
+   "action": "Absence de FI suisse aspirine + dipyridamole signalée en 10.2.",
+   "fichier": "chapters/G45/G45_b.html",
+   "ancre": "aspirine 100 mg, clopidogrel 75 mg ou association aspirine et dipyridamole.",
+   "source": "idem",
+   "statut": "applique",
+   "phase": "3a"
+  },
+  {
+   "constat": "P-MED-03",
+   "action": "Encadré Science → traitement (Réseaux et génétique) aligné sur la FI Plavix.",
+   "fichier": "chapters/G45/G45_c.html",
+   "ancre": "De même, une variante génétique qui réduit l'activation du clopidogrel ne justifie pas une augmentation automatique de dose, faute de schéma établi selon la FI.",
+   "source": "FI Plavix (septembre 2022), Posologie « Génotype/polymorphismes » (lue le 15.10.2026)",
+   "statut": "applique",
+   "phase": "3a"
+  },
+  {
+   "constat": "P-MED-04",
+   "action": "Gradation entre groupes de permis restituée.",
+   "fichier": "chapters/G45/G45_b.html",
+   "ancre": "Ses exigences médicales minimales, fixées pour le premier comme pour le second groupe de permis, excluent notamment les maladies du système nerveux central ayan",
+   "source": "RS 741.51 annexe 1 ch. 6, copie Fedlex (état au 1er janvier 2026) relue par W le 15.10.2026",
+   "statut": "applique",
+   "phase": "3a"
+  },
+  {
+   "constat": "P-LANG-01",
+   "action": "Ligne d’état des sources mise à jour.",
+   "fichier": "chapters/G45/G45_a.html",
+   "ancre": "Sources consultées les 13–14 octobre 2026",
+   "source": "Sources relues ou ajoutées le 15.10.2026 (corrections MED, sémiologie)",
+   "statut": "applique",
+   "phase": "3a"
   }
  ],
  "empreintes_sha256_apres": {
@@ -1320,5 +1374,30 @@
   "FI suisses de Brilique et de l’association aspirine-dipyridamole non lues : aucune dose affirmée pour ces produits.",
   "Texte intégral de l’ESO 2021 relu par extraction outillée (premiers 100 000 caractères sur 167 641)."
  ],
- "mention": "Revue IA, distincte d’une validation médicale humaine."
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "phase_3a": {
+  "date": "2026-10-15",
+  "origine": "revue P (commit 97ba87d2) : revue/MED.json P-MED-01 à P-MED-04, revue/LANG.json P-LANG-01",
+  "corrections": [
+   "P-MED-01",
+   "P-MED-02 (G45_d)",
+   "P-MED-02 (G45_b)",
+   "P-MED-03",
+   "P-MED-04",
+   "P-LANG-01"
+  ],
+  "controles": {
+   "build_medina_audit": "{}",
+   "test_v7_static": "OK"
+  }
+ },
+ "empreintes_sha256_phase_3a": {
+  "chapters/G45/G45_a.html": "42e67732527dd846aa3d5b19156e4108e2d496a79df774dfc034af3d29f4b920",
+  "chapters/G45/G45_b.html": "c6c0149849768fed843e8a2653299138d02e1a4fcbbbaf79fafc21822a844234",
+  "chapters/G45/G45_c.html": "62aa08051b4e5c480036eeeb178187562d9126e109b827e5e1e1a66b7bf58735",
+  "chapters/G45/G45_d.html": "1ef504ce1d9134a075a8a3f27a0a93ceec43ffad0d86524c8e21fc80abc86e1b",
+  "chapters/G45/G45_pop1.html": "0929c64986e84b446b3b53271d38433f753f5ce23c61900a3dd954e4946aeb7c",
+  "chapters/G45/G45_pop2.html": "bb5ab7ee533e69973a16f8996faf376233c3b40991ac77508cb3c9b4a25a0405",
+  "glossary/g45.py": "bdff46096e72abe0bc8f983ba35b4cdb8cf81e4b93976f8a07e95eaef23c0727"
+ }
 }
