@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import urllib.error
 import urllib.request
 
@@ -47,6 +48,34 @@ def findings(pr, checks, statuses):
     return out
 
 
+_PLACEHOLDER = re.compile(r"\b(?:TODO|TBD|FIXME|Lorem ipsum|à compléter|à renseigner)\b", re.IGNORECASE)
+
+
+def lesson_suggestions(files):
+    """Report only literal placeholder signals in changed lesson/evidence files.
+
+    These are triage suggestions, not a medical or editorial audit and never a
+    merge gate. Missing patches are deliberately not interpreted as defects.
+    """
+    out = []
+    for item in files:
+        path = item.get("filename", "")
+        lower = path.lower()
+        relevant = lower.endswith((".html", ".htm", "recherche.md", "rapport.md", "sources.json"))
+        if not relevant:
+            continue
+        patch = item.get("patch")
+        if not patch:
+            continue
+        added = "\n".join(line[1:] for line in patch.splitlines() if line.startswith("+") and not line.startswith("+++"))
+        markers = sorted(set(match.group(0) for match in _PLACEHOLDER.finditer(added)))
+        if markers:
+            out.append(f"suggestion non bloquante — `{path}` : marqueur provisoire explicite ({', '.join(markers)}); vérifier puis corriger ou conserver avec justification.")
+        if item.get("status") == "added" and item.get("additions") == 0:
+            out.append(f"suggestion non bloquante — `{path}` : fichier ajouté vide selon la métadonnée GitHub; confirmer s'il s'agit d'un squelette volontaire.")
+    return out
+
+
 def marker(comment):
     body = comment.get("body", "")
     if comment.get("user", {}).get("login") != "github-actions[bot]" or not body.startswith(PREFIX):
@@ -57,11 +86,11 @@ def marker(comment):
         return None
 
 
-def decide(pr, checks, statuses, comments, config, now):
+def decide(pr, checks, statuses, comments, config, now, suggestions=()):
     # Claude ownership is a branch hint, not an identity inferred from shared login.
     if not pr["head"]["ref"].startswith("claude/") or pr["head"]["repo"]["full_name"].lower() != config["repository"].lower():
         return None
-    problems = findings(pr, checks, statuses)
+    problems = findings(pr, checks, statuses) + list(suggestions)
     if not problems:
         return None
     key = hashlib.sha256(json.dumps([pr["head"]["sha"], pr["base"]["sha"], problems], sort_keys=True).encode()).hexdigest()
@@ -72,9 +101,8 @@ def decide(pr, checks, statuses, comments, config, now):
     if not notices:
         return {"key": key, "stage": "notice", "problems": problems}
     first = min((c for c, _ in notices), key=lambda c: c["created_at"])
-    # Every human owner response is conservative veto, including Claude on shared account.
-    if any(c.get("user", {}).get("login") == config["owner"] and c.get("user", {}).get("type") != "Bot" and stamp(c["created_at"]) >= stamp(first["created_at"]) for c in comments):
-        return None
+    # PR-thread replies no longer veto delegation. The central /medina off
+    # control issue remains the explicit pause mechanism.
     if (now - stamp(first["created_at"])).total_seconds() < config["grace_seconds"]:
         return None
     return {"key": key, "stage": "delegated", "problems": problems}
@@ -105,17 +133,38 @@ class GitHub:
             page += 1
 
 
-def message(action, pr):
+def message(action, pr, config=None):
+    config = config or {"medical_audits": "suspended"}
     meta = {k: action[k] for k in ("key", "stage")}
     title = "Alerte preventive" if action["stage"] == "notice" else "Delegation operationnelle disponible pour Claude"
-    detail = ("Delai minimal de cinq minutes ouvert a Vial; aucune action sur les sources ni branches."
+    detail = ("Délai minimal de cinq minutes ouvert; constats et suggestions seulement, aucune action du moteur sur les sources ou branches."
               if action["stage"] == "notice" else
-              "Au moins cinq minutes ecoulees sans reponse du compte proprietaire dans ce fil. Claude peut choisir et appliquer un correctif operationnel reversible, sur son propre travail, selon la delegation versionnee. Ceci n'est ni une fusion ni une validation medicale.")
+              "Au moins cinq minutes écoulées depuis l'alerte. Claude peut examiner, accepter ou rejeter les suggestions et décider de la suite sur son propre travail. Le moteur n'effectue aucune correction, fusion ou validation médicale.")
+    audit_note = ("\n\n**Audits médicaux : suspendus jusqu’à nouvel ordre.** Un audit absent ou différé reste non réalisé; les statuts techniques détectés sont rapportés sans être transformés en veto du moteur. "
+                  if config.get("medical_audits") == "suspended" else "")
+    truth_note = ("\n\nAvant toute production de cours, Claude et chaque agent qui ouvre une leçon doivent lire le [Prompt de vérité](../blob/main/docs/collaboration/betta/PROMPT_VERITE.md) et satisfaire la porte pré-rédaction prévue. Le moteur ne prétend pas vérifier cette lecture.")
     return (PREFIX + json.dumps(meta) + " -->\n" + "### " + title + "\n\n"
             + f"Branche `{pr['head']['ref']}`, tete `{pr['head']['sha']}`.\n\n"
             + "\n".join("- " + x for x in action["problems"]) + "\n\n" + detail
+            + audit_note + truth_note
             + "\n\nInstruction: `docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md`. "
             + "Arret global: `/medina off` dans l'issue de controle. Aucun lancement automatique de session Claude.")
+
+
+def branch_inventory(api):
+    """Return paginated branch refs, falling back on Git refs after API 403."""
+    try:
+        return api.pages("branches")
+    except urllib.error.HTTPError as exc:
+        if exc.code != 403:
+            raise
+    try:
+        refs = api.pages("git/matching-refs/heads/")
+        print("Avertissement: /branches refusé (403); inventaire relu via git/matching-refs/heads/.")
+        return [{"name": ref["ref"].removeprefix("refs/heads/")} for ref in refs]
+    except urllib.error.HTTPError as exc:
+        print(f"Avertissement: inventaire des branches indisponible (HTTP {exc.code}); le scan des PR continue.")
+        return None
 
 
 def run(config, api, now, dry_run=False):
@@ -124,9 +173,9 @@ def run(config, api, now, dry_run=False):
         print("Moteur desactive; aucune notification ni delegation.")
         return []
     # Inventory every branch and PR, paginated; never check out or execute PR code.
-    branches = api.pages("branches")
+    branches = branch_inventory(api)
     prs = api.pages("pulls?state=open")
-    print(json.dumps({"branches": len(branches), "open_prs": len(prs)}))
+    print(json.dumps({"branches": None if branches is None else len(branches), "open_prs": len(prs)}))
     actions = []
     for item in prs:
         if not item["head"]["ref"].startswith("claude/"):
@@ -141,7 +190,13 @@ def run(config, api, now, dry_run=False):
         for s in statuses:
             latest.setdefault(s["context"], s)
         comments = api.pages(f"issues/{number}/comments")
-        action = decide(pr, checks, list(latest.values()), comments, config, now)
+        try:
+            changed_files = api.pages(f"pulls/{number}/files")
+            suggestions = lesson_suggestions(changed_files)
+        except urllib.error.HTTPError as exc:
+            print(f"Avertissement: fichiers PR #{number} non analysés (HTTP {exc.code}); aucun défaut n'est déduit.")
+            suggestions = []
+        action = decide(pr, checks, list(latest.values()), comments, config, now, suggestions)
         if not action:
             continue
         # Recheck controls and both refs immediately before an external write.
@@ -150,11 +205,11 @@ def run(config, api, now, dry_run=False):
         fresh = api.request(f"pulls/{number}")
         if fresh["state"] != "open" or fresh["head"]["sha"] != sha or fresh["base"]["sha"] != pr["base"]["sha"]:
             continue
-        action = decide(fresh, checks, list(latest.values()), api.pages(f"issues/{number}/comments"), config, now)
+        action = decide(fresh, checks, list(latest.values()), api.pages(f"issues/{number}/comments"), config, now, suggestions)
         if not action:
             continue
         if not dry_run:
-            api.request(f"issues/{number}/comments", {"body": message(action, pr)})
+            api.request(f"issues/{number}/comments", {"body": message(action, pr, config)})
         actions.append({"pr": number, **action})
     print(json.dumps(actions, ensure_ascii=False))
     return actions
