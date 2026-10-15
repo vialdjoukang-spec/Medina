@@ -115,6 +115,7 @@ class Repository:
     def __init__(self, root, remote='origin'):
         self.root = Path(root).resolve()
         self.remote = remote
+        self.public_cache = {}
 
     def git(self, *args, **kwargs):
         return command(['git', *args], self.root, **kwargs)
@@ -122,6 +123,7 @@ class Repository:
     def refresh(self):
         self.git('fetch', '--quiet', self.remote, 'refs/heads/main')
         self.main = self.git('rev-parse', 'FETCH_HEAD').decode().strip()
+        self.public_cache = {}
         return self.main
 
     def read(self, revision, path):
@@ -176,6 +178,47 @@ class Repository:
         checks = pr.get('statusCheckRollup', [])
         need(checks and all((c.get('conclusion') in ('SUCCESS', 'NEUTRAL', 'SKIPPED') and c.get('status') == 'COMPLETED') or c.get('state') == 'SUCCESS' for c in checks), 'CI is not successfully complete')
         self.git('merge-base', '--is-ancestor', integration['merge_sha'], self.main)
+
+    def public_blob(self, url):
+        if url not in self.public_cache:
+            need(url.startswith(PAGES_ORIGIN), 'Public URL outside trusted Pages origin')
+            req = urllib.request.Request(url, headers={'User-Agent': 'Medina-7-Starter-Codex/1', 'Cache-Control': 'no-cache'})
+            with urllib.request.urlopen(req, timeout=30) as response:
+                need(response.status == 200 and response.geturl() == url, 'Public probe unavailable or redirected')
+                body = response.read(64 * 1024 * 1024 + 1)
+            need(len(body) <= 64 * 1024 * 1024, 'Public response exceeds bounded size')
+            self.public_cache[url] = body
+        return self.public_cache[url]
+
+    def live_publication(self, item, publication, files, probes):
+        actual = json.loads(self.public_blob(PAGES_ORIGIN + 'publication.json'))
+        deployed = actual.get('git_commit', '')
+        need(actual.get('schema_version') == 1 and SHA.fullmatch(deployed), 'Actual Pages publication manifest invalid')
+        self.git('merge-base', '--is-ancestor', publication['main_sha'], deployed)
+        self.git('merge-base', '--is-ancestor', deployed, self.main)
+        core = {f'chapters/{item["code"]}/{item["code"]}_{part}.html' for part in ('a','b','c','d','pop1','pop2')} | {f'glossary/{item["code"].lower()}.py'}
+        course = actual.get('courses', {}).get(item['code'])
+        need(isinstance(course, dict) and all(course.get('source_files', {}).get(path) == files[path] for path in core),
+             'Actual deployed manifest does not contain exact final lesson sources')
+        site_files = actual.get('site_files', {})
+        for path, digest in files.items():
+            self.checked_blob(deployed, {'path': path, 'sha256': digest})
+            if path not in core:
+                need(site_files.get(path) == digest, 'Own asset missing or stale in actual deployed site')
+        expected_pages = {PAGES_ORIGIN + 'MEDINA.html'}
+        fragment = item.get('fragment')
+        if fragment in FRAGMENT_SLUGS:
+            expected_pages.add(PAGES_ORIGIN + 'fragments/MEDINA_' + fragment + '_' + FRAGMENT_SLUGS[fragment] + '.html')
+        for probe in probes:
+            # The recorded digest is dated evidence. Other lessons may legitimately rebuild this shared page.
+            need(probe['url'] in expected_pages and DIGEST.fullmatch(probe['sha256']), 'Probe outside actual MEDINA lesson surface')
+            relative = probe['url'][len(PAGES_ORIGIN):]
+            current_digest = site_files.get(relative, '')
+            need(DIGEST.fullmatch(current_digest), 'Current page absent from actual publication manifest')
+            body = self.public_blob(probe['url'])
+            need(hashlib.sha256(body).hexdigest() == current_digest, 'Current public page differs from actual deployed manifest')
+            pattern = rb'<template\b[^>]*\bid\s*=\s*["\']ch-' + item['code'].encode() + rb'["\']'
+            need(re.search(pattern, body, re.I), 'Current public page does not contain the actual lesson template')
 
     def semiology(self, item, proof, files, output_prefix, expected_sources=None):
         reference = proof['requirement_evidence']['semiology']
@@ -296,17 +339,7 @@ class Repository:
             self.checked_blob(publication['main_sha'], {'path': path, 'sha256': digest})
         probes = publication.get('probes', [])
         need(probes and manifest.get('probes') == probes, 'Public probes must be bound to manifest')
-        for probe in probes:
-            expected_pages = {PAGES_ORIGIN + 'MEDINA.html'}
-            fragment = item.get('fragment')
-            if fragment in FRAGMENT_SLUGS:
-                expected_pages.add(PAGES_ORIGIN + 'fragments/MEDINA_' + fragment + '_' + FRAGMENT_SLUGS[fragment] + '.html')
-            need(probe['url'] in expected_pages and DIGEST.fullmatch(probe['sha256']), 'Probe must target the actual MEDINA lesson surface')
-            req = urllib.request.Request(probe['url'], headers={'User-Agent': 'Medina-7-Starter-Codex/1'})
-            with urllib.request.urlopen(req, timeout=30) as response:
-                need(response.status == 200 and response.geturl() == probe['url'], 'Public probe redirects outside expected lesson surface')
-                body = response.read(16 * 1024 * 1024 + 1)
-            need(len(body) <= 16 * 1024 * 1024 and hashlib.sha256(body).hexdigest() == probe['sha256'], 'Public content differs from manifest')
+        self.live_publication(item, publication, files, probes)
         if item['mode'] == 'production':
             production = self.json(self.main, item['production_receipt'])
             need(production.get('complete') is True and production.get('mission') == item['missions']['PRODUCE'] and

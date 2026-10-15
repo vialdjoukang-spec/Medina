@@ -229,24 +229,21 @@ class ClosureProofTests(unittest.TestCase):
         proof, manifest, blobs = self.proof()
         repo = s.Repository('/tmp')
         repo.main = 'c' * 40
-        class Response:
-            status = 200
-            def __enter__(self): return self
-            def __exit__(self, *args): pass
-            def geturl(self): return s.PAGES_ORIGIN + 'MEDINA.html'
-            def read(self, size): return b'public'
+        current = {'body': b'<template id="ch-I63">Actual published lesson</template>'}
+        actual = {'schema_version':1,'git_commit':'b'*40,
+                  'courses':{'I63':{'source_files':proof['final_files'].copy()}},
+                  'site_files':{'MEDINA.html':s.hashlib.sha256(current['body']).hexdigest()}}
         mission = {'id':'I63-INTEGRATE','codes':['I63'], 'paths':['organisation/alpha-publications/Codex/I63','docs/collaboration/ssp-v2/execution/I63-INTEGRATE']}
         with patch.object(repo, 'json', return_value=proof), patch.object(repo, 'mission',return_value=mission), \
              patch.object(repo, 'checked_blob', side_effect=lambda rev,e: s.canonical(blobs.get(e['path'],{}))), \
              patch.object(repo, 'read', side_effect=lambda rev,p: s.canonical(blobs.get(p,{}))), \
              patch.object(repo, 'git', return_value=b''), patch.object(repo, 'merged_pr'), patch.object(repo, 'pages_run'), patch.object(repo, 'semiology'), \
-             patch.object(s.urllib.request, 'urlopen', return_value=Response()):
+             patch.object(repo, 'public_blob', side_effect=lambda url:s.canonical(actual) if url.endswith('publication.json') else current['body']):
             self.assertEqual(repo.closure(configuration()['queue'][0]), proof)
             probe = proof['publication']['probes'][0]
             old = probe['sha256']
             probe['sha256'] = 'f' * 64
-            with self.assertRaises(s.Blocked):
-                repo.closure(configuration()['queue'][0])
+            self.assertEqual(repo.closure(configuration()['queue'][0]), proof)
             probe['sha256'] = old
             blobs[proof['alpha_receipt']['path']]['phase'] = 'provisional'
             with self.assertRaises(s.Blocked):
@@ -255,6 +252,41 @@ class ClosureProofTests(unittest.TestCase):
             blobs[proof['reports']['MED']['path']]['reviewed_files_sha256'] = {'unrelated': '0'*64}
             with self.assertRaises(s.Blocked):
                 repo.closure(configuration()['queue'][0])
+
+    def test_later_shared_page_rebuild_preserves_prior_lesson_closure(self):
+        proof, _, _ = self.proof()
+        repo=s.Repository('/tmp'); repo.main='c'*40
+        current={'body':b'<template id="ch-I63">Unchanged own lesson</template>'}
+        actual={'schema_version':1,'git_commit':'c'*40,'courses':{'I63':{'source_files':proof['final_files'].copy()}},
+                'site_files':{'MEDINA.html':s.hashlib.sha256(current['body']).hexdigest()}}
+        with patch.object(repo,'git',return_value=b''),patch.object(repo,'checked_blob'), \
+             patch.object(repo,'public_blob',side_effect=lambda url:s.canonical(actual) if url.endswith('publication.json') else current['body']):
+            repo.live_publication(configuration()['queue'][0],proof['publication'],proof['final_files'],proof['publication']['probes'])
+            # Another batch changes the shared compiled surface. Own seven source hashes remain exact.
+            current['body']+=b'<template id="ch-G02">New other lesson</template>'
+            actual['site_files']['MEDINA.html']=s.hashlib.sha256(current['body']).hexdigest()
+            repo.live_publication(configuration()['queue'][0],proof['publication'],proof['final_files'],proof['publication']['probes'])
+            del actual['courses']['I63']
+            with self.assertRaises(s.Blocked):
+                repo.live_publication(configuration()['queue'][0],proof['publication'],proof['final_files'],proof['publication']['probes'])
+
+    def test_live_page_needs_own_template_current_hash_and_sources(self):
+        proof, _, _=self.proof()
+        repo=s.Repository('/tmp');repo.main='c'*40
+        current={'body':b'<template id="ch-G02">Other lesson only</template>'}
+        actual={'schema_version':1,'git_commit':'c'*40,'courses':{'I63':{'source_files':proof['final_files'].copy()}},
+                'site_files':{'MEDINA.html':s.hashlib.sha256(current['body']).hexdigest()}}
+        with patch.object(repo,'git',return_value=b''),patch.object(repo,'checked_blob'), \
+             patch.object(repo,'public_blob',side_effect=lambda url:s.canonical(actual) if url.endswith('publication.json') else current['body']):
+            with self.assertRaises(s.Blocked):
+                repo.live_publication(configuration()['queue'][0],proof['publication'],proof['final_files'],proof['publication']['probes'])
+            current['body']=b'<template id="ch-I63">Own lesson</template>'
+            with self.assertRaises(s.Blocked):
+                repo.live_publication(configuration()['queue'][0],proof['publication'],proof['final_files'],proof['publication']['probes'])
+            actual['site_files']['MEDINA.html']=s.hashlib.sha256(current['body']).hexdigest()
+            actual['courses']['I63']['source_files']['glossary/i63.py']='f'*64
+            with self.assertRaises(s.Blocked):
+                repo.live_publication(configuration()['queue'][0],proof['publication'],proof['final_files'],proof['publication']['probes'])
 
     def test_missing_core_and_unrelated_sources_rejected(self):
         proof, _, _ = self.proof()
