@@ -1,0 +1,5 @@
+# Annexe de travail : E10 — périmètre administratif vérifié
+
+[S10] BfArM, GM2024, bloc E10–E14 : E10.01 (coma hyperglycémique, exclut le coma hypoglycémique), E10.11 (acidocétose sans mention de coma), E10.20/.21 (rein), E10.30/.31 (œil), E10.40/.41 (neurologie), E10.50/.51 (vasculaire périphérique), E10.60/.61 (autres complications précisées, dont hypoglycémie/coma hypoglycémique), E10.72/.73 (autres complications multiples), E10.74/.75 (pied diabétique), E10.80/.81 (complications non précisées), E10.90/.91 (sans complication). Les finales0/1 et2/3/4/5 suivent exactement les modificateurs du bloc.
+
+Cette liste de20 codes ne crée pas20 leçons. Le cours traite narrativement les atteintes mais ne présente pas cette correspondance vérifiable. Les codes associés astérisque et les exclusions (notamment O24 pendant grossesse) restent à contrôler dans l’édition OFS effectivement applicable; la page allemande2024 ne suffit pas à certifier le codage suisse2026. Annexe pour l’intégrateur; ne pas déplacer le plan clinique vers un cours de codage.
