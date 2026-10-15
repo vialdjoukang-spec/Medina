@@ -22,3 +22,17 @@ _add('DualDose', [('DualDose', 'Nom de présentation commerciale du stylo Ozempi
      'Présentation Ozempic DualDose', 'Nom de présentation du stylo prérempli Ozempic dans l’information professionnelle suisse ; ce n’est pas une abréviation médicale.', 'n18-ozempic')
 _add('FixDose', [('FixDose', 'Nom de présentation commerciale du stylo Ozempic, non développable lettre à lettre')],
      'Présentation Ozempic FixDose', 'Nom de présentation du stylo prérempli Ozempic dans l’information professionnelle suisse ; ce n’est pas une abréviation médicale.', 'n18-ozempic')
+
+# Ajouts ALPHA77-CLAUDE-N18-INTEGRATE (15.10.2026), d'après les audits ALPHA1 MED et LANG.
+# Essai cité par la correction MED-02 (FI suisse Jardiance, juillet 2025, Efficacité clinique).
+_add('EMPA-KIDNEY', [('EMPA-KIDNEY', 'Nom propre de l’essai rénal de l’empagliflozine, non développable lettre à lettre')],
+     'Essai EMPA-KIDNEY (empagliflozine et maladie rénale chronique)',
+     'Essai randomisé, en double aveugle, contre placebo, de l’empagliflozine 10 mg chez 6609 personnes atteintes de maladie rénale chronique, avec un DFGe de 20 à moins de 45 mL/min/1,73 m², ou de 45 à moins de 90 avec un rapport albumine/créatinine urinaire d’au moins 200 mg/g (information professionnelle suisse Jardiance, juillet 2025).',
+     None)
+
+# Constat LANG K01 : ces sigles employés par N18 ont déjà une clé dans le glossaire commun
+# (chargement global, dernier fichier lu prioritaire). Les redéfinir ici remplacerait la
+# définition commune vue par d'autres systèmes, en lecture seule dans ce chantier ; ils sont
+# donc déclarés comme dépendances partagées et vérifiés par build_medina.audit() == {}.
+SIGLES_PARTAGES = ('SSED', 'HUG', 'MAPA', 'LDL', 'IMC', 'ECG', 'ESH', 'ESC', 'FLOW', 'IRM',
+                   'FIDELIO-DKD', 'FGF23', 'ATP', 'CRP', 'CYP2C8')
