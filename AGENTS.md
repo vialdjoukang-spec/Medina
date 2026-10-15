@@ -1,3 +1,9 @@
+## Lancement Audit Alpha — ordre Vial du 15 octobre 2026
+
+Lire [l’ordre exact](docs/collaboration/ssp-v2/lancement/2026-10-15/message-vial.txt) et [les attributions du tour1](docs/collaboration/ssp-v2/lancement/2026-10-15/tour1.json). Vial lance les audits des104cours selon la répartition52/52. Un tour comprend7à10leçons par responsable ; le premier en contient7chacun. Audit médical avec enrichissements : GPT6.1 high / Opus5.5 high. Audit linguistique local préservant le fond : GPT6.1 medium / Sonnet5.5 high. Aucun audit croisé Alpha. Les nouvelles missions actives doivent être acquises dans le registre et démarrées dans leur worktree propre ; rapports et propositions restent dans leur dossier réservé. Les sources publiées et reçus historiques sont conservés jusqu’au chemin contrôlé de correction. Ne pas confondre ordre transmis àClaude et démarrage confirmé. Cette instruction remplace « planifié non lancé » pour les missions effectivement activées, sans modifier les anciens systèmes.
+
+---
+
 ## Instruction actuelle — SSP V2 et prévention des conflits, 15 octobre 2026
 
 État technique et prochain mandat : [activation SSP V2](docs/collaboration/ssp-v2/ACTIVATION_LATEST.txt). Consulter le registre courant avant toute acquisition.
