@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "mission": "ALPHA77-CLAUDE-G45-INTEGRATE",
+ "code": "G45",
+ "agent": "P (préparateur et contrôleur)",
+ "phase": 1,
+ "date": "2026-10-15",
+ "base": "abd681e5",
+ "branche": "claude/alpha77/g45-integrate-g1",
+ "status": "ready",
+ "livrables": [
+  {
+   "fichier": "prep/semiologie_sciences.html",
+   "sha256": "1662903e828a5bf08517b3e607073b6a577af1af74637ebccc08d85541edaa4a",
+   "usage": "BLOC 1 : bouton g45-tab-semio en tête de div.sci-bar de chapters/G45/G45_c.html (les quatre boutons existants reçoivent aria-selected=\"false\"). BLOC 2 : div.sci#g45-s-semio en tête de div.chap-body.sci-body ; ajouter hidden à div#g45-s01-science.",
+   "contenu": "10 îlots : g45-sm-1 (titre exact en premier h3, priorité clinique) puis 9 sections data-semiology normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources ; 5 tableaux, 1 schéma SVG non anatomique, 3 cas corrigés, 15 mots verts, 4 libellés Science → clinique/examen/traitement et À retenir ; environ 4 900 mots."
+  },
+  {
+   "fichier": "prep/semiologie_fenetres.html",
+   "sha256": "3207f44251e02a87b324c48cc66f43d87682d883da11aeabf2193a54106d0ef4",
+   "usage": "15 fenêtres data-pop=\"g45-sm-*\" à AJOUTER dans chapters/G45/G45_pop2.html (ou G45_pop1.html). Ne pas créer G45_pop3.html : tools/alpha_publication.py (core_paths) n’accepte que les sept fichiers existants."
+  },
+  {
+   "fichier": "prep/semiologie_clinique.html",
+   "sha256": "ab7cd4e2ee6b4d041d9334889e4789d2ef7f076569c20f9f2e307c922268c45c",
+   "usage": "div.card[data-semiology-clinical=\"G45\"]#g45-a08-semiologie dans chapters/G45/G45_b.html, îlot g45-a08, après le paragraphe 8.6 et avant div.two ; utilise aussi les fenêtres existantes g45-examen et g45-temps."
+  },
+  {
+   "fichier": "prep/figures.html",
+   "sha256": "e36c7fa1173d9613cc27dcab065414dfd6c787dacea404d641057d563bddf00f",
+   "usage": "BLOC A : remplacer entièrement la figure g45-09 de G45_c.html (constat C21). BLOC B : remplacer le paragraphe src de la figure g45-01 de G45_a.html (réserve de licence nouvelle)."
+  },
+  {
+   "fichier": "prep/figures.json",
+   "sha256": "e458b8df13c447445a2f7fa37689e8e5fa741701ca82c28803dd17f8b5444dba",
+   "usage": "Inventaire des 9 figures, licences relues sur les pages Commons, contrôles visuels, réserves."
+  },
+  {
+   "fichier": "prep/sources_semiologie.json",
+   "sha256": "a6556a7e6ab5b598178b6fd3919b7b7c28193bf285f30dcffc1e3807a7732b1c",
+   "usage": "32 affirmations ↔ passages (format source_contract.each_claim), 9 sources, lacunes."
+  },
+  {
+   "fichier": "prep/glossaire_ajouts.json",
+   "sha256": "46f09fbf9f9bcad77b44ad62ff6552b611eeacfe500c1db4f07337df58ce9be2",
+   "usage": "Aucune nouvelle clé nécessaire ; sigles couverts."
+  }
+ ],
+ "controles_realises": [
+  "Copie assemblée hors dépôt (scratchpad) : build_medina.audit = {} ; toutes les clés data-k ont une fenêtre ; classes de la liste fermée ; aucun style en ligne ; aucun identifiant dupliqué ; identifiants préfixés g45-.",
+  "Règles de tests/audit_sciences.py reproduites sur la discipline g45-s-semio : navigation data-s ↔ id complète, ≥ 280 mots, figure avec figcaption et svg[role=img][aria-label], quatre libellés : conformes.",
+  "Règles structurelles du validateur sémiologique de tools/starter_codex.py (bouton, panneau, titre h3 exact, 9 sections non vides avec h3, lien https dans sources) : conformes, sauf le seuil de six boutons data-s (voir contraintes)."
+ ],
+ "contraintes_pour_W": [
+  "Pareto : build_medina.pareto_ratios n’accepte que <section class=\"ilot\" id=\"…\"> suivi immédiatement de « > » ; une section portant data-semiology ne peut donc pas être couverte par data-cover (SystemExit « îlot introuvable »). Aucun bouton Pareto n’est proposé dans ce sous-onglet ; ne pas en ajouter sans mission sur le moteur partagé.",
+  "tests/audit_sciences.py ne peut pas s’exécuter pour G45 (fichier absent de sa base c50a28a2 et G45 hors liste d’exceptions) ; contrôle reproduit hors dépôt. Les quatre disciplines existantes ne contiennent pas les libellés « Science → … » et échoueraient à ce test s’il s’exécutait (constat antérieur, hors présente préparation).",
+  "tools/starter_codex.py (validateur Codex) exige au moins six boutons data-s ; G45 en aura cinq. Sans objet pour le reçu Claude (tools/alpha_publication.py ne contrôle pas ce seuil) ; signalé pour transparence.",
+  "Le contrat YAML place l’intitulé exact en h3 ; le premier îlot porte donc un h2 numéroté puis le h3 exact."
+ ],
+ "lacunes": [
+  "Commons API : HTTP 429 à deux reprises (vérification g45-09, recherche d’une photographie de fond d’œil) ; pas de nouvel essai ; pages de description lues directement ; aucune photographie ajoutée.",
+  "Voir sources_semiologie.json, clé lacunes (fréquences suisses des symptômes, syndrome de Claude Bernard-Horner, crise épileptique, Lebedeva 2018, résumés seuls pour Amort 2011 et Strambo 2026).",
+  "Montage g45-09 : rendu du panneau droit sans pointes de flèche ; légende honnête proposée ; refonte de l’image hors présente mission."
+ ],
+ "differes_non_appliques": [
+  "espaces insécables globales",
+  "« fibrillation atriale/auriculaire »",
+  "groupe LIENS d’E11"
+ ],
+ "actifs_images": "Aucun fichier ajouté dans assets/img/g45/alpha/claude/ (aucun remplacement requis : 0 ANATOMIQUE_IA, 0 ORIGINE_INCONNUE).",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

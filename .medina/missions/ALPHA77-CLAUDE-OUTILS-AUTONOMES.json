@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "ALPHA77-CLAUDE-OUTILS-AUTONOMES",
+  "state": "active",
+  "actor": "Claude",
+  "conversation": "alpha77-claude-outils-autonomes",
+  "owner": "Claude",
+  "assigned_by": "Vial — capacité autonome de maintenance des outils communs, 15 octobre 2026",
+  "branch": "claude/alpha77/outils-autonomes-g1",
+  "role": "integrator",
+  "codes": [
+    "I61"
+  ],
+  "base_sha": "f6d379aa4861b147b3b4e21d5d902928795f0a47",
+  "generation": 1,
+  "paths": [
+    ".medina/ai-session-guard.json",
+    "tools/alpha_publication.py",
+    "tests/test_alpha_publication.py",
+    "docs/collaboration/instructions/PUBLICATION_ALPHA_RUNTIME.md",
+    "tests/audit_sciences.py",
+    "tests/test_audit_sciences.py",
+    "docs/collaboration/instructions/AUDIT_SCIENCES_ALPHA.md"
+  ],
+  "purpose": "Maintenance technique autonome des vrais validateurs communs par Claude si nécessaire, sans accord Codex. Acquérir uniquement si chemins libres ; un seul rédacteur partagé. Aucun changement médical, aucune garde affaiblie, tests réels et PR requis. Renouvellement approuvable par gouvernance Claude. Maintenance de configuration commune autorisée pour enregistrer ses propres outils et moteurs autonomes, sans désactiver les gardes ni modifier les attributions Codex. Séparer chaque PR de gouvernance des PR de code partagé, comme exige la garde existante.",
+  "operating_instructions": [
+    "Les outils communs corrigés sont utilisables immédiatement en lecture sans acquérir ce mandat.",
+    "Acquérir ce mandat seulement pour une modification technique réelle et si les chemins sont libres ; aucune dépendance à une confirmation Codex.",
+    "Si un nouveau fichier outil Claude doit être enregistré, livrer d’abord la seule configuration de chemins dans une PR de gouvernance ; ensuite faire approuver les chemins du mandat technique renouvelé par le relais Claude, dans une PR distincte.",
+    "Ne jamais changer sa propre approbation, désactiver les gardes, élargir une attribution médicale, modifier les systèmes historiques, ou confondre tests et validation humaine."
+  ]
+}

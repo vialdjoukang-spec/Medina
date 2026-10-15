@@ -1,0 +1,53 @@
+{
+ "mission": "ALPHA77-CLAUDE-I61-INTEGRATE",
+ "code": "I61",
+ "fragment": "S08",
+ "role": "Agent P (préparateur et contrôleur)",
+ "phase": 1,
+ "status": "READY",
+ "date": "2026-10-15",
+ "base": "abd681e5",
+ "livrables": {
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/prep/semiologie_sciences.html": "c22bbd70b8a132166df40d813394ebc08b9be8c3c52bdd66f0c1ecde7a95e759",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/prep/semiologie_clinique.html": "6559a51203816096597ecfd83806e25795ea48571a24bcd242f4602d9039477b",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/prep/semiologie_pop.html": "ea6f4fbeaf5714b6bc64653bdb6b09083ae0ce206355cc72ada8e1d41e93bde0",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/prep/sources_semiologie.json": "6d3dcc3996217f3db2cb2c997e878cf38b34aca81fde13aebbb59d4f20557930",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/prep/glossaire_ajouts.json": "44de4278815079f689f20dadde00a0cf643fd68547ef0771ecc40af08b5e4c93",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/prep/figures.json": "5e57018714cc1571d06a5119969b5f1dd4f55cc54a935415c9956de27d414e38",
+  "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-I61-INTEGRATE/prep/figures.html": "f63b9e4e8994edce6edc9ecc8fe321938643799ad23b45036296ee92605f6e67"
+ },
+ "placement_pour_W": [
+  "semiologie_sciences.html → chapters/I61/I61_c.html, panneau #pS : bouton i61-tab-semio en PREMIER dans div.sci-bar (aria-selected=\"true\") ; ajouter role=\"tab\" aria-selected=\"false\" aux quatre boutons existants ; div#i61-s-semio (role=\"tabpanel\", aria-labelledby=\"i61-tab-semio\") en PREMIER dans div.chap-body.sci-body ; ajouter hidden à div#i61-s01-science.",
+  "semiologie_pop.html → ajouter les 13 fenêtres i61-sm-* à la FIN de chapters/I61/I61_pop2.html. Aucun I61_pop3.html (tools/alpha_publication.py ne l’admet pas). Fenêtres réutilisées existantes : i61-gcs, i61-nihss, i61-htic, i61-anticoag.",
+  "semiologie_clinique.html → chapters/I61/I61_b.html, îlot i61-a08, après la sous-partie 8.3 et avant son div.trap ; h3 id=\"i61-a08-partie-4\" ; marqueur data-semiology-clinical=\"I61\".",
+  "figures.html → rien à insérer : le seul bloc photo est commenté (fichier non téléchargé).",
+  "glossaire_ajouts.json → aucun ajout : build_medina.audit() = {} sur les trois fragments."
+ ],
+ "controles_P": {
+  "simulation": "Injection des trois fragments dans une copie git archive HEAD (scratchpad), build_medina.transform + pareto_ratios + wrap_html : audit {} ; aucune fenêtre manquante ; classes de la liste fermée ; aucun style en ligne ; identifiants uniques et sans collision avec I61.",
+  "audit_sciences_equivalent": "tests/audit_sciences.py ne peut pas s’exécuter pour I61 (fichier absent du commit de base c50a28a2, RuntimeError) ; ses critères ont été reproduits localement sur div#i61-s-semio : 4242 mots, 2 figures avec figcaption et svg[role=img][aria-label] non anatomiques, quatre libellés présents.",
+  "contrat": "9 sections data-semiology dans l’ordre normal/signs/mechanisms/examination/interpretation/differentials/urgency/limits/sources ; premier h2 exact ; 3 quiz (valeur d’un signe, discrimination, formulation d’une limite) ; 3 tableaux ; 2 listes ordonnées (examen, raisonnement en cinq étapes) ; 1 alert ; synthèse présentée (div.card).",
+  "rendu": "build_front.py --fragment S08 (sortie scratchpad), Chromium 1194 : 1360 px et 390 px ; premier bouton « Sémiologie fondamentale et analytique » aria-selected=true, panneau visible, Anatomie masquée ; changement de sous-onglet correct ; 16 mots verts de la sémiologie et 11 du bloc clinique ouvrent une fiche réelle ; aucune erreur JavaScript ; aucun débordement horizontal (scrollWidth 390)."
+ },
+ "choix_et_ecarts": [
+  "Pareto de la sémiologie supprimé : build_medina.pareto_ratios exige <section class=\"mc-ilot\" id=\"…\"> sans autre attribut, incompatible avec data-semiology exigé par le contrat. Moteur partagé non modifié.",
+  "Seuil cérébelleux : 15 ml (ESO–EANS 2025) retenu ; le seuil de 3 cm cité par McGurgan (lignes directrices britanniques et américaines) écarté, par cohérence avec l’onglet 1.",
+  "Rapports de vraisemblance issus d’une revue systématique américaine (JAMA 2010, résumé lu), signalée comme telle, sans valeur de recommandation."
+ ],
+ "lacunes": [
+  "L-SEM-01 à L-SEM-06 : voir sources_semiologie.json (fréquences par siège, technique de la raideur de nuque, mécanisme de la parésie homolatérale, côté de la mydriase, textes intégraux inaccessibles, absence de valeurs européennes récentes).",
+  "L-FIG-01 : photographie d’anisocorie (Commons, CC BY-SA 4.0, provenance humaine vérifiée sur la page) non téléchargeable : HTTP 429 « robot policy » ; aucune image dans assets/img/i61/alpha/claude/.",
+  "L-FIG-02 : photographie de paralysie du nerf III (Cureus 2026, CC BY 4.0) non téléchargeable : HTTP 403.",
+  "L-FIG-03 : schéma des engagements non recherché après HTTP 429 de Commons (sobriété)."
+ ],
+ "differes_non_appliques": [
+  "espaces insécables globales",
+  "« fibrillation atriale/auriculaire »",
+  "groupe LIENS d’E11 (hors I61)"
+ ],
+ "pour_W_hors_semiologie": [
+  "MED-20 / MED-09 : renommer « arbre DIAGRAM » en arbre de Wilson 2017 (figure SVG de _c), relevé à l’inventaire des figures."
+ ],
+ "inventaire_figures": "10 figures : 0 anatomie IA, 0 origine inconnue, 3 schémas non anatomiques recevables, 7 images sourcées conformes ; aucun remplacement requis.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

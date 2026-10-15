@@ -1,0 +1,102 @@
+{
+ "mission": "ALPHA77-CLAUDE-E11-INTEGRATE",
+ "code": "E11",
+ "fragment": "S05",
+ "agent": "P (préparateur et contrôleur)",
+ "phase": 1,
+ "date": "2026-10-15",
+ "base": "abd681e5",
+ "statut": "READY pour intégration par l’Agent W ; revue IA, distincte d’une validation médicale humaine ; aucune certification",
+ "livrables": {
+  "semiologie_sciences.html": {
+   "sha256": "bf1d7f2ccb3c8afa9da430825384d7f1195ed00f8db49812ee16183ee7c08da7",
+   "octets": 42172
+  },
+  "semiologie_pops.html": {
+   "sha256": "b8931aea6ef6425522f58d2e5f8cfb07beb0428ee59bdd7840a7965c7920d375",
+   "octets": 14775
+  },
+  "semiologie_clinique.html": {
+   "sha256": "3bb86adf0133decf29f63aa3762b9898314cde1a8167f370fbbc9f6d3dfb5618",
+   "octets": 3440
+  },
+  "sources_semiologie.json": {
+   "sha256": "6d72fd108e0c86ef4c129b3898669cfe2152f041ea0f69c001ab87ded4243068",
+   "octets": 37012
+  },
+  "figures.json": {
+   "sha256": "0d9beafb845eb685ced8e0f48294b404d179e86201863ba613b1d0b4a37c7143",
+   "octets": 10654
+  },
+  "figures.html": {
+   "sha256": "7ff2bc3c2daaa151ee559252ff98418f85badb8434d5caf0176f1db6eca06d69",
+   "octets": 2422
+  },
+  "glossaire_ajouts.json": {
+   "sha256": "cb9ad862f812e74b35d111a9202500c36665c976af2bc21e79ec52ec827c91c6",
+   "octets": 1034
+  }
+ },
+ "consignes_integration": [
+  "E11_c.html : insérer le bouton e11-tab-semio en tête de div.sci-bar (aria-selected=true) ; passer le bouton e11-s-histo à aria-selected=false ; insérer div#e11-s-semio en tête de div.sci-body ; ajouter hidden à div#e11-s-histo.",
+  "Fenêtres : ajouter les 12 modèles e11-sm-* de semiologie_pops.html (aucune collision avec les clés existantes).",
+  "E11_a.html : insérer le bloc data-semiology-clinical=\"E11\" de semiologie_clinique.html dans l’îlot e11-6, avant son div.key ; îlots 5 et 6 conservés.",
+  "Figures : figures.html, bloc 1 (pictogramme non anatomique remplaçant la silhouette de rein, E11-MED-10), bloc 2 (légende corrigée de la figure 8 : figure 3A, mention de modification), bloc 3 (légende de la figure 9 avec paternité présumée).",
+  "Pareto : ne pas citer e11-sm-* dans un data-cover (l’attribut data-semiology après l’identifiant ne correspond pas à l’expression régulière de build_medina.pareto_ratios).",
+  "Contrôles à refaire après intégration : B.audit, test_v7.py --static E11, tests/audit_sciences.py --codes E11, rendu Chromium ordinateur et 390 px, police agrandie.",
+  "Constat après le commit W 5d6f7359 : la silhouette de rein est déjà retirée (bloc 1 de figures.html facultatif, à n’utiliser que si un pictogramme est souhaité) ; « figure 1A » figure encore deux fois dans E11_b.html (légende de la figure 8 et lien de référence) : les deux mentions doivent devenir « figure 3A »."
+ ],
+ "controles_prep": {
+  "classes_hors_liste": [],
+  "style_en_ligne": 0,
+  "audit_abreviations": {},
+  "identifiants": "tous préfixés e11-, sans doublon",
+  "audit_sciences_equivalent": "e11-s-semio : 4500+ mots, 2 figures svg role=img aria-label + figcaption, 4 libellés présents",
+  "sections_data_semiology": [
+   "normal",
+   "signs",
+   "mechanisms",
+   "examination",
+   "interpretation",
+   "differentials",
+   "urgency",
+   "limits",
+   "sources"
+  ],
+  "quiz": 3,
+  "alert": 1,
+  "fenetres": "12 clés utilisées = 12 définies"
+ },
+ "images": {
+  "telechargees_retenues": [],
+  "remplacements": [
+   "Pictogramme rein → pictogramme géométrique d’entonnoir (non anatomique)"
+  ],
+  "attributions_corrigees": [
+   "Figure 8 (figure 3A, modifié)",
+   "Figure 9 (paternité présumée)"
+  ],
+  "refus": [
+   "Lefaucheur 2025, figure 1 : planche composite d’appareils commerciaux sans crédit par photographie",
+   "Gripp et Chan 2025 : CC BY-NC-ND"
+  ],
+  "fournisseur": "Commons : deux HTTP 429 et un résultat vide ; aucun essai en boucle"
+ },
+ "lacunes": [
+  "Remplacement de la figure 9 par une image d’auteur certain : non trouvé (réserve ORIGINE maintenue).",
+  "Photographie du geste au monofilament : aucune image à licence propre vérifiée.",
+  "Sémiologie universitaire suisse propre au diabète : non lue.",
+  "Fréquences de la polyurie, de la polydipsie et de la vision floue au diagnostic : non chiffrées.",
+  "Seuil rénal du glucose : non chiffré.",
+  "Mécanisme de la vision floue : non sourcé, non expliqué.",
+  "Sémiologie ophtalmologique : non développée (ophtalmologue).",
+  "Sites d’injection : non traités.",
+  "Captures réelles SEM-22 et SEM-23 : à produire en phase 2 après intégration."
+ ],
+ "choix_differes_non_appliques": [
+  "Espaces insécables globales",
+  "« fibrillation atriale/auriculaire »",
+  "Groupe LIENS d’E11"
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine"
+}

@@ -1,0 +1,257 @@
+{
+ "actor": "Claude",
+ "code": "N18",
+ "fragment": "S04",
+ "mission": "ALPHA77-CLAUDE-N18-INTEGRATE",
+ "reviewer_role": "Agent P (revue finale indépendante ; auteur distinct de l’intégrateur W)",
+ "status": "closed",
+ "medical_human_validation": false,
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "reviewed_commit": "952f2108b4c876d7057f56de46dc071ab03bcee1",
+ "source_files_sha256": {
+  "chapters/N18/N18_a.html": "95f05b1b1210f21856e9205e60e4108de6ac19bee6c78367e119fdfc706e1676",
+  "chapters/N18/N18_b.html": "16a5e5fa164eba823b322f94548957bce3a92131542220ecdd9f9ce302773db0",
+  "chapters/N18/N18_c.html": "cc90129b56c00a29277f083cac3ae6fae801b41cbe48040e1c67385eb7bb43ee",
+  "chapters/N18/N18_d.html": "f317270b1d3f6bdfe0b2b768699fed890bc25624e096b935fda7ae102aaf88c6",
+  "chapters/N18/N18_pop1.html": "a1b7fadb418ef3ff4db1e82dddc3d51ea20d553f0f0479702b1cc45c6fb7f6e9",
+  "chapters/N18/N18_pop2.html": "06b0ae573ba1fc9bcc7ae20cad63903e999ffbecd7f948ee77512ebaf3e7e218",
+  "glossary/n18.py": "bbc7be298bc54c4474ef226ea7dda4d09623c6c458e905318e7411a09d3a6a73"
+ },
+ "reviewed_files_sha256": {
+  "chapters/N18/N18_a.html": "379119568de1595e409ca86cfba82cce2a2dce39a725016418035096df90c9b4",
+  "chapters/N18/N18_b.html": "7fe1bb8fc76803dd5c46131b82ee66b0e01340359c059627a139434123b14c58",
+  "chapters/N18/N18_c.html": "f89608d79db5a2bf8aef338500698b0755f8da835ade6840f2b92cd7a3152371",
+  "chapters/N18/N18_d.html": "576cf45799a506cca200ef43515568efe573d2343727ca676606aade80b68608",
+  "chapters/N18/N18_pop1.html": "b30835f4d60e5fdbb660de0063b6ec231996aeaefbf055b8ec9438d9b9a1e950",
+  "chapters/N18/N18_pop2.html": "594705bc239322de6df65571014289f9a692681affff36d1b2704e560a0beb54",
+  "glossary/n18.py": "4e59b152cad30c30746f363673be23e13dc207240e7a3ede2fecfcf88801cbdf"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "reviewed_at": "2026-10-15",
+ "hash_note": "source_files_sha256 = 7 fichiers du cours à la base abd681e5 (identiques à la base de mission 8712c3fe) ; reviewed_files_sha256 = fichiers finaux au commit 952f2108. Le reçu Alpha devra livrer des copies d’empreintes identiques.",
+ "network_user_agent": "MEDINA-ImageCloFinder/0.1 (+https://github.com/vialdjoukang-spec/Medina) pour toutes les requêtes de la revue",
+ "mention": "Revue IA, distincte d’une validation médicale humaine ; aucune validation par un médecin n’est revendiquée.",
+ "kind": "SEMIO",
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "n18-s-semio",
+ "source_path": "chapters/N18/N18_c.html",
+ "findings": [
+  {
+   "id": "SEM-01",
+   "status": "resolved",
+   "finding": "Premier bouton de .sci-bar : id n18-tab-semio, role=tab, data-s et aria-controls n18-s-semio, aria-selected=true, libellé exact ; div.sci homonyme présent.",
+   "evidence": [
+    "Rendu Chromium 1300/390 px : boutons [n18-tab-semio true, 4 × false]."
+   ]
+  },
+  {
+   "id": "SEM-02",
+   "status": "resolved",
+   "finding": "Premier h3 du premier îlot : « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? ».",
+   "evidence": [
+    "Rendu Chromium : firstH3 exact."
+   ]
+  },
+  {
+   "id": "SEM-03",
+   "status": "resolved",
+   "finding": "Sous-onglet n18-s-semio conforme à la logique de tests/audit_sciences.py (5 092 mots, figure SVG role=img aria-label + figcaption, quatre libellés). Les disciplines n18-s01 à s04 n’ont que des figures d’images réelles avec alt et figcaption attribuée : l’erreur « figure sans svg » est le faux positif connu consigné dans integration/controles.json, non bloquant ; aucun SVG n’a été ajouté dans ces figures (vérifié). Le script lui-même ne s’exécute pas sur N18 (absence dans sa base c50a28a2).",
+   "evidence": [
+    "Analyse lxml du N18_c.html final : n18-s-semio [svg], s01–s04 [img seules, sans svg]."
+   ]
+  },
+  {
+   "id": "SEM-04",
+   "status": "resolved",
+   "finding": "test_v7.py --static N18 : OK.",
+   "evidence": [
+    "Sortie : N18 mots 55892 fenêtres 124 quiz 7 pareto 21 / OK."
+   ]
+  },
+  {
+   "id": "SEM-05",
+   "status": "resolved",
+   "finding": "Tableau des symptômes (mécanisme via fenêtre, prévalence avec source, piège) introduit et commenté (n18-sm-2).",
+   "evidence": [
+    "Section signs."
+   ]
+  },
+  {
+   "id": "SEM-06",
+   "status": "resolved",
+   "finding": "Techniques : pression (ESC 2024), orthostatisme, godet, alité, bandelette, calendrier mictionnel ; loges rénales déclarées sans technique sourcée.",
+   "evidence": [
+    "Section examination et fenêtres n18-sm-pa, -orthostatisme, -godet, -bandelette."
+   ]
+  },
+  {
+   "id": "SEM-07",
+   "status": "resolved",
+   "finding": "Cinq chaînes causales en phrases complètes rattachées aux disciplines (physiologie du sodium, érythropoïétine, sécrétion distale de potassium, charge osmotique, déchets) ; mécanismes des crampes et du prurit déclarés non établis.",
+   "evidence": [
+    "Section mechanisms, figure S1."
+   ]
+  },
+  {
+   "id": "SEM-08",
+   "status": "resolved",
+   "finding": "Chaque valeur chiffrée a population et source datée (sources_semiologie.json, 33 affirmations) ; sensibilité/spécificité « non chiffrées dans les sources lues » écrites et consignées en lacune.",
+   "evidence": [
+    "prep/sources_semiologie.json ; sections interpretation et limits."
+   ]
+  },
+  {
+   "id": "SEM-09",
+   "status": "resolved",
+   "finding": "Normal avant pathologique (DFG, diurèse, osmolarité, normes HUG ; reliefs sans œdème ; diurèse normale avant oligurie).",
+   "evidence": [
+    "Section normal ; fenêtres godet, oligurie."
+   ]
+  },
+  {
+   "id": "SEM-10",
+   "status": "resolved",
+   "finding": "Piège ou limite pour chaque signe majeur (div.trap SM3 et SM7, colonne Piège, fenêtres).",
+   "evidence": [
+    "Sections mechanisms, urgency, signs."
+   ]
+  },
+  {
+   "id": "SEM-11",
+   "status": "resolved",
+   "finding": "Tableau des syndromes (rétention hydrosodée, anémique, hyperkaliémique, urémique, néphrotique).",
+   "evidence": [
+    "Section interpretation."
+   ]
+  },
+  {
+   "id": "SEM-12",
+   "status": "resolved",
+   "finding": "Raisonnement en cinq étapes ordonnées (<ol>) appliqué à l’œdème.",
+   "evidence": [
+    "Section interpretation, partie 3."
+   ]
+  },
+  {
+   "id": "SEM-13",
+   "status": "resolved",
+   "finding": "div.alert avec seuils, délais et actions (kaliémie, signes d’insuffisance rénale terminale, néphrologue de garde), cohérent avec la fenêtre n18-hyperkal de pA.",
+   "evidence": [
+    "Sections normal et urgency ; KDIGO tableau 28."
+   ]
+  },
+  {
+   "id": "SEM-14",
+   "status": "resolved",
+   "finding": "Chaque différentiel porte un discriminant sourcé (tableau SM6).",
+   "evidence": [
+    "Section differentials."
+   ]
+  },
+  {
+   "id": "SEM-15",
+   "status": "resolved",
+   "finding": "Examen systématique numéroté de la préparation à la synthèse (11 étapes).",
+   "evidence": [
+    "Section examination."
+   ]
+  },
+  {
+   "id": "SEM-16",
+   "status": "resolved",
+   "finding": "Synthèse présentée (div.card, M. L.) séparant constatations, interprétation, limites et examens.",
+   "evidence": [
+    "Section examination."
+   ]
+  },
+  {
+   "id": "SEM-17",
+   "status": "resolved",
+   "finding": "Trois cas corrigés : absence de symptôme, valeur d’un ECG normal, formulation honnête d’une limite (nycturie).",
+   "evidence": [
+    "Section limits, 3 div.quiz."
+   ]
+  },
+  {
+   "id": "SEM-18",
+   "status": "resolved",
+   "finding": "17 mots verts du sous-onglet ouverts au navigateur : 17 fenêtres affichées, aucune orpheline.",
+   "evidence": [
+    "rv.py (Chromium) 1300 et 390 px : 17/17."
+   ]
+  },
+  {
+   "id": "SEM-19",
+   "status": "resolved",
+   "finding": "Sources suisses puis européennes ; aucune recommandation américaine ne fixe de conduite ; OpenStax limité aux valeurs physiologiques normales et signalé comme tel.",
+   "evidence": [
+    "Section sources ; sources_semiologie.json."
+   ]
+  },
+  {
+   "id": "SEM-20",
+   "status": "resolved",
+   "finding": "Seuils identiques entre sémiologie, pA, fenêtres et alerte (kaliémie, DFGe, ACR).",
+   "evidence": [
+    "Comparaison des textes finaux."
+   ]
+  },
+  {
+   "id": "SEM-21",
+   "status": "resolved",
+   "finding": "Pas de redite : le bloc pA (partie 7 de n18-a05) ajoute l’anamnèse analytique et renvoie par texte au sous-onglet ; parties 1–6 intactes.",
+   "evidence": [
+    "Bloc data-semiology-clinical identique au livrable prep."
+   ]
+  },
+  {
+   "id": "SEM-22",
+   "status": "resolved",
+   "finding": "Libellé lisible à 390 px avec police 24 px, sans débordement horizontal.",
+   "evidence": [
+    "rv2.py : taille 24px, btnOverflow false, pageOverflow false ; capture scratchpad rv390_24.png ; capture W integration/captures/n18-4-mobile-390-semiologie.png."
+   ]
+  },
+  {
+   "id": "SEM-23",
+   "status": "resolved",
+   "finding": "Captures réelles : sémiologie ouverte et fenêtre d’un signe ouverte.",
+   "evidence": [
+    "integration/captures/n18-2-semiologie-ouverte.png ; n18-3-fenetre-signe.png."
+   ]
+  },
+  {
+   "id": "SEM-24",
+   "status": "resolved",
+   "finding": "Statut « revue IA, aucune validation médicale humaine » maintenu ; aucune certification revendiquée.",
+   "evidence": [
+    "Mentions des livrables et des rapports."
+   ]
+  },
+  {
+   "id": "SEM-L01",
+   "status": "non_blocking",
+   "finding": "Lacunes de contenu déclarées : performance diagnostique des signes, technique des loges rénales, mécanisme des crampes et complet du prurit ; ESC 2024 lu par extraction web.",
+   "evidence": [
+    "sources_semiologie.json lacunes ; section limits."
+   ]
+  },
+  {
+   "id": "SEM-F01",
+   "status": "non_blocking",
+   "finding": "Navigation clavier : Entrée et Espace activent les sous-onglets ; flèches, Début et Fin non revendiqués (moteur actuel).",
+   "evidence": [
+    "rv2.py : kbd_enter true, kbd_space true."
+   ]
+  }
+ ],
+ "evidence": [
+  "Rendu Chromium du fragment S04 construit localement : pS → n18-s-semio visible au premier affichage, n18-s01-sci masqué ; bascule vers s01 puis retour : aria-selected et visibilité suivent la sélection ; neuf sections data-semiology présentes et substantielles ; aucune erreur JavaScript (1300 et 390 px).",
+  "Bloc pA data-semiology-clinical=\"N18\" présent dans #pA (498 mots).",
+  "Lecture intégrale du sous-onglet final et des 13 fenêtres ; identité avec les livrables sourcés de prep/.",
+  "test_v7.py --static N18 OK ; build_medina.audit() {}."
+ ],
+ "unresolved_blockers": []
+}
