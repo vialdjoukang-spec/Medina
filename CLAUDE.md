@@ -1,3 +1,13 @@
+## Mise à jour prioritaire — progression souple et probité de lecture (Vial, 15 octobre 2026)
+
+Jusqu'à nouvel ordre, les audits médicaux indépendants et contre-audits sont suspendus : leur absence ou leur report ne bloque pas la préparation, la correction ou la proposition d'une livraison. Un audit absent reste explicitement « non réalisé »; aucun résultat n'est réputé réussi.
+
+La seule anomalie de leçon remontée en priorité par le moteur est un défaut littéral manifeste (fichier vide ou marqueur provisoire explicite). Le rapport reste une suggestion neutre : Claude peut l'accepter ou le rejeter, et aucune correction, fermeture, fusion ou modification de branche n'est automatique. Les autres signaux techniques ou lacunes potentielles sont rapportés, sans veto du moteur.
+
+**Règle non suspendue :** Claude et tout agent/sous-agent qui ouvre une leçon lisent d'abord `docs/collaboration/betta/PROMPT_VERITE.md` (ou un équivalent explicitement validé) et suivent sa porte documentaire avant rédaction. Cette obligation de probité reste active même lorsque les audits sont suspendus. Le moteur rappelle cette règle mais ne peut pas prouver l'acte de lecture.
+
+Le contrôle utilisateur reste `/medina off` puis `/medina on` dans l'issue 97. Le compte GitHub étant partagé, GitHub ne distingue pas techniquement Vial de Claude; seul Vial doit employer les commandes d'arrêt. Une réponse dans un fil de PR ne constitue plus un veto à la délégation après le délai de cinq minutes.
+
 ## Délégation opérationnelle prioritaire — Vial, 15 octobre 2026
 
 Lire [la délégation actuelle](docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md). Claude décide prioritairement de son travail MEDINA et peut adapter les blocages administratifs historiques sans nouvelle permission, sans écraser le travail concurrent. Les sources, contrôles réels et protections GitHub restent obligatoires. Moteur contrôlable dans [l’issue 97](https://github.com/vialdjoukang-spec/Medina/issues/97) : `/medina off` ou `/medina on`. Cette délégation ne constitue pas un compte administrateur ni une validation médicale.
