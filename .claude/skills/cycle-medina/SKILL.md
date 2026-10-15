@@ -15,7 +15,7 @@ Ce plan est `organisation/novo_12/PLAN_NOVO_12.json` (108 leçons), **pas** le p
 
 Claude et chaque agent lisent d'abord le Prompt de vérité à vingt rubriques.
 Chaque dossier garde `recherche.md` et `sources.json` ; porte `betta_verite.py`
-avant rédaction. Les relevés utilisent `claude_cycle_gate.py --prompts novo`.
+avant rédaction. Les relevés utilisent `novo_cycle_gate.py --prompts novo`.
 Dans leurs deux relevés auteur, rattacher les deux fichiers par deux
 `--check sources_lues CHEMIN EXPLICATION` : leurs empreintes restent figées.
 Les sous-cycles individuels gardent leurs dossiers `CYCLE_nn_CODE`, numéros et

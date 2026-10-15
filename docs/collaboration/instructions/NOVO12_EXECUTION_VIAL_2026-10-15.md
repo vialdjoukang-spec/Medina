@@ -24,7 +24,8 @@ Claude et chaque agent lisent d'abord `docs/collaboration/betta/PROMPT_VERITE.md
 Chaque dossier conserve `recherche.md` et `sources.json`, la matrice de vingt
 rubriques, les sources réellement lues et leurs limites. Exécuter la porte
 `betta_verite.py` avant rédaction. Les relevés auteur/coordinateur utilisent
-`claude_cycle_gate.py --prompts novo` ; la garde exige ces documents versionnés,
+`novo_cycle_gate.py --prompts novo` ; l'outil historique figé dans les preuves
+N04 reste inchangé. La garde exige ces documents versionnés,
 le registre des sources, les preuves auteur et les contrôles techniques.
 Une empreinte ou une matrice ne prouve pas à elle seule la lecture ou la vérité
 médicale. Ne jamais déclarer une lecture ou un audit qui n'a pas eu lieu.

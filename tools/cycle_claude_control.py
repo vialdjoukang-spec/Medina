@@ -38,6 +38,7 @@ import cycle_claude as G  # noqa: E402
 import night_cycle as N  # noqa: E402
 import tetrade_cycle as C  # noqa: E402
 import claude_cycle_gate as GATE  # noqa: E402
+import novo_cycle_gate as NOVO_GATE  # noqa: E402
 
 RUNTIME = os.environ.get('MEDINA_RUNTIME')
 TABS = ('pA', 'pE', 'pS', 'pP')
@@ -294,7 +295,8 @@ def control(a):
         raise ControlError(f'Contrôle technique en échec ; détail : {rel(technical_path)}')
     swiss = swiss_context(row, author, files, a.swiss_matrix)
     try:
-        exit_gate = GATE.make_gate(G.COORDINATOR, a.check, 'novo' if row.get('novo') else 'direct')
+        exit_gate = (NOVO_GATE.make_gate(G.COORDINATOR, a.check) if row.get('novo') else
+                     GATE.make_gate(G.COORDINATOR, a.check, 'direct'))
     except ValueError as error:
         raise ControlError(str(error)) from None
     receipt = {'code': a.code, 'actor': G.COORDINATOR, 'runtime_agent_id': runtime, 'medical_human_validation': False,

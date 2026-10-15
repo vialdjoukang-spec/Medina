@@ -63,6 +63,15 @@ médicale, pas de validation clinique ni de déploiement de ces correctifs annon
 
 ## Réserves et suite
 
+Contrôle distant de la proposition initiale `b4f2d641c281f7b9ae29b5cdf8b8f90ab79b25b8` :
+la garde CI a exécuté et réussi ses tests unitaires, puis refusé la modification
+de `tools/claude_cycle_gate.py`, dont l'empreinte est figée dans la preuve auteur
+N04. Correction : ce fichier retrouve exactement son SHA-256 historique
+`3706186994503073a18d67ef52f11f63a4e05f7917813cb72e0523ef6a136ee6` ; l'extension
+est déplacée dans `tools/novo_cycle_gate.py`. Aucune preuve auteur ni date n'est
+réécrite. Deux tests supplémentaires vérifient cette préservation et la séparation
+des jeux de Prompt. La CI de la version corrigée doit être vérifiée séparément.
+
 Chromium est absent ; son téléchargement a retourné des archives tronquées.
 Aucun contrôle navigateur ordinateur/mobile n'a été exécuté ici. La garde Git
 globale et le scanner exhaustif ont été lancés, mais leur résultat final n'est

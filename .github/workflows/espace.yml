@@ -28,7 +28,7 @@ jobs:
       - name: Vérifier la chaîne nocturne et son échéance de publication
         run: python3 -m unittest tests.test_night_cycle tests.test_publication_manifest
       - name: Vérifier les deux espaces Novo et les transactions d'injection
-        run: python3 -m unittest tests.test_cycle_claude tests.test_novo_cycle tests.test_betta_cycle tests.test_betta_injecter
+        run: python3 -m unittest tests.test_cycle_claude tests.test_novo_cycle tests.test_novo_cycle_gate tests.test_betta_cycle tests.test_betta_injecter
       - name: Vérifier les réparations techniques sans audit médical
         run: python3 -m unittest tests.test_clov2_veille tests.test_medina_resume tests.test_medina_unblock tests.test_pages_scope tests.test_glossary_loader
       - name: Refuser une injection prématurée ou une réouverture
