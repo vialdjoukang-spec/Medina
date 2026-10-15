@@ -7,7 +7,7 @@
  "reviewer": "Agent P (préparateur et contrôleur), revue finale indépendante de l’intégration de l’Agent W",
  "date": "2026-10-15",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
- "reviewed_commit": "980a26f773cbbf488403b9f181e22750176eb1b8",
+ "reviewed_commit": "56febc0836e92751b51122ed968a6b2d7abe799a",
  "status": "closed",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -23,10 +23,10 @@
   "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f",
   "chapters/C77/C77_a.html": "46b32137bc19a93275620800691125f90976e0350939f203fa0e36764a881dc4",
   "chapters/C77/C77_b.html": "c9341938a55536c082a2880848fc31258c7709231ea978fa5da8035db3240e71",
-  "chapters/C77/C77_c.html": "d8d8a81df65f853a9e6a1bda3152c0166f3b3bde21efe573d097e4085e1c5c86",
+  "chapters/C77/C77_c.html": "41e1ec0d1a99b7dfe15efa24fc9e9e144e1cb47df18e8737131930d5fe04359e",
   "chapters/C77/C77_d.html": "7741d88a586b1ee44142c6ea723a86406515e4336076164bf4ace97607eb9d49",
   "chapters/C77/C77_pop1.html": "e1925572d6d5ddb1acf71bd7784e59980787653051cb6a8f2db3b4949ac8f087",
-  "chapters/C77/C77_pop2.html": "243657a776931edee2b9f0b98c89530c75ccc96e061f3c5188b9b13aa2f738bd",
+  "chapters/C77/C77_pop2.html": "9b96b68e6c65071bdeeec782431570976885590dccc9a2334d17d15b7f98763e",
   "glossary/c77.py": "92b6b1042a26faafee1429653e3ed948e62d8b015675f8b1818dc6579f3f98b2"
  },
  "requirements_reviewed": {
@@ -221,6 +221,47 @@
    "source": "Onkopedia 2025 § 5.1.3.1.1",
    "evidence": "« Therapie bei MSI-H oder MMR-Defekt Therapie mit Pembrolizumab oder Atezolizumab bei hoher Tumormutationslast (TMB-high, ≥10 Mutationen/Megabase): PD1/PDL1-Checkpointinhibitor +/- CTLA4-Inhibitor (off-label) bei immunogener Tumorbiologie mit PDL1-Expression: PD1/PDL1-Checkpointinhibitor in der 2. Therapielinie erwägen (off-label). »",
    "resolution": "Corrigé à 980a26f7 dans C77_b, C77_c et c77-imm-msi : « Onkopedia 2025 qualifie d’« off-label » le traitement fondé sur une charge mutationnelle élevée ou sur PD-L1 ». Conforme à Onkopedia 2025 § 5.1.3.1.1 (mention « off-label » sur les seules lignes TMB-high et PD-L1, pas sur la ligne MSI-H/dMMR) ; plus aucune occurrence de l’ancienne formule dans chapters/C77. Le statut hors indication en Suisse reste fondé sur la FI Keytruda® (août 2026)."
+  },
+  {
+   "id": "P-PR158-00",
+   "severity": "VERIFICATION",
+   "status": "resolved",
+   "anchor": "C77_c.html #c77-sm-1, #c77-sm-3 et figure « Du mécanisme au signe » ; C77_pop2.html c77-sm-consistance",
+   "finding": "Les trois constats Codex de la PR #158 sont traités (7671b5cb, 56febc08). (1) Ganglions profonds : circonstances de découverte d’une adénopathie superficielle conformes à l’item 291 (« découverte par le patient lui-même. Sinon […] examen médical systématique ou orienté (par exemple par une douleur locale ou plus rarement des signes de compression) ») ; adénopathies abdominales et pelviennes « often discovered incidentally or during investigation related to a condition or disease » (SMW 2024) ; scanner et IRM apportant « a mediastinal or abdominal lymphadenopathy » lors d’une polyadénopathie (SMW 2010). (2) Figure : flèches ajoutées, lecture à 390 px correcte. (3) La causalité « dur parce que non inflammatoire » a disparu de #c77-sm-3, de la figure et de c77-sm-consistance ; elle est remplacée par une association, avec la réserve de SMW 2010 (« all these signs do not reliably differentiate between benign and malignant causes »). Les nuances résiduelles sont P-PR158-01 à 03.",
+   "evidence": "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »; Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique; Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2; Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+  },
+  {
+   "id": "P-PR158-01",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "etat": "ouvert",
+   "anchor": "C77_c.html #c77-sm-1 : « les adénopathies médiastinales se révèlent au scanner et s’explorent par ponction transbronchique guidée par échographie endobronchique (Swiss Medical Weekly 2024) »",
+   "finding": "Cette phrase va au-delà de la source. SMW 2024 réserve l’EBUS-TBNA aux adénopathies médiastinales volumineuses (> 10–15 mm) et groupées. En dessous de ce seuil, la revue précise qu’il n’existe pas de recommandation et mentionne la surveillance par scanner répété, le TEP-CT et l’EBUS-TBNA. Elle ne dit pas que ces adénopathies « se révèlent au scanner ».",
+   "correction_proposee": "« … les adénopathies médiastinales volumineuses (plus de 10 à 15 mm) et groupées s’explorent au mieux par ponction transbronchique guidée par échographie endobronchique ; en dessous de ce seuil, aucune recommandation n’existe (Swiss Medical Weekly 2024). »",
+   "source": "SMW 2024, « Mediastinal and abdominal lymphadenopathy »",
+   "evidence": "« For large (>10–15 mm) grouped mediastinal lymphadenopathies, the best investigation is an endobronchial ultrasound-guided transbronchial needle aspiration (EBUS-TBNA) […] There are no guidelines for isolated mediastinal lymphadenopathy of unclear aetiology below 10–15 mm (repeated CT scan to determine the evolution, PET/CT and EBUS-TBNA to monitor progression). »"
+  },
+  {
+   "id": "P-PR158-02",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "etat": "ouvert",
+   "anchor": "C77_c.html #c77-sm-1 : « Les ganglions profonds, intrathoraciques, intra-abdominaux et intrapelviens, échappent en revanche à la palpation. »",
+   "finding": "Phrase exacte sur le fond, mais sans source dans la phrase ni dans le paragraphe. Les sources lues ne l’énoncent qu’implicitement : l’item 291 et le Collège 2013 limitent la palpation aux aires superficielles, et SMW 2024 oppose les ganglions inguinaux superficiels aux ganglions iliaques profonds.",
+   "correction_proposee": "Rattacher la phrase aux sources : « La palpation n’explore que les aires superficielles (cours universitaire francophone 2011 ; Collège de médecine interne 2013) ; les ganglions profonds lui échappent. »",
+   "source": "Item 291 § I.2 ; Collège 2013 § 1.1",
+   "evidence": "Item 291 : « territoires ganglionnaires superficiels : jugulocarotidien, sous-mandibulaire, occipital, sus-claviculaire… » ; Collège 2013 : « La palpation permet de reconnaître une ou des adénopathie(s) dans les principales aires où sont situés les ganglions physiologiques »."
+  },
+  {
+   "id": "P-PR158-03",
+   "severity": "MINEUR",
+   "status": "non_blocking",
+   "etat": "ouvert",
+   "anchor": "C77_c.html #c77-sm-3 : « le ganglion envahi est le plus souvent décrit ferme ou dur, indolore et non inflammatoire, puis peu mobile ou fixé (Collège de médecine interne 2013) » ; même formule « puis peu mobile » dans #c77-sm-3 ; figure « Souvent dur, indolore, puis fixé » ; À retenir « plus souvent dur et indolore »",
+   "finding": "Ces formulations vont au-delà de la source. Le Collège 2013 range ces caractères parmi ceux « en faveur d’une affection maligne », lymphomes compris. Il ne donne aucune fréquence (« le plus souvent », « plus souvent ») et aucune séquence (« puis fixé »). Le texte ne retient plus de causalité, ce qui répond au constat Codex.",
+   "correction_proposee": "« Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés sont en faveur d’une affection maligne, métastase comprise (Collège de médecine interne 2013). » Dans la figure, remplacer par « Dur, indolore, peu mobile ou fixé : en faveur ; non fiable ». Dans À retenir, écrire « Un ganglion dur et indolore est en faveur d’une affection maligne ».",
+   "source": "Collège 2013 § 1.2 ; item 291 (« dure, ligneuse, rocailleuse (en faveur d’un cancer) »)",
+   "evidence": "Collège 2013 : « Des ganglions volumineux, fermes ou durs, indolores, non inflammatoires, peu mobiles ou fixés par rapport à la peau sont en faveur d’une affection maligne. »"
   }
  ],
  "evidence": [
@@ -294,6 +335,22 @@
     "Sources relues pour la clôture : Arasa 2021 texte intégral PMC8161367 (sha256 13d32d3a3ee6f5ad92fdcc12d41823dbcbb10928ab3ba7eae8d79a3e05e8a0fe) ; FI Keytruda® (AmiKo, août 2026) ; Ji 2023 (PMC10522642) ; Onkopedia 2025 ; SMW 2010.",
     "Mise à jour 980a26f7 : correction P-IMM-08 relue contre Onkopedia 2025 § 5.1.3.1.1 ; test_v7.py --static C77 OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML ; empreintes recalculées."
    ]
+  },
+  {
+   "ref": "revue_codex_pr158",
+   "items": [
+    "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »",
+    "Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique",
+    "Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2",
+    "Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+   ],
+   "controls": [
+    "build_front.py --fragment S06 hors dépôt (5 982 422 → 3 743 552 octets) ; Chromium 1194 servi en HTTP local",
+    "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
+    "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
+    "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+    "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png"
+   ]
   }
  ],
  "mention": "Revue IA, distincte d’une validation médicale humaine. Les empreintes et contrôles techniques ne certifient pas l’exactitude médicale.",
@@ -306,5 +363,36 @@
   "constats_ouverts_non_bloquants": [],
   "note": "Revue IA, distincte d’une validation médicale humaine.",
   "commit_cloture": "980a26f773cbbf488403b9f181e22750176eb1b8"
+ },
+ "revue_codex_pr158": {
+  "date": "2026-10-15",
+  "commit": "56febc0836e92751b51122ed968a6b2d7abe799a",
+  "commits_revus": [
+   "7671b5cb",
+   "56febc08"
+  ],
+  "agent": "Agent P, relecteur indépendant",
+  "perimetre": "Corrections de W après la revue Codex de la PR #158 : #c77-sm-1 (ganglions profonds), figure « Du mécanisme au signe », causalité de la consistance (#c77-sm-3, figure, c77-sm-consistance)",
+  "sources_ouvertes_par_P": [
+   "Hanzalová et Matter, Swiss Med Wkly 2024;154:3549, PDF (sha256 cebeae45a0463e5b8d98d312a086c3597def5e34960ea1a43b63098ad5d8f4d6), section « Mediastinal and abdominal lymphadenopathy »",
+   "Richner et Laifer, Swiss Med Wkly 2010;140:98–104, PDF (sha256 f31e0999890f0f440a12d70a6e0c77e62f07c79806ecff7f51d477f87823574f), « Imaging studies » et algorithme clinique",
+   "Pavic et Gérome, Sémiologie hématologique, Collège de médecine interne / UMVF 2013, PDF (sha256 86462ecc2fce342d9f59c3bb9f8c917bf16a4a0a27055d2480852d93a23702ea), § 1.1–1.2",
+   "Item 291, Adénopathie superficielle, cours universitaire francophone 2011, PDF (sha256 b58faa2c6b6026f57f9f6b4231300dbbb540c27736169e31d3748c7ff32fd709), § I.1–I.2"
+  ],
+  "rendu": [
+   "build_front.py --fragment S06 hors dépôt (5 982 422 → 3 743 552 octets) ; Chromium 1194 servi en HTTP local",
+   "Figure « Du mécanisme au signe » (viewBox 420 × 804, trois chaînes verticales) : 1300 px → 420 × 804 px, texte 16 px ; 390 px → 296 × 567 px, texte 11,3 px lisible ; 6 flèches marker-end visibles (id c77-sm-fl unique) ; aucun texte hors du cadre (seuls les trois titres de chaîne sont hors boîte, à dessein) ; débordement de la figure 0 ; boîtes de texte seulement, aucune anatomie",
+   "Sémiologie premier bouton sélectionné et visible ; fenêtre c77-sm-consistance ouverte depuis son mot vert (texte corrigé affiché) ; défilement horizontal 0 ; aucune erreur JavaScript ni console (1300 et 390 px)",
+   "test_v7.py --static C77 : OK ; build_medina.audit(src, 'C77') = {} sur les six fichiers HTML",
+   "Captures hors dépôt : scratchpad/p3_desktop_semio_fig.png, p3_mobile_semio_fig.png"
+  ],
+  "bloquants": 0,
+  "constats_ouverts_non_bloquants": [
+   "P-PR158-01",
+   "P-PR158-02",
+   "P-PR158-03"
+  ],
+  "note_recu": "Les empreintes des fichiers revue/ et des sources changent : le reçu Alpha f577d649 doit être régénéré par W.",
+  "mention": "Revue IA, distincte d’une validation médicale humaine."
  }
 }
