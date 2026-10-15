@@ -1,0 +1,29 @@
+{
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "code": "C77",
+ "note": "Le contrôle B.audit sur semiologie_sciences.html, semiologie_clinique.html et pop_semiologie.html renvoie {} avec le glossaire actuel (CCR7, PSA, EBV, ORL, CUP, CIM-10-GM déjà couverts). Seule la légende de la figure SEER exige une clé.",
+ "ajouts": [
+  {
+   "cle": "NCI",
+   "fonction": "add_if_absent",
+   "lettres": [
+    [
+     "N",
+     "National (national)"
+    ],
+    [
+     "C",
+     "Cancer (du cancer)"
+    ],
+    [
+     "I",
+     "Institute (institut)"
+    ]
+   ],
+   "full": "National Cancer Institute",
+   "def": "Institut national du cancer des États-Unis ; son programme SEER a produit le schéma original des régions ganglionnaires utilisé en figure 1 des Sciences.",
+   "window": "c77-drainage",
+   "appel_propose": "add_if_absent('NCI', [('N', 'National (national)'), ('C', 'Cancer (du cancer)'), ('I', 'Institute (institut)')], 'National Cancer Institute', 'Institut national du cancer des États-Unis ; son programme SEER a produit le schéma original des régions ganglionnaires utilisé en figure 1 des Sciences.', 'c77-drainage')"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "mission": "ALPHA77-CLAUDE-C77-INTEGRATE",
+ "code": "C77",
+ "fragment": "S06",
+ "role": "Agent P",
+ "phase": 1,
+ "status": "ready",
+ "date": "2026-10-15",
+ "base": "abd681e5",
+ "branch": "claude/alpha77/c77-integrate-g1",
+ "livrables": [
+  {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/semiologie_sciences.html",
+   "sha256": "f1d0b81f18bdf641ccebc973360f195d69d78c0b0b23e12661bd8687cee38a53"
+  },
+  {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/semiologie_clinique.html",
+   "sha256": "1b0dba8e0aa5fa5f33a93ced9e0c462bfac1ecb902fc41e610709fcdfd5e7b21"
+  },
+  {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/pop_semiologie.html",
+   "sha256": "8db10334d5aee0161fadf0539f79ba6a377f432280da5fa5b41efa4f6fba7504"
+  },
+  {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/figures.json",
+   "sha256": "3ccd73e36a6ec1cf5ef8ed8f1b7a4fbebd96a85d404cb012c975dcb739546366"
+  },
+  {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/figures.html",
+   "sha256": "f0251db045c7cc680de8dfa81ec484f799a520a95c9b8c8fb1b8c2b56cb447d6"
+  },
+  {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/sources_semiologie.json",
+   "sha256": "2fb6d29242afd3baba0b2708c238dcfc23ee405493e2723e17dff6b400fc5ee6"
+  },
+  {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C77-INTEGRATE/prep/glossaire_ajouts.json",
+   "sha256": "8aa3e3b6286cf39c18f5fd3e41a14915abcfbcb1dea366c6e72de545602728f8"
+  },
+  {
+   "path": "assets/img/c77/alpha/claude/lymph_node_regions_seer.svg",
+   "sha256": "bf7147bdc2b1846d36106be5028902c56c314d169b0a596d53ee5da0c042423f"
+  }
+ ],
+ "integration_pour_W": [
+  "C77_c.html #pS : bouton c77-tab-semio en tête de .sci-bar (aria-selected=\"true\"), ancien premier bouton c77-s-anat → aria-selected=\"false\" ; div.sci#c77-s-semio en tête de .sci-body ; ajouter hidden à div#c77-s-anat (le moteur gère ensuite la sélection).",
+  "Nouveau fichier chapters/C77/C77_pop3.html = contenu de prep/pop_semiologie.html sans le commentaire de tête (10 fenêtres c77-sm-*).",
+  "C77_a.html, îlot c77-6 : insérer prep/semiologie_clinique.html (div data-semiology-clinical=\"C77\") juste avant le bouton Pareto « Anamnèse et examen clinique ».",
+  "C77_c.html, îlot c77-s-anat-cours : remplacer la Figure 1 dessinée (MAJ-09) par prep/figures.html.",
+  "glossary/c77.py : ajouter la clé NCI (prep/glossaire_ajouts.json) ; aucune autre clé requise par les fichiers prep (B.audit = {} vérifié).",
+  "Mettre à jour la phrase de c77-8 « Les sources lues ne décrivent aucune urgence oncologique aiguë propre à C77 » : Onkopedia 2025 § 5.3.1 décrit la compression médullaire (ENR-04), cohérence SEM-13/SEM-20 avec l’alerte de c77-sm-7."
+ ],
+ "controles_P": {
+  "classes_liste_fermee": "aucune classe hors liste, aucun style en ligne (prep HTML)",
+  "abreviations": "build_medina.audit = {} sur semiologie_sciences, semiologie_clinique et pop_semiologie ; figures.html : NCI seule clé manquante (ajout proposé)",
+  "fenetres": "les 10 data-k c77-sm-* ont leur template ; aucun identifiant en double avec chapters/C77",
+  "contrat_semio": "premier h2 exact ; 9 sections data-semiology dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources ; 3 cas corrigés (valeur d’un signe, gravité, formulation d’une limite) ; div.alert dans c77-sm-7",
+  "audit_sciences_simule": "sur une copie de C77_c.html intégrée dans le dossier temporaire de session : navigation complète, c77-s-semio 4 982 mots, 1 figure SVG non anatomique légendée, 4 encadrés présents → aucune erreur pour c77-s-semio",
+  "citations": "48 passages au format each_claim ; vérification textuelle automatique contre les PDF extraits ; 4 écarts restants dus à l’extraction (appels de références, coupures de mots), relus manuellement"
+ },
+ "lacunes": [
+  "tests/audit_sciences.py --codes C77 lève RuntimeError : C77_c.html absent de la base c50a28a2 et C77 hors de la liste d’exemption (fichier partagé tests/, hors chemins de la mission) ; contrôle simulé seulement.",
+  "Les disciplines existantes c77-s-anat, -histo, -physio et -bioch échouent déjà aux critères d’audit_sciences (moins de 280 mots pour trois d’entre elles, encadrés manquants) : constat préexistant, à traiter par W ou à déclarer.",
+  "Une figure <img> dans pS échoue au contrôle svg[role=img] d’audit_sciences (précédent D50 d50-s-histo) ; ne pas contourner par un emballage svg.",
+  "Image CRUK (aires cervicales, CC BY-SA 4.0) : page et licence vérifiées, téléchargement refusé HTTP 429, aucun nouvel essai ; figure de sémiologie cervicale non fournie.",
+  "Image_Clo_finder : Commons HTTP 429 (délai d’attente enregistré) ; Europe PMC : aucune photographie clinique exploitable (ganglion de Virchow).",
+  "Aucune valeur sémiologique chiffrée pour consistance, sensibilité, mobilité, peau ; mécanisme de la fixité et de la douleur à l’alcool non décrits ; aucune donnée suisse propre ; aucune source sur la grossesse.",
+  "Constat pour W : Liu 2023 (texte intégral renvoyé par PubMed Central, figures non lues) décrit l’attraction des cellules CCR7 par l’endothélium lymphatique mais ne nomme pas CCL21 ; vérifier l’attribution « CCL21 » de c77-3, c77-ccl21 et de la Figure 3."
+ ],
+ "choix_differes_non_appliques": [
+  "espaces insécables globales",
+  "« fibrillation atriale/auriculaire »",
+  "groupe LIENS d’E11"
+ ],
+ "medical_human_validation": false,
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
