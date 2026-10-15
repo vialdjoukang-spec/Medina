@@ -12,5 +12,7 @@
   "clinical_audit_started": false,
   "server_protection_request_rejected_http": 403,
   "server_main_protected": false,
-  "note": "Les deux PUT de protection main/registre ont été refusés par GitHub faute Administration. Le protocole coopératif et la CI sont installés ; obligation serveur non activée."
+  "note": "Les deux PUT de protection main/registre ont été refusés par GitHub faute Administration. Le protocole coopératif et la CI sont installés ; obligation serveur non activée.",
+  "all_workflow_paths_require_integrator_mission": true,
+  "workflow_policy_reason": "Un autre workflow Actions peut usurper un nom de contrôle : toute modification de .github/workflows exige désormais une attribution intégrateur, pas seulement le workflow de la garde."
 }
