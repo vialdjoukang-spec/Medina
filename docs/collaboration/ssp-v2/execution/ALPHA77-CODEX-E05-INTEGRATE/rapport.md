@@ -58,3 +58,7 @@ Les réserves encore ouvertes sont le protocole hospitalier suisse local de cris
 Sur les octets finaux : test statique **OK**,34508 mots,90fenêtres,4quiz,4Pareto ; reconstruction S05 propre ; Chromium1365×950 et390×844 avec les six sélections réellement cliquées, neuf sections, Entrée/Espace, popup, police24px, Livre et Navigo. Les15copies sous `delivery/`, le manifeste et les attestations sont actualisés. Le test partagé `audit_sciences.py` reste inchangé ; sa base historique manquante n’est pas convertie en réussite par cet audit.
 
 Checkpoint de transition demandé par Vial : arrêt de tout nouveau travail après cette sauvegarde. La revue médicale ciblée et les attestations MED/SEMIO ci-jointes sont provisoires ; l’audit LANG final sur ces octets, le reçu Alpha, la PR, la CI et la publication restent à réaliser par le coordinateur. Aucune clôture ni validation humaine. La reprise doit conserver les réserves ci-dessus et partir de `final-hashset.json` ; ne pas promouvoir les rapports d’auteur historiques.
+
+## Delta médical des trois transferts LANG
+
+Après transfert exclusif du candidat94933a2, les trois discordances sont résolues avec leurs passages réels, sans audit général répété. Voir `med-delta-review.md` et `med-delta-sources.json`. MED et SEMIO restent **provisional** ; les autres réserves restent ouvertes et LANG attend sa revalidation locale du delta. Aucune publication ni clôture.
