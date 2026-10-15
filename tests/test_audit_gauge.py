@@ -31,7 +31,7 @@ class GaugeTests(unittest.TestCase):
  def remote_fixture(self,empty_md=False,partial=False):
   codes=FIRST+['X'+str(i) for i in range(70)]
   q=[{'code':c,'missions':{r:('ALPHA1' if c in FIRST else 'ALPHA77')+'-CODEX-'+c+'-'+r for r in ['MED','LANG']}} for c in codes]
-  
+
   for item in q:item['closure_path']='closures/'+item['code']+'.json'
   current=q[7:14];refs={'refs/heads/main':'main','refs/heads/medina/7-starter-codex':'state'}
   for item in current:
