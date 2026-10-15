@@ -401,5 +401,123 @@ class AlphaTests(unittest.TestCase):
         self.assertTrue(P.validate(new_view, new_view, {P.RECEIPT}, adopted=True))
 
 
-if __name__ == '__main__':
+
+
+class ReachableCourseTests(unittest.TestCase):
+    def read(self,body,code='N17'):
+        return A.reachable_course_text(body.encode(),code)
+
+    def wrap(self,body):return '<template id="ch-N17"><div class="chap">'+body+'</div></template>'
+
+    def tabs(self,body,aria='pS',target='pS',button_attrs='',target_attrs='hidden'):
+        return self.wrap(f'<div class="tabs"><button data-p="{target}" aria-controls="{aria}" {button_attrs}>Sciences</button></div><div class="panel" id="pA">Initial</div><div class="panel" id="pS" {target_attrs}>{body}</div>')
+
+    def science(self,body,button_attrs='',target_attrs='hidden',aria=True):
+        controls='aria-controls="n17-anat"' if aria else ''
+        return self.tabs(f'<div class="sci-bar"><button data-s="n17-anat" {controls} {button_attrs}>Anatomie</button></div><div class="sci" id="n17-anat" {target_attrs}>{body}</div>')
+
+    def test_real_course_template_reservation(self):
+        raw=self.wrap('<p>Réserves encore ouvertes.</p>')
+        self.assertIn('Réserves encore ouvertes.',self.read(raw))
+        self.assertNotIn('Réserves',A.visible_text(raw.encode()))
+
+    def test_real_navigation_reaches_hidden_science_and_credit(self):
+        raw=self.science('<figure><figcaption>Crédit original vérifié</figcaption></figure>')
+        self.assertIn('Crédit original vérifié',self.read(raw))
+        self.assertNotIn('Crédit original vérifié',A.visible_text(raw.encode()))
+
+    def test_legacy_runtime_button_without_aria_is_supported(self):
+        self.assertIn('Crédit',self.read(self.science('<figcaption>Crédit</figcaption>',aria=False)))
+
+    def test_mismatched_or_absent_primary_target_stays_hidden(self):
+        for attrs in [dict(aria='foreign'),dict(target='missing')]:
+            self.assertNotIn('Secret',self.read(self.tabs('<p>Secret</p>',**attrs)))
+
+    def test_scientific_aria_mismatch_rejected(self):
+        raw=self.science('<p>Secret</p>').replace('aria-controls="n17-anat"','aria-controls="other"')
+        self.assertNotIn('Secret',self.read(raw))
+
+    def test_duplicate_local_target_is_not_activated(self):
+        body=self.science('<p>Secret</p>').replace('</div></template>','<div class="sci" id="n17-anat" hidden>Duplicate</div></div></template>')
+        self.assertNotIn('Secret',self.read(body))
+
+    def test_foreign_course_and_nested_templates_are_not_reachable(self):
+        self.assertNotIn('Secret',self.read('<template id="ch-I63"><p>Secret</p></template>'))
+        for tag in ['template','script','style']:
+            self.assertNotIn('Secret',self.read(self.science(f'<{tag}>Secret</{tag}>')))
+
+    def test_explicit_hiding_and_nested_hidden_remain_excluded(self):
+        for attrs in ['hidden style="display:none"','hidden style="display: none !important"',
+                      'hidden aria-hidden="true"','hidden style="visibility:hidden"']:
+            self.assertNotIn('Secret',self.read(self.science('<p>Secret</p>',target_attrs=attrs)))
+        for attrs in ['hidden','aria-hidden="true"','style="display:none"']:
+            self.assertNotIn('Secret',self.read(self.science(f'<p {attrs}>Secret</p>')))
+
+    def test_hidden_or_disabled_buttons_cannot_activate_targets(self):
+        for attrs in ['hidden','disabled','aria-disabled="true"','style="display:none"','inert']:
+            self.assertNotIn('Secret',self.read(self.science('<p>Secret</p>',button_attrs=attrs)))
+
+    def test_uncontrolled_science_and_wrong_bar_are_not_activated(self):
+        raw=self.science('<p>Secret</p>')
+        for value in [raw.replace('class="sci-bar"','class="random"'),raw.replace('data-s="n17-anat"','data-x="n17-anat"')]:
+            self.assertNotIn('Secret',self.read(value))
+
+    def test_button_in_inert_template_cannot_activate_target(self):
+        raw=self.science('<p>Secret</p>').replace('<div class="sci-bar">','<template><div class="sci-bar">').replace('Anatomie</button></div>','Anatomie</button></div></template>')
+        self.assertNotIn('Secret',self.read(raw))
+
+    def test_visible_outside_course_is_not_course_evidence(self):
+        raw='<p>Secret</p>'+self.wrap('<p>Course</p>')
+        self.assertNotIn('Secret',self.read(raw))
+        self.assertIn('Course',self.read(raw))
+
+    def test_plain_fixtures_preserve_existing_visibility_contract(self):
+        raw=b'<p>Public</p><p hidden>Secret</p><template>Secret2</template><script>Secret3</script>'
+        self.assertEqual('Public',A.visible_text(raw))
+        self.assertEqual('Public',A.reachable_course_text(raw,'N17'))
+
+
+
+    def test_missing_or_duplicate_course_root_cannot_use_outside_reserves(self):
+        for raw in ['<p>Secret</p><template id="ch-I63">Foreign</template>',
+                    '<p>Secret</p>'+self.wrap('One')+self.wrap('Two'),
+                    '<p>Secret</p><template>'+self.wrap('Secret')+'</template>']:
+            self.assertNotIn('Secret', self.read(raw))
+
+
+    def test_embedded_styles_cannot_supply_computed_hidden_evidence(self):
+        for raw in [self.wrap('<style>.secret{display:none}</style><p class="secret">Secret</p>'),
+                    '<style>.secret{visibility:hidden}</style>'+self.wrap('<p class="secret">Secret</p>')]:
+            self.assertNotIn('Secret', self.read(raw))
+
+    def test_nested_peer_target_cannot_become_reachable(self):
+        raw = self.wrap('<div class="tabs"><button data-p="pS">Science</button></div>'
+                        '<div class="panel" id="pA"><div class="panel" id="pS" hidden>Secret</div></div>')
+        self.assertNotIn('Secret', self.read(raw))
+        raw = self.science('<div class="sci-bar"><button data-s="nested">Next</button></div>'
+                           '<div class="sci" id="nested" hidden>Secret</div>')
+        self.assertNotIn('Secret', self.read(raw))
+
+
+    def test_untransformed_class_syntax_cannot_activate_hidden_target(self):
+        raw = self.science('<p>Secret</p>')
+        for old, new in [('class="tabs"', "class='tabs'"),
+                         ('class="panel"', "class='panel'"),
+                         ('class="sci-bar"', "class='sci-bar'"),
+                         ('class="sci"', "class='sci'")]:
+            self.assertNotIn('Secret', self.read(raw.replace(old, new)))
+
+    def test_closed_dialog_and_explicit_invisible_styles_excluded(self):
+        self.assertNotIn('Secret', self.read(self.wrap('<dialog>Secret</dialog>')))
+        self.assertIn('Visible', self.read(self.wrap('<dialog open>Visible</dialog>')))
+        for style in ['visibility:collapse', 'content-visibility:hidden', 'opacity:0',
+                      'font-size:0px', 'color:transparent', 'display:/* hidden */none']:
+            self.assertNotIn('Secret', self.read(self.science('<p>Secret</p>',
+                                  target_attrs='hidden style="'+style+'"')))
+
+    def test_active_stylesheet_link_cannot_prove_static_visibility(self):
+        self.assertNotIn('Secret', self.read('<link rel="stylesheet" href="hide.css">'+self.wrap('Secret')))
+
+
+if __name__ == "__main__":
     unittest.main()
