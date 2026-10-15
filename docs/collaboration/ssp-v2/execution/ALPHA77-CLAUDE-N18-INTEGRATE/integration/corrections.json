@@ -1,0 +1,1677 @@
+{
+ "mission": "ALPHA77-CLAUDE-N18-INTEGRATE",
+ "code": "N18",
+ "role": "Agent W — rédacteur et intégrateur",
+ "phase": 1,
+ "date": "2026-10-15",
+ "branche": "claude/alpha77/n18-integrate-g1",
+ "base": "abd681e5",
+ "audits_sources": [
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-N18-MED/",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-N18-LANG/"
+ ],
+ "empreintes_avant": {
+  "chapters/N18/N18_a.html": "95f05b1b1210f21856e9205e60e4108de6ac19bee6c78367e119fdfc706e1676",
+  "chapters/N18/N18_b.html": "16a5e5fa164eba823b322f94548957bce3a92131542220ecdd9f9ce302773db0",
+  "chapters/N18/N18_c.html": "cc90129b56c00a29277f083cac3ae6fae801b41cbe48040e1c67385eb7bb43ee",
+  "chapters/N18/N18_d.html": "f317270b1d3f6bdfe0b2b768699fed890bc25624e096b935fda7ae102aaf88c6",
+  "chapters/N18/N18_pop1.html": "a1b7fadb418ef3ff4db1e82dddc3d51ea20d553f0f0479702b1cc45c6fb7f6e9",
+  "chapters/N18/N18_pop2.html": "06b0ae573ba1fc9bcc7ae20cad63903e999ffbecd7f948ee77512ebaf3e7e218",
+  "glossary/n18.py": "bbc7be298bc54c4474ef226ea7dda4d09623c6c458e905318e7411a09d3a6a73"
+ },
+ "empreintes_apres": {
+  "chapters/N18/N18_a.html": "c2f092d6df8afe0ee3cd678f2f24f5b1db72a491e65f41a4e9fd94550157641c",
+  "chapters/N18/N18_b.html": "7fe1bb8fc76803dd5c46131b82ee66b0e01340359c059627a139434123b14c58",
+  "chapters/N18/N18_c.html": "9acfe0e2ccb196e11bb8e050e85f35287303100f3e1735db52247bb1a9f7420c",
+  "chapters/N18/N18_d.html": "576cf45799a506cca200ef43515568efe573d2343727ca676606aade80b68608",
+  "chapters/N18/N18_pop1.html": "b30835f4d60e5fdbb660de0063b6ec231996aeaefbf055b8ec9438d9b9a1e950",
+  "chapters/N18/N18_pop2.html": "4a951954ba0e624934c5c12efdebbb43edbdcc6e5d2c8d538a8d5f84c9c63a89",
+  "glossary/n18.py": "a602c562a469088832b519fa5d0894b80d88e399c74fdc6312b062831b96696c"
+ },
+ "sources": {
+  "KDIGO2024": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf (consulté le 15.10.2026, texte intégral extrait)",
+  "SSN2025": "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf (citation du rapport MED, S2)",
+  "SSED2024": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/62_Empfehlungen_Hausarzt/2023_Broschuere_Diabetic_Kidney_Disease_F.pdf (consulté le 15.10.2026, grille G×A et figure 2 relues)",
+  "FI_Jardiance": "https://amiko.oddb.org/fr/fi?gtin=7680632270014 (mise à jour juillet 2025, relue le 15.10.2026 via tools/swissmedic_fi.py)",
+  "FI_Aprovel": "https://amiko.oddb.org/fr/fi?gtin=7680542501185 (mise à jour avril 2025, relue le 15.10.2026)",
+  "FI_Ramipril": "https://amiko.oddb.org/fr/fi?gtin=7680581590171 (mise à jour décembre 2021, relue le 15.10.2026)",
+  "FI_Glucophage": "https://amiko.oddb.org/fr/fi?gtin=7680260610169 (mise à jour octobre 2025, relue le 15.10.2026)",
+  "FI_Aranesp": "https://amiko.oddb.org/fr/fi?gtin=7680557250047 (mise à jour décembre 2022, relue le 15.10.2026)",
+  "FI_Forxiga": "https://amiko.oddb.org/fr/fi?gtin=7680651760015 (citation du rapport MED, S9 ; règle déjà présente en N18-C0284)",
+  "KDIGO2026_ES": "https://kdigo.org/wp-content/uploads/2026/01/KDIGO-2026-Anemia-in-CKD-Guideline-Executive-Summary.pdf (consulté le 15.10.2026)",
+  "OFSP2026": "https://www.bag.admin.ch/dam/fr/sd-web/Oj0BSN-w-Ggs/Plan%20de%20vaccination%20suisse_2026_FR_Web_final.pdf (état février 2026, consulté le 15.10.2026)",
+  "HUG2017": "https://www.hug.ch/sites/interhug/files/structures/medecine_de_premier_recours/Strategies/strategie_maladie_renale_chronique.pdf (consulté le 15.10.2026)",
+  "Hansen2016": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/ (consulté le 15.10.2026)"
+ },
+ "corrections_med": [
+  {
+   "id": "MED-01",
+   "gravite": "MAJEUR",
+   "constat": "Ramipril Zentiva pris comme bloqueur de référence avec 5 mg/j, hors indication rénale FI pour M. L. ; principe de dose maximale tolérée et autorisée absent ; Aprovel absent.",
+   "action": "Première phrase de N18-C0283 précisée (seule indication rénale : néphropathie glomérulaire > 3 g/j) ; insertion N18-C2003, N18-C2004 et encadré N18-C2005 (indication hypertension pour M. L., dose initiale 1,25 mg en clairance 20–50, SSN « dose maximale tolérée et autorisée », KDIGO PP 3.6.1, Aprovel 300 mg sans adaptation rénale) ; phrase ajoutée au cas M. L. en N18-C0306.",
+   "fichier": "chapters/N18/N18_d.html",
+   "ancres": [
+    "N18-C0283",
+    "N18-C2003",
+    "N18-C2004",
+    "N18-C2005",
+    "N18-C0306"
+   ],
+   "sources": [
+    "FI_Ramipril",
+    "FI_Aprovel",
+    "SSN2025",
+    "KDIGO2024"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "MED-02",
+   "gravite": "MAJEUR",
+   "constat": "DFGe 20–24 sans option SGLT2 conforme : Jardiance absente.",
+   "action": "Insertion N18-C2001 (FI Jardiance : pas d’instauration < 20 ; SSED/SSN : instauration jusqu’à 20 ou 25, poursuite jusqu’à la dialyse ; Forxiga arrêt avant dialyse) et N18-C2002 (exemple chiffré) ; reformulation de N18-C0120, N18-C0785 et N18-C0821 (« Forxiga … 25, Jardiance pas au-dessous de 20 »).",
+   "fichier": "chapters/N18/N18_b.html ; chapters/N18/N18_pop2.html",
+   "ancres": [
+    "N18-C2001",
+    "N18-C2002",
+    "N18-C0120",
+    "N18-C0785",
+    "N18-C0821"
+   ],
+   "sources": [
+    "FI_Jardiance",
+    "SSED2024",
+    "SSN2025",
+    "FI_Forxiga"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "MED-03",
+   "gravite": "MINEUR",
+   "constat": "Valeurs SSN 2025 appelées « repères » au lieu d’« objectifs ».",
+   "action": "N18-C0126 réécrit d’après la proposition N18_b_6 (citation exacte, puis résolution KDIGO 2026 conservée) ; N18-C0468 : « objectifs » et unité ng/mL.",
+   "fichier": "chapters/N18/N18_b.html ; chapters/N18/N18_pop1.html",
+   "ancres": [
+    "N18-C0126",
+    "N18-C0468"
+   ],
+   "sources": [
+    "SSN2025",
+    "KDIGO2026_ES"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "MED-04",
+   "gravite": "ENRICHISSEMENT",
+   "constat": "Adaptation de la metformine au DFGe absente.",
+   "action": "Insertion en fin de A07 partie 5 : N18-C2008, N18-C2009, encadré N18-C2010 (paliers FI Glucophage, contrôles, contre-indication < 30, produit de contraste 48 h ; prudence SSED/SSN 30–45).",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancres": [
+    "N18-C2008",
+    "N18-C2009",
+    "N18-C2010"
+   ],
+   "sources": [
+    "FI_Glucophage",
+    "SSED2024"
+   ],
+   "statut": "integre"
+  },
+  {
+   "id": "MED-05",
+   "gravite": "ENRICHISSEMENT",
+   "constat": "Vaccinations absentes.",
+   "action": "Insertion en fin de A11 partie 1 : N18-C2014, N18-C2015 (grippe, COVID-19 si DFG < 60, pneumocoques dès stade 4 ou syndrome néphrotique, hépatite B 40 µg chez le dialysé).",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancres": [
+    "N18-C2014",
+    "N18-C2015"
+   ],
+   "sources": [
+    "OFSP2026"
+   ],
+   "statut": "integre"
+  },
+  {
+   "id": "MED-06",
+   "gravite": "ENRICHISSEMENT",
+   "constat": "Hyperuricémie et goutte absentes.",
+   "action": "Insertion en fin de A08 partie 3 : N18-C2012, N18-C2013 (KDIGO 3.14.1, 3.14.2, PP 3.14.1–3.14.3 ; 9 mg/dL = 535 µmol/L).",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancres": [
+    "N18-C2012",
+    "N18-C2013"
+   ],
+   "sources": [
+    "KDIGO2024"
+   ],
+   "statut": "integre"
+  },
+  {
+   "id": "MED-07",
+   "gravite": "ENRICHISSEMENT",
+   "constat": "Poursuite de l’IEC ou du sartan sous 30 non énoncée.",
+   "action": "Insertion N18-C2011 après N18-C0118 (PP 3.6.7 et 3.6.5).",
+   "fichier": "chapters/N18/N18_b.html",
+   "ancres": [
+    "N18-C2011"
+   ],
+   "sources": [
+    "KDIGO2024"
+   ],
+   "statut": "integre"
+  },
+  {
+   "id": "MED-08",
+   "gravite": "ENRICHISSEMENT",
+   "constat": "Seuil d’instauration de l’agent stimulant, vitesse de hausse et carence martiale profonde sans anémie absents.",
+   "action": "Insertion N18-C2006, N18-C2007 dans la fenêtre n18-fer-criteres après N18-C0468 (KDIGO 2026 : 85–100 g/L, ≤ 115 g/L, ≈ 10 g/L/2 semaines, réduction 25–50 % ; FI Aranesp : > 20 g/L en 4 semaines → −25 % ; ferritine < 30 et TSAT < 20 %).",
+   "fichier": "chapters/N18/N18_pop1.html",
+   "ancres": [
+    "N18-C2006",
+    "N18-C2007"
+   ],
+   "sources": [
+    "KDIGO2026_ES",
+    "FI_Aranesp"
+   ],
+   "statut": "integre"
+  },
+  {
+   "id": "MED-09",
+   "gravite": "MINEUR",
+   "constat": "Figure 1 : G1–G2 A3 = 2 contrôles/an contre 3 selon KDIGO 2024.",
+   "action": "Phrase ajoutée à la légende N18-C0080 (valeur KDIGO 2024 figure 13 = 3, vérifiée dans le texte extrait).",
+   "fichier": "chapters/N18/N18_a.html",
+   "ancres": [
+    "N18-C0080"
+   ],
+   "sources": [
+    "KDIGO2024"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "MED-10",
+   "gravite": "MINEUR",
+   "constat": "Figure 2 décrite comme algorithme de parcours alors qu’elle liste des conseils australiens.",
+   "action": "N18-C0104, attribut alt et légende N18-C0106 réécrits pour décrire exactement l’image (titre publié « Tips for improving the detection and management of CKD in primary care ») ; figure conservée, remplacement éventuel laissé à l’Agent P (phase 2).",
+   "fichier": "chapters/N18/N18_a.html",
+   "ancres": [
+    "N18-C0104",
+    "N18-C0106"
+   ],
+   "sources": [
+    "Robson 2024, PMC11179444 (rapport MED, S27)"
+   ],
+   "statut": "corrige"
+  }
+ ],
+ "renvois_medicaux_lang": [
+  {
+   "id": "N18-LANG-R01",
+   "question": "Latéralité « le droit souvent un peu plus que le gauche ».",
+   "decision": "Conforme à la source : Hansen 2016 écrit « the right kidney is often slightly longer than the left kidney ». Texte inchangé.",
+   "ancre": "N18-C0925",
+   "sources": [
+    "Hansen2016"
+   ],
+   "statut": "maintenu_verifie"
+  },
+  {
+   "id": "N18-LANG-R02",
+   "question": "Zone 50–60 % d’albumine non couverte.",
+   "decision": "Les deux seuils (> 60 % glomérulaire, < 50 % tubulaire ou de surcharge) sont ceux du document HUG 2017, qui ne classe pas la zone intermédiaire ; phrase ajoutée : « Le document ne classe pas la zone comprise entre 50 et 60 %. »",
+   "ancre": "N18-C1039",
+   "sources": [
+    "HUG2017"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "N18-LANG-R03",
+   "question": "« le jour même » et « le délai compte en jours ».",
+   "decision": "Les quatre premières lignes du tableau reprennent les urgences néphrologiques HUG (« informer en urgence le néphrologue de garde ») ; justification réécrite en ce sens.",
+   "ancre": "N18-C0957",
+   "sources": [
+    "HUG2017"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "N18-LANG-R04",
+   "question": "« accumulation change » : de quoi, dans quel sens ?",
+   "decision": "Réécrit : « accumulation des médicaments éliminés par le rein augmente » (mécanisme énoncé par la FI Glucophage : insuffisance rénale → accumulation de metformine).",
+   "ancre": "N18-C0304",
+   "sources": [
+    "FI_Glucophage",
+    "FI_Forxiga"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "N18-LANG-R05",
+   "question": "Cellule Aranesp « jusqu’à stabilité, pression et fer ».",
+   "decision": "Réécrit d’après la FI Aranesp : hémoglobine chaque semaine ou toutes les deux semaines jusqu’à stabilisation ; pression artérielle, surtout au début ; statut martial avant et pendant le traitement.",
+   "ancre": "N18-C0301",
+   "sources": [
+    "FI_Aranesp"
+   ],
+   "statut": "corrige"
+  },
+  {
+   "id": "N18-LANG-R06",
+   "question": "« Traiter et orienter » et « Traiter et référer ».",
+   "decision": "Libellés littéraux de la grille SSED/SSN (G1–G2 A3 = « Traiter et orienter », autres cases = « Traiter et référer »), sans définition de la différence dans la source ; libellés conservés et phrase explicative ajoutée en N18-C1048. KDIGO 2024 figure 13 ne porte pas ces mentions.",
+   "ancre": "N18-C1048",
+   "sources": [
+    "SSED2024",
+    "KDIGO2024"
+   ],
+   "statut": "corrige"
+  }
+ ],
+ "propositions_lang": {
+  "total": 337,
+  "decompte": {
+   "applique": 294,
+   "applique_sans_espace_insecable": 37,
+   "renvoi_medical": 6
+  },
+  "regle": "Chaque « ancien » vérifié unique au moment de l’application, décompte des balises conservé ; espaces insécables U+00A0 des « nouveau » remplacées par des espaces ordinaires (choix éditorial global différé).",
+  "detail": [
+   {
+    "id": "N18-LANG-0001",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0002",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0003",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0004",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0005",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0006",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0007",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0008",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0009",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0010",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0011",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0012",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0013",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0014",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0015",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0016",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0017",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0018",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0019",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0020",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0021",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0022",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0023",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0024",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0025",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0026",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0027",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0028",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0029",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0030",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0031",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0032",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0033",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0034",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0035",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0036",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0037",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0038",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0039",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0040",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0041",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0042",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0043",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0044",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0045",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0046",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0047",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0048",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0049",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0050",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0051",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0052",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0053",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0054",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0055",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0056",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0057",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0058",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0059",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0060",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0061",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0062",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0063",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0064",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0065",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0066",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0067",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0068",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0069",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0070",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0071",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0072",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0073",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0074",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0075",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0076",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0077",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0078",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0079",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0080",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0081",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0082",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0083",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0084",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0085",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0086",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0087",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0088",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0089",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0090",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0091",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0092",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0093",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0094",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0095",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0096",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0097",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0098",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0099",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0100",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0101",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0102",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0103",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0104",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0105",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0106",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0107",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0108",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0109",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0110",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0111",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0112",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0113",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0114",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0115",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0116",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0117",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0118",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0119",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0120",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0121",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0122",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0123",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0124",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0125",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0126",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0127",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0128",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0129",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0130",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0131",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0132",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0133",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0134",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0135",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0136",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0137",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0138",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0139",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0140",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0141",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0142",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0143",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0144",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0145",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0146",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0147",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0148",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0149",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0150",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0151",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0152",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0153",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0154",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0155",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0156",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0157",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0158",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0159",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0160",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0161",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0162",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0163",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0164",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0165",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0166",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0167",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0168",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0169",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0170",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0171",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0172",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0173",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0174",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0175",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0176",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0177",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0178",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0179",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0180",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0181",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0182",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0183",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0184",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0185",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0186",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0187",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0188",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0189",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0190",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0191",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0192",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0193",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0194",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0195",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0196",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0197",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0198",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0199",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0200",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0201",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0202",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0203",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0204",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0205",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0206",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0207",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0208",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0209",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0210",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0211",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0212",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0213",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0214",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0215",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0216",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0217",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0218",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0219",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0220",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0221",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0222",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0223",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0224",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0225",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0226",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0227",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0228",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0229",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0230",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0231",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0232",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0233",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0234",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0235",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0236",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0237",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0238",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0239",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0240",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0241",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0242",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0243",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0244",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0245",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0246",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0247",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0248",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0249",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0250",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0251",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0252",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0253",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0254",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0255",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0256",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0257",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0258",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0259",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0260",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0261",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0262",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0263",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0264",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0265",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0266",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0267",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0268",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0269",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0270",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0271",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0272",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0273",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0274",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0275",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0276",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0277",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0278",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0279",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0280",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0281",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0282",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0283",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0284",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0285",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0286",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0287",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0288",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0289",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0290",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0291",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0292",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0293",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0294",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0295",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0296",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0297",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0298",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0299",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0300",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0301",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0302",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0303",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0304",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0305",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0306",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0307",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0308",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0309",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0310",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0311",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0312",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0313",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0314",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0315",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0316",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0317",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0318",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0319",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0320",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0321",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0322",
+    "statut": "applique_sans_espace_insecable"
+   },
+   {
+    "id": "N18-LANG-0323",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0324",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0325",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0326",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0327",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0328",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0329",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0330",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-0331",
+    "statut": "applique"
+   },
+   {
+    "id": "N18-LANG-R01",
+    "statut": "renvoi_medical"
+   },
+   {
+    "id": "N18-LANG-R02",
+    "statut": "renvoi_medical"
+   },
+   {
+    "id": "N18-LANG-R03",
+    "statut": "renvoi_medical"
+   },
+   {
+    "id": "N18-LANG-R04",
+    "statut": "renvoi_medical"
+   },
+   {
+    "id": "N18-LANG-R05",
+    "statut": "renvoi_medical"
+   },
+   {
+    "id": "N18-LANG-R06",
+    "statut": "renvoi_medical"
+   }
+  ]
+ },
+ "constats_lang_sans_proposition": [
+  {
+   "id": "K01",
+   "constat": "15 sigles sans clé dans glossary/n18.py (SSED, HUG, MAPA, LDL, IMC, ECG, ESH, ESC, FLOW, IRM, FIDELIO-DKD, FGF23, ATP, CRP, CYP2C8).",
+   "action": "Vérifié : les 15 clés existent dans le glossaire commun chargé globalement et build_medina.audit() rend {} pour les six fichiers N18. Les redéfinir dans n18.py écraserait, par l’ordre de chargement (dernier fichier lu prioritaire), la définition vue par d’autres systèmes en lecture seule ; elles sont déclarées dans n18.py (SIGLES_PARTAGES) comme dépendances partagées. Nouvelle clé propre ajoutée : EMPA-KIDNEY (introduite par MED-02). Contrôle : le glossaire fusionné ne diffère de la base que par EMPA-KIDNEY.",
+   "statut": "traite_sans_redefinition"
+  },
+  {
+   "id": "K02",
+   "constat": "Textes dupliqués (Ganzoni/Venofer ; encadrés pop2).",
+   "action": "Corrections LANG appliquées aux deux exemplaires ; déduplication structurelle non faite en phase 1.",
+   "statut": "partiel"
+  },
+  {
+   "id": "K03-K09",
+   "constat": "Introductions de tableaux, renvois-boutons, infinitifs en cellules, phrases longues, unités g/dL et g/L, variantes terminologiques.",
+   "action": "Non traités hors propositions locales ; à revoir en phase 2 si la revue P le demande.",
+   "statut": "differe"
+  },
+  {
+   "id": "K10",
+   "constat": "Absence de correcteur orthographique.",
+   "action": "Aucun correcteur disponible ; non traité.",
+   "statut": "lacune"
+  }
+ ],
+ "choix_differes": [
+  "Espaces insécables globales (règles T1–T5 et 37 propositions locales appliquées sans U+00A0)",
+  "« fibrillation atriale/auriculaire » (aucune modification)",
+  "Groupe LIENS d’E11 (hors N18)",
+  "Règles typographiques T6–T10 (non appliquées)"
+ ],
+ "controles": {
+  "build_medina.audit": "{} pour chapters/N18/*.html",
+  "test_v7_static": "python3 test_v7.py --static N18 → OK (mots 47843, fenêtres 111, quiz 4, pareto 21)",
+  "audit_sciences": "non applicable : tests/audit_sciences.py exige une référence de comparaison historique qui ne contient pas chapters/N18/N18_c.html ; onglet Sciences non modifié sur le fond en phase 1"
+ },
+ "hors_phase_1": [
+  "Sous-onglet sémiologie, bloc clinique pA, figures validées (phase 2, après prep/READY.json)",
+  "Reçu Alpha (phase 3)"
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine. Aucune validation médicale humaine n’est revendiquée."
+}

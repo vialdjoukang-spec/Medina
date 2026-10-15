@@ -1,0 +1,1234 @@
+{
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "code": "D50",
+ "lecon": "D50 — Anémie par carence en fer (S06, Hématologie)",
+ "phase": "1 — corrections d’après les audits ALPHA1-CLAUDE-D50-MED et ALPHA1-CLAUDE-D50-LANG",
+ "agent": "Agent W (rédacteur et intégrateur, seul auteur de chapters/D50/ et glossary/d50.py)",
+ "branche": "claude/alpha77/d50-integrate-g1",
+ "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
+ "date": "2026-10-15",
+ "audits_sources": [
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-D50-MED/rapport.json",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-D50-LANG/propositions.json"
+ ],
+ "verification_ancrage": "Fichiers D50 identiques entre la base des audits (f664dd9e) et la base de mission ; chaque « ancien » LANG et chaque ancre MED vérifiés uniques au moment de l’application (scripts d’application avec contrôle count == 1).",
+ "sources_relues_par_W": [
+  "BSG 2021, texte intégral Europe PMC",
+  "Onkopedia avril 2025, texte intégral",
+  "ESC 2026, support officiel, pages 39 et 91",
+  "OMS 2024, PDF IRIS, tableaux 2 et 5",
+  "BSG/ACPGBI 2025, clarification FIT, PDF",
+  "Hoving et al. 2025, texte intégral Europe PMC",
+  "Novacek 2006, texte intégral Europe PMC",
+  "CIM-10-GM 2024, bloc D50–D53, BfArM",
+  "FI suisses Tardyferon®, ferro sanol®, Ferrum Hausmann® (AmiKo)"
+ ],
+ "med": [
+  {
+   "constat": "MED-M1 (MAJEUR) — divergence BSG/Onkopedia sur l’éradication d’Helicobacter pylori absente",
+   "action": "Ajout d’un paragraphe « Divergence et décision » et réécriture de l’encadré « Conséquence » : pas de biopsies systématiques pour la seule recherche de l’infection, éradication d’une infection démontrée en plus du fer ; référence Onkopedia § 4.1 ajoutée.",
+   "fichier": "chapters/D50/D50_pop1.html",
+   "ancre": "template d50-gastrite",
+   "sources": [
+    "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026), section Helicobacter / gastric biopsies",
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025 (texte intégral lu le 15.10.2026), § 4.1 Kausale Therapie"
+   ],
+   "proposition_audit": "propositions/D50_pop1_1.html (adaptée : citations [Sx] converties au format p.src du cours ; « ne se justifient pas » ramené à la formulation de la BSG, qui met en doute le coût des biopsies systématiques)"
+  },
+  {
+   "constat": "MED-M2 (MAJEUR) — dépistage ESC 2026 (TSAT et ferritine, I C) et classes du fer intraveineux absents",
+   "action": "Colonne « Classe et niveau » (I, B ; IIa, B) ajoutée au tableau existant, sans tableau dupliqué ; nouveau paragraphe « Rechercher la carence chez tout patient suspect » (I C, page 39 ; 40 à 70 % selon la BSG, définition ferritine < 100 µg/L ou TSAT < 20 %) ; ligne Insuffisance cardiaque de d50-divergences-suisses complétée ; références pages 39 et 91.",
+   "fichier": "chapters/D50/D50_pop1.html",
+   "ancre": "templates d50-ic et d50-divergences-suisses",
+   "sources": [
+    "ESC 2026, support officiel de diapositives, doi 10.1093/eurheartj/ehag100, pages 39 et 91 (PDF lu le 15.10.2026)",
+    "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026), Chronic heart failure"
+   ],
+   "proposition_audit": "propositions/D50_pop1_2.html (adaptée)"
+  },
+  {
+   "constat": "MED-M3 (MAJEUR) — seuil de ferritine de 45 µg/L de la BSG absent",
+   "action": "Ligne « Adulte anémique, décision d’exploration digestive, < 45 » insérée avant la ligne BSG > 150 ; paragraphe explicatif avec exemple chiffré (ferritine 38 µg/L sous polyarthrite rhumatoïde).",
+   "fichier": "chapters/D50/D50_pop1.html",
+   "ancre": "template d50-ferritine",
+   "sources": [
+    "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026), Definitions — serum ferritin (« A cut-off of 45 µg/L provides a respectable specificity of 0.92 »)"
+   ],
+   "proposition_audit": "propositions/D50_pop1_3.html (exemple reformulé : « dépasse le seuil de 30 µg/L » au lieu de « n’atteint pas », ambigu)"
+  },
+  {
+   "constat": "MED-M4 (MAJEUR) — figure 3, frottis SVG dessiné, figure anatomique générée non recevable",
+   "action": "Figure SVG 3 et sa légende supprimées ; phrase de transition réécrite (« Le frottis réel ci-dessous montre ces anomalies… ») ; la Micrographie 1 réelle (Ed Uthman, CC BY 2.0) est conservée ; le paragraphe qui la suit décrit déjà sans dessin la microcytose, l’hypochromie et les formes allongées (Onkopedia). La micrographie réelle de frottis normal relève de l’Agent P (phase 2).",
+   "fichier": "chapters/D50/D50_c.html",
+   "ancre": "d50-s-histo, ancien aria-label « Frottis schématique normal puis microcytaire et hypochrome »",
+   "sources": [
+    "docs/collaboration/instructions/FIGURES_ANATOMIQUES_IA_2026-10-15.md (classe ANATOMIQUE_IA)"
+   ]
+  },
+  {
+   "constat": "MED-m1 (MINEUR) — indication obstétricale du fer IV dans l’encadré des signes d’urgence",
+   "action": "Phrase retirée du div.alert et replacée dans le paragraphe des conséquences de la grossesse : Hb < 90 g/L ne signe pas à elle seule une urgence ; elle indique, à partir du deuxième trimestre, le fer intraveineux programmé.",
+   "fichier": "chapters/D50/D50_b.html",
+   "ancre": "îlot d50-8",
+   "sources": [
+    "Gynécologie suisse, avis d’experts n° 77, 2022 (citation de l’audit MED)"
+   ]
+  },
+  {
+   "constat": "MED-m2 (MINEUR) — toxicité du fer incomplète",
+   "action": "Seuils 20 mg/kg (début), 60 mg/kg (risque fortement accru) et 400 mg de Fe2+ chez le jeune enfant, soit cinq comprimés de Tardyferon® à 80 mg ; référence FI Tardyferon® ajoutée.",
+   "fichier": "chapters/D50/D50_b.html",
+   "ancre": "îlot d50-8",
+   "sources": [
+    "Information professionnelle suisse Tardyferon®, mise à jour juillet 2025, rubrique Surdosage (AmiKo, lue le 15.10.2026 via tools/swissmedic_fi.py)"
+   ]
+  },
+  {
+   "constat": "MED-m3 (MINEUR) — « relève l’hémoglobine en une semaine » exagéré",
+   "action": "« produit en une semaine une hausse cliniquement significative de l’hémoglobine, qui n’est pas encore une correction ».",
+   "fichier": "chapters/D50/D50_pop1.html",
+   "ancre": "template d50-transfusion",
+   "sources": [
+    "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026), Blood transfusion (« clinically meaningful Hb response with[in] a week »)"
+   ]
+  },
+  {
+   "constat": "MED-m4 (MINEUR) — cas récapitulatif sans situer la coloscopie par rapport au fer oral",
+   "action": "Coloscopie programmée à trois semaines ; fer commencé dès le diagnostic puis suspendu avant la préparation colique (cohérence avec la règle des deux semaines de l’îlot 9).",
+   "fichier": "chapters/D50/D50_b.html",
+   "ancre": "îlot d50-13, Cas récapitulatif",
+   "sources": [
+    "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026), Oral IRT (« usual practice to pause these prior to bowel preparation »)"
+   ]
+  },
+  {
+   "constat": "MED-m5 (MINEUR) — prévalences 2–5 % et 5–12 % attribuées à Clénin",
+   "action": "Phrase rattachée explicitement à la BSG 2021 (pays industrialisés).",
+   "fichier": "chapters/D50/D50_a.html",
+   "ancre": "îlot d50-2",
+   "sources": [
+    "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026), Introduction ; Young women"
+   ]
+  },
+  {
+   "constat": "MED-E1 (ENRICHISSEMENT) — périmètre CIM-10-GM et sous-codes absents",
+   "action": "Un paragraphe de périmètre, sans îlot ni tableau dédié : E61.1, D50, D62 exclu, D50.0, D50.1, D50.8, D50.9 ; référence BfArM ajoutée ; clés de glossaire E61.1, D50.0, D50.1, D50.8, D50.9 créées dans glossary/d50.py (exigées par l’audit des abréviations).",
+   "fichier": "chapters/D50/D50_a.html ; glossary/d50.py",
+   "ancre": "îlot d50-1",
+   "sources": [
+    "CIM-10-GM 2024, bloc D50–D53, BfArM (page lue le 15.10.2026)"
+   ]
+  },
+  {
+   "constat": "MED-E2 (ENRICHISSEMENT) — syndrome de Plummer et Vinson traité en une phrase",
+   "action": "Phrase d’annonce dans le paragraphe des signes, puis sous-partie « Syndrome de Plummer et Vinson » après le commentaire de la photographie : triade, D50.1, clinique, imagerie, fer puis rupture et dilatation, risque de carcinome épidermoïde, suivi rapproché. La proposition « toute dysphagie nouvelle fait refaire l’endoscopie » n’a pas été reprise faute de formulation explicite dans la source.",
+   "fichier": "chapters/D50/D50_pop1.html",
+   "ancre": "template d50-phaneres",
+   "sources": [
+    "Novacek, Orphanet J Rare Dis 2006;1:36, doi 10.1186/1750-1172-1-36 (texte intégral Europe PMC lu le 15.10.2026)",
+    "CIM-10-GM 2024, D50.1"
+   ]
+  },
+  {
+   "constat": "MED-E3 (ENRICHISSEMENT) — hyperménorrhée non chiffrée",
+   "action": "Paragraphe chiffré : 50 mL ≈ 25 mg de fer par mois, > 60 mL associé à la carence, hyperménorrhée > 80 mL chez environ 15 % des femmes, difficulté d’estimation, durée et protections hygiéniques comme repères ; 80 mL ≈ 40 mg de fer (calcul 0,5 mg/mL déjà enseigné dans d50-fer-sang). La comparaison de la proposition avec l’absorption intestinale a été retirée, car elle n’est pas énoncée ainsi par la source.",
+   "fichier": "chapters/D50/D50_pop1.html",
+   "ancre": "template d50-menorragies",
+   "sources": [
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025 (texte intégral lu le 15.10.2026), § 2.4 Ursachen"
+   ]
+  },
+  {
+   "constat": "MED-E4 (ENRICHISSEMENT) — dons de sang non quantifiés",
+   "action": "Sous-partie « Le don de sang » dans la fenêtre d50-fer-sang (déjà référencée Onkopedia § 2.4) : 500 mL ≈ 250 mg de fer ; règles suisses des donneurs déclarées non reprises (lacune). Les limites annuelles citées par Onkopedia relèvent de la loi allemande et n’ont pas été transposées.",
+   "fichier": "chapters/D50/D50_pop1.html",
+   "ancre": "template d50-fer-sang",
+   "sources": [
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025 (texte intégral lu le 15.10.2026), § 2.4"
+   ]
+  },
+  {
+   "constat": "MED-E5 (ENRICHISSEMENT) — épidémiologie européenne et pédiatrie",
+   "action": "Îlot 2 : prévalence européenne 5–10 %, femmes en âge de procréer ~20 %, adolescents 13–15 ans 4–8 % surtout réserves vides (Onkopedia ajouté aux références). Îlot 13 : seuils OMS 115 g/L (5–11 ans) et 120 g/L (12–14 ans), période 6–24 mois, lait de vache, séquelles parfois irréversibles (OMS 2024 et Onkopedia ajoutés aux références).",
+   "fichier": "chapters/D50/D50_a.html ; chapters/D50/D50_b.html",
+   "ancre": "îlots d50-2 et d50-13",
+   "sources": [
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025 (texte intégral lu le 15.10.2026), § 2.2, 2.4, 2.5",
+    "OMS 2024, Guideline on haemoglobin cutoffs, tableau 2 (PDF lu le 15.10.2026)"
+   ]
+  }
+ ],
+ "lang": {
+  "propositions_locales": 164,
+  "appliquees": 162,
+  "adaptations": [
+   {
+    "id": "LANG-074",
+    "raison": "Le remplacement proposé laissait « utérine Le carboxymaltose » sans ponctuation ; appliqué sous la forme « utérine. Le carboxymaltose a obtenu »."
+   }
+  ],
+  "non_appliquees": [
+   {
+    "id": "LANG-051",
+    "statut": "non_applique",
+    "raison": "Légende de la figure SVG 3 (frottis dessiné) supprimée par MED-M4"
+   },
+   {
+    "id": "LANG-052",
+    "statut": "non_applique",
+    "raison": "Après suppression de la figure 3 (MED-M4), la figure TMPRSS6 garde le numéro 4 dans la nouvelle séquence 1 à 4"
+   }
+  ],
+  "detail": [
+   {
+    "id": "LANG-001",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-002",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-003",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-004",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-005",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-006",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-007",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-008",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-009",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-010",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_a.html"
+   },
+   {
+    "id": "LANG-011",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-012",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-013",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-014",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-015",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-016",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-017",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-018",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-019",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-020",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-021",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-022",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-023",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-024",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-025",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-026",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-027",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-028",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-029",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-030",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-031",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-032",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-033",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-034",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-035",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-036",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-037",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-038",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-039",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-040",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-041",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-042",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_b.html"
+   },
+   {
+    "id": "LANG-043",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-044",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-045",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-046",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-047",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-048",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-049",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-050",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-051",
+    "statut": "non_applique",
+    "raison": "Légende de la figure SVG 3 (frottis dessiné) supprimée par MED-M4"
+   },
+   {
+    "id": "LANG-052",
+    "statut": "non_applique",
+    "raison": "Après suppression de la figure 3 (MED-M4), la figure TMPRSS6 garde le numéro 4 dans la nouvelle séquence 1 à 4"
+   },
+   {
+    "id": "LANG-053",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_c.html"
+   },
+   {
+    "id": "LANG-054",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-055",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-056",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-057",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-058",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-059",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-060",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-061",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-062",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-063",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-064",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_d.html"
+   },
+   {
+    "id": "LANG-065",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-066",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-067",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-068",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-069",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-070",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-071",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-072",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-073",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-074",
+    "statut": "applique_adapte",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-075",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-076",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-077",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-078",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-079",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-080",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-081",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-082",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-083",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-084",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-085",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-086",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-087",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-088",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-089",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-090",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-091",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-092",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-093",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-094",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-095",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-096",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-097",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-098",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-099",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-100",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-101",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-102",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-103",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-104",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-105",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-106",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-107",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-108",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-109",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-110",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-111",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-112",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-113",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-114",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-115",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-116",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-117",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-118",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-119",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-120",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-121",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-122",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-123",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-124",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-125",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-126",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-127",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-128",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-129",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-130",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-131",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-132",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-133",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-134",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-135",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-136",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-137",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-138",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-139",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-140",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-141",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop1.html"
+   },
+   {
+    "id": "LANG-142",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-143",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-144",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-145",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-146",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-147",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-148",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-149",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-150",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-151",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-152",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-153",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-154",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-155",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-156",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-157",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-158",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-159",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-160",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-161",
+    "statut": "applique",
+    "fichier": "chapters/D50/D50_pop2.html"
+   },
+   {
+    "id": "LANG-162",
+    "statut": "applique",
+    "fichier": "glossary/d50.py"
+   },
+   {
+    "id": "LANG-163",
+    "statut": "applique",
+    "fichier": "glossary/d50.py"
+   },
+   {
+    "id": "LANG-164",
+    "statut": "applique",
+    "fichier": "glossary/d50.py"
+   }
+  ]
+ },
+ "renvois_medicaux_LANG": [
+  {
+   "id": "RENVOI-01/02",
+   "decision": "« œso-gastrique » → « œsogastrique » (2 occurrences)",
+   "source": "Wiktionnaire : entrée « œsogastrique » présente, « œso-gastrique » absente (vérifié le 15.10.2026)"
+  },
+  {
+   "id": "RENVOI-03",
+   "decision": "Non modifié : la table 5 de l’OMS 2024 écrit elle-même « <10 », « 10–19 », « >20 » ; le cours reproduit fidèlement la source.",
+   "source": "OMS 2024, tableau 5 (PDF lu)"
+  },
+  {
+   "id": "RENVOI-04",
+   "decision": "« La sensibilité de la sérologie baisse avec l’âge ; chez les patients cœliaques révélés par une anémie ferriprive, elle peut descendre à 74 %. »",
+   "source": "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026) (« can be as low as 74% in coeliacs presenting with IDA »)"
+  },
+  {
+   "id": "RENVOI-05",
+   "decision": "Unité ajoutée : « seuils de 4 à 10 µg/g ».",
+   "source": "BSG/ACPGBI, Frontline Gastroenterology 2025, flgastro-2025-103329 (« usually set at 4–10 µg/g », PDF lu)"
+  },
+  {
+   "id": "RENVOI-06",
+   "decision": "« carence persistante » → « carence martiale persistante » (fatigue après perfusion : hypophosphatémie possible plutôt que carence en fer persistante).",
+   "source": "Contexte de la fenêtre d50-hypophos et Schaefer 2021 cité par l’audit MED"
+  },
+  {
+   "id": "RENVOI-07",
+   "decision": "« mais reste au-dessus du seuil de réserves vides de 30 µg/L que l’avis suisse 2022 retient pendant la grossesse » (attribution corrigée vers l’avis de gynécologie suisse, conforme au tableau voisin).",
+   "source": "Gynécologie suisse, avis n° 77, 2022 (tableau de la même fenêtre)"
+  },
+  {
+   "id": "RENVOI-08",
+   "decision": "Dénominateur précisé dans D50_c et D50_pop1 : rendement diagnostique (proportion d’examens qui trouvent une lésion), 66,6 % dans une revue systématique.",
+   "source": "BSG 2021 (Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119, lu le 15.10.2026) (« pooled diagnostic yield of 66.6% … systematic review of CE in IDA »)"
+  },
+  {
+   "id": "RENVOI-09",
+   "decision": "« Normale basse ou haute » → « Variable : souvent à la limite inférieure de la normale, parfois plus haute après fer intraveineux ».",
+   "source": "Hoving et al., Br J Haematol 2025, PMC11985374, tableau 1 note b (texte intégral lu)"
+  },
+  {
+   "id": "RENVOI-10",
+   "decision": "Non modifié : graphie « héphæstine » non tranchée faute de dictionnaire ou de source française lue ; différé.",
+   "source": null
+  },
+  {
+   "id": "RENVOI-11",
+   "decision": "D50_pop2 : ferro sanol® « une capsule » → « une gélule », forme pharmaceutique de l’information professionnelle (« Gélule à libération modifiée ») ; Ferrum Hausmann® garde « capsule » (« Capsule à libération prolongée »).",
+   "source": "Informations professionnelles suisses ferro sanol® (avril 2021) et Ferrum Hausmann®, AmiKo via tools/swissmedic_fi.py, lues le 15.10.2026"
+  }
+ ],
+ "constats_structurels_LANG": [
+  {
+   "id": "STRUCT-01",
+   "decision": "Différé : suppression de contenu (paragraphe « Tri fécal actualisé » répété D50_b/D50_c), à arbitrer en relecture finale."
+  },
+  {
+   "id": "STRUCT-02",
+   "decision": "Différé : doublon d’encadré « Interactions importantes » (D50_d, p-3), suppression de contenu."
+  },
+  {
+   "id": "STRUCT-03",
+   "decision": "Différé : références doublées vers la même URL BSG ; sans effet sur le fond."
+  },
+  {
+   "id": "STRUCT-04",
+   "decision": "Différé : harmonisation « FI »/« information professionnelle » et « KDIGO »/nom développé, choix éditorial global."
+  },
+  {
+   "id": "STRUCT-05",
+   "decision": "Sans objet : « Patient Blood Management » ne subsiste que dans l’intitulé d’une référence (titre de section de l’avis n° 77)."
+  },
+  {
+   "id": "STRUCT-06",
+   "decision": "Corrigé : le mot vert « H1 », qui renvoyait à sa propre fenêtre d50-hypersensibilite, devient du texte simple (la clé H1 du glossaire couvre l’abréviation)."
+  },
+  {
+   "id": "STRUCT-07",
+   "decision": "Sans objet : « HC » fait partie du nom commercial Cetirizin Spirig HC ; l’audit des abréviations passe."
+  }
+ ],
+ "differes": [
+  "Espaces insécables globales (GLOBAL-01) : choix éditorial en attente, non appliqué.",
+  "« fibrillation atriale/auriculaire » et groupe LIENS d’E11 : sans objet pour D50, non appliqués.",
+  "Graphie « héphæstine » (RENVOI-10).",
+  "STRUCT-01 à STRUCT-04 (suppressions ou harmonisations éditoriales)."
+ ],
+ "controles": {
+  "test_v7_static": "python3 test_v7.py --static D50 → OK (abréviations couvertes, 89 fenêtres, classes de la liste fermée, aucun style en ligne)",
+  "build_medina_audit": "B.audit(transform(src)) via test_v7 --static → {} pour D50",
+  "audit_sciences": "python3 tests/audit_sciences.py --codes D50 → 1 erreur préexistante, inchangée : « D50/d50-s-histo: figure sans légende ou nom accessible ». Le contrôle exige un svg[role=img] dans chaque figure ; la seule figure restante de cette discipline est la Micrographie 1 réelle (img), recevable selon la règle des figures. Arbitrage requis en phase 2 (intégration des micrographies de l’Agent P)."
+ },
+ "lacunes": [
+  "Règles suisses des donneurs de sang (Transfusion CRS Suisse) non lues.",
+  "Maastricht VI/Florence 2022 non lu (HTTP 403 lors de l’audit MED).",
+  "Micrographie réelle de frottis normal : à fournir par l’Agent P (prep/figures.json)."
+ ],
+ "empreintes_sha256_apres_phase1": {
+  "chapters/D50/D50_a.html": "1bafa44bc99ea202e86badfd8a08b96974e48ee95a4a66e0d8efd1976ec9e640",
+  "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
+  "chapters/D50/D50_c.html": "e88f2a616bc0b0577d31523e9f0b969ee2d4fa2c8045dab5749492df4deb3d8e",
+  "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
+  "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
+  "chapters/D50/D50_pop2.html": "6d1ed4732ec5117574cfe2cead35b0111172310754c44a28e77c72493021b093",
+  "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f"
+ },
+ "mention": "Revue IA, distincte d’une validation médicale humaine. Aucune validation médicale humaine n’est revendiquée.",
+ "phase2_cinquieme_discipline": [
+  {
+   "constat": "MAJEUR bloquant de clôture (AGENTS.md, « Sémiologie obligatoire ») : la Sémiologie doit être le sixième sous-onglet de Sciences après cinq disciplines réelles ; D50 n’en comptait que quatre (Physiologie, Biochimie, Hématologie cellulaire, Génétique).",
+   "action": "Ajout d’une cinquième discipline « Anatomie » (portes d’entrée, réserves, lieux de perte du fer ; tableau des appareils et examens ; figure 7, schéma de décision non anatomique en SVG role=img avec aria-label et figcaption ; encadrés Science → clinique, examen, traitement, À retenir ; références). Bouton ajouté en dernière position de .sci-bar, aria-selected=false ; Sémiologie reste le premier bouton, sélectionné par défaut. Placée en dernier pour ne pas renuméroter les figures 3 à 6.",
+   "justification_choix": "L’anatomie fonctionnelle (duodénum et entérocyte, foie, rate, moelle) et la topographie des pertes digestives, utérines, urinaires et respiratoires ordonnent directement l’enquête étiologique, centrale dans D50. L’immunologie de l’hepcidine a été écartée : l’effet de l’inflammation sur l’hepcidine est déjà traité en Physiologie, Biochimie et Génétique, et une discipline supplémentaire aurait été redondante.",
+   "fichier": "chapters/D50/D50_c.html",
+   "ancre": "#d50-s-anat, #d50-s-anat-body, bouton data-s=\"d50-s-anat\"",
+   "sources": [
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025, avec SGH/SSH et SGMO (texte intégral lu le 15.10.2026) : § 2.3 (absorption duodénale et jéjunale, DCYTB, DMT-1 pH-dépendant, ferroportine, héphæstine cuivrée, transferrine hépatique, hémosidérine des macrophages de la moelle, du foie et de la rate, 1 µg/L de ferritine ≈ 10 mg de fer de réserve), § 2.4 et tableau 2 (causes par perte, besoin, absorption ; 50 mL et 25 mg par règle, > 60 mL, hyperménorrhée > 80 mL chez environ 15 %), § 3.6.2 et tableau 7 (ordre d’exploration, sang occulte négatif dans environ la moitié des cancers du côlon), § 4.1 (traitement de la cause), § 4.2.3 (captation des complexes intraveineux par le système réticulo-endothélial du foie et de la rate)",
+    "BSG 2021, Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119 (lu le 15.10.2026) : tableau 1, recommandations 6 à 8, sections Who to investigate (cancer 8–10 %), coeliac disease (3–5 %), dual pathology (1–10 %), renal tract, premenopausal women, GI surgery (environ un quart deux ans après court-circuit gastrique en Y), small bowel",
+    "Clénin, Swiss Med Wkly 2017;147:w14434, figure 1 et texte (blocage macrophagique par l’hepcidine), lu le 15.10.2026"
+   ],
+   "figure": "Figure 7 — schéma de décision original, non anatomique, aucune structure anatomique dessinée ; valeurs tirées de la BSG 2021 et d’Onkopedia 2025."
+  },
+  {
+   "constat": "La nouvelle discipline porte un bouton Pareto, comme les quatre autres.",
+   "action": "Gabarit pareto-d50-s-anat ajouté (data-cover=\"d50-s-anat-body\", section hors data-semiology) ; fraction calculée par le moteur : 104 mots sur 1107, 9 %.",
+   "fichier": "chapters/D50/D50_pop2.html",
+   "ancre": "template pareto-d50-s-anat",
+   "sources": [
+    "Onkopedia, Eisenmangel und Eisenmangelanämie, avril 2025, avec SGH/SSH et SGMO (texte intégral lu le 15.10.2026) : § 2.3 (absorption duodénale et jéjunale, DCYTB, DMT-1 pH-dépendant, ferroportine, héphæstine cuivrée, transferrine hépatique, hémosidérine des macrophages de la moelle, du foie et de la rate, 1 µg/L de ferritine ≈ 10 mg de fer de réserve), § 2.4 et tableau 2 (causes par perte, besoin, absorption ; 50 mL et 25 mg par règle, > 60 mL, hyperménorrhée > 80 mL chez environ 15 %), § 3.6.2 et tableau 7 (ordre d’exploration, sang occulte négatif dans environ la moitié des cancers du côlon), § 4.1 (traitement de la cause), § 4.2.3 (captation des complexes intraveineux par le système réticulo-endothélial du foie et de la rate)",
+    "BSG 2021, Snook et al., Gut 2021, texte intégral Europe PMC PMC8515119 (lu le 15.10.2026) : tableau 1, recommandations 6 à 8, sections Who to investigate (cancer 8–10 %), coeliac disease (3–5 %), dual pathology (1–10 %), renal tract, premenopausal women, GI surgery (environ un quart deux ans après court-circuit gastrique en Y), small bowel"
+   ]
+  },
+  {
+   "constat": "Glossaire",
+   "action": "Aucune nouvelle abréviation : termes écrits en toutes lettres (anti-inflammatoires non stéroïdiens, inhibiteur de la pompe à protons) ; sigles de références déjà couverts. glossary/d50.py inchangé ; audit d’abréviations {} pour les six fichiers D50.",
+   "fichier": "glossary/d50.py",
+   "ancre": "—",
+   "sources": []
+  }
+ ],
+ "controles_phase2_cinquieme_discipline": {
+  "build_medina.audit (6 fichiers D50)": "{} pour chacun",
+  "python3 test_v7.py --static D50": "OK (mots 45077, fenêtres 96, quiz 9, pareto 11)",
+  "python3 tests/audit_sciences.py --codes D50": "6 disciplines ; d50-s-anat 1066 mots, 1 figure, quatre encadrés ; seule erreur : d50-s-histo « figure sans légende ou nom accessible », faux positif connu de la figure à micrographies réelles (aucun SVG d’enrobage ajouté)",
+  "rendu Chromium S06 (1280 px et 390 px)": "Sémiologie sélectionnée à l’ouverture ; Anatomie s’ouvre au clic ; figure lisible ; Pareto affiché ; aucune erreur JavaScript ; pas de défilement horizontal"
+ },
+ "empreintes_sha256_apres_cinquieme_discipline": {
+  "chapters/D50/D50_c.html": "04d5b9fc232a2421e4c5ce090f55a1960f7c96181da1dd7e61a912fb1bac9406",
+  "chapters/D50/D50_pop2.html": "2ff1e769baaea5ef88e7c2dc1c3b27d26b2e0d5721d282c05d8757da3396d160"
+ },
+ "phase2_revue_P_anatomie": {
+  "revue": "commit d1cab654, revue/MED.json et revue/LANG.json (relu b07684fb)",
+  "corrections": [
+   {
+    "id": "MED-ANAT-M1",
+    "constat": "« chaque étape n’est franchie que si la précédente n’a pas trouvé de cause suffisante » contredit la recommandation 7 de la BSG",
+    "action": "Paragraphe réécrit : étapes 1 à 3 = un seul bilan initial ; hématurie ou sérologie positive ne dispensent pas des endoscopies ; double endoscopie avec biopsies duodénales jugée plus appropriée chez le sujet âgé ; seule l’étape 4 dépend des précédentes. Figure 7 refaite : étapes 1 à 3 dans un cadre pointillé « Bilan initial, réalisé en entier », flèche « si bilan négatif » vers l’étape 4 ; légende et aria-label ajustés.",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, paragraphe sous la figure 7 ; figure 7",
+    "sources": [
+     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral lu le 15.10.2026) : recommandation 7, dual pathology 1–10 %, sérologie moins sensible et bidirectional endoscopy with duodenal biopsy chez le sujet âgé, small bowel"
+    ]
+   },
+   {
+    "id": "MED-ANAT-m1",
+    "action": "Ligne Duodénum et intestin grêle : « maladie cœliaque, par malabsorption plutôt que par perte »",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, tableau",
+    "sources": [
+     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral lu le 15.10.2026) : tableau 1",
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : tableau 2"
+    ]
+   },
+   {
+    "id": "MED-ANAT-m2",
+    "action": "Maladie de Rendu-Osler ajoutée à la ligne « Tout le tube digestif »",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, tableau",
+    "sources": [
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : tableau 2 (M. Osler)"
+    ]
+   },
+   {
+    "id": "MED-ANAT-m3",
+    "action": "Phrase remplacée : gastrite atrophique, achlorhydrie, résection gastrique réduisent l’acidité ; après chirurgie bariatrique, la BSG retient surtout un apport réduit et une malabsorption (sans mécanisme de passage duodénal ni généralisation à la gastrectomie longitudinale)",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, Les portes d’entrée, second paragraphe",
+    "sources": [
+     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral lu le 15.10.2026) : GI surgery",
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : § 2.3"
+    ]
+   },
+   {
+    "id": "LANG-ANAT-1",
+    "action": "« des règles physiologiques font perdre environ 50 mL de sang, soit 25 mg de fer, par cycle » ; Pareto : « des règles physiologiques font perdre environ 25 mg de fer par cycle »",
+    "fichier": "chapters/D50/D50_c.html ; chapters/D50/D50_pop2.html",
+    "ancre": "#d50-s-anat-body ; template pareto-d50-s-anat",
+    "sources": [
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : § 2.4"
+    ]
+   },
+   {
+    "id": "LANG-ANAT-2",
+    "action": "« donc » supprimé du premier paragraphe",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat-body, premier paragraphe",
+    "sources": [
+     "Onkopedia, avril 2025 (texte intégral lu le 15.10.2026) : § 2.4"
+    ]
+   },
+   {
+    "id": "LANG-ANAT-3",
+    "action": "Figure 7 : viewBox 520 → 440 de large, font-size 18 → 20 ; rendu vérifié à 390 px",
+    "fichier": "chapters/D50/D50_c.html",
+    "ancre": "#d50-s-anat figure svg",
+    "sources": []
+   }
+  ],
+  "controles": {
+   "test_v7 --static D50": "OK",
+   "build_medina.audit (6 fichiers)": "{}",
+   "audit_sciences --codes D50": "6 disciplines ; seule erreur le faux positif connu d50-s-histo",
+   "rendu Chromium S06 1280/390 px": "aucune erreur JavaScript, pas de défilement horizontal, Pareto 104 mots sur 1219"
+  },
+  "empreintes_sha256": {
+   "chapters/D50/D50_c.html": "13843b795549b77340ef4522f9c4c7a466bb614df0f8484b39d7eda3f3a44563",
+   "chapters/D50/D50_pop2.html": "5d1bd35709cf0a28080c9b655ec78c3c95d0dfadf60069e2555c2f1ac819df38"
+  }
+ }
+}

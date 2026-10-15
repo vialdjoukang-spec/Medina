@@ -1,0 +1,18 @@
+{
+ "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
+ "code": "D50",
+ "phase": "3 — reçu Alpha",
+ "statut": "bloqué, reçu non publié",
+ "date": "2026-10-15",
+ "verification": "python3 tools/alpha_publication.py --before abd681e5175db8c89e87dd7b83f96d0249d81cd7 --after HEAD, exécutée dans un clone jetable avec le reçu complet (organisation/alpha-publications/Claude/D50/0001.json), les copies final/ et droits/ ; résultat identique pour PYTHONHASHSEED 0 à 3",
+ "erreur": "AlphaError: Publication Alpha : attribution invisible dans le cours",
+ "cause": "tools/alpha_publication.py exige que l’attribution de chaque figure Alpha soit dans visible_text() de la concaténation des fichiers HTML du cours. Or tout le chapitre D50 est enveloppé dans <template id=\"ch-D50\"> (ouvert dans D50_a.html, fermé dans D50_d.html), les fenêtres sont des <template data-pop>, et le panneau pS porte l’attribut hidden. visible_text() ignore template et hidden : aucune attribution du cours n’y est visible (ni celle-ci ni « C. Heitz », « Ed Uthman »). L’ordre de concaténation dépend en outre d’un set Python (core_paths).",
+ "diagnostic": "Dans le clone, en neutralisant seulement <template id=\"ch-D50\"> et l’attribut hidden de pS dans visible_text (diagnostic, non publié), toutes les autres vérifications passent : chaîne, base, mission, plan, fragment S06, 8 fichiers, figure_rights (octets 1280 px, pages source et licence), revue visuelle, audits MED/LANG/SEMIO clos.",
+ "preuves_conservees": [
+  "droits/commons_source_page.html (une requête, HTTP 200, User-Agent neutre)",
+  "droits/cc_by_4_0_license_page.html (une requête, HTTP 200)",
+  "droits/droits_frottis_normal.json"
+ ],
+ "decision_requise": "Mission partagée pour adapter visible_text() à la structure réelle des chapitres (template englobant, panneaux hidden activés par le moteur), ou consigne explicite d’une autre voie ; aucune modification des fichiers de la leçon (empreintes revues) ni de l’outil n’a été faite.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
