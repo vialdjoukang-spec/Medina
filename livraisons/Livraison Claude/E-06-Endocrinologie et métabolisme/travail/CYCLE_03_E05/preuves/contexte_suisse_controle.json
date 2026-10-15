@@ -5,22 +5,22 @@
  "chapter_code": "E05",
  "source_files": {
   "chapters/E05/E05_a.html": "1590cd0ff87ec8586942d8c5bfbea2da759e1066a36c715913aaf289d1a00d46",
-  "chapters/E05/E05_b.html": "08f96041029aa5922e9d9c2b91e45c8656adc3ad49ae49a402008a5a7b0839a9",
+  "chapters/E05/E05_b.html": "32fba1ac76ee147063626fe6dff1816eb5970d87e12fb4538a63971be58649cf",
   "chapters/E05/E05_c.html": "793d6bcc5ab447e63939e36c366a9bcb2b702a03ffe3532aad23d63df3d8bae5",
   "chapters/E05/E05_d.html": "c7d50fbcdbda851f5cfb649e1ddbc051a6231ecc435becfa2cef591e55b8e2d1",
-  "chapters/E05/E05_pop1.html": "464c6ecfda481fba5a6f2d026250e307802fc2725ecc10612af1178cd1404d67",
-  "chapters/E05/E05_pop2.html": "2d5d529b2eaf556409e4bf0e90ba570fd56fbdfda2dbc26ef389c14b18870d9e",
+  "chapters/E05/E05_pop1.html": "4113605811bd2b6beee149bb64428b25f2e27f30aa26967f830991b2bccdda38",
+  "chapters/E05/E05_pop2.html": "a923b0c0bcf7dec838808a1250ea82c91410bccbea6efc953bb866f87e8d1c20",
   "glossary/e05.py": "c002151553f051d2c315262212369ad5266e0724446d4ef7dc058d449ac136cf"
  },
  "unresolved_divergences": [],
  "built_on": "2026-10-15",
  "built_by": "Claude, coordinateur (contrôle Cycle 3)",
  "built_from": {
-  "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/contexte_suisse_claude.json": "cf7e6bb41b0fa5f329d42635278606b0a5ae351d1cfd511abeff22f3d8970b30",
-  "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json": "fa1e96c96c1f7a4ac36d339a1fb2c20d565b5ff19f07afb316cbee04ae75e2c6"
+  "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/contexte_suisse_claude.json": "fef19889600221774f57041cd44f8e1160b88a1ca7b6fb552fc67d3670a70825",
+  "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json": "69e5c227ae6fa612226d959b44b177eacea1061685807ce582e26a4fd24bf169"
  },
  "medical_human_validation": false,
- "note": "Matrice de contrôle construite à partir des décisions de la matrice auteur (contexte_suisse_claude.json) et du registre source_ledger_claude.json ; aucune affirmation nouvelle. Chaque ligne renvoie à ses entrées de registre (ledger_refs) et à son emplacement dans le cours. Deux décisions de la matrice auteur (E05-20, E05-31) n'ont pas pu être rattachées au registre et sont écartées. « auditor_verdict: conforme » atteste le rattachement source–décision vérifié contre le registre, non la vérité médicale ; revue IA sans validation médicale humaine ; audit différé après le Cycle 30.",
+ "note": "Matrice de contrôle construite à partir des décisions de la matrice auteur (contexte_suisse_claude.json) et du registre source_ledger_claude.json, versions corrigées ; aucune affirmation nouvelle. Chaque ligne renvoie à ses entrées de registre (ledger_refs) et à son emplacement dans le cours. « auditor_verdict: conforme » atteste le rattachement source–décision vérifié contre le registre, non la vérité médicale ; revue IA sans validation médicale humaine ; audit différé après le Cycle 30.",
  "decisions": [
   {
    "id": "E05-01",
@@ -859,6 +859,35 @@
    ]
   },
   {
+   "id": "E05-20",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Nodules toxiques : antithyroïdiens comme pont ; iode 131 en première ligne.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "organization": "ARS MEDICI (Rosenfluh, Suisse) — conférence de la Prof. M. Christ-Crain, Hôpital universitaire de Bâle",
+    "title": "Hyper- und Hypothyreose: Wann sollte man danach suchen, wie abklären und wie behandeln? ARS MEDICI 17/2023:435-437",
+    "url": "https://www.rosenfluh.ch/media/arsmedici/2023/17/Hyper-und-Hypothyreose-Wann-sollte-man-danach-suchen-wie-abklaeren-und-wie-behandeln.pdf",
+    "version_date": "25.08.2023",
+    "section": "Therapie bei Hyperthyreose",
+    "passage": "« Bei einem Patienten mit autonomen Schilddrüsenknoten kommen Thyreostatika allenfalls als Überbrückung bis zur definitiven Entfernung der Knoten (Radiojod, Thyreoidektomie) zum Einsatz. »",
+    "status": "applicable"
+   },
+   "foreign_sources": [],
+   "location": "chapters/E05/E05_b.html#e05-a09",
+   "ledger_refs": [
+    {
+     "ledger": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json",
+     "claim_index": 64,
+     "location": "chapters/E05/E05_b.html#e05-a09",
+     "download_sha256": "998baf69e0d364425482cbae13eee81efba17d22baa50a75f7ebb050333a9585"
+    }
+   ]
+  },
+  {
    "id": "E05-21",
    "chapter_code": "E05",
    "kind": "treatment",
@@ -1331,6 +1360,46 @@
      "claim_index": 62,
      "location": "chapters/E05/E05_b.html#e05-a08",
      "download_sha256": "dead9d373dc7ad11ebeab8a0a3404e31e0ae8df66e942ceb8d67eae657cb8080"
+    }
+   ]
+  },
+  {
+   "id": "E05-31",
+   "chapter_code": "E05",
+   "kind": "treatment",
+   "claim": "Thyrotoxicose induite par l’amiodarone : traitement selon le type ; FI : surveillance seule, sans consigne d’arrêt ; ETA : décision individualisée ; pratique bâloise.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "organization": "Swissmedic — information professionnelle (AIPS via AmiKo, tools/swissmedic_fi.py)",
+    "title": "Information professionnelle suisse Cordarone® comprimés (amiodarone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680333930163",
+    "version_date": "Mise à jour de l'information : avril 2024",
+    "section": "Mises en garde — Hyperthyroïdie ; Troubles thyroïdiens",
+    "passage": "« Une hyperthyroïdie peut apparaître durant le traitement par l'amiodarone, et jusqu'à quelques mois après l'arrêt… perte de poids, apparition d'arythmie, angor, insuffisance cardiaque… monitoring… plusieurs mois après son arrêt »",
+    "status": "applicable"
+   },
+   "foreign_sources": [
+    {
+     "organization": "European Thyroid Association",
+     "title": "2018 ETA Guidelines for the Management of Amiodarone-Associated Thyroid Dysfunction (Bartalena L et al., Eur Thyroid J 2018;7:55-66)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29594056/",
+     "version_date": "mars 2018",
+     "section": "Résumé",
+     "passage": "« AIT 1 is best treated with thionamides that may be combined for a few weeks with sodium perchlorate… AIT 2 is treated with oral glucocorticoids… Mixed/indefinite forms of AIT are treated with thionamides. Oral glucocorticoids can be added… The decision to continue or to stop amiodarone… individualized… emergency thyroidectomy may be required »",
+     "origin": "european"
+    }
+   ],
+   "resolution": "Décision conjointe cardiologue–endocrinologue ; ne jamais arrêter seul une amiodarone vitale.",
+   "location": "chapters/E05/E05_b.html#e05-a11",
+   "ledger_refs": [
+    {
+     "ledger": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/travail/CYCLE_03_E05/preuves/source_ledger_claude.json",
+     "claim_index": 104,
+     "location": "chapters/E05/E05_b.html#e05-a11",
+     "download_sha256": "3db90f0aba7888bf029f92cb14880f55db740c5bafde5a51cc401036f45fa1cd"
     }
    ]
   },

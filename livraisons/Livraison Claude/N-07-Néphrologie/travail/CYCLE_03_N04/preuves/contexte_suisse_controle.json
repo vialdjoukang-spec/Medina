@@ -1,0 +1,2723 @@
+{
+ "schema_version": 1,
+ "fragment_id": "S04",
+ "scope": "chapter",
+ "chapter_code": "N04",
+ "source_files": {
+  "chapters/N04/N04_a.html": "1e2a622ed7469badb11654ee56df66948f8f84a7e91c80e1c7f65d27830290f0",
+  "chapters/N04/N04_b.html": "28a8605bfe3a8d3e3f3861291edf6b0619766af889272b16fa72f33a292332ce",
+  "chapters/N04/N04_c.html": "ad4a22d038b097e350dac516a94cccb6a31bd7dcea687fa2366fe4e92c458af6",
+  "chapters/N04/N04_d.html": "55612afc7de13681e121bef1fe940acbca5504202ee1b86e4ccac79ea75573c6",
+  "chapters/N04/N04_pop1.html": "55dd081e6e84a3cffc76efd74614180fb9570481d95e7b9f240c2850042c0e19",
+  "chapters/N04/N04_pop2.html": "b5727a67ea1cd313b18435d80aa453f3df901a78599238b3d921d51132ee94a7",
+  "glossary/n04.py": "9ce1e996d779162cd29b2bad0983024fdeb50341eb910cc868bc9b6689d23657"
+ },
+ "unresolved_divergences": [],
+ "built_on": "2026-10-15",
+ "built_by": "Claude, coordinateur (contrôle Cycle 3)",
+ "built_from": {
+  "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/contexte_suisse_claude.json": "87b2e5bdfc36d9dcbffb807d5d1b4720af34a63f7e20104baa2a19b887cf5ce0",
+  "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/source_ledger_claude.json": "0099ac754f97260a733fba7250bf60c8c702d55c6c6a09bc67a55d9c1c342929"
+ },
+ "medical_human_validation": false,
+ "note": "Contrôle du coordinateur construit à partir des décisions de la matrice auteur (contexte_suisse_claude.json), rattachées au registre source_ledger_claude.json et, pour quatre fiches d'information (Spiricort injectable, Cosaar, Sintrom, Lasix injectable), à dossier_sources.json. Pour chaque ligne, présence de la décision dans le cours à l'emplacement indiqué et concordance de l'adresse source vérifiées ; aucune affirmation nouvelle. « auditor_verdict: conforme » atteste le rattachement source–décision vérifié contre le registre, non la vérité médicale ; revue IA sans validation médicale humaine ; audit différé après le Cycle 30.",
+ "decisions": [
+  {
+   "id": "N04-CIM-3",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Les sous-codes .0 à .8 ne s'emploient normalement qu'après identification précise par biopsie rénale ou autopsie ; la catégorie à trois caractères désigne le syndrome clinique.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Office fédéral de la statistique (OFS)",
+    "title": "CIM-10-GM 2024, version française suisse, ClaML (CIM10GM2024_ClaML_S_FR_20241031.xml)",
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686264/master",
+    "version_date": "2024 (fichier du 31.10.2024)",
+    "section": "Note du modificateur S14N00_4",
+    "passage": "Règle d'emploi des 4e caractères."
+   },
+   "foreign_sources": [],
+   "location": "chapters/N04/N04_a.html#n04-a02",
+   "ledger_refs": [
+    "CIM-3"
+   ]
+  },
+  {
+   "id": "N04-DEF-1",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Adulte : syndrome néphrotique = protéinurie ≥ 3,5 g/24 h ou rapport protéines/créatinine (RPC) ≥ 3000 mg/g (≥ 300 mg/mmol) [critère essentiel] avec hypoalbuminémie [critère essentiel, valeur dépendante du laboratoire] ; œdème et hyperlipidémie sont variables.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Chapitre 1, Figure 4 (p. S91)",
+     "passage": "Tableau des définitions : syndrome néphrotique, protéinurie de rang néphrotique, protéinurie non néphrotique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a02",
+   "ledger_refs": [
+    "DEF-1"
+   ]
+  },
+  {
+   "id": "N04-DEF-2",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Protéinurie de rang néphrotique sans syndrome néphrotique : même seuil de protéinurie, mais albumine sérique habituellement normale, œdème absent ou discret, lipides normaux ou peu élevés ; fréquente dans la hyalinose segmentaire et focale secondaire et la néphropathie à IgA. Protéinurie non néphrotique : 0,3–3,4 g/24 h, RPC < 300 mg/g (< 30 mg/mmol) [libellé de la figure], albumine normale, pas de symptôme.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Figure 4 et texte p. S91",
+     "passage": "Distinction entre syndrome néphrotique et simple protéinurie de rang néphrotique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a02",
+   "ledger_refs": [
+    "DEF-2"
+   ]
+  },
+  {
+   "id": "N04-DEF-3",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Albumine : la méthode au vert de bromocrésol (BCG) donne des valeurs d'environ 5,5 g/L plus élevées que le pourpre de bromocrésol (BCP), l'électrophorèse capillaire ou l'immunonéphélométrie ; le seuil d'hypoalbuminémie dépend donc de la méthode.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Figure 4, note †",
+     "passage": "Influence de la méthode de dosage."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e01",
+   "ledger_refs": [
+    "DEF-3"
+   ]
+  },
+  {
+   "id": "N04-DEF-4",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Enfant (1–18 ans) : protéinurie de rang néphrotique = RPC ≥ 200 mg/mmol (2 g/g) sur échantillon ou ≥ 1000 mg/m²/jour sur 24 h, soit 3+ (300–1000 mg/dl) ou 4+ (≥ 1000 mg/dl) à la bandelette ; syndrome néphrotique = protéinurie de rang néphrotique et hypoalbuminémie < 30 g/L ou œdème si l'albumine n'est pas disponible.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Practice Point 1.1.1, Figure 1 (p. S256)",
+     "passage": "Définitions pédiatriques harmonisées."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a02",
+   "ledger_refs": [
+    "DEF-4"
+   ]
+  },
+  {
+   "id": "N04-DEF-5",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Bandelette (selon fabricant) : négatif 0 à < 15 mg/dl ; traces 15 à < 30 ; 1+ 30 à < 100 ; 2+ 100 à < 300 ; 3+ 300 à < 1000 ; 4+ ≥ 1000 mg/dl.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Figure 1",
+     "passage": "Correspondance semi-quantitative."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e01",
+   "ledger_refs": [
+    "DEF-5"
+   ]
+  },
+  {
+   "id": "N04-DX-1",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Biopsie rénale = examen de référence des glomérulopathies ; à faire si son résultat doit modifier le traitement ou apporter un pronostic. Traitement possible sans biopsie : enfant < 12 ans avec syndrome néphrotique corticosensible ; MN avec anticorps anti-PLA2R positifs (surtout DFGe normal) ; autres situations (vascularite MPO/PR3, anti-MBG, Alport, Fabry, FSGS familiale à mutation caractérisée, biopsie contre-indiquée, lupus).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 1.1.1, Figure 2 (p. S30)",
+     "passage": "Indications et exceptions de la biopsie."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e03",
+   "ledger_refs": [
+    "DX-1"
+   ]
+  },
+  {
+   "id": "N04-DX-2",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "MCD de l'adulte : diagnostic uniquement par biopsie ; microscopie optique normale ou proéminence mésangiale minime ; immunofluorescence négative ou faible C3/IgM ; microscopie électronique : effacement étendu des pédicelles sans dépôts denses ; une FSGS débutante peut être manquée (erreur d'échantillonnage).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 5.1.1 et texte",
+     "passage": "Critères histologiques de la MCD."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e03",
+   "ledger_refs": [
+    "DX-2"
+   ]
+  },
+  {
+   "id": "N04-DX-3",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "MN : biopsie non nécessaire si syndrome néphrotique et anti-PLA2R positifs ; méta-analyse (710 MN, 1502 témoins) : sensibilité 0,78, spécificité 0,99 ; consensus autrichien : renoncer à la biopsie si anti-PLA2R nettement positifs (> 20 RE/ml en ELISA Euroimmun ou IIFT positive), DFGe > 60 ml/min/1,73 m² et autres causes exclues ; biopsie si fonction altérée (MN avec croissants, néphropathie diabétique associée).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 3.1.1 et texte ; ÖGN MN « Diagnostik »",
+     "passage": "Diagnostic sérologique de la MN."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e03",
+   "ledger_refs": [
+    "DX-3"
+   ]
+  },
+  {
+   "id": "N04-DX-4",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Chez tout adulte avec premier syndrome néphrotique : anti-PLA2R (ELISA et/ou IIFT) et recherche des causes secondaires ; un syndrome néphrotique aigu sans cause identifiée (p. ex. sans anti-PLA2R) impose en principe une biopsie chez l'adulte.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Diagnostik und Therapie der Minimal Change Disease im Erwachsenenalter – 2023",
+     "title": "Diagnosis and treatment of Minimal Change Disease in adults – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511370/",
+     "version_date": "2023",
+     "section": "Diagnostik",
+     "passage": "Stratégie initiale adulte."
+    }
+   ],
+   "resolution": "Recours motivé à la source européenne pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a07",
+   "ledger_refs": [
+    "DX-4"
+   ]
+  },
+  {
+   "id": "N04-DX-5",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Bilan biologique de base de la MN (consensus autrichien) : anti-PLA2R, ANA, C3/C4, MPO/PR3 si microhématurie, sérologies VHB et VHC, THSD7A si PLA2R négatif, bandelette, sédiment, RPC ; une récolte de 24 h initiale (clairance et protéinurie) pour étalonner le RPC ; échographie abdominale et radiographie (ou scanner) thoracique chez tous.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "Österreichische Gesellschaft für Nephrologie (ÖGN) — Säemann MD, Odler B, Windpessl M et al.",
+     "title": "Diagnostik und Therapie der Membranösen Nephropathie – 2023. Wien Klin Wochenschr 2023;135(Suppl 5):648–655. doi:10.1007/s00508-023-02261-w (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511554/",
+     "version_date": "20.09.2023",
+     "section": "Diagnostik",
+     "passage": "Liste des examens."
+    }
+   ],
+   "resolution": "Recours motivé à la source européenne pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e02",
+   "ledger_refs": [
+    "DX-5"
+   ]
+  },
+  {
+   "id": "N04-DX-6",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Quantification : récolte de 24 h si l'on débute ou intensifie une immunosuppression ou si l'état change ; enfant : RPC sur première urine du matin ; un RPC aléatoire est imparfait (variation de protéines et créatinine) ; la première urine du matin sous-estime la protéinurie orthostatique ; compromis : RPC sur une aliquote d'une récolte « prévue » de 24 h ; la première miction du matin sous-estime la protéinurie de 24 h d'environ 20 %.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Points 1.2.1–1.2.5 et texte p. S91",
+     "passage": "Méthodes de mesure."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e01",
+   "ledger_refs": [
+    "DX-6"
+   ]
+  },
+  {
+   "id": "N04-DX-7",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Estimation du DFG : CKD-EPI à la créatinine chez l'adulte, Schwartz modifiée chez l'enfant, FAS possible aux deux âges ; sédiment urinaire systématique (morphologie érythrocytaire, cylindres, acanthocytes).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Points 1.2.9 et 1.3.1",
+     "passage": "Fonction rénale et sédiment."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e02",
+   "ledger_refs": [
+    "DX-7"
+   ]
+  },
+  {
+   "id": "N04-DX-8",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Enfant : biopsie si âge ≥ 12 ans à la présentation, corticorésistance (ou corticorésistance secondaire), suspicion d'une autre pathologie (hématurie macroscopique, signes systémiques de vascularite, hypocomplémentémie), insuffisance rénale initiale non liée à l'hypovolémie, ou baisse de fonction sous anticalcineurines (ou exposition de 2–3 ans) ; génétique si corticorésistance, forme congénitale ou infantile (< 1 an), signes syndromiques, antécédents familiaux de corticorésistance ou de FSGS. Sous un an, adresser à la néphrologie pédiatrique.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Figure 5 (p. S260) ; introduction (p. S261)",
+     "passage": "Biopsie et génétique chez l'enfant."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_c.html#n04-e03",
+   "ledger_refs": [
+    "DX-8"
+   ]
+  },
+  {
+   "id": "N04-DX-9",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Signes atypiques chez l'enfant justifiant une biopsie d'emblée : hématurie macroscopique, C3 bas, insuffisance rénale aiguë non liée à l'hypovolémie, hypertension soutenue, arthrite, éruption cutanée.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Section 1.2 (p. S263)",
+     "passage": "Drapeaux d'un autre diagnostic."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a07",
+   "ledger_refs": [
+    "DX-9"
+   ]
+  },
+  {
+   "id": "N04-DX-10",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "D-dimères élevés dans le syndrome néphrotique sans thrombose cliniquement pertinente : ils ne servent pas à décider d'une prophylaxie.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Windpessl M, Gauckler P, Zitt E et al.",
+     "title": "Allgemeine Empfehlungen für die Behandlung glomerulärer Erkrankungen – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511582/",
+     "version_date": "2023",
+     "section": "Thromboseprophylaxe",
+     "passage": "Piège biologique."
+    }
+   ],
+   "resolution": "Recours motivé à la source européenne pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a08",
+   "ledger_refs": [
+    "DX-10"
+   ]
+  },
+  {
+   "id": "N04-DX-11",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Suisse : adresser au néphrologue si ACR systématiquement > 300 mg/g (30 mg/mmol), hématurie glomérulaire, maladie rénale d'origine inconnue, DFGe < 30, insuffisance rénale aiguë ou chute brutale persistante du DFGe, anomalies persistantes du potassium, maladie héréditaire.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Société suisse de néphrologie (SSN/SGN) — Seeger H, Cippà P, de Seigneux S",
+    "title": "Recommandations pour le dépistage et l'identification de l'insuffisance rénale chronique, version 17.03.2025",
+    "url": "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf",
+    "version_date": "17.03.2025",
+    "section": "Figure 4",
+    "passage": "Critères suisses d'adressage."
+   },
+   "foreign_sources": [],
+   "location": "chapters/N04/N04_a.html#n04-a07",
+   "ledger_refs": [
+    "DX-11"
+   ]
+  },
+  {
+   "id": "N04-DX-12",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Disponibilité suisse : dosage des anticorps anti-PLA2R au CHUV par ELISA, deux fois par mois, délai 1–2 semaines, analyse accréditée ; Viollier : ELISA, 2 fois par mois, délai 2 semaines, valeur de référence < 14 U/mL ; anticorps anti-THSD7A : référence < 10.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "CHUV, Département de médecine de laboratoire et pathologie",
+    "title": "Catalogue des analyses — Anticorps anti-récepteur de la phospholipase A2 (DLA_INV_01_00380, V12 du 27.09.2023)",
+    "url": "https://catalogue.chuv.ch/analyses-examens/laboratoires/fiche/download/DLA_INV_01_00380?no_cache=1",
+    "version_date": "27.09.2023",
+    "section": "Fiche DLA_INV_01_00380 ; Viollier 52559 et 52568",
+    "passage": "Accès à l'analyse en Suisse."
+   },
+   "foreign_sources": [],
+   "location": "chapters/N04/N04_c.html#n04-e02",
+   "ledger_refs": [
+    "DX-12"
+   ]
+  },
+  {
+   "id": "N04-ETI-3",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Une FSGS sans syndrome néphrotique (protéinurie néphrotique avec albumine > 30 g/L, ou < 3,5 g/j) doit faire rechercher une cause secondaire et ne pas faire débuter d'immunosuppression ; la présence d'un syndrome néphrotique (> 3,5 g/j et albumine < 30 g/L) avec effacement diffus des pédicelles oriente vers une FSGS primaire.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 6.1.1.1, Figure 51 (p. S62)",
+     "passage": "Algorithme primaire/secondaire."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a07",
+   "ledger_refs": [
+    "ETI-3"
+   ]
+  },
+  {
+   "id": "N04-ETI-5",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Bilan des conditions associées à toute MN, que les anticorps anti-PLA2R/THSD7A soient présents ou non : anamnèse complète (maladies systémiques, thyroïde), examen (peau, articulations), radiographie thoracique (sarcoïdose), échographie rénale, VHB/VHC/VIH/tréponème selon indication, anticorps antinucléaires, anamnèse médicamenteuse (AINS, or, pénicillamine), dépistage des cancers adapté à l'âge (PSA chez l'homme > 50–60 ans, programmes nationaux sein et côlon).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 3.1.2, Figure 29 (p. S50)",
+     "passage": "Bilan étiologique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a07",
+   "ledger_refs": [
+    "ETI-5"
+   ]
+  },
+  {
+   "id": "N04-ETI-6",
+   "chapter_code": "N04",
+   "kind": "diagnostic",
+   "claim": "Formes génétiques de FSGS (mutations des protéines podocytaires et de la membrane basale ; familiales, sporadiques ou syndromiques) : test génétique utile en cas d'antécédents familiaux, de signes syndromiques, de corticorésistance, pour estimer le risque de récidive après greffe ou évaluer un donneur apparenté.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 6.1.2.1, Figure 53",
+     "passage": "Indications génétiques adultes."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_a.html#n04-a05",
+   "ledger_refs": [
+    "ETI-6"
+   ]
+  },
+  {
+   "id": "N04-SUP-1",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Œdème : diurétique de l'anse en première ligne, deux prises par jour (une prise acceptable si DFG réduit), augmenter jusqu'à diurèse significative ou dose maximale efficace ; passer au bumétanide ou au torasémide si échec ou biodisponibilité douteuse ; restriction sodée < 2,0 g/j (< 90 mmol/j) ; associer en cas de résistance un diurétique de mécanisme différent (thiazidique à forte dose, amiloride, acétazolamide si alcalose, spironolactone) ; surveiller hyponatrémie (thiazidiques), hypokaliémie, baisse du DFG, déplétion volémique (enfant, sujet âgé), hyperkaliémie (spironolactone/éplérénone + bloqueur du SRA) ; résistance : diurétique intraveineux seul ou avec albumine intraveineuse, ultrafiltration, hémodialyse.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Points 1.4.1–1.4.5, Figure 7 (p. S33)",
+     "passage": "Algorithme de l'œdème."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-1"
+   ]
+  },
+  {
+   "id": "N04-SUP-2",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Thiazidique à donner 2–5 h avant le diurétique de l'anse intraveineux ; éviter l'injection intraveineuse rapide de diurétique de l'anse (ototoxicité : surdité, acouphènes) ; la perfusion continue limite la toxicité ; restriction hydrique inutile sauf hyponatrémie (patients souvent hypovolémiques) ; albumine IV (25–50 g 30–60 min avant le diurétique) seulement si échec du diurétique IV maximal et albumine < 20 g/L, effet transitoire car l'albumine est vite excrétée.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Albunorm® 5 %, 20 % (albumine humaine)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680626600032",
+    "version_date": "mars 2023",
+    "section": "Indications ; Posologie",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Nephrotic edema (p. S95–S96)",
+     "passage": "Modalités d'administration."
+    }
+   ],
+   "resolution": "DIV-10 : Hors indication ; réservée à l'hôpital et à la décision spécialisée. Position KDIGO : Option si résistance au diurétique IV maximal et albumine < 20 g/L ; effet transitoire ; position européenne : — ; position suisse : FI Albunorm : indication = restauration volémique démontrée.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-2"
+   ]
+  },
+  {
+   "id": "N04-SUP-3",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "IEC ou ARA II à la dose maximale tolérée chez le patient hypertendu et protéinurique ; ne pas arrêter pour une hausse modérée et stable de la créatinine (jusqu'à 30 %) ; arrêter si aggravation progressive ou hyperkaliémie réfractaire ; ne pas débuter lors d'un début brutal de syndrome néphrotique (risque d'IRA, surtout MCD) ; on peut différer chez le non-hypertendu avec podocytopathie (MCD, SSNS, FSGS primaire) attendue rapidement sensible à l'immunosuppression ; suspendre IEC/ARA II et diurétiques en cas de risque de déplétion (« sick days ») ; association IEC + ARA II à risque d'IRA et d'hyperkaliémie.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Zestril® (lisinopril)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680492970178",
+    "version_date": "avril 2024",
+    "section": "Indications ; Posologie ; Contre-indications ; Grossesse",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Windpessl M, Gauckler P, Zitt E et al.",
+     "title": "Allgemeine Empfehlungen für die Behandlung glomerulärer Erkrankungen – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511582/",
+     "version_date": "2023",
+     "section": "Passages cités dans le dossier (voir la divergence DIV-9)",
+     "passage": "ÖGN : blocage du SRA"
+    },
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Points 1.5.1–1.5.6, Figure 8 (p. S34) ; texte p. S96",
+     "passage": "Néphroprotection."
+    }
+   ],
+   "resolution": "DIV-9 : Usage hors indication à nommer ; contre-indication de grossesse. Position KDIGO : Première ligne si protéinurie ± hypertension ; position européenne : ÖGN : blocage du SRA ; position suisse : Zestril : pas d'indication « protéinurie non diabétique » ; Cosaar : néphropathie du diabète de type 2 seulement.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-3"
+   ]
+  },
+  {
+   "id": "N04-SUP-4",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Les IEC/ARA II réduisent la protéinurie jusqu'à 40–50 %, de façon dose-dépendante, surtout si la restriction sodée est respectée ; une hausse de 10–20 % de la créatinine est attendue et hémodynamique.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "1.5 (p. S96)",
+     "passage": "Effet chiffré."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-4"
+   ]
+  },
+  {
+   "id": "N04-SUP-5",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Pression artérielle : KDIGO vise une systolique < 120 mmHg (non validée dans les glomérulonéphrites ; 120–130 mmHg en pratique) ; enfant : moyenne ambulatoire sur 24 h ≤ 50e percentile ; la SSN retient pour la maladie rénale chronique une systolique de 120–129 mmHg.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Société suisse de néphrologie (SSN/SGN) — Seeger H, Cippà P, de Seigneux S",
+    "title": "Recommandations pour le dépistage et l'identification de l'insuffisance rénale chronique, version 17.03.2025",
+    "url": "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf",
+    "version_date": "17.03.2025",
+    "section": "Figure 4",
+    "passage": "Critères suisses d'adressage."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 1.5.2 ; SSN 2025 « Prise en charge de l'IRC »",
+     "passage": "Cibles tensionnelles et divergence."
+    }
+   ],
+   "resolution": "DIV-8 : Cible SSN. Position KDIGO : Systolique < 120 mmHg (non validée en GN ; 120–130 en pratique) ; position européenne : — ; position suisse : SSN 2025 : 120–129 mmHg pour la maladie rénale chronique.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-5"
+   ]
+  },
+  {
+   "id": "N04-SUP-6",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Mesures d'hygiène de vie : sodium < 2,0 g/j, normalisation du poids, exercice régulier, arrêt du tabac ; SSN : sel < 5 g/j, protéines 0,8 g/kg/j, 150 min d'activité par semaine ; KDIGO : protéines 0,8–1 g/kg/j + 1 g par g de protéinurie (jusqu'à 5 g/j) en protéinurie néphrotique, 0,8 g/kg/j si DFGe < 60, éviter < 0,6 g/kg/j ; sécurité de la restriction protéique non établie chez l'enfant ; énergie 35 kcal/kg/j (30–35 si DFGe < 60) ; graisses < 30 % des calories.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Société suisse de néphrologie (SSN/SGN) — Seeger H, Cippà P, de Seigneux S",
+    "title": "Recommandations pour le dépistage et l'identification de l'insuffisance rénale chronique, version 17.03.2025",
+    "url": "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf",
+    "version_date": "17.03.2025",
+    "section": "Figure 4",
+    "passage": "Critères suisses d'adressage."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Points 1.5.8 et 1.14.1–1.14.5 (Figure 16) ; SSN 2025",
+     "passage": "Diététique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-6"
+   ]
+  },
+  {
+   "id": "N04-SUP-7",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Dyslipidémie : traitement envisageable, surtout avec autres facteurs de risque ; hygiène de vie (première ligne chez l'enfant) ; statine en première ligne si dyslipidémie persistante (dès 8 ans selon contexte familial et LDL/Lp(a) très élevés) ; contrôle lipidique et sécurité 4–12 semaines après début puis tous les 3–12 mois ; non-statines (séquestrants, fibrates — hausse de créatinine —, ézétimibe, inhibiteurs de PCSK9, aphérèse) si intolérance ; myalgies/myosite accrues avec anticalcineurines.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Points 1.6.1–1.6.4, Figure 10 (p. S35) ; texte de la section 1.6",
+     "passage": "Prise en charge lipidique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-7"
+   ]
+  },
+  {
+   "id": "N04-SUP-8",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Anticoagulation curative en cas de thrombose (6–12 mois et/ou durée du syndrome néphrotique) ; prophylaxie à dose curative envisagée si albumine < 20–25 g/L avec au moins un facteur : protéinurie > 10 g/j, IMC > 35 kg/m², prédisposition génétique, insuffisance cardiaque NYHA III–IV, chirurgie orthopédique ou abdominale récente, immobilisation prolongée ; contre-indications relatives : préférence/adhérence, diathèse hémorragique, lésion cérébrale à risque, mutations modifiant les AVK, fragilité (chutes), antécédent d'hémorragie digestive ; la MN a un risque particulièrement élevé.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 1.7.1, Figure 11 (p. S36)",
+     "passage": "Indications d'anticoagulation."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-8"
+   ]
+  },
+  {
+   "id": "N04-SUP-9",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Algorithme MN (Hofstra–Wetzels) : albumine < 25 g/L (BCG ; 20 g/L en BCP/immunodosage) et risque veineux élevé → évaluer le risque hémorragique → AVK si faible ; albumine < 32 g/L (30 g/L en BCP) → estimer le risque artériel (score de Framingham, DFGe, diabète, antécédent) → aspirine si > 20/1000 patients-années ; l'aspirine ne prévient pas la thrombose veineuse ; débuter par HBPM faible dose puis relais AVK ; les glucocorticoïdes augmentent le risque thrombotique.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Figure 13 (p. S38) et Figure 38 (p. S56)",
+     "passage": "Arbre décisionnel de prophylaxie."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-9"
+   ]
+  },
+  {
+   "id": "N04-SUP-10",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Consensus autrichien : prophylaxie à discuter si albumine < 25 g/L (BCG ; < 20 g/L en BCP/immunodosage) et risque élevé (MN ou autre facteur) sans risque hémorragique accru, et chez tout patient si albumine < 20 g/L ; énoxaparine 40 mg sc 1×/j (20 mg si DFGe < 30 ml/min) avec anti-Xa cible 0,3–0,5 UI/ml mesurée 4 h après dose (pas > 0,8) ; ou AVK (phenprocoumone, acénocoumarol) INR cible 1,5–2,5 si hypoalbuminémie prolongée ; AOD hors indication ; aspirine 75 mg/j possible entre 25 et 29 g/L dans la MN ; arrêt quand l'albumine remonte durablement au-dessus de 25–30 g/L.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Windpessl M, Gauckler P, Zitt E et al.",
+     "title": "Allgemeine Empfehlungen für die Behandlung glomerulärer Erkrankungen – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511582/",
+     "version_date": "2023",
+     "section": "Prophylaktische Antikoagulation",
+     "passage": "Schéma pratique européen."
+    }
+   ],
+   "resolution": "Recours motivé à la source européenne pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-10"
+   ]
+  },
+  {
+   "id": "N04-SUP-11",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "AVK : liés à 99 % à l'albumine ; en hypoalbuminémie la clairance augmente et la demi-vie peut être divisée par deux ; contrôler souvent l'INR, surtout quand l'albumine remonte (début de rémission) ; HBPM peu liées aux protéines, effet prévisible, mais anti-Xa recommandée si DFGe < 30, IMC > 40, maigreur, grossesse.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Windpessl M, Gauckler P, Zitt E et al.",
+     "title": "Allgemeine Empfehlungen für die Behandlung glomerulärer Erkrankungen – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511582/",
+     "version_date": "2023",
+     "section": "Prophylaktische Antikoagulation",
+     "passage": "Pharmacologie en hypoalbuminémie."
+    }
+   ],
+   "resolution": "Recours motivé à la source européenne pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-11"
+   ]
+  },
+  {
+   "id": "N04-SUP-12",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "KDIGO : héparine non fractionnée 5000 U sc 2×/j en prophylaxie transitoire ; HBPM à réduire si clairance < 30 ml/min ; pour un événement thromboembolique : héparine IV puis relais par warfarine (INR 2–3) ; AOD non étudiés systématiquement (liaison protéique apixaban 92–94 %, rivaroxaban 92–95 %, édoxaban 55 %, dabigatran 35 %).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Marcoumar® (phenprocoumone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680193950011",
+    "version_date": "octobre 2020",
+    "section": "Posologie ; Surveillance ; Contre-indications ; Sintrom® Posologie",
+    "passage": "FI suisses."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 1.7.2, Figure 12 (p. S37)",
+     "passage": "Doses d'anticoagulants."
+    }
+   ],
+   "resolution": "DIV-6 : Nommer les AVK suisses ; INR 2–3 en traitement curatif (FI) ; INR 1,5–2,5 = position d'experts pour la prophylaxie. Position KDIGO : Warfarine, INR 2–3 ; position européenne : ÖGN : phenprocoumone/acénocoumarol, INR 1,5–2,5 en prophylaxie ; position suisse : Warfarine absente d'AmiKo ; Marcoumar et Sintrom : INR 2–3 dans les indications de la FI.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-12"
+   ]
+  },
+  {
+   "id": "N04-SUP-13",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Vaccinations (Suisse) : syndrome néphrotique = indication de vaccination contre la grippe et les pneumocoques (dès le diagnostic) ; varicelle chez les personnes ≥ 40 ans non immunes avec syndrome néphrotique ; un seul vaccin conjugué (PCV) dès 2 ans (PPV23 plus recommandé en Suisse depuis 2014) ; PCV15 ou PCV20 de 5 à 17 ans (hors étiquette 6–17 ans), PCV21 de 18 à 64 ans.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Office fédéral de la santé publique (OFSP) et Commission fédérale pour les vaccinations (CFV)",
+    "title": "Plan de vaccination suisse 2026 (état : février 2026)",
+    "url": "https://www.bag.admin.ch/dam/fr/sd-web/Oj0BSN-w-Ggs/Plan%20de%20vaccination%20suisse_2026_FR_Web_final.pdf",
+    "version_date": "février 2026",
+    "section": "Tableau 5 (p. 33), pneumocoques (p. 26–28), varicelle ; prise de position PCV 01.07.2026",
+    "passage": "Vaccinations des personnes à risque."
+   },
+   "foreign_sources": [],
+   "resolution": "DIV-7 : Plan suisse. Position KDIGO : PCV puis PPV23 ; position européenne : ÖGN : conjugué puis polysaccharidique > 8 semaines ; position suisse : Plan suisse 2026 : un PCV (PCV21 18–64 ans ; PCV15/PCV20 5–17 ans) ; PPV23 plus recommandé depuis 2014 ; grippe annuelle ; varicelle ≥ 40 ans non immun.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-13"
+   ]
+  },
+  {
+   "id": "N04-SUP-14",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Immunosuppression sévère au sens du plan suisse : corticothérapie ≥ 2 mg/kg/j chez l'enfant ou ≥ 20 mg/j d'équivalent prednisolone pendant plus de deux semaines, déplétion B, chimiothérapie forte, associations ; vaccins vivants atténués en principe contre-indiqués en cas de déficit immunitaire. KDIGO : différer les vaccins vivants jusqu'à prednisone < 20 mg/j et/ou 1–3 mois après l'arrêt des immunosuppresseurs ; vacciner l'enfant non immun contre la varicelle dès que possible après le premier épisode corticosensible.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Office fédéral de la santé publique (OFSP) et Commission fédérale pour les vaccinations (CFV)",
+    "title": "Plan de vaccination suisse 2026 (état : février 2026)",
+    "url": "https://www.bag.admin.ch/dam/fr/sd-web/Oj0BSN-w-Ggs/Plan%20de%20vaccination%20suisse_2026_FR_Web_final.pdf",
+    "version_date": "février 2026",
+    "section": "Rage (définition, p. 30) ; Considérations générales (p. 41) ; KDIGO21 p. S104",
+    "passage": "Vaccins vivants."
+   },
+   "foreign_sources": [],
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-14"
+   ]
+  },
+  {
+   "id": "N04-SUP-15",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Prophylaxie de la pneumocystose : KDIGO propose de l'envisager sous forte dose de prednisone ou autres immunosuppresseurs (rituximab, cyclophosphamide) ; le consensus autrichien la juge non indiquée dans MCD, FSGS, MN et IgAN en Europe centrale (pneumocystose rare, toxicité du cotrimoxazole) ; si elle est prescrite : 160/800 mg trois fois par semaine, demi-dose si DFGe < 30 ml/min.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Windpessl M, Gauckler P, Zitt E et al.",
+     "title": "Allgemeine Empfehlungen für die Behandlung glomerulärer Erkrankungen – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511582/",
+     "version_date": "2023",
+     "section": "Prophylaxe gegen Pneumocystis jirovecii Pneumonie ; KDIGO21 Practice Point 1.8.4",
+     "passage": "Divergence documentée."
+    }
+   ],
+   "resolution": "DIV-1 : Enseigner la décision individualisée ; présenter les deux positions dans une fenêtre « contentieux » ; dose selon FI suisse. Position KDIGO : À envisager sous forte dose de prednisone, rituximab, cyclophosphamide (Practice Point 1.8.4) ; position européenne : ÖGN : non indiquée dans MCD/FSGS/MN/IgAN en Europe centrale ; position suisse : Aucune recommandation suisse trouvée ; FI Bactrim forte : dose 1 cp forte 3×/semaine.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-15"
+   ]
+  },
+  {
+   "id": "N04-SUP-16",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Consensus autrichien (MN) : mesures non immunosuppressives d'abord : blocage du SRA, inhibiteur de SGLT2, statine (PCSK9 si intolérance), diurétiques ; mais la FI suisse de Forxiga® n'a pas de données chez les patients néphropathes traités par immunosuppresseurs et ne recommande pas ce traitement chez eux.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Forxiga® (dapagliflozine)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680651760015",
+    "version_date": "août 2026",
+    "section": "Indications ; Mises en garde (troubles de la fonction rénale ; néphropathie chronique)",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "Österreichische Gesellschaft für Nephrologie (ÖGN) — Säemann MD, Odler B, Windpessl M et al.",
+     "title": "Diagnostik und Therapie der Membranösen Nephropathie – 2023. Wien Klin Wochenschr 2023;135(Suppl 5):648–655. doi:10.1007/s00508-023-02261-w (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511554/",
+     "version_date": "20.09.2023",
+     "section": "Therapie ; Forxiga® FI « Mises en garde »",
+     "passage": "Divergence européenne / FI suisse."
+    }
+   ],
+   "resolution": "DIV-2 : La FI suisse prime pour la prescription. Position KDIGO : Non traité dans KDIGO 2021 ; position européenne : ÖGN MN : SGLT2 à viser ; position suisse : FI Forxiga : données insuffisantes, non recommandé chez les patients traités par immunosuppresseurs.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "SUP-16"
+   ]
+  },
+  {
+   "id": "N04-SUP-17",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Grossesse et glomérulopathie : coordination néphrologie–obstétrique, idéalement avant la conception ; maladie et pression contrôlées avant de planifier ; DFG à la conception = principal prédicteur ; aspirine faible dose (60–150 mg) à envisager après le premier trimestre pour réduire la prééclampsie.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "1.15 (p. S110–S111)",
+     "passage": "Grossesse."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a11",
+   "ledger_refs": [
+    "SUP-17"
+   ]
+  },
+  {
+   "id": "N04-TX-1",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "MCD de l'adulte : glucocorticoïdes oraux à forte dose (1C) : prednisone/prednisolone 1 mg/kg/j (max 80 mg) ou 2 mg/kg un jour sur deux (max 120 mg) au moins 4 semaines et au plus 16 semaines ; décroissance commencée 2 semaines après rémission complète, sur au moins 24 semaines ; taux de rémission 80–90 %.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Prednisone Streuli® comprimés 5/20/50 mg",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "version_date": "juin 2026",
+    "section": "Indications ; Posologie/Mode d'emploi",
+    "passage": "FI suisse du produit exact."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Recommandation 5.3.1, Practice Points 5.3.2–5.3.3, Figure 45 (p. S155)",
+     "passage": "Corticothérapie MCD."
+    }
+   ],
+   "resolution": "DIV-3 : Présenter 1 mg/kg plafonné, avec les deux plafonds ; la FI suisse autorise ces doses. Position KDIGO : 80 mg/j (ou 120 mg un jour sur deux) ; position européenne : ÖGN : 60 mg/j (recommandations nationales, TURING) ; schéma alterné inhabituel ; position suisse : FI : 5–60 mg/j habituels, doses plus élevées autorisées ; Spiricort 80–120 mg/j pour le syndrome néphrotique.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-1"
+   ]
+  },
+  {
+   "id": "N04-TX-2",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Consensus autrichien (MCD) : prednisolone 1 mg/kg/j le matin (7–8 h) sur le poids d'avant les œdèmes ; schéma alterné inhabituel en Europe centrale ; recommandations nationales et essai TURING limitent à 60 mg/j ; la moitié en rémission complète à 4 semaines (médiane 2 mois), environ 80 % à 16 semaines ; 25 % sans rémission ; décroissance de 5–10 mg/semaine après rémission (recommandation KDIGO citée par l’ÖGN) ; durée totale au plus 24 semaines ; rechute chez environ deux tiers après l'arrêt, la moitié dans les 6 mois.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Diagnostik und Therapie der Minimal Change Disease im Erwachsenenalter – 2023",
+     "title": "Diagnosis and treatment of Minimal Change Disease in adults – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511370/",
+     "version_date": "2023",
+     "section": "Therapie ; Rezidiv",
+     "passage": "Pratique européenne et divergence de dose maximale."
+    }
+   ],
+   "resolution": "DIV-4 : Présenter les deux et l'incertitude. Position KDIGO : Décroissance sur au moins 24 semaines (Fig. 45) ; position européenne : ÖGN : durée totale ≤ 24 semaines ; position suisse : Pas de recommandation suisse.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-2"
+   ]
+  },
+  {
+   "id": "N04-TX-3",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "MCD avec contre-indication aux glucocorticoïdes : cyclophosphamide oral 2–2,5 mg/kg/j 8 semaines, ciclosporine 3–5 mg/kg/j 1–2 ans, tacrolimus 0,05–0,1 mg/kg/j 1–2 ans, ou MMF + corticoïdes réduits ; rechutes fréquentes/corticodépendance (1C) : cyclophosphamide (si jamais reçu), rituximab, anticalcineurines (cibles initiales ciclosporine 150–200 ng/ml, tacrolimus 4–7 ng/ml), MMF 1000 mg 2×/j ou mycophénolate sodique 720 mg 2×/j ; rechute peu fréquente : glucocorticoïdes.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 5.3.5, Recommandation 5.3.1.1, Figures 45 et 47",
+     "passage": "Alternatives MCD."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-3"
+   ]
+  },
+  {
+   "id": "N04-TX-4",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "FSGS primaire : glucocorticoïdes forte dose en première ligne (1D), même schéma que la MCD jusqu'à rémission complète ou 16 semaines ; si répondeur, glucocorticoïdes ≥ 6 mois au total (décroissance de 5 mg toutes les 1–2 semaines) ; si contre-indication : anticalcineurine (ciclosporine 3–5 mg/kg/j en 2 prises, taux résiduel 100–175 ng/ml ; tacrolimus 0,05–0,1 mg/kg/j, 5–10 ng/ml) ; corticorésistance : ciclosporine ou tacrolimus ≥ 6 mois (1C), puis ≥ 12 mois si réponse ; réduire si créatinine > 30 % au-dessus de la base ; arrêter si DFGe < 30 de façon persistante.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Recommandations 6.2.2.1, 6.3.1.1 ; Figures 54–55 (p. S64–S65)",
+     "passage": "Traitement FSGS primaire."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-4"
+   ]
+  },
+  {
+   "id": "N04-TX-5",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "FSGS de cause indéterminée ou secondaire : pas d'immunosuppression ; traitement de soutien et de la cause ; FSGS génétique : éviter l'immunosuppression.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 6.2.1.1 ; ÖGN FSGS Einleitung",
+     "passage": "Contre-indication pratique de l'immunosuppression."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-5"
+   ]
+  },
+  {
+   "id": "N04-TX-6",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "MN — évaluation du risque : faible = DFGe normal, protéinurie < 3,5 g/j et albumine > 30 g/L (ou baisse > 50 % après 6 mois d'IEC/ARA II) ; modéré = DFGe normal, protéinurie > 3,5 g/j sans baisse > 50 % après 6 mois, sans critère élevé ; élevé = DFGe < 60 et/ou protéinurie > 8 g/j > 6 mois, ou DFGe normal avec protéinurie > 3,5 g/j non réduite de 50 % et au moins un de : albumine < 25 g/L (BCP), anti-PLA2R > 50 RU/ml, α1-microglobuline urinaire > 40 µg/min, IgG urinaire > 1 µg/min, β2-microglobuline > 250 mg/j, index de sélectivité > 0,20 ; très élevé = syndrome néphrotique menaçant ou dégradation rapide inexpliquée.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 3.2.1, Figure 30 (p. S51)",
+     "passage": "Stratification du risque."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-6"
+   ]
+  },
+  {
+   "id": "N04-TX-7",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "MN — traitement selon le risque : faible → attente vigilante ; modéré → attente, rituximab ou anticalcineurine ± glucocorticoïdes ; élevé → rituximab, ou cyclophosphamide + glucocorticoïdes, ou anticalcineurine + rituximab ; très élevé → cyclophosphamide + glucocorticoïdes ; recommandation 1B : rituximab ou cyclophosphamide avec glucocorticoïdes un mois sur deux pendant 6 mois, ou anticalcineurine ≥ 6 mois ; pas d'immunosuppression si protéinurie < 3,5 g/j, albumine > 30 g/L (BCP) et DFGe > 60 ; ni si syndrome néphrotique à DFGe normal sans facteur de risque ni complication grave.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Points 3.3.1–3.3.3, Recommandation 3.3.1, Figure 31 (p. S52)",
+     "passage": "Arbre thérapeutique MN."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-7"
+   ]
+  },
+  {
+   "id": "N04-TX-8",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Schémas MN : cyclophosphamide cyclique (méthylprednisolone 1 g IV 3 jours aux mois 1, 3, 5 ; prednisone 0,5 mg/kg/j mois 1, 3, 5 ; cyclophosphamide 2,5 mg/kg/j mois 2, 4, 6) ; continu (méthylprednisolone idem, prednisone 0,5 mg/kg un jour sur deux mois 1–6, cyclophosphamide 1,5 mg/kg/j mois 1–6) ; rituximab 1 g IV deux fois à 2 semaines ou 375 mg/m² 1 à 4 fois hebdomadaire ; tacrolimus 0,05–0,1 mg/kg/j (3–8 ng/ml) 12 mois ; ciclosporine 3,5 mg/kg/j (125–225 ng/ml) ; MMF en monothérapie inefficace ; corticoïdes seuls inefficaces ; dose cumulée de cyclophosphamide < 36 g (risque de cancer), en pratique ≤ 25 g, ≤ 10 g si désir de fertilité ; diviser la dose par deux si DFGe < 50.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Figure 32 (p. S132), Figure 33, Figure 31 ; ÖGN MN",
+     "passage": "Posologies de référence."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-8"
+   ]
+  },
+  {
+   "id": "N04-TX-9",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Consensus autrichien (MN) : immunosuppression si syndrome néphrotique sans rémission spontanée 6–9 mois après le début, immédiate si perte rapide de fonction, complication grave ou titres très élevés ; rituximab en monothérapie de premier choix (1000 mg initialement si syndrome néphrotique, puis selon cinétique des anti-PLA2R jusqu'à < 2 RE/ml) ; cyclophosphamide au cas par cas ; anticalcineurines encore plus restreintes que dans KDIGO (néphrotoxicité, rechutes à l'arrêt) avec cibles ciclosporine 80–175 ng/ml, tacrolimus 5–8 ng/ml ; pas d'immunosuppression si DFGe < 30 persistant ou fibrose marquée ; réponses à 6 mois 70–90 % (GEMRITUX, MENTOR, STARMEN, RI-CYCLO).",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "Österreichische Gesellschaft für Nephrologie (ÖGN) — Säemann MD, Odler B, Windpessl M et al.",
+     "title": "Diagnostik und Therapie der Membranösen Nephropathie – 2023. Wien Klin Wochenschr 2023;135(Suppl 5):648–655. doi:10.1007/s00508-023-02261-w (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511554/",
+     "version_date": "20.09.2023",
+     "section": "Therapie",
+     "passage": "Position européenne divergente."
+    }
+   ],
+   "resolution": "DIV-5 : Enseigner l'arbre de risque KDIGO, la préférence européenne et le statut d'autorisation suisse ; décision en centre spécialisé. Position KDIGO : Rituximab, cyclophosphamide + glucocorticoïdes ou anticalcineurine selon le risque (1B) ; position européenne : ÖGN : rituximab en monothérapie d'abord ; anticalcineurines très restreintes ; position suisse : Rituximab hors indication (FI MabThera) ; Endoxan a l'indication syndrome néphrotique ; Sandimmun Neoral seulement pour le syndrome idiopathique corticodépendant/résistant.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-9"
+   ]
+  },
+  {
+   "id": "N04-TX-11",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Enfant — premier épisode : prednisone/prednisolone orale 60 mg/m²/j ou 2 mg/kg/j (max 60 mg/j) pendant 4 semaines puis 40 mg/m² ou 1,5 mg/kg (max 40 mg) un jour sur deux pendant 4 semaines (total 8 semaines), ou 6 + 6 semaines (total 12 semaines) [1B] ; au-delà de 12 semaines : plus d'effets indésirables sans moins de rechutes ; prise unique quotidienne possible ; dosage par surface corporelle pour éviter le sous-dosage du jeune enfant.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Recommandation 1.3.1.1, Practice Point 1.3.1.1 (p. S257, S263)",
+     "passage": "Corticothérapie initiale pédiatrique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-11"
+   ]
+  },
+  {
+   "id": "N04-TX-12",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Enfant — rechute : prednisone 60 mg/m²/j ou 2 mg/kg/j (max 60 mg) jusqu'à rémission complète ≥ 3 jours, puis 40 mg/m² ou 1,5 mg/kg (max 40 mg) un jour sur deux pendant 4 semaines ; pas de corticothérapie quotidienne systématique lors des infections (1C) ; rechutes fréquentes sans toxicité : prednisone alternée faible dose (≤ 0,5 mg/kg/dose) ; rechutes fréquentes avec toxicité grave et toute corticodépendance : agent d'épargne (1B) — anticalcineurine ≥ 12 mois (ciclosporine 4–5 mg/kg/j, résiduel 60–150 ng/ml ; tacrolimus 0,1 mg/kg/j, 5–10 ng/ml), cyclophosphamide oral 2 mg/kg/j 12 semaines (cumul max 168 mg/kg, un seul cycle), lévamisole 2,5 mg/kg un jour sur deux (max 150 mg), MMF 1200 mg/m²/j, rituximab 375 mg/m² × 1–4 (dépistage VHB et tuberculose avant) ; corticorésistance : ciclosporine ou tacrolimus en deuxième ligne (1C).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Practice Points 1.3.3.1–1.3.3.6, Recommandations 1.3.2.1, 1.3.3.1, 1.4.1.1, Figure 3 (p. S258–S259)",
+     "passage": "Rechutes et agents d'épargne pédiatriques."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "TX-12"
+   ]
+  },
+  {
+   "id": "N04-TX-13",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Enfant : vitamine D/calcium non requis si SSNS et vitamine D normale, mais prévention de la perte minérale osseuse par calcium et vitamine D dans les formes à rechutes fréquentes/corticodépendantes ou en cas de carence ; pas de protection gastrique systématique par IPP sans facteur de risque.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Figure 5 (p. S260)",
+     "passage": "Mesures associées pédiatriques."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a11",
+   "ledger_refs": [
+    "TX-13"
+   ]
+  },
+  {
+   "id": "N04-TX-14",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Minimiser la toxicité de l'immunosuppression : intensité selon la gravité, dose selon le DFG, informer des effets indésirables, dépister les infections latentes, surveiller les taux sanguins si indiqué, prophylaxies ciblées, mettre à jour les vaccinations, préserver la fertilité, surveiller cancers et infections.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Figure 15 (p. S39)",
+     "passage": "Principes généraux."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "TX-14"
+   ]
+  },
+  {
+   "id": "N04-TX-15",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Rituximab (consensus autrichien) : contre-indications de la FI (infection active, insuffisance cardiaque NYHA IV, grossesse — relatives en cas de maladie grave) ; sérologie hépatite B obligatoire, prophylaxie (ténofovir ou entécavir) si antécédent d'hépatite B, débutée une semaine avant et poursuivie ≥ 1 an après la dernière dose ; IgG de base (hypogammaglobulinémie légère 5–7 g/L, modérée 3–5, sévère ≤ 3) ; réactions perfusionnelles ≈ 25 % ; prémédication paracétamol 1000 mg, (méthyl)prednisolone 50–100 mg, diphénhydramine 30 mg ; compléter les vaccins avant (réponse vaccinale altérée ensuite) ; perte urinaire du rituximab en cas de protéinurie massive.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "european",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Windpessl M, Gauckler P, Zitt E et al.",
+     "title": "Allgemeine Empfehlungen für die Behandlung glomerulärer Erkrankungen – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511582/",
+     "version_date": "2023",
+     "section": "Rituximab (RTX) und andere anti-CD20-Antikörper ; SOP Rituximab",
+     "passage": "Sécurité du rituximab."
+    }
+   ],
+   "resolution": "Recours motivé à la source européenne pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "TX-15"
+   ]
+  },
+  {
+   "id": "N04-TX-16",
+   "chapter_code": "N04",
+   "kind": "treatment",
+   "claim": "Cyclophosphamide (consensus autrichien) : leucocytes à mesurer entre J10 et J14 et dose réduite selon le nadir ; fertilité diminuée selon la dose cumulée (conseil gynécologique, cryoconservation) ; cystite hémorragique due à l'acroléine — hydratation et administration le matin, mesna non obligatoire hors oncologie ; cancers (cutanés non mélanomes, vessie, leucémie myéloïde) si dose > 36 g ; KDIGO : ≤ 200 mg/kg ou 25 g, 10 g pour préserver la fertilité.",
+   "initial_primary_origin": "european",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Endoxan® (cyclophosphamide, FI de la forme intraveineuse)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680254410362",
+    "version_date": "février 2021",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde (fertilité, urotoxicité)",
+    "passage": "FI suisse (forme IV)."
+   },
+   "foreign_sources": [
+    {
+     "origin": "european",
+     "organization": "ÖGN — Windpessl M, Gauckler P, Zitt E et al.",
+     "title": "Allgemeine Empfehlungen für die Behandlung glomerulärer Erkrankungen – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511582/",
+     "version_date": "2023",
+     "section": "Cyclophosphamid",
+     "passage": "Sécurité du cyclophosphamide."
+    }
+   ],
+   "resolution": "DIV-11 : La FI suisse prime pour la prescription ; mentionner la discussion européenne. Position KDIGO : — ; position européenne : ÖGN : non obligatoire hors oncologie (étude de 1018 patients) ; position suisse : FI Endoxan : mesna lors de doses IV > 10 mg/kg.",
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "TX-16"
+   ]
+  },
+  {
+   "id": "N04-TX-10",
+   "chapter_code": "N04",
+   "kind": "follow_up",
+   "claim": "Suivi immunologique MN : anti-PLA2R tous les 3–6 mois selon KDIGO (plus souvent si titres élevés), leur disparition précède la rémission clinique et doit faire renoncer à un traitement supplémentaire ; rémission immunologique complète < 2 RU/ml (ELISA) ou IIFT négative ; contrôle à 6 mois après début du traitement ; consensus autrichien : toutes les 4–12 semaines jusqu'à négativation, puis tous les 3 mois pendant 2–3 ans, puis annuellement ; IgG tous les 6 mois sous rituximab ; si antécédent d'hépatite B, transaminases et PCR VHB tous les 3 mois jusqu'à un an après l'arrêt.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Figure 30 note ‡, Practice Point 3.3.4, Figure 33 ; ÖGN MN « Follow-Up »",
+     "passage": "Monitorage."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a11",
+   "ledger_refs": [
+    "TX-10"
+   ]
+  },
+  {
+   "id": "N04-DEF-6",
+   "chapter_code": "N04",
+   "kind": "follow_up",
+   "claim": "Enfant : rémission complète = RPC ≤ 20 mg/mmol (0,2 g/g) ou bandelette négative/traces ou < 100 mg/m²/j pendant ≥ 3 jours consécutifs ; rémission partielle = RPC > 20 et < 200 mg/mmol et, si disponible, albumine ≥ 30 g/L ; rechute = retour d'une protéinurie de rang néphrotique après rémission complète (en pratique bandelette ≥ 3+ trois jours consécutifs).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Figure 1",
+     "passage": "Définitions de réponse."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a11",
+   "ledger_refs": [
+    "DEF-6"
+   ]
+  },
+  {
+   "id": "N04-DEF-7",
+   "chapter_code": "N04",
+   "kind": "follow_up",
+   "claim": "Enfant : corticosensible = rémission complète dans les 4 semaines de prednisone/prednisolone à dose standard ; corticorésistant = absence de rémission complète à 4 semaines ; période de confirmation entre 4 et 6 semaines (répondeur tardif si rémission complète à 6 semaines) ; rechutes fréquentes = ≥ 2 rechutes dans les 6 premiers mois après rémission initiale ou ≥ 3 par 12 mois ; corticodépendance = 2 rechutes consécutives sous corticothérapie ou dans les 14 jours suivant l'arrêt ; corticorésistance secondaire = échec à 4 semaines lors d'une rechute ultérieure ; anticalcineurine-résistant = pas de rémission partielle après ≥ 6 mois ; multirésistant = pas de rémission complète après 12 mois de deux agents d'épargne de mécanisme distinct.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO Nephrotic Syndrome in Children Work Group",
+     "title": "KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int 2025;107(5S):S241–S289",
+     "url": "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+     "version_date": "avril 2025 (mise à jour du chapitre 4 de 2021)",
+     "section": "Figure 1",
+     "passage": "Classification évolutive pédiatrique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "DEF-7"
+   ]
+  },
+  {
+   "id": "N04-DEF-8",
+   "chapter_code": "N04",
+   "kind": "follow_up",
+   "claim": "Adulte (lésions glomérulaires minimes et hyalinose segmentaire et focale) : rémission complète = protéinurie < 0,3 g/j ou RPC < 30 mg/mmol, créatinine stable, albumine > 35 g/L ; partielle = 0,3–3,5 g/j (RPC 30–350 mg/mmol) et baisse > 50 % ; rechute = > 3,5 g/j (> 350 mg/mmol) après rémission complète ; corticorésistance = protéinurie > 3,5 g/j avec baisse < 50 % malgré prednisone 1 mg/kg/j ou 2 mg/kg un jour sur deux pendant > 16 semaines ; rechutes fréquentes = ≥ 2 en 6 mois ou ≥ 4 en 12 mois ; corticodépendance = rechute sous traitement ou dans les 2 semaines suivant l'arrêt.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Figures 46 (MCD, p. S61) et 50 (FSGS, p. S162)",
+     "passage": "Définitions adultes harmonisées MCD/FSGS."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a10",
+   "ledger_refs": [
+    "DEF-8"
+   ]
+  },
+  {
+   "id": "N04-CPL-6",
+   "chapter_code": "N04",
+   "kind": "follow_up",
+   "claim": "La baisse de la protéinurie vers un niveau non néphrotique relève souvent l'albumine, ce qui réduit le risque thromboembolique et infectieux et améliore les symptômes ; la perte de fonction est largement prévenue si la protéinurie descend sous 0,5 g/j et ralentie sous 1–1,5 g/j (sauf MCD et syndrome corticosensible, où la rémission complète définit l'évolution).",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "1.5 (p. S96)",
+     "passage": "Objectif antiprotéinurique."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a09",
+   "ledger_refs": [
+    "CPL-6"
+   ]
+  },
+  {
+   "id": "N04-CPL-7",
+   "chapter_code": "N04",
+   "kind": "follow_up",
+   "claim": "Une baisse ≥ 40 % du DFGe en 2–3 ans est proposée comme critère substitutif d'insuffisance rénale.",
+   "initial_primary_origin": "international",
+   "final_primary_origin": "international",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "documented_gap",
+    "searched_on": "2026-10-14",
+    "search_scope": "Recherche de sources suisses sur ce point précis",
+    "searched_sources": "Recommandations SSN 2025 (dépistage et identification de la maladie rénale chronique) ; résumé Rev Med Suisse 2022 ; swissnephrology.ch ; revmed.ch ; medicalforum.ch ; recherches web FR/DE du 14.10.2026 (dossier de sources, rubrique gaps)",
+    "gap_reason": "Aucune recommandation suisse applicable à ce point précis n’a été trouvée dans les sources consultées ; la source européenne ou internationale citée est retenue."
+   },
+   "foreign_sources": [
+    {
+     "origin": "international",
+     "organization": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+     "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+     "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+     "version_date": "2021 (chapitre 4 remplacé en 2025)",
+     "section": "Practice Point 1.9.2",
+     "passage": "Critère de suivi."
+    }
+   ],
+   "resolution": "Recours motivé à la source internationale (KDIGO) pour ce point, aucune recommandation suisse applicable n’ayant été trouvée (lacunes du dossier) ; population et limites rappelées dans le registre des sources.",
+   "location": "chapters/N04/N04_b.html#n04-a11",
+   "ledger_refs": [
+    "CPL-7"
+   ]
+  },
+  {
+   "id": "N04-FI-PRED-1",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Prednisone Streuli® : indication autorisée « syndrome néphrotique : lors d'états œdémateux pour le déclenchement de la diurèse et la réduction de la protéinurie en cas de syndrome néphrotique idiopathique non urémique, ou comme conséquence d'un lupus érythémateux » ; comprimés sécables 5, 20, 50 mg ; dose habituelle 5–60 mg/j ; prise unique matinale, alternée (double dose un jour sur deux) ou intermittente possibles ; seuil de Cushing 7,5 mg/j ; après plus de 8–10 jours, arrêt progressif ; doubler voire tripler la dose en cas de maladie intercurrente, hydrocortisone périopératoire.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Prednisone Streuli® comprimés 5/20/50 mg",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "version_date": "juin 2026",
+    "section": "Indications ; Posologie/Mode d'emploi",
+    "passage": "FI suisse du produit exact."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Prednisone Streuli® comprimés 5/20/50 mg",
+    "authorization_number": "29349",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie/Mode d'emploi",
+    "passage": "Syndrome néphrotique: lors d'états œdémateux pour le déclenchement de la diurèse et la réduction de la protéinurie en cas de syndrome néphrotique idiopathique non urémique …"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-PRED-1"
+   ]
+  },
+  {
+   "id": "N04-FI-PRED-2",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Prednisone Streuli® : contre-indications d'un traitement prolongé (hors urgence et substitution) : ulcères gastro-intestinaux, ostéoporose sévère, diabète de type 2, insuffisance rénale, hypertension sévère, antécédents psychiatriques, herpès/zona en phase virémique, varicelle, environ 8 semaines avant et 2 semaines après une vaccination prophylactique, mycoses systémiques, glaucome ; prudence avec AINS (ulcères), diurétiques hypokaliémiants (kaliémie), anticoagulants (effet augmenté ou diminué, contrôler la coagulation), antidiabétiques, inducteurs du CYP3A4 (rifampicine, phénytoïne, carbamazépine) qui réduisent l'effet, inhibiteurs puissants du CYP3A4 (à éviter), ciclosporine (taux augmentés, à contrôler), fluoroquinolones (tendinopathies), vaccins vivants (contre-indiqués) ; grossesse : prednisone/prednisolone à préférer si indispensable (passage placentaire le plus faible) ; pas d'allaitement sous corticothérapie systémique selon la FI.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Prednisone Streuli® comprimés 5/20/50 mg",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "version_date": "juin 2026",
+    "section": "Contre-indications ; Mises en garde ; Interactions ; Grossesse, allaitement",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Prednisone Streuli® comprimés 5/20/50 mg",
+    "authorization_number": "29349",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "accessed_on": "2026-10-14",
+    "section": "Contre-indications ; Mises en garde ; Interactions ; Grossesse, allaitement",
+    "passage": "Contre-indications lors d'une utilisation prolongée … insuffisance rénale, hypertension sévère … environ 8 semaines avant et 2 semaines après des vaccinations prophylactiques …"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-PRED-2"
+   ]
+  },
+  {
+   "id": "N04-FI-PRED-3",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Pédiatrie (FI prednisone) : 0–1 an 25 % de la dose adulte, 2–7 ans 50 %, 8–12 ans 75 % ; arrêt de croissance après 2–3 mois de traitement prolongé ; préférer les schémas alternés ou intermittents ; Spiricort® (prednisolone) : même indication néphrotique, 80 à 120 mg/j recommandés pour le traitement à dose élevée du syndrome néphrotique (FI).",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Prednisone Streuli® comprimés 5/20/50 mg",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "version_date": "juin 2026",
+    "section": "Pédiatrie ; Spiricort® Posologie",
+    "passage": "FI suisses."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Prednisone Streuli® comprimés 5/20/50 mg",
+    "authorization_number": "29349",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680293490370",
+    "accessed_on": "2026-10-14",
+    "section": "Pédiatrie ; Spiricort® Posologie",
+    "passage": "0 jusqu'à 1 an: 25 % de la dose adulte … Pour le traitement à dose élevée de la leucémie aiguë, le syndrome néphrotique et le pemphigus, 80 à 120 mg/jour sont recommandés."
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-PRED-3"
+   ]
+  },
+  {
+   "id": "N04-FI-SOLU",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Solu-Medrol® : indication « syndrome néphrotique : pour déclencher la diurèse et réduire la protéinurie (idiopathique non urémique ou lupique) » ; doses > 250 mg en au moins 30 minutes ; thérapie intermittente ≥ 250 mg/j pendant ≤ 5 jours possible dans les états œdémateux comme la glomérulonéphrite ; hépatites aiguës rapportées à partir d'environ 1 g/j.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Solu-MEDROL® (méthylprednisolone, flacons jusqu'à 1 g)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680351120812",
+    "version_date": "août 2025",
+    "section": "Indications ; Posologie (Thérapie intraveineuse intermittente) ; Mises en garde",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Solu-MEDROL® (méthylprednisolone, flacons jusqu'à 1 g)",
+    "authorization_number": "35112",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680351120812",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie (Thérapie intraveineuse intermittente) ; Mises en garde",
+    "passage": "La durée d'administration … de doses supérieures à 250 mg, de 30 minutes au minimum … à une dose de 250 mg/jour ou plus pendant quelques jours (en règle générale ≤5 jours) …"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-SOLU"
+   ]
+  },
+  {
+   "id": "N04-FI-LASIX",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Lasix® : indication « œdèmes d'origine rénale (en cas de syndrome néphrotique, le traitement de l'affection de base sera prioritaire) » ; adulte : ½–2 comprimés de 40 mg/j au départ ; enfant : 2 mg/kg/j, max 40 mg/j (oral) ; IV : 20–40 mg puis +20 mg toutes les 2 h jusqu'à effet ; enfant IV 1 mg/kg, max 20 mg/j ; dose maximale 1500 mg/j ; contre-indications : anurie, coma/pré-coma hépatique, hypokaliémie ou hyponatrémie sévères, hypovolémie, déshydratation, allaitement, allergie aux sulfamides ; titration prudente en cas d'hypoprotéinémie (syndrome néphrotique) ; contrôler créatinine, urée, potassium, calcium, chlore, bicarbonate ; une forte restriction sodée peut réduire le DFG et l'effet diurétique.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "resolved",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Lasix® comprimés 40 mg (furosémide)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680306290010",
+    "version_date": "mai 2025",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde (Lasix® comprimés et Lasix® injectable, autorisation 30630)",
+    "passage": "FI suisses."
+   },
+   "foreign_sources": [],
+   "resolution": "DIV-12 : Signaler la différence ; Swisspeddose = harmonisation nationale pédiatrique. Position KDIGO : — ; position européenne : — ; position suisse : FI Lasix : 2 mg/kg, max 40 mg/j ; Swisspeddose : 1–2 mg/kg/dose 1–4×/j, max 600 mg/j.",
+   "swissmedic_product": {
+    "product_name": "Lasix® comprimés 40 mg (furosémide)",
+    "authorization_number": "30629",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680306290010",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde (Lasix® comprimés et Lasix® injectable, autorisation 30630)",
+    "passage": "hypoprotéinémie (par ex. lors d'un syndrome néphrotique), une titration de dose avec précaution est nécessaire … La dose maximale recommandée s'élève à 1'500 mg/j"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-LASIX"
+   ]
+  },
+  {
+   "id": "N04-FI-TOREM",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Torem® : œdèmes du syndrome néphrotique : 20 mg le matin, augmentable jusqu'à 100 mg/j ; Torem 200 sécable pour ≥ 50 mg ; contre-indiqué avant 12 ans, en cas d'hypotension, anurie, coma hépatique, grossesse et allaitement, hypovolémie, hyponatrémie ; majore l'ototoxicité et la néphrotoxicité des aminosides, céphalosporines et cytostatiques platinés.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Torem® 2,5/5/10/200 comprimés (torasémide)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680485781446",
+    "version_date": "septembre 2019",
+    "section": "Posologie ; Contre-indications ; Interactions",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Torem® 2,5/5/10/200 comprimés (torasémide)",
+    "authorization_number": "48578",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680485781446",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie ; Contre-indications ; Interactions",
+    "passage": "Traitement d'œdèmes lors de syndrome néphrotique : Commencer le traitement par 2 comprimés de Torem 10 (correspondant à 20 mg …) … jusqu'à 100 mg de torasémide"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-TOREM"
+   ]
+  },
+  {
+   "id": "N04-FI-ALDA",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Aldactone® : indication syndrome néphrotique quand restriction hydrosodée et diurétiques classiques échouent ; 100–200 mg/j (enfant 1,5–3 mg/kg/j répartis) ; plein effet au 3e jour ; contre-indications : IRA, insuffisance rénale sévère (clairance < 30 ml/min), anurie, Addison, hyperkaliémie, hyponatrémie, éplérénone ; hyperkaliémie grave avec potassium, IEC, ARA II, AINS, héparines/HBPM, triméthoprime.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Aldactone® (spironolactone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680272570383",
+    "version_date": "août 2025",
+    "section": "Indications ; Posologie ; Contre-indications ; Interactions",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Aldactone® (spironolactone)",
+    "authorization_number": "27257",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680272570383",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Interactions",
+    "passage": "Syndrome néphrotique Normalement 100-200 mg/jour … Aldactone ne doit être prescrit seulement lorsque la restriction de l'eau et du sel, ainsi que les diurétiques classiques ne donnent pas le résultat escompté."
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-ALDA"
+   ]
+  },
+  {
+   "id": "N04-FI-ZESTRIL",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Zestril® (lisinopril) : indications suisses = hypertension, insuffisance cardiaque, infarctus aigu, diabétique avec microalbuminurie — l'antiprotéinurie du syndrome néphrotique non diabétique est hors indication ; hypertension : 10 mg/j puis 20 mg/j, max étudié 80 mg/j ; dose initiale plus faible si insuffisance rénale, déplétion volémique ou sodée ; contre-indications : angio-œdème, grossesse, aliskirène si diabète ou DFG < 60, sacubitril/valsartan ou racécadotril.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Zestril® (lisinopril)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680492970178",
+    "version_date": "avril 2024",
+    "section": "Indications ; Posologie ; Contre-indications ; Grossesse",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Zestril® (lisinopril)",
+    "authorization_number": "49297",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680492970178",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Grossesse",
+    "passage": "L'emploi de Zestril est contre-indiqué pendant la grossesse."
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-ZESTRIL"
+   ]
+  },
+  {
+   "id": "N04-FI-SORTIS",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Sortis® (atorvastatine) : 10 mg/j au départ, adaptation par paliers ≥ 4 semaines, max 80 mg/j ; avec ciclosporine ne pas dépasser 10 mg/j (exposition × 8,7) ; contre-indications : hépatopathie active, transaminases > 3 × normale persistantes, cholestase, myopathie, grossesse et allaitement ; transaminases avant et pendant.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Sortis® (atorvastatine)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680540850285",
+    "version_date": "avril 2025",
+    "section": "Posologie ; Mises en garde (tableau des interactions) ; Contre-indications",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Sortis® (atorvastatine)",
+    "authorization_number": "54085",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680540850285",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie ; Mises en garde (tableau des interactions) ; Contre-indications",
+    "passage": "Ciclosporine … Ne pas utiliser plus de 10 mg d'atorvastatine par jour … rapport AUC: 8,7 … L'atorvastatine est contre-indiquée pendant la grossesse et l'allaitement."
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-SORTIS"
+   ]
+  },
+  {
+   "id": "N04-FI-CLEXANE",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Clexane® : prophylaxie en médecine 40 mg sc/j ; insuffisance rénale sévère (clairance < 30 ml/min) : 20 mg sc/j ; traitement de la thrombose veineuse : 1 mg/kg sc toutes les 12 h (ou 1,5 mg/kg/j en une injection si non compliquée).",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Clexane® (énoxaparine)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680494563699",
+    "version_date": "février 2026",
+    "section": "Posologie (prophylaxie, insuffisance rénale, traitement TVP)",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Clexane® (énoxaparine)",
+    "authorization_number": "49456, 54297",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680494563699",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie (prophylaxie, insuffisance rénale, traitement TVP)",
+    "passage": "Doses prophylactiques … 40 mg sous-cutanée 1× par jour … Insuffisance rénale sévère … 20 mg sous-cutanée 1× par jour … deux injections par jour de 1 mg/kg"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-CLEXANE"
+   ]
+  },
+  {
+   "id": "N04-FI-MARCOUMAR",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Marcoumar® (phenprocoumone) : INR 2,0–3,0 pour TVP/EP, immobilisation prolongée ; latence 36–72 h, plein effet en 7 jours → débuter sous héparine ; jour 1 : 1½–3 comprimés (4,5–9 mg), jour 2 : 2 comprimés ; INR dès J3–J4 ; ne pas donner si INR > 4,5 ; contre-indications : grossesse, diathèse hémorragique, ulcère, lésion hépatique grave, etc. ; marge étroite, toute comédication modifie l'INR ; Sintrom® (acénocoumarol) : INR habituellement 2–3, dose d'entretien 1–8 mg/j.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Marcoumar® (phenprocoumone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680193950011",
+    "version_date": "octobre 2020",
+    "section": "Posologie ; Surveillance ; Contre-indications ; Sintrom® Posologie",
+    "passage": "FI suisses."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Marcoumar® (phenprocoumone)",
+    "authorization_number": "19395",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680193950011",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie ; Surveillance ; Contre-indications ; Sintrom® Posologie",
+    "passage": "Traitement des thromboses veineuses profondes, des embolies pulmonaires … 2,0-3,0 … L'effet anticoagulant de la phenprocoumone intervient avec un temps de latence de 36 à 72 heures"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-MARCOUMAR"
+   ]
+  },
+  {
+   "id": "N04-FI-ELIQUIS",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Eliquis® : indications suisses = prévention après prothèse de hanche/genou, fibrillation auriculaire non valvulaire, traitement et prévention des récidives de TVP/EP ; aucune indication de prophylaxie liée au syndrome néphrotique (usage hors indication selon ÖGN).",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Eliquis® (apixaban)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+    "version_date": "août 2026",
+    "section": "Indications",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Eliquis® (apixaban)",
+    "authorization_number": "61549",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680615490026",
+    "accessed_on": "2026-10-14",
+    "section": "Indications",
+    "passage": "Prévention des événements thromboemboliques veineux chez les patients adultes après une opération programmée pour prothèse de la hanche ou du genou …"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-ELIQUIS"
+   ]
+  },
+  {
+   "id": "N04-FI-SANDIMMUN",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Sandimmun Neoral® : indication autorisée « syndrome néphrotique idiopathique (surtout lésions minimes, FSGS), adulte et enfant, corticodépendant ou corticorésistant, après échec d'une thérapie cytostatique standard et si la fonction rénale n'est pas de plus de 50 % au-dessous de la norme » ; induction 5 mg/kg/j (adulte) et 6 mg/kg/j (enfant) en 2 prises ; créatinine < 200 µmol/l (adulte), < 140 µmol/l (enfant) ; si créatinine initiale augmentée, dose initiale max 2,5 mg/kg/j ; max 5 (adulte) / 6 (enfant) mg/kg/j ; réduire de 25–50 % si créatinine > 30 % au-dessus de la valeur initiale ; arrêter si aucun effet après 3 mois ; biopsie à envisager après plus d'un an chez la MCD corticodépendante (néphrotoxicité structurelle possible sans hausse de créatinine) ; contre-indications hors greffe : insuffisance rénale (sauf exception néphrotique ci-dessus), hypertension ou infections non contrôlées, cancer ; hyperkaliémie avec IEC/ARA II/épargneurs de potassium ; interactions CYP3A4/P-gp (macrolides, azolés, diltiazem, vérapamil augmentent ; rifampicine, carbamazépine, millepertuis diminuent) ; pas de pamplemousse ; néphrotoxiques (aminosides, AINS, triméthoprime…).",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Sandimmun Neoral® (ciclosporine) capsules et solution buvable",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680526560283",
+    "version_date": "janvier 2026",
+    "section": "Indications ; Posologie (4. Syndrome néphrotique) ; Contre-indications ; Interactions ; Swisspeddose",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Sandimmun Neoral® (ciclosporine) capsules et solution buvable",
+    "authorization_number": "52656, 52657",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680526560283",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie (4. Syndrome néphrotique) ; Contre-indications ; Interactions ; Swisspeddose",
+    "passage": "Pour induire une rémission, la dose quotidienne initiale recommandée, administrée en deux prises séparées, est de 5 mg/kg pour les adultes et de 6 mg/kg pour les enfants … La dose doit être diminuée de 25–50% lorsque le taux sérique de créatinine dépasse de plus de 30% la valeur initiale. Lorsqu'auc"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-SANDIMMUN"
+   ]
+  },
+  {
+   "id": "N04-FI-PROGRAF",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Prograf® (tacrolimus) : indications suisses limitées à la transplantation (foie, rein, cœur) ; usage dans le syndrome néphrotique hors indication ; néphrotoxicité majorée avec aminosides, vancomycine, cotrimoxazole, AINS ; taux à surveiller ; interactions CYP3A4.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Prograf™ (tacrolimus)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680531520234",
+    "version_date": "décembre 2025",
+    "section": "Indications ; Mises en garde (néphrotoxicité) ; Interactions",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Prograf™ (tacrolimus)",
+    "authorization_number": "53152, 53153",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680531520234",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Mises en garde (néphrotoxicité) ; Interactions",
+    "passage": "Prévention de rejets de greffes allogéniques de foie ou de rein …"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-PROGRAF"
+   ]
+  },
+  {
+   "id": "N04-FI-CELLCEPT",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "CellCept® : indication suisse limitée à la prévention du rejet de greffe (rein, cœur, foie) ; contre-indiqué pendant la grossesse (mutagène, tératogène humain : avortements et malformations) et chez la femme en âge de procréer sans contraception hautement efficace.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "CellCept® (mycophénolate mofétil)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680533370011",
+    "version_date": "septembre 2025",
+    "section": "Indications ; Contre-indications ; Grossesse",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "CellCept® (mycophénolate mofétil)",
+    "authorization_number": "53337, 53338, 54701, 54688",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680533370011",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Contre-indications ; Grossesse",
+    "passage": "CellCept est contre-indiqué pendant la grossesse en raison de son potentiel mutagène et tératogène"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-CELLCEPT"
+   ]
+  },
+  {
+   "id": "N04-FI-MABTHERA",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "MabThera® : indications suisses (lymphomes, LLC, polyarthrite rhumatoïde, vascularites à ANCA, pemphigus) sans syndrome néphrotique → hors indication ; contre-indications : hypersensibilité, insuffisance cardiaque NYHA IV ; dépistage VHB (AgHBs et anti-HBc) obligatoire, pas de traitement si hépatite B active ; prémédication paracétamol + antihistaminique avant chaque perfusion ; LEMP rapportées ; posologie GPA/PAM 375 mg/m²/semaine × 4.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "MabThera® perfusion (rituximab)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680543780176",
+    "version_date": "décembre 2025",
+    "section": "Indications ; Contre-indications ; Mises en garde ; Posologie",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "MabThera® perfusion (rituximab)",
+    "authorization_number": "54378",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680543780176",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Contre-indications ; Mises en garde ; Posologie",
+    "passage": "Avant l'instauration du traitement par MabThera, tous les patients doivent être soumis à un dépistage du virus de l'hépatite B (VHB) … au moins la détection de l'antigène HBs et celle de l'anti-HBc"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-MABTHERA"
+   ]
+  },
+  {
+   "id": "N04-FI-ENDOXAN",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Endoxan® : indication « maladies auto-immunes d'évolution menaçante, p. ex. … syndrome néphrotique » ; prescription par un spécialiste expérimenté ; IV continu 3–6 mg/kg/j, intermittent 10–15 mg/kg tous les 2–5 jours ; mesna lors de doses IV > 10 mg/kg ; contre-indications : insuffisance médullaire sévère, cystite, obstacle à l'écoulement urinaire, infections florides, grossesse et allaitement ; infertilité possiblement irréversible (homme : conservation du sperme, pas de conception jusqu'à 6 mois après) ; hydratation et vidanges vésicales pour prévenir la cystite.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Endoxan® (cyclophosphamide, FI de la forme intraveineuse)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680254410362",
+    "version_date": "février 2021",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde (fertilité, urotoxicité)",
+    "passage": "FI suisse (forme IV)."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Endoxan® (cyclophosphamide, FI de la forme intraveineuse)",
+    "authorization_number": "25441, 25442",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680254410362",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde (fertilité, urotoxicité)",
+    "passage": "Maladies auto-immunes d'évolution menaçante P. ex. … syndrome néphrotique … Lors de doses intraveineuses supérieures à 10 mg/kg PC … il faut administrer simultanément du mesna"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p01",
+   "ledger_refs": [
+    "FI-ENDOXAN"
+   ]
+  },
+  {
+   "id": "N04-FI-BACTRIM",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Bactrim forte® : prophylaxie de la pneumonie à Pneumocystis jirovecii chez l'adulte et l'adolescent : 1 comprimé forte trois fois par semaine ; contre-indications : hypersensibilité aux sulfamides/triméthoprime, antécédent de Stevens-Johnson/DRESS, déficit en G6PD, porphyrie, atteinte hépatique grave, clairance < 15 ml/min, anomalies hématologiques (anémie mégaloblastique, thrombopénie, granulopénie), nouveau-nés, troisième trimestre de grossesse, dofétilide ; hyperkaliémie à surveiller (triméthoprime), surtout en insuffisance rénale.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Bactrim forte® comprimés (triméthoprime/sulfaméthoxazole 160/800 mg)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680483060482",
+    "version_date": "mars 2023",
+    "section": "Posologie (prophylaxie) ; Contre-indications ; Mises en garde",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Bactrim forte® comprimés (triméthoprime/sulfaméthoxazole 160/800 mg)",
+    "authorization_number": "48306",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680483060482",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie (prophylaxie) ; Contre-indications ; Mises en garde",
+    "passage": "La posologie recommandée pour la prévention d'une pneumonie à Pneumocystis jirovecii chez l'adulte et l'adolescent est de 1 Comprimé forte trois fois par semaine."
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-BACTRIM"
+   ]
+  },
+  {
+   "id": "N04-FI-ALBUNORM",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Albunorm® : indication suisse = restauration et maintien du volume circulant lorsque la perte de volume est démontrée ; la posologie se fonde sur le volume circulant et non sur l'albuminémie ; l'usage avec diurétique dans l'œdème néphrotique réfractaire est donc hors indication (KDIGO : bénéfice transitoire, preuves faibles).",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Albunorm® 5 %, 20 % (albumine humaine)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680626600032",
+    "version_date": "mars 2023",
+    "section": "Indications ; Posologie",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Albunorm® 5 %, 20 % (albumine humaine)",
+    "authorization_number": "62660",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680626600032",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie",
+    "passage": "Restauration et maintien du volume sanguin circulant lorsque la perte de volume a été démontrée … La mesure adéquate du volume circulant et non l'albuminémie doit être prise en compte"
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-ALBUNORM"
+   ]
+  },
+  {
+   "id": "N04-FI-FORXIGA",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Forxiga® : indiqué pour réduire le risque de progression d'une néphropathie chronique de l'adulte ; ne pas initier si DFGe < 25 ; aucune expérience chez le non-diabétique sans albuminurie ; données insuffisantes et traitement non recommandé chez les patients néphropathes traités par immunosuppresseurs, polykystiques, dialysés ou greffés.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Forxiga® (dapagliflozine)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680651760015",
+    "version_date": "août 2026",
+    "section": "Indications ; Mises en garde (troubles de la fonction rénale ; néphropathie chronique)",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Forxiga® (dapagliflozine)",
+    "authorization_number": "65176",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680651760015",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Mises en garde (troubles de la fonction rénale ; néphropathie chronique)",
+    "passage": "Les données concernant … les patients présentant une néphropathie traités par des immunosuppresseurs … sont insuffisantes. Le traitement de la néphropathie chronique par la dapagliflozine n'est pas recommandé chez ces patients."
+   },
+   "location": "chapters/N04/N04_d.html#n04-p02",
+   "ledger_refs": [
+    "FI-FORXIGA"
+   ]
+  },
+  {
+   "id": "N04-FI-SPIRICORT",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Spiricort® (prednisolone) : même indication néphrotique ; 80 à 120 mg/jour recommandés pour le traitement à dose élevée du syndrome néphrotique (information professionnelle).",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Spiricort® (prednisolone)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680388400109",
+    "version_date": "juin 2026",
+    "section": "Pédiatrie ; Spiricort® Posologie",
+    "passage": "FI suisses."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Spiricort® (prednisolone)",
+    "authorization_number": "38840",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680388400109",
+    "accessed_on": "2026-10-14",
+    "section": "Pédiatrie ; Spiricort® Posologie",
+    "passage": "0 jusqu'à 1 an: 25 % de la dose adulte … Pour le traitement à dose élevée de la leucémie aiguë, le syndrome néphrotique et le pemphigus, 80 à 120 mg/jour sont recommandés."
+   },
+   "location": "chapters/N04/N04_d.html",
+   "ledger_refs": [
+    "dossier_sources.json::spiricort"
+   ]
+  },
+  {
+   "id": "N04-FI-COSAAR",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Cosaar® (losartan) : indication rénale limitée à la néphropathie du diabète de type 2 hypertendu avec rapport albumine/créatinine ≥ 300 mg/g ; hors indication dans le syndrome néphrotique non diabétique.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Cosaar® (losartan)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680529040720",
+    "version_date": "avril 2025",
+    "section": "Indications ; Posologie ; Contre-indications ; Grossesse",
+    "passage": "FI suisse."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Cosaar® (losartan)",
+    "authorization_number": "52904",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680529040720",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Grossesse",
+    "passage": "L'emploi de Zestril est contre-indiqué pendant la grossesse."
+   },
+   "location": "chapters/N04/N04_d.html",
+   "ledger_refs": [
+    "dossier_sources.json::cosaar"
+   ]
+  },
+  {
+   "id": "N04-FI-SINTROM",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Sintrom® (acénocoumarol) : INR habituellement 2 à 3, dose d’entretien 1 à 8 mg/jour.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Sintrom® 4 / Sintrom® 1 mitis (acénocoumarol)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680216930143",
+    "version_date": "novembre 2025",
+    "section": "Posologie ; Surveillance ; Contre-indications ; Sintrom® Posologie",
+    "passage": "FI suisses."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Sintrom® 4 / Sintrom® 1 mitis (acénocoumarol)",
+    "authorization_number": "21693",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680216930143",
+    "accessed_on": "2026-10-14",
+    "section": "Posologie ; Surveillance ; Contre-indications ; Sintrom® Posologie",
+    "passage": "Traitement des thromboses veineuses profondes, des embolies pulmonaires … 2,0-3,0 … L'effet anticoagulant de la phenprocoumone intervient avec un temps de latence de 36 à 72 heures"
+   },
+   "location": "chapters/N04/N04_d.html",
+   "ledger_refs": [
+    "dossier_sources.json::sintrom"
+   ]
+  },
+  {
+   "id": "N04-FI-LASIX_IV",
+   "chapter_code": "N04",
+   "kind": "medication",
+   "claim": "Lasix® injectable : 20 à 40 mg par voie intraveineuse puis +20 mg toutes les 2 h jusqu’à effet ; enfant 1 mg/kg, maximum 20 mg/jour ; dose maximale 1500 mg/jour.",
+   "initial_primary_origin": "swiss",
+   "final_primary_origin": "swiss",
+   "divergence_status": "none",
+   "auditor_verdict": "conforme",
+   "swiss_guideline": {
+    "status": "applicable",
+    "organization": "Swissmedic — information professionnelle (AmiKo)",
+    "title": "Lasix® solution injectable (furosémide)",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680306300177",
+    "version_date": "mars 2025",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde (Lasix® comprimés et Lasix® injectable, autorisation 30630)",
+    "passage": "FI suisses."
+   },
+   "foreign_sources": [],
+   "swissmedic_product": {
+    "product_name": "Lasix® solution injectable (furosémide)",
+    "authorization_number": "30630",
+    "url": "https://amiko.oddb.org/fr/fi?gtin=7680306300177",
+    "accessed_on": "2026-10-14",
+    "section": "Indications ; Posologie ; Contre-indications ; Mises en garde (Lasix® comprimés et Lasix® injectable, autorisation 30630)",
+    "passage": "hypoprotéinémie (par ex. lors d'un syndrome néphrotique), une titration de dose avec précaution est nécessaire … La dose maximale recommandée s'élève à 1'500 mg/j"
+   },
+   "location": "chapters/N04/N04_d.html",
+   "ledger_refs": [
+    "dossier_sources.json::lasix_iv"
+   ]
+  }
+ ]
+}
