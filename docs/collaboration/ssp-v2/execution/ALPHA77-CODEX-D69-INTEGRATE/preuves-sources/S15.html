@@ -1,0 +1,425 @@
+<!-- (logo: String="DESITIN")(show_interaction: Boolean=true) -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AmiKoWeb</title>
+        <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/color-scheme.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/typeahead_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/amiko_style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/interactions_css.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/fulltext_style.css" />
+        <script type="text/javascript" src="/assets/javascripts/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="/assets/javascripts/jquery-ui.js"></script>
+        <script type="text/javascript" src="/javascriptRoutes"></script>
+        <meta name="apple-itunes-app" content="app-id=687642725"/>
+        <meta charset="UTF-8"/>
+    </head>
+    <body onload="move_to_highlight()">
+        
+    <script type="text/javascript" src="/assets/javascripts/typeahead.bundle.corejs.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.favourites.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.searchdb.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/amiko.helpers.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/interaction_callbacks.js"></script>
+
+    <script type="text/javascript" src="/assets/javascripts/system.min.js"></script>
+    <script type="systemjs-module" src="/assets/javascripts/amiko.prescriptions.js"></script>
+
+    <script>setInitialLanguage("http://amiko.oddb.org")</script>
+
+    <header>
+        <!-- COMPENDIUM BUTTON -->
+        <div class="nav-button" id="compendium-button">
+            <div class="center-image">
+                <button class="state-button">
+                    <img border="0" alt="Compendium" src="/assets/images/aips32x32_dark.png" height="28"/>
+                </button>
+                <span style="display: block;">Kompendium</span>
+            </div>
+        </div>
+        <div class="nav-button" id="favourites-button">
+            <div class="center-image">
+                <button class="state-button">
+                    <img border="0" alt="Favourites" src="/assets/images/favorites@2x.png" height="28"/>
+                </button>
+                <span style="display: block;">Favoriten</span>
+            </div>
+        </div>
+        <!-- INTERACTIONS BUTTON -->
+        
+            <div class="nav-button" id="interactions-button">
+                <div class="center-image">
+                    <button class="state-button">
+                        <img border="0" alt="Interactions" src="/assets/images/interactions32x32_dark.png" height="28"/>
+                    </button>
+                    <span style="display: block;">Interaktionen</span>
+                </div>
+            </div>
+        
+        
+            <div class="nav-button" id="prescriptions-button">
+                <div class="center-image">
+                    <button class="state-button --prescription">
+                        <img border="0" alt="Prescriptions" src="/assets/images/prescription.png" height="28"/>
+                    </button>
+                    <span style="display: block;">Rezepte</span>
+                </div>
+            </div>
+        
+        <!-- DOWNLOAD BUTTON -->
+        <div class="nav-button" id="download-button">
+            <div class="center-image">
+                <button id="download-button" onclick="download_links()">
+                    <img border="0" alt="Download" src="/assets/images/download_icon.svg" height="40">
+                </button>
+            </div>
+        </div>
+        <!-- SWIYU LOGIN STATUS -->
+        <div class="nav-button" id="swiyu-status" style="float: right; margin-right: 12px; line-height: 48px;">
+            
+                <a href="/swiyu" style="font-size: 13px; color: blue;">swiyu Login</a>
+            
+        </div>
+        <!-- SPONSORS BUTTONS -->
+        <div class="nav-button" id="sponsor-button">
+            <div class="center-image">
+                
+                    <a id="sponsor-button" href="http://www.desitin.ch" target="_blank">
+                        <img border="0" alt="Desitin" src="/assets/images/desitin_logo.png" height="40">
+                    </a>
+                
+            </div>
+        </div>
+    </header>
+
+    <div id="flex-container">
+        <aside id="flex-aside-one">
+            <div>
+                <button id="language-button" onclick="setLanguage()">DE</button>
+            </div>
+            <form>
+                <div id="input-form">
+                    <div id="num-results" for="input-form" class="badge"></div>
+                    <input id="search-field" class="twitter-typeahead" type="text" value="" placeholder="Suche Präparat..." autofocus/>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button id="price-comparison-button" class="rounded-button">Preisvergleich</button>
+                <button id="article-button" class="rounded-button">Titel</button>
+                <button id="owner-button" class="rounded-button">Inhaberin</button>
+                <button id="substance-button" class="rounded-button">Wirkstoff/ATC</button>
+                <button id="regnr-button" class="rounded-button">Zulassungsnummer</button>
+                <button id="therapy-button" class="rounded-button">Therapie</button>
+                <button id="fulltext-button" class="rounded-button">Volltextsuche</button>
+            </div>
+            <div id="special-dropdown" class="twitter-typeahead"></div>
+        </aside>
+
+        <div id="flex-main-content">
+            <article id="fachinfo-id"><div id="monographie" name="52711"><div class="MonTitle" id="section1">Octostim® 15 µg Solution injectable</div><div class="ownerCompany"><div style="text-align: right">Ferring AG</div></div><div class="paragraph" id="section2"><div class="absTitle">Composition</div><p class="spacing1" style="font-style: italic">Principes actifs</p><p class="spacing1">Desmopressini acetas.</p><p class="spacing1" style="font-style: italic">Excipients</p><p class="spacing1">Natrii chloridum (corresp. Natrium 3,54 mg/ml), Acidum hydrochloridum, Aqua ad iniectabile.</p></div><div class="paragraph" id="section3"><div class="absTitle">Forme pharmaceutique et quantité de principe actif par unité</div><p class="spacing1" style="font-style: italic">Solution injectable/pour perfusion: 1 ampoule (1 ml) contient 15 µg de desmopressine acétate correspondant à 13,4 µg de desmopressine. Pour administration intraveineuse ou sous-cutanée.</p></div><div class="paragraph" id="section4"><div class="absTitle">Indications/Possibilités d’emploi</div><p class="spacing1">Activation pré-opératoire et posttraumatique du facteur VIII et du facteur von Willebrand en présence d&apos;une hémophilie A de degré léger à moyen ou d&apos;une maladie de von Willebrand type I. La préparation peut aussi être utilisée dans le cas suivant:</p><p class="spacing1">Pour abréger le temps de saignement dans les troubles de la fonction thrombocytaire d&apos;origine urémique.</p></div><div class="paragraph" id="section5"><div class="absTitle">Posologie/Mode d’emploi</div><p class="spacing1" style="font-style: italic">Injection intraveineuse</p><p class="spacing1">Diluer à 10 ml, au moyen de soluté isotonique de NaCl, la dose de 0,3 µg/kg de poids corporel et injecter la solution par voie intraveineuse en l&apos;espace de 10-20 minutes. Une fois la dilution opérée, la solution prête à l&apos;emploi doit être utilisée sur-le-champ.</p><p class="spacing1" style="font-style: italic">Perfusion</p><p class="spacing1">Diluer la dose de 0,3 µg/kg de poids corporel avec 50-100 ml de soluté isotonique de NaCl, et perfuser pendant 15-30 minutes, conjointement à un traitement à l&apos;acide tranexamique, une heure et demie avant et à des intervalles de 12 heures après les interventions dentaires ou chirurgicales. Une fois la dilution opérée, la solution prête à l&apos;emploi doit être utilisée sur-le-champ.</p><p class="spacing1">En cas d&apos;effet positif, la dose initiale d&apos;Octostim peut être répétée 1 à 2 fois, à intervalles de 12-24 heures. En cas de répétitions supplémentaires, il faut prévoir une réduction de l&apos;efficacité.</p><p class="spacing1" style="font-style: italic">Injection sous-cutanée</p><p class="spacing1">La dose de 0,3 µg/kg de poids corporel est injectée en une seule fois par voie sous-cutanée, constamment conjointement à un traitement à l&apos;acide tranexamique. L&apos;administration par voie sous-cutanée est particulièrement indiquée en traitement post-opératoire et en cas de saignement aigu. Il convient d&apos;instruire le patient soigneusement de l&apos;application pratique en cas d&apos;automédication par voie sous-cutanée.</p><p class="spacing1">Chez les patients atteints d&apos;hémophilie A, l&apos;augmentation souhaitée du facteur VIII:C est évaluée selon le même critère que lors d&apos;un traitement par le concentré de facteur VIII. Si la perfusion d&apos;Octostim n&apos;entraîne pas l&apos;augmentation souhaitée de la concentration plasmatique de VIII:C, le traitement peut être complété par l&apos;administration d&apos;un concentré de facteur VIII.</p><p class="spacing1">Détermination des facteurs de coagulation et du temps de saignement avant le traitement par Octostim: Les taux plasmatiques de VIII:C et de vWF:Ag augmentent de manière significative après l&apos;administration de desmopressine. Cependant, il n&apos;a pas été possible d&apos;établir une corrélation entre la concentration plasmatique de ces facteurs et le temps de saignement, ni avant ni après l&apos;administration de desmopressine. L&apos;effet de la desmopressine sur le temps de saignement doit donc, si possible, être testé individuellement.</p><p class="spacing1">Pour déterminer le temps de saignement, il convient d&apos;utiliser un test standardisé, par exemple à l&apos;aide de Simplate II. La détermination du temps de saignement et des taux plasmatiques des facteurs de coagulation doit être effectuée en collaboration ou en concertation avec un laboratoire spécialisé dans la coagulation.</p><p class="spacing1" style="font-style: italic">Surveillance du traitement</p><p class="spacing1">La concentration de facteur VIII:C doit être surveillée régulièrement, étant donné qu&apos;une diminution de l&apos;effet a été observée dans quelques cas, lors d&apos;une administration répétée.</p><p class="spacing1">En raison des doses relativement élevées nécessaires pour augmenter l&apos;activité de coagulation du facteur VIII, il est recommandé de contrôler régulièrement l&apos;osmolalité, le sodium plasmatique et le poids corporel, afin d&apos;exclure la possibilité d&apos;une intoxication par l&apos;eau.</p><p class="spacing1">La pression artérielle du patient doit être attentivement surveillée lors de l&apos;administration d&apos;Octostim.</p><p class="spacing1" style="font-style: italic">Instructions posologiques particulières</p><p class="spacing1" style="font-style: italic">Patients présentant des troubles de la fonction hépatique</p><p class="spacing1">Aucune adaptation de la posologie n&apos;est nécessaire chez les patients présentant des troubles de la fonction hépatique (voir «Pharmacocinétique»).</p><p class="spacing1" style="font-style: italic">Patients présentant des troubles de la fonction rénale</p><p class="spacing1">Octostim ne doit pas être utilisé chez les patients présentant une insuffisance rénale modérée ou sévère (voir «Contre-indications»).</p><p class="spacing1" style="font-style: italic">Enfants et adolescents</p><p class="spacing1">L&apos;expérience clinique est limitée concernant l&apos;utilisation de la solution injectable/pour perfusion d&apos;Octostim chez l&apos;enfant. L&apos;administration intraveineuse doit être préférée à la forme nasale, également disponible.</p><p class="spacing1">Chez le petit enfant (de moins de 35 kg de poids corporel), l&apos;automédication lors de blessures critiques se fera avec une injection sous-cutanée de la solution injectable/pour perfusion d&apos;Octostim (0,3 µg/kg, voir «Injection sous-cutanée» plus haut).</p></div><div class="paragraph" id="section6"><div class="absTitle">Contre-indications</div><p class="spacing1">·Hypersensibilité au principe actif ou à l&apos;un des excipients conformément à la composition;</p><p class="spacing1">·Polydipsie habituelle ou psychogène (avec diurèse excédant 40 ml/kg/24h);</p><p class="spacing1">·Antécédents d&apos;angine de poitrine instable et/ou insuffisance cardiaque connue ou suspectée, ainsi que d&apos;autres pathologies nécessitant un traitement diurétique;</p><p class="spacing1">·Hyponatrémie;</p><p class="spacing1">·Insuffisance rénale modérée ou sévère (clairance de la créatinine inférieure à 50 ml/min);</p><p class="spacing1">·Syndrome de sécrétion inappropriée d&apos;ADH (SIADH);</p><p class="spacing1">·Syndrome de von Willebrand-Jürgens (type IIb).</p><p class="spacing1">Octostim est inefficace dans l&apos;hémophilie A et la maladie de von Willebrand avec activité résiduelle inférieure à 5% ainsi que dans la maladie de von Willebrand de type IIB et III.</p></div><div class="paragraph" id="section7"><div class="absTitle">Mises en garde et précautions</div><p class="spacing1">Il est recommandé de maintenir l&apos;équilibre hydrique et électrolytique. Un traitement sans restriction simultanée de l&apos;apport de liquide peut entraîner une rétention d&apos;eau et/ou une hyponatrémie avec ou sans signes d&apos;alerte et symptômes concomitants (voir «Effets indésirables»).</p><p class="spacing1">En cas d&apos;apport hydrique excessif ainsi que lors de l&apos;administration de doses trop élevées, la rétention d&apos;eau qui s&apos;ensuit peut entraîner une prise de poids, une hyponatrémie, des crises convulsives, un œdème cérébral et un coma.</p><p class="spacing1">L&apos;hyponatrémie se caractérise par des taux sériques de sodium trop bas. La diminution de la concentration de sodium dans le sang survient très rarement comme effet secondaire d&apos;Octostim et peut être accompagnée de symptômes tels que prise de poids, céphalées, nausées et formation d&apos;œdème. Dans les cas graves, un œdème cérébral, des crises convulsives et un coma peuvent survenir. En particulier, chez les enfants de moins de 5 ans et les patients âgés (&gt;65 ans), ainsi que chez les patients présentant avant le début du traitement un faible taux de sodium, le risque de troubles de l&apos;équilibre hydrique et de l&apos;équilibre des électrolytes est plus élevé. La prise de liquide doit être limitée dans la mesure du possible et le poids corporel doit être régulièrement contrôlé. En cas de prise de poids progressive, de baisse du taux de sodium sérique à des valeurs &lt;130 mmol/l ou de baisse de l&apos;osmolalité plasmatique en dessous de 270 mOsm/kg de poids corporel, il faut réduire drastiquement l&apos;apport liquidien et interrompre l&apos;administration d&apos;Octostim.</p><p class="spacing1">La desmopressine doit être utilisée avec une prudence particulière chez les patients présentant une mucoviscidose, une pathologie coronaire, une hypertension, une tendance aux thromboses, une insuffisance rénale chronique, une pré-éclampsie, une augmentation de la pression intracrânienne ou des troubles de l&apos;équilibre hydro-électrolytique.</p><p class="spacing1">En raison du risque de développement d&apos;une tachyphylaxie après des administrations répétées de desmopressine, il convient d&apos;envisager d&apos;autres traitements hémostatiques que la desmopressine dans les situations nécessitant une hémostase prolongée (saignements actifs de plus de 2 à 4 jours).</p><p class="spacing1">Après l&apos;autorisation de mise sur le marché, des réactions d&apos;hypersensibilité telles qu&apos;un érythème, une éruption cutanée, de l&apos;urticaire, un prurit, une dyspnée et des œdèmes localisés (périphérique, faciaux) ou généralisés, ont été rapportées en lien avec l&apos;injection d&apos;Octostim. Des réactions d&apos;hypersensibilité graves telles qu&apos;un choc anaphylactique ou des réactions anaphylactoïdes ont également été rapportées. Les réactions d&apos;hypersensibilité ont généralement été observées rapidement après l&apos;administration du médicament et peuvent survenir lors de la première utilisation comme lors des administrations suivantes d&apos;Octostim.</p><p class="spacing1">Chez les patients présentant des maladies nécessitant un traitement par des diurétiques, des mesures doivent être prises pour éviter une surcharge liquidienne.</p><p class="spacing1">Une attention particulière doit être portée au risque de rétention d&apos;eau/hyponatrémie (voir «Effets indésirables»). La prise de liquide doit être limitée dans la mesure du possible et il convient de contrôler régulièrement le poids corporel. En cas de prise de poids progressive, de baisse du taux de sodium sérique à des valeurs &lt;130 mmol/l ou de chute de l&apos;osmolalité plasmatique en dessous de 270 mOsm/kg de poids corporel, il faut réduire drastiquement l&apos;apport liquidien et interrompre l&apos;administration d&apos;Octostim.</p><p class="spacing1">L&apos;injection d&apos;Octostim ne diminue pas le temps de saignement prolongé en cas de thrombocytopénie.</p><p class="spacing1">Des cas de thromboses veineuses de jambe, d&apos;angine de poitrine, d&apos;infarctus aigu du myocarde et d&apos;accident vasculaire cérébral ischémique ont été rapportés après commercialisation, en lien avec des injections d&apos;Octostim pour des indications hématologiques. La prudence est de mise chez les patients présentant des facteurs de risque ou des antécédents de thrombose, de maladies athéroscléreuses cardiovasculaires ou cérébrovasculaires, ou ayant subi une angioplastie.</p><p class="spacing1">La prudence est de mise chez les patients à risque d&apos;hypertension intracrânienne.</p><p class="spacing1">Les nourrissons, les sujets âgés et les patients dont la natrémie se situe à la limite inférieure de la normale peuvent présenter un risque accru d&apos;hyponatrémie.</p><p class="spacing1">Le traitement par Octostim doit être interrompu ou ajusté attentivement, lors d&apos;affections aiguës intercurrentes caractérisées par un déséquilibre hydrique et/ou électrolytique (par ex., infections systémiques, fièvre, gastroentérite), ainsi qu&apos;en cas de saignements excessifs. L&apos;équilibre hydrique et électrolytique doit être étroitement surveillé.</p><p class="spacing1">Une attention particulière est requise en cas d&apos;utilisation concomitante de desmopressine avec des médicaments qui influencent l&apos;homéostasie hydrique et/ou sodique (voir «Interactions»). Chez les patients traités de manière chronique par des médicaments ayant une influence sur l&apos;homéostasie hydrique et/ou sodique, l&apos;injection d&apos;Octostim ne doit être administrée qu&apos;après avoir eu confirmation de la valeur initiale normale de la natrémie.</p><p class="spacing1">Une amplification des symptômes énumérés sous «Effets indésirables» peut survenir en cas d&apos;insuffisance cardiaque, d&apos;hypertension et de néphropathie chronique et l&apos;administration doit se faire avec précaution.</p><p class="spacing1">Octostim ne diminue pas la capacité de réaction et ne conduit pas à la dépendance.</p><p class="spacing1">Le degré d&apos;élévation des facteurs de coagulation varie individuellement. L&apos;action hémostatique d&apos;Octostim doit donc être éprouvée dans chaque cas avant la mise en œuvre du traitement, excepté dans les hémorragies aiguës. De plus, l&apos;administration répétée d&apos;Octostim induit une tachyphylaxie après épuisement des dépôts endothéliaux.</p><p class="spacing1">À des doses élevées, cela peut entraîner une baisse de tension transitoire avec flush et tachycardie réflexe.</p><p class="spacing1">Octostim Solution injectable/pour perfusion contient moins de 1 mmol (23 mg) de sodium par ml, c.-à-d. qu&apos;il est essentiellement «sans sodium».</p></div><div class="paragraph" id="section8"><div class="absTitle">Interactions</div><p class="spacing1" style="font-style: italic">Interactions pharmacocinétiques</p><p class="spacing1">Des études clinqiques d&apos;interaction avec la desmopressine n&apos;ont pas été réalisées. Comme la desmopressine n&apos;est toutefois pas métabolisée de manière importante au niveau hépatique, les interactions correspondantes sont peu probables.</p><p class="spacing1" style="font-style: italic">Interactions pharmacodynamiques</p><p class="spacing1">En cas d&apos;utilisation concomitante de médicaments ayant une influence sur l&apos;homéostasie hydrique et sodique, l&apos;effet antidiurétique de la desmopressine peut être renforcé et de ce fait, le risque de rétention d&apos;eau et/ou d&apos;hyponatrémie peut être augmenté (voir «Mises en garde et précautions»). Il s&apos;agit par exemple des opioïdes, des inhibiteurs sélectifs de la recapture de la sérotonine (ISRS), des antidépresseurs tricycliques, des antirhumatismaux non stéroïdiens (AINS), de la chlorpromazine et de la carbamazépine, ainsi que de certains antidiabétiques de type sulfonylurée.</p><p class="spacing1">L&apos;administration simultanée d&apos;ocytocine peut également entraîner un renforcement de l&apos;effet antidiurétique de la desmopressine.</p><p class="spacing1">Le glibenclamide restreint l&apos;action antidiurétique d&apos;Octostim.</p></div><div class="paragraph" id="section9"><div class="absTitle">Grossesse, allaitement</div><p class="spacing1" style="font-style: italic">Grossesse</p><p class="spacing1">Les données publiées, issues d&apos;études menées sur un nombre limité (n=53) de femmes enceintes atteintes de diabète insipide, ainsi que les données observées chez des femmes enceintes atteintes de complications hémorragiques (n=216) n&apos;ont révélé aucun effet négatif de la desmopressine sur la grossesse ou sur la santé du fœtus ou du nouveau-né.</p><p class="spacing1">À ce jour, aucune autre donnée épidémiologique pertinente n&apos;est disponible. Les études effectuées chez l&apos;animal n&apos;indiquent aucune donnée sur la toxicité de reproduction.</p><p class="spacing1">La prudence est cependant de mise lors de l&apos;utilisation pendant la grossesse.</p><p class="spacing1" style="font-style: italic">Allaitement</p><p class="spacing1">La desmopressine ne pénètre qu&apos;en très faibles quantités dans le lait maternel. Aux doses recommandées, aucun effet n&apos;est donc à attendre sur le nourrisson allaité. Octostim peut être utilisé pendant l&apos;allaitement.</p><p class="spacing1" style="font-style: italic">Fertilité</p><p class="spacing1">Aucune donnée n&apos;est disponible concernant les effets possibles de la desmopressine sur la fertilité pour l&apos;humain. Les expérimentations animales menées avec la desmopressine ne mettent en évidence aucune altération de la fertilité chez les rats mâles et femelles.</p></div><div class="paragraph" id="section10"><div class="absTitle">Effet sur l’aptitude à la conduite et l’utilisation de machines</div><p class="spacing1">Octostim n&apos;a aucun effet ou qu&apos;un effet négligeable sur l&apos;aptitude à conduire des véhicules et à utiliser des machines.</p></div><div class="paragraph" id="section11"><div class="absTitle">Effets indésirables</div><p class="spacing1">L&apos;effet indésirable le plus grave d&apos;Octostim Solution injectable est l&apos;hyponatrémie rapportée le plus fréquemment pendant la surveillance du marché. Elle peut entraîner des céphalées, des nausées, des vomissements, une prise de poids, un malaise, des douleurs abdominales, des crampes musculaires, des sensations vertigineuses, un état confusionnel, des troubles de la conscience et des œdèmes localisés (périphériques, faciaux) ou généralisés, et, dans les cas sévères, des convulsions, un œdème cérébral ou un coma. L&apos;hyponatrémie est due à l&apos;effet antidiurétique, qui résulte d&apos;une augmentation de la réabsorption d&apos;eau au niveau des tubules rénaux et d&apos;une dilution osmotique du plasma. Une attention particulière doit être portée aux mises en garde et précautions d&apos;emploi.</p><p class="spacing1">Une hyponatrémie est réversible. Le traitement doit être individualisé et une sur-correction rapide doit être évitée afin de réduire le risque de complications supplémentaires.</p><p class="spacing1">Les effets indésirables sont répertoriés ci-dessous par discipline médicale du système MedDRA et par fréquence observée dans le cadre des études cliniques et pendant la surveillance du marché lors de l&apos;utilisation de la desmopressine par voie parentérale. Les fréquences d&apos;apparition sont définies comme suit: très fréquent (≥1/10); fréquents (≥1/100, &lt;1/10); occasionnel (≥1/1 000, &lt;1/100); rare (≥1/10 000, &lt;1/1 000); très rare (&lt;1/10 000); fréquence inconnue (principalement sur la base des déclarations spontanées issues de la surveillance du marché, la fréquence précise ne peut être estimée à partir des données disponibles).</p><p class="spacing1" style="font-style: italic">Affections du système immunitaire</p><p class="spacing1" style="font-style: italic">Fréquence inconnue: Réactions d&apos;hypersensibilité (par ex., prurit, exanthème, fièvre, bronchospasme), réactions anaphylactiques et anaphylactoïdes</p><p class="spacing1" style="font-style: italic">Troubles du métabolisme et de la nutrition</p><p class="spacing1" style="font-style: italic">Rare: Hyponatrémie, intoxication par l&apos;eau</p><p class="spacing1" style="font-style: italic">Affections du système nerveux</p><p class="spacing1" style="font-style: italic">Fréquent: Céphalées</p><p class="spacing1" style="font-style: italic">Rare: Vertiges</p><p class="spacing1" style="font-style: italic">Fréquence inconnue: Accident vasculaire cérébral ischémique (observé uniquement chez les patients présentant des facteurs de risque, voir «Mises en garde et précautions»)</p><p class="spacing1" style="font-style: italic">Affections cardiaques</p><p class="spacing1" style="font-style: italic">Fréquent: Tachycardie</p><p class="spacing1" style="font-style: italic">Affections vasculaires</p><p class="spacing1" style="font-style: italic">Fréquent: Flush, hypotension</p><p class="spacing1" style="font-style: italic">Occasionnel: Augmentation transitoire de la pression sanguine</p><p class="spacing1" style="font-style: italic">Rare: Thromboses, infarctus du myocarde aigu (voir «Mises en garde et précautions»)</p><p class="spacing1" style="font-style: italic">Affections gastro-intestinales</p><p class="spacing1" style="font-style: italic">Occasionnel: Douleurs abdominales (aussi à type de crampes), nausées, diarrhée</p><p class="spacing1" style="font-style: italic">Troubles généraux et anomalies au site d&apos;administration</p><p class="spacing1" style="font-style: italic">Fréquent: Fatigue</p><p class="spacing1" style="font-style: italic">Très rare: Convulsions, coma</p><p class="spacing1" style="font-style: italic">Groupes particuliers de patients</p><p class="spacing1">Les données concernant les effets indésirables issus des études cliniques chez les enfants sont très limitées. En cas de non-compensation simultanée d&apos;une carence liquidienne éventuelle, Octostim peut induire une rétention hydrique avec diminution de l&apos;osmolalité sérique et de la natrémie, notamment chez le très jeune enfant et la personne âgée, ainsi qu&apos;une prise de poids, céphalées, nausées et, dans les cas sévères, des convulsions et un coma.</p><p class="spacing1">L&apos;annonce d&apos;effets secondaires présumés après l&apos;autorisation est d&apos;une grande importance. Elle permet un suivi continu du rapport bénéfice-risque du médicament. Les professionnels de santé sont tenus de déclarer toute suspicion d&apos;effet secondaire nouveau ou grave via le portail d&apos;annonce en ligne ElViS (Electronic Vigilance System). Vous trouverez des informations à ce sujet sur www.swissmedic.ch.</p></div><div class="paragraph" id="section12"><div class="absTitle">Surdosage</div><p class="spacing1">Un surdosage de desmopressine entraîne une prolongation de la durée d&apos;action s&apos;accompagnant d&apos;un risque accru de rétention liquidienne et d&apos;hyponatrémie.</p><p class="spacing1">Un surdosage peut survenir notamment en cas d&apos;ajustement posologique imprudent chez les jeunes enfants.</p><p class="spacing1">Les effets indésirables mentionnés ci-dessus surviennent de manière accrue.</p><p class="spacing1" style="font-style: italic">Traitement</p><p class="spacing1">Il n&apos;existe pas d&apos;antidote spécifique, le traitement est symptomatique. Bien qu&apos;il soit nécessaire d&apos;ajuster individuellement le traitement de l&apos;hyponatrémie, les recommandations générales suivantes s&apos;appliquent: interruption du traitement, restriction de l&apos;apport de liquide et si nécessaire, instauration d&apos;un traitement symptomatique.</p><p class="spacing1">Les symptômes d&apos;un surdosage peuvent survenir dans les conditions suivantes:</p><p class="spacing1">·la dose administrée est trop élevée,</p><p class="spacing1">·un apport de liquide excessif a eu lieu simultanément à l&apos;administration d&apos;Octostim ou peu après celle-ci.</p><p class="spacing1">En cas d&apos;hyponatrémie asymptomatique, il faut cesser l&apos;administration de desmopressine et limiter l&apos;apport liquidien.</p><p class="spacing1">En cas d&apos;hyponatrémie symptomatique, le patient peut être placé conjointement sous perfusion de soluté isotonique ou hypertonique de chlorure de sodium.</p></div><div class="paragraph" id="section13"><div class="absTitle">Propriétés/Effets</div><p class="spacing1" style="font-style: italic">Code ATC</p><p class="spacing1">H01BA02</p><p class="spacing1" style="font-style: italic">Mécanisme d&apos;action</p><p class="spacing1">La desmopressine est un dérivé de l&apos;arginine-vasopressine, hormone posthypophysaire endogène de l&apos;homme, chez lequel un groupe aminé de la cystéine a été enlevé (en position 1 du peptide), et la L-arginine (en position 8) a été substituée par la D-arginine. Ces modifications ont permis d&apos;obtenir une durée d&apos;action antidiurétique considérablement plus longue, tandis qu&apos;à une dose usuelle, l&apos;effet vasopresseur, par comparaison avec la L-arginine-vasopressine naturelle, est fortement réduit.</p><p class="spacing1">À une posologie augmentée de façon appropriée, la desmopressine favorise la libération du facteur antihémophilique (facteur VIII:C) et du facteur von Willebrand (type I); l&apos;administration parentérale de 0,3 µg/kg de poids corporel entraîne une élévation 3 ou 4 fois supérieure de ces facteurs de coagulation, à condition que les valeurs initiales soient d&apos;au moins 5%. Le facteur VIII:C atteint des taux maximaux en moins d&apos;une heure par perfusion i.v. et au bout d&apos;une heure et demie à deux heures et demie par voie sous-cutanée. Le contrôle du traitement se fera par l&apos;intermédiaire de différents paramètres de la coagulation, qui seront déterminés par la nature des troubles de la coagulation sous-jacents.</p><p class="spacing1">Dans de nombreux cas d&apos;hémophilie A légère à moyenne et dans la maladie de von Willebrand, Octostim permet donc d&apos;accroître les facteurs de coagulation impliqués en pré-opératoire et en traumatologie. L&apos;on peut ainsi parer les risques et frais inhérents à un traitement substitutif.</p><p class="spacing1">Il est établi également qu&apos;Octostim exerce une action hémostatique dans certaines perturbations congénitales ou acquises de la fonction thrombocytaire.</p><p class="spacing1" style="font-style: italic">Pharmacodynamique</p><p class="spacing1">Voir mécanisme d&apos;action.</p><p class="spacing1" style="font-style: italic">Efficacité clinique</p><p class="spacing1">Aucune information.</p></div><div class="paragraph" id="section14"><div class="absTitle">Pharmacocinétique</div><p class="spacing1" style="font-style: italic">Absorption</p><p class="spacing1">La biodisponibilité systémique de la desmopressine est pratiquement totale par voie intraveineuse. La tmax est inférieure à 20 minutes après injection par voie i.v. La biodisponibilité après injection sous-cutanée est d&apos;environ 85%, par rapport à la voie intraveineuse. Les concentrations plasmatiques maximales sont atteintes après environ 60 minutes à une dose de 0,3 µg/kg, administrée en injection s.c.</p><p class="spacing1" style="font-style: italic">Distribution</p><p class="spacing1">Le volume de distribution est de 0,3-0,5 l/kg. La desmopressine ne traverse pas la barrière hémato-encéphalique. La desmopressine pénètre en très faibles quantités dans le lait maternel et ne traverse pas la barrière placentaire lors de l&apos;utilisation à la posologie recommandée.</p><p class="spacing1" style="font-style: italic">Métabolisme</p><p class="spacing1">La desmopressine n&apos;est métabolisée qu&apos;en petite partie au niveau hépatique.</p><p class="spacing1" style="font-style: italic">Élimination</p><p class="spacing1">La clairance totale a été calculée à 7,6 l/h pour la desmopressine. Chez les volontaires sains, 44 à 60% étaient excrétés sous forme inchangée dans les urines. La demi-vie plasmatique de la desmopressine se situe entre 3 et 4 heures. La durée de l&apos;effet hémostatique dépend de la demi-vie du facteur VIII:C, qui est d&apos;environ 8-12 heures.</p><p class="spacing1" style="font-style: italic">Cinétique pour certains groupes de patients</p><p class="spacing1">Il n&apos;y a pas de différence de sexe dans le comportement pharmacocinétique de la desmopressine.</p></div><div class="paragraph" id="section15"><div class="absTitle">Données précliniques</div><p class="spacing1">Sur la base des études conventionnelles de sécurité pharmacologique, de toxicité en cas d&apos;administration répétée, de génotoxicité et de toxicité sur la reproduction, les données précliniques ne font craindre aucun danger particulier pour l&apos;humain. Aucune étude n&apos;a été réalisée concernant le potentiel carcinogène.</p></div><div class="paragraph" id="section16"><div class="absTitle">Remarques particulières</div><p class="spacing1" style="font-style: italic">Incompatibilités</p><p class="spacing1">Ce médicament ne peut être mélangé qu&apos;aux médicaments mentionnés sous «Remarques concernant la manipulation».</p><p class="spacing1" style="font-style: italic">Stabilité</p><p class="spacing1">Le médicament ne doit pas être utilisé au-delà de la date figurant après la mention «EXP» sur l&apos;emballage.</p><p class="spacing1" style="font-style: italic">Stabilité après ouverture</p><p class="spacing1">La préparation ne contient pas de conservateur. Pour des raisons microbiologiques, la préparation prête à l&apos;emploie doit être utilisée immédiatement après ouverture. Toute solution résiduelle dans l&apos;ampoule doit être jetée.</p><p class="spacing1" style="font-style: italic">Remarques particulières concernant le stockage</p><p class="spacing1">Conserver au réfrigérateur (2-8°C). Conserver le récipient dans son carton pour le protéger de la lumière.</p><p class="spacing1">Conserver hors de portée des enfants.</p><p class="spacing1" style="font-style: italic">Remarques concernant la manipulation</p><p class="spacing1">Octostim Solution injectable/pour perfusion peut être diluée uniquement avec une solution saline isotonique. Après dilution, la solution prête à l&apos;emploi doit être administrée immédiatement.</p><p class="spacing1">Octostim Solution injectable/pour perfusion ne doit pas être trop fortement diluées, car les peptides ont tendance, lorsqu&apos;ils sont fortement dilués, à se fixer par adsorption aux parois des récipients. De ce fait, le patient recevrait une dose plus faible que prévue.</p></div><div class="paragraph" id="section17"><div class="absTitle">Numéro d’autorisation</div><p class="spacing1">52711 (Swissmedic).</p></div><div class="paragraph" id="section18"><div class="absTitle">Présentation</div><p class="spacing1">OCTOSTIM 15 ug, injektions-/infusionslösung, EFP 257.92, PP 296.90, ev.ep.e.c. [B, SL, SB 10%]</p><p class="barcode"><svg height="50" width="200">
+<rect height="100%" width="100%" fill="white"/>
+<g style="stroke:black; stroke-width:2">
+<line x1="10" y1="0" x2="10" y2="45"/>
+<line x1="14" y1="0" x2="14" y2="45"/>
+<line x1="18" y1="0" x2="18" y2="30"/>
+<line x1="22" y1="0" x2="22" y2="30"/>
+<line x1="24" y1="0" x2="24" y2="30"/>
+<line x1="26" y1="0" x2="26" y2="30"/>
+<line x1="28" y1="0" x2="28" y2="30"/>
+<line x1="36" y1="0" x2="36" y2="30"/>
+<line x1="42" y1="0" x2="42" y2="30"/>
+<line x1="50" y1="0" x2="50" y2="30"/>
+<line x1="52" y1="0" x2="52" y2="30"/>
+<line x1="56" y1="0" x2="56" y2="30"/>
+<line x1="60" y1="0" x2="60" y2="30"/>
+<line x1="62" y1="0" x2="62" y2="30"/>
+<line x1="64" y1="0" x2="64" y2="30"/>
+<line x1="70" y1="0" x2="70" y2="30"/>
+<line x1="76" y1="0" x2="76" y2="30"/>
+<line x1="82" y1="0" x2="82" y2="30"/>
+<line x1="84" y1="0" x2="84" y2="30"/>
+<line x1="90" y1="0" x2="90" y2="30"/>
+<line x1="98" y1="0" x2="98" y2="30"/>
+<line x1="102" y1="0" x2="102" y2="45"/>
+<line x1="106" y1="0" x2="106" y2="45"/>
+<line x1="110" y1="0" x2="110" y2="30"/>
+<line x1="112" y1="0" x2="112" y2="30"/>
+<line x1="118" y1="0" x2="118" y2="30"/>
+<line x1="120" y1="0" x2="120" y2="30"/>
+<line x1="124" y1="0" x2="124" y2="30"/>
+<line x1="126" y1="0" x2="126" y2="30"/>
+<line x1="132" y1="0" x2="132" y2="30"/>
+<line x1="134" y1="0" x2="134" y2="30"/>
+<line x1="138" y1="0" x2="138" y2="30"/>
+<line x1="140" y1="0" x2="140" y2="30"/>
+<line x1="142" y1="0" x2="142" y2="30"/>
+<line x1="148" y1="0" x2="148" y2="30"/>
+<line x1="152" y1="0" x2="152" y2="30"/>
+<line x1="154" y1="0" x2="154" y2="30"/>
+<line x1="158" y1="0" x2="158" y2="30"/>
+<line x1="160" y1="0" x2="160" y2="30"/>
+<line x1="166" y1="0" x2="166" y2="30"/>
+<line x1="168" y1="0" x2="168" y2="30"/>
+<line x1="170" y1="0" x2="170" y2="30"/>
+<line x1="174" y1="0" x2="174" y2="30"/>
+<line x1="180" y1="0" x2="180" y2="30"/>
+<line x1="184" y1="0" x2="184" y2="30"/>
+<line x1="194" y1="0" x2="194" y2="45"/>
+<line x1="198" y1="0" x2="198" y2="45"/>
+</g>
+<text x="0" y="44">7</text>
+<text x="21" y="44" letter-spacing="5">680527</text>
+<text x="113" y="44" letter-spacing="5">110296</text>
+</svg></p></div><div class="paragraph" id="section19"><div class="absTitle">Titulaire de l’autorisation</div><p class="spacing1">Ferring AG, 6340 Baar.</p></div><div class="paragraph" id="section20"><div class="absTitle">Mise à jour de l’information</div><p class="spacing1">Novembre 2025</p><div class="s15"/></div><div class="paragraph" id="Section9050">
+<div class="absTitle">Swisspeddose</div>
+<p class="spacing1">Desmopressine (PO) per os<br/>
+ATC-Code: H01BA02<br/>
+Indication: Énurésie nocturne<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">5 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.2 mg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1</p><div class="s12"/></td><td class="s13"><p class="s11">0.4 mg/jour</p><div class="s12"/></td><td class="s13"><p class="s11">Avant de dormir.
+Attention : intoxication par l&apos;eau.
+Réduire la consommation de liquides 1 heure avant et 8 heures après l&apos;administration.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (SL) sublingual<br/>
+ATC-Code: H01BA02<br/>
+Indication: Énurésie nocturne<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">5 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">120 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1</p><div class="s12"/></td><td class="s13"><p class="s11">240 mcg/jour</p><div class="s12"/></td><td class="s13"><p class="s11">Avant de dormir.
+Attention : intoxication par l&apos;eau.
+Réduire la consommation de liquides 1 heure avant et 8 heures après l&apos;administration.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (SQ) sous-cutanée (injection)<br/>
+ATC-Code: H01BA02<br/>
+Indication: Hémophilie A et syndrome de Von Willebrand<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">2 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.3 mcg/kg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Peut être répété toutes les 12 heures. 
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (IV) intraveineuse (perfusion)<br/>
+ATC-Code: H01BA02<br/>
+Indication: Hémophilie A et syndrome de Von Willebrand<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">2 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.3 mcg/kg/dose</p><div class="s12"/></td><td class="s13"><p class="s11"/><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Peut être répété toutes les 12 heures. 
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (IV) intraveineuse (perfusion)<br/>
+ATC-Code: H01BA02<br/>
+Indication: Diabète insipide<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">1 mois - 1 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.05 - 0.4 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 mois - 1 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.025 - 0.2 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">2</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.4 - 1 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.2 - 0.5 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">2</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (PO) per os<br/>
+ATC-Code: H01BA02<br/>
+Indication: Diabète insipide<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">1 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.05 - 0.2 mg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">2 - 3</p><div class="s12"/></td><td class="s13"><p class="s11">1.2 mg/jour</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (NASAL) nasal<br/>
+ATC-Code: H01BA02<br/>
+Indication: Diabète insipide<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">1 mois - 2 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">1 - 15 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1 - 2</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">2 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">2.5 - 20 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1 - 2</p><div class="s12"/></td><td class="s13"><p class="s11">40 mcg/jour</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (SL) sublingual<br/>
+ATC-Code: H01BA02<br/>
+Indication: Diabète insipide<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">2 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">30 - 120 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">2 - 3</p><div class="s12"/></td><td class="s13"><p class="s11">720 mcg/jour</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>
+<p class="spacing1">Desmopressine (SQ) sous-cutanée (injection)<br/>
+ATC-Code: H01BA02<br/>
+Indication: Diabète insipide<br/>
+Type d&apos;utilisation: HARM</p>
+<table class="s14"><colgroup><col span="6" style="background-color: var(--background-color-gray); padding-right: 5px; padding-left: 5px"/></colgroup><thead><tr><th>Âge</th><th>Poids</th><th>Posologie</th><th>Répétitions quotidiennes</th><th>Dose quotidienne maximale</th><th>Remarque</th>
+</tr></thead><tbody><tr><td class="s13"><p class="s11">1 mois - 1 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.05 - 0.4 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 mois - 1 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.025 - 0.2 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">2</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.4 - 1 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">1</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr><tr><td class="s13"><p class="s11">1 an(s) - 18 an(s)</p><div class="s12"/></td><td class="s13"><p class="s11"> kg</p><div class="s12"/></td><td class="s13"><p class="s11">0.2 - 0.5 mcg/dose</p><div class="s12"/></td><td class="s13"><p class="s11">2</p><div class="s12"/></td><td class="s13"><p class="s11">&#32;</p><div class="s12"/></td><td class="s13"><p class="s11">Commencer par une dose faible et titrer en fonction de la réponse clinique.
+Attention : intoxication par l&apos;eau.
+Posologie basée sure l&apos;acétate de desmopressine.</p><div class="s12"/></td>
+</tr></tbody></table>&#32;  </div><div class="paragraph" id="Section9051"/><p class="footer">Auto-generated by <a href="https://github.com/zdavatz/cpp2sqlite">cpp2sqlite</a> on Thu Oct 15 05:07:31 2026
+</p></div></article>
+        </div>
+
+        <aside id="flex-aside-two" class="nav-down">
+            <div id="section-ids"><ul style="list-style-type:none;
+"><li><a onclick="move_to_anchor('section1')">Octostim®</a></li><li><a onclick="move_to_anchor('section2')">Composition</a></li><li><a onclick="move_to_anchor('section3')">Forme pharmaceutique et quantité de principe actif par unité</a></li><li><a onclick="move_to_anchor('section4')">Indications</a></li><li><a onclick="move_to_anchor('section5')">Posologie</a></li><li><a onclick="move_to_anchor('section6')">Contre-indications</a></li><li><a onclick="move_to_anchor('section7')">Précautions</a></li><li><a onclick="move_to_anchor('section8')">Interactions</a></li><li><a onclick="move_to_anchor('section9')">Grossesse, allaitement</a></li><li><a onclick="move_to_anchor('section10')">Conduite</a></li><li><a onclick="move_to_anchor('section11')">Effets indésirables</a></li><li><a onclick="move_to_anchor('section12')">Surdosage</a></li><li><a onclick="move_to_anchor('section13')">Propriétés/Effets</a></li><li><a onclick="move_to_anchor('section14')">Cinétique</a></li><li><a onclick="move_to_anchor('section15')">Préclinique</a></li><li><a onclick="move_to_anchor('section16')">Remarques</a></li><li><a onclick="move_to_anchor('section17')">Numéro d’autorisation</a></li><li><a onclick="move_to_anchor('section18')">Présentation</a></li><li><a onclick="move_to_anchor('section19')">Titulaire</a></li><li><a onclick="move_to_anchor('section20')">Mise à jour</a></li><li><a onclick="move_to_anchor('Section9050')">Swisspeddose</a></li></ul></div>
+            <div id="download-links">
+                <p><a href='https://www.microsoft.com/de-de/store/p/amiko-desitin/9wzdncrdffxc' target="_blank" class="links">Windows<img border="0" alt="Windows" src="/assets/images/windows_logo.svg" height="48"></a></p>
+                <p><a href='https://itunes.apple.com/ch/app/amiko-desitin/id708142753?mt=12' target="_blank" class="links">macOS<img border="0" alt="macOS" src="/assets/images/apple_icon_svg.png" height="48"></a></p>
+                <p><a href='https://itunes.apple.com/ch/app/amiko-desitin/id687642725?mt=8' target="_blank" class="links">iOS<img border="0" alt="iOS" src="/assets/images/apple_icon_svg.png" height="48"></a></p>
+                <p><a href='https://play.google.com/store/apps/details?id=com.ywesee.amiko.de&amp;hl=de' target="_blank" class="links">Android<img border="0" alt="Android" src="/assets/images/android_logo.svg" height="48"></a></p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <div>AmiKo Web</div>
+        <div><a href="https://github.com/zdavatz/amiko-web">Copyright © 2026 ywesee GmbH</a></div>
+    </footer>
+
+    <!-- Button related JS -->
+    <script>
+        function disableButtons() {
+            $('#article-button').removeClass('active');
+            $('#owner-button').removeClass('active');
+            $('#substance-button').removeClass('active');
+            $('#regnr-button').removeClass('active');
+            $('#therapy-button').removeClass('active');
+            $('#fulltext-button').removeClass('active');
+        }
+
+        function getURLParameter(theParameter) {
+            var params = window.location.search.substr(1).split('&');
+            for (var i = 0; i < params.length; i++) {
+                var p=params[i].split('=');
+                if (p[0] == theParameter) {
+                    return decodeURIComponent(p[1]);
+                }
+            }
+            if (window.location.href.contains('fulltext'))
+                return 'fulltext';
+            return false;
+        }
+
+        $('#article-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+            $(this).addClass('active');
+        });
+        $('#owner-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Inhaberin...');
+            $(this).addClass('active');
+        });
+        $('#substance-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Wirkstoff/ATC...');
+            $(this).addClass('active');
+        });
+        $('#regnr-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Zulassungsnummer...');
+            $(this).addClass('active');
+        });
+        $('#therapy-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Therapie...');
+            $(this).addClass('active');
+        });
+        $('#fulltext-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Suche Volltext...');
+            $(this).addClass('active');
+        });
+        $('#price-comparison-button').click(function() {
+            disableButtons();
+            $('#search-field').attr('placeholder', 'Präparat Preisvergleich...');
+            $(this).addClass('active');
+        });
+
+        var query_var = getURLParameter('type');
+        if (query_var) {
+            if (query_var == 'title') {
+                localStorage.setItem('search-type', 1);
+            } else if (query_var == 'author') {
+                localStorage.setItem('search-type', 2);
+            } else if (query_var == 'atc') {
+                localStorage.setItem('search-type', 3);
+            } else if (query_var == 'regnr') {
+                localStorage.setItem('search-type', 4);
+            } else if (query_var == 'therapy') {
+                localStorage.setItem('search-type', 5);
+            } else if (query_var == 'fulltext') {
+                localStorage.setItem('search-type', 6);
+            } else if (query_var === 'pricecomparison') {
+                localStorage.setItem('search-type', 9);
+            } else {
+                localStorage.setItem('search-type', 1);
+            }
+        }
+
+        if (localStorage.getItem('search-type')==1) {
+            $('#article-button').addClass('active');
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+        } else if (localStorage.getItem('search-type')==2) {
+            $('#owner-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Inhaberin...');
+        } else if (localStorage.getItem('search-type')==3) {
+            $('#substance-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Wirkstoff/ATC...');
+        } else if (localStorage.getItem('search-type')==4) {
+            $('#regnr-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Zulassungsnummer...');
+        } else if (localStorage.getItem('search-type')==5) {
+            $('#therapy-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Therapie...');
+        } else if (localStorage.getItem('search-type')==6) {
+            $('#fulltext-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Suche Volltext...');
+        } else if (localStorage.getItem('search-type')==9) {
+            $('#price-comparison-button').addClass('active')
+            $('#search-field').attr('placeholder', 'Präparat Preisvergleich...');
+        } else {
+            $('#article-button').addClass('active');
+            $('#search-field').attr('placeholder', 'Suche Präparat...');
+        }
+
+        
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+            (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-47115045-2', 'auto');
+            ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    </body>
+</html>
+
