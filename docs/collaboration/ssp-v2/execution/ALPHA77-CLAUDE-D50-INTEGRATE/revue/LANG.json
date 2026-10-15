@@ -4,7 +4,7 @@
  "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
  "reviewer": "Agent P (préparateur et contrôleur), session distincte de l’Agent W",
  "date": "2026-10-15",
- "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
+ "reviewed_commit": "9df4a9ece7f5755f1a8abb34b6f56224477cf185",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -19,14 +19,14 @@
  "reviewed_files_sha256": {
   "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
   "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
-  "chapters/D50/D50_c.html": "04d5b9fc232a2421e4c5ce090f55a1960f7c96181da1dd7e61a912fb1bac9406",
+  "chapters/D50/D50_c.html": "13843b795549b77340ef4522f9c4c7a466bb614df0f8484b39d7eda3f3a44563",
   "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
   "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
-  "chapters/D50/D50_pop2.html": "2ff1e769baaea5ef88e7c2dc1c3b27d26b2e0d5721d282c05d8757da3396d160",
+  "chapters/D50/D50_pop2.html": "5d1bd35709cf0a28080c9b655ec78c3c95d0dfadf60069e2555c2f1ac819df38",
   "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
   "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
  },
- "reviewed_files_note": "Empreintes recalculées par P au commit b07684fb (sept fichiers de cœur et image du frottis normal, inchangée) ; le reçu Alpha doit déclarer exactement ces fichiers pour que les empreintes concordent.",
+ "reviewed_files_note": "Empreintes recalculées par P au commit 9df4a9ec : sept fichiers de cœur et image du frottis normal, inchangée. Le reçu Alpha doit déclarer exactement ces fichiers.",
  "requirements_reviewed": {
   "fundamental_analytical_semiology": true
  },
@@ -75,7 +75,7 @@
   },
   {
    "id": "LANG-ANAT-1",
-   "status": "open",
+   "status": "resolved",
    "gravite": "MINEUR",
    "bloquant": false,
    "constat": "« une règle physiologique fait perdre environ 50 mL de sang » : au sens menstruel, « règles » s’emploie au pluriel ; le singulier se lit comme « une norme physiologique ». La même tournure figure dans le Pareto.",
@@ -84,11 +84,14 @@
    "sources": [
     "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : § 2.4 (« Bei einer physiologischen Regelblutung gehen etwa 50 ml Blut und somit 25 mg Eisen monatlich verloren »)"
    ],
-   "fond_inchange": true
+   "fond_inchange": true,
+   "evidence": [
+    "Corrigé dans D50_c (« des règles physiologiques font perdre environ 50 mL de sang, soit 25 mg de fer, par cycle ») et dans le Pareto de D50_pop2 ; conforme à Onkopedia § 2.4."
+   ]
   },
   {
    "id": "LANG-ANAT-2",
-   "status": "open",
+   "status": "resolved",
    "gravite": "MINEUR",
    "bloquant": false,
    "constat": "« Le corps humain ne dispose d’aucun moyen d’excréter activement le fer. Selon Onkopedia 2025, la carence naît donc surtout d’une perte… » : le connecteur « donc » crée une déduction que la source n’énonce pas. L’absence d’excrétion active n’implique pas, à elle seule, que la carence vienne des pertes.",
@@ -97,18 +100,24 @@
    "sources": [
     "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : § 2.4 (« Ganz überwiegend entsteht ein Eisenmangel durch einen vermehrten Verlust oder Verbrauch, nur selten durch Resorptionsstörungen. Der menschliche Körper hat keine Möglichkeit, Eisen aktiv auszuscheiden. »)"
    ],
-   "fond_inchange": true
+   "fond_inchange": true,
+   "evidence": [
+    "Corrigé : « donc » supprimé."
+   ]
   },
   {
    "id": "LANG-ANAT-3",
-   "status": "open",
+   "status": "resolved",
    "gravite": "MINEUR",
    "bloquant": false,
    "constat": "Figure 7 à 390 px : le texte du SVG (font-size 18 dans un viewBox de 520 de large) s’affiche à environ 10 px, petit mais lisible ; aucun débordement horizontal.",
    "ancre": "chapters/D50/D50_c.html, #d50-s-anat figure svg",
    "correction_proposee": "Facultatif : porter font-size à 20–21 en réduisant les libellés, ou réduire la largeur du viewBox.",
    "sources": [],
-   "fond_inchange": true
+   "fond_inchange": true,
+   "evidence": [
+    "Corrigé : viewBox 440 et font-size 20. Rendu Chromium 1194 à 390 px : texte lisible, entièrement contenu dans les cadres, débordement horizontal nul, aucune erreur JavaScript (captures/P_anatomie_figure7_390px_v2.png)."
+   ]
   },
   {
    "id": "LANG-ANAT-OK",
@@ -124,7 +133,8 @@
   "Fichiers finaux lus au commit 24757d7e.",
   "Vérification mécanique des 175 entrées de propositions.json.",
   "Rendu 390 px avec police 24 px : libellé « Sémiologie fondamentale et analytique » sur une ligne, largeur du document 390 px (captures/P_semiologie_390px_police24.png).",
-  "Revue de la cinquième discipline (Anatomie) au commit b07684fb : python3 test_v7.py --static D50 → OK (45 077 mots, 96 fenêtres, 9 quiz, 11 Pareto) ; build_medina.audit(src, name) → {} pour les six fichiers HTML D50 et pour #d50-s-anat ; empreintes recalculées."
+  "Revue de la cinquième discipline (Anatomie) au commit b07684fb : python3 test_v7.py --static D50 → OK (45 077 mots, 96 fenêtres, 9 quiz, 11 Pareto) ; build_medina.audit(src, name) → {} pour les six fichiers HTML D50 et pour #d50-s-anat ; empreintes recalculées.",
+  "Contre-vérification au commit 9df4a9ec : rendu Chromium 1194 du fragment S06 par P à 1280 et 390 px. Six sous-onglets, Sémiologie en premier avec aria-selected true ; figure 7 non anatomique (cadres, flèche, texte), sans débordement ; Pareto « 104 mots sur 1219, 9 % » ; aucune erreur JavaScript. build_medina.audit(src, name) → {} pour les six fichiers HTML D50 ; test_v7.py --static D50 → OK (45 189 mots, 96 fenêtres, 9 quiz, 11 Pareto) ; audit_sciences : seule erreur restante, le faux positif connu de d50-s-histo."
  ],
  "unresolved_blockers": [],
  "limits": [
@@ -137,6 +147,13 @@
    "date": "2026-10-15",
    "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
    "objet": "Cinquième discipline « Anatomie » (#d50-s-anat, environ 1066 mots, figure 7) et Pareto pareto-d50-s-anat (D50_pop2.html), ajoutés par W au commit b07684fb",
+   "independance": "Revue IA par l’Agent P, distincte de l’Agent W auteur ; ce n’est pas une validation médicale humaine."
+  },
+  {
+   "id": "REVUE-5e-DISCIPLINE-ANAT-CLOTURE",
+   "date": "2026-10-15",
+   "reviewed_commit": "9df4a9ece7f5755f1a8abb34b6f56224477cf185",
+   "objet": "Contre-vérification des corrections de W (commit 9df4a9ec) sur les constats MED-ANAT et LANG-ANAT",
    "independance": "Revue IA par l’Agent P, distincte de l’Agent W auteur ; ce n’est pas une validation médicale humaine."
   }
  ]

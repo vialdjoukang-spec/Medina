@@ -4,7 +4,7 @@
  "mission": "ALPHA77-CLAUDE-D50-INTEGRATE",
  "reviewer": "Agent P (préparateur et contrôleur), session distincte de l’Agent W",
  "date": "2026-10-15",
- "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
+ "reviewed_commit": "9df4a9ece7f5755f1a8abb34b6f56224477cf185",
  "base_commit": "abd681e5175db8c89e87dd7b83f96d0249d81cd7",
  "medical_human_validation": false,
  "source_files_sha256": {
@@ -19,19 +19,19 @@
  "reviewed_files_sha256": {
   "chapters/D50/D50_a.html": "15a4d7dc66d690ea28e2873afff96b381a76e2ce15c848e18230cc0417725f9b",
   "chapters/D50/D50_b.html": "fed859c7a0d04a543251826812ddd3389334e635c78cbf7811f7a108bbfe3136",
-  "chapters/D50/D50_c.html": "04d5b9fc232a2421e4c5ce090f55a1960f7c96181da1dd7e61a912fb1bac9406",
+  "chapters/D50/D50_c.html": "13843b795549b77340ef4522f9c4c7a466bb614df0f8484b39d7eda3f3a44563",
   "chapters/D50/D50_d.html": "ae53b5d54320d473d385f46d7a807374f675248f0c1fb24f72dc8788cab1c844",
   "chapters/D50/D50_pop1.html": "848efe93130a77d5299ac17f6cfb15a1ed84a0762d790022965c1150c11fdac7",
-  "chapters/D50/D50_pop2.html": "2ff1e769baaea5ef88e7c2dc1c3b27d26b2e0d5721d282c05d8757da3396d160",
+  "chapters/D50/D50_pop2.html": "5d1bd35709cf0a28080c9b655ec78c3c95d0dfadf60069e2555c2f1ac819df38",
   "glossary/d50.py": "be6f88189dfa947b8895730870aa88256b65c8c4103e21175b6f6eafeadd4f7f",
   "assets/img/d50/alpha/claude/normal_peripheral_blood_smear_giemsa.jpg": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9"
  },
- "reviewed_files_note": "Empreintes recalculées par P au commit b07684fb (sept fichiers de cœur et image du frottis normal, inchangée) ; le reçu Alpha doit déclarer exactement ces fichiers pour que les empreintes concordent.",
+ "reviewed_files_note": "Empreintes recalculées par P au commit 9df4a9ec : sept fichiers de cœur et image du frottis normal, inchangée. Le reçu Alpha doit déclarer exactement ces fichiers.",
  "requirements_reviewed": {
   "fundamental_analytical_semiology": true
  },
  "kind": "MED",
- "status": "open",
+ "status": "closed",
  "findings": [
   {
    "id": "MED-M1",
@@ -155,9 +155,9 @@
   },
   {
    "id": "MED-ANAT-M1",
-   "status": "open",
+   "status": "resolved",
    "gravite": "MAJEUR",
-   "bloquant": true,
+   "bloquant": false,
    "constat": "Le paragraphe qui suit la figure 7 affirme : « chaque étape n’est franchie que si la précédente n’a pas trouvé de cause suffisante ». Chez l’homme et la femme ménopausée, cela laisse entendre qu’une sérologie cœliaque positive ou une hématurie dispense de la gastroscopie et de la coloscopie. La BSG 2021 range l’analyse d’urine, le dépistage cœliaque et les endoscopies dans le même bilan initial (recommandation 7). Elle signale une double lésion dans 1 à 10 % des cas, surtout chez le sujet âgé, et recommande chez lui la double endoscopie avec biopsies duodénales, parce que la sérologie y est moins sensible et que le risque de cancer est plus élevé. Elle juge aussi dangereux d’attribuer automatiquement la carence à une cause apparente. Le texte se contredit lui-même : son encadré « Science → clinique » dit qu’une cause apparente n’exclut pas une seconde cause digestive. Le risque est de ne pas voir un cancer colique.",
    "ancre": "chapters/D50/D50_c.html, #d50-s-anat-body, paragraphe qui suit la figure 7 (« Le schéma se lit de haut en bas : chaque étape n’est franchie que si la précédente n’a pas trouvé de cause suffisante. ») ; légende de la figure 7",
    "correction_proposee": "Remplacer la phrase par : « Le schéma se lit de haut en bas. Chez l’homme et la femme ménopausée, les étapes 1 à 3 forment un seul bilan initial : une hématurie ou une sérologie cœliaque positive ne dispense pas des endoscopies, car une double cause existe et la BSG 2021 juge dangereux d’attribuer automatiquement la carence à une cause apparente. Seule l’étape 4 dépend des précédentes : elle n’intervient qu’après des endoscopies de bonne qualité négatives, si la réponse au fer est insuffisante ou si la carence récidive. » Ajouter à la légende : « Les étapes 1 à 3 constituent le bilan initial. »",
@@ -166,12 +166,13 @@
     "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : § 3.6.2 (endoscopie « wenn keine andere eindeutige Ursache des Eisenmangels vorliegt »), formulation plus permissive, que la BSG précise pour le sujet à risque"
    ],
    "evidence": [
-    "D50_c.html au commit b07684fb, lu en entier pour #d50-s-anat ; texte BSG extrait du HTML PMC et relu."
+    "D50_c.html au commit b07684fb, lu en entier pour #d50-s-anat ; texte BSG extrait du HTML PMC et relu.",
+    "Corrigé au commit 9df4a9ec et vérifié contre la BSG 2021 (recommandation 7, double lésion de 1 à 10 %, section Coeliac disease and IDA chez le sujet âgé) et contre Onkopedia § 3.6.2. Le paragraphe dit maintenant que les étapes 1 à 3 forment un seul bilan initial et qu’une hématurie ou une sérologie positive ne dispense pas des endoscopies. La figure 7 est refaite avec un cadre pointillé « Bilan initial, réalisé en entier » ; seule l’étape 4 suit « si bilan négatif ». Réserve de nuance, non bloquante : la BSG écrit « might be » (« pourrait être ») pour la double endoscopie chez le sujet âgé, et le texte la rend par « juge plus appropriée »."
    ]
   },
   {
    "id": "MED-ANAT-m1",
-   "status": "open",
+   "status": "resolved",
    "gravite": "MINEUR",
    "bloquant": false,
    "constat": "La rubrique « Les lieux de perte » place la maladie cœliaque parmi les « lésions rapportées » de la ligne Duodénum et intestin grêle. La BSG 2021 (tableau 1) et Onkopedia (tableau 2) la classent comme une cause de malabsorption, non comme une perte de sang. Elle figure déjà, à juste titre, dans la rubrique des portes d’entrée. Le mélange brouille la distinction en trois places : entrée, réserve, perte.",
@@ -180,11 +181,14 @@
    "sources": [
     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral ouvert par P le 15.10.2026) : tableau 1 (Malabsorption syndromes → Enteropathies → Coeliac disease)",
     "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : tableau 2 (« verminderte Aufnahme … Malabsorption, Zöliakie, M. Whipple »)"
+   ],
+   "evidence": [
+    "Corrigé : « maladie cœliaque, par malabsorption plutôt que par perte », conforme au tableau 1 de la BSG et au tableau 2 d’Onkopedia."
    ]
   },
   {
    "id": "MED-ANAT-m2",
-   "status": "open",
+   "status": "resolved",
    "gravite": "MINEUR",
    "bloquant": false,
    "constat": "La maladie de Rendu-Osler n’apparaît que dans la ligne Voies aériennes. Onkopedia (tableau 2) la cite parmi les pertes par saignement, à côté des lésions digestives (angiodysplasies, polypes, carcinomes). La BSG 2021 précise que l’examen physique peut parfois révéler le diagnostic.",
@@ -193,11 +197,14 @@
    "sources": [
     "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : tableau 2 (« Verlust durch Blutung : Refluxösophagitis, Hernien, Ulcera, Polypen, Karzinome, chronische Entzündung, Angiodysplasien, M. Osler »)",
     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral ouvert par P le 15.10.2026) : « Physical examination … may on occasion provide the diagnosis, for example, in hereditary haemorrhagic telangiectasia »"
+   ],
+   "evidence": [
+    "Corrigé : la maladie de Rendu-Osler figure aussi dans la ligne « Tout le tube digestif », conforme au tableau 2 d’Onkopedia."
    ]
   },
   {
    "id": "MED-ANAT-m3",
-   "status": "open",
+   "status": "resolved",
    "gravite": "MINEUR",
    "bloquant": false,
    "constat": "La phrase « Une gastrite atrophique, une achlorhydrie, une résection gastrique ou une chirurgie bariatrique privent le fer de l’acidité ou du passage duodénal » attribue un mécanisme qu’aucune des sources citées n’énonce pour la chirurgie bariatrique. La BSG 2021 retient surtout un apport réduit et une malabsorption. La gastrectomie longitudinale ne court-circuite pas le duodénum.",
@@ -206,6 +213,9 @@
    "sources": [
     "BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral ouvert par P le 15.10.2026) : « Reduced nutritional intake and malabsorption are probably the major underlying mechanisms »",
     "Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) : § 2.3 (« Verbessert wird die Eisenaufnahme des Non-Häm-Eisens durch sauren Magensaft ») et tableau 2"
+   ],
+   "evidence": [
+    "Corrigé : l’acidité est réservée à la gastrite atrophique, à l’achlorhydrie et à la résection gastrique ; pour la chirurgie bariatrique, le texte retient « apport réduit et malabsorption », mot pour mot selon la BSG 2021."
    ]
   },
   {
@@ -236,11 +246,10 @@
   "Rendu Chromium 1194 du fragment S06 construit dans le scratchpad : aucune erreur JavaScript.",
   "Enrichissements MED-E1 à E5 présents (journal integration/corrections.json, vérification par sondage).",
   "Revue de la cinquième discipline (Anatomie) au commit b07684fb : python3 test_v7.py --static D50 → OK (45 077 mots, 96 fenêtres, 9 quiz, 11 Pareto) ; build_medina.audit(src, name) → {} pour les six fichiers HTML D50 et pour #d50-s-anat ; empreintes recalculées.",
-  "Sources ouvertes par P pour l’Anatomie le 15.10.2026 : Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) ; BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral ouvert par P le 15.10.2026) ; Clénin, Swiss Med Wkly 2017;147:w14434 (texte intégral smw.ch ouvert par P le 15.10.2026)."
+  "Sources ouvertes par P pour l’Anatomie le 15.10.2026 : Onkopedia « Eisenmangel und Eisenmangelanämie », avril 2025 (texte intégral ouvert par P le 15.10.2026) ; BSG 2021, Snook et al., Gut, PMC8515119 (texte intégral ouvert par P le 15.10.2026) ; Clénin, Swiss Med Wkly 2017;147:w14434 (texte intégral smw.ch ouvert par P le 15.10.2026).",
+  "Contre-vérification au commit 9df4a9ec : rendu Chromium 1194 du fragment S06 par P à 1280 et 390 px. Six sous-onglets, Sémiologie en premier avec aria-selected true ; figure 7 non anatomique (cadres, flèche, texte), sans débordement ; Pareto « 104 mots sur 1219, 9 % » ; aucune erreur JavaScript. build_medina.audit(src, name) → {} pour les six fichiers HTML D50 ; test_v7.py --static D50 → OK (45 189 mots, 96 fenêtres, 9 quiz, 11 Pareto) ; audit_sciences : seule erreur restante, le faux positif connu de d50-s-histo."
  ],
- "unresolved_blockers": [
-  "MED-ANAT-M1 (MAJEUR) : la règle de lecture séquentielle de la figure 7 laisse croire qu’une sérologie cœliaque positive ou une hématurie dispense des endoscopies chez l’homme et la femme ménopausée ; correction proposée dans le constat."
- ],
+ "unresolved_blockers": [],
  "limits": [
   "Revue IA, distincte d’une validation médicale humaine.",
   "Maastricht VI/Florence 2022 et règles suisses des donneurs de sang non lus (lacunes héritées, déclarées).",
@@ -252,6 +261,13 @@
    "date": "2026-10-15",
    "reviewed_commit": "b07684fb015977355b3b6d9dcbcbe45e0f1be789",
    "objet": "Cinquième discipline « Anatomie » (#d50-s-anat, environ 1066 mots, figure 7) et Pareto pareto-d50-s-anat (D50_pop2.html), ajoutés par W au commit b07684fb",
+   "independance": "Revue IA par l’Agent P, distincte de l’Agent W auteur ; ce n’est pas une validation médicale humaine."
+  },
+  {
+   "id": "REVUE-5e-DISCIPLINE-ANAT-CLOTURE",
+   "date": "2026-10-15",
+   "reviewed_commit": "9df4a9ece7f5755f1a8abb34b6f56224477cf185",
+   "objet": "Contre-vérification des corrections de W (commit 9df4a9ec) sur les constats MED-ANAT et LANG-ANAT",
    "independance": "Revue IA par l’Agent P, distincte de l’Agent W auteur ; ce n’est pas une validation médicale humaine."
   }
  ]
