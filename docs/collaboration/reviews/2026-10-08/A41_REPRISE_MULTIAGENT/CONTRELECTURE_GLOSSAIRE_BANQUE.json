@@ -1,0 +1,3374 @@
+{
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "reviewer": "Codex poste réception / contrelecture indépendante",
+  "generated_at_utc": "2026-10-08T12:52:27.537313+00:00",
+  "decision": "favorable_sur_le_perimetre_glossaire_et_banque_figes",
+  "blocking": 0,
+  "major": 0,
+  "new_minor": 0,
+  "scope": {
+    "draft_only": true,
+    "source_root": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources",
+    "glossary_file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/glossary/a41.py",
+    "glossary_sha256": "f7d9e45c7df4b04d4b746989fbf3b7808dfec9712415fef0de51533affc2d69a",
+    "bank_file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_justifications.json",
+    "bank_sha256": "c47273d990cbbc4e68a1f0d0620e4f17c6be96f507a1747e1866699a56c18822",
+    "glossary_keys": 59,
+    "glossary_added": 36,
+    "bank_entries": 14,
+    "read_scope": "Avis initial sur 35 définitions et 14 justifications conservé sous initial_review ; nouveau contrôle de 24 ajouts et deux substitutions éditoriales SOAP II. Les 35 précédentes définitions sont identiques, le reste exact des octets de la banque est identique. Les cibles HTML ne sont pas réauditées dans ce delta.",
+    "canonical_initial_read": "Lecture antérieure du canonique uniquement pour situer l’état historique ; il n’est jamais traité ici comme la proposition. Le présent avis porte exclusivement sur les deux fichiers du lot et leurs empreintes figées.",
+    "glossary_delta_added_since_ad22": 24
+  },
+  "observations": [
+    {
+      "id": "audit_examens_sciences_pharmacologie-27",
+      "verdict": "proposition_correcte",
+      "target": "a41-j-glycemie",
+      "evidence": "Bose (PMID 27754788) explicitement limité au modèle murin, dexaméthasone deux semaines/invalidation tissulaire, pas hydrocortisone du choc. APROCCHSS (PMID 29490185) ajouté comme essai clinique : hyperglycémie plus fréquente dans le groupe hydrocortisone+fludrocortisone, sans attribution à une molécule seule."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-28",
+      "verdict": "proposition_correcte",
+      "target": "a41-j-muqueuse-gastrique",
+      "evidence": "Menguy (PMID 4278107) explicitement rats/lapins et choc hémorragique ; pas démonstration directe choc septique adulte. SCCM 2026, RecomGroup 87 lu : IPP si facteurs de risque de saignement, conditionnelle/modérée."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-29",
+      "verdict": "proposition_correcte",
+      "target": "a41-j-rendement-culture",
+      "evidence": "Mermel (PMID 8328734) :829 paires,8,7 contre 2,7 mL,92 contre 69 %,environ 3 %/mL dans ces données. Cheng (PMID 31525774) :325 patients sévères sélectionnés,31,4 contre 19,4 %,sensibilité 52,9 %,après antibiotique dans 120 min (médiane 70). Lee (PMID 17881544) :629 épisodes monomicrobiens,deux premières 89,7 %, trois premières 98,2 %, culture de 20 mL. Populations/définitions/limites explicites ; pas une garantie universelle."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-30",
+      "verdict": "proposition_correcte",
+      "target": [
+        "a41-j-selection",
+        "a41-j-glycemie",
+        "a41-j-muqueuse-gastrique",
+        "a41-j-rendement-culture",
+        "a41-j-starling",
+        "a41-j-rythme",
+        "a41-j-renal-antibiotique"
+      ],
+      "evidence": "Les liens SSC génériques sont remplacés par des énoncés/RecomGroup spécifiques aux questions (25/26,92,87,7,49). Le seuil insuline 2026 ≥ 10 mmol/L est séparé de cible 2021 8–10 mmol/L. Noradrenalin Sintetica 67023 et Labatec 60142 remplacent DailyMed pour leurs effets suisses correspondants. Textes officiels téléchargés et réellement lus indépendamment."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-31",
+      "verdict": "proposition_correcte",
+      "target": "SOFA",
+      "evidence": "Nom original Sepsis-related ajouté, Sequential développé ; Singer (PMID 26903338) porte Sequential [Sepsis-related] Organ Failure Assessment. Distinction score opérationnel / cause conforme."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-32",
+      "verdict": "proposition_correcte",
+      "target": "APROCCHSS",
+      "evidence": "C=C et C=Corticosteroids, and/for hors découpage, titre développé conservé. Registre NCT00625209 confirme briefTitle Activated Protein C and Corticosteroids for Human Septic Shock ; les résultats utilisent APROCCHSS (PubMed29490185), le champ acronym registre est APROCCHS : variante de métadonnée sans changement demandé au nom de l’essai publié."
+    }
+  ],
+  "bank_checks": [
+    {
+      "entry_id": "a41-j-cholestase",
+      "verdict": "favorable",
+      "assessment": "Kim (PMID 10947163) : rats, sepsis intra-abdominal, IL6/transcription Ntcp/Mrp2 ; limite expérimentale effectivement explicitée."
+    },
+    {
+      "entry_id": "a41-j-selection",
+      "verdict": "favorable",
+      "assessment": "Explication de sélection et remarque MDR ne conduisent pas à couverture multirésistante automatique ; sources suisses et SCCM25/26 distinctes, limites précises."
+    },
+    {
+      "entry_id": "a41-j-glycemie",
+      "verdict": "favorable",
+      "assessment": "Bose/APROCCHSS et distinction seuil 2026 / cible 2021, limites conformes ; aucune nouvelle prescription de dose insuline."
+    },
+    {
+      "entry_id": "a41-j-muqueuse-gastrique",
+      "verdict": "favorable",
+      "assessment": "Modèle animal/hémorragique explicitement limité ; risque digestif et énoncé 2026 conditionnel, pas prophylaxie universelle."
+    },
+    {
+      "entry_id": "a41-j-rendement-culture",
+      "verdict": "favorable",
+      "assessment": "Chiffres indépendamment contrevérifiés avec effectifs/volumes/définitions ; cultures rapidement/idéalement avant antibiotiques et délai clinique qualifié."
+    },
+    {
+      "entry_id": "a41-j-gazometrie",
+      "verdict": "favorable",
+      "assessment": "Dimensions acido-basiques distinguées du lactate ; pas décision bicarbonate/épuration déduite. Cette fenêtre ne ferme pas les intervalles suisses manquants d’obsESP03."
+    },
+    {
+      "entry_id": "a41-j-glycocalyx",
+      "verdict": "favorable",
+      "assessment": "Schmidt (PMID 22820644) : souris endotoxémiques, adhésion leucocytaire ; associations humaines et absence de traitement spécifique correctement distinguées."
+    },
+    {
+      "entry_id": "a41-j-starling",
+      "verdict": "favorable",
+      "assessment": "Van der Velden (PMID 10912459) : cellules humaines perméabilisées, longueur sarcomérique/sensibilité au calcium ; pas preuve directe bolus clinique. Réponse au débit et tolérance séparées ; SCCM49 approprié."
+    },
+    {
+      "entry_id": "a41-j-rythme",
+      "verdict": "favorable",
+      "assessment": "Notice suisse 67023 : stimulation bêta cardiaque/inotropie, arythmie et terrain ; causalité d’une arythmie individuelle non automatique."
+    },
+    {
+      "entry_id": "a41-j-renal-antibiotique",
+      "verdict": "favorable",
+      "assessment": "Notice suisse 60142 : clairance rénale, doses élevées/insuffisance rénale et convulsions ; adaptation entretien contextualisée et pas règle universelle toutes molécules."
+    },
+    {
+      "entry_id": "a41-j-solutes",
+      "verdict": "favorable",
+      "assessment": "Wilcox (PMID 6826732) et Chowdhury (PMID 22580944) physiologiques ; 12 hommes sains, 2 L, pas survie/sepsis. SMART (PMID 29485925) composite rénal, BaSICS (PMID 34375394)/PLUS (PMID 35041780) pas gain de mortalité ; SCCM44 suggère équilibrés conditionnelle/modérée, exception traumatisme crânien maintenue."
+    },
+    {
+      "entry_id": "a41-j-vasopresseur-arythmies",
+      "verdict": "favorable",
+      "assessment": "SOAP II (PMID 20200382) :1 679 patients avec choc,24,1 contre 12,4 % d’arythmies, pas mortalité globale significative ; population pas exclusivement septique ; SCCM53 forte (certitude haute pour dopamine) concorde."
+    },
+    {
+      "entry_id": "a41-j-perfusion-dynamique",
+      "verdict": "favorable",
+      "assessment": "ProCESS (PMID 24635773)/ARISE (PMID 25272316)/ProMISe (PMID 25776532) pas gain survie EGDT ; tests dynamiques évalués séparément par recommandation 49, pas effet direct prouvé dans ces essais. Pas volume universel déduit."
+    },
+    {
+      "entry_id": "a41-j-retour-veineux",
+      "verdict": "favorable",
+      "assessment": "Hamzaoui (PMC2945123) texte intégral EBI :105 patients déjà remplis, précharge/débit et effets de charge ventriculaire ; limites observationnelles / pression artérielle moyenne élevée correctement exposées, pas survie universelle."
+    }
+  ],
+  "matches": [
+    {
+      "entry_id": "a41-j-cholestase",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html",
+      "anchor": "a41-3",
+      "text": "Cholestase inflammatoire, hypoperfusion",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743"
+    },
+    {
+      "entry_id": "a41-j-selection",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html",
+      "anchor": "a41-4",
+      "text": "Sélection de germes résistants",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743"
+    },
+    {
+      "entry_id": "a41-j-glycemie",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "anchor": "a41-9",
+      "text": "Le stress et l’hydrocortisone élèvent la glycémie",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+    },
+    {
+      "entry_id": "a41-j-muqueuse-gastrique",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "anchor": "a41-9",
+      "text": "Le choc réduit la perfusion de la muqueuse gastrique",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+    },
+    {
+      "entry_id": "a41-j-rendement-culture",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+      "anchor": "a41-e-2",
+      "text": "Le rendement dépend d’un traitement antibiotique déjà reçu et du volume de prélèvement",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+    },
+    {
+      "entry_id": "a41-j-gazometrie",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+      "anchor": "a41-e-3",
+      "text": "la pression partielle artérielle en oxygène et le pH",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+    },
+    {
+      "entry_id": "a41-j-glycocalyx",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+      "anchor": "a41-s-2",
+      "text": "Ses jonctions et son glycocalyx contribuent à la barrière",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+    },
+    {
+      "entry_id": "a41-j-starling",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+      "anchor": "a41-s-2",
+      "text": "lorsque le cœur répond à une augmentation de remplissage",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+    },
+    {
+      "entry_id": "a41-j-rythme",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html",
+      "anchor": "a41-p-3",
+      "text": "Le rythme, la fréquence, l’ischémie des extrémités et le point de perfusion sont surveillés.",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "96151f27e12d0329bbabaad64ac98b28a05f0913721fae0cca60efaf8c22a9d6"
+    },
+    {
+      "entry_id": "a41-j-renal-antibiotique",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html",
+      "anchor": "a41-p-3",
+      "text": "l’accumulation peut favoriser une neurotoxicité",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "96151f27e12d0329bbabaad64ac98b28a05f0913721fae0cca60efaf8c22a9d6"
+    },
+    {
+      "entry_id": "a41-j-solutes",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "anchor": "a41-9",
+      "text": "Le chlorure de sodium à 0,9 % expose à l’acidose hyperchlorémique et à une baisse de perfusion rénale.",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+    },
+    {
+      "entry_id": "a41-j-vasopresseur-arythmies",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "anchor": "a41-9",
+      "text": "Dans SOAP II (2010 ; 1 679 patients en choc), les arythmies étaient plus fréquentes sous dopamine : 24,1 % contre 12,4 %.",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+    },
+    {
+      "entry_id": "a41-j-perfusion-dynamique",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "anchor": "a41-9",
+      "text": "Les essais ProCESS (2014), ARISE (2014) et ProMISe (2015) n’ont pas montré de gain de survie avec l’ancienne réanimation protocolisée.",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+    },
+    {
+      "entry_id": "a41-j-retour-veineux",
+      "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html",
+      "anchor": "a41-3",
+      "text": "La constriction veineuse mobilise du sang vers le cœur et peut augmenter la précharge.",
+      "text_count": 1,
+      "anchor_count": 1,
+      "target_file_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743"
+    }
+  ],
+  "glossary_entries": [
+    {
+      "key": "SOFA",
+      "line": 3,
+      "litteral": [
+        [
+          "S",
+          "Sequential"
+        ],
+        [
+          "O",
+          "Organ"
+        ],
+        [
+          "F",
+          "Failure"
+        ],
+        [
+          "A",
+          "Assessment"
+        ]
+      ],
+      "title": "Score séquentiel de défaillance d’organe",
+      "definition": "<p>Nommé à l’origine Sepsis-related Organ Failure Assessment, il évalue six fonctions : respiration, coagulation, foie, circulation, système nerveux central et rein. Dans Sepsis-3, une augmentation aiguë d’au moins deux points consécutive à une infection représente opérationnellement la dysfonction d’organe ; ce score ne démontre pas à lui seul sa cause.</p>",
+      "window": "a41-sofa",
+      "change": "modified"
+    },
+    {
+      "key": "A41",
+      "line": 4,
+      "litteral": [
+        [
+          "A",
+          "chapitre des maladies infectieuses de la classification"
+        ],
+        [
+          "41",
+          "catégorie des autres sepsis"
+        ]
+      ],
+      "title": "Catégorie A41 de la CIM-10-GM",
+      "definition": "<p>Autres sepsis ou sepsis d’agent non précisé ; ne couvre pas à elle seule A40 (streptocoques) ni le code complémentaire R57.2 du choc septique.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "A40",
+      "line": 5,
+      "litteral": [
+        [
+          "A",
+          "chapitre des maladies infectieuses de la classification"
+        ],
+        [
+          "40",
+          "catégorie des sepsis streptococciques"
+        ]
+      ],
+      "title": "Catégorie A40 de la CIM-10-GM",
+      "definition": "<p>Code de la classification pour les sepsis streptococciques, distinct de A41.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "R57.2",
+      "line": 6,
+      "litteral": [
+        [
+          "R",
+          "chapitre des symptômes, signes et résultats anormaux"
+        ],
+        [
+          "57.2",
+          "sous-catégorie du choc septique"
+        ]
+      ],
+      "title": "Code R57.2 du choc septique dans la CIM-10-GM",
+      "definition": "<p>Code complémentaire selon les règles de la classification en vigueur ; son usage relève d’une documentation diagnostique et de règles de codage applicables au lieu de soins.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "SIRS",
+      "line": 7,
+      "litteral": [
+        [
+          "S",
+          "Systemic"
+        ],
+        [
+          "I",
+          "Inflammatory"
+        ],
+        [
+          "R",
+          "Response"
+        ],
+        [
+          "S",
+          "Syndrome"
+        ]
+      ],
+      "title": "Syndrome de réponse inflammatoire systémique",
+      "definition": "<p>Des critères inflammatoires peuvent aider au dépistage, mais ne définissent pas à eux seuls le sepsis selon Sepsis-3.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "Sepsis-3",
+      "line": 8,
+      "litteral": [
+        [
+          "Sepsis",
+          "nom international de la définition de sepsis"
+        ],
+        [
+          "3",
+          "troisième consensus"
+        ]
+      ],
+      "title": "Troisième consensus international de définition du sepsis",
+      "definition": "<p>Consensus publié en 2016 par Singer et collaborateurs : le sepsis est une dysfonction d’organe menaçant la vie, causée par une réponse dérégulée de l’hôte à une infection. L’augmentation aiguë du score SOFA d’au moins deux points consécutive à l’infection est sa représentation opérationnelle.</p>",
+      "window": "a41-sepsis3",
+      "change": "modified"
+    },
+    {
+      "key": "V1a",
+      "line": 10,
+      "litteral": [
+        [
+          "V",
+          "Vasopressine"
+        ],
+        [
+          "1a",
+          "récepteur de sous-type 1a"
+        ]
+      ],
+      "title": "Récepteur V1a de la vasopressine",
+      "definition": "<p>Récepteur couplé aux protéines G situé sur le muscle lisse vasculaire ; sa stimulation par la vasopressine (argipressine) provoque une vasoconstriction indépendante des récepteurs adrénergiques. À ne pas confondre avec la dérivation précordiale V1 de l’électrocardiogramme.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "R57.0",
+      "line": 11,
+      "litteral": [
+        [
+          "R",
+          "chapitre des symptômes, signes et résultats anormaux"
+        ],
+        [
+          "57.0",
+          "sous-catégorie du choc cardiogénique"
+        ]
+      ],
+      "title": "Code R57.0 du choc cardiogénique dans la CIM-10-GM",
+      "definition": "<p>Code de la CIM-10-GM désignant le choc cardiogénique, c’est-à-dire une hypoperfusion due à une défaillance de la fonction de pompe du cœur ; distinct du choc hypovolémique (R57.1) et du choc septique (R57.2).</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "R57.1",
+      "line": 12,
+      "litteral": [
+        [
+          "R",
+          "chapitre des symptômes, signes et résultats anormaux"
+        ],
+        [
+          "57.1",
+          "sous-catégorie du choc hypovolémique"
+        ]
+      ],
+      "title": "Code R57.1 du choc hypovolémique dans la CIM-10-GM",
+      "definition": "<p>Code de la CIM-10-GM désignant le choc hypovolémique, c’est-à-dire une hypoperfusion due à une diminution du volume sanguin circulant ; distinct du choc cardiogénique (R57.0) et du choc septique (R57.2).</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "VASST",
+      "line": 13,
+      "litteral": [
+        [
+          "V",
+          "Vasopressin"
+        ],
+        [
+          "A",
+          "And"
+        ],
+        [
+          "S",
+          "Septic"
+        ],
+        [
+          "S",
+          "Shock"
+        ],
+        [
+          "T",
+          "Trial"
+        ]
+      ],
+      "title": "Essai VASST (2008)",
+      "definition": "<p>Argipressine 0,01–0,03 unité internationale/min contre supplément de noradrénaline chez 778 patients en choc septique : mortalité à 28 jours 35,4 % contre 39,3 %, différence non significative.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "ADRENAL",
+      "line": 14,
+      "litteral": [
+        [
+          "ADRENAL",
+          "nom d’essai arrangé à partir de « ADjunctive coRticosteroid trEatment iN criticAlly iLl patients with septic shock », non strictement lettre à lettre"
+        ]
+      ],
+      "title": "Essai ADRENAL (2018)",
+      "definition": "<p>Hydrocortisone 200 mg/jour en perfusion continue pendant 7 jours au plus chez 3 800 patients ventilés en choc septique randomisés (3 658 analysés) : mortalité à 90 jours 27,9 % contre 28,8 % sous placebo, résolution plus rapide du choc (médiane 3 contre 4 jours).</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "APROCCHSS",
+      "line": 15,
+      "litteral": [
+        [
+          "A",
+          "Activated"
+        ],
+        [
+          "PRO",
+          "PROtein"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "Corticosteroids"
+        ],
+        [
+          "H",
+          "Human"
+        ],
+        [
+          "S",
+          "Septic"
+        ],
+        [
+          "S",
+          "Shock"
+        ]
+      ],
+      "title": "Essai APROCCHSS (2018)",
+      "definition": "<p>Le titre développé est Activated Protein C and Corticosteroids for Human Septic Shock ; les mots de liaison and et for restent hors du découpage du sigle. Hydrocortisone 50 mg toutes les 6 heures et fludrocortisone 50 µg par jour pendant 7 jours chez 1 241 patients en choc septique : mortalité à 90 jours 43,0 % contre 49,1 % sous placebo.</p>",
+      "window": null,
+      "change": "modified"
+    },
+    {
+      "key": "SEPSISPAM",
+      "line": 16,
+      "litteral": [
+        [
+          "SEPSIS",
+          "sepsis"
+        ],
+        [
+          "PAM",
+          "Pression Artérielle Moyenne"
+        ]
+      ],
+      "title": "Essai SEPSISPAM (2014)",
+      "definition": "<p>Essai français : pression artérielle moyenne cible de 80–85 mmHg contre 65–70 mmHg chez 776 patients en choc septique, sans différence de mortalité à 28 jours (36,6 % contre 34,0 %).</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "MERINO",
+      "line": 17,
+      "litteral": [
+        [
+          "MERINO",
+          "nom d’essai tiré du titre « MEropenem versus piperacillin-tazobactam for definitive treatment of bloodstream infections due to ceftriaxone non-susceptible Escherichia coli and Klebsiella spp », non strictement lettre à lettre"
+        ]
+      ],
+      "title": "Essai MERINO (2018)",
+      "definition": "<p>Pipéracilline/tazobactam contre méropénem dans les bactériémies à entérobactéries résistantes à la ceftriaxone : mortalité à 30 jours 12,3 % contre 3,7 %, non-infériorité non démontrée.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "BLING",
+      "line": 18,
+      "litteral": [
+        [
+          "B",
+          "Beta"
+        ],
+        [
+          "L",
+          "Lactam"
+        ],
+        [
+          "IN",
+          "InfusioN"
+        ],
+        [
+          "G",
+          "Group"
+        ]
+      ],
+      "title": "Essais BLING (Beta-Lactam InfusioN Group)",
+      "definition": "<p>BLING III (2024) : perfusion continue contre intermittente de pipéracilline/tazobactam ou de méropénem chez 7 031 patients en sepsis ; mortalité à 90 jours 24,9 % contre 26,8 %, différence non significative ; guérison clinique plus fréquente.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "Solu-Cortef",
+      "line": 19,
+      "litteral": [
+        [
+          "Solu-Cortef",
+          "nom commercial composé d’une hydrocortisone injectable, non une abréviation"
+        ]
+      ],
+      "title": "Solu-Cortef, hydrocortisone injectable",
+      "definition": "<p>Succinate sodique d’hydrocortisone, substance sèche de 100 mg ou 250 mg avec 2 mL de solvant, pour injection ou perfusion intraveineuse. Indications suisses : choc dû à une insuffisance corticosurrénalienne ou choc réfractaire au traitement conventionnel en présence éventuelle d’une insuffisance corticosurrénalienne ; l’information professionnelle (Swissmedic 23533, octobre 2025) ne recommande pas l’emploi de routine dans le choc septique.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "CLOVERS",
+      "line": 21,
+      "litteral": [
+        [
+          "C",
+          "Crystalloid"
+        ],
+        [
+          "L",
+          "Liberal"
+        ],
+        [
+          "O",
+          "Or"
+        ],
+        [
+          "V",
+          "Vasopressors"
+        ],
+        [
+          "E",
+          "Early"
+        ],
+        [
+          "R",
+          "Resuscitation in"
+        ],
+        [
+          "S",
+          "Sepsis"
+        ]
+      ],
+      "title": "Essai CLOVERS (2023)",
+      "definition": "<p>Stratégie restrictive privilégiant les vasopresseurs contre stratégie libérale en solutés pendant 24 heures chez 1 563 adultes dont l’hypotension due au sepsis persistait après 1 à 3 litres : mortalité avant retour à domicile à 90 jours 14,0 % contre 14,9 %, différence non significative.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "FiO₂",
+      "line": 23,
+      "litteral": [
+        [
+          "F",
+          "Fraction"
+        ],
+        [
+          "i",
+          "inspirée"
+        ],
+        [
+          "O₂",
+          "en Oxygène (dioxygène)"
+        ]
+      ],
+      "title": "Fraction inspirée en oxygène",
+      "definition": "<p>Proportion d’oxygène dans le gaz inspiré : 0,21 à l’air ambiant, jusqu’à 1,0 en oxygène pur. Le rapport PaO₂/FiO₂ mesure l’oxygénation dans le score SOFA ; chez Mme R., 66 mmHg divisés par 0,21 donnent 314.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "SOAP",
+      "line": 24,
+      "litteral": [
+        [
+          "S",
+          "Sepsis"
+        ],
+        [
+          "O",
+          "Occurrence in"
+        ],
+        [
+          "A",
+          "Acutely ill"
+        ],
+        [
+          "P",
+          "Patients"
+        ]
+      ],
+      "title": "Étude SOAP (2006)",
+      "definition": "<p>Étude de cohorte européenne menée en mai 2002 dans 198 unités de soins intensifs de 24 pays : 1 177 des 3 147 patients (37,4 %) avaient un sepsis. Le foyer était pulmonaire dans 68 % des cas et abdominal dans 22 % ; un bilan hydrique positif figurait parmi les plus forts facteurs pronostiques de décès.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "BALANCE",
+      "line": 25,
+      "litteral": [
+        [
+          "B",
+          "Bacteremia"
+        ],
+        [
+          "A",
+          "Antibiotic"
+        ],
+        [
+          "L",
+          "Length"
+        ],
+        [
+          "A",
+          "Actually"
+        ],
+        [
+          "N",
+          "Needed for"
+        ],
+        [
+          "C",
+          "Clinical"
+        ],
+        [
+          "E",
+          "Effectiveness"
+        ]
+      ],
+      "title": "Essai BALANCE (2025)",
+      "definition": "<p>Essai de non-infériorité chez 3 608 patients hospitalisés pour une bactériémie, dans 74 hôpitaux de 7 pays : 7 jours d’antibiotique n’étaient pas inférieurs à 14 jours (mortalité à 90 jours 14,5 % contre 16,1 %). L’essai excluait <i>Staphylococcus aureus</i>, l’immunodépression sévère et les foyers exigeant un traitement prolongé.</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "ANDROMEDA-SHOCK",
+      "line": 26,
+      "litteral": [
+        [
+          "ANDROMEDA-SHOCK",
+          "nom propre d’essai, non développé en sigle dans les publications consultées"
+        ]
+      ],
+      "title": "Essai ANDROMEDA-SHOCK (2019)",
+      "definition": "<p>Essai randomisé de 424 patients en choc septique dans 28 unités de soins intensifs de 5 pays : une réanimation visant la normalisation du temps de recoloration capillaire, comparée à une réanimation guidée par le lactate, n’a pas réduit significativement la mortalité à 28 jours (34,9 % contre 43,4 %) et a réduit les défaillances d’organe à 72 heures.</p>",
+      "window": "a41-sign-perfusion",
+      "change": "unchanged"
+    },
+    {
+      "key": "ANDROMEDA-SHOCK-2",
+      "line": 27,
+      "litteral": [
+        [
+          "ANDROMEDA-SHOCK",
+          "nom propre d’essai, non développé en sigle dans les publications consultées"
+        ],
+        [
+          "2",
+          "deuxième essai"
+        ]
+      ],
+      "title": "Essai ANDROMEDA-SHOCK-2 (2025)",
+      "definition": "<p>Essai randomisé de 1 501 patients en choc septique précoce dans 86 centres de 19 pays : une réanimation personnalisée guidée par le temps de recoloration capillaire a été supérieure aux soins usuels sur un critère hiérarchique associant mortalité, durée des suppléances vitales et durée de séjour (rapport de victoires de 1,16), surtout par une durée plus courte des suppléances.</p>",
+      "window": "a41-sign-perfusion",
+      "change": "unchanged"
+    },
+    {
+      "key": "Ait-Oufella",
+      "line": 28,
+      "litteral": [
+        [
+          "Ait-Oufella",
+          "nom propre d’auteur, non une abréviation"
+        ]
+      ],
+      "title": "Ait-Oufella, premier auteur de l’étude du score de marbrures (2011)",
+      "definition": "<p>Premier auteur de l’étude qui a décrit le score de marbrures de 0 à 5 dans le choc septique et montré sa valeur pronostique (<i>Intensive Care Medicine</i> 2011).</p>",
+      "window": null,
+      "change": "unchanged"
+    },
+    {
+      "key": "PCT",
+      "line": 30,
+      "litteral": [
+        [
+          "PCT",
+          "abréviation conventionnelle de procalcitonine, un seul nom et non trois mots"
+        ]
+      ],
+      "title": "Procalcitonine",
+      "definition": "<p>Précurseur de la calcitonine utilisé comme biomarqueur inflammatoire. Une valeur isolée ne confirme ni n’exclut le sepsis. Son évolution peut aider à décider l’arrêt d’un antibiotique avec l’évaluation clinique, un foyer contrôlé et une durée optimale incertaine.</p>",
+      "window": "a41-pct",
+      "change": "added"
+    },
+    {
+      "key": "PBP",
+      "line": 31,
+      "litteral": [
+        [
+          "P",
+          "Penicillin"
+        ],
+        [
+          "B",
+          "Binding"
+        ],
+        [
+          "P",
+          "Proteins"
+        ]
+      ],
+      "title": "Protéines liant les pénicillines",
+      "definition": "<p>Protéines bactériennes dont certaines participent à la construction du peptidoglycane. Leur inhibition par une bêtalactamine fragilise la paroi d’une bactérie sensible ; une modification de cible peut participer à la résistance.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "BLSE",
+      "line": 32,
+      "litteral": [
+        [
+          "B",
+          "Bêta-"
+        ],
+        [
+          "L",
+          "Lactamases"
+        ],
+        [
+          "S",
+          "Spectre"
+        ],
+        [
+          "E",
+          "Étendu"
+        ]
+      ],
+      "title": "Bêtalactamases à spectre étendu",
+      "definition": "<p>Enzymes capables d’hydrolyser plusieurs bêtalactamines, notamment des céphalosporines de troisième génération. La sensibilité du germe et le contexte de l’infection doivent être vérifiés ; ce sigle ne décrit pas à lui seul tous ses mécanismes de résistance.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "SARM",
+      "line": 33,
+      "litteral": [
+        [
+          "S",
+          "Staphylococcus"
+        ],
+        [
+          "A",
+          "Aureus"
+        ],
+        [
+          "R",
+          "Résistant"
+        ],
+        [
+          "M",
+          "Méticilline"
+        ]
+      ],
+      "title": "Staphylococcus aureus résistant à la méticilline",
+      "definition": "<p>Phénotype de résistance associé à une protéine liant les pénicillines de moindre affinité pour de nombreuses bêtalactamines. La couverture probabiliste dépend du risque individuel, du foyer et de l’écologie locale.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "AUC",
+      "line": 34,
+      "litteral": [
+        [
+          "A",
+          "Area"
+        ],
+        [
+          "U",
+          "Under"
+        ],
+        [
+          "C",
+          "Curve"
+        ]
+      ],
+      "title": "Aire sous la courbe des concentrations",
+      "definition": "<p>Intégrale de la concentration d’un médicament en fonction du temps. Pour la vancomycine, son rapport à la concentration minimale inhibitrice aide à apprécier l’exposition ; l’interprétation dépend de la méthode de mesure, de l’indication et de la fonction rénale.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "ESE",
+      "line": 35,
+      "litteral": [
+        [
+          "E",
+          "European"
+        ],
+        [
+          "S",
+          "Society"
+        ],
+        [
+          "E",
+          "Endocrinology"
+        ]
+      ],
+      "title": "Société européenne d’endocrinologie",
+      "definition": "<p>Société savante coautrice des recommandations de 2024 sur l’insuffisance surrénalienne induite par les glucocorticoïdes.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "EAU",
+      "line": 36,
+      "litteral": [
+        [
+          "E",
+          "European"
+        ],
+        [
+          "A",
+          "Association"
+        ],
+        [
+          "U",
+          "Urology"
+        ]
+      ],
+      "title": "Association européenne d’urologie",
+      "definition": "<p>Société savante éditrice des recommandations sur les infections urologiques. Ses schémas concernent un foyer et un contexte définis ; ils ne s’appliquent pas automatiquement à tout sepsis.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "XueBiJing",
+      "line": 37,
+      "litteral": [
+        [
+          "XueBiJing",
+          "nom propre d’une préparation injectable, non une abréviation"
+        ]
+      ],
+      "title": "Préparation injectable XueBiJing",
+      "definition": "<p>La Surviving Sepsis Campaign 2026 suggère de ne pas utiliser cette préparation hors des juridictions où elle possède une autorisation réglementaire ; recommandation conditionnelle, certitude très faible. Cette mention ne démontre pas une autorisation en Suisse.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "A48.3",
+      "line": 38,
+      "litteral": [
+        [
+          "A",
+          "chapitre des maladies infectieuses de la classification"
+        ],
+        [
+          "48.3",
+          "sous-catégorie du syndrome de choc toxique"
+        ]
+      ],
+      "title": "Syndrome de choc toxique, code A48.3 de la CIM-10-GM 2024",
+      "definition": "<p>Catégorie distincte du sepsis A41 et du choc septique R57.2. La notice BfArM 2024 exclut de cette rubrique le choc endotoxinique R57.8 et le sepsis A41.9 ; cette entrée de glossaire ne signifie pas que toutes les formes de choc toxique sont enseignées dans A41.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "ProCESS",
+      "line": 39,
+      "litteral": [
+        [
+          "Pro",
+          "Protocolized"
+        ],
+        [
+          "C",
+          "Care"
+        ],
+        [
+          "E",
+          "Early"
+        ],
+        [
+          "S",
+          "Septic"
+        ],
+        [
+          "S",
+          "Shock"
+        ]
+      ],
+      "title": "Essai ProCESS (2014)",
+      "definition": "<p>Protocolized Care for Early Septic Shock : essai multicentrique de 1 341 patients répartis entre trois stratégies de réanimation. Les soins protocolisés n’ont pas amélioré la mortalité à 60 jours par rapport aux soins usuels. Le registre NCT00510835 confirme le titre et le sigle ; le mot de liaison for reste hors du découpage.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "ARISE",
+      "line": 40,
+      "litteral": [
+        [
+          "A",
+          "Australasian"
+        ],
+        [
+          "R",
+          "Resuscitation"
+        ],
+        [
+          "I",
+          "In"
+        ],
+        [
+          "S",
+          "Sepsis"
+        ],
+        [
+          "E",
+          "Evaluation"
+        ]
+      ],
+      "title": "Essai ARISE (2014)",
+      "definition": "<p>Australasian Resuscitation In Sepsis Evaluation : essai de 1 600 patients avec choc septique précoce, comparant une réanimation guidée par objectifs aux soins usuels, sans réduction de mortalité à 90 jours. Le titre développé figure dans le registre NCT00975793.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "ProMISe",
+      "line": 41,
+      "litteral": [
+        [
+          "Pro",
+          "Protocolised"
+        ],
+        [
+          "M",
+          "Management"
+        ],
+        [
+          "I",
+          "In"
+        ],
+        [
+          "Se",
+          "Sepsis"
+        ]
+      ],
+      "title": "Essai ProMISe (2015)",
+      "definition": "<p>Protocolised Management In Sepsis : essai de 1 260 patients, sans amélioration de mortalité à 90 jours par la réanimation selon des objectifs centraux imposés par rapport aux soins usuels. Le titre développé est celui du rapport original de 2015, identifiant PubMed 26597979 ; le résultat clinique est publié sous l’identifiant 25776532.</p>",
+      "window": null,
+      "change": "added"
+    },
+    {
+      "key": "A32.7",
+      "line": 43,
+      "litteral": [
+        [
+          "A",
+          "chapitre des maladies infectieuses de la classification"
+        ],
+        [
+          "32.7",
+          "sous-catégorie du sepsis à Listeria"
+        ]
+      ],
+      "title": "Sepsis à Listeria, code A32.7 de la CIM-10-GM 2024",
+      "definition": "<p>Catégorie spécifique à la listériose systémique, distincte des autres sepsis A41. Sa mention ne certifie pas une couverture exhaustive de cette catégorie dans ce cours.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "B37.7",
+      "line": 44,
+      "litteral": [
+        [
+          "B",
+          "chapitre des maladies infectieuses de la classification"
+        ],
+        [
+          "37.7",
+          "sous-catégorie du sepsis à Candida"
+        ]
+      ],
+      "title": "Sepsis à Candida, code B37.7 de la CIM-10-GM 2024",
+      "definition": "<p>Catégorie spécifique au sepsis à Candida, distincte des autres sepsis A41. Une stratégie antifongique dépend du contexte clinique et du risque individuel.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "NEWS",
+      "line": 45,
+      "litteral": [
+        [
+          "N",
+          "National"
+        ],
+        [
+          "E",
+          "Early"
+        ],
+        [
+          "W",
+          "Warning"
+        ],
+        [
+          "S",
+          "Score"
+        ]
+      ],
+      "title": "Score national d’alerte précoce",
+      "definition": "<p>Score de détérioration physiologique. Il contribue à repérer un patient à réévaluer ; il ne démontre pas une infection et ne définit pas à lui seul le sepsis.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "NEWS2",
+      "line": 46,
+      "litteral": [
+        [
+          "N",
+          "National"
+        ],
+        [
+          "E",
+          "Early"
+        ],
+        [
+          "W",
+          "Warning"
+        ],
+        [
+          "S",
+          "Score"
+        ],
+        [
+          "2",
+          "deuxième version"
+        ]
+      ],
+      "title": "Deuxième version du score national d’alerte précoce",
+      "definition": "<p>Version révisée du score d’alerte précoce. Son interprétation suit le protocole de surveillance et les caractéristiques du patient, avec une évaluation clinique.</p>",
+      "window": "a41-news2",
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "MEWS",
+      "line": 47,
+      "litteral": [
+        [
+          "M",
+          "Modified"
+        ],
+        [
+          "E",
+          "Early"
+        ],
+        [
+          "W",
+          "Warning"
+        ],
+        [
+          "S",
+          "Score"
+        ]
+      ],
+      "title": "Score modifié d’alerte précoce",
+      "definition": "<p>Score de détérioration physiologique distinct du NEWS2. Un score d’alerte organise une réponse clinique ; il ne remplace ni l’examen du patient ni le diagnostic de la cause.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "CAPITA",
+      "line": 48,
+      "litteral": [
+        [
+          "C",
+          "Community"
+        ],
+        [
+          "A",
+          "Acquired"
+        ],
+        [
+          "P",
+          "Pneumonia"
+        ],
+        [
+          "I",
+          "Immunization"
+        ],
+        [
+          "T",
+          "Trial"
+        ],
+        [
+          "A",
+          "Adults"
+        ]
+      ],
+      "title": "Essai CAPiTA de vaccination antipneumococcique (2015)",
+      "definition": "<p>Community-Acquired Pneumonia Immunization Trial in Adults, habituellement écrit CAPiTA : essai du vaccin conjugué 13-valent chez des adultes âgés aux Pays-Bas. Il porte sur des critères pneumococciques définis et ne démontre pas la prévention de tout sepsis.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "PCV13",
+      "line": 49,
+      "litteral": [
+        [
+          "P",
+          "Pneumococcal"
+        ],
+        [
+          "C",
+          "Conjugate"
+        ],
+        [
+          "V",
+          "Vaccine"
+        ],
+        [
+          "13",
+          "treize sérotypes"
+        ]
+      ],
+      "title": "Vaccin pneumococcique conjugué 13-valent",
+      "definition": "<p>Vaccin dirigé contre treize sérotypes de pneumocoque. Le nombre de valences et les recommandations nationales en vigueur doivent être distingués du vaccin étudié dans un essai historique.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "SCCM",
+      "line": 50,
+      "litteral": [
+        [
+          "S",
+          "Society"
+        ],
+        [
+          "C",
+          "Critical"
+        ],
+        [
+          "C",
+          "Care"
+        ],
+        [
+          "M",
+          "Medicine"
+        ]
+      ],
+      "title": "Society of Critical Care Medicine",
+      "definition": "<p>Société savante éditrice avec l’ESICM des recommandations de la Surviving Sepsis Campaign. Les mots de liaison of restent hors du découpage.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "SAPS",
+      "line": 51,
+      "litteral": [
+        [
+          "S",
+          "Stop"
+        ],
+        [
+          "A",
+          "Antibiotics"
+        ],
+        [
+          "P",
+          "Procalcitonin"
+        ],
+        [
+          "S",
+          "Study"
+        ]
+      ],
+      "title": "Essai SAPS de guidage de l’arrêt des antibiotiques",
+      "definition": "<p>Stop Antibiotics on Procalcitonin Guidance Study, titre confirmé par le registre NCT01139489. L’essai étudie un conseil d’arrêt guidé par la procalcitonine chez des adultes en soins intensifs ; il ne valide pas ce biomarqueur comme diagnostic isolé ni comme décision automatique de début d’antibiotique.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "CHUV",
+      "line": 52,
+      "litteral": [
+        [
+          "C",
+          "Centre"
+        ],
+        [
+          "H",
+          "Hospitalier"
+        ],
+        [
+          "U",
+          "Universitaire"
+        ],
+        [
+          "V",
+          "Vaudois"
+        ]
+      ],
+      "title": "Centre hospitalier universitaire vaudois",
+      "definition": "<p>Institution hospitalière universitaire de Lausanne. Une plage analytique ou une procédure citée doit rester associée au document, à la méthode et à la matrice concernés.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "USZ",
+      "line": 53,
+      "litteral": [
+        [
+          "U",
+          "Universitäts-"
+        ],
+        [
+          "S",
+          "Spital"
+        ],
+        [
+          "Z",
+          "Zürich"
+        ]
+      ],
+      "title": "Hôpital universitaire de Zurich",
+      "definition": "<p>Universitätsspital Zürich. Les plages citées dans son catalogue concernent une méthode et une matrice précisées ; elles ne sont pas automatiquement les normes de tout laboratoire.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "PAI-1",
+      "line": 54,
+      "litteral": [
+        [
+          "P",
+          "Plasminogen"
+        ],
+        [
+          "A",
+          "Activator"
+        ],
+        [
+          "I",
+          "Inhibitor"
+        ],
+        [
+          "1",
+          "type 1"
+        ]
+      ],
+      "title": "Inhibiteur de l’activateur du plasminogène de type 1",
+      "definition": "<p>Inhibe des activateurs du plasminogène et limite ainsi la formation de plasmine. Une augmentation peut participer à une réduction de fibrinolyse ; elle ne décrit pas à elle seule tout l’équilibre de coagulation du patient.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "dL",
+      "line": 55,
+      "litteral": [
+        [
+          "d",
+          "déci-, facteur 0,1"
+        ],
+        [
+          "L",
+          "litre"
+        ]
+      ],
+      "title": "Décilitre",
+      "definition": "<p>Un décilitre correspond à 0,1 litre. Une concentration de 1 mg/dL correspond donc à 10 mg/L.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "Garcia-Alvarez",
+      "line": 56,
+      "litteral": [
+        [
+          "Garcia-Alvarez",
+          "nom propre d’auteur, non une abréviation"
+        ]
+      ],
+      "title": "Garcia-Alvarez, auteur cité sur l’hyperlactatémie associée au sepsis",
+      "definition": "<p>Nom de l’auteur de la revue citée de 2014. La nature de revue et les différences entre observations humaines et modèles expérimentaux restent précisées dans le texte.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "Plasma-Lyte",
+      "line": 57,
+      "litteral": [
+        [
+          "Plasma-Lyte",
+          "nom commercial de solutions de perfusion, non une abréviation"
+        ]
+      ],
+      "title": "Famille de solutions de perfusion Plasma-Lyte",
+      "definition": "<p>Nom commercial d’un cristalloïde équilibré. La présentation et sa composition doivent être vérifiées ; la mention d’un nom d’essai ne rend pas toutes les formulations interchangeables.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "SMART",
+      "line": 58,
+      "litteral": [
+        [
+          "S",
+          "Solutions"
+        ],
+        [
+          "M",
+          "Major"
+        ],
+        [
+          "A",
+          "Adverse"
+        ],
+        [
+          "R",
+          "Renal"
+        ],
+        [
+          "T",
+          "Trial"
+        ]
+      ],
+      "title": "Essai SMART (2018)",
+      "definition": "<p>Nom arrangé de Isotonic Solutions and Major Adverse Renal Events Trial. L’essai compare cristalloïdes équilibrés et solution saline en soins intensifs ; son critère principal est un composite rénal incluant le décès, et ne se confond pas avec une démonstration de gain de survie isolé.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "BaSICS",
+      "line": 59,
+      "litteral": [
+        [
+          "BaSICS",
+          "nom arrangé de Balanced Solution Versus Saline in Intensive Care Study, non strictement un mot par lettre"
+        ]
+      ],
+      "title": "Essai BaSICS (2021)",
+      "definition": "<p>Le registre NCT02875873 confirme le titre. La comparaison en soins intensifs n’a pas démontré de réduction de mortalité à 90 jours avec la solution équilibrée ; absence de différence significative ne signifie pas équivalence de toutes les situations.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "PLUS",
+      "line": 60,
+      "litteral": [
+        [
+          "PLUS",
+          "nom arrangé de Plasma-Lyte 148 versUs Saline Study, non strictement un mot par lettre"
+        ]
+      ],
+      "title": "Essai PLUS (2022)",
+      "definition": "<p>Le registre NCT02721654 confirme le titre. Cet essai en soins intensifs n’a pas démontré de réduction de mortalité ou d’atteinte rénale avec la solution équilibrée par rapport à la solution saline.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "SAFE",
+      "line": 61,
+      "litteral": [
+        [
+          "S",
+          "Saline"
+        ],
+        [
+          "A",
+          "Albumin"
+        ],
+        [
+          "F",
+          "Fluid"
+        ],
+        [
+          "E",
+          "Evaluation"
+        ]
+      ],
+      "title": "Essai SAFE (2004)",
+      "definition": "<p>Saline versus Albumin Fluid Evaluation : comparaison de solution saline et d’albumine pour la réanimation en soins intensifs. Les résultats d’une population générale ne rendent pas ces solutions interchangeables dans toutes les situations particulières.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "ALBIOS",
+      "line": 62,
+      "litteral": [
+        [
+          "ALB",
+          "ALBumin"
+        ],
+        [
+          "I",
+          "Italian"
+        ],
+        [
+          "O",
+          "Outcome"
+        ],
+        [
+          "S",
+          "Sepsis"
+        ]
+      ],
+      "title": "Essai ALBIOS (2014)",
+      "definition": "<p>ALBumin Italian Outcome Sepsis, titre confirmé par le registre NCT00707122. L’ajout d’albumine aux cristalloïdes n’a pas réduit significativement la mortalité globale ; un sous-groupe ne définit pas à lui seul une indication universelle.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "DC",
+      "line": 63,
+      "litteral": [
+        [
+          "D",
+          "Débit"
+        ],
+        [
+          "C",
+          "Cardiaque"
+        ]
+      ],
+      "title": "Débit cardiaque",
+      "definition": "<p>Volume de sang éjecté par le cœur par unité de temps, souvent exprimé en L/min. Son augmentation ne démontre pas à elle seule la restauration de la perfusion de tous les organes.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "PVC",
+      "line": 64,
+      "litteral": [
+        [
+          "P",
+          "Pression"
+        ],
+        [
+          "V",
+          "Veineuse"
+        ],
+        [
+          "C",
+          "Centrale"
+        ]
+      ],
+      "title": "Pression veineuse centrale",
+      "definition": "<p>Pression mesurée dans la circulation veineuse centrale, exprimée ici en mmHg. Une valeur isolée ne prédit pas de façon fiable la réponse à un apport de liquide.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "CaO₂",
+      "line": 65,
+      "litteral": [
+        [
+          "C",
+          "Contenu"
+        ],
+        [
+          "a",
+          "artériel"
+        ],
+        [
+          "O₂",
+          "dioxygène"
+        ]
+      ],
+      "title": "Contenu artériel en oxygène",
+      "definition": "<p>Quantité d’oxygène par volume de sang artériel. Dans l’équation pédagogique du chapitre, elle est exprimée en mL/dL et dépend surtout de l’hémoglobine et de sa saturation ; la saturation seule ne décrit pas ce contenu.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    },
+    {
+      "key": "DO₂",
+      "line": 66,
+      "litteral": [
+        [
+          "D",
+          "Delivery, apport"
+        ],
+        [
+          "O₂",
+          "dioxygène"
+        ]
+      ],
+      "title": "Apport global en oxygène",
+      "definition": "<p>Produit du débit cardiaque et du contenu artériel en oxygène, avec conversion des unités. Ce calcul global ne mesure ni la répartition entre organes ni l’extraction cellulaire d’oxygène.</p>",
+      "window": null,
+      "change": "added_since_ad22"
+    }
+  ],
+  "global_HLA_DR": "Définition globale HLA-DR réutilisée sans redéfinition. Absence de collision des 36 ajouts avec G runtime attribuée au coordinateur ; notre contrôle indépendant trouve 59 clés locales uniques par AST, sans exécution du module.",
+  "sources": [
+    {
+      "source": "PubMed efetch XML",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8328734,31525774,17881544,26903338,29490185&retmode=xml",
+      "sha256": "edb38f5e57dee9c42fd39fcc76ae7495862ce09d3b7f122ab67af670477d7939",
+      "bytes": 271729,
+      "scope": "résumés primaires réellement lus, pas textes intégraux"
+    },
+    {
+      "source": "PubMed efetch XML, autres recherches",
+      "ids": [
+        "10947163",
+        "4278107",
+        "22820644",
+        "10912459",
+        "6826732",
+        "22580944",
+        "20200382",
+        "24635773",
+        "25272316",
+        "25776532"
+      ],
+      "scope": "résumés primaires réellement lus"
+    },
+    {
+      "source": "PubMed efetch XML solutés/ProMISe",
+      "ids": [
+        "29485925",
+        "34375394",
+        "35041780",
+        "26597979",
+        "24289513"
+      ],
+      "sha256": "939aa32838d155a862c4bdfbe1893768dcba98c6f359c863f7c65acb45b03192",
+      "scope": "résumés et titres réellement lus"
+    },
+    {
+      "source": "Bose 2016",
+      "pmid": "27754788",
+      "cache": "/workspace/medina-env/reprise-a41/sources/bank_primary_abstracts.json",
+      "scope": "résumé primaire EBI sauvegardé, effectivement lu ; modèle murin sous dexaméthasone"
+    },
+    {
+      "source": "SCCM 2026",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "sha256": "4b6c820c0c083394694ee8c71ce63b4a11cd86c9ca69cce4fe0a18ca0d2555a7",
+      "bytes": 329772,
+      "sections": [
+        7,
+        25,
+        26,
+        44,
+        49,
+        53,
+        86,
+        87,
+        92
+      ],
+      "scope": "page officielle relue en direct ; chaque carte extraite depuis son conteneur incluant le paragraphe précédant l’ancre RecomGroup, force/certitude/remarques comprises ; hash page peut varier avec données de session"
+    },
+    {
+      "source": "SCCM 2026, autres cartes",
+      "cache": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+      "sections": [
+        22,
+        40
+      ],
+      "scope": "conditions PCT début/arrêt relues dans capture du primaire"
+    },
+    {
+      "source": "SSC 2021",
+      "cache": "/workspace/medina-env/reprise-a41/sources/pmc2021.primary.txt",
+      "sha256": "30cf18d3f33b628b9ca4c2d488bfb3dd4219440572d302fd12b7b31edb7f2a6e",
+      "scope": "section Glucose control et remarque 144–180 mg/dL (8–10 mmol/L) relues"
+    },
+    {
+      "source": "Piperacillin-Tazobactam Labatec 60142",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=60142",
+      "sha256": "100e3d38b1952a2be78631b525ce2ef7508b7486241b0cb8101f5289433991ca",
+      "bytes": 107637,
+      "scope": "notice suisse officielle reçue en direct ; neurotoxicité/insuffisance rénale/propriétés ; version mars 2026"
+    },
+    {
+      "source": "Noradrenalin Sintetica 67023",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=67023",
+      "sha256": "a0109dc89c990359d79e028cdd7d6665f679f4f02d6ed9655e8a58d88d97116b",
+      "bytes": 109099,
+      "scope": "notice suisse officielle reçue en direct ; stimulation bêta/inotropie/arythmie ; version octobre 2020"
+    },
+    {
+      "source": "Hamzaoui 2010",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2945123/fullTextXML",
+      "sha256": "0eafb5ffbaced218088d1343e0b6b23a78277c45f0e809b39bb495d253e2e4cf",
+      "bytes": 88354,
+      "scope": "texte intégral introduction, résultats, limites"
+    },
+    {
+      "source": "BfArM2024",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-a30-a49.htm",
+      "sha256": "36b6cbfee7ca50e6ed726440f9e95f8d383e603ade5af774f1c1e90d701c531c",
+      "bytes": 38216,
+      "scope": "A48.3 et exclusions R57.8/A41.9 relues"
+    },
+    {
+      "source": "ClinicalTrials.gov registre ProCESS",
+      "id": "NCT00510835",
+      "sha256": "503b58c374c8c4ca901a9fbf31b1867994b90799ca8de64edf9939f55bd88725",
+      "scope": "titre et acronym réellement lus API v2"
+    },
+    {
+      "source": "ClinicalTrials.gov registre ARISE",
+      "id": "NCT00975793",
+      "sha256": "5602f10f74216b73e809a7949ff6ece0de5367c95344bab25af7e8c147de2f44",
+      "scope": "briefTitle et acronym réellement lus API v2"
+    },
+    {
+      "source": "ClinicalTrials.gov registre APROCCHSS",
+      "id": "NCT00625209",
+      "sha256": "876caaa705cf0956952b3dce0fb9417dbcf3a268752848bd4f8a8383ee0512fd",
+      "scope": "titre développé réellement lu API v2 ; champ acronym APROCCHS distinct du sigle publié APROCCHSS"
+    }
+  ],
+  "limits": [
+    "Cette contrelecture Codex ne remplace pas le nouveau contre-audit Claude du paquet A41 corrigé au SHA à publier.",
+    "Aucune fermeture du chapitre ou du fragment ; aucune certification CIM-11.",
+    "ObsESP03 demeure partielle pour les normes suisses artérielles ; voir NORMES_GAZOMETRIE.",
+    "Les 14 cibles sont présentes et uniques dans les HTML drafts effectivement lus. Ces HTMLétaient encore en finalisation par leurs auteurs : les hash des cibles sont conservés, et toute modification ultérieure nécessite une nouvelle vérification des liaisons.",
+    "Les contrôles du producteur/coordinateur restent distincts de notre lecture documentaire et des vérifications statiques propres.",
+    "Avis actualisé à la paire f7d9e45c/c47273d9 : 24 ajouts relus et deux substitutions éditoriales vérifiées. Preuve initiale ad22c219/17491c08 intégralement conservée sous initial_review. Contre-audit Claude final encore requis."
+  ],
+  "canonical_modified": false,
+  "git_modified": false,
+  "incoming_code_executed": false,
+  "injection_authorized_by_this_report": false,
+  "new_Claude_cross_review_closed": false,
+  "initial_review": {
+    "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+    "reviewer": "Codex poste réception / contrelecture indépendante",
+    "generated_at_utc": "2026-10-08T12:14:42.719738+00:00",
+    "decision": "favorable_sur_le_perimetre_glossaire_et_banque_figes",
+    "blocking": 0,
+    "major": 0,
+    "new_minor": 0,
+    "scope": {
+      "draft_only": true,
+      "source_root": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources",
+      "glossary_file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/glossary/a41.py",
+      "glossary_sha256": "ad22c21964b491c71776a07a5f4eaa350f8e2b3fcb50ba8ab6086ecf8b915840",
+      "bank_file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_justifications.json",
+      "bank_sha256": "17491c0808ff4a5fb7bef7f636a2e350a27cca3cc9c0f7bea155914b3a20b81e",
+      "glossary_keys": 35,
+      "glossary_added": 12,
+      "bank_entries": 14,
+      "read_scope": "Toutes les définitions du draft relues ; contrevérification primaire ciblée sur ajouts/modifications et les14 justifications. Les définitions inchangées ne sont pas certifiées à nouveau par de nouveaux téléchargements de chaque référence.",
+      "canonical_initial_read": "Lecture antérieure du canonique uniquement pour situer l’état historique ; il n’est jamais traité ici comme la proposition. Le présent avis porte exclusivement sur les deux fichiers du lot et leurs empreintes figées."
+    },
+    "observations": [
+      {
+        "id": "audit_examens_sciences_pharmacologie-27",
+        "verdict": "proposition_correcte",
+        "target": "a41-j-glycemie",
+        "evidence": "Bose (PMID 27754788) explicitement limité au modèle murin, dexaméthasone deux semaines/invalidation tissulaire, pas hydrocortisone du choc. APROCCHSS (PMID 29490185) ajouté comme essai clinique : hyperglycémie plus fréquente dans le groupe hydrocortisone+fludrocortisone, sans attribution à une molécule seule."
+      },
+      {
+        "id": "audit_examens_sciences_pharmacologie-28",
+        "verdict": "proposition_correcte",
+        "target": "a41-j-muqueuse-gastrique",
+        "evidence": "Menguy (PMID 4278107) explicitement rats/lapins et choc hémorragique ; pas démonstration directe choc septique adulte. SCCM 2026, RecomGroup 87 lu : IPP si facteurs de risque de saignement, conditionnelle/modérée."
+      },
+      {
+        "id": "audit_examens_sciences_pharmacologie-29",
+        "verdict": "proposition_correcte",
+        "target": "a41-j-rendement-culture",
+        "evidence": "Mermel (PMID 8328734) :829 paires,8,7 contre 2,7 mL,92 contre 69 %,environ 3 %/mL dans ces données. Cheng (PMID 31525774) :325 patients sévères sélectionnés,31,4 contre 19,4 %,sensibilité 52,9 %,après antibiotique dans 120 min (médiane 70). Lee (PMID 17881544) :629 épisodes monomicrobiens,deux premières 89,7 %, trois premières 98,2 %, culture de 20 mL. Populations/définitions/limites explicites ; pas une garantie universelle."
+      },
+      {
+        "id": "audit_examens_sciences_pharmacologie-30",
+        "verdict": "proposition_correcte",
+        "target": [
+          "a41-j-selection",
+          "a41-j-glycemie",
+          "a41-j-muqueuse-gastrique",
+          "a41-j-rendement-culture",
+          "a41-j-starling",
+          "a41-j-rythme",
+          "a41-j-renal-antibiotique"
+        ],
+        "evidence": "Les liens SSC génériques sont remplacés par des énoncés/RecomGroup spécifiques aux questions (25/26,92,87,7,49). Le seuil insuline 2026 ≥ 10 mmol/L est séparé de cible 2021 8–10 mmol/L. Noradrenalin Sintetica 67023 et Labatec 60142 remplacent DailyMed pour leurs effets suisses correspondants. Textes officiels téléchargés et réellement lus indépendamment."
+      },
+      {
+        "id": "audit_examens_sciences_pharmacologie-31",
+        "verdict": "proposition_correcte",
+        "target": "SOFA",
+        "evidence": "Nom original Sepsis-related ajouté, Sequential développé ; Singer (PMID 26903338) porte Sequential [Sepsis-related] Organ Failure Assessment. Distinction score opérationnel / cause conforme."
+      },
+      {
+        "id": "audit_examens_sciences_pharmacologie-32",
+        "verdict": "proposition_correcte",
+        "target": "APROCCHSS",
+        "evidence": "C=C et C=Corticosteroids, and/for hors découpage, titre développé conservé. Registre NCT00625209 confirme briefTitle Activated Protein C and Corticosteroids for Human Septic Shock ; les résultats utilisent APROCCHSS (PubMed29490185), le champ acronym registre est APROCCHS : variante de métadonnée sans changement demandé au nom de l’essai publié."
+      }
+    ],
+    "bank_checks": [
+      {
+        "entry_id": "a41-j-cholestase",
+        "verdict": "favorable",
+        "assessment": "Kim (PMID 10947163) : rats, sepsis intra-abdominal, IL6/transcription Ntcp/Mrp2 ; limite expérimentale effectivement explicitée."
+      },
+      {
+        "entry_id": "a41-j-selection",
+        "verdict": "favorable",
+        "assessment": "Explication de sélection et remarque MDR ne conduisent pas à couverture multirésistante automatique ; sources suisses et SCCM25/26 distinctes, limites précises."
+      },
+      {
+        "entry_id": "a41-j-glycemie",
+        "verdict": "favorable",
+        "assessment": "Bose/APROCCHSS et distinction seuil 2026 / cible 2021, limites conformes ; aucune nouvelle prescription de dose insuline."
+      },
+      {
+        "entry_id": "a41-j-muqueuse-gastrique",
+        "verdict": "favorable",
+        "assessment": "Modèle animal/hémorragique explicitement limité ; risque digestif et énoncé 2026 conditionnel, pas prophylaxie universelle."
+      },
+      {
+        "entry_id": "a41-j-rendement-culture",
+        "verdict": "favorable",
+        "assessment": "Chiffres indépendamment contrevérifiés avec effectifs/volumes/définitions ; cultures rapidement/idéalement avant antibiotiques et délai clinique qualifié."
+      },
+      {
+        "entry_id": "a41-j-gazometrie",
+        "verdict": "favorable",
+        "assessment": "Dimensions acido-basiques distinguées du lactate ; pas décision bicarbonate/épuration déduite. Cette fenêtre ne ferme pas les intervalles suisses manquants d’obsESP03."
+      },
+      {
+        "entry_id": "a41-j-glycocalyx",
+        "verdict": "favorable",
+        "assessment": "Schmidt (PMID 22820644) : souris endotoxémiques, adhésion leucocytaire ; associations humaines et absence de traitement spécifique correctement distinguées."
+      },
+      {
+        "entry_id": "a41-j-starling",
+        "verdict": "favorable",
+        "assessment": "Van der Velden (PMID 10912459) : cellules humaines perméabilisées, longueur sarcomérique/sensibilité au calcium ; pas preuve directe bolus clinique. Réponse au débit et tolérance séparées ; SCCM49 approprié."
+      },
+      {
+        "entry_id": "a41-j-rythme",
+        "verdict": "favorable",
+        "assessment": "Notice suisse 67023 : stimulation bêta cardiaque/inotropie, arythmie et terrain ; causalité d’une arythmie individuelle non automatique."
+      },
+      {
+        "entry_id": "a41-j-renal-antibiotique",
+        "verdict": "favorable",
+        "assessment": "Notice suisse 60142 : clairance rénale, doses élevées/insuffisance rénale et convulsions ; adaptation entretien contextualisée et pas règle universelle toutes molécules."
+      },
+      {
+        "entry_id": "a41-j-solutes",
+        "verdict": "favorable",
+        "assessment": "Wilcox (PMID 6826732) et Chowdhury (PMID 22580944) physiologiques ; 12 hommes sains, 2 L, pas survie/sepsis. SMART (PMID 29485925) composite rénal, BaSICS (PMID 34375394)/PLUS (PMID 35041780) pas gain de mortalité ; SCCM44 suggère équilibrés conditionnelle/modérée, exception traumatisme crânien maintenue."
+      },
+      {
+        "entry_id": "a41-j-vasopresseur-arythmies",
+        "verdict": "favorable",
+        "assessment": "SOAP II (PMID 20200382) :1 679 patients avec choc,24,1 contre 12,4 % d’arythmies, pas mortalité globale significative ; population pas exclusivement septique ; SCCM53 forte (certitude haute pour dopamine) concorde."
+      },
+      {
+        "entry_id": "a41-j-perfusion-dynamique",
+        "verdict": "favorable",
+        "assessment": "ProCESS (PMID 24635773)/ARISE (PMID 25272316)/ProMISe (PMID 25776532) pas gain survie EGDT ; tests dynamiques évalués séparément par recommandation 49, pas effet direct prouvé dans ces essais. Pas volume universel déduit."
+      },
+      {
+        "entry_id": "a41-j-retour-veineux",
+        "verdict": "favorable",
+        "assessment": "Hamzaoui (PMC2945123) texte intégral EBI :105 patients déjà remplis, précharge/débit et effets de charge ventriculaire ; limites observationnelles / pression artérielle moyenne élevée correctement exposées, pas survie universelle."
+      }
+    ],
+    "matches": [
+      {
+        "entry_id": "a41-j-cholestase",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html",
+        "anchor": "a41-3",
+        "text": "Cholestase inflammatoire, hypoperfusion",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743"
+      },
+      {
+        "entry_id": "a41-j-selection",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html",
+        "anchor": "a41-4",
+        "text": "Sélection de germes résistants",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743"
+      },
+      {
+        "entry_id": "a41-j-glycemie",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+        "anchor": "a41-9",
+        "text": "Le stress et l’hydrocortisone élèvent la glycémie",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+      },
+      {
+        "entry_id": "a41-j-muqueuse-gastrique",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+        "anchor": "a41-9",
+        "text": "Le choc réduit la perfusion de la muqueuse gastrique",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+      },
+      {
+        "entry_id": "a41-j-rendement-culture",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+        "anchor": "a41-e-2",
+        "text": "Le rendement dépend d’un traitement antibiotique déjà reçu et du volume de prélèvement",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+      },
+      {
+        "entry_id": "a41-j-gazometrie",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+        "anchor": "a41-e-3",
+        "text": "la pression partielle artérielle en oxygène et le pH",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+      },
+      {
+        "entry_id": "a41-j-glycocalyx",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+        "anchor": "a41-s-2",
+        "text": "Ses jonctions et son glycocalyx contribuent à la barrière",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+      },
+      {
+        "entry_id": "a41-j-starling",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+        "anchor": "a41-s-2",
+        "text": "lorsque le cœur répond à une augmentation de remplissage",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "fd2484003c01b556a233394186891a447f6598793eecdd39a922678e0756ab7d"
+      },
+      {
+        "entry_id": "a41-j-rythme",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html",
+        "anchor": "a41-p-3",
+        "text": "Le rythme, la fréquence, l’ischémie des extrémités et le point de perfusion sont surveillés.",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "96151f27e12d0329bbabaad64ac98b28a05f0913721fae0cca60efaf8c22a9d6"
+      },
+      {
+        "entry_id": "a41-j-renal-antibiotique",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html",
+        "anchor": "a41-p-3",
+        "text": "l’accumulation peut favoriser une neurotoxicité",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "96151f27e12d0329bbabaad64ac98b28a05f0913721fae0cca60efaf8c22a9d6"
+      },
+      {
+        "entry_id": "a41-j-solutes",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+        "anchor": "a41-9",
+        "text": "Le chlorure de sodium à 0,9 % expose à l’acidose hyperchlorémique et à une baisse de perfusion rénale.",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+      },
+      {
+        "entry_id": "a41-j-vasopresseur-arythmies",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+        "anchor": "a41-9",
+        "text": "Dans SOAP II (2010 ; 1 679 patients en choc), les arythmies étaient plus fréquentes sous dopamine : 24,1 % contre 12,4 %.",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+      },
+      {
+        "entry_id": "a41-j-perfusion-dynamique",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+        "anchor": "a41-9",
+        "text": "Les essais ProCESS (2014), ARISE (2014) et ProMISe (2015) n’ont pas montré de gain de survie avec l’ancienne réanimation protocolisée.",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48"
+      },
+      {
+        "entry_id": "a41-j-retour-veineux",
+        "file": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html",
+        "anchor": "a41-3",
+        "text": "La constriction veineuse mobilise du sang vers le cœur et peut augmenter la précharge.",
+        "text_count": 1,
+        "anchor_count": 1,
+        "target_file_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743"
+      }
+    ],
+    "glossary_entries": [
+      {
+        "key": "SOFA",
+        "line": 3,
+        "litteral": [
+          [
+            "S",
+            "Sequential"
+          ],
+          [
+            "O",
+            "Organ"
+          ],
+          [
+            "F",
+            "Failure"
+          ],
+          [
+            "A",
+            "Assessment"
+          ]
+        ],
+        "title": "Score séquentiel de défaillance d’organe",
+        "definition": "<p>Nommé à l’origine Sepsis-related Organ Failure Assessment, il évalue six fonctions : respiration, coagulation, foie, circulation, système nerveux central et rein. Dans Sepsis-3, une augmentation aiguë d’au moins deux points consécutive à une infection représente opérationnellement la dysfonction d’organe ; ce score ne démontre pas à lui seul sa cause.</p>",
+        "window": "a41-sofa",
+        "change": "modified"
+      },
+      {
+        "key": "A41",
+        "line": 4,
+        "litteral": [
+          [
+            "A",
+            "chapitre des maladies infectieuses de la classification"
+          ],
+          [
+            "41",
+            "catégorie des autres sepsis"
+          ]
+        ],
+        "title": "Catégorie A41 de la CIM-10-GM",
+        "definition": "<p>Autres sepsis ou sepsis d’agent non précisé ; ne couvre pas à elle seule A40 (streptocoques) ni le code complémentaire R57.2 du choc septique.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "A40",
+        "line": 5,
+        "litteral": [
+          [
+            "A",
+            "chapitre des maladies infectieuses de la classification"
+          ],
+          [
+            "40",
+            "catégorie des sepsis streptococciques"
+          ]
+        ],
+        "title": "Catégorie A40 de la CIM-10-GM",
+        "definition": "<p>Code de la classification pour les sepsis streptococciques, distinct de A41.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "R57.2",
+        "line": 6,
+        "litteral": [
+          [
+            "R",
+            "chapitre des symptômes, signes et résultats anormaux"
+          ],
+          [
+            "57.2",
+            "sous-catégorie du choc septique"
+          ]
+        ],
+        "title": "Code R57.2 du choc septique dans la CIM-10-GM",
+        "definition": "<p>Code complémentaire selon les règles de la classification en vigueur ; son usage relève d’une documentation diagnostique et de règles de codage applicables au lieu de soins.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "SIRS",
+        "line": 7,
+        "litteral": [
+          [
+            "S",
+            "Systemic"
+          ],
+          [
+            "I",
+            "Inflammatory"
+          ],
+          [
+            "R",
+            "Response"
+          ],
+          [
+            "S",
+            "Syndrome"
+          ]
+        ],
+        "title": "Syndrome de réponse inflammatoire systémique",
+        "definition": "<p>Des critères inflammatoires peuvent aider au dépistage, mais ne définissent pas à eux seuls le sepsis selon Sepsis-3.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "Sepsis-3",
+        "line": 8,
+        "litteral": [
+          [
+            "Sepsis",
+            "nom international de la définition de sepsis"
+          ],
+          [
+            "3",
+            "troisième consensus"
+          ]
+        ],
+        "title": "Troisième consensus international de définition du sepsis",
+        "definition": "<p>Consensus publié en 2016 par Singer et collaborateurs : le sepsis est une dysfonction d’organe menaçant la vie, causée par une réponse dérégulée de l’hôte à une infection. L’augmentation aiguë du score SOFA d’au moins deux points consécutive à l’infection est sa représentation opérationnelle.</p>",
+        "window": "a41-sepsis3",
+        "change": "modified"
+      },
+      {
+        "key": "V1a",
+        "line": 10,
+        "litteral": [
+          [
+            "V",
+            "Vasopressine"
+          ],
+          [
+            "1a",
+            "récepteur de sous-type 1a"
+          ]
+        ],
+        "title": "Récepteur V1a de la vasopressine",
+        "definition": "<p>Récepteur couplé aux protéines G situé sur le muscle lisse vasculaire ; sa stimulation par la vasopressine (argipressine) provoque une vasoconstriction indépendante des récepteurs adrénergiques. À ne pas confondre avec la dérivation précordiale V1 de l’électrocardiogramme.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "R57.0",
+        "line": 11,
+        "litteral": [
+          [
+            "R",
+            "chapitre des symptômes, signes et résultats anormaux"
+          ],
+          [
+            "57.0",
+            "sous-catégorie du choc cardiogénique"
+          ]
+        ],
+        "title": "Code R57.0 du choc cardiogénique dans la CIM-10-GM",
+        "definition": "<p>Code de la CIM-10-GM désignant le choc cardiogénique, c’est-à-dire une hypoperfusion due à une défaillance de la fonction de pompe du cœur ; distinct du choc hypovolémique (R57.1) et du choc septique (R57.2).</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "R57.1",
+        "line": 12,
+        "litteral": [
+          [
+            "R",
+            "chapitre des symptômes, signes et résultats anormaux"
+          ],
+          [
+            "57.1",
+            "sous-catégorie du choc hypovolémique"
+          ]
+        ],
+        "title": "Code R57.1 du choc hypovolémique dans la CIM-10-GM",
+        "definition": "<p>Code de la CIM-10-GM désignant le choc hypovolémique, c’est-à-dire une hypoperfusion due à une diminution du volume sanguin circulant ; distinct du choc cardiogénique (R57.0) et du choc septique (R57.2).</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "VASST",
+        "line": 13,
+        "litteral": [
+          [
+            "V",
+            "Vasopressin"
+          ],
+          [
+            "A",
+            "And"
+          ],
+          [
+            "S",
+            "Septic"
+          ],
+          [
+            "S",
+            "Shock"
+          ],
+          [
+            "T",
+            "Trial"
+          ]
+        ],
+        "title": "Essai VASST (2008)",
+        "definition": "<p>Argipressine 0,01–0,03 unité internationale/min contre supplément de noradrénaline chez 778 patients en choc septique : mortalité à 28 jours 35,4 % contre 39,3 %, différence non significative.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "ADRENAL",
+        "line": 14,
+        "litteral": [
+          [
+            "ADRENAL",
+            "nom d’essai arrangé à partir de « ADjunctive coRticosteroid trEatment iN criticAlly iLl patients with septic shock », non strictement lettre à lettre"
+          ]
+        ],
+        "title": "Essai ADRENAL (2018)",
+        "definition": "<p>Hydrocortisone 200 mg/jour en perfusion continue pendant 7 jours au plus chez 3 800 patients ventilés en choc septique randomisés (3 658 analysés) : mortalité à 90 jours 27,9 % contre 28,8 % sous placebo, résolution plus rapide du choc (médiane 3 contre 4 jours).</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "APROCCHSS",
+        "line": 15,
+        "litteral": [
+          [
+            "A",
+            "Activated"
+          ],
+          [
+            "PRO",
+            "PROtein"
+          ],
+          [
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "Corticosteroids"
+          ],
+          [
+            "H",
+            "Human"
+          ],
+          [
+            "S",
+            "Septic"
+          ],
+          [
+            "S",
+            "Shock"
+          ]
+        ],
+        "title": "Essai APROCCHSS (2018)",
+        "definition": "<p>Le titre développé est Activated Protein C and Corticosteroids for Human Septic Shock ; les mots de liaison and et for restent hors du découpage du sigle. Hydrocortisone 50 mg toutes les 6 heures et fludrocortisone 50 µg par jour pendant 7 jours chez 1 241 patients en choc septique : mortalité à 90 jours 43,0 % contre 49,1 % sous placebo.</p>",
+        "window": null,
+        "change": "modified"
+      },
+      {
+        "key": "SEPSISPAM",
+        "line": 16,
+        "litteral": [
+          [
+            "SEPSIS",
+            "sepsis"
+          ],
+          [
+            "PAM",
+            "Pression Artérielle Moyenne"
+          ]
+        ],
+        "title": "Essai SEPSISPAM (2014)",
+        "definition": "<p>Essai français : pression artérielle moyenne cible de 80–85 mmHg contre 65–70 mmHg chez 776 patients en choc septique, sans différence de mortalité à 28 jours (36,6 % contre 34,0 %).</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "MERINO",
+        "line": 17,
+        "litteral": [
+          [
+            "MERINO",
+            "nom d’essai tiré du titre « MEropenem versus piperacillin-tazobactam for definitive treatment of bloodstream infections due to ceftriaxone non-susceptible Escherichia coli and Klebsiella spp », non strictement lettre à lettre"
+          ]
+        ],
+        "title": "Essai MERINO (2018)",
+        "definition": "<p>Pipéracilline/tazobactam contre méropénem dans les bactériémies à entérobactéries résistantes à la ceftriaxone : mortalité à 30 jours 12,3 % contre 3,7 %, non-infériorité non démontrée.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "BLING",
+        "line": 18,
+        "litteral": [
+          [
+            "B",
+            "Beta"
+          ],
+          [
+            "L",
+            "Lactam"
+          ],
+          [
+            "IN",
+            "InfusioN"
+          ],
+          [
+            "G",
+            "Group"
+          ]
+        ],
+        "title": "Essais BLING (Beta-Lactam InfusioN Group)",
+        "definition": "<p>BLING III (2024) : perfusion continue contre intermittente de pipéracilline/tazobactam ou de méropénem chez 7 031 patients en sepsis ; mortalité à 90 jours 24,9 % contre 26,8 %, différence non significative ; guérison clinique plus fréquente.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "Solu-Cortef",
+        "line": 19,
+        "litteral": [
+          [
+            "Solu-Cortef",
+            "nom commercial composé d’une hydrocortisone injectable, non une abréviation"
+          ]
+        ],
+        "title": "Solu-Cortef, hydrocortisone injectable",
+        "definition": "<p>Succinate sodique d’hydrocortisone, substance sèche de 100 mg ou 250 mg avec 2 mL de solvant, pour injection ou perfusion intraveineuse. Indications suisses : choc dû à une insuffisance corticosurrénalienne ou choc réfractaire au traitement conventionnel en présence éventuelle d’une insuffisance corticosurrénalienne ; l’information professionnelle (Swissmedic 23533, octobre 2025) ne recommande pas l’emploi de routine dans le choc septique.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "CLOVERS",
+        "line": 21,
+        "litteral": [
+          [
+            "C",
+            "Crystalloid"
+          ],
+          [
+            "L",
+            "Liberal"
+          ],
+          [
+            "O",
+            "Or"
+          ],
+          [
+            "V",
+            "Vasopressors"
+          ],
+          [
+            "E",
+            "Early"
+          ],
+          [
+            "R",
+            "Resuscitation in"
+          ],
+          [
+            "S",
+            "Sepsis"
+          ]
+        ],
+        "title": "Essai CLOVERS (2023)",
+        "definition": "<p>Stratégie restrictive privilégiant les vasopresseurs contre stratégie libérale en solutés pendant 24 heures chez 1 563 adultes dont l’hypotension due au sepsis persistait après 1 à 3 litres : mortalité avant retour à domicile à 90 jours 14,0 % contre 14,9 %, différence non significative.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "FiO₂",
+        "line": 23,
+        "litteral": [
+          [
+            "F",
+            "Fraction"
+          ],
+          [
+            "i",
+            "inspirée"
+          ],
+          [
+            "O₂",
+            "en Oxygène (dioxygène)"
+          ]
+        ],
+        "title": "Fraction inspirée en oxygène",
+        "definition": "<p>Proportion d’oxygène dans le gaz inspiré : 0,21 à l’air ambiant, jusqu’à 1,0 en oxygène pur. Le rapport PaO₂/FiO₂ mesure l’oxygénation dans le score SOFA ; chez Mme R., 66 mmHg divisés par 0,21 donnent 314.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "SOAP",
+        "line": 24,
+        "litteral": [
+          [
+            "S",
+            "Sepsis"
+          ],
+          [
+            "O",
+            "Occurrence in"
+          ],
+          [
+            "A",
+            "Acutely ill"
+          ],
+          [
+            "P",
+            "Patients"
+          ]
+        ],
+        "title": "Étude SOAP (2006)",
+        "definition": "<p>Étude de cohorte européenne menée en mai 2002 dans 198 unités de soins intensifs de 24 pays : 1 177 des 3 147 patients (37,4 %) avaient un sepsis. Le foyer était pulmonaire dans 68 % des cas et abdominal dans 22 % ; un bilan hydrique positif figurait parmi les plus forts facteurs pronostiques de décès.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "BALANCE",
+        "line": 25,
+        "litteral": [
+          [
+            "B",
+            "Bacteremia"
+          ],
+          [
+            "A",
+            "Antibiotic"
+          ],
+          [
+            "L",
+            "Length"
+          ],
+          [
+            "A",
+            "Actually"
+          ],
+          [
+            "N",
+            "Needed for"
+          ],
+          [
+            "C",
+            "Clinical"
+          ],
+          [
+            "E",
+            "Effectiveness"
+          ]
+        ],
+        "title": "Essai BALANCE (2025)",
+        "definition": "<p>Essai de non-infériorité chez 3 608 patients hospitalisés pour une bactériémie, dans 74 hôpitaux de 7 pays : 7 jours d’antibiotique n’étaient pas inférieurs à 14 jours (mortalité à 90 jours 14,5 % contre 16,1 %). L’essai excluait <i>Staphylococcus aureus</i>, l’immunodépression sévère et les foyers exigeant un traitement prolongé.</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "ANDROMEDA-SHOCK",
+        "line": 26,
+        "litteral": [
+          [
+            "ANDROMEDA-SHOCK",
+            "nom propre d’essai, non développé en sigle dans les publications consultées"
+          ]
+        ],
+        "title": "Essai ANDROMEDA-SHOCK (2019)",
+        "definition": "<p>Essai randomisé de 424 patients en choc septique dans 28 unités de soins intensifs de 5 pays : une réanimation visant la normalisation du temps de recoloration capillaire, comparée à une réanimation guidée par le lactate, n’a pas réduit significativement la mortalité à 28 jours (34,9 % contre 43,4 %) et a réduit les défaillances d’organe à 72 heures.</p>",
+        "window": "a41-sign-perfusion",
+        "change": "unchanged"
+      },
+      {
+        "key": "ANDROMEDA-SHOCK-2",
+        "line": 27,
+        "litteral": [
+          [
+            "ANDROMEDA-SHOCK",
+            "nom propre d’essai, non développé en sigle dans les publications consultées"
+          ],
+          [
+            "2",
+            "deuxième essai"
+          ]
+        ],
+        "title": "Essai ANDROMEDA-SHOCK-2 (2025)",
+        "definition": "<p>Essai randomisé de 1 501 patients en choc septique précoce dans 86 centres de 19 pays : une réanimation personnalisée guidée par le temps de recoloration capillaire a été supérieure aux soins usuels sur un critère hiérarchique associant mortalité, durée des suppléances vitales et durée de séjour (rapport de victoires de 1,16), surtout par une durée plus courte des suppléances.</p>",
+        "window": "a41-sign-perfusion",
+        "change": "unchanged"
+      },
+      {
+        "key": "Ait-Oufella",
+        "line": 28,
+        "litteral": [
+          [
+            "Ait-Oufella",
+            "nom propre d’auteur, non une abréviation"
+          ]
+        ],
+        "title": "Ait-Oufella, premier auteur de l’étude du score de marbrures (2011)",
+        "definition": "<p>Premier auteur de l’étude qui a décrit le score de marbrures de 0 à 5 dans le choc septique et montré sa valeur pronostique (<i>Intensive Care Medicine</i> 2011).</p>",
+        "window": null,
+        "change": "unchanged"
+      },
+      {
+        "key": "PCT",
+        "line": 30,
+        "litteral": [
+          [
+            "PCT",
+            "abréviation conventionnelle de procalcitonine, un seul nom et non trois mots"
+          ]
+        ],
+        "title": "Procalcitonine",
+        "definition": "<p>Précurseur de la calcitonine utilisé comme biomarqueur inflammatoire. Une valeur isolée ne confirme ni n’exclut le sepsis. Son évolution peut aider à décider l’arrêt d’un antibiotique avec l’évaluation clinique, un foyer contrôlé et une durée optimale incertaine.</p>",
+        "window": "a41-pct",
+        "change": "added"
+      },
+      {
+        "key": "PBP",
+        "line": 31,
+        "litteral": [
+          [
+            "P",
+            "Penicillin"
+          ],
+          [
+            "B",
+            "Binding"
+          ],
+          [
+            "P",
+            "Proteins"
+          ]
+        ],
+        "title": "Protéines liant les pénicillines",
+        "definition": "<p>Protéines bactériennes dont certaines participent à la construction du peptidoglycane. Leur inhibition par une bêtalactamine fragilise la paroi d’une bactérie sensible ; une modification de cible peut participer à la résistance.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "BLSE",
+        "line": 32,
+        "litteral": [
+          [
+            "B",
+            "Bêta-"
+          ],
+          [
+            "L",
+            "Lactamases"
+          ],
+          [
+            "S",
+            "Spectre"
+          ],
+          [
+            "E",
+            "Étendu"
+          ]
+        ],
+        "title": "Bêtalactamases à spectre étendu",
+        "definition": "<p>Enzymes capables d’hydrolyser plusieurs bêtalactamines, notamment des céphalosporines de troisième génération. La sensibilité du germe et le contexte de l’infection doivent être vérifiés ; ce sigle ne décrit pas à lui seul tous ses mécanismes de résistance.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "SARM",
+        "line": 33,
+        "litteral": [
+          [
+            "S",
+            "Staphylococcus"
+          ],
+          [
+            "A",
+            "Aureus"
+          ],
+          [
+            "R",
+            "Résistant"
+          ],
+          [
+            "M",
+            "Méticilline"
+          ]
+        ],
+        "title": "Staphylococcus aureus résistant à la méticilline",
+        "definition": "<p>Phénotype de résistance associé à une protéine liant les pénicillines de moindre affinité pour de nombreuses bêtalactamines. La couverture probabiliste dépend du risque individuel, du foyer et de l’écologie locale.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "AUC",
+        "line": 34,
+        "litteral": [
+          [
+            "A",
+            "Area"
+          ],
+          [
+            "U",
+            "Under"
+          ],
+          [
+            "C",
+            "Curve"
+          ]
+        ],
+        "title": "Aire sous la courbe des concentrations",
+        "definition": "<p>Intégrale de la concentration d’un médicament en fonction du temps. Pour la vancomycine, son rapport à la concentration minimale inhibitrice aide à apprécier l’exposition ; l’interprétation dépend de la méthode de mesure, de l’indication et de la fonction rénale.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "ESE",
+        "line": 35,
+        "litteral": [
+          [
+            "E",
+            "European"
+          ],
+          [
+            "S",
+            "Society"
+          ],
+          [
+            "E",
+            "Endocrinology"
+          ]
+        ],
+        "title": "Société européenne d’endocrinologie",
+        "definition": "<p>Société savante coautrice des recommandations de 2024 sur l’insuffisance surrénalienne induite par les glucocorticoïdes.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "EAU",
+        "line": 36,
+        "litteral": [
+          [
+            "E",
+            "European"
+          ],
+          [
+            "A",
+            "Association"
+          ],
+          [
+            "U",
+            "Urology"
+          ]
+        ],
+        "title": "Association européenne d’urologie",
+        "definition": "<p>Société savante éditrice des recommandations sur les infections urologiques. Ses schémas concernent un foyer et un contexte définis ; ils ne s’appliquent pas automatiquement à tout sepsis.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "XueBiJing",
+        "line": 37,
+        "litteral": [
+          [
+            "XueBiJing",
+            "nom propre d’une préparation injectable, non une abréviation"
+          ]
+        ],
+        "title": "Préparation injectable XueBiJing",
+        "definition": "<p>La Surviving Sepsis Campaign 2026 suggère de ne pas utiliser cette préparation hors des juridictions où elle possède une autorisation réglementaire ; recommandation conditionnelle, certitude très faible. Cette mention ne démontre pas une autorisation en Suisse.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "A48.3",
+        "line": 38,
+        "litteral": [
+          [
+            "A",
+            "chapitre des maladies infectieuses de la classification"
+          ],
+          [
+            "48.3",
+            "sous-catégorie du syndrome de choc toxique"
+          ]
+        ],
+        "title": "Syndrome de choc toxique, code A48.3 de la CIM-10-GM 2024",
+        "definition": "<p>Catégorie distincte du sepsis A41 et du choc septique R57.2. La notice BfArM 2024 exclut de cette rubrique le choc endotoxinique R57.8 et le sepsis A41.9 ; cette entrée de glossaire ne signifie pas que toutes les formes de choc toxique sont enseignées dans A41.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "ProCESS",
+        "line": 39,
+        "litteral": [
+          [
+            "Pro",
+            "Protocolized"
+          ],
+          [
+            "C",
+            "Care"
+          ],
+          [
+            "E",
+            "Early"
+          ],
+          [
+            "S",
+            "Septic"
+          ],
+          [
+            "S",
+            "Shock"
+          ]
+        ],
+        "title": "Essai ProCESS (2014)",
+        "definition": "<p>Protocolized Care for Early Septic Shock : essai multicentrique de 1 341 patients répartis entre trois stratégies de réanimation. Les soins protocolisés n’ont pas amélioré la mortalité à 60 jours par rapport aux soins usuels. Le registre NCT00510835 confirme le titre et le sigle ; le mot de liaison for reste hors du découpage.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "ARISE",
+        "line": 40,
+        "litteral": [
+          [
+            "A",
+            "Australasian"
+          ],
+          [
+            "R",
+            "Resuscitation"
+          ],
+          [
+            "I",
+            "In"
+          ],
+          [
+            "S",
+            "Sepsis"
+          ],
+          [
+            "E",
+            "Evaluation"
+          ]
+        ],
+        "title": "Essai ARISE (2014)",
+        "definition": "<p>Australasian Resuscitation In Sepsis Evaluation : essai de 1 600 patients avec choc septique précoce, comparant une réanimation guidée par objectifs aux soins usuels, sans réduction de mortalité à 90 jours. Le titre développé figure dans le registre NCT00975793.</p>",
+        "window": null,
+        "change": "added"
+      },
+      {
+        "key": "ProMISe",
+        "line": 41,
+        "litteral": [
+          [
+            "Pro",
+            "Protocolised"
+          ],
+          [
+            "M",
+            "Management"
+          ],
+          [
+            "I",
+            "In"
+          ],
+          [
+            "Se",
+            "Sepsis"
+          ]
+        ],
+        "title": "Essai ProMISe (2015)",
+        "definition": "<p>Protocolised Management In Sepsis : essai de 1 260 patients, sans amélioration de mortalité à 90 jours par la réanimation selon des objectifs centraux imposés par rapport aux soins usuels. Le titre développé est celui du rapport original de 2015, identifiant PubMed 26597979 ; le résultat clinique est publié sous l’identifiant 25776532.</p>",
+        "window": null,
+        "change": "added"
+      }
+    ],
+    "global_HLA_DR": "Pas de nouvelle définition HLA-DR dans le draft final ; clé globale réutilisée depuis la boucle de m06.py. Le contrôle runtime de 1 350 clés, dont 12 ajouts sans collision, est une preuve du coordinateur, pas la conclusion d’un simple AST local ni une exécution de code entrant par ce poste.",
+    "sources": [
+      {
+        "source": "PubMed efetch XML",
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8328734,31525774,17881544,26903338,29490185&retmode=xml",
+        "sha256": "edb38f5e57dee9c42fd39fcc76ae7495862ce09d3b7f122ab67af670477d7939",
+        "bytes": 271729,
+        "scope": "résumés primaires réellement lus, pas textes intégraux"
+      },
+      {
+        "source": "PubMed efetch XML, autres recherches",
+        "ids": [
+          "10947163",
+          "4278107",
+          "22820644",
+          "10912459",
+          "6826732",
+          "22580944",
+          "20200382",
+          "24635773",
+          "25272316",
+          "25776532"
+        ],
+        "scope": "résumés primaires réellement lus"
+      },
+      {
+        "source": "PubMed efetch XML solutés/ProMISe",
+        "ids": [
+          "29485925",
+          "34375394",
+          "35041780",
+          "26597979",
+          "24289513"
+        ],
+        "sha256": "939aa32838d155a862c4bdfbe1893768dcba98c6f359c863f7c65acb45b03192",
+        "scope": "résumés et titres réellement lus"
+      },
+      {
+        "source": "Bose 2016",
+        "pmid": "27754788",
+        "cache": "/workspace/medina-env/reprise-a41/sources/bank_primary_abstracts.json",
+        "scope": "résumé primaire EBI sauvegardé, effectivement lu ; modèle murin sous dexaméthasone"
+      },
+      {
+        "source": "SCCM 2026",
+        "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+        "sha256": "4b6c820c0c083394694ee8c71ce63b4a11cd86c9ca69cce4fe0a18ca0d2555a7",
+        "bytes": 329772,
+        "sections": [
+          7,
+          25,
+          26,
+          44,
+          49,
+          53,
+          86,
+          87,
+          92
+        ],
+        "scope": "page officielle relue en direct ; chaque carte extraite depuis son conteneur incluant le paragraphe précédant l’ancre RecomGroup, force/certitude/remarques comprises ; hash page peut varier avec données de session"
+      },
+      {
+        "source": "SCCM 2026, autres cartes",
+        "cache": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+        "sections": [
+          22,
+          40
+        ],
+        "scope": "conditions PCT début/arrêt relues dans capture du primaire"
+      },
+      {
+        "source": "SSC 2021",
+        "cache": "/workspace/medina-env/reprise-a41/sources/pmc2021.primary.txt",
+        "sha256": "30cf18d3f33b628b9ca4c2d488bfb3dd4219440572d302fd12b7b31edb7f2a6e",
+        "scope": "section Glucose control et remarque 144–180 mg/dL (8–10 mmol/L) relues"
+      },
+      {
+        "source": "Piperacillin-Tazobactam Labatec 60142",
+        "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=60142",
+        "sha256": "100e3d38b1952a2be78631b525ce2ef7508b7486241b0cb8101f5289433991ca",
+        "bytes": 107637,
+        "scope": "notice suisse officielle reçue en direct ; neurotoxicité/insuffisance rénale/propriétés ; version mars 2026"
+      },
+      {
+        "source": "Noradrenalin Sintetica 67023",
+        "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=67023",
+        "sha256": "a0109dc89c990359d79e028cdd7d6665f679f4f02d6ed9655e8a58d88d97116b",
+        "bytes": 109099,
+        "scope": "notice suisse officielle reçue en direct ; stimulation bêta/inotropie/arythmie ; version octobre 2020"
+      },
+      {
+        "source": "Hamzaoui 2010",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2945123/fullTextXML",
+        "sha256": "0eafb5ffbaced218088d1343e0b6b23a78277c45f0e809b39bb495d253e2e4cf",
+        "bytes": 88354,
+        "scope": "texte intégral introduction, résultats, limites"
+      },
+      {
+        "source": "BfArM2024",
+        "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-a30-a49.htm",
+        "sha256": "36b6cbfee7ca50e6ed726440f9e95f8d383e603ade5af774f1c1e90d701c531c",
+        "bytes": 38216,
+        "scope": "A48.3 et exclusions R57.8/A41.9 relues"
+      },
+      {
+        "source": "ClinicalTrials.gov registre ProCESS",
+        "id": "NCT00510835",
+        "sha256": "503b58c374c8c4ca901a9fbf31b1867994b90799ca8de64edf9939f55bd88725",
+        "scope": "titre et acronym réellement lus API v2"
+      },
+      {
+        "source": "ClinicalTrials.gov registre ARISE",
+        "id": "NCT00975793",
+        "sha256": "5602f10f74216b73e809a7949ff6ece0de5367c95344bab25af7e8c147de2f44",
+        "scope": "briefTitle et acronym réellement lus API v2"
+      },
+      {
+        "source": "ClinicalTrials.gov registre APROCCHSS",
+        "id": "NCT00625209",
+        "sha256": "876caaa705cf0956952b3dce0fb9417dbcf3a268752848bd4f8a8383ee0512fd",
+        "scope": "titre développé réellement lu API v2 ; champ acronym APROCCHS distinct du sigle publié APROCCHSS"
+      }
+    ],
+    "limits": [
+      "Cette contrelecture Codex ne remplace pas le nouveau contre-audit Claude du paquet A41 corrigé au SHA à publier.",
+      "Aucune fermeture du chapitre ou du fragment ; aucune certification CIM-11.",
+      "ObsESP03 demeure partielle pour les normes suisses artérielles ; voir NORMES_GAZOMETRIE.",
+      "Les 14 cibles sont présentes et uniques dans les HTML drafts effectivement lus. Ces HTMLétaient encore en finalisation par leurs auteurs : les hash des cibles sont conservés, et toute modification ultérieure nécessite une nouvelle vérification des liaisons.",
+      "Les contrôles du producteur/coordinateur restent distincts de notre lecture documentaire et des vérifications statiques propres."
+    ],
+    "canonical_modified": false,
+    "git_modified": false,
+    "incoming_code_executed": false,
+    "injection_authorized_by_this_report": false,
+    "new_Claude_cross_review_closed": false
+  },
+  "delta_review": {
+    "reviewer": "/root/sentinelle_reception",
+    "completed_at_utc": "2026-10-08T12:52:27.537313+00:00",
+    "previous_glossary_sha256": "ad22c21964b491c71776a07a5f4eaa350f8e2b3fcb50ba8ab6086ecf8b915840",
+    "current_glossary_sha256": "f7d9e45c7df4b04d4b746989fbf3b7808dfec9712415fef0de51533affc2d69a",
+    "added": 24,
+    "retained_unchanged": 35,
+    "modified_previous": 0,
+    "removed_previous": 0,
+    "duplicate_keys_local": 0,
+    "runtime_collisions": "Absence de collision avec G runtime selon coordinateur, sans exécution du module entrant par ce poste.",
+    "decision": "favorable_sur_les_24_definitions_et_les_deux_substitutions_editoriales",
+    "blocking": 0,
+    "major": 0,
+    "new_minor": 0,
+    "entry_checks": [
+      {
+        "key": "A32.7",
+        "line": 43,
+        "verdict": "favorable",
+        "evidence": "BfArM 2024 A32.7",
+        "assessment": "« Listeriensepsis » réellement lu ; code spécifique distinct d’A41, sans couverture exhaustive annoncée."
+      },
+      {
+        "key": "B37.7",
+        "line": 44,
+        "verdict": "favorable",
+        "evidence": "BfArM 2024 B37.7",
+        "assessment": "« Candida-Sepsis » réellement lu ; contexte et risque distingués, sans antifongique universel."
+      },
+      {
+        "key": "NEWS",
+        "line": 45,
+        "verdict": "favorable",
+        "evidence": "SSC 2026, RecomGroup 4",
+        "assessment": "National Early Warning Score correct ; alerte physiologique distincte d’infection et de définition du sepsis."
+      },
+      {
+        "key": "NEWS2",
+        "line": 46,
+        "verdict": "favorable",
+        "evidence": "SSC 2026, RecomGroup 4",
+        "assessment": "Deuxième version du National Early Warning Score ; protocole et clinique nécessaires, aucun seuil thérapeutique inventé."
+      },
+      {
+        "key": "MEWS",
+        "line": 47,
+        "verdict": "favorable",
+        "evidence": "SSC 2026, RecomGroup 4",
+        "assessment": "Modified Early Warning Score correct et distinct de NEWS2 ; ne remplace ni examen ni diagnostic causal."
+      },
+      {
+        "key": "CAPITA",
+        "line": 48,
+        "verdict": "favorable",
+        "evidence": "PMID 25785969, PMID 28173960, NCT00744263",
+        "assessment": "Community-Acquired Pneumonia Immunization Trial in Adults confirmé par analyse primaire. CAPiTA/CAPITA distingués ; PCV13 et adultes âgés corrects, sans prévention de tout sepsis déduite."
+      },
+      {
+        "key": "PCV13",
+        "line": 49,
+        "verdict": "favorable",
+        "evidence": "PMID 25785969",
+        "assessment": "Pneumococcal Conjugate Vaccine, treize sérotypes ; essai historique distinct des recommandations actuelles."
+      },
+      {
+        "key": "SCCM",
+        "line": 50,
+        "verdict": "favorable",
+        "evidence": "Page officielle SSC 2026",
+        "assessment": "Society of Critical Care Medicine correct ; of hors découpage. Coédition avec ESICM, sans nouvelle prescription."
+      },
+      {
+        "key": "SAPS",
+        "line": 51,
+        "verdict": "favorable",
+        "evidence": "NCT01139489",
+        "assessment": "Stop Antibiotics on Procalcitonin Guidance Study exact. Conseil d’arrêt en soins intensifs, sans diagnostic isolé ni début automatique d’antibiotique."
+      },
+      {
+        "key": "CHUV",
+        "line": 52,
+        "verdict": "favorable",
+        "evidence": "Fiche officielle CHUV DLA_INV_01_00717",
+        "assessment": "Centre hospitalier universitaire vaudois correct ; plages attachées au document, à la méthode et à la matrice."
+      },
+      {
+        "key": "USZ",
+        "line": 53,
+        "verdict": "favorable",
+        "evidence": "Fiches officielles USZ 161/35",
+        "assessment": "Universitätsspital Zürich correct ; découpage orthographique explicite, sans généralisation des plages à tous les laboratoires."
+      },
+      {
+        "key": "PAI-1",
+        "line": 54,
+        "verdict": "favorable",
+        "evidence": "Lecture physiologique et nomenclature",
+        "assessment": "Plasminogen Activator Inhibitor, type 1, correct. Inhibition d’activateurs et réduction possible de fibrinolyse, sans résumer tout l’état de coagulation."
+      },
+      {
+        "key": "dL",
+        "line": 55,
+        "verdict": "favorable",
+        "evidence": "Contrôle dimensionnel indépendant",
+        "assessment": "Décilitre = 0,1 L ; 1 mg/dL = 10 mg/L. Conversion exacte."
+      },
+      {
+        "key": "Garcia-Alvarez",
+        "line": 56,
+        "verdict": "favorable",
+        "evidence": "PMID 25394679",
+        "assessment": "Garcia-Alvarez, auteur de la revue Sepsis-associated hyperlactatemia de 2014, confirmé. Revue distinguée d’une étude primaire et modèles distingués des observations humaines."
+      },
+      {
+        "key": "Plasma-Lyte",
+        "line": 57,
+        "verdict": "favorable",
+        "evidence": "NCT02721654 ; PMID 22580944 déjà lu",
+        "assessment": "Nom commercial de cristalloïdes équilibrés. Présentation et composition à vérifier ; toutes les formulations ne deviennent pas interchangeables."
+      },
+      {
+        "key": "SMART",
+        "line": 58,
+        "verdict": "favorable",
+        "evidence": "NCT02444988 ; PMID 29485925 déjà lu",
+        "assessment": "Nom arrangé de Isotonic Solutions and Major Adverse Renal Events Trial conforme. Extension Medical Intensive Care Unit du registre distinguée ; composite incluant décès, pas gain de survie isolé."
+      },
+      {
+        "key": "BaSICS",
+        "line": 59,
+        "verdict": "favorable",
+        "evidence": "NCT02875873 ; PMID 34375394 déjà lu",
+        "assessment": "Balanced Solution Versus Saline in Intensive Care Study exact. Absence de réduction significative de mortalité à 90 jours distincte d’une équivalence générale."
+      },
+      {
+        "key": "PLUS",
+        "line": 60,
+        "verdict": "favorable",
+        "evidence": "NCT02721654 ; PMID 35041780 déjà lu",
+        "assessment": "Plasma-Lyte 148 versUs Saline Study concorde au briefTitle. Pas de bénéfice démontré sur mortalité ou atteinte rénale ; aucune généralisation à toutes les situations."
+      },
+      {
+        "key": "SAFE",
+        "line": 61,
+        "verdict": "favorable",
+        "evidence": "PMID 15163774 ; PMID 17040925",
+        "assessment": "Saline versus Albumin Fluid Evaluation confirmé par le titre de l’analyse primaire. Essai 2004 albumine/saline en soins intensifs, sans interchangeabilité en toute situation déduite."
+      },
+      {
+        "key": "ALBIOS",
+        "line": 62,
+        "verdict": "favorable",
+        "evidence": "NCT00707122 ; PMID 24635772, résumé primaire effectivement relu",
+        "assessment": "ALBumin Italian Outcome Sepsis exact dans officialTitle. Résumé primaire : 1 818 patients, albumine 20 % et cristalloïdes versus cristalloïdes ; mortalité à 28 jours 31,8 %/32,0 %, à 90 jours 41,1 %/43,6 %, différences non significatives. Résultat global et limites des sous-groupes distingués, sans indication universelle."
+      },
+      {
+        "key": "DC",
+        "line": 63,
+        "verdict": "favorable",
+        "evidence": "Lecture physiologique et contrôle de portée",
+        "assessment": "Débit cardiaque = volume éjecté par unité de temps, L/min. Son augmentation ne prouve pas la restauration de toute perfusion d’organe."
+      },
+      {
+        "key": "PVC",
+        "line": 64,
+        "verdict": "favorable",
+        "evidence": "SSC 2026, RecomGroup 49 ; lecture physiologique",
+        "assessment": "Pression veineuse centrale en mmHg. Mesure statique isolée non fiable pour prédire réponse aux liquides ; aucune cible universelle inventée."
+      },
+      {
+        "key": "CaO₂",
+        "line": 65,
+        "verdict": "favorable",
+        "evidence": "Lecture physiologique et contrôle dimensionnel",
+        "assessment": "Contenu artériel en oxygène par volume de sang, mL/dL dans le chapitre ; dépend surtout de Hb et saturation. Saturation seule insuffisante, aucun seuil de prescription ajouté."
+      },
+      {
+        "key": "DO₂",
+        "line": 66,
+        "verdict": "favorable",
+        "evidence": "Lecture physiologique et contrôle dimensionnel",
+        "assessment": "Apport global = DC × CaO₂ avec conversion ; L/min × mL/dL nécessite facteur 10 pour mL/min. Calcul distinct de répartition régionale et extraction cellulaire."
+      }
+    ],
+    "sources": [
+      {
+        "source": "ClinicalTrials.gov saps",
+        "cache": "/workspace/medina-env/reprise-a41/sources/saps_registry.json",
+        "url": "https://clinicaltrials.gov/api/v2/studies/NCT01139489",
+        "sha256": "9f30f2b1277caf4c955bb97e310c69c893e60937dd15b3219f6a330af969ae00",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "primary_registry_identification_and_brief_summary",
+        "identification_module_actually_read": {
+          "nctId": "NCT01139489",
+          "orgStudyIdInfo": {
+            "id": "VU University medical center"
+          },
+          "secondaryIdInfos": [
+            {
+              "id": "NTR1861",
+              "type": "OTHER",
+              "domain": "Nederlands Trial Register"
+            }
+          ],
+          "organization": {
+            "fullName": "Amsterdam UMC, location VUmc",
+            "class": "OTHER"
+          },
+          "briefTitle": "Safety and Efficacy of Procalcitonin Guided Antibiotic Therapy in Adult Intensive Care Units (ICU's)",
+          "officialTitle": "Stop Antibiotics on Procalcitonin Guidance Study",
+          "acronym": "SAPS"
+        }
+      },
+      {
+        "source": "ClinicalTrials.gov basics",
+        "cache": "/workspace/medina-env/reprise-a41/sources/basics_registry.json",
+        "url": "https://clinicaltrials.gov/api/v2/studies/NCT02875873",
+        "sha256": "3c88a3ce5843cf1ff6811a1b18501a68d611cd014169a4bc2c1df23a449956f9",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "primary_registry_identification_and_brief_summary",
+        "identification_module_actually_read": {
+          "nctId": "NCT02875873",
+          "orgStudyIdInfo": {
+            "id": "basics001"
+          },
+          "organization": {
+            "fullName": "Hospital do Coracao",
+            "class": "OTHER"
+          },
+          "briefTitle": "Balanced Solution Versus Saline in Intensive Care Study",
+          "officialTitle": "Balanced Solution Versus Saline in Intensive Care Study",
+          "acronym": "BaSICS"
+        }
+      },
+      {
+        "source": "ClinicalTrials.gov plus",
+        "cache": "/workspace/medina-env/reprise-a41/sources/plus_registry.json",
+        "url": "https://clinicaltrials.gov/api/v2/studies/NCT02721654",
+        "sha256": "7dae23dfcee52245341a50615cdc19f896d2ecedb4b539c2550705aefba8d3a9",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "primary_registry_identification_and_brief_summary",
+        "identification_module_actually_read": {
+          "nctId": "NCT02721654",
+          "orgStudyIdInfo": {
+            "id": "GI-CCT7587"
+          },
+          "secondaryIdInfos": [
+            {
+              "id": "U1111-1178-8334",
+              "type": "OTHER",
+              "domain": "World Health Organisation (WHO) Universal Trial Number (UTN)"
+            }
+          ],
+          "organization": {
+            "fullName": "The George Institute",
+            "class": "OTHER"
+          },
+          "briefTitle": "Plasma-Lyte 148® versUs Saline Study",
+          "officialTitle": "Comparison of Plasmalyte 148® and Saline for Fluid Resuscitation and Intravenous Fluid Therapy in Critically Ill Adults",
+          "acronym": "PLUS"
+        }
+      },
+      {
+        "source": "ClinicalTrials.gov albios",
+        "cache": "/workspace/medina-env/reprise-a41/sources/albios_registry.json",
+        "url": "https://clinicaltrials.gov/api/v2/studies/NCT00707122",
+        "sha256": "53111ee8f32b0121dc02f5da86157a2e318c53116ada1f4da0a6ce7cba0aa72e",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "primary_registry_identification_and_brief_summary",
+        "identification_module_actually_read": {
+          "nctId": "NCT00707122",
+          "orgStudyIdInfo": {
+            "id": "ALBIOS"
+          },
+          "organization": {
+            "fullName": "Fondazione IRCCS Ca' Granda, Ospedale Maggiore Policlinico",
+            "class": "OTHER"
+          },
+          "briefTitle": "Volume Replacement With Albumin in Severe Sepsis",
+          "officialTitle": "Efficacy of Albumin Administration for Volume Replacement in Patients With Severe Sepsis or Septic Shock - the ALBumin Italian Outcome Sepsis (ALBIOS) Study",
+          "acronym": "ALBIOS"
+        }
+      },
+      {
+        "source": "ClinicalTrials.gov smart",
+        "cache": "/workspace/medina-env/reprise-a41/sources/smart_registry.json",
+        "url": "https://clinicaltrials.gov/api/v2/studies/NCT02444988",
+        "sha256": "a6a6a5549684944e0a7ce585b26c7009c4dcff8eb3f75b50f399ac271f0a124d",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "primary_registry_identification_and_brief_summary",
+        "identification_module_actually_read": {
+          "nctId": "NCT02444988",
+          "orgStudyIdInfo": {
+            "id": "IRB#141349"
+          },
+          "organization": {
+            "fullName": "Vanderbilt University Medical Center",
+            "class": "OTHER"
+          },
+          "briefTitle": "Isotonic Solutions and Major Adverse Renal Events Trial in the Medical Intensive Care Unit",
+          "officialTitle": "Isotonic Solutions and Major Adverse Renal Events Trial in the Medical Intensive Care Unit",
+          "acronym": "SMART-MED"
+        }
+      },
+      {
+        "source": "BfArM CIM-10-GM 2024 A32.7",
+        "cache": "/workspace/medina-env/reprise-a41/sources/pathologie1/a41-p1-bfarm2024.html",
+        "sha256": "36b6cbfee7ca50e6ed726440f9e95f8d383e603ade5af774f1c1e90d701c531c",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "official_classification_section",
+        "exact_passage": "A32.7 Listeriensepsis Kodierhinweis Benutze für vollstationär im Krankenhaus behandelte, erwachsene Personen (18 Jahre und älter) eine zusätzliche Schlüsselnummer ( U69.80!-U69.82! ), um den zeitlichen Bezug der Sepsis zur stationären Krankenhausaufnahme anzugeben. A32.8 Sonstige Formen der Listeriose Inkl.: Endokarditis durch Listerien† ( I39.8* ) Okuloglanduläre Listeriose Zerebrale Ar",
+        "limit": "Catégorie et note lues ; pas manuel de codage complet ni certification CIM-11."
+      },
+      {
+        "source": "BfArM CIM-10-GM 2024 B37.7",
+        "cache": "/workspace/medina-env/reprise-a41/sources/bfarm_b35_b49.html",
+        "sha256": "201133511481c805f641ebaec4af6deac1c685d3f5421c4113221826a9c03d10",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "official_classification_section",
+        "exact_passage": "B37.7 Candida-Sepsis Kodierhinweis Benutze für vollstationär im Krankenhaus behandelte, erwachsene Personen (18 Jahre und älter) eine zusätzliche Schlüsselnummer ( U69.80!-U69.82! ), um den zeitlichen Bezug der Sepsis zur stationären Krankenhausaufnahme anzugeben. B37.8- Kandidose an sonstigen Lokalisationen B37.81 Candida-Ösophagitis B37.88 Kandidose an sonstigen Lokalisationen Inkl.: C",
+        "limit": "Catégorie et note lues ; pas manuel de codage complet ni certification CIM-11."
+      },
+      {
+        "source": "PMID 15163774",
+        "cache": "/workspace/medina-env/a41-pathologie2/15163774.json",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15163774/",
+        "sha256": "0feab56834269401113bbd99394b2bd3b05a3cc1ac31df439f37a69a152007e6",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "primary_trial_abstract_not_full_text",
+        "title": "A comparison of albumin and saline for fluid resuscitation in the intensive care unit.",
+        "abstract_actually_read": "<h4>Background</h4>It remains uncertain whether the choice of resuscitation fluid for patients in intensive care units (ICUs) affects survival. We conducted a multicenter, randomized, double-blind trial to compare the effect of fluid resuscitation with albumin or saline on mortality in a heterogeneous population of patients in the ICU.<h4>Methods</h4>We randomly assigned patients who had been admitted to the ICU to receive either 4 percent albumin or normal saline for intravascular-fluid resuscitation during the next 28 days. The primary outcome measure was death from any cause during the 28-day period after randomization.<h4>Results</h4>Of the 6997 patients who underwent randomization, 3497 were assigned to receive albumin and 3500 to receive saline; the two groups had similar baseline characteristics. There were 726 deaths in the albumin group, as compared with 729 deaths in the saline group (relative risk of death, 0.99; 95 percent confidence interval, 0.91 to 1.09; P=0.87). The proportion of patients with new single-organ and multiple-organ failure was similar in the two groups (P=0.85). There were no significant differences between the groups in the mean (+/-SD) numbers of days spent in the ICU (6.5+/-6.6 in the albumin group and 6.2+/-6.2 in the saline group, P=0.44), days spent in the hospital (15.3+/-9.6 and 15.6+/-9.6, respectively; P=0.30), days of mechanical ventilation (4.5+/-6.1 and 4.3+/-5.7, respectively; P=0.74), or days of renal-replacement therapy (0.5+/-2.3 and 0.4+/-2.0, respectively; P=0.41).<h4>Conclusions</h4>In patients in the ICU, use of either 4 percent albumin or normal saline for fluid resuscitation results in similar outcomes at 28 days."
+      },
+      {
+        "source": "PMID 25785969",
+        "cache": "/workspace/medina-env/a41-pathologie2/25785969.json",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25785969/",
+        "sha256": "5655645664bcd494d8c67a57c98dbe5e09fcc6f60e48cd12220d34eac32057f3",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "primary_trial_abstract_not_full_text",
+        "title": "Polysaccharide conjugate vaccine against pneumococcal pneumonia in adults.",
+        "abstract_actually_read": "<h4>Background</h4>Pneumococcal polysaccharide conjugate vaccines prevent pneumococcal disease in infants, but their efficacy against pneumococcal community-acquired pneumonia in adults 65 years of age or older is unknown.<h4>Methods</h4>In a randomized, double-blind, placebo-controlled trial involving 84,496 adults 65 years of age or older, we evaluated the efficacy of 13-valent polysaccharide conjugate vaccine (PCV13) in preventing first episodes of vaccine-type strains of pneumococcal community-acquired pneumonia, nonbacteremic and noninvasive pneumococcal community-acquired pneumonia, and invasive pneumococcal disease. Standard laboratory methods and a serotype-specific urinary antigen detection assay were used to identify community-acquired pneumonia and invasive pneumococcal disease.<h4>Results</h4>In the per-protocol analysis of first episodes of infections due to vaccine-type strains, community-acquired pneumonia occurred in 49 persons in the PCV13 group and 90 persons in the placebo group (vaccine efficacy, 45.6%; 95.2% confidence interval [CI], 21.8 to 62.5), nonbacteremic and noninvasive community-acquired pneumonia occurred in 33 persons in the PCV13 group and 60 persons in the placebo group (vaccine efficacy, 45.0%; 95.2% CI, 14.2 to 65.3), and invasive pneumococcal disease occurred in 7 persons in the PCV13 group and 28 persons in the placebo group (vaccine efficacy, 75.0%; 95% CI, 41.4 to 90.8). Efficacy persisted throughout the trial (mean follow-up, 3.97 years). In the modified intention-to-treat analysis, similar efficacy was observed (vaccine efficacy, 37.7%, 41.1%, and 75.8%, respectively), and community-acquired pneumonia occurred in 747 persons in the PCV13 group and 787 persons in placebo group (vaccine efficacy, 5.1%; 95% CI, -5.1 to 14.2). Numbers of serious adverse events and deaths were similar in the two groups, but there were more local reactions in the PCV13 group.<h4>Conclusions</h4>Among older adults, PCV13 was effective in preventing vaccine-type pneumococcal, bacteremic, and nonbacteremic community-acquired pneumonia and vaccine-type invasive pneumococcal disease but not in preventing community-acquired pneumonia from any cause. (Funded by Pfizer; CAPITA ClinicalTrials.gov number NCT00744263.)."
+      },
+      {
+        "source": "SAFE, analyse primaire de données",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3Asaline+AND+TITLE%3Aalbumin+AND+TITLE%3Aevaluation&format=json&resultType=core&pageSize=6",
+        "sha256": "55b25d1dc7f15eab2d62047fab6217a45221213c77efa60f388b7cdff17b7d88",
+        "bytes": 28855,
+        "read_at_utc": "2026-10-08T12:42:03.099387+00:00",
+        "pmid": "17040925",
+        "read_level": "primary_secondary_analysis_abstract_and_title",
+        "title": "Effect of baseline serum albumin concentration on outcome of resuscitation with albumin or saline in patients in intensive care units: analysis of data from the saline versus albumin fluid evaluation (SAFE) study.",
+        "exact_passage": "6045 participants in the saline versus albumin fluid evaluation (SAFE) study.",
+        "limit": "Commentaires voisins écartés comme primaires."
+      },
+      {
+        "source": "CAPiTA, analyse primaire des critères exploratoires",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22community-acquired+pneumonia+immunization%22&format=json&resultType=core&pageSize=4",
+        "sha256": "619c71f020a0d2860404f16c2779144d7f93866c19c3a9783b4fcc18fe7c793a",
+        "bytes": 20950,
+        "read_at_utc": "2026-10-08T12:42:30.490243+00:00",
+        "pmid": "28173960",
+        "read_level": "primary_secondary_analysis_abstract_and_title",
+        "title": "Exploratory efficacy endpoints in the Community-Acquired Pneumonia Immunization Trial in Adults (CAPiTA).",
+        "limit": "Développement confirmé dans analyse de l’essai, pas revue seule."
+      },
+      {
+        "source": "CAPITA, registre officiel",
+        "url": "https://clinicaltrials.gov/api/v2/studies/NCT00744263",
+        "sha256": "3998803da8687a838ec7b00603590f3438fea14479c08cf302b383f8a117ef6b",
+        "bytes": 240309,
+        "read_at_utc": "2026-10-08T12:42:02.538653+00:00",
+        "read_level": "primary_registry_identification",
+        "acronym_actually_read": "CAPITA",
+        "limit": "Registre confirmant sigle et PCV13, développement provenant de l’analyse primaire."
+      },
+      {
+        "source": "Garcia-Alvarez 2014, revue réellement lue",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Sepsis-associated+hyperlactatemia%22&format=json&resultType=core&pageSize=4",
+        "sha256": "5d670791f856603ddc57b414a68f0cd360b48f1d2b9f705b85816837482754c5",
+        "bytes": 17943,
+        "read_at_utc": "2026-10-08T12:42:30.946541+00:00",
+        "pmid": "25394679",
+        "read_level": "review_abstract_not_primary_trial",
+        "title": "Sepsis-associated hyperlactatemia.",
+        "authors": "Garcia-Alvarez M, Marik P, Bellomo R.",
+        "limit": "Utilisée pour identité de l’auteur, année et nature de revue, sans transformation en étude primaire."
+      },
+      {
+        "source": "SSC 2026, cartes 4 et 49",
+        "cache": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+        "sha256": "9a6720d374231b047c8116149f5519775a9613feaac430a40a3c11a078a799b3",
+        "read_at_utc": "2026-10-08T12:51:23.925642+00:00",
+        "read_level": "official_statement_capture_actually_read",
+        "cards": [
+          {
+            "page_order": 4,
+            "sccm_group_id": 4,
+            "statement_and_certainty": "For acutely ill patients in hospital, we “recommend” using NEWS, NEW2, MEWS, or SIRS over qSOFA as a single tool to screen for sepsis.\nCertainty of evidence: Moderate",
+            "strength": "Strong",
+            "category": "Screening",
+            "remarks": "",
+            "raw_fragment_sha256": "31e68bae4f8c5687083c8c1f95f2b6e5d1d7f075a336e6a3095f700303b281cc"
+          },
+          {
+            "page_order": 49,
+            "sccm_group_id": 49,
+            "statement_and_certainty": "For adults with sepsis or septic shock, we “suggest” using dynamic measures to guide fluid resuscitation over physical examination or static measures alone.\nCertainty of evidence: Low",
+            "strength": "Conditional",
+            "category": "Resuscitation",
+            "remarks": "Remarks\nDynamic measures include response to a passive leg raise or a fluid bolus using stroke volume (SV), stroke volume variation (SVV), pulse pressure (PP), or pulse pressure variation (PPV).",
+            "raw_fragment_sha256": "faccd7f829f87ad9733f167b66668c6202b68d33d5690feb937647c8fbb4317e"
+          }
+        ],
+        "limit": "La capture écrit NEW2 ; coquille préservée dans preuve brute, sans créer une nouvelle nomenclature."
+      },
+      {
+        "source": "ALBIOS, PMID 24635772",
+        "cache": "/workspace/medina-env/a41-pathologie2/24635772.json",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24635772/",
+        "sha256": "a03718c38bf384597f944edd623b6312bd37dcba0685b9849f421fc8947e275a",
+        "read_at_utc": "2026-10-08T12:52:27.537313+00:00",
+        "read_level": "primary_trial_abstract_not_full_text",
+        "title": "Albumin replacement in patients with severe sepsis or septic shock.",
+        "abstract_actually_read": "<h4>Background</h4>Although previous studies have suggested the potential advantages of albumin administration in patients with severe sepsis, its efficacy has not been fully established.<h4>Methods</h4>In this multicenter, open-label trial, we randomly assigned 1818 patients with severe sepsis, in 100 intensive care units (ICUs), to receive either 20% albumin and crystalloid solution or crystalloid solution alone. In the albumin group, the target serum albumin concentration was 30 g per liter or more until discharge from the ICU or 28 days after randomization. The primary outcome was death from any cause at 28 days. Secondary outcomes were death from any cause at 90 days, the number of patients with organ dysfunction and the degree of dysfunction, and length of stay in the ICU and the hospital.<h4>Results</h4>During the first 7 days, patients in the albumin group, as compared with those in the crystalloid group, had a higher mean arterial pressure (P=0.03) and lower net fluid balance (P<0.001). The total daily amount of administered fluid did not differ significantly between the two groups (P=0.10). At 28 days, 285 of 895 patients (31.8%) in the albumin group and 288 of 900 (32.0%) in the crystalloid group had died (relative risk in the albumin group, 1.00; 95% confidence interval [CI], 0.87 to 1.14; P=0.94). At 90 days, 365 of 888 patients (41.1%) in the albumin group and 389 of 893 (43.6%) in the crystalloid group had died (relative risk, 0.94; 95% CI, 0.85 to 1.05; P=0.29). No significant differences in other secondary outcomes were observed between the two groups.<h4>Conclusions</h4>In patients with severe sepsis, albumin replacement in addition to crystalloids, as compared with crystalloids alone, did not improve the rate of survival at 28 and 90 days. (Funded by the Italian Medicines Agency; ALBIOS ClinicalTrials.gov number, NCT00707122.)."
+      }
+    ],
+    "bank_delta": {
+      "previous_sha256": "17491c0808ff4a5fb7bef7f636a2e350a27cca3cc9c0f7bea155914b3a20b81e",
+      "current_sha256": "c47273d990cbbc4e68a1f0d0620e4f17c6be96f507a1747e1866699a56c18822",
+      "entry_id": "a41-j-vasopresseur-arythmies",
+      "substitutions": [
+        {
+          "path": [
+            "entries",
+            11,
+            "sources",
+            0,
+            "title"
+          ],
+          "old_text": "DeBacker2010, SOAPII",
+          "new_text": "De Backer et coll., 2010 : noradrénaline et dopamine",
+          "new_occurrences": 1,
+          "old_occurrences": 0
+        },
+        {
+          "path": [
+            "entries",
+            11,
+            "mechanism",
+            0
+          ],
+          "old_text": "SOAPII compare dopamine et noradrénaline",
+          "new_text": "L’essai de De Backer et coll. (2010) compare dopamine et noradrénaline",
+          "new_occurrences": 1,
+          "old_occurrences": 0
+        }
+      ],
+      "inverse_two_substitution_sha256": "17491c0808ff4a5fb7bef7f636a2e350a27cca3cc9c0f7bea155914b3a20b81e",
+      "all_other_bytes_identical": true,
+      "mechanism_html_text_changed_editorially": true,
+      "clinical_meaning_changed": false,
+      "figures_or_management_changed": false,
+      "primary_urls_changed": false,
+      "verdict": "favorable_editorial_only"
+    },
+    "limits": [
+      "Identité des 35 précédentes définitions contrôlée sur arguments littéraux AST normalisés, sans exécution du module.",
+      "Toutes les 24 nouvelles définitions relues ; les quatre notions physiologiques sont contrôlées au niveau de définition et unités, pas comme certification du Pareto entier.",
+      "Résultats SMART/BaSICS/PLUS déjà relus dans avis initial. Résumé primaire ALBIOS relu dans la capture Pathologie2 au cours du delta ; aucune lecture de texte intégral prétendue.",
+      "Contrôle initial des liaisons HTML de banque daté ; auteurs peuvent encore modifier les cibles.",
+      "Aucune fermeture du contre-audit Claude, d’ESP03 artériel ou des autres observations. Aucune injection ni certification exhaustive/CIM-11."
+    ]
+  }
+}
