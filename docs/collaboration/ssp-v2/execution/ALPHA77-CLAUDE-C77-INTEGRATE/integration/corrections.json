@@ -1472,5 +1472,84 @@
    "S7 lu en résumé seulement.",
    "Revue IA, distincte d’une validation médicale humaine."
   ]
+ },
+ "revue_P_immunologie": {
+  "revue": "commit cc58add0 (revue/MED.json, LANG.json, SEMIO.json)",
+  "entrees": [
+   {
+    "constat": "P-IMM-01",
+    "action": "Ajout : l’immunothérapie du CUP (MSI/dMMR, TMB) est hors indication en Suisse ; indication MSI-H/dMMR de Keytruda® limitée au côlon-rectum, endomètre, estomac, intestin grêle, voies biliaires, sans indication TMB",
+    "fichier": "chapters/C77/C77_c.html ; chapters/C77/C77_pop2.html",
+    "ancre": "#c77-s-immuno-cours « Le pont vers le traitement du CUP » ; template c77-imm-msi ; pareto-c77-immuno",
+    "source": "Information professionnelle suisse Keytruda®, Swissmedic (AIPS via AmiKo, GTIN 7680662310025), mise à jour août 2026, rubrique Indications, consultée le 15.10.2026 ; Onkopedia CUP-Syndrom 2025, 5.1.1 et 5.1.3.1.1 (« off-label »)"
+   },
+   {
+    "constat": "P-IMM-07",
+    "action": "« certaines de ces immunothérapies sont hors indication enregistrée » remplacé par : hors indication en Suisse, la FI Keytruda® n’inclut pas le CUP (liste des indications MSI-H/dMMR)",
+    "fichier": "chapters/C77/C77_b.html",
+    "ancre": "paragraphe du traitement des formes défavorables",
+    "source": "Information professionnelle suisse Keytruda®, Swissmedic (AIPS via AmiKo, GTIN 7680662310025), mise à jour août 2026, rubrique Indications, consultée le 15.10.2026 ; Onkopedia CUP-Syndrom 2025, 5.1.1 et 5.1.3.1.1 (« off-label »)"
+   },
+   {
+    "constat": "P-IMM-02",
+    "action": "Texte intégral PMC8161367 lu ; attribution corrigée : les cellules dendritiques induisent immunité protectrice ou tolérance, les lymphocytes T exposés à l’antigène assurent la surveillance immunitaire ; mention « (résumé) » retirée",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "#c77-s-immuno-cours, 2e paragraphe du normal",
+    "source": "Arasa et coll., Cells 2021, Introduction (PMC8161367)"
+   },
+   {
+    "constat": "P-IMM-03",
+    "action": "Nuance ajoutée : surexpression du CMH I dans un modèle murin de mélanome (échappement aux NK), rôle à préciser ; reprise dans la légende de la figure 6",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "paragraphe de l’échappement ; figcaption Figure 6",
+    "source": "Ji et coll. 2023, Immune evasion in metastatic lymph nodes"
+   },
+   {
+    "constat": "P-IMM-04",
+    "action": "« quel que soit le primitif » → « dans des primitifs très variés »",
+    "fichier": "chapters/C77/C77_pop2.html",
+    "ancre": "template c77-imm-msi",
+    "source": "Onkopedia 2025, 5.3.1.1 (« in verschiedensten Primärtumoren »)"
+   },
+   {
+    "constat": "P-IMM-05",
+    "action": "Souple et sensible rattaché à l’infection (Science → clinique ; boîte de la figure 6) ; ajout dans Science → traitement : le traitement local radical d’une atteinte limitée à une seule région ganglionnaire reste inchangé",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "div.key Science → clinique / Science → traitement ; Figure 6",
+    "source": "Swiss Medical Weekly 2010 ; Onkopedia 2025, 5.1.1"
+   },
+   {
+    "constat": "P-IMM-06",
+    "action": "Figure 6 refaite en deux colonnes verticales (viewBox 360 × 344, police 13), libellés contenus dans leurs boîtes, pointes de flèche (marker c77-imm-fl) ; rendu vérifié à 390 px dans Chromium ; autres SVG inchangés",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "#c77-s-immuno-cours figure",
+    "source": "contenu inchangé : Ji 2023 ; Swiss Medical Weekly 2010"
+   },
+   {
+    "constat": "P-LANG-IMM-01",
+    "action": "« l’instabilité microsatellitaire ou le déficit MMR et une charge mutationnelle élevée » → « une instabilité microsatellitaire (ou un déficit MMR), ou bien une charge mutationnelle élevée » (texte, fenêtre, Pareto)",
+    "fichier": "chapters/C77/C77_c.html ; chapters/C77/C77_pop2.html",
+    "ancre": "pont vers le traitement ; c77-imm-msi ; pareto-c77-immuno",
+    "source": "Onkopedia 2025"
+   },
+   {
+    "constat": "P-LANG-IMM-02",
+    "action": "« trois faits utiles pour C77 » → « trois faits utiles devant une métastase ganglionnaire »",
+    "fichier": "chapters/C77/C77_c.html",
+    "ancre": "#c77-s-immuno-cours, 1er paragraphe",
+    "source": "—"
+   },
+   {
+    "constat": "P-SEMIO-IMM-02",
+    "action": "Laissé tel quel, par cohérence avec les autres disciplines (décision coordinateur)",
+    "fichier": "—",
+    "ancre": "—",
+    "source": "—"
+   }
+  ],
+  "controles": {
+   "test_v7_static": "OK (C77 mots 24315, fenêtres 67, pareto 21)",
+   "B.audit": "{}"
+  }
  }
 }
