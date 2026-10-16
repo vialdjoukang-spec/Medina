@@ -8,12 +8,12 @@ Les sept fichiers de la leçon ont été lus en entier : `C72_a.html` à `C72_d.
 
 ## Verdict
 
-Le fond médical est solide. Il n’y a **aucun constat bloquant**. Les points vérifiés le sont presque tous : les doses de radiothérapie de l’EANO 2018, le bilan d’extension à deux ou trois semaines, les chiffres QUANTEC, la définition du syndrome de la queue de cheval, l’épidémiologie zurichoise et les informations professionnelles suisses. La leçon souffre en revanche de **trois défauts de structure**. La sémiologie est absente. Les sciences n’ont que quatre disciplines, trop brèves. Le périmètre de codage est inexact pour deux entités de comportement incertain.
+Le fond médical est solide. Il n’y a **aucun constat bloquant** au sens d’une erreur médicale ; l’absence de sémiologie (MAJ-01) bloque toutefois la clôture du cours et du lot. Les points vérifiés le sont presque tous : les doses de radiothérapie de l’EANO 2018, le bilan d’extension à deux ou trois semaines, les chiffres QUANTEC, la définition du syndrome de la queue de cheval, l’épidémiologie zurichoise et les informations professionnelles suisses. La leçon souffre en revanche de **trois défauts de structure**. La sémiologie est absente. Les sciences n’ont que quatre disciplines, trop brèves. Le périmètre de codage est inexact pour deux entités de comportement incertain.
 
 | Gravité | Nombre |
 |---|---|
 | BLOQUANT | 0 |
-| MAJEUR | 5 |
+| MAJEUR | 6 |
 | MINEUR | 9 |
 | ENRICHISSEMENT | 12 |
 
@@ -24,6 +24,7 @@ Le fond médical est solide. Il n’y a **aucun constat bloquant**. Les points v
 3. **MAJ-03 — `tests/audit_sciences.py` échoue.** Les quatre disciplines totalisent 788 mots, et chacune reste sous le minimum de 280. Les libellés « Science → clinique / examen / traitement » manquent, et la Génétique n’a pas de figure. Les libellés proposés sont dans `propositions/C72_c_liens.html`.
 4. **MAJ-04 — Le périmètre de codage est inexact.** La catégorie CIM-10 découle du code de comportement CIM-O [S20]. L’épendymome myxopapillaire (9394/1) et l’astrocytome pilocytique du nerf optique (9421/1) ont un comportement /1 [S21] : ils relèvent donc de D43.4 et D43.3, non de C72.1 et C72.3. Ces tumeurs restent toutefois à déclarer au registre. **Réserve** : la table CIM-O-3.2 en vigueur n’a pas été lue. Proposition : `propositions/C72_b_1.html`.
 5. **MAJ-05 — La figure 5 est illisible à 390 px.** Le texte y est rendu à 7,3 px, alors qu’il porte les valeurs décisionnelles de dose et de risque. Les figures redessinées sont dans `propositions/C72_figures.html`.
+6. **MAJ-06 — Les figures 1 et 3 sont des dessins anatomiques d’origine IA.** La figure 1 représente des coupes de moelle, la figure 3 la moelle, le cône terminal et les racines de la queue de cheval. Toutes deux ont été produites par l’agent de rédaction du cycle Betta 41, sans source iconographique, ce que la règle de Vial interdit. Elles sont reclassées `ANATOMIQUE_IA`. Aucun SVG de remplacement n’est proposé : la réserve est « figure anatomique à sourcer (original réel via Image_Clo_finder) ».
 
 ## Constats mineurs
 
@@ -31,7 +32,7 @@ Le fond médical est solide. Il n’y a **aucun constat bloquant**. Les points v
 - **MIN-02** : la leçon déclare les interactions du témozolomide non lues, alors que la FI suisse les donne (acide valproïque, myélosuppresseurs, médicaments induisant une anémie aplasique). La surveillance hépatique manque aussi.
 - **MIN-03** : D35.2 désigne l’hypophyse. Les règles de déclaration propres aux patients de moins de 20 ans sont omises.
 - **MIN-04** : la relation dose-effet de 40 à 45 Gy est restreinte au bas grade, alors que la source ne fait pas cette restriction.
-- **MIN-05** : les figures 1, 3 et 4 sont rendues à 7,3–7,8 px. La figure 3 déborde de sa `viewBox` et deux de ses libellés se chevauchent.
+- **MIN-05** : la figure 4 est rendue à 7,8 px à 390 px. Les figures 1 et 3 avaient le même défaut, mais elles relèvent désormais de MAJ-06.
 - **MIN-06** : trois causalités sont rédactionnelles et non sourcées (c72-2, c72-5, c72-e-1).
 - **MIN-07** : l’urgence d’imagerie est attribuée à une revue radiologique qui ne parle pas d’imagerie. La synthèse suisse de Spirig la fonde mieux.
 - **MIN-09** : devant une suspicion de MPNST, la leçon écrit « exérèse urgente » sans la condition posée par l’ERN GENTURIS (tableau 9, recommandations 4 et 5, 2023). L’exérèse primaire se fait si elle est sûre et faisable ; sinon, une biopsie guidée par l’imagerie est réalisée. Le refus de l’attente vigilante vise le MPNST, non tout signe d’alarme.
@@ -39,7 +40,7 @@ Le fond médical est solide. Il n’y a **aucun constat bloquant**. Les points v
 
 ## Enrichissements proposés
 
-ENR-01 à ENR-12 : sous-onglet de sémiologie, fenêtres, discipline de physiologie, libellés des sciences, piège de codage, déclaration au registre, Koselugo®, interactions du témozolomide, hétérogénéité du gliome H3 K27-altéré (grades historiques, 32 contre 23 mois [S10]), valeur chiffrée du résidu post-mictionnel et du toucher rectal, réattribution de l’urgence et figures pour 390 px.
+ENR-01 à ENR-12 : sous-onglet de sémiologie, fenêtres, discipline de physiologie, libellés des sciences, piège de codage, déclaration au registre, Koselugo®, interactions du témozolomide, hétérogénéité du gliome H3 K27-altéré (grades historiques, 32 contre 23 mois [S10]), valeur chiffrée du résidu post-mictionnel et du toucher rectal, réattribution de l’urgence et figures non anatomiques 4 et 5 pour 390 px (réserve pour les figures anatomiques 1 et 3).
 
 ## 21 — Sémiologie fondamentale et analytique
 
@@ -77,7 +78,7 @@ Le « non » sur les critères bloquants SEM-01 à SEM-03 et SEM-13 tient à l�
 
 ## Figures
 
-L’inventaire `image_clo_finder` trouve cinq schémas SVG vectoriels. Aucun n’est une image anatomique d’origine IA : tous sont classés `SCHEMA_NON_ANATOMIQUE`. La lisibilité a été mesurée par un rendu Chromium sans interface, dans une colonne de 358 px. Les figures 1, 3, 4 et 5 sont trop petites (MAJ-05 et MIN-05). Seule la figure 2 est conforme.
+L’inventaire `image_clo_finder` trouve cinq figures SVG vectorielles. Les figures 1 et 3 sont des dessins anatomiques d’origine IA démontrée par le rapport du cycle Betta 41 : elles sont classées `ANATOMIQUE_IA` (MAJ-06). Les figures 2, 4 et 5 sont classées `SCHEMA_NON_ANATOMIQUE`. La lisibilité a été mesurée par un rendu Chromium sans interface, dans une colonne de 358 px. Les figures 4 et 5 sont trop petites (MIN-05 et MAJ-05) ; seule la figure 2 est conforme. Après la revue Codex, les SVG anatomiques proposés (figures 1 et 3) sont retirés de `propositions/C72_figures.html`. La coupe de moelle de la figure P (physiologie) est remplacée par un schéma logique en cases.
 
 ## Lacunes principales
 
@@ -94,7 +95,7 @@ L’inventaire `image_clo_finder` trouve cinq schémas SVG vectoriels. Aucun n�
 | Leçon | C72, fragment S08 |
 | Fichiers lus | 7/7, empreintes conformes |
 | Sources lues | 22 (`sources.json`), dont 9 suisses, parmi lesquelles 3 FI Swissmedic datées |
-| Constats | 0 bloquant · 5 majeurs · 9 mineurs · 12 enrichissements |
+| Constats | 0 bloquant · 6 majeurs · 9 mineurs · 12 enrichissements |
 | Propositions | 12 fichiers dans `propositions/` |
 | Contrôles | `test_v7.py --static C72` OK · `audit_sciences.py` échec (préexistant) · JSON valides · ancres vérifiées |
 | Sources canoniques modifiées | aucune |

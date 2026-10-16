@@ -12,7 +12,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:49:58Z",
- "date_fin": "2026-10-16T06:13:16Z",
+ "date_fin": "2026-10-16T06:18:41Z",
  "lecture": {
   "fichiers": [
    "chapters/C72/C72_a.html",
@@ -70,7 +70,7 @@
  },
  "synthese": {
   "BLOQUANT": 0,
-  "MAJEUR": 5,
+  "MAJEUR": 6,
   "MINEUR": 9,
   "ENRICHISSEMENT": 12
  },
@@ -177,6 +177,23 @@
    "ancre_occurrences": 1
   },
   {
+   "id": "MAJ-06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "aria-label=\"Figure 3 — Cône médullaire et queue de cheval\"",
+   "constat": "Figures anatomiques dessinées par IA : la figure 3 (moelle, cône terminal, racines de la queue de cheval) et la figure 1 (coupes de moelle, C72_a.html, aria-label=\"Figure 1 — Deux manières de croître dans la moelle\") sont des SVG produits par l’agent de rédaction du cycle Betta 41, sans source iconographique. Règle de Vial : aucune anatomie dessinée par IA.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Anatomy",
+     "citation_courte": "typically resides at the T12–L1 vertebral level (texte seulement, aucune image reprise)"
+    }
+   ],
+   "proposition": "Retirer les deux SVG ; réserve « figure anatomique à sourcer (original réel via Image_Clo_finder) » ; voir propositions/C72_figures.html (aucun SVG anatomique proposé).",
+   "justification": "Un dessin anatomique non sourcé peut fixer une représentation inexacte → la règle exige un original réel attribué → retrait et réserve.",
+   "ancre_occurrences": 1
+  },
+  {
    "id": "MIN-01",
    "gravite": "MINEUR",
    "fichier": "chapters/C72/C72_pop2.html",
@@ -258,8 +275,8 @@
    "id": "MIN-05",
    "gravite": "MINEUR",
    "fichier": "chapters/C72/C72_c.html",
-   "ancre": "aria-label=\"Figure 3 — Cône médullaire et queue de cheval\"",
-   "constat": "Figures 1, 3 et 4 rendues à 7,3–7,8 px à 390 px (viewBox 640). Figure 3 : le libellé « Queue de cheval : racines, signes périphériques » déborde de la viewBox (x = 647 pour 640) et le libellé « T12–L1 » chevauche le trait pointillé. Ancres associées : aria-label=\"Figure 1 — Deux manières de croître dans la moelle\" (C72_a.html) et aria-label=\"Figure 4 — Les quatre couches du diagnostic intégré\".",
+   "ancre": "aria-label=\"Figure 4 — Les quatre couches du diagnostic intégré\"",
+   "constat": "Figure 4 rendue à 7,8 px à 390 px (viewBox 640). Les figures 1 et 3 avaient le même défaut (7,3 px ; débordement du libellé de la figure 3), mais elles relèvent désormais du constat MAJ-06 et ne sont pas redessinées.",
    "preuve": [
     {
      "source_id": "S5",
@@ -468,7 +485,7 @@
    "gravite": "ENRICHISSEMENT",
    "fichier": "chapters/C72/C72_c.html",
    "ancre": "data-s=\"c72-s-radio\"",
-   "constat": "Cinquième discipline : Physiologie des voies médullaires et du contrôle sacré, avec Pareto",
+   "constat": "Cinquième discipline : Physiologie des voies médullaires et du contrôle sacré, avec Pareto ; figure P en schéma logique non anatomique",
    "preuve": [
     {
      "source_id": "S5",
@@ -676,7 +693,7 @@
    "gravite": "ENRICHISSEMENT",
    "fichier": "chapters/C72/C72_c.html",
    "ancre": "aria-label=\"Figure 5 — Risque de myélopathie selon la dose\"",
-   "constat": "Figures 1, 3, 4 et 5 redessinées pour 390 px",
+   "constat": "Figures 4 et 5 (schémas non anatomiques) redessinées pour 390 px ; figures 1 et 3 : réserve, aucun SVG anatomique proposé",
    "preuve": [
     {
      "source_id": "S4",
@@ -699,10 +716,13 @@
    "rang": 1,
    "fichier": "chapters/C72/C72_a.html",
    "ancre": "aria-label=\"Figure 1 — Deux manières de croître dans la moelle\"",
-   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "classe": "ANATOMIQUE_IA",
    "viewbox_largeur": 640,
    "texte_rendu_390px": "7,3 px",
-   "constat_id": "MIN-05"
+   "constat_id": "MAJ-06",
+   "note": "dessin vectoriel d’anatomie (coupe de moelle) produit par l’agent de rédaction du cycle Betta 41 (rapport.md du cycle : « 5 schémas SVG »)",
+   "origine_ia": "démontrée : livraisons/Livraison Claude/N-05-Neurologie/betta/CYCLE_41_C72/rapport.md",
+   "remplacement": "réserve : figure anatomique à sourcer (original réel via Image_Clo_finder) ; aucun SVG proposé"
   },
   {
    "rang": 2,
@@ -717,11 +737,13 @@
    "rang": 3,
    "fichier": "chapters/C72/C72_c.html",
    "ancre": "aria-label=\"Figure 3 — Cône médullaire et queue de cheval\"",
-   "classe": "SCHEMA_NON_ANATOMIQUE",
-   "note": "schéma topographique vectoriel codé à la main (traits, aucune image) ; aucune origine IA d’image démontrée",
+   "classe": "ANATOMIQUE_IA",
+   "note": "dessin vectoriel d’anatomie (moelle, cône terminal, racines de la queue de cheval) produit par l’agent de rédaction du cycle Betta 41 (rapport.md du cycle : « 5 schémas SVG »)",
    "viewbox_largeur": 640,
    "texte_rendu_390px": "7,3 px ; débordement du libellé (x = 647)",
-   "constat_id": "MIN-05"
+   "constat_id": "MAJ-06",
+   "origine_ia": "démontrée : livraisons/Livraison Claude/N-05-Neurologie/betta/CYCLE_41_C72/rapport.md",
+   "remplacement": "réserve : figure anatomique à sourcer (original réel via Image_Clo_finder) ; aucun SVG proposé"
   },
   {
    "rang": 4,
@@ -742,7 +764,7 @@
    "constat_id": "MAJ-05"
   }
  ],
- "figures_note": "tools/image_clo_finder.py inventory C72 : 5 figures SVG vectorielles, aucune image matricielle ; indice « vectoriel_a_examiner_visuellement ». Mesure de lisibilité par rendu Chromium sans interface (colonne 358 px), non par capture de l’application.",
+ "figures_note": "tools/image_clo_finder.py inventory C72 : 5 figures SVG vectorielles, aucune image matricielle ; indice « vectoriel_a_examiner_visuellement ». Mesure de lisibilité par rendu Chromium sans interface (colonne 358 px), non par capture de l’application. Correction après revue Codex : les figures 1 et 3 sont des dessins anatomiques d’origine IA démontrée (ANATOMIQUE_IA, MAJ-06) ; la proposition de SVG anatomique de remplacement est retirée, de même que la coupe de moelle de la figure P, remplacée par un schéma logique.",
  "semiologie": {
   "statut": "absente",
   "ancres": [
@@ -936,5 +958,10 @@
   "traitement": "ERN GENTURIS relue (eClinicalMedicine, 13.01.2023, tableau 9, recommandations 2 à 5) ; fenêtre c72-sm-nf1-douleur et alerte c72-sm-1 corrigées ; constat MIN-09 ajouté pour la leçon",
   "deplacement": "C72_pop3_semio.html renommé C72_pop2_semio.html : fenêtres à ajouter dans C72_pop2.html (alpha_publication n’admet que _pop1 et _pop2)",
   "commit": "commit de suivi distinct du commit de traçabilité 1fc5c523, déjà poussé (aucune réécriture d’historique, force-push interdit)"
+ },
+ "revue_codex_figures": {
+  "constat_P1": "propositions/C72_figures.html, lignes 8–9 : SVG anatomique (moelle, cône, queue de cheval) classé à tort SCHEMA_NON_ANATOMIQUE",
+  "traitement": "SVG anatomiques des figures 1 et 3 retirés des propositions ; réserve Image_Clo_finder ; figures 1 et 3 de la leçon reclassées ANATOMIQUE_IA (MAJ-06) ; figure P de la physiologie remplacée par un schéma logique",
+  "verification_nf1": "correction ERN GENTURIS présente dans C72_pop2_semio.html (c72-sm-nf1-douleur) et C72_c_semio.html (alerte c72-sm-1)"
  }
 }
