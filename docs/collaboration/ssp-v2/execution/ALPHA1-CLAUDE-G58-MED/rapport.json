@@ -13,7 +13,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:50:16Z",
- "date_fin": "2026-10-16T06:12:08Z",
+ "date_fin": "2026-10-16T06:35:53Z",
  "lecture": {
   "fichiers": [
    "chapters/G58/G58_a.html",
@@ -100,7 +100,7 @@
      "citation_courte": "increased tenderness after abdominal muscle tensing (Carnett’s test)"
     }
    ],
-   "proposition": "Insérer propositions/G58_c_1.html (bouton en tête de barre et div.sci g58-s-semio, sept îlots g58-sm-1 à -7, une figure non anatomique, trois cas) et créer chapters/G58/G58_pop3.html depuis propositions/G58_pop3_1.html.",
+   "proposition": "Insérer propositions/G58_c_1.html (bouton en tête de barre et div.sci g58-s-semio, neuf sections data-semiology g58-sm-1 à -9, une figure non anatomique, trois cas) et ajouter en fin de chapters/G58/G58_pop2.html les fenêtres de propositions/G58_pop2_2.html.",
    "justification": "Mécanisme : chaque signe traduit une famille de fibres et un tronc nerveux précis. Conséquence : sans technique ni regroupement, l’asymétrie initiale d’une mononévrite multiple passe inaperçue, surtout quand le tableau devient confluent. Décision : ajouter la discipline exigée par Vial (option A), sourcée en Suisse puis en Europe.",
    "bloquant_cloture": true,
    "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; addendum lot 2, point 1)"
@@ -429,7 +429,7 @@
      "citation_courte": "a small (< 2 cm diameter) area of maximal intensity … within the lateral boundaries of the rectus abdominis"
     }
    ],
-   "proposition": "Remplacer la phrase par propositions/G58_b_1.html ; fenêtres g58-sm-carnett et g58-sm-pincement dans G58_pop3_1.html.",
+   "proposition": "Remplacer la phrase par propositions/G58_b_1.html ; fenêtres g58-sm-carnett et g58-sm-pincement dans G58_pop2_2.html.",
    "justification": "Mécanisme : le piégeage d’une branche cutanée produit une douleur ponctuelle aggravée par la contraction musculaire. Conséquence : diagnostic clinique possible sans imagerie. Décision : enseigner les critères."
   },
   {
@@ -671,7 +671,8 @@
   },
   "proposition": [
    "propositions/G58_c_1.html",
-   "propositions/G58_pop3_1.html"
+   "propositions/G58_a_semio_clinique.html",
+   "propositions/G58_pop2_2.html"
   ],
   "sources": [
    "S1",
@@ -750,7 +751,8 @@
  "controles": {
   "test_v7_static": "OK (G58 mots 12337 fenêtres 43 quiz 6 pareto 12)",
   "audit_sciences": "échec : 19 erreurs (voir C03)",
-  "ancres_uniques": "33 ancres et blocs ANCIEN vérifiés : une occurrence chacun (script Python)"
+  "ancres_uniques": "33 ancres et blocs ANCIEN vérifiés : une occurrence chacun (script Python)",
+  "contrat_semiologie": "grep : g58-tab-semio, aria-labelledby, role tabpanel, 9 data-semiology ordonnés, 0 h2, data-semiology-clinical présent, 0 fichier pop3 ; sources.json et rapport.json valides ; simulation semiology() conforme"
  },
  "verifications_conformes": [
   "Sous-codes, exclusions et codes voisins G50–G59 [S25]",
@@ -782,6 +784,7 @@
   "Mise à jour de la ligne directrice PNS 2010 : recherche PubMed sans résultat exploitable"
  ],
  "propositions": [
+  "G58_a_semio_clinique.html",
   "G58_b_1.html",
   "G58_b_2.html",
   "G58_c_1.html",
@@ -791,8 +794,34 @@
   "G58_d_2.html",
   "G58_glossary_1.html",
   "G58_pop2_1.html",
-  "G58_pop3_1.html"
+  "G58_pop2_2.html"
  ],
  "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
- "date_debut_note": "Première heure UTC réellement relevée (date -u) au début de l’analyse, après la lecture des protocoles et des sept fichiers ; l’heure d’ouverture de la session n’a pas été relevée."
+ "date_debut_note": "Première heure UTC réellement relevée (date -u) au début de l’analyse, après la lecture des protocoles et des sept fichiers ; l’heure d’ouverture de la session n’a pas été relevée.",
+ "correctifs_revue_codex": {
+  "pr": 194,
+  "date": "2026-10-16T06:35:53Z",
+  "consigne": "Correctifs de contrat, audits MED du lot 2 (revue Codex)",
+  "constats": [
+   {
+    "id": "R1",
+    "objet": "G58_c_1.html non conforme au contrat de sémiologie",
+    "statut": "corrigé",
+    "preuve": "Bouton id g58-tab-semio (role tab, aria-selected true, aria-controls et data-s g58-s-semio) ; panneau div.sci g58-s-semio role tabpanel aria-labelledby g58-tab-semio, sans hidden ; neuf sections data-semiology dans l’ordre normal → sources, titres h3, aucun h2 ; première section titrée « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? » ; section sources : tableau affirmation ↔ passage et 11 liens https. Marqueur clinique : propositions/G58_a_semio_clinique.html, section data-semiology-clinical=\"G58\" à insérer dans l’îlot g58-6 de chapters/G58/G58_b.html (panneau pA). Simulation de la fonction semiology de tools/starter_codex.py sur une copie fusionnée : bouton, panneau, titre, neuf sections, liens et marqueur clinique conformes ; la barre compte 6 boutons avec la proposition G58_c_2.html (Immunologie)."
+   },
+   {
+    "id": "R2",
+    "objet": "sources.json sans passage, population ni limites",
+    "statut": "corrigé",
+    "preuve": "Chaque entrée S1–S28 porte id, url, editeur/organisme, version, date_consultation, section_ou_page, passage_paraphrase, population, limites, niveau_lecture, verification et affirmations_rattachees (affirmation, fichier, ancre) extraites des propositions ; S25–S27, non citées par les propositions, sont rattachées aux vérifications de rapport.json. S1, S3, S5, S6 et S7 relus en texte intégral le 16.10.2026 pour vérifier les passages, populations et limites ; les autres entrées reprennent les notes de lecture et le déclarent."
+   },
+   {
+    "id": "R3",
+    "objet": "G58_pop3_1.html non admis",
+    "statut": "corrigé",
+    "preuve": "Renommé propositions/G58_pop2_2.html (ajout en fin de chapters/G58/G58_pop2.html) ; références mises à jour dans rapport.json, rapport.md, G58_b_1.html, G58_c_1.html et G58_glossary_1.html ; aucun fichier ni mention pop3 ; contrôle par script : aucune clé data-k orpheline (fenêtres des propositions et de chapters/G58), aucun href=\"#…\" orphelin, aucune clé g58-sm-* en double avec les fenêtres canoniques."
+   }
+  ],
+  "ajustements_de_fond": "Restructuration sans fait nouveau non sourcé ; formulations alignées sur les passages relus : causes de polyneuropathie selon S1 (alcool, diabète, vitamine B12, chimiothérapie, paraprotéinémie), « confluence » au lieu de « chevauchement » (S1), électrophysiologie « axonale multifocale aux amplitudes réduites » (S6) au lieu de « vitesses conservées », drapeaux rouges d’adressage de S1 ajoutés à la section urgency, examen des autres organes limité à peau, poumon et rein."
+ }
 }

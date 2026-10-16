@@ -19,7 +19,7 @@ Le fond médical vérifié est solide : les critères de la Peripheral Nerve Soc
 ## Constats majeurs
 
 **C01 — `chapters/G58/G58_c.html` — bloquant pour la clôture du cours et du lot.** Sémiologie fondamentale et analytique absente : aucun bouton data-s="g58-s-semio", aucun div.sci homonyme, aucune formule « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? ». Les îlots g58-5 et g58-6 listent symptômes et signes sans mécanisme par signe, sans technique (cotation de la force, cartographie sensitive), sans normal, sans tableau de syndromes, sans raisonnement en cinq étapes ni cas consacrés au signe. Le signe de Carnett, critère publié de l’ACNES, manque.  
-*Proposition :* Insérer propositions/G58_c_1.html (bouton en tête de barre et div.sci g58-s-semio, sept îlots g58-sm-1 à -7, une figure non anatomique, trois cas) et créer chapters/G58/G58_pop3.html depuis propositions/G58_pop3_1.html.  
+*Proposition :* Insérer propositions/G58_c_1.html (bouton en tête de barre et div.sci g58-s-semio, neuf sections data-semiology g58-sm-1 à -9, une figure non anatomique, trois cas) et ajouter en fin de chapters/G58/G58_pop2.html les fenêtres de propositions/G58_pop2_2.html.  
 *Preuves :* S1 (Présentation et examen clinique) ; S2 (Introduction, Motor testing) ; S3 (Methods)
 
 **C02 — `chapters/G58/G58_c.html` — bloquant pour la clôture du cours et du lot.** L’onglet Sciences ne compte que quatre disciplines réelles (data-s : g58-s-anat, g58-s-histo, g58-s-physio, g58-s-bioch) ; l’addendum du lot 2 en exige cinq, plus la sémiologie. Les mécanismes immunitaires visés par le rituximab, l’avacopan et le mépolizumab ne sont expliqués nulle part.  
@@ -83,7 +83,7 @@ Le fond médical vérifié est solide : les critères de la Peripheral Nerve Soc
 ## Constats enrichissements
 
 **C16 — `chapters/G58/G58_b.html`.** Les critères cliniques publiés de l’ACNES (point douloureux < 2 cm au bord latéral du grand droit, trouble sensitif, pincement, signe de Carnett, réponse à l’infiltration) sont absents.  
-*Proposition :* Remplacer la phrase par propositions/G58_b_1.html ; fenêtres g58-sm-carnett et g58-sm-pincement dans G58_pop3_1.html.  
+*Proposition :* Remplacer la phrase par propositions/G58_b_1.html ; fenêtres g58-sm-carnett et g58-sm-pincement dans G58_pop2_2.html.  
 *Preuves :* S3 (Methods)
 
 **C17 — `chapters/G58/G58_b.html`.** Rubrique 16 (spécificités suisses) absente et seule source suisse de clinique non exploitée : drapeaux rouges de la médecine interne suisse, vascularite possible avec biologie normale, lèpre importée, inaptitude possible à la conduite automobile.  
@@ -121,7 +121,7 @@ Le fond médical vérifié est solide : les critères de la Peripheral Nerve Soc
 
 ## 21 — Sémiologie fondamentale et analytique
 
-**Statut : absente — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; C01).** Ce n’est pas une simple lacune. La leçon ne possède ni bouton `g58-s-semio`, ni discipline sémiologique. Les îlots `g58-5` et `g58-6` donnent une liste de symptômes et quelques signes (Schepelmann, palpation, scratch collapse test chiffré), sans mécanisme par signe, sans technique, sans normal, sans syndromes ni raisonnement. La proposition `propositions/G58_c_1.html` (sept îlots, figure non anatomique, trois cas) et `propositions/G58_pop3_1.html` (dix fenêtres) comblent l’ensemble, sur une source suisse en texte intégral (Revue Médicale Suisse 2019), le guide européen du Medical Research Council et les critères néerlandais de l’ACNES.
+**Statut : absente — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; C01).** Ce n’est pas une simple lacune. La leçon ne possède ni bouton `g58-s-semio`, ni discipline sémiologique. Les îlots `g58-5` et `g58-6` donnent une liste de symptômes et quelques signes (Schepelmann, palpation, scratch collapse test chiffré), sans mécanisme par signe, sans technique, sans normal, sans syndromes ni raisonnement. La proposition `propositions/G58_c_1.html` (neuf sections data-semiology, figure non anatomique, trois cas) et `propositions/G58_pop2_2.html` (dix fenêtres) comblent l’ensemble, sur une source suisse en texte intégral (Revue Médicale Suisse 2019), le guide européen du Medical Research Council et les critères néerlandais de l’ACNES.
 
 | Critère | Résultat |
 |---|---|
@@ -169,6 +169,12 @@ Six schémas SVG, tous `SCHEMA_NON_ANATOMIQUE` (boîtes et flèches de raisonnem
 
 Faits repris du dossier Betta 38 sans relecture dans cet audit : Théaudin 2022 (RMS, petites fibres) ; Pereira 2025 ; Pacut 2024 ; Soulages 2022 ; Aladawi 2022 ; Redmond 2025 ; Benditz 2025 ; Chaudhuri 1997 ; Tascón Padrón 2025 ; Yavuz 2026 ; Kidoguchi 2026 : faits repris du dossier Betta 38, non relus dans cet audit.
 
+## Correctifs de la revue Codex (PR #194)
+
+- **R1 — Contrat de sémiologie.** `propositions/G58_c_1.html` porte le bouton `g58-tab-semio` (premier, `aria-selected="true"`), le panneau `g58-s-semio` (`role="tabpanel"`, `aria-labelledby="g58-tab-semio"`, visible), neuf sections `data-semiology` dans l’ordre (normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources), des titres `h3` sans aucun `h2`, et une section sources qui relie chaque affirmation à son passage, avec 11 liens https. Le marqueur clinique `data-semiology-clinical="G58"` est proposé dans `propositions/G58_a_semio_clinique.html`, à insérer dans l’îlot `g58-6` de `chapters/G58/G58_b.html` (panneau pA). La fonction `semiology` de `tools/starter_codex.py`, simulée sur une copie fusionnée, accepte l’ensemble ; la barre atteint six boutons avec `G58_c_2.html`.
+- **R2 — Registre des sources.** Chaque entrée de `sources.json` donne éditeur, version, section, passage paraphrasé, population, limites, niveau de lecture, mode de vérification et la liste des affirmations rattachées. S1, S3, S5, S6 et S7 ont été relus en texte intégral pour ce correctif ; les autres entrées reprennent les notes de lecture et le déclarent.
+- **R3 — Fichiers admis.** L’ancienne proposition de fenêtres est devenue `propositions/G58_pop2_2.html`, ajout à `chapters/G58/G58_pop2.html`. Aucune clé `data-k` ni ancre `href="#…"` ne reste orpheline.
+
 ## Tableau de bord
 
 | Élément | Valeur |
@@ -177,7 +183,7 @@ Faits repris du dossier Betta 38 sans relecture dans cet audit : Théaudin 2022 
 | Fichiers lus / empreintes conformes | 7 / 7 |
 | Constats | 0 bloquant, 6 majeurs, 9 mineurs, 3 enrichissements |
 | Sources lues | 28 : 13 suisses (Revue Médicale Suisse et douze informations professionnelles), 15 européennes, internationales ou revues (dont Shamoun, nord-américaine, pour des faits descriptifs seulement) |
-| Propositions | 10 fichiers dans `propositions/` |
+| Propositions | 11 fichiers dans `propositions/` (dont `G58_a_semio_clinique.html`, `G58_pop2_2.html`) |
 | Contrôles | `test_v7.py --static` OK ; `audit_sciences.py` en échec (C03) ; 33 ancres uniques vérifiées |
 | Figures | 6 schémas non anatomiques, lisibles à 390 px |
 | Sémiologie (rubrique 21) | absente : MAJEUR bloquant pour la clôture ; proposition complète |
