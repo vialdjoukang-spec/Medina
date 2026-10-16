@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "actor": "Claude",
+ "code": "G71",
+ "fragment": "S08",
+ "phase": "completed",
+ "medical_human_validation": false,
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "source_commit": "e45217cf42841270657acaa3214728d88ae3b704",
+ "mission": "ALPHA77-CLAUDE-G71-INTEGRATE",
+ "previous_receipt_sha256": null,
+ "files": {
+  "chapters/G71/G71_a.html": {
+   "previous_sha256": "340952bfc78183bc71f3c75da5b7ffea5bbf2b6ae46cbd80476a88b6657f455f",
+   "sha256": "6c35793d7bf6d050436c5740eed68757cc00a0c5e0e35e57dab187e2c42446f2",
+   "source_path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/livraison/chapters/G71/G71_a.html"
+  },
+  "chapters/G71/G71_b.html": {
+   "previous_sha256": "d9c14212393548209c4bc382d1bb3f1fbd9953846ec65fc5efef80cb235a65d3",
+   "sha256": "eeb478aa8ea383bea463eff1185e43462e671b876054f51c330fccb2b902b041",
+   "source_path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/livraison/chapters/G71/G71_b.html"
+  },
+  "chapters/G71/G71_c.html": {
+   "previous_sha256": "f62cfef7715eaa515e153ee7b7dce2ec80ae6b8454e876b55dbdaac2e969f880",
+   "sha256": "9ebbe077908977991768c93bda4d6d53f2224f8bfb24cad95415cef443869db0",
+   "source_path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/livraison/chapters/G71/G71_c.html"
+  },
+  "chapters/G71/G71_d.html": {
+   "previous_sha256": "05995b523a95b6fa35dcc48430841156aa1e0e4ffc69de0c3803d767effc92a7",
+   "sha256": "d861c40d19f2658fd76bae378d90c1160190f00d7550f2320fe843d0645d85bc",
+   "source_path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/livraison/chapters/G71/G71_d.html"
+  },
+  "chapters/G71/G71_pop1.html": {
+   "previous_sha256": "a129be27fe0e9f3af32d0823424c141e5aa16b4621548ff917673d0069939873",
+   "sha256": "6f6bd51457b5233ea4d255d563042ca0a7dc5ea4c0be2a8d2bacdc8de4915b2f",
+   "source_path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/livraison/chapters/G71/G71_pop1.html"
+  },
+  "chapters/G71/G71_pop2.html": {
+   "previous_sha256": "4102e940bdf1ba40c881716bc5c9c299b0ffba04df54abc9d7f8d01f453b9afd",
+   "sha256": "2fd764ac5635a15848598d6e270e47d34c80a06aaf161793908717fa5753f69e",
+   "source_path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/livraison/chapters/G71/G71_pop2.html"
+  },
+  "glossary/g71.py": {
+   "previous_sha256": "b270b6e75234c30ee4bb078483df1e3651feef40a3ea4d9e9bdd20dd65eb6a3d",
+   "sha256": "97b6c3a63329cfea433f537ffc8d8587e7db4d59a16912f4b92aab95b47b6a87",
+   "source_path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/livraison/glossary/g71.py"
+  }
+ },
+ "audits": {
+  "MED": {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/revue/MED.json",
+   "sha256": "e7bc123187f4846410880d4c53c320b65e5a73557aadd8e7ef04e7366f92c23d"
+  },
+  "LANG": {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/revue/LANG.json",
+   "sha256": "550520993b3a853ad6189ee18e91ca841f0789755f1c9fd730297b255505b47a"
+  },
+  "SEMIO": {
+   "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G71-INTEGRATE/revue/SEMIO.json",
+   "sha256": "14a6c596cbd0caf9dfce0cd590f1b63e3e02b5610b62b649b9e5320be43316b2"
+  }
+ },
+ "note": "Aucune image Alpha nouvelle ni image raster : figures en SVG inline non anatomiques et sourcées. Lacune déclarée : la figure 2 de l’Anatomie (classée ANATOMIQUE_IA par l’audit MED, constat C08) a été retirée sans remplacement sur décision de Vial ; la discipline g71-s-anat n’a plus de figure et tests/audit_sciences.py échoue sur ce seul point (hors CI et hors alpha_publication) ; aucun SVG factice ajouté. Revue IA, distincte d’une validation médicale humaine."
+}
