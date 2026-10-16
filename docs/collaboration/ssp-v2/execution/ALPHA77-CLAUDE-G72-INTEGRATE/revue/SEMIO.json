@@ -1,0 +1,218 @@
+{
+ "actor": "Claude",
+ "code": "G72",
+ "kind": "SEMIO",
+ "mission": "ALPHA77-CLAUDE-G72-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "82c343c67aa81a7a87c92edb5399c725642b4054",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G72/G72_a.html": "ecea94c73bbd784028f23bf4d70e45d06ade2d39d30df7822580ae8d538d3b75",
+  "chapters/G72/G72_b.html": "9caa050090a7f738c4ff5ab6b1b44c8eaab0410d1825873c36a44d8547792ca4",
+  "chapters/G72/G72_c.html": "7f6c7f913bda9780d9db931c2f787e3e2514c175160915f94c84fec2f234fdf5",
+  "chapters/G72/G72_d.html": "b1baecd57d9b7c06c03084b58b3daac17d81bb106f5a38accef97d80348ce050",
+  "chapters/G72/G72_pop1.html": "45439842d5b7fff8f79dcc194c83b2139761b817a1e0327df074328917a1713a",
+  "chapters/G72/G72_pop2.html": "57ad293c83c6fc29e15e230ecb27b5f5ca017300593f68f7c137278e400665b8",
+  "glossary/g72.py": "c860d1c96290c8c09ffa1a41d67d35ace994ffc7644146198066cf1869df96ac"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G72/G72_a.html": "763dd0a3b260f66c9e23b15cc067a191ff483a0fc4f3ec4d60423db7c9f309ba",
+  "chapters/G72/G72_b.html": "3a58f79a9ff4f8e8b5aced654d47fbd5da59e61704ea2c58256db8ef0ad198ee",
+  "chapters/G72/G72_c.html": "7fcb4a6bb425c13b416662f406995bccc6f7c35155219cdef1e9c3630079da30",
+  "chapters/G72/G72_d.html": "52d9ac610e117fbcb52fac44117b977ebf22ac60993fdc2f3d697ac4408307d8",
+  "chapters/G72/G72_pop1.html": "bf2bdb76142f5b0652491edda1caab5e4fa6fb181796fe2580bdc77ae98d1205",
+  "chapters/G72/G72_pop2.html": "6f79f749c682ab245d3408ab3568054f55323d88cf80eb542815f836bb6c958a",
+  "glossary/g72.py": "39db7a2c98fef9e685c44966436ee83cc8ddc7515f083172ad2df3cb8349cb45"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "g72-s-semio",
+ "source_path": "chapters/G72/G72_c.html",
+ "clinical_marker": {
+  "fichier": "chapters/G72/G72_a.html",
+  "selecteur": "section.ilot[data-semiology-clinical=\"G72\"]#g72-semio-clin",
+  "dans_pA": true
+ },
+ "sections": {
+  "normal": "g72-sm-1",
+  "signs": "g72-sm-2",
+  "mechanisms": "g72-sm-3",
+  "examination": "g72-sm-4",
+  "interpretation": "g72-sm-5",
+  "differentials": "g72-sm-6",
+  "urgency": "g72-sm-7",
+  "limits": "g72-sm-8",
+  "sources": "g72-sm-9"
+ },
+ "grille_SEM": [
+  {
+   "critere": "SEM-01",
+   "resultat": "oui",
+   "preuve": "bouton #g72-tab-semio premier des six boutons data-s de pS, libellé exact, aria-selected=\"true\", div#g72-s-semio"
+  },
+  {
+   "critere": "SEM-02",
+   "resultat": "oui",
+   "preuve": "premier h3 exact « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »"
+  },
+  {
+   "critere": "SEM-03",
+   "resultat": "oui",
+   "preuve": "audit_sciences sur g72-s-semio sans erreur (figure SVG non anatomique, viewBox 460, police 16) ; les deux erreurs restantes visent g72-s-anat et g72-s-histo, sans figure après retrait ANATOMIQUE_IA (lacune déclarée)"
+  },
+  {
+   "critere": "SEM-04",
+   "resultat": "oui",
+   "preuve": "test_v7.py --static G72 : OK"
+  },
+  {
+   "critere": "SEM-05",
+   "resultat": "oui",
+   "preuve": "g72-sm-2 : tableau symptôme/mécanisme/fréquence ou valeur/piège, introduit et commenté"
+  },
+  {
+   "critere": "SEM-06",
+   "resultat": "oui",
+   "preuve": "g72-sm-1 et g72-sm-4 : score MRC (12 groupes nommés, seuil 48), préhension 7 et 11 kg, huit étapes d’examen"
+  },
+  {
+   "critere": "SEM-07",
+   "resultat": "oui",
+   "preuve": "g72-sm-3 : deux chaînes mécanistiques (nécrose, inexcitabilité) en phrases complètes, figure 1"
+  },
+  {
+   "critere": "SEM-08",
+   "resultat": "oui",
+   "preuve": "absence de sensibilité et de spécificité écrite explicitement (g72-sm-2, g72-sm-5, g72-sm-8)"
+  },
+  {
+   "critere": "SEM-09",
+   "resultat": "oui",
+   "preuve": "g72-sm-1 (normal) précède g72-sm-2 (signes)"
+  },
+  {
+   "critere": "SEM-10",
+   "resultat": "oui",
+   "preuve": "colonne piège, div.trap de l’examen, cas 1 à 3"
+  },
+  {
+   "critere": "SEM-11",
+   "resultat": "oui",
+   "preuve": "g72-sm-3 : tableau des quatre syndromes"
+  },
+  {
+   "critere": "SEM-12",
+   "resultat": "oui",
+   "preuve": "g72-sm-5 : démarche ordonnée reconnaître, qualifier, localiser, regrouper, hiérarchiser"
+  },
+  {
+   "critere": "SEM-13",
+   "resultat": "oui",
+   "preuve": "g72-sm-7 : drapeaux rouges cohérents avec l’îlot 8 de l’onglet 1 (CK > 40 fois, myoglobinurie, chevauchement 40 %)"
+  },
+  {
+   "critere": "SEM-14",
+   "resultat": "oui",
+   "preuve": "g72-sm-6 : différentiels nommés par les sources, élément discriminant et référence par ligne"
+  },
+  {
+   "critere": "SEM-15",
+   "resultat": "oui",
+   "preuve": "g72-sm-4 : examen systématique en huit étapes"
+  },
+  {
+   "critere": "SEM-16",
+   "resultat": "oui",
+   "preuve": "g72-sm-4 : exemple de présentation constatations/interprétation/limites/examens"
+  },
+  {
+   "critere": "SEM-17",
+   "resultat": "oui",
+   "preuve": "trois quiz (cas 1 à 3) avec correction raisonnée affichée au clic"
+  },
+  {
+   "critere": "SEM-18",
+   "resultat": "oui",
+   "preuve": "cinq fenêtres g72-sm-* ouvertes au navigateur, sans « Fiche absente »"
+  },
+  {
+   "critere": "SEM-19",
+   "resultat": "oui",
+   "preuve": "une source suisse (FI atorvastatine), puis européennes ; la revue américaine (Simon) limitée à des faits cliniques et épidémiologiques, déclarée dans g72-sm-8"
+  },
+  {
+   "critere": "SEM-20",
+   "resultat": "oui",
+   "preuve": "chiffres concordants avec l’onglet 1 (48, 7/11 kg, 71,8 %, 40 %, durées des accès)"
+  },
+  {
+   "critere": "SEM-21",
+   "resultat": "oui",
+   "preuve": "renvoi explicite à l’anamnèse et à l’examen de l’onglet 1 ; le bloc clinique de pA reste dans pA"
+  },
+  {
+   "critere": "SEM-22",
+   "resultat": "oui",
+   "preuve": "390 px : largeur de page 390, aucun défilement horizontal"
+  },
+  {
+   "critere": "SEM-23",
+   "resultat": "oui",
+   "preuve": "captures réelles de W (integration/captures) et de P (revue/captures)"
+  },
+  {
+   "critere": "SEM-24",
+   "resultat": "oui",
+   "preuve": "statut « revue par intelligence artificielle, aucune validation médicale humaine »"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-STRUCTURE",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contrat structurel du sous-onglet et du bloc clinique.",
+   "verification": "Validateur de starter_codex.semiology rejoué par P sur les fichiers finaux (HTMLTree) : premier onglet sélectionné, six data-s, panneau unique dans pS et visible, h3 exact, neuf sections non vides avec h3, liens https dans la section sources, section g72-semio-clin data-semiology-clinical=\"G72\" dans pA ; aucun Pareto dans le sous-onglet.",
+   "evidence": [
+    "Script de P hors dépôt (structure identique à tools/starter_codex.py, fonction semiology).",
+    "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G72-INTEGRATE/revue/captures/G72_P_bureau_02_semiologie.png",
+    "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G72-INTEGRATE/revue/captures/G72_P_mobile390_02_semiologie.png"
+   ]
+  },
+  {
+   "id": "SEMIO-RENDU",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Rendu réel et fenêtres.",
+   "verification": "Fragment S08 construit hors dépôt ; au bureau et à 390 px, 72 ouvertures data-k sur les quatre onglets et les six disciplines, aucune « Fiche absente », aucune erreur JavaScript ; clés PL7, PL12 et SRP ouvertes depuis g72-s-immuno.",
+   "evidence": [
+    "Construction build_front.py --fragment S08 (SHA-256 a909024cefedf29bf9470391fda05fce4a1c2137f6a494f4f273ce34bbe95471), Playwright Chromium 1194.",
+    "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G72-INTEGRATE/revue/captures/G72_P_bureau_04_glossaire_PL12.png"
+   ]
+  },
+  {
+   "id": "SEMIO-FIGURES",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Anatomie et Histologie sans figure ; audit_sciences échoue sur ces deux disciplines (« aucune figure »).",
+   "verification": "Retrait ANATOMIQUE_IA sur décision de Vial. tests/audit_sciences.py ne figure dans aucun workflow (.github/workflows : seuls des modules test_*.py sont découverts ; tests/test_audit_sciences.py teste le script sur des dépôts synthétiques I63) ni dans tools/alpha_publication.py.",
+   "evidence": [
+    "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G72 : failed, erreurs « G72/g72-s-anat: aucune figure », « G72/g72-s-histo: aucune figure » ; après : 4989 mots, 4 figures, 6 disciplines.",
+    "grep audit_sciences .github/workflows tools/alpha_publication.py : aucune occurrence."
+   ],
+   "justification_non_bloquant": "Lacune déclarée ; un SVG factice est interdit."
+  }
+ ],
+ "evidence": [
+  "Validateur sémiologique rejoué sur 82c343c6.",
+  "Rendu Chromium bureau et 390 px, 16.10.2026."
+ ],
+ "conclusion": "Aucun constat bloquant pour la sémiologie fondamentale et analytique : premier sous-onglet sélectionné, suivi de cinq disciplines réelles, rendu contrôlé au bureau et à 390 px.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

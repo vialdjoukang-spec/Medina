@@ -1,0 +1,286 @@
+{
+ "mission": "ALPHA77-CLAUDE-G72-INTEGRATE",
+ "agent": "W",
+ "code": "G72",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "controles": {
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static G72",
+   "resultat": "OK",
+   "detail": "G72 mots 23457 fenêtres 61 quiz 9 pareto 16"
+  },
+  "build_medina_audit": {
+   "resultat": "{} (appelé par test_v7 --static ; vérifié aussi sur les six fichiers HTML)"
+  },
+  "audit_sciences": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G72",
+   "resultat": "failed",
+   "erreurs": [
+    "G72/g72-s-anat: aucune figure",
+    "G72/g72-s-histo: aucune figure"
+   ],
+   "units": [
+    {
+     "id": "g72-s-semio",
+     "words": 2999,
+     "figures": 1
+    },
+    {
+     "id": "g72-s-anat",
+     "words": 444,
+     "figures": 0
+    },
+    {
+     "id": "g72-s-histo",
+     "words": 336,
+     "figures": 0
+    },
+    {
+     "id": "g72-s-physio",
+     "words": 321,
+     "figures": 1
+    },
+    {
+     "id": "g72-s-bioch",
+     "words": 363,
+     "figures": 1
+    },
+    {
+     "id": "g72-s-immuno",
+     "words": 481,
+     "figures": 1
+    }
+   ],
+   "totals": {
+    "before": {
+     "words": 1193,
+     "figures": 4,
+     "disciplines": 4
+    },
+    "after": {
+     "words": 4959,
+     "figures": 4,
+     "disciplines": 6
+    }
+   },
+   "lecture": "Les deux erreurs « aucune figure » (Anatomie, Histologie) découlent du retrait des figures ANATOMIQUE_IA décidé par Vial ; aucun SVG factice ajouté. Les six disciplines dépassent 280 mots et portent les quatre libellés Science → clinique / examen / traitement et À retenir."
+  },
+  "validateur_semiologique": {
+   "methode": "structure de starter_codex.semiology rejouée sur les fichiers finaux (HTMLTree de tools/starter_codex.py)",
+   "resultat": "passed",
+   "detail": {
+    "Semiology must be the first selected local science tab": true,
+    "Semiology panel must be inside fundamental pS": true,
+    "Initial semiology panel must be visible": true,
+    "Semiology first science unit absent": true,
+    "Incorrect first semiology unit title": true,
+    "Semiology sections missing or empty": true,
+    "Semiology sources need real linked references": true,
+    "Clinical semiology absent from pathology pA": true,
+    "_data_s_count": 6,
+    "_sections": [
+     "differentials",
+     "examination",
+     "interpretation",
+     "limits",
+     "mechanisms",
+     "normal",
+     "signs",
+     "sources",
+     "urgency"
+    ]
+   }
+  },
+  "construction": {
+   "commande": "MEDINA_OUT=<scratchpad> python3 build_front.py --fragment S08",
+   "sortie": "MEDINA_S08_nerveux.html (14 399 542 octets, compressé 7 636 320)",
+   "hors_depot": true
+  },
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "url": "file://…/MEDINA_S08_nerveux.html#/entry/G72",
+   "viewports": [
+    "1440×1000",
+    "390×844"
+   ],
+   "resultat": "passed",
+   "controles": {
+    "bureau.bloc_clinique_present": {
+     "ok": true
+    },
+    "bureau.bloc_clinique_visible": {
+     "ok": true
+    },
+    "bureau.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "bureau.panneau_semio_visible": {
+     "ok": true
+    },
+    "bureau.figure_semio_dans_largeur": {
+     "ok": true,
+     "detail": {
+      "x": 504.859375,
+      "y": 219.75,
+      "width": 747.078125,
+      "height": 732.328125
+     }
+    },
+    "bureau.fenetre_g72-sm-faiblesse": {
+     "ok": true,
+     "detail": "DÉ­FI­NI­TION\n\nLa fai­blesse est une perte de force me­su­rable ; la fa­tigue est une im­pres­sion d’épui­se­ment sans p"
+    },
+    "bureau.figure_2_lisible": {
+     "ok": true,
+     "detail": {
+      "scale": 1.5588315217391304,
+      "rendered_px": 24.9,
+      "texts_outside_viewbox": 0,
+      "width": 717.0625
+     }
+    },
+    "bureau.figure_3_lisible": {
+     "ok": true,
+     "detail": {
+      "scale": 1.5588315217391304,
+      "rendered_px": 24.9,
+      "texts_outside_viewbox": 0,
+      "width": 717.0625
+     }
+    },
+    "bureau.figure_4_lisible": {
+     "ok": true,
+     "detail": {
+      "scale": 1.5588315217391304,
+      "rendered_px": 24.9,
+      "texts_outside_viewbox": 0,
+      "width": 717.0625
+     }
+    },
+    "bureau.g72-s-anat_sans_figure": {
+     "ok": true
+    },
+    "bureau.g72-s-histo_sans_figure": {
+     "ok": true
+    },
+    "bureau.toutes_fenetres": {
+     "ok": true,
+     "detail": {
+      "total": 61,
+      "echecs": []
+     }
+    },
+    "bureau.erreurs_js": {
+     "ok": true,
+     "detail": []
+    },
+    "bureau.pas_de_defilement_horizontal": {
+     "ok": true,
+     "detail": 1440
+    },
+    "mobile390.bloc_clinique_present": {
+     "ok": true
+    },
+    "mobile390.bloc_clinique_visible": {
+     "ok": true
+    },
+    "mobile390.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "mobile390.panneau_semio_visible": {
+     "ok": true
+    },
+    "mobile390.figure_semio_dans_largeur": {
+     "ok": true,
+     "detail": {
+      "x": 32,
+      "y": 244.34375,
+      "width": 326,
+      "height": 442.9375
+     }
+    },
+    "mobile390.fenetre_g72-sm-faiblesse": {
+     "ok": true,
+     "detail": "DÉ­FI­NI­TION\n\nLa fai­blesse est une perte de force me­su­rable ; la fa­tigue est une im­pres­sion d’épui­se­ment sans p"
+    },
+    "mobile390.figure_2_lisible": {
+     "ok": true,
+     "detail": {
+      "scale": 0.6434442934782608,
+      "rendered_px": 10.3,
+      "texts_outside_viewbox": 0,
+      "width": 295.984375
+     }
+    },
+    "mobile390.figure_3_lisible": {
+     "ok": true,
+     "detail": {
+      "scale": 0.6434442934782608,
+      "rendered_px": 10.3,
+      "texts_outside_viewbox": 0,
+      "width": 295.984375
+     }
+    },
+    "mobile390.figure_4_lisible": {
+     "ok": true,
+     "detail": {
+      "scale": 0.6434103260869565,
+      "rendered_px": 10.3,
+      "texts_outside_viewbox": 0,
+      "width": 295.96875
+     }
+    },
+    "mobile390.g72-s-anat_sans_figure": {
+     "ok": true
+    },
+    "mobile390.g72-s-histo_sans_figure": {
+     "ok": true
+    },
+    "mobile390.erreurs_js": {
+     "ok": true,
+     "detail": []
+    },
+    "mobile390.pas_de_defilement_horizontal": {
+     "ok": true,
+     "detail": 390
+    }
+   }
+  },
+  "fenetres": {
+   "resultat": "61 fenêtres data-k ouvertes au navigateur, aucune « Fiche absente », aucun lien orphelin (data-k ↔ data-pop)"
+  },
+  "pareto": "Aucun Pareto sur une section data-semiology ; 16 Pareto, dont pareto-g72-immuno ajouté.",
+  "fichiers": "Sept fichiers admis seulement ; aucun _pop3 ; aucune image ajoutée."
+ },
+ "captures": [
+  "G72_bureau_01_ouverture.png",
+  "G72_bureau_02_bloc_clinique.png",
+  "G72_bureau_03_sous_onglet_semiologie.png",
+  "G72_bureau_04_figure_semiologie.png",
+  "G72_bureau_05_fenetre_semiologie.png",
+  "G72_bureau_06_figure_2.png",
+  "G72_mobile390_01_ouverture.png",
+  "G72_mobile390_03_sous_onglet_semiologie.png",
+  "G72_mobile390_04_figure_semiologie.png",
+  "G72_mobile390_05_fenetre_semiologie.png",
+  "G72_mobile390_06_figure_2.png",
+  "G72_mobile390_07_figure_3.png",
+  "G72_mobile390_08_figure_4.png"
+ ],
+ "empreintes_sha256": {
+  "chapters/G72/G72_a.html": "763dd0a3b260f66c9e23b15cc067a191ff483a0fc4f3ec4d60423db7c9f309ba",
+  "chapters/G72/G72_b.html": "3a58f79a9ff4f8e8b5aced654d47fbd5da59e61704ea2c58256db8ef0ad198ee",
+  "chapters/G72/G72_c.html": "f50e584778a6b61d219cb3fafbd52f075eeec8f08dd7d5f7565f3bd887caf615",
+  "chapters/G72/G72_d.html": "52d9ac610e117fbcb52fac44117b977ebf22ac60993fdc2f3d697ac4408307d8",
+  "chapters/G72/G72_pop1.html": "bf2bdb76142f5b0652491edda1caab5e4fa6fb181796fe2580bdc77ae98d1205",
+  "chapters/G72/G72_pop2.html": "3ccbcf7916b3adedd1d91cb07657e8b7a21e615552ca68ec5b7d914acc3732b1",
+  "glossary/g72.py": "13e8b6e615aca5ab57aa787feabe06d1ae96f0b59d5c20c27ba0167ad8528dd1"
+ },
+ "non_fait": [
+  "Revues finales MED, LANG, SEMIO et reçu Alpha : rôle de l’Agent P."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
