@@ -1,0 +1,164 @@
+{
+ "actor": "Claude",
+ "code": "G64",
+ "kind": "MED",
+ "mission": "ALPHA77-CLAUDE-G64-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "bae5e9ad3cfe8bed25e30d52853f26b5bbeed9b7",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G64/G64_a.html": "8bc623ff680af7398ae4267d6ea63b9721c444b30e07b431327a0d7303f3e130",
+  "chapters/G64/G64_b.html": "0b7ae0a8aa0bff4549da44ce4451932997eb899e15d95a457b27c102049ba50d",
+  "chapters/G64/G64_c.html": "22705b4969e050d4328c440b0a1b96fd706d62d9ec310b119a406bc5b8ae3774",
+  "chapters/G64/G64_d.html": "2b5d6ea964cc0bb8763d38d835445b602471acfeaad3d4c3efed05370d28be78",
+  "chapters/G64/G64_pop1.html": "15f903ac4bb6636b1ffc64916bb532502d58c66dfbb0bf32e3b2c65e8bf6aeb3",
+  "chapters/G64/G64_pop2.html": "ecafb6d49c8d137165c65499acf271d36bcfecc8fad33aab7a8d7c85398f27e1",
+  "glossary/g64.py": "bcf05a588a68438ffa95ecaffd506355e922aedd0392a9e82b26f204ba7d3b8d"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G64/G64_a.html": "07ea535c5395efa0a61eaf32703b874f246aa4049d98b44dba4f4d2716526856",
+  "chapters/G64/G64_b.html": "114a7d98760d33d72fd0af12f3cfb2fe2fd4dfd7951cf7f85a063d25c295732b",
+  "chapters/G64/G64_c.html": "b992d97a7821e3794e7406468e8579bf06b0778e05782e03ebbe2cdff749a483",
+  "chapters/G64/G64_d.html": "16c2dbb896b96f9ad1641039d8c609618dc04a2457c8dfc6446c7afa9773cbb0",
+  "chapters/G64/G64_pop1.html": "f3642820cacc39527b40a91520af579e0b18bc35f21fad3e96628012aa64acf2",
+  "chapters/G64/G64_pop2.html": "e071af22e9c71476fbb4742d238b4e5f694c62a7b131294ca1312d0f8d797890",
+  "glossary/g64.py": "ceb119c28ed7a6d9dcaf3d01afc6f386e434335b5be87ecfe4d8b660a13f88f8"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Différence textuelle base 523832d9 → d60a4914 (W) des sept fichiers, relue phrase par phrase ; chaque fait médical nouveau contre-vérifié dans sa source primaire, chaque posologie dans sa FI suisse rechargée le 16.10.2026. Les passages inchangés depuis l’audit ALPHA1-CLAUDE-G64-MED ne sont pas relus en totalité.",
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G64/G64_d.html; G64_b.html; G64_pop2.html",
+   "ancre": "g64-p-3, g64-12, fenêtre g64-pregabaline",
+   "constat": "Prégabaline : posologie selon la clairance de la créatinine, à chaque occurrence (d p-3 texte, tableau, vignette, piège, À retenir, cas 1 ; b paramètres clés ; pop2 fenêtre et Pareto).",
+   "verification": "Conforme au tableau 1 de la FI : Clcr ≥60 → 150 mg/j initial, 600 max ; 30–60 → 75 initial, 300 max ; 2 ou 3 prises ; <30 « ne doit pas être utilisée ». Réduction après 65 ans seulement si insuffisance rénale. Correction de W confirmée.",
+   "evidence": [
+    "FI Lyrica®, juillet 2026, https://amiko.oddb.org/fr/fi?gtin=7680570570016 (tools/swissmedic_fi.py, lue le 16.10.2026) : « ≥60 150 600 en 2 ou 3 prises unitaires ; 30-60 75 300 » ; « La prégabaline ne doit pas être utilisée chez les patients présentant une insuffisance rénale sévère (Clcr <30 ml/min) » ; « Une réduction de la posologie n’est nécessaire chez les patients âgés (plus de 65 ans) que s’ils présentent une insuffisance rénale »"
+   ]
+  },
+  {
+   "id": "P-MED-02",
+   "severite": "MINEUR",
+   "status": "non_blocking",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "g64-p-3",
+   "constat": "Vignette « 25 mg trois fois par jour » (75 mg/j, Clcr 45 ml/min) : le dosage doit exister en Suisse.",
+   "verification": "Lyrica® gélules à 25 mg commercialisées en Suisse (composition et liste des emballages : LYRICA 25 mg, hartkapseln, [B, SL]). 3 × 25 = 75 mg/j = dose initiale du tableau 1 pour 30–60 ml/min. Schéma « 75 mg 2x/jour » = 150 mg/j de la FI, piège correct.",
+   "evidence": [
+    "FI Lyrica®, juillet 2026, https://amiko.oddb.org/fr/fi?gtin=7680570570016 (tools/swissmedic_fi.py, lue le 16.10.2026) : « Gélule à 25 mg: 1 gélule contient 25 mg de prégabaline » ; « LYRICA 25 mg, hartkapseln, EFP 14.69, PP 32.05 » ; « 150 mg par jour (75 mg 2x/jour ou 50 mg 3x/jour) »"
+   ]
+  },
+  {
+   "id": "P-MED-03",
+   "severite": "MINEUR",
+   "status": "non_blocking",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "g64-p-3 (tableau des précautions)",
+   "constat": "Précautions de la prégabaline (chutes, conduite, opiacés aOR 1,68, dépression respiratoire, mésusage, insuffisance cardiaque, prise de poids, angio-œdème, arrêt progressif).",
+   "verification": "Toutes présentes dans les rubriques « Mises en garde » et « Aptitude à la conduite ».",
+   "evidence": [
+    "FI Lyrica®, juillet 2026, https://amiko.oddb.org/fr/fi?gtin=7680570570016 (tools/swissmedic_fi.py, lue le 16.10.2026) : « étourdissements et de la somnolence qui peuvent conduire à la survenue plus fréquente de traumatismes liés à des chutes chez les personnes âgées » ; « adjusted odds ratio [aOR] 1,68 » ; « ne pas conduire … tant qu’ils ignorent si ce médicament altère leur capacité » ; « réduction progressive de la dose sur une période de plusieurs semaines, voire de plusieurs mois »"
+   ]
+  },
+  {
+   "id": "P-MED-04",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G64/G64_d.html; G64_pop2.html",
+   "ancre": "g64-p-4, fenêtre g64-duloxetine",
+   "constat": "Duloxétine : corrections de W « l’enzyme qui élimine » → « Le CYP1A2 participe au métabolisme » et « doser la natrémie » → « surveille les signes d’hyponatrémie (vertiges, confusion, chutes), plus fréquente chez le sujet âgé ».",
+   "verification": "Les deux corrections sont conformes : la FI décrit CYP1A2 et CYP2D6 comme enzymes du métabolisme (non l’enzyme unique d’élimination) ; la FI ne prescrit pas de dosage systématique de la natrémie mais décrit les signes et la prudence chez le sujet âgé. Fluvoxamine : AUC ×6. Contre-indications (IMAO irréversibles, insuffisance hépatique, inhibiteurs du CYP1A2, Clcr <30, HTA non équilibrée), saignements, arrêt sur 1 à 2 semaines, évaluation à 2 mois, réévaluation au moins tous les 3 mois, prise simultanée pour plusieurs indications à éviter : conformes.",
+   "evidence": [
+    "FI Duloxetin-Mepha®, décembre 2024, https://amiko.oddb.org/fr/fi?gtin=7680660980053 : « principalement métabolisée par oxydation (CYP1A2 et enzyme polymorphe CYP2D6) » ; « La fluvoxamine … a multiplié l’AUC d’un facteur 6 » ; « Dans la majorité des cas ils ont eu lieu chez le sujet âgé » ; « vertiges, faiblesse, nausées, vomissements, confusion … syncopes, chutes et convulsions » ; « L’efficacité du traitement par duloxétine devra être évaluée après 2 mois » ; « réduire progressivement la dose sur une période de 1 à 2 semaines »"
+   ]
+  },
+  {
+   "id": "P-MED-05",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "g64-p-5",
+   "constat": "Nouvel îlot amitriptyline/gabapentine sans référence visible ni date des FI dans la leçon (aucune fenêtre, aucune ligne de source).",
+   "verification": "Contenu conforme aux deux FI (indications, titration, entretien, prudence >100 mg et >75 mg chez l’âgé, délai 2–4 semaines, dose habituelle en insuffisance rénale, contre-indications cardiaques/IMAO/hépatique sévère ; gabapentine : indication limitée, 300/600/900 mg, 900–3600 mg, réduction <80 ml/min, 300–900 mg entre 30 et 49). Correction P : ligne « Références » (p.src) ajoutée en fin d’îlot avec les deux FI datées et Sommer 2018 (commit bae5e9ad).",
+   "evidence": [
+    "FI Saroten®, octobre 2022, https://amiko.oddb.org/fr/fi?gtin=7680669780012 : « le traitement des douleurs neuropathiques chez l’adulte » ; « La dose initiale recommandée est de 10 mg à 25 mg, le soir. La dose peut être augmentée de 10 mg à 25 mg tous les 3 à 7 jours » ; « Infarctus du myocarde récent. Bloc cardiaque, quel qu’en soit le degré » ; « peut être administré à la dose habituelle chez les patients présentant une insuffisance rénale »",
+    "FI Neurontin®, avril 2025, version 107 F, https://amiko.oddb.org/fr/fi?gtin=7680525200104 : « Traitement des douleurs neuropathiques de l’adulte lors de neuropathie diabétique ou de névralgie postherpétique » ; « 30-49 300-900 » ; « Hypersensibilité au principe actif ou à l’un des excipients »"
+   ]
+  },
+  {
+   "id": "P-MED-06",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G64/G64_c.html; G64_pop2.html",
+   "ancre": "g64-s-gen, fenêtre g64-genetique",
+   "constat": "Génétique relue en entier : « une part significative … relèvent d’une cause génétique démontrable » généralisait la phrase source, qui vise l’expansion RFC1 ; « significative » ambigu en français.",
+   "verification": "Correction P : « Une part importante de ces cas, y compris des neuropathies des petites fibres, s’explique par une expansion de répétitions du gène RFC1. » ; fenêtre : « part importante ». Le reste de la discipline est conforme : PMP22 duplication en tandem 1,4 Mb 17p11.2-12 (CMT1A), délétion réciproque (HNPP), indications (début précoce, antécédent familial, pied creux, orteils en griffe, même cas sporadique), PMP22 avant NGS, détection jusqu’à 70 %, GJB1 (absence de transmission père-fils), GLA (Fabry, enzymothérapie), TTR (drapeaux rouges, début >60 ans), RFC1 (CIAP, CANVAS), SCN9A/10A/11A 10–30 %, GJB1/SH3TC2/FIG4/SPTLC1 imitant une neuropathie inflammatoire, variant sodique avec densité intraépidermique normale.",
+   "evidence": [
+    "DGN S1-Leitlinie Diagnostik bei Polyneuropathien, AWMF 030/067, PDF 2025-08 (texte intégral, pdftotext), § 3.6.3 : « Ein signifikanter Anteil dieser Fälle einschließlich Small-fiber-Neuropathie (SFN) ist auf eine Repeatexpansion des RFC1-Gens zurückzuführen » ; § 3.2.4 : « 1.4 Mb-Tandem-Duplikation in Chromosom 17p11.2-12 » ; « Bei positiver Familienanamnese kann die Nachweisrate bis zu 70% betragen » ; « Die hATTR kann sich erst in höherem Lebensalter (>60 Jahre) manifestieren »"
+   ]
+  },
+  {
+   "id": "P-MED-07",
+   "severite": "MINEUR",
+   "status": "non_blocking",
+   "fichier": "chapters/G64/G64_b.html; G64_pop1.html",
+   "ancre": "g64-8, fenêtre g64-sgb",
+   "constat": "Syndrome de Guillain-Barré : IgIV 0,4 g/kg/j 5 jours dans les 2 semaines, échanges plasmatiques 12–15 L en 4–5 séances sur 1–2 semaines dans les 4 semaines, corticoïdes oraux déconseillés, mEGRIS ; neurographie normale les premiers jours ; hospitalisation souvent en soins intensifs.",
+   "verification": "Conforme.",
+   "evidence": [
+    "van Doorn et al., EAN/PNS 2023, résumé PubMed 37814552 : « IVIg 0.4 g/kg for 5 days, in patients within 2 weeks … PE 12-15 L in four to five exchanges over 1-2 weeks … within 4 weeks » ; « recommends against using oral corticosteroids » ; « mEGRIS to assess the risk of requiring artificial ventilation »",
+    "DGN S1-Leitlinie Diagnostik bei Polyneuropathien, AWMF 030/067, PDF 2025-08 (texte intégral, pdftotext), tableau 10 : « Neurographie kann während der ersten Tage der Erkrankung normal sein » ; « sensibles Niveau oder positive Pyramidenzeichen » ; Sommer 2018 : « requires rapid hospitalization and, in many cases, intensive care treatment »"
+   ]
+  },
+  {
+   "id": "P-MED-08",
+   "severite": "MINEUR",
+   "status": "non_blocking",
+   "fichier": "chapters/G64/G64_a.html; G64_b.html; G64_c.html; G64_d.html; G64_pop1.html; G64_pop2.html",
+   "ancre": "divers",
+   "constat": "Autres faits nouveaux : G62.9/G62.80 ; alcool sans seuil net et formulation « étiologie indéterminée avec consommation accrue d’alcool comme facteur de risque » ; CIAP environ 25 %, contrôle à 6–12 mois ; gammapathie IgG/IgA sans lien sauf POEMS, IgG élevées → amylose AL ; POEMS (Castleman, VEGF, autogreffe) ; B12 « le plus tôt possible » ; PIDC prévalence 2–3/100 000 ; NeuPSIG 2025 (NNT/NNH des neuf traitements, critères d’efficacité et de sécurité) ; Chew 2022 (Se 72 %, Sp 91 %, RV+ 7,6, RV− 0,3, kappa 0,6 ; gradient thermique Se 87 %, Sp 14 %).",
+   "verification": "Tous conformes à la source citée.",
+   "evidence": [
+    "BfArM CIM-10-GM 2024 bloc G60–G64 : « G62.80 Critical-illness-Polyneuropathie » ; « G62.9 Polyneuropathie, nicht näher bezeichnet »",
+    "DGN S1-Leitlinie Diagnostik bei Polyneuropathien, AWMF 030/067, PDF 2025-08 (texte intégral, pdftotext), § 3.6.1 : « keine eindeutigen Grenzwerte » ; § 3.6.3 : « Circa 25% der PNP bleiben letztlich ätiologisch unklar » ; « Nachuntersuchung nach ½ bis 1 Jahr » ; Antikörperdiagnostik : « IgG-, IgA-Gammopathie kein Zusammenhang … es sei denn … POEMS »",
+    "Sommer 2018 (PMC5832891) : « elevated IgG levels may point to myeloma-related AL amyloidosis » ; « The first-line treatment here is autologous stem cell transplantation » ; « Vitamin B12 replacement should be initiated as promptly as possible » ; CIDP « prevalence is reported at 2–3/100 000 »",
+    "Soliman et al., NeuPSIG, Lancet Neurol 2025, résumé PubMed 40252663 : NNT/NNH des neuf traitements et lignes de recommandation identiques au tableau",
+    "Chew et al., Intern Med J, résumé PubMed 33016526 : « sensitivity 72%, specificity 91%, positive likelihood ratio 7.6 and negative likelihood ratio 0.3 »"
+   ]
+  },
+  {
+   "id": "P-CTRL-01",
+   "severite": "—",
+   "status": "non_blocking",
+   "fichier": "tests/audit_sciences.py (hors mission, lecture seule)",
+   "constat": "python3 tests/audit_sciences.py --base 523832d9… --codes G64 échoue (rc=1) : g64-s-anat, g64-s-histo, g64-s-physio et g64-s-bioch ont moins de 280 mots et aucune figure.",
+   "verification": "Défauts historiques, préexistants à la base (avant : 725 mots, 0 figure, 4 disciplines ; après : 4787 mots, 2 figures, 6 disciplines) ; g64-s-semio et g64-s-gen conformes. Le contrôle ne fait partie ni de la CI (les workflows n’exécutent que tests/test_audit_sciences.py, tests unitaires sur dépôt synthétique I63, via unittest discover) ni de tools/alpha_publication.py, ni de tools/espace.py, ni de tools/ai_session_guard.py (aucune occurrence ; .medina/ai-session-guard.json ne le cite que comme chemin protégé). Aucun remplissage ni SVG factice ajouté.",
+   "evidence": [
+    "grep audit_sciences : .github/workflows/*.yml, tools/alpha_publication.py, tools/espace.py, tools/ai_session_guard.py → aucune occurrence",
+    "Sortie : result failed, 8 erreurs sur les quatre disciplines historiques"
+   ]
+  }
+ ],
+ "evidence": [
+  "Lecture différentielle texte par texte base → d60a4914 (script scratchpad g64p/wd.py).",
+  "FI Lyrica®, juillet 2026, https://amiko.oddb.org/fr/fi?gtin=7680570570016 (tools/swissmedic_fi.py, lue le 16.10.2026)",
+  "FI Duloxetin-Mepha®, décembre 2024, https://amiko.oddb.org/fr/fi?gtin=7680660980053",
+  "FI Saroten®, octobre 2022, https://amiko.oddb.org/fr/fi?gtin=7680669780012",
+  "FI Neurontin®, avril 2025, version 107 F, https://amiko.oddb.org/fr/fi?gtin=7680525200104",
+  "DGN S1-Leitlinie Diagnostik bei Polyneuropathien, AWMF 030/067, PDF 2025-08 (texte intégral, pdftotext), PDF téléchargé le 16.10.2026, SHA-256 f1778d33bad87c8bc20e8332b29e77bb6a8576ae04b5c75d2424aad32777328f",
+  "Résumés PubMed 37814552, 40252663, 33016526 ; texte intégral PMC5832891 ; BfArM bloc G60–G64 2024.",
+  "python3 test_v7.py --static G64 : OK (G64 mots 17343 fenêtres 43 quiz 8 pareto 15) après corrections P.",
+  "python3 test_v7.py --url (fragment S08 construit dans le scratchpad) G64 : OK."
+ ],
+ "conclusion": "Aucun constat bloquant ouvert. Posologies de la prégabaline conformes au tableau 1 de la FI Lyrica à chaque occurrence ; vignette 25 mg × 3 réalisable avec une forme suisse ; corrections duloxétine de W confirmées ; deux corrections mineures de P (P-MED-05, P-MED-06) appliquées et contrôlées.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
