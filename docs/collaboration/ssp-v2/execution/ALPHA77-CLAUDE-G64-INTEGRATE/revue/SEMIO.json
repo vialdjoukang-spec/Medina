@@ -1,0 +1,137 @@
+{
+ "actor": "Claude",
+ "code": "G64",
+ "kind": "SEMIO",
+ "mission": "ALPHA77-CLAUDE-G64-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "bae5e9ad3cfe8bed25e30d52853f26b5bbeed9b7",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G64/G64_a.html": "8bc623ff680af7398ae4267d6ea63b9721c444b30e07b431327a0d7303f3e130",
+  "chapters/G64/G64_b.html": "0b7ae0a8aa0bff4549da44ce4451932997eb899e15d95a457b27c102049ba50d",
+  "chapters/G64/G64_c.html": "22705b4969e050d4328c440b0a1b96fd706d62d9ec310b119a406bc5b8ae3774",
+  "chapters/G64/G64_d.html": "2b5d6ea964cc0bb8763d38d835445b602471acfeaad3d4c3efed05370d28be78",
+  "chapters/G64/G64_pop1.html": "15f903ac4bb6636b1ffc64916bb532502d58c66dfbb0bf32e3b2c65e8bf6aeb3",
+  "chapters/G64/G64_pop2.html": "ecafb6d49c8d137165c65499acf271d36bcfecc8fad33aab7a8d7c85398f27e1",
+  "glossary/g64.py": "bcf05a588a68438ffa95ecaffd506355e922aedd0392a9e82b26f204ba7d3b8d"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G64/G64_a.html": "07ea535c5395efa0a61eaf32703b874f246aa4049d98b44dba4f4d2716526856",
+  "chapters/G64/G64_b.html": "114a7d98760d33d72fd0af12f3cfb2fe2fd4dfd7951cf7f85a063d25c295732b",
+  "chapters/G64/G64_c.html": "b992d97a7821e3794e7406468e8579bf06b0778e05782e03ebbe2cdff749a483",
+  "chapters/G64/G64_d.html": "16c2dbb896b96f9ad1641039d8c609618dc04a2457c8dfc6446c7afa9773cbb0",
+  "chapters/G64/G64_pop1.html": "f3642820cacc39527b40a91520af579e0b18bc35f21fad3e96628012aa64acf2",
+  "chapters/G64/G64_pop2.html": "e071af22e9c71476fbb4742d238b4e5f694c62a7b131294ca1312d0f8d797890",
+  "glossary/g64.py": "ceb119c28ed7a6d9dcaf3d01afc6f386e434335b5be87ecfe4d8b660a13f88f8"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "g64-s-semio",
+ "source_path": "chapters/G64/G64_c.html",
+ "clinical_marker": {
+  "fichier": "chapters/G64/G64_a.html",
+  "selecteur": "div.card[data-semiology-clinical=\"G64\"]",
+  "dans_pA": true
+ },
+ "sections": {
+  "normal": "g64-sm-1",
+  "signs": "g64-sm-2",
+  "mechanisms": "g64-sm-3",
+  "examination": "g64-sm-4",
+  "interpretation": "g64-sm-5",
+  "differentials": "g64-sm-6",
+  "urgency": "g64-sm-7",
+  "limits": "g64-sm-8",
+  "sources": "g64-sm-9"
+ },
+ "grille_SEM": [
+  {
+   "critere": "SEM-01",
+   "resultat": "oui",
+   "preuve": "bouton #g64-tab-semio premier de .sci-bar, libellé exact, role=tab, aria-selected=true, aria-controls=g64-s-semio"
+  },
+  {
+   "critere": "SEM-02",
+   "resultat": "oui",
+   "preuve": "premier h3 exact « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »"
+  },
+  {
+   "critere": "SEM-03",
+   "resultat": "oui",
+   "preuve": "neuf sections data-semiology non vides, dans l’ordre normal → sources"
+  },
+  {
+   "critere": "SEM-04",
+   "resultat": "oui",
+   "preuve": "liens https dans la section sources (g64-sm-9)"
+  },
+  {
+   "critere": "SEM-05",
+   "resultat": "oui",
+   "preuve": "marqueur data-semiology-clinical=\"G64\" dans pA (G64_a.html)"
+  },
+  {
+   "critere": "SEM-06",
+   "resultat": "oui",
+   "preuve": "6 data-s : semio, anat, histo, physio, bioch, gen ; aucun Pareto dans g64-s-semio"
+  },
+  {
+   "critere": "SEM-07",
+   "resultat": "oui",
+   "preuve": "figure 2 non anatomique, sourcée (DGN 2025 § 3.1), viewBox 360, police 18 ; rendu sans débordement au bureau et à 390 px"
+  },
+  {
+   "critere": "SEM-08",
+   "resultat": "oui",
+   "preuve": "valeurs chiffrées attribuées à leur population (Chew 2022, population adressée) ; déductions marquées"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-STRUCTURE",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contrat structurel du sous-onglet.",
+   "verification": "Rejeu de la structure de tools/starter_codex.py Starter.semiology avec HTMLTree sur les fichiers finaux : tous les critères vrais.",
+   "evidence": [
+    "g64p/semio_check.py : first_ok, panel_unique, visible, title, sections_ok, https, clinical = true"
+   ]
+  },
+  {
+   "id": "SEMIO-FAITS",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Faits de la sémiologie (gestes, signes, syndromes, urgence SGB, différentiels).",
+   "verification": "Contre-vérifiés dans DGN 2025 § 3.1, tableau 10, § 3.6 et Chew 2022 (voir MED P-MED-07 et P-MED-08).",
+   "evidence": [
+    "DGN S1-Leitlinie Diagnostik bei Polyneuropathien, AWMF 030/067, PDF 2025-08 (texte intégral, pdftotext)",
+    "PubMed 33016526"
+   ]
+  },
+  {
+   "id": "SEMIO-RENDU",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Rendu réel.",
+   "verification": "Chromium bureau 1300 px et 390 px : Sémiologie sélectionnée à l’ouverture de pS, fenêtres sans « Fiche absente », aucune erreur JS, largeur de document égale à la vue.",
+   "evidence": [
+    "revue/captures/P_G64_02_semiologie_*.png",
+    "revue/captures/rendu_P.json",
+    "test_v7.py --url G64 : OK"
+   ]
+  }
+ ],
+ "evidence": [
+  "g64p/semio_check.py (rejeu structurel)",
+  "test_v7.py --static et --url G64 : OK",
+  "Captures revue/captures/P_G64_0*.png"
+ ],
+ "conclusion": "Aucun constat bloquant : la Sémiologie fondamentale et analytique est le premier sous-onglet sélectionné, suivie de cinq disciplines dont la Génétique ; rendu contrôlé au bureau et à 390 px.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
