@@ -1,0 +1,661 @@
+{
+ "mission": "ALPHA77-CLAUDE-C72-INTEGRATE",
+ "agent": "W",
+ "role": "intégration (premier agent)",
+ "code": "C72",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "rapports": [
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-C72-MED/rapport.json",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-C72-LANG/rapport.json"
+ ],
+ "comptes": {
+  "constats_MED": {
+   "MAJEUR": 6,
+   "MINEUR": 9,
+   "ENRICHISSEMENT": 12,
+   "integres": 26,
+   "lacune": 1,
+   "refuses": 0
+  },
+  "corrections_W": 4,
+  "LANG_propositions": {
+   "total": 83,
+   "appliquees": 81,
+   "sans_objet_remplacees_par_MED": 2
+  },
+  "LANG_renvois_medicaux": {
+   "total": 53,
+   "tranches_par_MED": 6,
+   "non_appliques": 47
+  },
+  "LANG_choix_differes": {
+   "D1": "non_applique : espaces insécables, choix différé de Vial",
+   "D2": "sans objet"
+  }
+ },
+ "lang_statut": {
+  "C72-LANG-0001": "applique",
+  "C72-LANG-0002": "applique",
+  "C72-LANG-0003": "applique",
+  "C72-LANG-0004": "applique",
+  "C72-LANG-0005": "applique",
+  "C72-LANG-0006": "applique",
+  "C72-LANG-0007": "applique",
+  "C72-LANG-0008": "applique",
+  "C72-LANG-0009": "applique",
+  "C72-LANG-0010": "applique",
+  "C72-LANG-0011": "applique",
+  "C72-LANG-0012": "applique",
+  "C72-LANG-0013": "applique",
+  "C72-LANG-0014": "applique",
+  "C72-LANG-0015": "applique",
+  "C72-LANG-0016": "applique",
+  "C72-LANG-0017": "applique",
+  "C72-LANG-0018": "applique",
+  "C72-LANG-0019": "applique",
+  "C72-LANG-0020": "applique",
+  "C72-LANG-0021": "applique",
+  "C72-LANG-0022": "applique",
+  "C72-LANG-0023": "applique",
+  "C72-LANG-0024": "applique",
+  "C72-LANG-0025": "applique",
+  "C72-LANG-0026": "applique",
+  "C72-LANG-0027": "applique",
+  "C72-LANG-0028": "applique",
+  "C72-LANG-0029": "applique",
+  "C72-LANG-0030": "applique",
+  "C72-LANG-0031": "applique",
+  "C72-LANG-0032": "applique",
+  "C72-LANG-0033": "applique",
+  "C72-LANG-0034": "applique",
+  "C72-LANG-0035": "applique",
+  "C72-LANG-0036": "applique",
+  "C72-LANG-0037": "applique",
+  "C72-LANG-0038": "applique",
+  "C72-LANG-0039": "applique",
+  "C72-LANG-0040": "applique",
+  "C72-LANG-0041": "applique",
+  "C72-LANG-0042": "applique",
+  "C72-LANG-0043": "applique",
+  "C72-LANG-0044": "applique",
+  "C72-LANG-0045": "applique",
+  "C72-LANG-0046": "applique",
+  "C72-LANG-0047": "applique",
+  "C72-LANG-0048": "applique",
+  "C72-LANG-0049": "applique",
+  "C72-LANG-0050": "applique",
+  "C72-LANG-0051": "applique",
+  "C72-LANG-0052": "applique",
+  "C72-LANG-0053": "remplace_par_MIN-04",
+  "C72-LANG-0054": "applique",
+  "C72-LANG-0055": "applique",
+  "C72-LANG-0056": "applique",
+  "C72-LANG-0057": "applique",
+  "C72-LANG-0058": "applique",
+  "C72-LANG-0059": "applique",
+  "C72-LANG-0060": "applique",
+  "C72-LANG-0061": "applique",
+  "C72-LANG-0062": "applique",
+  "C72-LANG-0063": "applique",
+  "C72-LANG-0064": "applique",
+  "C72-LANG-0065": "applique",
+  "C72-LANG-0066": "applique",
+  "C72-LANG-0067": "applique",
+  "C72-LANG-0068": "applique",
+  "C72-LANG-0069": "applique",
+  "C72-LANG-0070": "applique",
+  "C72-LANG-0071": "applique",
+  "C72-LANG-0072": "applique",
+  "C72-LANG-0073": "applique",
+  "C72-LANG-0074": "applique",
+  "C72-LANG-0075": "applique",
+  "C72-LANG-0076": "applique",
+  "C72-LANG-0077": "applique",
+  "C72-LANG-0078": "remplace_par_MIN-04",
+  "C72-LANG-0079": "applique",
+  "C72-LANG-0080": "applique",
+  "C72-LANG-0081": "applique",
+  "C72-LANG-0082": "applique",
+  "C72-LANG-0083": "applique"
+ },
+ "lang_renvois_medicaux": {
+  "R1": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R2": "tranche_par_MED sans objet : légende de la figure 1, retirée (MAJ-06)",
+  "R3": "tranche_par_MED MIN-06",
+  "R4": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R5": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R6": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R7": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R8": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R9": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R10": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R11": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R12": "tranche_par_MED MIN-06",
+  "R13": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R14": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R15": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R16": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R17": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R18": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R19": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R20": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R21": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R22": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R23": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R24": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R25": "tranche_par_MED MIN-08",
+  "R26": "tranche_par_MED MIN-09 (extension W)",
+  "R27": "tranche_par_MED MIN-06",
+  "R28": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R29": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R30": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R31": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R32": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R33": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R34": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R35": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R36": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R37": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R38": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R39": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R40": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R41": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R42": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R43": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R44": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R45": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R46": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R47": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R48": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R49": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R50": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R51": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R52": "non_applique : non tranché par l’audit MED (formulation conservée)",
+  "R53": "non_applique : non tranché par l’audit MED (formulation conservée)"
+ },
+ "corrections": [
+  {
+   "constat": "MAJ-01",
+   "action": "Sixième sous-onglet « Sémiologie fondamentale et analytique » inséré en tête de .sci-bar (bouton c72-tab-semio, aria-selected=\"true\", autres boutons à \"false\") ; panneau c72-s-semio (role=\"tabpanel\", visible) en tête de .sci-body, c72-s-anat masqué ; neuf sections data-semiology dans l’ordre du contrat, titres h3. Marqueur data-semiology-clinical=\"C72\" inséré dans pA (C72_a.html, îlot c72-6, avant l’encadré « À retenir »). Neuf fenêtres c72-sm-* ajoutées à la fin de C72_pop2.html (aucun pop3). Retouches W : identifiants [Sx] retirés du texte du cours et remplacés par le nom de la source dans le tableau de correspondance ; raisonnement en cinq étapes passé de la première personne à la troisième ; formules de chantier retirées (renvoi au registre sources.json, mention « revue IA » dans le cours, mode d’extraction, renvoi au parcours CS S01) ; figure S renumérotée figure 8.",
+   "fichiers": [
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_a.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Westphal et Mohme 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485896/",
+    "Tonn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485950/",
+    "Nersesyan et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12553641/",
+    "EANO 2021 (Weller et al.), https://pmc.ncbi.nlm.nih.gov/articles/PMC7904519/",
+    "ERN GENTURIS 2023 (Carton et al.), https://pmc.ncbi.nlm.nih.gov/articles/PMC9845795/",
+    "Spirig et al. 2011, https://pubmed.ncbi.nlm.nih.gov/21732297/",
+    "Hess 2005, https://pubmed.ncbi.nlm.nih.gov/16117470/",
+    "Novy 2012, https://pubmed.ncbi.nlm.nih.gov/22377894/",
+    "Boktor et al. 2023, https://pubmed.ncbi.nlm.nih.gov/37121596/",
+    "Tabrah et al. 2022, https://pubmed.ncbi.nlm.nih.gov/35180641/",
+    "Galliker et al. 2020, https://pubmed.ncbi.nlm.nih.gov/31278933/"
+   ],
+   "passage": "S3 Clinical presentation : « axial back pain, unspecific sensations, or radiculopathy … ataxia, nonradicular paresis, and/or sensory deficits » ; S5 : « at least two hallmark features » ; S14 : « 200 ml had the highest diagnostic accuracy, with 82% sensitivity … 65% specificity » ; S15 : « sensitivity of anal tone was low across all studies (range: 0.23 to 0.53) » ; S11 : « if neurological deficits appear, a fast surgical intervention is indicated »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MAJ-02",
+   "action": "Cinquième discipline « Physiologie » (c72-s-physio, proposition C72_c_physio.html) ajoutée après Radiobiologie, avec sa fenêtre pareto-c72-physio dans C72_pop2.html ; figure P renumérotée figure 7 (schéma logique, viewBox 360, texte 16).",
+   "fichiers": [
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Nersesyan et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12553641/",
+    "Hess 2005, https://pubmed.ncbi.nlm.nih.gov/16117470/",
+    "Novy 2012, https://pubmed.ncbi.nlm.nih.gov/22377894/",
+    "Tonn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485950/",
+    "Spirig et al. 2011, https://pubmed.ncbi.nlm.nih.gov/21732297/"
+   ],
+   "passage": "S13 : « anterior spinal artery syndrome, presenting with bilateral weakness …, impairment of spinothalamic sensation and preservation of deep sensation » ; S12 : « anterior spinal cord syndromes …, long pathway syndrome … and the unilateral Brown-Séquard’s syndrome » ; « flaccid para- or tetraparesis accompanied by areflexia … (spinal shock) » ; S5 : « simultaneous presence of upper and lower motor neuron signs, whereas cauda equina syndrome results exclusively in lower motor neuron deficits »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MAJ-03",
+   "action": "Libellés « Science → clinique / examen / traitement » et « À retenir » ajoutés aux quatre disciplines (proposition C72_c_liens.html, adaptée) ; disciplines complétées au-delà de 280 mots par des faits relus (anatomie : origine cellulaire des épendymomes ; neuropathologie : deux groupes d’épendymomes et répartition néerlandaise ; génétique : mécanismes H3 K27M et MYCN, techniques, conséquence de MYCN, sous-groupes du myxopapillaire ; radiobiologie : myélopathie précoce et tardive, seuils de 55 Gy et 40 Gy chez l’enfant, moindre sensibilité de la queue de cheval) ; schéma non anatomique ajouté à la Génétique (figure 6, viewBox 360, texte 16). Le libellé radiobiologie « Science → examen » de la proposition (IRM de référence 3 à 4 semaines après radiothérapie) n’a pas été retrouvé dans S6 : il est remplacé par le passage relu sur la pseudoprogression (premiers mois, contrôle à 4–8 semaines), signalé comme extrapolé des gliomes de l’adulte. Pareto des quatre disciplines complétés.",
+   "fichiers": [
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Westphal et Mohme 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485896/",
+    "Bodensohn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485843/",
+    "EANO 2021 (Weller et al.), https://pmc.ncbi.nlm.nih.gov/articles/PMC7904519/",
+    "Motiei-Langroudi 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12563245/"
+   ],
+   "passage": "S2 : « arise … from the remnants of that layer in the central canal or filum terminale » ; « suspicious to be MPE as of the level of the conus and then downwards into the end of the dural sac » ; « subependymal glial cell layer which surrounds the obliterated central canal » ; « spinal ependymoma (WHO grade 2) made up 56% … grade 3 9%, myxopapillary ependymoma 20%, and subependymoma 11% » ; S8 : « H3 K27M dominantly inhibit the polycomb repressive complex 2 … stem-like, therapy-resistant phenotype » ; « more frequent imaging surveillance if GTR is achieved » ; S4 : « Early myelopathy appears typically 2–4 months … L´hermitte … Late myelopathy … can be permanent » ; « critical doses begin above 55Gy (in children even above 40Gy) » ; « cauda equina being less susceptible to radiation damage » ; S6 : « Pseudoprogression … most likely to occur during the first 3 months … rescanning after shorter intervals (4–8 weeks) »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MAJ-04",
+   "action": "Tableau 12.1 : cellules C72.1 et C72.3 remplacées (myxopapillaire /1 → D43.4 ; gliome pilocytique des voies optiques /1 → D43.3) ; piège de codage ajouté après le tableau ; tableau OMS de l’îlot c72-1 complété (myxopapillaire codé D43.4). Clés D43.3 et D43.4 ajoutées au glossaire. Réserve conservée : table CIM-O-3.2 en vigueur non lue.",
+   "fichiers": [
+    "chapters/C72/C72_b.html",
+    "chapters/C72/C72_a.html",
+    "glossary/c72.py"
+   ],
+   "sources": [
+    "Aide-mémoire NKRS, état du 23.05.2022, https://www.usz.ch/app/uploads/2023/06/2023-01-01-hilfsunterlage-meldepflichtige-erkrankungen-nkrs.pdf",
+    "ENCR, formation CNS, mai 2021, https://encr.eu/sites/default/files/meetings/Training_2021-05/ENCR2021-S3-CNS.pdf"
+   ],
+   "passage": "S20 § 2 : « Für die richtige Zuordnung zur ICD-10-Kategorie ist der Dignitätscode … verbindlich » ; § 3 : « /1 … D37-D48 » ; « D43 Gehirn, Hirnnerven, Rückenmark, sonstige Teile des ZNS » ; S21 tableaux : « Pilocytic astrocytoma 9421/1 », « Subependymoma 9383/1 », « Myxopapillary ependymoma 9394/1 », « Ependymoma 9391/3 »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MAJ-05",
+   "action": "Figure 5 remplacée par le SVG redessiné (viewBox 360, texte 18) ; légende corrigée (« modèle QUANTEC rapporté par Bodensohn et al. 2024 ») avec lecture. Mesure à 390 px : texte rendu à 16 px.",
+   "fichiers": [
+    "chapters/C72/C72_c.html"
+   ],
+   "sources": [
+    "Bodensohn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485843/"
+   ],
+   "passage": "S4 : « the likelihood of myelopathy is projected at 0.2%, 6%, and 50% for dose levels of 50Gy, 60Gy, and 69Gy »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MAJ-06",
+   "action": "Figures 1 (C72_a.html, îlot c72-3) et 3 (C72_c.html, c72-s-anat), dessins anatomiques d’origine IA, retirées sans remplacement (décision de Vial). Aucun appel textuel à ces figures n’existait. Lacune déclarée : figure anatomique à sourcer (original réel via Image_Clo_finder) ; la discipline Anatomie n’a donc plus de figure, ce que signale audit_sciences.py.",
+   "fichiers": [
+    "chapters/C72/C72_a.html",
+    "chapters/C72/C72_c.html"
+   ],
+   "sources": [],
+   "passage": "Sans objet (retrait)",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "lacune"
+  },
+  {
+   "constat": "MIN-01",
+   "action": "Fenêtre c72-d-selumetinib et tableau c72-p-2 : indication adulte et enfant dès 3 ans, dose maximale de 50 mg par prise, instauration par un médecin expérimenté.",
+   "fichiers": [
+    "chapters/C72/C72_pop2.html",
+    "chapters/C72/C72_d.html"
+   ],
+   "sources": [
+    "IP suisse Koselugo®, mise à jour de juin 2026 (AmiKo, AIPS 7680674100010)"
+   ],
+   "passage": "S19 Indications : « chez les patients adultes et pédiatriques âgés de 3 ans et plus » ; Posologie : « jusqu’à une dose maximale par prise de 50 mg » ; « instauré par un médecin expérimenté dans … les tumeurs liées à la NF1 »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-02",
+   "action": "C72_d.html, îlot c72-p-3 : phrase « interactions non lues » remplacée par les interactions de la FI suisse ; surveillance hépatique ajoutée à l’alerte de sécurité. Usage du témozolomide dans C72 déjà signalé hors indication.",
+   "fichiers": [
+    "chapters/C72/C72_d.html"
+   ],
+   "sources": [
+    "IP suisse Temodal®, mise à jour de décembre 2021 (AmiKo, AIPS 7680545770922)"
+   ],
+   "passage": "S17 Interactions : « dexaméthasone, prochlorpérazine, phénytoïne, carbamazépine, ondansétron, antagonistes des récepteurs H2 ou phénobarbital ne modifie pas la clairance » ; « acide valproïque … diminution faible mais statistiquement significative » ; « autres substances myélosuppressives » ; Mises en garde : « tests fonctionnels hépatiques avant le début … après la moitié du cycle … après chaque cycle » ; « plusieurs semaines après la dernière administration »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-03",
+   "action": "Glossaire D35.2 corrigé (hypophyse) ; fenêtre c72-nkrs complétée (règles adultes, exclusion de la gammapathie monoclonale, moins de 20 ans : tout D35, D61 et D76) et limite actualisée ; carte « Déclaration au registre » de c72-12 alignée. Coquille de la proposition (balise </div> à la place de </p>) corrigée.",
+   "fichiers": [
+    "glossary/c72.py",
+    "chapters/C72/C72_pop2.html",
+    "chapters/C72/C72_b.html"
+   ],
+   "sources": [
+    "Aide-mémoire NKRS, état du 23.05.2022, https://www.usz.ch/app/uploads/2023/06/2023-01-01-hilfsunterlage-meldepflichtige-erkrankungen-nkrs.pdf"
+   ],
+   "passage": "S20 § 1 : « Monoklonale Gammopathie unklarer Signifikanz (MGUS) » exclue ; § 3 : « /0 D32-D33, D35.2 » (adultes) ; « /1 D37-D48 (ausgenommen: MGUS), D61, D76 » et « /0 D32-D33, D35 » (moins de 20 ans) ; « D35.2 … Hypophyse »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-04",
+   "action": "Relation dose-effet reformulée sans restriction au bas grade, dans C72_c.html (c72-s-radio) et dans la fenêtre c72-rt-astro ; la proposition LANG-0053/0078 sur la même phrase devient sans objet.",
+   "fichiers": [
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Bodensohn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485843/"
+   ],
+   "passage": "S4 : « Corradini et al. found a … significant relationship for patients receiving dose levels of 45Gy or more … Similar dose relations were found for 40Gy or more versus less than 40Gy »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-05",
+   "action": "Figure 4 remplacée par le SVG redessiné (viewBox 360, texte 16), légende complétée par sa lecture. Mesure à 390 px : 13 px.",
+   "fichiers": [
+    "chapters/C72/C72_c.html"
+   ],
+   "sources": [
+    "Louis et al. 2021 (OMS 2021), https://pmc.ncbi.nlm.nih.gov/articles/PMC8328013/"
+   ],
+   "passage": "Valeurs inchangées (diagnostic intégré en quatre couches, OMS 2021, déjà vérifié par l’audit MED)",
+   "relecture_source": "non relu par W : S7 indisponible (erreur 429 puis absence d’Europe PMC) ; aucune valeur nouvelle",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-06",
+   "action": "Trois causalités non sourcées reformulées : c72-2 (retentissement), c72-5 (retard diagnostique déclaré interprétation), c72-e-1 (place de l’imagerie). Tranche aussi les renvois LANG R3, R12 et R27.",
+   "fichiers": [
+    "chapters/C72/C72_a.html",
+    "chapters/C72/C72_c.html"
+   ],
+   "sources": [
+    "Westphal et Mohme 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485896/",
+    "Hess 2005, https://pubmed.ncbi.nlm.nih.gov/16117470/",
+    "Novy 2012, https://pubmed.ncbi.nlm.nih.gov/22377894/"
+   ],
+   "passage": "S2 : « a significant delay of months, sometimes years until the definitive diagnosis » (sans cause énoncée)",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-07",
+   "action": "Alerte de c72-8 et fenêtre c72-urgence-imagerie réattribuées : urgence neurologique (Nersesyan) et intervention rapide devant un déficit (synthèse suisse de Spirig), référence Spirig ajoutée à la fenêtre ; aucun délai horaire ajouté.",
+   "fichiers": [
+    "chapters/C72/C72_b.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Nersesyan et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12553641/",
+    "Spirig et al. 2011, https://pubmed.ncbi.nlm.nih.gov/21732297/"
+   ],
+   "passage": "S5 : « This syndrome is considered a neurological emergency » ; S11 : « if neurological deficits appear, a fast surgical intervention is indicated, since the prognosis depends on duration and severity of the preoperative existing deficits »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-08",
+   "action": "Piège d’âge corrigé dans la liste des neuf pièges (c72-12). Tranche le renvoi LANG R25.",
+   "fichiers": [
+    "chapters/C72/C72_b.html"
+   ],
+   "sources": [
+    "Tonn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485950/"
+   ],
+   "passage": "S3 : « within the group of intramedullary gliomas, nearly 30–40% of all tumors are of astrocytic origin … In children … 40–60% of all pediatric spinal cord neoplasms »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "MIN-09",
+   "action": "Condition ERN GENTURIS appliquée partout où la leçon écrivait « exérèse urgente » : alerte de c72-8, bouton c72-nf1-ttt, fenêtres c72-mpnst-urgence (titre compris), c72-nf1-ttt et c72-alarme-mpnst, cas 4 de l’onglet Examens, tableau OMS de c72-1, Pareto des urgences ; le piège « MPNST jusqu’à preuve du contraire » devient « impose de rechercher un MPNST » (renvoi LANG R26).",
+   "fichiers": [
+    "chapters/C72/C72_b.html",
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_a.html",
+    "chapters/C72/C72_pop1.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "ERN GENTURIS 2023 (Carton et al.), https://pmc.ncbi.nlm.nih.gov/articles/PMC9845795/"
+   ],
+   "passage": "S9 tableau 9 : rec. 2 « People with NF1 and any of the above should be investigated for MPNST » ; rec. 3 « investigation should begin with regional MRI. Prior to surgery … 18FDG PET MRI (preferred) » ; rec. 4 « primary resection is recommended if it is safe and feasible. Otherwise, radiologically … guided diagnostic biopsy … at the discretion of a (sarcoma) multidisciplinary team, as tumours can be heterogeneous » ; rec. 5 « There is no place for watchful waiting in MPNST and urgent surgical resection should be the mainstay for treatment (if possible) »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-01",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_a.html"
+   ],
+   "sources": [
+    "Westphal et Mohme 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485896/",
+    "Tonn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485950/",
+    "Nersesyan et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12553641/"
+   ],
+   "passage": "voir MAJ-01",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-02",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Boktor et al. 2023, https://pubmed.ncbi.nlm.nih.gov/37121596/",
+    "Tabrah et al. 2022, https://pubmed.ncbi.nlm.nih.gov/35180641/"
+   ],
+   "passage": "voir MAJ-01",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-03",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_c.html"
+   ],
+   "sources": [
+    "Hess 2005, https://pubmed.ncbi.nlm.nih.gov/16117470/",
+    "Novy 2012, https://pubmed.ncbi.nlm.nih.gov/22377894/"
+   ],
+   "passage": "voir MAJ-02",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-04",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_c.html"
+   ],
+   "sources": [
+    "Westphal et Mohme 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485896/",
+    "Bodensohn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485843/"
+   ],
+   "passage": "voir MAJ-03",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-05",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_b.html"
+   ],
+   "sources": [
+    "Aide-mémoire NKRS, état du 23.05.2022, https://www.usz.ch/app/uploads/2023/06/2023-01-01-hilfsunterlage-meldepflichtige-erkrankungen-nkrs.pdf",
+    "ENCR, formation CNS, mai 2021, https://encr.eu/sites/default/files/meetings/Training_2021-05/ENCR2021-S3-CNS.pdf"
+   ],
+   "passage": "voir MAJ-04",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-06",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Aide-mémoire NKRS, état du 23.05.2022, https://www.usz.ch/app/uploads/2023/06/2023-01-01-hilfsunterlage-meldepflichtige-erkrankungen-nkrs.pdf"
+   ],
+   "passage": "voir MIN-03",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-07",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "IP suisse Koselugo®, mise à jour de juin 2026 (AmiKo, AIPS 7680674100010)"
+   ],
+   "passage": "voir MIN-01",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-08",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_d.html"
+   ],
+   "sources": [
+    "IP suisse Temodal®, mise à jour de décembre 2021 (AmiKo, AIPS 7680545770922)"
+   ],
+   "passage": "voir MIN-02",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-10",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Boktor et al. 2023, https://pubmed.ncbi.nlm.nih.gov/37121596/",
+    "Tabrah et al. 2022, https://pubmed.ncbi.nlm.nih.gov/35180641/"
+   ],
+   "passage": "voir MAJ-01 (fenêtres c72-sm-residu et c72-sm-tr)",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-11",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_b.html"
+   ],
+   "sources": [
+    "Nersesyan et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12553641/",
+    "Spirig et al. 2011, https://pubmed.ncbi.nlm.nih.gov/21732297/"
+   ],
+   "passage": "voir MIN-07",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-12",
+   "action": "Intégré avec le constat correspondant.",
+   "fichiers": [
+    "chapters/C72/C72_c.html"
+   ],
+   "sources": [
+    "Bodensohn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485843/"
+   ],
+   "passage": "voir MAJ-05 et MIN-05",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "ENR-09",
+   "action": "Paragraphe sur l’hétérogénéité pronostique du gliome H3 K27-altéré spinal ajouté après le tableau pronostique de c72-10, déclaré issu du seul résumé.",
+   "fichiers": [
+    "chapters/C72/C72_b.html"
+   ],
+   "sources": [
+    "Watanabe et al. 2024, https://pubmed.ncbi.nlm.nih.gov/38342826/"
+   ],
+   "passage": "S10 résumé : « At mean follow-up time of 21 months, 13% of patients were alive » ; « Historical WHO grades of 2 or 3 … longer average median overall survival … (32 vs. 23 months) » ; « may represent a heterogeneous group »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "integre"
+  },
+  {
+   "constat": "W-01",
+   "action": "Myélopathie radique tardive : « habituellement définitive » ramené à « peut être définitive » (texte de c72-s-radio, fenêtre c72-rt-tolerance, Pareto), conformément au passage relu ; phrase remplacée par la conséquence sourcée (dose des gliomes spinaux inférieure à celle des gliomes cérébraux).",
+   "fichiers": [
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [
+    "Bodensohn et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11485843/"
+   ],
+   "passage": "S4 : « Late myelopathy is associated with higher irradiation doses, often leads to serious neurological deficits, and can be permanent » ; « Due to the risk of myelopathy, the dose applied to spinal gliomas needs to be lower than in cranial gliomas »",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "correction_W"
+  },
+  {
+   "constat": "W-02",
+   "action": "Fenêtre c72-lacunes actualisée : deux gestes (résidu post-mictionnel, tonus anal) ont désormais une valeur chiffrée dans la suspicion de syndrome de la queue de cheval.",
+   "fichiers": [
+    "chapters/C72/C72_pop1.html"
+   ],
+   "sources": [
+    "Boktor et al. 2023, https://pubmed.ncbi.nlm.nih.gov/37121596/",
+    "Tabrah et al. 2022, https://pubmed.ncbi.nlm.nih.gov/35180641/"
+   ],
+   "passage": "voir MAJ-01",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "correction_W"
+  },
+  {
+   "constat": "W-03",
+   "action": "Liste des références du cours complétée par les sources nouvellement citées (ENCR, Hess, Novy, Galliker, Boktor, Tabrah), datées du 16 octobre 2026.",
+   "fichiers": [
+    "chapters/C72/C72_b.html"
+   ],
+   "sources": [
+    "ENCR, formation CNS, mai 2021, https://encr.eu/sites/default/files/meetings/Training_2021-05/ENCR2021-S3-CNS.pdf",
+    "Hess 2005, https://pubmed.ncbi.nlm.nih.gov/16117470/",
+    "Novy 2012, https://pubmed.ncbi.nlm.nih.gov/22377894/",
+    "Galliker et al. 2020, https://pubmed.ncbi.nlm.nih.gov/31278933/",
+    "Boktor et al. 2023, https://pubmed.ncbi.nlm.nih.gov/37121596/",
+    "Tabrah et al. 2022, https://pubmed.ncbi.nlm.nih.gov/35180641/"
+   ],
+   "passage": "Références réellement lues pour l’intégration",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "correction_W"
+  },
+  {
+   "constat": "W-04",
+   "action": "Abréviations non couvertes signalées par build_medina.audit() levées par reformulation (St-Gall → Saint-Gall ; H3K27 → H3K27me3 déjà défini ; nom d’auteur et nom de revue retirés du texte courant).",
+   "fichiers": [
+    "chapters/C72/C72_c.html",
+    "chapters/C72/C72_pop2.html"
+   ],
+   "sources": [],
+   "passage": "Contrôle mécanique",
+   "relecture_source": "relu par W le 16.10.2026",
+   "statut": "correction_W"
+  }
+ ],
+ "lacunes": [
+  "Figures 1 et 3 (anatomie dessinée par IA) retirées sans remplacement : figure anatomique à sourcer (original réel via Image_Clo_finder) ; la discipline Anatomie n’a plus de figure (erreur attendue de tests/audit_sciences.py, aucun SVG factice ajouté).",
+  "Table CIM-O-3.2 en vigueur et Blue Book OMS 2021 non lus : codes de morphologie issus du support ENCR de mai 2021.",
+  "S1 (EANO 2018) et S7 (OMS 2021) n’ont pas pu être relus par W (limite de débit PMC, absents d’Europe PMC en texte intégral) : aucun fait nouveau n’en dépend ; les faits qui s’y rattachent étaient déjà présents dans la leçon et vérifiés par l’audit MED.",
+  "Synthèses suisses de sémiologie (Hess, Novy, Spirig) lues en résumé seulement."
+ ],
+ "observations_pour_P": [
+  "Divergence non tranchée : la carte IRM du myxopapillaire (C72_c.html, c72-e-2) mentionne une érosion possible des corps vertébraux, conforme à Nersesyan 2025 (« can cause scalloping of the vertebral bodies ») ; Westphal et Mohme 2024 écrivent que les schwannomes et neurofibromes peuvent creuser les vertèbres, « which never happens in myxopapillary ependymomas ». Non signalé par l’audit MED ; formulation conservée."
+ ],
+ "empreintes_base_sha256": {
+  "chapters/C72/C72_a.html": "61f1e5b6546203dff263a254d4ce4d1b75f0c58f111237d9e4d7319f4bda2a3b",
+  "chapters/C72/C72_b.html": "ed523b09dd861f69865aeac53d0997d115bc87753561655f9c85fe7bed518edd",
+  "chapters/C72/C72_c.html": "a100855b7613bc9b1233bc183e682854e2cfb29bf93c5b0c5d46c1fa31087d73",
+  "chapters/C72/C72_d.html": "96fc32e80a72746959bb0b7d9321213b08b1cd96d4b64ad0a524dcf62ed73aa6",
+  "chapters/C72/C72_pop1.html": "aaa43aea83d40278ee04551db9862094f04859c12dc6ab33ffc6e6e006280440",
+  "chapters/C72/C72_pop2.html": "2e52a53cc60772328277c7026f5e635377d9b8b08a2c7a6e98bc1dbaea26c0c9",
+  "glossary/c72.py": "185664974a2e7229c14467056c627462f056a4c39ba8a449d50c4cd748e390eb"
+ },
+ "empreintes_finales_sha256": {
+  "chapters/C72/C72_a.html": "266c16e1cd767548f3e62937bd4af31df98929636ba8395b6392ff9ef055d43c",
+  "chapters/C72/C72_b.html": "6830fcd41d5bbd797a3ed9fbb83d7df319bac1877855dfaf1faa154697189ed5",
+  "chapters/C72/C72_c.html": "e86a181835aa100207b44b4c3342b100c4bedbfc9d140cfa28580e6c75aa1ea4",
+  "chapters/C72/C72_d.html": "187190d7d4661ee36d496790f88d3e246790de6259aa5aea3c02e71b98a337dc",
+  "chapters/C72/C72_pop1.html": "dd87aabf0e307f6ec2ab91407177a131f29bedc385ae2aadae5ab646975c4317",
+  "chapters/C72/C72_pop2.html": "9a862719c414e0e26bb6999fad55a3d8e3c54f7b219e8b29997e7784a8c42b4c",
+  "glossary/c72.py": "32d9cc80b0ad811165166cac0a064ef23fdccd8d2f3e6661f7aa73cae1917539"
+ },
+ "mention": "Intégration par IA, distincte d’une validation médicale humaine."
+}
