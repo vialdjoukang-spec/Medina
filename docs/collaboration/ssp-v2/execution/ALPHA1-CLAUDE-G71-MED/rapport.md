@@ -26,7 +26,7 @@ Ses défauts tiennent à trois manques. Le premier est structurel : il n’exist
 | ENRICHISSEMENT | 6 |
 
 ### MAJEUR
-- **C01 — Sémiologie absente : MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md).** `G71_c.html` compte **5 `data-s`** : `g71-s-anat`, `g71-s-histo`, `g71-s-physio`, `g71-s-bioch` et `g71-s-gen`. Les cinq disciplines réelles sont donc présentes, mais `g71-s-semio` manque. La discipline à ajouter, en première position, est « Sémiologie fondamentale et analytique ». La proposition se trouve dans `G71_c_semio.html`, `G71_pop3.html` et `glossary_g71_ajouts.py`.
+- **C01 — Sémiologie absente : MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md).** `G71_c.html` compte **5 `data-s`** : `g71-s-anat`, `g71-s-histo`, `g71-s-physio`, `g71-s-bioch` et `g71-s-gen`. Les cinq disciplines réelles sont donc présentes, mais `g71-s-semio` manque. La discipline à ajouter, en première position, est « Sémiologie fondamentale et analytique ». La proposition se trouve dans `G71_c_semio.html`, `G71_a_semio_clinique.html`, `G71_pop1_semio.html` (à ajouter à `G71_pop1.html`) et `glossary_g71_ajouts.py`.
 - **C02 — Sciences non conformes.** `audit_sciences.py` échoue. Quatre disciplines sur cinq comptent moins de 280 mots, et aucune ne porte les libellés « Science → clinique / examen / traitement » ni « À retenir ». La proposition est `G71_c_2.html`.
 - **C03 — Vamorolone et stress.** La FI suisse exige d’**ajouter de l’hydrocortisone systémique** en phase de stress, car le vamorolone seul est déconseillé : il est antagoniste minéralocorticoïde. Elle exige aussi une décroissance par paliers d’environ 20 % [S6]. La proposition est `G71_b_1.html`.
 - **C04 — Suxaméthonium.** La FI suisse le **contre-indique** dans les maladies myotoniques, y compris la myotonie congénitale. Elle le contre-indique aussi dans les myopathies comme la Duchenne et en cas d’antécédent d’hyperthermie maligne, et le déconseille avant 12 ans [S7]. La proposition est `G71_b_2.html`.
@@ -107,7 +107,7 @@ Aucun candidat de remplacement n’est proposé pour la figure 2. Commons a rép
 | SEM-23 | Deux captures réelles | non |
 | SEM-24 | Statut « revue IA » | oui |
 
-La proposition `G71_c_semio.html` respecte la structure du § 4 b : un bouton en première position et sept îlots, de `g71-sm-1` à `g71-sm-7`. L’`alert` reste cohérente avec l’îlot `g71-8`. Elle comprend les quatre libellés exigés, une figure non anatomique dont le texte est rendu à 11,9 px à 390 px, et trois quiz, dont un sur la formulation honnête d’une limite. Elle n’utilise que des classes de la liste fermée, sans style en ligne, et chaque affirmation porte une source lue. Elle n’affaiblit aucune obligation clinique de la leçon.
+La proposition `G71_c_semio.html` respecte le contrat `SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml` : un bouton `g71-tab-semio` en première position (`aria-selected="true"`, les cinq autres à `false`), un panneau `g71-s-semio` (`role="tabpanel"`, `aria-labelledby`, visible) et neuf sections `data-semiology`, de `g71-sm-1` à `g71-sm-9`, dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources, toutes titrées en `h3`. L’`alert` reste cohérente avec l’îlot `g71-8`. Elle comprend une figure non anatomique dont le texte est rendu à 11,9 px à 390 px et trois quiz, dont un sur la formulation honnête d’une limite. La section `sources` relie chaque affirmation au passage lu, avec un lien `https` par source. Le marqueur clinique `data-semiology-clinical="G71"` est proposé dans `G71_a_semio_clinique.html` (pA, îlot `g71-6`). Elle n’utilise que des classes de la liste fermée, sans style en ligne, et chaque affirmation porte une source lue. Elle n’affaiblit aucune obligation clinique de la leçon.
 
 ## Matrice des 20 rubriques (leçon actuelle)
 
@@ -141,6 +141,14 @@ La proposition `G71_c_semio.html` respecte la structure du § 4 b : un bouton en
 - Aucune source n’a été lue sur la transmission de la DM2 et de la FSHD, ni sur les spécificités suisses (AI, conduite, remboursement).
 - Aucune valeur chiffrée n’a été trouvée pour les signes sémiologiques.
 
+## Correctifs de contrat (revue Codex)
+
+- Sémiologie : `G71_c_semio.html` restructurée selon le validateur (`id`, `role`, `aria-*`, neuf `data-semiology`, aucun `h2`) ; fond inchangé, l’affirmation sur la CK sous statine, sans passage consigné, est retirée.
+- Marqueur clinique : nouvelle proposition `G71_a_semio_clinique.html` (`data-semiology-clinical="G71"`, pA).
+- Fichiers admis : `G71_pop3.html` renommée `G71_pop1_semio.html`, cible `G71_pop1.html` ; aucune clé orpheline.
+- `sources.json` : version, section ou page, passage paraphrasé, population, limites et niveau de lecture pour les 26 sources ; inconnues déclarées.
+- Constats C01 à C09 conservés tels quels ; seule la référence de fichier de C01 change.
+
 ## Tableau de bord
 
 | Élément | Valeur |
@@ -151,7 +159,7 @@ La proposition `G71_c_semio.html` respecte la structure du § 4 b : un bouton en
 | Empreintes | 7/7 conformes au manifeste |
 | Constats | 0 bloquant · 9 majeurs (C01 bloquant pour la clôture) · 10 mineurs · 6 enrichissements |
 | Sources lues | 26 (`sources.json`) : 9 suisses (4 fiches AIPS, Revue Médicale Suisse, Care-NMD-CH, Swiss-Reg-NMD ×2, centres de Bâle, Lausanne et Zurich), 13 européennes, 4 internationales |
-| Propositions | 13 fichiers dans `propositions/` |
+| Propositions | 14 fichiers dans `propositions/` |
 | Figures | 6 : 1 ANATOMIQUE_IA, 5 schémas non anatomiques (3 illisibles à 390 px) |
 | Alertes | Sémiologie absente (bloquante) ; `audit_sciences` en échec ; FI suisse incomplètement reprise (vamorolone, suxaméthonium) ; ataluren expiré |
 

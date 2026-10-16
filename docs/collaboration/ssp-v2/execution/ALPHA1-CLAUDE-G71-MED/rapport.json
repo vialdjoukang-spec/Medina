@@ -13,7 +13,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:55:18Z",
- "date_fin": "2026-10-16T06:18:58Z",
+ "date_fin": "2026-10-16T06:33:44Z",
  "lecture": {
   "fichiers": [
    "chapters/G71/G71_a.html",
@@ -105,7 +105,7 @@
      "citation_courte": "Myotonia can cause muscle stiffness, prolonged hand grip"
     }
    ],
-   "proposition": "propositions/G71_c_semio.html (sept îlots g71-sm-1 à -7, figure non anatomique lisible à 390 px), propositions/G71_pop3.html (six fenêtres g71-sm-*), propositions/glossary_g71_ajouts.py (MRC, ENMG).",
+   "proposition": "propositions/G71_c_semio.html (bouton g71-tab-semio et panneau g71-s-semio role=tabpanel ; neuf sections data-semiology g71-sm-1 à -9, titres h3 ; figure non anatomique lisible à 390 px), propositions/G71_a_semio_clinique.html (section data-semiology-clinical=\"G71\" dans pA, îlot g71-6), propositions/G71_pop1_semio.html (six fenêtres g71-sm-*, à ajouter à G71_pop1.html), propositions/glossary_g71_ajouts.py (MRC, ENMG).",
    "justification": "Mécanisme : sans technique d’examen ni raisonnement du signe au syndrome, le lecteur ne sait pas transformer une faiblesse en hypothèse. Conséquence : l’examen fédéral et la pratique exigent ce passage. Décision : exigence de Vial du 15.10.2026 et AGENTS.md ; constat MAJEUR, bloquant pour la clôture du cours et du lot.",
    "bloquant_cloture": true,
    "decompte_data_s": 5,
@@ -749,7 +749,8 @@
   },
   "proposition": [
    "propositions/G71_c_semio.html",
-   "propositions/G71_pop3.html",
+   "propositions/G71_a_semio_clinique.html",
+   "propositions/G71_pop1_semio.html",
    "propositions/glossary_g71_ajouts.py"
   ],
   "grille_SEM": {
@@ -778,7 +779,13 @@
    "SEM-23": "non (aucune capture possible)",
    "SEM-24": "oui (statut « Revue par intelligence artificielle · Aucune validation médicale humaine »)"
   },
-  "lacune_valeurs": "Aucune sensibilité, spécificité ni rapport de vraisemblance pour le signe de Gowers, la myotonie de préhension, la cotation MRC ou les symptômes d’hypoventilation dans les sources lues (S1, S2, S4, S21, S22) ; la proposition l’écrit explicitement."
+  "lacune_valeurs": "Aucune sensibilité, spécificité ni rapport de vraisemblance pour le signe de Gowers, la myotonie de préhension, la cotation MRC ou les symptômes d’hypoventilation dans les sources lues (S1, S2, S4, S21, S22) ; la proposition l’écrit explicitement.",
+  "cibles": {
+   "propositions/G71_c_semio.html": "chapters/G71/G71_c.html",
+   "propositions/G71_a_semio_clinique.html": "chapters/G71/G71_a.html",
+   "propositions/G71_pop1_semio.html": "chapters/G71/G71_pop1.html",
+   "propositions/glossary_g71_ajouts.py": "glossary/g71.py"
+  }
  },
  "figures": [
   {
@@ -882,6 +889,7 @@
  "propositions": [
   "G71_a_1.html",
   "G71_a_2.html",
+  "G71_a_semio_clinique.html",
   "G71_b_1.html",
   "G71_b_2.html",
   "G71_b_3.html",
@@ -891,8 +899,32 @@
   "G71_c_semio.html",
   "G71_d_1.html",
   "G71_mineurs.html",
-  "G71_pop3.html",
+  "G71_pop1_semio.html",
   "glossary_g71_ajouts.py"
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "revue_codex_correctifs": {
+  "consigne": "CORRECTIFS_SEMIO_CONTRAT_LOT2 (code G71)",
+  "date": "2026-10-16T06:33:44Z",
+  "corrections": [
+   {
+    "constat_revue": "Proposition sémiologique non conforme (7 h2, pas d’id/aria/role, aucun data-semiology)",
+    "correction": "G71_c_semio.html restructurée : bouton id=g71-tab-semio role=tab aria-selected=true aria-controls/data-s=g71-s-semio ; panneau div.sci id=g71-s-semio role=tabpanel aria-labelledby=g71-tab-semio, sans hidden ; neuf section.ilot data-semiology dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources ; titres h3, aucun h2 ; section sources avec un lien https vers chaque source citée et la correspondance affirmation–passage. Fond inchangé, aucun fait nouveau ; l’affirmation sur la CK sous statine, sans passage consigné, est retirée."
+   },
+   {
+    "constat_revue": "Absence de data-semiology-clinical=\"G71\"",
+    "correction": "Nouvelle proposition G71_a_semio_clinique.html : section.card data-semiology-clinical=\"G71\" à insérer dans pA (G71_a.html, îlot g71-6, avant le bouton pareto-g71-clinique) ; symptômes, anamnèse analytique, signes et examen, discrimination clinique, urgences, lien avec le raisonnement."
+   },
+   {
+    "constat_revue": "Proposition pop3 non admise",
+    "correction": "G71_pop3.html renommée G71_pop1_semio.html (cible chapters/G71/G71_pop1.html, fichier admis) ; références mises à jour dans rapport.json, rapport.md et G71_c_semio.html ; les sept clés data-k de la sémiologie (six g71-sm-*, plus g71-gowers existante) ont chacune leur data-pop ; aucun href=\"#…\" dans les propositions de sémiologie."
+   },
+   {
+    "constat_revue": "sources.json incomplet",
+    "correction": "Les 26 entrées portent id, url, editeur (et organisme), version, date_consultation, section_ou_page, passage_paraphrase, population, limites et niveau_lecture (texte intégral, texte intégral des sections citées seulement, ou résumé), remplis d’après les lectures consignées ; les inconnues sont écrites « non précisé par la source »."
+   }
+  ],
+  "constats_C01_C09": "conservés tels quels (gravité, constat, preuve, justification) ; seule la référence de fichier de C01 est actualisée",
+  "figures": "aucune figure anatomique dessinée par IA ajoutée ; le schéma de raisonnement de la sémiologie est SCHEMA_NON_ANATOMIQUE"
+ }
 }
