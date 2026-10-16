@@ -1,0 +1,91 @@
+{
+ "actor": "Claude",
+ "code": "G58",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-G58-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "1c44a7036fc48cd1c4dcbd13f669326d602955e8",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G58/G58_a.html": "ab85b9cbe6a06c0778d39b193fc662fd020e0bf751aee0ac793f2f5836b6e699",
+  "chapters/G58/G58_b.html": "dac8f40b07949ec96ff2cdc3f019a1cbdd4ddf20dfa36efdfb70a75a5ba9124d",
+  "chapters/G58/G58_c.html": "5b3b01c49d1213b89e0ef2ccc5c2b44c48209f7d4e83d83a69c7de6db7befa00",
+  "chapters/G58/G58_d.html": "9a95b52653e579e594b68fec55610323566a606a43b4a17013811989a22c80de",
+  "chapters/G58/G58_pop1.html": "9d862c7a0f28d908d51ebff67e3137d45afd12313a4960a9fbd5d5712020f7b0",
+  "chapters/G58/G58_pop2.html": "809975dabf4ed5363c482348d1264978a3b88efeb6c04ad4782651ad64f240e4",
+  "glossary/g58.py": "ec367748aa21184855c46fef75b9d437ca0d74e7d904f6c993e4e9b6bfb205b1"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G58/G58_a.html": "1bb3668b2a19834a1f3097303f36788eeddcd2b797023e73e6b75c4537cbc64e",
+  "chapters/G58/G58_b.html": "3354760784aa5aabc30923b6496f747b40a4233affcee0863e264a6426931101",
+  "chapters/G58/G58_c.html": "46e903ab9778d8d830b772cffca2fa326dd95258c2c9e9c7bac26ef446d978d7",
+  "chapters/G58/G58_d.html": "58624b6d0a5855b17ff5c8a35848b3a0bd1c62b4283c0c4d513157ecb36b80be",
+  "chapters/G58/G58_pop1.html": "e36eb3ab9964f85d6b5708ef64b3a9fc3c954e12cfb51f69dc30cab0789e80b2",
+  "chapters/G58/G58_pop2.html": "f620abe44fb78cf431cd85091a42fb650a3dd7558ffaaa1cddff37484507dbe7",
+  "glossary/g58.py": "6495a17905f441d0dd5923c79779942e1c6c6f88bc7b4f56e255927613e0a9f1"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Propositions LANG appliquées, adaptées et absorbées (integration/corrections.json), nouvelles phrases intégrées par W, corrections de P ; contrôle selon docs/STYLE_REDACTION.md.",
+ "findings": [
+  {
+   "id": "LANG-propositions",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "70 propositions : 61 appliquées telles quelles, 1 adaptée (P60, alignée sur la FI Lyrica®), 8 absorbées par une correction médicale (P10, P34–P39, P62).",
+   "verification": "Contrôle par échantillonnage du texte final : P01 (méta-discours retiré), P15, P17, P24, P28 (« orientent »), P44, P51 et P70 (« aide-mémoire »), P54–P59 (phrases complètes) présents ; les encadrés C03 utilisent les quatre libellés « Science → … » et « À retenir » en phrases complètes.",
+   "evidence": [
+    "Différence textuelle base → final ; integration/corrections.json relu."
+   ]
+  },
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "Espace parasite avant le point introduit par l’application de LANG-P24 (« ropivacaïne . Dans 17 cas »).",
+   "fichier": "chapters/G58/G58_b.html",
+   "verification": "Corrigé en « ropivacaïne. Dans 17 cas ».",
+   "evidence": [
+    "Commit 1c44a703."
+   ]
+  },
+  {
+   "id": "P-LANG-02",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "Carte Neuroborréliose : une seule phrase longue réunissait trois informations (EFNS, restriction pédiatrique suisse, indication suisse).",
+   "fichier": "chapters/G58/G58_b.html",
+   "verification": "Réécrite en quatre phrases complètes, sujet explicite, sans métaphore ; rendu contrôlé à 390 px.",
+   "evidence": [
+    "Capture revue/captures/G58_P_mobile390_neuroborreliose.png.",
+    "Commit 1c44a703."
+   ]
+  },
+  {
+   "id": "P-LANG-03",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Les nouvelles sections de sémiologie emploient le présent, des phrases complètes, des tableaux introduits et lus, et des cas sans métaphore ; quelques formulations restent denses (tableau des sources).",
+   "verification": "Aucune correction requise ; choix éditorial.",
+   "evidence": [
+    "Lecture intégrale du sous-onglet g58-s-semio et des dix fenêtres g58-sm-*."
+   ]
+  }
+ ],
+ "choix_differes": [
+  "renvois médicaux LANG non tranchés par l’audit MED (35), laissés non appliqués comme le prévoit le protocole"
+ ],
+ "evidence": [
+  "integration/corrections.json (146 entrées) relu.",
+  "Différence textuelle base → final.",
+  "python3 test_v7.py --static G58 : OK (G58 mots 20389, fenêtres 54, quiz 9, pareto 13 ; build_medina.audit appelé, aucune abréviation non couverte).",
+  "Construction hors dépôt (MEDINA_OUT=scratchpad, build_front.py --fragment S08) et rendu Chromium 1194 à 1300 × 900 et 390 × 844 : 54 clés data-k G58 cliquées, aucune « Fiche absente », largeur de page égale à la fenêtre (aucun défilement horizontal) ; captures revue/captures/G58_P_*.png."
+ ],
+ "conclusion": "Aucun constat bloquant : P-LANG-01 et 02 sont corrigés à 1c44a703 ; le français des ajouts de W est conforme au guide de rédaction.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
